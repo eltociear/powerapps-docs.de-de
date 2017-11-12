@@ -1,0 +1,2 @@
+Die Felder des Datensatzes, der derzeit verarbeitet wird, sind in der Formel verfügbar.  Sie können einfach über den Namen darauf verweisen, wie Sie dies auch bei anderen Werten tun.  Außerdem können Sie überall in der App auf Steuerelementeigenschaften und andere Werte verweisen.  Weitere Informationen finden Sie in den unten angegebenen Beispielen und im Artikel zur [Verwendung von Datensatzbereichen](../articles/working-with-tables.md#record-scope). 
+
