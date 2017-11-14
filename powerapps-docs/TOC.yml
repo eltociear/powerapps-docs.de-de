@@ -1,0 +1,256 @@
+- name: Erste Schritte
+  items:
+    - name: Einführung
+      href: getting-started.md
+    - name: Registrieren (für Benutzer)
+      href: signup-for-powerapps.md
+    - name: Für den Communityplan registrieren
+      href: dev-community-plan.md
+    - name: Kaufen (für Administratoren)
+      href: signup-for-powerapps-admin.md
+    - name: Mit Umgebungen arbeiten
+      href: working-with-environments.md
+    - name: Neuerungen
+      href: release-notes.md
+    - name: Häufige Probleme und Lösungen
+      href: common-issues-and-resolutions.md
+    - name: Neue und aktuelle Webinare
+      href: webinars-listing.md
+- name: Eine vorhandene App ausführen
+  items:
+    - name: Eine App in einem Browser verwenden
+      href: run-app-browser.md
+    - name: Eine App auf einem Mobiltelefon oder Tablet verwenden
+      href: run-app-client.md
+    - name: Mehr Apps aus AppSource abrufen
+      href: app-source.md
+    - name: Eine App in SharePoint öffnen
+      href: open-app-embedded-in-sharepoint.md
+    - name: App in Teams öffnen
+      href: open-app-embedded-in-teams.md
+    - name: Eine Beispiel-App verwenden
+      href: open-and-run-a-sample-app.md
+    - name: Eine Vorlage verwenden
+      href: get-started-test-drive.md
+- name: Eine App aus SharePoint erstellen
+  items:
+    - name: In SharePoint starten
+      href: generate-app-from-sharepoint-list-interface.md
+    - name: Aus PowerApps starten
+      href: app-from-sharepoint.md
+    - name: Verbindung erstellen
+      href: connect-to-sharepoint.md
+    - name: Ein Layout anpassen
+      href: customize-layout-sharepoint.md
+    - name: Formulare anpassen
+      href: customize-forms-sharepoint.md
+    - name: Eine Karte anpassen
+      href: customize-card.md
+    - name: Hinzufügen eines Nachschlagefelds
+      href: sharepoint-lookup-fields.md
+- name: Eine App aus einer anderen Datenquelle erstellen
+  items:
+    - name: Aus einer Entität
+      href: data-platform-create-app.md
+    - name: Anhand von Excel-Daten
+      href: get-started-create-from-data.md
+    - name: Erste Schritte mit Formeln
+      href: working-with-formulas.md
+    - name: Eine App von Grund auf neu erstellen
+      href: get-started-create-from-blank.md
+- name: Eine App anpassen
+  items:
+    - name: Ein Steuerelement hinzufügen und konfigurieren
+      href: add-configure-controls.md
+    - name: Bildschirm hinzufügen
+      href: add-screen-context-variables.md
+    - name: Eine Datenverbindung hinzufügen
+      href: add-data-connection.md
+    - name: Eine Liste mit Elementen anzeigen
+      href: add-gallery.md
+    - name: Elemente unterschiedlicher Höhe anzeigen
+      href: gallery-dynamic-sizing.md
+    - name: Ein Formular hinzufügen
+      href: add-form.md
+    - name: Aktuellen Benutzer anzeigen
+      href: show-current-user.md
+    - name: Ein Listensteuerelement hinzufügen
+      href: add-list-box-drop-down-list-radio-button.md
+    - name: Diagramm hinzufügen
+      href: use-line-pie-bar-chart.md
+    - name: Multimedia hinzufügen
+      href: add-images-pictures-audio-video.md
+    - name: Einen Barcode scannen
+      href: scan-barcode.md
+    - name: Einen Flow hinzufügen
+      href: using-logic-flows.md
+    - name: Scrollbildschirm hinzufügen
+      href: add-scrolling-screen.md
+    - name: Eine globale App erstellen
+      href: global-apps.md
+- name: Ihre App verwalten
+  items:
+    - name: Einführung in powerapps.com
+      href: intro-maker-portal.md
+    - name: App bearbeiten
+      href: edit-app.md
+    - name: Ändern der Bildschirmgröße und -ausrichtung
+      href: set-aspect-ratio-portrait-landscape.md
+    - name: App-Name und -Kachel ändern
+      href: set-name-tile.md
+    - name: Eine App speichern und veröffentlichen
+      href: save-publish-app.md
+    - name: Freigeben einer App
+      href: share-app.md
+    - name: Eine App löschen
+      href: delete-app.md
+    - name: Vorherige Version Ihrer App wiederherstellen
+      href: restore-an-app.md
+- name: Herstellen einer Datenverbindung
+  items:
+    - name: Übersicht über Connectors
+      href: connections-list.md
+    - name: Datenverbindungen verwalten
+      href: add-manage-connections.md
+    - name: Delegierung
+      href: delegation-overview.md
+    - name: Delegierbare Datenquellen
+      href: delegation-list.md
+    - name: Gateways verwalten
+      href: gateway-management.md
+    - name: Grundlegendes zu Gateways
+      href: gateway-reference.md
+- name: Daten in Entitäten verwalten
+  items:
+    - name: Grundlegendes zu Entitäten
+      href: data-platform-intro.md
+    - name: Eine benutzerdefinierte Entität erstellen
+      href: data-platform-create-entity.md
+    - name: Benutzerdefinierte Entität aus Daten erstellen
+      href: data-platform-cds-newentity-pq.md
+    - name: Felder verwalten
+      href: data-platform-manage-fields.md
+    - name: Feldgruppen verwenden
+      href: field-groups.md
+    - name: Benutzerdefinierte Auswahllisten erstellen
+      href: custom-picklists.md
+    - name: Eine Beziehung erstellen
+      href: data-platform-entity-lookup.md
+    - name: Eine App mit einer Entität erstellen
+      href: data-platform-create-app.md
+    - name: Eine benutzerdefinierte Entität löschen
+      href: data-platform-delete-entity.md
+    - name: Daten importieren oder exportieren
+      href: data-platform-export-data.md
+    - name: Daten in Excel verwalten
+      href: data-platform-interactive-excel.md
+    - name: Beispiele und Ressourcen
+      href: samples-resources.md
+- name: Integrationsszenarien
+  items:
+    - name: In SharePoint Online integrieren (Tutorialreihe)
+      href: sharepoint-scenario-intro.md
+    - name: SharePoint Online-Listen einrichten
+      href: sharepoint-scenario-setup.md
+    - name: Eine App generieren
+      href: sharepoint-scenario-generate-app.md
+    - name: Einen Flow für Genehmigungen erstellen
+      href: sharepoint-scenario-approval-flow.md
+    - name: App von Grund auf neu erstellen
+      href: sharepoint-scenario-build-app.md
+    - name: Einen Power BI-Bericht erstellen
+      href: sharepoint-scenario-build-report.md
+    - name: Den Power BI-Bericht veröffentlichen
+      href: sharepoint-scenario-publish-report.md
+    - name: Den Power BI-Bericht einbetten
+      href: sharepoint-scenario-embed-report.md
+    - name: Einen Flow für Warnungen erstellen
+      href: sharepoint-scenario-alerts-flow.md
+    - name: Das abgeschlossene Szenario durchlaufen
+      href: sharepoint-scenario-summary.md
+    - name: Cognitive Services integrieren
+      href: cognitive-services-api.md
+- name: 'Entwickeln: Unternehmensentwickler'
+  items:
+    - name: PowerApps für Unternehmensentwickler
+      href: dev-enterprise-intro.md
+    - name: Benutzerdefinierte Connectors registrieren und verwenden
+      href: register-custom-api.md
+    - name: Benutzerdefinierten Connector mit Postman beschreiben
+      href: postman-collection.md
+    - name: Azure Active Directory mit benutzerdefiniertem Connector verwenden
+      href: customapi-azure-resource-manager-tutorial.md
+    - name: Benutzerdefinierten Connector für eine Web-API erstellen
+      href: customapi-web-api-tutorial.md
+    - name: In Websites und andere Technologien integrieren
+      href: embed-apps-dev.md
+    - name: Offlinefähige Apps entwickeln
+      href: offline-apps.md
+- name: 'Entwickeln: Partner und ISVs'
+  items:
+    - name: PowerApps für Microsoft-Partner und ISVs
+      href: dev-isv-partner-intro.md
+    - name: Übersicht über die Zertifizierung von API-Connectors
+      href: api-connector-overview.md
+    - name: API-Connectors für Zertifizierung entwickeln
+      href: api-connector-dev.md
+    - name: API-Connectors zur Zertifizierung übermitteln
+      href: api-connector-submission.md
+    - name: Häufig gestellte Fragen zum Zertifizieren von API-Connectors
+      href: api-connector-faq.md
+    - name: Kunden das Testen Ihrer Apps ermöglichen
+      href: dev-appsource-test-drive.md
+- name: Verwaltung und ALM
+  items:
+    - name: PowerApps in your organization Q&A (PowerApps in Ihrer Organisation Q&A)
+      href: signup-question-and-answer.md
+    - name: Preisinformationen
+      href: pricing-billing-skus.md
+    - name: Plan für Testversion
+      href: trial-plan.md
+    - name: Einführung in Admin Center
+      href: introduction-to-the-admin-center.md
+    - name: Umgebungen – Übersicht
+      href: environments-overview.md
+    - name: Umgebungen verwalten
+      href: environments-administration.md
+    - name: 'Eine Richtlinie einrichten, um Datenverluste zu vermeiden'
+      href: prevent-data-loss.md
+    - name: Einführung in Datengruppen
+      href: introduction-to-data-groups.md
+    - name: Datenbank erstellen
+      href: create-database.md
+    - name: Datenbanksicherheit konfigurieren
+      href: database-security.md
+    - name: Eine App zwischen Mandanten und Umgebungen verschieben
+      href: environment-and-tenant-migration.md
+    - name: Ressourcen exportieren und importieren
+      href: export-import-packages.md
+    - name: Regionen – Übersicht
+      href: regions-overview.md
+    - name: PowerApps-Benutzers in Ihrer Organisation ermitteln
+      href: admin-view-user-licenses.md
+- name: Referenz
+  items:
+    - name: Referenz zu Formeln
+      href: formula-reference.md
+    - name: Referenz zu Steuerelementen
+      href: reference-properties.md
+    - name: Grundlegendes zu Tabellen und Datensätzen
+      href: working-with-tables.md
+    - name: Grundlegendes zu Datenformularen
+      href: working-with-forms.md
+    - name: Grundlegendes zum Layout von Datenformularen
+      href: working-with-form-layout.md
+    - name: Grundlegendes zu Datenkarten
+      href: working-with-cards.md
+    - name: Grundlegendes zu Variablen
+      href: working-with-variables.md
+    - name: Grundlegendes zu Formeln
+      href: working-with-formulas-in-depth.md
+    - name: Grundlegendes zu Datums-/Uhrzeitangaben
+      href: show-text-dates-times.md
+    - name: Grundlegendes zu Datenquellen
+      href: working-with-data-sources.md
+    - name: Einschränkungen und Konfiguration
+      href: limits-and-config.md
