@@ -1,0 +1,127 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Dokumentation zu Microsoft PowerApps
+metadata:
+  title: 'Dokumentation, Videos, Referenz und weitere Informationen zu Microsoft PowerApps'
+  description: 'Nutzen Sie die hier bereitgestellten Ressourcen, um mit dem Erstellen, Anpassen und Freigeben von Apps in PowerApps zu beginnen.'
+  author: SKjerland
+  manager: anneta
+  layout: LandingPage
+  ms.assetid: null
+  ms.service: powerapps
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 11/05/2017
+  ms.author: sharik
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Nutzen Sie die hier bereitgestellten Ressourcen, um mit dem Erstellen, Anpassen und Freigeben von Apps zu beginnen. Sie können zunächst eine App automatisch generieren lassen und sie dann anpassen oder versuchen, eine App von Grund auf neu zu erstellen.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: guided-learning
+            html: <p>Tour durch das geführte Lernen</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+            title: Tour
+          - href: getting-started
+            html: <p>Verschaffen Sie sich einen Überblick über PowerApps</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Erste Schritte
+          - href: webinars-listing
+            html: <p>Sehen Sie sich Live- oder On-Demand-Webinare an</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_video.svg'
+            title: Von Experten lernen
+          - href: 'https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1'
+            html: <p>Machen Sie in der PowerApps-Community mit</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_configure-teams.svg'
+            title: Zusammenarbeit mit anderen
+          - href: 'https://powerapps.microsoft.com/blog/'
+            html: <p>Informieren Sie sich im PowerApps-Blog</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_blog.svg'
+            title: Bleiben Sie auf dem neuesten Stand
+          - href: 'https://powerapps.microsoft.com/support/'
+            html: <p>Fordern Sie Hilfe und Support an</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
+            title: Wir stehen Ihnen gerne zur Seite.
+  - title: Schritt-für-Schritt-Tutorials
+    items:
+      - type: paragraph
+        text: Erlernen Sie die grundlegenden Schritte zum Erstellen einer App.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: app-from-sharepoint
+            title: 'Generieren einer App, um Daten in einer SharePoint-Liste zu verwalten'
+            image:
+              src: media/index/i_sharepoint-list.svg
+          - href: get-started-create-from-data
+            title: Generieren einer App aus Excel-Daten
+            image:
+              src: media/index/i_excel-data.svg
+          - href: get-started-test-drive
+            title: App aus einer Vorlage erstellen und ausführen
+            image:
+              src: media/index/i_template.svg
+          - href: get-started-create-from-blank
+            title: App von Grund auf neu erstellen
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+          - href: connections-list
+            title: Übersicht über Connectors
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_multi-connect.svg'
+          - href: working-with-formulas
+            title: Erste Schritte mit Formeln
+            image:
+              src: media/index/i_formula.svg
+  - title: Videoübersicht über PowerApps
+    items:
+      - type: markdown
+        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sEHsnVIx31E" frameborder="0" allowfullscreen></iframe>'
+  - title: Tutorials für Fortgeschrittene
+    items:
+      - type: paragraph
+        text: Lernen Sie erweiterte Konzepte kennen.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: working-with-data-sources
+            title: Grundlegendes zu Datenquellen
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+          - href: working-with-tables
+            title: Grundlegendes zu Tabellen und Datensätzen
+            image:
+              src: media/index/i_table.svg
+          - href: working-with-forms
+            title: Grundlegendes zu Datenformularen
+            image:
+              src: media/index/i_form.svg
+          - href: working-with-variables
+            title: Grundlegendes zu Variablen
+            image:
+              src: media/index/i_variable.svg
+          - href: gateway-reference
+            title: Grundlegendes zu lokalen Datengateways
+            image:
+              src: media/index/i_data-gateway.svg
+          - href: data-platform-intro
+            title: Grundlegendes zu Entitäten in Common Data Service
+            image:
+              src: media/index/i_common-data-service.svg

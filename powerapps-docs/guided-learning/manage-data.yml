@@ -1,0 +1,51 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Daten verwalten
+metadata:
+  title: Daten verwalten | Microsoft PowerApps
+  description: 'Hier erfahren Sie, wie Sie Daten im Common Data Service speichern, modellieren, erweitern und sichern.'
+  audience: Business User
+  level: Beginner
+  displayType: one-column
+  author: mgblythe
+  manager: anneta
+  ms.service: powerapps
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: mblythe
+items:
+  - durationInMinutes: 1
+    content: |
+      Hier erfahren Sie, wie Sie Daten im Common Data Service speichern und modellieren. Definieren und verwenden Sie Entitäten, die Ihren Geschäftsdaten und Prozessen entsprechen, und erweitern Sie das Common Data Model durch benutzerdefinierte Entitäten. Steuern Sie den Zugriff auf Entitäten mit rollenbasierter Sicherheit. Arbeiten Sie mit den Daten direkt im Dienst und in Excel.
+  - title: Der Common Data Service
+    durationInMinutes: 5
+    content: |
+      > [!Video https://www.youtube.com/embed/os33pHQ9jSU?rel=0]
+
+      [!INCLUDE [](includes/learning-common-data-service.md)]
+  - title: Grundlegendes zu Entitäten im Common Data Service
+    durationInMinutes: 8
+    content: |
+      > [!Video https://www.youtube.com/embed/JJa6n_YaD-w?rel=0]
+
+      [!INCLUDE [](includes/learning-common-data-service-entities.md)]
+  - title: Erstellen von benutzerdefinierten Entitäten
+    durationInMinutes: 6
+    content: |
+      > [!Video https://www.youtube.com/embed/qg25q3MjFBo?rel=0]
+
+      [!INCLUDE [](includes/learning-common-data-service-custom-entities.md)]
+  - title: Verwalten von Entitätsdaten
+    durationInMinutes: 7
+    content: |
+      > [!Video https://www.youtube.com/embed/n6RizzixvxM?rel=0]
+
+      [!INCLUDE [](includes/learning-common-data-service-manage.md)]
+  - title: Sicherheit im Common Data Service
+    durationInMinutes: 8
+    content: |
+      > [!Video https://www.youtube.com/embed/uwm8ghMUCeI?rel=0]
+
+      [!INCLUDE [](includes/learning-common-data-service-security.md)]
+  - content: |
+      Sie haben den Abschnitt **Daten verwalten** des geführten Lernens zu Microsoft PowerApps abgeschlossen.
