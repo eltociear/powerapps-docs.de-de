@@ -1,0 +1,11 @@
+- name: Dokumentation
+  href: /
+  topicHref: /
+  items:
+    - name: PowerApps
+      tocHref: /powerapps/
+      topicHref: /powerapps/
+      items:
+        - name: Geführtes Lernen
+          tocHref: /powerapps/guided-learning/
+          topicHref: /powerapps/guided-learning/
