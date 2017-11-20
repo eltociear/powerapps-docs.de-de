@@ -242,7 +242,7 @@ Aufgrund von administrativen Details weisen verschiedene Plattformen verschieden
 ## <a name="release-20480"></a>Version 2.0.480
 1. **Erstellen und Ändern einer App in einem Browser**
    
-    Sie können Apps erstellen oder ändern, indem Sie entweder PowerApps Studio oder einen Browser wie Edge, Chrome oder Internet Explorer 11 öffnen. Weitere Informationen finden Sie unter [Create or edit apps in a browser (Erstellen oder Bearbeiten von Apps in einem Browser)](create-app-browser.md).
+    Sie können Apps erstellen oder ändern, indem Sie entweder PowerApps Studio oder einen Browser wie Microsoft Edge, Chrome oder Internet Explorer 11 öffnen. Weitere Informationen finden Sie unter [Create or edit apps in a browser (Erstellen oder Bearbeiten von Apps in einem Browser)](create-app-browser.md).
 2. **Erstellen einer App aus einer modernen Liste in SharePoint**
    
     Weitere Informationen finden Sie in [diesem Blogbeitrag (in englischer Sprache)](http://go.microsoft.com/fwlink/?LinkID=808680).
