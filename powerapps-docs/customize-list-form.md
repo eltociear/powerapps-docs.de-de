@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/13/2017
 ms.author: sharik
-ms.openlocfilehash: 162314b1bb94e8358e5ddb290adf9db9f43950a0
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -47,9 +47,16 @@ Sie können jederzeit zur SharePoint-Liste zurückkehren, indem Sie in PowerApps
 
 ## <a name="customize-the-list-form"></a>Anpassen des Listenformulars
 
-PowerApps bietet viele Möglichkeiten zum Anpassen des Formulars. Sie können beispielsweise das Layout ändern, den Text formatieren, Bilder oder Diagramme hinzufügen, benutzerdefinierte Datenüberprüfung hinzufügen, Regeln hinzufügen oder zusätzliche Ansichten erstellen.
+PowerApps bietet viele Möglichkeiten zum Anpassen des Formulars. Hier sind einige Beispiele:
 
-Angenommen, das Formular enthält das Feld **AccountID**, das nicht angezeigt werden soll.
+* [Ändern der Größe und Ausrichtung](set-aspect-ratio-portrait-landscape.md)
+* [Formatieren des Texts](controls/properties-text.md)
+* [Hinzufügen von Bildern](add-images-pictures-audio-video.md) oder [Diagrammen](use-line-pie-bar-chart.md)
+* [Hinzufügen von benutzerdefinierter Datenüberprüfung](functions/function-validate.md)
+* [Hinzufügen von Regeln](working-with-rules.md)
+* [Erstellen zusätzlicher Ansichten](https://powerapps.microsoft.com/blog/separate-custom-forms/)
+
+Nehmen wir zur Veranschaulichung an, das Formular enthält das Feld **AccountID**, das nicht angezeigt werden soll.
 
 ![Feld „AccountID“ auswählen](./media/customize-list-form/select-card.png)
 
@@ -57,7 +64,7 @@ Das Feld lässt sich in PowerApps einfach ausblenden – deaktivieren Sie einfac
 
 ![Kontrollkästchen „AccountID“ deaktivieren](./media/customize-list-form/checkbox.png)
 
-Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiterer Formularänderungen finden Sie unter [Anpassen von Formularen in PowerApps](customize-forms-sharepoint.md).
+Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiterer Formularänderungen finden Sie unter [Anpassen von Formularen in PowerApps](customize-forms-sharepoint.md). Eine vollständige Liste der Ressourcen finden Sie in der [Dokumentation zu Microsoft PowerApps](https://docs.microsoft.com/powerapps/).
 
 ## <a name="save-and-publish-the-list-form-back-to-sharepoint"></a>Speichern und Veröffentlichen des Listenformulars in SharePoint
 

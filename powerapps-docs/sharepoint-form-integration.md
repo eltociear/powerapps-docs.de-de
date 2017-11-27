@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 2bb6aae9ab460e4fc03f6c7e3243f47da0ffe455
-ms.sourcegitcommit: ce66ba8eadc41d5f260217d164f8317b90ae1504
+ms.openlocfilehash: 2a5fd3cb6805f5e22fe6d4bc7fba0de64df8afd2
+ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
 Sie können jetzt in PowerApps [jedes SharePoint-Listenformular leicht anpassen](customize-list-form.md). In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.
@@ -54,7 +54,7 @@ Das generierte Standardformular besteht aus den folgenden Steuerelementen und de
 
         **NewForm(SharePointForm1)**
 
-    * **OnView** –Legt **SharePointForm1** im Ansichtsmodus fest.
+    * **OnView** – Legt **SharePointForm1** im Ansichtsmodus fest.
 
         **ViewForm(SharePointForm1)**
 
@@ -70,7 +70,7 @@ Das generierte Standardformular besteht aus den folgenden Steuerelementen und de
 
         **SubmitForm(SharePointForm1)**
 
-Diese Standardeinstellungen stellen sicher, dass das Formular in SharePoint ausgeführt wird. Durch sie wird der PowerApps-Formularmodus geändert, wenn der Benutzer in SharePoint mit dem Formular interagiert, und sie stellen sicher, dass die Änderungen an SharePoint übermittelt werden.
+Durch diese Standardwerte wird sichergestellt, dass das Formular bei Ausführung innerhalb von SharePoint funktioniert. Es wird der PowerApps-Formularmodus geändert, wenn der Benutzer in SharePoint mit dem Formular interagiert, und sichergestellt, dass die Änderungen an SharePoint übermittelt werden.
 
 ## <a name="understand-the-sharepointintegration-control"></a>Grundlegendes zum SharePointIntegration-Steuerelement
 Das **SharePointIntegration**-Steuerelement übermittelt Benutzeraktionen zwischen SharePoint und PowerApps.
@@ -99,8 +99,7 @@ Das **SharePointIntegration**-Steuerelement verfügt über die folgenden Eigensc
 **Datenquelle** – Die Liste, die den Datensatz enthält, der im Formular angezeigt, bearbeitet oder erstellt wird. Beachten Sie, dass nach dem Ändern dieser Eigenschaft die Eigenschaften **Selected** und **SelectedItemID** möglicherweise nicht mehr ordnungsgemäß angewendet werden.
 
 ## <a name="customize-the-default-form"></a>Anpassen des Standardformulars
-
-Da Sie jetzt über ein besseres Verständnis des generierten Standardformulars und des **SharePointIntegration**-Steuerelements verfügen, können Sie die Formeln ändern, um die Formulare weiter anzupassen. Beachten Sie beim Anpassen von Formularen folgende Punkte:
+Nachdem Sie einen Einblick in die Funktionsweise des generierten Standardformulars und des **SharePointIntegration**-Steuerelements erhalten haben, können Sie die Formeln ändern, um die Formulare weiter anzupassen. Beachten Sie beim Anpassen von Formularen folgende Punkte:
 
 * Um für das Erstellen, Anzeigen oder Bearbeiten eines Elements jeweils eigene benutzerdefinierte Erfahrungen zu erstellen, legen Sie die Formel **OnNew**, **OnView** bzw. **OnEdit** des **SharePointIntegration**-Steuerelements auf das Festlegen von Variablen oder das Navigieren zu unterschiedlichen Bildschirmen fest.
 
