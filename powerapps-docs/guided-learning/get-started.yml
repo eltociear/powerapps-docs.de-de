@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Erste Schritte
 metadata:
   title: Erste Schritte | Microsoft PowerApps
-  description: Grundlegende Informationen zu PowerApps – die Softwarekomponenten und verknüpften Technologien.
+  description: "Grundlegende Informationen zu PowerApps – die Softwarekomponenten und verknüpften Technologien."
   audience: Business User
   level: Beginner
   nextTutorialHref: create-app-sharepoint
@@ -16,42 +15,50 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      Grundlegende Informationen zu PowerApps – die Softwarekomponenten und verknüpften Technologien. Verschaffen Sie sich einen Überblick über die verschiedenen Methoden zum Erstellen von Apps, und generieren Sie eine App anhand einer SharePoint-Liste.
-  - title: Einführung in PowerApps
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/n9fkvkekINE?rel=0]
+- durationInMinutes: 1
+  content: "Grundlegende Informationen zu PowerApps – die Softwarekomponenten und verknüpften Technologien. Verschaffen Sie sich einen Überblick über die verschiedenen Methoden zum Erstellen von Apps, und generieren Sie eine App anhand einer SharePoint-Liste.\n"
+  ms.openlocfilehash: 7e100c074c273d34c4adcaad4f291cc35949d05c
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/12/2017
+- title: "Einführung in PowerApps"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/n9fkvkekINE?rel=0]
 
-      [!INCLUDE [](includes/learning-introducing-powerapps.md)]
-  - title: Komponenten von PowerApps
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/r6mowYePq1Q?rel=0]
 
-      [!INCLUDE [](includes/learning-powerapps-parts.md)]
-  - title: Verknüpfte Technologien
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/C81IfqIn9LI?rel=0]
+    [!INCLUDE [](includes/learning-introducing-powerapps.md)]
+- title: Komponenten von PowerApps
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/r6mowYePq1Q?rel=0]
 
-      [!INCLUDE [](includes/learning-related-technologies.md)]
-  - title: Kurzübersicht über das Erstellen von Apps
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/NOv3kacXqho?rel=0]
 
-      [!INCLUDE [](includes/learning-quick-look-powerapps.md)]
-  - title: Ihre erste App erstellen
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/ixRpT48Z6IQ?rel=0]
+    [!INCLUDE [](includes/learning-powerapps-parts.md)]
+- title: "Verknüpfte Technologien"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/C81IfqIn9LI?rel=0]
 
-      [!INCLUDE [](includes/learning-create-first-app-powerapps.md)]
-  - title: Wiederholung dieses Abschnitts
-    durationInMinutes: 2
-    content: |
-      [!INCLUDE [](includes/learning-review-section-one.md)]
-  - content: |
-      Sie haben den Abschnitt **Erste Schritte** des geführten Lernens zu Microsoft PowerApps abgeschlossen.
+
+    [!INCLUDE [](includes/learning-related-technologies.md)]
+- title: "Kurzübersicht über das Erstellen von Apps"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/NOv3kacXqho?rel=0]
+
+
+    [!INCLUDE [](includes/learning-quick-look-powerapps.md)]
+- title: Ihre erste App erstellen
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/ixRpT48Z6IQ?rel=0]
+
+
+    [!INCLUDE [](includes/learning-create-first-app-powerapps.md)]
+- title: Wiederholung dieses Abschnitts
+  durationInMinutes: 2
+  content: >
+    [!INCLUDE [](includes/learning-review-section-one.md)]
+- content: "Sie haben den Abschnitt **Erste Schritte** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"

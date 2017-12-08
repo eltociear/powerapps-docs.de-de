@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: App aus dem Common Data Service erstellen
 metadata:
   title: App aus dem Common Data Service erstellen | Microsoft PowerApps
-  description: 'Generieren Sie eine App mit drei Bildschirmen aus dem Common Data Service, und erkunden und aktualisieren Sie dann die App.'
+  description: Generieren Sie eine App mit drei Bildschirmen aus dem Common Data Service, und erkunden und aktualisieren Sie dann die App.
   audience: Business User
   level: Beginner
   nextTutorialHref: manage-apps
@@ -16,32 +15,39 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      Generieren Sie eine App mit drei Bildschirmen aus dem Common Data Service, und erkunden Sie dann die Bildschirme und Steuerelemente der App. Aktualisieren Sie Bildschirme, Steuerelemente und Felder der App. Importieren Sie zusätzliche Daten, und lösen Sie in der App einen Flow aus.
-  - title: Eine App generieren
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/Gi5TQF7_pz8?rel=0]
+- durationInMinutes: 1
+  content: "Generieren Sie eine App mit drei Bildschirmen aus dem Common Data Service, und erkunden Sie dann die Bildschirme und Steuerelemente der App. Aktualisieren Sie Bildschirme, Steuerelemente und Felder der App. Importieren Sie zusätzliche Daten, und lösen Sie in der App einen Flow aus.\n"
+  ms.openlocfilehash: f62cd3a2197f98d28ca00c5842765b1dae1ba31d
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/12/2017
+- title: Eine App generieren
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/Gi5TQF7_pz8?rel=0]
 
-      [!INCLUDE [](includes/learning-case-app-generate.md)]
-  - title: Kennenlernen einer generierten App
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/98d6SZueEek?rel=0]
 
-      [!INCLUDE [](includes/learning-case-app-explore-controls.md)]
-  - title: Anpassen der App
-    durationInMinutes: 12
-    content: |
-      > [!Video https://www.youtube.com/embed/wHy72cOe8Os?rel=0]
+    [!INCLUDE [](includes/learning-case-app-generate.md)]
+- title: Kennenlernen einer generierten App
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/98d6SZueEek?rel=0]
 
-      [!INCLUDE [](includes/learning-case-app-customize.md)]
-  - title: Hinzufügen einer Datenquelle und eines Flows
-    durationInMinutes: 11
-    content: |
-      > [!Video https://www.youtube.com/embed/Y057qUJ2NNk?rel=0]
 
-      [!INCLUDE [](includes/learning-case-app-add-source.md)]
-  - content: |
-      Sie haben den Abschnitt **App aus dem Common Data Service erstellen** des geführten Lernens zu Microsoft PowerApps abgeschlossen.
+    [!INCLUDE [](includes/learning-case-app-explore-controls.md)]
+- title: Anpassen der App
+  durationInMinutes: 12
+  content: >
+    > [!Video https://www.youtube.com/embed/wHy72cOe8Os?rel=0]
+
+
+    [!INCLUDE [](includes/learning-case-app-customize.md)]
+- title: "Hinzufügen einer Datenquelle und eines Flows"
+  durationInMinutes: 11
+  content: >
+    > [!Video https://www.youtube.com/embed/Y057qUJ2NNk?rel=0]
+
+
+    [!INCLUDE [](includes/learning-case-app-add-source.md)]
+- content: "Sie haben den Abschnitt **App aus dem Common Data Service erstellen** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"

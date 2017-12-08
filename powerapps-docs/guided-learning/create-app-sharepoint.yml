@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: App aus SharePoint erstellen
 metadata:
   title: App aus SharePoint erstellen | Microsoft PowerApps
-  description: 'Generieren Sie eine App mit drei Bildschirmen anhand einer SharePoint-Liste, und erkunden und aktualisieren Sie dann die App.'
+  description: Generieren Sie eine App mit drei Bildschirmen anhand einer SharePoint-Liste, und erkunden und aktualisieren Sie dann die App.
   audience: Business User
   level: Beginner
   nextTutorialHref: create-app-cds
@@ -16,32 +15,40 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
 items:
-  - durationInMinutes: 1
-    content: |
-      Generieren Sie eine App mit drei Bildschirmen anhand einer SharePoint-Liste, und erkunden Sie dann die Bildschirme und Steuerelemente der App. Aktualisieren Sie Bildschirme, Steuerelemente und Felder der App, und passen Sie mithilfe von Formeln das App-Verhalten weiter an.
-  - title: Eine App generieren
-    durationInMinutes: 3
-    content: |
-      > [!Video https://www.youtube.com/embed/m6KfAwEdtYU?rel=0]
+- durationInMinutes: 1
+  content: >
+    Generieren Sie eine App mit drei Bildschirmen anhand einer SharePoint-Liste, und erkunden Sie dann die Bildschirme und Steuerelemente der App. Aktualisieren Sie Bildschirme, Steuerelemente und Felder der App, und passen Sie mithilfe von Formeln das App-Verhalten weiter an.
+  ms.openlocfilehash: b18bd904adbe96d473e170443945c6464c02d6ea
+  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 11/12/2017
+- title: Eine App generieren
+  durationInMinutes: 3
+  content: >
+    > [!Video https://www.youtube.com/embed/m6KfAwEdtYU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-generate.md)]
-  - title: Kennenlernen einer generierten App
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/OJ8a9VINeKU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-explore-controls.md)]
-  - title: Anpassen der App
-    durationInMinutes: 5
-    content: |
-      > [!Video https://www.youtube.com/embed/KydeusvKndQ?rel=0]
+    [!INCLUDE [](includes/learning-spo-app-generate.md)]
+- title: Kennenlernen einer generierten App
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/OJ8a9VINeKU?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-customize.md)]
-  - title: Kennenlernen von App-Formeln
-    durationInMinutes: 9
-    content: |
-      > [!Video https://www.youtube.com/embed/9TBA19YU7EA?rel=0]
 
-      [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
-  - content: |
-      Sie haben den Abschnitt **App aus SharePoint erstellen** des geführten Lernens zu Microsoft PowerApps abgeschlossen.
+    [!INCLUDE [](includes/learning-spo-app-explore-controls.md)]
+- title: Anpassen der App
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/KydeusvKndQ?rel=0]
+
+
+    [!INCLUDE [](includes/learning-spo-app-customize.md)]
+- title: Kennenlernen von App-Formeln
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/9TBA19YU7EA?rel=0]
+
+
+    [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
+- content: "Sie haben den Abschnitt **App aus SharePoint erstellen** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"
