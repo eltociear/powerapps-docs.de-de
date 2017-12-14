@@ -115,7 +115,7 @@ Um die Sprache des benutzerdefinierten Formats anzugeben, verwenden Sie:
 
 | Platzhalter | Beschreibung |
 | --- | --- |
-| **[$-*Sprachkennzeichen*] ** |*Sprachkennzeichen* ist ein Sprachkennzeichen, wie es von der Funktion **Language** zurückgegeben wird.  Es kann die Form der einfachen Sprachangabe annehmen, wie etwa **[$-de]** für Deutsch, oder außerdem die Region enthalten, wie in **[$-de-AT]**, um das Gebietsschema auf Österreich einzugrenzen. |
+| **[$-*Sprachkennzeichen*]** |*Sprachkennzeichen* ist ein Sprachkennzeichen, wie es von der Funktion **Language** zurückgegeben wird.  Es kann die Form der einfachen Sprachangabe annehmen, wie etwa **[$-de]** für Deutsch, oder außerdem die Region enthalten, wie in **[$-de-AT]**, um das Gebietsschema auf Österreich einzugrenzen. |
 
 Der Sprachplatzhalter kann an beliebiger Stelle im benutzerdefinierten Format auftreten, darf jedoch nur einmal angegeben werden.
 
