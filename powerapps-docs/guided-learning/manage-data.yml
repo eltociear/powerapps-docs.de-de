@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Daten verwalten
 metadata:
   title: Daten verwalten | Microsoft PowerApps
@@ -12,14 +12,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/27/2017
   ms.author: mblythe
-items:
-- durationInMinutes: 1
-  content: "Hier erfahren Sie, wie Sie Daten im Common Data Service speichern und modellieren. Definieren und verwenden Sie Entitäten, die Ihren Geschäftsdaten und Prozessen entsprechen, und erweitern Sie das Common Data Model durch benutzerdefinierte Entitäten. Steuern Sie den Zugriff auf Entitäten mit rollenbasierter Sicherheit. Arbeiten Sie mit den Daten direkt im Dienst und in Excel.\n"
-  ms.openlocfilehash: 78638bd391ae00e2305b5be8b37a078296d98401
-  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.openlocfilehash: 774d21575a25a8b2b0ee620b3faa681f0afc28e5
+  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/12/2017
+  ms.lasthandoff: 12/09/2017
+items:
+- durationInMinutes: 1
+  content: >
+    Understand how to store and model data in the Common Data Service. Define and use entities that map to your business data and processes, and extend the common data model with custom entities. Use role-based security to control access to entities. Work with data directly in the service, and in Excel.
 - title: Der Common Data Service
   durationInMinutes: 5
   content: >
@@ -55,4 +56,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-common-data-service-security.md)]
-- content: "Sie haben den Abschnitt **Daten verwalten** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"
+- content: "You've completed the **Managing data** section of Microsoft PowerApps Guided Learning.\0"

@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Apps verwalten
 metadata:
   title: Apps verwalten | Microsoft PowerApps
@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: manage-data
-  nextTutorialTitle: Daten verwalten
+  nextTutorialTitle: Managing data
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -14,14 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/27/2017
   ms.author: mblythe
-items:
-- durationInMinutes: 1
-  content: "Geben Sie Apps für Kollegen und andere Benutzer frei, und steuern Sie, welche Version einer App verwendet und freigegeben wird. Arbeiten Sie mit Containern für Apps, Verbindungen und andere Ressourcen.\n"
-  ms.openlocfilehash: 706c686d84b520e2366e1fe8152ad9021949b0fe
-  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
+  ms.openlocfilehash: 432eeb154a499631d78a32440da2627249c11ab3
+  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 11/12/2017
+  ms.lasthandoff: 12/09/2017
+items:
+- durationInMinutes: 1
+  content: >
+    Share apps with colleagues and others, and control which version of an app is used and shared. Work with containers for apps, connections, and other resources.
 - title: Freigeben von Apps
   durationInMinutes: 5
   content: >
@@ -40,4 +41,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-manage-environments.md)]
-- content: "Sie haben den Abschnitt **Apps verwalten** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"
+- content: "You've completed the **Managing apps** section of Microsoft PowerApps Guided Learning.\0"

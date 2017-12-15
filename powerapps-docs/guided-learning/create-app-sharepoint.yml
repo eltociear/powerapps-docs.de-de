@@ -1,4 +1,4 @@
-documentType: Tutorial
+### YamlMime:Tutorial
 title: App aus SharePoint erstellen
 metadata:
   title: App aus SharePoint erstellen | Microsoft PowerApps
@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: create-app-cds
-  nextTutorialTitle: App aus dem Common Data Service erstellen
+  nextTutorialTitle: Creating an app from the Common Data Service
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -14,15 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/27/2017
   ms.author: mblythe
+  ms.openlocfilehash: b0a35a135113605a01c6a1d9f5e97d0c82e95119
+  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 12/09/2017
 items:
 - durationInMinutes: 1
   content: >
-    Generieren Sie eine App mit drei Bildschirmen anhand einer SharePoint-Liste, und erkunden Sie dann die Bildschirme und Steuerelemente der App. Aktualisieren Sie Bildschirme, Steuerelemente und Felder der App, und passen Sie mithilfe von Formeln das App-Verhalten weiter an.
-  ms.openlocfilehash: b18bd904adbe96d473e170443945c6464c02d6ea
-  ms.sourcegitcommit: fb1a20690729f1958a27bd553774a6047a2cd54e
-  ms.translationtype: HT
-  ms.contentlocale: de-DE
-  ms.lasthandoff: 11/12/2017
+    Generate a three screen app from a SharePoint list, then explore screens and controls from the app. Update app screens, controls, and fields; and use formulas to further customize app behavior.
 - title: Eine App generieren
   durationInMinutes: 3
   content: >
@@ -51,4 +51,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
-- content: "Sie haben den Abschnitt **App aus SharePoint erstellen** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"
+- content: "You've completed the **Creating an app from SharePoint** section of Microsoft PowerApps Guided Learning.\0"
