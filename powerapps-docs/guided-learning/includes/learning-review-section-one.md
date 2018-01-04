@@ -9,13 +9,13 @@ Die einfachste Möglichkeit zum Einstieg in PowerApps besteht darin, die Beispie
 ## <a name="whats-next"></a>Wie geht es weiter?
 Herzlichen Glückwunsch! Sie haben den ersten Abschnitt dieses Kurses für „Geführtes Lernen“ zu PowerApps abgeschlossen. Unabhängig davon, wie viel Erfahrung Sie am Anfang schon hatten, hoffen wir, dass Sie jetzt eine klare Vorstellung von PowerApps und dem Erstellen von Apps haben. Unten haben wir einige nützliche Ressourcen und Downloads zusammengestellt, Sie sollten sich jedoch auf jeden Fall auch andere Angebote für „Geführtes Lernen“ ansehen. Sie können entscheiden, wie Sie fortfahren möchten:
 
-* [Generieren und Anpassen einer App mit einer SharePoint-Liste](../create-app-sharepoint#step-1)
-* [Erstellen und Anpassen einer App mit dem Common Data Service](../create-app-cds#step-1) 
+* [Generieren und Anpassen einer App mit einer SharePoint-Liste](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1)
+* [Erstellen und Anpassen einer App mit dem Common Data Service](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1) 
 
 In beiden Abschnitte wird beschrieben, wie Sie eine App generieren und anpassen. Der Abschnitt zu SharePoint enthält etwas mehr Informationen zur generierten App, und der Abschnitt zum Common Data Service beschreibt komplexere Anpassungen. Natürlich können Sie beide Abschnitte durcharbeiten, suchen Sie sich einfach aus, womit Sie beginnen möchten. 
 
 ## <a name="powerapps-resources"></a>Ressourcen zu PowerApps
-* Ausführliche Informationen finden Sie in der [PowerApps-Dokumentation](https://powerapps.microsoft.com/tutorials/getting-started/).
+* Ausführliche Informationen finden Sie in der [PowerApps-Dokumentation](https://docs.microsoft.com/powerapps/).
 * Mit dem [PowerApps-Blog](https://powerapps.microsoft.com/blog/) bleiben Sie immer auf dem aktuellen Stand.
 * Sie können auch in der [PowerApps-Community](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) mitmachen.
 * Helfen Sie mit, PowerApps zu verbessern, indem Sie uns [Vorschläge](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) senden.

@@ -48,8 +48,8 @@ Bevor wir mit dem nächsten Abschnitt fortfahren, möchten wir noch einmal zu Sh
 
 Nachdem Sie den Abschnitt zur SharePoint-App bearbeitet haben, können Sie auswählen, wie Sie fortfahren möchten:
 
-* [Verwalten von Apps](../manage-apps#step-1)
-* [Erstellen und Anpassen einer App mit dem Common Data Service](../create-app-cds#step-1)
+* [Verwalten von Apps](https://docs.microsoft.com/powerapps/guided-learning/manage-apps#step-1)
+* [Erstellen und Anpassen einer App mit dem Common Data Service](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1)
 
 Im Abschnitt zur Verwaltung erfahren Sie, wie Sie Apps freigeben und verschiedene Versionen erstellen, und es werden Umgebungen erläutert, die Sie sich als Container für Apps, Daten und andere Ressourcen vorstellen können. Sie sollten den Abschnitt zur Verwaltung in jedem Fall bearbeiten, der Abschnitt zum Common Data Service enthält zudem wertvolle Informationen, u.a. weitere Anpassungen der App. 
 
