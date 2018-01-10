@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/13/2017
+ms.date: 01/02/2018
 ms.author: sharik
-ms.openlocfilehash: dbcafbc8d77aa427e5d129cb1d5760e10b1a106c
-ms.sourcegitcommit: e1572ad0f9e1f1e6149551e91a9bc1fed45e3132
+ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
+ms.sourcegitcommit: 1083f55a35cee22920460d3d91d3ccae306a5754
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -164,7 +164,7 @@ Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiter
 
 **A:** Nein. Diese Funktionalität wird derzeit nicht unterstützt.
 
-### <a name="administering-your-custom-list-form"></a>Verwalten des benutzerdefinierten Listenformulars
+### <a name="administering-custom-list-forms"></a>Verwalten von benutzerdefinierten Listenformularen
 
 **F:** Wie gebe ich mein benutzerdefiniertes Listenformular für andere Benutzer frei?
 
@@ -173,6 +173,10 @@ Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiter
 **F:** Wer kann Listenformulare anpassen?
 
 **A:** Jeder Benutzer mit SharePoint-Berechtigungen zum Verwalten, Entwerfen oder Bearbeiten der zugehörigen Liste.
+
+**F:** Benötige ich eine PowerApps-Lizenz, um benutzerdefinierte Listenformulare zu erstellen und zu verwenden?
+
+**A:** Wenn Sie über einen [Office 365-Plan mit PowerApps](pricing-billing-skus.md#licenses) verfügen, können Sie benutzerdefinierte Listenformulare erstellen und verwenden.
 
 **F:** Was geschieht, wenn Gastbenutzer auf eine Liste zuzugreifen, die ein benutzerdefiniertes Formular aufweist?
 
