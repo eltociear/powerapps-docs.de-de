@@ -104,7 +104,7 @@
       href: set-name-tile.md
     - name: Eine App speichern und veröffentlichen
       href: save-publish-app.md
-    - name: Freigeben einer App
+    - name: Eine App freigeben
       href: share-app.md
     - name: Eine App löschen
       href: delete-app.md
@@ -150,29 +150,31 @@
       href: data-platform-interactive-excel.md
     - name: Beispiele und Ressourcen
       href: samples-resources.md
-- name: Integrationsszenarien
+- name: In andere Technologien integrieren
   items:
-    - name: In SharePoint Online integrieren (Tutorialreihe)
-      href: sharepoint-scenario-intro.md
-    - name: SharePoint Online-Listen einrichten
-      href: sharepoint-scenario-setup.md
-    - name: Eine App generieren
-      href: sharepoint-scenario-generate-app.md
-    - name: Einen Flow für Genehmigungen erstellen
-      href: sharepoint-scenario-approval-flow.md
-    - name: App von Grund auf neu erstellen
-      href: sharepoint-scenario-build-app.md
-    - name: Einen Power BI-Bericht erstellen
-      href: sharepoint-scenario-build-report.md
-    - name: Den Power BI-Bericht veröffentlichen
-      href: sharepoint-scenario-publish-report.md
-    - name: Den Power BI-Bericht einbetten
-      href: sharepoint-scenario-embed-report.md
-    - name: Einen Flow für Warnungen erstellen
-      href: sharepoint-scenario-alerts-flow.md
-    - name: Das abgeschlossene Szenario durchlaufen
-      href: sharepoint-scenario-summary.md
-    - name: Cognitive Services integrieren
+    - name: In SharePoint Online integrieren
+      items:
+        - name: Übersicht über SharePoint Online-Integration
+          href: sharepoint-scenario-intro.md
+        - name: SharePoint Online-Listen einrichten
+          href: sharepoint-scenario-setup.md
+        - name: Eine App generieren
+          href: sharepoint-scenario-generate-app.md
+        - name: Einen Flow für Genehmigungen erstellen
+          href: sharepoint-scenario-approval-flow.md
+        - name: App von Grund auf neu erstellen
+          href: sharepoint-scenario-build-app.md
+        - name: Einen Power BI-Bericht erstellen
+          href: sharepoint-scenario-build-report.md
+        - name: Den Power BI-Bericht veröffentlichen
+          href: sharepoint-scenario-publish-report.md
+        - name: Den Power BI-Bericht einbetten
+          href: sharepoint-scenario-embed-report.md
+        - name: Einen Flow für Warnungen erstellen
+          href: sharepoint-scenario-alerts-flow.md
+        - name: Das abgeschlossene Szenario durchlaufen
+          href: sharepoint-scenario-summary.md
+    - name: In Cognitive Services integrieren
       href: cognitive-services-api.md
 - name: 'Entwickeln: Unternehmensentwickler'
   items:
