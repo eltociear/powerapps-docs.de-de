@@ -13,14 +13,13 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
   ms.openlocfilehash: 774d21575a25a8b2b0ee620b3faa681f0afc28e5
-  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
+  ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/09/2017
+  ms.lasthandoff: 01/12/2018
 items:
 - durationInMinutes: 1
-  content: >
-    Understand how to store and model data in the Common Data Service. Define and use entities that map to your business data and processes, and extend the common data model with custom entities. Use role-based security to control access to entities. Work with data directly in the service, and in Excel.
+  content: "Hier erfahren Sie, wie Sie Daten im Common Data Service speichern und modellieren. Definieren und verwenden Sie Entitäten, die Ihren Geschäftsdaten und Prozessen entsprechen, und erweitern Sie das Common Data Model durch benutzerdefinierte Entitäten. Steuern Sie den Zugriff auf Entitäten mit rollenbasierter Sicherheit. Arbeiten Sie mit den Daten direkt im Dienst und in Excel.\n"
 - title: Der Common Data Service
   durationInMinutes: 5
   content: >
@@ -56,4 +55,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-common-data-service-security.md)]
-- content: "You've completed the **Managing data** section of Microsoft PowerApps Guided Learning.\0"
+- content: "Sie haben den Abschnitt **Daten verwalten** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"

@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: create-app-cds
-  nextTutorialTitle: Creating an app from the Common Data Service
+  nextTutorialTitle: App aus dem Common Data Service erstellen
   displayType: one-column
   author: mgblythe
   manager: anneta
@@ -15,14 +15,14 @@ metadata:
   ms.date: 10/27/2017
   ms.author: mblythe
   ms.openlocfilehash: b0a35a135113605a01c6a1d9f5e97d0c82e95119
-  ms.sourcegitcommit: 9137e8800421a6623cb277d7f480d3d4f0da1a64
+  ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 12/09/2017
+  ms.lasthandoff: 01/12/2018
 items:
 - durationInMinutes: 1
   content: >
-    Generate a three screen app from a SharePoint list, then explore screens and controls from the app. Update app screens, controls, and fields; and use formulas to further customize app behavior.
+    Generieren Sie eine App mit drei Bildschirmen anhand einer SharePoint-Liste, und erkunden Sie dann die Bildschirme und Steuerelemente der App. Aktualisieren Sie Bildschirme, Steuerelemente und Felder der App, und passen Sie mithilfe von Formeln das App-Verhalten weiter an.
 - title: Eine App generieren
   durationInMinutes: 3
   content: >
@@ -51,4 +51,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-spo-app-explore-formulas.md)]
-- content: "You've completed the **Creating an app from SharePoint** section of Microsoft PowerApps Guided Learning.\0"
+- content: "Sie haben den Abschnitt **App aus SharePoint erstellen** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"

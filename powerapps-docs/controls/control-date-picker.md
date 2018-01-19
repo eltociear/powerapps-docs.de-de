@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: f2605680c7b6e8f7102fd3459230344863a93f55
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="date-picker-control-in-powerapps"></a>Datumsauswahl-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen ein Datum angeben können.
@@ -46,7 +46,7 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)**: Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
@@ -78,7 +78,7 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 **[PaddingRight](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -108,5 +108,5 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 3. Drücken Sie F5, legen Sie für **Deadline** ein Datum fest, und klicken oder tippen Sie dann auf **OK**.
    
     Im **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) wird angezeigt, wie viele Tage zwischen dem aktuellen und dem gewählten Datum verbleiben.
-4. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
+4. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 

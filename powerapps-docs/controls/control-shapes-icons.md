@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 7a71695460453816dd5c63dad8477cb7ccc703d7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
@@ -41,7 +41,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[FocusedBorderThickness](properties-color-border.md)**: Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -57,7 +57,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 ## <a name="example"></a>Beispiel
 1. Nennen Sie das **[Bildschirm](control-screen.md)**-Standardsteuerelement **Target**, fügen Sie ein **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie anschließend die  **[Text](properties-core.md)**-Eigenschaft so fest, dass **Target** angezeigt wird.
    
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Bildschirm](control-screen.md)**-Steuerelement hinzu, und nennen Sie es **Source**.
 3. Fügen Sie in **Source** ein **Shape**-Steuerelement hinzu, und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:
    <br>**Navigate(Target, ScreenTransition.Fade)**

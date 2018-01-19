@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
 ms.openlocfilehash: a2224d97c9cfc1261e43f7d30c8d8bdd2dd6e86b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Erstellen einer Common Data Service-Datenbank
 Mithilfe von Common Data Service als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder als Administrator zu einer vorhandenen Umgebung zugewiesen werden. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von Common Data Service finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).

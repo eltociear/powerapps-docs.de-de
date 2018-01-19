@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/14/2017
 ms.author: archanan
 ms.openlocfilehash: dd55314461b2ba4769e50275837dc6fd897fedcc
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank aus PowerApps
 Nachdem Sie eine Verbindung mit einer Oracle-Datenbank hergestellt und eine App in PowerApps erstellt haben, können Sie Tabellen in der Oracle-Datenbank auflisten und Tabellenzeilen erstellen, lesen und aktualisieren. Die Verbindung mit der Oracle-Datenbank unterstützt die vollständige Delegierung von Filtern, Sortieren und weiteren Funktionen, jedoch keine Trigger und gespeicherten Prozeduren.

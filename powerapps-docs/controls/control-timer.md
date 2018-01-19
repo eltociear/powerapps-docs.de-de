@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: c84eec1bdd541429d4524640d9e1ffa649b895fd
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -85,7 +85,7 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)**: Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -95,7 +95,7 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 

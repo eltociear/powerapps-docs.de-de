@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3784e90bbf6ed45d2b67b6211efaab279e37feca
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="check-box-control-in-powerapps"></a>Kontrollkästchen-Steuerelement in PowerApps
 Ein Steuerelement, das der Benutzer aktivieren und deaktivieren kann (wobei der Wert des Elements auf **true** bzw. **false** festgelegt wird).
@@ -28,7 +28,7 @@ Ein Steuerelement, das der Benutzer aktivieren und deaktivieren kann (wobei der 
 Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benutzer boolesche Werte angeben.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)**: Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
+**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
@@ -81,7 +81,7 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **OnUncheck** – Gibt an, wie eine App reagiert, wenn sich der Wert eines Kontrollkästchen- oder Umschalten-Steuerelements in **false** ändert.
 
-**[PaddingBottom](properties-size-location.md)** – Der Abstand zwischen dem Text in einem Steuerelement und dem unteren Rand des Steuerelements.
+**[PaddingBottom](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
 **[PaddingLeft](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
@@ -95,13 +95,13 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)**: Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 

@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: 1d32873009c337a835a047df38b9ef18d5bf2064
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>Freigeben einer Apps in PowerApps
 Sie können mit PowerApps Apps erstellen, die genau auf die Anforderungen Ihres eigenen Unternehmens abgestimmt sind, aber die eigentliche Stärke von PowerApps liegt darin, dass Sie diese Apps für andere Personen freigeben können. In diesem Thema erfahren Sie, wie Sie Apps für bestimmte Benutzer oder Sicherheitsgruppen oder für Ihre gesamte Organisation freigeben.
@@ -42,7 +42,7 @@ Um eine App freizugeben, müssen Sie powerapps.com öffnen. Das Freigeben von Ap
   
    ![Auslassungspunkte im Portal](./media/share-app/portal-share.png)
 
-## <a name="share-an-app"></a>Freigeben einer App
+## <a name="share-an-app"></a>Eine App freigeben
 Von hier aus können Sie eine App freigeben, indem Sie die folgenden Schritte ausführen.
 
 1. Geben Sie den Namen von mindestens einem Benutzer oder einer Sicherheitsgruppe in Azure Active Directory an, oder geben Sie an, dass Sie die App für Ihre gesamte Organisation freigeben möchten. Beachten Sie, dass Sie die Freigabe nur mit der Berechtigung **Benutzer** durchführen können, wenn Sie die App für Ihre gesamte Organisation freigeben.

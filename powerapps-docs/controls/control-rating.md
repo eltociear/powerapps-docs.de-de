@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 4dd23b8c94ee4760e40b4513e7a88667f85c3a4b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="rating-control-in-powerapps"></a>Steuerelement für Bewertungen in PowerApps
 Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen Anzahl, die Sie festlegen, angeben können.
@@ -39,7 +39,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)**: Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
@@ -47,7 +47,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**[OnChange](properties-core.md)**: Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -55,13 +55,13 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 
 **ReadOnly**: Gibt an, ob ein Benutzer den Wert eines Schiebereglers oder eines Bewertung-Steuerelements ändern kann.
 
-**[Reset](properties-core.md)**: Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **ShowValue**: Gibt an, ob ein Wert des Schiebereglers oder der Bewertung angezeigt wird, wenn der Benutzer diesen Wert ändert oder auf das Steuerelement zeigt.
 
 **[TabIndex](properties-accessibility.md)**: Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -89,5 +89,5 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 5. Klicken oder tippen Sie in **Quantitative** auf weniger als vier Sterne.
    
     Der Hinweistext im Steuerelement **[Text input](control-text-input.md)** wird geändert, um die niedrige Bewertung zu reflektieren.
-6. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
+6. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 

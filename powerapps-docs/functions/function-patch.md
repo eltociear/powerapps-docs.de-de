@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
 ms.openlocfilehash: 44d4c9e15b63cfbbd2f5304e6df7bd70fe748a04
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="patch-function-in-powerapps"></a>Funktion „Patch“ in PowerApps
 Ändert oder erstellt einen oder mehrere [Datensätze](../working-with-tables.md#records) in einer [Datenquelle](../working-with-data-sources.md) oder verbindet Datensätze außerhalb einer Datenquelle.
@@ -72,14 +72,14 @@ Geben Sie zwei oder mehr Datensätze an, die Sie zusammenführen möchten. Daten
 #### <a name="modify-or-create-a-record-in-a-data-source"></a>Ändern oder Erstellen eines Datensatzes in einer Datenquelle
 **Patch**( *DataSource*, *BaseRecord*, *ChangeRecord1* [, *ChangeRecord2*, … ])
 
-* *DataSource*: erforderlich. Die Datenquelle, die den zu ändernden Datensatz enthält oder für die Sie einen Datensatz erstellen möchten.
+* *Datenquelle*: Erforderlich. Die Datenquelle, die den zu ändernden Datensatz enthält oder für die Sie einen Datensatz erstellen möchten.
 * *BaseRecord*: erforderlich. Der zu ändernde oder zu erstellende Datensatz.  Wenn der Datensatz aus einer Datenquelle stammt, wird der Datensatz gefunden und geändert. Wenn das Ergebnis der  **[Defaults](function-defaults.md)**-Funktion verwendet wird, wird ein Datensatz erstellt.
 * *ChangeRecord(s)*: erforderlich.  Mindestens ein Datensatz, der Eigenschaften enthält, die für jeden Datensatz im *BaseRecord* geändert werden sollen.  Änderungsdatensätze werden nacheinander vom Anfang bis zum Ende der Argumenteliste verarbeitet, wobei spätere Eigenschaftswerte frühere Versionen überschreiben.
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>Ändern oder Erstellen einer Gruppe von Datensätzen in einer Datenquelle
 **Patch**( *DataSource*, *BaseRecordsTable*, *ChageRecordTable1*, [, *ChangeRecordTable2*, … ] )
 
-* *DataSource*: erforderlich. Die Datenquelle mit den zu ändernden Datensätzen oder für die Sie Datensätze erstellen möchten.
+* *Datenquelle*: Erforderlich. Die Datenquelle mit den zu ändernden Datensätzen oder für die Sie Datensätze erstellen möchten.
 * *BaseRecordTable*: erforderlich. Eine Tabelle mit zu ändernden oder zu erstellenden Datensätzen.  Wenn der Datensatz aus einer Datenquelle stammt, wird der Datensatz gefunden und geändert. Wenn das Ergebnis der  **[Defaults](function-defaults.md)**-Funktion verwendet wird, wird ein Datensatz erstellt.
 * *ChangeRecordTable(s)*: erforderlich.  Mindestens eine Tabelle von Datensätzen mit Eigenschaften, die für jeden Datensatz von *BaseRecordTable* geändert werden sollen.  Änderungsdatensätze werden nacheinander vom Anfang bis zum Ende der Argumenteliste verarbeitet, wobei spätere Eigenschaftswerte frühere Versionen überschreiben.
 
