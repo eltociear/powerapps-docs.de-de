@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 245c2a41254c244daa79a082d041231340c40872
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>Funktionen „Acos“, „Acot“, „Asin“, „Atan“, „Atan2“, „Cos“, „Cot“, „Degrees“, „Pi“, „Radians“, „Sin“ und „Tan“ in PowerApps
 Berechnen trigonometrische Werte
@@ -70,7 +70,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 ### <a name="inverse-functions"></a>Umkehrfunktionen
 **Acos**( *Zahl* )<br>**Acot**( *Zahl* )<br>**Asin**( *Zahl* )<br>**Atan**( *Zahl* )
 
-* *Zahl*: erforderlich. Zahl, die verarbeitet wird.
+* *Number*: erforderlich. Zahl, die verarbeitet wird.
 
 **Acos**( *EinspaltigeTabelle* )<br>**Acot**( *EinspaltigeTabelle* )<br>**Asin**( *EinspaltigeTabelle* )<br>**Atan**( *EinspaltigeTabelle* )
 

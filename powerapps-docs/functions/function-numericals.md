@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/13/2016
 ms.author: gregli
 ms.openlocfilehash: 25d9b49c7f527d7510e31dd937e1d8a580bb31cf
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funktionen „Abs“, „Exp“, „Ln“, „Power“ und „Sqrt“ in PowerApps
 Berechnen Absolutwerte, natürliche Logarithmen, Quadratwurzeln und die Ergebnisse der Potenzierung von *e* oder einer beliebigen Zahl zur angegebenen Potenz.
@@ -42,7 +42,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 ## <a name="syntax"></a>Syntax
 **Abs**( *Zahl* )<br>**Exp**( *Zahl* )<br>**Ln**( *Zahl* )<br>**Sqrt**( *Zahl* )
 
-* *Zahl*: erforderlich. Zahl, die verarbeitet wird.
+* *Number*: erforderlich. Zahl, die verarbeitet wird.
 
 **Power**( *Basis*, *Exponent* )
 

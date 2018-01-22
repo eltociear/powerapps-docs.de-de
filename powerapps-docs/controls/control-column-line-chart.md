@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 039b267394ef6be5e3038fa0b07149f69fee6a51
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Steuerelemente für Säulendiagramme und Liniendiagramme in PowerApps
 Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
@@ -28,7 +28,7 @@ Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
 Standardmäßig bestehen das **Säulendiagramm**-Steuerelement und das **Liniendiagramm**-Steuerelement aus mehreren gruppierten Steuerelementen. In diesen Steuerelementen werden ein Titel, Daten sowie eine Legende angezeigt.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Items](properties-core.md)** – Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+**[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
 **NumberOfSeries** – Gibt an, wie viele Datenspalten in einem Säulen- oder Liniendiagramm widergespiegelt werden.
 

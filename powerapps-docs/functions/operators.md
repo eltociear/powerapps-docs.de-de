@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
 ms.openlocfilehash: 3250251e02170d2dd7bab441bc3c94705216ec00
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>Operatoren und Datentypen in PowerApps
 Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere Informationen finden Sie unter den Informationen zu [globalen Apps](../global-apps.md).
@@ -86,7 +86,7 @@ Steuerelemente auf diesem Bildschirm verfügen über eine weitere Option. Sie k�
 ## <a name="disambiguation-operator"></a>Operator zur Mehrdeutigkeitsvermeidung
 Für einige Funktionen werden [Datensatzbereiche](../working-with-tables.md#record-scope) zum Zugreifen auf die Felder der Tabelle erstellt, während die einzelnen Datensätze verarbeitet werden, z.B. **Filter**, **AddColumns** und **Sum**.  Feldnamen, die mit dem Datensatzbereich hinzugefügt werden, setzen die gleichen Namen von anderen Orten der App außer Kraft.  Wenn dies passiert, können Sie mit dem **@**-Operator zur Mehrdeutigkeitsvermeidung trotzdem auf Werte außerhalb des Datensatzbereichs zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster ***Table*[@*FieldName*]** nutzen.  
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster **Table*[@*FieldName*]** nutzen.  
 * Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@*ObjectName*]** (ohne Tabellenbezeichnung).
 
 Weitere Informationen und Beispiele finden Sie in der Beschreibung der [Datensatzbereiche](../working-with-tables.md#record-scope).
