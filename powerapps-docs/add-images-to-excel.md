@@ -14,16 +14,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: sharik
-ms.openlocfilehash: 42025d812c483a6c0434b2ec995226635be904b7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3e5fdce6948928cdd393e7a9933b3261af4e3f6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Hinzufügen von Bildern aus PowerApps zu Excel
 Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeichnungen mit einem **Stift**-Steuerelement anzeigen, hinzufügen oder löschen können. Die App basiert auf einer Excel-Datei, die Sie erstellen und in ein Cloudspeicherkonto hochladen.
 
-**Voraussetzungen**
+## <a name="prerequisites"></a>Voraussetzungen
 
 * Sie müssen mit dem [Hinzufügen und Konfigurieren von Steuerelementen](add-configure-controls.md) vertraut sein.
 * Sie müssen mit dem [Konfigurieren von Excel-Daten als Tabelle](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US) vertraut sein.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 710e48f8619c44082d81907e64896b15425e4531
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 58f8c4bf55167e7c891a614a2bfb98ef20dcfd7c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 Ändern, welcher Bildschirm angezeigt wird
@@ -53,7 +53,7 @@ Legen Sie die **[OnHidden](../controls/control-screen.md)**-Eigenschaft des alte
 
 **Back** gibt in der Regel **TRUE** zurück, gibt jedoch **FALSE** zurück, wenn sich der Benutzer auf dem ersten angezeigten Bildschirm befindet und es keinen vorherigen Bildschirm gibt.  **Navigate** gibt in der Regel **TRUE** zurück, gibt jedoch **FALSE** zurück, wenn ein Problem mit einem der Argumente vorliegt.
 
-Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-formulas-in-depth.md#behavior-formulas) verwenden.
+Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ## <a name="syntax"></a>Syntax
 **Back**()

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 944d6d8bf8c02790af7fa6726c15a94587c6af24
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: c0ca5547f433aea1bee8d5d0d430c3e11a7f4caa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="forall-function-in-powerapps"></a>Funktion „ForAll“ in PowerApps
 Berechnet Werte und führt Aktionen für alle [Datensätze](../working-with-tables.md#records) einer [Tabelle](../working-with-tables.md) durch.
@@ -27,7 +27,7 @@ Berechnet Werte und führt Aktionen für alle [Datensätze](../working-with-tabl
 ## <a name="description"></a>Beschreibung
 Die **ForAll**-Funktion wertet eine Formel für alle Datensätze einer Tabelle aus.  Die Formel kann einen Wert berechnen und/oder Aktionen wie das Ändern von Daten oder das Arbeiten mit einer Verbindung ausführen.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 ### <a name="return-value"></a>Rückgabewert
 Das Ergebnis jeder Formelauswertung wird in einer Tabelle in der gleichen Reihenfolge wie in der Eingabetabelle zurückgegeben.
@@ -49,13 +49,13 @@ Viele Funktionen in PowerApps können gleichzeitig mehrere Werte mit einer einsp
 Ein weiterer Aspekt ist, dass **ForAll** im Gegensatz zu anderen Funktionen wie z.B. **Filter** nicht delegiert werden kann.  
 
 ### <a name="delegation"></a>Delegierung
-[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Syntax
 **ForAll**( *Tabelle*, *Formel* )
 
 * *Table*: erforderlich. Zugrunde liegende Tabelle.
-* *Formula*: erforderlich.  Die Formel zur Auswertung für alle Datensätze der *Tabelle*.
+* *Formel*: Erforderlich.  Die Formel zur Auswertung für alle Datensätze der *Tabelle*.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="calculations"></a>Berechnungen

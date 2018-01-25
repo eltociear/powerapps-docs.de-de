@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2016
-ms.author: kuntalme
-ms.openlocfilehash: da8b5bc5f71a3d0c52ad9a0e41a28aeb50841a6b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: edbf16982dfff5c8bda8abe314a8f211af362093
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Dynamics AX-Verbindung aus Microsoft PowerApps herstellen
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
@@ -36,7 +36,7 @@ Informationen zum Hinzufügen von Daten aus Dynamics AX zu einer vorhandenen App
 
 Sehen Sie die [Liste der verfügbaren Verbindungen](../connections-list.md) ein, und erfahren Sie, wie Sie in PowerApps [Verbindungen verwalten](../add-manage-connections.md).
 
-## <a name="next-steps"></a>Nächste Schritte
+### <a name="next-steps"></a>Nächste Schritte
 * Erfahren Sie, wie Sie [Daten aus einer Datenquelle anzeigen](../add-gallery.md).
 * Erfahren Sie, wie Sie [Details anzeigen und Datensätze erstellen oder aktualisieren](../add-form.md).
 

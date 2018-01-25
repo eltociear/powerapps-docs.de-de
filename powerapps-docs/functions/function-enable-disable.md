@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b4051bdb312707cfafe63a97b5e77a2860feb60c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3b9801e804284cb52d389aa0c57d1247a008dd0d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enable-and-disable-functions-in-powerapps"></a>Enable- und Disable-Funktionen in PowerApps
 Schaltet ein [Signal](signals.md) ein oder aus.
@@ -34,7 +34,7 @@ Die Funktionen **Enable** und **Disable** aktivieren bzw. deaktivieren ein Signa
 
 Diese Funktionen sind derzeit nur für das Signal **[Location](signals.md)** verfügbar.
 
-Diese Funktionen besitzen keinen Rückgabewert. Verwenden Sie sie nur in [Verhaltensformeln](../working-with-formulas-in-depth.md#behavior-formulas).
+Diese Funktionen besitzen keinen Rückgabewert. Verwenden Sie sie nur in [Verhaltensformeln](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Syntax
 **Enable**( *Signal* )<br>**Disable**( *Signal* )

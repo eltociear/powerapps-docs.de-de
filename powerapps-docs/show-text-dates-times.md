@@ -14,18 +14,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 0fcfb90de55c0504a7a7ff5e7d75cd782b8f56e6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f87b952378c64ec7c67d98b5dfc194cb62be767
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Anzeigen von Text und Formatieren von Datums- und Uhrzeitangaben in PowerApps
 Fügen Sie Datumsangaben und Uhrzeiten hinzu, und formatieren Sie sie, um die geeignete Detailebene anzuzeigen oder Ihr Gebietsschema widerzuspiegeln. Berechnen Sie die Zeitspanne zwischen zwei Datumswerten, oder berechnen Sie ein Datum, das eine bestimmte Zeitspanne vor oder nach einem von Ihnen angegebenen Datum liegt. Konvertieren Sie Datumswerte in getrennte Werte für Tage, Monate und Jahre, und konvertieren Sie Werte für Stunden, Minuten und Sekunden.
 
 Fügen Sie beispielsweise Benutzerdaten zu Änderungen am Warenbestand oder zu Kundenbesprechungen, Daten aus einer externen Quelle oder Daten aus einer anderen, in PowerApps erstellten App hinzu. Wenn diese Daten bis auf die Millisekunde genaue Uhrzeitwerte umfassen, runden Sie diese zur Vereinfachung auf die nächste Minute. Berechnen Sie, wie viele Tagen bis zu einem wichtigen Meilenstein verbleiben. Wenn Sie alle fünf Tage eine Kundenbesprechung planen möchten, können Sie diese Datumswerte automatisch berechnen. Wenn der 10. Mai 1985 in getrennten Feldern für Tag, Monat und Jahr gespeichert ist, können Sie das Datum in einem einzelnen Wert konsolidieren. Umgekehrt können Sie Datumswerte in getrennte Werte aufteilen, wenn Ihre App diese separat verwaltet.
 
-**Voraussetzungen**
+## <a name="prerequisites"></a>Voraussetzungen
 
 * [Registrieren Sie sich](signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
 * Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
@@ -56,7 +56,9 @@ Hier sehen Sie einige Beispiele.
    * **Today** berechnet den aktuellen Tag als Wert.
    * **DateValue** konvertiert eine Literalzeichenfolge (der zwischen den doppelten Anführungszeichen angezeigte Wert) in einen Wert, für den Berechnungen durchgeführt werden können.
 3. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)**-Steuerelement mit dem Namen **BirthDate** hinzu, und verschieben Sie es unter **ShowText**.
+
 4. Geben Sie in **BirthDate** den Monat und den Tag Ihrer Geburt ein (z.B. **05/18**).
+
 5. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **ShowText** auf diese Formel fest:
    <br>**DateDiff(Today(), DateValue(BirthDate.Text))**
    
@@ -122,7 +124,9 @@ Konvertieren Sie Datums- und Uhrzeitwerte aus Textzeichenfolgen in Werte, die Si
    > 
 
 ## <a name="format-a-date-by-using-datevalue"></a>Formatieren eines Datums mithilfe von „DateValue“
+
 1. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)**-Steuerelement namens **ArrivalDate** hinzu, und geben Sie dann ein Datum ein (z.B. **5/10/85**).
+
 2. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) mit dem Namen **FormatDate** hinzu, und legen Sie dessen Eigenschaft **[Text](controls/properties-core.md)** auf diese Formel fest:
    <br>**DateValue(ArrivalDate.Text)**
    
@@ -141,8 +145,11 @@ Konvertieren Sie Datums- und Uhrzeitwerte aus Textzeichenfolgen in Werte, die Si
     **FormatDate** zeigt das Datum in dem von Ihnen angegebenen Format an.
 
 ## <a name="format-a-time-using-datetimevalue"></a>Formatieren einer Uhrzeit mithilfe von „DateTimeValue“
+
 1. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)**-Steuerelement namens **ArrivalTime** hinzu, und geben Sie **6:15 AM** in das Feld ein.
+
 2. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) namens **ShowTime** hinzu.
+
 3. Um eines der verschiedenen integrierten Formate zu verwenden, ändern Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **ShowTime** in diese Formel:
    <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
    
@@ -158,8 +165,11 @@ Konvertieren Sie Datums- und Uhrzeitwerte aus Textzeichenfolgen in Werte, die Si
    > 
 
 ## <a name="show-the-time-between-dates"></a>Anzeigen der Zeitspanne zwischen Datumsangaben
+
 1. Fügen Sie zwei **[Texteingabe](controls/control-text-input.md)**-Steuerelemente namens **Start** und **End** hinzu.
+
 2. Geben Sie in **Start** den Wert **4/1/2015** und in **End** den Wert **1/1/2016** ein.
+
 3. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) mit dem Namen **DateDiff** hinzu, und legen Sie dessen Eigenschaft **[Text](controls/properties-core.md)** auf diese Formel fest:
    <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
    
@@ -171,7 +181,9 @@ Konvertieren Sie Datums- und Uhrzeitwerte aus Textzeichenfolgen in Werte, die Si
     **DateDiff** zeigt **9** an. Dies ist die Anzahl von Monaten zwischen dem 1. April 2015 und dem 1. Januar 2016. Ersetzen Sie **Months** durch **Quarters** oder **Years**, um die Zeit in Monaten, Quartalen oder Jahren anzuzeigen.
 
 ## <a name="identify-a-date-before-or-after-another-date"></a>Identifizieren eines Datums vor oder nach einem anderen Datum
+
 1. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)**-Steuerelement namens **Start** hinzu, und geben Sie den Wert **5/10/1985** darin ein.
+
 2. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) mit dem Namen **DateAdd** hinzu, und legen Sie dessen Eigenschaft **[Text](controls/properties-core.md)** auf diese Formel fest:
    <br>**DateAdd(DateValue(Start.Text), 3)**
    
@@ -192,13 +204,18 @@ Konvertieren Sie Datums- und Uhrzeitwerte aus Textzeichenfolgen in Werte, die Si
     Die Bezeichnung zeigt **8/10/1985**. Dieses Datum liegt drei Monate nach dem Datum in **Start**. Ersetzen Sie **Months** durch **Quarters** oder **Years**, um ein Datum zu identifizieren, das die angegebene Anzahl von Quartalen oder Jahren vor oder nach dem Datum in **Start** liegt.
 
 ## <a name="calculate-dates-based-on-years-months-and-days"></a>Berechnen von Datumsangaben basierend auf Jahren, Monaten und Tagen
+
 1. Fügen Sie drei **[Dropdown](controls/control-drop-down.md)**-Steuerelemente namens **Year**, **Month** und **Day** hinzu.
+
 2. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft von **Year** auf diese Formel fest:
    <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
+
 3. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft von **Month** auf diese Formel fest:
    <br>**Table({Month:"1"}, {Month:"2"}, {Month:"3"}, {Month:"4"}, {Month:"5"}, {Month:"6"}, {Month:"7"}, {Month:"8"}, {Month:"9"}, {Month:"10"}, {Month:"11"}, {Month:"12"})**
+
 4. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft von **Day** auf diese Formel fest:
    <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
+
 5. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](controls/properties-core.md)**-Eigenschaft auf diese Formel fest:
    <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
    
@@ -215,13 +232,18 @@ Möglicherweise müssen Sie Daten konvertieren, die Sie nicht erwartet haben. We
 * Wenn ein Tageswert kleiner ist als 1, subtrahiert die Funktion diese Anzahl von Tagen plus 1 vom ersten Tag des angegebenen Monats.
 
 ## <a name="calculate-times-based-on-hours-minutes-and-seconds"></a>Berechnen von Uhrzeitangaben basierend auf Stunden, Minuten und Sekunden
+
 1. Fügen Sie zwei **Dropdown**-Listen namens **Hour** und **Minute** hinzu.
+
 2. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft von **Hour** auf diese Formel fest:
    <br>**Table({Hour:"9"}, {Hour:"10"}, {Hour:"11"}, {Hour:"12"}, {Hour:"13"}, {Hour:"14"}, {Hour:"15"}, {Hour:"16"}, {Hour:"17"})**
+
 3. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft von **Minute** auf diese Formel fest:
    <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
+
 4. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](controls/properties-core.md)**-Eigenschaft auf diese Formel fest:  
    <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
+
 5. Wählen Sie für **Hour** den Wert **15** und für **Minute** den Wert **45** aus.
    
     Das **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) zeigt **15:45 h** an.

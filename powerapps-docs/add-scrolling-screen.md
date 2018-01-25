@@ -15,18 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 8441ac93c1d3f96e0316ff1f044dc58b800d4dd5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 02e45c98aa991c14ad99d3bf3f11d02dbc0752aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-a-scrolling-screen-in-powerapps"></a>Hinzufügen eines Scrollbildschirms in PowerApps
 Erstellen Sie einen Bildschirm, durch den Benutzer scrollen können, um andere Elemente anzuzeigen. Sie können beispielsweise eine App erstellen, in der Daten in einem Säulendiagramm und einem Liniendiagramm dargestellt werden. Durch Hinzufügen eines Scrollbildschirms können Sie mehrere Steuerelemente hinzufügen, die Benutzer beim Scrollen anzeigen können.
 
 Wenn Sie in einem Abschnitt mehrere Steuerelemente hinzufügen, bleibt die relative Position der Steuerelemente im Abschnitt erhalten, wobei es keine Rolle spielt, ob es sich um eine Smartphone-App oder eine Tablet-App handelt. Beachten Sie, dass sich Bildschirmgröße und -ausrichtung auf die Anordnung der Abschnitte auswirken können.  
-
-&nbsp;
 
 [!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
 

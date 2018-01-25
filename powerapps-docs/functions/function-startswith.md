@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: fc575ff16f190f85b50ef056430354e32d0ab907
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2ffc183221e399ee978ac9a600b400e96a00f704
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funktionen „EndsWith“ und „StartsWith“ in PowerApps
 Testet, ob eine Textzeichenfolge mit einer anderen Textzeichenfolge beginnt oder endet.
@@ -31,7 +31,7 @@ Die **StartsWith**-Funktion testet, ob eine Zeichenfolge mit einer anderen begin
 
 Bei beiden Funktionen wird in den Tests die Groß-/Kleinschreibung nicht beachtet.  Der Rückgabewert beider Funktionen ist der boolescher Wert **TRUE** oder **FALSE**.  
 
-Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter-lookup.md)**-Funktion, um die Daten in der App zu durchsuchen. Sie können auch mit dem **[in](operators.md#in-and-exactin-operators)**-Operator oder der **[Search](function-fitler-lookup.md)**-Funktion an einer beliebigen Stelle innerhalb von Textzeichenfolgen und nicht nur am Anfang oder Ende suchen.  Die Wahl der Funktionen hängt von den Anforderungen der Anwendung ab, und davon welche Funktion für Ihre bestimmte Datenquelle [delegiert](../delegation-overview.md) werden kann.  Wenn eine dieser Funktionen nicht delegiert werden kann, wird beim Erstellen ein blauer Punkt angezeigt, um Sie bezüglich dieser Einschränkung zu warnen.
+Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter-lookup.md)**-Funktion, um die Daten in der App zu durchsuchen. Sie können auch mit dem **[in](operators.md#in-and-exactin-operators)**-Operator oder der **[Search](function-filter-lookup.md)**-Funktion an einer beliebigen Stelle innerhalb von Textzeichenfolgen und nicht nur am Anfang oder Ende suchen.  Die Wahl der Funktionen hängt von den Anforderungen der Anwendung ab, und davon welche Funktion für Ihre bestimmte Datenquelle [delegiert](../delegation-overview.md) werden kann.  Wenn eine dieser Funktionen nicht delegiert werden kann, wird beim Erstellen ein blauer Punkt angezeigt, um Sie bezüglich dieser Einschränkung zu warnen.
 
 ## <a name="syntax"></a>Syntax
 **EndsWith**( *Text*, *EndText* )

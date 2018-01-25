@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/29/2017
 ms.author: gregli
-ms.openlocfilehash: ddd772b8db016c69001d2d19f33863fe65fbd25a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ef44d704d16892c7c37ac4fbf7c3eebc0ffcb966
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-function-in-powerapps"></a>Set-Funktion in PowerApps
 Legt den Wert einer globalen Variablen fest.
@@ -32,9 +32,9 @@ Globale Variablen sind in Ihrer App auf allen Bildschirmen verfügbar.  Sie stel
 PowerApps basiert auf Formeln, die automatisch neu berechnet werden, während der Benutzer mit einer App interagiert.  Globale Variablen bieten diesen Vorteil nicht und können das Erstellen und Verstehen Ihrer App erschweren.  Konsultieren Sie vor der Verwendung einer Variablen den Artikel [Grundlegendes zu Variablen in PowerApps](../working-with-variables.md).
 
 ## <a name="description"></a>Beschreibung
-Globale Variablen werden mithilfe der **Set**-Funktion implizit erstellt.  Eine explizite Deklaration ist nicht erforderlich.  Wenn Sie alle **Set**-Funktionen für eine globale Variable entfernen, hört die globale Variable auf zu existieren.  Legen Sie zum Leeren einer Variablen ihren Wert auf das Ergebnis der [**Blank**-Funktion](function-blank.md) fest. 
+Globale Variablen werden mithilfe der **Set**-Funktion implizit erstellt.  Eine explizite Deklaration ist nicht erforderlich.  Wenn Sie alle **Set**-Funktionen für eine globale Variable entfernen, hört die globale Variable auf zu existieren.  Legen Sie zum Leeren einer Variablen ihren Wert auf das Ergebnis der [**Blank**-Funktion](function-isblank-isempty.md) fest.
 
-Sie können die Werte, Definitionen und Verwendungen Ihrer Variablen in der Ansicht „Variablen“ unter dem Menü „Datei“ in der Erstellungsumgebung anzeigen. 
+Sie können die Werte, Definitionen und Verwendungen Ihrer Variablen in der Ansicht „Variablen“ unter dem Menü „Datei“ in der Erstellungsumgebung anzeigen.
 
 Wie in den Beispielen weiter unten in diesem Thema gezeigt, können globale Variablen verschiedene Arten von Informationen enthalten, u.a. folgende:
 
@@ -48,7 +48,7 @@ Eine globale Variable verfügt über ihren Wert, bis die App geschlossen wird.  
 
 Globale Variablen können nicht denselben Namen wie eine vorhandene Sammlung oder ein vorhandenes Steuerelement aufweisen.  Sie kann jedoch denselben Namen wie eine Kontextvariable besitzen.  Verwenden Sie den [Operator zur Mehrdeutigkeitsvermeidung](operators.md#disambiguation-operator), um zu zwischen beiden zu unterscheiden.
 
-**Set** weist keinen Rückgabewert auf; Sie können die Funktion nur innerhalb einer [Verhaltensformel](../working-with-formulas-in-depth.md#behavior-formulas) verwenden.
+**Set** weist keinen Rückgabewert auf; Sie können die Funktion nur innerhalb einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ## <a name="syntax"></a>Syntax
 **Set**( *VariableName*, *Value* )

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 532b30b2a8740dc3f4adf879029608c6f764c6e2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cc12241861a1dd6a0242810bb1a6faab70a2de27
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Collect-, Clear- und ClearCollect-Funktionen in PowerApps
 Erstellt und löscht [Sammlungen](../working-with-data-sources.md#collections) und fügt [Datensätze](../working-with-tables.md#records) zu einer beliebigen [Datenquelle](../working-with-data-sources.md) hinzu.
@@ -40,7 +40,7 @@ Sammlungen werden manchmal verwendet, um globale Variablen zu halten oder eine t
 
 Sie können auch die **[Patch](function-patch.md)**-Funktion für die Erstellung von Datensätzen in einer Datenquelle verwenden.
 
-**Collect** gibt die geänderte Datenquelle als Tabelle zurück.  **Collect** kann nur in einer [behavior formula (Verhaltensformel)](../working-with-formulas-in-depth.md#behavior-formulas) verwendet werden.
+**Collect** gibt die geänderte Datenquelle als Tabelle zurück.  **Collect** kann nur in einer [behavior formula (Verhaltensformel)](../working-with-formulas-in-depth.md) verwendet werden.
 
 ### <a name="clear"></a>Clear
 Die **Clear**-Funktion löscht alle Datensätze einer Sammlung.  Die Spalten der Sammlung bleiben erhalten.

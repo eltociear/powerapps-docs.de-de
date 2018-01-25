@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 37261f710ffd13cb9eae4aa6aa9eb551e7964fb9
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbd440528e3af9e199e5e37bc5c4e9f4d36dbe21
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Die Funktionen „AddColumns“, „DropColumns“, „RenameColumns“ und „ShowColumns“ in PowerApps
 Formen eine [Tabelle](../working-with-tables.md) durch Hinzufügen, Verwerfen, Umbenennen und Auswählen der [Spalten](../working-with-tables.md#columns)
@@ -39,7 +39,7 @@ Die Spalten einer [Datenquelle](../working-with-data-sources.md) können durch d
 Die Funktion **AddColumns** fügt einer Tabelle eine Spalte hinzu, und eine Formel definiert die Werte in dieser Spalte. Vorhandene Spalten bleiben unverändert.
 
 Die Formel wird für jeden Datensatz der Tabelle ausgewertet.
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Die Funktion **DropColumns** schließt Spalten aus einer Tabelle aus.  Alle anderen Spalten bleiben unverändert. **DropColumns** schließt Spalten aus, und **ShowColumns** schließt Spalten ein.
 
@@ -49,7 +49,7 @@ Die Funktion **ShowColumns** schließt Spalten einer Tabelle ein und verwirft al
 
 Das Ergebnis all dieser Funktionen ist eine neue Tabelle mit angewendeter Transformation.  Die ursprüngliche Tabelle wird nicht geändert.
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Syntax
 **AddColumns**( *Tabelle*, *Spaltenname1*, *Formel1* [, *Spaltenname2*, *Formel2*, ... ] )

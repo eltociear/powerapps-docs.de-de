@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: c5d4780908ebd20989649df14dec51d70e8eecde
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ce4d0db7a82e87d25df950c99da718bf8c84b9bd
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-information-about-a-powerapps-user"></a>Anzeigen von Informationen zu einem PowerApps-Benutzer
 Mithilfe der User-Funktion können Sie den vollständigen Namen, die E-Mail-Adresse und das dem angemeldeten Benutzer zugeordnete Bild anzeigen. Sie können diese Informationen verwenden, um ein Formular automatisch auszufüllen.
@@ -30,8 +30,6 @@ Beispielsweise können Sie dieses Feature folgendermaßen einsetzen:
 * Fügen Sie automatisch eine E-Mail-Adresse ein, wenn Sie sich an Ihren Helpdesk wenden.
 
 Grundsätzlich können Sie diese Funktion immer dann einsetzen, wenn Benutzer davon profitieren, dass Formulare oder Bezeichnungen automatisch ausgefüllt werden.
-
-&nbsp;
 
 [!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
 

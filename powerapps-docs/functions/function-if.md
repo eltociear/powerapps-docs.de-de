@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 6b969ca59f28abfefe91c887c2755ee7a7d28ed4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 9254eaf63d816fc8ac9890026f74bdeaeaa9b1a4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>Die Funktionen „If“- und „Switch“ in PowerApps
 Bestimmt, ob eine beliebige Bedingung in einer Menge TRUE ist (**If**) oder ob das Ergebnis einer Formel mit einem beliebigen Wert in einer Menge übereinstimmt (**Switch**) und gibt anschließend ein Ergebnis zurück oder führt eine Aktion aus.
@@ -35,7 +35,7 @@ Die **Switch**-Funktion wertet eine Formel aus und bestimmt, ob das Ergebnis mit
 * Verwenden Sie **If**, um mehrere unabhängige Bedingungen auszuwerten. In PowerApps können Sie (im Gegensatz zu Microsoft Excel) mehrere Bedingungen angegeben, ohne **If**-Formeln schachteln zu müssen.
 * Verwenden Sie **Switch**, um eine einzelne Bedingung im Abgleich mit mehreren möglichen Übereinstimmungen auszuwerten. Sie können auch in diesem Fall **If** verwenden, doch dann müssen Sie die Formel für jede mögliche Übereinstimmung wiederholen.
 
-Sie können diese beiden Formeln in [Verhaltensformeln](../working-with-formulas-in-depth.md#behavior-formulas) verwenden, um eine Verzweigung zwischen zwei oder mehr Aktionen zu erstellen. Nur eine Verzweigung löst eine Aktion aus. Bedingungen und Übereinstimmungen werden in der Reihenfolge ausgewertet und angehalten, wenn eine Bedingung **TRUE** ist oder eine Übereinstimmung gefunden wird.
+Sie können diese beiden Formeln in [Verhaltensformeln](../working-with-formulas-in-depth.md) verwenden, um eine Verzweigung zwischen zwei oder mehr Aktionen zu erstellen. Nur eine Verzweigung löst eine Aktion aus. Bedingungen und Übereinstimmungen werden in der Reihenfolge ausgewertet und angehalten, wenn eine Bedingung **TRUE** ist oder eine Übereinstimmung gefunden wird.
 
 *Leer* wird zurückgegeben, wenn keine Bedingungen **TRUE** sind, keine Übereinstimmungen gefunden werden und Sie kein Standardergebnis angeben.
 
@@ -83,7 +83,7 @@ In den folgenden Beispielen enthält ein **[Texteingabe](../controls/control-tex
 1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement hinzu, und nennen Sie es **Text1**, wenn es diesen Namen nicht bereits standardmäßig hat.
 2. Geben Sie in **Text1** den Wert **30** ein.
 3. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
-   **If( Value(Text1.Text) < 20, "VIELE mehr bestellen!", Value(Text1.Text) < 40, "Mehr bestellen!", Text1.Text )**
+   **If( Value(Text1.Text) < 20, "Viel mehr bestellen!", Value(Text1.Text) < 40, "Mehr bestellen!", Text1.Text )**
    
     Das **Bezeichnung**-Steuerelement zeigt **Mehr bestellen!**, da der Wert von **Text1** größer als 20, aber kleiner als 40 ist.
 4. Geben Sie in **Text1** den Wert **15** ein.

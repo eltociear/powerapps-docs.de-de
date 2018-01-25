@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 36f259989c01d295dd1e6d3894032748133483d3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 71732f7d2785dba42ba2a6e05b70ce16d3f017a5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>Funktionen „Update“ und „UpdateIf“ in PowerApps
 Aktualisieren [Datensätze](../working-with-tables.md#records) in einer [Datenquelle](../working-with-data-sources.md)
@@ -39,10 +39,10 @@ Um eine Änderung anzugeben, verwenden Sie einen Änderungsdatensatz, der neue E
 
 Ähnlich wie die **UpdateIf**-Funktion können Sie auch die **[Patch](function-patch.md)**-Funktion verwenden, um bestimmte Spalten eines Datensatzes zu ändern, ohne dass sich dies auf andere Spalten auswirkt.
 
-Sowohl **Update** als auch **UpdateIf** geben die geänderte Datenquelle als [Tabelle](../working-with-tables.md) zurück. Sie müssen beide Funktionen in einer [Verhaltensformel](../working-with-formulas-in-depth.md#behavior-formulas) verwenden.
+Sowohl **Update** als auch **UpdateIf** geben die geänderte Datenquelle als [Tabelle](../working-with-tables.md) zurück. Sie müssen beide Funktionen in einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ### <a name="delegation"></a>Delegierung
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Syntax
 **Update**( *Datenquelle*, *AlterDatensatz*, *NeuerDatensatz* [, **All** ] )

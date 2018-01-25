@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 76b41c6dc3b23a3d1f30425b9eac1011406a8757
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 736d634e9db5bc97ceb69852c59b229c7478863b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>Die Funktionen „Remove“ und „RemoveIf“ in PowerApps
 Entfernt [Datensätze](../working-with-tables.md#records) aus einer [Datenquelle](../working-with-data-sources.md).
@@ -33,12 +33,12 @@ Für [Sammlungen](../working-with-data-sources.md#collections) muss der gesamte 
 ### <a name="removeif-function"></a>RemoveIf-Funktion
 Verwenden Sie die **RemoveIf**-Funktion,um einen Datensatz oder Datensätze auf Grundlage einer Bedingung oder eine Reihe von Bedingungen zu entfernen. Jede Bedingung kann jede beliebige Formel sein, die **TRUE** oder **FALSE** ergibt, und die auf [Spalten](../working-with-tables.md#columns) der Datenquelle anhand des Namens verweisen kann. Jede Bedingung wird einzeln für jeden Datensatz ausgewertet, und der Eintrag wird entfernt, wenn alle Bedingungen als **TRUE** ausgewertet werden.
 
-**Remove** und **RemoveIf** geben die geänderten Datenquelle als eine [Tabelle](../working-with-tables.md) zurück. Beide Funktionen können nur in [Verhaltensformeln](../working-with-formulas-in-depth.md#behavior-formulas) geändert werden.
+**Remove** und **RemoveIf** geben die geänderten Datenquelle als eine [Tabelle](../working-with-tables.md) zurück. Beide Funktionen können nur in [Verhaltensformeln](../working-with-formulas-in-depth.md) geändert werden.
 
 Sie können auch die **[Clear](function-clear-collect-clearcollect.md)**  Funktion verwenden, um alle Datensätze in einer Datenquelle zu entfernen.
 
 ### <a name="delegation"></a>Delegierung
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Syntax
 **Remove**( *DataSource*, *Record1* [, *Record2*, ... ] [, **All** ] )

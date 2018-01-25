@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 230ad9f61185caff93fb3a5f56c62176b4f78c16
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b534400317e39dffec30f185c180de34098a378f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="troubleshooting---unable-to-create-or-retrieve-a-mashup-for-this-database"></a>Problembehandlung – Ein Mashup für diese Datenbank kann nicht erstellt oder abgerufen werden
 Bei Verwendung der Funktion **Neue Entitäten aus Daten (Technische Vorschau)** kann ein Fehler wie der Folgende auftreten:
@@ -31,7 +31,6 @@ Dies kann der Fall sein, wenn Sie die Funktion zum Erstellen von *benutzerdefini
 * Ein AAD-Mandantenadministrator (**Azure Active Directory**) hat den Benutzern die Möglichkeit verweigert, den Zugriff von Apps auf Unternehmensdaten in ihrem Namen zu gestatten.
 * Es wird ein nicht verwalteter Active Directory-Mandant verwendet. Ein nicht verwalteter Mandant ist ein Verzeichnis ohne globalen Administrator, das erstellt wurde, um ein Angebot mit Self-Service-Registrierung abzuschließen. Um dieses Problem zu beheben, muss für Benutzer *zuerst* die Konvertierung in einen verwalteten Mandanten ausgeführt werden, anschließend muss einer der beiden Lösungsansätze für das Problem verfolgt werden, die im folgenden Abschnitt beschrieben werden.
 
-## <a name="how-to-fix-the-issue"></a>So beheben Sie das Problem
 Es gibt zwei Möglichkeiten, das oben beschriebene Problem zu beheben:
 
 * Der AAD-Administrator führt die erforderlichen Schritte aus, mit denen Benutzern ermöglicht wird, Apps den Zugriff auf Unternehmensdaten zu gestatten.
@@ -39,7 +38,8 @@ Es gibt zwei Möglichkeiten, das oben beschriebene Problem zu beheben:
 
 Die erforderlichen Schritte für diese Lösungen werden im Folgenden beschrieben.
 
-### <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>Benutzern ermöglichen, Apps den Zugriff auf Unternehmensdaten zu gestatten
+## <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>Benutzern ermöglichen, Apps den Zugriff auf Unternehmensdaten zu gestatten
+
 Sie können den AAD-Mandantenadministrator bitten, die folgenden Schritte auszuführen, um Benutzern zu ermöglichen, beliebigen Apps den Zugriff auf Unternehmensdaten zu gestatten:
 
 1. Besuchen Sie [https://portal.azure.com](https://portal.azure.com).
@@ -50,7 +50,7 @@ Sie können den AAD-Mandantenadministrator bitten, die folgenden Schritte auszuf
 
 Dies ist möglicherweise die einfachste Vorgehensweise, damit werden jedoch umfassendere Berechtigungen als mit der nächsten Option gewährt.
 
-### <a name="allowing-power-query-to-access-company-data"></a>Power Query den Zugriff auf Unternehmensdaten gestatten
+## <a name="allowing-power-query-to-access-company-data"></a>Power Query den Zugriff auf Unternehmensdaten gestatten
 Eine andere Lösung besteht darin, dass der Mandantenadministrator **Power Query** seine Zustimmung erteilt, ohne mandantenweite Berechtigungen zu ändern. Lassen Sie den Mandantenadministrator hierzu die folgenden Schritte ausführen:
 
 1. Installieren von [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)

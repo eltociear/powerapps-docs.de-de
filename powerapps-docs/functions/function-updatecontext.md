@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: 16d2ed94b44b8b0e521aa5690885fcd1617dc024
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bcade879bfad04a50f80c26638f994897d9b42c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Funktion „UpdateContext“ in PowerApps
 Erstellt oder aktualisiert die [Kontextvariablen](../working-with-variables.md#create-a-context-variable) des aktuellen Bildschirms.
@@ -38,9 +38,9 @@ PowerApps basiert auf Formeln, die automatisch neu berechnet werden, während de
 * Wenn Sie den Namen einer Variablen, die noch nicht vorhanden ist, angeben, erstellt **UpdateContext** eine Variable mit diesem Namen und legt den Wert dieser Variablen auf den Wert fest, den Sie angeben.
 * Wenn Sie zuvor eine Variable definiert haben, aber diese nicht in dieser **UpdateContext**-Formel angeben haben, bleibt deren Wert unverändert.
 
-Kontextvariablen werden implizit mithilfe der **UpdateContext**- oder der [**Navigate**-Funktion](function-navigate.md) erstellt.  Eine explizite Deklaration ist nicht erforderlich.  Wenn Sie sämtliche Verweise von **UpdateContext** und **Navigate** auf eine Kontextvariable entfernen, ist die betreffende Kontextvariable nicht mehr vorhanden.  Legen Sie zum Leeren einer Variablen ihren Wert auf das Ergebnis der [**Blank**-Funktion](function-blank.md) fest. 
+Kontextvariablen werden implizit mithilfe der **UpdateContext**- oder der [**Navigate**-Funktion](function-navigate.md) erstellt.  Eine explizite Deklaration ist nicht erforderlich.  Wenn Sie sämtliche Verweise von **UpdateContext** und **Navigate** auf eine Kontextvariable entfernen, ist die betreffende Kontextvariable nicht mehr vorhanden.  Legen Sie zum Leeren einer Variablen ihren Wert auf das Ergebnis der [**Blank**-Funktion](function-isblank-isempty.md) fest.
 
-Sie können die Werte, Definitionen und Verwendungen Ihrer Variablen in der Ansicht „Variablen“ unter dem Menü „Datei“ in der Erstellungsumgebung anzeigen. 
+Sie können die Werte, Definitionen und Verwendungen Ihrer Variablen in der Ansicht „Variablen“ unter dem Menü „Datei“ in der Erstellungsumgebung anzeigen.
 
 Sie verweisen anhand des Spaltennamens der Variablen auf eine Kontextvariable in einer Formel. **UpdateContext( { ShowLogo: true } )** erstellt z.B. eine Kontextvariable mit dem Namen **ShowLogo** und legt deren Wert auf **TRUE** fest. Anschließend können Sie den Wert dieser Kontextvariablen mit dem Namen **ShowLogo** in einer Formel verwenden.  Sie können **ShowLogo** als Formel für die Eigenschaft **Visible** eines Bildsteuerelements schreiben und dieses Steuerelement anzeigen oder verbergen, abhängig davon, ob der Wert der Variable **TRUE** oder **FALSE** ist.
 
@@ -56,7 +56,7 @@ Eine Kontextvariable behält ihren Wert bei, bis die App geschlossen wird.  Wenn
 
 Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvariable auf einem Bildschirm definieren und diese Variable auf einem anderen Bildschirm ändern möchten, müssen Sie eine Formel basierend auf der **[Navigate](function-navigate.md)**-Funktion erstellen.  Sie können auch eine globale Variable verwenden.
 
-**UpdateContext** weist keinen Rückgabewert auf; Sie können diese Funktion nur innerhalb einer [Verhaltensformel](../working-with-formulas-in-depth.md#behavior-formulas) verwenden.
+**UpdateContext** weist keinen Rückgabewert auf; Sie können diese Funktion nur innerhalb einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ## <a name="syntax"></a>Syntax
 **UpdateContext**( *UpdateRecord* )

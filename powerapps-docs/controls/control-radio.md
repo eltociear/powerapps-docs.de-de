@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c8eab64efa3ad4487c129cec9be7f12147d3ca8d
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f0413cfab990e6452e97b9f60c4d5d88e4fb5f7a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="radio-control-in-powerapps"></a>Radio-Steuerelement in PowerApps
 Eine Liste, die alle Optionen anzeigt, aber der Benutzer kann nur jeweils eine auswählen.
@@ -28,13 +28,13 @@ Eine Liste, die alle Optionen anzeigt, aber der Benutzer kann nur jeweils eine a
 Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben, wird am besten mit nur wenigen Optionen verwendet, die sich gegenseitig ausschließen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)**: Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
+**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-[!INCLUDE [long-items](../../includes/long-items.md)]
+[!INCLUDE [long-items](../includes/long-items.md)]
 
-**[Value](properties-core.md)**: Gibt den Wert des Eingabesteuerelements an.
+**[Value](properties-core.md)**: Gibt den Wert eines Eingabesteuerelements an.
 
 ## <a name="all-properties"></a>Alle Eigenschaften
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
@@ -45,7 +45,7 @@ Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben,
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)**: Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
@@ -73,7 +73,7 @@ Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben,
 
 **[LineHeight](properties-text.md)**: Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
-**[OnChange](properties-core.md)**: Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -97,15 +97,15 @@ Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben,
 
 **RadioSize**: Der Durchmesser der Kreise in einem Steuerelement der Radioschaltfläche.
 
-**[Reset](properties-core.md)**: Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)**: Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -133,5 +133,5 @@ Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben,
    
     Das Steuerelement **[Label](control-text-box.md)** (Bezeichnung) zeigt den entsprechenden Text Ihrer Wahl.
 4. (optional) Wählen Sie im Steuerelement **Radio** die andere Option für die Bestätigung, dass der entsprechende Text angezeigt wird.
-5. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
+5. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 

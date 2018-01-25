@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 98998b30eb4c407c6c2dcaa61c04c75d5b92e4f9
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 58f05d42968394283c7d2fc78bfd8a2aa7baf571
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>Integrieren von PowerApps, Microsoft Flow, und Power BI mit SharePoint Online
 Sie verfügen über SharePoint Online und möchten Ihre Geschäftsprozesse besser automatisieren und optimieren? Sie haben mit PowerApps, Microsoft Flow oder Power BI gearbeitet, sind aber nicht sicher, wie Sie diese mit SharePoint Online verwenden können? Dann sind Sie hier richtig. In dieser Reihe von Tutorials wird untersucht, wie eine grundlegende App für das Projektmanagement entwickelt wird, die auf SharePoint-Listen und drei Schlüsseltechnologien basiert, die mit SharePoint Online integriert sind: PowerApps, Microsoft Flow und Power BI. Diese Technologien wirken zusammen und erleichtern das *Messen* Ihrer Geschäftsprozesse, das *Reagieren* auf die Ergebnisse und das *Automatisieren* Ihrer Workflows. Wenn Sie diese Reihe abgeschlossen haben, liegt Ihnen ein cooles Szenario wie die folgenden vor:
@@ -33,8 +33,8 @@ In dieser Reihe von Tutorials verfügt das Unternehmen Contoso über eine ShareP
 Das in dieser Reihe von Tutorials vorgestellte Szenario scheint unkompliziert, wenn es einer umfassenden App für Projektmanagement und -analyse gegenübergestellt wird, dennoch dauert es jedoch eine gewisse Zeit, alle Aufgaben auszuführen. Wenn Sie lediglich eine rasche Einführung zum Verwenden von PowerApps, Microsoft Flow und Power BI mit SharePoint wünschen, sehen Sie die folgenden Artikel ein:
 
 * **PowerApps:** [Generieren einer App aus SharePoint mit PowerApps](generate-app-from-sharepoint-list-interface.md) und [Generieren einer App, um Daten in einer SharePoint-Liste zu verwalten](app-from-sharepoint.md)
-* **Microsoft Flow:** [Warten auf Genehmigung in Microsoft Flow](https://flow.microsoft.com/documentation/wait-for-approvals)
-* **Power BI:** [Einbetten mit einem Berichts-Webpart in SharePoint Online](https://powerbi.microsoft.com/documentation/powerbi-service-embed-report-spo)
+* **Microsoft Flow:** [Warten auf Genehmigung in Microsoft Flow](https://docs.microsoft.com/flow/wait-for-approvals)
+* **Power BI:** [Einbetten mit einem Berichts-Webpart in SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 
 Wenn Sie diese Artikel durchgelesen haben, kehren Sie hoffentlich zu diesem kompletten Szenario zurück.
 
@@ -46,16 +46,15 @@ Zum Durcharbeiten dieses Szenarios benötigen Sie die folgenden Abonnements und 
 | **Abonnement oder Tool** | **Link** |
 | --- | --- |
 | Office 365 Business Premium-Abonnement |[Abonnement für die Testversion](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) |
-| PowerApps Studio |Verwenden Sie PowerApps Studio für das Web (kein Download erforderlich) oder [PowerApps Studio für Windows](https://aka.ms/powerappswin). |
 | Power BI Pro-Abonnement |[Abonnement für die Testversion](https://powerbi.microsoft.com/get-started/) (klicken Sie auf **KOSTENLOS TESTEN**) |
 | Power BI Desktop |[Kostenloser Download](https://powerbi.microsoft.com/get-started/) (klicken Sie auf **KOSTENLOS HERUNTERLADEN**) |
 
 Im Idealfall sind Sie im Wesentlichen mit den einzelnen Technologien vertraut. Sie können das Szenario jedoch auch durcharbeiten, wenn Sie mit einer dieser Technologien keine Erfahrung haben. Die folgenden Ressourcen erleichtern Ihnen den schnellen Einstieg:
 
 * [Erste Schritte mit SharePoint](https://support.office.com/article/Get-started-with-SharePoint-909ec2f0-05c8-4e92-8ad3-3f8b0b6cf261)
-* [Geführtes Lernen zu PowerApps](https://powerapps.microsoft.com/guided-learning/)
-* [Geführtes Lernen zu Microsoft Flow](https://flow.microsoft.com/guided-learning/)
-* [Geführtes Lernen zu Power BI](https://powerbi.microsoft.com/guided-learning/)
+* [Geführtes Lernen zu PowerApps](guided-learning/index.md)
+* [Geführtes Lernen zu Microsoft Flow](https://docs.microsoft.com/flow/guided-learning/)
+* [Geführtes Lernen zu Power BI](https://docs.microsoft.com/power-bi/guided-learning/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Der nächste Schritt in dieser Reihe von Tutorials besteht im [Einrichten der SharePoint Online-Listen](sharepoint-scenario-setup.md), die in der gesamten Reihe verwendet werden.

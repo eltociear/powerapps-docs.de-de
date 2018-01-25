@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 95dad93f75503415f714cc36c0f9413b66223353
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0c06b24c0ed253a6589c4eb073a6d01595ed5b59
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>Entwickeln von offlinefähigen Apps mit PowerApps
 Eins der häufigsten Szenarien, denen Sie als Entwickler von mobilen Apps begegnen, besteht darin, Ihren Benutzern produktives Arbeiten in Umgebungen mit eingeschränkter Konnektivität oder ohne Konnektivität zu ermöglichen. PowerApps weist eine Reihe von Funktionen und Verhaltensweisen auf, die Sie bei der Entwicklung von Apps mit Offlinefähigkeit unterstützen. Sie haben folgende Möglichkeiten:
@@ -59,8 +59,11 @@ Allgemein betrachtet, führt die App die folgenden Funktionen aus:
     ![Leere App, Smartphonelayout](media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>Schritt 2: Hinzufügen einer Twitter-Verbindung
+
 1. Klicken oder tippen Sie auf **Inhalt** > **Datenquellen**, und wählen Sie dann im Bereich **Datenquellen** **Datenquelle hinzufügen** aus.
+
 2. Klicken oder tippen Sie auf **Neue Verbindung**, wählen Sie **Twitter** aus, und klicken oder tippen Sie dann auf **Erstellen**.
+
 3. Geben Sie Ihre Anmeldeinformationen ein, und erstellen Sie die Verbindung.
    
     ![Hinzufügen einer Twitter-Verbindung](media/offline-apps/twitter-connection.png)
@@ -96,8 +99,11 @@ Diese Formel überprüft, ob das Gerät online ist:
 * Wenn das Gerät offline ist, lädt es den lokalen Cache aus einer Datei mit dem Namen „Tweets“, sofern diese verfügbar ist.
 
 ### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Schritt 4: Hinzufügen eines Katalogs und Anbindung des Katalogs an die LocalTweets-Sammlung
+
 1. Fügen Sie einen neuen Katalog mit flexibler Höhe hinzu: **Einfügen** > **Katalog** > **Leer flexible Höhe**.
+
 2. Legen Sie die Eigenschaft **Items** auf **LocalTweets** fest.
+
 3. Fügen Sie vier **Label**-Steuerelemente hinzu, um Daten aus den einzelnen Tweets anzuzeigen, und legen Sie die Eigenschaft **Text** wie folgt fest:
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " @" & ThisItem.UserDetails.UserName**
@@ -115,7 +121,9 @@ If (Connection.Connected, "Connected", "Offline")
 Diese Formel überprüft, ob das Gerät online ist. Wenn dies der Fall ist, lautet der Text der Bezeichnung „Verbunden“, andernfalls „Offline“.
 
 ### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>Schritt 6: Hinzufügen einer Texteingabe zum Verfassen neuer Tweets
+
 1. Fügen Sie ein neues **Text input**-Steuerelement mit dem Namen „NewTweetTextInput“ hinzu.
+
 2. Legen Sie die **Reset**-Eigenschaft der Texteingabe auf **resetNewTweet** fest.
 
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>Schritt 7: Hinzufügen einer Schaltfläche zum Veröffentlichen des Tweets
@@ -149,7 +157,9 @@ Anschließend setzt die Formel den Text im Textfeld zurück.
 Fügen Sie ein neues **Timer**-Steuerelement hinzu:
 
 * Legen Sie die **Duration**-Eigenschaft auf 300000 fest.
+
 * Legen Sie die **AutoStart**-Eigenschaft auf „true“ fest.
+
 * Legen Sie **OnTimerEnd** auf die folgende Formel fest:
   
     ```
@@ -176,16 +186,12 @@ Da die App jetzt fertiggestellt ist, sehen wir sie uns einmal an, bevor wir mit 
 ## <a name="testing-the-app"></a>Testen der App
 Gehen Sie folgendermaßen vor, um die App zu testen:
 
-1. Führen Sie PowerApps bei bestehender Onlineverbindung auf einem mobilen Gerät aus.
-   
-    Sie müssen eine App zumindest einmal online ausführen, damit Sie die App auf das Gerät herunterladen können.
+1. Führen Sie PowerApps bei bestehender Onlineverbindung auf einem mobilen Gerät aus. Sie müssen eine App zumindest einmal online ausführen, damit Sie die App auf das Gerät herunterladen können.
 2. Starten Sie die Twitter-App.
 3. Beachten Sie, dass die Tweets geladen werden und der Status **Verbunden** anzeigt.
 4. Schließen Sie PowerApps vollständig.
 5. Legen Sie den Flugmodus für das Gerät fest, um sicherzustellen, dass es offline arbeitet.
-6. Führen Sie PowerApps aus.
-   
-    Sie können die Twitter-App jetzt offline ausführen und besitzen Zugriff auf alle anderen Apps, die Sie zuvor online auf dem betreffenden Gerät ausgeführt haben (d.h., PowerApps blendet alle Apps aus, die nicht auf Ihr Gerät heruntergeladen wurden).
+6. Führen Sie PowerApps aus. Sie können die Twitter-App jetzt offline ausführen und besitzen Zugriff auf alle anderen Apps, die Sie zuvor online auf dem betreffenden Gerät ausgeführt haben (d.h., PowerApps blendet alle Apps aus, die nicht auf Ihr Gerät heruntergeladen wurden).
 7. Führen Sie die App erneut aus.
 8. Beachten Sie ,dass sie den Verbindungsstatus ordnungsgemäß als **Offline** angibt.
 9. Schreiben Sie einen neuen Tweet. Er wird lokal in der Sammlung **LocalTweetsToPost** gespeichert.

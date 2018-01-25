@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: archanan
-ms.openlocfilehash: 94e4eaa5209bbcaf6cd191ed2dfdf27d9eab1d5f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e073c0a8c471dc8b863894e2d229b15b66b3ce60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delegable-data-sources"></a>Delegierbare Datenquellen
 Wie im Artikel [Grundlagen der Delegierung](delegation-overview.md) ausführlich beschrieben, wird von Delegierung gesprochen, wenn für PowerApps die Verarbeitung von Daten an die Datenquelle delegiert wird, anstatt die Daten zur lokalen Verarbeitung in die App zu verschieben.
@@ -31,7 +31,6 @@ Die Delegierung wird nur für tabellarische Datenquellen unterstützt. In dieser
 * SQL Server: **Ja**
 * Dynamics 365: **Ja**
 * Salesforce: **Ja**
-* Excel: **In Kürze**
 * Dynamics 365 for Operations: Noch nicht
 * Dynamics 365 for Financials: Noch nicht
 * Dynamics NAV: Noch nicht
@@ -41,7 +40,7 @@ Es werden ständig weitere tabellarische Datenquellen und die Unterstützung der
 
 In diesem Dokument ist der aktuelle Status der unterstützten Delegierung pro Datenquelle angegeben.
 
-**Voraussetzungen**
+## <a name="prerequisites"></a>Voraussetzungen
 
 * Machen Sie sich mit dem Artikel [ Grundlagen der Delegierung](delegation-overview.md) vertraut.
 
@@ -77,4 +76,3 @@ Diese Liste mit Datenquellen und delegierbaren Funktionen und Prädikaten wird r
 | StartsWith |Nein |Ja |Nein |Nein |Nein |
 
 <sup>2</sup>Nur für Operatoren. And/Or/Not-Funktion wird nicht delegiert.
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 11eb01c2476d06f11299bd91e34f353f5b1075d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 57f2b9a23207c2c866738ac40f46a37747fcd54d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="global-support"></a>Globaler Support
 PowerApps ist ein globales Produkt.  Sie können Apps in vielen verschiedenen Sprachen und Regionen erstellen und verwenden.
@@ -79,11 +79,11 @@ Die Änderung am Listentrennzeichen von PowerApps ist konsistent zu der Änderun
 
 Betrachten Sie beispielsweise die folgende Formel in „en-US“:
 
-* **If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
 
 In einer Sprache, in der „,“ als Dezimaltrennzeichen verwendet wird, erscheint dies in der Erstellungsumgebung wie folgt:
 
-* **If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
 
 Beachten Sie, dass der Eigenschaftenauswahloperator **.** in **Slider1.Value** immer gleich ist, unabhängig davon, was als Dezimaltrennzeichen verwendet wird.
 
@@ -101,7 +101,7 @@ Unter anderem können Sie **Language** dazu verwenden, Ihren Benutzern übersetz
 
 Anschließend kann eine Formel wie die folgende verwendet werden, um übersetzte Zeichenfolgen aus der Tabelle zu ziehen:
 
-* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+**LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Bedenken Sie, dass die übersetzten Zeichenfolgen in anderen Sprachen wesentlich länger sein könnten als sie in Ihrer Sprache sind.  In vielen Fällen müssen die Bezeichnungen und anderen Elemente, die die Zeichenfolgen in Ihrer Benutzerschnittstelle anzeigen, breiter sein, um sich dem anzupassen.
 
@@ -153,4 +153,3 @@ Die Funktionen **[Calendar](functions/function-clock-calendar.md)** und **[Clock
 Verwenden Sie diese Funktionen u.a. zum Bereitstellen eines **Dropdown**-Steuerelements mit einer Liste von Auswahlmöglichkeiten.  
 
 Weitere Informationen finden Sie in der Dokumentation zu den **[Calendar](functions/function-clock-calendar.md)**- und **[Clock](functions/function-clock-calendar.md)**-Funktionen.
-
