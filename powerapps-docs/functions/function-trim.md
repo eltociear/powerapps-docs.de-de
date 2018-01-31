@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 9f829e8c98b03bc47bc36f26273267265819f4ae
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b40f44f8bdcb319191221d0f2cee39e15d5b3b49
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>Trim- und TrimEnds-Funktionen in PowerApps
 Entfernt zusätzliche Leerzeichen aus einer Textzeichenfolge.
@@ -60,5 +60,6 @@ Legen Sie die Eigenschaft **OnSelect** eines Steuerelements **[Schaltfläche](..
 | **Trim(&nbsp;Spaces&nbsp;)** |Entfernt alle Leerzeichen am Anfang und Ende jeder Zeichenfolge und zusätzliche Leerzeichen innerhalb der Zeichenfolgen in der Sammlung **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |Entfernt alle Leerzeichen am Anfang und Ende einer Zeichenfolge in der Sammlung **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
-**Hinweis**: Zusätzliche Leerzeichen werden nicht angezeigt, wenn Sie eine Sammlung anzeigen, indem Sie im Menü **File** auf **Sammlungen** klicken oder tippen. Verwenden Sie die **[Len](function-len.md)**-Funktion, um die Länge der Zeichenfolge zu überprüfen.
+> [!NOTE]
+> Zusätzliche Leerzeichen werden nicht angezeigt, wenn Sie eine Sammlung anzeigen, indem Sie im Menü **File** auf **Sammlungen** klicken oder tippen. Verwenden Sie die **[Len](function-len.md)**-Funktion, um die Länge der Zeichenfolge zu überprüfen.
 

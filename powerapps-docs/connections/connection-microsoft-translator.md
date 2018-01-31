@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: 9d5ccfd11399188e739353e2994f779347377de4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 104afc3d2a5b243b7315b1638f23b7778d049370
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Herstellen einer Verbindung mit Microsoft Translator aus PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -28,11 +28,10 @@ Fügen Sie den Connector für Microsoft Translator hinzu, um übersetzten Text i
 
 In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstellen und in einer App verwenden, und es werden die verfügbaren Funktionen aufgeführt.
 
-**Hinweis:** Dieser Connector ist auf 150 Aufrufe pro Benutzer und Tag beschränkt.
+> [!NOTE]
+> Dieser Connector ist auf 150 Aufrufe pro Benutzer und Tag beschränkt.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Herstellen einer Verbindung mit Microsoft Translator
 1. Öffnen Sie PowerApps, wählen Sie **Neu** aus, und erstellen Sie eine **Leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
@@ -77,7 +76,7 @@ Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen 
 4. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-microsoft-translator/preview.png)). Geben Sie Text in **Source** ein, wählen Sie eine Sprache in **TargetLang** aus, und wählen Sie dann die Wiedergabeschaltfläche im Audio-Steuerelement aus.
    
     Die App spielt eine Audioversion des eingegebenen Texts in der ausgewählten Sprache ab.
-5. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="detect-the-source-language"></a>Erkennen der Ausgangssprache
 In den folgenden Schritten werden die gleichen Texteingabe-Steuerelemente (**Source**) und Text (**Target**) verwendet. Sie können auch neue Steuerelemente erstellen, in diesem Fall müssen Sie nur die Namen in der Formel aktualisieren.

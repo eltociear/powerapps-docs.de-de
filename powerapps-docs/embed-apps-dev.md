@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2017
+ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 541de1bcea9b76262d4f2d1cbe79c76b1c117245
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>Integrieren von PowerApps in Websites und andere Dienste
 Die Apps, die Sie erstellen, sind oft dann besonders nützlich, wenn sie für Ihre Arbeitskollegen direkt an Ort und Stelle verfügbar sind. Mithilfe von PowerApps können Sie Apps in einen iframe einbetten, sodass sich diese Apps in Websites und andere Dienste wie Power BI und SharePoint integrieren lassen.
@@ -31,7 +31,7 @@ In diesem Thema zeigen wir das Festlegen von Parametern für die Einbettung von 
 Berücksichtigen Sie die folgenden Einschränkungen:
 
 * Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
-* PowerApps unterstützt Internet Explorer 11 nur bei deaktivierter Kompatibilitätsansicht.
+* Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
 
 PowerApps lassen sich außerdem (ohne Verwendung eines iframes) in SharePoint Online integrieren. Weitere Informationen finden Sie unter [Generieren einer App aus SharePoint mit PowerApps](generate-app-from-sharepoint-list-interface.md).
 
@@ -43,7 +43,8 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 &appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
-**Hinweis**: Wir haben einen Zeilenumbruch hinzugefügt, um die Anzeige des URIs auf der Seite zu verbessern.
+> [!NOTE]
+> Wir haben einen Zeilenumbruch hinzugefügt, um die Anzeige des URIs auf der Seite zu verbessern.
 
 Sie brauchen nichts weiter zu tun, als die [AppID] im URI durch die ID Ihrer App zu ersetzen (einschließlich von „[' & ']“). Wir zeigen Ihnen in Kürze, wie Sie an diesen Wert gelangen, aber zunächst folgt hier die Auflistung aller im URI verfügbaren Parameter:
 

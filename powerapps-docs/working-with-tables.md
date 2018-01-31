@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6af28020810394c90c86f87fc40e3cbe9c75a877
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Grundlegendes zu Tabellen und Datensätzen in PowerApps
 Sie können Apps erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreifen, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.
@@ -63,7 +63,8 @@ Alle Werte innerhalb einer Spalte gehören dem gleichen Datentyp an. Im obigen B
 
 In anderen Tools können Spalten „Felder“ genannt werden.
 
-**Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+> [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 ### <a name="table"></a>Tabelle
 Eine Tabelle umfasst mindestens einen Datensatz, jeder mit mehreren Feldern, die datensatzübergreifend konsistente Namen aufweisen.
@@ -96,7 +97,8 @@ Lassen Sie einige einfache Beispiele ansehen.
    
     Der Katalog zeigt standardmäßig Platzhaltertext aus einer Tabelle namens **TextualGallerySample** an. Die **[Items](controls/properties-core.md)**-Eigenschaft des Katalogs wird automatisch auf die Tabelle festgelegt.
    
-    **Hinweis:** Einige Steuerelemente wurden neu angeordnet und zur Veranschaulichung vergrößert.
+    > [!NOTE]
+> Einige Steuerelemente wurden neu angeordnet und zur Veranschaulichung vergrößert.
    
     ![](media/working-with-tables/gallery-items.png)
 2. Statt die **[Items](controls/properties-core.md)**-Eigenschaft auf den Namen einer Tabelle festzulegen, legen Sie sie auf eine Formel fest, die den Namen der Tabelle als Argument enthält, wie in diesem Beispiel:<br>
@@ -149,7 +151,9 @@ Sie können auch eine Formel erstellen, die Daten für einen einzelnen Datensatz
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](controls/properties-core.md)** auf diese Formel fest:<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
+
 2. Wenn die Schaltfläche nicht ausgewählt ist, wählen Sie sie durch einen Klick aus, und klicken Sie erneut darauf, um die Formel auszuführen.
+
 3. Klicken Sie im Menü **Datei** auf **Sammlungen**.
 
 ![](media/working-with-tables/selected-collection.png)
@@ -159,6 +163,7 @@ Diese Formel gibt einen Datensatz zurück, der nicht nur die Daten aus dem Daten
 Da Sie nun über den ausgewählten Datensatz verfügen, können Sie mit dem **.**-Operator fest.
 
 1. Drücken Sie die ESC-TASTE, um zum Standard-Arbeitsbereich zurückzukehren, und fügen Sie dann eine Bezeichnung unterhalb des Katalogs ein.
+
 2. Legen Sie die **[Label](controls/properties-core.md)**-Eigenschaft des Textfelds auf diese Formel fest:<br>
     **Gallery.Selected.Heading**
    
@@ -232,8 +237,8 @@ Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") u
 ### <a name="disambiguation"></a>Mehrdeutigkeitsvermeidung
 Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [**@**-Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzebenen den Operator **@** mit dem Namen der Tabelle, die gerade verarbeitetet wird, unter Verwendung des Musters ***Tabelle*[@*FeldName*]**.  
-* Um auf globale Werte wie Datenquellen, Sammlungen und Kontextvariablen zuzugreifen, verwenden Sie das Muster **[@*ObjektName*]** (ohne Tabellenbezeichnung).
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster **Table*[@*FieldName*]** nutzen.  
+* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@*ObjectName*]** (ohne Tabellenbezeichnung).
 
 Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter( *Tabelle*, ... )** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
 

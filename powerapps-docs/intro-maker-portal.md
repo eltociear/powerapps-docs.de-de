@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 0d580471b5dc70852468f6571d356dddd5ca172c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a6ec814d057f85b39f794bd7c0c100c5a28f652f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="introduction-to-powerappscom"></a>Einführung in powerapps.com
-Diesen November stellt das PowerApps-Team [powerapps.com](http://web.powerapps.com) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:
+Das PowerApps-Team stellt [powerapps.com](http://web.powerapps.com) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:
 
 * den Header
 * die Startseite
@@ -111,7 +111,7 @@ Auf der **Apps**-Seite hatten Sie in der Vergangenheit immer die Wahl zwischen d
 
 Bitte beachten Sie, dass die Listenansicht nur Apps in der ausgewählten Umgebung anzeigt. Wechseln Sie mit dem Umgebungsfeld im Header in die eine andere Umgebung, um Apps dieser Umgebung anzuzeigen. [Weitere Informationen zum Wechseln von Umgebungen](working-with-environments.md).
 
-Neuerungen
+## <a name="whats-new"></a>Neuerungen
 
 * Wenn Sie auf eine App klicken oder tippen, wird diese in PowerApps Studio für das Web in einer neuen Registerkarte geöffnet.
 * Standardmäßig zeigt die **Apps**-Seite alle Apps an, die Sie bearbeiten dürfen. Wählen Sie den Filter **All apps** (Alle Apps) aus, um **All Apps** (Alle Apps) anzuzeigen (einschließlich der Apps, die Sie nur verwenden dürfen).

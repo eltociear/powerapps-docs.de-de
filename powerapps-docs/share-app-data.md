@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: e6bae4500d3c3ac81c12da3c5b509dc1ea9e711e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b413bd52e9bbdd328ca5197ff5d5a76348298fe9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Freigeben von Excel-Daten, die von Ihrer App verwendet werden
 Sie können Excel-Daten in einem [Cloudkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive für Ihre App-Benutzer freigeben.
@@ -49,7 +49,8 @@ Weitere Informationen finden Sie unter [Freigeben von Ordnern in Dropbox](https:
    
     ![Befehl zum Freigeben](./media/share-app-data/onedrive-share.png)
    
-    **Hinweis:** Geben Sie in OneDrive for Business die Datei selbst und nicht den Ordner frei, der die Datei enthält.
+    > [!NOTE]
+> Geben Sie in OneDrive for Business die Datei selbst und nicht den Ordner frei, der die Datei enthält.
 3. Wählen Sie im Dialogfeld **E-Mail** aus.
    
     ![Freigabe per E-Mail](./media/share-app-data/onedrive-email.png)
@@ -72,6 +73,6 @@ Weitere Informationen finden Sie unter [Freigeben von OneDrive-Dateien und -Ordn
 
 Weitere Informationen finden Sie unter [Freigeben von Google Drive-Dateien und -Ordnern](https://support.google.com/drive/answer/2494822).
 
-## <a name="known-limitations"></a>Bekannte Einschränkungen
+### <a name="known-limitations"></a>Bekannte Einschränkungen
 Weitere Informationen zum Freigeben von Excel-Daten in Ihrer Organisation erhalten Sie in diesen [Ausführungen zu Einschränkungen](connections/cloud-storage-blob-connections.md#sharing-excel-tables).
 

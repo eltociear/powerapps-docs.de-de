@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: f06c242d7eed3d7519af829400708362ab1a77d6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f55b66e615b79852b86cc5ea88ee9fbef321f8aa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Filter-, Search- und LookUp-Funktionen in PowerApps
 Sucht nach einem oder mehreren [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md).
@@ -31,7 +31,7 @@ Die **LookUp**-Funktion sucht den ersten Datensatz in einer Tabelle, der eine Fo
 
 Bei beiden wird die Formel für jeden Datensatz der Tabelle ausgewertet.  Datensätze, die *TRUE* ausgeben, sind im Ergebnis enthalten.  Neben den normalen [Operatoren](operators.md) der Formel können Sie die **[in](operators.md#in-and-exactin-operators)**- und **[exactin](operators.md#in-and-exactin-operators)**-Operatoren für Übereinstimmungen mit Teilzeichenfolgen verwenden.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Die **Search**-Funktion sucht Datensätze in einer Tabelle, die eine Zeichenfolge in eine ihrer Spalten enthalten. Die Zeichenfolge kann an einer beliebigen Stelle innerhalb der Spalte auftreten. Beispielsweise würde die Suche nach „rob“ oder „bert“ eine Übereinstimmung in einer Spalte finden, die „Robert“ enthält. Bei Search wird die Groß-/Kleinschreibung beachtet. Im Gegensatz zu **Filter** und **LookUp**, verwendet die **Search**-Funktion anstelle einer Formel eine einzelne Zeichenfolge für die Übereinstimmung.
 
@@ -39,7 +39,7 @@ Die **Search**-Funktion sucht Datensätze in einer Tabelle, die eine Zeichenfolg
 
 [Tabellen](../working-with-tables.md) stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahlen. Sie können an Funktionen übergeben und von diesen zurückgegeben werden.  **Filter**, **Search** und **LookUp** ändern eine Tabelle nicht. Stattdessen nehmen sie eine Tabelle als Argument und geben eine Tabelle, einen Datensatz oder einen einzelnen Wert daraus zurück. Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>Syntax
 **Filter**( *Tabelle*, *Formel1* [, *Formel2*, ... ] )
@@ -53,12 +53,13 @@ Die **Search**-Funktion sucht Datensätze in einer Tabelle, die eine Zeichenfolg
 * *SearchString*: Erforderlich. Die Zeichenfolge, nach der gesucht werden soll. Bei *leer* oder einer leeren Zeichenfolge werden alle Datensätze zurückgegeben.
 * *Column(s)*: Erforderlich. Die Spaltennamen in der *Tabelle*, die gesucht werden sollen. Die zu suchenden Spalten müssen Text enthalten. Spaltennamen müssen Zeichenfolgen und in doppelte Anführungszeichen eingeschlossen sein. Allerdings müssen die Spaltennamen statisch sein und können nicht mit einer Formel berechnet werden. Wenn *SearchString* innerhalb der Daten für diese Spalten als eine teilweise Übereinstimmung gefunden wurde, wird der vollständige Datensatz zurückgegeben werden.
 
-**Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_X0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+> [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 **LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
 
 * *Table*: erforderlich. Die zu suchende Tabelle. Auf der Benutzeroberfläche wird die Syntax oberhalb des Funktionsfelds als *Quelle* angezeigt.
-* *Formula*: erforderlich.
+* *Formel*: Erforderlich.
   Die Formel, anhand derer jeder Datensatz der Tabelle ausgewertet wird. Die Funktion gibt den ersten Datensatz zurück, der als **WAHR** ausgewertet wird. Sie können auf Spalten innerhalb der Tabelle verweisen. Auf der Benutzeroberfläche wird die Syntax oberhalb des Funktionsfelds als *Bedingungen* angezeigt.
 * *ReductionFormula*: Optional. Diese Formel wird über den gefundenen Datensatz ausgewertet, anschließend wird der Datensatz auf einen einzigen Wert reduziert. Sie können auf Spalten innerhalb der Tabelle verweisen. Wenn Sie diesen Parameter nicht verwenden, gibt die Funktion den gesamten Datensatz aus der Tabelle zurück. Auf der Benutzeroberfläche wird die Syntax oberhalb des Funktionsfelds als *Ergebnis* angezeigt.
 

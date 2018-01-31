@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/02/2017
 ms.author: manasma
-ms.openlocfilehash: ba60c227b287532f6abe2e2b2e88f6cbe7dd0cd3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bc3d1c94deec6cf5e7c0ba5b73e65cab67d3ee25
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="identify-powerapps-users-in-your-organization"></a>Ermitteln der PowerApps-Benutzer in Ihrer Organisation
 Als globaler Administrator für Office 365 oder Mandantenadministrator für Azure Active Directory können Sie eine Liste der Benutzer in Ihrer Organisation herunterladen, die nicht nur über Lizenzen für PowerApps und/oder Microsoft Flow verfügen, sondern auch auf eines dieser Produkte zugegriffen haben. Die Liste enthält u.a. den Namen, die E-Mail-Adresse und den Lizenztyp der einzelnen Benutzer. Beispiele für Benutzerlizenzen:
@@ -29,10 +29,11 @@ Als globaler Administrator für Office 365 oder Mandantenadministrator für Azur
 * Zugriff auf beide Produkte über eine Dynamics 365-Lizenz
 * Zugriff über PowerApps- und Microsoft Flow-Pläne
 
-## <a name="download-the-list-of-users"></a>Herunterladen der Benutzerliste
+### <a name="download-the-list-of-users"></a>Herunterladen der Benutzerliste
 1. Klicken oder tippen Sie im PowerApps Admin Center am linken Rand auf **Benutzerlizenzen**.
    
-    **Wichtig:** Diese Option ist nur für globale Administratoren von Office 365 und Mandantenadministratoren von Azure Active Directory verfügbar.
+    > [!IMPORTANT]
+> Diese Option ist nur für globale Administratoren von Office 365 und Mandantenadministratoren von Azure Active Directory verfügbar.
    
     ![Datei > Freigeben](./media/admin-view-user-licenses/leftnav.png)
 2. Klicken oder tippen Sie auf **Download a list of active user licenses** (Liste der aktiven Benutzerlizenzen herunterladen).
@@ -41,7 +42,8 @@ Als globaler Administrator für Office 365 oder Mandantenadministrator für Azur
    
     Der Download der Datei kann einige Minuten dauern. Warten Sie, bis die CSV-Datei heruntergeladen wurde, und öffnen Sie sie dann in Excel.
    
-    **Hinweis:** Wenn Sie das Fenster schließen, bevor der Dateidownload abgeschlossen ist, müssen Sie den Vorgang möglicherweise von vorne beginnen.
+    > [!NOTE]
+> Wenn Sie das Fenster schließen, bevor der Dateidownload abgeschlossen ist, müssen Sie den Vorgang möglicherweise von vorne beginnen.
 
 Dieses Beispiel zeigt zwei Benutzer, die über unterschiedliche Lizenzen für PowerApps und Microsoft Flow verfügen. Jane Doe hat über ein Abonnement für Office 365 Zugriff und John Doe verfügt über Testlizenzen für beide Produkte.
 

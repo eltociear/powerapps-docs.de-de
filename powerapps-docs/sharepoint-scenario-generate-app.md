@@ -15,102 +15,119 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: c05d5565b3aa2502cd002617ad18a9ccbeaf4f2d
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 021a323fbb5a1a3331c4eb92ce0b47427b5562b4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-to-handle-project-requests"></a>Generieren einer App zum Behandeln von Projektanforderungen
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erstellen und anpassen. PowerApps ist in SharePoint integriert, deshalb lässt sich bequem eine einfache *App mit drei Bildschirmen* direkt aus einer Liste generieren. Mit dieser App können Sie Übersichts- und Detailinformationen für jedes Listenelement anzeigen, vorhandene Listenelemente aktualisieren und neue Listenelemente erstellen. Wenn Sie eine App direkt aus einer Liste erstellen, wird die App als *Ansicht* für diese Liste angezeigt. Anschließend können Sie die App in einem Browser sowie auf einem Mobiltelefon ausführen.
 
-**Tipp:** Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieser App: „project-requests-app.msapp“.
+> [!TIP]
+> Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieser App: project-requests-app.msapp.
 
 ## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Schritt 1: Generieren einer App aus einer SharePoint-Liste
+
 1. Klicken oder tippen Sie in der von Ihnen erstellten Liste **Project Requests** (Projektanforderungen) auf **PowerApps** und dann auf **App erstellen**.
    
     ![Erstellen einer App](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
+
 2. Geben Sie der App einen Namen, z.B. „Project Requests app“ (Projektanforderungen-App), und klicken oder tippen Sie dann auf **Erstellen**. Wenn die App fertig gestellt wurde, wird sie in PowerApps Studio für Web geöffnet.
    
     ![Einen Namen für die App angeben](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
 ## <a name="step-2-review-the-app-in-powerapps-studio"></a>Schritt 2: Überprüfen der App in PowerApps Studio
+
 1. Auf der linken Navigationsleiste von PowerApps Studio wird standardmäßig eine hierarchische Ansicht der Bildschirme und Steuerelemente in der App angezeigt.
    
     ![PowerApps Studio mit hierarchischer Ansicht](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
+
 2. Klicken oder tippen Sie auf das Symbol „Miniaturansicht“, um die Ansicht zu wechseln.
    
     ![Ansichtsauswahl in PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
+
 3. Klicken oder tippen Sie auf jeden Bildschirm, um ihn im mittleren Bereich anzuzeigen. Es gibt drei Bildschirme:
    
-   1. Der **Bildschirm zum Durchsuchen**, in dem Sie die aus der Liste importierten Daten durchsuchen, sortieren und filtern können.
-   2. Der **Detailbildschirm**, in dem Sie weitere Informationen zu einem Element anzeigen können.
-   3. Der **Bildschirm zum Bearbeiten/Erstellen**, in dem sie vorhandene Elemente bearbeiten oder neue Elemente erstellen können.
+    (a). Der **Bildschirm zum Durchsuchen**, in dem Sie die aus der Liste importierten Daten durchsuchen, sortieren und filtern können.
+    
+    (b). Der **Detailbildschirm**, in dem Sie weitere Informationen zu einem Element anzeigen können.
+    
+    (c). Der **Bildschirm zum Bearbeiten/Erstellen**, in dem sie vorhandene Elemente bearbeiten oder neue Elemente erstellen können.
       
       ![PowerApps Studio mit Miniaturansicht](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
 ## <a name="step-3-customize-the-apps-browse-screen"></a>Schritt 3: Anpassen des App-Bildschirms zum Durchsuchen
+
 1. Klicken oder tippen Sie auf den Bildschirm zum Durchsuchen.
    
     Das *Layout* dieses Bildschirms enthält einen *Katalog* zum Anzeigen von Listenelementen sowie weitere *Steuerelemente*, z.B. eine Suchleiste und eine Sortierschaltfläche.
+
 2. Wählen Sie den Katalog **BrowseGallery1** durch Klicken oder Tippen auf einen beliebigen Eintrag außer dem ersten aus.
    
     ![In Katalog suchen](./media/sharepoint-scenario-generate-app/02-03-01-browse-gallery.png)
-3. Aktualisieren Sie im rechten Bereich die Felder entsprechend der folgenden Liste:
+
+3. Klicken oder tippen Sie im rechten Bereich unter **Eigenschaften** auf **Projektanforderungen**. 
+
+4. Aktualisieren Sie die Felder entsprechend der folgenden Liste:
    
    * **RequestDate**
-   * **Description** (Beschreibung)
-   * **Title**
+
    * **Requestor**
-     
+
+   * **Title**
+
      ![Katalogfelder](./media/sharepoint-scenario-generate-app/02-03-02-gallery-fields.png)
-4. Wählen Sie, während **BrowseGallery1** noch ausgewählt ist, die **Items**-Eigenschaft aus.
+
+5. Wählen Sie, während **BrowseGallery1** noch ausgewählt ist, die **Items**-Eigenschaft aus.
    
     ![Items-Eigenschaft](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
-5. Ändern Sie die Formel in **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))**.
+
+6. Ändern Sie die Formel in **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))**.
    
     ![Die Bearbeitungsleiste](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
     Dies ermöglicht Ihnen das Sortieren und Suchen nach dem Feld **Title** (Titel) statt nach dem von PowerApps ausgewählten Standardfeld. Weitere Informationen finden Sie unter [Detaillierte Erläuterungen zu Formeln](#formula-deep-dive).
+
 6. Klicken oder tippen Sie auf **Datei** und anschließend auf **Speichern**. Klicken oder tippen Sie auf ![Symbol „Zurück zur App“](./media/sharepoint-scenario-generate-app/icon-back-to-app.png), um zur App zurückzukehren.
 
-## <a name="step-4-customize-the-apps-details-screen-and-edit-screen"></a>Schritt 4: Anpassen des Detailbildschirms und Bearbeitungsbildschirms der App
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Schritt 4: Überprüfen des Detailbildschirms und Bearbeitungsbildschirms der App
 1. Klicken oder tippen Sie auf den Detailbildschirm.
    
     Dieser Bildschirm hat ein anderes Layout, das ein *Anzeigeformular* enthält, um die Details für ein im Katalog ausgewähltes Element anzuzeigen. Es enthält Steuerelemente zum Bearbeiten und Löschen von Elementen und ein Steuerelement, mit dem Sie zum Bildschirm zum Durchsuchen zurückkehren können.
-2. Wählen Sie das Anzeigeformular **DetailForm1** aus.
    
     ![Formular zum Anzeigen von Details](./media/sharepoint-scenario-generate-app/02-04-01-details.png)
-3. Ziehen Sie im rechten Bereich das Feld **Title** (Titel) in den oberen Bereich.
-   
-    ![Feld „Title“ (Titel)](./media/sharepoint-scenario-generate-app/02-04-02-title-field.png)
+
 4. Klicken oder tippen Sie auf den Bearbeitungsbildschirm.
    
     Dieser Bildschirm enthält ein *Bearbeitungsformular* zum Bearbeiten des ausgewählten Elements oder Erstellen eines neuen Elements (wenn Sie vom Bildschirm zum Durchsuchen direkt zu diesem Bildschirm wechseln). Es enthält Steuerelemente zum Speichern oder Verwerfen von Änderungen.
-5. Wählen Sie das Bearbeitungsformular **EditForm1** aus.
-   
+
     ![Bearbeitungsformular](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
-6. Ziehen Sie wie oben das Feld **Title** (Titel) in den oberen Bereich.
-   
-    ![Feld „Title“ (Titel)](./media/sharepoint-scenario-generate-app/02-04-02-title-field.png)
 
 ## <a name="step-5-run-the-app-from-the-list"></a>Schritt 5: Ausführen der App aus der Liste
+
 1. Klicken oder tippen Sie in der Liste **Project Requests**  (Projektanforderungen) auf **Alle Elemente** und dann auf **Project Requests app** (Projektanforderungen-App).
    
     ![Projektanforderungen-App anzeigen](./media/sharepoint-scenario-generate-app/02-05-01-view-app.png)
 2. Klicken Sie auf **Öffnen**, um die App in einer neuen Browserregisterkarte zu öffnen.
    
     ![Projektanforderungen-App öffnen](./media/sharepoint-scenario-generate-app/02-05-02-open-app.png)
+
 3. Klicken oder tippen Sie in der App auf ![Symbol „Zur App wechseln“](./media/sharepoint-scenario-generate-app/icon-details-arrow.png) für das erste Element im Katalog zum Durchsuchen.
    
     ![Erstes Katalogelement](./media/sharepoint-scenario-generate-app/02-05-04-first-item.png)
+
 4. Klicken oder tippen Sie auf ![Stift-Bearbeitungssymbol](./media/sharepoint-scenario-generate-app/icon-pencil.png) um das Element zu bearbeiten.
+
 5. Aktualisieren Sie das Feld **Description** (Beschreibung) – ändern Sie das letzte Wort „Gruppe“ in „Team“, und klicken oder tippen Sie dann auf ![Häkchensymbol](./media/sharepoint-scenario-generate-app/icon-check-mark.png).
    
    ![Feld „Description“ (Beschreibung) aktualisieren](./media/sharepoint-scenario-generate-app/02-05-07-edit.png)
+
 6. Schließen Sie die Browserregisterkarte.
+
 7. Kehren Sie zur Liste **Project Requests** (Projektanforderungen) zurück, klicken oder tippen Sie auf **Project Requests app** (Projektanforderungen-App) und dann auf **Alle Elemente**.
    
    ![Alle Elemente anzeigen](./media/sharepoint-scenario-generate-app/02-05-08-view-all.png)
@@ -139,12 +156,15 @@ Folgendes geschieht, wenn Sie die Funktionen in der Formel kombinieren:
     **StartsWith ( Title, TextSearchBox1.Text )**
    
     Wenn Sie z.B. im Suchfeld „ge“ eingeben, werden vier Ergebnisse angezeigt, einschließlich Elementen, die mit „Gebiet“ und „Gerät“ beginnen. „Mobile Geräte“ wird nicht angezeigt, da dieses Element nicht mit „ge“ *beginnt*.
+
 2. Mit der **Filter**-Funktion werden Zeilen aus der Tabelle **Project Requests** (Projektanforderungen) *zurückgegeben*. Wenn das Suchfeld keinen zu vergleichenden Text enthält, gibt die **Filter**-Funktion alle Zeilen zurück.
    
     **Filter ( 'Project Requests', StartsWith ( Title, TextSearchBox1.Text )**
+
 3. Die **If**-Funktion überprüft, ob die Variable **SortDescending1** auf „true“ oder „false“ festgelegt ist (wird durch die Sortierschaltfläche in der App festgelegt). Die Funktion gibt dann den Wert **Descending** oder **Ascending** zurück.
    
     **If ( SortDescending1, Descending, Ascending )**
+
 4. Jetzt kann die **SortByColumns**-Funktion den Katalog sortieren. In diesem Fall erfolgt die Sortierung nach dem Feld **Title** (Titel), dies kann jedoch ein anderes Feld als das für die Suche verwendete Feld sein.
 
 Wir hoffen, dass Sie nach diesen Erläuterungen ein besseres Verständnis der Funktionsweise dieser Formel haben und jetzt genauer wissen, wie Sie durch das Kombinieren von Funktionen und anderen Elementen das gewünschte Verhalten Ihrer Apps erzielen. Weitere Informationen finden Sie unter [Referenz zu Formeln für PowerApps](formula-reference.md).

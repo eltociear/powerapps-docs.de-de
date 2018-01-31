@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 86329003ee2f5e6e4ffbe91714be290eacd04ad7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dfb50597af4012fe6145664fb645439a54686825
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="button-control-in-powerapps"></a>Schaltflächen-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen mit der App interagieren können.
@@ -99,9 +99,9 @@ Konfigurieren Sie die **[OnSelect](properties-core.md)**-Eigenschaft eines **Sch
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)**: Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -145,7 +145,8 @@ Fügen Sie eine Formel hinzu, die das **Texteingabe**-Steuerelement zwischen Ein
    
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
-    **Hinweis:** Trennen Sie mehrere Formeln durch ein Semikolon **;**.
+    > [!NOTE]
+> Trennen Sie mehrere Formeln durch ein Semikolon „**;**“.
 3. Legen Sie die **[Default](properties-core.md)**-Eigenschaft von **Quelle** auf **ClearInput** fest.
 4. Drücken Sie **F5**, und testen Sie dann die App, indem Sie mehrere Werte addieren.
 
@@ -161,7 +162,8 @@ Fügen Sie eine zweite Schaltfläche hinzu, um die Summe zwischen Berechnungen z
 #### <a name="change-a-buttons-shape"></a>Ändern der Form einer Schaltfläche
 PowerApps erstellt standardmäßig ein rechteckiges **Schaltflächen**-Steuerelement mit abgerundeten Ecken. Sie können einfache Änderungen an der Form eines **Schaltflächen**-Steuerelements vornehmen, indem Sie dessen Eigenschaften **[Height](properties-size-location.md)**, **[Width](properties-size-location.md)** und **[Radius](properties-size-location.md)** festlegen.
 
-**Hinweis: [Symbole und Formen](control-shapes-icons.md)** bieten eine Vielzahl von Designs und können einige derselben Grundfunktionen wie **Schaltflächen**-Steuerelemente ausführen. Allerdings haben **[Symbole und Formen](control-shapes-icons.md)** keine **[Text](properties-core.md)**-Eigenschaft.
+> [!NOTE]
+> [Symbole und Formen](control-shapes-icons.md) bieten eine Vielzahl von Designs und können einige derselben Grundfunktionen wie **Schaltflächen**-Steuerelemente ausführen. Allerdings haben **[Symbole und Formen](control-shapes-icons.md)** keine **[Text](properties-core.md)**-Eigenschaft.
 
 1. Fügen Sie ein **Schaltflächen**-Steuerelement hinzu, und legen Sie die Eigenschaften **[Height](properties-size-location.md)** und **[Width](properties-size-location.md)** auf **300** fest, um eine große quadratische Schaltfläche zu erstellen.
 2. Ändern Sie die Eigenschaften **[RadiusTopLeft](properties-size-location.md)**, **[RadiusTopRight](properties-size-location.md)**, **[RadiusBottomLeft](properties-size-location.md)** und **[RadiusBottomRight](properties-size-location.md)**, um den Grad der Krümmung jeder Ecke anzupassen. Es folgen einige Beispiele verschiedener Formen, die alle von einer quadratischen Schaltfläche mit den Maßen 300 x 300 ausgehen:
@@ -177,7 +179,8 @@ Standardmäßig wird die Füllfarbe eines **Schaltflächen**-Steuerelements um 2
 
 Sie können die Farbe eines **Schaltflächen**-Steuerelements auch durch Festlegen seiner **[HoverFill](properties-color-border.md)**-Eigenschaft auf eine Formel angeben, die die **[ColorValue](../functions/function-colors.md)**-Funktion anstelle der **[ColorFade](../functions/function-colors.md)**-Funktion enthält, wie z. B. in **ColorValue("Red")**.
 
-**Hinweis:** Der Farbwert kann eine beliebige CSS-Farbdefinition sein: entweder ein Name oder ein hexadezimaler Wert.
+> [!NOTE]
+> Der Farbwert kann eine beliebige CSS-Farbdefinition sein: entweder ein Name oder ein hexadezimaler Wert.
 
 * Ersetzen Sie auf einer der Schaltflächen, die Sie erstellt haben, die **[ColorFade](../functions/function-colors.md)**-Funktion durch eine **[ColorValue](../functions/function-colors.md)**-Funktion, und beobachten die Auswirkungen.
 

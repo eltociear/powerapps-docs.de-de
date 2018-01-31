@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/14/2016
 ms.author: litran
-ms.openlocfilehash: e7252415f6f5839a7531f1264615dc5ed39dca10
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ea9bd30ea9007800511e0f194c6f9f460773305e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Arbeiten mit Umgebungen und Microsoft PowerApps
 Mit PowerApps können Sie in verschiedenen Umgebungen arbeiten und einfach zwischen ihnen wechseln. Eine Übersicht der Umgebungen finden Sie unter [Umgebungsübersicht](environments-overview.md), wo detailliert erläutert wird, warum Sie Umgebungen verwenden und wie Sie sie erstellen und verwalten können. In diesem Artikel werden die folgenden Themen zu Umgebungen behandelt:
@@ -43,20 +43,26 @@ Nach dem Wechsel zu einer anderen Umgebung (wie etwa Umgebung 1) sehen Sie alle 
 Sie können Apps in vorhandenen Umgebungen erstellen, auf die Sie Zugriff haben, oder in einer neuen Umgebung. Das Erstellen einer eigenen Umgebung erfordert jedoch einen spezifischen Plan. Weitere Informationen finden Sie in [diesem Thema](pricing-billing-skus.md). Bevor Sie eine App erstellen, sollten Sie immer **darauf achten, die Umgebung auszuwählen, in der sich die App befinden soll**. Andernfalls müssen Sie sich mit dem Verschieben von Apps zwischen Umgebungen befassen.
 
 1. Wenn Sie sich in [powerapps.com](http://web.powerapps.com) befinden, wählen Sie die Umgebung aus, in der Sie Ihre App erstellen möchten. Wenn Sie sich in *PowerApps Studio* oder *PowerApps Studio für Web* befinden, fahren Sie mit Schritt 4 fort.
-2. Wählen Sie **+ Neue App** aus
-3. Wählen Sie **PowerApps Studio öffnen** oder **PowerApps Studio für Web** aus
+
+2. Wählen Sie **+ Neue App** aus.
+
+3. Wählen Sie **PowerApps Studio öffnen** oder **PowerApps Studio für Web** aus.
+
 4. Wenn *PowerApps Studio* oder *PowerApps Studio* für Web geöffnet wird, wählen Sie die Umgebung erneut in der oberen rechten Ecke aus. Wir werden dies in Zukunft benutzerfreundlicher gestalten, in der aktuellen Version müssen Sie dies jedoch jedes Mal auswählen, wenn Sie eine App in einer neuen Umgebung erstellen möchten.
-   
-   ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-switch-env.PNG)
+
+    ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-switch-env.PNG)
+
 5. Wählen Sie auf der Seite **Konto** den Befehl **Wechseln** neben dem Namen der aktuellen Umgebung aus.
-   
-   ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-env-dropdown.PNG)
+
+    ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-env-dropdown.PNG)
+
 6. Wählen Sie die Umgebung aus, in der Sie Ihre App erstellen möchten.
-   
-   ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-env-dropdown2.PNG)
+
+    ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-env-dropdown2.PNG)
+
 7. Wählen Sie **Neu** aus, um mit dem Erstellen der App zu beginnen. Ihre App befindet sich jetzt in der Umgebung, die Sie in Schritt 6 ausgewählt haben.
-   
-   ![Wechsel der Umgebung in Studio](./media/working-with-environments/new-app.PNG)
+
+    ![Wechsel der Umgebung in Studio](./media/working-with-environments/new-app.PNG)
 
 ## <a name="view-apps-in-the-right-environment"></a>Anzeigen von Apps in der richtigen Umgebung
 Gleich, ob Sie in [powerapps.com](http://web.powerapps.com), PowerApps Studio für Windows oder PowerApps Studio für Web arbeiten, die Liste der Apps, Verbindungen usw., die angezeigt wird, ist immer auf der Grundlage der Umgebung gefiltert, die in der Dropdownliste ausgewählt ist. Wenn Sie die gesuchten Apps nicht sehen, überprüfen Sie immer, ob die richtige Umgebung ausgewählt ist.
@@ -67,7 +73,6 @@ Zur Erinnerung – so erfolgt das Wechseln der Umgebung in [powerapps.com](http:
 
 Wechseln der Umgebung in PowerApps Studio für Windows oder PowerApps Studio für Web:
 
-  ![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-switch-env.PNG)
+![Wechsel der Umgebung in Studio](./media/working-with-environments/studio-switch-env.PNG)
 
 Weitere Informationen zu Umgebungen finden Sie in [dieser Übersicht](environments-overview.md).
-

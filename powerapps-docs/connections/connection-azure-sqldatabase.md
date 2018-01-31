@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 39152b27c8d00a1ee6233dabbffd59b60112dfd5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a2b0f13e2920d456dfa4795b38e35212006dc7e4
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Herstellen einer Verbindung mit SQL Server aus PowerApps
 ![SQL Server-Symbol](./media/connection-azure-sqldatabase/sqlicon.png)
 
 Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mit SQL Server her, sodass Sie darin enthaltene Informationen in PowerApps anzeigen können.
 
-**Voraussetzungen**
+## <a name="prerequisites"></a>Voraussetzungen
 
 * [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, [installieren](http://aka.ms/powerappsinstall) Sie PowerApps Studio, öffnen Sie die Anwendung, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
 * Sammeln Sie die folgenden Informationen für eine Datenbank, die mindestens eine Tabelle mit einem Primärschlüssel enthält:
@@ -39,7 +39,8 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
     Wenn Ihnen diese Informationen nicht bekannt sind, erkundigen Sie sich beim Administrator der Datenbank, die Sie verwenden möchten.
 * Geben Sie für eine lokale Datenbank ein [Datengateway](../gateway-management.md) an, das für Sie freigegeben ist (oder erstellen Sie eines).
   
-    **Hinweis:** Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
+    > [!NOTE]
+> Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
 
 ## <a name="generate-an-app-automatically"></a>Eine App automatisch generieren
 1. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf die Option **Neu** (am linken Rand).
@@ -59,7 +60,8 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
      
        ![Herstellen einer Verbindung mit einer lokalen Datenbank](./media/connection-azure-sqldatabase/connect-onprem.png)
      
-       **Hinweis:** Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf **Gatewayliste aktualisieren**.
+       > [!NOTE]
+> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf **Gatewayliste aktualisieren**.
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie auf eine Option unter **Dataset auswählen**, klicken oder tippen Sie auf eine Option unter **Tabelle auswählen**, und klicken oder tippen Sie dann auf **Verbinden**.
    
@@ -81,7 +83,8 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
      
        ![Herstellen einer Verbindung mit einer Datenbank in Azure](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
-       **Hinweis:** Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie auf das Symbol mit dem im Uhrzeigersinn drehenden Pfeil, um die Liste zu aktualisieren.
+       > [!NOTE]
+> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie auf das Symbol mit dem im Uhrzeigersinn drehenden Pfeil, um die Liste zu aktualisieren.
 5. Klicken oder tippen Sie auf **Erstellen**, um die Verbindung zu erstellen.
 6. Erstellen Sie eine App mithilfe von Techniken wie den in [App von Grund auf neu erstellen](../get-started-create-from-blank.md) beschriebenen.
 
@@ -101,7 +104,8 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
      
        ![Herstellen einer Verbindung mit einer Datenbank in Azure](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
-       **Hinweis:** Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf das Symbol mit dem kreisförmigen Pfeil, um die Liste zu aktualisieren.
+       > [!NOTE]
+> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf das Symbol mit dem kreisförmigen Pfeil, um die Liste zu aktualisieren.
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie unter **Dataset auswählen** auf eine Option.
 8. Aktivieren Sie unter **Tabelle auswählen** ein oder mehrere Kontrollkästchen, und klicken oder tippen Sie auf **Verbinden**.

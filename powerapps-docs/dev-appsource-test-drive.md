@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 39cf496539a1db041a0ba025bd46a9f858200aee
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ff2c45b1d15bdb6d937756b5e7ed00e5c9e9fdfa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>Kunden das Testen Ihrer Apps auf AppSource ermöglichen
 Erstellen Sie Ihre Apps in PowerApps mit Leidenschaft? Haben Sie eine App, die Sie gerne mit Kunden teilen möchten? Wir unterstützten jetzt PowerApps Test Drive-Projektmappen auf [AppSource.com](https://appsource.microsoft.com), um Ihnen eine Möglichkeit zu geben, Apps mit Kunden zu teilen und Leads für Ihr Unternehmen zu generieren.
@@ -93,7 +93,8 @@ UpdateIf(SiteInspectorCollect,ID=record.ID,
 RemoveIf(SiteInspectorCollect,ID=record.ID)
 ```
 
-**Hinweis**: Sammlungen enthalten nur Daten, während die App ausgeführt wird; beim Schließen der App werden sämtliche Änderungen verworfen.
+> [!NOTE]
+> Sammlungen enthalten nur Daten, während die App ausgeführt wird; beim Schließen der App werden sämtliche Änderungen verworfen.
 
 Zusammengefasst lässt sich sagen, dass Sie eine Version Ihrer App mit eingebetteten Daten erstellen können, die die Erfahrung der App bei bestehender Verbindung mit externen Daten simuliert. Nach dem Einbetten der Daten sind Sie bereit, diese App auf AppSource.com als Test Drive-Projektmappe zu veröffentlichen.
 

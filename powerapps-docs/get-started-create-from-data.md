@@ -14,12 +14,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: karthikb
-ms.openlocfilehash: e6ad4896beb28b5b38b22706838fec5f6a6840ec
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>Generieren einer App aus Excel-Daten
 Erstellen Sie automatisch eine App basierend auf Daten in einer Excel-Datei, die Sie in ein Cloudspeicherkonto wie OneDrive hochladen. Nachdem Sie die App generiert haben, können Sie sie beliebig anpassen und anschließend ausführen, um sicherzustellen, dass sie Ihren Vorstellungen entspricht.
@@ -30,7 +30,8 @@ Generierte Apps verfügen standardmäßig über drei Bildschirme:
 * **DetailsScreen1** zeigt mehrere oder alle Felder für einen bestimmten Datensatz.
 * **EditScreen1** enthält Elemente der Benutzeroberfläche, mit deren Hilfe Benutzer einen Datensatz erstellen oder aktualisieren und die Änderungen speichern können.
 
-**Hinweis**: Sie können eine App auch aus einer [benutzerdefinierten SharePoint-Liste](app-from-sharepoint.md) generieren.
+> [!NOTE]
+> Sie können eine App auch aus einer [benutzerdefinierten SharePoint-Liste](app-from-sharepoint.md) generieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 * [Registrieren](signup-for-powerapps.md) Sie sich für PowerApps, und führen Sie anschließend einen dieser Schritte aus:
@@ -39,7 +40,8 @@ Generierte Apps verfügen standardmäßig über drei Bildschirme:
 * Melden Sie sich bei PowerApps mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 * Um dieses Tutorial nachzuvollziehen, laden Sie diese [Excel-Datei](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) herunter.
   
-    **Wichtig**: Sie können eine eigene Excel-Datei verwenden, wenn die Daten als Tabelle formatiert sind. Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+    > [!IMPORTANT]
+> Sie können eine eigene Excel-Datei verwenden, wenn die Daten als Tabelle formatiert sind. Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 * Laden Sie die Excel-Datei in OneDrive oder ein anderes [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch.
 
 ## <a name="create-an-app"></a>Erstellen einer App
@@ -66,7 +68,8 @@ Generierte Apps verfügen standardmäßig über drei Bildschirme:
    
     ![Mit „Next“ (Weiter) zur Tour](./media/get-started-create-from-data/quick-tour.png)
    
-    **Hinweis**: Sie können sich die Einführung jederzeit später anschauen. Klicken oder tippen Sie hierzu auf das Fragezeichen-Symbol in der Nähe der oberen rechten Ecke, und klicken oder tippen Sie anschließend auf **Take the intro tour**.
+    > [!NOTE]
+> Sie können sich die Einführung jederzeit später anschauen. Klicken oder tippen Sie hierzu auf das Fragezeichen-Symbol in der Nähe der oberen rechten Ecke, und klicken oder tippen Sie anschließend auf **Take the intro tour**.
 
 ## <a name="change-the-gallery-layout"></a>Ändern des Kataloglayouts
 Wenn eine App erstellt wird, verfügt sie über ein Standardlayout auf Basis Ihrer Daten, aber Sie können dieses Kataloglayout nach Belieben anpassen.
@@ -103,7 +106,8 @@ Wenn eine App erstellt wird, verfügt sie über ein Standardlayout auf Basis Ihr
    
     ![BrowseScreen1 mit neuem Inhalt](./media/get-started-create-from-data/browse-content.png)
    
-    **Hinweis**: Standardmäßig können Sie per Mausrad bzw. auf einem Touchscreen durch Wischen nach oben oder unten durch die Liste (auch „Katalog“ genannt) scrollen. Um entweder ein Trackpad oder eine Maus ohne Rad zu verwenden, wählen Sie den Katalog aus, klicken oder tippen Sie in der Eigenschaftenliste auf **Scrollleiste anzeigen**, und ersetzen Sie dann in der Bearbeitungsleiste **FALSE** durch **TRUE**.
+    > [!NOTE]
+> Standardmäßig können Sie per Mausrad bzw. auf einem Touchscreen durch Wischen nach oben oder unten durch die Liste (auch „Katalog“ genannt) scrollen. Um entweder ein Trackpad oder eine Maus ohne Rad zu verwenden, wählen Sie den Katalog aus, klicken oder tippen Sie in der Eigenschaftenliste auf **Scrollleiste anzeigen**, und ersetzen Sie dann in der Bearbeitungsleiste **FALSE** durch **TRUE**.
 
 ## <a name="change-the-order-of-fields-in-a-form"></a>Ändern der Reihenfolge von Formularfeldern
 1. Klicken oder tippen Sie in der linken Navigationsleiste auf die mittlere Miniaturansicht, um den Detailbildschirm (**DetailsScreen1**) zu öffnen.
@@ -111,7 +115,7 @@ Wenn eine App erstellt wird, verfügt sie über ein Standardlayout auf Basis Ihr
     ![Miniaturansicht DetailScreen 1](./media/get-started-create-from-data/detail-screen-thumbnail.png)
 2. Klicken oder tippen Sie auf das Bild, um die für das Anpassen des Formulars verfügbaren Optionen anzuzeigen.
    
-    ![Karte auswählen](./media/get-started-create-from-data/select-card.png)
+    ![Auswählen einer Karte](./media/get-started-create-from-data/select-card.png)
 3. Ziehen Sie im rechten Bereich das Feld **Name** in der Liste an die oberste Stelle.
    
     ![Karte verschieben](./media/get-started-create-from-data/move-card.png)
@@ -155,7 +159,7 @@ Während Sie die App anpassen, können Sie Ihre Änderungen testen, indem Sie di
    
     ![Schließen des Vorschaumodus](./media/get-started-create-from-data/close-preview.png)
 
-## <a name="known-limitations"></a>Bekannte Einschränkungen
+### <a name="known-limitations"></a>Bekannte Einschränkungen
 Weitere Informationen zum Freigeben von Excel-Daten in Ihrer Organisation erhalten Sie in diesen [Ausführungen zu Einschränkungen](connections/cloud-storage-blob-connections.md#sharing-excel-tables).
 
 ## <a name="next-steps"></a>Nächste Schritte

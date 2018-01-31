@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/28/2017
 ms.author: jamesol
-ms.openlocfilehash: 2d25e6ddbaf15991655ffa94bbf9578946504f0e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8c2745a47b742ccc5f21f3302c39546edd361242
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migration der Umgebungs- und Mandanten-App durch Paketerstellung
 Erfahren Sie, wie Sie Ressourcen mithilfe von Paketerstellung von einer Umgebung zu einer anderen migrieren. Diese Umgebungen können innerhalb des gleichen Mandanten oder mandantenübergreifend sein.
@@ -35,7 +35,7 @@ Beim Exportieren einer App werden ihre abhängigen Ressourcen ebenfalls im Paket
 | Ressourcentyp | Unterstützt | Importoptionen |
 | --- | --- | --- |
 | App |Ja |Es gibt zwei Möglichkeiten, eine App in eine Umgebung zu importieren: <ol><li><b>Neu erstellen</b>: Die App wird als neue App in der Umgebung erstellt, in die das Paket importiert wird.</li> <li><b>Aktualisieren</b>: Die App ist in der Umgebung bereits vorhanden und wird beim Importieren des Pakets aktualisiert.</li></ol> |
-| Flow |Ja |Es gibt zwei Möglichkeiten, einen Flow in eine Umgebung zu importieren: <ol><li><b>Neu erstellen</b>: Der Flow wird als neuer Flow in der Umgebung erstellt, in die das Paket importiert wird.</li> <li><b>Aktualisieren</b>: Der Flow ist in der Umgebung bereits vorhanden und wird beim Importieren des Pakets aktualisiert.</li></ol> <div> <i> HINWEIS: Alle Ressourcen, von denen der Flow abhängt, werden ebenfalls in das exportierte App-Paket eingeschlossen und müssen mit dem importierten Paket konfiguriert werden. </i> |
+| Flow |Ja |Es gibt zwei Möglichkeiten, einen Flow in eine Umgebung zu importieren: <ol><li><b>Neu erstellen</b>: Der Flow wird als neuer Flow in der Umgebung erstellt, in die das Paket importiert wird.</li> <li><b>Aktualisieren</b>: Der Flow ist in der Umgebung bereits vorhanden und wird beim Importieren des Pakets aktualisiert.</li></ol> <b>Hinweis:</b> Alle Ressourcen, von denen der Flow abhängt, werden ebenfalls in das exportierte App-Paket eingeschlossen und müssen mit dem importierten Paket konfiguriert werden. |
 | Anpassungen und Auswahllisten von CDS-Entitäten |Ja |Es gibt zwei Möglichkeiten, CDS-Entitäten oder Auswahllisten in eine Umgebung zu importieren: <ol><li><b>Überschreiben</b>: Ist eine Ressource mit demselben Namen vorhanden, wird sie durch diesen Import ersetzt. Wenn keine entsprechende Ressource vorhanden ist, wird eine neue Ressource erstellt. <li><b>Zusammenführen</b>: Wenn eine Entität oder Auswahlliste mit demselben Namen vorhanden ist, werden neue Felder oder Einträge hinzugefügt, fehlende Felder oder Einträge werden jedoch nicht entfernt.</li></ol> |
 | Benutzerdefinierte Connectors |Nein |Wenn eine App von einem benutzerdefinierten Connector abhängt, wird das Exportieren des Connectors als Teil des Pakets derzeit <b>nicht unterstützt</b>. <p></p> Wenn Sie über eine App verfügen, die sich auf einen benutzerdefinierten Connector stützt, haben Sie derzeit lediglich die Möglichkeit, den Connector beim Importieren des Pakets in der Zielumgebung manuell neu zu erstellen oder zu aktualisieren. |
 | Verbindungen |Nein |Wenn eine App von einer Verbindung abhängt (z.B. einer SQL-Verbindung mit Anmeldeinformationen), wird das Exportieren der Verbindung oder der Anmeldeinformationen als Teil des Pakets derzeit nicht unterstützt. <p></p> Wenn Sie über eine App verfügen, die sich auf eine freigegebene Verbindung (wie SQL) stützt, haben Sie derzeit lediglich die Möglichkeit, diese Verbindung mit den entsprechenden Anmeldeinformationen in der Zielumgebung neu zu erstellen und die Verbindung auszuwählen, wenn Sie das Paket importieren. |
@@ -50,7 +50,8 @@ Die Möglichkeit zum Importieren ist für alle Benutzer mit der Berechtigung „
 
 Benutzer benötigen einen PowerApps-Plan 2 oder eine PowerApps-Plan 2-Testlizenz, um eine App exportieren oder importieren zu können.
 
-*HINWEIS: Während der Vorschauphase für die Paketerstellung kann jeder Benutzer mit einer gültigen PowerApps-Lizenz Pakete für seine Apps und Umgebungen testen.*
+> [!NOTE]
+> Während der Vorschauphase für die Paketerstellung kann jeder Benutzer mit einer gültigen PowerApps-Lizenz Pakete für seine Apps und Umgebungen testen.
 
 ## <a name="exporting-an-app"></a>Exportieren einer App
 1. Klicken oder tippen Sie auf http://web.powerapps.com auf **Apps**, wählen Sie die Auslassungspunkte für die zu migrierende App aus, und wählen Sie anschließend **Export (preview)** (Exportieren (Vorschau) aus.
@@ -62,6 +63,7 @@ Benutzer benötigen einen PowerApps-Plan 2 oder eine PowerApps-Plan 2-Testlizenz
 3. Im Abschnitt „Paketinhalt überprüfen“ können Sie optional Anmerkungen oder Notizen hinzufügen oder die Einstellung dafür ändern, wie die einzelnen Ressourcen während des Paketimports in die Zielumgebung importiert werden.
    
     ![Konfigurieren des Paketinhalts](./media/environment-and-tenant-migration/export-package-content.png)
+
 4. Wählen Sie nach Abschluss des Vorgangs **Exportieren** aus, und der Download der Paketdatei beginnt innerhalb weniger Sekunden.
 
 ## <a name="importing-an-app"></a>Importieren einer App
@@ -81,7 +83,8 @@ Benutzer benötigen einen PowerApps-Plan 2 oder eine PowerApps-Plan 2-Testlizenz
    
     ![Überprüfen der Importergebnisse](./media/environment-and-tenant-migration/import-results.png)
 
-> **HINWEIS** Wenn Sie eine App importieren und sich entscheiden, eine vorhandene App zu **aktualisieren**, werden die neuen Änderungen als Entwurf der Anwendungen gespeichert.  Sie müssen diese Änderungen [veröffentlichen](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app), damit sie für alle anderen Benutzer der Anwendungen verfügbar sind.
+> [!NOTE]
+>  Wenn Sie eine App importieren und sich entscheiden, eine vorhandene App zu **aktualisieren**, werden die neuen Änderungen als Entwurf der Anwendungen gespeichert.  Sie müssen diese Änderungen [veröffentlichen](http://powerapps.microsoft.com/tutorials/save-publish-app/#publish-an-app), damit sie für alle anderen Benutzer der Anwendungen verfügbar sind.
 > 
 > 
 

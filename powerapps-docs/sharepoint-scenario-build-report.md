@@ -13,20 +13,22 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: c576f71532049405b879cc904c4232e297478cac
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Erstellen eines Power BI-Berichts zum Analysieren von Projekten
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In dieser Aufgabe Sie einen Power BI-Bericht, der auf den beiden SharePoint-Listen basiert. Wir übernehmen die Listendaten in Power BI Desktop und bereinigen sie ein wenig, führen eine grundlegende Datenmodellierung aus und erstellen eine Reihe von Visuals, die Aufschlüsse über die Daten geben.
 
-**Tipp:** Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieses Berichts: „project-analysis.pbix“.
+> [!TIP]
+> Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieses Berichts: „project-analysis.pbix“.
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Kurzübersicht über Power BI Desktop
 Bevor wir uns mit dem Erstellen von Berichten befassen, gehen wir kurz auf Power BI Desktop ein. Dies ist ein leistungsstarkes Tool mit einer Vielzahl von Funktionen, daher bieten wir einen schwerpunktmäßigen Überblick über die Bereiche, die wir in dieser Aufgabe verwenden werden. In Power BI Desktop gibt es drei Hauptarbeitsbereiche oder *Sichten*: die Sicht **Bericht**, die Sicht **Daten** und die Sicht **Beziehungen**. Power BI Desktop bietet außerdem einen **Abfrage-Editor**, der in einem separaten Fenster geöffnet wird.
@@ -93,11 +95,13 @@ In diesem Schritt wird zunächst eine Verbindung mit den zwei Listen hergestellt
 2. Wählen Sie im mittleren Bereich die Spalte **FileSystemObjectType** aus, und klicken oder tippen Sie auf **Spalten entfernen**.
    
     ![Spalten entfernen](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. Entfernen Sie die zwei Spalten nach der Spalte **ID**: **ServerRedirectedEmbedURL** und **ContentTypeId**. Tipp: Mithilfe der Umschalttaste können Sie beide Spalten auswählen. Klicken oder tippen Sie anschließend auf **Spalten entfernen**.
+3. Entfernen Sie die zwei Spalten nach der Spalte **ID**: **ServerRedirectedEmbedURL** und **ContentTypeId**. 
+> [!TIP]
+> Mithilfe der Umschalttaste können Sie beide Spalten auswählen. Klicken oder tippen Sie anschließend auf **Spalten entfernen**.
 4. Entfernen Sie alle Spalten rechts von der Spalte **PMAssigned** (insgesamt 22 Spalten). Die Tabelle sollte wie die in der folgenden Abbildung aussehen:
    
     ![Tabelle „Project Details“ (Projektdetails) im Abfrage-Editor](./media/sharepoint-scenario-build-report/05-01-08-table-details.png)
-5. Wiederholen Sie den für **Project Details** (Projektdetails) durchlaufenen Prozess, und entfernen Sie alle Spalten rechts von der Spalte **Approved** (Genehmigt) (insgesamt 22 Spalten). Die Tabelle sollte wie die in der folgenden Abbildung aussehen:
+5. Wiederholen Sie den gerade ausgeführten Vorgang für **Project Requests**: Entfernen Sie **FileSystemObjectType**, **ServerRedirectedEmbedURL**, **ContentTypeId** und alle Spalten rechts von der Spalte **Approved** (insgesamt 22 Spalten). Die Tabelle sollte wie die in der folgenden Abbildung aussehen:
    
     ![ Tabelle „Project Requests“ (Projektanforderungen) im Abfrage-Editor](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
@@ -109,16 +113,21 @@ In diesem Schritt wird zunächst eine Verbindung mit den zwei Listen hergestellt
 3. Wählen Sie die Spalte **ApprovedDate** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und anschließend auf **Datum**.
    
     ![ Ändern des Datentyps in „Datum“](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
+
 4. Wiederholen Sie den vorherigen Schritt für die Spalten **ProjectedStartDate** und **ProjectedEndDate**.
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Ändern des Datentyps für Spalten von „Project Requests“ (Projektanforderungen)
+
 1. Wählen Sie die Spalte **EstimatedDays** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und anschließend auf **Ganze Zahl**.
+
 2. Wählen Sie die Spalte **RequestDate** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und anschließend auf **Datum**.
 
 ### <a name="apply-and-save-changes"></a>Anwenden und Speichern der Änderungen
+
 1. Klicken Sie auf der Registerkarte **Start** auf **Schließen und übernehmen**, um den Abfrage-Editor zu schließen und zum Hauptfenster von Power BI Desktop zurückzukehren.
    
     ![Schließen und Anwenden der Änderungen](./media/sharepoint-scenario-build-report/05-01-12-close-apply.png)
+
 2. Klicken oder tippen Sie auf **Datei** und anschließend auf **Speichern**, und speichern Sie die Datei unter dem Namen „project-analysis.pbix“.
 
 ## <a name="step-2-improve-the-data-model"></a>Schritt 2: Verbessern des Datenmodells
@@ -137,18 +146,24 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
 1. Klicken oder tippen Sie auf das Symbol für die Sicht **Daten**.
    
     ![Datensicht](./media/sharepoint-scenario-build-report/05-02-01-data-view.png)
+
 2. Klicken oder tippen Sie auf der Registerkarte **Modellierung** auf **Beziehungen verwalten**. Bei allen Schritten zur Datenmodellierung bleiben wir auf dieser Registerkarte in der Sicht **Daten**.
    
     ![Beziehungen verwalten](./media/sharepoint-scenario-build-report/05-02-02-manage-relationships.png)
+
 3. Vergewissern Sie sich, dass die vorhandene Beziehung ausgewählt ist, klicken oder tippen Sie auf **Löschen** und anschließend zum Bestätigen noch einmal auf **Löschen**.
    
     ![Löschen der Beziehung](./media/sharepoint-scenario-build-report/05-02-03-delete-relationship.png)
+
 4. Klicken Sie auf **Neu**, um eine andere Beziehung zu erstellen.
+
 5. Im Dialogfeld **Beziehung erstellen**:
    
    1. Wählen Sie für die erste Tabelle **Project Requests** (Projektanforderungen) und die Spalte **Id** aus.
+   
    2. Wählen Sie für die zweite Tabelle **Project Details** (Projektdetails) und die Spalte **RequestId** aus.
-   3. Der Bildschirm entspricht nun etwa dem in der folgenden Abbildung. Wenn Sie bereit sind, klicken oder tippen Sie auf **OK**.
+   
+   3. Der Bildschirm entspricht nun etwa dem in der folgenden Abbildung. Wenn Sie bereit sind, klicken oder tippen Sie auf **OK** und dann auf **Schließen**.
       
        ![Beziehung erstellen](./media/sharepoint-scenario-build-report/05-02-04-create-relationship.png)
 
@@ -363,16 +378,16 @@ Nachdem wir diese Berichtsvisualisierungen Power BI Desktop erstellt haben, ver�
 4. Ziehen Sie **ProjectedStartDate** aus **Project Details** (Projektdetails) im Bereich **Felder** in den Abschnitt **Filter** des Bereichs **Visualisierungen**, und wählen Sie anschließend alle Datumsangaben außer **(Leer)** aus.
    
     ![Filtern nach ProjectedStartDate](./media/sharepoint-scenario-build-report/05-03-17-filters-diff.png)
-5. Ändern Sie die Größe der Tabellenspalten, sodass alle Daten sichtbar sind. Die Visualisierung sollte nun wie in der folgenden Abbildung aussehen.
+5. Ändern Sie die Größe der Spalten der Tabelle, damit alle Daten angezeigt werden, und sortieren Sie absteigend nach **ApprovedStartDiff**. Die Visualisierung sollte nun wie in der folgenden Abbildung aussehen.
    
     ![Tabelle mit Werten für ApprovedStartDiff](./media/sharepoint-scenario-build-report/05-03-18-chart-diff.png)
-6. Klicken oder tippen Sie auf den nach unten zeigenden Pfeil für **ApprovedStartDiff**, und klicken oder tippen Sie anschließend auf **Durchschnitt**, sodass die durchschnittliche Zeitspanne zwischen Projektgenehmigung und geplantem Startdatum ersichtlich wird.
+6. Klicken oder tippen Sie im Bereich **Werte** auf den Pfeil nach unten für **ApprovedStartDiff**, und klicken oder tippen Sie anschließend auf **Durchschnitt**. Jetzt wird die durchschnittliche Zeitspanne von der Genehmigung des Projekts bis zum geplanten Startdatum angezeigt.
    
     ![Berechnen des Durchschnitts](./media/sharepoint-scenario-build-report/05-03-20a-average-menu.png)
-7. Klicken oder tippen Sie erneut auf den nach unten zeigenden Pfeil für **ApprovedStartDiff**, und klicken oder tippen Sie anschließend auf **Bedingte Formatierung**.
+7. Klicken oder tippen Sie erneut auf den Pfeil nach unten für **ApprovedStartDiff**, und klicken oder tippen Sie anschließend auf **Bedingte Formatierung** und dann auf **Skalen für die Hintergrundfarbe**.
    
    ![Bedingte Formatierung](./media/sharepoint-scenario-build-report/05-03-20b-conditional-menu.png)
-8. Übernehmen Sie die Standardeinstellungen, und klicken Sie auf **OK**.
+8. Legen Sie die Farben in den Feldern **Minimum** und **Maximum** fest, wie unten dargestellt, und klicken oder tippen Sie dann auf **OK**.
    
    ![Optionen für „Bedingte Formatierung“](./media/sharepoint-scenario-build-report/05-03-21-conditional-dialog.png)
    

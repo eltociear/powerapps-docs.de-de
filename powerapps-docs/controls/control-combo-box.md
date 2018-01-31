@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 7220771d9798e6bb5481bbc86c430a357aeab7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4d298e24ea967cbf5cb47638d4296f6efbd758c7
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -30,6 +30,9 @@ Mit einem **Kombinationsfeld**-Steuerelement können Sie Elemente suchen, die Si
 Der Einfach- oder Mehrfachauswahlmodus wird mit der SelectMultiple-Eigenschaft konfiguriert.
 
 Wenn Sie auszuwählende Elemente suchen, können Sie für jedes Element festlegen, dass ein einzelner Datenwert, zwei Werte oder ein Bild und zwei Werte (Person) angezeigt werden. Hierzu ändern Sie die Einstellung „Layout“ im Bereich „Daten“.
+
+## <a name="people-picker"></a>Personenauswahl
+Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wählen Sie im Datenbereich in den Layouteinstellungen die Vorlage **Person** aus, und konfigurieren Sie die folgenden Dateneigenschaften, die für die Person angezeigt werden sollen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Items](properties-core.md)** – Die Quelle der Daten, aus der Elemente ausgewählt werden können.
@@ -78,8 +81,7 @@ Wenn Sie auszuwählende Elemente suchen, können Sie für jedes Element festlege
 2. Klicken Sie auf der Optionsregisterkarte „Eigenschaften“ auf „Daten“.  
 3. Wählen Sie unten die Datenquelle, das Layout und die entsprechenden Eigenschaften aus.
 4. Legen Sie auf der Registerkarte „Erweitert“ die **SelectMultiple**-Eigenschaft fest.
-   
-    In der App wird ein funktionsfähiges **Kombinationsfeld** angezeigt.
-   
-    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
+    In der App wird ein funktionsfähiges **Kombinationsfeld** angezeigt.
+
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?

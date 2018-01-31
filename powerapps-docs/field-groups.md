@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: 023282c31ea90cd391d425faaf036603b5521d08
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d791d04965873c133be85013feb181dc5a1e1bad
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-field-groups"></a>Feldgruppen verwenden
 Feldgruppen bieten eine Möglichkeit, ein oder mehrere Felder einer Entität zu gruppieren. Feldgruppen können die Erstellung und Wartung von Apps schneller und einfacher machen. Eine Feldgruppe enthält ein oder mehrere Felder, und ein Feld kann in einer beliebigen Anzahl von Feldgruppen angezeigt werden. Ein Feld kann nur einmal in einer Feldgruppe angezeigt werden.
@@ -50,7 +50,8 @@ Common Data Service umfasst mehrere Standard-Feldgruppen auf Entitäten. Diese F
 3. Klicken Sie zum Entfernen einer Feldgruppe in der **Felder der Feldgruppe**-Liste auf das **X** neben dem Feldnamen.
 4. Klicken oder tippen Sie auf die Schaltfläche **Speichern**.
 
-*Hinweis: Das Ändern von Feldgruppen für [Standardentitäten](guided-learning/learning-common-data-service-entities.md) wird derzeit nicht unterstützt, aber Sie können Feldgruppen für Ihre benutzerdefinierten Entitäten ändern.*
+> [!NOTE]
+> Das Ändern von Feldgruppen für [Standardentitäten](guided-learning/manage-data.yml#step-2) wird derzeit nicht unterstützt, aber Sie können Feldgruppen für Ihre benutzerdefinierten Entitäten ändern.*
 
 ## <a name="creating-a-field-group"></a>Erstellen einer Feldgruppe
 Standard-Feldgruppen werden automatisch erstellt, wenn Sie eine Entität erstellen. Das Erstellen zusätzlicher Feldgruppen wird derzeit nicht unterstützt.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 780c72323e4b0d406d89ba35201c78456bb0dbca
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 72bbbc882250d25ddabc8086e81bfc7779e26b60
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funktionen „Sort“ und „SortByColumns“
 Zum Sortieren von [Tabellen](../working-with-tables.md).
@@ -29,7 +29,7 @@ Die Funktion **Sort** sortiert eine Tabelle basierend auf einer Formel.
 
 Die Formel wird für jeden [Datensatz](../working-with-tables.md#records) der Tabelle ausgewertet, und die Ergebnisse werden zum Sortieren der Tabelle verwendet.  Die Formel muss eine Zahl, eine Zeichenfolge oder einen Booleschen Wert zum Ergebnis haben; das Ergebnis darf keine Tabelle und kein Datensatz sein.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Um zuerst nach einer Spalte und dann nach einer anderen zu sortieren, betten Sie eine **Sort**-Formel in eine andere ein. Beispielsweise können Sie diese Formel verwenden, um eine Tabelle **Kontakte** zuerst nach der Spalte **Nachname** und dann nach der Spalte **Vorname** zu sortieren: **Sort( Sort( Kontakte, Nachname ), Vorname )**
 
@@ -43,13 +43,13 @@ Sie können **SortByColumns** mit einer **[Dropdownliste](../controls/control-dr
 
 [Tabellen](../working-with-tables.md) stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahlen.  Sie können an Funktionen übergeben und von diesen zurückgegeben werden.  **Sort** und **SortByColumn** ändern eine Tabelle nicht; sie nehmen vielmehr eine Tabelle als Argument an und geben eine neue Tabelle zurück, die sortiert wurde.  Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation](../includes/delegation.md)]
 
 ## <a name="syntax"></a>Syntax
 **Sort**( *Table*, *Formula* [, *SortOrder* ] )
 
 * *Table*: erforderlich. Die zu sortierende Tabelle.
-* *Formula*: erforderlich. Die Formel wird für jeden Datensatz der Tabelle ausgewertet, und die Ergebnisse werden zur Sortierung der Tabelle verwendet.  Sie können auf Spalten innerhalb der Tabelle verweisen.
+* *Formel*: Erforderlich. Die Formel wird für jeden Datensatz der Tabelle ausgewertet, und die Ergebnisse werden zur Sortierung der Tabelle verwendet.  Sie können auf Spalten innerhalb der Tabelle verweisen.
 * *SortOrder*: optional. Geben Sie **SortOrder.Descending** an, um die Tabelle in absteigender Reihenfolge zu sortieren. **SortOrder.Ascending** ist der Standardwert.
 
 **SortByColumns**( *Table*, *ColumnName1* [, *SortOrder1*, *ColumnName2*, *SortOrder2*, ... ] )
@@ -58,7 +58,8 @@ Sie können **SortByColumns** mit einer **[Dropdownliste](../controls/control-dr
 * *ColumnName(s)*: erforderlich. Die Spaltennamen, nach denen sortiert werden soll, als Zeichenfolgen.
 * *SortOrder(s)*: optional.  **SortOrder.Ascending** oder **SortOrder.Descending**.  **SortOrder.Ascending** ist der Standardwert.  Wenn mehrere *ColumnNames* angegeben sind, müssen alle außer dem letzten einen *SortOrder*-Parameter umfassen.
   
-    **Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_X0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+    > [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 **SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
@@ -66,7 +67,8 @@ Sie können **SortByColumns** mit einer **[Dropdownliste](../controls/control-dr
 * *ColumnName*: erforderlich. Der Name der Spalte, nach der sortiert werden soll, als Zeichenfolge.
 * *SortOrderTable*: erforderlich.  Einspaltige Tabelle mit Werten, nach denen sortiert werden soll.
   
-    **Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_X0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+    > [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 ## <a name="examples"></a>Beispiele
 Für das folgende Beispiel verwenden wir die **Speiseeis**-[Datenquelle](../working-with-data-sources.md), die die Daten in dieser Tabelle enthält:
@@ -91,7 +93,7 @@ Um diese Beispiele selbst auszuführen, erstellen Sie die Datenquelle **Speiseei
 
 #### <a name="sort"></a>Sortieren
 1. Fügen Sie eine weitere Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:<br>
-   **ClearCollect( SortByFlavor, Sort( Speiseeis, Geschmacksrichtung ) )**
+   **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    
      Die vorstehende Formel erstellt eine zweite Sammlung mit dem Namen **SortByFlavor**, die die gleichen Daten wie **Speiseeis** enthält. Die neue Sammlung enthält jedoch die Daten alphabetisch aufsteigend nach der Spalte **Geschmacksrichtung** sortiert.
 2. Drücken Sie F5, wählen Sie die neue Schaltfläche aus, und drücken Sie dann ESC.
@@ -100,7 +102,7 @@ Um diese Beispiele selbst auszuführen, erstellen Sie die Datenquelle **Speiseei
 
 #### <a name="sortbycolumns"></a>SortByColumns
 1. Fügen Sie eine weitere Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:<br>
-   **ClearCollect( SortByQuantity, SortByColumns( Speiseeis, "Menge", Ascending, "Geschmacksrichtung", Descending ) )**
+   **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
      Die vorstehende Formel erstellt eine dritte Sammlung mit dem Namen **SortByQuantity**, die die gleichen Daten wie **Speiseeis** enthält. Die neue Sammlung enthält die Daten jedoch numerisch aufsteigend nach der Spalte **Menge** und dann absteigend nach der Spalte **Geschmacksrichtung** sortiert.
 2. Drücken Sie F5, wählen Sie die neue Schaltfläche aus, und drücken Sie dann ESC.

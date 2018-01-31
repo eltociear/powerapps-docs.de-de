@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/12/2016
 ms.author: sirsu
-ms.openlocfilehash: 59b19a81a7c3bfca059adb00e2b3140c122f53eb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 62dbb11d167155d7f0c47b889674a61b1b1047f3
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Herstellen einer Verbindung mit Power BI aus PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -28,7 +28,7 @@ Power BI ist eine Suite von Business Analytics-Tools zum Analysieren von Daten u
 
 In diesem Thema wird gezeigt, wie Sie die Power BI-Verbindung in einer App verwenden, und die verfügbaren Funktionen werden aufgelistet.
 
-## <a name="what-you-need-to-get-started"></a>Das benötigen Sie, um anzufangen
+## <a name="prerequisites"></a>Voraussetzungen
 * Zugriff auf [powerapps.com](https://powerapps.com) oder Installation von [PowerApps](http://aka.ms/powerappsinstall)
 * Die Power BI-[Verbindung](https://powerapps.microsoft.com/tutorials/add-manage-connections/) hinzufügen
 * Eine App aus einer [Vorlage](https://powerapps.microsoft.com/tutorials/get-started-test-drive/), aus [Daten](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/) oder [von Grund auf neu](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/) erstellen
@@ -78,7 +78,8 @@ Keine
 ## <a name="checkalertstatus"></a>CheckAlertStatus
 Überprüfen des Status einer Warnung.
 
-**Hinweis:** Anforderungen an diesen Endpunkt werden pro Warnung gedrosselt, wenn die Funktion zu häufig aufgerufen wird.
+> [!NOTE]
+> Anforderungen an diesen Endpunkt werden pro Warnung gedrosselt, wenn die Funktion zu häufig aufgerufen wird.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |

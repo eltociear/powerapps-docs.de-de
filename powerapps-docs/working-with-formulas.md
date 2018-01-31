@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 99fc1a29604c15cc473e0d4442a32a8b5d915f48
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3f4cf53e8db612004619017304f222d3863430b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-formulas"></a>Erste Schritte mit Formeln
 Konfigurieren Sie Ihre App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
@@ -33,7 +33,7 @@ Sie können verschiedene Formeln für eine Vielfalt an Szenarios verwenden. Sie 
 
 Dieses Thema bietet nur eine Übersicht über das Arbeiten mit Formeln. Weitere Informationen und die vollständige Liste der Funktionen, Operatoren und anderen Bausteine, die Sie verwenden können, finden Sie unter [Formula reference for PowerApps](formula-reference.md) (Formelreferenz für PowerApps).
 
-**Voraussetzungen**
+## <a name="prerequisites"></a>Voraussetzungen
 
 * [Registrieren Sie sich](signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
@@ -71,7 +71,8 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
    
     In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30, 12)**. In PowerApps erreichen Sie denselben Effekt, indem Sie die Eigenschaft **Text** eines Steuerelements, z.B. einer Bezeichnung, auf **42** oder **Sum(30, 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
    
-    **Hinweis:** In PowerApps werden Formeln weder ein Gleichheitszeichen noch ein Pluszeichen vorangestellt, wie es z.B. in Excel gebräuchlich ist. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
+    > [!NOTE]
+> In PowerApps werden Formeln weder ein Gleichheitszeichen noch ein Pluszeichen vorangestellt, wie es z.B. in Excel gebräuchlich ist. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
 5. Ersetzen Sie in der **[Text](controls/properties-core.md)**-Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1, 2, 3)**.
    
     ![Die Eingabe der partiellen Funktion „Sum(1, 2, 3“ ohne eine schließende Klammer gibt Fehler zurück.](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +99,8 @@ In Excel können Sie eine bedingte Formatierung verwenden, um negative Werte z.B
 
 1. Legen Sie die **[Color](controls/properties-color-border.md)**-Eigenschaft des Textfelds auf diese Formel fest:<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
-    **Hinweis:** Geben Sie In einer Formel die Eigenschaft eines Steuerelements an, indem Sie den Namen des Steuerelements gefolgt von einem Punkt und dem Namen der Eigenschaft bereitstellen. Geben Sie z.B. die **[Text](controls/properties-core.md)**-Eigenschaft von **TextBox1** an, indem Sie **TextBox1.Text** eingeben.
+    > [!NOTE]
+> Geben Sie in einer Formel die Eigenschaft eines Steuerelements an, indem Sie den Namen des Steuerelements gefolgt von einem Punkt und dem Namen der Eigenschaft angeben. Geben Sie z.B. die **[Text](controls/properties-core.md)**-Eigenschaft von **TextBox1** an, indem Sie **TextBox1.Text** eingeben.
    
     ![Veranschaulichung der Änderung der Farben einer Bezeichnung anhand ihres Werts in PowerApps Recalc](./media/working-with-formulas/recalc-color1.png)
 2. Geben Sie in **TextInput1** und **TextInput2** zwei Zahlen an, die bei einer Addition eine negative Zahl ergeben.

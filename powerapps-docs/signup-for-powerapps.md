@@ -13,47 +13,45 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/23/2016
+ms.date: 10/20/2017
 ms.author: jamesol
-ms.openlocfilehash: 090476838df9960475cdc5ebc68daeed642f3c05
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 62ee6acfc1d9a86087866acf79b5230adc52e35e
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="self-service-signup-for-powerapps"></a>Self-Service-Registrierung für PowerApps
-Das Registrieren für PowerApps als Einzelperson ist ganz einfach! Dieser Artikel führt Sie mit einem kostenlosen Testkonto für PowerApps durch die einzelnen Schritte bis zur Betriebsbereitschaft.
+Die Registrierung für PowerApps als Einzelperson ist ganz einfach! Dieser Artikel führt Sie mit einem kostenlosen Testkonto für PowerApps durch die einzelnen Schritte bis zur Betriebsbereitschaft.
 
 Verwaltungsinformationen finden Sie unter [Erwerben von PowerApps für Ihre Organisation](signup-for-powerapps-admin.md) oder [PowerApps in Ihrer Organisation F&A](signup-question-and-answer.md).
 
-> **HINWEIS** Wenn Sie einer Organisation angehören, ist die Registrierung für Einzelpersonen möglicherweise deaktiviert. Wenn in einem Fehler gemeldet wird, dass die Registrierung deaktiviert wurde, finden Sie weitere Informationen unter [Die Registrierung für Einzelpersonen wurde deaktiviert](#Individual-sign-up-turned-off) (in diesem Thema).
-> 
-> 
+> [!NOTE]
+> Wenn Sie einer Organisation angehören, ist die Registrierung für Einzelpersonen möglicherweise deaktiviert. Wenn in einem Fehler gemeldet wird, dass die Registrierung deaktiviert wurde, finden Sie weitere Informationen unter [Die Registrierung von Einzelpersonen wurde deaktiviert](signup-for-powerapps.md#individual-signup-has-been-turned-off) (in diesem Thema).
 
 ## <a name="what-email-addresses-can-you-use"></a>Welche E-Mail-Adressen können Sie verwenden?
 Geben Sie Ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse ein, um sich bei PowerApps zu registrieren.
 
-> **HINWEIS:** Derzeit werden private E-Mail-Dienste, Telekommunikationsanbieter und E-Mail-Adressen wie die folgenden von Behörden oder dem Militär nicht unterstützt:  
+> [!NOTE]
+> Derzeit werden private E-Mail-Dienste, Telekommunikationsanbieter und E-Mail-Adressen wie die folgenden von Behörden oder des Militärs nicht unterstützt:  
 > 
 > * outlook.com, hotmail.com, gmail.com usw.  
 > * .gov und .mil
-> 
-> 
 
 Wenn Sie versuchen, sich mit einer privaten E-Mail-Adresse zu registrieren, weist Sie eine Nachricht darauf hin, dass Sie eine Geschäfts-, Schul- oder Uni-E-Mail-Adresse verwenden müssen.
 
 ## <a name="access-through-office-365-or-dynamics-365"></a>Zugriff über Office 365 oder Dynamics 365
 Ausgewählte Office 365- und Dynamics 365-Pläne umfassen PowerApps, wenn Sie daher bereits über Zugriff verfügen, können Sie sich einfach anmelden. Unter [PowerApps-Preise][3] können Sie herausfinden, ob in Ihrer Lizenz PowerApps enthalten ist.
 
-Wenn Ihr Office 365- oder Dynamics 365-Plan PowerApps beinhaltet, können Sie darauf zugreifen, indem Sie diese Schritte ausführen:
+Wenn Ihr Office 365- oder Dynamics 365-Plan PowerApps umfasst:
 
-1. Navigieren Sie zu [powerapps.microsoft.com][4], und wählen Sie dann **Anmelden** aus.
-   
-    ![](./media/signup-for-powerapps/home-sign-in.png)
-   
+* Navigieren Sie zu [powerapps.microsoft.com][4], und wählen Sie dann **Anmelden** aus.
+
+    ![Anmelden bei PowerApps](./media/signup-for-powerapps/home-sign-in.png)
+
     Sie werden anschließend auf [powerapps.com][2] weitergeleitet und können PowerApps gleich verwenden.
-   
-    ![](./media/signup-for-powerapps/web-powerapps-portal-new.png)
+
+    ![PowerApps-Startseite](./media/signup-for-powerapps/web-powerapps-portal-new.png)
 
 ## <a name="try-powerapps-plan-2-for-free"></a>PowerApps-Plan 2 kostenlos testen
 PowerApps bietet kein kostenloses Konto, jedoch können Sie PowerApps-Plan 2 kostenlos für 90 Tage testen. Für die Dauer des Testzeitraums haben Sie Zugriff auf alle Features von PowerApps Plan 2. PowerApps Plan 2 verfügt über sämtliche Features von Plan 1 und außerdem Zugriff auf den Common Data Service und Verwaltungsfeatures. Plan 2 bietet auch eine höhere Kapazität zum Ausführen von Flows und mehr Dateispeicherkapazität im Common Data Service.
@@ -62,31 +60,38 @@ PowerApps bietet kein kostenloses Konto, jedoch können Sie PowerApps-Plan 2 kos
 Wenn Sie bereits über Office 365, Dynamics 365 oder PowerApps Plan 1 Zugriff auf PowerApps haben, fahren Sie mit dem nächsten Abschnitt fort. Gehen Sie andernfalls folgendermaßen vor:
 
 1. Navigieren Sie zu [powerapps.microsoft.com][4], und führen Sie dann eine der folgenden Aktionen aus:
-   
+
    * Klicken oder tippen Sie in der Nähe der oberen rechten Ecke auf **Kostenlos registrieren**.
-     
+
        Wenn Sie diese Inhalte auf einem Telefon anzeigen, klicken oder tippen Sie auf das Menüsymbol in der oberen rechten Ecke, und klicken oder tippen Sie auf **Kostenlos registrieren**.
-     
-       ![](./media/signup-for-powerapps/sign-up-updated.png)
+
+       ![Kostenlos registrieren](./media/signup-for-powerapps/sign-up-updated.png)
+
    * Wählen Sie **Preise** (in der Nähe der Bildschirmmitte) und dann **Kostenlose Testversion starten** aus.
-     
-     ![](./media/signup-for-powerapps/start-free-trial.png)
+
+     ![Kostenlose Testversion starten](./media/signup-for-powerapps/start-free-trial.png)
+
 2. Geben Sie unter **Legen Sie los** Ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse ein, und klicken oder tippen Sie dann auf **Senden**.  
-   
-    ![](./media/signup-for-powerapps/get-started-old.png)
+
+    ![E-Mail-Adresse eingeben](./media/signup-for-powerapps/get-started-old.png)
+
 3. Wenn Ihr Konto nicht innerhalb einer Organisation vorhanden ist, erhalten Sie eine Nachricht mit der Aufforderung, Ihre E-Mail-Adresse zu überprüfen:
-   
-    ![](./media/signup-for-powerapps/BoxPortal_CheckYourEmail_Updated.png)
-   
+
+    ![Aufforderung, in der E-Mail nachzusehen](./media/signup-for-powerapps/BoxPortal_CheckYourEmail_Updated.png)
+
     Wenn Ihr Konto Teil einer vorhandenen Organisation ist, erhalten Sie eine Nachricht mit der Einladung, sich mit diesem Konto anzumelden. Wählen Sie **Anmelden** aus, und melden Sie sich mit Ihrem Geschäftskonto an:  
-   
-    ![](./media/signup-for-powerapps/BoxPortal_WeKnowYou_Updated.png)
+
+    ![Mit Geschäftskonto anmelden](./media/signup-for-powerapps/BoxPortal_WeKnowYou_Updated.png)
+
 4. Wenn Sie eine E-Mail-Nachricht erhalten haben, wählen Sie den Link in der Nachricht aus, um Ihre E-Mail-Adresse zu bestätigen. Nachdem Sie Ihre Adresse verifiziert haben, müssen Sie einige zusätzliche Informationen über sich selbst eingeben.
-5. Wenn Sie über ein vorhandenes Organisationskonto verfügen, werden Sie aufgefordert, **Starten** auszuwählen:  
-   ![](./media/signup-for-powerapps/BoxPortal_AlmostThere_Updated.png)
+
+5. Wenn Sie über ein vorhandenes Organisationskonto verfügen, werden Sie in einer Meldung aufgefordert, auf **Starten** zu klicken:
+
+    ![Auf „Starten“ klicken](./media/signup-for-powerapps/BoxPortal_AlmostThere_Updated.png)
+
 6. Sie werden anschließend auf [powerapps.com][2] weitergeleitet und können PowerApps gleich verwenden.
-   
-    ![](./media/signup-for-powerapps/web-powerapps-portal-new.png)
+
+    ![PowerApps-Startseite](./media/signup-for-powerapps/web-powerapps-portal-new.png)
 
 ### <a name="start-a-free-trial-from-within-powerapps"></a>Kostenlose Testversion aus PowerApps starten
 Wenn Sie als Benutzer von Office 365 bereits Zugriff auf Dynamics 365 oder PowerApps Plan 1 besitzen, können Sie PowerApps Plan 2 kostenlos ausprobieren. Um eine 90 Tage lang gültige kostenlose Testversion von Plan 2 zu starten, melden Sie sich bei PowerApps an, und probieren sie dann eins dieser Features von PowerApps Plan 2 aus:
@@ -98,26 +103,25 @@ Wenn Sie als Benutzer von Office 365 bereits Zugriff auf Dynamics 365 oder Power
 
 Wenn Sie eins dieser Features ausprobieren, werden Sie aufgefordert, Ihre kostenlose Testversion zu starten. Wählen Sie einfach **Kostenlose Testversion** aus.
 
-  ![](./media/signup-for-powerapps/trial-upsell.png)
+  ![Testversion starten](./media/signup-for-powerapps/trial-upsell.png)
 
 Um die Testversion zu starten, müssen Sie den Nutzungsbedingungen zustimmen, indem Sie **Kostenlose Testversion** auswählen.
 
-  ![](./media/signup-for-powerapps/trial-consent.png)
+  ![Zu Nutzungsbedingungen zustimmen](./media/signup-for-powerapps/trial-consent.png)
 
-**HINWEISE**
+> [!NOTE]
+> Wenn Sie mehr Zeit zum Beurteilen von PowerApps benötigen, können Sie eine Verlängerung Ihres Testzeitraums um weitere 90 Tage anfordern.
 
-* *Wenn Sie mehr Zeit zum Beurteilen von PowerApps benötigen, können Sie eine Erweiterung Ihres Testzeitraums um weitere 90 Tage anfordern*.
-* *Benutzer, die diese im Produkt integrierte Testversion von PowerApps nutzen, werden im Office 365-Administratorportal nicht als PowerApps Plan 2-Testbenutzer aufgeführt (es sei denn, sie besitzen eine weitere Lizenz für Office 365, Dynamics 365 oder PowerApps)*.
-* *Wenn Sie als IT-Administrator PowerApps-Testlizenzen für mehrere Benutzer in Ihrer Organisation erwerben möchten, ohne dass die Einzelbenutzer den Vertragsbedingungen zustimmen müssten, können Sie sich für eine [PowerApps Plan 2-Abonnementtestversion][6] registrieren. Sie müssen globaler Office 365-Administrator oder Abrechnungsadministrator sein oder einen neuen Mandanten erstellen, um sich für eine Administratortestversion zu registrieren.*  [Weitere Informationen](signup-for-powerapps-admin.md)
+> [!NOTE]
+> Benutzer, die diese in das Produkt integrierte Testversion von PowerApps nutzen, werden im Office 365-Administratorportal nicht als PowerApps Plan 2-Testbenutzer aufgeführt (es sei denn, sie besitzen eine weitere Lizenz für Office 365, Dynamics 365 oder PowerApps).
+
+> [!NOTE]
+> Wenn Sie als IT-Administrator PowerApps-Testlizenzen für mehrere Benutzer in Ihrer Organisation erwerben möchten, ohne dass die Einzelbenutzer den Vertragsbedingungen zustimmen müssten, können Sie sich für eine [PowerApps Plan 2-Abonnementtestversion][6] registrieren. Sie müssen globaler Office 365-Administrator oder Abrechnungsadministrator sein oder einen neuen Mandanten erstellen, um sich für eine Administratortestversion zu registrieren.  [Weitere Informationen](signup-for-powerapps-admin.md)
 
 ## <a name="individual-signup-has-been-turned-off"></a>Die Registrierung von Einzelpersonen wurde deaktiviert
 Bei dem Versuch, sich für PowerApps zu registrieren, wird möglicherweise die folgende Nachricht angezeigt.
 
-> Ihre IT-Abteilung hat die Registrierung für Microsoft-PowerApps deaktiviert.
-> 
-> 
-
-![](./media/signup-for-powerapps/Individual-sign-up-turned-off.png)
+![Registrierung von der IT-Abteilung deaktiviert](./media/signup-for-powerapps/Individual-sign-up-turned-off.png)
 
 Das hat möglicherweise die Ursache, dass Ihre Organisation die Registrierung für Einzelpersonen deaktiviert hat. Es kann ferner den Grund haben, dass Sie Office 365 über einen Partner erworben haben. Weitere Informationen.
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: 0c8aa48d1e8d2b524d287b5a123117c764e22385
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 381fe4021a06b13d6fbdf3887e42616a30053030
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-sources-in-powerapps"></a>Grundlegendes zu Datenquellen in PowerApps
 Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.
@@ -55,7 +55,8 @@ Sie können Datenquellen in Form von Tabellen wie eine interne PowerApps-Tabelle
 
 * Die Datenquelle weist die gleichen Spaltennamen und Datentypen auf wie die zugrunde liegende Tabelle in der Verbindung.
   
-    **Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+    > [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 * Die Datenquelle wird automatisch vom Dienst geladen, wenn die App geladen wird.  Sie können erzwingen, dass die Daten aktualisiert werden, indem Sie die **[Refresh](functions/function-refresh.md)**-Funktion verwenden.
 * Wenn Benutzer eine App ausführen, können sie Datensätze erstellen, ändern und löschen und diese Änderungen mithilfe von Push an die zugrunde liegende Tabelle im Dienst zurückleiten.
   * Datensätze können mithilfe der Funktionen **[Patch](functions/function-patch.md)** und **[Collect](functions/function-clear-collect-clearcollect.md)** erstellt werden.  

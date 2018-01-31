@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/01/2016
+ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 5ca84afd86144bec23c66825e72ef72694428df1
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Grundlegendes zu lokalen Datengateways für Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration
@@ -44,27 +44,33 @@ Zu berücksichtigende Aspekte:
 **Installation eines Gateways**
 
 1. [Laden Sie das Installationsprogramm herunter](http://go.microsoft.com/fwlink/?LinkID=820931), und führen Sie es aus.
-   
+
     ![Ausführen des Installationsprogramms](./media/gateway-reference/run-installer.png)
+
 2. Klicken oder tippen Sie auf der ersten Seite des Installationsassistenten auf **Weiter**, um zu bestätigen, dass Sie die Erinnerung zum Installieren eines Gateways auf einem Laptop zur Kenntnis genommen haben.
-   
+
     ![Erinnerung](./media/gateway-reference/laptop-reminder.png)
+
 3. Geben Sie den Speicherort an, an dem Sie das Gateway installieren möchten, aktivieren Sie das Kontrollkästchen, um die Nutzungsbedingungen und die Datenschutzrichtlinie zu akzeptieren, und klicken oder tippen Sie dann auf **Installieren**.
+
 4. Klicken oder tippen Sie in den **Benutzerkontensteuerung**-Dialogfeldern auf **Ja**, um den Vorgang fortzusetzen.
+
 5. Klicken oder tippen Sie auf der nächsten Seite des Assistenten auf **Anmelden**.
-   
+
     ![Anmelden](./media/gateway-reference/sign-in.png)
+
 6. Klicken oder tippen Sie auf die Option, um ein neues Gateway zu registrieren, oder auf die Option, um ein vorhandenes Gateway zu migrieren, wiederherzustellen oder zu übernehmen, und klicken oder tippen Sie dann auf **Weiter**.
-   
+
     ![Neues oder vorhandenes Gateway auswählen](./media/gateway-reference/new-existing.png)
-   
+
    * Geben Sie zum Konfigurieren eines Gateways einen **Namen** und einen **Wiederherstellungsschlüssel** dafür ein, klicken oder tippen Sie auf **Konfigurieren** und dann auf **Schließen**.
-     
+
        ![Konfigurieren eines neuen Gateways](./media/gateway-reference/configure-new.png)
-     
+
        Geben Sie einen Wiederherstellungsschlüssel an, der aus mindestens acht Zeichen besteht, und bewahren Sie ihn an einem sicheren Ort auf. Sie benötigen diesen Schlüssel, wenn Sie das zugehörige Gateway migrieren, wiederherstellen oder übernehmen möchten.
+
    * Geben Sie zum Migrieren, Wiederherstellen oder Übernehmen eines vorhandenen Gateways den Namen des Gateways und den Wiederherstellungsschlüssel an, klicken oder tippen Sie auf **Konfigurieren**, und befolgen Sie dann alle weiteren Anweisungen.
-     
+
        ![Ein vorhandenes Gateway wiederherstellen](./media/gateway-reference/recover-existing.png)
 
 **Neustart des Gateways**
@@ -73,6 +79,7 @@ Das Gateway wird als Windows-Dienst ausgeführt, deshalb können Sie es auf vers
 
 * Führen Sie diesen Befehl aus, um den Dienst zu beenden:<br>
   **net stop PBIEgwService**
+
 * Führen Sie diesen Befehl aus, um den Dienst zu starten:<br>
   **net start PBIEgwService**
 
@@ -82,7 +89,7 @@ Informationen über das Bereitstellen von Proxyinformationen für Ihr Gateway fi
 
 Sie können überprüfen, ob Ihre Firewall oder Ihr Proxy möglicherweise Verbindungen blockiert, indem Sie folgenden Befehl von einer PowerShell-Eingabeaufforderung ausführen. Dieser Befehl testet die Konnektivität mit dem Azure Service Bus. Es wird nur die Netzwerkkonnektivität getestet, und dies hat nichts mit dem Cloudserverdienst oder dem Gateway zu tun. Damit können Sie bestimmen, ob Ihr Computer eine Verbindung mit dem Internet herstellen kann.
 
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+**Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350**
 
 Die Ergebnisse sollten diesem Beispiel ähneln. Wenn **TcpTestSucceeded** nicht **TRUE** ist, werden Sie möglicherweise durch eine Firewall blockiert.
 
@@ -107,7 +114,8 @@ Erfahren Sie mehr über [Hybridlösungen](https://azure.microsoft.com/documentat
 
 Es wird empfohlen, dass Sie eine Whitelist mit IP-Adressen für Ihren Datenbereich in ihrer Firewall erstellen. Sie können die [IP-Liste des Microsoft Azure-Rechenzentrums](https://www.microsoft.com/download/details.aspx?id=41653) herunterladen, die wöchentlich aktualisiert wird.
 
-**Hinweis:** In der IP-Liste des Azure-Rechenzentrums werden die Adressen in der [CIDR-Notation](http://whatismyipaddress.com/cidr) aufgelistet. Beispielsweise bedeutet 10.0.0.0/24 nicht 10.0.0.0 bis 10.0.0.24.
+> [!NOTE]
+> In der IP-Liste des Azure-Rechenzentrums werden die Adressen in der [CIDR-Notation](http://whatismyipaddress.com/cidr) aufgelistet. Beispielsweise bedeutet 10.0.0.0/24 nicht 10.0.0.0 bis 10.0.0.24.
 
 Hier finden Sie eine Liste der vollqualifizierten Domänennamen, die vom Gateway verwendet werden.
 
@@ -156,7 +164,7 @@ Wenn bei Ihrem Proxyserver aufgrund der Authentifizierung Probleme auftreten, em
 **Antwort:** Nein. Das Gateway verwendet ausgehende Verbindungen zum Azure Service Bus.
 
 **Frage:** Was geschieht, wenn ich ausgehende Verbindungen blockiere? Was muss ich öffnen?  
-**Antwort:** Siehe die [Ports](gateway-reference.md#ports) und Hosts, die das Gateway verwendet.
+**Antwort:** In der Liste oben finden Sie die Ports und Hosts, die vom Gateway verwendet werden.
 
 **Frage:** Muss das Gateway auf demselben Computer installiert werden wie die Datenquelle?  
 **Antwort:** Nein. Das Gateway stellt eine Verbindung mit der Datenquelle mithilfe der bereitgestellten Verbindungsinformationen her. Stellen Sie sich das Gateway in diesem Sinn wie eine Clientanwendung vor. Es muss nur eine Verbindung zum bereitgestellten Servernamen herstellen können.
@@ -206,10 +214,15 @@ Sie können sich auch Tools ansehen, die die Datenquelle für die Abfrageablaufv
 Wenn ein Benutzer mit einem Element interagiert, das mit einer lokalen Datenquelle verbunden ist:  
 
 1. Der Clouddienst erstellt eine Abfrage zusammen mit den verschlüsselten Anmeldeinformationen für die Datenquelle und sendet die Abfrage an die Warteschlange für die Verarbeitung durch das Gateway.
+
 2. Der Gatewayclouddienst analysiert die Abfrage und übermittelt die Anforderung mithilfe von Push an den [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/).
+
 3. Das lokale Datengateway fragt den Azure Service Bus nach ausstehenden Anforderungen ab.
+
 4. Das Gateway erhält die Abfrage, entschlüsselt die Anmeldeinformationen und stellt mit diesen Anmeldeinformationen eine Verbindung zu der (den) Datenquelle(n) her.
+
 5. Das Gateway übermittelt die Abfrage für die Ausführung an die Datenquelle.
+
 6. Die Ergebnisse werden von der Datenquelle zurück an das Gateway und von dort aus an den Clouddienst übermittelt. Der Dienst verwendet dann die Ergebnisse.
 
 ## <a name="troubleshooting"></a>Problembehandlung
@@ -225,15 +238,15 @@ Sie können mehrere Protokolle für das Gateway sammeln. Beginnen Sie immer mit 
 
 **Installationsprotokolle**
 
-    %localappdata%\Temp\On-premises_data_gateway_*.log
+%localappdata%\Temp\On-premises_data_gateway_*.log
 
 **Konfigurationsprotokolle**
 
-    %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
+%localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
 **Enterprise Gateway-Dienstprotokolle**
 
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
+C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 **Ereignisprotokolle**
 
@@ -243,4 +256,3 @@ Die Protokolle des **lokalen Datengatewaydiensts** befinden sich unter **Anwendu
 
 #### <a name="fiddler-trace"></a>Ablaufverfolgung mit Fiddler
 [Fiddler](http://www.telerik.com/fiddler) ist ein kostenloses Tool von Telerik zur Überwachung des HTTP-Verkehrs.  Sie können den eingehenden und ausgehenden Datenverkehr mit dem Power BI-Dienst vom Clientcomputer aus prüfen. Dadurch können Fehler und sonstige zugehörige Informationen angezeigt werden.
-

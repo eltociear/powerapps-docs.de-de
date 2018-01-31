@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 5e229e8767d4fdc16d37a69d82766af48a414686
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI-Dienst. Anschließend wird auf der Grundlage des Berichts ein Dashboard erstellt. Ein Bericht enthält häufig eine große Anzahl von Visualisierungen, und im Dashboard wird lediglich eine Teilmenge davon verwendet. In diesem Fall werden dem Dashboard alle vier Visualisierungen hinzugefügt.
 
@@ -48,7 +49,8 @@ In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI
    
     Sie stellen fest, dass von Power BI Desktop beim Veröffentlichen ein Dataset **(d)** und einen Bericht **(c)** hochgeladen wurde. Sie erstellen Dashboards im Dienst, nicht Power BI Desktop, und in diesem Arbeitsbereich sind noch keine Dashboards vorhanden **(b)**. Im nächsten Schritt wird einer erstellt.
    
-    **Hinweis:** Power BI weist eine neue Navigationsumgebung auf, und diese könnte auf Ihrer Website aktiviert sein. Wenn sich der linke Navigationsbereich von der obigen Abbildung unterscheidet, informieren Sie sich im Artikel [Die neue Power BI-Navigation](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience).
+    > [!NOTE]
+> Power BI weist eine neue Navigationsumgebung auf, und diese könnte auf Ihrer Website aktiviert sein. Wenn sich der linke Navigationsbereich von der obigen Abbildung unterscheidet, informieren Sie sich im Artikel [Die neue Power BI-Navigation](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience).
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>Schritt 2: Konfigurieren von Anmeldeinformationen für die Aktualisierung
 1. Klicken oder tippen Sie im Dienst in der rechten oberen Ecke auf das ![Zahnradsymbol](./media/sharepoint-scenario-publish-report/icon-gear.png), und klicken oder tippen Sie anschließend auf **Einstellungen**.
@@ -82,10 +84,13 @@ In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI
 4. Wählen Sie das vorhandene Dashboard aus, und klicken oder tippen Sie dann auf **Anheften**.
    
     ![Anheften des Diagramms an das vorhandene Dashboard](./media/sharepoint-scenario-publish-report/06-01-15-pin-existing.png)
+
 5. Wiederholen Sie den Anheftvorgang für die übrigen beiden Visuals.
+
 6. Klicken oder tippen Sie im linken Navigationsbereich auf den Namen des Dashboards.
    
     ![Neues Dashboard in der Websitenavigation](./media/sharepoint-scenario-publish-report/06-01-16-dashboard-menu.png)
+
 7. Überprüfen Sie das Dashboard. Wenn Sie auf eine Kachel klicken, kehren Sie zurück zum Bericht.
    
     ![Fertiges Dashboard](./media/sharepoint-scenario-publish-report/06-01-17-dashboard-completed.png)

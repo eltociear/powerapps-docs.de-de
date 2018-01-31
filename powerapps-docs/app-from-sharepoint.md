@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 5d47366fafa137d8e5b0311f8820b11ff60f648a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 36a9188615c14262de0bfdea21d58010a053e01f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-to-manage-data-in-a-sharepoint-list"></a>Generieren einer App, um Daten in einer SharePoint-Liste zu verwalten
-[!VIDEO nb:cid:UUID:34ccfd46-7826-49ce-90d8-cf6a144b6968]
+
 
 
 Generieren Sie in PowerApps automatisch eine App mit drei Bildschirmen, um Daten in einer SharePoint-Liste zu verwalten, lokal oder in der Cloud.
@@ -33,7 +33,8 @@ Wenn Sie mit PowerApps nicht vertraut sind, finden Sie Grundlagen unter [Einfüh
 
 Zum Zeitpunkt dieses Artikels unterstützt PowerApps benutzerdefinierte Listen, jedoch keine Bibliotheken. Darüber hinaus können Sie Daten in verschiedenen Arten von Spalten anzeigen, z.B. **Auswahl** und **Bild**, aber Sie können diese Daten nicht aktualisieren. Weitere Informationen finden Sie unter [Known issues (Bekannte Probleme)](connections/connection-sharepoint-online.md#known-issues).
 
-**Hinweis:** Wenn ein Spaltennamen ein Leerzeichen enthält, wird es von PowerApps als **"\_X0020\_"** angezeigt. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+> [!NOTE]
+> Wenn ein Spaltenname ein Leerzeichen enthält, wird es von PowerApps als **"\_X0020\_"** angezeigt. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 ## <a name="specify-a-sharepoint-app"></a>Eine SharePoint-App angeben
 1. Wenn Sie noch keine [Verbindung mit SharePoint](connect-to-sharepoint.md) hergestellt haben, stellen Sie eine her.
@@ -52,7 +53,8 @@ Zum Zeitpunkt dieses Artikels unterstützt PowerApps benutzerdefinierte Listen, 
 ## <a name="specify-a-site-and-a-list"></a>Angeben einer Website und einer Liste
 1. Unter **Connect to a SharePoint site** (Verbindung mit einer SharePoint-Website herstellen) fügen Sie die URL der Website ein, die die Liste enthält, die Sie verwenden möchten, und klicken oder tippen Sie auf **Go** (Los).
    
-    **Hinweis**: Binden Sie keine bestimmte Liste in die URL ein.
+    > [!NOTE]
+> Binden Sie keine bestimmte Liste in die URL ein.
    
     ![](./media/app-from-sharepoint/specify-site.png)
 2. Klicken oder tippen Sie unter **Choose a list** (Liste auswählen) auf den Namen der Liste, die Sie verwenden möchten.

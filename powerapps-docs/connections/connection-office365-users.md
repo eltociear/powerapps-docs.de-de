@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/07/2016
 ms.author: archanan
-ms.openlocfilehash: c6f4d61728d41df880e595e74e91ff6012bc29aa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: ca6a91359f04aa54dfb9db146dc08b098763cc2d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Herstellen einer Verbindung mit Office 365-Benutzer aus PowerApps
 ![Office 365-Benutzer](./media/connection-office365-users/office365icon.png)
@@ -30,9 +30,7 @@ Sie können diese Informationen in einer Bezeichnung in Ihrer App anzeigen. Sie 
 
 In diesem Thema wird gezeigt, wie Sie Office 365-Benutzer als Verbindung hinzufügen, Office 365-Benutzer Ihrer App als Datenquelle hinzufügen und wie Sie Tabellendaten in einem Katalogsteuerelement verwenden.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="add-a-connection"></a>Eine Verbindung hinzufügen
 1. [Fügen Sie eine Datenverbindung hinzu](../add-data-connection.md), und wählen Sie **Office 365-Benutzer** aus:  
@@ -97,7 +95,8 @@ In der Bezeichnung werden die Informationen über den aktuellen Benutzer angezei
 
 In der Bezeichnung werden die Informationen angezeigt, die Sie über den von Ihnen angegebenen Benutzer oder den Vorgesetzten dieses Benutzers eingegeben haben.
 
-**Hinweis**: Wenn Sie eine App basierend auf einer Entität im Common Data Service entwickeln, können Sie einen Benutzer anhand der ID statt anhand der E-Mail-Adresse angeben.
+> [!NOTE]
+> Wenn Sie eine App basierend auf einer Entität im Common Data Service entwickeln, können Sie einen Benutzer anhand der ID statt anhand der E-Mail-Adresse angeben.
 
 Beispielsweise können Sie [eine App automatisch erstellen](../data-platform-create-app.md), einen Bildschirm hinzufügen, der ein **Label**-Steuerelement (Bezeichnung) enthält, und die **Text**-Eigenschaft des Steuerelements auf diese Formel festlegen:
 <br>**Office365Users.UserProfile(BrowseGallery1.Selected.CreatedByUser).DisplayName**
@@ -116,7 +115,8 @@ Wenn Sie einen Kontakt erstellen und in der App diesen Kontakt im Bildschirm zum
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 4. Wählen Sie in der zweiten Liste **JobTitle** aus. Wählen Sie in der dritten Liste **DisplayName** aus. Der Katalog wird mit diesen Werten aktualisiert.  
    
-    <br/>**HINWEIS**: Das erste Feld ist eigentlich eine Bildsteuerung. Wenn Sie über kein Bild verfügen, können Sie die Bildsteuerung löschen und stattdessen eine Bezeichnung hinzufügen. Unter [Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md) finden Sie viele hilfreiche Informationen.
+> [!NOTE]
+> Das erste Feld ist eigentlich eine Bildsteuerung. Wenn Sie über kein Bild verfügen, können Sie die Bildsteuerung löschen und stattdessen eine Bezeichnung hinzufügen. Unter [Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md) finden Sie viele hilfreiche Informationen.
 
 ### <a name="search-for-users"></a>Nach Benutzern suchen
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu (Menü **Insert** (Einfügen) > **Text** > **Text input** (Texteingabe)), und benennen Sie es in **SearchTerm** um. Geben Sie einen zu suchenden Namen ein. Geben Sie beispielsweise Ihren Vornamen ein.

@@ -1,5 +1,5 @@
 ---
-title: '# <a name="powerapps-community-plan-a-free-development-environment-for-individual-use--microsoft-docs"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung | Microsoft-Dokumentation'
+title: '# PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung | Microsoft-Dokumentation'
 description: "Registrieren Sie sich, um Ihre Kenntnisse auszubauen und mehr über PowerApps, Microsoft Flow und den Common Data Service zu erfahren."
 services: 
 suite: powerapps
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 4fea217638bdcff52f626694f5b43662f89dbe9b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:
@@ -85,43 +85,49 @@ Mit der individuellen Umgebung erhalten Sie die folgenden Funktionen:
 
 Sie können auf die enthaltenen Mengen keine Add-Ons anwenden. Wenn Sie die Kapazitätsgrenze erreichen, empfehlen wir den Kauf von PowerApps-Plan 2. Weitere Informationen finden Sie auf der [PowerApps-Preisseite](https://powerapps.microsoft.com/pricing/).
 
-**Hinweis**: Die Kapazität der individuellen Umgebung wird, gleich, ob sie verwendet wird oder nicht, nicht auf das Gesamtkontingent Ihres Unternehmens angerechnet.
+> [!NOTE]
+> Die Kapazität der individuellen Umgebung wird, gleich, ob sie verwendet wird oder nicht, nicht auf das Gesamtkontingent Ihres Unternehmens angerechnet.
 
 ## <a name="publishing-to-appsource"></a>Veröffentlichen auf AppSource
 Haben Sie eine App, die Sie mit Kunden teilen möchten? Wir unterstützen jetzt eine PowerApps Test Drive-Lösung auf [AppSource.com](https://appsource.microsoft.com), um Ihnen die Möglichkeit zu geben, Apps und Flows mit Kunden zu teilen und Leads für Ihr Unternehmen zu generieren. Weitere Informationen finden Sie unter [Kunden das Testen Ihrer Apps auf AppSource ermöglichen](dev-appsource-test-drive.md).
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-1. **F:** Wie kann ich vorgehen, wenn ich die Kapazitätsgrenzen der Umgebung erreiche?
-   
-    **A:** Es wird eine eingeschränkte Kapazität bereitgestellt, da diese Umgebung für den individuellen Einsatz vorgesehen ist, nicht für ein Team oder den Produktionseinsatz. Dies ist die bereitgestellte Kapazität:
-   
-   | **Kapazität** |  |
-   | --- | --- |
-   | Flowausführungen/Monat |750 |
-   | Datenbankgröße |200 MB |
-   | Dateispeicher |2 GB |
-   
-    Wenn Sie eine der Kapazitätsgrenzen erreichen, empfehlen wir Ihnen den Erwerb eines Plans, der den Produktionseinsatz unterstützt. Weitere Informationen über unsere Pläne und die für sie geltenden Grenzwerte erfahren Sie auf der [PowerApps-Preisseite](https://powerapps.microsoft.com/pricing/).
-2. **F:** Kann ich die Apps, Flows und sonstigen Ressourcen, die in der individuellen Umgebung erstellt wurden, in eine andere Umgebung übertragen?
-   
-    **A:** Ja, Sie sollten imstande sein, die Ressourcen aus dieser Umgebung in andere Umgebungen zu exportieren. Weitere Informationen finden Sie unter [Migration der Umgebungs- und Mandanten-App](environment-and-tenant-migration.md).
-3. **F:** Läuft das Abonnement des PowerApps-Communityplans irgendwann ab?
-   
-    **A:** Sie können Ihr PowerApps-Communityplan-Abonnement dauerhaft kostenlos verwenden. Wenn Sie eine individuelle Umgebung aktiv verwenden, verlieren Sie den Zugriff auf die Ressourcen oder Funktionen in dieser Umgebung nicht. Allerdings bemerken Sie möglicherweise eine Verzögerung beim ersten Zugriff auf Ihre Common Data Service-Datenbank nach einer langen Phase ohne Aktivität.  Diese Verzögerung hat keinen Einfluss auf die im Common Data Service gespeicherten Daten oder Entitäten.
-4. **F:** Kann ich mehrere individuelle Umgebungen erhalten oder erstellen?
-   
-    **A:** Nein, Sie können nur über eine individuelle Umgebung verfügen, die für Sie von PowerApps erstellt wird, wenn Sie sich für den Communityplan registrieren.
-5. **F:** Worin besteht der Unterschied zwischen der PowerApps Plan 2-Testversion und dem PowerApps-Communityplan; und für welche sollte ich mich registrieren?
-   
-    **A:** Sowohl die PowerApps Plan 2-Testversion und der PowerApps-Communityplan sind kostenlos, sie wurden aber für verschiedene Zwecke entwickelt:
-   
-    Mit der **PowerApps Plan 2-Testversion** erhalten Sie PowerApps Plan 2 für einen Zeitraum von 90 Tagen. Dies ist dafür vorgesehen, Ihnen das Ausprobieren von PowerApps, Common Data Service und Microsoft Flow zu ermöglichen. Nach dem Ablauf Ihrer Testversion können Sie einen Plan erwerben. Wenn Sie PowerApps bereits mit Office 365 oder Dynamics 365 verwenden, ist dies der richtige Plan, um die Premium-Funktionen von PowerApps auszuprobieren, die in PowerApps Plan 2 zur Verfügung stehen.
-   
-    **PowerApps-Communityplan** gibt Ihnen Zugriff auf PowerApps-Premium-Funktionen, Common Data Service und Microsoft Flow für die individuelle Verwendung. Dieser Plan ist in erster Linie für Lernzwecke oder das Erstellen von Geschäftslösungen zur Verteilung über [AppSource Test Drive](dev-appsource-test-drive.md) vorgesehen. Dieser Plan ist dauerhaft verfügbar, jedoch nur für Lernzwecke und den Ausbau Ihrer Kenntnisse in PowerApps, Common Data Services und Microsoft Flow.
-6. **F:** Kann ich mich mit meinem persönlichen Konto registrieren?
-   
-    **A:** Nein, Sie können sich nur mit Ihrem [Geschäfts-, Schul- oder Unikonto](signup-for-powerapps.md#what-email-addresses-can-you-use) registrieren. Wir unterstützen die Registrierung mit einem persönlichen Konto derzeit nicht.
-7. **F:** Kann ich meine individuelle Umgebung löschen?
-   
-    **A:** Sie können diese Umgebung nicht auf eigene Faust löschen. Ihr Mandantenadministrator verfügt über die Berechtigung zum Löschen der Umgebung.
+**F:** Wie kann ich vorgehen, wenn ich die Kapazitätsgrenzen der Umgebung erreiche?
 
+**A:** Es wird eine eingeschränkte Kapazität bereitgestellt, da diese Umgebung für den individuellen Einsatz vorgesehen ist, nicht für ein Team oder den Produktionseinsatz. Dies ist die bereitgestellte Kapazität:
+
+| **Kapazität** |  |
+| --- | --- |
+| Flowausführungen/Monat |750 |
+| Datenbankgröße |200 MB |
+| Dateispeicher |2 GB |
+
+Wenn Sie eine der Kapazitätsgrenzen erreichen, empfehlen wir Ihnen den Erwerb eines Plans, der den Produktionseinsatz unterstützt. Weitere Informationen über unsere Pläne und die für sie geltenden Grenzwerte erfahren Sie auf der [PowerApps-Preisseite](https://powerapps.microsoft.com/pricing/).
+
+**F:** Kann ich die Apps, Flows und sonstigen Ressourcen, die in der individuellen Umgebung erstellt wurden, in eine andere Umgebung übertragen?
+
+**A:** Ja, Sie sollten imstande sein, die Ressourcen aus dieser Umgebung in andere Umgebungen zu exportieren. Weitere Informationen finden Sie unter [Migration der Umgebungs- und Mandanten-App](environment-and-tenant-migration.md).
+
+**F:** Läuft das Abonnement des PowerApps-Communityplans irgendwann ab?
+
+**A:** Sie können Ihr PowerApps-Communityplan-Abonnement dauerhaft kostenlos verwenden. Wenn Sie eine individuelle Umgebung aktiv verwenden, verlieren Sie den Zugriff auf die Ressourcen oder Funktionen in dieser Umgebung nicht. Allerdings bemerken Sie möglicherweise eine Verzögerung beim ersten Zugriff auf Ihre Common Data Service-Datenbank nach einer langen Phase ohne Aktivität.  Diese Verzögerung hat keinen Einfluss auf die im Common Data Service gespeicherten Daten oder Entitäten.
+
+**F:** Kann ich mehrere individuelle Umgebungen erhalten oder erstellen?
+
+**A:** Nein, Sie können nur über eine individuelle Umgebung verfügen, die für Sie von PowerApps erstellt wird, wenn Sie sich für den Communityplan registrieren.
+
+**F:** Worin besteht der Unterschied zwischen der PowerApps Plan 2-Testversion und dem PowerApps-Communityplan; und für welche sollte ich mich registrieren?
+
+**A:** Sowohl die PowerApps Plan 2-Testversion und der PowerApps-Communityplan sind kostenlos, sie wurden aber für verschiedene Zwecke entwickelt:
+
+Mit der **PowerApps Plan 2-Testversion** erhalten Sie PowerApps Plan 2 für einen Zeitraum von 90 Tagen. Dies ist dafür vorgesehen, Ihnen das Ausprobieren von PowerApps, Common Data Service und Microsoft Flow zu ermöglichen. Nach dem Ablauf Ihrer Testversion können Sie einen Plan erwerben. Wenn Sie PowerApps bereits mit Office 365 oder Dynamics 365 verwenden, ist dies der richtige Plan, um die Premium-Funktionen von PowerApps auszuprobieren, die in PowerApps Plan 2 zur Verfügung stehen.
+
+**PowerApps-Communityplan** gibt Ihnen Zugriff auf PowerApps-Premium-Funktionen, Common Data Service und Microsoft Flow für die individuelle Verwendung. Dieser Plan ist in erster Linie für Lernzwecke oder das Erstellen von Geschäftslösungen zur Verteilung über [AppSource Test Drive](dev-appsource-test-drive.md) vorgesehen. Dieser Plan ist dauerhaft verfügbar, jedoch nur für Lernzwecke und den Ausbau Ihrer Kenntnisse in PowerApps, Common Data Services und Microsoft Flow.
+
+**F:** Kann ich mich mit meinem persönlichen Konto registrieren?
+
+**A:** Nein, Sie können sich nur mit Ihrem [Geschäfts-, Schul- oder Unikonto](signup-for-powerapps.md#what-email-addresses-can-you-use) registrieren. Wir unterstützen die Registrierung mit einem persönlichen Konto derzeit nicht.
+
+**F:** Kann ich meine individuelle Umgebung löschen?
+
+**A:** Sie können diese Umgebung nicht auf eigene Faust löschen. Ihr Mandantenadministrator verfügt über die Berechtigung zum Löschen der Umgebung.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: archanan
-ms.openlocfilehash: f99c293184a33ea204f21462badb5e6eb498ee40
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 0d46a203c6381285c281e745dae8554896aee95a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Herstellen einer Verbindung mit Twitter aus PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -30,9 +30,7 @@ Sie können diese Informationen in einer Bezeichnung in Ihrer App anzeigen. Sie 
 
 In diesem Thema wird gezeigt, wie Sie die Twitter-Verbindung erstellen und in einer App verwenden, und es werden die verfügbaren Funktionen aufgeführt.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Herstellen einer Verbindung mit Twitter
 1. Öffnen Sie PowerApps, wählen Sie **Neu** aus, und erstellen Sie eine **Leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
@@ -72,7 +70,8 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
      
        Im Katalog-Steuerelement werden automatisch die Tweets des eingegebenen Twitter-Benutzernamens angezeigt.
      
-     **TIPP** In einigen dieser Formeln wird das Argument **maxResults** zum Anzeigen der letzten *x* Tweets in einer Timeline verwendet.
+     > [!TIP]
+> In einigen dieser Formeln wird das Argument **maxResults** zum Anzeigen der letzten *x* Tweets in einer Timeline verwendet.
 3. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.HomeTimeline()` fest.
    
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
@@ -100,7 +99,8 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
      
        Im Katalog-Steuerelement wird automatisch angezeigt, wer dem eingegebenen Twitter-Benutzernamen folgt.
      
-     **TIPP** In einigen dieser Formeln wird das Argument **maxResults** zum Anzeigen der letzten *x* Tweets in einer Timeline verwendet.
+     > [!TIP]
+> In einigen dieser Formeln wird das Argument **maxResults** zum Anzeigen der letzten *x* Tweets in einer Timeline verwendet.
 2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.MyFollowers()` fest.
    
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
@@ -158,7 +158,8 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
    
     Sie können ein auch ein **Eingabetext**-Steuerelement verwenden, um einen Suchbegriff anzugeben, so wie in den anderen Abschnitten dieses Themas.
    
-    **TIPP** Mit „maxResults“ werden die ersten fünf Ergebnisse angezeigt:  
+    > [!TIP]
+> Mit „maxResults“ werden die ersten fünf Ergebnisse angezeigt:  
    
     `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
 2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` fest.
@@ -173,7 +174,7 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
 2. Fügen Sie eine Schaltfläche hinzu, und legen Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
     `Twitter.Tweet({tweetText: MyTweet.Text})`
 3. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-twitter/preview.png)). Geben Sie Text in **MyTweet** ein, und wählen Sie dann die Schaltfläche aus, um den eingegebenen Text zu twittern.
-4. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+4. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="view-the-available-functions"></a>Anzeigen der verfügbaren Funktionen
 Diese Verbindung umfasst die folgenden Funktionen:
@@ -329,7 +330,7 @@ Meine gefolgten Benutzer: Ruft die Benutzer ab, denen ich folge
 | StatusesCount |Ganze Zahl |Nein | |
 | FriendsCount |Ganze Zahl |Nein | |
 
-### <a name="user"></a>Benutzer
+### <a name="user"></a>User
 Benutzer abrufen: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzername, Beschreibung, Anzahl der Follower usw.)
 
 #### <a name="input-properties"></a>Eingabeeigenschaften

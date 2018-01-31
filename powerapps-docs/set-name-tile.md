@@ -15,36 +15,40 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 341153ae8536de050488e54273d4d673fdf68f72
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: c9210602f4848db081cc399b63670b0e8b2010e9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>Ändern des App-Namens und des Symbols in PowerApps
 Anpassen einer App durch Ändern des Namens und der Kachel
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Erstellen Sie eine App, oder öffnen Sie eine App zum Bearbeiten.
+
 2. Klicken oder tippen Sie im Menü **Datei** auf **App settings** (App-Einstellungen).
 
 ## <a name="rename-an-app"></a>Umbenennen einer App
-* Klicken oder tippen Sie unter **App-Name** auf **Rename this app** (Diese App umbenennen), und geben Sie einen anderen Namen ein.
-  
-    ![Schließen einer App](./media/set-aspect-ratio-portrait-landscape/rename-app.png)
+Klicken oder tippen Sie unter **App-Name** auf **Rename this app** (Diese App umbenennen), und geben Sie einen anderen Namen ein.
+
+![Schließen einer App](./media/set-aspect-ratio-portrait-landscape/rename-app.png)
 
 ## <a name="change-an-app-tile"></a>Ändern einer App-Kachel
 Befolgen Sie mindestens einen der folgenden Schritte:
 
 * Klicken oder tippen Sie in der Liste der Optionen auf eine andere Hintergrundfarbe.
-  
+
     ![Wählen Sie eine Kachelfarbe aus.](./media/set-aspect-ratio-portrait-landscape/tile-colors.png)
+
 * Klicken oder tippen Sie in der Liste der Standardsymbole auf ein Symbol.
-  
+
     ![Wählen Sie ein Kachelsymbol aus.](./media/set-aspect-ratio-portrait-landscape/tile-icons.png)
+
 * Klicken oder tippen Sie auf **Browse file** (Datei suchen), klicken oder tippen Sie auf das Bild, das Sie verwenden möchten, und klicken oder tippen Sie dann auf **Öffnen**.
-  
-    **Hinweis**: Verwenden Sie für optimale Ergebnisse ein quadratisches Symbol.
+
+    > [!NOTE]
+> Verwenden Sie für optimale Ergebnisse ein quadratisches Symbol.
 
 ## <a name="next-step"></a>Nächster Schritt
 Klicken oder tippen Sie im Menü **Datei** auf **Speichern**, um Ihre App mit den neuen Einstellungen erneut zu veröffentlichen.
@@ -53,4 +57,3 @@ Klicken oder tippen Sie im Menü **Datei** auf **Speichern**, um Ihre App mit de
 * [Eine App freigeben](share-app.md)
 * [Eine App löschen](delete-app.md)
 * [Wiederherstellen der vorherigen Version einer App](restore-an-app.md)
-

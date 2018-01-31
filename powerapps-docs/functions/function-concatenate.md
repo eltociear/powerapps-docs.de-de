@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: a30d66dd62750ca0f606ea529fffa4d681bd6870
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2277d7f9252f8ce4df7552b6eb5f7bf4ac94ff63
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funktionen „Concat“ und „Concatenate“ in PowerApps
 Verketten einzelne Zeichenfolgen von Text und Zeichenfolgen in [Tabellen](../working-with-tables.md)
@@ -27,7 +27,7 @@ Verketten einzelne Zeichenfolgen von Text und Zeichenfolgen in [Tabellen](../wor
 ## <a name="description"></a>Beschreibung
 Die **Concat**-Funktion verkettet das Ergebnis einer Formel, das in allen [Datensätzen](../working-with-tables.md#records) einer Tabelle angewendet wird, was zu einer einzelnen Zeichenfolge führt. Verwenden Sie diese Funktion, um die Zeichenfolgen einer Tabelle zusammenzufassen, wie es die **[Sum](function-aggregates.md)**-Funktion bei Zahlen macht.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Verwenden Sie die  **[Split](function-split.md)** -Funktion zum Aufteilen einer Zeichenfolge in eine Tabelle von Teilzeichenfolgen.
 
@@ -37,7 +37,7 @@ Die **Concatenate**-Funktion verkettet eine Mischung aus einzelnen Zeichenfolgen
 **Concat**( *Tabelle*, *Formel* )
 
 * *Table*: erforderlich.  Die zu verarbeitende Tabelle.
-* *Formula*: erforderlich.  Die auf alle Datensätze der Tabelle anzuwendende Formel.
+* *Formel*: Erforderlich.  Die auf alle Datensätze der Tabelle anzuwendende Formel.
 
 **Concatenate**( *Zeichenfolge1* [, *Zeichenfolge2*, ...] )
 

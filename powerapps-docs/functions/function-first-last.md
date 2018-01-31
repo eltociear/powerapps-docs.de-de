@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 0a056aa20532ffe6e2e8ae502e67b5b27d134839
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: dcbc897f14c34a84757a3d99d5433715b4c1d3c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Die Funktion „First“, „FirstN“, „Last“ und „LastN“ in PowerApps
 Gibt den ersten oder letzten Satz von [Datensätze](../working-with-tables.md#records) einer Tabelle zurück.
@@ -35,7 +35,7 @@ Die **LastN**-Funktion gibt die letzte Gruppe von Datensätzen einer Tabelle zur
 
 **First** und **Last**  geben einen einzelnen Datensatz zurück.  **FirstN** und **LastN** geben eine Tabelle zurück, selbst wenn Sie nur einen einzelnen Datensatz angeben.
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Syntax
 **First**( *Table* )<br>**Last**( *Table* )

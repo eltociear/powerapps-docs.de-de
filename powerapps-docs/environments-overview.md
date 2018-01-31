@@ -15,19 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2016
 ms.author: jamesol
-ms.openlocfilehash: 425376f218b01a9edab4dae90555b33cd1d26a80
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f8af05b00888891663da975be379211fad79c8a3
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environments-overview"></a>Umgebungen – Übersicht
 Umgebungen stellen ein neues Konzept in PowerApps dar. Eine Umgebung ist einfach ein Ort zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Workflows Ihrer Organisation. Umgebungen dienen außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. In welcher Weise Sie Umgebungen nutzen, hängt von Ihrer Organisation und den Apps ab, die Sie erstellen möchten. Beispiel:
 
-1. Sie können sich entscheiden, Ihre Apps in nur einer Umgebung zu erstellen.
-2. Sie können aber auch getrennte Umgebungen erstellen, um die Test- und Produktionsversionen Ihrer Apps zusammenzufassen.
-3. Sie können getrennte Umgebungen erstellen, die bestimmten Teams oder Abteilungen im Unternehmen entsprechen und die jeweils relevanten Daten und Apps für die verschiedenen Zielgruppen enthalten.
-4. Darüber hinaus können Sie separate Umgebungen für verschiedene Niederlassungen Ihres Unternehmens in der Welt erstellen.  
+* Sie können sich entscheiden, Ihre Apps in nur einer Umgebung zu erstellen.
+* Sie können aber auch getrennte Umgebungen erstellen, um die Test- und Produktionsversionen Ihrer Apps zusammenzufassen.
+* Sie können getrennte Umgebungen erstellen, die bestimmten Teams oder Abteilungen im Unternehmen entsprechen und die jeweils relevanten Daten und Apps für die verschiedenen Zielgruppen enthalten.
+* Darüber hinaus können Sie separate Umgebungen für verschiedene Niederlassungen Ihres Unternehmens in der Welt erstellen.  
 
 ## <a name="environment-scope"></a>Umgebungsumfang
 Jede Umgebung wird unter einem Azure AD-Mandanten erstellt, und nur Benutzer dieses Mandanten können auf ihre Ressourcen zugreifen. Eine Umgebung ist auch an einen geografischen Ort gebunden, wie etwa die USA. Wenn Sie eine App in einer Umgebung erstellen, wird diese App nur zu Rechenzentren am betreffenden geografischen Ort geroutet. Alle Elemente, die Sie in einer Umgebung erstellen (einschließlich Verbindungen, Gateways, Workflows mithilfe von Microsoft Flow und mehr), sind ebenfalls an den Standort ihrer Umgebung gebunden.
@@ -45,13 +45,14 @@ Umgebungen weisen zwei integrierte Rollen auf, die Zugriff auf die Berechtigunge
 
 * Die Umgebungsadministratorrolle kann alle Administratoraktionen in einer Umgebung ausführen, darunter:
   
-  o   Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
+    * Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
   
-  o   Bereitstellen einer Common Data Service-Datenbank für die Umgebung
+    * Bereitstellen einer Common Data Service-Datenbank für die Umgebung
   
-  o   Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
+    * Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
   
-  o Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
+    * Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
+
 * Die Umgebungserstellerrolle kann Ressourcen innerhalb einer Umgebung erstellen, einschließlich Apps, Verbindungen, benutzerdefinierter Connectors, Gateways und Workflows mithilfe von Microsoft Flow.
 
 Umgebungsersteller können außerdem die von ihnen erstellten Apps an andere Benutzer in der Organisation verteilen, indem sie die Apps für einzelne Benutzer, Sicherheitsgruppen oder alle Benutzer in der Organisation freigeben. Weitere Informationen finden Sie unter [Freigeben von Apps in PowerApps](share-app.md).
@@ -79,9 +80,9 @@ Mit der Einführung von Umgebungen bietet sich Ihnen jetzt auf [https://web.powe
 
 Eine Umgebung wird in Ihrer Auswahlliste angezeigt, wenn Sie eine der folgenden Bedingungen erfüllen:
 
-1. Sie sind Mitglied der Umgebungsadministratorrolle für die Umgebung.
-2. Sie sind Mitglied der Umgebungserstellerrolle für die Umgebung.
-3. Sie sind weder Umgebungsadministrator noch Umgebungsersteller der Umgebung, Ihnen wurde aber Zugriff als ‚Mitwirkender‘ zu mindestens einer App in der Umgebung erteilt. Weitere Informationen finden Sie unter [Freigeben von Apps](share-app.md). **Hinweis**: In diesem Fall sind Sie nicht imstande, in dieser Umgebung Apps zu erstellen. Sie können nur die vorhandenen Apps ändern, die für Sie freigegeben wurden.
+* Sie sind Mitglied der Umgebungsadministratorrolle für die Umgebung.
+* Sie sind Mitglied der Umgebungserstellerrolle für die Umgebung.
+* Sie sind weder Umgebungsadministrator noch Umgebungsersteller der Umgebung, Ihnen wurde aber Zugriff als ‚Mitwirkender‘ zu mindestens einer App in der Umgebung erteilt. Weitere Informationen finden Sie unter [Freigeben von Apps](share-app.md). In diesem Fall können Sie in dieser Umgebung keine Apps erstellen. Sie können nur die vorhandenen Apps ändern, die für Sie freigegeben wurden.
 
 ![](./media/environments-overview/EnvironmentPicker.png)
 
@@ -109,9 +110,9 @@ Neue Umgebungen können auf [PowerApps.com][2] und im [PowerApps Admin Center][1
 ## <a name="what-will-change-for-powerapps-preview-users"></a>Was ändert sich für Benutzer der PowerApps-Vorschau?
 Benutzer, die an der PowerApps-Vorschau teilgenommen haben, werden mit der Einführung von Umgebungen einige Änderungen an der Benutzeroberfläche feststellen.  In der folgenden Tabelle ist aufgelistet, was sich für Benutzer in den USA und Benutzer außerhalb der USA ändert:
 
-| Benutzer | Abläufe |
+| User | Abläufe |
 | --- | --- |
-| Benutzer der Vorschau, die eine Common Data Service-Datenbank erstellt haben |Sie sehen eine Umgebung mit der Bezeichnung „{Ihr Name}s Umgebung“, die Ihre Common Data Service-Datenbank aus der Vorschau und alle darauf aufbauenden Apps enthält.  Sie werden der Umgebungserstellerrolle und der Umgebungsadministratorrolle für die Umgebung und als Datenbankbesitzer der Datenbank hinzugefügt. Mit dem Erreichen der allgemeinen Verfügbarkeit von PowerApps nehmen wir ein Upgrade der Metadaten des Common Data Service vor. Diese Änderung wirkt sich für Sie so aus, dass Sie nach wie vor Entitäten und Apps verwenden können, die Sie bereits auf der Common Data Service-Datenbank aus der Vorschau erstellt haben; Sie können in dieser Datenbank jedoch keine Felder oder Entitäten mehr erstellen. Wir veröffentlichen in Kürze Anleitungen zum Erstellen einer Umgebung mit einer Datenbank, die die Metadaten mit Upgrade enthält, und zum Migrieren Ihrer Apps in diese Umgebung.<br>**Hinweis**: Wenn eine der Apps, die auf Ihrer Common Data Service-Datenbank aus der Vorschau aufbaut, außerdem einen benutzerdefinierten Connector als Datenquelle verwendet, ist sie vorübergehend in dieser Umgebung nicht funktionsfähig, da alle benutzerdefinierten Connectors zur Standardumgebung migriert werden. Sie müssen den benutzerdefinierten Connector in dieser Umgebung neu erstellen, um betroffene Apps zu reparieren. |
+| Benutzer der Vorschau, die eine Common Data Service-Datenbank erstellt haben |Sie sehen eine Umgebung mit der Bezeichnung „{Ihr Name}s Umgebung“, die Ihre Common Data Service-Datenbank aus der Vorschau und alle darauf aufbauenden Apps enthält.  Sie werden der Umgebungserstellerrolle und der Umgebungsadministratorrolle für die Umgebung und als Datenbankbesitzer der Datenbank hinzugefügt. Mit dem Erreichen der allgemeinen Verfügbarkeit von PowerApps nehmen wir ein Upgrade der Metadaten des Common Data Service vor. Diese Änderung wirkt sich für Sie so aus, dass Sie nach wie vor Entitäten und Apps verwenden können, die Sie bereits auf der Common Data Service-Datenbank aus der Vorschau erstellt haben; Sie können in dieser Datenbank jedoch keine Felder oder Entitäten mehr erstellen. Wir veröffentlichen in Kürze Anleitungen zum Erstellen einer Umgebung mit einer Datenbank, die die Metadaten mit Upgrade enthält, und zum Migrieren Ihrer Apps in diese Umgebung. <br> Wenn eine der Apps, die auf Ihrer Common Data Service-Datenbank aus der Vorschau aufbaut, außerdem einen benutzerdefinierten Connector als Datenquelle verwendet, ist sie vorübergehend in dieser Umgebung nicht funktionsfähig, da alle benutzerdefinierten Connectors zur Standardumgebung migriert werden. Sie müssen den benutzerdefinierten Connector in dieser Umgebung neu erstellen, um betroffene Apps zu reparieren. |
 | Benutzer der Vorschau in den USA |Die folgenden Ressourcen, die Sie im Vorschauzeitraum von PowerApps erstellt haben, stehen in der Standardumgebung Ihres Mandanten zur Verfügung:<br>– Alle Apps, die Sie erstellt haben (mit Ausnahme der Apps, die eine Verbindung mit einer Common Data Service-Datenbank aus der Vorschau herstellen)<br>– Alle von Ihnen erstellten Verbindungen und benutzerdefinierten Connectors<br>– Alle von Ihnen installierten lokalen Datengateways |
 | Benutzer der Vorschau außerhalb der USA |Über die Standardumgebung hinaus sehen Sie eine Umgebung mit der Bezeichnung „{Azure AD-Mandant} (aus Vorschau)“, die folgende Ressourcen enthält, die Sie im Vorschauzeitraum von PowerApps erstellt haben:<br>– Alle Apps, die Sie erstellt haben (mit Ausnahme der Apps, die eine Verbindung mit einer Common Data Service-Datenbank aus der Vorschau herstellen)<br>– Alle von Ihnen erstellten Verbindungen und benutzerdefinierten Connectors<br>– Alle von Ihnen installierten lokalen Datengateways<br>Sie werden der Umgebungserstellerrolle dieser Umgebung hinzugefügt. |
 

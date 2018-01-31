@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/21/2017
 ms.author: sharik
-ms.openlocfilehash: 62f46339e2136494225bf218d372f539c389e1ad
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8ac8fb34f9cdeb0c9e0ce6172938cef33ecccbc5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Generieren einer App aus SharePoint mit PowerApps
-[!VIDEO nb:cid:UUID:639d7eaf-bae5-447c-a34b-ec539a01a15c]
+
 
 
 In PowerApps wird eine App automatisch generiert, in der Benutzer Elemente aus einer benutzerdefinierten SharePoint Online-Liste verwalten können. Die App wird drei Bildschirme haben, auf denen Benutzer Folgendes können:
@@ -33,7 +33,8 @@ In PowerApps wird eine App automatisch generiert, in der Benutzer Elemente aus e
 
 Wenn Sie eine App über die SharePoint Online-Befehlszeile aus einer benutzerdefinierten Liste erstellen, ist die App eine Ansicht dieser Liste. Sie können die App außer im Webbrowser auch auf einem Windows Phone-, iOS- oder Android-Gerät ausführen.
 
-**Wichtig**: PowerApps unterstützt nicht alle Typen von SharePoint-Daten. Weitere Informationen finden Sie unter [Known issues (Bekannte Probleme)](connections/connection-sharepoint-online.md#known-issues).
+> [!IMPORTANT]
+> PowerApps unterstützt nicht alle Typen von SharePoint-Daten. Weitere Informationen finden Sie unter [Known issues (Bekannte Probleme)](connections/connection-sharepoint-online.md#known-issues).
 
 ## <a name="generate-an-app"></a>Eine App generieren
 1. Öffnen Sie eine benutzerdefinierte Liste in SharePoint Online, klicken oder tippen Sie auf **PowerApps** in der Befehlszeile, und klicken oder tippen Sie anschließend auf **App erstellen**.
@@ -48,7 +49,8 @@ Wenn Sie eine App über die SharePoint Online-Befehlszeile aus einer benutzerdef
     ![](./media/generate-app-from-sharepoint-list-interface/powerapp-studio-for-web.png)  
 3. Klicken oder tippen Sie für Ihre SharePoint-Liste auf die Registerkarte des Browsers, und klicken oder tippen Sie anschließend auf **Öffnen**.
    
-    **Hinweis**: Möglicherweise müssen Sie das Browserfenster aktualisieren (z.B. durch Drücken von F5), bevor die App sich öffnet.
+    > [!NOTE]
+> Möglicherweise müssen Sie das Browserfenster aktualisieren (z.B. durch Drücken von F5), bevor die App sich öffnet.
    
     ![](./media/generate-app-from-sharepoint-list-interface/open-app-in-browser.png)
    

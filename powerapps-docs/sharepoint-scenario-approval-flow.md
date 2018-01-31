@@ -13,16 +13,17 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/09/18
 ms.author: mblythe
-ms.openlocfilehash: 5fd4448eba2429dc7bd5027327b132c1b0ff5dd8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4af1571bb72c713c6186f5237d6b3791eb95808b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Erstellen eines Flows zum Verwalten von Projektgenehmigungen
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In dieser Aufgabe erstellen wir einen Flow für das Genehmigen von Projekten. Microsoft Flow ist in SharePoint integriert, daher ist es einfach, einen Flow direkt aus einer Liste zu erstellen. Der Flow, den wir erstellen, wird ausgelöst, wenn der Liste **Project Requests** (Projektanforderungen) ein Element hinzugefügt wird. Der Flow sendet eine E-Mail an den Projektgenehmiger, der die Anforderung direkt in der E-Mail genehmigt oder ablehnt. Anschließend sendet der Flow eine Genehmigungs- oder Ablehnungs-E-Mail an den Projektanforderer und aktualisiert die SharePoint-Listen entsprechend.
 
@@ -123,25 +124,33 @@ Standardmäßig wird mit dieser Verzweigung eine Ablehnungs-E-Mail an den Anford
 8. Geben Sie im Feld **Approved** (Genehmigt) „Nein“ ein. Dieser Teil des Flows sollte jetzt wie in der folgenden Abbildung aussehen.
    
     ![Listenaktualisierung](./media/sharepoint-scenario-approval-flow/03-01-08-no-update-complete.png)
-9. Klicken oder tippen Sie am rechten oberen Rand des Bildschirms auf **Flow erstellen** und anschließend auf **Fertig**.
-   
-    ![Schaltfläche „Fertig“](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+9. Klicken oder tippen Sie am rechten oberen Rand des Bildschirms auf **Flow erstellen**.
    
     Der Flow ist jetzt abgeschlossen, und er sollte wie in der folgenden Abbildung aussehen, wenn Sie die Felder reduzieren.
    
     ![Abgeschlossener Flow](./media/sharepoint-scenario-approval-flow/03-01-16-flow-complete.png)
 
+10. Klicken oder tippen Sie am rechten oberen Rand des Bildschirms auf **Fertig**.
+   
+    ![Schaltfläche „Fertig“](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
+
 ## <a name="step-4-run-the-approval-flow"></a>Schritt 4: Ausführen des Genehmigungsflows
 1. Klicken Sie in der Liste **Project Requests** (Projektanforderungen) auf **QuickEdit**, und fügen Sie das folgende Element hinzu:
    
    * **Title** = "New monitor for Megan" (Neuer Monitor für Megan)
-   * **Approved** = "Pending" (Ausstehend)
+
    * **Description** = "Megan needs a 24" monitor" (Megan benötigt einen 24"-Monitor)
-   * **EstimatedDays** = "1"
+
    * **ProjectType** = "New hardware"
+
    * **RequestDate** = "02/03/2017"
+
    * **Requestor** = "Megan Bowen"
-     
+
+   * **EstimatedDays** = "1"
+
+   * **Approved** = "Pending" (Ausstehend)
+
      ![Der Liste hinzugefügtes Element](./media/sharepoint-scenario-approval-flow/03-02-01-list-add.png)
 2. Klicken Sie am oberen Rand der Seite auf **Fertig**, wenn Sie den Vorgang abgeschlossen haben.
    

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/02/2016
 ms.author: archanan
-ms.openlocfilehash: eda1a7ddc5cdebf3eeffc22ce20efb33b318f890
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 28d4895da2d7d9bb871fdd2d803b2c6dad7874a1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Herstellen einer Verbindung mit Excel aus PowerApps
 ![Excel](./media/connection-excel/excelicon.png)
@@ -31,12 +31,13 @@ Excel stellt eine *Art von Verbindung* dar. So zeigen Sie Excel-Daten in Ihrer A
 3. [Stellen Sie eine Verbindung mit dem Cloudspeicherkonto her](../add-manage-connections.md), und fügen Sie anschließend die Excel-Tabelle als Datenquelle hinzu.
 4. Zeigen Sie diese Informationen in der App an, indem Sie [automatisch eine App generieren](../get-started-create-from-data.md) oder indem Sie beispielsweise ein **Katalog**-Steuerelement hinzufügen und konfigurieren.
 
-Hinweis: Nachdem Sie die Excel-Tabelle in PowerApps erstellt haben, wird für jede Zeile der Excel-Tabelle eine neue Spalte mit dem Namen **\_*PowerAppsId_*** mit einer eindeutigen ID erstellt.
+> [!NOTE]
+> Nachdem Sie die Excel-Tabelle in PowerApps erstellt haben, wird für jede Zeile der Excel-Tabelle eine neue Spalte mit dem Namen **\_*PowerAppsId_*** mit einer eindeutigen ID erstellt.
 
 In [Übersicht über die Cloudspeicherverbindung](cloud-storage-blob-connections.md) wird veranschaulicht, wie Sie die Verbindung hinzufügen, eine Excel-Tabelle als Datenquelle hinzufügen und die Excel-Daten in der App verwenden.
 
 Weitere Informationen zum Herstellen von Verbindungen mit anderen Datentypen finden Sie in der [Liste der Verbindungen für PowerApps](../connections-list.md).
 
-## <a name="known-limitations"></a>Bekannte Einschränkungen
+### <a name="known-limitations"></a>Bekannte Einschränkungen
 Weitere Informationen zum Freigeben von Excel-Daten in Ihrer Organisation erhalten Sie in diesen [Ausführungen zu Einschränkungen](cloud-storage-blob-connections.md#sharing-excel-tables).
 

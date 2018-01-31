@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2016
 ms.author: jamesol
-ms.openlocfilehash: 661483b6d240785f2945011005b4e552e04ac075
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 3ea0d8a3f10a1b9dad7641c1291bae3aef40000a
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="powerapps-in-your-organization-qa"></a>PowerApps in your organization Q&A (PowerApps in Ihrer Organisation Q&A)
 In diesem Thema wird beschrieben, wie Benutzer in Ihrer Organisation PowerApps verwenden können und wie Sie den PowerApps-Dienst steuern können.
@@ -65,9 +65,13 @@ Lesen Sie den folgenden Abschnitt, wenn Sie die PowerApps-Kachel standardmäßig
 Wenn einem Benutzer eine Lizenz für PowerApps Plan 1 oder PowerApps Plan 2 zugewiesen wurde, können Sie die folgenden Schritte ausführen, um die PowerApps-Lizenz für diesen Benutzer zu entfernen:
 
 1. Wechseln Sie zum [Office 365-Verwaltungsportal](https://portal.microsoftonline.com/).
+
 2. Wählen Sie in der linken Navigationsleiste **Benutzer** und dann **Aktive Benutzer** aus.
+
 3. Suchen Sie den Benutzer, dessen Lizenz entfernt werden soll, und wählen Sie dann dessen Namen aus.
+
 4. Klicken Sie im Benutzerdetailbereich im Abschnitt **Produktlizenzen** auf **Bearbeiten**.
+
 5. Suchen Sie die Lizenz **Microsoft PowerApps Plan 1** oder **Microsoft PowerApps Plan 2**, setzen Sie die Umschaltfläche auf **Deaktiviert**, und klicken Sie dann auf **Speichern**.
    
     ![](./media/signup-question-and-answer/remove-license.png)
@@ -75,9 +79,13 @@ Wenn einem Benutzer eine Lizenz für PowerApps Plan 1 oder PowerApps Plan 2 zuge
 Wenn ein Benutzer über eine Lizenz für die Office 365- und Dynamics 365-Pläne auf PowerApps zugreifen kann, können Sie dessen Zugriff auf den PowerApps-Dienst mit folgenden Schritten deaktivieren:
 
 1. Wechseln Sie zum [Office 365-Verwaltungsportal](https://portal.microsoftonline.com/).
+
 2. Wählen Sie in der linken Navigationsleiste **Benutzer** und dann **Aktive Benutzer** aus.
+
 3. Suchen Sie den Benutzer, dessen Zugriff entfernt werden soll, und wählen Sie dann dessen Namen aus.
+
 4. Klicken Sie im Benutzerdetailbereich im Abschnitt **Produktlizenzen** auf **Bearbeiten**.
+
 5. Erweitern Sie die Benutzerlizenz für Office 365 oder Dynamics 365, deaktivieren Sie den Zugriff auf den Dienst **PowerApps für Office 365** oder **PowerApps für Dynamics 365** und klicken Sie dann auf **Speichern**.
    
     ![](./media/signup-question-and-answer/remove-service-plan.png)
@@ -93,7 +101,7 @@ Durch das Entfernen der Lizenz oder des Diensts von PowerApps für einen Benutze
   
     ![](./media/signup-question-and-answer/office-waffle.png)
 
-### <a name="how-can-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>Wie kann ich den Zugriff meiner Benutzer auf Geschäftsdaten meiner Organisation mit PowerApps einschränken?
+### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data-using-powerapps"></a>Wie kann ich den Zugriff meiner Benutzer auf Geschäftsdaten meiner Organisation mit PowerApps einschränken?
 Mit PowerApps können Sie Datenzonen für geschäftliche und geschäftsfremde Daten wie unten dargestellt erstellen.  Sobald diese Richtlinien zur Verhinderung von Datenverlust implementiert wurden, können Benutzer keine PowerApps mehr entwerfen oder ausführen, die geschäftliche und geschäftsfremde Daten kombinieren. Weitere Informationen finden Sie unter [Data loss prevention (DLP) policies (Richtlinien zur Verhinderung von Datenverlust (DLP))](prevent-data-loss.md).
 
 ![](./media/signup-question-and-answer/data-loss-prevention-policy.png)
@@ -129,7 +137,8 @@ Wenn ein Mandant von Microsoft erstellt wurde, können Sie diesen Mandanten mith
 4. Wählen Sie oben links das App-Startprogramm-Symbol und dann den Administrator aus.
 5. Lesen Sie die Anweisungen auf der Seite **Become the admin** (Administrator werden), und wählen Sie dann **Yes, I want to be the admin**  (Ja, ich möchte Administrator werden) aus.  
 
-**HINWEIS**: Wenn diese Option nicht angezeigt wird, ist bereits ein Office 365-Administrator vorhanden.
+> [!NOTE]
+> Wenn diese Option nicht angezeigt wird, ist bereits ein Office 365-Administrator vorhanden.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Wenn ich über mehrere Domänen verfüge, kann ich dann den Office 365-Mandanten steuern, zu dem Benutzer hinzugefügt werden?
 Wenn Sie weiter nichts unternehmen, wird ein Mandant für jede Benutzer-E-Mail-Domäne und -Unterdomäne erstellt.
@@ -138,5 +147,6 @@ Wenn sich alle Benutzer unabhängig von ihren E-Mail-Adresserweiterungen im selb
 
 * Erstellen Sie einen Zielmandanten im Voraus, oder verwenden Sie einen vorhandenen Mandanten. Fügen Sie alle vorhandenen Domänen und Unterdomänen hinzu, die in diesem Mandanten konsolidiert werden sollen. Dann treten alle Benutzer, deren E-Mail-Adressen auf diese Domänen und Subdomänen enden, bei der Registrierung automatisch dem Zielmandanten bei.
 
-**WICHTIG**: Es gibt keine automatisierten Verfahren zum Verschieben von Benutzern zwischen Mandanten nach der Erstellung. Wie Sie Domänen zu einem einzelnen Office 365-Mandanten hinzufügen können, erfahren Sie unter [Hinzufügen von Benutzern und der Domäne mit dem Setup-Assistenten](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+> [!IMPORTANT]
+> Es gibt keine automatisierten Verfahren zum Verschieben von Benutzern zwischen Mandanten nach der Erstellung. Wie Sie Domänen zu einem einzelnen Office 365-Mandanten hinzufügen können, erfahren Sie unter [Hinzufügen von Benutzern und der Domäne mit dem Setup-Assistenten](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 

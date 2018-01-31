@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e3eac64ddfc7c4e029c970367b81331722985861
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 40cc6703b2f3467365b6fab36e390fa9ff0f1659
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funktionen „Average“, „Max“, „Min“, „StdevP“, „Sum“ und „VarP“ in PowerApps
 Aggregatfunktionen, die eine Menge von Zahlen zusammengefassten
@@ -42,7 +42,7 @@ Sie können die Werte für diese Funktionen angeben als:
 * getrennte Argumente. **Sum (1, 2, 3)** beispielsweise gibt den Wert 6 zurück.
 * eine [Tabelle](../working-with-tables.md) und eine Formel, die die Tabelle verarbeitet.  Das Aggregat wird anhand der Werte der Formel für jeden [Datensatz](../working-with-tables.md#records) berechnet.  
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../includes/record-scope.md)]
 
 Diese Funktionen verarbeiten nur numerische Werte. Andere Typen von Werten wie Zeichenfolgen oder Datensätze werden ignoriert. Verwenden Sie die  **[Value](function-value.md)**-Funktion zum Konvertieren einer Zeichenfolge in eine Zahl.
 

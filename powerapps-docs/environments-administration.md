@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/11/2017
 ms.author: jamesol
-ms.openlocfilehash: 1eeb79d0c109181ae75b86a78cecdb4babe058ab
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f26c97681a4af40e042d1c943e108a424861f810
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="environments-administration-in-powerapps"></a>Verwaltung von Umgebungen in PowerApps
 Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, und Umgebungen, denen Sie in der Rolle „Umgebungsadministrator“ hinzugefügt wurden, verwalten. Über das Admin Center können Sie folgende administrative Aktionen ausführen:
@@ -35,19 +35,22 @@ Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, u
 ## <a name="access-the-powerapps-admin-center"></a>Zugriff auf das PowerApps Admin Center
 So greifen Sie auf das PowerApps Admin Center zu:
 
-* Gehen Sie direkt auf [admin.powerApps.com][1] oder
-* wechseln Sie zu [powerApps.com][2], und wählen Sie anschließend das Zahnradsymbol im Header „Navigation“
+* Gehen Sie direkt auf [admin.powerapps.com][1] oder
+
+* wechseln Sie zu [powerapps.com][2], und wählen Sie anschließend das Zahnradsymbol im Header „Navigation“ aus.
   
     ![](./media/environment-admin/powerapps-gear-dropdown.png)
 
 Sie müssen folgende Rolle aufweisen, um eine Umgebung im PowerApps Admin Center verwalten zu können:
 
 * die Umgebungsadministratorrolle der Umgebung oder
-* die globale Administratorrolle Ihres Azure AD- oder Office 365-Mandanten
+
+* die globale Administratorrolle Ihres Azure AD- oder Office 365-Mandanten.
 
 Sie benötigen auch PowerApps Plan 2 oder Flow Plan 2, um auf das Admin Center zugreifen zu können. Weitere Informationen finden Sie auf der [Seite mit den PowerApps-Preisen][3].
 
-**Wichtig**: Änderungen, die Sie im PowerApps Admin Center vornehmen, wirken sich auf das [Flow Admin Center][4] aus und umgekehrt.
+> [!IMPORTANT]
+> Änderungen, die Sie im PowerApps Admin Center vornehmen, wirken sich auf das [Flow Admin Center][4] aus und umgekehrt.
 
 ## <a name="create-an-environment"></a>Erstellen einer Umgebung
 Klicken Sie zunächst **+ New Environment** (Neue Umgebung), und es öffnet sich ein Dialogfeld zum Erstellen einer Umgebung.
@@ -120,18 +123,20 @@ Wenn eine Umgebung noch nicht über eine Datenbank verfügt, kann ein Umgebungsa
 Nachdem Sie eine Datenbank erstellt haben, wählen Sie ein Sicherheitsmodell aus. Weitere Informationen finden Sie unter [Konfigurieren von Datenbanksicherheit](database-security.md).
 
 ## <a name="manage-security-for-your-environments"></a>Verwalten der Sicherheit für Ihre Umgebungen
+
 ### <a name="environment-permissions"></a>Umgebungsberechtigungen
 Alle Benutzer in einer Umgebung im Azure AD-Mandanten sind Benutzer dieser Umgebung. Wenn diesen jedoch eine privilegiertere Rolle zugewiesen werden soll, müssen Sie in eine entsprechende Umgebungsrolle eingefügt werden. Umgebungen weisen zwei integrierte Rollen auf, die Zugriff auf die Berechtigungen in einer Umgebung bieten:
 
 * Die **Umgebungsadministratorrolle** kann alle Administratoraktionen in einer Umgebung ausführen, darunter z.B.:
   
-  o   Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
+    * Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen.
   
-  o   Bereitstellen einer Common Data Service-Datenbank für die Umgebung
+    * Bereitstellen einer Common Data Service-Datenbank für die Umgebung.
   
-  o   Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
+    * Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen.
   
-  o Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
+    * Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
+
 * **Die Umgebungserstellerrolle** kann Ressourcen innerhalb einer Umgebung erstellen, einschließlich Apps, Verbindungen, benutzerdefinierter Connectors, Gateways und Workflows mithilfe von Microsoft Flow. Umgebungsersteller können auch die Apps, die sie in einer Umgebung erstellt haben, an andere Benutzer in Ihrer Organisation verteilen. Sie können die App für einzelne Benutzer, Sicherheitsgruppen oder alle Benutzer in der Organisation freigeben. Weitere Informationen finden Sie unter [Freigeben von Apps in PowerApps](share-app.md).
 
 Ein Umgebungsadministrator kann folgende Schritte im [PowerApps Admin Center][1] durchführen, um einem Benutzer oder einer Sicherheitsgruppe eine Umgebungsrolle zuzuweisen:

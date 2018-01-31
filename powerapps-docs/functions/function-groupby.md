@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: a3f2698eb0df8861bccf3221f53f5458f6e1b307
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7f7a3f1add6f91d920ed38308e577d14386f81ec
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>GroupBy- und Ungroup-Funktionen in PowerApps
 Gruppiert und hebt die Gruppierung von [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) auf.
@@ -52,14 +52,16 @@ Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahle
 * *ColumnName(s)*: erforderlich.  Die Spaltennamen der *Tabelle* für die Gruppierung der Datensätze.  Diese Spalten werden in der Ergebnistabelle zu Spalten.
 * *GruppenSpaltenName*: erforderlich.  Der Spaltenname für die Speicherung von Datensatzdaten, die nicht in *SpaltenName(n)* enthalten sind.
   
-    **Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_X0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+    > [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 **Ungroup**( *Tabelle*, *GruppenSpaltenName* )
 
 * *Table*: erforderlich. Tabelle, deren Gruppierung aufgehoben werden soll.
 * *GruppenSpaltenName*: erforderlich. Die Spalte mit dem Datensatzdaten-Setup mit der **GroupBy**-Funktion.
   
-    **Hinweis:** Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_X0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+    > [!NOTE]
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="create-a-collection"></a>Sammlung erstellen

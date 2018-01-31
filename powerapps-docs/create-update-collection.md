@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: f0fc171930e190e9530782ee93b27644e36a5978
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c77ce03c92925225f8b16bd1d3bbb7083749cc9
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Erstellen und Aktualisieren einer Sammlung in Ihrer App
 Verwenden Sie eine Sammlung zum Speichern von Daten, die in Ihrer App verwendet werden können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen. Erstellen Sie beispielsweise eine MyImages-Sammlung mit den Abbildungen aller Produkte, die Ihr Unternehmen verkauft. In PowerApps können Sie Ihre MyImages-Sammlung hinzufügen und eine App erstellen, in der alle Abbildungen dieser Produkte angezeigt werden. Sie können aber z.B. auch eine PriceList-Sammlung erstellen, die die Produkte und Preise für jedes Produkt enthält.
@@ -85,14 +85,16 @@ Die folgenden Schritte zeigen Ihnen, wie Sie mithilfe der Collect-Funktion in Ih
 5. Verschieben Sie die Steuerelemente „City“ und „States“ und Bundesstaaten so, dass sie beide angezeigt werden können:  
    ![][10]  
    
-    **Hinweis**: Sie können „Text Input“ durch Begriffe wie „City“ oder „States“ ersetzen, wie aus der Abbildung ersichtlich.  
+    > [!NOTE]
+> Sie können „Text Input“ durch Begriffe wie „City“ oder „States“ ersetzen, wie aus der Abbildung ersichtlich.  
 6. Wählen Sie auf der Registerkarte **Insert** (Einfügen) die Option **Button** (Schaltfläche) aus. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft auf die folgende Funktion fest:  
    ```Collect(Destinations, {Cities:City!Text, States:States!Text})```  
    
     Es sollte wie folgt aussehen:  
     ![][11]  
    
-    **Hinweis**: Mit dieser Funktion können Sie der Sammlung auch zusätzliche Spalten hinzufügen. Beispielsweise können Sie für „Country“ (Land) ein weiteres Texteingabe-Steuerelement hinzufügen, um eine Spalte für Länder hinzuzufügen:
+    > [!NOTE]
+> Mit dieser Funktion können Sie der Sammlung auch zusätzliche Spalten hinzufügen. Beispielsweise können Sie für „Country“ (Land) ein weiteres Texteingabe-Steuerelement hinzufügen, um eine Spalte für Länder hinzuzufügen:
    
     `Collect(Destinations, {Cities:City!Text, States:States!Text}, {Countries:Country!Text})`
 7. Benennen Sie das Schaltflächen-Steuerelement **AddCityStateButton** um, und legen Sie seine **[Text](controls/properties-core.md)**-Eigenschaft auf **Add City and State** (Stadt und Bundesstaat hinzufügen) fest:  
@@ -114,7 +116,7 @@ Die folgende Anleitung besteht aus mehreren Abschnitten. Wenn Sie die einzelnen 
 ### <a name="import-the-price-list-and-create-the-collection"></a>Importieren der Preisliste und Erstellen der Sammlung
 1. Laden Sie die [PriceList](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip)-Zip-Datei herunter.
 2. Fügen Sie auf der Registerkarte **Home** einen neuen Bildschirm hinzu.
-3. Wählen Sie auf der Registerkarte **Insert** (Einfügen) die Option **Controls** (Steuerelemente) und anschließend **Import** (Importieren) aus.  
+3. Wählen Sie auf der Registerkarte **Einfügen** die Option **Steuerelemente** und anschließend **Importieren** aus:  
    ![][14]  
 4. Wählen Sie auf der Registerkarte **Action** (Aktion) die Option **OnSelect** aus. Geben Sie die folgende Funktion ein:  
    
@@ -154,7 +156,8 @@ Die folgende Anleitung besteht aus mehreren Abschnitten. Wenn Sie die einzelnen 
    
     ```Collect(OrderList, {Name:PriceGallery!Selected!Name, Qty:OrderQty!Value, Cost:OrderQty!Value*LookUp(PriceList, PriceGallery!Selected!Name in Name, Price)});SaveData(OrderList, "orderfile")```  
    
-    **Hinweis**: Wenn Sie diese Schaltfläche im weiteren Verlauf dieser Prozedur auswählen, erstellen und speichern Sie eine Sammlung mit dem Namen **OrderList**. Die Sammlung enthält den Namen des Produkts, das Sie im Katalog eingeben, die Menge, die Sie mit dem Schieberegler auswählen, und die Gesamtkosten, die sich durch die Multiplikation der Menge mit dem Preis des Produkts ergeben.
+    > [!NOTE]
+> Wenn Sie diese Schaltfläche im weiteren Verlauf dieser Prozedur auswählen, erstellen und speichern Sie eine Sammlung mit dem Namen **OrderList**. Die Sammlung enthält den Namen des Produkts, das Sie im Katalog eingeben, die Menge, die Sie mit dem Schieberegler auswählen, und die Gesamtkosten, die sich durch die Multiplikation der Menge mit dem Preis des Produkts ergeben.
 4. Wählen Sie die Registerkarte **Screen** (Bildschirm) aus, und legen Sie die **[OnVisible](controls/control-screen.md)**-Eigenschaft auf den folgenden Ausdruck fest:  
    
     ```If(IsEmpty(PriceList), LoadData(PriceList, "pricefile"));If(IsEmpty(OrderList), LoadData(OrderList, "orderfile"))```

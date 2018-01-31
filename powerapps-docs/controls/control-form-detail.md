@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 4121593bb34fe135262d925ae6c9f381d0fcd9f7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e8234526c73f6d55494334a386e8dbd7442c8d62
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
@@ -60,7 +60,8 @@ Wenn die Daten die Überprüfung durchlaufen haben, übermittelt die **[SubmitFo
 
 Einige Datenquellen erkennen, wenn zwei Personen den gleichen Datensatz gleichzeitig zu aktualisieren versuchen. In diesem Fall wird **ErrorKind** auf **ErrorKind.Conflict** festgelegt. Das Problem wird gelöst, indem die Datenquelle mit den Änderungen des anderen Benutzers aktualisiert wird und dann die Änderungen des ersten Benutzers erneut angewandt werden.
 
-**Tipp:** Wenn Sie eine **Abbrechen**-Schaltfläche in einem Formular verwenden, sodass Benutzer Änderungen verwerfen können, fügen Sie die **[ResetForm](../functions/function-form.md)**-Eigenschaft zur **[OnSelect](properties-core.md)**-Eigenschaft der Schaltfläche hinzu, auch wenn die Eigenschaft die **[Navigate](../functions/function-navigate.md)**-Funktion zum Wechseln zwischen Bildschirmen enthält. Andernfalls werden die Änderungen des Benutzers nicht verworfen.
+> [!TIP]
+> Wenn Sie eine **Abbrechen**-Schaltfläche in einem Formular verwenden, sodass Benutzer Änderungen verwerfen können, fügen Sie die **[ResetForm](../functions/function-form.md)**-Eigenschaft zur **[OnSelect](properties-core.md)**-Eigenschaft der Schaltfläche hinzu, auch wenn die Eigenschaft die **[Navigate](../functions/function-navigate.md)**-Funktion zum Wechseln zwischen Bildschirmen enthält. Andernfalls werden die Änderungen des Benutzers nicht verworfen.
 
 ### <a name="layout"></a>Layout
 Karten werden standardmäßig bei Smartphone-Apps in einer Spalte und bei Tablet-Apps in drei Spalten platziert. Sie können beim Konfigurieren des Formulars angeben, wie viele Spalten ein Formular haben soll und ob Karten an diesen ausgerichtet werden sollen. Diese Einstellungen werden nicht als Eigenschaften verfügbar gemacht, da sie nur verwendet werden, um die Eigenschaften **X**, **Y** und **Width** der Karten festzulegen.

@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 064ff0778cbc02a81fb64214dbed64f32c04aa15
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4e5c34c557e165625c23e78f86e5cbb1c0faacba
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Vollständige exemplarische Vorgehensweise für das komplette Szenario der SharePoint Online-Integration
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt, vom Erstellen von Apps und Flows bis zum Erstellen von Berichten und dem Einbetten dieser Berichte in SharePoint. Wir hoffen, dass Sie viel gelernt haben und jetzt auch wissen, wie diese Technologien ineinandergreifen, sodass Sie Apps, Flows und Berichte entsprechend Ihren Anforderungen in SharePoint integrieren können. Vor dem Abschluss dieser Reihe möchten wir das Szenario vollständig durchgehen und betrachten, wie alle Teile zusammenwirken.
 
@@ -37,11 +38,17 @@ Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt,
 4. Füllen Sie das Formular mit den folgenden Werten aus:
    
    * **Title** = "Mobile devices for design team" (Mobile Geräte für das Entwurfsteam)
+
    * **Approved** = "Pending" (Ausstehend)
+
    * **Description** = "The design team will now use Contoso-supplied devices" (Das Entwurfsteam verwendet jetzt von Contoso bereitgestellte Geräte)
+
    * **EstimatedDays** = "30"
+
    * **ProjectType** = "New hardware"
+
    * **RequestDate** = "03/01/2017"
+
    * **Requestor** = "Emily Braun"
      
      ![Bearbeitungsformular für Projektanforderungen](./media/sharepoint-scenario-summary/09-01-01-app-new.png)
@@ -100,8 +107,11 @@ Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt,
 4. Legen Sie im Bildschirm **Update Details** (Details aktualisieren) die folgenden Werte fest:
    
    * Das Feld **Status** = "Not started" (Nicht gestartet)
+
    * Das Feld **ProjectedStartDate** = "3/6/2017"
+
    * Das Feld **ProjectedEndDate** = "3/24/2017"
+
    * Das Feld **ProjectedDays** = "15"
      
      ![Projektdetails aktualisieren](./media/sharepoint-scenario-summary/09-04-03-update.png)

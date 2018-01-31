@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d9b1251d27fc45fd4ad13fd401d2e13c7390f26c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: cd2e2a8c28fb894b1935b29bf80bf65eb631a266
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="screen-control-in-powerapps"></a>Bildschirm-Steuerelement in PowerApps
 Ein Benutzeroberflächenelement, das in einer App ein oder mehrere Steuerelemente enthält
@@ -33,7 +33,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[ImagePosition](properties-visual.md)** : gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
+**[ImagePosition](properties-visual.md)**: Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.
 
 **OnHidden**: Das Verhalten einer App, wenn der Benutzer zu einer anderen Bildschirmansicht wechselt.
 
@@ -42,7 +42,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 **OnStart**: Das Verhalten einer App, wenn sie vom Benutzer geöffnet wird.
 
 * Die Formel, auf die diese Eigenschaft festgelegt ist, wird vor dem Anzeigen des ersten Bildschirms der App ausgeführt. Rufen Sie die [**Navigate**](../functions/function-navigate.md)-Funktion zum Ändern des Bildschirms auf, der beim Start der App zuerst angezeigt wird.
-* Sie können mit der [**UpdateContext**](../functions/function-updatecontext.md)-Funktion keine [Kontextvariablen](../workding-with-variables.md) festlegen, da noch kein Bildschirm angezeigt wurde. Sie können Kontextvariablen allerdings an die **Navigate**-Funktion übergeben und eine [Sammlung](../workding-with-variables.md) mithilfe der [**Collect**](../functions/function-collect.md)-Funktion erstellen und auffüllen.
+* Sie können mit der [**UpdateContext**](../functions/function-updatecontext.md)-Funktion keine [Kontextvariablen](../working-with-variables.md) festlegen, da noch kein Bildschirm angezeigt wurde. Sie können Kontextvariablen allerdings an die **Navigate**-Funktion übergeben und eine [Sammlung](../working-with-variables.md) mithilfe der [**Collect**](../functions/function-clear-collect-clearcollect.md)-Funktion erstellen und auffüllen.
 * Wenn Sie eine App aktualisieren, wird die Formel, auf die diese Eigenschaft festgelegt ist, beim Laden der App in PowerApps Studio ausgeführt. Um die Auswirkungen einer Änderung dieser Eigenschaft anzuzeigen, müssen Sie Ihre App speichern, schließen und neu laden.
 * Die **OnStart**-Eigenschaft ist tatsächlich eine Eigenschaft der App und nicht des Bildschirms. Zur Vereinfachung der Bearbeitung wird sie als Eigenschaft auf dem ersten Bildschirm Ihrer App angezeigt und geändert. Wenn Sie den ersten Bildschirm entfernen oder Bildschirme neu anordnen, kann diese Eigenschaft schwer zu finden sein. In diesem Fall sollten Sie Ihre App speichern, schließen und neu laden, woraufhin die Eigenschaft wieder als Eigenschaft auf dem ersten Bildschirm angezeigt wird.
 
@@ -68,5 +68,5 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
     **Target** wird in der von Ihnen ausgewählten Farbe angezeigt.
 7. Klicken oder tippen Sie in **Target** auf das  **[Shape](control-shapes-icons.md)**-Steuerelement, um zu **Source** zurückzukehren.
 8. (optional) Klicken oder tippen Sie auf die andere Option im  **[Optionsfeld](control-radio.md)-Steuerelement** , und klicken oder tippen Sie anschließend auf das **[Shape](control-shapes-icons.md)** -Steuerelement, um zu bestätigen, dass  **Target** in einer anderen Farbe angezeigt wird.
-9. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
+9. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 

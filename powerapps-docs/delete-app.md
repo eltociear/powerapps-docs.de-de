@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 934a3627d902db6dcb853fddae06b3f1f229d2b6
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fbbf976b7c0fe4699e9c967b3ecac541efc2c223
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="delete-an-app-from-powerapps"></a>Löschen einer App aus PowerApps
 In diesem Artikel wird gezeigt, wie Sie eine App aus Ihrem PowerApps-Konto und Konten von anderen löschen, mit denen die App geteilt wurde.
@@ -32,7 +32,8 @@ In diesem Artikel wird gezeigt, wie Sie eine App aus Ihrem PowerApps-Konto und K
    
     ![](./media/delete-app/filter-list.png)
    
-    **Hinweis**: Wenn die App, die Sie löschen möchten, nicht angezeigt wird, sollten Sie sicherstellen, dass Sie sich in der richtigen Umgebung befinden.
+    > [!NOTE]
+> Wenn die App, die Sie löschen möchten, nicht angezeigt wird, sollten Sie sicherstellen, dass Sie sich in der richtigen Umgebung befinden.
 3. Klicken oder tippen Sie am rechten Rand auf das Info-Symbol der App, die Sie löschen möchten.
    
     ![](./media/delete-app/app-options.png)
@@ -40,10 +41,12 @@ In diesem Artikel wird gezeigt, wie Sie eine App aus Ihrem PowerApps-Konto und K
    
     ![](./media/delete-app/delete-icon.png)
    
-    **Hinweis**: Sie benötigen die Berechtigung **Mitwirkender**, um eine App löschen zu können.
+    > [!NOTE]
+> Sie benötigen die Berechtigung **Mitwirkender**, um eine App löschen zu können.
 5. Klicken oder tippen Sie im erscheinenden Dialogfeld auf **Aus der Cloud löschen**.  
    
-    **Wichtig**: Durch diese Aktion wird diese App nicht nur dauerhaft aus Ihrem Konto gelöscht, sondern auch aus den Konten aller Benutzer, mit denen diese App geteilt wurde.
+    > [!IMPORTANT]
+> Durch diese Aktion wird diese App nicht nur dauerhaft aus Ihrem Konto gelöscht, sondern auch aus den Konten aller Benutzer, mit denen diese App geteilt wurde.
    
     ![](./media/delete-app/delete-button.png)
 

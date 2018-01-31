@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 5a957feab279c2a2a79f629ec6a47eae07f323a3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 5b11234842477ea0a204555e5adaa747d51958db
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
 Verwenden Sie Linien-, Kreis- und Balkendiagramme, um Ihre Daten anzuzeigen. Beim Arbeiten mit Diagrammen sollten die Daten, die Sie importieren, wie folgt gegliedert sein:
@@ -26,7 +26,8 @@ Verwenden Sie Linien-, Kreis- und Balkendiagramme, um Ihre Daten anzuzeigen. Bei
 * Jede Reihe sollte in der ersten Zeile stehen.
 * Bezeichnungen sollten in der am weitesten links stehenden Spalte zu finden sein.
 
-Ihre Daten sollten z.B. wie folgt aussehen:  
+Ihre Daten sollten z.B. wie folgt aussehen:
+
 ![][9]
 
 Sie können diese Diagramme in PowerApps erstellen und verwenden. Lassen Sie uns loslegen!
@@ -41,59 +42,71 @@ Sie können diese Diagramme in PowerApps erstellen und verwenden. Lassen Sie uns
 In den folgenden Schritten importieren wir die Beispieldaten in eine Sammlung mit dem Namen **ProductRevenue**.
 
 1. Wählen Sie auf der Registerkarte **Insert** (Einfügen) die Option **Controls** (Steuerelemente) und anschließend **Import** (Importieren) aus.  
-   
+
     ![][11]  
+
 2. Legen Sie die Eigenschaft **[OnSelect](controls/properties-core.md)** des Steuerelements auf die folgende Funktion fest:  
+
    ```Collect(ProductRevenue, Import1.Data)```
+
 3. Drücken Sie F5 zum Öffnen des Vorschaumodus, und wählen Sie anschließend die Schaltfläche **Daten importieren** aus.
-4. Wählen Sie im Dialogfeld **Öffnen** „ChartData.zip“ und **Öffnen** aus. Drücken Sie anschließend ESC.  
+
+4. Wählen Sie im Dialogfeld **Öffnen** „ChartData.zip“ und **Öffnen** aus. Drücken Sie anschließend ESC.
+
 5. Wählen Sie im Menü **Datei** **Sammlungen** aus.
-   
-    Die Sammlung „ProductRevenue“ wird zusammen mit den Diagrammdaten aufgeführt, die Sie importiert haben:  
+
+    Die Sammlung „ProductRevenue“ wird zusammen mit den Diagrammdaten aufgeführt, die Sie importiert haben:
+
     ![][1]  
-   
+
    > [!NOTE]
    > Das Import-Steuerelement wird zum Importieren von Excel-ähnlichen Daten und zum Erstellen der Sammlung verwendet. Das Importsteuerelement importiert Daten, wenn Sie Ihre App erstellen und eine Vorschau der App anzeigen. Das Import-Steuerelement importiert derzeit keine Daten, wenn Sie Ihre App veröffentlichen.
-   > 
-   > 
-6. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
+   >
+
+6. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="add-a-pie-chart"></a>Hinzufügen eines Kreisdiagramms
 1. Wählen Sie auf der Registerkarte **Einfügen** **Diagramme** und anschließend **Kreisdiagramm** aus.
+
 2. Verschieben Sie das Kreisdiagramm unter die Schaltfläche **Daten importieren**.
+
 3. Wählen Sie im Kreisdiagramm-Steuerelement die Mitte des Kreisdiagramms aus:   
-   
+
     ![][10]
-4. Legen Sie die Eigenschaft **[Elemente](controls/properties-core.md)** des Kreisdiagramms auf diesen Ausdruck fest:</br>
-   ```ProductRevenue.Revenue2014```
-   
+
+4. Legen Sie die Eigenschaft **[Elemente](controls/properties-core.md)** des Kreisdiagramms auf diesen Ausdruck fest: `ProductRevenue.Revenue2014`
+
     ![][2]  
-   
+
     Das Kreisdiagramm zeigt die Umsatzdaten von 2014.
-   
+
     ![][3]  
 
 ## <a name="add-a-bar-chart-to-display-your-data"></a>Hinzufügen eines Balkendiagramms zum Anzeigen Ihrer Daten
 Jetzt nutzen wir die Sammlung „ProductRevenue“ in einem Balkendiagramm:
 
 1. Fügen Sie auf der Registerkarte **Startseite** einen Bildschirm hinzu.
+
 2. Wählen Sie auf der Registerkarte **Einfügen** **Diagramme** und anschließend **Säulendiagramm** aus.
+
 3. Wählen Sie die Mitte des Säulendiagramms aus. Legen Sie die Eigenschaft **[Elemente](controls/properties-core.md)** des Säulendiagramms auf ```ProductRevenue``` fest:
-   
+
     ![][12]  
-   
+
     Das Säulendiagramm zeigt die Umsatzdaten von 2012:
-   
+
     ![][4]  
+
 4. Wählen Sie im Säulendiagramm das Quadrat in der Mitte aus:
-   
+
     ![][5]
+
 5. Wählen Sie auf der Registerkarte **Diagramm** die **Anzahl der Reihen** aus, und geben Sie anschließend **3** in die Bearbeitungsleiste ein:
-   
+
     ![][6]  
-   
+
     Das Säulendiagramm zeigt die Umsatzdaten jedes Produkts aus drei Jahren an:
-   
+
     ![][7]  
 
 [1]: ./media/use-line-pie-bar-chart/productrevenuecollection.png

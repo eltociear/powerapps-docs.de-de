@@ -14,24 +14,26 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
-ms.openlocfilehash: f8962ea7ea89892b834541aba25653759212a652
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 33c113441bd9842ec267cc658ffd955decde86c0
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="use-the-entity-form-control"></a>Verwenden des Steuerelements „Formularentität“
-Erstellen Sie Apps schneller, indem Sie das Steuerelement **Formularentität** verwenden, mit dem Sie umfangreiche Formulare für eine [Common Data Service-Entität](guided-learning/learning-common-data-service-entities.md) hinzufügen können.
+Erstellen Sie Apps schneller, indem Sie das Steuerelement **Formularentität** verwenden, mit dem Sie umfangreiche Formulare für eine [Common Data Service-Entität](guided-learning/manage-data.yml#step-2) hinzufügen können.
 
 Eine Einführung in das Steuerelement **Formularentität** finden Sie in diesem Blogbeitrag: [New entity form control (experimental feature) for Common Data Service (Neues Steuerelement „Formularentität“ (experimentelle Funktion) für Common Data Service)](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
 
-**Wichtig**: Beachten Sie, dass es sich bei dem Steuerelement **Formularentität** wie im Blogbeitrag beschrieben um eine experimentelle Funktion handelt, und seien Sie zunächst vorsichtig, wenn Sie das Steuerelement **Formularentität** in Produktions-Apps verwenden.
+> [!IMPORTANT]
+> Beachten Sie, dass es sich bei dem Steuerelement **Formularentität** wie im Blogbeitrag beschrieben um eine experimentelle Funktion handelt, und seien Sie zunächst vorsichtig, wenn Sie das Steuerelement **Formularentität** in Produktions-Apps verwenden.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 Hier sind die wichtigsten Eigenschaften des Steuerelements **Formularentität**.
 
 **DataSource**: Gibt die Datenquelle an, die den Datensatz (die Datensätze) enthält, den (die) Sie anzeigen möchten.   
-**Hinweis**: Derzeit werden nur Entitäten in Common Data Service als Datenquellen für das Steuerelement **Formularentität** unterstützt.  
+> [!NOTE]
+> Derzeit werden nur Entitäten in Common Data Service als Datenquellen für das Steuerelement **Formularentität** unterstützt.  
 
 **Pattern**: Gibt die Formatvorlage des Formulars an, das im Steuerelement **Formularentität** angezeigt werden soll. Legen Sie diese Eigenschaft mithilfe der **FormPattern**-Enumeration fest.
 
@@ -82,7 +84,8 @@ Sie können diese freigegebenen Funktionen entweder mit dem Steuerelement **Form
 
 Nun haben Sie einen Überblick über die verschiedenen Eigenschaften und Funktionen erhalten, und als Nächstes sehen wir sie uns in Aktion an.
 
-**Hinweis**: Wenn Sie keinen Zugriff auf eine Common Data Service-Datenbank haben, [erstellen Sie eine](guided-learning/learning-common-data-service.md), bevor Sie die folgenden Schritte ausführen.
+> [!NOTE]
+> Wenn Sie keinen Zugriff auf eine Common Data Service-Datenbank haben, [erstellen](guided-learning/manage-data.yml#step-1) Sie eine, bevor Sie die folgenden Schritte ausführen.
 
 ## <a name="display-a-list-of-records"></a>Anzeigen einer Liste von Datensätzen
 Die folgenden fünf Vorgehensweisen bieten ein einzelnes, umfassendes Beispiel zur Verwendung von **Formularentität**-Steuerelementen. Fügen Sie in dieser Vorgehensweise ein Formular hinzu, das eine Liste mit Verkaufsaufträgen anzeigt.  
@@ -125,7 +128,7 @@ Die folgenden fünf Vorgehensweisen bieten ein einzelnes, umfassendes Beispiel z
       
       ![](media/entity-form-control/entityform-tutorial-01-08.png)   
       
-      In **Common Data Service** können Sie für benutzerdefinierte Entitäten (aber nicht für [Standardentitäten](guided-learning/learning-common-data-service-entities.md)) [Feldgruppen ändern](field-groups.md) und damit die Felder, die auf den entsprechenden Formularen vom Steuerelement **Formularentität** angezeigt werden. Zudem wird jede Änderung an der Feldgruppe automatisch für alle Apps übernommen, die ein **Formularentität**-Steuerelement verwenden, um das entsprechende Formular anzuzeigen.
+      In **Common Data Service** können Sie für benutzerdefinierte Entitäten (aber nicht für [Standardentitäten](guided-learning/manage-data.yml#step-2)) [Feldgruppen ändern](field-groups.md) und damit die Felder, die auf den entsprechenden Formularen vom Steuerelement **Formularentität** angezeigt werden. Zudem wird jede Änderung an der Feldgruppe automatisch für alle Apps übernommen, die ein **Formularentität**-Steuerelement verwenden, um das entsprechende Formular anzuzeigen.
 
 ## <a name="display-the-details-of-a-record"></a>Anzeigen der Details eines Datensatzes
 Fügen Sie ein weiteres **Formularentität**-Steuerelement hinzu, um die Details des Verkaufsauftrags anzuzeigen, der in der zuvor erstellten Liste ausgewählt ist.  
@@ -206,7 +209,8 @@ Wenn der Benutzer auf das SalesOrderId-Feld klickt oder tippt, wird deshalb die 
 
 ![](media/entity-form-control/entityform-tutorial-01-21.png)  
 
-**Hinweis**: Wenn Sie den Bereich für die Anpassung von Formularen verwenden, wird **NavigationContext** für Sie intelligent bestimmt. Wenn der Benutzer auf **SalesOrderId** klickt oder tippt, wird **NavigationContext** auf **SalesOrderListForm.Selected** festgelegt, wie in der früheren Formel dargestellt. Wenn wir stattdessen das **Account**-Feld für die Navigation angegeben hätten, wäre **NavigationContext** auf **SalesOrderListForm.Selected.Account** festgelegt worden, um sicherzustellen, dass der richtige Kontext übergeben wird. Allerdings würden Sie für die Nutzung dieses Kontexts ein **Formularentität**-Steuerelement benötigen, das mit der **Account**-Entität in Common Data Service verbunden ist.
+> [!NOTE]
+> Wenn Sie den Bereich für die Anpassung von Formularen verwenden, wird **NavigationContext** für Sie intelligent bestimmt. Wenn der Benutzer auf **SalesOrderId** klickt oder tippt, wird **NavigationContext** auf **SalesOrderListForm.Selected** festgelegt, wie in der früheren Formel dargestellt. Wenn wir stattdessen das **Account**-Feld für die Navigation angegeben hätten, wäre **NavigationContext** auf **SalesOrderListForm.Selected.Account** festgelegt worden, um sicherzustellen, dass der richtige Kontext übergeben wird. Allerdings würden Sie für die Nutzung dieses Kontexts ein **Formularentität**-Steuerelement benötigen, das mit der **Account**-Entität in Common Data Service verbunden ist.
 
 ## <a name="edit-and-save-a-record"></a>Bearbeiten und Speichern eines Datensatzes
 Abschließend sehen wir uns an, wie wir einen Datensatz in einem **Formularentität**-Steuerelement bearbeiten und speichern können.  

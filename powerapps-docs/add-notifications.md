@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: f588a6fa9952f3d40d51fbedbd672031b9c837f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
 Pushbenachrichtigungen werden bei mobilen Apps für Kunden- und Business-Szenarien in erster Linie verwendet, um mit den App-Benutzern zu kommunizieren und ihnen zu helfen, wichtige Aufgaben zu priorisieren. In PowerApps können Sie Benachrichtigungen über den Connector „PowerApps-Benachrichtigung“ senden. Sie können native Pushbenachrichtigungen an eine beliebige App senden, die Sie in PowerApps erstellen. In Zukunft sollen weitere Benachrichtigungstypen hinzukommen.
@@ -32,13 +32,15 @@ Fügen Sie in den folgenden Situationen Pushbenachrichtigungen in Apps hinzu:
 * Die Benutzer müssen wichtige Aufgaben mit der App in einem vordefinierten Kontext ausführen.
 * Sie möchten regelmäßig mit den Benutzern interagieren oder die Benutzer sollen die App in einem bestimmten Kontext öffnen.
 
-**Hinweis:** Um Pushbenachrichtigungen empfangen zu können, muss jeder Benutzer die App einmal in PowerApps Mobile geöffnet oder die App aus AppSource in [Dynamics 365](https://home.dynamics.com/) abgerufen haben.
+> [!NOTE]
+> Um Pushbenachrichtigungen empfangen zu können, muss jeder Benutzer die App einmal in PowerApps Mobile geöffnet oder die App aus AppSource in [Dynamics 365](https://home.dynamics.com/) abgerufen haben.
 
 ## <a name="before-you-start"></a>Bevor Sie beginnen
 Fügen Sie bei einer App, für die Sie über die Berechtigung **Mitwirkender** verfügen, eine „PowerApps-Benachrichtigung“-Verbindung hinzu. Wenn Sie noch keine App haben, können Sie schnell eine [App aus einer Vorlage erstellen](get-started-test-drive.md). So verfügen Sie standardmäßig über die erforderliche Berechtigung. In dem genannten Tutorial und hier wird eine App auf Grundlage der Vorlage für das Fallmanagement verwendet.
 
 ## <a name="send-a-notification-from-a-flow"></a>Senden einer Pushbenachrichtigung aus einem Flow
-**Hinweis:** Wenn Sie eine Pushbenachrichtigung in einem Flow auslösen, können Sie die Benachrichtigung derzeit jeweils nur an einen Benutzer oder eine Sicherheitsgruppe senden.
+> [!NOTE]
+> Wenn Sie eine Pushbenachrichtigung in einem Flow auslösen, können Sie die Benachrichtigung derzeit jeweils nur an einen Benutzer oder eine Sicherheitsgruppe senden.
 
 1. Erstellen Sie in [Microsoft Flow](https://flow.microsoft.com) einen Trigger, der angibt, wann die Pushbenachrichtigung gesendet wird.
    
@@ -89,10 +91,11 @@ Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details**
 2. (Optional) Blenden Sie das **Timer**-Steuerelement aus, indem Sie die **Visible**-Eigenschaft auf **false** festlegen.
 3. Legen Sie die **OnVisible**-Eigenschaft des Bildschirms auf **Timer.Start()** fest.
 
-**Tipp:** Sie sollten für die Benachrichtigung eine spezielle erste Seite erstellen:
+> [!TIP]
+> Sie sollten für die Benachrichtigung eine spezielle erste Seite erstellen:
 
-1. Erstellen Sie eine leere Seite, die Ihre App nicht bereits öffnet, fügen Sie ein **Texteingabe**-Steuerelement hinzu, und legen Sie den **timer.Duration**-Wert fest.
-2. Wenn Sie die App erstellen, legen Sie den Timer auf einen Wert ungleich 0 (null) fest. Wenn Sie die App veröffentlichen möchten, legen Sie den Wert auf **0** fest, um den Timer sofort auszulösen.
+>1. Erstellen Sie eine leere Seite, die Ihre App nicht bereits öffnet, fügen Sie ein **Texteingabe**-Steuerelement hinzu, und legen Sie den **timer.Duration**-Wert fest.
+>2. Wenn Sie die App erstellen, legen Sie den Timer auf einen Wert ungleich 0 (null) fest. Wenn Sie die App veröffentlichen möchten, legen Sie den Wert auf **0** fest, um den Timer sofort auszulösen.
 
 ## <a name="syntax"></a>Syntax
 | Name | Beschreibung |

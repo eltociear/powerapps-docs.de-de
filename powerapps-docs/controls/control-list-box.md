@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ada7fed1ac9fabb9a89f79a876fcce68b4415d30
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 687b66a50e168559f670d07f4e6c7dd7214ccde8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>Listenfeld-Steuerelement in PowerApps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
@@ -28,11 +28,11 @@ Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
 Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Gegensatz zu einem **[Dropdown](control-drop-down.md)**-Steuerelement), wobei der Benutzer mehr als ein Element gleichzeitig auswählen kann (im Gegensatz zu einem **[Optionsfeld](control-radio.md)**-Steuerelement).
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)**: Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
+**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-[!INCLUDE [long-items](../../includes/long-items.md)]
+[!INCLUDE [long-items](../includes/long-items.md)]
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -41,7 +41,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)**: Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
@@ -73,7 +73,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 **[LineHeight](properties-text.md)**: Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
-**[OnChange](properties-core.md)**: Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -91,7 +91,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)**: Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **[SelectionColor](properties-color-border.md)**: Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
@@ -103,9 +103,9 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)**: Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -122,7 +122,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Listenfeld**-Steuerungselement hinzu, nennen Sie es **CategoryList**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgende Formel fest:<br>
-   **["Carpet", "Hardwood", "Tile"]** (Teppichboden, Parkett, Fliesen)
+   **["Carpet","Hardwood","Tile"]**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    

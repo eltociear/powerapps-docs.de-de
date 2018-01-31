@@ -176,34 +176,16 @@
           href: sharepoint-scenario-summary.md
     - name: In Cognitive Services integrieren
       href: cognitive-services-api.md
-- name: 'Entwickeln: Unternehmensentwickler'
+- name: Entwickeln für PowerApps
   items:
-    - name: PowerApps für Unternehmensentwickler
+    - name: 'PowerApps für Unternehmensentwickler, Partner und ISVs'
       href: dev-enterprise-intro.md
-    - name: Benutzerdefinierte Connectors registrieren und verwenden
+    - name: Erstellen und Zertifizieren benutzerdefinierter Connectors
       href: register-custom-api.md
-    - name: Benutzerdefinierten Connector mit Postman beschreiben
-      href: postman-collection.md
-    - name: Azure Active Directory mit benutzerdefiniertem Connector verwenden
-      href: customapi-azure-resource-manager-tutorial.md
-    - name: Benutzerdefinierten Connector für eine Web-API erstellen
-      href: customapi-web-api-tutorial.md
     - name: In Websites und andere Technologien integrieren
       href: embed-apps-dev.md
     - name: Offlinefähige Apps entwickeln
       href: offline-apps.md
-- name: 'Entwickeln: Partner und ISVs'
-  items:
-    - name: PowerApps für Microsoft-Partner und ISVs
-      href: dev-isv-partner-intro.md
-    - name: Übersicht über die Zertifizierung von API-Connectors
-      href: api-connector-overview.md
-    - name: API-Connectors für Zertifizierung entwickeln
-      href: api-connector-dev.md
-    - name: API-Connectors zur Zertifizierung übermitteln
-      href: api-connector-submission.md
-    - name: Häufig gestellte Fragen zum Zertifizieren von API-Connectors
-      href: api-connector-faq.md
     - name: Kunden das Testen Ihrer Apps ermöglichen
       href: dev-appsource-test-drive.md
 - name: Verwaltung und ALM

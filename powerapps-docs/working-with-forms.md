@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: f9a4a274146373acd22fd4fdcebf9a83b252958c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d9664b490970f7eada757b83d6c9934753af3ad5
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Grundlegendes zu Datenformularen in Microsoft PowerApps
 Fügen Sie drei Arten von Steuerelementen hinzu, damit Benutzer nach einem Datensatz suchen, Einzelheiten zu dem Datensatz anzeigen oder einen Eintrag dazu bearbeiten oder erstellen können:
@@ -36,7 +36,7 @@ Platzieren Sie jedes Steuerelement auf einem anderen Bildschirm, um die Untersch
 
 Kombinieren Sie diese Steuerelemente mit Formeln, wie in diesem Thema beschrieben, um die allgemeine Benutzeroberfläche zu erstellen.
 
-**Voraussetzungen**
+## <a name="prerequisites"></a>Voraussetzungen
 
 * [Registrieren Sie sich](signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
@@ -59,7 +59,8 @@ Das primäre Steuerelement auf diesem Bildschirm, **BrowseGallery1**, deckt die 
 
 Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft einer Katalogeigenschaft fest, um Datensätze auf Adoptionsheimen aus einer Datenquelle darin angezeigt. Legen Sie diese Eigenschaft beispielsweise auf **Bestand** fest, um Datensätze aus einer gleichnamigen Datenquelle anzuzeigen.
 
-**Hinweis:** In einer generierten App wird **[Items](controls/properties-core.md)** standardmäßig auf eine wesentlich schwierigere Formel festgelegt, damit der Nutzer Daten sortieren und nach Datensätzen suchen kann. Sie erfahren später in diesem Thema, wie Sie die Formel erstellen. Die einfachere Version ist genug für heute.
+> [!NOTE]
+> In einer generierten App wird **[Items](controls/properties-core.md)** standardmäßig auf eine wesentlich schwierigere Formel festgelegt, damit der Nutzer Daten sortieren und nach Datensätzen suchen kann. Sie erfahren später in diesem Thema, wie Sie die Formel erstellen. Die einfachere Version ist genug für heute.
 
 Anstatt einen Datensatz zum Anzeigen oder Bearbeiten zu suchen, kann der Benutzer einen Datensatz erstellen, indem er auf das Symbol „+“ über dem Katalog klickt. Erzeugen Sie diesen Effekt , indem Sie ein **[Image](controls/control-image.md)**-Steuerelement mit einem „+“ darin hinzufügen und seine Eigenschaft **[OnSelect](controls/properties-core.md)** auf diese Formel festlegen:
 <br>**NewForm( EditForm1 ); Navigate( EditScreen1, None )**
@@ -148,7 +149,8 @@ Wenn Sie verstehen, wie PowerApps eine App generiert, können Sie selbst eine er
 ## <a name="identify-test-data"></a>Ermitteln von Testdaten
 Um so viel wie möglich aus diesem Thema zu lernen, sollten Sie eine Datenquelle suchen, mit der Sie experimentieren können. Sie sollte Testdaten enthalten, die Sie ohne Bedenken lesen und aktualisieren können.
 
-**Hinweis:** Bei Verwendung einer SharePoint-Liste oder Excel-Tabelle als Datenquelle, die Spaltennamen mit Leerzeichen enthält, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+> [!NOTE]
+> Bei Verwendung einer SharePoint-Liste oder Excel-Tabelle als Datenquelle, die Spaltennamen mit Leerzeichen enthält, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 Um die restlichen Schritte in diesem Thema genau befolgen zu können, erstellen Sie eine SharePoint-Liste namens „Ice Cream“ (Eiscreme), die folgende Daten enthält:
 
@@ -156,7 +158,8 @@ Um die restlichen Schritte in diesem Thema genau befolgen zu können, erstellen 
 
 * Erstellen Sie eine Telefon-App von Grund auf, und [verbinden Sie sie mit Ihrer Datenquelle](add-data-connection.md).
   
-    **Hinweis:** Tablet-Apps sind Telefon-Apps sehr ähnlich. Sie können sich aber für ein anderes [Bildschirmlayout](#screen-design) entscheiden, um den zusätzlichen Platz auf dem Bildschirm optimal auszunutzen.
+    > [!NOTE]
+> Tablet-Apps sind Telefon-Apps sehr ähnlich. Sie können sich aber für ein anderes [Bildschirmlayout](#screen-design) entscheiden, um den zusätzlichen Platz auf dem Bildschirm optimal auszunutzen.
   
     Die Beispiele im Rest des Themas basieren auf einer Datenquelle namens **Ice Cream**.
 
@@ -201,7 +204,7 @@ Im rechten Bereich können Sie auswählen, welche Felder auf dem Bildschirm ange
 
 Schließlich muss das **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelement mit dem **[Katalog](controls/control-gallery.md)**-Steuerelement verbunden werden, sodass ein bestimmter Datensatz detaillierter betrachtet werden kann.  Sobald die **[Item](controls/control-form-detail.md)**-Eigenschaft festgelegt ist, wird der erste Datensatz aus dem Katalog im Formular angezeigt.
 
-1. Legen Sie die **[Item](controls/control-form-detail.md)**-Eigenschaft des **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelements auf **Gallery1.Selected** fest.
+* Legen Sie die **[Item](controls/control-form-detail.md)**-Eigenschaft des **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelements auf **Gallery1.Selected** fest.
    
     Die Details zum ausgewählten Element werden im Formular angezeigt.
    
@@ -209,20 +212,23 @@ Schließlich muss das **[Formular anzeigen](controls/control-form-detail.md)**-S
 
 Super!  Widmen wir uns jetzt der Navigation: wie ein Benutzer den Detailbildschirm vom Katalogbildschirm und den Katalogbildschirm vom Bildschirm „Details“ aus öffnet.
 
-1. Fügen Sie eine **[Schaltflächen](controls/control-button.md)**-Steuerelement auf dem Bildschirm hinzu, legen Sie seine **[Text](controls/properties-core.md)**-Eigenschaft auf das Anzeigen von **[Back](functions/function-navigate.md)** fest, und legen Sie seine **[OnSelect](controls/properties-core.md)**-Eigenschaft auf **Back()** fest.
+* Fügen Sie eine **[Schaltflächen](controls/control-button.md)**-Steuerelement auf dem Bildschirm hinzu, legen Sie seine **[Text](controls/properties-core.md)**-Eigenschaft auf das Anzeigen von **[Back](functions/function-navigate.md)** fest, und legen Sie seine **[OnSelect](controls/properties-core.md)**-Eigenschaft auf **Back()** fest.
    
     Mit dieser Formel gelangt der Benutzer zurück zum Katalog, wenn er die Details angesehen hat.
 
-![„Formular anzeigen“ für die Eiscreme-Datenquelle mit der Schaltfläche „Zurück“](./media/working-with-forms/viewform-icecream-back.png)
+    ![„Formular anzeigen“ für die Eiscreme-Datenquelle mit der Schaltfläche „Zurück“](./media/working-with-forms/viewform-icecream-back.png)
 
 Kehren wir jetzt zum **[Katalog](controls/control-gallery.md)**-Steuerelement zurück und fügen einige Navigationselemente zu unserem Detailbildschirm hinzu.
 
 1. Wechseln Sie zum ersten Bildschirm, auf dem sich das **[Katalog](controls/control-gallery.md)**-Steuerelement befindet, und wählen Sie den Pfeil im ersten Element im Katalog aus.
+
 2. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft des Symbols auf die folgende Formel fest:
    <br>**Navigate( Screen2, None )**
    
     ![„Formular anzeigen“ für die Eiscreme-Datenquelle mit der Schaltfläche „Zurück“](./media/working-with-forms/gallery-icecream-nav-new.png)
+
 3. Drücken Sie F5, und wählen Sie dann einen Pfeil im Katalog aus, um die Details eines Elements anzuzeigen.
+
 4. Wählen Sie die **[Zurück](functions/function-navigate.md)**-Schaltfläche an aus, um zum Produktkatalog zurückzukehren, und drücken Sie die ESC-TASTE.
 
 ## <a name="editing-details"></a>Bearbeiten von Details
@@ -302,12 +308,11 @@ In dieser App tritt ein Fehler auf, wenn der Wert eines Felds nicht gültig oder
 
 Wenn **[SubmitForm](functions/function-form.md)** aus irgendeinem Grund einen Fehler auslöst, enthält die **Error**-Eigenschaft des **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelements eine Fehlermeldung für den Benutzer. Anhand dieser Informationen sollte der Benutzer das Problem beheben und die Änderung erneut übermitteln oder das Update abbrechen können.
 
-1. Fügen Sie auf dem Bildschirm „Bearbeiten und Erstellen“ ein **[Label](controls/control-text-box.md)**-Steuerelement hinzu, und platzieren Sie es direkt unter der Schaltfläche **Speichern**.
-   
-    Alle Fehler sind leicht zu entdecken, nachdem der Benutzer die Änderungen durch einen Klick auf dieses Steuerelement gespeichert hat.
+1. Fügen Sie auf dem Bildschirm „Bearbeiten und Erstellen“ ein **[Label](controls/control-text-box.md)**-Steuerelement hinzu, und platzieren Sie es direkt unter der Schaltfläche **Speichern**. Alle Fehler sind leicht zu entdecken, nachdem der Benutzer die Änderungen durch einen Klick auf dieses Steuerelement gespeichert hat.
+
 2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft des **[Label](controls/control-text-box.md)**-Steuerelements auf **Form1.Error** fest.
 
-![„Formular anzeigen“ mit hinzugefügter Schaltfläche „Bearbeiten“](./media/working-with-forms/edit-icecream-error.png)
+    ![„Formular anzeigen“ mit hinzugefügter Schaltfläche „Bearbeiten“](./media/working-with-forms/edit-icecream-error.png)
 
 Die **[AutoHeight](controls/control-text-box.md)**-Eigenschaft auf diesem Steuerelement ist in einer App, die PowerApps aus Daten generiert, auf *TRUE* festgelegt, damit kein Speicherplatz beansprucht wird, wenn kein Fehler auftritt. Die Eigenschaften **[Height](controls/properties-size-location.md)** und **[Y](controls/properties-size-location.md)** des **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelements werden auch dynamisch angepasst, damit dieses Steuerelement wächst, wenn ein Fehler auftritt. Generieren Sie eine App aus bestehenden Daten, und prüfen Sie diese Eigenschaften, um weitere Informationen zu erhalten. Das Textfeld-Steuerelement für Fehler ist sehr kurz, wenn kein Fehler aufgetreten ist, weswegen Sie möglicherweise die Ansicht **Advanced** (Erweitert) (in der Registerkarte **Ansicht**) öffnen müssen, um dieses Steuerelement auszuwählen.
 
@@ -319,9 +324,10 @@ Die **[AutoHeight](controls/control-text-box.md)**-Eigenschaft auf diesem Steuer
 Die Datenquelle wird bei jedem Öffnen der App aktualisiert. Manchmal möchten Benutzer die Datensätze im Katalog aber aktualisieren, ohne die App zu schließen. Fügen Sie dazu eine Schaltfläche **Refresh** (Aktualisieren) ein, damit Benutzer Daten manuell aktualisieren können:
 
 1. Fügen Sie auf dem Bildschirm mit dem **[Katalog](controls/control-gallery.md)**-Steuerelement ein **[Schaltflächen](controls/control-button.md)**-Steuerelement hinzu, und legen Sie dessen **[Text](controls/properties-core.md)**-Eigenschaft auf **Refresh** fest.
+
 2. Legen Sie die Eigenschaft **[OnSelect](controls/properties-core.md)** dieses Steuerelements auf die folgende Formel fest:<br> **Refresh( 'Ice Cream' )**
 
-![Aktualisieren der Datenquelle](./media/working-with-forms/browse-icecream-refresh.png)
+    ![Aktualisieren der Datenquelle](./media/working-with-forms/browse-icecream-refresh.png)
 
 ## <a name="search-and-sort-the-gallery"></a>Durchsuchen und Sortieren des Katalogs
 Bisher wurde noch nicht über zwei Steuerelemente oben im Bildschirm zum Durchsuchen der App gesprochen, die PowerApps aus Daten erstellt. Mithilfe dieser Steuerelemente können Benutzer nach mindestens einem Datensatz suchen und die Liste der Datensätze in aufsteigender oder absteigender Reihenfolge sortieren, oder beides.

@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6574ad1c67c6fc42da3b1cd5940f163307829333
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 481e6d13cce7624cf46cadbf78f877fdfb9fd481
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Einbetten des Power BI-Projektberichts in SharePoint Online
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In der letzten Aufgabe in diesem Szenario wird der Power BI-Bericht in die gleiche SharePoint Online-Website eingebettet, auf der die zwei Listen gehostet werden. Power BI unterstützt eine Vielzahl von Ansätzen für das Einbetten, und kürzlich wurde die direkte Integration in SharePoint-Seiten für Webansichten und mobile Ansichten eingeführt.
 

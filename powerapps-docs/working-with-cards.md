@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 95def246100aa58d62bcc174d3b1822e5bcc2227
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 9c4bbdaa6cc218a1e635289c097f7900c9e83c81
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-cards"></a>Grundlegendes zu Datenkarten
 **[Card](controls/control-card.md)** -Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)**. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.
@@ -81,7 +81,8 @@ Klicken oder tippen Sie auf das Banner oben, um die Smartcard zu entsperren, dam
 
 Jetzt können Sie diese Karte steuern und noch weiter an Ihre Bedürfnisse anpassen. Allerdings haben Sie nicht mehr wie vorher die Möglichkeit, die Darstellung der Karte zu ändern (z.B. von einzeiligem in mehrzeiligen Text). Sie haben die vordefinierten Karte in eine „benutzerdefinierte Karte“ umgewandelt, die Sie nun steuern können.  
 
-**Wichtig**: Wenn Sie eine Karte entsperrt haben, können Sie sie nicht erneut sperren. Entfernen Sie die Karte, und fügen Sie sie nochmals im rechten Bereich ein, um sie erneut zu sperren.
+> [!IMPORTANT]
+> Wenn Sie eine Karte entsperrt haben, können Sie sie nicht wieder sperren. Entfernen Sie die Karte, und fügen Sie sie nochmals im rechten Bereich ein, um sie erneut zu sperren.
 
 Sie haben vielfältige Möglichkeiten, um das Erscheinungsbild und das Verhalten einer entsperrten Karte zu ändern. Sie können in der Karte z.B. Steuerelemente hinzufügen oder löschen. Sie können beispielsweise über das Menü **Symbole** auf der Registerkarte **Einfügen** eine Sternform hinzufügen.
 
@@ -95,7 +96,8 @@ Ein weiteres Beispiel: Entsperren Sie die Karte **ImageURL**, und fügen Sie ihr
 
 Legen Sie auf der Bearbeitungsleiste die **Image**-Eigenschaft dieses Steuerelements auf *TextBox*.**Text** fest, wobei *TextBox* der Name des **Texteingabe**-Steuerelements ist, das die URL enthält:
 
-**Tipp**: Drücken Sie die ALT-TASTE, um den Namen der einzelnen Steuerelemente anzuzeigen.
+> [!TIP]
+> Drücken Sie die ALT-TASTE, um den Namen der einzelnen Steuerelemente anzuzeigen.
 
 ![](./media/working-with-cards/show-image.png)
 

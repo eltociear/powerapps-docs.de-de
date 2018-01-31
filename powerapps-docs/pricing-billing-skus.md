@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/19/2017
 ms.author: jamesol
-ms.openlocfilehash: ebe54d21ffc55024e1af7ab81fb2835835f39e6f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f3b53905bb335cf61eae3e184d4984d56907fe4c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="licensing-overview"></a>Übersicht über die Lizenzierung
 PowerApps wird pro Benutzer lizenziert. Jeder Benutzer, der auf den Dienst zum Erstellen und Ausführen von Apps zugreift, benötigt eine Lizenz. Office 365- und Dynamics 365-Kunden können von den Vorteilen, die sich aus den PowerApps- und Microsoft Flow-Funktionen dieser Produkte ergeben, direkt profitieren. Kunden, die Apps und Flows erstellen möchten, für die auf Datenquellen außerhalb von Office 365 und Dynamics 365 zugegriffen wird, oder die zusätzliche Funktionalität benötigen, können eigenständige Abonnements für PowerApps und Microsoft Flow erwerben. Zwischen diesen Gruppen von Lizenzen bestehen wichtige Unterschiede in Bezug auf die Funktionalität.
@@ -80,7 +80,8 @@ Nach Ablauf des Evaluierungszeitraums haben Benutzer folgende Möglichkeiten:
 * Benutzer, die über Office 365 oder Dynamics 365 Zugriff auf PowerApps oder Microsoft Flow haben, können weiterhin auf PowerApps bzw. Microsoft Flow zugreifen.  Diese Benutzer verlieren aber den Zugriff auf alle Features, die exklusiv für Plan 2 gelten. Dies ist auf der [Seite mit den PowerApps-Preisen][2] beschrieben.
 * Benutzer, die keinen Zugriff über Office 365 oder Dynamics 365 haben, können eine Verlängerung des Testzeitraums anfordern oder einen eigenständigen Plan erwerben. Weitere Informationen finden Sie unter [Erwerb von PowerApps für Ihre Organisation][4].
 
-> **HINWEIS** Um PowerApps für eine Organisation zu erwerben, müssen Sie ein globaler Office 365- oder Abrechnungsadministrator eines Mandanten sein oder einen Mandanten erstellen.
+> [!NOTE]
+>   Um PowerApps für eine Organisation zu erwerben, müssen Sie globaler Office 365- oder Abrechnungsadministrator eines Mandanten sein oder einen Mandanten erstellen.
 > 
 > 
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/09/2017
 ms.author: archanan
-ms.openlocfilehash: 9336df54dab2f95114367267408aec6b500a131f
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7739607b103d98b934805e62cb9a2bfdf1cc14e6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-your-connections-in-powerapps"></a>Verwalten der Verbindungen in PowerApps
 Stellen Sie in [powerapps.com](https://web.powerapps.com) eine Verbindung aus PowerApps mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
@@ -44,7 +44,7 @@ Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquell
 
 Der verbreitetste Typ von Datenquelle ist die Tabelle, aus der Informationen abgerufen und in der Informationen gespeichert werden können. Über Verbindungen mit Datenquellen können Sie Daten in Microsoft Excel-Arbeitsmappen, SharePoint-Listen, SQL-Tabellen und vielen anderen Formaten lesen und schreiben; diese können in Clouddiensten wie OneDrive for Business, DropBox, SQL Server usw. gespeichert sein.
 
-Es gibt weitere Arten von Datenquellen, bei denen es sich nicht um Tabellen handelt, beispielsweise E-Mails, Kalender, Twitter-Nachrichten und (in Kürze) Benachrichtigungen.
+Es gibt andere Arten von Datenquellen, die keine Tabellen sind, z.B. E-Mails, Kalender, Twitter und Benachrichtigungen (demnächst verfügbar).
 
 Mithilfe von **[Katalog](controls/control-gallery.md)**-, **[Formular anzeigen](controls/control-form-detail.md)**- und **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelementen können Sie auf einfache Weise eine App erstellen, die Daten aus einer Datenquelle liest und schreibt. Lesen Sie für den Einstieg den Artikel [Grundlegendes zu Datenformularen](working-with-forms.md).
 
@@ -54,7 +54,8 @@ Zusätzlich zum Erstellen und Verwalten von Verbindungen in [powerapps.com](http
 * Aktualisieren Sie eine vorhandene App, oder erstellen Sie eine wie in [Eine Verbindung hinzufügen](add-data-connection.md) beschrieben neu.
 * Öffnen einer App, die ein anderer Benutzer erstellt und [für Sie freigegeben](share-app.md) hat.
 
-**Hinweis:** Wenn Sie stattdessen PowerApps Studio verwenden möchten, öffnen Sie das Menü **Datei**, und klicken oder tippen Sie auf **Verbindungen**; [powerapps.com](https://web.powerapps.com) wird geöffnet, sodass Sie dort Verbindungen herstellen und verwalten können.
+> [!NOTE]
+> Wenn Sie stattdessen PowerApps Studio verwenden möchten, öffnen Sie das Menü **Datei**, und klicken oder tippen Sie auf **Verbindungen**; [powerapps.com](https://web.powerapps.com) wird geöffnet, sodass Sie dort Verbindungen herstellen und verwalten können.
 
 ## <a name="create-a-new-connection"></a>Erstellen einer neuen Verbindung
 1. Sofern noch nicht erfolgt, melden Sie sich bei [powerapps.com](https://web.powerapps.com) an.

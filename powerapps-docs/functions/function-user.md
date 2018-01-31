@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 6fee690b849a305d1dd97361cd76b74889f258d9
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 2a2adaf10a9d78bb2a899e68d5c33948aae88d1b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="user-function-in-powerapps"></a>Funktion „User“ in PowerApps
 Gibt Informationen über den aktuellen Benutzer zurück.
@@ -33,7 +33,8 @@ Die Funktion **User** gibt einen [Datensatz](../working-with-tables.md#records) 
 | **User().FullName** |Vollständiger Name des aktuellen Benutzers, einschließlich Vor-und Nachnamen. |
 | **User().Image** |Bild des aktuellen Benutzers. Dies ist eine Bild-URL der Form "blob:*Bezeichner*". Legen Sie die Eigenschaft **[Image](../controls/properties-visual.md)** des **[Image](../controls/control-image.md)**-Steuerelements auf diesen Wert fest, um das Bild in der App anzuzeigen. |
 
-**Hinweis:** Die zurückgegebenen Informationen beziehen sich auf den aktuellen PowerApps-Benutzer.  Sie stimmen mit den Kontoinformationen überein, die in den PowerApps-Playern und in Studio angezeigt werden, die außerhalb von Apps mit Verfassern verfügbar sind.  Möglicherweise stimmen sie nicht mit den Informationen des aktuellen Benutzers in Office 365 oder anderen Diensten überein.
+> [!NOTE]
+> Die zurückgegebenen Informationen beziehen sich auf den aktuellen PowerApps-Benutzer.  Sie stimmen mit den Kontoinformationen überein, die in den PowerApps-Playern und in Studio angezeigt werden, die außerhalb von Apps mit Verfassern verfügbar sind.  Möglicherweise stimmen sie nicht mit den Informationen des aktuellen Benutzers in Office 365 oder anderen Diensten überein.
 
 ## <a name="syntax"></a>Syntax
 **User**()

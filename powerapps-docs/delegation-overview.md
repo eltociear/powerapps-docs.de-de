@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: d4305884c14a4b85b2ed992a5df13a7d3bb2baa7
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: b6410a6b392f074c5e5a240e471fa2591e1e135d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-delegation"></a>Grundlagen der Delegierung
 PowerApps enthalten einen leistungsstarken Funktionssatz für die Filterung, Sortierung und Strukturierung von Tabellen mit Daten: Beispiele hierfür sind die Funktionen **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** und **[AddColumns](functions/function-table-shaping.md)**, um nur einige zu nennen.  Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen.  Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.  
@@ -95,7 +95,7 @@ Für alle anderen Funktionen wird die Delegierung nicht unterstützt, einschlie�
 
 Ein häufiges Muster ist die Verwendung von **AddColumns** und **LookUp** zum Zusammenführen von Informationen aus einer Tabelle in eine andere. In der Datenbanksprache wird dies meist als „Join“ (Verknüpfung“) bezeichnet.  Beispiel:
 
-* **AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
+**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
 
 Bei **Products** und **Suppliers** kann es sich zwar ggf. um delegierbare Datenquellen handeln, und **LookUp** ist eine delegierbare Funktion, aber die Funktion **AddColumns** ist nicht delegierbar.  Das Ergebnis der gesamten Formel ist auf den ersten Teil der Datenquelle **Products** beschränkt.  
 
@@ -118,27 +118,26 @@ Blaue Punkte werden nur für Formeln angezeigt, die für delegierbare Datenquell
 ## <a name="examples"></a>Beispiele
 In diesem Beispiel verwenden wir eine SQL Server-Tabelle mit Produkten (Obstsorten). Sie hat den Namen **[dbo].[Products]**.  Auf dem Bildschirm „Neu“ kann mit PowerApps eine einfache App mit drei Bildschirmansichten und einer Verbindung mit dieser Datenquelle erstellt werden:
 
-![](media/delegation-overview/products-afd.png)
+![App mit drei Bildschirmen](media/delegation-overview/products-afd.png)
 
 Beachten Sie die Formel für die **Items**-Eigenschaft des Katalogs.  Darin werden die Funktionen **SortByColumns** und **Search** verwendet, die beide delegiert werden können.
 
 Wir geben den Begriff **„Apple“** in das Suchtext-Eingabesteuerelement ein.  Wenn wir genau hinsehen, fallen uns vorübergehend Punkte auf, die sich oben im Fenster bewegen, während der neue Eintrag der neuen Suche verarbeitet wird.  Mit diesen Punkten wird angegeben, dass wir mit der SQL Server-Instanz kommunizieren:
 
-![](media/delegation-overview/products-apple.png)
+![Suchtext-Eingabesteuerelement](media/delegation-overview/products-apple.png)
 
 Da eine Delegierung hierbei auch möglich ist, wenn die Tabelle **[dbo].[Products]** Millionen von Datensätze enthält, können alle Datensätze gefunden werden. Sie können im Katalog auf mehreren Seiten angezeigt werden, und der Benutzer kann einen Bildlauf durch die Ergebnisse durchführen.
 
 Sie sehen, dass Treffer für „Apple“ und „Pineapple“ angezeigt werden.  Mit der Funktion **Search** wird ein Suchbegriff überall in einer Textspalte gefunden.  Es kann auch sein, dass wir den Suchbegriff stattdessen nur am Anfang des Obstsortennamens suchen möchten.  Hierfür können wir eine andere delegierbare Funktion (**Filter**) mit einem komplizierteren Suchbegriff verwenden (der Einfachheit halber entfernen wir den Aufruf **SortByColumns**):
 
-![](media/delegation-overview/products-apple-bluedot.png)
+![SortByColumns-Aufruf entfernen](media/delegation-overview/products-apple-bluedot.png)
 
 Dies scheint zu funktionieren. Jetzt wird richtigerweise nur **„Apples“** angezeigt, und **„Pineapple“** ist nicht im Ergebnis enthalten.  Neben dem Katalog wird aber ein blauer Punkt angezeigt, und ein Teil der Formel ist blau unterkringelt.  Auch in der Miniaturansicht des Bildschirms wird ein blauer Punkt angezeigt.  Wenn Sie auf den blauen Punkt neben dem Katalog zeigen, wird Folgendes angezeigt:
 
-![](media/delegation-overview/products-apple-bluepopup.png)
+![Auf den blauen Punkt zeigen](media/delegation-overview/products-apple-bluepopup.png)
 
 Wir nutzen zwar **Filter**, also eine delegierbare Funktion, zusammen mit SQL Server, einer delegierbaren Datenquelle, aber die in **Filter** verwendete Formel ist nicht delegierbar.  Die Delegierung von **Mid** und **Len** an eine Datenquelle ist nicht möglich.
 
 Aber es hat funktioniert, oder?  Na ja, fast.  Aus diesem Grund ist dies ein blauer Punkt und kein gelbes Warnsymbol mit roter Unterkringelung.  Wenn die Tabelle **[dbo].[Products]** weniger als 500 Datensätze enthält, hat dies perfekt funktioniert.   Alle Datensätze wurden auf das Gerät übertragen, und die Funktion **Filter** wurde lokal angewendet.  
 
 Falls diese Tabelle dagegen mehr als 500 Datensätze enthält, werden nur Obstsorten *in den ersten 500 Datensätzen der Tabelle*, die mit **„Apple“** beginnen, im Katalog angezeigt.  Wenn **„Apple, Fuji“** als Name im 501. oder 500.001. Datensatz enthalten ist, wird er nicht gefunden.
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: b3eafd9f37537a083212e9ecbb92c6928ae0f773
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
@@ -30,7 +30,7 @@ In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzei
 ## <a name="key-properties"></a>Haupteigenschaften
 **Loop** – Gibt an, ob ein Audio- oder Videoclip am Ende der Wiedergabe automatisch neu gestartet wird.
 
-**Media** – Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
+**Media**: Ein Bezeichner für den Clip, der von einem Audio- oder Video-Steuerelement wiedergegeben wird.
 
 **ShowControls** – Gibt an, ob ein Audio- oder Videoplayer, z.B. eine Schaltfläche für Wiedergabe und ein Lautstärkeregler, und ein Stift-Steuerelement angezeigt wird, z.B. Symbole zum Zeichnen oder Löschen.
 
@@ -93,11 +93,12 @@ In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzei
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 4. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des Steuerelements ab, das Sie hinzugefügt haben.
    
-    **Tipp:** Die Wiedergabeschaltfläche für das **Video**-Steuerelement wird angezeigt, wenn Sie auf das Steuerelement zeigen.
-5. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+    > [!TIP]
+> Die Wiedergabeschaltfläche für das **Video**-Steuerelement wird angezeigt, wenn Sie auf das Steuerelement zeigen.
+5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="play-a-youtube-video"></a>Abspielen eines YouTube-Videos
 1. Fügen Sie ein **Video**-Steuerelement hinzu, und legen Sie die **Media**-Eigenschaft auf die URL (in doppelten Anführungszeichen) eines YouTube-Videos fest.
 2. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des **Video**-Steuerelements ab.
-3. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+3. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 

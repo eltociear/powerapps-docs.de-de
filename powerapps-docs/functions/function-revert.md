@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 4a0b39a9b247a6d410ac1a705234f90833ec707a
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: e61566077ccdf9f3b2913ec0293868c1863c26fa
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="revert-function-in-powerapps"></a>Funktion „Revert“ in PowerApps
 Aktualisiert und behebt Fehler für die [Datensätze](../working-with-tables.md#records) einer [Datenquelle](../working-with-data-sources.md)
@@ -31,7 +31,7 @@ Bei den wiederhergestellten Datensätzen behebt **Revert** auf alle Fehler der [
 
 Wenn die **[Errors](function-errors.md)**-Funktion einen Konflikt nach einem **[Patch](function-patch.md)**- oder einem anderen Datenvorgang meldet, führen Sie die **Revert**-Funktion auf den Datensatz aus, um mit der in Konflikt stehenden Version zu beginnen und die Änderung erneut vorzunehmen.
 
-**Revert** hat keinen Rückgabewert. Sie können diese Funktion nur in einer [Verhaltensformel](../working-with-formulas-in-depth.md#behavior-formulas) verwenden.
+**Revert** hat keinen Rückgabewert. Sie können diese Funktion nur in einer [Verhaltensformel](../working-with-formulas-in-depth.md) verwenden.
 
 ## <a name="syntax"></a>Syntax
 **Revert**( *Datenquelle* [, *Datensatz* ] )

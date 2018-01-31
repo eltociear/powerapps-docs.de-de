@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/25/2017
+ms.date: 10/20/2017
 ms.author: archanan
-ms.openlocfilehash: 45b43f8d1518c09ffcd584f055391e442899dfa3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 637cccf5a5a88d012657172a9e312e232915a615
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>Herstellen einer Verbindung mit Office 365 Outlook aus PowerApps
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -30,11 +30,10 @@ Sie können Steuerelemente hinzufügen, um diese Funktionen in Ihrer App auszuf�
 
 In diesem Thema wird gezeigt, wie Sie Office 365 als Verbindung hinzufügen, Office 365 Ihrer App als Datenquelle hinzufügen und wie Sie die Daten in verschiedenen Steuerelementen verwenden.
 
-**Wichtig:** Zum Zeitpunkt der Veröffentlichung dieses Artikels werden für den Kalender keine wiederkehrenden Ereignisse unterstützt.
+> [!IMPORTANT]
+> Zum Zeitpunkt der Veröffentlichung dieses Artikels werden für den Kalender keine wiederkehrenden Ereignisse unterstützt.
 
-&nbsp;
-
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 ## <a name="connect-to-office-365-outlook"></a>Herstellen einer Verbindung mit Office 365 Outlook
 1. [Fügen Sie eine Datenverbindung hinzu](../add-data-connection.md), und wählen Sie **Office 365 Outlook** aus:  
@@ -66,7 +65,7 @@ Die Office 365 Outlook-Verbindung wurde erstellt und Ihrer App hinzugefügt. Sie
 1. Klicken Sie im Menü **Insert** (Einfügen) auf **Text**, und wählen Sie dann **Texteingabe** (Texteingabe) aus.
 2. Wiederholen Sie den vorherigen Schritt zwei weitere Male, sodass Sie über drei Felder verfügen, und ordnen Sie diese in einer Spalte an:  
    
-    ![](./media/connection-office365-outlook/threetextinput.png)
+    ![Drei Felder in einer Spalte](./media/connection-office365-outlook/threetextinput.png)
 3. Benennen Sie die Steuerelemente wie folgt um:  
    
    * **inputTo**
@@ -76,8 +75,8 @@ Die Office 365 Outlook-Verbindung wurde erstellt und Ihrer App hinzugefügt. Sie
    
     `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
 5. Verschieben Sie die Schaltfläche, sodass sie unter den anderen Steuerelementen angezeigt wird, und legen Sie ihre **[Text](../controls/properties-core.md)**-Eigenschaft auf **"Send email"** fest.
-6. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-office365-outlook/preview.png)). Geben Sie eine gültige E-Mail-Adresse in **inputTo** ein, und geben Sie in den anderen beiden **Texteingabe**-Steuerelementen beliebigen Text ein.
-7. Wählen Sie **end email** aus, um die Nachricht zu senden. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+6. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche (![Vorschauschaltfläche](./media/connection-office365-outlook/preview.png)) aus. Geben Sie eine gültige E-Mail-Adresse in **inputTo** ein, und geben Sie in den anderen beiden **Texteingabe**-Steuerelementen beliebigen Text ein.
+7. Wählen Sie **end email** aus, um die Nachricht zu senden. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="send-a-message-with-an-attachment"></a>Senden einer Nachricht mit einem Anhang
 Sie können beispielsweise eine App erstellen, in der der Benutzer Bilder mit der Kamera des Geräts aufzeichnet und diese als Anhänge sendet. Benutzer können zudem viele weitere Dateitypen an eine E-Mail-App anhängen.
@@ -88,7 +87,8 @@ Führen Sie die Schritte im vorhergehenden Abschnitt aus, um einer Nachricht ein
 * ContentBytes
 * @odata.type
 
-**Hinweis:** Sie können die @odata.type-Eigenschaft nur für einen Anhang angeben, und Sie können sie auf eine leere Zeichenfolge festlegen.
+> [!NOTE]
+> Sie können die @odata.type-Eigenschaft nur für einen Anhang angeben, und Sie können sie auf eine leere Zeichenfolge festlegen.
 
 In diesem Beispiel wird ein Foto als **file1.jpg** gesendet:
 
@@ -108,20 +108,23 @@ In diesem Beispiel wird zusätzlich zum Foto eine Audiodatei gesendet:
 3. Legen Sie im Katalog die **Text**-Eigenschaft der ersten Bezeichnung auf `ThisItem.Id` fest. Legen Sie die zweite Bezeichnung auf `ThisItem.Subject` fest. Legen Sie die dritte Bezeichnung auf `ThisItem.Body` fest.
 4. Wählen Sie die erste Bezeichnung im Katalog aus, und benennen Sie sie in **EmailID** um:
    
-    ![Schließen Sie den Bereich „Optionen“.](./media/connection-office365-outlook/renameheading.png)
+    ![Erste Bezeichnung umbenennen](./media/connection-office365-outlook/renameheading.png)
 5. Wählen Sie die dritte Bezeichnung im Katalog aus, und fügen Sie eine **Schaltfläche** hinzu (Menü **Einfügen**). Legen Sie die **OnSelect**-Eigenschaft der Schaltfläche auf die folgende Formel fest:  
    
     `Office365.DeleteEmail(EmailID.Text)`
-6. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-office365-outlook/preview.png)). Wählen Sie eine der E-Mails in Ihrem Katalog aus, und klicken Sie auf die Schaltfläche. <br/><br/> **HINWEIS** Hierdurch werden die ausgewählten E-Mails aus dem Posteingang gelöscht. Vergewissern Sie sich daher, dass Sie die richtigen E-Mails auswählen.
-7. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+6. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![Vorschauschaltfläche](./media/connection-office365-outlook/preview.png)). Wählen Sie eine der E-Mails in Ihrem Katalog aus, und klicken Sie auf die Schaltfläche. 
+    
+    > [!NOTE]
+    > Hierdurch werden die ausgewählten E-Mails aus dem Posteingang gelöscht. Vergewissern Sie sich daher, dass Sie die richtigen E-Mails auswählen.
+7. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="mark-a-message-as-read"></a>Markieren einer Nachricht als gelesen
-In diesem Abschnitt werden die gleichen Steuerelemente verwendet wie unter [Löschen von E-Mails](connection-office365-outlook.md#delete-email).
+In diesem Abschnitt werden die gleichen Steuerelemente verwendet wie unter [Löschen einer Nachricht](connection-office365-outlook.md#delete-a-message).
 
 1. Legen Sie die **OnSelect**-Eigenschaft der Schaltfläche auf die folgende Formel fest:  
    
     `Office365.MarkAsRead(EmailID.Text)`
-2. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-office365-outlook/preview.png)). Wählen Sie eine ungelesene E-Mail aus, und klicken Sie auf die Schaltfläche.
+2. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![Vorschauschaltfläche](./media/connection-office365-outlook/preview.png)). Wählen Sie eine ungelesene E-Mail aus, und klicken Sie auf die Schaltfläche.
 3. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="helpful-links"></a>Nützliche Links

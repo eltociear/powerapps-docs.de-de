@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 1aff4df6e314f50a67aff6a08298d3d7aa4a9cfa
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>Eine Beziehung zwischen Entitäten erstellen
 Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Customers** und eine Entität **Orders**, und die Entität **Orders** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Customers**, um anzuzeigen, welcher Kunde den Auftrag erteilt hat. Sie können ein Nachschlagefeld verwenden, Daten aus der **Customers**-Entität für den Kunden anzuzeigen, der den Auftrag erteilt hat. Weitere Informationen finden Sie unter [Entity relationships and lookup fields (Entitätsbeziehungen und Nachschlagefelder)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships).
@@ -50,11 +50,12 @@ Angenommen, Entität A verfügt über eine Nachschlagebeziehung zu Entität B:
 * Sie können alle Datensätze in Entität A ohne Einschränkung löschen.
 * Falls ein Datensatz in Entität B mit mindestens einem Datensatz in Entität A übereinstimmt, müssen Sie zunächst alle übereinstimmenden Datensätze in Entität A löschen, bevor Sie den Datensatz in Entität B löschen können.
 
-**Hinweis**: Falls Entität B eine Standardentität mit einer übergeordneten Beziehung zu Entität A ist und Sie einen Datensatz aus Entität A löschen, werden alle übereinstimmenden Datensätze in Entität B ebenfalls gelöscht.
+> [!NOTE]
+> Falls Entität B eine Standardentität mit einer übergeordneten Beziehung zu Entität A ist und Sie einen Datensatz aus Entität A löschen, werden alle übereinstimmenden Datensätze in Entität B ebenfalls gelöscht.
 
 Informationen dazu, wie Sie ein Feld löschen, finden Sie unter [Verwalten von Feldern](data-platform-manage-fields.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Generate an app by using a Common Data Service database (Generieren einer App mithilfe einer Common Data Service-Datenbank)](data-platform-create-app.md)
+* [Generieren einer App mithilfe einer Common Data Service-Datenbank](data-platform-create-app.md)
 * [Neuerstellen einer App mithilfe einer Common Data Service-Datenbank](data-platform-create-app-scratch.md)
 

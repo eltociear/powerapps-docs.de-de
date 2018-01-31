@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5bf844e4debf7b4614fafe948a6ec15943fd35f5
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="image-control-in-powerapps"></a>Image-Steuerelement in PowerApps
 Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle anzeigt
@@ -31,7 +31,9 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 **[Image](properties-visual.md)** : der Name des Images, das in einem Image-, Audio- oder Mikrofon-Steuerelement angezeigt wird
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**AutoDisableOnSelect**: deaktiviert automatisch das Steuerelement, während das Verhalten „OnSelect“ ausgeführt wird.
+**ApplyEXIFOrientation**: Gibt an, ob Ausrichtung, die in den im Bild eingebetteten EXIF-Daten angegeben ist, automatisch angewendet wird.
+
+**AutoDisableOnSelect**: Deaktiviert das Steuerelement automatisch, während das OnSelect-Verhalten ausgeführt wird.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -39,7 +41,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)**: Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **CalculateOriginalDimensions**: aktiviert die **OriginalHeight** und **OriginalWidth**-Eigenschaften.
 
@@ -51,13 +53,19 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
+**FlipHorizontal**: Gibt an, ob das Bild vor der Anzeige horizontal gekippt werden soll.
+
+**FlipVertical**: Gibt an, ob das Bild vor der Anzeige vertikal gekippt werden soll.
+
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
 **[HoverBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über das Steuerelement hält.
 
 **[HoverFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über ihm hält.
 
-**[ImagePosition](properties-visual.md)** : gibt die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Images in einem Bildschirm oder in einem Steuerelement an, wenn es nicht die gleiche Größe wie das Image hat.
+**[ImagePosition](properties-visual.md)**: Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.
+
+**ImageRotation**: Gibt an, wie das Bild vor der Anzeige gedreht werden soll.  Zulässige Werte sind „none“, „clockwise (CW) 90 degrees“, „counter-clockwise (CCW) 90 degrees“ und „clockwise 180 degrees“.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -85,7 +93,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 **[RadiusTopRight](properties-size-location.md)** – Der Grad der Rundung der rechten oberen Ecke eines Steuerelements.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **Transparency**: gibt an, inwieweit Steuerelemente hinter einem Bild sichtbar bleiben.
 
@@ -105,21 +113,20 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 1. Klicken oder tippen Sie auf der Registerkarte **Content** (Inhalt) auf die Option **Media** (Medien), und klicken oder tippen Sie anschließend auf **Browse** (Durchsuchen).
 2. Klicken oder tippen Sie auf die Image-Datei, die Sie hinzufügen möchten, und klicken oder tippen Sie auf **Open** (Öffnen). Drücken Sie anschließend ESC, um in den Standardarbeitsbereich zurückzukehren.
 3. Fügen Sie ein **Image**-Steuerelement hinzu, und legen Sie dessen  **[Items](properties-core.md)**-Eigenschaft auf den Namen der Datei fest, die Sie hinzugefügt haben.
-   
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
-   
+
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+
     Das **Image**-Steuerelement zeigt das von Ihnen angegebene Image an.
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>Anzeigen eines Satzes von Images aus einer Datenquelle
 1. Laden Sie diese [Excel-Datei](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) herunter, und speichern Sie sie auf Ihrem lokalen Gerät.
 2. Erstellen oder öffnen Sie in PowerApps Studio eine App, und klicken oder tippen Sie dann im rechten Bereich auf **Datenquelle hinzufügen**.
-   
+
     Wenn im rechten Bereich **Datenquelle hinzufügen** nicht angezeigt wird, klicken oder tippen Sie auf der linken Navigationsleiste auf einen beliebigen Bildschirm.
 3. Klicken oder tippen Sie auf **Add static data to your app** (Statische Daten zu Ihrer App hinzufügen), klicken oder tippen Sie auf die Excel-Datei, die Sie heruntergeladen haben, und klicken oder tippen Sie anschließend auf **Open** (Öffnen).
 4. Aktivieren Sie das Kontrollkästchen **Flooring Estimates** (Kostenschätzungen für Bodenbeläge), und klicken oder tippen Sie auf **Connect** (Verbinden).
 5. Fügen Sie ein **Katalog**-Steuerelement mit Bildern hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf **FlooringEstimates** (Kostenschätzungen für Bodenbeläge) fest.
-   
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
-   
-    Das **Katalog**-Steuerelement zeigt Bilder von Teppich-, Parkett- und Fliesenprodukten auf Basis von Links in der von Ihnen heruntergeladenen Excel-Datei.
 
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+
+    Das **Katalog**-Steuerelement zeigt Bilder von Teppich-, Parkett- und Fliesenprodukten auf Basis von Links in der von Ihnen heruntergeladenen Excel-Datei.

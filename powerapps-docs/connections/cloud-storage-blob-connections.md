@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 379b9773033245ba5e2a88486a7738f51f000e6b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
 PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
@@ -28,7 +28,7 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
 | --- | --- | --- | --- | --- | --- |
 | ![Symbol](./media/cloud-storage-blob-connections/blobicon.png) |![API-Symbol][boxicon] |![API-Symbol][dropboxicon] |![API-Symbol][googledriveicon] |![API-Symbol][onedriveicon] |![API-Symbol][onedriveforbusinessicon] |
 
-[!INCLUDE [connection-requirements](../../includes/connection-requirements.md)]
+[!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
 * Eine Excel-Datei, deren Daten [als Tabelle formatiert](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664) sind:
   
@@ -53,7 +53,8 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
    
     ![Auswählen der Excel-Tabelle](./media/cloud-storage-blob-connections/selecttable.png)
    
-    **HINWEIS** Beachten Sie, dass die Excel-Daten als Tabelle formatiert sein müssen.
+    > [!NOTE]
+> Beachten Sie, dass die Excel-Daten als Tabelle formatiert sein müssen.
 
 ## <a name="using-the-excel-data-in-your-app"></a>Verwenden von Excel-Daten in der App
 1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Katalog** aus, und wählen Sie anschließend ein Katalogsteuerelement **Mit Text** aus.
@@ -73,7 +74,8 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
     Beispielausgabe:  
     ![Zweite und dritte Bezeichnung](./media/cloud-storage-blob-connections/secondthirdtextboxes.png)
    
-    <br/>**HINWEIS**: Das erste Feld ist eigentlich eine Bildsteuerung. Wenn Sie über kein Bild in der Excel-Tabelle verfügen, können Sie das Bildsteuerelement löschen und an dessen Stelle eine Bezeichnung hinzufügen. Unter [Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md) finden Sie viele hilfreiche Informationen.
+> [!NOTE]
+> Das erste Feld ist eigentlich eine Bildsteuerung. Wenn Sie über kein Bild in der Excel-Tabelle verfügen, können Sie das Bildsteuerelement löschen und an dessen Stelle eine Bezeichnung hinzufügen. Unter [Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md) finden Sie viele hilfreiche Informationen.
 
 In [Grundlegendes zu Tabellen und Datensätzen](../working-with-tables.md) finden Sie weitere Einzelheiten und einige Beispiele.  
 

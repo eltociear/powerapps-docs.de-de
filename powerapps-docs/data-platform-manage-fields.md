@@ -12,37 +12,51 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/06/2016
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 8255f597a1c9261c55bef465a8340fea49c69aa4
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 87be6f571688fd040c5f2578015e1a3393ca9ea1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="manage-custom-fields"></a>Verwalten von benutzerdefinierten Feldern
 Sie können ein oder mehrere benutzerdefinierte Felder in einer beliebigen Entität erstellen und aktualisieren. Wenn Sie ein benutzerdefiniertes Feld erstellen, geben Sie einen Satz von Eigenschaften an, z.B. den Namen des Felds, den Anzeigenamen und den Typ der Daten, die es enthält. Weitere Informationen finden Sie unter [Entity field data types (Datentypen der Entitätsfelder)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-data-types) und [Entity field properties (Eigenschaften der Entitätsfelder)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-properties).
 
-**Hinweis:** Jede Entität verfügt über [Systemfelder](data-platform-create-entity.md#system-and-record-title-fields), die z.B. angeben, wann und durch wen ein Datensatz zuletzt aktualisiert wurde. Darüber hinaus verfügen [Standardentitäten](data-platform-intro.md#standard-entities) über Standardfelder. Sie können keine System- oder Standardfelder ändern oder löschen. Wenn Sie ein benutzerdefiniertes Feld erstellen, sollte es zusätzliche Funktionalität zu diesen integrierten Feldern bieten.
+> [!NOTE]
+> Jede Entität verfügt über [Systemfelder](data-platform-create-entity.md#system-fields-and-the-record-title-field), die z.B. angeben, wann und durch wen ein Datensatz zuletzt aktualisiert wurde. Darüber hinaus verfügen [Standardentitäten](data-platform-intro.md#standard-entities) über Standardfelder. Sie können keine System- oder Standardfelder ändern oder löschen. Wenn Sie ein benutzerdefiniertes Feld erstellen, sollte es zusätzliche Funktionalität zu diesen integrierten Feldern bieten.
 
 ## <a name="create-a-field"></a>Ein Feld erstellen
+
 1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Common Data Service**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entities** (Entitäten). Eine Liste von Entitäten wird angezeigt. Klicken oder tippen Sie auf die Spaltenüberschrift **Typ**, um benutzerdefinierte Entitäten oben in der Liste anzuzeigen. Sie können in der Liste filtern, indem Sie mindestens ein Zeichen in der Suchleiste eingeben.
+
 2. Klicken oder tippen Sie auf eine Entität, und klicken oder tippen Sie auf **Feld hinzufügen** am oberen Bildschirmrand.
+
 3. Unter **Anzeigename** geben Sie die Textzeichenfolge ein, mit der Benutzer das Feld identifizieren können. Weitere Informationen finden Sie unter [Create an app (Erstellen einer App)](data-platform-create-app.md).
+
 4. Unter **Name** geben Sie die Textzeichenfolge ein, mit der Sie auf das Feld verweisen, z.B. in einer Formel, wenn Sie eine App erstellen.
    
-    **Wichtig**: Geben Sie einen Namen an, der eindeutig, klar und sinnvoll ist, da Sie ihn nicht mehr ändern können, nachdem Sie das Feld erstellt haben.
+    > [!IMPORTANT]
+    > Geben Sie einen Namen an, der eindeutig, klar und sinnvoll ist, da Sie ihn nicht mehr ändern können, nachdem Sie das Feld erstellt haben.
+
 5. Unter **Typ** geben Sie den Datentyp an, den das Feld enthält, z.B. **Text** oder **Number**.
    
-    **Wichtig**: Geben Sie diese Eigenschaft sorgfältig an, da Sie sie möglicherweise nicht mehr ändern können, wenn das Feld Daten enthält. Weitere Informationen zu den Datentypen, die Sie angeben können, finden Sie unter [Grundlegendes zu Entitäten](data-platform-intro.md#custom-fields).
+    > [!IMPORTANT]
+    > Geben Sie diese Eigenschaft sorgfältig an, da Sie sie möglicherweise nicht mehr ändern können, wenn das Feld Daten enthält. Weitere Informationen zu den Datentypen, die Sie angeben können, finden Sie unter [Grundlegendes zu Entitäten](data-platform-intro.md#custom-fields).
+
 6. Wenn Sie dazu aufgefordert werden, geben Sie zusätzliche Informationen für den Datentyp an, den Sie angegeben haben.
+
 7. Aktivieren Sie das Kontrollkästchen bei **Eindeutig**, wenn jeder Datensatz einen eindeutigen Wert in diesem Feld haben muss.
+
 8. Aktivieren Sie das Kontrollkästchen bei **Erforderlich**, wenn jeder Datensatz einen Wert in diesem Feld haben muss.
    
-    **Wichtig**: Sie können nicht fordern, dass ein benutzerdefiniertes Feld in einer Standardentität Daten enthält. Diese Einschränkung verhindert, dass Sie wichtige Apps beeinträchtigen, die diese Entität verwenden.
+    > [!IMPORTANT]
+    > Sie können nicht festlegen, dass ein benutzerdefiniertes Feld in einer Standardentität Daten enthalten muss. Diese Einschränkung verhindert, dass Sie wichtige Apps beeinträchtigen, die diese Entität verwenden.
+
 9. Klicken oder tippen Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
    
-    **Wichtig**: Ihre Änderungen gehen verloren, wenn Sie sie nicht speichern, bevor Sie eine andere Seite im Browser öffnen oder den Browser schließen.
+    > [!IMPORTANT]
+    > Ihre Änderungen gehen verloren, wenn Sie sie nicht speichern, bevor Sie eine andere Seite im Browser öffnen oder den Browser schließen.
 
 Sie werden benachrichtigt, wenn der Vorgang erfolgreich abgeschlossen ist. Wenn der Vorgang nicht erfolgreich ist, gibt eine Fehlermeldung an, welche Probleme aufgetreten sind und wie Sie sie beheben können.
 
@@ -56,7 +70,8 @@ Sie werden benachrichtigt, wenn der Vorgang erfolgreich abgeschlossen ist. Wenn 
    * Zum Löschen des Felds klicken oder tippen Sie auf die Auslassungspunkte (...) neben dem rechten Rand des Felds, und klicken oder tippen anschließend auf **Löschen**.
 3. Klicken oder tippen Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
    
-    **Wichtig**: Ihre Änderungen gehen verloren, wenn Sie sie nicht speichern, bevor Sie eine andere Seite im Browser öffnen oder den Browser schließen.
+    > [!IMPORTANT]
+    > Ihre Änderungen gehen verloren, wenn Sie sie nicht speichern, bevor Sie eine andere Seite im Browser öffnen oder den Browser schließen.
 
 Sie werden benachrichtigt, wenn der Vorgang erfolgreich abgeschlossen ist. Wenn der Vorgang nicht erfolgreich ist, gibt eine Fehlermeldung an, welche Probleme aufgetreten sind und wie Sie sie beheben können.
 

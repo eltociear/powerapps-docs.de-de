@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/20/2017
 ms.author: ankitsar
-ms.openlocfilehash: 64c14c7e3a6ab599aa14d2200679134cc3fcc7d2
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 19d6a2718a39e3426fc0fcb4aca3223825f29a07
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="add-and-open-an-app-in-microsoft-teams"></a>Hinzufügen und Öffnen einer App in Microsoft Teams
 Fügen Sie einem Microsoft Teams-Kanal eine App hinzu, damit alle Benutzer, für die die App freigeben wurde, diese in diesem Kanal öffnen können. Sie können Apps hinzufügen, die Sie erstellt haben oder für die Sie die Berechtigungen **Verwenden** oder **Bearbeiten** haben. Sie können die jeweilige App sowohl in einem Browser als auch in der Desktop-App für Microsoft Teams hinzufügen und öffnen.
@@ -37,7 +37,8 @@ Fügen Sie einem Microsoft Teams-Kanal eine App hinzu, damit alle Benutzer, für
     ![](./media/open-app-embedded-in-teams/add-a-tab.png)
 5. Klicken oder tippen Sie auf die App, die Sie hinzufügen möchten.
    
-    **Hinweis**: Sie können nach einer App anhand des Namens, des Autors oder der Umgebung suchen.
+    > [!NOTE]
+> Sie können nach einer App anhand des Namens, des Autors oder der Umgebung suchen.
    
     ![](./media/open-app-embedded-in-teams/select-an-app.png)
 6. Klicken oder tippen Sie auf die Schaltfläche **Speichern**.

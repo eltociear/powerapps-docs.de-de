@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2017
 ms.author: sharik
-ms.openlocfilehash: 337f3fc00fe52e0008190e2144f21f40d1632f52
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4012439f121a212f6117aa18c1d906cab893248f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-powerapps"></a>Begrenzungen und Konfiguration in Microsoft PowerApps
 Dieses Thema enthält Informationen zu den aktuellen Begrenzungen und Konfigurationsdetails für PowerApps.
@@ -32,7 +32,8 @@ Diese Begrenzungen gelten für jede einzelne ausgehende Anforderung:
 | Timeout |180 Sekunden |
 | Wiederholungsversuche |4 |
 
-**HINWEIS**: Der Wert für die Anzahl der Wiederholungsversuche kann variieren. Bei bestimmten Fehlerbedingungen ist ein wiederholter Versuch nicht sinnvoll.
+> [!NOTE]
+> Der Wert für die Anzahl der Wiederholungsversuche kann variieren. Bei bestimmten Fehlerbedingungen ist ein wiederholter Versuch nicht sinnvoll.
 
 ## <a name="ip-addresses"></a>IP-Adressen
 Anforderungen von PowerApps verwenden IP-Adressen, die vom Bereich der [Umgebung](environments-overview.md) abhängig sind, in der sich die App befindet. Es werden keine für PowerApps-Szenarios verfügbaren vollqualifizierten Domänennamen veröffentlicht.

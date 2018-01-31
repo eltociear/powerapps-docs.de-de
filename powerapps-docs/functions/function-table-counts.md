@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: b3473d0dcf1462648f39c3dbbdedd12d1cfce08c
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f7f8ec5c63b3d0936a1123d547b5c19097f1e04b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>Funktionen „Count“, „CountA“, „CounfIf“ und „CountRows“ in PowerApps
 Zählen alle [Datensätze](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) oder alle Datensätze, die eine Bedingung erfüllen
@@ -35,11 +35,11 @@ Die Funktion **CountRows** zählt die Datensätze in einer Tabelle.
 
 Jede dieser Funktionen gibt eine Zahl zurück.
 
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Syntax
 **Count**( *EinspaltigeTabelle* )<br>
-**CountA**( *EinspaltigeTabelle* )
+**CountA**( *SingleColumnTable* )
 
 * *EinspaltigeTabelle*: erforderlich.  Die zu zählende Spalte mit Datensätzen.  
 

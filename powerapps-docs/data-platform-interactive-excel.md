@@ -14,16 +14,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: 2a72bfa21c8d4cb7eab0a3cb2292a61d5c036696
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d559774c65ee2db99f891e41472f6110e330bfc1
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="open-entity-data-in-excel"></a>Öffnen von Entitätsdaten in Excel
 Indem Sie Entitätsdaten in Microsoft Excel öffnen, können Sie schnell und einfach Daten mithilfe des Microsoft PowerApps-Add-Ins für Excel anzeigen und bearbeiten. Für das PowerApps-Add-In für Excel wird Microsoft Excel 2016 benötigt.
 
-**Hinweis**: Wenn Ihr Microsoft Azure Active Directory-Mandant (Azure AD) so konfiguriert ist, dass er Active Directory-Verbunddienste (AD FS) verwendet, müssen Sie sicherstellen, dass das Update von Mai 2016 angewendet wurde, damit das Excel-Add-In Sie richtig anmelden kann.
+> [!NOTE]
+> Wenn Ihr Microsoft Azure Active Directory-Mandant (Azure AD) so konfiguriert ist, dass er Active Directory-Verbunddienste (AD FS) verwendet, müssen Sie sicherstellen, dass das Update von Mai 2016 angewendet wurde, damit das Excel-Add-In Sie richtig anmelden kann.
 
 ## <a name="open-entity-data-in-excel"></a>Öffnen von Entitätsdaten in Excel
 1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Common Data Service**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entities** (Entitäten). Alle Entitäten werden angezeigt.

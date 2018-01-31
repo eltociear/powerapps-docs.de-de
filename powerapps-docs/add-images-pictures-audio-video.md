@@ -13,12 +13,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
-ms.author: karthikb
-ms.openlocfilehash: f0d55882938d3251e5b8164e8f5f4b035880273b
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.author: sharik
+ms.openlocfilehash: 849bde71d8f5dcf6505721758e2edca0921146bb
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
@@ -30,127 +30,156 @@ In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbett
 Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bilder, Video oder Audio).
 
 1. Wählen Sie auf der Registerkarte **Inhalt** die Option **Medien** aus.
+
 2. Wählen Sie unter **Medien** **Bilder**, **Videos** oder **Audio** aus, und wählen Sie anschließend **Durchsuchen** aus:
-   
-    ![][1]
+
+    ![Durchsuchen von Medien][1]
+
 3. Wählen Sie die hinzuzufügende Datei aus, und wählen Sie dann **Öffnen** aus.
-   
+
     Der Ordner **Bilder** auf dem Computer wird geöffnet, und Sie können dort ein Bild auswählen oder zu einem anderen Ordner navigieren.
+
 4. Wenn Sie die gewünschten Dateien hinzugefügt haben, drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+
 5. Wählen Sie auf der Registerkarte **Einfügen** **Medien** aus, und wählen Sie anschließend **Bild**, **Video** oder **Audio** aus:
-   
-    ![][8]
+
+    ![Auswählen des Medientyps][8]
+
 6. Wenn Sie ein Bild-Steuerelement hinzugefügt haben, legen Sie dessen **[Image](controls/properties-visual.md)**-Eigenschaft auf die hinzugefügte Datei fest:  
-   
+
     ![Festlegen der Image-Eigenschaft](./media/add-images-pictures-audio-video/imageproperty.png)
-   
-    **Hinweis** Geben Sie nur den Dateinamen ohne Erweiterung an, und schließen Sie diesen in einfache Anführungszeichen ein.
+
+    > [!NOTE]
+> Geben Sie nur den Dateinamen ohne Erweiterung an, und schließen Sie diesen in einfache Anführungszeichen ein.
+
 7. Wenn Sie ein Video- oder Audio-Steuerelement hinzugefügt haben, legen Sie dessen **Media**-Eigenschaft auf die hinzugefügte Datei fest:  
-   
+
     ![Festlegen der Media-Eigenschaft](./media/add-images-pictures-audio-video/mediaproperty.png)
-   
-    **Hinweis** Geben Sie ein YouTube-Video wieder, indem Sie die **Media**-Eigenschaft eines Video-Steuerelements auf die entsprechende URL festlegen, die in doppelte Anführungszeichen eingeschlossen werden muss.
+
+    > [!NOTE]
+> Geben Sie ein YouTube-Video wieder, indem Sie die **Media**-Eigenschaft eines Videosteuerelements auf die entsprechende URL festlegen, die in doppelte Anführungszeichen eingeschlossen werden muss.
 
 ## <a name="add-media-from-azure-media-services"></a>Hinzufügen von Medien aus Azure Media Services
 1. Laden Sie in Ihrem Azure Media Services-Konto über **AMS > Einstellungen > Medienobjekte** Ihr Videomedienobjekt hoch, und veröffentlichen Sie es.
+
 2. Nachdem das Video veröffentlicht wurde, kopieren Sie seine URL.
+
 3. Fügen Sie in PowerApps über **Einfügen > Medien** das **Video**-Steuerelement hinzu.
+
 4. Legen Sie die **Media**-Eigenschaft der URL fest, die Sie kopiert haben.
 
-Wie in dieser Abbildung gezeigt, können Sie jede Streaming-URL auswählen, die von Azure Media Services unterstützt wird:
+    Wie in dieser Abbildung gezeigt, können Sie jede Streaming-URL auswählen, die von Azure Media Services unterstützt wird:
 
-![Festlegen der Media-Eigenschaft](./media/add-images-pictures-audio-video/ams-with-powerapps.png)
+    ![Festlegen der Media-Eigenschaft](./media/add-images-pictures-audio-video/ams-with-powerapps.png)
 
 ## <a name="add-images-from-the-cloud-to-your-app"></a>Hinzufügen von Bildern aus der Cloud zur App
 In diesem Szenario speichern Sie Bilder in einem Cloudspeicherkonto (OneDrive for Business). Sie verwenden eine Excel-Tabelle, in der der Pfad zu den Bildern enthalten ist, und Sie zeigen die Bilder in einem Katalog-Steuerelement in der App an.
 
 In diesem Szenario wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
 
-**HINWEIS:** Im Pfad zu diesen Bildern in der Excel-Datei müssen Schrägstriche verwendet werden. Werden Pfade zu Bildern von PowerApps in einer Excel-Tabelle gespeichert, werden im Pfad umgekehrte Schrägstriche verwendet. Wenn Sie Pfade zu Bildern aus einer solchen Tabelle verwenden, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt.  
+> [!NOTE]
+> Im Pfad zu diesen Bildern in der Excel-Datei müssen Schrägstriche verwendet werden. Werden Pfade zu Bildern von PowerApps in einer Excel-Tabelle gespeichert, werden im Pfad umgekehrte Schrägstriche verwendet. Wenn Sie Pfade zu Bildern aus einer solchen Tabelle verwenden, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt.  
 
 1. Laden Sie die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Assets** in Ihr Cloud-Speicherkonto.
+
 2. Benennen Sie den Ordner **Assets** in **Assets_images** um.
+
 3. Erstellen Sie in einem Excel-Arbeitsblatt eine Tabelle mit einer Spalte, und füllen Sie diese mit den folgenden Daten:
-   
+
     ![Tabelle „Jackets“](./media/add-images-pictures-audio-video/jackets.png)
+
 4. Benennen Sie die Tabelle **Jackets**, und benennen Sie die Excel-Datei **Assets.xlsx**.
+
 5. Fügen Sie in der App die Tabelle **Jackets** als Datenquelle hinzu.  
+
 6. Fügen Sie ein **Nur-Bild**-Steuerelement hinzu (**Einfügen** Registerkarte > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Jackets` fest:  
-   
+
     ![Items-Eigenschaft](./media/add-images-pictures-audio-video/items-jackets.png)
-   
+
     Der Katalog wird automatisch mit den Bildern aktualisiert:  
-   
+
     ![Bilder aus „Jackets“](./media/add-images-pictures-audio-video/images.png)
-   
+
     Wenn Sie die **Items**-Eigenschaft festlegen, wird der Excel-Tabelle automatisch die Spalte **PowerAppsId** hinzugefügt.
-   
+
     In der Excel-Tabelle kann der Pfad zu den Bildern ebenfalls eine Bild-URL sein. Ein Beispiel ist die Beispieldatei [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Sie können sie in Ihr Cloud-Speicherkonto herunterladen, die Tabelle `FlooringEstimates` als Datenquelle in der App hinzufügen und anschließend das Katalog-Steuerelement auf `FlooringEstimates` festlegen. Der Katalog wird automatisch mit den Bildern aktualisiert.
 
 ## <a name="upload-pen-drawings-to-the-cloud"></a>Hochladen von Stiftzeichnungen in die Cloud
 In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (OneDrive for Business) hochladen und wie die Zeichnungen dort gespeichert werden.
 
 1. Fügen Sie in Excel Zelle A1 **Image [Bild]** hinzu.
+
 2. Erstellen Sie eine Tabelle, indem Sie folgende Schritte durchführen:    
-   
-   a. Wählen Sie Zelle A1 aus.
-   
-   b. Wählen Sie im Menüband **Einfügen** **Tabelle** aus.
-   
-   c. Aktivieren Sie im Dialogfeld das Kontrollkästchen **Meine Tabelle hat Überschriften**, und wählen Sie anschließend **OK** aus.
-   
-   ![Erstellen einer Tabelle](./media/add-images-pictures-audio-video/create-table.png)
-   
-   Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen zum Formatieren von Tabellen im Excel-Format finden Sie unter [Daten als Tabelle formatieren](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
-   
-   d. Benennen Sie die Tabelle **Drawings**:
-   
-   ![Umbenennen der Tabelle in „Drawings“](./media/add-images-pictures-audio-video/name-media-table.png)
+
+   1. Wählen Sie Zelle A1 aus.
+
+   2. Wählen Sie im Menüband **Einfügen** **Tabelle** aus.
+
+   3. Aktivieren Sie im Dialogfeld das Kontrollkästchen **Meine Tabelle hat Überschriften**, und wählen Sie anschließend **OK** aus.
+
+       ![Erstellen einer Tabelle](./media/add-images-pictures-audio-video/create-table.png)
+
+       Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen zum Formatieren von Tabellen im Excel-Format finden Sie unter [Daten als Tabelle formatieren](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
+
+   4. Benennen Sie die Tabelle **Drawings**:
+
+       ![Umbenennen der Tabelle in „Drawings“](./media/add-images-pictures-audio-video/name-media-table.png)
+
 3. Speichern Sie die Excel-Datei in OneDrive for Business unter dem Namen **SavePen.xlsx**.
+
 4. Erstellen Sie in PowerApps eine [leere App](get-started-create-from-blank.md).
+
 5. Fügen Sie in der App das OneDrive for Business-Konto als [Datenquelle](add-data-connection.md) hinzu:
-   
-   a.    Klicken oder tippen Sie auf die Registerkarte **Ansicht**, und klicken oder tippen Sie anschließend auf **Datenquellen**.
-   
-   ![](./media/add-images-pictures-audio-video/choose-data-sources.png)
-   
-   b.    Klicken oder tippen Sie auf **Datenquelle hinzufügen**, und tippen oder klicken Sie auf **OneDrive for Business**.
-   
-   ![](./media/add-images-pictures-audio-video/select-source.png)
-   
-   c.    Klicken oder tippen Sie auf **SavePen.xlsx**.
-   
-   d.    Wählen Sie die Tabelle **Drawings** aus, und klicken oder tippen Sie auf **Verbinden**.
-   
-   ![Verbinden](./media/add-images-pictures-audio-video/savepen.png)  
-   
-   Nun wird die Tabelle „Drawings“ als Datenquelle aufgelistet.
+
+   1. Klicken oder tippen Sie auf die Registerkarte **Ansicht**, und klicken oder tippen Sie anschließend auf **Datenquellen**.
+
+       ![](./media/add-images-pictures-audio-video/choose-data-sources.png)
+
+   2. Klicken oder tippen Sie auf **Datenquelle hinzufügen**, und tippen oder klicken Sie auf **OneDrive for Business**.
+
+       ![](./media/add-images-pictures-audio-video/select-source.png)
+
+   3. Klicken oder tippen Sie auf **SavePen.xlsx**.
+
+   4. Wählen Sie die Tabelle **Drawings** aus, und klicken oder tippen Sie auf **Verbinden**.
+
+       ![Verbinden](./media/add-images-pictures-audio-video/savepen.png)  
+
+       Nun wird die Tabelle „Drawings“ als Datenquelle aufgelistet.
+
 6. Wählen Sie auf der Registerkarte **Einfügen** die Option **Text** aus, und wählen Sie anschließend **Stifteingabe** aus.
+
 7. Benennen Sie das neue Steuerelement **MyPen**:  
-   
+
     ![Umbenennen](./media/add-images-pictures-audio-video/rename-mypen.png)
+
 8. Fügen Sie auf der Registerkarte **Einfügen** ein **Schaltflächen**-Steuerelement hinzu, und legen Sie dessen **OnSelect**-Eigenschaft auf diese Formel fest:
-   
-        Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})
+
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
+
 9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die **Image**-Eigenschaft des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
-   
-   Ordnen Sie die Steuerelemente so an, dass Ihr Bildschirm dem Folgenden ähnelt:  
-   
-   ![Beispielbildschirm](./media/add-images-pictures-audio-video/screen.png)
-10. Drücken Sie F5, oder wählen Sie die Vorschau ( ![](./media/add-images-pictures-audio-video/preview.png) ) aus.
+
+    Ordnen Sie die Steuerelemente so an, dass Ihr Bildschirm dem Folgenden ähnelt:  
+
+    ![Beispielbildschirm](./media/add-images-pictures-audio-video/screen.png)
+
+10. Drücken Sie F5, oder wählen Sie die Vorschau ( ![Vorschauschaltfläche](./media/add-images-pictures-audio-video/preview.png) ).
+
 11. Zeichnen Sie ein Element im MyPen, und wählen Sie dann die Schaltfläche aus.
-    
-     Das erste Bild im Katalog-Steuerelement enthält Ihre soeben erstellte Zeichnung.
+
+    Das erste Bild im Katalog-Steuerelement enthält Ihre soeben erstellte Zeichnung.
+
 12. Bearbeiten Sie die Zeichnung weiter, und wählen Sie die Schaltfläche aus.
-    
+
     Das zweite Bild im Katalog-Steuerelement enthält die soeben erstellte Zeichnung.
+
 13. Schließen Sie das Vorschaufenster, indem Sie ESC drücken.
-    
+
     In Ihrem Cloud-Speicherkonto wurde automatisch der Ordner **SavePen_images** erstellt. Dieser Ordner enthält die gespeicherten Bilder sowie die IDs für deren Dateinamen. Zum Anzeigen des Ordners müssen Sie u.U. das Browserfenster aktualisieren, indem Sie beispielsweise F5 drücken.
-    
+
     In der Datei **SavePen.xlsx** wird in der Spalte **Image** der Pfad zu den neuen Bildern angegeben.
 
-## <a name="known-limitations"></a>Bekannte Einschränkungen
+### <a name="known-limitations"></a>Bekannte Einschränkungen
 Weitere Informationen zum Freigeben von Excel-Daten in Ihrer Organisation erhalten Sie in diesen [Ausführungen zu Einschränkungen](connections/cloud-storage-blob-connections.md#sharing-excel-tables).
 
 ## <a name="for-more-information"></a>Weitere Informationen

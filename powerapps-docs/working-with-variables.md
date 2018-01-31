@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 2131e964626bee5b90062002619b7f46f7910ae0
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: eb7bb74362a810487e88efb1177b3c1dfa7a694d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>Grundlegendes zu Variablen in PowerApps
 Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, fragen Sie sich einfach: **Wie würde ich in Excel verfahren?**
 
 In anderen Tools haben Sie möglicherweise eine explizite Berechnung ausgeführt und das Ergebnis in einer Variablen gespeichert. Allerdings berechnen sowohl PowerApps als auch Excel automatisch Formeln neu, sobald die Eingabedaten geändert werden, sodass Sie üblicherweise keine Variablen erstellen oder aktualisieren müssen. Wenn Sie diesen Ansatz wann immer möglich verwenden, können Sie Ihre App leichter erstellen, verstehen und warten.
 
-In einigen Fällen müssen Sie Variablen in PowerApps verwenden, wodurch das Modell von Excel um [Verhaltensformeln](working-with-formulas-in-depth.md#behavior-formulas) erweitert wird. Diese Formeln werden z.B. ausgeführt, wenn ein Benutzer eine Schaltfläche auswählt. Innerhalb einer Verhaltensformel ist es oft hilfreich, eine Variable festzulegen, die in anderen Formeln verwendet werden soll.
+In einigen Fällen müssen Sie Variablen in PowerApps verwenden, wodurch das Modell von Excel um [Verhaltensformeln](working-with-formulas-in-depth.md) erweitert wird. Diese Formeln werden z.B. ausgeführt, wenn ein Benutzer eine Schaltfläche auswählt. Innerhalb einer Verhaltensformel ist es oft hilfreich, eine Variable festzulegen, die in anderen Formeln verwendet werden soll.
 
 Vermeiden Sie im allgemeinen das Verwenden von Variablen. Manchmal hat jedoch nur eine Variable die Auswirkungen, die Sie benötigen.
 
@@ -94,13 +94,15 @@ Sie benötigen eine Variable, die die laufende Summe enthält, um unseren hinzuf
 Funktionsweise von globalen Variablen:
 
 * Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)**-Funktion fest.  Durch **Set( MyVar, 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
-* Sie verwenden die globale Variable, indem Sie mit der **Set**-Funktion auf den verwendeten Namen verweisen.  In diesem Fall gibt **MyVar** den Wert **1** zurück. 
+* Sie verwenden die globale Variable, indem Sie mit der **Set**-Funktion auf den verwendeten Namen verweisen.  In diesem Fall gibt **MyVar** den Wert **1** zurück.
 * Globale Variablen können beliebige Werte enthalten, z.B. Zeichenfolgen, Zahlen, Datensätze und [Tabellen](working-with-tables.md).
 
 Erstellen Sie Ihre Rechenmaschine mithilfe einer globalen Variablen neu:
 
 1. Fügen Sie ein Texteingabe-Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
+
 2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
+
 3. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
    
     **Set( RunningTotal, RunningTotal + Text1 )**
@@ -135,7 +137,7 @@ In PowerApps gibt es drei Typen von Variablen:
 | --- | --- | --- | --- |
 | Globale Variablen |App |Sind am einfachsten zu verwenden.  Enthalten eine Zahl, eine Textzeichenfolge, einen booleschen Wert, einen Datensatz, eine Tabelle usw., auf die an einer beliebigen Stelle in der App verwiesen werden kann. |[**Set**](functions/function-set.md) |
 | Kontextvariablen |Bildschirm |Ideal für die Übergabe von Werten an einen Bildschirm (ähnelt der Übergabe eines Parameters an eine Prozedur in anderen Sprachen).  Der Verweis ist nur aus einem Bildschirm möglich. |[**UpdateContext**](functions/function-updatecontext.md)<br>[**Navigate**](functions/function-navigate.md) |
-| Sammlungen |App |Enthalten eine Tabelle, die Verweise von beliebigen Stellen in der App darstellen kann.  Ermöglichen es, dass der Inhalt der Tabelle geändert wird, und wird nicht in seiner Gesamtheit festgelegt. Können für die spätere Verwendung auf dem lokalen Gerät gespeichert werden. |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md)<br>[**Patch**](functions/function-patch.md)<br>[**Update**](functions/function-update.md)<br>[**Remove**](functions/function-remove.md)<br>[**SaveData**](functions/function-savedata-loaddata.md)<br>[**LoadData**](functions/function-savedata-loaddata.md)<br>usw. |
+| Sammlungen |App |Enthalten eine Tabelle, die Verweise von beliebigen Stellen in der App darstellen kann.  Ermöglichen es, dass der Inhalt der Tabelle geändert wird, und wird nicht in seiner Gesamtheit festgelegt. Können für die spätere Verwendung auf dem lokalen Gerät gespeichert werden. |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md)<br>[**Patch**](functions/function-patch.md)<br>[**Update**](functions/function-update-updateif.md)<br>[**Remove**](functions/function-remove-removeif.md)<br>[**SaveData**](functions/function-savedata-loaddata.md)<br>[**LoadData**](functions/function-savedata-loaddata.md)<br>usw. |
 
 Alle Variablen werden implizit erstellt, wenn sie in den Funktionen **Set**, **UpdateContext**, **Navigate** und **Collect** verwendet werden.  Es gibt keine explizite Deklaration von Variablen wie in anderen Programmiertools.  Die Typen der Variablen werden ebenfalls von den darin platzierten Werten implizit abgeleitet.
 
@@ -157,7 +159,9 @@ Funktionsweise von Kontextvariablen:
 Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 1. Fügen Sie ein Texteingabe-Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
+
 2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
+
 3. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
    
     **UpdateContext( { RunningTotal: RunningTotal + Text1 } )**
@@ -182,7 +186,7 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
     ![](media/working-with-variables/context-variable-4.png)
 7. Sie können den Wert einer Kontextvariablen beim Wechsel zu einem Bildschirm festlegen.  Dies ist hilfreich, wenn Sie den „Kontext“ bzw. die „Parameter“ von einem Bildschirm an einen anderen übergeben möchten.  Um dies zu veranschaulichen, fügen Sie einen neuen Bildschirm ein, und fügen Sie eine Schaltfläche ein, deren **OnSelect**-Eigenschaft wie folgt festgelegt ist:
    
-    **Navigate( Screen1, None, { RunningTotal: -1000 } )** 
+    **Navigate( Screen1, None, { RunningTotal: -1000 } )**
    
     ![](media/working-with-variables/context-variable-5.png)
    
@@ -207,7 +211,9 @@ Funktionsweise von Sammlungen:
 Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 1. Fügen Sie ein  **[Texteingabe](controls/control-text-input.md)**-Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
+
 2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
+
 3. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
    
     **Collect( PaperTape, TextInput1.Text )**
@@ -253,5 +259,6 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
      ![](media/working-with-variables/papertape-6.png)
 12. Drücken Sie erneut F5, um die Vorschau aufzurufen, geben Sie Zahlen im Textsteuerelement ein, und wählen Sie Schaltflächen aus.  Wählen Sie die Schaltfläche **Save** aus.  Schließen Sie die App, und laden Sie sie neu. Wählen Sie die Schaltfläche **Load** aus, um die Sammlung neu zu laden.  
     
-     Hinweis: **SaveData** und **LoadData** funktionieren nicht bei Ausführung in einem Webbrowser. Sie müssen die unter Windows installierte Studio-Instanz oder einen der Player für Mobilgeräte verwenden.  
+    > [!NOTE]
+    > **SaveData** und **LoadData** funktionieren nicht, wenn sie in einem Webbrowser ausgeführt werden. Sie müssen das unter Windows installierte Studio oder einen der Player für Mobilgeräte verwenden.  
 

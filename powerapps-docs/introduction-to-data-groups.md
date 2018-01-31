@@ -15,20 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: deonhe
-ms.openlocfilehash: a9be5bfa8f6ad7f77b966a5acc8cda4114cf3e70
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 601fe663d36383d5a89b0f93584e3a8c7cda43c8
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="learn-all-about-data-groups"></a>Erfahren Sie alles über Datengruppen
-## <a name="what-is-a-data-group"></a>Was ist eine Datengruppe?
+
 Datengruppen sind eine einfache Möglichkeit zum Kategorisieren von Diensten im Rahmen einer [Richtlinie zur Verhinderung von Datenverlust (DLP)](prevent-data-loss.md). Die zwei verfügbaren Datengruppen sind die Gruppe **Business data only** (Nur Unternehmensdaten) und die Gruppe **No business data allowed** (Keine Unternehmensdaten zugelassen). Organisationen können frei festlegen, welche Dienste in einer bestimmten Datengruppe platziert werden. Eine gute Möglichkeit zum Kategorisieren von Diensten ist, diese basierend auf der Auswirkung auf Ihre Organisation in Gruppen zu platzieren. Standardmäßig werden alle Dienste in die Datengruppe **No business data allowed** platziert. Sie verwalten die Dienste in einer Datengruppe, wenn Sie die Eigenschaften einer DLP-Richtlinie vom Admin Center aus erstellen oder bearbeiten.
 
 ## <a name="how-data-is-shared-between-data-groups"></a>So werden Daten zwischen Datengruppen geteilt
 Daten können nicht zwischen Diensten in verschiedenen Gruppen geteilt werden. Wenn Sie beispielsweise SharePoint und Salesforce in die Gruppe **Business data only** und Facebook und Twitter in die Gruppe **No business data allowed** platzieren, können Sie keine PowerApp erstellen, die Daten zwischen SharePoint und Facebook verschieben. Während Daten nicht zwischen Diensten in verschiedenen Gruppen geteilt werden können, können Sie Daten zwischen den Diensten innerhalb einer bestimmten Gruppe teilen. Kehren wir nun also zum vorherigen Beispiel zurück: Da SharePoint und Salesforce in die gleiche Gruppe platziert wurden, können PowerApps, die Ihre Endbenutzer erstellen, Daten zwischen SharePoint und Salesforce teilen. Wichtig ist, dass Dienste in einer bestimmten Gruppe Daten teilen können, während Dienste in verschiedenen Gruppen keine Daten teilen können.
 
-Darüber hinaus muss eine Datengruppe als *Standardgruppe* festgelegt werden. Zu Beginn ist die Gruppe **No business data allowed** die *Standardgruppe* und alle Dienste befinden sich in der Datengruppe. Ein Administrator kann die Standarddatengruppe in die Datengruppe **Business data only** ändern. **Hinweis:** Alle neuen Dienste, die zu PowerApps hinzugefügt werden, werden in die festgelegte *Standardgruppe* platziert. Aus diesem Grund empfehlen wir Ihnen, die Gruppe **No business data allowed** als Standardgruppe zu erhalten und Dienste manuell zur Gruppe **Business data only** hinzuzufügen, nachdem Ihre Organisation die Auswirkung ausgewertet hat, die das Zulassen des Teilens von Unternehmensdaten mit dem neuen Dienst hat.
+Darüber hinaus muss eine Datengruppe als *Standardgruppe* festgelegt werden. Zu Beginn ist die Gruppe **No business data allowed** die *Standardgruppe* und alle Dienste befinden sich in der Datengruppe. Ein Administrator kann die Standarddatengruppe in die Datengruppe **Business data only** ändern. > [!NOTE]
+> Alle neuen Dienste, die zu PowerApps hinzugefügt werden, werden in die festgelegte *Standardgruppe* platziert. Aus diesem Grund empfehlen wir Ihnen, die Gruppe **No business data allowed** als Standardgruppe zu erhalten und Dienste manuell zur Gruppe **Business data only** hinzuzufügen, nachdem Ihre Organisation die Auswirkung ausgewertet hat, die das Zulassen des Teilens von Unternehmensdaten mit dem neuen Dienst hat.
 
 ## <a name="add-services-to-a-data-group"></a>Hinzufügen von Diensten zu einer Datengruppe
 In dieser exemplarischen Vorgehensweise fügen wir SharePoint und Salesforce zur Datengruppe **Business data only** einer DLP-Richtlinie (Richtlinie zur Verhinderung von Datenverlust) hinzu.
@@ -50,7 +51,8 @@ Da sich alle Dienste in einer der verfügbaren Datengruppen befinden müssen, f�
 ## <a name="change-the-default-data-group"></a>Ändern der Standarddatengruppe
 In dieser exemplarischen Vorgehensweise ändern wir die Standarddatengruppe von der Datengruppe **No business data allowed** in die Datengruppe **Business data only**.  
 
-**Wichtig:** Alle neuen Dienste, die zu PowerApps hinzugefügt werden, werden in die festgelegte *Standardgruppe* platziert. Aus diesem Grund empfehlen wir Ihnen, die Gruppe **No business data allowed** als Standardgruppe zu erhalten und Dienste manuell zur Gruppe **Business data only** hinzuzufügen.
+> [!IMPORTANT]
+> Alle neuen Dienste, die zu PowerApps hinzugefügt werden, werden in die festgelegte *Standardgruppe* platziert. Aus diesem Grund empfehlen wir Ihnen, die Gruppe **No business data allowed** als Standardgruppe zu erhalten und Dienste manuell zur Gruppe **Business data only** hinzuzufügen.
 
 1. Wählen Sie **...** in der rechten oberen Ecke der Datengruppe aus, die Sie als Standarddatengruppe festlegen möchten:    
    ![Ändern der Standardgruppe](./media/introduction-to-data-groups/default-data-group-0.png)  

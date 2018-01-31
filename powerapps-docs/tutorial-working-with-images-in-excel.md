@@ -14,18 +14,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 13b15a29cf2f9e211328b815b8419799024e481e
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>So speichern Sie Bilder in einer Excel-Datei und fügen diese Bilder anschließend zu Ihrer App hinzu
-&nbsp;
-
-[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
-
-* Erfahren Sie, wie Sie [eine Datenquelle hinzufügen](add-data-connection.md)
 
 In diesem Tutorial werden wir:
 
@@ -35,7 +30,11 @@ In diesem Tutorial werden wir:
 * Die aus dem Stifteingabe-Steuerelement erstellten Bilder in eine Excel-Datei speichern
 * Bilder aus einer Excel-Datei in Ihrer App anzeigen
 
+[!INCLUDE [app-customization-requirements](includes/app-customization-requirements.md)]
+* Erfahren Sie, wie Sie [eine Datenquelle hinzufügen](add-data-connection.md)
+
 ## <a name="create-the-excel-file-as-a-table"></a>Erstellen der Excel-Datei als Tabelle
+
 1. Benennen Sie eine Spalte in einer leeren Excel-Datei mit **Bild [image]**.
 2. Erstellen Sie eine Tabelle, indem Sie folgende Schritte durchführen:    
    
@@ -77,7 +76,8 @@ Sie können z.B. Bilder in einem Cloudspeicherkonto speichern und anschließend 
 
 In diesem Beispiel wird die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) verwendet, die einige JPEG-Dateien enthält.
 
-**HINWEIS** Zum Anzeigen von Bildern aus einer Excel-Datei muss der Pfad zu diesen Bilder Schrägstriche verwenden. Wenn (wie bei den vorherigen Schritten) PowerApps Bilder für eine Excel-Tabelle speichert, verwendet der Pfad umgekehrte Schrägstriche. Daher können Sie auch **SavePen_images** aus dem vorherigen Beispiel verwenden. Wenn Sie dies tun, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt werden.  
+> [!NOTE]
+> Zum Anzeigen von Bildern aus einer Excel-Datei muss der Pfad zu diesen Bilder Schrägstriche verwenden. Wenn (wie bei den vorherigen Schritten) PowerApps Bilder für eine Excel-Tabelle speichert, verwendet der Pfad umgekehrte Schrägstriche. Daher können Sie auch **SavePen_images** aus dem vorherigen Beispiel verwenden. Wenn Sie dies tun, ändern Sie die Pfade in der Excel-Tabelle so, dass anstelle der umgekehrten Schrägstriche normale Schrägstriche verwendet werden. Andernfalls werden die Bilder nicht angezeigt werden.  
 
 1. Laden Sie die Datei [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) herunter, und extrahieren Sie den Ordner **Ressourcen** in Ihr Cloudspeicherkonto.
 2. Erstellen Sie in einem Excel-Arbeitsblatt eine Tabelle, die in etwa wie folgt aussieht:

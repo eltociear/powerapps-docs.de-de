@@ -12,17 +12,15 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/24/2017
+ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: 9078daccfd3d72ab5cbf3b26a67ffc2a27af1332
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>Grundlegendes zu Entitäten in Common Data Service
-[!VIDEO nb:cid:UUID:beec68e8-1541-41fb-8fc6-28714ccaca68]
-
 
 Mit Common Data Service können Sie Daten sicher innerhalb eines Satzes von Standardentitäten und benutzerdefinierte Entitäten speichern und verwalten. Eine Entität ist eine Gruppe von Feldern, die zum Speichern von Daten ähnlich wie eine Tabelle in einer Datenbank verwendet werden. Nachdem die Daten gespeichert sind, können Sie mit Microsoft PowerApps anspruchsvolle Anwendungen mithilfe Ihrer Daten erstellen:
 
@@ -50,20 +48,20 @@ Entitäten (Standard und benutzerdefiniert) in Common Data Service bieten eine s
 * **Auswahllisten**: Sie können aus einer Vielzahl von Standardauswahllisten wählen, um schnell Dropdownlisten in Entitäten und Apps bereitzustellen.
 
 ## <a name="standard-and-custom-entities"></a>Standardentitäten und benutzerdefinierte Entitäten
-Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte Entitäten oder beides verwenden. Wenn eine Standardentität einem bestimmten Zweck in Ihrer App dienen kann, sollten Sie sie verwenden, anstatt eine benutzerdefinierte Entität zu entwickeln, die die gleiche Aufgabe erfüllt. Wenn eine Standardentität mit einigen Änderungen passend wäre, können Sie Felder entsprechend Ihren Anforderungen hinzufügen. 
+Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte Entitäten oder beides verwenden. Wenn eine Standardentität einem bestimmten Zweck in Ihrer App dienen kann, sollten Sie sie verwenden, anstatt eine benutzerdefinierte Entität zu entwickeln, die die gleiche Aufgabe erfüllt. Wenn eine Standardentität mit einigen Änderungen passend wäre, können Sie Felder entsprechend Ihren Anforderungen hinzufügen.
 
 * Common Data Service stellt standardmäßig Standardentitäten bereit. Diese sind in Übereinstimmung mit bewährten Methoden entwickelt und dienen zum Erfassen der am häufigsten verwendeten Konzepte für ein Unternehmen, z.B. Kontakte, Konten und Produkte. Eine vollständige Liste der Entitäten finden Sie unter [Standard entities (Standardentitäten)](data-platform-intro.md#standard-entities).
 * Sie können die Funktionalität der Standardentitäten erweitern, indem Sie eine oder mehrere benutzerdefinierte Entitäten zum Speichern von Informationen erstellen, die für Ihr Unternehmen einzigartig sind. Weitere Informationen finden Sie unter [Create a custom entity in the Common Data Model (Erstellen einer benutzerdefinierten Entität im Common Data Model)](data-platform-create-entity.md).
 
-> **Hinweis:** Verwenden Sie, wenn möglich, Standardentitäten (mit benutzerdefinierten Feldern, die hinzugefügt werden, wenn dies erforderlich ist). Dadurch wird sichergestellt, dass Sie von neuen Features oder Apps profitieren können, die diese Entitäten in der Zukunft zu nutzen.
-> 
-> 
+> [!NOTE]
+> Verwenden Sie, wenn möglich, Standardentitäten (mit benutzerdefinierten Feldern, die bei Bedarf hinzugefügt werden). Dadurch wird sichergestellt, dass Sie von neuen Features oder Apps profitieren können, die diese Entitäten in der Zukunft zu nutzen.
+
 
 ## <a name="fields"></a>Felder
 Jedes Feld hat einen Namen, einen Anzeigenamen, einen Datentyp und einfache Überprüfungen. Zu den Datentypen zählen **text**, **date** oder **number**. Die Überprüfung stellt sicher, dass erforderliche Felder Daten enthalten und Datensätze eindeutig sind, wenn die Entität dies fordert. Jedes Feld gehört zu einer von drei Kategorien: Systemfelder, Standardfelder oder benutzerdefinierte Felder.
 
 ### <a name="system-fields"></a>Systemfelder
-Alle Standardentitäten oder benutzerdefinierten Entitäten werden mit einem Satz von schreibgeschützten Feldern erstellt, die Sie nicht ändern, löschen oder auf einen Wert festlegen können. Weitere Informationen finden Sie unter [System- und Datensatz-Titelfelder](data-platform-create-entity.md#system-and-record-title-fields). Dies sind die wichtigsten Systemfelder:
+Alle Standardentitäten oder benutzerdefinierten Entitäten werden mit einem Satz von schreibgeschützten Feldern erstellt, die Sie nicht ändern, löschen oder auf einen Wert festlegen können. Weitere Informationen finden Sie unter [System- und Datensatz-Titelfelder](data-platform-create-entity.md#system-fields-and-the-record-title-field). Dies sind die wichtigsten Systemfelder:
 
 * **Datum der Datensatzerstellung**: Das Datum und die Uhrzeit der Erstellung eines Datensatzes
 * **Erstellt von**: Der Benutzer, der den Datensatz erstellt hat

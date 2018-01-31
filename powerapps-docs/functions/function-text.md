@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 7de7d1e208dffa47dbe8580321f93023d5111389
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 37c4eebc80f363088bd637fbcd41d37cbafb245d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="text-function-in-powerapps"></a>Funktion „Text“ in PowerApps
 Formatiert eine Zahl oder einen Datums-/Uhrzeit-Wert für die Anzeige als Textzeichenfolge.
@@ -72,8 +72,10 @@ Wenn eine Zahl mehr Stellen rechts vom Dezimaltrennzeichen aufweist, als Platzha
 | **yyyy** |Zeigt das Jahr als vierstellige Zahl an. |
 | **h** |Zeigt die Stunde als Zahl ohne führende Null an. |
 | **hh** |Zeigt die Stunde als Zahl mit führender Null an, wenn das angebracht ist. Wenn das Format **AM** oder **PM** enthält, wird die Stunde basierend auf der 12-Stunden-Uhr angezeigt. Andernfalls wird die Stunde auf der 24-Stunden-Uhr basierend angezeigt. |
-| **m** |Zeigt die Minute als Zahl ohne führende Null an.  Hinweis: Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen, andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |
-| **mm** |Zeigt die Minute als Zahl mit führender Null an, wenn das angebracht ist. Hinweis: Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen. Andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |
+| **m** |Zeigt die Minute als Zahl ohne führende Null an.  > [!NOTE]
+Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen, andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |
+| **mm** |Zeigt die Minute als Zahl mit führender Null an, wenn das angebracht ist. > [!NOTE]
+Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen. Andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |
 | **s** |Zeigt die Sekunde als Zahl ohne führende Null an. |
 | **ss** |Zeigt die Sekunde als Zahl mit führender Null an, wenn das angebracht ist. |
 | **f** |Zeigt die Sekundenbruchteile an. |
@@ -115,7 +117,7 @@ Um die Sprache des benutzerdefinierten Formats anzugeben, verwenden Sie:
 
 | Platzhalter | Beschreibung |
 | --- | --- |
-| **[$-*Sprachkennzeichen*]** |*Sprachkennzeichen* ist ein Sprachkennzeichen, wie es von der Funktion **Language** zurückgegeben wird.  Es kann die Form der einfachen Sprachangabe annehmen, wie etwa **[$-de]** für Deutsch, oder außerdem die Region enthalten, wie in **[$-de-AT]**, um das Gebietsschema auf Österreich einzugrenzen. |
+| **[$-*LanguageTag*]** |*Sprachkennzeichen* ist ein Sprachkennzeichen, wie es von der Funktion **Language** zurückgegeben wird.  Es kann die Form der einfachen Sprachangabe annehmen, wie etwa **[$-de]** für Deutsch, oder außerdem die Region enthalten, wie in **[$-de-AT]**, um das Gebietsschema auf Österreich einzugrenzen. |
 
 Der Sprachplatzhalter kann an beliebiger Stelle im benutzerdefinierten Format auftreten, darf jedoch nur einmal angegeben werden.
 
@@ -123,7 +125,8 @@ Wenn Sie beim Erstellen einer Formel keinen Sprachplatzhalter angeben und das Fo
 
 **[$-en-US]** wird zugrunde gelegt, wenn dieser Platzhalter beim Ausführen Ihrer App nicht vorhanden ist. 
 
-**HINWEIS:** In einer kommenden Version kann sich dieser Platzhalter möglicherweise ändern, um die Verwechselung mit einem ähnlichen, aber doch verschiedenen Platzhalter zu vermeiden, der von Excel unterstützt wird.
+> [!NOTE]
+> In einer kommenden Version kann sich dieser Platzhalter möglicherweise ändern, um die Verwechselung mit einem ähnlichen, aber doch unterschiedlichen Platzhalter zu vermeiden, der von Excel unterstützt wird.
 
 #### <a name="result-language-tag"></a>Sprachkennzeichen für das Ergebnis
 Im Ergebnis von **Text** werden übersetzte Zeichenfolgen für Monat, Wochentag und AM/PM-Angaben sowie die passenden Gruppen- und Dezimaltrennzeichen angezeigt.

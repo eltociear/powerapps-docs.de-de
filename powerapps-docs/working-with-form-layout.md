@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: fc64817566f30f0370538c6e5d1619a1d54c0be3
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: f75eeddf5a3a7b693e81f561ffd227f95e41cc5f
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Grundlegendes zum Layout von Datenformularen in Microsoft PowerApps
 In PowerApps können Sie auf einfache Weise Formulare erstellen, die ansprechend aussehen und benutzerfreundlich sind. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:
@@ -59,12 +59,17 @@ Wenn Sie noch nicht mit PowerApps vertraut sind (oder Apps bisher lediglich auto
     Die Bezeichnung zeigt die Verkaufsauftragsnummer des Eintrags, der im Katalog ausgewählt wurde.
 3. (Optional) Formatieren Sie die Bezeichnung wie folgt:
    
-   1. Legen Sie die **Align**-Eigenschaft auf **Center** fest.
-   2. Legen Sie die zugehörige **Size**-Eigenschaft auf **20** fest.
-   3. Legen Sie die zugehörige **Fill**-Eigenschaft auf **Navy** fest.
-   4. Legen Sie die zugehörige **Color**-Eigenschaft auf **White** fest.
-   5. Legen Sie die zugehörige **Width**-Eigenschaft auf **Parent.Width** fest.
-   6. Legen Sie die zugehörige **X**-Eigenschaft und **Y**-Eigenschaft auf **0** fest.
+    1. Legen Sie die **Align**-Eigenschaft auf **Center** fest.
+   
+    2. Legen Sie die zugehörige **Size**-Eigenschaft auf **20** fest.
+   
+    3. Legen Sie die zugehörige **Fill**-Eigenschaft auf **Navy** fest.
+   
+    4. Legen Sie die zugehörige **Color**-Eigenschaft auf **White** fest.
+   
+    5. Legen Sie die zugehörige **Width**-Eigenschaft auf **Parent.Width** fest.
+   
+    6. Legen Sie die zugehörige **X**-Eigenschaft und **Y**-Eigenschaft auf **0** fest.
       
       ![Titelleiste](media/working-with-form-layout/title-bar.png)
 
@@ -97,7 +102,8 @@ Sie können Karten auch direkt auf dem Formular auswählen. Bei Auswahl einer Ka
 
 ![Datenkartenauswahl](media/working-with-form-layout/sales-order-data-card-selection.png)
 
-**Hinweis**: Wenn Sie eine Karte löschen (und nicht nur ausblenden) möchten, wählen Sie sie aus, und wählen Sie „Löschen“ aus.
+> [!NOTE]
+> Wenn Sie eine Karte löschen (und nicht nur ausblenden) möchten, wählen Sie sie aus, und drücken Sie ENTF.
 
 ## <a name="arrange-cards-in-columns"></a>Anordnen von Karten in Spalten
 In der Standardeinstellung weisen Formulare in Tablet-Apps drei Spalten auf, während Smartphone-Apps über eine Spalte verfügen. Sie können nicht nur angeben, wie viele Spalten ein Formular aufweisen soll, sondern auch, ob alle Karten in den Bereich zwischen den Spaltenrändern passen sollen.
@@ -124,7 +130,9 @@ Um Ihr Design flexibler zu gestalten, jedoch eine gewisse Struktur beizubehalten
 3. Wiederholen Sie den vorherigen Schritt mit den Karten **Order status** (Bestellstatus) und **Customer purchase order reference** (Kundenbestellreferenz).
    
     ![Drei Karten in der ersten Zeile](media/working-with-form-layout/card-resize-2.png)
+
 4. Ändern Sie die Größe der Karten **Name** und **Description** (Beschreibung), sodass sie sechs Spalten (oder 1/2) des Formulars einnehmen.
+
 5. Richten Sie die ersten zwei Zeilen der Lieferadresse so ein, dass sie sich vollständig über das Formular erstrecken:
 
 Fertig! Wir verfügen nun über das gewünschte Formular, in dem Zeilen unterschiedlich viele Spalten aufweisen:
@@ -152,7 +160,7 @@ Jetzt wollen wir uns der dritten Zeile der Adresse widmen. Wie in den vorherigen
 
 | Schritt | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| 1 |Wählen Sie die Karte **State** (US-Bundesstaat) aus, sodass Ziehpunkte an ihrem Rand angezeigt werden. |![Karte auswählen](media/working-with-form-layout/state-morph-2.png) |
+| 1 |Wählen Sie die Karte **State** (US-Bundesstaat) aus, sodass Ziehpunkte an ihrem Rand angezeigt werden. |![Auswählen einer Karte](media/working-with-form-layout/state-morph-2.png) |
 | 2 |Wählen Sie die Bezeichnung auf dieser Karte aus, sodass Ziehpunkte an ihrem Rand angezeigt werden. |![Auswählen eines Steuerelements in einer Karte](media/working-with-form-layout/state-morph-3.png) |
 | 3 |Platzieren Sie den Cursor rechts neben dem Text, und löschen Sie den nicht benötigten Teil. |![Ändern des Text innerhalb eines Steuerelements in einer Karte](media/working-with-form-layout/state-morph-3b.png) |
 | 4 |Ändern Sie mithilfe der Ziehpunkte an den Seiten die Größe des Bezeichnungssteuerelements entsprechend der neuen Textgröße. |![Ändern der Größe eines Steuerelements in einer Karte](media/working-with-form-layout/state-morph-4b.png) |

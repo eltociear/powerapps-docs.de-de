@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 75cd4137babde948ea70d8ee48a938c9acc092cc
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fbd108d1a089072a89f8e6cb06ded07c8493bb4d
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="share-app-resources"></a>Freigeben von App-Ressourcen
 Beachten Sie vor dem [Freigeben einer App](share-app.md) die Typen von Ressourcen, von denen sie abhängt. Dabei kann es sich z. B. um eine oder mehrere der folgenden handeln:
@@ -47,7 +47,8 @@ Wenn Sie eine App erstellen und freigeben, die Daten aus einer lokalen Quelle en
 1. Öffnen Sie [powerapps.com](https://web.powerapps.com), klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie dann auf **Gateways**.
 2. Klicken oder tippen Sie auf ein Gateway, und klicken oder tippen Sie dann auf die Registerkarte **Verbindungen**.
 
-**Hinweis**: Wenn Sie eine oder mehrere Verbindungen manuell freigeben, müssen Sie diese ggf. unter den folgenden Umständen erneut freigeben:
+> [!NOTE]
+> Wenn Sie eine oder mehrere Verbindungen manuell freigeben, müssen Sie diese ggf. unter den folgenden Umständen erneut freigeben:
 
 * Sie fügen einer App, die Sie bereits freigegeben haben, ein lokales Datengateway hinzu.
 * Sie ändern den Satz der Personen oder Gruppen, für die Sie eine App, die über ein lokales Datengateway verfügt, freigegeben haben.

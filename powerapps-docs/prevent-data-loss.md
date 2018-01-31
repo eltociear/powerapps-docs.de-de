@@ -15,31 +15,30 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/28/2016
 ms.author: deonhe
-ms.openlocfilehash: 67fb178a95131e041d0ea3ac5f3c2f24095505ed
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: a9f6bf12672c425a30d05a8072aafd34945eb795
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Richtlinien zur Verhinderung von Datenverlust (DLP)
-## <a name="what-is-a-data-loss-prevention-policy"></a>Was ist eine Richtlinien zur Verhinderung von Datenverlust?
+
 Die Daten einer Organisation sind wichtig für deren Erfolg. Die Daten müssen zum Treffen von Entscheidungen zum Lesen verfügbar sein, jedoch geschützt werden, damit sie nicht für Personen freigegeben werden, die keinen Zugriff darauf haben sollten. Um diese Daten zu schützen, bietet Microsoft PowerApps (PowerApps) Ihnen die Möglichkeit, Richtlinien zu erstellen und durchzusetzen, die definieren, für welche Verbraucherdienste/Connectors bestimmte Unternehmensdaten freigegeben werden können. Diese Richtlinien, die definieren, wie Daten freigegeben werden können, werden als Richtlinien zur Verhinderung von Datenverlust (DLP) bezeichnet.  
 
 ## <a name="why-create-a-dlp-policy"></a>Warum sollten Sie eine DLP-Richtlinie erstellen?
 Sie würden eine DLP-Richtlinie erstellen, um klar zu definieren, für welche Verbraucherdienste Unternehmensdaten freigegeben werden können. Beispielsweise möchte eine Organisation, die PowerApps verwendet, möglicherweise nicht, dass ihre in SharePoint gespeicherten Unternehmensdaten automatisch in Ihrem Twitter-Feed veröffentlicht werden. Um dies zu verhindern, können Sie eine DLP-Richtlinie erstellen, die SharePoint-Daten als Quelle für Tweets blockiert.
 
-## <a name="benefits-of-a-dlp-policy"></a>Vorteile einer DLP-Richtlinie
+Vorteile einer DLP-Richtlinie:
 * Stellt sicher, dass Daten in der gesamten Organisation auf einheitliche Weise verwaltet werden  
 * Verhindert, dass wichtige Unternehmensdaten versehentlich in Diensten wie auf Webseiten von sozialen Medien veröffentlicht werden   
 
 ## <a name="managing-dlp-policies"></a>Verwalten von DLP-Richtlinien
-**Voraussetzungen**  
+### <a name="prerequisites"></a>Voraussetzungen
 Um DLP-Richtlinien zu erstellen, zu bearbeiten oder zu löschen, werden die folgenden Elemente benötigt:
 
 * Entweder Umgebungsadministrator- oder Mandantenadministratorberechtigungen. Weitere Informationen zu Berechtigungen finden Sie im [Umgebungsthema](environments-administration.md)
 
-## <a name="create-a-dlp-policy"></a>Erstellen einer DLP-Richtlinie
-**Voraussetzungen**  
+### <a name="create-a-dlp-policy"></a>Erstellen einer DLP-Richtlinie
 Um eine DLP-Richtlinie zu erstellen, brauchen Sie die Berechtigungen für mindestens eine Umgebung.  
 
 Führen Sie diese Schritt aus, um eine DLP-Richtlinie zu erstellen, die verhindert, dass Daten, die in Ihrer SharePoint-Datenbank gespeichert sind, auf Twitter veröffentlicht werden:  
@@ -66,18 +65,20 @@ Führen Sie diese Schritt aus, um eine DLP-Richtlinie zu erstellen, die verhinde
 
 Herzlichen Glückwunsch, Sie haben nun eine DLP-Richtlinie erstellt, die es einer App ermöglicht, Daten zwischen SharePoint und Salesforce zu teilen, und die die Freigabe der Daten für andere Dienste blockiert.  
 
-## <a name="find-a-dlp-policy"></a>Suchen einer DLP-Richtlinie
-### <a name="admins"></a>Administratoren
+### <a name="find-a-dlp-policy"></a>Suchen einer DLP-Richtlinie
+#### <a name="admins"></a>Administratoren
 Administratoren können die Suchfunktion des Admin Centers verwenden, um bestimmte DLP-Richtlinien zu suchen.  
 
-**HINWEIS:** Administratoren sollten alle DLP-Richtlinien veröffentlichen, sodass Benutzer sich der Richtlinien bewusst sind, bevor sie PowerApps erstellen.
+> [!NOTE]
+> Administratoren sollten alle DLP-Richtlinien veröffentlichen, sodass Benutzer sich der Richtlinien bewusst sind, bevor sie PowerApps erstellen.
 
-### <a name="makers"></a>Ersteller
+#### <a name="makers"></a>Ersteller
 Wenn Sie keine Administratorberechtigungen haben und mehr über die DLP-Richtlinien in Ihrer Organisation erfahren möchten, wenden Sie sich an Ihren Administrator. Weitere Informationen erhalten Sie zudem im [Thema zur Umgebungserstellung](environments-overview.md)  
 
-**HINWEIS:** Nur Administratoren können DLP-Richtlinien bearbeiten oder löschen.  
+> [!NOTE]
+> Nur Administratoren können DLP-Richtlinien bearbeiten oder löschen.  
 
-## <a name="edit-a-dlp-policy"></a>Bearbeiten einer DLP-Richtlinie
+### <a name="edit-a-dlp-policy"></a>Bearbeiten einer DLP-Richtlinie
 1. Starten Sie das Admin Center, indem Sie https://admin.powerapps.com aufrufen.   
 2. Wählen Sie im Admin Center, das gestartet wird, auf der linken Seite den Link **Datenrichtlinien** aus.  
    ![Anmelden](./media/prevent-data-loss/2.png)  
@@ -89,7 +90,7 @@ Wenn Sie keine Administratorberechtigungen haben und mehr über die DLP-Richtlin
 
 Die Richtlinie wurde jetzt aktualisiert. Sie können bestätigen, dass die Änderungen an Ihrer Richtlinie vorgenommen wurden, indem Sie diese in der Liste der Richtlinien zur Verhinderung von Datenverlust suchen und ihre Eigenschaften überprüfen.   
 
-## <a name="delete-a-dlp-policy"></a>Löschen einer DLP-Richtlinie
+### <a name="delete-a-dlp-policy"></a>Löschen einer DLP-Richtlinie
 1. Starten Sie das Admin Center, indem Sie https://admin.powerapps.com aufrufen.    
 2. Wählen Sie im Admin Center, das gestartet wird, auf der linken Seite den Link **Datenrichtlinien** aus.  
    ![Anmelden](./media/prevent-data-loss/2.png)  
@@ -100,7 +101,7 @@ Die Richtlinie wurde jetzt aktualisiert. Sie können bestätigen, dass die Ände
 
 Die Richtlinie wurde jetzt gelöscht. Sie können bestätigen, dass die Richtlinie nicht mehr in der Liste der Richtlinien zur Verhinderung von Datenverlust aufgeführt wird, indem Sie den Link **Datenrichtlinien** auf der linken Seite auswählen und die Liste der Richtlinien überprüfen.   
 
-## <a name="dlp-policy-permissions"></a>DLP-Richtlinienberechtigungen
+### <a name="dlp-policy-permissions"></a>DLP-Richtlinienberechtigungen
 Nur Mandanten- und Umgebungsadministratoren können DLP-Richtlinien erstellen und bearbeiten. Weitere Informationen zu Berechtigungen finden Sie im Thema zu [Umgebungen](environments-administration.md).  
 
 ## <a name="next-steps"></a>Nächste Schritte

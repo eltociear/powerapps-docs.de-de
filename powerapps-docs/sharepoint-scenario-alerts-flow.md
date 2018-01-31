@@ -15,14 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 1dea5c714b231bb94edb7d61423b6a89d8f733da
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: fb750e6345c6aa576e378134ed98be92c234a86b
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Einrichten von Datenwarnungen für das Power BI-Dashboard
-**Hinweis:** Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> [!NOTE]
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In dieser Aufgabe wird Power BI eine Warnung hinzugefügt, mit der informiert wird, ob die Genehmigung ausstehender Projekte zu lange dauert, sowie einen Flow, der bei Auftreten dieser Warnung reagiert. Weitere Informationen zu Warnungen finden Sie unter [Datenwarnungen im Power BI-Dienstservice](https://powerbi.microsoft.com/documentation/powerbi-service-set-data-alerts).
 

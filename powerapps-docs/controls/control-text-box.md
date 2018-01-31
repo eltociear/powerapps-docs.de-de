@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c6da4216a4ce2c95f20db322a3ec529299410deb
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 4fd0b50796bc8c1ba9574d1c401042e3d10c863c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="label-control-in-powerapps"></a>Label-Steuerelement (Bezeichnung) in PowerApps
 Ein Feld, das Daten wie Text, Zahlen, Datumsangaben oder Währung anzeigt.
@@ -95,7 +95,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -118,13 +118,14 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 ### <a name="show-a-literal-string"></a>Anzeigen eines Zeichenfolgenliterals
 * Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](properties-core.md)**-Eigenschaft auf **"Hello, world"** fest (einschließlich der doppelten Anführungszeichen).
   
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 ### <a name="show-the-result-of-a-formula"></a>Anzeigen des Ergebnisses einer Formel
 * Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](properties-core.md)**-Eigenschaft auf eine Formel wie diese fest:<br>
   **Today()**
   
-    **Hinweis:** Verwenden Sie beim Angeben einer Formel nur Anführungszeichen, wenn ein Argument der Formel ein Zeichenfolgenliteral ist. Umschließen Sie in diesem Fall das Argument und nicht die Formel mit doppelten Anführungszeichen.
+    > [!NOTE]
+> Verwenden Sie beim Angeben einer Formel nur Anführungszeichen, wenn ein Argument der Formel ein Zeichenfolgenliteral ist. Umschließen Sie in diesem Fall das Argument und nicht die Formel mit doppelten Anführungszeichen.
   
     Benötigen Sie weitere Informationen zur **[Today](../functions/function-now-today-istoday.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 

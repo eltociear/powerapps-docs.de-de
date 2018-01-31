@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 0565bba26f9ab78437dd4b5a7729ff518a89e6e8
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Steuerelemente und Eigenschaften in PowerApps
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
 
 ## <a name="controls"></a>Steuerelemente
 **[Add picture](controls/control-add-picture.md)** (Bild hinzufügen): Dient zum Laden von Bildern vom lokalen Gerät zum Hochladen in eine Datenquelle.
+
+**[Attachments](controls/control-attachments.md)**: Dient zum Herunterladen und Hochladen von Dateien vom lokalen Gerät in die Datenquelle.
 
 **[Audio](controls/control-audio-video.md)**: Dient zum Wiedergeben eines Audioclips oder des Audioteils eines Videoclips.
 
@@ -131,7 +133,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **AutoStart**: Gibt an, ob ein Audio- oder Video-Steuerelement automatisch einen Clip wiedergibt, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.  Gilt für Steuerelemente des folgenden Typs: **[Audio](controls/control-audio-video.md)**, **[Timer](controls/control-timer.md)** und **[Video](controls/control-audio-video.md)**.
 
 ### <a name="b"></a>B
-**[BackgroundImage](controls/properties-visual.md)**: Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.  Gilt für Steuerelemente des folgenden Typs: **[Bildschirm](controls/control-screen.md)**.
+**[BackgroundImage](controls/properties-visual.md)**: Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.  Gilt für das **[Screen](controls/control-screen.md)**-Steuerelement.
 
 **[BorderColor](controls/properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.  Gilt für viele Steuerelemente.
 
@@ -175,7 +177,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[DataSource](controls/control-form-detail.md)**: Die Datenquelle mit dem Datensatz, der vom Benutzer angezeigt, bearbeitet oder erstellt wird.  Gilt für Steuerelemente des folgenden Typs: **[Formular anzeigen](controls/control-form-detail.md)** und **[Formular bearbeiten](controls/control-form-detail.md)**.
 
-**[Default](controls/properties-core.md)**: Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.  Gilt für viele Steuerelemente.
+**[Default](controls/properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.  Gilt für viele Steuerelemente.
 
 **[DefaultDate](controls/control-date-picker.md)**: Der Anfangswert eines Datum-Steuerelements, bevor er vom Benutzer geändert wird.  Gilt für Steuerelemente des folgenden Typs: **[Datumsauswahl](controls/control-date-picker.md)**.
 
@@ -342,7 +344,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **OnUncheck**: Das Verhalten einer App, wenn sich der Wert eines Kontrollkästchens oder von Umschalten auf **FALSE** ändert.  Gilt für Steuerelemente des folgenden Typs: **[Kontrollkästchen](controls/control-check-box.md)** und **[Umschalten](controls/control-toggle.md)**.
 
-**[OnVisible](controls/control-screen.md)**: Das Verhalten einer App, wenn der Benutzer zu einem Bildschirm navigiert.  Gilt für Steuerelemente des folgenden Typs: **[Bildschirm](controls/control-screen.md)**.
+**[OnVisible](controls/control-screen.md)**: Das Verhalten einer App, wenn der Benutzer zu einem Bildschirm navigiert.  Gilt für das **[Screen](controls/control-screen.md)**-Steuerelement.
 
 **[OriginalHeight](controls/control-image.md)**: Gibt die ursprüngliche Höhe eines Bilds an. Hierfür wird die **[CalculateOriginalDimensions](controls/control-image.md)**-Eigenschaft verwendet.  Gilt für Steuerelemente des folgenden Typs: **[Bild](controls/control-image.md)**.
 
@@ -406,7 +408,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Required](controls/control-card.md)**: Gibt an, ob eine Karte beim Bearbeiten des Felds einer Datenquelle einen Wert enthalten muss.  Gilt für Steuerelemente des folgenden Typs: **[Karte](controls/control-card.md)**.
 
-**[Reset](controls/properties-core.md)**: Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.  Gilt für viele Steuerelemente.  Siehe auch die **[Reset](functions/function-reset.md)**-Funktion.
+**[Reset](controls/properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.  Gilt für viele Steuerelemente.  Siehe auch die **[Reset](functions/function-reset.md)**-Funktion.
 
 ### <a name="s"></a>S
 **Selected**: Das ausgewählte Element.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** und **[Katalog](controls/control-gallery.md)**.
@@ -507,12 +509,11 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 ### <a name="y"></a>Y
 **[Y](controls/properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist). Gilt für viele Steuerelemente. Für ein **[Karten](controls/control-card.md)**-Steuerelement in einem Container mit mehreren Zeilen bestimmt diese Eigenschaft die Zeile, in der die Karte angezeigt wird.
 
-**[YAxisMax](controls/control-column-line-chart.md)**: Der höchste Wert der y-Achse eines Liniendiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)**.
+**[YAxisMax](controls/control-column-line-chart.md)**: Der höchste Wert der y-Achse eines Liniendiagramms.  Gilt für das **[Liniendiagramm](controls/control-column-line-chart.md)**-Steuerelement.
 
-**[YAxisMin](controls/control-column-line-chart.md)**: Der niedrigste Wert der y-Achse eines Liniendiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)**.
+**[YAxisMin](controls/control-column-line-chart.md)**: Der niedrigste Wert der y-Achse eines Liniendiagramms.  Gilt für das **[Liniendiagramm](controls/control-column-line-chart.md)**-Steuerelement.
 
 **[YLabelAngle](controls/control-column-line-chart.md)**: Der Winkel der Beschriftungen neben der y-Achse eines Linien- oder Säulendiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)** und **[Liniendiagramm](controls/control-column-line-chart.md)**.
 
 ### <a name="z"></a>Z
 **Zoom**: Der Prozentsatz, mit dem ein Bild einer Kamera vergrößert wird (oder die Ansicht einer Datei in einem PDF-Viewer).  Gilt für Steuerelemente des folgenden Typs: **[Kamera](controls/control-camera.md)** und **[PDF-Viewer](controls/control-pdf-viewer.md)**.
-

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: b9d93fe540d32bc547cec3254b5aa3968b460660
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: 1c5972d35f98d15f1cad45e74763320011ab98c6
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Die Funktionen „Blank“, „Coalesce“, „IsBlank“ und „IsEmpty“ in PowerApps
 Prüft, ob ein Wert leer ist oder eine [Tabelle](../working-with-tables.md) keine [Datensätze](../working-with-tables.md#records) enthält, und stellt ein Verfahren zum Erstellen von *leeren* Werten zur Verfügung.
@@ -27,7 +27,8 @@ Prüft, ob ein Wert leer ist oder eine [Tabelle](../working-with-tables.md) kein
 ## <a name="overview"></a>Übersicht
 *Blank* ist ein Platzhalter für "no value" (kein Wert) oder "unknown value" (unbekannter Wert). Ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement ist *leer*, wenn der Benutzer keinerlei Zeichen darin eingegeben hat. Das Steuerelement ist nicht mehr *blank*, sobald der Benutzer ein Zeichen eingibt.  Einige Datenquellen können NULL-Werte speichern und zurückgeben, die in PowerApps als *leer* dargestellt werden.
 
-**Hinweis**: Aktuell wird das Speichern von *leeren* Werten nur für lokale Sammlungen unterstützt. Es ist uns bewusst, dass viele Datenquellen *leere* Werte (NULL-Werte) unterstützen und arbeiten daran, diese Einschränkung aufzuheben.
+> [!NOTE]
+> Aktuell wird das Speichern von *leeren* Werten nur für lokale Sammlungen unterstützt. Es ist uns bewusst, dass viele Datenquellen *leere* Werte (NULL-Werte) unterstützen und arbeiten daran, diese Einschränkung aufzuheben.
 
 Jede Eigenschaft und jeder berechnete Wert kann *blank* sein.  Ein boolescher Wert weist normalerweise einen von zwei Werten auf: **TRUE** oder **FALSE**.  Zusätzlich zu diesen beiden Werten kann ein boolescher Wer auch *blank* sein.  Dies ist vergleichbar mit Microsoft Excel, wo eine Zelle eines Arbeitsblatts zunächst leer ist, aber u.a. auch die Werte **TRUE** und **FALSE** enthalten darf. Der Inhalt der Zelle kann immer entfernt werden, sodass die Zelle dann wieder *blank* wäre.
 
@@ -70,7 +71,8 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 
 ## <a name="examples"></a>Beispiele
 ### <a name="blank"></a>Blank
-HINWEIS: Aktuell funktioniert das folgende Beispiel nur mit lokalen Sammlungen.  Es ist uns bewusst, dass viele Datenquellen *leere* Werte (NULL-Werte) unterstützen. Wir arbeiten daran, diese Einschränkung aufzuheben.
+> [!NOTE]
+> Aktuell funktioniert das folgende Beispiel nur mit lokalen Sammlungen.  Es ist uns bewusst, dass viele Datenquellen *leere* Werte (NULL-Werte) unterstützen. Wir arbeiten daran, diese Einschränkung aufzuheben.
 
 1. Erstellen Sie eine Anwendung von Grund auf, und fügen Sie ein **Schaltfläche**-Steuerelement hinzu.
 2. Legen Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:
