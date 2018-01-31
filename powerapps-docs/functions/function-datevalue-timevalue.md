@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: fe4bf1a01711c35cda4566ed02bb3bc1297076ed
-ms.sourcegitcommit: 43be6a4e08849d522aabb6f767a81c092419babc
+ms.openlocfilehash: d171cc5de26d1dd6e6caa91b0205771707d8048c
+ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>Die Funktionen „DateValue“, „TimeValue“ und „DateTimeValue“ in PowerApps
 Konvertiert ein Datum und/oder eine Uhrzeit in einer Zeichenfolge in einen Datum/Uhrzeit-Wert
@@ -62,7 +62,8 @@ Wenn Sie **10/11/2014** in ein Texteingabe-Steuerelement mit dem Namen **StartDa
   
     Die Bezeichnung zeigt **Saturday, October 11, 2014** an, wenn das Gebietsschema Ihres Computers auf **en** festgelegt wurde.
   
-    **Hinweis:** Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
+    > [!NOTE]
+> Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
 * **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     Die Bezeichnung zeigt **Monday, November 10, 2014** an.
@@ -80,7 +81,8 @@ Wenn Sie **10/11/2014 1:50:24.765 PM** in ein Texteingabe-Steuerelement mit dem 
   
     Die Bezeichnung zeigt **Saturday, October 11, 2014 1:50:24 PM**, wenn das Gebietsschema Ihres Computers auf „en“ konfiguriert wurde.
   
-    **Hinweis:** Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
+    > [!NOTE]
+> Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
 * **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     Die Bezeichnung zeigt **Monday, November 10, 2014 1:50:24 PM** an.
