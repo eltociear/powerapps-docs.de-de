@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 04/28/2017
 ms.author: archanan
 ms.openlocfilehash: fd060ff873ee376b7ca886f721d360372c1d13ed
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="describe-a-custom-connector-with-postman"></a>Benutzerdefinierten Connector mit Postman beschreiben
 [Postman](https://www.getpostman.com/) ist ein Tool, das Ihre API-Entwicklung schneller und einfacher machen kann. Dieses Tutorial zeigt das Erstellen einer Postman-Sammlung, die Sie dann verwenden können, um auf einfache Weise [Benutzerdefinierte Connectors](register-custom-api.md) in PowerApps zu erstellen.

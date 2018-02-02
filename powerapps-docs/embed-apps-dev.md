@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: mblythe
-ms.openlocfilehash: 0bf7675248a8b5734b86dbfb79ca9272d72e93b9
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a5c0e2c69ccf5e7359318794e4c39bb66bba9dac
+ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="integrate-powerapps-into-websites-and-other-services"></a>Integrieren von PowerApps in Websites und andere Dienste
 Die Apps, die Sie erstellen, sind oft dann besonders nützlich, wenn sie für Ihre Arbeitskollegen direkt an Ort und Stelle verfügbar sind. Mithilfe von PowerApps können Sie Apps in einen iframe einbetten, sodass sich diese Apps in Websites und andere Dienste wie Power BI und SharePoint integrieren lassen.
@@ -65,16 +65,14 @@ Die App-ID ist auf „powerapps.com“ verfügbar. Führen Sie für die einzubet
 3. Ersetzen Sie den `[AppID]`-Wert im URI. Für unsere App zum Bestellen von Geschäftsausstattung sieht der URI wie folgt aus:
    
     ```
-    https://web.powerapps.com/webplayer/iframeapp?hideNavBar=true&
-    source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
+    https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
     ```
 
 ## <a name="embed-your-app-in-a-website"></a>Einbetten der App in eine Website
 Zum Einbetten Ihrer App brauchen Sie nur den iframe in den HTML-Code Ihrer Website einzufügen (oder in einen anderen Dienst mit iframe-Unterstützung wie Power BI und SharePoint):
 
 ```
-<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?hideNavBar=true&
-source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
+<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]"/>
 ```
 
 Geben Sie Werte für die Höhe und Breite des iframes an, und ersetzen Sie `[AppID]` durch die ID Ihrer App.

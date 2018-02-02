@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 225f4d79cee5a960116cb29efd06a8a5d229673c
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="powerapps-for-microsoft-partners-and-isvs"></a>PowerApps für Microsoft-Partner und ISVs
 Als Microsoft-Partner oder unabhängiger Softwarehersteller (Independent Software Vendor, ISV) können Sie die Einführung bei Kunden beschleunigen, indem Sie Ihre Produkte so erweitern, dass sie sich in die Daten- und Geschäftsprozesse Ihrer Kunden integrieren. Arbeiten Sie mit im Common Data Service gespeicherten Daten, und erstellen Sie Connectors, die Ihren Kunden das Herstellen von Verbindungen mit Ihren Produkten mithilfe der Apps ermöglichen, die sie in PowerApps erstellen. Generieren Sie neue Leads für Ihr Unternehmen, indem Sie eine App mit PowerApps erstellen und sie auf AppSource veröffentlichen, damit neue Kunden sie ausprobieren können.
