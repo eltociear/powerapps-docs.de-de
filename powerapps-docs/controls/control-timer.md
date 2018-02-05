@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c84eec1bdd541429d4524640d9e1ffa649b895fd
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -30,7 +30,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Timer im Designer ausgeführt wird.  Dadurch können Benutzer den Timer ohne zeitliche Einschränkung im Designer konfigurieren.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**Duration**: Wie lange ein Timer ausgeführt wird.
+**Duration**: Gibt an, wie lange ein Timer ausgeführt wird (in Millisekunden).  Es gibt keinen Höchstwert.
 
 **OnTimerEnd**: Wie eine App beim Beenden der Ausführung eines Timers reagiert.
 
@@ -113,29 +113,28 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 ## <a name="examples"></a>Beispiele
 ### <a name="show-a-countdown"></a>Anzeigen eines Countdowns
 1. Fügen Sie einen Timer hinzu, und nennen Sie ihn **Countdown**.
-   
+
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Legen Sie die Eigenschaft **Duration** für den Timer auf **10000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:
    <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000, 0)**
-   
+
     Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
-   
+
     Die Bezeichnung zeigt die bis zum Neustart des Timers verbleibenden Sekunden an.
 5. (optional) Legen Sie die Eigenschaft **[Visible](properties-core.md)** für den Timer auf **FALSE** fest.
 
 ### <a name="animate-a-control"></a>Animieren eines Steuerelements
 1. Fügen Sie einen Timer hinzu, und nennen Sie ihn **FadeIn**.
-   
+
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Legen Sie die Eigenschaft **Duration** für den Timer auf **5000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf **Welcome!** fest und legen Sie dessen Eigenschaft **[Color](properties-color-border.md)** auf diese Formel fest:
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
-   
+
     Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
-   
+
     Der Text in der Bezeichnung wird weiß, kehrt zur vollständigen Intensität zurück und wiederholt den Prozess.
 5. (optional) Legen Sie die Eigenschaft **[Visible](properties-core.md)** für den Timer auf **FALSE** fest.
-

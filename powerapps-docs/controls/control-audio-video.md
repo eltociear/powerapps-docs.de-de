@@ -15,17 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7aa3c2e2e6b0e6baaaec9666fc7b4e56c9568317
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: a79ef2ff58667b5a2516056f29845330745e5936
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
 
 ## <a name="description"></a>Beschreibung
-In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzeichnung aus einem **[Mikrofon](control-microphone.md)**-Steuerelement oder die Audiospur aus einer Videodatei abgespielt werden. In einem **Video**-Steuerelement werden Videoclips aus einer Datei oder von YouTube abgespielt, wenn Sie eine URL angeben.
+In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzeichnung aus einem **[Mikrofon](control-microphone.md)**-Steuerelement oder die Audiospur aus einer Videodatei abgespielt werden. In einem **Video**-Steuerelement werden Videoclips aus einer Datei oder von YouTube mit optionalen Untertiteln für Hörgeschädigte abgespielt, wenn Sie eine URL angeben.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Loop** – Gibt an, ob ein Audio- oder Videoclip am Ende der Wiedergabe automatisch neu gestartet wird.
@@ -44,6 +44,8 @@ In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzei
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
+
+**ClosedCaptionsUrl** – Steuerelement nur für Videos.  URL der Datei mit den Untertiteln für Hörgeschädigte im WebVTT-Format.  Video- und Untertitel-URL müssen HTTPS-URLs sein. Auf dem Server, auf dem die Video- und Untertiteldateien gehostet werden, muss CORS aktiviert sein.
 
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
@@ -89,10 +91,10 @@ In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzei
 1. Klicken oder tippen Sie im Menü **Datei** auf **Medien**, klicken oder tippen Sie auf **Videos** oder **Audio**, und klicken oder tippen Sie dann auf **Durchsuchen**.
 2. Navigieren Sie zu der Datei, die Sie verwenden möchten, klicken oder tippen Sie darauf und dann auf **Öffnen**.
 3. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren, fügen Sie ein **Audio**- oder **Video**-Steuerelement hinzu, und legen Sie die **Media**-Eigenschaft auf die hinzugefügte Datei fest.
-   
+
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 4. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des Steuerelements ab, das Sie hinzugefügt haben.
-   
+
     > [!TIP]
 > Die Wiedergabeschaltfläche für das **Video**-Steuerelement wird angezeigt, wenn Sie auf das Steuerelement zeigen.
 5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
@@ -101,4 +103,3 @@ In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzei
 1. Fügen Sie ein **Video**-Steuerelement hinzu, und legen Sie die **Media**-Eigenschaft auf die URL (in doppelten Anführungszeichen) eines YouTube-Videos fest.
 2. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des **Video**-Steuerelements ab.
 3. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
-

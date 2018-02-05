@@ -13,41 +13,25 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/16/2018
+ms.date: 1/29/2018
 ms.author: v-malyng
-ms.openlocfilehash: 46bb36b3fd712124624e9435581379b56702e20c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
+ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. In den Kommentaren unter diesem Thema können Sie gerne weitere Themen vorschlagen.
 
 ## <a name="upcoming-webinars"></a>Anstehende Webinare ##
-**Verwenden von PowerApps und Flow zum Erstellen von „Branchenportalen“ mit Vishwas Lele**
-<br>von Vishwas Lele
-<br>*18. Januar, 19:00 Uhr MEZ*
-
-Vishwas Lele stellt eine PowerApp vor, bei der es sich im Wesentlichen um ein „Portal“ für eine vorhandene Branchenunternehmensanwendung (Inventar, Verträge usw.) und Dienste ( Dynamics, O365, DropBox usw.) handelt. Anhand von PowerApps-Funktionen wie vorkonfigurierte Connectors, Flow-Integration und Unterstützung für Mobilgeräte erfahren Sie, wie einfach eine App für Information-Worker erstellt werden kann, sodass sie an einem zentralen Ort und über ein beliebiges Gerät auf alle Informationen zugreifen können.  
-
-[Klicken Sie hier, um am 18. Januar live dabei zu sein](http://www.youtube.com/watch?v=eSMAAFHK44c)
-
-**Connector-Reihe | Arbeiten mit Connectors: Verwenden des Planner-Connectors**
-<br>von Audrie Gordon
-<br>*22. Januar, 19:00 Uhr MEZ*
-
-In dieser neuen monatlichen „Connector-Webinar-Reihe“ werden die Möglichkeiten erläutert, wie Sie die über 200 Daten- und SaaS-Connectors mit PowerApps und Flow verwenden können. Den Anfang dieser Reihe macht eine Übersicht über den „Planner“-Connector for Office 365. Sie erhalten Tipps zur Verwendung sowie einige neue Ideen für Unternehmens-Apps, die PowerApps mit dem Planner-Connector verwenden.
-
-[Klicken Sie hier, um am 22. Januar live dabei zu sein](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
-
 **Erste Schritte | Produktintegration: Teams + PowerApps – Tipps und Tricks**
 <br>von Audrie Gordon
-<br>*29. Januar, 19:00 Uhr MEZ*
+<br>*31. Januar, 19:00 Uhr MEZ*
 
 In diesem Webinar erfahren Sie, wie PowerApps und Teams gemeinsam verwendet werden können, um in kürzester Zeit eine noch leistungsfähigere Unternehmenslösung zu entwickeln. Es wird gezeigt, wie Sie PowerApps in Teams-Kanälen nutzen, und wir geben einige neue Ideen für die Verwendung dieser Produkte zur Verbesserung der Zusammenarbeit im Team.
 
-[Klicken Sie hier, um am 29. Januar live dabei zu sein](https://www.youtube.com/watch?v=obBQk-aSElI)
+[Klicken Sie hier, um am 31. Januar live dabei zu sein](https://www.youtube.com/watch?v=obBQk-aSElI)
 
 **Connector-Reihe | Das Potenzial von Office Graph mit PowerApps**
 <br>von Audrie Gordon
@@ -56,6 +40,14 @@ In diesem Webinar erfahren Sie, wie PowerApps und Teams gemeinsam verwendet werd
 Audrie Gordon, Senior Program Manager im PowerApps-Team, zeigt, wie Sie PowerApps mit Office Graph-Technologien nutzen. Dabei wird eine der Vorlagen angepasst und Nutzung der Office-Gruppe in einem typischen Unternehmensszenario optimiert.
 
 [Klicken Sie hier, um am 5. Februar live dabei zu sein](https://www.youtube.com/watch?v=AOGGyoElGaQ)
+
+**Deep Dive | Erstellen von Serverpatchlösungen mit PowerApps von Brian Blanchard**
+<br>von Audrie Gordon
+<br>*19. Februar, 19:00 Uhr MEZ*
+
+Brian Blanchard von Microsoft Retail Stores gibt Einblick in das Erstellen von Apps zur Verwaltung von Serverpatch-Zeitplänen für sein Team. Behandelt werden die Desktopversion und die mobile Version, die aktuell in Benutzung sind, um den Patchvorgang zu verkürzen und zu vereinfachen. Brian Blanchard hat es so geschafft, seinem Team mit PowerApps und Flow Zeit und Geld zu sparen.
+
+[Klicken Sie hier, um am 19. Februar live dabei zu sein](https://www.youtube.com/watch?v=QAe0oBecowU)
 
 ## <a name="past-webinars"></a>Frühere Webinare ##
 Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung.
@@ -124,6 +116,12 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 
 **New Office Graph Templates (Part 2) (Neue Office Graph-Vorlagen, Teil 2)**
 <br>von Emma Cooper [Jetzt ansehen](https://www.youtube.com/watch?v=9PopTeLdpmU)
+
+**Verwenden von PowerApps und Flow zum Erstellen von „Branchenportalen“**
+<br>von Vishwas Lele [Jetzt ansehen](http://www.youtube.com/watch?v=eSMAAFHK44c)
+
+**Arbeiten mit Connectors: Verwenden des Planner-Connectors**
+<br> von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
 ### <a name="app-designer-topics"></a>App-Designer-Themen ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger (Blick hinter die Kulissen mit einem der PowerApps-Entwickler – Eine eingehendere Betrachtung von Vorlagen: Marie Hoeger)**

@@ -1,6 +1,6 @@
 ---
-title: "PowerApps für Unternehmensentwickler | Microsoft-Dokumentation"
-description: "Eine Einführung für Unternehmensentwickler in die Entwicklung von Apps in PowerApps."
+title: "PowerApps für Unternehmensentwickler, Partner und ISVs | Microsoft-Dokumentation"
+description: "Eine Einführung in die Entwicklung von Lösungen in PowerApps."
 services: 
 suite: powerapps
 documentationcenter: na
@@ -15,27 +15,38 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
-ms.openlocfilehash: 7dcc4a37ac8b3ba00d03baac58c9a12b388860bb
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 8f75eacfc1e7c70660314b4b9adf6ad61ea54d23
+ms.sourcegitcommit: 6a43e35eacb48e7f4724aa213dee801571ea8928
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
-# <a name="powerapps-for-enterprise-developers"></a>PowerApps für Unternehmensentwickler
-Geben Sie als Unternehmensentwickler Ihrer Organisation die Möglichkeit, stabile, maßgeschneiderte Lösungen in PowerApps zu erstellen. Verwenden Sie benutzerdefinierte Connectors, die Verbindungen mit Ihren Daten und Webdiensten herstellen; betten Sie Apps in die Websites Ihrer Organisation ein; und arbeiten Sie mit Daten im Common Data Service.
+# <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps für Unternehmensentwickler, Partner und ISVs
 
-## <a name="build-custom-connectors"></a>Erstellen von benutzerdefinierten Connectors
-Entwickeln Sie benutzerdefinierte Connectors, um Verbindungen mit den Daten und Webdiensten Ihrer Organisation mithilfe von PowerApps herzustellen. [Weitere Informationen](register-custom-api.md)
+Als Entwickler können Sie PowerApps erweitern, um noch leistungsfähigere Lösungen für Unternehmen und Kunden zu ermöglichen.
 
-## <a name="build-azure-functions"></a>Erstellen von Azure-Funktionen
-Gestalten Sie Azure-Funktionen, um Apps um benutzerdefinierte serverseitige Logik zu erweitern. [Weitere Informationen](https://powerapps.microsoft.com/blog/using-azure-functions-in-powerapps/)
+## <a name="powerapps-for-enterprise-developers"></a>PowerApps für Unternehmensentwickler
 
-## <a name="embed-apps"></a>Einbetten von Apps
-Betten Sie Apps direkt in Ihre Websiteoberflächen ein, um integrierte Lösungen zu erstellen und Apps dort in den Vordergrund zu rücken, wo die Personen in Ihrer Organisation ohnehin ihre Arbeit tun. [Weitere Informationen](embed-apps-dev.md)
+Geben Sie als Unternehmensentwickler Ihrer Organisation die Möglichkeit, stabile, maßgeschneiderte Lösungen in PowerApps zu erstellen:
 
-## <a name="build-offline-capable-apps"></a>Erstellen von offlinefähigen Apps
-Entwickeln Sie offlinefähige Apps, damit Ihre Benutzer stets produktiv sein können, gleich ob online oder offline. [Weitere Informationen](offline-apps.md)
+- **Erstellen von benutzerdefinierten Connectors:** Entwickeln Sie benutzerdefinierte Connectors, um über Microsoft Flow Verbindungen mit den Daten und Webdiensten Ihrer Organisation herzustellen. [Weitere Informationen](https://docs.microsoft.com/connectors/custom-connectors/)
 
-## <a name="work-with-data-using-the-common-data-service-sdk"></a>Arbeiten mit Daten mit dem Common Data Service-SDK
-Verwenden Sie das Common Data Service-SDK mit Azure-Funktionen, um Ihre Möglichkeiten zur Abfrage und Bearbeitung von Daten in PowerApps zu erweitern. [Weitere Informationen](https://aka.ms/whgr2w)
+- **Erstellen von Azure Functions:** Gestalten Sie Azure Functions, um Apps um benutzerdefinierte serverseitige Logik zu erweitern. [Weitere Informationen](https://docs.microsoft.com/azure/azure-functions/functions-powerapps-scenario)
 
+- **Einbetten von Apps:** Betten Sie Apps direkt in Ihre Websiteoberflächen ein, um integrierte Lösungen zu erstellen und Apps in der Umgebung verfügbar zu machen, in der Benutzer ohnehin arbeiten. [Weitere Informationen](embed-apps-dev.md)
+
+- **Entwickeln von offlinefähigen Apps:** Entwickeln Sie offlinefähige Apps, damit Ihre Benutzer stets produktiv sein können, gleich ob online oder offline. [Weitere Informationen](offline-apps.md)
+
+- **Arbeiten mit Daten mit dem Common Data Service-SDK:** Verwenden Sie das Common Data Service-SDK mit Azure Functions, um Ihre Möglichkeiten zur Abfrage und Bearbeitung von Daten in PowerApps zu erweitern. [Weitere Informationen](https://aka.ms/whgr2w)
+
+## <a name="powerapps-for-isvs-and-microsoft-partners"></a>PowerApps für ISVs und Microsoft-Partner
+
+Als Microsoft-Partner oder unabhängiger Softwarehersteller (Independent Software Vendor, ISV) beschleunigen Sie die Einführung bei Kunden, indem Sie Ihre Produkte so erweitern, dass sie sich in die Daten- und Geschäftsprozesse Ihrer Kunden integrieren:
+
+- **Erstellen von Apps auf der Grundlage des Common Data Models mithilfe des Common Data Service-SDKs:** Erstellen Sie benutzerdefinierte Apps, oder erweitern Sie Ihr Produkt um tiefere Datenintegration, indem Sie die Verbindungen mit den Daten ihrer Kunden im Common Data Service herstellen. [Weitere Informationen](https://aka.ms/eek20s)
+
+- **Erstellen und Zertifizieren benutzerdefinierter Connectors:** Machen Sie Ihr Produkt in der Microsoft Cloud verfügbar, indem Sie einen Connector erstellen, der PowerApps die Kommunikation mit Ihrem Dienst ermöglicht. [Weitere Informationen](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+
+- **Eintragen Ihrer Lösung auf AppSource:** Generieren Sie neue Leads für Ihr Unternehmen, indem Sie eine App mit PowerApps erstellen und auf AppSource veröffentlichen, damit neue Kunden sie ausprobieren können. [Weitere Informationen](dev-appsource-test-drive.md)
+
+- **Gleich heute kostenlos einsteigen:** Registrieren Sie sich für den kostenlosen PowerApps-Communityplan, und beginnen Sie mit der Entwicklung von Apps in einer dedizierten individuellen Umgebung. [Weitere Informationen](dev-community-plan.md)

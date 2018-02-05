@@ -13,22 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/18/2018
+ms.date: 01/31/2018
 ms.author: sharik
-ms.openlocfilehash: 5f3336d4cd3ab45f35a3ce93441dd30ffccbaca5
-ms.sourcegitcommit: 7d66f33f1419751dd1c758e344cc6d55818a0fd5
+ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
+ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
 
+## <a name="jan-31"></a>31. Januar
+1. Hinzufügen von Untertiteln für Hörgeschädigte zu [Video](controls/control-audio-video.md)-Steuerelementen.
+2. Verbesserte Fehlerbehandlung in [PDF-Viewer](controls/control-pdf-viewer.md) Steuerelementen.
+
 ## <a name="jan-18"></a>18. Januar
-* PowerApps für iOS und Android unterstützt jetzt die Integration mit Microsoft Authenticator.
-* In PowerApps Studio ersetzt ein [Kombinationsfeld](controls/control-combo-box.md) das [SharePoint-Nachschlagesteuerelement](sharepoint-lookup-fields.md) in Formularen, und standardmäßig ist eine neue [Datenkarten](working-with-cards.md)-Vorlage für Einzelauswahlsuchfelder ausgewählt ist.
-* In einem [Kombinationsfeld](controls/control-combo-box.md) werden alle Einträge im erweiterten Lesemodus in einer langen Liste angezeigt.
-* Legen Sie die Größe des Datensatzgrenzwerts für den lokalen Speicher auf bis zu 2000 Datensätzen in [nicht delegierbaren Abfragen](delegation-overview.md#non-delegable-limits) fest. (Experimentelles Feature)
+1. PowerApps für iOS und Android unterstützt jetzt die Integration mit Microsoft Authenticator.
+2. In PowerApps Studio ersetzt ein [Kombinationsfeld](controls/control-combo-box.md) das [SharePoint-Nachschlagesteuerelement](sharepoint-lookup-fields.md) in Formularen, und standardmäßig ist eine neue [Datenkarten](working-with-cards.md)-Vorlage für Einzelauswahlsuchfelder ausgewählt ist.
+3. In einem [Kombinationsfeld](controls/control-combo-box.md) werden alle Einträge im erweiterten Lesemodus in einer langen Liste angezeigt.
+4. Legen Sie die Größe des Datensatzgrenzwerts für den lokalen Speicher auf bis zu 2000 Datensätzen in [nicht delegierbaren Abfragen](delegation-overview.md#non-delegable-limits) fest. (Experimentelles Feature)
 
 ## <a name="jan-5"></a>5. Januar
 * Verarbeiten Sie Daten direkt aus einem Power BI-Bericht oder -Dashboard, indem Sie ein [benutzerdefiniertes PowerApps-Visual (Vorschauversion)](https://powerapps.microsoft.com/blog/powerbi-powerapps-visual/) integrieren, mit dem Kontextdaten aus dem Power BI-Bericht abgerufen werden.
@@ -63,9 +67,3 @@ Informationen über bekannte Einschränkungen finden Sie unter [Häufige Problem
 ## <a name="aug-15"></a>15. August
 1. Herunterladen einer [Liste der Apps](admin-view-apps.md), die in Ihrer Organisation verwendet werden.
 2. Delegieren der Funktionen **Sum**, **Average**, **Min** und **Max** für SQL Server.
-
-## <a name="july-26"></a>26. Juli
-1. Anzeigen einer [Power BI-Kachel](controls/control-power-bi-tile.md) in einer App.
-2. Leichteres Ersetzen eines leeren Werts mithilfe der **[Coalesce](functions/function-isblank-isempty.md)**-Funktion, wobei die übrigen Werte unverändert beibehalten werden.
-3. Testen mithilfe der **[EndsWith](functions/function-startswith.md)**-Funktion, ob eine Textzeichenfolge mit einer anderen Textzeichenfolge endet.
-4. Verwenden der Operatoren **[And](functions/operators.md)**, **[Or](functions/operators.md)** oder **[Not](functions/operators.md)** in einer Formel.
