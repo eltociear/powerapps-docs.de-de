@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/10/2018
 ms.author: mblythe
-ms.openlocfilehash: 1b22885a6ff97b1ffcf67da291ab89d091863981
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f3045a67de492866c3db7d9238a5c4c2111bcb6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Erstellen eines Power BI-Berichts zum Analysieren von Projekten
 > [!NOTE]
@@ -177,7 +177,7 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
    
     Durch diese Formel wird die Tabelle **Dates** mit einer einzigen Datumsspalte erstellt. Die Tabelle umfasst alle Datumsangaben aus Ihren anderen Tabellen und wird automatisch aktualisiert, wenn weitere Datumsangaben hinzugefügt werden (d.h., wenn die Daten aktualisiert werden).
    
-    Bei dieser und den anderen Formeln in diesem Abschnitt wird DAX (Data Analysis Expressions) verwendet, eine Formelsprache für Power BI und andere Technologien. Weitere Informationen finden Sie unter [DAX-Grundlagen in Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-quickstart-learn-dax-basics/).
+    Bei dieser und den anderen Formeln in diesem Abschnitt wird DAX (Data Analysis Expressions) verwendet, eine Formelsprache für Power BI und andere Technologien. Weitere Informationen finden Sie unter [DAX-Grundlagen in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 3. Drücken Sie die EINGABETASTE, um die Tabelle **Dates** zu erstellen.
    
     ![Tabelle „Dates“](./media/sharepoint-scenario-build-report/05-02-07-date-table.png)

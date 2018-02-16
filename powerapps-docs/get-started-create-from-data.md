@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: cf90156292985e58e2d68d2828d7c943b45facdf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 1558dba59f4b755ded709329c099feb94b55fac6
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="generate-an-app-from-excel-data"></a>Generieren einer App aus Excel-Daten
 Erstellen Sie automatisch eine App basierend auf Daten in einer Excel-Datei, die Sie in ein Cloudspeicherkonto wie OneDrive hochladen. Nachdem Sie die App generiert haben, können Sie sie beliebig anpassen und anschließend ausführen, um sicherzustellen, dass sie Ihren Vorstellungen entspricht.
@@ -41,7 +41,7 @@ Generierte Apps verfügen standardmäßig über drei Bildschirme:
 * Um dieses Tutorial nachzuvollziehen, laden Sie diese [Excel-Datei](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) herunter.
   
     > [!IMPORTANT]
-> Sie können eine eigene Excel-Datei verwenden, wenn die Daten als Tabelle formatiert sind. Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+> Sie können eine eigene Excel-Datei verwenden, wenn die Daten als Tabelle formatiert sind. Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 * Laden Sie die Excel-Datei in OneDrive oder ein anderes [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch.
 
 ## <a name="create-an-app"></a>Erstellen einer App

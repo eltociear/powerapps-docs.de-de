@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: sharik
-ms.openlocfilehash: f3e5fdce6948928cdd393e7a9933b3261af4e3f6
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 75b3315833fc6ced9ef3d8eb252d0f8639ccd696
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Hinzufügen von Bildern aus PowerApps zu Excel
 Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeichnungen mit einem **Stift**-Steuerelement anzeigen, hinzufügen oder löschen können. Die App basiert auf einer Excel-Datei, die Sie erstellen und in ein Cloudspeicherkonto hochladen.
@@ -26,7 +26,7 @@ Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeic
 ## <a name="prerequisites"></a>Voraussetzungen
 
 * Sie müssen mit dem [Hinzufügen und Konfigurieren von Steuerelementen](add-configure-controls.md) vertraut sein.
-* Sie müssen mit dem [Konfigurieren von Excel-Daten als Tabelle](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US) vertraut sein.
+* Sie müssen mit dem [Konfigurieren von Excel-Daten als Tabelle](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US) vertraut sein.
 * Eine [PowerApps-Verbindung](add-data-connection.md) mit einem Cloudspeicherkonto (wie Dropbox, OneDrive oder Google Drive), in dem eine Excel-Datei gespeichert werden kann.
 
 ## <a name="create-the-data-source-and-the-app"></a>Erstellen der Datenquelle und der App

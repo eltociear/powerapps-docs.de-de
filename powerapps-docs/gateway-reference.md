@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: sharik
-ms.openlocfilehash: 3d5ae546d10c0713fe346db1fbe49a6f6701f7a1
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e5bcf28febb2d37284203a4856a8fea590637aed
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Grundlegendes zu lokalen Datengateways für Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration
@@ -85,7 +85,7 @@ Das Gateway wird als Windows-Dienst ausgeführt, deshalb können Sie es auf vers
 
 **Konfigurieren einer Firewall oder eines Proxys**
 
-Informationen über das Bereitstellen von Proxyinformationen für Ihr Gateway finden Sie unter [Konfigurieren von Proxyeinstellungen](https://powerbi.microsoft.com/en-us/documentation/powerbi-gateway-proxy/).
+Informationen über das Bereitstellen von Proxyinformationen für Ihr Gateway finden Sie unter [Konfigurieren von Proxyeinstellungen](https://docs.microsoft.com/power-bi/service-gateway-proxy).
 
 Sie können überprüfen, ob Ihre Firewall oder Ihr Proxy möglicherweise Verbindungen blockiert, indem Sie folgenden Befehl von einer PowerShell-Eingabeaufforderung ausführen. Dieser Befehl testet die Konnektivität mit dem Azure Service Bus. Es wird nur die Netzwerkkonnektivität getestet, und dies hat nichts mit dem Cloudserverdienst oder dem Gateway zu tun. Damit können Sie bestimmen, ob Ihr Computer eine Verbindung mit dem Internet herstellen kann.
 
@@ -140,7 +140,7 @@ Das lokale Datengateway ist für die Verwendung von *NT SERVICE\PBIEgwService* f
 
 Dies ist nicht das Konto, das zum Herstellen einer Verbindung mit lokalen Datenquellen oder dem Geschäfts- oder Schulkonto verwendet wird, mit dem Sie sich bei den Clouddiensten anmelden.
 
-Wenn bei Ihrem Proxyserver aufgrund der Authentifizierung Probleme auftreten, empfiehlt es sich, das Windows-Dienstkonto in ein Domänenbenutzerkonto oder verwaltetes Dienstkonto zu ändern, wie unter [Konfigurierung von Proxyeinstellungen](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user) beschrieben.
+Wenn bei Ihrem Proxyserver aufgrund der Authentifizierung Probleme auftreten, empfiehlt es sich, das Windows-Dienstkonto in ein Domänenbenutzerkonto oder verwaltetes Dienstkonto zu ändern, wie unter [Konfigurierung von Proxyeinstellungen](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user) beschrieben.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 #### <a name="general"></a>Allgemein

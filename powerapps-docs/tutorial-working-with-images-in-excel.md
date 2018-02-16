@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/15/2016
 ms.author: anneta
-ms.openlocfilehash: 5ba6f02db0de796cb75c57d914abf41caa259cbf
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: e789a253a2c1d52cc85dadc6f532604021f6b004
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>So speichern Sie Bilder in einer Excel-Datei und fügen diese Bilder anschließend zu Ihrer App hinzu
 
@@ -42,7 +42,7 @@ In diesem Tutorial werden wir:
    2. Wählen Sie im Menüband **Einfügen** **Tabelle** aus.
    3. Wählen Sie im Dialogfenster **Meine Tabelle hat Überschriften** und **OK** aus.
       
-      Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen über das Formatieren einer Tabelle in Excel finden Sie unter [Formatieren einer Excel-Tabelle](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
+      Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen über das Formatieren einer Tabelle in Excel finden Sie unter [Formatieren einer Excel-Tabelle](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
    4. Benennen Sie die Tabelle **Zeichnungen**:  
       
       ![Tabelle in „Zeichnungen“ umbenennen](./media/tutorial-working-with-images-in-excel/drawings-table.png)

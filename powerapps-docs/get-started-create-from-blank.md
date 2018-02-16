@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
-ms.openlocfilehash: 7a81e7287f2891e428062241d747ea451dff9e10
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-an-app-from-scratch"></a>App von Grund auf neu erstellen
 Erstellen Sie Ihre eigene App von Grund auf neu mithilfe einer Vielzahl von Datenquellen, wobei Sie später noch weitere Quellen hinzufügen können, wenn Sie möchten. Geben Sie die Darstellung und das Verhalten jedes UI-Elements so an, dass Sie das Ergebnis für Ihre genauen Ziele und Ihren Workflow optimieren können. Dieser Ansatz ist weitaus zeitaufwendiger als [eine App automatisch zu generieren](get-started-create-from-data.md), aber erfahrene App-Entwickler können die beste App für ihre Anforderungen erstellen.
@@ -51,7 +51,7 @@ Sie können dieses Tutorial zur allgemeinen Information verwenden oder den hier 
 
 2. Formatieren Sie diese Daten als Tabelle mit dem Namen **Schedule**, sodass die Informationen von PowerApps analysiert werden können.
 
-    Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+    Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 
 3. Speichern Sie die Datei unter dem Namen **eventsignup.xls**, und laden Sie sie dann in ein [Cloud-Speicherkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive hoch.
 

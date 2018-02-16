@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/02/2018
+ms.date: 02/05/2018
 ms.author: sharik
-ms.openlocfilehash: 8c46d7c5e8677d37b0a50b0c60dab4b81bd54c44
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: a1ebe4011619b0a2baaa3b9a98579bb22d02774e
+ms.sourcegitcommit: 290e81488ec5c2e0bb820ef0e3b7f5c0f54c80eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -30,9 +30,6 @@ PowerApps ist direkt in SharePoint integriert – Sie müssen keine weitere App 
 Und weil PowerApps nahtlos in SharePoint integriert ist, besteht keine Notwendigkeit, Formulare an zwei Stellen zu verwalten: Berechtigungen werden von SharePoint geerbt und in SharePoint verwaltet. Zudem erhalten Sie durch die Integration von PowerApps in SharePoint Zugriff auf viele leistungsstarke Features, z.B. Analytics-Berichte, leicht zu verwendende Point-and-Click-Regeln für bedingte Formatierung und Verbindungen mit anderen Datenquellen.
 
 Sind Sie zum Anpassen bereit? Lassen Sie uns loslegen!
-
-> [!NOTE]
-> Diese Funktionalität wird für SharePoint-Kunden phasenweise eingeführt. Möglicherweise wird die Option **Formulare anpassen** erst in Kürze in der SharePoint-Liste angezeigt.
 
 ## <a name="create-a-custom-list-form-app-in-powerapps"></a>Erstellen einer benutzerdefinierten Listenformular-App in PowerApps
 

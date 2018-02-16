@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 849bde71d8f5dcf6505721758e2edca0921146bb
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 49ff8b15b3697afb7367aa5d4a587b389c9b538c
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
@@ -119,7 +119,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
        ![Erstellen einer Tabelle](./media/add-images-pictures-audio-video/create-table.png)
 
-       Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen zum Formatieren von Tabellen im Excel-Format finden Sie unter [Daten als Tabelle formatieren](https://support.office.com/en-us/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
+       Die Excel-Datei liegt nun im Tabellenformat vor. Weitere Informationen zum Formatieren von Tabellen im Excel-Format finden Sie unter [Daten als Tabelle formatieren](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370).
 
    4. Benennen Sie die Tabelle **Drawings**:
 

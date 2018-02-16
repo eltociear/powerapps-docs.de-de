@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: bbde4b033afcd530128f330432f262257f5d771c
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 40feb1f2412408e732be91e649ab2b4c54e4ba98
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:
 
 * Erlernen der Erstellung von Geschäftsanwendungen und Workflows mit dem gesamten Funktionsumfang von PowerApps und Microsoft Flow.
 * Herstellen von Verbindungen mit beliebigen Datenquellen mithilfe unserer über 100 [fertig konfigurierten Connectors](connections-list.md) oder durch Erstellen Ihrer eigenen [benutzerdefinierten Connectors](register-custom-api.md).
-* Erforschen, wie Sie den [Common Data Service](https://docs.microsoft.com/en-us/common-data-service/entity-reference/introduction) zum Erstellen von leistungsstarken Geschäftsanwendungen mit dem Common Data Model und dem [SDK](https://aka.ms/eek20s) verwenden können.
+* Erforschen, wie Sie den [Common Data Service](https://docs.microsoft.com/common-data-service/entity-reference/introduction) zum Erstellen von leistungsstarken Geschäftsanwendungen mit dem Common Data Model und dem [SDK](https://aka.ms/eek20s) verwenden können.
 * Exportieren der in Ihrer individuellen Umgebung erstellten Lösungen, die Sie anschließend [auf AppSource auflisten](dev-appsource-test-drive.md) können, damit Ihre Kunden sie ausprobieren können.
 
 ## <a name="who-can-sign-up-for-the-powerapps-community-plan"></a>Wer kann sich für den PowerApps-Communityplan registrieren?

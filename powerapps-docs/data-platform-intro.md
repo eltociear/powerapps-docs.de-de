@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/20/2017
 ms.author: kfend
-ms.openlocfilehash: bbc501542e634fab925654734cf709fe87248883
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: da01fe6e89e64e07b5ce4eb0350bc2ac1f54ff30
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="understand-entities-in-the-common-data-service"></a>Grundlegendes zu Entitäten in Common Data Service
 
@@ -72,7 +72,7 @@ Alle Standardentitäten oder benutzerdefinierten Entitäten werden mit einem Sat
 Jede Standardentität enthält eine Reihe von Standardfeldern, die Sie nicht ändern oder löschen können. Eine Liste der Entitäten und ihrer Felder sowie eine Liste der Auswahllisten finden Sie unter [Standardentitäten](https://docs.microsoft.com/common-data-service/entity-reference/standard-entities).
 
 ### <a name="custom-fields"></a>Benutzerdefinierte Felder
-Sie können benutzerdefinierte Felder in einer Standardentität oder in einer benutzerdefinierten Entität erstellen. Sie müssen den Namen, den Anzeigenamen und den Datentyp der einzelnen benutzerdefinierten Felder angeben. Eine vollständige Liste der unterstützten Typen finden Sie unter [Entity field data types (Datentypen des Entitätsfelds)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/field-data-types).
+Sie können benutzerdefinierte Felder in einer Standardentität oder in einer benutzerdefinierten Entität erstellen. Sie müssen den Namen, den Anzeigenamen und den Datentyp der einzelnen benutzerdefinierten Felder angeben. Eine vollständige Liste der unterstützten Typen finden Sie unter [Entity field data types (Datentypen des Entitätsfelds)](https://docs.microsoft.com/common-data-service/entity-reference/field-data-types).
 
 ## <a name="lookup-relationships"></a>Nachschlagebeziehungen
 Sie können zwischen Datensätzen in Entitäten navigieren, wenn sie zueinander in einer Beziehung stehen, die als Feld des **Lookup**-Datentyps definiert ist. Um eine Nachschlagebeziehung zu erstellen, fügen Sie ein Feld vom Datentyp **Lookup** einer Entität hinzu, und zeigen Sie auf die Entität, in der Sie nach Informationen suchen möchten. Weitere Informationen finden Sie unter [Entitätsbeziehungen über Nachschlagefeld](data-platform-entity-lookup.md).

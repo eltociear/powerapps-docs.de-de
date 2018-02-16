@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/08/2017
 ms.author: kfend
-ms.openlocfilehash: a8c13158ab2c3f152aa99357684c818f48e637ae
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: ea4fc21eb98ddb4861739559062f01190fb14819
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configure-database-security"></a>Datenbanksicherheit konfigurieren
 Der Common Data Service verwendet ein rollenbasiertes Sicherheitsmodell, das den sicheren Zugriff auf die Datenbank unterstützt. In diesem Thema wird erläutert, wie die Sicherheitsartefakte erstellt werden, die Sie zum Schützen von Apps benötigen. Die Benutzerrollen steuern den Laufzeitzugriff auf Daten und sind getrennt von den Umgebungsrollen, die die Umgebungsadministratoren und Umgebungsersteller regeln. Einen Überblick über die Umgebungen finden Sie unter [Environments overview (Überblick über Umgebungen)](environments-overview.md).
@@ -32,7 +32,7 @@ Es ist wichtig zu verstehen, welche Zugriffsebene für diese Entitäten für Ben
 
 Die zwei am häufigsten verwendeten Berechtigungsstufen sind der schreibgeschützte Zugriff und der Vollzugriff. Der Common Data Service beinhaltet Berechtigungssätze auf diesen zwei Berechtigungsstufen für alle seine Entitäten. Ansichtsberechtigungssätze bieten Lesezugriff auf eine Entität. Wartungsberechtigungssätze bieten Vollzugriff auf eine Entität.
 
-Das Sicherheitsmodell ermöglicht die Zuweisung beliebiger Kombinationen dieser Berechtigungen zu Benutzerrollen. Rollen kombinieren die verschiedenen Berechtigungen, die im Rahmen der ihnen hinzugefügten Berechtigungssätze erteilt werden. Daher können die Mitglieder einer Rolle auf alle Daten zugreifen, auf die ihnen die in der jeweiligen Rolle enthaltenen Berechtigungssätze Zugriff gewähren. Weitere Informationen zum Sicherheitsmodell von Common Data Service finden Sie unter [Security model (Sicherheitsmodell)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model).
+Das Sicherheitsmodell ermöglicht die Zuweisung beliebiger Kombinationen dieser Berechtigungen zu Benutzerrollen. Rollen kombinieren die verschiedenen Berechtigungen, die im Rahmen der ihnen hinzugefügten Berechtigungssätze erteilt werden. Daher können die Mitglieder einer Rolle auf alle Daten zugreifen, auf die ihnen die in der jeweiligen Rolle enthaltenen Berechtigungssätze Zugriff gewähren. Weitere Informationen zum Sicherheitsmodell von Common Data Service finden Sie unter [Security model (Sicherheitsmodell)](https://docs.microsoft.com/common-data-service/entity-reference/security-model).
 
 ## <a name="identify-the-entities"></a>Identifizieren der Entitäten
 Um die richtigen Zugriffssteuerungen für eine App zu konfigurieren, müssen Sie wissen, welche Entitäten die App verwendet. Führen Sie die folgenden Schritte aus, um eine Liste der von einer App verwendeten Entitäten anzuzeigen.

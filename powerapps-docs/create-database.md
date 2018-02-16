@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/06/2016
 ms.author: kfend
-ms.openlocfilehash: a2224d97c9cfc1261e43f7d30c8d8bdd2dd6e86b
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 892f434d54c723d8de4ad6e9a48ced05cf23b311
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Erstellen einer Common Data Service-Datenbank
 Mithilfe von Common Data Service als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder als Administrator zu einer vorhandenen Umgebung zugewiesen werden. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von Common Data Service finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
@@ -65,7 +65,7 @@ Standardmäßig wird eine Datenbank im Open-Zugriffsmodus erstellt. In diesem Mo
    * Wählen Sie zur Deaktivierung der Sicherheit **Open access** (offener Zugriff) aus.
 
 ## <a name="license-and-security-permissions"></a>Lizenz- und Sicherheitsberechtigungen
-Um eine Datenbank erstellen zu können, müssen Sie Administrator in der ausgewählten Umgebung sein, und Sie müssen der entsprechenden Lizenz zugewiesen werden. Über die Umgebung können Sie mithilfe der Registerkarte **Sicherheit** weitere Sicherheitsberechtigungen für andere Benutzer konfigurieren. Weitere Informationen finden Sie unter [Datenbanksicherheit konfigurieren](database-security.md) und [Sicherheitsmodell](https://docs.microsoft.com/en-us/common-data-service/entity-reference/security-model).
+Um eine Datenbank erstellen zu können, müssen Sie Administrator in der ausgewählten Umgebung sein, und Sie müssen der entsprechenden Lizenz zugewiesen werden. Über die Umgebung können Sie mithilfe der Registerkarte **Sicherheit** weitere Sicherheitsberechtigungen für andere Benutzer konfigurieren. Weitere Informationen finden Sie unter [Datenbanksicherheit konfigurieren](database-security.md) und [Sicherheitsmodell](https://docs.microsoft.com/common-data-service/entity-reference/security-model).
 
 ## <a name="privacy-notice"></a>Hinweis zum Datenschutz
 Mit dem allgemeinen Datenmodell in Microsoft PowerApps erfassen und speichern wir benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen.  Wir verwenden dieses Wissen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die Ersteller schaffen, helfen uns dabei, Szenarios zu verstehen, die in der Microsoft PowerApps-Community häufig vorkommen und in Lücken in der Abdeckung der Standardentität des Diensts ermittelt werden, z.B. Schemas im Zusammenhang mit Organisationen. Microsoft nutzt die Daten in den Datenbanktabellen nicht, die mit diesen Entitäten verbunden sind, und greift auch nicht auf diese zu. Sie werden auch nicht außerhalb der Region repliziert, in der die Datenbank bereitgestellt wird. Beachten Sie jedoch, dass die benutzerdefinierten Entitäts- und Feldnamen möglicherweise über Regionen hinweg repliziert werden können und unter Einhaltung unserer Richtlinien für die Datenaufbewahrung gelöscht werden. Microsoft ist bestrebt, zu Ihrer Privatsphäre beizutragen, so wie ausführlich in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.

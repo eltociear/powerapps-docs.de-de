@@ -15,20 +15,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: a2a8d7df48403a5d8d480619bd01c59510ae9899
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 1f351877e3c05b83b4bd9cfa104a7eb22cef5028
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.
 
 ## <a name="description"></a>Beschreibung
-Profitieren Sie von Ihrer vorhandenen Datenanalyse und -berichterstellung, indem Sie Ihre **[Power BI-Kacheln](https://powerbi.microsoft.com/documentation/powerbi-service-dashboard-tiles/)** in Ihren Apps anzeigen.  Wählen Sie die anzuzeigende Kachel aus, indem Sie ihre Eigenschaften **Workspace**, **Dashboard** und **Tile** auf der Registerkarte **Daten** im Optionsbereich festlegen.
+Profitieren Sie von Ihrer vorhandenen Datenanalyse und -berichterstellung, indem Sie Ihre **[Power BI-Kacheln](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** in Ihren Apps anzeigen.  Wählen Sie die anzuzeigende Kachel aus, indem Sie ihre Eigenschaften **Workspace**, **Dashboard** und **Tile** auf der Registerkarte **Daten** im Optionsbereich festlegen.
 
 ## <a name="sharing-and-security"></a>Freigabe und Sicherheit
-Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zugriffsberechtigungen für die App verfügen.  Um jedoch den Power BI-Inhalt für diese Benutzer sichtbar zu machen, muss das Dashboard, aus dem die Kachel stammt, für den Benutzer in Power BI [freigegeben](https://powerbi.microsoft.com/documentation/powerbi-service-how-should-i-share-my-dashboard/) werden.  Dadurch wird sichergestellt, dass Power BI-Freigabeberechtigungen berücksichtigt werden, wenn in einer App auf Power BI-Inhalt zugegriffen wird.
+Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zugriffsberechtigungen für die App verfügen.  Um jedoch den Power BI-Inhalt für diese Benutzer sichtbar zu machen, muss das Dashboard, aus dem die Kachel stammt, für den Benutzer in Power BI [freigegeben](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports) werden.  Dadurch wird sichergestellt, dass Power BI-Freigabeberechtigungen berücksichtigt werden, wenn in einer App auf Power BI-Inhalt zugegriffen wird.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Workspace**: Der Power BI-Arbeitsbereich, aus dem die Kachel stammt.
@@ -66,5 +66,5 @@ Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zug
    
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
    
-   Sie verfügen nicht über Power BI? [Registrieren Sie sich](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-self-service-signup-for-power-bi/).
+   Sie verfügen nicht über Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 

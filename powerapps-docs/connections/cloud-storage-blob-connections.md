@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/12/2016
 ms.author: archanan
-ms.openlocfilehash: 1f437b91ef20412dab3238bea7f5488e148c7c29
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 665a772807179b2a33d6d47bb09483ebed69ed45
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
 PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
@@ -30,7 +30,7 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
 
 [!INCLUDE [connection-requirements](../includes/connection-requirements.md)]
 
-* Eine Excel-Datei, deren Daten [als Tabelle formatiert](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664) sind:
+* Eine Excel-Datei, deren Daten [als Tabelle formatiert](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664) sind:
   
   1. Öffnen Sie die Excel-Datei, und wählen Sie eine beliebige Zelle in den zu verwendenden Daten aus.
   2. Wählen Sie auf der Registerkarte **Einfügen** die Option **Tabelle** aus.
@@ -87,7 +87,7 @@ Wenn Sie einen Ordner in Dropbox freigeben, muss der freigegebene Ordner dem Dro
 Es gibt [bestimmte Einschränkungen](#sharing-excel-tables) für Connectors im Zusammenhang mit Excel-Dateien.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
-Wenn Sie versuchen, eine Excel-Verbindung in der App zu verwenden und die Meldung **Datentyp nicht unterstützt** oder **Nicht als Tabelle formatiert** angezeigt wird, [formatieren Sie die Daten als Tabelle](https://support.office.com/en-us/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+Wenn Sie versuchen, eine Excel-Verbindung in der App zu verwenden und die Meldung **Datentyp nicht unterstützt** oder **Nicht als Tabelle formatiert** angezeigt wird, [formatieren Sie die Daten als Tabelle](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
 
 Wenn die Excel-Daten eine berechnete Spalte enthalten, können Sie anhand der Daten keine App erstellen, und die Daten können keiner vorhandenen App hinzugefügt werden.
 

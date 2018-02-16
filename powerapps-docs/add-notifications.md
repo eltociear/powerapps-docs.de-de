@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 1e51ca684129c538ced47863c73269284cc13719
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6b3bab666ddd842c868dfdac752cd8897a5427b2
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
 Pushbenachrichtigungen werden bei mobilen Apps für Kunden- und Business-Szenarien in erster Linie verwendet, um mit den App-Benutzern zu kommunizieren und ihnen zu helfen, wichtige Aufgaben zu priorisieren. In PowerApps können Sie Benachrichtigungen über den Connector „PowerApps-Benachrichtigung“ senden. Sie können native Pushbenachrichtigungen an eine beliebige App senden, die Sie in PowerApps erstellen. In Zukunft sollen weitere Benachrichtigungstypen hinzukommen.
@@ -141,5 +141,5 @@ PowerAppsNotification.SendPushNotification(
 * In Benachrichtigungen wird das allgemeine PowerApps-Symbol anstelle des Symbols für eine bestimmte App angezeigt.
 * Wenn Sie Microsoft Flow verwenden, können Sie Pushbenachrichtigungen jeweils nur an einen Empfänger senden.
 
-Weitere Informationen finden Sie in der [Referenz zu PowerApps-Benachrichtigungen](https://docs.microsoft.com/en-us/connectors/powerappsnotification/).
+Weitere Informationen finden Sie in der [Referenz zu PowerApps-Benachrichtigungen](https://docs.microsoft.com/connectors/powerappsnotification/).
 

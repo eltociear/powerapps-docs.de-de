@@ -14,14 +14,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2016
 ms.author: kfend
-ms.openlocfilehash: 21f33f8810b545b11f611b86261227c9443be5de
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 51138467e93dc4ef3fd2a08163536971c3811d23
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="build-a-relationship-between-entities"></a>Eine Beziehung zwischen Entitäten erstellen
-Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Customers** und eine Entität **Orders**, und die Entität **Orders** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Customers**, um anzuzeigen, welcher Kunde den Auftrag erteilt hat. Sie können ein Nachschlagefeld verwenden, Daten aus der **Customers**-Entität für den Kunden anzuzeigen, der den Auftrag erteilt hat. Weitere Informationen finden Sie unter [Entity relationships and lookup fields (Entitätsbeziehungen und Nachschlagefelder)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/relationships).
+Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Customers** und eine Entität **Orders**, und die Entität **Orders** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Customers**, um anzuzeigen, welcher Kunde den Auftrag erteilt hat. Sie können ein Nachschlagefeld verwenden, Daten aus der **Customers**-Entität für den Kunden anzuzeigen, der den Auftrag erteilt hat. Weitere Informationen finden Sie unter [Entity relationships and lookup fields (Entitätsbeziehungen und Nachschlagefelder)](https://docs.microsoft.com/common-data-service/entity-reference/relationships).
 
 ## <a name="define-a-relationship"></a>Definieren einer Beziehung
 Sie können mehrere Typen von Beziehungen zwischen zwei Entitäten (oder innerhalb einer Entität) erstellen. Jede Entität kann eine Beziehung mit mehr als einer Entität haben, und jede Entität kann mehr als eine Beziehung zu einer anderen Entität haben. Einige häufige Beziehungstypen sind folgende:
