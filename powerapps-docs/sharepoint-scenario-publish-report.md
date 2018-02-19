@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: cb300617fbf08f7b9ed5ff87ed5633d7714d51e0
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 6f54274af043964f02ef02a5ce97c261a410391d
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards
 > [!NOTE]
@@ -37,20 +37,17 @@ In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI
 3. Geben Sie ein Kennwort ein, klicken oder tippen Sie auf **Anmelden**.
    
     ![Eingeben des Kennworts für das Konto](./media/sharepoint-scenario-publish-report/06-01-03-password.png)
-4. Wählen Sie ein Ziel für den Bericht aus, und klicken oder tippen Sie auf **Auswählen**. Es wird empfohlen, den Bericht in einem Gruppenarbeitsbereich zu veröffentlichen, um den Zugriff auf den Bericht in SharePoint zu erleichtern. In diesem Fall veröffentlichen wir den Bericht im Gruppenarbeitsbereich **Projektmanagement**. Weitere Informationen finden Sie unter [Erstellen von Gruppen in Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-group-in-power-bi).
+4. Wählen Sie ein Ziel für den Bericht aus, und klicken oder tippen Sie auf **Auswählen**. Es wird empfohlen, den Bericht in einem Gruppenarbeitsbereich zu veröffentlichen, um den Zugriff auf den Bericht in SharePoint zu erleichtern. In diesem Fall veröffentlichen wir den Bericht im Gruppenarbeitsbereich **Projektmanagement**. Weitere Informationen finden Sie unter [Zusammenarbeit in Ihrem Power BI-App-Arbeitsbereich](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
    
     ![Zielarbeitsbereich](./media/sharepoint-scenario-publish-report/06-01-04-workspace.png)
 5. Klicken oder tippen Sie nach abgeschlossener Veröffentlichung auf **„project-analysis.pbx“ in Power BI öffnen**.
    
     ![Erfolgreiche Veröffentlichung](./media/sharepoint-scenario-publish-report/06-01-05-open-report.png)
-6. Der Power BI-Dienst lädt den Bericht in einem Browser. Klicken oder tippen Sie auf das Menü links oben **(a)**, um den linken Navigationsbereich einzublenden.
+6. Der Power BI-Dienst lädt den Bericht in einem Browser. Wenn der linke Navigationsbereich nicht angezeigt wird, klicken oder tippen Sie auf das Menü oben links **(a)**, um ihn einzublenden.
    
     ![Bericht im Power BI-Dienst](./media/sharepoint-scenario-publish-report/06-01-06-service-report.png)
    
-    Sie stellen fest, dass von Power BI Desktop beim Veröffentlichen ein Dataset **(d)** und einen Bericht **(c)** hochgeladen wurde. Sie erstellen Dashboards im Dienst, nicht Power BI Desktop, und in diesem Arbeitsbereich sind noch keine Dashboards vorhanden **(b)**. Im nächsten Schritt wird einer erstellt.
-   
-    > [!NOTE]
-> Power BI weist eine neue Navigationsumgebung auf, und diese könnte auf Ihrer Website aktiviert sein. Wenn sich der linke Navigationsbereich von der obigen Abbildung unterscheidet, informieren Sie sich im Artikel [Die neue Power BI-Navigation](https://powerbi.microsoft.com/documentation/powerbi-service-the-new-power-bi-experience).
+    Sie stellen fest, dass von Power BI Desktop beim Veröffentlichen ein Dataset **(d)** und einen Bericht **(c)** hochgeladen wurde. Sie erstellen Dashboards im Dienst, nicht Power BI Desktop, und in diesem Arbeitsbereich sind noch keine Dashboards vorhanden **(b)**. Wir werden in Kürze eines erstellen.
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>Schritt 2: Konfigurieren von Anmeldeinformationen für die Aktualisierung
 1. Klicken oder tippen Sie im Dienst in der rechten oberen Ecke auf das ![Zahnradsymbol](./media/sharepoint-scenario-publish-report/icon-gear.png), und klicken oder tippen Sie anschließend auf **Einstellungen**.
@@ -72,13 +69,16 @@ In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI
     ![Datenquelle aktualisiert](./media/sharepoint-scenario-publish-report/06-01-11-updated.png)
 
 ## <a name="step-3-create-a-dashboard"></a>Schritt 3: Erstellen eines Dashboards
-1. Klicken oder tippen Sie im Dienst auf das Diagramm in der linken oberen Ecke, und klicken und tippen Sie anschließend auf ![Anheften-Symbol](./media/sharepoint-scenario-publish-report/icon-pin.png).
+
+1. Um zum Bericht zurückzukehren, klicken oder tippen Sie unter **BERICHTE** auf **project-analysis**.
+
+1. Klicken oder tippen Sie auf das Diagramm oben links, und klicken oder tippen Sie dann auf ![Anheften-Symbol](./media/sharepoint-scenario-publish-report/icon-pin.png).
    
     ![Diagramm anheften](./media/sharepoint-scenario-publish-report/06-01-12-pin-projected.png)
 2. Geben Sie einen Namen für das Dashboard ein, an welches das Diagramm angeheftet werden soll, und klicken oder tippen Sie auf **Anheften**.
    
     ![Anheften des Diagramms an das neue Dashboard](./media/sharepoint-scenario-publish-report/06-01-13-pin-new.png)
-3. Klicken oder tippen Sie auf das Diagramm in der linken oberen Ecke, und klicken oder tippen Sie dann auf ![Anheften-Symbol](./media/sharepoint-scenario-publish-report/icon-pin.png).
+3. Klicken oder tippen Sie auf das Diagramm oben rechts, und klicken oder tippen Sie dann auf ![Anheften-Symbol](./media/sharepoint-scenario-publish-report/icon-pin.png).
    
     ![Diagramm anheften](./media/sharepoint-scenario-publish-report/06-01-14-pin-variance.png)
 4. Wählen Sie das vorhandene Dashboard aus, und klicken oder tippen Sie dann auf **Anheften**.

@@ -13,16 +13,27 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 02/13/2018
 ms.author: sharik
-ms.openlocfilehash: f98d8f3dd19d39a31f6f8e7ca2551efb6de18e34
-ms.sourcegitcommit: 19a83f07ad11e630e6b85b3540d78a2d2428d7b9
+ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
+
+> [!NOTE]
+> Versionen werden über mehrere Tage eingeführt. Neue oder aktualisierte Funktionen werden möglicherweise nicht sofort angezeigt.
+
+## <a name="feb-12"></a>12. Februar
+* Der Lautstärkeregler für die Wiedergabe eingebetteter [Video-](controls/control-audio-video.md) und [Audiodaten](controls/control-audio-video.md) ist jetzt eingebettet. Zum Stummschalten der Wiedergabe müssen Benutzer jetzt den Lautstärkeregler zum Verringern der Lautstärke verwenden, statt auf eine Schaltfläche zu klicken oder zu tippen.
+
+## <a name="feb-7"></a>7. Februar
+1. Die Eigenschaften für Zoom, Helligkeit und Kontrast wurden aus den Steuerelementen [Kamera](controls/control-camera.md) und [Barcodescanner](controls/control-barcodescanner.md) entfernt.
+2. Das Problem, dass der Platz für die Benutzereingabe in den Steuerelementen [Texteingabe](controls/control-text-input.md) durch die Schaltfläche „Löschen“ beschränkt wurde, wurde korrigiert. Aufgrund dieser Korrektur wird die Eigenschaft [Löschen](controls/control-text-input.md#additional-properties) eines Texteingabesteuerelements nur in den Webbrowsern Microsoft Edge (neueste Version) und Internet Explorer 11 unterstützt.
+3. Es wurden Verbesserungen an der Barrierefreiheit von [Multimedia](add-images-pictures-audio-video.md)-Steuerelementen vorgenommen.
 
 ## <a name="jan-31"></a>31. Januar
 1. Hinzufügen von Untertiteln für Hörgeschädigte zu [Video](controls/control-audio-video.md)-Steuerelementen.
@@ -63,7 +74,3 @@ Informationen über bekannte Einschränkungen finden Sie unter [Häufige Problem
 ## <a name="sept-6"></a>6. September
 1. Bei von Ihnen erstellten Apps können Sie über Power BI in einem eingebetteten Dashboard die [Nutzung nachverfolgen](app-analytics.md).
 2. Spalten Sie eine Textzeichenfolge mit der **[Split](functions/function-split.md)**-Funktion in einzelne Teile auf, indem Sie ein Trennzeichen angeben.
-
-## <a name="aug-15"></a>15. August
-1. Herunterladen einer [Liste der Apps](admin-view-apps.md), die in Ihrer Organisation verwendet werden.
-2. Delegieren der Funktionen **Sum**, **Average**, **Min** und **Max** für SQL Server.

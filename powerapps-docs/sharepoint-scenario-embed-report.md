@@ -13,30 +13,30 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/12/2017
+ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: 481e6d13cce7624cf46cadbf78f877fdfb9fd481
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 94efa8b116fac1f6f15509c511fc6e15134e8540
+ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Einbetten des Power BI-Projektberichts in SharePoint Online
 > [!NOTE]
 > Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
-In der letzten Aufgabe in diesem Szenario wird der Power BI-Bericht in die gleiche SharePoint Online-Website eingebettet, auf der die zwei Listen gehostet werden. Power BI unterstützt eine Vielzahl von Ansätzen für das Einbetten, und kürzlich wurde die direkte Integration in SharePoint-Seiten für Webansichten und mobile Ansichten eingeführt.
+Jetzt betten wir den Power BI-Bericht in die gleiche SharePoint Online-Website ein, auf der auch die zwei Listen gehostet werden. Power BI unterstützt eine Vielzahl von Ansätzen für das Einbetten, einschließlich der direkten Integration in SharePoint-Seiten für Webansichten und mobile Ansichten.
 
-Bei dieser Art von Einbettung bettet Power BI den Bericht als Webpart ein, gewährt Benutzern den entsprechenden Zugriff und ermöglicht das Durchklicken vom eingebetteten Bericht zum Bericht auf „powerbi.com“. Zunächst generieren wir einen Einbettungslink in Power BI, und anschließend wird dieser Link auf einer erstellten Seite verwendet. Weitere Informationen zum Einbetten finden Sie unter [Einbetten mit Berichts-Webpart in SharePoint Online](https://powerbi.microsoft.com/documentation/powerbi-service-embed-report-spo) (insbesondere im Abschnitt zu Anforderungen).
+Bei dieser Art von Einbettung bettet Power BI den Bericht als Webpart ein, gewährt Benutzern den entsprechenden Zugriff und ermöglicht das Durchklicken vom eingebetteten Bericht zum Bericht auf „powerbi.com“. Zunächst generieren wir einen Einbettungslink in Power BI, und anschließend wird dieser Link auf einer erstellten Seite verwendet. Weitere Informationen zum Einbetten finden Sie unter [Einbetten mit Berichts-Webpart in SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo).
 
 ## <a name="step-1-generate-an-embed-link"></a>Schritt 1: Generieren eines Einbettungslinks
 1. Melden Sie sich bei Power BI an, und klicken oder tippen Sie dann im linken Navigationsbereich auf den Namen des Berichts.
    
     ![Navigieren zum Bericht](./media/sharepoint-scenario-embed-report/08-01-01-reports.png)
-2. Klicken oder tippen Sie auf **In SharePoint Online einbetten**.
+2. Klicken oder tippen Sie auf **Datei** und dann auf **In SharePoint Online einbetten**.
    
     ![In SharePoint Online einbetten](./media/sharepoint-scenario-embed-report/08-01-02-embed-spo.png)
-3. Kopieren Sie den Einbettungslink aus dem Dialogfeld in eine Datei, und klicken Sie auf **Schließen**. Wir verwenden den Link nach dem Erstellen einer SharePoint-Seite.
+3. Kopieren Sie den Einbettungslink aus dem Dialogfeld in eine Datei, und klicken oder tippen Sie dann auf **Schließen**. Wir verwenden den Link nach dem Erstellen einer SharePoint-Seite.
    
     ![Einbettungslink für SharePoint](./media/sharepoint-scenario-embed-report/08-01-03-embed-url.png)
 
@@ -62,7 +62,7 @@ Bei dieser Art von Einbettung bettet Power BI den Bericht als Webpart ein, gewä
     ![Einbetten des Berichts abgeschlossen](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
 ## <a name="step-3-grant-access-to-the-report"></a>Schritt 3: Gewähren des Zugriffs auf den Bericht.
-Bei Verwendung von Office 365-Gruppen (dies wird empfohlen) müssen Sie sicherstellen, dass Benutzer, die Zugriff benötigen, Mitglieder des Gruppenarbeitsbereichs im Power BI-Dienst sind. Dadurch ist sichergestellt, dass Benutzer den Inhalt dieser Gruppe anzeigen können. Weitere Informationen finden Sie unter [Erstellen von Gruppen in Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-group-in-power-bi).
+Bei Verwendung von Office 365-Gruppen (dies wird empfohlen) müssen Sie sicherstellen, dass Benutzer, die Zugriff benötigen, Mitglieder des Gruppenarbeitsbereichs im Power BI-Dienst sind. Dadurch ist sichergestellt, dass Benutzer den Inhalt dieser Gruppe anzeigen können. Weitere Informationen finden Sie unter [Zusammenarbeit in Ihrem Power BI-App-Arbeitsbereich](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
 
 Damit sind unsere Aufgaben in Power BI für dieses Szenario abgeschlossen. Sie haben begonnen, indem Sie Daten aus unseren SharePoint-Listen in Power BI abgerufen haben, und der Kreis schließt sich nun, da Sie Ihren Power BI-Bericht wieder in SharePoint eingebettet haben.
 
