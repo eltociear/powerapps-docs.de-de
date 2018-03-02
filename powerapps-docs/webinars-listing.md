@@ -13,41 +13,26 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/29/2018
+ms.date: 2/23/2018
 ms.author: v-malyng
-ms.openlocfilehash: c683d371525ec4e1554ad5f79df2c4c578c6f50d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: 08c2263b88d78e708b21d1912334476d693295a7
+ms.sourcegitcommit: badede93a7d250f46db176792494b522994237b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. In den Kommentaren unter diesem Thema können Sie gerne weitere Themen vorschlagen.
 
 ## <a name="upcoming-webinars"></a>Anstehende Webinare ##
-**Erste Schritte | Produktintegration: Teams + PowerApps – Tipps und Tricks**
-<br>von Audrie Gordon
-<br>*31. Januar, 19:00 Uhr MEZ*
-
-In diesem Webinar erfahren Sie, wie PowerApps und Teams gemeinsam verwendet werden können, um in kürzester Zeit eine noch leistungsfähigere Unternehmenslösung zu entwickeln. Es wird gezeigt, wie Sie PowerApps in Teams-Kanälen nutzen, und wir geben einige neue Ideen für die Verwendung dieser Produkte zur Verbesserung der Zusammenarbeit im Team.
-
-[Klicken Sie hier, um am 31. Januar live dabei zu sein](https://www.youtube.com/watch?v=obBQk-aSElI)
-
-**Connector-Reihe | Das Potenzial von Office Graph mit PowerApps**
-<br>von Audrie Gordon
-<br>*5. Februar, 19:00 Uhr MEZ*
-
-Audrie Gordon, Senior Program Manager im PowerApps-Team, zeigt, wie Sie PowerApps mit Office Graph-Technologien nutzen. Dabei wird eine der Vorlagen angepasst und Nutzung der Office-Gruppe in einem typischen Unternehmensszenario optimiert.
-
-[Klicken Sie hier, um am 5. Februar live dabei zu sein](https://www.youtube.com/watch?v=AOGGyoElGaQ)
-
 **Deep Dive | Erstellen von Serverpatchlösungen mit PowerApps von Brian Blanchard**
-<br>von Audrie Gordon
-<br>*19. Februar, 19:00 Uhr MEZ*
+<br>von Brian Blanchard und Audrie Gordon
+<br>*26. Februar, 19:00 Uhr MEZ*
 
 Brian Blanchard von Microsoft Retail Stores gibt Einblick in das Erstellen von Apps zur Verwaltung von Serverpatch-Zeitplänen für sein Team. Behandelt werden die Desktopversion und die mobile Version, die aktuell in Benutzung sind, um den Patchvorgang zu verkürzen und zu vereinfachen. Brian Blanchard hat es so geschafft, seinem Team mit PowerApps und Flow Zeit und Geld zu sparen.
 
-[Klicken Sie hier, um am 19. Februar live dabei zu sein](https://www.youtube.com/watch?v=QAe0oBecowU)
+[Klicken Sie hier, um am 26. Februar live dabei zu sein](https://www.youtube.com/watch?v=QAe0oBecowU)
+
 
 ## <a name="past-webinars"></a>Frühere Webinare ##
 Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung.
@@ -122,6 +107,12 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 
 **Arbeiten mit Connectors: Verwenden des Planner-Connectors**
 <br> von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
+
+**Erste Schritte | Produktintegration: Teams + PowerApps – Tipps und Tricks**
+<br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=obBQk-aSElI)
+
+**Connector-Reihe | Das Potenzial von Office Graph mit PowerApps**
+<br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
 ### <a name="app-designer-topics"></a>App-Designer-Themen ###
 **Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger (Blick hinter die Kulissen mit einem der PowerApps-Entwickler – Eine eingehendere Betrachtung von Vorlagen: Marie Hoeger)**
