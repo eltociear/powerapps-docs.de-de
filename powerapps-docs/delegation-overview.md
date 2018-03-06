@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/15/2017
 ms.author: gregli
 ms.openlocfilehash: b6410a6b392f074c5e5a240e471fa2591e1e135d
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="understand-delegation"></a>Grundlagen der Delegierung
 PowerApps enthalten einen leistungsstarken Funktionssatz für die Filterung, Sortierung und Strukturierung von Tabellen mit Daten: Beispiele hierfür sind die Funktionen **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** und **[AddColumns](functions/function-table-shaping.md)**, um nur einige zu nennen.  Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen.  Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.  

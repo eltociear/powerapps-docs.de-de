@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: bbd440528e3af9e199e5e37bc5c4e9f4d36dbe21
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Die Funktionen „AddColumns“, „DropColumns“, „RenameColumns“ und „ShowColumns“ in PowerApps
 Formen eine [Tabelle](../working-with-tables.md) durch Hinzufügen, Verwerfen, Umbenennen und Auswählen der [Spalten](../working-with-tables.md#columns)
@@ -54,24 +54,24 @@ Das Ergebnis all dieser Funktionen ist eine neue Tabelle mit angewendeter Transf
 ## <a name="syntax"></a>Syntax
 **AddColumns**( *Tabelle*, *Spaltenname1*, *Formel1* [, *Spaltenname2*, *Formel2*, ... ] )
 
-* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
+* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *ColumnName(s)*: erforderlich. Name(n) der hinzuzufügenden Spalte(n).  Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
-* *Formel(n)*: Erforderlich.  Die für jeden Datensatz der Tabelle auszuwertende(n) Formel(n). Das Ergebnis wird als der Wert der entsprechenden neuen Spalte hinzugefügt. Sie können in dieser Formel auf andere Spalten der Tabelle verweisen.
+* *Formel(n)* (erforderlich):  Die für jeden Datensatz der Tabelle auszuwertende(n) Formel(n). Das Ergebnis wird als der Wert der entsprechenden neuen Spalte hinzugefügt. Sie können in dieser Formel auf andere Spalten der Tabelle verweisen.
 
 **DropColumns**( *Tabelle*, *Spaltenname1* [, *Spaltenname2*, ... ] )
 
-* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
+* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *ColumnName(s)*: erforderlich. Name(n) der zu verwerfenden Spalte(n). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 
 **RenameColumns**( *Tabelle*, *AlterSpaltenname*, *NeuerSpaltenname* )
 
-* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
+* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *AlterSpaltenname*: erforderlich. Der Name der umzubenennenden Spalte. Der Name muss eine Zeichenfolge sein (z.B. **"Name"** in doppelten Anführungszeichen)
 * *NeuerSpaltenname*: erforderlich. Der neue Name. Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Customer Name"** (Kundenname) in doppelten Anführungszeichen).
 
 **ShowColumns**( *Tabelle*, *Spaltenname1* [, *Spaltenname2*, ... ] )
 
-* *Table*: erforderlich.  Die zu verarbeitende Tabelle.
+* *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *ColumnName(s)*: erforderlich. Name(n) der einzuschließenden Spalte(n). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 
 ## <a name="examples"></a>Beispiele

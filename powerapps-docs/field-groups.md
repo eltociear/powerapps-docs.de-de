@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 03/11/2017
 ms.author: aneesa
 ms.openlocfilehash: d791d04965873c133be85013feb181dc5a1e1bad
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="use-field-groups"></a>Feldgruppen verwenden
 Feldgruppen bieten eine Möglichkeit, ein oder mehrere Felder einer Entität zu gruppieren. Feldgruppen können die Erstellung und Wartung von Apps schneller und einfacher machen. Eine Feldgruppe enthält ein oder mehrere Felder, und ein Feld kann in einer beliebigen Anzahl von Feldgruppen angezeigt werden. Ein Feld kann nur einmal in einer Feldgruppe angezeigt werden.

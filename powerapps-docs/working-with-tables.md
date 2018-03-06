@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/06/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Grundlegendes zu Tabellen und Datensätzen in PowerApps
 Sie können Apps erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreifen, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.
@@ -237,7 +237,7 @@ Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") u
 ### <a name="disambiguation"></a>Mehrdeutigkeitsvermeidung
 Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [**@**-Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster **Table*[@*FieldName*]** nutzen.  
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster ***Table*[@*FieldName*]** nutzen.  
 * Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@*ObjectName*]** (ohne Tabellenbezeichnung).
 
 Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter( *Tabelle*, ... )** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
