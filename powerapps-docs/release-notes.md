@@ -13,19 +13,23 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/13/2018
+ms.date: 03/05/2018
 ms.author: sharik
-ms.openlocfilehash: b8d06bb8ffbe1446f4c918e6cf1c6657c1890e65
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.openlocfilehash: e259c4c235809f75c03b3ea87df580b9b17a790c
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
 
 > [!NOTE]
 > Versionen werden über mehrere Tage eingeführt. Neue oder aktualisierte Funktionen werden möglicherweise nicht sofort angezeigt.
+
+## <a name="mar-5"></a>5. März
+1. [Anlagen](controls/control-attachments.md) in SharePoint-Listen hinzufügen (und löschen).
+2. Externe [PDF](controls/control-pdf-viewer.md)-Dateien in einem Webbrowser öffnen. (Experimentelles Feature)
 
 ## <a name="feb-12"></a>12. Februar
 * Der Lautstärkeregler für die Wiedergabe eingebetteter [Video-](controls/control-audio-video.md) und [Audiodaten](controls/control-audio-video.md) ist jetzt eingebettet. Zum Stummschalten der Wiedergabe müssen Benutzer jetzt den Lautstärkeregler zum Verringern der Lautstärke verwenden, statt auf eine Schaltfläche zu klicken oder zu tippen.
@@ -64,13 +68,3 @@ Informationen über bekannte Einschränkungen finden Sie unter [Häufige Problem
 1. [Anzeigen aller Regeln](working-with-rules.md) in einer App, nicht nur der Regeln für das ausgewählte Steuerelement.
 2. Symbole hinzugefügt, die von App-Entwicklern am häufigsten gewünscht wurden.
 3. Verbesserte Leistung der Apps auf Android- und iOS-Geräten.
-
-## <a name="sept-20"></a>20. September
-1. Nach dem ersten [Speichern einer App](save-publish-app.md) werden zusätzliche Änderungen standardmäßig automatisch alle zwei Minuten gespeichert.
-2. Einfaches [Erstellen von Regeln](working-with-rules.md) für bedingte Formatierung, ohne Ausdrücke zu schreiben – legen Sie einfach die Bedingung fest, und entwerfen Sie dann direkt im PowerApps-Zeichenbereich die Ergebnisse.
-3. Einfacheres Konfigurieren von Formularen, Katalogen und Datentabellen mit einem Datenbereich, der die gesamte Höhe des Bildschirms einnimmt und beim Hinzufügen eines Steuerelements eingeblendet wird.
-4. Sie erhalten kontextbezogene Hinweise, die Sie beim Erstellen einer App unterstützen, egal ob Sie mit einer leeren App beginnen oder eine Vorlage, eine Datenquelle oder SharePoint verwenden.
-
-## <a name="sept-6"></a>6. September
-1. Bei von Ihnen erstellten Apps können Sie über Power BI in einem eingebetteten Dashboard die [Nutzung nachverfolgen](app-analytics.md).
-2. Spalten Sie eine Textzeichenfolge mit der **[Split](functions/function-split.md)**-Funktion in einzelne Teile auf, indem Sie ein Trennzeichen angeben.

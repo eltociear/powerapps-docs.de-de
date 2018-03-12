@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: c27a2319d74db9a50acff84e40ea7df83dc1c126
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="barcode-scanner-control-in-powerapps"></a>Barcodescanner-Steuerelement in PowerApps
-Ein Steuerelement, mit dem der Benutzer mithilfe des Barcodescanners des Geräts Fotos aufnehmen kann.
+# <a name="barcode-scanner-control-experimental-in-powerapps"></a>Barcodescanner-Steuerelement in PowerApps (experimentell)
+Ein experimentelles Steuerelement, mit dem der Benutzer mithilfe des Barcodescanners auf seinem Gerät Fotos aufnehmen kann.
 
 ## <a name="description"></a>Beschreibung
 Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mit einem oder mehreren Fotos vom aktuellen Ort, an dem die App ausgeführt wird, aktualisieren.
@@ -73,9 +73,8 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 ## <a name="example"></a>Beispiel
 ### <a name="add-photos-to-an-image-gallery-control"></a>Hinzufügen von Fotos zu einem Bildkatalog-Steuerelement
 1. Fügen Sie ein **Barcodescanner**-Steuerelement hinzu, und benennen Sie es **Mybarcode scanner**.
-   
+
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **Bezeichnung**-Steuerelement hinzu, und legen Sie dessen Ausgabe auf den Barcodewert fest.  
 3. Scannen Sie einen Barcode des in der BarcodeType-Eigenschaft festgelegten Typs.
 4. In der Bezeichnung wird der gescannte Barcode angezeigt.
-

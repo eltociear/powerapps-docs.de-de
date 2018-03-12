@@ -15,21 +15,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8a67a071a19bae57f022fe960a0b29296b58cf5d
-ms.sourcegitcommit: 68eee592c351688e5d0bd458f33a70be507fa53f
+ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="pdf-viewer-control-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps
-Ein Steuerelement, das den Inhalt einer PDF-Datei anzeigt
+# <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
+Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
 
 ## <a name="description"></a>Beschreibung
 Zeigen Sie Text, Grafiken und anderen Inhalt in einer PDF-Datei an, indem Sie diese Art von Steuerelement hinzufügen und seine **Document**-Eigenschaft auf die URL der Datei festlegen, die Sie anzeigen möchten. Verwenden Sie dabei doppelte Anführungszeichen.
 
 ## <a name="limitations"></a>Beschränkungen
 Beachten Sie, dass der PDF-Viewer aufgrund der Sicherheitsarchitektur PowerApps nur HTTPS-Links und nicht HTTP unterstützt.  
-Wenn sich das PDF-Dokument auf einem Server mit restriktiven CORS-Einstellungen befindet, können es möglicherweise nicht in Ihrer App angezeigt werden.  Wenn das Dokument in PowerApps nicht geöffnet werden kann, wird dem Endanwender die Option zum Öffnen des Dokuments in einem externen Browser angezeigt.
+Wenn sich das PDF-Dokument auf einem Server mit restriktiven CORS-Einstellungen befindet, können es möglicherweise nicht in Ihrer App angezeigt werden.  Um dieses Problem zu beheben, muss der Server, der PDF-Dokumente hostet, Cross-Origin-Anfragen (CORS) von powerapps.com zulassen.
+
+Wenn das Dokument in PowerApps nicht geöffnet werden kann, wird dem Endanwender die Option zum Öffnen des Dokuments in einem externen Browser angezeigt.  Diese Option ist auch im Systemmenü für alle externen Dokumente verfügbar.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Document**: gibt die, in doppelten Anführungszeichen gesetzte, URL der PDF-Datei an.
