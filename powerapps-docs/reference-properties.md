@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: 8aa5fb671878af21fa483dde348460bf7c05fc70
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 11f3a29989057a3dc1a75c40877314596a62859d
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Steuerelemente und Eigenschaften in PowerApps
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
@@ -31,7 +31,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Audio](controls/control-audio-video.md)**: Dient zum Wiedergeben eines Audioclips oder des Audioteils eines Videoclips.
 
-**[Barcode scanner](controls/control-barcodescanner.md)** (Barcodescanner): Dient zum Scannen eines Barcodes mit einem Gerät, das über eine Kamera verfügt.
+**[Barcode scanner](controls/control-barcodescanner.md)** (Barcodescanner, experimentell): Dient zum Scannen eines Barcodes mit einem Gerät, das über eine Kamera verfügt.
 
 **[Button](controls/control-button.md)** (Schaltfläche): Dient zum Interagieren mit der App, indem darauf geklickt oder getippt wird.
 
@@ -77,7 +77,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Microphone](controls/control-microphone.md)** (Mikrofon): Dient zum Aufzeichnen und Speichern von Sounds in der App oder einer Datenquelle.
 
-**[PDF viewer](controls/control-pdf-viewer.md)** (PDF-Viewer): Dient zum Anzeigen des Inhalts einer PDF-Datei im Internet.
+**[PDF viewer](controls/control-pdf-viewer.md)** (PDF-Viewer, experimentell): Dient zum Anzeigen des Inhalts einer PDF-Datei im Internet.
 
 **[Pen input](controls/control-pen-input.md)** (Stifteingabe): Dient zum Zeichnen eines Bilds oder von Text und Speichern in der App oder in einer Datenquelle.
 

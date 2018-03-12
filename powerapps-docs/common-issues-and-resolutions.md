@@ -5,7 +5,7 @@ services:
 suite: powerapps
 documentationcenter: na
 author: skjerland
-manager: anneta
+manager: kfile
 editor: 
 tags: 
 ms.service: powerapps
@@ -13,16 +13,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/24/2018
+ms.date: 03/05/2018
 ms.author: sharik
-ms.openlocfilehash: f6b91bcc8b5e4c9d0128c2cba1eb3f772c6f7451
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.openlocfilehash: c2faa505e62e4460e2fe65707946e3190b5b0350
+ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 ## <a name="recently-addedchanged"></a>Kürzlich hinzugefügt/geändert
+1. **Ändern des Layouts von SharePoint-Formularen**
+
+    Wenn Sie in bestimmten Sprachen ein Formular in einer SharePoint-Liste anpassen und versuchen, das Layout vom Hochformat (Standard) in das Querformat zu ändern, werden in der App möglicherweise mehrere Fehler angezeigt (gelbe Dreiecke in Steuerelementen). Um diese Fehler zu beheben und das Layout mit Querformat zu erhalten, klicken Sie auf **Rückgängig**.
+
 1. **App funktioniert nicht**
 
     Wenn eine von Ihnen erstellte App ohne Vorwarnung nicht mehr funktioniert, haben Sie sie möglicherweise in den vergangenen sechs Monaten nicht aktualisiert und nicht erneut veröffentlicht. Um das Problem zu beheben, müssen Sie die App aktualisieren und/oder erneut veröffentlichen, damit sie mit der aktuellen PowerApps-Version synchronisiert wird. In Zukunft müssen Sie die App weiterhin alle sechs Monate nach der letzten Veröffentlichung aktualisieren und/oder erneut veröffentlichen.
