@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6266e8b59f19862e4b4a7f2364785da8e7547e73
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.openlocfilehash: 0ab25713976e9f89fa74b5f7664b13dca447841e
+ms.sourcegitcommit: 87327f99636c68c62c755c4eb48861249a5a3add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="image-control-in-powerapps"></a>Image-Steuerelement in PowerApps
 Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle anzeigt
@@ -110,9 +110,9 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 
 ## <a name="examples"></a>Beispiele
 ### <a name="show-an-image-from-a-local-file"></a>Anzeigen eines Images aus einer lokalen Datei
-1. Klicken oder tippen Sie auf der Registerkarte **Content** (Inhalt) auf die Option **Media** (Medien), und klicken oder tippen Sie anschließend auf **Browse** (Durchsuchen).
+1. Klicken oder tippen Sie im Menü **File** (Datei) auf die Option **Media** (Medien), und klicken oder tippen Sie anschließend auf **Browse** (Durchsuchen).
 2. Klicken oder tippen Sie auf die Image-Datei, die Sie hinzufügen möchten, und klicken oder tippen Sie auf **Open** (Öffnen). Drücken Sie anschließend ESC, um in den Standardarbeitsbereich zurückzukehren.
-3. Fügen Sie ein **Image**-Steuerelement hinzu, und legen Sie dessen  **[Items](properties-core.md)**-Eigenschaft auf den Namen der Datei fest, die Sie hinzugefügt haben.
+3. Fügen Sie ein **Image**-Steuerelement hinzu, und legen Sie dessen **Image**-Eigenschaft auf den Namen der Datei fest, die Sie hinzugefügt haben.
 
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
