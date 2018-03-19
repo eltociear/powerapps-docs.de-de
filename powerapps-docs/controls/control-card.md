@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: e85b7ce4c51e693d566fb50b51be48f9ab3edadd
-ms.sourcegitcommit: 85fadbb6881e1c097970e0566b5832f733cbe9b6
+ms.sourcegitcommit: 397a968f57ce5aaaf2b86e804dfedda8cf34f307
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="card-control-in-powerapps"></a>Karten-Steuerelement in PowerApps
 Ermöglicht die Anzeige und Bearbeitung eines einzelnen Felds in einem **[Formular anzeigen](control-form-detail.md)**- oder **[Formular bearbeiten](control-form-detail.md)**-Steuerelement.
