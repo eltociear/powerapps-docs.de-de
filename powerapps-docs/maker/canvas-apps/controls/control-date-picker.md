@@ -1,13 +1,13 @@
 ---
 title: 'Datumsauswahl-Steuerelement: Referenz | Microsoft-Dokumentation'
-description: "Informationen, einschließlich Eigenschaften und Beispiele, über das Datumsauswahl-Steuerelement"
-services: 
+description: Informationen, einschließlich Eigenschaften und Beispiele, über das Datumsauswahl-Steuerelement
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: f2605680c7b6e8f7102fd3459230344863a93f55
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="date-picker-control-in-powerapps"></a>Datumsauswahl-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen ein Datum angeben können.

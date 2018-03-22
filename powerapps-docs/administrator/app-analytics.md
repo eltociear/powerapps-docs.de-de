@@ -1,13 +1,13 @@
 ---
 title: App-Analysen | Microsoft-Dokumentation
-description: "Sie können Berichte zur Nutzung und Leistung Ihrer App anzeigen."
-services: 
+description: Sie können Berichte zur Nutzung und Leistung Ihrer App anzeigen.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: jamesol-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/29/2017
 ms.author: jamesol
 ms.openlocfilehash: e66978f6134919b18f4cfba913f1bb34394d8832
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Anzeigen von Analyseberichten für Ihre App
 Haben Sie eine App erstellt und in Ihrer Organisation bereitgestellt?  Möchten Sie wissen, wie viele Ihrer Kollegen die App täglich verwenden?

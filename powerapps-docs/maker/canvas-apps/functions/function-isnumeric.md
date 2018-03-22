@@ -1,13 +1,13 @@
 ---
-title: "Funktion „IsNumeric“ | Microsoft-Dokumentation"
-description: "Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „IsNumeric“ in PowerApps"
-services: 
+title: Funktion „IsNumeric“ | Microsoft-Dokumentation
+description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „IsNumeric“ in PowerApps
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/01/2015
 ms.author: gregli
 ms.openlocfilehash: d337b554be850ae1d62597fa212b72f901633849
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="isnumeric-function-in-powerapps"></a>IsNumeric-Funktion in PowerApps
 Prüft, ob ein Wert numerisch ist
