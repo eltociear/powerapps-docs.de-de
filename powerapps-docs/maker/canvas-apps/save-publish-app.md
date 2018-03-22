@@ -1,13 +1,13 @@
 ---
-title: "Speichern und Veröffentlichen einer App | Microsoft-Dokumentation"
-description: "Detaillierte Anleitung für App-Autoren zum Speichern und Veröffentlichung einer App"
-services: 
+title: Speichern und Veröffentlichen einer App | Microsoft-Dokumentation
+description: Detaillierte Anleitung für App-Autoren zum Speichern und Veröffentlichung einer App
+services: ''
 suite: powerapps
 documentationcenter: na
 author: SKjerland
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/14/2017
 ms.author: sharik
 ms.openlocfilehash: 739813b2b4905653543461008986901d4e2ee95b
-ms.sourcegitcommit: faaf9adebd72794d2988fba1b27a31d70b5268f8
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Speichern und Veröffentlichen einer App in PowerApps
 Wenn Sie Änderungen an einer App speichern, veröffentlichen Sie diese automatisch nur für sich selbst und andere Benutzer, die über Berechtigungen zum Bearbeiten der App verfügen. Wenn Sie die Änderungen abgeschlossen haben, müssen Sie sie explizit veröffentlichen, um sie allen Benutzern zur Verfügung zu stellen, für die die App freigegeben ist.

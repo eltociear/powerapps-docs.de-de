@@ -1,13 +1,13 @@
 ---
-title: "Ändern der Bildschirmgröße und -ausrichtung | Microsoft-Dokumentation"
-description: "Schrittanleitung zum Ändern von Einstellungen, z.B. von Bildschirmgröße und -ausrichtung"
-services: 
+title: Ändern der Bildschirmgröße und -ausrichtung | Microsoft-Dokumentation
+description: Schrittanleitung zum Ändern von Einstellungen, z.B. von Bildschirmgröße und -ausrichtung
+services: ''
 suite: powerapps
 documentationcenter: na
 author: lonu
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: lonu
 ms.openlocfilehash: be123445c1b719012dcb71c7aa93d93dace64935
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-screen-size-and-orientation-in-powerapps"></a>Ändern der Bildschirmgröße und -ausrichtung in PowerApps
 Anpassen einer App durch Ändern der Bildschirmgröße und -ausrichtung

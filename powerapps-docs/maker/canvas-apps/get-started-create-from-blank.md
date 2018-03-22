@@ -1,13 +1,13 @@
 ---
 title: App von Grund auf neu erstellen | Microsoft-Dokumentation
-description: "Erstellen Sie eine App von Grund auf, indem Sie jedes UI-Element und Verhalten so konfigurieren, dass es die täglichen Daten verwaltet, die Ihr Business antreiben."
-services: 
+description: Erstellen Sie eine App von Grund auf, indem Sie jedes UI-Element und Verhalten so konfigurieren, dass es die täglichen Daten verwaltet, die Ihr Business antreiben.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/16/2016
 ms.author: sharik
 ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: e827813cd898ca9a1046b5952ea5e32ce2989a65
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-app-from-scratch"></a>App von Grund auf neu erstellen
 Erstellen Sie Ihre eigene App von Grund auf neu mithilfe einer Vielzahl von Datenquellen, wobei Sie später noch weitere Quellen hinzufügen können, wenn Sie möchten. Geben Sie die Darstellung und das Verhalten jedes UI-Elements so an, dass Sie das Ergebnis für Ihre genauen Ziele und Ihren Workflow optimieren können. Dieser Ansatz ist weitaus zeitaufwendiger als [eine App automatisch zu generieren](get-started-create-from-data.md), aber erfahrene App-Entwickler können die beste App für ihre Anforderungen erstellen.

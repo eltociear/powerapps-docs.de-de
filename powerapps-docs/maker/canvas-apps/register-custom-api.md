@@ -1,12 +1,12 @@
 ---
-title: "Links zu Inhalten über benutzerdefinierte Connectors | Microsoft-Dokumentation"
-description: "Links zu Inhalten über das Erstellen, Verwenden, Freigeben und Zertifizieren benutzerdefinierter Connectors."
-services: 
+title: Links zu Inhalten über benutzerdefinierte Connectors | Microsoft-Dokumentation
+description: Links zu Inhalten über das Erstellen, Verwenden, Freigeben und Zertifizieren benutzerdefinierter Connectors.
+services: ''
 suite: powerapps
-documentationcenter: 
+documentationcenter: ''
 author: mgblythe
 manager: anneta
-editor: 
+editor: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 05/05/2017
 ms.author: mblythe
 ms.openlocfilehash: 2f8908241c03c5c0fd9a2d254aead52e29087387
-ms.sourcegitcommit: 6a43e35eacb48e7f4724aa213dee801571ea8928
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="custom-connectors-in-powerapps"></a>Benutzerdefinierte Connectors in PowerApps
 
