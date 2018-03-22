@@ -1,13 +1,13 @@
 ---
-title: "Funktionen „Calendar“ und „Clock“ | Microsoft-Dokumentation"
-description: "Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Calendar“ und „Clock“ in PowerApps"
-services: 
+title: Funktionen „Calendar“ und „Clock“ | Microsoft-Dokumentation
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Calendar“ und „Clock“ in PowerApps
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/07/2015
 ms.author: gregli
 ms.openlocfilehash: d04899e4557379f07b9f434b928b35e406a9e9ca
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Die Funktionen „Calendar“ und „Clock“ in PowerApps
 Ruft Kalender- und Uhrzeitinformationen zum aktuellen Gebietsschema ab

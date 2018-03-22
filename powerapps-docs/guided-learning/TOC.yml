@@ -2,9 +2,5 @@
   href: 'get-started.yml#step-1'
 - name: App aus SharePoint erstellen
   href: 'create-app-sharepoint.yml#step-1'
-- name: App aus dem Common Data Service erstellen
-  href: 'create-app-cds.yml#step-1'
 - name: Apps verwalten
   href: 'manage-apps.yml#step-1'
-- name: Daten verwalten
-  href: 'manage-data.yml#step-1'

@@ -1,13 +1,13 @@
 ---
 title: Kerneigenschaften | Microsoft-Dokumentation
-description: "Enthält Referenzinformationen zu den Eigenschaften „Disabled“, „Visible“ und „ReadOnly“."
-services: 
+description: Enthält Referenzinformationen zu den Eigenschaften „Disabled“, „Visible“ und „ReadOnly“.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
 ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="core-properties-in-powerapps"></a>Kerneigenschaften in PowerApps
 Konfigurieren Sie, ob der Benutzer ein Steuerelement sehen und damit interagieren kann.

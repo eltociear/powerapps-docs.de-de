@@ -1,13 +1,13 @@
 ---
 title: Herstellen einer Verbindung mit einer Oracle-Datenbank | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie eine Verbindung mit einer Oracle-Datenbank herstellen und damit Apps in PowerApps erstellen.
-services: 
+services: ''
 suite: powerapps
 documentationcenter: na
 author: archnair
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 04/14/2017
 ms.author: archanan
 ms.openlocfilehash: dd55314461b2ba4769e50275837dc6fd897fedcc
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Herstellen einer Verbindung mit einer Oracle-Datenbank aus PowerApps
 Nachdem Sie eine Verbindung mit einer Oracle-Datenbank hergestellt und eine App in PowerApps erstellt haben, können Sie Tabellen in der Oracle-Datenbank auflisten und Tabellenzeilen erstellen, lesen und aktualisieren. Die Verbindung mit der Oracle-Datenbank unterstützt die vollständige Delegierung von Filtern, Sortieren und weiteren Funktionen, jedoch keine Trigger und gespeicherten Prozeduren.

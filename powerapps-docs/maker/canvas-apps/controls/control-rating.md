@@ -1,13 +1,13 @@
 ---
-title: "Steuerelement für Bewertungen: Referenz | Microsoft-Dokumentation"
-description: "Informationen, einschließlich Eigenschaften und Beispiele, über das Steuerelement für Bewertungen"
-services: 
+title: 'Steuerelement für Bewertungen: Referenz | Microsoft-Dokumentation'
+description: Informationen, einschließlich Eigenschaften und Beispiele, über das Steuerelement für Bewertungen
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 4dd23b8c94ee4760e40b4513e7a88667f85c3a4b
-ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="rating-control-in-powerapps"></a>Steuerelement für Bewertungen in PowerApps
 Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen Anzahl, die Sie festlegen, angeben können.
