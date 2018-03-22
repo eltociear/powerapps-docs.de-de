@@ -1,13 +1,13 @@
 ---
 title: Funktionen, Signale und Enumerationen | Microsoft-Dokumentation
 description: Referenzinformationen zu Funktionen, Signalen und Enumerationen in PowerApps
-services: 
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,17 +16,17 @@ ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
 ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
 
 * **Funktionen** verwenden Parameter, führen einen Vorgang aus und geben einen Wert zurück. So gibt beispielsweise **Sqrt(25)** den Wert **5** zurück. Funktionen sind Microsoft Excel-Funktionen nachgebildet.  Einige Funktionen haben nachteilige Auswirkungen, wie z.B. **SubmitForm**, die sich nur für [Verhaltensformeln](working-with-formulas-in-depth.md) wie **Button.OnSelect** eignet.
 * **Signale** geben Informationen über die Umgebung zurück. Die Funktion  **[Location](functions/signals.md)** gibt beispielsweise die aktuellen GPS-Koordinaten des Geräts zurück. Signale verwenden keine Parameter und haben keine nachteiligen Auswirkungen.
-* **Enumerationen** geben einen vordefinierten Konstantenwert zurück. **[Color](functions/function-colors.md)** ist eine Enumeration, die über vordefinierte Werte für **Color.Red**, **Color.Blue**usw. verfügt.  An dieser Stelle werden nur allgemeine Enumerationen beschrieben. Funktionsspezifische Enumerationen werden mit der jeweiligen Funktion erläutert.
+* **Enumerationen** geben einen vordefinierten Konstantenwert zurück.  **[Color](functions/function-colors.md)** ist eine Enumeration, die über vordefinierte Werte für **Color.Red**, **Color.Blue**usw. verfügt.  An dieser Stelle werden nur allgemeine Enumerationen beschrieben. Funktionsspezifische Enumerationen werden mit der jeweiligen Funktion erläutert.
 * **Benannte Operatoren**, wie z.B. **[ThisItem](functions/operators.md#thisitem-operator)** und **[Parent](functions/operators.md#parent-operator)**, ermöglichen den Zugriff auf Informationen innerhalb eines Containers.
 
 Andere Elemente enthalten:

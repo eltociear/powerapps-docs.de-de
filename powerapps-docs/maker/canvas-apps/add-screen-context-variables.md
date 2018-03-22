@@ -1,13 +1,13 @@
 ---
-title: "Hinzufügen eines Bildschirms und Wechseln zwischen Bildschirmen | Microsoft-Dokumentation"
-description: "Fügen Sie einer App einen Bildschirm hinzu, und nutzen Sie die Weiter- und Zurück-Pfeile, um in PowerApps zwischen Bildschirmen zu wechseln"
-services: 
+title: Hinzufügen eines Bildschirms und Wechseln zwischen Bildschirmen | Microsoft-Dokumentation
+description: Fügen Sie einer App einen Bildschirm hinzu, und nutzen Sie die Weiter- und Zurück-Pfeile, um in PowerApps zwischen Bildschirmen zu wechseln
+services: ''
 suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 07/10/2017
 ms.author: sharik
 ms.openlocfilehash: 64c38e561be90cbebabe17f73377e4d754d99c54
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-a-screen-and-navigate-between-screens"></a>Hinzufügen eines Bildschirms und Wechseln zwischen Bildschirmen
 Erstellen Sie eine App mit mehreren Bildschirmen, und bieten Sie Benutzern Möglichkeiten, zwischen diesen Bildschirmen zu wechseln.

@@ -1,13 +1,13 @@
 ---
 title: Erstellen einer Regel | Microsoft-Dokumentation
 description: Eine schrittweise Anleitung zum Entwerfen von App-Logik durch Erstellen von Regeln
-services: 
+services: ''
 suite: PowerApps
 documentationcenter: na
 author: karthik-1
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 11/10/2017
 ms.author: sharik
 ms.openlocfilehash: 30c069a65d19b965ee5c66411ca08723a6f510ae
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-rule-in-powerapps"></a>Erstellen einer Regel in PowerApps
 Erstellen Sie Regeln, damit eine App automatisch auf Grundlage der von Ihnen angegebenen Kriterien geändert wird. Beispielsweise können Listenelemente je nach ihrem Status in Rot, Gelb oder Grün angezeigt werden, oder eine Genehmigungsschaltfläche kann nur für bestimmte Benutzer (z.B. Manager) angezeigt werden.

@@ -1,13 +1,13 @@
 ---
-title: "Suchen nach Apps über AppSource | Microsoft-Dokumentation"
+title: Suchen nach Apps über AppSource | Microsoft-Dokumentation
 description: Entdecken Sie Apps mithilfe von AppSource, die Sie gemeinsam mit Ihrer Organisation verwenden
-services: 
+services: ''
 suite: powerapps
 documentationcenter: na
 author: linhtranms
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: 805a74da29a97902eb700bb949f37cca491c05a0
-ms.sourcegitcommit: 6afca7cb4234d3a60111c5950e7855106ff97e56
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="discover-apps-via-appsource"></a>Suchen nach Apps über AppSource
 Die von Ihnen mithilfe von PowerApps erstellten und veröffentlichten Apps werden im Web veröffentlicht und in Dynamics 365 verwendet. Alle Ihre Apps werden angezeigt, d.h. die Apps, für deren Verwendung Sie sich speziell entschieden haben (durch Starten aus einer Freigabe-E-Mail oder durch Öffnen aus AppSource) bzw. die ein Administrator für Sie bereitgestellt hat. Hierzu zählen alle Ihre Apps aus PowerApps, sowie alle Dynamics 365-Anwendungen aus Microsoft. Sie können nach Apps suchen, nach Umgebungen filtern und die am häufigsten verwendeten Apps am oberen Rand der Seite anheften.

@@ -1,13 +1,13 @@
 ---
 title: Suchen nach einer Eigenschaft | Microsoft-Dokumentation
-description: "Sie können anhand des Steuerelements, anhand der Kategorie oder alphabetisch nach einer Eigenschaft suchen."
-services: 
+description: Sie können anhand des Steuerelements, anhand der Kategorie oder alphabetisch nach einer Eigenschaft suchen.
+services: ''
 suite: powerapps
 documentationcenter: na
 author: gregli-msft
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 03/17/2016
 ms.author: gregli
 ms.openlocfilehash: 11f3a29989057a3dc1a75c40877314596a62859d
-ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Steuerelemente und Eigenschaften in PowerApps
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
