@@ -71,7 +71,7 @@ In den folgenden Beispielen wird ein **Schieberegler**-Steuerelement mit dem Nam
 | **Switch( Slider1.Value, 20, "Result1", 10, "Result2", 0, "Result3", "DefaultResult" )** |Der Wert des Schiebereglers stimmt mit keinem zu überprüfenden Wert überein.  Ein *DefaultResult* (Standardergebnis) wurde bereitgestellt, das zurückgegeben wird. |"DefaultResult" |
 
 ### <a name="branching-in-behavior-formulas"></a>Verzweigungen in Verhaltensformeln
-In den folgenden Beispielen enthält ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement mit dem Namen **FirstName** den Wert „John“.
+In den folgenden Beispielen enthält ein **[Text input](../controls/control-text-input.md)**-Steuerelement mit dem Namen **FirstName** den Wert „John“.
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ In den folgenden Beispielen enthält ein **[Texteingabe](../controls/control-tex
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |Der Wert von **FirstName.Text** wird mit „Carlos“, „Kirstin“ und „John“ (in dieser Reihenfolge) verglichen. Eine Übereinstimmung mit „John“ wird gefunden, weshalb die App zu **Screen3** navigiert. |**TRUE**<br><br>Die Anzeige wird in **Screen3** geändert. |
 
 ### <a name="step-by-step"></a>Schritt für Schritt
-1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement hinzu, und nennen Sie es **Text1**, wenn es diesen Namen nicht bereits standardmäßig hat.
+1. Fügen Sie ein **[Text input](../controls/control-text-input.md)**-Steuerelement hinzu, und nennen Sie es **Text1**, wenn es diesen Namen nicht bereits standardmäßig hat.
 2. Geben Sie in **Text1** den Wert **30** ein.
 3. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
    **If( Value(Text1.Text) < 20, "Viel mehr bestellen!", Value(Text1.Text) < 40, "Mehr bestellen!", Text1.Text )**
