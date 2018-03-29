@@ -5,23 +5,22 @@ metadata:
   description: Geben Sie Apps frei, steuern Sie, welche Version einer App verwendet und freigegeben wird, und arbeiten Sie mit Containern.
   audience: Business User
   level: Beginner
-  nextTutorialHref: manage-data
-  nextTutorialTitle: Daten verwalten
   displayType: one-column
-  author: mgblythe
-  manager: anneta
+  author: AFTOwen
+  manager: kfile
   ms.service: powerapps
   ms.topic: get-started-article
   ms.date: 10/27/2017
-  ms.author: mblythe
-  ms.openlocfilehash: 432eeb154a499631d78a32440da2627249c11ab3
-  ms.sourcegitcommit: 33099e6197c0139679cd08c42e9e2a5717904c92
+  ms.author: anneta
+  ms.openlocfilehash: cab0510cd1ba6bae583cfc5043d82122ef80d3c7
+  ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/12/2018
+  ms.lasthandoff: 03/28/2018
 items:
 - durationInMinutes: 1
-  content: "Geben Sie Apps für Kollegen und andere Benutzer frei, und steuern Sie, welche Version einer App verwendet und freigegeben wird. Arbeiten Sie mit Containern für Apps, Verbindungen und andere Ressourcen.\n"
+  content: >
+    Geben Sie Apps für Kollegen und andere Benutzer frei, und steuern Sie, welche Version einer App verwendet und freigegeben wird. Arbeiten Sie mit Containern für Apps, Verbindungen und andere Ressourcen.
 - title: Freigeben von Apps
   durationInMinutes: 5
   content: >
@@ -29,7 +28,7 @@ items:
 
 
     [!INCLUDE [](includes/learning-manage-share-apps.md)]
-- title: "Versionsverwaltung für Apps"
+- title: Versionsverwaltung für Apps
   durationInMinutes: 1
   content: >
     [!INCLUDE [](includes/learning-manage-version-apps.md)]
@@ -40,4 +39,4 @@ items:
 
 
     [!INCLUDE [](includes/learning-manage-environments.md)]
-- content: "Sie haben den Abschnitt **Apps verwalten** des geführten Lernens zu Microsoft PowerApps abgeschlossen.\0"
+- content: Sie haben den Abschnitt **Apps verwalten** des geführten Lernens zu Microsoft PowerApps abgeschlossen.
