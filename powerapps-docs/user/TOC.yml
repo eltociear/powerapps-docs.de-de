@@ -1,0 +1,10 @@
+- name: Finden und Ausführen von Apps
+  href: index.md
+- name: In einem Browser
+  href: run-app-browser.md
+- name: Auf einem Telefon (Canvas)
+  href: run-app-client.md
+- name: In Microsoft Teams
+  href: open-app-embedded-in-teams.md
+- name: Aus AppSource
+  href: app-source.md
