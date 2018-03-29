@@ -39,7 +39,7 @@ Andere Elemente enthalten:
 
 **[Acceleration](functions/signals.md)**: liest den Beschleunigungssensor in Ihrem Gerät.
 
-**[ACOS](functions/function-trig.md)** : gibt den Arkuskosinus einer Zahl im Bogenmaß zurück.
+**[Acos](functions/function-trig.md)** : gibt den Arkuskosinus einer Zahl im Bogenmaß zurück.
 
 **[Acot](functions/function-trig.md)**: gibt den Arkuskotangens einer Zahl im Bogenmaß zurück.
 
