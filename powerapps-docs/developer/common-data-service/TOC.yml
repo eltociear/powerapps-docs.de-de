@@ -1,0 +1,19 @@
+- name: Übersicht
+  href: overview.md
+- name: Einführung in Projektmappen
+  href: introduction-solutions.md
+- name: 'Common Data Service für Apps: Datenentitäten'
+  href: entities.md
+  items:
+    - name: Entitätsmetadaten
+      href: entity-metadata.md
+    - name: Attributmetadaten
+      href: entity-attribute-metadata.md
+    - name: Metadaten von Entitätsbeziehungen
+      href: entity-relationship-metadata.md
+    - name: Entitätsreferenz
+      href: reference/entities/toc.yml
+- name: Anwenden von Geschäftslogik mit Code
+  href: apply-business-logic-with-code.md
+- name: Verwenden von Webdiensten für Common Data Service für Apps
+  href: use-web-services.md

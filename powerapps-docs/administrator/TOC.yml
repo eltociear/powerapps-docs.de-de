@@ -1,0 +1,40 @@
+- name: Verwalten von PowerApps
+  href: index.md
+- name: Schnellstarts
+  items:
+    - name: Erstellen einer Umgebung
+      href: create-environment.md
+    - name: Erstellen einer DLP-Richtlinie
+      href: create-dlp-policy.md
+    - name: Anzeigen von aktiven Benutzern in Ihrem Mandanten
+      href: admin-view-user-licenses.md
+    - name: Anzeigen von Apps in Ihrer Umgebung
+      href: admin-view-apps.md
+- name: Konzepte
+  items:
+    - name: Übersicht über die Lizenzierung
+      href: pricing-billing-skus.md
+    - name: Umgebungen – Übersicht
+      href: environments-overview.md
+    - name: Einführung in Datengruppen
+      href: introduction-to-data-groups.md
+    - name: Regionen – Übersicht
+      href: regions-overview.md
+- name: Exemplarische Vorgehensweisen
+  items:
+    - name: Erwerben von PowerApps
+      href: signup-for-powerapps-admin.md
+    - name: Verwalten von Lizenzen in Ihrer Organisation
+      href: signup-question-and-answer.md
+    - name: Verwalten von DLP-Richtlinien
+      href: prevent-data-loss.md
+    - name: Datenbank erstellen
+      href: create-database.md
+    - name: Umgebungen verwalten
+      href: environments-administration.md
+    - name: Konfigurieren der Sicherheit von Umgebungen
+      href: database-security.md
+    - name: Verwalten von Apps in Ihrer Organisation
+      href: admin-manage-apps.md
+    - name: Eine App zwischen Mandanten und Umgebungen verschieben
+      href: environment-and-tenant-migration.md
