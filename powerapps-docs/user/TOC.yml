@@ -4,6 +4,8 @@
   href: run-app-browser.md
 - name: Auf einem Telefon (Canvas)
   href: run-app-client.md
+- name: Auf einem Telefon (modellgesteuert)
+  href: run-app-client-model-driven.md
 - name: In Microsoft Teams
   href: open-app-embedded-in-teams.md
 - name: Aus AppSource
