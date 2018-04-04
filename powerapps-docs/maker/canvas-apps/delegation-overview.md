@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/15/2017
+ms.date: 03/27/2018
 ms.author: gregli
-ms.openlocfilehash: 40c933fb46883d7fa33ffa626d8ef317d4206060
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98cf32e1b379812e1d3175e6403b7c6fd7fb794b
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="understand-delegation"></a>Grundlagen der Delegierung
 PowerApps enthalten einen leistungsstarken Funktionssatz für die Filterung, Sortierung und Strukturierung von Tabellen mit Daten: Beispiele hierfür sind die Funktionen **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** und **[AddColumns](functions/function-table-shaping.md)**, um nur einige zu nennen.  Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen.  Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.  
@@ -30,7 +30,7 @@ Mit der *Delegierung* wird erreicht, dass die Ausdrucksstärke von PowerApps-For
 
 Die Schwierigkeit hierbei ist, dass nicht alle Vorgänge, die in einer PowerApps-Formel ausgedrückt werden können, an jede Datenquelle delegiert werden können. Dies ist der Grund für diesen Artikel.  Die PowerApps-Sprache ist an die Formelsprache von Excel angelehnt und verfügt über umfassenden und sofortigen Zugriff auf eine vollständige Arbeitsmappe im Arbeitsspeicher, die viele verschiedene numerische Funktionen und Funktionen für die Textbearbeitung enthält.  Daher ist die PowerApps-Sprache relativ komplex und kann von den meisten Datenquellen nicht unterstützt werden, darunter auch leistungsstarke Datenbankmodule wie SQL Server.
 
-**Zum Verwenden von großen Datasets ist die Nutzung von Datenquellen und Formeln erforderlich, für die eine Delegierung möglich ist.**  Nur auf diese Weise erzielen Sie für Ihre App eine gute Leistung und können sicherstellen, dass die Benutzer auf alle benötigten Informationen zugreifen können. Achten Sie auf [Vorschläge mit einem blauen Punkt](delegation-overview.md#blue-dot-suggestions), mit dem Orte gekennzeichnet werden, an denen die Delegierung nicht möglich ist.  Wenn Sie mit kleinen Datasets arbeiten (weniger als 500 Datensätze), können Sie eine beliebige Datenquelle und Formel verwenden, weil die Verarbeitung lokal durchgeführt werden kann, falls das Delegieren der Formel nicht möglich ist.  
+**Zum Verwenden von großen Datasets ist die Nutzung von Datenquellen und Formeln erforderlich, für die eine Delegierung möglich ist.**  Nur auf diese Weise erzielen Sie für Ihre App eine gute Leistung und können sicherstellen, dass die Benutzer auf alle benötigten Informationen zugreifen können. Achten Sie auf [Vorschläge mit einem blauen Punkt](delegation-overview.md#blue-dot-suggestions), mit dem Orte gekennzeichnet werden, an denen die Delegierung nicht möglich ist.  Wenn Sie mit kleinen Datasets arbeiten (weniger als 500 Datensätze), können Sie eine beliebige Datenquelle und Formel verwenden, weil die Verarbeitung lokal durchgeführt werden kann, falls das Delegieren der Formel nicht möglich ist. 
 
 ## <a name="delegable-data-sources"></a>Delegierbare Datenquellen
 In der vollständigen Liste unter [Delegierbare Datenquellen](delegation-list.md) ist angegeben, für welche Datenquellen die Delegierung unterstützt wird (und in welchem Umfang).
@@ -83,7 +83,7 @@ Zählfunktionen, z.B. **[CountRows](functions/function-table-counts.md)**, **[Co
 
 Andere Aggregatfunktionen, z.B. **[StdevP](functions/function-aggregates.md)** und **[VarP](functions/function-aggregates.md)**, können nicht delegiert werden.
 
-### <a name="other-functions"></a>Andere Funktionen
+## <a name="non-delegable-functions"></a>Nicht delegierbare Funktionen
 Für alle anderen Funktionen wird die Delegierung nicht unterstützt, einschließlich dieser wichtigen Funktionen:
 
 * Tabellenstrukturierung: **[AddColumns](functions/function-table-shaping.md)**, **[DropColumns](functions/function-table-shaping.md)**, **[ShowColumns](functions/function-table-shaping.md)**, ...
@@ -104,11 +104,19 @@ Da **LookUp** und die dazugehörige Datenquelle delegierbar sind, kann eine Übe
 ## <a name="non-delegable-limits"></a>Grenzwerte für Fälle, in denen keine Delegierung möglich ist
 Formeln, die nicht delegiert werden können, werden lokal verarbeitet.  Auf diese Weise kann die gesamte Bandbreite der PowerApps-Formelsprache genutzt werden.  Dies hat aber einen Preis: Alle Daten müssen zuerst auf das Gerät übertragen werden, sodass unter Umständen eine größere Datenmenge über das Netzwerk abgerufen werden muss.  Dies kann eine Weile dauern, sodass der Eindruck entsteht, dass Ihre App langsam ist oder hängt.
 
-Um dies zu vermeiden, gilt für PowerApps ein Grenzwert für die Datenmenge, die lokal verarbeitet werden kann: 500 Datensätze.  Wir haben diesen Wert gewählt, damit Sie über vollständigen Zugriff auf kleine Datasets verfügen und die Nutzung Ihrer großen Datasets optimieren können, indem Teilergebnisse angezeigt werden.
+Um dies zu vermeiden, gilt für PowerApps ein Standardgrenzwert von 500 Datensätzen für die Datenmenge, die lokal verarbeitet werden kann.  Wir haben diesen Wert gewählt, damit Sie über vollständigen Zugriff auf kleine Datasets verfügen und die Nutzung Ihrer großen Datasets optimieren können, indem Teilergebnisse angezeigt werden.
 
 Bei der Nutzung sollten Sie aber mit Bedacht vorgehen, da es für Benutzer verwirrend sein kann.  Angenommen, Sie verwenden die Funktion **Filter** mit einer Auswahlformel, die nicht delegiert werden kann, für eine Datenquelle mit einer Million Datensätzen.  Da die Filterung lokal durchgeführt wird, werden nur die ersten 500 von einer Million Datensätze durchsucht.  Wenn der gewünschte Datensatz der 501. oder 500.001. Datensatz ist, wird er nicht berücksichtigt und mit **Filter** nicht zurückgegeben.
 
 Auch bei Aggregatfunktionen kann dies verwirrend sein.  Angenommen, Sie verwenden **Average** für eine Spalte der Datenquelle mit einer Million Datensätzen.  Da **Average** noch nicht delegiert werden kann, kann nur für die ersten 500 Datensätze der Mittelwert gebildet werden.  Hier sollten Sie Vorsicht walten lassen, weil eine Teilantwort von einem Benutzer Ihrer App als vollständige Antwort verstanden werden könnte.
+
+## <a name="changing-the-limit"></a>Ändern des Grenzwerts
+
+Der Standardgrenzwert für die Anzahl der Datensätze beträgt 500.  Sie können diese Zahl ändern, indem Sie zuerst zur Registerkarte „Datei“ und anschließend im linken Menü zu „App-Einstellungen“ und „Experimentelle Features“ navigieren.  Hier finden Sie die Einstellung „Grenzwert für Datenzeilen für nicht delegierbare Abfragen“, für die ein Wert zwischen 1 und 2000 festgelegt werden kann.  Diese Einstellung ist für diese gesamte App gültig.
+
+In einigen Fällen ist Ihnen möglicherweise bekannt, dass für die Anforderungen Ihres Szenarios ein Grenzwert von 2000 (oder auch 1000 oder 1500) erforderlich ist.  Diese Zahl können Sie vorsichtig erhöhen und Ihrem Szenario anpassen.  Beachten Sie, dass insbesondere bei Tabellen mit vielen Spalten ein hoher Grenzwert die Leistung Ihrer App negativ beeinflussen kann.  Idealerweise sollten Sie daher nach Möglichkeit eine Delegierung vornehmen.
+
+Wenn Sie sicherstellen möchten, dass Ihre Apps auf große Datasets skaliert werden kann, müssen Sie für diese Einstellung den Wert auf 1 reduzieren.  Für nicht delegierbare Elemente wird dann genau ein Datensatz zurückgegeben, der beim Testen der App leicht auffindbar sein sollte.  Dadurch können unerwartete Ergebnisse vermieden werden, wenn eine Proof of Concept-App in eine Produktionsumgebung überführt werden soll.
 
 ## <a name="blue-dot-suggestions"></a>Vorschläge mit einem blauen Punkt
 Um einfacher erkennen zu können, was delegiert wird und was nicht, sind in der Erstellungsumgebung Vorschläge mit einem blauen Punkt angegeben, wenn eine Formel nicht delegierbare Teile enthält.
