@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: dac61ab9ce4195f6336fe1625cea12f728eb3e41
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3ceb9eae42e88e7cfb78492f9e58812481a0881d
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -39,7 +39,7 @@ Andere Elemente enthalten:
 
 **[Acceleration](functions/signals.md)**: liest den Beschleunigungssensor in Ihrem Gerät.
 
-**[Acos](functions/function-trig.md)** : gibt den Arkuskosinus einer Zahl im Bogenmaß zurück.
+**[ACOS](functions/function-trig.md)** : gibt den Arkuskosinus einer Zahl im Bogenmaß zurück.
 
 **[Acot](functions/function-trig.md)**: gibt den Arkuskotangens einer Zahl im Bogenmaß zurück.
 
@@ -60,7 +60,7 @@ Andere Elemente enthalten:
 ## <a name="b"></a>B
 **[Back](functions/function-navigate.md)**: zeigt den vorherigen Bildschirm an.  
 
-**[Blank](functions/function-isblank-isempty.md)**: Gibt einen *leeren* Wert zurück, der zum Einfügen eines NULL-Werts in eine Datenquelle verwendet werden kann.
+**[Leer](functions/function-isblank-isempty.md)**: Gibt einen *leeren* Wert zurück, der zum Einfügen eines NULL-Werts in eine Datenquelle verwendet werden kann.
 
 ## <a name="c"></a>C
 **[Calendar](functions/function-clock-calendar.md)**: ruft Informationen zum Kalender für das aktuelle Gebietsschema ab.
@@ -165,7 +165,9 @@ Andere Elemente enthalten:
 **[Hour](functions/function-datetime-parts.md)**: gibt den Stundenteil eines Datums- oder Uhrzeitwerts zurück.
 
 ## <a name="i"></a>I
-**[If](functions/function-if.md)**: gibt einen bestimmten Wert zurück, wenn für eine Bedingung TRUE gilt, und ansonsten einen anderen Wert.  
+**[If](functions/function-if.md)**: gibt einen bestimmten Wert zurück, wenn für eine Bedingung TRUE gilt, und ansonsten einen anderen Wert. 
+
+**[IfError](functions/function-iferror.md)**: erkennt Fehler und stellt einen Alternativwert bereit oder führt eine Aktion aus. 
 
 **[IsBlank](functions/function-isblank-isempty.md)**: sucht nach einem Wert [blank](functions/function-isblank-isempty.md).
 
@@ -281,6 +283,8 @@ Andere Elemente enthalten:
 **[Set](functions/function-set.md)**: legt den Wert einer globalen Variablen fest.
 
 **[ShowColumns](functions/function-table-shaping.md)**: gibt eine Tabelle zurück, die nur ausgewählte Spalten enthält.
+
+**[ShowError](functions/function-showerror.md)**: zeigt dem Benutzer eine Fehlermeldung an.
 
 **[Shuffle](functions/function-shuffle.md)**: ordnet die Datensätze einer Tabelle nach dem Zufallsprinzip an.
 
