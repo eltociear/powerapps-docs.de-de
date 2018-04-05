@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: cf484054928a34eb3f3383acbfc9490bc95a0aa3
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
+ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Schnellstart: Ausführen einer modellgesteuerten App auf einem mobilen Gerät
 
@@ -49,4 +49,4 @@ Installieren Sie die Dynamics 365-App für Smartphones oder die Dynamics 365-App
 In diesem Schnellstart haben Sie erfahren, wie Sie eine modellgesteuerte App auf einem mobilen Gerät ausführen. Sie können auch Canvas-Apps auf einem mobilen Gerät ausführen.
 
 > [!div class="nextstepaction"]
-> [Ausführen einer modellgesteuerten App auf einem mobilen Gerät](run-app-client.md)
+> [Run a canvas app on a mobile device (Ausführen einer Canvas-App auf einem mobilen Gerät)](run-app-client.md)
