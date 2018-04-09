@@ -115,6 +115,8 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: Eine globale App erstellen
               href: ./canvas-apps/global-apps.md
+            - name: Erstellen barrierefreier Apps
+              href: ./canvas-apps/accessible-apps.md
         - name: Ihre App verwalten
           items:
             - name: Einführung in powerapps.com
