@@ -25,7 +25,7 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: Aus Excel
               href: ./canvas-apps/get-started-create-from-data.md
-    - name: Lernprogramme
+    - name: Tutorials
       items:
         - name: Generierte Apps anpassen
           items:
@@ -41,6 +41,12 @@
           href: ./canvas-apps/share-app.md
         - name: Apps in Power BI einbetten
           href: ./canvas-apps/embed-powerapps-powerbi.md
+    - name: Beispiele
+      items:
+        - name: Spesenabrechnungs-App
+          href: ./canvas-apps/expense-report-install.md
+        - name: Help Desk-App
+          href: ./canvas-apps/help-desk-install.md
     - name: Konzepte
       items:
         - name: Erste Schritte mit Formeln
@@ -65,6 +71,8 @@
           href: ./canvas-apps/sharepoint-form-integration.md
         - name: Benutzerdefinierte Visualisierung von PowerApps
           href: ./canvas-apps/powerapps-custom-visual.md
+        - name: InfoPath-Formulare in PowerApps-Formulare transformieren
+          href: ./canvas-apps/transform-infopath.md
         - name: Canvas-App-Entwicklung
           items:
             - name: 'PowerApps für Unternehmensentwickler, Partner und ISVs'
@@ -139,6 +147,8 @@
               href: ./canvas-apps/add-manage-connections.md
             - name: Mit SharePoint verbinden
               href: ./canvas-apps/connect-to-sharepoint.md
+            - name: Excel-Daten vorbereiten
+              href: ./canvas-apps/how-to-excel-tips.md
             - name: Delegierung
               href: ./canvas-apps/delegation-overview.md
             - name: Delegierbare Datenquellen
@@ -223,7 +233,7 @@
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: Eine benutzerdefinierte Entität löschen
           href: ./common-data-service/data-platform-delete-entity.md
-    - name: Lernprogramme
+    - name: Tutorials
       items:
         - name: Erstellen benutzerdefinierter Entitäten mit Komponenten
           href: ./common-data-service/create-custom-entity.md
