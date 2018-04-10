@@ -15,11 +15,11 @@ ms.devlang: na
 ms.topic: article
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 7917211c343e1375641ba2813810cb6723151f53
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4f971668b506776cfd1a9cce2f61d591a4a0db5e
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Tutorial: Freigeben einer modellgesteuerten App mit PowerApps
 
@@ -39,7 +39,7 @@ Zum Freigeben der App müssen Sie über die [!INCLUDE [powerapps](../../includes
 ## <a name="sign-in-to-powerapps"></a>Anmelden bei PowerApps
 Melden Sie sich bei [PowerApps](https://powerapps.microsoft.com/) an. Wenn Sie noch nicht über ein [!INCLUDE [powerapps](../../includes/powerapps.md)]-Konto verfügen, klicken Sie auf **Steigen Sie kostenlos ein**.
 
-## <a name="share-an-app"></a>Freigeben einer App 
+## <a name="share-an-app"></a>Eine App freigeben 
 In diesem Tutorial wird das Beispielunternehmen Contoso verwendet, das Haustierpflegedienstleistungen für Hunde und Katzen anbietet. Eine App, die eine benutzerdefinierte Entität zum Status des Haustierpflegegeschäfts enthält, wurde bereits erstellt und veröffentlicht. Jetzt muss die App freigegeben werden, damit sie von den Angestellten des Haustierpflegesalons verwendet werden kann. Zum Freigeben der App weist ein Administrator oder ein App-Ersteller Benutzern oder der App mindestens eine Sicherheitsrolle zu. 
 
 ## <a name="create-or-configure-a-security-role"></a>Erstellen oder Konfigurieren einer Sicherheitsrolle
@@ -130,7 +130,7 @@ Diese vordefinierten Sicherheitsrollen sind in einer [!INCLUDE [powerapps](../..
 *Die Berechtigungen gelten global, sofern keine anderen Angaben gemacht werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Schnellstart: Ausführen einer modellgesteuerten App auf einem mobilen Gerät](run-app-client-model-driven.md)
+[Schnellstart: Ausführen einer modellgesteuerten App auf einem mobilen Gerät](../../user/run-app-client-model-driven.md)
 
 
 
