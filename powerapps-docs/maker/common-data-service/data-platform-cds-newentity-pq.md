@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: def53153d3db75b0f56d7878324fa1391c8c58a8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 77906602fad6708857a6c34f44d1bc3c7c258f6c
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-add-data-to-an-entity-in-the-common-data-service-by-using-power-query"></a>Schnellstart: Hinzufügen von Daten zu einer Entität in Common Data Service mithilfe von Power Query
 In diesem Verfahren erstellen Sie eine Entität in [Common Data Service für Apps](data-platform-intro.md) und füllen diese mithilfe von Power Query mit Daten aus einem OData-Feed auf. Sie können die gleichen Techniken verwenden, um Daten unter anderem aus diesen lokalen Quellen und Onlinequellen zu integrieren:
@@ -91,3 +91,4 @@ Wenn Sie **Load to existing entity** (In vorhandene Entität laden) auswählen, 
 
 Wir halten diese neue Funktionalität für sehr hilfreich und würden uns über Ihr Feedback freuen. Bitte [senden Sie uns Ihre Vorschläge und Ihr Feedback](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) zu dieser Funktion.
 
+Wenn eine [Fehlermeldung über Berechtigungen](data-platform-cds-newentity-troubleshooting-mashup.md) angezeigt wird, wenden Sie sich an Ihren Administrator.

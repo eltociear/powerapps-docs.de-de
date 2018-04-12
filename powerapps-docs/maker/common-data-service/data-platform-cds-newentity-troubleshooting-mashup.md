@@ -1,11 +1,11 @@
 ---
-title: Problembehandlung – Ein Mashup für diese Datenbank kann nicht erstellt oder abgerufen werden | Microsoft-Dokumentation
-description: Beheben Sie Probleme beim Erstellen einer benutzerdefinierten Entität mithilfe von CDS und Power Query, indem Sie mit Administratorrechten Änderungen an AAD-Einschränkungen vornehmen.
+title: Problembehandlung in Power Query | Microsoft-Dokumentation
+description: Beheben Sie mithilfe von Power Query Probleme, um eine benutzerdefinierte Entität in Common Data Service für Apps zu erstellen.
 services: ''
 suite: powerapps
 documentationcenter: na
 author: mllopis
-manager: kfend
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -15,45 +15,34 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
-ms.openlocfilehash: 919d88309f4f9bc0e73f63ab5fd5401194a2f264
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: dafed76565a4bd3fb3e2822319d344f49376b4fc
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="troubleshooting---unable-to-create-or-retrieve-a-mashup-for-this-database"></a>Problembehandlung – Ein Mashup für diese Datenbank kann nicht erstellt oder abgerufen werden
-Bei Verwendung der Funktion **Neue Entitäten aus Daten (Technische Vorschau)** kann ein Fehler wie der Folgende auftreten:
+# <a name="troubleshooting-power-query"></a>Problembehandlung in Power Query
+Wenn Sie Power Query zum Erstellen einer benutzerdefinierten Entität verwenden, die Daten aus externen Quellen enthält, wird möglicherweise folgender Fehler angezeigt:
 
-    *Unable to create or retrieve a mashup for the current database*
+`Your Azure Active Directory administrator has set a policy that prevents you from using this feature. Please contact your administrator, who can grant permissions for this feature on your behalf.`
 
-Dies kann der Fall sein, wenn Sie die Funktion zum Erstellen von *benutzerdefinierten Entitäten* im **Common Data Service (CDS)** mit Daten aus externen Datenquellen unter Verwendung von **Power Query** verwenden. Der Fehler wird ausgelöst, wenn **Power Query** nicht auf die Daten der Organisation in **PowerApps oder CDS** zugreifen kann. Es gibt zwei Szenarien, in denen dies der Fall sein kann:
+Der Fehler wird angezeigt, wenn Power Query nicht auf die Daten der Organisation in PowerApps oder Common Data Service zugreifen kann. Diese Situation tritt in zwei Fällen auf:
 
-* Ein AAD-Mandantenadministrator (**Azure Active Directory**) hat den Benutzern die Möglichkeit verweigert, den Zugriff von Apps auf Unternehmensdaten in ihrem Namen zu gestatten.
-* Es wird ein nicht verwalteter Active Directory-Mandant verwendet. Ein nicht verwalteter Mandant ist ein Verzeichnis ohne globalen Administrator, das erstellt wurde, um ein Angebot mit Self-Service-Registrierung abzuschließen. Um dieses Problem zu beheben, muss für Benutzer *zuerst* die Konvertierung in einen verwalteten Mandanten ausgeführt werden, anschließend muss einer der beiden Lösungsansätze für das Problem verfolgt werden, die im folgenden Abschnitt beschrieben werden.
+* Ein AAD-Mandantenadministrator (Azure Active Directory) hat den Benutzern die Möglichkeit verweigert, den Zugriff von Apps auf Unternehmensdaten in ihrem Namen zu gestatten.
+* Es wird ein nicht verwalteter Active Directory-Mandant verwendet. Ein nicht verwalteter Mandant ist ein Verzeichnis ohne globalen Administrator, das erstellt wurde, um ein Angebot mit Self-Service-Registrierung abzuschließen. Um dieses Problem zu beheben, muss für Benutzer zuerst die Konvertierung in einen verwalteten Mandanten ausgeführt werden. Anschließend muss einer der beiden Lösungsansätze für das Problem verfolgt werden, die im folgenden Abschnitt beschrieben werden.
 
-Es gibt zwei Möglichkeiten, das oben beschriebene Problem zu beheben:
+Um dieses Problem zu beheben muss der AAD-Administrator die Schritte für eines der Verfahren, die später in diesem Artikel aufgegriffen werden, befolgen.
 
-* Der AAD-Administrator führt die erforderlichen Schritte aus, mit denen Benutzern ermöglicht wird, Apps den Zugriff auf Unternehmensdaten zu gestatten.
-* Der AAD-Administrator gestattet **Power Query** den Zugriff auf Daten.
+## <a name="allow-users-to-consent-to-apps-that-access-company-data"></a>Benutzern ermöglichen, Apps den Zugriff auf Unternehmensdaten zu gestatten
+Diese Vorgehensweise ist womöglich einfacher als die nächste. Damit werden jedoch umfassendere Berechtigungen gewährt.
 
-Die erforderlichen Schritte für diese Lösungen werden im Folgenden beschrieben.
+1. Öffnen Sie in [https://portal.azure.com](https://portal.azure.com) das Blatt **Azure Active Directory**, und wählen Sie **Benutzereinstellungen** aus.
+1. Wählen Sie neben **Benutzer können Apps den Zugriff auf Unternehmensdaten in ihrem Namen gestatten** die Option **Ja** aus, und wählen Sie dann **Speichern** aus.
 
-## <a name="allowing-users-to-give-apps-consent-to-access-company-data"></a>Benutzern ermöglichen, Apps den Zugriff auf Unternehmensdaten zu gestatten
+## <a name="allow-power-query-to-access-company-data"></a>Power Query den Zugriff auf Unternehmensdaten gestatten
+Eine Alternative besteht darin, dass der Mandantenadministrator Power Query seine Zustimmung erteilt, ohne mandantenweite Berechtigungen zu ändern.
 
-Sie können den AAD-Mandantenadministrator bitten, die folgenden Schritte auszuführen, um Benutzern zu ermöglichen, beliebigen Apps den Zugriff auf Unternehmensdaten zu gestatten:
-
-1. Besuchen Sie [https://portal.azure.com](https://portal.azure.com).
-2. Öffnen Sie das Blatt **Azure Active Directory**.
-3. Wählen Sie **Benutzereinstellungen** aus.
-4. Wählen Sie neben **Benutzer können Apps den Zugriff auf Unternehmensdaten in ihrem Namen gestatten** die Option **Ja** aus, und wählen Sie dann **Speichern** aus.
-5. Nach Abschluss dieses Vorgangs ist das Problem behoben.
-
-Dies ist möglicherweise die einfachste Vorgehensweise, damit werden jedoch umfassendere Berechtigungen als mit der nächsten Option gewährt.
-
-## <a name="allowing-power-query-to-access-company-data"></a>Power Query den Zugriff auf Unternehmensdaten gestatten
-Eine andere Lösung besteht darin, dass der Mandantenadministrator **Power Query** seine Zustimmung erteilt, ohne mandantenweite Berechtigungen zu ändern. Lassen Sie den Mandantenadministrator hierzu die folgenden Schritte ausführen:
-
-1. Installieren von [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
+1. Installieren Sie [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps).
 2. Führen Sie die folgenden PowerShell-Befehle aus:
    * Login-AzureRmAccount (und melden Sie sich als Mandantenadministrator an)
    * New-AzureRmADServicePrincipal -ApplicationId f3b07414-6bf4-46e6-b63f-56941f3f4128

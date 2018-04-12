@@ -1,7 +1,7 @@
 ---
 title: Neuerungen bei PowerApps | Microsoft-Dokumentation
 description: Updates für PowerApps nach Veröffentlichungsdatum
-services: ''
+services: powerapps
 suite: powerapps
 documentationcenter: na
 author: skjerland
@@ -15,17 +15,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 83a04905de797cb25012a05244dfae59ef54c5ae
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
 
+
 > [!NOTE]
 > Versionen werden über mehrere Tage eingeführt. Neue oder aktualisierte Funktionen werden möglicherweise nicht sofort angezeigt.
+
+## <a name="announcing-the-business-applications-spring-18-release-notes"></a>Ankündigung der Versionshinweise für Geschäftsanwendungen im Frühling 2018
+
+Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen Host für neue Funktionen zum Erstellen Ihrer eigenen Anwendungen und Erweiterungen zusätzlich zu unserer Plattform. [Laden Sie die Versionshinweise für Frühjahr 2018 als PDF herunter](https://aka.ms/businessappsreleasenotes), die für Dynamics 365, PowerApps, Microsoft Flow und Power BI gelten.
+
+**In Kürze:** Sobald die Features ausgeliefert werden, aktualisieren wir weiterhin die PDF-Datei zu den Versionshinweisen. Diese sind dann auch auf unserer Webseite verfügbar.
 
 ## <a name="mar-21"></a>21. März
 1. Erstellen Sie [modellgesteuerte Apps](../model-driven-apps/model-driven-app-overview.md), die mit Ihrem Datenmodell und der Form Ihrer wichtigsten Geschäftsdaten und -prozesse in Common Data Service beginnt. Auf dieser Grundlage werden Formulare, Ansichten und andere Komponenten erstellt. Modellgesteuerte Apps generieren automatisch eine leistungsstarke UI, die geräteübergreifend reagiert.
@@ -33,11 +40,11 @@ Informationen über bekannte Einschränkungen finden Sie unter [Häufige Problem
 3. In Common Data Service für Apps ist nun Folgendes enthalten:
 
     - **Zusätzliche Datentypen** unterstützen komplexere Definitionen für Entitäten und sorgen für eine verbesserte Benutzerfreundlichkeit. (Gilt für Canvas-Apps und modellgesteuerte Apps)
-    - [Erstellen und bearbeiten Sie Entitäten](../common-data-service/data-platform-create-entity.md) direkt über die PowerApps-Website in Common Data Service für Apps. Die **Benutzerfreundlichkeit** wurde unter anderem durch die verbesserte Leistung, eine benutzerfreundlichere Benutzeroberfläche und hilfreiche Features wie die Inline-Erstellung von Optionen verbessert. (Gilt für Canvas-Apps und modellgesteuerte Apps) 
+    - [Erstellen und bearbeiten Sie Entitäten](../common-data-service/data-platform-create-entity.md) direkt über die PowerApps-Website in Common Data Service für Apps. Die **Benutzerfreundlichkeit** wurde unter anderem durch die verbesserte Leistung, eine benutzerfreundlichere Benutzeroberfläche und hilfreiche Features wie die Inline-Erstellung von Optionen verbessert. (Gilt für Canvas-Apps und modellgesteuerte Apps)
     - Erstellen Sie **serverseitige Geschäftsregeln** für das Überprüfen der Daten, die in Common Data Service für Apps eingegeben wurden. (Gilt für Canvas-Apps und modellgesteuerte Apps)
     - Erstellen Sie **berechnete Felder und Rollupfelder** direkt über die PowerApps-Website in den Entitäten von Common Data Service für Apps. (Gilt für Canvas-Apps und modellgesteuerte Apps)  
-    - Entwickler können das **Software Development Kit** (SDK) von Common Data Service für Apps verwenden, um codebasierte Anpassungen für Common Data Service zu erstellen. 
-    - Erfahrene Benutzer können über eine neue **OData-Web-API** auf die in Common Data Service für Apps gespeicherten Daten zugreifen. 
+    - Entwickler können das **Software Development Kit** (SDK) von Common Data Service für Apps verwenden, um codebasierte Anpassungen für Common Data Service zu erstellen.
+    - Erfahrene Benutzer können über eine neue **OData-Web-API** auf die in Common Data Service für Apps gespeicherten Daten zugreifen.
     - [Importieren Sie Daten](../common-data-service/data-platform-cds-newentity-pq.md) in Common Data Service mit **Power Query**. Verwenden Sie Power Query im Web, um Daten aus mehreren Quellen direkt in Common Data Service für Apps zu importieren.
 
 ## <a name="mar-5"></a>5. März

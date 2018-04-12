@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: f8bafc0d4a2e06563142a3a8f575cf96437e097a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8d1f04f5b559e179e1549c92e75c16dac79210df
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>Schnellstart: Herunterladen einer Liste der aktiven Benutzer in Ihrem Mandanten
 Wenn Sie über globale Administratorberechtigungen für Office 365 oder über Mandantenberechtigungen für Azure Active Directory verfügen, können Sie eine Liste der aktiven Benutzer in Ihrem Mandanten herunterladen, über die Sie nachverfolgen können, wer auf PowerApps und bzw. oder Microsoft Flow zugegriffen hat und welche Lizenzen den Benutzern zugewiesen sind.
