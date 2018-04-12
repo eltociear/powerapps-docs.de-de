@@ -15,15 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 94ae54308f49838159ff06e0e642ab9f2503eab1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 872e06e3d260480f09f66c52b592540bae44bdda
+ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>Übersicht über die Erstellung einer modellgesteuerten App
 
-Das Design einer modellgesteuerten App ist ein Ansatz zum Entwickeln von Apps mit keinen oder nur wenigen Codekomponenten. Im Gegensatz zur Entwicklung einer Canvas-App, bei der der Designer über die vollständige Kontrolle über das Layout der App verfügt, wird bei modellgesteuerten Apps beinahe das gesamte Layout für Sie bestimmt und von den von Ihnen zur App hinzugefügten Komponenten größtenteils festgelegt. 
+Das Design einer modellgesteuerten App ist ein auf Komponenten bezogener Ansatz zum Entwickeln von Apps. Das Design modellgesteuerter Apps erfordert keinen Code, und die Apps, die Sie erstellen, können so einfach oder sehr komplex sein.  Im Gegensatz zur Entwicklung einer Canvas-App, bei der der Designer über die vollständige Kontrolle über das Layout der App verfügt, wird bei modellgesteuerten Apps beinahe das gesamte Layout für Sie bestimmt und von den von Ihnen zur App hinzugefügten Komponenten größtenteils festgelegt. 
 
 ![Beispiel für eine modellgesteuerte App](media/model-driven-app-overview/model-app-sample.png)
 
@@ -44,12 +44,12 @@ Die Erstellung modellgesteuerter Apps besteht grundsätzlich aus drei Schwerpunk
 - Entwerfen der App
 
 ### <a name="modeling-business-data"></a>Modellieren von Geschäftsdaten
-Um Geschäftsdaten zu modellieren, bestimmen Sie, welche Daten Ihre App benötigt und wie diese Daten mit anderen Daten in Zusammenhang stehen. Der modellgesteuerte Entwurf nutzt eine durch Metadaten gesteuerte Architektur, damit Designer die Anwendung anpassen können, ohne Code schreiben zu müssen. Metadaten sind im Grunde genommen „Daten über Daten“ und definieren die Struktur der im System gespeicherten Daten.
+Um Geschäftsdaten zu modellieren, bestimmen Sie, welche Daten Ihre App benötigt und wie diese Daten mit anderen Daten in Zusammenhang stehen. Der modellgesteuerte Entwurf nutzt eine durch Metadaten gesteuerte Architektur, damit Designer die Anwendung anpassen können, ohne Code schreiben zu müssen. Metadaten sind im Grunde genommen „Daten über Daten“ und definieren die Struktur der im System gespeicherten Daten. [Tutorial: Erstellen benutzerdefinierter Entitäten mit Komponenten in PowerApps](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>Definieren von Geschäftsprozessen
 Das Definieren und Erzwingen konsistenter Geschäftsprozesse ist ein wichtiger Aspekt beim Entwurf modellgesteuerter Apps. Konsistente Prozesse können Benutzer dabei unterstützen, sich auf ihre Arbeit zu konzentrieren, da sie nicht manuell mehrere verschiedene Schritte ausführen müssen. Prozesse können einfach oder komplex sein und sich über die Jahre oft ändern. Wählen Sie zum Erstellen eines Prozesses **Erweitert** aus, um den [Projektmappen-Explorer](#advanced-model-driven-app-making) zu öffnen. Wählen Sie anschließend im linken Bereich im Projektmappen-Explorer **Prozesse** und dann **Neu** aus. Weitere Informationen finden Sie unter [Arbeiten mit Geschäftslogik](#working-with-business-logic).  
 
-### <a name="composing-the-app"></a>Entwerfen der App
+### <a name="composing-the-model-driven-app"></a>Erstellen der modellgesteuerten App
 Nachdem Sie die Daten modelliert und Prozesse definiert haben, erstellen Sie Ihre App, indem Sie mithilfe des App-Designers die erforderlichen Komponenten auswählen und konfigurieren.
 
 ![App-Designer](media/model-driven-app-overview/app-designer.png)
@@ -63,7 +63,7 @@ Diese Komponenten bestimmen, auf welchen Daten die App basiert.
 
 |Komponente  |Beschreibung  |Designer  |
 |---------|---------|---------|
-|Entität     |Ein Element mit Eigenschaften, das Sie nachverfolgen, z.B. ein Kontakt oder Konto. Es stehen viele Standardentitäten zur Verfügung. Sie können eine nicht zum System gehörige Standardentität (Produktionsentität) anpassen oder eine benutzerdefinierte Entität von Grund auf neu erstellen.     | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer        |
+|Einrichtung     |Ein Element mit Eigenschaften, das Sie nachverfolgen, z.B. ein Kontakt oder Konto. Es stehen viele Standardentitäten zur Verfügung. Sie können eine nicht zum System gehörige Standardentität (Produktionsentität) anpassen oder eine benutzerdefinierte Entität von Grund auf neu erstellen.     | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer        |
 |Feld     | Eine Eigenschaft, die einer Entität zugeordnet ist. Ein Feld, das durch einen Datentyp definiert ist, der den Typ der Daten bestimmt, der eingegeben oder ausgewählt werden kann. Beispiele sind unter anderem Text, Zahl, Datum und Uhrzeit, Währung oder Nachschlagen (führt zu einer Beziehung mit einer anderen Entität). Felder werden in der Regel mit Formularen, Ansichten und Suchvorgängen verwendet.        | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer   |
 |Beziehung     | Entitätsbeziehungen definieren, wie Entitäten miteinander verknüpft werden können. Es gibt die Beziehungstypen 1:n (One-to-Many), n:1 (Many-to-One) und m:n (Many-to-Many). Durch das Hinzufügen eines Nachschlagefelds zu einer Entität wird z.B. eine neue 1:n-Beziehung zwischen den beiden Entitäten erstellt, und Sie können dieses Nachschlagefeld in ein Formular einfügen.   | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer        |
 |Feld „Optionssatz“     | Dies ist ein besonderes Feld, das dem Benutzer eine Reihe vorbestimmter Optionen bereitstellt. Jede Option verfügt über einen Zahlenwert und eine Bezeichnung. Wenn dieses Feld zu einem Formular hinzugefügt wird, wird ein Steuerelement angezeigt, damit der Benutzer eine Option auswählen kann.  Es gibt zwei Arten von Optionen: Optionen, bei denen der Benutzer nur eine Option auswählen kann und Optionen mit mehreren Auswahlmöglichkeiten.  | Optionen-Designer von [!INCLUDE [powerapps](../../includes/powerapps.md)]     |
@@ -119,14 +119,16 @@ Wählen Sie anschließend die Registerkarte **Erweitert** aus.
 
 ## <a name="model-driven-app-development-resources"></a>Ressourcen für die Entwicklung modellgesteuerter Apps
 Weitere Informationen zur Entwicklung modellgesteuerter Apps finden Sie in folgenden Artikeln.
-### <a name="modeling-and-composing-your-app"></a>Modellieren und Erstellen Ihrer App
+### <a name="modeling-your-data"></a>Modellieren Ihrer Daten
 - [Entwurf benutzerdefinierter Unternehmens-Apps mit dem App-Designer](https://docs.microsoft.com/dynamics365/customer-engagement/customize/design-custom-business-apps-using-app-designer)
-- [Erstellen oder Bearbeiten von Entitäten](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entities)
 - [Erstellen und Entwerfen von Formularen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
+- [Erstellen oder Bearbeiten von Ansichten](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)  
+
+### <a name="modeling-and-composing-your-app"></a>Modellieren und Erstellen Ihrer App
+- [Erstellen oder Bearbeiten von Entitäten](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entities)
+- [Erstellen und Bearbeiten von Beziehungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entity-relationships) 
 - [Erstellen und Bearbeiten von Feldern](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-fields)
 - [Erstellen und Bearbeiten globaler Optionssätze (Auswahllisten)](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-global-option-sets)
-- [Erstellen oder Bearbeiten von Ansichten](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)  
-- [Erstellen und Bearbeiten von Beziehungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-entity-relationships) 
 
 ### <a name="working-with-business-logic"></a>Arbeiten mit Geschäftslogik
 - [Übersicht: Geschäftsprozessfluss](https://docs.microsoft.com/dynamics365/customer-engagement/customize/business-process-flows-overview)
@@ -143,5 +145,7 @@ Weitere Informationen zur Entwicklung modellgesteuerter Apps finden Sie in folge
 [Erstellen einer Lösung](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-solution)
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Erstellen einer benutzerdefinierten Entität in PowerApps](../common-data-service/create-custom-entity.md)
+[Schnellstart: Erstellen einer benutzerdefinierten Entität](../common-data-service/data-platform-create-entity.md)
+
+[Tutorial: Erstellen benutzerdefinierter Entitäten mit Komponenten in PowerApps](../common-data-service/create-custom-entity.md)
 

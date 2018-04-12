@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 9a247ab22970538c56c8a1fb1578b197f9898f92
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 939be0cc43e03836d97049addcff27a8e4b063a0
+ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="common-data-service-for-apps"></a>Common Data Service für Apps
 
@@ -32,7 +32,7 @@ Durch Common Data Service können Sie Daten, die in von Ihnen entwickelten Apps 
 * Erstellen Sie Workflows, und nutzen Sie die Integration in Microsoft Flow, um zusätzliche Aktionen oder Geschäftsprozesse für Ihre Daten durchzuführen.
 * Integrieren Sie Standardentitäten und benutzerdefinierte Entitäten in eine App, die Sie entwickeln, so einfach wie Daten aus anderen Quellen.
 * Verbinden Sie Ihre Daten aus Microsoft Excel mithilfe der Produktivitäts-Add-Ins von Common Data Service.
-* Importieren und Synchronisieren Sie Ihre Daten einfach mithilfe von Power Query.
+* Importieren und Synchronisieren Sie Ihre Daten im Handumdrehen mithilfe von Power Query.
 * Sichern Sie Ihre Daten innerhalb Ihrer Organisation mithilfe der rollenbasierten Sicherheit für Standardentitäten und benutzerdefinierte Entitäten.
 * Bieten Sie globale Unterstützung für Ihre Daten und Anwendungen an, indem Sie die Übersetzung der Entitäts- und Feldnamen in die Benutzersprache nutzen.
 
@@ -62,15 +62,17 @@ Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte
 
 Wenn Sie eine Standardentität verwenden oder eine benutzerdefinierte Entität erstellen, sind in jeder davon mehrere Elemente verfügbar, mit denen verschiedene Aktionen durchgeführt werden können. Je nachdem, ob Ihr Geschäftsszenario einfach oder erweitert ist, wird bestimmt, welche Features Sie verwenden sollten. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und klicken Sie im linken Menü auf Daten > Entitäten, um die verfügbaren Entitäten in Ihrer Umgebung anzuzeigen.
 
-### <a name="system-fields"></a>Systemfelder
-Alle Standardentitäten oder benutzerdefinierten Entitäten werden mit einem Satz von schreibgeschützten Feldern erstellt, die Sie nicht ändern, löschen oder auf einen Wert festlegen können. Dies sind die wichtigsten Systemfelder:
+![Entitätsdetails](./media/data-platform-cds-intro/entitylist.png "Entity Details")
 
 * In jedem **Feld** können Sie eine zu sammelnde Information definieren sowie den Datentyp oder das Format, in dem diese angezeigt werden sollen. Felder weisen Ähnlichkeiten zu Spalten in Datenbanken oder in Excel auf.
-* Durch alternative **Schlüssel** werden effiziente und präzise Suchen und die Interaktion mit Datensätzen in der Entität ermöglicht, wenn nicht der eindeutige Standardbezeichner verwendet wird. Dies ist insbesondere dann wichtig, wenn Sie einen Geschäftsschlüssel verwenden oder eine Integration mit einem externen System vornehmen.
+* Durch alternative **Schlüssel** werden effiziente und präzise Suchen und die Interaktion mit Datensätzen in der Entität ermöglicht, wenn nicht der eindeutige Standardbezeichner verwendet wird. Dies ist dann wichtig, wenn Sie einen Geschäftsschlüssel verwenden oder eine Integration mit einem externen System vornehmen.
 * Jede Entität kann mehrere **Beziehungen** zu anderen Entitäten aufweisen, um entitätsübergreifende Suchvorgänge und Abfragen durchzuführen. Es gibt m:1-, 1:m- und m:n-Beziehungen.
 * Durch **Ansichten** kann jede Entität auf verschiedene Weisen dargestellt werden. Dazu zählt neben dem Filtern und Sortieren der Daten auch, welche Felder angezeigt werden. Diese Darstellungen werden als Ansichten gespeichert und können von verschiedenen Apps verwendet werden. Wenn Sie beispielsweise nur aktive Konten in Ihrer App anzeigen lassen möchten, können Sie eine Ansicht mit einem Filter verwenden. Dadurch werden nur aktive Konten angezeigt, und es wird vermieden, dass der Filter für jede App wiederholt eingestellt werden muss.
 * **Geschäftsregeln** können verwendet werden, um die Daten zu überprüfen, die in Entitäten erstellt und aktualisiert werden und somit die Datenqualität zu gewährleisten. Jede Geschäftsregel kann Daten für mehrere Felder und Entitäten überprüfen und unabhängig von der App, die zum Erstellen der Daten verwendet wird, Warnungen und Fehlermeldungen anzeigen.
 * Die in Common Data Service gespeicherten **Daten** sind im PowerApps-Portal, in PowerApps und Microsoft Excel sowie in den Web-APIs für Entwickler verfügbar.
+
+### <a name="system-fields"></a>Systemfelder
+Alle Standardentitäten oder benutzerdefinierten Entitäten werden mit einem Satz von schreibgeschützten Feldern erstellt, die Sie nicht ändern, löschen oder auf einen Wert festlegen können. Dies sind die wichtigsten Systemfelder:
 
 ## <a name="logic-and-validation"></a>Logik und Überprüfung
 
