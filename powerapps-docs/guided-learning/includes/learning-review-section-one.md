@@ -7,12 +7,7 @@ PowerApps ist mit den **Clouddiensten und Datenquellen** verbunden, die Sie bere
 Die einfachste Möglichkeit zum Einstieg in PowerApps besteht darin, die Beispiele durchzuarbeiten, mit Vorlagen zu experimentieren und Apps aus eigenen Daten zu generieren. Sie haben gesehen, wie Sie eine App basierend auf einer SharePoint-Liste generieren können. Sie verfügen nun über eine solide Grundlage und werden in kürzester Zeit eigene Apps erstellen und teilen. 
 
 ## <a name="whats-next"></a>Wie geht es weiter?
-Herzlichen Glückwunsch! Sie haben den ersten Abschnitt dieses Kurses für „Geführtes Lernen“ zu PowerApps abgeschlossen. Unabhängig davon, wie viel Erfahrung Sie am Anfang schon hatten, hoffen wir, dass Sie jetzt eine klare Vorstellung von PowerApps und dem Erstellen von Apps haben. Unten haben wir einige nützliche Ressourcen und Downloads zusammengestellt, Sie sollten sich jedoch auf jeden Fall auch andere Angebote für „Geführtes Lernen“ ansehen. Sie können entscheiden, wie Sie fortfahren möchten:
-
-* [Generieren und Anpassen einer App mit einer SharePoint-Liste](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1)
-* [Erstellen und Anpassen einer App mit dem Common Data Service](https://docs.microsoft.com/powerapps/guided-learning/create-app-cds#step-1) 
-
-In beiden Abschnitte wird beschrieben, wie Sie eine App generieren und anpassen. Der Abschnitt zu SharePoint enthält etwas mehr Informationen zur generierten App, und der Abschnitt zum Common Data Service beschreibt komplexere Anpassungen. Natürlich können Sie beide Abschnitte durcharbeiten, suchen Sie sich einfach aus, womit Sie beginnen möchten. 
+Herzlichen Glückwunsch! Sie haben den ersten Abschnitt dieses Kurses für „Geführtes Lernen“ zu PowerApps abgeschlossen. Unabhängig davon, wie viel Erfahrung Sie am Anfang schon hatten, hoffen wir, dass Sie jetzt eine klare Vorstellung von PowerApps und dem Erstellen von Apps haben. Unten haben wir einige nützliche Ressourcen und Downloads zusammengestellt, Sie sollten sich jedoch auf jeden Fall auch andere Angebote für „Geführtes Lernen“ ansehen. Wenn Sie mehr erfahren möchten, erhalten Sie [hier](https://docs.microsoft.com/powerapps/guided-learning/create-app-sharepoint#step-1) Informationen zum Erstellen und Anpassen von Apps aus der SharePoint-Liste.
 
 ## <a name="powerapps-resources"></a>Ressourcen zu PowerApps
 * Ausführliche Informationen finden Sie in der [PowerApps-Dokumentation](https://docs.microsoft.com/powerapps/).

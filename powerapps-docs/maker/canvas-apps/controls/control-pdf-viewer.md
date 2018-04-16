@@ -1,13 +1,13 @@
 ---
 title: 'PDF-Viewer-Steuerelement: Referenz | Microsoft-Dokumentation'
-description: "Informationen, einschließlich Eigenschaften und Beispiele, zum PDF-Viewer-Steuerelement"
-services: 
+description: Informationen, einschließlich Eigenschaften und Beispiele, zum PDF-Viewer-Steuerelement
+services: ''
 suite: powerapps
 documentationcenter: na
 author: fikaradz
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: c3ed17faae5963f71531b2fdc2ef9b08ee2569cc
-ms.sourcegitcommit: c76ec82db5d261be1fb7fdeeec3e119cdfada57f
+ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -99,7 +99,7 @@ Wenn das Dokument in PowerApps nicht geöffnet werden kann, wird dem Endanwender
 
 ## <a name="example"></a>Beispiel
 * Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine **Document**-Eigenschaft (in doppelten Anführungszeichen) auf die URL einer PDF-Datei fest, wie im folgenden Beispiel gezeigt:<br>
-  **"http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1"**
+  **„http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1“**
 
     Das Steuerelement zeigt die PDF-Datei.
 
