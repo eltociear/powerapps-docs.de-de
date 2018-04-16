@@ -24,7 +24,7 @@ Wenn die Benutzer per E-Mail benachrichtigt werden sollen, erhalten alle, für d
 Wir werden Berechtigungen und Lizenzierung nicht ausführlich behandeln, möchten aber auf einige grundlegende Punkte im Zusammenhang mit der Freigabe eingehen:
 
 * Benutzer und Mitwirkende benötigen Berechtigungen für alle Datenverbindungen und Gateways, die von einer freigegebenen App verwendet werden. Einige Berechtigungen werden implizit in der App gewährt, andere müssen explizit zugewiesen werden.
-* Wenn die App Common Data Service-Entitäten verwendet, benötigen Benutzer und Mitwirkende Zugriff auf die Common Data Service-Datenbank. Mitwirkende benötigen auch eine P2-Lizenz für PowerApps, wenn sie direkt mit Entitäten arbeiten.
+* Wenn die App Entitäten von Common Data Service für Apps verwendet, benötigen Benutzer und Mitwirkende Zugriff auf die Datenbank von Common Data Service für Apps. Mitwirkende benötigen auch eine P2-Lizenz für PowerApps, wenn sie direkt mit Entitäten arbeiten.
 
 Das Freigeben von Apps ist ganz einfach und eine hervorragende Möglichkeit, eine App, die Sie hilfreich finden, für andere in Ihrer Organisation verfügbar zu machen. Im nächsten Thema erläutern wir, wie Sie steuern, welche Version einer App aktiv ist, wenn Sie die App verwenden und freigeben.
 

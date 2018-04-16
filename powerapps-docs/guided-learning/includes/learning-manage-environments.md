@@ -9,12 +9,12 @@ Eine Umgebung ist ein Container für Apps und andere Ressourcen wie Datenverbind
 
 * **Trennen der App-Entwicklung nach Abteilungen**: In einem großen Unternehmen kann jede Abteilung so in einer anderen Umgebung arbeiten.
 * **ALM-Unterstützung (Application Lifecycle Management)**: Sie können separate Umgebungen für Apps in der Entwicklungsphase und Apps erstellen, die bereits fertig sind und freigegeben wurden.
-* **Verwalten des Zugriffs auf Daten**: Jede Umgebung kann über eine eigene Common Data Service-Datenbank und andere Datenverbindungen verfügen, die für die Umgebung spezifisch sind (d.h., sie werden nicht umgebungsübergreifend freigegeben).
+* **Verwalten des Zugriffs auf Daten:** Jede Umgebung kann über eine eigene Common Data Service-Datenbank für Apps und andere Datenverbindungen verfügen, die für die Umgebung spezifisch sind (d.h., sie werden nicht umgebungsübergreifend freigegeben).
 
 Dabei müssen Sie bedenken, dass Umgebungen nur für App-Ersteller und PowerApps-Administratoren relevant sind. Wenn Sie eine App für einen Benutzer freigeben, führt dieser die App einfach nur aus, sofern er über die richtigen Berechtigungen verfügt. Er muss sich keine Gedanken darüber machen, aus welcher Umgebung sie stammt.
 
 ## <a name="create-an-environment"></a>Erstellen einer Umgebung
-Bisher ging es in diesem Kurs in erster Linie um die Ersteller von Apps, Umgebungen werden allerdings von Administratoren erstellt und verwaltet. Wenn Sie kein Administrator sind, können diese Informationen trotzdem für Sie hilfreich sein, wenn Sie mit Ihrem Administrator das Einrichten von Umgebungen besprechen. Klicken oder tippen Sie im PowerApps Admin Center auf **Umgebungen** und dann auf **Neue Umgebung**. Geben Sie auf dem Bildschirm **Neue Umgebung** einen Namen für die Umgebung ein, wählen Sie eine Region aus, wählen Sie aus, ob für die Umgebung eine Common Data Service-Datenbank erstellt werden soll, und klicken oder tippen Sie auf **Umgebung erstellen**.
+Bisher ging es in diesem Kurs in erster Linie um die Ersteller von Apps, Umgebungen werden allerdings von Administratoren erstellt und verwaltet. Wenn Sie kein Administrator sind, können diese Informationen trotzdem für Sie hilfreich sein, wenn Sie mit Ihrem Administrator das Einrichten von Umgebungen besprechen. Klicken oder tippen Sie im PowerApps Admin Center auf **Umgebungen** und dann auf **Neue Umgebung**. Geben Sie auf der Anzeige **Neue Umgebung** einen Namen für die Umgebung ein, wählen Sie eine Region aus, wählen Sie aus, ob für die Umgebung eine Common Data Service-Datenbank für Apps erstellt werden soll, und klicken oder tippen Sie auf **Umgebung erstellen**.
 
 ![Erstellen einer Umgebung](./media/learning-manage-environments/create-environment.png)
 
@@ -24,11 +24,13 @@ Das war es schon. Jetzt haben Sie eine neue Umgebung, in der Sie arbeiten könne
 Folgende Benutzer haben Zugriff auf eine Umgebung:
 
 * **Umgebungsadministratoren**: Sie verfügen über vollständige Berechtigungen in der Umgebung.
-* **Umgebungsersteller**: Sie können alle Apps anzeigen, Apps erstellen und mit dem Common Data Service arbeiten (andere Berechtigungen gelten).
+* **Umgebungsersteller:** Sie können alle Apps anzeigen, Apps erstellen und mit dem Common Data Service für Apps arbeiten (andere Berechtigungen gelten).
 
 Als Administrator gewähren Sie Zugriff auf eine Umgebung auf der Registerkarte **Umgebungen**. Klicken oder tippen Sie zuerst auf eine Umgebung. Wenn Sie einen Benutzer hinzufügen möchten (in diesem Beispiel ein **Umgebungsersteller**), klicken oder tippen Sie auf **Umgebungsrollen** und dann auf **Umgebungsersteller**. Hier können Sie der Rolle Benutzer oder Gruppen hinzufügen. Klicken Sie danach auf **Speichern**.
 
 ![Zugriff auf die Umgebung verwalten](./media/learning-manage-environments/environment-access.png)
 
-Sie kennen nun die Vorteile von Umgebungen und wissen, wie Sie sie erstellen und den Zugriff darauf gewähren. Auch wenn Sie kein Administrator sind, sind diese Informationen hilfreich. Hiermit sind wir am Ende des Abschnitts zum Verwalten von Apps angelangt und bereit für den nächsten Abschnitt: das Verwalten von Daten mit Schwerpunkt auf dem Common Data Service.
+Sie kennen nun die Vorteile von Umgebungen und wissen, wie Sie sie erstellen und den Zugriff darauf gewähren. Auch wenn Sie kein Administrator sind, sind diese Informationen hilfreich. 
+
+Damit sind wir am Ende des Abschnitts zum Verwalten von Apps und auch am Ende dieses Tutorials angelangt. Wir hoffen, dass es Ihnen gefallen hat und Sie viel gelernt haben. Sie können uns jederzeit Feedback senden und sollten auch in Zukunft vorbeischauen, da wir in nächster Zeit weitere Inhalte hinzufügen werden. Wenn Sie ausführliche Informationen suchen, finden Sie diese in der [PowerApps-Dokumentation](https://docs.microsoft.com/powerapps/). 
 

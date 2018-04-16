@@ -1,0 +1,1 @@
+Die Features der Vorschauversion sind nicht für Produktionszwecke gedacht und funktionieren möglicherweise nur eingeschränkt. Diese Features sind vor dem offiziellen Release verfügbar, damit Kunden einen frühzeitigen Zugriff erhalten und Feedback geben können.

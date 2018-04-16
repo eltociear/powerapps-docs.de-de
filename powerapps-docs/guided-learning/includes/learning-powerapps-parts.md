@@ -4,6 +4,7 @@ Im ersten Thema dieses Kurses für „Geführtes Lernen“ haben Sie die Hauptko
 * **PowerApps Studio** – Erstellen von leistungsstarken Apps mit einfach zu verwendenden visuellen Tools
 * **PowerApps Mobile** – Ausführen von Apps auf Windows-, iOS- und Android-Geräten
 * **PowerApps Admin Center** – Verwalten von PowerApps-Umgebungen und anderen Komponenten
+* **Common Data Service für Apps:** Integrieren von Geschäftsdaten mit dem Common Data Model
 
 Wir erwarten nicht, dass Sie viel Zeit darauf verwenden zu verstehen, was PowerApps eigentlich *ist*, es ist aber vielleicht hilfreich, ein wenig mehr ins Detail zu gehen.
 
@@ -33,6 +34,11 @@ Wenn Sie Apps erstellen, arbeiten Sie in erster Linie hiermit. Sie können Ihre 
 Das **PowerApps Admin Center** ist der zentrale Ort zum Verwalten von PowerApps für eine Organisation. Hier definieren Sie verschiedene **Umgebungen**, die Apps, Datenverbindungen und andere Elemente enthalten. Im Admin Center erstellen Sie außerdem Common Data Service-Datenbanken und verwalten Berechtigungen und Datenrichtlinien.
 
 ![PowerApps Admin Center](./media/learning-powerapps-parts/powerapps-admin-center.png)
+
+### <a name="microsoft-common-data-service-for-apps"></a>Microsoft Common Data Service für Apps
+**Common Data Service für Apps** erleichtert die Integration von Geschäftsdaten aus mehreren Quellen. Dieser Dienst umfasst das **Common Data Model**, das eine Vielzahl von **Entitäten** enthält, die in Anwendungen und Geschäftsprozessen verwendet werden. Der Dienst speichert die Daten skalierbar und zuverlässig und macht sie verfügbar, sodass sie von verschiedenen Anwendungen verwendet werden können. Bei diesen Anwendungen kann es sich um Apps handeln, die Sie in PowerApps, Dynamics 365, anderen Microsoft-Anwendungen oder Anwendungen von Drittanbietern erstellen. Die folgende Abbildung zeigt einen Ausschnitt einer Entität in web.powerapps.com.
+
+![Entität „Contact“ in PowerApps](./media/learning-powerapps-parts/powerapps-contact.png)
 
 Im nächsten Thema werden wir die verknüpften Technologien vorstellen, die von PowerApps verwendet werden, um ein leistungsfähiges Ökosystem für die App-Entwicklung bereitzustellen.
 
