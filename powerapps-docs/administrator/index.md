@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: dbd1ee62b6839597c849db3486f11129a002a200
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d11c3fde5f8cf6d6c5e4a1f9e8a6c136433e6805
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="administer-powerapps-overview"></a>Übersicht zum Verwalten von PowerApps
-Die Verwaltung von PowerApps, Microsoft Flow und Common Data Service erfolgt über das [PowerApps-Admin Center]([https://admin.powerapps.com).
+# <a name="whats-the-role-of-a-powerapps-administrator"></a>Welche Rolle spielt ein PowerApps-Administrator?
+Die Verwaltung von PowerApps, Microsoft Flow und Common Data Service erfolgt über das [PowerApps Admin Center]([https://admin.powerapps.com).
 
 ![](./media/index/admin-center.png)
 
-Eine Organisation, bei der PowerApps, Microsoft Flow und Common Data Service eingeführt werden, beginnt mit dem Administrator. Als Administrator müssen Sie sich zu Beginn fragen, wie Sie die Daten Ihrer Organisation schützen können. Auf welche Daten kann über diese Dienste zugegriffen werden? Gibt es bewährte Methoden, die befolgt werden können? Sie müssen das Sicherheitsmodell von PowerApps verstehen und entscheiden, wie Sie den Zugriff auf Daten steuern. Sobald Sie dafür Lösungen gefunden haben, sollten Sie wissen, wie Sie die Verwendung dieser Dienste durch Benutzer überwachen und verwalten können.
+Die Entwicklung einer Organisation, bei der PowerApps, Microsoft Flow und Common Data Service für Apps eingeführt werden, beginnt mit dem Administrator. Als Administrator müssen Sie sich zu Beginn fragen, wie Sie die Daten Ihrer Organisation schützen können. Auf welche Daten kann über diese Dienste zugegriffen werden? Gibt es bewährte Methoden, die befolgt werden können? Sie müssen das Sicherheitsmodell von PowerApps verstehen und entscheiden, wie Sie den Zugriff auf Daten steuern. Sobald Sie dafür Lösungen gefunden haben, sollten Sie wissen, wie Sie die Verwendung dieser Dienste durch Benutzer überwachen und verwalten können.
 
 Wenn Sie die Steuerung und Sichtbarkeit unter Kontrolle haben, können Sie sich der Entwicklung widmen. Einzelbenutzer und Teams können selbstständig Apps entwickeln. Wie können Sie jedoch Lösungen für Ihre gesamte Organisation zentral bereitstellen? Und wie orchestrieren Sie Updates und identifizieren bzw. beheben Probleme?
 
