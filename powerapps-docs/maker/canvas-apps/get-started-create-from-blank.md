@@ -4,8 +4,8 @@ description: Erstellen Sie eine App von Grund auf, indem Sie jedes UI-Element un
 services: ''
 suite: powerapps
 documentationcenter: na
-author: karthik-1
-manager: anneta
+author: AFTOwen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -14,18 +14,15 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2016
-ms.author: sharik
-ms.openlocfilehash: d530fb5f77f00cb37322383a3817e9c38533ca1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: efc965d607198ed6366f3390960ccdf44b2ea210
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="create-an-app-from-scratch"></a>App von Grund auf neu erstellen
 Erstellen Sie Ihre eigene App von Grund auf neu mithilfe einer Vielzahl von Datenquellen, wobei Sie später noch weitere Quellen hinzufügen können, wenn Sie möchten. Geben Sie die Darstellung und das Verhalten jedes UI-Elements so an, dass Sie das Ergebnis für Ihre genauen Ziele und Ihren Workflow optimieren können. Dieser Ansatz ist weitaus zeitaufwendiger als [eine App automatisch zu generieren](get-started-create-from-data.md), aber erfahrene App-Entwickler können die beste App für ihre Anforderungen erstellen.
-
-> [!NOTE]
-> Dieses Thema wurde für PowerApps Studio für Windows verfasst, die Schritte sind jedoch ähnlich, wenn Sie [PowerApps in einem Browser öffnen](create-app-browser.md).
 
 Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen:
 
@@ -36,7 +33,9 @@ Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder 
 ![Bildschirm, auf dem ein Benutzer Daten hinzufügen oder aktualisieren kann](./media/get-started-create-from-blank/changescreen-final.png)
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Sie können dieses Tutorial zur allgemeinen Information verwenden oder den hier aufgeführten Schritten exakt folgen.
+Sie können Ihre eigene Excel-Datei verwenden und dieses Tutorial nur für allgemeine Konzepte durchsehen. Die Daten in der Excel-Datei müssen jedoch als Tabelle formatiert sein. Weitere Informationen finden Sie unter [Formatieren einer Tabelle in Excel](how-to-excel-tips.md).
+
+Damit Sie die folgenden Schritte genau ausführen können, erstellen Sie zunächst eine Excel-Datei mit diesen Beispieldaten.
 
 1. Kopieren Sie diese Daten, und fügen Sie sie in eine Excel-Datei ein.
 
@@ -51,7 +50,7 @@ Sie können dieses Tutorial zur allgemeinen Information verwenden oder den hier 
 
 2. Formatieren Sie diese Daten als Tabelle mit dem Namen **Schedule**, sodass die Informationen von PowerApps analysiert werden können.
 
-    Weitere Informationen finden Sie unter [Erstellen oder Löschen einer Excel-Tabelle](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664).
+    Weitere Informationen finden Sie unter [Formatieren einer Tabelle in Excel](how-to-excel-tips.md).
 
 3. Speichern Sie die Datei unter dem Namen **eventsignup.xls**, und laden Sie sie dann in ein [Cloud-Speicherkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive hoch.
 
