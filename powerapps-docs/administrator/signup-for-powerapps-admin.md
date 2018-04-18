@@ -4,7 +4,7 @@ description: Führen Sie diese Schritte aus, um sich für PowerApps als Administ
 services: powerapps
 suite: powerapps
 documentationcenter: na
-author: jamesol-msft
+author: manasmams
 manager: anneta
 editor: ''
 tags: ''
@@ -14,12 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
-ms.author: jamesol
-ms.openlocfilehash: af0d7bad79aea3443f4813945e0cc369ca0b8640
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: manasma
+ms.openlocfilehash: 43d39abbd78723202efd756edf6d070724e3157e
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>Erwerb von PowerApps für Ihre Organisation
 In diesem Artikel erfahren Sie, wie Sie PowerApps für Ihre Organisation als Administrator erwerben können. Sie können PowerApps direkt über die PowerApps-Website, über das Office 365 Admin Center oder über Ihren Microsoft-Vertreter oder Partner erwerben. Dieser Artikel behandelt die für PowerApps Plan 1 oder Plan 2 verfügbaren Testoptionen und erläutert dann den Erwerb von PowerApps Plan 1 oder Plan 2 als Organisation. Weitere Informationen finden Sie unter [PowerApps in your organization Q&A (PowerApps in Ihrer Organisation F&A)](signup-question-and-answer.md).
@@ -49,7 +49,7 @@ Sie können PowerApps-Abonnements für Ihr Unternehmen im [Office 365 Admin Cent
 >
 > * Wenn Sie sich mit einem Office 365-Abonnement bei PowerApps anmelden, bevor diese Änderung implementiert wurde, werden Sie aufgefordert, sich für eine kostenlose PowerApps Plan 2-Testversion zu registrieren.
 > * Registrieren Sie sich ruhig für die Testversion, wenn Sie PowerApps ausprobieren möchten, bevor das Update Ihres Office 365-Abonnements erfolgt.  
-> * Seien Sie sich jedoch bitte bewusst, dass die Testlizenz möglicherweise Features von PowerApps enthält, die nach dem Ablauf der Testversion nach 90 Tagen nicht in Ihrem Office 365-Abonnement enthalten sind.  Unter [PowerApps-Preise][2] erfahren Sie, welche Funktionen in Ihrem Office 365-Abonnement enthalten sind.
+> * Seien Sie sich jedoch bitte bewusst, dass die Testlizenz möglicherweise Features von PowerApps enthält, die nach dem Ablauf der Testversion nach 30 Tagen nicht in Ihrem Office 365-Abonnement enthalten sind.  Unter [PowerApps-Preise][2] erfahren Sie, welche Funktionen in Ihrem Office 365-Abonnement enthalten sind.
 
 
 ### <a name="purchase-a-subscription-trial"></a>Erwerb einer Abonnementtestversion
@@ -81,15 +81,15 @@ Sie können PowerApps-Abonnements für Ihr Unternehmen im [Office 365 Admin Cent
 5. Geben Sie die Anzahl der Lizenzen ein, die Sie hinzufügen möchten, und wählen Sie dann **Jetzt auschecken** oder **In den Einkaufswagen** aus.
 
    > [!NOTE]
-> Sie können später bei Bedarf weitere Lizenzen hinzufügen.
-   >
+   > Sie können später bei Bedarf weitere Lizenzen hinzufügen.
+
 
 6. Geben Sie die erforderlichen Informationen in den Auscheck-Flow ein,
 
     Unter **Abrechnung > Abonnements** wird **Microsoft PowerApps Plan 1** oder **Microsoft PowerApps Plan 2** aufgelistet. Wenn Sie später entscheiden, dass Sie weitere Lizenzen hinzufügen möchten, kehren Sie zu **Abonnements hinzufügen** zurück, und wählen Sie dann **Lizenzanzahl ändern** aus.
 
 ## <a name="add-ons"></a>Add-Ons
-Diese sind in Kürze verfügbar, werden aber noch nicht unterstützt.
+Diese werden noch nicht unterstützt.
 
 ## <a name="see-also"></a>Siehe auch
 [PowerApps in your organization Q&A (PowerApps in Ihrer Organisation Q&A)](signup-question-and-answer.md)  

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 1747eeb669411e1069d9767d590866d8a4e6eecb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 4b71f931aa3e8263166d52b68ba375917405c2b8
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="environments-overview"></a>Umgebungen – Übersicht
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Umgebungen dienen außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. In welcher Weise Sie Umgebungen nutzen, hängt von Ihrer Organisation und den Apps ab, die Sie erstellen möchten. Beispiel:
@@ -97,39 +97,20 @@ Ob Sie Umgebungen erstellen können, wird durch Ihre Lizenz bestimmt.
 
 | Lizenz | Die Erstellung von Umgebungen ist zulässig |
 | --- | --- |
-| PowerApps P2 |√ |
-| PowerApps P2-Testversion |√ |
+| PowerApps P2 |√ (zwei Produktions- und zwei Testumgebungen)|
+| PowerApps P2-Testversion |√ (zwei Testumgebungen)|
 | PowerApps P1 |x |
 | PowerApps P1-Testversion |x |
 | Dynamics 365-Pläne |x |
 | Office 365-Pläne |x |
 | Dynamics 365 Apps und Teams-Pläne |x |
 
-Jeder Benutzer kann bis zu zwei Testumgebungen erstellen. PowerApps P2 kann außerdem bis zu zwei Produktionsumgebungen erstellen.
 
 ### <a name="where-can-environments-be-created"></a>Wo können Umgebungen erstellt werden?
 Neue Umgebungen können auf [PowerApps.com][2] und im [PowerApps Admin Center][1] erstellt werden. Wenn Sie eine Umgebung erstellen, werden Sie der Umgebungsadministratorrolle für diese Umgebung automatisch hinzugefügt. Die Anzahl der Umgebungen, an denen Sie als Mitglied der Umgebungsadministrator- oder Umgebungserstellerrolle teilnehmen können, ist nicht beschränkt. Weitere Informationen zu Umgebungen finden Sie unter [Administer environments in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md). Anleitungen zum Erstellen einer Umgebung finden Sie unter [Create an environment (Erstellen einer Umgebung)](create-environment.md).
 
 ![](./media/environments-overview/CreateEnvironmentDialog-New.png)
 
-## <a name="what-will-change-for-powerapps-preview-users"></a>Was ändert sich für Benutzer der PowerApps-Vorschau?
-Benutzer, die an der PowerApps-Vorschau teilgenommen haben, werden mit der Einführung von Umgebungen einige Änderungen an der Benutzeroberfläche feststellen.  In der folgenden Tabelle ist aufgelistet, was sich für Benutzer in den USA und Benutzer außerhalb der USA ändert:
-
-| User | Abläufe |
-| --- | --- |
-| Benutzer der Vorschau, die eine Common Data Service-Datenbank erstellt haben |Sie sehen eine Umgebung mit der Bezeichnung „{Ihr Name}s Umgebung“, die Ihre Common Data Service-Datenbank aus der Vorschau und alle darauf aufbauenden Apps enthält.  Sie werden der Umgebungserstellerrolle und der Umgebungsadministratorrolle für die Umgebung und als Datenbankbesitzer der Datenbank hinzugefügt. Mit dem Erreichen der allgemeinen Verfügbarkeit von PowerApps nehmen wir ein Upgrade der Metadaten des Common Data Service vor. Diese Änderung wirkt sich für Sie so aus, dass Sie nach wie vor Entitäten und Apps verwenden können, die Sie bereits auf der Common Data Service-Datenbank aus der Vorschau erstellt haben; Sie können in dieser Datenbank jedoch keine Felder oder Entitäten mehr erstellen. Wir veröffentlichen in Kürze Anleitungen zum Erstellen einer Umgebung mit einer Datenbank, die die Metadaten mit Upgrade enthält, und zum Migrieren Ihrer Apps in diese Umgebung. <br> Wenn eine der Apps, die auf Ihrer Common Data Service-Datenbank aus der Vorschau aufbaut, außerdem einen benutzerdefinierten Connector als Datenquelle verwendet, ist sie vorübergehend in dieser Umgebung nicht funktionsfähig, da alle benutzerdefinierten Connectors zur Standardumgebung migriert werden. Sie müssen den benutzerdefinierten Connector in dieser Umgebung neu erstellen, um betroffene Apps zu reparieren. |
-| Benutzer der Vorschau in den USA |Die folgenden Ressourcen, die Sie im Vorschauzeitraum von PowerApps erstellt haben, stehen in der Standardumgebung Ihres Mandanten zur Verfügung:<br>– Alle Apps, die Sie erstellt haben (mit Ausnahme der Apps, die eine Verbindung mit einer Common Data Service-Datenbank aus der Vorschau herstellen)<br>– Alle von Ihnen erstellten Verbindungen und benutzerdefinierten Connectors<br>– Alle von Ihnen installierten lokalen Datengateways |
-| Benutzer der Vorschau außerhalb der USA |Über die Standardumgebung hinaus sehen Sie eine Umgebung mit der Bezeichnung „{Azure AD-Mandant} (aus Vorschau)“, die folgende Ressourcen enthält, die Sie im Vorschauzeitraum von PowerApps erstellt haben:<br>– Alle Apps, die Sie erstellt haben (mit Ausnahme der Apps, die eine Verbindung mit einer Common Data Service-Datenbank aus der Vorschau herstellen)<br>– Alle von Ihnen erstellten Verbindungen und benutzerdefinierten Connectors<br>– Alle von Ihnen installierten lokalen Datengateways<br>Sie werden der Umgebungserstellerrolle dieser Umgebung hinzugefügt. |
-
-Ein *Benutzer der Vorschau* ist eine Person, die Microsoft PowerApps vor der allgemeinen Verfügbarkeit verwendet hat.
-
-Zwei Wochen nach dem Erreichen der allgemeinen Verfügbarkeit werden PowerApps-Umgebungen, die Vorschauinhalte enthalten, als schreibgeschützt gekennzeichnet (mit Ausnahme der Standardumgebung). Die vorhandenen Apps und Workflows in diesen Umgebungen funktionieren weiterhin, jedoch können Sie keine Apps oder Workflows mehr erstellen. Wir empfehlen Benutzern dieser Umgebungen dringend, ihre Inhalte in die Standardumgebung oder eine andere benutzerdefinierte Umgebung zu migrieren. Weitere Informationen zum Migrationsvorgang finden Sie in diesem Blog [Common Data Service Features Announcement (Ankündigung von Common Data Services-Funktionen)][3] (der im Lauf dieser Woche veröffentlicht wird).
-
-### <a name="example-environments-for-a-preview-user-in-us"></a>Beispielumgebungen für einen Benutzer der Vorschau in den USA
-![](./media/environments-overview/USuser1.png)
-
-### <a name="example-environments-for-a-preview-user-not-in-us"></a>Beispielumgebungen für einen Benutzer der Vorschau außerhalb der USA
-![](./media/environments-overview/non-USuser1.png)
 
 ## <a name="managing-environments-for-your-organization"></a>Verwalten von Umgebungen für Ihre Organisation
 Im PowerApps-Admin Center können Sie die Umgebungen, die Sie erstellt haben, und Umgebungen, denen Sie in der Rolle „Umgebungsadministrator“ hinzugefügt wurden, verwalten. Im Admin Center können Sie alle Verwaltungsaktionen für eine Umgebung ausführen, einschließlich der folgenden:

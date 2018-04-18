@@ -14,20 +14,24 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 6556e16fef3908a77be02f270fdb25f2f01ed4b4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a2bbcead313961e064a57d2ea567b5596ece4f7a
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>Generieren einer App aus Excel in PowerApps
 In diesem Artikel generieren Sie Ihre erste App automatisch in PowerApps, indem Sie Daten aus einer Excel-Tabelle verwenden. Sie wählen eine Excel-Datei aus, generieren eine App und führen die generierte App dann aus. Jede generierte App enthält Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Details der Datensätze sowie zum Erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 
 
 Die Excel-Datei muss sich in einem Cloudspeicherkonto (z.B. OneDrive, Google Drive oder Dropbox) befinden. In diesem Artikel wird „OneDrive for Business“ verwendet.
 
-Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) in Excel herunter, und speichern Sie diese in Ihrem [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md), um diesem Artikel zu folgen. Sie können alternativ eine eigene Excel-Datei verwenden, wenn die Daten [als Tabelle formatiert sind](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664). 
+Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
-Wenn Sie über keine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+## <a name="prerequisites"></a>Voraussetzungen ##
+Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) in Excel herunter, und speichern Sie diese in Ihrem [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md), um diesem Artikel genau zu folgen.
+
+> [!IMPORTANT]
+> Sie können eine eigene Excel-Datei verwenden, dafür müssen die Daten jedoch als Tabelle formatiert sein. Weitere Informationen finden Sie unter [Format a table (Formatieren einer Tabelle)](how-to-excel-tips.md). 
 
 ## <a name="generate-the-app"></a>Generieren der App
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an.

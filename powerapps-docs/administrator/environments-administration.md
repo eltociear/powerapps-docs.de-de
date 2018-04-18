@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 0a6080b7ceb14de14b7ad6ae2f851843bac0c73b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c11c1d2122cf4306aede621e3c98a95a6ec9a967
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="administer-environments-in-powerapps"></a>Verwalten von Umgebungen in PowerApps
 Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, und Umgebungen, denen Sie in den Rollen „Umgebungsadministrator“ oder „Systemadministrator“ hinzugefügt wurden, verwalten. Über das Admin Center können Sie folgende administrative Aktionen ausführen:
@@ -47,10 +47,10 @@ Sie müssen folgende Rolle aufweisen, um eine Umgebung im PowerApps Admin Center
 
 * die globale Administratorrolle Ihres Azure AD- oder Office 365-Mandanten.
 
-Sie benötigen auch PowerApps Plan 2 oder Flow Plan 2, um auf das Admin Center zugreifen zu können. Weitere Informationen finden Sie auf der [Seite mit den PowerApps-Preisen][3].
+Außerdem benötigen Sie entweder eine Lizenz von PowerApps-Plan 2 oder Microsoft Flow-Tarif 2, um auf das Admin Center zugreifen zu können. Weitere Informationen finden Sie auf der [Seite mit den PowerApps-Preisen][3].
 
 > [!IMPORTANT]
-> Änderungen, die Sie im PowerApps Admin Center vornehmen, wirken sich auf das [Flow Admin Center][4] aus und umgekehrt.
+> Änderungen, die Sie im PowerApps Admin Center vornehmen, wirken sich auf das [Microsoft Flow Admin Center][4] aus und umgekehrt.
 
 ## <a name="create-an-environment"></a>Erstellen einer Umgebung
 Anleitungen zum Erstellen einer Umgebung finden Sie unter [Quickstart: Create an environment (Schnellstart: Erstellen einer Umgebung)](create-environment.md).
@@ -66,7 +66,7 @@ Wenn Sie ein Mitglied der globalen Administratorrolle Ihrer Azure AD oder Ihres 
 1. Öffnen Sie das [PowerApps Admin Center][1], suchen Sie die umzubenennende Umgebung in der Liste, und klicken oder tippen Sie darauf.
 
     ![](./media/environment-admin/environment-list-updated3.png)
- 
+
 2. Klicken oder tippen Sie auf **Details**.
 
     ![](./media/environment-admin/environment-rename-details-2.png)
@@ -175,26 +175,57 @@ Daten des Unternehmens müssen geschützt werden, damit sie nicht für ein Publi
 ![](./media/environment-admin/data-policies.png)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-### <a name="how-many-environments-can-i-create"></a>Wie viele Umgebungen kann ich erstellen?
-Je nach Lizenz kann jeder Benutzer jeweils bis zu zwei Testumgebungen und Produktionsumgebungen erstellen.
+### <a name="how-many-environments-and-databases-can-i-create"></a>Wie viele Umgebungen und Datenbanken kann ich erstellen?
+Je nach Lizenz können Sie bis zu zwei Testumgebungen und zwei Produktionsumgebungen erstellen. Weitere Informationen finden Sie [hier](environments-overview.md#creating-an-environment). Je nach Lizenz kann jeder Benutzer Datenbanken für jeweils bis zu zwei Testumgebungen und Produktionsumgebungen zur Verfügung stellen. 
 
-### <a name="how-many-databases-can-i-provision"></a>Wie viele Datenbanken kann ich bereitstellen?
-Je nach Lizenz kann jeder Benutzer Datenbanken für jeweils bis zu zwei Testumgebungen und Produktionsumgebungen zur Verfügung stellen. Dem Benutzer muss in der Umgebung die Rolle **Umgebungsadministrator** zugewiesen sein.
+### <a name="which-license-includes-common-data-service"></a>Welche Lizenz schließt Common Data Service mit ein?
+PowerApps Plan 2.  Auf der [Seite mit den PowerApps-Preisen][3] finden Sie ausführliche Informationen zu allen Plans, die diese Lizenz enthalten.
+
+### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Beim Versuch, eine neue Umgebung zu erstellen, wird ein Fehler ausgelöst. Wie kann ich dieses Problem lösen?
+Möglicherweise erhalten Sie die folgende Fehlermeldung: „Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment. (Entweder unterstützt Ihr Plan die ausgewählte Art von Umgebung nicht, oder Sie haben die Grenze für diese Art von Umgebung erreicht.)“ Dafür kann einer dieser zwei Gründe verantwortlich sein:
+
+1. Sie haben das Kontingent zum Erstellen einer bestimmten Art von Umgebung bereits erreicht. Angenommen, Sie erstellen eine Testumgebung und erhalten diese Fehlermeldung. Das bedeutet, dass Sie bereits zwei Testumgebungen bereitgestellt haben. Sie können alle Umgebungen im [PowerApps Admin Center][1] sehen.
+Wenn Sie möchten, können Sie eine vorhandene Umgebung dieser bestimmten Art löschen und eine neue Umgebung erstellen. Sie sollten sich jedoch vergewissern, dass Sie dabei Ihre Daten, Apps, Flows und andere Ressourcen, die beibehalten werden sollen, nicht verlieren.
+
+2. Sie verfügen über kein Kontingent zum Erstellen dieser bestimmten Art von Umgebung. Überprüfen Sie [hier](environments-overview.md#creating-an-environment), welche Art von Umgebung Sie erstellen können.
+
+Wenn Sie andere Fehlermeldungen erhalten oder weitere Fragen haben, nehmen Sie [hier][5] Kontakt mit uns auf.
+
+### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Beim Versuch, eine Datenbank in einer Umgebung zu erstellen, wird ein Fehler ausgelöst. Wie kann ich dieses Problem lösen?
+In den folgenden Szenarios können Sie einen Fehler beim Erstellen einer Datenbank erhalten:
+
+1. **Standardumgebung**: Das Erstellen einer Datenbank wird derzeit nicht in einer Standardumgebung des Mandanten unterstützt. 
+
+2. **Umgebung zur individuellen Verwendung**: Wenn Sie sich für den PowerApps-Community-Plan registrieren, erhalten Sie eine Umgebung für Ihre eigene Verwendung. Wenn Sie die Datenbank noch nicht erstellt haben, können Sie zu diesem Zeitpunkt keine Datenbank in der Umgebung zur individuellen Verwendung bereitstellen. 
+
+3. **Umgebung in einer anderen Region, als die Region Ihres AAD-Mandanten**: Derzeit können Sie eine Datenbank nur in den Umgebungen bereitstellen, die in der Region Ihres Azure Active Directory-Mandanten erstellt wurden. Das Bereitstellen einer Datenbank in anderen Regionen soll in naher Zukunft verfügbar sein. Vergewissern Sie sich also, dass Ihre Region mit der Region des Mandanten übereinstimmt, wenn Sie eine Datenbank darin erstellen möchten.
+
+4. **Erstellen von Datenbanken, die in bestimmten Regionen nicht unterstützt werden**: Es gibt bestimmte Regionen, in denen das Erstellen von Datenbanken noch nicht verfügbar ist. Zum Beispiel Länder in Südamerika. Wenn der Hauptstandort Ihres Mandanten Südamerika ist, können Sie derzeit keine Datenbanken in Umgebungen bereitstellen. 
+    
+Es wird daran gearbeitet, alle der oben genannten Szenarios zu ermöglichen.
+Wenn Sie andere Fehlermeldungen erhalten oder weitere Fragen haben, nehmen Sie [hier][5] Kontakt mit uns auf.
+
+### <a name="when-will-my-trial-environment-expire"></a>Wann läuft meine Testumgebung ab?   
+Testumgebungen laufen 30 Tage nach der Erstellung ab. Wenn Sie nicht möchten, dass Ihre Umgebung abläuft, gibt es Möglichkeiten, diese in eine Produktionsumgebung zu konvertieren. Diese Funktion wird bald verfügbar sein und bis dann laufen Testumgebungen nicht ab.
+
+### <a name="does-my-current-database-created-with-previous-version-of-the-common-data-service-also-gets-counted-in-the-quota"></a>Wird meine aktuelle Datenbank (die mit einer vorherigen Version von Common Data Service erstellt wurde) ebenfalls zum Kontingent gezählt?
+Wenn Sie bereits über eine Datenbank verfügt haben (die in einer vorherigen Version von Common Data Service erstellt wurde), wird diese zum Kontingent für Produktionsumgebungen gezählt. Wenn Sie nun eine Datenbank in einer Umgebung erstellen (die vor dem 15. März 2018 erstellt wurde), wird diese ebenfalls als Produktionsumgebung gezählt.
 
 ### <a name="can-i-rename-an-environment"></a>Kann ich eine Umgebung umbenennen?
 Ja, diese Funktionalität ist über das PowerApps Admin Center verfügbar. Weitere Informationen finden Sie unter [Verwaltung von Umgebungen](environments-administration.md#rename-your-environment).
 
 ### <a name="can-i-delete-an-environment"></a>Kann ich eine Umgebung löschen?
 Ja, diese Funktionalität ist über das PowerApps Admin Center verfügbar. Weitere Informationen finden Sie unter [Verwaltung von Umgebungen](environments-administration.md#delete-your-environment).
+Beachten Sie, dass Produktionsumgebungen mit einer Datenbank derzeit nicht gelöscht werden können (in der neuesten Version von Common Data Service). Diese Funktion wird bald verfügbar sein.
 
 ### <a name="as-an-environment-admin-can-i-view-and-manage-all-resources-apps-flows-apis-etc-for-an-environment"></a>Kann ich als Umgebungsadministrator für eine Umgebung alle Ressourcen (Apps, Flows, APIs usw.) anzeigen und verwalten?
 Ja, die Möglichkeit zum Anzeigen der Apps und Flows für eine Umgebung ist im PowerApps Admin Center verfügbar. Unter [Anzeigen von Apps](admin-view-apps.md) finden Sie weitere Informationen.
 
-### <a name="which-license-includes-common-data-service"></a>Welche Lizenz schließt Common Data Service mit ein?
-PowerApps Plan 2.  Auf der [Seite mit den PowerApps-Preisen][3] finden Sie ausführliche Informationen zu allen Plans, die diese Lizenz enthalten.
+
 
 <!--Reference links in article-->
 [1]: https://admin.powerapps.com
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
+[5]: https://go.microsoft.com/fwlink/?linkid=871628

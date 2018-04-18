@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 09ae4b56ea97ecabdc3d1835699c27abb410e0bd
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 307951163c4291ff29d8fe0bdec9237e0bbbe0e4
+ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="manage-apps-created-in-your-organization"></a>Verwalten von in Ihrer Organisation erstellten Apps
 Wenn Sie ein Umgebungsadministrator, ein globaler Office 365-Administrator oder ein Azure Active Directory-Mandantenadministrator sind, können Sie die Apps verwalten, die in Ihrer Organisation erstellt wurden.
@@ -30,14 +30,14 @@ Wenn Sie ein Umgebungsadministrator, ein globaler Office 365-Administrator oder 
 * Anzeigen der von einer App verwendeten Datenquellen
 
 ## <a name="prerequisites"></a>Voraussetzungen
-* PowerApps-Plan 2 oder Flow-Tarif 2 Sie können sich alternativ auch für eine [kostenlose Testversion von PowerApps-Plan 2](https://web.powerapps.com/signup?redirect=marketing&email=) registrieren.
-* PowerApps-Umgebungsadministratorberechtigungen, globale Office 365-Administratorberechtigungen oder Azure Active Directory-Mandantenadministratorberechtigungen Weitere Informationen finden Sie unter [Environments administration in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md).
+* Entweder eine Lizenz von PowerApps-Plan 2 oder von Microsoft Flow-Tarif 2. Sie können sich alternativ auch für eine [kostenlose Testversion von PowerApps-Plan 2](https://web.powerapps.com/signup?redirect=marketing&email=) registrieren.
+* PowerApps-Umgebungsadministratorberechtigungen, globale Office 365-Administratorberechtigungen oder Azure Active Directory-Mandantenadministratorberechtigungen. Weitere Informationen finden Sie unter [Environments administration in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md).
 
 ## <a name="manage-an-app"></a>Verwalten einer App
 1. Melden Sie sich im Admin Center unter [https://admin.powerapps.com]([https://admin.powerapps.com) an.
 2. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und klicken oder tippen Sie dann auf die Umgebung, die die App enthält, die Sie verwalten möchten.
 
-    Wenn **Umgebungen** Ihnen im Navigationsbereich nicht angezeigt wird, bedeutet dies, dass Sie keine Lizenz für PowerApps-Plan 2, Flow-Tarif 2 oder die Testversion von PowerApps-Plan 2 besitzen.
+    Wenn **Umgebungen** Ihnen im Navigationsbereich nicht angezeigt wird, bedeutet dies, dass Sie keine Lizenz für PowerApps-Plan 2, Microsoft Flow-Tarif 2 oder die Testversion von PowerApps-Plan 2 besitzen.
 
     ![Datei > Freigeben](./media/admin-manage-apps/environment.png)
 3. Klicken oder tippen Sie auf der Registerkarte **Ressourcen** auf **Apps**, und klicken oder tippen Sie auf die App, die Sie verwalten möchten.
