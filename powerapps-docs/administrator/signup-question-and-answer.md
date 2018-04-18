@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 01614846f0b1172e23e2399aa0f1f03f646df84d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5d6db5bded909387b5bc4ef15dc0bf6c163bfa7a
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="manage-licenses-in-my-org"></a>Verwalten von Lizenzen in Ihrer Organisation
 In diesem Artikel wird beschrieben, wie Benutzer in Ihrer Organisation auf PowerApps zugreifen können und wie Sie den Zugriff auf den PowerApps-Dienst steuern können.
@@ -60,9 +60,9 @@ Wenn Ihr Unternehmen zudem die Verwendung von nur für die Organisation bestimmt
 
 ## <a name="administration-of-powerapps"></a>Verwaltung von PowerApps
 ### <a name="why-has-the-powerapps-icon-appeared-in-the-office-365-app-launcher"></a>Warum wird das PowerApps-Symbol im Office 365-App-Startfeld angezeigt?
-Wie im August angekündigt, ist Microsoft PowerApps nun ein grundlegender Teil der Office 365-Suite. Drei Monate nach dieser Ankündigung wurde Microsoft PowerApps als Dienst als Teil vorhandener Office 365-SKUs aktiviert. Da Benutzer weltweit nun Microsoft PowerApps verwenden können, wird es ab jetzt im App-Startfeld angezeigt. Weitere Informationen darüber, welche Office 365-SKUs nun PowerApps enthalten, finden Sie unter [Licensing overview (Übersicht über die Lizenzierung)](pricing-billing-skus.md).
+Microsoft PowerApps ist ein grundlegender Bestandteil der Office 365-Suite und wird als Dienst in einer vorhandenen Office 365-SKU aktiviert. Da Benutzer weltweit nun Microsoft PowerApps verwenden können, wird Microsoft PowerApps unter „Alle Apps“ im App-Startfeld angezeigt. Weitere Informationen darüber, welche Office 365-SKUs nun PowerApps enthalten, finden Sie unter [Licensing overview (Übersicht über die Lizenzierung)](pricing-billing-skus.md).
 
-Lesen Sie den folgenden Abschnitt, wenn Sie die PowerApps-Kachel standardmäßig aus dem App-Startfeld entfernen möchten.
+Lesen Sie den folgenden Abschnitt, wenn Sie die PowerApps-Kachel standardmäßig aus „Alle Apps“ entfernen möchten.
 
 ### <a name="how-do-i-remove-powerapps-from-existing-users"></a>Wie entferne ich PowerApps von vorhandenen Benutzern?
 Wenn einem Benutzer eine Lizenz für PowerApps Plan 1 oder PowerApps Plan 2 zugewiesen wurde, können Sie die folgenden Schritte ausführen, um die PowerApps-Lizenz für diesen Benutzer zu entfernen:

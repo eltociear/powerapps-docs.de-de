@@ -15,17 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: b58e99e4775ed5c18d3498864c6e652e814ddf19
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5bb7e4f27ed7ee0a30fb028d4d8dfd20a5fc250b
+ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste hochladen und löschen können.
 
 ## <a name="limitations"></a>Beschränkungen
 Für das Steuerelement für Anlagen gelten die folgenden temporären Einschränkungen:
+1. Das Herunterladen von Anlagen wird in Internet Explorer nicht unterstützt.
+
 1. Das Hochladen von Anlagen funktioniert nur mit SharePoint-Listen als Datenquellen.  Die Unterstützung für andere Datenquellen wird beginnend mit CDS schrittweise eingeführt.
 
 1. Die Funktionen zum Hochladen und Löschen funktionieren nur in Formularen.  Das Steuerelement für Anlagen wird im Bearbeitungsmodus deaktiviert angezeigt, wenn es sich nicht in einem Formular befindet.   Beachten Sie, dass der Endbenutzer das Formular speichern muss, um hinzugefügte und gelöschte Dateien im Back-End zu speichern.
