@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 08/18/2017
 ms.author: millopis
 ms.openlocfilehash: dafed76565a4bd3fb3e2822319d344f49376b4fc
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-power-query"></a>Problembehandlung in Power Query
 Wenn Sie Power Query zum Erstellen einer benutzerdefinierten Entität verwenden, die Daten aus externen Quellen enthält, wird möglicherweise folgender Fehler angezeigt:
