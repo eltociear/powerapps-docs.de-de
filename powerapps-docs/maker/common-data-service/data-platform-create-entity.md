@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 3/21/2018
 ms.author: clwesene
 ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Schnellstart: Erstellen einer benutzerdefinierten Entität
 Sie können eine benutzerdefinierte Entität zum Speichern von Daten erstellen, die spezifisch für Ihre Organisation sind. Sie können die Daten dann anzeigen, indem Sie eine App entwickeln, die auf die Entität verweist. Nachdem Sie eine Entität erstellt haben, können Sie [eines oder mehrere ihrer Felder erstellen oder bearbeiten](data-platform-manage-fields.md) und [Beziehungen zwischen Entitäten erstellen](data-platform-entity-lookup.md).
@@ -29,7 +29,7 @@ Diese Anleitung veranschaulicht das manuelle Erstellen einer benutzerdefinierten
 > Sehen Sie sich die [Entitätsreferenz](../../developer/common-data-service/reference/about-entity-reference.md) an, bevor Sie eine Entität erstellen. Diese Entitäten beschreiben typische Szenarios, wie z.B. Konten und Kontakte. Wenn eine dieser Entitäten Ihre Anforderungen sofort oder nach nur geringfügigen Änderungen erfüllt, können Sie Zeit sparen, indem Sie mit diesen Entität beginnen.
 
 ## <a name="create-an-entity"></a>Erstellen einer Entität
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
