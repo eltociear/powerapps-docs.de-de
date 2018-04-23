@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: cc068fc475643ae68e74d22981679dd9b038eb83
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Erstellen einer Common Data Service-Datenbank
 Mithilfe von Common Data Service als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von Common Data Service finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
@@ -57,7 +57,7 @@ Es gibt verschiedene Möglichkeiten zum Erstellen einer Datenbank:
 Wenn eine Datenbank erstellt wird, können die Benutzer, denen Umgebungsrollen zugewiesen sind, weiterhin diese Berechtigungen verwalten.  
     Benutzern mit der Rolle **Umgebungsadministrator** ist jetzt die Rolle **Systemadministrator** zugewiesen. Benutzer mit der Rolle **Umgebungsersteller** behalten diese Rolle.
 
-Sie können vordefinierten Rollen zusätzliche Benutzer zuweisen oder sogar [benutzerdefinierte Rollen][1] erstellen. Weitere Informationen finden Sie unter [Database Security (Datenbanksicherheit)](create-database.md).
+Sie können vordefinierten Rollen zusätzliche Benutzer zuweisen oder sogar [benutzerdefinierte Rollen][1] erstellen. Weitere Informationen finden Sie unter [Database Security (Datenbanksicherheit)](database-security.md).
 
 > [!NOTE]
 > Sobald die Datenbank erstellt wurde, werden sämtliche Sicherheitsgruppen, die dem Umgebungsadministrator oder der Umgebungserstellerrolle zugewiesen sind, nicht mehr berücksichtigt. Derzeit werden AAD-Sicherheitsgruppen beim Zuweisen von Berechtigungen in Datenbanken nicht unterstützt.
