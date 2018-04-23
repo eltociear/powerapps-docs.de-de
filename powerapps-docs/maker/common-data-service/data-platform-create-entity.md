@@ -15,10 +15,10 @@ ms.workload: na
 ms.date: 3/21/2018
 ms.author: clwesene
 ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Schnellstart: Erstellen einer benutzerdefinierten Entität
 Sie können eine benutzerdefinierte Entität zum Speichern von Daten erstellen, die spezifisch für Ihre Organisation sind. Sie können die Daten dann anzeigen, indem Sie eine App entwickeln, die auf die Entität verweist. Nachdem Sie eine Entität erstellt haben, können Sie [eines oder mehrere ihrer Felder erstellen oder bearbeiten](data-platform-manage-fields.md) und [Beziehungen zwischen Entitäten erstellen](data-platform-entity-lookup.md).
