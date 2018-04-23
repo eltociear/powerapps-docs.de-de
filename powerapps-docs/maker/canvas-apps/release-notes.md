@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/21/2018
+ms.date: 04/09/2018
 ms.author: sharik
-ms.openlocfilehash: e9e5c156e9cb3ad47375be9a237a757a6db1158b
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
@@ -34,18 +34,20 @@ Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen
 
 **In Kürze:** Sobald die Features ausgeliefert werden, aktualisieren wir weiterhin die PDF-Datei zu den Versionshinweisen. Diese sind dann auch auf unserer Webseite verfügbar.
 
-## <a name="mar-21"></a>21. März
-1. Erstellen Sie [modellgesteuerte Apps](../model-driven-apps/model-driven-app-overview.md), die mit Ihrem Datenmodell und der Form Ihrer wichtigsten Geschäftsdaten und -prozesse in Common Data Service beginnt. Auf dieser Grundlage werden Formulare, Ansichten und andere Komponenten erstellt. Modellgesteuerte Apps generieren automatisch eine leistungsstarke UI, die geräteübergreifend reagiert.
-2. [Erstellen Sie eine Datenbank](../../administrator/create-database.md) für die aktuelle Version von Common Data Service in einer Umgebung.
-3. In Common Data Service für Apps ist nun Folgendes enthalten:
+## <a name="apr-9"></a>9. April
+* Schneiden Sie Steuerelemente, &mdash;einschließlich der Formate, Formeln und Eigenschaften&mdash;, für Apps in einem Webbrowser mit STRG+X aus, kopieren Sie sie (STRG+C), und fügen Sie sie ein (STRG+V).
 
+## <a name="mar-21"></a>21. März
+1. Erstellen Sie [modellgesteuerte Apps](../model-driven-apps/model-driven-app-overview.md), die mit Ihrem Datenmodell und der Form Ihrer wichtigsten Geschäftsdaten und -prozesse in Common Data Service für Apps beginnt. Auf dieser Grundlage werden Formulare, Ansichten und andere Komponenten erstellt. Modellgesteuerte Apps generieren automatisch eine leistungsstarke UI, die geräteübergreifend reagiert.
+2. [Erstellen Sie eine Datenbank](../../administrator/create-database.md) für die aktuelle Version von Common Data Service für Apps in einer Umgebung.
+3. CDS für Apps enthält nun Folgendes:
     - **Zusätzliche Datentypen** unterstützen komplexere Definitionen für Entitäten und sorgen für eine verbesserte Benutzerfreundlichkeit. (Gilt für Canvas-Apps und modellgesteuerte Apps)
-    - [Erstellen und bearbeiten Sie Entitäten](../common-data-service/data-platform-create-entity.md) direkt über die PowerApps-Website in Common Data Service für Apps. Die **Benutzerfreundlichkeit** wurde unter anderem durch die verbesserte Leistung, eine benutzerfreundlichere Benutzeroberfläche und hilfreiche Features wie die Inline-Erstellung von Optionen verbessert. (Gilt für Canvas-Apps und modellgesteuerte Apps)
-    - Erstellen Sie **serverseitige Geschäftsregeln** für das Überprüfen der Daten, die in Common Data Service für Apps eingegeben wurden. (Gilt für Canvas-Apps und modellgesteuerte Apps)
-    - Erstellen Sie **berechnete Felder und Rollupfelder** direkt über die PowerApps-Website in den Entitäten von Common Data Service für Apps. (Gilt für Canvas-Apps und modellgesteuerte Apps)  
-    - Entwickler können das **Software Development Kit** (SDK) von Common Data Service für Apps verwenden, um codebasierte Anpassungen für Common Data Service zu erstellen.
-    - Erfahrene Benutzer können über eine neue **OData-Web-API** auf die in Common Data Service für Apps gespeicherten Daten zugreifen.
-    - [Importieren Sie Daten](../common-data-service/data-platform-cds-newentity-pq.md) in Common Data Service mit **Power Query**. Verwenden Sie Power Query im Web, um Daten aus mehreren Quellen direkt in Common Data Service für Apps zu importieren.
+    - [Erstellen und bearbeiten Sie Entitäten](../common-data-service/data-platform-create-entity.md) direkt über die PowerApps-Website in CDS für Apps. Die **Benutzerfreundlichkeit** wurde unter anderem durch die verbesserte Leistung, eine benutzerfreundlichere Benutzeroberfläche und hilfreiche Features wie die Inline-Erstellung von Optionen verbessert. (Gilt für Canvas-Apps und modellgesteuerte Apps)
+    - **Erstellen Sie serverseitige Geschäftsregeln** für das Überprüfen der Daten, die in CDS für Apps eingegeben wurden. (Gilt für Canvas-Apps und modellgesteuerte Apps)
+    - **Erstellen Sie berechnete Felder und Rollupfelder** direkt über die PowerApps-Website in den Entitäten von CDS für Apps. (Gilt für Canvas-Apps und modellgesteuerte Apps)  
+    - Entwickler können das **Software Development Kit** (SDK) von Common Data Service für Apps verwenden, um codebasierte Anpassungen für Common Data Service für Apps zu erstellen.
+    - Erfahrene Benutzer können über eine neue **OData-Web-API** auf die in CDS für Apps gespeicherten Daten zugreifen.
+    - [Importieren Sie Daten](../common-data-service/data-platform-cds-newentity-pq.md) in CDS für Apps mithilfe von **Power Query**. Verwenden Sie Power Query im Web, um Daten aus mehreren Quellen direkt in CDS für Apps zu importieren.
 
 ## <a name="mar-5"></a>5. März
 1. [Anlagen](controls/control-attachments.md) in SharePoint-Listen hinzufügen (und löschen).
@@ -83,8 +85,3 @@ Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen
 
 ## <a name="nov-10"></a>10. November
 * Sie können in einer App [Regeln umbenennen](working-with-rules.md) und anzeigen, wenn sich ein ausgewähltes Steuerelement in der Regelbedingung befindet.
-
-## <a name="oct-30"></a>30. Oktober
-1. [Anzeigen aller Regeln](working-with-rules.md) in einer App, nicht nur der Regeln für das ausgewählte Steuerelement.
-2. Symbole hinzugefügt, die von App-Entwicklern am häufigsten gewünscht wurden.
-3. Verbesserte Leistung der Apps auf Android- und iOS-Geräten.
