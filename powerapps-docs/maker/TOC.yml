@@ -6,6 +6,12 @@
       href: signup-for-powerapps.md
     - name: Für den PowerApps-Communityplan registrieren
       href: dev-community-plan.md
+    - name: Neuerungen
+      href: ./canvas-apps/release-notes.md
+    - name: Häufige Probleme und Lösungen
+      href: ./canvas-apps/common-issues-and-resolutions.md
+    - name: Neue und aktuelle Webinare
+      href: ./canvas-apps/webinars-listing.md
 - name: Canvas-Apps
   href: ./canvas-apps/getting-started.md
   items:
@@ -25,13 +31,13 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: Aus Excel
               href: ./canvas-apps/get-started-create-from-data.md
-    - name: Tutorials
+    - name: Lernprogramme
       items:
         - name: Generierte Apps anpassen
           items:
             - name: Bildschirme zum Durchsuchen anpassen
               href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: Formulare anpassen
+            - name: Anpassen eines Formulars
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: Eine Karte anpassen
               href: ./canvas-apps/customize-card.md
@@ -123,12 +129,14 @@
               href: ./canvas-apps/add-scrolling-screen.md
             - name: Eine globale App erstellen
               href: ./canvas-apps/global-apps.md
-            - name: Erstellen barrierefreier Apps
+            - name: Erstellen einer zugänglichen App
               href: ./canvas-apps/accessible-apps.md
         - name: Ihre App verwalten
           items:
             - name: Einführung in powerapps.com
               href: ./canvas-apps/intro-maker-portal.md
+            - name: Mit Umgebungen arbeiten
+              href: ./canvas-apps/working-with-environments.md
             - name: App bearbeiten
               href: ./canvas-apps/edit-app.md
             - name: Ändern der Bildschirmgröße und -ausrichtung
@@ -195,21 +203,13 @@
           href: ./canvas-apps/connections-list.md
         - name: 'Systemanforderungen, Einschränkungen und Konfiguration'
           href: ./canvas-apps/limits-and-config.md
-    - name: Ressourcen
-      items:
-        - name: Mit Umgebungen arbeiten
-          href: ./canvas-apps/working-with-environments.md
-        - name: Neuerungen
-          href: ./canvas-apps/release-notes.md
-        - name: Häufige Probleme und Lösungen
-          href: ./canvas-apps/common-issues-and-resolutions.md
-        - name: Neue und aktuelle Webinare
-          href: ./canvas-apps/webinars-listing.md
 - name: Modellgesteuerte Apps
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
     - name: Übersicht von Beispiel-Apps
       href: ./model-driven-apps/overview-model-driven-samples.md
+    - name: Erstellen Ihrer ersten modellgesteuerten App
+      href: .//model-driven-apps/build-first-model-driven-app.md
     - name: Freigeben modellgesteuerter Apps
       href: ./model-driven-apps/share-model-driven-app.md
     - name: Für Entwickler
@@ -229,11 +229,11 @@
           href: ./common-data-service/custom-picklists.md
         - name: Eine Beziehung erstellen
           href: ./common-data-service/data-platform-entity-lookup.md
-        - name: Erstellen von Geschäftsregeln
+        - name: Erstellen einer Geschäftsregel
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: Eine benutzerdefinierte Entität löschen
           href: ./common-data-service/data-platform-delete-entity.md
-    - name: Tutorials
+    - name: Lernprogramme
       items:
         - name: Erstellen benutzerdefinierter Entitäten mit Komponenten
           href: ./common-data-service/create-custom-entity.md

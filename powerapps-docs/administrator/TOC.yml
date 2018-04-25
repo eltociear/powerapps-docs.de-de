@@ -38,3 +38,18 @@
       href: admin-manage-apps.md
     - name: Eine App zwischen Mandanten und Umgebungen verschieben
       href: environment-and-tenant-migration.md
+    - name: Reagieren auf DSR-Anforderungen von vom System generierten Protokollen
+      href: powerapps-gdpr-dsr-guide-systemlogs.md
+    - name: Reagieren auf DSR-Anforderungen von PowerApps-Kundendaten
+      href: powerapps-gdpr-dsr-guide.md
+      items:
+        - name: Reagieren auf eine Anforderung eines DSR-Exports
+          href: powerapps-gdpr-export-dsr.md
+        - name: Reagieren auf eine Anforderung eines DSR-Löschvorgangs
+          href: powerapps-gdpr-delete-dsr.md
+    - name: Reagieren auf DSR-Anforderungen von CDS für Apps-Kundendaten
+      href: common-data-service-gdpr-dsr-guide.md
+- name: Referenz
+  items:
+    - name: PowerShell-Unterstützung für PowerApps (Vorschau)
+      href: powerapps-powershell.md
