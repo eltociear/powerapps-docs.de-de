@@ -1,7 +1,6 @@
 ---
 title: Schnellstart für das Löschen einer benutzerdefinierten Entität und das Löschen von Daten | Microsoft-Dokumentation
 description: Schnellstart für das Löschen einer benutzerdefinierte Entität und das Löschen aller Daten
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,21 +8,20 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 399d3e8bac215df7612ac12d922dfe644dc59f96
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 971016233578c4eadf397d662a0ea74187548635
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-delete-a-custom-entity"></a>Schnellstart: Löschen einer benutzerdefinierten Entität
 Sie können benutzerdefinierte Entitäten, jedoch keine Standardentitäten löschen.
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 

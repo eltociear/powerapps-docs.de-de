@@ -1,25 +1,22 @@
 ---
 title: Bearbeiten einer App | Microsoft-Dokumentation
 description: Detaillierte Anleitungen zum Bearbeiten von Apps und zu Szenarien mit gesperrten Sitzungen
-services: ''
-suite: powerapps
 documentationcenter: na
 author: karthik-1
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: a71aa71ec80a60f2aec4ce179abcade3f9eef964
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 782674cd8d9bbcc81580302a9936bcf47de4b68b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-an-app-in-powerapps"></a>Bearbeiten einer App in PowerApps
 Sie können alle Apps bearbeiten, die Sie erstellt haben, deren Besitzer Sie sind oder für die Sie die Berechtigung **Bearbeiten** haben. Sie können Apps in PowerApps Studio für Web oder in PowerApps Studio für Windows bearbeiten. Wenn Sie versuchen, eine App zu bearbeiten, die an anderer Stelle zur Bearbeitung geöffnet ist, gibt eine Meldung Aufschluss darüber, ob Sie oder ein anderer Benutzer sie bereits geöffnet hat.

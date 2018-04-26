@@ -1,25 +1,22 @@
 ---
 title: Funktionen „If“ und „Switch“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „If“- und „Switch“ in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 04/24/2017
 ms.author: gregli
-ms.openlocfilehash: 9254eaf63d816fc8ac9890026f74bdeaeaa9b1a4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f4e5510224d5abc7a6d2ccaa286d08c8f170fa10
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>Die Funktionen „If“- und „Switch“ in PowerApps
 Bestimmt, ob eine beliebige Bedingung in einer Menge TRUE ist (**If**) oder ob das Ergebnis einer Formel mit einem beliebigen Wert in einer Menge übereinstimmt (**Switch**) und gibt anschließend ein Ergebnis zurück oder führt eine Aktion aus.
@@ -71,7 +68,7 @@ In den folgenden Beispielen wird ein **Schieberegler**-Steuerelement mit dem Nam
 | **Switch( Slider1.Value, 20, "Result1", 10, "Result2", 0, "Result3", "DefaultResult" )** |Der Wert des Schiebereglers stimmt mit keinem zu überprüfenden Wert überein.  Ein *DefaultResult* (Standardergebnis) wurde bereitgestellt, das zurückgegeben wird. |"DefaultResult" |
 
 ### <a name="branching-in-behavior-formulas"></a>Verzweigungen in Verhaltensformeln
-In den folgenden Beispielen enthält ein **[Text input](../controls/control-text-input.md)**-Steuerelement mit dem Namen **FirstName** den Wert „John“.
+In den folgenden Beispielen enthält ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement mit dem Namen **FirstName** den Wert „John“.
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
@@ -80,7 +77,7 @@ In den folgenden Beispielen enthält ein **[Text input](../controls/control-text
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |Der Wert von **FirstName.Text** wird mit „Carlos“, „Kirstin“ und „John“ (in dieser Reihenfolge) verglichen. Eine Übereinstimmung mit „John“ wird gefunden, weshalb die App zu **Screen3** navigiert. |**TRUE**<br><br>Die Anzeige wird in **Screen3** geändert. |
 
 ### <a name="step-by-step"></a>Schritt für Schritt
-1. Fügen Sie ein **[Text input](../controls/control-text-input.md)**-Steuerelement hinzu, und nennen Sie es **Text1**, wenn es diesen Namen nicht bereits standardmäßig hat.
+1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement hinzu, und nennen Sie es **Text1**, wenn es diesen Namen nicht bereits standardmäßig hat.
 2. Geben Sie in **Text1** den Wert **30** ein.
 3. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
    **If( Value(Text1.Text) < 20, "Viel mehr bestellen!", Value(Text1.Text) < 40, "Mehr bestellen!", Text1.Text )**

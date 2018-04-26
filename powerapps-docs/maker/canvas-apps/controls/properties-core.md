@@ -1,25 +1,22 @@
 ---
 title: Kerneigenschaften | Microsoft-Dokumentation
 description: Enthält Referenzinformationen zu den Eigenschaften „Disabled“, „Visible“ und „ReadOnly“.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: cad53141d6896ad71caaca77b7bf07fee2ac0600
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9631d197824b516f90d493c9db4aee75f3f7ce0d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="core-properties-in-powerapps"></a>Kerneigenschaften in PowerApps
 Konfigurieren Sie, ob der Benutzer ein Steuerelement sehen und damit interagieren kann.
@@ -27,7 +24,7 @@ Konfigurieren Sie, ob der Benutzer ein Steuerelement sehen und damit interagiere
 ### <a name="properties"></a>Eigenschaften
 **Default**: Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
-* Gilt für Steuerelemente des folgenden Typs: **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Dropdown](control-drop-down.md)**, **[Katalog](control-gallery.md)**, **[Listenfeld](control-list-box.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**und **[Umschalten](control-toggle.md)**.
+* Gilt für Steuerelemente des folgenden Typs: **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Dropdown](control-drop-down.md)**, **[Katalog](control-gallery.md)**, **[Listenfeld](control-list-box.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)** und **[Umschalten](control-toggle.md)**.
 
 **DelayOutput**: Wird auf „true“ festgelegt, um eine Aktion während der Texteingabe zu verzögern.
 

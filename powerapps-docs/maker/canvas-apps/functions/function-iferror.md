@@ -1,25 +1,22 @@
 ---
 title: IfError-Funktion | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die IfError-Funktion in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 03/21/2018
 ms.author: gregli
-ms.openlocfilehash: c0da6a00f1176c8f44db6e508cca92b0cbf99beb
-ms.sourcegitcommit: a9d33322228c398d29964429602dc3fe19fa67d2
+ms.openlocfilehash: 2bd8ba7dc9b764399165c75361215cee2edb4e7b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="iferror-function-in-powerapps"></a>IfError-Funktion in PowerApps
 Erkennt Fehler und stellt einen Alternativwert bereit oder führt eine Aktion aus.
@@ -39,7 +36,7 @@ Wenn alle Argumente für **IfError** zu einem Fehler führen, wird der Wert des 
 ## <a name="syntax"></a>Syntax
 **IfError**( *Wert*, *Ausweichformel1* [, *Ausweichformel2*, ... ] )
 
-* *Wert*: erforderlich. Ein oder mehrere Formeln, die auf einen Fehlerwert geprüft werden. 
+* *Value*: Erforderlich. Ein oder mehrere Formeln, die auf einen Fehlerwert geprüft werden. 
 * *Ausweichformel(n)*: erforderlich. Die auszuwertenden Formeln und zurückzugebenden Werte, wenn für vorherige Argumente ein Fehler zurückgegeben wurde.  Die *Ausweichargumente* werden nacheinander ausgewertet, bis ein Wert gefunden wird, der kein Fehlerwert ist.
 
 ## <a name="examples"></a>Beispiele

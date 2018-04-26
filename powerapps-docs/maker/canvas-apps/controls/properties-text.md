@@ -1,25 +1,22 @@
 ---
 title: Texteigenschaften | Microsoft-Dokumentation
 description: Enthält Referenzmaterial zu Eigenschaften wie „Text“, „Tooltip“ und „HintText“.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 6d79f5a93fd89de1c3994f43c285e9d96cb00af6
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1331cbbab185656929ebede7c804a8c3dfee52ab
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="text-properties-in-powerapps"></a>Texteigenschaften in PowerApps
 Konfigurieren Sie den für ein Steuerelement angezeigten Text in einer QuickInfo oder als Hinweis für Benutzer bei der Dateneingabe, und geben Sie andere textbezogene Merkmale an.
@@ -52,7 +49,7 @@ Konfigurieren Sie den für ein Steuerelement angezeigten Text in einer QuickInfo
 ## <a name="text-placement"></a>Textanordnung
 **Align**: Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
 
-* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Export](control-export-import.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe ](control-text-input.md)**und **[Timer](control-timer.md)**.
+* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Export](control-export-import.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe ](control-text-input.md)** und **[Timer](control-timer.md)**.
 
 **LineHeight**: Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
@@ -60,5 +57,5 @@ Konfigurieren Sie den für ein Steuerelement angezeigten Text in einer QuickInfo
 
 **VerticalAlign**: Die Position des Texts in einem Steuerelement in Relation zur vertikalen Mitte des Steuerelements.
 
-* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Export](control-export-import.md)**, **[Import ](control-export-import.md)**und **[Bezeichnung](control-text-box.md)**.
+* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Export](control-export-import.md)**, **[Import ](control-export-import.md)** und **[Bezeichnung](control-text-box.md)**.
 

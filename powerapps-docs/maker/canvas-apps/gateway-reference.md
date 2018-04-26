@@ -1,25 +1,22 @@
 ---
 title: Grundlegendes zu lokalen Datengateways | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Installation und Problembehandlung für lokale Datengateways
-services: ''
-suite: powerapps
 documentationcenter: na
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/20/2017
-ms.author: sharik
-ms.openlocfilehash: 1b17c7007ad87fa2a1801473a977fd8ec94ffdea
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 77e47b79ece6149f7d9068fc4092e09fbdca77d2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Grundlegendes zu lokalen Datengateways für Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration

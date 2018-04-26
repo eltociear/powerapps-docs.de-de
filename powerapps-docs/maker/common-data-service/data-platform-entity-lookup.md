@@ -1,7 +1,6 @@
 ---
 title: Schnellstart für Entitätsbeziehungen über das Nachschlagefeld | Microsoft-Dokumentation
 description: Schnellstart für das Erstellen einer Beziehung zwischen Entitäten durch Verwenden eines Nachschlagefelds
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 37450b6e9f43780deaed4ff34b005472501bdb23
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-relationship"></a>Schnellstart: Erstellen einer Beziehung
 Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Teachers** und eine Entität **Class**, und die Entität **Class** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Teachers**, um anzuzeigen, welcher Lehrer den Kurs gibt. Sie können ein Nachschlagefeld verwenden, um Daten aus der Entität **Teachers** anzuzeigen. Dies wird häufig als Nachschlagefeld bezeichnet.
@@ -35,7 +33,7 @@ Sie können mehrere Typen von Beziehungen zwischen zwei Entitäten (oder innerha
 
 Um eine Nachschlagebeziehung zu einer Entität hinzuzufügen, erstellen Sie unter der Registerkarte **Beziehungen** eine Beziehung, und geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 

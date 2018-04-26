@@ -1,8 +1,6 @@
 ---
 title: Schnellstart für das Hinzufügen von Daten zu einer Entität in Common Data Service mithilfe von Power Query | Microsoft-Dokumentation
 description: Schnellstart mit einer ausführlichen Anleitung zur Verwendung von Power Query zum Hinzufügen von Daten aus einer anderen Datenquelle zu einer neuen oder vorhandenen Entität in Common Data Service für Apps.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: 77906602fad6708857a6c34f44d1bc3c7c258f6c
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: e54553467714bad1f4bc17963f1011c0decc1963
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-add-data-to-an-entity-in-the-common-data-service-by-using-power-query"></a>Schnellstart: Hinzufügen von Daten zu einer Entität in Common Data Service mithilfe von Power Query
 In diesem Verfahren erstellen Sie eine Entität in [Common Data Service für Apps](data-platform-intro.md) und füllen diese mithilfe von Power Query mit Daten aus einem OData-Feed auf. Sie können die gleichen Techniken verwenden, um Daten unter anderem aus diesen lokalen Quellen und Onlinequellen zu integrieren:

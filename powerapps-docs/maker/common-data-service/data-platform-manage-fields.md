@@ -1,7 +1,6 @@
 ---
 title: 'Schnellstart: Verwalten von benutzerdefinierten Feldern in einer Entität | Microsoft-Dokumentation'
 description: Schnellstart zum Erstellen, Lesen, Aktualisieren und Löschen von benutzerdefinierten Feldern in einer Entität.
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 2175b684d88d1823fd2672f672e776ca1e26f164
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-manage-custom-fields"></a>Schnellstart: Verwalten von benutzerdefinierten Feldern
 Sie können ein oder mehrere benutzerdefinierte Felder in einer beliebigen Entität erstellen und aktualisieren. Wenn Sie ein benutzerdefiniertes Feld erstellen, geben Sie einen Satz von Eigenschaften an, z.B. den Namen des Felds, den Anzeigenamen und den Typ der Daten, die es enthält. Weitere Informationen finden Sie unter [Entity attribute metadata (Attributmetadaten von Entitäten)](../../developer/common-data-service/entity-attribute-metadata.md).

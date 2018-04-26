@@ -1,7 +1,6 @@
 ---
 title: Erstellen einer App von Grund auf neu mithilfe einer Common Data Service-Datenbank | Microsoft-Dokumentation
 description: Erstellen Sie eine App zum Hinzufügen, Aktualisieren und Löschen von Datensätzen.
-services: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: cb60ea139be12e51ea9faac7f61ca769d80c1af7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a0aab890e52b49bb0cac382338a8fa02eec736a0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-an-app-from-scratch-using-a-common-data-service-database"></a>Create an app from scratch using a Common Data Service database (Erstellen einer App von Grund auf neu mithilfe einer Common Data Service-Datenbank)
 Erstellen Sie eine Anwendung, um Daten zu verwalten, die im Common Data Service gespeichert sind. Verwenden Sie dazu (integrierte) Standard-Entitäten, (von Ihrem Unternehmen erstellte) benutzerdefinierte Entitäten oder beides.
@@ -41,7 +39,6 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
     Sie können für Smartphones oder andere Geräte (wie Tablets) Apps von Grund auf neu erstellen. In diesem Artikel erfahren Sie, wie Sie Apps für Smartphone erstellen können.
 
 ## <a name="specify-an-entity"></a>Angeben einer Entität
-
 1. Klicken oder tippen Sie in der Mitte des Bildschirms auf **Mit Daten verbinden** und dann im Bereich **Daten** auf die Verbindung **Common Data Service**.
 
 1. Geben Sie im Suchfeld die ersten Buchstaben des Worts **Accounts** (Konten) ein (bzw. fügen Sie sie ein), um die Liste mit den Entitäten zu filtern. Aktvieren Sie das Kontrollkästchen **Konten**, und klicken oder tippen Sie auf **Verbinden**.
@@ -122,7 +119,7 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
     ![Symbol „Weiter“](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. Klicken oder tippen Sie unter **FormScreen** auf das Symbol „Abbrechen“, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`ResetForm(EditForm1);Navigate(FormScreen, ScreenTransition.None)`
+`ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Symbol „Abbrechen“](./media/data-platform-create-app-scratch/cancel-icon.png)
 
