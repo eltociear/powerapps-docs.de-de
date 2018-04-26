@@ -1,25 +1,22 @@
 ---
 title: Grundlegendes zu Tabellen | Microsoft-Dokumentation
 description: Referenzinformationen zum Arbeiten mit Tabellen, Spalten und Datensätzen
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 794263448bc067ef8bf44ae46480865c56fdbdf8
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Grundlegendes zu Tabellen und Datensätzen in PowerApps
 Sie können Apps erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreifen, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.
@@ -237,7 +234,7 @@ Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") u
 ### <a name="disambiguation"></a>Mehrdeutigkeitsvermeidung
 Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [**@**-Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster ***Table*[@*FieldName*]** nutzen.  
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster ***Table *[@* FieldName*]** nutzen.  
 * Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@*ObjectName*]** (ohne Tabellenbezeichnung).
 
 Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter( *Tabelle*, ... )** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.

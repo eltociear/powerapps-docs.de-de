@@ -1,25 +1,22 @@
 ---
 title: Grundlegendes zu Formularen | Microsoft-Dokumentation
 description: Verwenden Sie Formulare zum Sammeln und Anzeigen von Informationen aus einer Datenquelle.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: 983eec5b3a6aa0f90ffe3f8460646bb92955e424
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c0e0595fc3e3025ca345e1415fbd3da99f090063
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Grundlegendes zu Datenformularen in Microsoft PowerApps
 Fügen Sie drei Arten von Steuerelementen hinzu, damit Benutzer nach einem Datensatz suchen, Einzelheiten zu dem Datensatz anzeigen oder einen Eintrag dazu bearbeiten oder erstellen können:

@@ -1,25 +1,22 @@
 ---
 title: Funktion „Patch“ | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „Patch“ in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 44d4c9e15b63cfbbd2f5304e6df7bd70fe748a04
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="patch-function-in-powerapps"></a>Funktion „Patch“ in PowerApps
 Ändert oder erstellt einen oder mehrere [Datensätze](../working-with-tables.md#records) in einer [Datenquelle](../working-with-data-sources.md) oder verbindet Datensätze außerhalb einer Datenquelle.
@@ -54,7 +51,7 @@ Der Rückgabewert der **Patch**-Funktion ist der Datensatz, den Sie erstellt ode
 
 Wenn Sie eine Datenquelle aktualisieren, können Probleme auftreten. Verwenden Sie die  **[Errors](function-errors.md)**-Funktion,um Schwierigkeiten zu identifizieren und zu untersuchen, wie unter [Working with Data Sources (Arbeiten mit Datenquellen)](../working-with-data-sources.md) beschrieben.
 
-Zu den verwandten Funktionen gehören die **[Update](function-update-updateif.md)** -Funktion, die Sie verwenden können, um einen vollständiger Datensatz zu ersetzen, und die  **[Collect](function-clear-collect-clearcollect.md)** -Funktion, die Sie zum Erstellen eines Datensatz nutzen können.  Mithilfe der **[UpdateIf](function-update-updateif.md)**-Funktion können Sie bestimmte Eigenschaften von mehreren Datensätzen auf der Grundlage einer Bedingung ändern.
+Zu den verwandten Funktionen gehören die **[Update](function-update-updateif.md)** -Funktion, die Sie verwenden können, um einen vollständiger Datensatz zu ersetzen, und die **[Collect](function-clear-collect-clearcollect.md)**-Funktion, die Sie zum Erstellen eines Datensatz nutzen können.  Mithilfe der **[UpdateIf](function-update-updateif.md)**-Funktion können Sie bestimmte Eigenschaften von mehreren Datensätzen auf der Grundlage einer Bedingung ändern.
 
 ### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>Ändern oder Erstellen einer Gruppe von Datensätzen in einer Datenquelle
 **Patch** kann außerdem zum Erstellen oder Ändern mehrerer Datensätze mit einem einzigen Aufruf verwendet werden.

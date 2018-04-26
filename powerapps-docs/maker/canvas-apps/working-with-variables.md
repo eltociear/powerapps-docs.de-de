@@ -1,25 +1,22 @@
 ---
 title: Grundlegendes zu Variablen | Microsoft-Dokumentation
 description: Referenzinformationen zum Arbeiten mit Zustands- und Kontextvariablen und Sammlungen
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 1372e8e92e0263d82b3b25c77f063c6fc1bb2ac4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 74ab73d78e87c25adf0cd300bb8a6321a578d749
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>Grundlegendes zu Variablen in PowerApps
 Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, fragen Sie sich einfach: **Wie würde ich in Excel verfahren?**

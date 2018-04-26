@@ -1,25 +1,22 @@
 ---
 title: Funktionen „GroupBy“ und „Ungroup“ | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktionen „GroupBy“ und „Ungroup“ in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 9fcd60593fe89f54dcd65f4d440d9d78b4b220e1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: b47e1b36ec86b2bf4ee2167b2599d583b97a0fbc
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>GroupBy- und Ungroup-Funktionen in PowerApps
 Gruppiert und hebt die Gruppierung von [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) auf.
@@ -127,7 +124,7 @@ Mit einer gruppierten Tabelle lassen sich außerdem Ergebnisse aggregieren.  In 
     ![](media/function-groupby/cities-sum.png)
    
     **[AddColumns](function-table-shaping.md)**  beginnt mit der grundlegenden Sammlung **CitiesByCountry** und fügt eine neue Spalte **Sum of City Populations** hinzu.  Die Werte dieser Spalte werden zeilenweise auf der Basis der Formel **Sum ( Cities, Population)** berechnet.  **AddColumns** stellt den Wert der Spalte **Cities** (eine Tabelle) für jede Zeile, und  **[Sum](function-aggregates.md)** addiert die Zahlen unter **Population** für jede Zeile dieser untergeordneten Tabelle.
-3. Wir haben jetzt die gewünschte Summe berechnet und können  **[DropColumns](function-table-shaping.md)**  verwenden, um die untergeordneten Tabellen zu entfernen.  Ändern Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft, um diese Formel zu verwenden:
+3. Wir haben jetzt die gewünschte Summe berechnet und können **[DropColumns](function-table-shaping.md)** verwenden, um die untergeordneten Tabellen zu entfernen.  Ändern Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft, um diese Formel zu verwenden:
    
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    

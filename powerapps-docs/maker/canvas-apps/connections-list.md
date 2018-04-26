@@ -1,25 +1,22 @@
 ---
 title: Connectorübersicht | Microsoft-Dokumentation
 description: Übersicht über die verfügbaren Verbindungen, die Sie verwenden können, um Apps zu erstellen
-services: ''
-suite: powerapps
 documentationcenter: ''
-author: archnair
-manager: anneta
+author: lancedMicrosoft
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
-ms.workload: na
-ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 08/28/2017
-ms.author: archanan
-ms.openlocfilehash: aff9e09ea92376c19067fbbc99dc1a9d8ccb0f99
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: lanced
+ms.openlocfilehash: dc68b0f404c2a8d636deb4e77c2ada4582ed3a37
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overview-of-connectors-for-powerapps"></a>Übersicht über die Connectors für PowerApps
 Daten bilden das Herzstück der meisten Apps, u.a. bei denen, die Sie in PowerApps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. PowerApps verfügt über Connectors für viele gängige Dienste und lokale Datenquellen, u.a. SharePoint, SQL Server, Office 365, Salesforce, Twitter und viele mehr. Die ersten Schritte zum Hinzufügen von Daten zu einer App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.

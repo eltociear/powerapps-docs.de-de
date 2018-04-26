@@ -1,24 +1,21 @@
 ---
 title: Hinzufügen von Listenfeldern, Dropdownlisten und Optionsfeldern | Microsoft-Dokumentation
 description: Erstellen oder Konfigurieren von Mehrfachauswahl-Optionen in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: lonu
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 8eacac89f7578a83757299b8e627cf757fb1c6d7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1fbaf4f9d740084a1ed0d630b94d1cd41713ba03
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern
 PowerApps bietet Mehrfachauswahl- und Einfachauswahl-Optionen; hierzu zählen ein Listenfeld, eine Dropdownliste und Optionsfelder. In diesem Thema werden diese Steuerelemente hinzugefügt, und mithilfe einer **Tabellen**-Formel werden die Listen erstellt. Wenn ein Element in der Liste ausgewählt wird, werden andere Steuerelemente aktualisiert.

@@ -1,25 +1,22 @@
 ---
 title: Funktionen „Concat“ und „Concatenate“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Concat“ und „Concatenate“ in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 5f69d51fc1d018a48576cade665ebd19ec1d7c82
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a735cb17b0e70afcae439044491a603aa50ceae7
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funktionen „Concat“ und „Concatenate“ in PowerApps
 Verketten einzelne Zeichenfolgen von Text und Zeichenfolgen in [Tabellen](../working-with-tables.md)
@@ -29,7 +26,7 @@ Die **Concat**-Funktion verkettet das Ergebnis einer Formel, das in allen [Daten
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Verwenden Sie die  **[Split](function-split.md)** -Funktion zum Aufteilen einer Zeichenfolge in eine Tabelle von Teilzeichenfolgen.
+Verwenden Sie die **[Split](function-split.md)**-Funktion zum Aufteilen einer Zeichenfolge in eine Tabelle von Teilzeichenfolgen.
 
 Die **Concatenate**-Funktion verkettet eine Mischung aus einzelnen Zeichenfolgen und eine einspaltige Tabelle von Zeichenfolgen. Wenn sie mit einzelnen Zeichenfolgen verwendet wird, entspricht diese Funktion der Verwendung des [Operators](operators.md) **&**. Sie können eine Formel verwenden, die die **[ShowColumns](function-table-shaping.md)**-Funktion umfasst, um aus einer Tabelle mit mehreren Spalten eine einspaltige Tabelle zu erstellen.
 

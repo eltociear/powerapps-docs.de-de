@@ -1,25 +1,22 @@
 ---
 title: Grundlegendes zu Datenkarten | Microsoft-Dokumentation
 description: Verwenden Sie Formularkarten zum Sammeln und Anzeigen von Informationen aus einer Datenquelle.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 64a7132151ea9df7071c21427d2554bd12bb026c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 074e40dd2fc19279bef36ac91196c61b050abda3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-data-cards"></a>Grundlegendes zu Datenkarten
 **[Card](controls/control-card.md)** -Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)**. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.

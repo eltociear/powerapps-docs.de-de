@@ -1,25 +1,22 @@
 ---
 title: Funktion „UpdateContext“ | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „UpdateContext“ in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: bcade879bfad04a50f80c26638f994897d9b42c0
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Funktion „UpdateContext“ in PowerApps
 Erstellt oder aktualisiert die [Kontextvariablen](../working-with-variables.md#create-a-context-variable) des aktuellen Bildschirms.

@@ -1,25 +1,22 @@
 ---
 title: Hinzufügen und Konfigurieren eines Steuerelements | Microsoft-Dokumentation
 description: Hier erhalten Sie schrittweise Anweisungen, anhand derer Sie Steuerelemente direkt, über die Symbolleiste, auf der Registerkarte „Eigenschaften“ oder in der Bearbeitungsleiste hinzufügen und konfigurieren können.
-services: ''
-suite: powerapps
 documentationcenter: na
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 07/10/2017
-ms.author: sharik
-ms.openlocfilehash: e16513c9ce4ec1a4274993640a3e0690d552f07c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: 90689d708d5b86d243647a14282c6599e51f7450
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Steuerelements in PowerApps
 Fügen Sie Ihrer App vielfältige Benutzeroberflächenelemente hinzu, und konfigurieren Sie Aspekte ihrer Darstellung und ihres Verhaltens direkt, über die Symbolleiste, auf der Registerkarte **Eigenschaften** oder in der Bearbeitungsleiste. Diese Elemente der Benutzeroberfläche werden als Steuerelemente bezeichnet, während die von Ihnen konfigurierten Aspekte als Eigenschaften bezeichnet werden.

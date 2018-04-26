@@ -1,8 +1,6 @@
 ---
 title: Anpassen einer Karte | Microsoft-Dokumentation
 description: Ändern des Standardsteuerelements, das in PowerApps auf einer Karte in einem Details- oder Edit-Formular angezeigt wird
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 0a46aeaf5e37a4c461daae65a01a00c38ed53414
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aa9d5785f1c005da7c22c63bd94cb41e1a643ad3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-a-card-in-powerapps"></a>Anpassen einer Karte in PowerApps
 Führen Sie eine grundlegende Anpassung (ohne Entsperren einer Karte) durch, indem Sie beispielsweise das Steuerelement ändern. Erweiterte Anpassung (mit Aufheben der Sperre einer Karte), indem Sie z.B. ein Steuerelement hinzufügen, das für diese Karte standardmäßig nicht verfügbar ist.

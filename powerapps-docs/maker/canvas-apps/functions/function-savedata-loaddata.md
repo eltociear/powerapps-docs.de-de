@@ -1,25 +1,22 @@
 ---
 title: Funktionen „SaveData“ und „LoadData“ | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax für die Funktionen SaveData und LoadData in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: aa62882841ee4d585720a2241dff8b9f35c88059
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8dc68646808e40792d3e55aa9ac547aa43a78efb
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funktionen SaveData und LoadData in PowerApps
 Speichert eine [Sammlung](../working-with-data-sources.md#collections) und lädt diese erneut.

@@ -1,24 +1,21 @@
 ---
 title: Hinzufügen von Bildern zu Excel | Microsoft-Dokumentation
 description: Schrittweise Anleitung zum Hinzufügen von Bilddateien und Stiftzeichnungen zu Excel in einem Cloudspeicherkonto
-services: ''
-suite: powerapps
 documentationcenter: ''
-author: skjerland
-manager: anneta
+author: aftowen
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/25/2016
-ms.author: sharik
-ms.openlocfilehash: 75b3315833fc6ced9ef3d8eb252d0f8639ccd696
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.author: anneta
+ms.openlocfilehash: b15584a1b53625544711f04d074c688ce75eac9c
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Hinzufügen von Bildern aus PowerApps zu Excel
 Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeichnungen mit einem **Stift**-Steuerelement anzeigen, hinzufügen oder löschen können. Die App basiert auf einer Excel-Datei, die Sie erstellen und in ein Cloudspeicherkonto hochladen.

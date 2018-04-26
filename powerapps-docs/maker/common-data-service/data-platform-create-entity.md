@@ -1,7 +1,6 @@
 ---
 title: Schnellstart für das Erstellen einer benutzerdefinierten Entität | Microsoft-Dokumentation
 description: Schnellstart für das Erstellen einer benutzerdefinierten Entität, die auf einer anderen Entität basiert oder von Grund auf neu erstellt wird
-services: powerapps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -9,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: cds
 ms.date: 3/21/2018
 ms.author: clwesene
-ms.openlocfilehash: e22a18bacb258ca46c8f36d647f9ebcc45282929
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 2232083de556bafcc978423dafb0e98e564aaa3b
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Schnellstart: Erstellen einer benutzerdefinierten Entität
 Sie können eine benutzerdefinierte Entität zum Speichern von Daten erstellen, die spezifisch für Ihre Organisation sind. Sie können die Daten dann anzeigen, indem Sie eine App entwickeln, die auf die Entität verweist. Nachdem Sie eine Entität erstellt haben, können Sie [eines oder mehrere ihrer Felder erstellen oder bearbeiten](data-platform-manage-fields.md) und [Beziehungen zwischen Entitäten erstellen](data-platform-entity-lookup.md).

@@ -1,24 +1,21 @@
 ---
 title: Starten eines Flows in einer App | Microsoft-Dokumentation
 description: Erstellen Sie einen Flow, der eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt, z.B. wenn ein Benutzer eine Schaltfläche auswählt.
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: stepsic-microsoft-com
-manager: anneta
+manager: kfile
 editor: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 378394fe0c42d0418a62974c26b217ab473d40ed
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: bf9cbe451cc9ac5fa0ef98ba3e32963e240c0b5e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="start-a-flow-in-an-app"></a>Starten eines Flows in einer App
 Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
