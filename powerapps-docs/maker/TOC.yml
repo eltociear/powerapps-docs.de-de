@@ -35,14 +35,18 @@
       items:
         - name: Generierte Apps anpassen
           items:
-            - name: Bildschirme zum Durchsuchen anpassen
+            - name: 1 – Kataloge
               href: ./canvas-apps/customize-layout-sharepoint.md
-            - name: Anpassen eines Formulars
+            - name: 2 – Formulare
               href: ./canvas-apps/customize-forms-sharepoint.md
-            - name: Eine Karte anpassen
+            - name: 3 – Karten
               href: ./canvas-apps/customize-card.md
         - name: App von Grund auf neu erstellen
-          href: ./canvas-apps/data-platform-create-app-scratch.md
+          items:
+            - name: Common Data Service für Apps
+              href: ./canvas-apps/data-platform-create-app-scratch.md
+            - name: Excel
+              href: ./canvas-apps/get-started-create-from-blank.md
         - name: Eine App freigeben
           href: ./canvas-apps/share-app.md
         - name: Apps in Power BI einbetten
@@ -95,8 +99,6 @@
       items:
         - name: SharePoint-Listenformulare anpassen
           href: ./canvas-apps/customize-list-form.md
-        - name: Eine Excel-App von Grund auf neu erstellen
-          href: ./canvas-apps/get-started-create-from-blank.md
         - name: Eine App anpassen
           items:
             - name: Ein Steuerelement hinzufügen und konfigurieren
@@ -131,6 +133,9 @@
               href: ./canvas-apps/global-apps.md
             - name: Erstellen einer zugänglichen App
               href: ./canvas-apps/accessible-apps.md
+              items:
+                - name: Farbe
+                  href: ./canvas-apps/accessible-apps-color.md
         - name: Ihre App verwalten
           items:
             - name: Einführung in powerapps.com
