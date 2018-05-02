@@ -1,25 +1,22 @@
 ---
 title: Schnellstart zum Neuerstellen Ihrer ersten modellgesteuerten App mit PowerApps | Microsoft-Dokumentation
 description: Informationen zur Erstellung einer einfachen modellgesteuerten App
-services: ''
-suite: powerapps
 documentationcenter: ''
 author: Mattp123
 manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
-ms.workload: na
-ms.tgt_pltfrm: na
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
+ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: 23521a1512a971e5f298c944fc8219cef5f7fadd
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: ad11ce81544095c5730e326325b4b5bf6b136e93
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>Schnellstart: Neuerstellen Ihrer ersten modellgesteuerten App
 Das Design einer modellgesteuerten App ist ein auf Komponenten bezogener Ansatz zum Entwickeln von Apps. In diesem Schnellstart erfahren Sie, wie Sie eine modellgesteuerte App mithilfe einer der Standardentitäten erstellen, die in Ihrer [!INCLUDE [powerapps](../../includes/powerapps.md)]-Umgebung zur Verfügung stehen. 

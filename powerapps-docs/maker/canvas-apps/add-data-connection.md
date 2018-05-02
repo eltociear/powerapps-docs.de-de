@@ -1,25 +1,22 @@
 ---
 title: Hinzufügen einer Datenverbindung in einer App | Microsoft-Dokumentation
 description: Fügen Sie eine Datenverbindung in einer vorhandenen App oder einer leeren App hinzu
-services: ''
-suite: powerapps
 documentationcenter: na
-author: archnair
+author: lancedMicrosoft
 manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 04/06/2018
-ms.author: archanan
-ms.openlocfilehash: e4d2e881a058ea8f265a858f54af81674d8c1296
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.author: lanced
+ms.openlocfilehash: 44ee7b992f5817a5d6b8d791b05e1db671d3e6ba
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-a-data-connection-in-powerapps"></a>Hinzufügen einer Datenverbindung in PowerApps
 Fügen Sie in PowerApps einer vorhandenen App oder einer von Grund auf neu erstellten App eine Datenverbindung hinzu. Ihre App kann eine Verbindung zu SharePoint, Salesforce, OneDrive oder [vielen anderen Datenquellen](connections-list.md) herstellen.

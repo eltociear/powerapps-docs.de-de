@@ -1,8 +1,6 @@
 ---
 title: Was sind Canvas-Apps? | Microsoft-Dokumentation
 description: Informationen zum Entwerfen und Erstellen einer branchenspezifischen Canvas-App in PowerApps
-services: ''
-suite: powerapps
 documentationcenter: na
 author: AFTOwen
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: hero-article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 03/14/2018
 ms.author: anneta
-ms.openlocfilehash: 984c53417f8684add431dffc6d7c7d89d707eaf2
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 224f75e4254807163ffdb646e9ea109af5f50db5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Willkommen bei PowerApps. Bei PowerApps handelt es sich um einen Dienst, mit dem Sie Branchen-Apps entwickeln können, die in einem Browser oder auf einem Smartphone oder Tablet ausgeführt werden. Hierfür benötigen Sie keine Programmiererfahrung. PowerApps kombiniert visuelle Drag & Drop-Konzepte aus PowerPoint mit Ausdrücken für Logik und das Arbeiten mit Daten, die mit Excel vergleichbar sind.

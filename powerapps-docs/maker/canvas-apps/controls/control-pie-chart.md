@@ -1,25 +1,22 @@
 ---
 title: 'Kreisdiagramm-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Kreisdiagramm-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 5307370df49eeb783a401e2b7c2f0564bb27c3f4
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Kreisdiagramm-Steuerelement in PowerApps
 Ein Steuerelement, das einen Vergleich relativer Werte anzeigt
@@ -104,7 +101,8 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * Vor dem Diagramm muss eine **[Bezeichnung](control-text-box.md)** hinzugefügt werden, die als Titel dienen soll.
-> [!NOTE]
+
+    > [!NOTE]
 > Diagramme und **Legenden** werden für Benutzer der Sprachausgabe ausgeblendet. Für sie werden stattdessen die Daten in Tabellenform dargestellt. Außerdem können sie zwischen Steuerelementen wechseln, die Daten aus dem Diagramm auswählen.
 
 ### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
@@ -114,5 +112,6 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-> [!NOTE]
+
+    > [!NOTE]
 > Wenn Benutzer über eine Tastatur zu dem Diagramm navigieren, können sie zwischen Schaltflächen wechseln, die Daten aus dem Diagramm auswählen.

@@ -1,25 +1,22 @@
 ---
 title: 'Timer-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Timer-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 092e6c76b581027e711dbe0a8109f507a2bba292
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -165,6 +162,8 @@ Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informatione
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
 * Verwenden Sie **[Text](properties-core.md)** niemals für zeitkritische und wichtige Informationen. Benutzer der Sprachausgabe werden über Änderungen an **[Text](properties-core.md)** nicht informiert.
-> [!NOTE]
-> * Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
+
+    > [!NOTE]
+> Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
+
 * Fügen Sie ggf. eine **[Bezeichnung](control-text-box.md)** hinzu, die die verstrichene Zeit anzeigt. Weisen Sie den Benutzer mithilfe des **[Texts](properties-core.md)** an, ob der Timer gestartet oder beendet werden soll.

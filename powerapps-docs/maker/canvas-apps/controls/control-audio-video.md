@@ -1,25 +1,22 @@
 ---
 title: 'Audio- und Video-Steuerelemente: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über Audio- und Video-Steuerelemente
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7dd954a8e9d0ee9fe645dc248841a2a867d01b43
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: fa235c606082f2fd83339ba11fa81fdb2988c23a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
@@ -144,6 +141,6 @@ Stellen Sie Untertitel und/oder Transkripte bereit, wenn der Videoinhalt Problem
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-* **[TabIndex](properties-accessibility.md)** muss 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 * Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
 * **AutoStart** sollte FALSE sein, da es für Tastaturbenutzer schwierig sein kann, die Wiedergabe schnell zu beenden.

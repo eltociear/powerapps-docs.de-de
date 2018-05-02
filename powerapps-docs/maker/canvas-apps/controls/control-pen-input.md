@@ -1,25 +1,22 @@
 ---
 title: 'Stifteingabe-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Stifteingabe-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>Stifteingabe-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -101,9 +98,11 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * **[AccessibleLabel](properties-accessibility.md)** sollte vorhanden sein.
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > Die **Stifteingabe** ist für Benutzer der Sprachausgabe nicht verfügbar. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Skizze erforderlich ist, sollten Sie ein **[Bild hinzufügen](control-add-picture.md)**-Steuerelement hinzufügen, damit Benutzer Bilder hochladen können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
+
 > [!IMPORTANT]
 > Benutzer, die mit der Tastatur arbeiten, können die **Stifteingabe** nicht verwenden. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Signatur erforderlich ist, sollten Sie eine **[Textausgabe](control-text-input.md)** hinzufügen, damit Benutzer ihren Namen eingeben können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.

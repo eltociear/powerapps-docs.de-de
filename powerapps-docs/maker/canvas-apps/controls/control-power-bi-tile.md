@@ -1,25 +1,22 @@
 ---
 title: 'Power BI-Kachel-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich von Eigenschaften und Beispiele, über das Power BI-Kachel-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: a760dd47cfe703cdf829037d0090c99fc215831e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e7bc2e7e0aafa4d933c47bcf47300dc243c38523
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.

@@ -1,25 +1,22 @@
 ---
 title: 'Bildschirm-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Bildschirm-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 715b329f7756f35b6053199ae0c88ce2d0b967f2
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="screen-control-in-powerapps"></a>Bildschirm-Steuerelement in PowerApps
 Ein Benutzeroberflächenelement, das in einer App ein oder mehrere Steuerelemente enthält
@@ -83,5 +80,6 @@ Sie sollten nicht nur den Text überprüfen, sondern auch den Farbkontrast mit g
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * Jeder **Ansicht** muss ein eindeutiger Name zugewiesen sein. Der Anzeigename kann auf dieselbe Weise wie andere Steuerelemente angezeigt und bearbeitet werden, also entweder in der Strukturansicht des Bereichs „Steuerelemente“ oder im Header im Bereich „Eigenschaften“.
-> [!NOTE]
+
+    > [!NOTE]
 > Wenn eine neue **Anzeige** geladen wird, nennt die Sprachausgabe deren Namen. 

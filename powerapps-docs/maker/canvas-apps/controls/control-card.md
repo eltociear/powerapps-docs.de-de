@@ -1,25 +1,22 @@
 ---
 title: 'Karten-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Karten-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: gregli-msft
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 1874d03f5bf01adca9969bd74e7dbed1007d86e2
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 7d44ba120a68d08f5779b8383df5b2263f228438
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="card-control-in-powerapps"></a>Karten-Steuerelement in PowerApps
 Ermöglicht die Anzeige und Bearbeitung eines einzelnen Felds in einem **[Formular anzeigen](control-form-detail.md)**- oder **[Formular bearbeiten](control-form-detail.md)**-Steuerelement.
