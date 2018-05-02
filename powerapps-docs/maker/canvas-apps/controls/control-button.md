@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3bab51ee290d779cd01789f55ee7c5908395537a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: aec9071cf5cc7cbe451bae32dedc2ba119e21189
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="button-control-in-powerapps"></a>Schaltflächen-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen mit der App interagieren können.
@@ -43,8 +43,6 @@ Konfigurieren Sie die **[OnSelect](properties-core.md)**-Eigenschaft eines **Sch
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)** – Die Linienstärke des Rahmen eines Steuerelements, wenn es den Tastaturfokus hat.
-
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
@@ -54,6 +52,10 @@ Konfigurieren Sie die **[OnSelect](properties-core.md)**-Eigenschaft eines **Sch
 **[DisabledColor](properties-color-border.md)**: Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -99,7 +101,7 @@ Konfigurieren Sie die **[OnSelect](properties-core.md)**-Eigenschaft eines **Sch
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -184,3 +186,15 @@ Sie können die Farbe eines **Schaltflächen**-Steuerelements auch durch Festleg
 
 * Ersetzen Sie auf einer der Schaltflächen, die Sie erstellt haben, die **[ColorFade](../functions/function-colors.md)**-Funktion durch eine **[ColorValue](../functions/function-colors.md)**-Funktion, und beobachten die Auswirkungen.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+* Es gelten die Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+ 

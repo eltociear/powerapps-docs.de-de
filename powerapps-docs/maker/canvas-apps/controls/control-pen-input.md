@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7e5be9b68b501279329c23f9afe5d451487fa8d1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6084572dd9a60fc4194e1eff912e22cb656f0207
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pen-input-control-in-powerapps"></a>Stifteingabe-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -33,6 +33,8 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 **Mode** – Das Steuerelement ist im Modus **Draw** oder **Erase**.  Der Modus „Select“ ist veraltet.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Kann verwendet werden, um den Zweck des Steuerelements sowie alternative Eingabemethoden zu beschreiben.
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
@@ -90,3 +92,18 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 
 Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)**-Funktion, um Ihre Zeichnungen lokal zu speichern, oder die **[Patch](../functions/function-patch.md)**-Funktion zur Speicherung in einer Datenquelle.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **[BorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn es einen Rahmen gibt
+* **[Fill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn es keinen Rahmen gibt
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** sollte vorhanden sein.
+> [!IMPORTANT]
+> Die **Stifteingabe** ist für Benutzer der Sprachausgabe nicht verfügbar. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Skizze erforderlich ist, sollten Sie ein **[Bild hinzufügen](control-add-picture.md)**-Steuerelement hinzufügen, damit Benutzer Bilder hochladen können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+> [!IMPORTANT]
+> Benutzer, die mit der Tastatur arbeiten, können die **Stifteingabe** nicht verwenden. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Signatur erforderlich ist, sollten Sie eine **[Textausgabe](control-text-input.md)** hinzufügen, damit Benutzer ihren Namen eingeben können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.

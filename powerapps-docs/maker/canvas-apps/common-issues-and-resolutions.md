@@ -13,16 +13,24 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/05/2018
+ms.date: 04/12/2018
 ms.author: sharik
-ms.openlocfilehash: 6df3a0d92f8dd8352f93bdb377ac9c4b446e1e99
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8a241ff41abf5f3fe804330d6678b70cf0576ceb
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 ## <a name="recently-addedchanged"></a>Kürzlich hinzugefügt/geändert
+1. **Verwenden eines benutzerdefinierten Bilds als App-Symbol**
+
+    In PowerApps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [PowerApps Studio für Web](https://web.powerapps.com), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in PowerApps Studio für Windows enthalten ist und die Hintergrundfarbe anpassen.
+
+1. **Kopieren und Einfügen von Anzeigen über mehrere Apps hinweg**
+
+    Das Kopieren und Einfügen von Anzeigen über mehrere Apps wird derzeit nicht unterstützt. Wenn Sie dieses Problem umgehen möchten, fügen Sie eine neue Anzeige zu Ihrer Ziel-App hinzu, kopieren Sie die Steuerelemente aus der Anzeige in die Quell-App, und fügen Sie sie in die Anzeige Ihrer Ziel-App ein.
+
 1. **Ändern des Layouts von SharePoint-Formularen**
 
     Wenn Sie in bestimmten Sprachen ein Formular in einer SharePoint-Liste anpassen und versuchen, das Layout vom Hochformat (Standard) in das Querformat zu ändern, werden in der App möglicherweise mehrere Fehler angezeigt (gelbe Dreiecke in Steuerelementen). Um diese Fehler zu beheben und das Layout mit Querformat zu erhalten, klicken Sie auf **Rückgängig**.

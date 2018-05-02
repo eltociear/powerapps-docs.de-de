@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/20/2018
+ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 97ff0c781933fa8d2896a35f0bd507bfb0b75ea9
-ms.sourcegitcommit: eac8ad7b54a0b0eba6444a38a952dbfd17bc64b5
+ms.openlocfilehash: be5a2f1994a55abf6936ded4dfddf84d145115c5
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“
 
@@ -53,7 +53,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 3. Navigieren Sie zur Websitesammlung, in der Sie die Liste „HelpDesk“ erstellen möchten.
 4. Klicken Sie auf das **Zahnradsymbol** oben rechts auf der Webseite.
 5. Klicken Sie auf **Add an App** (Eine App hinzufügen).
-6. Geben Sie im Textfeld **Eine App suchen** den Wert **Benutzerdefiniert** ein.
+6. Geben Sie im Textfeld **Eine App suchen** **Benutzerdefiniert** ein.
 7. Klicken Sie auf das **Lupensymbol**.
 8. Klicken Sie auf die App **Benutzerdefinierte Liste**.
 9. Geben Sie im Textfeld **Name** den Namen **HelpDesk** ein.
@@ -153,7 +153,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 1.  Klicken Sie auf **+ Neue Verbindung**.
 2.  Geben Sie im **Suchfeld** die Verbindung **Office 365 Outlook** ein.
-3.  Wählen Sie in der Liste **Office 365 Outlook** aus.
+3.  Klicken Sie in der Liste auf **Office 365 Outlook**.
 4.  Klicken Sie auf **Erstellen**.
 5.  Wählen Sie im Popupfenster das Konto aus, mit dem Sie sich angemeldet haben.
 
@@ -161,7 +161,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 1.  Klicken Sie auf **+ Neue Verbindung**.
 2.  Geben Sie in das **Suchfeld** die Verbindung **Outlook** ein.
-3.  Wählen Sie in der Liste **SharePoint** aus.
+3.  Klicken Sie in der Liste auf **SharePoint**.
 4.  Klicken Sie auf **Erstellen**.
 5.  Wählen Sie im Popupfenster das Konto aus, mit dem Sie sich angemeldet haben.
 
@@ -292,3 +292,9 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 Sehen Sie sich dieses Video an, um mehr über die Verwendung der PowerApps-Beispiel-App „Help Desk“ zu erfahren.
 
 [![Demo-Video zu Help Desk](./media/help-desk-install/help-desk-demo-video.png)](https://youtu.be/sl5fXwwnvzI)
+
+##<a name="next-steps"></a>Nächste Schritte
+- [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
+- [Hinzufügen und Konfigurieren eines Steuerelements in PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [Bearbeiten und Verwalten von Berechtigungen für eine SharePoint-Liste oder -Bibliothek](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
+ 

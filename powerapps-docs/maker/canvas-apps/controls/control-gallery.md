@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: 9839059cca741e47f5f519a45e7291847c1bc792
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 501dfbba3e01efe55c76d7af234e2f9064096728
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gallery-control-in-powerapps"></a>Bildkatalog-Steuerelement in PowerApps
 Ein Steuerelement, das andere Steuerelemente enthält und einen Datensatz anzeigt.
@@ -37,6 +37,8 @@ Es stehen vordefinierte Bildkatalog-Vorlagen für die Darstellung von Bildern, v
 **Selected** – Das ausgewählte Element.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte die Elementliste beschreiben.
+
 **AllItems** – Alle Elemente eines Katalogs, einschließlich zusätzlicher Steuerelementwerte, die Teil der Vorlage des Katalogs sind.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -96,3 +98,20 @@ Es stehen vordefinierte Bildkatalog-Vorlagen für die Darstellung von Bildern, v
 * [Abrufen von Tönen](control-microphone.md#example)
 * [Abrufen von Zeichnungen](control-pen-input.md#create-a-set-of-images)
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Wenn ein Katalogelement aktiviert wird, indem man auf eine beliebige Stelle klickt, muss zwischen den folgenden Elementen ein angemessener Farbkontrast vorhanden sein:
+* Zwischen **[BorderColor](properties-color-border.md)** und der Farbe außerhalb des Katalogs, wenn es einen Rahmen gibt
+* Zwischen **[Fill](properties-color-border.md)** und der Farbe außerhalb des Katalogs, wenn es keinen Rahmen gibt
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+> [!NOTE]
+> Die Sprachausgabe meldet, wenn Elemente im Katalog verändert werden. **AccessibleLabel** wird ebenfalls erwähnt. Dadurch wird die Meldung in einen Kontext gesetzt und hat eine noch wichtigere Funktion, wenn mehrere Kataloge gleichzeitig angezeigt werden.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* Sie sollten **ShowScrollbar** auf **TRUE** festlegen. Auf den meisten Geräten mit Touchscreen wird die Scrollleiste erst angezeigt, wenn der Benutzer mit dem Scrollen beginnt.
+* Wenn ein Katalogelement aktiviert wird, indem man auf eine beliebige Stelle klickt, muss es auch eine Möglichkeit für Tastaturbenutzer geben, dieses Katalogelement auszuwählen. Sie können z.B. eine **[Schaltfläche](control-button.md)** hinzufügen, für die die **OnSelect**-Eigenschaft auf **Select(Parent)** festgelegt ist.
+> [!NOTE]
+> Steuerelemente, die sich außerhalb des Katalogs befinden, werden nicht in der Reihenfolge der Tastaturnavigation innerhalb des Katalogs abgefragt. Die **[TabIndex](properties-accessibility.md)**-Eigenschaft von Steuerelementen innerhalb eines Katalogs ist eingeschränkt. Weitere Informationen finden Sie unter [Eigenschaften von Bedienungshilfen in PowerApps](properties-accessibility.md).

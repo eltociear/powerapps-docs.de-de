@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 008c992ad3452c1844064335a51593c222fb1ac1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 092e6c76b581027e711dbe0a8109f507a2bba292
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -61,6 +61,10 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
 **[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
@@ -93,6 +97,8 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
@@ -123,18 +129,42 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
     Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
     Die Bezeichnung zeigt die bis zum Neustart des Timers verbleibenden Sekunden an.
-5. (optional) Legen Sie die Eigenschaft **[Visible](properties-core.md)** für den Timer auf **FALSE** fest.
 
 ### <a name="animate-a-control"></a>Animieren eines Steuerelements
 1. Fügen Sie einen Timer hinzu, und nennen Sie ihn **FadeIn**.
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-2. Legen Sie die Eigenschaft **Duration** für den Timer auf **5000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
+2. Legen Sie für diese Eigenschaften des Timers Folgendes fest: **Dauer** = **5000**, **Wiederholen** = **TRUE** und **[Text](properties-core.md)** = **Toggle animation** (Umschalter-Animation).
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf **Welcome!** fest und legen Sie dessen Eigenschaft **[Color](properties-color-border.md)** auf diese Formel fest:
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
-    Der Text in der Bezeichnung wird weiß, kehrt zur vollständigen Intensität zurück und wiederholt den Prozess.
-5. (optional) Legen Sie die Eigenschaft **[Visible](properties-core.md)** für den Timer auf **FALSE** fest.
+5. Klicken Sie auf die Timer-Schaltfläche, um die Animation zu starten oder zu beenden. Der Text in der Bezeichnung wird weiß, kehrt zur vollständigen Intensität zurück und wiederholt den Prozess.
+
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+Es gelten dieselben Richtlinien wie für **[Schaltflächen](control-button.md)**, da ein **Timer** nur eine besondere Schaltfläche ist.
+
+> [!IMPORTANT]
+> Das Steuern des **Timers** ohne direkten Eingriff des Benutzers wird aus Gründen der Barrierefreiheit nicht unterstützt. Ein Timer kann z.B. verborgen werden, indem ein anderes Steuerelemente darüber gelegt oder die Eigenschaft **[Sichtbar](properties-core.md)** auf **FALSE** festgelegt wird. Der Timer startet automatisch, wenn ein Bildschirm angezeigt wird, und führt nach einiger Zeit auch automatisch eine Aktion aus. Derzeit ist es nicht allgemein möglich, dieses Szenario zugänglich zu machen.
+
+Im Folgenden finden Sie weitere Richtlinien für Barrierefreiheit.
+
+### <a name="timing"></a>Zeitliche Steuerung
+Beim automatischen Starten oder Beenden eines **Timers**, sollten Sie beachten, ob Benutzern ausreichend Zeit zum Lesen und Reagieren bleibt. Benutzer, die die Tastatur oder die Sprachausgabe verwenden, benötigen möglicherweise mehr Zeit, um auf ein solches Ereignis zu reagieren.
+
+Eine der folgenden Vorgehensweisen ist ausreichend:
+* Benutzern ermöglichen, das zeitlich begrenzte Ereignis abzubrechen
+* Benutzern ermöglichen, das Zeitlimit anzupassen, bevor es beginnt
+* 20 Sekunden vor Ende des Zeitlimits warnen und eine Möglichkeit bieten, es auf einfache Weise zu verlängern
+
+Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informationen finden Sie in der englischsprachigen [WCAG 2.0-Richtlinie für Zeitlimits](https://www.w3.org/TR/WCAG20/#time-limits).
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+* Verwenden Sie **[Text](properties-core.md)** niemals für zeitkritische und wichtige Informationen. Benutzer der Sprachausgabe werden über Änderungen an **[Text](properties-core.md)** nicht informiert.
+> [!NOTE]
+> * Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
+* Fügen Sie ggf. eine **[Bezeichnung](control-text-box.md)** hinzu, die die verstrichene Zeit anzeigt. Weisen Sie den Benutzer mithilfe des **[Texts](properties-core.md)** an, ob der Timer gestartet oder beendet werden soll.

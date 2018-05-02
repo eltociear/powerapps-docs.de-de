@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/03/2016
+ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: ccece4f2915460e623bf0a7e527a7105e9ff2954
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 69e46e1e55b3f1dd4b1e0df20ef274a56e657809
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Formatieren einer Tabelle in Excel und Tipps zur Benennung
 Zunächst muss die Voraussetzung erfüllt sein, dass die Excel-Daten als Tabelle für die Verwendung in PowerApps formatiert sind. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.
@@ -41,3 +41,7 @@ Damit Sie Ihre Tabelle leicht wiederfinden, wechseln Sie unter **Tabellentools**
 Versuchen Sie, in Ihrer Excel-Tabelle das Schlüsselwort „Bild“ zu Ihrer Bildspalte hinzuzufügen. Dadurch wird Ihre Bildspalte mit einem Bildsteuerelement verbunden, während Sie diese Tabelle in einer Galerie mit Bildsteuerelementen verwenden.
 
 ![Verbinden einer Excel-Tabelle mit Bildern](./media/how-to-excel-tips/connect-gallery.png)
+
+## <a name="next-steps"></a>Nächste Schritte
+* [Generieren Sie eine App über Excel in PowerApps](get-started-create-from-data.md) basierend auf einer von Ihnen festgelegten Tabelle. Die App verfügt standardmäßig über drei Bildschirme: jeweils einen zum Durchsuchen von Datensätzen, zum Anzeigen von Details zu einem einzelnen Datensatz und zum Erstellen oder Aktualisieren eines Datensatzes.
+* [Erstellen Sie mithilfe der Tabelle, die Sie in Excel formatieren, eine App von Grund auf neu.](get-started-create-from-blank.md) Sie können Ihre App manuell erstellen und anpassen, um die Daten in Ihrer Tabelle anzuzeigen, zu durchsuchen oder zu bearbeiten.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: e85b7ce4c51e693d566fb50b51be48f9ab3edadd
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1874d03f5bf01adca9969bd74e7dbed1007d86e2
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="card-control-in-powerapps"></a>Karten-Steuerelement in PowerApps
 Ermöglicht die Anzeige und Bearbeitung eines einzelnen Felds in einem **[Formular anzeigen](control-form-detail.md)**- oder **[Formular bearbeiten](control-form-detail.md)**-Steuerelement.
@@ -101,3 +101,11 @@ Beispiele zum Anpassen, Entsperren und Erstellen von Karten finden Sie unter [Gr
 ## <a name="examples"></a>Beispiele
 Beispiele finden Sie unter [Grundlegendes zu Datenkarten](../working-with-cards.md) und [Grundlegendes zum Layout von Datenformularen](../working-with-form-layout.md).
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **[Fill](properties-color-border.md)**-Steuerelement und beliebige untergeordnete Steuerelemente. Wenn beispielsweise eine Karte eine **[Bezeichnung](control-text-box.md)** enthält und die **[Füllung](properties-color-border.md)** der Karte durchsichtig ist, wird diese Füllung als Hintergrundfarbe für die Bezeichnung verwendet. Dadurch sollte ein angemessenes Maß an Kontrast zwischen der **[Füllung](properties-color-border.md)** der Karte und der **[Farbe](properties-color-border.md)** der Bezeichnung entstehen.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **DisplayName** muss vorhanden sein.

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/20/2018
+ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 0a4c35fe756e6ba9baf899a302d739467e21b591
-ms.sourcegitcommit: eac8ad7b54a0b0eba6444a38a952dbfd17bc64b5
+ms.openlocfilehash: a63504b0438f50584da6739b9f397300e36d4ce6
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Installation und Konfiguration der PowerApps-Beispiel-App „Expense Report“
 
@@ -154,7 +154,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 2. Klicken Sie auf das **Zahnradsymbol** oben rechts auf der Webseite.
 3. Klicken Sie auf **Listeneinstellungen**.
 4. Klicken Sie auf **Spalte erstellen**.
-5. Geben Sie im Textfeld **Spaltenname** **Kategorie** ein.
+5. Geben Sie im Textfeld **Spaltenname** das Wort **Kategorie** ein.
 6. Klicken Sie in der Optionsfeldliste **Type of information in this column is** (Der Informationstyp dieser Spalte ist) auf **Auswahl**.
 7. Geben Sie im Textfeld **Geben Sie jede Auswahl in einer neuen Zeile ein** die folgenden Werte jeweils in einer neuen Zeile ein: 
     - Essen & Trinken
@@ -182,7 +182,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 ### <a name="create-description-column"></a>Erstellen der Spalte „Beschreibung“
 
 1. Klicken Sie auf **Spalte erstellen**.
-2. Geben Sie im Textfeld **Spaltenname** **Beschreibung** ein.
+2. Geben Sie im Textfeld **Spaltenname** das Wort **Beschreibung** ein.
 3. Klicken Sie in der Optionsfeldliste **Type of information in this column is** (Der Informationstyp dieser Spalte ist) auf **Mehrere Textzeilen**.
 4. Klicken Sie in der Optionsfeldliste **Require that this column contains information** (Diese Spalte muss Informationen enthalten) auf **Ja**.
 5. Wählen Sie in der Optionsfeldliste **Specify the type of text to allow** (Zu erlaubender Textyp auswählen) **Nur-Text** aus.
@@ -228,7 +228,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 ### <a name="create-office-365-outlook-connection"></a>Erstellen einer Office 365 Outlook-Verbindung
 
 1.  Klicken Sie auf **+ Neue Verbindung**.
-2.  Geben Sie im **Suchfeld** **Office 365 Outlook** ein.
+2.  Geben Sie im **Suchfeld** die Verbindung **Office 365 Outlook** ein.
 3.  Klicken Sie in der Liste auf **Office 365 Outlook**.
 4.  Klicken Sie auf **Erstellen**.
 5.  Wählen Sie im Popupfenster das Konto aus, mit dem Sie sich angemeldet haben.
@@ -236,7 +236,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 ### <a name="create-sharepoint-connection"></a>Erstellen einer SharePoint-Verbindung
 
 1.  Klicken Sie auf **+ Neue Verbindung**.
-2.  Geben Sie im **Suchfeld** **Outlook** ein.
+2.  Geben Sie in das **Suchfeld** die Verbindung **Outlook** ein.
 3.  Klicken Sie in der Liste auf **SharePoint**.
 4.  Klicken Sie auf **Erstellen**.
 5.  Wählen Sie im Popupfenster das Konto aus, mit dem Sie sich angemeldet haben.
@@ -305,7 +305,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 2. Klicken Sie auf **Datenquellen**.
 3. Klicken Sie im Bereich **Daten** auf **Datenquelle hinzufügen**.
 4. Klicken Sie auf **+ Neue Verbindung**.
-5. Klicken Sie auf **SharePoint**.
+5. Wählen Sie **SharePoint** aus.
 6. Klicken Sie auf **Erstellen**.
 7. Wählen Sie in der Liste **Zuletzt geöffnete Websites** die SharePoint-Website aus, auf der Sie die Ausgabenliste erstellt haben.
 
@@ -322,7 +322,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 2. Klicken Sie auf **Datenquellen**.
 3. Klicken Sie im Bereich **Daten** auf **Datenquelle hinzufügen**.
 4. Klicken Sie auf **+ Neue Verbindung**.
-5. Klicken Sie auf **SharePoint**.
+5. Wählen Sie **SharePoint** aus.
 6. Klicken Sie auf **Erstellen**.
 7. Wählen Sie in der Liste **Zuletzt geöffnete Websites** die SharePoint-Website aus, auf der Sie die Liste „Positionen“ erstellt haben.
 
@@ -385,7 +385,10 @@ Sehen Sie sich dieses Video an, um mehr über die Verwendung der PowerApps-Beisp
 
 [![Video zur Installation von Expense Report](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-
+##<a name="next-steps"></a>Nächste Schritte
+- [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
+- [Hinzufügen und Konfigurieren eines Steuerelements in PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [Bearbeiten und Verwalten von Berechtigungen für eine SharePoint-Liste oder -Bibliothek](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
 
 

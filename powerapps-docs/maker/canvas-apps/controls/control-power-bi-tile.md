@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1f351877e3c05b83b4bd9cfa104a7eb22cef5028
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: a760dd47cfe703cdf829037d0090c99fc215831e
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.
@@ -68,3 +68,9 @@ Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zug
    
    Sie verfügen nicht über Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+Bei der **Power BI-Kachel** handelt es sich bloß um einen Container für Power BI-Inhalt. Weitere Informationen zu Inhalt, auf den zugegriffen werden kann, finden Sie unter [Barrierefreiheit in Power BI Desktop-Berichten](https://docs.microsoft.com/power-bi/desktop-accessibility).
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Fügen Sie ggf. mithilfe einer **[Bezeichnung](control-text-box.md)** einen Titel hinzu, wenn dem Power BI-Inhalt noch keiner zugeteilt ist. Der Titel kann unmittelbar vor der **Power BI-Kachel** platziert werden.

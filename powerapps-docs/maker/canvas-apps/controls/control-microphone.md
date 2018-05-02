@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3ffede0018a371b3c3a4cf4a3a1f9fc8115140de
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 8f49b7dbe6186c9c984b27f4c5b07273e88f1963
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Töne aufzeichnen kann
@@ -33,6 +33,8 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **OnStop**: gibt an, wie die App reagiert, wenn der Benutzer die Aufzeichnung mit einem Mikrofon-Steuerelement beendet.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte den Zweck dieses Mikrofons beschreiben.
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
@@ -50,6 +52,10 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -74,6 +80,8 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
 **[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -105,3 +113,18 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
 Verwenden Sie die  **[SaveData](../functions/function-savedata-loaddata.md)**-Funktion, um die Aufzeichnungen lokal zu speichern, oder die  **[Patch](../functions/function-patch.md)**-Funktion, um eine Datenquelle zu aktualisieren.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+Es gelten dieselben Richtlinien wie für **[Schaltflächen](control-button.md)**, da ein **Mikrofon** nur eine besondere Schaltfläche ist. Ziehen Sie außerdem Folgendes in Betracht:
+
+### <a name="audio-alternatives"></a>Audioalternativen
+* Sie sollten eine alternative Eingabemöglichkeit für Benutzer hinzufügen, die eine Sprachbehinderung haben oder nicht über ein Mikrofon verfügen. Z.B. eine **[Texteingabe](control-text-input.md)**, über die Benutzer Text eingeben können
+
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **[Bild](properties-visual.md)** und ggf. die Schaltfläche „Text“ und das Symbol
+
+Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.

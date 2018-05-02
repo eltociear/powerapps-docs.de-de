@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bb652f3ba6decad7cb6f93007eaec6340f230ca1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 194f00a670f3c879325603f519c1c86e9ba6cf2c
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="html-text-control-in-powerapps"></a>HTML-Textsteuerelement in PowerApps
 Ein Feld, in dem Text angezeigt wird und in dem HTML-Tags in Textformatierungen konvertiert werden.
@@ -32,7 +32,7 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**HTMLText** – Text, der in einem HTML-Textsteuerelement angezeigt wird und HTML-Tags enthalten kann.
+**HtmlText**: Text, der in einem HTML-Textsteuerelement angezeigt wird und HTML-Tags enthalten kann.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -85,8 +85,22 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 
 Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
-1. Fügen Sie ein **HTML-Text**-Steuerelement hinzu, und legen Sie die **HTMLText**-Eigenschaft auf diesen Wert fest:<br>
+1. Fügen Sie ein **HTML-Text**-Steuerelement hinzu, und legen Sie die **HtmlText**-Eigenschaft auf diesen Wert fest:<br>
    **Source.Text**
    
      Das **HTML-Text**-Steuerelement zeigt denselben Text wie das **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) an. Allerdings werden Tags in die entsprechenden Zeichen umgewandelt.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+**HTML-Text** soll nicht interaktiv sein. Dieses Steuerelement sollte nur zum Anzeigen von Text verwendet werden.
+
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
+* Text mit benutzerdefinierten Farben und dessen Hintergrund
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **HtmlText** muss vorhanden sein.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **HtmlText** sollte keine interaktiven Elemente wie `<button>`, `<a>` oder `<input>` enthalten. Das **[TabIndex](properties-accessibility.md)**-System in PowerApps ignoriert Elemente in **HtmlText**.

@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2017
 ms.author: kfend
-ms.openlocfilehash: 431fb0233fa58d59a62a9d5d2cf07bfdd23d6271
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 117d55cedb7c11bcdb6f69f8c10a8df2f2512b89
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-table-control-in-powerapps"></a>Datentabellen-Steuerelement in PowerApps
 Dient zum Anzeigen eines Satzes von Daten im Tabellenformat.
@@ -145,3 +145,16 @@ Das **Datentabellen**-Steuerelement wurde am 5. Mai 2017 in PowerApps eingeführ
    
     ![Mit der Datentabelle verbundenes Bearbeitungsformular](./media/control-data-table/connected-form-data-table.png)
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* [**Color**](properties-color-border.md) und [**Fill**](properties-color-border.md)
+* **HeadingColor** und **HeadingFill**
+* **SelectedColor** und **SelectedFill**
+* [**HoverColor**](properties-color-border.md) und [**HoverFill**](properties-color-border.md)
+
+Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Die **NoDataText**-Eigenschaft muss vorhanden sein.

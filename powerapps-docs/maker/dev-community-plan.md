@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: 3a7407f0f93ee5cd6bb749f79c258a1cf6c20b96
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 13952338015fd6ec6f951cb9447cc5203f7159e0
+ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:
@@ -55,8 +55,8 @@ Mit der individuellen Umgebung erhalten Sie die folgenden Funktionen:
 | **Wichtigste Funktionen** | |
 | Apps erstellen und ausführen |Ja. Sie können Apps in unbeschränktem Umfang erstellen |
 | Apps freigeben\* |Nein |
-| Common Data Service nutzen |Ja |
-| Daten mithilfe von Common Data Service modellieren |Ja |
+| Common Data Service nutzen |Ja** |
+| Daten mithilfe von Common Data Service modellieren |Ja** |
 | Unternehmensweite Verwaltung der Umgebungen und Benutzerrichtlinien |Ja |
 | **Konnektivität** | |
 | Herstellen von Verbindungen mit Office 365, Dynamics 365 und anderen Connectors |Ja |
@@ -65,9 +65,9 @@ Mit der individuellen Umgebung erhalten Sie die folgenden Funktionen:
 | Auf lokale Daten mithilfe eines lokalen Gateways zugreifen |Ja |
 | Erstellen von benutzerdefinierten Connectors zum Herstellen von Verbindungen mit Ihren eigenen Systemen |Ja. Sie können benutzerdefinierte Connectors in unbeschränktem Umfang erstellen |
 | **Common Data Service** | |
-| Erstellen und Ausführen von Anwendungen auf dem Common Data Service |Ja |
-| Ihre Daten in Common Data Service modellieren |Ja |
-| Erstellen einer Datenbank im Common Data Service |Ja |
+| Erstellen und Ausführen von Anwendungen auf dem Common Data Service |Ja** |
+| Modellieren Ihrer Daten in Common Data Service |Ja** |
+| Erstellen einer Datenbank in Common Data Service |Ja** |
 | **Verwaltung** | |
 | Hinzufügen von Arbeitskollegen als Ersteller und Administratoren von Umgebungen |Nein |
 | Hinzufügen von Arbeitskollegen zu Datenbankrollen |Nein |
@@ -75,6 +75,8 @@ Mit der individuellen Umgebung erhalten Sie die folgenden Funktionen:
 | Einrichten von Datenrichtlinien für die individuelle Umgebung |Ja |
 
 *Sie können Apps, Flows, Verbindungen usw. nicht für andere Benutzer Ihres Mandanten freigeben. Ferner können Sie andere Benutzer weder als Umgebungsadministratoren oder -ersteller hinzufügen noch zu den Datenbankrollen im Admin Center hinzufügen.
+
+**Sie können derzeit keine Datenbank mit Common Data Service in einer individuellen Umgebung erstellen. Diese Funktion ist aber bald wieder verfügbar. Wenn Sie zuvor eine Datenbank erstellt haben, können Sie diese weiterhin ohne Probleme nutzen. 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>Welche Kapazitätsgrenzen bestehen für die individuelle Umgebung?
 | **Kapazität** |  |

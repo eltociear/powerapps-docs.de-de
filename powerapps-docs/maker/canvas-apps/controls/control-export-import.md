@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 2bc1eddc09fde255fbc1f7a7899ba2f416374e0c
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e6c883a5d17d87c58fafd4f10d1075364d616480
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Export-Steuerelement und Import-Steuerelement in PowerApps
 Steuerelemente zum Exportieren von Daten in eine lokale Datei und anschließenden Importieren dieser Daten in eine andere App in PowerApps.
@@ -58,6 +58,10 @@ Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlec
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
 **[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
@@ -92,6 +96,8 @@ Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlec
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
@@ -122,3 +128,6 @@ Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlec
 7. Drücken Sie F5, klicken oder tippen Sie auf **MyData**, klicken oder tippen Sie auf die Datei, die Sie exportiert haben, und klicken oder tippen Sie dann auf **Öffnen**.
 8. Drücken Sie ESC, klicken oder tippen Sie im Menü **Datei** auf **Collections** (Sammlungen), und vergewissern Sie sich, dass die aktuelle App die Daten enthält, die Sie exportiert haben.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+Es gelten dieselben Richtlinien wie für **[Schaltflächen](control-button.md)**, da **Export** und **Import** nur besondere Schaltflächen sind.

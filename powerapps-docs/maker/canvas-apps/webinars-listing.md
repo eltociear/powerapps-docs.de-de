@@ -4,7 +4,7 @@ description: Zeigt eine Liste der früheren und zukünftigen Webinare an, einsch
 services: ''
 suite: powerapps
 documentationcenter: na
-author: anhthuchang
+author: audrieMSFT
 manager: anneta
 editor: ''
 tags: ''
@@ -13,52 +13,49 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 3/1/2018
-ms.author: v-malyng
-ms.openlocfilehash: 824f15ba3747ae5788aaa230787cf68993be2ee4
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.date: 4/18/2018
+ms.author: audrie
+ms.openlocfilehash: e26afdee008b54285e0c20e869f8ccabb8aae215
+ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. In den Kommentaren unter diesem Thema können Sie gerne weitere Themen vorschlagen.
 
 ## <a name="upcoming-webinars"></a>Anstehende Webinare ##
-**Connector-Reihe | Project Online (PWA)**
-<br>von Audrie Gordon
-<br>*12. März, 19:00 Uhr MEZ*
+**Getting Started | Understanding Model Driven App Templates with Casey Burke** (Erste Schritte | Grundlegendes zu modellgesteuerten App-Vorlagen mit Casey Burke)
+<br>von Casey Burke
+<br>*19. April, 10:00 Uhr PST, 12:00 Uhr EST*
 
-In dieser Demo der Connector-Reihe wird die Verwendung der Connectoroptionen für Project Online (auch als PWA bezeichnet) vorgestellt. Sie können gerne teilnehmen und Ihre Fragen zum Erstellen von Apps stellen, in denen Portfolioverwaltungstools und Project Online genutzt werden.
+Der Microsoft Program Manager Casey Burke erläutert die Architektur von modellgesteuerten App-Vorlagen. Hier erfahren Sie, wie Sie diese Vorlagen anpassen, um eigene Unternehmensziele zu erreichen.
 
-[Klicken Sie hier, um am 12. März live dabei zu sein](https://www.youtube.com/watch?v=oncGxlmFqy8)
+[Klicken Sie hier, um am 19. April live dabei zu sein](https://www.youtube.com/watch?v=FShakkXKiS8) 
 
+**Deep Dive | Using PowerApps for Business Process Management (BPM) by Dawid van Heerden** (Deep Dive | Verwenden von PowerApps für die Verwaltung von Geschäftsprozessen mit Dawid van Heerden)
+<br>von Audrie Gordon und Dawid van Heerden
+<br>*23. April, 10:00 Uhr PST, 12:00 Uhr EST*
 
-**Deep Dive | Erstellen von Serverpatchlösungen mit PowerApps von Brian Blanchard (Teil 2)**
-<br>von Brian Blanchard und Audrie Gordon
-<br>*19. März, 19:00 Uhr MEZ*
-
-Dies ist der zweite Teil von Brian Blanchards Demonstration zum Erstellen einer App für sein Team, das damit Zeitpläne für Serverpatches verwaltet. Er erklärt detailliert die Einrichtung von Azure Automation sowie komplexe Arbeitsabläufe in Microsoft Flow. Brian Blanchard hat es so geschafft, seinem Team mit PowerApps und Flow Zeit und Geld zu sparen.
-
-[Klicken Sie hier, um am 19. März live dabei zu sein](https://www.youtube.com/watch?v=oncGxlmFqy8)
-
-**Deep Dive | PowerApps-Analysen zum Durchklicken von Vivek Bavishi**
-<br>von Vivek Bavishi und Audrie Gordon
-<br>*17. April, 19:00 Uhr MEZ*
-
-Vivek Bavishi aus der Gruppe International PowerApps Champions präsentiert gemeinsam mit Audrie Gordon vom PowerApps-Team einen einfachen Ansatz zum Erstellen eigener Analysen zum Durchklicken mit PowerApps und Flow. Ergänzen Sie Ihre Berichte um Statistiken, die transparent machen, wie die App-Benutzer in ihren Anwendungen navigieren. So können Sie Ihre Annahmen anhand von Daten zur App-Nutzung und zum Design bestätigen. Wenn Sie sich ernsthaft mit dem Erstellen von Apps beschäftigen, dürfen Sie Viveks Präsentation nicht verpassen.
-
-[Klicken Sie hier, um am 17. April live dabei zu sein](https://www.youtube.com/watch?v=OM-rlhKJFTA)
-
-**Connector-Reihe | Vorteile der Nutzung der Common Data Service**
-<br>von Audrie Gordon
-<br>*23. April, 19:30 Uhr MEZ*
-
-Haben Sie sich schon mit dem Common Data Service (CDS) beschäftigt? Kennen Sie die Vorteile eines einheitlichen Datenschemas für Ihre Unternehmensanwendungen? Haben Sie schon von allen Neuigkeiten in diesem Bereich gehört?
-
-In diesem Webinar werden die Vorteile des Common Data Service in allen Microsoft Cloud-Abonnements vorgestellt (zur Unterstützung von Office 365-, Azure- und Dynamics 365-Apps). In diesem Live-Webinar erfahren Sie, was wir bei CDS planen und wie Sie Ihre Apps mit dieser Plattform optimal modellieren können. Wir freuen uns darauf, Ihnen ein paar der unendlich vielen Möglichkeiten vorzustellen!
+PowerApps eignet sich hervorragend, um Geschäftsanwendungen SCHNELL zu erstellen. Dieses Video veranschaulicht, wie Sie durch die Verwendung von einer einzigen Plattform Geschäftsprozesse mit mehreren Schritten optimieren, die verschiedene Rollen, Schritte und Routingoptionen umfassen.
 
 [Klicken Sie hier, um am 23. April live dabei zu sein](https://www.youtube.com/watch?v=JY8r46HnHoI)
+
+**Deep Dive | Laura Rogers from IWMentor Shares Best Practices for Production Apps** (Deep Dive | Laura Rogers von IWMentor erzählt über Best Practices für Produktions-Apps)
+<br>von Audrie Gordon und Laura Rodgers
+<br>*14. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
+
+Laura Rogers von IW Mentor trainiert seit Jahren Produktions-Apps für Unternehmen und stellt diese bereit. Wir haben alle viel von ihr gelernt, vor allem diejenigen, die mit SharePoint arbeiten. In diesem Webinar spricht Laura über die Best Practices und gelernten Lektionen beim Erstellen von Produktions-Apps mit PowerApps und der Geschäftsanwendungsplattform. Außerdem zeigt sie die Demo einer besonderen Produktions-App zum Nachverfolgen von Rechnungen und Maßnahmen. Verpassen Sie es nicht! Website von IW Mentor: https://www.iwmentor.com/
+
+[Klicken Sie hier, um am 14. Mai live dabei zu sein](https://www.youtube.com/watch?v=I50GtV9w7Os)
+
+**Inside the Universal Audit App: See what PowerApps and Flow are capable of – Paul Culmsee** (Einblick in die „Universal Audit App“: Potenzial von PowerApps und Flow – Paul Culmsee)
+<br>von Paul Culmsee
+<br>*14. Juni, 18:00 Uhr PST, 21:00 Uhr EST*
+
+Da diese beliebte PowerApps-App drei- bis fünfmal pro Woche angefordert wurde, ist sie mittlerweile weltweit bereitgestellt worden. In diesem Webinar erzähle ich, wie sie entwickelt wurde, wie wir das volle Potenzial von PowerApps und Flow genutzt haben und welche Anpassungen für Clients erfolgt sind. Dies ist eine sehr sinnvolle Ergänzung für alle, die mit einer vollständigen Lösung beginnen möchten, die auf der ganzen Welt eingesetzt wird. 
+
+[Klicken Sie hier, um am 14. Juni live dabei zu sein](https://www.youtube.com/watch?v=6Wn47bDOMEE)
 
 ## <a name="past-webinars"></a>Frühere Webinare ##
 Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung.
@@ -79,15 +76,19 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Getting started with PowerApps controls (Erste Schritte mit Power Apps-Steuerelementen)**
 <br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=lUo0DXvJENI)
 
+**Erste Schritte | Produktintegration: Teams + PowerApps – Tipps und Tricks**
+<br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=obBQk-aSElI)
+
 **Get started with the Common Data Service (Erste Schritte mit dem Common Data Service)**
 <br>von Jono Luk [Jetzt ansehen](https://info.microsoft.com/US-PowerBI-WBNR-FY17-04Apr-18-GettingStartedwiththeCommonDataServices312618_01Registration-ForminBody.html)
+
+**Getting Started with Model Driven Apps** (Erste Schritte mit modellgesteuerten Apps)
+<br>von Adrian Orth [Jetzt ansehen](https://www.youtube.com/watch?v=buDDSzJTgns)
+
 
 ### <a name="pro-topics"></a>Expertenthemen ###
 **Deploying your PowerApps applications (Bereitstellen von PowerApps-Anwendungen)**
 <br>von James Oleinik [Jetzt ansehen](https://www.youtube.com/watch?v=LF49hFB14Cs)
-
-**Deep dive on PowerApps formulas (PowerApps-Formeln im Detail)**
-<br>von Greg Lindhorst [Jetzt ansehen](https://www.youtube.com/watch?v=PuePMMuj5ps)
 
 **Rebuilding an InfoPath Designer form in PowerApps (Erneutes Erstellen eines InfoPath Designer-Formulars in PowerApps)**
 <br>von Daniel Christian [Jetzt ansehen](https://www.youtube.com/watch?v=ohQcxcVZSK4)
@@ -131,17 +132,30 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Verwenden von PowerApps und Flow zum Erstellen von „Branchenportalen“**
 <br>von Vishwas Lele [Jetzt ansehen](http://www.youtube.com/watch?v=eSMAAFHK44c)
 
-**Arbeiten mit Connectors: Verwenden des Planner-Connectors**
-<br> von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
-**Erste Schritte | Produktintegration: Teams + PowerApps – Tipps und Tricks**
-<br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=obBQk-aSElI)
+### <a name="deep-dives"></a>Deep Dives ###
+**Deep Dive | PowerApps formulas (Deep Dive | PowerApps-Formeln)**
+<br>von Greg Lindhorst [Jetzt ansehen](https://www.youtube.com/watch?v=PuePMMuj5ps)
+
+**Deep Dive | Erstellen von Serverpatchlösungen mit PowerApps von Brian Blanchard**
+<br>von Brian Blanchard und Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=QAe0oBecowU)
+
+**Deep Dive | Erstellen von Serverpatchlösungen mit PowerApps von Brian Blanchard (Teil 2)**
+<br>von Brian Blanchard und Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=FDU7ONCN4_U)
+
+**Deep Dive | PowerApps-Analysen zum Durchklicken von Vivek Bavishi**
+<br>von Vivek Bavishi und Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+
+### <a name="connector-series"></a>Connector-Reihe ###
+**Connector-Reihe | Arbeiten mit Connectors: Verwenden des Planner-Connectors**
+<br> von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=NBPL9Uw7qzg)
 
 **Connector-Reihe | Das Potenzial von Office Graph mit PowerApps**
 <br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=AOGGyoElGaQ)
 
-**Deep Dive | Erstellen von Serverpatchlösungen mit PowerApps von Brian Blanchard**
-<br>von Brian Blanchard und Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=QAe0oBecowU)
+**Connector-Reihe | Project Online (PWA)**
+<br>von Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=oncGxlmFqy8)
 
 
 ### <a name="app-designer-topics"></a>App-Designer-Themen ###

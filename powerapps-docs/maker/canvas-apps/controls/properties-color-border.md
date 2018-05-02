@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 913e9b78445db03fbd59fedbdd0bf9d992175bf1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e9ddbc3e413b99fd7afb8d483a161d50f9034673
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>Farb- und Rahmeneigenschaften in PowerApps
 ## <a name="overview"></a>Übersicht
@@ -48,12 +48,17 @@ Diese Eigenschaften gelten normalerweise, wenn der Benutzer nicht mit dem Steuer
 
 * Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Anzeigeformular](control-form-detail.md)**, **[Dropdown](control-drop-down.md)**, **[Bearbeitungsformular](control-form-detail.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[HTML-Text](control-html-text.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Stifteingabe](control-pen-input.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Bildschirm](control-screen.md)**, **[Form](control-shapes-icons.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)**.
 
-**FocusedBorderThickness**: Die Linienstärke des Rahmen eines Steuerelements, wenn es den Tastaturfokus hat.
+## <a name="focused"></a>Fokus
+Diese Eigenschaften sind wirksam, wenn das Steuerelement der Fokus ist.
 
-* Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Anzeigeformular](control-form-detail.md)**, **[Dropdown](control-drop-down.md)**, **[Bearbeitungsformular](control-form-detail.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[HTML-Text](control-html-text.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Stifteingabe](control-pen-input.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Bildschirm](control-screen.md)**, **[Form](control-shapes-icons.md)**, **[Texteingabe](control-text-input.md)**, **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)**.
+**FocusedBorderColor**: die Rahmenfarbe eines Steuerelements, wenn dieses der Fokus ist.
+
+**FocusedBorderThickness**: die Stärke des Rahmen eines Steuerelements, wenn es den Fokus hat.
+
+* Diese Eigenschaften gelten für die Steuerelemente **[Bild hinzufügen](control-add-picture.md)**, **[Anlagen](control-attachments.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Kamera](control-camera.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Kombinationsfeld](control-combo-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Radio](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Form](control-shapes-icons.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Schalter](control-toggle.md)** und **[Video](control-audio-video.md)**.
 
 ## <a name="disabled"></a>Deaktiviert
-Diese Eigenschaften sind wirksam, wenn die Steuerelemente deaktiviert sind.  Ein Steuerelement kann deaktiviert werden, indem die **[Disabled](properties-core.md)**-Eigenschaft auf *true* festgelegt wird.
+Diese Eigenschaften sind wirksam, wenn das Steuerelement deaktiviert ist.  Ein Steuerelement kann deaktiviert werden, indem die **[Disabled](properties-core.md)**-Eigenschaft auf *true* festgelegt wird.
 
 **DisabledBorderColor**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 

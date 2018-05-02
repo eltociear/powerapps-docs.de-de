@@ -1,0 +1,352 @@
+---
+title: Reagieren auf Anforderungen zum Löschen von DSR-Anforderungen für Kundendaten | Microsoft-Dokumentation
+description: Reagieren auf Anforderungen zum Löschen von DSR-Anforderungen für Kundendaten
+services: powerapps
+suite: powerapps
+documentationcenter: na
+author: jamesol-msft
+manager: kfile
+editor: ''
+tags: ''
+ms.service: powerapps
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 04/17/2018
+ms.author: jamesol
+ms.openlocfilehash: 67e1ad0056f80b892343506ec9a89845e0bca05e
+ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/20/2018
+---
+# <a name="responding-to-delete-data-subject-rights-dsr-requests-for-customer-data-in-powerapps"></a>Reagieren auf Anforderungen zum Löschen von DSR-Anforderungen für Kundendaten in PowerApps
+
+Das „Recht auf Löschung“ von personenbezogenen Daten aus den Kundendaten einer Organisation ist ein Kernpunkt der Schutzbestimmungen der Datenschutz-Grundverordnung (DSGVO). Das Entfernen personenbezogener Daten beinhaltet das Entfernen der vom System generierten Protokolle, jedoch nicht der Informationen aus Überwachungsprotokollen.
+
+Mit PowerApps können Benutzer Branchenanwendungen erstellen, die wichtiger Bestandteil des täglichen Betriebs Ihrer Organisation sind. Wenn ein Benutzer Ihre Organisation verlässt, müssen Sie manuell überprüfen und bestimmen, ob bestimmte, vom Benutzer erstellte Daten und Ressourcen gelöscht werden sollen. Andere personenbezogene Daten werden automatisch gelöscht, sobald das Konto des Benutzers aus Azure Active Directory gelöscht wird.
+
+Im Folgenden finden Sie eine Aufteilung der personenbezogenen Daten, die automatisch gelöscht werden, und der Daten, die manuell überprüft und gelöscht werden müssen:
+
+Macht manuelles Überprüfen und Löschen erforderlich |   Wird automatisch gelöscht, wenn der Benutzer aus Azure Active Directory gelöscht wird.
+--- | ---
+Umgebung\** | Gateway
+Umgebungsberechtigungen\*** | Gatewayberechtigungen
+Canvas-App\** | PowerApps-Benachrichtigungen
+Berechtigungen für die Canvas-App | PowerApps-Benutzereinstellungen
+Verbindung\** | PowerApps-Benutzeranwendungseinstellungen
+Verbindungsberechtigungen |
+Benutzerdefinierter Connector\** |
+Berechtigungen für benutzerdefinierte Connectors |  
+
+\** Jede dieser Ressourcen enthält Datensätze des Typs „Erstellt von“ und „Geändert von“, die personenbezogene Daten enthalten. Aus Sicherheitsgründen werden diese Datensätze so lange aufbewahrt, bis die Ressource gelöscht wird.
+
+\*** Bei Umgebungen, die über eine CDS für Apps-Datenbank (CDS = Common Data Service) verfügen, werden Umgebungsberechtigungen (d.h., welchen Benutzern die Rolle „Umgebungsersteller“ und die Rolle „Administrator“ zugewiesen ist) als Datensätze in dieser Datenbank gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer von CDS für Apps finden Sie unter [Ausführen von DSR-Anforderungen für Kundendaten in Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251).
+
+Für die Daten und Ressourcen, die manuell überprüft werden müssen, bietet PowerApps folgende Möglichkeiten für die Neuzuweisung (falls erforderlich) oder Löschung der personenbezogenen Daten eines bestimmen Benutzers:
+
+- Websitezugriff: [PowerApps-Website](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- PowerShell-Zugriff: PowerApps-Cmdlets für [App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) und [Administratoren](https://go.microsoft.com/fwlink/?linkid=871804) sowie Cmdlets für [lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238).
+Im Folgenden finden Sie eine Aufteilung der Möglichkeiten, die zum Löschen der einzelnen Ressourcentypen verfügbar sind, die personenbezogene Daten enthalten:
+
+Ressourcen mit personenbezogenen Daten | Websitezugriff | PowerShell-Zugriff
+--- | --- | ---
+Umgebung | PowerApps Admin Center |  PowerApps-Cmdlets
+Umgebungsberechtigungen**   | PowerApps Admin Center | PowerApps-Cmdlets
+Canvas-App  | PowerApps Admin Center <br> PowerApps-Site| PowerApps-Cmdlets
+Berechtigungen für die Canvas-App  | PowerApps Admin Center | PowerApps-Cmdlets
+Verbindung | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
+Verbindungsberechtigungen | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
+Benutzerdefinierter Connector | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
+Berechtigungen für benutzerdefinierte Connectors | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
+
+\** Mit der Einführung des CDS für Apps werden bei Erstellung einer Datenbank innerhalb der Umgebung Umgebungsberechtigungen und modellgesteuerte App-Berechtigungen als Datensätze in dieser Datenbankinstanz gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer von CDS für Apps finden Sie unter [Ausführen von DSR-Anforderungen für Kundendaten in Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251).
+
+## <a name="prerequisites"></a>Voraussetzungen
+
+### <a name="for-users"></a>Für Benutzer
+Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge über die [PowerApps-Website](https://web.powerapps.com) oder [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
+
+### <a name="for-administrators"></a>Für Administratoren
+Für die Durchführung der in diesem Dokument beschriebenen Verwaltungsvorgänge über das [PowerApps Admin Center](https://admin.powerapps.com/), das Microsoft Flow Admin Center oder die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benötigen Sie ein Konto mit den folgenden Berechtigungen:
+
+- Eine kostenpflichtige Lizenz oder eine Testlizenz für PowerApps Plan 2. Sie können sich [für eine Testlizenz registrieren](http://web.powerapps.com/trial) und diese nach 30 Tagen verlängern.
+- Wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen, sind darüber hinaus Berechtigungen für den [globalen Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder den [globalen Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) erforderlich. Andernfalls haben Sie nur Zugriff auf die Umgebungen und Umgebungsressourcen, bei denen Sie über Berechtigungen für den Umgebungsadministrator verfügen.
+
+## <a name="step-1-delete-or-reassign-all-environments-created-by-the-user"></a>Schritt 1: Löschen oder Neuzuweisen sämtlicher vom Benutzer erstellten Umgebungen
+Als Administrator müssen Sie bei der Verarbeitung einer DSR-Löschanforderung für die einzelnen vom Benutzer erstellten Umgebungen zwei Entscheidungen treffen:
+
+1.  Wenn Sie feststellen, dass die Umgebung von keiner anderen Person Ihrer Organisation verwendet wird, können Sie die Umgebung löschen.
+
+2.  Wenn Sie feststellen, dass die Umgebung noch benötigt wird, können Sie entscheiden, die Umgebung nicht zu löschen, und sich selbst (oder einen anderen Benutzer in Ihrer Organisation) als Umgebungsadministrator hinzufügen.
+
+> [!IMPORTANT]
+> Durch das Löschen einer Umgebung werden sämtliche Ressourcen innerhalb der Umgebung (einschließlich Apps, Flows, Verbindungen usw.) unwiderruflich gelöscht. Daher sollten Sie die Inhalte einer Umgebung überprüfen, bevor Sie diese löschen.
+
+### <a name="give-access-to-a-users-environments-from-the-powerapps-admin-center"></a>Erteilen von Zugriff auf Benutzerumgebungen über das PowerApps Admin Center
+Ein Administrator kann Administratorzugriff auf eine Umgebung erteilen, die über das [PowerApps Admin Center](https://admin.powerapps.com/) von einem Benutzer erstellt wurde, indem er die folgenden Schritte ausführt:
+
+1. Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus.
+
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+
+2. Wenn die Umgebung von dem Benutzer über die DSR-Anforderung erstellt wurde, wählen Sie **Sicherheit** aus, und fahren Sie mit den unter [Administer environments](environments-administration.md) (Umgebungen verwalten) beschriebenen Schritten fort, um sich selbst oder einem Benutzer in Ihrer Organisation Administratorberechtigungen zu erteilen.
+
+    ![Umgebungssicherheit](./media/powerapps-gdpr-delete-dsr/share-environment.png)
+
+### <a name="delete-environments-created-by-a-user-from-the-powerapps-admin-center"></a>Löschen der vom Benutzer erstellten Umgebungen über das PowerApps Admin Center
+Ein Administrator kann Umgebungen überprüfen und löschen, die über das [PowerApps Admin Center](https://admin.powerapps.com/) von einem bestimmten Benutzer erstellt wurden, indem er die folgenden Schritte ausführt:
+
+1. Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus.
+
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+
+2. Wenn die Umgebung von dem Benutzer über die DSR-Anforderung erstellt wurde, wählen Sie **Löschen** aus, und fahren Sie mit den Schritten zum Löschen der Umgebung fort:
+
+    ![Löschen der Umgebung](./media/powerapps-gdpr-delete-dsr/delete-environment.png)
+
+### <a name="give-access-to-a-users-environments-using-powershell"></a>Erteilen von Zugriff auf die Umgebungen eines Benutzers mithilfe von PowerShell
+Ein Administrator kann sich selbst (oder einem anderen Benutzer in seiner Organisation) Zugriff auf sämtliche Umgebungen erteilen, die ein Benutzer über die Funktion **Set-AdminEnvironmentRoleAssignment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) erstellt hat:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$myUserId = $global:currentSession.UserId
+
+#Assign yourself as an admin to each environment created by the user
+Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Set-AdminEnvironmentRoleAssignment -RoleName EnvironmentAdmin -PrincipalType User -PrincipalObjectId $myUserId
+
+#Retrieve the environment role assignments to confirm
+Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Get-AdminEnvironmentRoleAssignment
+```
+
+> [!IMPORTANT]
+> Diese Funktion kann nur in Umgebungen ausgeführt werden, die nicht über eine CDS für Apps-Datenbankinstanz verfügen.
+
+### <a name="delete-environments-created-by-a-user-using-powershell"></a>Löschen der von einem Benutzer mithilfe von PowerShell erstellten Umgebungen
+ Ein Administrator kann mit der Funktion **Remove-AdminEnvironment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) sämtliche Umgebungen löschen, die ein Benutzer erstellt hat:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+# Retrieve all environments created by the user and then delete them
+Get-AdminEnvironment -CreatedBy $deleteDsrUserId | Remove-AdminEnvironment
+```
+
+## <a name="step-2-delete-the-users-permissions-to-all-other-environments"></a>Schritt 2: Löschen der Benutzerberechtigungen für sämtliche andere Umgebungen
+Benutzern können in einer Umgebung Berechtigungen zugewiesen werden (z.B. Umgebungsadministrator, Umgebungsersteller usw.), die im PowerApps-Dienst als „Rollenzuweisung“ gespeichert werden.
+Mit der Einführung des CDS für Apps werden diese „Rollenzuweisungen“ bei Erstellung einer Datenbank innerhalb der Umgebung als Datensätze innerhalb dieser Datenbankinstanz gespeichert.
+Weitere Informationen finden Sie unter [Verwalten von Umgebungen](environments-administration.md).
+
+### <a name="for-environments-without-a-cds-for-apps-database"></a>Bei Umgebungen ohne CDS für Apps-Datenbank
+
+#### <a name="powerapps-admin-center"></a>PowerApps Admin Center
+Ein Administrator kann die Umgebungsberechtigungen eines Benutzer beginnend mit dem [PowerApps Admin Center](https://admin.powerapps.com/) löschen, indem er die folgenden Schritte ausführt:
+
+1.  Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus.
+
+    Sie müssen ein [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder ein [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sein, um sämtliche in Ihrer Organisation erstellten Umgebungen überprüfen zu können.
+
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+
+2.  Wählen Sie **Sicherheit** aus.
+
+    Wenn in Ihrer Umgebung keine CDS für Apps-Datenbank vorhanden ist, wird Ihnen der Abschnitt **Umgebungsrollen** angezeigt.
+
+4.  Wählen Sie unter **Umgebungsrollen** die Optionen **Umgebungsadministrator** und **Umgebungsersteller** separat aus, und suchen Sie über die Suchleiste nach dem Namen des Benutzers.
+
+    ![Seite „Umgebungsrollen“](./media/powerapps-gdpr-delete-dsr/admin-environment-role-share-page.png)
+
+5.  Wenn der Benutzer auf beide Rollen Zugriff hat, entfernen Sie über die Anzeige **Benutzer** die Berechtigungen, und wählen Sie **Speichern** aus.
+
+#### <a name="powershell"></a>PowerShell
+Ein Administrator kann über die Funktion **Remove-AdminEnvironmentRoleAssignment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) alle Rollenzuweisungen zu Umgebungen für einen Benutzer über sämtliche Umgebungen ohne CDS für Apps-Datenbank löschen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#find all environment role assignments for the user for environments without a CDS for Apps instance and delete them
+Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
+```
+
+> [!IMPORTANT]
+> Diese Funktion kann nur in Umgebungen ausgeführt werden, die nicht über eine CDS für Apps-Datenbankinstanz verfügen.
+
+### <a name="for-environments-with-a-cds-for-apps-database"></a>Bei Umgebungen mit CDS für Apps-Datenbank
+Mit der Einführung von CDS für Apps werden diese „Rollenzuweisungen“ bei Erstellung einer Datenbank innerhalb der Umgebung als Datensätze innerhalb dieser Datenbankinstanz gespeichert. Informationen zum Entfernen von personenbezogenen Daten aus einer Datenbankinstanz in CDS für Apps finden Sie unter „Entfernen personenbezogener Benutzerdaten in Common Data Service“
+
+## <a name="step-3-delete-or-reassign-all-canvas-apps-owned-by-a-user"></a>Schritt 3: Löschen oder Neuzuweisen sämtlicher Canvas-Apps eines Benutzers
+
+### <a name="reassign-a-users-canvas-apps-using-the-powerapps-admin-powershell-cmdlets"></a>Neuzuweisen der Canvas-Apps eines Benutzers über die PowerShell-Cmdlets für Administratoren in PowerApps
+Wenn ein Administrator beschließt, die Canvas-Apps eines Benutzers nicht zu löschen, kann er diese Apps über die Funktion **Set-AdminAppOwner** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) neu zuweisen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$newAppOwnerUserId = "72c272b8-14c3-4f7a-95f7-a76f65c9ccd8"
+
+#find all apps owned by the DSR user and assigns them a new owner
+Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerUserId
+```
+
+### <a name="delete-a-users-canvas-app-using-the-powerapps-site"></a>Löschen der Canvas-App eines Benutzers über die PowerApps-Website
+Ein Benutzer kann eine App über die [PowerApps-Website](https://web.powerapps.com) löschen. Ausführliche Informationen zum Löschen einer App finden Sie unter „Löschen einer App“.
+
+### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-center"></a>Löschen der Canvas-App eines Benutzers über das PowerApps Admin Center
+Ein Administrator kann über das [PowerApps Admin Center](https://admin.powerapps.com/) von einem Benutzer erstellte Apps löschen, indem er die folgenden Schritte ausführt:
+
+1.  Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus.
+
+    Sie müssen ein [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder ein [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sein, um sämtliche in Ihrer Organisation erstellten Umgebungen überprüfen zu können.
+
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+
+2.  Wählen Sie **Ressourcen** > **Apps** aus.
+
+3.  Suchen Sie über die Suchleiste nach dem Namen des Benutzers. Dabei werden sämtliche Apps angezeigt, die der Benutzer in dieser Umgebung erstellt hat:
+
+    ![Apps suchen](./media/powerapps-gdpr-delete-dsr/search-apps.png)
+
+4.  Wählen Sie bei jeder App des Benutzers die Option **Details** aus:
+
+    ![App-Details auswählen](./media/powerapps-gdpr-delete-dsr/select-app-details.png)
+
+5.  Wählen Sie **Löschen** aus, um die einzelnen Apps zu löschen:
+
+### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-powershell-cmdlets"></a>Löschen der Canvas-App eines Benutzers über die PowerShell-Cmdlets für Administratoren in PowerApps
+Wenn ein Administrator beschließt, sämtliche Canvas-Apps eines Benutzers zu löschen, kann er dies über die Funktion **Remove-AdminApp** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) machen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#find all apps owned by the DSR user and deletes them
+Get-AdminApp -Owner "0ecb1fcc-6782-4e46-a4c4-738c1d3accea" | Remove-AdminApp
+```
+
+## <a name="step-4-delete-the-users-permissions-to-canvas-apps"></a>Schritt 4: Löschen der Berechtigungen für den Benutzer für Canvas-Apps
+Sobald eine App für einen Benutzer freigegeben wird, speichert PowerApps einen Datensatz mit dem Namen „Rollenzuweisung“, der die Benutzerberechtigungen („CanEdit“ oder „CanUser“) für die Anwendung beschreibt. Weitere Informationen finden Sie im Artikel „Freigeben von Apps“.
+
+> [!NOTE]
+> Beim Löschen der App werden die Rollenzuweisungen einer App gelöscht.
+
+> [!NOTE]
+> Die Rollenzuweisung des App-Besitzers kann nur gelöscht werden, indem ein neuer Besitzer für die App zugewiesen wird.
+
+### <a name="powerapps-admin-center"></a>PowerApps Admin Center
+Ein Administrator kann über das [PowerApps Admin Center](https://admin.powerapps.com/) Rollenzuweisungen zu Apps für einen Benutzer löschen, indem er die folgenden Schritte ausführt:
+
+1.  Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus.
+
+    Sie müssen ein [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder ein [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sein, um sämtliche in Ihrer Organisation erstellten Umgebungen überprüfen zu können.
+
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-delete-dsr/admin-center-landing.png)
+
+2.  Wählen Sie bei jeder Umgebung **Ressourcen** > **Apps** aus.
+
+3.  Wählen Sie bei jeder App in der Umgebung **Freigabe** aus:
+
+    ![App-Freigabe auswählen](./media/powerapps-gdpr-delete-dsr/select-admin-share-nofilter.png)
+
+6.  Wenn der Benutzer auf die App Zugriff hat, entfernen Sie über die Anzeige **Freigabe** der App die zugehörigen Berechtigungen, und wählen Sie **Speichern** aus.
+
+    ![Verwaltungsseite „App-Freigabe“](./media/powerapps-gdpr-delete-dsr/admin-share-page.png)
+
+### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
+Ein Administrator kann über die Funktion **Remove-AdminAppRoleAssignmnet** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) sämtliche Rollenzuweisungen zu Canvas-Apps eines Benutzers löschen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#find all app role assignments for the DSR user and deletes them
+Get-AdminAppRoleAssignment -UserId $deleteDsrUserId | Remove-AdminAppRoleAssignment
+```
+
+## <a name="step-5-delete-connections-created-by-a-user"></a>Schritt 5: Löschen der von einem Benutzer erstellten Verbindungen
+Verbindungen werden zusammen mit Connectors verwendet, wenn eine Verbindung mit anderen APIs und SaaS-Systemen hergestellt wird.  Verbindungen umfassen Verweise auf den Benutzer, der diese Verbindungen erstellt hat. Sie können gelöscht werden, um sämtliche Verweise auf den Benutzer zu entfernen.
+
+### <a name="powershell-cmdlets-for-app-creators"></a>PowerShell-Cmdlets für App-Ersteller
+Ein Benutzer kann über die Funktion „Remove-Connection“ in den [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) sämtliche seiner Verbindungen löschen:
+
+```
+Add-PowerAppsAccount
+
+#Retrieves all connections for the calling user and deletes them
+Get-Connection | Remove-Connection
+```
+
+### <a name="powershell-cmdlets-for-powerapps-administrators"></a>PowerShell-Cmdlets für Administratoren in PowerApps
+Die Funktion, mit der ein Administrator mithilfe von [PowerShell-Cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) die Verbindungen eines Benutzers finden und löschen kann, befindet sich in der Entwicklung.
+
+## <a name="step-6-delete-the-users-permissions-to-shared-connections"></a>Schritt 6: Löschen der Benutzerberechtigungen für freigegebene Verbindungen
+
+### <a name="powershell-cmdlets-for-app-creators"></a>PowerShell-Cmdlets für App-Ersteller
+Ein Benutzer kann über die Funktion „Remove-ConnectionRoleAssignment“ in den [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) sämtliche Rollenzuweisungen zu Verbindungen für freigegebene Verbindungen löschen:
+
+```
+Add-PowerAppsAccount
+
+#Retrieves all connection role assignments for the calling users and deletes them
+Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
+```
+> [!NOTE]
+> Rollenzuweisungen zu Besitzern können nur zusammen mit der Verbindungsressource gelöscht werden.
+
+### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
+Die Funktion, mit der ein Administrator mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) Rollenzuweisungen eines Benutzers zu Verbindungen suchen und löschen kann, befindet sich in der Entwicklung.
+
+## <a name="step-7-delete-custom-connectors-created-by-the-user"></a>Schritt 7: Löschen der benutzerdefinierten, vom Benutzer erstellten Connectors
+Benutzerdefinierte Connectors ergänzen die vorhandenen Out-of-Box-Connectors und ermöglichen das Herstellen einer Verbindung mit anderen APIs, SaaS-Systemen und benutzerentwickelten Systemen. Sie sollten den Besitz benutzerdefinierter Connectors an andere Benutzer in der Organisation übertragen oder den benutzerdefinierten Connector löschen.
+
+### <a name="powershell-cmdlets-for-app-creators"></a>PowerShell-Cmdlets für App-Ersteller
+Ein Benutzer kann über die Funktion „Remove-Connection“ in den [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) sämtliche seiner benutzerdefinierten Connectors löschen:
+
+```
+Add-PowerAppsAccount
+
+#Retrieves all custom connectors for the calling user and deletes them
+Get-Connector -FilterNonCustomConnectors | Remove-Connector
+```
+
+### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
+Die Funktion, mit der ein Administrator mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benutzerdefinierte Connectors eines Benutzers suchen und löschen kann, befindet sich in der Entwicklung.
+
+## <a name="step-8-delete-the-users-permissions-to-shared-custom-connectors"></a>Schritt 8: Löschen der Benutzerberechtigungen für freigegebene benutzerdefinierte Connectors
+
+### <a name="powershell-cmdlets-for-app-creators"></a>PowerShell-Cmdlets für App-Ersteller
+Ein Benutzer kann über die Funktion „Remove-ConnectorRoleAssignment“ in den [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) sämtliche Rollenzuweisungen zu Connectors für freigegebene benutzerdefinierte Connectors löschen:
+
+```
+Add-PowerAppsAccount
+
+#Retrieves all connector role assignments for the calling users and deletes them
+Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
+```
+
+> [!NOTE]
+> Rollenzuweisungen zu Besitzern können nur zusammen mit der Verbindungsressource gelöscht werden.
+
+### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
+Die Funktion, mit der ein Administrator mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) Rollenzuweisungen eines Benutzers zu Connectors suchen und löschen kann, befindet sich in der Entwicklung.
+
+## <a name="step-9-delete-the-users-personal-data-in-microsoft-flow"></a>Schritt 9: Exportieren der personenbezogenen Benutzerdaten in Microsoft Flow
+In PowerApps-Lizenzen sind immer Microsoft Flow-Funktionen enthalten. Microsoft Flow ist nicht nur in PowerApps-Lizenzen enthalten, sondern auch als eigenständiger Dienst.
+Weitere Informationen zum Reagieren auf DSR-Anforderungen für Benutzer, die den Microsoft Flow-Dienst verwenden, finden Sie unter [Ausführen von DSR-Anforderungen für Microsoft Flow-Kundendaten](https://go.microsoft.com/fwlink/?linkid=872250).
+
+> [!IMPORTANT]
+> Es wird empfohlen, dass Administratoren diesen Schritt für PowerApps-Benutzer ausführen.
+
+## <a name="step-10-delete-the-users-personal-data-in-instances-of-cds-for-apps"></a>Schritt 10: Exportieren der personenbezogenen Benutzerdaten in CDS für Apps-Instanzen
+Über bestimmte PowerApps-Lizenzen, einschließlich des PowerApps-Communityplans, können Benutzer innerhalb Ihrer Organisation CDS-Instanzen für Apps erstellen sowie Apps auf CDS für Apps erstellen und entwickeln. Der PowerApps-Communityplan ist eine kostenlose Lizenz, mit der Benutzer CDS für Apps in einer individuellen Umgebung testen können. Informationen zu den Funktionen der einzelnen PowerApps-Lizenzen finden Sie auf der Seite mit den PowerApps-Preisen.
+
+Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer von CDS für Apps finden Sie unter [Ausführen von DSR-Anforderungen für Kundendaten in CDS für Apps](https://go.microsoft.com/fwlink/?linkid=872251).
+
+> [!IMPORTANT]
+> Es wird empfohlen, dass Administratoren diesen Schritt für PowerApps-Benutzer ausführen.
+
+## <a name="step-11-delete-the-user-from-azure-active-directory"></a>Schritt 11: Löschen des Benutzers aus Azure Active Directory
+Nach Ausführung der oben aufgeführten Schritte wird in einem letzten Schritt das Konto des Benutzers in Azure Active Directory gelöscht. Hierzu werden die Schritte ausgeführt, die im [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in der Dokumentation zur DSGVO für Azure-Datensubjektanforderungen erläutert werden.

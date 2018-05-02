@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: f0547963060d31f86b32cc2aaff38b116d35036b
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: e3cae08695af7a4625fd4deb58c8cf7cfe71fdd0
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="label-control-in-powerapps"></a>Label-Steuerelement (Bezeichnung) in PowerApps
 Ein Feld, das Daten wie Text, Zahlen, Datumsangaben oder Währung anzeigt.
@@ -59,6 +59,10 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
 **[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
@@ -94,6 +98,8 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
+
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -140,3 +146,27 @@ In diesem Verfahren erstellen Sie eine Sammlung mit dem Namen **CityPopulations*
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 4. Legen Sie im Bereich **Gallery1** die obere Liste auf **Population**, die mittlere Liste auf **City** und die untere Liste auf **Country** fest.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+Ein **Bezeichnungs**-Steuerelement wird nicht ausschließlich als Bezeichnung für ein anderes Steuerelement verwendet. Es kann auch verwendet werden, um ein beliebiges Textfragment anzuzeigen.
+
+Außerdem kann es als Schaltfläche oder Link verwendet werden, indem **[OnSelect](properties-core.md)**-Verhalten angegeben wird. Wenn das Steuerelement auf diese Weise verwendet wird, gelten ähnliche Aspekte im Hinblick auf die Barrierefreiheit wie bei Schaltflächen.
+
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
+* Es gelten die Standardanforderungen an den Farbkontrast, wenn das Steuerelement als Schaltfläche oder Link verwendet wird.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+> [!NOTE]
+> **Bezeichnungen** werden von der Sprachausgabe als Schaltflächen angesehen, wenn **[TabIndex](properties-accessibility.md)** gleich 0 oder größer ist.
+
+### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
+* Wenn eine **Bezeichnung** als Link verwendet wird, sollte diese auch wie ein Link aussehen.
+    * Legen Sie **[Underline](properties-text.md)** (Unterstrichen) auf **TRUE** fest.
+    * **[HoverColor](properties-color-border.md)** sollte sich von **[Color](properties-color-border.md)** unterscheiden.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, wenn der Text als Schaltfläche oder Link verwendet wird. So können Benutzer per Tastatur dorthin navigieren.
+* Fokusindikatoren müssen übersichtlich angezeigt werden, wenn der Text als Schaltfläche oder Link verwendet wird. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.

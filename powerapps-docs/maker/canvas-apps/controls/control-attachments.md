@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/29/2017
 ms.author: fikaradz
-ms.openlocfilehash: 5bb7e4f27ed7ee0a30fb028d4d8dfd20a5fc250b
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 6b46cfd778dcb29553dce252988b8b6a049ba12d
+ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste hochladen und löschen können.
@@ -33,6 +33,8 @@ Für das Steuerelement für Anlagen gelten die folgenden temporären Einschränk
 1. Die Funktionen zum Hochladen und Löschen funktionieren nur in Formularen.  Das Steuerelement für Anlagen wird im Bearbeitungsmodus deaktiviert angezeigt, wenn es sich nicht in einem Formular befindet.   Beachten Sie, dass der Endbenutzer das Formular speichern muss, um hinzugefügte und gelöschte Dateien im Back-End zu speichern.
 
 1. Sie können nur Dateien bis maximal 10 MB hochladen.  
+
+1. Derzeit können iOS-Geräte nur Dateien aus Dokumenten und Cloudspeicherkonten hochladen. Wenn Sie Fotos bzw. Videos anfügen möchten, verwenden Sie den Browser auf Ihrem iOS-Gerät, um die App auszuführen.
 
 ## <a name="description"></a>Beschreibung
 Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeicherte Dateien öffnen sowie Dateien aus einer SharePoint-Liste hinzufügen und löschen.
@@ -51,7 +53,7 @@ Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeiche
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf eine Anlage klickt.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**AccessibleLabel** – Bezeichnung, die von einer Sprachausgabe gelesen wird.
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
 
 **AddAttachmentText** – Der Beschriftungstext des Links, mit dem eine neue Anlage hinzugefügt wird.
 
@@ -63,11 +65,17 @@ Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeiche
 
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
 **MaxAttachmentsText** – Der Text, der den Link „Datei anfügen“ ersetzt, wenn das Steuerelement die maximal zulässige Anzahl von Dateien enthält.
 
 **NoAttachmentsText** – Hinweistext, der für den Benutzer, der angezeigt wird, wenn keine Anlagen vorhanden sind.
+
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -89,4 +97,31 @@ Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeiche
 
     Im Formular wird das der SharePoint-Liste zugeordnete Feld „Anlagen“ angezeigt.
 
-Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+[Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md)
+
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **ItemColor** und **ItemFill**
+* **ItemHoverColor** und **ItemHoverFill**
+* **ItemPressedColor** und **ItemPressedFill**
+* **AddedItemColor** und **AddedItemFill**
+* **RemovedItemColor** und **RemovedItemFill**
+* **ItemErrorColor** und **ItemErrorFill**
+* **AddAttachmentColor** und **Fill**
+* **MaxAttachmentsColor** und **Fill**
+* **NoAttachmentsColor** und **Fill**
+
+Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+Die folgenden Eigenschaften müssen vorhanden sein:
+* **[AccessibleLabel](properties-accessibility.md)**
+* **AddAttachmentsText**
+* **MaxAttachmentsText**
+* **NoAttachmentsText**
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.

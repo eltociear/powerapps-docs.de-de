@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dac1f8ea99746f04d2d3305e279a4bc5faf67903
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 709da9e7b3e80e370488e9bdfb45f40d68dae856
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>Umschalten-Steuerelement in PowerApps
 Ein Steuerelement, das die Benutzer durch Verschieben des Handles aktivieren oder deaktivieren können.
@@ -33,13 +33,13 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 **[Value](properties-core.md)**: Gibt den Wert des Eingabesteuerelements an.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
-
-**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
@@ -52,6 +52,12 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 **FalseText**: Der Text, der angezeigt wird, wenn die Umschaltfläche deaktiviert ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**HandleFill**: die Füllfarbe des Handles „Schalter“.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -75,7 +81,7 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 
 **ShowLabel**: Gibt an, ob neben dem Umschalt-Steuerelement eine Textbezeichnung angezeigt werden soll.
 
-**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **TextPosition**: Gibt an, ob sich die Bezeichnung links oder rechts neben dem Umschalt-Steuerelement befindet.
 
@@ -114,3 +120,30 @@ Umschalten wurde für aktuelle GUIs entwickelt, verhält sich jedoch genauso wie
 
     Die Bezeichnung zeigt einen anderen Preis, je nachdem, ob **MemberDiscount** aktiviert oder deaktiviert ist.
 4. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **HandleFill** und **FalseFill**
+* **HandleFill** und **FalseHoverFill**
+* **HandleFill** und **TrueFill**
+* **HandleFill** und **TrueHoverFill**
+* **FalseFill** und die Farbe außerhalb des Steuerelements
+* **FalseHoverFill** und die Farbe außerhalb des Steuerelements
+* **TrueFill** und die Farbe außerhalb des Steuerelements
+* **TrueHoverFill** und Farbe außerhalb des Steuerelements
+
+Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+* Die **FalseText**-Eigenschaft muss vorhanden sein.
+* Die **TrueText**-Eigenschaft muss vorhanden sein.
+
+### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
+* Sie sollten **ShowLabel** auf **TRUE** festlegen, damit Benutzer den Wert des Schalters schnell festlegen können.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.

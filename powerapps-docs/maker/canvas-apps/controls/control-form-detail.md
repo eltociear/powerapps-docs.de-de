@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: c238a441c147c148fa619e6068579b75d643339a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 9a82f23206c635733f519a67c83f864709f98c42
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
@@ -179,3 +179,6 @@ Das Formular wechselt vom **New**-Modus in den **Edit**-Modus, wenn eine dieser 
 ## <a name="more-information"></a>Weitere Informationen
 Eine umfassende Übersicht über die Funktionsweise von Formularen finden Sie unter [Grundlegendes zu Datenformularen](../working-with-forms.md).
 
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Fügen Sie ggf. dem Formular mithilfe einer **[Bezeichnung](control-text-box.md)** einen Titel hinzu.

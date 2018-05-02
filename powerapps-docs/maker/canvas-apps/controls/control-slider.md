@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: dc10ac44c1c14f182c39176a6b0216f3ede3816d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 81465979cce5adf0596cf8c95f8887e0170007a9
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="slider-control-in-powerapps"></a>Schieberegler-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer durch Ziehen eines Handles einen Wert angeben kann
@@ -37,23 +37,29 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 **[Value](properties-core.md)**: Gibt den Wert eines Eingabesteuerelements an.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
-
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **HandleActiveFill**: gibt die Farbe des Handles für einen Schieberegler an, wenn der Benutzer seinen Wert ändert.
 
 **HandleFill**: gibt die Farbe des Handles (das Element, das die Position ändert) in einem Umschalten- oder Schieberegler-Steuerelement an.
 
 **HandleHoverFill**: gibt die Farbe des Handles in einem Schieberegler an, wenn der Benutzer mit der Maus darauf zeigt.
+
+**HandleSize**: der Durchmesser des Handles
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -77,7 +83,7 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 
 **ShowValue**: Gibt an, ob ein Wert des Schiebereglers oder der Bewertung angezeigt wird, wenn der Benutzer diesen Wert ändert oder auf das Steuerelement zeigt.
 
-**[TabIndex](properties-accessibility.md)**: Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -112,3 +118,24 @@ Der Benutzer kann einen Wert zwischen einem Mindest- und einem Höchstwert einge
 7. Drücken Sie F5, und passen Sie **MinPopulation** so an, dass nur Städte angezeigt werden, deren Einwohnerzahl die von Ihnen angegebene übersteigt.
 8. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **ValueFill** und **RailFill**
+* **ValueHoverFill** und **RailHoverFill**
+* **[FocusedBorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements
+* **ValueFill** und Hintergrundfarbe
+* **RailFill** und Hintergrundfarbe
+* **ValueHoverFill** und Hintergrundfarbe
+* **RailHoverFill** und Hintergrundfarbe
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Der Wert des Schiebereglers muss bei der Interaktion mit der Tastatur angezeigt werden. Dafür können Sie eine der folgenden Methoden verwenden:
+    * Legen Sie **ShowValue** auf **TRUE** fest.
+    * Fügen Sie eine **[Bezeichnung](control-text-box.md)** hinzu, die an den Schieberegler grenzt. Legen Sie den **[Text](properties-core.md)** der Bezeichnung auf den **[Wert](properties-core.md)** des Schiebereglers fest.

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7a71695460453816dd5c63dad8477cb7ccc703d7
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 922a34c4acdaa82313edb9bf55bcb24d42af7fed
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
@@ -33,7 +33,13 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -41,7 +47,9 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
+**[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
+
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -67,3 +75,34 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 5. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren, fügen Sie ein **Shape**-Steuerelement zu **Target** hinzu, und legen Sie die **[OnSelect](properties-core.md)**-Eigenschaft des **Shape**-Steuerelements auf diese Formel fest:
    <br>**Navigate(Source, ScreenTransition.Fade)**
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Folgendes gilt nur für Grafiken, die als Schaltflächen oder nicht allein zu Darstellungszwecken verwendet werden.
+
+Für Symbole:
+* **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
+* Es gelten die Standardanforderungen an den Farbkontrast, wenn das Steuerelement als Schaltfläche verwendet wird.
+
+Für Formen mit Rahmen:
+* **[BorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements
+* **[FocusedBorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn dieses als Schaltfläche verwendet wird
+
+Für Formen ohne Rahmen:
+* **[Fill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements
+* **[PressedFill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn dieses als Schaltfläche verwendet wird
+* **[HoverFill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn dieses als Schaltfläche verwendet wird
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein, wenn die Grafik als Schaltfläche oder zumindest nicht nur der Dekoration dient.
+* **[AccessibleLabel](properties-accessibility.md)** muss leer sein oder der leeren Zeichenfolge **""** entsprechen, wenn die Grafik ausschließlich Dekoration ist. Dadurch wird die Grafik von der Sprachausgabe ignoriert.
+* **[AccessibleLabel](properties-accessibility.md)** kann leer sein oder der leeren Zeichenfolge **""** entsprechen, falls die Grafik redundante Informationen enthält.
+    * Beispielsweise ein Symbol **Einstellungen**, für das **[AccessibleLabel](properties-accessibility.md)** auf **Einstellungen** festgelegt ist. Dieses Symbol wird nicht als Schaltfläche verwendet. Es befindet sich neben einer **[Bezeichnung](control-text-box.md)**, die ebenfalls den Namen **Einstellungen** hat. Sprachausgaben lesen erst das Symbol und dann die Bezeichnung als **Einstellungen**. Dies ist zu ausführlich. In diesem Fall benötigt das Symbol keine **[AccessibleLabel](properties-accessibility.md)**-Eigenschaft.
+> [!IMPORTANT]
+> Sprachausgaben lesen alle Symbole oder Formen, deren **[TabIndex](properties-accessibility.md)**-Wert gleich 0 (null) oder größer ist, selbst wenn **[AccessibleLabel](properties-accessibility.md)** leer ist. Dies liegt daran, dass sie als Schaltflächen gerendert werden. Wenn kein **[AccessibleLabel](properties-accessibility.md)** bereitgestellt wird, lesen Sprachausgaben die Grafik als **Schaltfläche**.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss 0 (null) oder größer sein, wenn die Grafik als Schaltfläche verwendet wird. So können Benutzer über die Tastatur dorthin navigieren.
+* Fokusindikatoren müssen übersichtlich angezeigt werden, wenn die Grafik als Schaltfläche verwendet wird. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+> [!NOTE]
+> Wenn **[TabIndex](properties-accessibility.md)** gleich 0 (null) oder größer ist, werden das Symbol oder die Form als Schaltfläche gerendert. Dadurch erfolgt keine Änderung der visuellen Darstellung. Die Sprachausgabe erkennt das Bild jedoch richtig als Schaltfläche. Ist **[TabIndex](properties-accessibility.md)** kleiner als 0 (null), wird das Symbol oder die Form als Bild erkannt.

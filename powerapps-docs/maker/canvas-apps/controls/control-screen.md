@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: cd2e2a8c28fb894b1935b29bf80bf65eb631a266
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 715b329f7756f35b6053199ae0c88ce2d0b967f2
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="screen-control-in-powerapps"></a>Bildschirm-Steuerelement in PowerApps
 Ein Benutzeroberflächenelement, das in einer App ein oder mehrere Steuerelemente enthält
@@ -50,7 +50,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein**[Optionsfeld](control-radio.md)**-Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine  **[Items](properties-core.md)** -Eigenschaft auf folgenden Wert fest:<br>
+1. Fügen Sie ein**[Optionsfeld](control-radio.md)**-Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgenden Wert fest:<br>
    **["Red", "Green"]**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
@@ -70,3 +70,18 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 8. (optional) Klicken oder tippen Sie auf die andere Option im  **[Optionsfeld](control-radio.md)-Steuerelement** , und klicken oder tippen Sie anschließend auf das **[Shape](control-shapes-icons.md)** -Steuerelement, um zu bestätigen, dass  **Target** in einer anderen Farbe angezeigt wird.
 9. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Wenn die **Anzeige** als Hintergrund für Text gilt, muss zwischen den folgenden Eigenschaften ein angemessener Farbkontrast bestehen:
+* **[Fill](properties-color-border.md)** und Text
+* (Ggf.) **[BackgroundImage](properties-visual.md)** und Text
+
+Wenn beispielsweise eine **Anzeige** eine **[Bezeichnung](control-text-box.md)** enthält und die Füllung der Bezeichnung durchsichtig ist, wird diese **[Füllung](properties-color-border.md)** als Hintergrundfarbe für die Bezeichnung verwendet.
+
+Sie sollten nicht nur den Text überprüfen, sondern auch den Farbkontrast mit grundlegenden graphischen Objekten wie Bildern mit Sternen in einem **[Bewertungs](control-rating.md)**-Steuerelement.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Jeder **Ansicht** muss ein eindeutiger Name zugewiesen sein. Der Anzeigename kann auf dieselbe Weise wie andere Steuerelemente angezeigt und bearbeitet werden, also entweder in der Strukturansicht des Bereichs „Steuerelemente“ oder im Header im Bereich „Eigenschaften“.
+> [!NOTE]
+> Wenn eine neue **Anzeige** geladen wird, nennt die Sprachausgabe deren Namen. 

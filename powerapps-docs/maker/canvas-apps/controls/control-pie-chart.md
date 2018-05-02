@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1388eac45e5086f677cb83c8db9593fe01a9819f
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 5307370df49eeb783a401e2b7c2f0564bb27c3f4
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Kreisdiagramm-Steuerelement in PowerApps
 Ein Steuerelement, das einen Vergleich relativer Werte anzeigt
@@ -27,12 +27,14 @@ Ein Steuerelement, das einen Vergleich relativer Werte anzeigt
 ## <a name="description"></a>Beschreibung
 Fügen Sie ein **Kreisdiagramm**-Steuerelement hinzu, wenn Sie relative Daten aus einer Tabelle anzeigen möchten, die in der äußersten linken Spalte Bezeichnungen und in der zweiten Spalte von links Werte enthält.
 
-## <a name="key-properties"></a>Haupteigenschaften
+Dieses gruppierte Steuerelement enthält drei Steuerelemente: eine **[Bezeichnung](control-text-box.md)** für den Titel, ein Diagramm und eine **Legende**.
+
+## <a name="chart-key-properties"></a>Kerneigenschaften des Diagramms
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
 **ShowLabels**: gibt an, ob ein Kreisdiagramm einen Wert darstellt, der mit jedem seiner Segmente verknüpft ist.
 
-## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+## <a name="additional-chart-properties"></a>Zusätzliche Diagrammeigenschaften
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
@@ -67,6 +69,8 @@ Fügen Sie ein **Kreisdiagramm**-Steuerelement hinzu, wenn Sie relative Daten au
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
 **[Width](properties-size-location.md)** – Der Abstand zwischen dem linken und rechten Rand eines Steuerelements.
@@ -90,3 +94,25 @@ Fügen Sie ein **Kreisdiagramm**-Steuerelement hinzu, wenn Sie relative Daten au
    
     Das **Kreisdiagramm**-Steuerelement zeigt die Umsatzdaten für jedes Produkt in Bezug auf die anderen Produkte.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* jedes Element in **ItemColorSet**
+* jedes Element in **ItemColorSet** und die Hintergrundfarbe
+* **[Farbe](properties-color-border.md)** und die Hintergrundfarbe
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* Vor dem Diagramm muss eine **[Bezeichnung](control-text-box.md)** hinzugefügt werden, die als Titel dienen soll.
+> [!NOTE]
+> Diagramme und **Legenden** werden für Benutzer der Sprachausgabe ausgeblendet. Für sie werden stattdessen die Daten in Tabellenform dargestellt. Außerdem können sie zwischen Steuerelementen wechseln, die Daten aus dem Diagramm auswählen.
+
+### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
+* Es muss eine **Legende** verfügbar sein.
+* Sie sollten **ShowLabels** auf **TRUE** festlegen. Dadurch können Benutzer mit Sehbehinderungen schnell feststellen, wofür die einzelnen Abschnitte eines Kuchendiagramms stehen.
+* Sie sollten **LabelPosition** auf **LabelPosition.Outside** festlegen. Dadurch ist der Farbkontrast konsistenter und die Bezeichnungen besser lesbar.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+> [!NOTE]
+> Wenn Benutzer über eine Tastatur zu dem Diagramm navigieren, können sie zwischen Schaltflächen wechseln, die Daten aus dem Diagramm auswählen.

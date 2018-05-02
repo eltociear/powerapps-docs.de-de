@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 4082034d843765025bb6e40cab83705582417d51
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: fca84b687f6e86905c6eeea18a7cd302f0c58b44
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-input-control-in-powerapps"></a>Texteingabe-Steuerelement in PowerApps
 Ein Feld, in das der Benutzer Text, Zahlen und andere Daten eingeben kann
@@ -33,6 +33,8 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -40,8 +42,6 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
-
-**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **Clear**: Legt fest, ob ein Texteingabe-Steuerelement ein „X“ anzeigt, auf das der Benutzer tippen oder klicken kann, um den Inhalt dieses Steuerelements zu löschen.
 
@@ -58,6 +58,10 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 **[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
@@ -115,7 +119,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -159,3 +163,15 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 5. (Optional:) Fügen Sie ein Steuerelement wie z.B. einen Pfeil hinzu, konfigurieren Sie es so, dass es zu einem anderen Bildschirm navigiert, und lassen Sie es erst anzeigen, wenn der Benutzer das Kennwort eingegeben hat.
 6. (Optional:) Fügen Sie eine Schaltfläche hinzu, konfigurieren Sie deren **[Text](properties-core.md)**-Eigenschaft so, dass **Anmelden** angezeigt wird, fügen Sie einen Zeitgeber hinzu, und deaktivieren Sie das Textsteuerelement für einen bestimmten Zeitraum, wenn der Benutzer das falsche Kennwort eingibt und anschließend auf die Schaltfläche **Anmelden** klickt oder tippt.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+* Es gelten die Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+ 

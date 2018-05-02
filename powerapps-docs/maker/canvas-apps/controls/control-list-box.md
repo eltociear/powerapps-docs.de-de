@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 71f3493064e7b877a501f9b91f93adedb0c68f6a
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: d68e0e08b42bf0342e27c14ab7d53c746c468992
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-box-control-in-powerapps"></a>Listenfeld-Steuerelement in PowerApps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
@@ -35,13 +35,13 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 [!INCLUDE [long-items](../../../includes/long-items.md)]
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
-
-**[FocusedBorderThickness](properties-color-border.md)** – Die Rahmenstärke eines Steuerelements, wenn es den Tastaturfokus besitzt.
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
@@ -54,6 +54,10 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 **[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
+
+**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+
+**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
@@ -103,7 +107,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)** – Passt die Aktivierreihenfolge von Steuerelementen zur Laufzeit an, wenn sie auf einen Wert ungleich 0 festgelegt wird.
+**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -135,7 +139,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
    * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/flooring-names.png)
-4. Legen Sie die  **[Visible](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
+4. Legen Sie die **[Visible](properties-core.md)**-Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
    
    * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
    * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
@@ -149,3 +153,22 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
     ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/selected-lists.png)
 6. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="color-contrast"></a>Farbkontrast
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+* **SelectionColor** und **SelectionFill**
+* **SelectionFill** und **[Fill](properties-color-border.md)**
+* **[HoverFill](properties-color-border.md)** und **[Fill](properties-color-border.md)**
+* **[PressedFill](properties-color-border.md)** und **[Fill](properties-color-border.md)**
+
+Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+
+### <a name="keyboard-support"></a>Tastaturunterstützung
+* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
+* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+> [!NOTE]
+> Über die TAB-TASTE können Sie zum **Listenfeld** navigieren oder dieses schließen. Über die Pfeiltasten können Sie durch die Inhalte des **Listenfelds** navigieren.

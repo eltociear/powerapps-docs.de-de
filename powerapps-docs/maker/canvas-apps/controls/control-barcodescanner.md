@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 264c360af0175b6a5dddd74306b32c7d1ecaef1d
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 98357cb2f6d829906dfcdd4ecaa4acc3afdef26d
+ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>Barcodescanner-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, mit dem der Benutzer mithilfe des Barcodescanners auf seinem Gerät Fotos aufnehmen kann.
@@ -31,6 +31,8 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **barcode scanner** – Auf einem Gerät mit mehreren Barcodescannern die numerische ID des von der App verwendeten Barcodescanners.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
@@ -51,9 +53,13 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
 **Photo** – Das Bild, das aufgenommen wird, wenn der Benutzer ein Foto macht.
 
+**ShowLiveBarcodeDetection**: legt fest, ob visuelle Anhaltpunkte dargestellt werden, um den Status der Barcodeerkennung zu ermitteln. Gelbe Rechtecke stellen die Bereiche dar, die untersucht werden. Eine grüne Linie, die durch das Rechteck geht, zeigt an, dass die Barcodeerkennung erfolgreich war.
+
 **Stream** – Das automatisch entsprechend der **StreamRate**-Eigenschaft aktualisierte Bild.
 
 **StreamRate** – Gibt an, wie oft das Bild in der **Stream**-Eigenschaft aktualisiert wird (in Millisekunden).  Dieser Wert kann zwischen 100 (einer Zehntelsekunde) und 3.600.000 (eine Stunde) liegen.
+
+**Text**: Barcodewert, der vom Scanner zuletzt erkannt wurde.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
@@ -75,6 +81,16 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 1. Fügen Sie ein **Barcodescanner**-Steuerelement hinzu, und benennen Sie es **Mybarcode scanner**.
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-2. Fügen Sie ein **Bezeichnung**-Steuerelement hinzu, und legen Sie dessen Ausgabe auf den Barcodewert fest.  
+2. Fügen Sie ein **Bezeichnungs**-Steuerelement hinzu, und legen Sie dessen Ausgabe auf den **Text** des Barcodes fest.  
 3. Scannen Sie einen Barcode des in der BarcodeType-Eigenschaft festgelegten Typs.
 4. In der Bezeichnung wird der gescannte Barcode angezeigt.
+
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+### <a name="video-alternatives"></a>Videoalternativen
+* Sie sollten eine **[Bezeichnung](control-text-box.md)** hinzufügen, deren **[Text](properties-core.md)** auf den **Text** des Barcodescanners festgelegt ist. Da der Barcodescanner nicht den ermittelten Barcodewert anzeigt, kann jeder Benutzer den Scanner verwenden und nicht nur Benutzer mit Sehbehinderung.
+
+### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+* **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
+> [!NOTE]
+> Die Sprachausgabe meldet, wenn ein neuer Barcode gefunden wurde. Der Wert wird jedoch nicht genannt. Solange der Barcode angezeigt wird, erinnert die Sprachausgabe alle 5 Sekunden daran, dass immer noch derselbe Barcode ermittelt wird.
