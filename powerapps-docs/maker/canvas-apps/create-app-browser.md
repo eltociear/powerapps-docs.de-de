@@ -12,18 +12,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 4c8b100e4993921c651590c80eda4297345cdd40
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4add1e15c1a85b27b83295422dbb6472ac02ad9f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Erstellen und Bearbeiten von Apps in PowerApps Studio für Web
 Erstellen und Bearbeiten Sie Apps in PowerApps Studio für Web, das unter Windows oder anderen Plattformen in einem Browserfenster geöffnet wird.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 * [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps.
-* Stellen Sie sicher, dass Sie einen [unterstützten Browser](limits-and-config.md#supported-browsers-for-powerapps-studio-for-web) verwenden.
+* Stellen Sie sicher, dass Sie einen [unterstützten Browser](limits-and-config.md#supported-browsers-for-powerapps-studio) verwenden.
 
 ## <a name="open-powerapps-studio-for-web"></a>Öffnen von PowerApps Studio für Web
 1. Melden Sie sich bei [powerapps.com](http://go.microsoft.com/fwlink/p/?LinkId=708209) an.

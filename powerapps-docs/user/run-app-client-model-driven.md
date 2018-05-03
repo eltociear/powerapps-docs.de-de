@@ -15,18 +15,15 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 73b8aca29af2e9ee5fa117a7e7b79a8d3dbaca9f
-ms.sourcegitcommit: a9ac8a3ed734cb5f70b61476168d1bff5de844f8
+ms.openlocfilehash: a538eb1b6046c4cfd27e969613b44574cec8ff7e
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Schnellstart: Ausführen einer modellgesteuerten App auf einem mobilen Gerät
 
 Nachdem die App erstellt und für Sie freigegeben wurde, können Sie sie auf einer Vielzahl handelsüblicher mobiler Geräte mit Betriebssystemen wie Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie eine modellgesteuerte App auf einem mobilen Gerät ausführen. 
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Wenn Sie noch nicht bei PowerApps registriert sind, müssen Sie sich zuerst [kostenlos registrieren](https://web.powerapps.com/signup?redirect=marketing&email=), um den Schnellstart verwenden. Außerdem benötigen Sie Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
 

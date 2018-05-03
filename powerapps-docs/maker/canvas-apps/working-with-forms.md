@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: c0e0595fc3e3025ca345e1415fbd3da99f090063
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Grundlegendes zu Datenformularen in Microsoft PowerApps
 Fügen Sie drei Arten von Steuerelementen hinzu, damit Benutzer nach einem Datensatz suchen, Einzelheiten zu dem Datensatz anzeigen oder einen Eintrag dazu bearbeiten oder erstellen können:
@@ -35,7 +35,7 @@ Kombinieren Sie diese Steuerelemente mit Formeln, wie in diesem Thema beschriebe
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
 ## <a name="explore-a-generated-app"></a>Kennenlernen einer generierten App

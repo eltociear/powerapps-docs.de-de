@@ -11,22 +11,19 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: bf9cbe451cc9ac5fa0ef98ba3e32963e240c0b5e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="start-a-flow-in-an-app"></a>Starten eines Flows in einer App
 Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren](../signup-for-powerapps.md) Sie sich für PowerApps, und führen Sie anschließend einen dieser Schritte aus:
-
-  * Installieren Sie PowerApps Studio für Windows über den [Windows Store](http://aka.ms/powerappsinstall), öffnen Sie die Anwendung, und melden Sie sich mit den Anmeldeinformationen an, mit denen Sie sich registriert haben.
-  * Öffnen Sie auf [powerapps.com](http://web.powerapps.com) PowerApps Studio für Web, indem Sie links unten auf **Neue App** klicken oder tippen.
-* Machen Sie sich damit vertraut, wie Sie [ein Steuerelement konfigurieren](add-configure-controls.md).
+* [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps.
+* Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Erstellen eines Flows
 1. Melden Sie sich auf [powerapps.com](http://web.powerapps.com) an, und wählen Sie dann auf der linken Navigationsleiste **Flows** aus.

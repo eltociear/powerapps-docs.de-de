@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: 71f527486b16db6344340c14672ede9cdaeb09ab
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: faa8db15596dc0da0d5b5638f5dd9c334517fc7c
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Anzeigen von Text und Formatieren von Datums- und Uhrzeitangaben in PowerApps
 Fügen Sie Datumsangaben und Uhrzeiten hinzu, und formatieren Sie sie, um die geeignete Detailebene anzuzeigen oder Ihr Gebietsschema widerzuspiegeln. Berechnen Sie die Zeitspanne zwischen zwei Datumswerten, oder berechnen Sie ein Datum, das eine bestimmte Zeitspanne vor oder nach einem von Ihnen angegebenen Datum liegt. Konvertieren Sie Datumswerte in getrennte Werte für Tage, Monate und Jahre, und konvertieren Sie Werte für Stunden, Minuten und Sekunden.
@@ -24,7 +24,7 @@ Fügen Sie beispielsweise Benutzerdaten zu Änderungen am Warenbestand oder zu K
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 

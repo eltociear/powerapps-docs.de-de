@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: bf87535f31e214119bc59eca89e50d78a51637e6
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: e4c2f78fb00e726bd0b0bf3cde4fe4f42d40dddc
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-formulas"></a>Erste Schritte mit Formeln
 Konfigurieren Sie Ihre App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
@@ -32,7 +32,7 @@ Dieses Thema bietet nur eine Übersicht über das Arbeiten mit Formeln. Weitere 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
 ## <a name="show-a-simple-value"></a>Anzeigen eines einfachen Werts

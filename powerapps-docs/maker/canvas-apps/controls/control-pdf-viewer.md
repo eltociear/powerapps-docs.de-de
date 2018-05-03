@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e52f89f685aeb9c06678b973e926c0fd89bdf47f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -96,7 +96,7 @@ Wenn das Dokument in PowerApps nicht geöffnet werden kann, wird dem Endanwender
 
 ## <a name="example"></a>Beispiel
 * Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine **Document**-Eigenschaft (in doppelten Anführungszeichen) auf die URL einer PDF-Datei fest, wie im folgenden Beispiel gezeigt:<br>
-  **„http://www.who.int/gho/publications/world_health_statistics/EN_WHS2015_TOC.pdf?ua=1“**
+  **„https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf“**
 
     Das Steuerelement zeigt die PDF-Datei.
 

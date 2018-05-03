@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 26cf15054a1cf5d00bda0e2f265ed242cb21421c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 01065fd1a12b3d55e8726582cead3d86a6e6a8ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Erstellen und Aktualisieren einer Sammlung in Ihrer App
 Verwenden Sie eine Sammlung zum Speichern von Daten, die in Ihrer App verwendet werden können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen. Erstellen Sie beispielsweise eine MyImages-Sammlung mit den Abbildungen aller Produkte, die Ihr Unternehmen verkauft. In PowerApps können Sie Ihre MyImages-Sammlung hinzufügen und eine App erstellen, in der alle Abbildungen dieser Produkte angezeigt werden. Sie können aber z.B. auch eine PriceList-Sammlung erstellen, die die Produkte und Preise für jedes Produkt enthält.
@@ -23,7 +23,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die in Ihrer App verwendet 
 Sammlungen lassen sich in PowerApps erstellen und verwenden. Lassen Sie uns loslegen!
 
 ### <a name="prerequisites"></a>Voraussetzungen
-* [Registrieren Sie sich](../signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 * Bei diesem Vorgang wird die Datei [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) als Eingabebeispiel verwendet. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest PowerApps die Dateien in den ZIP-Dateien automatisch und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.

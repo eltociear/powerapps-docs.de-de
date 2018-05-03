@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6f9ef24f4ab6f0009c7020008e299f09ecb0762e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: fca166ef388921e08bf71149a8b1274a31a7dc52
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-an-app-to-manage-projects"></a>Erstellen einer App zum Verwalten von Projekten
 > [!NOTE]
@@ -28,8 +28,6 @@ In dieser Aufgabe wird eine App von Grund auf neu erstellt. Mithilfe dieser App 
 > Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieser App: „project-details-app.msapp“.
 
 ## <a name="quick-review-of-powerapps-studio"></a>Kurzübersicht über PowerApps Studio
-In der letzten Aufgabe haben Sie PowerApps Studio für Web verwendet, wir möchten jedoch sichergehen, dass Sie alle Teile verstehen, bevor wir fortfahren. Sie können weiterhin in PowerApps Studio für Web arbeiten, Sie können aber auch [PowerApps Studio für Windows](https://aka.ms/powerappswin) verwenden.
-
 PowerApps Studio enthält drei Bereiche und ein Menüband, durch die das Erstellen einer App mit dem Erstellen einer Foliengruppe in PowerPoint vergleichbar ist:
 
 1. Auf der linken Navigationsleiste werden eine hierarchische Ansicht sämtlicher Bildschirme und Steuerelemente der App sowie Vorschauminiaturen der Bildschirme angezeigt.

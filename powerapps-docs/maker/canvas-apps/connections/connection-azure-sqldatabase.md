@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: 33b3f85d3cd2dbe59684eccc208ebec4cdd09549
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 65fa5cff5d3b9c9595cc3f9338a7e7af43256f86
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Herstellen einer Verbindung mit SQL Server aus PowerApps
 ![SQL Server-Symbol](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -25,7 +25,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../../signup-for-powerapps.md) für PowerApps, [installieren](http://aka.ms/powerappsinstall) Sie PowerApps Studio, öffnen Sie die Anwendung, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
+* [Registrieren Sie sich](../../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](http://web.powerapps.com), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Sammeln Sie die folgenden Informationen für eine Datenbank, die mindestens eine Tabelle mit einem Primärschlüssel enthält:
   
   * den Namen der Datenbank
