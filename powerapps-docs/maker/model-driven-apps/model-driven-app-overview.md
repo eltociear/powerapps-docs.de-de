@@ -12,20 +12,17 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 1b9ee344192d84933d25a3208d2feb0873a298c1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 76571a53c95661d853b7fb326e3c1087a6f432c4
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>Übersicht über die Erstellung einer modellgesteuerten App
 
 Das Design einer modellgesteuerten App ist ein auf Komponenten bezogener Ansatz zum Entwickeln von Apps. Das Design modellgesteuerter Apps erfordert keinen Code, und die Apps, die Sie erstellen, können so einfach oder sehr komplex sein.  Im Gegensatz zur Entwicklung einer Canvas-App, bei der der Designer über die vollständige Kontrolle über das Layout der App verfügt, wird bei modellgesteuerten Apps beinahe das gesamte Layout für Sie bestimmt und von den von Ihnen zur App hinzugefügten Komponenten größtenteils festgelegt. 
 
 ![Beispiel für eine modellgesteuerte App](media/model-driven-app-overview/model-app-sample.png)
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 Das Design modellgesteuerter Apps bietet folgende Vorteile:
 - Umfangreiche Entwurfsumgebungen, die sich auf Komponenten statt Code konzentrieren 
