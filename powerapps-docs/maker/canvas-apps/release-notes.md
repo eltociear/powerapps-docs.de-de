@@ -1,8 +1,6 @@
 ---
 title: Neuerungen bei PowerApps | Microsoft-Dokumentation
 description: Updates für PowerApps nach Veröffentlichungsdatum
-services: powerapps
-suite: powerapps
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,16 +8,15 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/09/2018
+ms.topic: conceptual
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: sharik
-ms.openlocfilehash: 92438c37b870ace2ed5b2ec086cf6c5fb1548fdc
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 00b80bd5b9e0953366dd58d6e3b3266ffe7956bd
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
@@ -33,6 +30,9 @@ Informationen über bekannte Einschränkungen finden Sie unter [Häufige Problem
 Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen Host für neue Funktionen zum Erstellen Ihrer eigenen Anwendungen und Erweiterungen zusätzlich zu unserer Plattform. [Laden Sie die Versionshinweise für Frühjahr 2018 als PDF herunter](https://aka.ms/businessappsreleasenotes), die für Dynamics 365, PowerApps, Microsoft Flow und Power BI gelten.
 
 **In Kürze:** Sobald die Features ausgeliefert werden, aktualisieren wir weiterhin die PDF-Datei zu den Versionshinweisen. Diese sind dann auch auf unserer Webseite verfügbar.
+
+## <a name="apr-23"></a>23. April
+* Laden Sie [Anlagen](controls/control-attachments.md) im Internet Explorer in benutzerdefinierten Listenformularen in SharePoint herunter.
 
 ## <a name="apr-9"></a>9. April
 * Schneiden Sie Steuerelemente, &mdash;einschließlich der Formate, Formeln und Eigenschaften&mdash;, für Apps in einem Webbrowser mit STRG+X aus, kopieren Sie sie (STRG+C), und fügen Sie sie ein (STRG+V).

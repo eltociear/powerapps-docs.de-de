@@ -14,11 +14,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 68ce23ae4b4a961a69cc60173b4f98ec18f05dd2
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: c32be4dd25da1c2267043b061102b2714a109cc5
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-common-data-service-database"></a>Erstellen einer Common Data Service-Datenbank
 Mithilfe von Common Data Service als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von Common Data Service finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
@@ -52,6 +52,8 @@ Es gibt verschiedene Möglichkeiten zum Erstellen einer Datenbank:
 
     ![](./media/create-database/Create-DB-From-Entities.png)
 
+> [!NOTE]
+> Derzeit ist es nicht möglich, eine Datenbank außerhalb Ihrer Azure AD-Region zu erstellen. Sie werden bald in einer anderen Region als Ihrer eigenen Azure AD-Region eine Datenbank erstellen können, aber stellen Sie vorläufig sicher, dass Sie eine Datenbank in einer Umgebung erstellen, deren Region mit Ihrer eigenen Azure AD-Region identisch ist.
 
 ## <a name="security-model-for-the-databases"></a>Sicherheitsmodell für die Datenbanken
 Wenn eine Datenbank erstellt wird, können die Benutzer, denen Umgebungsrollen zugewiesen sind, weiterhin diese Berechtigungen verwalten.  

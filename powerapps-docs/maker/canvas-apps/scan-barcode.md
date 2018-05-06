@@ -1,27 +1,24 @@
 ---
 title: Scannen eines Barcodes | Microsoft-Dokumentation
 description: Scannen Sie eine Vielzahl von Barcodetypen, z.B. UPC und Codabar.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: aftowen
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 078c53300c4e1489d179f9c91818a8e23616f3ae
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="scan-a-barcode-in-microsoft-powerapps"></a>Scannen eines Barcodes in Microsoft PowerApps
+# <a name="scan-a-barcode-in-powerapps"></a>Scannen eines Barcodes in PowerApps
 Scannen Sie verschiedene Arten von Barcodes, indem Sie eine App erstellen und diese auf einem Gerät mit einer Kamera ausführen, z.B. auf einem Telefon. Die numerische Darstellung des Barcodes wird in einem **Label** (Bezeichnung) angezeigt, und Sie können diese Daten in eine Vielzahl von [Datenquellen](connections-list.md) hochladen.
 
 Wenn Sie mit PowerApps nicht vertraut sind, sehen Sie sich den Abschnitt [Erste Schritte](getting-started.md) an.
@@ -38,8 +35,7 @@ Wenn Sie mit PowerApps nicht vertraut sind, sehen Sie sich den Abschnitt [Erste 
 ## <a name="create-a-blank-app"></a>Erstellen einer leeren App
 1. [Registrieren](../signup-for-powerapps.md) Sie sich für PowerApps, und führen Sie anschließend *eine* der folgenden Aktionen aus:
 
-   * [Öffnen Sie PowerApps](https://create.powerapps.com/api/start) in einem Browser auf einem Gerät, das über eine Kamera verfügt.
-   * [Installieren Sie PowerApps](http://aka.ms/powerappsinstall) über den Windows Store auf einem Gerät, das über eine Kamera verfügt. Öffnen Sie PowerApps, melden Sie sich an, und klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Neu**.
+1. [Öffnen Sie PowerApps](https://create.powerapps.com) in einem Browser auf einem Gerät, das über eine Kamera verfügt.
 
 2. Klicken oder tippen Sie auf der Kachel **Leere App** unter **Starten Sie mit einem leeren Zeichenbereich oder einer Vorlage** auf **Telefonlayout**.
 

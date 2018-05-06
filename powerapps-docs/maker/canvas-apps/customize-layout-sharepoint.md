@@ -1,85 +1,73 @@
 ---
-title: Tutorial zum Anpassen eines Katalogs | Microsoft-Dokumentation
-description: In diesem Tutorial erfahren Sie, wie Sie in einer in PowerApps generierten App den Standbildschirm zum Durchsuchen mitsamt des Katalogs anpassen.
-services: ''
-suite: powerapps
-documentationcenter: na
+title: Tutorial – Anpassen eines Katalogs in einer generierten App | Microsoft-Dokumentation
+description: In diesem Tutorial passen Sie die Daten an, die in der Galerie und anderen Elementen einer App angezeigt werden, die in PowerApps automatisch generiert wurde.
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/11/2018
+ms.topic: tutorial
+ms.component: canvas
+ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 30ec6be11b40e01dddfe09cf0ac8af0ed3a8a437
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 6206d520e8bb07c0919f482700c1af861e41109d
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
-In diesem Tutorial erfahren Sie, wie Sie in einer in PowerApps generierten App den Standardbildschirm zum Durchsuchen mitsamt des Katalogs anpassen. Sie können zwar mithilfe der Standard-App Daten verwalten, ohne diese anzupassen, es ist jedoch viel einfacher – und Sie erzielen bessere Ergebnisse –, wenn Sie die folgenden Änderungen vornehmen:
+In diesem Tutorial passen Sie den Katalog an und nehmen andere Änderungen an einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen:
 
 > [!div class="checklist"]
-> * Ändern des Layouts
-> * Ändern der angezeigten Daten
-> * Festlegen der Spalten zum Filtern und Sortieren
-> * Filtern und Sortieren von Tests
-> * Ändern des Titels
+> * Ändern des Kataloglayouts
+> * Ändern des im Katalog angezeigten Datentyps
+> * Ändern der Spalten, nach denen Benutzer die Daten sortieren und durchsuchen können
+> * Ändern des Bildschirmtitels
 > * Anzeigen einer Scrollleiste
 
-In diesem Tutorial wird zwar zunächst eine App verwendet, die über [Common Data Service für Apps](../common-data-service/data-platform-intro.md) generiert wurde, es gelten jedoch für Apps, die über SharePoint, Excel und andere Datenquellen generiert wurden, die gleichen Konzepte. 
+Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus generiert wurde. Dieselben Konzepte gelten jedoch für alle Apps, die Sie in PowerApps von einer SharePoint-Liste, Excel-Tabelle oder anderen Datenquelle aus generieren. 
 
-Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Bevor Sie mit diesem Tutorial beginnen, [generieren Sie eine App](data-platform-create-app.md) über Common Data Service für Apps.
+Sie können diesem Thema wahlweise lediglich allgemeine Konzepte entnehmen oder die einzelnen Schritte befolgen, wenn Sie zuerst [diese App generieren](data-platform-create-app.md).
 
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und klicken oder tippen Sie dann am linken Bildschirmrand auf **Apps**.
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
     ![PowerApps-Startseite](./media/customize-layout-sharepoint/sign-in.png)
 
-1. Suchen Sie die App, die Sie generiert haben, und klicken oder tippen Sie daneben am linken Bildschirmrand auf die Auslassungszeichen (**...**).
+1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol (**...** ) für sie und dann **Bearbeiten** aus.
 
-    ![App-Liste](./media/customize-layout-sharepoint/open-for-edit.png)
+## <a name="change-the-layout"></a>Ändern des Layouts
+1. Wählen Sie im Bildschirm zum Durchsuchen den Katalog durch Klicken oder Tippen auf ein beliebiges Element mit Ausnahme des oberen in der Liste der Konten aus.
 
-1. Klicken oder tippen Sie in dem Menü, das angezeigt wird, auf die Option zum Bearbeiten der App. 
-
-## <a name="customize-the-gallery"></a>Anpassen des Katalogs
-1. Klicken oder tippen Sie in der Liste der Konten auf dem Bildschirm zum Durchsuchen auf alle Elemente bis auf das erste Element.
-
-    In diesem Schritt wird das Steuerelement **Katalog** ausgewählt, das die Liste der Konten anzeigt.
+    Wenn der Katalog ausgewählt ist, umgibt ihn ein Auswahlfeld mit Ziehpunkten.
 
     ![Ausgewählter Katalog](./media/customize-layout-sharepoint/select-gallery.png)
 
-1. Klicken oder tippen Sie rechts neben der Bezeichnung **Daten** auf **Konten**.
+1. Wählen Sie in der Nähe des rechten Rands **Konten** aus, um den Bereich **Daten** zu öffnen.
 
     ![Öffnen Sie den Bereich **Daten**](./media/customize-layout-sharepoint/open-data-pane.png)
 
-1. Klicken oder tippen Sie im Bereich **Daten** auf den Pfeil nach unten, um unter **Layouts** die Liste der Optionen zu öffnen.
+1. Öffnen Sie im Bereich **Daten** die Liste der Optionen unter **Layout**.
 
     ![Layoutoptionen anzeigen](./media/customize-layout-sharepoint/show-layouts.png)
 
-1. Klicken oder tippen Sie in der Liste der Optionen auf die Option, die nur einen Titel anzeigt.
+1. Wählen Sie in der Liste der Optionen die Option aus, die nur einen Titel anzeigt.
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Klicken oder tippen Sie im Bereich **Daten** auf den Pfeil nach unten, um für den jeweiligen Titel die Liste der Optionen zu öffnen.
+1. Öffnen Sie im Bereich **Daten** die Liste der Optionen für den Titel.
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/show-title-options.png)
 
-1. Klicken oder tippen Sie in der Liste der Optionen auf **Name**, um die Daten im Steuerelement **Katalog** anzuzeigen.
+1. Wählen Sie in der Liste der Optionen **Kontoname (Name)** aus, und schließen Sie dann den Bereich **Daten**.
+
+    Der Katalog zeigt den Namen jedes Kontos an.
 
     ![Endgültiger Katalog](./media/customize-layout-sharepoint/final-gallery.png)
 
-
-## <a name="set-the-sort-and-search-columns"></a>Sortier- und Suchspalten festlegen
-1. Wählen Sie wie im vorherigen Abschnitt beschrieben das Steuerelement **Katalog** aus.
+## <a name="change-the-sort-and-search-columns"></a>Ändern der Sortier- und Suchspalten
+1. Wählen Sie den Katalog wie im vorherigen Abschnitt beschrieben aus.
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-title.png)
 
@@ -87,37 +75,40 @@ Bevor Sie mit diesem Tutorial beginnen, [generieren Sie eine App](data-platform-
 
     ![Items-Eigenschaft](./media/customize-layout-sharepoint/items-property.png)
 
-    Der Wert dieser Eigenschaft in der Bearbeitungsleiste bestimmt nicht nur die Datenquelle des Katalogs, sondern auch die Filter- und Sortierspalten.
+    Der Wert dieser Eigenschaft wird in der Bearbeitungsleiste angezeigt. Sie legen diese Eigenschaft nicht nur fest, um die Datenquelle für den Katalog anzugeben, sondern auch die Spalten, nach denen Benutzer die Daten sortieren und durchsuchen können.
 
-1. Ersetzen Sie in der Bearbeitungsleiste beide Instanzen von **emailaddress1** durch **name**, und setzen Sie weiter alle Instanzen in doppelte Anführungszeichen.
+1. Kopieren Sie diese Formel, und fügen Sie sie in die Bearbeitungsleiste ein.
 
-    Die Formel sollte dem folgenden Beispiel entsprechen:
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
-    ![Formel für die Items-Eigenschaft](./media/customize-layout-sharepoint/items-value.png)
+    Mit Verwendung dieser Formel stellen Sie Folgendes sicher:
 
-    Die erste Instanz von **name** gibt an, dass der Benutzer die Liste so filtern kann, dass nur die Einträge angezeigt werden, zu denen der Kontoname Text beinhaltet, den der Benutzer in die Suchleiste eingegeben hat. Die zweite Instanz von **name** gibt an, dass der Benutzer die Liste alphabetisch anhand der Kontonamen sortieren kann. Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
+    - Wenn ein Benutzer ein oder mehrere Zeichen in die Suchleiste eingibt, zeigt der Katalog nur Kontonamen an, die den vom Benutzer eingegebenen Text enthalten.
+    - Wenn ein Benutzer das Sortiersymbol auswählt, wird der Katalog alphabetisch anhand des Kontonamens in aufsteigender oder absteigender Reihenfolge sortiert, je nachdem, wie oft der Benutzer das Symbol auswählt.
+
+    Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
 
 ## <a name="test-sorting-and-searching"></a>Testen von Sortieren und Suchen
-1. Öffnen Sie den Vorschaumodus durch Drücken von F5 (oder durch Klicken oder Tippen der Schaltfläche „Wiedergabe“ in der Nähe der oberen rechten Ecke).
+1. Öffnen Sie den Vorschaumodus durch Drücken von F5 (oder Auswahl der Wiedergabeschaltfläche in der oberen rechten Ecke).
 
     ![Öffnen des Vorschaumodus](./media/customize-layout-sharepoint/open-preview.png)
 
-1. Klicken oder tippen Sie In der oberen rechten Ecke des Bildschirms zum Durchsuchen mindestens einmal auf die Schaltfläche „Sortieren“, um die Einträge alphabetisch in aufsteigender oder absteigender Reihenfolge zu sortieren.
+1. Wählen Sie in der oberen rechten Ecke des Bildschirms zum Durchsuchen mindestens einmal die Schaltfläche „Sortieren“ aus, um die Einträge alphabetisch in aufsteigender oder absteigender Reihenfolge zu sortieren.
 
     ![Die Schaltfläche „Sortieren“ testen](./media/customize-layout-sharepoint/sort-button.png)
 
-1. Geben Sie im Suchfeld den Buchstaben **k** ein, damit nur die Konten angezeigt werden, deren Namen diesen Buchstaben enthalten.
+1. Geben Sie im Suchfeld **k** ein, um nur die Kontonamen anzuzeigen, die den Buchstaben enthalten, den Sie eingegeben haben.
 
     ![Testen der Suchleiste](./media/customize-layout-sharepoint/test-filter.png)
 
-1. Löschen Sie den Text aus der Suchleiste. Schließen Sie anschließend den Vorschaumodus durch Drücken der ESC-TASTE (oder durch Klicken oder Tippen auf das Schließen-Symbol *unter* der Titelleiste für PowerApps).
+1. Löschen Sie den gesamten Text aus der Suchleiste. Schließen Sie anschließend den Vorschaumodus durch Drücken der ESC-TASTE (oder durch Auswahl des Schließsymbols in der oberen rechten Ecke).
 
-## <a name="change-the-title-of-the-screen"></a>Ändern des Bildschirmtitels
-1. Klicken oder tippen Sie auf den Titel des Bildschirms, um ihn auszuwählen.
+## <a name="change-the-screen-title"></a>Ändern des Bildschirmtitels
+1. Wählen Sie den Bildschirmtitel aus, indem Sie darauf klicken oder tippen.
 
     ![Auswählen des Bildschirmtitels](./media/customize-layout-sharepoint/select-title.png)
 
-1. Stellen Sie sicher, dass die Eigenschaftenliste **Text** anzeigt, und geben Sie anschließend in der Bearbeitungsleiste den Begriff **Durchsuchen** in Anführungszeichen ein.
+1. Stellen Sie sicher, dass die Eigenschaftenliste **Text** anzeigt, und ersetzen Sie anschließend in der Bearbeitungsleiste (unter Beibehalten der Anführungszeichen) **Konten** durch **Durchsuchen**.
 
     ![Aktualisieren des Bildschirmtitels](./media/customize-layout-sharepoint/change-screen-title.png)
 
@@ -126,18 +117,18 @@ Bevor Sie mit diesem Tutorial beginnen, [generieren Sie eine App](data-platform-
     ![Neuer Bildschirmtitel](./media/customize-layout-sharepoint/new-screen-title.png)
 
 ## <a name="show-a-scroll-bar"></a>Anzeigen einer Scrollleiste
-Wenn es sein kann, dass die Geräte Ihre Benutzer weder über Touchscreens noch über Mausräder verfügen, konfigurieren Sie das Steuerelement **Katalog** so, dass eine Scrollleiste angezeigt wird, wenn der Benutzer mit der Maus darauf zeigt. So können Benutzer sogar alle Konten abrufen, wenn auf dem Bildschirm nicht alle Konten gleichzeitig angezeigt werden können.
+Wenn die Geräte Ihrer Benutzer möglicherweise weder über Touchscreens noch Mausräder verfügen, konfigurieren Sie den Katalog so, dass eine Scrollleiste angezeigt wird, wenn der Benutzer mit der Maus darauf zeigt. So können Benutzer sogar alle Konten abrufen, wenn auf dem Bildschirm nicht alle Konten gleichzeitig angezeigt werden können.
 
-1. Wählen Sie wie obenstehend beschrieben das Steuerelement **Katalog** aus.
+1. Wählen Sie wie obenstehend beschrieben den Katalog aus.
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. Klicken oder tippen Sie auf der Registerkarte **Katalog** auf **Scrollleiste anzeigen**, und überprüfen Sie, ob der Wert der Eigenschaft sich in **TRUE** geändert hat. 
+1. Wählen Sie auf der Registerkarte **Katalog** die Option **Scrollleiste anzeigen** aus, und überprüfen Sie, ob der Wert der Eigenschaft sich in **TRUE** geändert hat. 
 
     ![Scrollleiste anzeigen](./media/customize-layout-sharepoint/show-scrollbar.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Sie haben in diesem Tutorial erfahren, wie Sie das Steuerelement **Katalog** und für eine App den Titel des Standardbildschirms zum Durchsuchen generieren. Sie können außerdem die Standardanzeigen anpassen, damit Details angezeigt sowie Konten erstellt und aktualisiert werden können. Diese Anzeigen enthalten jeweils ein **Formular anzeigen**-Steuerelement und ein **Formular bearbeiten**-Steuerelement. Über diese Steuerelemente können Sie z.B. ändern, welche Datentypen in welcher Reihenfolge angezeigt werden sollen.
+In diesem Tutorial haben Sie den Katalog angepasst und andere Änderungen am Standardbildschirm zum Durchsuchen von Datensätzen in einer generierten App vorgenommen. Sie können außerdem die Standardanzeigen anpassen, damit Details angezeigt sowie Konten erstellt und aktualisiert werden können. Während der Bildschirm zum Durchsuchen einen Katalog enthält, enthalten die anderen beiden Bildschirme in der App Formulare. Sie können z.B. ändern, welche Datentypen die Formulare in welcher Reihenfolge anzeigen.
 
 > [!div class="nextstepaction"]
 > [Customize forms (Formulare anpassen)](customize-forms-sharepoint.md)
