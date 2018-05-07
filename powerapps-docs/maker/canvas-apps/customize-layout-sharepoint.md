@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 6206d520e8bb07c0919f482700c1af861e41109d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
 In diesem Tutorial passen Sie den Katalog an und nehmen andere Änderungen an einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen:
@@ -28,7 +28,7 @@ Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus 
 Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Sie können diesem Thema wahlweise lediglich allgemeine Konzepte entnehmen oder die einzelnen Schritte befolgen, wenn Sie zuerst [diese App generieren](data-platform-create-app.md).
+[Generieren Sie eine App](data-platform-create-app.md) aus der Entität **Konten** des Common Data Service (CDS) für Apps.
 
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
