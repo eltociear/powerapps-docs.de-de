@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 02/05/2018
 ms.author: anneta
-ms.openlocfilehash: c5dafffba91f4e4ce8e4e27d4780e91bf5ddc415
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 34c4e4126015f9a5f53ef6f07c9c66e4a4141db0
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-a-sharepoint-list-form-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -33,11 +33,11 @@ Sind Sie zum Anpassen bereit? Lassen Sie uns loslegen!
 > [!NOTE]
 > Die Option **Formulare anpassen** ist nicht verfügbar oder wird möglicherweise nicht ordnungsgemäß ausgeführt, wenn die SharePoint-Liste Datentypen enthält, die von PowerApps nicht unterstützt werden.
 
-Klicken oder tippen Sie in der SharePoint-Liste auf **PowerApps** in der Befehlszeile, und klicken oder tippen Sie anschließend auf **Formulare anpassen**. Dadurch wird PowerApps Studio für Web in einem Browser geöffnet und eine Formular-App mit einem einzelnen Bildschirm generiert, wie im folgenden Beispiel gezeigt.
+Klicken oder tippen Sie in der SharePoint-Liste auf **PowerApps** in der Befehlszeile, und klicken oder tippen Sie anschließend auf **Formulare anpassen**. Dadurch wird PowerApps Studio in einem Browser geöffnet und eine Formular-App mit einem einzelnen Bildschirm generiert, wie im folgenden Beispiel gezeigt.
 
 ![Formular-App mit einzelnem Bildschirm](./media/customize-list-form/list-form-app.png)
 
-Sie können jederzeit zur SharePoint-Liste zurückkehren, indem Sie in PowerApps Studio für Web links oben auf **Zurück zu SharePoint** klicken oder tippen.
+Sie können jederzeit zur SharePoint-Liste zurückkehren, indem Sie in PowerApps Studio links oben auf **Zurück zu SharePoint** klicken oder tippen.
 
 ## <a name="customize-the-list-form"></a>Anpassen des Listenformulars
 
@@ -88,7 +88,7 @@ Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiter
 
     * **Das SharePoint-Standardformular verwenden** – Für die Liste wird das SharePoint-Standardformular verwendet.
 
-    * **In PowerApps erstelltes benutzerdefiniertes Formular verwenden** – In SharePoint wird das Formular verwendet, das Sie in PowerApps angepasst haben. (Alternativ können Sie das Formular über die Seite **Speichern** von PowerApps Studio für Web erneut veröffentlichen.)
+    * **In PowerApps erstelltes benutzerdefiniertes Formular verwenden** – In SharePoint wird das Formular verwendet, das Sie in PowerApps angepasst haben. (Alternativ können Sie das Formular über die Seite **Speichern** von PowerApps Studio erneut veröffentlichen.)
 
     Sie können nach Bedarf zwischen den Optionen wechseln.
 
@@ -108,7 +108,7 @@ Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiter
 
 **F:** Wie unterscheidet sich ein angepasstes Listenformular von einer eigenständigen App, die ich in SharePoint oder PowerApps erstelle?
 
-**A:** Die Listenformular-App, die Sie in SharePoint erstellen, ist ein besonderer Typ von PowerApps-App, der nur in einer SharePoint-Liste verwendet werden kann. Diese Listenformular-Apps werden nicht in der Liste der Apps in PowerApps Studio für Web oder PowerApps Mobile angezeigt, und Sie können sie nicht außerhalb der SharePoint-Liste ausführen.
+**A:** Die Listenformular-App, die Sie in SharePoint erstellen, ist ein besonderer Typ von PowerApps-App, der nur in einer SharePoint-Liste verwendet werden kann. Diese Listenformular-Apps werden nicht in der Liste der Apps in PowerApps Studio oder PowerApps Mobile angezeigt, und Sie können sie nicht außerhalb der SharePoint-Liste ausführen.
 
 **F:** Wann sollte ich ein benutzerdefiniertes Listenformular und wann eine eigenständige App erstellen?
 
@@ -142,12 +142,12 @@ Schritt-für-Schritt-Anweisungen zum Ausblenden von Feldern und Vornehmen weiter
 
 1. Klicken oder tippen Sie in der SharePoint-Liste auf **PowerApps** in der Befehlszeile, und klicken oder tippen Sie anschließend auf **Formulare anpassen**.
 
-1. Klicken oder tippen Sie in PowerApps Studio für Web auf **Datei**, auf **Speichern** und dann auf **Alle Versionen anzeigen**. Die Seite **Versionen** wird in einer neuen Browserregisterkarte geöffnet.
+1. Klicken oder tippen Sie in PowerApps Studio auf **Datei**, auf **Speichern** und dann auf **Alle Versionen anzeigen**. Die Seite **Versionen** wird in einer neuen Browserregisterkarte geöffnet.
 
     > [!NOTE]
     > Wenn die Schaltfläche **Alle Versionen anzeigen** nicht angezeigt wird, klicken Sie auf **Speichern**. Anschließend wird die Schaltfläche angezeigt.
 
-1. Lassen Sie die Seite oder Browserregisterkarte **Versionen** geöffnet, und kehren Sie zur Seite **Speichern** in der anderen Browserregisterkarte zurück. Klicken oder tippen Sie dann auf den Pfeil am oberen Rand des linken Navigationsbereichs, und klicken oder tippen Sie auf **Zurück zu SharePoint**, um das Formular zu entsperren und PowerApps Studio für Web zu schließen.
+1. Lassen Sie die Seite oder Browserregisterkarte **Versionen** geöffnet, und kehren Sie zur Seite **Speichern** auf der anderen Browserregisterkarte zurück. Klicken oder tippen Sie dann auf den Pfeil am oberen Rand des linken Navigationsbereichs, und klicken oder tippen Sie auf **Zurück zu SharePoint**, um das Formular zu entsperren und PowerApps Studio zu schließen.
 
 1. Kehren Sie zur Seite **Versionen** in der anderen Browserregisterkarte zurück, suchen Sie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Wiederherstellen**.
 

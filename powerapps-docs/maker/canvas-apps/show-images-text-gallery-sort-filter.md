@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/02/2015
 ms.author: lonu
-ms.openlocfilehash: 285d9c051c453f6710a1dbc94dbb47af15b6c71d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 959431b69d4f432335997697d8f25b5b8815d63c
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem PowerApps-Katalog
 Erstellen Sie einen Katalog, um Bilder und Text zu verschiedenen Produkten anzuzeigen, und sortieren und filtern Sie diese Informationen.
@@ -28,7 +28,7 @@ In PowerApps können Sie einen Katalog verwenden, um mehrere verwandte Elemente 
 > 
 
 ### <a name="prerequisites"></a>Voraussetzungen
-* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [installieren](http://aka.ms/powerappsinstall) Sie PowerApps. Melden Sie sich beim Öffnen von PowerApps mit denselben Anmeldeinformationen an, die Sie auch beim Registrieren angegeben haben.
+* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie aus einer [Vorlage](get-started-test-drive.md) oder mithilfe von [Daten](get-started-create-from-data.md) eine Tablet-App, oder [erstellen Sie die App von Grund auf neu](get-started-create-from-blank.md).
 * Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
 * In den hier gezeigten Schritten werden die [CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip)-Daten als Beispieleingabe verwendet, die auch JPG-Bilder umfassen. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest PowerApps die Dateien in den ZIP-Dateien automatisch und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.

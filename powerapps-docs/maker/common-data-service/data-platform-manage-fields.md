@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Verwalten von benutzerdefinierten Feldern in einer Entität | Microsoft-Dokumentation'
-description: Schnellstart zum Erstellen, Lesen, Aktualisieren und Löschen von benutzerdefinierten Feldern in einer Entität.
+title: Verwalten von benutzerdefinierten Feldern in einer Entität | Microsoft-Dokumentation
+description: Exemplarische Vorgehensweise zum Erstellen, Lesen, Aktualisieren und Löschen von benutzerdefinierten Feldern in einer Entität in CDS für Apps
 documentationcenter: na
 author: clwesene
 manager: kfile
@@ -8,24 +8,23 @@ editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: conceptual
+ms.topic: article
 ms.component: cds
-ms.date: 3/21/2018
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a2dfe95cd9e858326a9f014aaac4e595fb27be48
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: ff522ee5d5614888c6cc0fcfb1e7d6658a36c6ae
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="quickstart-manage-custom-fields"></a>Schnellstart: Verwalten von benutzerdefinierten Feldern
+# <a name="manage-custom-fields-in-an-entity"></a>Verwalten von benutzerdefinierten Feldern in einer Entität
 Sie können ein oder mehrere benutzerdefinierte Felder in einer beliebigen Entität erstellen und aktualisieren. Wenn Sie ein benutzerdefiniertes Feld erstellen, geben Sie einen Satz von Eigenschaften an, z.B. den Namen des Felds, den Anzeigenamen und den Typ der Daten, die es enthält. Weitere Informationen finden Sie unter [Entity attribute metadata (Attributmetadaten von Entitäten)](../../developer/common-data-service/entity-attribute-metadata.md).
 
 > [!NOTE]
-> Jede Entität verfügt über [Systemfelder], die z.B. angeben, wann und durch wen ein Eintrag zuletzt aktualisiert wurde. Darüber hinaus verfügen [Standardentitäten](data-platform-intro.md#system-fields) über Standardfelder. Sie können keine System- oder Standardfelder ändern oder löschen. Wenn Sie ein benutzerdefiniertes Feld erstellen, sollte es zusätzliche Funktionalität zu diesen integrierten Feldern bieten.
+> Jede Entität verfügt über Systemfelder, die z.B. angeben, wann und durch wen ein Eintrag zuletzt aktualisiert wurde. Darüber hinaus verfügen Standardentitäten über (Standard)Felder. Sie können keine System- oder Standardfelder ändern oder löschen. Wenn Sie ein benutzerdefiniertes Feld erstellen, sollte es zusätzliche Funktionalität zu diesen integrierten Feldern bieten.
 
 ## <a name="create-a-field"></a>Ein Feld erstellen
-
 1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
@@ -62,7 +61,6 @@ Sie können ein oder mehrere benutzerdefinierte Felder in einer beliebigen Entit
     Sie werden benachrichtigt, wenn der Vorgang erfolgreich abgeschlossen ist. Wenn der Vorgang nicht erfolgreich ist, gibt eine Fehlermeldung an, welche Probleme aufgetreten sind und wie Sie sie beheben können.
 
 ## <a name="create-a-calculated-or-roll-up-field"></a>Erstellen eines berechneten Felds oder eines Roll Up-Felds
-
 Mithilfe von berechneten Feldern können Sie manuelle Berechnungen in Ihren Geschäftsprozessen automatisieren. Beispielsweise kann es dazu kommen, dass ein Vertriebsmitarbeiter den gewichteten Umsatz für eine Verkaufsmöglichkeit erfragt. Dann wird der für eine Verkaufsmöglichkeit geschätzte Umsatz mit der jeweiligen Wahrscheinlichkeit multipliziert. Oder der Vertriebsmitarbeiter möchte automatisch einen Rabatt gewähren, wenn die Bestellsumme über 500 USD liegt. Ein berechnetes Feld kann Werte enthalten, die mithilfe von einfachen mathematischen Vorgängen (z.B. durch „Größer als“ oder „Wenn–Sonst“-Bedingungen) berechnet werden. Berechnete Felder können über die folgenden Datentypen erstellt werden:
 
 * Eine Textzeile
@@ -74,7 +72,6 @@ Mithilfe von berechneten Feldern können Sie manuelle Berechnungen in Ihren Gesc
 * Datum und Uhrzeit
 
 Weitere Informationen zu den unterstützten Ausdruckstypen und Beispielen finden Sie unter [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](/dynamics365/customer-engagement/customize/define-calculated-fields).
-
 
 ## <a name="update-or-delete-a-field"></a>Ein Feld aktualisieren oder löschen
 1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**, und klicken oder tippen Sie dann auf eine Entität.

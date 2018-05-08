@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 50e897e9d75eec037039e81e6dbed524206b10d3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 51a13472407c5483eed7cc2c202e46855905157d
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Generieren einer App aus SharePoint mit PowerApps
 
@@ -53,7 +53,7 @@ Die App wird in einer separaten Registerkarte des Browsers geöffnet.
 ## <a name="manage-the-app"></a>Verwalten der App
 ![Befehlsleiste](./media/generate-app-from-sharepoint-list-interface/command-bar.png)
 
-* Wenn Sie auf **Edit in PowerApps** (In PowerApps bearbeiten) klicken oder tippen, öffnet sich die App auf einer separaten Registerkarte des Browsers, wo Sie die App in PowerApps Studio für das Web aktualisieren können.
+* Wenn Sie auf **Edit in PowerApps** (In PowerApps bearbeiten) klicken oder tippen, öffnet sich die App auf einer separaten Registerkarte des Browsers, wo Sie die App in PowerApps Studio aktualisieren können.
 
 * Wenn Sie auf **Make this view public** (Veröffentlicht diese Ansicht) klicken oder tippen, können andere Personen in Ihrer Organisation sie anzeigen. Standardmäßig können nur Sie Ansichten anzeigen, die Sie erstellen. Wenn Sie anderen Personen gestatten möchten, diese App zu bearbeiten, müssen Sie sie [für diese freigeben](share-app.md) und die Berechtigungen **Can edit** (Kann bearbeiten) gewähren.
 

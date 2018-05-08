@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: fe6017ee402f0026aab3ef281a02b472b6a503ad
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1be4a7a6f1d4080a715f88db8d48892641a19a1f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Verbinden mit SharePoint aus PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -49,13 +49,11 @@ Sie können Daten aus einer benutzerdefinierten Liste, nicht jedoch aus einer Bi
 Spalten mit Leerzeichen können von PowerApps gelesen werden, doch die Leerzeichen werden durch den hexadezimalen Escapecode **"\_X0020\_"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Öffnen Sie PowerApps mit *einem* der folgenden Schritte:
+1. [Registrieren Sie sich](../../signup-for-powerapps.md) bei PowerApps.
 
-* [Registrieren Sie sich](../../signup-for-powerapps.md) bei PowerApps, [installieren](http://aka.ms/powerappsinstall) und öffnen Sie PowerApps Studio for Windows, und melden Sie sich mit den Anmeldeinformationen an, die Sie beim Registrieren angegeben haben.
+1. [Melden Sie sich bei PowerApps an](http://web.powerapps.com), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung verwendet haben.
 
-* [Öffnen Sie PowerApps Studio für das Web](https://create.powerapps.com/api/start) in einem Browser.
-
-    Eine Liste der unterstützten Browser und Einschränkungen in der Vorabversion von PowerApps Studio für das Web finden Sie unter [Create or edit apps in a browser (Erstellen oder Bearbeiten von Apps in einem Browser)](../create-app-browser.md).
+1. Klicken Sie am linken Rand auf **Apps** und dann auf dem Banner auf **App erstellen**.
 
 ## <a name="create-an-app"></a>Erstellen einer App
 * [Generieren Sie eine App automatisch](../app-from-sharepoint.md) auf Grundlage der Daten in einer SharePoint-Liste.

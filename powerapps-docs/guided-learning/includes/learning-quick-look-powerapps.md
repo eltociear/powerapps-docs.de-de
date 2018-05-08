@@ -10,7 +10,7 @@ Jede Beispiel-App wurde für einen bestimmten Zweck entwickelt, z.B. für die Bu
 ![PowerApps-Beispiel-App für Bodenbeläge](./media/learning-quick-look-powerapps/powerapps-flooring-sample.png)
 
 ## <a name="create-an-app-from-a-template"></a>App aus einer Vorlage erstellen
-Eine weitere gute Möglichkeit zum Einstieg ist das **Erstellen einer App aus einer Vorlage**. Vorlagen sind im Grunde Beispiel-Apps, die Sie öffnen können, um sich über ihren Aufbau zu informieren. Sie enthalten Beispieldaten, die Ihnen einen Eindruck von den Möglichkeiten vermitteln, und wenn Sie sie in PowerApps Studio öffnen, **können Sie selbst sehen, wie eine App aufgebaut ist**. Beachten Sie, dass Vorlagen zurzeit nur für PowerApps Studio für Windows verfügbar sind, nicht für PowerApps Studio für das Web.
+Eine weitere gute Möglichkeit zum Einstieg ist das **Erstellen einer App aus einer Vorlage**. Vorlagen sind im Grunde Beispiel-Apps, die Sie öffnen können, um sich über ihren Aufbau zu informieren. Sie enthalten Beispieldaten, die Ihnen einen Eindruck von den Möglichkeiten vermitteln, und wenn Sie sie in PowerApps Studio öffnen, **können Sie selbst sehen, wie eine App aufgebaut ist**.
 
 ![App-Vorlage in PowerApps](./media/learning-quick-look-powerapps/powerapps-templates.png)
 
@@ -24,7 +24,7 @@ Falls Ihr Team mit dem Einsatz von PowerApps begonnen hat, wurden vielleicht sch
 ![Freigeben in PowerApps](./media/learning-quick-look-powerapps/powerapps-sharing.png)
 
 ## <a name="create-an-app-from-a-data-source"></a>Erstellen einer App aus einer Datenquelle
-Sie können Apps in **PowerApps Studio für das Web** oder in **PowerApps Studio für Windows** erstellen. Dort können Sie eine Verbindung mit Datenquellen herstellen und Apps in einem visuellen Designer erstellen.
+Erstellen sie Apps in **PowerApps Studio**. Dort können Sie eine Verbindung mit Datenquellen herstellen und Apps in einem visuellen Designer erstellen.
 
 ![PowerApps-App aus Daten](./media/learning-quick-look-powerapps/powerapps-app-from-data.png)
 

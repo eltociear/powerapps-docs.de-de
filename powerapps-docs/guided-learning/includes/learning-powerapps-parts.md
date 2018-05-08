@@ -9,12 +9,12 @@ Im ersten Thema dieses Kurses für „Geführtes Lernen“ haben Sie die Hauptko
 Wir erwarten nicht, dass Sie viel Zeit darauf verwenden zu verstehen, was PowerApps eigentlich *ist*, es ist aber vielleicht hilfreich, ein wenig mehr ins Detail zu gehen.
 
 ## <a name="webpowerappscom"></a>web.powerapps.com
-Wenn Sie Apps erstellen, arbeiten Sie in erster Linie hiermit. Sie können Ihre Kenntnisse mit den dort verfügbaren **Beispiel-Apps und Vorlagen** erweitern und alle Apps sehen, die Sie erstellt haben. Apps werden in **PowerApps Studio für das Web** oder **PowerApps Studio für Windows** erstellt und für Einzelpersonen und Organisationen freigegeben. Außerdem verwalten Sie Daten: **Verbindungen**, **Gateways** und **Entitäten** (diese werden in Kürze behandelt). Und Sie sehen alle **Flows**, die unter **flows.microsoft.com** erstellt wurden und die Sie in Ihre Apps integrieren können.
+Wenn Sie Apps erstellen, arbeiten Sie in erster Linie hiermit. Sie können Ihre Kenntnisse mit den dort verfügbaren **Beispiel-Apps und Vorlagen** erweitern und alle Apps sehen, die Sie erstellt haben. Apps werden in **PowerApps Studio** erstellt und dann für Einzelpersonen und Organisationen freigegeben. Außerdem verwalten Sie Daten: **Verbindungen**, **Gateways** und **Entitäten** (diese werden in Kürze behandelt). Und Sie sehen alle **Flows**, die unter **flows.microsoft.com** erstellt wurden und die Sie in Ihre Apps integrieren können.
 
 ![Website web.powerapps.com](./media/learning-powerapps-parts/powerapps-web-site.png)
 
 ## <a name="powerapps-studio"></a>PowerApps Studio
-**PowerApps Studio** ist als Webanwendung verfügbar, die Sie in jedem modernen Browser verwenden können, sowie als Windows-Anwendung. PowerApps Studio enthält drei Bereiche und ein Menüband, durch die das Erstellen einer App mit dem **Erstellen einer PowerPoint-Foliengruppe vergleichbar ist**:
+**PowerApps Studio** ist als Webanwendung verfügbar, die Sie in jedem modernen Browser verwenden können. PowerApps Studio enthält drei Bereiche und ein Menüband, durch die das Erstellen einer App mit dem **Erstellen einer PowerPoint-Foliengruppe vergleichbar ist**:
 
 1. **Linke Navigationsleiste**: Hier können Sie eine Miniaturansicht für jeden Bildschirm in Ihrer App oder eine hierarchische Ansicht aller Steuerelemente auf den einzelnen Bildschirmen sehen.
 2. **Mittlerer Bereich**: Hier wird der Bildschirm gezeigt, auf dem Sie arbeiten.

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 5a469c875d82670e30d0be8bef86cc476ca5ea19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="share-an-app-in-powerapps"></a>Freigeben einer Apps in PowerApps
 Sie können mit PowerApps Apps erstellen, die genau auf die Anforderungen Ihres eigenen Unternehmens abgestimmt sind, aber die eigentliche Stärke von PowerApps liegt darin, dass Sie diese Apps für andere Personen freigeben können. In diesem Thema erfahren Sie, wie Sie Apps für bestimmte Benutzer oder Sicherheitsgruppen oder für Ihre gesamte Organisation freigeben.
@@ -57,13 +57,13 @@ Die Benachrichtigung enthält einen Link, der von der von Ihnen zugewiesenen Ber
 ### <a name="how-do-my-users-see-the-app-i-shared"></a>Wie wird meinen Benutzern die freigegebene App angezeigt?
 Nachdem Sie eine App für mindestens einen Benutzer oder eine Sicherheitsgruppe freigegeben haben, legt die Freigabeberechtigung fest, wie Benutzern die freigegebene App angezeigt wird.
 
-##### <a name="if-you-shared-an-app-with-user-permission"></a>Wenn Sie eine App mit der Berechtigung *Benutzer* freigegeben haben
+##### <a name="if-you-shared-an-app-with-can-use-permission"></a>Wenn Sie eine App mit der Berechtigung *Can use* (Verwenden) freigegeben haben
 Die Personen, für die Sie die App freigegeben haben, erhalten eine E-Mail-Benachrichtigung, wenn Sie dieses Kontrollkästchen auf dem Bildschirm für die App-Freigabe aktiviert haben. In der E-Mail können die Benutzer auf einen Link klicken oder tippen, um die App in [Dynamics 365](http://home.dynamics.com) auszuführen. In Kürze werden universelle Links unterstützt. Dies bedeutet, dass die App in PowerApps Studio oder PowerApps Mobile geöffnet wird, wenn diese Anwendungen installiert sind.
 
 Benutzer können die App auch in AppSource in [Dynamics 365](http://home.dynamics.com) ermitteln (wenn Sie beispielsweise keine E-Mail gesendet haben). [Erfahren Sie mehr darüber](../../user/app-source.md), wie Benutzer Apps über AppSource abrufen können.
 
-##### <a name="if-you-shared-an-app-with-contributor-permission"></a>Wenn Sie eine App mit der Berechtigung *Mitwirkender* freigegeben haben
-Die Personen, für die Sie die App freigegeben haben, erhalten eine E-Mail-Benachrichtigung, wenn Sie dieses Kontrollkästchen auf dem Bildschirm für die App-Freigabe aktiviert haben. In der E-Mail können sie auf einen Link klicken oder tippen, der die App unter Verwendung von PowerApps Studio für das Web direkt für die Bearbeitung öffnet. Es ist auch ein Link zum Ausführen der App in [Dynamics 365](http://home.dynamics.com) vorhanden. In Kürze werden universelle Links unterstützt. Dies bedeutet, dass die App in PowerApps Studio oder PowerApps Mobile geöffnet wird, wenn diese Anwendungen installiert sind.
+##### <a name="if-you-shared-an-app-with-can-edit-permission"></a>Wenn Sie eine App mit der Berechtigung *Can edit* (Bearbeiten) freigegeben haben
+Die Personen, für die Sie die App freigegeben haben, erhalten eine E-Mail-Benachrichtigung, wenn Sie dieses Kontrollkästchen auf dem Bildschirm für die App-Freigabe aktiviert haben. In der E-Mail können sie auf einen Link klicken oder tippen, der die App unter Verwendung von PowerApps Studio direkt für die Bearbeitung öffnet. Es ist auch ein Link zum Ausführen der App in [Dynamics 365](http://home.dynamics.com) vorhanden. In Kürze werden universelle Links unterstützt. Dies bedeutet, dass die App in PowerApps Studio oder PowerApps Mobile geöffnet wird, wenn diese Anwendungen installiert sind.
 
 Benutzer können die App auch unter [powerapps.com](http://web.powerapps.com) suchen (wenn Sie beispielsweise keine E-Mail gesendet haben). Dies ist der Startpunkt für App-Ersteller, um alle Apps zu suchen, die sie erstellt haben oder die mit der Berechtigung **Mitwirkender** für sie freigegeben wurden. Über [Dynamics 365](http://home.dynamics.com) hingegen können Benutzer Apps aus PowerApps oder andere Geschäftsanwendungen schnell ausführen.
 

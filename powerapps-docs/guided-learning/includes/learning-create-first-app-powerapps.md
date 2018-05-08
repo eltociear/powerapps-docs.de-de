@@ -1,11 +1,9 @@
 Nachdem Sie nun die Komponenten von PowerApps und die Optionen zum Erstellen von Apps kennen, wird es Zeit, eine eigene App zu erstellen. In diesem Thema erstellen wir eine Smartphone-App anhand einer SharePoint Online-Liste. Sie können aber auch Daten aus vielen anderen Quellen verwenden, z.B. aus Excel, Clouddiensten wie Salesforce und lokalen Quellen wie SQL Server.
 
 ## <a name="connect-to-a-data-source"></a>Mit einer Datenquelle verbinden
-Der erste Schritt beim Generieren einer App aus Daten ist das Auswählen der PowerApps Studio-Version und das Herstellen einer Verbindung mit Ihrer Datenquelle. Klicken oder tippen Sie auf web.powerapps.com auf **Neue App**, und wählen Sie dann aus, ob Sie PowerApps Studio für Windows oder PowerApps Studio für das Web verwenden möchten.
+Klicken oder tippen Sie auf web.powerapps.com am linken Rand auf **Apps**, und klicken oder tippen Sie anschließend im Banner auf **Eine App erstellen**.
 
-![Erste Schritte mit web.powerapps.com](./media/learning-create-first-app-powerapps/generate-choose-studio.png)
-
-In PowerApps Studio können Sie mit Daten, mit einer Vorlage oder völlig neu beginnen. Wir erstellen eine Smartphone-App für eine SharePoint-Liste, klicken oder tippen Sie daher unter **SharePoint** auf **Telefonlayout**.
+In PowerApps können Sie eine App anhand von Daten, einer Vorlage oder von Grund auf neu erstellen. Wir erstellen eine Smartphone-App für eine SharePoint-Liste, klicken oder tippen Sie daher unter **SharePoint** auf **Telefonlayout**.
 
 ![Smartphone-App aus SharePoint-Liste](./media/learning-create-first-app-powerapps/generate-sharepoint-phone.png)
 

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f0b01c8bdb2043c1f1c219a4163f790c14b4e46
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4ae16517332864066f5b744e85ce3fe48c97a1df
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-app-to-handle-project-requests"></a>Generieren einer App zum Behandeln von Projektanforderungen
 > [!NOTE]
@@ -33,7 +33,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
    
     ![Erstellen einer App](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. Geben Sie der App einen Namen, z.B. „Project Requests app“ (Projektanforderungen-App), und klicken oder tippen Sie dann auf **Erstellen**. Wenn die App fertig gestellt wurde, wird sie in PowerApps Studio für Web geöffnet.
+2. Geben Sie der App einen Namen, z.B. „Project Requests app“ (Projektanforderungen-App), und klicken oder tippen Sie dann auf **Erstellen**. Wenn die App fertiggestellt wurde, wird sie in PowerApps Studio geöffnet.
    
     ![Einen Namen für die App angeben](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: 77e47b79ece6149f7d9068fc4092e09fbdca77d2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 2c754fa8e479494ae1002e5339d2d8d5eeb2480f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Grundlegendes zu lokalen Datengateways für Microsoft PowerApps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration
@@ -138,6 +138,10 @@ Das lokale Datengateway ist für die Verwendung von *NT SERVICE\PBIEgwService* f
 Dies ist nicht das Konto, das zum Herstellen einer Verbindung mit lokalen Datenquellen oder dem Geschäfts- oder Schulkonto verwendet wird, mit dem Sie sich bei den Clouddiensten anmelden.
 
 Wenn bei Ihrem Proxyserver aufgrund der Authentifizierung Probleme auftreten, empfiehlt es sich, das Windows-Dienstkonto in ein Domänenbenutzerkonto oder verwaltetes Dienstkonto zu ändern, wie unter [Konfigurierung von Proxyeinstellungen](https://docs.microsoft.com/power-bi/service-gateway-proxy#changing-the-gateway-service-account-to-a-domain-user) beschrieben.
+
+## <a name="tenant-level-administration"></a>Verwaltung auf Mandantenebene 
+
+Aktuell können Mandantenadministratoren nicht alle Gateways an einer Stelle gesammelt verwalten, die für andere Benutzer installiert und konfiguriert sind.  Wenn Sie Mandantenadministrator sind, wird empfohlen, dass Sie alle Benutzer in Ihrer Organisation darum bitten, Sie für jedes installierte Gateway als Administrator hinzuzufügen. So können Sie alle Gateways in Ihrer Organisation über die Gatewayeinstellungen oder über [PowerShell-Befehle](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters) verwalten.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 #### <a name="general"></a>Allgemein

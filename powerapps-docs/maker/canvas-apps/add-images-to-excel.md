@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: anneta
-ms.openlocfilehash: b15584a1b53625544711f04d074c688ce75eac9c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 29da2a8814b0de7d34915f9992aeb963743785d2
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>Hinzufügen von Bildern aus PowerApps zu Excel
 Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeichnungen mit einem **Stift**-Steuerelement anzeigen, hinzufügen oder löschen können. Die App basiert auf einer Excel-Datei, die Sie erstellen und in ein Cloudspeicherkonto hochladen.
@@ -41,7 +41,7 @@ Erstellen Sie automatisch eine App, in der Benutzer Bilder aus Dateien oder Zeic
 6. Klicken oder tippen Sie unter **Tabelle auswählen** auf die erstellte Tabelle und anschließend auf **Verbinden**.
    
     ![Auswählen der Tabelle](./media/add-images-to-excel/select-table.png)
-7. Wenn Sie PowerApps erst kürzlich installiert oder aktualisiert haben, absolvieren Sie die Schnelleinführung; Sie können aber auch auf **Überspringen** klicken oder tippen.
+7. Wenn die Schnelleinführung angezeigt wird, sehen Sie sich diese an, oder klicken oder tippen Sie auf **Überspringen**.
    
     ![Erster Bildschirm der Schnelleinführung](./media/add-images-to-excel/quick-tour.png)
 

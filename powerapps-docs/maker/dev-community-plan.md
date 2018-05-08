@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
-ms.openlocfilehash: fe346f5e85f37e68d2424298184d3f09615a5ac8
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
+ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:
@@ -73,7 +73,7 @@ Mit der individuellen Umgebung erhalten Sie die folgenden Funktionen:
 
 *Sie können Apps, Flows, Verbindungen usw. nicht für andere Benutzer Ihres Mandanten freigeben. Ferner können Sie andere Benutzer weder als Umgebungsadministratoren oder -ersteller hinzufügen noch zu den Datenbankrollen im Admin Center hinzufügen.
 
-**Sie können derzeit keine Datenbank mit Common Data Service in einer individuellen Umgebung erstellen. Diese Funktion ist aber bald wieder verfügbar. Wenn Sie zuvor eine Datenbank erstellt haben, können Sie diese weiterhin ohne Probleme nutzen. 
+\*\*Sie können derzeit keine Datenbank mit Common Data Service in einer individuellen Umgebung erstellen. Diese Funktion ist aber bald wieder verfügbar. Wenn Sie zuvor eine Datenbank erstellt haben, können Sie diese weiterhin ohne Probleme nutzen. 
 
 ## <a name="what-are-the-capacity-limits-for-the-individual-environment"></a>Welche Kapazitätsgrenzen bestehen für die individuelle Umgebung?
 | **Kapazität** |  |

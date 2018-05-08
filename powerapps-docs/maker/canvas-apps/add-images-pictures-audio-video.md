@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 7ee752f5606f10f66ad7c8dc49e05233225c0a89
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-[Registrieren](../signup-for-powerapps.md) Sie sich für PowerApps, und [installieren](http://aka.ms/powerappsinstall) Sie die Anwendung. Melden Sie sich beim Öffnen von PowerApps mit denselben Anmeldeinformationen an, die Sie auch beim Registrieren angegeben haben.
+[Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Hinzufügen von Medien aus einer Datei oder aus der Cloud
 Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bilder, Video oder Audio).

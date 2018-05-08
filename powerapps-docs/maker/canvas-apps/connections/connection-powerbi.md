@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: 3eb91d8903caff9af812943697cf317ee7379316
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 6e373bdf618bf9e59deef5d8bddf73c06d6f34fd
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Herstellen einer Verbindung mit Power BI aus PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -26,7 +26,7 @@ Power BI ist eine Suite von Business Analytics-Tools zum Analysieren von Daten u
 In diesem Thema wird gezeigt, wie Sie die Power BI-Verbindung in einer App verwenden, und die verfügbaren Funktionen werden aufgelistet.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-* Zugriff auf [powerapps.com](https://powerapps.com) oder Installation von [PowerApps](http://aka.ms/powerappsinstall)
+* [Registrieren](https://web.powerapps.com)
 * Die Power BI-[Verbindung](https://powerapps.microsoft.com/tutorials/add-manage-connections/) hinzufügen
 * Eine App aus einer [Vorlage](https://powerapps.microsoft.com/tutorials/get-started-test-drive/), aus [Daten](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/) oder [von Grund auf neu](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/) erstellen
 

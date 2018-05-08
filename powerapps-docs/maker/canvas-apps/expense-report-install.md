@@ -12,11 +12,11 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 1454b995b50d2bb5d990ef57f91da6fb9105e660
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Installation und Konfiguration der PowerApps-Beispiel-App „Expense Report“
 
@@ -60,7 +60,7 @@ In dieser Liste werden die Ausgabenbereich gespeichert.
 
 10. Klicken Sie auf **Erstellen**.
 
-### <a name="create-costcenter-column"></a>Erstellen der Spalte „Kostenstelle“
+### <a name="create-cost-center-column"></a>Erstellen der Spalte „Kostenstelle“
 
 1. Klicken Sie auf die Liste **Ausgaben**.
 2. Klicken Sie auf das **Zahnradsymbol** oben rechts auf der Webseite.
@@ -233,7 +233,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 ### <a name="create-sharepoint-connection"></a>Erstellen einer SharePoint-Verbindung
 
 1.  Klicken Sie auf **+ Neue Verbindung**.
-2.  Geben Sie in das **Suchfeld** die Verbindung **Outlook** ein.
+2.  Geben Sie in das **Suchfeld** die Verbindung **SharePoint** ein.
 3.  Klicken Sie in der Liste auf **SharePoint**.
 4.  Klicken Sie auf **Erstellen**.
 5.  Wählen Sie im Popupfenster das Konto aus, mit dem Sie sich angemeldet haben.
@@ -259,7 +259,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
     ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. Klicken Sie auf **Speichern**.
-11. Klicken Sie auf das **rote Symbol** für die **SharePoint-Verbindung**.
+11. Klicken Sie auf das **rote Symbol** für die **Genehmigungsverbindung**.
 12. Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
 
     ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings-approvals.png)

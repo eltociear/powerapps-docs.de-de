@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 9a4daa7135f54ed3a0b3e1f206ce0d201c42da8b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f4b6f604ecd7557f7b7b54769d66da850e18ef4f
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
 Verwenden Sie Linien-, Kreis- und Balkendiagramme, um Ihre Daten anzuzeigen. Beim Arbeiten mit Diagrammen sollten die Daten, die Sie importieren, wie folgt gegliedert sein:
@@ -30,7 +30,7 @@ Ihre Daten sollten z.B. wie folgt aussehen:
 Sie können diese Diagramme in PowerApps erstellen und verwenden. Lassen Sie uns loslegen!
 
 ## <a name="prerequisites"></a>Voraussetzungen
-* [Registrieren](../signup-for-powerapps.md) Sie sich für PowerApps, und [installieren](http://aka.ms/powerappsinstall) Sie es anschließend. Melden Sie sich beim Öffnen von PowerApps mit denselben Anmeldeinformationen an, die Sie auch beim Registrieren angegeben haben.
+* [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie eine App aus einer [Vorlage](get-started-test-drive.md), aus [Daten](get-started-create-from-data.md) oder [von Grund auf neu](get-started-create-from-blank.md).
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 * Laden Sie [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) herunter, die Beispieldaten als XML-Datei enthält. Führen Sie die Schritte in diesem Thema aus, um sie direkt in Ihre App zu importieren. Dekomprimieren Sie alternativ die ZIP-Datei, öffnen Sie die XML-Datei in Excel, und speichern Sie es in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md).

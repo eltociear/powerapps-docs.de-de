@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 288e28d50d335e75baa99f50b26975ad529cc88f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-powerappscom"></a>Einführung in powerapps.com
 Das PowerApps-Team stellt [powerapps.com](http://web.powerapps.com) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:
@@ -34,7 +34,7 @@ Am rechten Rand des Headers wird ein Dropdownfeld für die Umgebung angezeigt, �
 
 ![Header Umgebung](./media/intro-maker-portal/environment.png)
 
-Neben dem Dropdownfeld für die Umgebung befindet sich ein Downloadsymbol. Klicken oder tippen Sie auf dieses Symbol, und es öffnet sich ein Dialogfeld mit Links zum Herunterladen von PowerApps Mobile (für iOS oder Android) oder PowerApps Studio für Windows.
+Neben dem Dropdownfeld für die Umgebung befindet sich ein Downloadsymbol. Klicken oder tippen Sie auf dieses Symbol, und es öffnet sich ein Dialogfeld mit Links zum Herunterladen von PowerApps Mobile (für iOS- oder Android-Geräte).
 
 ![Header Download](./media/intro-maker-portal/downloads2.png)
 
@@ -59,7 +59,7 @@ Wenn Sie sich noch nie angemeldet, eine App erstellt oder ausgeführt haben, wir
 
 ![Erstellen einer App](./media/intro-maker-portal/createapp.png)
 
-Klicken oder tippen Sie auf dem Banner auf **Get started** (Los geht‘s), und es werden Ihnen Optionen zum Erstellen einer App mit **PowerApps Studio für Windows** oder **PowerApps Studio für das Web** angezeigt.
+Klicken oder tippen Sie auf dem Banner auf **Get started** (Los geht‘s), und es werden Ihnen Optionen zum Erstellen einer App mit **PowerApps Studio** angezeigt.
 
 ![Erstellen einer App Ansicht](./media/intro-maker-portal/createmodal2.png)
 
@@ -90,7 +90,7 @@ Unter **Common Data Service** wird eine andere Schaltfläche angezeigt, je nach 
 
 Unterhalb des Banners **Use the Microsoft Common Data Services** (Microsoft Data Service verwenden) befindet sich eine Reihe von Beispiel-Apps und verbundene Beispiel-Apps, die wir für Sie erstellt haben.
 
-* **Beispiel-Apps**: Beispiel-Apps wurden für verschiedene Geschäftsszenarios für das Smartphone- oder Tablet-Layout entwickelt. Klicken Sie auf eine App, um schnell zu einer Beschreibung des Zwecks der App zu kommen, für welches Layout die App entwickelt wurde und welche Funktionen die App vorstellt, wie z.B. Kamera, GPS oder Optionsfelder. Dies ist eine schnelle Möglichkeit für neue Benutzer, einen Überblick über die Funktionen von PowerApps zu erhalten; Sie können eine Vorlage verwenden, um in PowerApps Studio für Windows eine identische App zu erstellen.
+* **Beispiel-Apps**: Beispiel-Apps wurden für verschiedene Geschäftsszenarios für das Smartphone- oder Tablet-Layout entwickelt. Klicken Sie auf eine App, um schnell zu einer Beschreibung des Zwecks der App zu kommen, für welches Layout die App entwickelt wurde und welche Funktionen die App vorstellt, wie z.B. Kamera, GPS oder Optionsfelder. Dies ist eine schnelle Möglichkeit für neue Benutzer, einen Überblick über die Funktionen von PowerApps zu erhalten. Sie können eine Vorlage verwenden, um in PowerApps Studio eine identische App zu erstellen.
   
     ![Beispiel-Apps](./media/intro-maker-portal/sampleapps2.png)
 * **Verbundene Beispiel-Apps**: Diese Apps stellen eine Verbindung mit Ihren Daten über eine Datenverbindung her, z.B. Office 365, Salesforce, Trello und Wunderlist. Diese Gruppe von Apps unterscheidet sich von den oben genannten Beispiel-Apps. Wenn Sie auf eine verbundene Beispiel-App klicken oder tippen, stellen Sie eigentlich eine neue Instanz der App bereit (wie eine Vorlage). Sie fordert Sie zur Eingabe Ihrer Anmeldeinformationen auf, um eine Verbindung mit Ihren Daten herstellen. Das Schöne an einer verbundenen Beispiel-App ist, dass eine Instanz genau dort für Sie bereitgestellt wird; Sie können sie in PowerApps-Studio öffnen, um zu erfahren, wie die entsprechende App erstellt wurde. Der Nachteil ist, dass das Erstellen ziemlich lange dauern kann (bis zu einer Minute). Haben Sie deshalb bitte Geduld, und erlauben Sie das Öffnen des Browsers, wenn Sie auf eine verbundene Beispiel-App klicken oder tippen.
@@ -110,7 +110,7 @@ Bitte beachten Sie, dass die Listenansicht nur Apps in der ausgewählten Umgebun
 
 ## <a name="whats-new"></a>Neuerungen
 
-* Wenn Sie auf eine App klicken oder tippen, wird diese in PowerApps Studio für das Web in einer neuen Registerkarte geöffnet.
+* Wenn Sie auf eine App klicken oder tippen, wird diese in PowerApps Studio in einer neuen Registerkarte geöffnet.
 * Standardmäßig zeigt die **Apps**-Seite alle Apps an, die Sie bearbeiten dürfen. Wählen Sie den Filter **All apps** (Alle Apps) aus, um **All Apps** (Alle Apps) anzuzeigen (einschließlich der Apps, die Sie nur verwenden dürfen).
   
    ![Filter für Apps](./media/intro-maker-portal/allapps_filter.png)

@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 745ec8c5efecb745c5c6ce07617547cf81c091de
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 78cf8d73758e931d009080f03962c3450088a553
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="camera-control-in-powerapps"></a>Kamera-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer mithilfe der Kamera des Geräts Fotos aufnehmen kann.
@@ -70,8 +70,6 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
-**Zoom**: Der Prozentsatz, mit dem ein Bild einer Kamera vergrößert wird (oder die Ansicht einer Datei in einem PDF-Viewer).
-
 ## <a name="related-functions"></a>Verwandte Funktionen
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
@@ -79,16 +77,16 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 ### <a name="add-photos-to-an-image-gallery-control"></a>Hinzufügen von Fotos zu einem Bildkatalog-Steuerelement
 1. Fügen Sie ein **Kamera**-Steuerelement hinzu, benennen Sie es **MyCamera**, und legen Sie dessen **[OnSelect](properties-core.md)**-Eigenschaft auf die folgende Formel fest:<br>
    **Collect(MyPix, MyCamera.Photo)**
-   
+
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-   
+
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 2. Drücken Sie F5, und nehmen Sie dann ein Foto auf, indem Sie auf **MyCamera** klicken oder tippen.
-3. Fügen Sie ein **[Bildkatalog](control-gallery.md)**-Steuerelement hinzu, und passen Sie dann die Größe des zugehörigen **[Bild](control-image.md)**-Steuerelements, seiner Vorlage und des **Bildkatalog**-Steuerelements so an, dass sie den Bildschirm ausfüllen.
-4. Legen Sie die **[Items](properties-core.md)**-Eigenschaft des **Bildkatalog**-Steuerelements auf den folgenden Ausdruck fest:<br>**MyPix.Url**.
+3. Fügen Sie ein **[vertikaler Katalog](control-gallery.md)**-Steuerelement hinzu, und passen Sie dann die Größe des zugehörigen **[Bild](control-image.md)**-Steuerelements, seiner Vorlage und des **Bildkatalog**-Steuerelements so an, dass sie den Bildschirm ausfüllen.
+4. Legen Sie die **[Items](properties-core.md)**-Eigenschaft des **Bildkatalog**-Steuerelements auf den folgenden Ausdruck fest:<br>**MyPix**.
 5. Legen Sie die **[Image](properties-visual.md)**-Eigenschaft des **Bild**-Steuerelements im Katalog auf den folgenden Ausdruck fest:<br>
    **ThisItem.Url**
-   
+
     Das aufgenommene Foto wird im **Bildkatalog**-Steuerelement angezeigt.
 6. Machen Sie beliebig viele Fotos, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 7. (optional) Legen Sie die **OnSelect**-Eigenschaft des **Bild**-Steuerelements im **Bildkatalog**-Steuerelement auf **Remove(MyPix, ThisItem)** fest, drücken Sie F5, und klicken oder tippen Sie dann auf ein Foto, um dieses zu entfernen.
@@ -112,4 +110,3 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 * Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
- 

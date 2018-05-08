@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 74ab73d78e87c25adf0cd300bb8a6321a578d749
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: d77bc3c90b16fae60fb0daf78376beaa31d67098
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>Grundlegendes zu Variablen in PowerApps
 Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, fragen Sie sich einfach: **Wie würde ich in Excel verfahren?**
@@ -257,5 +257,5 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 12. Drücken Sie erneut F5, um die Vorschau aufzurufen, geben Sie Zahlen im Textsteuerelement ein, und wählen Sie Schaltflächen aus.  Wählen Sie die Schaltfläche **Save** aus.  Schließen Sie die App, und laden Sie sie neu. Wählen Sie die Schaltfläche **Load** aus, um die Sammlung neu zu laden.  
     
     > [!NOTE]
-    > **SaveData** und **LoadData** funktionieren nicht, wenn sie in einem Webbrowser ausgeführt werden. Sie müssen das unter Windows installierte Studio oder einen der Player für Mobilgeräte verwenden.  
+    > **SaveData** und **LoadData** funktionieren nicht, wenn sie in einem Webbrowser ausgeführt werden. Sie müssen PowerApps Studio für Windows oder PowerApps Mobile verwenden.
 
