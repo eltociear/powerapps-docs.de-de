@@ -1,6 +1,6 @@
 ---
-title: Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service | Microsoft-Dokumentation
-description: Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service
+title: Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service for Apps | Microsoft-Dokumentation
+description: Schritt-für-Schritt-Anleitung zum Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service for Apps
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,16 +14,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 1b85ac81969407fe4e84c41fd93debeccddb0f05
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: c3086ce05ba748b5387ec4ae5a1e794658b5677a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service für Apps
-Microsoft bietet Ihnen die Möglichkeit, auf vom System generierte Protokolle zuzugreifen, die gemäß der Datenschutz-Grundverordnung (DSGVO) nach der weitgefassten Definition der *personenbezogenen Daten* als persönlich gelten könnten, und diese zu exportieren und zu löschen. Zu den Beispielen für vom System generierte Protokolle, die gemäß der DSGVO als persönlich gelten könnten, zählen die folgenden:
+Microsoft bietet Ihnen die Möglichkeit, auf vom System generierte Protokolle zuzugreifen, die gemäß der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union nach der weitgefassten Definition der *personenbezogenen Daten* als personenbezogen gelten könnten, und diese zu exportieren und zu löschen. Zu den Beispielen für vom System generierte Protokolle, die gemäß der DSGVO als persönlich gelten könnten, zählen die folgenden:
 * Produkt- und Dienstnutzungsdaten, wie z.B. Aktivitätsprotokolle von Benutzern
 * Suchanforderungen und Abfragedaten von Benutzern
 * Von Produkten und Diensten als Ergebnis der Systemfunktionalität und Interaktion von Benutzern oder anderen Systemen generierte Daten
@@ -31,7 +31,9 @@ Microsoft bietet Ihnen die Möglichkeit, auf vom System generierte Protokolle zu
 Beachten Sie, dass die Möglichkeit zur Einschränkung oder Berichtigung von Daten in vom System generierten Protokollen nicht unterstützt wird. Daten in vom System generierten Protokollen stellen auf Fakten beruhende Aktionen dar, die innerhalb der Microsoft-Cloud durchgeführt werden. Diagnostische Daten &mdash;einschließlich der an solchen Daten vorgenommenen Änderungen&mdash; würden den historischen Datensatz von Aktionen umfassen und Betrugs- und Sicherheitsrisiken erhöhen.
 
 ## <a name="accessing-and-exporting-system-generated-logs"></a>Zugreifen auf die und Exportieren der vom System generierten Protokolle
-Administratoren können auf vom System generierte Protokolle zugreifen, die mit der Verwendung von Diensten und Anwendungen in PowerApps, Microsoft Flow und CDS für Apps durch einen Benutzer verbunden sind. So greifen Sie auf vom System generierte Protokolle zu und exportieren diese:
+Administratoren können auf vom System generierte Protokolle zugreifen, die mit der Verwendung von Diensten und Anwendungen in PowerApps, Microsoft Flow und Common Data Service (CDS) for Apps durch einen Benutzer verbunden sind.
+
+So greifen Sie auf vom System generierte Protokolle zu und exportieren diese:
 
 1. Wechseln Sie zum [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/), und melden Sie sich mit den Anmeldeinformationen eines globalen Office 365-Administrators an.
 
@@ -55,7 +57,7 @@ Die folgende Tabelle enthält eine Übersicht über den Zugriff auf vom System g
 | Wie sehen Daten in vom System generierten Protokollen aus? |  Beispiel für einen vom System generierten Protokolldatensatz im JSON-Format: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
 
 > [!NOTE]
->  Einige Features lassen das Exportieren oder Löschen der vom System generierten Protokolle mit personenbezogenen Daten nicht zu, sodass die Integrität dieser Informationen aus Sicherheits- und Überwachungsgründen verwaltet werden kann.
+>  Aus Sicherheits- und Überwachungsgründen können Sie bei einigen Features keine vom System generierten Protokolle exportieren oder löschen. Dadurch wird die Integrität von personenbezogenen Daten gewährleistet.
 >
 >
 

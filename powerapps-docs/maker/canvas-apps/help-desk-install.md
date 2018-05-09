@@ -1,25 +1,22 @@
 ---
 title: Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“ | Microsoft-Dokumentation
 description: Ausführliche Anleitung zum Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“.
-services: ''
-suite: powerapps
 documentationcenter: na
 author: caburk
-manager: ''
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: sample
+ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: be5a2f1994a55abf6936ded4dfddf84d145115c5
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e042230acec8bf70a2a99eee316d234cb5cdea15
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“
 
@@ -85,7 +82,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 7. Geben Sie im Textfeld **Standardwert** den Wert **LAPTOP/PC Geräteproblem** an.
 8. Klicken Sie auf **OK**.
 
-### <a name="create--complete-column"></a>Erstellen der Spalte „% abgeschlossen“
+### <a name="create-percentcomplete-column"></a>Erstellen der Spalte „% abgeschlossen“
 
 1. Klicken Sie auf **Spalte erstellen**.
 2. Geben Sie im Textfeld **Spaltenname** den Namen **% abgeschlossen** ein.
@@ -251,6 +248,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
     
     > [!TIP] 
     > Wenn Sie über mehr als einen Administrator verfügen, trennen Sie die Auflistung durch ein Komma ab.  Beispiel: "admin1@microsoft.com","admin2@microsoft.com".
+    > Sehen Sie sich unter „Ansicht“ > „Variablen“ > „Global“ > „MyProfile“ (Mein Profil) in der Spalte „E-Mail“ das E-Mail-Format an, um zu überprüfen, ob die Adressen in „AdminList“ dem von PowerApps erwarteten Format entsprechen.
 
 5. Klicken Sie auf **Datei**.
 6. Klicken Sie auf **Speichern**.

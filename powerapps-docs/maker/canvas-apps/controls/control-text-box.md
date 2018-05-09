@@ -1,25 +1,22 @@
 ---
 title: 'Label-Steuerelement (Bezeichnung): Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Label-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e3cae08695af7a4625fd4deb58c8cf7cfe71fdd0
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="label-control-in-powerapps"></a>Label-Steuerelement (Bezeichnung) in PowerApps
 Ein Feld, das Daten wie Text, Zahlen, Datumsangaben oder Währung anzeigt.
@@ -153,13 +150,14 @@ Ein **Bezeichnungs**-Steuerelement wird nicht ausschließlich als Bezeichnung f�
 Außerdem kann es als Schaltfläche oder Link verwendet werden, indem **[OnSelect](properties-core.md)**-Verhalten angegeben wird. Wenn das Steuerelement auf diese Weise verwendet wird, gelten ähnliche Aspekte im Hinblick auf die Barrierefreiheit wie bei Schaltflächen.
 
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
-* Es gelten die Standardanforderungen an den Farbkontrast, wenn das Steuerelement als Schaltfläche oder Link verwendet wird.
+* Es gelten die [Standardanforderungen für Farbkontraste](../accessible-apps-color.md), wenn das Steuerelement als Schaltfläche oder Link verwendet wird.
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
-> [!NOTE]
+
+    > [!NOTE]
 > **Bezeichnungen** werden von der Sprachausgabe als Schaltflächen angesehen, wenn **[TabIndex](properties-accessibility.md)** gleich 0 oder größer ist.
 
 ### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen

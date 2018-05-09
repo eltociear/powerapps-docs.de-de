@@ -1,32 +1,29 @@
 ---
 title: 'Attachments-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen zum Attachment-Steuerelement, einschließlich Eigenschaften und Beispielen
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/29/2017
+ms.topic: reference
+ms.component: canvas
+ms.date: 04/23/2018
 ms.author: fikaradz
-ms.openlocfilehash: 6b46cfd778dcb29553dce252988b8b6a049ba12d
-ms.sourcegitcommit: d7ed5144f96d1ecc17084c30ed0e2ba3c6b03c26
+ms.openlocfilehash: 24610e4d70f39f08eec1e828c1be20183d8de3af
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste hochladen und löschen können.
 
 ## <a name="limitations"></a>Beschränkungen
 Für das Steuerelement für Anlagen gelten die folgenden temporären Einschränkungen:
-1. Das Herunterladen von Anlagen wird in Internet Explorer nicht unterstützt.
+1. Das Herunterladen von Anhängen im Internet Explorer wird ausschließlich in benutzerdefinierten SharePoint-Listenformularen unterstützt.
 
 1. Das Hochladen von Anlagen funktioniert nur mit SharePoint-Listen als Datenquellen.  Die Unterstützung für andere Datenquellen wird beginnend mit CDS schrittweise eingeführt.
 
@@ -97,7 +94,7 @@ Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeiche
 
     Im Formular wird das der SharePoint-Liste zugeordnete Feld „Anlagen“ angezeigt.
 
-[Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md)
+[Erfahren Sie, wie Sie ein Steuerelement hinzufügen und konfigurieren].(../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
@@ -113,7 +110,7 @@ Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast ge
 * **MaxAttachmentsColor** und **Fill**
 * **NoAttachmentsColor** und **Fill**
 
-Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 Die folgenden Eigenschaften müssen vorhanden sein:

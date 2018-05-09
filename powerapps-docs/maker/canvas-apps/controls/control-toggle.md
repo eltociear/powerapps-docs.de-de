@@ -1,25 +1,22 @@
 ---
 title: 'Umschalten-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Umschalten-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 709da9e7b3e80e370488e9bdfb45f40d68dae856
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 0344a43707170bccebfd01d8b3a1bba24f3c183f
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="toggle-control-in-powerapps"></a>Umschalten-Steuerelement in PowerApps
 Ein Steuerelement, das die Benutzer durch Verschieben des Handles aktivieren oder deaktivieren können.
@@ -134,7 +131,7 @@ Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast ge
 * **TrueFill** und die Farbe außerhalb des Steuerelements
 * **TrueHoverFill** und Farbe außerhalb des Steuerelements
 
-Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.

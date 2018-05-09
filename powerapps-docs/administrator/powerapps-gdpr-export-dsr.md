@@ -1,6 +1,6 @@
 ---
-title: Reagieren auf Anforderungen eines Exports von DSR-Anforderungen für PowerApps-Kundendaten | Microsoft-Dokumentation
-description: Reagieren auf Anforderungen eines Exports von DSR-Anforderungen für PowerApps-Kundendaten
+title: Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten | Microsoft-Dokumentation
+description: Exemplarische Vorgehensweise zum Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,21 +14,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 58edfa4d82f58094f12df47ed330783cd3c40a40
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 97f5a6a970e07f9908c02074ef97234b58a52894
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="responding-to-export-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>Reagieren auf Anforderungen eines Exports von DSR-Anforderungen für PowerApps-Kundendaten
+# <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten
+Das „Recht auf Datenübertragbarkeit“ ermöglicht einer betroffenen Person die Anforderung einer Kopie ihrer personenbezogenen Daten in elektronischem Format (d.h. in einem „strukturierten, häufig verwendeten, maschinenlesbaren und interoperablen Format“), die an einen anderen Verantwortlichen übertragen werden kann:
 
-Das *Recht auf Datenübertragbarkeit* erlaubt einem Datensubjekt die Anforderung einer Kopie seiner personenbezogenen Daten in einem elektronischen Format (d.h. in einem strukturierten, häufig verwendeten, maschinenlesbaren und interoperablen Format), die an einen anderen Data Controller übertragen werden kann:
+* Websitezugriff: [PowerApps](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
-* Websitezugriff: [PowerApps-Portal für Ersteller](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
-
-* PowerShell-Zugriff: PowerApps-Cmdlets ([Cmdlets für Ersteller](https://go.microsoft.com/fwlink/?linkid=871448), [Cmdlets für Administratoren](https://go.microsoft.com/fwlink/?linkid=871804)) und [Cmdlets für lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238)
+* PowerShell-Zugriff: PowerApps-Cmdlets [Cmdlets für Ersteller](https://go.microsoft.com/fwlink/?linkid=871448), [Cmdlets für Administratoren](https://go.microsoft.com/fwlink/?linkid=871804) und [Cmdlets für lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238)
 
 Es folgt eine Zusammenfassung der Arten von personenbezogenen Daten, die für einen bestimmten Benutzer in PowerApps gespeichert werden können, sowie über die Möglichkeiten zum Suchen und Exportieren dieser Daten.
 
@@ -46,9 +45,9 @@ Verbindung | | Ersteller: Verfügbar <br> Administrator: in der Entwicklung
 Verbindungsberechtigungen  | | Ersteller: Verfügbar <br> Administrator: in der Entwicklung
 PowerApps-Benutzereinstellungen, Benutzeranwendungseinstellungen und Benachrichtigungen | | Ersteller: Verfügbar <br> Administrator: in der Entwicklung
 
-> ** Mit der Einführung des Common Data Service für Apps werden bei Erstellung einer Datenbank innerhalb der Umgebung Umgebungsberechtigungen und modellgesteuerte App-Berechtigungen in der Datenbankinstanz von CDS für Apps als Datensätze gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer, die CDS für Apps verwenden, finden Sie unter [Ausführen von DSR-Anforderungen für Kundendaten in Common Data Service für Apps](https://go.microsoft.com/fwlink/?linkid=872251).
+> ** Mit der Einführung von Common Data Service (CDS) für Apps werden bei der Erstellung einer Datenbank innerhalb der Umgebung Umgebungsberechtigungen und modellgesteuerte App-Berechtigungen in der Datenbankinstanz von CDS für Apps als Datensätze gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer, die CDS für Apps verwenden, finden Sie unter [Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps](common-data-service-gdpr-dsr-guide.md).
 
-> *** Ein Administrator kann nur dann über [PowerApps](https://web.powerapps.com) auf diese Ressourcen zugreifen, wenn der Besitzer der Ressource ihm explizit Zugriff erteilt hat.  Andernfalls muss der Administrator die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) nutzen.
+> *** Ein Administrator kann nur dann über [PowerApps](https://web.powerapps.com) auf diese Ressourcen zugreifen, wenn der Besitzer der Ressource ihm explizit Zugriff erteilt hat. Wenn der Zugriff nicht vom Administrator gewährt wurde, müssen die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) verwendet werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -56,23 +55,24 @@ PowerApps-Benutzereinstellungen, Benutzeranwendungseinstellungen und Benachricht
 Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge mit [PowerApps](https://web.powerapps.com) oder [Cmdlets für Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
 
 ### <a name="for-admins"></a>Für Administratoren
-Für die Durchführung der in diesem Dokument beschriebenen Verwaltungsvorgänge über das PowerApps Admin Center, das Microsoft Flow Admin Center oder die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benötigen Sie ein Konto mit den folgenden Berechtigungen:
+Für die Durchführung der in diesem Dokument beschriebenen Verwaltungsvorgänge über das PowerApps Admin Center, das Microsoft Flow Admin Center oder die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benötigen Sie das Folgende:
 
-* Eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich unter [http://web.powerapps.com/trial](http://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren. Testlizenzen können verlängert werden, wenn sie abgelaufen sind.
+* eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich unter [http://web.powerapps.com/trial](http://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren. Testlizenzen können verlängert werden, wenn sie abgelaufen sind.
 
-* Berechtigungen für den [globalen Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder den [globalen Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sind auch dann erforderlich, wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. Andernfalls haben Sie nur Zugriff auf die Umgebungen und Umgebungsressourcen, bei denen Sie über Berechtigungen für den Umgebungsadministrator verfügen.
+* Die Berechtigungen [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. (Beachten Sie, das Umgebungsadministratoren nur Zugriff auf die Umgebungen und Umgebungsressourcen haben, für die sie über die Berechtigungen verfügen.)
 
 ## <a name="step-1-export-personal-data-contained-within-environments-created-by-the-user"></a>Schritt 1: Exportieren persönlicher Daten, die in vom Benutzer erstellten Umgebungen enthalten sind
 
 ### <a name="powerapps-admin-center"></a>PowerApps Admin Center
 Administratoren können alle Umgebungen exportieren, die über das [PowerApps Admin Center](https://admin.powerapps.com/) von einem bestimmten Benutzer erstellt wurden, indem sie die folgenden Schritte ausführen:
+
 1. Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus.
 
-  ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
 2. Wenn der Benutzer die Umgebung über die DSR-Anforderung erstellt hat, wechseln Sie zur Seite **Details**, kopieren Sie die Details, und fügen Sie diese anschließend in einen Dokument-Editor wie z.B. Microsoft Word ein.
 
-  ![Umgebungsdetails](./media/powerapps-gdpr-export-dsr/environment-details.png)
+    ![Umgebungsdetails](./media/powerapps-gdpr-export-dsr/environment-details.png)
 
 ### <a name="powerapps-maker-powershell-cmdlets"></a>PowerShell-Cmdlets für Ersteller in PowerApps
 Benutzer können mit der Funktion **Get-PowerAppsEnvironment** in den [PowerShell-Cmdlets für Ersteller in PowerApps](https://go.microsoft.com/fwlink/?linkid=871448) die Umgebungen exportieren, auf die sie in PowerApps Zugriff haben:
@@ -92,7 +92,7 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ~~~~
  
 ## <a name="step-2-export-the-users-environment-permissions"></a>Schritt 2: Exportieren der Umgebungsberechtigungen des Benutzers
-Benutzern können in einer Umgebung Berechtigungen zugewiesen werden (z.B. Umgebungsadministrator, Umgebungsersteller), die in PowerApps als *Rollenzuweisung* gespeichert werden. Mit der Einführung von CDS für Apps werden diese Rollenzuweisungen bei Erstellung einer Datenbank innerhalb der Umgebung als Datensätze in der Datenbankinstanz von CDS für Apps gespeichert. Weitere Informationen finden Sie unter [Verwalten von Umgebungen in PowerApps ](environments-administration.md).
+Benutzern können in einer Umgebung Berechtigungen zugewiesen werden (z.B. Umgebungsadministrator, Umgebungsersteller), die in PowerApps als *Rollenzuweisung* gespeichert werden. Mit der Einführung von CDS für Apps werden die Rollenzuweisungen bei der Erstellung einer Datenbank innerhalb der Umgebung als Datensätze in der Datenbankinstanz von CDS für Apps gespeichert. Weitere Informationen finden Sie unter [Verwalten von Umgebungen in PowerApps ](environments-administration.md).
 
 ### <a name="for-environments-without-a-cds-for-apps-database"></a>Bei Umgebungen ohne CDS für Apps-Datenbank
 
@@ -101,17 +101,17 @@ Administratoren können die Berechtigungen für eine Benutzerumgebung über das 
 
 1. Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus. Sie müssen ein [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder ein [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sein, um alle in Ihrer Organisation erstellten Umgebungen überprüfen zu können.
 
-  ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
-2.  Wählen Sie **Sicherheit** aus.
+2. Wählen Sie **Sicherheit** aus.
 
     Wenn in Ihrer Umgebung keine CDS für Apps-Datenbank vorhanden ist, wird Ihnen der Abschnitt **Umgebungsrollen** angezeigt.
 
 3. Wählen Sie **Umgebungsadministrator** und **Umgebungsersteller** separat aus, und suchen Sie anschließend über die Suchleiste nach dem Namen des Benutzers.
 
-  ![Seite „Umgebungsrollen“](./media/powerapps-gdpr-export-dsr/admin-environment-role-share-page.png)
+    ![Seite „Umgebungsrollen“](./media/powerapps-gdpr-export-dsr/admin-environment-role-share-page.png)
 
-5. Wenn der Benutzer auf beide Rollen Zugriff hat, wechseln Sie zur Seite **Benutzer**, kopieren Sie die Details, und fügen Sie diese anschließend in einen Dokument-Editor wie z.B. Microsoft Word ein.
+4. Wenn der Benutzer auf beide Rollen Zugriff hat, wechseln Sie zur Seite **Benutzer**, kopieren Sie die Details, und fügen Sie diese anschließend in einen Dokument-Editor wie z.B. Microsoft Word ein.
 
 #### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
 Administratoren können über die Funktion **Get-AdminEnvironmentRoleAssignment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) alle Rollenzuweisungen zu Umgebungen für einen Benutzer über sämtliche Umgebungen ohne CDS für Apps-Datenbank exportieren:
@@ -127,7 +127,7 @@ Get-AdminEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -
 >
 >
 
-### <a name="for-environments-with-a-cds-for-apps-database"></a>Bei Umgebungen mit CDS für Apps-Datenbank
+### <a name="for-environments-with-a-cds-for-apps-database"></a>Bei Umgebungen mit einer CDS für Apps-Datenbank
 Mit der Einführung von CDS für Apps werden Rollenzuweisungen bei Erstellung einer Datenbank innerhalb der Umgebung als Datensätze in der Datenbankinstanz von CDS für Apps gespeichert. Informationen zum Entfernen von personenbezogenen Daten aus einer Datenbankinstanz von CDS für Apps finden Sie unter [Entfernen persönlicher Benutzerdaten aus Common Data Service](https://go.microsoft.com/fwlink/?linkid=871886).
  
 ## <a name="step-3-export-personal-data-contained-within-canvas-apps-created-by-the-user"></a>Schritt 3: Exportieren personenbezogener Daten, die in dem vom Benutzer erstellten Zeichenbereich enthalten sind
@@ -140,19 +140,19 @@ Administratoren können über das [PowerApps Admin Center](https://admin.powerap
 
 1. Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus. Sie müssen ein [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder ein [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sein, um alle in Ihrer Organisation erstellten Umgebungen überprüfen zu können.
 
-  ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
-2.  Wählen Sie **Ressourcen** und anschließend **Apps** aus.
+2. Wählen Sie **Ressourcen** und anschließend **Apps** aus.
 
 3. Suchen Sie über die Suchleiste nach dem Namen des Benutzers. Dabei werden sämtliche Apps angezeigt, die der Benutzer in dieser Umgebung erstellt hat:
 
-  ![Apps suchen](./media/powerapps-gdpr-export-dsr/search-apps.png)
+    ![Apps suchen](./media/powerapps-gdpr-export-dsr/search-apps.png)
 
 4. Wählen Sie bei jeder App, die der Benutzer erstellt hat, die Option **Freigabe** aus, und erteilen Sie sich Zugriff für die **Bearbeitung** der App:
 
-  ![App-Freigabe auswählen](./media/powerapps-gdpr-export-dsr/select-share.png)
+    ![App-Freigabe auswählen](./media/powerapps-gdpr-export-dsr/select-share.png)
 
-  ![Benutzer Zugriff erteilen](./media/powerapps-gdpr-export-dsr/grant-access.png)
+    ![Benutzer Zugriff erteilen](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
 5. Sobald Sie auf die einzelnen Apps des Benutzers Zugriff haben, können Sie über [PowerApps](https://web.powerapps.com) eine App exportieren. Ausführliche Anweisungen zum Exportieren einer App finden Sie unter [Exportieren einer App](environment-and-tenant-migration.md#exporting-an-app).
 
@@ -181,17 +181,17 @@ Administratoren können Rollenzuweisungen zu Apps für einen Benutzer über das 
 
 1. Wählen Sie über das [PowerApps Admin Center](https://admin.powerapps.com/) die einzelnen Umgebungen in Ihrer Organisation aus. Sie müssen ein [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder ein [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) sein, um alle in Ihrer Organisation erstellten Umgebungen überprüfen zu können.
 
-  ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
+    ![Landing Page des Admin Center](./media/powerapps-gdpr-export-dsr/admin-center-landing.png)
 
 2. Wählen Sie bei jeder Umgebung **Ressourcen** und anschließend **Apps** aus.
 
 3. Wählen Sie bei jeder App in der Umgebung **Freigabe** aus.
 
-  ![App-Freigabe auswählen](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
+    ![App-Freigabe auswählen](./media/powerapps-gdpr-export-dsr/select-admin-share-nofilter.png)
 
 4. Wenn der Benutzer auf die App Zugriff hat, wechseln Sie zur Seite **Freigabe** der App, kopieren Sie die Details, und fügen Sie diese anschließend in einen Dokument-Editor wie z.B. Microsoft Word ein.
 
-  ![Verwaltungsseite „App-Freigabe“](./media/powerapps-gdpr-export-dsr/admin-share-page.png)
+    ![Verwaltungsseite „App-Freigabe“](./media/powerapps-gdpr-export-dsr/admin-share-page.png)
 
 ### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
 Administratoren können über die Funktion **Get-AdminAppRoleAssignment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) alle Rollenzuweisungen zu Apps für einen Benutzer über sämtliche Apps in ihrem Mandanten exportieren:
@@ -217,6 +217,7 @@ Get-Connection | ConvertTo-Json | out-file -FilePath "UserDetails.json"
 Die Funktion für einen Administrator zum Exportieren von Verbindungen, die ein Benutzer mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) erstellt hat, befindet sich in der Entwicklung.
  
 ## <a name="step-6-export-the-users-permissions-to-shared-connections"></a>Schritt 6: Exportieren der Benutzerberechtigungen für freigegebene Verbindungen
+
 ### <a name="powerapps-maker-powershell-cmdlets"></a>PowerShell-Cmdlets für Ersteller in PowerApps
 Benutzer können über die Funktion **Get-ConnectionRoleAssignment** in den [PowerShell-Cmdlets für Ersteller in PowerApps](https://go.microsoft.com/fwlink/?linkid=871448) die Rollenzuweisungen zu Verbindungen für alle Verbindungen exportieren, auf die sie Zugriff haben:
 
@@ -273,21 +274,21 @@ Benutzer können die personenbezogenen Daten exportieren, die über [PowerApps](
 
 1. Wählen Sie in [PowerApps](https://web.powerapps.com) in der Standardumgebung Ihres Mandanten den Eintrag **Gateways** und anschließend **Details** aus, um sämtliche Gateways anzuzeigen, auf die Sie Zugriff haben.
 
-  ![Landing Page des Gateways](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
+    ![Landing Page des Gateways](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 
 2. Wenn die Gatewaydetails personenbezogene Daten enthalten, kopieren Sie diese auf der Seite **Details**, und fügen Sie diese anschließend in einen Dokument-Editor wie z.B. Microsoft Word ein.
 
-  ![Gatewaydetails](./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png)
+    ![Gatewaydetails](./media/powerapps-gdpr-export-dsr/gateway-details-drillin.png)
 
 3. Wählen Sie **Freigabe** aus, kopieren Sie den Inhalt der Seite, und fügen Sie diesen anschließend in einen Dokument-Editor wie z.B. Microsoft Word ein.
 
-  ![Gatewaydetails](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
+    ![Gatewaydetails](./media/powerapps-gdpr-export-dsr/gateway-details-share.png)
 
 ### <a name="gateway-powershell-cmdlets"></a>PowerShell-Cmdlets für das Gateway
-Es gibt auch PowerShell-Cmdlets, mit denen Sie Ihre persönlichen Gateways abrufen, verwalten und löschen können. Weitere Informationen finden Sie unter [Cmdlets für das lokale Gateway](https://go.microsoft.com/fwlink/?linkid=872238).
+Es gibt auch PowerShell-Cmdlets, mit denen Sie Ihre persönlichen Gateways abrufen, verwalten und löschen können. Weitere Informationen finden Sie unter [Cmdlets für lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
 ## <a name="step-11-export-the-users-personal-data-in-microsoft-flow"></a>Schritt 11: Exportieren der personenbezogenen Benutzerdaten in Microsoft Flow
-In PowerApps-Lizenzen sind immer Microsoft Flow-Funktionen enthalten. Microsoft Flow ist nicht nur in PowerApps-Lizenzen enthalten, sondern auch als eigenständiger Dienst. Weitere Informationen zum Reagieren auf DSR-Anforderungen für Benutzer, die den Microsoft Flow-Dienst verwenden, finden Sie unter [Ausführen von DSR-Anforderungen für Microsoft Flow-Kundendaten](https://go.microsoft.com/fwlink/?linkid=872250).
+In PowerApps-Lizenzen sind immer Microsoft Flow-Funktionen enthalten. Microsoft Flow ist nicht nur in PowerApps-Lizenzen enthalten, sondern auch als eigenständiger Dienst. Weitere Informationen zum Reagieren auf DSR-Anforderungen für Benutzer, die den Microsoft Flow-Dienst verwenden, finden Sie unter [Responding to GDPR Data Subject Requests for Microsoft Flow (Reagieren auf DSGVO-Anforderungen betroffener Personen für Microsoft Flow)](https://go.microsoft.com/fwlink/?linkid=872250).
 
 > [!IMPORTANT] 
 >  Es wird empfohlen, dass Administratoren diese Schritte für PowerApps-Benutzer ausführen.
@@ -297,7 +298,7 @@ In PowerApps-Lizenzen sind immer Microsoft Flow-Funktionen enthalten. Microsoft 
 ## <a name="step-12-export-the-users-personal-data-in-cds-for-apps-instances"></a>Schritt 12: Exportieren der personenbezogenen Benutzerdaten in CDS für Apps-Instanzen
 Mit bestimmten PowerApps-Lizenzen können Benutzer innerhalb Ihrer Organisation CDS für Apps-Instanzen erstellen und damit Apps wie den PowerApps-Communityplan entwickeln. Dabei handelt es sich um eine kostenlose Lizenz, mit der Benutzer CDS für Apps in einer individuellen Umgebung austesten können. Informationen darüber, welche Funktionen von CDS für Apps in den einzelnen PowerApps-Lizenzen inbegriffen sind, finden Sie auf der [Seite mit den PowerApps-Preisen](https://powerapps.microsoft.com/pricing).
 
-Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer von CDS für Apps finden Sie unter [Ausführen von DSR-Anforderungen für Kundendaten in Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251).
+Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer, die CDS für Apps verwenden, finden Sie unter [Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps](common-data-service-gdpr-dsr-guide.md).
 
 > [!IMPORTANT]
 >  Es wird empfohlen, dass Administratoren diese Schritte für PowerApps-Benutzer ausführen.

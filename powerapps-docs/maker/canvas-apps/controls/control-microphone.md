@@ -1,25 +1,22 @@
 ---
 title: 'Mikrofon-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Mikrofon-Steuerelement
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8f49b7dbe6186c9c984b27f4c5b07273e88f1963
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: ae6a8afa71a150ad1b15f8ef0550f3d7412ff3be
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Töne aufzeichnen kann
@@ -124,7 +121,7 @@ Es gelten dieselben Richtlinien wie für **[Schaltflächen](control-button.md)**
 Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[Bild](properties-visual.md)** und ggf. die Schaltfläche „Text“ und das Symbol
 
-Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.

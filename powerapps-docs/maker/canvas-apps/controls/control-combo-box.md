@@ -1,25 +1,22 @@
 ---
 title: 'Kombinationsfeld-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen über das Kombinationsfeld-Steuerelement, einschließlich Eigenschaften und Beispielen
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 5fb4ca1a8c3618a81940ef953e2e7d1c9b04dd7e
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -97,22 +94,24 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **ChevronFill** und **ChevronBackground**
 * **ChevronHoverFill** und **ChevronHoverBackground**
 * **SelectionColor** und **SelectionFill**
 * **SelectionFill** und **[Fill](properties-color-border.md)**
 * **SelectionTagColor** und **SelectionTagFill**
 
-Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
-> [!NOTE]
+
+    > [!NOTE]
 > Auf Touchscreens können Benutzer, die die Sprachausgabe benutzen, der Reihe nach durch die Inhalte des Kombinationsfelds navigieren. Das Kombinationsfeld fungiert als Schaltfläche, die Inhalte anzeigt bzw. ausblendet, wenn diese aktiviert bzw. deaktiviert werden.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 * Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
-> [!NOTE]
+
+    > [!NOTE]
 > Über die TAB-TASTE können Sie zum Kombinationsfeld navigieren oder dieses schließen. Über die Pfeiltasten können Sie durch die Inhalte des Kombinationsfelds navigieren. Über die ESC-Taste können Sie die Dropdownliste ggf. schließen.

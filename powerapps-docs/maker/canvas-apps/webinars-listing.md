@@ -1,45 +1,41 @@
 ---
 title: Liste der Webinare | Microsoft-Dokumentation
 description: Zeigt eine Liste der früheren und zukünftigen Webinare an, einschließlich Uhrzeit/Datum und behandelten Themen.
-services: ''
-suite: powerapps
-documentationcenter: na
 author: audrieMSFT
-manager: anneta
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
+ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: e26afdee008b54285e0c20e869f8ccabb8aae215
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 4878f2de3bf023b9bf1c190a3695cb8ed1bc56b3
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. In den Kommentaren unter diesem Thema können Sie gerne weitere Themen vorschlagen.
 
 ## <a name="upcoming-webinars"></a>Anstehende Webinare ##
-**Getting Started | Understanding Model Driven App Templates with Casey Burke** (Erste Schritte | Grundlegendes zu modellgesteuerten App-Vorlagen mit Casey Burke)
-<br>von Casey Burke
-<br>*19. April, 10:00 Uhr PST, 12:00 Uhr EST*
-
-Der Microsoft Program Manager Casey Burke erläutert die Architektur von modellgesteuerten App-Vorlagen. Hier erfahren Sie, wie Sie diese Vorlagen anpassen, um eigene Unternehmensziele zu erreichen.
-
-[Klicken Sie hier, um am 19. April live dabei zu sein](https://www.youtube.com/watch?v=FShakkXKiS8) 
-
 **Deep Dive | Using PowerApps for Business Process Management (BPM) by Dawid van Heerden** (Deep Dive | Verwenden von PowerApps für die Verwaltung von Geschäftsprozessen mit Dawid van Heerden)
 <br>von Audrie Gordon und Dawid van Heerden
-<br>*23. April, 10:00 Uhr PST, 12:00 Uhr EST*
+<br>*24. April, 10:00 Uhr PST, 12:00 Uhr EST*
 
 PowerApps eignet sich hervorragend, um Geschäftsanwendungen SCHNELL zu erstellen. Dieses Video veranschaulicht, wie Sie durch die Verwendung von einer einzigen Plattform Geschäftsprozesse mit mehreren Schritten optimieren, die verschiedene Rollen, Schritte und Routingoptionen umfassen.
 
-[Klicken Sie hier, um am 23. April live dabei zu sein](https://www.youtube.com/watch?v=JY8r46HnHoI)
+[Klicken Sie hier, um am 23. April live dabei zu sein](https://www.youtube.com/watch?v=Jj3hPkAf5KU)
+
+**Model Driven App Components Part 1 | Managing Entities and Data Imports (Modellgesteuerte Anwendungskomponenten, Teil 1: Verwalten von Entitäten und Datenimporte)**
+<br>Referenten: Audrie Gordon und Clay Wesener
+<br>*1. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
+
+Zusammen mit Clay Wesener vom PowerApps-Team führen Sie die einzelnen Schritte zum Erstellen einer CDS for Apps-Datenbank aus. Dabei erfahren Sie, wie Sie Entitäten und Felder erstellen und zwischen diesen navigieren. Zusätzlich lernen Sie, auf welche Standardlösungen Sie zurückgreifen können. 
+
+Dieses Webinar ist der erste Teil einer dreiteiligen Webinarreihe: Teil 1: Entitäten Teil 2: Formulare und Ansichten Teil 3: Diagramme und Dashboards
+
+Dieses Webinar wird empfohlen, wenn Sie erfahren möchten, wie Sie Standardentitäten und -felder wiederverwenden und in wenigen Augenblicken eigene Szenarios erstellen können.
+
+[Klicken Sie hier, um am 1. Mai live dabei zu sein](https://www.youtube.com/watch?v=02NWfHRYkeo).
 
 **Deep Dive | Laura Rogers from IWMentor Shares Best Practices for Production Apps** (Deep Dive | Laura Rogers von IWMentor erzählt über Best Practices für Produktions-Apps)
 <br>von Audrie Gordon und Laura Rodgers
@@ -48,6 +44,24 @@ PowerApps eignet sich hervorragend, um Geschäftsanwendungen SCHNELL zu erstelle
 Laura Rogers von IW Mentor trainiert seit Jahren Produktions-Apps für Unternehmen und stellt diese bereit. Wir haben alle viel von ihr gelernt, vor allem diejenigen, die mit SharePoint arbeiten. In diesem Webinar spricht Laura über die Best Practices und gelernten Lektionen beim Erstellen von Produktions-Apps mit PowerApps und der Geschäftsanwendungsplattform. Außerdem zeigt sie die Demo einer besonderen Produktions-App zum Nachverfolgen von Rechnungen und Maßnahmen. Verpassen Sie es nicht! Website von IW Mentor: https://www.iwmentor.com/
 
 [Klicken Sie hier, um am 14. Mai live dabei zu sein](https://www.youtube.com/watch?v=I50GtV9w7Os)
+
+**Model Driven App Components Part 2 | Creating Forms and Views (Modellgesteuerte Anwendungskomponenten, Teil 2: Erstellen von Formularen und Ansichten)**
+<br>Referenten: Audrie Gordon und Clay Wesener
+<br>*15. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
+
+In dieser Webinarreihe erhalten Ersteller von Apps zahlreiche nützliche Informationen zum Entwerfen einfacher und komplexer Szenarios für Formulare. Dabei lernen Sie, wie Sie mit dem neuen Forms Designer Formulare erstellen, die für die modellgesteuerte App aus Teil 1 erforderlich sind. Anees stellt dazu Formularkomponente wie z.B. Registerkarten, Abschnitte und Felder vor. Außerdem präsentiert er Best Practices zur Integration der Geschäftslogik und von Filtern. 
+
+Dieses Webinar ist der erste Teil einer dreiteiligen Webinarreihe: Teil 1: Entitäten Teil 2: Formulare und Ansichten Teil 3: Diagramme und Dashboards
+
+[Klicken Sie hier, um am 15. Mai live dabei zu sein](https://www.youtube.com/watch?v=v7VoX-V2ek4).
+
+**Model Driven App Components Part 3 | Exploring Charts and Dashboards (Modellgesteuerte Anwendungskomponenten, Teil 3: Verwenden von Diagrammen und Dashboards)**
+<br>Referenten: Audrie Gordon und Clay Wesener
+<br>*29. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
+
+PowerApps bietet durch umfassende Ansichten und Dashboardfunktionen einen Ansatz zur Berichterstellung, der sich aus unterschiedlichen Komponenten zusammensetzt. Der letzte Teil unserer Webinarreihe befasst sich mit hilfreichen Diagrammen und Dashboards, mit denen Sie die in den vorherigen Teilen entwickelte Lösung optimieren und modernisieren. Das Ergebnis ist eine App, die einen echten Mehrwert bietet.
+
+[Klicken Sie hier, um am 29. Mai live dabei zu sein](https://www.youtube.com/watch?v=kJ5eTWh7Hyg).
 
 **Inside the Universal Audit App: See what PowerApps and Flow are capable of – Paul Culmsee** (Einblick in die „Universal Audit App“: Potenzial von PowerApps und Flow – Paul Culmsee)
 <br>von Paul Culmsee

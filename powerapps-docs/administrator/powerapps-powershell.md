@@ -1,6 +1,6 @@
 ---
 title: PowerShell-Unterstützung | Microsoft-Dokumentation
-description: PowerShell-Unterstützung für PowerApps
+description: Beschreibung der verschiedenen PowerShell-Cmdlets und eine Schritt-für-Schritt-Anleitung zu deren Installation und Ausführung
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -14,31 +14,30 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/17/2018
+ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 274d34ca56cc993ec26fa4f4ced77bb2aba9985f
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 69508b2127c5c919db4a334045c6eed3bb9374af
+ms.sourcegitcommit: 0a781b50a8551f2e61c22725ef1c43ba4fdf752a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerShell-Unterstützung für PowerApps (Vorschau)
-
-Beim Starten der Vorschau der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
+Durch die Einführung der Vorschauversion der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
 
 ## <a name="installation"></a>Installation
-Zum Ausführen der PowerShell-Cmdlets für App-Ersteller müssen Sie zunächst die folgenden Schritte ausführen:
+So führen Sie die PowerShell-Cmdlets für App-Ersteller aus:
 
-1. Laden Sie [hier](https://go.microsoft.com/fwlink/?linkid=872358) die PowerShell-Scripts herunter
+1. Laden Sie die [PowerShell-Skriptdatei](https://go.microsoft.com/fwlink/?linkid=872358) herunter.
 
-2. Entzippen Sie die Datei in einen Ordner
+2. Entzippen Sie die Datei in einem Ordner.
 
-3. Öffnen Sie in demselben Ordner als Administrator ein PowerShell-Befehlsfenster
+3. Öffnen Sie in demselben Ordner als Administrator ein PowerShell-Befehlsfenster.
 
-4. Führen Sie anschließend folgenden einmaligen PowerShell-Befehl aus (dies setzt voraus, dass Sie auf dem aktuellen Computer noch nie PowerShell-Befehle ausgeführt haben):
+4. Führen Sie den folgenden PowerShell-Befehl einmalig aus (dies setzt voraus, dass Sie auf dem aktuellen Computer noch nie PowerShell-Befehle ausgeführt haben):
 
     ```
-    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
     ```
 
 5. Importieren Sie anschließend mit den folgenden Befehle die notwendigen Module:
@@ -48,16 +47,22 @@ Zum Ausführen der PowerShell-Cmdlets für App-Ersteller müssen Sie zunächst d
     Import-Module .\Microsoft.PowerApps.PowerShell.psm1 -Force
     ```
 
-6. Bevor Sie auf die Befehle zugreifen können, müssen Sie schließlich mit folgendem Befehl Ihre Anmeldeinformationen angeben. Diese Anmeldeinformationen werden etwa 8 Stunden lang aktualisiert. Anschließend müssen Sie sich erneut anmelden, um die Cmdlets weiter verwenden zu können.
+6. Bevor Sie auf die Befehle zugreifen können, müssen Sie mit dem unten aufgeführten Befehl Ihre Anmeldeinformationen angeben. Diese werden etwa 8 Stunden lang aktualisiert. Anschließend müssen Sie sich erneut anmelden, um die Cmdlets weiter verwenden zu können.
 
     ```
     Add-PowerAppsAccount
     ```
 
+7.  [Aktuell ist ein Problem bekannt](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036), durch das Sie die PowerShell-Dateien möglicherweise manuell durch den folgenden Befehl zulassen müssen:
+
+    ```
+    dir . | Unblock-File
+    ```
+
 ## <a name="powerapps-cmdlets-for-app-makers-preview"></a>PowerApps-Cmdlets für App-Ersteller (Vorschau)
 
 ### <a name="prerequisite"></a>Voraussetzung
-Alle Benutzer mit einer gültigen PowerApps-Lizenz können die Operationen in diesen Cmdlets ausführen. Sie haben jedoch nur Zugriff auf die Ressourcen (z.B. Apps, Flows usw.), die erstellt oder für sie freigegeben wurden.
+Benutzer mit einer gültigen PowerApps-Lizenz können die Vorgänge in diesen Cmdlets ausführen, haben aber nur Zugriff auf Ressourcen wie z.B. Apps und Flows, die für sie erstellt oder freigegeben wurden.
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
 | Zweck | Cmdlet |
@@ -74,7 +79,7 @@ Alle Benutzer mit einer gültigen PowerApps-Lizenz können die Operationen in di
 | Lesen, Aktualisieren und Löschen von Berechtigungen für benutzerdefinierte Connectors | Get-ConnectorRoleAssignment <br> Set-ConnectorRoleAssignment <br> Remove-ConnectorRoleAssignment
 
 > [!NOTE]
-> Die folgenden Befehle dienen dazu, Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets nachvollziehen zu können:
+> Mit den folgenden Befehle können Sie die Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets besser nachvollziehen:
 >```
 >Get-Help Get-PowerAppsEnvironment
 >Get-Help Get-PowerAppsEnvironment -Examples
@@ -84,23 +89,23 @@ Alle Benutzer mit einer gültigen PowerApps-Lizenz können die Operationen in di
 ## <a name="powerapps-cmdlets-for-administrators-preview"></a>PowerApps-Cmdlets für Administratoren (Vorschau)
 
 ### <a name="prerequisite"></a>Voraussetzung
-Sie benötigen ein Konto mit den folgenden Berechtigungen, um die Verwaltungsvorgänge in den Cmdlets für Administratoren ausführen zu können:
+Zur Ausführung der Verwaltungsvorgänge in den Cmdlets für Administratoren benötigen Sie Folgendes:
 
-- Eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich unter [http://web.powerapps.com/trial](http://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren. Testlizenzen können verlängert werden, wenn sie abgelaufen sind.
+* eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich unter [http://web.powerapps.com/trial](http://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren. Testlizenzen können verlängert werden, wenn sie abgelaufen sind.
 
-- Wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen, sind darüber hinaus Berechtigungen für den [globalen Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder den [globalen Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) erforderlich. Andernfalls haben Sie nur Zugriff auf die Umgebungen und Umgebungsressourcen, bei denen Sie über Berechtigungen für den Umgebungsadministrator verfügen.
+* die Berechtigungen [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. (Beachten Sie, das Umgebungsadministratoren nur Zugriff auf die Umgebungen und Umgebungsressourcen haben, für die sie über die Berechtigungen verfügen.)
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
 | Zweck | Cmdlets
 | --- | ---
 | Lesen und Löschen von Umgebungen | Get-AdminEnvironment <br> Remove-AdminEnvironment
-| Lesen, Aktualisieren und Löschen von Berechtigungen für Umgebungen <br><br> *Diese Cmdlets können nur in Umgebungen ausgeführt werden, die nicht über eine Common Data Service für Apps-Datenbank verfügen.* | Get-AdminEnvironmentRoleAssignment <br> Set-AdminEnvironmentRoleAssignment <br> Remove-AdminEnvironmentRoleAssignment
+| Lesen, Aktualisieren und Löschen von Berechtigungen für Umgebungen <br><br> *Diese Cmdlets können nur in Umgebungen ausgeführt werden, die nicht über eine Common Data Service for Apps-Datenbank verfügen.* | Get-AdminEnvironmentRoleAssignment <br> Set-AdminEnvironmentRoleAssignment <br> Remove-AdminEnvironmentRoleAssignment
 | Lesen und Entfernen von Canvas-Apps | Get-AdminApp <br> Remove-AdminApp
 | Lesen, Aktualisieren und Löschen von Berechtigungen für eine Canvas-App | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
 | Lesen, Aktualisieren und Löschen von Flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow  <br> Remove-AdminFlowOwnerRole
 
 > [!NOTE]
-> Die folgenden Befehle dienen dazu, Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets nachvollziehen zu können:
+> Mit den folgenden Befehle können Sie die Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets besser nachvollziehen:
 >```
 >Get-Help Get-AdminEnvironment
 >Get-Help Get-AdminEnvironment -Examples
@@ -109,4 +114,4 @@ Sie benötigen ein Konto mit den folgenden Berechtigungen, um die Verwaltungsvor
 
 ## <a name="questions"></a>Fragen?
 
-Wenn Sie Kommentare, Vorschläge oder Fragen haben, senden Sie diese an das [PowerApps Community Board für die Verwaltung](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps).
+Wenn Sie Kommentare, Vorschläge oder Fragen haben, können Sie diese im [Community Board zur Verwaltung von PowerApps](https://powerusers.microsoft.com/t5/Administering-PowerApps/bd-p/Admin_PowerApps) veröffentlichen.

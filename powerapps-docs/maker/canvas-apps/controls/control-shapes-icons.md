@@ -1,25 +1,22 @@
 ---
 title: 'Shape-Steuerelemente und Symbole für Steuerelemente: Referenz | Microsoft-Dokumentation'
 description: Informationen einschließlich Eigenschaften und Beispielen für Shape-Steuerelemente und Symbole für Steuerelemente
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 922a34c4acdaa82313edb9bf55bcb24d42af7fed
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: e2c5d384c29766d6c30db8aa85ad4d7d45b48e04
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
@@ -82,7 +79,7 @@ Folgendes gilt nur für Grafiken, die als Schaltflächen oder nicht allein zu Da
 
 Für Symbole:
 * **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
-* Es gelten die Standardanforderungen an den Farbkontrast, wenn das Steuerelement als Schaltfläche verwendet wird.
+* Es gelten die [Standardanforderungen für Farbkontraste](../accessible-apps-color.md), wenn das Steuerelement als Schaltfläche verwendet wird.
 
 Für Formen mit Rahmen:
 * **[BorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements
@@ -98,11 +95,13 @@ Für Formen ohne Rahmen:
 * **[AccessibleLabel](properties-accessibility.md)** muss leer sein oder der leeren Zeichenfolge **""** entsprechen, wenn die Grafik ausschließlich Dekoration ist. Dadurch wird die Grafik von der Sprachausgabe ignoriert.
 * **[AccessibleLabel](properties-accessibility.md)** kann leer sein oder der leeren Zeichenfolge **""** entsprechen, falls die Grafik redundante Informationen enthält.
     * Beispielsweise ein Symbol **Einstellungen**, für das **[AccessibleLabel](properties-accessibility.md)** auf **Einstellungen** festgelegt ist. Dieses Symbol wird nicht als Schaltfläche verwendet. Es befindet sich neben einer **[Bezeichnung](control-text-box.md)**, die ebenfalls den Namen **Einstellungen** hat. Sprachausgaben lesen erst das Symbol und dann die Bezeichnung als **Einstellungen**. Dies ist zu ausführlich. In diesem Fall benötigt das Symbol keine **[AccessibleLabel](properties-accessibility.md)**-Eigenschaft.
-> [!IMPORTANT]
+
+    > [!IMPORTANT]
 > Sprachausgaben lesen alle Symbole oder Formen, deren **[TabIndex](properties-accessibility.md)**-Wert gleich 0 (null) oder größer ist, selbst wenn **[AccessibleLabel](properties-accessibility.md)** leer ist. Dies liegt daran, dass sie als Schaltflächen gerendert werden. Wenn kein **[AccessibleLabel](properties-accessibility.md)** bereitgestellt wird, lesen Sprachausgaben die Grafik als **Schaltfläche**.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss 0 (null) oder größer sein, wenn die Grafik als Schaltfläche verwendet wird. So können Benutzer über die Tastatur dorthin navigieren.
 * Fokusindikatoren müssen übersichtlich angezeigt werden, wenn die Grafik als Schaltfläche verwendet wird. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
-> [!NOTE]
+
+    > [!NOTE]
 > Wenn **[TabIndex](properties-accessibility.md)** gleich 0 (null) oder größer ist, werden das Symbol oder die Form als Schaltfläche gerendert. Dadurch erfolgt keine Änderung der visuellen Darstellung. Die Sprachausgabe erkennt das Bild jedoch richtig als Schaltfläche. Ist **[TabIndex](properties-accessibility.md)** kleiner als 0 (null), wird das Symbol oder die Form als Bild erkannt.

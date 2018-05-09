@@ -1,6 +1,6 @@
 ---
-title: DSR-Leitfaden zu von Kunden erstellten Daten | Microsoft-Dokumentation
-description: DSR-Leitfaden zu von Kunden erstellten Daten in PowerApps
+title: Reagieren auf DSR-Anforderungen von CDS für Apps-Kundendaten | Microsoft-Dokumentation
+description: 'Exemplarische Vorgehensweise: Reagieren auf DSR-Anforderungen von CDS für Apps-Kundendaten'
 services: powerapps
 suite: powerapps
 documentationcenter: na
@@ -13,391 +13,426 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/17/2018
+ms.date: 04/23/2018
 ms.author: paulliew
-ms.openlocfilehash: cff822e24f1384833caa0baa945a7d3d07a8ee9b
-ms.sourcegitcommit: e3a2819c14ad67cc4ca6640b9064550d0f553d8f
+ms.openlocfilehash: 88a3d0c31a9608a901d99a8a901a209f14c13fc0
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="responding-to-data-subject-rights-dsr-requests-for-customer-data-in-common-data-service-for-apps"></a>Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps
+# <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps
 
 ## <a name="introduction-to-dsr-requests"></a>Einführung in DSR-Anforderungen
-Im Rahmen unserer Verpflichtung, unsere Kunden im Umgang mit der DSGVO (Datenschutz-Grundverordnung) stets zu begleiten, wurden diese Informationen entwickelt, um Sie bestmöglich vorzubereiten und zu unterstützen. Diese Dokumentation beschreibt nicht nur unsere Bemühungen um eine bestmögliche Vorbereitung auf die Datenschutz-Grundverordnung, sondern soll auch Beispiele liefern, was Sie bereits heute unternehmen können, um den Bestimmungen der Datenschutz-Grundverordnung (DSGVO) mithilfe von PowerApps, Microsoft Flow und Common Data Service für Apps nachzukommen.
+Die Datenschutz-Grundverordnung der EU erteilt Personen (in der Verordnung als *betroffene Personen* bezeichnet) das Recht, vom Arbeitgeber oder einer anderen Einrichtung oder Organisation (auch als *Verantwortliche* bezeichnet) erhobene personenbezogene Daten zu verwalten. Personenbezogene Daten sind in der DSGVO sehr umfassend definiert als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO erteilt betroffenen Personen folgende Rechte bezüglich ihrer personenbezogenen Daten:
 
-Die DSGVO erteilt Personen (in der Verordnung als betroffene Personen bezeichnet) das Recht, vom Arbeitgeber oder einer anderen Einrichtung oder Organisation (auch als Verantwortliche bezeichnet) erhobene personenbezogene Daten zu verwalten. Personenbezogene Daten sind in der DSGVO sehr umfassend definiert als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Die DSGVO gewährt betroffenen Personen bestimmte Rechte bezüglich ihrer personenbezogenen Daten, darunter das Recht auf Erhalt einer Kopie der personenbezogenen Daten, das Recht auf Berichtigung, das Recht auf Einschränkung der Verarbeitung, das Recht auf Löschung sowie das Recht auf Erhalt der Daten in einem maschinenlesbaren Format, um sie an einen anderen Verantwortlichen übermitteln zu können. Eine betroffene Person kann bei einem Verantwortlichen mit einem formellen Antrag die Einschränkung der Verarbeitung von personenbezogenen Daten verlangen. Dieser Antrag wird auch DSR-Anforderung (Data Subject Rights, Rechte betroffener Personen) genannt.
+* Recht auf das Erhalten einer Kopie
+* Recht auf Berichtigung
+* Recht auf Einschränkung der Verarbeitung
+* Recht auf Löschung
+* Recht auf Datenübertragbarkeit
 
-In diesem Leitfaden wird erklärt, wie Sie als Verantwortlicher im Zuge von DSR-Anforderungen Produkte, Dienste und Verwaltungstools von Microsoft nutzen können, um personenbezogene Daten zu suchen und zu verarbeiten. Dies gilt insbesondere für die Suche nach, den Zugriff auf sowie das Ergreifen von Maßnahmen bezüglich personenbezogener Daten, die sich in Microsoft Cloud befinden. Die folgende Auflistung gibt einen Überblick über die in diesem Leitfaden beschriebenen Prozesse:
+Eine betroffene Person kann bei einem Verantwortlichen mit einem formellen Antrag die Einschränkung der Verarbeitung von personenbezogenen Daten verlangen. Dieser Antrag wird auch DSR-Anforderung (Data Subject Rights, Rechte betroffener Personen) genannt.
 
-1. **Ermitteln**: Verwenden Sie Such- und Ermittlungstools, um schneller Kundendaten zu finden, die Gegenstand einer DSR-Anforderung sein könnten. Sobald Sie möglicherweise relevante Dokumente ermittelt haben, können Sie eine oder mehrere der in den folgenden Schritten beschriebenen Aktionen ausführen, um auf eine DSR-Anforderung zu reagieren. Oder Sie entscheiden, dass die Anforderung nicht den Richtlinien Ihrer Organisation bezüglich DSR-Anforderungen entspricht.
+In diesem Artikel wird beschrieben, welche Vorbereitungen Microsoft bezüglich der Datenschutz-Grundverordnung trifft. Darüber hinaus gibt der Artikel einen Überblick über Maßnahmen, die Sie ergreifen können, um den Bestimmungen der DSGVO mithilfe von PowerApps, Microsoft Flow und Common Data Service für Apps nachzukommen. Sie erfahren, wie Sie als Verantwortlicher mit Microsoft-Produkten, -Diensten und -Verwaltungstools im Rahmen einer DSR-Anforderung personenbezogene Daten in der Microsoft-Cloud finden, darauf zugreifen und diese behandeln können.
 
-2. **Zugreifen**: Rufen Sie personenbezogene Daten aus Microsoft Cloud ab, und fertigen Sie gegebenenfalls eine Kopie an, die Sie der betroffenen Person zur Verfügung stellen können.
+In diesem Artikel werden die folgenden Aktionen besprochen:
 
-3. **Berichtigen**: Nehmen Sie Änderungen vor oder implementieren Sie ggf. andere angeforderte Aktionen für die personenbezogenen Daten.
+* **Ermitteln**: Verwenden Sie Such- und Ermittlungstools, um schneller Kundendaten zu finden, die Gegenstand einer DSR-Anforderung sein könnten. Sobald Sie potenziell relevante Dokumente ermittelt haben, können Sie eine oder mehrere DSR-Aktionen ausführen, um auf eine Anforderung zu reagieren. Oder Sie entscheiden, dass die Anforderung nicht den Richtlinien Ihrer Organisation bezüglich DSR-Anforderungen entspricht.
 
-4. **Einschränken**: Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Onlinedienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können Daten auch aus Microsoft Cloud entfernen und sie lokal oder an einem anderem Speicherort beibehalten.
+* **Zugreifen**: Rufen Sie personenbezogene Daten aus Microsoft Cloud ab, und fertigen Sie gegebenenfalls eine Kopie der Daten an, die Sie der betroffenen Person zur Verfügung stellen können.
 
-5. **Löschen**: Löschen Sie personenbezogene Daten dauerhaft aus Microsoft Cloud.
+* **Berichtigen**: Nehmen Sie Änderungen vor oder implementieren Sie ggf. andere angeforderte Aktionen für die personenbezogenen Daten.
 
-6. **Exportieren**: Stellen Sie der betroffenen Person eine elektronische Kopie ihrer personenbezogenen Daten (in einem maschinenlesbaren Format) zur Verfügung.
+* **Einschränken**: Schränken Sie die Verarbeitung von personenbezogenen Daten ein, indem Sie entweder die Lizenzen für verschiedene Onlinedienste entfernen oder die gewünschten Dienste, wenn möglich, deaktivieren. Sie können Daten auch aus Microsoft Cloud entfernen und sie lokal oder an einem anderem Speicherort beibehalten.
 
-Jeder Abschnitt dieses Leitfadens beschreibt jeweils die technischen Prozeduren, die Ihre Organisation als Verantwortlicher ergreifen kann, um auf eine DSR-Anforderung bezüglich personenbezogener Daten in Microsoft Cloud zu reagieren.
+* **Löschen**: Löschen Sie personenbezogene Daten dauerhaft aus der Microsoft-Cloud.
 
-## <a name="common-data-service-customer-data"></a>Kundendaten in Common Data Service
+* **Exportieren**: Stellen Sie der betroffenen Person eine elektronische Kopie ihrer personenbezogenen Daten (in einem maschinenlesbaren Format) zur Verfügung.
+
+## <a name="cds-for-apps-customer-data"></a>CDS für Apps-Kundendaten
 
 > [!IMPORTANT]
-> Gilt für Common Data Service für Apps und für Common Data Service (Vorgängerversion)
+> Gilt für CDS für Apps und für Common Data Service (vorherige Version)
 
-Es gibt zwei Arten von Common Data Services (CDS): CDS für Apps und die CDS-Vorgängerversion, die jeweils einen anderen Prozess für personenbezogene Daten aufweisen.
+CDS für Apps und die vorherige Version von CDS unterscheiden sich bei der Interaktion mit personenbezogenen Daten.
 
-Sie können die Art der CDS-Umgebung ermitteln, indem Sie auf der [PowerApps-Website](https://web.powerapps.com) die folgenden Schritte ausführen:
+Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com) anmelden und die folgenden Schritte durchführen:
 
-1.  Wählen Sie aus der Dropdownliste „Umgebung“ die **Umgebung** aus.
-2.  Navigieren Sie zu **Daten** > **Entitäten**.
+1. Wählen Sie aus der Dropdownliste **Umgebung** eine Umgebung aus.
+2. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
 
-    Bei Ihrer Umgebung handelt es sich um eine CDS für Apps-Umgebung, wenn folgende Entitäten angezeigt werden:
+    Ihre Umgebung ist CDS für Apps, wenn die folgenden Entitäten aufgelistet sind:
 
     ![Liste der PowerApps-Entitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
 
-    Bei Ihrer Umgebung handelt es sich um eine CDS-Vorgängerversion, wenn folgende Entitäten angezeigt werden:
+    Ihre Umgebung ist die vorherige Version von CDS, wenn die folgenden Entitäten aufgelistet sind:
 
     ![Liste der PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
 
-Nachdem Sie festgestellt haben, über welche Art von CDS-Umgebung Sie verfügen, können Sie anhand der entsprechenden Abschnitte in diesem Dokument die personenbezogenen Daten ermitteln.
+Nachdem Sie bestimmt haben, welche CDS-Umgebung vorhanden ist, führen Sie die im folgenden Abschnitt beschriebenen Schritte durch, um personenbezogene Daten zu bestimmen.
 
 > [!NOTE]
-> Möglicherweise verfügen Sie über einige Umgebungen in CDS für Apps und weitere in CDS (Vorgängerversion). Daher müssen Sie die nachfolgend beschriebenen Prozesse für sämtliche Umgebungen in Ihrer Organisation wiederholen.
+> Möglicherweise verfügen Sie über einige Umgebungen in CDS für Apps und weitere in der vorherigen Version von CDS. Daher müssen Sie die nachfolgend beschriebenen Prozesse für sämtliche Umgebungen in Ihrer Organisation wiederholen.
 
-## <a name="user-personal-data-in-common-data-service-for-apps"></a>Personenbezogene Benutzerdaten in Common Data Service für Apps
+## <a name="user-personal-data-in-cds-for-apps"></a>Personenbezogenen Benutzerdaten in CDS für Apps
 
 ### <a name="prerequisites"></a>Voraussetzungen
-Ein Benutzer muss über das Office 365 Admin Center erstellt werden. Ihm muss eine entsprechende Common Data Service-Benutzerlizenz für den Zugriff auf CDS zugewiesen werden.  Bevor der Benutzer mit der Verwendung von Common Data Service beginnen kann, ist zudem eine Sicherheitsrolle erforderlich.
+Sie müssen Benutzer im Office 365 Admin Center erstellen und diesen eine entsprechende Benutzerlizenz und Sicherheitsrolle zuweisen, damit sie auf CDS für Apps zugreifen und dieses verwenden können.
 
-Die personenbezogenen Benutzerdaten werden im Office 365 Admin Center und in der CDS-Systembenutzerentität aufbewahrt.  Bestimmte standardmäßige personenbezogene Benutzerdaten werden In Office 365 Admin Center aufbewahrt und verwaltet (z.B. Benutzername, Benutzer-ID, Telefonnummer, E-Mail-Adresse und Anschrift). Diese personenbezogenen Benutzerdaten werden in allen Umgebungen mit der CDS-Systembenutzerentität synchronisiert.  Ein Systemadministrator kann diese personenbezogenen Daten nur im Office 365 Admin Center aktualisieren. Diese Attribute werden anschließend automatisch mit CDS für Apps synchronisiert. Ein Systemadministrator kann benutzerdefinierte Attribute auch erstellen, um zusätzliche personenbezogenen Benutzerdaten in der CDS-Systembenutzerentität zu erfassen.  Diese benutzerdefinierten Attribute werden in CDS vom Systemadministrator manuell verwaltet.
+Personenbezogene Standardbenutzerdaten (z.B. Benutzername, Benutzer-ID, Telefonnummer, E-Mail-Adresse und Anschrift) werden im Office 365 Admin Center aufbewahrt und verwaltet. Systemadministratoren können diese personenbezogenen Daten nur im Office 365 Admin Center aktualisieren. Diese Daten werden anschließend automatisch mit der Entität „User“ in CDS für Apps in allen Umgebungen synchronisiert. Systemadministratoren können benutzerdefinierte Attribute auch erstellen, um zusätzliche personenbezogenen Benutzerdaten in der CDS für Apps-Systementität „User“ zu erfassen und manuell zu warten und zu verwalten.
 
-Wenn ein Benutzer aus dem Office 365 Admin Center gelöscht wird, wird der Benutzerdatensatz nicht automatisch von der CDS-Systembenutzerentität entfernt, um eine Unterbrechung der Geschäftsanwendungen zu verhindern, die möglicherweise entscheidend für die Vorgänge Ihrer Organisation sind.  Ein CDS-Systemadministrator muss Maßnahmen ergreifen, um mit der Anwendung die personenbezogenen Benutzerdaten zu suchen und aus CDS zu entfernen.
+Wenn ein Benutzer aus dem Office 365 Admin Center gelöscht wird, wird der Benutzerdatensatz nicht automatisch von der CDS-Systementität „User“ entfernt, um eine Unterbrechung der Geschäftsanwendungen zu verhindern, die möglicherweise entscheidend für die Vorgänge Ihrer Organisation sind. Der Status des Benutzers ist in CDS für Apps auf „Deaktiviert“ festgelegt, aber die personenbezogenen Daten des Benutzers müssen von einem Systemadministrator innerhalb der App aus CDS für Apps gelöscht werden.
 
-Nur Benutzer mit der globalen Office 365-Administratorrolle und der Sicherheitsrolle eines CDS-Systemadministrators können die nachfolgend aufgeführten Aktionen „Ermitteln“, „Berichtigen“, „Exportieren“ und „Löschen“ durchführen.
+Nur globale Office 365-Administratoren und CDS-Systemadministratoren können die nachfolgend aufgeführten Aktionen ermitteln, berichtigen, exportieren und löschen.
 
 ### <a name="discover"></a>Erkunden
+Systemadministratoren können mehrere CDS für Apps-Instanzen erstellen. Diese Instanzen können zu Test-, Entwicklungs- oder Produktionszwecken verwendet werden. Jede dieser Instanzen verfügt über eine Kopie der Systementität „User“ mit sämtlichen benutzerdefinierten Attributen, die vom Systemadministrator hinzugefügt wurden, sowie mit den personenbezogenen Daten, die über das Office 365 Admin Center synchronisiert wurden.
 
-Systemadministratoren können mehrere CDS-Instanzen erstellen.  Diese Instanzen können zu Test-, Entwicklungs- oder Produktionszwecken verwendet werden.   Jede dieser Instanzen verfügt über eine Kopie der Systembenutzerentität mit sämtlichen benutzerdefinierten Attributen, die vom Systemadministrator hinzugefügt wurden, sowie mit den personenbezogenen Daten, die über das Office 365 Admin Center synchronisiert wurden.
+Ein Systemadministrator kann eine Liste mit allen CDS für Apps-Instanzen suchen, indem er über das PowerApps Admin Center zum Dynamics 365 Admin Center navigiert.
 
-Ein Systemadministrator kann eine Liste mit allen CDS-Instanzen suchen, indem er über das PowerApps Admin Center zum Dynamics 365 Administration Center navigiert.
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
 
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
 
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
+3.  Klicken oder tippen Sie auf **Dynamics 365 Admin Center**.
 
     ![PowerApp-Umgebungsdetails](./media/common-data-service-gdpr-dsr-guide/powerapps-environment-details.png)
 
-    Es wird eine Liste mit allen Instanzen angezeigt.
+    Es wird eine Liste aller Instanzen angezeigt.
 
     ![PowerApps-Instanzauswahl](./media/common-data-service-gdpr-dsr-guide/powerapps-instance-picker.png)
 
-Personenbezogene Daten von CDS-Benutzern können wie folgt gefunden werden:
+Sie können personenbezogene Daten von CDS für Apps-Benutzern in den folgenden Ressourcen finden:
 
-|Ressourcen mit personenbezogenen Daten | Zweck | Websitezugriff | Programmatischer Zugriff
+|Ressourcen- | Zweck | Websitezugriff | Programmatischer Zugriff
 | --- | --- | --- | ---
-| Entitätsdatensatz | Systembenutzerentität | [PowerApps Admin Center](https://admin.powerapps.com) | [Über die Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| Verlauf überprüfen | Lässt zu, dass Kunden Ressourcen ermitteln, die von Benutzern auf einer Entitätsstufe erstellt, geändert oder gelöscht wurden, oder auf die Benutzer zugegriffen haben. | [PowerApps Admin Center](https://admin.powerapps.com) | [Über die Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Entitätsdatensatz | In der Systementität „User“ werden die personenbezogenen Daten eines Benutzers gespeichert. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Verlauf überprüfen | Lässt zu, dass Kunden Ressourcen ermitteln können, die von Benutzern auf einer Entitätsstufe erstellt, geändert oder gelöscht wurden, oder Ressourcen, auf die Benutzer zugegriffen haben. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>User
-Personenbezogene Benutzerdaten werden in Office 365 Admin Center in Azure Active Directory gespeichert.  Diese personenbezogenen Daten werden im Office 365 Admin Center verwaltet und automatisch mit allen CDS-Umgebungen synchronisiert.  Ein Systemadministrator kann diese personenbezogenen Daten nicht direkt in CDS aktualisieren, während der Benutzer aktiv ist. Sie müssen direkt im Office 365 Admin Center aktualisiert werden.  Zusätzliche personenbezogenen Daten (z.B. benutzerdefinierte Attribute) können direkt zu CDS hinzugefügt werden und müssen vom Systemadministrator manuell verwaltet werden.
+Personenbezogene Benutzerdaten werden in Azure Active Directory gespeichert und automatisch mit allen CDS für Apps-Umgebungen synchronisiert. Systemadministratoren können diese personenbezogenen Daten nicht direkt in CDS für Apps aktualisieren, während der Benutzer aktiv ist. Sie müssen die Daten im Office 365 Admin Center aktualisieren. Systemadministratoren können personenbezogene Daten direkt in CDS für Apps hinzufügen (z.B. benutzerdefinierte Attribute). Sie müssen diese Daten allerdings manuell verwalten.
 
-Ein CDS-Systemadministrator kann den Benutzer und die personenbezogenen Daten suchen, die einem bestimmten Benutzer zugeordnet sind, indem er die folgenden Schritte ausführt:
+Navigieren Sie zum [PowerApps Admin Center](https://admin.powerapps.com/), und führen Sie Folgendes durch, um einen Benutzer und dessen personenbezogene Daten zu ermitteln:
 
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
 
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
-4.  Klicken Sie auf den Namen der neuen Umgebung.
-5.  Klicken Sie auf die Schaltfläche **Öffnen**.
-6.  Navigieren Sie zu **Einstellungen** > **Sicherheit**.
-7.  Klicken Sie auf **Benutzer**.
-8.  Geben Sie den Benutzer in das Eingabefeld **Suche** ein.
-9.  Klicken Sie auf die Schaltfläche **Suche**.
-10. Doppelklicken Sie auf den Benutzer.
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf **Öffnen**.
+
+3. Navigieren Sie zu **Einstellungen** > **Sicherheit** > **Benutzer**.
+
+4. Geben Sie den Namen des Benutzers im **Suchfeld** ein, und klicken oder tippen Sie auf **Suchen**.
+
+5. Doppelklicken oder doppeltippen Sie auf den Benutzernamen, um dessen personenbezogene Daten anzuzeigen.
 
     ![PowerApps-Benutzerformular](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
 #### <a name="audit-history"></a>Verlauf überprüfen
-Wenn die [Überwachungsnachverfolgung](https://docs.microsoft.com/dynamics365/customer-engagement/admin/audit-data-user-activity) für eine Entität in Common Data Service aktiviert ist, werden die personenbezogenen Benutzerdaten zusammen mit den Ereignissen, die der Benutzer ausgeführt hat, im Überwachungsverlauf protokolliert.
+Wenn die [Überwachungsnachverfolgung](https://docs.microsoft.com/dynamics365/customer-engagement/admin/audit-data-user-activity) für eine Entität in CDS für Apps aktiviert ist, werden die personenbezogenen Daten sowie die vom Benutzer ausgeführten Aktionen im Überwachungsverlauf erfasst.
 
 ### <a name="rectify"></a>Berichtigen
+Bei der Anfrage einer betroffenen Person bezüglich einer Berichtigung der von Ihrer Organisation gespeicherten personenbezogenen Daten müssen Sie entscheiden, ob die Anforderung umgesetzt werden soll oder nicht. Das Berichtigen von Daten kann Aktionen wie die Bearbeitung, Zensur oder Entfernung von personenbezogenen Daten aus einem Dokument oder einem anderen Element beinhalten.
 
-Bei der Anfrage einer betroffenen Personen bezüglich einer Berichtigung der von Ihrer Organisation gespeicherten personenbezogenen Daten müssen Sie entscheiden, ob die Anforderung umgesetzt werden soll oder nicht.  Das Berichtigen von Daten kann Aktionen wie die Bearbeitung, Zensur oder Entfernung von personenbezogenen Daten aus einem Dokument oder einem anderen Element beinhalten.
+Sie können Azure Active Directory zum Verwalten der Identitäten (personenbezogene Daten) Ihrer Benutzer in CDS für Apps verwenden. Unternehmenskunden können DSR-Berichtigungsanforderungen verwalten, indem sie die eingeschränkten Bearbeitungsfeatures nutzen, die im jeweiligen Microsoft-Diensts zur Verfügung stehen. Als verarbeitende Instanz für die Daten bietet Microsoft keine Möglichkeit, vom System generierte Protokolle zu berichtigen, da diese auf Fakten basierende Aktivitäten und einen historischen Datensatz von Ereignissen innerhalb der Microsoft-Dienste darstellen. Weitere Einzelheiten finden Sie unter [GDPR: Data Subject Requests (DSRs) (DSGVO: Anforderungen betroffener Personen (Data Subject Requests, DSRs))](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
-Sie können mit Azure Active Directory Identitäten (personenbezogene Daten) Ihrer Benutzer in Common Data Service für Apps verwalten. Unternehmenskunden können DSR-Berichtigungsanforderungen verwalten, einschließlich eingeschränkter Bearbeitungsfeatures je nach Art des angegebenen Microsoft-Diensts.  Als verarbeitende Instanz für die Daten bietet Microsoft keine Möglichkeit, vom System generierte Protokolle zu korrigieren, da diese auf Fakten basierende Aktivitäten und einen historischen Datensatz von Ereignissen innerhalb der Microsoft-Dienste darstellen. Weitere Einzelheiten finden Sie unter [DSGVO: Datensubjektanforderungen (DSR-Anforderungen)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
-
-Nachdem der Benutzerdatensatz aus Azure Active Directory gelöscht wurde, können Systemadministratoren die verbleibenden personenbezogenen Benutzerdaten (z.B. benutzerdefinierte Attribute, die sie hinzugefügt haben) aus allen Instanzen entfernen.  
+Nachdem der Benutzerdatensatz aus Azure Active Directory gelöscht wurde, können Systemadministratoren die verbleibenden personenbezogenen Benutzerdaten (z.B. benutzerdefinierte Attribute) aus allen Instanzen entfernen.  
 
 ### <a name="export"></a>Exportieren
 
 #### <a name="system-user"></a>Systembenutzer
-In der Systembenutzerentität gespeicherte personenbezogene Daten von Benutzern können über die Benutzerliste im Portal in Excel exportiert werden.
+Sie können die personenbezogenen Benutzerdaten, die in der Systementität „User“ gespeichert sind, aus der Benutzerliste im Admin Center in Excel exportieren.
 
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
 
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
-4.  Klicken Sie auf den Namen der neuen Umgebung.
-5.  Klicken Sie auf die Schaltfläche „Öffnen“. Navigieren Sie zu „Einstellungen“ > „Sicherheit“.
-6.  Wählen Sie die Ansicht „Aktivierte Benutzer“ aus.
-7.  Klicken Sie auf die Schalfläche „In Excel exportieren“.
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
+
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf **Öffnen**.
+
+3. Navigieren Sie zu **Einstellungen** > **Security** (Sicherheit), und wählen Sie dann **Enabled Users View** (Aktivierte Benutzer anzeigen).
+
+4. Klicken Sie auf **In Excel exportieren**.
 
 #### <a name="audit-history"></a>Verlauf überprüfen
-Mit der Anwendung können Screenshots von dem Überwachungsverlauf erstellt und kopiert werden, indem die nachfolgend beschriebenen Schritte ausgeführt werden.
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
-4.  Klicken Sie auf den Namen der neuen Umgebung.
-5.  Klicken Sie auf die Schaltfläche „Öffnen“.
-6.  Navigieren Sie zu „Einstellungen“ > „Überwachung“.
+Sie können Screenshots des Überwachungsverlaufs im Admin Center machen.
+
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
+
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
+
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf **Öffnen**.
+
+3. Navigieren Sie zu **Einstellungen** > **Auditing**, und wählen Sie **Audit Summary View** (Überwachung > Überwachungszusammenfassung anzeigen).
 
     ![PowerApps-Menü „Überwachungsverlauf“](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
 
-7.  Klicken Sie auf „Zusammenfassungsansicht: Überwachung“.
-8.  Suchen Sie den Überwachungsdatensatz des Benutzers.
+4. Ermitteln Sie den Speicherort des Überwachungsdatensatzes, und drücken Sie dann ALT+DRUCK, um einen Screenshot zu machen.
 
     ![PowerApps-Menü „Verlaufsdetails“](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
 
-9.  Drücken Sie zum Erstellen des Screenshots die Tasten Alt + Druck.
-10. Speichern Sie den Screenshot in einer Datei.
-11. Sie können die Datei anschließend an Ihren DSR-Anforderer senden.
+5. Speichern Sie den Screenshot als Datei, die Sie an den DSR-Anforderer senden können.
 
 ### <a name="delete"></a>Löschen
 
 #### <a name="user"></a>User
-Wenn ein Benutzer aus dem Office 365 Admin Center gelöscht wird, wird der Status des Benutzers in CDS auf „Deaktiviert“ festgelegt; die personenbezogenen Benutzerdaten werden jedoch nicht automatisch gelöscht, um eine Unterbrechung der Geschäftsanwendungen zu verhindern, die möglicherweise entscheidend für die Vorgänge Ihrer Organisation sind.
-Zum Löschen der personenbezogenen Benutzerdaten aus CDS muss der Systemadministrator die personenbezogenen Daten des deaktivierten Benutzers manuell entfernen.
+Wenn ein Benutzer aus dem Office 365 Admin Center gelöscht wird, wird der Benutzerdatensatz nicht automatisch von der CDS-Systementität „User“ entfernt, um eine Unterbrechung der Geschäftsanwendungen zu verhindern, die möglicherweise entscheidend für die Vorgänge Ihrer Organisation sind. Der Status des Benutzers ist in CDS für Apps auf „Deaktiviert“ festgelegt, aber die personenbezogenen Daten des Benutzers müssen von einem Systemadministrator innerhalb der App aus CDS für Apps gelöscht werden.
 
-#### <a name="remove-user-personal-data-via-user-form"></a>Entfernen der personenbezogenen Benutzerdaten über das Benutzerformular
-Wenn der Benutzerdatensatz aus Azure Active Directory gelöscht wird, wird im Benutzerformular folgende Meldung angezeigt.
-Die Informationen zu diesem Benutzer werden nicht mehr von Office 365 verwaltet. Sie können diesen Datensatz aktualisieren, um auf DSR-Anforderungen zu reagieren, indem Sie sämtliche personenbezogene Daten entfernen oder ersetzen, die mit diesem Benutzer verknüpft sind.
+#### <a name="remove-a-users-personal-data-from-the-users-summary-page"></a>Löschen der personenbezogenen Benutzerdaten von der Zusammenfassungsseite des Benutzers
+Wenn der Benutzerdatensatz aus Azure Active Directory gelöscht wurde, wird auf der Zusammenfassungsseite des Benutzers folgende Meldung angezeigt:
 
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
-4.  Klicken Sie auf den Namen der neuen Umgebung.
-5.  Klicken Sie auf die Schaltfläche **Öffnen**.
-6.  Klicken Sie auf **Einstellungen** > **Sicherheit** > **Benutzer**.
-7.  Wählen Sie die Ansicht **Deaktivierte Benutzer** aus.
-8.  Geben Sie unter **Nach Datensätzen suchen** einen Benutzernamen ein, und klicken Sie auf die Schaltfläche **Suche**.
-9.  Doppelklicken Sie in den Suchergebnissen auf den Benutzernamen.
-10. Entfernen Sie sämtliche personenbezogene Daten, und klicken Sie auf **Speichern**.
+*This user’s information is no longer managed by Office 365. You can update this record to respond to DSR requests by removing or replacing all personal data associated with this user.* (Die Informationen zu diesem Benutzer werden nicht mehr von Office 365 verwaltet.Sie können diesen Datensatz aktualisieren, um auf DSR-Anforderungen zu reagieren, indem Sie sämtliche personenbezogene Daten entfernen oder ersetzen, die mit diesem Benutzer verknüpft sind.)
 
-#### <a name="remove-user-personal-data-via-excel-importexport"></a>Entfernen der personenbezogenen Benutzerdaten über einen Excel-Import/-Export
-1.  Klicken Sie auf **Einstellungen** > **Sicherheit** > **Benutzer**.
-2.  Wählen Sie die Ansicht **Deaktivierte Benutzer** aus.
-3.  Erstellen Sie eine Excel-Vorlage, die alle Spalten mit personenbezogenen Benutzerdaten enthält, die Sie aktualisieren möchten.
-4.  Klicken Sie auf **Datei herunterladen**.
-5.  Öffnen Sie die heruntergeladene Excel-Datei, und aktualisieren und speichern Sie die Datei.
-6.  Kehren Sie zum Ansichtsfenster „Deaktivierte Benutzer“ zurück, und klicken Sie auf „Daten importieren“.
-7.  Wählen Sie im Dialogfeld „Datendatei hochladen“ Ihre aktualisierte Excel-Datei aus.
-8.  Nehmen Sie im Fenster „Felder zuordnen“ alle notwendigen Änderungen vor.
-9.  Klicken Sie auf „Weiter“ und auf „Senden“.
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
 
-Weitere Informationen zur Verwendung von Excel-Vorlagen finden Sie unter [Zusätzliche Informationen zu Excel](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates).
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
 
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf **Öffnen**.
 
-#### <a name="remove-audit-history-via-the-audit-summary-view-form"></a>Entfernen eines Überwachungsverlaufs über das Formular „Zusammenfassungsansicht“
+3. Navigieren Sie zu **Einstellungen** > **Security** > **Users**, und wählen Sie **Disabled Users View** (Sicherheit > Benutzer > Deaktivierte Benutzer anzeigen).
 
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
-4.  Klicken Sie auf den Namen der neuen Umgebung.
-5.  Klicken Sie auf die Schaltfläche „Öffnen“.
-6.  Klicken Sie auf „Einstellungen“ > „Überwachung“.
-7.  Wählen Sie „Zusammenfassungsansicht: Überwachung“ aus.
-8.  Änderungsverlauf des Benutzers suchen
-9.  Klicken Sie auf das Kontrollkästchen in der Zeile bzw. in den Zeilen.
-10. Klicken Sie auf das Symbol „Änderungsverlauf löschen“.
+4. Geben Sie den Namen des Benutzers im **Suchfeld** ein, und klicken oder tippen Sie auf **Suchen**.
 
-## <a name="personal-data-stored-in-common-data-service-for-apps-databases"></a>In Datenbanken des Common Data Service für Apps gespeicherte personenbezogene Daten
+9. Doppelklicken Sie in den Suchergebnissen auf den Benutzernamen.
+
+10. Entfernen Sie auf der Zusammenfassungsseite des Benutzers alle personenbezogenen Daten, und klicken oder tippen Sie anschießend auf **Speichern**.
+
+#### <a name="remove-a-users-personal-data-by-using-excel"></a>Entfernen der personenbezogenen Benutzerdaten mit Excel
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
+
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
+
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf **Öffnen**.
+
+3. Navigieren Sie zu **Einstellungen** > **Security** > **Users**, und wählen Sie **Disabled Users View** (Sicherheit > Benutzer > Deaktivierte Benutzer anzeigen).
+
+4. Erstellen Sie eine Excel-Vorlage mit den personenbezogenen Benutzerdaten, und laden Sie diese herunter. Ausführliche Anweisungen finden Sie im Abschnitt „Eine neue Excel-Vorlage erstellen“ unter [Analysieren und Teilen von Daten mit Excel-Vorlagen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
+
+8. Öffnen Sie die heruntergeladene Excel-Vorlagendatei, entfernen Sie die personenbezogenen Benutzerdaten, und speichern Sie die Datei.
+
+9. Kehren Sie zur Seite **Disabled Users View** (Deaktivierte Benutzer anzeigen) zurück, und klicken Sie auf **Daten importieren**.
+
+10. Wählen sie die Excel-Vorlagendatei im Dialogfeld **Upload data file** (Datendatei hochladen) aus, und nehmen Sie die nötigen Änderungen im Fenster **Map Fields** (Felder zuordnen) vor.
+
+12. Klicken oder tippen Sie auf **Next** (Weiter), und klicken oder tippen Sie auf **Submit** (Übermitteln).
+
+#### <a name="remove-audit-history-from-the-audit-summary-view-page"></a>Entfernen eines Überwachungsverlaufs von der Seite „Zusammenfassungsansicht“
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
+
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
+
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf **Öffnen**.
+
+3. Navigieren Sie zu **Einstellungen** > **Auditing**, und wählen Sie **Audit Summary View** (Überwachung > Überwachungszusammenfassung anzeigen).
+
+4. Machen Sie den Änderungsverlauf des Benutzers ausfindig, aktivieren oder deaktivieren Sie das jeweilige Kontrollkästchen per Klick oder Tippen neben einer bzw. mehreren Zeilen, und klicken oder tippen Sie auf **Delete Change History** (Änderungsverlauf löschen).
+
+## <a name="personal-data-stored-in-databases-of-cds-for-apps"></a>Personenbezogene Daten, die in Datenbanken von CDS für Apps gespeichert werden
 
 ### <a name="prerequisites"></a>Voraussetzungen
-Sie können personenbezogene Daten von Einzelpersonen (z.B. Ihren eigenen Kunden) in den Inhalten Ihrer CDS-Entitäten speichern.  
+Sie können personenbezogene Daten von Einzelpersonen (z.B. Ihren eigenen Kunden) in Ihren CDS für Apps-Entitäten speichern.  
 
-Wenn eine Einzelperson eine DSR-Anforderung an Ihre Organisation sendet, muss der CDS-Systemadministrator sämtliche Entitäten suchen, in denen innerhalb Ihrer Anwendung auf diese Person verwiesen werden könnte.  Der CDS-Administrator ist verantwortlich für die Verwaltung eines Inventars der Speicherorte der personenbezogenen Daten in den verschiedenen von Ihnen verwendeten Entitäten, damit Sie auf DSR-Anforderungen von Einzelpersonen reagieren können.
+CDS-Systemadministratoren sind für das Pflegen eines Inventars der Speicherorte von personenbezogenen Daten jeder Einzelperson innerhalb der verschiedenen Entitäten verantwortlich, sodass die Daten im Rahmen einer DSR-Anforderung schnell gefunden werden können.  
 
-Anschließend können personenbezogene Daten in einer Entität innerhalb Ihrer Inhalte mit der produktinternen Funktion exportiert, berichtigt oder gelöscht werden.  
+Anschließend können personenbezogene Daten in einer Entität mit den produktinternen Funktionalitäten exportiert, berichtigt oder gelöscht werden.  
 
 ### <a name="discover"></a>Erkunden
-Wenn ein CDS-Administrator eine DSR-Anforderung von einer Einzelperson empfängt, muss der Administrator ermitteln, welche Umgebungen/CDS-Instanzen personenbezogene Daten dieser Einzelperson enthalten.  Sie sollten Richtlinien und Prozeduren für die Verwaltung eines Inventars der Umgebungen, Instanzen und Entitäten entwickeln, in dem personenbezogene Daten von Einzelpersonen gespeichert werden. Mithilfe dieses Inventars können Sie personenbezogene Daten ermitteln, die Sie innerhalb Ihrer Inhalte gespeichert haben.
+Wenn CDS-Systemadministratoren eine DSR-Anforderung von einer Einzelperson empfangen, müssen sie ermitteln, welche Umgebungen/CDS-Instanzen personenbezogene Daten dieser Einzelperson enthalten. Personenbezogene Daten werde normalerweise in Hauptentitäten (z.B. Account, Contact, Lead, Opportunity usw.) gespeichert. Es liegt jedoch in Ihrer Verantwortung, Richtlinien und Vorgehensweisen zum Verwalten eines Inventars der personenbezogenen Daten jeder Einzelperson zu entwickeln, sodass Sie auf DSR-Anforderungen reagieren können.
 
-Mit dem Inventar der Umgebungen, Instanzen, Entitäten und Felder, in dem personenbezogene Daten gespeichert sind, können Sie die CDS-Suchengine für die Ermittlung der personenbezogenen Daten konfigurieren.  Ein CDS-Administrator kann die Suchentitäten und Felder konfigurieren. Weitere Einzelheiten hierzu finden Sie unter [Konfigurieren der Relevanzsuche](https://go.microsoft.com/fwlink/?linkid=872506).
-Anschließend kann der CDS-Administrator auf die CDS-Umgebung zugreifen und eine Suche ausführen.
+Mit einem Inventar können CDS-Systemadministratoren die Suchentitäten und -felder konfigurieren und anschließend auf die CDS für Apps-Umgebung zugreifen, um personenbezogene Daten zu ermitteln. Weitere Informationen finden Sie unter [Configure Relevance Search (Konfigurieren der Relevanzsuche)](https://go.microsoft.com/fwlink/?linkid=872506).
 
-1.  Klicken Sie auf das Symbol **Suche**.
-2.  Wählen Sie **Relevanzsuche** aus.
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
+
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
+
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf Suchen, und klicken oder tippen Sie anschließend auf **Relevanzsuche**.
 
     ![PowerApps-Menü „Relevanzsuche“](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
 
-3.  Geben Sie die personenbezogenen Daten der Einzelperson in das Suchfeld ein.
-4.  Klicken Sie auf das Symbol „Suche“.
+3. Geben Sie die personenbezogenen Daten der Einzelperson in das Suchfeld ein, und klicken oder tippen Sie auf **Suchen**.
 
     ![Ergebnisse der PowerApps-Relevanzsuche](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
 
-Personenbezogene Daten in Ihren Inhalten werden normalerweise in zentralen Entitäten gespeichert (z.B. „Konto“, „Kontakt“, „Lead“, „Verkaufschance“). Sie tragen jedoch die Verantwortung dafür, dass ein Inventar gepflegt wird, das die Speicherorte der personenbezogenen Daten von Einzelpersonen enthält.
-
 ### <a name="rectify"></a>Berichtigen
-Der CDS-Systemadministrator kann die persönlichen Daten einer Einzelperson mithilfe der Liste der Ergebnisse von der Relevanzsuche aktualisieren.  Allerdings haben Sie die personenbezogenen Daten dieser Einzelperson möglicherweise auch in anderen benutzerdefinierten Entitäten gespeichert.  Der CDS-Systemadministrator trägt die Verantwortung dafür, dass ein Inventar gepflegt wird, das diese anderen benutzerdefinierten Entitäten enthält, und dass die personenbezogenen Daten der Einzelperson entsprechend aktualisiert werden.
+CDS-Systemadministratoren können die personenbezogenen Daten einer Einzelperson mithilfe der Liste der Ergebnisse von der Relevanzsuche aktualisieren. Die personenbezogenen Daten einer Einzelperson können jedoch auch in einer benutzerdefinierte Entität gespeichert sein. CDS-Systemadministratoren tragen die Verantwortung dafür, dass ein Inventar gepflegt wird, das diese anderen benutzerdefinierten Entitäten enthält, und dass die personenbezogenen Daten der Einzelperson entsprechend aktualisiert werden.
 
-Über die Ergebnisse der Relevanzsuche:
+Führen Sie in den Ergebnissen der Relevanzsuche Folgendes aus:
 
-1.  Klicken sie auf ein Element, in dem die personenbezogenen Daten der Einzelperson gefunden wurden.
-2.  Aktualisieren Sie ggf. die personenbezogenen Daten der Einzelperson.
-3.  Klicken Sie auf „Speichern“.
+1. Klicken oder tippen Sie auf ein Element, dass die personenbezogenen Daten einer Einzelperson enthält.
+
+2. Aktualisieren Sie die personenbezogenen Daten einer Einzelperson, und klicken oder tippen Sie auf **Speichern**.
 
     ![PowerApps-Kontodetails](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
 
 ### <a name="export"></a>Exportieren
-Es kann ein Screenshot der Daten erfasst und für Ihren DSR-Anforderer freigegeben werden, indem die nachfolgend beschriebenen Schritte ausgeführt werden.
+Sie können einen Screenshot von den Daten machen und diesen mit dem DSR-Anforderer teilen.
 
-Über das [PowerApps Admin Center](https://admin.powerapps.com/):
-1.  Navigieren Sie zur Registerkarte „Umgebungen“.
-2.  Wählen Sie aus der Liste der Umgebungen eine Umgebung aus.
-3.  Klicken Sie auf den Link „Dynamics 365 Admin Center“.
-4.  Klicken Sie auf den Namen der neuen Umgebung.
-5.  Klicken Sie auf das Symbol **Suche**.
-6.  Wählen Sie „Relevanzsuche“ aus.
-7.  Geben Sie die personenbezogenen Daten der Einzelperson in das Suchfeld ein.
-8.  Klicken Sie auf das Symbol „Suche“.
-9.  Suchen Sie das Element, und doppelklicken Sie darauf.
-10. Drücken Sie auf <alt> <PrtScn>, um den Screenshot zu erstellen.
-11. Speichern Sie den Screenshot in einer Datei.
-12. Sie können die Datei anschließend an Ihren DSR-Anforderer senden.
+Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes durch:
+
+1. Klicken oder tippen Sie im Navigationsbereich auf **Umgebungen**, und wählen Sie dann eine Umgebung aus der Liste aus.
+
+2. Klicken oder tippen Sie auf **Dynamics 365 Admin Center**, wählen Sie eine Umgebung aus der Liste aus, und klicken oder tippen Sie dann auf Suchen, und klicken oder tippen Sie anschließend auf **Relevanzsuche**.
+
+    ![PowerApps-Menü „Relevanzsuche“](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
+
+3. Geben Sie die personenbezogenen Daten der Einzelperson in das Suchfeld ein, und klicken oder tippen Sie auf **Suchen**.
+
+    ![Ergebnisse der PowerApps-Relevanzsuche](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+
+4. Doppelklicken Sie in den Suchergebnissen auf das Element.
+
+5. Drücken Sie zum Erstellen des Screenshots die Tasten ALT+DRUCK.
+
+6. Speichern Sie den Screenshot als Datei, die Sie an den DSR-Anforderer senden können.
 
 ### <a name="delete"></a>Löschen
-
-Der CDS-Administrator kann die personenbezogenen Daten einer Einzelperson aus den Datensätzen löschen, in denen die Daten gespeichert wurden.  Der CDS-Administrator hat folgende Möglichkeiten: (1) Er kann den Datensatz löschen, in dem die personenbezogenen Daten gespeichert wurden, oder (2) die Inhalte der personenbezogenen Daten aus dem Datensatz entfernen.  
+CDS-Administratoren können die personenbezogenen Daten einer Einzelperson aus den Datensätzen löschen, in denen die Daten gespeichert wurden.  CDS-Systemadministratoren haben folgende Möglichkeiten: Sie können den Datensatz löschen, in dem die personenbezogenen Daten gespeichert wurden oder die Inhalte der personenbezogenen Daten aus dem Datensatz entfernen.  
 
 > [!NOTE]
-> Ein CDS-Administrator kann die Umgebung anpassen, um zu verhindern, dass ein Datensatz aus einer Entität gelöscht wird. Bei einer Konfiguration dieser Art müssen Sie die Inhalte der personenbezogenen Daten aus dem Datensatz löschen, statt den Datensatz selbst zu löschen.
+> CDS-Administratoren können die Umgebung anpassen, um zu verhindern, dass ein Datensatz aus einer Entität gelöscht wird. Bei einer Konfiguration dieser Art müssen Sie die Inhalte der personenbezogenen Daten aus dem Datensatz löschen, statt den Datensatz selbst zu löschen.
 
-Bei den Ergebnissen der Relevanzsuche:
-1.  Klicken sie auf ein Element, in dem die personenbezogenen Daten der Einzelperson gefunden wurden.
-2.  Klicken Sie im Menüband auf das Symbol „Löschen“ (Hinweis: Dieses Symbol ist deaktiviert, wenn der Datensatz nicht gelöscht werden kann).
+Führen Sie in den Ergebnissen der Relevanzsuche Folgendes aus:
+
+1. Klicken oder tippen Sie auf ein Element, dass die personenbezogenen Daten einer Einzelperson enthält.
+
+2. Klicken Sie im Menüband auf **Löschen**. (Beachten Sie, dass **Löschen** nicht ausgewählt werden kann, wenn der Datensatz nicht gelöscht werden darf.)
 
     ![PowerApps-Konto löschen](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
 
-## <a name="personal-data-stored-in-common-data-service-previous-version-databases"></a>In Datenbanken des Common Data Service (Vorgängerversion) gespeicherte personenbezogene Daten
+## <a name="personal-data-stored-in-databases-of-the-previous-version-of-cds"></a>Personenbezogene Daten, die in Datenbanken der vorherigen Version von Common Data Service gespeichert wurden
 
 ### <a name="prerequisites"></a>Voraussetzungen
+Sie können personenbezogene Daten von Einzelpersonen (z.B. Ihren eigenen Kunden) in Ihren CDS-Entitäten speichern.  
 
-Sie können personenbezogene Daten von Einzelpersonen (z.B. Ihren eigenen Kunden oder Benutzern) in den Inhalten Ihrer CDS-Entitäten speichern.  
+CDS-Systemadministratoren sind für das Pflegen eines Inventars der Speicherorte von personenbezogenen Daten jeder Einzelperson innerhalb der verschiedenen Entitäten verantwortlich, sodass die Daten im Rahmen einer DSR-Anforderung schnell gefunden werden können.  
 
-Wenn eine Einzelperson eine DSR-Anforderung an Ihre Organisation sendet, muss der CDS-Systemadministrator sämtliche Entitäten suchen, in denen innerhalb Ihrer Anwendung auf diese Person verwiesen werden könnte.  Der CDS-Administrator ist verantwortlich für die Verwaltung eines Inventars der Speicherorte der personenbezogenen Daten in den verschiedenen von Ihnen verwendeten Entitäten, damit Sie auf DSR-Anforderungen von Einzelpersonen reagieren können.
-
-Anschließend können personenbezogene Daten in einer Entität innerhalb Ihrer Inhalte mit der produktinternen Funktion exportiert, berichtigt oder gelöscht werden.  
+Anschließend können personenbezogene Daten in einer Entität mit den produktinternen Funktionalitäten exportiert, berichtigt oder gelöscht werden.  
 
 ### <a name="discover"></a>Erkunden
-Wenn ein CDS-Administrator eine DSR-Anforderung von einer Einzelperson empfängt, muss der Administrator ermitteln, welche Umgebungen/CDS-Instanzen personenbezogene Daten dieser Einzelperson enthalten.  Sie sollten Richtlinien und Prozeduren für die Verwaltung eines Inventars der Umgebungen, Instanzen und Entitäten entwickeln, in dem personenbezogene Daten von Einzelpersonen gespeichert werden. Mithilfe dieses Inventars können Sie personenbezogene Daten ermitteln, die Sie innerhalb Ihrer Inhalte gespeichert haben.
+Wenn CDS-Administratoren eine DSR-Anforderung von einer Einzelperson empfangen, muss der Administrator ermitteln, welche Umgebungen/CDS-Instanzen personenbezogene Daten dieser Einzelperson enthalten. Personenbezogene Daten werde normalerweise in Hauptentitäten (z.B. Account, Contact, Lead, Opportunity usw.) gespeichert. Es liegt jedoch in Ihrer Verantwortung, Richtlinien und Vorgehensweisen zum Verwalten eines Inventars der personenbezogenen Daten jeder Einzelperson zu entwickeln, sodass Sie auf DSR-Anforderungen reagieren können.
 
-Personenbezogene Daten von Einzelpersonen können wie folgt gefunden werden:
+Sie können personenbezogene Benutzerdaten der vorherigen Version von CDS in den folgenden Ressourcen finden:
 
-|Ressourcen mit personenbezogenen Daten | Zweck | Websitezugriff |    Programmatischer Zugriff
+|Ressourcen- | Zweck | Websitezugriff |  Programmatischer Zugriff
 | --- | --- | --- | ---
-|Entitätsdatensätze | Zur Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit. | PowerApps-Portal für Ersteller |    Nein
+|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com) |      Nein
 
 #### <a name="entity-records"></a>Entitätsdatensätze
 Personenbezogene Daten von Einzelpersonen können in jeder Geschäftseinheit gespeichert werden.
-Die vorliegende Version des Common Data Service umfasst ein eigenes Datenbankschema und eine Infrastruktur.  Sie verfügt über eigene Entitäten, die über die [PowerApps-Website](http://web.powerapps.com/) verwaltet werden.
+
+Die vorliegende Version von CDS umfasst ein eigenes Datenbankschema und eine Infrastruktur. Sie verfügt über ihre eigenen Entitäten, die Sie in [PowerApps](http://web.powerapps.com/) verwalten können.
 
 So können Sie eine Liste mit Ihren Entitäten anzeigen:
 
-1.  Auswählen der Umgebung
+1. Wählen Sie aus der Dropdownliste **Umgebung** eine Umgebung aus.
+
+2. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
 
     ![PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 
-2.  Navigieren Sie zur Registerkarte **Daten** > **Entitäten**.
-3.  Wählen Sie die Entität aus, z.B. die Entität „Konto“.
+3. Klicken oder tippen Sie wie unten gezeigt in der Liste der Entitäten auf eine Entität (z.B. auf die Entität „Account“).
 
     ![Liste mit den Details zu PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
 
-4.  Klicken Sie auf die Entität.
-5.  Klicken Sie auf die Registerkarte **Daten**. Es wird eine Liste mit Datensätzen für die Entität angezeigt.
+4. Klicken oder tippen sie auf die Registerkarte **Daten**. Es wird eine Liste mit Datensätzen für die Entität angezeigt.
 
     ![PowerApps-Legacykontodaten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
-6.  Klicken Sie auf das Symbol **Daten exportieren**.
-7.  Öffnen Sie das Excel-Arbeitsblatt nach Beendigung des Exports.
-8.  Klicken Sie auf das Feld „Bearbeiten aktivieren“.
-9.  Klicken Sie auf das Symbol „Suchen“.
-10. Geben Sie die personenbezogenen Daten ein, nach denen Sie suchen möchten.
-Personenbezogene Daten in Ihren Inhalten werden normalerweise in zentralen Entitäten gespeichert (z.B. „Konto“, „Kontakt“, „Lead“, „Verkaufschance“, „Worker“). Sie tragen jedoch die Verantwortung dafür, dass ein Inventar gepflegt wird, das die Speicherorte der personenbezogenen Daten von Einzelpersonen enthält.
-11. **Wiederholen Sie die oben aufgeführten Schritte für jede Geschäftsentität, um die personenbezogenen Daten von Einzelpersonen zu ermitteln**; verwenden Sie hierzu die Inventarliste der Entitäten, in der die personenbezogenen Daten gespeichert sind.
+5. Klicken oder tippen Sie auf **Daten exportieren**.
+
+6. Klicken oder tippen Sie auf **In Excel öffnen**, sobald der Export abgeschlossen ist, und klicken oder tippen Sie anschließend auf **Bearbeiten aktivieren**.
+
+7. Klicken oder tippen Sie auf „Suche“, geben Sie die personenbezogenen Daten der Einzelperson in das Suchfeld ein, und klicken oder tippen Sie auf **Suchen**.
+
+8. Wiederholen Sie die oben aufgeführten Schritte für jede Geschäftsentität, um die personenbezogenen Daten von Einzelpersonen zu ermitteln. Verwenden Sie hierzu die Inventarliste.
 
 ### <a name="rectify"></a>Berichtigen
-Bei der Anfrage einer betroffenen Personen bezüglich einer Berichtigung der von Ihrer Organisation gespeicherten personenbezogenen Daten müssen Sie entscheiden, ob die Anforderung umgesetzt werden soll oder nicht.  Das Berichtigen von Daten kann Aktionen wie die Bearbeitung, Zensur oder Entfernung von personenbezogenen Daten aus einem Dokument oder einem anderen Element beinhalten.
+Bei der Anfrage einer betroffenen Person bezüglich einer Berichtigung der von Ihrer Organisation gespeicherten personenbezogenen Daten müssen Sie entscheiden, ob die Anforderung umgesetzt werden soll oder nicht. Das Berichtigen von Daten kann Aktionen wie die Bearbeitung, Zensur oder Entfernung von personenbezogenen Daten aus einem Dokument oder einem anderen Element beinhalten.
 
-Sie können mit Azure Active Directory Identitäten (personenbezogene Daten) Ihrer Benutzer in Common Data Service für Apps verwalten. Unternehmenskunden können DSR-Berichtigungsanforderungen verwalten, einschließlich eingeschränkter Bearbeitungsfeatures je nach Art des angegebenen Microsoft-Diensts.  Als verarbeitende Instanz für die Daten bietet Microsoft keine Möglichkeit, vom System generierte Protokolle zu korrigieren, da diese auf Fakten basierende Aktivitäten und einen historischen Datensatz von Ereignissen innerhalb der Microsoft-Dienste darstellen.  
-
-Weitere Einzelheiten finden Sie unter [DSGVO: Datensubjektanforderungen (DSR-Anforderungen)](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+Sie können Azure Active Directory zum Verwalten der Identitäten (personenbezogene Daten) Ihrer Benutzer in der vorherigen Version von CDS verwenden. Unternehmenskunden können DSR-Berichtigungsanforderungen verwalten, indem sie die eingeschränkten Bearbeitungsfeatures nutzen, die im jeweiligen Microsoft-Diensts zur Verfügung stehen. Als verarbeitende Instanz für die Daten bietet Microsoft keine Möglichkeit, vom System generierte Protokolle zu berichtigen, da diese auf Fakten basierende Aktivitäten und einen historischen Datensatz von Ereignissen innerhalb der Microsoft-Dienste darstellen. Weitere Einzelheiten finden Sie unter [GDPR: Data Subject Requests (DSRs) (DSGVO: Anforderungen betroffener Personen (Data Subject Requests, DSRs))](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 Zum Berichtigen personenbezogener, in der CDS-Umgebung enthaltener Daten können Sie die Entitätsdaten in ein Excel-Arbeitsblatt exportieren, sie aktualisieren und die aktualisierten Daten wieder in die Datenbank importieren.
-Der CDS-Administrator ist dafür verantwortlich, alle Entitäten zu ermitteln, in denen die personenbezogenen Daten von Einzelpersonen gespeichert sind. Er muss die nachfolgenden Schritte für jede dieser Entitäten ausführen.
 
-Über die [PowerApps-Website](http://web.powerapps.com/):
+Die CDS-Administratoren sind dafür verantwortlich, alle Entitäten zu ermitteln, die personenbezogene Daten von Einzelpersonen enthalten. Für jede der Entitäten sind die folgenden Schritte auszuführen.
 
-1.  Klicken Sie auf **Daten** > **Entitäten**.
-2.  Klicken Sie auf die Entität, z.B. auf „Konto“.
-3.  Klicken Sie auf die Option **Daten**.
-4.  Klicken Sie auf das Symbol **Daten exportieren**.
-5.  Klicken Sie auf das Symbol **In Excel öffnen** (nach Beendigung des Exports).
-6.  Klicken Sie im Excel-Arbeitsblatt auf **Bearbeiten aktivieren**, und aktualisieren Sie die personenbezogenen Daten.
-7.  **Speichern** Sie Ihr aktualisiertes Arbeitsblatt (verwenden Sie hierzu die Option **Speichern unter**, damit Ihnen der Speicherort der Datei bekannt ist).
+Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
+
+1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
+
+    ![PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+
+2. Klicken oder tippen Sie wie unten gezeigt in der Liste der Entitäten auf eine Entität (z.B. auf die Entität „Account“).
+
+    ![Liste mit den Details zu PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+
+3. Klicken oder tippen sie auf die Registerkarte **Daten**. Es wird eine Liste mit Datensätzen für die Entität angezeigt.
 
     ![PowerApps-Legacykontodaten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
 
-8.  Notwendige Aktualisierungen an den personenbezogenen Daten vornehmen
-9.  Aktualisierungen speichern
-10. Klicken Sie im Formular „Daten“ > „Entitäten“ > „Konto“ auf das Symbol „Daten importieren“.
-11. Klicken Sie auf Feld „Suche“.
-12. Wählen Sie die Datei aus, die Ihre Aktualisierungen enthält.
-13. Klicken Sie auf das Feld „Öffnen“.
-14. Klicken Sie auf die Schaltfläche „Importieren“.
+4. Klicken oder tippen Sie auf **Daten exportieren**.
+
+5. Klicken oder tippen Sie auf **In Excel öffnen**, sobald der Export abgeschlossen ist, und klicken oder tippen Sie anschließend auf **Bearbeiten aktivieren**.
+
+6. Klicken oder tippen Sie in der Menüleiste auf **Datei**, klicken oder tippen Sie auf **Speichern unter...**, und wählen Sie dann einen Speicherort aus, an dem die Datei gespeichert werden soll.
+
+7. Nehmen Sie die notwendigen Aktualisierungen an den personenbezogenen Daten vor, und speichern Sie das Arbeitsblatt.
+
+10. Kehren Sie in PowerApps zur Registerkarte **Daten** zurück, und klicken oder tippen Sie auf **Daten importieren**.
+
+11. Klicken Sie auf **Suchen**, und wählen Sie dann die gerade aktualisierte Excel-Arbeitsmappe aus, und öffnen Sie diese.
+
+12. klicken Sie auf **Importieren**.
 
 ### <a name="export"></a>Exportieren
+Sie können personenbezogene Daten über jede Entität in ein Excel-Arbeitsblatt exportieren.
 
-Sie können personenbezogene Daten über jede Entität in einem Excel-Arbeitsblatt anzeigen oder bearbeiten.
+Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
 
-Über die [PowerApps-Website](http://web.powerapps.com/):
+1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
 
-1.  Navigieren Sie zu **Daten** > **Entitäten**.
-2.  Wählen Sie die **Entität** aus, deren Daten Sie anzeigen und exportieren möchten.
-3.  Klicken Sie auf die Option **Daten**.
-4.  Klicken Sie auf das Symbol **Daten exportieren**. Dieser Export wird im Hintergrund ausgeführt. Sie werden benachrichtigt, sobald er beendet ist.
-5. Klicken Sie auf das Symbol „In Excel öffnen“, um die exportierten Daten anzuzeigen.
+    ![PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+
+2. Klicken oder tippen Sie wie unten gezeigt in der Liste der Entitäten auf die Entität, die Sie exportieren und anzeigen möchten (z.B. auf die Entität „Account“).
+
+    ![Liste mit den Details zu PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+
+3. Klicken oder tippen sie auf die Registerkarte **Daten**. Es wird eine Liste mit Datensätzen für die Entität angezeigt.
+
+    ![PowerApps-Legacykontodaten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+
+4. Klicken oder tippen Sie auf **Daten exportieren**.
+
+    Dieser Export wird im Hintergrund ausgeführt. Sie werden benachrichtigt, sobald er beendet ist.
+
+5. Klicken oder tippen Sie auf **In Excel öffnen**, um die exportierten Daten anzuzeigen.
 
 ### <a name="delete"></a>Löschen
-Sie können personenbezogene Daten, die in Entitäten gespeichert sind, über die Funktion „Daten exportieren/importieren“ löschen.
+Sie können personenbezogene Daten, die in Entitäten gespeichert sind, über das Feature „Daten exportieren/importieren“ löschen.
 
-Der CDS-Administrator ist dafür verantwortlich, alle Entitäten zu ermitteln, die personenbezogene Daten von Einzelpersonen enthalten. Für jede der Entitäten sind die folgenden Schritte wiederholt auszuführen.
+Die CDS-Administratoren sind dafür verantwortlich, alle Entitäten zu ermitteln, die personenbezogene Daten von Einzelpersonen enthalten. Für jede der Entitäten sind die folgenden Schritte auszuführen.
 
-Über die [PowerApps-Website](http://web.powerapps.com/):
+Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
 
-1.  Klicken Sie auf **Daten** > **Entitäten**.
-2.  Scrollen Sie in der Liste **Entität** nach unten, und suchen Sie die Entität, aus der die personenbezogenen Daten entfernt werden sollen.
-3.  Klicken Sie auf die Entität.
-4.  Klicken Sie auf die Option **Daten**.
-5.  Klicken Sie auf das Symbol **Daten exportieren**.
-6.  Klicken Sie auf das Symbol **In Excel öffnen** (nach Beendigung des Exports).
-7.  **Aktivieren Sie die Bearbeitung** auf dem Excel-Arbeitsblatt.
-8.  **Speichern** Sie Ihr aktualisiertes Arbeitsblatt (verwenden Sie hierzu die Option „Speichern unter“, damit Ihnen der Speicherort der Datei bekannt ist).
-9.  Löschen Sie die Zeile(n) aus den Datensätzen mit den personenbezogenen Daten, die entfernt werden sollen.
-10. Aktualisierungen speichern
-11. Klicken Sie im Formular **Entitäten** auf das Symbol **Daten importieren**.
-12. Klicken Sie auf das Feld **Suche**.
-13. Wählen Sie die Datei aus, die Ihre Aktualisierungen enthält.
-14. Klicken Sie auf das Feld **Öffnen**.
-15. Klicken Sie auf die Schaltfläche „Importieren“.
+1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
+
+    ![PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
+
+2. Klicken oder tippen Sie wie unten gezeigt in der Liste der Entitäten auf die Entität, aus der Sie personenbezogene Daten entfernen möchten (z.B. die Entität „Account“).
+
+    ![Liste mit den Details zu PowerApps-Legacyentitäten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-details-list.png)
+
+3. Klicken oder tippen sie auf die Registerkarte **Daten**. Es wird eine Liste mit Datensätzen für die Entität angezeigt.
+
+    ![PowerApps-Legacykontodaten](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-account-data.png)
+
+4. Klicken oder tippen Sie auf **Daten exportieren**.
+
+5. Klicken oder tippen Sie auf **In Excel öffnen**, sobald der Export abgeschlossen ist, und klicken oder tippen Sie anschließend auf **Bearbeiten aktivieren**.
+
+6. Klicken oder tippen Sie in der Menüleiste auf **Datei**, klicken oder tippen Sie auf **Speichern unter...**, und wählen Sie dann einen Speicherort aus, an dem die Datei gespeichert werden soll.
+
+7. Löschen Sie die Zeilen, die personenbezogene Daten enthalten, die Sie aus der Entität entfernen möchten, und speichern Sie anschließend das Arbeitsblatt.
+
+10. Kehren Sie in PowerApps zur Registerkarte **Daten** zurück, und klicken oder tippen Sie auf **Daten importieren**.
+
+11. Klicken Sie auf **Suchen**, und wählen Sie dann die gerade aktualisierte Excel-Arbeitsmappe aus, und öffnen Sie diese.
+
+12. klicken Sie auf **Importieren**.

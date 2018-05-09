@@ -1,25 +1,22 @@
 ---
 title: 'Steuerelement für Bewertungen: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Steuerelement für Bewertungen
-services: ''
-suite: powerapps
 documentationcenter: na
 author: fikaradz
-manager: anneta
+manager: kfile
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: reference
+ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 40f826a47c7ba447cc159c0ecf9c335603484a98
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
+ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rating-control-in-powerapps"></a>Steuerelement für Bewertungen in PowerApps
 Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen Anzahl, die Sie festlegen, angeben können.
@@ -101,16 +98,18 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **RatingFill** und **[Fill](properties-color-border.md)**
 
-Dies ist ein Zusatz zu den Standardanforderungen für Farbkontraste.
+Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
-> [!NOTE]
+
+    > [!NOTE]
 > Das **Bewertungs**-Steuerelement wird von der Sprachausgabe wie ein Optionsfeld behandelt.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 * Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
 * Wenn es zu viele Sterne gibt, sollten Sie ein anderes Steuerelement verwenden. Die Navigation mit der Tastatur kann mühsam sein, und bei einem Touchscreen ist es kompliziert, eine genaue Auswahl zu treffen.
-> [!NOTE]
+
+    > [!NOTE]
 > Für das**Bewertungs**-Steuerelement können die gleichen Tastenkombinationen wie für Optionsfelder verwendet werden.
