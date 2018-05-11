@@ -7,31 +7,26 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: 4878f2de3bf023b9bf1c190a3695cb8ed1bc56b3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 7c171b155e077f8e765268d3cb6838e5989d8a00
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. In den Kommentaren unter diesem Thema können Sie gerne weitere Themen vorschlagen.
 
 ## <a name="upcoming-webinars"></a>Anstehende Webinare ##
-**Deep Dive | Using PowerApps for Business Process Management (BPM) by Dawid van Heerden** (Deep Dive | Verwenden von PowerApps für die Verwaltung von Geschäftsprozessen mit Dawid van Heerden)
-<br>von Audrie Gordon und Dawid van Heerden
-<br>*24. April, 10:00 Uhr PST, 12:00 Uhr EST*
-
-PowerApps eignet sich hervorragend, um Geschäftsanwendungen SCHNELL zu erstellen. Dieses Video veranschaulicht, wie Sie durch die Verwendung von einer einzigen Plattform Geschäftsprozesse mit mehreren Schritten optimieren, die verschiedene Rollen, Schritte und Routingoptionen umfassen.
-
-[Klicken Sie hier, um am 23. April live dabei zu sein](https://www.youtube.com/watch?v=Jj3hPkAf5KU)
-
-**Model Driven App Components Part 1 | Managing Entities and Data Imports (Modellgesteuerte Anwendungskomponenten, Teil 1: Verwalten von Entitäten und Datenimporte)**
+**Webinarreihe zu modellgesteuerte Anwendungen, Teil 1: Verwalten von Entitäten und Datenimporte**
 <br>Referenten: Audrie Gordon und Clay Wesener
 <br>*1. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
 
 Zusammen mit Clay Wesener vom PowerApps-Team führen Sie die einzelnen Schritte zum Erstellen einer CDS for Apps-Datenbank aus. Dabei erfahren Sie, wie Sie Entitäten und Felder erstellen und zwischen diesen navigieren. Zusätzlich lernen Sie, auf welche Standardlösungen Sie zurückgreifen können. 
 
-Dieses Webinar ist der erste Teil einer dreiteiligen Webinarreihe: Teil 1: Entitäten Teil 2: Formulare und Ansichten Teil 3: Diagramme und Dashboards
+Dies ist Teil 1 einer dreiteiligen Reihe:
+<br>**Teil 1: Entitäten**
+<br>Teil 2: Formulare und Ansichten
+<br>Teil 3: Diagramme und Dashboards
 
 Dieses Webinar wird empfohlen, wenn Sie erfahren möchten, wie Sie Standardentitäten und -felder wiederverwenden und in wenigen Augenblicken eigene Szenarios erstellen können.
 
@@ -41,25 +36,33 @@ Dieses Webinar wird empfohlen, wenn Sie erfahren möchten, wie Sie Standardentit
 <br>von Audrie Gordon und Laura Rodgers
 <br>*14. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
 
-Laura Rogers von IW Mentor trainiert seit Jahren Produktions-Apps für Unternehmen und stellt diese bereit. Wir haben alle viel von ihr gelernt, vor allem diejenigen, die mit SharePoint arbeiten. In diesem Webinar spricht Laura über die Best Practices und gelernten Lektionen beim Erstellen von Produktions-Apps mit PowerApps und der Geschäftsanwendungsplattform. Außerdem zeigt sie die Demo einer besonderen Produktions-App zum Nachverfolgen von Rechnungen und Maßnahmen. Verpassen Sie es nicht! Website von IW Mentor: https://www.iwmentor.com/
+Laura Rogers von IW Mentor trainiert seit Jahren Produktions-Apps für Unternehmen und stellt diese bereit. Wir haben alle viel von ihr gelernt, vor allem diejenigen, die mit SharePoint arbeiten. In diesem Webinar spricht Laura über die Best Practices und gelernten Lektionen beim Erstellen von Produktions-Apps mit PowerApps und der Geschäftsanwendungsplattform. Außerdem führt sie eine praktische Produktions-App zum Nachverfolgen von Rechnungen und Maßnahmen vor. Verpassen Sie es nicht! Website von IW Mentor: https://www.iwmentor.com/
 
 [Klicken Sie hier, um am 14. Mai live dabei zu sein](https://www.youtube.com/watch?v=I50GtV9w7Os)
 
-**Model Driven App Components Part 2 | Creating Forms and Views (Modellgesteuerte Anwendungskomponenten, Teil 2: Erstellen von Formularen und Ansichten)**
+**Webinarreihe zu modellgesteuerte Anwendungen, Teil 2: Erstellen von Formularen und Ansichten**
 <br>Referenten: Audrie Gordon und Clay Wesener
 <br>*15. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
 
 In dieser Webinarreihe erhalten Ersteller von Apps zahlreiche nützliche Informationen zum Entwerfen einfacher und komplexer Szenarios für Formulare. Dabei lernen Sie, wie Sie mit dem neuen Forms Designer Formulare erstellen, die für die modellgesteuerte App aus Teil 1 erforderlich sind. Anees stellt dazu Formularkomponente wie z.B. Registerkarten, Abschnitte und Felder vor. Außerdem präsentiert er Best Practices zur Integration der Geschäftslogik und von Filtern. 
 
-Dieses Webinar ist der erste Teil einer dreiteiligen Webinarreihe: Teil 1: Entitäten Teil 2: Formulare und Ansichten Teil 3: Diagramme und Dashboards
+Dies ist Teil 2 einer dreiteiligen Reihe:
+<br>Teil 1: Entitäten
+<br>**Teil 2: Formulare und Ansichten**
+<br>Teil 3: Diagramme und Dashboards
 
 [Klicken Sie hier, um am 15. Mai live dabei zu sein](https://www.youtube.com/watch?v=v7VoX-V2ek4).
 
-**Model Driven App Components Part 3 | Exploring Charts and Dashboards (Modellgesteuerte Anwendungskomponenten, Teil 3: Verwenden von Diagrammen und Dashboards)**
+**Webinarreihe zu modellgesteuerte Anwendungen, Teil 3: Verwenden von Diagrammen und Dashboards**
 <br>Referenten: Audrie Gordon und Clay Wesener
 <br>*29. Mai, 10:00 Uhr PST, 12:00 Uhr EST*
 
-PowerApps bietet durch umfassende Ansichten und Dashboardfunktionen einen Ansatz zur Berichterstellung, der sich aus unterschiedlichen Komponenten zusammensetzt. Der letzte Teil unserer Webinarreihe befasst sich mit hilfreichen Diagrammen und Dashboards, mit denen Sie die in den vorherigen Teilen entwickelte Lösung optimieren und modernisieren. Das Ergebnis ist eine App, die einen echten Mehrwert bietet.
+PowerApps bietet durch umfassende Ansichten und Dashboardfunktionen einen Ansatz zur Berichterstellung, der sich aus unterschiedlichen Komponenten zusammensetzt. Der letzte Teil unserer Webinarreihe befasst sich mit hilfreichen Diagrammen und Dashboards, mit denen Sie die in den vorherigen Teilen entwickelte Lösung optimieren und modernisieren. 
+
+Dies ist Teil 3 einer dreiteiligen Reihe:
+<br>Teil 1: Entitäten
+<br>Teil 2: Formulare und Ansichten
+<br>**Teil 3: Diagramme und Dashboards**
 
 [Klicken Sie hier, um am 29. Mai live dabei zu sein](https://www.youtube.com/watch?v=kJ5eTWh7Hyg).
 
@@ -99,6 +102,12 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Getting Started with Model Driven Apps** (Erste Schritte mit modellgesteuerten Apps)
 <br>von Adrian Orth [Jetzt ansehen](https://www.youtube.com/watch?v=buDDSzJTgns)
 
+### <a name="model-driven-apps"></a>Modellgesteuerte Apps ###
+**Komponenten modellgesteuerter Apps | Einführung in modellgesteuerte Apps**
+<br>von Charles Sterling & Adrian Orth [Jetzt ansehen](https://www.youtube.com/watch?v=buDDSzJTgns)
+
+**Komponenten modellgesteuerter Apps | Erste Schritte mit modellgesteuerten Vorlagen**
+<br>von Charles Sterling & Casey Burke [Jetzt ansehen](https://www.youtube.com/watch?v=FShakkXKiS8)
 
 ### <a name="pro-topics"></a>Expertenthemen ###
 **Deploying your PowerApps applications (Bereitstellen von PowerApps-Anwendungen)**
@@ -159,6 +168,9 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 
 **Deep Dive | PowerApps-Analysen zum Durchklicken von Vivek Bavishi**
 <br>von Vivek Bavishi und Audrie Gordon [Jetzt ansehen](https://www.youtube.com/watch?v=OM-rlhKJFTA)
+
+ **Deep Dive | Using PowerApps for Business Process Management (BPM) by Dawid van Heerden** (Deep Dive | Verwenden von PowerApps für die Verwaltung von Geschäftsprozessen mit Dawid van Heerden)
+<br>von Dawid van Heerden [Jetzt ansehen](https://www.youtube.com/watch?v=Jj3hPkAf5KU)
 
 
 ### <a name="connector-series"></a>Connector-Reihe ###

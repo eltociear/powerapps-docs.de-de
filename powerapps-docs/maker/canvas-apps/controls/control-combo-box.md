@@ -12,11 +12,11 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 4fde158bbca9d132801236f418c8a7652444728e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1a790627ad1dbd1bebecca84cb41ee29dcf148dd
+ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -41,6 +41,8 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 **SelectMultiple** – Legt fest, ob der Benutzer ein einzelnes Element oder mehrere Elemente auswählen kann.
 
 **IsSearchable** – Legt fest, ob der Benutzer vor der Auswahl nach Elementen suchen kann.
+
+**SearchFields**: Die Datenfelder der Datenquelle, die durchsucht werden, wenn Benutzer Text eingeben.  Um mehrere Felder zu durchsuchen, legen Sie Folgendes fest: ComboBox1.SearchFields = ["MyFirstColumn", "MySecondColumn"]
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
