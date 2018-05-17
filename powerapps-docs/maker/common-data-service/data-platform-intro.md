@@ -1,25 +1,21 @@
 ---
 title: Was ist Common Data Service für Apps? | Microsoft-Dokumentation
 description: Einführung in Common Data Service (CDS) für Apps, Entitäten und serverseitige Logik
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: 0f829548f8d2066d36fc722fa616aa388ccb1a69
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: a2dea7da0cc87ad016d5eff6e04b9e03e66341db
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>Was ist Common Data Service für Apps?
-Mit CDS für Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendung verwendet werden. Die Daten in CDS für Apps werden in mehreren Standardentitäten gespeichert. Eine *Entität* ist eine Gruppe von Datensätzen, die ähnlich wie eine Tabelle in einer Datenbank zum Speichern von Daten verwendet wird. CDS für Apps beinhaltet einen grundlegenden Satz an Standardentitäten, die gängige Szenarios abdecken. Sie können aber auch benutzerdefinierte Entitäten erstellen, die auf Ihre Organisation zugeschnitten sind, und diese mithilfe von Power Query mit Daten auffüllen. App-Entwickler können dann mit PowerApps umfangreiche Anwendungen mit diesen Daten erstellen.
+Mit CDS für Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendung verwendet werden. Die Daten in CDS für Apps werden in mehreren Standardentitäten gespeichert. Eine *Entität* ist eine Gruppe von Datensätzen, die ähnlich wie eine Tabelle in einer Datenbank zum Speichern von Daten verwendet wird. CDS für Apps bieten einen grundlegenden Satz von Standardentitäten, die gängige Szenarien abdecken. Sie können aber auch benutzerdefinierte Entitäten erstellen, die auf Ihre Organisation zugeschnitten sind, und diese mithilfe von Power Query mit Daten auffüllen. App-Entwickler können dann mit PowerApps umfangreiche Anwendungen mit diesen Daten erstellen.
 
 Informationen zum Erwerb eines Plans für die Verwendung von CDS für Apps finden Sie unter [Pricing Info (Preise)](../../administrator/pricing-billing-skus.md).
 
@@ -60,4 +56,4 @@ Einstieg in CDS für Apps:
 * [Verwenden Sie Power Query](./data-platform-cds-newentity-pq.md), um eine Verbindung mit einer Onlinedatenquelle oder einer lokalen Datenquelle herzustellen, und importieren Sie diese direkt in CDS für Apps.
 
 ## <a name="privacy-notice"></a>Hinweis zum Datenschutz
-Mit dem allgemeinen Datenmodell in Microsoft PowerApps erfasst und speichert Microsoft benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen. Wir verwenden dieses Wissen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die Ersteller erstellen, helfen uns dabei, Szenarios zu verstehen, die in der Microsoft PowerApps-Community häufig vorkommen und in Lücken in der Abdeckung der Standardentität des Diensts ermittelt werden, z.B. Schemas im Zusammenhang mit Organisationen. Microsoft nutzt die Daten in den Datenbanktabellen nicht, die mit diesen Entitäten verbunden sind, und greift auch nicht auf diese zu. Sie werden auch nicht außerhalb der Region repliziert, in der die Datenbank bereitgestellt wird. Beachten Sie jedoch, dass die benutzerdefinierten Entitäts- und Feldnamen möglicherweise über Regionen hinweg repliziert werden können und unter Einhaltung unserer Richtlinien für die Datenaufbewahrung gelöscht werden. Microsoft ist bestrebt, zu Ihrer Privatsphäre beizutragen, so wie ausführlich in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.
+Mit dem allgemeinen Datenmodell in Microsoft PowerApps erfasst und speichert Microsoft benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen. Wir verwenden dieses Wissen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die Ersteller erstellen, helfen uns dabei, Szenarios zu verstehen, die in der Microsoft PowerApps-Community häufig vorkommen und Lücken in der Abdeckung der Standardentität des Diensts offenlegen, z.B. Schemas im Zusammenhang mit Organisationen. Microsoft nutzt die Daten in den Datenbanktabellen nicht, die mit diesen Entitäten verbunden sind, und greift auch nicht auf diese zu. Sie werden auch nicht außerhalb der Region repliziert, in der die Datenbank bereitgestellt wird. Beachten Sie jedoch, dass die benutzerdefinierten Entitäts- und Feldnamen möglicherweise über Regionen hinweg repliziert werden können und unter Einhaltung unserer Richtlinien für die Datenaufbewahrung gelöscht werden. Microsoft ist bestrebt, zu Ihrer Privatsphäre beizutragen, so wie ausführlich in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.

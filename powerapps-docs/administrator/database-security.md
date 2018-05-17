@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 425600830a64652df7084a0222c02273a1607818
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
+ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="configure-environment-security"></a>Konfigurieren der Sicherheit von Umgebungen
 Der Common Data Service verwendet ein rollenbasiertes Sicherheitsmodell, das den sicheren Zugriff auf die Datenbank unterstützt. In diesem Thema wird erläutert, wie die Sicherheitsartefakte erstellt werden, die Sie zum Schützen von Apps benötigen. Die Benutzerrollen steuern den Laufzeitzugriff auf Daten und sind getrennt von den Umgebungsrollen, die die Umgebungsadministratoren und Umgebungsersteller regeln. Einen Überblick über die Umgebungen finden Sie unter [Environments overview (Überblick über Umgebungen)](environments-overview.md).
 
-## <a name="assign-security-roles-to-users"></a>Zuweisen von Sicherheitsrollen an Benutzer
+## <a name="assign-security-roles-to-users"></a>Zuweisen von Sicherheitsrollen für Benutzer
 Sicherheitsrollen steuern über mehrere Zugriffsebenen und Berechtigungen den Zugriff auf Daten durch den Benutzer. Mithilfe der verschiedenen Zugriffsebenen und Berechtigungen, die einer bestimmten Sicherheitsrolle zugeordnet sind, werden die Datenansicht für den Benutzer und die Interaktionen des Benutzers mit diesen Daten eingeschränkt.
 
 Ein Umgebungsadministrator kann folgende Schritte im [PowerApps Admin Center][1] durchführen, um einem Benutzer oder einer Sicherheitsgruppe eine Umgebungsrolle zuzuweisen:
@@ -35,22 +35,30 @@ Ein Umgebungsadministrator kann folgende Schritte im [PowerApps Admin Center][1]
 
 2. Klicken Sie auf die Registerkarte **Sicherheit**.
 
-3. Klicken Sie auf den Link, um die Umgebungsrollen in Dynamics 365 zu verwalten.
+3. Zeigen Sie an, ob der Benutzer bereits in der Umgebung vorhanden ist, indem Sie **Liste der Benutzer in der Umgebung anzeigen** auswählen.
+    
+    ![](./media/database-security/security-viewuser.png)
 
-    ![](./media/environment-admin/Security-Link-D365.png)
+4. Falls kein Benutzer vorhanden ist, können Sie den Benutzer über das PowerApps Admin Center hinzufügen. Fügen Sie den Benutzer hinzu, indem Sie die E-Mail-Adresse des Benutzers in Ihrer Organisation angeben und **Benutzer hinzufügen** auswählen.
 
-4. Wählen Sie den Benutzer aus der Benutzerliste in der Umgebung aus.
+    ![](./media/database-security/security-adduser.png)
+
+    Warten Sie einige Minuten, um zu prüfen, ob der Benutzer in der Liste der Benutzer in der Umgebung verfügbar ist.
+  
+5. Wählen Sie den Benutzer aus der Benutzerliste in der Umgebung aus.
 
     ![](./media/environment-admin/D365-Select-User.png)
 
-5. Weisen Sie dem Benutzer die Rolle zu.
+6. Weisen Sie dem Benutzer die Rolle zu.
 
     ![](./media/environment-admin/D365-Assign-Role.png)
 
     > [!NOTE]
     > Derzeit können Rollen nur Benutzern zugewiesen werden. In Zukunft sollen auch Sicherheitsgruppen Rollen zugewiesen werden können.
 
-6. Klicken Sie auf **OK**, um die Zuweisungen auf die Umgebungsrolle zu aktualisieren.
+7. Klicken Sie auf **OK**, um die Zuweisungen auf die Umgebungsrolle zu aktualisieren.
+
+
 
 
 ## <a name="predefined-security-roles"></a>Vordefinierte Sicherheitsrollen
@@ -59,10 +67,10 @@ Die PowerApps-Umgebung umfasst vordefinierte Sicherheitsrollen, die häufig verw
 |Sicherheitsrolle  |*Datenbankberechtigungen  |Beschreibung |
 |---------|---------|---------|
 |Systemadministrator     |  Erstellen, lesen, schreiben, anpassen und Sicherheitsrollen       | Verfügt über umfassende Berechtigungen zum Anpassen oder Verwalten der Umgebung, einschließlich dem Erstellen, Verändern und Zuweisen von Sicherheitsrollen. Kann alle Daten in der Umgebung abrufen. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Anpassungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization).        |
-|Systemanpasser     | Erstellen (selbst), lesen (selbst), schreiben (selbst), löschen (selbst), anpassen         | Verfügt über umfassende Berechtigungen zum Anpassen der Umgebung. Kann jedoch nur eigene Einträge zu Umgebungsentitäten abrufen. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Anpassungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization).        |
+|Systemanpasser     | Erstellen (selbst), Lesen (selbst), Schreiben (selbst), Löschen (selbst), Anpassen         | Verfügt über umfassende Berechtigungen zum Anpassen der Umgebung. Kann jedoch nur eigene Datensätze zu Umgebungsentitäten abrufen. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Anpassungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization).        |
 |Umgebungsersteller     |  Keine       | Kann mithilfe von Microsoft Flow neue Ressourcen erstellen, die einer Umgebung zugewiesen sind, einschließlich Apps, Verbindungen, benutzerdefinierter APIs, Gateways und Workflows. Verfügt jedoch nicht über Berechtigungen zum Zugreifen auf Daten innerhalb einer Umgebung. Weitere Informationen finden Sie unter [Environments overview (Übersicht zu Umgebungen)](https://powerapps.microsoft.com/blog/powerapps-environments/).        |
-|Common Data Service-Benutzer     |  Lesen, erstellen (selbst), schreiben (selbst), löschen (selbst)       | Kann eine App innerhalb einer Umgebung ausführen und häufig verwendete Aufgaben für eigene Einträge durchführen.        |
-|Delegat     | Im Auftrag eines anderen Benutzers handeln        | Ermöglicht es, als anderer Benutzer oder mit einer anderen Identität Code auszuführen.  Wird in der Regel mit einer anderen Sicherheitsrolle verwendet, damit auf Einträge zugegriffen werden kann. Weitere Informationen finden Sie unter [Annehmen der Identität eines anderen Benutzers](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user).        |
+|Common Data Service-Benutzer     |  Lesen, Erstellen (selbst), Schreiben (selbst), Löschen (selbst)       | Kann eine App innerhalb einer Umgebung ausführen und häufig verwendete Aufgaben für eigene Datensätze durchführen.        |
+|Delegat     | Im Auftrag eines anderen Benutzers handeln        | Ermöglicht es, als anderer Benutzer oder mit einer anderen Identität Code auszuführen.  Wird in der Regel mit einer anderen Sicherheitsrolle verwendet, damit auf Datensätze zugegriffen werden kann. Weitere Informationen finden Sie unter [Annehmen der Identität eines anderen Benutzers](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user).        |
 
 *Die Berechtigungen gelten global, sofern keine anderen Angaben gemacht werden.
 
@@ -73,7 +81,7 @@ Die PowerApps-Umgebung umfasst vordefinierte Sicherheitsrollen, die häufig verw
 
 ## <a name="create-or-configure-a-custom-security-role"></a>Erstellen oder Konfigurieren einer benutzerdefinierten Sicherheitsrolle
 Wenn Ihre App auf einer benutzerdefinierten Entität basiert, müssen Berechtigungen explizit angegeben werden, bevor Benutzer an der App arbeiten können. Dazu können Sie einen der folgenden Schritte ausführen.
-- Erweitern Sie eine bereits vorhandene vordefinierte Sicherheitsrolle um Berechtigungen auf Einträge, die auf der benutzerdefinierten Entität basieren.
+- Erweitern Sie eine bereits vorhandene vordefinierte Sicherheitsrolle um Berechtigungen für Datensätze, die auf der benutzerdefinierten Entität basieren.
 - Erstellen Sie eine benutzerdefinierte Sicherheitsrolle zum Verwalten von Berechtigungen für Benutzer der App.
 
 Die Umgebung verwaltet möglicherweise die Einträge, die von mehreren Apps verwendet wird. Sie benötigen unter Umständen mehrere Sicherheitsrollen, um mit anderen Berechtigungen auf die Daten zugreifen zu können. Z.B.:

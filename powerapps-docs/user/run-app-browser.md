@@ -1,25 +1,18 @@
 ---
 title: Schnellstart zum Ausführen von Apps in einem Webbrowser | Microsoft-Dokumentation
 description: In diesem Schnellstart erfahren Sie, wie Sie Apps in einem Webbrowser ausführen.
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-user
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: 265061b8432bc33a8c60b1b268b52c49af4e65b1
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Schnellstart: Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
@@ -51,7 +44,7 @@ Sie können die URL einer App als Lesezeichen in Ihrem Browser speichern und die
 ![](./media/run-app-browser/web-login.png)
 
 ## <a name="connect-to-data"></a>Herstellen einer Datenverbindung
-Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal aufgefordert.
+Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal dazu aufgefordert.
 
 ![Verbindung](./media/run-app-browser/app-connection.png)
 

@@ -7,11 +7,11 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 04/24/2018
 ms.author: anneta
-ms.openlocfilehash: 3138969cc51d0d0964692d4c53101b6a145ba1cf
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
 In diesem Tutorial passen Sie den Katalog an und nehmen andere Änderungen an einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen:
@@ -33,16 +33,18 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
-    ![PowerApps-Startseite](./media/customize-layout-sharepoint/sign-in.png)
+    [![PowerApps-Startseite](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
 
 1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol (**...** ) für sie und dann **Bearbeiten** aus.
 
+    ![App zur Bearbeitung öffnen](./media/customize-layout-sharepoint/open-app.png)
+
 ## <a name="change-the-layout"></a>Ändern des Layouts
-1. Wählen Sie im Bildschirm zum Durchsuchen den Katalog durch Klicken oder Tippen auf ein beliebiges Element mit Ausnahme des oberen in der Liste der Konten aus.
+1. Klicken Sie im linken Navigationsbereich auf **BrowseGallery1**.
 
     Wenn der Katalog ausgewählt ist, umgibt ihn ein Auswahlfeld mit Ziehpunkten.
 
-    ![Ausgewählter Katalog](./media/customize-layout-sharepoint/select-gallery.png)
+    ![Katalog auswählen](media/customize-layout-sharepoint/select-gallery-1.png)
 
 1. Wählen Sie in der Nähe des rechten Rands **Konten** aus, um den Bereich **Daten** zu öffnen.
 
@@ -56,7 +58,7 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Öffnen Sie im Bereich **Daten** die Liste der Optionen für den Titel.
+1. Öffnen Sie im Bereich **Daten** die Liste der Optionen für **Titel2**.
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/show-title-options.png)
 
@@ -66,7 +68,7 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 
     ![Endgültiger Katalog](./media/customize-layout-sharepoint/final-gallery.png)
 
-## <a name="change-the-sort-and-search-columns"></a>Ändern der Sortier- und Suchspalten
+## <a name="change-sort-and-search-columns"></a>Sortier- und Suchspalten ändern
 1. Wählen Sie den Katalog wie im vorherigen Abschnitt beschrieben aus.
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-title.png)
@@ -88,7 +90,7 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 
     Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
 
-## <a name="test-sorting-and-searching"></a>Testen von Sortieren und Suchen
+### <a name="test-sorting-and-searching"></a>Testen von Sortieren und Suchen
 1. Öffnen Sie den Vorschaumodus durch Drücken von F5 (oder Auswahl der Wiedergabeschaltfläche in der oberen rechten Ecke).
 
     ![Öffnen des Vorschaumodus](./media/customize-layout-sharepoint/open-preview.png)

@@ -1,25 +1,18 @@
 ---
 title: 'Schnellstart: Erstellen einer Umgebung | Microsoft-Dokumentation'
 description: In diesem Schnellstart erhalten Sie Informationen zum Erstellen einer Umgebung.
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: skjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: quickstart
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: a9138c636d70ea4701cbf685c3d7c7965c0e8469
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 322886a485a863d5ebf505ba2d1f5763dcfea60e
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-create-an-environment"></a>Schnellstart: Erstellen einer Umgebung
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Sie dient außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. Für jeden Mandanten erstellt PowerApps automatisch eine Standardumgebung, die von allen Benutzern dieses Mandanten gemeinsam verwendet wird.

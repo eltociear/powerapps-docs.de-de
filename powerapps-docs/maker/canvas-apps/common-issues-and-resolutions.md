@@ -1,6 +1,6 @@
 ---
 title: Häufige Probleme und Lösungen für PowerApps | Microsoft-Dokumentation
-description: Erfahren Sie mehr über PowerApps-Probleme und -Lösungen
+description: Eine Liste häufiger Probleme und Lösungen für PowerApps.
 documentationcenter: na
 author: skjerland
 manager: kfile
@@ -10,16 +10,23 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 04/12/2018
+ms.date: 05/03/2018
 ms.author: sharik
-ms.openlocfilehash: 369bbc445d54152f5b6319922d79a58c9b79121c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: b37672c4b78cf097eb49a05306ecf3eb8311476f
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
+Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von PowerApps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
+
 ## <a name="recently-addedchanged"></a>Kürzlich hinzugefügt/geändert
+1. **Kombinationsfeld-Steuerelemente in Katalogen**
+
+    Wenn Sie ein Steuerelement des Typs **Kombinationsfeld** innerhalb eines Katalogs verwenden, werden die ausgewählten Optionen nicht beibehalten, sobald der Benutzer durch den Katalog scrollt. Dies ist kein Problem, wenn Sie ein Steuerelement des Typs **Kombinationsfeld** in einem Katalog verwenden, der Scrollen nicht unterstützt. Eine Problemumgehung ist derzeit nicht verfügbar.
+
+
 1. **Verwenden eines benutzerdefinierten Bilds als App-Symbol**
 
     In PowerApps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [PowerApps Studio für Web](https://web.powerapps.com), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in PowerApps Studio für Windows enthalten ist und die Hintergrundfarbe anpassen.

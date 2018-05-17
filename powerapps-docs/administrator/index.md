@@ -1,23 +1,18 @@
 ---
 title: Die Rolle eines PowerApps-Administrators – Übersicht | Microsoft-Dokumentation
 description: Übersicht über die Einführung von PowerApps und die Rolle eines PowerApps-Administrators
-services: ''
-suite: powerapps
-documentationcenter: na
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
+ms.component: pa-admin
 ms.topic: overview
 ms.date: 04/27/2018
 ms.author: sharik
-ms.openlocfilehash: d7a8f05ac806f6ef149dafbdca40ef8b25f80f4e
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 0a2557ecd1da6c23d01883239df72a2c6ee8f3cc
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>Welche Rolle spielt ein PowerApps-Administrator?
 Die Verwaltung von PowerApps, Microsoft Flow und Common Data Service (CDS) erfolgt über das [PowerApps Admin Center](https://admin.powerapps.com).

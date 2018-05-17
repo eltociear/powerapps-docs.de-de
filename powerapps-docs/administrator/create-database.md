@@ -1,27 +1,22 @@
 ---
-title: Erstellen einer Common Data Service-Datenbank | Microsoft-Dokumentation
-description: Erstellen Sie eine Common Data Service-Datenbank.
+title: Erstellen einer Common Data Service-Datenbank (CDS) für Apps | Microsoft-Dokumentation
+description: Exemplarische Vorgehensweise zur Erstellung einer Common Data Service-Datenbank (CDS) für Apps
 services: powerapps
-documentationcenter: na
 author: manasmams
-manager: kfend
-editor: ''
-tags: ''
+manager: kfile
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: c32be4dd25da1c2267043b061102b2714a109cc5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 3343e8cd81e23d4938466d12ddca2e0a85dc12c8
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="create-a-common-data-service-database"></a>Erstellen einer Common Data Service-Datenbank
-Mithilfe von Common Data Service als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von Common Data Service finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
+# <a name="create-a-common-data-service-for-apps-database"></a>Erstellen einer Common Data Service-Datenbank für Apps
+Mithilfe von Common Data Service für Apps als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von CDS für Apps finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
 
 Es gibt verschiedene Möglichkeiten zum Erstellen einer Datenbank:
 
@@ -45,7 +40,7 @@ Es gibt verschiedene Möglichkeiten zum Erstellen einer Datenbank:
 
 
 
-## <a name="create-a-database-in-the-entities-pane-of-powerappscom"></a>Erstellen einer Datenbank im Bereich „Entitäten“ von powerapps.com
+## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>Erstellen einer Datenbank im Bereich „Entitäten“ von PowerApps
 1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
 2. Klicken Sie auf **Datenbank erstellen**, um die Datenbank zu erstellen.

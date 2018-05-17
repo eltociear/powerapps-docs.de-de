@@ -1,25 +1,18 @@
 ---
-title: Übersicht zum Finden und Ausführen von Apps | Microsoft-Dokumentation
-description: Übersicht zum Finden und Ausführen von Apps
-services: powerapps
-suite: powerapps
-documentationcenter: na
-author: skjerland
+title: Wie kann ich Apps finden und ausführen? | Microsoft-Dokumentation
+description: Übersicht zum Suchen und Ausführen von PowerApps-Apps
+author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-user
+ms.topic: overview
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: cc1483fbaffaac51f3c0999996cb3f91fac9e64a
-ms.sourcegitcommit: 4710a56d308efe67fe60a7688143e61f5e5f2b44
+ms.openlocfilehash: 484f6efb0c10bfa5a1d0e5ccdb0939422ddaf835
+ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="how-do-i-find-and-run-apps"></a>Wie kann ich Apps finden und ausführen?
 App-Entwickler können benutzerdefinierte task- und rollenbasierte *Canvas*-Apps erstellen, die an Ihre Bedürfnisse angepasst sind – unabhängig davon, ob Sie ein Mitarbeiter im Außendienst oder ein Doktor in einem Krankenhaus sind. Entwickler von Canvas-Apps können beinahe alle Bestandteile einer Canvas-App anpassen und eine Verbindung mit mehreren Datenquellen herstellen, um Benutzer beim Abschließen von Aufgaben mit einem Fokus zu unterstützen.

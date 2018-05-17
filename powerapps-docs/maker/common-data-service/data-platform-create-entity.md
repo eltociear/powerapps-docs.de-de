@@ -1,23 +1,18 @@
 ---
 title: 'Schnellstart: Erstellen einer benutzerdefinierten Entität | Microsoft-Dokumentation'
 description: In diesem Schnellstartartikel erhalten Sie Informationen zum Erstellen einer benutzerdefinierten Entität in PowerApps.
-services: ''
-suite: powerapps
 author: SKjerland
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: quickstart
 ms.component: cds
+ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: 397fdea9f5257cf5a1062867d45a53d592a0909c
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 55ebd94fb0c895a64323e948d421c758c6af7cc8
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Schnellstart: Erstellen einer benutzerdefinierten Entität
 Mit einer *Entität* werden in PowerApps die Informationen definiert, die Sie in Form von Datensätzen nachverfolgen möchten. Diese enthalten üblicherweise Eigenschaften wie den Firmennamen, den Standort, die Produkte, die E-Mail-Adresse und die Telefonnummer. Sie können diese Daten dann abrufen, indem Sie eine App entwickeln, die auf die Entität verweist. PowerApps stellt vorkonfigurierte Standardentitäten zur Verfügung, die für typische Szenarios in einer Organisation (beispielsweise das Nachverfolgen von Terminen) verwendet werden können. In einigen Fällen ist es aber möglicherweise erforderlich, benutzerdefinierte Entitäten zu erstellen, mit denen organisationsspezifische Daten gespeichert werden können.

@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: d77bc3c90b16fae60fb0daf78376beaa31d67098
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 66b3183f6b1215fc0de2a763da2388698501a9b7
+ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="understand-variables-in-powerapps"></a>Grundlegendes zu Variablen in PowerApps
 Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, fragen Sie sich einfach: **Wie würde ich in Excel verfahren?**
@@ -70,7 +70,7 @@ Das Erstellen von Apps mithilfe von Formeln hat viele Vorteile:
 * Sie wissen genau, wo Sie suchen müssen, um zu erfahren, woher der Text in **TextBox1** stammt: die Formel in der **[Text](controls/properties-core.md)**-Eigenschaft.  Es gibt keine andere Möglichkeit, den Text dieses Steuerelements zu beeinflussen.  In einem herkömmlichen Programmiertool könnte jeder Ereignishandler und jede Unterroutine überall im Programm den Wert des Bezeichners ändern.  Dadurch kann es schwieriger sein, einzugrenzen, wann und wo eine Variable geändert wurde.
 * Wenn der Benutzer ein Schieberegler-Steuerelement ändert und es sich dann noch mal anders überlegt, kann er den Schieberegler wieder auf den ursprünglichen Wert zurücksetzen.  Und es ist, als ob nichts geändert worden wäre: Die Anwendung zeigt die gleichen Steuerelementwerte wie vorher an.  Das Experimentieren und Fragen nach „Was wäre wenn“ hat keine Folgen, genauso wenig wie in Excel.  
 
-Im Allgemeinen sind Sie bessergestellt, wenn Sie durch das Verwenden einer Formel einen Effekt erzielen können. Lassen Sie das Formelmodul in PowerApps für Sie arbeiten.  
+Im Allgemeinen sind Sie bessergestellt, wenn Sie durch das Verwenden einer Formel einen Effekt erzielen können. Lassen Sie die Formel-Engine in PowerApps für Sie arbeiten.  
 
 ## <a name="know-when-to-use-variables"></a>Wann es sinnvoll ist, Variablen zu verwenden
 Passen Sie Ihren einfachen Addierer an, sodass er sich wie eine traditionelle Rechenmaschine mit einer laufenden Summe verhält. Wenn Sie eine **Add**-Schaltfläche (Hinzufügen) auswählen, fügen Sie eine Zahl zur laufenden Summe hinzu. Wenn Sie eine **Clear**-Schaltfläche (Löschen) auswählen, setzen Sie die laufende Summe auf 0 (null) zurück.
@@ -257,5 +257,5 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 12. Drücken Sie erneut F5, um die Vorschau aufzurufen, geben Sie Zahlen im Textsteuerelement ein, und wählen Sie Schaltflächen aus.  Wählen Sie die Schaltfläche **Save** aus.  Schließen Sie die App, und laden Sie sie neu. Wählen Sie die Schaltfläche **Load** aus, um die Sammlung neu zu laden.  
     
     > [!NOTE]
-    > **SaveData** und **LoadData** funktionieren nicht, wenn sie in einem Webbrowser ausgeführt werden. Sie müssen PowerApps Studio für Windows oder PowerApps Mobile verwenden.
+    > **SaveData** und **LoadData** funktionieren in PowerApps Studio nicht, in PowerApps Mobile dagegen schon.
 

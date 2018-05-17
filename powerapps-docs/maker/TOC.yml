@@ -226,16 +226,6 @@
       items:
         - name: Erstellen einer Entität
           href: ./common-data-service/data-platform-create-entity.md
-        - name: Benutzerdefinierte Entität aus Daten erstellen
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
-        - name: Erstellen mehrerer Optionen
-          href: ./common-data-service/custom-picklists.md
-        - name: Eine Beziehung erstellen
-          href: ./common-data-service/data-platform-entity-lookup.md
-        - name: Erstellen einer Geschäftsregel
-          href: ./common-data-service/data-platform-create-business-rule.md
-        - name: Eine benutzerdefinierte Entität löschen
-          href: ./common-data-service/data-platform-delete-entity.md
     - name: Lernprogramme
       items:
         - name: Erstellen benutzerdefinierter Entitäten mit Komponenten
@@ -250,6 +240,16 @@
       items:
         - name: Verwalten von benutzerdefinierten Feldern in einer Entität
           href: ./common-data-service/data-platform-manage-fields.md
+        - name: Benutzerdefinierte Entität aus Daten erstellen
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: Erstellen mehrerer Optionen
+          href: ./common-data-service/custom-picklists.md
+        - name: Erstellen einer Beziehung zwischen Entitäten
+          href: ./common-data-service/data-platform-entity-lookup.md
+        - name: Erstellen einer Geschäftsregel
+          href: ./common-data-service/data-platform-create-business-rule.md
+        - name: Eine benutzerdefinierte Entität löschen
+          href: ./common-data-service/data-platform-delete-entity.md
     - name: Referenz
       items:
         - name: 'Eingeschränkte Entitäten, die Dynamics 365-Lizenzen erfordern'

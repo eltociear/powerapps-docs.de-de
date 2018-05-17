@@ -1,25 +1,18 @@
 ---
 title: Verwalten von Richtlinien zur Verhinderung von Datenverlust (DLP) | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Verwalten von Richtlinien zur Verhinderung von Datenverlust für PowerApps.
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: f02e9023deb2bc0d11e9d94414f9e78651cab2b5
-ms.sourcegitcommit: aa2d0166dccb38100183c093f293233b46f3669d
+ms.openlocfilehash: 0215e013f6879ea8d04de8fe74e077c983370bff
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>Verwalten von Richtlinien zur Verhinderung von Datenverlust (DLP)
 Die Daten einer Organisation sind wichtig für deren Erfolg. Die Daten müssen zur Verwendung bereitstehen, damit Entscheidungen schnell getroffen werden können. Sie müssen jedoch auch geschützt werden, damit sie nicht für Parteien freigegeben werden können, die keinen Zugriff darauf haben sollten. Mithilfe von PowerApps können Sie zum Schutz dieser Daten Richtlinien zur Verhinderung von Datenverlust (DLP) erstellen und erzwingen, in denen definiert wird, für welche Verbraucherconnectors bestimmte Geschäftsdaten freigegeben werden können. Beispielsweise möchte eine Organisation, die PowerApps verwendet, möglicherweise nicht, dass ihre in SharePoint gespeicherten Unternehmensdaten automatisch in Ihrem Twitter-Feed veröffentlicht werden.
