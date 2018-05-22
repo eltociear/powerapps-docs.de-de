@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: sharik
-ms.openlocfilehash: 322886a485a863d5ebf505ba2d1f5763dcfea60e
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 50a3819d4a659d48e1372487c5b50dc8295ee398
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="quickstart-create-an-environment"></a>Schnellstart: Erstellen einer Umgebung
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Sie dient außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. Für jeden Mandanten erstellt PowerApps automatisch eine Standardumgebung, die von allen Benutzern dieses Mandanten gemeinsam verwendet wird.
@@ -27,7 +27,7 @@ In diesem Schnellstart erfahren Sie, wie Sie eine Umgebung sowie eine Datenbank 
  * PowerApps-Umgebungsadministratorberechtigungen, globale Office 365-Administratorberechtigungen oder Azure Active Directory-Mandantenadministratorberechtigungen. Weitere Informationen finden Sie unter [Environments administration in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md).
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>Anmelden im PowerApps Admin Center
-Melden Sie sich unter [https://admin.powerapps.com]([https://admin.powerapps.com) im Admin Center an.
+Melden Sie sich unter [https://admin.powerapps.com](https://admin.powerapps.com) im Admin Center an.
 
 ## <a name="create-an-environment-and-database"></a>Erstellen einer Umgebung und einer Datenbank
 1. Klicken oder tippen Sie im Navigationsbereich erst auf **Umgebungen** und anschließend auf **Neue Umgebung**.

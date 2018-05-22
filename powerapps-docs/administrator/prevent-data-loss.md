@@ -8,11 +8,11 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 0215e013f6879ea8d04de8fe74e077c983370bff
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 158abc3969090e081df41b6b52036d71b6949150
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>Verwalten von Richtlinien zur Verhinderung von Datenverlust (DLP)
 Die Daten einer Organisation sind wichtig für deren Erfolg. Die Daten müssen zur Verwendung bereitstehen, damit Entscheidungen schnell getroffen werden können. Sie müssen jedoch auch geschützt werden, damit sie nicht für Parteien freigegeben werden können, die keinen Zugriff darauf haben sollten. Mithilfe von PowerApps können Sie zum Schutz dieser Daten Richtlinien zur Verhinderung von Datenverlust (DLP) erstellen und erzwingen, in denen definiert wird, für welche Verbraucherconnectors bestimmte Geschäftsdaten freigegeben werden können. Beispielsweise möchte eine Organisation, die PowerApps verwendet, möglicherweise nicht, dass ihre in SharePoint gespeicherten Unternehmensdaten automatisch in Ihrem Twitter-Feed veröffentlicht werden.
@@ -22,7 +22,7 @@ Damit Sie DLP-Richtlinien erstellen, bearbeiten oder löschen können, müssen S
 Anleitungen zum Erstellen einer DLP-Richtlinie finden Sie unter [Quickstart: Create a data loss prevention (DLP) policy (Schnellstart: Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP))](create-dlp-policy.md).
 
 ## <a name="find-a-dlp-policy"></a>Suchen einer DLP-Richtlinie
-1. Melden Sie sich unter [https://admin.poweraps.com]([https://admin.powerapps.com) im Admin Center an.
+1. Melden Sie sich unter [https://admin.powerapps.com]([https://admin.powerapps.com) im Admin Center an.
 2. Klicken oder tippen Sie im Navigationsbereich auf **Datenrichtlinien**. Wenn Sie über eine lange Liste von Richtlinien verfügen, können Sie über das **Suchfeld** einzelne DLP-Richtlinien suchen.
 
     ![](./media/prevent-data-loss/data-policies.png)

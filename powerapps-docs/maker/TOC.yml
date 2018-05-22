@@ -250,6 +250,10 @@
           href: ./common-data-service/data-platform-create-business-rule.md
         - name: Eine benutzerdefinierte Entität löschen
           href: ./common-data-service/data-platform-delete-entity.md
+        - name: Öffnen von Entitätsdaten in Excel
+          href: ./common-data-service/data-platform-excel-addin.md
+        - name: Einen Power BI-Bericht erstellen
+          href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Referenz
       items:
         - name: 'Eingeschränkte Entitäten, die Dynamics 365-Lizenzen erfordern'
