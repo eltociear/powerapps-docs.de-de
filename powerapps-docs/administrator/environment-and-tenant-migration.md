@@ -1,26 +1,18 @@
 ---
 title: Migrieren von Apps zwischen Umgebungen und Mandanten | Microsoft-Dokumentation
-description: Migrieren von Apps zwischen Umgebungen und Mandanten
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: Exemplarische Vorgehensweise zum Migrieren von PowerApps-Apps zwischen Umgebungen und Mandanten
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
+ms-topic: conceptual
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/21/2018
+ms.component: pa-admin
+ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a63f525a44d1b617ba872dce7936fc97b151967
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migration der Umgebungs- und Mandanten-App durch Paketerstellung
 Erfahren Sie, wie Sie Ressourcen mithilfe von Paketerstellung von einer Umgebung zu einer anderen migrieren. Diese Umgebungen können innerhalb des gleichen Mandanten oder mandantenübergreifend sein.
@@ -96,36 +88,36 @@ Sie können sämtliche Anpassungen von Entitäten oder Optionen und alle modellg
 
 1. Wählen Sie unter http://web.powerapps.com den Designmodus **Model-driven (preview)** (Modellgesteuert (Vorschau)) in Ihrer Umgebung aus.
 
-  ![Auswählen des Designmodus „Modellgesteuert“](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![Auswählen des Designmodus „Modellgesteuert“](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. Klicken Sie im Navigationsbereich links auf **Erweitert**, um den Projektmappen-Explorer für die Standardlösung dieser Umgebung zu starten.
 
-  ![„Erweitert“ auswählen](./media/environment-and-tenant-migration/select-advanced.png)
+    ![„Erweitert“ auswählen](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. Klicken Sie auf **Projektmappe exportieren**, und schließen Sie den erforderlichen Schritt ab.  Innerhalb von wenigen Sekunden startet der Download der Lösungspaketdatei.
 
-  ![Auswählen von „Exportieren“](./media/environment-and-tenant-migration/select-export-solution.png)
+    ![Auswählen von „Exportieren“](./media/environment-and-tenant-migration/select-export-solution.png)
 
 ## <a name="importing-cds-customization-and-model-driven-apps"></a>Importieren von CDS-Anpassungen und modellgesteuerten Apps
 Sie können CDS-Lösungspakete derzeit leider nur manuell importieren. Es wird an einer Verbesserung dieses Vorgangs gearbeitet.
 
 1. Wählen Sie unter http://web.powerapps.com den Designmodus **Model-driven (preview)** (Modellgesteuert (Vorschau)) in Ihrer Umgebung aus.
 
-  ![Auswählen des Designmodus „Modellgesteuert“](./media/environment-and-tenant-migration/select-model-driven.png)
+    ![Auswählen des Designmodus „Modellgesteuert“](./media/environment-and-tenant-migration/select-model-driven.png)
 
 2. Klicken Sie im Navigationsbereich links auf **Erweitert**, um den Projektmappen-Explorer für die Standardlösung dieser Umgebung zu starten.
 
-  ![„Erweitert“ auswählen](./media/environment-and-tenant-migration/select-advanced.png)
+    ![„Erweitert“ auswählen](./media/environment-and-tenant-migration/select-advanced.png)
 
 3. Kopieren Sie die URL aus Ihrem Browser, nehmen Sie die folgenden Änderungen vor, und navigieren Sie dann zu der neuen URL in Ihrem Browser:
 
-  - Aktuelle URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
+    * Aktuelle URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
 
-    ![URL bearbeiten](./media/environment-and-tenant-migration/edit-url.png)
+        ![URL bearbeiten](./media/environment-and-tenant-migration/edit-url.png)
 
-  - Neue URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * Neue URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-      ![Paket auswählen](./media/environment-and-tenant-migration/select-package.png)
+        ![Paket auswählen](./media/environment-and-tenant-migration/select-package.png)
 
 4. Wählen Sie die CDS-Lösungspaketdatei aus, die Sie importieren möchten, und beenden Sie den Assistenten.
 

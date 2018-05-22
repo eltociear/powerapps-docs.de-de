@@ -1,26 +1,18 @@
 ---
 title: Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten | Microsoft-Dokumentation
-description: Exemplarische Vorgehensweise zum Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: Hier finden Sie eine exemplarische Vorgehensweise zum Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) zum Exportieren von PowerApps-Kundendaten.
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 97f5a6a970e07f9908c02074ef97234b58a52894
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 1b9318bcf4624af48e6be95fd22c12c14bf75dff
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten
 Das „Recht auf Datenübertragbarkeit“ ermöglicht einer betroffenen Person die Anforderung einer Kopie ihrer personenbezogenen Daten in elektronischem Format (d.h. in einem „strukturierten, häufig verwendeten, maschinenlesbaren und interoperablen Format“), die an einen anderen Verantwortlichen übertragen werden kann:

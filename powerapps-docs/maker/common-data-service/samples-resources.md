@@ -1,29 +1,25 @@
 ---
-title: Beispiele und andere Ressourcen für Common Data Service | Microsoft-Dokumentation
-description: Hier finden Sie Beispiele und weitere Ressourcen, die Sie zum Erstellen von Apps verwenden können.
-documentationcenter: na
+title: Beispiele und andere Ressourcen für Common Data Service für Apps | Microsoft-Dokumentation
+description: Hier finden Sie Beispiele und weitere Ressourcen, die Sie zum Erstellen von Apps in PowerApps verwenden können.
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/17/2018
+ms.topic: conceptual
+ms.date: 03/17/2018
 ms.author: clwesene
-ms.openlocfilehash: 90453f3f560d063cadc2ef331e9de62d0406e1ff
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 405cafabd57ea234d5202076060ee0987b6904db
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="samples-and-other-resources--for-the-common-data-service"></a>Beispiele und andere Ressourcen für Common Data Service
+# <a name="samples-and-other-resources-for-common-data-service-for-apps"></a>Beispiele und andere Ressourcen für Common Data Service für Apps
 ## <a name="samples"></a>Beispiele
-Es stehen verschiedene Beispiele bereit, in denen Common Data Service verwendet wird. Wählen Sie zur Suche nach diesen Beispielen auf [powerapps.com](https://web.powerapps.com) im Navigationsbereich **Start** aus.
+Es stehen verschiedene Beispiele bereit, in denen Common Data Service (CDS) für Apps verwendet wird. Um diese Beispiele zu suchen, wechseln Sie zu [powerapps.com](https://web.powerapps.com) und wählen im Navigationsbereich die Option **Home** aus.
 
 ## <a name="videos"></a>Videos
-Weitere Videos stehen auf YouTube über die Kanäle [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) und [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) zur Verfügung.
+Videos stehen auf YouTube über die Kanäle [MS PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg) und [Microsoft Ignite](https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg) zur Verfügung.
 
 ## <a name="blog-posts"></a>Blogbeiträge
 Im [PowerApps-Blog](https://powerapps.microsoft.com/blog/) finden Sie Beiträge mit Vorgehensweisen.
@@ -32,5 +28,5 @@ Im [PowerApps-Blog](https://powerapps.microsoft.com/blog/) finden Sie Beiträge 
 Viele Sitzungen der Microsoft Ignite-Konferenz wurden aufgezeichnet und stehen unter [Microsoft Ignite On-Demand](https://myignite.microsoft.com/videos) zur Verfügung. Suchen Sie nach „PowerApps“ und „Common Data Model“.
 
 ## <a name="overview"></a>Übersicht
-Weitere Informationen zu Common Data Service und Common Data Model finden Sie in der [Übersicht zu Common Data Service und Common Data Model](https://docs.microsoft.com/common-data-service/entity-reference/security-model).
+Weitere Informationen zu CDS für Apps und zu Common Data Model finden Sie in der [Übersicht zu Common Data Service für Apps und zu Common Data Model](https://docs.microsoft.com/common-data-service/entity-reference/security-model).
 

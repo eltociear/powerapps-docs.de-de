@@ -1,26 +1,18 @@
 ---
-title: PowerShell-Unterstützung | Microsoft-Dokumentation
-description: Beschreibung der verschiedenen PowerShell-Cmdlets und eine Schritt-für-Schritt-Anleitung zu deren Installation und Ausführung
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: PowerShell-Unterstützung (Vorschau) | Microsoft-Dokumentation
+description: Hier finden Sie eine Beschreibung der verschiedenen PowerShell-Cmdlets und eine exemplarische Vorgehensweise zu deren Installation und Ausführung.
 author: jamesol-msft
 manager: kfile
-editor: ''
-tags: ''
-ms-topic: article
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: reference
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 69508b2127c5c919db4a334045c6eed3bb9374af
-ms.sourcegitcommit: 0a781b50a8551f2e61c22725ef1c43ba4fdf752a
+ms.openlocfilehash: 953efbabcdce55ac58376f927d5e399e69a40974
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerShell-Unterstützung für PowerApps (Vorschau)
 Durch die Einführung der Vorschauversion der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
@@ -93,7 +85,7 @@ Zur Ausführung der Verwaltungsvorgänge in den Cmdlets für Administratoren ben
 
 * eine kostenpflichtige PowerApps Plan 2-Lizenz oder eine PowerApps Plan 2-Testlizenz. Sie können sich unter [http://web.powerapps.com/trial](http://web.powerapps.com/trial) für eine 30-tägige Testlizenz registrieren. Testlizenzen können verlängert werden, wenn sie abgelaufen sind.
 
-* die Berechtigungen [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. (Beachten Sie, das Umgebungsadministratoren nur Zugriff auf die Umgebungen und Umgebungsressourcen haben, für die sie über die Berechtigungen verfügen.)
+* Die Berechtigungen [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. (Beachten Sie, das Umgebungsadministratoren nur Zugriff auf die Umgebungen und Umgebungsressourcen haben, für die sie über die Berechtigungen verfügen.)
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
 | Zweck | Cmdlets

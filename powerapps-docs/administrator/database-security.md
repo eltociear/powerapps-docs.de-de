@@ -1,28 +1,21 @@
 ---
 title: Konfigurieren der Sicherheit von Umgebungen | Microsoft-Dokumentation
 description: In diesem Artikel wird das Konfigurieren der Umgebungssicherheit erläutert.
-services: powerapps
-suite: powerapps
-documentationcenter: na
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: f90f7bcdf28388366015a5f5f981e0ab4118f162
-ms.sourcegitcommit: aebffb0bba30e786dd288fb1b79a8bcc4e0bdd9c
+ms.openlocfilehash: d9bd70acaacbbeda98c14337035a233b7c70c181
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="configure-environment-security"></a>Konfigurieren der Sicherheit von Umgebungen
-Der Common Data Service verwendet ein rollenbasiertes Sicherheitsmodell, das den sicheren Zugriff auf die Datenbank unterstützt. In diesem Thema wird erläutert, wie die Sicherheitsartefakte erstellt werden, die Sie zum Schützen von Apps benötigen. Die Benutzerrollen steuern den Laufzeitzugriff auf Daten und sind getrennt von den Umgebungsrollen, die die Umgebungsadministratoren und Umgebungsersteller regeln. Einen Überblick über die Umgebungen finden Sie unter [Environments overview (Überblick über Umgebungen)](environments-overview.md).
+Common Data Service (CDS) für Apps verwendet ein rollenbasiertes Sicherheitsmodell, das den sicheren Zugriff auf die Datenbank unterstützt. In diesem Thema wird erläutert, wie die Sicherheitsartefakte erstellt werden, die Sie zum Schützen von Apps benötigen. Die Benutzerrollen steuern den Laufzeitzugriff auf Daten und sind getrennt von den Umgebungsrollen, die die Umgebungsadministratoren und Umgebungsersteller regeln. Einen Überblick über die Umgebungen finden Sie unter [Environments overview (Überblick über Umgebungen)](environments-overview.md).
 
 ## <a name="assign-security-roles-to-users"></a>Zuweisen von Sicherheitsrollen für Benutzer
 Sicherheitsrollen steuern über mehrere Zugriffsebenen und Berechtigungen den Zugriff auf Daten durch den Benutzer. Mithilfe der verschiedenen Zugriffsebenen und Berechtigungen, die einer bestimmten Sicherheitsrolle zugeordnet sind, werden die Datenansicht für den Benutzer und die Interaktionen des Benutzers mit diesen Daten eingeschränkt.
@@ -58,9 +51,6 @@ Ein Umgebungsadministrator kann folgende Schritte im [PowerApps Admin Center][1]
 
 7. Klicken Sie auf **OK**, um die Zuweisungen auf die Umgebungsrolle zu aktualisieren.
 
-
-
-
 ## <a name="predefined-security-roles"></a>Vordefinierte Sicherheitsrollen
 Die PowerApps-Umgebung umfasst vordefinierte Sicherheitsrollen, die häufig verwendete Benutzeraufgaben mit Zugriffsebenen widerspiegeln, durch die nur auf die Unternehmensdaten zugegriffen werden kann, die mindestens erforderlich sind, um die App zu verwenden. Dabei handelt es sich um ein bewährtes Sicherheitsziel.
 
@@ -77,7 +67,6 @@ Die PowerApps-Umgebung umfasst vordefinierte Sicherheitsrollen, die häufig verw
 - Mit der Umgebungserstellerrolle können nicht nur Ressourcen innerhalb einer Umgebung erstellt, sondern auch die Apps, die sie in einer Umgebung erstellt haben, an andere Benutzer in Ihrer Organisation verteilt werden. Die App kann für individuelle Benutzer freigegeben werden. Weitere Informationen finden Sie unter [Freigeben von Apps in PowerApps](../maker/canvas-apps/share-app.md).
 
 - Benutzern, die Apps erstellen, die eine Verbindung mit der Datenbank herstellen, und die Entitäten und Sicherheitsrollen erstellen oder aktualisieren müssen, sollte ebenfalls die Rolle Systemanpasser sowie die Rolle Umgebungsersteller zugewiesen werden, da die Rolle Umgebungsersteller keine Berechtigungen auf die Datenbank hat.
-
 
 ## <a name="create-or-configure-a-custom-security-role"></a>Erstellen oder Konfigurieren einer benutzerdefinierten Sicherheitsrolle
 Wenn Ihre App auf einer benutzerdefinierten Entität basiert, müssen Berechtigungen explizit angegeben werden, bevor Benutzer an der App arbeiten können. Dazu können Sie einen der folgenden Schritte ausführen.

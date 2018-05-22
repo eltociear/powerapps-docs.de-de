@@ -1,29 +1,24 @@
 ---
-title: Schnellstart für Entitätsbeziehungen über das Nachschlagefeld | Microsoft-Dokumentation
-description: Schnellstart für das Erstellen einer Beziehung zwischen Entitäten durch Verwenden eines Nachschlagefelds
-documentationcenter: na
+title: Erstellen einer Beziehung zwischen Entitäten durch Verwenden eines Nachschlagefelds | Microsoft-Dokumentation
+description: Hier finden Sie Schrittanleitungen zum Erstellen einer Beziehung zwischen Entitäten in PowerApps mithilfe eines Nachschlagefelds.
 author: clwesene
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: conceptual
 ms.component: cds
-ms.date: 3/21/2018
+ms.topic: conceptual
+ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a607058d1e26f37a4bffa054d9dc148be8b6b011
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="quickstart-create-a-relationship"></a>Schnellstart: Erstellen einer Beziehung
+# <a name="create-a-relationship-between-entities"></a>Erstellen einer Beziehung zwischen Entitäten
 Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Teachers** und eine Entität **Class**, und die Entität **Class** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Teachers**, um anzuzeigen, welcher Lehrer den Kurs gibt. Sie können ein Nachschlagefeld verwenden, um Daten aus der Entität **Teachers** anzuzeigen. Dies wird häufig als Nachschlagefeld bezeichnet.
 
 ## <a name="define-a-relationship"></a>Definieren einer Beziehung
 Sie können mehrere Typen von Beziehungen zwischen zwei Entitäten (oder innerhalb einer Entität) erstellen. Jede Entität kann eine Beziehung mit mehr als einer Entität haben, und jede Entität kann mehr als eine Beziehung zu einer anderen Entität haben. Einige häufige Beziehungstypen sind folgende:
-
 
 * **n:1**: Bei diesem Beziehungstyp kann jeder Datensatz in Entität B mit mehr als einem Datensatz in Entität A übereinstimmen, jedoch kann jeder Datensatz in Entität A mit nur einem Datensatz in Entität B übereinstimmen. Beispielsweise hat jeder Kurs nur einen einzigen Kursraum. Dabei handelt es sich um die häufigste Art der Beziehung. Diese wird in der Feldliste als **Nachschlagefeld** angezeigt.
 * **1:n**: Bei diesem Beziehungstyp kann jeder Datensatz in Entität A mit mehr als einem Datensatz in Entität B übereinstimmen, jedoch kann jeder Datensatz in Entität B mit nur einem Datensatz in Entität A übereinstimmen. Beispielsweise kann ein einzelner Lehrer mehrere Kurse geben.

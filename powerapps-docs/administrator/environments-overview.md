@@ -1,25 +1,18 @@
 ---
-title: Übersicht zu Umgebungen | Microsoft-Dokumentation
-description: Definition und Verwendung von Umgebungen
-services: powerapps
-suite: powerapps
-documentationcenter: na
+title: Übersicht über Umgebungen | Microsoft-Dokumentation
+description: Erfahren Sie mehr über Umgebungen in PowerApps und ihre Verwendung.
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 4b71f931aa3e8263166d52b68ba375917405c2b8
-ms.sourcegitcommit: 078ba325480147e6e4da61e319ed53219f1c5cfc
+ms.openlocfilehash: 4973265baf701851ac5c2e8bca9da541b246c068
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="environments-overview"></a>Umgebungen – Übersicht
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Umgebungen dienen außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. In welcher Weise Sie Umgebungen nutzen, hängt von Ihrer Organisation und den Apps ab, die Sie erstellen möchten. Beispiel:

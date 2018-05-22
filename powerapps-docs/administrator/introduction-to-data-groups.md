@@ -1,27 +1,20 @@
 ---
 title: Datengruppen | Microsoft-Dokumentation
-description: Einführung in Datengruppen für Microsoft PowerApps.
-services: powerapps
-suite: powerapps
-documentationcenter: na
+description: Hier finden Sie eine exemplarische Vorgehensweise zum Verwenden von Datengruppen in PowerApps.
 author: manasmams
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.component: pa-admin
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 1adf0f4888d57b2d5636864e9bdd18e00848b9d8
-ms.sourcegitcommit: c5e3991e0e4e9f22a1e094d699f35adabfb97c6c
+ms.openlocfilehash: 8899a77d73f67a1b437a60218b3536d2989d5b8c
+ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/15/2018
 ---
-# <a name="learn-all-about-data-groups"></a>Erfahren Sie alles über Datengruppen
+# <a name="data-groups"></a>Datengruppen
 Datengruppen sind eine einfache Möglichkeit zum Kategorisieren von Diensten im Rahmen einer [Richtlinie zur Verhinderung von Datenverlust (DLP)](prevent-data-loss.md). Die zwei verfügbaren Datengruppen sind die Gruppe **Business data only** (Nur Unternehmensdaten) und die Gruppe **No business data allowed** (Keine Unternehmensdaten zugelassen). Organisationen können frei festlegen, welche Dienste in einer bestimmten Datengruppe platziert werden. Eine gute Möglichkeit zum Kategorisieren von Diensten ist, diese basierend auf der Auswirkung auf Ihre Organisation in Gruppen zu platzieren. Standardmäßig werden alle Dienste in die Datengruppe **No business data allowed** platziert. Sie verwalten die Dienste in einer Datengruppe, wenn Sie die Eigenschaften einer DLP-Richtlinie vom Admin Center aus erstellen oder bearbeiten.
 
 ## <a name="how-data-is-shared-between-data-groups"></a>So werden Daten zwischen Datengruppen geteilt
