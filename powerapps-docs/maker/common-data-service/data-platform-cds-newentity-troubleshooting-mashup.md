@@ -6,13 +6,13 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 08/18/2017
+ms.date: 05/16/2018
 ms.author: millopis
-ms.openlocfilehash: d71349c90748b1820cd3430613e0925498ce9793
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: b89d7a59406d19759b84c34dbda84b98b10d5e58
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="troubleshooting-power-query"></a>Problembehandlung in Power Query
 Wenn Sie Power Query zum Erstellen einer benutzerdefinierten Entität verwenden, die Daten aus externen Quellen enthält, wird möglicherweise folgender Fehler angezeigt:
@@ -41,4 +41,29 @@ Eine Alternative besteht darin, dass der Mandantenadministrator Power Query sein
    * New-AzureRmADServicePrincipal -ApplicationId f3b07414-6bf4-46e6-b63f-56941f3f4128
 
 Der Vorteil dieses Ansatzes (im Gegensatz zur mandantenweiten Lösung) besteht darin, dass dieser Ansatz sehr zielgerichtet ist. Dabei wird lediglich der **Power Query**-Dienstprinzipal bereitgestellt, für den Mandanten werden jedoch keine sonstigen Änderungen an Berechtigungen vorgenommen.
+
+## <a name="updating-personal-data"></a>Aktualisieren von persönlichen Daten
+
+Benutzer können Mashups und andere Informationen wie Abfragenamen und Mashup-Metadaten über den Abfrage-Editor und das Dialogfeld `Options`, auf das über den Abfrage-Editor zugegriffen werden kann, aktualisieren.
+
+In PowerApps erreichen Sie den Abfrage-Editor über den Bereich „Daten“. Erweitern Sie diesen, und klicken Sie dann auf das Menüelement des Bereichs „Entitäten“. Sobald dies geöffnet wird, klicken Sie auf das Menü mit den Auslassungspunkten „...“, und wählen Sie „Abfragen bearbeiten“ aus. Klicken Sie anschließend auf die `Options`-Schaltfläche auf dem Menüband und dann auf die Schaltfläche `Export Diagnostics`.
+
+
+## <a name="deleting-personal-data"></a>Löschen von persönlichen Daten
+
+Der Großteil der Daten wird automatisch innerhalb von 30 Tagen gelöscht. Dies gilt nicht für Daten und Metadaten um Mashups: Der Benutzer muss alle Mashups über PowerApps entfernen. Alle zugeordneten Daten und Metadaten werden innerhalb von 30 Tagen gelöscht.
+
+Mashups können durch Entfernen der Datenintegratorprojekte aus PowerApps entfernt werden. Diese Projekte können von der Namensregisterkarte entfernt werden, indem Sie auf die Schaltfläche „...“ klicken und die Option `Delete` auswählen.
+
+Wenn Sie einen Mashup über das Feature „Neue Entitäten aus Daten (Technische Vorschau)“ erstellt haben, können Sie ihn entfernen, indem Sie auf die Schaltfläche „...“ klicken, „Abfragen bearbeiten“ auswählen und anschließend auf dem Menüband „Optionen“ auswählen. Klicken Sie schließlich auf die Schaltfläche „Alle Abfragen entfernen“. Sobald Sie bestätigen, dass Sie Ihre Abfragen löschen möchten, werden diese gelöscht.
+
+
+## <a name="exporting-personal-data"></a>Exportieren von persönlichen Daten
+
+Benutzer können den Abfrage-Editor öffnen und dann auf die `Options`-Schaltfläche auf dem Menüband und anschließend auf die Schaltfläche `Export Diagnostics` klicken.
+
+In PowerApps erreichen Sie den Abfrage-Editor über den Bereich „Daten“. Erweitern Sie diesen, und klicken Sie dann auf das Menüelement des Bereichs „Entitäten“. Sobald dies geöffnet wird, klicken Sie auf das Menü mit den Auslassungspunkten „...“, und wählen Sie „Abfragen bearbeiten“ aus. Klicken Sie anschließend auf die `Options`-Schaltfläche auf dem Menüband und dann auf die Schaltfläche `Export Diagnostics`.
+
+Der Zugriff auf vom System generierte Protokolle bezüglich Benutzeraktionen auf der Benutzeroberfläche kann über das Azure-Portal erfolgen.
+
 

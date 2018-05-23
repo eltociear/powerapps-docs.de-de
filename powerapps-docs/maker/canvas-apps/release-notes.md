@@ -1,26 +1,21 @@
 ---
-title: Neuerungen bei PowerApps | Microsoft-Dokumentation
+title: Neuheiten | Microsoft-Dokumentation
 description: Updates für PowerApps nach Veröffentlichungsdatum
 documentationcenter: na
-author: skjerland
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
-ms.date: 04/23/2018
-ms.author: sharik
-ms.openlocfilehash: 00b80bd5b9e0953366dd58d6e3b3266ffe7956bd
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.date: 05/21/2018
+ms.author: anneta
+ms.openlocfilehash: dc4e4f9ae1cdb8cf9edf1c7a52343f6a5db1717c
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
-
 
 > [!NOTE]
 > Versionen werden über mehrere Tage eingeführt. Neue oder aktualisierte Funktionen werden möglicherweise nicht sofort angezeigt.
@@ -31,13 +26,18 @@ Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen
 
 **In Kürze:** Sobald die Features ausgeliefert werden, aktualisieren wir weiterhin die PDF-Datei zu den Versionshinweisen. Diese sind dann auch auf unserer Webseite verfügbar.
 
-## <a name="apr-23"></a>23. April
+## <a name="may-21"></a>21. Mai
+1. Ermöglichen Sie App-Benutzern, Daten aus Excel- oder CSV-Dateien zu importieren und zu exportieren, die lokal gespeichert sind, indem Sie die Features **Daten aus Excel abrufen** und **Daten exportieren** verwenden, die jetzt für upgegradete Umgebungen von Common Data Service (CDS) für Apps verfügbar sind. 
+1. Ermöglichen Sie App-Benutzern, [Entitäten in Excel zu öffnen](../common-data-service/data-platform-excel-addin.md), um Daten, die in CDS für Apps gespeichert sind, über das Excel-Add-In für PowerApps zu erstellen, zu aktualisieren und zu löschen. 
+1. [Erstellen und veröffentlichen Sie Power BI-Berichte](../common-data-service/data-platform-powerbi-connector.md), indem Sie Power BI Desktop mit der Verbindung zu CDS für Apps verwenden. 
+
+## <a name="april-23"></a>23. April
 * Laden Sie [Anlagen](controls/control-attachments.md) im Internet Explorer in benutzerdefinierten Listenformularen in SharePoint herunter.
 
-## <a name="apr-9"></a>9. April
+## <a name="april-9"></a>9. April
 * Schneiden Sie Steuerelemente, &mdash;einschließlich der Formate, Formeln und Eigenschaften&mdash;, für Apps in einem Webbrowser mit STRG+X aus, kopieren Sie sie (STRG+C), und fügen Sie sie ein (STRG+V).
 
-## <a name="mar-21"></a>21. März
+## <a name="march-21"></a>21. März
 1. Erstellen Sie [modellgesteuerte Apps](../model-driven-apps/model-driven-app-overview.md), die mit Ihrem Datenmodell und der Form Ihrer wichtigsten Geschäftsdaten und -prozesse in Common Data Service für Apps beginnt. Auf dieser Grundlage werden Formulare, Ansichten und andere Komponenten erstellt. Modellgesteuerte Apps generieren automatisch eine leistungsstarke UI, die geräteübergreifend reagiert.
 2. [Erstellen Sie eine Datenbank](../../administrator/create-database.md) für die aktuelle Version von Common Data Service für Apps in einer Umgebung.
 3. CDS für Apps enthält nun Folgendes:
@@ -49,7 +49,7 @@ Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen
     - Erfahrene Benutzer können über eine neue **OData-Web-API** auf die in CDS für Apps gespeicherten Daten zugreifen.
     - [Importieren Sie Daten](../common-data-service/data-platform-cds-newentity-pq.md) in CDS für Apps mithilfe von **Power Query**. Verwenden Sie Power Query im Web, um Daten aus mehreren Quellen direkt in CDS für Apps zu importieren.
 
-## <a name="mar-5"></a>5. März
+## <a name="march-5"></a>5. März
 1. [Anlagen](controls/control-attachments.md) in SharePoint-Listen hinzufügen (und löschen).
 2. Externe [PDF](controls/control-pdf-viewer.md)-Dateien in einem Webbrowser öffnen. (Experimentelles Feature)
 
@@ -73,15 +73,3 @@ Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen
 
 ## <a name="jan-5"></a>5. Januar
 * Verarbeiten Sie Daten direkt aus einem Power BI-Bericht oder -Dashboard, indem Sie ein [benutzerdefiniertes PowerApps-Visual (Vorschauversion)](https://powerapps.microsoft.com/blog/powerbi-powerapps-visual/) integrieren, mit dem Kontextdaten aus dem Power BI-Bericht abgerufen werden.
-
-## <a name="dec-8"></a>8. Dezember
-1. [Bedingungsvorlagen](working-with-rules.md) für Regeln leiten allgemeine Eigenschaften eines Steuerelements (wie **Text** oder **Wert**) ab.
-2. Die Anzeige des [Bestätigungsdialogfeld **Aktionen werden definiert** ](working-with-rules.md)beim Definieren von Regelaktionen kann deaktiviert werden.
-
-## <a name="nov-13"></a>13. November
-1. Wählen Sie mehrere Werte für das gleiche Feld in SharePoint-Listen aus.
-2. In SharePoint-Listen können [Anlagen angezeigt und heruntergeladen](controls/control-attachments.md) werden.
-3. PowerApps unterstützt das [Anpassen von SharePoint-Listenformularen](customize-list-form.md).
-
-## <a name="nov-10"></a>10. November
-* Sie können in einer App [Regeln umbenennen](working-with-rules.md) und anzeigen, wenn sich ein ausgewähltes Steuerelement in der Regelbedingung befindet.
