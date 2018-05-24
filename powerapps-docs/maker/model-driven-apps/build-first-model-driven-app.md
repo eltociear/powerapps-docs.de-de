@@ -12,21 +12,21 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 04/18/2018
 ms.author: matp
-ms.openlocfilehash: 3a9696a025608de3c142277da4059e7e8c5ec5ad
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: dfef87d9c85de3a8311081c3b99eaa9d072dc444
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="quickstart-build-your-first-model-driven-app-from-scratch"></a>Schnellstart: Neuerstellen Ihrer ersten modellgesteuerten App
 Das Design einer modellgesteuerten App ist ein auf Komponenten bezogener Ansatz zum Entwickeln von Apps. In diesem Schnellstart erfahren Sie, wie Sie eine modellgesteuerte App mithilfe einer der Standardentitäten erstellen, die in Ihrer [!INCLUDE [powerapps](../../includes/powerapps.md)]-Umgebung zur Verfügung stehen. 
 
 ## <a name="sign-in-to-powerapps"></a>Anmelden bei PowerApps
-Melden Sie sich bei [PowerApps](https://web.powerapps.microsoft.com/) an. Wenn Sie noch nicht über ein [!INCLUDE [powerapps](../../includes/powerapps.md)]-Konto verfügen, klicken Sie auf **Steigen Sie kostenlos ein**. 
+Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. Wenn Sie noch nicht über ein [!INCLUDE [powerapps](../../includes/powerapps.md)]-Konto verfügen, klicken Sie auf **Steigen Sie kostenlos ein**. 
 
 ## <a name="create-your-model-driven-app"></a>Erstellen der modellgesteuerten App
 
-1.  Wählen Sie die gewünschte Umgebung aus, oder wechseln Sie ins [PowerApps Admin Center](https://admin.powerapps.microsoft.com/), um eine neue zu erstellen.
+1.  Wählen Sie die gewünschte Umgebung aus, oder wechseln Sie ins [PowerApps Admin Center](https://admin.powerapps.com/), um eine neue zu erstellen.
 2.  Klicken Sie im linken Navigationsbereich auf **Model-driven** (Modellgesteuert). 
 
     ![Modellgesteuert](media/build-first-model-driven-app/choose-design-mode.png)
