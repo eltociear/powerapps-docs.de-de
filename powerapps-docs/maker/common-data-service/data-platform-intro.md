@@ -8,11 +8,11 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: sharik
-ms.openlocfilehash: a2dea7da0cc87ad016d5eff6e04b9e03e66341db
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: fb079689ef76e4ad7815b8410ecff4a475877810
+ms.sourcegitcommit: ba587b467044161d1dbcd73625b37aa52b057270
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>Was ist Common Data Service für Apps?
 Mit CDS für Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendung verwendet werden. Die Daten in CDS für Apps werden in mehreren Standardentitäten gespeichert. Eine *Entität* ist eine Gruppe von Datensätzen, die ähnlich wie eine Tabelle in einer Datenbank zum Speichern von Daten verwendet wird. CDS für Apps bieten einen grundlegenden Satz von Standardentitäten, die gängige Szenarien abdecken. Sie können aber auch benutzerdefinierte Entitäten erstellen, die auf Ihre Organisation zugeschnitten sind, und diese mithilfe von Power Query mit Daten auffüllen. App-Entwickler können dann mit PowerApps umfangreiche Anwendungen mit diesen Daten erstellen.
@@ -34,7 +34,7 @@ Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte
 
 ![Screenshot mit einer Liste von Entitäten](./media/data-platform-cds-intro/entitylist.png "Entitätsliste")
 
-Eine vollständige Liste der Entitäten finden Sie in der [Referenz zu Entitäten](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/reference/about-entity-reference).
+Eine vollständige Liste der Entitäten finden Sie in der [Referenz zu Entitäten](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/about-entity-reference).
 
 Sie können die Funktionalität der Standardentitäten erweitern, indem Sie eine oder mehrere benutzerdefinierte Entitäten zum Speichern von Informationen erstellen, die für Ihr Unternehmen einzigartig sind. Weitere Informationen finden Sie unter [Create a custom entity in the Common Data Model (Erstellen einer benutzerdefinierten Entität im Common Data Model)](create-custom-entity.md).
 
