@@ -1,18 +1,17 @@
 ---
 title: 'Schnellstart: Herunterladen einer Liste der Apps, die in Ihren Umgebungen erstellt wurden | Microsoft-Dokumentation'
 description: In diesem Schnellstart erfahren Sie, wie Sie eine Liste der Apps herunterladen können, die in Ihren Umgebungen erstellt wurden.
-author: SKjerland
-manager: kfile
+author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: sharik
-ms.openlocfilehash: a51e6b0cb8e9af517d55f7bad39fbe83a1a55098
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.author: jimh
+ms.openlocfilehash: d9c379ca95bb299c56639bb01803f45c1744d8f2
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="quickstart-download-a-list-of-apps-created-in-your-environments"></a>Schnellstart: Herunterladen einer Liste der Apps, die in Ihren Umgebungen erstellt wurden
 Wenn Sie über die Umgebungsadministratorrolle verfügen, können Sie eine Liste der Apps abrufen und herunterladen, die Sie in den Umgebungen erstellt haben, die Sie verwalten. Wenn Sie über globale Administratorberechtigungen für 365 oder über Mandandenadministratorberechtigungen für Azure Active Directory verfügen, können Sie eine Liste der Apps herunterladen, die Sie in allen Umgebungen Ihrer Organisation erstellt haben.

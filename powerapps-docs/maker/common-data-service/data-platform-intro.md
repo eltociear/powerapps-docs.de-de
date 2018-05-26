@@ -1,18 +1,18 @@
 ---
 title: Was ist Common Data Service für Apps? | Microsoft-Dokumentation
 description: Einführung in Common Data Service (CDS) für Apps, Entitäten und serverseitige Logik
-author: SKjerland
+author: Mattp123
 manager: kfile
 ms.service: powerapps
 ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
-ms.author: sharik
-ms.openlocfilehash: fb079689ef76e4ad7815b8410ecff4a475877810
-ms.sourcegitcommit: ba587b467044161d1dbcd73625b37aa52b057270
+ms.author: matp
+ms.openlocfilehash: b26f788a782e42125d6397d38b2d946f8188e475
+ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 05/26/2018
 ---
 # <a name="what-is-common-data-service-for-apps"></a>Was ist Common Data Service für Apps?
 Mit CDS für Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendung verwendet werden. Die Daten in CDS für Apps werden in mehreren Standardentitäten gespeichert. Eine *Entität* ist eine Gruppe von Datensätzen, die ähnlich wie eine Tabelle in einer Datenbank zum Speichern von Daten verwendet wird. CDS für Apps bieten einen grundlegenden Satz von Standardentitäten, die gängige Szenarien abdecken. Sie können aber auch benutzerdefinierte Entitäten erstellen, die auf Ihre Organisation zugeschnitten sind, und diese mithilfe von Power Query mit Daten auffüllen. App-Entwickler können dann mit PowerApps umfangreiche Anwendungen mit diesen Daten erstellen.
