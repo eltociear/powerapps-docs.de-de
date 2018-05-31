@@ -8,11 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: cfc120cb135c9fe6007b4dc57382a2e4ade821af
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 3e3cd3b7339303e23411f3ef977cc33db6e5e8e0
+ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34445681"
 ---
 # <a name="administer-environments-in-powerapps"></a>Verwalten von Umgebungen in PowerApps
 Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, und Umgebungen, denen Sie in den Rollen „Umgebungsadministrator“ oder „Systemadministrator“ hinzugefügt wurden, verwalten. Über das Admin Center können Sie folgende administrative Aktionen ausführen:
@@ -137,9 +138,9 @@ Ein Umgebungsadministrator kann folgende Schritte im [PowerApps Admin Center][1]
 
 4. Wenn eine Datenbank in der Umgebung erstellt wurde, gehen Sie wie folgt vor:
 
-    a. Klicken Sie auf den Link, um die Umgebungsrollen in Dynamics 365 zu verwalten.
+    a. Fügen Sie den Benutzer der Umgebung hinzu, und klicken Sie auf den Link, um dem Benutzer eine Rolle zuzuweisen.
 
-    ![](./media/environment-admin/Security-Link-D365.png)
+    ![](./media/database-security/security-adduser.png)
 
     b. Wählen Sie den Benutzer aus der Benutzerliste in der Umgebung bzw. der Instanz aus.
 

@@ -5,16 +5,27 @@ author: AFTOwen
 ms.service: powerapps
 ms.topic: tutorial
 ms.component: canvas
-ms.date: 04/24/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 7a51e2a734426973721fbcb21305f96e6ba7b222
-ms.sourcegitcommit: 99d50f9a79fe4f35ba56f365de6593abd893978e
+ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453582"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
-In diesem Tutorial passen Sie den Katalog an und nehmen andere Änderungen an einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen:
+Im Rahmen dieses Tutorials passen Sie eine Liste von Datensätzen an, die Katalog genannt wird, und nehmen andere Änderungen in einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen.
+
+Zum Beispiel entspricht der Katalog für dieses Tutorial standardmäßig der folgenden Abbildung. Die E-Mail-Adresse wird deutlicher dargestellt als andere Arten von Daten, und Benutzer können den Katalog basierend auf dem Text in dieser Adresse sortieren oder filtern:
+
+![Standardkatalog](./media/customize-layout-sharepoint/gallery-before.png)
+
+Wenn Ihre Benutzer allerdings mehr Interesse am Kontonamen als an der E-Mail-Adresse haben, konfigurieren Sie den Katalog neu, sodass basierend auf den Schlüsseldaten hervorgehoben, sortiert und gefiltert wird. Darüber hinaus ändern Sie den Titel des Standardbildschirms, um ihn von den anderen Bildschirmen der App zu unterscheiden.
+
+![Endgültiger Katalog](./media/customize-layout-sharepoint/gallery-after.png)
+
+Außerdem fügen Sie eine Scrollleiste hinzu, damit Benutzer, die weder Touchscreens noch Mausräder verwenden, den gesamten Katalog durchsuchen können.
 
 > [!div class="checklist"]
 > * Ändern des Kataloglayouts
@@ -23,9 +34,9 @@ In diesem Tutorial passen Sie den Katalog an und nehmen andere Änderungen an ei
 > * Ändern des Bildschirmtitels
 > * Anzeigen einer Scrollleiste
 
-Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus generiert wurde. Dieselben Konzepte gelten jedoch für alle Apps, die Sie in PowerApps von einer SharePoint-Liste, Excel-Tabelle oder anderen Datenquelle aus generieren. 
+Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus generiert wurde. Dieselben Konzepte gelten jedoch für jede App, die Sie in PowerApps erstellen, unabhängig davon, ob sie aus einer SharePoint-Liste, einer Excel-Tabelle oder einer anderen Datenquelle stammen.
 
-Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuerst kostenlos](https://web.powerapps.com).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 [Generieren Sie eine App](data-platform-create-app.md) aus der Entität **Konten** des Common Data Service (CDS) für Apps.
@@ -38,6 +49,8 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol (**...** ) für sie und dann **Bearbeiten** aus.
 
     ![App zur Bearbeitung öffnen](./media/customize-layout-sharepoint/open-app.png)
+
+1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
 
 ## <a name="change-the-layout"></a>Ändern des Layouts
 1. Klicken Sie im linken Navigationsbereich auf **BrowseGallery1**.
@@ -58,9 +71,11 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Öffnen Sie im Bereich **Daten** die Liste der Optionen für **Titel2**.
+1. Öffnen Sie im Bereich **Daten** die Liste der Optionen für den Titel.
 
-    ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/show-title-options.png)
+    Der Name dieses Steuerelements endet in einer Zahl, z.B. **Titel1**, die Zahl unterscheidet sich jedoch basierend auf anderen Aktionen, die Sie möglicherweise ausgeführt haben.
+
+    ![Öffnen der Liste von Optionen für die Titelbezeichnung](./media/customize-layout-sharepoint/show-title-options.png)
 
 1. Wählen Sie in der Liste der Optionen **Kontoname (Name)** aus, und schließen Sie dann den Bereich **Daten**.
 

@@ -1,25 +1,27 @@
 ---
 title: 'Schnellstart: Erstellen einer App von Common Data Service für Apps aus | Microsoft-Dokumentation'
-description: Automatisches Generieren einer App in PowerApps zum Verwalten von Daten in Common Data Service für Apps
+description: In diesem Schnellstart generieren Sie automatisch eine App in PowerApps zum Verwalten von Daten in Common Data Service für Apps
 author: AFTOwen
 ms.service: powerapps
-ms.topic: conceptual
+ms.topic: quickstart
 ms.component: canvas
-ms.date: 03/10/2018
+ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: a70145ee3db44b4ce5d58be2d7804bffb5a56369
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: a058629f08e61f7299792697234b5d346b9d0c71
+ms.sourcegitcommit: e071ef560eef01c2b250ed50cf0e82f7263d5e4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453559"
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>Schnellstart: Generieren einer App von Common Data Service für Apps aus in PowerApps
 
 In diesem Schnellstart verwenden Sie Microsoft PowerApps, um eine App basierend auf einer Liste von Beispielkonten in [Common Data Service (CDS) für Apps](../common-data-service/data-platform-intro.md) automatisch zu generieren. In dieser App können Sie alle Konten durchsuchen, Details zu einem einzelnen Konto anzeigen und ein Konto erstellen, aktualisieren oder löschen.
 
-Damit Sie diesem Schnellstart folgen können, müssen Sie [zu einer Umgebung wechseln](working-with-environments.md), in der eine Datenbank in CDS für Apps erstellt wurde, die Daten enthält und Updates zulässt. Wenn keine Umgebung dieser Art vorhanden ist, und Sie über Administratorrechte verfügen, können Sie [eine Umgebung erstellen](../../administrator/environments-administration.md#create-an-environment), die diese Anforderungen erfüllt.
+Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuerst kostenlos](https://web.powerapps.com).
 
-Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+## <a name="prerequisites"></a>Voraussetzungen
+Damit Sie diesem Schnellstart folgen können, müssen Sie [zu einer Umgebung wechseln](working-with-environments.md), in der eine Datenbank in CDS für Apps erstellt wurde, die Daten enthält und Updates zulässt. Wenn keine Umgebung dieser Art vorhanden ist, und Sie über Administratorrechte verfügen, können Sie [eine Umgebung erstellen](../../administrator/environments-administration.md#create-an-environment), die diese Anforderungen erfüllt.
 
 ## <a name="generate-an-app"></a>Eine App generieren
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und wechseln Sie gegebenenfalls die Umgebung, wie weiter oben in diesem Thema erläutert.
@@ -38,9 +40,9 @@ Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos
 
 1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
 
-Ihre App wird auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Konten angezeigt wird. Im oberen Bereich des Bildschirms werden auf einer Titelleiste Symbole für das Aktualisieren und Sortieren der Liste sowie das Erstellen eines Kontos angezeigt. Unterhalb der Titelleiste können Sie über ein Suchfeld die Liste basierend auf dem Text filtern, den Sie darin eingeben bzw. einfügen. 
+Ihre App wird auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Konten im sogenannten Katalog angezeigt wird. Am oberen Rand des Bildschirms wird eine Titelleiste mit Symbolen zum Aktualisieren und alphabetischen Sortieren der Daten im Katalog und Hinzufügen von Daten zum Katalog angezeigt. Unterhalb der Titelleiste können Sie über ein Suchfeld die Daten im Katalog filtern, indem Sie Text eingeben oder einfügen. 
 
-Standardmäßig zeigt die Liste eine E-Mail-Adresse, eine Stadt und eine ID für dieses Konto an. Sie können diese Liste, die als Katalog bezeichnet wird, jedoch anpassen, um andere Arten von Daten anzuzeigen.
+Standardmäßig zeigt der Katalog eine E-Mail-Adresse, eine Stadt und einen Kontonamen an. Sie können den Katalog an Ihre Ansprüche anpassen, sodass die Daten anders angezeigt bzw. andere Daten angezeigt werden (dies wird unter [Nächste Schritte](data-platform-create-app.md#next-steps) erläutert).
 
 ![Bildschirm zum Durchsuchen](./media/data-platform-create-app/browse-screen.png)
 
