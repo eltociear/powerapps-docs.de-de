@@ -8,10 +8,11 @@ ms.topic: quickstart
 ms.date: 03/30/2018
 ms.author: jimh
 ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552367"
 ---
 # <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>Schnellstart: Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP)
 Mithilfe von PowerApps können Sie zum Schutz von Unternehmensdaten Richtlinien zur Verhinderung von Datenverlust (DLP) erstellen und erzwingen, die definieren, für welche Verbraucherconnectors bestimmte Geschäftsdaten freigegeben werden können. Diese Richtlinien, die definieren, wie Daten freigegeben werden können, werden als Richtlinien zur Verhinderung von Datenverlust (DLP) bezeichnet. Mithilfe von DLP-Richtlinien wird sichergestellt, dass Daten in der gesamten Organisation auf einheitliche Weise verwaltet werden. Außerdem helfen sie zu vermeiden, dass wichtige Unternehmensdaten versehentlich auf Connectors wie Social Media-Websites veröffentlicht werden.
