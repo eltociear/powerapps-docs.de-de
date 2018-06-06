@@ -51,6 +51,8 @@
               href: powerapps-gdpr-delete-dsr.md
         - name: CDS für Apps-Kundendaten
           href: common-data-service-gdpr-dsr-guide.md
+        - name: Datenintegration für CDS für Apps
+          href: data-integration-gdpr-dsr-guide.md
 - name: Referenz
   items:
     - name: PowerShell-Unterstützung für PowerApps (Vorschau)
