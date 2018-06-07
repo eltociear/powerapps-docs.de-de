@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 05/01/2016
 ms.author: mblythe
 ms.openlocfilehash: 70200430b0cee7356d70795440b908a8837ba18d
-ms.sourcegitcommit: 6a75c4c499bcdbeb9d65d3a9af47dedcf900f38d
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "33078418"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:

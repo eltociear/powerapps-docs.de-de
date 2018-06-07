@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 7df5e270e92930fa494ec8a30a59d46d022fd915
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838238"
 ---
 # <a name="forall-function-in-powerapps"></a>Funktion „ForAll“ in PowerApps
 Berechnet Werte und führt Aktionen für alle [Datensätze](../working-with-tables.md#records) einer [Tabelle](../working-with-tables.md) durch.

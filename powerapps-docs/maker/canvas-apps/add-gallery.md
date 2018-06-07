@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 09/28/2017
 ms.author: sharik
 ms.openlocfilehash: 60ec1fc7f896aeb3391ed794920e987b232d09f3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31833486"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
 Zeigen Sie eine Liste mit Elementen aus einer beliebigen Datenquelle an, indem Sie der App ein **[Katalog](controls/control-gallery.md)**-Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)**-Steuerelement entsprechen.

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 09/14/2017
 ms.author: anneta
 ms.openlocfilehash: e265934336f3646f52b749ddcec5a5e734bd2c50
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828891"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Speichern und Veröffentlichen einer App in PowerApps
 Wenn Sie Änderungen an einer App speichern, veröffentlichen Sie diese automatisch nur für sich selbst und andere Benutzer, die über Berechtigungen zum Bearbeiten der App verfügen. Wenn Sie die Änderungen abgeschlossen haben, müssen Sie sie explizit veröffentlichen, um sie allen Benutzern zur Verfügung zu stellen, für die die App freigegeben ist.

@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 09/03/2016
 ms.author: anneta
 ms.openlocfilehash: 16c585f553373faee609683774e7938e8bd165f1
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31824588"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>Herstellen einer Verbindung mit SharePoint aus PowerApps
 Erstellen Sie eine Verbindung mit SharePoint Online oder lokalem SharePoint, sodass Sie eine App automatisch generieren oder von Grund auf neu erstellen können.

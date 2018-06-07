@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
 ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826267"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Datensatz aus einer Tabelle in PowerApps anzeigen, bearbeiten oder hinzufügen
 Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelement hinzufügen und konfigurieren. Wenn Sie ein Feld in einem Datensatz bearbeiten (bzw. einen Datensatz hinzufügen) und die Änderungen in einer Datenquelle speichern möchten, fügen Sie ein **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelement hinzu, und konfigurieren Sie dieses.

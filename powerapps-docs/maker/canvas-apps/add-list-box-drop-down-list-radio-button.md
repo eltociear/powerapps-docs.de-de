@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 10/23/2016
 ms.author: lonu
 ms.openlocfilehash: 1fbaf4f9d740084a1ed0d630b94d1cd41713ba03
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31825554"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern
 PowerApps bietet Mehrfachauswahl- und Einfachauswahl-Optionen; hierzu zählen ein Listenfeld, eine Dropdownliste und Optionsfelder. In diesem Thema werden diese Steuerelemente hinzugefügt, und mithilfe einer **Tabellen**-Formel werden die Listen erstellt. Wenn ein Element in der Liste ausgewählt wird, werden andere Steuerelemente aktualisiert.

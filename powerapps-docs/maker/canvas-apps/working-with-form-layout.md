@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
 ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31839152"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Grundlegendes zum Layout von Datenformularen in Microsoft PowerApps
 In PowerApps können Sie auf einfache Weise Formulare erstellen, die ansprechend aussehen und benutzerfreundlich sind. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:

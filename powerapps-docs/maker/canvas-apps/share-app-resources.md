@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 06/28/2016
 ms.author: archanan
 ms.openlocfilehash: f7943c5204dcab7c59e922bfb096f70d05b94e9b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829000"
 ---
 # <a name="share-app-resources"></a>Freigeben von App-Ressourcen
 Beachten Sie vor dem [Freigeben einer App](share-app.md) die Typen von Ressourcen, von denen sie abhängt. Dabei kann es sich z. B. um eine oder mehrere der folgenden handeln:

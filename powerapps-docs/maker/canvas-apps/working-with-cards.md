@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
 ms.openlocfilehash: 074e40dd2fc19279bef36ac91196c61b050abda3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838077"
 ---
 # <a name="understand-data-cards"></a>Grundlegendes zu Datenkarten
 **[Card](controls/control-card.md)** -Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)**. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.

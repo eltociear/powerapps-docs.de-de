@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/17/2018
 ms.author: anneta
 ms.openlocfilehash: 98162ce4d291b976c816326efc5d4c6d4d18c870
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829594"
 ---
 # <a name="customize-forms-in-powerapps"></a>Anpassen von Formularen in PowerApps
 Anpassen eines **Anzeigeformular**-Steuerelements und eines **Bearbeitungsformular**-Steuerelements, sodass die wichtigsten Daten in der intuitivsten Reihenfolge angezeigt werden, damit Benutzer die Daten leicht verstehen und aktualisieren können.

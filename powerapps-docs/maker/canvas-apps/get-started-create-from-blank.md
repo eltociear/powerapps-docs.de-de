@@ -7,10 +7,11 @@ ms.component: canvas
 ms.date: 04/23/2018
 ms.author: anneta
 ms.openlocfilehash: 29f07162ec2815398cda5bcc359f7388df261bc0
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836968"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>Neues Erstellen einer Excel-App
 Erstellen Sie Ihre eigene neue App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber erfahrene App-Entwickler können damit die beste App für ihre Anforderungen erstellen.

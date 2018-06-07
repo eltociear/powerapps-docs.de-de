@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 05/09/2017
 ms.author: mblythe
 ms.openlocfilehash: e73324d6cfce5edf7ece0350b2047dc7842373bb
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31836767"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>Entwickeln von offlinefähigen Apps mit PowerApps
 Eins der häufigsten Szenarien, denen Sie als Entwickler von mobilen Apps begegnen, besteht darin, Ihren Benutzern produktives Arbeiten in Umgebungen mit eingeschränkter Konnektivität oder ohne Konnektivität zu ermöglichen. PowerApps weist eine Reihe von Funktionen und Verhaltensweisen auf, die Sie bei der Entwicklung von Apps mit Offlinefähigkeit unterstützen. Sie haben folgende Möglichkeiten:

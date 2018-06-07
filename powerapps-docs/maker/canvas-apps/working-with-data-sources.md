@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/08/2017
 ms.author: gregli
 ms.openlocfilehash: 5e9b9ec980e6dd4aeacfef42b40fe7f52c19d558
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31838738"
 ---
 # <a name="understand-data-sources-in-powerapps"></a>Grundlegendes zu Datenquellen in PowerApps
 Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.

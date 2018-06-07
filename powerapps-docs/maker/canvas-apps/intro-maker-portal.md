@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/28/2016
 ms.author: litran
 ms.openlocfilehash: f29f75522eb01c61c3528e61018fb759980e79f9
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330213"
 ---
 # <a name="introduction-to-powerappscom"></a>Einführung in powerapps.com
 Das PowerApps-Team stellt [powerapps.com](http://web.powerapps.com) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:

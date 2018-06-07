@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/19/2018
 ms.author: anneta
 ms.openlocfilehash: 29010630412de78945d9d35212210b7ce1a8407f
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31827894"
 ---
 # <a name="create-an-app-from-a-powerapps-template"></a>Erstellen einer App aus einer PowerApps-Vorlage
 Erstellen Sie eine App automatisch auf Grundlage einer Vorlage für ein bestimmtes Szenario, z.B. das Nachverfolgen von Budgets oder das Planen von Urlauben, und führen Sie die App dann aus, um deren Standardverhalten nachvollziehen zu können.

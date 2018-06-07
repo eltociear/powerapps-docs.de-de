@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
 ms.openlocfilehash: 8ae6bd0e576abd3a4115e452b286607b5c695acb
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31834834"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
 Sie können jetzt in PowerApps [jedes SharePoint-Listenformular leicht anpassen](customize-list-form.md). In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.

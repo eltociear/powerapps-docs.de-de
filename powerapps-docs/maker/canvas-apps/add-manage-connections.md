@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/09/2017
 ms.author: lanced
 ms.openlocfilehash: 63db86984ef68571329aa953cb6bbaac505d834e
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31828371"
 ---
 # <a name="manage-your-connections-in-powerapps"></a>Verwalten der Verbindungen in PowerApps
 Stellen Sie in [powerapps.com](https://web.powerapps.com) eine Verbindung aus PowerApps mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.

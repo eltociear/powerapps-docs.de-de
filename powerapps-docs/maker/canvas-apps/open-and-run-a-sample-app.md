@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/11/2018
 ms.author: anneta
 ms.openlocfilehash: 4f1d30f9645bb49ac2d838791cb52fc071073601
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31826819"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Schnellstart: Erstellen einer Canvas-App aus einem Beispiel in PowerApps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.

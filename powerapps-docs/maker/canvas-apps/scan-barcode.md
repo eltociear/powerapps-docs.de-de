@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
 ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32328718"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>Scannen eines Barcodes in PowerApps
 Scannen Sie verschiedene Arten von Barcodes, indem Sie eine App erstellen und diese auf einem Gerät mit einer Kamera ausführen, z.B. auf einem Telefon. Die numerische Darstellung des Barcodes wird in einem **Label** (Bezeichnung) angezeigt, und Sie können diese Daten in eine Vielzahl von [Datenquellen](connections-list.md) hochladen.

@@ -12,10 +12,11 @@ ms.component: canvas
 ms.date: 11/30/2015
 ms.author: lonu
 ms.openlocfilehash: 01065fd1a12b3d55e8726582cead3d86a6e6a8ad
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32330289"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Erstellen und Aktualisieren einer Sammlung in Ihrer App
 Verwenden Sie eine Sammlung zum Speichern von Daten, die in Ihrer App verwendet werden können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen. Erstellen Sie beispielsweise eine MyImages-Sammlung mit den Abbildungen aller Produkte, die Ihr Unternehmen verkauft. In PowerApps können Sie Ihre MyImages-Sammlung hinzufügen und eine App erstellen, in der alle Abbildungen dieser Produkte angezeigt werden. Sie können aber z.B. auch eine PriceList-Sammlung erstellen, die die Produkte und Preise für jedes Produkt enthält.

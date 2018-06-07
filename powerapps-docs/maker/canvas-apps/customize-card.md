@@ -13,10 +13,11 @@ ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.openlocfilehash: aa9d5785f1c005da7c22c63bd94cb41e1a643ad3
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31829305"
 ---
 # <a name="customize-a-card-in-powerapps"></a>Anpassen einer Karte in PowerApps
 Führen Sie eine grundlegende Anpassung (ohne Entsperren einer Karte) durch, indem Sie beispielsweise das Steuerelement ändern. Erweiterte Anpassung (mit Aufheben der Sperre einer Karte), indem Sie z.B. ein Steuerelement hinzufügen, das für diese Karte standardmäßig nicht verfügbar ist.

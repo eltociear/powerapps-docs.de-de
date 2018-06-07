@@ -8,10 +8,11 @@ ms.component: canvas
 ms.date: 04/26/2018
 ms.author: anneta
 ms.openlocfilehash: d520f47393c5462f36445e4c8df81617dfddafd2
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32329822"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
