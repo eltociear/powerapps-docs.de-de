@@ -1,18 +1,18 @@
 ---
 title: Schnellstart zum Ausführen von Apps in einem Webbrowser | Microsoft-Dokumentation
 description: In diesem Schnellstart erfahren Sie, wie Sie Apps in einem Webbrowser ausführen.
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/07/2018
-ms.author: sharik
-ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.openlocfilehash: ba3b52bbbe12fad8773f09f4c753e4a55d09a6f0
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552712"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Schnellstart: Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.

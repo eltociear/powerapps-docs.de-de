@@ -1,22 +1,18 @@
 ---
 title: Übersicht über die Twitter-Verbindung | Microsoft-Dokumentation
 description: Anleitung zum Herstellen einer Verbindung mit Twitter, einige Beispiele für die erforderlichen Schritte und Auflistung aller Funktionen
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: af1cb1423ba68b6e2303422e1febac2e79574668
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: bfdd2bc0ed784b9f2302d01f2fc8c176a7d9c4bb
+ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34803556"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Herstellen einer Verbindung mit Twitter aus PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)

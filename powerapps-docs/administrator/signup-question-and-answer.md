@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
 ms.openlocfilehash: 8a734ef57a3820e38d52ad2bd87a2ab8979c0348
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168042"
 ---
 # <a name="manage-powerapps-licenses-in-your-organization"></a>Verwalten von PowerApps-Lizenzen in Ihrer Organisation
 Dieser Artikel beschreibt, wie Benutzer in Ihrer Organisation auf PowerApps zugreifen können und wie Sie den Zugriff auf den PowerApps-Dienst steuern können.

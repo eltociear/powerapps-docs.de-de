@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 07/28/2017
 ms.author: nimak
 ms.openlocfilehash: 752bea42eee356e04c2ab72d28a669ccd2771f70
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168527"
 ---
 # <a name="export-and-import-resources"></a>Ressourcen exportieren und importieren
 Wenn Sie mehrere Umgebungen erstellt haben, um die Entwicklung Ihrer Datenbank und Apps zu unterstützen , müssen Sie Änderungen von einer Umgebung in die andere Umgebung verschieben. Sie können **Ressourcen exportieren** und **Ressourcen importieren** verwenden, um Ressourcen zwischen Umgebungen zu verschieben.
