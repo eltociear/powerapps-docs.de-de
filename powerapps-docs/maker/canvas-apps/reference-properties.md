@@ -12,11 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/17/2016
 ms.author: gregli
-ms.openlocfilehash: ae72dad8143c747714e8573ecc3cc5a9644044b4
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 8d54c632780ac827704535af5d24881685a0e518
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583599"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Steuerelemente und Eigenschaften in PowerApps
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
@@ -85,6 +86,8 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Radio](controls/control-radio.md)** (Optionsfeld): Dient zum Anzeigen von Optionen, die sich gegenseitig ausschließen.
 
 **[Rating](controls/control-rating.md)** (Bewertung): Dient zum Angeben eines Werts zwischen 1 und einer angegebenen Zahl.
+
+**[Rich text editor](controls/control-richtexteditor.md)** (Rich-Text-Editor, experimentell): Ermöglicht App-Benutzern die Formatierung von Rich-Text.
 
 **[Screen](controls/control-screen.md)** (Bildschirm): Dient zum Anzeigen und Aktualisieren von Daten zu einer bestimmten Aufgabe.
 

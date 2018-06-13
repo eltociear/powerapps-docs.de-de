@@ -1,39 +1,51 @@
 ---
 title: ShowError-Funktion | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die ShowError-Funktion in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 03/21/2018
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: 1191016f26192f997b8347cdbfecc7701c19cb8c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 5b75c2cabedba4caf11aa3f922acc0a71ffca377
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822533"
 ---
-# <a name="showerror-function-in-powerapps"></a>ShowError-Funktion in PowerApps
-Zeigt dem Benutzer eine Fehlermeldung an.
+# <a name="notify-function-in-powerapps"></a>Benachrichtigungsfunktion in PowerApps
+Zeigt dem Benutzer eine Bannermeldung an.
 
 ## <a name="description"></a>Beschreibung
-Die **ShowError**-Funktion zeigt dem Benutzer eine Fehlermeldung an.  Die Meldungen werden beim Erstellen der App und beim Verwenden der App durch die Endbenutzer angezeigt.
+Über die **Benachrichtigungsfunktion** wird dem Benutzer im oberen Bereich des Bildschirms eine Bannermeldung über der zu diesem Zeitpunkt geöffneten Seite angezeigt.  
 
-**ShowError** kann ausschließlich in [Verhaltensformeln eingesetzt werden](../working-with-formulas-in-depth.md).
+Abhängig vom Typ der Meldung werden eine passende Farbe und ein passendes Symbol angezeigt.   Der Typ wird vom zweiten Argument der Funktion angegeben:
 
-**ShowError** gibt immer *TRUE* zurück.
+| NotificationType-Argument | Beschreibung |
+| --- | --- |
+| **NotificationType.Error** | Zeigt eine Fehlermeldung an. |
+| **NotificationType.Information** (Standard) | Zeigt eine Informationsmeldung an.  |
+| **NotificationType.Success** | Zeigt eine Erfolgsmeldung an. |
+| **NotificationType.Warning** | Zeigt eine Warnmeldung an. |
 
-**ShowError** kann zusammen mit der [**IfError**](function-iferror.md)-Funktion verwendet werden. Dadurch können Fehler erkannt und mit einer benutzerdefinierten Fehlernachricht gemeldet werden.
+Die Meldungen werden beim Erstellen der App und beim Verwenden der App durch die Endbenutzer angezeigt.
+
+**Notify** kann ausschließlich in [Verhaltensformeln eingesetzt werden](../working-with-formulas-in-depth.md).
+
+**Notify** kann zusammen mit der [**IfError**](function-iferror.md)-Funktion verwendet werden. Dadurch können Fehler erkannt und mit einer benutzerdefinierten Fehlernachricht gemeldet werden.
+
+PowerApps kann auch über einen anderen Mechanismus, der sich gänzlich von **Notify** unterscheidet, Pushbenachrichtigungen senden.  Weitere Informationen finden Sie unter [Senden einer Pushbenachrichtigung in PowerApps](../add-notifications.md).
+
+**Notify** gibt immer *TRUE* zurück.
+
+Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
 
 ## <a name="syntax"></a>Syntax
-**ShowError** ( *Meldung* )
+**Notify**( *Message*, [ *NotificationType* ] )
 
-* *Meldung*: erforderlich.  Meldung, die dem Benutzer angezeigt wird. 
+* *Message* – Erforderlich.  Meldung, die dem Benutzer angezeigt wird.
+* *NotificationType* – Optional.  In der obenstehenden Tabelle aufgelisteter Meldungstyp, der angezeigt werden soll.  Standardmäßig wird **NotificationType.Information** angezeigt.  
 
 ## <a name="examples"></a>Beispiele
 
@@ -43,10 +55,40 @@ Die **ShowError**-Funktion zeigt dem Benutzer eine Fehlermeldung an.  Die Meldun
 
 2. Legen Sie die Eigenschaft **OnSelect** der **Schaltfläche** auf die folgende Formel fest:
 
-    **ShowError ("Hello, World")**
+    **Notify( "Hello, World" )**
 
 3. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.  
 
-    Hierbei wird dem Benutzer jedes Mal die Meldung **Hello, World** angezeigt.
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Information angezeigt.
 
-    ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch OnSelect wird ShowError aufgerufen, wodurch die Meldung „Hello, World“ auf einem roten Banner für den Benutzer angezeigt wird.](media/function-showerror/hello-world.png)
+    ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem blauen Banner angezeigt wird.](media/function-showerror/hello-world.png)
+
+4. Ändern Sie den Meldungstyp, damit ein Fehler angezeigt wird.  Fügen Sie ein zweites Argument zu der Formel hinzu:
+
+    **Notify( "Hello, World", NotificationType.Error )**
+
+5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
+
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als ein Fehler angezeigt.
+
+    ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem roten Banner angezeigt wird.](media/function-showerror/hello-world-error.png)
+
+4. Ändern Sie den Meldungstyp, damit eine Warnung angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
+
+    **Notify( "Hello, World", NotificationType.Warning )**
+
+5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
+
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Warnung angezeigt.
+
+    ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem orangen Banner angezeigt wird.](media/function-showerror/hello-world-warning.png)
+
+4. Ändern Sie den Meldungstyp, damit ein Erfolg angezeigt wird.  Ändern Sie das zweite Argument in der Formel:
+
+    **Notify( "Hello, World", NotificationType.Success )**
+
+5. Klicken Sie auf die Schaltfläche, oder tippen Sie darauf.
+
+    Bei jedem Klick auf die Schaltfläche wird dem Benutzer die Meldung **Hello, World** als Erfolg angezeigt.
+
+    ![Anzeige der Schaltfläche in der Erstellungsumgebung. Durch Button.OnSelect wird Notify aufgerufen, wodurch die Meldung „Hello, World“ dem Benutzer auf einem grünen Banner angezeigt wird.](media/function-showerror/hello-world-success.png)

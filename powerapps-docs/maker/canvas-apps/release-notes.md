@@ -8,23 +8,26 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: dc4e4f9ae1cdb8cf9edf1c7a52343f6a5db1717c
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.openlocfilehash: ef4360dda5d4003ff91389af78958052bbb1e052
+ms.sourcegitcommit: 68e2c696397f3002dd14e72a4c2054a603a5e2d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851705"
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
+> [!IMPORTANT]
+> **Ankündigung der Anmerkungen zu dieser Version**<br>
+> Sind Sie an bevorstehenden und kürzlich veröffentlichten PowerApps-Funktionen interessiert?<br>
+[Lesen Sie die Anmerkungen zu dieser Version](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview). Sämtliche Informationen, die Sie zur Planung nutzen können, wurden detailliert zusammengefasst.
+
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
 
 > [!NOTE]
 > Versionen werden über mehrere Tage eingeführt. Neue oder aktualisierte Funktionen werden möglicherweise nicht sofort angezeigt.
 
-## <a name="announcing-the-business-applications-spring-18-release-notes"></a>Ankündigung der Versionshinweise für Geschäftsanwendungen im Frühling 2018
-
-Entdecken Sie die neuesten Updates für unsere Geschäftsanwendungen sowie einen Host für neue Funktionen zum Erstellen Ihrer eigenen Anwendungen und Erweiterungen zusätzlich zu unserer Plattform. [Laden Sie die Versionshinweise für Frühjahr 2018 als PDF herunter](https://aka.ms/businessappsreleasenotes), die für Dynamics 365, PowerApps, Microsoft Flow und Power BI gelten.
-
-**In Kürze:** Sobald die Features ausgeliefert werden, aktualisieren wir weiterhin die PDF-Datei zu den Versionshinweisen. Diese sind dann auch auf unserer Webseite verfügbar.
+## <a name="may-30"></a>30. Mai
+1. [Rich-Text-Editor-Steuerelement](controls/control-richtexteditor.md) (experimentell): Ermöglicht es Benutzern, Text innerhalb eines WYSIWYG-Bearbeitungsbereichs zu formatieren. 
 
 ## <a name="may-21"></a>21. Mai
 1. Ermöglichen Sie App-Benutzern, Daten aus Excel- oder CSV-Dateien zu importieren und zu exportieren, die lokal gespeichert sind, indem Sie die Features **Daten aus Excel abrufen** und **Daten exportieren** verwenden, die jetzt für upgegradete Umgebungen von Common Data Service (CDS) für Apps verfügbar sind. 

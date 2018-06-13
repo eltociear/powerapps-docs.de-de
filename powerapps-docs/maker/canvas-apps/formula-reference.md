@@ -10,13 +10,14 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 08/28/2017
+ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: d7dd33954d337bbfc65b486333e89c4598b11305
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
+ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822579"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -219,6 +220,8 @@ Andere Elemente enthalten:
 
 **[Not](functions/function-logicals.md)** : boolesche Logikfunktion NOT.  Gibt **TRUE** zurück, wenn für das Argument **FALSE** gilt, und **FALSE** wenn für das Argument **TRUE** gilt.  Sie können auch den [**!**-Operator](functions/operators.md) verwenden.
 
+**[Notify](functions/function-showerror.md)**: Zeigt dem Benutzer eine Bannermeldung an.
+
 **[Now](functions/function-now-today-istoday.md)**: gibt den aktuellen Datums- oder Uhrzeitwert zurück.
 
 ## <a name="o"></a>O
@@ -281,9 +284,7 @@ Andere Elemente enthalten:
 
 **[ShowColumns](functions/function-table-shaping.md)**: gibt eine Tabelle zurück, die nur ausgewählte Spalten enthält.
 
-**[ShowError](functions/function-showerror.md)**: zeigt dem Benutzer eine Fehlermeldung an.
-
-**[Shuffle](functions/function-shuffle.md)**: ordnet die Datensätze einer Tabelle nach dem Zufallsprinzip an.
+**[Second](functions/function-shuffle.md)**: ordnet die Datensätze einer Tabelle nach dem Zufallsprinzip an.
 
 **[Sin](functions/function-trig.md)**: gibt den Sinus eines im Bogenmaß angegebenen Winkels zurück.
 
