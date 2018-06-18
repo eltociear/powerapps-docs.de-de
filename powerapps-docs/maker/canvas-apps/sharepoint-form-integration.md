@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8ae6bd0e576abd3a4115e452b286607b5c695acb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
+ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834834"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291741"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
 Sie können jetzt in PowerApps [jedes SharePoint-Listenformular leicht anpassen](customize-list-form.md). In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.
@@ -76,7 +76,7 @@ Das **SharePointIntegration**-Steuerelement übermittelt Benutzeraktionen zwisch
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->Die Eigenschaften für das **SharePointIntegration**-Steuerelement sind nur verfügbar, wenn das Formular in SharePoint ausgeführt wird, und beim Anpassen des Formulars in PowerApps Studio kann nicht auf sie zugegriffen werden.
+>Sie können nur auf die Eigenschaften des **SharePointIntegration**-Steuerelements zugreifen, wenn das Formular in SharePoint ausgeführt wird. Beim Anpassen des Formulars in PowerApps Studio ist dies nicht möglich. Diese Eigenschaften sind in **OnStart** oder **OnVisible** möglicherweise nicht verfügbar. 
 
 Das **SharePointIntegration**-Steuerelement verfügt über die folgenden Eigenschaften:
 
@@ -109,3 +109,5 @@ Nachdem Sie einen Einblick in die Funktionsweise des generierten Standardformula
 * Schließen Sie in die Formel **OnSuccess** aller Formulare **RequestHide()** ein. Wenn Sie dies vergessen, weiß SharePoint nicht, wann das Formular ausgeblendet werden soll.
 
 * Sie können nicht steuern, dass ein Formular ausgeblendet wird, wenn ein Benutzer in SharePoint auf **Abbrechen** tippt oder klickt. Stellen Sie deshalb in der Formel **OnCancel** des **SharePointIntegration**-Steuerelements sicher, dass die Formulare zurückgesetzt werden.
+
+* Die Eigenschaften des **SharePointIntegration**-Steuerelements sind in **OnStart** oder **OnVisible** möglicherweise nicht verfügbar, und diese Ereignisse werden nur einmal ausgeführt, während die Liste geladen wird. Logik lässt sich mithilfe der Formeln **OnNew**, **OnView** oder **OnEdit** ausführen, bevor das Formular dem Benutzer angezeigt wird. 
