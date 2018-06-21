@@ -7,12 +7,12 @@ ms.component: pa-user
 ms.topic: quickstart
 ms.date: 03/07/2018
 ms.author: matp
-ms.openlocfilehash: ba3b52bbbe12fad8773f09f4c753e4a55d09a6f0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4aed5f0d34bf88bca706c1c6421ac3b692308ebb
+ms.sourcegitcommit: 63351b1bda5a8dd00786912f95aba9fb3ebfe75c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552712"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36261716"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Schnellstart: Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
@@ -20,7 +20,7 @@ Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie 
 Sie benötigen ein [Microsoft Office 365-Abonnement](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1), das Dynamics 365 umfasst, sowie Zugriff auf einen [unterstützten Browser und ein unterstütztes Betriebssystem](../maker/canvas-apps/limits-and-config.md), um diesem Schnellstart folgen zu können. Außerdem benötigen Sie Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
 
 ## <a name="sign-in-to-dynamics-365"></a>Anmelden bei Dynamics 365
-Melden Sie sich unter [https://home.dynamics.com]([https://home.dynamics.com) bei Dynamics 365 an.
+Melden Sie sich unter [https://home.dynamics.com](https://home.dynamics.com) bei Dynamics 365 an.
 
 ## <a name="find-an-app-on-the-home-page"></a>Finden einer App auf der Startseite
 Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z.B. PowerApps) erstellt wurden. Klicken oder tippen Sie dafür auf **Filter**, und wählen Sie anschließend die Quelle aus.
