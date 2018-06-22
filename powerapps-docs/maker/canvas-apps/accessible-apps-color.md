@@ -11,6 +11,7 @@ ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32329914"
 ---
 # <a name="accessible-colors-in-powerapps"></a>Barrierefreie Farben in PowerApps
 In einer App sollten nur Farben verwendet werden, die für farbenblinde und sehbehinderte Benutzer barrierefrei sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen.

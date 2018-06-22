@@ -38,6 +38,8 @@
       href: admin-manage-apps.md
     - name: Eine App zwischen Mandanten und Umgebungen verschieben
       href: environment-and-tenant-migration.md
+    - name: Ressourcen exportieren und importieren
+      href: export-import-packages.md
     - name: Reagieren auf DSR-Anforderungen
       items:
         - name: Vom System generierten Protokolle

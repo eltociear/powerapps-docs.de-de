@@ -1,6 +1,6 @@
 ---
 layout: HubPage
-hide_bc: ''
+hide_bc: true
 title: Dokumentation zu Microsoft PowerApps
 description: Dokumentation zu Microsoft PowerApps
 ms.openlocfilehash: a677147e0464e22ddfa56e36c2c027e2e14e7ca7
@@ -8,6 +8,7 @@ ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30040624"
 ---
 <div id="main" class="v2">
     <div class="container">
