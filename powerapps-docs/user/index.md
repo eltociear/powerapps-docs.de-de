@@ -8,10 +8,11 @@ ms.topic: overview
 ms.date: 03/21/2018
 ms.author: matp
 ms.openlocfilehash: 6c5a207ec2eb41d2cf19250bd5f319ed692a43e6
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "34552666"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>Wie kann ich Apps finden und ausführen?
 App-Entwickler können benutzerdefinierte task- und rollenbasierte *Canvas*-Apps erstellen, die an Ihre Bedürfnisse angepasst sind – unabhängig davon, ob Sie ein Mitarbeiter im Außendienst oder ein Doktor in einem Krankenhaus sind. Entwickler von Canvas-Apps können beinahe alle Bestandteile einer Canvas-App anpassen und eine Verbindung mit mehreren Datenquellen herstellen, um Benutzer beim Abschließen von Aufgaben mit einem Fokus zu unterstützen.
