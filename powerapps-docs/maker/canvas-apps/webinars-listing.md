@@ -7,54 +7,17 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: a5cfa772ce4f7e9f5679164b9309baa31bfc6a96
-ms.sourcegitcommit: 7354a0c61578fcc0b9965bf557b9d7c553c73e96
+ms.openlocfilehash: c0711ed071c1635373a66f5b61259f56d468cc9a
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34803372"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36311659"
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
-Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. In den Kommentaren unter diesem Thema können Sie gerne weitere Themen vorschlagen.
+Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen ggf. erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung. 
 
-## <a name="upcoming-webinars"></a>Anstehende Webinare ##
-
-**Connector Series | Microsoft StaffHub (Shift Planning) Apps with PowerApps (Webinarreihe zu Connectors | Microsoft StaffHub-Apps mit PowerApps (Einsatzplanung))**
-<br>von Marc-André Lépine
-<br>*5. Juli, 10:00 Uhr PST, 13:00 Uhr EST*
-<br>
-Marc-André Lépine aus den PowerApps- und Flow Azure Advisors-Gruppen erzählt in diesem Webinar, wie er eine hervorragende App erstellt hat, die die Möglichkeiten von StaffHub-Connectors ergänzt und erweitert. Später in dieser Woche zeigt er, wie er den Connector mit einer benutzerdefinierten API erweitert hat.  
-
-[Klicken Sie hier, um am 5. Juni live dabei zu sein](https://www.youtube.com/watch?v=LAximnEnKy8)
-
-**PowerApps Administration | Frequently Asked Questions (PowerApps-Verwaltung | Häufig gestellte Fragen)**
-<br>von Manas Maheshwari
-<br>*12. Juni, 9:30 Uhr PST, 12:30 Uhr EST*
-
-Manas Maheshwari, Senior Program Manager des PowerApps-Teams, teilt bewährte Methoden für die Verwaltung und beantwortet Ihre Fragen zur PowerApps-Verwaltung, -Umgebungen und -Datenbanken. In diesem Webinar erfahren Sie alles, was Sie zum Verwalten Ihrer PowerApps-Umgebungen wissen müssen. Wir freuen uns auf Sie und Ihre dringendsten Fragen zum Thema Verwaltung.
-
-[Klicken Sie hier, um am 12. Juni live dabei zu sein](https://www.youtube.com/watch?v=9Sy_vT5kIts)
-
-**Inside the Universal Audit App: See what PowerApps and Flow are capable of – Paul Culmsee (Einblick in die „Universal Audit App“: Potenzial von PowerApps und Flow – Paul Culmsee)**
-<br>von Paul Culmsee
-<br>*14. Juni, 18:00 Uhr PST, 21:00 Uhr EST*
-
-Da diese beliebte PowerApps-App drei- bis fünfmal pro Woche angefordert wurde, ist sie mittlerweile weltweit bereitgestellt worden. In diesem Webinar erzähle ich, wie sie entwickelt wurde, wie wir das volle Potenzial von PowerApps und Flow genutzt haben und welche Anpassungen für Clients erfolgt sind. Dies ist eine sehr sinnvolle Ergänzung für alle, die mit einer vollständigen Lösung beginnen möchten, die auf der ganzen Welt eingesetzt wird. 
-
-[Klicken Sie hier, um am 14. Juni live dabei zu sein](https://www.youtube.com/watch?v=6Wn47bDOMEE)
-
-**Getting Started | PowerApps Learning Paths – How to get good building apps fast! (Erste Schritte | PowerApps-Lernpfade: Wie Sie schnell gute Apps erstellen können)**
-<br>von Audrie Gordon
-<br>*26. Juni, 18:00 Uhr PST, 21:00 Uhr EST*
-
-Audrie Gordon, Mitglied des PowerApps-Teams, stellt bewährte Methoden und Strategien zum Schnellstart vor, damit Sie PowerApps kennenlernen und an Ihre Organisation anpassen können. Diese abendliche Diskussionsrunde können Sie live auf YouTube verfolgen. 
-
-[Klicken Sie hier, um am 26. Juni live dabei zu sein](https://www.youtube.com/watch?v=ykNRxKvAirg)
-
-## <a name="past-webinars"></a>Frühere Webinare ##
-Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen ggf. erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung. 
-
-### <a name="beginner-webinar-series"></a>Webinarreihe für Anfänger ###
+## <a name="beginner-webinar-series"></a>Webinarreihe für Anfänger ##
 **Top 5 Tips for Designing Apps that Mean Business (Die fünf besten Tipps zum Entwerfen von Apps, die Umsatz bringen )**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Top-5-tips-for-designing-and-building-PowerApps-that-mean/m-p/116843)
 
@@ -82,7 +45,7 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **New Office Graph Templates (Part 2) (Neue Office Graph-Vorlagen, Teil 2)**
 <br>von Emma Cooper [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
 
-### <a name="intermediate-webinar-series"></a>Webinarreihe für fortgeschrittene Anfänger ###
+## <a name="intermediate-webinar-series"></a>Webinarreihe für fortgeschrittene Anfänger ##
 **Application Lifecycle with the new Save and publish options in PowerApps (Anwendungslebenszyklus mit den neuen Optionen „Speichern“ und „Veröffentlichen“ in PowerApps)**
 <br>von Karthik Bharathy [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
@@ -95,7 +58,16 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Laura Rogers from IWMentor Shares Best Practices for Production Apps (Laura Rogers von IWMentor demonstriert bewährte Methoden für Produktions-Apps)**
 <br>von Laura Rodgers [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-### <a name="advanced-webinar-series"></a>Webinarreihe für Fortgeschrittene ###
+**Connector Series | Microsoft StaffHub (Shift Planning) Apps with PowerApps (Webinarreihe zu Connectors | Microsoft StaffHub-Apps mit PowerApps (Einsatzplanung))**
+<br>von Marc-André Lépine [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
+
+**PowerApps Administration | Frequently Asked Questions (PowerApps-Verwaltung | Häufig gestellte Fragen)**
+<br>von Manas Maheshwari [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
+
+**Inside the Universal Audit App: See what PowerApps and Flow are capable of – Paul Culmsee (Einblick in die „Universal Audit App“: Potenzial von PowerApps und Flow – Paul Culmsee)**
+<br>von Paul Culmsee [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
+
+## <a name="advanced-webinar-series"></a>Webinarreihe für Fortgeschrittene ##
 **PowerApps formulas (PowerApps-Formeln)**
 <br>von Greg Lindhorst [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Deep-dive-on-formulas-by-Greg-Lindhorst/m-p/116899)
 
@@ -133,7 +105,7 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Working with Connectors: Project Online (PWA) (Arbeiten mit Connectors: Project Online (PWA))**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
-### <a name="sharepoint-series"></a>Webinarreihe zu SharePoint ###
+## <a name="sharepoint-series"></a>Webinarreihe zu SharePoint ##
 **Rapidly Build Applications with PowerApps Studio (Schnelles Erstellen von Anwendungen mit PowerApps Studio)**
 <br>von Karthik Bharathy [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
@@ -149,7 +121,7 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Introducing List Forms in SharePoint Online (Einführung in Listenformulare in SharePoint Online)**
 <br>von Ankit Saraf [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Introducing-List-Forms-in-SharePoint-Online/m-p/116916)
 
-### <a name="model-driven-series"></a>Webinarreihe zu modellgesteuerten Apps ###
+## <a name="model-driven-series"></a>Webinarreihe zu modellgesteuerten Apps ##
 **Komponenten modellgesteuerter Apps | Einführung in modellgesteuerte Apps**
 <br>von Charles Sterling & Adrian Orth [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Series-Introduction-to-Model-Driven-Apps/m-p/116820)
 
@@ -165,7 +137,7 @@ Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie
 **Webinarreihe zu modellgesteuerte Anwendungen, Teil 3: Verwenden von Diagrammen und Dashboards**
 <br>Referenten: Audrie Gordon und Casey Burke [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Model-Driven-App-Components-Part-3-Exploring-Charts-and/m-p/119732)
 
-### <a name="app-designer-series"></a>Webinarreihe für App-Designer ###
+## <a name="app-designer-series"></a>Webinarreihe für App-Designer ##
 **Building Apps for Adoption and Usability (Erstellen von Apps für die Einführung und Nutzbarkeit)**
 <br>von Veronica Ward [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
 

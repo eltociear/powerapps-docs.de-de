@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/17/2018
 ms.author: jdaly
-ms.openlocfilehash: 4e8a935dbef2c46478f99ecbf82a7fc837feb284
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+ms.openlocfilehash: 1799f275ea777f031e260409f62fcab0667bae59
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949250"
 ---
 # <a name="model-driven-apps-developer-overview"></a>Übersicht für Entwickler: Modellgesteuerte Apps
 
@@ -37,7 +38,7 @@ Wenn Sie bereits Erfahrung mit den Dynamics 365 Customer Engagement-Apps haben, 
 Wenn Sie noch nicht mit Dynamics 365 Customer Engagement-Anwendungen vertraut sind, finden Sie in den Themen in diesem Abschnitt eine allgemeine Übersicht über die wichtigen Konzepte, die beim Einstieg in die Arbeit mit modellgesteuerten Apps helfen. 
 
 > [!NOTE]
-> Da Common Data Service für Apps und Dynamics 365 Customer Engagement dieselbe Plattform verwenden, finden Sie ausführlichere Informationen für Entwickler im [Entwicklerhandbuch zu Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide). Diese Themen bieten einen Übersicht mit Links zu dem Entwicklerhandbuch und anderen Handbüchern, die weitere Informationen enthalten.
+> Da Common Data Service für Apps und Dynamics 365 Customer Engagement dieselbe Plattform verwenden, finden Sie ausführlichere Informationen für Entwickler im [Entwicklerhandbuch zu Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide). In diesen Artikel erhalten Sie eine Übersicht mit Links zum Entwicklerhandbuch und anderen Handbüchern, die weitere Informationen enthalten.
 
 
 ## <a name="community-tools-for-model-driven-apps"></a>Communitytools für modellgesteuerte Apps
