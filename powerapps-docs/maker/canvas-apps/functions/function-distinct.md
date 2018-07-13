@@ -1,23 +1,20 @@
 ---
 title: Funktion „Distinct“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispiele, für die Distinct-Funktion in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 101c28f2b4ac8135a9b4def9421f886f373105bf
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 8b482972b7e209c8cca98aae44389c133d5d4dcf
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "31825577"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020329"
 ---
 # <a name="distinct-function-in-powerapps"></a>Distinct-Funktion in PowerApps
 Fasst [Datensätze](../working-with-tables.md#records) aus einer [Tabelle](../working-with-tables.md) zusammen, wobei Duplikate entfernt werden.

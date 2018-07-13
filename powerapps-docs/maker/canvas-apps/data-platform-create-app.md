@@ -2,17 +2,19 @@
 title: 'Schnellstart: Erstellen einer App von Common Data Service für Apps aus | Microsoft-Dokumentation'
 description: In diesem Schnellstart generieren Sie automatisch eine App in PowerApps zum Verwalten von Daten in Common Data Service für Apps
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: a058629f08e61f7299792697234b5d346b9d0c71
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 50913e593cf279d0d1870cbe88fa1a3703059811
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34453559"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016023"
 ---
 # <a name="quickstart-generate-an-app-from-common-data-service-for-apps-in-powerapps"></a>Schnellstart: Generieren einer App von Common Data Service für Apps aus in PowerApps
 
