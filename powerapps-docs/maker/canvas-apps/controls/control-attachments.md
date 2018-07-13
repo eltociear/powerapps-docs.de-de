@@ -2,17 +2,19 @@
 title: 'Attachments-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen zum Attachment-Steuerelement, einschließlich Eigenschaften und Beispielen
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 04/23/2018
 ms.author: fikaradz
-ms.openlocfilehash: 3a24f5d879674d8832b7fe5030e871e7f7ba1626
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.reviewer: anneta
+ms.openlocfilehash: d8e195ad3e4f59b9f07e23e17a685d9d1f55bef4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803119"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022031"
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste hochladen und löschen können.

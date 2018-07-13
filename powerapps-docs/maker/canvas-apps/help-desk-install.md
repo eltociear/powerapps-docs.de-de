@@ -1,23 +1,20 @@
 ---
 title: Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“ | Microsoft-Dokumentation
 description: Ausführliche Anleitung zum Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“.
-documentationcenter: na
 author: caburk
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: sample
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: e7ed897af79831f9d8db7ae6da6719b3e6977807
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 96b824bc5ac9dc3a1200e14f1240105d52c076f6
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896970"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023756"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“
 
