@@ -2,18 +2,21 @@
 title: 'Schnellstart: Ausführen einer modellgesteuerten App auf einem mobilen Gerät mit PowerApps | Microsoft-Dokumentation'
 description: In dieser Schnellstartanleitung erfahren Sie, wie Sie eine modellgesteuerte App auf einem mobilen Gerät ausführen.
 author: Mattp123
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/21/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 5556739d0a067e9475cd253efdf733ae91218719
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: e8369d7816bfdf81126affd7c63c9e897e680546
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34074059"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925614"
 ---
 # <a name="quickstart-run-a-model-driven-app-on-a-mobile-device"></a>Schnellstart: Ausführen einer modellgesteuerten App auf einem mobilen Gerät
 
