@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/07/2016
 ms.author: gregli
-ms.openlocfilehash: 2053f69146bcd952f61916ef9e41150791a243a5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ec6730a03781bdbffc9c80d815e960de2ce6064
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31828055"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899063"
 ---
 # <a name="user-function-in-powerapps"></a>Funktion „User“ in PowerApps
 Gibt Informationen über den aktuellen Benutzer zurück.
@@ -44,10 +44,10 @@ Der aktuelle PowerApps-Benutzer weist die folgenden Informationen auf:
 * E-Mail-Adresse: **"john.doe@contoso.com"**
 * Bild: ![](media/function-user/john-doe-picture.png) 
 
-| Formel | Beschreibung | Ergebnis |
-| --- | --- | --- |
-| **User()** |Datensatz mit allen Informationen für den aktuellen PowerApps-Benutzer. |{ FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" } |
-| **User().Email** |Die E-Mail-Adresse des aktuellen PowerApps-Benutzers. |"john.doe@contoso.com" |
-| **User().FullName** |Der vollständige Name des aktuellen PowerApps-Benutzers. |"John Doe" |
-| **User().Image** |Die Bild-URL für den aktuellen PowerApps-Benutzer.  Legen Sie die Eigenschaft **Image** des **Image**-Steuerelements auf diesen Wert fest, um das Bild in der App anzuzeigen. |"blob:1234...5678"<br><br>Für **ImageControl.Image**:<br>![](media/function-user/john-doe-picture.png) |
+|       Formel       |                                                                    Beschreibung                                                                    |                                                 Ergebnis                                                  |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+|     **User()**      |                                             Datensatz mit allen Informationen für den aktuellen PowerApps-Benutzer.                                             |    { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678" }    |
+|  **User().Email**   |                                                 Die E-Mail-Adresse des aktuellen PowerApps-Benutzers.                                                  |                                         "john.doe@contoso.com"                                          |
+| **User().FullName** |                                                   Der vollständige Name des aktuellen PowerApps-Benutzers.                                                    |                                               "John Doe"                                                |
+|  **User().Image**   | Die Bild-URL für den aktuellen PowerApps-Benutzer.  Legen Sie die Eigenschaft **Image** des **Image**-Steuerelements auf diesen Wert fest, um das Bild in der App anzuzeigen. | "blob:1234...5678"<br><br>Für **ImageControl.Image**:<br>![](media/function-user/john-doe-picture.png) |
 

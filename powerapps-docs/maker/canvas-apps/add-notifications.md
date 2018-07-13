@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/08/2017
 ms.author: jamesol
-ms.openlocfilehash: 0cf09528f83b2729e50139a3b5f9b5b9c00b6119
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: 1ab3b17d03b2fd21fceb0675ca55d33302f67d31
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822556"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897754"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
 Pushbenachrichtigungen werden bei mobilen Apps für Kunden- und Business-Szenarien in erster Linie verwendet, um mit den App-Benutzern zu kommunizieren und ihnen zu helfen, wichtige Aufgaben zu priorisieren. In PowerApps können Sie Benachrichtigungen über den Connector „PowerApps-Benachrichtigung“ senden. Sie können native Pushbenachrichtigungen an eine beliebige App senden, die Sie in PowerApps erstellen. In Zukunft sollen weitere Benachrichtigungstypen hinzukommen.
@@ -41,19 +41,19 @@ Fügen Sie bei einer App, für die Sie über die Berechtigung **Mitwirkender** v
 > Wenn Sie eine Pushbenachrichtigung in einem Flow auslösen, können Sie die Benachrichtigung derzeit jeweils nur an einen Benutzer oder eine Sicherheitsgruppe senden.
 
 1. Erstellen Sie in [Microsoft Flow](https://flow.microsoft.com) einen Trigger, der angibt, wann die Pushbenachrichtigung gesendet wird.
-   
+
     Angenommen, Sie möchten eine Benachrichtigung senden, wenn ein Datensatz zur **Case**-Entität im Common Data Service hinzugefügt wird.
-   
+
     ![Screenshot: Erstellen eines Flows mit einem Common Data Service-Trigger](./media/add-notifications/pic4-step1-flowupdated.png)
 2. Erstellen Sie eine Aktion für den Flow mithilfe des Connectors **PowerApps-Benachrichtigung**, und geben Sie die **App-ID** der App ein, an die Benachrichtigungen gesendet werden sollen.
-   
+
     Sie können die Verbindung auch für Ihr Szenario umbenennen.
-   
+
     ![Screenshot: Erstellen einer Verbindung mit der PowerApps-App, die die Pushbenachrichtigungen erhält](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. (Optional) Übergeben Sie Parameter an die App, wenn sie geöffnet wird (nachdem der Benutzer auf die Pushbenachrichtigung getippt hat).
-   
+
     In diesem Beispiel werden die Felder **Case ID** (Fall-ID) und **Initial Owner** (Erster Besitzer) für den ausgewählten Kontakt übergeben.
-   
+
     ![Screenshot: Übergeben von optionalen Parametern an die Pushbenachrichtigung](./media/add-notifications/pic6-step3-configure-notif.jpg)
 
 ## <a name="send-a-notification-from-an-app"></a>Senden einer Benachrichtigung aus einer App
@@ -61,20 +61,20 @@ Sie können eine Pushbenachrichtigung aus einer App an eine andere App oder an d
 
 1. Öffnen Sie die App, an die Pushbenachrichtigungen gesendet werden sollen, in [PowerApps](https://web.powerapps.com/).
 2. Kopieren Sie auf der Registerkarte **Details** die **App-ID** dieser App.
-   
+
     ![App-ID abrufen](./media/add-notifications/grab-id.png)
 3. Wechseln Sie zur Registerkarte **Verbindungen**, erstellen Sie eine Verbindung mit dem Connector „PowerApps-Benachrichtigung“, und übergeben Sie die App-ID aus dem vorherigen Schritt.
-   
+
     ![Erstellen der Verbindung](./media/add-notifications/create-connection.png)
 4. Fügen Sie die Verbindung der Trigger-App hinzu.
-   
+
     In unserem Beispiel verwenden wir die gleiche App wie die Trigger-App. Der Benutzer, der den Fall erneut zuweist, löst auch eine Pushbenachrichtigung an den neuen Besitzer des Falls aus.
-   
+
     ![Hinzufügen einer Verbindung](./media/add-notifications/add-connection.png)
 5. Rufen Sie in der Pushbenachrichtiungsverbindung die **SendPushNotification**-Methode auf.
-   
+
     In unserem Beispiel wird diese Benachrichtigung mit der **OnSuccess**-Eigenschaft in einem Formular ausgelöst.
-   
+
     ![PowerApps-Formel](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>Laden einer bestimmten Seite und eines bestimmten Kontexts, wenn ein Benutzer auf die Benachrichtigung tippt
@@ -91,16 +91,18 @@ Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details**
 
 > [!TIP]
 > Sie sollten für die Benachrichtigung eine spezielle erste Seite erstellen:
-
->1. Erstellen Sie eine leere Seite, die Ihre App nicht bereits öffnet, fügen Sie ein **Texteingabe**-Steuerelement hinzu, und legen Sie den **timer.Duration**-Wert fest.
->2. Wenn Sie die App erstellen, legen Sie den Timer auf einen Wert ungleich 0 (null) fest. Wenn Sie die App veröffentlichen möchten, legen Sie den Wert auf **0** fest, um den Timer sofort auszulösen.
+> 
+> 1. Erstellen Sie eine leere Seite, die Ihre App nicht bereits öffnet, fügen Sie ein **Texteingabe**-Steuerelement hinzu, und legen Sie den **timer.Duration**-Wert fest.
+> 2. Wenn Sie die App erstellen, legen Sie den Timer auf einen Wert ungleich 0 (null) fest. Wenn Sie die App veröffentlichen möchten, legen Sie den Wert auf **0** fest, um den Timer sofort auszulösen.
 
 ## <a name="syntax"></a>Syntax
+
 | Name | Beschreibung |
 | --- | --- |
 | SendPushNotification |Sendet eine Pushbenachrichtigung an die App, die in den Verbindungseinstellungen für die Benachrichtigung angegeben wurde. |
 
 ### <a name="parameters"></a>Parameter
+
 | Name | Typ | Beschreibung |
 | --- | --- | --- |
 | recipients |Zeichenfolgenarray, erforderlich |Liste mit: <ul> <li>E-Mail-Adressen für Benutzer oder Sicherheitsgruppen</li> <li>Objekt-IDs für Benutzer oder Sicherheitsgruppen in Azure Active Directory</li></ul> |

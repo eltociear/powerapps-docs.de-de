@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: d8323eb103751a1be78aeea0093b9d6651ddc3e2
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: bb0bec7cf459eb9084aea4db7264350b7913e578
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445864"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898749"
 ---
 # <a name="create-a-power-bi-report"></a>Einen Power BI-Bericht erstellen
 Mit Common Data Service für Apps können Sie eine direkte Verbindung zu Ihren Daten von Power BI Desktop herstellen, um Berichte zu erstellen und in Power BI zu veröffentlichen. In Power BI können Berichte in Dashboards verwendet und für andere Benutzer freigegeben werden. Außerdem kann plattformübergreifend von Power BI-Apps für Mobilgeräte aus darauf zugegriffen werden.
@@ -57,11 +57,11 @@ Sie benötigen Folgendes, um Power BI mit Common Data Service für Apps zu verwe
 
 4. Der Navigator zeigt alle Entitäten, die für Ihre Umgebung verfügbar sind, in drei Ordner gruppiert an. Erweitern Sie den Ordner **Common Data Model**.
 
-    * Common Data Service: Dabei handelt es sich um Standardentitäten, die häufig verwendet werden und in allen Umgebungen als Teil von Common Data Model verfügbar sind.
-    * Benutzerdefinierte Entitäten: Entitäten, die Sie erstellt oder in Ihre Umgebung importiert haben.
-    * System: Enthält alle Entitäten in Ihrer Umgebung, einschließlich Common Data Service und der benutzerdefinierten Entitäten.
+   * Common Data Service: Dabei handelt es sich um Standardentitäten, die häufig verwendet werden und in allen Umgebungen als Teil von Common Data Model verfügbar sind.
+   * Benutzerdefinierte Entitäten: Entitäten, die Sie erstellt oder in Ihre Umgebung importiert haben.
+   * System: Enthält alle Entitäten in Ihrer Umgebung, einschließlich Common Data Service und der benutzerdefinierten Entitäten.
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
+     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
 
 5. Wählen Sie die Entität **Account** (Konto) aus, um eine Vorschau Ihrer Daten im rechten Bereich anzuzeigen, und klicken Sie auf **Laden**.
 

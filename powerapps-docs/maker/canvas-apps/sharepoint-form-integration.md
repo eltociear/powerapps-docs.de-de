@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 11/11/2017
 ms.author: ankitsar
-ms.openlocfilehash: 69e3baaa769282ca8ac7372ba3360829a1624f3d
-ms.sourcegitcommit: 6bfb002180148a3f22a4d1d8d750fc442489ebe4
+ms.openlocfilehash: f8f21235170483c908149898f92b57cc6c2cb9aa
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291741"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896418"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
 Sie können jetzt in PowerApps [jedes SharePoint-Listenformular leicht anpassen](customize-list-form.md). In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.
@@ -66,7 +66,7 @@ Das generierte Standardformular besteht aus den folgenden Steuerelementen und de
 
     * **OnCancel** – Macht die Änderungen an **SharePointForm1** rückgängig. Das Formular wird immer ausgeblendet, wenn der Benutzer in SharePoint auf **Abbrechen** klickt oder tippt.
 
-        **SubmitForm(SharePointForm1)**
+        **ResetForm(SharePointForm1)**
 
 Durch diese Standardwerte wird sichergestellt, dass das Formular bei Ausführung innerhalb von SharePoint funktioniert. Es wird der PowerApps-Formularmodus geändert, wenn der Benutzer in SharePoint mit dem Formular interagiert, und sichergestellt, dass die Änderungen an SharePoint übermittelt werden.
 
@@ -103,8 +103,8 @@ Nachdem Sie einen Einblick in die Funktionsweise des generierten Standardformula
 
 * Passen Sie mit der Formel **OnSave** des **SharePointIntegration**-Steuerelements an, was geschieht, wenn ein Benutzer in SharePoint auf **Speichern** klickt oder tippt. Wenn Sie über mehrere Formulare verfügen, stellen Sie sicher, dass nur die Änderungen für das derzeit verwendete Formular übermittelt werden.
 
-    >[!TIP]
-     Legen Sie in den Formeln **OnNew**, **OnView** und **OnEdit** unterschiedliche Werte für eine Variable fest. Sie können mit dieser Variablen in der Formel **OnSave** bestimmen, welches Formular verwendet wird.
+  > [!TIP]
+  >    Legen Sie in den Formeln **OnNew**, **OnView** und **OnEdit** unterschiedliche Werte für eine Variable fest. Sie können mit dieser Variablen in der Formel **OnSave** bestimmen, welches Formular verwendet wird.
 
 * Schließen Sie in die Formel **OnSuccess** aller Formulare **RequestHide()** ein. Wenn Sie dies vergessen, weiß SharePoint nicht, wann das Formular ausgeblendet werden soll.
 

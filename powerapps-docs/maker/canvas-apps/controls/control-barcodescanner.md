@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 22b5cf081755f25b3aff33c36137547882fe3812
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: b8b25f5bfa3ddbce7b1c541afb7a935a2fe4aa36
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803467"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898166"
 ---
 # <a name="barcode-scanner-control-experimental-in-powerapps"></a>Barcodescanner-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, mit dem der Benutzer mithilfe des Barcodescanners auf seinem Gerät Fotos aufnehmen kann.
@@ -32,19 +32,9 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**Brightness** – Bestimmt die Helligkeit, die von einem Benutzer voraussichtlich im Bild wahrgenommen wird.
-
-**Contrast** – Gibt an, wie leicht ähnliche Farben in einem Bild für den Benutzer voneinander zu unterscheiden sind.
-
 **[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
-
-**[OnSelect](properties-core.md)**: Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
-
-**OnStream** – Legt fest, wie die App reagiert, wenn die **Stream**-Eigenschaft aktualisiert wird.
-
-**Photo** – Das Bild, das aufgenommen wird, wenn der Benutzer ein Foto macht.
 
 **ShowLiveBarcodeDetection**: legt fest, ob visuelle Anhaltpunkte dargestellt werden, um den Status der Barcodeerkennung zu ermitteln. Gelbe Rechtecke stellen die Bereiche dar, die untersucht werden. Eine grüne Linie, die durch das Rechteck geht, zeigt an, dass die Barcodeerkennung erfolgreich war.
 
@@ -63,8 +53,6 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **[X](properties-size-location.md)** – Der Abstand zwischen dem linken Rand eines Steuerelements und dem linken Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
-
-**Zoom** – Der Prozentsatz, mit dem das Bild von einem Barcodescanner oder die Ansicht einer Datei in einem PDF-Viewer vergrößert wird.
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
@@ -87,4 +75,4 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-> Die Sprachausgabe meldet, wenn ein neuer Barcode gefunden wurde. Der Wert wird jedoch nicht genannt. Solange der Barcode angezeigt wird, erinnert die Sprachausgabe alle 5 Sekunden daran, dass immer noch derselbe Barcode ermittelt wird.
+  > Die Sprachausgabe meldet, wenn ein neuer Barcode gefunden wurde. Der Wert wird jedoch nicht genannt. Solange der Barcode angezeigt wird, erinnert die Sprachausgabe alle 5 Sekunden daran, dass immer noch derselbe Barcode ermittelt wird.

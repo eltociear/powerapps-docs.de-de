@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: aae87f408452cd83856c2e1c2e07065d4b8df49f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 43328f363926f20d91b49ba422c3bfdae30abbf6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803280"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898750"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
@@ -99,7 +99,7 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 4. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des Steuerelements ab, das Sie hinzugefügt haben.
 
     > [!TIP]
-> Die Wiedergabeschaltfläche für das **Video**-Steuerelement wird angezeigt, wenn Sie auf das Steuerelement zeigen.
+   > Die Wiedergabeschaltfläche für das **Video**-Steuerelement wird angezeigt, wenn Sie auf das Steuerelement zeigen.
 5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="play-a-youtube-video"></a>Abspielen eines YouTube-Videos

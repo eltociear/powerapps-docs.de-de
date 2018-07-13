@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: bce21a5fe07cb5bf608c36371a7cbe45e845b2ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330581"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899960"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Installation und Konfiguration der PowerApps-Beispiel-App „Expense Report“
 
@@ -241,23 +241,23 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 
 ## <a name="import-the-expense-report-powerapp"></a>Importieren der PowerApp „Expense Report“
 
-1.  Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
-2.  Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
-3.  Wählen Sie im Menü auf der linken Seite **Apps** aus. 
-4.  Klicken Sie auf **Paket importieren (Vorschau)**.
+1. Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
+2. Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
+3. Wählen Sie im Menü auf der linken Seite **Apps** aus. 
+4. Klicken Sie auf **Paket importieren (Vorschau)**.
     
-    ![Anzeige „Paket importieren“](./media/expense-report-install/import-package.png)
+   ![Anzeige „Paket importieren“](./media/expense-report-install/import-package.png)
 
-5.  Klicken Sie auf **Hochladen**, und wählen Sie das PowerApps-Paket aus, das Sie in den vorherigen Schritten heruntergeladen haben.
-6.  Legen Sie für die Ressourcentypen **App** und **Flow** für **IMPORTEINRICHTUNG** die Option **Als neu erstellen** fest.
-7.  Legen Sie für die Verbindungen **SharePoint** und **Outlook** für **IMPORTEINRICHTUNG** die Option **Beim Import auswählen** fest.
+5. Klicken Sie auf **Hochladen**, und wählen Sie das PowerApps-Paket aus, das Sie in den vorherigen Schritten heruntergeladen haben.
+6. Legen Sie für die Ressourcentypen **App** und **Flow** für **IMPORTEINRICHTUNG** die Option **Als neu erstellen** fest.
+7. Legen Sie für die Verbindungen **SharePoint** und **Outlook** für **IMPORTEINRICHTUNG** die Option **Beim Import auswählen** fest.
     
-    ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings.png)
+   ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings.png)
 
-8.  Klicken Sie auf das **rote Symbol** für die **SharePoint-Verbindung**.
-9.  Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
+8. Klicken Sie auf das **rote Symbol** für die **SharePoint-Verbindung**.
+9. Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
 
-    ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings-sharepoint.png)
+   ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings-sharepoint.png)
 
 10. Klicken Sie auf **Speichern**.
 11. Klicken Sie auf das **rote Symbol** für die **Genehmigungsverbindung**.
@@ -265,9 +265,9 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 
     ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings-approvals.png)
 
-13.  Klicken Sie auf **Speichern**.
-14.  Klicken Sie auf das **rote Symbol** für die **Office 365 Outlook-Verbindung**.
-15.  Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
+13. Klicken Sie auf **Speichern**.
+14. Klicken Sie auf das **rote Symbol** für die **Office 365 Outlook-Verbindung**.
+15. Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
 
     ![Anzeige „Importeinstellungen“](./media/expense-report-install/import-settings-office365outlook.png)
 
@@ -383,7 +383,7 @@ Sehen Sie sich dieses Video an, um mehr über die Verwendung der PowerApps-Beisp
 
 [![Video zur Installation von Expense Report](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
-##<a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 - [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
 - [Hinzufügen und Konfigurieren eines Steuerelements in PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
 - [Bearbeiten und Verwalten von Berechtigungen für eine SharePoint-Liste oder -Bibliothek](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)

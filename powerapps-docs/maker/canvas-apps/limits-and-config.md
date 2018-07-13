@@ -7,17 +7,18 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/07/2018
 ms.author: sharik
-ms.openlocfilehash: ffe1a027e378da3f9c505f4980681a4b5a11dbda
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e76710bc800782624ca1190086cc19dd47d60939
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34851751"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896096"
 ---
 # <a name="system-requirements-limits-and-configuration-values"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
 
 ## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>Unterstützte Plattformen für das Ausführen von Apps mithilfe der PowerApps-App
+
 | **Mindestens erforderlich** | **Empfohlen** |
 | --- | --- |
 | iOS 9.3 oder höher |iOS 10 oder höher mit mindestens 2 GB RAM |
@@ -25,6 +26,7 @@ In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser so
 | Windows 8.1 oder höher (nur PC) |Windows 10 Fall Creators Update mit mindestens 8 GB RAM|
 
 ## <a name="supported-browsers-for-running-apps"></a>Unterstützte Browser für das Ausführen von Apps
+
 | **Browser** | **Betriebssystem** |
 | --- | --- |
 | Google Chrome (aktuelle Version)<br>(empfohlen) |Windows 7 SP1, 8.1 und 10 <br>Android 5 oder höher <br>iOS 8 oder höher<br>macOS |
@@ -34,6 +36,7 @@ In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser so
 | Apple Safari (aktuelle Version) |iOS 8 oder höher <br>macOS |
 
 ## <a name="supported-browsers-for-powerapps-studio"></a>Unterstützte Browser für PowerApps Studio
+
 | **Browser** | **Betriebssystem** |
 | --- | --- |
 | Google Chrome (aktuelle Version)<br>(empfohlen) |Windows 7 SP1, 8.1 und 10 <br>macOS |
@@ -58,7 +61,7 @@ Aufrufe, die von einer API erfolgen, die durch eine App verbunden ist (z.B. die 
 
 Sie sollten diese Adressen beispielsweise verwenden, wenn Sie eine Whitelist mit IP-Adressen für eine Azure SQL-Datenbank erstellen müssen.
 
->   [!IMPORTANT] 
+> [!IMPORTANT]
 >   Wenn Sie bereits über Konfigurationen verfügen, aktualisieren Sie diese so schnell wie möglich (vor dem 1. September 2018), sodass diese die in der folgenden Liste aufgeführten IP-Adressen für die Regionen umfassen, in denen Ihre PowerApps-Apps vorhanden sind, und diesen entsprechen.
 
 | Region | Ausgehende IP |

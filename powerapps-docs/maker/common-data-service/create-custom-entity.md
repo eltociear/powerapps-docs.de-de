@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: tutorial
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: c587ed6488ae498e3ec662016ee1d028023e4095
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4430637d197530cff793a2fcde1c2485bf59a9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168249"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897292"
 ---
 # <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>Tutorial: Erstellen benutzerdefinierter Entitäten mit Komponenten in PowerApps
 
@@ -38,49 +38,49 @@ Melden Sie sich bei [PowerApps](https://powerapps.microsoft.com/) an. Wenn Sie n
 1. Erweitern Sie **Daten** im linken Navigationsbereich, und klicken Sie auf **Entitäten** und dann auf **Neue Entität**.
     ![Neue Entität](media/create-custom-entity/create-new-entity.png)
 2. Geben Sie im rechten Bereich folgende Werte ein, und klicken Sie dann auf **Weiter**.
-  - **Anzeigename:** *Haustier* 
-  - **Beschreibung:** *Benutzerdefinierte Entität zum Nachverfolgen von Haustierdienstleistungen*
+   - **Anzeigename:** *Haustier* 
+   - **Beschreibung:** *Benutzerdefinierte Entität zum Nachverfolgen von Haustierdienstleistungen*
 3. Klicken Sie auf **Entität speichern**.
 
 ## <a name="add-and-customize-fields"></a>Hinzufügen und Anpassen von Feldern
  
 1. Klicken Sie auf der Registerkarte **Felder** auf das Feld **Primärer Name**.
 2. Nehmen Sie im rechten Bereich folgende Änderungen am Feld **Primärer Name** vor: 
-  - Ändern Sie den **Anzeigenamen** von **Primärer Name** in *Name des Haustiers*.
-  - Aktivieren Sie das Kontrollkästchen **Durchsuchbar**.  
+   - Ändern Sie den **Anzeigenamen** von **Primärer Name** in *Name des Haustiers*.
+   - Aktivieren Sie das Kontrollkästchen **Durchsuchbar**.  
   
-    ![Primäres Feld ändern](media/create-custom-entity/primary-field.png)
+     ![Primäres Feld ändern](media/create-custom-entity/primary-field.png)
 3. Wählen Sie **Fertig** aus.
 4. Klicken Sie in der Registerkarte **Felder** auf der Symbolleiste des Entitäts-Designers auf **Feld hinzufügen**. Geben Sie im Bereich **Feldeingenschaften** folgende Werte und Optionen ein, oder wählen Sie diese aus.
-  - **Anzeigename:** *Tierart*
-  - **Datentyp:** *Optionssatz*
-  - **Optionssatz:** *Neuer Optionssatz*
+   - **Anzeigename:** *Tierart*
+   - **Datentyp:** *Optionssatz*
+   - **Optionssatz:** *Neuer Optionssatz*
 5. Erstellen des Optionssatzes
 
-  a. Klicken Sie auf **Neues Element hinzufügen**. 
+   a. Klicken Sie auf **Neues Element hinzufügen**. 
   
-  b. Ersetzen Sie **Neue Option** mit *Hund*. 
+   b. Ersetzen Sie **Neue Option** mit *Hund*. 
    
-  c. Klicken Sie auf **Neues Element hinzufügen**. 
+   c. Klicken Sie auf **Neues Element hinzufügen**. 
     
-  d.  Ersetzen Sie **Neue Option** mit *Katze*. 
+   d.  Ersetzen Sie **Neue Option** mit *Katze*. 
     
-  e. Wählen Sie **Speichern**. 
+   e. Wählen Sie **Speichern**. 
 
-  ![Neuer Optionssatz](media/create-custom-entity/optionset-add-items.png)
+   ![Neuer Optionssatz](media/create-custom-entity/optionset-add-items.png)
 
 6. Aktivieren Sie das Kontrollkästchen **Durchsuchbar**, und klicken Sie dann auf **Fertig**.
 
 7. Klicken Sie in der Symbolleiste des Entitäts-Designers auf **Feld hinzufügen**. Geben Sie im Bereich **Feldeigenschaften** folgende Werte ein, oder wählen Sie diese aus, und klicken Sie dann auf **Fertig**.
-  - **Anzeigename:** *Rasse*
-  - **Datentyp:** *Text*
-  - **Durchsuchbar:** *Ja*
+   - **Anzeigename:** *Rasse*
+   - **Datentyp:** *Text*
+   - **Durchsuchbar:** *Ja*
 
 8. Klicken Sie in der Symbolleiste des Entitäts-Designers auf **Feld hinzufügen**. 
 
 9. Geben Sie im Bereich **Feldeigenschaften** folgende Werte ein, oder wählen Sie diese aus, und klicken Sie dann auf **Fertig**. 
-  - **Anzeigename:** *Termin*
-  - **Datentyp:** *Datum und Uhrzeit*
+   - **Anzeigename:** *Termin*
+   - **Datentyp:** *Datum und Uhrzeit*
 
 10. Klicken Sie auf **Entität speichern**.
 
@@ -97,10 +97,10 @@ Beachten Sie, dass beim Hinzufügen einer n:1-Beziehung ein **Konto**-Feld mit d
 
 1. Klicken Sie auf die Registerkarte **Ansichten**, und klicken Sie dann auf die Ansicht **Active Pets** (Aktive Haustiere). Wenn die Ansicht **Active Pets** (Aktive Haustiere) nicht angezeigt wird, klicken Sie auf **Filter entfernen**.
 2. Klicken Sie im Ansicht-Designer auf **Spalten hinzufügen**, wählen Sie folgende Spalten aus, und klicken Sie dann auf **OK**.
-  - Konto
-  - Termin 
-  - Rasse 
-  - Tierart
+   - Konto
+   - Termin 
+   - Rasse 
+   - Tierart
 3. Klicken Sie auf die Spalte **Erstellt am** > **Entfernen**, und klicken Sie dann auf **OK**, um die Entfernung der Spalte zu bestätigen.
 4. Wählen Sie die Spalte aus, die Sie verschieben möchten, und verwenden Sie die Pfeile nach links und nach rechts, bis Ihre Ansicht folgendermaßen aussieht.
     ![Ansicht „Aktive Haustiere“](media/create-custom-entity/active-pets-view.png)

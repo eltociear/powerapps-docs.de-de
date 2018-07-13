@@ -12,12 +12,12 @@ ms.topic: sample
 ms.component: canvas
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4601cabae10f3373f8d2ef18190d71af536811b5
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e7ed897af79831f9d8db7ae6da6719b3e6977807
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34470041"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896970"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“
 
@@ -173,27 +173,27 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ## <a name="import-the-help-desk-powerapp"></a>Importieren der PowerApps-App „Help Desk“
 
-1.  Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
-2.  Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
-3.  Wählen Sie im Menü auf der linken Seite **Apps** aus. 
-4.  Klicken Sie auf **Paket importieren (Vorschau)**.
+1. Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
+2. Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
+3. Wählen Sie im Menü auf der linken Seite **Apps** aus. 
+4. Klicken Sie auf **Paket importieren (Vorschau)**.
     
-    ![Anzeige „Paket importieren“](./media/help-desk-install/import-package.png)
+   ![Anzeige „Paket importieren“](./media/help-desk-install/import-package.png)
 
-5.  Klicken Sie auf **Hochladen**, und wählen Sie das PowerApps-Paket aus, das Sie in den vorherigen Schritten heruntergeladen haben.
-6.  Legen Sie für die Ressourcentypen **App** und **Flow** für **IMPORTEINRICHTUNG** die Option **Als neu erstellen** fest.
-7.  Legen Sie für die Verbindungen **SharePoint** und **Outlook** für **IMPORTEINRICHTUNG** die Option **Beim Import auswählen** fest.
+5. Klicken Sie auf **Hochladen**, und wählen Sie das PowerApps-Paket aus, das Sie in den vorherigen Schritten heruntergeladen haben.
+6. Legen Sie für die Ressourcentypen **App** und **Flow** für **IMPORTEINRICHTUNG** die Option **Als neu erstellen** fest.
+7. Legen Sie für die Verbindungen **SharePoint** und **Outlook** für **IMPORTEINRICHTUNG** die Option **Beim Import auswählen** fest.
     
-    ![Anzeige „Importeinstellungen“](./media/help-desk-install/import-settings.png)
+   ![Anzeige „Importeinstellungen“](./media/help-desk-install/import-settings.png)
 
-8.  Klicken Sie auf das **rote Symbol** für die **SharePoint-Verbindung**.
-9.  Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
+8. Klicken Sie auf das **rote Symbol** für die **SharePoint-Verbindung**.
+9. Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
 
-    ![Anzeige „Importeinstellungen“](./media/help-desk-install/import-settings-sharepoint.png)
+   ![Anzeige „Importeinstellungen“](./media/help-desk-install/import-settings-sharepoint.png)
 
 10. Klicken Sie auf **Speichern**.
-11.  Klicken Sie auf das **rote Symbol** für die **Office 365 Outlook-Verbindung**.
-12.  Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
+11. Klicken Sie auf das **rote Symbol** für die **Office 365 Outlook-Verbindung**.
+12. Klicken Sie in der Verbindungsliste auf das Element mit ihrem Benutzernamen.
 
     ![Anzeige „Importeinstellungen“](./media/help-desk-install/import-settings-office365outlook.png)
 
@@ -241,13 +241,13 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 1. Klicken Sie auf **LoginScreen** (Startseite).
 2. Wählen Sie in der Dropdownliste **OnStart** (Beim Start) aus.
 3. Erweitern Sie das Formelfenster, und suchen die Sammlung **AdminList**.
-4. Ersetzen Sie **user@microsoft.com** durch Ihre HelpDesk-Administratoren.
+4. Ersetzen Sie <strong>user@microsoft.com</strong> durch Ihre HelpDesk-Administratoren.
 
     ![Aktualisieren der Administratorliste](./media/help-desk-install/Change-admin.png)
     
-    > [!TIP] 
-    > Wenn Sie über mehr als einen Administrator verfügen, trennen Sie die Auflistung durch ein Komma ab.  Beispiel: "admin1@microsoft.com","admin2@microsoft.com".
-    > Sehen Sie sich unter „Ansicht“ > „Variablen“ > „Global“ > „MyProfile“ (Mein Profil) in der Spalte „E-Mail“ das E-Mail-Format an, um zu überprüfen, ob die Adressen in „AdminList“ dem von PowerApps erwarteten Format entsprechen.
+   > [!TIP]
+   > Wenn Sie über mehr als einen Administrator verfügen, trennen Sie die Auflistung durch ein Komma ab.  Beispiel: "admin1@microsoft.com","admin2@microsoft.com".
+   > Sehen Sie sich unter „Ansicht“ > „Variablen“ > „Global“ > „MyProfile“ (Mein Profil) in der Spalte „E-Mail“ das E-Mail-Format an, um zu überprüfen, ob die Adressen in „AdminList“ dem von PowerApps erwarteten Format entsprechen.
 
 5. Klicken Sie auf **Datei**.
 6. Klicken Sie auf **Speichern**.

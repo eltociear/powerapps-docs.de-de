@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: e73324d6cfce5edf7ece0350b2047dc7842373bb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d374ec8459f4182b11ecf91e28af24a31bb6c055
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836767"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896832"
 ---
 # <a name="develop-offline-capable-apps-with-powerapps"></a>Entwickeln von offlinefähigen Apps mit PowerApps
 Eins der häufigsten Szenarien, denen Sie als Entwickler von mobilen Apps begegnen, besteht darin, Ihren Benutzern produktives Arbeiten in Umgebungen mit eingeschränkter Konnektivität oder ohne Konnektivität zu ermöglichen. PowerApps weist eine Reihe von Funktionen und Verhaltensweisen auf, die Sie bei der Entwicklung von Apps mit Offlinefähigkeit unterstützen. Sie haben folgende Möglichkeiten:
@@ -41,19 +41,19 @@ Um den Schwerpunkt bei den Offlineaspekten der App-Entwicklung zu belassen, zeig
 Allgemein betrachtet, führt die App die folgenden Funktionen aus:
 
 1. Beim Starten der App (basierend auf der Eigenschaft **OnVisible** des ersten Bildschirms):
-   
+
    * Wenn das Gerät über Onlinezugriff verfügt, erfolgt der Zugriff auf den Twitter-Connector direkt, um Daten abzurufen und eine Sammlung mit diesen Daten aufzufüllen.
    * Wenn das Gerät offline ist, laden wir die Daten mithilfe von [LoadData](../canvas-apps/functions/function-savedata-loaddata.md) aus einer lokalen Cachedatei.
    * Wir ermöglichen dem Benutzer das Übermitteln von Tweets – wenn die App online ist, erfolgt sofort die Veröffentlichung auf Twitter, und der lokale Cache wird aktualisiert.
 2. Im Onlinemodus geschieht alle 5 Minuten Folgendes:
-   
+
    * Wir veröffentlichen alle Tweets, die sich im lokalen Cache befinden.
    * Wir aktualisieren den lokalen Cache und speichern ihn mithilfe von [SaveData](../canvas-apps/functions/function-savedata-loaddata.md).
 
 ### <a name="step-1-create-a-new-phone-app"></a>Schritt 1: Erstellen einer neuen Smartphone-App
 1. Öffnen Sie PowerApps Studio.
 2. Klicken oder tippen Sie auf **Neu** > **Leere App** > **Smartphonelayout**.
-   
+
     ![Leere App, Smartphonelayout](./media/offline-apps/blank-app.png)
 
 ### <a name="step-2-add-a-twitter-connection"></a>Schritt 2: Hinzufügen einer Twitter-Verbindung
@@ -63,7 +63,7 @@ Allgemein betrachtet, führt die App die folgenden Funktionen aus:
 2. Klicken oder tippen Sie auf **Neue Verbindung**, wählen Sie **Twitter** aus, und klicken oder tippen Sie dann auf **Erstellen**.
 
 3. Geben Sie Ihre Anmeldeinformationen ein, und erstellen Sie die Verbindung.
-   
+
     ![Hinzufügen einer Twitter-Verbindung](./media/offline-apps/twitter-connection.png)
 
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Schritt 3: Laden von Tweets in eine LocalTweets-Sammlung beim Start
@@ -127,20 +127,20 @@ Diese Formel überprüft, ob das Gerät online ist. Wenn dies der Fall ist, laut
 ### <a name="step-7-add-a-button-to-post-the-tweet"></a>Schritt 7: Hinzufügen einer Schaltfläche zum Veröffentlichen des Tweets
 1. Fügen Sie ein **Button**-Steuerelement hinzu, und legen Sie die Eigenschaft **Text** auf „Tweet“ fest.
 2. Legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
-   
+
     ```
     If (Connection.Connected,
-   
+
         Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-   
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-   
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-   
+
     );
-   
+
     UpdateContext({resetNewTweet: true});
-   
+
     UpdateContext({resetNewTweet: false})
     ```  
 
@@ -159,18 +159,18 @@ Fügen Sie ein neues **Timer**-Steuerelement hinzu:
 * Legen Sie die **AutoStart**-Eigenschaft auf „true“ fest.
 
 * Legen Sie **OnTimerEnd** auf die folgende Formel fest:
-  
+
     ```
     If(Connection.Connected,
-  
+
         ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-  
+
         Clear(LocalTweetsToPost);
-  
+
         Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-  
+
         SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-  
+
         UpdateContext({statusText: "Online data"})
     )
     ```

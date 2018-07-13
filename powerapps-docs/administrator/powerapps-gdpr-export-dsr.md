@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 000f15ea7b1fa4e11cbe49b44e57017daf973a89
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 8eb651bcd4ad9320dc8995864249f619bb76ab77
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552965"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896855"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten
 Das „Recht auf Datenübertragbarkeit“ ermöglicht einer betroffenen Person die Anforderung einer Kopie ihrer personenbezogenen Daten in elektronischem Format (d.h. in einem „strukturierten, häufig verwendeten, maschinenlesbaren und interoperablen Format“), die an einen anderen Verantwortlichen übertragen werden kann:
@@ -39,7 +39,7 @@ Verbindungsberechtigungen  | | App-Ersteller: Verfügbar <br> Administrator: Ver
 PowerApps-Benutzereinstellungen, Benutzeranwendungseinstellungen und Benachrichtigungen | | App-Ersteller: Verfügbar <br> Administrator: Verfügbar
 
 > ** Mit der Einführung von Common Data Service (CDS) für Apps werden bei der Erstellung einer Datenbank innerhalb der Umgebung Umgebungsberechtigungen und modellgesteuerte App-Berechtigungen in der Datenbankinstanz von CDS für Apps als Datensätze gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer, die CDS für Apps verwenden, finden Sie unter [Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps](common-data-service-gdpr-dsr-guide.md).
-
+> 
 > *** Ein Administrator kann nur über das [PowerApps-Portal](https://web.powerapps.com) auf die Ressourcen zugreifen, wenn der Besitzer der Ressource ihm explizit Zugriff erteilt hat. Wenn der Zugriff nicht vom Administrator gewährt wurde, müssen die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) verwendet werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen

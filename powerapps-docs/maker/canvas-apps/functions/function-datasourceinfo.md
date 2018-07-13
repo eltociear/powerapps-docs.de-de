@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 5f156e5f7d0acb48090ac921aa92f31f3a6d20ea
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 67354776e7af05fb619033462c52665ce3aa046c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298467"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898626"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Funktion „DataSourceInfo“ in PowerApps
 Stellt Informationen über eine [Datenquelle](../working-with-data-sources.md) bereit
@@ -59,7 +59,7 @@ Sie können **DataSourceInfo** auch dazu verwenden, Informationen über die Date
 * *Spaltenname*: Optional. Bei Informationen auf Spaltenebene der Spaltenname als Zeichenfolge. Die Spalte **Phone** würde als **"Phone"**, inklusive der doppelten Anführungszeichen, übergeben werden. Für Informationen auf Datenbankebene kann das *Spaltenname*-Argument nicht verwendet werden.
   
     > [!NOTE]
-> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+  > Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 ## <a name="examples"></a>Beispiele
 In den Beispielen in diesem Abschnitt wird diese Datenquelle namens **IceCream** (Eiscreme) verwendet:

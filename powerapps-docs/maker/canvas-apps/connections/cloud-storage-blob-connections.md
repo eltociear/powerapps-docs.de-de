@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: b0141315f041d81b929a53761952d9b5e355c82e
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 04bfdd2d59b870184e5e42ac06135d00f52dcc70
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803025"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895682"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
 PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
@@ -47,7 +47,7 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
     ![Auswählen der Excel-Tabelle](./media/cloud-storage-blob-connections/selecttable.png)
    
     > [!NOTE]
-> Beachten Sie, dass die Excel-Daten als Tabelle formatiert sein müssen.
+   > Beachten Sie, dass die Excel-Daten als Tabelle formatiert sein müssen.
 
 ## <a name="using-the-excel-data-in-your-app"></a>Verwenden von Excel-Daten in der App
 1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Katalog** aus, und wählen Sie anschließend ein Katalogsteuerelement **Mit Text** aus.

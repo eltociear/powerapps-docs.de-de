@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 6d4f8f0393b7cb2d6471f159193327f07e648357
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c175b1b35d063f4e20321c494d5472afa2776990
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836905"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899569"
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -165,6 +165,6 @@ Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informatione
 * Verwenden Sie **[Text](properties-core.md)** niemals für zeitkritische und wichtige Informationen. Benutzer der Sprachausgabe werden über Änderungen an **[Text](properties-core.md)** nicht informiert.
 
     > [!NOTE]
-> Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
+  > Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
 
 * Fügen Sie ggf. eine **[Bezeichnung](control-text-box.md)** hinzu, die die verstrichene Zeit anzeigt. Weisen Sie den Benutzer mithilfe des **[Texts](properties-core.md)** an, ob der Timer gestartet oder beendet werden soll.

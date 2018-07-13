@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 76571a53c95661d853b7fb326e3c1087a6f432c4
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: eceaf1886bf77b85d6d6b3faae3f32428223cb7e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330926"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899500"
 ---
 # <a name="overview-of-building-a-model-driven-app"></a>Übersicht über die Erstellung einer modellgesteuerten App
 
@@ -30,7 +30,7 @@ Das Design modellgesteuerter Apps bietet folgende Vorteile:
 - Erstellen von komplexen dynamischen Apps mit einer ähnlichen Benutzeroberfläche auf unterschiedlichen Geräten, egal ob es sich dabei um Desktopgeräte oder Mobilgeräte handelt
 - Entwerfen von Funktionen, die den auf der Dynamics 365 Customer Engagement-Plattform verfügbaren Funktionen ähnlich sind 
 - Ihre App kann als eine Lösung verteilt werden
- 
+
 ## <a name="the-approach-to-model-driven-app-making"></a>Ansatz für die Erstellung modellgesteuerter Apps
 Die Erstellung modellgesteuerter Apps besteht grundsätzlich aus drei Schwerpunktbereichen.
 
@@ -54,6 +54,7 @@ Eine wohlgeformte modellgesteuerte App besteht aus mehreren Komponenten, die vom
 
 ### <a name="data"></a>Daten
 Diese Komponenten bestimmen, auf welchen Daten die App basiert.
+
 
 
 |Komponente  |Beschreibung  |Designer  |

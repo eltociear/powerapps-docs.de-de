@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: ecbdc81b2688ee9aabf5e0df6416212957ca2642
-ms.sourcegitcommit: 222df368f1f35e9357b0b1adf0e69d7206d8126e
+ms.openlocfilehash: 45a341d28b4138ce03ce50d7325f9daa0f159d1a
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36298490"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897430"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Schnellstart: Erstellen einer benutzerdefinierten Entität
 Mit einer *Entität* werden in PowerApps die Informationen definiert, die Sie in Form von Datensätzen nachverfolgen möchten. Diese enthalten üblicherweise Eigenschaften wie den Firmennamen, den Standort, die Produkte, die E-Mail-Adresse und die Telefonnummer. Sie können diese Daten dann abrufen, indem Sie eine App entwickeln, die auf die Entität verweist. PowerApps stellt vorkonfigurierte Standardentitäten zur Verfügung, die für typische Szenarios in einer Organisation (beispielsweise das Nachverfolgen von Terminen) verwendet werden können. In einigen Fällen ist es aber möglicherweise erforderlich, benutzerdefinierte Entitäten zu erstellen, mit denen organisationsspezifische Daten gespeichert werden können.
@@ -38,10 +38,10 @@ Melden Sie sich bei PowerApps unter [https://web.powerapps.com](https://web.powe
 
 3. Geben Sie zuerst im Bereich **New entity** (Neue Entität) im Feld **Display name** (Anzeigename) die Zeichenfolge **Produktbewertung** und anschließend optional eine Beschreibung ein. Beschreibungen sind hilfreich, wenn andere Personen diese Entität verwenden. Andere Felder im Bereich werden wie unten beschrieben automatisch aufgefüllt. Klicken Sie abschließend auf **Next** (Weiter).
 
-    * **Plural display name** (Anzeigename im Plural): Dieses Feld wird automatisch ausgefüllt, wenn Sie einen Anzeigenamen eingeben. Sie können diese Einstellung jedoch bei Bedarf ändern. Der Anzeigename im Plural ist der Name der Entität in der Common Data Service-WebAPI und wird verwendet, wenn mit der Entität über PowerApps oder Flow interagiert wird.
-    * **Name**: Dieses Feld wird auch automatisch ausgefüllt, wenn Sie einen Anzeigenamen eingeben. Das Präfix wurde beim Erstellen der Umgebung eingerichtet und stellt sicher, dass die von Ihnen erstellten Entitäten exportiert und in andere Umgebungen importiert werden können, ohne mit den Namen anderer Entitäten in Konflikt zu geraten. Sie können dieses Präfix ändern, indem Sie das Präfix des Herausgebers der Common Data Service-Standardlösung aktualisieren. Damit bei vorhandenen Apps keine Fehler auftreten, können Sie den Namen nach dem Speichern der Entität nicht mehr ändern.
+   * **Plural display name** (Anzeigename im Plural): Dieses Feld wird automatisch ausgefüllt, wenn Sie einen Anzeigenamen eingeben. Sie können diese Einstellung jedoch bei Bedarf ändern. Der Anzeigename im Plural ist der Name der Entität in der Common Data Service-WebAPI und wird verwendet, wenn mit der Entität über PowerApps oder Flow interagiert wird.
+   * **Name**: Dieses Feld wird auch automatisch ausgefüllt, wenn Sie einen Anzeigenamen eingeben. Das Präfix wurde beim Erstellen der Umgebung eingerichtet und stellt sicher, dass die von Ihnen erstellten Entitäten exportiert und in andere Umgebungen importiert werden können, ohne mit den Namen anderer Entitäten in Konflikt zu geraten. Sie können dieses Präfix ändern, indem Sie das Präfix des Herausgebers der Common Data Service-Standardlösung aktualisieren. Damit bei vorhandenen Apps keine Fehler auftreten, können Sie den Namen nach dem Speichern der Entität nicht mehr ändern.
      
-    ![Neue Entität](./media/data-platform-cds-create-entity/newentitypanel.png "New entity panel")
+     ![Neue Entität](./media/data-platform-cds-create-entity/newentitypanel.png "New entity panel")
 
 4. Klicken oder tippen Sie auf der Seite mit den Entitätsdetails auf das Feld **Primary Name** (Primärer Name), um den Bereich **Primary Name** zu öffnen. Ersetzen Sie anschließend im Feld **Display name** den Wert für **Primary Name** durch **Produktbewertung**. Ersetzen Sie im Feld **Name** den Wert für **Primary Name** durch **Produktbewertung**, und klicken oder tippen Sie auf **Done** (Fertig).
  
@@ -66,15 +66,15 @@ Melden Sie sich bei PowerApps unter [https://web.powerapps.com](https://web.powe
     ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Bereich „Neues Feld“")
 
 6. Wiederholen Sie den vorherigen Schritt, um drei weitere Felder mit den folgenden Konfigurationen hinzuzufügen:
-    * **Display name** = Produktbewertung; **Data type** = Ganze Zahl. Klicken oder tippen Sie auf das Kontrollkästchen **Required**.
-    * **Display name**  = Name des Rezensenten; **Data type** = Text.
-    * **Anzeigename**  = Kommentar des Rezensenten; **Datentyp** = Text.
+   * **Display name** = Produktbewertung; **Data type** = Ganze Zahl. Klicken oder tippen Sie auf das Kontrollkästchen **Required**.
+   * **Display name**  = Name des Rezensenten; **Data type** = Text.
+   * **Anzeigename**  = Kommentar des Rezensenten; **Datentyp** = Text.
 
-    Nach diesem Vorgang sollten fünf Felder auf der Seite zu den Entitätsdetails aufgeführt sein.
+     Nach diesem Vorgang sollten fünf Felder auf der Seite zu den Entitätsdetails aufgeführt sein.
 
-    ![Liste mit Feldern](./media/data-platform-cds-create-entity/addedfields.png "List of fields")
+     ![Liste mit Feldern](./media/data-platform-cds-create-entity/addedfields.png "List of fields")
 
-    Beachten Sie, dass alle Entitäten über schreibgeschützte Systemfelder verfügen. Standardmäßig werden Systemfelder nicht in der Felderliste angezeigt, obwohl diese in der Entität vorhanden sind. Sie können den Filter in der Befehlsleiste von **Default** (Standard) in **All** (Alle) ändern, um alle Felder anzuzeigen. Weitere Informationen zu den Metadaten einer Entität finden Sie unter [Entitätsmetadaten](../../developer/common-data-service/entity-metadata.md).
+     Beachten Sie, dass alle Entitäten über schreibgeschützte Systemfelder verfügen. Standardmäßig werden Systemfelder nicht in der Felderliste angezeigt, obwohl diese in der Entität vorhanden sind. Sie können den Filter in der Befehlsleiste von **Default** (Standard) in **All** (Alle) ändern, um alle Felder anzuzeigen. Weitere Informationen zu den Metadaten einer Entität finden Sie unter [Entitätsmetadaten](../../developer/common-data-service/entity-metadata.md).
 
 7. Klicken Sie auf **Entität speichern**, um Ihre Entität zu speichern und für die Verwendung in Apps zur Verfügung zu stellen.
 

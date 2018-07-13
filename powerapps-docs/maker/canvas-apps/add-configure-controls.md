@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 702be2a4f1747b6f3303d1add30d9157f5665ee7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c3b1fb9802541159726a33cacd07c6f9743de0e2
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330473"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896694"
 ---
 # <a name="add-and-configure-a-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Steuerelements in PowerApps
 Fügen Sie Ihrer App vielfältige Benutzeroberflächenelemente hinzu, und konfigurieren Sie Aspekte ihrer Darstellung und ihres Verhaltens direkt, über die Symbolleiste, auf der Registerkarte **Eigenschaften** oder in der Bearbeitungsleiste. Diese Elemente der Benutzeroberfläche werden als Steuerelemente bezeichnet, während die von Ihnen konfigurierten Aspekte als Eigenschaften bezeichnet werden.
@@ -68,7 +68,7 @@ In diesem Verfahren fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu u
     ![Eine ausgewählte Bezeichnung](./media/add-configure-controls/selected-text-box.png)
 
     > [!IMPORTANT]
-> Wenn ein Steuerelement ausgewählt ist und Sie ein anderes Steuerelement oder einen leeren Bereich des Bildschirms auswählen, wird die Auswahl des ersten Elements aufgehoben.
+   > Wenn ein Steuerelement ausgewählt ist und Sie ein anderes Steuerelement oder einen leeren Bereich des Bildschirms auswählen, wird die Auswahl des ersten Elements aufgehoben.
 2. Verringern Sie die Breite des **Label**-Steuerelements (Bezeichnung), indem Sie einen Ziehpunkt am rechten Rand des Auswahlfeldes nach links ziehen. (Der mittlere Ziehpunkt wird nur angezeigt, wenn Sie die Anzeige vergrößern.)
 
     ![Bezeichnung mit veränderter Größe](./media/add-configure-controls/shorter-text-box.png)
@@ -173,7 +173,7 @@ Anstatt ein Steuerelement direkt, auf der Registerkarte **Eigenschaften** oder �
     ![Today-Funktion](./media/add-configure-controls/today-function.png)
 
     > [!TIP]
-> Sie haben verschiedene Möglichkeiten, [Datums- und Uhrzeitangaben zu formatieren](show-text-dates-times.md) und können zudem Berechnungen mit derartigen Daten ausführen.
+   > Sie haben verschiedene Möglichkeiten, [Datums- und Uhrzeitangaben zu formatieren](show-text-dates-times.md) und können zudem Berechnungen mit derartigen Daten ausführen.
 
 ## <a name="configure-two-controls-to-interact-with-each-other"></a>Konfigurieren von zwei miteinander interagierenden Steuerelementen
 In diesem Verfahren fügen Sie ein Kontrollkästchen hinzu und konfigurieren dann die bereits vorhandene Bezeichnung so, dass sie nur angezeigt wird, wenn das Kontrollkästchen aktiviert ist.

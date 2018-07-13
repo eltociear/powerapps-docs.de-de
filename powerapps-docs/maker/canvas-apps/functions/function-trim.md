@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/09/2016
 ms.author: gregli
-ms.openlocfilehash: 38aa25c46bf8b29c413ca9c3df92f9528bfa97d5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f94144c0b279cc61c0af15c95e7cccf73bb124cd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831119"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898419"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>Trim- und TrimEnds-Funktionen in PowerApps
 Entfernt zusätzliche Leerzeichen aus einer Textzeichenfolge.
@@ -41,6 +41,7 @@ Durch das Entfernen der Leerzeichen zwischen Wörtern ist **Trim** konsistent mi
 * *EinspaltigeTabelle*: erforderlich. Eine einspaltige Tabelle mit Zeichenfolgen, in der Leerzeichen entfernt werden sollen.
 
 ## <a name="example"></a>Beispiel
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |Entfernt alle Leerzeichen am Anfang und Ende einer Zeichenfolge und zusätzliche Leerzeichen innerhalb der Zeichenfolge. |„Hello World“ |

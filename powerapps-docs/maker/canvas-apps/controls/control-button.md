@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: a5d818bf12bafaa5c557afae1d93b6ba0a6a7d2f
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 5e292b9cab399e4433c5b209fe22f17dd955ea9f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803441"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898471"
 ---
 # <a name="button-control-in-powerapps"></a>Schaltflächen-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen mit der App interagieren können.
@@ -141,7 +141,7 @@ Fügen Sie eine Formel hinzu, die das **Texteingabe**-Steuerelement zwischen Ein
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
-> Trennen Sie mehrere Formeln durch ein Semikolon „**;**“.
+   > Trennen Sie mehrere Formeln durch ein Semikolon „**;**“.
 3. Legen Sie die **[Default](properties-core.md)**-Eigenschaft von **Quelle** auf **ClearInput** fest.
 4. Drücken Sie **F5**, und testen Sie dann die App, indem Sie mehrere Werte addieren.
 

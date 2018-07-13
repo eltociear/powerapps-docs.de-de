@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: e11521219fcd368801a6e943f45dbc713309ec36
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: d8d5e29fc7f1c551ac637d86886bc658e7414110
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803418"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898005"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Herstellen einer Verbindung mit SQL Server aus PowerApps
 ![SQL Server-Symbol](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -33,7 +33,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 * Geben Sie für eine lokale Datenbank ein [Datengateway](../gateway-management.md) an, das für Sie freigegeben ist (oder erstellen Sie eines).
   
     > [!NOTE]
-> Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
+  > Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
 
 ## <a name="generate-an-app-automatically"></a>Eine App automatisch generieren
 1. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf die Option **Neu** (am linken Rand).
@@ -54,7 +54,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
        ![Herstellen einer Verbindung mit einer lokalen Datenbank](./media/connection-azure-sqldatabase/connect-onprem.png)
      
        > [!NOTE]
-> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf **Gatewayliste aktualisieren**.
+     > Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf **Gatewayliste aktualisieren**.
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie auf eine Option unter **Dataset auswählen**, klicken oder tippen Sie auf eine Option unter **Tabelle auswählen**, und klicken oder tippen Sie dann auf **Verbinden**.
    
@@ -77,7 +77,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
        ![Herstellen einer Verbindung mit einer Datenbank in Azure](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
        > [!NOTE]
-> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie auf das Symbol mit dem im Uhrzeigersinn drehenden Pfeil, um die Liste zu aktualisieren.
+     > Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie auf das Symbol mit dem im Uhrzeigersinn drehenden Pfeil, um die Liste zu aktualisieren.
 5. Klicken oder tippen Sie auf **Erstellen**, um die Verbindung zu erstellen.
 6. Erstellen Sie eine App mithilfe von Techniken wie den in [App von Grund auf neu erstellen](../get-started-create-from-blank.md) beschriebenen.
 
@@ -98,7 +98,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
        ![Herstellen einer Verbindung mit einer Datenbank in Azure](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
        > [!NOTE]
-> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf das Symbol mit dem kreisförmigen Pfeil, um die Liste zu aktualisieren.
+     > Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf das Symbol mit dem kreisförmigen Pfeil, um die Liste zu aktualisieren.
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie unter **Dataset auswählen** auf eine Option.
 8. Aktivieren Sie unter **Tabelle auswählen** ein oder mehrere Kontrollkästchen, und klicken oder tippen Sie auf **Verbinden**.

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 60ec1fc7f896aeb3391ed794920e987b232d09f3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9b2c07e8599ada76aa2f2195fc1240321ed02ef9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31833486"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898212"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
 Zeigen Sie eine Liste mit Elementen aus einer beliebigen Datenquelle an, indem Sie der App ein **[Katalog](controls/control-gallery.md)**-Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)**-Steuerelement entsprechen.
@@ -52,7 +52,7 @@ Zeigen Sie eine Liste mit Elementen aus einer beliebigen Datenquelle an, indem S
 7. Klicken oder tippen Sie auf **Listenbildschirm**, um einen Bildschirm mit einem **Katalog**-Steuerelement und weiteren Steuerelementen (z.B. einer Suchleiste) hinzuzufügen.
 
     > [!NOTE]
-> Gleich, ob Sie ein **Katalog**-Steuerelement einem neuen oder einem vorhandenen Bildschirm hinzufügen, Sie können nahe dem unteren Rand des **Katalog**-Steuerelements klicken oder tippen, um es auszuwählen, dann im rechten Bereich auf **Flooring Estimates** und anschließend auf ein anderes Layout im Bereich **Daten** klicken oder tippen. Lassen Sie für dieses Tutorial das Standardlayout eingestellt.
+   > Gleich, ob Sie ein **Katalog**-Steuerelement einem neuen oder einem vorhandenen Bildschirm hinzufügen, Sie können nahe dem unteren Rand des **Katalog**-Steuerelements klicken oder tippen, um es auszuwählen, dann im rechten Bereich auf **Flooring Estimates** und anschließend auf ein anderes Layout im Bereich **Daten** klicken oder tippen. Lassen Sie für dieses Tutorial das Standardlayout eingestellt.
 
     ![Auswählen des Kataloglayouts](./media/add-gallery/select-layout.png)
 

@@ -8,12 +8,12 @@ ms.component: pa-admin
 ms.topic: reference
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 788f9ec1ce1ac8604606d2d2ad836a0cd12360d4
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 2cb1e1b83cffee2ccea0a4d4b563de44aaa3e68c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552988"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896188"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerShell-Unterstützung für PowerApps (Vorschau)
 Durch die Einführung der Vorschauversion der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
@@ -58,6 +58,7 @@ So führen Sie die PowerShell-Cmdlets für App-Ersteller aus:
 Benutzer mit einer gültigen PowerApps-Lizenz können die Vorgänge in diesen Cmdlets ausführen, haben aber nur Zugriff auf Ressourcen wie z.B. Apps und Flows, die für sie erstellt oder freigegeben wurden.
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
+
 | Zweck | Cmdlet |
 | --- | --- |
 | Lesen von Umgebungen | Get-PowerAppsEnvironment <br> Get-FlowEnvironment
@@ -90,13 +91,15 @@ Zur Ausführung der Verwaltungsvorgänge in den Cmdlets für Administratoren ben
 * Die Berechtigungen [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. (Beachten Sie, das Umgebungsadministratoren nur Zugriff auf die Umgebungen und Umgebungsressourcen haben, für die sie über die Berechtigungen verfügen.)
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
+
 | Zweck | Cmdlets
 | --- | ---
 | Lesen und Löschen von Umgebungen | Get-AdminEnvironment <br> Remove-AdminEnvironment
 | Lesen, Aktualisieren und Löschen von Berechtigungen für Umgebungen <br><br> *Diese Cmdlets können nur in Umgebungen ausgeführt werden, die nicht über eine Common Data Service for Apps-Datenbank verfügen.* | Get-AdminEnvironmentRoleAssignment <br> Set-AdminEnvironmentRoleAssignment <br> Remove-AdminEnvironmentRoleAssignment
 | Lesen und Entfernen von Canvas-Apps | Get-AdminApp <br> Remove-AdminApp
 | Lesen, Aktualisieren und Löschen von Berechtigungen für eine Canvas-App | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
-| Lesen, Aktualisieren und Löschen von Flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow  <br> Remove-AdminFlowOwnerRole
+| Lesen, Aktualisieren und Löschen von Flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow
+| Lesen, Aktualisieren und Löschen von Berechtigungen für einen Flow | Get-AdminFlowOwnerRole <br> Set-AdminFlowOwnerRole <br> Remove-AdminFlowOwnerRole
 | Lesen und Löschen von Verbindungen | Get-AdminConnection <br> Remove-AdminConnection
 | Lesen, Aktualisieren und Löschen von Berechtigungen für Verbindungen | Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br> Remove-AdminConnectionRoleAssignment
 | Lesen und Löschen von benutzerdefinierten Connectors | Get-AdminConnector <br> Remove-AdminConnector

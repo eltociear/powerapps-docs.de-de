@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/12/2016
 ms.author: lanced
-ms.openlocfilehash: a3a5d24efffd7cd3c9430cafd5050dc96632ee76
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 0666350b9c60fdd3a1ed9cb2a3e7fa7b46bdd683
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803165"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896878"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Herstellen einer Verbindung mit Power BI aus PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -30,7 +30,7 @@ In diesem Thema wird gezeigt, wie Sie die Power BI-Verbindung in einer App verwe
 ### <a name="list-the-alerts-that-youve-set-up-in-the-power-bi-service"></a>Auflisten der Warnungen, die Sie im Power BI-Dienst eingerichtet haben
 1. Wählen Sie im Menü **Insert** (Einfügen) die Option **Katalog** aus, und fügen Sie eine der **Text galleries** (Textkataloge) hinzu.
 2. Um die Warnungen des aktuellen Benutzers anzuzeigen, legen Sie die [Items](../controls/properties-core.md)-Eigenschaft des Katalogs auf die folgende Formel fest:
-   
+
    `PowerBI.GetAlerts()`
 
 Der Katalog wird mit der Liste der Warnungen aktualisiert. Für jede Warnung erhalten Sie den Namen der Warnung, die ID der Warnung und die ID des Gruppenarbeitsbereichs, in dem die Warnung konfiguriert wurde. Sie benötigen die Warnungs-ID, um weitere Informationen zur Warnung zu erhalten.
@@ -64,6 +64,7 @@ Auflisten der Warnungen, die Sie im Power BI-Dienst eingerichtet haben.
 Keine
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | value |Array |Nein |Ein Array der Datenwarnungen, die Sie im Power BI-Dienst eingerichtet haben. Jedes Element im Array enthält: <ul><li>alertTitle: der Titel der Warnung</li><li>alertId: die ID der Warnung</li><li>groupId: die ID der Gruppe, in der die Warnung erstellt wurde</li></ul> |
@@ -75,11 +76,13 @@ Keine
 > Anforderungen an diesen Endpunkt werden pro Warnung gedrosselt, wenn die Funktion zu häufig aufgerufen wird.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | alertId |Ganze Zahl |Ja |Die von GetAlerts zurückgegebene ID der Warnung |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | tileValue |Zahl |Nein |Der Wert der Kachel, als die Warnung ausgelöst wurde |

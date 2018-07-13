@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: caa8cf8678a509e4d66442f790b8d89905d48b92
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: cfc47e95cff02dfcbcc2d3ff456e32a4ca2c675e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838600"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899435"
 ---
 # <a name="label-control-in-powerapps"></a>Label-Steuerelement (Bezeichnung) in PowerApps
 Ein Feld, das Daten wie Text, Zahlen, Datumsangaben oder Währung anzeigt.
@@ -129,7 +129,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
   **Today()**
   
     > [!NOTE]
-> Verwenden Sie beim Angeben einer Formel nur Anführungszeichen, wenn ein Argument der Formel ein Zeichenfolgenliteral ist. Umschließen Sie in diesem Fall das Argument und nicht die Formel mit doppelten Anführungszeichen.
+  > Verwenden Sie beim Angeben einer Formel nur Anführungszeichen, wenn ein Argument der Formel ein Zeichenfolgenliteral ist. Umschließen Sie in diesem Fall das Argument und nicht die Formel mit doppelten Anführungszeichen.
   
     Benötigen Sie weitere Informationen zur **[Today](../functions/function-now-today-istoday.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
@@ -159,7 +159,7 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
 
     > [!NOTE]
-> **Bezeichnungen** werden von der Sprachausgabe als Schaltflächen angesehen, wenn **[TabIndex](properties-accessibility.md)** gleich 0 oder größer ist.
+  > **Bezeichnungen** werden von der Sprachausgabe als Schaltflächen angesehen, wenn **[TabIndex](properties-accessibility.md)** gleich 0 oder größer ist.
 
 ### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
 * Wenn eine **Bezeichnung** als Link verwendet wird, sollte diese auch wie ein Link aussehen.

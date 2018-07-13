@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: a784251899e7c51ef8213b6d6f31c2830b08e2dc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e7da24eec1a85a1d57ab83476734639ef0f5dd25
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838853"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898074"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Funktion „UpdateContext“ in PowerApps
 Erstellt oder aktualisiert die [Kontextvariablen](../working-with-variables.md#create-a-context-variable) des aktuellen Bildschirms.
@@ -68,6 +68,7 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 * *Kontextvariable2*: *Wert2*,...: optional. Zusätzliche zu erstellende oder zu aktualisierende Kontextvariablen und deren Werte
 
 ## <a name="examples"></a>Beispiele
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |Erstellt oder ändert die **Counter**-Kontextvariable und legt deren Wert auf **1** fest |**Counter** hat den Wert **1**. Mit dem Namen **Counter** können Sie in einer Formel auf diese Variable verweisen. |
@@ -85,10 +86,10 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 6. Wählen Sie auf dem Bildschirm **Ziel** auf der Registerkarte **Einfügen** **Shapes** (Formen) aus, und wählen Sie dann den Rückwärtspfeil.
 7. Legen Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft des Rückwärtspfeils auf folgende Formel fest:<br>**Navigate(Source, ScreenTransition.Fade)**
 8. Drücken Sie auf dem Bildschirm **Quelle** F5, und wählen Sie dann die Schaltfläche für eine der beiden Sprachen.
-   
+
     Auf dem Bildschirm **Ziel** wird eine Bezeichnung in der Sprache angezeigt, die mit der von Ihnen ausgewählten Schaltfläche übereinstimmt.
 9. Wählen Sie den Rückwärtspfeil, um wieder zum Bildschirm **Quelle** zu gelangen, und wählen Sie dann die Schaltfläche für die andere Sprache.
-   
+
     Auf dem Bildschirm **Ziel** wird eine Bezeichnung in der Sprache angezeigt, die mit der von Ihnen ausgewählten Schaltfläche übereinstimmt.
 10. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 

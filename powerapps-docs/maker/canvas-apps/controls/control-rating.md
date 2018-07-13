@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 1df75e5de1f0d8a2515b4dcf761593145d72f70a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2cdf88c21e9cd8dd957fa5cf704280df325e85fd
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834651"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898304"
 ---
 # <a name="rating-control-in-powerapps"></a>Steuerelement für Bewertungen in PowerApps
 Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen Anzahl, die Sie festlegen, angeben können.
@@ -105,7 +105,7 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-> Das **Bewertungs**-Steuerelement wird von der Sprachausgabe wie ein Optionsfeld behandelt.
+  > Das **Bewertungs**-Steuerelement wird von der Sprachausgabe wie ein Optionsfeld behandelt.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
@@ -113,4 +113,4 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 * Wenn es zu viele Sterne gibt, sollten Sie ein anderes Steuerelement verwenden. Die Navigation mit der Tastatur kann mühsam sein, und bei einem Touchscreen ist es kompliziert, eine genaue Auswahl zu treffen.
 
     > [!NOTE]
-> Für das**Bewertungs**-Steuerelement können die gleichen Tastenkombinationen wie für Optionsfelder verwendet werden.
+  > Für das**Bewertungs**-Steuerelement können die gleichen Tastenkombinationen wie für Optionsfelder verwendet werden.

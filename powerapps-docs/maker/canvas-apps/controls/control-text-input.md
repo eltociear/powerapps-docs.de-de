@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 3100ebae3d3f9b7cdef839d74e9d289b4059de5d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7f78cc61b4e6af34af7bf6944e70e783872bc255
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838462"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897499"
 ---
 # <a name="text-input-control-in-powerapps"></a>Texteingabe-Steuerelement in PowerApps
 Ein Feld, in das der Benutzer Text, Zahlen und andere Daten eingeben kann
@@ -149,17 +149,23 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 6. (Optional:) Fügen Sie der Sammlung mehr Namen hinzu, und drücken Sie anschließend die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="prompt-for-a-password"></a>Aufforderung zur Kennworteingabe
+
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu, nennen Sie es **inputPassword**, und legen Sie seine **Mode**-Eigenschaft auf **Password** fest.
-2. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:<br>
+
+1. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
-   
+
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
-3. Drücken Sie F5, und geben Sie anschließend **P@ssw0rd** in **inputPassword** ein.
-   
+
+1. Drücken Sie F5, und geben Sie anschließend **P@ssw0rd** in **inputPassword** ein.
+
     Wenn Sie mit der Eingabe des Kennworts fertig sind, zeigt die Bezeichnung nicht mehr **Access denied** (Zugriff verweigert) sondern **Access granted** (Zugriff gewährt) an.
-4. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
-5. (Optional:) Fügen Sie ein Steuerelement wie z.B. einen Pfeil hinzu, konfigurieren Sie es so, dass es zu einem anderen Bildschirm navigiert, und lassen Sie es erst anzeigen, wenn der Benutzer das Kennwort eingegeben hat.
-6. (Optional:) Fügen Sie eine Schaltfläche hinzu, konfigurieren Sie deren **[Text](properties-core.md)**-Eigenschaft so, dass **Anmelden** angezeigt wird, fügen Sie einen Zeitgeber hinzu, und deaktivieren Sie das Textsteuerelement für einen bestimmten Zeitraum, wenn der Benutzer das falsche Kennwort eingibt und anschließend auf die Schaltfläche **Anmelden** klickt oder tippt.
+
+1. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
+
+1. (Optional:) Fügen Sie ein Steuerelement wie z.B. einen Pfeil hinzu, konfigurieren Sie es so, dass es zu einem anderen Bildschirm navigiert, und lassen Sie es erst anzeigen, wenn der Benutzer das Kennwort eingegeben hat.
+
+1. (Optional:) Fügen Sie eine Schaltfläche hinzu, konfigurieren Sie deren **[Text](properties-core.md)**-Eigenschaft so, dass **Anmelden** angezeigt wird, fügen Sie einen Zeitgeber hinzu, und deaktivieren Sie das Textsteuerelement für einen bestimmten Zeitraum, wenn der Benutzer das falsche Kennwort eingibt und anschließend auf die Schaltfläche **Anmelden** klickt oder tippt.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit

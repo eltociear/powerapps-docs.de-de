@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 84981a00a516f553d3f1b318f12a6f68064c66b2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 697752312810473158b4f8cdfed4ef1d7618fdb7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832169"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898350"
 ---
 # <a name="pen-input-control-in-powerapps"></a>Stifteingabe-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -101,7 +101,7 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[AccessibleLabel](properties-accessibility.md)** sollte vorhanden sein.
 
     > [!IMPORTANT]
-> Die **Stifteingabe** ist für Benutzer der Sprachausgabe nicht verfügbar. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Skizze erforderlich ist, sollten Sie ein **[Bild hinzufügen](control-add-picture.md)**-Steuerelement hinzufügen, damit Benutzer Bilder hochladen können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.
+  > Die **Stifteingabe** ist für Benutzer der Sprachausgabe nicht verfügbar. Stellen Sie stets eine alternative Eingabemöglichkeit zur Verfügung. Wenn z.B. eine Skizze erforderlich ist, sollten Sie ein **[Bild hinzufügen](control-add-picture.md)**-Steuerelement hinzufügen, damit Benutzer Bilder hochladen können. Sie können beide Methoden zur Verfügung stellen und der Benutzer die von ihm bevorzugte auswählen.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 

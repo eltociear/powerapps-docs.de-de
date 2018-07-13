@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: lanced
-ms.openlocfilehash: dc68b0f404c2a8d636deb4e77c2ada4582ed3a37
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: baa4c71efb54cea6f04cd45b895009a3c3ce17c7
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836744"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899293"
 ---
 # <a name="overview-of-connectors-for-powerapps"></a>Übersicht über die Connectors für PowerApps
 Daten bilden das Herzstück der meisten Apps, u.a. bei denen, die Sie in PowerApps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. PowerApps verfügt über Connectors für viele gängige Dienste und lokale Datenquellen, u.a. SharePoint, SQL Server, Office 365, Salesforce, Twitter und viele mehr. Die ersten Schritte zum Hinzufügen von Daten zu einer App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.
@@ -46,7 +46,7 @@ Standardconnectors verhalten sich unterschiedlich, abhängig vom Typ der verbund
     [App von Grund auf neu erstellen](get-started-create-from-blank.md)
 
     > [!NOTE]
-> Zum Herstellen einer Verbindung mit Daten in Excel muss die Arbeitsmappe in einem Cloudspeicherdienst wie OneDrive gehostet werden. Weitere Informationen finden Sie im Artikel zum [Verbinden mit Cloudspeicher aus PowerApps](connections/cloud-storage-blob-connections.md).
+  > Zum Herstellen einer Verbindung mit Daten in Excel muss die Arbeitsmappe in einem Cloudspeicherdienst wie OneDrive gehostet werden. Weitere Informationen finden Sie im Artikel zum [Verbinden mit Cloudspeicher aus PowerApps](connections/cloud-storage-blob-connections.md).
 
 * Andere Connectors funktionieren mit funktionsbasierten Datenquellen, z.B. Twitter, Facebook und Office 365 Outlook. Beim Arbeiten mit diesen Datenquellen werden Daten durch Aufrufen bestimmter Funktionen im zugrunde liegenden Dienst an PowerApps zurückgegeben. Mit dem Twitter-Connector können Sie z.B. `Twitter.MyFollowers()` aufrufen, um eine Liste Ihrer Follower zurückzugeben. Sie können diese Daten ebenfalls in einem Formular oder Katalog verwenden, dies ist jedoch etwas komplizierter als bei Tabellendaten. Weitere Informationen finden Sie im Artikel zum [Verbinden mit Twitter aus PowerApps](connections/connection-twitter.md).
 

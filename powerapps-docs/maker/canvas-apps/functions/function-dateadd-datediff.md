@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/23/2017
 ms.author: gregli
-ms.openlocfilehash: eaf538c1189dffd8fb2169f3eda3f525bcf623de
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 26991baa1feb1ef4821beaf791454def21960d4f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31832026"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896625"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Die Funktionen „DateAdd“, „DateDiff“ und „TimeZoneOffset“ in PowerApps
 Dienen zum Hinzufügen zu oder Auffinden des Unterschiedes bei Datum-/Uhrzeit-Werten und Konvertieren zwischen Ortszeit und UTC.
@@ -56,6 +56,7 @@ Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten m
 Bei allen diesen Beispielen wird davon ausgegangen, dass der Datum/Uhrzeit-Wert der **15. Juli 2013, 13:02 Uhr** ist.
 
 ### <a name="simple-dateadd"></a>Einfache DateAdd-Funktion
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |Dem aktuellen Datum/Uhrzeit-Wert werden drei Tage (Standardeinheiten) hinzugefügt. |"18-07-2013 13:02" |
@@ -64,6 +65,7 @@ Bei allen diesen Beispielen wird davon ausgegangen, dass der Datum/Uhrzeit-Wert 
 | **Text( DateAdd( Now(), &#8209;30, Minuten ),<br>"dd-mm-yyyy hh:mm" )** |Subtrahiert 30 Minuten vom dem aktuellen Datum/Uhrzeit-Wert. |"15-07-2013 12:32" |
 
 ### <a name="simple-datediff"></a>Einfache DateDiff-Funktion
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |Gibt die Differenz zwischen den zwei Einheiten in der Standardeinheit **Tage** zurück. |170 |
