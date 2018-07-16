@@ -2,20 +2,24 @@
 title: Erstellen barrierefreier Apps | Microsoft-Dokumentation
 description: Erstellen barrierefreier Apps für Menschen mit Behinderungen
 author: fikaradz
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a7139f6dbc39bc1585156802e30236aa2b68359
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 909f71a61ca3df73b41eb9e1fe0f3dc3f52d1527
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803073"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018719"
 ---
 # <a name="create-accessible-apps"></a>Erstellen barrierefreier Apps
 Eine barrierefreie App kann auch von Benutzern mit Sehschwäche, Gehörschädigung und anderen Beeinträchtigungen erfolgreich verwendet werden.  Die nachfolgenden Richtlinien sind nicht nur für viele Behörden und Organisationen verpflichtend, sie erhöhen zudem die Verwendbarkeit für alle Benutzer, unabhängig von ihren Fähigkeiten.
+
+Verwenden Sie die **[Barrierefreiheitsprüfung](accessibility-checker.md)**, um mögliche Probleme Ihrer App bei der Barrierefreiheit zu überprüfen. 
 
 ## <a name="layout-and-color"></a>Layout und Farben
 Ein allgemeingültiger und unkomplizierter Entwurf sorgt für eine einfachere Bedienbarkeit der Apps für alle Benutzer.  Wenn Sie Apps stark anpassen, beachten Sie die folgenden Vorschläge.  PowerApps-Designs sind standardmäßig barrierefrei.
@@ -59,4 +63,7 @@ Wenn Sie über ein Signaturfeld verfügen, das das Steuerelement „PenInput“ 
 
 
 
-Verwandte Themen: **[Eigenschaften für Barrierefreiheit](controls/properties-accessibility.md)**
+Ähnlich:
+- [Accessibility properties (Eigenschaften der Barrierefreiheit)](controls/properties-accessibility.md)
+- [Verwenden der Barrierefreiheitsprüfung](accessibility-checker.md)
+- [Barrierefreie Farben in PowerApps](accessible-apps-color.md)

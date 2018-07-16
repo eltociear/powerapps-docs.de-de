@@ -7,12 +7,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/02/2016
 ms.author: lanced
-ms.openlocfilehash: feb2d17400c2f1ddc9670e3bd840322dc1edfc10
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: e6ab6d7e5c7cdf6c166660c1e905f3d62531c3ed
+ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803096"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864236"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Herstellen einer Verbindung mit Excel aus PowerApps
 ![Excel](./media/connection-excel/excelicon.png)
@@ -25,7 +25,7 @@ Excel stellt eine *Art von Verbindung* dar. So zeigen Sie Excel-Daten in Ihrer A
 4. Zeigen Sie diese Informationen in der App an, indem Sie [automatisch eine App generieren](../get-started-create-from-data.md) oder indem Sie beispielsweise ein **Katalog**-Steuerelement hinzufügen und konfigurieren.
 
 > [!NOTE]
-> Nachdem Sie die Excel-Tabelle in PowerApps erstellt haben, wird für jede Zeile der Excel-Tabelle eine neue Spalte mit dem Namen **\_* PowerAppsId_*** mit einer eindeutigen ID erstellt.
+> Wenn Sie in PowerApps eine Verbindung mit Ihrer Excel-Tabelle hergestellt haben, wird für jede Zeile der Excel-Tabelle eine Spalte mit dem Namen **\_PowerAppsId_** mit einer eindeutigen ID erstellt.
 
 In [Übersicht über die Cloudspeicherverbindung](cloud-storage-blob-connections.md) wird veranschaulicht, wie Sie die Verbindung hinzufügen, eine Excel-Tabelle als Datenquelle hinzufügen und die Excel-Daten in der App verwenden.
 

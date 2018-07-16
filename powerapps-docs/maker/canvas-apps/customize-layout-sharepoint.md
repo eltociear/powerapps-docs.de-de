@@ -7,14 +7,15 @@ ms.topic: tutorial
 ms.component: canvas
 ms.date: 05/06/2018
 ms.author: anneta
-ms.openlocfilehash: 88170d5f727ff4e3cfe52ce31719bcbc79e33021
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 80baf43cbde0811d4ab5a7f5212aff767a9f6103
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34453582"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899937"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
+
 Im Rahmen dieses Tutorials passen Sie eine Liste von Datensätzen an, die Katalog genannt wird, und nehmen andere Änderungen in einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen.
 
 Zum Beispiel entspricht der Katalog für dieses Tutorial standardmäßig der folgenden Abbildung. Die E-Mail-Adresse wird deutlicher dargestellt als andere Arten von Daten, und Benutzer können den Katalog basierend auf dem Text in dieser Adresse sortieren oder filtern:
@@ -39,9 +40,11 @@ Dieses Tutorial beginnt mit einer App, die von einer bestimmten Datenquelle aus 
 Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuerst kostenlos](https://web.powerapps.com).
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 [Generieren Sie eine App](data-platform-create-app.md) aus der Entität **Konten** des Common Data Service (CDS) für Apps.
 
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
+
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
     [![PowerApps-Startseite](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
@@ -53,6 +56,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
 
 ## <a name="change-the-layout"></a>Ändern des Layouts
+
 1. Klicken Sie im linken Navigationsbereich auf **BrowseGallery1**.
 
     Wenn der Katalog ausgewählt ist, umgibt ihn ein Auswahlfeld mit Ziehpunkten.
@@ -84,11 +88,12 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
     ![Endgültiger Katalog](./media/customize-layout-sharepoint/final-gallery.png)
 
 ## <a name="change-sort-and-search-columns"></a>Sortier- und Suchspalten ändern
+
 1. Wählen Sie den Katalog wie im vorherigen Abschnitt beschrieben aus.
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-title.png)
 
-2. Stellen Sie sicher, dass die Eigenschaftenliste in der Nähe der oberen linken Ecke **Items** anzeigt.
+1. Stellen Sie sicher, dass die Eigenschaftenliste in der Nähe der oberen linken Ecke **Items** anzeigt.
 
     ![Items-Eigenschaft](./media/customize-layout-sharepoint/items-property.png)
 
@@ -100,12 +105,13 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
     Mit Verwendung dieser Formel stellen Sie Folgendes sicher:
 
-    - Wenn ein Benutzer ein oder mehrere Zeichen in die Suchleiste eingibt, zeigt der Katalog nur Kontonamen an, die den vom Benutzer eingegebenen Text enthalten.
-    - Wenn ein Benutzer das Sortiersymbol auswählt, wird der Katalog alphabetisch anhand des Kontonamens in aufsteigender oder absteigender Reihenfolge sortiert, je nachdem, wie oft der Benutzer das Symbol auswählt.
+    * Wenn ein Benutzer ein oder mehrere Zeichen in die Suchleiste eingibt, zeigt der Katalog nur Kontonamen an, die den vom Benutzer eingegebenen Text enthalten.
+    * Wenn ein Benutzer das Sortiersymbol auswählt, wird der Katalog alphabetisch anhand des Kontonamens in aufsteigender oder absteigender Reihenfolge sortiert, je nachdem, wie oft der Benutzer das Symbol auswählt.
 
-    Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
+     Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
 
 ### <a name="test-sorting-and-searching"></a>Testen von Sortieren und Suchen
+
 1. Öffnen Sie den Vorschaumodus durch Drücken von F5 (oder Auswahl der Wiedergabeschaltfläche in der oberen rechten Ecke).
 
     ![Öffnen des Vorschaumodus](./media/customize-layout-sharepoint/open-preview.png)
@@ -121,6 +127,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 1. Löschen Sie den gesamten Text aus der Suchleiste. Schließen Sie anschließend den Vorschaumodus durch Drücken der ESC-TASTE (oder durch Auswahl des Schließsymbols in der oberen rechten Ecke).
 
 ## <a name="change-the-screen-title"></a>Ändern des Bildschirmtitels
+
 1. Wählen Sie den Bildschirmtitel aus, indem Sie darauf klicken oder tippen.
 
     ![Auswählen des Bildschirmtitels](./media/customize-layout-sharepoint/select-title.png)
@@ -133,18 +140,20 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
     ![Neuer Bildschirmtitel](./media/customize-layout-sharepoint/new-screen-title.png)
 
-## <a name="show-a-scroll-bar"></a>Anzeigen einer Scrollleiste
-Wenn die Geräte Ihrer Benutzer möglicherweise weder über Touchscreens noch Mausräder verfügen, konfigurieren Sie den Katalog so, dass eine Scrollleiste angezeigt wird, wenn der Benutzer mit der Maus darauf zeigt. So können Benutzer sogar alle Konten abrufen, wenn auf dem Bildschirm nicht alle Konten gleichzeitig angezeigt werden können.
+## <a name="show-a-scrollbar"></a>Anzeigen einer Scrollleiste
+
+Wenn die Geräte Ihrer Benutzer weder über Touchscreens noch Mausräder verfügen, konfigurieren Sie den Katalog so, dass eine Scrollleiste angezeigt wird, wenn der Benutzer mit der Maus darauf zeigt. So können Benutzer sogar alle Konten abrufen, wenn auf dem Bildschirm nicht alle Konten gleichzeitig angezeigt werden können.
 
 1. Wählen Sie wie obenstehend beschrieben den Katalog aus.
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. Wählen Sie auf der Registerkarte **Katalog** die Option **Scrollleiste anzeigen** aus, und überprüfen Sie, ob der Wert der Eigenschaft sich in **TRUE** geändert hat. 
+1. Wählen Sie auf der Registerkarte **Katalog** die Option **Scrollleiste anzeigen** aus, und überprüfen Sie, ob der Wert der Eigenschaft sich in **TRUE** geändert hat.
 
     ![Scrollleiste anzeigen](./media/customize-layout-sharepoint/show-scrollbar.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 In diesem Tutorial haben Sie den Katalog angepasst und andere Änderungen am Standardbildschirm zum Durchsuchen von Datensätzen in einer generierten App vorgenommen. Sie können außerdem die Standardanzeigen anpassen, damit Details angezeigt sowie Konten erstellt und aktualisiert werden können. Während der Bildschirm zum Durchsuchen einen Katalog enthält, enthalten die anderen beiden Bildschirme in der App Formulare. Sie können z.B. ändern, welche Datentypen die Formulare in welcher Reihenfolge anzeigen.
 
 > [!div class="nextstepaction"]
