@@ -2,17 +2,19 @@
 title: Übersicht über die Excel-Verbindung | Microsoft-Dokumentation
 description: Zeigen Sie Daten in Excel an, und aktualisieren Sie Daten in Excel, indem Sie die Arbeitsmappe in einem Cloudspeicherkonto speichern und anschließend aus Ihrer App eine Verbindung mit den Daten herstellen.
 author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/02/2016
 ms.author: lanced
-ms.openlocfilehash: e6ab6d7e5c7cdf6c166660c1e905f3d62531c3ed
-ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
+ms.reviewer: anneta
+ms.openlocfilehash: 26de20a11283a21e62abfb5653bff7f15ade623f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864236"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019685"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Herstellen einer Verbindung mit Excel aus PowerApps
 ![Excel](./media/connection-excel/excelicon.png)
