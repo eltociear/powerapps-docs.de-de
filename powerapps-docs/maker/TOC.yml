@@ -134,7 +134,9 @@
             - name: Erstellen einer zugänglichen App
               href: ./canvas-apps/accessible-apps.md
               items:
-                - name: Farbe
+                - name: Ermitteln von Problemen mit der Barrierefreiheit
+                  href: ./canvas-apps/accessibility-checker.md
+                - name: Verwenden von Farben für die Barrierefreiheit
                   href: ./canvas-apps/accessible-apps-color.md
         - name: Ihre App verwalten
           items:
