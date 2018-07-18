@@ -73,6 +73,8 @@
           href: ./canvas-apps/working-with-variables.md
         - name: Formeln
           href: ./canvas-apps/working-with-formulas-in-depth.md
+        - name: Experimentelle und Vorschaufeatures
+          href: ./canvas-apps/working-with-experimental.md
         - name: Datums- und Zeitangaben
           href: ./canvas-apps/show-text-dates-times.md
         - name: Datenquellen
