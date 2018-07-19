@@ -1,40 +1,42 @@
 ---
 title: 'Radio-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Radio-Steuerelement
-documentationcenter: na
 author: fikaradz
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
-ms.date: 10/25/2016
+ms.date: 07/06/2018
 ms.author: fikaradz
-ms.openlocfilehash: 8a95e84449828e77152206817f3d964315074b90
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4b24d016eb97ca5670a1705adfe063315cb7ebca
+ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837686"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886353"
 ---
 # <a name="radio-control-in-powerapps"></a>Radio-Steuerelement in PowerApps
-Eine Liste, die alle Optionen anzeigt, aber der Benutzer kann nur jeweils eine auswählen.
+
+Ein Eingabesteuerelement, das mehrere Optionen anzeigt, aus der Benutzer jeweils nur eine auswählen können.
 
 ## <a name="description"></a>Beschreibung
-Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben, wird am besten mit nur wenigen Optionen verwendet, die sich gegenseitig ausschließen.
+
+Ein **Radio**-Steuerelemente, ein standardmäßiges HTML-Eingabesteuerelement, funktioniert am besten, wenn nur ein paar wenige Optionen, die sich gegenseitig ausschließen, verwendet werden.
+
+Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
+
+**[Default](properties-core.md)**: Der Wert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+**Layout**: Gibt an, ob die Optionen vertikal oder horizontal angeordnet werden.
 
 **[Value](properties-core.md)**: Gibt den Wert eines Eingabesteuerelements an.
 
 ## <a name="all-properties"></a>Alle Eigenschaften
+
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -118,37 +120,44 @@ Ein **Radio**-Steuerelement, mit denen Benutzer jahrzehntelange Erfahrung haben,
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
+
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie das **Radio**-Steuerelement hinzu, nennen Sie es **Pricing**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf die folgende Formel fest:
-   <br>**["Standard", "Premium"]**
-   
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-2. Fügen Sie ein Steuerelement **[Label](control-text-box.md)** (Bezeichnung) hinzu, verschieben Sie es unter das **Radio**-Steuerelement (Optionsfeld) und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Label](control-text-box.md)** auf diese Formel fest:
-   <br>**If("Premium" in Pricing.Selected.Value, "$200 pro Tag", "$150 pro Tag")**
-   
-    Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
-3. Drücken Sie F5, und wählen Sie anschließend eine der beiden Optionen im Steuerelement **Radio**.
-   
-    Das Steuerelement **[Label](control-text-box.md)** (Bezeichnung) zeigt den entsprechenden Text Ihrer Wahl.
-4. (optional) Wählen Sie im Steuerelement **Radio** die andere Option für die Bestätigung, dass der entsprechende Text angezeigt wird.
-5. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 
+1. Fügen Sie das **Radio**-Steuerelement hinzu, nennen Sie es **Pricing**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf die folgende Formel fest:
+
+    **["Standard", "Premium"]**
+
+    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
+
+2. Fügen Sie ein Steuerelement **[Label](control-text-box.md)** (Bezeichnung) hinzu, verschieben Sie es unter das **Radio**-Steuerelement (Optionsfeld) und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Label](control-text-box.md)** auf diese Formel fest:
+
+    **If("Premium" in Pricing.Selected.Value, "$200 pro Tag", "$150 pro Tag")**
+
+    Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
+
+3. Halten Sie die ALT-TASTE gedrückt, und wählen Sie im **Radio**-Steuerelement eine der Optionen aus.
+
+    Das Steuerelement **[Label](control-text-box.md)** (Bezeichnung) zeigt den entsprechenden Text Ihrer Wahl.
+
+4. Optional: Halten Sie die ALT-TASTE gedrückt, und wählen Sie die andere Option aus, um zu bestätigen, dass der entsprechende Text angezeigt wird.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+
+Stellen Sie zusätzlich zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md) ausreichenden Farbkontrast zwischen folgenden Farben sicher:
+
 * **RadioSelectionFill** und **RadioBackgroundFill**
 * **RadioBackgroundFill** und **[Fill](properties-color-border.md)**
 
-Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
+### <a name="screen-reader-support"></a>Sprachausgabeunterstützung
 
-### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* Jedes Optionsfeld muss einen **[Wert](properties-core.md)** aufweisen.
+* Stellen Sie sicher, dass jede Option einen **[Wert](properties-core.md)** hat.
 * Sie sollten direkt vor dem Steuerelement **Radio** eine **[Bezeichnung](control-text-box.md)** hinzufügen, die als Titel dienen soll.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-* **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
- 
+
+* Legen Sie die Eigenschaft **[TabIndex](properties-accessibility.md)** auf 0 (null) oder größer fest, damit Tastaturbenutzer dorthin navigieren können.
+* Legen Sie die Eigenschaften **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** fest, damit Fokusindikatoren deutlich sichtbar sind.

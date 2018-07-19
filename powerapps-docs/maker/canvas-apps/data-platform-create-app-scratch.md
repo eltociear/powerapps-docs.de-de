@@ -1,34 +1,33 @@
 ---
-title: Erstellen einer App von Grund auf neu mithilfe einer Common Data Service-Datenbank | Microsoft-Dokumentation
+title: Erstellen einer App von Grund auf mit Common Data Service für Apps | Microsoft-Dokumentation
 description: Erstellen Sie eine App zum Hinzufügen, Aktualisieren und Löschen von Datensätzen.
-documentationcenter: na
 author: AFTOwen
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: a0aab890e52b49bb0cac382338a8fa02eec736a0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 47a40ed5eea6176e9ef217ecfdcc66f7586b6b6e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838485"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899776"
 ---
-# <a name="create-an-app-from-scratch-using-a-common-data-service-database"></a>Create an app from scratch using a Common Data Service database (Erstellen einer App von Grund auf neu mithilfe einer Common Data Service-Datenbank)
-Erstellen Sie eine Anwendung, um Daten zu verwalten, die im Common Data Service gespeichert sind. Verwenden Sie dazu (integrierte) Standard-Entitäten, (von Ihrem Unternehmen erstellte) benutzerdefinierte Entitäten oder beides.
+# <a name="create-an-app-from-scratch-using-common-data-service-for-apps"></a>Erstellen einer App von Grund auf mit Common Data Service für Apps
+
+Erstellen Sie eine App, um Daten zu verwalten, die in Common Data Service für Apps gespeichert sind. Verwenden Sie dazu (integrierte) Standardentitäten, (von Ihrem Unternehmen erstellte) benutzerdefinierte Entitäten oder beides.
 
 Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung über PowerApps herstellen, wie dies bei Datenquellen wie SharePoint, Dynamics 365 und Salesforce erforderlich ist. Sie müssen lediglich angeben, welche Entitäten Sie anzeigen und verwalten oder für beide Aktivitäten in der App verwenden möchten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 - Bevor Sie eine App von Grund auf neu erstellen, sollten Sie sich mit den PowerApps-Grundlagen vertraut machen, indem Sie erst eine [App generieren](data-platform-create-app.md) und anschließend den [Katalog](customize-layout-sharepoint.md), die [Formulare](customize-forms-sharepoint.md) und die [Karten](customize-card.md) der App anpassen.
 - [Wechseln Sie in eine Umgebung](working-with-environments.md), in der mithilfe von einfachen Daten eine Datenbank erstellt wurde. Wenn Sie über eine entsprechende Lizenz verfügen, können Sie dafür eine [Umgebung erstellen](../../administrator/create-environment.md).
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
+
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com) an.
 
     ![PowerApps-Startseite](./media/data-platform-create-app-scratch/sign-in.png)
@@ -40,6 +39,7 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
     Sie können für Smartphones oder andere Geräte (wie Tablets) Apps von Grund auf neu erstellen. In diesem Artikel erfahren Sie, wie Sie Apps für Smartphone erstellen können.
 
 ## <a name="specify-an-entity"></a>Angeben einer Entität
+
 1. Klicken oder tippen Sie in der Mitte des Bildschirms auf **Mit Daten verbinden** und dann im Bereich **Daten** auf die Verbindung **Common Data Service**.
 
 1. Geben Sie im Suchfeld die ersten Buchstaben des Worts **Accounts** (Konten) ein (bzw. fügen Sie sie ein), um die Liste mit den Entitäten zu filtern. Aktvieren Sie das Kontrollkästchen **Konten**, und klicken oder tippen Sie auf **Verbinden**.
@@ -49,6 +49,7 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke auf das Symbol zum Schließen klicken oder tippen.
 
 ## <a name="add-a-list-screen"></a>Hinzufügen einer Listenanzeige
+
 1. Klicken oder tippen Sie auf der Registerkarte **Start** unter **Neuer Bildschirm** auf den Pfeil nach unten, und klicken oder tippen Sie dann auf **Bildschirmliste**.
 
     ![Hinzufügen einer Listenanzeige](./media/data-platform-create-app-scratch/list-screen.png)
@@ -59,13 +60,13 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
     Diese Formel gibt Folgendes an:
 
-    - Im Katalog sollten die Daten aus der Entität **Accounts** angezeigt werden.
-    - Die Daten sollten in aufsteigender Reihenfolge angezeigt werden, bis der Benutzer auf die Schaltfläche „Sortieren“ klickt oder tippt, um die Reihenfolge zu ändern.
-    - Wenn der Benutzer mindestens ein Zeichen in die Suchleiste eintippt (bzw. einfügt), werden in der Liste nur die Konten angezeigt, in denen die Namensfelder die vom Benutzer angegebenen Zeichen enthalten.
+   - Im Katalog sollten die Daten aus der Entität **Accounts** angezeigt werden.
+   - Die Daten sollten in aufsteigender Reihenfolge angezeigt werden, bis der Benutzer auf die Schaltfläche „Sortieren“ klickt oder tippt, um die Reihenfolge zu ändern.
+   - Wenn der Benutzer mindestens ein Zeichen in die Suchleiste eintippt (bzw. einfügt), werden in der Liste nur die Konten angezeigt, in denen die Namensfelder die vom Benutzer angegebenen Zeichen enthalten.
 
-    Sie können [diese sowie viele weitere Funktionen](formula-reference.md) verwenden, um anzugeben, wie Ihre App angezeigt werden und sich verhalten soll.
+     Sie können [diese sowie viele weitere Funktionen](formula-reference.md) verwenden, um anzugeben, wie Ihre App angezeigt werden und sich verhalten soll.
 
-    ![Festlegen der Items-Eigenschaft des Katalogs](./media/data-platform-create-app-scratch/gallery-items.png)
+     ![Festlegen der Items-Eigenschaft des Katalogs](./media/data-platform-create-app-scratch/gallery-items.png)
 
 1. Legen Sie das Layout des Katalogs fest, damit nur die Namen der einzelnen Konten angezeigt werden, und konfigurieren Sie die Titelleiste, um das Wort **Durchsuchen** anzuzeigen. Dies wird unter [Customize a gallery (Anpassen eines Katalogs)](customize-layout-sharepoint.md) beschrieben.
 
@@ -80,6 +81,7 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
     ![Katalog: Bildschirm zum Durchsuchen umbenennen](./media/data-platform-create-app-scratch/rename-browse.png)
 
 ## <a name="add-a-form-screen"></a>Hinzufügen eines Formularbildschirm
+
 1. Wiederholen Sie den ersten Schritt des letzten Vorgangs, aber fügen Sie einen **Formularbildschirm** anstelle einer **Bildschirmliste** hinzu.
 
 1. Legen Sie die **DataSource**-Eigenschaft des Kontos auf **Accounts** und die **Item**-Eigenschaft auf **BrowseGallery.Selected** fest. Dies wird auf der rechten Seite in der Registerkarte **Erweitert** angezeigt.
@@ -104,39 +106,47 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 1. Bennen Sie diese Anzeige in **FormScreen** um.
 
 ## <a name="configure-icons"></a>Konfigurieren von Symbolen
-1. Klicken oder tippen Sie unter **BrowseScreen** auf den kreisförmigen Pfeil im oberen Bereich des Bildschirms, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`Refresh(Accounts)`
+
+1. Klicken oder tippen Sie unter **BrowseScreen** auf den kreisförmigen Pfeil im oberen Bereich des Bildschirms, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+
+    `Refresh(Accounts)`
 
     ![Symbol zum Aktualisieren](./media/data-platform-create-app-scratch/refresh-icon.png)
 
-1. Klicken oder tippen Sie auf das Pluszeichen und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
+1. Klicken oder tippen Sie auf das Pluszeichen und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Symbol „Hinzufügen“](./media/data-platform-create-app-scratch/plus-icon.png)
 
-1. Klicken oder tippen Sie auf den ersten Pfeil nach rechts, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
+1. Klicken oder tippen Sie auf den ersten Pfeil nach rechts, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Symbol „Weiter“](./media/data-platform-create-app-scratch/next-icon.png)
 
-1. Klicken oder tippen Sie unter **FormScreen** auf das Symbol „Abbrechen“, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
+1. Klicken oder tippen Sie unter **FormScreen** auf das Symbol „Abbrechen“, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Symbol „Abbrechen“](./media/data-platform-create-app-scratch/cancel-icon.png)
 
-1. Klicken oder tippen Sie auf das Häkchensymbol, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
+1. Klicken oder tippen Sie auf das Häkchensymbol, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Häkchensymbol](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
 1. Klicken oder tippen Sie auf der Registerkarte **Einfügen** erst auf **Symbole** und dann auf das **Papierkorbsymbol**.
 
-1. Legen Sie für das **Papierkorbsymbol** die **Color**-Eigenschaft auf **Weiß** und die **OnSelect**-Eigenschaft auf die folgende Formel fest:<br>
-`Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
+1. Legen Sie für das **Papierkorbsymbol** die **Color**-Eigenschaft auf **Weiß** und die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Papierkorbsymbol](./media/data-platform-create-app-scratch/trash-icon.png)
 
 ## <a name="test-the-app"></a>Testen der App
+
 1. Klicken oder tippen Sie im linken Navigationsbereich auf **BrowseScreen**, und öffnen Sie dann die Vorschau, indem Sie F5 drücken bzw. auf das Wiedergabesymbol in der oberen rechten Ecke klicken oder tippen.
 
     ![Vorschau öffnen](./media/data-platform-create-app-scratch/open-preview.png)
@@ -146,5 +156,5 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 1. Fügen Sie ein Konto hinzu, bearbeiten Sie dieses, und beginnen Sie mit dem Update des Kontos. Verwerfen Sie jedoch Ihre Änderungen, und löschen Sie das Konto.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Öffnen Sie mindestens eine Beispiel-App](open-and-run-a-sample-app.md), um verschiedene App-Typen zu untersuchen, die Sie erstellen können.
 
+[Öffnen Sie mindestens eine Beispiel-App](open-and-run-a-sample-app.md), um verschiedene App-Typen zu untersuchen, die Sie erstellen können.

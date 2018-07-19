@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: 78615949ab5c05b4cf7da56eae23dd1a0194c7ff
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ac74f459c35e7b2ec123540a5cf55c1ad6a21c0a
+ms.sourcegitcommit: 8d9e5f44bcd5cecd24de2c99d5ba04df9ea67275
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838692"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37406021"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
@@ -151,9 +151,9 @@ Das Formular wechselt vom **New**-Modus in den **Edit**-Modus, wenn eine dieser 
 
 * Diese Eigenschaft ist nur im **Formular bearbeiten**-Steuerelement verfügbar.
 * Im **Formular**-Steuerelement aggregiert die **Valid**-Eigenschaft die **Valid**-Eigenschaften aller **[Karten](control-card.md)**-Steuerelemente in dem Formular. Die **Valid**-Eigenschaft ist nur dann **true**, wenn die Daten auf allen Karten im Formular gültig sind. Ist das nicht der Fall, hat die **Valid**-Eigenschaft den Wert **false**.
-* Damit eine Schaltfläche Änderungen nur dann speichert, wenn die Daten im Formular gültig sind, aber noch nicht übermittelt wurden, geben Sie für die Schaltfläche unter **Enabled** diese Formel an:
+* Damit eine Schaltfläche Änderungen nur dann speichert, wenn die Daten im Formular gültig sind, aber noch nicht übermittelt wurden, geben Sie für die Schaltfläche unter **DisplayMode** folgende Formel an:
   
-    **SubmitButton.Enabled = IsBlank( Form.Error ) || Form.Valid**
+    **SubmitButton.DisplayMode = If(IsBlank( Form.Error ) || Form.Valid, DisplayMode.Edit, DisplayMode.Disabled)**
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.

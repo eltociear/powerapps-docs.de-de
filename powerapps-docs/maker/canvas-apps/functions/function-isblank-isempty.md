@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 80d06a30dbe334f7fa9691d2a56805d53876693c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 29d0399de5404e6bd8995e3aecaedcfd7f1db6e8
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838554"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898603"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Die Funktionen „Blank“, „Coalesce“, „IsBlank“ und „IsEmpty“ in PowerApps
 Prüft, ob ein Wert leer ist oder eine [Tabelle](../working-with-tables.md) keine [Datensätze](../working-with-tables.md#records) enthält, und stellt ein Verfahren zum Erstellen von *leeren* Werten zur Verfügung.
@@ -46,7 +46,7 @@ Die **IsBlank**-Funktion prüft auf einen *blank*-Wert. *Blank*-Werte entstehen 
 * Der *else*-Teil einer **[If](function-if.md)**-Funktion wurde nicht angegeben, und alle Bedingungen sind **FALSE**.
 * Sie haben die **[Update](function-update-updateif.md)**-Funktion verwendet, aber keinen Wert für alle Spalten angegeben. Daher wurden keine Werte in die Spalten aufgenommen, die Sie nicht angegeben haben.
 
-Die **Coalesce**-Funktion wertet ihre Argumente der Reihe nach aus und gibt den ersten Wert zurück, der nicht *leer* ist.  Ersetzen Sie mithilfe dieser Funktion einen *blank*-Wert durch einen anderen Wert, während die anderen nicht *leeren* Werte unverändert beibehalten werden.  Sind alle Argumente *leer*, gibt die Funktion *blank* zurück.  Alle Argumente von **Coalesce** müssen vom selben Typ sein; es können nicht Zahlen und Textzeichenfolgen gleichzeitig angegeben werden.  **Coalesce( Wert1, Wert2 )** ist die präzisere Entsprechung von **If( IsBlank( Wert1 ) Wert1, Wert2 )**, und **Wert1** muss nicht zweimal ausgewertet werden.  
+Die **Coalesce**-Funktion wertet ihre Argumente der Reihe nach aus und gibt den ersten Wert zurück, der nicht *leer* ist.  Ersetzen Sie mithilfe dieser Funktion einen *blank*-Wert durch einen anderen Wert, während die anderen nicht *leeren* Werte unverändert beibehalten werden.  Sind alle Argumente *leer*, gibt die Funktion *blank* zurück.  Alle Argumente von **Coalesce** müssen vom selben Typ sein; es können nicht Zahlen und Textzeichenfolgen gleichzeitig angegeben werden.  **Coalesce( Wert1, Wert2 )** ist die präzisere Entsprechung von **If( Not( IsBlank( Wert1 ) ), Wert1, Wert2 )**, und **Wert1** muss nicht zweimal ausgewertet werden.  
 
 Die **IsEmpty**-Funktion prüft, ob eine Tabelle keine Datensätze enthält. Dies entspricht dem Einsatz der **[CountRows](function-table-counts.md)**-Funktion und dem Prüfen auf 0. Sie können nach Fehlern in Datenquellen suchen, indem Sie **IsEmpty** mit der **[Errors](function-errors.md)**-Funktion kombinieren.
 
@@ -74,32 +74,33 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 
 1. Erstellen Sie eine Anwendung von Grund auf, und fügen Sie ein **Schaltfläche**-Steuerelement hinzu.
 2. Legen Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:
-   
+
     **ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )**
 3. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
 4. Klicken oder tippen Sie im Menü **Datei** auf **Sammlungen**.
-   
+
      Die Sammlung **Cities** wird angezeigt und enthält einen Datensatz mit „Seattle“ und „Rainy“:
-   
+
     ![Sammlung, die Seattle bei Regen zeigt](./media/function-isblank-isempty/seattle-rainy.png)
 5. Klicken oder tippen Sie auf den Rückwärtspfeil, um zum Standardarbeitsbereich zurückzukehren.
 6. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **Text**-Eigenschaft auf diese Formel fest:
-   
+
     **IsBlank( First( Cities ).Weather )**
-   
+
     Die Bezeichnung zeigt **FALSCH** an, da das Feld **Weather** einen Wert („Rainy“) enthält.
 7. Fügen Sie eine zweite Schaltfläche hinzu, und legen Sie ihre **OnSelect**-Eigenschaft auf diese Formel fest:
-   
+
     **Patch( Cities, First( Cities ), { Weather: Blank() } )**
 8. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
-   
+
     Das Feld **Weather** des ersten Datensatzes in **Cities** wird durch ein *leeres* Element ersetzt, wodurch der vorherige Wert „Rainy“ entfernt wird.
-   
+
     ![Sammlung, die Seattle mit einem leeren Feld „Weather“ enthält](./media/function-isblank-isempty/seattle-blank.png)
-   
+
     Die Bezeichnung zeigt **WAHR** an, da das Feld **Weather** keinen Wert mehr enthält.
 
 ### <a name="coalesce"></a>Coalesce
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Coalesce( Blank(), 1 )** |Prüft den Rückgabewert der Funktion **Blank**, die immer einen *leeren* Wert zurückgibt. Da das erste Argument *leer* ist, wird mit der Auswertung des nächsten Arguments fortgefahren, bis ein nicht *leerer* Wert gefunden wird. |**1** |
@@ -108,12 +109,12 @@ Der Rückgabewert für die beiden Funktionen **IsBlank** und **IsEmpty** ist ein
 ### <a name="isblank"></a>IsBlank
 1. Erstellen Sie eine App von Grund auf, fügen Sie ein Texteingabe-Steuerelement hinzu, und benennen Sie es **FirstName**.
 2. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:
-   
+
     **If( IsBlank( FirstName.Text ), "First Name is a required field." )**
-   
+
     Standardmäßig ist die Eigenschaft **[Text](../controls/properties-core.md)** eines Texteingabe-Steuerelements auf **„Texteingabe“** festgelegt. Da die Eigenschaft einen Wert enthält, ist sie nicht leer, und die Bezeichnung zeigt keinerlei Nachricht an.
 3. Entfernen Sie alle Zeichen aus dem Texteingabe-Steuerelement, einschließlich Leerzeichen.
-   
+
     Da die Eigenschaft **[Text](../controls/properties-core.md)** keine Zeichen mehr enthält, ist sie *leer*, und **IsBlank( FirstName.Text )** ist daher **WAHR**. Die Meldung für ein erforderliches Feld wird angezeigt.
 
 Informationen für die Validierung mithilfe anderer Tools finden Sie bei der Funktion **[Validate](function-validate.md)** und unter [Arbeiten mit Datenquellen](../working-with-data-sources.md).  
@@ -132,24 +133,24 @@ Weitere Beispiele:
 ### <a name="isempty"></a>IsEmpty
 1. Erstellen Sie eine Anwendung von Grund auf, und fügen Sie ein **Schaltfläche**-Steuerelement hinzu.
 2. Legen Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:
-   
+
     **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
 3. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die hinzugefügte Schaltfläche, und schließen Sie dann die Vorschau.  
-   
+
     Eine Sammlung mit dem Namen **IceCream** wird erstellt und enthält diese Daten:
-   
+
     ![](media/function-isblank-isempty/icecream-strawberry-chocolate.png)
-   
+
     Diese Sammlung verfügt über zwei Datensätze und ist nicht leer. **IsEmpty( IceCream )** gibt **FALSE** zurück, und **CountRows( IceCream )** gibt **2** zurück.
 4. Fügen Sie eine zweite Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:
-   
+
     **Clear( IceCream )**
 5. Führen Sie eine Vorschau Ihrer App aus, klicken oder tippen Sie auf die zweite Schaltfläche, und schließen Sie dann die Vorschau.  
-   
+
     Die Sammlung ist jetzt leer:
-   
+
     ![](media/function-isblank-isempty/icecream-clear.png)
-   
+
     Die **[Clear](function-clear-collect-clearcollect.md)**-Funktion entfernt alle Datensätze aus einer Sammlung, woraus sich eine leere Sammlung ergibt. **IsEmpty( IceCream )** gibt **TRUE** und **CountRows( IceCream )** gibt **0** zurück.
 
 Sie können auch **IsEmpty** verwenden, um zu prüfen, ob eine berechnete Tabelle leer ist, wie diese Beispiele zeigen:

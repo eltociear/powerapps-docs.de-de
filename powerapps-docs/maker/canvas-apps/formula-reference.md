@@ -1,23 +1,19 @@
 ---
 title: Funktionen, Signale und Enumerationen | Microsoft-Dokumentation
 description: Referenzinformationen zu Funktionen, Signalen und Enumerationen in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: af089f81b8fd96ec022fe32495cb14f2827f28b5
-ms.sourcegitcommit: 045c96df42405c60c7675edbadac93455270a021
+ms.openlocfilehash: b131f9da9dbf0624185fc837c5582c9ef0477089
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822579"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948594"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -65,6 +61,8 @@ Andere Elemente enthalten:
 
 **[Char](functions/function-char.md)**: übersetzt einen Zeichencode in eine Zeichenfolge.
 
+**[Choices](functions/function-choices.md)**: Gibt eine Tabelle mit den möglichen Werten für eine Nachschlagespalte zurück
+
 **[Clear](functions/function-clear-collect-clearcollect.md)**: löscht alle Daten aus einer [Sammlung](working-with-data-sources.md#collections).
 
 **[ClearCollect](functions/function-clear-collect-clearcollect.md)**: löscht alle Daten aus einer Sammlung und fügt anschließend einen Satz von [Datensätzen](working-with-tables.md#records) hinzu.
@@ -86,6 +84,8 @@ Andere Elemente enthalten:
 **[Concat](functions/function-concatenate.md)**: verkettet Zeichenfolgen in einer Datenquelle.  
 
 **[Concatenate](functions/function-concatenate.md)**: verkettet Zeichenfolgen.
+
+**[Concurrent](functions/function-concurrent.md)**: Wertet mehrere Formeln gleichzeitig miteinander aus 
 
 **[Connection](functions/signals.md)**: gibt Informationen zu Ihrer Netzwerkverbindung zurück.
 
@@ -279,6 +279,8 @@ Andere Elemente enthalten:
 **[Search](functions/function-filter-lookup.md)** : sucht nach Datensätzen in einer Tabelle, die eine Zeichenfolge in einer ihrer Spalten enthält.  
 
 **[Second](functions/function-datetime-parts.md)**: ruft den zweiten Teil eines Datums- oder Uhrzeitwerts ab.
+
+**[Select](functions/function-select.md)**: Simuliert eine Auswahlaktion für ein Steuerelement, sodass die Formel **OnSelect** ausgewertet wird
 
 **[Set](functions/function-set.md)**: legt den Wert einer globalen Variablen fest.
 

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/21/2018
 ms.author: matp
-ms.openlocfilehash: 4068bbc4e67adee344544c0ba69895244d3dab83
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 134ae4dfb5fe111c4c40e96efa1e79a3993c4a46
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330374"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899753"
 ---
 # <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Tutorial: Freigeben einer modellgesteuerten App mit PowerApps
 
@@ -56,7 +56,7 @@ Weitere Informationen zu Zugriffs- und Bereichsberechtigungen finden Sie unter [
 4. Über den Sicherheitsrollendesigner können Sie Aktionen wie „Lesen“, „Schreiben“ oder „Löschen“ auswählen sowie den Bereich der einzelnen Aktionen festlegen. Der Geltungsbereich gibt an, auf welcher Ebene in der Umgebungshierarchie der Benutzer bestimmte Aktionen durchführen kann. Geben Sie im Feld **Role Name** (Rollenname) *Haustierfriseur* ein.
 5. Klicken Sie auf die Registerkarte **Custom Entities** (Benutzerdefinierte Entitäten), und entscheiden Sie sich für eine geeignete benutzerdefinierte Entität. Für dieses Beispiel wird die benutzerdefinierte Entität **Pet** (Haustier) verwendet. 
 6. Wählen Sie in der Zeile **Pet** (Haustier) jede der Berechtigungen viermal aus, bis der Geltungsbereich „Global“ ![Globaler Geltungsbereich](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt ist: **Lesen, Schreiben, Anfügen**
-![Neue Sicherheitsrolle](media/share-model-driven-app/custom-security-role.png)
+   ![Neue Sicherheitsrolle](media/share-model-driven-app/custom-security-role.png)
 7. Da die Haustierpflege-App auch mit der Konto-Entität in Verbindung steht, klicken Sie auf die Registerkarte **Core Records** (Kerndatensätze), und wählen Sie in der Zeile **Account** (Konto) **Read** (Lesen) viermal aus, bis der Geltungsbereich „Global“ ![Globaler Geltungsbereich](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt ist. 
 8. Klicken Sie auf **Speichern und schließen**. 
 9. Geben Sie im Sicherheitsrollen-Designer im Feld **Role Name** (Rollenname) *Haustierpflegemanager* ein. 
@@ -68,6 +68,10 @@ Weitere Informationen zu Zugriffs- und Bereichsberechtigungen finden Sie unter [
 
 ## <a name="assign-security-roles-to-users"></a>Zuweisen von Sicherheitsrollen für Benutzer
 Sicherheitsrollen steuern über mehrere Zugriffsebenen und Berechtigungen den Zugriff auf Daten durch den Benutzer. Mithilfe der verschiedenen Zugriffsebenen und Berechtigungen, die einer bestimmten Sicherheitsrolle zugeordnet sind, werden die Datenansicht für den Benutzer und die Interaktionen des Benutzers mit diesen Daten eingeschränkt.
+
+> [!IMPORTANT]
+> Um eine modellgesteuerte App verwenden zu können, müssen alle Benutzer der App in Ihrer Umgebung zumindest über die Sicherheitsrolle für Common Data Service-Benutzer verfügen, unabhängig davon, welche zusätzlichen Sicherheitsrollen Sie zuweisen. In den meisten Fällen stellt die Sicherheitsrolle für Common Data Service-Benutzer ausreichende Berechtigungen bereit, um grundlegende Aufgaben auszuführen, die für die Verwendung einer App erforderlich sind.
+> Beachten Sie, dass Benutzer, die über die Sicherheitsrolle für Common Data Service-Benutzer verfügen, ebenso Lese- und Schreibzugriff auf alle standardmäßigen Konto-, Kontakt- und Verbindungsentitätsdatensätze haben können, egal, wer diese besitzt. Wenn Sie nicht möchten, dass App-Benutzer über Berechtigungen für diese Datensätze verfügen, erstellen Sie eine benutzerdefinierte Sicherheitsrolle. Der einfachste Weg dafür ist es, die Sicherheitsrolle des Common Data Service-Benutzers zu kopieren und die entsprechenden Berechtigungen zu entfernen. Weitere Informationen finden Sie unter [Kopieren einer Sicherheitsrolle](https://docs.microsoft.com/dynamics365/customer-engagement/admin/copy-security-role).
 
 ### <a name="assign-a-security-role-to-pet-grooming-technicians"></a>Zuweisen einer Sicherheitsrolle für Haustierfriseure
 1. Wählen Sie im Dialogfeld **Diese App freigeben** unter **Assign users to the security role** (Benutzern eine Sicherheitsrolle zuweisen) **Security Users** (Sicherheitsbenutzer) aus.

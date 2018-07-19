@@ -1,23 +1,18 @@
 ---
 title: Grundlegendes zu Tabellen | Microsoft-Dokumentation
 description: Referenzinformationen zum Arbeiten mit Tabellen, Spalten und Datensätzen
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 42a7c0db6aaf46d8cdbd112cf72c6f95f58dc9ec
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
+ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839175"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864259"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Grundlegendes zu Tabellen und Datensätzen in PowerApps
 Sie können Apps erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreifen, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.
@@ -91,26 +86,28 @@ Ebenso wie Zahlen, werden Formeln, die Tabellen und Datensätze enthalten, autom
 
 Lassen Sie einige einfache Beispiele ansehen.
 
-1. Fügen Sie eine **Textkatalog**-Steuerelement hinzu, und legen Sie dessen **[Items](controls/properties-core.md)**-Eigenschaft auf den Namen einer Tabelle fest.
-   
-    Der Katalog zeigt standardmäßig Platzhaltertext aus einer Tabelle namens **TextualGallerySample** an. Die **[Items](controls/properties-core.md)**-Eigenschaft des Katalogs wird automatisch auf die Tabelle festgelegt.
-   
-    > [!NOTE]
-> Einige Steuerelemente wurden neu angeordnet und zur Veranschaulichung vergrößert.
-   
+1. Erstellen Sie eine leere App für ein Smartphone, und fügen Sie ein vertikales **[Katalog](controls/control-gallery.md)**-Steuerelement hinzu, das andere Steuerelemente enthält.
+
+    Es wird Platzhaltertext aus einer Tabelle namens **CustomGallerySample** angezeigt. Die **[Items](controls/properties-core.md)**-Eigenschaft des **[Katalog](controls/control-gallery.md)**-Steuerelements der Anzeige wird automatisch auf die Tabelle festgelegt.
+
     ![](media/working-with-tables/gallery-items.png)
+
+    > [!NOTE]
+    > Einige Steuerelemente wurden neu angeordnet und zur Veranschaulichung vergrößert.
+
 2. Statt die **[Items](controls/properties-core.md)**-Eigenschaft auf den Namen einer Tabelle festzulegen, legen Sie sie auf eine Formel fest, die den Namen der Tabelle als Argument enthält, wie in diesem Beispiel:<br>
-   **Sort(TextualGallerySample, Heading, Descending)**
-   
+    **Sort(CustomGallerySample, SampleHeading, Descending)**
+
     Diese Formel beinhaltet die **[Sort](functions/function-sort.md)**-Funktion, die den Namen einer Tabelle als erstes Argument und der Name einer Spalte in dieser Tabelle als zweites Argument akzeptiert. Die Funktion unterstützt auch ein optionales drittes Argument, das vorschreibt, dass die Daten in absteigender Reihenfolge sortiert werden sollen.
-   
+
     ![](media/working-with-tables/gallery-items-sort.png)
+
 3. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft auf eine Formel fest, die die Formel aus dem vorherigen Schritt als Argument akzeptiert und eine Tabelle zurückgibt, wie im folgenden Beispiel:<br>
-   **FirstN(Sort(TextualGallerySample, Heading, Descending), 2)**
-   
+   **FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)**
+
     In dieser Formel verwenden Sie die Funktion **[FirstN](functions/function-first-last.md)**, um eine bestimmte Anzahl von Datensätzen in einer Tabelle anzuzeigen. Verwenden Sie die **[Sort](functions/function-sort.md)**-Funktion als erstes Argument für **[FirstN](functions/function-first-last.md)** und eine Zahl (in diesem Fall **2**) als das zweite Argument, das angibt, wie viele Datensätze angezeigt werden sollen.
    
-    Die gesamte Formel gibt eine Tabelle zurück, die ersten beiden Datensätze der **TextualGallerySample**-Tabelle enthält, sortiert nach der Spalte **Heading** (Überschrift) in absteigender Reihenfolge.
+    Die gesamte Formel gibt eine Tabelle zurück, die die ersten beiden Datensätze der **CustomGallerySample**-Tabelle enthält, sortiert nach der Spalte **SampleHeading** in absteigender Reihenfolge.
    
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
@@ -139,7 +136,7 @@ Wenn Sie eine Datenquelle als Argument für eine dieser Funktionen angeben, werd
 * **[Update](functions/function-update-updateif.md)**, **[UpdateIf](functions/function-update-updateif.md)**: aktualisiert Datensätze, die mindestens einem von Ihnen angegebenen Kriterium entsprechen
 * **[Remove](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)**: löscht Datensätze, die mindestens einem von Ihnen angegebenen Kriterium entsprechen
 
-Die folgenden Steuerelemente weisen Eigenschaften auf, die Tabellen sind:
+Diese Eigenschaften werden auf Werte festgelegt, die Tabellen darstellen:
 
 * **Items**: gilt für Kataloge und Listenfelder. Tabelle, die im Katalog angezeigt werden soll
 * **SelectedItems**: gilt für Listenfelder. Tabelle der Elemente, die der Benutzer ausgewählt hat.
@@ -150,24 +147,27 @@ Sie können auch eine Formel erstellen, die Daten für einen einzelnen Datensatz
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](controls/properties-core.md)** auf diese Formel fest:<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
-2. Wenn die Schaltfläche nicht ausgewählt ist, wählen Sie sie durch einen Klick aus, und klicken Sie erneut darauf, um die Formel auszuführen.
+2. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
 
 3. Klicken Sie im Menü **Datei** auf **Sammlungen**.
 
-![](media/working-with-tables/selected-collection.png)
+    ![](media/working-with-tables/selected-collection.png)
 
-Diese Formel gibt einen Datensatz zurück, der nicht nur die Daten aus dem Datensatz enthält, die derzeit im Katalog ausgewählt ist, sondern auch jedes Steuerelement in diesem Katalog. Der Datensatz enthält z.B. sowohl eine **Text**-Spalte, die der **Text**-Spalte in der ursprünglichen Tabelle entspricht, als auch eine **Body1**-Spalte, die die Bezeichnung darstellt, die die Daten aus dieser Spalte enthält. Wählen Sie das Tabellensymbol in der **Body1**-Spalte aus, um diese Daten detaillierter zu analysieren.
+Diese Formel gibt einen Datensatz zurück, der nicht nur die Daten aus dem Datensatz enthält, die derzeit im Katalog ausgewählt ist, sondern auch jedes Steuerelement in diesem Katalog. Der Datensatz enthält z.B. sowohl eine **SampleText**-Spalte, die der **SampleText**-Spalte in der ursprünglichen Tabelle entspricht, als auch eine **Subtitle1**-Spalte, die die Bezeichnung darstellt, die die Daten aus dieser Spalte enthält. Wählen Sie das Tabellensymbol in der **Subtitle1**-Spalte aus, um diese Daten detaillierter zu analysieren.
+
+> [!NOTE]
+> Die Spalte **Subtitle1** kann z.B. **Subtitle2** genannt werden, wenn Sie andere Elemente als die in diesem Thema verwendeten hinzugefügt haben.
 
 Da Sie nun über den ausgewählten Datensatz verfügen, können Sie mit dem **.**-Operator fest.
 
-1. Drücken Sie die ESC-TASTE, um zum Standard-Arbeitsbereich zurückzukehren, und fügen Sie dann eine Bezeichnung unterhalb des Katalogs ein.
+1. Fügen Sie ein **[Bezeichnung](controls/control-text-box.md)**-Steuerelement hinzu, und verschieben Sie es unter den Katalog und die Schaltfläche.
 
-2. Legen Sie die **[Label](controls/properties-core.md)**-Eigenschaft des Textfelds auf diese Formel fest:<br>
-    **Gallery.Selected.Heading**
+1. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft auf den folgenden Ausdruck fest:<br>
+    **"Selected: " & Gallery1.Selected.SampleHeading**
    
     ![](media/working-with-tables/gallery-selected.png)
 
-Sie haben aus der **Selected**-Eigenschaft, die einen Datensatz darstellt, die **Heading**-Eigenschaft extrahiert.  
+Sie haben aus der **Selected**-Eigenschaft, die einen Datensatz darstellt, die **SampleHeading**-Eigenschaft extrahiert.
 
 Sie können einen Datensatz auch als einen Allzweckcontainer für verwandte benannte Werte verwenden.
 
@@ -235,10 +235,10 @@ Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") u
 ### <a name="disambiguation"></a>Mehrdeutigkeitsvermeidung
 Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [**@**-Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das Muster ***Table *[@* FieldName*]** nutzen.  
-* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@*ObjectName*]** (ohne Tabellenbezeichnung).
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster nutzen:<br>_Tabelle_**[@**_Feldname_**]**
+* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@**_Objektname_**]** (ohne Tabellenbezeichnung).
 
-Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter( *Tabelle*, ... )** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
+Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter(** _Tabelle_**,** ... **)** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
 
 Angenommen, Sie haben eine Sammlung **X**:
 
