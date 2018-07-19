@@ -5,13 +5,18 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: overview
-ms.date: 03/21/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 6c5a207ec2eb41d2cf19250bd5f319ed692a43e6
-ms.sourcegitcommit: 3f5adf07cac1c798f3d4843ed5928505becde30e
+manager: kvivek
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: 83670a844c62a6daea489d5484641e9c457653f8
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925660"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>Wie kann ich Apps finden und ausführen?
 App-Entwickler können benutzerdefinierte task- und rollenbasierte *Canvas*-Apps erstellen, die an Ihre Bedürfnisse angepasst sind – unabhängig davon, ob Sie ein Mitarbeiter im Außendienst oder ein Doktor in einem Krankenhaus sind. Entwickler von Canvas-Apps können beinahe alle Bestandteile einer Canvas-App anpassen und eine Verbindung mit mehreren Datenquellen herstellen, um Benutzer beim Abschließen von Aufgaben mit einem Fokus zu unterstützen.

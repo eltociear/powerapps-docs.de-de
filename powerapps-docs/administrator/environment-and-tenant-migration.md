@@ -8,11 +8,12 @@ ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 3a064bdb3f75bf45047e3ae0ff465fde1d2b66fa
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 9a846f3c47111b1b83881ed01026951469b236cc
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898327"
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migration der Umgebungs- und Mandanten-App durch Paketerstellung
 Erfahren Sie, wie Sie Ressourcen mithilfe von Paketerstellung von einer Umgebung zu einer anderen migrieren. Diese Umgebungen können innerhalb des gleichen Mandanten oder mandantenübergreifend sein.
@@ -111,13 +112,13 @@ Sie können CDS-Lösungspakete derzeit leider nur manuell importieren. Es wird a
 
 3. Kopieren Sie die URL aus Ihrem Browser, nehmen Sie die folgenden Änderungen vor, und navigieren Sie dann zu der neuen URL in Ihrem Browser:
 
-    * Aktuelle URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
+   * Aktuelle URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
 
-        ![URL bearbeiten](./media/environment-and-tenant-migration/edit-url.png)
+       ![URL bearbeiten](./media/environment-and-tenant-migration/edit-url.png)
 
-    * Neue URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+   * Neue URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-        ![Paket auswählen](./media/environment-and-tenant-migration/select-package.png)
+       ![Paket auswählen](./media/environment-and-tenant-migration/select-package.png)
 
 4. Wählen Sie die CDS-Lösungspaketdatei aus, die Sie importieren möchten, und beenden Sie den Assistenten.
 

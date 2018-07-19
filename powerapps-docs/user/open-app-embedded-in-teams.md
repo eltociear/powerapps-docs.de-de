@@ -2,17 +2,21 @@
 title: 'Schnellstart: Hinzufügen einer App zu Microsoft Teams | Microsoft-Dokumentation'
 description: In dieser Schnellstartanleitung erfahren Sie, wie Sie einem Microsoft Teams-Kanal eine App hinzufügen, damit die Benutzer, für die Sie die App freigegeben haben, diese in diesem Kanal öffnen können.
 author: mgblythe
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
 ms.date: 01/18/2018
-ms.author: mblythe
-ms.openlocfilehash: 9c670a61f89b8bf038bae117614895f18101fe0c
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.author: matp
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: 07543d1724ff2272dfa4e1902d2581fa5034360a
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925683"
 ---
 # <a name="quickstart-add-an-app-to-microsoft-teams"></a>Schnellstart: Hinzufügen einer App zu Microsoft Teams
 
@@ -28,7 +32,7 @@ Sie benötigen für diesen Schnellstart ein [Office 365-Abonnement](https://sign
 
 ## <a name="sign-in-to-powerapps"></a>Anmelden bei PowerApps
 
-Melden Sie sich unter [https://web.powerapps.com]([https://web.powerapps.com) in PowerApps an.
+Melden Sie sich unter [https://web.powerapps.com](https://web.powerapps.com) in PowerApps an.
 
 ## <a name="add-an-app"></a>Hinzufügen einer App
 

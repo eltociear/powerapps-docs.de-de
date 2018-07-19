@@ -1,6 +1,6 @@
 - name: Übersicht
   href: overview.md
-- name: Einführung in Projektmappen
+- name: Einführung in Lösungen
   href: introduction-solutions.md
 - name: 'Common Data Service für Apps: Datenentitäten'
   href: entities.md

@@ -1,18 +1,20 @@
 ---
 title: Häufige Probleme und Lösungen für PowerApps | Microsoft-Dokumentation
 description: Eine Liste häufiger Probleme und Lösungen für PowerApps.
-author: skjerland
-manager: kfile
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 05/10/2018
-ms.author: sharik
-ms.openlocfilehash: 71e6d6977ff84ac8131acb9353f919c5ee80995b
-ms.sourcegitcommit: fe556abcfd6bdfeb5fdeea8f07b185b4b502d02f
+ms.author: anneta
+ms.openlocfilehash: 92153c1d7fc72f6905faf55817f7f785ffdaa1ce
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016488"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von PowerApps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.

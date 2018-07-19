@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 19e30477b7015061a4e4b781e1c53a55d1fda1a7
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7079dc6194361cc700ccaad6c02ca0bcf8a9f9d6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329615"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895912"
 ---
 # <a name="start-a-flow-in-an-app"></a>Starten eines Flows in einer App
 Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
@@ -52,7 +52,7 @@ Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufga
    3. Geben oder fügen Sie in das Feld **Websiteadresse** die URL einer SharePoint Online-Website ein, die eine Liste enthält.
 
        > [!NOTE]
-> Geben Sie die URL für die Website ohne die Liste an.
+      > Geben Sie die URL für die Website ohne die Liste an.
 
    4. Wählen Sie im Feld **Listenname** die Liste aus, die Sie verwenden möchten.
 
@@ -86,7 +86,7 @@ Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufga
 6. Wählen Sie im Bereich, der angezeigt wird, den Flow aus, den Sie im vorherigen Verfahren erstellt haben.
 
     > [!NOTE]
-> Wenn der von Ihnen erstellte Flow nicht verfügbar ist, vergewissern Sie sich, dass PowerApps auf die Umgebung festgelegt ist, in der Sie den Flow erstellt haben.
+   > Wenn der von Ihnen erstellte Flow nicht verfügbar ist, vergewissern Sie sich, dass PowerApps auf die Umgebung festgelegt ist, in der Sie den Flow erstellt haben.
 
     ![Hinzufügen eines Flows aus dem Bereich „Anpassung“](./media/using-logic-flows/add-flow-from-pane.png)
 

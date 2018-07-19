@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 2b64ebdf91effe812d3fd81d0d1e0bb854147a19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 45baa2450dbb081b800263a9119729e1c2846008
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31839152"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899445"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Grundlegendes zum Layout von Datenformularen in Microsoft PowerApps
 In PowerApps können Sie auf einfache Weise Formulare erstellen, die ansprechend aussehen und benutzerfreundlich sind. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:
@@ -57,17 +57,17 @@ Wenn Sie noch nicht mit PowerApps vertraut sind (oder Apps bisher lediglich auto
     Die Bezeichnung zeigt die Verkaufsauftragsnummer des Eintrags, der im Katalog ausgewählt wurde.
 3. (Optional) Formatieren Sie die Bezeichnung wie folgt:
    
-    1. Legen Sie die **Align**-Eigenschaft auf **Center** fest.
+   1. Legen Sie die **Align**-Eigenschaft auf **Center** fest.
    
-    2. Legen Sie die zugehörige **Size**-Eigenschaft auf **20** fest.
+   2. Legen Sie die zugehörige **Size**-Eigenschaft auf **20** fest.
    
-    3. Legen Sie die zugehörige **Fill**-Eigenschaft auf **Navy** fest.
+   3. Legen Sie die zugehörige **Fill**-Eigenschaft auf **Navy** fest.
    
-    4. Legen Sie die zugehörige **Color**-Eigenschaft auf **White** fest.
+   4. Legen Sie die zugehörige **Color**-Eigenschaft auf **White** fest.
    
-    5. Legen Sie die zugehörige **Width**-Eigenschaft auf **Parent.Width** fest.
+   5. Legen Sie die zugehörige **Width**-Eigenschaft auf **Parent.Width** fest.
    
-    6. Legen Sie die zugehörige **X**-Eigenschaft und **Y**-Eigenschaft auf **0** fest.
+   6. Legen Sie die zugehörige **X**-Eigenschaft und **Y**-Eigenschaft auf **0** fest.
       
       ![Titelleiste](./media/working-with-form-layout/title-bar.png)
 

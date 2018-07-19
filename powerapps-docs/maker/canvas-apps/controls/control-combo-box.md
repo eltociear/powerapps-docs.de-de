@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2017
 ms.author: fikaradz
-ms.openlocfilehash: 1a790627ad1dbd1bebecca84cb41ee29dcf148dd
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1c8004fd615e5f706103ad4c364f7818dd1cb091
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329500"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898264"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -110,11 +110,11 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-> Auf Touchscreens können Benutzer, die die Sprachausgabe benutzen, der Reihe nach durch die Inhalte des Kombinationsfelds navigieren. Das Kombinationsfeld fungiert als Schaltfläche, die Inhalte anzeigt bzw. ausblendet, wenn diese aktiviert bzw. deaktiviert werden.
+  > Auf Touchscreens können Benutzer, die die Sprachausgabe benutzen, der Reihe nach durch die Inhalte des Kombinationsfelds navigieren. Das Kombinationsfeld fungiert als Schaltfläche, die Inhalte anzeigt bzw. ausblendet, wenn diese aktiviert bzw. deaktiviert werden.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 * Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
 
     > [!NOTE]
-> Über die TAB-TASTE können Sie zum Kombinationsfeld navigieren oder dieses schließen. Über die Pfeiltasten können Sie durch die Inhalte des Kombinationsfelds navigieren. Über die ESC-Taste können Sie die Dropdownliste ggf. schließen.
+  > Über die TAB-TASTE können Sie zum Kombinationsfeld navigieren oder dieses schließen. Über die Pfeiltasten können Sie durch die Inhalte des Kombinationsfelds navigieren. Über die ESC-Taste können Sie die Dropdownliste ggf. schließen.

@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 29f07162ec2815398cda5bcc359f7388df261bc0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf802668ff56729c1d28fc460495a680fc3c6570
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836968"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896809"
 ---
 # <a name="create-an-excel-app-from-scratch"></a>Neues Erstellen einer Excel-App
 Erstellen Sie Ihre eigene neue App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber erfahrene App-Entwickler können damit die beste App für ihre Anforderungen erstellen.
@@ -84,31 +84,31 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     ![Bereich „Daten“ öffnen](./media/get-started-create-from-blank/custom-gallery-sample.png)
 
-1. Wählen Sie unter **Datenquelle** den Pfeil nach unten aus, um die Liste der Datenquellen für die App zu öffnen, und wählen Sie dann **Schedule** aus.
+4. Wählen Sie unter **Datenquelle** den Pfeil nach unten aus, um die Liste der Datenquellen für die App zu öffnen, und wählen Sie dann **Schedule** aus.
 
     ![Datenquelle auswählen](./media/get-started-create-from-blank/select-schedule.png)
 
-1. Wählen Sie unter **Layout** den Pfeil nach unten aus, um die Liste der Layouts zu öffnen, und wählen Sie dann **Titel, Untertitel und Text** aus.
+5. Wählen Sie unter **Layout** den Pfeil nach unten aus, um die Liste der Layouts zu öffnen, und wählen Sie dann **Titel, Untertitel und Text** aus.
 
     ![Auswählen des Layouts](./media/get-started-create-from-blank/select-layout.png)
 
-1. Ändern Sie unter **Title2** die angezeigte Spalte von **Backup** in **Volunteer**.
+6. Ändern Sie unter **Title2** die angezeigte Spalte von **Backup** in **Volunteer**.
 
      ![Spalte in Bezeichnung ändern](./media/get-started-create-from-blank/change-title2.png)
 
-1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen auswählen.
+7. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen auswählen.
 
     Der Katalog zeigt den Namen jedes Freiwilligen sowie Tag und Uhrzeit seiner Schicht an.
 
     ![Die unsortierten „Schedule“-Daten im Katalog](./media/get-started-create-from-blank/show-data-unsorted.png)
 
-4. Wählen Sie den Katalog aus, und vergewissern Sie sich, dass die Eigenschaftenliste **[Items](controls/properties-core.md)** anzeigt.
+8. Wählen Sie den Katalog aus, und vergewissern Sie sich, dass die Eigenschaftenliste **[Items](controls/properties-core.md)** anzeigt.
 
     Wie in die Bearbeitungsleiste gezeigt, hat diese Eigenschaft den Wert **Schedule**.
 
     ![Die unsortierten „Schedule“-Daten im Katalog](./media/get-started-create-from-blank/set-property.png)
 
-1. Ändern Sie den Wert der Eigenschaft **Items**, indem Sie diese Formel kopieren und in die Bearbeitungsleiste einfügen:
+9. Ändern Sie den Wert der Eigenschaft **Items**, indem Sie diese Formel kopieren und in die Bearbeitungsleiste einfügen:
 
     **SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
 
@@ -118,22 +118,22 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     Benutzer können den Katalog nach den Namen der Freiwilligen basierend auf den Funktionen **SortByColumns** und **Search** in dieser Formel sortieren und filtern.
 
-    - Wenn ein Benutzer mindestens einen Buchstaben in das Suchfeld eingibt, zeigt der Katalog nur die Datensätze an, bei denen das Feld **Volunteer** den Text enthält, den der Benutzer eingibt.
-    - Wenn ein Benutzer die Sortierschaltfläche auswählt, zeigt der Katalog die Datensätze in aufsteigender oder absteigender Reihenfolge (je nachdem, wie häufig der Benutzer die Schaltfläche auswählt) basierend auf dem Feld **Volunteer** an.
+   - Wenn ein Benutzer mindestens einen Buchstaben in das Suchfeld eingibt, zeigt der Katalog nur die Datensätze an, bei denen das Feld **Volunteer** den Text enthält, den der Benutzer eingibt.
+   - Wenn ein Benutzer die Sortierschaltfläche auswählt, zeigt der Katalog die Datensätze in aufsteigender oder absteigender Reihenfolge (je nachdem, wie häufig der Benutzer die Schaltfläche auswählt) basierend auf dem Feld **Volunteer** an.
 
-    Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
+     Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
 
-5. Geben Sie ein **i** in das Suchfeld ein, wählen Sie die Sortierschaltfläche durch Klicken oder Tippen aus, und wählen Sie sie noch einmal aus (oder eine ungerade Anzahl weiterer Male).
+10. Geben Sie ein **i** in das Suchfeld ein, wählen Sie die Sortierschaltfläche durch Klicken oder Tippen aus, und wählen Sie sie noch einmal aus (oder eine ungerade Anzahl weiterer Male).
 
-    Der Katalog zeigt diese Ergebnisse an.
+     Der Katalog zeigt diese Ergebnisse an.
 
-    ![Sortieren und Filtern der Galerie](./media/get-started-create-from-blank/sort-filter.png)
+     ![Sortieren und Filtern der Galerie](./media/get-started-create-from-blank/sort-filter.png)
 
-1. Löschen Sie den gesamten Text im Suchfeld.
+11. Löschen Sie den gesamten Text im Suchfeld.
 
-6. Wählen Sie am oberen Rand des Bildschirms das Steuerelement **[Bezeichnung](controls/control-text-box.md)** aus, und ersetzen Sie dann **[Titel]** durch **Datensätze anzeigen**.
+12. Wählen Sie am oberen Rand des Bildschirms das Steuerelement **[Bezeichnung](controls/control-text-box.md)** aus, und ersetzen Sie dann **[Titel]** durch **Datensätze anzeigen**.
 
-    ![Ändern der Titelleiste](./media/get-started-create-from-blank/change-title-bar.png)
+     ![Ändern der Titelleiste](./media/get-started-create-from-blank/change-title-bar.png)
 
 ## <a name="create-the-change-screen"></a>Erstellen des Änderungsbildschirms
 1. Wählen Sie auf der Registerkarte **Home** den Pfeil nach unten neben **Neuer Bildschirm** und dann **Formularbildschirm** aus.

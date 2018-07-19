@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 09/13/2016
 ms.author: gregli
-ms.openlocfilehash: 15d458142bc1077b1bf55ae6e358c826f813ecb2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8b9e6d7b55eac51d9bf22d28945cfd4349fc957c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829508"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897770"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funktionen „Abs“, „Exp“, „Ln“, „Power“ und „Sqrt“ in PowerApps
 Berechnen Absolutwerte, natürliche Logarithmen, Quadratwurzeln und die Ergebnisse der Potenzierung von *e* oder einer beliebigen Zahl zur angegebenen Potenz.
@@ -53,6 +53,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 
 ## <a name="examples"></a>Beispiele
 ### <a name="single-number"></a>Einzelne Zahl
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Abs( -55 )** |Gibt die Zahl ohne das negative Vorzeichen zurück. |55 |

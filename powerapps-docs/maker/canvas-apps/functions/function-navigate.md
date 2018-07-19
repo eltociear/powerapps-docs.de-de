@@ -3,7 +3,7 @@ title: Funktionen „Back“ und „Navigate“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Back“ und „Navigate“ in PowerApps
 documentationcenter: na
 author: gregli-msft
-manager: kfile
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: ecb8b8176dd8489866a5ca88a6b69e1520c3ad69
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: e00ee9b3a58bf3255b9f581f405381af05aa07f9
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834456"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948570"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 Ändern, welcher Bildschirm angezeigt wird
@@ -63,6 +63,7 @@ Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-for
 * *Kontextaktualisierungs-Datensatz*: Optional.  Ein Datensatz, der den Namen mindestens einer Spalte und einen Wert für jede Spalte enthält. Dieser Datensatz aktualisiert die Kontextvariablen des neuen Bildschirms wie bei der Übergabe an die **[UpdateContext](function-updatecontext.md)**-Funktion.
 
 ## <a name="examples"></a>Beispiele
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Navigate( Details, ScreenTransition.None )** |Zeigt den **Detailbildschirm** ohne Übergang oder Änderung des Werts einer Kontextvariablen an. |Der **Detailbildschirm** erscheint schnell. |

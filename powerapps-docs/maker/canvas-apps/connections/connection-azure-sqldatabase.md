@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die SQL Server-Verbindung | Microsoft-Dokumentation
 description: Schrittweise Anleitung zum Herstellen einer Verbindung mit Azure SQL oder einer lokalen SQL Server-Datenbank
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: 65fa5cff5d3b9c9595cc3f9338a7e7af43256f86
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.reviewer: anneta
+ms.openlocfilehash: e1a07bc9c166ac37ad0efa7ae50dca87332cb3e2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020900"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Herstellen einer Verbindung mit SQL Server aus PowerApps
 ![SQL Server-Symbol](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -37,7 +35,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
 * Geben Sie für eine lokale Datenbank ein [Datengateway](../gateway-management.md) an, das für Sie freigegeben ist (oder erstellen Sie eines).
   
     > [!NOTE]
-> Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
+  > Gateways und lokale Verbindungen können nur in der [Standardumgebung](../working-with-environments.md) des Benutzers erstellt und verwendet werden.
 
 ## <a name="generate-an-app-automatically"></a>Eine App automatisch generieren
 1. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf die Option **Neu** (am linken Rand).
@@ -58,7 +56,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
        ![Herstellen einer Verbindung mit einer lokalen Datenbank](./media/connection-azure-sqldatabase/connect-onprem.png)
      
        > [!NOTE]
-> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf **Gatewayliste aktualisieren**.
+     > Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf **Gatewayliste aktualisieren**.
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie auf eine Option unter **Dataset auswählen**, klicken oder tippen Sie auf eine Option unter **Tabelle auswählen**, und klicken oder tippen Sie dann auf **Verbinden**.
    
@@ -81,7 +79,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
        ![Herstellen einer Verbindung mit einer Datenbank in Azure](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
        > [!NOTE]
-> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie auf das Symbol mit dem im Uhrzeigersinn drehenden Pfeil, um die Liste zu aktualisieren.
+     > Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie auf das Symbol mit dem im Uhrzeigersinn drehenden Pfeil, um die Liste zu aktualisieren.
 5. Klicken oder tippen Sie auf **Erstellen**, um die Verbindung zu erstellen.
 6. Erstellen Sie eine App mithilfe von Techniken wie den in [App von Grund auf neu erstellen](../get-started-create-from-blank.md) beschriebenen.
 
@@ -102,7 +100,7 @@ Stellen Sie entweder in Azure oder in einer lokalen Datenbank eine Verbindung mi
        ![Herstellen einer Verbindung mit einer Datenbank in Azure](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
        > [!NOTE]
-> Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf das Symbol mit dem kreisförmigen Pfeil, um die Liste zu aktualisieren.
+     > Wenn Sie über kein Gateway verfügen, [installieren Sie ein Gateway](../gateway-reference.md), und klicken oder tippen Sie anschließend auf das Symbol mit dem kreisförmigen Pfeil, um die Liste zu aktualisieren.
 6. Klicken oder tippen Sie auf **Verbinden**.
 7. Klicken oder tippen Sie unter **Dataset auswählen** auf eine Option.
 8. Aktivieren Sie unter **Tabelle auswählen** ein oder mehrere Kontrollkästchen, und klicken oder tippen Sie auf **Verbinden**.

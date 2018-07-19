@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: a9cd26ad41ceaa5b94678a3ef87bf0ab6dda98a1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: bf66c1f7596b8a3ef4c8495db3f0ac2af8165d8c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330673"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899684"
 ---
 # <a name="understand-data-forms-in-microsoft-powerapps"></a>Grundlegendes zu Datenformularen in Microsoft PowerApps
 Fügen Sie drei Arten von Steuerelementen hinzu, damit Benutzer nach einem Datensatz suchen, Einzelheiten zu dem Datensatz anzeigen oder einen Eintrag dazu bearbeiten oder erstellen können:
@@ -157,7 +157,7 @@ Um die restlichen Schritte in diesem Thema genau befolgen zu können, erstellen 
 * Erstellen Sie eine Telefon-App von Grund auf, und [verbinden Sie sie mit Ihrer Datenquelle](add-data-connection.md).
   
     > [!NOTE]
-> Tablet-Apps sind Telefon-Apps sehr ähnlich. Sie können sich aber für ein anderes [Bildschirmlayout](#screen-design) entscheiden, um den zusätzlichen Platz auf dem Bildschirm optimal auszunutzen.
+  > Tablet-Apps sind Telefon-Apps sehr ähnlich. Sie können sich aber für ein anderes [Bildschirmlayout](#screen-design) entscheiden, um den zusätzlichen Platz auf dem Bildschirm optimal auszunutzen.
   
     Die Beispiele im Rest des Themas basieren auf einer Datenquelle namens **Ice Cream**.
 

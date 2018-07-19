@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: e488383acbd163383079b5078e464cab89e677ad
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a8cd998744d609c253a31271aab34a30b1e998f3
+ms.sourcegitcommit: a622db0fb3d44fa5e7ebc4bfdc77cd6acb3646be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829046"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843225"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funktionen „Average“, „Max“, „Min“, „StdevP“, „Sum“ und „VarP“ in PowerApps
 Aggregatfunktionen, die eine Menge von Zahlen zusammengefassten
@@ -44,7 +44,7 @@ Sie können die Werte für diese Funktionen angeben als:
 
 Diese Funktionen verarbeiten nur numerische Werte. Andere Typen von Werten wie Zeichenfolgen oder Datensätze werden ignoriert. Verwenden Sie die  **[Value](function-value.md)**-Funktion zum Konvertieren einer Zeichenfolge in eine Zahl.
 
-Die Funktionen **Average**, **Max**, **Min** und **Sum** können delegiert werden, wenn sie mit einer [Datenquelle verwendet werden, die Delegierung für diese Funktionen unterstützt](../delegation-list.md).  **StdevP** und **VarP** können jedoch für keine Datenquellen delegiert werden.  Wenn Delegierung nicht unterstützt wird, wird nur der erste Teil der Datenquelle abgerufen, und anschließend wird die Funktion lokal angewendet.  Das Ergebnis ist dann ggf. kein umfassendes Ergebnis.  Bei der Erstellung wird ein blauer Punkt angezeigt, um Sie an diese Einschränkung zu erinnern und die Umstellung auf delegierbare Alternativen vorzuschlagen, soweit dies möglich ist. Weitere Informationen finden Sie unter [Grundlagen der Delegierung](../delegation-overview.md).
+Die Funktionen **Average**, **Max**, **Min** und **Sum** können delegiert werden, wenn sie mit einer [Datenquelle verwendet werden, die Delegierung für diese Funktionen unterstützt](../delegation-list.md).  **StdevP** und **VarP** können jedoch für keine Datenquellen delegiert werden.  Wenn Delegierung nicht unterstützt wird, wird nur der erste Teil der Datenquelle abgerufen, und anschließend wird die Funktion lokal angewendet.  Das Ergebnis ist dann ggf. kein umfassendes Ergebnis.  Bei der Erstellung wird eine Delegierungswarnung angezeigt, um Sie an diese Einschränkung zu erinnern und die Umstellung auf delegierbare Alternativen vorzuschlagen, soweit dies möglich ist. Weitere Informationen finden Sie unter [Grundlagen der Delegierung](../delegation-overview.md).
 
 ## <a name="syntax"></a>Syntax
 **Average**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Max**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Min**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Sum**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**StdevP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**VarP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )

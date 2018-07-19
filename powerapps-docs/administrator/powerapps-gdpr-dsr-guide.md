@@ -6,13 +6,14 @@ manager: kfile
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 73dc9a319899a941e410d69d10cdc8fd96eba4ea
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 14fe0c749a17a1a28ebc7c8680ff55df2392999e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "34552942"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) für PowerApps-Kundendaten
 

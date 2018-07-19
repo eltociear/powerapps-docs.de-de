@@ -1,22 +1,20 @@
 ---
 title: 'Datumsauswahl-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Datumsauswahl-Steuerelement
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9f2aae06422a130e2976d0276536842c6d565db5
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: d34761b836f25fcb88d2f77d778501eafd78d511
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017776"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Datumsauswahl-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen ein Datum angeben können.
@@ -69,6 +67,10 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
+**IconFill:** die Vordergrundfarbe eines Symbols für die Datumsauswahl.
+
+**IconBackground:** die Hintergrundfarbe eines Symbols für die Datumsauswahl.
+
 **[Italic](properties-text.md)** – Legt fest, ob der Text in einem Steuerelement kursiv formatiert ist.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
@@ -100,14 +102,14 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Datumsauswahl**-Steuerelement hinzu, und benennen Sie es **Deadline**.
-   
+
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](properties-core.md)**-Eigenschaft auf diese Formel fest:
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
-   
+
     Benötigen Sie weitere Informationen zur **[DateDiff](../functions/function-dateadd-datediff.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Drücken Sie F5, legen Sie für **Deadline** ein Datum fest, und klicken oder tippen Sie dann auf **OK**.
-   
+
     Im **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) wird angezeigt, wie viele Tage zwischen dem aktuellen und dem gewählten Datum verbleiben.
 4. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 
@@ -122,4 +124,3 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 * Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
- 

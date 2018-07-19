@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: c01a69f311378e8e818036c866b96a78f223baf9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f2c1807f221d3134bbf39c74ae2939babbdd256e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837123"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899362"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funktionen „EndsWith“ und „StartsWith“ in PowerApps
 Testet, ob eine Textzeichenfolge mit einer anderen Textzeichenfolge beginnt oder endet.
@@ -29,7 +29,7 @@ Die **StartsWith**-Funktion testet, ob eine Zeichenfolge mit einer anderen begin
 
 Bei beiden Funktionen wird in den Tests die Groß-/Kleinschreibung nicht beachtet.  Der Rückgabewert beider Funktionen ist der boolescher Wert **TRUE** oder **FALSE**.  
 
-Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter-lookup.md)**-Funktion, um die Daten in der App zu durchsuchen. Sie können auch mit dem **[in](operators.md#in-and-exactin-operators)**-Operator oder der **[Search](function-filter-lookup.md)**-Funktion an einer beliebigen Stelle innerhalb von Textzeichenfolgen und nicht nur am Anfang oder Ende suchen.  Die Wahl der Funktionen hängt von den Anforderungen der Anwendung ab, und davon welche Funktion für Ihre bestimmte Datenquelle [delegiert](../delegation-overview.md) werden kann.  Wenn eine dieser Funktionen nicht delegiert werden kann, wird beim Erstellen ein blauer Punkt angezeigt, um Sie bezüglich dieser Einschränkung zu warnen.
+Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter-lookup.md)**-Funktion, um die Daten in der App zu durchsuchen. Sie können auch mit dem **[in](operators.md#in-and-exactin-operators)**-Operator oder der **[Search](function-filter-lookup.md)**-Funktion an einer beliebigen Stelle innerhalb von Textzeichenfolgen und nicht nur am Anfang oder Ende suchen.  Die Wahl der Funktionen hängt von den Anforderungen der Anwendung ab, und davon welche Funktion für Ihre bestimmte Datenquelle [delegiert](../delegation-overview.md) werden kann.  Wenn eine dieser Funktionen nicht delegiert werden kann, wird beim Erstellen eine Delegierungswarnung angezeigt, um Sie bezüglich dieser Einschränkung zu warnen.
 
 ## <a name="syntax"></a>Syntax
 **EndsWith**( *Text*, *EndText* )
@@ -43,6 +43,7 @@ Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter
 * *Anfangstext*: erforderlich.  Der am Anfang von *Text* zu suchende Text  Wenn *StartText* eine leere Zeichenfolge ist, gibt **StartsWith** *TRUE* zurück.
 
 ## <a name="examples"></a>Beispiele
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **EndsWith( "Hello World", "world" )** |Überprüft, ob **"Hello World"** mit **"world"** endet.  Bei diesem Test wird die Groß-/Kleinschreibung nicht beachtet. |**TRUE** |

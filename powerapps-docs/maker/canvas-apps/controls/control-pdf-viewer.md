@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 7f6350a70bff19df0c83d2082fe8fb463d81d772
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c47fb9a120f41166bbe23d55de6b502209a0f20d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330834"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898479"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -96,15 +96,17 @@ Wenn das Dokument in PowerApps nicht geöffnet werden kann, wird dem Endanwender
 **Zoom**: Der Prozentsatz, mit dem ein Bild einer Kamera vergrößert wird (oder die Ansicht einer Datei in einem PDF-Viewer).
 
 ## <a name="example"></a>Beispiel
-* Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine **Document**-Eigenschaft (in doppelten Anführungszeichen) auf die URL einer PDF-Datei fest, wie im folgenden Beispiel gezeigt:<br>
+
+Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine **Document**-Eigenschaft (in doppelten Anführungszeichen) auf die URL einer PDF-Datei fest, wie im folgenden Beispiel gezeigt:
+
   **„https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf“**
 
-    Das Steuerelement zeigt die PDF-Datei.
+    The control shows the PDF file.
 
-    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
-
+    Don't know how to [add and configure a control](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+
 Es werden nicht alle Barrierefreiheitsfeatures von PDF-Dokumenten unterstützt, da sich der **PDF-Viewer** noch in der Experimentierphase befindet. Daher sollte **ShowControls** auf **TRUE** festgelegt sein, damit Benutzer das Dokument in einer externen Anwendung öffnen können.
 
 Erfahren Sie, wie Sie mithilfe der [WCAG 2.0](https://www.w3.org/TR/WCAG-TECHS/pdf.html)- und [PDF/UA](https://www.pdfa.org/pdfua-the-iso-standard-for-universal-accessibility/)-Standards PDF-Dokumente erstellen können, auf die zugegriffen werden kann.

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: e6a5df9283cc0d6f5ab30f27096ba3e7e9e5bff0
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5397c99d02e824a86147af053e1f907f83ce3543
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836268"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898272"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Steuerelemente für Säulendiagramme und Liniendiagramme in PowerApps
 Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
@@ -139,7 +139,7 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * Sie sollten eine Zusammenfassung des Diagramms hinzufügen. Z.B: „Das Liniendiagramm zeigt zwischen März und August dieses Jahres einen konstanten Anstieg bei den Verkäufen an.“
 
     > [!NOTE]
-> Diagramme und **Legenden** werden für Benutzer der Sprachausgabe ausgeblendet. Für sie werden stattdessen die Daten in Tabellenform dargestellt. Außerdem können sie zwischen Steuerelementen wechseln, die Daten aus dem Diagramm auswählen.
+  > Diagramme und **Legenden** werden für Benutzer der Sprachausgabe ausgeblendet. Für sie werden stattdessen die Daten in Tabellenform dargestellt. Außerdem können sie zwischen Steuerelementen wechseln, die Daten aus dem Diagramm auswählen.
 
 ### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
 * Wenn mehr als eine Reihe angezeigt wird, muss eine **Legende** vorhanden sein.
@@ -150,4 +150,4 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 
     > [!NOTE]
-> Wenn Benutzer über eine Tastatur zu dem Diagramm navigieren, können sie zwischen Schaltflächen wechseln, die Daten aus dem Diagramm auswählen.
+  > Wenn Benutzer über eine Tastatur zu dem Diagramm navigieren, können sie zwischen Schaltflächen wechseln, die Daten aus dem Diagramm auswählen.

@@ -8,11 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 4973265baf701851ac5c2e8bca9da541b246c068
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 4e12faf91b0ce19a4d2ef2ba2e4d9bbca8fb7093
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896303"
 ---
 # <a name="environments-overview"></a>Umgebungen – Übersicht
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Umgebungen dienen außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. In welcher Weise Sie Umgebungen nutzen, hängt von Ihrer Organisation und den Apps ab, die Sie erstellen möchten. Beispiel:
@@ -38,13 +39,13 @@ Umgebungen weisen zwei integrierte Rollen auf, die Zugriff auf die Berechtigunge
 
 * Die Umgebungsadministratorrolle kann alle Administratoraktionen in einer Umgebung ausführen, darunter:
 
-    * Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
+  * Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
 
-    * Bereitstellen einer Common Data Service-Datenbank für die Umgebung
+  * Bereitstellen einer Common Data Service-Datenbank für die Umgebung
 
-    * Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
+  * Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
 
-    * Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
+  * Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
 
     Nachdem Sie eine Datenbank in der Umgebung erstellt haben, können Sie anstelle der Systemadministratorrolle eine Umgebungsadministratorrolle verwenden.
 

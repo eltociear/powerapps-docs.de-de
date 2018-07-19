@@ -1,41 +1,50 @@
 ---
 title: 'Power BI-Kachel-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich von Eigenschaften und Beispiele, über das Power BI-Kachel-Steuerelement
-documentationcenter: na
 author: fikaradz
 manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 07/07/2016
 ms.author: fikaradz
-ms.openlocfilehash: e7bc2e7e0aafa4d933c47bcf47300dc243c38523
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9df201f5d2fd4017debe47626aedaaa2c735682f
+ms.sourcegitcommit: 16a2eeaa4ad9218682143411b609cb961dbcfa91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827141"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37886376"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
+
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.
 
+Sie verfügen nicht über Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
+
 ## <a name="description"></a>Beschreibung
-Profitieren Sie von Ihrer vorhandenen Datenanalyse und -berichterstellung, indem Sie Ihre **[Power BI-Kacheln](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** in Ihren Apps anzeigen.  Wählen Sie die anzuzeigende Kachel aus, indem Sie ihre Eigenschaften **Workspace**, **Dashboard** und **Tile** auf der Registerkarte **Daten** im Optionsbereich festlegen.
+
+Profitieren Sie von Ihrer vorhandenen Datenanalyse und -berichterstellung, indem Sie Ihre **[Power BI-Kacheln](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** in Ihren Apps anzeigen. Geben Sie die anzuzeigende Kachel an, indem Sie ihre Eigenschaften **Workspace**, **Dashboard** und **Tile** auf der Registerkarte **Daten** im Optionsbereich festlegen.
 
 ## <a name="sharing-and-security"></a>Freigabe und Sicherheit
-Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zugriffsberechtigungen für die App verfügen.  Um jedoch den Power BI-Inhalt für diese Benutzer sichtbar zu machen, muss das Dashboard, aus dem die Kachel stammt, für den Benutzer in Power BI [freigegeben](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports) werden.  Dadurch wird sichergestellt, dass Power BI-Freigabeberechtigungen berücksichtigt werden, wenn in einer App auf Power BI-Inhalt zugegriffen wird.
+
+Wenn Sie eine App freigeben, die Power BI-Inhalt enthält, müssen Sie nicht nur die App selbst sondern auch das [Dashboard](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports) freigeben, aus dem die Kachel stammt. Andernfalls wird der Power BI-Inhalt auch nicht für Benutzer, die die App öffnen, angezeigt. Apps, die Power BI-Inhalt enthalten, berücksichtigen die Berechtigungen für diesen Inhalt.
+
+## <a name="performance"></a>Leistung
+
+Es wird nicht empfohlen, mehr als drei Power BI-Kacheln zur gleichen Zeit in einer App zu laden. Sie können den Ladungsvorgang von Kacheln und auch das Entladen steuern, indem Sie die Eigenschaft **LoadPowerBIContent** festlegen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
+
 **Workspace**: Der Power BI-Arbeitsbereich, aus dem die Kachel stammt.
 
 **Dashboard**: Das Power BI-Dashboard, aus dem die Kachel stammt.
 
 **Tile**: Der Name der Power BI-Kachel, die angezeigt werden soll.
 
+**LoadPowerBIContent**: Wenn „TRUE“ gilt, wird der Power BI-Inhalt geladen und angezeigt. Wenn diese Einstellung auf FALSE festgelegt ist, wird der Power BI-Inhalt entladen, wodurch der Arbeitsspeicher freigeben und die Leistung optimiert wird.
+
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
@@ -46,7 +55,7 @@ Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zug
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt. In der Standardeinstellung gelangt der Benutzer zum Power BI-Bericht, der zur Kachel gehört.
+**[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt. Standardmäßig wird der Power BI-Bericht geöffnet, der der Kachel zugeordnet ist.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -57,18 +66,19 @@ Nach der Freigabe ist die PowerApp für alle Benutzer zugänglich, die über Zug
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein **Power BI-Kachel**-Steuerelement von der Registerkarte **Einfügen**, Menü **Steuerelemente** ein.  
-2. Wählen Sie auf der Registerkarte **Daten** im Optionsbereich für die Einstellung **Arbeitsbereich** „Mein Arbeitsbereich“ aus.  Wählen Sie ein Dashboard aus der Liste der Dashboards und eine Kachel aus der Liste der Kacheln aus.
-   
-    Das Steuerelement rendert die Power BI-Kachel.
-   
-    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
-   
-   Sie verfügen nicht über Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
+1. Öffnen Sie auf der Registerkarte **Einfügen** das Menü **Steuerelemente**, und fügen Sie dann das Steuerelement **Power BI-Kachel** hinzu.
+
+    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+
+2. Klicken oder tippen Sie auf der Registerkarte **Daten** im Optionsbereich für die Einstellung **Arbeitsbereich** auf **Mein Arbeitsbereich**.
+
+3. Wählen Sie in der Liste der Dashboards ein Dashboard aus, und wählen Sie eine Kacheln in der Liste der Kacheln aus.
+
+    Das Steuerelement rendert die Power BI-Kachel.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+
 Bei der **Power BI-Kachel** handelt es sich bloß um einen Container für Power BI-Inhalt. Weitere Informationen zu Inhalt, auf den zugegriffen werden kann, finden Sie unter [Barrierefreiheit in Power BI Desktop-Berichten](https://docs.microsoft.com/power-bi/desktop-accessibility).
 
-### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* Fügen Sie ggf. mithilfe einer **[Bezeichnung](control-text-box.md)** einen Titel hinzu, wenn dem Power BI-Inhalt noch keiner zugeteilt ist. Der Titel kann unmittelbar vor der **Power BI-Kachel** platziert werden.
+Wenn der Power BI-Inhalt über keinen Titel verfügt, fügen Sie ggf. mithilfe des Steuerelements **[Bezeichnung](control-text-box.md)** einen Titel hinzu, damit Sprachausgaben unterstützt werden. Sie können die Bezeichnung unmittelbar vor der Power BI-Kachel platzieren.

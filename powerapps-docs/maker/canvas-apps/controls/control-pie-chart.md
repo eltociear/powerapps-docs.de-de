@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bda839765d797bf87590f037221b116bad781657
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fe61a36278ce4f5fe2fb5ff16bdc0a86dc911e5e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31833675"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899109"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Kreisdiagramm-Steuerelement in PowerApps
 Ein Steuerelement, das einen Vergleich relativer Werte anzeigt
@@ -104,7 +104,7 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * Vor dem Diagramm muss eine **[Bezeichnung](control-text-box.md)** hinzugefügt werden, die als Titel dienen soll.
 
     > [!NOTE]
-> Diagramme und **Legenden** werden für Benutzer der Sprachausgabe ausgeblendet. Für sie werden stattdessen die Daten in Tabellenform dargestellt. Außerdem können sie zwischen Steuerelementen wechseln, die Daten aus dem Diagramm auswählen.
+  > Diagramme und **Legenden** werden für Benutzer der Sprachausgabe ausgeblendet. Für sie werden stattdessen die Daten in Tabellenform dargestellt. Außerdem können sie zwischen Steuerelementen wechseln, die Daten aus dem Diagramm auswählen.
 
 ### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
 * Es muss eine **Legende** verfügbar sein.
@@ -115,4 +115,4 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
 
     > [!NOTE]
-> Wenn Benutzer über eine Tastatur zu dem Diagramm navigieren, können sie zwischen Schaltflächen wechseln, die Daten aus dem Diagramm auswählen.
+  > Wenn Benutzer über eine Tastatur zu dem Diagramm navigieren, können sie zwischen Schaltflächen wechseln, die Daten aus dem Diagramm auswählen.

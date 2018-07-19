@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: d24777ec34759a98421784995f5a73b0dfc1d2d2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a68986c39ffe251f55c10a26386c8430398d2718
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826267"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895820"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Datensatz aus einer Tabelle in PowerApps anzeigen, bearbeiten oder hinzufügen
 Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelement hinzufügen und konfigurieren. Wenn Sie ein Feld in einem Datensatz bearbeiten (bzw. einen Datensatz hinzufügen) und die Änderungen in einer Datenquelle speichern möchten, fügen Sie ein **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelement hinzu, und konfigurieren Sie dieses.
@@ -36,7 +36,7 @@ Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[
     **FlooringEstimates.Name**
 
     > [!NOTE]
-> Weitere Informationen zum Hinzufügen und Umbenennen eines Steuerelements sowie zum Festlegen einer Eigenschaft finden Sie unter [Hinzufügen und Konfigurieren eines Steuerelements](add-configure-controls.md).
+   > Weitere Informationen zum Hinzufügen und Umbenennen eines Steuerelements sowie zum Festlegen einer Eigenschaft finden Sie unter [Hinzufügen und Konfigurieren eines Steuerelements](add-configure-controls.md).
 
     In der Liste werden Namen von Bodenbelägen aus der Datenquelle aufgeführt.
 
@@ -45,7 +45,7 @@ Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[
     ![Ein Formular hinzufügen](./media/add-form/add-a-form.png)
 
     > [!NOTE]
-> In diesem Artikel wird das **Formular bearbeiten**-Steuerelement beschrieben, gleiche Prinzipien gelten jedoch auch für das **Formular anzeigen**-Steuerelement.
+   > In diesem Artikel wird das **Formular bearbeiten**-Steuerelement beschrieben, gleiche Prinzipien gelten jedoch auch für das **Formular anzeigen**-Steuerelement.
 
 3. Legen Sie die **[DataSource](controls/control-form-detail.md)**-Eigenschaft des Formulars auf **FlooringEstimates** und die **[Item](controls/control-form-detail.md)**-Eigenschaft des Formulars auf diese Formel fest:
 
@@ -56,7 +56,7 @@ Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[
 4. Klicken oder tippen Sie im Bereich **Daten** auf das Kontrollkästchen jedes Felds, um es anzuzeigen.
 
     > [!NOTE]
-> Wenn der Bereich **Daten** geschlossen ist, öffnen Sie ihn, indem Sie links das Formular auswählen und anschließend rechts auf **Daten** klicken oder tippen.
+   > Wenn der Bereich **Daten** geschlossen ist, öffnen Sie ihn, indem Sie links das Formular auswählen und anschließend rechts auf **Daten** klicken oder tippen.
 
     ![Anzeigen der Felder im Formular](./media/add-form/checkbox.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: c9525827c7e8e48c0f5e68e3608c9b6b9f630121
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 36e5efec10a3f849b6366368eed7b3b9e7af3f8c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831261"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898373"
 ---
 # <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispiel-Apps
 
@@ -70,7 +70,7 @@ Damit modellgesteuerte Apps ausgeführt oder verändert werden können, müssen 
 
     ![Lösung löschen](media/overview-model-driven-samples/delete-solution.png)
 
-*Stattdessen können Sie auch in der Liste der Lösungen navigieren, indem Sie im Maker-Portal auf **Erweitert** klicken, und aus der URL alle Zeichen löschen, die auf .dynamics.com/* folgen.
+<em>Stattdessen können Sie auch in der Liste der Lösungen navigieren, indem Sie im Maker-Portal auf **Erweitert</em>* klicken und aus der URL alle Zeichen löschen, die auf .dynamics.com/* folgen.
 
 > [!IMPORTANT]
 > Löschen Sie keine anderen Systemlösungen, wenn Sie nicht wissen, welche Folgen dies haben kann.

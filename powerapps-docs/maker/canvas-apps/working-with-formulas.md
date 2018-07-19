@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: e4c2f78fb00e726bd0b0bf3cde4fe4f42d40dddc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ed4e83fab0cf5a08c4b274863f11070471fc44a4
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330880"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898709"
 ---
 # <a name="get-started-with-formulas"></a>Erste Schritte mit Formeln
 Konfigurieren Sie Ihre App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
@@ -70,7 +70,7 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
     In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30, 12)**. In PowerApps erreichen Sie denselben Effekt, indem Sie die Eigenschaft **Text** eines Steuerelements, z.B. einer Bezeichnung, auf **42** oder **Sum(30, 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
    
     > [!NOTE]
-> In PowerApps werden Formeln weder ein Gleichheitszeichen noch ein Pluszeichen vorangestellt, wie es z.B. in Excel gebräuchlich ist. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
+   > In PowerApps werden Formeln weder ein Gleichheitszeichen noch ein Pluszeichen vorangestellt, wie es z.B. in Excel gebräuchlich ist. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
 5. Ersetzen Sie in der **[Text](controls/properties-core.md)**-Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1, 2, 3)**.
    
     ![Die Eingabe der partiellen Funktion „Sum(1, 2, 3“ ohne eine schließende Klammer gibt Fehler zurück.](./media/working-with-formulas/label-sum-partial.png)
@@ -98,7 +98,7 @@ In Excel können Sie eine bedingte Formatierung verwenden, um negative Werte z.B
 1. Legen Sie die **[Color](controls/properties-color-border.md)**-Eigenschaft des Textfelds auf diese Formel fest:<br>**If( Value(TextBox1.Text) < 0, Red, Black )**
    
     > [!NOTE]
-> Geben Sie in einer Formel die Eigenschaft eines Steuerelements an, indem Sie den Namen des Steuerelements gefolgt von einem Punkt und dem Namen der Eigenschaft angeben. Geben Sie z.B. die **[Text](controls/properties-core.md)**-Eigenschaft von **TextBox1** an, indem Sie **TextBox1.Text** eingeben.
+   > Geben Sie in einer Formel die Eigenschaft eines Steuerelements an, indem Sie den Namen des Steuerelements gefolgt von einem Punkt und dem Namen der Eigenschaft angeben. Geben Sie z.B. die **[Text](controls/properties-core.md)**-Eigenschaft von **TextBox1** an, indem Sie **TextBox1.Text** eingeben.
    
     ![Veranschaulichung der Änderung der Farben einer Bezeichnung anhand ihres Werts in PowerApps Recalc](./media/working-with-formulas/recalc-color1.png)
 2. Geben Sie in **TextInput1** und **TextInput2** zwei Zahlen an, die bei einer Addition eine negative Zahl ergeben.

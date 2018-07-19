@@ -1,22 +1,20 @@
 ---
 title: Transformieren Ihrer InfoPath-Formulare zu PowerApps | Microsoft-Dokumentation
 description: Erste Schritte beim Transformieren Ihrer InfoPath-Formulare in PowerApps mit weiteren Informationen über gängige InfoPath-Szenarien und die Erstellung dieser Elemente in PowerApps
-documentationcenter: na
-author: dewcatpaint1
-manager: kfile
-editor: ''
-tags: ''
+author: richardriley99
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/05/2018
-ms.author: cathed
-ms.openlocfilehash: 1d03cadfe764d25a4758f35b540c6217004b7657
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.author: rriley
+ms.openlocfilehash: 74445d4a9398afe00407e7b1a1eae5b7d773dd22
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020398"
 ---
 # <a name="transform-your-infopath-forms-to-powerapps"></a>InfoPath-Formulare in PowerApps-Formulare transformieren
 

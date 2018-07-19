@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die SharePoint-Verbindung | Microsoft-Dokumentation
 description: Hier finden Sie die verfügbaren Funktionen, Antworten und Beispiele für SharePoint.
-documentationcenter: ''
 author: sarafankit
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 1be4a7a6f1d4080a715f88db8d48892641a19a1f
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: d74fdd20db63f6d617db48e09319a84775553f9f
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017132"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Verbinden mit SharePoint aus PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)

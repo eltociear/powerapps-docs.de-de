@@ -7,12 +7,12 @@ ms.topic: overview
 ms.component: canvas
 ms.date: 04/26/2018
 ms.author: anneta
-ms.openlocfilehash: d520f47393c5462f36445e4c8df81617dfddafd2
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 606f5aa15d057387542471f82fd071f4044cfd1e
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329822"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36311590"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
@@ -43,7 +43,7 @@ Führen Sie Ihre eigenen Apps – und alle Apps, die für Sie freigegeben wurden
 ## <a name="learn-more"></a>Weitere Informationen
 * Durchsuchen Sie die Anleitungen, Konzept- und Referenzthemen im Navigationsbereich auf der linken Seite.
 * Bearbeiten Sie die [Kurse zum geführten Lernen](https://docs.microsoft.com/powerapps/guided-learning/) im Selbststudium.
-* Sehen Sie sich die [geplanten Webinare](webinars-listing.md#upcoming-webinars) an, in denen die Funktionen von PowerApps behandelt werden. Sie können bei Bedarf auch auf [bereits stattgefundene Webinare](webinars-listing.md#past-webinars) zugreifen.
+* Sehen Sie sich die [Webinare](webinars-listing.md) an, auf die Sie bei Bedarf zugreifen können und in denen die Features und Funktionen von PowerApps behandelt werden.
 
 ## <a name="share-your-experience"></a>Teilen Sie Ihre Erfahrungen
 * Beteiligen Sie sich an der [PowerApps-Community](https://aka.ms/powerapps-community), indem Sie mitlesen und Beiträge verfassen. Dort können alle Benutzer von PowerApps Fragen stellen, die dann von anderen Benutzern beantwortet werden. Bevor Sie eine Frage stellen, führen Sie eine Suche in der Community durch, um festzustellen, ob die Frage bereits beantwortet wurde.

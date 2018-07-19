@@ -6,13 +6,14 @@ manager: kfile
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 724ac9217e1a336aaea8139375ff7d612eb83b53
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: d518cbf398d0f29b25da9dafcfa6e9026fcee88e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897177"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) zum Löschen von PowerApps-Kundendaten
 
@@ -51,10 +52,10 @@ Umgebung | PowerApps Admin Center |  PowerApps-Cmdlets
 Umgebungsberechtigungen**   | PowerApps Admin Center | PowerApps-Cmdlets
 Canvas-App  | PowerApps Admin Center <br> PowerApps| PowerApps-Cmdlets
 Berechtigungen für Canvas-Apps  | PowerApps Admin Center | PowerApps-Cmdlets
-Verbindung | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
-Verbindungsberechtigungen | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
-Benutzerdefinierter Connector | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
-Berechtigungen für benutzerdefinierte Connectors | | App-Ersteller: Verfügbar <br> Administrator: in der Entwicklung
+Verbindung | | App-Ersteller: Verfügbar <br> Administrator: Verfügbar
+Verbindungsberechtigungen | | App-Ersteller: Verfügbar <br> Administrator: Verfügbar
+Benutzerdefinierter Connector | | App-Ersteller: Verfügbar <br> Administrator: Verfügbar
+Berechtigungen für benutzerdefinierte Connectors | | App-Ersteller: Verfügbar <br> Administrator: Verfügbar
 
 \** Mit der Einführung des CDS für Apps werden bei Erstellung einer Datenbank innerhalb der Umgebung Umgebungsberechtigungen und modellgesteuerte App-Berechtigungen als Datensätze in dieser Datenbankinstanz gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer von CDS für Apps finden Sie unter [Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps](common-data-service-gdpr-dsr-guide.md).
 
@@ -62,6 +63,26 @@ Berechtigungen für benutzerdefinierte Connectors | | App-Ersteller: Verfügbar 
 
 ### <a name="for-users"></a>Für Benutzer
 Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge über [PowerApps](https://web.powerapps.com) oder [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
+
+#### <a name="unmanaged-tenant"></a>Nicht verwalteter Mandant
+Wenn Sie Mitglied eines [nicht verwalteten Mandanten](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover) sind, also Ihr Azure AD-Mandant nicht über globale Administratorberechtigungen verfügt, können Sie trotzdem die in diesem Artikel aufgeführten Schritte ausführen, um Ihre eigenen personenbezogenen Daten zu entfernen.  Da es allerdings keinen globalen Administrator für Ihren Mandanten gibt, müssen Sie die nachfolgend unter [Schritt 11: Löschen des Benutzers aus Azure Active Directory](#step-11-delete-the-user-from-azure-active-directory) beschriebenen Anweisungen ausführen, um Ihr eigenes Konto aus dem Mandanten zu entfernen.
+
+Wenn Sie überprüfen möchten, ob Sie Mitglied eines nicht verwalteten Mandanten sind, führen Sie die folgenden Schritte aus:
+
+1. Öffnen Sie die folgende URL in einem Browser. Fügen Sie dabei Ihre E-Mail-Adresse in die URL ein: https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1
+
+2. Wenn Sie Mitglied eines **nicht verwalteten Mandanten** sind, wird der Wert `"IsViral": true` in der Antwort angezeigt.
+   ```
+   {
+   ...
+   "Login": "foobar@unmanagedcontoso.com",
+   "DomainName": "unmanagedcontoso.com",
+   "IsViral": true,
+   ...
+   }
+   ```
+
+3. Wenn dies nichts der Fall ist, sind Sie Teil eines **verwalteten Mandanten**.
 
 ### <a name="for-administrators"></a>Für Administratoren
 Für die Durchführung der in diesem Dokument beschriebenen Verwaltungsvorgänge über das [PowerApps Admin Center](https://admin.powerapps.com/), das Microsoft Flow Admin Center oder die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benötigen Sie folgendes:
@@ -251,7 +272,7 @@ Ein Administrator kann über das [PowerApps Admin Center](https://admin.powerapp
 
     ![Verwaltungsseite „App-Freigabe“](./media/powerapps-gdpr-delete-dsr/admin-share-page.png)
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
+### <a name="powershell-cmdlets-for-admins"></a>PowerShell-Cmdlets für Administratoren
 Ein Administrator kann über die Funktion **Remove-AdminAppRoleAssignmnet** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) sämtliche Rollenzuweisungen zu Canvas-Apps eines Benutzers löschen:
 
 ```
@@ -276,7 +297,15 @@ Get-Connection | Remove-Connection
 ```
 
 ### <a name="powershell-cmdlets-for-powerapps-administrators"></a>PowerShell-Cmdlets für Administratoren in PowerApps
-Die Funktion, mit der ein Administrator mithilfe von [PowerShell-Cmdlets](https://go.microsoft.com/fwlink/?linkid=871804) die Verbindungen eines Benutzers finden und löschen kann, befindet sich in der Entwicklung.
+Ein Administrator kann über die Funktion **Remove-AdminConnection** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) sämtliche Verbindungen eines Benutzers löschen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all connections for the DSR user and deletes them
+Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
+```
 
 ## <a name="step-6-delete-the-users-permissions-to-shared-connections"></a>Schritt 6: Löschen der Benutzerberechtigungen für freigegebene Verbindungen
 
@@ -292,8 +321,16 @@ Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 > [!NOTE]
 > Rollenzuweisungen zu Besitzern können nur zusammen mit der Verbindungsressource gelöscht werden.
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
-Die Funktion, mit der ein Administrator mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) Rollenzuweisungen eines Benutzers zu Verbindungen suchen und löschen kann, befindet sich in der Entwicklung.
+### <a name="powershell-cmdlets-for-admins"></a>PowerShell-Cmdlets für Administratoren
+Ein Administrator kann über die Funktion **Remove-AdminConnectionRoleAssignment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) alle Rollenzuweisungen eines Benutzers löschen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all connection role assignments for the DSR user and deletes them
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment
+```
 
 ## <a name="step-7-delete-custom-connectors-created-by-the-user"></a>Schritt 7: Löschen der benutzerdefinierten, vom Benutzer erstellten Connectors
 Benutzerdefinierte Connectors ergänzen die vorhandenen Out-of-Box-Connectors und ermöglichen das Herstellen einer Verbindung mit anderen APIs, SaaS-Systemen und benutzerentwickelten Systemen. Sie sollten den Besitz benutzerdefinierter Connectors an andere Benutzer in der Organisation übertragen oder den benutzerdefinierten Connector löschen.
@@ -308,8 +345,16 @@ Add-PowerAppsAccount
 Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
-Die Funktion, mit der ein Administrator mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benutzerdefinierte Connectors eines Benutzers suchen und löschen kann, befindet sich in der Entwicklung.
+### <a name="powershell-cmdlets-for-admins"></a>PowerShell-Cmdlets für Administratoren
+Ein Administrator kann über die Funktion **Remove-AdminConnector** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) alle von einem Benutzer erstellten benutzerdefinierten Connectors löschen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all custom connectors created by the DSR user and deletes them
+Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
+```
 
 ## <a name="step-8-delete-the-users-permissions-to-shared-custom-connectors"></a>Schritt 8: Löschen der Benutzerberechtigungen für freigegebene benutzerdefinierte Connectors
 
@@ -326,8 +371,16 @@ Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 > [!NOTE]
 > Rollenzuweisungen zu Besitzern können nur zusammen mit der Verbindungsressource gelöscht werden.
 
-### <a name="powerapps-admin-powershell-cmdlets"></a>PowerShell-Cmdlets für Administratoren in PowerApps
-Die Funktion, mit der ein Administrator mithilfe der [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) Rollenzuweisungen eines Benutzers zu Connectors suchen und löschen kann, befindet sich in der Entwicklung.
+### <a name="powershell-cmdlets-for-admins"></a>PowerShell-Cmdlets für Administratoren
+Ein Administrator kann über die Funktion **Remove-AdminConnectorRoleAssignment** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) alle benutzerdefinierten Rollenzuweisungen von Connectors für einen Benutzer löschen:
+
+```
+Add-PowerAppsAccount
+$deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+
+#Retrieves all custom connector role assignments for the DSR user and deletes them
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment
+```
 
 ## <a name="step-9-delete-the-users-personal-data-in-microsoft-flow"></a>Schritt 9: Löschen der personenbezogenen Benutzerdaten in Microsoft Flow
 In PowerApps-Lizenzen sind immer Microsoft Flow-Funktionen enthalten. Microsoft Flow ist nicht nur in PowerApps-Lizenzen enthalten, sondern auch als eigenständiger Dienst. Weitere Informationen zum Reagieren auf DSR-Anforderungen für Benutzer, die den Microsoft Flow-Dienst verwenden, finden Sie unter [Responding to GDPR Data Subject Requests for Microsoft Flow (Reagieren auf DSGVO-Anforderungen betroffener Personen für Microsoft Flow)](https://go.microsoft.com/fwlink/?linkid=872250).
@@ -344,4 +397,19 @@ Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer von CDS für Apps 
 > Es wird empfohlen, dass Administratoren diesen Schritt für PowerApps-Benutzer ausführen.
 
 ## <a name="step-11-delete-the-user-from-azure-active-directory"></a>Schritt 11: Löschen des Benutzers aus Azure Active Directory
-Nach Ausführung der oben aufgeführten Schritte wird in einem letzten Schritt das Konto des Benutzers in Azure Active Directory gelöscht. Hierzu werden die Schritte ausgeführt, die im [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in der Dokumentation zur DSGVO für Azure-Datensubjektanforderungen erläutert werden.
+Wenn Sie die obenstehend aufgeführten Schritte ausgeführt haben, löschen Sie das Azure Active Directory-Konto für den Benutzer.
+
+### <a name="managed-tenant"></a>Verwalteter Mandant
+Als Administrator eines verwalteten Azure AD-Mandanten können Sie das Konto des Benutzers in Azure Active Directory löschen. Führen Sie hierzu die Schritte aus, die im [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) in der Dokumentation zur DSGVO für Azure-Datensubjektanforderungen erläutert werden.
+
+### <a name="unmanaged-tenant"></a>Nicht verwalteter Mandant
+Wenn Sie Mitglied eines nicht verwalteten Mandanten sind, führen Sie die folgenden Schritte aus, um Ihr Konto aus Ihrem Azure AD-Mandanten zu löschen:
+
+> [!NOTE]
+> Weitere Informationen zur Vorgehensweise bei der Überprüfung, ob Sie Mitglied eines verwalteten oder eines nicht verwalteten Mandanten sind, finden Sie obenstehend im Abschnitt [Nicht verwalteter Mandant](#unmanaged-tenant).
+
+1. Navigieren Sie zu der Seite [Work and School privacy (Datenschutz für Geschäfts-, Schul- oder Unikonten)](https://go.microsoft.com/fwlink/?linkid=87312), und melden Sie sich mit Ihrem Azure AD-Konto an.
+
+2. Klicken Sie auf **Konto schließen**, und führen Sie die Anweisungen aus, um Ihr Konto aus Ihrem Azure AD-Mandanten zu löschen.
+
+    ![App-Freigabe auswählen](./media/powerapps-gdpr-delete-dsr/close-account.png)

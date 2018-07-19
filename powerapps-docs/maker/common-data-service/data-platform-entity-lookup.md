@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
 ms.openlocfilehash: f1952c2349eb54f2c6348f5abc4dee9a4645348a
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168433"
 ---
 # <a name="create-a-relationship-between-entities"></a>Erstellen einer Beziehung zwischen Entitäten
 Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Teachers** und eine Entität **Class**, und die Entität **Class** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Teachers**, um anzuzeigen, welcher Lehrer den Kurs gibt. Sie können ein Nachschlagefeld verwenden, um Daten aus der Entität **Teachers** anzuzeigen. Dies wird häufig als Nachschlagefeld bezeichnet.

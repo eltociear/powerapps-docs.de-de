@@ -1,21 +1,17 @@
 ---
 title: 'Übersicht: Common Data Model | Microsoft-Dokumentation'
 description: Erfahren Sie, wie Common Data Model eine Verbindung zwischen Common Data Service für Apps und Common Data Service für Analysen herstellt.
-documentationcenter: na
 author: RobertBruckner
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: article
 ms.date: 03/14/2018
 ms.author: jdaly
-ms.openlocfilehash: ed7a1bfd7e3d3439cdcf2f20d1026c69a9abce4d
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 4e9b929558de0b2451bb2df4add4b300d7115848
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "34803238"
 ---
 # <a name="common-data-model-overview"></a>Übersicht: Common Data Model
 

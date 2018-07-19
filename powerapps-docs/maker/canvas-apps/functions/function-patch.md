@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: d0b2ff351f7026967359f1b4d386a71d7ed5441f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 02664d3715b2e5b43a56a041e9de8b294559a862
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838715"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899155"
 ---
 # <a name="patch-function-in-powerapps"></a>Funktion „Patch“ in PowerApps
 Ändert oder erstellt einen oder mehrere [Datensätze](../working-with-tables.md#records) in einer [Datenquelle](../working-with-data-sources.md) oder verbindet Datensätze außerhalb einer Datenquelle.
@@ -102,6 +102,7 @@ Nachdem die oben genannten Formeln ausgewertet wurden, endet die Datenquelle mit
 ![](media/function-patch/icecream-after.png)
 
 #### <a name="merge-records-outside-of-a-data-source"></a>Zusammenführen von Datensätzen (außerhalb einer Datenquelle)
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |Verbindet zwei Datensätze außerhalb einer Datenquelle:<br><ul><li>Die Werte in der Spalte **Name** jedes Datensatzes stimmen nicht überein. Das Ergebnis enthält den Wert (**Jim**) im Datensatz, der dem Ende der Argumentliste näher ist, anstelle des Werts (**James**) im Datensatz, der näher am Anfang ist.</li><li>Der erste Datensatz enthält eine Spalte (**Score**), die im zweiten Datensatz nicht vorhanden ist. Das Ergebnis enthält diese Spalte mit dem Wert (**90**).</li><li>Der zweite Datensatz enthält eine Spalte (**Passed**), die im ersten Datensatz nicht vorhanden ist. Das Ergebnis enthält diese Spalte mit dem Wert (**TRUE**). |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |

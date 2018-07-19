@@ -8,11 +8,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: d9bd70acaacbbeda98c14337035a233b7c70c181
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 620152a684e5bf0399bd938172f328892b137325
+ms.sourcegitcommit: 44ecb3ace4c865bc592dfb7f0b5fffa289d3b035
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36306118"
 ---
 # <a name="configure-environment-security"></a>Konfigurieren der Sicherheit von Umgebungen
 Common Data Service (CDS) für Apps verwendet ein rollenbasiertes Sicherheitsmodell, das den sicheren Zugriff auf die Datenbank unterstützt. In diesem Thema wird erläutert, wie die Sicherheitsartefakte erstellt werden, die Sie zum Schützen von Apps benötigen. Die Benutzerrollen steuern den Laufzeitzugriff auf Daten und sind getrennt von den Umgebungsrollen, die die Umgebungsadministratoren und Umgebungsersteller regeln. Einen Überblick über die Umgebungen finden Sie unter [Environments overview (Überblick über Umgebungen)](environments-overview.md).
@@ -59,7 +60,7 @@ Die PowerApps-Umgebung umfasst vordefinierte Sicherheitsrollen, die häufig verw
 |Systemadministrator     |  Erstellen, lesen, schreiben, anpassen und Sicherheitsrollen       | Verfügt über umfassende Berechtigungen zum Anpassen oder Verwalten der Umgebung, einschließlich dem Erstellen, Verändern und Zuweisen von Sicherheitsrollen. Kann alle Daten in der Umgebung abrufen. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Anpassungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization).        |
 |Systemanpasser     | Erstellen (selbst), Lesen (selbst), Schreiben (selbst), Löschen (selbst), Anpassen         | Verfügt über umfassende Berechtigungen zum Anpassen der Umgebung. Kann jedoch nur eigene Datensätze zu Umgebungsentitäten abrufen. Weitere Informationen finden Sie unter [Erforderliche Berechtigungen für Anpassungen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization).        |
 |Umgebungsersteller     |  Keine       | Kann mithilfe von Microsoft Flow neue Ressourcen erstellen, die einer Umgebung zugewiesen sind, einschließlich Apps, Verbindungen, benutzerdefinierter APIs, Gateways und Workflows. Verfügt jedoch nicht über Berechtigungen zum Zugreifen auf Daten innerhalb einer Umgebung. Weitere Informationen finden Sie unter [Environments overview (Übersicht zu Umgebungen)](https://powerapps.microsoft.com/blog/powerapps-environments/).        |
-|Common Data Service-Benutzer     |  Lesen, Erstellen (selbst), Schreiben (selbst), Löschen (selbst)       | Kann eine App innerhalb einer Umgebung ausführen und häufig verwendete Aufgaben für eigene Datensätze durchführen.        |
+|Common Data Service-Benutzer     |  Lesen, Erstellen (selbst), Schreiben (selbst), Löschen (selbst)       | Ermöglicht das Ausführen einer App in der Umgebung und das Durchführen allgemeiner Aufgaben, z.B. Lesen aller [applicationCommon- und crmCommon-Entitäten](https://github.com/Microsoft/CDM/tree/master/schemaDocuments#click-this-image-to-explore-the-cdm-entities-using-the-entity-navigator) sowie Erstellen, Schreiben und Löschen der eigenen Datensätze aus diesen Entitäten (außer „Konto“, „Kontakt“ und „Verbindung“, bei denen er in alle Datensätze schreiben kann, unabhängig davon, wer sie besitzt).          |
 |Delegat     | Im Auftrag eines anderen Benutzers handeln        | Ermöglicht es, als anderer Benutzer oder mit einer anderen Identität Code auszuführen.  Wird in der Regel mit einer anderen Sicherheitsrolle verwendet, damit auf Datensätze zugegriffen werden kann. Weitere Informationen finden Sie unter [Annehmen der Identität eines anderen Benutzers](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user).        |
 
 *Die Berechtigungen gelten global, sofern keine anderen Angaben gemacht werden.
@@ -106,7 +107,6 @@ Weitere Informationen zu Zugriffs- und Bereichsberechtigungen finden Sie unter [
 9. Wählen Sie die Berechtigungen **Lesen, schreiben, anfügen** aus.
 
 10. Klicken Sie auf **Speichern und schließen**.
-
 
 
 <!--Reference links in article-->

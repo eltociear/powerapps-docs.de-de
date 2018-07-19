@@ -7,12 +7,12 @@ ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
 ms.author: jimh
-ms.openlocfilehash: f648d68a19c646a2a69a8eebca85ac9e33af0686
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 857c080ff3b8205b9c74099954cd5156697deb77
+ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552850"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37026209"
 ---
 # <a name="quickstart-create-an-environment"></a>Schnellstart: Erstellen einer Umgebung
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Sie dient außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. Für jeden Mandanten erstellt PowerApps automatisch eine Standardumgebung, die von allen Benutzern dieses Mandanten gemeinsam verwendet wird.
@@ -37,8 +37,6 @@ Melden Sie sich unter [https://admin.powerapps.com](https://admin.powerapps.com)
 
     ![Datei > Freigeben](./media/create-environment/new-environment-dialog.png)
 3. Sobald die Umgebung erstellt wurde, erhalten Sie in einem Dialogfeld eine Bestätigungsmeldung, und Sie werden aufgefordert, eine Datenbank zu erstellen. Klicken oder tippen Sie auf **Datenbank erstellen**, um den Zugriff auf Common Data Service zu gewähren.
-
-    **Hinweis:** Derzeit können Sie nur in der Region des Azure Active Directory-Mandanten eine Datenbank erstellen.
 
     ![Datei > Freigeben](./media/create-environment/create-database-dialog.png)
 4. Wählen Sie für die in der Datenbank gespeicherten Daten eine Währung und eine Sprache aus. Nachdem die Datenbank erstellt wurde, können Sie die Währung und die Sprache nicht mehr ändern. Wenn Sie fertig sind, klicken oder tippen Sie auf **Datenbank erstellen**.

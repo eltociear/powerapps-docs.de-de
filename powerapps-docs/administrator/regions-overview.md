@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 818d751a45eee6d746d4f318a98169a771787d92
-ms.sourcegitcommit: f236364ecb06dd86244cd9a607c31e0d716912e2
+ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "34445773"
 ---
 # <a name="regions-overview-in-powerapps"></a>Übersicht der Regionen in PowerApps
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>Wie finde ich heraus, wo meine App bereitgestellt ist?

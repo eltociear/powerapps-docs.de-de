@@ -1,22 +1,20 @@
 ---
 title: Übersicht über das Erstellen von Apps | Microsoft-Dokumentation
 description: Übersicht über das Erstellen von Apps im Canvas-Modus oder im modellgesteuerten Modus sowie über die Integration von Common Data Service
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: d9d0a56e0de283c43bb51a9375593950e1c98479
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: ''
+ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094608"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Übersicht über das Erstellen von Apps in PowerApps
 Bei PowerApps handelt es sich um eine produktive Entwicklungsplattform für Geschäfts-Apps, die aus drei wesentlichen Komponenten besteht:
@@ -48,7 +46,7 @@ Wenn Sie eine modellgesteuerte App erstellen, können Sie die gesamte Leistungsf
 
 Die ersten Schritte mit modellgesteuerten Apps sind einfach. Sie können mit folgenden Themen beginnen:
 
-- [Erstellen einer App](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-app)
+- [Erstellen einer App](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app)
 - [Erstellen und Entwerfen von Formularen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-design-forms)
 - [Erstellen oder Bearbeiten von Ansichten](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-views)
 - [Erstellen oder Bearbeiten eines Systemdiagramms](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-system-chart)

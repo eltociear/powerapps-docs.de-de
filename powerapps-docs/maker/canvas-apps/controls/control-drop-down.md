@@ -13,11 +13,11 @@ ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
 ms.openlocfilehash: 3df14293f478c24dbe64b84d0c2d1ea50b485fa3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835115"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38083055"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Dropdown-Steuerelement in PowerApps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.

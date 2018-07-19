@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die Verbindung mit Office 365-Benutzer| Microsoft-Dokumentation
 description: Anleitung zum Herstellen einer Verbindung mit Office 365-Benutzer, einige Beispiele für die erforderlichen Schritte und Auflistung aller Funktionen
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/07/2016
 ms.author: lanced
-ms.openlocfilehash: 061d70ed1bae2971379acef4ea43ca85d805e756
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: 253dcd38c4e5c35aad71ac5f220350f19715dfb3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018167"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Herstellen einer Verbindung mit Office 365-Benutzer aus PowerApps
 ![Office 365-Benutzer](./media/connection-office365-users/office365icon.png)
@@ -31,7 +29,7 @@ In diesem Thema wird gezeigt, wie Sie Office 365-Benutzer als Verbindung hinzuf�
 
 ## <a name="add-a-connection"></a>Eine Verbindung hinzufügen
 1. [Fügen Sie eine Datenverbindung hinzu](../add-data-connection.md), und wählen Sie **Office 365-Benutzer** aus:  
-   
+
     ![Herstellen einer Verbindung mit Office 365](./media/connection-office365-users/add-office.png)
 2. Wählen Sie **Verbinden** aus, und wenn Sie aufgefordert werden, sich anzumelden, geben Sie Ihr Geschäftskonto ein.
 
@@ -41,7 +39,7 @@ Die Verbindung mit Office 365-Benutzer wurde erstellt und Ihrer App hinzugefügt
 ### <a name="show-information-about-the-current-user"></a>Informationen über den aktuellen Benutzer anzeigen
 1. Wählen Sie im Menü **Insert** (Einfügen) die Option **Label** (Bezeichnung) aus
 2. Legen Sie in der Funktionsleiste die **[Text](../controls/properties-core.md)**-Eigenschaft auf eine der folgenden Formeln fest:
-   
+
     `Office365Users.MyProfile().Department`  
     `Office365Users.MyProfile().DisplayName`  
     `Office365Users.MyProfile().GivenName`  
@@ -58,13 +56,13 @@ In der Bezeichnung werden die Informationen über den aktuellen Benutzer angezei
 
 ### <a name="show-information-about-another-user"></a>Anzeigen von Informationen zu einem anderen Benutzer
 1. Klicken Sie im Menü **Insert** (Einfügen) auf **Text**, und wählen Sie dann **Texteingabe** (Texteingabe) aus. Benennen Sie das Steuerelement in **InfoAbout** um:  
-   
+
     ![Umbenennen des Steuerelements](./media/connection-office365-users/renameinfoabout.png)
 2. Geben Sie in **InfoAbout** eine E-Mail-Adresse eines Benutzers in Ihrer Organisation ein, oder fügen Sie sie ein. Geben Sie z. B. *IhrName*@*IhrUnternehmen.com* ein.
 3. Fügen Sie ein **Label** (Bezeichnung) hinzu (Menü **Einfügen**), und legen Sie seine **[Text](../controls/properties-core.md)**-Eigenschaft auf eine der folgenden Formeln fest:
-   
+
    * So zeigen Sie Informationen zu einem anderen Benutzer an:  
-     
+
        `Office365Users.UserProfile(InfoAbout.Text).Department`  
        `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
        `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
@@ -77,7 +75,7 @@ In der Bezeichnung werden die Informationen über den aktuellen Benutzer angezei
        `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
        `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
    * So zeigen Sie Informationen zum Vorgesetzten eines anderen Benutzers an:  
-     
+
        `Office365Users.Manager(InfoAbout.Text).Department`  
        `Office365Users.Manager(InfoAbout.Text).DisplayName`  
        `Office365Users.Manager(InfoAbout.Text).GivenName`  
@@ -104,28 +102,28 @@ Wenn Sie einen Kontakt erstellen und in der App diesen Kontakt im Bildschirm zum
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu (Menü **Insert** (Einfügen) > **Text** > **Text input**  (Texteingabe)), und benennen Sie es in **InfoAbout** um.
 2. Geben Sie in **InfoAbout** die E-Mail-Adresse eines Benutzers in Ihrer Organisation ein. Geben Sie z. B. *NameIhresVorgesetzten*@*IhrUnternehmen.com* ein.
 3. Fügen Sie einen Katalog **mit Text** hinzu (Menü **Insert** (Einfügen) > **Gallery** (Katalog)), und legen Sie dessen **[Items](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:
-   
+
     `Office365Users.DirectReports(InfoAbout.Text)`
-   
+
     Im Katalog werden Informationen zu den direkt unterstellten Mitarbeitern des von Ihnen eingegebenen Benutzers angezeigt.
-   
+
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 4. Wählen Sie in der zweiten Liste **JobTitle** aus. Wählen Sie in der dritten Liste **DisplayName** aus. Der Katalog wird mit diesen Werten aktualisiert.  
-   
+
 > [!NOTE]
 > Das erste Feld ist eigentlich eine Bildsteuerung. Wenn Sie über kein Bild verfügen, können Sie die Bildsteuerung löschen und stattdessen eine Bezeichnung hinzufügen. Unter [Hinzufügen und Konfigurieren von Steuerelementen](../add-configure-controls.md) finden Sie viele hilfreiche Informationen.
 
 ### <a name="search-for-users"></a>Nach Benutzern suchen
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu (Menü **Insert** (Einfügen) > **Text** > **Text input** (Texteingabe)), und benennen Sie es in **SearchTerm** um. Geben Sie einen zu suchenden Namen ein. Geben Sie beispielsweise Ihren Vornamen ein.
 2. Fügen Sie einen Katalog **mit Text** hinzu (Menü **Insert** (Einfügen) > **Gallery** (Katalog)), und legen Sie dessen **[Items](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:
-   
+
     `Office365Users.SearchUser({searchTerm: SearchTerm.Text})`
-   
+
     Im Katalog werden Benutzer angezeigt, deren Name den von Ihnen eingegebenen Suchtext enthält.
-   
+
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 3. Wählen Sie in der zweiten Liste **Mail** aus. Wählen Sie in der dritten Liste **DisplayName** aus.
-   
+
     Die zweite und dritte Bezeichnung im Katalog werden aktualisiert.
 
 ## <a name="view-the-available-functions"></a>Anzeigen der verfügbaren Funktionen
@@ -146,6 +144,7 @@ Mein Profil abrufen: Ruft das Profil für den aktuellen Benutzer ab.
 Keine
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Typ | Beschreibung |
 | --- | --- | --- |
 | Department |Zeichenfolge |Die Abteilung des Benutzers |
@@ -164,11 +163,13 @@ Keine
 Benutzerprofil abrufen: Ruft ein bestimmtes Benutzerprofil ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | Id |Zeichenfolge |ja |Der Prinzipalname oder die E-Mail-ID des Benutzers |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Typ | Beschreibung |
 | --- | --- | --- |
 | Department |Zeichenfolge |Die Abteilung des Benutzers |
@@ -187,11 +188,13 @@ Benutzerprofil abrufen: Ruft ein bestimmtes Benutzerprofil ab.
 Vorgesetzten abrufen: Ruft das Benutzerprofil für den Vorgesetzten des angegebenen Benutzers ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | Id |Zeichenfolge |ja |Der Prinzipalname oder die E-Mail-ID des Benutzers |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Typ | Beschreibung |
 | --- | --- | --- |
 | Department |Zeichenfolge |Die Abteilung des Benutzers |
@@ -210,11 +213,13 @@ Vorgesetzten abrufen: Ruft das Benutzerprofil für den Vorgesetzten des angegebe
 Get direct reports (Direkt unterstellte Mitarbeiter abrufen): Ruft die direkt unterstellten Mitarbeiter ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | Id |Zeichenfolge |ja |Der Prinzipalname oder die E-Mail-ID des Benutzers |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Typ | Beschreibung |
 | --- | --- | --- |
 | Department |Zeichenfolge |Die Abteilung des Benutzers |
@@ -233,11 +238,13 @@ Get direct reports (Direkt unterstellte Mitarbeiter abrufen): Ruft die direkt un
 Search for users (Benutzer suchen): Ruft die Suchergebnisse von Benutzerprofilen ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | searchTerm |Zeichenfolge |Nein |Suchzeichenfolge Gilt für: Anzeigename, Vorname, Nachname, E-Mail-ID, E-Mail Spitzname und Benutzerprinzipalname |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Typ | Beschreibung |
 | --- | --- | --- |
 | Department |Zeichenfolge |Die Abteilung des Benutzers |

@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: d51d134878b04f3cb10ff876ef488f1390e4ef30
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 939758c1550f1006f00bd9a386eb4b9cbcd69af0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826796"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899914"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
 Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen PowerApps und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
@@ -67,7 +67,7 @@ Für die Berechtigungsstufen **Verwenden** und **Verwenden + freigeben** wählen
 3. Um eine Verbindung freizugeben, klicken oder tippen Sie auf **Freigeben**, und fügen Sie anschließend Benutzer hinzu oder entfernen Sie Benutzer.
 
     > [!NOTE]
-> Sie können nur einige Arten von Verbindungen freigeben, z.B. SQL Server. Weitere Informationen finden Sie unter [Freigeben von App-Ressourcen](share-app-resources.md).
+   > Sie können nur einige Arten von Verbindungen freigeben, z.B. SQL Server. Weitere Informationen finden Sie unter [Freigeben von App-Ressourcen](share-app-resources.md).
 
 Weitere Informationen zum Verwalten einer Verbindung finden Sie unter [Verwalten von Verbindungen](add-manage-connections.md).
 

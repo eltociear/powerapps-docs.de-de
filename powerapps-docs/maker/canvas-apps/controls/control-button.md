@@ -1,22 +1,20 @@
 ---
 title: 'Schaltflächen-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Schaltflächen-Steuerelement
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8a22e1075d15d96b7e1a6383260d5b7ccb653c3a
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: anneta
+ms.openlocfilehash: 6e27f4b76c1642b8f0fe291e74a2bcc6f68d8035
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017109"
 ---
 # <a name="button-control-in-powerapps"></a>Schaltflächen-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen mit der App interagieren können.
@@ -145,7 +143,7 @@ Fügen Sie eine Formel hinzu, die das **Texteingabe**-Steuerelement zwischen Ein
     **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
-> Trennen Sie mehrere Formeln durch ein Semikolon „**;**“.
+   > Trennen Sie mehrere Formeln durch ein Semikolon „**;**“.
 3. Legen Sie die **[Default](properties-core.md)**-Eigenschaft von **Quelle** auf **ClearInput** fest.
 4. Drücken Sie **F5**, und testen Sie dann die App, indem Sie mehrere Werte addieren.
 

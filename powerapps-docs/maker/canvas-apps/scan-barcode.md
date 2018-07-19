@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: 6960b41effb109f6f2266ba279b4d51ea51e744f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 3e1bc218e6be8dcbbb1a72672aedf1de5d1cd7e9
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32328718"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895935"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>Scannen eines Barcodes in PowerApps
 Scannen Sie verschiedene Arten von Barcodes, indem Sie eine App erstellen und diese auf einem Gerät mit einer Kamera ausführen, z.B. auf einem Telefon. Die numerische Darstellung des Barcodes wird in einem **Label** (Bezeichnung) angezeigt, und Sie können diese Daten in eine Vielzahl von [Datenquellen](connections-list.md) hochladen.
@@ -36,18 +36,18 @@ Wenn Sie mit PowerApps nicht vertraut sind, sehen Sie sich den Abschnitt [Erste 
 ## <a name="create-a-blank-app"></a>Erstellen einer leeren App
 1. [Registrieren](../signup-for-powerapps.md) Sie sich für PowerApps, und führen Sie anschließend *eine* der folgenden Aktionen aus:
 
-1. [Öffnen Sie PowerApps](https://create.powerapps.com) in einem Browser auf einem Gerät, das über eine Kamera verfügt.
+2. [Öffnen Sie PowerApps](https://create.powerapps.com) in einem Browser auf einem Gerät, das über eine Kamera verfügt.
 
-2. Klicken oder tippen Sie auf der Kachel **Leere App** unter **Starten Sie mit einem leeren Zeichenbereich oder einer Vorlage** auf **Telefonlayout**.
+3. Klicken oder tippen Sie auf der Kachel **Leere App** unter **Starten Sie mit einem leeren Zeichenbereich oder einer Vorlage** auf **Telefonlayout**.
 
     ![App von Grund auf neu erstellen](./media/scan-barcode/create-from-blank.png)
 
-3. Wenn Sie mit PowerApps nicht vertraut sind, schauen Sie sich die Einführung an (oder klicken oder tippen Sie auf **Überspringen**).
+4. Wenn Sie mit PowerApps nicht vertraut sind, schauen Sie sich die Einführung an (oder klicken oder tippen Sie auf **Überspringen**).
 
     ![Begrüßungsbildschirm der Schnelleinführung](./media/scan-barcode/quick-tour.png)
 
     > [!NOTE]
-> Sie können sich die Einführung jederzeit später anschauen. Klicken oder tippen Sie hierzu auf das Fragezeichen-Symbol in der Nähe der oberen rechten Ecke, und klicken oder tippen Sie anschließend auf **Take the intro tour**.
+   > Sie können sich die Einführung jederzeit später anschauen. Klicken oder tippen Sie hierzu auf das Fragezeichen-Symbol in der Nähe der oberen rechten Ecke, und klicken oder tippen Sie anschließend auf **Take the intro tour**.
 
 ## <a name="add-a-barcode-control"></a>Hinzufügen eines Barcodesteuerelements
 1. Klicken oder tippen Sie auf der Registerkarte **Einfügen** auf **Medien** und anschließend auf **Barcode**.
@@ -61,7 +61,7 @@ Wenn Sie mit PowerApps nicht vertraut sind, sehen Sie sich den Abschnitt [Erste 
 3. Klicken oder tippen Sie auf der Registerkarte **Start** auf **Barcode1**, und fügen oder geben Sie unter **Umbenennen** den Namen **MyScanner** ein.
 
     > [!TIP]
-> Das erste **Barcode**-Steuerelement, das Sie hinzufügen, erhält standardmäßig den Namen **Barcode1**. Wenn Sie dieses Steuerelement löschen und ein weiteres Steuerelement **Barcode** hinzufügen, erhält dieses standardmäßig den Namen **Barcode2**. Durch das manuelle Umbenennen eines Steuerelements stellen Sie sicher, dass Formeln mit dem richtigen Namen auf das Steuerelement verweisen.
+   > Das erste **Barcode**-Steuerelement, das Sie hinzufügen, erhält standardmäßig den Namen **Barcode1**. Wenn Sie dieses Steuerelement löschen und ein weiteres Steuerelement **Barcode** hinzufügen, erhält dieses standardmäßig den Namen **Barcode2**. Durch das manuelle Umbenennen eines Steuerelements stellen Sie sicher, dass Formeln mit dem richtigen Namen auf das Steuerelement verweisen.
 
     ![Umbenennen des Barcodesteuerelements](./media/scan-barcode/rename-barcode.png)
 

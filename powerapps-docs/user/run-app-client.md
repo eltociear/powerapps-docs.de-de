@@ -5,14 +5,17 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/21/2018
+ms.date: 07/09/2018
 ms.author: matp
-ms.openlocfilehash: 55fd0bb164fcbb552db68fb89d77c7a7d0807cdc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: a80042065a830bb9d34007131cccbd995279e3dd
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34553034"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925706"
 ---
 # <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>Schnellstart: Ausführen einer Canvas-App auf einem mobilen Gerät
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Apps, die auf mobilen Geräten ausgeführt werden, können auch die Funktionen des Geräts nutzen, z.B. Ortungsdienste und die Kamera.

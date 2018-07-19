@@ -1,23 +1,20 @@
 ---
 title: Funktionen „Round“, „RoundDown“ und „RoundUp“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich der Syntax, der Funktionen „Round“, „RoundDown“ und „RoundUp“ in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/07/2015
 ms.author: gregli
-ms.openlocfilehash: 07771027ea728d65bfb35d79fb67bdef1ac80f1a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 182106097fb08d6ba2a3689048e9e33c5383ff57
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825784"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016419"
 ---
 # <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>Die Funktionen „Round“, „RoundDown“ und „RoundUp“ in PowerApps
 Rundet eine Zahl

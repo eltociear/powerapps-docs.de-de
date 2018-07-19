@@ -6,13 +6,14 @@ manager: kfile
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/23/2018
+ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 953efbabcdce55ac58376f927d5e399e69a40974
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.openlocfilehash: 2cb1e1b83cffee2ccea0a4d4b563de44aaa3e68c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896188"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerShell-Unterstützung für PowerApps (Vorschau)
 Durch die Einführung der Vorschauversion der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
@@ -39,24 +40,25 @@ So führen Sie die PowerShell-Cmdlets für App-Ersteller aus:
     Import-Module .\Microsoft.PowerApps.PowerShell.psm1 -Force
     ```
 
-6. Bevor Sie auf die Befehle zugreifen können, müssen Sie mit dem unten aufgeführten Befehl Ihre Anmeldeinformationen angeben. Diese werden etwa 8 Stunden lang aktualisiert. Anschließend müssen Sie sich erneut anmelden, um die Cmdlets weiter verwenden zu können.
+6.  [Aktuell ist ein Problem bekannt](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036), durch das Sie die PowerShell-Dateien möglicherweise manuell durch den folgenden Befehl zulassen müssen:
+
+    ```
+    dir . | Unblock-File
+    ```
+7. Bevor Sie auf die Befehle zugreifen können, müssen Sie mit dem unten aufgeführten Befehl Ihre Anmeldeinformationen angeben. Diese werden etwa 8 Stunden lang aktualisiert. Anschließend müssen Sie sich erneut anmelden, um die Cmdlets weiter verwenden zu können.
 
     ```
     Add-PowerAppsAccount
     ```
 
-7.  [Aktuell ist ein Problem bekannt](https://powerusers.microsoft.com/t5/Administering-PowerApps/Getting-errors-when-I-try-to-import-the-preview-powerapps/td-p/109036), durch das Sie die PowerShell-Dateien möglicherweise manuell durch den folgenden Befehl zulassen müssen:
 
-    ```
-    dir . | Unblock-File
-    ```
-
-## <a name="powerapps-cmdlets-for-app-makers-preview"></a>PowerApps-Cmdlets für App-Ersteller (Vorschau)
+## <a name="powerapps-cmdlets-for-app-creators-preview"></a>PowerApps-Cmdlets für App-Ersteller (Vorschau)
 
 ### <a name="prerequisite"></a>Voraussetzung
 Benutzer mit einer gültigen PowerApps-Lizenz können die Vorgänge in diesen Cmdlets ausführen, haben aber nur Zugriff auf Ressourcen wie z.B. Apps und Flows, die für sie erstellt oder freigegeben wurden.
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
+
 | Zweck | Cmdlet |
 | --- | --- |
 | Lesen von Umgebungen | Get-PowerAppsEnvironment <br> Get-FlowEnvironment
@@ -69,6 +71,7 @@ Benutzer mit einer gültigen PowerApps-Lizenz können die Vorgänge in diesen Cm
 | Lesen, Aktualisieren und Löschen von Berechtigungen für Verbindungen | Get-ConnectionRoleAssignment <br> Set-ConnectionRoleAssignment <br> Remove-ConnectionRoleAssignment
 | Lesen und Löschen von Connectors | Get-Connector <br> Remove-Connector
 | Lesen, Aktualisieren und Löschen von Berechtigungen für benutzerdefinierte Connectors | Get-ConnectorRoleAssignment <br> Set-ConnectorRoleAssignment <br> Remove-ConnectorRoleAssignment
+
 
 > [!NOTE]
 > Mit den folgenden Befehle können Sie die Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets besser nachvollziehen:
@@ -88,13 +91,22 @@ Zur Ausführung der Verwaltungsvorgänge in den Cmdlets für Administratoren ben
 * Die Berechtigungen [globaler Office 365-Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) oder [globaler Azure Active Directory-Administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal), wenn Sie die Ressourcen eines anderen Benutzers durchsuchen müssen. (Beachten Sie, das Umgebungsadministratoren nur Zugriff auf die Umgebungen und Umgebungsressourcen haben, für die sie über die Berechtigungen verfügen.)
 
 ### <a name="cmdlet-list"></a>Cmdlet-Liste
+
 | Zweck | Cmdlets
 | --- | ---
 | Lesen und Löschen von Umgebungen | Get-AdminEnvironment <br> Remove-AdminEnvironment
 | Lesen, Aktualisieren und Löschen von Berechtigungen für Umgebungen <br><br> *Diese Cmdlets können nur in Umgebungen ausgeführt werden, die nicht über eine Common Data Service for Apps-Datenbank verfügen.* | Get-AdminEnvironmentRoleAssignment <br> Set-AdminEnvironmentRoleAssignment <br> Remove-AdminEnvironmentRoleAssignment
 | Lesen und Entfernen von Canvas-Apps | Get-AdminApp <br> Remove-AdminApp
 | Lesen, Aktualisieren und Löschen von Berechtigungen für eine Canvas-App | Get-AdminAppRoleAssignment <br> Remove-AdminAppRoleAssignment <br> Set-AdminAppRoleAssignment <br> Set-AdminAppOwner
-| Lesen, Aktualisieren und Löschen von Flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow  <br> Remove-AdminFlowOwnerRole
+| Lesen, Aktualisieren und Löschen von Flows | Get-AdminFlow <br> Enable-AdminFlow <br> Disable-AdminFlow <br> Remove-AdminFlow
+| Lesen, Aktualisieren und Löschen von Berechtigungen für einen Flow | Get-AdminFlowOwnerRole <br> Set-AdminFlowOwnerRole <br> Remove-AdminFlowOwnerRole
+| Lesen und Löschen von Verbindungen | Get-AdminConnection <br> Remove-AdminConnection
+| Lesen, Aktualisieren und Löschen von Berechtigungen für Verbindungen | Get-AdminConnectionRoleAssignment <br> Set-AdminConnectionRoleAssignment <br> Remove-AdminConnectionRoleAssignment
+| Lesen und Löschen von benutzerdefinierten Connectors | Get-AdminConnector <br> Remove-AdminConnector
+| Lesen, Aktualisieren und Löschen von Berechtigungen für benutzerdefinierte Connectors | Get-AdminConnectorRoleAssignment <br> Set-AdminConnectorRoleAssignment <br> Remove-AdminConnectorRoleAssignment
+| Lesen der PowerApps-Benutzereinstellungen, Benutzeranwendungseinstellungen und Benachrichtigungen | Get-AdminPowerAppsUserDetails
+| Lesen und Löschen der Microsoft Flow-Einstellungen eines Benutzers, die für diesen zwar nicht sichtbar sind, aber die Ausführung von Flow unterstützen | Get-AdminFlowUserDetails <br> Remove-AdminFlowUserDetails
+| Erstellen, Lesen, Aktualisieren und Löschen von Richtlinien zur Verhinderung von Datenverlust für Ihre Organisation | Get-AdminApiPolicy <br> Add-AdminApiPolicy <br> Remove-AdminApiPolicy <br> Set-AdminApiPolicy <br> Add-ConnectorToBusinessDataGroup <br>  Remove-ConnectorFromBusinessDataGroup
 
 > [!NOTE]
 > Mit den folgenden Befehle können Sie die Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets besser nachvollziehen:

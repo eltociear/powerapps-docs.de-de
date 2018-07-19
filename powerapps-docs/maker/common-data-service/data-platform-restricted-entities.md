@@ -9,10 +9,11 @@ ms.topic: reference
 ms.date: 05/01/2018
 ms.author: clwesene
 ms.openlocfilehash: 79b6e386154b15ae6c625afbebbed18a8a86c420
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34167996"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Eingeschränkte Entitäten, die Dynamics 365-Lizenzen erfordern
 App-Ersteller können die meisten in Common Data Service (CDS) für Apps verfügbaren Entitäten verwenden, um Apps und Flows für Benutzer zu erstellen, die über eine PowerApps Plan 1-Lizenz verfügen. Es gibt jedoch einige Entitäten, die komplexe Unternehmenslogik enthalten, die erfordern, dass Benutzer über eine Lizenz von PowerApps Plan 2 oder Microsoft Flow Plan 2 verfügen (weitere Informationen erhalten Sie in den [Lizenzanforderungen für Entitäten](data-platform-entity-licenses.md)). Einige wenige Entitäten, die mit Dynamics 365-Produkten verknüpft sind, erfordern, dass Benutzer von Canvas- und modellgesteuerten Apps über eine Lizenz für das entsprechende Dynamics 365-Produkt verfügen, wenn sie Datensätze in den Entitäten erstellen, aktualisieren oder löschen müssen. Aus diesem Grund spricht man von *eingeschränkten* Entitäten.

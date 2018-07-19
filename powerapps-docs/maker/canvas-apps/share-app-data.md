@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8a763565ff8b48f95f68bdfd91fc21382ad9338f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827825"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896119"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Freigeben von Excel-Daten, die von Ihrer App verwendet werden
 Sie können Excel-Daten in einem [Cloudkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive für Ihre App-Benutzer freigeben.
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie unter [Freigeben von Ordnern in Dropbox](https:
     ![Befehl zum Freigeben](./media/share-app-data/onedrive-share.png)
    
     > [!NOTE]
-> Geben Sie in OneDrive for Business die Datei selbst und nicht den Ordner frei, der die Datei enthält.
+   > Geben Sie in OneDrive for Business die Datei selbst und nicht den Ordner frei, der die Datei enthält.
 3. Wählen Sie im Dialogfeld **E-Mail** aus.
    
     ![Freigabe per E-Mail](./media/share-app-data/onedrive-email.png)

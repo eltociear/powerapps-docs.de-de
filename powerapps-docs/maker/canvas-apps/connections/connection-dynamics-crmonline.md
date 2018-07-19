@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die Dynamics 365-Verbindung | Microsoft-Dokumentation
 description: Erstellen einer App zum Verwalten von Daten in Dynamics 365
-documentationcenter: ''
 author: Mattp123
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: matp
-ms.openlocfilehash: ea5c5c655f4e7462178f1e79db6a3695c11d1556
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: ''
+ms.openlocfilehash: e29688f52da411d57daa920437d1f0708c9f663e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017017"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Herstellen einer Verbindung mit Dynamics 365 aus PowerApps
 In PowerApps können Sie schnell und mit nur wenig oder überhaupt keinem Code mobile Apps generieren, anpassen, freigeben und ausführen. Mithilfe des Dynamics 365-Connectors können Sie nützliche mobile Apps erstellen, die Sie in nur wenigen Minuten für Ihre Organisation freigeben können.

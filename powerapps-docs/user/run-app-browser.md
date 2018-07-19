@@ -1,26 +1,36 @@
 ---
 title: Schnellstart zum Ausführen von Apps in einem Webbrowser | Microsoft-Dokumentation
 description: In diesem Schnellstart erfahren Sie, wie Sie Apps in einem Webbrowser ausführen.
-author: SKjerland
-manager: kfile
+author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 03/07/2018
-ms.author: sharik
-ms.openlocfilehash: c188294e8b09dbcc25152715daec8e377763af11
-ms.sourcegitcommit: 167fd8e589689be26101584ab1b3a26be61808f7
+ms.date: 07/09/2018
+ms.author: matp
+manager: kvivek
+ms.custom: ''
+ms.reviewer: ''
+ms.assetid: ''
+ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
+ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925637"
 ---
 # <a name="quickstart-run-an-app-in-a-web-browser"></a>Schnellstart: Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
 
-Sie benötigen ein [Microsoft Office 365-Abonnement](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1), das Dynamics 365 umfasst, sowie Zugriff auf einen [unterstützten Browser und ein unterstütztes Betriebssystem](../maker/canvas-apps/limits-and-config.md), um diesem Schnellstart folgen zu können. Außerdem benötigen Sie Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
+Für diesen Schnellstart benötigen Sie Folgendes:
+- Eine PowerApps-Lizenz. Diese ist in einem PowerApps-Plan wie der [Testversion für den PowerApps-Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) oder in den [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)- oder [Dynamics 365](https://dynamics.microsoft.com/pricing/)-Plänen enthalten, in denen PowerApps enthalten ist. 
+- Zugriff auf eine App, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat
+- Zugriff auf einen unterstützten Webbrowser bzw. ein unterstütztes Betriebssystem
+   - Für Canvas-Apps: [Systemanforderungen, Einschränkungen und Konfigurationswerte](../maker/canvas-apps/limits-and-config.md)
+   - Für modellgesteuerte Apps: [Unterstützte Webbrowser und Mobilgeräte](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+
 
 ## <a name="sign-in-to-dynamics-365"></a>Anmelden bei Dynamics 365
-Melden Sie sich unter [https://home.dynamics.com]([https://home.dynamics.com) bei Dynamics 365 an.
+Melden Sie sich unter [https://home.dynamics.com](https://home.dynamics.com) bei Dynamics 365 an.
 
 ## <a name="find-an-app-on-the-home-page"></a>Finden einer App auf der Startseite
 Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z.B. PowerApps) erstellt wurden. Klicken oder tippen Sie dafür auf **Filter**, und wählen Sie anschließend die Quelle aus.

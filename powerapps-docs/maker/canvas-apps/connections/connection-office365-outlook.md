@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die Verbindung mit Office 365 Outlook | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Beispiele, für die Office 365 Outlook-Verbindung mit PowerApps
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/20/2017
 ms.author: lanced
-ms.openlocfilehash: 728aa61c2ae082b1c6a3cd2d9d663bbe5ac77d9b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: anneta
+ms.openlocfilehash: d9a8c442648fcecff9bc318f956accd9b28f7b57
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021525"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>Herstellen einer Verbindung mit Office 365 Outlook aus PowerApps
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)

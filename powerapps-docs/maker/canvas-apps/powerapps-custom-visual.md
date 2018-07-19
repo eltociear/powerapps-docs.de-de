@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: da3d21e3f4488f552568a95d856af175f9a042eb
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9dbc59baf8970582b108ee588904437441107722
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827095"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896372"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -31,11 +31,11 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Benutzerdefinierte Visuals im Marketplace](./media/powerapps-custom-visual/powerapps-store.png) 
 
-1. Fügen Sie das PowerApps-Visual zu Ihrem Bericht hinzu, und legen Sie die Datenfelder fest, die mit diesem verknüpft sind.
+2. Fügen Sie das PowerApps-Visual zu Ihrem Bericht hinzu, und legen Sie die Datenfelder fest, die mit diesem verknüpft sind.
 
     ![Auswählen der Berichtsdaten](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-1. Sie können eine vorhandene Apps auswählen oder eine neue erstellen. Wenn Sie eine neue App erstellen, können Sie auswählen, in welcher Umgebung diese erstellt werden soll.
+3. Sie können eine vorhandene Apps auswählen oder eine neue erstellen. Wenn Sie eine neue App erstellen, können Sie auswählen, in welcher Umgebung diese erstellt werden soll.
 
     ![Neue oder vorhandene App](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -45,19 +45,19 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Neue App](./media/powerapps-custom-visual/new-app.png)
 
-1. In PowerApps Studio können Sie nun die Datenfelder verwenden, die Sie in Schritt 2 festgelegt haben. Die `PowerBIIntegration`-Objekte fungieren wie jede andere schreibgeschützte PowerApps-Datenquelle oder -Auflistung. Sie können das Objekt verwenden, um ein beliebiges Steuerelement aufzufüllen oder um Steuerelemente mit anderen Datenquellen zu verknüpfen oder zu filtern.
+4. In PowerApps Studio können Sie nun die Datenfelder verwenden, die Sie in Schritt 2 festgelegt haben. Die `PowerBIIntegration`-Objekte fungieren wie jede andere schreibgeschützte PowerApps-Datenquelle oder -Auflistung. Sie können das Objekt verwenden, um ein beliebiges Steuerelement aufzufüllen oder um Steuerelemente mit anderen Datenquellen zu verknüpfen oder zu filtern.
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
     Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
- Der Power BI-Bericht und die gestartete Instanz von PowerApps Studio verwenden eine gemeinsame Livedatenverbindung. Während beide Programme geöffnet sind, können Sie filtern oder Daten in Ihrem Bericht ändern. Sie werden dann feststellen, dass die aktualisierten Daten sofort in Ihrer App in PowerApps Studio angezeigt werden.
+   Der Power BI-Bericht und die gestartete Instanz von PowerApps Studio verwenden eine gemeinsame Livedatenverbindung. Während beide Programme geöffnet sind, können Sie filtern oder Daten in Ihrem Bericht ändern. Sie werden dann feststellen, dass die aktualisierten Daten sofort in Ihrer App in PowerApps Studio angezeigt werden.
 
-1. Nachdem Sie mit dem Erstellen oder Aktualisieren Ihrer App fertig sind, speichern Sie die App, und veröffentlichen Sie diese in PowerApps, damit sie im Power BI-Bericht angezeigt wird.
+5. Nachdem Sie mit dem Erstellen oder Aktualisieren Ihrer App fertig sind, speichern Sie die App, und veröffentlichen Sie diese in PowerApps, damit sie im Power BI-Bericht angezeigt wird.
 
-1. Sobald Sie mit Ihren Änderungen zufrieden sind, geben Sie die PowerApps-App für die Benutzer Ihres Berichts frei, und speichern Sie Ihren Bericht anschließend.
+6. Sobald Sie mit Ihren Änderungen zufrieden sind, geben Sie die PowerApps-App für die Benutzer Ihres Berichts frei, und speichern Sie Ihren Bericht anschließend.
 
-1. Dadurch haben Sie einen Bericht erstellt, in dem Ihre Benutzer Aktionen durchführen können, während Sie Einsicht in Ihre Daten haben.
+7. Dadurch haben Sie einen Bericht erstellt, in dem Ihre Benutzer Aktionen durchführen können, während Sie Einsicht in Ihre Daten haben.
 
     ![Bearbeiten eines Berichts](./media/powerapps-custom-visual/working-report.gif)
 

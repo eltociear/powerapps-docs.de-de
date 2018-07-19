@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die Microsoft Translator-Verbindung | Microsoft-Dokumentation
 description: Anleitung zum Herstellen einer Verbindung mit Microsoft Translator, einige Beispiele für die erforderlichen Schritte und Auflistung aller Funktionen
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.openlocfilehash: 33b82bac0f4090db926c5cdb2e8e4345e7b6af70
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: anneta
+ms.openlocfilehash: 139f6759b95d65477de63f2c2f8abb489dfa7c74
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017983"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Herstellen einer Verbindung mit Microsoft Translator aus PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -32,46 +30,46 @@ In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstel
 
 ## <a name="connect-to-microsoft-translator"></a>Herstellen einer Verbindung mit Microsoft Translator
 1. Öffnen Sie PowerApps, wählen Sie **Neu** aus, und erstellen Sie eine **Leere App**. Wählen Sie das Layout für Smartphone oder Tablet aus. Das Tablet-Layout bietet Ihnen einen größeren Arbeitsbereich:  
-   
+
    ![Öffnen einer leeren App](./media/connection-microsoft-translator/blank-app.png)
 2. Klicken oder tippen Sie im rechten Bereich auf die Registerkarte **Daten** und dann auf **Datenquelle hinzufügen**.
 3. Wählen Sie **Neue Verbindung** und anschließend **Microsoft Translator** aus:  
-   
+
     ![Herstellen einer Verbindung mit Microsoft Translator](./media/connection-microsoft-translator/addconnection.png)
-   
+
     ![Herstellen einer Verbindung mit Microsoft Translator](./media/connection-microsoft-translator/add-translator.png)
 4. Wählen Sie **Verbinden** aus. Die Verbindung wird unter **Datenquellen** angezeigt:  
-   
+
     ![Herstellen einer Verbindung mit Microsoft Translator](./media/connection-microsoft-translator/translatordatasource.png)
 
 ## <a name="use-the-microsoft-translator-connection-in-your-app"></a>Verwenden der Microsoft Translator-Verbindung in Ihrer App
 ### <a name="translate-text"></a>Übersetzen von Text
 1. Klicken Sie im Menü **Insert** (Einfügen) auf **Text**, und wählen Sie dann **Texteingabe** (Texteingabe) aus. Benennen Sie das Texteingabe-Steuerelement in **Source** um:  
-   
+
     ![Umbenennen](./media/connection-microsoft-translator/renametosource.png)
 2. Fügen Sie eine **Dropdown**-Liste hinzu (Menü **Einfügen** > **Steuerelemente**), benennen Sie sie in **TargetLang** um, und verschieben Sie sie unter **Source**.
 3. Legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft von **TargetLang** auf die folgende Formel fest:  
-   
+
     `MicrosoftTranslator.Languages()`
 4. Fügen Sie eine Bezeichnung hinzu, verschieben Sie es unter **TargetLang**, und legen Sie seine **[Text](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
-   
+
     `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Geben Sie Text in **Source** ein, und wählen Sie unter **TargetLang** eine Sprache aus. In der Bezeichnung wird der eingegebene Text in der ausgewählten Sprache angezeigt:  
-   
+
     ![Übersetzen von Text aus dem Englischen ins Spanische](./media/connection-microsoft-translator/translate-text.png)
 
 ### <a name="speak-translated-text"></a>Sprechen von übersetztem Text
 Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen Abschnitt aus, um Text zu übersetzen. In den folgenden Schritten werden die gleichen Steuerelemente verwendet.
 
 1. Legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft der Dropdownliste **TargetLang** auf die folgende Formel fest:  
-   
+
     `MicrosoftTranslator.SpeechLanguages()`
 2. Benennen Sie die zweite Bezeichnung (nicht das Feld **Source**) in **Target** um.
 3. Fügen Sie ein **Audio**-Steuerelement hinzu (Menü **Einfügen** > **Medien**), und legen Sie seine **Media**-Eigenschaft auf die folgende Formel fest:  
-   
+
     `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-microsoft-translator/preview.png)). Geben Sie Text in **Source** ein, wählen Sie eine Sprache in **TargetLang** aus, und wählen Sie dann die Wiedergabeschaltfläche im Audio-Steuerelement aus.
-   
+
     Die App spielt eine Audioversion des eingegebenen Texts in der ausgewählten Sprache ab.
 5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
 
@@ -79,10 +77,10 @@ Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen 
 In den folgenden Schritten werden die gleichen Texteingabe-Steuerelemente (**Source**) und Text (**Target**) verwendet. Sie können auch neue Steuerelemente erstellen, in diesem Fall müssen Sie nur die Namen in der Formel aktualisieren.
 
 1. Wählen Sie das Text-Steuerelement **Target** aus, und legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
-   
+
     `MicrosoftTranslator.Detect(Source.Text).Name`
 2. Geben Sie Text in **Source** ein.
-   
+
     In der Bezeichnung wird die Sprache des eingegebenen Texts angezeigt. In der Bezeichnung wird z.B. **Französisch** angezeigt, wenn Sie **Bonjour** eingeben oder **Italienisch**, wenn Sie **Ciao** eingeben.
 
 ## <a name="view-the-available-functions"></a>Anzeigen der verfügbaren Funktionen
@@ -103,6 +101,7 @@ Sprachen abrufen: Ruft alle von Microsoft Translator unterstützten Sprachen ab
 Keine
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | Code |Zeichenfolge |Nein | |
@@ -112,6 +111,7 @@ Keine
 Text übersetzen: Übersetzt Text mit Microsoft Translator aus einer angegebenen Sprache
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | query |Zeichenfolge |ja |Zu übersetzender Text |
@@ -126,11 +126,13 @@ Keine
 Sprache erkennen: Erkennt die Ausgangssprache eines angegebenen Texts
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | query |Zeichenfolge |ja |Text, dessen Sprache erkannt werden soll |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | Code |Zeichenfolge |Nein | |
@@ -143,6 +145,7 @@ Sprachen abrufen: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
 Keine
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
+
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | Code |Zeichenfolge |Nein | |
@@ -152,6 +155,7 @@ Keine
 Text in Sprache: Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
+
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | query |Zeichenfolge |ja |Zu konvertierender Text |

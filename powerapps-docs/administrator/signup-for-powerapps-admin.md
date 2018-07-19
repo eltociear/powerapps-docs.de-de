@@ -9,10 +9,11 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
 ms.openlocfilehash: 4b26c16259a7699f1178641ead8c1b5908106468
-ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
+ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34168502"
 ---
 # <a name="purchase-powerapps-for-your-organization"></a>Erwerb von PowerApps für Ihre Organisation
 In diesem Artikel erfahren Sie, wie Sie PowerApps für Ihre Organisation als Administrator erwerben können. Sie können PowerApps direkt über die PowerApps-Website, über das Office 365 Admin Center oder über Ihren Microsoft-Vertreter oder Partner erwerben. Dieser Artikel behandelt die für PowerApps Plan 1 oder Plan 2 verfügbaren Testoptionen und erläutert dann den Erwerb von PowerApps Plan 1 oder Plan 2 als Organisation. Weitere Informationen finden Sie unter [PowerApps in your organization Q&A (PowerApps in Ihrer Organisation F&A)](signup-question-and-answer.md).

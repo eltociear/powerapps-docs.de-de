@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 08/28/2017
 ms.author: gregli
-ms.openlocfilehash: 3cb894d044a1e6ac02234bc1fa4c5b9239959015
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 7989a795afc0085bfa0e78d4b9d0bebeb26619c6
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830668"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899270"
 ---
 # <a name="split-function-in-powerapps"></a>Split-Funktion in PowerApps
 Teilt eine Textzeichenfolge in eine Tabelle von Teilzeichenfolgen auf.
@@ -36,6 +36,7 @@ Mit der **[Concat](function-concatenate.md)**-Funktion können Sie die Zeichenfo
 * *Trennzeichen*: erforderlich.  Das beim Aufteilen der Zeichenfolge zu verwendende Trennzeichen.  Dieses kann 0 (null), ein oder mehr Zeichen umfassen.
 
 ## <a name="examples"></a>Beispiele
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas", "," )** |Teilt die unterschiedlichen Früchte anhand des Kommatrennzeichens auf.  Die Aufteilung erfolgt nur auf Grundlage des Kommas ohne Berücksichtigung des Leerzeichens hinter ihm, sodass vor „&nbsp;Orangen“ und „&nbsp;Bananen“ ein Leerzeichen steht. |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |

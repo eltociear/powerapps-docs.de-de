@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 03/21/2018
 ms.author: gregli
-ms.openlocfilehash: 2bd8ba7dc9b764399165c75361215cee2edb4e7b
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ebd4454184f684dbf85ec2b8a9056395b92dc47f
+ms.sourcegitcommit: 234de505a0e8c42459d87053fa00ea3e0ea0b909
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831444"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092781"
 ---
 # <a name="iferror-function-in-powerapps"></a>IfError-Funktion in PowerApps
 Erkennt Fehler und stellt einen Alternativwert bereit oder führt eine Aktion aus.
@@ -30,7 +30,7 @@ Die **IfError**-Funktion überprüft nacheinander jedes Argument auf einen Fehle
 
 Verwenden Sie **IfError**, um Fehlerwerte durch gültige Werte zu ersetzen.  Wenn beispielsweise eine Benutzereingabe zu einer Division durch null führen kann, können Sie die Eingabe durch null oder einen anderen gültigen Wert ersetzen, der für Ihre App geeignet ist, sodass nachfolgende Berechnungen fortgesetzt werden können.
 
-Verwenden Sie **IfError** in [Verhaltensformeln](../working-with-formulas-in-depth.md), um Aktionen ausführen, Ergebnisse auf Fehler zu überprüfen und ggf. weitere Aktionen auszuführen oder mit [**ShowError**](function-showerror.md) Fehlermeldungen für den Benutzer auszugeben.
+Verwenden Sie **IfError** in [Verhaltensformeln](../working-with-formulas-in-depth.md), um Aktionen auszuführen, Ergebnisse auf Fehler zu überprüfen und ggf. weitere Aktionen auszuführen oder mit [**Notify**](function-showerror.md) Fehlermeldungen für den Benutzer auszugeben.
 
 Wenn alle Argumente für **IfError** zu einem Fehler führen, wird der Wert des letzten Arguments (also ein Fehlerwert) zurückgegeben. 
 
@@ -46,7 +46,7 @@ Wenn alle Argumente für **IfError** zu einem Fehler führen, wird der Wert des 
 | --- | --- | --- |
 | **IfError( 1, 2 )** |Das erste Argument ist kein Fehlerwert.  Es wird zurückgegeben, und nachfolgende Argumente werden nicht ausgewertet.   | 1 |
 | **IfError( 1/0, 2 )** | Für das erste Argument wird ein Fehlerwert zurückgegeben (aufgrund der Division durch null).  Das zweite Argument wird ausgewertet. Der Wert ist kein Fehlerwert und wird zurückgegeben. | 2 | 
-| **IfError( 1/0, ShowError( "Division durch null" ) )** | Für das erste Argument wird ein Fehlerwert zurückgegeben (aufgrund der Division durch null).  Das zweite Argument wird ausgewertet, und dem Benutzer wird eine Fehlermeldung angezeigt.  Der Rückgabewert von **IfError** ist der Rückgabewert von **ShowError** und wird in denselben Typ wie das erste Argument für **IfError** (eine Zahl) umgewandelt. | 1 |
+| **IfError( 1/0, Notify( "There was an internal problem", NotificationType.Error ) )** | Für das erste Argument wird ein Fehlerwert zurückgegeben (aufgrund der Division durch null).  Das zweite Argument wird ausgewertet, und dem Benutzer wird eine Fehlermeldung angezeigt.  Der Rückgabewert von **IfError** ist der Rückgabewert von **Notify** und wird in denselben Typ wie das erste Argument für **IfError** (eine Zahl) umgewandelt. | 1 |
 | **IfError( 1/0, 1/0, 2, 1/0, 3 )** | Für das erste Argument wird ein Fehlerwert zurückgegeben (aufgrund der Division durch null).  Das zweite Argument wird ausgewertet und führt ebenfalls zu einem Fehlerwert (aufgrund einer weiteren Division durch null).  Das dritte Argument wird ausgewertet. Der Wert ist kein Fehlerwert und wird zurückgegeben.  Die Argumente vier und fünf werden ignoriert.  | 2 |
 
 ### <a name="step-by-step"></a>Schritt für Schritt

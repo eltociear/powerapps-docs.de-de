@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: bd07c6ee0a0084171c928c6908c33caae974d765
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 91f1db2f4acd503efce8407dd2c3c60fee6e183e
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835138"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899132"
 ---
 # <a name="image-control-in-powerapps"></a>Image-Steuerelement in PowerApps
 Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle anzeigt
@@ -145,14 +145,14 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein, wenn die Grafik als Schaltfläche oder zumindest nicht nur der Dekoration dient.
 * **[AccessibleLabel](properties-accessibility.md)** muss leer sein oder der leeren Zeichenfolge **""** entsprechen, wenn die Grafik ausschließlich Dekoration ist. Dadurch wird die Grafik von der Sprachausgabe ignoriert.
 * **[AccessibleLabel](properties-accessibility.md)** kann leer sein oder der leeren Zeichenfolge **""** entsprechen, falls die Grafik redundante Informationen enthält.
-    * Beispiel: Ein **Bild** mit Zahnrädern, für das **[AccessibleLabel](properties-accessibility.md)** auf **Einstellungen** festgelegt ist und das nicht als Schaltfläche verwendet wird. Es befindet sich stattdessen neben einer **[Bezeichnung](control-text-box.md)**, die ebenfalls **Einstellungen** lautet. Sprachausgaben lesen das Bild als **Einstellungen** und die Bezeichnung auch als **Einstellungen**. Dies ist zu ausführlich. In diesem Fall benötigt das **Bild** kein **[AccessibleLabel](properties-accessibility.md)**.
+  * Beispiel: Ein **Bild** mit Zahnrädern, für das **[AccessibleLabel](properties-accessibility.md)** auf **Einstellungen** festgelegt ist und das nicht als Schaltfläche verwendet wird. Es befindet sich stattdessen neben einer **[Bezeichnung](control-text-box.md)**, die ebenfalls **Einstellungen** lautet. Sprachausgaben lesen das Bild als **Einstellungen** und die Bezeichnung auch als **Einstellungen**. Dies ist zu ausführlich. In diesem Fall benötigt das **Bild** kein **[AccessibleLabel](properties-accessibility.md)**.
 
     > [!IMPORTANT]
-> Sprachausgaben lesen alle **Bilder**, deren **[TabIndex](properties-accessibility.md)** 0 (null) oder größer entspricht, selbst wenn **[AccessibleLabel](properties-accessibility.md)** leer ist. Dies liegt daran, dass sie als Schaltflächen gerendert werden. Wenn kein **[AccessibleLabel](properties-accessibility.md)** bereitgestellt wird, lesen Sprachausgaben die Grafik als **Schaltfläche**.
+    > Sprachausgaben lesen alle **Bilder**, deren **[TabIndex](properties-accessibility.md)** 0 (null) oder größer entspricht, selbst wenn **[AccessibleLabel](properties-accessibility.md)** leer ist. Dies liegt daran, dass sie als Schaltflächen gerendert werden. Wenn kein **[AccessibleLabel](properties-accessibility.md)** bereitgestellt wird, lesen Sprachausgaben die Grafik als **Schaltfläche**.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss 0 (null) oder größer sein, wenn die Grafik als Schaltfläche verwendet wird. So können Benutzer über die Tastatur dorthin navigieren.
 * Fokusindikatoren müssen übersichtlich angezeigt werden, wenn die Grafik als Schaltfläche verwendet wird. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
 
     > [!NOTE]
-> Wenn **[TabIndex](properties-accessibility.md)** 0 (null) oder größer ist, wird das **Bild** als Schaltfläche gerendert. Dadurch erfolgt keine Änderung der visuellen Darstellung. Die Sprachausgabe erkennt das Bild jedoch richtig als Schaltfläche. Ist **[TabIndex](properties-accessibility.md)** weniger als 0 (null), wird das **Bild** als solches erkannt.
+  > Wenn **[TabIndex](properties-accessibility.md)** 0 (null) oder größer ist, wird das **Bild** als Schaltfläche gerendert. Dadurch erfolgt keine Änderung der visuellen Darstellung. Die Sprachausgabe erkennt das Bild jedoch richtig als Schaltfläche. Ist **[TabIndex](properties-accessibility.md)** weniger als 0 (null), wird das **Bild** als solches erkannt.

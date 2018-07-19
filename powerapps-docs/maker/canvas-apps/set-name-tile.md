@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 386ecbd360dc13c21d48e0c134a87e8b7d007547
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a4bafb954b5723e813fade2ee633a51f4d8385e0
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830177"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895866"
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>Ändern des App-Namens und des Symbols in PowerApps
 Anpassen einer App durch Ändern des Namens und der Kachel
@@ -46,7 +46,7 @@ Befolgen Sie mindestens einen der folgenden Schritte:
 * Klicken oder tippen Sie auf **Browse file** (Datei suchen), klicken oder tippen Sie auf das Bild, das Sie verwenden möchten, und klicken oder tippen Sie dann auf **Öffnen**.
 
     > [!NOTE]
-> Verwenden Sie für optimale Ergebnisse ein quadratisches Symbol.
+  > Verwenden Sie für optimale Ergebnisse ein quadratisches Symbol.
 
 ## <a name="next-step"></a>Nächster Schritt
 Klicken oder tippen Sie im Menü **Datei** auf **Speichern**, um Ihre App mit den neuen Einstellungen erneut zu veröffentlichen.

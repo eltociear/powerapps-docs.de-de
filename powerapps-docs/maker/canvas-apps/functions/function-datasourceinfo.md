@@ -1,23 +1,18 @@
 ---
 title: Funktion „DataSourceInfo“ | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „DataSourceInfo“ in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 11/11/2015
 ms.author: gregli
-ms.openlocfilehash: 9747bef986587da7e7a66fe6fc165b4d15e80aed
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 67354776e7af05fb619033462c52665ce3aa046c
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31835069"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898626"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Funktion „DataSourceInfo“ in PowerApps
 Stellt Informationen über eine [Datenquelle](../working-with-data-sources.md) bereit
@@ -64,7 +59,7 @@ Sie können **DataSourceInfo** auch dazu verwenden, Informationen über die Date
 * *Spaltenname*: Optional. Bei Informationen auf Spaltenebene der Spaltenname als Zeichenfolge. Die Spalte **Phone** würde als **"Phone"**, inklusive der doppelten Anführungszeichen, übergeben werden. Für Informationen auf Datenbankebene kann das *Spaltenname*-Argument nicht verwendet werden.
   
     > [!NOTE]
-> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
+  > Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
 ## <a name="examples"></a>Beispiele
 In den Beispielen in diesem Abschnitt wird diese Datenquelle namens **IceCream** (Eiscreme) verwendet:

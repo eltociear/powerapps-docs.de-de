@@ -1,23 +1,19 @@
 ---
 title: Color-Enumeration und ColorFade-, ColorValue- und RGBA-Funktionen | Microsoft-Dokumentation
 description: Referenzinformationen für die Color-Enumeration und ColorFade-, ColorValue- und RGBA-Funktionen in PowerApps, einschließlich Syntax und Beispiele
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2015
 ms.author: gregli
-ms.openlocfilehash: f4eeabf5708fffa6881b84402280d5639d96cc0a
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6615dfee8f7c867bb25c237633fe031d614d517d
+ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838669"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37948639"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Color-Enumeration und ColorFade-, ColorValue- und RGBA-Funktionen in PowerApps
 Verwenden von integrierten Farbwerten, Definieren benutzerdefinierter Farben und Alphablending.
@@ -51,6 +47,7 @@ Die **ColorFade**-Funktion gibt eine hellere bzw. dunklere Version einer Farbe z
 * *FadeAmount*: Erforderlich.  Eine Zahl zwischen -1 und 1.  -1 lässt eine Farbe vollständig schwarz werden, 0 hat keine Auswirkungen auf die Farbe und 1 lässt eine Farbe vollständig weiß werden.  
 
 ## <a name="built-in-colors"></a>Integrierte Farben
+
 | Farbenumeration | ColorValue mit Hexcode | RGBA | Farbmuster |
 | --- | --- | --- | --- |
 | **Color.AliceBlue** |**ColorValue( "#f0f8ff" )** |**RGBA( 240, 248, 255, 1 )** |![aliceblue](./media/function-colors/color-aliceblue.png) |

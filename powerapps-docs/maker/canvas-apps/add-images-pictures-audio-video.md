@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 4d622eb6cdfaed91547a59be8f5a5dc6651957e5
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d193c2691f689e935a5dbb92767a16d393098770
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330903"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37896740"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
@@ -48,14 +48,14 @@ Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bi
     ![Festlegen der Image-Eigenschaft](./media/add-images-pictures-audio-video/imageproperty.png)
 
     > [!NOTE]
-> Geben Sie nur den Dateinamen ohne Erweiterung an, und schließen Sie diesen in einfache Anführungszeichen ein.
+   > Geben Sie nur den Dateinamen ohne Erweiterung an, und schließen Sie diesen in einfache Anführungszeichen ein.
 
 7. Wenn Sie ein Video- oder Audio-Steuerelement hinzugefügt haben, legen Sie dessen **Media**-Eigenschaft auf die hinzugefügte Datei fest:  
 
     ![Festlegen der Media-Eigenschaft](./media/add-images-pictures-audio-video/mediaproperty.png)
 
     > [!NOTE]
-> Geben Sie ein YouTube-Video wieder, indem Sie die **Media**-Eigenschaft eines Videosteuerelements auf die entsprechende URL festlegen, die in doppelte Anführungszeichen eingeschlossen werden muss.
+   > Geben Sie ein YouTube-Video wieder, indem Sie die **Media**-Eigenschaft eines Videosteuerelements auf die entsprechende URL festlegen, die in doppelte Anführungszeichen eingeschlossen werden muss.
 
 ## <a name="add-media-from-azure-media-services"></a>Hinzufügen von Medien aus Azure Media Services
 1. Laden Sie in Ihrem Azure Media Services-Konto über **AMS > Einstellungen > Medienobjekte** Ihr Videomedienobjekt hoch, und veröffentlichen Sie es.

@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die Dynamics AX-Verbindung | Microsoft-Dokumentation
 description: Hier finden Sie die verfügbaren Dynamics AX-Funktionen, Antworten und Beispiele
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 09/13/2016
 ms.author: lanced
-ms.openlocfilehash: 747261548521bf619b1b23b22de217aa39a1a0d7
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: anneta
+ms.openlocfilehash: 39cefba5d23f24bdb98ad266dccdb41458b0d3e4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020605"
 ---
 # <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Dynamics AX-Verbindung aus Microsoft PowerApps herstellen
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)

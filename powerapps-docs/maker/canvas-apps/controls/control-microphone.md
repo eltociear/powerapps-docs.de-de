@@ -1,28 +1,28 @@
 ---
 title: 'Mikrofon-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Mikrofon-Steuerelement
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: ae6a8afa71a150ad1b15f8ef0550f3d7412ff3be
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.openlocfilehash: e0c0c67ab4681eac8c63ceb860a760053547bf24
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015039"
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
-Ein Steuerelement, mit dem der Benutzer Töne aufzeichnen kann
+Ein Steuerelement, über das App-Benutzer mit ihren Geräten Ton aufnehmen können.
 
 ## <a name="description"></a>Beschreibung
-Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mit einem oder mehreren Tönen aktualisieren, unabhängig davon, wo die App ausgeführt wird.
+App-Benutzer können Audioaufnahmen aufzeichnen, wenn das Gerät, auf dem die App ausgeführt wird, über ein Mikrofon verfügt.
+
+Audiodaten werden unter Android im Format 3gp und unter iOS im Format AAC gespeichert.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Mic**: gibt auf einem Gerät mit mehr als einem Mikrofon die numerische ID des Mikrofons an, das die App verwendet.
@@ -97,9 +97,9 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Hinzufügen von Tönen zu einem benutzerdefinierten Katalog-Steuerelement
 1. Fügen Sie ein **Mikrofon** hinzu, nennen Sie es **MyMic**, und legen Sie seine **OnStop**-Eigenschaft auf folgende Formel fest:<br>
    **Collect(MySounds, MyMic.Audio)**
-   
+
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-   
+
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 2. Fügen Sie ein Steuerelement des Typs **benutzerdefinierter Katalog** hinzu, verschieben Sie es unter **MyMic**, und legen Sie die **[Items](properties-core.md)**-Eigenschaft für das Steuerelement des Typs **benutzerdefinierter Katalog** auf **MySounds** fest.
 3. Fügen Sie in der Vorlage für das Steuerelement des Typs **benutzerdefinierter Katalog** ein **[Audio](control-audio-video.md)**-Steuerelement hinzu, und legen Sie seine **Media**-Eigenschaft auf **ThisItem.Url** fest.

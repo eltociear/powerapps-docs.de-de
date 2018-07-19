@@ -13,6 +13,7 @@ ms.sourcegitcommit: b3b6118790d6b7b4285dbcb5736e55f6e450125c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/15/2018
+ms.locfileid: "34167102"
 ---
 # <a name="license-requirements-for-entities"></a>Lizenzanforderungen für Entitäten
 Die Entwickler von Apps können die meisten Entitäten verwenden, die in Common Data Service (CDS) für Apps verfügbar sind (einschließlich benutzerdefinierte Entitäten und Entitäten, die Teil von Common Data Model sind), um Apps und Flows für Benutzer zu erstellen, die nur über eine Lizenz für PowerApps-Plan 1 oder Microsoft Flow-Tarif 1 besitzen. In einigen Fällen enthalten Entitäten komplexe Geschäftslogiken oder sind an Dynamics 365-Produkte gebunden, die erfordern, dass die Benutzer der App über eine bestimmte Lizenz verfügen. Weitere Informationen zu den verfügbaren Plänen finden Sie auf der [Seite mit den PowerApps-Preisen](https://powerapps.microsoft.com/pricing).

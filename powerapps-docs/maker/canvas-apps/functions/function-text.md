@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: a63a972e7af3c821d2441519c2a887bbe110faac
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fece9b928cdbfa955ada994e4cdd637eea3f7ac8
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31838945"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899707"
 ---
 # <a name="text-function-in-powerapps"></a>Funktion „Text“ in PowerApps
 Formatiert eine Zahl oder einen Datums-/Uhrzeit-Wert für die Anzeige als Textzeichenfolge.
@@ -31,6 +31,7 @@ Die Funktion **Text** formatiert eine Zahl oder einen Datums-/Uhrzeit-Wert auf d
 Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben](../show-text-dates-times.md).
 
 ### <a name="predefined-datetime-formats"></a> Vordefinierte Datums-/Uhrzeitformate
+
 | Vordefiniertes Format | Beschreibung |
 | --- | --- |
 | **DateTimeFormat.LongDate** |Vollständiges Jahr, Monat, Tag des Monats und Wochentag. Monatsnamen und Wochentage sind nicht abgekürzt. |
@@ -46,6 +47,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben]
 | **DateTimeFormat.UTC** |Der Datums-/Uhrzeitwert wird basierend auf der Zeitzone des Benutzers in UTC konvertiert und gemäß dem ISO 8601-Standard formatiert. |
 
 ### <a name="number-placeholders"></a>Zahlplatzhalter
+
 | Platzhalter | Beschreibung |
 | --- | --- |
 | **0** (*null*) |Zeigt nicht signifikante Nullen an, wenn eine Zahl weniger Stellen aufweist, als Nullen im Format festgelegt sind. Verwenden Sie beispielsweise das Format **#,00**, wenn Sie **8,9** im Format **8,90** anzeigen möchten. |
@@ -56,28 +58,29 @@ Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben]
 Wenn eine Zahl mehr Stellen rechts vom Dezimaltrennzeichen aufweist, als Platzhalter im Format vorhanden sind, wird die Zahl zu der im Format definierten Anzahl Dezimalstellen gerundet. Wenn links vom Dezimaltrennzeichen mehr Stellen als Platzhalter vorhanden sind, werden die zusätzlichen Stellen angezeigt. Wenn das Format nur Zahlenzeichen (#) links vom Dezimaltrennzeichen aufweist, beginnen Zahlen kleiner als 1 mit dem Dezimaltrennzeichen (z. B. **,47**).
 
 ### <a name="date-and-time-placeholders"></a>Platzhalter für Datum und Uhrzeit
-| Platzhalter | Beschreibung |
-| --- | --- |
-| **m** |Zeigt den Monat als Zahl ohne führende Null an. |
-| **mm** |Zeigt den Monat als Zahl mit führender Null an, wenn das angebracht ist. |
-| **mmm** |Zeigt den Monat als Abkürzung an (**Jan** bis **Dez**). |
-| **mmmm** |Zeigt den Monat als vollständigen Namen an (**Januar** bis **Dezember**). |
-| **d** |Zeigt den Tag als Zahl ohne führende Null an. |
-| **dd** |Zeigt den Tag als Zahl mit führender Null an, wenn das angebracht ist. |
-| **ddd** |Zeigt den Tag als Abkürzung an (**So** bis **Sa**). |
-| **dddd** |Zeigt den Tag als vollständigen Namen an (**Sonntag** bis **Samstag**). |
-| **yy** |Zeigt das Jahr als zweistellige Zahl an. |
-| **yyyy** |Zeigt das Jahr als vierstellige Zahl an. |
-| **h** |Zeigt die Stunde als Zahl ohne führende Null an. |
-| **hh** |Zeigt die Stunde als Zahl mit führender Null an, wenn das angebracht ist. Wenn das Format **AM** oder **PM** enthält, wird die Stunde basierend auf der 12-Stunden-Uhr angezeigt. Andernfalls wird die Stunde auf der 24-Stunden-Uhr basierend angezeigt. |
-| **m** |Zeigt die Minute als Zahl ohne führende Null an.  > [!NOTE]
-Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen, andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |
-| **mm** |Zeigt die Minute als Zahl mit führender Null an, wenn das angebracht ist. > [!NOTE]
-Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen. Andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |
-| **s** |Zeigt die Sekunde als Zahl ohne führende Null an. |
-| **ss** |Zeigt die Sekunde als Zahl mit führender Null an, wenn das angebracht ist. |
-| **f** |Zeigt die Sekundenbruchteile an. |
-| **AM/PM**, **am/pm**, **A/P**, **a/p** |Zeigt die Stunde basierend auf dem 12-Stunden-Format an. **Text** gibt „AM“, „am“, „A“ oder „a“ für Uhrzeiten von Mitternacht bis Mittag und „PM“, „pm“, „P“ oder „p“ für Uhrzeiten von Mittag bis Mitternacht an |
+
+|                                                                                                 Platzhalter                                                                                                  |                                                                                                     Beschreibung                                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                    **m**                                                                                                     |                                                                               Zeigt den Monat als Zahl ohne führende Null an.                                                                                |
+|                                                                                                    **mm**                                                                                                    |                                                                        Zeigt den Monat als Zahl mit führender Null an, wenn das angebracht ist.                                                                         |
+|                                                                                                   **mmm**                                                                                                    |                                                                             Zeigt den Monat als Abkürzung an (**Jan** bis **Dez**).                                                                             |
+|                                                                                                   **mmmm**                                                                                                   |                                                                          Zeigt den Monat als vollständigen Namen an (**Januar** bis **Dezember**).                                                                           |
+|                                                                                                    **d**                                                                                                     |                                                                                Zeigt den Tag als Zahl ohne führende Null an.                                                                                 |
+|                                                                                                    **dd**                                                                                                    |                                                                         Zeigt den Tag als Zahl mit führender Null an, wenn das angebracht ist.                                                                          |
+|                                                                                                   **ddd**                                                                                                    |                                                                              Zeigt den Tag als Abkürzung an (**So** bis **Sa**).                                                                              |
+|                                                                                                   **dddd**                                                                                                   |                                                                            Zeigt den Tag als vollständigen Namen an (**Sonntag** bis **Samstag**).                                                                            |
+|                                                                                                    **yy**                                                                                                    |                                                                                      Zeigt das Jahr als zweistellige Zahl an.                                                                                       |
+|                                                                                                   **yyyy**                                                                                                   |                                                                                      Zeigt das Jahr als vierstellige Zahl an.                                                                                      |
+|                                                                                                    **h**                                                                                                     |                                                                                Zeigt die Stunde als Zahl ohne führende Null an.                                                                                |
+|                                                                                                    **hh**                                                                                                    | Zeigt die Stunde als Zahl mit führender Null an, wenn das angebracht ist. Wenn das Format **AM** oder **PM** enthält, wird die Stunde basierend auf der 12-Stunden-Uhr angezeigt. Andernfalls wird die Stunde auf der 24-Stunden-Uhr basierend angezeigt. |
+|                                                                                                    **m**                                                                                                     |                                                                         Zeigt die Minute als Zahl ohne führende Null an.  > [!NOTE]                                                                          |
+|            Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen, andernfalls gibt **Text** den Monat anstelle von Minuten zurück.            |                                                                                                                                                                                                                     |
+|                                                                                                    **mm**                                                                                                    |                                                                   Zeigt die Minute als Zahl mit führender Null an, wenn das angebracht ist. > [!NOTE]                                                                   |
+| Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen. Andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |                                                                                                                                                                                                                     |
+|                                                                                                    **s**                                                                                                     |                                                                               Zeigt die Sekunde als Zahl ohne führende Null an.                                                                               |
+|                                                                                                    **ss**                                                                                                    |                                                                        Zeigt die Sekunde als Zahl mit führender Null an, wenn das angebracht ist.                                                                        |
+|                                                                                                    **f**                                                                                                     |                                                                                         Zeigt die Sekundenbruchteile an.                                                                                          |
+|                                                                                    **AM/PM**, **am/pm**, **A/P**, **a/p**                                                                                    |               Zeigt die Stunde basierend auf dem 12-Stunden-Format an. **Text** gibt „AM“, „am“, „A“ oder „a“ für Uhrzeiten von Mitternacht bis Mittag und „PM“, „pm“, „P“ oder „p“ für Uhrzeiten von Mittag bis Mitternacht an                |
 
 ### <a name="literal-placeholders"></a>Literalplatzhalter
 Sie können jedes dieser Zeichen in Ihre Formatzeichenfolge aufnehmen.  Sie werden im Ergebnis von **Text** wie eingegeben angezeigt. Zusätzliche Zeichen sind für kommende Platzhalter reserviert, daher sollten Sie diese nicht verwenden.
@@ -148,6 +151,7 @@ Standardmäßig verwendet **Text** die Sprache des Benutzers, der die Anwendung 
 Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Englisch als seine Sprache ausgewählt.  Die Funktion **Language** gibt „en-US“ zurück.
 
 ### <a name="number"></a>Number
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Text (&nbsp;1234.59,&nbsp;"###, #"&nbsp;)** |Formatiert die Zahl mit einer Dezimalstelle. |"1234,6" |
@@ -169,6 +173,7 @@ Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Engl
 | **Text( Now(); "d-mmm-yy" )** |Formate mit Platzhalterzeichen: <ul><li>**d** für eine einstellige oder zweistellige Angabe des Tags im Monat<li>**-** als literales Zeichen, das in das Ergebnis kopiert wird<li>**mmm** für eine aus drei Buchstaben bestehende Abkürzung des Monats<li>**-** als weiteres literales Zeichen, das in das Ergebnis kopiert wird<li>**yy** für eine zweistellige Kurzform für das Jahr</ul> |"23. Nov. 15" |
 
 ### <a name="global-apps"></a>Globale Anwendungen
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Text( 1234567,89; "[$-en-US]$ #.###" )** |Interpretiert **.** als Gruppierungszeichen, das nach jedem dritten Zeichen eingefügt wird, und **$** als Währungssymbol. Da keine Dezimalstellen angezeigt werden sollen, wird der Wert auf die nächsthöhere ganze Zahl aufgerundet. Die Angabe **[$-en-US]** ist in diesem Fall optional, da sie den Standardwert darstellt. |"$ 1.234.568" |

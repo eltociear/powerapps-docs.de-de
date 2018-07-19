@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.component: canvas
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fca166ef388921e08bf71149a8b1274a31a7dc52
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcf1bcec976e34f07745c315d75569bbc86e583f
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330627"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899523"
 ---
 # <a name="create-an-app-to-manage-projects"></a>Erstellen einer App zum Verwalten von Projekten
 > [!NOTE]
@@ -155,7 +155,7 @@ In diesem Schritt richten wir eine Möglichkeit der Navigation zu den anderen Bi
      ![Aktualisieren des Schaltflächentexts](./media/sharepoint-scenario-build-app/04-03-08-buttons-final.png)
      
      > [!NOTE]
-> Die Schaltfläche ist mit **Update Details** (Details aktualisieren) beschriftet, zunächst wechseln wir jedoch zum Bildschirm **ViewProjects**, um ein zu aktualisierendes Projekt auszuwählen.
+     > Die Schaltfläche ist mit **Update Details** (Details aktualisieren) beschriftet, zunächst wechseln wir jedoch zum Bildschirm **ViewProjects**, um ein zu aktualisierendes Projekt auszuwählen.
 
 ### <a name="run-the-app"></a>Ausführen der App
 Noch ist der Funktionsumfang der App recht begrenzt, Sie können sie jedoch trotzdem ausführen:

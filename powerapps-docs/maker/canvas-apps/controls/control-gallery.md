@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 05/25/2017
 ms.author: sharik
-ms.openlocfilehash: dde430d6174af5be75a4fc8ae13dabd6f3759899
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fcb482844e430444fd95bb2d0c85a8da23c91d84
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837255"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37897729"
 ---
 # <a name="gallery-control-in-powerapps"></a>Bildkatalog-Steuerelement in PowerApps
 Ein Steuerelement, das andere Steuerelemente enthält und einen Datensatz anzeigt.
@@ -107,11 +107,11 @@ Wenn ein Katalogelement aktiviert wird, indem man auf eine beliebige Stelle klic
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-> Die Sprachausgabe meldet, wenn Elemente im Katalog verändert werden. **AccessibleLabel** wird ebenfalls erwähnt. Dadurch wird die Meldung in einen Kontext gesetzt und hat eine noch wichtigere Funktion, wenn mehrere Kataloge gleichzeitig angezeigt werden.
+  > Die Sprachausgabe meldet, wenn Elemente im Katalog verändert werden. **AccessibleLabel** wird ebenfalls erwähnt. Dadurch wird die Meldung in einen Kontext gesetzt und hat eine noch wichtigere Funktion, wenn mehrere Kataloge gleichzeitig angezeigt werden.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * Sie sollten **ShowScrollbar** auf **TRUE** festlegen. Auf den meisten Geräten mit Touchscreen wird die Scrollleiste erst angezeigt, wenn der Benutzer mit dem Scrollen beginnt.
 * Wenn ein Katalogelement aktiviert wird, indem man auf eine beliebige Stelle klickt, muss es auch eine Möglichkeit für Tastaturbenutzer geben, dieses Katalogelement auszuwählen. Sie können z.B. eine **[Schaltfläche](control-button.md)** hinzufügen, für die die **OnSelect**-Eigenschaft auf **Select(Parent)** festgelegt ist.
 
     > [!NOTE]
-> Steuerelemente, die sich außerhalb des Katalogs befinden, werden nicht in der Reihenfolge der Tastaturnavigation innerhalb des Katalogs abgefragt. Die **[TabIndex](properties-accessibility.md)**-Eigenschaft von Steuerelementen innerhalb eines Katalogs ist eingeschränkt. Weitere Informationen finden Sie unter [Eigenschaften von Bedienungshilfen in PowerApps](properties-accessibility.md).
+  > Steuerelemente, die sich außerhalb des Katalogs befinden, werden nicht in der Reihenfolge der Tastaturnavigation innerhalb des Katalogs abgefragt. Die **[TabIndex](properties-accessibility.md)**-Eigenschaft von Steuerelementen innerhalb eines Katalogs ist eingeschränkt. Weitere Informationen finden Sie unter [Eigenschaften von Bedienungshilfen in PowerApps](properties-accessibility.md).

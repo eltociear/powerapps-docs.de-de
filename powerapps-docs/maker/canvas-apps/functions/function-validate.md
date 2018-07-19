@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 11/01/2015
 ms.author: gregli
-ms.openlocfilehash: 2b3d91a6da0e17ded435aec74a88ea1bbdd4fac1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d1c0a8bdcab3f8a3ba74414ab902092432a34fff
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827733"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37899201"
 ---
 # <a name="validate-function-in-powerapps"></a>Funktion „Validate“ in PowerApps
 Die **Validate**-Funktion überprüft, ob der Wert einer einzelnen [Spalte](../working-with-tables.md#columns) oder eines vollständigen [Datensatzes](../working-with-tables.md#records) für eine [Datenquelle](../working-with-data-sources.md) gilt.  
@@ -55,12 +55,14 @@ Wenn **Validate** ein Problem findet, gibt die Funktion eine Fehlermeldung zurü
 Für diese Beispiele müssen die Werte in der Spalte **Percentage** (Prozentzahl) der Datenquelle **Scores** (Ergebnisse) zwischen 0 und (einschließlich) 100 liegen. Wenn die Daten die Überprüfung bestehen, gibt die Funktion *blank* zurück. Andernfalls gibt die Funktion eine Fehlermeldung zurück.
 
 ### <a name="validate-with-a-single-column"></a>Überprüfen mit einer einzelnen Spalte
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Validate( Scores, Percentage, 10 )** |Überprüft, ob **10** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |*blank* |
 | **Validate( Scores, Percentage, 120 )** |Überprüft, ob **120** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
 
 ### <a name="validate-with-a-complete-record"></a>Überprüfen mit einem vollständigen Datensatz
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Validate( Scores, EditRecord, Gallery.Updates )** |Überprüft, ob **10** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |*blank* |

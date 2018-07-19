@@ -1,22 +1,20 @@
 ---
 title: Übersicht über die Cloudspeicherverbindung | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie eine Verbindung mit einem Cloudspeicherkonto herstellen und Excel-Daten in Ihrer App anzeigen können
-documentationcenter: ''
 author: lancedMicrosoft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.openlocfilehash: 7c3d88498c92d8e1d0e8490bfafc0654b044e98b
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: anneta
+ms.openlocfilehash: 3d7813280f0d17eca327e86a827da72e33f191e3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021019"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
 PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
@@ -51,7 +49,7 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
     ![Auswählen der Excel-Tabelle](./media/cloud-storage-blob-connections/selecttable.png)
    
     > [!NOTE]
-> Beachten Sie, dass die Excel-Daten als Tabelle formatiert sein müssen.
+   > Beachten Sie, dass die Excel-Daten als Tabelle formatiert sein müssen.
 
 ## <a name="using-the-excel-data-in-your-app"></a>Verwenden von Excel-Daten in der App
 1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Katalog** aus, und wählen Sie anschließend ein Katalogsteuerelement **Mit Text** aus.

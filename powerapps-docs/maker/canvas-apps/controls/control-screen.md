@@ -12,12 +12,12 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: d03e587d86262bcecf59012e36af0c3dc27b29a3
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 165b6544808da234773c2b7a2cdd0014d6fe5c2d
+ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31831421"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37898701"
 ---
 # <a name="screen-control-in-powerapps"></a>Bildschirm-Steuerelement in PowerApps
 Ein Benutzeroberflächenelement, das in einer App ein oder mehrere Steuerelemente enthält
@@ -83,4 +83,4 @@ Sie sollten nicht nur den Text überprüfen, sondern auch den Farbkontrast mit g
 * Jeder **Ansicht** muss ein eindeutiger Name zugewiesen sein. Der Anzeigename kann auf dieselbe Weise wie andere Steuerelemente angezeigt und bearbeitet werden, also entweder in der Strukturansicht des Bereichs „Steuerelemente“ oder im Header im Bereich „Eigenschaften“.
 
     > [!NOTE]
-> Wenn eine neue **Anzeige** geladen wird, nennt die Sprachausgabe deren Namen. 
+  > Wenn eine neue **Anzeige** geladen wird, nennt die Sprachausgabe deren Namen. 

@@ -1,22 +1,20 @@
 ---
 title: 'Steuerelement „Bild hinzufügen“: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Steuerelement „Bild hinzufügen“
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 8882873367442238012445c901bd86b33ff6863c
-ms.sourcegitcommit: 8bd4c700969d0fd42950581e03fd5ccbb5273584
+ms.reviewer: anneta
+ms.openlocfilehash: 694222de50280325e6648362fbe9e745131b716b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014878"
 ---
 # <a name="add-picture-control-in-powerapps"></a>Steuerelement „Bild hinzufügen“ in PowerApps
 Nimmt ein Foto auf oder lädt Bilder vom lokalen Gerät.
