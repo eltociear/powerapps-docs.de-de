@@ -1,23 +1,20 @@
 ---
 title: Eigenschaften von Visuals | Microsoft-Dokumentation
 description: Enthält Referenzinformationen zu Eigenschaften wie „Image“, „ImagePosition“ und „BackgroundImage“.
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 21d378d4464a93a699391f1e82eb9a4dffd37351
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: aba83ebe0a18e6d351a27dcb636c68d5d1436be3
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826382"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022997"
 ---
 # <a name="image-properties-in-powerapps"></a>Bildeigenschaften in PowerApps
 Konfigurieren Sie grafische Elemente in der App, z.B. Bilder, Fotos und Elemente eines Stift-Steuerelements.

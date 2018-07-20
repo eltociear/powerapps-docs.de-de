@@ -2,17 +2,19 @@
 title: Abrufen einer Sitzungs-ID oder einer App-ID | Microsoft-Dokumentation
 description: Schritte zum Abrufen einer Sitzungs-ID oder einer App-ID für die Problembehandlung in PowerApps
 author: AFTOwen
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/18/2018
-ms.author: anneta, brimcg
-ms.openlocfilehash: add591d1bf565f3ad89e0138257fdf365d6add8e
-ms.sourcegitcommit: 1126caa4c7516cd4dffcff7e0c3eca440a333a58
+ms.author: anneta
+ms.openlocfilehash: 2e9b1a38de104ce1bf5a17969ca2c79792ac6fd4
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304682"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022261"
 ---
 # <a name="get-a-session-id-or-an-app-id"></a>Abrufen einer Sitzungs-ID oder einer App-ID
 Wenn mit einer App, die in PowerApps erstellt wurde, ein Problem auftritt, können Sie Microsoft helfen, das Problem wesentlich effizienter zu beheben, wenn Sie eine Sitzungs-ID, eine App-ID oder beides für das jeweilige Problem bereitstellen.

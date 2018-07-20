@@ -2,17 +2,19 @@
 title: Liste der Webinare | Microsoft-Dokumentation
 description: Zeigt eine Liste der früheren und zukünftigen Webinare an, einschließlich Uhrzeit/Datum und behandelten Themen.
 author: audrieMSFT
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 4/18/2018
 ms.author: audrie
-ms.openlocfilehash: bffc102ad61a05ae8f2b6a26276cbeec718483f6
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 76abd84afc5b4814cfbf2ef14923c1c13e87befb
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898189"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021824"
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen ggf. erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung. 

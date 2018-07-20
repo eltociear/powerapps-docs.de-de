@@ -1,23 +1,20 @@
 ---
 title: Anzeigen von Elementen unterschiedlicher Höhe in einem Katalog | Microsoft-Dokumentation
 description: Sie können einen Katalog mit flexibler Höhe hinzufügen und konfigurieren, damit er automatisch an die Größe des Inhalts in jedem Element des Katalogs angepasst wird.
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/01/2017
 ms.author: fikaradz
-ms.openlocfilehash: 466e0d9cb1acfe4cfeb72256db2deddfd3466e19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a6f475277e7cde25fea350634aa60e8b150e304d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31834188"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018581"
 ---
 # <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>Anzeigen von Elementen unterschiedlicher Höhe in einem PowerApps-Katalog
 Wenn verschiedene Elemente in einem Dataset unterschiedliche Mengen von Daten in demselben Feld enthalten, können Sie Elemente, die mehr Daten enthalten, vollständig anzeigen, ohne nach Elementen, die weniger Daten enthalten, einen leeren Bereich hinzuzufügen. Fügen Sie einen Katalog mit **flexibler Höhe** hinzu, und konfigurieren Sie ihn. Dies bietet Ihnen folgende Möglichkeiten:

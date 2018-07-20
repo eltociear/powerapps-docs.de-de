@@ -1,22 +1,20 @@
 ---
 title: Anzeigen, Sortieren und Filtern von Daten in einem Katalog | Microsoft-Dokumentation
 description: Verwenden Sie einen Katalog, um Bilder und Text anzuzeigen. Sortieren und filtern Sie die Bilder in PowerApps.
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/02/2015
 ms.author: lonu
-ms.openlocfilehash: 959431b69d4f432335997697d8f25b5b8815d63c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: d3a56d146982965eaa07247ef57d3e2d67db2b9a
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330292"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021847"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem PowerApps-Katalog
 Erstellen Sie einen Katalog, um Bilder und Text zu verschiedenen Produkten anzuzeigen, und sortieren und filtern Sie diese Informationen.

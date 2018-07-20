@@ -1,23 +1,20 @@
 ---
 title: 'Export-Steuerelement und Import-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispielen, über das Export-Steuerelement und das Import-Steuerelement
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 958589deb4fdee42cb8e6df13ff15addbc06c07e
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 9eb0cf33c4bac3553592971409f7c52f199b368b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830691"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017293"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Export-Steuerelement und Import-Steuerelement in PowerApps
 Steuerelemente zum Exportieren von Daten in eine lokale Datei und anschließenden Importieren dieser Daten in eine andere App in PowerApps.

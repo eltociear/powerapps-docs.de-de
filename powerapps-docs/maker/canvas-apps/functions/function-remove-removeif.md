@@ -1,23 +1,20 @@
 ---
 title: Funktionen „Remove“ und „RemoveIf“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Remove“ und „RemoveIf“ in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 1f4df70ce3274c4d83c39955df58ebc344038de3
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: c8c5ba80b8ade242c367b47bf9fc1663fc4ae997
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38095839"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014832"
 ---
 # <a name="remove-and-removeif-functions-in-powerapps"></a>Die Funktionen „Remove“ und „RemoveIf“ in PowerApps
 Entfernt [Datensätze](../working-with-tables.md#records) aus einer [Datenquelle](../working-with-data-sources.md).

@@ -1,23 +1,20 @@
 ---
 title: Funktionen „Update“ und „UpdateIf“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Update“ und „UpdateIf“ in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/21/2015
 ms.author: gregli
-ms.openlocfilehash: 3046aa93941a07d44345e09b442cb57b623946c3
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: 11a14b142dd300e7dad3435c1d22ad4ea210d7c2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38078437"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39015959"
 ---
 # <a name="update-and-updateif-functions-in-powerapps"></a>Funktionen „Update“ und „UpdateIf“ in PowerApps
 Aktualisieren [Datensätze](../working-with-tables.md#records) in einer [Datenquelle](../working-with-data-sources.md)

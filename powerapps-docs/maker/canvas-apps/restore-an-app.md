@@ -1,23 +1,20 @@
 ---
 title: Wiederherstellen der vorherigen Version Ihrer App | Microsoft-Dokumentation
 description: Wiederherstellen einer App
-documentationcenter: na
 author: jamesol-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: ee9b19f647258e57b434c42b5f50bd71fc2d4bb2
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: cf5e8e4c7dcd2c1ae5b381b79a086471e24db787
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895659"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020076"
 ---
 # <a name="restore-an-app-to-a-previous-version"></a>Wiederherstellen der vorherigen Version einer App
 In diesem Artikel erfahren Sie, wie eine App auf eine frühere Version wiederhergestellt wird, die von Ihrem PowerApps-Konto in der Cloud gespeichert wurde.

@@ -1,23 +1,20 @@
 ---
 title: Anpassen von Formularen | Microsoft-Dokumentation
 description: Geben Sie an, welche Daten in welcher Reihenfolge und in welchen Steuerelementen angezeigt werden sollen.
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: 98162ce4d291b976c816326efc5d4c6d4d18c870
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 842e19360c5f1536489f978cf880d941a6dee7d6
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829594"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39019984"
 ---
 # <a name="customize-forms-in-powerapps"></a>Anpassen von Formularen in PowerApps
 Anpassen eines **Anzeigeformular**-Steuerelements und eines **Bearbeitungsformular**-Steuerelements, sodass die wichtigsten Daten in der intuitivsten Reihenfolge angezeigt werden, damit Benutzer die Daten leicht verstehen und aktualisieren können.

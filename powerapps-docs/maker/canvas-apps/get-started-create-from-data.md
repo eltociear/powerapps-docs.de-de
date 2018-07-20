@@ -1,21 +1,20 @@
 ---
 title: Generieren einer App aus Excel | Microsoft-Dokumentation
 description: Verwenden von PowerApps zum automatischen Generieren einer App mithilfe einer Excel-Datei, die in einem Cloudspeicherkonto gespeichert ist
-documentationcenter: na
-author: AFTOWen
-manager: kfile
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 54d53d5f3385be4b5d38a2bf220da139ba3bd3a4
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 4830721ba697f78987abd972dd1122250bacb9e8
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31827256"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39020237"
 ---
 # <a name="generate-an-app-from-excel-in-powerapps"></a>Generieren einer App aus Excel in PowerApps
 In diesem Artikel generieren Sie Ihre erste App automatisch in PowerApps, indem Sie Daten aus einer Excel-Tabelle verwenden. Sie wählen eine Excel-Datei aus, generieren eine App und führen die generierte App dann aus. Jede generierte App enthält Bildschirme zum Durchsuchen von Datensätzen, Anzeigen von Details der Datensätze sowie zum Erstellen oder Aktualisieren von Datensätzen. Indem Sie eine App generieren, können Sie mithilfe von Excel-Daten schnell eine funktionierende App erstellen. Diese können Sie anschließend an Ihre Anforderungen anpassen. 

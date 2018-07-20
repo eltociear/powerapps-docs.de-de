@@ -1,23 +1,20 @@
 ---
 title: 'PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung | Microsoft-Dokumentation'
 description: Registrieren Sie sich, um Ihre Kenntnisse auszubauen und mehr über PowerApps, Microsoft Flow und den Common Data Service zu erfahren.
-documentationcenter: na
-author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
 ms.date: 05/01/2016
-ms.author: mblythe
-ms.openlocfilehash: 324fa80060a7c07bd5f0708df9fdabdbe7893236
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.author: anneta
+ms.reviewer: ''
+ms.openlocfilehash: 533234c7a0ca3cc69e30eb077ff0bd39d1d50a11
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899477"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017086"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:

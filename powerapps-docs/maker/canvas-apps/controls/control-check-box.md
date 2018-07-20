@@ -1,23 +1,20 @@
 ---
 title: 'Kontrollkästchen-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen über das Kontrollkästchen-Steuerelement, einschließlich Eigenschaften und Beispielen
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 649ebff0c6ce78d317cfeaf8978bcd97f4a68b11
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.reviewer: anneta
+ms.openlocfilehash: 5f36c6e07f1f1c507f5734e51c23ba6af83eca4b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31837893"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017201"
 ---
 # <a name="check-box-control-in-powerapps"></a>Kontrollkästchen-Steuerelement in PowerApps
 Ein Steuerelement, das der Benutzer aktivieren und deaktivieren kann (wobei der Wert des Elements auf **true** bzw. **false** festgelegt wird).

@@ -1,23 +1,20 @@
 ---
 title: Installation und Konfiguration der PowerApps-Beispiel-App „Expense Report“ | Microsoft-Dokumentation
 description: Ausführliche Anleitung zum Installieren und Konfigurieren der PowerApps-Beispiel-App „Expense Report“.
-documentationcenter: na
 author: caburk
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: sample
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ce265df67dd980653766b7bf9d57376c671e18a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899960"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094654"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Installation und Konfiguration der PowerApps-Beispiel-App „Expense Report“
 
@@ -384,8 +381,8 @@ Sehen Sie sich dieses Video an, um mehr über die Verwendung der PowerApps-Beisp
 [![Video zur Installation von Expense Report](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/customize-list-form)
-- [Hinzufügen und Konfigurieren eines Steuerelements in PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-configure-controls)
+- [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
+- [Hinzufügen und Konfigurieren eines Steuerelements in PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-configure-controls)
 - [Bearbeiten und Verwalten von Berechtigungen für eine SharePoint-Liste oder -Bibliothek](https://support.office.com/en-us/article/edit-and-manage-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
 

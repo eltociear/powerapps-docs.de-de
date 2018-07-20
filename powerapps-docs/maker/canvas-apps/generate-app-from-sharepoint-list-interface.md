@@ -1,23 +1,20 @@
 ---
 title: Generieren einer App aus einer SharePoint-Liste | Microsoft-Dokumentation
 description: Generieren Sie eine App mit drei Bildschirmen, um Daten aus einer SharePoint-Liste zu verwalten, lokal oder in der Cloud.
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 51a13472407c5483eed7cc2c202e46855905157d
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 46cf610351cf00d8d947c4006c31a3d5971951d0
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329408"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022456"
 ---
 # <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Generieren einer App aus SharePoint mit PowerApps
 

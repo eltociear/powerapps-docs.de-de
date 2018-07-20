@@ -1,23 +1,20 @@
 ---
 title: Vollständige exemplarische Vorgehensweise für das Szenario der SharePoint Online-Integration | Microsoft-Dokumentation
 description: Befolgen Sie die vollständige exemplarische Vorgehensweise für das Szenario, das wir in dieser Reihe von Tutorials entwickelt haben.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: ab2f1fc08ce65261c5a433a098dcd0dec54b0f8c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836652"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014947"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Vollständige exemplarische Vorgehensweise für das komplette Szenario der SharePoint Online-Integration
 > [!NOTE]

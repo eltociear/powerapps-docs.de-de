@@ -1,23 +1,20 @@
 ---
 title: Erstellen und Bearbeiten von Apps in einem Webbrowser | Microsoft-Dokumentation
 description: Erstellen oder bearbeiten Sie Apps mithilfe von PowerApps Studio für Web in einem Browser.
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 4add1e15c1a85b27b83295422dbb6472ac02ad9f
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 796d23be4c8b69a6f901b4338bda0000f8afb452
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329109"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023089"
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Erstellen und Bearbeiten von Apps in PowerApps Studio für Web
 Erstellen und Bearbeiten Sie Apps in PowerApps Studio für Web, das unter Windows oder anderen Plattformen in einem Browserfenster geöffnet wird.
