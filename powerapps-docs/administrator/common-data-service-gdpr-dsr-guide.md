@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: ef5d646e30f5d09dbfe5f111a3ad018b030f79d9
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168226"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094746"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps
 
@@ -102,8 +102,8 @@ Sie können personenbezogene Daten von CDS für Apps-Benutzern in den folgenden 
 
 |Ressourcen- | Zweck | Websitezugriff | Programmatischer Zugriff
 | --- | --- | --- | ---
-| Entitätsdatensatz | In der Systementität „User“ werden die personenbezogenen Daten eines Benutzers gespeichert. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| Verlauf überprüfen | Lässt zu, dass Kunden Ressourcen ermitteln können, die von Benutzern auf einer Entitätsstufe erstellt, geändert oder gelöscht wurden, oder Ressourcen, auf die Benutzer zugegriffen haben. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Entitätsdatensatz | In der Systementität „User“ werden die personenbezogenen Daten eines Benutzers gespeichert. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Verlauf überprüfen | Lässt zu, dass Kunden Ressourcen ermitteln können, die von Benutzern auf einer Entitätsstufe erstellt, geändert oder gelöscht wurden, oder Ressourcen, auf die Benutzer zugegriffen haben. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>User
 Personenbezogene Benutzerdaten werden in Azure Active Directory gespeichert und automatisch mit allen CDS für Apps-Umgebungen synchronisiert. Systemadministratoren können diese personenbezogenen Daten nicht direkt in CDS für Apps aktualisieren, während der Benutzer aktiv ist. Sie müssen die Daten im Office 365 Admin Center aktualisieren. Systemadministratoren können personenbezogene Daten direkt in CDS für Apps hinzufügen (z.B. benutzerdefinierte Attribute). Sie müssen diese Daten allerdings manuell verwalten.
@@ -199,7 +199,7 @@ Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes 
 
 3. Navigieren Sie zu **Einstellungen** > **Security** > **Users**, und wählen Sie **Disabled Users View** (Sicherheit > Benutzer > Deaktivierte Benutzer anzeigen).
 
-4. Erstellen Sie eine Excel-Vorlage mit den personenbezogenen Benutzerdaten, und laden Sie diese herunter. Ausführliche Anweisungen finden Sie im Abschnitt „Eine neue Excel-Vorlage erstellen“ unter [Analysieren und Teilen von Daten mit Excel-Vorlagen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
+4. Erstellen Sie eine Excel-Vorlage mit den personenbezogenen Benutzerdaten, und laden Sie diese herunter. Ausführliche Anweisungen finden Sie im Abschnitt „Eine neue Excel-Vorlage erstellen“ unter [Analysieren und Teilen von Daten mit Excel-Vorlagen](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
 
 8. Öffnen Sie die heruntergeladene Excel-Vorlagendatei, entfernen Sie die personenbezogenen Benutzerdaten, und speichern Sie die Datei.
 

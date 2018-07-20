@@ -1,23 +1,20 @@
 ---
 title: Grundlegendes zum Layout von Datenformularen | Microsoft-Dokumentation
 description: Erstellen Sie mithilfe von Zeilen und Spalten ansprechende Formularlayouts.
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 45baa2450dbb081b800263a9119729e1c2846008
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 050e665a7a5c2a05ab9abfc989134028d303da4d
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899445"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017730"
 ---
 # <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Grundlegendes zum Layout von Datenformularen in Microsoft PowerApps
 In PowerApps können Sie auf einfache Weise Formulare erstellen, die ansprechend aussehen und benutzerfreundlich sind. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:

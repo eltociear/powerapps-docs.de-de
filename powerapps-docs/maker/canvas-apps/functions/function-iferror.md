@@ -1,23 +1,20 @@
 ---
 title: IfError-Funktion | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die IfError-Funktion in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 03/21/2018
 ms.author: gregli
-ms.openlocfilehash: ebd4454184f684dbf85ec2b8a9056395b92dc47f
-ms.sourcegitcommit: 234de505a0e8c42459d87053fa00ea3e0ea0b909
+ms.openlocfilehash: 9b9130671d49d58ee2aabce316b9c369753cedef
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092781"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39016603"
 ---
 # <a name="iferror-function-in-powerapps"></a>IfError-Funktion in PowerApps
 Erkennt Fehler und stellt einen Alternativwert bereit oder führt eine Aktion aus.

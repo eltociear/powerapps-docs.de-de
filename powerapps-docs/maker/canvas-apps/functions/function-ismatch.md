@@ -2,18 +2,19 @@
 title: Funktion „IsMatch“ | Microsoft-Dokumentation
 description: Referenzinformationen einschließlich Syntax und Beispielen für die Funktion „IsMatch“ in PowerApps
 author: gregli-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: 908602af84c94d4a14dcd2017c2791ee5c25e6ad
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: ac13b62e77b5d8ed35939983b3989b5edb13361c
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899247"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018006"
 ---
 # <a name="ismatch-function-in-powerapps"></a>Funktion „IsMatch“ in PowerApps
 Prüft, ob eine Zeichenfolge mit einem Muster übereinstimmt

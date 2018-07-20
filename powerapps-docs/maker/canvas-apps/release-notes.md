@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/21/2018
 ms.author: anneta
-ms.openlocfilehash: e68614f2624a0d60e09563f92bf027fdf03d77b5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 55b60abd9dc07d5b6c1979190f20ef893265475f
+ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023894"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39094700"
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 > [!IMPORTANT]
 > **Ankündigung der Anmerkungen zu dieser Version**<br>
 > Sind Sie an bevorstehenden und kürzlich veröffentlichten PowerApps-Funktionen interessiert?<br>
-[Lesen Sie die Anmerkungen zu dieser Version](https://docs.microsoft.com/en-us/business-applications-release-notes/april18/powerapps/overview). Sämtliche Informationen, die Sie zur Planung nutzen können, wurden detailliert zusammengefasst.
+[Lesen Sie die Anmerkungen zu dieser Version](https://docs.microsoft.com/business-applications-release-notes/april18/powerapps/overview). Sämtliche Informationen, die Sie zur Planung nutzen können, wurden detailliert zusammengefasst.
 
 Informationen über bekannte Einschränkungen finden Sie unter [Häufige Probleme und Lösungen](common-issues-and-resolutions.md).
 

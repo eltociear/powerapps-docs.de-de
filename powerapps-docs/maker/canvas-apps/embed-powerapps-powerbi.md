@@ -1,23 +1,20 @@
 ---
 title: Einbetten einer neuen App in einen Power BI-Bericht | Microsoft-Dokumentation
 description: Einbetten einer App mit derselben Datenquelle, die wie andere Berichtselemente gefiltert werden kann
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 33656e44f782a626eecc28787af984ace7339cd6
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830468"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018673"
 ---
 # <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>Tutorial: Einbetten einer neuen App in einen Power BI-Bericht
 

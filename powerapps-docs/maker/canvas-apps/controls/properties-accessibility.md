@@ -1,23 +1,20 @@
 ---
 title: Eigenschaften von Bedienungshilfen | Microsoft-Dokumentation
 description: Enthält Referenzinformationen zu Eigenschaften, z.B. TabIndex, QuickInfo.
-documentationcenter: na
 author: fikaradz
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 01/26/2017
 ms.author: fikaradz
-ms.openlocfilehash: 94d15ff14ccd57ccc392eae47b6c10d6cec50bb1
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 59cc231dfc461a2301de90a7a995ec2ec82790cb
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31825209"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022928"
 ---
 # <a name="accessibility-properties-in-powerapps"></a>Eigenschaften von Bedienungshilfen in PowerApps
 Hier geht es um die Konfiguration von Eigenschaften, die für Benutzer mit Sehschwäche als Hilfe für alternative Interaktionsmöglichkeiten mit Steuerelementen dienen.

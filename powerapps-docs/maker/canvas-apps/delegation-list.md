@@ -1,23 +1,20 @@
 ---
 title: Delegierbare Datenquellen | Microsoft-Dokumentation
 description: Enthält eine Liste mit allen unterstützten delegierbaren Datenquellen.
-documentationcenter: na
-author: archnair
-manager: kfile
-editor: ''
-tags: ''
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 08/15/2017
-ms.author: archanan
-ms.openlocfilehash: f1d9b6463cc597d13fa1b9c1389fbfcc6d5b5ded
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.author: lanced
+ms.openlocfilehash: e8863d8e260ecaafd407e93d710917848ce184ad
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896280"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018604"
 ---
 # <a name="delegable-data-sources"></a>Delegierbare Datenquellen
 Wie im Artikel [Grundlagen der Delegierung](delegation-overview.md) ausführlich beschrieben, wird von Delegierung gesprochen, wenn für PowerApps die Verarbeitung von Daten an die Datenquelle delegiert wird, anstatt die Daten zur lokalen Verarbeitung in die App zu verschieben.

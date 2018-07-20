@@ -1,23 +1,20 @@
 ---
 title: Ändern des App-Namens und der Kachel | Microsoft-Dokumentation
 description: Eine Schritt-für-Schritt-Anleitung zum Ändern von Einstellungen, z.B. den App-Namen und das Symbol
-documentationcenter: na
 author: lonu
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: a4bafb954b5723e813fade2ee633a51f4d8385e0
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: ae78a86578032d5110a5558d60274fd6728438b9
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895866"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014924"
 ---
 # <a name="change-app-name-and-icon-in-powerapps"></a>Ändern des App-Namens und des Symbols in PowerApps
 Anpassen einer App durch Ändern des Namens und der Kachel

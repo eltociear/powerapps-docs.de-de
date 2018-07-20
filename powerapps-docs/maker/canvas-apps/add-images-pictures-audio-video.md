@@ -1,22 +1,20 @@
 ---
 title: Hochladen von Multimediadateien und Einbetten in eine App | Microsoft-Dokumentation
 description: Anzeigen von Multimediadateien in einer App und Hochladen in eine Datenquelle
-documentationcenter: ''
 author: karthik-1
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: d193c2691f689e935a5dbb92767a16d393098770
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 8c04681f3d39a6022f8f962e7a76673fb90ad65b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896740"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017661"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.

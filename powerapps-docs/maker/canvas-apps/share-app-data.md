@@ -1,23 +1,20 @@
 ---
 title: Freigeben von Excel-Dateien, die von einer App verwendet werden | Microsoft-Dokumentation
 description: Geben Sie Excel-Dateien in Dropbox, OneDrive und Google Drive frei. Benutzer können Dateien und Ordner bearbeiten und anzeigen.
-documentationcenter: na
 author: jamesol-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: 8c96a83ae67a8a06aa96b4f4ba091e361430683d
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 78423a1f1594e69a40cc4b81123217f960b61879
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896119"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014993"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Freigeben von Excel-Daten, die von Ihrer App verwendet werden
 Sie können Excel-Daten in einem [Cloudkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive für Ihre App-Benutzer freigeben.

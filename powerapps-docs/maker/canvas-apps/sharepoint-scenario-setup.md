@@ -1,23 +1,20 @@
 ---
 title: Einrichten von Listen für die Integration von SharePoint Online in PowerApps, Microsoft Flow und Power BI | Microsoft-Dokumentation
 description: In dieser Aufgabe richten wir SharePoint-Listen als Datenquelle für Apps, Flows, Berichte und Dashboards ein.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 12/19/2017
 ms.author: mblythe
-ms.openlocfilehash: 1dde9695f3fb3f0fe7351a22a1a6f5300fb53da8
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: f7aec0826f321124fb48b9b0600f07a77d28437e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836945"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017247"
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Einrichten von Listen für die Integration von SharePoint Online in PowerApps, Microsoft Flow und Power BI
 > [!NOTE]

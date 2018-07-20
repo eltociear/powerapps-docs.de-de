@@ -2,17 +2,19 @@
 title: Grundlegendes zu Tabellen | Microsoft-Dokumentation
 description: Referenzinformationen zum Arbeiten mit Tabellen, Spalten und Datensätzen
 author: gregli-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6144d66849316dc2b355b0cb9a56959e10f8a319
-ms.sourcegitcommit: 76ffec3b4d9c18a01f19c583435541ae165a8234
+ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864259"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021180"
 ---
 # <a name="understand-tables-and-records-in-powerapps"></a>Grundlegendes zu Tabellen und Datensätzen in PowerApps
 Sie können Apps erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreifen, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.

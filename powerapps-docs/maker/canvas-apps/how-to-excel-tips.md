@@ -1,23 +1,20 @@
 ---
 title: Formatieren einer Tabelle in Excel | Microsoft-Dokumentation
 description: Damit Sie Excel-Daten verwenden können, müssen Sie die Daten in einer Tabelle formatieren. Hinzufügen des Schlüsselworts „Bild“ in Spaltennamen
-documentationcenter: na
 author: yifwang
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: fd458fe6c8962bbc4443c1de7aad0f1c4eea7fac
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: ddc6b9715a3282dbfcce9ae5f63be50ea1406e69
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31826618"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023664"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Formatieren einer Tabelle in Excel und Tipps zur Benennung
 Zunächst muss die Voraussetzung erfüllt sein, dass die Excel-Daten als Tabelle für die Verwendung in PowerApps formatiert sind. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.

@@ -1,23 +1,20 @@
 ---
 title: Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards | Microsoft-Dokumentation
 description: In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI-Dienst. Anschließend wird auf der Grundlage des Berichts ein Dashboard erstellt.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 01/30/2018
 ms.author: mblythe
-ms.openlocfilehash: cc738334cc20f2911e17404faf679c0ed6bc2832
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 988c072f6abb33e8606826fd105bc2e7f2c2c452
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31830868"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018742"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards
 > [!NOTE]

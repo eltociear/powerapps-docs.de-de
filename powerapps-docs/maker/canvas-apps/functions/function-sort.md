@@ -1,23 +1,20 @@
 ---
 title: Funktionen „Sort“ und „SortByColumns“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Sort“ und „SortByColumns“ in PowerApps
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: c221bae846dba06f83705c52c9cbe2f236ab2007
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 6ad538e537dd6e5c98e323b9bf72f901a07b2367
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37896786"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39022537"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funktionen „Sort“ und „SortByColumns“
 Zum Sortieren von [Tabellen](../working-with-tables.md).

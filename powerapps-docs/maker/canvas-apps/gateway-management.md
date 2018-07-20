@@ -1,23 +1,20 @@
 ---
 title: Verwalten eines lokalen Datengateways | Microsoft-Dokumentation
 description: Ein lokales Datengateway und seine Verbindungen verwalten
-documentationcenter: na
 author: archnair
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: 939758c1550f1006f00bd9a386eb4b9cbcd69af0
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: e7dc9a2386d75a6f03744286b7ed265a8d385370
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899914"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018535"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
 Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen PowerApps und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.

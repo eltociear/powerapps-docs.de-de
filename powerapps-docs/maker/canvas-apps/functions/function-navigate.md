@@ -1,23 +1,20 @@
 ---
 title: Funktionen „Back“ und „Navigate“ | Microsoft-Dokumentation
 description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen „Back“ und „Navigate“ in PowerApps
-documentationcenter: na
 author: gregli-msft
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/08/2015
 ms.author: gregli
-ms.openlocfilehash: e00ee9b3a58bf3255b9f581f405381af05aa07f9
-ms.sourcegitcommit: 6d9fe9967841e381b108a7fb53c9057e295336ea
+ms.openlocfilehash: 939a9319da134a2ea4ff3ed9209f2f33baf24f64
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37948570"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39017523"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 Ändern, welcher Bildschirm angezeigt wird

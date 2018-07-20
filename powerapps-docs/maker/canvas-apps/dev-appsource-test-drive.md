@@ -1,23 +1,20 @@
 ---
 title: Kunden das Testen Ihrer Apps auf App Source ermöglichen | Microsoft-Dokumentation
 description: Verwenden Sie AppSource, um Apps mit Kunden zu teilen und Leads für Ihr Unternehmen zu generieren.
-documentationcenter: na
 author: linhtranms
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 05/08/2017
 ms.author: litran
-ms.openlocfilehash: 11f0e0b8a0aa0dce59588c2e1eea21885f19b741
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: fb51ab2c671d695350e452dc6fb29efa583adfea
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31836377"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023687"
 ---
 # <a name="let-customers-test-drive-your-apps-on-appsource"></a>Kunden das Testen Ihrer Apps auf AppSource ermöglichen
 Erstellen Sie Ihre Apps in PowerApps mit Leidenschaft? Haben Sie eine App, die Sie gerne mit Kunden teilen möchten? Wir unterstützten jetzt PowerApps Test Drive-Projektmappen auf [AppSource.com](https://appsource.microsoft.com), um Ihnen eine Möglichkeit zu geben, Apps mit Kunden zu teilen und Leads für Ihr Unternehmen zu generieren.

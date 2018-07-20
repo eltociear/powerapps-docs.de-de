@@ -1,22 +1,20 @@
 ---
 title: Anzeigen von Text und Formatieren eines Datums oder einer Uhrzeit | Microsoft-Dokumentation
 description: Fügen Sie mit PowerApps Datumsangaben und Uhrzeiten hinzu, und formatieren Sie diese.
-documentationcenter: ''
 author: AFTOwen
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: faa8db15596dc0da0d5b5638f5dd9c334517fc7c
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 625d76af5acc554ff9ab6c20d69f542cf959cd95
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32330949"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018052"
 ---
 # <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Anzeigen von Text und Formatieren von Datums- und Uhrzeitangaben in PowerApps
 Fügen Sie Datumsangaben und Uhrzeiten hinzu, und formatieren Sie sie, um die geeignete Detailebene anzuzeigen oder Ihr Gebietsschema widerzuspiegeln. Berechnen Sie die Zeitspanne zwischen zwei Datumswerten, oder berechnen Sie ein Datum, das eine bestimmte Zeitspanne vor oder nach einem von Ihnen angegebenen Datum liegt. Konvertieren Sie Datumswerte in getrennte Werte für Tage, Monate und Jahre, und konvertieren Sie Werte für Stunden, Minuten und Sekunden.

@@ -1,23 +1,20 @@
 ---
 title: Grundlagen der Delegierung | Microsoft-Dokumentation
 description: Verwenden Sie die Delegierung, um große Datasets effizient zu verarbeiten.
-documentationcenter: na
-author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 07/05/2018
-ms.author: gregli
-ms.openlocfilehash: 7e9a6aac1e0df32fa83edaa0b8042dd2df143bf2
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.author: lanced
+ms.openlocfilehash: 484d7b1149f158840238fc3d54713a1e6e33443b
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897476"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023595"
 ---
 # <a name="understand-delegation"></a>Grundlagen der Delegierung
 PowerApps enthalten einen leistungsstarken Funktionssatz für die Filterung, Sortierung und Strukturierung von Tabellen mit Daten: Beispiele hierfür sind u.a. die Funktionen **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)** und **[AddColumns](functions/function-table-shaping.md)**. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.

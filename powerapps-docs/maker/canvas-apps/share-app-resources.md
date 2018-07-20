@@ -1,23 +1,20 @@
 ---
 title: Freigeben von in der App verwendeten Ressourcen | Microsoft-Dokumentation
 description: Erfahren Sie, wie in der App verwendete Ressourcen freigegeben werden, wenn eine App freigegeben wird.
-documentationcenter: na
 author: archnair
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: f7943c5204dcab7c59e922bfb096f70d05b94e9b
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 1cf33589937917637e1ca7e67467e2299fa6605e
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31829000"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023733"
 ---
 # <a name="share-app-resources"></a>Freigeben von App-Ressourcen
 Beachten Sie vor dem [Freigeben einer App](share-app.md) die Typen von Ressourcen, von denen sie abhängt. Dabei kann es sich z. B. um eine oder mehrere der folgenden handeln:

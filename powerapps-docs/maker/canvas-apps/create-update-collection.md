@@ -1,22 +1,20 @@
 ---
 title: Erstellen und Aktualisieren einer Sammlung | Microsoft-Dokumentation
 description: Erstellen von Sammlungen und Hinzufügen von Spalten zu vorhandenen Sammlungen in PowerApps
-documentationcenter: ''
 author: lonu
-manager: kfile
-editor: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: b3bf7c2227d3321a581eb1a568de1ce78ead92ee
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 27b5a3453c2c0a89239d3e319ee6f39afd034492
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899891"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39023273"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Erstellen und Aktualisieren einer Sammlung in Ihrer App
 Verwenden Sie eine Sammlung zum Speichern von Daten, die in Ihrer App verwendet werden können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen. Erstellen Sie beispielsweise eine MyImages-Sammlung mit den Abbildungen aller Produkte, die Ihr Unternehmen verkauft. In PowerApps können Sie Ihre MyImages-Sammlung hinzufügen und eine App erstellen, in der alle Abbildungen dieser Produkte angezeigt werden. Sie können aber z.B. auch eine PriceList-Sammlung erstellen, die die Produkte und Preise für jedes Produkt enthält.

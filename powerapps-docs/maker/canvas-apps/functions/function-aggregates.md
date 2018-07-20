@@ -1,23 +1,20 @@
 ---
 title: Funktionen „Average“, „Max“, „Min“, „StdevP“, „Sum“ und „VarP“ | Microsoft-Dokumentation
 description: Referenzinformationen für die Funktionen „Average“, „Max“, „Min“, „StdevP“, „Sum“ und „VarP“ in PowerApps einschließlich Syntax und Beispielen
-documentationcenter: na
 author: gregli-msft
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: reference
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 08/15/2017
 ms.author: gregli
-ms.openlocfilehash: a8cd998744d609c253a31271aab34a30b1e998f3
-ms.sourcegitcommit: a622db0fb3d44fa5e7ebc4bfdc77cd6acb3646be
+ms.openlocfilehash: 1dd0c4747f252127f82aa1386e637d8de4b175d2
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843225"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39018627"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funktionen „Average“, „Max“, „Min“, „StdevP“, „Sum“ und „VarP“ in PowerApps
 Aggregatfunktionen, die eine Menge von Zahlen zusammengefassten
