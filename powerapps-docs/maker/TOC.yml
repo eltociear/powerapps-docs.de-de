@@ -49,6 +49,11 @@
               href: ./canvas-apps/get-started-create-from-blank.md
         - name: Eine App freigeben
           href: ./canvas-apps/share-app.md
+          items:
+            - name: Freigeben von Excel-Daten
+              href: ./canvas-apps/share-app-data.md
+            - name: Freigeben von App-Ressourcen
+              href: ./canvas-apps/share-app-resources.md
         - name: Apps in Power BI einbetten
           href: ./canvas-apps/embed-powerapps-powerbi.md
     - name: Beispiele

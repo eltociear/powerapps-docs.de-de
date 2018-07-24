@@ -1,23 +1,20 @@
 ---
 title: Speichern und Veröffentlichen einer App | Microsoft-Dokumentation
 description: Detaillierte Anleitung für App-Autoren zum Speichern und Veröffentlichung einer App
-documentationcenter: na
-author: aftowen
-manager: kfile
-editor: ''
-tags: ''
+author: AFTOwen
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 09/14/2017
 ms.author: anneta
-ms.openlocfilehash: 0192abca52f3ca3d28b911e24a9ca9cd07c95393
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: a605467b1d7448e3f53cccd49d025cdaca3f8f25
+ms.sourcegitcommit: 0d69781f6f9362ffd4bb0b61aab14371968fbb46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895843"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39119449"
 ---
 # <a name="save-and-publish-an-app-in-powerapps"></a>Speichern und Veröffentlichen einer App in PowerApps
 Wenn Sie Änderungen an einer App speichern, veröffentlichen Sie diese automatisch nur für sich selbst und andere Benutzer, die über Berechtigungen zum Bearbeiten der App verfügen. Wenn Sie die Änderungen abgeschlossen haben, müssen Sie sie explizit veröffentlichen, um sie allen Benutzern zur Verfügung zu stellen, für die die App freigegeben ist.
@@ -47,7 +44,7 @@ Die App kann auch automatisch alle 2 Minuten von PowerApps gespeichert werden. W
    ![Überprüfen der Veröffentlichung](./media/save-publish-app/publish-review.png)
 
    > [!NOTE]
-   > Es wird empfohlen, dass Sie die App innerhalb von sechs Monaten seit der letzten Veröffentlichung aktualisieren, damit sie mit der neuesten Version von PowerApps synchronisiert wird. Wenn Sie sie nicht innerhalb von sechs Monaten aktualisieren und/oder erneut veröffentlichen, kann es sein, dass die App ohne Vorwarnung nicht mehr funktioniert.
+   > Wenn Sie eine Canvas-App veröffentlichen, wird für Ihre App ein Upgrade auf die aktuelle PowerApps-Version durchgeführt, sodass Sie von den aktuellen Features und Leistungsverbesserungen profitieren können, die hinzugefügt wurden, seitdem Sie das letzte Mal eine Veröffentlichung vorgenommen haben. Wenn Sie seit mehreren Monaten kein Update veröffentlicht haben, werden Sie jetzt beim Veröffentlichen vermutlich eine deutliche Leistungsverbesserung bemerken.
 
 ## <a name="identify-the-live-version"></a>Bestimmen der Liveversion
 Klicken oder tippen Sie auf [powerapps.com](https://web.powerapps.com) im Menü **Datei** (auf der linken Seite) auf **Apps**, dann auf das Symbol „Details“ einer App und schließlich auf die Registerkarte **Versionen**.

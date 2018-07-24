@@ -1,23 +1,20 @@
 ---
 title: Erstellen einer App zum Verwalten von Projekten | Microsoft-Dokumentation
 description: In dieser Aufgabe wird eine App von Grund auf neu erstellt. Mithilfe dieser App kann ein Benutzer Projekten einen Manager zuweisen und Projektdetails aktualisieren.
-documentationcenter: na
 author: mgblythe
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
+ms.custom: canvas
+ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: fcf1bcec976e34f07745c315d75569bbc86e583f
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: b4daabf019236a4245db324121a6745290c8b3ab
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37899523"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39021617"
 ---
 # <a name="create-an-app-to-manage-projects"></a>Erstellen einer App zum Verwalten von Projekten
 > [!NOTE]

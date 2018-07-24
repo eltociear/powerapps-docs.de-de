@@ -2,19 +2,22 @@
 title: Barrierefreie Farben | Microsoft-Dokumentation
 description: Farbkontrastrichtlinien für PowerApps
 author: tahoon
+manager: kvivek
 ms.service: powerapps
 ms.topic: article
+ms.custom: canvas
+ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 56a11edcd1c43313e9b380ca8ac1c8a68d85772d
-ms.sourcegitcommit: 45fac73f04aa03b5796ae6833d777f4757e67945
+ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
+ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32329914"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39014809"
 ---
 # <a name="accessible-colors-in-powerapps"></a>Barrierefreie Farben in PowerApps
-In einer App sollten nur Farben verwendet werden, die für farbenblinde und sehbehinderte Benutzer barrierefrei sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen.
+In einer App sollten nur Farben verwendet werden, die für farbenblinde und sehbehinderte Benutzer barrierefrei sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
 
 ## <a name="minimum-contrast-for-text"></a>Minimaler Kontrast bei Text
 * Text und Hintergrund müssen zumindest ein Kontrastverhältnis von 4,5:1 aufweisen.
@@ -58,4 +61,4 @@ Stellen Sie sicher, dass die App keine Informationen einfach nur über Farbe ver
 Zusätzliche Hinweise wie ein **[Symbol](controls/control-shapes-icons.md)** oder Textformate wie **[Kursiv](controls/properties-text.md)** und **[Unterstrichen](controls/properties-text.md)** können helfen, Bedeutungen zu vermitteln.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Weitere Informationen zu [Barrierefreiheitseigenschaften](controls/properties-accessibility.md) in PowerApps.
+Erfahren Sie mehr zu [Barrierefreiheitseigenschaften](controls/properties-accessibility.md) in PowerApps-Steuerelementen und zum [Verwenden der Barrierefreiheitsprüfung](accessibility-checker.md).

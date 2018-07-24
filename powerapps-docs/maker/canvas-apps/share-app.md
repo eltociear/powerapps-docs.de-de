@@ -1,95 +1,130 @@
 ---
 title: Freigeben einer App | Microsoft-Dokumentation
 description: Geben Sie Ihre App frei, indem Sie anderen Benutzern die Berechtigung erteilen, die App auszuführen oder zu ändern.
-documentationcenter: na
 author: AFTOwen
-manager: kfile
-editor: ''
-tags: ''
+manager: kvivek
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
-ms.component: canvas
-ms.date: 03/18/2018
+ms.custom: canvas
+ms.reviewer: ''
+ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: c87f0e644668e9b9804b001560402972fd3d4531
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 197eb5223c0945a7cb80d8b187aaf44c871e798c
+ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "32329132"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39137020"
 ---
 # <a name="share-an-app-in-powerapps"></a>Freigeben einer Apps in PowerApps
-Sie können mit PowerApps Apps erstellen, die genau auf die Anforderungen Ihres eigenen Unternehmens abgestimmt sind, aber die eigentliche Stärke von PowerApps liegt darin, dass Sie diese Apps für andere Personen freigeben können. In diesem Thema erfahren Sie, wie Sie Apps für bestimmte Benutzer oder Sicherheitsgruppen oder für Ihre gesamte Organisation freigeben.
 
-## <a name="specify-an-app"></a>Angeben einer App
-1. Melden Sie sich bei PowerApps an, und klicken oder tippen Sie dann am linken Bildschirmrand auf **Apps**.
+Nachdem Sie eine App erstellt haben, die eine geschäftliche Anforderung behandelt, geben Sie an, welche Benutzer in Ihrer Organisation die App ausführen dürfen und welche sie ändern oder sogar erneut freigeben dürfen. Geben Sie jeden Benutzer anhand seines Namens an, oder geben Sie eine Sicherheitsgruppe in Azure Active Directory an. Wenn jeder von Ihrer App profitieren würde, geben Sie an, dass Ihre gesamte Organisation diese ausführen darf.
+
+> [!IMPORTANT]
+> Damit eine freigegebene App wie erwartet funktionieren kann, müssen Sie auch die Berechtigungen für die Datenquelle oder Quellen, auf denen die App basiert, verwalten, z.B. [Common Data Service für Apps](#common-data-service-for-apps) oder [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
+
+## <a name="prerequisites"></a>Voraussetzungen
+
+Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) und dann veröffentlichen.
+
+- Geben Sie Ihrer App einen aussagekräftigen Namen und eine klare Beschreibung, damit Benutzer wissen, was die App bewirkt und sie so leicht in einer Liste finden können. Wählen Sie im Menü **Datei** in PowerApps Studio die **App-Einstellungen** aus, geben Sie einen Namen an, und tippen bzw. fügen Sie eine Beschreibung ein.
+
+- Wenn Sie Änderungen vornehmen, müssen Sie die App speichern und erneut veröffentlichen, wenn andere Personen diese Änderungen sehen sollen.
+
+## <a name="share-an-app"></a>Eine App freigeben
+
+1. [Melden Sie sich bei PowerApps](https://web.powerapps.com) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
     ![Anzeigen der App-Liste](./media/share-app/file-apps.png)
 
-1. Klicken oder tippen Sie für die App, die Sie freigeben möchten, auf die Auslassungspunkte (...), und klicken oder tippen Sie anschließend auf **Freigeben**.
+1. Wählen Sie für die App, die Sie freigeben möchten, die Auslassungspunkte (...) und anschließend **Freigeben** aus.
 
     ![Geöffneter Bildschirm „Freigeben“](./media/share-app/ellipsis-share.png)
 
-## <a name="share-an-app"></a>Eine App freigeben
-1. Geben Sie an, für welche Benutzer- oder Sicherheitsgruppen in Azure Active Directory Sie die App freigeben möchten und ob Sie diesen Personen eine E-Mail-Benachrichtigung senden möchten.
+1. Geben Sie an, für welche Benutzer oder Sicherheitsgruppen in Azure Active Directory Sie die App freigeben möchten.
 
-    Sie können die App ebenfalls für Ihre gesamte Organisation freigeben, sodass alle Mitglieder die App ausführen können. Diese können jedoch keine Änderungen vornehmen oder die App freigeben.
+    > [!NOTE]
+    > Sie können keine Apps mit einer Verteilergruppe in Ihrer Organisation oder mit Benutzern oder Gruppen außerhalb Ihrer Organisation teilen.
 
     ![Angeben von Benutzern](./media/share-app/share-list.png)
 
-1. Geben Sie die Berechtigungsebenen an, und klicken oder tippen Sie dann auf **Speichern**.
+    Sie können die App ebenfalls für Ihre gesamte Organisation freigeben, sodass alle Mitglieder die App ausführen können. Diese können jedoch keine Änderungen vornehmen oder die App freigeben.
 
-    * **Verwenden**: Benutzer oder Gruppen können die App ausführen, aber nicht freigeben.
-    * **Kann bearbeiten:** Benutzer und Gruppen können die App ausführen, anpassen und die benutzerdefinierte Version für andere Benutzer freigeben.
+1. Optional: Damit Benutzer Ihre App leichter finden können, aktivieren Sie das Kontrollkästchen zum Senden einer Einladung per E-Mail.
+
+    Die Einladung enthält einen Link, mit dem Benutzer die App ausführen können.
+
+    - Wenn ein Benutzer auf einem Desktopcomputer auf den Link klickt, wird die App in [Dynamics 365](http://home.dynamics.com) veröffentlicht.
+    - Wenn der Benutzer auf einem Mobilgerät auf den Link tippt, wird die App in PowerApps Mobile geöffnet.
+
+    Wenn Sie Benutzern die Berechtigung zum Ändern der App erteilen, enthält die Benachrichtigung auch einen separaten Link, um die App zur Bearbeitung in PowerApps Studio zu öffnen.
+
+    Unabhängig davon, ob Sie eine Einladung senden oder nicht, können Benutzer die App über AppSource auf [Dynamics 365](http://home.dynamics.com) ausführen. Benutzer, die über eine **Kann bearbeiten**-Berechtigung verfügen, können die App auch innerhalb von [PowerApps](http://web.powerapps.com) bearbeiten.
+
+1. Geben Sie die Berechtigung für jeden Benutzer bzw. jede Sicherheitsgruppe an, und klicken Sie dann auf **Speichern**.
+
+    - **Verwenden**: Benutzer können die App ausführen, aber nicht freigeben.
+    - **Kann bearbeiten**: Benutzer können die App ausführen, ändern, und die benutzerdefinierte Version für andere Benutzer freigeben.
 
         ![Berechtigungen angeben](./media/share-app/edit-use.png)
 
-Um die Berechtigungen für einen Benutzer oder für Gruppen zu ändern, wiederholen Sie Schritt 1 dieser Prozedur, und geben Sie anschließend eine andere Option in der Liste der Berechtigungen für diesen Benutzer oder diese Gruppe an. Um einen Benutzer oder einer Gruppe alle Berechtigungen zu entziehen, klicken oder tippen Sie auf das Symbol **x** für diesen Benutzer oder diese Gruppe.
+    Klicken Sie zum Ändern der Berechtigungen für einen Benutzer oder eine Sicherheitsgruppe neben der Berechtigung, über die der Benutzer oder die Gruppe bereits verfügt, auf den Pfeil nach unten, und geben Sie dann eine andere Berechtigung ein.
 
-### <a name="send-email-notification"></a>Senden einer E-Mail-Benachrichtigung
-Wenn Sie eine App freigeben, können Sie auswählen, ob Benutzer oder Sicherheitsgruppen per E-Mail benachrichtigt werden sollen. Wenn Sie diese Option auswählen, wird den Benutzern oder Sicherheitsgruppen eine E-Mail-Benachrichtigung gesendet. Die E-Mail enthält einen Link für den Zugriff auf die App. Gegebenenfalls werden Benutzer dazu aufgefordert, sich für PowerApps zu registrieren.
+    Wählen Sie das Symbol **x** für einen Benutzer oder für eine Gruppe aus, um einem Benutzer oder einer Gruppe alle Berechtigungen zu entziehen.
 
-Die Benachrichtigung enthält einen Link, der von der von Ihnen zugewiesenen Berechtigung abhängt:
+## <a name="security-group-considerations"></a>Überlegungen zu Sicherheitsgruppen
 
-- Wenn Sie die App mit der Berechtigung **Verwenden** freigeben, enthält die E-Mail den Link zum Ausführen der App.
-- Wenn Sie die App mit der Berechtigung **Kann bearbeiten** freigeben, enthält die E-Mail den Link zum Ausführen oder Bearbeiten der App.
+- Wenn Sie eine App für eine Sicherheitsgruppe, bestehende Mitglieder dieser Gruppe und jeden freigeben, der dieser Gruppe beitritt, verfügen alle über die von Ihnen angegebenen Berechtigungen für diese Gruppe. Jeder, der die Gruppe verlässt, verliert diese Berechtigung, es sei denn, die Person gehört noch zu einer anderen Gruppe, die über Zugriff verfügt, oder Sie verleihen der Person die Berechtigung als Einzelperson.
+- Jedes Mitglied einer Sicherheitsgruppe besitzt dieselbe Berechtigung für eine App wie die Gruppe. Sie können allerdings für ein Mitglied oder mehrere Mitglieder dieser Gruppe tiefgreifendere Berechtigungen angeben, um diesen Personen besseren Zugriff zu gewähren. Sie können beispielsweise „Sicherheitsgruppe A“ die Berechtigung **Verwenden** erteilen. Sie können jedoch auch „Benutzer B“, der zu dieser Gruppe gehört, die Berechtigung **Kann bearbeiten** erteilen. Jedes Mitglied der Sicherheitsgruppe kann die App ausführen, aber nur Benutzer B kann diese bearbeiten. Wenn Sie „Sicherheitsgruppe A“ die Berechtigung **Kann bearbeiten** erteilen, aber „Benutzer B“ nur die Berechtigung **Verwenden**, kann der Benutzer die App trotzdem bearbeiten.
 
-### <a name="how-do-my-users-see-the-app-i-shared"></a>Wie wird meinen Benutzern die freigegebene App angezeigt?
-Nachdem Sie eine App für mindestens einen Benutzer oder eine Sicherheitsgruppe freigegeben haben, legt die Freigabeberechtigung fest, wie Benutzern die freigegebene App angezeigt wird.
+## <a name="manage-entity-permissions"></a>Verwalten von Entitätsberechtigungen
 
-##### <a name="if-you-shared-an-app-with-can-use-permission"></a>Wenn Sie eine App mit der Berechtigung *Can use* (Verwenden) freigegeben haben
-Die Personen, für die Sie die App freigegeben haben, erhalten eine E-Mail-Benachrichtigung, wenn Sie dieses Kontrollkästchen auf dem Bildschirm für die App-Freigabe aktiviert haben. In der E-Mail können die Benutzer auf einen Link klicken oder tippen, um die App in [Dynamics 365](http://home.dynamics.com) auszuführen. In Kürze werden universelle Links unterstützt. Dies bedeutet, dass die App in PowerApps Studio oder PowerApps Mobile geöffnet wird, wenn diese Anwendungen installiert sind.
+### <a name="common-data-service-for-apps"></a>Common Data Service für Apps
 
-Benutzer können die App auch in AppSource in [Dynamics 365](http://home.dynamics.com) ermitteln (wenn Sie beispielsweise keine E-Mail gesendet haben). [Erfahren Sie mehr darüber](../../user/app-source.md), wie Benutzer Apps über AppSource abrufen können.
+Wenn Sie eine App auf Grundlage von Common Data Service für Apps erstellen, müssen Sie auch sicherstellen, dass die Benutzer, die diese App ausführen werden, über die entsprechenden Berechtigungen für die Entität bzw. Entitäten verfügen, auf denen die App basiert. Konkret müssen Benutzer einer Sicherheitsrolle angehören, die Aufgaben wie Erstellen, Lesen, Schreiben und/oder Löschen relevanter Datensätze ausführen kann. Wenn Sie über die Berechtigungen **Systemadministrator** oder **Systemanpasser** für die Datenbank in dieser Umgebung verfügen, können Sie eine benutzerdefinierte Rolle erstellen und Benutzer dieser hinzuzufügen.
 
-##### <a name="if-you-shared-an-app-with-can-edit-permission"></a>Wenn Sie eine App mit der Berechtigung *Can edit* (Bearbeiten) freigegeben haben
-Die Personen, für die Sie die App freigegeben haben, erhalten eine E-Mail-Benachrichtigung, wenn Sie dieses Kontrollkästchen auf dem Bildschirm für die App-Freigabe aktiviert haben. In der E-Mail können sie auf einen Link klicken oder tippen, der die App unter Verwendung von PowerApps Studio direkt für die Bearbeitung öffnet. Es ist auch ein Link zum Ausführen der App in [Dynamics 365](http://home.dynamics.com) vorhanden. In Kürze werden universelle Links unterstützt. Dies bedeutet, dass die App in PowerApps Studio oder PowerApps Mobile geöffnet wird, wenn diese Anwendungen installiert sind.
+#### <a name="create-a-security-role"></a>Sicherheitsrolle erstellen
 
-Benutzer können die App auch unter [powerapps.com](http://web.powerapps.com) suchen (wenn Sie beispielsweise keine E-Mail gesendet haben). Dies ist der Startpunkt für App-Ersteller, um alle Apps zu suchen, die sie erstellt haben oder die mit der Berechtigung **Mitwirkender** für sie freigegeben wurden. Über [Dynamics 365](http://home.dynamics.com) hingegen können Benutzer Apps aus PowerApps oder andere Geschäftsanwendungen schnell ausführen.
+1. [Melden Sie sich in PowerApps an](https://web.powerapps.com), und stellen Sie sicher, dass Sie sich in derselben Umgebung wie die App befinden, die Sie freigeben möchten.
 
-## <a name="other-things-to-know"></a>Weitere wichtige Informationen
-* Um eine App freizugeben, müssen Sie sie nicht lokal, sondern in der Cloud speichern.
-* Bevor Sie eine App freigeben, sollten Sie überlegen, für welche Benutzer und Sicherheitsgruppen Sie die App freigeben möchten und welche Rolle konfiguriert werden soll: **Kann bearbeiten** oder **Verwenden**. Wenn Sie eine App für eine Gruppe, bestehende Mitglieder dieser Gruppe und jeden freigeben, der dieser Gruppe beitritt, verfügen alle über die von Ihnen angegebenen Berechtigungen. Jeder, der die Gruppe verlässt, verliert diese Berechtigungen, es sei denn, diese Personen sind Mitglieder einer anderen Gruppe, die über Zugriff verfügt, oder Sie gewähren ihnen explizit Berechtigungen.
-* Jedes Mitglied einer Gruppe besitzt dieselben Berechtigungen für eine App wie die Gruppe allgemein. Sie können allerdings für ein Mitglied oder mehrere Mitglieder dieser Gruppe tiefgreifendere Berechtigungen angeben, um diesen Personen besseren Zugriff zu gewähren. Sie können beispielsweise „Sicherheitsgruppe A“ die Berechtigung **Verwenden** erteilen. Sie können jedoch auch „Benutzer B“, der zu dieser Gruppe gehört, die Berechtigung **Kann bearbeiten** erteilen. Jedes Mitglied der Sicherheitsgruppe kann die App ausführen, aber nur Benutzer B kann diese bearbeiten. Wenn Sie „Sicherheitsgruppe A“ die Berechtigung **Kann bearbeiten** erteilen, aber „Benutzer B“ nur die Berechtigung **Verwenden**, kann der Benutzer die App trotzdem bearbeiten.
-* Sie können eine App für Ihre gesamte Organisation freigeben, aber Sie sollten vorher sorgfältig prüfen, ob alle Benutzer Zugriff auf Ihre App benötigen.
-* Beachten Sie, dass alle Änderungen, die Sie an einer freigegebenen App vornehmen, beim Speichern der Änderungen sofort an die Personen weitergegeben werden, für die die App freigegeben wurde. Wenn Sie die App verbessern, profitieren alle Benutzer davon. Wenn Sie die Ausführung einer App stören, werden alle Benutzer beeinträchtigt.
-* Geben Sie vor der Freigabe einen aussagekräftigen Namen und eine Beschreibung für die App an. So können die Benutzer erkennen, um was für eine App es sich handelt, und sie in einer Liste auswählen. Klicken oder tippen Sie im Menü **Datei** in PowerApps Studio auf **App-Einstellungen**, und geben Sie eine Beschreibung ein.
+1. Wählen Sie in der rechten oberen Ecke das Zahnradsymbol und dann **Erweiterte Anpassungen** aus.
 
-### <a name="app-sharing-and-the-resources-the-app-uses"></a>App-Freigabe und von der App verwendete Ressourcen
-Die meisten Apps stützen sich zumindest auf einen dieser Ressourcentypen:
+    ![Öffnen des Bereichs „Erweiterte Anpassungen“](media/share-app/advanced-customizations.png)
 
-* eine Verbindung mit einer Datenquelle
-* ein lokales Datengateway
-* ein benutzerdefinierter Connector
-* eine Excel-Arbeitsmappe oder einen anderen Dienst
-* einen Flow
+1. Klicken Sie auf die Verknüpfung **Sicherheitsrollen**.
 
-Benutzer und Mitwirkende benötigen Berechtigungen für alle Datenverbindungen und Gateways, die von einer App verwendet werden. Einige Berechtigungen werden implizit in der App gewährt, andere müssen explizit zugewiesen werden. Weitere Informationen finden Sie unter [Freigeben von App-Ressourcen](share-app-resources.md).
+    ![Öffnen von Sicherheitsrollen](media/share-app/security-roles.png)
 
-Wenn Sie eine App freigeben, die eine frühere Version von Common Data Service verwendet, müssen Sie die Laufzeitberechtigung für Common Data Service separat erteilen. Wenn Sie hierzu nicht berechtigt sind, wenden Sie sich an Ihren Umgebungsadministrator. Wenn Sie eine App freigeben, die die aktuelle Version von Common Data Service verwendet, müssen Sie eine benutzerdefinierte Rolle erstellen und dieser Benutzer zuweisen. [Erfahren Sie mehr](../../administrator/database-security.md) über die Sicherheit für Common Data Service.
+1. Wählen Sie unter **Alle Rollen** **Neu** aus, tippen oder geben Sie dann einen Namen für die Rolle, die Sie erstellen, ein.
 
-### <a name="what-isnt-supported"></a>Was wird nicht unterstützt?
-* Sie können eine Freigabe für eine Sicherheitsgruppe durchführen, nicht jedoch für eine Verteilergruppe.
-* Sie können Apps für Benutzer in Ihrer Organisation freigeben, nicht jedoch für Benutzer in einem anderen Mandanten.
-* Sie können eine App erneut freigeben, wenn Sie über die Berechtigung **Kann bearbeiten** (nicht **Verwenden**) für diese App verfügen.
+    ![Sicherheitsgruppe erstellen](media/share-app/new-role.png)
+
+1. Wählen Sie mindestens eine Registerkarte aus, um die Entität bzw. Entitäten zu suchen, die von Ihrer App verwendet werden. Wählen Sie anschließend die Berechtigungen aus, denen Sie die Sicherheitsrolle zuweisen möchten.
+
+    Diese Grafik stellt beispielsweise dar, dass eine Sicherheitsrolle Datensätze in der Entität „Account“, die auf der Registerkarte **Core records** (Kerndatensätze) angezeigt wird, erstellen, lesen und schreiben kann.
+
+    ![Berechtigungen angeben](media/share-app/grant-access.png)
+
+1. Klicken Sie auf **Speichern und schließen**.
+
+#### <a name="assign-a-user-to-a-role"></a>Benutzer einer Rolle zuweisen
+
+1. Öffnen Sie wie im vorhergehend beschriebenen Schritt den Bereich **Erweiterte Anpassungen**, und klicken Sie dann auf die Verknüpfung **Benutzer**.
+
+    ![Verknüpfung „Benutzer“](media/share-app/open-users.png)
+
+1. Tippen oder geben Sie in der oberen rechten Ecke den Namen des Benutzers ein, dem die Rolle zugewiesen werden soll, und klicken Sie dann auf das Suchsymbol.
+
+    ![Nach Benutzern suchen](media/share-app/search-users.png)
+
+1. Zeigen Sie in den Suchergebnissen auf das gewünschte Ergebnis, und aktivieren Sie dann das Kontrollkästchen, das angezeigt wird.
+
+1. Wählen Sie oben im Banner **Rollen verwalten** aus.
+
+1. Aktivieren Sie im Dialogfeld, das daraufhin angezeigt wird, die Kontrollkästchen für **Common Data Service-Benutzer** sowie für die Rolle, die Benutzer für Ihre App benötigen. Klicken Sie anschließend auf **OK**.
+
+    ![Benutzer einer Rolle zuweisen](media/share-app/assign-users.png)
+
+### <a name="common-data-service-previous-version"></a>Common Data Service (vorherige Version)
+
+Wenn Sie eine App freigeben, die auf einer früheren Version von Common Data Service basiert, müssen Sie die Laufzeitberechtigung für den Dienst separat erteilen. Wenn Sie hierzu nicht berechtigt sind, wenden Sie sich an Ihren Umgebungsadministrator.
