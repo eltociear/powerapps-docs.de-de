@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: c395a548d0a920a21e8d4128f75a3b01deb9de3a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9d681cc889a3f39fb0785ab0cba86e37ebe185b3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019363"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195885"
 ---
 # <a name="start-a-flow-in-an-app"></a>Starten eines Flows in einer App
 Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
@@ -25,7 +25,7 @@ Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufga
 * Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Erstellen eines Flows
-1. Melden Sie sich auf [powerapps.com](http://web.powerapps.com) an, und wählen Sie dann auf der linken Navigationsleiste **Flows** aus.
+1. Melden Sie sich auf [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann auf der linken Navigationsleiste **Flows** aus.
 
 2. Wählen Sie auf der **Meine Flows**-Seite **Ohne Vorlage neu erstellen** aus.
 

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/08/2018
 ms.author: anneta
-ms.openlocfilehash: 796d23be4c8b69a6f901b4338bda0000f8afb452
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 25a06525fba038dda2deebb333f53583301540f7
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023089"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195155"
 ---
 # <a name="create-or-edit-apps-in-powerapps-studio-for-web"></a>Erstellen und Bearbeiten von Apps in PowerApps Studio für Web
 Erstellen und Bearbeiten Sie Apps in PowerApps Studio für Web, das unter Windows oder anderen Plattformen in einem Browserfenster geöffnet wird.
@@ -34,7 +34,7 @@ PowerApps Studio für Web wird in einer neuen Registerkarte in Ihrem Browser ge�
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 1. **Erstellen einer Verbindung**
 
-    Zum [Erstellen einer Verbindung](add-manage-connections.md) mit einer Datenquelle, die eine Service-Authentifizierung erfordert, verwenden Sie [powerapps.com](https://web.powerapps.com) und [fügen Sie die Verbindung](add-data-connection.md) zu einer App in PowerApps Studio für Web hinzu.
+    Zum [Erstellen einer Verbindung](add-manage-connections.md) mit einer Datenquelle, die eine Service-Authentifizierung erfordert, verwenden Sie [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) und [fügen Sie die Verbindung](add-data-connection.md) zu einer App in PowerApps Studio für Web hinzu.
 2. **Lokales Bearbeiten und Speichern einer App**
 
     Verwenden Sie für optimale Ergebnisse PowerApps Studio für Windows, um Apps lokal zu bearbeiten und zu speichern. In einem Webbrowser können Sie keine Änderungen an einer lokalen App speichern, oder Sie müssen eine neue Datei speichern, anstatt die Datei, die Sie geöffnet haben, zu ersetzen.

@@ -7,12 +7,12 @@ ms.component: cds
 ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 45a341d28b4138ce03ce50d7325f9daa0f159d1a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: a7fed26dafcf0b1d73ae6ba362964de5e9fd1ad5
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897430"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218715"
 ---
 # <a name="quickstart-create-a-custom-entity"></a>Schnellstart: Erstellen einer benutzerdefinierten Entität
 Mit einer *Entität* werden in PowerApps die Informationen definiert, die Sie in Form von Datensätzen nachverfolgen möchten. Diese enthalten üblicherweise Eigenschaften wie den Firmennamen, den Standort, die Produkte, die E-Mail-Adresse und die Telefonnummer. Sie können diese Daten dann abrufen, indem Sie eine App entwickeln, die auf die Entität verweist. PowerApps stellt vorkonfigurierte Standardentitäten zur Verfügung, die für typische Szenarios in einer Organisation (beispielsweise das Nachverfolgen von Terminen) verwendet werden können. In einigen Fällen ist es aber möglicherweise erforderlich, benutzerdefinierte Entitäten zu erstellen, mit denen organisationsspezifische Daten gespeichert werden können.
@@ -25,7 +25,7 @@ Für diesen Schnellstart sind die folgenden Elemente erforderlich:
 * Entweder die Rolle „System Adminsitrator“ (Systemadministrator) oder „System Customizer“ (Systemanpasser) innerhalb von Common Data Service für Apps.
 
 ## <a name="sign-in-to-powerapps"></a>Anmelden bei PowerApps
-Melden Sie sich bei PowerApps unter [https://web.powerapps.com](https://web.powerapps.com) an.
+Melden Sie sich bei PowerApps unter [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 ## <a name="create-an-entity"></a>Erstellen einer Entität
 1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten**, um das Element zu erweitern, und dann auf **Entitäten**.

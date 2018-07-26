@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: d74fdd20db63f6d617db48e09319a84775553f9f
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 8019068155c88465f0f4202807fe763f2e4787b6
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017132"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195517"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Verbinden mit SharePoint aus PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -49,7 +49,7 @@ Spalten mit Leerzeichen können von PowerApps gelesen werden, doch die Leerzeich
 ## <a name="prerequisites"></a>Voraussetzungen
 1. [Registrieren Sie sich](../../signup-for-powerapps.md) bei PowerApps.
 
-1. [Melden Sie sich bei PowerApps an](http://web.powerapps.com), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung verwendet haben.
+1. [Melden Sie sich bei PowerApps an](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung verwendet haben.
 
 1. Klicken Sie am linken Rand auf **Apps** und dann auf dem Banner auf **App erstellen**.
 

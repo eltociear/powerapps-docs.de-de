@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 05/01/2016
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 533234c7a0ca3cc69e30eb077ff0bd39d1d50a11
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a187e50bd4d1819d1579c6db219588e3582f5c25
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017086"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195678"
 ---
 # <a name="powerapps-community-plan-a-free-development-environment-for-individual-use"></a>PowerApps-Communityplan: eine kostenlose Entwicklungsumgebung zur individuellen Verwendung
 Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und den Common Data Service erfahren möchten, ist der PowerApps-Communityplan der richtige Plan für Sie. Mit dem PowerApps-Communityplan erhalten Sie eine kostenlose Entwicklungsumgebung für die individuelle Verwendung, in der Sie folgende Möglichkeiten haben:
@@ -33,7 +33,7 @@ Jeder Benutzer mit einem [Geschäfts-, Schul- oder Unikonto](signup-for-powerapp
 ## <a name="where-can-i-sign-up-for-the-powerapps-community-plan"></a>Wo kann ich mich für den PowerApps-Communityplan registrieren?
 Registrieren Sie sich auf der [PowerApps-Communityplan-Website](https://powerapps.microsoft.com/communityplan). Wenn Sie bereits Benutzer von PowerApps mit Office 365 oder Dynamics 365 sind, können Sie darüber hinaus [eine Umgebung zur individuellen Nutzung erstellen](https://web.powerapps.com/community/signup).
 
-Nach der Registrierung für den Communityplan werden Sie auf die [PowerApps-Website](https://web.powerapps.com) weitergeleitet und gelangen so zu Ihrer individuellen Umgebung. Die Umgebung wird mit Ihrem Namen benannt, beispielsweise „Erika Mustermanns Umgebung“. Wenn bereits eine Umgebung mit diesem Namen vorhanden ist, wird die individuelle Umgebung mit dem Namen „Erika Mustermanns (1) Umgebung“ versehen.  In der folgenden Abbildung können Sie sehen, wie die Umgebung dargestellt wird.
+Nach der Registrierung für den Communityplan werden Sie auf die [PowerApps-Website](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) weitergeleitet und gelangen so zu Ihrer individuellen Umgebung. Die Umgebung wird mit Ihrem Namen benannt, beispielsweise „Erika Mustermanns Umgebung“. Wenn bereits eine Umgebung mit diesem Namen vorhanden ist, wird die individuelle Umgebung mit dem Namen „Erika Mustermanns (1) Umgebung“ versehen.  In der folgenden Abbildung können Sie sehen, wie die Umgebung dargestellt wird.
 
 ![Individuelle Umgebung für Communityplan](./media/dev-community-plan/individual-environment.png)
 

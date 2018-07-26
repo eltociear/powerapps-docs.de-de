@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: 60d1843e48a1dc1d310d877bcba67460da557993
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: c5da71198f33661766d8fc214816c2e714736360
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168295"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218761"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Hinzufügen von Daten zu einer Entität in Common Data Service für Apps mithilfe von Power Query
 In diesem Verfahren erstellen Sie eine Entität in [Common Data Service für Apps](data-platform-intro.md) und füllen diese mithilfe von Power Query mit Daten aus einem OData-Feed auf. Sie können die gleichen Techniken verwenden, um Daten unter anderem aus diesen lokalen Quellen und Onlinequellen zu integrieren:
@@ -37,7 +37,7 @@ Sie müssen in eine [Umgebung](../canvas-apps/working-with-environments.md) wech
 
 ## <a name="specify-the-source-data"></a>Angeben der Quelldaten
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und klicken oder tippen Sie am linken Rand auf den Pfeil nach unten für **Daten**.
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und klicken oder tippen Sie am linken Rand auf den Pfeil nach unten für **Daten**.
 
     ![PowerApps-Startseite](./media/data-platform-cds-newentity-pq/sign-in.png)
 

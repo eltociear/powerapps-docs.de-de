@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
 ms.author: sharik
-ms.openlocfilehash: b1e9f514973313a1028aa3b1958bf8e01ff2c167
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b5678437ea1e604ce2932307d897f280f4633fc0
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023779"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194936"
 ---
 # <a name="edit-an-app-in-powerapps"></a>Bearbeiten einer App in PowerApps
 Sie können alle Apps bearbeiten, die Sie erstellt haben, deren Besitzer Sie sind oder für die Sie die Berechtigung **Bearbeiten** haben. Sie können eine App in PowerApps Studio bearbeiten. Wenn Sie versuchen, eine App zu bearbeiten, die an anderer Stelle zur Bearbeitung geöffnet ist, gibt eine Meldung Aufschluss darüber, ob Sie oder ein anderer Benutzer sie bereits geöffnet hat.
 
 ## <a name="verify-your-permissions"></a>Überprüfen Ihrer Berechtigungen
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Apps**.
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Apps**.
    
     ![Option „Apps“ im Menü „Datei“](./media/edit-app/file-apps.png)
 

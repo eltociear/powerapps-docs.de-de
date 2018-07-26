@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/28/2016
 ms.author: litran
-ms.openlocfilehash: 400df9944b21788e08b0a55e3e0a148f2eccb972
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017339"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195333"
 ---
 # <a name="introduction-to-powerappscom"></a>Einführung in powerapps.com
-Das PowerApps-Team stellt [powerapps.com](http://web.powerapps.com) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:
+Das PowerApps-Team stellt [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:
 
 * den Header
 * die Startseite
@@ -45,7 +45,7 @@ Neben den Einstellungen befindet sich ein Fragezeichensymbol, das Sie zum Hilfeb
 ![Header Hilfe](./media/intro-maker-portal/help_items2.png)
 
 ## <a name="homepage"></a>Die Startseite
-Nach der Anmeldung auf [powerapps.com](http://web.powerapps.com) befinden Sie sich standardmäßig auf der Startseite. Wir haben den Aufbau der Startseite angepasst, sodass Sie schnell mit der Arbeit anfangen können – egal, ob Sie eine App erstellen oder Common Data Service erkunden möchten.
+Nach der Anmeldung auf [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) befinden Sie sich standardmäßig auf der Startseite. Wir haben den Aufbau der Startseite angepasst, sodass Sie schnell mit der Arbeit anfangen können – egal, ob Sie eine App erstellen oder Common Data Service erkunden möchten.
 
 Wenn Sie sich schon einmal in PowerApps angemeldet haben und einige Apps erstellt bzw. ausgeführt haben, ist der erste Bereich auf Ihrer Startseite die Liste **Recent apps** (Zuletzt verwendete Apps). Sie sind nach dem Datum Ihres letzten Gebrauchs sortiert.
 
@@ -96,7 +96,7 @@ Unterhalb des Banners **Use the Microsoft Common Data Services** (Microsoft Data
     ![Verbundene Beispiel-Apps](./media/intro-maker-portal/connectedsampleapps2.png)
 
 ## <a name="new-apps-page"></a>Die Seite "New apps" (Neue Apps)
-Sie können über die linke Navigationsleiste auf [powerapps.com](http://web.powerapps.com) auf die **Apps**-Seite zugreifen.
+Sie können über die linke Navigationsleiste auf [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) auf die **Apps**-Seite zugreifen.
 
 ![Linke Navigationsleiste](./media/intro-maker-portal/leftnav2.png)
 

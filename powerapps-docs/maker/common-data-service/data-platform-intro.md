@@ -8,12 +8,12 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 586750edf476a9145e2822522cc0b4b5ad729539
-ms.sourcegitcommit: 7296649d03ebc33dc5ddb9e7c551869dc781f154
+ms.openlocfilehash: 6a8bc8f24ce0f772f5c98852838095f233c4317f
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250821"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218071"
 ---
 # <a name="what-is-common-data-service-for-apps"></a>Was ist Common Data Service für Apps?
 Mit CDS für Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendung verwendet werden. Die Daten in CDS für Apps werden in mehreren Standardentitäten gespeichert. Eine *Entität* ist eine Gruppe von Datensätzen, die ähnlich wie eine Tabelle in einer Datenbank zum Speichern von Daten verwendet wird. CDS für Apps bieten einen grundlegenden Satz von Standardentitäten, die gängige Szenarien abdecken. Sie können aber auch benutzerdefinierte Entitäten erstellen, die auf Ihre Organisation zugeschnitten sind, und diese mithilfe von Power Query mit Daten auffüllen. App-Entwickler können dann mit PowerApps umfangreiche Anwendungen mit diesen Daten erstellen.
@@ -70,7 +70,7 @@ In CDS für Apps können die Entitäten eine umfangreichere serverseitige Logik 
 * Durch **Geschäftslogiken mit Code** werden erweiterte Entwicklerszenarios unterstützt, um die Anwendung direkt über den Code zu erweitern. Weitere Informationen finden Sie unter [Anwenden von Geschäftslogik mit Code](../../developer/common-data-service/apply-business-logic-with-code.md).
 
 ## <a name="developer-capabilities"></a>Funktionen für Entwickler
-Zusätzlich zu den Features, die über das [PowerApps-Portal](https://web.powerapps.com) zur Verfügung gestellt werden, enthält CDS für Apps ebenfalls Features für Entwickler, mit denen programmgesteuert auf Metadaten und Daten zugegriffen werden kann, um Entitäten und Geschäftslogiken zu erstellen. Außerdem wird die Interaktion mit den Daten ermöglicht. Weitere Informationen finden Sie unter [Übersicht für Entwickler: Common Data Service für Apps](../../developer/common-data-service/overview.md).
+Zusätzlich zu den Features, die über das [PowerApps-Portal](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) zur Verfügung gestellt werden, enthält CDS für Apps ebenfalls Features für Entwickler, mit denen programmgesteuert auf Metadaten und Daten zugegriffen werden kann, um Entitäten und Geschäftslogiken zu erstellen. Außerdem wird die Interaktion mit den Daten ermöglicht. Weitere Informationen finden Sie unter [Übersicht für Entwickler: Common Data Service für Apps](../../developer/common-data-service/overview.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Einstieg in CDS für Apps:

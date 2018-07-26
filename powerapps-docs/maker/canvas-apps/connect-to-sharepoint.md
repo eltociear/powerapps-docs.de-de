@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 1b9ff639e053218c74515be574f92146fc8ced36
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 0e0b98277548d188071bcd29b9e3168de5818321
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020513"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195862"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>Herstellen einer Verbindung mit SharePoint aus PowerApps
 Erstellen Sie eine Verbindung mit SharePoint Online oder lokalem SharePoint, sodass Sie eine App automatisch generieren oder von Grund auf neu erstellen können.
@@ -26,7 +26,7 @@ Zum Zeitpunkt dieses Artikels unterstützt PowerApps benutzerdefinierte Listen, 
 ## <a name="specify-a-sharepoint-connection"></a>Angeben einer SharePoint-Verbindung
 1. Wenn Sie noch nicht angemeldet sind, [melden Sie sich bei PowerApps an](../signup-for-powerapps.md).
 
-2. Melden Sie sich unter [powerapps.com](https://web.powerapps.com) mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
+2. Melden Sie sich unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 
 3. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie anschließend auf **Verbindungen**.
 

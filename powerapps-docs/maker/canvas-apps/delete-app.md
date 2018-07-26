@@ -9,18 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: jamesol
-ms.openlocfilehash: df7c43a0044ac7b56666f06eb3ebf773dcb16b67
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: c8d5d5f5fbb9453ad9afeffda8383be0dae4eebc
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023618"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194941"
 ---
 # <a name="delete-an-app-from-powerapps"></a>Löschen einer App aus PowerApps
 In diesem Artikel wird gezeigt, wie Sie eine App aus Ihrem PowerApps-Konto und Konten von anderen löschen, mit denen die App geteilt wurde.
 
 ## <a name="delete-an-app-from-your-account"></a>Löschen einer App aus Ihrem Konto
-1. Öffnen Sie [powerapps.com](https://web.powerapps.com), und klicken oder tippen Sie in der linken Navigationsleiste auf **Apps**.
+1. Öffnen Sie [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken oder tippen Sie in der linken Navigationsleiste auf **Apps**.
    
     ![](./media/delete-app/file-apps.png)
 2. (optional) Filtern Sie in der oberen linken Ecke die Liste der Apps, um nur die Apps anzuzeigen, die Sie besitzen oder zu denen Sie beitragen.

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: 197eb5223c0945a7cb80d8b187aaf44c871e798c
-ms.sourcegitcommit: 79a58f1b6880cbc512b64cde71a4d532cebe5bed
+ms.openlocfilehash: 9c4bdc6e56f84b6724fcbe44cfe1f3e4c065edb3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39137020"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195310"
 ---
 # <a name="share-an-app-in-powerapps"></a>Freigeben einer Apps in PowerApps
 
@@ -33,7 +33,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
 ## <a name="share-an-app"></a>Eine App freigeben
 
-1. [Melden Sie sich bei PowerApps](https://web.powerapps.com) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
+1. [Melden Sie sich bei PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
     ![Anzeigen der App-Liste](./media/share-app/file-apps.png)
 
@@ -59,7 +59,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
     Wenn Sie Benutzern die Berechtigung zum Ändern der App erteilen, enthält die Benachrichtigung auch einen separaten Link, um die App zur Bearbeitung in PowerApps Studio zu öffnen.
 
-    Unabhängig davon, ob Sie eine Einladung senden oder nicht, können Benutzer die App über AppSource auf [Dynamics 365](http://home.dynamics.com) ausführen. Benutzer, die über eine **Kann bearbeiten**-Berechtigung verfügen, können die App auch innerhalb von [PowerApps](http://web.powerapps.com) bearbeiten.
+    Unabhängig davon, ob Sie eine Einladung senden oder nicht, können Benutzer die App über AppSource auf [Dynamics 365](http://home.dynamics.com) ausführen. Benutzer, die über eine **Kann bearbeiten**-Berechtigung verfügen, können die App auch innerhalb von [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bearbeiten.
 
 1. Geben Sie die Berechtigung für jeden Benutzer bzw. jede Sicherheitsgruppe an, und klicken Sie dann auf **Speichern**.
 
@@ -85,7 +85,7 @@ Wenn Sie eine App auf Grundlage von Common Data Service für Apps erstellen, mü
 
 #### <a name="create-a-security-role"></a>Sicherheitsrolle erstellen
 
-1. [Melden Sie sich in PowerApps an](https://web.powerapps.com), und stellen Sie sicher, dass Sie sich in derselben Umgebung wie die App befinden, die Sie freigeben möchten.
+1. [Melden Sie sich in PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und stellen Sie sicher, dass Sie sich in derselben Umgebung wie die App befinden, die Sie freigeben möchten.
 
 1. Wählen Sie in der rechten oberen Ecke das Zahnradsymbol und dann **Erweiterte Anpassungen** aus.
 

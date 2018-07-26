@@ -9,12 +9,12 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 2a393bb2ebedde2a08f1ed1534d815e64325077b
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094746"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218048"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps
 
@@ -52,7 +52,7 @@ In diesem Artikel werden die folgenden Aktionen besprochen:
 
 CDS für Apps und die vorherige Version von CDS unterscheiden sich bei der Interaktion mit personenbezogenen Daten.
 
-Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com) anmelden und die folgenden Schritte durchführen:
+Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden und die folgenden Schritte durchführen:
 
 1. Wählen Sie aus der Dropdownliste **Umgebung** eine Umgebung aus.
 2. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
@@ -308,7 +308,7 @@ Sie können personenbezogene Benutzerdaten der vorherigen Version von CDS in den
 
 |Ressourcen- | Zweck | Websitezugriff |  Programmatischer Zugriff
 | --- | --- | --- | ---
-|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com) |      Nein
+|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    Nein
 
 #### <a name="entity-records"></a>Entitätsdatensätze
 Personenbezogene Daten von Einzelpersonen können in jeder Geschäftseinheit gespeichert werden.

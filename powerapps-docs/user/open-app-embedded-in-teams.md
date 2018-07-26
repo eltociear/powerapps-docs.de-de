@@ -11,12 +11,12 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: 07543d1724ff2272dfa4e1902d2581fa5034360a
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+ms.openlocfilehash: a5adb035fdde271ffe07cb6d0a46f332ae55c43f
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925683"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218370"
 ---
 # <a name="quickstart-add-an-app-to-microsoft-teams"></a>Schnellstart: Hinzufügen einer App zu Microsoft Teams
 
@@ -32,7 +32,7 @@ Sie benötigen für diesen Schnellstart ein [Office 365-Abonnement](https://sign
 
 ## <a name="sign-in-to-powerapps"></a>Anmelden bei PowerApps
 
-Melden Sie sich unter [https://web.powerapps.com](https://web.powerapps.com) in PowerApps an.
+Melden Sie sich unter [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) in PowerApps an.
 
 ## <a name="add-an-app"></a>Hinzufügen einer App
 

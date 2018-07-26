@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: matp
 ms.reviewer: ''
-ms.openlocfilehash: e29688f52da411d57daa920437d1f0708c9f663e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9bd73487d744f5597f934603bbf1d742ff08baea
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017017"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195402"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Herstellen einer Verbindung mit Dynamics 365 aus PowerApps
 In PowerApps können Sie schnell und mit nur wenig oder überhaupt keinem Code mobile Apps generieren, anpassen, freigeben und ausführen. Mithilfe des Dynamics 365-Connectors können Sie nützliche mobile Apps erstellen, die Sie in nur wenigen Minuten für Ihre Organisation freigeben können.
@@ -25,7 +25,7 @@ Durch Ausführen der in diesem Artikel beschriebenen Schritte erstellen Sie eine
 Zum Durcharbeiten dieses Lernprogramms benötigen Sie ein Microsoft Office 365-Konto mit einem Dynamics 365-Abonnement.
 
 ## <a name="create-a-connection"></a>Verbindung erstellen
-1. [Melden Sie sich bei PowerApps an](https://web.powerapps.com/).
+1. [Melden Sie sich bei PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Klicken Sie in der linken Navigationsleiste auf **Verbindungen**.
    
     ![Option „Verbindungen“ im Menü „Datei“](./media/connection-dynamics-crmonline/file-connections.png)
@@ -43,7 +43,7 @@ Zum Durcharbeiten dieses Lernprogramms benötigen Sie ein Microsoft Office 365-K
     Eine Verbindung wird erstellt.
 
 ## <a name="generate-an-app-automatically"></a>Eine App automatisch generieren
-1. [Melden Sie sich bei PowerApps an](https://web.powerapps.com/), und klicken Sie anschließend in der unteren linken Ecke auf **Neue App**.
+1. [Melden Sie sich bei PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie anschließend in der unteren linken Ecke auf **Neue App**.
    
     ![Neue App](./media/connection-dynamics-crmonline/new-app.png)
 2. Klicken Sie unter **Mit eigenen Daten beginnen** in der Kachel **Dynamics 365** auf **Telefonlayout**.

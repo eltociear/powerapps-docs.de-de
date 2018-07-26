@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 58097eec0bc483d8c38bf354513b70573e43049d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 342fcc36fb8dba9cfaa42c94089329ad19501af8
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023526"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194932"
 ---
 # <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>Verknüpfen von SharePoint-Listen mithilfe von Nachschlagefeldern
 In diesem Tutorial wird gezeigt, wie Sie zwei SharePoint-Listen unter Verwendung von Nachschlagefeldern verknüpfen.
@@ -89,7 +89,7 @@ Dieser Schritt erfolgt zuerst, damit beim Hinzufügen von Daten zur Liste **Asse
 ## <a name="create-an-app-from-the-assets-list"></a>Erstellen einer Apps aus der Assetliste
 Sie verwenden diese App, um Daten zur Liste **Assets** hinzuzufügen.
 
-1. [In PowerApps Studio anmelden](http://web.powerapps.com) Wenn Sie in PowerApps einsteigen möchten, [können Sie sich kostenlos mit Ihrer Unternehmens-E-Mail-Adresse registrieren](https://powerapps.microsoft.com).
+1. [In PowerApps Studio anmelden](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wenn Sie in PowerApps einsteigen möchten, [können Sie sich kostenlos mit Ihrer Unternehmens-E-Mail-Adresse registrieren](https://powerapps.microsoft.com).
 
 2. Klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Neu**, und klicken oder tippen Sie dann auf **SharePoint**.
 

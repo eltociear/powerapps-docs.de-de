@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: 842e19360c5f1536489f978cf880d941a6dee7d6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019984"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195103"
 ---
 # <a name="customize-forms-in-powerapps"></a>Anpassen von Formularen in PowerApps
 Anpassen eines **Anzeigeformular**-Steuerelements und eines **Bearbeitungsformular**-Steuerelements, sodass die wichtigsten Daten in der intuitivsten Reihenfolge angezeigt werden, damit Benutzer die Daten leicht verstehen und aktualisieren können.
@@ -27,7 +27,7 @@ Wenn Sie mit PowerApps nicht vertraut sind, finden Sie Grundlagen unter [Einfüh
 [Generieren einer App](data-platform-create-app.md) aus Common Data Service und [Anpassen des Katalogs](customize-layout-sharepoint.md) in dieser App.
 
 ## <a name="show-and-hide-cards"></a>Karten ein- und ausblenden
-1. Melden Sie sich bei [PowerApps](http://web.powerapps.com) an.
+1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     ![Startseite der PowerApps-Website](./media/customize-forms-sharepoint/sign-in.png)
 

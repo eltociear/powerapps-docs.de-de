@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: ddbd2f610ecba6d801efde2a00a9cb492e2382e3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021548"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195195"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registrieren für eine kostenlose Lizenz zum Testen von PowerApps
 Zum Erstellen einer App in PowerApps benötigen Sie eine der verfügbaren Lizenzen. Diese enthalten unterschiedliche Funktionen. Sie besitzen bereits eine Lizenz für PowerApps, wenn Ihre Organisation eine Version von Office 365 oder Dynamics 365 oder Lizenzen für PowerApps-Plan 1 oder 2 für Sie erworben hat.
@@ -74,7 +74,7 @@ Andernfalls werden Sie dazu aufgefordert, Ihre E-Mails zu überprüfen.
 
 Klicken Sie in der E-Mail auf den Link, um Ihre E-Mail-Adresse zu verifizieren, und geben Sie weitere Informationen an, wenn Sie dazu aufgefordert werden.
 
-Wenn dieses Dialogfeld angezeigt wird, klicken Sie auf **Start**. Nun können Sie mit der Verwendung von [PowerApps](http://web.powerapps.com) beginnen.
+Wenn dieses Dialogfeld angezeigt wird, klicken Sie auf **Start**. Nun können Sie mit der Verwendung von [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) beginnen.
 
 ![Auf „Starten“ klicken](./media/signup-for-powerapps/almost-there.png)
 
@@ -118,7 +118,7 @@ Nach 30 Tagen werden Sie dazu aufgefordert, eine Verlängerung des Testzeitraums
 * Wenn Sie nur über die Testversion auf PowerApps zugreifen können (für die Sie sich über die [PowerApps-Website](http://powerapps.microsoft.com/) oder die [Tarifseite](http://powerapps.microsoft.com/pricing) angemeldet haben), können Sie eine Erweiterung der Testlizenz um 30 Tage anfordern, um weiterhin auf PowerApps zugreifen zu können.
 
 ### <a name="when-will-my-trial-license-expire"></a>Wann läuft meine Testlizenz ab?
-Wenn Sie bestimmen möchten, wann Ihre Testlizenz abläuft, klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke der [PowerApps-Website](http://web.powerapps.com), und klicken Sie dann auf **Pläne**.
+Wenn Sie bestimmen möchten, wann Ihre Testlizenz abläuft, klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke der [PowerApps-Website](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie dann auf **Pläne**.
 
 ![](./media/signup-for-powerapps/show-duration.png)
 

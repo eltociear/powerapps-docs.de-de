@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 13e00081ce01b44feeea6fc1d6fff9556c020298
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 5cf2a312ddba83312805f6b3b517738f1bc1da78
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168272"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218025"
 ---
 # <a name="create-a-business-rule"></a>Erstellen einer Geschäftsregel
 
@@ -42,7 +42,7 @@ Sie müssen in eine [Umgebung](../canvas-apps/working-with-environments.md) wech
 
 ## <a name="create-a-business-rule"></a>Erstellen einer Geschäftsregel
   
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com) an, und klicken oder tippen Sie am linken Rand auf den Pfeil nach unten für **Daten**.
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und klicken oder tippen Sie am linken Rand auf den Pfeil nach unten für **Daten**.
 
 2. Klicken oder tippen Sie in der angezeigten Liste auf **Entitäten**.
   

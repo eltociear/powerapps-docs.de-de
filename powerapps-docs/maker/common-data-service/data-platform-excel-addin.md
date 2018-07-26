@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 8dbf6088104270d9251b70eec9adf0642de2f879
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: ad1a2de5491a1725ada2e95c3eccc6513de9e304
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445879"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218485"
 ---
 # <a name="open-entity-data-in-excel"></a>Öffnen von Entitätsdaten in Excel
 Indem Sie Entitätsdaten in Microsoft Excel öffnen, können Sie schnell und einfach Daten mithilfe des Microsoft PowerApps-Add-Ins für Excel anzeigen und bearbeiten. Für das PowerApps-Add-In für Excel wird Microsoft Excel 2016 benötigt.
@@ -21,12 +21,12 @@ Indem Sie Entitätsdaten in Microsoft Excel öffnen, können Sie schnell und ein
 ![Excel-Add-In](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps-Add-In für Excel")
 
 ## <a name="open-entity-data-in-excel"></a>Öffnen von Entitätsdaten in Excel
-1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**. Alle Entitäten werden angezeigt.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**. Alle Entitäten werden angezeigt.
 2. Klicken Sie auf die Auslassungspunkte (...) rechts neben der Entität, die Sie interessiert.
 3. Klicken Sie auf **In Excel öffnen**, und öffnen Sie dann die Arbeitsmappe, die generiert wird. Diese Arbeitsmappe enthält die Bindungsinformationen für die Entität, einen Zeiger auf Ihre Umgebung und einen Zeiger auf das PowerApps-Add-In für Excel.  
 4. Klicken Sie in Excel auf **Bearbeitung aktivieren**, um das Ausführen des PowerApps-Add-Ins für Excel zu aktivieren. Das Excel-Add-In wird in einem Bereich auf der rechten Seite des Excel-Fensters ausgeführt.
 5. Wenn Sie das PowerApps-Add-In für Excel zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**, um das Ausführen des Add-Ins für Excel zuzulassen.
-6. Klicken Sie, wenn Sie zur Anmeldung aufgefordert werden, auf **Sign in** (Anmelden), und melden Sie sich dann mit denselben Anmeldeinformationen an, die Sie auf [powerapps.com](https://web.powerapps.com) verwendet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldekontext und meldet Sie wenn möglich automatisch an. Überprüfen Sie deshalb den Benutzernamen in der oberen rechten Ecke des Excel-Add-Ins.
+6. Klicken Sie, wenn Sie zur Anmeldung aufgefordert werden, auf **Sign in** (Anmelden), und melden Sie sich dann mit denselben Anmeldeinformationen an, die Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwendet haben. Das Excel-Add-In verwendet einen vorherigen Anmeldekontext und meldet Sie wenn möglich automatisch an. Überprüfen Sie deshalb den Benutzernamen in der oberen rechten Ecke des Excel-Add-Ins.
 
 Das Excel-Add-In liest die Daten für die ausgewählte Entität automatisch. Beachten Sie, dass sich in der Arbeitsmappe erst dann Daten befinden, wenn diese vom Excel-Add-In eingelesen werden.
 

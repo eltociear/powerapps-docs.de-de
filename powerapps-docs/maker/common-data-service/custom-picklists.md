@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 188add46a8e52cfeb75ef1bb670ca3b457963024
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: b2b472ae33bd16761d25fc965f24afc6bb9b957e
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168594"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218416"
 ---
 # <a name="create-an-option-set"></a>Erstellen eines Optionssatzes
 
@@ -23,7 +23,7 @@ Optionssätze können auf zwei Arten erstellt werden: aus der Liste „Optionssa
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>Erstellen eines Optionssatzes während des Hinzufügens eines Felds
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
@@ -61,7 +61,7 @@ Optionssätze können auf zwei Arten erstellt werden: aus der Liste „Optionssa
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>Erstellen eines Optionssatzes aus der Liste „Optionssatz“
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Optionssätze**.
+1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Optionssätze**.
 
     ![Optionssätze](./media/data-platform-cds-newoptionset/optionsetlist.png "Liste „Optionssatz“")
 

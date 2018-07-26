@@ -8,12 +8,12 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: a4ec386ef6a7eee02c2ac608bb6e00ed9ee39c19
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: a9fff4cc61f6416ef8dbc3c03d96be7082fe3a51
+ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168134"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39218738"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>Verwalten von benutzerdefinierten Feldern in einer Entität
 Sie können ein oder mehrere benutzerdefinierte Felder in einer beliebigen Entität erstellen und aktualisieren. Wenn Sie ein benutzerdefiniertes Feld erstellen, geben Sie einen Satz von Eigenschaften an, z.B. den Namen des Felds, den Anzeigenamen und den Typ der Daten, die es enthält. Weitere Informationen finden Sie unter [Entity attribute metadata (Attributmetadaten von Entitäten)](../../developer/common-data-service/entity-attribute-metadata.md).
@@ -22,7 +22,7 @@ Sie können ein oder mehrere benutzerdefinierte Felder in einer beliebigen Entit
 > Jede Entität verfügt über Systemfelder, die z.B. angeben, wann und durch wen ein Eintrag zuletzt aktualisiert wurde. Darüber hinaus verfügen Standardentitäten über (Standard)Felder. Sie können keine System- oder Standardfelder ändern oder löschen. Wenn Sie ein benutzerdefiniertes Feld erstellen, sollte es zusätzliche Funktionalität zu diesen integrierten Feldern bieten.
 
 ## <a name="create-a-field"></a>Ein Feld erstellen
-1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
@@ -71,7 +71,7 @@ Mithilfe von berechneten Feldern können Sie manuelle Berechnungen in Ihren Gesc
 Weitere Informationen zu den unterstützten Ausdruckstypen und Beispielen finden Sie unter [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](/dynamics365/customer-engagement/customize/define-calculated-fields).
 
 ## <a name="update-or-delete-a-field"></a>Ein Feld aktualisieren oder löschen
-1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**, und klicken oder tippen Sie dann auf eine Entität.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**, und klicken oder tippen Sie dann auf eine Entität.
 2. Klicken oder tippen Sie in der Liste der Felder für die Entität, die Sie ausgewählt haben, auf ein Feld, und führen Sie anschließend einen der folgenden Schritte aus:
    
    * Ändern Sie eine oder mehrere Eigenschaften des Felds.

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: e7dc9a2386d75a6f03744286b7ed265a8d385370
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: fb561ca5458a22880d93c712aa2e2b2ada884605
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018535"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39194879"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
 Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen PowerApps und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
@@ -35,7 +35,7 @@ Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
 * Gateways und lokale Verbindungen können nur in der [Standardumgebung](working-with-environments.md) des Benutzers erstellt und verwendet werden.
 
 ## <a name="install-a-gateway"></a>Gateway installieren
-1. Klicken oder tippen Sie in der linken Navigationsleiste von [powerapps.com](https://web.powerapps.com) auf **Gateways**.
+1. Klicken oder tippen Sie in der linken Navigationsleiste von [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) auf **Gateways**.
 
     ![„Gateways“ in der linken Navigationsleiste](./media/gateway-management/manage-gateway.png)
 
@@ -46,7 +46,7 @@ Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
     Weitere Informationen dazu, wie Sie ein Gateway installieren, finden Sie unter [Grundlegendes zu lokalen Datengateways](gateway-reference.md).
 
 ## <a name="view-and-manage-gateway-permissions"></a>Anzeigen und Verwalten von Gatewayberechtigungen
-1. Klicken oder tippen Sie unter [powerapps.com](https://web.powerapps.com) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
+1. Klicken oder tippen Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
 
 2. Fügen Sie einen Benutzer zu einem Gateway hinzu, indem Sie auf **Benutzer** klicken oder tippen, einen Benutzer oder eine Gruppe und anschließend eine Berechtigungsstufe angeben:
 
@@ -57,7 +57,7 @@ Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
 Für die Berechtigungsstufen **Verwenden** und **Verwenden + freigeben** wählen Sie die Datenquellen, mit denen der Benutzer über das Gateway eine Verbindung herstellen kann.
 
 ## <a name="view-and-manage-gateway-connections"></a>Anzeigen und Verwalten von Gatewayverbindungen
-1. Klicken oder tippen Sie unter [powerapps.com](https://web.powerapps.com) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
+1. Klicken oder tippen Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im linken Navigationsbereich auf **Gateways** und anschließend auf ein Gateway.
 
 2. Klicken oder tippen Sie auf **Verbindungen** und anschließend auf eine Verbindung, um ihre Details anzuzeigen, die Einstellungen zu bearbeiten oder sie zu löschen.
 

@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 56a46493ef15eff7d65d19f12affb2a58dbba0b6
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 68b02c1dd2b6c22f5b1ec049f753a175ad8c09db
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023434"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195057"
 ---
 # <a name="customize-a-card-in-powerapps"></a>Anpassen einer Karte in PowerApps
 Führen Sie eine grundlegende Anpassung (ohne Entsperren einer Karte) durch, indem Sie beispielsweise das Steuerelement ändern. Erweiterte Anpassung (mit Aufheben der Sperre einer Karte), indem Sie z.B. ein Steuerelement hinzufügen, das für diese Karte standardmäßig nicht verfügbar ist.
@@ -33,7 +33,7 @@ Eine Übersicht finden Sie unter [Grundlegendes zu Datenkarten](working-with-car
 ## <a name="customize-a-locked-card"></a>Anpassen einer gesperrten Karte
 Ersetzen Sie in diesem Verfahren ein **[Texteingabe](controls/control-text-input.md)**-Steuerelement durch ein **[Schieberegler](controls/control-slider.md)**-Steuerelement, ohne die Karte zu entsperren.
 
-1. Melden Sie sich bei [PowerApps](http://web.powerapps.com) an.
+1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     ![PowerApps-Startseite](./media/customize-card/sign-in.png)
 
