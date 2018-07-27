@@ -49,6 +49,11 @@
               href: ./canvas-apps/get-started-create-from-blank.md
         - name: Eine App freigeben
           href: ./canvas-apps/share-app.md
+          items:
+            - name: Freigeben von Excel-Daten
+              href: ./canvas-apps/share-app-data.md
+            - name: Freigeben von App-Ressourcen
+              href: ./canvas-apps/share-app-resources.md
         - name: Apps in Power BI einbetten
           href: ./canvas-apps/embed-powerapps-powerbi.md
     - name: Beispiele
@@ -73,6 +78,8 @@
           href: ./canvas-apps/working-with-variables.md
         - name: Formeln
           href: ./canvas-apps/working-with-formulas-in-depth.md
+        - name: Experimentelle und Vorschaufeatures
+          href: ./canvas-apps/working-with-experimental.md
         - name: Datums- und Zeitangaben
           href: ./canvas-apps/show-text-dates-times.md
         - name: Datenquellen
@@ -134,7 +141,9 @@
             - name: Erstellen einer zugänglichen App
               href: ./canvas-apps/accessible-apps.md
               items:
-                - name: Farbe
+                - name: Ermitteln von Problemen mit der Barrierefreiheit
+                  href: ./canvas-apps/accessibility-checker.md
+                - name: Verwenden von Farben für die Barrierefreiheit
                   href: ./canvas-apps/accessible-apps-color.md
         - name: Ihre App verwalten
           items:
@@ -614,13 +623,6 @@
 - name: Common Data Service für Apps
   href: ./common-data-service/data-platform-intro.md
   items:
-    - name: Lizenzierung
-      href: ./common-data-service/data-platform-entity-licenses.md
-      items:
-        - name: Entitäten mit komplexer Geschäftslogik
-          href: ./common-data-service/data-platform-complex-entities.md
-        - name: 'Eingeschränkte Entitäten, die Dynamics 365-Lizenzen erfordern'
-          href: ./common-data-service/data-platform-restricted-entities.md
     - name: Schnellstarts
       items:
         - name: Erstellen einer Entität
@@ -651,6 +653,13 @@
           href: ./common-data-service/data-platform-excel-addin.md
         - name: Einen Power BI-Bericht erstellen
           href: ./common-data-service/data-platform-powerbi-connector.md
+    - name: Lizenzierung
+      href: ./common-data-service/data-platform-entity-licenses.md
+      items:
+        - name: Entitäten mit komplexer Geschäftslogik
+          href: ./common-data-service/data-platform-complex-entities.md
+        - name: 'Eingeschränkte Entitäten, die Dynamics 365-Lizenzen erfordern'
+          href: ./common-data-service/data-platform-restricted-entities.md
     - name: Für Entwickler
       href: ../developer/common-data-service/TOC.yml
 - name: Common Data Model
