@@ -1,46 +1,30 @@
 - name: Verwalten von PowerApps
-  href: index.md
-- name: Schnellstarts
+  href: admin-guide.md
   items:
-    - name: Erstellen einer Umgebung
-      href: create-environment.md
-    - name: Erstellen einer DLP-Richtlinie
-      href: create-dlp-policy.md
-    - name: Anzeigen von aktiven Benutzern in Ihrem Mandanten
-      href: admin-view-user-licenses.md
-    - name: Anzeigen von Apps in Ihrer Umgebung
-      href: admin-view-apps.md
-- name: Konzepte
-  items:
-    - name: Übersicht über die Lizenzierung
-      href: pricing-billing-skus.md
-    - name: Umgebungen – Übersicht
-      href: environments-overview.md
-    - name: Einführung in Datengruppen
-      href: introduction-to-data-groups.md
-    - name: Regionen – Übersicht
-      href: regions-overview.md
-- name: Exemplarische Vorgehensweisen
-  items:
-    - name: Erwerben von PowerApps
-      href: signup-for-powerapps-admin.md
-    - name: Verwalten von Lizenzen in Ihrer Organisation
-      href: signup-question-and-answer.md
-    - name: Verwalten von DLP-Richtlinien
-      href: prevent-data-loss.md
-    - name: Datenbank erstellen
-      href: create-database.md
-    - name: Umgebungen verwalten
-      href: environments-administration.md
-    - name: Konfigurieren der Sicherheit von Umgebungen
-      href: database-security.md
-    - name: Verwalten von Apps in Ihrer Organisation
-      href: admin-manage-apps.md
-    - name: Eine App zwischen Mandanten und Umgebungen verschieben
-      href: environment-and-tenant-migration.md
-    - name: Ressourcen exportieren und importieren
-      href: export-import-packages.md
+    - name: Erste Schritte
+      items:
+        - name: Welche Rolle spielt ein PowerApps-Administrator?
+          href: overview-role-powerapps-admin.md
+    - name: Lizenzierung
+      items:
+        - name: Übersicht über die Lizenzierung
+          href: pricing-billing-skus.md
+        - name: Verwalten von Lizenzen in Ihrer Organisation
+          href: signup-question-and-answer.md
+        - name: Erwerben von PowerApps
+          href: signup-for-powerapps-admin.md
+    - name: Verwalten von PowerApps
+      items:
+        - name: Anzeigen von Apps in Ihrer Umgebung
+          href: admin-view-apps.md
+        - name: Verwalten von Apps in Ihrer Organisation
+          href: admin-manage-apps.md
+        - name: Eine App zwischen Mandanten und Umgebungen verschieben
+          href: environment-and-tenant-migration.md
+        - name: PowerShell-Unterstützung für PowerApps (Vorschau)
+          href: powerapps-powershell.md
     - name: Reagieren auf DSR-Anforderungen
+      href: powerapps-gdpr-dsr-guide-systemlogs.md
       items:
         - name: Vom System generierten Protokolle
           href: powerapps-gdpr-dsr-guide-systemlogs.md
@@ -53,9 +37,27 @@
               href: powerapps-gdpr-delete-dsr.md
         - name: CDS für Apps-Kundendaten
           href: common-data-service-gdpr-dsr-guide.md
-        - name: Datenintegration für CDS für Apps
-          href: data-integration-gdpr-dsr-guide.md
-- name: Referenz
-  items:
-    - name: PowerShell-Unterstützung für PowerApps (Vorschau)
-      href: powerapps-powershell.md
+    - name: Umgebungen verwalten
+      href: environments-administration.md
+      items:
+        - name: Umgebungen – Übersicht
+          href: environments-overview.md
+        - name: Regionen – Übersicht
+          href: regions-overview.md
+        - name: Erstellen einer Umgebung
+          href: create-environment.md
+        - name: Datenbank erstellen
+          href: create-database.md
+    - name: Konfigurieren der Sicherheit von Umgebungen
+      href: database-security.md
+      items:
+        - name: Einführung in Datengruppen
+          href: introduction-to-data-groups.md
+        - name: Erstellen einer DLP-Richtlinie
+          href: create-dlp-policy.md
+        - name: Verwalten von DLP-Richtlinien
+          href: prevent-data-loss.md
+    - name: Verwalten von Abonnements und Benutzerkonten
+      items:
+        - name: Anzeigen von aktiven Benutzern in Ihrem Mandanten
+          href: admin-view-user-licenses.md
