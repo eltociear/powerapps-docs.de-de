@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 6145f321f3a9322433cdc32b779479871ab4dbf1
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094769"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195770"
 ---
 # <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“
 
@@ -36,7 +36,7 @@ Help Desk stellt eine benutzerfreundliche Oberfläche bereit, auf der Endbenutze
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- [Registrieren Sie sich](https://web.powerapps.com/) bei PowerApps.
+- [Registrieren Sie sich](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei PowerApps.
 - Sie müssen über eine gültige SharePoint Online-Lizenz und Berechtigung zum Erstellen von Listen verfügen.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Erstellen der HelpDesk-SharePoint-Liste
@@ -140,7 +140,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ## <a name="create-connections"></a>Erstellen von Verbindungen
 
-1.  Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
+1.  Navigieren Sie in einem Webbrowser zu [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 3.  Wählen Sie im Menü auf der linken Seite **Daten** und dann **Verbindungen** aus.
     

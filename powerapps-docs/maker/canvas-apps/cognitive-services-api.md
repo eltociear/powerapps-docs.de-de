@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
 ms.author: anneta
-ms.openlocfilehash: c47ddbbc2d50d05f1d4a913aaf7e9c743d5519e0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 6175633b2fbec4e9949882c587916adb349290d4
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020651"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195448"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Verwenden von Cognitive Services in PowerApps
 In diesem Artikel wird erläutert, wie Sie eine einfache App erstellen, die die [Textanalyse-API von Microsoft Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine App erstellt wird, die die API aufruft.
@@ -71,7 +71,7 @@ Nun ist die Textanalyse-API einsatzbereit, und Sie können eine Verbindung mit d
 ### <a name="create-the-app-and-add-a-connection"></a>Erstellen der App und Hinzufügen einer Verbindung
 Zunächst erstellen Sie eine leere Smartphone-App und fügen eine Verbindung mit dem **Textanalyse**-Connector hinzu. Wenn Sie zu diesen Aufgaben weitere Informationen benötigen, lesen Sie die Artikel [App von Grund auf neu erstellen](get-started-create-from-blank.md) und [Verwalten der Verbindungen in PowerApps](add-manage-connections.md).
 
-1. Wählen Sie auf [web.powerapps.com](https://web.powerapps.com) die Option **Mit leerer App starten** > ![Symbol für Telefon-App](./media/cognitive-services-api/icon-phone-app.png) (Telefon) > **Diese App erstellen** aus.
+1. Wählen Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Mit leerer App starten** > ![Symbol für Telefon-App](./media/cognitive-services-api/icon-phone-app.png) (Telefon) > **Diese App erstellen** aus.
 
     ![Mit leerer App starten](./media/cognitive-services-api/start-from-blank.png)
 

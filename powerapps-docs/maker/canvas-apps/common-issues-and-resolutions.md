@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/10/2018
 ms.author: anneta
-ms.openlocfilehash: 92153c1d7fc72f6905faf55817f7f785ffdaa1ce
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: d5603ffacc0246dcffd1c54ab63b4e404250a7d5
+ms.sourcegitcommit: fc235972d0d4661f55df7a71e2dcedafd42706b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016488"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39202296"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von PowerApps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
@@ -31,7 +31,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Verwenden eines benutzerdefinierten Bilds als App-Symbol**
 
-    In PowerApps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [PowerApps Studio für Web](https://web.powerapps.com), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in PowerApps Studio für Windows enthalten ist und die Hintergrundfarbe anpassen.
+    In PowerApps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [PowerApps Studio für Web](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in PowerApps Studio für Windows enthalten ist und die Hintergrundfarbe anpassen.
 
 1. **Kopieren und Einfügen von Anzeigen über mehrere Apps hinweg**
 
@@ -71,11 +71,15 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 6. **Ausführen einer App unter Windows 8.1**
 
-    Wenn Sie [dieses Update für Windows 8.1](https://technet.microsoft.com/library/security/ms16-118) installieren, können Sie Apps, die Sie in PowerApps Studio öffnen, nicht unter diesem Betriebssystem ausführen. Jedoch können Sie weiterhin Apps ausführen, die Sie in [powerapps.com](https://web.powerapps.com) oder mithilfe von PowerApps Mobile öffnen.
+    Wenn Sie [dieses Update für Windows 8.1](https://technet.microsoft.com/library/security/ms16-118) installieren, können Sie Apps, die Sie in PowerApps Studio öffnen, nicht unter diesem Betriebssystem ausführen. Jedoch können Sie weiterhin Apps ausführen, die Sie in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder mithilfe von PowerApps Mobile öffnen.
 
 7. **Spaltennamen mit Leerzeichen**
 
     Bei Verwendung einer SharePoint-Liste oder Excel-Tabelle, in denen ein Spaltenname ein Leerzeichen enthält, wird dieses von PowerApps durch **"\_X0020\_"** ersetzt. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+
+8. <a name="out-of-memory"></a>**Browser hat nicht genügend Arbeitsspeicher**
+
+    Wenn Sie bei der Verwendung von PowerApps nicht mehr genügend Arbeitsspeicher haben, sollten Sie eine 64-Bit-Version von Chrome, Edge oder Internet Explorer herunterladen.
 
 ## <a name="older"></a>Ältere
 1. **Ändern eines Flows in einer freigegebenen Anwendung**

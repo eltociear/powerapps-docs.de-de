@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 9ffb88629dbac2df514b1072cf21cd8aa82899d7
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: aca695c8c2ae90e0d5d843dcb0dfb562cbef5a05
+ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094654"
+ms.lasthandoff: 07/22/2018
+ms.locfileid: "39195724"
 ---
 # <a name="install-and-configure-the-expense-report-powerapps-sample"></a>Installation und Konfiguration der PowerApps-Beispiel-App „Expense Report“
 
@@ -209,7 +209,7 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 
 ## <a name="create-connections"></a>Erstellen von Verbindungen
 
-1.  Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
+1.  Navigieren Sie in einem Webbrowser zu [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 3.  Wählen Sie im Menü auf der linken Seite **Verbindungen** aus.
 
