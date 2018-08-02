@@ -2,18 +2,18 @@
 title: Übersicht über Umgebungen | Microsoft-Dokumentation
 description: Erfahren Sie mehr über Umgebungen in PowerApps und ihre Verwendung.
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: b38f0d1b029708e8130363d54ccc1354084b0ae4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218163"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349936"
 ---
 # <a name="environments-overview"></a>Umgebungen – Übersicht
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Umgebungen dienen außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. In welcher Weise Sie Umgebungen nutzen, hängt von Ihrer Organisation und den Apps ab, die Sie erstellen möchten. Beispiel:
@@ -39,13 +39,13 @@ Umgebungen weisen zwei integrierte Rollen auf, die Zugriff auf die Berechtigunge
 
 * Die Umgebungsadministratorrolle kann alle Administratoraktionen in einer Umgebung ausführen, darunter:
 
-  * Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
+    * Hinzufügen von Benutzern oder Gruppen zur Umgebungsadministrator- oder Umgebungserstellerrolle oder Entfernen aus diesen Rollen
 
-  * Bereitstellen einer Common Data Service-Datenbank für die Umgebung
+    * Bereitstellen einer Common Data Service-Datenbank für die Umgebung
 
-  * Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
+    * Anzeigen und Verwalten aller innerhalb einer Umgebung erstellten Ressourcen
 
-  * Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
+    * Festlegen von Richtlinien zur Verhinderung von Datenverlust. Weitere Informationen finden Sie unter [Richtlinien für die Verhinderung von Datenverlust](prevent-data-loss.md).
 
     Nachdem Sie eine Datenbank in der Umgebung erstellt haben, können Sie anstelle der Systemadministratorrolle eine Umgebungsadministratorrolle verwenden.
 
@@ -75,7 +75,7 @@ Die Standardumgebung ist wie folgt benannt: „{Azure AD-Mandantenname} (Standar
 Sie können Umgebungen für verschiedene Zwecke erstellen. Eine Testumgebung eignet sich z.B. zum Testen der Umgebung und der Datenbank mithilfe von Common Data Service-Funktionen. Sie kann nur für einen bestimmten Zeitraum verwendet werden. Weitere Informationen finden Sie unter [Administer environments in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md).
 
 ## <a name="choosing-an-environment"></a>Auswählen einer Umgebung
-Die Einführung von Umgebungen umfasst auf [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) auch eine veränderte Benutzeroberfläche.  Die auf der Website sichtbaren Apps, Verbindungen und anderen Elemente sind jetzt nach der ausgewählten aktuellen Umgebung gefiltert.  Ihre aktuelle Umgebung wird im Umgebungswähler nahe der rechten Kante der Kopfleiste angezeigt. Um eine andere Umgebung auszuwählen, klicken oder tippen Sie auf den Umgebungswähler, dann wird eine Liste der verfügbaren Umgebungen angezeigt. Klicken oder tippen Sie auf die Umgebung, in die Sie eintreten möchten.
+Die Einführung von Umgebungen umfasst auf [https://web.powerapps.com](https://web.powerapps.com) auch eine veränderte Benutzeroberfläche.  Die auf der Website sichtbaren Apps, Verbindungen und anderen Elemente sind jetzt nach der ausgewählten aktuellen Umgebung gefiltert.  Ihre aktuelle Umgebung wird im Umgebungswähler nahe der rechten Kante der Kopfleiste angezeigt. Um eine andere Umgebung auszuwählen, klicken oder tippen Sie auf den Umgebungswähler, dann wird eine Liste der verfügbaren Umgebungen angezeigt. Klicken oder tippen Sie auf die Umgebung, in die Sie eintreten möchten.
 
 Eine Umgebung wird in Ihrer Auswahlliste angezeigt, wenn Sie eine der folgenden Bedingungen erfüllen:
 

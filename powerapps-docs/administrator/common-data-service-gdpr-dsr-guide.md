@@ -3,18 +3,18 @@ title: Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service (
 description: 'Exemplarische Vorgehensweise: Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service (CDS) für Apps'
 author: jamesol-msft
 ms.reviewer: paulliew
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: b550d5fe7e36c36177fff017adcf9d9034c93dd4
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218048"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349016"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps
 
@@ -52,7 +52,7 @@ In diesem Artikel werden die folgenden Aktionen besprochen:
 
 CDS für Apps und die vorherige Version von CDS unterscheiden sich bei der Interaktion mit personenbezogenen Daten.
 
-Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden und die folgenden Schritte durchführen:
+Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com) anmelden und die folgenden Schritte durchführen:
 
 1. Wählen Sie aus der Dropdownliste **Umgebung** eine Umgebung aus.
 2. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
@@ -102,8 +102,8 @@ Sie können personenbezogene Daten von CDS für Apps-Benutzern in den folgenden 
 
 |Ressourcen- | Zweck | Websitezugriff | Programmatischer Zugriff
 | --- | --- | --- | ---
-| Entitätsdatensatz | In der Systementität „User“ werden die personenbezogenen Daten eines Benutzers gespeichert. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
-| Verlauf überprüfen | Lässt zu, dass Kunden Ressourcen ermitteln können, die von Benutzern auf einer Entitätsstufe erstellt, geändert oder gelöscht wurden, oder Ressourcen, auf die Benutzer zugegriffen haben. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Entitätsdatensatz | In der Systementität „User“ werden die personenbezogenen Daten eines Benutzers gespeichert. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
+| Verlauf überprüfen | Lässt zu, dass Kunden Ressourcen ermitteln können, die von Benutzern auf einer Entitätsstufe erstellt, geändert oder gelöscht wurden, oder Ressourcen, auf die Benutzer zugegriffen haben. | [PowerApps Admin Center](https://admin.powerapps.com) | Über die [Web-API](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webapi/update-delete-entities-using-web-api#basic-update)
 
 #### <a name="user"></a>User
 Personenbezogene Benutzerdaten werden in Azure Active Directory gespeichert und automatisch mit allen CDS für Apps-Umgebungen synchronisiert. Systemadministratoren können diese personenbezogenen Daten nicht direkt in CDS für Apps aktualisieren, während der Benutzer aktiv ist. Sie müssen die Daten im Office 365 Admin Center aktualisieren. Systemadministratoren können personenbezogene Daten direkt in CDS für Apps hinzufügen (z.B. benutzerdefinierte Attribute). Sie müssen diese Daten allerdings manuell verwalten.
@@ -199,7 +199,7 @@ Führen Sie im [PowerApps-Admin Center](https://admin.powerapps.com/) Folgendes 
 
 3. Navigieren Sie zu **Einstellungen** > **Security** > **Users**, und wählen Sie **Disabled Users View** (Sicherheit > Benutzer > Deaktivierte Benutzer anzeigen).
 
-4. Erstellen Sie eine Excel-Vorlage mit den personenbezogenen Benutzerdaten, und laden Sie diese herunter. Ausführliche Anweisungen finden Sie im Abschnitt „Eine neue Excel-Vorlage erstellen“ unter [Analysieren und Teilen von Daten mit Excel-Vorlagen](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
+4. Erstellen Sie eine Excel-Vorlage mit den personenbezogenen Benutzerdaten, und laden Sie diese herunter. Ausführliche Anweisungen finden Sie im Abschnitt „Eine neue Excel-Vorlage erstellen“ unter [Analysieren und Teilen von Daten mit Excel-Vorlagen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates#create-a-new-excel-template).
 
 8. Öffnen Sie die heruntergeladene Excel-Vorlagendatei, entfernen Sie die personenbezogenen Benutzerdaten, und speichern Sie die Datei.
 
@@ -308,7 +308,7 @@ Sie können personenbezogene Benutzerdaten der vorherigen Version von CDS in den
 
 |Ressourcen- | Zweck | Websitezugriff |  Programmatischer Zugriff
 | --- | --- | --- | ---
-|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |    Nein
+|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com) |      Nein
 
 #### <a name="entity-records"></a>Entitätsdatensätze
 Personenbezogene Daten von Einzelpersonen können in jeder Geschäftseinheit gespeichert werden.

@@ -2,18 +2,18 @@
 title: Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service (CDS) für Apps | Microsoft-Dokumentation
 description: Hier finden Sie ein exemplarische Vorgehensweise zum Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service (CDS) für Apps.
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 18bba11ce747b1e04be6013bf41419c34232865a
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 0511022621d891a6e45b27f1440e614df8b105a0
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37897246"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349131"
 ---
 # <a name="responding-to-dsr-requests-for-system-generated-logs-in-powerapps-microsoft-flow-and-common-data-service-for-apps"></a>Reagieren auf DSR-Anforderungen für vom System generierte Protokolle in PowerApps, Microsoft Flow und Common Data Service für Apps
 Microsoft bietet Ihnen die Möglichkeit, auf vom System generierte Protokolle zuzugreifen, die gemäß der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union nach der weitgefassten Definition der *personenbezogenen Daten* als personenbezogen gelten könnten, und diese zu exportieren und zu löschen. Zu den Beispielen für vom System generierte Protokolle, die gemäß der DSGVO als persönlich gelten könnten, zählen die folgenden:
@@ -106,7 +106,7 @@ Wenn Sie überprüfen möchten, ob Sie Benutzer eines verwalteten oder eines nic
 1. Öffnen Sie die folgende URL in einem Browser. Fügen Sie dabei Ihre E-Mail-Adresse in die URL ein: [https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
 
 2. Wenn Sie Mitglied eines **nicht verwalteten Mandanten** sind, wird der Wert `"IsViral": true` in der Antwort angezeigt.
-   ```
+  ```
       {
       ...
       "Login": "foobar@unmanagedcontoso.com",
@@ -114,6 +114,6 @@ Wenn Sie überprüfen möchten, ob Sie Benutzer eines verwalteten oder eines nic
       "IsViral": **true**,
       ...
       }
-   ```
+  ```
 
 3. Wenn dies nichts der Fall ist, sind Sie Teil eines verwalteten Mandanten.

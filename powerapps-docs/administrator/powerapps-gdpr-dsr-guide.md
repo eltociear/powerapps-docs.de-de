@@ -2,18 +2,18 @@
 title: Reagieren auf DSR-Anforderungen für PowerApps-Kundendaten | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) für PowerApps-Kundendaten
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 5bc3951f767677c2b8b35166d16c089259eec1ce
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: ae73d5df51b2656fc4f33e7258078140a180926d
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218669"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349200"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) für PowerApps-Kundendaten
 
@@ -68,7 +68,7 @@ Modellgesteuerte Apps und Berechtigungen für modellgesteuerte Apps  | Das Desig
 
 In PowerApps haben Sie die folgenden Möglichkeiten, um nach personenbezogenen Daten über einen bestimmten Benutzer zu suchen:
 
-- **Websitezugriff**: [PowerApps-Website](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **Websitezugriff**: [PowerApps-Website](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell-Zugriff**: PowerApps-Cmdlets (für [App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) und [Administratoren](https://go.microsoft.com/fwlink/?linkid=871804)) sowie [Cmdlets für lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238)
 
 Eine ausführliche Anleitung zur Verwendung dieser Möglichkeiten bei der Suche nach personenbezogenen Daten über einen bestimmten Benutzer für jede dieser Ressourcentypen finden Sie unter [Reagieren auf Anforderungen eines Exports von DSR-Anforderungen für PowerApps-Kundendaten](powerapps-gdpr-export-dsr.md).

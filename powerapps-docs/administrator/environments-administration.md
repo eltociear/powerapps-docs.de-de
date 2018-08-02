@@ -2,18 +2,18 @@
 title: Verwalten von Umgebungen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Umgebungen in PowerApps verwalten, einschließlich Erstellung, Umbenennung, Löschung und Sicherheitsfunktionen.
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 07/30/2018
 ms.author: manasma
-ms.openlocfilehash: 7fb35c1c59062b892fdd8e3a905d3ee485f6cf61
-ms.sourcegitcommit: 26932abc6fcdc5e6723b64b506532bb182ab3f8d
+ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37026232"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349085"
 ---
 # <a name="administer-environments-in-powerapps"></a>Verwalten von Umgebungen in PowerApps
 Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, und Umgebungen, denen Sie in den Rollen „Umgebungsadministrator“ oder „Systemadministrator“ hinzugefügt wurden, verwalten. Über das Admin Center können Sie folgende administrative Aktionen ausführen:
@@ -25,6 +25,8 @@ Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, u
 * Festlegen von Richtlinien zur Verhinderung von Datenverlust.
 * Festlegen von Datenbanksicherheits-Richtlinien (anhand von Datenbankrollen als offen oder eingeschränkt).
 * Mitglieder der globalen Administratorrolle des Azure AD-Mandanten (einschließlich globale Office 365-Administratoren) können ebenfalls alle Umgebungen verwalten, die in ihrem Mandanten erstellt wurden, und für alle Mandanten gültige Richtlinien im PowerApps Admin Center festlegen.
+
+Weitere Informationen finden Sie unter [Übersicht zu Umgebungen](environments-overview.md).
 
 ## <a name="access-the-powerapps-admin-center"></a>Zugriff auf das PowerApps Admin Center
 So greifen Sie auf das PowerApps Admin Center zu:
@@ -47,7 +49,7 @@ Außerdem benötigen Sie entweder eine Lizenz von PowerApps-Plan 2 oder Microsof
 > Änderungen, die Sie im PowerApps Admin Center vornehmen, wirken sich auf das [Microsoft Flow Admin Center][4] aus und umgekehrt.
 
 ## <a name="create-an-environment"></a>Erstellen einer Umgebung
-Anleitungen zum Erstellen einer Umgebung finden Sie unter [Quickstart: Create an environment (Schnellstart: Erstellen einer Umgebung)](create-environment.md).
+Anleitungen zum Erstellen einer Umgebung finden Sie unter [Create an environment (Erstellen einer Umgebung)](create-environment.md).
 
 ## <a name="view-your-environments"></a>Anzeigen Ihrer Umgebungen
 Wenn Sie das Admin Center öffnen, wird die Registerkarte "Umgebungen" standardmäßig angezeigt und listet alle Umgebungen auf, für die Sie Umgebungsadministrator sind (sieh unten):
@@ -57,10 +59,6 @@ Wenn Sie das Admin Center öffnen, wird die Registerkarte "Umgebungen" standardm
 Wenn Sie ein Mitglied der globalen Administratorrolle Ihrer Azure AD oder Ihres Office 365-Mandanten sind, werden alle Umgebungen angezeigt, die von Benutzern in Ihrem Mandanten erstellt wurden, da Sie automatisch für alle ein Umgebungsadministrator sind.
 
 ## <a name="rename-your-environment"></a>Benennen Sie Ihre Umgebung um
-
-> [!IMPORTANT]
-> Führen Sie die Schritte in diesem Abschnitt aus, um eine Produktionsumgebung umzubenennen, die keine Datenbank enthält. Sie können keine Testumgebungen umbenennen, und Sie müssen das Dynamics 365 Admin Center verwenden, um Produktionsumgebungen umzubenennen, die eine Datenbank enthalten.
-
 1. Öffnen Sie das [PowerApps Admin Center][1], suchen Sie die umzubenennende Umgebung in der Liste, und klicken oder tippen Sie darauf.
 
     ![](./media/environment-admin/environment-list-updated3.png)
@@ -195,6 +193,10 @@ In den folgenden Szenarios können Sie einen Fehler beim Erstellen einer Datenba
 1. **Standardumgebung**: Das Erstellen einer Datenbank wird derzeit nicht in einer Standardumgebung des Mandanten unterstützt. 
 
 2. **Umgebung zur individuellen Verwendung**: Wenn Sie sich für den PowerApps-Community-Plan registrieren, erhalten Sie eine Umgebung für Ihre eigene Verwendung. Wenn Sie die Datenbank noch nicht erstellt haben, können Sie zu diesem Zeitpunkt keine Datenbank in der Umgebung zur individuellen Verwendung bereitstellen. 
+
+3. **Umgebung in einer anderen Region, als die Region Ihres AAD-Mandanten**: Derzeit können Sie eine Datenbank nur in den Umgebungen bereitstellen, die in der Region Ihres Azure Active Directory-Mandanten erstellt wurden. Das Bereitstellen einer Datenbank in anderen Regionen soll in naher Zukunft verfügbar sein. Vergewissern Sie sich also, dass Ihre Region mit der Region des Mandanten übereinstimmt, wenn Sie eine Datenbank darin erstellen möchten.
+
+4. **Erstellen von Datenbanken, die in bestimmten Regionen nicht unterstützt werden**: Es gibt bestimmte Regionen, in denen das Erstellen von Datenbanken noch nicht verfügbar ist. Zum Beispiel Länder in Südamerika. Wenn der Hauptstandort Ihres Mandanten Südamerika ist, können Sie derzeit keine Datenbanken in Umgebungen bereitstellen. 
     
 Es wird daran gearbeitet, alle der oben genannten Szenarios zu ermöglichen.
 Wenn Sie andere Fehlermeldungen erhalten oder weitere Fragen haben, nehmen Sie [hier][5] Kontakt mit uns auf.
@@ -222,4 +224,4 @@ Ja, die Möglichkeit zum Anzeigen der Apps und Flows für eine Umgebung ist im P
 [2]: https://web.powerapps.com
 [3]: https://powerapps.microsoft.com/pricing/
 [4]: https://admin.flow.microsoft.com
-[5]: https://go.microsoft.com/fwlink/?linkid=871628
+[5]: https://go.microsoft.com/fwlink/p/?linkid=871628

@@ -2,18 +2,18 @@
 title: Übersicht über die Lizenzierung | Microsoft-Dokumentation
 description: Hier finden Sie eine Übersicht über die Lizenzierung in PowerApps.
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: jamesol
-ms.openlocfilehash: 03aa8fc5254529a337f7bbdf40428ab4a1042a92
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
+ms.openlocfilehash: 475b1f9b1aace4dc9632379e8a4e3522a90f42b2
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34168111"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349039"
 ---
 # <a name="licensing-overview"></a>Übersicht über die Lizenzierung
 PowerApps wird pro Benutzer lizenziert. Jeder Benutzer, der auf den Dienst zum Erstellen und Ausführen von Apps zugreift, benötigt eine Lizenz. Office 365- und Dynamics 365-Kunden können von den Vorteilen, die sich aus den PowerApps- und Microsoft Flow-Funktionen dieser Produkte ergeben, direkt profitieren. Kunden, die Apps und Flows erstellen möchten, für die auf Datenquellen außerhalb von Office 365 und Dynamics 365 zugegriffen wird, oder die zusätzliche Funktionalität benötigen, können eigenständige Abonnements für PowerApps und Microsoft Flow erwerben. Zwischen diesen Gruppen von Lizenzen bestehen wichtige Unterschiede in Bezug auf die Funktionalität.

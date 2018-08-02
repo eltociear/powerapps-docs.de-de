@@ -2,18 +2,18 @@
 title: Migrieren von Apps zwischen Umgebungen und Mandanten | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Migrieren von PowerApps-Apps zwischen Umgebungen und Mandanten
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms-topic: conceptual
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.author: jamesol
-ms.openlocfilehash: 9a846f3c47111b1b83881ed01026951469b236cc
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 3a4aeda30f8d4f01e2a85e186a769fa19ac29883
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898327"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349591"
 ---
 # <a name="environment-and-tenant-app-migration-through-packaging"></a>Migration der Umgebungs- und Mandanten-App durch Paketerstellung
 Erfahren Sie, wie Sie Ressourcen mithilfe von Paketerstellung von einer Umgebung zu einer anderen migrieren. Diese Umgebungen können innerhalb des gleichen Mandanten oder mandantenübergreifend sein.
@@ -112,13 +112,13 @@ Sie können CDS-Lösungspakete derzeit leider nur manuell importieren. Es wird a
 
 3. Kopieren Sie die URL aus Ihrem Browser, nehmen Sie die folgenden Änderungen vor, und navigieren Sie dann zu der neuen URL in Ihrem Browser:
 
-   * Aktuelle URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
+    * Aktuelle URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/edit.aspx?id={solutionname}
 
-       ![URL bearbeiten](./media/environment-and-tenant-migration/edit-url.png)
+        ![URL bearbeiten](./media/environment-and-tenant-migration/edit-url.png)
 
-   * Neue URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
+    * Neue URL-Struktur: https://{orguniquename}.crm.dynamics.com/tools/solution/SolutionImportWizard.aspx
 
-       ![Paket auswählen](./media/environment-and-tenant-migration/select-package.png)
+        ![Paket auswählen](./media/environment-and-tenant-migration/select-package.png)
 
 4. Wählen Sie die CDS-Lösungspaketdatei aus, die Sie importieren möchten, und beenden Sie den Assistenten.
 
