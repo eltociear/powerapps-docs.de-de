@@ -2,18 +2,18 @@
 title: Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) zum Löschen von Kundendaten | Microsoft-Dokumentation
 description: Hier finden Sie eine exemplarische Vorgehensweise zum Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) zum Löschen von PowerApps-Kundendaten.
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: 501c5468291041eafd2147c102484ab81cabbe37
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: 9cde5c7b2127359ab21a9e89aa83841d87cae49e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218784"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349062"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-delete-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) zum Löschen von PowerApps-Kundendaten
 
@@ -40,7 +40,7 @@ Berechtigungen für benutzerdefinierte Connectors |
 
 Für die Daten und Ressourcen, die manuell überprüft werden müssen, bietet PowerApps folgende Möglichkeiten für die Neuzuweisung (falls erforderlich) oder Löschung der personenbezogenen Daten eines bestimmen Benutzers:
 
-* Websitezugriff: [PowerApps-Website](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Websitezugriff: [PowerApps-Website](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell-Zugriff: PowerApps-Cmdlets für [App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) und [Administratoren](https://go.microsoft.com/fwlink/?linkid=871804) sowie Cmdlets für [lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238).
 
@@ -62,7 +62,7 @@ Berechtigungen für benutzerdefinierte Connectors | | App-Ersteller: Verfügbar 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 ### <a name="for-users"></a>Für Benutzer
-Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge über [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
+Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge über [PowerApps](https://web.powerapps.com) oder [PowerShell-Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
 
 #### <a name="unmanaged-tenant"></a>Nicht verwalteter Mandant
 Wenn Sie Mitglied eines [nicht verwalteten Mandanten](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover) sind, also Ihr Azure AD-Mandant nicht über globale Administratorberechtigungen verfügt, können Sie trotzdem die in diesem Artikel aufgeführten Schritte ausführen, um Ihre eigenen personenbezogenen Daten zu entfernen.  Da es allerdings keinen globalen Administrator für Ihren Mandanten gibt, müssen Sie die nachfolgend unter [Schritt 11: Löschen des Benutzers aus Azure Active Directory](#step-11-delete-the-user-from-azure-active-directory) beschriebenen Anweisungen ausführen, um Ihr eigenes Konto aus dem Mandanten zu entfernen.
@@ -72,15 +72,15 @@ Wenn Sie überprüfen möchten, ob Sie Mitglied eines nicht verwalteten Mandante
 1. Öffnen Sie die folgende URL in einem Browser. Fügen Sie dabei Ihre E-Mail-Adresse in die URL ein: https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1
 
 2. Wenn Sie Mitglied eines **nicht verwalteten Mandanten** sind, wird der Wert `"IsViral": true` in der Antwort angezeigt.
-   ```
-   {
-   ...
-   "Login": "foobar@unmanagedcontoso.com",
-   "DomainName": "unmanagedcontoso.com",
-   "IsViral": true,
-   ...
-   }
-   ```
+```
+{
+  ...
+  "Login": "foobar@unmanagedcontoso.com",
+  "DomainName": "unmanagedcontoso.com",
+  "IsViral": true,
+  ...
+}
+```
 
 3. Wenn dies nichts der Fall ist, sind Sie Teil eines **verwalteten Mandanten**.
 
@@ -210,7 +210,7 @@ Get-AdminApp -Owner $deleteDsrUserId | Set-AdminAppOwner -AppOwner $newAppOwnerU
 ```
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-site"></a>Löschen der Canvas-App eines Benutzers über die PowerApps-Website
-Ein Benutzer kann eine App über die [PowerApps-Website](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) löschen. Ausführliche Informationen zum Löschen einer App finden Sie unter „Löschen einer App“.
+Ein Benutzer kann eine App über die [PowerApps-Website](https://web.powerapps.com) löschen. Ausführliche Informationen zum Löschen einer App finden Sie unter „Löschen einer App“.
 
 ### <a name="delete-a-users-canvas-app-using-the-powerapps-admin-center"></a>Löschen der Canvas-App eines Benutzers über das PowerApps Admin Center
 Ein Administrator kann über das [PowerApps Admin Center](https://admin.powerapps.com/) von einem Benutzer erstellte Apps löschen, indem er die folgenden Schritte ausführt:
