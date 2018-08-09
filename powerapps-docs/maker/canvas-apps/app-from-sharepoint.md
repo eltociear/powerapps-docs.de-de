@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Generieren einer App in PowerApps über SharePoint | Microsoft-Dokumentation'
-description: Automatisches Generieren einer App in PowerApps, um Daten in einer SharePoint-Liste zu verwalten
+title: Generieren einer Canvas-App in PowerApps über SharePoint | Microsoft-Dokumentation
+description: Automatisches Generieren einer Canvas-App in PowerApps, um Daten in einer SharePoint-Liste zu verwalten
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/12/2018
 ms.author: anneta
-ms.openlocfilehash: fd3e1e293b3c10b25351ba3958af46b887447e26
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: cb68c454053a36f49b72afa1718ca0d67ad364af
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195379"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469877"
 ---
-# <a name="quickstart-for-generating-an-app-in-powerapps-from-sharepoint"></a>Schnellstart: Generieren einer App in PowerApps über SharePoint
+# <a name="generate-a-canvas-app-in-powerapps-from-sharepoint-data"></a>Generieren einer Canvas-App aus SharePoint-Daten in PowerApps
 
-In diesem Schnellstart verwenden Sie PowerApps, um Ihre erste App basierend auf einer Liste von Beispielkonten in SharePoint automatisch zu generieren. In dieser App können Sie alle Elemente der Liste durchsuchen, Details zu einem einzelnen Element anzeigen und ein Element erstellen, aktualisieren oder löschen.
+In diesem Artikel verwenden Sie PowerApps, um Ihre erste Canvas-App basierend auf einer Liste von Beispielkonten in SharePoint automatisch zu generieren. In dieser App können Sie alle Elemente der Liste durchsuchen, Details zu einem einzelnen Element anzeigen und ein Element erstellen, aktualisieren oder löschen.
 
 Sie lernen in diesem Schnellstart Konzepte und Techniken kennen, die Sie verwenden können, wenn Sie über eine Liste in SharePoint verfügen. Wenn Sie diesen Schnellstart genau befolgen möchten, erstellen Sie zunächst auf einer SharePoint Online-Website eine Liste mit dem Namen **SimpleApp**, die eine Spalte mit dem Namen **Titel** enthält. Erstellen Sie in der Liste Einträge für **Beispiel1**, **Beispiel2** und **Beispiel3**.
 

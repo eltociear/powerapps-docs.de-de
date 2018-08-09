@@ -1,7 +1,7 @@
 ---
-title: Hinzufügen eines Bildschirms und Wechseln zwischen Bildschirmen | Microsoft-Dokumentation
-description: Fügen Sie einer App einen Bildschirm hinzu, und nutzen Sie die Weiter- und Zurück-Pfeile, um in PowerApps zwischen Bildschirmen zu wechseln
-author: aftowen
+title: Hinzufügen eines Bildschirms in eine Canvas-App und Wechseln zwischen Bildschirmen | Microsoft-Dokumentation
+description: Fügen Sie einer Canvas-App einen Bildschirm hinzu, und nutzen Sie die Weiter- und Zurück-Pfeile, um in PowerApps zwischen Bildschirmen zu wechseln
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,21 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: c7a100b6df278812ea93da8c4f5c503a841d4109
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 17ec7dd0723e219e1eaf9ad3b112faf049cf7d12
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022008"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469946"
 ---
-# <a name="add-a-screen-and-navigate-between-screens"></a>Hinzufügen eines Bildschirms und Wechseln zwischen Bildschirmen
-Erstellen Sie eine App mit mehreren Bildschirmen, und bieten Sie Benutzern Möglichkeiten, zwischen diesen Bildschirmen zu wechseln.
+# <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>Hinzufügen eines Bildschirms in eine Canvas-App und Wechseln zwischen Bildschirmen
+
+Erstellen Sie eine Canvas-App mit mehreren Bildschirmen, und bieten Sie Benutzern Möglichkeiten, zwischen diesen Bildschirmen zu wechseln.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 * Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
 * Erstellen oder öffnen Sie eine App.
 
 ## <a name="add-and-rename-a-screen"></a>Hinzufügen und Umbenennen eines Bildschirms
+
 1. Klicken oder tippen Sie auf der Registerkarte **Start** auf **Neuer Bildschirm**.
 
     ![Option zum Hinzufügen von Bildschirmen auf der Registerkarte „Start“](./media/add-screen-context-variables/add-screen.png)

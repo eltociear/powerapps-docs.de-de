@@ -1,25 +1,25 @@
 ---
-title: 'Schnellstart: Herunterladen einer Liste der aktiven Benutzer in Ihrem Mandanten | Microsoft-Dokumentation'
+title: Herunterladen einer Liste der aktiven Benutzer in Ihrem Mandanten | Microsoft-Dokumentation
 description: In diesem Schnellstart erfahren Sie, wie Sie eine Liste der aktiven Benutzer in Ihrem Mandanten herunterladen können.
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/21/2018
-ms.author: jimh
-ms.openlocfilehash: 1488b0231009ef3dd3b0b93e21a14a61f3d1c3cd
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: e2c00f4ab10b2dc6cecc63d9539ffcf86a5bfcb8
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552482"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39348855"
 ---
-# <a name="quickstart-download-a-list-of-active-users-in-your-tenant"></a>Schnellstart: Herunterladen einer Liste der aktiven Benutzer in Ihrem Mandanten
+# <a name="download-a-list-of-active-users-in-your-tenant"></a>Herunterladen einer Liste der aktiven Benutzer in Ihrem Mandanten
 Wenn Sie über globale Administratorberechtigungen für Office 365 oder über Mandantenberechtigungen für Azure Active Directory verfügen, können Sie eine Liste der aktiven Benutzer in Ihrem Mandanten herunterladen, über die Sie nachverfolgen können, wer auf PowerApps und bzw. oder Microsoft Flow zugegriffen hat und welche Lizenzen den Benutzern zugewiesen sind.
 
-In diesem Schnellstart erfahren Sie, wie Sie eine Liste der aktiven Benutzer als CSV-Datei herunterladen können und wie Sie diese Liste anschließend in Excel öffnen können.
+In diesem Artikel erfahren Sie, wie Sie eine Liste der aktiven Benutzer als CSV-Datei herunterladen können und wie Sie diese Liste anschließend in Excel öffnen können.
 
-Damit Sie die in diesem Schnellstart beschriebenen Schritte ausführen können, benötigen Sie globale Administratorrechte für Office 365 oder Mandantenadministratorrechte für Azure Active Directory.
+Damit Sie die in diesem Artikel beschriebenen Schritte ausführen können, benötigen Sie globale Administratorrechte für Office 365 oder Mandantenadministratorrechte für Azure Active Directory.
 
 ## <a name="sign-in-to-the-powerapps-admin-center"></a>Anmelden im PowerApps Admin Center
 Melden Sie sich unter [https://admin.powerapps.com]([https://admin.powerapps.com) im Admin Center an.
@@ -45,7 +45,7 @@ Wenn ein Benutzer die Organisation verlassen hat, steht **Unbekannt** in den Spa
 Um Benutzerlizenzen hinzuzufügen, öffnen Sie das [Office 365 Admin Center](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Schnellstart wurde erläutert, wie Sie eine Liste der aktiven Benutzer in Ihrem Mandanten herunterladen können. Gehen Sie zum nächsten Schnellstart, wenn Sie erfahren möchten, wie Sie eine Liste der Apps herunterladen und anzeigen können, die in Ihrer Umgebung erstellt wurden.
+In diesem Artikel wurde erläutert, wie Sie eine Liste der aktiven Benutzer in Ihrem Mandanten herunterladen können. Fahren Sie mit dem nächsten Artikel fort, um zu erfahren, wie Sie eine Liste der Apps herunterladen und anzeigen, die in Ihren Umgebungen erstellt wurden.
 
 > [!div class="nextstepaction"]
 > [Download a list of apps created in your environments (Herunterladen einer Liste der Apps, die in Ihrer Umgebung erstellt wurden)](admin-view-apps.md)

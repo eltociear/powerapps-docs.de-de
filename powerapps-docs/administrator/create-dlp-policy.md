@@ -1,26 +1,26 @@
 ---
-title: 'Schnellstart: Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP) | Microsoft-Dokumentation'
+title: Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP) | Microsoft-Dokumentation
 description: In diesem Schnellstart erhalten Sie Informationen zum Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP) in PowerApps.
 author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 03/30/2018
-ms.author: jimh
-ms.openlocfilehash: da4be42ea0374d6cb50da2f9a9b17eef15d5b316
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.author: jimholtz
+ms.openlocfilehash: 49898aed97e2361704c88bcc1cd098a8fc0f101e
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34552367"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349453"
 ---
-# <a name="quickstart-create-a-data-loss-prevention-dlp-policy"></a>Schnellstart: Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP)
+# <a name="create-a-data-loss-prevention-dlp-policy"></a>Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP)
 Mithilfe von PowerApps können Sie zum Schutz von Unternehmensdaten Richtlinien zur Verhinderung von Datenverlust (DLP) erstellen und erzwingen, die definieren, für welche Verbraucherconnectors bestimmte Geschäftsdaten freigegeben werden können. Diese Richtlinien, die definieren, wie Daten freigegeben werden können, werden als Richtlinien zur Verhinderung von Datenverlust (DLP) bezeichnet. Mithilfe von DLP-Richtlinien wird sichergestellt, dass Daten in der gesamten Organisation auf einheitliche Weise verwaltet werden. Außerdem helfen sie zu vermeiden, dass wichtige Unternehmensdaten versehentlich auf Connectors wie Social Media-Websites veröffentlicht werden.
 
-In diesem Schnellstart erfahren Sie, wie Sie eine DLP-Richtlinie für eine einzelne Umgebung erstellen, die verhindert, dass Daten, die in Ihren Common Data Service- und SharePoint-Datenbanken gespeichert werden, auf Twitter veröffentlicht werden.
+In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie für eine einzelne Umgebung erstellen, die verhindert, dass Daten, die in Ihren Common Data Service- und SharePoint-Datenbanken gespeichert werden, auf Twitter veröffentlicht werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Für diesen Schnellstart ist **eines** der folgenden Elemente erforderlich:
+Zum Ausführen der Schritte ist **eines** der folgenden Elemente erforderlich:
 * Azure Active Directory-Mandantenadministratorberechtigungen
 * Globale Office 365-Administratorberechtigungen
 * PowerApps-Umgebungsadministratorberechtigungen sowie eine Lizenz von PowerApps-Plan 2, Microsoft Flow-Tarif 2 oder eine [Testversion von PowerApps-Plan 2](https://web.powerapps.com/signup?redirect=marketing&email=)
@@ -41,7 +41,7 @@ Melden Sie sich unter [https://admin.powerapps.com]([https://admin.powerapps.com
 
     ![](./media/create-dlp-policy/select-environment.png)
 
-    Wenn Sie ein Mandantenadministrator sind, können Sie DLP-Richtlinien erstellen, die für mindestens eine Umgebung oder für alle Umgebungen im Mandanten gelten (einschließlich der Umgebungen, die mit einer Testlizenz erstellt wurden). Klicken oder tippen Sie für diesen Schnellstart auf **NUR auf ausgewählte Umgebungen anwenden**, wählen Sie eine Umgebung aus der Dropdownliste aus, und klicken oder tippen Sie dann auf **Weiter**.
+    Wenn Sie ein Mandantenadministrator sind, können Sie DLP-Richtlinien erstellen, die für mindestens eine Umgebung oder für alle Umgebungen im Mandanten gelten (einschließlich der Umgebungen, die mit einer Testlizenz erstellt wurden). Klicken oder tippen Sie für diesen Artikel auf **NUR auf ausgewählte Umgebungen anwenden**, wählen Sie eine Umgebung aus der Dropdownliste aus, und klicken oder tippen Sie dann auf **Weiter**.
 
     ![](./media/create-dlp-policy/select-environment-tenant.png)
 
@@ -64,7 +64,7 @@ Dann wird die Richtlinie „Sicherer Datenzugriff für Contoso“ erstellt und i
 Administratoren geben häufig ihre Listen mit DLP-Richtlinien für Ihre Organisationen frei, damit Benutzer die Richtlinien beim Erstellen von Apps berücksichtigen können.
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Schnellstart wurde erläutert, wie Sie eine DLP-Richtlinie für eine einzelne Umgebung erstellen, um zu verhindern, dass wichtige Unternehmensdaten versehentlich auf Connectors wie Twitter veröffentlicht werden. Mehr Informationen zu DLP-Richtlinien erhalten Sie in dem Artikel, in dem das Verwalten dieser Richtlinien beschrieben wird.
+In diesem Artikel wurde erläutert, wie Sie eine DLP-Richtlinie für eine einzelne Umgebung erstellen, um zu verhindern, dass wichtige Unternehmensdaten versehentlich auf Connectors wie Twitter veröffentlicht werden. Mehr Informationen zu DLP-Richtlinien erhalten Sie in dem Artikel, in dem das Verwalten dieser Richtlinien beschrieben wird.
 
 > [!div class="nextstepaction"]
 > [Manage data loss prevention (DLP) policies (Verwalten von Richtlinien zur Verhinderung von Datenverlust (DLP))](prevent-data-loss.md)

@@ -1,59 +1,66 @@
 ---
-title: 'Übersicht: Common Data Model | Microsoft-Dokumentation'
-description: Erfahren Sie, wie Common Data Model eine Verbindung zwischen Common Data Service für Apps und Common Data Service für Analysen herstellt.
+title: Über das Common Data Model | Microsoft-Dokumentation
+description: Das Common Data Model ist eine standardisierte, modulare und erweiterbare Sammlung von Datenschemas, die von Microsoft veröffentlicht wurde und darauf ausgelegt ist, das Erstellen, Verwenden und Analysieren von Daten zu vereinfachen.
 author: RobertBruckner
 ms.service: powerapps
 ms.topic: article
-ms.date: 03/14/2018
-ms.author: jdaly
-ms.openlocfilehash: 4e9b929558de0b2451bb2df4add4b300d7115848
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.date: 07/24/2018
+ms.author: robruc
+ms.openlocfilehash: 1469646301c273067ad035428f03c452ae223604
+ms.sourcegitcommit: abe4d4728db7f56088f618af5b820af78e7099c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34803238"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "39331992"
 ---
-# <a name="common-data-model-overview"></a>Übersicht: Common Data Model
+# <a name="what-is-the-common-data-model"></a>Was ist das Common Data Model?
 
-**Common Data Model** (CDM) ist eine Open-Source-Definition von Standardentitäten, die häufig verwendete Konzepte und Aktivitäten für eine Vielzahl von Geschäfts- und Anwendungsdomänen darstellen. Common Data Model bietet *klar definierte, modulare und erweiterbare* Geschäftsentitäten wie z.B. Konto, Geschäftseinheit, Fall, Kontakt, Lead, Verkaufschance und Produkt sowie Interaktionen und Beziehungen zwischen Lieferanten, Arbeitern und Kunden, wie z.B. Aktivitäten und Vereinbarungen zum Servicelevel. 
+Wenn Sie jemals vor Herausforderungen mit Daten standen, die *nahezu* identisch sind oder gemeinsam funktionieren *sollten*, und Sie daraufhin beträchtlichen Aufwand in das Transformieren von Feldern und Tabellen gesteckt haben, um mit Ihren anderen Daten zu arbeiten, wissen Sie, dass einheitliche Datenelemente Aufwand sparen, zukünftige Entwicklung optimieren und schnellere Analysen ermöglichen können. Diese und weitere Funktionen können durch das Common Data Model bereitgestellt werden.
 
-[Common Data Service für Apps](../maker/common-data-service/data-platform-intro.md) und Common Data Service für Analysen <!-- TODO add link when available  --> von Microsoft implementieren Common Data Model. Diese Dienste enthalten Daten, die der Definition von Common Data Model entsprechen. Da auf diesen Diensten aufgebaut wird, können gepackte Anwendungen und analytische Lösungen mit klar definierten Formen von Entitäten arbeiten und Daten freigeben, egal woher diese Daten ursprünglich stammen oder wo sie gemastert wurden. Benutzerdefinierte branchenspezifische Apps und analytische Lösungen können dieselben Entitäten zum Freigeben von Daten verwenden und dadurch Ihren spezifischen und geschäftlichen Anforderungen entsprechen. 
+Das **Common Data Model (CDM)** ist eine standardisierte, modulare und erweiterbare Sammlung von Datenschemas, die von Microsoft veröffentlicht wurde und darauf ausgelegt ist, das Erstellen, Verwenden und Analysieren von Daten zu vereinfachen. Diese Sammlung vordefinierter Schemas, die aus *Entitäten*, *Attributen*, *semantischen Metadaten* und *Beziehungen* besteht, stellt häufig verwendete Konzepte und Aktivitäten (z.B. Konten und Kampagnen) dar, die die Erstellung, Aggregation und Analyse von Daten vereinfachen. Weitere Information: [CDM repo on GitHub (CDM-Repository auf GitHub)](https://aka.ms/cdmrepo)
 
-Microsoft arbeitet mitsamt seiner Partner daran, Apps auf Grundlage von Common Data Service zu erstellen und Ihre Geschäftsdaten im CDM-Format zu speichern. Es gibt eine *große, wachsende Auflistung von Lösungen, die effizient zusammenarbeiten, wenn Daten im CDM-Format gespeichert werden*. Das bedeutet, dass Sie neue Geschäftsprozesse einfach und schnell implementieren und Einblicke in Ihre Geschäftsvorgänge erhalten können, ohne dass Unstimmigkeiten entstehen. Im folgenden Diagramm wird veranschaulicht, wie Anwendungen auf Basis von Common Data Service Entitäten von Common Data Model nutzen.
+![Common Data Model](media/cdm-entities.png)
 
-![Anwendungen auf Basis von Common Data Service nutzen Entitäten von Common Data Model](media/cdm-overview.png)
+Weitere Informationen: [CDM-Poster](https://aka.ms/cdmposter)
 
-Common Data Model vereinfacht die Herausforderungen der Datenverwaltung, durch Vereinheitlichung von Daten in einer bekannten Form mit *struktureller und semantischer Konsistenz zwischen Anwendungen und Bereitstellungen*. Common Data Model hilft beim Integrieren und *Verdeutlichen von Daten*, die aus Geschäftsprozessen, digitalen Interaktionen, Produkttelemetrie, Interaktionen von Personen usw. gesammelt wurden. 
+## <a name="why-use-the-common-data-model"></a>Gründe für die Verwendung des Common Data Model
 
-Daten, die in Common Data Service für Apps gespeichert sind, können mithilfe von Common Data Service für Analysen für Kunden, die beide Dienste verwenden, *einfach und automatisch integriert werden*. Sie können mit Enterprise- und Transaktionsdaten, die Sie bereits besitzen (z.B. Leads, Kampagneninformationen, vorherige Bestellungen von Kunden) beginnen und diese mit Daten aus anderen Quellen (z.B. Weblogs oder Produkttelemetrie) kombinieren, um einen einheitlichen Überblick zu erhalten.
+Das CDM vereinfacht die Verwaltung von Daten und die Anwendungsentwicklung durch Vereinheitlichung in ein bekanntes Format und durch die Anwendung struktureller und semantischer Konsistenz auf Anwendungen und Bereitstellungen. Das heißt, sobald Ihre Daten dem CDM entsprechen, können Sie sie in vielen verschiedenen Anwendungen verwenden, die Erstellung oder Verwendung anderer Anwendungen zur Nutzung vorhandener Daten optimieren und problemlos Berichte für jede Anwendung (oder alle Anwendungen) erstellen. Darüber hinaus können Datenintegratoren, die Daten aus einer Vielzahl von Systemen integrieren, sich darauf konzentrieren, die Daten in das CDM-Format zu transformieren, anstatt ein neues Modell für jede Anwendung zu erstellen.
 
-Außerdem ist Common Data Model *erweiterbar*: Sie können jeder anpassbaren Entität Felder hinzufügen, die mit CDM bereitgestellt werden, oder Sie erstellen Ihre eigenen benutzerdefinierten Entitäten. Standardmäßig definiert CDM eine einheitliche Sprache für geschäftliche Entitäten über das gesamte Spektrum von Geschäftsprozessen hinweg, über Vertrieb, Services, Marketing, Vorgänge, Finanzen, Mitarbeiter und Handel sowie für die Kunden-, Personen- und Produktentitäten, die im Mittelpunkt der Geschäftsprozesse eines Unternehmens stehen. Common Data Model ermöglicht die Interoperabilität von Daten, die mehrere Kanäle, Dienstimplementierungen und Lieferanten umfasst.
+Angenommen, Sie verfügen über drei Unternehmensanwendungen: eine Material-App, eine Fertigungs-App und eine Vertriebs-App. Häufig wird jede dieser Anwendungen unabhängig voneinander mit verschiedenen Strukturen erstellt, die Entitäten darstellen, z.B. *Konten*, die sich stark ähneln, aber nicht identisch sind. Mit dem CDM können Sie Ihre Daten in einem standardisierten Format erstellen (mit CDM- Entitäten, -Attributen und -Beziehungen) und für jede dieser drei Apps die gleichen Daten als Grundlage verwenden. Jede App kann basierend auf der Funktionalität der jeweiligen App über eigene zusätzliche Daten und Schemas verfügen. Bei der Entwicklung können Sie die einheitlichen Datenelemente schnell, problemlos und zuverlässig für Ihre Anwendungen und Berichte abrufen.
 
-Mithilfe der folgenden Features bieten Common Data Model und Common Data Service eine umfangreiche und produktive Entwicklungsplattform:
+Und wie sieht es aus, wenn Sie eine vierte App erstellen müssen? Ihre Daten stehen im CDM-Schema zur Verfügung, Sie können sich bei der Entwicklung also voll und ganz auf die Geschäftslogik konzentrieren, ohne erneut Zeit in Daten und Transformationen investieren zu müssen.
 
-- **Definition von Standardentitäten**: Common Data Model stellt eine Definition von Entitäten bereit, die die am häufigsten in Geschäfts- und Produktivitätsanwendungen verwendeten Entitäten darstellen. Das öffentliche CDM-GitHub-Repository [(https://github.com/Microsoft/CDM)](https://github.com/Microsoft/CDM) wird fortlaufend mit Kernentitäten verbessert, die den gesamten Umfang von Geschäftsprozessen, zusätzliche vertikale branchenspezifische Datenmodelle und übergreifende Quellen umfassen (z.B. Umfragen, Suchmaschinen und Produkttelemetrie).
-- **Datenintegration**: Verwenden Sie Power Query als integrierte Webumgebung zum Importieren und visuellen Transformieren von Daten aus Ihren vorhandenen Systemen und zum Zusammenführen von Daten aus lokalen Quellen und Onlinequellen mit keinen oder nur wenigen Codekomponenten. Hier können Sie Ihre Kenntnisse zu der Transformation von Daten in Excel oder Power BI nahtlos anwenden. Informationen finden Sie unter [Add data to an entity in the Common Data Service by using Power Query (Hinzufügen von Daten zu einer Entität in Common Data Service mithilfe von Power Query)](../maker/common-data-service/data-platform-cds-newentity-pq.md).
-    
-    Wenn Sie Daten in Common Data Service importieren, können Sie diese Standardentitäten von Common Data Model zuordnen oder neue Entitäten erstellen und diesen zuordnen. Sofort verfügbare Datenintegration und Zuordnungsvorlagen vereinfachen das Herstellen einer Verbindung zu geläufigen Datenquellen wie Salesforce. Diese Zuordnungsvorlagen sind vollständig anpassbar und erweiterbar. Der folgende Screenshot zeigt das Importieren von externen Daten und das Zuordnen zu Standardentitäten in Power Query. 
-    
-    ![Importieren von externen Daten und Zuordnen zu Standardentitäten in Power Query ](media/cdm-mapping-entities.png)<br />
+Das bedeutet, dass CDM Folgendes für Ihre Daten bietet:
 
-- **Erweiterbarkeit**: Sie können die Entitäten erweitern, ohne die Datenfreigabe für andere Apps zu unterbrechen.
-- **Zuverlässigkeit**: Da Sie sich auf allgemeine Entitäten verlassen können, können Sie wiederverwendbare Komponenten erstellen, die an die Entitäten gebunden sind. Common Data Model unterstützt die Erweiterbarkeit und Versionsverwaltung, die Ihre Investition in die Entwicklung schützt.
-- **Konsistenz der Entitäten über Bereitstellungen hinweg**: Ihre Lösungen können Information von Produktivitätsplattformen mit Daten von Geschäftsanwendungen verbinden. Sie können beispielsweise einen Kalendertermin oder eine Aufgabe in Microsoft Outlook mit einer Verkaufschance verbinden. 
+-   **Strukturelle und semantische Konsistenz** für Anwendungen und Bereitstellungen.
 
-[Common Data Service für Apps](../maker/common-data-service/data-platform-intro.md) implementiert Common Data Model, wodurch für die Entwicklung einer Geschäftsanwendung Folgendes ermöglicht wird:
+-   **Vereinfachte Integration und Eindeutigkeit von Daten**, die aus Prozessen, digitalen Interaktionen, Produkttelemetrie, Interaktionen von Personen usw. gesammelt werden.
 
-- **Nutzen von gepackten Geschäftsanwendungen**: Dynamics 365-Anwendungen für Marketing, Vertrieb, Service, Mitarbeiter, Finanzen und Vorgänge sowie Drittanbieteranwendungen nutzen und bzw. oder basieren auf Common Data Service für Apps.
-- **Anpassen von Anwendungen und Erstellen von nativen Erweiterungen für Ihre Anforderungen**: Anpassungen und Entwickler verteilen Anwendungslösungen mit einem gut definierten Anwendungslebenszyklus. Mithilfe von Lösungen können Anwendungen und Erweiterungen verteilt werden. Informationen finden Sie unter [Einführung in Lösungen](../developer/common-data-service/introduction-solutions.md).
-- **Erstellen von Canvas-Apps mit PowerApps ohne bzw. mit nur wenig Code, modellgesteuert und nach dem WYSIWYG-Prinzip**: Verwenden Sie die gleichen freigegebenen Entitäten, die von gepackten Anwendungen oder Anwendungen von Drittanbietern erstellt wurden oder verwendet werden, und erstellen Sie zusätzliche eigenständige Apps. Siehe: 
-    - [Build a model-driven app (Erstellen einer modellgesteuerten App)](../maker/model-driven-apps/model-driven-app-overview.md)
-    - [Build a canvas app (Erstellen einer Canvas-App)](../maker/canvas-apps/getting-started.md) 
-- **Automatisieren von Geschäftsprozessen mithilfe von Flow**: Verwenden von Geschäftsprozessflows zum Definieren von mehreren Stufen und Schritten, um ein gewünschtes Ergebnis zu erzielen. Informationen finden Sie unter [Create a flow that uses the Common Data Service (Erstellen eines Flows, der Common Data Service verwendet)](/flow/common-data-model-intro).
- 
-Die bevorstehende öffentliche Vorschauversion von **Common Data Service für Analyse**<!-- TODO add link when available  --> implementiert auch Common Data Model, wodurch die Datenanalyse von Geschäftsdaten in einem standardisierten Format unterstützt wird, einschließlich:
+-   **Eine einheitliche Form**, in die Datenintegratoren **vorhandene Unternehmensdaten mit anderen Quellen zusammenführen** und diese Daten ganzheitlich verwenden, um neue Anwendungen zu entwickeln oder Erkenntnisse abzuleiten.
 
-- **Gepackte und angepasste analytische Lösungen basierend auf Datenentitäten**: Analytische Anwendungen (z.B. Sales Insights), die den Verlauf von Vertriebsergebnissen nachverfolgen und unabhängig davon, wo die Daten ursprünglich gemastert wurden, konsistente Einblicke bieten, da die Datenintegration Daten von anderen Quellen (z.B. Salesforce) zu Entitätsformen von Common Data Model zuordnet. Damit wird Ihre analytische Lösung vereinfacht und konzentriert sich auf die Semantik der Daten von klar definierten Entitäten, wie Leads und Verkaufschancen.
-- **Power Query-Datenintegration mit keinen oder nur wenigen Codekomponenten**: Verwenden der integrierten Benutzeroberfläche zum Erstellen, Füllen, Transformieren und Erweitern von Entitäten. 
-- **Verwenden Ihres eigenen Azure-Speichers**: Nutzen Sie die Vorteile des Azure-Datenstapels, um Daten für Common Data Service für Analysen zur Verfügung zu stellen. Die Entitäten werden in dem Common Data Model-Format gespeichert, das von analytischen Lösungen erkannt wird.
+-   **Die Möglichkeit, das Schema und CDM-Entitäten zu erweitern**, um das CDM an Ihre Organisation anzupassen.
 
+Sie können das CDM verwenden, um neue Datenrepositorys zu erstellen, die mit dem Schema übereinstimmen. Außerdem können Sie Ihre vorhandenen Daten in das CDM-Schema transformieren. In beiden Fällen beschleunigt und optimiert die Standardisierung Ihre zukünftigen Schritte mit den Daten.
+
+## <a name="who-uses-the-common-data-model"></a>Wer verwendet das Common Data Model?
+
+Das CDM wird von einer Vielzahl von Kunden, Partnern und Produkten mit dem gleichen Ziel verwendet: zur Vereinheitlichung von Daten in einem bekannten Format mit semantischer Bedeutung.
+
+-   **Anwendungsentwickler:** Unabhängig davon, ob diese Benutzer codebasierte Plattformen oder eine Plattform mit keinen oder nur wenigen Codekomponenten wie PowerApps verwenden, müssen sie Daten für Ihre Anwendungen speichern und verwalten.
+
+-   **Datenintegratoren:** Diese Benutzer sind dafür verantwortlich, Daten aus verschiedenen Systemen zusammenzuführen, um diese zur Verwendung durch Anwendungen zur Verfügung zu stellen.
+
+Früher war das Erstellen einer Anwendung eng mit der Datenintegration verknüpft. Mit dem CDM und den Plattformen, die es unterstützen, kann beides jedoch unabhängig voneinander durchgeführt werden.
+
+## <a name="common-data-model-in-action"></a>Common Data Model in Aktion
+
+Microsoft und seine Partner verwenden das CDM für ihre eigenen Anwendungen und Angebote. Außerdem erstellen sie zusätzliche Dienste und Angebote auf der Grundlage von CDM-Schemas. In den folgenden Beispielen wird veranschaulicht, wie Organisationen das CDM verwenden:
+
+-   **Common Data Service für Apps** unterstützt Dynamics und PowerApps und speichert Daten konform zur CDM-Definition. Tatsächlich stammen viele der ursprünglichen im CDM enthaltenen Geschäftsentitäten aus Dynamics-Angeboten wie Dynamics 365 for Sales und Dynamics 365 for Marketing.
+
+-   **Industriezweige** wie das Gesundheitswesen arbeiten eng mit Microsoft zusammen, um das CDM mit ihren spezifischen Geschäftskonzepte zu erweitern, z.B. *Patienten* und *Pflegepläne*, sodass diese Daten freigegeben und Dienste erstellt werden können, mit denen Partner Daten einfach austauschen und interoperable Apps und Dienste sowie schnelle Analysen erstellen können, die einfach freizugeben sind.
+
+## <a name="next-step"></a>Nächster Schritt
+
+[How to use the Common Data Model (Verwenden des Common Data Model):](use-common-data-model.md) In diesem Artikel wird das CDM ausführlich beschrieben. Außerdem werden Anwendungsfälle für die Erstellung neuer Daten im CDM und die Transformierung vorhandener Daten in CDM erläutert.

@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefinierte PowerApps-Visuals für Power BI | Microsoft-Dokumentation
-description: Verfahren und Einschränkungen für das Einbetten einer App, die die gleiche Datenquelle wie andere Berichtselemente in Power BI verwendet und ebenfalls gefiltert werden kann
+description: Verfahren und Einschränkungen für das Einbetten einer Canvas-App, die die gleiche Datenquelle wie andere Berichtselemente in Power BI verwendet und ebenfalls gefiltert werden kann
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 8e50763f11d04db4e9c8e0a6a6ae8ff316bc185a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015890"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469992"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
-Power BI ermöglicht Einblicke in die Daten und eine bessere Entscheidungsfindung, während durch PowerApps jeder Apps erstellen und verwenden kann, die mit Unternehmensdaten verbunden werden. Wenn Sie das benutzerdefinierte PowerApps-Visual verwenden, können Sie kontextabhängige Daten an eine PowerApps-App übergeben, die in Echtzeit aktualisiert wird, während Sie Änderungen am Bericht vornehmen. Dadurch können die Benutzer der App Einblicke in das Unternehmen gewinnen und innerhalb der Power BI-Berichte und -Dashboards Aktionen durchführen.
+Power BI ermöglicht Einblicke in die Daten und eine bessere Entscheidungsfindung, während durch PowerApps jeder Apps erstellen und verwenden kann, die mit Unternehmensdaten verbunden werden. Wenn Sie das benutzerdefinierte PowerApps-Visual verwenden, können Sie kontextabhängige Daten an eine Canvas-App übergeben, die in Echtzeit aktualisiert wird, während Sie Änderungen am Bericht vornehmen. Dadurch können die Benutzer der App Einblicke in das Unternehmen gewinnen und innerhalb der Power BI-Berichte und -Dashboards Aktionen durchführen.
 
 ## <a name="using-the-powerapps-custom-visual"></a>Verwenden des benutzerdefinierten PowerApps-Visuals
 

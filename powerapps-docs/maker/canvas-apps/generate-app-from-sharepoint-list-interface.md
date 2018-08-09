@@ -1,6 +1,6 @@
 ---
-title: Generieren einer App aus einer SharePoint-Liste | Microsoft-Dokumentation
-description: Generieren Sie eine App mit drei Bildschirmen, um Daten aus einer SharePoint-Liste zu verwalten, lokal oder in der Cloud.
+title: Generieren einer Canvas-App aus einer SharePoint-Liste | Microsoft-Dokumentation
+description: Generieren Sie eine Canvas-App mit drei Bildschirmen, um Daten aus einer SharePoint-Liste zu verwalten (lokal oder in der Cloud).
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
 ms.author: anneta
-ms.openlocfilehash: 46cf610351cf00d8d947c4006c31a3d5971951d0
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9230c96c1b1c5e07ea5129f73a8edd95772aad84
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022456"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471418"
 ---
-# <a name="generate-an-app-from-within-sharepoint-using-powerapps"></a>Generieren einer App aus SharePoint mit PowerApps
+# <a name="generate-a-canvas-app-from-within-sharepoint-by-using-powerapps"></a>Generieren einer Canvas-App aus SharePoint mithilfe von PowerApps
 
-In PowerApps wird eine App automatisch generiert, in der Benutzer Elemente aus einer benutzerdefinierten SharePoint Online-Liste verwalten können. Die App wird drei Bildschirme haben, auf denen Benutzer Folgendes können:
+In PowerApps wird eine Canvas-App automatisch generiert, in der Benutzer Elemente aus einer benutzerdefinierten SharePoint Online-Liste verwalten können. Die App wird über drei Bildschirme verfügen, auf denen Benutzer folgende Aktionen ausführen können:
 
 * alle Datensätze in der Liste durchsuchen (**BrowseScreen1**)
 * alle Felder eines bestimmten Datensatzes anzeigen (**DetailsScreen1**)

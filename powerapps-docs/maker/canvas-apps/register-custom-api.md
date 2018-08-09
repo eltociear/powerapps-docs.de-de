@@ -1,6 +1,6 @@
 ---
 title: Links zu Inhalten über benutzerdefinierte Connectors | Microsoft-Dokumentation
-description: Links zu Inhalten über das Erstellen, Verwenden, Freigeben und Zertifizieren benutzerdefinierter Connectors.
+description: Links zu Inhalten über das Erstellen, Verwenden, Freigeben und Zertifizieren benutzerdefinierter Connectors in PowerApps
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/05/2017
 ms.author: mblythe
-ms.openlocfilehash: 411082faef59516d9d6b660e08b5cbaf263da042
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 78a2dd6f9c5772a738ca38e79162be82f3a57139
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022146"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471119"
 ---
 # <a name="custom-connectors-in-powerapps"></a>Benutzerdefinierte Connectors in PowerApps
 
-Mit [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) und [PowerApps](https://powerapps.microsoft.com) können Sie Workflows und Apps erstellen – ganz ohne Code zu schreiben. Zur Vereinfachung der Integration von Daten und Geschäftsprozessen unterstützen diese Dienste [mehr als 180 Connectors](https://docs.microsoft.com/connectors/) für Microsoft-Dienste und -Produkte sowie für andere Dienste wie GitHub, Salesforce, Twitter und vieles mehr. 
+Mit [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) und [PowerApps](https://powerapps.microsoft.com) können Sie Workflows und Canvas-Apps erstellen – ganz ohne Code zu schreiben. Zur Vereinfachung der Integration von Daten und Geschäftsprozessen unterstützen diese Dienste [mehr als 180 Connectors](https://docs.microsoft.com/connectors/) für Microsoft-Dienste und -Produkte sowie für andere Dienste wie GitHub, Salesforce und Twitter.
 
 In bestimmten Fällen müssen Sie jedoch APIs, Dienste und Systeme aufrufen, für die es keine vorgefertigten Connectors gibt. Für die Unterstützung maßgeschneiderter Szenarios können Sie *benutzerdefinierte Connectors* mit eigenen Triggern und Aktionen erstellen. Auf der Dokumentationswebsite zu Connectors finden Sie eine umfassende Sammlung von Tutorials zu Connectors für Einsteiger und Fortgeschrittene. Es wird empfohlen, mit der [Übersicht über benutzerdefinierte Connectors](https://docs.microsoft.com/connectors/custom-connectors/) zu beginnen, sie können jedoch auch direkt eines der folgenden Themen zu einem bestimmten Bereich auswählen:
 

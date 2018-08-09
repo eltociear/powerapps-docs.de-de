@@ -1,6 +1,6 @@
 ---
-title: Anzeigen von Text und Formatieren eines Datums oder einer Uhrzeit | Microsoft-Dokumentation
-description: Fügen Sie mit PowerApps Datumsangaben und Uhrzeiten hinzu, und formatieren Sie diese.
+title: Anzeigen von Text, Datumswerten und Uhrzeiten in einer Canvas-App | Microsoft-Dokumentation
+description: Anzeigen von Text sowie von Datumswerten und Uhrzeiten in einer Canvas-App in PowerApps
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,15 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/16/2016
 ms.author: anneta
-ms.openlocfilehash: d6f88534b4839381037243400ef69f292df8fb97
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8f4bf8908b8e83fe5976a52356db163cbb3a9813
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195701"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470682"
 ---
-# <a name="show-text-and-format-dates-and-times-in-powerapps"></a>Anzeigen von Text und Formatieren von Datums- und Uhrzeitangaben in PowerApps
-Fügen Sie Datumsangaben und Uhrzeiten hinzu, und formatieren Sie sie, um die geeignete Detailebene anzuzeigen oder Ihr Gebietsschema widerzuspiegeln. Berechnen Sie die Zeitspanne zwischen zwei Datumswerten, oder berechnen Sie ein Datum, das eine bestimmte Zeitspanne vor oder nach einem von Ihnen angegebenen Datum liegt. Konvertieren Sie Datumswerte in getrennte Werte für Tage, Monate und Jahre, und konvertieren Sie Werte für Stunden, Minuten und Sekunden.
+# <a name="show-text-dates-and-times-in-powerapps"></a>Anzeigen von Text, Datumswerten und Uhrzeiten in PowerApps
+Fügen Sie in einer Canvas-App in PowerApps Datumsangaben und Uhrzeiten hinzu, und formatieren Sie sie, um die geeignete Detailebene anzuzeigen oder Ihr Gebietsschema widerzuspiegeln. Berechnen Sie die Zeitspanne zwischen zwei Datumswerten, oder berechnen Sie ein Datum, das eine bestimmte Zeitspanne vor oder nach einem von Ihnen angegebenen Datum liegt. Konvertieren Sie Datumswerte in getrennte Werte für Tage, Monate und Jahre, und konvertieren Sie Werte für Stunden, Minuten und Sekunden.
 
 Fügen Sie beispielsweise Benutzerdaten zu Änderungen am Warenbestand oder zu Kundenbesprechungen, Daten aus einer externen Quelle oder Daten aus einer anderen, in PowerApps erstellten App hinzu. Wenn diese Daten bis auf die Millisekunde genaue Uhrzeitwerte umfassen, runden Sie diese zur Vereinfachung auf die nächste Minute. Berechnen Sie, wie viele Tagen bis zu einem wichtigen Meilenstein verbleiben. Wenn Sie alle fünf Tage eine Kundenbesprechung planen möchten, können Sie diese Datumswerte automatisch berechnen. Wenn der 10. Mai 1985 in getrennten Feldern für Tag, Monat und Jahr gespeichert ist, können Sie das Datum in einem einzelnen Wert konsolidieren. Umgekehrt können Sie Datumswerte in getrennte Werte aufteilen, wenn Ihre App diese separat verwaltet.
 

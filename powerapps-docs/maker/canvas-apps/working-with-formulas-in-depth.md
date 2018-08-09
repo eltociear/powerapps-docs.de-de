@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu Verhaltensformeln | Microsoft-Dokumentation
-description: Referenzinformationen zur Arbeit mit Verhaltensformeln
+title: Verstehen von Verhaltensformeln in einer Canvas-App | Microsoft-Dokumentation
+description: Referenzinformationen zum Arbeiten mit Verhaltensformeln, die den Status von Canvas-Apps in PowerApps ändern
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,18 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/10/2015
 ms.author: gregli
-ms.openlocfilehash: 8ac9cfc2a949cf059d84b5338220e0366094e24b
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0e7aabc06014c69aae640b799463431b6800dad
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015591"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471464"
 ---
-# <a name="understand-behavior-formulas-in-powerapps"></a>Grundlegendes zu Verhaltensformeln in PowerApps
+# <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Grundlegendes zu Verhaltensformeln für Canvas-Apps in PowerApps
 
 Die meisten Formeln berechnen einen Wert.  Wie in einer Excel-Tabelle erfolgt die Neuberechnung automatisch, sobald sich Werte ändern.  Wenn ein Wert kleiner als 0 (null) ist, soll das **[Label](controls/control-text-box.md)**-Steuerelement z.B. möglicherweise in Rot, andernfalls in Schwarz angezeigt werden. Dazu können Sie die **[Color](controls/properties-color-border.md)**-Eigenschaft des Steuerelements auf diese Formel festlegen:
-<br>**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
+
+**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
 Was bedeutet es in diesem Kontext, wenn der Benutzer ein **[Schaltflächen](controls/control-button.md)**-Steuerelement auswählt?  Da kein Wert geändert wurde, muss nichts neu berechnet werden. Excel bietet kein Äquivalent zu einem **[Schaltfläche](controls/control-button.md)**-Steuerelement.  
 

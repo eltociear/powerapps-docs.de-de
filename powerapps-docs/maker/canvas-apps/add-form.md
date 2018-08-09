@@ -1,6 +1,6 @@
 ---
-title: Anzeigen, Bearbeiten und Hinzufügen eines Datensatzes aus einer Tabelle | Microsoft-Dokumentation
-description: Mithilfe eines Formulars können Sie einen Datensatz aus einer Tabelle in der Datenquelle anzeigen, bearbeiten oder hinzufügen.
+title: Anzeigen, Bearbeiten und Hinzufügen eines Datensatzes aus einer Tabelle in eine Canvas-App | Microsoft-Dokumentation
+description: Mithilfe eines Canvas-App-Formulars können Sie einen Datensatz aus einer Tabelle in der Datenquelle anzeigen, bearbeiten oder hinzufügen.
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/06/2017
 ms.author: sharik
-ms.openlocfilehash: b98c5d165ba6de983a874f0a34fb92c5db8a69cd
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a8c786e499bdc1e4dacc0adbf2bee489d56229ce
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018949"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469969"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Datensatz aus einer Tabelle in PowerApps anzeigen, bearbeiten oder hinzufügen
-Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelement hinzufügen und konfigurieren. Wenn Sie ein Feld in einem Datensatz bearbeiten (bzw. einen Datensatz hinzufügen) und die Änderungen in einer Datenquelle speichern möchten, fügen Sie ein **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelement hinzu, und konfigurieren Sie dieses.
+
+Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelement in eine Canvas-App hinzufügen und es konfigurieren. Wenn Sie ein Feld in einem Datensatz bearbeiten (bzw. einen Datensatz hinzufügen) und die Änderungen in einer Datenquelle speichern möchten, fügen Sie ein **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelement zu einer Canvas-App hinzu, und konfigurieren Sie dieses.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

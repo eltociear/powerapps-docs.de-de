@@ -2,25 +2,25 @@
 title: Verwalten von Richtlinien zur Verhinderung von Datenverlust (DLP) | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Verwalten von Richtlinien zur Verhinderung von Datenverlust für PowerApps.
 author: manasmams
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 158abc3969090e081df41b6b52036d71b6949150
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+ms.openlocfilehash: 81117e352f3ad5131572cff2a61117042f47df38
+ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445704"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39349407"
 ---
 # <a name="manage-data-loss-prevention-dlp-policies"></a>Verwalten von Richtlinien zur Verhinderung von Datenverlust (DLP)
 Die Daten einer Organisation sind wichtig für deren Erfolg. Die Daten müssen zur Verwendung bereitstehen, damit Entscheidungen schnell getroffen werden können. Sie müssen jedoch auch geschützt werden, damit sie nicht für Parteien freigegeben werden können, die keinen Zugriff darauf haben sollten. Mithilfe von PowerApps können Sie zum Schutz dieser Daten Richtlinien zur Verhinderung von Datenverlust (DLP) erstellen und erzwingen, in denen definiert wird, für welche Verbraucherconnectors bestimmte Geschäftsdaten freigegeben werden können. Beispielsweise möchte eine Organisation, die PowerApps verwendet, möglicherweise nicht, dass ihre in SharePoint gespeicherten Unternehmensdaten automatisch in Ihrem Twitter-Feed veröffentlicht werden.
 
 Damit Sie DLP-Richtlinien erstellen, bearbeiten oder löschen können, müssen Sie entweder über Umgebungsadministratorrechte oder über Azure Active Directory Mandantenadministratorrechte verfügen. Weitere Informationen finden Sie unter [Environments administration in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md).
 
-Anleitungen zum Erstellen einer DLP-Richtlinie finden Sie unter [Quickstart: Create a data loss prevention (DLP) policy (Schnellstart: Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP))](create-dlp-policy.md).
+Anleitungen zum Erstellen einer DLP-Richtlinie finden Sie unter [Erstellen einer Richtlinie zur Verhinderung von Datenverlust (DLP)](create-dlp-policy.md).
 
 ## <a name="find-a-dlp-policy"></a>Suchen einer DLP-Richtlinie
 1. Melden Sie sich unter [https://admin.powerapps.com]([https://admin.powerapps.com) im Admin Center an.

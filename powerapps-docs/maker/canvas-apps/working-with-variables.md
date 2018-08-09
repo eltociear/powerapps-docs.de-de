@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu Variablen | Microsoft-Dokumentation
-description: Referenzinformationen zum Arbeiten mit Zustands- und Kontextvariablen und Sammlungen
+title: Grundlegendes zu Variablen in Canvas-Apps | Microsoft-Dokumentation
+description: Referenzinformationen zum Arbeiten mit Zustands- und Kontextvariablen und Sammlungen in Canvas-Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
 ms.author: gregli
-ms.openlocfilehash: b5986c927b75ed7a6e38af913cbfb9877121d0a5
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: db7e770b2f2e7fa974dbf25a7a7fecf5b8229aa9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017822"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469923"
 ---
-# <a name="understand-variables-in-powerapps"></a>Grundlegendes zu Variablen in PowerApps
-Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, fragen Sie sich einfach: **Wie würde ich in Excel verfahren?**
+# <a name="understand-canvas-app-variables-in-powerapps"></a>Grundlegendes zu Canvas-App-Variablen in PowerApps
+
+Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, wenn Sie eine Canvas-App erstellen, sollten Sie sich die Frage stellen: **Wie würde ich in Excel verfahren?**
 
 In anderen Tools haben Sie möglicherweise eine explizite Berechnung ausgeführt und das Ergebnis in einer Variablen gespeichert. Allerdings berechnen sowohl PowerApps als auch Excel automatisch Formeln neu, sobald die Eingabedaten geändert werden, sodass Sie üblicherweise keine Variablen erstellen oder aktualisieren müssen. Wenn Sie diesen Ansatz wann immer möglich verwenden, können Sie Ihre App leichter erstellen, verstehen und warten.
 
@@ -26,6 +27,7 @@ In einigen Fällen müssen Sie Variablen in PowerApps verwenden, wodurch das Mod
 Vermeiden Sie im allgemeinen das Verwenden von Variablen. Manchmal hat jedoch nur eine Variable die Auswirkungen, die Sie benötigen.
 
 ## <a name="translate-excel-into-powerapps"></a>Excel in PowerApps übersetzt
+
 ### <a name="excel"></a>Excel
 Betrachten Sie die Funktionsweise von Excel. Eine Zelle kann einen Wert, z.B. eine Zahl oder eine Zeichenfolge, oder eine Formel enthalten, die auf den Werten der anderen Zellen basiert. Nachdem der Benutzer einen anderen Wert in eine Zelle eingibt, berechnet Excel automatisch alle Formeln, die von dem neuen Wert abhängig sind. Zum Aktivieren dieses Verhaltens müssen Sie nichts programmieren.
 

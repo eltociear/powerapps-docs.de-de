@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zum Layout von Datenformularen | Microsoft-Dokumentation
-description: Erstellen Sie mithilfe von Zeilen und Spalten ansprechende Formularlayouts.
+title: Grundlegendes zum Layout von Datenformularen für Canvas-Apps | Microsoft-Dokumentation
+description: Erstellen Sie mit PowerApps professionell aussehende Formularlayouts in Canvas-Apps mithilfe von Zeilen und Spalten.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/17/2017
 ms.author: gregli
-ms.openlocfilehash: 050e665a7a5c2a05ab9abfc989134028d303da4d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 7676c2d93eb5bbf55620a4d36f1f4818d52472d0
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017730"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470613"
 ---
-# <a name="understand-data-form-layout-in-microsoft-powerapps"></a>Grundlegendes zum Layout von Datenformularen in Microsoft PowerApps
-In PowerApps können Sie auf einfache Weise Formulare erstellen, die ansprechend aussehen und benutzerfreundlich sind. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:
+# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Grundlegendes zum Layout von Datenformularen für Canvas-Apps in PowerApps
+
+Erstellen Sie mühelos ein professionell aussehendes und effizientes Formular, wenn Sie eine Canvas-App in PowerApps erstellen. Sehen Sie sich beispielsweise dieses einfache Formular zum Aufzeichnen von Verkaufsaufträgen an:
 
 ![Beispiel eines Verkaufsauftrags](./media/working-with-form-layout/sales-order.png)
 
 In diesem Tutorial durchlaufen wir die Schritte zum Erstellen dieses Formulars. Außerdem beschäftigen wir uns mit einigen komplexeren Themen wie der dynamischen Größenänderung von Feldern zum Ausfüllen des verfügbaren Platzes.
 
 ## <a name="before-you-start"></a>Bevor Sie beginnen
+
 Wenn Sie noch nicht mit PowerApps vertraut sind (oder Apps bisher lediglich automatisch generiert haben), empfiehlt es sich, [eine App von Grund auf neu zu erstellen](get-started-create-from-blank.md), bevor Sie in dieses Thema einsteigen. Durch Erstellen einer App von Grund auf machen Sie sich mit den grundlegenden Konzepten vertraut, beispielsweise mit dem Hinzufügen von Datenquellen und Steuerelementen, die in diesem Artikel zwar erwähnt, jedoch nicht erläutert werden.
 
 ## <a name="add-a-gallery"></a>Einen Katalog hinzufügen
+
 1. Erstellen Sie eine Tablet-App von Grund auf neu.
-   
+
     Alles in diesem Artikel Besprochene gilt auch für Smartphonelayouts, allerdings haben Smartphone-Apps oft nur eine vertikale Spalte.
 2. Fügen Sie die Entität **Sales Order** (Verkaufsauftrag) in [Common Data Service](../common-data-service/data-platform-intro.md) als Datenquelle für die App hinzu.
-   
+
     Außerhalb dieses Tutorials können Sie eine beliebige Datenquelle verwenden, u.a. SharePoint-Listen und Excel-Tabellen.
 3. Fügen Sie ein vertikales **Katalog**-Steuerelement hinzu, und legen Sie dessen **Items**-Eigenschaft auf **'Sales order'** fest.
    

@@ -1,6 +1,6 @@
 ---
-title: Einbetten einer neuen App in einen Power BI-Bericht | Microsoft-Dokumentation
-description: Einbetten einer App mit derselben Datenquelle, die wie andere Berichtselemente gefiltert werden kann
+title: Einbetten einer neuen Canvas-App in einen Power BI-Bericht | Microsoft-Dokumentation
+description: Einbetten einer neuen Canvas-App mit derselben Datenquelle, die wie andere Berichtselemente gefiltert werden kann
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
 ms.author: mblythe
-ms.openlocfilehash: 05fe624be450dfcce0d16ae2f178c86ddf361201
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a5239a5d7ca1600b281558461f2a08969cabb633
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018673"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470958"
 ---
-# <a name="tutorial-embed-a-new-app-in-a-power-bi-report"></a>Tutorial: Einbetten einer neuen App in einen Power BI-Bericht
+# <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Einbetten einer neuen Canvas-App in einen Power BI-Bericht
 
-Mithilfe von Power BI können Sie die Funktionen erweitern, indem Sie *benutzerdefinierte Visuals* zu einem Bericht hinzufügen. In diesem Tutorial werden benutzerdefinierte PowerApps-Visuals verwendet, um eine neue App zu erstellen, die in einen Beispielbericht eingebettet ist. Diese App interagiert mit anderen Elementen in diesem Bericht.
+Mithilfe von Power BI können Sie die Funktionen erweitern, indem Sie *benutzerdefinierte Visuals* zu einem Bericht hinzufügen. In diesem Tutorial werden benutzerdefinierte PowerApps-Visuals verwendet, um eine Canvas-App zu erstellen, die in einen Beispielbericht eingebettet ist. Diese App interagiert mit anderen Elementen in diesem Bericht.
 
 Wenn Sie kein PowerApps-Abonnement besitzen, erstellen Sie ein [kostenloses Konto](../signup-for-powerapps.md), bevor Sie beginnen.
 

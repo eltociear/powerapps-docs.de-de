@@ -1,5 +1,6 @@
 ---
-title: Neues Erstellen einer Excel-App | Microsoft-Dokumentation
+title: Erstellen einer Canvas-App anhand von Excel-Daten | Microsoft-Dokumentation
+description: In diesem Tutorial erstellen Sie eine Canvas-App mit zwei Bildschirmen, damit Benutzer Datensätze erstellen, bearbeiten und löschen können.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 04/23/2018
 ms.author: anneta
-ms.openlocfilehash: 330751210322190fddefb6c399025578bb9878b5
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dafd6e4aafdc8f4709d25b9de8e6b997665c3d4a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195287"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469842"
 ---
-# <a name="create-an-excel-app-from-scratch"></a>Neues Erstellen einer Excel-App
-Erstellen Sie Ihre eigene neue App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber erfahrene App-Entwickler können damit die beste App für ihre Anforderungen erstellen.
+# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
+
+Erstellen Sie Ihre eigene Canvas-App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber erfahrene App-Entwickler können damit die beste App für ihre Anforderungen erstellen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Sie zunächst eine Excel-Datei mit diesen Beispieldaten.
 
 1. Kopieren Sie diese Daten, und fügen Sie sie in eine Excel-Datei ein.

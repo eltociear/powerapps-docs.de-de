@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen eines Scrollbildschirms | Microsoft-Dokumentation
-description: Erstellen Sie einen Bildschirm, durch den Benutzer scrollen können, um mehr Inhaltstypen anzuzeigen, als mit einem Mal auf dem Bildschirm angezeigt werden können.
+title: Hinzufügen eines Scrollbildschirms zu einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen Sie in PowerApps einen Bildschirm, durch den Benutzer scrollen können, um mehr Inhaltstypen anzuzeigen als auf einem Bildschirm in einer Canvas-App angezeigt werden können.
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: lonu
-ms.openlocfilehash: 4a8b92e012f9669f2b445ef864d3360ef42fbc01
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 742710a3814c87d9888e70cb50c635dddab904d1
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015982"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471257"
 ---
-# <a name="add-a-scrolling-screen-in-powerapps"></a>Hinzufügen eines Scrollbildschirms in PowerApps
-Erstellen Sie einen Bildschirm, durch den Benutzer scrollen können, um andere Elemente anzuzeigen. Sie können beispielsweise eine App erstellen, in der Daten in einem Säulendiagramm und einem Liniendiagramm dargestellt werden. Durch Hinzufügen eines Scrollbildschirms können Sie mehrere Steuerelemente hinzufügen, die Benutzer beim Scrollen anzeigen können.
+# <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>Hinzufügen eines Scrollbildschirms zu einer Canvas-App in PowerApps
+
+Erstellen Sie in einer Canvas-App einen Bildschirm, durch den Benutzer scrollen können, um andere Elemente anzuzeigen. Erstellen Sie z.B. eine Smartphone-App, die Daten in mehreren Diagrammen anzeigt, die Benutzer durch Scrollen anzeigen können.
 
 Wenn Sie in einem Abschnitt mehrere Steuerelemente hinzufügen, bleibt die relative Position der Steuerelemente im Abschnitt erhalten, wobei es keine Rolle spielt, ob es sich um eine Smartphone-App oder eine Tablet-App handelt. Beachten Sie, dass sich Bildschirmgröße und -ausrichtung auf die Anordnung der Abschnitte auswirken können.  
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="create-a-scrolling-screen"></a>Erstellen eines Scrollbildschirms
+
 1. Klicken oder tippen Sie auf der Registerkarte **Start** auf **Neuer Bildschirm**:
-   
+
     ![Option zum Hinzufügen eines Bildschirms zu einer App][1]
+
 2. Klicken oder tippen Sie auf der Registerkarte **Start** auf **Layouts**, und klicken oder tippen Sie anschließend auf die Option zum Erstellen eines unendlichen Scrolling-Zeichenbereichs:  
    
     ![Option zum Hinzufügen eines unendlichen Scrolling-Zeichenbereichs][2]

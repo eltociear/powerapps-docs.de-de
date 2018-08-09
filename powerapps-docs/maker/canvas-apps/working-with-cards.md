@@ -1,6 +1,6 @@
 ---
 title: Grundlegendes zu Datenkarten | Microsoft-Dokumentation
-description: Verwenden Sie Formularkarten zum Sammeln und Anzeigen von Informationen aus einer Datenquelle.
+description: Verwenden Sie in PowerApps Formularkarten zum Sammeln und Anzeigen von Informationen aus einer Datenquelle.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,23 +9,25 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 81e0213caee1d4eed466edebe3d13cbfa1c3e7e2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a229f77ea569c56e18fd955a66ce48a5e02f84a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020766"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470935"
 ---
-# <a name="understand-data-cards"></a>Grundlegendes zu Datenkarten
-**[Card](controls/control-card.md)** -Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)**. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.
+# <a name="understand-data-cards-in-powerapps"></a>Grundlegendes zu Datenkarten in PowerApps
+
+**[Card](controls/control-card.md)**-Steuerelemente sind die Bausteine der Steuerelemente **[Formular bearbeiten](controls/control-form-detail.md)** und **[Formular anzeigen](controls/control-form-detail.md)** in Canvas-Apps. Das Formular stellt den gesamten Datensatz dar, und jede Karte stellt ein einzelnes Feld dieses Datensatzes dar.
 
 Am einfachsten können Sie mit Karten im rechten Bereich interagieren, nachdem Sie ein Formularsteuerelement im Designarbeitsbereich ausgewählt haben. In diesem Bereich können Sie auswählen, welche Felder auf welche Weise in welcher Reihenfolge angezeigt werden sollen. In diesem Beispiel wird ein **Bearbeitungsformular**-Steuerelement in einer App veranschaulicht, die anhand der SharePoint-Liste **Assets** erstellt wurde.
 
-![](./media/working-with-cards/first-screen.png)
+![Erster Bildschirm](./media/working-with-cards/first-screen.png)
 
 Weitere Informationen zu den ersten Schritten mit Karten finden Sie unter [Add a form (Formular hinzufügen)](add-form.md) und [Understand data forms (Grundlegendes zu Datenformularen)](working-with-forms.md). Im weiteren Verlauf dieses Themas wird ausführlicher erläutert, wie Karten funktionieren, und wie Sie sie anpassen oder sogar Ihre eigenen Karten erstellen können.
 
 ## <a name="predefined-cards"></a>Vordefinierte Karten
+
 PowerApps bietet einen vordefinierten Satz von Smartcards, die für Zeichenfolgen, Zahlen und andere Datentypen geeignet sind. Im rechten Bereich finden Sie die verfügbaren Varianten; hier können Sie auch die für ein Feld verwendete Karte anpassen:
 
 ![](./media/working-with-cards/selected-card.png)

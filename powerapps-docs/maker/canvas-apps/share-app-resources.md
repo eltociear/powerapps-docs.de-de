@@ -1,6 +1,6 @@
 ---
-title: Freigeben von in der App verwendeten Ressourcen | Microsoft-Dokumentation
-description: Erfahren Sie, wie in der App verwendete Ressourcen freigegeben werden, wenn eine App freigegeben wird.
+title: Freigeben von in der Canvas-Apps verwendeten Ressourcen | Microsoft-Dokumentation
+description: So geben Sie Ressourcen frei, die Ihre Canvas-App in PowerApps verwendet
 author: archnair
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/28/2016
 ms.author: archanan
-ms.openlocfilehash: 09d4f26139ae33195c666a2eb71d70e02b035f69
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 881a0eb85d252131d6249c171c95c0711e4887d4
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194887"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471395"
 ---
-# <a name="share-app-resources"></a>Freigeben von App-Ressourcen
-Beachten Sie vor dem [Freigeben einer App](share-app.md) die Typen von Ressourcen, von denen sie abhängt. Dabei kann es sich z. B. um eine oder mehrere der folgenden handeln:
+# <a name="share-canvas-app-resources-in-powerapps"></a>Freigeben von Canvas-App-Ressourcen in PowerApps
+
+Beachten Sie vor dem [Freigeben einer Canvas-App](share-app.md) die Typen von Ressourcen, von denen sie abhängt. Dabei kann es sich z.B. um eine oder mehrere der folgenden handeln:
 
 * eine Verbindung mit einer Datenquelle
 * ein lokales Datengateway
@@ -30,6 +31,7 @@ Einige dieser Ressourcen werden automatisch freigegeben, wenn Sie die App freige
 Sie können auch Verbindungen, benutzerdefinierte Connectors und ein lokales Datengateway für die gesamte Organisation freigeben.
 
 ## <a name="connections"></a>Verbindungen
+
 Einige Typen von Verbindungen, z. B. SQL Server, werden automatisch freigegeben. Andere erfordern jedoch, dass Benutzer eigene Verbindungen mit der Datenquelle oder den Datenquellen in der App erstellen.
 
 Auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie bestimmen, ob eine Verbindung automatisch freigegeben wird, und Sie können Freigabeberechtigungen aktualisieren. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie anschließend auf **Verbindungen**. Wenn die Registerkarte **Freigabe** angezeigt wird, wird die Verbindung automatisch freigegeben.

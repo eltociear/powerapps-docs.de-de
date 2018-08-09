@@ -1,6 +1,6 @@
 ---
-title: Anzeigen einer Liste mit Elementen | Microsoft-Dokumentation
-description: Zeigen Sie mithilfe eines Katalogs eine Liste mit Elementen in der App an, und filtern Sie die Liste, indem Sie ein Kriterium angeben.
+title: Anzeigen einer Liste von Elementen in einer Canvas-App | Microsoft-Dokumentation
+description: Verwenden Sie einen Katalog, um eine Liste der Elemente in Ihrer Canvas-App anzuzeigen, und filtern Sie die Liste, indem Sie ein Kriterium angeben.
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 09/28/2017
 ms.author: sharik
-ms.openlocfilehash: 4806d65416816897542973644da592f7e6b2e252
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 753a4508890f5ab007bef2a1f4d81bb46043a089
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020973"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470498"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
-Zeigen Sie eine Liste mit Elementen aus einer beliebigen Datenquelle an, indem Sie der App ein **[Katalog](controls/control-gallery.md)**-Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)**-Steuerelement entsprechen.
+
+Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem Sie Ihrer Canvas-App ein **[Katalog](controls/control-gallery.md)**-Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)**-Steuerelement entsprechen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 * Erfahren Sie, wie Sie in PowerApps [ein Steuerelement hinzufügen und konfigurieren](add-configure-controls.md).
 
 * Einrichten der Beispieldaten:

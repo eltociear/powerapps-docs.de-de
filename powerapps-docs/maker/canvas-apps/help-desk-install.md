@@ -1,6 +1,6 @@
 ---
-title: Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“ | Microsoft-Dokumentation
-description: Ausführliche Anleitung zum Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“.
+title: Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps | Microsoft-Dokumentation
+description: Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
 author: caburk
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,24 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: 4ee281e211891dab812c4ae447dff3d967ffeff3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 3d6b418ac6738071f16ec4cf75c81c2850d67f74
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195770"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470406"
 ---
-# <a name="install-and-configure-the-help-desk-powerapps-sample"></a>Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“
+# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
 
-Ausführliche Anleitung zum Installieren und Konfigurieren der PowerApps-Beispiel-App „Help Desk“.
+Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
 
 Geschätzte Dauer: **10–15 Minuten**.
 
 > [!TIP]
-> Sehen Sie sich folgendes [Video](https://youtu.be/z4cdtD6hB_4) an, in dem der Vorgang veranschaulicht wird.
+> Eine Demonstration dieses Vorgangs finden Sie in diesem [Video](https://youtu.be/z4cdtD6hB_4).
 
+## <a name="overview-of-the-sample"></a>Übersicht über das Beispiel
 
-## <a name="help-desk-powerapps-sample-overview"></a>Überblick: PowerApps-Beispiel-App „Help Desk“
 Help Desk stellt eine benutzerfreundliche Oberfläche bereit, auf der Endbenutzer Supportexperten kontaktieren können. Hier finden Sie schnell Antworten auf Ihre wichtigsten Fragen und können den Status von offenen Tickets nachverfolgen sowie die Einzelheiten früherer Anfragen nachlesen. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
 
 ![Startbildschirm der PowerApps-App „Help Desk“](./media/help-desk-install/Login-screen.png)

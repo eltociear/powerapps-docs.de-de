@@ -1,6 +1,6 @@
 ---
-title: Hochladen von Multimediadateien und Einbetten in eine App | Microsoft-Dokumentation
-description: Anzeigen von Multimediadateien in einer App und Hochladen in eine Datenquelle
+title: Einbetten von Multimediadateien in einer Canvas-App und Hochladen der App | Microsoft-Dokumentation
+description: Anzeigen von Multimediadateien in einer Canvas-App und Hochladen in eine Datenquelle
 author: karthik-1
 manager: kvivek
 ms.service: powerapps
@@ -9,20 +9,23 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: sharik
-ms.openlocfilehash: 5c6c7b2973f85c1ebc3040e41d83653250599717
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 1b0c830dd5d0fb625bc8ac407bda47023036ed7f
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195011"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470176"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
-In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
+
+In diesem Artikel wird erläutert, wie Sie Multimediadateien in Ihre Canvas-App einbetten, Stiftzeichnungen in eine Datenquelle hochladen und Bilder aus einer Datenquelle in der Canvas-App anzeigen. Die in diesem Artikel verwendete Datenquelle ist eine Excel-Datei in OneDrive for Business.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Hinzufügen von Medien aus einer Datei oder aus der Cloud
+
 Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bilder, Video oder Audio).
 
 1. Wählen Sie auf der Registerkarte **Inhalt** die Option **Medien** aus.

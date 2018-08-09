@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Diagrammen | Microsoft-Dokumentation
-description: Anzeigen von Datenkategorien als Linien-, Kreis- oder Balkendiagramme
+title: Erstellen eines Diagramms in einer Canvas-App | Microsoft-Dokumentation
+description: Anzeigen von Datenkategorien als Linien-, Kreis- oder Balkendiagramme in einer Canvas-App in PowerApps
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: 5fecc52a5100f2ed0d045fd0ebdc3834f83d5b39
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 63244a05d81f807609c965892f6a84e30577b490
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195908"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471142"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
-Verwenden Sie Linien-, Kreis- und Balkendiagramme, um Ihre Daten anzuzeigen. Beim Arbeiten mit Diagrammen sollten die Daten, die Sie importieren, wie folgt gegliedert sein:
+
+Verwenden Sie Linien-, Kreis- und Balkendiagramme, um Ihre Daten in einer Canvas-App anzuzeigen. Beim Arbeiten mit Diagrammen sollten die Daten, die Sie importieren, nach folgenden Kriterien gegliedert sein:
 
 * Jede Reihe sollte in der ersten Zeile stehen.
 * Bezeichnungen sollten in der am weitesten links stehenden Spalte zu finden sein.
@@ -29,6 +30,7 @@ Ihre Daten sollten z.B. wie folgt aussehen:
 Sie können diese Diagramme in PowerApps erstellen und verwenden. Lassen Sie uns loslegen!
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 * [Registrieren Sie sich für PowerApps](../signup-for-powerapps.md), und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen eingeben, die Sie bei der Registrierung angegeben haben.
 * Erstellen Sie eine App aus einer [Vorlage](get-started-test-drive.md), aus [Daten](get-started-create-from-data.md) oder [von Grund auf neu](get-started-create-from-blank.md).
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.

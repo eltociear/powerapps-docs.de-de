@@ -2,28 +2,28 @@
 title: PowerShell-Unterstützung (Vorschau) | Microsoft-Dokumentation
 description: Hier finden Sie eine Beschreibung der verschiedenen PowerShell-Cmdlets und eine exemplarische Vorgehensweise zu deren Installation und Ausführung.
 author: jamesol-msft
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/23/2018
+ms.date: 07/31/2018
 ms.author: jamesol
-ms.openlocfilehash: b6ee687fdfe6da8550d76193a7c9219aae5ae291
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+ms.openlocfilehash: e45b23d4efc474bcd48069b9823d1ef80cf5ea4a
+ms.sourcegitcommit: a0a8782d3c8d24cecf0796d405a61f745f0ffd91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218830"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39367613"
 ---
 # <a name="powershell-support-for-powerapps-preview"></a>PowerShell-Unterstützung für PowerApps (Vorschau)
-Durch die Einführung der Vorschauversion der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
+Durch die Einführung der Vorschauversion der PowerShell-Cmdlets für App-Ersteller und -Administratoren können Sie viele der Überwachungs- und Verwaltungstasks automatisieren, die auf der [PowerApps-Website](https://web.powerapps.com) oder im [ PowerApps Admin Center](https://admin.powerapps.com) aktuell nur manuell ausgeführt werden können.
 
 ## <a name="installation"></a>Installation
 So führen Sie die PowerShell-Cmdlets für App-Ersteller aus:
 
 1. Laden Sie die [PowerShell-Skriptdatei](https://go.microsoft.com/fwlink/?linkid=2006349) herunter.
 
-2. Entzippen Sie die Datei in einem Ordner. 
+2. Entzippen Sie die Datei in einem Ordner.
 
 3. Öffnen Sie in demselben Ordner als Administrator ein PowerShell-Befehlsfenster.
 
@@ -71,7 +71,7 @@ Benutzer mit einer gültigen PowerApps-Lizenz können die Vorgänge in diesen Cm
 | Zweck | Cmdlet |
 | --- | --- |
 | Lesen von Umgebungen | Get-PowerAppEnvironment *(bisher Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment
-| Lesen, Aktualisieren und Löschen einer Canvas-App | Get-App <br> Remove-App <br> Publish-App <br> Set-AppDisplayName <br> Get-AppVersion <br> Restore-AppVersion
+| Lesen, Aktualisieren und Löschen einer Canvas-App | Get-PowerApp *(zuvor Get-App)* <br> Remove-PowerApp *(zuvor Remove-App)* <br> Publish-PowerApp *(zuvor Publish-App)* <br> Set-AppDisplayName *(zuvor Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(zuvor Get-AppVersion)* <br> Restore-PowerAppVersion *(zuvor Restore-AppVersion)*
 | Lesen, Aktualisieren und Löschen von Berechtigungen für eine Canvas-App | Get-PowerAppRoleAssignment *(bisher Get-AppRoleAssignment)* <br> Set-PowerAppRoleAssignment *(bisher Set-AppRoleAssignment)* <br> Remove-PowerAppRoleAssignment *(bisher Remove-AppRoleAssignment)*
 | Lesen, Aktualisieren und Löschen eines Flows | Get-Flow <br> Get-FlowRun <br> Enable-Flow <br> Disable-Flow <br> Remove-Flow
 | Lesen, Aktualisieren und Löschen von Berechtigungen für einen Flow | Get-FlowOwnerRole <br> Set-FlowOwnerRole <br> Remove-FlowOwnerRole
@@ -122,9 +122,9 @@ Zur Ausführung der Verwaltungsvorgänge in den Cmdlets für Administratoren ben
 > [!NOTE]
 > Mit den folgenden Befehle können Sie die Syntax- und Ansichtsbeispiele für die einzelnen Cmdlets besser nachvollziehen:
 >```
->Get-Help Get-AdminEnvironment
->Get-Help Get-AdminEnvironment -Examples
->Get-Help Get-AdminEnvironment -Detailed
+>Get-Help Get-AdminPowerAppEnvironment
+>Get-Help Get-AdminPowerAppEnvironment -Examples
+>Get-Help Get-AdminPowerAppEnvironment -Detailed
 >```
 
 ## <a name="questions"></a>Fragen?

@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Beziehung zwischen SharePoint-Listen mithilfe eines Nachschlagefelds | Microsoft-Dokumentation
-description: Erstellen Sie mithilfe eines Nachschlagefelds eine Beziehung zwischen SharePoint-Listen.
+title: Erstellen einer Beziehung zwischen SharePoint-Listen mithilfe eines Nachschlagefelds in einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen Sie in PowerApps mithilfe eines Nachschlagefelds eine Beziehung zwischen SharePoint-Listen in einer Canvas-App.
 author: skjerland
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
 ms.author: sharik
-ms.openlocfilehash: 342fcc36fb8dba9cfaa42c94089329ad19501af8
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 9ad61bdf115a79fe8284dad520a2e9710a59648b
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194932"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470521"
 ---
-# <a name="how-to-link-sharepoint-lists-using-lookup-fields"></a>Verknüpfen von SharePoint-Listen mithilfe von Nachschlagefeldern
-In diesem Tutorial wird gezeigt, wie Sie zwei SharePoint-Listen unter Verwendung von Nachschlagefeldern verknüpfen.
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Verknüpfen von SharePoint-Listen mithilfe von Nachschlagefeldern in PowerApps
+
+In diesem Tutorial erfahren Sie, wie Sie zwei SharePoint-Listen mithilfe eines Nachschlagefelds in einer Canvas-App verknüpfen.
 
 ## <a name="overview"></a>Übersicht
+
 SharePoint bietet zwei Arten von Nachschlagefeldern:
 
 * **Nachschlagen**: Verknüpfung mit einer anderen Liste, z.B. kann eine Liste *Bestellungen* über ein Nachschlagefeld verfügen, das mit den Kunden in einer Liste der *Kunden* verknüpft ist.
@@ -27,7 +29,8 @@ SharePoint bietet zwei Arten von Nachschlagefeldern:
 
 In diesem Tutorial erstellen Sie eine App, die diese Arten von Nachschlagefeldern verwendet.
 
-### <a name="what-do-you-use-lookup-fields-for"></a>Wozu werden Nachschlagefelder verwendet?
+### <a name="why-use-a-lookup-field"></a>Gründe für die Verwendung eines Nachschlagefelds
+
 Die Daten in einem Unternehmen sind umfangreich und komplex. Die Daten in einer SharePoint-Liste beziehen sich häufig auf Daten in einer anderen Liste. Nachschlagefelder sind die primäre Methode, um solche Geschäftsdaten zusammenzuführen.
 
 Beispiel: Sie verfügen über eine Liste **Bestellungen**, die ein Nachschlagefeld aufweist, das mit der Liste **Kunden** verknüpft ist. So kann angezeigt werden, welche Kunden die jeweilige Bestellung getätigt haben. Das Nachschlagefeld in der Liste **Bestellungen** ermöglicht es Ihnen, auch Daten aus der Liste **Kunden** abzurufen. Sie könnten außerdem ein Nachschlagefeld verwenden, um die Liste **Bestellungen** mit einer Liste **Produkte** zu verknüpfen und so Informationen zu den bestellten Produkten bereitzustellen, z.B. Produktabbildungen, Spezifikationen, Herstellerdetails usw.

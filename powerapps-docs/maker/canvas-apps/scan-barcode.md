@@ -1,5 +1,5 @@
 ---
-title: Scannen eines Barcodes | Microsoft-Dokumentation
+title: Scannen eines Barcodes in einer Canvas-App | Microsoft-Dokumentation
 description: Scannen Sie eine Vielzahl von Barcodetypen, z.B. UPC und Codabar.
 author: AFTOwen
 manager: kvivek
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/23/2016
 ms.author: anneta
-ms.openlocfilehash: befc72b875f7876bc0f9f907a094f0d97314c03c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 631277dc533d9792f08bf6a94bf9c345889c6795
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023319"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470590"
 ---
 # <a name="scan-a-barcode-in-powerapps"></a>Scannen eines Barcodes in PowerApps
-Scannen Sie verschiedene Arten von Barcodes, indem Sie eine App erstellen und diese auf einem Gerät mit einer Kamera ausführen, z.B. auf einem Telefon. Die numerische Darstellung des Barcodes wird in einem **Label** (Bezeichnung) angezeigt, und Sie können diese Daten in eine Vielzahl von [Datenquellen](connections-list.md) hochladen.
+
+Scannen Sie verschiedene Arten von Barcodes, indem Sie eine Canvas-App erstellen und auf einem Gerät ausführen, z.B. auf einem Mobiltelefon, das über eine Kamera verfügt. Die numerische Darstellung des Barcodes wird in einem **Label** (Bezeichnung) angezeigt, und Sie können diese Daten in eine Vielzahl von [Datenquellen](connections-list.md) hochladen.
 
 Wenn Sie mit PowerApps nicht vertraut sind, sehen Sie sich den Abschnitt [Erste Schritte](getting-started.md) an.
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
+
 * Barcodes müssen mindestens 2,5 cm hoch und 4 cm breit sein.
 * Um Barcodes mit einem Telefon zu scannen, halten Sie es hochkant, und bewegen Sie es langsam zwischen 18 cm bis 25 cm vom Barcode entfernt.
 * Lange Barcodetypen, (z.B. I2of5-Barcodes, die 15 Zeichen oder mehr umfassen können), können zu abgeschnittenen oder anderweitig fehlerhaften Ergebnissen führen – insbesondere dann, wenn der Barcode nicht deutlich gedruckt ist.

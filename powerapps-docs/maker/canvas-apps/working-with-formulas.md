@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit Formeln | Microsoft-Dokumentation
-description: Verwenden Sie Formeln zum Anpassen einer App.
+title: Erste Schritte mit Formeln in einer Canvas-App | Microsoft-Dokumentation
+description: Verwenden Sie in PowerApps Formeln, um eine Canvas-App anzupassen.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 7f9a724b61404ac0947a9c75f91396b35328086b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 266949870403dbe0d8a90f096b811478ace90732
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195264"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470659"
 ---
-# <a name="get-started-with-formulas"></a>Erste Schritte mit Formeln
-Konfigurieren Sie Ihre App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
+# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Erste Schritte mit Canvas-App-Formeln in PowerApps
+
+Konfigurieren Sie Ihre Canvas-App mit Formeln, die nicht nur Werte berechnen und andere Aufgaben ausführen (wie in Excel), sondern auch auf Benutzereingaben reagieren (wie eine App es erfordert).
 
 * In Excel erstellen Sie Formeln, um z.B. Zellen zu füllen und Tabellen und Diagramme zu erstellen.
 * In PowerApps erstellen Sie ähnliche Formeln, da Sie Steuerelemente anstelle von Zellen konfigurieren. Darüber hinaus erstellen Sie Formeln, die speziell für Apps anstatt für Arbeitsblätter gelten.

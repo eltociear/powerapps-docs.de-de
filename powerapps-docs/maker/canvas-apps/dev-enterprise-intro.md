@@ -9,20 +9,20 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/01/2017
 ms.author: mblythe
-ms.openlocfilehash: 79f0e852b62c41267224a2b3289b24fec65583a2
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 81949441e8fbb7881d21820e8bd4d5d790648fc2
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023848"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470820"
 ---
 # <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps für Unternehmensentwickler, Partner und ISVs
 
-Als Entwickler können Sie PowerApps erweitern, um noch leistungsfähigere Lösungen für Unternehmen und Kunden zu ermöglichen.
+Als Entwickler können Sie Canvas-Apps in PowerApps erweitern, um noch leistungsfähigere Lösungen für Unternehmen und Kunden zu ermöglichen.
 
 ## <a name="powerapps-for-enterprise-developers"></a>PowerApps für Unternehmensentwickler
 
-Geben Sie als Unternehmensentwickler Ihrer Organisation die Möglichkeit, stabile, maßgeschneiderte Lösungen in PowerApps zu erstellen:
+Ermöglichen Sie Ihrer Organisation als Unternehmensentwickler, stabile, maßgeschneiderte Lösungen in PowerApps zu erstellen:
 
 - **Erstellen von benutzerdefinierten Connectors:** Entwickeln Sie benutzerdefinierte Connectors, um über Microsoft Flow Verbindungen mit den Daten und Webdiensten Ihrer Organisation herzustellen. [Weitere Informationen](https://docs.microsoft.com/connectors/custom-connectors/)
 

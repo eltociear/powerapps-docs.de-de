@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu Datenquellen | Microsoft-Dokumentation
-description: Referenzinformationen zum Arbeiten mit Verbindungen und Datenquellen in Microsoft PowerApps.
+title: Grundlegendes zu Datenquellen für Canvas-Apps | Microsoft-Dokumentation
+description: Referenzinformationen zum Arbeiten mit Verbindungen und Datenquellen für Canvas-Apps.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,29 +9,33 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/08/2017
 ms.author: gregli
-ms.openlocfilehash: d8fd771d9407d0ca2601471a06c727b16a751f2a
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: a4dd3d2d21aa8e4f8501c9bc9812ba6658683f03
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39020882"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470383"
 ---
-# <a name="understand-data-sources-in-powerapps"></a>Grundlegendes zu Datenquellen in PowerApps
-Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.
+# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Grundlegendes zu Datenquellen für Canvas-Apps in PowerApps
+
+Die meisten Canvas-Apps in PowerApps nutzen externe Informationen, die als **Datenquellen** bezeichnet werden und in Clouddiensten gespeichert sind. Ein gängiges Beispiel ist eine Tabelle in einer Excel-Datei, die in OneDrive for Business gespeichert ist. Apps greifen auf diese Datenquellen mithilfe von **Verbindungen** zu.
 
 In diesem Artikel werden die verschiedenen Arten von Datenquellen und das Arbeiten mit Datenquellen in Form von Tabellen beschrieben.
 
 Es ist einfach, eine App zu erstellen, die grundlegende Lese- und Schreibvorgänge in Bezug auf eine Datenquelle ausführt. Es gibt aber Fälle, in denen Sie den Datenfluss in Ihre App und aus Ihrer App besser kontrollieren möchten.  In diesem Artikel wird beschrieben, wie die Funktionen **[Patch](functions/function-patch.md)**, **[DataSourceInfo](functions/function-datasourceinfo.md)**, **[Validate](functions/function-validate.md)** und **[Errors](functions/function-errors.md)** eine bessere Kontrolle ermöglichen.
 
 ## <a name="kinds-of-data-sources"></a>Arten von Datenquellen
+
 Datenquellen können mit einem Clouddienst verbunden sein oder für eine App lokal sein.
 
 ### <a name="connected-data-sources"></a>Verbundene Datenquellen
-Die geläufigsten Datenquellen sind **Tabellen**, die Sie zum Abrufen und Speichern von Informationen verwenden können. Sie können **Verbindungen** zu Datenquellen zum Lesen und Schreiben von Daten in Microsoft Excel-Arbeitsmappen, SharePoint-Listen, SQL-Tabellen und vielen anderen Formaten verwenden, die in Clouddiensten wie OneDrive for Business, DropBox, SQL Server usw. gespeichert werden können.
+
+Die geläufigsten Datenquellen sind **Tabellen**, die Sie zum Abrufen und Speichern von Informationen verwenden können. Mithilfe von **Verbindungen** mit Datenquellen können Sie Daten in Microsoft Excel-Arbeitsmappen, SharePoint-Listen, SQL-Tabellen und vielen anderen Formaten lesen und schreiben, die in Clouddiensten wie OneDrive for Business, DropBox und SQL Server gespeichert sein können.
 
 Andere Datenquellen als Tabellen sind z.B. E-Mail, Kalender, Twitter und Benachrichtigungen, die jedoch in diesem Artikel nicht behandelt werden.
 
 ### <a name="local-data-sources"></a>Lokale Datenquellen
+
 Mithilfe der Steuerelemente **[Katalog](controls/control-gallery.md)**, **[Formular anzeigen](controls/control-form-detail.md)** und **[Formular bearbeiten](controls/control-form-detail.md)** ist es einfach, eine App zu erstellen, die Daten aus einer Datenquelle liest und schreibt.  Lesen Sie zunächst den Artikel [Understand data forms (Grundlegendes zu Datenformularen)](working-with-forms.md).  
 
 Wenn Sie PowerApps zum Erstellen einer App aus Daten auffordern, werden diese Steuerelemente verwendet. Im Hintergrund verwendet die App eine interne Tabelle zum Speichern und Bearbeiten der Daten, die aus der Datenquelle stammen.
@@ -39,6 +43,7 @@ Wenn Sie PowerApps zum Erstellen einer App aus Daten auffordern, werden diese St
 Eine besondere Art von Datenquelle ist die [Sammlung](working-with-data-sources.md#collections), die für die App lokal ist und nicht über eine Verbindung mit einem Dienst in der Cloud gesichert ist, sodass die Informationen nicht auf Geräten für den gleichen oder andere Benutzer freigegeben werden können. Sammlungen können geladen und lokal gespeichert werden.
 
 ### <a name="kinds-of-tables"></a>Arten von Tabellen
+
 Bei Tabellen, die für eine App in PowerApps intern sind, handelt es sich wie bei einer Zahl oder einer Zeichenfolge um feste Werte. Interne Tabellen sind nur im Arbeitsspeicher der App vorhanden und werden an keiner anderen Stelle gespeichert. Sie können die Struktur und die Daten einer Tabelle nicht direkt ändern. Sie können stattdessen eine neue Tabelle mithilfe einer Formel erstellen, indem Sie mit dieser Formel eine geänderte Kopie der ursprünglichen Tabelle erstellen.
 
 Externe Tabellen werden in einer Datenquelle für späteren Abruf und Freigabe gespeichert.  PowerApps bietet „Verbindungen“ zum Lesen und Schreiben von gespeicherten Daten.  Innerhalb einer Verbindung können Sie auf mehrere Tabellen mit Informationen zugreifen.  Sie wählen aus, welche Tabellen in der App verwendet werden sollen, und aus jeder wird eine separate *Datenquelle*.  

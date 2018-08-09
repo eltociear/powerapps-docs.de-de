@@ -1,6 +1,6 @@
 ---
-title: Anzeigen von Details zum aktuellen Benutzer | Microsoft-Dokumentation
-description: Fügen Sie die User-Funktion ein, um den Namen und die E-Mail-Adresse des angemeldeten Benutzers in PowerApps anzuzeigen.
+title: Anzeigen von Details zum aktuellen Benutzer in einer Canvas-App | Microsoft-Dokumentation
+description: Anzeigen des Namens und der E-Mail-Adresse des angemeldeten Benutzers in einer Canvas-App in PowerApps
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 90a7ca39626e8eec8151bc3d5ced25a5701a126e
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 53d235a54aca1523cf243a315f5309bced1f15a9
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016258"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471188"
 ---
-# <a name="show-information-about-a-powerapps-user"></a>Anzeigen von Informationen zu einem PowerApps-Benutzer
-Mithilfe der User-Funktion können Sie den vollständigen Namen, die E-Mail-Adresse und das dem angemeldeten Benutzer zugeordnete Bild anzeigen. Sie können diese Informationen verwenden, um ein Formular automatisch auszufüllen.
+# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Anzeigen von Informationen zu einem PowerApps-Benutzer in einer Canvas-App
+
+Zeigen Sie den vollständigen Namen, die E-Mail-Adresse und das zugeordnete Bild des Benutzers, der bei einer Canvas-App angemeldet ist, in PowerApps an. Sie können diese Informationen verwenden, um beispielsweise ein Formular automatisch auszufüllen.
 
 Beispielsweise können Sie dieses Feature folgendermaßen einsetzen:
 
@@ -30,6 +31,7 @@ Grundsätzlich können Sie diese Funktion immer dann einsetzen, wenn Benutzer da
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="show-user-details"></a>Anzeigen von Benutzerdetails
+
 1. Klicken oder tippen Sie auf der Registerkarte **Einfügen** auf **Medien** und anschließend auf **Bild**.
    
    ![][2]

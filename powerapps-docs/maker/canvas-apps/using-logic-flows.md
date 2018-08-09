@@ -1,6 +1,6 @@
 ---
-title: Starten eines Flows in einer App | Microsoft-Dokumentation
-description: Erstellen Sie einen Flow, der eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt, z.B. wenn ein Benutzer eine Schaltfläche auswählt.
+title: Starten eines Flows in einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen Sie einen Flow, der mindestens eine Aufgabe ausführt, wenn ein Ereignis in einer Canvas-App auftritt, z.B. wenn ein Benutzer eine Schaltfläche auswählt.
 author: stepsic-microsoft-com
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2017
 ms.author: sharik
-ms.openlocfilehash: 9d681cc889a3f39fb0785ab0cba86e37ebe185b3
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 9096b00b7d1f08ebdb9e767ffcbcd9837aa797cf
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195885"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470452"
 ---
-# <a name="start-a-flow-in-an-app"></a>Starten eines Flows in einer App
-Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufgaben ausführt, wenn ein Ereignis in einer App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
+# <a name="start-a-flow-in-a-canvas-app"></a>Starten eines Flows in einer Canvas-App
+
+Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe ausführt, wenn ein Ereignis in einer Canvas-App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -25,6 +26,7 @@ Sie können mit Microsoft Flow eine Logik erstellen, die eine oder mehrere Aufga
 * Erfahren Sie, wie Sie ein [Steuerelement konfigurieren](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Erstellen eines Flows
+
 1. Melden Sie sich auf [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann auf der linken Navigationsleiste **Flows** aus.
 
 2. Wählen Sie auf der **Meine Flows**-Seite **Ohne Vorlage neu erstellen** aus.

@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu Tabellen | Microsoft-Dokumentation
-description: Referenzinformationen zum Arbeiten mit Tabellen, Spalten und Datensätzen
+title: Grundlegendes zu Tabellen in Canvas-Apps | Microsoft-Dokumentation
+description: Referenzinformationen zur Arbeit mit Tabellen, Spalten und Datensätzen von Canvas-Apps in PowerApps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/26/2016
 ms.author: gregli
-ms.openlocfilehash: 6e1a87324c0a004390ceb5d1ce4846325fe18bc7
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: e0fce2e574644f8ec8077e86dc3a5b4ee5f2cd3a
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021180"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469900"
 ---
-# <a name="understand-tables-and-records-in-powerapps"></a>Grundlegendes zu Tabellen und Datensätzen in PowerApps
-Sie können Apps erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreifen, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.
+# <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Grundlegendes zu Canvas-App-Tabellen und -Datensätzen in PowerApps
+
+In PowerApps können Sie eine Canvas-App erstellen, die auf Informationen in Microsoft Excel, SharePoint, SQL Server und anderen Quellen zugreift, die Daten in Datensätzen und Tabellen speichern. Um möglichst effizient mit diesen Daten umzugehen, machen Sie sich mit den Konzepten vertraut, die diesen Strukturen zugrunde liegen.
 
 * Ein Datensatz enthält mindestens eine Kategorie von Informationen zu einer Person, einem Ort oder einem Gegenstand. Ein Datensatz kann z.B. den Namen, die E-Mail-Adresse und die Telefonnummer eines einzelnen Kunden enthalten. Andere Tools beziehen sich auf einen Datensatz als „Zeile“ oder „Element“.
 * Eine Tabelle enthält mindestens einen Datensatz, der dieselben Informationskategorien enthält. Eine Tabelle kann z.B. die Namen, die E-Mail-Adressen und die Telefonnummern von 50 Kunden enthalten.

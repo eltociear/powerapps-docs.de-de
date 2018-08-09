@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen und Konfigurieren eines Steuerelements | Microsoft-Dokumentation
-description: Hier erhalten Sie schrittweise Anweisungen, anhand derer Sie Steuerelemente direkt, über die Symbolleiste, auf der Registerkarte „Eigenschaften“ oder in der Bearbeitungsleiste hinzufügen und konfigurieren können.
+title: Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements | Microsoft-Dokumentation
+description: Hier erhalten Sie schrittweise Anweisungen, anhand derer Sie Canvas-App-Steuerelemente direkt, über die Symbolleiste, auf der Registerkarte „Eigenschaften“ oder in der Bearbeitungsleiste hinzufügen und konfigurieren können.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/10/2017
 ms.author: anneta
-ms.openlocfilehash: 24f0479db0707e667263f5b160d6785560fe604b
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: dca3ec23b436f96013e9f5102c8b63c6c7d44935
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195586"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470360"
 ---
-# <a name="add-and-configure-a-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Steuerelements in PowerApps
-Fügen Sie Ihrer App vielfältige Benutzeroberflächenelemente hinzu, und konfigurieren Sie Aspekte ihrer Darstellung und ihres Verhaltens direkt, über die Symbolleiste, auf der Registerkarte **Eigenschaften** oder in der Bearbeitungsleiste. Diese Elemente der Benutzeroberfläche werden als Steuerelemente bezeichnet, während die von Ihnen konfigurierten Aspekte als Eigenschaften bezeichnet werden.
+# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements in PowerApps
+
+Fügen Sie Ihrer Canvas-App vielfältige Benutzeroberflächenelemente hinzu, und konfigurieren Sie Aspekte ihrer Darstellung und ihres Verhaltens direkt, über die Symbolleiste, auf der Registerkarte **Eigenschaften** oder in der Bearbeitungsleiste. Diese Elemente der Benutzeroberfläche werden als Steuerelemente bezeichnet, während die von Ihnen konfigurierten Aspekte als Eigenschaften bezeichnet werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 1. [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 
 2. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** auf **Neu** (nahe dem linken Rand).

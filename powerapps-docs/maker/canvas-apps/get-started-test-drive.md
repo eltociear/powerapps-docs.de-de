@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer App aus einer Vorlage | Microsoft-Dokumentation
-description: Ausführliche Anleitung zum automatischen Erstellen einer App auf Grundlage einer PowerApps-Vorlage
+title: Erstellen einer Canvas-App aus einer Vorlage | Microsoft-Dokumentation
+description: Ausführliche Anleitung zum automatischen Erstellen einer Canvas-App auf Grundlage einer PowerApps-Vorlage
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,21 +9,23 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
 ms.author: anneta
-ms.openlocfilehash: 3827255726be017fe594a2c54389df7c622f7307
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 8b750760ab10c33d17f0e73f8b90a59e6a7b84f7
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195241"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471234"
 ---
-# <a name="create-an-app-from-a-powerapps-template"></a>Erstellen einer App aus einer PowerApps-Vorlage
-Erstellen Sie eine App automatisch auf Grundlage einer Vorlage für ein bestimmtes Szenario, z.B. das Nachverfolgen von Budgets oder das Planen von Urlauben, und führen Sie die App dann aus, um deren Standardverhalten nachvollziehen zu können.
+# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Erstellen einer Canvas-App aus einer Vorlage in PowerApps
+
+Erstellen Sie eine Canvas-App automatisch aus einer Vorlage für ein bestimmtes Szenario, z.B. das Nachverfolgen von Budgets oder das Planen von Urlauben, und führen Sie die App dann aus, um deren Standardverhalten nachvollziehen zu können.
 
 Sie benötigen ein Cloudspeicherkonto (z.B. Dropbox, OneDrive oder Google Drive), um die Beispieldaten von Vorlagen zu speichern und eine App aus einer Vorlage zu erstellen.
 
 Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Erstellen einer App
+
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     ![PowerApps-Startseite](./media/get-started-test-drive/sign-in.png)

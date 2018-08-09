@@ -1,6 +1,6 @@
 ---
-title: Entwickeln von offlinefähigen Apps | Microsoft-Dokumentation
-description: Entwickeln Sie offlinefähige Apps, damit Ihre Benutzer stets produktiv sein können, gleich ob online oder offline.
+title: Entwickeln von offlinefähigen Canvas-Apps | Microsoft-Dokumentation
+description: Entwickeln Sie offlinefähige Canvas-Apps, damit Ihre Benutzer online und offline stets produktiv sein können.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,22 +9,24 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: cb2ed2404f7270367b3a26bf8eccb733b09fee23
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: 9035809f989ad4b0215d4a8eba5d693d145b7f66
+ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023135"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39471211"
 ---
-# <a name="develop-offline-capable-apps-with-powerapps"></a>Entwickeln von offlinefähigen Apps mit PowerApps
-Eins der häufigsten Szenarien, denen Sie als Entwickler von mobilen Apps begegnen, besteht darin, Ihren Benutzern produktives Arbeiten in Umgebungen mit eingeschränkter Konnektivität oder ohne Konnektivität zu ermöglichen. PowerApps weist eine Reihe von Funktionen und Verhaltensweisen auf, die Sie bei der Entwicklung von Apps mit Offlinefähigkeit unterstützen. Sie haben folgende Möglichkeiten:
+# <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>Entwickeln von offlinefähigen Canvas-Apps mit PowerApps
 
-* Starten der mobilen PowerApps-App ohne Onlineverbindung.
+Eins der häufigsten Szenarios, denen Sie als Entwickler von mobilen Apps begegnen, besteht darin, Ihren Benutzern produktives Arbeiten in Umgebungen mit eingeschränkter Konnektivität oder ohne Konnektivität zu ermöglichen. PowerApps weist eine Reihe von Features und Verhaltensweisen auf, die Sie bei der Entwicklung von Canvas-Apps mit Offlinefähigkeit unterstützen. Sie haben folgende Möglichkeiten:
+
+* Starten von PowerApps Mobile ohne Onlineverbindung.
 * Ausführen von Apps, die offline entwickelt wurden.
 * Mithilfe des Signalobjekts [Connection](../canvas-apps/functions/signals.md#connection) bestimmen, ob eine App offline, online oder in einer getakteten Verbindung ist.
 * Verwenden von [Sammlungen](../canvas-apps/create-update-collection.md) und Nutzung von Funktionen wie [LoadData und SaveData](../canvas-apps/functions/function-savedata-loaddata.md), um offline grundlegende Datenspeicherung zur Verfügung zu machen.
 
 ## <a name="how-to-build-offline-capable-apps"></a>Erstellen von offlinefähigen Apps
+
 Das Erste, was Sie bei Offlineszenarien bedenken müssen, ist die Weise, in der Ihre Apps mit Daten umgehen. Apps in PowerApps greifen auf Daten hauptsächlich mithilfe einer Sammlung von [Connectors](../canvas-apps/connections-list.md) zu, die von der Plattform bereitgestellt werden, wie etwa SharePoint, Office 365 und Common Data Service. Darüber hinaus können Sie benutzerdefinierte Connectors erstellen, die Apps den Zugriff auf jeden Dienst ermöglichen, der einen RESTful-Endpunkt bereitstellt. Dabei kann es sich um eine Web-API oder um einen Dienst handeln, wie etwa Azure Functions. Alle diese Connectors verwenden HTTPS im Internet, was bedeutet, dass Ihre Benutzer online sein müssen, damit sie auf Daten und andere Funktionen zugreifen können, die von einem Dienst bereitgestellt werden.
 
 ![PowerApps-App mit Connectors](./media/offline-apps/online-app.png)

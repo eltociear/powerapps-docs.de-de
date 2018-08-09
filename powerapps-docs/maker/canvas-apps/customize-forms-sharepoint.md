@@ -1,6 +1,6 @@
 ---
-title: Anpassen von Formularen | Microsoft-Dokumentation
-description: Geben Sie an, welche Daten in welcher Reihenfolge und in welchen Steuerelementen angezeigt werden sollen.
+title: Anpassen eines Formulars in einer Canvas-App | Microsoft-Dokumentation
+description: Geben Sie in PowerApps an, welche Daten in einem Canvas-App-Formular in welcher Reihenfolge und in welchen Steuerelementen angezeigt werden sollen.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,24 +9,27 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
 ms.author: anneta
-ms.openlocfilehash: aefe350c2294f9d8cbae32eee1db1f600c8a65da
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: 14ea731907624f882ae117a09c7f799a25389fe6
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195103"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471441"
 ---
-# <a name="customize-forms-in-powerapps"></a>Anpassen von Formularen in PowerApps
-Anpassen eines **Anzeigeformular**-Steuerelements und eines **Bearbeitungsformular**-Steuerelements, sodass die wichtigsten Daten in der intuitivsten Reihenfolge angezeigt werden, damit Benutzer die Daten leicht verstehen und aktualisieren können.
+# <a name="customize-a-canvas-app-form-in-powerapps"></a>Anpassen eines Canvas-App-Formulars in PowerApps
+
+Passen Sie in einer Canvas-App ein **Anzeigeformular**-Steuerelement und ein **Bearbeitungsformular**-Steuerelement an, sodass die wichtigsten Daten in der intuitivsten Reihenfolge angezeigt werden, damit Benutzer die Daten leicht verstehen und aktualisieren können.
 
 Jedes Formular umfasst eine oder mehrere Karten, die jeweils Daten aus einer bestimmten Spalte in der Datenquelle anzeigen. Wenn Sie die in diesem Artikel beschriebenen Schritte ausführen, können Sie angeben, welche Karten in einem Formular angezeigt werden, und Karten innerhalb eines Formulars nach oben oder unten verschieben.
 
 Wenn Sie mit PowerApps nicht vertraut sind, finden Sie Grundlagen unter [Einführung in PowerApps](getting-started.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 [Generieren einer App](data-platform-create-app.md) aus Common Data Service und [Anpassen des Katalogs](customize-layout-sharepoint.md) in dieser App.
 
 ## <a name="show-and-hide-cards"></a>Karten ein- und ausblenden
+
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     ![Startseite der PowerApps-Website](./media/customize-forms-sharepoint/sign-in.png)

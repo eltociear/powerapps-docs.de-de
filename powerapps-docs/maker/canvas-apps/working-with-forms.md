@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu Formularen | Microsoft-Dokumentation
-description: Verwenden Sie Formulare zum Sammeln und Anzeigen von Informationen aus einer Datenquelle.
+title: Grundlegendes zu Canvas-App-Formularen | Microsoft-Dokumentation
+description: Fügen Sie in PowerApps einer Canvas-App ein Formular hinzu, damit Sie Informationen aus einer Datenquelle erfassen und anzeigen können.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/27/2016
 ms.author: gregli
-ms.openlocfilehash: b2eb001ee426dc3449b440a357c67bc47b702d42
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.openlocfilehash: c7bd68f37cc469b054a75012d4166c05375db6ff
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195747"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39470245"
 ---
-# <a name="understand-data-forms-in-microsoft-powerapps"></a>Grundlegendes zu Datenformularen in Microsoft PowerApps
-Fügen Sie drei Arten von Steuerelementen hinzu, damit Benutzer nach einem Datensatz suchen, Einzelheiten zu dem Datensatz anzeigen oder einen Eintrag dazu bearbeiten oder erstellen können:
+# <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Grundlegendes zu Canvas-App-Formularen in Microsoft PowerApps
+
+Fügen Sie einer Canvas-App drei Arten von Steuerelementen hinzu, damit Benutzer nach einem Datensatz suchen, Einzelheiten zu dem Datensatz anzeigen oder einen Eintrag dazu bearbeiten oder erstellen können:
 
 | Aktivität | Steuerelement | Beschreibung |
 | --- | --- | --- |

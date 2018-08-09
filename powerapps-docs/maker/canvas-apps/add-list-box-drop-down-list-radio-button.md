@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Listenfeldern, Dropdownlisten und Optionsfeldern | Microsoft-Dokumentation
-description: Erstellen oder Konfigurieren von Mehrfachauswahl-Optionen in PowerApps
+title: Hinzufügen von Listenfeldern, Dropdownlisten und Optionsfeldern zu einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen oder Konfigurieren von Mehrfachauswahloptionen in einer Canvas-App in PowerApps
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,19 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
 ms.author: lonu
-ms.openlocfilehash: ecdd1cc5aa9ccbad7c2973f8ad899b213dcd96f3
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+ms.openlocfilehash: b4988157a8f194f7b1148cff79de1b5ce44add14
+ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023825"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39471027"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons"></a>Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern
-PowerApps bietet Mehrfachauswahl- und Einfachauswahl-Optionen; hierzu zählen ein Listenfeld, eine Dropdownliste und Optionsfelder. In diesem Thema werden diese Steuerelemente hinzugefügt, und mithilfe einer **Tabellen**-Formel werden die Listen erstellt. Wenn ein Element in der Liste ausgewählt wird, werden andere Steuerelemente aktualisiert.
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>Hinzufügen eines Listenfelds, einer Dropdownliste oder eines Optionsfelds zu einer Canvas-App in PowerApps
+
+PowerApps bietet Mehrfachauswahl- und Einfachauswahloptionen für Canvas-Apps; hierzu zählen Listenfelder, Dropdownlisten und Optionsfelder. In diesem Thema werden diese Steuerelemente hinzugefügt, und mithilfe einer **Tabellen**-Formel werden die Listen erstellt. Wenn ein Element in der Liste ausgewählt wird, werden andere Steuerelemente aktualisiert.
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="add-a-list-box"></a>Hinzufügen eines Listenfelds
+
 1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Steuerelemente** und anschließend **Listenfeld** aus:  
 
     ![][2]  
