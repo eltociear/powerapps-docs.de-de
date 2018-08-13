@@ -54,14 +54,14 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
    **Navigate(Target, ScreenTransition.Fade)**
    
     Benötigen Sie weitere Informationen zur **[Navigate](../functions/function-navigate.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
-4. Fügen Sie in **Target** ein  **[Shape](control-shapes-icons.md)**-Steuerelement hinzu (z.B. einen Pfeil), und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
+4. Fügen Sie in **Target** ein **[Shape](control-shapes-icons.md)**-Steuerelement hinzu (z.B. einen Pfeil), und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
    **Navigate(Source, ScreenTransition.Fade)**
 5. Legen Sie die **[Fill](properties-color-border.md)**-Eigenschaft von **Target** auf diese Formel fest:<br>
    **If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))**
-6. Drücken Sie von **Source** auf F5, klicken oder tippen Sie auf eine der Optionen im **[Optionsfeld](control-radio.md)**-Steuerelement, und klicken oder tippen Sie anschließend auf das  **[Shape](control-shapes-icons.md)**-Steuerelement.
+6. Drücken Sie von **Source** auf F5, klicken oder tippen Sie auf eine der Optionen im **[Optionsfeld](control-radio.md)**-Steuerelement, und klicken oder tippen Sie anschließend auf das **[Shape](control-shapes-icons.md)**-Steuerelement.
    
     **Target** wird in der von Ihnen ausgewählten Farbe angezeigt.
-7. Klicken oder tippen Sie in **Target** auf das  **[Shape](control-shapes-icons.md)**-Steuerelement, um zu **Source** zurückzukehren.
+7. Klicken oder tippen Sie in **Target** auf das **[Shape](control-shapes-icons.md)**-Steuerelement, um zu **Source** zurückzukehren.
 8. (optional) Klicken oder tippen Sie auf die andere Option im  **[Optionsfeld](control-radio.md)-Steuerelement** , und klicken oder tippen Sie anschließend auf das **[Shape](control-shapes-icons.md)** -Steuerelement, um zu bestätigen, dass  **Target** in einer anderen Farbe angezeigt wird.
 9. Drücken Sie ESC, um zum Standardarbeitsbereich zurückzukehren.
 
