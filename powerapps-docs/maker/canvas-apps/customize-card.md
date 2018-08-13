@@ -48,7 +48,7 @@ Ersetzen Sie in diesem Verfahren ein **[Texteingabe](controls/control-text-input
     ![EditForm1 mit Schieberegler-Steuerelement](./media/customize-card/add-slider.png)
 
 ## <a name="unlock-and-customize-a-card"></a>Entsperren und Anpassen einer Karte
-In diesem Verfahren entsperren Sie eine Karte und ersetzen anschließend ein **[Schalter](controls/control-toggle.md)**-Steuerelement durch ein**[Kontrollkästchen](controls/control-check-box.md)**-Steuerelement.
+In diesem Verfahren entsperren Sie eine Karte und ersetzen anschließend ein **[Schalter](controls/control-toggle.md)** -Steuerelement durch ein **[Kontrollkästchen](controls/control-check-box.md)** -Steuerelement.
 
 1. Rufen Sie das Feld **Send Marketing Materials** (Marketingmaterialien senden) in **EditForm1** ab.
 

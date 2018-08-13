@@ -28,7 +28,7 @@ Diese Funktionen formen eine Tabelle, indem sie deren Spalten anpassen:
 
 Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahlen.  Sie können eine Tabelle als Argument in einer Formel angeben, und Formeln können eine Tabelle als Ergebnis zurückgeben. Die in diesem Thema beschriebenen Funktionen ändern eine Tabelle nicht. Stattdessen nehmen sie eine Tabelle als Argument und geben eine neue Tabelle mit einer angewendeten Transformation zurück.  Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).  
 
-Die Spalten einer [Datenquelle](../working-with-data-sources.md) können durch diese Funktionen nicht geändert werden. Daten müssen an ihrer Quelle geändert werden. Sie können einer [Sammlung](../working-with-data-sources.md#collections) mit der **[Collect](function-clear-collect-clearcollect.md)**-Funktion Spalten hinzufügen.  Weitere Informationen finden Sie unter [Arbeiten mit Datenquellen](../working-with-data-sources.md).  
+Die Spalten einer [Datenquelle](../working-with-data-sources.md) können durch diese Funktionen nicht geändert werden. Daten müssen an ihrer Quelle geändert werden. Sie können einer [Sammlung](../working-with-data-sources.md#collections) mit der **[Collect](function-clear-collect-clearcollect.md)** -Funktion Spalten hinzufügen.  Weitere Informationen finden Sie unter [Arbeiten mit Datenquellen](../working-with-data-sources.md).  
 
 ## <a name="description"></a>Beschreibung
 Die Funktion **AddColumns** fügt einer Tabelle eine Spalte hinzu, und eine Formel definiert die Werte in dieser Spalte. Vorhandene Spalten bleiben unverändert.
