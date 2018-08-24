@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 02/05/2017
 ms.author: gregli
-ms.openlocfilehash: ac13b62e77b5d8ed35939983b3989b5edb13361c
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: 281e94f959fc87aae53e6881cf86ee0db5e53115
+ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018006"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40021293"
 ---
 # <a name="ismatch-function-in-powerapps"></a>Funktion „IsMatch“ in PowerApps
 Prüft, ob eine Zeichenfolge mit einem Muster übereinstimmt
@@ -68,7 +68,7 @@ Mit vordefinierten Mustern können Sie ganz leicht ein Zeichen aus einem Zeichen
 | **Any** |Ordnet ein beliebiges Zeichen zu |**.** |
 | **Comma** |Ordnet ein Komma zu |**,** |
 | **Digit** |Ordnet eine einzelne Ziffer („0“ bis „9“) zu |**\\d** |
-| **Email** |Ordnet eine E-Mail-Adresse zu, die ein at-Zeichen (@) und einen Domänennamen enthält, der einen Punkt (.) enthält. |**.+@.+\\.[^\\.]{2,}** |
+| **Email** |Ordnet eine E-Mail-Adresse zu, die ein at-Zeichen (\@) und einen Domänennamen enthält, der einen Punkt (.) enthält |**.+\@.+\\.[^\\.]{2,}** |
 | **Hyphen** |Ordnet einen Bindestrich zu |**\\-** |
 | **LeftParen** |Ordnet eine linke Klammer „(“ zu |**\\(** |
 | **Letter** |Ordnet einen Buchstaben zu |**\\p{L}** |
