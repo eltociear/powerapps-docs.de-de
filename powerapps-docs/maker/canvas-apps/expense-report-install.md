@@ -9,32 +9,32 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
 ms.author: caburk
-ms.openlocfilehash: f0fc0d9407511730145002bf109957b0878398bc
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5c2d9e2b815d1ff2c3dc80bc6c37f1c2e78364ac
+ms.sourcegitcommit: b35470285b96750d660335284d830b4d0028befb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470038"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "42859502"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
 
-Ausführliche Anleitung zum Installieren und Konfigurieren der Beispiel-App „Expense Report“
+Ausführliche Anleitung zum Installieren und Konfigurieren der Beispiel-App „Expense Report“ [Hier](https://aka.ms/previewmyexpenses) können Sie auch eine Vorschau der Beispiel-App anzeigen.
 
 Geschätzte Dauer: **10–15 Minuten**.
 
-Sehen Sie sich folgendes Video an, in dem der Vorgang veranschaulicht wird.
-
-[![Video zur Installation von Expense Report](./media/expense-report-install/expense-report-install-video.png)](https://youtu.be/DOR28V5kCkw)
-
-## <a name="overview-of-the-sample"></a>Übersicht über das Beispiel
+> [!TIP]
+> Sehen Sie sich [in diesem Video](https://youtu.be/kJXZPILfbwU) eine Demonstration zur Verwendung der Beispiel-App „Expense Report“ an. 
 
 Verfolgen Sie Ausgabenberichte nach – von der Einreichung bis zur Genehmigung. Buchen Sie Positionen als individuellen Ausgabenzuwachs, und senden Sie die Berichte zur Genehmigung, wenn sie fertig sind. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
 
 ![Startbildschirm der PowerApp „Expense Report“](./media/expense-report-install/expense-report-powerapp.png)
 
-Sehen Sie sich dieses Video an, um mehr über die Verwendung der PowerApps-Beispiel-App „Expense Report“ zu erfahren.
-
-[![Video zur Installation von Expense Report](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
+> [!TIP]
+> Sehen Sie sich [dieses Video](https://youtu.be/h6E9cdrOvMU) an, um mehr über die Verwendung der PowerApps-Beispiel-App „Expense Report“ zu erfahren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -377,9 +377,6 @@ In dieser Liste werden die Positionen der Ausgabenberichte gespeichert.
 2. Klicken Sie auf die **Auslassungspunkte** neben der Expense Report-PowerApp.
 3. Klicken Sie auf **Öffnen**.
 
-Sehen Sie sich dieses Video an, um mehr über die Verwendung der PowerApps-Beispiel-App „Expense Report“ zu erfahren.
-
-[![Video zur Installation von Expense Report](./media/expense-report-install/expense-report-demo-video.png)](https://youtu.be/h6E9cdrOvMU)
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Anpassen eines SharePoint-Listenformulars mit PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form)
