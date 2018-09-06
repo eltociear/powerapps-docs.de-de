@@ -11,12 +11,17 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: 83670a844c62a6daea489d5484641e9c457653f8
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8396d62e0f427d005f6b9e486820316be869ed15
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925660"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42826727"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>Wie kann ich Apps finden und ausführen?
 App-Entwickler können benutzerdefinierte task- und rollenbasierte *Canvas*-Apps erstellen, die an Ihre Bedürfnisse angepasst sind – unabhängig davon, ob Sie ein Mitarbeiter im Außendienst oder ein Doktor in einem Krankenhaus sind. Entwickler von Canvas-Apps können beinahe alle Bestandteile einer Canvas-App anpassen und eine Verbindung mit mehreren Datenquellen herstellen, um Benutzer beim Abschließen von Aufgaben mit einem Fokus zu unterstützen.

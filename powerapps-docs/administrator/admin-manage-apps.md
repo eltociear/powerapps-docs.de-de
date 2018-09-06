@@ -7,12 +7,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jimholtz
-ms.openlocfilehash: 9d900d2ebceb2ad3cca0c567b80d5d1fac4963ff
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: ac0ae8032ea64734030bf95ff9b473553e462b3b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349959"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835147"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>Verwalten von in Ihrer Organisation erstellten Apps 
 Wenn Sie ein Umgebungsadministrator, ein globaler Office 365-Administrator oder ein Azure Active Directory-Mandantenadministrator sind, können Sie die Apps verwalten, die in Ihrer Organisation erstellt wurden.

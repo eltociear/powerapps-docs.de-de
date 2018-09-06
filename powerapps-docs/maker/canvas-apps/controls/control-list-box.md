@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 30c55591e410b5526fc85b76b06002c2266e1867
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39016580"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835170"
 ---
 # <a name="list-box-control-in-powerapps"></a>Listenfeld-Steuerelement in PowerApps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
@@ -27,7 +31,7 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
+Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eigenschaftenliste standardmäßig **Items** an, sodass Sie ganz einfach die Daten angeben können, die das neue Steuerelement anzeigen soll. Sie können zum Beispiel die **Items**-Eigenschaft eines Katalogs auf die **Account**-Tabelle in Salesforce festlegen, eine Tabelle mit dem Namen **Inventory**, die Sie in Excel erstellt und in die Cloud hochgeladen haben, oder auf eine SharePoint-Liste mit dem Namen **ConferenceSpeakers**.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben

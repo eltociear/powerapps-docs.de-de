@@ -8,12 +8,18 @@ ms.topic: overview
 ms.date: 06/30/2018
 ms.author: jimholtz
 manager: kvivek
-ms.openlocfilehash: e33c27d85814fa240c515f874617a04d85a4666f
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 8fd29668be0d0a2ab1cfc3c3b54bb9550069142d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39351796"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849935"
 ---
 # <a name="whats-the-role-of-a-powerapps-administrator"></a>Welche Rolle spielt ein PowerApps-Administrator?
 Die Verwaltung von PowerApps, Microsoft Flow und Common Data Service (CDS) erfolgt über das [PowerApps Admin Center](https://admin.powerapps.com).

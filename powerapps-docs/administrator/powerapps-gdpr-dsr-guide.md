@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: ae73d5df51b2656fc4f33e7258078140a180926d
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: fddbb40e7b4b5d94b1df02e32af6316cce0a17d9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349200"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862885"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights, Rechte betroffener Personen) für PowerApps-Kundendaten
 
@@ -68,7 +74,7 @@ Modellgesteuerte Apps und Berechtigungen für modellgesteuerte Apps  | Das Desig
 
 In PowerApps haben Sie die folgenden Möglichkeiten, um nach personenbezogenen Daten über einen bestimmten Benutzer zu suchen:
 
-- **Websitezugriff**: [PowerApps-Website](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+- **Websitezugriff**: [PowerApps-Website](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 - **PowerShell-Zugriff**: PowerApps-Cmdlets (für [App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) und [Administratoren](https://go.microsoft.com/fwlink/?linkid=871804)) sowie [Cmdlets für lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238)
 
 Eine ausführliche Anleitung zur Verwendung dieser Möglichkeiten bei der Suche nach personenbezogenen Daten über einen bestimmten Benutzer für jede dieser Ressourcentypen finden Sie unter [Reagieren auf Anforderungen eines Exports von DSR-Anforderungen für PowerApps-Kundendaten](powerapps-gdpr-export-dsr.md).
