@@ -8,17 +8,23 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/23/2018
 ms.author: jamesol
-ms.openlocfilehash: cea8cf64a27e8468e9256df4e2e1239c32950df3
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 59cf670ee4b0aa9f9845a86a1d89bcb64329f2d4
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349476"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42856770"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-to-export-powerapps-customer-data"></a>Reagieren auf DSR-Anforderungen (Data Subject Rights) zum Exportieren von PowerApps-Kundendaten
 Das „Recht auf Datenübertragbarkeit“ ermöglicht einer betroffenen Person die Anforderung einer Kopie ihrer personenbezogenen Daten in elektronischem Format (d.h. in einem „strukturierten, häufig verwendeten, maschinenlesbaren und interoperablen Format“), die an einen anderen Verantwortlichen übertragen werden kann:
 
-* Websitezugriff: [PowerApps-Portal](https://web.powerapps.com), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
+* Websitezugriff: [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), [PowerApps Admin Center](https://admin.powerapps.com/) und [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)
 
 * PowerShell-Zugriff: PowerApps-[Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448), [Cmdlets für Administratoren](https://go.microsoft.com/fwlink/?linkid=871804) und [Cmdlets für lokale Gateways](https://go.microsoft.com/fwlink/?linkid=872238)
 
@@ -40,12 +46,12 @@ PowerApps-Benutzereinstellungen, Benutzeranwendungseinstellungen und Benachricht
 
 > ** Mit der Einführung von Common Data Service (CDS) für Apps werden bei der Erstellung einer Datenbank innerhalb der Umgebung Umgebungsberechtigungen und modellgesteuerte App-Berechtigungen in der Datenbankinstanz von CDS für Apps als Datensätze gespeichert. Anweisungen zum Reagieren auf DSR-Anforderungen für Benutzer, die CDS für Apps verwenden, finden Sie unter [Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps](common-data-service-gdpr-dsr-guide.md).
 
-> *** Ein Administrator kann nur über das [PowerApps-Portal](https://web.powerapps.com) auf die Ressourcen zugreifen, wenn der Besitzer der Ressource ihm explizit Zugriff erteilt hat. Wenn der Zugriff nicht vom Administrator gewährt wurde, müssen die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) verwendet werden.
+> *** Ein Administrator kann nur über das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) auf die Ressourcen zugreifen, wenn der Besitzer der Ressource ihm explizit Zugriff erteilt hat. Wenn der Zugriff nicht vom Administrator gewährt wurde, müssen die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) verwendet werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 ### <a name="for-users"></a>Für Benutzer
-Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge über das [PowerApps-Portal](https://web.powerapps.com) oder über [Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
+Alle Benutzer, die über eine gültige PowerApps-Lizenz verfügen, können die in diesem Dokument beschriebenen Vorgänge über das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder über [Cmdlets für App-Ersteller](https://go.microsoft.com/fwlink/?linkid=871448) durchführen.
 
 ### <a name="for-admins"></a>Für Administratoren
 Für die Durchführung der in diesem Dokument beschriebenen Verwaltungsvorgänge über das PowerApps Admin Center, das Microsoft Flow Admin Center oder die [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) benötigen Sie das Folgende:
@@ -126,7 +132,7 @@ Mit der Einführung von CDS für Apps werden Rollenzuweisungen bei Erstellung ei
 ## <a name="step-3-export-personal-data-contained-within-canvas-apps-created-by-the-user"></a>Schritt 3: Exportieren personenbezogener Daten, die in dem vom Benutzer erstellten Zeichenbereich enthalten sind
 
 ### <a name="powerapps-portal"></a>PowerApps-Portal
-Ein Benutzer kann eine App über das [PowerApps-Portal](https://web.powerapps.com) exportieren. Ausführliche Anweisungen zum Exportieren einer App finden Sie unter [Exportieren einer App](environment-and-tenant-migration.md#exporting-an-app).
+Ein Benutzer kann eine App über das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) exportieren. Ausführliche Anweisungen zum Exportieren einer App finden Sie unter [Exportieren einer App](environment-and-tenant-migration.md#exporting-an-app).
 
 ### <a name="powerapps-admin-center"></a>PowerApps Admin Center
 Administratoren können über das [PowerApps Admin Center](https://admin.powerapps.com/) von einem Benutzer erstellte Apps exportieren, indem sie die folgenden Schritte ausführen:
@@ -147,7 +153,7 @@ Administratoren können über das [PowerApps Admin Center](https://admin.powerap
 
     ![Benutzer Zugriff erteilen](./media/powerapps-gdpr-export-dsr/grant-access.png)
 
-5. Sobald Sie auf die einzelnen Apps des Benutzers Zugriff haben, können Sie über das [PowerApps-Portal](https://web.powerapps.com) eine App exportieren. Ausführliche Anweisungen zum Exportieren einer App finden Sie unter [Exportieren einer App](environment-and-tenant-migration.md#exporting-an-app).
+5. Sobald Sie auf die einzelnen Apps des Benutzers Zugriff haben, können Sie über das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine App exportieren. Ausführliche Anweisungen zum Exportieren einer App finden Sie unter [Exportieren einer App](environment-and-tenant-migration.md#exporting-an-app).
 
 ### <a name="powershell-cmdlets-for-admins"></a>PowerShell-Cmdlets für Administratoren
 Administratoren können über die Funktion **Get-AdminApp** in den [PowerShell-Cmdlets für Administratoren in PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) von einem Benutzer erstellte Apps exportieren:
@@ -274,7 +280,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ~~~~
  
 ## <a name="step-9-export-powerapps-notifications-user-settings-and-user-app-settings"></a>Schritt 9: Exportieren von PowerApps-Benachrichtigungen, -Benutzereinstellungen und -Benutzeranwendungseinstellungen
-PowerApps sendet verschiedene Arten von Benachrichtigungen an Benutzer, z.B. wenn eine App für sie freigegeben wurde oder ein CDS für Apps-Export abgeschlossen wurde. Der Benachrichtigungsverlauf eines Benutzers ist für die Benutzer im [PowerApps-Portal](https://web.powerapps.com) sichtbar.
+PowerApps sendet verschiedene Arten von Benachrichtigungen an Benutzer, z.B. wenn eine App für sie freigegeben wurde oder ein CDS für Apps-Export abgeschlossen wurde. Der Benachrichtigungsverlauf eines Benutzers ist für die Benutzer im [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) sichtbar.
 
 PowerApps speichert zudem verschiedene persönliche Optionen und Einstellungen zur Bereitstellung der PowerApps-Laufzeit und Portalerfahrungen, die beispielsweise beinhalten, wann ein Benutzer eine Anwendung zuletzt geöffnet oder fixiert hat.
 
@@ -292,15 +298,15 @@ Administratoren können ihre eigenen PowerApps-Benachrichtigungen, Benutzereinst
 ~~~~
 Add-PowerAppsAccount
 $userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
-Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -UserPrincipalName foobar@microsoft.com
+Get-AdminPowerAppsUserDetails -WriteToFile -OutputFilePath "UserDetails.json" -UserPrincipalName name@microsoft.com
 ~~~~
 
 ## <a name="step-10-export-personal-data-contained-for-a-user-stored-gateway-or-in-the-users-gateway-permissions"></a>Schritt 10: Exportieren von personenbezogenen Daten, die auf einem vom Benutzer gespeicherten Gateway oder in den Gatewayberechtigungen des Benutzers enthalten sind
 
 ### <a name="powerapps-portal"></a>PowerApps-Portal
-Benutzer können die personenbezogenen Daten exportieren, die über das [PowerApps-Portal](https://web.powerapps.com) im Gatewaydienst gespeichert wurden, indem sie die folgenden Schritte ausführen:
+Benutzer können die personenbezogenen Daten exportieren, die über das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im Gatewaydienst gespeichert wurden, indem sie die folgenden Schritte ausführen:
 
-1. Sie müssen im [PowerApps-Portal](https://web.powerapps.com) in der Standardumgebung ihrer Mandanten auf den Eintrag **Gateways** und anschließend auf **Details** klicken, um sämtliche Gateways anzuzeigen, auf die Sie Zugriff haben.
+1. Sie müssen im [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) in der Standardumgebung ihrer Mandanten auf den Eintrag **Gateways** und anschließend auf **Details** klicken, um sämtliche Gateways anzuzeigen, auf die Sie Zugriff haben.
 
     ![Landing Page des Gateways](./media/powerapps-gdpr-export-dsr/gateway-select-details.png)
 

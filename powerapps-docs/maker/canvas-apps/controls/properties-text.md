@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 27307d9e8c6a1e4e1eefb7dfbd61d65704f7f03d
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 2b88e765fcc56a2d76ede30a44fcfbaae70aaea3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39022974"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42861787"
 ---
 # <a name="text-properties-in-powerapps"></a>Texteigenschaften in PowerApps
 Konfigurieren Sie den für ein Steuerelement angezeigten Text in einer QuickInfo oder als Hinweis für Benutzer bei der Dateneingabe, und geben Sie andere textbezogene Merkmale an.
