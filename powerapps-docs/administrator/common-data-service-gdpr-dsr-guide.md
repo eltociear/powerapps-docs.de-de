@@ -9,12 +9,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: jamesol
-ms.openlocfilehash: de7af5aa10f2f39057806c6ad170dc32e85c9f02
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: df7ea7bd8a32354191d12d63881988dfd1c8e49e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349016"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843749"
 ---
 # <a name="responding-to-data-subject-rights-dsr-requests-for-common-data-service-for-apps-customer-data"></a>Reagieren auf DSR-Anforderungen für Kundendaten in Common Data Service für Apps
 
@@ -52,7 +58,7 @@ In diesem Artikel werden die folgenden Aktionen besprochen:
 
 CDS für Apps und die vorherige Version von CDS unterscheiden sich bei der Interaktion mit personenbezogenen Daten.
 
-Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com) anmelden und die folgenden Schritte durchführen:
+Sie können die Art der CDS-Umgebung ermitteln, indem Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden und die folgenden Schritte durchführen:
 
 1. Wählen Sie aus der Dropdownliste **Umgebung** eine Umgebung aus.
 2. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
@@ -308,12 +314,12 @@ Sie können personenbezogene Benutzerdaten der vorherigen Version von CDS in den
 
 |Ressourcen- | Zweck | Websitezugriff |  Programmatischer Zugriff
 | --- | --- | --- | ---
-|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com) |      Nein
+|Entitätsdatensätze | Erfassung von Geschäftstransaktionen in der jeweiligen Geschäftseinheit | [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) |   Nein
 
 #### <a name="entity-records"></a>Entitätsdatensätze
 Personenbezogene Daten von Einzelpersonen können in jeder Geschäftseinheit gespeichert werden.
 
-Die vorliegende Version von CDS umfasst ein eigenes Datenbankschema und eine Infrastruktur. Sie verfügt über ihre eigenen Entitäten, die Sie in [PowerApps](http://web.powerapps.com/) verwalten können.
+Die vorliegende Version von CDS umfasst ein eigenes Datenbankschema und eine Infrastruktur. Sie verfügt über ihre eigenen Entitäten, die Sie in [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwalten können.
 
 So können Sie eine Liste mit Ihren Entitäten anzeigen:
 
@@ -348,7 +354,7 @@ Zum Berichtigen personenbezogener, in der CDS-Umgebung enthaltener Daten können
 
 Die CDS-Administratoren sind dafür verantwortlich, alle Entitäten zu ermitteln, die personenbezogene Daten von Einzelpersonen enthalten. Für jede der Entitäten sind die folgenden Schritte auszuführen.
 
-Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
+Führen Sie in [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Folgendes durch:
 
 1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
 
@@ -379,7 +385,7 @@ Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
 ### <a name="export"></a>Exportieren
 Sie können personenbezogene Daten über jede Entität in ein Excel-Arbeitsblatt exportieren.
 
-Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
+Führen Sie in [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Folgendes durch:
 
 1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
 
@@ -404,7 +410,7 @@ Sie können personenbezogene Daten, die in Entitäten gespeichert sind, über da
 
 Die CDS-Administratoren sind dafür verantwortlich, alle Entitäten zu ermitteln, die personenbezogene Daten von Einzelpersonen enthalten. Für jede der Entitäten sind die folgenden Schritte auszuführen.
 
-Führen Sie in [PowerApps](http://web.powerapps.com/) Folgendes durch:
+Führen Sie in [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Folgendes durch:
 
 1. Klicken oder tippen Sie zuerst im Navigationsbereich auf **Daten** und dann auf **Entitäten**.
 

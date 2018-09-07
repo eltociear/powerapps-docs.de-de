@@ -10,12 +10,16 @@ ms.reviewer: anneta
 ms.component: canvas
 ms.date: 07/24/2017
 ms.author: gregli
-ms.openlocfilehash: 7922f286f9d1c1c3af8876b2cd8547b441b29585
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: e31d3689c7b61c408be90c31f1e212e4fdd9a91c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023917"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42848981"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Die Funktionen „Blank“, „Coalesce“, „IsBlank“ und „IsEmpty“ in PowerApps
 Prüft, ob ein Wert leer ist oder eine [Tabelle](../working-with-tables.md) keine [Datensätze](../working-with-tables.md#records) enthält, und stellt ein Verfahren zum Erstellen von *leeren* Werten zur Verfügung.

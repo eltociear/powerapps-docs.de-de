@@ -9,12 +9,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: manasma
-ms.openlocfilehash: 940789049a345c9f03bc008dc87b60e84b61af70
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 9b62d72cf04b56c945d0c85038e2264e9685828b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39348809"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42837583"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Erstellen einer Common Data Service-Datenbank für Apps
 Mithilfe von Common Data Service für Apps als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von CDS für Apps finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
@@ -42,7 +48,7 @@ Es gibt verschiedene Möglichkeiten zum Erstellen einer Datenbank:
 
 
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>Erstellen einer Datenbank im Bereich „Entitäten“ von PowerApps
-1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
 2. Klicken Sie auf **Datenbank erstellen**, um die Datenbank zu erstellen.
 

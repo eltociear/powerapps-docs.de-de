@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: 9c4ab469ef95dcb0dbb6f108ebbd111f585ded2d
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 040e9e540591e9a8c593dd273bedeabcffb23c90
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018857"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842645"
 ---
 # <a name="size-and-location-properties-in-powerapps"></a>Größen- und Positionseigenschaften in PowerApps
 ## <a name="overview"></a>Übersicht

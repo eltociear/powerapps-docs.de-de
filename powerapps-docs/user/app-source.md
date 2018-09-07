@@ -11,12 +11,17 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: ce7494e136c3cc4e0ff6e841f5145fee8a9185c2
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 512d45a92bf4fe3a8f5acb9d4bd5617bcdbaa4ca
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925476"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844660"
 ---
 # <a name="discover-apps-via-appsource"></a>Suchen nach Apps über AppSource
 Die von Ihnen mithilfe von PowerApps erstellten und veröffentlichten Apps werden im Web veröffentlicht und in Dynamics 365 verwendet. Alle Ihre Apps werden angezeigt, d.h. die Apps, für deren Verwendung Sie sich speziell entschieden haben (durch Starten aus einer Freigabe-E-Mail oder durch Öffnen aus AppSource) bzw. die ein Administrator für Sie bereitgestellt hat. Hierzu zählen alle Ihre Apps aus PowerApps, sowie alle Dynamics 365-Anwendungen aus Microsoft. Sie können nach Apps suchen, nach Umgebungen filtern und die am häufigsten verwendeten Apps am oberen Rand der Seite anheften.
