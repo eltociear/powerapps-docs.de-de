@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 09/11/2018
 ms.author: jamesol
 search.audienceType:
 - admin
@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 4eb1cdb3fb54780c693bb764bdf6d9de1e7088b5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 301592978d483d1b6ff5930a01f6c6c0119c779e
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864377"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499543"
 ---
 # <a name="licensing-overview"></a>Übersicht über die Lizenzierung
 PowerApps wird pro Benutzer lizenziert. Jeder Benutzer, der auf den Dienst zum Erstellen und Ausführen von Apps zugreift, benötigt eine Lizenz. Office 365- und Dynamics 365-Kunden können von den Vorteilen, die sich aus den PowerApps- und Microsoft Flow-Funktionen dieser Produkte ergeben, direkt profitieren. Kunden, die Apps und Flows erstellen möchten, für die auf Datenquellen außerhalb von Office 365 und Dynamics 365 zugegriffen wird, oder die zusätzliche Funktionalität benötigen, können eigenständige Abonnements für PowerApps und Microsoft Flow erwerben. Zwischen diesen Gruppen von Lizenzen bestehen wichtige Unterschiede in Bezug auf die Funktionalität.
@@ -92,7 +92,7 @@ Wenn Sie Ihre Kenntnisse ausbauen und mehr über PowerApps, Microsoft Flow und d
 In PowerApps-Lizenzen sind immer Microsoft Flow-Funktionen enthalten.  Microsoft Flow ist nicht nur in PowerApps-Lizenzen enthalten, sondern auch als eigenständiger Dienst. Weitere Informationen zu den jeweiligen Microsoft Flow-Funktionen der einzelnen PowerApps-Lizenzen finden Sie auf der [Seite mit den PowerApps-Preisen][2].
 
 ## <a name="resource-capacity-is-included-with-each-license"></a>Ressourcenfunktion ist in jeder Lizenz enthalten
-Die oben beschriebenen benutzerbezogenen Lizenzen verfügen über eine enthaltene Kapazität für Ressourcen, die zum Einsatz kommt, wenn eine App oder ein Flow ausgeführt werden. Zu diesen Ressourcen gehören Datenspeicherung, Dateispeicherung und Flowausführungen. Die in den benutzerbezogenen Lizenzen enthaltenen Funktionen werden auf Mandantenebene in einem Pool zusammengefasst, und wenn die Kapazität des Mandanten erschöpft ist, können Kunden zusätzliche Kapazität in Form von Add-On-Lizenzen erwerben. Die maximale Kapazität für den Common Data Service beträgt 10 GB pro Datenbank und 5 TB für die Dateispeicherung pro Umgebung. Wenn Sie zusätzliche Kapazität erwerben und die verfügbare Kapazität (Lizenzen und Add-Ons zusammen) die maximale Kapazität übersteigt, können Sie die Gesamtkapazität über mehrere Umgebungen hinweg verwenden. Informationen zu den Kapazitätsmengen der einzelnen PowerApps-Lizenzen finden Sie auf der [Seite mit den PowerApps-Preisen][2].
+Die oben beschriebenen benutzerbezogenen Lizenzen verfügen über eine enthaltene Kapazität für Ressourcen, die zum Einsatz kommt, wenn eine App oder ein Flow ausgeführt werden. Zu diesen Ressourcen gehören Datenspeicherung, Dateispeicherung und Flowausführungen. Die in den benutzerbezogenen Lizenzen enthaltenen Funktionen werden auf Mandantenebene in einem Pool zusammengefasst, und wenn die Kapazität des Mandanten erschöpft ist, können Kunden zusätzliche Kapazität in Form von Add-On-Lizenzen erwerben. Wenn Sie zusätzliche Kapazität erwerben und die verfügbare Kapazität (Lizenzen und Add-Ons zusammen) die maximale Kapazität übersteigt, können Sie die Gesamtkapazität über mehrere Umgebungen hinweg verwenden. Informationen zu den Kapazitätsmengen der einzelnen PowerApps-Lizenzen finden Sie auf der [Seite mit den PowerApps-Preisen][2].
 
 ## <a name="powerapps-licensing-examples"></a>Beispiele für PowerApps-Lizenzierung
 Wir sehen uns ein Beispiel an. ABC Inc. hat 1.000 Mitarbeiter, von denen 700 Personen über eine Lizenz für Office 365 Enterprise 3 verfügen. Ein Poweruser erstellt eine Branchenanwendung, mit der die Nachverfolgung von Kundenbestellungen vereinfacht wird. Zu einem späteren Zeitpunkt führt die Personalabteilung zusammen mit der IT-Abteilung den Rollout einer App für die Verwaltung der Urlaubs- und Fehltage durch, die auf dem Common Data Service basiert.
