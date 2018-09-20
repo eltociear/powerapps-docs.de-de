@@ -9,12 +9,12 @@ ms.custom: canvas
 ms.date: 03/12/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 62afc8fc0ce754ed797683a61c061db16370f904
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+ms.openlocfilehash: cfe9dd8d7a1a1342e7db4fb2786f68942bec7784
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39195195"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726904"
 ---
 # <a name="sign-up-for-a-free-license-to-try-powerapps"></a>Registrieren für eine kostenlose Lizenz zum Testen von PowerApps
 Zum Erstellen einer App in PowerApps benötigen Sie eine der verfügbaren Lizenzen. Diese enthalten unterschiedliche Funktionen. Sie besitzen bereits eine Lizenz für PowerApps, wenn Ihre Organisation eine Version von Office 365 oder Dynamics 365 oder Lizenzen für PowerApps-Plan 1 oder 2 für Sie erworben hat.
@@ -93,7 +93,7 @@ Wenn dieses Dialogfeld angezeigt wird, klicken Sie auf **Start**. Nun können Si
     In der [vollständigen Liste der Connectors](./canvas-apps/connections-list.md) sind Premium-Connectors gekennzeichnet:
 
     ![](./media/signup-for-powerapps/premium-badge.png)
-* **Zugriff auf das PowerApps Admin Center**, wo Sie Umgebungen, Datenbanken, Benutzerberechtigungen und Datenrichtlinien verwalten können. [Weitere Informationen](../administrator/introduction-to-the-admin-center.md)
+* **Zugriff auf das PowerApps Admin Center**, wo Sie Umgebungen, Datenbanken, Benutzerberechtigungen und Datenrichtlinien verwalten können. [Weitere Informationen](../administrator/admin-guide.md)
 * **Erstellen Sie Apps im modellgesteuerten Modus**, in dem Sie Komponenten zu einer App hinzufügen und PowerApps das Layout und andere Elemente der Benutzeroberfläche erstellen lassen. 
 
 Informationen zu Funktionen und zur Kapazität der Testversion finden Sie auf der [Tarifseite](https://powerapps.microsoft.com/pricing/).
