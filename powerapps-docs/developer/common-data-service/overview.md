@@ -15,18 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: c07a6505c0a08eca706c08cc2e4d607cd5322dfe
-ms.sourcegitcommit: 91a102426f1bc37504142cc756884f3670da5110
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b0e2d70a9295bdf1a8a6d6a71cb6075677bb991
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949257"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844052"
 ---
 # <a name="common-data-service-for-apps-developer-overview"></a>Übersicht für Entwickler: Common Data Service für Apps
+
 PowerApps bietet Benutzern, Unternehmen, unabhängigen Softwareherstellern und Systemintegratoren eine leistungsstarke Plattform für das Erstellen von branchenspezifischen Apps. Für PowerApps wurde in dieser Vorschauversion eine Erweiterung von Common Data Service hinzugefügt, jetzt Common Data Service für Apps genannt. Diese Erweiterung enthält nun die Kernfunktionen der Dynamics 365-Plattform, die Dynamics 365 for Sales, Marketing und Customer Service unterstützt.
 
 
 ## <a name="get-started"></a>Erste Schritte
+
 Wenn Sie bereits Erfahrung mit den Dynamics 365 for Sales-, Marketing- oder Customer Service-Apps haben, können Sie diese Erfahrungen nutzen, um Common Data Service für Apps anzupassen und zu erweitern.
 
 Wenn Sie noch nicht mit Dynamics 365 for Sales-, Marketing- oder Customer Service-Apps vertraut sind, finden Sie in den folgenden Artikeln eine allgemeine Übersicht über die wichtigsten Konzepte, die Ihnen den Einstieg in die Arbeit mit Common Data Service für Apps erleichtern.
@@ -52,7 +59,7 @@ Die folgenden Tools werden in NuGet-Paketen verteilt. Der Artikel [Herunterladen
 |Tool zur Plug-In-Registrierung `PluginRegistration.exe`|Ein Tool, das zum Abonnieren von Serverereignissen für Plug-In-Klassen für .NET-Assemblys verwendet wird. <br />Weitere Informationen finden Sie unter: <br />[Erstellen eines Plug-Ins](apply-business-logic-with-code.md#create-a-plug-in)<br />[Exemplarische Vorgehensweise: Registrieren eines Plug-Ins mithilfe des Plug-In-Registrierungstools](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
 |Solution Packager-Tool `SolutionPackager.exe`|Dabei handelt es sich um ein Tool, das umkehrbar eine mit Common Data Service für Apps komprimierte Lösungsdatei in mehrere XML-Dateien sowie andere Dateien zerlegen kann, damit diese Dateien ganz leicht über ein Quellcodeverwaltungssystem verwaltet werden können.<br /> Weitere Informationen finden Sie unter: <br />[Team development of solutions (Entwicklung von Lösungen im Team)](introduction-solutions.md#team-development-of-solutions)<br />[Verwenden des SolutionPackager-Tools, um eine Lösungsdatei zu komprimieren und zu extrahieren](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
-### <a name="net-sdk-assemblies"></a>.NET SDK-Assemblys 
+### <a name="net-sdk-assemblies"></a>.NET SDK-Assemblys
 
 Im Folgenden werden Assemblys aufgeführt, die von .NET-Entwicklern verwendet werden können. Sie können die neusten Versionen über die zugehörigen NuGet-Pakete herunterladen.
 

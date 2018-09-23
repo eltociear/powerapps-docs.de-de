@@ -6,23 +6,23 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 07/25/2018
+ms.date: 05/01/2018
 ms.author: clwesene
-ms.openlocfilehash: 758d5b5ff2c552a4c4ccbf210062f35d4e53209c
-ms.sourcegitcommit: efea7ed5ad8e80c87ba423fb094fa94b4e864d75
+ms.openlocfilehash: 4350f7141adf0fbce3e74271d6aff48c18c857e2
+ms.sourcegitcommit: 2bcc36916f0c591466eb3e007c2d30b99f2315c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39265508"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40009257"
 ---
 # <a name="license-requirements-for-entities"></a>Lizenzanforderungen für Entitäten
 Die Entwickler von Apps können die meisten Entitäten verwenden, die in Common Data Service (CDS) für Apps verfügbar sind (einschließlich benutzerdefinierte Entitäten und Entitäten, die Teil von Common Data Model sind), um Apps und Flows für Benutzer zu erstellen, die über eine Lizenz für PowerApps-Plan 1 oder Microsoft Flow-Tarif 1 besitzen. In einigen Fällen enthalten Entitäten komplexe Geschäftslogiken oder sind an Dynamics 365-Anwendungen gebunden, die erfordern, dass die Benutzer der App über eine bestimmte Lizenz verfügen. 
 
 
-|Einrichtung  |Beschreibung  |Anforderung  |
+|Einrichtung    |Beschreibung    |Anforderung    |
 |---------|---------|---------|
-|Entitäten mit komplexer Geschäftslogik  | Hierbei handelt es sich um Entitäten, die komplexe serverseitige Geschäftslogik verwenden. Zum Beispiel eine Entität, die einen Echtzeitworkflow oder ein Code-Plug-in verwendet.     | [PowerApps-Plan 2](https://powerapps.microsoft.com/pricing/) oder [Flow-Plan 2](https://flow.microsoft.com/pricing/)  | 
-|Eingeschränkte Entitäten    | Dabei handelt es sich um Entitäten, die nicht standardmäßig im Lieferumfang der von Common Data Service für Apps enthalten sind, sondern über eine Dynamics 365-Anwendung oder eine Drittanbieterlösung bezogen werden müssen. Zum Beispiel die Entitäten Knowledge-Artikel, Ziel und Berechtigung.    | [Ein Dynamics 365-Plan](https://dynamics.microsoft.com/pricing/)    |
+|Entitäten mit komplexer Geschäftslogik   | Hierbei handelt es sich um Entitäten, die komplexe serverseitige Geschäftslogik verwenden. Zum Beispiel eine Entität, die einen Echtzeitworkflow oder ein Code-Plug-in verwendet.       |  [PowerApps-Plan 2](https://powerapps.microsoft.com/pricing/) oder [Flow-Plan 2](https://flow.microsoft.com/pricing/)        |
+|Eingeschränkte Entitäten  |  Dabei handelt es sich um Entitäten, die nicht standardmäßig im Lieferumfang der von Common Data Service für Apps enthalten sind, sondern über eine Dynamics 365-Anwendung oder eine Drittanbieterlösung bezogen werden müssen. Zum Beispiel die Entitäten Knowledge-Artikel, Ziel und Berechtigung.     |  [Ein Dynamics 365-Plan](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -37,7 +37,7 @@ Entitäten, die folgende komplexe serverseitige Logik enthalten, erfordern, dass
     > [!NOTE]
     >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als synchron und in Echtzeit ausgeführt betrachtet. Workflows, die im Hintergrund ausgeführt werden, können vom entsprechenden PowerApps-Plan weiterhin verwendet werden und erfordern keine zusätzlichen Lizenzen.
 
-Überprüfen Sie die Liste der Plug-In-Assemblys und Workflows, die in Ihrer Umgebung konfiguriert sind, um zu ermitteln, ob Sie komplexe Geschäftslogiken zu Ihren Entitäten hinzugefügt haben. Die Liste der Entitäten, die nach der Installation einer Dynamics 365-Anwendung eine serverseitige Logik enthalten können, finden Sie unter [Komplexe Entitäten, die PowerApps Plan 2-Lizenzen erfordern](data-platform-complex-entities.md) 
+Überprüfen Sie die Liste der Plug-In-Assemblys und Workflows, die in Ihrer Umgebung konfiguriert sind, um zu ermitteln, ob Sie komplexe Geschäftslogiken zu Ihren Entitäten hinzugefügt haben. Die Liste der Entitäten, die nach der Installation einer Dynamics 365-Anwendung eine serverseitige Logik enthalten können, finden Sie unter [Komplexe Entitäten, die PowerApps Plan 2-Lizenzen erfordern](data-platform-complex-entities.md)  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>Auswirkungen auf Lizenzanforderungen durch das Hinzufügen von komplexer Geschäftslogik
 Die Ersteller von Apps können in CDS für Apps Code-Plug-Ins und Echtzeitworkflows zu Entitäten hinzufügen. Dadurch können sich jedoch die Lizenzanforderungen für die Benutzer von bereits bereitgestellten Apps ändern. Die Ersteller von Apps sollten also beim Hinzufügen von komplexer Geschäftslogik zu einer Entität bedacht vorgehen und zuerst überprüfen, welche Apps die Entität verwenden und ob die Benutzer dieser Apps über die erforderlichen Lizenzen verfügen.

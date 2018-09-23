@@ -3,19 +3,19 @@ title: Modellgesteuerte Beispiel-Apps
 description: Informationen zum Abrufen, Anpassen und Entfernen von modellgesteuerten Beispiel-Apps
 documentationcenter: na
 author: caburk
-manager: kfile
+manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
 ms.author: caburk
-ms.openlocfilehash: 36e5efec10a3f849b6366368eed7b3b9e7af3f8c
-ms.sourcegitcommit: 79b8842fb0f766a0476dae9a537a342c8d81d3b3
+ms.openlocfilehash: 0b34a32281fb4f64bc918de81b3920edf5a7000b
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37898373"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39664425"
 ---
 # <a name="model-driven-sample-apps"></a>Modellgesteuerte Beispiel-Apps
 
@@ -70,7 +70,7 @@ Damit modellgesteuerte Apps ausgeführt oder verändert werden können, müssen 
 
     ![Lösung löschen](media/overview-model-driven-samples/delete-solution.png)
 
-<em>Stattdessen können Sie auch in der Liste der Lösungen navigieren, indem Sie im Maker-Portal auf **Erweitert</em>* klicken und aus der URL alle Zeichen löschen, die auf .dynamics.com/* folgen.
+*Stattdessen können Sie auch in der Liste der Lösungen navigieren, indem Sie im Maker-Portal auf **Erweitert** klicken, und aus der URL alle Zeichen löschen, die auf .dynamics.com/* folgen.
 
 > [!IMPORTANT]
 > Löschen Sie keine anderen Systemlösungen, wenn Sie nicht wissen, welche Folgen dies haben kann.
