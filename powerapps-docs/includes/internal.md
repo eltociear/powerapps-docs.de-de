@@ -1,1 +1,0 @@
-Nur zur internen Verwendung.
