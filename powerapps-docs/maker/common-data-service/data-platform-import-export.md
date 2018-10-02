@@ -1,128 +1,141 @@
 ---
-title: Importieren oder Exportieren von Daten aus Common Data Service für Apps
-description: Verwenden der Excel-Funktionen zum Abrufen und Exportieren von Daten für die Ausführung eines Massenimports oder -exports von Daten aus Excel- oder CSV-Dateien in bzw. aus Entitäten in Common Data Service für Apps.
+title: Importieren oder Exportieren von Daten vom Common Data Service for Apps
+description: 'Massenimportieren und -exportieren von Daten aus Excel oder CSV-Dateien in Entitäten in Common Data Service for Apps, indem Sie die Funktion "Daten aus Excel abrufen" verwenden'
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.component: cds
 ms.date: 05/14/2018
 ms.author: sabinn
-ms.openlocfilehash: 7f3e16be5bba1874759e0f9e40dc455f1e29c2bc
-ms.sourcegitcommit: 68fc13fdc2c991c499ad6fe9ae1e0f8dab597139
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34697461"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="import-or-export-data-from-the-common-data-service-for-apps"></a>Importieren oder Exportieren von Daten aus Common Data Service für Apps
+# <a name="import-or-export-data-from-common-data-service-for-apps"></a>Importieren oder Exportieren von Daten vom Common Data Service for Apps
 
-Wenn Sie Massenimporte und -exporte von Daten aus Excel- oder CSV-Dateien ausführen möchten, können Sie die Features „Get Data from Excel file“ (Daten aus Excel-Datei abrufen) und „Export Data“ (Daten exportieren) für aktualisierte Common Data Service für Apps-Umgebungen verwenden.
+Um einen Massenimport und -export von Daten aus Microsoft Excel oder CSV-Dateien durchzuführen, verwenden Sie die Funktionen "Daten aus Excel-Datei abrufen" und "Daten exportieren" für aktualisierte Common Data Service for Apps-Umgebungen.
 
-Es gibt zwei Möglichkeiten zum Importieren von Dateien in eine Entität aus einer Excel- oder CSV-Datei:
+Es gibt zwei Möglichkeiten, um Dateien aus Excel oder aus CSV-Dateien in Entitäten zu importieren.
 
-## <a name="option-1-import-by-creating-and-modifying-a-file-template"></a>Option 1: Importieren durch Erstellen und Anpassen einer Dateivorlage
+## <a name="option-1-import-by-creating-and-modifying-a-file-template"></a>Option 1: Import durch Erstellen und Ändern einer Dateivorlage
 
-Jede Entität weist Pflichtfelder auf, die in Ihrer Eingabedatei enthalten sein müssen. Wenn Sie Probleme vermeiden möchten, wird empfohlen, dass Sie zunächst eine Vorlage erstellen, indem Sie Daten aus einer Entität exportieren und diese (mit Ihren Daten angepasste) Datei dann verwenden, um Daten in die Entität zu importieren. Dadurch sparen Sie Zeit und Mühe, da Sie nicht für jede Entität die jeweiligen Pflichtfelder hinzufügen müssen.
+Jede Entität besitzt Pflichtfelder, die in der Eingabedatei vorhanden sein müssen. Wir empfehlen, dass Sie eine Vorlage erstellen. Exportieren Sie zunächst Daten aus der Entität. Verwenden Sie dieselbe Datei (mit Ihren Daten geändert), um Daten in die Entität zu importieren. Diese Vorlage spart Zeit und Aufwand. Sie müssen nicht an jedes der Pflichtfelder für jede Entität denken.
 
-1. Vorbereiten der Dateivorlage
+1. Bereiten Sie die Dateivorlage vor.
 
-    - Exportieren Sie zunächst die Entitätsdaten in eine CSV-Datei, indem Sie die im Abschnitt „Exportieren von Daten in CSV“ aufgeführten Schritte ausführen.
-    - Definieren Sie einen Plan, um sicherzustellen, dass die Daten eindeutig sind. Verwenden Sie dafür entweder Primärschlüssel oder Alternativschlüssel.
-    - Nachfolgend erhalten Sie Informationen dazu, wie Sie sicherstellen, dass die Daten eindeutig sind, bevor Sie Daten in eine Entität importieren.
+    a. Exportieren Sie die Entitätsdaten in die CVS-Datei. Befolgen Sie die Schritte unter **Daten nach CSV exportieren**.  
+    b. Definieren Sie einen Plan, um sicherzustellen, dass die Daten eindeutig sind. Verwenden Sie entweder **Primärschlüssel** oder **Alternativschlüssel**.  
+    c. Im nächsten Abschnitt finden Sie Anweisungen, sicherzustellen, dass die Daten eindeutig sind, bevor Sie sie in eine Entität importieren. 
 
-1. Anpassen der Datei mit Ihren Daten
+1. Ändern Sie die Datei mit Ihren Daten.
 
-    - Kopieren Sie Daten aus Ihrer Excel- oder CSV-Datei in die Vorlage, die Sie zuvor erstellt haben.
+    - Kopieren Sie Daten aus den CSV-Datei in Excel oder die Vorlage, die Sie soeben erstellt haben.
 
-1. Importieren der Datei
-    - Erweitern Sie unter [powerapps.com](https://web.powerapps.com/) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
-    - Wählen Sie die Entität aus, in die Sie Daten importieren möchten.
-    - Klicken oder tippen Sie erst im oberen Bereich auf die Auslassungspunkte oder das Menü, dann auf **Daten abrufen** und anschließend auf **Daten aus Excel abrufen**.
-
-> [!NOTE]
-> Wenn Sie die Daten in mehr als eine Entität importieren möchten, klicken oder tippen Sie im Menü im oberen Bereich auf **Daten abrufen** > **Daten aus Excel abrufen**. Sie sollten dann mehrere Entitäten auswählen und auf **Weiter** klicken oder tippen können.
-
-![Beispiel für das Importieren von Daten in die Entität „Konto“](./media/data-platform-import-export/import-data-to-account.png)
-
-- Dadurch gelangen Sie zur Anzeige **Daten importieren**, über die Sie auswählen können, ob Sie die Daten aus einer Excel- oder einer CSV-Datei importieren möchten.
-- Klicken oder tippen Sie auf **Hochladen**.
-- Wählen Sie Ihre Datei aus, und befolgen Sie die Anweisungen zum Starten des Dateiuploads.
-
-![Beispiel für den Upload einer Datei aus der Entität „Konto“](./media/data-platform-import-export/upload-account.png)
-
-- Nachdem die Datei hochgeladen und der Zuordnungsstatus grün angezeigt wird, klicken Sie in der oberen rechten Ecke auf **Importieren**. Wenn bei der Zuordnung Fehler entstehen, finden Sie nachfolgend weitere Informationen zum Navigieren und Beheben von Zuordnungsfehlern.
-
-![Beispiel für einen erfolgreichen Zuordnungsstatus und eine Schaltfläche für den Import](./media/data-platform-import-export/success-map-imp.png)
-
-- Sobald die Meldung **Der Import wurde erfolgreich abgeschlossen.** angezeigt wird, sehen Sie die Gesamtanzahl der Einfügevorgänge und Updates.
-
-![Beispiel für einen erfolgreichen Import, einschließlich der Anzahl der Einfügevorgänge und Updates](./media/data-platform-import-export/success-imp-insert.png)
-
-> [!NOTE]
-> Wir verwenden die Upsert-Logik (Update or Insert, Aktualisieren oder Einfügen), um den Datensatz (falls bereits vorhanden) zu aktualisieren oder einen neuen Datensatz hinzuzufügen.
-
-## <a name="option-2-import-by-bringing-your-own-source-file"></a>Option 2: Importieren mithilfe einer eigenen Quelldatei
-
-Wenn Sie über erweiterte Kenntnisse verfügen und sich mit den Pflichtfeldern für die entsprechende Common Data Service für Apps-Entität auskennen, können Sie Ihre eigene Excel- oder CSV-Quelldatei definieren und die unter **Importieren der Datei** aufgeführten Schritte ausführen.
-
-## <a name="navigating-mapping-errors"></a>Navigieren von Zuordnungsfehlern
-
-Wenn ein Zuordnungsfehler auftritt, nachdem Sie Ihre Datei hochgeladen haben, klicken Sie auf **Map status** (Zuordnungsstatus), und führen Sie die folgenden Schritte aus, um Fehler bei der Feldzuordnung zu untersuchen und zu beheben.
-
-- Verwenden Sie die Dropdownliste auf der rechten Seite unter **Anzeigen**, um sich die **Nicht zugeordneten Felder**, **Felder mit Fehlern** oder **Pflichtfelder** anzusehen.
-
-> [!TIP]
-> Je nachdem, ob Sie eine Warnung oder einen Fehler erhalten, sollten Sie über die Dropdownliste unter **Feldzuordnungen** entweder die **Nicht zugeordneten Felder** oder **Felder mit Fehlern** untersuchen.
-
-![Beispiel für eine partielle Übereinstimmung aufgrund von Warnungen mit Feldzuordnungen](./media/data-platform-import-export/partial-match.png)
-
-![Beispiel für Probleme bei der Navigation von Feldzuordnungen](./media/data-platform-import-export/navigate-mappings.png)
-
-![ Beispiel zum Untersuchen und Beheben von Warnungen mit Feldzuordnungen](./media/data-platform-import-export/inspect-warnings.png)
-
-- Sobald Sie alle Fehler und/oder Warnungen bearbeitet haben, klicken Sie in der oberen rechten Ecke auf **Änderungen speichern**. Dadurch sollten Sie zurück zur Anzeige **Daten importieren** gelangen.
-- Sobald in der Spalte **Zuordnungsstatus** in grün **Abgeschlossen** angezeigt wird, klicken Sie in der oberen rechten Ecke auf **Importieren**.
-- Sobald die Meldung **Der Import wurde erfolgreich abgeschlossen.** angezeigt wird, sehen Sie die Gesamtanzahl der Einfügevorgänge und Updates.
-
-## <a name="ensuring-uniqueness-while-importing-data-into-entity-from-excel-or-csv"></a>Sicherstellen der Eindeutigkeit beim Importieren von Daten in eine Entität aus Excel- oder CSV-Dateien
-
-Common Data Service für Apps-Entitäten verwenden einen Primärschlüssel, um Datensätze eindeutig innerhalb einer CDS-Entitätentabelle zu identifizieren. Beim Primärschlüssel für eine CDS-Entität handelt es sich um einen Globally Unique Identifier (GUID), der die Standardbasis für die Datensatzkennung darstellt. Im Rahmen von Datenvorgängen wie das Importieren von Daten in CDS-Entitäten werden die Standardprimärschlüssel sichtbar.
-
-Beispiel: Der Primärschlüssel für die Entität „Konto“ lautet „accountid“.
-
-![Beispielexportdatei aus der Entität „Konto“, die „accountid“ als Primärschlüssel anzeigt.](./media/data-platform-import-export/export-pk.png)
-
-Gelegentlich kann es dazu kommen, dass ein Primärschlüssel nicht ausreicht und/oder nicht den Ansprüchen der Integration von Daten aus einer externen Quelle entspricht. In diesem Zusammenhang ermöglicht es CDS, Alternativschlüssel zu definieren, um einen Datensatz eindeutig anstelle eines Primärschlüssels zu identifizieren.
-
-Beispiel: Für die Entität „Konto“ können Sie „transactioncurrencyid“ als Alternativschlüssel festlegen, indem Sie eine auf einem natürlichen Schlüssel basierende Identifizierung verwenden (verwenden Sie z.B. anstelle eines GUID-Werts wie oben dargestellt (*88c6c893-5b45-e811-a953-000d3a33bcb9*) „US Dollar“). Sie können auch ein Währungssymbol oder einen Währungsnamen als Schlüssel verwenden.
-
-![Beispiel für das Erstellen eines Alternativschlüssels für die Entität „Währung“](./media/data-platform-import-export/create-ak.png)
-
-![Beispielexportdatei aus der Entität „Konto“, die den Währungsnamen als natürlichen Schlüssel anzeigt](./media/data-platform-import-export/export-nk.png)
-
-Der Benutzer kann weiterhin Primärschlüssel als Bezeichner verwenden, nachdem er Alternativschlüssel angegeben hat. D.h., im obenstehenden Beispiel ist die Datei gültig, wenn es sich bei den GUIDs um gültige Daten handelt.
-
-## <a name="export-data-to-csv"></a>Exportieren von Daten in CSV
-
-Sie können Daten einmalig von einer Standardentität oder einer benutzerdefinierten Entität exportieren, und Sie können Daten von mehr als einer Entität gleichzeitig exportieren. Wenn Sie Daten aus mehr als einer Entität exportieren, wird jede Entität in eine eigene Microsoft-CSV-Datei exportiert.
-
-1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com/) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
-1. Wählen Sie die Entität aus, aus der Sie Daten exportieren möchten.
-1. Klicken oder tippen Sie erst im oberen Bereich auf die Auslassungspunkte oder das Menü, dann auf **Exportieren** und anschließend auf **Daten**.
-
-    ![Beispiel zum Exportieren von Daten aus der Entität „Konto“](./media/data-platform-import-export/export-account.png)
+1. Importieren Sie die Datei.  
+    a. Auf [powerapps.com](https://web.powerapps.com/), erweitern Sie den Abschnitt **Daten**. Wählen Sie im linken Navigationsbereich die Option **Entitäten** aus.  
+    b. Wählen Sie die Entität aus, in die Sie die Daten importieren möchten.  
+    c. Wählen Sie die Auslassungspunkte oder das obere Menü aus. Wählen Sie **Daten abrufen** aus: Wählen Sie **Daten aus Excel abrufen** aus.  
 
     > [!NOTE]
-    > Klicken oder tippen Sie im Menü im oberen Bereich zum Exportieren von Daten aus mehreren Entitäten erst auf **Exportieren** und dann auf **Daten**. Sie sollten dann mehrere Entitäten auswählen können.
+    > Wenn Sie Daten in mehrere Entitäten importieren möchten, wählen Sie im oberen Menü **Daten abrufen** aus. Wählen Sie **Daten aus Excel abrufen** aus. Dann können Sie mehrere Entitäten auswählen und **Weiter** auswählen.
 
-1. Sobald der Export erfolgreich abgeschlossen wurde, sollten Sie **Exportierte Daten herunterladen** können. Danach erhalten Sie einen Link zu einer herunterladbaren CSV-Datei.
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel des Datenimports in eine **Firma**-Entität](./media/data-platform-import-export/import-data-to-account.png)
 
-    ![Beispielexport, der einen erfolgreichen Export mit einem Link zu einer herunterladbaren Datei anzeigt.](./media/data-platform-import-export/export-success.png)
+    d. Wählen Sie im Bildschirm **Daten importieren** aus, ob Daten aus einer Excel- oder einer CSV-Datei importierten werden.  
+    e. Klicken Sie auf **Hochladen**.  
+    f. Wählen Ihre Datei aus. Folgen Sie den Anweisungen, um Ihre Datei hochzuladen.  
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel für das Hochladen einer Datei in eine **Firma**-Entität](./media/data-platform-import-export/upload-account.png)
+
+    g. Nachdem die Datei hochgeladen wurde und der **Zuordnungsstatus** grün ist, wählen Sie **Importieren** in der oberen rechten Ecke aus. Im nächsten Abschnitt finden Sie Informationen zum Navigieren und Beheben von Zuordnungsfehlern.  
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel für einen erfolgreichen **Zuordnungsstatus** und eine **Importieren**-Schaltfläche](./media/data-platform-import-export/success-map-imp.png)
+
+    h. Nachdem der Import erfolgreich beendet wurde, wird die Gesamtanzahl der Einfügungen und Updates angezeigt.  
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel eines erfolgreichen Imports, der die Anzahl der Einfügungen und Updates anzeigt](./media/data-platform-import-export/success-imp-insert.png)
+
+    > [!NOTE]
+    > Mithilfe der Upsert (Update oder Einfügen)-Logik, um den Datensatz zu aktualisieren, wenn er bereits vorhanden ist, oder einen neuen Datensatz zu erstellen.
+
+## <a name="option-2-import-by-bringing-your-own-source-file"></a>Option 2: Import durch Bereitstellen der eigenen Quelldatei
+
+Wenn Sie ein fortgeschrittener Benutzer sind und die erforderlichen Felder für eine bestimmte Entität für Common Data Service for Apps-Entitäten kennen, definieren Sie Ihre eigene Excel- oder CSV-Quelldatei. Folgen Sie den Schritten in **Die Datei importieren**.
+
+## <a name="navigate-mapping-errors"></a>Zuordnungsfehler navigieren
+
+Wenn Sie Zuordnungsfehler erhalten, nachdem Sie Ihre Datei hochladen, wählen Sie **Status zuordnen** aus. Führen Sie die folgenden Schritte aus, um die Feldzuordnungsfehler zu überprüfen und zu beheben.
+
+1. Verwenden Sie das Dropdownmenü rechts unter **Anzeigen**, um die Felder **Nicht zugeordnete Felder**, **Felder mit Fehler** oder **Erforderliche Felder** zu durchzulaufen.
+
+    > [!TIP]
+    > Abhängig davon, ob Sie eine Warnmeldung oder einen Fehler erhalten, untersuchen Sie **Nicht zugeordnete Felder** oder **Felder mit Fehler** über das Dropdownmenü in **Feldzuordnungen**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel einer teilweisen Übereinstimmung aufgrund von Warnungen bei Feldzuordnungen](./media/data-platform-import-export/partial-match.png)
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel zum Navigieren von Feldzuordnungsproblemen](./media/data-platform-import-export/navigate-mappings.png)
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel zum Überprüfen und Beheben von Warnungen bei Feldzuordnungen](./media/data-platform-import-export/inspect-warnings.png)
+
+2. Nachdem Sie alle Fehler und Warnungen behoben haben, wählen Sie **Änderungen speichern** in der oberen rechten Ecke aus. Sie wechseln zurück zum Bildschirm **Daten importieren**.
+3. Wenn die Spalte **Zuordnungsstatus** in grün **Abgeschlossen** anzeigt, wählen Sie **Importieren** in der oberen rechten Ecke aus.
+4. Wenn Sie die Meldung **Import erfolgreich abgeschlossen** erhalten, werden alle Einfügungen und Updates angezeigt.
+
+## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Stellen Sie die Eindeutigkeit sicher, wenn Sie Daten aus Excel oder CSV in eine Entität importieren
+
+Common Data Service for Apps-Entitäten verwenden einen Primärschlüssel, um Datensätze in einer Common Data Service-Tabelle eindeutig zu identifizieren. Der Primärschlüssel für eine Common Data Service-Entität ist ein GUID (globally unique identifier). Es bietet die Standardgrundlage für Datensatzidentifikation. Datenvorgänge, wie das Importieren von Daten in Common Data Service-Entitäten, zeigen den Standardprimärschlüssel an.
+
+Beispiel:  
+Der Primärschlüssel für eine Entität **Firma** ist **accountid**.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Beispielexportdatei aus einer Entität **Firma** zeigt **accountid** als Primärschlüssel](./media/data-platform-import-export/export-pk.png)
+
+Gelegentlich funktioniert ein Primärschlüssel möglicherweise nicht, wenn Sie Daten aus einer externen Quelle integrieren. Verwenden Sie Common Data Service, um Alternativschlüssel zu definieren, die einen Datensatz anstelle des Primärschlüssels eindeutig identifizieren.
+
+Beispiel:  
+Als Entität **Firma** legen Sie möglicherweise **transactioncurrencyid** als Alternativschlüssel fest, indem Sie eine natürliche schlüsselbasierte ID verwenden. Verwenden Sie beispielsweise **US-Dollar** anstelle des GUID-Werts **88c6c893-5b45-e811-a953-000d3a33bcb9**, wie zuvor angezeigt. Sie können auch das **Währungssymbol** oder den **Währungsnamen** als Schlüssel auswählen.
+
+   > [!div class="mx-imgBorder"] 
+   > ![Beispiel zum Erstellen eines Alternativschlüssels in einer **Währung**-Entität](./media/data-platform-import-export/create-ak.png)
+
+   > [!div class="mx-imgBorder"] 
+   > ![Beispielexportdatei aus einer Entität **Firma** zeigt **Währungsname** als natürlichen Primärschlüssel](./media/data-platform-import-export/export-nk.png)
+
+Benutzer können Primärschlüssels noch als Bezeichner verwenden, nachdem Sie Alternativschlüssel angegeben haben. Im vorangehenden Beispiel ist die erste Datei immer noch gültig, wenn GUIDS gültige Daten sind.
+
+## <a name="export-data-to-csv"></a>Exportieren von Daten nach CSV
+
+Sie können einen einmaligen Datenexport aus einer Standardentität oder einer benutzerdefinierten Entität ausführen. Und Sie können Daten aus mehr als einer Entität nacheinander exportieren. Wenn Sie Daten aus mehr als einer Entität exportieren, wird jede Entität in seine eigene Microsoft-CSV-Datei exportiert.
+
+1. Auf [powerapps.com](https://web.powerapps.com/), erweitern Sie den Abschnitt **Daten**. Wählen Sie im linken Navigationsbereich die Option **Entitäten** aus.
+1. Wählen Sie die Entität aus, aus der Sie die Daten exportieren möchten.
+1. Wählen Sie die Auslassungspunkte oder das obere Menü aus. Klicken Sie auf **Exportieren**. Wählen Sie **Daten** aus.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispiel des Datenexports aus einer **Firma**-Entität](./media/data-platform-import-export/export-account.png)
+
+    > [!NOTE]
+    > Wenn Sie Daten aus mehreren Entitäten exportieren, wählen Sie im oberen Menü **Exportieren** aus. Wählen Sie **Daten** aus. Sie können mehrere Entitäten auswählen.
+
+1. Wenn der Export erfolgreich beendet wird, können Sie **Exportierte Daten herunterladen** auswählen. Dieser Download stellt einen Link zu einer herunterladbaren CSV-Datei bereit.
+
+    > [!div class="mx-imgBorder"] 
+    > ![Beispielexport, der einen erfolgreichen Export mit Link zu einer herunterladbaren Datei zeigt](./media/data-platform-import-export/export-success.png)
 
 ## <a name="unsupported-data-types"></a>Nicht unterstützte Datentypen
 
 Die folgenden Datentypen werden derzeit nicht unterstützt.
 
 - Zeitzone
-- Optionen mit Mehrfachauswahl
+- Optionssatz-Mehrfachauswahl
 - Bild

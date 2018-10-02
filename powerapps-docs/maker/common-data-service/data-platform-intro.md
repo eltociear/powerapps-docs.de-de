@@ -1,6 +1,6 @@
 ---
-title: Was ist Common Data Service für Apps? | Microsoft-Dokumentation
-description: Einführung in Common Data Service (CDS) für Apps, Entitäten und serverseitige Logik
+title: Was ist Common Data Service für Apps? | Microsoft Docs
+description: 'Einführung in den Common Data Service (CDS) for Apps, Entitäten und serverseitige Logik.'
 author: clwesene
 manager: kfile
 ms.service: powerapps
@@ -8,75 +8,76 @@ ms.topic: overview
 ms.component: cds
 ms.date: 05/01/2018
 ms.author: matp
-ms.openlocfilehash: 6a8bc8f24ce0f772f5c98852838095f233c4317f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218071"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
+
 # <a name="what-is-common-data-service-for-apps"></a>Was ist Common Data Service für Apps?
-Mit CDS für Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendung verwendet werden. Die Daten in CDS für Apps werden in mehreren Standardentitäten gespeichert. Eine *Entität* ist eine Gruppe von Datensätzen, die ähnlich wie eine Tabelle in einer Datenbank zum Speichern von Daten verwendet wird. CDS für Apps bieten einen grundlegenden Satz von Standardentitäten, die gängige Szenarien abdecken. Sie können aber auch benutzerdefinierte Entitäten erstellen, die auf Ihre Organisation zugeschnitten sind, und diese mithilfe von Power Query mit Daten auffüllen. App-Entwickler können dann mit PowerApps umfangreiche Anwendungen mit diesen Daten erstellen.
+Mit Common Data Service (CDS) for Apps können Sie Daten sicher speichern und verwalten, die von Geschäftsanwendungen verwendet werden. Daten in der CDS for Apps werden in einem Satz von Entitäten gespeichert. Eine *Entität* ist eine Datensatzgruppe, in der Daten gespeichert werden, ähnlich zur Speicherung von Daten in einer Tabelle einer Datenbank. CDS für Apps umfasst einen Basissatz an Standardentitäten, die typischen Szenarien abdecken, jedoch können Sie auch benutzerdefinierte Entitäten erstellen, die für Ihre Organisation spezifisch sind und sie mit Power Query mit Daten auffüllen. App-Hersteller können dann PowerApps verwenden, um mithilfe dieser Daten umfangreiche Anwendungen zu erstellen.
 
-![Screenshot: Übersicht über die Plattform für Geschäftsanwendungen](./media/data-platform-cds-intro/platform.png "Plattformübersicht")
+![Screenshot, der Übersicht der Geschäftsanwendungsplattform](./media/data-platform-cds-intro/platform.png "Plattformübersicht")
 
-Informationen zum Erwerb eines Plans für die Verwendung von CDS für Apps finden Sie unter [Pricing Info (Preise)](../../administrator/pricing-billing-skus.md).
+Informationen zum Erwerb eines Plans zur Verwendung von CDS for Apps finden Sie unter [Preisinformationen](../../administrator/pricing-billing-skus.md).
 
-## <a name="why-use-common-data-service-for-apps"></a>Gründe für die Verwendung von Common Data Service für Apps
-Entitäten (Standard und benutzerdefiniert) in CDS für Apps sind eine sichere und cloudbasierte Speicheroption für Ihre Daten. Mit Entitäten können Sie eine auf Ihr Unternehmen zugeschnittene Definition Ihrer Daten für die Verwendung in Ihren Apps erstellen. Wenn Sie nicht sicher sind, ob Entitäten die beste Option sind, sollten Sie diese Vorteile bedenken:
+## <a name="why-use-common-data-service-for-apps"></a>Warum Common Data Service für Apps verwenden?
+Standard und benutzerdefinierte Entitäten in der CDS for Apps bieten eine sichere und cloudbasierte Speicheroption für die erfassten Daten. Mit Entitäten können Sie eine auf Ihr Geschäft ausgerichtete Definition der Daten Ihrer Organisation für die Verwendung in der Apps erstellen. Falls Sie nicht sicher sind, ob Entitäten die beste Option sind, bedenken Sie diese Vorteile:
 
-* **Einfache Verwaltung:** Sowohl die Metadaten als auch die Daten werden in der Cloud gespeichert. Sie müssen sich nicht um die Details kümmern, wie diese gespeichert werden.
-* **Einfaches Sichern:** Daten werden sicher gespeichert, damit Benutzer sie nur dann sehen können, wenn Sie ihnen Zugriff gewähren. Durch die rollenbasierte Sicherheit können Sie den Zugriff auf Entitäten für verschiedene Benutzer innerhalb Ihrer Organisation steuern.
-* **Zugriff auf Dynamics 365-Daten:** Daten aus Dynamics 365-Anwendungen werden auch in Common Data Service für Apps gespeichert, sodass Sie Apps, die Ihre Dynamics 365-Daten nutzen, schnell erstellen und Ihre Apps mit PowerApps erweitern können.
-* **Umfassende Metadaten:** Datentypen und Beziehungen werden direkt in PowerApps genutzt.
-* **Logik und Validierung:** Definieren Sie berechnete Felder, Geschäftsregeln, Workflows und Workflows für Geschäftsprozesse, um die Datenqualität sicherzustellen und Geschäftsprozesse zu optimieren.
-* **Produktivitätstools:** Entitäten sind in den Add-Ins für Microsoft Excel verfügbar, um die Produktivität zu steigern und die Datenverfügbarkeit sicherzustellen.
+* **Einfach zu verwalten** &ndash; Metadaten und Daten werden in der Cloud gespeichert. Sie müssen sich nicht um die Details der Speicherung sorgen.
+* **Einfach zu sichern** &ndash; Die Daten werden sicher gespeichert, sodass die Benutzer sie nur sehen, wenn Sie ihnen Zugriff gewähren. Mit rollenbasierter Sicherheit können Sie den Zugriff auf Entitäten für verschiedene Benutzer in der Organisation steuern.
+* **Auf Ihre Dynamics 365-Daten zugreifen** &ndash; Daten aus den Dynamics 365-Anwendungen werden auch im Common Data Service for Apps gespeichert, sodass Sie schnell Apps erstellen, die Dynamics 365-Daten nutzen und Ihre Apps mit PowerApps erweitern können.
+* **Umfangreiche Metadaten** &ndash; Datentypen und Beziehungen werden direkt in PowerApps genutzt.
+* **Logik und Überprüfen** &ndash; Definieren Sie berechnete Felder, Geschäftsregeln, Workflows und Geschäftsprozessflüsse, um die Datenqualität sicherzustellen und Geschäftsprozesse voranzutreiben.
+* **Produktivitätstools** &ndash; Innerhalb der Add-Ins für Microsoft Excel stehen Entitäten zur Verfügung, um die Produktivität und den Zugriff auf Daten sicherzustellen.
 
-## <a name="dynamics-365-and-the-common-data-service-for-apps"></a>Dynamics 365 und Common Data Service für Apps
+## <a name="dynamics-365-and-the-common-data-service-for-apps"></a>Dynamics 365 und der Common Data Service für Apps-Analyse
 
-Dynamics 365-Anwendungen, wie Dynamics 365 for Sales, Service oder Talent, verwenden ebenfalls Common Data Service für Apps, um Daten, die von der Anwendungen verwendet werden, zu speichern und zu sichern. Dadurch können Sie Apps mit PowerApps und Common Data Service für Apps direkt mit Ihren wichtigsten Unternehmensdaten erstellen, die bereits in Dynamics 365 verwendet werden, ohne diese integrieren zu müssen.
+Dynamics 365-Anwendungen, wie Dynamics 365 for Sales, Service oder Talent verwenden auch den Common Data Service for Apps, um die Daten zu speichern und zu sichern, die von Anwendungen verwendet werden. Dadurch können Sie Apps mit PowerApps und dem Common Data Service for Apps direkt mit den Kerngeschäftsdaten erstellen, die bereits in Dynamics 365 verwendet werden, ohne eine Integration verwenden zu müssen.
 
-* **Erstellen von Apps mit Ihren Dynamics 365-Daten:** Erstellen Sie im Handumdrehen Apps mit Ihren Unternehmensdaten in PowerApps oder mit dem Pro Developer SDK.
-* **Verwalten wiederverwendbarer Unternehmenslogik und -regeln:** Unternehmensregeln und -logik, die bereits in Ihren Dynamics 365-Entitäten definiert wurden, werden auf Ihre PowerApps-Apps angewendet, um Datenkonsistenz sicherzustellen, unabhängig davon, wie oder über welche App die Benutzer auf die Daten zugreifen.
-* **Wiederverwenden von Kenntnissen zu Dynamics 365 und PowerApps:** Benutzer, die bereits mit PowerApps oder Dynamics 365 vertraut sind, können Ihre Kenntnisse und Fähigkeiten auch auf der neuen Plattform Common Data Service für Apps einsetzen. Der Prozess zum Erstellen von Entitäten, Formen und Diagrammen usw. ist jetzt in allen Anwendungen der gleiche.
+* **Apps mit Ihren Dynamics 365-Daten erstellen** &ndash; Apps schnell mit Ihren Geschäftsdaten in PowerApps oder mit dem Pro Developer SDK erstellen.
+* **Wiederverwendbare Geschäftslogik und Regeln verwalten** &ndash; Geschäftsregeln und -logik, die bereits in Dynamics 365-Entitäten definiert werden, werden bei PowerApps angewendet, um die Datenkonsistenz sicherzustellen, unabhängig davon, wie Benutzer auf die Daten zugreifen, oder mit welcher App.
+* **Wiederverwendbare Fähigkeiten in Dynamics 365 und PowerApps** &ndash; Benutzer mit Fähigkeiten, die zuvor aus PowerApps oder Dynamics 365 stammen, können diese neuen Funktionen jetzt zu der neuen Common Data Service for Apps-Plattform nutzen. Das Erstellen von Entitäten, Formularen, Diagrammen usw. ist jetzt in Ihren Anwendungen üblich.
 
     > [!NOTE]
-    > Dynamics 365 for Finance and Operations erfordert aktuell die Konfiguration des Datenintegrators, um Ihre Finanz- und Betriebsdaten in Common Data Service für Apps verfügbar zu machen.
+    > Dynamics 365 for Finance and Operations erfordert derzeit die Konfiguration des Data Integrator, damit Ihre Daten aus Finance and Operations innerhalb des Common Data Service for Apps verfügbar gemacht werden können.
 
-## <a name="integrating-data-into-the-common-data-service"></a>Integrieren von Daten in Common Data Service
+## <a name="integrating-data-into-the-common-data-service"></a>Integrieren von Daten in den Common Data Service
 
-Wenn Sie eine App erstellen, nutzen Sie dafür normalerweise Daten aus mehreren Quellen. Oft kann dies auf der Anwendungsebene erfolgen. Es gibt jedoch auch Fälle, in denen die Integration dieser Daten in einen gemeinsamen Speicher das Erstellen einer App erleichtern kann, sodass nur ein Logiksatz zum Verwalten und Betreiben der Daten erforderlich ist. Mit Common Data Service für Apps können Daten aus mehreren Quellen in einen einzigen Speicher integriert werden, der dann wiederum von PowerApps, Flow und Power BI gemeinsam mit bereits aus Dynamics 365-Anwendungen bereitgestellten Daten verwendet werden kann.
+Das Erstellen einer App erfordert in der Regel Daten aus mehr als einer Quelle. Obwohl dies gelegentlich auf Anwendungsebene geschehen kann, gibt es auch Fälle, in denen eine gemeinsame Integration dieser Daten in einem allgemeinen Speicher eine einfache App-Erstellungserfahrung zulässt, und einen einzelnen Logiksatz, um die Daten zu warten, und damit zu arbeiten. Common Data Service for Apps gestattet die Integration der Daten aus verschiedenen Quellen in einen einzelnen Speicher, der in PowerApps, Flow und Power BI zusammen mit den Daten verwendet werden kann, die von aus Dynamics 365-Anwendungen stammen.
 
-* **Zeitlich geplante Integration in andere Systeme:** Daten, die in einer anderen Anwendung gespeichert sind, können in regelmäßigen Abständen mit Common Data Service für Apps synchronisiert werden, damit Daten anderer Anwendungen in PowerApps genutzt werden können.
-* **Transformieren und Importieren von Daten mit PowerQuery:** Sie können Daten beim Import in Common Data Service mit PowerQuery aus vielen Onlinedatenquellen transformieren. PowerQuery ist ein Tool, das sowohl Excel als auch Power BI verwenden.
-* **Einmaliger Import von Daten:** Der einfache Import und Export von Excel- und CSV-Dateien kann für einen einmaligen oder unregelmäßigen Datenimport in Common Data Service für Apps verwendet werden.
+* **Geplante Integration mit anderen Systemen** &ndash; Daten, die in einer anderen Anwendung gespeichert werden, können regelmäßig mit dem Common Data Service for Apps synchronisiert werden, damit Sie andere Anwendungsdaten in PowerApps nutzen können.
+* **Daten mit PowerQuery transformieren und importieren** &ndash; Daten beim Import in den Common Data Service zu transformieren kann über PowerQuery aus vielen Datenquellen online durchgeführt werden. Es ist ein Tool, das in Excel und Power BI genutzt wird.
+* **Einmaliger Datenimport** &ndash; Einfacher Import und Export von Excel- und CSV-Dateien kann für einen einmaligen oder gelegentlichen Datenimport in den Common Data Service for Apps verwendet werden.
 
+Weitere Informationen zur Integration von Daten in Common Data Service finden Sie unter [Daten mit Power Query in Common Data Service for Apps hinzufügen](data-platform-cds-newentity-pq.md).
 
 ## <a name="interacting-with-entities"></a>Interagieren mit Entitäten
-Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte Entitäten oder beides verwenden. CDS für Apps stellt standardmäßig Standardentitäten bereit. Diese sind in Übereinstimmung mit bewährten Methoden entwickelt und dienen zum Erfassen der am häufigsten verwendeten Konzepte für Szenarios in einem Unternehmen.
+Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte Entitäten oder beides erstellen. CDS for Apps bietet standardmäßig Standardentitäten. Diese wurden in Übereinstimmung mit bewährten Methoden entworfen, um die gängigsten Konzepte und Szenarien innerhalb der Organisation darzustellen.
 
-![Screenshot mit einer Liste von Entitäten](./media/data-platform-cds-intro/entitylist.png "Entitätsliste")
+![Screenshot einer Liste mit Entitäten](./media/data-platform-cds-intro/entitylist.png "Entitätenliste")
 
-Eine vollständige Liste der Entitäten finden Sie in der [Referenz zu Entitäten](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/about-entity-reference).
+Eine vollständige Liste der Entitäten finden Sie unter [Entitätsreferenz](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/about-entity-reference).
 
-Sie können die Funktionalität der Standardentitäten erweitern, indem Sie eine oder mehrere benutzerdefinierte Entitäten zum Speichern von Informationen erstellen, die für Ihr Unternehmen einzigartig sind. Weitere Informationen finden Sie unter [Create a custom entity in the Common Data Model (Erstellen einer benutzerdefinierten Entität im Common Data Model)](create-custom-entity.md).
+Sie können die Funktionen von Standardentitäten erweitern, indem Sie mindestens eine benutzerdefinierte Entität verwenden, um Informationen zu speichern, die in Ihrer Organisation eindeutig sind. Weitere Informationen finden Sie unter [So erstellen Sie eine benutzerdefinierte Entität](create-custom-entity.md).
 
 ## <a name="logic-and-validation"></a>Logik und Überprüfung
-In CDS für Apps können die Entitäten eine umfangreichere serverseitige Logik und Überprüfung nutzen, um die Datenqualität zu gewährleisten und sich wiederholenden Code in jeder App reduzieren, die Daten in der Entität erstellt und verwendet.
+Entitäten in der CDS for Apps können reichhaltige serverseitige Logik und Validierung nutzen, um die Datenqualität sicherzustellen und wiederkehrenden Code in jeder App zu verringern, die Daten innerhalb einer Entität erstellt und verwendet.
 
-* Durch **Geschäftsregeln** können Daten in mehreren Feldern und Entitäten überprüft werden. Außerdem können unabhängig von der App, die zum Erstellen der Daten verwendet wurde, Warnungen und Fehlermeldungen angezeigt werden. Weitere Informationen finden Sie unter [Create a business rule (Erstellen einer Geschäftsregel)](./data-platform-create-business-rule.md).
-* Die **Flows für Geschäftsprozesse** unterstützen die Benutzer dabei, sicherzustellen, dass sie Daten konsistent eingeben und dabei jedes Mal die gleichen Schritte befolgt haben. Die Flows für Geschäftsprozesse werden derzeit nur für modellgesteuerte Apps unterstützt. Weitere Informationen finden Sie unter [Business process flows overview (Übersicht über Flows für Geschäftsprozesse)](/dynamics365/customer-engagement/customize/business-process-flows-overview).
-* **Workflows** ermöglichen Ihnen das Automatisieren von Geschäftsprozessen ohne Aktionen durch Benutzer. Weitere Informationen finden Sie unter [Workflows overview (Übersicht über Workflows)](/dynamics365/customer-engagement/customize/workflow-processes).
-* Durch **Geschäftslogiken mit Code** werden erweiterte Entwicklerszenarios unterstützt, um die Anwendung direkt über den Code zu erweitern. Weitere Informationen finden Sie unter [Anwenden von Geschäftslogik mit Code](../../developer/common-data-service/apply-business-logic-with-code.md).
+* **Geschäftsregeln** validieren Daten für mehrere Felder und Entitäten und erstellen Warn- und Fehlermeldungen, unabhängig von der App, die zur Erstellung der Daten verwendet wird. Weitere Informationen finden Sie unter [Erstellen einer Geschäftsregel](./data-platform-create-business-rule.md)
+* **Geschäftsprozessflüsse** führen Benutzer, um sicherzustellen, dass sie Daten einheitlich eingeben ein jedes Mal den gleichen Schritten folgen. Geschäftsprozessflüsse werden derzeit nur in modellgesteuerten Apps unterstützt. Weitere Informationen finden Sie unter [Übersicht über Geschäftsprozessflüsse](/dynamics365/customer-engagement/customize/business-process-flows-overview).
+* Mit **Workflows** können Sie Geschäftsprozesse ohne Interaktion mit eine Benutzeroberfläche automatisieren. Weitere Informationen finden Sie in [Überblick zu Workflows](/dynamics365/customer-engagement/customize/workflow-processes).
+* **Geschäftslogik mit Code** unterstützt erweiterte Entwicklerszenarien, , um die Anwendung direkt durch Code zu erweitern. Weitere Informationen finden Sie unter [Anwenden einer Geschäftslogik mit Code](../../developer/common-data-service/apply-business-logic-with-code.md).
 
-## <a name="developer-capabilities"></a>Funktionen für Entwickler
-Zusätzlich zu den Features, die über das [PowerApps-Portal](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) zur Verfügung gestellt werden, enthält CDS für Apps ebenfalls Features für Entwickler, mit denen programmgesteuert auf Metadaten und Daten zugegriffen werden kann, um Entitäten und Geschäftslogiken zu erstellen. Außerdem wird die Interaktion mit den Daten ermöglicht. Weitere Informationen finden Sie unter [Übersicht für Entwickler: Common Data Service für Apps](../../developer/common-data-service/overview.md).
+## <a name="developer-capabilities"></a>Entwicklerfunktionen
+Zusätzlich zu den Features, die über das [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)-Portal verfügbar sind, umfasst der CDS for Apps auch Funktionen, mit denen Entwickler programmgesteuert auf Metadaten und Daten zugreifen können, um Entitäten und Geschäftslogik zu erstellen sowie mit Daten zu interagieren. Weitere Informationen finden Sie unter [Entwicklerübersicht zu Common Data Service for Apps](../../developer/common-data-service/overview.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Einstieg in CDS für Apps:
-* [Erstellen Sie eine App mithilfe einer Common Data Service-Datenbank.](../canvas-apps/data-platform-create-app-scratch.md)
-* [Erstellen Sie eine benutzerdefinierte Entität](create-custom-entity.md), und [erstellen Sie eine App, die diese Entität verwendet](../canvas-apps/data-platform-create-app.md).
-* [Verwenden Sie Power Query](./data-platform-cds-newentity-pq.md), um eine Verbindung mit einer Onlinedatenquelle oder einer lokalen Datenquelle herzustellen, und importieren Sie diese direkt in CDS für Apps.
+Erste Schritte mit der CDS for Apps:
+* [Erstellen einer App mit einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app-scratch.md).
+* [Erstellen einer benutzerdefinierten Entität](create-custom-entity.md) und dann [Erstellen einer App, die diese Entität verwendet](../canvas-apps/data-platform-create-app.md).
+* [Verwenden von Power Query](./data-platform-cds-newentity-pq.md), um eine Verbindung mit einer Online- oder lokalen Datenquelle herzustellen und Daten direkt in CDS for Apps zu importieren.
 
-## <a name="privacy-notice"></a>Hinweis zum Datenschutz
-Mit dem allgemeinen Datenmodell in Microsoft PowerApps erfasst und speichert Microsoft benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen. Wir verwenden dieses Wissen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die Ersteller erstellen, helfen uns dabei, Szenarios zu verstehen, die in der Microsoft PowerApps-Community häufig vorkommen und Lücken in der Abdeckung der Standardentität des Diensts offenlegen, z.B. Schemas im Zusammenhang mit Organisationen. Microsoft nutzt die Daten in den Datenbanktabellen nicht, die mit diesen Entitäten verbunden sind, und greift auch nicht auf diese zu. Sie werden auch nicht außerhalb der Region repliziert, in der die Datenbank bereitgestellt wird. Beachten Sie jedoch, dass die benutzerdefinierten Entitäts- und Feldnamen möglicherweise über Regionen hinweg repliziert werden können und unter Einhaltung unserer Richtlinien für die Datenaufbewahrung gelöscht werden. Microsoft ist bestrebt, zu Ihrer Privatsphäre beizutragen, so wie ausführlich in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.
+## <a name="privacy-notice"></a>Datenschutzbestimmungen
+Mit dem allgemeinen Datenmodell vom Microsoft PowerApps sammelt und speichert Microsoft benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen. Wir verwenden diese Informationen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die von App-Erstellern erstellt werden, helfen uns dabei, Szenarien zu verstehen, die in der Microsoft PowerApps Community üblich sind, und Lücken bei den Standardentitäten des Service festzustellen, z. B. Schemas bezüglich der Organisationen. Die Daten in den Datenbanktabellen, die mit diesen Entitäten verknüpft werden, werden von Microsoft nicht verwendet, es wird nicht darauf zugegriffen und sie werden nicht außerhalb der Region, in der die Datenbank bereitgestellt wird, repliziert. Beachten Sie jedoch, dass die benutzerdefinierte Entität und die Feldnamen möglicherweise in Regionen repliziert werden und in Übereinstimmung mit unseren Richtlinien zur Datenaufbewahrung gelöscht werden. Microsoft legt großen Wert auf Ihren Datenschutz, wie weiter unten in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.

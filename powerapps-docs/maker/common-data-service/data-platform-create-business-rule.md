@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Geschäftsregel in Common Data Service (CDS) für Apps | Microsoft-Dokumentation
-description: Schrittanleitungen zum Erstellen einer Geschäftsregel in Common Data Service (CDS) für Apps.
+title: Erstellen einer Geschäftsregel in Common Data Service for Apps | MicrosoftDocs
+description: Schrittweise Anweisungen zur Erstellung einer Geschäftsregel in Common Data Service (CDS) for Apps.
 author: clwesene
 manager: kfile
 ms.service: powerapps
@@ -8,116 +8,116 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 5cf2a312ddba83312805f6b3b517738f1bc1da78
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218025"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="create-a-business-rule"></a>Erstellen einer Geschäftsregel
 
-Sie können Geschäftsregeln und -empfehlungen erstellen, um Logiken und Validierungen anzuwenden, ohne Code zu schreiben oder Plug-Ins zu erstellen.  Geschäftsregeln stellen eine einfache Schnittstelle bereit, um sich schnell ändernde und häufig verwendete Regeln zu implementieren und zu verwalten. 
+# <a name="create-a-business-rule-for-an-entity"></a>Geschäftsregel für eine Entität erstellen
+
+Sie können Geschäftsregeln und Empfehlungen erstellen, um Logik und Validierungen anzuwenden, ohne -Code zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. 
   
-Indem Sie Bedingungen und Aktionen kombinieren, können Sie folgende Vorgänge mit Geschäftsregeln durchführen:  
+Indem Sie Bedingungen und Aktionen kombinieren können Sie folgende Aktionen mit Geschäftsregeln ausführen:  
   
-* Festlegen von Feldwerten  
-* Löschen von Feldwerten  
-* Festlegen von Anforderungsebenen für Felder  
-* Anzeigen oder Ausblenden von Feldern  
+* Feldwerte festlegen  
+* Klare Feldwerte  
+* Festlegen von Felderforderlichkeitsstufen  
+* Ein- oder Ausblenden von Feldern  
 * Aktivieren oder Deaktivieren von Feldern  
 * Überprüfen von Daten und Anzeigen von Fehlermeldungen  
-* Erstellen von Geschäftsempfehlungen, die auf Business Intelligence basieren  
+* Erstellen von Geschäftsempfehlungen basierend auf Business Intelligence-Daten.  
   
-## <a name="differences-between-canvas-and-model-driven-apps"></a>Unterschiede zwischen Canvas-Apps und modellgesteuerten Apps
+## <a name="differences-between-canvas-and-model-driven-apps"></a>Unterschiede zwischen Canvas und modellgesteuerten Apps
 
-Modellgesteuerte Apps können alle Aktionen verwenden, die für Geschäftsregeln verfügbar sind. Derzeit sind jedoch nicht alle Aktionen für Geschäftsregeln in Canvas-Apps verfügbar. Folgende Aktionen sind in Canvas-Apps **nicht** verfügbar:
+Modellgesteuerte Apps können alle Aktionen verwenden, die in Geschäftsregeln verfügbar sind, jedoch sind derzeit nicht alle Geschäftsregelaktionen bei Canvas-Apps verfügbar. Die folgenden Aktionen sind **nicht** für Canvas-Apps verfügbar:
 
-* Anzeigen oder Ausblenden von Feldern  
+* Ein- oder Ausblenden von Feldern  
 * Aktivieren oder Deaktivieren von Feldern  
-* Erstellen von Geschäftsempfehlungen, die auf Business Intelligence basieren  
+* Erstellen von Geschäftsempfehlungen basierend auf Business Intelligence-Daten.  
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Sie müssen in eine [Umgebung](../canvas-apps/working-with-environments.md) wechseln, in der Sie Entitäten erstellen und bearbeiten können, um diesem Artikel zu folgen.
+Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/working-with-environments.md) wechseln, in der Sie Entitäten erstellen und bearbeiten können.
 
-## <a name="create-a-business-rule"></a>Erstellen einer Geschäftsregel
+## <a name="create-a-business-rule"></a>Geschäftsregel formulieren
   
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und klicken oder tippen Sie am linken Rand auf den Pfeil nach unten für **Daten**.
+1. Melden Sie sich in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
 
-2. Klicken oder tippen Sie in der angezeigten Liste auf **Entitäten**.
+2. In der Liste, der angezeigt wird, klicken oder tippen Sie auf **Entitäten**.
   
-3. Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (z.B. die Entität **Account**), und klicken Sie dann auf die Registerkarte **Geschäftsregeln**.  
+3. Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (öffnen Sie z.B. die Entität **Firma**), und doppelklicken Sie dann auf die Registerkarte **Geschäftsregeln**.  
 
 4. Klicken Sie auf **Neu**.  
   
-    Das Fenster des Geschäftsregel-Designers wird mit einer einzelnen Bedingung geöffnet, die bereits für Sie erstellt wurde. Jede Regel beginnt mit einer Bedingung. Die Geschäftsregel führt auf Grundlage dieser Bedingung eine oder mehrere Aktionen durch.  
+    Das Geschäftsregeldesignerfenster wird mit einer einzelnen Bedingung geöffnet, die bereits für Sie erstellt wurde. Jede Regel startet mit einer Bedingung. Die Geschäftsregel führt eine oder mehrere diese Aktionen basierend auf der Bedingung durch.  
 
     > [!TIP]
-    > Wenn Sie eine vorhandene Geschäftsregel ändern möchten, müssen Sie diese zuvor deaktivieren.  
+    > Wenn Sie eine vorhandene Geschäftsregel ändern möchten, müssen Sie sie deaktivieren, bevor Sie sie bearbeiten können.  
   
-5. Fügen Sie im Feld „Beschreibung“ in der oberen linken Ecke des Fensters nach Belieben eine Beschreibung hinzu.
+5. Fügen Sie eine Beschreibung im Beschreibungsfeld in der oberen linken Ecke des Fensters hinzu.
   
-6. Legen Sie den Bereich folgendermaßen fest:  
+6. Legen Sie den Bereich nach folgendem Bedingungen fest:  
   
     |||  
     |-|-|  
-    |**Ausgewähltes Element**|**Festgelegter Bereich**|  
+    |**Wenn Sie dieses Element auswählen...**|**Ist der Bereich...**|  
     |**Entität**|Modellgesteuerte Formulare und Server|  
     |**Alle Formulare**|Modellgesteuerte Formulare|  
-    |Bestimmte Formulare (z.B. das **Account**-Formular)|Nur dieses modellgesteuerte Formular|  
+    |Bestimmtes Formular (z. B. **Firma**-Formular)|Nur das modellgesteuerte Formular|  
 
     > [!TIP]
-    > Wenn Sie eine Canvas-App erstellen, müssen Sie „Entität“ als Bereich verwenden.
+    > Wenn Sie eine Canvas-App erstellen, müssen Sie als Bereich eine Entität verwenden.
   
-7. **Hinzufügen von Bedingungen:** So fügen Sie Ihrer Geschäftsregel weitere Bedingungen hinzu:  
+7. **Bedingungen hinzufügen.** Um Ihrer Geschäftsregel weitere Bedingungen hinzuzufügen:  
   
-    1. Ziehen Sie die Komponente **Bedingung** von der Registerkarte **Komponenten** zu einem Pluszeichen im Designer.  
+    1. Ziehen Sie die **Bedingung**-Komponente von der Registerkarte **Komponenten** auf ein Pluszeichen (+) zwischen im Designer.  
   
-        ![Eine Bedingung zu einer Geschäftsregel hinzufügen](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "Add a condition in a business rule")  
+        ![Einer Geschäftsregel eine Bedingung hinzufügen](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "Einer Geschäftsregel eine Bedingung hinzufügen")  
   
-    2. Klicken Sie zum Festlegen von Eigenschaften für die Bedingung auf die Komponente **Bedingung** im Fenster des Designers, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** fest, die sich auf der rechten Seite des Bildschirms befindet. Während Sie die Eigenschaften festlegen, erstellt Common Data Service einen Ausdruck im unteren Bereich der Registerkarte **Eigenschaften**.  
+    2. Sie können die Eigenschaften der Bedingung festlegen. Klicken Sie dazu auf die **Bedingung**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** auf der rechten Seite des Bildschirms fest. Wenn Sie die Eigenschaften festlegen, erstellt der Common Data Service einen Ausdruck unten auf der Registerkarte **Eigenschaften**.  
   
-    3. Klicken Sie zum Hinzufügen einer zusätzlichen Klausel (eine AND- oder OR-Klausel) zur Bedingung auf in der Registerkarte **Eigenschaften** auf **Neu**, um eine neue Regel zu erstellen. Legen Sie anschließend die Eigenschaften für diese Regel fest. Im Feld **Regellogik** können Sie angeben, ob die neue Regel als AND- oder OR-Klausel hinzugefügt werden soll.  
+    3. Um eine Zusatzbestimmung (UND oder ODER) der Bedingung hinzuzufügen, klicken Sie auf **Neu** auf der Registerkarte **Eigenschaften**, um eine neue Regel zu erstellen, und legen Sie dann Eigenschaften für diese Regel fest. Im Feld **Regel-Logik** können Sie angeben, ob die neue Regel als UND oder ODER hinzugefügt werden soll.  
   
-        ![Eine neue Regel zu einer Bedingung hinzufügen](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "Add a new rule to a condition")  
+        ![Einer Bedingung eine neue Regel hinzufügen](./media/data-platform-cds-create-business-rule/add-new-rule-condition.png "Einer Bedingung eine neue Regel hinzufügen")  
   
-    4. Wenn Sie mit dem Festlegen der Eigenschaften für die Bedingung fertig sind, klicken Sie auf **Übernehmen**.  
+    4. Wenn Sie die Eigenschaften für die Bedingung festgelegt haben, klicken Sie auf **Übernehmen**.  
   
-8. **Hinzufügen von Aktionen:** So fügen Sie eine Aktion hinzu:  
+8. **Aktionen hinzufügen.** Eine Aktion hinzufügen:  
   
-    1. Ziehen Sie eine der Aktionskomponenten von der Registerkarte **Komponenten** zu einem Pluszeichen neben der Komponente **Bedingung**. Ziehen Sie die Aktion zu einem Pluszeichen neben einem Häkchen, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung erfüllt ist. Ziehen Sie sie zu einem Pluszeichen neben einem X-Symbol, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung nicht erfüllt ist.
+    1. Ziehen Sie eine der Aktionskomponenten von der **Komponenten**-Registerkarte auf ein Pluszeichen neben **Bedingung**-Komponente. Ziehen Sie die Aktionen auf ein Pluszeichen neben ein Häkchen, wenn die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung erfüllt wird, oder auf ein Pluszeichen neben einem x, wenn Sie die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung nicht erfüllt ist.
   
-        ![Eine Aktion zu einer Geschäftsregel ziehen](./media/data-platform-cds-create-business-rule/drag-an-action-business-rule.png "Drag an action to a business rule")  
+        ![Eine Aktion auf eine Geschäftsregel ziehen](./media/data-platform-cds-create-business-rule/drag-an-action-business-rule.png "Eine Aktion auf eine Geschäftsregel ziehen")  
   
-    2. Klicken Sie zum Festlegen von Eigenschaften für die Aktion auf die Komponente **Aktion** im Fenster des Designers, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** fest.  
+    2. Sie können die Eigenschaften der Aktion festlegen. Klicken Sie dazu auf die **Aktion**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften**.  
   
-    3. Wenn Sie mit dem Festlegen der Eigenschaften fertig sind, klicken Sie auf **Übernehmen**.  
+    3. Wenn Sie die Eigenschaften festgelegt haben, klicken Sie auf **Übernehmen**.  
   
-9. **Hinzufügen einer Geschäftsempfehlung (nur für modellgesteuerte Apps):** So fügen Sie eine Geschäftsempfehlung hinzu:  
+9. **Hinzufügen einer Unternehmensempfehlung. (Nur modellgestützt)** Um eine Unternehmensempfehlung hinzuzufügen:  
   
-    1. Ziehen Sie die Komponente **Empfehlung** von der Registerkarte **Komponenten** zu einem Pluszeichen neben einer **Bedingung**-Komponente. Ziehen Sie die Komponente **Empfehlung** zu einem Pluszeichen neben einem Häkchen, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung erfüllt ist. Ziehen Sie sie zu einem Pluszeichen neben einem X-Symbol, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung nicht erfüllt ist.  
+    1. Ziehen Sie eine der **Empfehlung**-Komponente von der **Komponenten**-Registerkarte auf eine **Bedingung**-Komponente. Ziehen Sie die **Empfehlung** -Komponente auf ein Pluszeichen neben ein Häkchen, wenn die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung erfüllt wird, oder auf ein Pluszeichen neben einem x, wenn Sie die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung nicht erfüllt ist.  
   
-    2. Klicken Sie zum Festlegen von Eigenschaften für die Empfehlung auf die Komponente **Empfehlung** im Fenster des Designers, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** fest.  
+    2. Sie können die Eigenschaften der Empfehlung festlegen. Klicken Sie dazu auf die **Empfehlung**-Komponente im Designer, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften**.  
   
-    3. Wenn Sie weitere Aktionen zur Empfehlung hinzufügen möchten, ziehen Sie diese aus der Registerkarte **Komponenten**, und legen Sie dann Eigenschaften für jede Aktion in der Registerkarte **Eigenschaften** fest.  
+    3. Um weitere Aktionen zur Empfehlung hinzuzufügen, ziehen Sie sie auf die Registerkarte **Komponenten**, und legen Sie dann auf Eigenschaften für jede Aktion auf der Registerkarte **Eigenschaften** fest.  
   
         > [!NOTE]
-        >  Wenn Sie eine Empfehlung erstellen, fügt Common Data Service standardmäßig eine einzelne Aktion hinzu. Klicken Sie in der Komponente **Empfehlung** auf **Details**, um alle Aktionen in einer Empfehlung anzuzeigen.  
+        >  Wenn Sie eine Empfehlung erstellen, fügt der Common Data Service standardmäßig eine einzelne Aktion hinzu. Um alle Aktionen in einer Empfehlung anzuzeigen, klicken Sie auf der Seite **Details** auf die **Empfehlung**-Komponente.  
   
-    4. Wenn Sie mit dem Festlegen der Eigenschaften fertig sind, klicken Sie auf **Übernehmen**.  
+    4. Wenn Sie die Eigenschaften festgelegt haben, klicken Sie auf **Übernehmen**.  
   
-10. Klicken Sie in der Aktionsleiste auf **Überprüfen**, um eine Geschäftsregel zu überprüfen.  
+10. Um die Geschäftsregel zu überprüfen, klicken Sie auf **Überprüfen** auf der Aktionsleiste.  
   
-11. Klicken Sie in der Aktionsleiste auf **Speichern**, um eine Geschäftsregel zu speichern.  
-12. Wenn Sie eine Geschäftsregel aktivieren möchten, wählen Sie diese im Fenster des Projektmappen-Explorers aus, und klicken Sie dann auf **Aktivieren**. Sie können keine Geschäftsregel über das Fenster des Designers aktivieren.  
+11. Um die Geschäftsregel zu speichern, klicken Sie auf **Speichern** auf der Aktionsleiste.  
+12. Um die Geschäftsregel zu aktivieren, wählen Sie sie im Lösungsexplorer-Fenster aus, und klicken Sie dann auf **Aktivieren**. Sie können die Geschäftsregel nicht über das Designer-Fenster aktivieren.  
   
     > [!TIP]
-    >  Hier sind einige Tipps, die Sie beachten sollten, wenn Sie an Geschäftsregeln im Fenster des Designers arbeiten:  
+    >  Hier sind ein paar Tipps für die Arbeit mit den Geschäftsregeln im Designerfenster:  
     >   
-    > - Klicken Sie in der Aktionsleiste auf **Momentaufnahme**, um eine Momentaufnahme aller Elemente im Fenster „Geschäftsregel“ zu erstellen. Dies ist beispielsweise nützlich, wenn Sie Kommentare zur Geschäftsregel von einem Teammitglied freigeben und abrufen möchten.  
-    > - Verwenden Sie die Minikarte, um schnell zu verschiedenen Teilen des Prozesses zu navigieren. Dies ist nützlich, wenn der Prozess kompliziert ist und über den Bildschirmbereich hinausgeht.  
-    > - Während Sie Bedingungen, Aktionen und Geschäftsempfehlungen zu Ihrer Geschäftsregel hinzufügen, erstellt Common Data Service den Code für die Geschäftsregel im unteren Bereich des Designer-Fensters. Dieser Code ist schreibgeschützt.  
+    > - Um eine Momentaufnahme aller Elemente im Geschäftsregelnfenster durchzuführen, klicken Sie auf **Momentaufnahme** in der Aktionsleiste. Dies ist beispielsweise hilfreich, wenn Sie die Geschäftsregel freigeben und Kommentare von Teammitgliedern haben möchten.  
+    > - Verwenden Sie die Minimap, um schnell zu anderen Teilen des Prozesses zu navigieren. Dies ist hilfreich, wenn Sie einen komplizierten Prozess haben, der nicht komplett angezeigt wird.  
+    > - Wenn Sie Bedingungen, Aktionen und Unternehmensempfehlungen der Geschäftsregel hinzufügen, erstellt Common Data Service den Code für die Geschäftsregel am unteren Rand des Designerfensters. Dieser Code ist nur lesbar.  
   
-## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren von Fehlermeldungen, die in Geschäftsregeln verwendet werden  
- Wenn in Ihrer Organisation mehr als eine Sprache verwendet wird, sollten Sie alle festgelegten Fehlermeldungen lokalisieren. Jedes Mal, wenn Sie eine Meldung festlegen, wird eine Bezeichnung vom System generiert. Wenn Sie die Übersetzungen Ihrer Organisation exportieren, können Sie lokalisierte Versionen zu Ihren Meldungen hinzufügen und diese Bezeichnungen dann zurück in Common Data Service importieren. Dadurch können die Personen, die andere Sprachen als die Standardsprache verwenden, die übersetzten Meldungen anzeigen.  
+## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren der Fehlermeldungen in Geschäftsregeln  
+ Sind mehrere Sprache für Ihre Organisation bereitgestellt, können Sie Ihre Fehlermeldungen lokalisieren. Bei jeder Meldung generiert das System eine Beschriftung. Wenn Sie die Übersetzungen in Ihrer Organisation exportieren, können Sie lokalisierte Versionen Ihrer Meldungen hinzufügen und diese Beschriftungen wieder im Common Data Service importieren, so dass Personen, die andere Sprachen als Ihre Ausgangssprache verwenden, die übersetzten Meldungen sehen.  
   

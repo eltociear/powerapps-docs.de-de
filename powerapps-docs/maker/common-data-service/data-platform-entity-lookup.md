@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Beziehung zwischen Entitäten durch Verwenden eines Nachschlagefelds | Microsoft-Dokumentation
-description: Hier finden Sie Schrittanleitungen zum Erstellen einer Beziehung zwischen Entitäten in PowerApps mithilfe eines Nachschlagefelds.
+title: 'Erstellen einer Beziehung zwischen Entitäten, mithilfe eines Suchfelds | Microsoft Docs'
+description: Schrittweise Anleitung zur Erstellung einer Beziehung zwischen Entitäten in PowerApps mithilfe eines Suchfelds.
 author: clwesene
 manager: kfile
 ms.service: powerapps
@@ -8,82 +8,86 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: 8562219c373a8880f7cc89f791b6c6373b6df0b3
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217933"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
+
 # <a name="create-a-relationship-between-entities"></a>Erstellen einer Beziehung zwischen Entitäten
-Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Angenommen, Sie haben eine Entität **Teachers** und eine Entität **Class**, und die Entität **Class** verfügt möglicherweise über eine Nachschlagebeziehung zu der Entität **Teachers**, um anzuzeigen, welcher Lehrer den Kurs gibt. Sie können ein Nachschlagefeld verwenden, um Daten aus der Entität **Teachers** anzuzeigen. Dies wird häufig als Nachschlagefeld bezeichnet.
+Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Beispielsweise haben Sie eine **Lehrer**- und **Klasse**-Entität, und die **Klasse**-Entität weist möglicherweise eine Suchbeziehung mit der **Lehrer**-Entität, um zu veranschaulichen, welcher Lehrer welche Klasse unterrichtet. Sie können ein Suchfeld verwenden, um Daten aus der Entität **Lehrer** anzuzeigen. Dies wird allgemein als ein Suchfeld bezeichnet.
 
-## <a name="define-a-relationship"></a>Definieren einer Beziehung
-Sie können mehrere Typen von Beziehungen zwischen zwei Entitäten (oder innerhalb einer Entität) erstellen. Jede Entität kann eine Beziehung mit mehr als einer Entität haben, und jede Entität kann mehr als eine Beziehung zu einer anderen Entität haben. Einige häufige Beziehungstypen sind folgende:
+## <a name="define-a-relationship"></a>Eine Beziehung definieren
+Sie können verschiedene Beziehungstypen aus einer Entität zur anderen erstellen (oder zwischen einer Entität und sich selbst). Jede Entität kann eine Beziehung mit mehr als einer Entität haben und jede Entität kann mehr als eine Beziehung zu einer anderen Entität haben. Einige allgemeinen Beziehungstypen sind:
 
-* **n:1**: Bei diesem Beziehungstyp kann jeder Datensatz in Entität B mit mehr als einem Datensatz in Entität A übereinstimmen, jedoch kann jeder Datensatz in Entität A mit nur einem Datensatz in Entität B übereinstimmen. Beispielsweise hat jeder Kurs nur einen einzigen Kursraum. Dabei handelt es sich um die häufigste Art der Beziehung. Diese wird in der Feldliste als **Nachschlagefeld** angezeigt.
-* **1:n**: Bei diesem Beziehungstyp kann jeder Datensatz in Entität A mit mehr als einem Datensatz in Entität B übereinstimmen, jedoch kann jeder Datensatz in Entität B mit nur einem Datensatz in Entität A übereinstimmen. Beispielsweise kann ein einzelner Lehrer mehrere Kurse geben.
-* **m:n**: Bei diesem Beziehungstyp kann jeder Datensatz in Entität A mit mehr als einem Datensatz in Entität B übereinstimmen und umgekehrt. Schüler können zum Beispiel an mehreren Kursen teilnehmen, und in jedem Kurs sind mehrere Schüler.
+* **Viel zu eine** - In diesem Beziehungstyp kann jeder Datensatz in Entität A mit mehr als einem Datensatz in Entität B übereinstimmen , aber jeder Datensatz in Entität B kann nur einen Datensatz in Entität A entsprechen. Z. B. hat eine Klasse ein Klassenzimmer. Dies ist der gebräuchlichste Beziehungstyp und wird in der Feldliste als **Suchfeld** angezeigt
+* **Eine zu viele** - In diesem Beziehungstyp kann jeder Datensatz in Entität B mit mehr als einem Datensatz in Entität A übereinstimmen , aber jeder Datensatz in Entität A kann nur einen Datensatz in Entität B entsprechen. Z. B. hat ein Lehrer, der mehrere Klassen unterrichtet.
+* **Viele zu viele** - In diesem Beziehungstyp kann jeder Datensatz in Entität A mehr als einem Datensatz in Entität B entsprechen und umgekehrt. Beispielsweise besuchen Schüler viele Klassen, und jede Klasse kann mehrere Schüler haben.
 
-## <a name="add-a-lookup-field-many-to-one-relationship"></a>Hinzufügen eines Nachschlagefelds (n:1-Beziehung)
+## <a name="add-a-lookup-field-many-to-one-relationship"></a>Hinzufügen eines Suchfelds (Viele zu eine-Beziehung)
 
-Um eine Nachschlagebeziehung zu einer Entität hinzuzufügen, erstellen Sie unter der Registerkarte **Beziehungen** eine Beziehung, und geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
+Um einer Entität eine Suchbeziehung hinzuzufügen, erstellen Sie eine Beziehung in der Registerkarte **Beziehungen** die geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
 
-1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
-2. Klicken oder tippen Sie auf eine vorhandene Entität, oder [erstellen Sie eine neue Entität](data-platform-create-entity.md).
+2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
 3. Klicken Sie auf **Beziehungen**.
 
-4. Klicken Sie auf **Beziehung hinzufügen**. Dadurch wird ein neuer Bereich geöffnet, in dem Sie die Entität auswählen können, zu der Sie eine Beziehung erstellen möchten. Wählen Sie die Entität aus dem Dropdownmenü **Verknüpfte Entität** aus.
+4. Klicken Sie auf **Beziehung hinzufügen**. Dadurch wird ein neuer Bereich geöffnet, in dem Sie die Entität auswählen können, mit der Sie eine Beziehung erstellen möchten. Wählen Sie die Entität aus dem Dropdownmenü **Verknüpfte Entität** aus.
 
-    ![n:1-Beziehung](./media/data-platform-cds-newrelationship/manytoone-1.png "Many to One Relationship")
+    > [!div class="mx-imgBorder"] 
+    > ![Viele zu Eine-Beziehung](./media/data-platform-cds-newrelationship/manytoone-1.png "Viele zu Eine-Beziehung")
 
-5. Nach dem Auswählen einer Entität werden die Nachschlagefelder in der primären Entität angezeigt. Diese stimmen standardmäßig mit den Entitätsnamen (in diesem Beispiel „Classroom“) überein, Sie können diese jedoch nach Bedarf ändern.
+5. Wenn Sie eine Entität ausgewählt haben, werde die Suchfelder in der primären Entität angezeigt und standardmäßig dem Namen der Entitäten entsprechen (in diesem Beispiel Klassenzimmer), aber Sie können ihn nach Bedarf ändern.
 
-    ![n:1-Beziehung](./media/data-platform-cds-newrelationship/manytoone-2.png "Many to One Relationship")
+    ![Viele zu Eine-Beziehung](./media/data-platform-cds-newrelationship/manytoone-2.png "Viele zu Eine-Beziehung")
 
 6. Klicken Sie auf **Fertig**, um die Beziehung zu Ihrer Entität hinzuzufügen, und klicken Sie dann auf **Entität speichern**.
 
-    ![n:1-Beziehung](./media/data-platform-cds-newrelationship/manytoone-3.png "Many to One Relationship")
+    > [!div class="mx-imgBorder"] 
+    > ![Viele zu Eine-Beziehung](./media/data-platform-cds-newrelationship/manytoone-3.png "Viele zu Eine-Beziehung")
 
-## <a name="add-a-one-to-many-relationship"></a>Hinzufügen einer 1:n-Beziehung
+## <a name="add-a-one-to-many-relationship"></a>Eine Eine-zu-Viele-Beziehung hinzufügen
 
-Erstellen Sie zum Hinzufügen einer 1:n-Beziehung in der Registerkarte **Beziehungen** eine Beziehung, und geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
+Um eine Eine-zu-Viele-Beziehung hinzuzufügen, erstellen Sie eine Beziehung in der Registerkarte **Beziehungen** die geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
-2. Klicken oder tippen Sie auf eine vorhandene Entität, oder [erstellen Sie eine neue Entität](data-platform-create-entity.md).
+2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
 3. Klicken Sie auf **Beziehungen**.
 
-4. Klicken Sie rechts von **Beziehung hinzufügen** auf den Pfeil nach unten. Dadurch können Sie zwischen den beiden Beziehungen auswählen. Klicken Sie auf **1:n**. Dadurch wird ein neuer Bereich geöffnet, in dem Sie die Entität auswählen können, zu der Sie eine Beziehung erstellen möchten. Wählen Sie die Entität aus dem Dropdownmenü **Verknüpfte Entität** aus.
+4. Klicken Sie auf den Pfeil nach unten auf der rechten Seite von **Beziehung hinzufügen**, damit Sie aus beiden Beziehungstypen auswählen können. Klicken Sie auf **Eine-zu-Viele** geklickt wird ein neuer, Bereich, damit Sie die Entität aus, für die Sie eine Beziehung erstellen möchten. Wählen Sie die Entität aus dem Dropdownmenü **Verknüpfte Entität** aus.
 
-    ![1:n-Beziehung](./media/data-platform-cds-newrelationship/onetomany-1.png "One to Many Relationship")
+    ![Eine zu Viele-Beziehung](./media/data-platform-cds-newrelationship/onetomany-1.png "Eine zu viele-Beziehung")
 
-5. Nach dem Auswählen einer Entität werden die Nachschlagefelder in der primären Entität angezeigt. Diese stimmen standardmäßig mit den Entitätsnamen (in diesem Beispiel „Class“) überein, Sie können diese jedoch nach Bedarf ändern.
+5. Wenn Sie eine Entität festgelegt wurde, wird die sich auf alle Felder der primären Entität, sie ist Standard mit dem Entitätsnamen (in diesem Beispiel Klasse) angezeigt, aber Sie können ihn nach Bedarf ändern.
 
     > [!NOTE]
-    > Im Fall einer 1:n-Beziehung wird ein Nachschlagefeld in der verknüpften Entität erstellt, nicht in der Entität, die Sie aktuell ausgewählt haben. Wenn Sie ein Nachschlagefeld in der aktuellen Entität möchten, erstellen Sie eine n:1-Beziehung.
+    > Bei 1:n-Beziehungen wird das Suchfeld in der verknüpften Entität und nicht in der Entität aktuell ausgewählten Entität erstellt. Wenn Sie die Suche in der aktuellen Entität brauchen, erstellen Sie bitte eine n:1-Beziehung.
 
-    ![1:n-Beziehung](./media/data-platform-cds-newrelationship/onetomany-2.png "One to Many Relationship")
+    > [!div class="mx-imgBorder"] 
+    > ![Eine zu Viele-Beziehung](./media/data-platform-cds-newrelationship/onetomany-2.png "Eine zu viele-Beziehung")
 
 6. Klicken Sie auf **Fertig**, um die Beziehung zu Ihrer Entität hinzuzufügen, und klicken Sie dann auf **Entität speichern**.
 
-    ![1:n-Beziehung](./media/data-platform-cds-newrelationship/onetomany-3.png "One to Many Relationship")
+    > [!div class="mx-imgBorder"] 
+    > ![Eine zu Viele-Beziehung](./media/data-platform-cds-newrelationship/onetomany-3.png "Eine zu viele-Beziehung")
 
-## <a name="add-a-many-to-many-relationship"></a>Hinzufügen einer m:n-Beziehung
+## <a name="add-a-many-to-many-relationship"></a>Eine viele zu viele-Beziehung hinzufügen
 
-Derzeit ist diese Funktion nur über das Menü „Erweitert“ verfügbar. Klicken Sie im linken Menü der PowerApps-Startseite auf „Erweitert“. Weitere Informationen zum Erstellen der Beziehung finden Sie unter [Create N:N relationships (Erstellen von m:n-Beziehungen)](/dynamics365/customer-engagement/customize/create-and-edit-nn-many-to-many-relationships).
+Momentan ist dies nur für das erweiterte Menü verfügbar. Klicken Sie in der PowerApps-Homepage im linken Menü auf "Erweitert". Informationen dazu, wie die Beziehung erstellt wird finden Sie unter [Erstellen von N:N-Beziehungen](/dynamics365/customer-engagement/customize/create-and-edit-nn-many-to-many-relationships)
 
-## <a name="use-a-lookup-field-in-an-app"></a>Verwenden eines Nachschlagefelds in einer App
-Wenn Sie [eine App automatisch aus einer Entität erstellen](../canvas-apps/data-platform-create-app.md), die ein Nachschlagefeld enthält, wird dieses als **Dropdown**-Steuerelement angezeigt, das Daten aus dem Feld **Primärschlüssel** der Entität enthält.
+## <a name="use-a-lookup-field-in-an-app"></a>Verwenden eines Suchfelds in einer App
+Wenn Sie [automatisch eine App erstellen](../canvas-apps/data-platform-create-app.md), die aus einer Entität erstellt wird, die ein Suchfeld enthält, wird es als **Dropdown**-Steuerelement angezeigt, das Daten im Feld **Primärer Name** der Entität enthält.
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Generieren einer App mithilfe einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app.md)
-* [Neuerstellen einer App mithilfe einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app-scratch.md)
+* [Generieren einer App mit einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app.md)
+* [Erstellen einer App von Grund auf einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app-scratch.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen eines Optionssatzes | Microsoft-Dokumentation
-description: Hier finden Sie Schrittanleitungen zum Erstellen eines Optionssatzes.
+title: Erstellen eines Optionssatzes | Microsoft Docs
+description: 'Schrittweise Anweisungen, um einem Optionssatz zu erstellen.'
 author: clwesene
 manager: kfile
 ms.service: powerapps
@@ -8,78 +8,78 @@ ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: clwesene
-ms.openlocfilehash: b2b472ae33bd16761d25fc965f24afc6bb9b957e
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218416"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="create-an-option-set"></a>Erstellen eines Optionssatzes
 
-Durch Optionssätze können Sie einem Benutzer innerhalb Ihrer App Dropdownlisten mit festen Werten hinzufügen, um die Datenkonsistenz zu gewährleisten. Diese werden in anderen Anwendungen manchmal als „Auswahlliste“ oder „Auswahlfeld“ bezeichnet. Ähnlich wie bei Entitäten gibt es Standardoptionssätze und die Möglichkeit, benutzerdefinierte Optionssätze für die Verwendung innerhalb Ihrer App zu erstellen.
+# <a name="create-an-option-set"></a>Einen Optionssatz erstellen
 
-Optionssätze können auf zwei Arten erstellt werden: aus der Liste „Optionssatz“ innerhalb des Portals oder direkt in einer Entität während der Erstellung eines Felds. Weitere Informationen zum Erstellen einer Entität finden Sie unter [Erstellen einer Entität](data-platform-create-entity.md).
+Mit Optionssätzen können Sie Drop-Down-Listen mit festen Werten für einen Benutzer in Ihrer App einschließen, um die Datenkonsistenz sicherzustellen. Diese werden in anderen Anwendungen gelegentlich als Auswahllisten oder Auswahlfelder bezeichnet. Ähnlich wie bei Entitäten gibt es beide Standardoptionssätze und die Möglichkeit zum Erstellen benutzerdefinierter Optionssätze, zur Verwendung innerhalb Ihrer App.
 
-## <a name="creating-an-option-set-while-adding-a-field"></a>Erstellen eines Optionssatzes während des Hinzufügens eines Felds
+Optionssätze können auf zwei Arten erstellt werden, entweder in der Optionssatzliste innerhalb des Portals oder direkt in einer Entität beim Erstellen eines Felds. Weitere Informationen darüber, wie Sie eine Entität erstellen finden Sie unter [Erstellen einer Entität](data-platform-create-entity.md).
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
+## <a name="creating-an-option-set-while-adding-a-field"></a>Erstellen eines Optionssatzes beim Hinzufügen eines Felds.
+
+1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
-2. Klicken oder tippen Sie auf eine vorhandene Entität, oder [erstellen Sie eine neue Entität](data-platform-create-entity.md).
+2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
-3. Fügen Sie ein neues Feld zu Ihrer Entität hinzu, indem Sie auf **Feld hinzufügen** klicken.
+3. Fügen Sie Ihrer Entität ein neues Feld hinzu, indem Sie auf **Feld hinzufügen** klicken.
 
-4. Geben Sie im Bereich „Neues Feld“ den **Anzeigenamen** für Ihr Feld ein. **Name** wird automatisch aufgefüllt und wird als eindeutiger Name für das Feld verwendet. Der **Anzeigename** wird verwendet, wenn das Feld Ihren Benutzern angezeigt wird. Der **Name** wird während des Erstellens Ihrer App in Ausdrücken und Formularen verwendet.
+4. Geben Sie im neuen Feldbereich den **Anzeigename** für Ihr Feld ein. **Name** wird automatisch aufgefüllt und als eindeutiger Name für Ihr Feld verwendet. Der **Anzeigename** wird verwendet, wenn dieses Feld Ihren Benutzern angezeigt wird, der **Name** wird in Ausdrücken und Formeln verwendet, wenn Sie Ihre App erstellen in.
 
-    ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Bereich „Neues Feld“")
+    ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Bereich \"Neues Feld\"")
 
-5. Klicken Sie auf die Dropdownliste **Datentyp**, und wählen Sie **Optionssatz** oder **Optionssatz mit Mehrfachauswahl** aus.
+5. Klicken Sie auf das Dropdown **Datentyp** und wählen Sie **Optionssatz** oder **MultiSelect-Optionssatz**.
 
-6. Klicken Sie auf die Dropdownliste **Optionssatz**, und wählen Sie **Neuer Optionssatz** aus.
-
-    > [!NOTE]
-    > Wenn ein vorhandener Optionssatz für Ihre Entität verwendet werden kann, können Sie diesen aus der Liste auswählen, ohne einen neuen zu erstellen.
-
-    ![Liste „Optionssatz“](./media/data-platform-cds-newoptionset/fieldpanel-1.png "Option Set list")
-
-7. Ein neuer Bereich wird geöffnet, um den Optionssatz zu erstellen. Der **Anzeigename** und der **Name** werden standardmäßig vom Namen des Felds abgeleitet, können jedoch nach Bedarf geändert werden. Klicken Sie auf **Neues Element hinzufügen**, um Ihre Liste von Optionen zu erstellen. Wiederholen Sie diesen Schritt, bis sämtliche Elemente erstellt wurden.
-
-    ![Neuer Optionssatz](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "New Option Set")
-
-8. Wenn Sie Ihre Elemente eingegeben haben, klicken Sie auf **Speichern**, um Ihren Optionssatz zu erstellen.
-
-    ![Neuer Optionssatz](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "New Option Set")
-
-9. Klicken Sie auf **Fertig**, um den Bereich „Neues Feld“ zu schließen. Klicken Sie dann auf **Entität speichern**, um Ihre Entität in Common Data Service zu speichern.
+6. Klicken Sie auf das Dropdown **Optionssatz** und wählen Sie **Neuer Optionssatz** aus
 
     > [!NOTE]
-    > Sie können eines Ihrer Elemente als **Standard** für dieses Feld auswählen. Dieses wird standardmäßig ausgewählt, wenn Benutzer neue Datensätze in Ihrer Entität erstellen.
+    > Wenn ein vorhandener Optionssatz für Ihre Entität verwendet werden kann, können Sie ihn aus dieser Liste auswählen, ohne einen neuen zu erstellen.
 
-    ![Neues Feld](./media/data-platform-cds-newoptionset/fieldpanel-2.png "Bereich „Neues Feld“")
+    ![Optionssatzliste](./media/data-platform-cds-newoptionset/fieldpanel-1.png "Optionssatzliste")
 
-## <a name="creating-an-option-set-from-the-option-set-list"></a>Erstellen eines Optionssatzes aus der Liste „Optionssatz“
+7. Ein neuer Bereich wird geöffnet, um den Optionssatz zu erstellen, **Anzeigename** und **Name** stammen standardmäßig vom Namen des Felds, können jedoch nach Bedarf geändert werden. Klicken Sie auf **Neues Element hinzufügen**, um das Erstellen Ihrer Optionsliste zu starten. Wiederholen Sie diesen Schritt, bis alle Ihre Elemente erstellt wurden.
 
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Optionssätze**.
+    ![Neuer Optionssatz](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "Neuer Optionssatz")
 
-    ![Optionssätze](./media/data-platform-cds-newoptionset/optionsetlist.png "Liste „Optionssatz“")
+8. Nachdem Sie Ihre Elemente eingegeben haben, klicken Sie auf **Speichern**, um den Optionssatz zu erstellen.
 
-2. Klicken Sie auf **Neuer Optionssatz**.
+    ![Neuer Optionssatz](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "Neuer Optionssatz")
 
-3. Ein neuer Bereich wird geöffnet, um den Optionssatz zu erstellen. Geben Sie den **Anzeigenamen** und den **Namen** ein. Klicken Sie auf **Neues Element hinzufügen**, um Ihre Liste von Optionen zu erstellen. Wiederholen Sie diesen Schritt, bis sämtliche Elemente erstellt wurden.
+9. Klicken Sie auf **Fertig**, um den Feldbereich zu schließen, und dann auf **Entität speichern**, um Ihre Entität in Common Data Service zu speichern.
 
-    ![Optionssatz erstellen](./media/data-platform-cds-newoptionset/optionset-create.png "Option Set Create")
+    > [!NOTE]
+    > Sie können eines Ihrer Elemente als den **Standard** für dieses Feld auswählen, und es wird standardmäßig ausgewählt, wenn Benutzer neue Datensätze in der Entität erstellen.
 
-4. Wenn Sie Ihre Elemente eingegeben haben, klicken Sie auf **Speichern**, um Ihren Optionssatz zu erstellen.
+    ![Neues Feld](./media/data-platform-cds-newoptionset/fieldpanel-2.png "Bereich \"Neues Feld\"")
 
-    ![Neuer Optionssatz](./media/data-platform-cds-newoptionset/optionset-create-values.png "New Option Set")
+## <a name="creating-an-option-set-from-the-option-set-list"></a>Erstellen eines Optionssatzes aus der Optionssatzliste
 
-5. Sie können diesen Optionssatz nun verwenden, indem Sie ein neues Feld in einer Entität erstellen.
+1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Optionssätze**.
+
+    ![Optionssätze](./media/data-platform-cds-newoptionset/optionsetlist.png "Optionssatzliste")
+
+2. Klicken Sie auf **Neuer Optionssatz**
+
+3. Ein neuer Bereich wird geöffnet, um den Optionssatz zu erstellen, geben Sie den **Anzeigename** und den **Name** ein. Klicken Sie auf **Neues Element hinzufügen**, um das Erstellen Ihrer Optionsliste zu starten. Wiederholen Sie diesen Schritt, bis alle Ihre Elemente erstellt wurden.
+
+    ![Optionssatz erstellen](./media/data-platform-cds-newoptionset/optionset-create.png "Optionssatz erstellen")
+
+4. Nachdem Sie Ihre Elemente eingegeben haben, klicken Sie auf **Speichern**, um den Optionssatz zu erstellen.
+
+    ![Neuer Optionssatz](./media/data-platform-cds-newoptionset/optionset-create-values.png "Neuer Optionssatz")
+
+5. Sie können nun diesen Optionssatz verwenden, indem Sie ein neues Feld in einer Entität erstellen.
 
 ## <a name="global-and-local-option-sets"></a>Globale und lokale Optionssätze
 
-Standardmäßig werden Optionssätze als globale Optionssätze erstellt. Dadurch können diese für mehrere Entitäten verwendet werden. Beim Erstellen eines neuen Optionssatzes können Sie unter der Option **Mehr anzeigen** auswählen, einen Optionssatz **lokal** zu erstellen. Diese Option ist nicht über die Liste „Optionssatz“ verfügbar, sondern nur, wenn Sie einen Optionssatz erstellen, während Sie ein Feld hinzufügen. Lokale Optionssätze können nur von der Entität und dem Feld verwendet werden, für die sie erstellt wurden, nicht in anderen Entitäten. Dieser Ansatz wird nur erfahrenen Benutzern empfohlen, die einen lokalen Optionssatz benötigen.
+Standardmäßig werden Optionssätze als globale Optionssätze erstellt, sodass sie in mehreren Entitäten wiederverwendet werden können. Unter der Option **Weitere anzeigen** können Sie einen Optionssatz **lokal** machen, wenn Sie einen neuen Optionssatz erstellen. Diese Option ist nur verfügbar, wenn ein Optionssatz beim Hinzufügen eines Felds erstellt wird, und nicht über die Optionssatzliste. Lokale Optionssätze können nur von der Entität und das Feld verwendet werden, für die sie erstellt wurden. Sie können nicht für andere Entitäten wiederverwendet werden. Diese Methode wird nur für fortgeschrittene Benutzer empfohlen, die eine bestimmte Anforderung für einen lokalen Optionssatz erfüllen müssen.
 
 > [!IMPORTANT]
 > Sobald ein Optionssatz lokal oder global erstellt wurde, kann dies nicht mehr geändert werden.

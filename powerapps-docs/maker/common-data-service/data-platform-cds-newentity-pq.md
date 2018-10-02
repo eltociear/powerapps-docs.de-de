@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Daten zu einer Entität in Common Data Service für Apps mithilfe von Power Query | Microsoft-Dokumentation
-description: Ausführliche Anleitung zur Verwendung von Power Query zum Hinzufügen von Daten aus einer anderen Datenquelle zu einer neuen oder vorhandenen Entität in Common Data Service (CDS) für Apps.
+title: 'Fügen Sie in Common Data Service for Apps Daten einer Entität hinzu, indem Sie Power Query verwenden | Microsoft Docs'
+description: 'Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle im Common Data Service (CDS) for Apps hinzuzufügen.'
 author: AFTOwen
 manager: kfile
 ms.service: powerapps
@@ -9,81 +9,81 @@ ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
 ms.author: anneta
-ms.openlocfilehash: c5da71198f33661766d8fc214816c2e714736360
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218761"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Hinzufügen von Daten zu einer Entität in Common Data Service für Apps mithilfe von Power Query
-In diesem Verfahren erstellen Sie eine Entität in [Common Data Service für Apps](data-platform-intro.md) und füllen diese mithilfe von Power Query mit Daten aus einem OData-Feed auf. Sie können die gleichen Techniken verwenden, um Daten unter anderem aus diesen lokalen Quellen und Onlinequellen zu integrieren:
+
+# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Fügen Sie in Common Data Service for Apps Daten einer Entität hinzu, indem Sie Power Query verwenden
+In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service (CDS) for Apps](data-platform-intro.md)und befüllen diese Entität mit Daten aus einem OData-Feed, indem Sie Power Query verwenden. Sie können dieselben Techniken verwenden, um Daten aus diesen Online- und lokalen Quellen zu integrieren, unter anderem:
 
 * SQL Server
 * Salesforce
 * IBM DB2
-* Zugang
+* Zugriff
 * Excel
 * Web-APIs
 * OData-Feeds
-* Textdateien
+* Textfelder
 
-Sie können Daten ebenfalls filtern, transformieren oder kombinieren, bevor Sie diese in eine neue oder vorhandene Entität laden.
+Sie können Daten auch filtern, transformieren und kombinieren, bevor Sie sie in eine neue oder vorhandene Entität laden.
 
-Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Sofern Sie keine Lizenz für PowerApps haben, können Sie sich [hier kostenlos anmelden](../signup-for-powerapps.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Sie müssen in eine [Umgebung](../canvas-apps/working-with-environments.md) wechseln, in der Sie Entitäten erstellen können, um diesem Artikel zu folgen.
+Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/working-with-environments.md) wechseln, in der Sie Entitäten erstellen können.
 
 ## <a name="specify-the-source-data"></a>Angeben der Quelldaten
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und klicken oder tippen Sie am linken Rand auf den Pfeil nach unten für **Daten**.
+1. Melden Sie sich in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und klicken oder tippen Sie auf den Abwärtspfeil für **Daten** neben dem linken Rand.
 
-    ![PowerApps-Startseite](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![PowerApps-Homepage](./media/data-platform-cds-newentity-pq/sign-in.png)
 
-1. Klicken oder tippen Sie in der angezeigten Liste auf **Datenintegration**, und klicken oder tippen Sie dann in der oberen rechten Ecke des Fensters auf **Neues Projekt**.
+1. Klicken oder tippen Sie in der Liste, die angezeigt wird, auf **Datenintegration** und klicken oder tippen Sie auf **Neues Projekt** neben der oberen rechten Ecke des Fensters.
 
-1. Klicken oder tippen Sie in der Liste der Datenquellen auf **OData**.
+1. Klicken oder tippen Sie in der Datenquellenliste auf **OData**.
 
-    ![Auswählen des OAuth-Connectors](./media/data-platform-cds-newentity-pq/choose-odata.png)
+    ![Auswählen eines OAuth-Konnektors](./media/data-platform-cds-newentity-pq/choose-odata.png)
 
-1. Geben oder fügen Sie diese URL unter **Verbindungseinstellungen** ein, und klicken Sie dann auf **Weiter**:<br>
+1. Geben Sie unter **Verbindungseinstellungen** diese URL ein oder fügen Sie sie ein, und wählen Sie dann **Weiter** aus:<br>
 `http://services.odata.org/V4/Northwind/Northwind.svc/`
 
-1. Aktivieren Sie in der Liste der Tabellen das Kontrollkästchen **Kunden**, und klicken oder tippen Sie dann auf **Weiter**.
+1. In der Tabellenliste aktivieren Sie das Kontrollkästchen **Kunden** aus, und klicken oder tippen Sie dann auf **Weiter**.
 
-    ![Auswählen der Customers-Tabelle](./media/data-platform-cds-newentity-pq/select-table.png)
+    ![Auswählen der Kundentabelle](./media/data-platform-cds-newentity-pq/select-table.png)
 
-1. Optional: Ändern Sie das Schema entsprechend Ihren Anforderungen, indem Sie auswählen, welche Spalten eingefügt werden sollen, die Tabelle auf verschiedene Arten transformieren, einen Index oder bedingte Spalten hinzufügen oder andere Änderungen vornehmen.
+1. (Optional) Ändern Sie das Schema passend für Ihre Anforderungen, indem Sie die einzuschließenden Spalten auswählen und so die Tabelle auf eine oder mehrere Arten zu transformieren, einen Index oder eine bedingte Spalte hinzufügen, oder andere Änderungen vorzunehmen.
 
 1. Klicken oder tippen Sie in der unteren rechten Ecke auf **Weiter**.
 
 ## <a name="specify-the-target-entity"></a>Angeben der Zielentität
-1. Klicken Sie unter **Einstellungen laden** auf **Load to new entity** (In neue Entität laden).
+1. Wählen Sie unter **Einstellungen laden** auf **Zur neuen Entität laden** aus.
 
     ![Angeben des Namens der neuen Entität](./media/data-platform-cds-newentity-pq/new-entity-name.png)
 
-    Sie können der neuen Entität einen anderen Namen oder Anzeigenamen geben. Behalten Sie jedoch die Standardwerte bei, um dieses Tutorial genau befolgen zu können.
+    Sie können der neuen Entität einen anderen Namen oder Anzeigenamen geben, die Standardwerte jedoch belassen, um diesem Lernprogramm genau zu folgen.
 
-1. Klicken oder tippen Sie in der Liste **Primäres Namensfeld** auf **ContactName**, und klicken oder tippen Sie in der unteren rechten Ecke auf **Weiter**.
+1. In der Liste **Primäres Namensfeld** klicken oder tippen Sie auf **ContactName** und dann auf **Weiter** in der rechten unteren Ecke.
 
-    Sie können ein anderes primäres Namensfeld angeben, jedem Feld in der von Ihnen erstellten Entität eine andere Spalte in der Quelltabelle zuordnen oder beides tun. Behalten Sie die Standardzuordnung für Spalten bei, um dieses Tutorial genau befolgen zu können.
+    Sie können ein anderes Primär-Namenfeld angeben, eine andere Spalte in der Quelltabelle für jedes Feld in der Entität zuordnen, die Sie erstellen, oder beides. Um diesem Lernprogramm genau zu folgen, belassen Sie die Standardspaltenzuordnung.
 
-1. Wenn der **Ladestatus** **Abgeschlossen** anzeigt, klicken Sie in der unteren rechten Ecke auf **Fertig**.
+1. Wenn der **Ladestatus** **Abgeschlossen** ist, wählen Sie **Fertig** in der rechten unteren Ecke aus.
 
-1. Klicken Sie in der Nähe des linken Rands unter **Daten** auf **Entitäten**, um die Liste der Entitäten in Ihrer Datenbank anzuzeigen.
+1. Unter **Daten** (neben dem linken Rand) wählen Sie **Entitäten** aus, um die Liste der Entitäten in der Datenbank anzuzeigen.
 
-    Die **Customers**-Entität, die Sie aus einem OData-Feed erstellt haben, wird als benutzerdefinierte Entität angezeigt.
+    Die **Kunden**-Entität, die Sie in einem OData-Feed erstellt haben, wird als benutzerdefinierte Entität angezeigt.
 
-    ![Liste der Standardentitäten und benutzerdefinierten Entitäten](./media/data-platform-cds-newentity-pq/entity-list.png)
+    ![Liste des Standard- sowie der angepassten Entitäten](./media/data-platform-cds-newentity-pq/entity-list.png)
 
 > [!WARNING]
-> Wenn Sie Power Query für das Hinzufügen von Daten zu einer vorhandenen Entität verwenden, werden alle Daten in dieser Entität überschrieben.
+> Wenn Sie Power Query verwenden, um Daten einer vorhandenen Entität hinzuzufügen, werden alle Daten in dieser Entität überschrieben.
 
-Wenn Sie **Load to existing entity** (In vorhandene Entität laden) auswählen, können Sie eine Entität angeben, zu der Sie die Daten der **Customers**-Tabelle hinzufügen möchten. Sie könnten die Daten beispielsweise zur Entität **Account** hinzufügen, die in Common Data Service enthalten ist. Unter **Quellspalte** können Sie zudem angeben, dass die Daten in der Spalte **ContactName** der Tabelle **Customers** zur Spalte **Name** der Entität **Accounts** hinzugefügt werden sollen.
+Wenn Sie **In vorhandene Entität laden** auswählen, können Sie eine Entität angeben, der die Daten aus der Tabelle **Kunden** hinzugefügt werden. Sie können die Daten beispielsweise der Entität **Firma** hinzufügen, mit der Common Data Service versendet wird. In der **Quellspalte** können Sie genauer angeben, dass die Daten in der Spalte **ContactName** aus der Tabelle **Kunden** der Spalte**Name** in der **Firmen**-Entität hinzugefügt werden sollen.
 
 ![Angeben des Namens der neuen Entität](./media/data-platform-cds-newentity-pq/existing-entity.png)
 
-Wir halten diese neue Funktionalität für sehr hilfreich und würden uns über Ihr Feedback freuen. Bitte [senden Sie uns Ihre Vorschläge und Ihr Feedback](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) zu dieser Funktion.
+Wir freuen über diese Funktion und sehen Ihrem Feedback entgegen. Bitte [senden Sie uns Ihre Vorschläge und Ihr Feedback](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) zu dieser Funktion!
 
-Wenn eine [Fehlermeldung über Berechtigungen](data-platform-cds-newentity-troubleshooting-mashup.md) angezeigt wird, wenden Sie sich an Ihren Administrator.
+Bei einer [Fehlermeldung zu Berechtigungen](data-platform-cds-newentity-troubleshooting-mashup.md) wenden Sie sich an Ihren Administrator.
