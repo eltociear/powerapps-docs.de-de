@@ -1,6 +1,0 @@
-- name: Erste Schritte
-  href: get-started.yml?tutorial-step=1
-- name: App aus SharePoint erstellen
-  href: create-app-sharepoint.yml?tutorial-step=1
-- name: Apps verwalten
-  href: manage-apps.yml?tutorial-step=1
