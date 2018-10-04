@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/03/2018
 ms.author: manasma
 search.audienceType:
 - admin
@@ -15,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 9b62d72cf04b56c945d0c85038e2264e9685828b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c7de26bff38ee0425e8bb3f9bc0da72317f0a6cf
+ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42837583"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48246118"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Erstellen einer Common Data Service-Datenbank für Apps
 Mithilfe von Common Data Service für Apps als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von CDS für Apps finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
@@ -68,7 +68,7 @@ Sie können vordefinierten Rollen zusätzliche Benutzer zuweisen oder sogar [ben
 
 
 ## <a name="license-and-security-permissions"></a>Lizenz- und Sicherheitsberechtigungen
-Um eine Datenbank erstellen zu können, müssen Sie Administrator in der ausgewählten Umgebung sein, und Sie müssen der entsprechenden Lizenz zugewiesen werden. Über die Umgebung können Sie mithilfe der Registerkarte **Sicherheit** weitere Sicherheitsberechtigungen für andere Benutzer konfigurieren. Weitere Informationen finden Sie unter [Datenbanksicherheit konfigurieren](database-security.md) und [Sicherheitsmodell](https://docs.microsoft.c../maker/common-data-service/entity-reference/security-model).
+Um eine Datenbank erstellen zu können, müssen Sie Administrator in der ausgewählten Umgebung sein, und Sie müssen der entsprechenden Lizenz zugewiesen werden. Über die Umgebung können Sie mithilfe der Registerkarte **Sicherheit** weitere Sicherheitsberechtigungen für andere Benutzer konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren von Datenbanksicherheit](database-security.md).
 
 ## <a name="privacy-notice"></a>Hinweis zum Datenschutz
 Mit dem allgemeinen Datenmodell in Microsoft PowerApps erfassen und speichern wir benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen.  Wir verwenden dieses Wissen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die Ersteller schaffen, helfen uns dabei, Szenarios zu verstehen, die in der Microsoft PowerApps-Community häufig vorkommen und in Lücken in der Abdeckung der Standardentität des Diensts ermittelt werden, z.B. Schemas im Zusammenhang mit Organisationen. Microsoft nutzt die Daten in den Datenbanktabellen nicht, die mit diesen Entitäten verbunden sind, und greift auch nicht auf diese zu. Sie werden auch nicht außerhalb der Region repliziert, in der die Datenbank bereitgestellt wird. Beachten Sie jedoch, dass die benutzerdefinierten Entitäts- und Feldnamen möglicherweise über Regionen hinweg repliziert werden können und unter Einhaltung unserer Richtlinien für die Datenaufbewahrung gelöscht werden. Microsoft ist bestrebt, zu Ihrer Privatsphäre beizutragen, so wie ausführlich in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.
