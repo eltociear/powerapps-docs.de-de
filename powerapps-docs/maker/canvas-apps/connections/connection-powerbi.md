@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f639f82e6fc927f693b8f8353cdc125c487e4c1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 73ce15ff171ce72b9364844ed77f6e3aed079a64
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42829954"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875805"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Herstellen einer Verbindung mit Power BI aus PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
-Power BI ist eine Suite von Business Analytics-Tools zum Analysieren von Daten und Teilen von Erkenntnissen. Mit funktionsreichen Dashboards auf jedem Gerät behalten Sie die Kontrolle über Ihr Geschäft und erhalten schnell Antworten. Sie können in Ihrer App den Status der Datenwarnungen überprüfen, die Sie im Power BI-Dienst eingerichtet haben. Weitere Informationen zu Datenwarnungen in Power BI finden Sie auf der [Dokumentationsseite](https:// https://docs.microsoft.com/power-bi/service-set-data-alerts).
+Power BI ist eine Suite von Business Analytics-Tools zum Analysieren von Daten und Teilen von Erkenntnissen. Mit funktionsreichen Dashboards auf jedem Gerät behalten Sie die Kontrolle über Ihr Geschäft und erhalten schnell Antworten. Sie können in Ihrer App den Status der Datenwarnungen überprüfen, die Sie im Power BI-Dienst eingerichtet haben. Weitere Informationen zu Datenwarnungen in Power BI finden Sie auf der [Dokumentationsseite](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
 In diesem Thema wird gezeigt, wie Sie die Power BI-Verbindung in einer App verwenden, und die verfügbaren Funktionen werden aufgelistet.
 
