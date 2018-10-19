@@ -82,18 +82,21 @@ Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstelle
 5. Klicken Sie auf **CRM-Standard-Design**. 
 
 Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.  
-  
-![Standarddesign](media/default-theme.png) 
+
+> [!div class="mx-imgBorder"] 
+> ![Standarddesign](media/default-theme.png) 
   
  Wir haben das Standarddesign geklont und die Farben geändert. Folgende Screenshots zeigen die neuen Farben für die Navigation und die Hervorhebung. Sie können auch ein neues Logo für das Produkt auswählen.  
   
  Im folgenden Screenshot wird die neue Navigationsfarbe angezeigt.  
-  
- ![Leicht grüne Designfarben](media/theme-gentle-green.png "Leicht grüne Designfarben")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![Leicht grüne Designfarben](media/theme-gentle-green.png "Leicht grüne Designfarben")  
   
  Im folgenden Screenshot wird das Firmaenentitätsraster mit der neuen Hervorhebungsfarbe angezeigt.  
-  
- ![Leicht grünes Design Firmenraster](media/themes-gentle-green-account-grid.png "Leicht grünes Design Firmenraster")  
+ 
+ > [!div class="mx-imgBorder"] 
+ > ![Leicht grünes Design Firmenraster](media/themes-gentle-green-account-grid.png "Leicht grünes Design Firmenraster")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>Anzeigen und Veröffentlichen eines Designs  

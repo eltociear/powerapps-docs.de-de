@@ -1,0 +1,1 @@
+Microsoft bietet keinen Support für diese Vorschaufunktion. Der technische Support von Microsoft Dynamics 365 kann Ihnen bei Problemen oder Fragen nicht helfen. Previewfunktionen sind nicht für die Produktionsverwendung bestimmt und unterliegen separaten [ergänzenden Nutzungsbedingungen](http://go.microsoft.com/fwlink/p/?LinkId=511446).

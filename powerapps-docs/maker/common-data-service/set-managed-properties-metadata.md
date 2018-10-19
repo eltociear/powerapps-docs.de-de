@@ -52,7 +52,7 @@ Entitäten haben mehr verwaltete Eigenschaften als andere Arten von Lösungskomp
 |**Neue Formulare können erstellt werden**|Ob neue Formulare für die Entität erstellt werden können.|
 |**Neue Diagramme können erstellt werden**|Ob neue Diagramme für die Entität erstellt werden können.|
 |**Neue Ansichten können erstellt werden** |Ob neue Ansichten für die Entität erstellt werden können.|
-|**Hierarchische Beziehung kann geändert werden**|Ob die Einstellungen für hierarchische Beziehungen geändert werden können. Weitere Informationen: [Definieren und Abfragen von hierarchisch verknüpften Daten</1>](define-query-hierarchical-data.md)|
+|**Hierarchische Beziehung kann geändert werden**|Ob die Einstellungen für hierarchische Beziehungen geändert werden können. Weitere Informationen: [Definieren und Abfragen von hierarchisch verknüpften Daten](define-query-hierarchical-data.md)|
 |**Kann die Änderungsnachverfolgung aktiviert werden?** |Ob die Entitätseigenschaft **Änderungsnachverfolgung** geändert werden kann.|
 |**Kann Synchronisierung mit externem Suchindex aktivieren** |Ob die Entität zur Aktivierung der Relevanzsuche konfiguriert werden kann. Weitere Informationen: [Konfigurieren Sie die Relevanzsuche, um und die Suchergebnisse und Leistung zu verbessern](/dynamics365/customer-engagement/admin/configure-relevance-search-organization) |
 

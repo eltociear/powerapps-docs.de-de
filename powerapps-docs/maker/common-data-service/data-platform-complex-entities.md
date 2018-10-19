@@ -18,8 +18,8 @@ search.app:
 # <a name="complex-entities-and-licensing"></a>Komplexe Entitäten und Lizenzierung
 Für Entitäten, die die folgende komplexe serverseitige Logik enthalten, benötigen Benutzer einer App oder eines Flows, der diese Entitäten verwendet, eine PowerApps-Plan 2- oder Microsoft Flow Plan 2-Lizenz:
 
-* Code-Plug-Ins. Weitere Informationen: [Plug-In-Entwicklung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development))
-* Echtzeitworkflows Weitere Informationen: [Workflowprozesse](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes))
+* Code-Plug-Ins. Weitere Informationen: [Plug-In-Entwicklung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/plugin-development)
+* Echtzeitworkflows Weitere Informationen: [Workflowprozesse](https://docs.microsoft.com/dynamics365/customer-engagement/customize/workflow-processes)
 
     > [!IMPORTANT]
     >  Nur Workflows, die in einen Echtzeitworkflow konvertiert werden, werden als in Echtzeit und synchron betrachtet. Workflows, die im Hintergrund ausgeführt werden, können mit dem entsprechenden PowerApps-Plan weiterhin verwendet werden und erfordern keine zusätzlichen Lizenzen.

@@ -35,13 +35,15 @@ Sie können eine oder mehrere benutzerdefinierte Felder in einer beliebigen Enti
     > [!NOTE]
     > Die **Anzeigename**-Felder können jederzeit aktualisiert werden, um in Ihren Apps unterschiedlich angezeigt zu werden. Das **Name**-Feld kann nicht geändert werden, nachdem die Entität gespeichert wurde, da dadurch eine vorhandenen App beschädigt werden könnte.
 
-    ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Bereich \"Neues Feld\"")
+    > [!div class="mx-imgBorder"] 
+    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Bereich \"Neues Feld\"")
 
 5. Wählen Sie den **Datentyp** Ihres Felds aus. Damit wird die Methode gesteuert, mit der die Informationen gespeichert werden und wie sie in den Apps dargestellt werden. Beispielsweise wird Text bei einer Dezimalzahl oder einer URL anders gespeichert. Ausführlichere Informationen zu den Datentypen finden Sie unter [Metadaten der Entitätsattribute](../../developer/common-data-service/entity-attribute-metadata.md).
 
     Wenn Sie aufgefordert werden, geben Sie zusätzliche Informationen für den Datentyp an, den Sie angegeben haben. Je nach Datentyp werden verschiedene Felder angezeigt. Wenn Sie ein Feld vom Typ "Optionssatz" oder "Mehrfachauswahl-Optionssatz" erstellen, können Sie **Neuer Optionssatz** auswählen und beim Erstellen des Felds einen neuen Optionssatz erstellen. Weitere Informationen finden Sie unter [Erstellen eines Optionssatzes](custom-picklists.md).
 
-    ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Bereich \"Neues Feld\"")
+    > [!div class="mx-imgBorder"] 
+    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Bereich \"Neues Feld\"")
 
 
 7. Aktivieren Sie unter **Erforderlich** das Kontrollkästchen, wenn Sie dieses empfohlene Feld in Ihren Apps zu einem erforderlichen Feld machen möchten. Damit wird keine harte Erzwingung über alle Verbindungen des Common Data Service bereitgestellt. Wenn Sie sicherstellen möchten, dass das Feld aufgefüllt wird, erstellen Sie eine [Geschäftsregel](data-platform-create-business-rule.md)

@@ -193,7 +193,7 @@
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Schieberegler
                   href: ./canvas-apps/controls/control-slider.md
-                - name: Bezeichnung
+                - name: Beschriftung
                   href: ./canvas-apps/controls/control-text-box.md
                 - name: Texteingabe
                   href: ./canvas-apps/controls/control-text-input.md
@@ -854,8 +854,6 @@
           href: ./common-data-service/set-managed-properties-relationships.md
         - name: Hierarchische Daten visualisieren
           href: ./common-data-service/visualize-hierarchical-data.md
-        - name: Hierarchiebezogene Daten abfragen und visualisieren
-          href: ./common-data-service/query-visualize-hierarchical-data.md
         - name: Hierarchiebezogene Daten festlegen und abfragen
           href: ./common-data-service/define-query-hierarchical-data.md
         - name: Verbindungsrollen konfigurieren
@@ -864,15 +862,13 @@
           items:
             - name: 'n:m-Entitätsbeziehungen mithilfe des PowerApps-Portals erstellen'
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: 'n:m-Entitätsbeziehungen mithilfe des Projektmappen-Explorers von PowerApps erstellen'
+            - name: So erstellen Sie Viele-zu-Viele-Beziehungen mithilfe des Projektmappen-Explorers von PowerApps.
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
-            - name: Verwaltete Eigenschaften für Beziehungen festlegen
+            - name: So legen Sie verwaltete Eigenschaften für Beziehungen fest
               href: ./common-data-service/set-managed-properties-relationships.md
-            - name: Hierarchische Daten visualisieren
-              href: ./common-data-service/visualize-hierarchical-data.md
-            - name: Hierarchiebezogene Daten abfragen und visualisieren
+            - name: So fragen Sie hierarchiebezogene Daten ab und visualisieren sie
               href: ./common-data-service/query-visualize-hierarchical-data.md
-            - name: Hierarchiebezogene Daten festlegen und abfragen
+            - name: So definieren Sie hierarchiebezogene Daten und fragen sie ab
               href: ./common-data-service/define-query-hierarchical-data.md
             - name: Verbindungsrollen konfigurieren
               href: ./common-data-service/configure-connection-roles.md
@@ -912,16 +908,14 @@
     - name: Geschäftslogik anwenden
       href: ./common-data-service/cds-processes.md
       items:
-        - name: Geschäftsregel für eine Entität erstellen
+        - name: Eine Geschäftsregel für eine Entität erstellen
           href: ./common-data-service/data-platform-create-business-rule.md
     - name: Mit Lösungen arbeiten
       href: ./common-data-service/solutions-overview.md
       items:
-        - name: Überblick über Lösungen
-          href: ./common-data-service/solutions-overview.md
-        - name: Projektmappen-Explorer verwenden
+        - name: Den Projektmappen-Explorer verwenden
           href: ./common-data-service/use-solution-explorer.md
-        - name: Standardlösung von Common Data Services verwenden
+        - name: Die Standardlösung von Common Data Services verwenden
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: 'Lösungen importieren, aktualisieren und exportieren'
           href: ./common-data-service/import-update-export-solutions.md
@@ -969,9 +963,11 @@
   items:
     - name: 'Systemanforderungen, Einschränkungen und Konfiguration'
       href: ./canvas-apps/limits-and-config.md
+    - name: Performance-Tipps für Canvas-Apps
+      href: ./canvas-apps/performance-tips.md
     - name: Häufige Probleme und Lösungen
       href: ./canvas-apps/common-issues-and-resolutions.md
-    - name: Sitzungs- oder App-ID anfordern
+    - name: Eine Sitzungs- oder App-ID anfordern
       href: ./canvas-apps/get-sessionid.md
     - name: Probleme mit Power Query beheben
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md

@@ -2,7 +2,7 @@
 title: Visualisierung hierarchischer Daten mit modellgesteuerten Apps | MicrosoftDocs
 description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden'
 ms.custom: ''
-ms.date: 06/02/2018
+ms.date: 09/19/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,19 +23,16 @@ search.app:
 ---
 # <a name="visualize-hierarchical-data-with-model-driven-apps"></a>Visualisierung hierarchischer Daten mit modellgesteuerten Apps
 
-> [!NOTE]
-> Hierarchische Datenvisualisierungen sind nur für modellgesteuerte Anwendungen verfügbar, die für den **Web** Client konfiguriert sind. Visualisierungen sind nicht für den Client **Einheitliche Schnittstelle** verfügbar. Weitere Informationen: [Erstellen einer modellgesteuerten App mithilfe des App-Designers](../model-driven-apps/create-edit-app.md)
-
 Wenn eine Entität so konfiguriert ist, dass sie eine hierarchische, auf sich selbst verweisende Beziehung hat, können Sie Visualisierungen mit Hilfe dieser Hierarchie konfigurieren. Weitere Informationen: [Definieren und Abfragen von hierarchisch verknüpften Daten](../common-data-service/define-query-hierarchical-data.md)
 
 Zu den Entitäten, die standardmäßig über Visualisierungen verfügen, gehören [Firma](/powerapps/developer/common-data-service/reference/entities/account), [Position](/powerapps/developer/common-data-service/reference/entities/position) und [Benutzer](/powerapps/developer/common-data-service/reference/entities/systemuser). in der Rasteransicht dieser Entitäten können Sie das symbol, das das Hierarchiendiagramm darstellt, links neben dem Datensatznamen finden. Das Hierarchiensymbol ist nicht standardmäßig für alle Datensätze vorhanden. Das Symbol wird für die Datensätze angezeigt, die über die hierarchische Beziehung miteinander verknüpft sind.  
-  
- ![Konten mit Hierarchien](media/account-list-with-hierarchy.png)  
+> [!div class="mx-imgBorder"] 
+> ![Schaltfläche "Hierarchie" anzeigen](media/view-hierarchy-button.png)  
   
  Wenn Sie das Hierarchiesymbol auswählen, können Sie die Hierarchie mit der Strukturansicht auf der linken Seite der Kachelansicht auf der rechten Seite anzeigen, wie unten gezeigt:  
   
 > [!div class="mx-imgBorder"] 
-> ![Kontenstruktur und Kachelansicht](media/hierachy-security-accounts-tile-view.png)  
+> ![Struktur- und Kachelansicht in der Hierarchie](media/tree-view-and-tile-view-in-hierarchy.png)  
   
  Einige andere Entitäten können für eine Hierarchie aktiviert werden. Zu diesen Entitäten gehören [Kontakt](/powerapps/developer/common-data-service/reference/entities/contact) und [Team](/powerapps/developer/common-data-service/reference/entities/team). Alle benutzerdefinierten Entitäten können für eine Hierarchie aktiviert werden.  
   

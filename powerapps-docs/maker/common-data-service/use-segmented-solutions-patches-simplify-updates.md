@@ -72,8 +72,9 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
  Folgende Abbildungen stellen ein Beispiel der Erstellung einer segmentierten Lösung bereit, indem Entitätsanlagen von den Entitäten `Account`, `Case` sowie `Contact` ausgewählt werden.  
   
  Beginnen Sie mit der Auswahl der Komponente **Entität**.  
-  
- ![Fügen Sie vorhandene Ressourcen hinzu.](media/solution-segmentation-add-existing-resources-admin.png "Fügen Sie vorhandene Ressourcen hinzu.")  
+
+ > [!div class="mx-imgBorder"] 
+ > ![Fügen Sie vorhandene Ressourcen hinzu.](media/solution-segmentation-add-existing-resources-admin.png "Fügen Sie vorhandene Ressourcen hinzu.")  
   
  Wählen Sie dann die Lösungskomponenten aus.  
   
@@ -97,7 +98,8 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Daher enthält die segmentierte Lösung, die erstellt wird, drei Entitäten, nämlich `Account`, `Case` und `Contact`. Jede Entität enthält ausschließlich Anlagen, die ausgewählt waren.  
   
- ![Lösungen mit Entitäten.](media/solution-segmentation-solution-entities-admin.png "Lösungen mit Entitäten.")  
+ > [!div class="mx-imgBorder"] 
+ > ![Lösungen mit Entitäten.](media/solution-segmentation-solution-entities-admin.png "Lösungen mit Entitäten.")  
   
 ## <a name="create-a-solution-patch"></a>Einen Lösungspatch erstellen  
  Ein Patch enthält Änderungen an der übergeordneten Lösung, wie beispielsweise das Hinzufügen oder Bearbeiten von Komponenten und Anlagen. Sie müssen die Komponenten des übergeordneten Elements nicht einfügen, es sei denn, Sie planen, Sie zu bearbeiten.  
@@ -114,7 +116,8 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Folgende Abbildungen stellen ein Beispiel zum Erstellen eines Patches für eine vorhandene Lösung bereit. Beginnen Sie durch Klicken auf **Ein Patch klonen** (in der komprimierten Ansicht wird das Symbol **Ein Patch klonen** als zwei kleine Quadrate, wie unten gezeigt, abgebildet).  
   
- ![Klonen Sie ein Patch-Symbol.](media/solution-segmentation-click-patch-icon-admin.png "Klonen Sie ein Patch-Symbol.")  
+ > [!div class="mx-imgBorder"] 
+ > ![Klonen Sie ein Patch-Symbol.](media/solution-segmentation-click-patch-icon-admin.png "Klonen Sie ein Patch-Symbol.")  
   
  Im Dialogfeld **Zu patchender Klon** sehen Sie, dass die Versionsnummer für den Patch auf der Versionsnummer der übergeordneten Lösung basiert, aber die Buildnummer wird um eins erhöht. Jeder darauffolgende Patch hat eine höhere Build- oder Revisionsnummer als der vorhergehende Patch.  
   
@@ -122,7 +125,8 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Im folgenden Screenshot wird die Basislösung **SegmentedSolutionExample**, Version **1.0.1.0** und der Patch **SegmentedSolutionExample_Patch**, Version **1.0.2.0**, angezeigt.  
   
- ![Ein Raster mit Lösungen und Patches.](media/solution-segmentation-solution-patch-grid-admin.png "Ein Raster mit Lösungen und Patches.")  
+ > [!div class="mx-imgBorder"] 
+ > ![Ein Raster mit Lösungen und Patches.](media/solution-segmentation-solution-patch-grid-admin.png "Ein Raster mit Lösungen und Patches.")  
   
  Im Patch, haben wir eine neue benutzerdefinierte Entität mit dem Namen `Book` hinzugefügt und wir haben alle Anlagen der Entität `Book` im Patch eingefügt.  
   
@@ -143,7 +147,8 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Nach dem Klonen enthält die neue Lösungsversion drei ursprüngliche Entitäten (`Account`, `Case` und `Contact`) und die benutzerdefinierte Entität mit der Bezeichnung `Book`, die dem Patch hinzugefügt wurde. Jede Entität enthält ausschließlich Anlagen, die im Beispiel hinzugefügt wurden.  
   
- ![Eine geklonte Lösung mit Patch-Rollup.](media/solution-segmentation-solution-rolled-up-patch-admin.png "Eine geklonte Lösung mit Patch-Rollup.")  
+ > [!div class="mx-imgBorder"] 
+ > ![Eine geklonte Lösung mit Patch-Rollup.](media/solution-segmentation-solution-rolled-up-patch-admin.png "Eine geklonte Lösung mit Patch-Rollup.")  
   
 ## <a name="next-steps"></a>Nächste Schritte  
  [Lösungsübersicht](solutions-overview.md) [Erstellen von Patches zur Vereinfachung von Lösungsupdates]
