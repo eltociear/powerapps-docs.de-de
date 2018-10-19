@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d4e88ca0a1e683d2f72e02625e6228d1063352f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 09d2bc10d465510887b546df8341c8798df136c1
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831805"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316814"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Schnellstart: Erstellen einer Canvas-App aus einem Beispiel in PowerApps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.
@@ -30,11 +30,9 @@ Wenn Sie über keine Lizenz für PowerApps verfügen, können Sie sich [kostenlo
 ## <a name="open-a-sample-app"></a>Öffnen von Beispiel-Apps
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-    ![](./media/open-and-run-a-sample-app/sign-in.png)
-
 1. Zeigen Sie in der Liste der Beispiel-Apps mit der Maus auf eine Beispiel-App (z.B. **Cost Estimator**).
 
-    ![](./media/open-and-run-a-sample-app/sample-tile.png)
+    ![](./media/open-and-run-a-sample-app/cost-estimator.png)
 
 1. Klicken oder tippen Sie auf das Telefonsymbol, um eine Version der App für Mobilgeräte zu erstellen (oder belassen Sie die Auswahl beim Tabletsymbol), und klicken oder tippen Sie dann auf **Diese App erstellen**.
 
