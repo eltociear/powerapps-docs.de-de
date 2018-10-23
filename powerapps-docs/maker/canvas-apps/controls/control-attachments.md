@@ -13,30 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad52396eda0c8db46dd38cb7176524df5feb7416
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
+ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834656"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49384246"
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
-Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste hochladen und löschen können.
+Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste oder einer Common Data Service für Apps-Entität hochladen und löschen können.
 
 ## <a name="limitations"></a>Beschränkungen
-Für das Steuerelement für Anlagen gelten die folgenden temporären Einschränkungen:
-1. Das Herunterladen von Anhängen im Internet Explorer wird ausschließlich in benutzerdefinierten SharePoint-Listenformularen unterstützt.
+Für das Steuerelement für Anlagen gelten folgende Einschränkungen:
+1. Anlagen werden für SharePoint-Listen und Common Data Service für Apps-Entitäten unterstützt.
 
-1. Das Hochladen von Anlagen funktioniert nur mit SharePoint-Listen als Datenquellen.  Die Unterstützung für andere Datenquellen wird beginnend mit CDS schrittweise eingeführt.
-
-1. Die Funktionen zum Hochladen und Löschen funktionieren nur in Formularen.  Das Steuerelement für Anlagen wird im Bearbeitungsmodus deaktiviert angezeigt, wenn es sich nicht in einem Formular befindet.   Beachten Sie, dass der Endbenutzer das Formular speichern muss, um hinzugefügte und gelöschte Dateien im Back-End zu speichern.
+1. Die Funktionen zum Hochladen und Löschen funktionieren nur in Formularen.  Das Steuerelement für Anlagen wird im Bearbeitungsmodus deaktiviert angezeigt, wenn es sich nicht in einem Formular befindet. Beachten Sie, dass der Endbenutzer das Formular speichern muss, um hinzugefügte und gelöschte Dateien im Back-End zu speichern.
 
 1. Sie können nur Dateien bis maximal 10 MB hochladen.  
 
-1. Derzeit können iOS-Geräte nur Dateien aus Dokumenten und Cloudspeicherkonten hochladen. Wenn Sie Fotos bzw. Videos anfügen möchten, verwenden Sie den Browser auf Ihrem iOS-Gerät, um die App auszuführen.
-
 ## <a name="description"></a>Beschreibung
-Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeicherte Dateien öffnen sowie Dateien aus einer SharePoint-Liste hinzufügen und löschen.
+Mit dem **Attachments**-Steuerelement können Sie Dateien aus einer SharePoint-Liste öffnen, hinzufügen und löschen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Items](properties-core.md)** – Die Quelle mit Beschreibungen der Dateien, die heruntergeladen werden können.
@@ -86,7 +82,7 @@ Mit dem **Attachments**-Steuerelement können Sie in einer Datenquelle gespeiche
 
 
 ## <a name="example"></a>Beispiel
-1. Erstellen Sie eine App aus Daten, wobei eine SharePoint-Liste als Datenquelle verwendet wird.  Alternativ können Sie der App ein Formular hinzufügen und eine SharePoint-Liste als Datenquelle festlegen.
+1. Erstellen Sie eine App aus Daten, wobei eine SharePoint-Liste als Datenquelle verwendet wird. Alternativ können Sie der App ein Formular hinzufügen und eine SharePoint-Liste als Datenquelle festlegen.
 
 2. Wählen Sie in der Strukturansicht auf der linken Seite das **Form**-Steuerelement aus.
 

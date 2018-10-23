@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dde9367fe06b1bd2242fe0ac755f5eeedb71bba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: b78f88941fce85b9e63427635cb946f944aa120a
+ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851838"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49384269"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Export-Steuerelement und Import-Steuerelement in PowerApps
 Steuerelemente zum Exportieren von Daten in eine lokale Datei und anschließenden Importieren dieser Daten in eine andere App in PowerApps.
@@ -28,6 +28,9 @@ Wenn Sie mehrere Apps erstellen möchten, die die gleichen Daten verwenden, dies
 
 ## <a name="warning"></a>Warnung
 Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlecks verursachen.  Sie sollten die Benutzer anweisen, nur bekannte und vertrauenswürdige Dateien zu importieren und nur Daten zu exportieren, die nicht vertraulich oder sensibel sind.
+
+## <a name="limitations"></a>Beschränkungen
+Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Data** – Der Name einer Sammlung, die Sie in eine lokale Datei exportieren möchten.

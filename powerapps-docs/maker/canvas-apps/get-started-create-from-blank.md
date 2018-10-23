@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1ee0b02465853306881ca4379182aef42bffd84
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 3128d284d5b03da9a7c8b5798365b60f7092988b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833537"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316905"
 ---
 # <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
 
@@ -51,13 +51,11 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-    ![PowerApps-Startseite](./media/get-started-create-from-blank/sign-in.png)
-
     Sie können eine App von Grund auf neu für Telefone oder andere Geräte (z.B. Tablets) entwerfen. Dieses Thema konzentriert sich auf den Entwurf einer App für Telefone.
 
-1. Zeigen Sie unter **Apps wie diese erstellen** auf die Kachel **Mit leerer App starten**, wählen Sie das Telefonsymbol und anschließend **Diese App erstellen** aus.
+1. Zeigen Sie unter **Eigene App erstellen** auf die Kachel **Mit leerer App starten** für Canvas-Apps, wählen Sie das Telefonsymbol und anschließend **Diese App erstellen** aus.
 
-    ![Kachel für leere App](./media/get-started-create-from-blank/blank-app.png)
+    ![Kachel für leere App](./media/get-started-create-from-blank/start-from-blank.png)
 
     PowerApps Studio erstellt eine leere App für Telefone.
 

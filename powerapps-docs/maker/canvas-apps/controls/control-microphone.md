@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b668e8ae118bea5f288e1b3806854e4621295984
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307813"
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
 Ein Steuerelement, über das App-Benutzer mit ihren Geräten Ton aufnehmen können.
@@ -26,7 +26,7 @@ Ein Steuerelement, über das App-Benutzer mit ihren Geräten Ton aufnehmen könn
 ## <a name="description"></a>Beschreibung
 App-Benutzer können Audioaufnahmen aufzeichnen, wenn das Gerät, auf dem die App ausgeführt wird, über ein Mikrofon verfügt.
 
-Audiodaten werden unter Android im Format 3gp und unter iOS im Format AAC gespeichert.
+Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in Webbrowsern im OGG-Format gespeichert.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Mic**: gibt auf einem Gerät mit mehr als einem Mikrofon die numerische ID des Mikrofons an, das die App verwendet.

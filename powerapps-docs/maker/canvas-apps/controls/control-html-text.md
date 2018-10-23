@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 965c779a752d0bfd864a06d5fa886b0187839123
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836891"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49307859"
 ---
 # <a name="html-text-control-in-powerapps"></a>HTML-Textsteuerelement in PowerApps
 Ein Feld, in dem Text angezeigt wird und in dem HTML-Tags in Textformatierungen konvertiert werden.
@@ -80,7 +80,7 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, geben Sie ihm den Namen **Quelle**, und geben Sie als Wert für die **[Text](properties-core.md)**-Eigenschaft diese Zeichenfolge ein:
 
-\<p> Uns ist eine besonders \&nbsp; \&quot; weitreichende \&quot; Globalisierung und Lokalisierung gelungen. \<p>
+„\<p> Uns ist eine besonders \&nbsp; \&quot; weitreichende \&quot; Globalisierung und Lokalisierung gelungen.\<p>“
 
 Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 

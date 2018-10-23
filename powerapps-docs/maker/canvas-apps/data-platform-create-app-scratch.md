@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b90024e3864420c541b0e0e1ef0ad1d86b900aa0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 45b5d85998825cdafc2bbea7badaa5d7cde2f092
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852274"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317043"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service für Apps
 
@@ -35,11 +35,9 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-    ![PowerApps-Startseite](./media/data-platform-create-app-scratch/sign-in.png)
+1. Zeigen Sie unter **Eigene App erstellen** auf die Kachel **Mit leerer App starten**, klicken oder tippen Sie erst auf das Telefonsymbol und anschließend auf **Diese App erstellen**.
 
-1. Zeigen Sie unter **Apps wie diese erstellen** auf die Kachel **Mit leerer App starten**, klicken oder tippen Sie erst auf das Telefonsymbol und anschließend auf **Diese App erstellen**.
-
-    ![Kachel für leere App](./media/data-platform-create-app-scratch/blank-app.png)
+    ![Kachel für leere App](./media/data-platform-create-app-scratch/start-from-blank.png)
 
     Sie können für Smartphones oder andere Geräte (wie Tablets) Apps von Grund auf neu erstellen. In diesem Artikel erfahren Sie, wie Sie Apps für Smartphone erstellen können.
 

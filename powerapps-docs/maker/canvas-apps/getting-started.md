@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 93d29f0a49a70077f975bed659203b4fb7d66489
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a9f85907da60e836c1a1115f31c6faf9ea05da9b
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833463"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49317066"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
@@ -33,9 +33,9 @@ Generieren Sie zunächst automatisch eine App aus einer der folgenden Quellen (u
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-Klicken Sie auf der PowerApps-Website auf **Mit Daten beginnen**, oder wählen Sie eine Beispiel-App wie **Service Desk** oder **Budget Tracker** aus.
+[Melden Sie sich in PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie auf **Mit Daten beginnen**, oder wählen Sie eine Beispiel-App wie **Service Desk** oder **Budget Tracker** aus.
 
-![PowerApps-Site](./media/getting-started/sample-apps.png)
+![PowerApps-Site](./media/getting-started/create-page-samples.png)
 
 Nachdem Sie die App automatisch generiert haben, passen Sie deren Standarddarstellung und -verhalten auf Grundlage der Workflows Ihrer Benutzer an. Sie können also beispielsweise ändern, welche Daten angezeigt werden, wie diese sortiert werden und sogar festlegen, ob Benutzer eine Zahl angeben, indem sie diese eingeben oder einen Schieberegler verwenden. Fügen Sie [Anzeigen](add-screen-context-variables.md), [Kataloge](customize-layout-sharepoint.md), [Formulare](customize-forms-sharepoint.md) und andere Steuerelemente hinzu, und passen Sie diese an.
 

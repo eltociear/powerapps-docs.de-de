@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec00071d1b354872bf3b140e5c879fe8857ffec
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d92236d630005b4608719efaadef4537984bc3d6
+ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307836"
 ---
 # <a name="validate-function-in-powerapps"></a>Funktion „Validate“ in PowerApps
 Die **Validate**-Funktion überprüft, ob der Wert einer einzelnen [Spalte](../working-with-tables.md#columns) oder eines vollständigen [Datensatzes](../working-with-tables.md#records) für eine [Datenquelle](../working-with-data-sources.md) gilt.  
@@ -66,6 +66,6 @@ Für diese Beispiele müssen die Werte in der Spalte **Percentage** (Prozentzahl
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |Überprüft, ob **10** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |*blank* |
-| **Validate( Scores, EditRecord, Gallery.Updates )** |Überprüft, ob **120** ein gültiger Wert für die Spalte **Percentage** in der Datenquelle **Scores** ist. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
+| **Validate( Scores, EditRecord, Gallery.Updates )** |Überprüft, ob die Werte in allen Spalten für die Datenquelle **Scores** (Bewertungen) gültig sind. In diesem Beispiel lautet der Wert der **Percentage**-Spalte (Prozentsatz) **10**. |*blank* |
+| **Validate( Scores, EditRecord, Gallery.Updates )** | Überprüft, ob die Werte in allen Spalten für die Datenquelle **Scores** (Bewertungen) gültig sind. In diesem Beispiel lautet der Wert der **Percentage**-Spalte (Prozentsatz) lautet **120**. |"Values must be between 0 and 100." (Werte müssen zwischen 0 und 100 liegen.) |
 
