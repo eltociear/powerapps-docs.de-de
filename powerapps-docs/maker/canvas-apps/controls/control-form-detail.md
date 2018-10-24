@@ -1,24 +1,24 @@
 ---
 title: '„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über die „Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente
-author: gregli-msft
+author: aneesmsft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/06/2017
-ms.author: gregli
+ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 992529f50ba14f3578c4f6ffe0ba7ba27d2d3661
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
+ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42838130"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47459453"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
@@ -32,6 +32,12 @@ Wenn Sie ein **[Bildkatalog](control-gallery.md)**-Steuerelement hinzufügen, k�
 
 ### <a name="record-selection"></a>Datensatzauswahl
 Bei beiden Formulartypen können Sie die Eigenschaft **DataSource** als Datensatztabelle und die **Item**-Eigenschaft so konfigurieren, dass ein bestimmter Datensatz in der Tabelle angezeigt wird. Beispiel: Sie können die **Item**-Eigenschaft eines Formulars als **SelectedItem**-Eigenschaft eines **[Bildkatalog](control-gallery.md)**-Steuerelements konfigurieren. Wenn der Benutzer im Bildkatalog einen Datensatz auswählt, wird er im Formular angezeigt (im Formular können mehr Felder dargestellt werden). Wenn der Benutzer zum Bildkatalog zurückkehrt und einen anderen Datensatz auswählt, ändert sich der Wert der **SelectedItem**-Eigenschaft des Bildkatalogs. Dadurch wird die **Item**-Eigenschaft des Formulars aktualisiert, wodurch der nun ausgewählte Datensatz angezeigt wird.
+
+Sie können auch die **Item**-Eigenschaft eines Formulars mithilfe eines **Dropdown**-Steuerelements wie unter [Show, edit, or add a record (Anzeigen, Bearbeiten oder Hinzufügen eines Datensatzes)](../add-form.md) beschrieben festlegen. Alternativ können Sie Funktionen wie **Lookup** oder **First** verwenden. Sie können die **Item**-Eigenschaft auf eine der folgenden Formeln festlegen, um den Eintrag „Fabrikam“ in der Entität **Accounts** in Common Data Service für Apps anzuzeigen:
+
+```First(Accounts)```
+
+```Lookup(Accounts, "Fabrikam" in name)```
 
 Jedes Formular enthält eines oder mehrere **[Karten](control-card.md)**-Steuerelemente. Durch Festlegen der **[DataField](control-card.md)**-Eigenschaft einer Karte können Sie [angeben, welche Felder auf der Karte angezeigt werden (und mehr)](../add-form.md).
 

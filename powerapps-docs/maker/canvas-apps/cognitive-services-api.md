@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Cognitive Services in PowerApps | Microsoft-Dokumentation
-description: Erstellen Sie eine einfache App, die die Textanalyse-API von Microsoft Cognitive Services verwendet, um Text zu analysieren.
+description: Erstellen Sie eine einfache Canvas-App, die die Textanalyse-API von Microsoft Cognitive Services verwendet, um Text zu analysieren.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
 ms.author: anneta
-ms.openlocfilehash: 6175633b2fbec4e9949882c587916adb349290d4
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df823f68842ad3c7a7497e6dce9cc3540520527e
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195448"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875874"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Verwenden von Cognitive Services in PowerApps
-In diesem Artikel wird erläutert, wie Sie eine einfache App erstellen, die die [Textanalyse-API von Microsoft Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine App erstellt wird, die die API aufruft.
+In diesem Artikel wird erläutert, wie Sie eine einfache Canvas-App erstellen, die die [Textanalyse-API von Microsoft Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
 
 > [!NOTE]
 > Wenn Sie mit dem Erstellen von Apps in PowerApps nicht vertraut sind, empfehlen wir Ihnen, [App von Grund auf neu erstellen](get-started-create-from-blank.md) durchzulesen, bevor Sie in diesen Artikel einsteigen.
@@ -84,7 +88,7 @@ Zunächst erstellen Sie eine leere Smartphone-App und fügen eine Verbindung mit
     ![Textanalyse-Connector](./media/cognitive-services-api/create-connection-ta.png)
 
 ### <a name="add-controls-to-the-app"></a>Hinzufügen von Steuerelementen zur App
-Der nächste Schritt beim Erstellen der App besteht im Hinzufügen aller Steuerelemente. Normalerweise fügen beim Erstellen der Apps den Steuerelementen direkt Formeln hinzu. Hier konzentrieren wir uns jedoch zunächst auf das Erstellen der Apps, und wir fügen erst im nächsten Abschnitt einige Formeln hinzu. In der folgenden Abbildung wird die App mit allen Steuerelementen veranschaulicht.
+Der nächste Schritt beim Erstellen der App besteht im Hinzufügen aller Steuerelemente. Normalerweise fügen wir beim Erstellen der Apps den Steuerelementen direkt Formeln hinzu. Hier konzentrieren wir uns jedoch zunächst auf das Erstellen der Apps und fügen erst im nächsten Abschnitt einige Formeln hinzu. In der folgenden Abbildung wird die App mit allen Steuerelementen veranschaulicht.
 
 ![Fertig gestellte App](./media/cognitive-services-api/finished-app-no-data.png)
 

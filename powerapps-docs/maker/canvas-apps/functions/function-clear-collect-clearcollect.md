@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73279ba8fc0b640c24deb179a3737874bc0a55bf
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 8a7c52962c23df5f2efcf76c04aeba528e94217c
+ms.sourcegitcommit: 464ee88a958dda11c5de5603c608deab6c9cdcab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835752"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48578740"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Collect-, Clear- und ClearCollect-Funktionen in PowerApps
 Erstellt und löscht [Sammlungen](../working-with-data-sources.md#collections) und fügt [Datensätze](../working-with-tables.md#records) zu einer beliebigen [Datenquelle](../working-with-data-sources.md) hinzu.
@@ -82,10 +82,27 @@ In diesen Beispielen löschen und fügen Sie Daten zu einer Sammlung mit dem Nam
 | **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt zwei Datensätze zur Sammlung **IceCream** hinzu, die eine Menge von Pistazien- und Orangeneis enthält. |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
 | **Clear( IceCream )** |Entfernt alle Datensätze aus der Sammlung **IceCream**. |![](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
 
-### <a name="step-by-step"></a>Schritt für Schritt
+### <a name="collect-a-static-list"></a>Sammeln einer statischen Liste
+
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Funktion fest:<br>**Collect(Products, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
    
-    Diese Funktion erstellt eine Sammlung mit dem Namen **Produkte**, die eine Zeile für jeden der drei Produktnamen enthält.
-2. Drücken Sie F5, klicken Sie auf die Schaltfläche, und drücken Sie anschließend die ESC-Taste für eine Rückkehr zum Designarbeitsbereich.
-3. (optional) Um eine Vorschau der Sammlung anzuzeigen, die Sie erstellt haben, klicken Sie in der Registerkarte **Inhalt** auf **Sammlungen**.
+    Diese Funktion erstellt eine Sammlung mit dem Namen **Products**, die eine Zeile für jeden der drei Produktnamen enthält.
+    
+1. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
 
+1. (Optional) Klicken Sie im **Dateimenü** auf **Sammlungen**, um die erstellte Sammlung als Vorschau anzuzeigen.
+
+### <a name="put-a-sharepoint-list-into-a-collection"></a>Einfügen einer SharePoint-Liste in eine Sammlung
+
+1. [Herstellen einer Verbindung mit einer SharePoint-Liste](../connect-to-sharepoint.md) 
+
+1. Fügen Sie eine Schaltfläche hinzu, und legen Sie die folgende Funktion für die **[OnSelect](../controls/properties-core.md)**-Eigenschaft fest, ersetzen Sie hierbei *ListName* durch den Namen der SharePoint-Liste:<br>
+**Collect**(**MySPCollection**, *ListName*)
+
+    Diese Funktion erstellt eine Sammlung namens **MySPCollection**, die die gleichen Daten wie Ihre SharePoint-Liste enthält.
+    
+1. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
+
+1. (Optional) Klicken Sie im **Dateimenü** auf **Sammlungen**, um die erstellte Sammlung als Vorschau anzuzeigen.
+
+Weitere Informationen zum Anzeigen von Daten aus einer SharePoint-Liste (z.B. Datumsangaben, Optionen und Personen) in einem Katalog finden Sie unter [Anzeigen von Daten in einem Katalog](../connections/connection-sharepoint-online.md#show-data-in-a-gallery). Informationen zum Anzeigen von Daten in einem Formular (mit Dropdownlisten, Datumsauswahl und Personenauswahl) finden Sie im Artikel zu den [Steuerelementen „Formular anzeigen“ und „Formular bearbeiten“](../controls/control-form-detail.md).

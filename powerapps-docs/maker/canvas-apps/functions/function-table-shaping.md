@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 08/24/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6a7d511143a0b16e04ae31263dec9f6a4e04689e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 056c5e1142b3a34776e72f788f5b2cef9e3b2a27
+ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864354"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48875897"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Die Funktionen „AddColumns“, „DropColumns“, „RenameColumns“ und „ShowColumns“ in PowerApps
 Formen eine [Tabelle](../working-with-tables.md) durch Hinzufügen, Verwerfen, Umbenennen und Auswählen der [Spalten](../working-with-tables.md#columns)
@@ -42,7 +42,7 @@ Die Formel wird für jeden Datensatz der Tabelle ausgewertet.
 
 Die Funktion **DropColumns** schließt Spalten aus einer Tabelle aus.  Alle anderen Spalten bleiben unverändert. **DropColumns** schließt Spalten aus, und **ShowColumns** schließt Spalten ein.
 
-Die Funktion **RenameColumns** benennt die Spalten einer Tabelle um. Alle anderen Spalten behalten ihre ursprünglichen Namen.
+Verwenden Sie die Funktion **RenameColumns**, um eine oder mehrere Spalten einer Tabelle mithilfe von mindestens einem Argumentpaar, das den Namen einer in der Tabelle enthaltenen Spalte (der alte Name, den Sie ersetzen möchten) und den Namen einer in der Tabelle nicht enthaltenen Spalte (der neue Name, den Sie verwenden möchten) angibt. Der alte Name muss bereits in der Tabelle vorhanden sein, und der neue Name darf noch nicht vorhanden sein. Jeder Spaltenname darf nur einmal in der Argumentliste angezeigt werden, entweder als alter Spaltenname oder als neuer Spaltenname. Um eine Spalte in eine vorhandene Spalte umzubenennen, verwerfen Sie zuerst die vorhandene Spalte mit einem Klick auf **DropColumns**, oder benennen Sie die vorhandene Spalte separat um, indem Sie eine Funktion **RenameColumns** innerhalb einer anderen schachteln.
 
 Die Funktion **ShowColumns** schließt Spalten einer Tabelle ein und verwirft alle anderen Spalten. Sie können **ShowColumns** verwenden, um eine einspaltige Tabelle aus einer Tabelle mit mehreren Spalten zu erstellen.  **ShowColumns** schließt Spalten ein, und **DropColumns** schließt Spalten aus.  
 
@@ -62,11 +62,11 @@ Das Ergebnis all dieser Funktionen ist eine neue Tabelle mit angewendeter Transf
 * *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *ColumnName(s)*: erforderlich. Name(n) der zu verwerfenden Spalte(n). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 
-**RenameColumns**( *Tabelle*, *AlterSpaltenname*, *NeuerSpaltenname* )
+**RenameColumns**( *Tabelle*, *AlterSpaltenname1*, *NeuerSpaltenname1* [, *AlterSpaltenname2*, *NeuerSpaltenname2*, ... ] )
 
 * *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
-* *AlterSpaltenname*: erforderlich. Der Name der umzubenennenden Spalte. Der Name muss eine Zeichenfolge sein (z.B. **"Name"** in doppelten Anführungszeichen)
-* *NeuerSpaltenname*: erforderlich. Der neue Name. Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Customer Name"** (Kundenname) in doppelten Anführungszeichen).
+* *AlterSpaltenname*: erforderlich. Name einer umzubenennenden Spalte aus der ursprünglichen Tabelle. Dieses Element wird als erstes in dem Argumentpaar angezeigt (oder als erstes in jedem Argumentpaar, wenn die Formel mehr als ein Paar enthält). Der Name muss eine Zeichenfolge sein (z.B. **"Name"** in doppelten Anführungszeichen).
+* *NeuerSpaltenname*: erforderlich. Der neue Name. Dieses Element wird als letztes in dem Argumentpaar angezeigt (oder als letztes in jedem Argumentpaar, wenn die Formel mehr als ein Paar enthält). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Customer Name"** (Kundenname) in doppelten Anführungszeichen).
 
 **ShowColumns**( *Tabelle*, *Spaltenname1* [, *Spaltenname2*, ... ] )
 
@@ -86,6 +86,7 @@ Keines dieser Beispiele verändert die Datenquelle **IceCreamSales**. Jede Funkt
 | **DropColumns( IceCreamSales, "UnitPrice" )** |Schließt die Spalte **UnitPrice** aus dem Ergebnis aus. Mit dieser Funktion können Spalten ausgeschlossen und mit **ShowColumns** eingeschlossen werden. |![](media/function-table-shaping/icecream-drop-price.png) |
 | **ShowColumns( IceCreamSales, "Flavor" )** |Schließt nur die Spalte **Flavor** (Geschmack) im Resultset ein. Mithilfe dieser Funktion können Sie Spalten einschließen und mithilfe der Funktion **DropColumns** ausschließen. |![](media/function-table-shaping/icecream-select-flavor.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Benennt die Spalte **UnitPrice** im Resultset um. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Benennt die Spalten **UnitPrice** und **QuantitySold** im Ergebnis um. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
 | **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Führt der Reihe nach die folgenden Transformationen aus, beginnend im Kern der Formel: <ol><li>Fügt eine **Revenue**-Spalte basierend auf der Berechnung von **UnitPrice * Quantity** (Stückpreis * Menge) pro Datensatz hinzu.<li>Benennt **UnitPrice** in **Price** (Preis) um.<li>Schließt die Spalte **Quantity** aus.</ol>  Beachten Sie, dass diese Reihenfolge wichtig ist. Angenommen, **UnitPrice** kann nach der Umbenennung nicht berechnet werden. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Schritt für Schritt

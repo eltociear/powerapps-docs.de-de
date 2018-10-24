@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Hinzufügen einer App zu Microsoft Teams | Microsoft-Dokumentation'
-description: In dieser Schnellstartanleitung erfahren Sie, wie Sie einem Microsoft Teams-Kanal eine App hinzufügen, damit die Benutzer, für die Sie die App freigegeben haben, diese in diesem Kanal öffnen können.
+title: Hinzufügen einer App zu Microsoft Teams | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie einem Microsoft Teams-Kanal eine App hinzufügen, damit alle Benutzer, für die die App freigeben wurde, diese in dem Kanal öffnen können.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -11,16 +11,21 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a5adb035fdde271ffe07cb6d0a46f332ae55c43f
-ms.sourcegitcommit: 0b051bba173353d7ceda3b60921e7e009eb00709
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0e98f22c3dc0f66893e0cc027488ced5d1dd3535
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39218370"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850459"
 ---
-# <a name="quickstart-add-an-app-to-microsoft-teams"></a>Schnellstart: Hinzufügen einer App zu Microsoft Teams
+# <a name="add-an-app-to-microsoft-teams"></a>Hinzufügen einer App zu Microsoft Teams
 
-Bei Microsoft Teams handelt es sich im eine auf Chats basierende Plattform für die Zusammenarbeit, die auf Office 365-Technologien aufbaut. Sie können die Benutzerfreundlichkeit von Microsoft Teams verbessern, indem Sie Ihrem Kanal in Microsoft Teams mit PowerApps generierte Canvas-Apps hinzufügen. In diesem Schnellstart erfahren Sie, wie Sie die Beispiel-App für Product Showcase erst zu dem Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen. 
+Bei Microsoft Teams handelt es sich im eine auf Chats basierende Plattform für die Zusammenarbeit, die auf Office 365-Technologien aufbaut. Sie können die Benutzerfreundlichkeit von Microsoft Teams verbessern, indem Sie Ihrem Kanal in Microsoft Teams mit PowerApps generierte Canvas-Apps hinzufügen. In diesem Thema erfahren Sie, wie Sie die Beispiel-App für Product Showcase erst zu dem Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen. 
 
 ![In Microsoft Teams eingebettete App](./media/open-app-embedded-in-teams/embedded-app.png)
 
@@ -28,7 +33,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, müssen Sie sich zuerst [kos
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Sie benötigen für diesen Schnellstart ein [Office 365-Abonnement](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) und einen [Kanal in Microsoft Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
+Sie benötigen hierzu ein [Office 365-Abonnement](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) und einen [Kanal in Microsoft Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
 
 ## <a name="sign-in-to-powerapps"></a>Anmelden bei PowerApps
 
@@ -87,7 +92,7 @@ Wenn Sie die App aus dem Kanal entfernen möchten, klicken Sie erst auf die Regi
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Schnellstart haben Sie erfahren, wie Sie die Beispiel-App für Product Showcase erst zum Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen können. Weitere Informationen zu PowerApps finden Sie in den entsprechenden Tutorials.
+In diesem Thema haben Sie erfahren, wie Sie die Beispiel-App für Product Showcase erst zum Teams-Kanal hinzufügen und dann die App über diesen Kanal öffnen können. Weitere Informationen zu PowerApps finden Sie in den entsprechenden Tutorials.
 
 > [!div class="nextstepaction"]
 > [PowerApps-Tutorials](../maker/canvas-apps/get-started-create-from-blank.md)

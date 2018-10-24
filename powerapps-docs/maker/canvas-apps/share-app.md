@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 07/11/2018
 ms.author: anneta
-ms.openlocfilehash: eaea8049b573b619881ae0a2b6ecb2618e4bf192
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 926d2b4b0d24f07a9a4cd42216e7d737db57308c
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39470636"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42853840"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
@@ -81,7 +85,11 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
 ### <a name="common-data-service-for-apps"></a>Common Data Service für Apps
 
-Wenn Sie eine App auf Grundlage von Common Data Service für Apps erstellen, müssen Sie auch sicherstellen, dass die Benutzer, die diese App ausführen werden, über die entsprechenden Berechtigungen für die Entität bzw. Entitäten verfügen, auf denen die App basiert. Konkret müssen Benutzer einer Sicherheitsrolle angehören, die Aufgaben wie Erstellen, Lesen, Schreiben und/oder Löschen relevanter Datensätze ausführen kann. Wenn Sie über die Berechtigungen **Systemadministrator** oder **Systemanpasser** für die Datenbank in dieser Umgebung verfügen, können Sie eine benutzerdefinierte Rolle erstellen und Benutzer dieser hinzuzufügen.
+Wenn Sie eine App auf Grundlage von Common Data Service (CDS) für Apps erstellen, müssen Sie auch sicherstellen, dass die Benutzer, die diese App ausführen werden, über die entsprechenden Berechtigungen für die Entität bzw. Entitäten verfügen, auf denen die App basiert. Konkret müssen Benutzer einer Sicherheitsrolle angehören, die Aufgaben wie Erstellen, Lesen, Schreiben und/oder Löschen relevanter Datensätze ausführen kann. In vielen Fällen werden Sie mindestens eine benutzerdefinierte Sicherheitsrolle mit genau den Berechtigungen erstellen wollen, die Benutzer für die Verwendung Ihrer Apps benötigen. Anschließend können Sie diese Rolle bzw. Rollen den Benutzern nach Bedarf zuweisen. 
+
+#### <a name="prerequisite"></a>Voraussetzung
+
+Für die nächsten beiden Verfahren müssen Sie über **Systemadministratorberechtigungen** für eine CDS for Apps-Datenbank verfügen.
 
 #### <a name="create-a-security-role"></a>Sicherheitsrolle erstellen
 

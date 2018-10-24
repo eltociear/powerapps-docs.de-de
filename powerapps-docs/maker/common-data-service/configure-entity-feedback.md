@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren einer Entität für Feedback mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Feedback für eine Entität aktiviert wird'
+title: Konfigurieren einer Entität für Feedback mit PowerApps | Microsoft-Dokumentation
+description: Informationen zum Aktivieren von Feedback für eine Entität
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -9,44 +9,45 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5b25cf09-d43b-4165-9eaa-7549f4855e7c
 caps.latest.revision: 13
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: efb1cf167353d5928564b42aeb7a49f43cf272d6
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39684793"
 ---
 # <a name="configure-an-entity-for-feedbackratings"></a>Konfigurieren einer Entität für Feedback/Bewertungen
 
-Ermöglichen Sie Kunden oder Mitarbeitern, Feedback für einen beliebigen Entitätsdatensatz zu schreiben oder Entitätsdatensätze innerhalb eines definierten Bewertungsbereichs zu bewerten, indem Sie Entitäten für Feedback aktivieren.  
+Lassen Sie Kunden oder Mitarbeiter Feedback für jeden Entitätsdatensatz schreiben oder Entitätsdatensätze innerhalb eines festgelegten Bewertungsbereichs bewerten, indem Sie Entitäten für Feedback aktivieren.  
 
-Diese Funktion ist in ein System, das Daten von Kunden über das Portal oder Umfrage erfasst. Daten zur Service oder Produkt-Zufriedenheit können von Entitäten angewendet werden, die die Art von Daten darstellt.
+Diese Funktion wird gerne bei Systemen verwendet, mit denen Daten von Kunden über ein Portal oder eine Umfrage erfasst werden. Daten über Service- oder Produktzufriedenheit können auf Entitäten angewendet werden, die diese Art von Daten darstellen.
 
-Feedback kann der Mitarbeiter auch verwenden, um Feedback in einer erforderlichen Zusammenarbeit bereitzustellen.
+Feedback kann auch von Mitarbeitern zum Bereitstellen von Feedback zu einem gemeinsamen Projekt verwendet werden.
 
 > [!NOTE]
-> Stellen Sie sicher, dass Sie über die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ bzw. entsprechende Berechtigungen verfügen, um diese Aufgabe auszuführen.
+> Zum Durchführen der folgenden Schritte benötigen Sie die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ oder eine gleichwertige Berechtigung.
   
-## <a name="enable-feedback"></a>Feedback aktivieren  
+## <a name="enable-feedback"></a>Aktivieren von Feedback  
   
 Bearbeiten Sie die Entität, um **Feedback** zu aktivieren. Weitere Informationen: [Bearbeiten einer Entität](edit-entities.md)
   
-## <a name="add-a-subgrid-for-feedback-on-the-entity-form"></a>Hinzufügen eines Unterrasters für Feedback auf dem Entitätsformular  
+## <a name="add-a-subgrid-for-feedback-on-the-entity-form"></a>Hinzufügen eines Unterrasters für Feedback zum Entitätsformular  
 
-Standardmäßig müssen Benutzer zur Liste der verknüpften Datensätze des Datensatzes wechseln, für den Sie Feedback hinzufügen möchten. Damit Benutzer Feedback einfacher hinzufügen können, können Sie ein Feedback-Unterraster zum Formular der Entität hinzufügen, für die Sie Feedback ermöglichen möchten.  
+Standardmäßig müssen Benutzer zur Liste der verknüpften Datensätze des Datensatzes wechseln, für den sie Feedback hinzufügen möchten. Sie können Benutzern das Hinzufügen von Feedback erleichtern, indem Sie dem Formular der Entität, für die Sie Feedback ermöglichen möchten, ein Feedback-Unterraster hinzufügen.  
 
-<!-- This is the closest I could find to a topic about adding an subgrid to a form. --> Weitere Informationen: [Unterrastereigenschaftenübersicht](../model-driven-apps/sub-grid-properties-legacy.md)
+<!-- This is the closest I could find to a topic about adding an subgrid to a form. --> Weitere Informationen: [Sub-Grid properties overview (Übersicht über Unterrastereigenschaften)](../model-driven-apps/sub-grid-properties-legacy.md)
 
 ## <a name="add-a-rollup-field--to-the-entity-form-to-show-the-ratings"></a>Hinzufügen eines Rollupfelds zum Entitätsformular, um die Bewertungen anzuzeigen  
 
-Abhängig davon, wie Sie die Bewertung für die Entität berechnen möchten, können Sie ein Rollupfeld erstellen, das die Bewertung berechnet und dieses dann zum Formular der Entität hinzufügen, für die Sie Feedback ermöglichen. Weitere Informationen: [Definieren der Rollupfelder für die Gesamtwerte](define-rollup-fields.md)
+Je nachdem, wie Sie die Bewertung für die Entität berechnen möchten, können Sie ein Rollupfeld zum Berechnen der Bewertung erstellen und dem Formular der Entität hinzufügen, für die Sie Feedback ermöglichen. Weitere Informationen: [Definieren von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)
   
 ### <a name="see-also"></a>Siehe auch  
- [Feedback oder für Bewertungen für Dynamics 365-Datensätze senden](/dynamics365/customer-engagement/basics/submit-feedback-ratings)
+ [Senden von Feedback oder Bewertungen für Informationen, die im System gespeichert sind](/dynamics365/customer-engagement/basics/submit-feedback-ratings)

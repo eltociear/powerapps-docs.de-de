@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Ausführen einer auf Canvas basierenden App auf einem mobilen Gerät | Microsoft-Dokumentation'
-description: In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können.
+title: Ausführen einer auf Canvas basierenden App auf einem mobilen Gerät | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen.
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -10,17 +10,22 @@ ms.author: matp
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: a80042065a830bb9d34007131cccbd995279e3dd
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: ace1a40e8d7900d93e2ff902705f6f50e1d7a193
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925706"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42851882"
 ---
-# <a name="quickstart-run-a-canvas-app-on-a-mobile-device"></a>Schnellstart: Ausführen einer Canvas-App auf einem mobilen Gerät
-Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Apps, die auf mobilen Geräten ausgeführt werden, können auch die Funktionen des Geräts nutzen, z.B. Ortungsdienste und die Kamera.
+# <a name="run-a-canvas-app-on-a-mobile-device"></a>Ausführen einer Canvas-App auf einem mobilen Gerät
+Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Thema erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Apps, die auf mobilen Geräten ausgeführt werden, können auch die Funktionen des Geräts nutzen, z.B. Ortungsdienste und die Kamera.
 
-Wenn Sie noch nicht für PowerApps angemeldet sind, [melden Sie sich kostenlos an](https://web.powerapps.com/signup?redirect=marketing&email=), bevor Sie mit diesem Schnellstart beginnen, und laden Sie dann PowerApps aus dem [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder über [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) auf ein iPhone, iPad oder Android-Gerät mit einem [unterstützten Betriebssystem](../maker/canvas-apps/limits-and-config.md) herunter. Überprüfen Sie außerdem, ob Sie Zugriff auf eine Canvas-App haben, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
+Wenn Sie noch nicht für PowerApps angemeldet sind, [melden Sie sich kostenlos an](https://web.powerapps.com/signup?redirect=marketing&email=), bevor Sie mit diesem Verfahren beginnen, und laden Sie dann PowerApps aus dem [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder über [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) auf ein iPhone, iPad oder Android-Gerät mit einem [unterstützten Betriebssystem](../maker/canvas-apps/limits-and-config.md) herunter. Überprüfen Sie außerdem, ob Sie Zugriff auf eine Canvas-App haben, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
 
 ## <a name="open-powerapps-and-sign-in"></a>Öffnen von PowerApps und Anmelden
 Öffnen Sie PowerApps auf Ihrem mobilen Gerät, und melden Sie sich mit Ihren Azure Active Directory-Anmeldeinformationen an.
@@ -77,7 +82,7 @@ Sie können eine App an den Startbildschirm Ihres Geräts anheften, um schneller
 Wenn Sie eine App schließen möchten, wischen Sie mit Ihrem Finger von links nach rechts über die App. Auf Android-Geräten können Sie auch auf die Schaltfläche „Zurück“ drücken, und bestätigen, dass Sie die App schließen möchten.
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Schnellstart wurde erläutert, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Sie können auch modellgesteuerte Apps auf mobilen Geräten ausführen.
+In diesem Thema haben Sie erfahren, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Sie können auch modellgesteuerte Apps auf mobilen Geräten ausführen.
 
 > [!div class="nextstepaction"]
 > [Ausführen modellgesteuerter Apps auf einem mobilen Gerät](run-app-client-model-driven.md)

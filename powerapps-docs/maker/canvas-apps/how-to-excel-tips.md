@@ -1,6 +1,6 @@
 ---
 title: Formatieren einer Tabelle in Excel | Microsoft-Dokumentation
-description: Damit Sie Excel-Daten verwenden können, müssen Sie die Daten in einer Tabelle formatieren. Hinzufügen des Schlüsselworts „Bild“ in Spaltennamen
+description: Um Excel-Daten in PowerApps verwenden zu können, müssen Sie die Daten als Tabelle formatieren. Hinzufügen des Schlüsselworts „Bild“ in Spaltennamen
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -9,31 +9,35 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/03/2018
 ms.author: yifwang
-ms.openlocfilehash: ddc6b9715a3282dbfcce9ae5f63be50ea1406e69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ea4bda4857c89a9e28359f63811e70744f111499
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39023664"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42830955"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Formatieren einer Tabelle in Excel und Tipps zur Benennung
-Zunächst muss die Voraussetzung erfüllt sein, dass die Excel-Daten als Tabelle für die Verwendung in PowerApps formatiert sind. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.
+In PowerApps können Sie eine Canvas-App auf der Grundlage von Excel-Daten nur erstellen, wenn sie als Tabelle formatiert ist. Unter diesem Thema erfahren Sie, wie Sie eine Tabelle in Excel formatieren und wie Sie Excel-Spalten benennen können.
 
 ## <a name="how-to-format-a-table-in-excel"></a>Formatieren einer Tabelle in Excel
-Sie können Ihre Daten in eine Tabelle konvertieren, indem Sie in Excel auf der Registerkarte **Start** auf die Option **Als Tabelle formatieren** klicken.
+Sie können Ihre Daten in eine Tabelle konvertieren, indem Sie in Excel auf der Registerkarte **Start** die Option **Als Tabelle formatieren** auswählen.
 
 ![Formatieren einer Tabelle in Excel](./media/how-to-excel-tips/format-table.png)
 
-Alternativ können Sie auch über die Registerkarte **Einfügen** eine formatierte Tabelle erstellen.
+Sie können auch eine Tabelle erstellen, indem Sie auf der Registerkarte **Einfügen** die Option **Tabelle** auswählen.
 
 ![Einfügen einer Tabelle in Excel](./media/how-to-excel-tips/insert-table.png)
 
-Damit Sie Ihre Tabelle leicht wiederfinden, wechseln Sie unter **Tabellentools** zu **Entwurf** und benennen Sie Ihre Tabelle um. Es ist sinnvoll, Ihrer Tabelle einen aussagekräftigen Namen zu geben, besonders wenn es mehrere Tabellen in einer Excel-Datei gibt.
+Damit Sie Ihre Tabelle leicht wiederfinden, wechseln Sie unter **Tabellentools** zu **Entwurf** und benennen Sie Ihre Tabelle um. Es ist sinnvoll, Ihrer Tabelle einen aussagekräftigen Namen zu geben, besonders wenn dieselbe Excel-Datei mehrere Tabellen umfasst.
 
 ![Umbenennen einer Tabelle in Excel](./media/how-to-excel-tips/rename-table.png)
 
 ## <a name="naming-tips-in-excel"></a>Tipps zur Benennung in Excel
-Versuchen Sie, in Ihrer Excel-Tabelle das Schlüsselwort „Bild“ zu Ihrer Bildspalte hinzuzufügen. Dadurch wird Ihre Bildspalte mit einem Bildsteuerelement verbunden, während Sie diese Tabelle in einer Galerie mit Bildsteuerelementen verwenden.
+Wenn eine Spalte in Ihrer Tabelle Bilder enthält, geben Sie „Bild“ in den Namen dieser Spalte ein. Dieses Schlüsselwort bindet diese Spalte an ein Bildsteuerelement in einer Galerie.
 
 ![Verbinden einer Excel-Tabelle mit Bildern](./media/how-to-excel-tips/connect-gallery.png)
 

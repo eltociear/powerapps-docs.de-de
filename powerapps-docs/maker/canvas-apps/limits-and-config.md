@@ -1,6 +1,6 @@
 ---
-title: Systemanforderungen, Einschränkungen und Konfigurationswerte | Microsoft-Dokumentation
-description: Systemanforderungen, Einschränkungen und Konfigurationswerte für PowerApps
+title: Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps | Microsoft-Dokumentation
+description: Systemanforderungen, Einschränkungen und Konfigurationswerte für in PowerApps erstellte Canvas-Apps
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/07/2018
 ms.author: anneta
-ms.openlocfilehash: 3c334baf876c64085621520daef9a0f153d54107
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5ba279e361dfe450de1187cf6aca87bc026178ba
+ms.sourcegitcommit: 60006ce9cb21c59e588c00f2ba5c41ffebbbba09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39476873"
+ms.lasthandoff: 09/30/2018
+ms.locfileid: "47456296"
 ---
-# <a name="system-requirements-limits-and-configuration-values"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte
+# <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
 
-## <a name="supported-platforms-for-running-apps-using-the-powerapps-app"></a>Unterstützte Plattformen für das Ausführen von Apps mithilfe der PowerApps-App
+## <a name="supported-platforms-for-running-canvas-apps-using-the-powerapps-app"></a>Unterstützte Plattformen für das Ausführen von Canvas-Apps mithilfe der PowerApps-App
 
 | **Mindestens erforderlich** | **Empfohlen** |
 | --- | --- |
@@ -27,7 +31,7 @@ In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser so
 | Android 5 oder höher |Android 7 oder höher mit mindestens 4 GB RAM |
 | Windows 8.1 oder höher (nur PC) |Windows 10 Fall Creators Update mit mindestens 8 GB RAM|
 
-## <a name="supported-browsers-for-running-apps"></a>Unterstützte Browser für das Ausführen von Apps
+## <a name="supported-browsers-for-running-canvas-apps"></a>Unterstützte Browser für das Ausführen von Canvas-Apps
 
 | **Browser** | **Betriebssystem** |
 | --- | --- |
@@ -64,7 +68,7 @@ Aufrufe, die von einer API erfolgen, die durch eine App verbunden ist (z.B. die 
 Sie sollten diese Adressen beispielsweise verwenden, wenn Sie eine Whitelist mit IP-Adressen für eine Azure SQL-Datenbank erstellen müssen.
 
 > [!IMPORTANT]
->   Wenn Sie bereits über Konfigurationen verfügen, aktualisieren Sie diese so schnell wie möglich (vor dem 1. September 2018), sodass diese die in der folgenden Liste aufgeführten IP-Adressen für die Regionen umfassen, in denen Ihre PowerApps-Apps vorhanden sind, und diesen entsprechen.
+>   Wenn Sie bereits über Konfigurationen verfügen, aktualisieren Sie diese so schnell wie möglich (vor dem 30. September 2018), sodass diese die in der folgenden Liste aufgeführten IP-Adressen für die Regionen umfassen, in denen Ihre PowerApps-Apps vorhanden sind, und diesen entsprechen.
 
 | Region | Ausgehende IP |
 | --- | --- |
@@ -95,3 +99,6 @@ In dieser Liste werden alle Dienste aufgeführt, mit denen PowerApps Studio komm
 | *.azureedge.net |https |WebAuth |
 | *.blob.core.windows.net |https |Blob Storage |
 | vortex.data.microsoft.com |https |Telemetrie |
+
+> [!NOTE]
+> Wenn Sie ein VPN verwenden, muss dieses so konfiguriert sein, dass „localhost“ vom Tunneling für PowerApps Mobile ausgeschlossen wird.

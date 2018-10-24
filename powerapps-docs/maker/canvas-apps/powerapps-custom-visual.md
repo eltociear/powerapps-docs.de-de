@@ -1,20 +1,24 @@
 ---
 title: Benutzerdefinierte PowerApps-Visuals für Power BI | Microsoft-Dokumentation
 description: Verfahren und Einschränkungen für das Einbetten einer Canvas-App, die die gleiche Datenquelle wie andere Berichtselemente in Power BI verwendet und ebenfalls gefiltert werden kann
-author: mgblythe
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/15/2018
-ms.author: mblythe
-ms.openlocfilehash: 0da480a482415ad174f10204f14f31adbd3607f2
-ms.sourcegitcommit: e3f5a2bef64085d02aec82e62ff94ae8a4d01d24
+ms.author: chmoncay
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
+ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469992"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860608"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -32,7 +36,9 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Auswählen der Berichtsdaten](./media/powerapps-custom-visual/add-visual-set-data.png)
 
-3. Sie können eine vorhandene Apps auswählen oder eine neue erstellen. Wenn Sie eine neue App erstellen, können Sie auswählen, in welcher Umgebung diese erstellt werden soll.
+    Sie können eine vorhandene App auswählen oder eine neue erstellen, aber der Bericht muss mit dem Power BI-Dienst veröffentlicht und in Microsoft Edge oder Google Chrome geöffnet werden.
+
+3.  Wenn Sie eine neue App erstellen, können Sie auswählen, in welcher Umgebung diese erstellt werden soll.
 
     ![Neue oder vorhandene App](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
@@ -66,12 +72,12 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
 Das benutzerdefinierte PowerApps-Visual ist in der Vorschauversion verfügbar und hat folgende Einschränkungen:
 
-- Sie können keine Apps erstellen oder bearbeiten, wenn Sie das benutzerdefinierte PowerApps-Visual in Power BI Desktop, Internet Explorer oder Mozilla Firefox verwenden. Es wird empfohlen, den Bericht zuerst im Power BI-Dienst zu veröffentlichen. Verwenden Sie anschließend Microsoft Edge oder Google Chrome, um neue Apps zu erstellen und Änderungen an Apps vorzunehmen.
+- Sie können keine Apps erstellen oder bearbeiten, wenn Sie das benutzerdefinierte PowerApps-Visual in Power BI Desktop, Internet Explorer oder Mozilla Firefox verwenden. Es wird empfohlen, den Bericht zuerst im Power BI-Dienst zu veröffentlichen. Verwenden Sie anschließend Microsoft Edge oder Google Chrome, um Apps zu erstellen und zu aktualisieren.
 - Wenn Sie die mit dem Visual verknüpften Datenfelder ändern, müssen Sie die App innerhalb des Power BI-Diensts bearbeiten, indem Sie auf die Auslassungspunkte (...) und dann auf **Bearbeiten** klicken. Andernfalls werden die Änderungen nicht in PowerApps übernommen, und die App weist unerwartetes Verhalten auf.
 - Das benutzerdefinierte PowerApps-Visual kann keine Aktualisierung des Power BI-Berichts oder der Power BI-Datenquelle auslösen. Wenn Sie Daten von der App in dieselbe Datenquelle schreiben, die auch der Bericht verwendet, werden diese Änderungen nicht sofort angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
 - Das benutzerdefinierte PowerApps-Visual kann die Daten nicht filtern oder wieder an den Bericht senden.
 - Sie müssen die PowerApps-App getrennt von Ihrem Bericht freigeben. Weitere Informationen dazu finden Sie unter [sharing apps in PowerApps (Freigeben von Apps in PowerApps)](share-app.md).
-- Die Power BI-App für Mobilgeräte unterstützt das benutzerdefinierte PowerApps-Visual nicht.
+- Der Power BI-Berichtsserver und die mobile Power BI-App unterstützen das benutzerdefinierte PowerApps-Visual nicht.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

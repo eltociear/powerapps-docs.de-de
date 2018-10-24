@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Modell-angetriebenen Geschäftsregeln und Empfehlungen | MicrosoftDocs
+title: Erstellen von Geschäftsregeln und -empfehlungen für modellgesteuerte Apps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -8,125 +8,126 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 caps.latest.revision: 31
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+- PowerApps maker portal impact
+ms.openlocfilehash: c1a132648a63845c42cde8a80636d0e87e10a328
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39685233"
 ---
-# <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
+# <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Tutorial: Erstellen von Geschäftsregeln und -empfehlungen zur Anwendung einer Logik in einem modellgesteuerten App-Formular
 
-Diese Anleitung zeigt, wuie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können dann für Primäre- und Schnellerfassungsformularen angewendet werden, und sie können in den PowerApps, Dynamics 365 Customer Engagement Web-Apps, Dynamics 365 for tablets und  Dynamics 365 for Outlook (online oder offline Modus) verwendet werden.  
+In diesem Tutorial erfahren Sie, wie Geschäftsregeln und -empfehlungen erstellt werden, um eine Formularlogik anzuwenden, ohne JavaScript-Code schreiben oder Plug-Ins erstellen zu müssen.  Geschäftsregeln stellen eine einfache Schnittstelle bereit, um sich schnell ändernde und häufig verwendete Regeln zu implementieren und zu verwalten. Sie können auf Haupt- und Schnellerfassungsformulare angewendet und in PowerApps-Apps, Dynamics 365 Customer Engagement-Webanwendungen, Dynamics 365 für Tablets und Dynamics 365 für Outlook (Online- oder Offlinemodus) verwendet werden.  
   
- Indem Sie Bedingungen und Aktionen kombinieren können Sie folgende Aktionen mit Geschäftsregeln ausführen:  
+ Indem Sie Bedingungen und Aktionen kombinieren, können Sie folgende Vorgänge mit Geschäftsregeln durchführen:  
   
--   Feldwerte festlegen  
+-   Festlegen von Feldwerten  
   
--   Klare Feldwerte  
+-   Löschen von Feldwerten  
   
--   Festlegen von Felderforderlichkeitsstufen  
+-   Festlegen von Anforderungsebenen für Felder  
   
--   Ein- oder Ausblenden von Feldern  
+-   Anzeigen oder Ausblenden von Feldern  
   
 -   Aktivieren oder Deaktivieren von Feldern  
   
 -   Überprüfen von Daten und Anzeigen von Fehlermeldungen  
   
--   Erstellen von Geschäftsempfehlungen basierend auf Business Intelligence-Daten.  
+-   Erstellen von Geschäftsempfehlungen, die auf Business Intelligence basieren  
   
 ## <a name="create-a-business-rule-or-business-recommendation"></a>Erstellen einer Geschäftsregel oder Geschäftsempfehlung
   
-1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
+1. Öffnen Sie den [Projektmappen-Explorer](advanced-navigation.md#solution-explorer).  
   
-2.  Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (öffnen Sie z.B. die Entität **Firma**), und doppelklicken Sie dann auf **Geschäftsregeln**.  
+2.  Öffnen Sie die Entität, für die Sie die Geschäftsregel erstellen möchten (z.B. die Entität **Account**), und doppelklicken Sie dann auf **Geschäftsregeln**.  
   
  ![Erstellen einer Geschäftsregel in der Standardlösung](media/create-business-rule-the-default-solution.png "Erstellen einer Geschäftsregel in der Standardlösung")  
   
-3.  Wählen Sie **Neu**.  
+3.  Wählen Sie **Neu** aus.  
   
-     Das Geschäftsregeldesignerfenster wird mit einer einzelnen Bedingung geöffnet, die bereits für Sie erstellt wurde. Jede Regel startet mit einer Bedingung. Die Geschäftsregel führt eine oder mehrere diese Aktionen basierend auf der Bedingung durch.  
+     Das Fenster des Geschäftsregel-Designers wird mit einer einzelnen Bedingung geöffnet, die bereits für Sie erstellt wurde. Jede Regel beginnt mit einer Bedingung. Die Geschäftsregel führt auf Grundlage dieser Bedingung eine oder mehrere Aktionen durch.  
   
- ![Geschäftsregelentwurfsfenster](media/business-rules-design-window.png "Geschäftsregelentwurfsfenster")  
+ ![Fenster zum Entwerfen einer Geschäftsregel](media/business-rules-design-window.png "Fenster zum Entwerfen einer Geschäftsregel")  
   
    > [!TIP]
-> Wenn Sie eine vorhandene Geschäftsregel ändern möchten, müssen Sie sie deaktivieren, bevor Sie sie bearbeiten können.
+> Wenn Sie eine vorhandene Geschäftsregel ändern möchten, müssen Sie diese zuvor deaktivieren.
 
-4.  Fügen Sie eine Beschreibung im Beschreibungsfeld in der oberen linken Ecke des Fensters hinzu.  
+4.  Fügen Sie im Feld „Beschreibung“ in der oberen linken Ecke des Fensters nach Belieben eine Beschreibung hinzu.  
   
-5.  Legen Sie den Bereich nach folgendem Bedingungen fest:  
+5.  Legen Sie den Bereich folgendermaßen fest:  
   
     |||  
     |-|-|  
-    |**Wenn Sie dieses Element auswählen...**|**Ist der Bereich...**|  
+    |**Ausgewähltes Element**|**Festgelegter Bereich**|  
     |**Entität**|Alle Formulare und Server|  
     |**Alle Formulare**|Alle Formulare|  
-    |Bestimmtes Formular (z. B. **Firma**-Formular)|Nur dieses Formular|  
+    |Bestimmte Formulare (z.B. das **Account**-Formular)|Nur dieses Formular|  
   
-6. **Bedingungen hinzufügen.** Um Ihrer Geschäftsregel weitere Bedingungen hinzuzufügen:  
+6. **Hinzufügen von Bedingungen:** So fügen Sie Ihrer Geschäftsregel weitere Bedingungen hinzu:  
   
-    1.  Ziehen Sie die **Bedingung**-Komponente von der Registerkarte **Komponenten** auf ein Pluszeichen (+) zwischen im Designer.  
+    1.  Ziehen Sie die Komponente **Bedingung** von der Registerkarte **Komponenten** zu einem Pluszeichen im Designer.  
   
-        ![Einer Geschäftsregel eine Bedingung hinzufügen](media/add-condition-business-rule.png "Einer Geschäftsregel eine Bedingung hinzufügen")  
+        ![Eine Bedingung zu einer Geschäftsregel hinzufügen](media/add-condition-business-rule.png "Add a condition in a business rule")  
   
-    2.  Sie können die Eigenschaften der Bedingung festlegen. Klicken Sie dazu auf die **Bedingung**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** auf der rechten Seite des Bildschirms fest. Wenn Sie Eigenschaften festlegen, wird ein Ausdruck unten auf der Registerkarte **Eigenschaften** erstellt.  
+    2.  Klicken Sie zum Festlegen von Eigenschaften für die Bedingung auf die Komponente **Bedingung** im Fenster des Designers, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** fest, die sich auf der rechten Seite des Bildschirms befindet. Während Sie die Eigenschaften festlegen, wird im unteren Bereich der Registerkarte **Eigenschaften** ein Ausdruck erstellt.  
   
-    3.  Um eine Zusatzbestimmung (UND oder ODER) der Bedingung hinzuzufügen, klicken Sie auf **Neu** auf der Registerkarte **Eigenschaften**, um eine neue Regel zu erstellen, und legen Sie dann Eigenschaften für diese Regel fest. Im Feld **Regel-Logik** können Sie angeben, ob die neue Regel als UND oder ODER hinzugefügt werden soll.  
+    3.  Klicken Sie zum Hinzufügen einer zusätzlichen Klausel (eine AND- oder OR-Klausel) zur Bedingung auf in der Registerkarte **Eigenschaften** auf **Neu**, um eine neue Regel zu erstellen. Legen Sie anschließend die Eigenschaften für diese Regel fest. Im Feld **Regellogik** können Sie angeben, ob die neue Regel als AND- oder OR-Klausel hinzugefügt werden soll.  
   
-        ![Einer Bedingung eine neue Regel hinzufügen](media/add-new-rule-condition.png "Einer Bedingung eine neue Regel hinzufügen")  
+        ![Eine neue Regel zu einer Bedingung hinzufügen](media/add-new-rule-condition.png "Add a new rule to a condition")  
   
-    4.  Wenn Sie die Eigenschaften für die Bedingung festgelegt haben, klicken Sie auf **Übernehmen**.  
+    4.  Wenn Sie mit dem Festlegen der Eigenschaften für die Bedingung fertig sind, klicken Sie auf **Übernehmen**.  
   
-7. **Aktionen hinzufügen.** Eine Aktion hinzufügen:  
+7. **Hinzufügen von Aktionen:** So fügen Sie eine Aktion hinzu:  
   
-    1.  Ziehen Sie eine der Aktionskomponenten von der **Komponenten**-Registerkarte auf ein Pluszeichen neben **Bedingung**-Komponente. Ziehen Sie die Aktionen auf ein Pluszeichen neben ein Häkchen, wenn die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung erfüllt wird, oder auf ein Pluszeichen neben einem x, wenn Sie die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung nicht erfüllt ist.  
+    1.  Ziehen Sie eine der Aktionskomponenten von der Registerkarte **Komponenten** zu einem Pluszeichen neben der Komponente **Bedingung**. Ziehen Sie die Aktion zu einem Pluszeichen neben einem Häkchen, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung erfüllt ist. Ziehen Sie sie zu einem Pluszeichen neben einem X-Symbol, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung nicht erfüllt ist.  
   
-        ![Eine Aktion auf eine Geschäftsregel ziehen](media/drag-an-action-business-rule.png "Eine Aktion auf eine Geschäftsregel ziehen")  
+        ![Eine Aktion zu einer Geschäftsregel ziehen](media/drag-an-action-business-rule.png "Drag an action to a business rule")  
   
-    2.  Sie können die Eigenschaften der Aktion festlegen. Klicken Sie dazu auf die **Aktion**-Komponente im Design, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften**.  
+    2.  Klicken Sie zum Festlegen von Eigenschaften für die Aktion auf die Komponente **Aktion** im Fenster des Designers, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** fest.  
   
-    3.  Wenn Sie die Eigenschaften festgelegt haben, klicken Sie auf **Übernehmen**.  
+    3.  Wenn Sie mit dem Festlegen der Eigenschaften fertig sind, klicken Sie auf **Übernehmen**.  
   
-8. **Eine Unternehmensempfehlung hinzufügen.** Eine Unternehmensempfehlung hinzufügen:  
+8. **Fügen Sie eine Geschäftsempfehlung hinzu.** So fügen Sie eine Geschäftsempfehlung hinzu:  
   
-    1.  Ziehen Sie eine der **Empfehlung**-Komponente von der **Komponenten**-Registerkarte auf eine **Bedingung**-Komponente. Ziehen Sie die **Empfehlung** -Komponente auf ein Pluszeichen neben ein Häkchen, wenn die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung erfüllt wird, oder auf ein Pluszeichen neben einem x, wenn Sie die Geschäftsregel die Aktion ausführen soll, sofern die Bedingung nicht erfüllt ist.  
+    1.  Ziehen Sie die Komponente **Empfehlung** von der Registerkarte **Komponenten** zu einem Pluszeichen neben einer **Bedingung**-Komponente. Ziehen Sie die Komponente **Empfehlung** zu einem Pluszeichen neben einem Häkchen, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung erfüllt ist. Ziehen Sie sie zu einem Pluszeichen neben einem X-Symbol, wenn Sie möchten, dass die Geschäftsregel angewendet wird, wenn die Bedingung nicht erfüllt ist.  
   
-    2.  Sie können die Eigenschaften der Empfehlung festlegen. Klicken Sie dazu auf die **Empfehlung**-Komponente im Designer, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften**.  
+    2.  Klicken Sie zum Festlegen von Eigenschaften für die Empfehlung auf die Komponente **Empfehlung** im Fenster des Designers, und legen Sie die Eigenschaften auf der Registerkarte **Eigenschaften** fest.  
   
-    3.  Um weitere Aktionen zur Empfehlung hinzuzufügen, ziehen Sie sie auf die Registerkarte **Komponenten**, und legen Sie dann auf Eigenschaften für jede Aktion auf der Registerkarte **Eigenschaften** fest.  
+    3.  Wenn Sie weitere Aktionen zur Empfehlung hinzufügen möchten, ziehen Sie diese aus der Registerkarte **Komponenten**, und legen Sie dann Eigenschaften für jede Aktion in der Registerkarte **Eigenschaften** fest.  
   
         > [!NOTE]
-        >  Wenn Sie eine Empfehlung erstellen, wird standardmäßig eine einzelne Aktion hinzugefügt. Um alle Aktionen in einer Empfehlung anzuzeigen, klicken Sie auf der Seite **Details** auf die **Empfehlung**-Komponente.  
+        >  Beim Erstellen einer Empfehlung wird automatisch eine Aktion hinzugefügt. Klicken Sie in der Komponente **Empfehlung** auf **Details**, um alle Aktionen in einer Empfehlung anzuzeigen.  
   
-    4.  Wenn Sie die Eigenschaften festgelegt haben, klicken Sie auf **Übernehmen**.  
+    4.  Wenn Sie mit dem Festlegen der Eigenschaften fertig sind, klicken Sie auf **Übernehmen**.  
   
-9. Um die Geschäftsregel zu überprüfen, klicken Sie auf **Überprüfen** auf der Aktionsleiste.  
+9. Klicken Sie in der Aktionsleiste auf **Überprüfen**, um eine Geschäftsregel zu überprüfen.  
   
-10. Um die Geschäftsregel zu speichern, klicken Sie auf **Speichern** auf der Aktionsleiste.  
+10. Klicken Sie in der Aktionsleiste auf **Speichern**, um eine Geschäftsregel zu speichern.  
   
-11. Um die Geschäftsregel zu aktivieren, wählen Sie sie im Lösungsexplorer-Fenster aus, und klicken Sie dann auf **Aktivieren**. Sie können die Geschäftsregel nicht über das Designer-Fenster aktivieren.  
+11. Wenn Sie eine Geschäftsregel aktivieren möchten, wählen Sie diese im Fenster des Projektmappen-Explorers aus, und klicken Sie dann auf **Aktivieren**. Sie können keine Geschäftsregel über das Fenster des Designers aktivieren.  
   
 > [!TIP]
->  Hier sind ein paar Tipps für die Arbeit mit den Geschäftsregeln im Designerfenster:  
+>  Hier sind einige Tipps, die Sie beachten sollten, wenn Sie an Geschäftsregeln im Fenster des Designers arbeiten:  
 >   
-> - Um eine Momentaufnahme aller Elemente im Geschäftsregelnfenster durchzuführen, klicken Sie auf **Momentaufnahme** in der Aktionsleiste. Dies ist beispielsweise hilfreich, wenn Sie die Geschäftsregel freigeben und Kommentare von Teammitgliedern haben möchten.  
-> - Verwenden Sie die Minimap, um schnell zu anderen Teilen des Prozesses zu navigieren. Dies ist hilfreich, wenn Sie einen komplizierten Prozess haben, der nicht komplett angezeigt wird.  
-> - Wenn Sie Bedingungen, Aktionen und Unternehmensempfehlungen der Geschäftsregel hinzufügen, wird Code für die Geschäftsregel am unteren Rand des Designerfensters erstellt und angezeigt. Dieser Code ist nur lesbar.  
+> - Klicken Sie in der Aktionsleiste auf **Momentaufnahme**, um eine Momentaufnahme aller Elemente im Fenster „Geschäftsregel“ zu erstellen. Dies ist beispielsweise nützlich, wenn Sie Kommentare zur Geschäftsregel von einem Teammitglied freigeben und abrufen möchten.  
+> - Verwenden Sie die Minikarte, um schnell zu verschiedenen Teilen des Prozesses zu navigieren. Dies ist nützlich, wenn der Prozess kompliziert ist und über den Bildschirmbereich hinausgeht.  
+> - Während Sie Bedingungen, Aktionen und Geschäftsempfehlungen zu Ihrer Geschäftsregel hinzufügen, wird der Code für die Geschäftsregel erstellt und im unteren Bereich des Designer-Fensters angezeigt. Dieser Code ist schreibgeschützt.  
   
 <a name="BKMK_LocalizingErrorMessages"></a>   
-## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren der Fehlermeldungen in Geschäftsregeln  
- Sind mehrere Sprache für Ihre Organisation bereitgestellt, können Sie Ihre Fehlermeldungen lokalisieren. Bei jeder Meldung generiert das System eine Beschriftung. Wenn Sie die Übersetzungen in Ihrer Organisation exportieren, können Sie lokalisierte Versionen Ihrer Meldungen hinzufügen und diese Beschriftungen wieder in das System importieren, so dass Personen, die andere Sprachen als Ihre Ausgangssprache verwenden, die übersetzten Meldungen sehen.  
+## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren von Fehlermeldungen, die in Geschäftsregeln verwendet werden  
+ Wenn in Ihrer Organisation mehr als eine Sprache verwendet wird, sollten Sie alle festgelegten Fehlermeldungen lokalisieren. Jedes Mal, wenn Sie eine Meldung festlegen, wird eine Bezeichnung vom System generiert. Wenn Sie die Übersetzungen Ihrer Organisation exportieren, können Sie lokalisierte Versionen zu Ihren Meldungen hinzufügen und diese Bezeichnungen dann zurück in das System importieren. Dadurch können die Personen, die andere Sprachen als die Standardsprache verwenden, die übersetzten Meldungen anzeigen.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- [Erstellen benutzerdefinierter Geschäftslogik durch Prozesse](guide-staff-through-common-tasks-processes.md)   
+ [Create custom business logic through processes (Erstellen einer benutzerdefinierten Geschäftslogik durch Prozesse)](guide-staff-through-common-tasks-processes.md)   
  [Erstellen eines Geschäftsprozessflusses](/flow/create-business-process-flow)   
 

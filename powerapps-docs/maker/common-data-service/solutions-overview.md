@@ -1,6 +1,6 @@
 ---
-title: Arbeiten mit Lösungen in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Lösungen verteilt werden'
+title: Arbeiten mit Lösungen in PowerApps | Microsoft-Dokumentation
+description: Informationen zum Verteilen von Lösungen
 ms.custom: ''
 ms.date: 06/21/2018
 ms.reviewer: ''
@@ -9,42 +9,42 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 47fb64e650da2f3e1a9e0cf523060cf7d9f5a03b
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39683498"
 ---
-
 <a name="BKMK_Solutions"></a>   
-# <a name="solutions-overview"></a>Überblick über Lösungen  
+# <a name="solutions-overview"></a>Übersicht über Lösungen  
 
- Lösungen dienen dazu, dass eine modellgesteuerte App erworben, freigegeben oder auf eine andere Weise von einer Organisation zu einer anderen übertragen werden kann. Sie erhalten Lösungen von [AppSource](https://appsource.microsoft.com/) oder durch einen unabhängigen Softwarehersteller (ISV). Eine Lösung ist eine Datei, die Sie in eine Umgebung als App importieren kann oder um einen Satz von Anpassungen auf eine vorhandene App anzuwenden.  
+ Lösungen sind dazu da, dass modellgesteuerte Apps gekauft, freigegeben oder anderweitig von einer Organisation an eine andere weitergegeben werden können. Lösungen erhalten Sie von [AppSource](https://appsource.microsoft.com/) oder von einem unabhängigen Softwareanbieter (ISV, Independent Software Vendor). Bei einer Lösung handelt es sich um eine Datei, die Sie als App in eine Umgebung importieren können oder die Sie zum Anwenden von Anpassungen an eine vorhandene App importieren können.  
   
-Weitere Informationen: [Whitepaper: Muster und Prinzipien für Lösungsentwickler](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
+Weitere Informationen: [Whitepaper: Patterns and Principles for Solution Builders (Muster und Prinzipien für Lösungsentwickler)](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
   
 > [!NOTE]
->  Als ISV, der eine App erstellt, die Sie verteilen werden, müssen Sie Lösungen verwenden. Weitere Informationen zum Arbeiten mit Lösungen, siehe [Paketieren und Verteilen von Erweiterungen mit Lösungen](https://msdn.microsoft.com/library/gg334530.aspx).  
+>  Wenn Sie als ISV eine App erstellen, die Sie verteilen möchten, müssen Sie Lösungen verwenden. Weitere Informationen zur Verwendung von Lösungen finden Sie unter [Packen und Verteilen von Erweiterungen mithilfe von Lösungen](https://msdn.microsoft.com/library/gg334530.aspx).  
   
- Wenn Sie nur daran interessiert sind, PowerApps-Apps für den organisatorischen Einsatz zu erstellen oder Dynamics 365 anzupassen, finden Sie hier Informationen über Lösungen:  
+ Wenn Sie nur PowerApps-Apps zur Verwendung in der Organisation erstellen oder Dynamics 365 anpassen möchten, müssen Sie über Lösungen Folgendes wissen:  
   
--   Das Erstellen von Lösungen ist optional. Sie können Anwendungen direkt in Ihrer PowerApps-Umgebung erstellen oder anpassen, ohne jemals eine Lösung zu erstellen.  
+-   Das Erstellen von Lösungen ist optional. Sie können Apps in Ihrer PowerApps-Umgebung erstellen oder anpassen, ohne eine Lösung zu erstellen.  
   
--   Wenn Sie die PowerApps Umgebung direkt anpassen, arbeiten Sie mit einer speziellen Lösung namens **Common Data Services Default Solution**. Diese Lösung enthält alle Komponenten in Ihrem System.  
+-   Wenn Sie die PowerApps-Umgebung direkt anpassen, arbeiten Sie mit einer speziellen Lösung, die als **Common Data Services-Standardlösung** bezeichnet wird. Diese Lösung enthält alle Komponenten in Ihrem System.  
   
--   Sie können Ihre Standardlösung exportieren, um ein Backup der Anpassungen, die Sie in Ihrer Organisation definiert haben, zu erstellen. Dies ist sehr nützlich für den Katastrophenfall.  
+-   Sie können Ihre Standardlösung exportieren, um eine Sicherung der in Ihrer Organisation definierten Anpassungen zu erstellen. Eine Sicherung empfiehlt sich für den Notfall.  
   
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="solution-components"></a>Lösungskomponenten  
- Eine Lösungskomponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Lösungskomponente. Nachfolgend finden Sie eine Liste von Lösungskomponenten, die Sie in einer Lösung anzeigen können:  
+ Eine Lösungskomponente stellt ein Element dar, das Sie potenziell anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Lösungskomponente. Die folgende Liste enthält Lösungskomponenten, die Sie in einer Lösung anzeigen können:  
   
 -   Anwendungsmenüband  
 
@@ -62,11 +62,11 @@ Weitere Informationen: [Whitepaper: Muster und Prinzipien für Lösungsentwickle
  
 -   Benutzerdefiniertes Steuerelement
   
--   Informationsleiste  
+-   Dashboard  
   
 -   E-Mail-Vorlage  
   
--   Entity  
+-   Einrichtung  
   
 -   Entitätsbeziehung  
   
@@ -78,7 +78,7 @@ Weitere Informationen: [Whitepaper: Muster und Prinzipien für Lösungsentwickle
   
 -   Seriendruckvorlage  
   
--   Meldung  
+-   Nachricht  
   
 -   Optionssatz  
   
@@ -86,7 +86,7 @@ Weitere Informationen: [Whitepaper: Muster und Prinzipien für Lösungsentwickle
   
 -   Prozess  
   
--   SDK-Nachrichtenverarbeitungsschritt  
+-   Schritt zur Verarbeitung der SDK-Nachricht  
   
 -   Sicherheitsrolle  
   
@@ -94,65 +94,65 @@ Weitere Informationen: [Whitepaper: Muster und Prinzipien für Lösungsentwickle
   
 -   Siteübersicht  
 
--   Virtueller Entitätsdatenanbieter
+-   Datenanbieter für virtuelle Entität
 
--   Virtuelle Entitätsdatenquelle
+-   Datenquelle für virtuelle Entität
   
 -   Webressource  
   
- Die meisten Lösungskomponenten sind in andere Lösungskomponenten eingebettet. Zum Beispiel enthält eine Entität Formulare, Ansichten, Diagramme, Felder, Entitätsbeziehungen, Nachrichten und Geschäftsregeln. Jede dieser Lösungskomponenten erfordert eine Entität. Ein Feld kann nicht außerhalb einer Entität existieren. Wir sprechen davon, dass das Feld von der Entität abhängt. Es gibt tatsächlich zweimal so viele Arten von Lösungskomponenten wie in der vorherigen Liste angegeben, die meisten davon sind jedoch nicht in der Anwendung sichtbar.  
+ Die meisten Lösungskomponenten sind in andere Lösungskomponenten geschachtelt. So enthält eine Entität beispielsweise Formulare, Ansichten, Diagramme, Felder, Entitätsbeziehungen, Nachrichten und Geschäftsregeln. Für jede dieser Lösungskomponenten muss eine Entität vorhanden sein. Ein Feld kann außerhalb einer Entität nicht existieren. Wir sprechen davon, dass das Feld von der Entität abhängt. Genau genommen, gibt es doppelt so viele Arten von Lösungskomponenten wie in der vorherigen Liste angegeben. Die meisten davon sind in der Anwendung jedoch nicht sichtbar.  
   
- Der Zweck von Lösungskomponenten besteht darin, alle Einschränkungen hinsichtlich der Anpassbarkeit mit verwalteten Eigenschaften, und alle Lösungsabhängigkeiten nachzuverfolgen, sodass sie exportiert, importiert und (in verwalteten Lösungen) restlos gelöscht werden können.  
+ Der Zweck von Lösungskomponenten besteht darin, alle Einschränkungen hinsichtlich der Anpassbarkeit mit verwalteten Eigenschaften sowie alle Lösungsabhängigkeiten nachzuverfolgen, sodass sie exportiert, importiert und (in verwalteten Lösungen) restlos gelöscht werden können.  
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
-### <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
- Eine **verwaltete** Lösung kann nach dem Import deinstalliert werden. Dadurch werden alle Komponenten der Lösung entfernt.  
+### <a name="managed-and-unmanaged-solutions"></a>Nicht verwaltete und verwaltete Lösungen  
+ Eine **verwaltete** Lösung kann nach dem Import deinstalliert werden. Durch die Deinstallation der Lösung werden alle Komponenten dieser Lösung entfernt.  
   
- Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Standardlösung hinzu. Sie können die Komponenten nicht entfernen, indem Sie die Lösung deinstallieren.  
+ Beim Importieren einer **nicht verwalteten** Lösung werden dagegen Ihrer Standardlösung alle Komponenten dieser Lösung hinzugefügt. Die Komponenten können nicht durch Deinstallieren der Lösung entfernt werden.  
   
- Wenn Sie eine **nicht verwaltete** Lösung importieren, die bereits von Ihnen angepasste Lösungskomponenten enthält, werden Ihre Anpassungen von den Anpassungen in der nicht verwalteten Lösung überschrieben. Sie können dies nicht rückgängig machen.  
+ Wenn Sie eine **nicht verwaltete** Lösung importieren, die bereits von Ihnen angepasste Lösungskomponenten enthält, werden Ihre Anpassungen von den Anpassungen in der nicht verwalteten Lösung überschrieben. Dieser Vorgang kann nicht rückgängig gemacht werden.  
   
 > [!IMPORTANT]
 >  Installieren Sie eine nicht verwaltete Lösung nur, wenn Sie alle Komponenten Ihrer Standardlösung hinzufügen wollen und alle vorhandenen Anpassungen überschrieben werden sollen.  
   
- Selbst wenn Sie Ihre Lösung nicht verteilen wollen, sollten Sie eine nicht verwaltete Lösung so erstellen und verwenden, dass sie über eine separate Ansicht verfügt, die nur die Teile der Anwendung enthält, die Sie angepasst haben. Wenn Sie irgend etwas anpassen, fügen Sie es einfach der nicht verwalteten Lösung hinzu, die Sie erstellt haben.  
+ Selbst wenn Sie Ihre Lösung nicht verteilen möchten, sollten Sie eine nicht verwaltete Lösung so erstellen und verwenden, dass sie über eine separate Ansicht verfügt, die nur die Teile der Anwendung enthält, die Sie angepasst haben. Wenn Sie irgend etwas anpassen, fügen Sie es einfach der nicht verwalteten Lösung hinzu, die Sie erstellt haben.  
   
  Sie können Ihre Standardlösung nur als nicht verwaltete Lösung exportieren.  
   
- Zur Erstellung einer **verwalteten** Lösung wählen Sie die Option "Verwaltete Lösung", wenn Sie die Lösung exportieren. Wenn Sie eine verwaltete Lösung erstellen, können Sie sie nicht wieder in die Organisation importieren, die Sie für die Erstellung verwendet haben. Sie können sie nur in eine andere Organisation importieren werden.  
+ Zur Erstellung einer **verwalteten** Lösung wählen Sie beim Exportieren der Lösung die Option „Verwaltete Lösung“. Wenn Sie eine verwaltete Lösung erstellen, können Sie sie nicht wieder in die Organisation importieren, die Sie für die Erstellung verwendet haben. Sie können sie nur in eine andere Organisation importieren.  
   
 <a name="BKMK_HowSolutionsAreApplied"></a>   
-### <a name="how-solutions-are-applied"></a>Wie Lösungen angewendet werden  
- Alle Lösungen werden als Ebenen evaluiert, um zu bestimmen, was Ihre App tatsächlich tun wird. Das folgende Diagramm zeigt, wie verwaltete und nicht verwaltete Lösungen evaluiert werden, und wie Änderungen an ihnen in Ihrer Organisation erscheinen.  
+### <a name="how-solutions-are-applied"></a>Anwenden von Lösungen  
+ Alle Lösungen werden als Ebenen ausgewertet, um zu bestimmen, was Ihre App tatsächlich tun wird. Im folgenden Diagramm ist dargestellt, wie verwaltete und nicht verwaltete Lösungen ausgewertet werden und wie Änderungen an den Lösungen in Ihrer Organisation angezeigt werden.  
   
- ![Lösungsebenen](media/solution-layering.png "Lösungsebenen")  
+ ![Lösungsebenen](media/solution-layering.png "lösungsebenen")  
   
  Von unten nach oben:  
   
  **Systemlösung**  
- Die ist Systemlösung entspricht einer verwalteten Lösung, die jede Organisation hat. Die Systemlösung ist die Definition aller direkt einsetzbaren Komponenten in dem System.  
+ Bei der Systemlösung handelt es sich um eine verwaltete Lösung, über die jede Organisation verfügt. Die Systemlösung ist die Definition aller sofort einsetzbaren Komponenten im System.  
   
  **Verwaltete Lösungen**  
- Verwaltete Lösungen können die Systemlösungskomponenten ändern und neue hinzufügen. Wenn mehrere verwaltete Lösungen installiert sind, wird die erste unter den später installierten verwalteten Lösungen installiert. Dies bedeutet, dass die zweite installierte Lösung die zuvor installierte anpassen kann. Wenn die Definitionen zweier verwalteter Lösungen Konflikte haben, ist die allgemeine Regel, dass die letzte den Vorzug hat. Wenn Sie eine verwaltete Lösung deinstallieren, wird die verwaltete Lösung darunter wirksam. Wenn Sie die verwaltete Lösung deinstallieren, wird das innerhalb der Systemlösung definierte Standardverhalten angewendet.  
+ Mit verwalteten Lösungen können die Systemlösungskomponenten geändert und neue Komponenten hinzugefügt werden. Wenn mehrere verwaltete Lösungen installiert werden, wird die erste unter den später installierten verwalteten Lösungen installiert. Das bedeutet, dass die erste installierte Lösung durch die zweite installiert Lösung geändert werden kann. Wenn die Definitionen zweier verwalteter Lösungen in Konflikt stehen, gilt als allgemeine Regel, dass die letzte den Vorrang hat. Wenn Sie eine verwaltete Lösung deinstallieren, wird die verwaltete Lösung darunter wirksam. Wenn Sie alle verwalteten Lösungen deinstallieren, wird das innerhalb der Systemlösung definierte Standardverhalten angewendet.  
   
  **Nicht verwaltete Anpassungen**  
- Nicht verwaltete Anpassungen sind alle Änderungen, die Sie an Ihrer Organisation durch eine nicht verwaltete Lösung vornehmen. Die Systemlösung definiert, was Sie mit verwalteten Eigenschaften anpassen können und was nicht. Herausgeber von verwalteten Lösungen haben dieselbe Möglichkeit, Ihre Möglichkeiten zu begrenzen, Lösungskomponenten anzupassen, die sie in ihrer Lösung hinzufügen. Sie können alle Lösungskomponenten anpassen, die keine verwalteten Eigenschaften haben, die Sie an ihrer Anpassung hindern.  
+ Nicht verwaltete Anpassungen sind alle Änderungen, die Sie an Ihrer Organisation durch eine nicht verwaltete Lösung vornehmen. Durch die Systemlösung wird definiert, was Sie mit verwalteten Eigenschaften anpassen können. Herausgeber von verwalteten Lösungen können Ihre Möglichkeiten bei der Anpassung von Lösungskomponenten begrenzen, die sie in ihrer Lösung hinzufügen. Sie können alle Lösungskomponenten anpassen, die keine verwalteten Eigenschaften aufweisen, mit denen Sie an deren Anpassung gehindert werden.  
   
  **Anwendungsverhalten**  
- Dies ist, was Sie in Ihrer Organisation sehen. Die Standardsystemlösung plus alle verwalteten und nicht verwalteten Anpassungen, die Sie vorgenommen haben.  
+ Das ist das Ergebnis, das Sie in Ihrer Organisation tatsächlich zu sehen bekommen: die Standardsystemlösung, alle verwalteten Lösungen sowie alle nicht verwalteten Anpassungen, die Sie angewendet haben.  
   
 <a name="BKMK_ManagedProperties"></a>   
 ### <a name="managed-properties"></a>Verwaltete Eigenschaften  
- Einige Komponenten können nicht angepasst werden. Diese Komponenten in der Systemlösung verfügen über Metadaten, die Sie an ihrer Anpassung hindern. Diese werden als **Verwaltete Eigenschaften** bezeichnet. Der Herausgeber einer verwalteten Lösung kann die verwalteten Eigenschaften auch so festlegen, dass Sie seine Lösung nicht in einer Weise anpassen können, die er nicht wünscht.  
+ Einige Komponenten können nicht angepasst werden. Diese Komponenten in der Systemlösung enthalten Metadaten, mit denen Sie an der Anpassung gehindert werden. Sie werden als **verwaltete Eigenschaften** bezeichnet. Der Herausgeber einer verwalteten Lösung kann die verwalteten Eigenschaften so festlegen, dass Sie daran gehindert werden, seine Lösung auf eine von ihm nicht gewünschte Weise anzupassen.  
   
 <a name="BKMK_Dependencies"></a>   
 ### <a name="solution-dependencies"></a>Lösungsabhängigkeiten  
- Aufgrund der Schichtung verwalteter Lösungen können einige verwaltete Lösungen von Lösungskomponenten in anderen verwalteten Lösungen abhängen. Einige Lösungsherausgeber nutzen dies, um modulare Lösungen zu erstellen. Möglicherweise müssen Sie zuerst eine verwaltete "Basis"-Lösung installieren und können dann eine zweite verwaltete Lösung installieren, die die Komponenten in der ersten verwalteten Lösung weiter anpasst. Die zweite verwaltete Lösung hängt von den Lösungskomponenten ab, die Teil ersten Lösung sind.  
+ Aufgrund der Anordnung verwalteter Lösungen in Ebenen können einige verwaltete Lösungen von Lösungskomponenten in anderen verwalteten Lösungen abhängen. Diesen Umstand nutzen einige Lösungsherausgeber, und erstellen Lösungen entsprechend modular. Möglicherweise müssen Sie zunächst eine verwaltete „Basislösung“ installieren und können erst danach eine zweite verwaltete Lösung installieren, mit der die Komponenten in der verwalteten Basislösung weiter angepasst werden. Die zweite verwaltete Lösung hängt von den Lösungskomponenten ab, die Teil ersten Lösung sind.  
   
- Das System verfolgt diese Abhängigkeiten zwischen Lösungen nach. Wenn Sie versuchen, eine Lösung zu installieren, die eine nicht installierte Basislösung erfordert, können Sie dies nicht tun. Sie erhalten eine Meldung angezeigt, die besagt, dass die Lösung eine andere Lösung erfordert, die zuerst installiert werden muss. Ähnlich gilt, dass Sie aufgrund der Abhängigkeiten die Basislösung nicht deinstallieren können, solange eine Lösung, die von ihr abhängt, noch installiert ist. Sie müssen die abhängige Lösung deinstallieren, bevor Sie die Basislösung deinstallieren können.  
+ Diese Abhängigkeiten zwischen Lösungen werden vom System verfolgt. Eine Lösung, für die eine Basislösung erforderlich ist, die nicht installiert ist, kann nicht installiert werden. Sie erhalten eine Meldung, dass für die Lösung zuerst eine andere Lösung installiert werden muss. Entsprechend kann die Basislösung aufgrund der Abhängigkeiten nicht deinstalliert werden, solange noch eine von ihr abhängige Lösung installiert ist. Die abhängige Lösung muss vor der Basislösung deinstalliert werden.  
   
   
 ## <a name="next-steps"></a>Nächste Schritte  
-[Importieren, aktualisieren und exportieren von Lösungen](import-update-export-solutions.md) <br/>
+[Import, update, and export solutions (Importieren, Aktualisieren und Exportieren von Lösungen)](import-update-export-solutions.md) <br/>
 [Navigieren zu einer bestimmten Lösung](navigate-specific-solution.md)
  

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc2940f726c23c79bcf894bb61c3e6b884ca7112
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 218fb97f6cd523275c0ba296ea120d487cf67e4c
+ms.sourcegitcommit: c26976af24a3e510e4eced78cf5c48cc2f71cae2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865775"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48025669"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -31,7 +31,7 @@ Für die in diesem Artikel beschriebenen Schritte benötigen Sie eine einfache L
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Erstellen Sie auf einer SharePoint-Seite eine Liste, die folgende Spalten enthält:
+Erstellen Sie eine Liste auf einer SharePoint-Seite, und fügen Sie dann folgende Spalten ein:
 
 - **ProductName** (einzeiliger Text)
 - **Details** (ja/nein)
@@ -53,18 +53,11 @@ Erstellen Sie auf einer SharePoint-Seite eine Liste, die folgende Spalten enthä
 
 ## <a name="hide-extra-fields"></a>Ausblenden zusätzlicher Felder
 
-In der Mitte des Bildschirms zeigt PowerApps Ihr Formular an. Dieses kann Felder enthalten, die Sie ausblenden sollten.
+In der Mitte des Bildschirms zeigt PowerApps Ihr Formular an. Dieses enthält jedoch Felder, die Sie nicht benötigen.
 
-- Deaktivieren Sie die Kontrollkästchen für diese Felder im Bereich **Daten**.
+- Deaktivieren Sie im Bereich **Daten** die Kontrollkästchen für die Felder **Title** (Titel) und **Attachments** (Anlagen).
 
-  - **Title**
-  - **Modified** (Geändert)
-  - **Created** (Erstellt)
-  - **Created By** (Erstellt von)
-  - **Modified By** (Geändert von)
-  - **ID**
-
-    Diese Felder werden im Formular danach nicht mehr angezeigt, sodass Sie nur noch die von Ihnen erstellten Felder sehen.
+    Diese Felder werden im Formular danach nicht mehr angezeigt, sodass Sie nur noch die von Ihnen hinzugefügten Felder sehen.
 
     ![Feldliste](./media/customize-list-form/field-list.png)
 
@@ -109,6 +102,8 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 1. Klicken Sie mehrmals auf den Schalter **Details**, um die letzten drei Felder ein- oder auszublenden.
 
 Gehen Sie zum [Anpassen Ihres Formulars](sharepoint-form-integration.md) folgendermaßen vor: Öffnen Sie das Formular, und klicken Sie oben im Formular auf **Anpassen**. Nehmen Sie dann Änderungen vor, und speichern und veröffentlichen Sie diese.
+
+Wenn Sie mindestens ein Element mit diesem Formular erstellen, ist das Feld **Title** (Titel) leer. Sie können dieses Feld ausblenden, indem Sie die Standardansicht ändern.
 
 ## <a name="use-the-default-form"></a>Verwenden des Standardformulars
 

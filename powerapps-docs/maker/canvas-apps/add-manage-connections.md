@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen und Verwalten von Verbindungen mit Datenquellen in Clouddiensten | Microsoft-Dokumentation
-description: Sie können Verbindungen mit Datenquellen wie SharePoint, SQL Server, OneDrive for Business, Salesforce und Office 365 hinzufügen, löschen und aktualisieren
+title: Hinzufügen und Verwalten von Verbindungen über Canvas-Apps | Microsoft-Dokumentation
+description: Über Canvas-Apps können Sie Verbindungen mit Datenquellen wie SharePoint, SQL Server und OneDrive for Business hinzufügen, löschen und aktualisieren.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,17 +9,21 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/09/2017
 ms.author: lanced
-ms.openlocfilehash: c114b803539c2d64695a0bd8c9d976d2604569eb
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195218"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42834041"
 ---
-# <a name="manage-your-connections-in-powerapps"></a>Verwalten der Verbindungen in PowerApps
-Stellen Sie in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung aus PowerApps mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
+# <a name="manage-canvas-app-connections-in-powerapps"></a>Verwalten von Canvas-App-Verbindungen in PowerApps
+Stellen Sie in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
 
-Über die Datenverbindung der App können Verbindungen mit SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel und vielen anderen [Datenquellen](connections-list.md) hergestellt werden.
+Über die Datenverbindung der Canvas-App können Verbindungen mit SharePoint, SQL Server, Office 365, OneDrive for Business, Salesforce, Excel und vielen anderen [Datenquellen](connections-list.md) hergestellt werden.
 
 Ihr nächster Schritt nach diesem Artikel besteht darin, Daten aus der Datenquelle in der App anzuzeigen und zu verwalten; siehe folgende Beispiele:
 

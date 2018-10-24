@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab5542adb68bbd07e2725197230000bdd02b320f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833759"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640352"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
 
@@ -61,6 +61,8 @@ Es wird nicht empfohlen, mehr als drei Power BI-Kacheln zur gleichen Zeit in ein
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt. Standardmäßig wird der Power BI-Bericht geöffnet, der der Kachel zugeordnet ist.
+
+**TileUrl**: Die URL, mit der die Kachel vom Power BI-Dienst angefordert wird. Sie können einen einzelnen Parameter an die Power BI-Kachel übergeben, indem Sie den Parameter an die URL anfügen (Beispiel: … & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'"). Sie können nur den Operator „Ist gleich“ im-Parameter verwenden.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 

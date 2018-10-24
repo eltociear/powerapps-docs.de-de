@@ -1,6 +1,6 @@
 ---
-title: Grundlegendes zu lokalen Datengateways | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Installation und Problembehandlung für lokale Datengateways
+title: Grundlegendes zu lokalen Datengateways für Canvas-Apps | Microsoft-Dokumentation
+description: Referenzinformationen zu lokalen Datengateways, einschl. Installation in PowerApps und Problembehandlung
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,14 +9,18 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
 ms.author: anneta
-ms.openlocfilehash: f39bebd27aad378a5bbf8bff592fa50ea44db679
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 5dcc07f3ba9b9b4baca39cf2090a2c57cb7e67b7
+ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39017753"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726927"
 ---
-# <a name="understand-on-premises-data-gateways-for-microsoft-powerapps"></a>Grundlegendes zu lokalen Datengateways für Microsoft PowerApps
+# <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>Grundlegendes zu lokalen Datengateways für Canvas-Apps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration
 **Voraussetzungen**
 
@@ -26,7 +30,6 @@ Minimum:
 * 64-Bit-Version von Windows 7 oder Windows Server 2008 R2 (oder höher)
 
 Empfohlen:
-
 * 8-Kern-CPU
 * 8 GB Arbeitsspeicher
 * 64-Bit-Version von Windows 2012 R2 (oder höher)
@@ -50,7 +53,7 @@ Zu berücksichtigende Aspekte:
 
 4. Klicken oder tippen Sie in den **Benutzerkontensteuerung**-Dialogfeldern auf **Ja**, um den Vorgang fortzusetzen.
 
-5. Klicken oder tippen Sie auf der nächsten Seite des Assistenten auf **Anmelden**.
+5. Auf dem nächsten Bildschirm des Assistenten klicken oder tippen Sie auf **Anmelden**, und geben Sie dann die Anmeldeinformationen an, mit denen Sie sich auch bei PowerApps anmelden.
 
     ![Anmelden](./media/gateway-reference/sign-in.png)
 
@@ -190,7 +193,7 @@ Sie können das Drittanbietertool [Azure Speed Test-App](http://azurespeedtest.a
 
 #### <a name="high-availabilitydisaster-recovery"></a>Hohe Verfügbarkeit und Notfallwiederherstellung
 **Frage:** Ist es geplant, Szenarios mit Hochverfügbarkeit für das Gateway zu aktivieren?  
-**Antwort:** Dies ist zwar geplant, aber es steht noch keine genaue Zeit fest.
+**Antwort:** Hochverfügbarkeit wird durch Verknüpfen von mindestens zwei Gateways in demselben Cluster aktiviert.  Für Gatewaycluster mit Hochverfügbarkeit ist das Update von November 2017 auf ein lokales Datengateway oder höher erforderlich.  Weitere Informationen finden Sie unter [Blogbeitragsankündigung](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow).
 
 **Frage:** Welche Optionen sind für die Notfallwiederherstellung verfügbar?  
 **Antwort:** Sie können den Wiederherstellungsschlüssel zum Wiederherstellen oder Verschieben eines Gateways verwenden. Geben Sie beim Installieren des Gateways den Wiederherstellungsschlüssel an.

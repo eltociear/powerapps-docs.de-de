@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/09/2017
 ms.author: mblythe
-ms.openlocfilehash: 9f02b752444153681e30b39c3fa9d8a8b9e0cd6d
-ms.sourcegitcommit: 521a7b8e6ae72a211045b54d153a8a8c8f59172e
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: a255489f243ca8586f349e617e5af2023e88732b
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40021385"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864400"
 ---
 # <a name="develop-offline-capable-canvas-apps-with-powerapps"></a>Entwickeln von offlinefähigen Canvas-Apps mit PowerApps
 
@@ -24,6 +28,11 @@ Eins der häufigsten Szenarios, denen Sie als Entwickler von mobilen Apps begegn
 * Ausführen von Apps, die offline entwickelt wurden.
 * Mithilfe des Signalobjekts [Connection](../canvas-apps/functions/signals.md#connection) bestimmen, ob eine App offline, online oder in einer getakteten Verbindung ist.
 * Verwenden von [Sammlungen](../canvas-apps/create-update-collection.md) und Nutzung von Funktionen wie [LoadData und SaveData](../canvas-apps/functions/function-savedata-loaddata.md), um offline grundlegende Datenspeicherung zur Verfügung zu machen.
+
+> [!NOTE]
+> Diese Funktion wird noch entwickelt und ist zum aktuellen Zeitpunkt noch nicht für jedes Szenario optimiert. Die Funktionen SaveData() zum Speichern von Daten auf und LoadData() zum Laden von Daten von einem lokalen Gerät arbeiten am besten in ihrer aktuellen Implementierung bei relativ kleinen Datenmengen (z.B. einige Dutzend Textdatensätze in einer Tabelle), die normalerweise 2 MB nicht überschreiten. Nützlich ist dies für einige einfache „Offlineszenarios“ oder für die Erhöhung der Startleistung von Canvas-Apps durch lokales Zwischenspeichern von Daten. Wenn Sie diese Funktion jedoch zum Speichern großer Datenmengen (z.B. Speichern von Tausenden Zeilen in einer Tabelle oder Zwischenspeicherung großer Bilder oder Videos) verwenden, sind Fehler oder ein unerwartetes Verhalten mit der aktuellen Implementierung möglich, was vermieden werden sollte. Die Funktionen lösen zudem Mergingkonflikte nicht automatisch, wenn ein Gerät, das offline war, wieder die Konnektivität herstellt. Die Konfiguration für die zu speichernden Daten und die Art und Weise, wie Daten gespeichert und die Neuverbindung hergestellt werden, richten sich nach dem Ersteller der Ausdrücke.
+>
+> Wir arbeiten gerade an der Erweiterung der Funktionen von Offline-Apps, der Verbesserung der Stabilität und Größenbegrenzungen und (zukünftig) an der automatischen Verarbeitung von Entscheidungen, welche Daten gespeichert und wie Konflikte gehandhabt werden sollen. Halten Sie sich hier und im [PowerApps-Blog](https://powerapps.microsoft.com/blog/) auf dem Laufenden über neue verfügbare Aktualisierungen.
 
 ## <a name="how-to-build-offline-capable-apps"></a>Erstellen von offlinefähigen Apps
 

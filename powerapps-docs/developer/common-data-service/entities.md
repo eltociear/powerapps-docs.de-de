@@ -1,6 +1,6 @@
 ---
-title: Entitäten in Common Data Service für Apps | Microsoft-Dokumentation
-description: Informationen zu Entitäten, die in Common Data Service für Apps verfügbar sind.
+title: Entitäten in Common Data Service for Apps | Microsoft-Dokumentation
+description: Informationen zu Entitäten, die in Common Data Service for Apps verfügbar sind.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,17 +15,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: 98f2360e29af7cb0bdf5caf041dfa13b933e6323
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f40c05c3bdab521cb1230be15cefc5dbb58eac18
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844224"
 ---
-# <a name="common-data-service-for-apps-entities"></a>Entitäten in Common Data Service für Apps
+# <a name="common-data-service-for-apps-entities"></a>Entitäten in Common Data Service for Apps
 
-Die wichtigste Funktion von Common Data Service für Apps ist das Speichern von Daten. Common Data Service umfasst verschiedene grundlegende Entitäten, die die von Geschäftsanwendungen verwendeten Daten strukturieren. 
+Die wichtigste Funktion von Common Data Service for Apps ist das Speichern von Daten. Common Data Service umfasst verschiedene grundlegende Entitäten, die die von Geschäftsanwendungen verwendeten Daten strukturieren. 
 
-Diese grundlegenden Entitäten werden in der Referenz [Entitäten in Common Data Service für Apps](reference/about-entity-reference.md) aufgeführt.
+Diese grundlegenden Entitäten werden in der Referenz [Entitäten in Common Data Service for Apps](reference/about-entity-reference.md) aufgeführt.
 
 ## <a name="modify-entities"></a>Ändern von Entitäten
 
@@ -45,11 +51,11 @@ Es gibt verschiedene Möglichkeiten, mithilfe von Designern Entitätsmetadaten z
 
 ### <a name="import-a-solution"></a>Importieren einer Lösung
 
-Lösungen können Entitätsmetadaten und andere benutzerdefinierte Komponenten enthalten. Wenn Sie eine verwaltete oder nicht verwaltete Lösung in ihren allgemeinen Common Data Service-Mandanten importieren, werden diese Entitäten hinzugefügt oder bereits vorhandene Entitäten um die neuen Entitätsmetadaten erweitert.
+Lösungen können Entitätsmetadaten und andere benutzerdefinierte Komponenten enthalten. Wenn Sie eine verwaltete oder nicht verwaltete Projektmappe in ihren allgemeinen Common Data Service for Apps-Mandanten importieren, werden diese Entitäten hinzugefügt oder bereits vorhandene Entitäten um die neuen Entitätsmetadaten erweitert.
 
 ### <a name="from-a-data-source-using-power-query"></a>In einer Datenquelle unter Verwendung von Power Query
 
-Sie können neue Entitäten erstellen und mithilfe von Power Query mit Daten auffüllen. Weitere Informationen finden Sie unter [Add data to an entity in the Common Data Service by using Power Query (Hinzufügen von Daten zu einer Entität in Common Data Service mithilfe von Power Query)](../../maker/common-data-service/data-platform-cds-newentity-pq.md).
+Sie können neue Entitäten erstellen und mithilfe von Power Query mit Daten auffüllen. Weitere Informationen finden Sie unter [Hinzufügen von Daten zu einer Entität in Common Data Service für Apps mithilfe von Power Query](../../maker/common-data-service/data-platform-cds-newentity-pq.md).
 
 ### <a name="use-metadata-services"></a>Verwenden von Metadatendiensten
 

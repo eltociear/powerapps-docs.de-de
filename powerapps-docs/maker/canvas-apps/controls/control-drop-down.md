@@ -9,27 +9,31 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.openlocfilehash: 9b26af9a2a1fb9b187023ec3ccc9cd86580aa4cf
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39017914"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075378"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Dropdown-Steuerelement in PowerApps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.
 
 ## <a name="description"></a>Beschreibung
-Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für umfangreiche Listen. Das Steuerelement beansprucht nur eine Zeile, bis der Benutzer den Abwärtspfeil auswählt, um weitere Optionen einzublenden.
+Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für umfangreiche Listen. Das Steuerelement beansprucht nur eine Zeile, bis der Benutzer den Abwärtspfeil auswählt, um weitere Optionen einzublenden.  Das Steuerelement zeigt maximal 500 Elemente an.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
+**[Default](properties-core.md)**: Der Anfangswert eines Steuerelements, bevor der Benutzer einen anderen Wert angibt.
 
-**[Items](properties-core.md)** – Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+**[Items](properties-core.md)**: Die Datenquelle, welche die im Steuerelement angezeigten Elemente enthält. Wenn die Quelle mehrere Spalten besitzt, stellen Sie die **Value**-Eigenschaft des Steuerelements auf die Datenspalte ein, die Sie anzeigen möchten.
+  
+**Value**: Die Datenspalte, die Sie im Steuerelement anzeigen möchten (z.B., wenn eine Datenquelle mehrere Spalten besitzt).
 
-[!INCLUDE [long-items](../../../includes/long-items.md)]
-
-**Selected** – Das ausgewählte Element.
+**Selected**: Das ausgewählte Element.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
@@ -117,24 +121,33 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein **[Schaltflächen](control-button.md)**-Steuerelement hinzu, und konfigurieren Sie seine **[Text](properties-core.md)**-Eigenschaft für das Anzeigen von **Collect**.
-   
-    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-2. Legen Sie die **[OnSelect](properties-core.md)**-Eigenschaft des **[Schaltflächen](control-button.md)**-Steuerelements auf die folgende Formel fest:
-   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-   
-    Benötigen Sie weitere Informationen zur **[ClearCollect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
-3. Drücken Sie F5, klicken oder tippen Sie auf das **[Button](control-button.md)**-Steuerelement (Schaltfläche), und drücken Sie dann ESC.
-4. Fügen Sie ein **Dropdown**-Steuerelement hinzu, weisen Sie ihm den Namen **Countries** hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diese Formel fest:
-   <br>**Distinct(CityPopulations, Country)**
-5. Fügen Sie ein **Textkatalog**-Steuerelement in vertikaler/Hochformat-Ausrichtung ein, und legen Sie dessen **[Items](properties-core.md)**-Eigenschaft auf diese Formel fest:
-   <br>**Filter(CityPopulations, Countries.Selected.Value in Country)**
-6. Geben Sie im ersten Element des **Textkatalog**-Steuerelements für die **[Text](properties-core.md)**-Eigenschaft im oberen **[Label](control-text-box.md)**-Steuerelement den Wert **ThisItem.City** an. Löschen Sie anschließend das untere **[Label](control-text-box.md)**-Steuerelement.
-7. Geben Sie für die **[TemplateSize](control-gallery.md)**-Eigenschaft des **Textkatalog**-Steuerelements den Wert **80** an.
-8. Drücken Sie F5 und klicken oder tippen Sie auf den Abwärtspfeil in der Liste **Countries**. Wählen Sie dann eine Option aus der Liste aus.
-   
-    Im **Textkatalog**-Steuerelement werden nur Städte angezeigt, die sich im ausgewählten Land befinden.
 
+### <a name="simple-list"></a>Einfache Liste
+
+1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diesen Ausdruck fest:
+
+    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+
+    Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
+
+1. Zeigen Sie die Elemente in der Liste an, indem Sie auf den Abwärtspfeil des Steuerelements klicken und gleichzeitig die ALT-Taste drücken.
+
+### <a name="list-from-a-data-source"></a>Liste aus einer Datenquelle
+Die Prinzipien in diesem Verfahren gelten für jede [Datenquelle, die Tabellen enthält (data source that provides tables)](../connections-list.md#tables). Um diese Schritte jedoch genau auszuführen, müssen Sie eine Umgebung öffnen, für die eine Datenbank für Common Data Service für Apps erstellt wurde und Beispieldaten hinzugefügt wurden.
+
+1. [Öffnen einer leeren App](../data-platform-create-app-scratch.md#open-a-blank-app) (Open a blank app), dann [Angeben des **(specify the )** Elements](../data-platform-create-app-scratch.md#specify-an-entity) (entity) des Kontos.
+
+1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diese Formel fest:
+
+    ```Distinct(Accounts, address1_city)```
+
+    Diese Formel zeigt alle Städte in dem Element **Konten** (Accounts) an. Wenn mehr als ein Datensatz die gleiche Stadt besitzt, versteckt die **[Distinct](../functions/function-distinct.md)**-Funktion die Duplizierung in Ihrem Dropdown-Steuerelement.
+
+1. (optional) Benennen Sie Ihr **Dropdown**-Steuerelement in **Cities** (Städte) um, fügen Sie ein vertikales **Gallery**-Steuerelement (Katalog) hinzu, und legen Sie die **[Items](properties-core.md)**-Eigenschaft des Katalogs auf diese Formel fest:
+
+    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+
+    Diese **[Filter](../functions/function-filter-lookup.md)**-Funktion zeigt nur die Datensätze im **Accounts**-Element (Konten) an, bei denen die Stadt zu dem ausgewählten Wert im Steuerelement **Cities** (Städte) passt.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
