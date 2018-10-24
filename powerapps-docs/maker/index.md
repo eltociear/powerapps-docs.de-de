@@ -9,14 +9,15 @@ ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 3d95f017b064f61a539906268ebb73fff1e1d04f
-ms.sourcegitcommit: b9fa569153924af9815db45d52c04e764ddb7fa2
+ms.openlocfilehash: bcba4a6142299d253c484c0af46afad091735e80
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39094608"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49636373"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Übersicht über das Erstellen von Apps in PowerApps
+
 Bei PowerApps handelt es sich um eine produktive Entwicklungsplattform für Geschäfts-Apps, die aus drei wesentlichen Komponenten besteht:
 
 - Bei [Canvas-Apps](canvas-apps/getting-started.md) beginnen Sie mit der Benutzeroberfläche, erstellen eine stark angepasste, leistungsfähige Schnittstelle und verbinden diesen mit Ihrer Auswahl aus 200 Datenquellen. Sie können Canvas-Apps für mobile Anwendungen sowie für Web- und Tabletanwendungen erstellen.
@@ -26,6 +27,7 @@ Bei PowerApps handelt es sich um eine produktive Entwicklungsplattform für Gesc
 Sie können Ihre erste App schnell und einfach erstellen. Es gibt einen 30-tägigen Testplan und einen kostenlosen Communityplan. Finden Sie heraus, welcher Plan am besten zu Ihnen passt, und legen Sie los.
 
 ## <a name="canvas-apps"></a>Canvas-Apps
+
 Canvas-Apps bieten Ihnen die Flexibilität, die Benutzeroberfläche und Servicequalität nach Ihren Vorstellungen zu gestalten. Lassen Sie sich bei der Optik und dem Verhalten Ihrer Apps von Ihrer Kreativität und Ihrem Geschäftssinn leiten.
 
 Sie können Ihre App mithilfe der Microsoft-Tools erstellen, in denen sich Ihre Daten befinden, z.B.:
@@ -42,6 +44,7 @@ Das Erstellen einer Canvas-App ist einfach. Mit PowerApps können Sie Ihre App a
 - [Über AppSource](../user/app-source.md)
 
 ## <a name="model-driven-apps"></a>Modellgesteuerte Apps
+
 Wenn Sie eine modellgesteuerte App erstellen, können Sie die gesamte Leistungsfähigkeit von Common Data Service verwenden, um Ihre Formulare, Geschäftsregeln und Prozessabläufe schnell zu konfigurieren. Eine modellgesteuerte App wird über die PowerApps-Website erstellt.
 
 Die ersten Schritte mit modellgesteuerten Apps sind einfach. Sie können mit folgenden Themen beginnen:
@@ -55,16 +58,28 @@ Die ersten Schritte mit modellgesteuerten Apps sind einfach. Sie können mit fol
 - [Hinzufügen von Geschäftslogik](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
 ## <a name="common-data-service-for-apps"></a>Common Data Service für Apps
+
 Mit Common Data Service können Sie Daten sicher innerhalb von Standardentitäten und benutzerdefinierten Entitäten speichern und verwalten. Sie können nach Bedarf ebenfalls Felder zu diesen Entitäten hinzufügen.
 
 Die ersten Schritte mit Common Data Service sind einfach. Sie können beispielsweise mit folgenden Elementen beginnen:
+
 - [Erstellen einer benutzerdefinierten Entität](common-data-service/data-platform-create-entity.md)
 - [Verwalten von Feldern](common-data-service/data-platform-manage-fields.md)
 - [Erstellen von benutzerdefinierten Optionen](common-data-service/custom-picklists.md)
-- [Erstellen von Geschäftsregeln](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+- [Create a business rule (Erstellen einer Geschäftsregel)](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+
+## <a name="canvas-and-model-driven-artifacts"></a>Canvas-Apps und modellgesteuerte Artefakte
+
+Während wir die Funktionen von Canvas-Apps und modellgesteuerten Apps zusammenführen, sind diese Artefakte entweder für Canvas-Apps oder modellgesteuerte Apps relevant.
+
+| Artefakt            | App-Typ     |
+|---------------------|--------------|
+| Entität > Ansichten      | Modellgesteuert |
+| Entität > Formulare      | Modellgesteuert |
+| Entität > Dashboards | Modellgesteuert |
+| Verbindungen         | Zeichenbereich       |
+| Gateways            | Zeichenbereich       |
+| Benutzerdefinierte Connectors   | Zeichenbereich       |
+| Apps > Importieren       | Zeichenbereich       |
 
 Nachdem Sie Ihre App erstellt haben, können Sie diese für Ihre Teammitglieder [freigeben](canvas-apps/share-app.md).
-
-
-
-
