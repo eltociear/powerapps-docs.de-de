@@ -1,6 +1,6 @@
 ---
-title: Definieren Sie Rollup-Felder mit PowerAppss | MicrosoftDocs
-description: 'Hier erfahren Sie, wie Sie Rollup-Felder definieren'
+title: Definieren von Rollupfeldern mit PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Rollupfelder definiert werden.
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
@@ -9,208 +9,208 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ff0504a1-01bd-4f9b-b884-7f84911d86c3
 caps.latest.revision: 58
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: c76162747ac2bda27c46895290e5943b7f46739f
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39682522"
 ---
+# <a name="define-rollup-fields-that-aggregate-values"></a>Definieren von Rollupfeldern, die Werte aggregieren
 
-# <a name="define-rollup-fields-that-aggregate-values"></a>Definition von Rollupfeldern, die Werte aggregieren
+Mithilfe von Rollupfeldern können Benutzer durch die Überwachung wichtiger Geschäftsmetriken Erkenntnisse aus Daten gewinnen. Ein Rollupfeld enthält einen Aggregatwert, der über die Datensätze im Zusammenhang mit einem bestimmten Datensatz berechnet wird. Dies schließt reguläre Entitäten und Aktivitätsentitäten wie E-Mails und Termine ein.
 
-Rollupfelder helfen Benutzern, Einblicke in die Daten zu erhalten, indem Sie Schlüsselunternehmensmetriken überwachen. Ein Rollupfeld enthält einen Gesamtwert, der über die Datensätze berechnet wird, die mit einem bestimmten Datensatz verknüpft sind. Dies umfasst reguläre Entitäten und Aktivitätsentitäten wie E-Mails und Termine.
-
-In den komplexeren Szenarien können Sie Daten über die Hierarchie von Datensätzen aggregieren. Wenn Sie Administrator oder Anpasser sind, können Sie Rollupfelder definieren, mithilfe der Anpassungstools in PowerApps, ohne dass hierfür Code geschrieben werden muss.  
+In komplexeren Szenarien können Sie Daten über die Hierarchie der Datensätze aggregieren. Als Administrator oder Anpasser können Sie mithilfe der Anpassungstools Rollupfelder in PowerApps definieren, ohne Code schreiben zu müssen.  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  
-## <a name="rollup-fields-benefits-and-capabilities"></a>Vorzüge und Funktionen der Rollupfelder  
+## <a name="rollup-fields-benefits-and-capabilities"></a>Vorteile und Möglichkeiten von Rollupfeldern  
 
-Die Vorzüge und Fähigkeiten von Rollupfeldern sind Folgende:  
+Zu den Vorteilen und Möglichkeiten von Rollupfeldern zählt Folgendes:  
   
-- Sichtbearbeitung ist einfach. Sie können die Rollupfelder erstellen, indem Sie den Feld-Editor verwenden, genauso wie wenn Sie ein normales Feld erstellen.  
-- Breite Auswahl von Aggregatfunktionen. Sie können Daten aggregieren, indem Sie die folgenden Funktionen nutzen: `SUM`, `COUNT`, `MIN`, `MAX` und `AVG`.  
-- Vollständiger Filtersupport für Aggregation. Sie können verschiedene Filter für die Quellentität oder verknüpfte Entität beim Festlegen mehrerer Bedingungen festlegen.  
-- Nahtlose Integration mit der Benutzeroberfläche. Sie können die Rollupfelder in Formulare, Ansichten, Diagramme und Berichte einschließen.  
-- Rollupfelder sind Lösungskomponenten. Sie können die Rollupfelder einfach als Komponenten zwischen Umgebungen transportieren und sie in Lösungen verteilen.  
-- Rollupfelder und die berechneten Felder sind gegenseitig komplementär. Sie können ein Rollpfeld im Rahmen einesberechneten Felds verwenden und umgekehrt.  
-- Sie können Sie Rollup-Felder konfigurieren, um benutzerdefinierte Steuerelemente zu verwenden.  
+- Einfache visuelle Bearbeitung. Mithilfe des Feld-Editors können Sie Rollupfelder erstellen, ganz so, als ob Sie ein reguläres Feld erstellen würden.  
+- Große Auswahl von Aggregatfunktionen. Mithilfe der folgenden Funktionen können Sie Daten aggregieren: `SUM`, `COUNT`, `MIN`, `MAX` und `AVG`.  
+- Umfassende Filterunterstützung für die Aggregation. Sie können beim Festlegen mehrerer Bedingungen verschiedene Filter für die Quellentität oder eine verknüpfte Entität festlegen.  
+- Nahtlose Integration in die Benutzeroberfläche. Sie können die Rollupfelder in Formulare, Ansichten, Diagramme und Berichte einfügen.  
+- Rollupfelder sind Lösungskomponenten. Sie können Rollupfelder problemlos als Komponenten zwischen Umgebungen verschieben und diese in Lösungen verteilen.  
+- Rollupfelder und berechnete Felder ergänzen sich gegenseitig. Sie können ein Rollupfeld als Bestandteil des berechneten Felds verwenden und umgekehrt.  
+- Sie können Rollupfelder für die Verwendung von benutzerdefinierten Steuerelementen konfigurieren.  
   
- Einige Beispiele von Rollupfeldern sind:  
+ Zu Rollupfeldern gehören beispielsweise Folgende:  
   
-- Gesamter geschätzter Umsatz der offenen Verkaufschancen eines Kontos  
-- Gesamter geschätzter Umsatz aus offenen Verkaufschancen in allen Konten in einer Hierarchie  
-- Gesamter geschätzter Umsatz einer Verkaufschance einschließlich untergeordneter Verkaufschancen  
-- Gesamter geschätzter Wert der qualifizierten Leads, die durch eine Kampagne generiert wurden  
-- Anzahl der offenen Anfragen mit hoher Priorität für alle Konten in einer Hierarchie  
-- Früheste erstellte Zeit aller offenen Anfragen mit hoher Priorität für ein Konto  
+- Geschätzter Gesamtumsatz der offenen Verkaufschancen einer Firma  
+- Geschätzter Gesamtumsatz der offenen Verkaufschancen aller Firmen in einer Hierarchie  
+- Geschätzter Gesamtumsatz einer Verkaufschance, einschließlich untergeordneter Verkaufschancen  
+- Geschätzter Gesamtwert der qualifizierten Leads, die durch eine Kampagne generiert wurden  
+- Anzahl der offenen Fällen mit hoher Priorität für alle Firmen in einer Hierarchie  
+- Früheste Erstellungszeit aller offenen Fälle mit hoher Priorität für eine Firma  
   
-Jedes Rollupfeld erstellt zwei zusätzliche Felder mit dem Suffixmuster *&lt;fieldname&gt;*`_date` und *&lt;fieldname&gt;*`_state`. Das `_date`-Feld enthält Datum-Zeit-Daten und das `_state` Feld enthält Ganzzahldaten. Das Feld `_state` hat folgende Werte:  
+Jedes Rollupfeld erstellt zwei zusätzliche Felder mit dem Suffixmuster *&lt;Feldname&gt;*`_date` und *&lt;Feldname&gt;*`_state`. Das Feld `_date` enthält DateTime-Daten, während das Feld `_state` Integer-Daten enthält. Das Feld `_state` enthält die folgenden Werte:  
   
-|Value|Status|Beschreibung|  
+|Wert|Status|Beschreibung|  
 |-|-|-|  
-|0|NotCalculated|Der Feldwert muss noch berechnet werden.|  
-|1|Calculated|Der Feldwert wurde anhand der letzten Aktualisierungszeit im Feld _date Gebiet berechnet.|  
-|2|OverflowError|Die Feldwertberechnung ergab einen Überlauffehler.|  
-|3|OtherError|Fehler bei der Berechnung des Feldwerts aufgrund eines internen Fehlers. Bei der folgenden Ausführung des Berechnungsauftrags wird er wahrscheinlich behoben.|  
-|4|RetryLimitExceeded|Die Feldwertberechnung schlug fehl, weil die maximale Anzahl von Wiederholungsversuchen, den Wert zu berechnen aufgrund der großen Anzahl von Parallelitäts- und Sperrkonflikte überschritten wurde.|  
-|5|HierarchicalRecursionLimitReached|Die Feldwertberechnung schlug fehl, da die maximale Hierarchientiefengrenze für die Berechnung erreicht wurde.|  
-|6|LoopDetected|Die Feldwertberechnung schlug fehl, da eine Schleife in der Hierarchie des Datensatzes erkannt wurde.|  
+|0|NotCalculated|Der Wert des Felds ist noch nicht berechnet.|  
+|1|Berechnet|Der Wert des Felds wurde zum Zeitpunkt der letzten Aktualisierung im Feld „_date“ berechnet.|  
+|2|OverflowError|Die Berechnung des Feldwerts hat zu einem Überlauffehler geführt.|  
+|3|OtherError|Bei der Berechnung des Feldwerts ist ein interner Fehler aufgetreten. Dieser wird aller Wahrscheinlichkeit nach durch die folgende Ausführung des Berechnungsauftrags behoben.|  
+|4|RetryLimitExceeded|Bei der Berechnung des Feldwerts ist ein Fehler aufgetreten, da die maximale Anzahl von Wiederholungsversuchen zur Berechnung des Werts aufgrund einer hohen Anzahl von Parallelität und Sperrkonflikten überschritten wurde.|  
+|5|HierarchicalRecursionLimitReached|Bei der Berechnung des Feldwerts ist ein Fehler aufgetreten, da der maximale Hierarchietiefenwert für die Berechnung erreicht wurde.|  
+|6|LoopDetected|Bei der Berechnung des Feldwerts ist ein Fehler aufgetreten, da eine rekursive Schleife in der Hierarchie des Datensatzes erkannt wurde.|  
   
 <a name="BKMK_calculations"></a>  
  
 ## <a name="rollup-calculations"></a>Rollupberechnungen  
 
-Die Rollups werden nach geplanten Systemaufträgen berechnet, die asynchron im Hintergrund ausgeführt werden. Sie müssen ein Administrator sein, um die Rollupaufträge, anzeigen und verwalten zu können. 
+Die Rollups werden durch geplante Systemaufträge berechnet, die asynchron im Hintergrund ausgeführt werden. Sie müssen ein Administrator sein, um die Rollupaufträge anzeigen und verwalten zu können. 
 
-### <a name="view-rollup-jobs"></a>Rollup-Aufträge anzeigen
+### <a name="view-rollup-jobs"></a>Anzeigen von Rollupaufträgen
 
-So zeigen Sie Rollup-Aufträge an:
+Um Rollupaufträge anzuzeigen, gehen Sie wie folgt vor:
 
-1. Beim Anzeigen der **Common Data Services-Standardlösung** bearbeiten Sie die URL und entfernen alles nach `dynamics.com` und aktualisieren die Seite.
-2. Wählen Sie im Bereich **Einstellungen** auf die Option **System** > **Systemaufträge**.<br />![Navigieren zu Systemaufträgen](media/navigate-system-jobs.png)
-1. In der Ansichtsauswahl wählen Sie **Seriensystemaufträge** aus.
-2. Um einen relevanten Vorgang schnell zu finden, können Sie nach dem Systemauftragstyp filtern: **Rollupfeld Massenberechnung** oder **Rollupfeld Neuberechnung**.
+1. Beim Anzeigen der **Common Data Services-Standardlösung** bearbeiten Sie die URL, entfernen alles nach `dynamics.com` und aktualisieren die Seite.
+2. Klicken Sie im Bereich **Einstellungen** auf **System** > **Systemaufträge**.<br />![Navigation zu „Systemaufträge“](media/navigate-system-jobs.png)
+1. Klicken Sie in der Ansichtsauswahl auf **Seriensystemaufträge**.
+2. Um schnell einen relevanten Auftrag zu finden, können Sie nach dem Typ „Systemauftrag“ filtern: **Massenberechnung des Rollupfelds** oder **Rollupfeld berechnen**.
  
 ### <a name="mass-calculate-rollup-field"></a>Massenberechnung des Rollupfelds
 
-**Rollupfeld-Massenberechnung** sind ein iterativer Vorgang, der pro Rollupfeld erstellt wird. Er wird einmal ausgeführt, wenn Sie ein Rollupfeld erstellt oder aktualisiert haben. Der Vorgang berechnet den angegebenen Rollupfeldwert in allen vorhandenen Datensätzen neu, die dieses Feld enthalten. Standardmäßig wird der Vorgang 12 Stunden, nachdem Sie ein Feld erstellt oder aktualisiert haben, ausgeführt. Wenn der Vorgang abgeschlossen ist, wird automatisch geplant, ihn in der ferneren in der Zukunft, in 10 Jahren, auszuführen. Wenn das Feld geändert wird, wird der Vorgang zurückgesetzt, um 12 Stunden nach dem Update erneut ausgeführt zu werden. Die 12-stündige Verzögerung ist erforderlich, um zu gewährleisten, dass das **Massenberechnungs-Rollupfeld** nicht in den Umgebungsbetriebsstunden ausgeführt wird. Es wird empfohlen, dass ein Administrator die Startzeit des **Massenberechnungs-Rollupfeld**-Auftrags anpasst, nachdem das Rollupfeld erstellt oder geändert wurde, sodass er in Nicht-Betriebsstunden ausgeführt wird. Beispielsweise ist Mitternacht eine gute Zeit, um den Auftrag zu aktivieren, um eine effizienten Verarbeitung der Rollupfelder zu gewährleisten.  
+**Massenberechnung des Rollupfelds** ist ein Serienauftrag, der pro Rollupfeld erstellt wird. Er wird einmal ausgeführt, nachdem Sie ein Rollupfeld erstellt oder aktualisiert haben. Der Auftrag berechnet den angegebenen Wert des Rollupfelds in allen bereits vorhandenen Datensätzen neu, die dieses Feld enthalten. Standardmäßig wird der Auftrag 12 Stunden nach der Erstellung oder Aktualisierung eines Felds ausgeführt. Wenn der Auftrag abgeschlossen ist, wird er automatisch für die Ausführung in ferner Zukunft (ungefähr in 10 Jahren) geplant. Wenn das Feld geändert wird, wird der Auftrag für die erneute Ausführung 12 Stunden nach dem Update zurückgesetzt. Die 12-Stunden-Verzögerung ist erforderlich, um sicherzustellen, dass **Massenberechnung des Rollupfelds** außerhalb der Betriebszeit der Umgebung ausgeführt wird. Ein Administrator sollte die Startzeit eines Auftrags vom Typ **Massenberechnung des Rollupfelds** anpassen, nachdem das Rollupfeld erstellt oder geändert wurde, sodass dieser außerhalb der Betriebszeiten ausgeführt wird. Um eine effiziente Verarbeitung der Rollupfelder sicherzustellen, wäre beispielsweise Mitternacht ein guter Zeitpunkt für die Auftragsausführung.  
 
 ### <a name="calculate-rollup-field"></a>Rollupfeld berechnen 
 
-**Rollupfelder berechnen** ist ein iterativer Auftrag, der inkrementelle Berechnungen aller Rollupfelder in den vorhandenen Datensätzen für eine bestimmte Entität ausführt. Es gibt nur einen Auftrag **Rollupfeldfeld berechnen** pro Entität. Die inkrementellen Berechnungen bedeuten, dass der **Rollupfeld berechnen**-Auftrag die Datensätze verarbeitet, die nach der letzten abgeschlossenen Ausführung des **Massenberechnungs-Rollupfeldes** erstellt, aktualisiert oder gelöscht wurden. Die standardmäßige maximale Wiederholungseinstellung ist auf eine Stunde festgelegt. Der Auftrags wird automatisch erstellt, wenn das erste Rollupfeld für eine Entität erstellen und gelöscht wird, wenn die letzte Rollupfeld gelöscht wird.  
+**Rollupfeld berechnen** ist ein Serienauftrag, der inkrementelle Berechnungen von allen Rollupfeldern in den vorhandenen Datensätzen für eine bestimmte Entität ausführt. Es gibt nur einen Auftrag vom Typ **Rollupfeld berechnen** pro Entität. Inkrementelle Berechnungen bedeuten, dass der Auftrag vom Typ **Rollupfeld berechnen** die Datensätze verarbeitet, die nach der letzten Ausführung des Auftrags **Massenberechnung des Rollupfelds** erstellt, aktualisiert oder gelöscht wurden. Für die maximale Anzahl von Wiederholungen ist standardmäßig eine Stunde festgelegt. Der Auftrag wird automatisch erstellt, wenn das erste Rollupfeld für eine Entität erstellt und gelöscht und das letzte Rollupfeld gelöscht wird.  
 
-## <a name="online-recalculation-option"></a>Online-Neuberechnungsoption
-Wenn Sie den Mauszeiger über dem Rollupfeld auf dem Formular bewegen, können Sie die Zeit des letzten Rollups sehen, und Sie können den Rollupwert aktualisieren, indem sie auf das Aktualisierungssymbol neben dem Feld klicken, wie unten gezeigt:  
+## <a name="online-recalculation-option"></a>Onlineneuberechnungsoption
+Wenn Sie mit dem Mauszeiger auf das Rollupfeld im Formular zeigen, können Sie den Zeitpunkt des letzten Rollups sehen und den Rollupwert durch Klicken auf das Aktualisierungssymbol neben dem Feld aktualisieren. Dies wird nachfolgend veranschaulicht:  
 
-![Rollupfeld auf dem Firmenformular](media/rollup-field-on-account-form.png)
+![Rollupfeld im Firmenformular](media/rollup-field-on-account-form.png)
   
 
-Es gibt einige Gesichtspunkte, an die Sie denken sollten, wenn Sie die Online-Neuberechnungsoption verwenden (das Formular manuell aktualisieren):  
+Es gibt einige Überlegungen, die Sie bei der Verwendung der Onlineneuberechnungsoption (manuelle Aktualisierung des Formulars) bedenken sollten:  
   
-- Sie müssen Schreibrechte für die Entität und Schreibzugriffsrechte im Quelldatensatz haben, für den Sie die Aktualisierung anfordern. Wenn Sie z. B. den geschätzten Umsatz aus den offenen Verkaufschancen eines Kontos berechnen, müssen Sie nicht die Schreibrechte für die Verkaufschancenentität haben, nur für die Kontoentität.  
-- Diese Option ist nur im Onlinemodus verfügbar. Sie können diese nicht im Offlinemodus verwenden.  
-- Die maximale Anzahl von Datensätzen während der Rollupaktualisierung ist auf 50.000 Datensätze beschränkt. Im Falle eines hierarchischen Rollups gilt dies für die verknüpften Datensätze in der gesamten Hierarchie. Wenn der Grenzwert überschritten wird, wird eine Fehlermeldung angezeigt: *Es können keine Onlineberechnungen durchgeführt werden, da das Berechnungslimit von 50.000 verknüpften Datensätzen erreicht wurde.* Dieses Limit gilt nicht, wenn der Rollup automatisch durch die Systemaufträge neu berechnet wird.  
-- Die maximale Hierarchientiefe ist auf 10 für den Quelldatensatz beschränkt. Wenn der Grenzwert überschritten wird, wird eine Fehlermeldung angezeigt: *Es können keine Onlineberechnungen durchgeführt werden, da das Hierarchietiefenlimit von 10 für den Quelldatensatz erreicht wurde.* Dieses Limit gilt nicht, wenn der Rollup automatisch durch die Systemaufträge neu berechnet wird.  
+- Sie benötigen Schreibberechtigungen für die Entität und Schreibzugriffsrechte für den Quelldatensatz, für den Sie die Aktualisierung anfordern. Wenn Sie z.B. den geschätzten Umsatz aus den offenen Verkaufschancen einer Firma berechnen, müssen Sie keine Schreibberechtigungen für die Entität der Verkaufschance besitzen, sondern nur für die Firmenentität.  
+- Diese Option ist nur im Onlinemodus verfügbar. Sie kann nicht im Offlinemodus verwendet werden.  
+- Die maximale Anzahl von Datensätzen bei der Aktualisierung des Rollups ist auf 50.000 Datensätze beschränkt. Beim hierarchischen Rollup gilt dies für die verknüpften Datensätze in der gesamten Hierarchie. Wenn das Limit überschritten wird, wird eine Fehlermeldung angezeigt: *Es können keine Onlineberechnungen durchgeführt werden, da das Berechnungslimit für 50.000 verknüpfte Datensätze erreicht wurde.* Dieser Grenzwert gilt nicht, wenn das Rollup von den Systemaufträgen automatisch neu berechnet wird.  
+- Die maximale Hierarchietiefe ist auf 10 für den Quelldatensatz beschränkt. Wenn das Limit überschritten wird, wird eine Fehlermeldung angezeigt: *Es können keine Onlineberechnungen durchgeführt werden, da das Hierarchietiefenlimit für 10 Quelldatensätze erreicht wurde.* Dieser Grenzwert gilt nicht, wenn das Rollup von den Systemaufträgen automatisch neu berechnet wird.  
 
-## <a name="modify-rollup-job-recurrence"></a>Ändern der Rollupauftragswiederholung
+## <a name="modify-rollup-job-recurrence"></a>Ändern der Wiederholungen von Rollupaufträgen
 
-Als Systemadministrator können Sie das Rollupauftragsserienmuster ändern, die Rollupauftrag zurückstellen, anhalten oder fortsetzen. Allerdings können Sie einen Rollupauftrag nicht stornieren oder löschen. 
+Als Systemadministrator können Sie das Serienmuster für Rollupaufträge ändern, verschieben, anhalten oder den Rollupauftrag fortsetzen. Allerdings können Sie keine Rollupaufträge abbrechen oder löschen. 
 
-Um ein Serienmuster zu unterbrechen, zu verschieben, wiederaufnehmen oder zu ändern, gehen müssen Sie die Systemaufträge anzeigen. Weitere Informationen [Anzeigen von Rollupaufträgen](#view-rollup-jobs) 
+Zum Anhalten, Verschieben, Fortsetzen oder Ändern des Wiederholungsmusters müssen Sie die Systemaufträge anzeigen. Weitere Informationen finden Sie unter [Anzeigen von Rollupaufträgen](#view-rollup-jobs). 
 
-Klicken oder tippen Sie auf der Navigationsleiste auf **Aktionen** und wählen Sie die Aktion aus, die angezeigt werden sollen. 
+Wählen Sie auf der Navigationsleiste **Aktionen** und dann die gewünschte Aktion aus. 
 
-Für den Auftrag **Rollupfeld-Massenberechnung** sind die verfügbaren Optionen: **Wiederaufnehmen**, **Zurückstellen** und **Anhalten**. 
+Die verfügbaren Auswahlaktionen für den Auftrag **Massenberechnung des Rollupfelds** lauten: **Fortsetzen**, **Verschieben**, und **Anhalten**. 
 
-Für den Auftrag **Rollupfeld Massenberechnung** sind die verfügbaren Optionen: **Wiederholung ändern**, **Wiederaufnehmen**, **Zurückstellen**, und **Anhalten**.  
+Die verfügbaren Auswahlaktionen für den Auftrag **Rollupfeld berechnen** lauten: **Serie ändern**, **Fortsetzen**, **Verschieben** und **Anhalten**.  
   
 <a name="BKMK_businessscenarios"></a>  
  
 ## <a name="examples"></a>Beispiele 
 
-Betrachten wir einige Beispiele für Rollupfeler. Wir aggregieren Daten für einen Datensatz aus den verknüpften Datensätzen, mit und ohne Hierarchie. Wir aggregieren auch Daten für einen Datensatz aus zugehörigen Aktivitäten und Aktivitäten mit indirektem Bezug auf einen Datensatz über die ActivityParty-Entität. In jedem Beispiel definieren wir das Rollupfeld, indem wir den Feld-Editor verwenden. Wenn Sie den Feld-Editor öffnen, öffnen Sie den Projektmappen-Explorer und erweitern Sie **Komponenten** > .**Entitäten** Wählen Sie die gewünschte Entität und wählen Sie **Felder** aus. Klicken Sie auf **Neu**. Geben Sie im Editor die für das Feld erforderlichen Informationen an, einschließlich **Feldtyp** und **Datentyp**. In **Feldtyp** wählen Sie die Option **Rollup** aus, nachdem Sie den Datentyp ausgewählt haben. Die Datentypen enthalten Dezimalzahlen oder ganze Zahlen, Währung oder Datum/Uhrzeit. Klicken Sie auf die Schaltfläche **Bearbeiten** neben **Feldtyp**. Dadurch gelangen Sie zum Rollupfelddefinitionseditor. Die Rollupfelddefinition besteht aus drei Abschnitten: **Quellentität**, **Verknüpfte Entität** und **Aggregation**.  
+Werfen wir einen Blick auf einige Beispiele für Rollupfelder. Wir aggregieren Daten für einen Datensatz aus den verknüpften Datensätzen mit und ohne Hierarchie. Zudem aggregieren wir Daten für einen Datensatz aus verknüpften Aktivitäten und Aktivitäten, die indirekt mit einem Datensatz über die ActivityParty-Entität verknüpft sind. In jedem Beispiel definieren wir das Rollupfeld mit dem Feld-Editor. Um den Feld-Editor zu öffnen, öffnen Sie den Lösungs-Explorer, und erweitern Sie **Komponenten** > **Entitäten**. Wählen Sie die gewünschte Entität und dann **Felder** aus. Wählen Sie **Neu** aus. Geben Sie im Editor die erforderlichen Informationen für das Feld ein, einschließlich **Feldtyp** und **Datentyp**. Nachdem Sie den Datentyp ausgewählt haben, klicken Sie unter **Feldtyp** auf **Rollup**. Zu den Datentypen zählen „decimal“ oder „integer“, „currency“ und „datetime“. Klicken Sie neben dem **Feldtyp** auf **Bearbeiten**. Dadurch gelangen Sie zum Editor für die Definition von Rollupfeldern. Die Definition von Rollupfeldern besteht aus drei Abschnitten: **Quellentität**, **Verknüpfte Entität** und **Aggregation**.  
   
--   Geben Sie im Abschnitt **Quellentität** die Entität an, für die das Rollup definiert ist, und ob Sie über eine Hierarchie aggregieren. Sie können Filter mit mehreren Bedingungen hinzufügen, um die Datensätze in der Hierarchie anzugeben, die Sie für das Rollup verwenden möchten.  
+-   Im Abschnitt **Quellentität** geben Sie die Entität, für die das Rollupfeld definiert ist, und geben außerdem an, ob Sie über eine Hierarchie aggregieren. Sie können Filter mit mehreren Bedingungen hinzufügen, um Datensätze in der Hierarchie, die Sie für das Rollup verwenden möchten, festzulegen.  
   
--   Geben Sie im Abschnitt **Verknüpfte Entität** der Entität an, über die Sie aggregieren. Dieser Abschnitt ist optional, wenn Sie auswählen, den Rollup über der Hierarchie auf der Quellentität auszuführen. Sie können Filter mit mehreren Bedingungen hinzufügen, um anzugeben, welche verknüpften Datensätze Sie in der Berechnung verwenden möchten. Beispielsweise schließen Sie den Umsatz aus den offenen Verkaufschancen mit einem Jahresumsatz von mehr als $1000 ein.  
+-   Im Abschnitt **Verknüpfte Entität** geben Sie die Entität an, über die Sie aggregieren. Dieser Abschnitt ist optional, wenn Sie das Rollup über die Hierarchie in der Quellentität ausführen. Sie können Filter mit mehreren Bedingungen hinzufügen, um anzugeben, welche verknüpften Datensätze bei der Berechnung verwendet werden sollen. Beispielsweise können Sie die Umsatzerlöse aus den offenen Verkaufschancen mit einem Jahresumsatz von mehr als 1.000 USD einbeziehen.  
   
--   Geben Sie im Abschnitt **Aggregieren** die Metrik an, die Sie berechnen möchten. Sie können verfügbare Aggregatfunktionen, wie SUMME, ANZAHL, MIN, MAX oder DURCHSCHNITT auswählen.  
+-   Im Abschnitt **Aggregieren** geben Sie die Metrik an, die berechnet werden soll. Sie können verfügbare Aggregatfunktionen auswählen, z.B. SUM, COUNT, MIN, MAX oder AVG.  
   
-### <a name="aggregate-data-for-a-record-from-related-records"></a>Daten für einen Datensatz aus verknüpften Datensätzen aggregieren  
+### <a name="aggregate-data-for-a-record-from-related-records"></a>Aggregieren von Daten für einen Datensatz aus verknüpften Datensätzen  
 
-In diesem Beispiel wird eine Hierarchie nicht verwendet. Der gesamte geschätzte Umsatz wird für ein Konto aus den verknüpften offenen Verkaufschancen berechnet.  
+In diesem Beispiel wird keine Hierarchie verwendet. Der geschätzte Gesamtumsatz wird aus den entsprechenden offenen Verkaufschancen für eine Firma berechnet.  
 
-![Geschätzten Umsatz für ein Konto aggregieren](media/rollup-field-no-hierarchy.png)
+![Aggregieren des geschätzten Umsatzes für eine Firma](media/rollup-field-no-hierarchy.png)
   
-### <a name="aggregate-data-for-a-record-from-the-child-records-over-the-hierarchy"></a>Aggregieren von Daten für einen Datensatzes aus den untergeordneten Datensätzen, über die Hierarchie 
+### <a name="aggregate-data-for-a-record-from-the-child-records-over-the-hierarchy"></a>Aggregieren von Daten für einen Datensatz aus untergeordneten Datensätzen über die Hierarchie 
  
-In diesem Beispiel berechnen wir den gesamten geschätzten Umsatz einer Verkaufschance, einschließlich der untergeordneten Verkaufschancen, über die Hierarchie.  
+In diesem Beispiel wird der geschätzte Gesamtumsatz einer Verkaufschance über die Hierarchie berechnet, einschließlich der untergeordneten Verkaufschancen.  
   
-![Geschätzten Umsatz, Verkaufschancenhierarchie aggregieren](media/rollup-field-hierarchy-self.png)
+![Aggregieren des geschätzten Umsatzes, Hierarchie der Verkaufschancen](media/rollup-field-hierarchy-self.png)
   
-### <a name="aggregate-data-for-a-record-from-the-related-records-over-the-hierarchy"></a>Aggregieren von Daten für einen Datensatzes aus den verknüpften Datensätzen, über die Hierarchie
+### <a name="aggregate-data-for-a-record-from-the-related-records-over-the-hierarchy"></a>Aggregieren von Daten für einen Datensatz aus verknüpften Datensätzen über die Hierarchie
 
-In diesem Beispiel berechnen wir den gesamten geschätzten Umsatz offener Verkaufschancen über alle Konten hinweg, über die Hierarchie.  
+In diesem Beispiel wird der geschätzte Gesamtumsatz der offenen Verkaufschancen in allen Firmen über die Hierarchie berechnet.  
   
-![Geschätzten Umsatz über Firmenhierarchie aggregieren](media/rollup-field-hierarchy.png)  
+![Aggregieren des geschätzten Umsatzes über die Firmenhierarchie](media/rollup-field-hierarchy.png)  
   
-### <a name="aggregate-data-for-a-record-from-all-related-activities"></a>Daten für einen Datensatz aus allen verknüpften Aktivitäten aggregieren
+### <a name="aggregate-data-for-a-record-from-all-related-activities"></a>Aggregieren von Daten für einen Datensatz aus allen verknüpften Aktivitäten
   
-In diesem Beispiel berechnen wir die gesamte benötigte und fakturierte Zeit aus allen Aktivitäten in Bezug auf eine Firma. Hierzu zählen ggf. Zeit am Telefon, bei Terminen oder benutzerdefinierten Aktivitäten.  
+In diesem Beispiel wird die gesamte Zeit berechnet, die für alle Aktivitäten im Zusammenhang mit einer Firma aufgewendet und abgerechnet wird. Dies kann die Zeit beinhalten, die für Telefonate, Termine oder benutzerdefinierte Aktivitäten aufgewendet wird.  
   
-In älteren Versionen konnten Sie ein Rollupfeld für eine einzelne Aktivität definieren, z. B. einen Telefonanruf, ein Fax oder einen Termin. Um aber das Ergebnis des nachfolgenden Beispiels sicherzustellen, mussten Sie die Daten mithilfe der berechneten Felder summieren. Nun können Sie alles in einem Schritt ausführen, indem Sie ein Rollupfeld für die Aktivitätsentität definieren.  
+In früheren Releases konnten Sie ein Rollupfeld für eine einzelne Aktivität definieren, z.B. einen Telefonanruf, ein Fax oder einen Termin. Um das Ergebnis des unten stehenden Beispiels jedoch zu erreichen, mussten Sie den Gesamtwert der Daten mithilfe der berechneten Felder berechnen. Nun können Sie all dies in einem einzigen Schritt tun, indem Sie ein Rollupfeld für die Aktivitätsentität definieren.  
   
 ![Rollup aller Aktivitäten für eine Firma](media/rollup-enhancements-activities.png)  
   
-### <a name="aggregate-data-for-a-record-from-all-related-activities-and-activities-indirectly-related-via-the-activity-party-entity"></a>Aggregieren von Daten für einen Datensatz aus allen zugehörigen Aktivitäten und Aktivitäten mit indirektem Bezug über die Aktivitätsparteientität  
+### <a name="aggregate-data-for-a-record-from-all-related-activities-and-activities-indirectly-related-via-the-activity-party-entity"></a>Aggregieren von Daten für einen Datensatz aus allen verknüpften Aktivitäten und Aktivitäten, die indirekt über die Aktivitätsparteientität verknüpft sind  
 
-In diesem Beispiel wird die Gesamtanzahl der E-Mails gezählt, die an eine Firma gesendet werden, wobei die Firma in der "Empfänger (An:)"- oder "Empfänger (Cc)"-Zeile der E-Mail aufgeführt wird. Dies erfolgt durch Angabe von **Teilnahmetyp** in **FILTER** für die Aktivitätsparteientität in der Rollupfelddefinition. Sollen Sie keine Filter verwenden, werden alle verfügbaren Teilnahmetypen für eine Aktivität in der Berechnung verwendet. 
+In diesem Beispiel zählen wir die Gesamtanzahl der an eine Firma gesendeten E-Mails, wobei die Firma in der Zeile „An Empfänger“ oder „Empfänger (Cc:)“ der E-Mail aufgeführt wird. Dies erfolgt durch Angabe von **Teilnahmetyp** unter **FILTER** für die Aktivitätsparteientität in der Definition von Rollupfeldern. Wenn Sie die Filterung nicht verwenden, werden alle verfügbaren Teilnahmetypen für eine Aktivität in der Berechnung verwendet. 
  
-Weitere Informationen zu Aktivitätsparteientität und Teilnahmetypen, die für eine bestimmte Aktivität verfügbar sind, finden Sie unter [Aktivitätsparteientität](/dynamics365/customer-engagement/developer/activityparty-entity).
+Weitere Informationen zur Aktivitätsparteientität und zu den für eine bestimmte Aktivität verfügbaren Teilnahmetypen finden Sie unter [ActivityParty-Entität](/dynamics365/customer-engagement/developer/activityparty-entity).
 
   
-![Mit dem Rollup verknüpfte Aktivitäten und Aktivitätspartei](media/rollup-enhancements-indirect-activities.png)  
+![Mit Rollups verknüpfte Aktivitäten und Aktivitätspartei](media/rollup-enhancements-indirect-activities.png)  
   
-### <a name="aggregate-data-for-a-record-from-related-records-using-the-avg-operator"></a>Daten für einen Datensatz aus verknüpften Datensätzen mit AVG-Operator aggregieren
+### <a name="aggregate-data-for-a-record-from-related-records-using-the-avg-operator"></a>Aggregieren von Daten für einen Datensatz aus verknüpften Datensätzen mithilfe des AVG-Operators
 
-In diesem Beispiel wird ein durchschnittlicher geschätzter Umsatz aus allen Verkaufschancen, die mit einer Firma verknüpft sind, berechnet.  
+In diesem Beispiel wird ein geschätzter durchschnittlicher Umsatz aus allen Verkaufschancen im Zusammenhang mit einer Firma berechnet.  
   
 ![Durchschnittlicher geschätzter Umsatz in Dynamics 365](media/rollup-enhancements-average.PNG)  
   
-Im folgenden Beispiel wird veranschaulicht, wie Sie einen durchschnittlichen geschätzten Umsatz aus verknüpften Verkaufschancen über eine Firmenhierarchie berechnen. Ein durchschnittlicher geschätzter Umsatz kann auf jeder Ebene in der Hierarchie angezeigt werden.  
+Das folgende Beispiel zeigt, wie Sie einen durchschnittlichen geschätzten Umsatz aus verknüpften Verkaufschancen über eine Hierarchie von Firmen berechnen. Der durchschnittlich geschätzte Umsatz kann auf jeder Ebene in der Hierarchie angezeigt werden.  
   
 ![Durchschnittlicher geschätzter Umsatz in Dynamics 365](media/cust-rollup-enhancements-avg-over-hierarchy.png)  
   
 <a name="BKMK_considerations"></a> 
 
-## <a name="rollup-field-considerations"></a>Rollupfeld - Gesichtspunkte 
+## <a name="rollup-field-considerations"></a>Überlegungen zu Rollupfeldern 
 
-Sie sollten bestimmte Bedingungen und Beschränkungen berücksichtigen, wenn Sie mit den Rollupfeldern arbeiten:  
+Bei der Arbeit mit Rollupfeldern sollten Ihnen bestimmte Bedingungen und Einschränkungen bewusst sein:  
   
-- Sie können maximal 100 Rollupfelder für die Organisation und für bis zu 10 Rollupfelder pro Entität definieren.  
-- Ein Workflow kann nicht durch das Rollupfeldupdates gestartet werden.  
-- Eine Workflow-Wartebedingung kann ein Rollupfeld kann nicht verwenden.  
+- Sie können maximal 100 Rollupfelder für die Organisation und bis zu 10 Rollupfelder pro Entität definieren.  
+- Ein Workflow kann nicht durch Aktualisierungen der Rollupfelder ausgelöst werden.  
+- Ein Workflow im Wartezustand kann kein Rollupfeld verwenden.  
 - Ein Rollup über das Rollupfeld wird nicht unterstützt.  
-- Ein Rollup kann nicht auf ein berechnetes Feld verweisen, das ein anderes berechnetes Feld nutze. Dies gilt auch dann, wenn das andere berechnete Feld der aktuellen Entität angehört.  
-- Das Rollup kann nur Filter auf die Quellentität oder verknüpfte Entitäten, einfache Felder oder nicht-komplexe berechnete Felder angewendet werden.  
-- Ein Rollup kann nur über verknüpften Entitäten mit eine 1:N-Beziehung ausgeführt werden. Ein Rollup kann nicht zu N:N-Beziehungen ausgeführt werden.  
-- Ein Rollup kann nicht zur 1:N-Beziehung für die Aktivitätsentität oder die Aktivitätsparteientität ausgeführt werden.  
-- Die Unternehmensregeln, Workflows oder berechneten Felder verwenden immer den letzten berechneten Wert des Rollupfelds.  
-- Ein Rollupfeld wird unter dem Systembenutzerkontext aggregiert. Alle Benutzer können denselben Rollupfeldwert anzeigen. Sie können die Rollupfeldsichtbarkeit mit der Sicherheit auf Feldebene (FLS) steuern, indem Sie einschränken, wer auf das Rollupfeld zugreifen kann. Weitere Informationen:  [Feldsicherheit, um den Zugriff zu steuern](/dynamics365/customer-engagement/admin/field-level-security). 
+- Ein Rollup kann kein berechnetes Feld sein, mit dem ein weiteres berechnetes Feld wird, auch wenn sich alle Felder des berechneten Felds in der aktuellen Entität befinden.  
+- Das Rollup kann nur Filter auf die Quellentität oder verknüpfte Entitäten, einfache Felder oder nicht komplexe berechnete Felder anwenden.  
+- Ein Rollup kann nur über verknüpfte Entitäten mit der 1:n-Beziehung durchgeführt werden. Ein Rollup kann nicht über m:n-Beziehungen ausgeführt werden.  
+- Ein Rollup kann nicht über die 1:n-Beziehung für die Aktivitätsentität oder Aktivitätsparteientität ausgeführt werden.  
+- Die Geschäftsregeln, Workflows oder berechneten Felder verwenden immer den letzten berechneten Wert des Rollupfelds.  
+- Ein Rollupfeld wird im Benutzerkontext des Systems aggregiert. Alle Benutzer können den gleichen Wert des Rollupfelds sehen. Sie können die Sichtbarkeit des Rollupfelds mit der Sicherheit auf Feldebene (Field Level Security, FLS) steuern, indem Sie einschränken, wer auf das Rollupfeld zugreifen kann. Weitere Informationen [Sicherheit auf Feldebene zum Steuern des Zugriffs](/dynamics365/customer-engagement/admin/field-level-security). 
 
-### <a name="precision-rounding"></a>Genaues Runden
+### <a name="precision-rounding"></a>Runden der Genauigkeit
  
-Wenn die Genauigkeit aggregierten Felds größer ist als die Anzahl der Stellen des Rollupfelds, wird die Genauigkeit des aggregierten Felds auf die Anzahl der Stellen des Rollupfelds abgerundet, bevor die Aggregation ausgeführt wird. Um dieses Verhalten vorzuführen, sehen wir uns ein bestimmtes Beispiel an. Angenommen,das Rollupfeld auf der Firmaenentität für die Berechnung des geschätzten Gesamtumsatzes der verknüpften Verkaufschancen hat eine Genauigkeit von zwei Dezimalstellen. Das Feld „Gesch. Umsatz“ für die Verkaufschancenentität ist das aggregierte Feld mit der Genauigkeit von vier Dezimalstellen. In unserem Beispiel hat das Konto zwei verknüpfte Verkaufschancen. Die aggregierte Summe des geschätzten Umsatzes wird berechnet wie folgt:  
+Ist die Genauigkeit des aggregierten Felds größer als die Genauigkeit des Rollupfelds, wird die Genauigkeit des aggregierten Felds auf die Genauigkeit des Rollupfelds abgerundet, bevor die Aggregation durchgeführt wird. Um dieses Verhalten zu veranschaulichen, betrachten wir ein konkretes Beispiel. Nehmen wir an, dass das Rollupfeld für die Firmenentität, das für die Berechnung des gesamten geschätzten Umsatzes der verknüpften Verkaufschancen verwendet wird, eine Genauigkeit von zwei Dezimalstellen aufweist. Das Feld „Gesch. Umsatz“ in der Verkaufschancenentität ist das aggregierte Feld mit einer Genauigkeit von vier Dezimalstellen. In diesem Beispiel verfügt die Firma über zwei verknüpfte Verkaufschancen. Die aggregierte Summe des geschätzten Umsatzes wird wie folgt berechnet:  
   
-1. Gesch. Umsatz für die erste Verkaufschance: 1.000,0041 USD  
-1. Gesch. Umsatz für die zweite Verkaufschance: 2.000,0044 USD  
-1. Aggregierte Summe Gesch. Umsatzerlös: 1000,00 USD + 2000,00 USD = 3000,00 USD
+1. Gesch. Umsatz für die erste Verkaufschance: 1.000,0041 USD  
+1. Gesch. Umsatz für die erste Verkaufschance: 2.000,0044 USD  
+1. Aggregierte Summe des gesch. Umsatzes: 1.000,00 USD + 2.000,00 USD = 3.000,00 USD
 
-Wie Sie sehen, wird die Genauigkeitsrundung auf zwei Dezimalstellen auf dem aggregierten Feld durchgeführt, bevor die Aggregierung ausgeführt wird.  
+Wie Sie sehen können, erfolgt die Rundung der Genauigkeit auf zwei Dezimalstellen für das Aggregatfeld, bevor die Aggregation durchgeführt wird.  
   
-### <a name="different-behavior-from-associated-grids"></a>Unterschiedliches Verhalten der zugeordneten Raster
+### <a name="different-behavior-from-associated-grids"></a>Anderes Verhalten bei zugeordneten Rastern
  
-Bestimmte Entitätsformulare, wie Konto oder Kontakt, enthalten standardmäßig die zugeordneten Raster. Beispielsweise enthält ein Kontaktformular Kontakte, Verkaufschancen, Anfragen und andere Raster. Einige der Datensätze, die in den Kontoformularrastern angezeigt werden, sind direkt mit dem Kontodatensatz verknüpft; andere indirekt über Beziehungen mit anderen Datensätzen. Im Vergleich dazu verwendet die Rollupfeldaggregation nur direkte Beziehungen, die in der Rollupfelddefinition explizit definiert werden. Es werden keine anderen Beziehungen berücksichtigt. Um den Unterschied bezüglich des Verhaltens vorzuführen, sehen ir uns das folgende Beispiel an.  
+Bestimmte integrierte Entitätsformulare, z.B. Firma oder Kontakt, enthalten die zugeordneten Raster. Beispielsweise enthält ein Firmenformular Kontakte, Fälle, Verkaufschancen und andere Raster. Einige der Datensätze, die in den Firmenformularrastern dargestellt werden, beziehen sich direkt auf den Firmendatensatz, wohingegen andere Felder indirekt über die Beziehungen mit anderen Datensätzen dargestellt werden. Im Gegensatz dazu verwendet die Aggregation der Rollupfelder nur direkte Beziehungen, die explizit in der Definition der Rollupfelder definiert sind. Es werden keine anderen Beziehungen berücksichtigt. Um das unterschiedliche Verhalten zu veranschaulichen, sehen wir uns das folgende Beispiel an.  
   
-1. Das Konto A1 hat einen primären Kontakt, P1. Die Anfrage C1 ist dem Konto A1 (C1.Customer-Feld = A1) zugeordnet, und die Anfrage C2 ist dem Kontakt P1 zugeordnet (C2.Customer-Feld = P1).  
-1. Das Raster **Anfragen** im Formular **Konto** für den A1-Datensatz zeigt zwei Anfragen, C1 und C2.  
-1. Das Rollupfeld namens Gesamtzahl der Anfragen in der Kontoentität wird verwendet, um die Anfragen zu zählen, die dem Konto zugeordnet sind.  
-1. In der Konto-Rollupfelddefinition geben wir die Anfragen an, die die Kundenbeziehung mit dem Konto haben. Nach der Aggregation ist die Gesamtzahl der Anfrage gleich 1 (Anfrage C1). Die Anfrage C2 ist in der der Summe nicht enthalten, da sie direkt dem Kontakt, nicht dem Konto zugeordnet ist und nicht in der Konti-Rollupfelddefinition explizit definiert werden kann. Deshalb entspricht die Gesamtzahl der Anfragen, die vom Rollupvorgang zurückgegeben werden, nicht der Anzahl der Anfragen, die im Raster **Anfragen** angezeigt werden.  
+1. Die Firma A1 enthält einen primären Kontakt: P1. Der Fall C1 bezieht sich auf die Firma A1 (Feld „C1.Customer“ = A1) und Fall C2 auf Kontakt P1 (Feld „C2.Customer“ = P1).  
+1. Das Raster **Fälle** im Formular **Firma** für den A1-Datensatz zeigt zwei Fälle an: C1 und C2.  
+1. Über das Rollupfeld für die Firmenentität „Gesamtanzahl der Fälle“ werden die Fälle gezählt, die der Firma zugeordnet sind.  
+1. In der Definition der Firmenrollupfelder geben wir die Fälle an, bei denen eine Kundenbeziehung mit der Firma besteht. Nach der Aggregation beträgt die Gesamtanzahl der Fälle 1 (Fall C1). Fall C2 wird nicht im Gesamtwert berücksichtigt, da er sich direkt auf den Kontakt bezieht, nicht auf die Firma. Zudem kann er nicht explizit in der Definition der Firmenrollupfelder definiert werden. Daher entspricht die Gesamtzahl der Fälle, die vom Rollupvorgang zurückgegeben wird, nicht der Anzahl der Fälle, die im Raster **Fälle** gezeigt wird.  
   
 ### <a name="see-also"></a>Siehe auch  
 
 [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)<br />
-[Definieren berechneter Felder](define-calculated-fields.md)<br />
-[ Verhalten und Format des Datums- und Uhrzeitfelds.](behavior-format-date-time-field.md)<br />
-[Hierarchiebezogene Daten festlegen und abfragen](define-query-hierarchical-data.md)<br />
-[Video: Rollup und berechnete Felder](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
-[Video: Verwenden von Power BI](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)
+[Definieren von berechneten Feldern zur Automatisierung von manuellen Berechnungen](define-calculated-fields.md)<br />
+[Verhalten und Format des Felds „Datum und Uhrzeit“](behavior-format-date-time-field.md)<br />
+[Definieren und Abfragen von hierarchiebezogenen Daten](define-query-hierarchical-data.md)<br />
+[Video: Rollup- und berechnete Felder](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8) (in englischer Sprache)<br />
+[Video: Verwendung von Power BI](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3) (in englischer Sprache)

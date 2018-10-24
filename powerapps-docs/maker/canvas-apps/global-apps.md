@@ -1,6 +1,6 @@
 ---
-title: Globaler Support | Microsoft-Dokumentation
-description: Erstellen Sie Apps, die weltweit verwendet werden.
+title: Integrieren von globaler Unterstützung in Canvas-Apps | Microsoft-Dokumentation
+description: Verwenden Sie PowerApps, um Apps zu erstellen, die weltweit verwendet werden.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/25/2016
 ms.author: gregli
-ms.openlocfilehash: dbca12ff3acc4327f88269a2333fe066c7f2fbec
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39019800"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862574"
 ---
-# <a name="global-support"></a>Globaler Support
-PowerApps ist ein globales Produkt.  Sie können Apps in vielen verschiedenen Sprachen und Regionen erstellen und verwenden.
+# <a name="build-global-support-into-canvas-apps"></a>Integrieren von globaler Unterstützung in Canvas-Apps
+PowerApps ist ein globales Produkt. Sie können Canvas-Apps in vielen verschiedenen Sprachen und Regionen erstellen und verwenden.
 
 Sowohl beim Erstellen als auch beim Ausführen von Apps wurde der von PowerApps angezeigte Text in eine Vielzahl von Sprachen übersetzt.  Menüelemente, Dialogfelder, Menübandregisterkarten und anderer Text wird in Ihrer Muttersprache angezeigt.  Die Eingabe und die Datums- und Zahlenanzeige ist ebenfalls an Ihre bestimmte Sprache und Region angepasst.  Beispielsweise wird in einigen Regionen der Welt „.“ als Dezimaltrennzeichen verwendet, während in anderen Regionen „,“ verwendet wird.  
 

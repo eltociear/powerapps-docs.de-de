@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2018
 ms.author: jdaly
-ms.openlocfilehash: 7f89a74b37ebf322137d680e165c007cd8fa6d26
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7e9e14a9d44a3326fb8ac32b11e46b61cc119c27
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42854436"
 ---
 # <a name="use-common-data-service-for-apps-web-services"></a>Verwenden von Webdiensten für Common Data Service für Apps
 
-Common Data Service für Apps umfasst zwei Webdienste, die Sie zum Interagieren mit Daten verwenden können. Sie können den Webdienst auswählen, der Ihren Anforderungen und Ihren Fähigkeiten am besten entspricht. Weitere Informationen finden Sie unter [Dynamics 365 Customer Engagement Developer Guide: Choose your development style for Dynamics 365 Customer Engagement (Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Flexible Möglichkeiten bei der Entwicklung mit Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/choose-development-style)
+Common Data Service für Apps bietet zwei Webdienste, die Sie zum Interagieren mit Daten verwenden können. Sie können den Webdienst auswählen, der Ihren Anforderungen und Ihren Fähigkeiten am besten entspricht. Weitere Informationen finden Sie unter [Dynamics 365 Customer Engagement Developer Guide: Choose your development style for Dynamics 365 Customer Engagement (Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Flexible Möglichkeiten bei der Entwicklung mit Dynamics 365 Customer Engagement)](/dynamics365/customer-engagement/developer/choose-development-style)
 
 ## <a name="web-api"></a>Web-API
 Bei der Web-API handelt es sich um einen OData v4 RESTful-Endpunkt. Verwenden Sie diese API für alle Programmiersprachen, die HTTP-Anforderungen und die Authentifizierung mit OAuth 2.0 unterstützen.
@@ -84,7 +90,7 @@ Im Folgenden finden Sie zwei Beispiele:
 - Die Anzahl der in einem optionset-Attribut verfügbaren Optionen kann sich ändern. Nehmen Sie dann keine Hardcodierung der Werte in Ihrer Umgebung vor, sondern ziehen Sie andere Optionen in Betracht. Sie könne eine Abfrage des Systems durchführen, um zu ermitteln, ob mit der aktuellen Umgebung andere Optionen möglich sind.
 - Der Anzeigename einer Entität kann verändert werden. Der Standardanzeigename für die Account-Entität lautet *Account* (Konto). Sie könnten diesen Namen in *Company* (Unternehmen) ändern. Wenn Sie einem Benutzer eine Meldung anzeigen wollen und auf den Namen einer Entität verweisen, sollten Sie diese nicht hartcodieren, sondern stattdessen den Wert verwenden, der den Elementen entspricht, die dem Benutzer für gewöhnlich angezeigt werden. Außerdem sollten Sie den Anzeigenamen verwenden, den Sie aus den Entitätsmetadaten abgerufen haben.
 
-Wenn Sie einen grundlegenden Überblick über die Metadaten in dem System haben, hilft Ihnen das dabei, wenn Sie die Funktionsweise der Plattform Common Data Service für Apps analysieren möchten. Die Designer, mit denen Sie Metadaten bearbeiten können, können nicht alle Informationen anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App installieren, die als *Metadata Browser* bezeichnet wird und über die Sie alle ausgeblendeten Eigenschaften von Entitäten und Metadaten, die im System gefunden werden, abrufen können. 
+Gute Kenntnisse der Metadaten im System helfen beim Verstehen der Funktionsweise der Plattform Common Data Service für Apps. Die Designer, mit denen Sie Metadaten bearbeiten können, können nicht alle Informationen anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App installieren, die als *Metadata Browser* bezeichnet wird und über die Sie alle ausgeblendeten Eigenschaften von Entitäten und Metadaten, die im System gefunden werden, abrufen können. 
 
 Weitere Informationen finden Sie unter [Durchsuchen der Metadaten für die Organisation](/dynamics365/customer-engagement/developer/browse-your-metadata).
 

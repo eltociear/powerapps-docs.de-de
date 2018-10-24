@@ -9,17 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/30/2015
 ms.author: lonu
-ms.openlocfilehash: 98407181bc654874d749bb57da22c9fde1259fb6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: c1043d32fc4ab4213d2ac2e690ef69e13fec8ed3
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195494"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42831647"
 ---
 # <a name="create-and-update-a-collection-in-your-app"></a>Erstellen und Aktualisieren einer Sammlung in Ihrer App
 Verwenden Sie eine Sammlung zum Speichern von Daten, die in Ihrer App verwendet werden können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen. Erstellen Sie beispielsweise eine MyImages-Sammlung mit den Abbildungen aller Produkte, die Ihr Unternehmen verkauft. In PowerApps können Sie Ihre MyImages-Sammlung hinzufügen und eine App erstellen, in der alle Abbildungen dieser Produkte angezeigt werden. Sie können aber z.B. auch eine PriceList-Sammlung erstellen, die die Produkte und Preise für jedes Produkt enthält.
-
-Sammlungen lassen sich in PowerApps erstellen und verwenden. Lassen Sie uns loslegen!
 
 ### <a name="prerequisites"></a>Voraussetzungen
 * [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
@@ -28,23 +30,30 @@ Sammlungen lassen sich in PowerApps erstellen und verwenden. Lassen Sie uns losl
 * Bei diesem Vorgang wird die Datei [PriceList.zip](http://pwrappssamples.blob.core.windows.net/samples/PriceList.zip) als Eingabebeispiel verwendet. Die ZIP-Datei enthält eine XML-Datei, die in Excel konvertiert werden kann. Andernfalls liest PowerApps die Dateien in den ZIP-Dateien automatisch und importiert sie erfolgreich. Sie können diese Beispieldaten herunterladen und verwenden oder eigene Daten importieren.
 
 ## <a name="create-a-single-column-collection"></a>Erstellen einer Sammlung mit einer einzigen Spalte
-Die folgenden Schritte zeigen Ihnen, wie Sie in der App eine Sammlung mithilfe der Collect-Funktion erstellen und wie Sie dieser Sammlung Elemente hinzufügen.
+Verwenden Sie die Funktion **Collect**, um eine Sammlung zu erstellen und ihr Elemente hinzuzufügen.
 
-1. Öffnen Sie Ihre App.
-2. Wählen Sie auf der Registerkarte **Insert** (Einfügen) die Option **Text** und anschließend **Input Text** (Texteingabe) aus:  
-   ![][1]  
-3. Wählen Sie in der oberen linken Ecke **Text1** aus, und benennen Sie das Steuerelement in **Destination** (Ziel) um:  
-   ![][2]  
-4. Wählen Sie auf der Registerkarte**Insert** (Einfügen) die Option **Button** (Schaltfläche), um Ihrem Designer ein Schaltflächen-Steuerelement hinzuzufügen. In der Dropdown-Liste wird die Eigenschaft **[OnSelect](controls/properties-core.md)** aufgeführt. Legen Sie sie auf die folgende Funktion fest:  
+1. Wählen Sie in der App auf der Registerkarte **Einfügen** die Option **Text** und dann **Texteingabe** aus.
+
+   ![][1]
+
+1. Wählen Sie in der oberen linken Ecke **Text1** aus, und benennen Sie das Steuerelement in **Destination** (Ziel) um:
+
+   ![][2]
+
+1. Wählen Sie auf der Registerkarte**Insert** (Einfügen) die Option **Button** (Schaltfläche), um Ihrem Designer ein Schaltflächen-Steuerelement hinzuzufügen. In der Dropdown-Liste wird die Eigenschaft **[OnSelect](controls/properties-core.md)** aufgeführt. Legen Sie sie auf die folgende Funktion fest:  
    
     ```Collect(Destinations, Destination!Text)```
    
-    Es sollte wie folgt aussehen:  
-    ![][3]  
-5. Wählen Sie den Text der Schaltfläche, und geben Sie **Add** (Hinzufügen) ein:  
-   ![][5]  
-6. Wählen Sie die Schaltfläche **Add** (Hinzufügen) aus, und verschieben Sie sie unter Ihr Text-Steuerelement. Sie können sie an eine beliebige Stelle verschieben:  
-   ![][6]  
+    Es sollte wie folgt aussehen:
+
+    ![][3]
+
+5. Wählen Sie den Text der Schaltfläche, und geben Sie **Add** (Hinzufügen) ein:
+
+   ![][5]
+
+1. Wählen Sie die Schaltfläche **Add** (Hinzufügen) aus, und verschieben Sie sie unter Ihr Text-Steuerelement. Sie können sie an eine beliebige Stelle verschieben:  
+   ![][6]
 
 In diesem Vorgang haben Sie die Collect-Funktion verwendet, um eine Sammlung mit dem Namen **Destinations** (Ziele) zu erstellen. Außerdem haben Sie ein Schaltflächen-Steuerelement hinzugefügt, das bei Auswahl dieser Option Ihrer Sammlung neue Elemente hinzufügt. Sehen Sie sich an, was Sie erstellt haben:
 

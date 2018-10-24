@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0ffeded77bf08958aaa22c21d33f7063009b4bd
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42868402"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640398"
 ---
 # <a name="label-control-in-powerapps"></a>Label-Steuerelement (Bezeichnung) in PowerApps
 Ein Feld, das Daten wie Text, Zahlen, Datumsangaben oder Währung anzeigt.
@@ -75,6 +75,8 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 **[Italic](properties-text.md)** – Legt fest, ob der Text in einem Steuerelement kursiv formatiert ist.
 
 **[LineHeight](properties-text.md)**: Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
+
+**Live**: Gibt an, wie die Sprachausgabe Änderungen am Bezeichnungstext ankündigt.  Mögliche Werte: **Off**, **Assertive** und **Polite**. Diese Eigenschaft ist nützlich, um dynamische Änderungen an der Benutzeroberfläche der App barrierefrei anzukündigen.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 

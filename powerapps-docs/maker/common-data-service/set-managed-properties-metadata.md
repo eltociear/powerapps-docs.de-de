@@ -1,6 +1,6 @@
 ---
-title: Verwaltete Eigenschaften in Common Data Service for Apps Metadaten | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie verwaltete Eigenschaften für Metadatenelemente in einer Lösung festlegen können.'
+title: Festlegen verwalteter Eigenschaften in Common Data Service für Apps-Metadaten | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie verwaltete Eigenschaften für Metadatenelemente in einer Lösung festlegen.
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,91 +9,92 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: edaa7d4a-a95f-4d66-a9d9-2ad6051332f7
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 46727f5a46e3fd518da52fac7d08a6e43992c00d
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39684562"
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Verwaltete Eigenschaften in Common Data Service for Apps Metadaten 
+# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Festlegen verwalteter Eigenschaften in Common Data Service für Apps-Metadaten 
 
-Verwaltete Eigenschaften gelten nur, wenn Sie Metadaten in einer verwalteten Lösung hinzufügen und in eine andere Umgebung importieren. Diese Einstellungen ermöglichen einem Lösungsentwickler, die Anpassungsmöglichkeiten zu steuern, die Benutzer, die ihre verwaltete Lösung installieren, haben sollen. 
+Verwaltete Eigenschaften gelten nur, wenn Sie einer verwalteten Lösung Metadaten hinzufügen und die Lösung in eine andere Umgebung importieren. Diese Einstellungen ermöglichen einem Lösungsersteller, die Anpassungsmöglichkeiten zu steuern, die Benutzer beim Installieren der verwalteten Lösung haben sollen. 
 
 > [!TIP]
-> Im Allgemeinen ist es eine gute Idee, die Metadaten in Ihrer Lösung, die mit Geschäftsdaten arbeitet, zu erweitern. Dies ermöglicht es ihnen, Ihre Lösung genau so auf ihre Bedürfnisse zuzuschneiden, wie sie es für Standardentitäten können.
+> Es ist im Allgemeinen eine gute Idee, Benutzern zu erlauben, Metadaten in Ihre Lösung zu übernehmen, die mit Geschäftsdaten arbeitet. Damit können sie Ihre Lösung auf die gleiche Weise wie für Standardentitäten ihren Anforderungen anpassen.
 >
->Für Metadaten, die Funktionen zur Unterstützung Ihrer Lösung bieten, aber keine Geschäftsdaten enthalten, ist es eine gute Idee, die zulässigen Anpassungen einzuschränken.
+>Es ist sinnvoll, für Metadaten, die Funktionen zur Unterstützung Ihrer Lösung bereitstellen, aber keine geschäftlichen Daten enthalten, die zulässigen Anpassungen einzuschränken.
 
-Die Einstellung der verwalteten Eigenschaften muss mit Hilfe des Lösungs-Explorers erfolgen.
+Das Festlegen verwalteter Eigenschaften muss mithilfe des Projektmappen-Explorers ausgeführt werden.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-## <a name="entity-managed-properties"></a>Verwaltete Eigenschaften der Entität
+## <a name="entity-managed-properties"></a>Verwaltete Entitätseigenschaften
 
-Während Sie [Entitäten anzeigen](create-edit-entities-solution-explorer.md#view-entities), wählen Sie die Entität aus und dann **Verwaltete Eigenschaften** in der Menüleiste.  Dadurch wird das Dialogfeld **Verwaltete Eigenschaften festlegen** geöffnet.
+Wählen Sie während des **Anzeigens von Entitäten** die Entität und anschließend [Verwaltete Eigenschaften](create-edit-entities-solution-explorer.md#view-entities) in der Menüleiste aus.  Hiermit wird das Dialogfeld **Festlegen von verwalteten Eigenschaften** geöffnet.
 
-![Verwaltete Eigenschaften der Entität festlegen](media/set-managed-properties.png)
+![Festlegen verwalteter Entitätseigenschaften](media/set-managed-properties.png)
   
-Entitäten haben mehr verwaltete Eigenschaften als andere Arten von Lösungskomponenten. Wenn die Entität angepasst werden kann, können Sie die folgenden Optionen einstellen:  
+Entitäten weisen im Vergleich zu allen anderen Lösungskomponenten die meisten verwalteten Eigenschaften auf. Wenn die Entität angepasst werden kann, können Sie folgende Optionen festlegen:  
 
 |Option|Beschreibung|
 |--|--|
-|**Kann angepasst werden** |Steuert alle anderen Optionen. Wenn diese Option `False` ist, gelten keine der anderen Einstellungen. Wenn sie `True` ist, können Sie die anderen Anpassungsoptionen angeben. Bei `False` ist es gleichbedeutend mit dem Setzen aller anderen Optionen auf false.|
-|**Anzeigename kann geändert werden**|Ob der Name der Entitätsanzeige geändert werden kann.|
-|**Ändern zusätzlicher Eigenschaften möglich** |Gilt für alles, was nicht durch andere Optionen abgedeckt ist.|
-|**Neue Formulare können erstellt werden**|Ob neue Formulare für die Entität erstellt werden können.|
-|**Neue Diagramme können erstellt werden**|Ob neue Diagramme für die Entität erstellt werden können.|
-|**Neue Ansichten können erstellt werden** |Ob neue Ansichten für die Entität erstellt werden können.|
-|**Hierarchische Beziehung kann geändert werden**|Ob die Einstellungen für hierarchische Beziehungen geändert werden können. Weitere Informationen: [Definieren und Abfragen von hierarchisch verknüpften Daten](define-query-hierarchical-data.md)|
-|**Kann die Änderungsnachverfolgung aktiviert werden?** |Ob die Entitätseigenschaft **Änderungsnachverfolgung** geändert werden kann.|
-|**Kann Synchronisierung mit externem Suchindex aktivieren** |Ob die Entität zur Aktivierung der Relevanzsuche konfiguriert werden kann. Weitere Informationen: [Konfigurieren Sie die Relevanzsuche, um und die Suchergebnisse und Leistung zu verbessern](/dynamics365/customer-engagement/admin/configure-relevance-search-organization) |
+|**Kann angepasst werden** |Steuert alle anderen Optionen. Wenn diese Option `False` ist, gilt keine der anderen Einstellungen. Wenn sie `True` ist, können Sie die anderen Anpassungsoptionen festlegen. Wenn sie `False` ist, entspricht dies der Festlegung aller anderen Optionen auf „False“.|
+|**Anzeigename kann geändert werden**|Gibt an, ob der Anzeigename der Entität geändert werden kann.|
+|**Ändern zusätzlicher Eigenschaften möglich** |Gilt für alles, was von anderen Optionen nicht behandelt wird.|
+|**Neue Formulare können erstellt werden**|Gibt an, ob neue Formulare für die Entität erstellt werden können.|
+|**Neue Diagramme können erstellt werden**|Gibt an, ob neue Diagramme für die Entität erstellt werden können.|
+|**Neue Ansichten können erstellt werden** |Gibt an, ob neue Ansichten für die Entität erstellt werden können.|
+|**Hierarchische Beziehung kann geändert werden**|Gibt an, ob Einstellungen hierarchischer Beziehungen geändert werden können. Weitere Informationen: [Definieren und Abfragen von hierarchiebezogenen Daten](define-query-hierarchical-data.md)|
+|**Änderungsnachverfolgung kann aktiviert werden** |Gibt an, ob die Entitätseigenschaft **Änderungsnachverfolgung** geändert werden kann.|
+|**Synchronisierung mit externem Suchindex kann aktiviert werden** |Gibt an, ob die Entität für die Relevanzsuche aktiviert werden kann. Weitere Informationen: [Konfigurieren Sie die Relevanzsuche, um Suchergebnisse und Leistung zu verbessern](/dynamics365/customer-engagement/admin/configure-relevance-search-organization) |
 
-## <a name="field-managed-properties"></a>Feld Verwaltete Eigenschaften
+## <a name="field-managed-properties"></a>Verwaltete Feldeigenschaften
 
-Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit PowerApps-Lösungsexplorer](create-edit-field-solution-explorer.md).
+Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit der PowerApps-Projektmappe](create-edit-field-solution-explorer.md).
 
-Wählen Sie beim [Anzeigen von Feldern](create-edit-field-solution-explorer.md#view-fields) ein benutzerdefiniertes Feld aus einer nicht verwalteten Lösung aus, und wählen Sie dann **Weitere Aktionen** >  **Verwaltete Eigenschaften** in der Menüleiste.
+Wählen Sie während des [Anzeigens von Feldern](create-edit-field-solution-explorer.md#view-fields) ein benutzerdefiniertes Feld aus einer nicht verwalteten Lösung und dann **Weitere Aktionen** >  **Verwaltete Eigenschaften** in der Menüleiste aus.
 
-![Feld Verwaltete Eigenschaften anzeigen](media/view-field-managed-properties-solution-explorer.png)  
+![Anzeigen verwalteter Feldeigenschaften](media/view-field-managed-properties-solution-explorer.png)  
   
-Dadurch wird das Dialogfeld **Verwaltete Eigenschaften festlegen** geöffnet.
+Hiermit wird das Dialogfeld **Festlegen von verwalteten Eigenschaften** geöffnet.
 
-![Feld Verwaltete Eigenschaften festlegen](media/set-field-managed-property.png)
+![Festlegen verwalteter Feldeigenschaften](media/set-field-managed-property.png)
 
-Die Option **Kann angepasst werden** steuert alle anderen Optionen. Wenn diese Option **False** ist, gelten keine der anderen Einstellungen. Wenn sie **True** ist, können Sie die anderen Anpassungsoptionen angeben.  
+Die Option **Kann angepasst werden** steuert alle anderen Optionen. Wenn diese Option **False** ist, gilt keine der anderen Einstellungen. Wenn sie **True** ist, können Sie die anderen Anpassungsoptionen festlegen.  
   
-Wenn das Feld anpassbar ist, setzen Sie die folgenden Optionen auf **True** oder **False**.  
+Wenn das Feld angepasst werden kann, legen Sie die folgenden Optionen auf **True** oder **False** fest.  
   
 - **Anzeigename kann geändert werden**
 - **Kann Erforderlichkeitsstufe ändern** 
-- **Kann zusätzliche Eigenschaften ändern** : Diese Eigenschaft steuert alle anderen Anpassungen, die keine bestimmte verwaltete Eigenschaft haben.
+- **Ändern zusätzlicher Eigenschaften möglich**: Diese Eigenschaft steuert alle anderen Anpassungen, die sich nicht auf bestimmte verwaltete Eigenschaften beziehen.
 
-Die Einstellung aller einzelnen Optionen auf **False** ist gleichbedeutend mit der Einstellung **Kann angepasst werden** auf **False**.  
+Alle einzelnen Optionen auf **False** festzulegen, ist gleichbedeutend damit, **Kann angepasst werden** auf **False** festzulegen.  
 
-Übernehmen Sie Ihre Auswahl und klicken Sie auf **Festlegen**, um das Dialogfeld zu schließen.
+Übernehmen Sie Ihre Auswahl, indem Sie zum Schließen des Dialogfelds auf **Festgelegt** klicken.
 
 > [!NOTE]
-> Wenn dieses Feld ein **Datum und Uhrzeit**-Feld ist, steht eine zusätzliche Eigenschaft **Kann das Datums- und Uhrzeitverhalten ändern** zur Verfügung. Weitere Informationen: [Verhalten und Format des Datums- und Uhrzeitfelds](behavior-format-date-time-field.md)
+> Wenn dieses Feld ein **Datum und Uhrzeit**-Feld ist, ist eine zusätzliche Eigenschaft **Datum- und Uhrzeitverhalten kann geändert werden** verfügbar. Weitere Informationen: [Verhalten und Format des Datums- und Uhrzeitfelds](behavior-format-date-time-field.md)
 
-## <a name="relationship-managed-properties"></a>Beziehungsverwaltete Eigenschaften
+## <a name="relationship-managed-properties"></a>Verwaltete Beziehungseigenschaften
 
-Wählen Sie beim Anzeigen von Entitätsbeziehungen eine Beziehung aus einer nicht verwalteten Lösung aus, und wählen Sie dann **Weitere Aktionen** > **Verwaltete Eigenschaften** in der Menüleiste.
+Wählen Sie während des Anzeigens von Entitätsbeziehungen eine Beziehung aus einer nicht verwalteten Lösung und dann **Weitere Aktionen** > **Verwaltete Eigenschaften** in der Menüleiste aus.
   
-Bei Beziehungen ist die einzige verwaltete Eigenschaft **Kann angepasst werden**. Diese Einstellung steuert alle Änderungen, die an der Entitätsbeziehung vorgenommen werden können. 
+Bei Beziehungen kann nur die verwaltete Eigenschaft **Kann angepasst werden** verwendet werden. Diese Einstellung steuert alle Änderungen, die an der Entitätsbeziehung vorgenommen werden können. 
 
 
 ### <a name="see-also"></a>Siehe auch
 
 [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)<br />
-[Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
-[Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
-[Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)
+[Erstellen und Bearbeiten von Entitäten mit dem Projektmappen-Explorer](create-edit-entities-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit der PowerApps-Projektmappe](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von 1:n- oder n:1-Entitätsbeziehungen mit dem Projektmappen-Explorer](create-edit-1n-relationships-solution-explorer.md)<br />
+[Erstellen von n:n-Entitätsbeziehungen in Common Data Service für Apps über den Projektmappen-Explorer](create-edit-nn-relationships-solution-explorer.md)

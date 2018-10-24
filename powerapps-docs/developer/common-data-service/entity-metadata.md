@@ -1,6 +1,6 @@
 ---
 title: Entitätsmetadaten | Microsoft-Dokumentation
-description: Informationen zu Entitätsmetadaten, die in Common Data Service für Apps verwendet werden.
+description: Erfahren Sie mehr über die Entitätsmetadaten, die in Common Data Service für Apps verwendet werden.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,15 +15,21 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/19/2018
 ms.author: jdaly
-ms.openlocfilehash: eb908978eee8d6473a46ca3894cee55ce4b036df
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60fafa90df656bb6d135a8cf7e2c2f3b4f8457da
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42840744"
 ---
 # <a name="entity-metadata"></a>Entitätsmetadaten
 
-Jede Entität bietet die Möglichkeit, strukturierte Daten zu speichern. Für Entwickler entsprechen Entitäten den Klassen, die Sie verwenden, wenn Sie mit Daten in Common Data Service arbeiten.
+Jede Entität bietet die Möglichkeit, strukturierte Daten zu speichern. Für Entwickler entsprechen Entitäten den Klassen, die Sie verwenden, wenn Sie mit Daten in Common Data Service für Apps arbeiten.
 
 ## <a name="entity-names"></a>Entitätsnamen
 Jeder Entität wird bei der Erstellung ein eindeutiger Name zugewiesen. Dieser Name wird auf verschiedene Weisen dargestellt:
@@ -170,7 +176,7 @@ Manche Entitäten verfügen über unterschiedliche Optionen.
 **Beispiel**: Die Optionen `StateCode` und `StatusCode` der `PhoneCall`-Entität
 
 
-|Column1  |Column2  |
+|`StateCode`|`StatusCode`|
 |---------|---------|
 |0: Offen|1: Offen|
 |1: Abgeschlossen|2: Vorgenommen <br />4: Empfangen|

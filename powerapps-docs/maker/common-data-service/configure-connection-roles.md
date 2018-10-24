@@ -1,5 +1,5 @@
 ---
-title: Verbindungsrollen konfigurieren | MicrosoftDocs
+title: Konfigurieren von Verbindungsrollen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
@@ -8,66 +8,67 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: brycho
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 4faf195f1c751e3796267d52725c1cb753c4889d
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39688009"
 ---
-# <a name="configure-connection-roles"></a>Verbindungsrollen konfigurieren
+# <a name="configure-connection-roles"></a>Konfigurieren von Verbindungsrollen
 
-Mit Common Data Service für Apps für können Sie **Verbindungen** zwischen Entitäten definieren, ohne eine Entitätsbeziehung zu erstellen. In Modell-angetriebenen Apps können Personen einem benannten Link zwischen Datensätzen erstellen, um eine weniger formelle Beziehung zu erstellen, die keine tatsächliche Entitätsbeziehung erstellt. Einige Beispiele sind *Freund*, *Geschwister*, *Ehegatte*, *Teilnehmer* und *Stakeholder*. Einige Verbindungen können auch reziprok sein wie *Kind* und *Eltern*, *Ehemann* und *Frau* oder *Doktor* und *Patient*.
+Mit Common Data Service für Apps können Sie **Verbindungen** zwischen Datensätzen von Entitäten definieren, ohne eine Entitätsbeziehung zu erstellen. In modellgesteuerten Apps können Benutzer eine benannte Verknüpfung zwischen Datensätzen erstellen, um eine weniger formale Beziehung einzurichten, die es nicht rechtfertigt, eine tatsächliche Entitätsbeziehung zu erstellen. Beispiele: *Freund*, *Geschwister*, *Ehepartner*, *Teilnehmer* und *Projektbeteiligter*. Einige Verbindungen können auch in Beziehung zueinander stehen, z.B. *Kind* und *Eltern*, *Ehemann* und *Ehefrau* oder *Arzt* und *Patient*.
 
-Wenn Benutzer eine Verbindung zwischen zwei Datensätzen erstellen, können diese eine Beschreibung und eine zusätzliche Informationen wie z. B. Start- und Enddatum für Beziehungen hinzufügen. Weitere Informationen: [Verbindungen erstellen, um Beziehungen zwischen Datensätzen zu definieren und anzuzeigen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records).
+Wenn Benutzer eine Verbindung zwischen zwei Datensätzen herstellen, können sie auch eine Beschreibung und zusätzliche Informationen wie Start- und Enddatum der Beziehung hinzufügen. Weitere Informationen finden Sie unter [Erstellen von Verbindungen zum Festlegen und Anzeigen von Beziehungen zwischen Datensätzen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records).
 
-Jeder Benutzer mit Schreibzugriff zur **Verbindungsrollen**-Entität kann definieren, welche Verbindungen für Benutzer zur Verfügung stehen.
+Jeder Benutzer mit Schreibzugriff auf die Entität **Verbindungsrolle** kann festlegen, welche Verbindungen für Benutzer verfügbar sind.
 
-## <a name="view-connection-roles"></a>Verbindungsrollen anzeigen
+## <a name="view-connection-roles"></a>Anzeigen von Verbindungsrollen
 
-Es gibt mehrere Standardverbindungsrollen, die in den CDS für Apps konfiguriert werden. Um sie anzuzeigen, wechseln Sie zu Einstellungsbereich. 
+Es gibt eine Reihe von Standardverbindungsrollen, die bereits in Common Data Service für Apps konfiguriert sind. Öffnen Sie den Bereich „Einstellungen“, um sie anzuzeigen. 
 
-### <a name="navigate-to-the-settings-area"></a>Navigieren Sie zum Einstellungsbereich
+### <a name="navigate-to-the-settings-area"></a>Navigieren zum Bereich „Einstellungen“
 
-1. Beim Anzeigen einer Modell-angetriebenen App bearbeiten Sie die URL, um alles nach `dynamics.com` zu entfernen und die Seite zu aktualisieren.
-1. Navigieren Sie zu **Einstellungen** > **Geschäftlich** > **Unternehmensmanagement** und dann auf **Verbindungsrollen**.
+1. Bearbeiten Sie beim Anzeigen einer modellgesteuerten App die URL, um alles nach `dynamics.com` zu entfernen, und aktualisieren Sie die Seite.
+1. Navigieren Sie zu **Einstellungen** > **Unternehmen** > **Unternehmensmanagement**, und wählen Sie dann **Verbindungsrollen** aus.
 
-![Verbindungsrollen in den Business Management-Einstellungen](media/navigate-settings-connection-roles.png)
+![Verbindungsrollen in den Einstellungen für „Unternehmensmanagement“](media/navigate-settings-connection-roles.png)
 
-In dieser Ansicht können Sie alle Verbindungsrollen sehen, die für die Umgebung verfügbar sind und Sie können Sie hier bearbeiten.
+In dieser Ansicht sehen Sie die Verbindungsrollen, die für diese Umgebung verfügbar sind. Hier können Sie sie bearbeiten.
 
 > [!NOTE]
-> Wenn Sie Verbindungsrollen mit einer Lösung verteilen möchten, stellen Sie sicher, dass sie in der Lösung enthaltenen sind, die Sie verteilen möchten. Weitere Informationen: [Fügen Sie Verbindungsrollen einer Lösung hinzu](#add-connection-roles-to-a-solution)
+> Wenn Sie Verbindungsrollen mit einer Lösung freigeben möchten, überprüfen Sie, ob sie in der zu verteilenden Lösung enthalten sind. Weitere Informationen finden Sie unter [Hinzufügen von Verbindungsrollen zu einer Lösung](#add-connection-roles-to-a-solution).
 
-## <a name="view-connection-roles-in-the-solution-explorer"></a>Verbindungsrollen im Lösungs-Explorer anzeigen.
+## <a name="view-connection-roles-in-the-solution-explorer"></a>Anzeigen von Verbindungsrollen im Projektmappen-Explorer
 
-Da Verbindungsrollen *Lösungsbewusst* sind, d.h. sie können einer Lösung hinzugefügt werden, können Sie auch Verbindungsrollen einer Lösung zum Verteilen hinzufügen.
+Da Verbindungsrollen *lösungsfähig* sind, d.h. sie können einer Lösung hinzugefügt werden, können Sie Verbindungsrollen auch einer Lösung hinzufügen, die Sie freigeben.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-Die meisten Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen, werden in der *internen* **Standardlösung** definiert (nicht zu verwechseln mit **Common Data Services Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen.
+Die meisten Verbindungsrollen, die im Bereich **Einstellungen** angezeigt werden, werden in der *internen* **Standardlösung** (nicht zu verwechseln mit **Common Data Services-Standardlösung**) definiert. Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie die Ansicht **Alle Lösungen – intern** aus.
 
-## <a name="add-connection-roles-to-a-solution"></a>Verbindungsrollen einer Lösung hinzufügen
+## <a name="add-connection-roles-to-a-solution"></a>Hinzufügen von Verbindungsrollen zu einer Lösung
 
-Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Services  Standardlösung** oder einer anderen Lösung, in der Sie Arbeit erstellt haben, können Sie den Befehl **Bestehendes Hinzufügen** auswählen, um eine Standardverbindungsrolle in die Lösung zu integrieren.
+Generell ist es nicht empfehlenswert, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Services-Standardlösung** oder einer beliebigen Lösung, die Sie erstellt haben, können Sie mit dem Befehl **Vorhandenes Element hinzufügen** eine Standardverbindungsrolle in Ihre Lösung integrieren.
 
-![Bestehende Verbindungsrolle hinzufügen](media/add-existing-connection-role.png)
+![Hinzufügen einer vorhandenen Verbindungsrolle](media/add-existing-connection-role.png)
 
-Nachdem Sie eine entsprechende Verbindungsrolle Ihrer Lösung hinzugefügt haben, können Sie sie ändern, wo sie angezeigt wird.
+Sobald Sie die Verbindungsrolle Ihrer Lösung hinzugefügt haben, können Sie sie bearbeiten, wo sie angezeigt wird.
 
-## <a name="create-or-edit-connection-roles"></a>Erstellen oder bearbeiten von Verbindungsrollen.
+## <a name="create-or-edit-connection-roles"></a>Erstellen oder Bearbeiten von Verbindungsrollen
 
 > [!IMPORTANT]
-> Wenn Sie eine Lösung verteilen möchten, die neue Verbindungsrollen enthält oder Änderungen an vorhandenen Verbindungsrollen machen möchten, müssen Sie sie der Lösung hinzufügen, die Sie verteilen möchten. Neue Verbindungsrollen bearbeiten oder hinzufügen mithilfe vom Bereich **Einstellungen** fügt diese Verbindungsollen der internen **Standardlösung** hinzu und wird sie nicht in der Lösung integrieren, die Sie verteilen, es sei denn, Sie fügen das Ihrer Lösung hinzu. Weitere Informationen: [Fügen Sie Verbindungsrollen einer Lösung hinzu](#add-connection-roles-to-a-solution)
+> Wenn Sie eine Lösung freigeben möchten, die neue Verbindungsrollen oder Änderungen an den bestehenden Verbindungsrollen enthält, müssen Sie diese der freizugebenden Lösung hinzufügen. Wenn Sie neue Verbindungsrollen im Bereich **Einstellungen** bearbeiten oder hinzufügen, werden diese Verbindungsrollen der internen **Standardlösung** hinzugefügt und nicht in die Lösung aufgenommen, die Sie freigeben – es sei denn, Sie fügen sie zuerst Ihrer Lösung hinzu. Weitere Informationen finden Sie unter [Hinzufügen von Verbindungsrollen zu einer Lösung](#add-connection-roles-to-a-solution).
 
-In der Liste **Verbindungsrollen** wählen Sie eine der Verbindungsrollen aus, um sie zu bearbeiten.
-Es gibt drei Schritte, um eine Verbindungsrolle zu definieren, die im Formular eindeutig ausgerufen wird.
+Wählen Sie in der Liste **Verbindungsrollen** eine der Verbindungsrollen zum Bearbeiten aus.
+Das Definieren einer Verbindungsrolle erfolgt in drei Schritten, die im Formular klar hervorgehoben sind.
 
-![Verbindungsrollen-Formular erstellen](media/create-connection-role-form.png)
+![Erstellen eines Verbindungsrollenformulars](media/create-connection-role-form.png)
 
 ### <a name="describe-the-connection-role"></a>Beschreiben der Verbindungsrolle
 
@@ -75,57 +76,57 @@ Legen Sie die folgenden Felder fest:
 
 |Feld|Beschreibung|
 |--|--|
-|**Name**|(Erforderlich) Der Text, der die Verbindung beschreibt.|
-|**Kategorie**|Eine Gruppe, welche die Kategorie der Verbindung beschreibt. Weitere Informationen: [Verbindungsrollen-Kategoriewerte](#connection-role-category-values)|
-|**Beschreibung**|Geben Sie einen Namen für die Rolle ein.|
+|**Name**|(Erforderlich) Den Text, der die Verbindung beschreibt.|
+|**Kategorie**|Eine Gruppe, die die Kategorie der Verbindung beschreibt. Weitere Informationen finden Sie unter [Werte für Verbindungsrollenkategorien](#connection-role-category-values).|
+|**Description** (Beschreibung)|Eine Definition für die Rolle.|
 
-#### <a name="connection-role-category-values"></a>Verbindungsrolle Kategoriewerte
+#### <a name="connection-role-category-values"></a>Werte für Verbindungsrollenkategorien
 
-Die standardmäßige **Verbindungsrollen-Kategorie**-Werte lauten:
-- Geschäftlich
-- Familie
-- Soziale Medien
-- Sales
-- Andere
+Die **Standardwerte für Verbindungsrollenkategorien** lauten:
+- Business
+- Family
+- Soziale
+- Vertrieb
+- Sonstiges
 - Projektbeteiligter
-- VERTRIEBSTEAM
-- Service
+- Vertriebsteam
+- Dienst
 
-Sie können neue Kategorien hinzufügen oder vorhandene ändern, indem Sie die **Kategorie** globalen Optionssatz bearbeiten. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps (Auswahl)](create-edit-global-option-sets.md)
+Sie können neue Kategorien hinzufügen oder vorhandene ändern, indem Sie den globalen Optionssatz **Kategorie** bearbeiten. Weitere Informationen finden Sie unter [Erstellen und Bearbeiten globaler Optionssätze für Common Data Service für Apps (Auswahllisten)](create-edit-global-option-sets.md).
 
-### <a name="select-record-types"></a>Datensatztyp auswählen
+### <a name="select-record-types"></a>Auswählen von Datensatztypen
 
-Wählen Sie aus, welche Datensatztypen angezeigt werden sollen - Organisation.
+Wählen Sie aus, welche Datensatztypen zum Verbinden verfügbar sind.
 
 > [!NOTE]
-> Obwohl standardmäßig **Alle** ausgewählt wird, stellen Sie sicher, dass Sie überlegen, welche Arten für die Verbindungsrolle geeignet sind, die Sie hinzufügen.
+> Obwohl standardmäßig **Alle** ausgewählt ist, müssen Sie berücksichtigen, welche Typen für die hinzugefügte Verbindungsrolle geeignet sind.
 
-### <a name="matching-connection-roles"></a>Verbindungsrollen: Übereinstimmend
+### <a name="matching-connection-roles"></a>Zuordnen von Verbindungsrollen
 
-In diesem optionalen Schritt können Sie alle Rollen definieren, die in einer Weise gegenseitig angewendet werden. Es ist kein Pflichtfeld, aber Verbindungen sind sinnvoller, wenn diese definiert werden.
+In diesem optionalen Schritt können Sie beliebige Rollen definieren, die in wechselseitiger Beziehung zueinander stehen und gemeinsam angewendet werden. Es ist zwar nicht erforderlich, doch Verbindungen sind sinnvoller, wenn sie definiert sind.
 
-So können Benutzer festlegen, dass Glen ein *Freund* von Mary ist, aber bedeutet dies auch, dass Mary ein *Freund* von Glen ist? Wir hoffen es. Aber, wenn Glen der *Vater* von Mary ist, bedeutet dies nicht, dass Mary der *Vater* von Glen ist. Das Einrichten der richtigen Reziprozität erfordert diesen zusätzlichen Schritt.
+Beispielsweise lässt sich angeben, dass Glen ein *Freund* von Mary ist. Heißt das aber auch, dass Mary ein *Freund* von Glen ist? Es wäre jedenfalls wünschenswert. Wenn Glen jedoch der *Vater* von Mary ist, muss Mary nicht im Umkehrschluss der *Vater* von Glen sein. Dieser zusätzliche Schritt ist erforderlich, um eine ordnungsgemäße Wechselbeziehung herzustellen.
 
-Wenn Benutzer eine Verbindungsrolle einstellen, die die Kriterien einer übereinstimmenden Verbindungsrolle hat, wird die Rolle nur angezeigt, wenn Sie die Verbindung des Datensatzes anzeigt, dass die Verbindung auf das angewendet wurde. Wenn vom eingefügten Datensatz angezeigt wird, ist die Rolle leer, es sei denn, eine entsprechende Rolle ist festgelegt.
+Wenn Benutzer eine Verbindungsrolle festlegen, der keine entsprechende Verbindungsrolle zugeordnet ist, wird die Rolle nur dann angezeigt, wenn die Verbindung in dem Datensatz aufgerufen wird, auf den sie angewendet wurde. Die Rolle ist leer, wenn sie im verknüpften Datensatz angezeigt wird, es sei denn, für sie wird eine übereinstimmende Rolle eingerichtet.
 
-Für die Rolle wie *Freund*, *Ehepartner*, *Kollege*, *Geschwister* ist es besser, die entsprechenden Rolle selber zuzuweisen. Wenn eine einzelne übereinstimmenden Verbindungsrolle konfiguriert ist, wird die aufgewendete einzelne übereinstimmenden Verbindungsrolle in beiden Anweisungen angewendet.
+Für Rollendefinitionen wie *Freund*, *Ehepartner*, *Kollege* oder *Geschwister* wird empfohlen, der Rolle selbst die übereinstimmende Rolle zuzuweisen. Wenn eine einzelne übereinstimmende Verbindungsrolle konfiguriert ist, wird diese in beide Richtungen angewendet.
 
 > [!IMPORTANT]
-> Sie müssen eine neue Verbindungsrolle ohne die übereinstimmenden Verbindungsrolle speichern, bevor Sie die übereinstimmenden Verbindungsrolle auf sich einstellen können.
+> Sie müssen eine neue Verbindungsrolle ohne diese übereinstimmende Verbindungsrolle speichern, bevor Sie die übereinstimmende Verbindungsrolle für sich selbst festlegen können.
 
-Sie werden feststellen, dass einige Verbindungsrollen bereits konfiguriert mit entsprechenden Verbindungsrollen konfiguriert werden. *Ehemaliger Mitarbeiter* wird mit *Ehemaliger Arbeitgeber* und umgehkehrt abgeglichen. Diese Art von eins-zu-eins übereinstimmenden Verbindungsrollen ist in der Regel am sinnvollsten.
+Einige Verbindungsrollen sind bereits mit entsprechenden Verbindungsrollen konfiguriert. *Ehemaliger Mitarbeiter* wird mit *Ehemaliger Arbeitgeber* verknüpft und umgekehrt. Diese Art von Eins-zu-Eins-Zuordnung ist bei Verbindungsrollen am gängigsten.
 
-Sie können mehrere Verbindungsrollen konfigurieren, um komplexe Beziehungen zu beschreiben. Wenn Sie eine Verbindungsrolle wie *Vater* erstellen, können Sie zwei weitere Rollen konfigurieren wie *Tochter* und *Sohn* und beide als entsprechende Verbindungsrollen *Vater* zuweisen. Sowohl *Tochter* wie *Sohn* sind Verbindungsrollen, die dem *Vater* zugeordnet werden sollten. Selbstverständlich sollten Sie eine äquivalente Rolle für *Mutter* einrichten, die auf ähnliche Weise mit *Tochter* und *Sohn* abgeglichen wird.
+Sie können mehrere übereinstimmende Verbindungsrollen konfigurieren, um komplexe Beziehungen zu beschreiben. Wenn Sie eine Verbindungsrolle wie *Vater* erstellen, können Sie zwei weitere Rollen wie *Tochter* und *Sohn* konfigurieren und beide als übereinstimmende Verbindungsrollen für *Vater* anwenden. Im Gegenzug sollten sowohl die Verbindungsrolle *Tochter* als auch *Sohn* *Vater* zugeordnet sein. Natürlich sollten Sie dann auch eine äquivalente Rolle *Mutter* einrichten, die ebenfalls mit *Tochter* und *Sohn* verknüpft ist.
 
 > [!TIP]
-> Bevor Sie komplexere Verbindungsrollen festlegen, sollten Sie überlegen, ob ein einfacherer Rollensatz auch genügt. Beispielsweise statt komplexe Verbindungsrollen wie *Vater*, *Mutter*, *Sohn* und *Tochter* fetzulegen, prüfen Sie ob, einfach *Eltern* und *Kind* für Sie auch funktionieren.
+> Bevor Sie einen komplexen Satz von Verbindungsrollen erstellen, überlegen Sie, ob auch ein einfacherer Rollensatz ausreicht. Eine Alternative für den komplexen Verbindungsrollensatz *Vater*, *Mutter*, *Sohn* und *Tochter* wäre ggf. das Verwenden der Rollen *Eltern* und *Kind*.
 
-Wird mehr als einer übereinstimmende Verbindungsrolle konfiguriert, stellen diese Verbindungsrollen nur die gültigen gegenseitigen Rollen dar. Die erste wird automatisch als Standardwert angewendet. Wenn der Standardwert nicht zutrifft, muss der Benutzer die erforderliche Verbindung manuell bearbeiten und zwischen gültigen Optionen wählen in der Konfiguration.
+Wenn mehr als eine übereinstimmende Verbindungsrolle konfiguriert ist, stellen diese Verbindungsrollen die einzigen gültigen wechselseitigen Rollen dar. Die erste wird automatisch als Standardwert angewendet. Wenn der Standardwert nicht richtig ist, müssen die Benutzer die Verbindung manuell bearbeiten und zwischen den in der Konfiguration definierten gültigen Optionen wählen.
 
 ### <a name="see-also"></a>Siehe auch
 <!-- This is in the basics guide. It needs to be migrated -->
-[Erstellen von Verbindungen zum Festlegen von Beziehungen zwischen Datensätzen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service für Apps (Auswahl)](create-edit-global-option-sets.md)<br />
+[Erstellen von Verbindungen zum Festlegen und Anzeigen von Beziehungen zwischen Datensätzen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
+[Erstellen und Bearbeiten globaler Optionssätze für Common Data Service für Apps (Auswahllisten)](create-edit-global-option-sets.md)<br />
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
 
 

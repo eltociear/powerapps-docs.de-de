@@ -1,236 +1,236 @@
 ---
-title: Erstellen einer Siteübersicht für eine modellgesteuerte App in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Siteübersicht für Ihre App erstellen'
+title: Erstellen einer modellgesteuerten App-Siteübersicht für eine App in PowerApps | Microsoft-Dokumentation
+description: Informationen zum Erstellen einer Siteübersicht für Ihre App
 keywords: ''
 ms.date: 05/29/2018
 ms.service: crm-online
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2461bd71-6cb4-46b7-8d1f-6a0aa3dca809
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 18
 topic-status: Drafting
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 2c3f1f4f22df6ed8b4824f1942e3fd202362ea9d
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39684449"
 ---
+# <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>Tutorial: Erstellen einer modellgesteuerten App-Siteübersicht für eine App mithilfe des Siteübersicht-Designers
 
-# <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>Lernprogramm: Erstellen einer Siteübersicht für modellgesteuerte Apps mithilfe des Siteübersichtsdesigners
+In diesem Tutorial führen Sie verschiedene Siteübersichtsaufgaben wie das Erstellen einer neuen Siteübersicht und Hinzufügen eines Bereichs, einer Gruppe und eines Unterbereichs durch.
 
-In diesem Lernprogramm werden Sie mehrere Siteübersichtsaufgaben wie das Erstellen einer neuen Siteübersicht und Hinzufügen eines Bereichs, einer Gruppe und eines Unterbereichs ausführen.
-
-Siteübersichten definieren der Navigation für die App. Erstellen Sie eine Siteübersicht für die App, indem Sie den Kachel-basierten Siteübersichtsdesigner verwenden. Verwenden Sie den Designer, um Komponenten auf den Entwurfscanvas zu ziehen, Ihre Arbeit in der Vorschau anzuzeigen und sofort die Siteübersicht zu veröffentlichen. Systemanpasser oder jeder Benutzer mit entsprechenden Berechtigungen können für die Siteübersichten für Apps schnell erstellen.  
+Siteübersichten definieren die Navigation für Ihre App. Erstellen Sie mühelos eine Siteübersicht für Ihre App mit dem Siteübersichts-Designer auf Kachelbasis. Verwenden Sie den Designer, um Komponenten in den Entwurfszeichenbereich zu ziehen, eine Vorschau Ihrer Arbeit anzuzeigen und die Sitemap sofort zu veröffentlichen. Systemanpasser sowie alle Benutzer mit den erforderlichen Berechtigungen können schnell Siteübersichten für Apps erstellen.  
   
-Mit dem Siteübersichtsdesigner können Sie auch Bereichs-, Unterbereichs- oder Gruppentitel in den Sprachen definieren, die von der Umgebung unterstützt werden.  
+Mit dem Siteübersichts-Designer können Sie auch Bereichs-, Unterbereichs- oder Gruppentitel in den von der Umgebung unterstützten Sprachen definieren.  
   
-Eine Standardsiteübersicht ist verfügbar. Sie können diese Siteübersicht bearbeiten, oder neue Siteübersichten für neue Apps mit dem Siteübersichtsdesigner konfigurieren. Der Siteübersichtsdesigner ist mit dem Anwendungsdesigner integriert.  
+Eine Standardsiteübersicht ist verfügbar. Sie können diese Siteübersicht bearbeiten oder Siteübersichten für neue Apps mit dem Siteübersichts-Designer konfigurieren. Der Siteübersichts-Designer ist in den App-Designer integriert.  
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Stellen Sie sicher, dass Sie über die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ bzw. entsprechende Berechtigungen verfügen.  Jeder Benutzer mit den folgenden Berechtigungen kann Apps erstellen:  
--   Erstellen-, Lesen-, Schreiben-Rechte für die App-Entität  
--   Lese- und Schreibrechte in der Entität "Anpassungen"  
--   Leseberechtigungen in der Lösungsentität
+Stellen Sie sicher, dass Sie die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ oder gleichwertige Berechtigungen haben.  Insbesondere kann jeder Benutzer mit den folgenden Berechtigungen auch Apps erstellen:  
+-   Berechtigungen zum Erstellen, Lesen und Schreiben für die App-Entität  
+-   Lese- und Schreibberechtigungen für die Anpassungenentität  
+-   Leseberechtigungen für die Lösungsentität
 
-Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsrolle anzeigen oder festlegen.
+Sie können diese Berechtigungen auf der Registerkarte **Anpassung** einer Sicherheitsrolle anzeigen oder festlegen.
   
-## <a name="create-a-site-map-for-an-app"></a>Erstellen einer App-Siteübersicht  
+## <a name="create-a-site-map-for-an-app"></a>Erstellen einer Siteübersicht für eine App  
   
-1. Wählen Sie auf der App-Designer-Canvas im Bereich **Siteübersicht** die Schaltfläche **Den Siteübersichtdesigner öffnen** ![Schaltfläche Siteübersichts-Designer öffnen](media/dynamics365-open-designer.PNG "Schaltfläche Siteübersichts-Designer öffnen").  
+1. Wählen Sie im App-Designer-Zeichenbereich im Bereich **Siteübersicht** **Siteübersichts-Designer öffnen** ![Schaltfläche „Siteübersichts-Designer öffnen“](media/dynamics365-open-designer.PNG "Schaltfläche „Siteübersichts-Designer öffnen“") aus.  
   
-     Der Siteübersichtsdesigner wird geöffnet. Der Canvas wird mit einem Bereich, einer Gruppe und einem Unterbereich gefüllt. Wählen Sie die Bereichs-, Unterbereichs- oder die Gruppenkachel, um die Eigenschaften zu ändern.  
+     Der Siteübersichts-Designer öffnet einen Zeichenbereich, der bereits mit einem Bereich, einer Gruppe und einem Unterbereich gefüllt ist. Wählen Sie die Bereichs-, Gruppen- oder Unterbereichskachel aus, um ihre Eigenschaften zu ändern.  
   
     > [!NOTE]
-    >  Beim Auswählen der Schaltfläche **Siteübersichts-Designer öffnen** in der ![Schaltfläche Siteübersichts-Designer öffnen](media/dynamics365-open-designer.PNG "Schaltfläche Siteübersichts-Designer öffnen") App-Designer-Canvas wird automatisch eine neue Siteübersicht erstellt (sofern es keine vorhandenen Siteübersicht gibt). Sie erhält denselben Namen wie den App-Namen und den gleichen eindeutigen Namen wie die App. 
+    >  Bei Auswahl von **Siteübersichts-Designer öffnen** ![Schaltfläche „Siteübersichts-Designer öffnen“](media/dynamics365-open-designer.PNG "Schaltfläche „Siteübersichts-Designer öffnen“") im Zeichenbereich des App-Designers wird automatisch eine neue Siteübersicht erstellt (wenn noch keine Siteübersicht vorhanden ist), und die neue Siteübersicht erhält den gleichen Namen wie die App und ebenso den eindeutigen Namen der App als eindeutigen Namen. 
 
-   ![Siteübersicht auswählen](media/app-designer-sitemap-location.png "Siteübersicht auswählen") 
+   ![Wählen Sie „Siteübersicht“ aus](media/app-designer-sitemap-location.png "Wählen Sie „Siteübersicht“ aus") 
   
-2.  [Hinzufügen eines Bereichs zur Siteübersicht](create-site-map-app.md#bkmk_AddArea).  
+2.  [Fügen Sie einen Bereich zur Siteübersicht hinzu](create-site-map-app.md#bkmk_AddArea).  
   
-3.  [Hinzufügen einer Gruppe zur Siteübersicht](create-site-map-app.md#bkmk_AddGroup).  
+3.  [Fügen Sie eine Gruppe zur Siteübersicht hinzu](create-site-map-app.md#bkmk_AddGroup).  
   
-4.  [Hinzufügen eines Unterbereiches zu einer Gruppe in der Siteübersicht](create-site-map-app.md#bkmk_AddSubarea).  
+4.  [Fügen Sie einen Unterbereich zur Siteübersicht hinzu](create-site-map-app.md#bkmk_AddSubarea).  
   
-5.  Wählen Sie **Speichern** aus.  
+5.  Wählen Sie **Speichern**.  
   
     > [!NOTE]
-    >  Die neue Siteübersicht ist der App zugeordnet, wenn Sie wieder zum App-Designer wechseln und **Speichern** wählen. Wenn eine SiteMap konfiguriert ist, wird auf der Siteübersichtskachel **Konfiguriert** angezeigt. Andernfalls erscheint **Nicht konfiguriert** auf der Kachel.  Wenn Sie den Siteübersichtsdesigner aus dem App-Designer öffnen und eine neue Siteübersicht konfigurieren, den Browser aber schließen, bevor Sie die Siteübersicht der App zuordnen, wird die Siteübersicht automatisch der App zugeordnet, wenn Sie den App-Designer das nächste Mal öffnen, entsprechend des eindeutigen Namens der App.  
+    >  Die neue Siteübersicht wird der App zugeordnet ist, wenn Sie zum App-Designer zurückgehen und **Speichern** auswählen. Wenn eine Siteübersicht konfiguriert ist, wird **Konfiguriert** auf der Siteübersichtskachel angezeigt, andernfalls **Nicht konfiguriert**.  Wenn Sie den Siteübersichts-Designer im App-Designer öffnen und eine neue Siteübersicht konfigurieren, aber den Browser schließen, bevor Sie die Siteübersicht der App zuordnen, wird die Siteübersicht basierend auf dem eindeutigen App-Namen automatisch der App zugeordnet, wenn Sie das nächste Mal den Siteübersichts-Designer öffnen.  
   
-6.  Wählen Sie **Veröffentlichen** aus.  
+6.  Klicken Sie auf **Veröffentlichen**.  
   
 ## <a name="edit-the-default-site-map"></a>Bearbeiten der Standardsiteübersicht 
 
- Ihre Umgebung verfügt über eine Standardsiteübersicht.  
+ In Ihrer Umgebung ist eine Standardsiteübersicht enthalten.  
   
 1. Öffnen Sie den Projektmappen-Explorer.  
   
-2. Wählen Sie im Lösungsfenster unter **Komponenten** **Clienterweiterungen** aus.  
+2. Wählen Sie im Projektmappenfenster unter **Komponenten** die Option **Clienterweiterungen** aus.  
 
-3. Auf der Komponentensymbolleiste wählen Sie **Vorhandenes Element hinzufügen** > **Siteübersicht** aus.
+3. Wählen Sie auf der Komponentensymbolleiste **Vorhandene hinzufügen** > **Siteübersicht** aus.
 
-4. In der Liste der Lösungskomponenten wählen Sie die Siteübersicht mit dem Namen **Siteübersicht** und dann **OK** aus.
+4. Wählen Sie in der Liste der Lösungskomponenten die Siteübersicht mit dem Namen **Siteübersicht** aus und dann **OK**.
   
-5.  Doppelklicken Sie, um die hinzugefügte Siteübersicht auszuwählen, die den Anzeigenamen **Site Map** und den Status **Verwaltet** hat. Sie können alternativ die Siteübersicht auswählen und dann in der Aktionsleiste **Bearbeiten** wählen.  
+5.  Doppelklicken Sie, um die von Ihnen hinzugefügte Siteübersicht auszuwählen, die den Anzeigenamen **Siteübersicht** hat und sich in einem **Verwalteten** Zustand befindet. Sie können auch die Siteübersicht und dann auf der Symbolleiste **Bearbeiten** auswählen.  
   
-     Die Siteübersicht wird im Siteübersichtsdesigner geöffnet.  
+     Die Siteübersicht wird im Siteübersichts-Designer geöffnet.  
   
-6.  [Hinzufügen eines Bereichs zur Siteübersicht](create-site-map-app.md#bkmk_AddArea).  
+6.  [Fügen Sie einen Bereich zur Siteübersicht hinzu](create-site-map-app.md#bkmk_AddArea).  
   
-7.  [Hinzufügen einer Gruppe zur Siteübersicht](create-site-map-app.md#bkmk_AddGroup).  
+7.  [Fügen Sie eine Gruppe zur Siteübersicht hinzu](create-site-map-app.md#bkmk_AddGroup).  
   
-8.  [Hinzufügen eines Unterbereiches zu einer Gruppe in der Siteübersicht](create-site-map-app.md#bkmk_AddSubarea).  
+8.  [Fügen Sie einen Unterbereich zur Siteübersicht hinzu](create-site-map-app.md#bkmk_AddSubarea).  
   
-9. Wählen Sie **Speichern** aus.  
+9. Wählen Sie **Speichern**.  
   
-10. Wählen Sie **Veröffentlichen** aus.  
+10. Klicken Sie auf **Veröffentlichen**.  
   
 <a name="bkmk_AddArea"></a>   
 ## <a name="add-an-area-to-the-site-map"></a>Hinzufügen eines Bereichs zur Siteübersicht  
   
-1.  Wählen Sie in der Siteübersichtdesigner-Canvas die Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer"), und wählen Sie **Bereich**.  
+1.  Wählen Sie **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Designer](media/dynamics365-designer-addbutton.PNG "Schaltfläche „Hinzufügen“ im Designer") im Zeichenbereich des Siteübersichts-Designer und dann **Bereich** aus.  
   
      oder  
   
-     Ziehen Sie auf der Registerkarte **Komponenten** die Kachel **Bereich** auf das leere Feld auf dem Canvas. Sie sehen das leere Feld, wenn Sie die Kachel an den richtigen Ort in der Canvas verschieben.  
+     Ziehen Sie von der Registerkarte **Komponenten** die Kachel **Bereich** auf das leere Feld im Zeichenbereich. Sie sehen das leere Feld, wenn Sie die Kachel auf die richtige Stelle im Zeichenbereich verschieben.  
   
-2.  Wählen Sie den Bereich, den Sie gerade hinzugefügt haben. Sie sehen die Registerkarte **Eigenschaften**, die im Bereich rechts neben dem Canvas hervorgehoben wird.  
+2.  Wählen Sie den Bereich aus, den Sie gerade hinzugefügt haben. Die Registerkarte **Eigenschaften** im Bereich rechts neben dem Zeichenbereich ist hervorgehoben.  
   
-3.  Fügen Sie die Bereichseigenschaften hinzu oder bearbeiten Sie sie.  
+3.  Fügen Sie die Bereichseigenschaften hinzu, oder bearbeiten Sie sie.  
   
-     Führen Sie unter **Allgemein** die folgenden Schritte aus:  
+     Führen Sie unter **Allgemein**Folgendes aus:  
   
-    - **Titel**: Geben Sie einen Titel für den Bereich in der Ausgangssprache der Organisation ein.  
+    - **Titel**: Geben Sie den Titel für den Bereich in der Basissprache der Organisation ein.  
   
-    - **Symbol**: Es wird ein standardmäßiges Anwendungssymbol ausgewählt. Wählen Sie ein anderes Symbol für den Bereich aus der Liste aus der Webressourcen aus, die in der Lösung verfügbar ist.  
+    - **Symbol**: Ein Standardanwendungssymbol ist ausgewählt. Wählen Sie ein anderes Symbol für den Bereich aus der Liste der in der Lösung verfügbaren Webressourcen aus.  
   
-    - **ID**: Eine eindeutige ID wird automatisch generiert, aber Sie können eine andere eingeben, wenn Sie möchten. Es wird empfohlen, das Sie die bereitgestellte ID verwenden. Wenn die eingegebene ID nicht eindeutig ist, erhalten die Benutzer möglicherweise einen Fehler bei der Verwendung der App, oder wenn Sie eine Lösung importieren, die diese Sitemap enthält.  
+    - **ID**: Eine eindeutige ID wird automatisch generiert, aber Sie können einen anderen Wert eingeben, wenn Sie möchten. Sie sollten die angegebene ID verwenden, denn falls die ID, die Sie eingeben, nicht eindeutig ist, könnten Benutzer eine Fehlermeldung erhalten, wenn sie die App verwenden, oder Sie erhalten möglicherweise eine Fehlermeldung, wenn Sie eine Lösung importieren, die diese Siteübersicht enthält.  
   
-    - **Gruppen anzeigen**: Aktivieren Sie das Kontrollkästchen, um Gruppen aus Unterbereichen im Navigationsbereich anzuzeigen.  
+    - **Anzeigen von Gruppen**: Aktivieren Sie dieses Kontrollkästchen, um Gruppen von Unterbereichen im Navigationsbereich anzuzeigen.  
   
-     Führen Sie unter **Erweitert** die folgenden Schritte aus:  
+     Führen Sie unter **Erweitert** Folgendes aus:  
   
-    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Gebietsschema) für den Titel aus, geben Sie den Titel ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche „Hinzufügen” im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen” im Siteübersichtsdesigner") aus. Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
+    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Gebietsschema) für den Titel aus, geben Sie den Titel ein, und wählen Sie dann **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Siteübersichts-Designer](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen“ im Siteübersichts-Designer") aus. Sie können Titel für so viele Sprachen, wie Ihre Organisation verwendet, erstellen, bearbeiten oder löschen. Allerdings können Sie nur einen Titel pro Sprache haben.  
   
-    - **Zusatzbeschreibung**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben die Beschreibung ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche „Hinzufügen” im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen” im Siteübersichtsdesigner") aus. Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
+    - **Weitere Beschreibung**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben Sie die Beschreibung ein, und wählen Sie dann **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Siteübersichts-Designer](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen“ im Siteübersichts-Designer") aus. Sie können Beschreibungen für so viele Sprachen, wie Ihre Organisation verwendet, erstellen, bearbeiten oder löschen. Allerdings können Sie nur eine Beschreibung pro Sprache haben.  
   
-    - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu erstellen, der den Bereich darstellt.  
+    - **URL**: Geben Sie die URL für den Dynamics 365 für Outlook-Ordner ein, der den Bereich darstellt.  
   
 <a name="bkmk_AddGroup"></a>   
 ## <a name="add-a-group-to-the-site-map"></a>Hinzufügen einer Gruppe zur Siteübersicht  
   
-1.  Wählen Sie den Bereich im Siteübersicht-Designer-Canvas, zu dem Sie die Gruppe hinzufügen möchten.  
-2.  Klicken Sie auf die Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer"), und wählen Sie **Gruppe** aus.  
+1.  Wählen Sie im Zeichenbereich des Siteübersichts-Designers den Bereich aus, dem Sie die Gruppe hinzufügen möchten.  
+2.  Wählen Sie **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Designer](media/dynamics365-designer-addbutton.PNG "Schaltfläche „Hinzufügen“ im Designer") und dann **Gruppe** aus.  
   
      oder  
   
-     Ziehen Sie auf der Registerkarte **Komponenten** die Kachel **Gruppe** auf ein leeres Feld unter dem **Bereich** auf der Canvas. Sie sehen das leere Feld, wenn Sie die Kachel an den richtigen Ort in der Canvas verschieben.  
+     Ziehen Sie von der Registerkarte **Komponenten** die Kachel **Gruppe** auf ein leeres Feld unter dem **Bereich** im Zeichenbereich. Sie sehen das leere Feld, wenn Sie die Kachel auf die richtige Stelle im Zeichenbereich verschieben.  
   
-3.  Wählen Sie die Gruppe, die Sie gerade hinzugefügt haben.  
+3.  Wählen Sie die Gruppe aus, die Sie gerade hinzugefügt haben.  
   
-4.  Fügen Sie auf der **Eigenschaften**-Registerkarte Gruppeneigenschaften hinzu oder bearbeiten Sie sie.  
+4.  Fügen Sie auf der Registerkarte **Eigenschaften** Gruppeneigenschaften hinzu, oder bearbeiten Sie sie:  
   
-     Führen Sie unter **Allgemein** die folgenden Schritte aus:  
+     Führen Sie unter **Allgemein**Folgendes aus:  
   
-    - **Titel**: Geben Sie einen Titel für die Gruppe in der Ausgangssprache der Organisation ein.  
+    - **Titel**: Geben Sie den Titel für die Gruppe in der Basissprache der Organisation ein.  
   
-    - **ID**: Eine eindeutige ID wird automatisch generiert. Geben Sie eine andere ein falls erforderlich. Es wird empfohlen, dass Sie die automatische ID verwenden. Wenn die eingegebene ID nicht eindeutig ist, tritt möglicherweise ein Fehler auf, wenn Sie eine Lösung importieren, die diese Sitemap enthält.  
+    - **ID**: Eine eindeutige ID wird automatisch generiert. Geben Sie einen anderen Wert ein, falls erforderlich. Sie sollten die automatische ID verwenden, denn falls die ID, die Sie eingeben, nicht eindeutig ist, könnten Sie eine Fehlermeldung erhalten, wenn Sie eine Lösung importieren, die diese Siteübersicht enthält.  
   
-     Führen Sie unter **Erweitert** die folgenden Schritte aus:  
+     Führen Sie unter **Erweitert** Folgendes aus:  
   
-    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Locale) für den Titel, geben den Titel für die Gruppe ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche Hinzufügen im Siteübersichtsdesigner"). Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
+    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache (Gebietsschema) für den Titel aus, geben Sie den Titel für die Gruppe ein, und wählen Sie dann **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Siteübersichts-Designer](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen“ im Siteübersichts-Designer") aus. Sie können Titel für so viele Sprachen, wie Ihre Organisation verwendet, erstellen, bearbeiten oder löschen. Allerdings können Sie nur einen Titel pro Sprache haben.  
   
-    - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung, geben die Beschreibung für die Gruppe ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche Hinzufügen im Siteübersichtsdesigner"). Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
+    - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben Sie die Beschreibung für die Gruppe ein, und wählen Sie dann **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Siteübersichts-Designer](media/add-icon-sitemap-designer.png "Schaltfläche „Hinzufügen“ im Siteübersichts-Designer") aus. Sie können Beschreibungen für so viele Sprachen, wie Ihre Organisation verwendet, erstellen, bearbeiten oder löschen. Allerdings können Sie nur eine Beschreibung pro Sprache haben.  
   
-    - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu erstellen, der die Gruppe darstellt.  
+    - **URL**: Geben Sie die URL für den Dynamics 365 für Outlook-Ordner ein, der die Gruppe darstellt.  
   
-    - **Als Profil festlegen**: Aktivieren Sie dieses Kontrollkästchen, um anzugeben, ob diese Gruppe ein benutzerselektiertes Profil für den Arbeitsbereich darstellt. Die Gruppe, die als benutzerselektiertes Profil festgelegt ist, wird als Optionen in Ihren persönlichen Optionen angezeigt. Dies gilt nur für Gruppen im Bereich **Arbeitsbereich**.  
+    - **Als Profil festlegen**: Aktivieren Sie dieses Kontrollkästchen, um anzugeben, ob diese Gruppe ein vom Benutzer auswählbares Profil für den Arbeitsbereich darstellt. Die als vom Benutzer auswählbares Profil festgelegte Gruppe wird als Option in Ihren persönlichen Optionen zur Verfügung gestellt. Dies gilt nur für Gruppen im Bereich **Arbeitsbereich**.  
   
 <a name="bkmk_AddSubarea"></a>   
-## <a name="add-a-subarea-to-a-group-in-the-site-map"></a>Hinzufügen eines Unterbereiches zu einer Gruppe in der Siteübersicht  
+## <a name="add-a-subarea-to-a-group-in-the-site-map"></a>Hinzufügen eines Unterbereichs zu einer Gruppe in der Siteübersicht  
   
-1.  Wählen Sie in der Siteübersicht-Designer-Canvas die Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer"), und wählen Sie **Unterbereich**.  
+1.  Wählen Sie **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Designer](media/dynamics365-designer-addbutton.PNG "Schaltfläche „Hinzufügen“ im Designer") im Zeichenbereich des Siteübersichts-Designer und dann **Unterbereich** aus.  
   
      oder  
   
-     Ziehen Sie auf der Registerkarte **Komponenten** die Kachel **Unterbereich** auf ein leeres Feld unter dem Abschnitt **Gruppe** auf der Canvas. Sie sehen das leere Feld, wenn Sie die Kachel an den richtigen Ort in der Canvas verschieben.  
+     Ziehen Sie von der Registerkarte **Komponenten** die Kachel **Unterbereich** auf ein leeres Feld unter dem Abschnitt **Gruppe** im Zeichenbereich. Sie sehen das leere Feld, wenn Sie die Kachel auf die richtige Stelle im Zeichenbereich verschieben.  
   
-2.  Wählen Sie den Unterbereich, den Sie gerade hinzugefügt haben.  
+2.  Wählen Sie den Unterbereich aus, den Sie gerade hinzugefügt haben.  
   
-3.  Fügen Sie auf der **Eigenschaften**-Registerkarte Unterbereichseigenschaften hinzu oder bearbeiten Sie sie.  
+3.  Fügen Sie auf der Registerkarte **Eigenschaften** Unterbereichseigenschaften hinzu, oder bearbeiten Sie sie:  
   
-     Führen Sie unter **Allgemein** die folgenden Schritte aus:  
+     Führen Sie unter **Allgemein**Folgendes aus:  
   
-    - **Typ**: Wählen Sie aus, ob der Unterbereich, den Sie hinzufügen, ein Dashboard, eine Entität, eine Webressourcen oder eine URL ist.  
+    - **Typ**: Wählen Sie aus, ob der Unterbereich, den Sie hinzufügen, ein Dashboard, eine Entität, Webressource oder URL ist.  
   
-    - **Entität**: Wählen Sie die Entität aus, für die Unterbereich bestimmt ist. Dieses Feld wird deaktiviert, wenn der Unterbereichstyp in der Dropdownliste **Typ** nicht **Entität** ist.  
+    - **Entität**: Wählen Sie die Entität aus, für die der Unterbereich bestimmt ist. Dieses Feld ist deaktiviert, sofern der Typ des Unterbereichs nicht **Entität** in der Dropdownliste **Typ** ist.  
   
-    - **URL**: Geben Sie eine URL für die Hauptseite der Anwendung an, die angezeigt wird, wenn dieser Unterbereich ausgewählt wird. Dieses Feld wird deaktiviert, wenn Sie **Entität** in der Dropdownliste **Typ** auswählen.  
+    - **URL**: Geben Sie eine URL für die Hauptseite der Anwendung an, die angezeigt wird, wenn dieser Unterbereich ausgewählt wird. Dieses Feld ist deaktiviert, wenn Sie **Entität** in der Dropdownliste **Typ** ausgewählt haben.  
   
-    - **Standarddashboard**: Wählen Sie das Standarddashboard für diesen Unterbereich aus. Dieses Feld wird deaktiviert, wenn Sie kein **Dashboard** in der Dropdownliste **Typ** auswählen.  
+    - **Standarddashboard**: Wählen Sie das Standarddashboard aus, das für diesen Unterbereich angezeigt werden soll. Dieses Feld ist deaktiviert, wenn Sie nicht **Dashboard** in der Dropdownliste **Typ** ausgewählt haben.  
   
-    - **Titel**: Geben Sie einen Titel für den Unterbereich in der Ausgangssprache der Organisation ein.  
+    - **Titel**: Geben Sie den Titel für den Unterbereich in der Basissprache der Organisation ein.  
   
-    - **Symbol**: Es wird ein standardmäßiges Anwendungssymbol ausgewählt. Wählen Sie ein anderes Symbol für den Unterbereich aus der Liste aus der Webressourcen aus, die in der Lösung verfügbar ist.  
+    - **Symbol**: Ein Standardanwendungssymbol ist ausgewählt. Wählen Sie ein anderes Symbol für den Unterbereich aus der Liste der in der Lösung verfügbaren Webressourcen aus.  
   
     - **ID**. Eine eindeutige ID wird automatisch generiert. Geben Sie eine andere eindeutige ID ein, falls erforderlich.  
   
-    - **Parameterübergabe** Aktivieren Sie dieses Kontrollkästchen, um Informationen zur Organisation und zum Sprachkontext zur URL hinzuzufügen. Dieses Kontrollkästchen ist nur aktiviert, wenn der Unterbereichstyp eine Webressource oder ein URL-basierter Unterbereich ist.  
+    - **Parameterübergabe**. Aktivieren Sie dieses Kontrollkästchen, um Informationen über die Organisation und den Sprachkontext an die URL zu übergeben. Dieses Kontrollkästchen ist nur aktiviert, wenn der Unterbereichstyp eine Webressource oder ein URL-basierter Unterbereich ist.  
   
-     Führen Sie unter **Erweitert** die folgenden Schritte aus:  
+     Führen Sie unter **Erweitert** Folgendes aus:  
  
-    - **Rechte**: Definiert, ob ein Unterbereich anhand der Rechte angezeigt wird, die in allen Sicherheitsrollen verfügbar sind, die dem Benutzer zugewiesen werden. Wählen Sie den Namen der Entität aus, deren Rechte Sie überprüfen möchten, und wählen Sie anschließend die Kontrollkästchen aus, um Rechte zuzuweisen. 
+    - **Berechtigungen**: Definiert, ob ein Unterbereich basierend auf Berechtigungen, die in dem Benutzer zugewiesenen Sicherheitsrollen verfügbar sind, angezeigt wird. Wählen Sie den Namen der Entität aus, für die Berechtigungen überprüft werden sollen, und aktivieren Sie dann die Kontrollkästchen, um Berechtigungen zuzuweisen. 
   
-    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für den Titel, geben den Titel für den Unterbereich ein und wählen **Hinzufügen**. Sie können für beliebig viele Sprachen Titel für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur einen Titel pro Sprache nutzen.  
+    - **Weitere Titel**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für den Titel aus, geben Sie den Titel für den Unterbereich ein, und wählen Sie dann **Hinzufügen** aus. Sie können Titel für so viele Sprachen, wie Ihre Organisation verwendet, erstellen, bearbeiten oder löschen. Allerdings können Sie nur einen Titel pro Sprache haben.  
   
-    - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung, geben die Beschreibung für den Unterbereich ein und wählen **Hinzufügen**. Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
+    - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung aus, geben Sie die Beschreibung für den Unterbereich ein, und wählen Sie dann **Hinzufügen** aus. Sie können Beschreibungen für so viele Sprachen, wie Ihre Organisation verwendet, erstellen, bearbeiten oder löschen. Allerdings können Sie nur eine Beschreibung pro Sprache haben.  
   
     - **SKUs**: Wählen Sie die Versionen von Dynamics 365 Customer Engagement aus, die diesen Unterbereich anzeigen.  
   
-    - **Client**: Wählen Sie den Typ des Clients aus, für den dieser Unterbereich angezeigt wird.  
+    - **Client**: Wählen Sie den Clienttyp aus, der diesen Unterbereich anzeigt.  
   
-    - **Outlook-Verknüpfung**: Wählen Sie das Symbol aus, das in Dynamics 365 for Outlook angezeigt werden soll.  
+    - **Outlook-Verknüpfung**: Wählen Sie das in Dynamics 365 für Outlook anzuzeigende Symbol aus.  
   
-    - **Offlineverfügbarkeit**: Aktivieren Sie das Kontrollkästchen, um diesen Unterbereich für Benutzer zur Verfügung zu stellen, wenn diese in Dynamics 365 for Outlook offline sind.  
+    - **Offlineverfügbarkeit**: Aktivieren Sie dieses Kontrollkästchen, um diesen Unterbereich für Benutzer verfügbar zu machen, wenn sie in Dynamics 365 für Outlook offline sind.  
   
 ## <a name="organize-areas-groups-and-subareas"></a>Organisieren von Bereichen, Gruppen und Unterbereichen  
- Sie können die Bereiche, Gruppen und Unterbereiche durch Ziehen an neue Positionen organisieren. Ein Containerfeld wird dort angezeigt, wo Sie die Kachel ablegen können. Diese Aktionen können Sie ausführen:  
+ Sie können Ihre Bereiche, Gruppen und Unterbereiche durch Ziehen an neue Positionen organisieren. Ein Containerfeld wird angezeigt, wo Sie die Kacheln ablegen können. Hier sind z.B. folgende Aktionen möglich:  
   
--   Verschieben Sie einen Unterbereich auf eine neue Position in derselben Gruppe oder in einer Gruppe unter demselben Bereich.  
+-   Verschieben Sie einen Unterbereich an eine neue Position innerhalb der gleichen Gruppe oder in einer anderen Gruppe unter dem gleichen Bereich.  
   
--   Verschieben Sie einen Unterbereich auf eine neue Position in derselben unter einem anderen Bereich.  
+-   Verschieben Sie einen Unterbereich an eine neue Position innerhalb einer Gruppe unter einem anderen Bereich.  
   
--   Verschieben einer Gruppe auf eine neue Position im selben Bereich.  
+-   Verschieben Sie eine Gruppe an eine neue Position innerhalb des gleichen Bereichs.  
   
--   Verschieben einer Gruppe auf eine neue Position in einem anderen Bereich.  
+-   Verschieben Sie eine Gruppe an eine neue Position in einem anderen Bereich.  
   
--   Verschieben Sie einen Bereich auf eine neue Position.  
+-   Verschieben Sie einen Bereich an eine neue Position.  
   
 ## <a name="clone-a-component-in-a-site-map"></a>Klonen einer Komponente in einer Siteübersicht  
- Um eine Kopie einer vorhandenen Komponente zu erstellen, wählen Sie die Komponente und dann auf der Aktionssymbolleiste **Klonen**.  Alle Details der geklonten Komponente sind mit denen der Basiskomponente identisch (bis auf ID und Titel). Die ID wird zufällig generiert. 
+ Um eine Kopie einer vorhandenen Komponente zu erstellen, wählen Sie die Komponente aus und dann auf der Symbolleiste **Klonen**.  Alle Details der geklonten Komponente außer ID und Titel entsprechen der Basiskomponente. Die ID wird nach dem Zufallsprinzip generiert. 
   
- Wenn Sie einen Bereich klonen, wird der geklonte Bereich rechts neben der gerade ausgewählten Bereich hinzugefügt. Wenn Sie eine Gruppe klonen, wird die geklonte Gruppe rechts neben der gerade ausgewählten Gruppe hinzugefügt. Wenn Sie einen Unterbereich klonen, wird der geklonte Unterbereich rechts neben der gerade ausgewählten Unterbereich hinzugefügt.  
+ Beim Klonen eines Bereichs wird der geklonte Bereich rechts neben dem aktuell ausgewählten Bereich hinzugefügt. Beim Klonen einer Gruppe wird die geklonte Gruppe rechts neben der aktuell ausgewählten Gruppe hinzugefügt. Beim Klonen eines Unterbereichs wird der geklonte Unterbereich unterhalb des aktuell ausgewählten Unterbereichs hinzugefügt.  
   
-## <a name="delete-an-area-group-or-subarea-from-a-site-map"></a>Löschen eines Bereichs, einer Gruppe oder eines Unterbereich aus einer Siteübersicht  
- Um eine Siteübersichtskomponente zu löschen, wählen Sie die Komponentenkachel und dann auf der Aktionsleiste **Löschen**. Wenn Sie einen Bereich löschen, werden alle Gruppen und Unterbereiche im Bereich ebenfalls gelöscht. Auch wenn Sie eine Gruppe löschen, werden die Gruppe und die Unterbereiche gelöscht.  
+## <a name="delete-an-area-group-or-subarea-from-a-site-map"></a>Löschen eines Bereichs, einer Gruppe oder eines Unterbereichs aus einer Siteübersicht  
+ Um eine Siteübersichtskomponente zu löschen, wählen Sie die Komponentenkachel und dann auf der Symbolleiste **Löschen** aus. Wenn Sie einen Bereich löschen, werden alle Gruppen und Unterbereiche im Bereich auch gelöscht. Wenn Sie eine Gruppe löschen, werden auf ähnliche Weise die Gruppe und Unterbereiche darin gelöscht.  
   
 ## <a name="clients-supported"></a>Unterstützte Clients  
- In der folgenden Tabelle wird veranschaulicht, welche Clients für die verschiedenen Siteübersichten unterstützt werden.  
+ In der folgende Tabelle wird erläutert, welche Clients für verschiedene Siteübersichten unterstützt werden.  
  
 |Siteübersichten|Unterstützte Clients|  
 |---------------|-----------------------|  
-|Neue Apps| Einheitlicher Oberfläche und Dynamics 365 Customer Engagement-Web-App |  
-|Siteübersicht für benutzerdefinierte Dynamics 365-Apps | Dynamics 365 Customer Engagement-Web-App und Dynamics 365 for Outlook |  
-|Standard-Unternehmens-Apps (Sales, Sales Hub, Customer Service, Customer Service Hub, Field Service, Project Service Automation)| Dynamics 365 Customer Engagement-Web-App und Einheitliche Oberfläche|  
+|Neue Apps| Einheitliche Oberfläche und Dynamics 365 Customer Engagement-Web-App |  
+|Siteübersicht für Dynamics 365 – benutzerdefinierte App | Dynamics 365 Customer Engagement-Web-App und Dynamics 365 für Outlook |  
+|Standardgeschäfts-Apps (Sales, Sales Hub, Customer Service, Customer Service Hub, Field Service, Project Service Automation)| Dynamics 365 Customer Engagement-Web-App und Einheitliche Oberfläche|  
  
   
 ### <a name="next-steps"></a>Nächste Schritte  

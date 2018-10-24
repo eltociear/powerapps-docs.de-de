@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Verbindung mit SharePoint aus PowerApps | Microsoft-Dokumentation
-description: Stellen Sie unter „powerapps.com“ eine Verbindung mit SharePoint her, um diese zu verwenden, wenn Sie eine App automatisch generieren oder von Grund auf neu erstellen möchten.
+title: Erstellen einer Verbindung von einer Canvas-App mit SharePoint | Microsoft-Dokumentation
+description: Stellen Sie in PowerApps eine Verbindung mit SharePoint her, die Sie verwenden, wenn Sie eine Canvas-App automatisch generieren oder von Grund auf neu erstellen.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/03/2016
 ms.author: anneta
-ms.openlocfilehash: 0e0b98277548d188071bcd29b9e3168de5818321
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 170115f07da57878c553a1776fc26a9cd27a8258
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195862"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42844153"
 ---
 # <a name="create-a-connection-to-sharepoint-from-powerapps"></a>Herstellen einer Verbindung mit SharePoint aus PowerApps
-Erstellen Sie eine Verbindung mit SharePoint Online oder lokalem SharePoint, sodass Sie eine App automatisch generieren oder von Grund auf neu erstellen können.
+Erstellen Sie eine Verbindung mit SharePoint Online oder lokalem SharePoint, sodass Sie eine Canvas-App automatisch generieren oder von Grund auf neu erstellen können.
 
 Wenn Sie mit PowerApps nicht vertraut sind, finden Sie Grundlagen unter [Einführung in PowerApps](getting-started.md).
 

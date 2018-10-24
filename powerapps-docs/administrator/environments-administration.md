@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/30/2018
+ms.date: 08/15/2018
 ms.author: manasma
-ms.openlocfilehash: 02b25dd627e85b638a113c1c0aceee16d7df6275
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 976ecbd9eeaff0ee5a274b943d4d35c21568201d
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349085"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42864266"
 ---
 # <a name="administer-environments-in-powerapps"></a>Verwalten von Umgebungen in PowerApps
 Im [PowerApps Admin Center][1] können Sie Umgebungen, die Sie erstellt haben, und Umgebungen, denen Sie in den Rollen „Umgebungsadministrator“ oder „Systemadministrator“ hinzugefügt wurden, verwalten. Über das Admin Center können Sie folgende administrative Aktionen ausführen:
@@ -178,7 +184,7 @@ Je nach Lizenz können Sie bis zu zwei Testumgebungen und zwei Produktionsumgebu
 PowerApps Plan 2.  Auf der [Seite mit den PowerApps-Preisen][3] finden Sie ausführliche Informationen zu allen Plans, die diese Lizenz enthalten.
 
 ### <a name="while-trying-to-create-a-new-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Beim Versuch, eine neue Umgebung zu erstellen, wird ein Fehler ausgelöst. Wie kann ich dieses Problem lösen?
-Möglicherweise erhalten Sie die folgende Fehlermeldung: „Either your plan doesn’t support the environment type selected or you’ve reached the limit for that type of environment. (Entweder unterstützt Ihr Plan die ausgewählte Art von Umgebung nicht, oder Sie haben die Grenze für diese Art von Umgebung erreicht.)“ Dafür kann einer dieser zwei Gründe verantwortlich sein:
+Wenn Sie die Fehlermeldung „Entweder wird der ausgewählte Umgebungstyp in Ihrem Tarif nicht unterstützt, oder Sie haben das Limit für diesen Umgebungstyp erreicht.“ erhalten, kann dies zwei Ursachen haben:
 
 1. Sie haben das Kontingent zum Erstellen einer bestimmten Art von Umgebung bereits erreicht. Angenommen, Sie erstellen eine Testumgebung und erhalten diese Fehlermeldung. Das bedeutet, dass Sie bereits zwei Testumgebungen bereitgestellt haben. Sie können alle Umgebungen im [PowerApps Admin Center][1] sehen.
 Wenn Sie möchten, können Sie eine vorhandene Umgebung dieser bestimmten Art löschen und eine neue Umgebung erstellen. Sie sollten sich jedoch vergewissern, dass Sie dabei Ihre Daten, Apps, Flows und andere Ressourcen, die beibehalten werden sollen, nicht verlieren.
@@ -190,14 +196,8 @@ Wenn Sie andere Fehlermeldungen erhalten oder weitere Fragen haben, nehmen Sie [
 ### <a name="while-trying-to-create-a-database-in-an-environment-i-am-getting-an-error-how-should-i-resolve-it"></a>Beim Versuch, eine Datenbank in einer Umgebung zu erstellen, wird ein Fehler ausgelöst. Wie kann ich dieses Problem lösen?
 In den folgenden Szenarios können Sie einen Fehler beim Erstellen einer Datenbank erhalten:
 
-1. **Standardumgebung**: Das Erstellen einer Datenbank wird derzeit nicht in einer Standardumgebung des Mandanten unterstützt. 
-
-2. **Umgebung zur individuellen Verwendung**: Wenn Sie sich für den PowerApps-Community-Plan registrieren, erhalten Sie eine Umgebung für Ihre eigene Verwendung. Wenn Sie die Datenbank noch nicht erstellt haben, können Sie zu diesem Zeitpunkt keine Datenbank in der Umgebung zur individuellen Verwendung bereitstellen. 
-
-3. **Umgebung in einer anderen Region, als die Region Ihres AAD-Mandanten**: Derzeit können Sie eine Datenbank nur in den Umgebungen bereitstellen, die in der Region Ihres Azure Active Directory-Mandanten erstellt wurden. Das Bereitstellen einer Datenbank in anderen Regionen soll in naher Zukunft verfügbar sein. Vergewissern Sie sich also, dass Ihre Region mit der Region des Mandanten übereinstimmt, wenn Sie eine Datenbank darin erstellen möchten.
-
-4. **Erstellen von Datenbanken, die in bestimmten Regionen nicht unterstützt werden**: Es gibt bestimmte Regionen, in denen das Erstellen von Datenbanken noch nicht verfügbar ist. Zum Beispiel Länder in Südamerika. Wenn der Hauptstandort Ihres Mandanten Südamerika ist, können Sie derzeit keine Datenbanken in Umgebungen bereitstellen. 
-    
+**Standardumgebung**: Das Erstellen einer Datenbank wird derzeit nicht in einer Standardumgebung des Mandanten unterstützt. 
+  
 Es wird daran gearbeitet, alle der oben genannten Szenarios zu ermöglichen.
 Wenn Sie andere Fehlermeldungen erhalten oder weitere Fragen haben, nehmen Sie [hier][5] Kontakt mit uns auf.
 

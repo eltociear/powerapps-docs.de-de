@@ -1,6 +1,6 @@
 ---
-title: Delegierbare Datenquellen | Microsoft-Dokumentation
-description: Enthält eine Liste mit allen unterstützten delegierbaren Datenquellen.
+title: Delegierbare Datenquellen in Canvas-Apps | Microsoft-Dokumentation
+description: Dieser Artikel enthält eine Liste mit allen unterstützten delegierbaren Datenquellen in Canvas-Apps.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/15/2017
 ms.author: lanced
-ms.openlocfilehash: e8863d8e260ecaafd407e93d710917848ce184ad
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 98931d4692a61839e0530682bd2d40258c07b7df
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39018604"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42825761"
 ---
-# <a name="delegable-data-sources"></a>Delegierbare Datenquellen
-Wie im Artikel [Grundlagen der Delegierung](delegation-overview.md) ausführlich beschrieben, wird von Delegierung gesprochen, wenn für PowerApps die Verarbeitung von Daten an die Datenquelle delegiert wird, anstatt die Daten zur lokalen Verarbeitung in die App zu verschieben.
+# <a name="delegable-data-sources-in-canvas-apps"></a>Delegierbare Datenquellen in Canvas-Apps
+Wie im Artikel [Grundlagen der Delegierung](delegation-overview.md) ausführlich beschrieben, handelt es sich um Delegierung, wenn PowerApps die Verarbeitung von Daten an die Datenquelle delegiert, anstatt die Daten zur lokalen Verarbeitung in die Canvas-App zu verschieben.
 
 Die Delegierung wird nur für tabellarische Datenquellen unterstützt. In dieser Liste sind die tabellarischen Datenquellen angegeben und mit einem Hinweis dazu versehen, ob die Delegierung unterstützt wird. Weitere Details hierzu finden Sie im nächsten Abschnitt.
 

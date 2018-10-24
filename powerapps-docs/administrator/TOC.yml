@@ -1,63 +1,79 @@
+items:
 - name: Verwalten von PowerApps
   href: admin-guide.md
   items:
-    - name: Erste Schritte
-      items:
-        - name: Welche Rolle spielt ein PowerApps-Administrator?
-          href: overview-role-powerapps-admin.md
-    - name: Lizenzierung
-      items:
-        - name: Übersicht über die Lizenzierung
-          href: pricing-billing-skus.md
-        - name: Verwalten von Lizenzen in Ihrer Organisation
-          href: signup-question-and-answer.md
-        - name: Erwerben von PowerApps
-          href: signup-for-powerapps-admin.md
-    - name: Verwalten von PowerApps
-      items:
-        - name: Anzeigen von Apps in Ihrer Umgebung
-          href: admin-view-apps.md
-        - name: Verwalten von Apps in Ihrer Organisation
-          href: admin-manage-apps.md
-        - name: Eine App zwischen Mandanten und Umgebungen verschieben
-          href: environment-and-tenant-migration.md
-        - name: PowerShell-Unterstützung für PowerApps (Vorschau)
-          href: powerapps-powershell.md
+  - name: Erste Schritte
+    items:
+    - name: Welche Rolle spielt ein PowerApps-Administrator?
+      href: overview-role-powerapps-admin.md
+    - name: Whitepaper zur PowerApps Enterprise-Bereitstellung
+      href: admin-powerapps-enterprise-deployment.md
+  - name: Lizenzierung
+    items:
+    - name: Übersicht über die Lizenzierung
+      href: pricing-billing-skus.md
+    - name: Verwalten von Lizenzen in Ihrer Organisation
+      href: signup-question-and-answer.md
+    - name: Erwerben von PowerApps
+      href: signup-for-powerapps-admin.md
+  - name: Verwalten von PowerApps
+    items:
+    - name: Anzeigen von Apps in Ihrer Umgebung
+      href: admin-view-apps.md
+    - name: Verwalten von Apps in Ihrer Organisation
+      href: admin-manage-apps.md
+    - name: Eine App zwischen Mandanten und Umgebungen verschieben
+      href: environment-and-tenant-migration.md
+    - name: PowerShell-Unterstützung für PowerApps (Vorschau)
+      href: powerapps-powershell.md
+  - name: Datenintegration
+    items:
+    - name: Integrieren von Daten in CDS für Apps
+      href: data-integrator.md
     - name: Reagieren auf DSR-Anforderungen
-      href: powerapps-gdpr-dsr-guide-systemlogs.md
       items:
-        - name: Vom System generierten Protokolle
-          href: powerapps-gdpr-dsr-guide-systemlogs.md
-        - name: PowerApps-Kundendaten
-          href: powerapps-gdpr-dsr-guide.md
-          items:
-            - name: Exportieren von Daten
-              href: powerapps-gdpr-export-dsr.md
-            - name: Löschen von Daten
-              href: powerapps-gdpr-delete-dsr.md
-        - name: CDS für Apps-Kundendaten
-          href: common-data-service-gdpr-dsr-guide.md
-    - name: Umgebungen verwalten
-      href: environments-administration.md
-      items:
-        - name: Umgebungen – Übersicht
-          href: environments-overview.md
-        - name: Regionen – Übersicht
-          href: regions-overview.md
-        - name: Erstellen einer Umgebung
-          href: create-environment.md
-        - name: Datenbank erstellen
-          href: create-database.md
-    - name: Konfigurieren der Sicherheit von Umgebungen
-      href: database-security.md
-      items:
-        - name: Einführung in Datengruppen
-          href: introduction-to-data-groups.md
-        - name: Erstellen einer DLP-Richtlinie
-          href: create-dlp-policy.md
-        - name: Verwalten von DLP-Richtlinien
-          href: prevent-data-loss.md
-    - name: Verwalten von Abonnements und Benutzerkonten
-      items:
-        - name: Anzeigen von aktiven Benutzern in Ihrem Mandanten
-          href: admin-view-user-licenses.md
+      - name: Vom System generierten Protokolle
+        href: powerapps-gdpr-dsr-guide-systemlogs.md
+      - name: Datenintegrationen für CDS für Apps
+        href: data-integration-gdpr-dsr-guide.md
+      - name: PowerApps-Kundendaten
+        href: powerapps-gdpr-dsr-guide.md
+        items:
+        - name: Exportieren von Daten
+          href: powerapps-gdpr-export-dsr.md
+        - name: Löschen von Daten
+          href: powerapps-gdpr-delete-dsr.md
+      - name: CDS für Apps-Kundendaten
+        href: common-data-service-gdpr-dsr-guide.md
+  - name: Umgebungen verwalten
+    href: environments-administration.md
+    items:
+    - name: Umgebungen – Übersicht
+      href: environments-overview.md
+    - name: Regionen – Übersicht
+      href: regions-overview.md
+    - name: Erstellen einer Umgebung
+      href: create-environment.md
+    - name: Datenbank erstellen
+      href: create-database.md
+    - name: Vorschauumgebungen
+      href: preview-environments.md
+  - name: Konfigurieren der Sicherheit von Umgebungen
+    href: database-security.md
+    items:
+    - name: Einführung in Datengruppen
+      href: introduction-to-data-groups.md
+    - name: Erstellen einer DLP-Richtlinie
+      href: create-dlp-policy.md
+    - name: Verwalten von DLP-Richtlinien
+      href: prevent-data-loss.md
+  - name: Verwalten von Abonnements und Benutzerkonten
+    items:
+    - name: Anzeigen von aktiven Benutzern in Ihrem Mandanten
+      href: admin-view-user-licenses.md
+ms.openlocfilehash: 555f8872c3aaa5e656dfe3b3ad72004de63d8d7c
+ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46468833"

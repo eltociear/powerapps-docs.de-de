@@ -1,1 +1,1 @@
-Wir erwarten Änderungen an diesem Feature, Sie sollten sie also nicht in der Produktion verwenden. Verwenden Sie sie nur in Test- und Entwicklungsumgebungen.
+Wir erwarten Änderungen dieses Features, daher sollten Sie es nicht in der Produktion verwenden. Verwenden Sie es nur in Test- und Entwicklungsumgebungen.

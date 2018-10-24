@@ -1,5 +1,5 @@
 ---
-title: Verwalten eines lokalen Datengateways | Microsoft-Dokumentation
+title: Verwalten eines lokalen Datengateways für Canvas-Apps | Microsoft-Dokumentation
 description: Ein lokales Datengateway und seine Verbindungen verwalten
 author: archnair
 manager: kvivek
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/30/2016
 ms.author: archanan
-ms.openlocfilehash: fb561ca5458a22880d93c712aa2e2b2ada884605
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 85806799a5f5ea91a4671a27e71cf95daabcd01a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39194879"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42863847"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
-Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen PowerApps und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
+Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen einer in PowerApps erstellten Canvas-App und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
 
 Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
 

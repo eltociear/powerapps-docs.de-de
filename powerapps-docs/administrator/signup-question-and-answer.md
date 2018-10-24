@@ -8,12 +8,18 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: jamesol
-ms.openlocfilehash: 1f46541fcfe485bf497a59d25432ac1dec8d7b3e
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 8fcfc0f18c4edc3b83e8cebe7628f4db1bcabaf8
+ms.sourcegitcommit: 7403ea7f103564fa7d1ae73a08a7dbdfeba7d999
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349775"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43263281"
 ---
 # <a name="manage-powerapps-licenses-in-your-organization"></a>Verwalten von PowerApps-Lizenzen in Ihrer Organisation
 Dieser Artikel beschreibt, wie Benutzer in Ihrer Organisation auf PowerApps zugreifen können und wie Sie den Zugriff auf den PowerApps-Dienst steuern können.
@@ -54,7 +60,7 @@ Wenn Ihr Unternehmen zudem die Verwendung von nur für die Organisation bestimmt
 
 ## <a name="administration-of-powerapps"></a>Verwaltung von PowerApps
 ### <a name="why-has-the-powerapps-icon-appeared-in-the-office-365-app-launcher"></a>Warum wird das PowerApps-Symbol im Office 365-App-Startfeld angezeigt?
-Microsoft PowerApps ist ein grundlegender Bestandteil der Office 365-Suite und wird als Dienst in einer vorhandenen Office 365-SKU aktiviert. Da Benutzer weltweit nun Microsoft PowerApps verwenden können, wird Microsoft PowerApps unter „Alle Apps“ im App-Startfeld angezeigt. Weitere Informationen darüber, welche Office 365-SKUs nun PowerApps enthalten, finden Sie unter [Licensing overview (Übersicht über die Lizenzierung)](pricing-billing-skus.md).
+Microsoft PowerApps ist ein grundlegender Bestandteil der Office 365-Suite und wird als Dienst in einer vorhandenen Office 365-SKU aktiviert. Da Benutzer weltweit nun Microsoft PowerApps verwenden können, wird Microsoft PowerApps unter „Alle Apps“ im App-Startbildschirm angezeigt. Weitere Informationen darüber, welche Office 365-SKUs nun PowerApps enthalten, finden Sie unter [Licensing overview (Übersicht über die Lizenzierung)](pricing-billing-skus.md).
 
 Lesen Sie den folgenden Abschnitt, wenn Sie die PowerApps-Kachel standardmäßig aus „Alle Apps“ entfernen möchten.
 

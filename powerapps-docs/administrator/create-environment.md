@@ -5,14 +5,20 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: jimholtz
-ms.openlocfilehash: eefcd30e4f5e6ec7441147c157cbb46864ebf718
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: 9d7a2093c938658d6717157fc6bd683aa3a55bb6
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349246"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297472"
 ---
 # <a name="create-an-environment"></a>Erstellen einer Umgebung
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Sie dient außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. Für jeden Mandanten erstellt PowerApps automatisch eine Standardumgebung, die von allen Benutzern dieses Mandanten gemeinsam verwendet wird.
@@ -36,6 +42,8 @@ Melden Sie sich unter [https://admin.powerapps.com](https://admin.powerapps.com)
 2. Geben Sie im Dialogfeld **Neue Umgebung** einen Namen für die Umgebung ein, und wählen Sie aus den Dropdownlisten eine Region und einen Umgebungstypen aus. Die Region ist zwar standardmäßig auf die Region des Azure Active Directory-Mandanten eingestellt, Sie können jedoch auch eine beliebige andere Region aus der Dropdownliste auswählen. Nachdem die Umgebung erstellt wurde, können Sie die Region nicht mehr ändern. Wenn Sie fertig sind, klicken oder tippen Sie auf **Umgebung erstellen**.
 
     ![Datei > Freigeben](./media/create-environment/new-environment-dialog.png)
+
+    Wählen Sie **Vorschau (USA)** aus, um vorab Zugriff auf die neuen PowerApps-Funktionen zu erhalten. Erfahren Sie mehr über das [PowerApps-Vorschauprogramm](preview-environments.md).
 3. Sobald die Umgebung erstellt wurde, erhalten Sie in einem Dialogfeld eine Bestätigungsmeldung, und Sie werden aufgefordert, eine Datenbank zu erstellen. Klicken oder tippen Sie auf **Datenbank erstellen**, um den Zugriff auf Common Data Service zu gewähren.
 
     **Hinweis:** Derzeit können Sie nur in der Region des Azure Active Directory-Mandanten eine Datenbank erstellen.

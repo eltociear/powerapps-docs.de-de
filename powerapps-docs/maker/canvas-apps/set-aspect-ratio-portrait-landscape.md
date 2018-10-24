@@ -1,6 +1,6 @@
 ---
-title: Ändern der Bildschirmgröße und -ausrichtung | Microsoft-Dokumentation
-description: Schrittanleitung zum Ändern von Einstellungen, z.B. von Bildschirmgröße und -ausrichtung
+title: Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App | Microsoft-Dokumentation
+description: Schrittanleitung zum Ändern von Einstellungen, z.B. von Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
 author: lonu
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
 ms.author: lonu
-ms.openlocfilehash: 0f68fa188dd58b276dce4009cdb37fed33d81d69
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: ab41707c06faa11dd2e1d519b72fb35ff6b9914a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39015913"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42835581"
 ---
-# <a name="change-screen-size-and-orientation-in-powerapps"></a>Ändern der Bildschirmgröße und -ausrichtung in PowerApps
-Anpassen einer App durch Ändern der Bildschirmgröße und -ausrichtung
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
+Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Erstellen Sie eine App, oder öffnen Sie eine App zum Bearbeiten.

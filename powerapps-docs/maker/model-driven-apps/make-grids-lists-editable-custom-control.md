@@ -1,6 +1,6 @@
 ---
-title: Modellgetriebene App-Raster(Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie das benutzerdefinierte Steuerelement „Bearbeitbares Raster” verwendet wird'
+title: Aktivieren der Bearbeitung von Rastern (Listen) in modellgesteuerten Apps mit dem benutzerdefinierten Steuerelement „Bearbeitbares Raster“ mit PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie das benutzerdefinierte Steuerelement „Bearbeitbares Raster“ verwenden.
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -9,132 +9,133 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: cefbc0c2-769b-4230-ab5a-b28a84630a42
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 704280dbed2177ba9a5467e2897980f78c31b050
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39688624"
 ---
-# <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Modellgetriebene App-Raster (Listen) editierbar machen mit Benutzerdefiniertes Steuerelement für bearbeitbares Raster
+# <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Aktivieren der Bearbeitung von Rastern (Listen) in modellgesteuerten Apps mit dem benutzerdefinierten Steuerelement „Bearbeitbares Raster“
 
-In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in Raster (manchmal auch Listen genannt) oder Unterraster auf Formularen eingeben. Sie mussten den Datensatz im Raster auswählen, um ein Formular zu öffnen, die Daten zu bearbeiten und dann zu speichern, was Schritte erforderte. Mit bearbeitbaren Rastern können Benutzer umfangreiche Inlinebearbeitung direkt von Rastern und Unterrastern aus vornehmen, ungeachtet dessen, ob sie eine Web-App, ein Tablet oder Smartphone verwenden.  
+In früheren Versionen von Dynamics CRM konnten Benutzer Daten nicht direkt in Raster (manchmal auch „Listen“ genannt) oder Unterraster von Formularen eingeben. Sie mussten einen Datensatz im Raster auswählen, um ein Formular zu öffnen, die Daten zu bearbeiten und dann zu speichern. Das heißt, es waren mehrere Schritte erforderlich. Mit bearbeitbaren Rastern können Benutzer die umfangreiche Inlinebearbeitung direkt aus Rastern und Unterrastern ausführen, unabhängig davon, ob sie eine Web-App, ein Tablet oder ein Smartphone verwenden.  
   
- ![Bearbeitbare Raster – Beispiele](media/editable-grid-examples.png "Bearbeitbare Raster – Beispiele")  
+ ![Beispiele für bearbeitbare Raster](media/editable-grid-examples.png "Beispiele für bearbeitbare Raster")  
   
- Wenn bearbeitbare Raster über das benutzerdefinierte Steuerelement für bearbeitbare Raster aktiviert werden, können Benutzer die meisten Feldtypen, einschließlich grundlegender Suchfelder und Optionssätze bearbeiten.  
+ Wenn bearbeitbare Raster über das benutzerdefinierte Steuerelement „Bearbeitbares Raster“ aktiviert werden, können Benutzer die meisten Feldarten bearbeiten, einschließlich Felder für die einfache Suche und Optionssätze.  
 
 **Bearbeitbare Raster unterstützen:**
   
--   Inline-Bearbeitung von Datensätzen auf der Ebene von Entitäten oder Unterrastern (einschließlich benutzerdefinierte Entitäten)  
+-   Inlinebearbeitung von Datensätzen auf Entitäts- oder Unterrasterebene (einschließlich benutzerdefinierter Entitäten)  
   
--   Systemansichten und persönliche Ansichten  
+-   Systemsichten und persönliche Ansichten  
   
--   Internet- und Mobilclienten  
+-   Web- und mobile Clients  
   
--   Navigation mit Tastatur oder Maus  
+-   Navigation mit einer Tastatur oder Maus  
   
--   Gruppieren und Sortieren (Sie können nach einer beliebigen Spalte in der aktuellen Ansicht gruppieren)  
+-   Gruppieren und Sortieren nach beliebigen Spalten in der aktuellen Ansicht  
   
--   Filtern  
+-   Filterung  
   
--   Spalten verschieben und ihre Größe ändern  
+-   Verschieben und Ändern der Größe von Spalten  
   
 -   Paginierung  
   
--   Änderungen aus einer Sitzung zu einer anderen speichern, zum Gruppieren, Sortieren, Filtern, Paginieren und Verschieben und Ändern der Größe von Spalten  
+-   Speichern von Änderungen in einer Sitzung für eine andere für Gruppierung, Sortierung, Filterung, Paginierung, Verschieben und Ändern der Größe von Spalten  
   
--   Suchkonfiguration  
+-   Konfigurieren der Suche  
   
--   Berechnete Felder und Rollup-Felder  
+-   Berechnete Felder und Rollupfelder  
   
--   Geschäftsregeln (Fehlermeldung anzeigen, Feldwert festlegen, Geschäft festlegen erforderlich, Standardwert festlegen, Feld sperren oder Sperrung aufheben)  
+-   Geschäftsregeln („Fehlermeldung anzeigen“, „Feldwert festlegen“, „Eingabe als erforderlich festlegen“, „Standardwert festlegen“, „Feld sperren oder entsperren“)  
   
 -   JavaScript-Ereignisse  
   
--   Aktivieren oder Deaktivieren von Zellen auf Basis der Sicherheitsrolle  
+-   Aktivieren/Deaktivieren von Zellen basierend auf der Sicherheitsrolle  
   
--   Benutzer können weiterhin Suche und Diagramme verwenden und auf die Aktionsleiste zugreifen, wie bei schreibgeschützten Rastern  
+-   Suchfunktionen, Diagramme und Zugriff auf die Aktionsleiste wie bei schreibgeschützten Rastern  
   
-## <a name="make-main-grids-editable"></a>Hauptraster bearbeitbar machen  
+## <a name="make-main-grids-editable"></a>Aktivieren der Bearbeitung von Hauptrastern  
   
-1.  Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
+1.  Öffnen Sie den [Projektmappen-Explorer](advanced-navigation.md#solution-explorer).  
   
-2.  Öffnen Sie in der Liste **Entitäten** die entsprechende Entität, wählen Sie die Registerkarte **Steuerelemente** aus, und wählen Sie dann **Steuerelement hinzufügen** aus.  
+2.  Öffnen Sie in der Liste **Entitäten** die entsprechende Entität, wählen Sie die Registerkarte **Steuerelemente** und dann **Steuerelement hinzufügen** aus.  
   
-     ![Benutzerdefiniertes Steuerelement für bearbeitbares Raster hinzufügen](media/add-editable-grids-custom-control.png "Benutzerdefiniertes Steuerelement für bearbeitbares Raster hinzufügen")  
+     ![Benutzerdefiniertes Steuerelement zum Hinzufügen eines bearbeitbaren Rasters](media/add-editable-grids-custom-control.png "Benutzerdefiniertes Steuerelement zum Hinzufügen eines bearbeitbaren Rasters")  
   
-3.  Wählen Sie im Dialogfeld **Steuerelement hinzufügen** die Option **Bearbeitbares Raster** aus, und wählen Sie dann **Hinzufügen** aus.  
+3.  Wählen Sie im Dialogfeld **Steuerelement hinzufügen** **Bearbeitbares Raster** und dann **Hinzufügen** aus.  
   
-4.  Wählen Sie in der Zeile **Bearbeitbares Raster**, die hinzugefügt wird, den/die Formfaktor(en) aus, auf den/die das Raster angewendet werden soll. Dadurch wird das bearbeitbare Rastersteuerelement zum Standardsteuerelement für den/die ausgewählten Formfaktor(en).  
+4.  Wählen Sie in der hinzugefügten Zeile **Bearbeitbares Raster** die Formularfaktoren aus, auf die Sie das Raster anwenden möchten. Dadurch wird „Bearbeitbares Raster“ zum Standardsteuerelement für die ausgewählten Formularfaktoren.  
   
-     ![Bearbeitbare Rasterzeile mit Formfaktor-Auswahl](media/editable-grid-row-wit-factor-selection.png "Bearbeitbare Rasterzeile mit Formfaktor-Auswahl")    
+     ![Zeile „Bearbeitbares Raster“ mit Formularfaktorauswahl](media/editable-grid-row-wit-factor-selection.png "Zeile „Bearbeitbares Raster“ mit Formularfaktorauswahl")    
 
    > [!NOTE]
-   >  Zur Ausführungszeit können Benutzer zwischen schreibgeschützten Rastern und bearbeitbaren Rastern umschalten.  
+   >  Zur Laufzeit können Benutzer zwischen bearbeitbaren Rastern und schreibgeschützten Rastern wechseln.  
       
-5.  Um eine Suche hinzuzufügen, wählen Sie in der Optionsgruppe **Bearbeitbares Raster** die Option **Suche hinzufügen** aus, und dann im Dialogfeld **Eigenschaft „Suche hinzufügen” konfigurieren**:  
+5.  Um eine Suche hinzuzufügen, wählen Sie in der Optionsgruppe **Bearbeitbares Raster** **Suche hinzufügen** aus, und nehmen Sie dann im Dialogfeld **Suche hinzufügen: Eigenschaft konfigurieren** die folgenden Einstellungen vor:  
   
-    1.  Wählen Sie in der Liste **Verfügbare Ansichten** die Ansicht aus, die der Suche hinzugefügt werden soll (z. B. **Meine aktiven Konten**).  
+    1.  Wählen Sie in der Liste **Verfügbare Ansichten** die Ansicht aus, der Sie die Suche hinzufügen möchten (z.B. **Meine aktiven Firmen**).  
   
-    2.  Wählen Sie in der Liste **Verfügbare Spalten** die Suchenspalte, die hinzugefügt werden soll (z. B. **Primärer Kontakt**).  
+    2.  Wählen Sie in der Liste **Verfügbare Spalten** die hinzuzufügende Suchspalte (z.B. **Primärer Kontakt**) aus.  
   
     3.  Wählen Sie in der Liste **Standardansicht** die Datenquelle für das Suchfeld aus.  
   
-    4.  Wenn Sie die angezeigten Datensätze beschränken möchten, aktivieren Sie das Kontrollkästchen **Nur Datensätze anzeigen, für die Folgendes zutrifft:** aus, und wählen Sie dann die Kriterien in der Liste aus, und wählen Sie **OK** aus.  
+    4.  Wenn Sie die angezeigten Datensätze einschränken möchten, aktivieren Sie das Kontrollkästchen **Nur Datensätze anzeigen, für die Folgendes zutrifft**, wählen Sie Ihre Kriterien aus der Liste und dann **OK** aus.  
   
-         ![Suche im Steuerelement Bearbeitbares Unterraster hinzufügen](media/add-lookup-in-editable-grid-control.png "Suche im Steuerelement Bearbeitbares Unterraster hinzufügen")  
+         ![„Suche hinzufügen“ im Steuerelement „Bearbeitbares Raster“](media/add-lookup-in-editable-grid-control.png "„Suche hinzufügen“ im Steuerelement „Bearbeitbares Raster“")  
      
-6.  Wenn Sie ein geschachteltes Raster haben, wählen Sie die Stiftschaltfläche für **Geschachtelte Rasteransicht** aus, und wählen dann die Entität und die Ansicht für das geschachtelte Raster aus. Wählen Sie unter **ID des übergeordneten geschachtelten Rasters** die Beziehung für die Entitäten aus. Beispielsweise verbindet das ParentAccountID-Feld **Firma** und **Kontakt** die Entitäten.  
+6.  Wenn Sie ein geschachteltes Raster haben, wählen Sie die Schaltfläche mit dem Stift für **Geschachtelte Rasteransicht** und dann die Entität sowie die Ansicht für das geschachtelte Raster aus. Wählen Sie für **Übergeordnete ID des geschachtelten Rasters** die Beziehung für die Entitäten aus. Das Feld „ParentAccountID“ verbindet beispielsweise die Entitäten **Konto** und **Kontakt**.  
   
     > [!NOTE]
-    >  Geschachtelte Raster sind nur für Telefone und Tablets, nicht für das Internet verfügbar.  
+    >  Geschachtelte Raster sind nur für Smartphones und Tablets verfügbar – nicht für das Web.  
   
-7.  Wenn Sie dem Benutzer die Benutzung der Gruppendaten durch eine beliebige Spalte in der Ansicht nicht gestatten möchten (weil Sie etwa Platz sparen möchten), wählen Sie in der Zeile **Nach Spalte gruppieren** die Stiftschaltfläche aus, und wählen Sie dann im Dialogfeld, **Eigenschaft „Nach Spalte gruppieren” konfigurieren** die Option **Deaktiviert** aus, und wählen Sie dann **OK** aus.  
+7.  Wenn Sie einem Benutzer nicht erlauben möchten, Daten in der Ansicht nach Spalten zu gruppieren (z.B. um Platz zu sparen), wählen Sie in der Zeile **Gruppieren nach Spalte** die Schaltfläche mit dem Stift und im Dialogfeld **Gruppieren nach Spalte: Eigenschaft konfigurieren** **Deaktiviert** und dann **OK** aus.  
   
     > [!TIP]
-    >  Dies ist vor allem für Unterraster auf Formularen hilfreich.  
+    >  Dies ist vor allem für Unterraster in Formularen nützlich.  
   
-8.  Wenn Sie JavaScript-Ereignisse hinzufügen möchten, wählen Sie die Registerkarte **Ereignisse** und wählen Sie dann die entsprechenden Entitäten, Felder und Ereignisse aus. Weitere Informationen: [Dokumentation für Entwickler: Bearbeitbare Raster verwenden](/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365.md)  
+8.  Wenn Sie JavaScript-Ereignisse hinzufügen möchten, wählen Sie die Registerkarte **Ereignisse** und dann die entsprechenden Entitäten, Felder und Ereignisse aus. Weitere Informationen finden Sie unter [Dokumentation für Entwickler: Verwenden von bearbeitbaren Rastern](/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365.md).  
   
-     ![Hinzufügen von Ereignissen im Steuerelement Bearbeitbares Unterraster](media/add-events-in-editable-grid-control.png "Hinzufügen von Ereignissen im Steuerelement Bearbeitbares Unterraster")  
+     ![Ereignisse im Steuerelement „Bearbeitbares Raster“ hinzufügen](media/add-events-in-editable-grid-control.png "Ereignisse im Steuerelement „Bearbeitbares Raster“ hinzufügen")  
   
-9. Um Ihre Arbeit zu speichern, wählen Sie **Speichern** auf der Aktionsleiste aus.  
+9. Wählen Sie zum Speichern Ihrer Arbeit in der Aktionsleiste **Speichern** aus.  
   
-10. Wenn Sie bereit sind, Änderungen für Ihr Team zur Verfügung zu stellen, wählen Sie **Veröffentlichen** auf der Aktionsleiste aus.  
+10. Wenn Sie Ihrem Team Änderungen zur Verfügung stellen möchten, wählen Sie in der Aktionsleiste **Veröffentlichen** aus.  
   
-11. Um die Änderungen zu testen, gehen Sie zu der Ansicht, die Sie in Schritt 5 angegeben haben, und nehmen dann Inline-Bearbeitungsänderungen vor.  
+11. Um Ihre Änderungen zu testen, gehen Sie zu der Ansicht, die Sie in Schritt 5 angegeben haben, und nehmen Sie einige Änderungen an der Inlinebearbeitung vor.  
   
-## <a name="make-a-sub-grid-on-a-form-editable"></a>Ein Unterraster in einem Formular bearbeitbar machen
+## <a name="make-a-sub-grid-on-a-form-editable"></a>Aktivieren der Bearbeitung eines Unterrasters in einem Formular
 
 > [!NOTE] 
-> - Um die Änderung an einem bearbeitbaren Raster innerhalb eines Unterrasters zu speichern, muss der Benutzer explizit speichern, bevor er aus dem Formular heraus navigiert.
-> - Wenn Sie Vorgängerformulare verwenden (Versionen vor Dynamics CRM 2016) und ein bearbeitbares Raster für ein Unterraster aktivieren, wird das bearbeitbare Unterraster nicht gerendert. Systemadministratoren können Vorgängerformulare in den Systemeinstellungen nach Bedarf deaktivieren.
+> - Um Änderung an einem bearbeitbaren Raster in einem Unterraster zu speichern, muss der Benutzer einen expliziten Speichervorgang ausführen, bevor er das Formular verlässt.
+> - Wenn Sie ältere Formulare (Versionen vor Dynamics CRM 2016) verwenden und ein bearbeitbares Raster auf einem Unterraster aktivieren, wird das bearbeitbare Unterraster nicht gerendert. Systemadministratoren können bei Bedarf ältere Formulare in den Systemeinstellungen deaktivieren.
   
-1.  Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).  
+1.  Öffnen Sie den [Projektmappen-Explorer](advanced-navigation.md#solution-explorer).  
   
 2.  Öffnen Sie das Formular, das das Unterraster enthält.  
   
-3.  Wählen Sie das entsprechende Steuerelement aus, und wählen Sie im Menüband dann **Eigenschaften ändern** aus.  
+3.  Wählen Sie das entsprechende Steuerelement und dann im Menüband **Eigenschaften ändern** aus.  
   
-4.  Im Dialogfeld **Eigenschaften festlegen** wählen Sie **Steuerelemente** aus, wählen Sie dann **Steuerelement hinzufügen** aus, und folgen Sie anschließend den gleichen Schritten, die oben aufgelistet wurden.  
+4.  Wählen Sie im Dialogfeld **Eigenschaften festlegen** **Steuerelemente** und **Steuerelement hinzufügen** aus, und führen Sie dann die oben aufgeführten Schritte aus.  
   
 ## <a name="supported-standard-entities"></a>Unterstützte Standardentitäten  
   
 ||||  
 |-|-|-|  
-|**Internet/TabletTelefon**|**Nur Tablet/Telefon**|**Nur Internet**|  
-|Firma<br /><br /> Termin<br /><br /> Buchbare Ressource<br /><br /> Buchbare Ressourcenbuchung<br /><br /> Kopfzeile für buchbare Ressourcenbuchungen<br /><br /> Buchbare Ressourcenkategorie<br /><br /> Zuordnung der buchbaren Ressourcenkategorie<br /><br /> Merkmal der buchbaren Ressource<br /><br /> Buchbare Ressourcengruppe<br /><br /> Buchungsstatus<br /><br /> Anfrage<br /><br /> Kateg.<br /><br /> Merkmal<br /><br /> Mitbewerber<br /><br /> Kontakt<br /><br /> E-Mail<br /><br /> Berechtigung<br /><br /> Feedback<br /><br /> Rechnung<br /><br /> Wissensartikel<br /><br /> Wissensartikelansichten<br /><br /> Wissensdatenbankdatensatz<br /><br /> Lead<br /><br /> Verkaufschance<br /><br /> Auftrag<br /><br /> Telefonanruf<br /><br /> Preisliste<br /><br /> Produkt<br /><br /> Warteschlange<br /><br /> Angebot<br /><br /> Bewertungsmodell<br /><br /> Bewertungswert<br /><br /> SLA-KPI-Instanz<br /><br /> Social Media-Aktivität<br /><br /> Social Media-Profil<br /><br /> Synchronisierungsfehler<br /><br /> Aufgabe<br /><br /> Teams<br /><br /> Benutzer|Aktivität<br /><br /> Anlage<br /><br /> Element der Kanalzugriffsprofilregel<br /><br /> Mitbewerberadresse<br /><br /> Verbindung<br /><br /> Verbindungsrolle<br /><br /> E-Mail-Signatur<br /><br /> E-Mail-Vorlage<br /><br /> Abgelaufener Prozess<br /><br /> Rechnung (Produkt)<br /><br /> Vorfall mit Wissensartikel<br /><br /> Lead für Vertriebs-Verkaufschance<br /><br /> Prozess<br /><br /> Postfach<br /><br /> Neuer Prozess<br /><br /> Hinweise<br /><br /> Verkaufschance (Produkt)<br /><br /> Vertriebsprozess Verkaufschance<br /><br /> Auftrag (Produkt)<br /><br /> Organisation<br /><br /> Telefon-zu-Anfrage-Prozess<br /><br /> Preislistenelement<br /><br /> Warteschlangenelement<br /><br /> Angebot (Produkt)<br /><br /> SharePoint-Dokument<br /><br /> Übersetzungsprozess|Kampagne<br /><br /> Kampagnenaktivität<br /><br /> Kampagnenreaktion<br /><br /> Kanalzugriffsprofil<br /><br /> Kanalzugriffsprofilregel<br /><br /> Vertrag<br /><br /> Anspruchsvorlage<br /><br /> Externe Partei<br /><br /> Fax<br /><br /> Brief<br /><br /> Marketingliste<br /><br /> Position<br /><br /> Schnellkampagne<br /><br /> Terminserie<br /><br /> Vertriebsdokumentation<br /><br /> SLA|  
+|**Web/Tablet/Smartphone**|**Nur Tablet/Smartphone**|**Nur Web**|  
+|Konto<br /><br /> Appointment<br /><br /> Bookable Resource<br /><br /> Bookable Resource Booking<br /><br /> Bookable Resource Booking Header<br /><br /> Bookable Resource Category<br /><br /> Bookable Resource Category Assn<br /><br /> Bookable Resource Characteristic<br /><br /> Bookable Resource Group<br /><br /> Booking Status<br /><br /> Case<br /><br /> Kategorie<br /><br /> Characteristic<br /><br /> Competitor<br /><br /> Kontakt<br /><br /> E-Mail-Adresse<br /><br /> Entitlement<br /><br /> Feedback<br /><br /> Invoice<br /><br /> Wissensartikel<br /><br /> Wissensartikelansichten<br /><br /> Wissensdatenbank-Datensatz<br /><br /> Lead<br /><br /> Opportunity<br /><br /> Order<br /><br /> Telefonanruf<br /><br /> Price List<br /><br /> Product<br /><br /> Warteschlange<br /><br /> Quote<br /><br /> Rating Model<br /><br /> Rating Value<br /><br /> SLA-KPI-Instanz<br /><br /> Social Media-Aktivität<br /><br /> Social Media-Profil<br /><br /> Synchronisierungsfehler<br /><br /> Task<br /><br /> Team<br /><br /> User|Aktivität<br /><br /> Anlage<br /><br /> Element der Kanalzugriffsprofil-Regel<br /><br /> Mitbewerberadresse<br /><br /> Verbindung<br /><br /> Verbindungsrolle<br /><br /> E-Mail-Signatur<br /><br /> E-Mail-Vorlage<br /><br /> Abgelaufener Prozess<br /><br /> Rechnung (Produkt)<br /><br /> Wissensartikelvorfall<br /><br /> Lead für Vertriebsprozess Verkaufschance<br /><br /> Prozess<br /><br /> Mailbox<br /><br /> Neuer Prozess<br /><br /> Note<br /><br /> Verkaufschance (Produkt)<br /><br /> Vertriebsprozess Verkaufschance<br /><br /> Auftrag (Produkt)<br /><br /> Organisation<br /><br /> Telefon-zu-Anfrage-Prozess<br /><br /> Price List Item<br /><br /> Queue Item<br /><br /> Angebot (Produkt)<br /><br /> SharePoint-Dokument<br /><br /> Übersetzungsprozess|Kampagne<br /><br /> Kampagnenaktivität<br /><br /> Kampagnenreaktion<br /><br /> Kanalzugriffsprofil<br /><br /> Kanalzugriffsprofil-Regel<br /><br /> Vertrag<br /><br /> Berechtigungsvorlage<br /><br /> Externe Partei<br /><br /> Fax<br /><br /> Letter<br /><br /> Marketingliste<br /><br /> Position<br /><br /> Schnellkampagne<br /><br /> Terminserie<br /><br /> Vertriebsdokumentation<br /><br /> SLA|  
  
-##  <a name="data-types-that-arent-editable-in-an-editable-grid"></a>Datentypen, die in einem bearbeitbaren Raster nicht bearbeitbar sind
-Die folgenden Datentypen sind nicht in bearbeitbaren Rastern bearbeitbar: Kunden und Partylist-Suchfelder; Zusammengesetzte (Adress-) Felder, Status/Statusfelder; mit der Suchentität verknüpfte Felder (beispielsweise umfasst die Firmenentität eine Kontaktsuche, in der das Kontaktfeld bearbeitbar ist, jedoch ist das Feld EmailAdress (Kontakt) nicht bearbeitbar).  
+##  <a name="data-types-that-arent-editable-in-an-editable-grid"></a>Nicht bearbeitbare Datentypen in einem bearbeitbaren Raster
+Die folgenden Datentypen können in bearbeitbaren Rastern nicht bearbeitet werden: Suchfelder für Kunden und Parteilisten; zusammengesetzte (Adress-)Felder; Felder für Status/Zustand; Suchfelder für Entitäten (z.B. beinhaltet die Entität „Konto“ eine Kontaktsuche, wobei das Feld „Kontakt“ bearbeitbar ist, das Feld „EmailAdress(Contact)“ jedoch nicht).  
  
 ## <a name="next-steps"></a>Nächste Schritte  
  [Verwenden von Tastenkombinationen in bearbeitbaren Rastern](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts#editable-grids-views)

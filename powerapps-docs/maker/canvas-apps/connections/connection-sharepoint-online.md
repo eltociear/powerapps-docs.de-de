@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
 ms.author: ankitsar
-ms.openlocfilehash: 8019068155c88465f0f4202807fe763f2e4787b6
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195517"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42836733"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Verbinden mit SharePoint aus PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -44,7 +48,7 @@ Sie können Daten aus einer benutzerdefinierten Liste, nicht jedoch aus einer Bi
 | Verwaltete Metadaten |Ja (schreibgeschützt) | |
 | Bewertung |Nein | |
 
-Spalten mit Leerzeichen können von PowerApps gelesen werden, doch die Leerzeichen werden durch den hexadezimalen Escapecode **"\_X0020\_"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+PowerApps kann Spalten mit Leerzeichen lesen, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_X0020\_"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. [Registrieren Sie sich](../../signup-for-powerapps.md) bei PowerApps.
@@ -103,7 +107,7 @@ Spalten mit Leerzeichen können von PowerApps gelesen werden, doch die Leerzeich
 
     ![Auswählen der Tabellen in SharePoint](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    Nicht alle Typen von Listen werden standardmäßig angezeigt. Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld **Benutzerdefinierten Listennamen eingeben** ein.
+    Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen.  Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld **Benutzerdefinierten Listennamen eingeben** ein.
 
     ![Benutzerdefinierte Liste in SharePoint](./media/connection-sharepoint-online/custom-list.png)
 

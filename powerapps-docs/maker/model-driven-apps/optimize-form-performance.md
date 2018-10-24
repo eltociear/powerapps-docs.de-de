@@ -1,6 +1,6 @@
 ---
-title: Optimieren Sie die Leistung modellgesteuerter Apps in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Formularentwürfe vermieden werden, die bewirken, das ein Formular langsam geladen wird'
+title: Optimieren der Formularleistung einer modellgesteuerten App in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Formularentwürfe vermeiden, die das Laden eines Formulars verlangsamen.
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -9,55 +9,56 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 59cfa5e6-638a-437f-a462-fddfd26fb07d
 caps.latest.revision: 8
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: c9dd764fe565b59e68411dabf453207c4e01a320
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39682585"
 ---
-# <a name="optimize-model-driven-app-form-performance"></a>Optimieren Sie die Leistung modellgesteuerter App-Formulare
+# <a name="optimize-model-driven-app-form-performance"></a>Optimieren der Formularleistung einer modellgesteuerten App
 
-Formulare, die langsam geladen werden, können die Produktivität beeinträchtigen und dazu führen, dass Benutzer nicht damit arbeiten wollen. Befolgen Sie diese Empfehlungen, um die Ladegeschwindigkeit Ihrer Formulare zu maximieren. Viele dieser Empfehlungen beziehen sich darauf, wie ein Entwickler Formularskripte für Ihre Organisation implementiert. Besprechen Sie diese Empfehlungen mit Entwicklern, die Formularskripte für Ihre Formulare erstellen.  
+Formulare, die langsam geladen werden, können die Produktivität und Benutzerakzeptanz beeinträchtigen. Befolgen Sie die folgenden Empfehlungen, um die benötigte Dauer zum Laden von Formularen zu minimieren. Viele dieser Empfehlungen beziehen sich darauf, wie ein Entwickler Formularskripts für Ihre Organisation implementieren kann. Besprechen Sie diese Empfehlungen mit Entwicklern, die Formularskripts für Ihre Formulare erstellen.  
   
 <a name="BKMK_FormDesign"></a>   
-## <a name="form-design"></a>Formulardesign  
- Denken Sie an die Interaktion des Benutzers mit dem Formular und der Datenmenge, die damit angezeigt werden muss.  
+## <a name="form-design"></a>Formularentwurf  
+ Ziehen Sie die Interaktion des Benutzers mit dem Formular und der Menge der Daten in Betracht, die darin angezeigt werden müssen.  
   
- **Verwenden Sie nur eine minimale Anzahl von Feldern**  
- Je mehr Felder ein Formular enthält, umso mehr Daten müssen für die Anzeige jedes Datensatzes über das Internet oder Intranet übertragen werden.  
+ **Anzahl der Felder auf ein Minimum reduzieren**  
+ Je mehr Felder Sie in einem Formular verwalten, desto mehr Daten müssen über das Internet oder das Intranet für die Anzeige der Datensätze übertragen werden.  
   
 <a name="BKMK_FormScripts"></a>   
 ## <a name="form-scripts"></a>Formularskripts  
- Wenn Sie Anpassungen mithilfe von Formularskripts anwenden, achten Sie darauf, dass der Entwickler diese Strategien kennt, um die Leistung verbessern zu können.  
+ Stellen Sie bei Anpassungen mithilfe von Formularskripts sicher, dass der Entwickler diese Strategien zur Leistungsverbesserung kennt.  
   
- **Vermeiden Sie nicht benötigte JavaScript-Webressourcebibliotheken**  
- Je mehr Skripts Sie dem Formular hinzufügen, um so länger dauert ihr Download. Normalerweise werden Skripts in Ihrem Browser zwischengespeichert, wenn sie zum ersten Mal geladen werden, die Leistung beim ersten Anzeigen eines Formulars macht oft erheblichen Eindruck.  
+ **Einbeziehung unnötiger JavaScript-Webressourcenbibliotheken vermeiden**  
+ Je mehr Skripts Sie dem Formular hinzufügen, desto mehr Zeit benötigen Sie für den Download. In der Regel werden Skripts in Ihrem Browser zwischengespeichert, nachdem diese zum ersten Mal geladen wurden, allerdings ist die Leistung bei der ersten Anzeige des Formulars oftmals ein wesentlicher Faktor für den Eindruck, den Benutzer bekommen.  
   
- **Vermeiden Sie es, alle Skripts im Onload-Ereignis zu laden**  
- Wenn Sie Code haben, der nur `OnChange`-Ereignisse für Felder oder das `OnSave`-Ereignis unterstützt, stellen Sie sicher, die Skriptbibliothek mit dem Ereignishandler für diese Ereignisse anstelle des `OnLoad`-Ereignisses festzulegen. Dadurch kann das Laden dieser Bibliotheken verschoben werden, was die Leistung beim Laden des Formulars erhöht.  
+ **Laden von sämtlichen Skripts im OnLoad-Ereignis vermeiden**  
+ Wenn Sie über Code verfügen, der nur `OnChange`-Ereignisse für Felder oder das `OnSave`-Ereignis unterstützt, legen Sie anstelle des `OnLoad`-Ereignisses die Skriptbibliothek mit dem Ereignishandler für diese Ereignisse fest. So kann das Laden dieser Bibliotheken zurückgestellt und die Ladeleistung von Formularen erhöht werden.  
   
- **Verwenden Sie eingeklappte Registerkarten, um das Laden von Webressourcen zu verschieben**  
- Wenn Webressourcen oder IFRAMES in Abschnitten einer eingeklappten Registerkarte enthalten sind, werden sie nicht geladen. Sie werden geladen, wenn die Registerkarte erweitert wird. Wenn sich der Status der Registerkarte ändert, tritt das `TabStateChange`-Ereignis ein. Jeder Code, der erforderlich ist, um Webressourcen oder IFRAMEs in eingeklappten Registerkarten zu unterstützen, kann Ereignishandler für das **TabStateChange**-Ereignis verwenden und Code reduzieren, der andernfalls im `OnLoad`-Ereignis ausgeführt werden müsste.  
+ **Laden von Webressourcen mit reduzierten Registerkarten zurückstellen**  
+ Wenn Webressourcen oder IFRAMES in die Abschnitte einer reduzierten Registerkarte eingeschlossen werden, werden sie nicht in dieser geladen. Sie werden nur geladen, wenn die Registerkarte erweitert ist. Wenn sich der Registerkartenstatus ändert, tritt das `TabStateChange`-Ereignis auf. Code, der zur Unterstützung von Webressourcen oder IFRAMEs in reduzierten Registerkarten erforderlich ist, kann Ereignishandler für das Ereignis **TabStateChange** enthalten und Code, der sonst im `OnLoad`-Ereignis auftreten muss, kann reduziert werden.  
   
- **Richten Sie Standard-Sichtbarkeitsoptionen ein**  
- Vermeiden Sie die Verwendung von Formularskripts im `OnLoad`-Ereignis, die Formularelemente ausblenden. Richten Sie stattdessen die standardmäßigen Sichtbarkeitsoptionen für Formularelementen, die ausgeblendet werden könnten, so ein, dass sie beim Laden des Formulars nicht standardmäßig sichtbar sind. Verwenden Sie dann Skripts im `OnLoad`-Ereignis, um die gewünschten Formularelemente anzuzeigen.  
+ **Standardoptionen für die Sichtbarkeit festlegen**  
+ Verwenden Sie keine Formularskripts im `OnLoad`-Ereignis, das Formularelemente ausblendet. Legen Sie die Standardoptionen für die Sichtbarkeit stattdessen für Formularelemente fest, die eventuell ausgeblendet sind, sodass sie beim Laden des Formulars standardmäßig nicht sichtbar sind. Verwenden Sie dann Skripts im `OnLoad`-Ereignis, damit die gewünschten Formularelemente angezeigt werden.  
   
 <a name="BKMK_CommandBar"></a>   
-## <a name="command-bar-or-ribbon"></a>Menüband oder Befehlsleiste  
- Beachten Sie diese Empfehlungen, wenn Sie die Befehlsleiste oder das Menüband bearbeiten  
+## <a name="command-bar-or-ribbon"></a>Befehlsleiste oder Menüband  
+ Beachten Sie diese Empfehlungen, wenn Sie die Befehlsleiste oder das Menüband bearbeiten.  
   
- **Verwenden Sie nur eine minimale Anzahl von Steuerelementen**  
- Prüfen Sie innerhalb der Befehlsleiste oder des Menübands für das Formular, welche Steuerelemente erforderlich sind, und blenden Sie die aus, die nicht benötigt werden. Jedes angezeigte Steuerelement führt dazu, dass mehr Ressourcen in den Browser heruntergeladen werden müssen.  
+ **Anzahl der Steuerelemente auf ein Minimum reduzieren**  
+ Bewerten Sie in der Befehlsleiste oder im Menüband für das Formular, welche Steuerelemente erforderlich sind, und blenden Sie solche aus, die Sie nicht benötigen. Jedes Steuerelement, das angezeigt wird, erhöht die Anzahl der Ressourcen, die im Browser heruntergeladen werden müssen.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- [Erstellen und Gestalten von Formularen](create-design-forms.md)    
+ [Erstellen und Entwerfen von Formularen](create-design-forms.md)    
     
  

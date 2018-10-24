@@ -1,6 +1,6 @@
 ---
-title: Definieren und Abfragen von hierarchischen Daten Common Data Service for Apps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie hierarchiebezogene Daten festlegen und abfragen'
+title: Definieren und Abfragen hierarchischer Daten mit Common Data Service für Apps | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie hierarchiebezogene Daten definiert und abgefragt werden können.
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
@@ -9,88 +9,89 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 4dad7da635156350d104d68108ac4acfbb991862
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39682633"
 ---
-# <a name="define-and-query-hierarchically-related-data"></a>Hierarchiebezogene Daten festlegen und abfragen
+# <a name="define-and-query-hierarchically-related-data"></a>Definieren und Abfragen von hierarchiebezogenen Daten
 
-Sie können wertvolle Unternehmenseinblicke erhalten, indem Sie hierarchisch verknüpften Daten festlegen und Abfragen. Die hierarchischen Modellierungs- und Visualisierungsfähigkeiten bieten Ihnen eine Reihe von Vorteilen:  
+Sie können wertvolle Geschäftsinformationen gewinnen, indem Sie hierarchiebezogene Daten definieren und abfragen. Die hierarchischen Modellierungs- und Visualisierungsfunktionen bieten Ihnen eine Reihe von Vorteilen:  
   
-- Anzeigen und Durchsuchen komplexer hierarchischer Informationen.  
-- Anzeigen von Key Performance Indicators (KPIs) in der Kontextansicht einer Hierarchie.  
-- Visuelles Analysieren wichtiger Informationen über das Internet und die Tablets hinweg.  
+- Anzeigen und Untersuchen von komplexen hierarchischen Informationen  
+- Anzeigen von Key Performance Indicators (KPIs) in der kontextbezogenen Ansicht einer Hierarchie  
+- Visuelles Analysieren von wichtigen Informationen über das Web und die Tablets  
   
-Einige Standardobjekte haben bereits Hierarchien definiert. Andere Entitäten, einschließlich benutzerdefinierter Entitäten, können für eine Hierarchie aktiviert werden, und Sie können die Visualisierungen für diese erstellen. 
+Für einige Standardentitäten sind bereits Hierarchien definiert. Andere Entitäten, einschließlich benutzerdefinierter Entitäten, können für eine Hierarchie aktiviert werden, und Sie können Visualisierungen für diese erstellen. 
 
-## <a name="define-hierarchical-data"></a>Definieren Sie hierarchische Daten
+## <a name="define-hierarchical-data"></a>Definieren von hierarchischen Daten
 
-Mit Common Data Service for Apps werden hierarchische Datenstrukturen durch *auf sich selbst verweisende* Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. 
+Bei Common Data Service für Apps werden hierarchische Datenstrukturen durch *auf sich selbst verweisende* 1:n-Beziehungen der verknüpften Datensätze unterstützt. 
 
 > [!NOTE]
-> *Auf sich selbst verweisen* bedeutet, dass die Entität mit sich selbst verknüpft ist. Beispielsweise enthält die Firmenentität ein Suchfeld, um sie einem anderen Firmenentitätsdatensatz zuzuweisen.
+> *Auf sich selbst verweisend* bedeutet, dass die Entität mit sich selbst verknüpft ist. Die Firmenentität beispielsweise enthält ein Suchfeld, um es einem anderen Entitätsfirmendatensatz zuzuordnen.
 
-Wenn in der Beziehungsdefinition eine auf sich selbst verweisende eins zu viele (1:N)-Beziehung vorhanden ist, kann die Option **Hierarchisch** auf **Ja** festgelegt werden.
+Bei einer auf sich selbst verweisenden 1:n-Beziehung ist die Option **Hierarchisch** in der Beziehungsdefinition verfügbar, die auf **Ja** festgelegt werden kann.
 
 ![Hierarchische Einstellung in der Beziehungsdefinition](media/self-referential-relationship-car-solution-explorer.png)
 
-Um die Daten als Hierarchie abzufragen, müssen Sie die auf sich selbst verweisenden Eins-zu-Viele (1:N)-Beziehungen als hierarchisch festlegen. Dies ist nur mit dem Projektmappen-Explorer möglich.
+Um die Daten als Hierarchie abzufragen, müssen Sie auf sich selbst verweisende 1:n-Beziehungen der Entität als hierarchisch festlegen. Dies kann nur über den Lösungs-Explorer erfolgen.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-So aktivieren Sie die Hierarchie  
+Gehen Sie zum Aktivieren der Hierarchie wie folgt vor:  
   
-1. Während dem [Anzeigen von 1:N-Beziehungen](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships) wählen Sie die sich selbst verweisende Beziehung aus, die Sie bearbeiten möchten.
-2. In **Beziehungsdefinition** legen Sie **Hierarchisch** auf **Ja** fest.  
+1. Wählen Sie beim [Anzeigen von 1:n-Beziehungen](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships) die auf sich selbst verweisende Beziehung aus, die Sie bearbeiten möchten.
+2. Legen Sie in der **Beziehungsdefinition** für **Hierarchisch** die Einstellung **Ja** fest.  
   
 > [!NOTE]
-> - Einige der standardmäßigen (1:N)-Beziehungen können nicht angepasst werden. Dieses hindert Sie, diese Beziehungen als hierarchisch festzulegen.  
-> - Sie können eine hierarchische Beziehung für die auf sich selbst verweisenden Beziehungen des Systems festlegen. Hierzu zählen die auf sich selbst verweisenden 1:n-Beziehungen vom Systemtyp, beispielsweise die "contact_master_contact"-Beziehung.  
+> - Einige integrierte 1:n-Beziehungen sind nicht anpassbar. Dadurch wird verhindert, dass diese Beziehungen als hierarchisch festgelegt werden.  
+> - Sie können eine hierarchische Beziehung für die Systembeziehungen angeben, die auf sich selbst verweisen. Hierzu zählen die auf sich selbst verweisenden 1:n-Beziehungen des Systemtyps, wie etwa die Beziehung „contact_master_contact“.  
 
 > [!IMPORTANT]
-> Sie können mehrere auf sich selbst verweisende Beziehungen haben, aber nur eine Beziehung pro Entität kann als hierarchische Beziehung definiert werden. Wenn Sie versuchen, die Einstellung nach der Übernahme zu ändern, erhalten Sie eine Warnung:
+> Sie können über mehrere auf sich selbst verweisende Beziehungen verfügen, jedoch kann nur eine Beziehung pro Entität als hierarchische Beziehung definiert werden. Wenn Sie versuchen, die einmal angewendete Einstellung zu ändern, wird folgende Warnung angezeigt:
 >
-> - **Bei Deaktivierung:** Falls Sie die Hierarchieeinstellung für diese Beziehung deaktivieren, funktionieren keine Rollupdefinitionen, Prozesse und Ansichten, die diese Hierarchie verwenden. Möchten Sie fortfahren? 
-> - **Bei Aktivierung:** Falls Sie die Hierarchieeinstellung für diese Beziehung aktivieren, werden alle Rollupdefinitionen ungültig, die die vorhandene Hierarchie verwenden. Möchten Sie fortfahren?
+> - **Bei Deaktivierung**: Wenn Sie die Hierarchieeinstellung für diese Beziehung deaktivieren, funktionieren die Rollupdefinitionen, Prozesse und Ansichten, die diese Hierarchie verwenden, nicht. Möchten Sie fortfahren? 
+> - **Bei Aktivierung**: Wenn Sie die Hierarchieeinstellung für diese Beziehung aktivieren, werden alle Rollupdefinitionen, Prozesse und Ansichten, die die vorhandene Hierarchie verwenden, ungültig. Möchten Sie fortfahren?
 >
-> Sofern Sie nicht sicher sind, dass es keine weiteren Abhängigkeiten auf der vorhandenen Hierarchie gibt, sollten Sie in einer beliebigen Dokumentation zur Bereitstellung nachschlagen oder sich an die Systemanpasser wenden, um nachvollziehen zu können, wie die vorhandene hierarchische Beziehung verwendet wird, bevor Sie fortfahren.
+> Wenn Sie sicher sind, dass keine anderen Abhängigkeiten zu der vorhandenen Hierarchie bestehen, sollten Sie die Dokumentation zur Bereitstellung lesen oder sich mit anderen Anpassern besprechen, um in Erfahrung zu bringen, wie die vorhandene hierarchische Beziehung verwendet wird, bevor Sie fortfahren.
 
 <a name="BKMK_Querydata"></a> 
   
 ## <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten  
 
-Ohne eine definierte Hierarchie müssen hierarchische Daten die verknüpften Datensätze iterativ abfragen, um abgerufen zu werden. Bei einer definierten Hierarchie können Sie verknüpfte Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps#setting-conditions-for-workflow-actions). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
+Ohne eine definierte Hierarchie müssen Sie zum Abrufen von hierarchischen Daten iterativ die verknüpften Datensätze abfragen. Mit einer definierten Hierarchie können Sie die verknüpften Daten als Hierarchie in einem Schritt abfragen. Mit der Logik **Unter** und **Nicht unter** können Sie Datensätze abfragen. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workflow-Editor verfügbar gemacht. Weitere Informationen zur Verwendung dieser Operatoren finden Sie unter [Konfigurieren von Workflowphasen und -schritten](/flow/configure-workflow-steps#setting-conditions-for-workflow-actions). Weitere Informationen zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
 
 > [!NOTE]
-> Entwickler können diese Operatoren auch im Code verwenden. Weitere Informationen: [Entwicklerdokumentation: Hierarchische Daten abfragen](/dynamics365/customer-engagement/developer/org-service/query-hierarchical-data).
+> Entwickler können diese Operatoren ebenfalls im Code verwenden. Weitere Informationen finden Sie unter [Abfragen von hierarchischen Daten](/dynamics365/customer-engagement/developer/org-service/query-hierarchical-data).
   
-Die folgenden Beispiele illustrieren Szenarien für das Abfragen von Hierarchien:  
+Die folgenden Beispiele veranschaulichen Szenarien zum Abfragen von Hierarchien:  
   
-### <a name="query-account-hierarchy"></a>Firmenhierarchie abfragen  
+### <a name="query-account-hierarchy"></a>Abfragen der Firmenhierarchie  
   
-![Firmen in der Firmenhierarchie abfragen](media/query-accounts.png)  
+![Abfragen von Firmen in der Firmenhierarchie](media/query-accounts.png)  
   
-### <a name="query-account-hierarchy-including-related-activities"></a>Firmenhierarchie abfragen, einschließlich verwandter Aktitvitäten  
+### <a name="query-account-hierarchy-including-related-activities"></a>Abfragen der Firmenhierarchie, einschließlich der damit verbundenen Aktivitäten  
   
-![Zugehörige Aktivitäten der Firma abfragen](media/query-account-related-activities.png)  
+![Abfragen von verknüpften Aktivitäten der Firma](media/query-account-related-activities.png)  
   
-###  <a name="query-account-hierarchy-including-related-opportunities"></a>Firmenhierarchie abfragen, einschließlich verwandter Geschäftschancen  
+###  <a name="query-account-hierarchy-including-related-opportunities"></a>Abfragen der Firmenhierarchie, einschließlich der damit verbundenen Verkaufschancen  
   
-![Zugehörige Verkaufschancen der Firma abfragen](media/query-account-related-opportunities.png)  
+![Abfragen von verknüpften Verkaufschancen der Firma](media/query-account-related-opportunities.png)  
   
 ## <a name="see-also"></a>Siehe auch 
-[Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer)-Entitätsbeziehungen](create-edit-1n-relationships.md)<br />
-[Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
-[Visualisierung hierarchischer Daten mit modellgesteuerten Apps](visualize-hierarchical-data.md)<br />
-[Video: Hierarchische Sicherheitsmodellierung](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
-[Video: Hierarchievisualisierung in](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[Erstellen von 1:n- oder n:1-Entitätsbeziehungen – Übersicht](create-edit-1n-relationships.md)<br />
+[Erstellen und Bearbeiten von 1:n- oder n:1-Entitätsbeziehungen mit dem Lösungs-Explorer](create-edit-1n-relationships-solution-explorer.md)<br />
+[Visualisieren hierarchischer Daten mit modellgesteuerten Apps](visualize-hierarchical-data.md)<br />
+[Video: Modellierung hierarchischer Sicherheitsmodelle](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07) (in englischer Sprache)<br />
+[Video: Visualisierung von Hierarchien](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07) (in englischer Sprache)

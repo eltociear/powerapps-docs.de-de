@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2018
 ms.author: jdaly
-ms.openlocfilehash: 12925c57103b1ecc00dc19205af5f32d165bdc63
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9abcbf25d2376e28f83988ceb3797d3891ca53bc
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42843335"
 ---
 # <a name="apply-business-logic-with-code"></a>Anwenden von Geschäftslogik mit Code
 
@@ -35,7 +41,7 @@ Weitere Informationen finden Sie unter [Benutzerdefinierte Workflowaktivitäten 
 
 ## <a name="create-a-plug-in"></a>Erstellen eines Plug-Ins
 
-Sie können eine .NET-Assembly schreiben, die als Plug-In für den Datentransaktionsflow dient, um auf dem Server Geschäftslogik anzuwenden. Die Plattform Common Data Service für Apps stellt ein Framework dar, mit dem Sie bestimmte Ereignisse registrieren können, um Code auszuführen, der innerhalb einer Klasse in einer Assembly definiert ist. Diese Klasse erbt eine bestimmte Schnittstelle, die eine [Execute-Methode](/dotnet/api/microsoft.xrm.sdk.iplugin.execute) verfügbar macht. Wenn das registrierte Ereignis auftritt, wird die `Execute`-Methode für die Klasse ausgelöst und Kontextdaten zu dem Ereignis weitergegeben.
+Sie können eine .NET-Assembly schreiben, die als Plug-In für den Datentransaktionsflow dient, um auf dem Server Geschäftslogik anzuwenden. Common Data Service für Apps stellt ein Framework dar, mit dem Sie bestimmte Ereignisse registrieren können, um Code auszuführen, der innerhalb einer Klasse in einer Assembly definiert ist. Diese Klasse erbt eine bestimmte Schnittstelle, die eine [Execute-Methode](/dotnet/api/microsoft.xrm.sdk.iplugin.execute) verfügbar macht. Wenn das registrierte Ereignis auftritt, wird die `Execute`-Methode für die Klasse ausgelöst und Kontextdaten zu dem Ereignis weitergegeben.
 
 Sie können mit dem *Tool zur Plug-In-Registrierung* Ihre Assemblys registrieren.
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer App zum Verwalten von Projekten | Microsoft-Dokumentation
-description: In dieser Aufgabe wird eine App von Grund auf neu erstellt. Mithilfe dieser App kann ein Benutzer Projekten einen Manager zuweisen und Projektdetails aktualisieren.
+title: Erstellen einer Canvas-App zum Verwalten von Projekten | Microsoft-Dokumentation
+description: In dieser Aufgabe erstellen wir eine Canvas-App von Grund auf neu. Mithilfe dieser App kann ein Benutzer Projekten einen Manager zuweisen und Projektdetails aktualisieren.
 author: mgblythe
 manager: kvivek
 ms.service: powerapps
@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: b4daabf019236a4245db324121a6745290c8b3ab
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39021617"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42842369"
 ---
-# <a name="create-an-app-to-manage-projects"></a>Erstellen einer App zum Verwalten von Projekten
+# <a name="create-a-canvas-app-to-manage-projects"></a>Erstellen einer Canvas-App zum Verwalten von Projekten
 > [!NOTE]
 > Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
-In dieser Aufgabe wird eine App von Grund auf neu erstellt. Mithilfe dieser App kann ein Benutzer Projekten einen Manager zuweisen und Projektdetails aktualisieren. Sie werden feststellen, dass teilweise die gleichen Steuerelemente und Formeln wie in der ersten App verwendet werden. Dieses Mal erstellen Sie jedoch selbstständig einen größeren Teil der App. Der Prozess mag zwar komplexer sein, Sie werden jedoch mehr lernen – unserer Meinung nach ist dies ein guter Kompromiss.
+In dieser Aufgabe erstellen wir eine Canvas-App von Grund auf neu. Mithilfe dieser App kann ein Benutzer Projekten einen Manager zuweisen und Projektdetails aktualisieren. Sie werden feststellen, dass teilweise die gleichen Steuerelemente und Formeln wie in der ersten App verwendet werden. Dieses Mal erstellen Sie jedoch selbstständig einen größeren Teil der App. Der Prozess mag zwar komplexer sein, Sie werden jedoch mehr lernen – unserer Meinung nach ist dies ein guter Kompromiss.
 
 > [!TIP]
 > Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieser App: „project-details-app.msapp“.

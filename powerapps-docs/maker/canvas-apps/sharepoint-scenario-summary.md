@@ -9,18 +9,22 @@ ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
 ms.author: mblythe
-ms.openlocfilehash: 6c362c39aa99490c8c2043b36a05e107b94e0a26
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014947"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42850188"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Vollständige exemplarische Vorgehensweise für das komplette Szenario der SharePoint Online-Integration
 > [!NOTE]
 > Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
-Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt, vom Erstellen von Apps und Flows bis zum Erstellen von Berichten und dem Einbetten dieser Berichte in SharePoint. Wir hoffen, dass Sie viel gelernt haben und jetzt auch wissen, wie diese Technologien ineinandergreifen, sodass Sie Apps, Flows und Berichte entsprechend Ihren Anforderungen in SharePoint integrieren können. Vor dem Abschluss dieser Reihe möchten wir das Szenario vollständig durchgehen und betrachten, wie alle Teile zusammenwirken.
+Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt – vom Erstellen von Apps und Flows bis hin zum Erstellen von Berichten und dem Einbetten dieser Berichte in SharePoint. Wir hoffen, dass Sie viel gelernt haben und jetzt wissen, wie diese Technologien ineinandergreifen, sodass Sie Canvas-Apps, Flows und Berichte entsprechend Ihren Anforderungen in SharePoint integrieren können. Vor dem Abschluss dieser Reihe möchten wir das Szenario vollständig durchgehen und betrachten, wie alle Teile zusammenwirken.
 
 ## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Schritt 1: Hinzufügen eines Projekts zur Liste „Project Requests“ (Projektanforderungen)
 1. Klicken oder tippen Sie in der Liste **Project Requests**  (Projektanforderungen) auf **Alle Elemente** und dann auf **Project Requests app** (Projektanforderungen-App).

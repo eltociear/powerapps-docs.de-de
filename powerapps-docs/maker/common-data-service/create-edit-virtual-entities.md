@@ -1,6 +1,6 @@
 ---
-title: Erstellen und bearbeiten Sie virtuelle Entitäten mit Common Data Service for Apps | MicrosoftDocs
-description: Informationen zum Erstellen virtueller Entitäten
+title: Erstellen und Bearbeiten von virtuellen Entitäten mit Common Data Service für Apps | Microsoft-Dokumentation
+description: Erfahren Sie, wie virtuelle Entitäten erstellt werden.
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -9,144 +9,142 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 44834893-0bf6-4a64-8f06-7583fe08330d
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 675c0ac5763698c82a7d13bfc75f8b7357d6cf0b
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39682962"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten
 
-Eine virtuelle Entität ist eine benutzerdefinierte Entität in Common Data Service for Apps, die Felder mit Daten von einer externen Datenquelle enthält. Virtuelle Entitäten erscheinen Benutzern in Ihrer App als reguläre Entitätsdatensätze, enthalten aber Daten von einer externen Datenbank, z. B. einer Azure-SQL-Datenbank. Datensätze auf Grundlage virtueller Entitäten stehen in allen -Clients zur Verfügung, einschließlich benutzerdefinierter Clients, die mit CDS for Apps-Webdienste entwickelt wurden.  
+Eine virtuelle Entität ist eine benutzerdefinierte Entität in Common Data Service für Apps, die Felder mit Daten aus einer externen Datenquelle enthält. Virtuelle Entitäten werden Benutzern in Ihrer App als reguläre Entitätsdatensätze angezeigt, enthalten jedoch Daten, die von einer externen Datenbank wie Azure SQL-Datenbank erstellt wurden. Datensätze auf Grundlage von virtuellen Entitäten sind in allen Clients verfügbar, einschließlich benutzerdefinierten Clients, die mithilfe von CDS für Apps-Webdienste entwickelt wurden.  
   
-In der Vergangenheit brauchte man für die Integration der separaten Datenquellen einen Konnektor, um die Daten zu verschieben, oder man musste ein benutzerdefiniertes Plug-In auf der Client- oder Serverseite erstellen. Mit virtuellen Entitäten können Sie zur Laufzeit direkt eine Verbindung zu einer externen Datenquelle einrichten, sodass spezifische Daten aus der externen Datenquelle in einer Umgebung zur Verfügung stehen, ohne dass eine Datenreplikation erforderlich ist.  
+In der Vergangenheit hätten Sie für die Integration der unterschiedlichen Datenquellen einen Connector auf Client- oder Serverseite erstellen müssen, um Daten zu verschieben oder ein benutzerdefiniertes Plug-In zu entwickeln. Allerdings können Sie mit virtuellen Entitäten direkt eine Verbindung mit einer externen Datenquelle zur Laufzeit herstellen, damit bestimmte Daten aus der externen Datenquelle in einer Umgebung verfügbar sind. Datenreplikationen sind hierbei nicht notwendig.  
 
-Virtuelle Entitäten bestehen aus drei Hauptkomponenten, einem *Datenanbieter*, einem *Datenquelldatensatz* und einer *virtuellen Entität*. Der Datenanbieter besteht aus Plug-Ins und einer Datenquellentität. Die Datenquelle ist ein Entitätsdatensatz in CDS for Apps, der Metadaten enthält, die das Schema der Verbindungsparameter darstellen. Jede virtuelle Entität verweist auf eine Datenquelle in der Entitätendefinition.  
+Virtuelle Entitäten bestehen aus drei Hauptkomponenten: einem *Datenanbieter*, einem *Datenquellen*-Datensatz und einer *virtuellen Entität*. Der Datenanbieter besteht aus Plug-Ins und einer Datenquellentität. Die Datenquelle ist ein Entitätsdatensatz in CDS für Apps mit Metadaten, die das Schema der Verbindungsparameter darstellen. Jede virtuelle Entität verweist auf eine Datenquelle in der Entitätsdefinition.  
   
-CDS for Apps beinhaltet einen OData-Datenanbieter, den Sie verwenden können, um eine Verbindung mit einem OData v4-Webservice einzurichten, der auf die externen Daten zugreift. 
+CDS für Apps enthält einen OData-Datenanbieter, über den Sie eine Verbindung mit einem OData v4-Webdienst herstellen können, der auf die externen Daten zugreift. 
   
-Alternativ können Entwickler ihre eigenen Datenanbieter erstellen. Datenanbieter werden in einer Umgebung als Lösung installiert. Weitere Informationen: [Entwicklerdokumentation: Erste Schritte mit virtuellen Entitäten fest](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)
+Alternativ dazu können Entwickler ihre eigenen Datenanbieter erstellen. Datenanbieter werden als Lösung in einer Umgebung installiert. Weitere Informationen finden Sie unter [Erste Schritte mit virtuellen Entitäten](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve).
   
- ![Diagramm einer virtuellen Entität](media/virtual-entity-diagram.png "Diagramm einer virtuellen Entität")  
+ ![Abbildung zu virtuellen Entitäten](media/virtual-entity-diagram.png "Abbildung zu virtuellen Entitäten")  
   
 <a name="benefits"></a> 
   
-## <a name="virtual-entity-benefits"></a>Vorteile der virtuellen Entität  
+## <a name="virtual-entity-benefits"></a>Vorteile von virtuellen Entitäten  
   
-- Entwickler können Plug-Ins implementieren, um mit dem CDS for Apps-Webdienst und dem Plug-In-Registrierungstool externe Daten zu lesen.  
-- Systemanpasser verwenden den PowerApps-Projektmappen-Explorer, um den Datenquelldatensatz zu konfigurieren und virtuelle Entitäten zu erstellen, die für den Zugriff auf externe Daten verwendet werden, ohne dafür Code schreiben zu müssen.  
-- Endbenutzer verwenden die Datensätze, die von der virtuellen Entität erstellt wurden, um die Daten in Feldern, Rastern, Suchergebnissen und FetchXML-basierten Berichten sowie Dashboards zu betrachten.  
+- Entwickler können zum Lesen von externen Daten Plug-Ins mithilfe von CDS für Apps-Webdiensten und des Plug-In-Registrierungstools implementieren.  
+- Systemanpasser konfigurieren mit dem PowerApps-Lösungs-Explorer den Datenquelldatensatz und erstellen virtuelle Entitäten, mit denen auf externe Daten zugegriffen wird, ohne Code schreiben zu müssen.  
+- Endbenutzer arbeiten mit den Datensätzen, die von der virtuellen Entität erstellt werden, um die Daten in Feldern, Rastern, Suchergebnissen anzuzeigen und XML-basierte Berichte und Dashboards abzurufen.  
   
 <a name="AddDataSource"></a> 
   
-## <a name="add-a-data-source-to-use-for-virtual-entities"></a>Eine Datenquelle für virtuelle Entitäten hinzufügen 
+## <a name="add-a-data-source-to-use-for-virtual-entities"></a>Hinzufügen einer Datenquelle für die Verwendung für virtuelle Entitäten 
  
- Entwickler erstellen ein benutzerdefiniertes Plug-In, das als Datenanbieter für eine virtuelle Entität verwendet wird. Alternativ können Sie den zur Verfügung gestellten OData v4-Datenanbieter verwenden. Weitere Informationen: [OData v4 Datenanbieterkonfiguration, Anforderungen und bewährten Methoden](virtual-entity-odata-provider-requirements.md)  
+ Entwickler erstellen ein benutzerdefiniertes Plug-In für eine virtuelle Entität als Datenanbieter. Alternativ können Sie den bereitgestellten OData v4-Datenanbieter verwenden. Weitere Informationen finden Sie unter [OData v4-Datenanbieterkonfiguration, Anforderungen und bewährte Methoden](virtual-entity-odata-provider-requirements.md).  
   
-1. Wählen Sie **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Verwaltung** > **Datenquellen für virtuelle Entitäten** aus.  
-1. Wählen Sie auf der Aktionssymbolleiste **Neu** aus.  
-1. Wählen Sie im Dialogfeld **Datenanbieter auswählen** aus den folgenden Datenquellen aus, und wählen Sie dann **OK** aus.
+1. Navigieren Sie zu  **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Verwaltung** > **Virtuelle Entitätsdatenquellen**.  
+1. Klicken Sie auf der Aktionssymbolleiste auf **Neu**.  
+1. Wählen Sie im Dialogfeld **Datenanbieter auswählen** aus den folgenden Datenquellen, und klicken Sie dann auf **OK**.
  
     |Datenanbieter|Beschreibung|
     |--|--|
-    |*Benutzerdefinierter Datenanbieter*|Wenn Sie ein Datenanbieter-Plug-In importiert haben, wird der Datenanbieter hier angezeigt. Weitere Informationen: [Entwicklerdokumentation: Erste Schritte mit virtuellen Entitäten fest](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)|
-    |**OData v4-Datenanbieter**|CDS for Apps enthält einen OData-Datenanbieter, der mit ODatas v4-Webdiensten verwendet werden kann. Weitere Informationen: [OData v4 Datenanbieterkonfiguration, Anforderungen und bewährten Methoden](virtual-entity-odata-provider-requirements.md)|
+    |*Benutzerdefinierter Datenanbieter*|Wenn Sie ein Datenanbieter-Plug-In importiert haben, wird der Datenanbieter hier angezeigt. Weitere Informationen finden Sie unter [Dokumentation für Entwickler: Erste Schritte mit virtuellen Entitäten](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve).|
+    |**OData v4-Datenanbieter**|CDS für Apps enthält einen OData-Datenanbieter, der mit OData v4-Webdiensten verwendet werden kann. Weitere Informationen finden Sie unter [OData v4-Datenanbieterkonfiguration, Anforderungen und bewährte Methoden](virtual-entity-odata-provider-requirements.md).|
 
   
-### <a name="add-a-secured-field-to-a-data-source"></a>Hinzufügen eines gesicherten Felds zu einer Datenquelle
+### <a name="add-a-secured-field-to-a-data-source"></a>Hinzufügen eines geschützten Felds zu einer Datenquelle
 
-Sie erstellen Felder für eine Datenquelle auf die gleiche Weise wie für jede andere Entität. Für Daten, die vertraulich oder verschlüsselt sind, aktivieren Sie das Attribut "Datenquelle geheim" auf dem benutzerdefinierten Feld der Datenquelle. Beispielsweise zum Speichern eines Felds, das eine Datenbankverbindungszeichenfolge enthält. 
+Sie können Felder für eine Datenquelle auf die gleiche Weise wie bei jeder anderen Entität erstellen. Aktivieren Sie für Daten, die verschlüsselt oder sensibel sind, das Attribut „Geheimer Schlüssel für Datenquelle“ für das benutzerdefinierte Feld der Datenquelle. Dies ist beispielsweise beim Schutz eines Felds der Fall, das eine Datenbankverbindungszeichenfolge enthält. 
 
 > [!NOTE]
-> Das Attribut "Datenquelle geheim" ist nur verfügbar bei den Feldern, die einem Datenquellenformular hinzugefügt werden.
+> Das Attribut „Geheimnis für Datenquelle“ ist nur mit Feldern verfügbar, die zu einem Formular für die Datenquelle hinzugefügt wurden.
 
-> [!div class="mx-imgBorder"] 
-> ![Attribut „Datenquelle geheim“](media/datasourcesecret.png)
+![Attribut „Geheimnis für Datenquelle“](media/datasourcesecret.png)
   
 <a name="createVirtualEntity"></a> 
   
-## <a name="create-a-virtual-entity"></a>Eine virtuelle Entität erstellen
+## <a name="create-a-virtual-entity"></a>Erstellen einer virtuellen Entität
   
-Sie erstellen eine virtuelle Entität genauso wie jede andere Entität in CDS for Apps mit einigen zusätzlichen Attributen, die hier beschrieben werden. Virtuelle Entitäten müssen mit dem Projektmappen-Explorer erstellt werden.
+Sie können genau wie jede andere Entität in CDS für Apps eine virtuelle Entität erstellen. Sie müssen lediglich ein paar zusätzliche Attribute hinzufügen, die im Folgenden beschrieben werden. Virtuelle Entitäten müssen mit dem Lösungs-Explorer erstellt werden.
 
 > [!NOTE]
->  Obwohl Sie eine virtuelle Entität erstellen können, indem Sie **Keine** als Datenquelle auswählen, ist für eine virtuelle Entität, um Daten abzurufen, eine Datenquelle erforderlich. Weitere Informationen: [Eine Datenquelle für virtuelle Entitäten hinzufügen](#AddDataSource)
+>  Sie können zwar eine virtuelle Entität mit der Einstellung **Keine** für Datenquelle erstellen, eine virtuelle Entität benötigt für den Datenabruf jedoch eine Datenquelle. Weitere Informationen finden Sie unter [Hinzufügen einer Datenquelle für die Verwendung für virtuelle Entitäten](#AddDataSource).
 
-### <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
+### <a name="open-solution-explorer"></a>Öffnen des Lösungs-Explorers
 
-Ein Teil des Namens jeder virtuellen Entität, die Sie erstellen, ist das Anpassungspräfix. Dieser Satz basiert auf dem Lösungsherausgeber für die Lösung, in der Sie arbeiten. Wenn Ihnen das Anpassungspräfix wichtig ist, achten Sie darauf, dass Sie in einer nicht verwalteten Lösung oder der Standardlösung arbeiten, in der das Anpassungspräfix Ihren Wünschen für diese virtuelle Entität entspricht. Weitere Informationen [Lösungsherausgeberpräfix ändern](change-solution-publisher-prefix.md) 
+Ein Teil des Namens einer virtuellen Entität, die Sie erstellen, ist das Anpassungspräfix. Dieses wird basierend auf dem Lösungsherausgeber für die Lösung festgelegt, in der Sie momentan arbeiten. Wenn das Anpassungspräfix für Sie im Mittelpunkt steht, stellen Sie sicher, dass Sie in einer nicht verwalteten Lösung mit dem von Ihnen bevorzugten Anpassungspräfix für diese virtuelle Entität arbeiten. Weitere Informationen finden Sie unter [Ändern des Präfixes für den Lösungsherausgeber](change-solution-publisher-prefix.md). 
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-### <a name="create-a-virtual-entity"></a>Eine virtuelle Entität erstellen
+### <a name="create-a-virtual-entity"></a>Erstellen einer virtuellen Entität
   
-1. Erstellen Sie im Projektmappen-Explorer eine neue Entität. Wählen Sie dazu im linken Navigationsbereich die Option **Entitäten** aus, und wählen Sie anschließend **Neu** aus.  
-2. Wählen Sie auf der Registerkarte **Allgemein** der **Entitätsdefinition** die Option **Virtuelle Entität** aus, und wählen Sie dann in der Dropdownliste **Datenquelle** die gewünschte Datenquelle aus.  
-
-    > [!div class="mx-imgBorder"] 
-    > ![Virtuelle Entitätsoption bei Entitätsdefinition](media/virtual-entity-click-option.png)  
+1. Erstellen Sie im Lösungs-Explorer eine neue Entität. Klicken Sie hierfür im linken Navigationsbereich auf **Entitäten** und dann auf **Neu**.  
+2. Klicken Sie auf der Registerkarte **Allgemein** auf die **Entitätsdefinition**, wählen Sie **virtuelle Entität** aus, und wählen Sie dann in der Dropdownliste **Datenquelle** die gewünschte Datenquelle aus.  
   
-1. Füllen Sie in der Entitätsdefinition die folgenden erforderlichen Felder aus.
+    ![Option „Virtuelle Entität“ in der Entitätsdefinition](media/virtual-entity-click-option.png)  
+  
+1. Füllen Sie in der Entitätsdefinition die folgenden Pflichtfelder aus.
   
     |Feld|Beschreibung|
     |--|--|
-    |**Externer Name**|Geben Sie den Namen der Tabelle in die externe Datenquelle ein, die dieser Entität zugeordnet ist.|
-    |**Externer Sammlungsname**|Geben Sie den Plural-Namen der Tabelle in die externe Datenquelle ein, die dieser Entität zugeordnet ist.|
+    |**Externer Name**|Geben Sie den Namen der Tabelle in die externe Datenquelle ein, der diese Entität zugeordnet ist.|
+    |**Externer Sammlungsname**|Geben Sie den Pluralnamen der Tabelle in die externe Datenquelle ein, der diese Entität zugeordnet ist.|
       
-    Nachfolgend sehen Sie ein Beispiel für eine virtuelle Entität mit dem Namen *Movie*, die einen Azure Cosmos DB-Datenanbieter verwendet, um auf Dokumentdateien zuzugreifen.  
+    Im Folgenden sehen Sie ein Beispiel für eine virtuelle Entität mit dem Namen *Movie*, die einen Azure Cosmos DB-Datenanbieter für den Zugriff auf Dokumentdateien verwendet.  
       
-    > [!div class="mx-imgBorder"] 
-    > ![Virtuelle Entitätsdefinition mithilfe des Azure Cosmos DB-Datenanbieters](media/virtual-entity-definition.PNG)  
+    ![Virtuelle Entitätsdefinition mithilfe des Azure Cosmos DB-Datenanbieters](media/virtual-entity-definition.PNG)  
       
     > [!IMPORTANT]
-    > Einige Optionen stehen nicht für virtuelle Entitäten zur Verfügung, wie beispielsweise Zugriffsteams, Warteschlangen und Schnellerfassung. Weitere Informationen: [Überlegungen bei der Verwendung virtueller Entitäten](#considerations)  
+    > Bei virtuellen Entitäten stehen mehrere Optionen wie Zugriffsteams, Warteschlangen und Schnellerfassung nicht zur Verfügung. Weitere Informationen [Überlegungen bei der Verwendung von virtuellen Entitäten](#considerations)  
       
-    Ergänzen Sie die zusätzlichen erforderlichen und optionalen Eigenschaften nach Bedarf, wie beispielsweise Anzeige- und Pluralnamen. Weitere Informationen über diese Eigenschaften finden Sie unter [Erstellen und Bearbeiten von Entitäten](create-edit-entities.md).  
+    Füllen Sie nach Bedarf die zusätzlichen erforderlichen und optionalen Eigenschaften aus, z.B. „Anzeigename“ und „Pluralname“. Weitere Informationen zu diesen Eigenschaften finden Sie unter [Erstellen und Bearbeiten von Entitäten in Common Data Service für Apps](create-edit-entities.md).  
   
-1. Erstellen Sie ein oder mehrere Felder für die virtuelle Entität, und fügen Sie diese hinzu. Neben den Standardfeldeigenschaften, die für die Erstellung eines benutzerdefinierten Felds erforderlich sind, stehen diese optionalen Eigenschaften für jedes benutzerdefinierte Feld zur Verfügung, das Sie für eine virtuelle Entität erstellen.
+1. Erstellen Sie mindestens ein Feld für die virtuelle Entität, und fügen Sie es hinzu. Neben den Standardfeldeigenschaften, die zum Erstellen eines benutzerdefinierten Felds erforderlich sind, sind diese optionalen Eigenschaften für benutzerdefinierte Felder verfügbar, die Sie für eine virtuelle Entität erstellen.
 
     |Feld|Beschreibung|
     |--|--|
-    |**Externer Name**|Dies ist normalerweise der eindeutige Name, der die Daten identifiziert, die Sie in dem Feld anzeigen wollen.|
-    |**Externer Typname**|Wenn der Feldtyp, den Sie erstellen "OptionSet" ist: Diese Eigenschaft wird auf den externen Namen der Wertemenge im externen Service für den Optionssatz abgebildet.  Dies kann eine Auflistung oder der Name einer Zeichenfolgenwerteklasse sein. Der externe Typname kann verwendet werden, wenn ein vollständig qualifizierter Name benötigt wird.  Wie beispielsweise wie der *Typname* bei OData, wo Parameter in einer Warteschlange den vollständig qualifizierten Namen benötigen, z. B. [*Typname*].[*Wert*].|
-    |**Externer Wert**|Wenn der Feldtyp, den Sie erstellen "OptionSet" ist: Diese Eigenschaft wird dem entsprechenden Wert in der externen Datenquelle für das Optionssatzelement zugewiesen.  Anhand dieses eingegebenen Werts wird bestimmt, welches Optionssatzelement in der App angezeigt werden soll.  |
+    |**Externer Name**|Dies ist in der Regel der eindeutige Name, um die Daten zu identifizieren, die Sie im Feld anzeigen möchten.|
+    |**Externer Typname**|Wenn der von Ihnen erstellte Feldtyp „OptionSet“ lautet, gilt Folgendes: Diese Eigenschaft entspricht dem externen Namen der Wertgruppe im externen Dienst für den Optionssatz.  Dies kann in der Regel eine Enumeration oder ein Name einer Zeichenfolgenwertklasse sein. Der externe Typname kann verwendet werden, wenn ein vollqualifizierter Name erforderlich ist.  Beispielsweise kann er als *Typname* mit OData verwendet werden, bei dem Parameter in einer Abfrage den vollqualifizierten Namen benötigen, z.B. [*Typname*].[*Wert*].|
+    |**Externer Wert**|Wenn der von Ihnen erstellte Feldtyp „OptionSet“ lautet, gilt Folgendes: Diese Eigenschaft entspricht dem jeweiligen Wert in der externen Datenquelle für den Optionssatz.  Mit dem eingegebenen Wert wird bestimmt, welches Optionssatzelement in der App angezeigt wird.  |
 
-    Tragen Sie nach Bedarf weitere Eigenschaften ein. Weitere Informationen über diese Eigenschaften finden Sie unter [Erstellen und Bearbeiten von Feldern](create-edit-fields.md).  
+    Füllen Sie nach Bedarf die zusätzlichen Eigenschaften aus. Weitere Informationen zu diesen Eigenschaften finden Sie unter [Gewusst wie: Erstellen und Bearbeiten von Feldern](create-edit-fields.md).  
   
-1. Wählen Sie **Speichern und schließen** auf der Eigenschaftsseite **Feld** aus.  
-1. Wählen Sie auf der Symbolleiste des Projektmappen-Explorers **Speichern** aus.  
-1. Wählen Sie auf der Symbolleiste des Projektmappen-Explorers **Veröffentlichen** aus.  
-1. Schließen Sie den Projektmappen-Explorer.  
+1. Klicken Sie auf der Eigenschaftenseite **Feld** auf **Speichern und schließen**.  
+1. Klicken Sie auf der Symbolleiste des Lösungs-Explorers auf **Speichern**.  
+1. Klicken Sie auf der Symbolleiste des Lösungs-Explorers auf **Veröffentlichen**.  
+1. Schließen Sie den Lösungs-Explorer.  
 
 <a name="considerations"></a>
    
-## <a name="considerations-when-you-use-virtual-entities"></a>Überlegungen bei der Verwendung virtueller Entitäten  
+## <a name="considerations-when-you-use-virtual-entities"></a>Überlegungen bei der Verwendung von virtuellen Entitäten  
 
-Virtueller Entitäten haben die folgenden Einschränkungen.  
+Virtuelle Entitäten weisen die folgenden Einschränkungen auf:  
   
 - Alle virtuellen Entitäten sind schreibgeschützt.  
-- Vorhandene Entitäten können zu virtuellen Entitäten konvertiert werden.  
-- Standardmäßig enthalten virtuelle Entitäten nur ein Namens- und ein Kennungsfeld.  Es werden keine anderen vom System verwalteten Felder unterstützt, wie beispielsweise „Status” oder „Erstellt am/Geändert am”.
-- Virtuelle Entitäten unterstützen keine benutzerdefinierten Felder mit den Datentypen „Währung”, „Bild” oder „Kunde”.
+- Vorhandene Entitäten können nicht in virtuelle Entitäten konvertiert werden.  
+- Standardmäßig enthalten virtuelle Entitäten lediglich ein Name- und ein Id-Feld.  Es werden keine anderen verwalteten Systemfelder wie „Status“ oder „Erstellt/Geändert am“ unterstützt.
+- Virtuelle Entitäten unterstützen keine benutzerdefinierten Felder mit den Datentypen „Currency“, „Image“ oder „Customer“.
 - Virtuelle Entitäten unterstützen keine Überwachung.  
-- Die Felder virtueller Entitäten können nicht in Rollups oder berechneten Feldern verwendet werden.
-- Eine virtuelle Entität kann kein Aktivitätstyp einer Entität sein.  
-- Viele Funktionen, die sich Entitätstabellenzeilen auswirken, können nicht mit virtuellen Entität aktiviert werden.  Zu den Beispielen zählen Warteschlangen, Wissensmanagement, SLA, Duplikaterkennung, Änderungsnachverfolgung, Mobile offline, Funktion, Feldsicherheit, Relevanzsuche, Portale für Dynamics 365-Webportallösungen und N:N-Beziehungen zwischen virtuellen Entitäten.  
-- Virtuelle Entitäten sind im Besitz der Organisation und unterstützen nicht die Commond Data Service für Apps-Sicherheitskonzepte auf Zeilenebene. Wir empfehlen, ein eigenes Sicherheitsmodell für die externe Datenquelle zu implementieren.  
-- Wir empfehlen, bei Verwendung von virtuellen Entitäten in erweiterten Suchen nur eine Datenquelle anzusprechen. Beispielsweise wird das Erstellen einer erweiterten Suche, durch die letztendlich eine Verbindung zwischen Daten im Eigenformat von Common Data Service für Apps und den externen Daten der virtuellen Entität hergestellt wird, nicht unterstützt.  
-- Feldmetadateneigenschaften, die bei Update validiert werden, gelten nicht für virtuelle Entitäten. Beispielsweise kann ein Ganzzahlenfeld in einem virtuellen Entitätsfeld so festgelegt werden, dass es einen Minimalwert Null hat. Allerdings, da der Wert aus einer externen Datenquelle kommt, gibt eine Abfrage Werte zurück, die weniger als null sind, wenn sie von einer virtuellen Entität abgerufen wird.  Die Minimalwert-Eigenschaft ist in der Abfrage nicht impliziert.  Sie müssten die Werte filtern, die größer als null sind, wenn diese gewünscht werden.
-- Virtuelle Entitäten unterstützen nicht Änderungsnachverfolgung und können nicht synchronisiert werden mithilfe eines CDS for Apps-Features, wie Datenexportservice.
+- Virtuelle Entitätsfelder können nicht in Rollups oder berechneten Feldern verwendet werden.
+- Eine virtuelle Entität kann kein Aktivitätstyp der Entität sein.  
+- Viele Features, die sich auf Zeilen einer Entitätstabelle auswirken, können nicht mit virtuellen Entitäten aktiviert werden.  Hierzu zählen beispielsweise Warteschlangen, das Wissensmanagement, SLAs, die Duplikaterkennung, die Änderungsnachverfolgung, Mobile Offline-Funktionen, Sicherheit auf Feldebene, Relevanzsuche, Portale für Dynamics 365-Webportallösungen und m:n-Beziehungen zwischen virtuellen Entitäten.  
+- Virtuelle Entitäten stehen im Besitz einer Organisation und unterstützen keine Konzepte von Common Data Service für Apps, die auf Sicherheit auf Zeilenebene basieren. Es wird empfohlen, ein eigenes Sicherheitsmodell für die externe Datenquelle zu implementieren.  
+- Es wird empfohlen, bei der Verwendung von virtuellen Entitäten in der erweiterten Suche eine einzelne Datenquelle als Ziel festzulegen. Beispielsweise wird keine Unterstützung für das Erstellen einer erweiterten Suche geboten, die letztlich eine Verknüpfung zwischen den nativen Daten von Common Data Service für Apps und den externen Daten der virtuellen Entität herstellt.  
+- Feldmetadateneigenschaften, die auf Updates prüfen, gelten nicht für virtuelle Entitäten. Beispielsweise kann ein Feld namens „Ganze Zahl“ für ein virtuelles Entitätsfeld mit dem Mindestwert 0 festgelegt werden. Da der Wert jedoch von einer externen Quelle stammt, gibt eine Abfrage bei einer virtuellen Entität Werte kleiner als 0 zurück.  Die Mindestwerteigenschaft ist nicht in der Abfrage impliziert.  Sie müssen ggf. weiterhin die Werte filtern, die größer als 0 sein sollen.
+- Virtuelle Entitäten unterstützen keine Änderungsnachverfolgung und können nicht mit einem CDS für Apps-Feature synchronisiert werden, z.B. dem Data Export Service.
   
 ### <a name="see-also"></a>Siehe auch  
 
-[OData v4 Datenanbieterkonfiguration, Anforderungen und bewährten Methoden](virtual-entity-odata-provider-requirements.md)</br> 
-[Erstellen und Bearbeiten von Entitäten](create-edit-entities.md)</br>
+[OData v4-Datenanbieterkonfiguration, Anforderungen und bewährte Methoden](virtual-entity-odata-provider-requirements.md)</br> 
+[Erstellen und Bearbeiten von Feldern in Common Data Service für Apps](create-edit-entities.md)</br>
 [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)

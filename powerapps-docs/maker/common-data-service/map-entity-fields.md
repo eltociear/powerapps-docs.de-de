@@ -1,6 +1,6 @@
 ---
-title: Entitätsfelder in PowerAppss zuordnen | MicrosoftDocs
-description: 'Erfahren Sie, wie Entitätsfelder zugeordnet werden'
+title: Zuordnen von Entitätsfeldern in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Entitätsfelder zuordnen.
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
@@ -9,105 +9,106 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7c5aa1c3-bde9-43f1-a369-fdcdbf14dec0
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+tags: ''
+ms.openlocfilehash: 7e84e10a824ea218063cb2dccdc15ed7ae2340da
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39688672"
 ---
-# <a name="map-entity-fields"></a>Entitätsfelder zuordnen
+# <a name="map-entity-fields"></a>Zuordnen von Entitätsfeldern
  
-Sie können Attributen zwischen Entitäten zuordnen, die eine Entitätsbeziehung haben. Hiermit können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird. 
+Sie können Attribute zwischen Entitäten zuordnen, die eine Entitätsbeziehung aufweisen. Dadurch können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird. 
 
-## <a name="easier-way-to-create-new-records-in-model-driven-apps"></a>Einfacheres Erstellen neuer Datensätze in modellgesteuerten Anwendungen
+## <a name="easier-way-to-create-new-records-in-model-driven-apps"></a>Einfacher Ansatz zum Erstellen neuer Datensätze in modellgesteuerten Apps
 
-Angenommen, man möchte einen neuen Kontaktdatensatz für eine Person hinzufügen, die Mitarbeiter einer bestimmten Firma ist. Dies kann auf zweierlei Weise erfolgen:  
+Nehmen wir an, ein Benutzer möchte einen neuen Kontaktdatensatz für eine Person hinzufügen, die Mitarbeiter eines bestimmten Kontos ist. Er hat zwei Möglichkeiten:  
   
-### <a name="the-hard-way"></a>Auf die umständliche Art
+### <a name="the-hard-way"></a>Komplizierter Ansatz
 
-Indem man in der App navigiert, um einen neuen Kontaktdatensatz von Grund auf neu zu erstellen. Dann müssen Sie jedoch die übergeordnete Firma festlegen und verschiedene Informationen (wie etwa Adresse und Telefonnummer) eingeben, die möglicherweise denen der übergeordneten Firma entsprechen. Dies ist oft zeitraubend und fehleranfällig.  
+Benutzer können einfach in der App navigieren, um einen neuen Kontaktdatensatz von Grund auf neu zu erstellen. Aber dann müssen sie das übergeordnete Konto festlegen und mehrere Informationen wie Adresse und Telefonnummer eingeben, die ggf. mit dem übergeordneten Konto übereinstimmen. Dieser Schritt kann zeitaufwändig sein und potenzielle Fehlerquellen beinhalten.  
   
-### <a name="the-easier-way"></a>Die einfache Möglichkeit
+### <a name="the-easier-way"></a>Einfacher Ansatz
 
-Es ist einfacher, mit der Firmenentität zu beginnen und mittels des Unterrasters **Kontakte** auf dem Formular einfach **+** auszuwählen, um einen Kontakt hinzuzufügen. Sie werden zuerst angeleitet, nach eventuell vorhandenen Kontakten zu suchen, damit Sie nicht versehentlich doppelte Datensätze anlegen. Wenn kein vorhandener Datensatz zu finden ist, wählen Sie **Neu** aus und erstellen einen neuen Kontaktdatensatz. 
+Einfacher ist es, mit der Kontoentität zu beginnen. Wählen Sie im Formular im Unterraster **Kontakte** **+** aus, um einen Kontakt hinzuzufügen. Zunächst werden Sie aufgefordert, vorhandene verwandte Kontakte zu prüfen, um nicht versehentlich einen doppelten Datensatz zu erstellen. Wenn Sie keinen vorhandenen Datensatz finden, wählen Sie **Neu** aus, und erstellen Sie einen neuen Kontaktdatensatz. 
 
-Das neue Kontaktformular enthält alle zugeordneten Attributwerte aus der Firma (z.B. Adresse und Telefoninformationen) als Standardwerte. Benutzer können diese Werte bearbeiten, bevor der Datensatz gespeichert wird.
+Das neue Kontaktdatensatzformular enthält alle zugeordneten Attributwerte aus dem Konto wie Adresse und Telefonnummer als Standardwerte. Sie können diese Werte bearbeiten, bevor Sie den Datensatz speichern.
 
-## <a name="how-this-works"></a>So funktioniert's
+## <a name="how-this-works"></a>Funktionsweise
 
-Wenn Sie Entitätsfelder für eine 1:N-Entitätsbeziehung zuordnen, werden bestimmte Daten aus dem primären Entitätsdatensatz in das neue Entitätsformular kopiert, um Standardwerte festzulegen, die vor dem Speichern bearbeitet werden können.
+Wenn Sie Entitätsfelder für eine 1:n-Entitätsbeziehung zuordnen, werden bestimmte Elemente aus dem Datensatz der primären Entität in das neue verknüpfte Entitätsformular kopiert, um Standardwerte festzulegen, die sich vor dem Speichern bearbeiten lassen.
  
   
 > [!NOTE]
-> Diese Zuordnungen legen lediglich Standardwerte für einen Datensatz fest, bevor er gespeichert wird. Benutzer können die Werte vor dem Speichern bearbeiten. Die Daten, die übertragen werden, sind die Daten zu dem jeweiligen Zeitpunkt. Es wird nicht synchronisiert, wenn sich die Quelldaten später ändern.
+> Diese Zuordnungen legen nur Standardwerte für einen Datensatz fest, bevor er gespeichert wird. Diese Werte lassen sich vor dem Speichern bearbeiten. Die übertragenen Daten entsprechen den Daten zu einem bestimmten Zeitpunkt. Sie werden nicht synchronisiert, wenn sich die Quelldaten später ändern.
 >   
-> Diese Zuordnungen werden nicht auf die verknüpften Datensätze angewendet, die mit einem - oder Dialogfeldprozess erstellt wurden. Sie werden nicht automatisch auf neue Datensätze angewendet, die mit Code erstellt wurden, obwohl Entwickler eine spezielle Mitteilung namens `InitializeFrom` ([InitializeFrom Function](/dynamics365/customer-engagement/web-api/initializefrom?view=dynamics-ce-odata-9) oder [InitializeFromRequest Class](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest?view=dynamics-general-ce-9)) verwenden können, um einen neuen Datensatz mit verfügbaren Zuordnungen zu erstellen.  
+> Diese Zuordnungen werden nicht für verknüpfte Datensätze übernommen, die mit einem Workflow- oder Dialogprozess erstellt wurden. Sie werden nicht automatisch auf neue Datensätze angewendet, die mit Code erstellt wurden, obwohl Entwickler die spezielle Nachricht `InitializeFrom` verwenden können ([InitializeFrom-Funktion](/dynamics365/customer-engagement/web-api/initializefrom?view=dynamics-ce-odata-9) oder [InitializeFromRequest-Klasse](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest?view=dynamics-general-ce-9)), um einen neuen Datensatz mit verfügbaren Zuordnungen zu erstellen.  
 
-## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
+## <a name="open-solution-explorer"></a>Öffnen des Projektmappen-Explorers
 
-Die einzige Möglichkeit, Entitätsfelder zuzuordnen, ist die Verwendung des Lösungs-Explorers.
+Entitätsfelder lassen sich nur über den Projektmappen-Explorer zuordnen.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
   
-Die Zuordnung von Feldern erfolgt im Kontext einer 1:N oder N:1 Entitätsbeziehung, daher müssen Sie zuerst [1:N oder N:1 Entitätsbeziehungen anzeigen](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships).
+Felder werden im Rahmen einer 1:n- oder einer n:1-Entitätsbeziehung zugeordnet. Machen Sie sich daher zunächst mit [1:n- und n:1-Entitätsbeziehungen](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships) vertraut.
 
-## <a name="view-mappable-fields"></a>Zum Zuordnen geeignete Felder anzeigen
+## <a name="view-mappable-fields"></a>Anzeigen zum Zuordnen geeigneter Felder
 
-Feldzuordnungen werden nicht tatsächlich innerhalb der Entitätsbeziehungen definiert, sondern in der Benutzeroberfläche der Beziehung angezeigt. Nicht jede 1: N-Entitätsbeziehung verfügt über diese. Wenn Sie eine Liste mit 1:n (oder n:1)-Entitätsbeziehungen für eine Entität anzeigen, können Sie die angezeigten Beziehungen nach Typ filtern. Sie können entweder **Alle**, **Benutzerdefiniert**, **Anpassbar** oder **Zum Zuordnen geeignet** auswählen. Zum Zuordnen geeignete Entitätsbeziehungen ermöglichen den Zugriff auf das Zuordnung von Entitätsfeldern. 
+Feldzuordnungen werden nicht innerhalb der Entitätsbeziehungen definiert, doch sie sind in der Benutzeroberfläche sichtbar, die die Beziehungen anzeigt. Nicht jede 1: n-Entitätsbeziehung verfügt darüber. In einer Liste von 1:n- oder n:1-Entitätsbeziehungen lassen sich die Beziehungen nach Typ filtern. Sie haben die Wahl zwischen **Alle**, **Benutzerdefiniert**, **Anpassbar** und **Zum Zuordnen geeignet**. Zum Zuordnen geeignete Entitätsbeziehungen ermöglichen den Zugriff zum Zuordnen von Entitätsfeldern. 
 
-![Zum Zuordnen geeignete Entitätsbeziehungen anzeigen](media/mappable-entity-relationships.png) 
+![Anzeigen von zum Zuordnen geeigneter Entitätsbeziehungen](media/mappable-entity-relationships.png) 
 
-Wenn Sie eine zum Zuordnen geeignete Entitätsbeziehung öffnen, wählen Sie **Zuordnungen** in der linken Navigation.
+Wenn Sie eine zum Zuordnen geeignete Entitätsbeziehung öffnen, wählen Sie in der linken Navigation **Zuordnungen** aus.
 
-![Zuordnungen für die Entitätsbeziehungen auswählen](media/map-entity-fields-ui-solution-explorer.png)
+![Auswählen von Zuordnungen für die Entitätsbeziehung](media/map-entity-fields-ui-solution-explorer.png)
 
-## <a name="delete-mappings"></a>Zuordnungen löschen
+## <a name="delete-mappings"></a>Löschen von Zuordnungen
 
-Wenn es Zuordnungen gibt, die Sie nicht anwenden möchten, können Sie diese auswählen und klicken auf die Schaltfläche ![Symbol löschen](media/delete.gif) -Symbol.
+Wenn es Zuordnungen gibt, die Sie nicht übernehmen möchten, können Sie diese auswählen und auf die Schaltfläche ![Symbol „Löschen“](media/delete.gif) klicken.
 
-## <a name="add-new-mappings"></a>Neue Zuordnungen hinzufügen
+## <a name="add-new-mappings"></a>Hinzufügen neuer Zuordnungen
 
-Klicken Sie zum Erstellen einer neuen Zuordnung auf **Neu** in der Symbolleiste. Dadurch wird das Dialogfeld **Feldzuordnung erstellen** geöffnet.
+Um eine neue Zuordnung zu erstellen, klicken Sie in der Symbolleiste auf **Neu**. Daraufhin wird das Dialogfeld **Feldzuordnung erstellen** geöffnet.
 
-![Feldzuordnungsdialog erstellen](media/create-field-mapping-dialog.png)
+![Dialogfeld „Feldzuordnung erstellen“](media/create-field-mapping-dialog.png)
 
-Wählen Sie ein Quellentitätsfeld und ein Zielentitätsfeld mit Werten ,die Sie zuordnen möchten. 
+Wählen Sie ein Quellentitätsfeld und ein Zielentitätsfeld mit den Werten aus, die Sie zuordnen möchten. 
 
-![Feldzuordnung konfigurieren](media/configure-field-mapping.png)
+![Konfigurieren der Feldzuordnung](media/configure-field-mapping.png)
 
-Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
+Wählen Sie dann **OK** aus, um das Dialogfeld zu schließen.
 
 Die folgenden Regeln zeigen, welche Arten von Daten zugeordnet werden können.  
   
-- Beide Felder müssen den gleichen Typ und das gleiche Format aufweisen.  
-- Das Zielfeld muss mindestens so lang sein wie das Quellfeld.  
-- Das Zielfeld kann nicht einem anderen Feld zugeordnet sein.  
+- Beide Felder müssen dem gleichen Typ entsprechen und das gleiche Format haben.  
+- Die Länge des Zielfelds muss gleich oder größer als die Länge des Quellfelds sein.  
+- Das Zielfeld darf nicht bereits einem anderen Feld zugeordnet werden.  
 - Das Quellfeld muss im Formular sichtbar sein.  
-- Beim Zielfeld muss es sich um ein Feld handeln, in das der Benutzer Daten eingeben kann.  
-- Adresskennungswerte können nicht zugeordnet werden.
-- Die Zuordnung zu oder von einem Feld, das nicht in einem Formular angezeigt wird, ist nicht möglich. Das Feld muss dem Formular erst hinzugefügt werden.
-- Falls es sich bei den Feldern um Optionssätze handelt, müssen die ganzzahligen Werte für jede Option identisch sein.  
+- Das Zielfeld muss ein Feld sein, in das Daten eingegeben werden können.  
+- Adress-ID-Werte können nicht zugeordnet werden.
+- Wenn Sie eine Zuordnung für ein Feld vornehmen, das in keinem Formular angezeigt wird, findet die Zuordnung erst dann statt, wenn das Feld einem Formular hinzugefügt wird.
+- Wenn die Felder Optionssätze sind, müssen die ganzzahligen Werte für jede Option identisch sein.  
   
 > [!NOTE]
->  Wenn Sie Optionssatzfelder zuordnen müssen, wird empfohlen, beide Felder für die Verwendung desselben globalen Optionssatzes zu konfigurieren. Andernfalls kann es schwierig sein, zwei verschiedene Sätze von Optionen manuell synchronisiert zu halten. Wenn die ganzzahligen Werte für jede Option nicht richtig zugeordnet sind, können Sie Probleme in Ihren Daten bekommen. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps (Auswahl)](create-edit-global-option-sets.md)  
+>  Wenn Sie Felder für Optionssätze zuordnen, wird empfohlen, beide Felder so zu konfigurieren, dass sie denselben globalen Optionssatz verwenden. Andernfalls kann es schwierig sein, zwei verschiedene Optionssätze manuell zu synchronisieren. Wenn die ganzzahligen Werte für jede Option nicht korrekt zugeordnet werden, können Probleme mit Ihren Daten entstehen. Weitere Informationen finden Sie unter [Erstellen und Bearbeiten globaler Optionssätze für Common Data Service für Apps (Auswahllisten)](create-edit-global-option-sets.md).  
   
 ## <a name="automatically-generate-field-mappings"></a>Automatisches Generieren von Feldzuordnungen  
 
-Sie können Zuordnungen auch automatisch erzeugen, indem Sie **Zuordnungen erzeugen** aus dem Menü **Weitere Aktionen** wählen.
+Sie können Zuordnungen auch automatisch generieren, indem Sie im Menü **Weitere Aktionen** **Zuordng. generieren** auswählen.
 
-Bei der Verwendung von Systementitäten sollten Sie vorsichtig sein. Verwenden Sie dies, wenn Sie benutzerdefinierte Entitäten erstellen und die Zuordnung verwenden möchten. 
+Beim automatischen Generieren von Feldzuordnungen für Systementitäten ist Vorsicht geboten. Nutzen Sie diese Option, wenn Sie benutzerdefinierte Entitäten erstellen und diese zuordnen möchten. 
 
 > [!WARNING]
-> Dadurch werden alle vorhandenen Zuordnungen entfernt und durch vorgeschlagene Zuordnungen ersetzt, die nur auf den Feldern basieren, die ähnliche Namen und Datentypen haben. Wenn Sie dies für eine Systementität verwenden, können einige erwartete Zuordnungen verloren gehen. Für benutzerdefinierte Entitäten spart dies Zeit, da Sie einfacher Zuordnungen löschen können, die Sie nicht benötigen, und andere hinzufügen können, die die automatische Zuordnungsgenerierung nicht erstellt hat.  
+> Dadurch werden alle vorhandenen Zuordnungen entfernt und durch vorgeschlagene Zuordnungen ersetzt, die nur auf Feldern mit ähnlichen Namen und Datentypen basieren. Wenn Sie diese Vorgehensweise auf eine Systementität anwenden, gehen ggf. einige erwartete Zuordnungen verloren. Im Fall von benutzerdefinierten Entitäten können Sie allerdings Zeit sparen, da Sie einfacher alle nicht gewünschten Zuordnungen löschen und andere hinzufügen können, die die Aktion „Zuordng. generieren“ nicht erstellt hat.  
 
 
 ## <a name="publish-customizations"></a>Veröffentlichen von Anpassungen 
@@ -116,6 +117,6 @@ Da Feldzuordnungen keine Metadaten sind, müssen Sie sie veröffentlichen, bevor
 <!-- TODO Need a general topic about publishing to link to in situations like this -->
 
 ### <a name="see-also"></a>Siehe auch
-[Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
-[Dokumentation für Entwickler: Anpassen von Entitäten und Attributzuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings).<br />
-[: Dokumentation für Entwickler: Web API Erstellen einer neuen Entität aus einer anderen Entität](/dynamics365/customer-engagement/developer/webapi/create-entity-web-api#create-a-new-entity-from-another-entity)
+[Erstellen und Bearbeiten von 1:n- oder n:1-Entitätsbeziehungen mit dem Projektmappen-Explorer](create-edit-1n-relationships-solution-explorer.md)<br />
+[Dokumentation für Entwickler: Anpassen von Entitäts- und Attributzuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)<br />
+[Dokumentation für Entwickler: Erstellen einer neuen Entität aus einer anderen Entität mit der Web-API](/dynamics365/customer-engagement/developer/webapi/create-entity-web-api#create-a-new-entity-from-another-entity)

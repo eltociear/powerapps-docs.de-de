@@ -1,6 +1,6 @@
 ---
-title: Barrierefreie Farben | Microsoft-Dokumentation
-description: Farbkontrastrichtlinien für PowerApps
+title: Barrierefreiheit und Farben in Canvas-Apps | Microsoft-Dokumentation
+description: Richtlinien für Farbkontraste für Canvas-Apps in PowerApps
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,19 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/23/2018
 ms.author: tahoon
-ms.openlocfilehash: 289026f18d341381d64423e76effb1abf586557c
-ms.sourcegitcommit: dfa0e1a7981814e15e6ca4720e2a5f930e859db1
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 96a04cdda99f379c799ccd68e2442572ac929d39
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39014809"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42862908"
 ---
-# <a name="accessible-colors-in-powerapps"></a>Barrierefreie Farben in PowerApps
-In einer App sollten nur Farben verwendet werden, die für farbenblinde und sehbehinderte Benutzer barrierefrei sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
+# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Barrierefreiheit und Farben für Canvas-Apps in PowerApps
+In einer App sollten nur Farben verwendet werden, die für barrierefreien Zugriff für farbenblinde und sehbehinderte Benutzer geeignet sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
 
 ## <a name="minimum-contrast-for-text"></a>Minimaler Kontrast bei Text
 * Text und Hintergrund müssen zumindest ein Kontrastverhältnis von 4,5:1 aufweisen.

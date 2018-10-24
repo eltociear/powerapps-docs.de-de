@@ -1,132 +1,133 @@
 ---
-title: Einführung in powerapps.com | Microsoft-Dokumentation
+title: Erste Anmeldung | Microsoft-Dokumentation
 description: Die neue Anlaufstelle für App-Entwickler
-author: linhtranms
+author: AFTOwen
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
-ms.date: 10/28/2016
-ms.author: litran
-ms.openlocfilehash: 9c1b6bde62f0260dca7eba1d723049aadc3e72c9
-ms.sourcegitcommit: 0e9af8cace2bdc04750f4c5a70a3c4af8e3d2292
+ms.reviewer: ''
+ms.date: 08/06/2018
+ms.author: anneta
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2018
-ms.locfileid: "39195333"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42849747"
 ---
-# <a name="introduction-to-powerappscom"></a>Einführung in powerapps.com
-Das PowerApps-Team stellt [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) als neue Anlaufstelle für App-Entwickler vor. Wir haben die Seite als Hauptwebsite für Entwickler neu entworfen; hier können sie mühelos mit der Entwicklung von Apps beginnen, von Microsoft Common Data Service profitieren und ihre Apps alle an der gleichen Stelle verwalten. In diesem Artikel erkläre ich Ihnen Folgendes:
+# <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
 
-* den Header
-* die Startseite
-* die Seite **Apps**
+Wenn Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
 
-## <a name="header"></a>Header
-Wenn Sie sich registrieren und sich zum ersten Mal auf powerapps.com anmelden, bemerken Sie den neuen Header der Website. Am linken Rand des Headers befindet sich das Office-Symbol. Über dieses Symbol haben Sie schnellen Zugriff auf alle anderen Office Produkte, wie z.B. PowerPoint, OneNote und Word sowie Microsoft Flow und Dynamics 365.
+Sie können in drei allgemeinen Bereichen aus verschiedenen Optionen auswählen:
 
-![Header Symbol](./media/intro-maker-portal/waffle.png)
+- Headerbereich oben auf der Seite
 
-Am rechten Rand des Headers wird ein Dropdownfeld für die Umgebung angezeigt, über das Sie schnell zwischen Umgebungen wechseln können. Sehr wahrscheinlich ist die **Standardumgebung** standardmäßig ausgewählt. [Erfahren Sie mehr über Umgebungen](../../administrator/environments-overview.md).
+    ![Header](media/intro-maker-portal/header.png)
 
-![Header Umgebung](./media/intro-maker-portal/environment.png)
+- Navigationsleiste am linken Rand der Seite
 
-Neben dem Dropdownfeld für die Umgebung befindet sich ein Downloadsymbol. Klicken oder tippen Sie auf dieses Symbol, und es öffnet sich ein Dialogfeld mit Links zum Herunterladen von PowerApps Mobile (für iOS- oder Android-Geräte).
+    ![Navigationsleiste](media/intro-maker-portal/nav-bar.png)
 
-![Header Download](./media/intro-maker-portal/downloads2.png)
+- Große Symbole, die gut sichtbar in der Mitte der Seite platziert sind
 
-Neben dem Downloadsymbol befindet sich ein Zahnradsymbol für die Einstellungen. Klicken oder tippen Sie auf dieses Symbol, und es werden Links für Verbindungen, Gateways sowie zum Admin Center angezeigt.
+    ![Mittlerer Bereich der Startseite](media/intro-maker-portal/center-area.png)
 
-![Header Einstellungen](./media/intro-maker-portal/settings_items2.png)
+Um optimale Ergebnisse zu erzielen, stellen Sie zunächst sicher, dass die Startseite auf die richtige Umgebung festgelegt ist.
 
-Neben den Einstellungen befindet sich ein Fragezeichensymbol, das Sie zum Hilfebereich führt. Klicken oder tippen Sie auf dieses Symbol, und es werden Links zum geführten Lernen, der Dokumentation, dem Support, der Community, den Blogs und zu rechtlichen Hinweisen und Datenschutz angezeigt.
+## <a name="choose-an-environment"></a>Auswählen einer Umgebung
 
-![Header Hilfe](./media/intro-maker-portal/help_items2.png)
+Wenn Sie eine App, einen Flow, eine Datenverbindung oder eine Entität in Common Data Service für Apps erstellen, befindet sich ein Großteil der Aktivitäten, die Sie in PowerApps ausführen, in einer bestimmten Umgebung. Umgebungen sorgen für Abgrenzungen zwischen verschiedenen Arbeitsbereichen. Eine Organisation kann beispielsweise über getrennte Umgebungen für verschiedene Abteilungen verfügen. Viele Organisationen verwenden Umgebungen, um Apps, die sich noch in der Entwicklung befinden, von Apps zu trennen, die für die allgemeine Verwendung bereit sind. Sie können möglicherweise auf mehrere Umgebungen zugreifen oder nur auf eine. Wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie möglicherweise selbst Umgebungen erstellen.
 
-## <a name="homepage"></a>Die Startseite
-Nach der Anmeldung auf [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) befinden Sie sich standardmäßig auf der Startseite. Wir haben den Aufbau der Startseite angepasst, sodass Sie schnell mit der Arbeit anfangen können – egal, ob Sie eine App erstellen oder Common Data Service erkunden möchten.
+Um zu überprüfen, in welcher Umgebung Sie sich befinden, suchen Sie das Umschaltfeld für Umgebungen im Headerbereich.
 
-Wenn Sie sich schon einmal in PowerApps angemeldet haben und einige Apps erstellt bzw. ausgeführt haben, ist der erste Bereich auf Ihrer Startseite die Liste **Recent apps** (Zuletzt verwendete Apps). Sie sind nach dem Datum Ihres letzten Gebrauchs sortiert.
+![Umschaltfeld für Umgebungen](media/intro-maker-portal/environment-switcher.png)
 
-![Zuletzt verwendete Apps](./media/intro-maker-portal/recentapps2.png)
+Wenn Sie eine App in einer Umgebung erstellen, wird diese nicht in einer anderen Umgebung angezeigt. Darüber hinaus müssen Benutzer, die Ihre App ausführen möchten, Zugriff auf die Umgebung haben, in der Sie die App erstellt haben.
 
-In der rechten oberen Ecke befindet sich ein Pfeil mit der Beschriftung **Apps**, der direkt auf die Seite **Apps** verlinkt, sodass Sie alle Ihre Apps anzeigen können.
+> [!IMPORTANT]
+> Stellen Sie sicher, dass Sie sich in der richtigen Umgebung befinden, *bevor* Sie eine App, einen Flow oder eine ähnliche Komponente erstellen. Sie können Komponenten nicht ohne Weiteres von einer Umgebung in eine andere verschieben.
 
-Wenn Sie sich noch nie angemeldet, eine App erstellt oder ausgeführt haben, wird der Bereich **Recent Apps** (Zuletzt verwendete Apps) nicht angezeigt. Stattdessen sehen Sie das Banner **Create an App** (App erstellen).
+Weitere Informationen finden Sie unter [Übersicht zu Umgebungen](../../administrator/environments-overview.md).
 
-![Erstellen einer App](./media/intro-maker-portal/createapp.png)
+## <a name="choose-an-app-type"></a>Auswählen eines App-Typs
 
-Klicken oder tippen Sie auf dem Banner auf **Get started** (Los geht‘s), und es werden Ihnen Optionen zum Erstellen einer App mit **PowerApps Studio** angezeigt.
+In PowerApps können Sie die folgenden Arten von Apps erstellen und ausführen:
 
-![Erstellen einer App Ansicht](./media/intro-maker-portal/createmodal2.png)
+- **Canvas-Apps** unterstützen das Entwerfen einer benutzerdefinierten Benutzeroberfläche und die Herstellung einer Verbindung mit Daten aus einer Vielzahl von Quellen.
+- **Modellgesteuerte Apps** verfügen über eine standardmäßige Benutzeroberfläche und stellen nur in Common Data Service (CDS) für Apps eine Verbindung mit Daten her. Sie können jedoch einfacher andere Elemente wie Ansichten, Dashboards und verschiedene Arten von Geschäftslogik erstellen.
 
-Neben **Get started** (Los geht‘s) befinden sich unsere Tutorialvideos zum schnellen Erstellen einer App mithilfe von Daten (entweder in SharePoint oder PowerApps) und der anschließenden Freigabe dieser App. Wenn Sie auf den Pfeil **Learn more** (Mehr erfahren) klicken, gelangen Sie zu einem Thema, dass Ihnen erklärt, wie Sie eine App mit bereits vorhandenen Daten erstellen.
+Standardmäßig zeigt die **Startseite** Optionen für das Erstellen und Ausführen von Canvas-Apps an. Um stattdessen modellgesteuerte Optionen anzuzeigen, wählen Sie eine Umgebung aus, die über eine CDS für Apps-Datenbank verfügt, und öffnen Sie dann das Menü in der linken unteren Ecke.
 
-Unterhalb des Banners **Create an app** (Erstellen einer App) befindet sich das Banner **Use the Microsoft Common Data Service** (Microsoft Common Data Service verwenden).
+![Wechseln zwischen Canvas-Apps und modellgesteuerten Apps](media/intro-maker-portal/mode-switcher.png)
 
-![Microsoft Common Data Service](./media/intro-maker-portal/cds2.png)
+## <a name="play-or-edit-an-app"></a>Wiedergeben oder Bearbeiten einer App
 
-Unter **Common Data Service** wird eine andere Schaltfläche angezeigt, je nach Ihrer Lizenz oder Berechtigung.
+Wenn Sie bereits eine App erstellt haben (oder jemand anders eine App erstellt und für Sie freigegeben hat), können Sie diese über die Seite **Apps** wiedergeben oder bearbeiten.
 
-* Wenn die Schaltfläche **Start trial** (Testversion starten) angezeigt wird, haben Sie keine P2-Lizenz für PowerApps, die aber für Common Data Service erforderlich ist. Klicken oder tippen Sie auf diese Schaltfläche, um die Seite zu öffnen, auf der Sie sich für eine kostenlose, 90-tägige Testversion dieser Lizenz registrieren können. [Mehr Informationen zu PowerApps-Lizenzen](../signup-for-powerapps.md).
-* Wenn die Schaltfläche **Get started** (Los geht‘s) angezeigt wird, befinden Sie sich in einer Umgebung, die keine Common Data Service-Datenbank besitzt oder auf die Sie keinen Zugriff haben. Klicken oder tippen Sie auf diese Schaltfläche, um gleichzeitig eine Umgebung und eine Datenbank zu erstellen, damit Sie Common Data Services für Ihre Apps verwenden können. [Weitere Informationen zum Erstellen von Umgebungen](../../administrator/environments-administration.md).
-  
-    ![Erstellen Sie eine Umgebung und eine Datenbank](./media/intro-maker-portal/createenvanddb2.png)
-  
-    Wenn Sie keine Umgebung erstellen möchten, können Sie jederzeit zu einer Umgebung wechseln, auf die Sie Zugriff haben.
-* Wenn die Schaltfläche **Create Database** (Datenbank erstellen) angezeigt wird, befinden Sie sich in einer Umgebung, die keine Common Data Service-Datenbank besitzt; Sie haben allerdings Berechtigung, dort eine Datenbank zu erstellen.
-  
-    ![Datenbank erstellen](./media/intro-maker-portal/cds-createdb2.png)
-  
-    Klicken oder tippen Sie auf diese Schaltfläche, und es wird eine Datenbank für diese Umgebung bereitgestellt.
-  
-    ![Datenbank erstellen](./media/intro-maker-portal/cds_createdb22.png)
-* Wenn die Schaltfläche **Browse entities** (Entitäten durchsuchen) angezeigt wird, befinden Sie sich in einer Umgebung, der bereits eine Common Data Service-Datenbank bereitgestellt wurde und Sie haben Zugriff darauf. Klicken oder tippen Sie auf die Schaltfläche, und die **Entitäten**-Seite wir geöffnet.
-  
-    ![Datenbank erstellen](./media/intro-maker-portal/cds_browseentities2.png)
+- Sie können eine App finden, indem Sie nach verschiedenen Kriterien filtern, beispielsweise danach, ob Sie die App vor Kurzem geöffnet haben.
 
-Unterhalb des Banners **Use the Microsoft Common Data Services** (Microsoft Data Service verwenden) befindet sich eine Reihe von Beispiel-Apps und verbundene Beispiel-Apps, die wir für Sie erstellt haben.
+    ![Liste der Canvas-Apps](media/intro-maker-portal/org-apps.png)
 
-* **Beispiel-Apps**: Beispiel-Apps wurden für verschiedene Geschäftsszenarios für das Smartphone- oder Tablet-Layout entwickelt. Klicken Sie auf eine App, um schnell zu einer Beschreibung des Zwecks der App zu kommen, für welches Layout die App entwickelt wurde und welche Funktionen die App vorstellt, wie z.B. Kamera, GPS oder Optionsfelder. Dies ist eine schnelle Möglichkeit für neue Benutzer, einen Überblick über die Funktionen von PowerApps zu erhalten. Sie können eine Vorlage verwenden, um in PowerApps Studio eine identische App zu erstellen.
-  
-    ![Beispiel-Apps](./media/intro-maker-portal/sampleapps2.png)
-* **Verbundene Beispiel-Apps**: Diese Apps stellen eine Verbindung mit Ihren Daten über eine Datenverbindung her, z.B. Office 365, Salesforce, Trello und Wunderlist. Diese Gruppe von Apps unterscheidet sich von den oben genannten Beispiel-Apps. Wenn Sie auf eine verbundene Beispiel-App klicken oder tippen, stellen Sie eigentlich eine neue Instanz der App bereit (wie eine Vorlage). Sie fordert Sie zur Eingabe Ihrer Anmeldeinformationen auf, um eine Verbindung mit Ihren Daten herstellen. Das Schöne an einer verbundenen Beispiel-App ist, dass eine Instanz genau dort für Sie bereitgestellt wird; Sie können sie in PowerApps-Studio öffnen, um zu erfahren, wie die entsprechende App erstellt wurde. Der Nachteil ist, dass das Erstellen ziemlich lange dauern kann (bis zu einer Minute). Haben Sie deshalb bitte Geduld, und erlauben Sie das Öffnen des Browsers, wenn Sie auf eine verbundene Beispiel-App klicken oder tippen.
-  
-    ![Verbundene Beispiel-Apps](./media/intro-maker-portal/connectedsampleapps2.png)
+    Sie können auch nach einer App suchen, indem Sie in das Suchfeld, das rechts oben angezeigt wird, ein oder mehrere Zeichen eingeben. Wenn Sie die gewünschte App gefunden haben, klicken Sie auf das Symbol mit den drei Auslassungspunkten, um Optionen zum Wiedergeben oder Bearbeiten der App anzuzeigen.
 
-## <a name="new-apps-page"></a>Die Seite "New apps" (Neue Apps)
-Sie können über die linke Navigationsleiste auf [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) auf die **Apps**-Seite zugreifen.
+    ![Menü nach Auswahl der Auslassungspunkte](media/intro-maker-portal/ellipsis-menu.png)
 
-![Linke Navigationsleiste](./media/intro-maker-portal/leftnav2.png)
+- Sie können die Liste der modellgesteuerten Apps nicht filtern, aber Sie können nach einer App suchen, indem Sie in das Suchfeld, das rechts oben angezeigt wird, ein oder mehrere Zeichen eingeben. Wenn Sie die gewünschte App gefunden haben, klicken Sie auf das Symbol mit den drei Auslassungspunkten, um Optionen zum Wiedergeben oder Bearbeiten der App anzuzeigen.
 
-Auf der **Apps**-Seite hatten Sie in der Vergangenheit immer die Wahl zwischen der Kachel- und der Listenansicht. Nach dem 26. Oktober 2016 wird nur noch die Listenansicht unterstützt.
+    ![Liste der modellgesteuerten Apps mit offenem Menü nach Auswahl der Auslassungspunkte](media/intro-maker-portal/model-driven-list.png)
 
-![Listenansicht Apps](./media/intro-maker-portal/listview2.png)
+## <a name="create-an-app"></a>Erstellen einer App
 
-Bitte beachten Sie, dass die Listenansicht nur Apps in der ausgewählten Umgebung anzeigt. Wechseln Sie mit dem Umgebungsfeld im Header in die eine andere Umgebung, um Apps dieser Umgebung anzuzeigen. [Weitere Informationen zum Wechseln von Umgebungen](working-with-environments.md).
+Auf der **Startseite** können Sie Apps auf verschiedene Arten erstellen:
 
-## <a name="whats-new"></a>Neuerungen
+- [Automatisches Generieren einer Canvas-App aus einem Satz von Daten](data-platform-create-app.md)
+- [Anpassen eines vorab erstellten Beispiels für eine Canvas-App](open-and-run-a-sample-app.md)
+- [Erstellen einer Canvas-App aus einem leeren Bildschirm](data-platform-create-app-scratch.md)
+- [Erstellen einer eigenen modellgesteuerten App](../model-driven-apps/overview-model-driven-samples.md)
+- [Anpassen eines vorab erstellten Beispiels für eine modellgesteuerte App](../model-driven-apps/build-first-model-driven-app.md)
 
-* Wenn Sie auf eine App klicken oder tippen, wird diese in PowerApps Studio in einer neuen Registerkarte geöffnet.
-* Standardmäßig zeigt die **Apps**-Seite alle Apps an, die Sie bearbeiten dürfen. Wählen Sie den Filter **All apps** (Alle Apps) aus, um **All Apps** (Alle Apps) anzuzeigen (einschließlich der Apps, die Sie nur verwenden dürfen).
-  
-   ![Filter für Apps](./media/intro-maker-portal/allapps_filter.png)
+## <a name="learn-more"></a>Weitere Informationen
 
-Außerdem gibt es:
+Es gibt zwei Möglichkeiten, weitere Informationen zu Canvas-Apps oder modellgesteuerten Apps zu finden:
 
-* **Apps, die ich verwenden kann**, womit alle Apps aufgelistet werden, die für Sie mit User-Berechtigungen freigegeben wurden. Beachten Sie, dass Sie diese Apps auch in [Dynamics 365](http://home.dynamics.com) erwerben können.
-* **Apps, die ich besitze**, womit alle Apps aufgelistet werden, die Sie erstellt haben
-* **Apps, zu denen ich beitrage**, womit alle Apps aufgelistet werden, die mit Contributor-Berechtigung für Sie freigegeben wurden
-* **Beispiel-Apps**, womit alle Beispiel-Apps aufgelistet werden (keine verbundenen Beispiel-Apps)
+- Klicken Sie auf der linken Navigationsleiste auf **Weitere Informationen**.
+- Klicken Sie im Header auf das Fragezeichen.
 
-Wenn Sie auf den Infokreis klicken oder tippen, öffnet sich die Seite "App-Details".
+    ![Liste der modellgesteuerten Apps mit offenem Menü nach Auswahl der Auslassungspunkte](media/intro-maker-portal/help-icon.png)
 
-![App Details](./media/intro-maker-portal/ibubble.png)
+Beide Optionen zeigen Links zu diesem Dokumentationssatz, zur PowerApps-Community (dort können Sie Informationen mit Benutzern in anderen Organisationen teilen) und zum PowerApps-Blog (dort finden Sie Ankündigungen zu neuen Features).
 
-Wenn Sie auf die drei Punkte in einer App klicken, werden Optionen wie „Abspielen“, „Bearbeiten“, „Freigeben“ und „Details“ angezeigt.
+## <a name="other-common-tasks"></a>Weitere allgemeine Aufgaben
 
-![App Optionen](./media/intro-maker-portal/ellipsis.png)
+Mit den Optionen im Header und der linken Navigationsleiste können Sie nicht nur Apps erstellen und öffnen.
 
-Das sind die Hauptänderungen auf powerapps.com, das auf App-Entwickler ausgerichtet ist. Wir hoffen, dass dies Ihnen hilft. Posten Sie einen Kommentar, was Sie bis jetzt gut finden und was wir verbessern können. Wir freuen uns über Ihr Feedback!
+### <a name="from-the-header"></a>Im Header
 
+- Wählen Sie den nach unten weisenden Pfeil, um mobile und andere Clients herunterzuladen, in denen Sie Apps ausführen können.
+
+    Weitere Informationen finden Sie unter [Finden und Ausführen von Apps](../../user/index.md).
+
+- Wählen Sie das Zahnradsymbol aus, um Aufgaben wie die folgenden auszuführen: Herstellen einer Verbindung mit Datenquellen, Ermitteln Ihrer PowerApps-Lizenz(en), Öffnen der Seite für Verwaltungsaufgaben.
+
+    Weitere Informationen finden Sie in folgenden Themen:
+
+  - [Übersicht über die Canvas-App-Connectors](connections-list.md)
+  - [Erstellen und Zertifizieren benutzerdefinierter Connectors für Canvas-Apps](register-custom-api.md)
+  - [Verwalten eines lokalen Datengateways](gateway-management.md)
+  - [Verwalten von PowerApps](../../administrator/index.md)
+  - [Übersicht über die Lizenzierung](../../administrator/pricing-billing-skus.md)
+  - [Übersicht über die Erstellung einer modellgesteuerten App](../model-driven-apps/model-driven-app-overview.md)
+
+### <a name="from-the-left-navigation-bar"></a>Auf der linken Navigationsleiste
+
+Erweitern Sie die Funktionalität Ihrer Apps, indem Sie folgende Aufgaben ausführen:
+
+- Verwalten Sie Entitäten, Optionssätze und die Datenintegration in [Common Data Service für Apps](../common-data-service/data-platform-intro.md).
+- Konfigurieren Sie Geschäftslogik in [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
+- Erstellen, packen und verwalten Sie [Lösungen](../../developer/common-data-service/introduction-solutions.md).

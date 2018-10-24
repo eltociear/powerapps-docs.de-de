@@ -1,6 +1,6 @@
 ---
 title: Attributmetadaten | Microsoft-Dokumentation
-description: Informationen zu Attributmetadaten, die in Common Data Service für Apps verwendet werden.
+description: Erfahren Sie mehr über Attributmetadaten, die in Common Data Service für Apps verwendet werden.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -15,11 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/12/2018
 ms.author: jdaly
-ms.openlocfilehash: efe04d9bd9c761f432d16d4c9304c52e55503aeb
-ms.sourcegitcommit: 59785e9e82da8f5bd459dcb5da3d5c18064b0899
+search.audienceType:
+- developer
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f6fcf3ba1e8e9773df65ac566a9d5c798f4d13a9
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42859159"
 ---
 # <a name="attribute-metadata"></a>Attributmetadaten
 
@@ -121,7 +127,7 @@ Für diese Eigenschaft können die folgenden Werte festgelegt werden:
 |`ApplicationRequired`|2|**Eingabe vom Unternehmen als erforderlich markiert**|Vom Unternehmen wird verlangt, dass dieses Attribut einen Wert aufweist.|
 |`Recommended`|3|**Eingabe vom Unternehmen empfohlen**|Es wird empfohlen, dass dieses Attribut einen Wert aufweist.|
 
-Common Data Service erzwingt die Option `SystemRequired` nur bei Attributen, die von dem System erstellt wurden. Benutzerdefinierte Attribute können nicht so festgelegt werden, dass Sie die Option `SystemRequired` verwenden. 
+Common Data Service für Apps erzwingt die Option `SystemRequired` nur bei Attributen, die vom System erstellt wurden. Benutzerdefinierte Attribute können nicht so festgelegt werden, dass Sie die Option `SystemRequired` verwenden. 
 
 Modellgesteuerte Apps erzwingen die Option `ApplicationRequired` und verwenden eine andere Darstellung für die Option `Recommended`. Ersteller von benutzerdefinierten Clients können diese Informationen verwenden, um ähnliche Überprüfungs- oder Darstellungsoptionen zu erfordern.
 
@@ -206,6 +212,7 @@ Der Organisationsdienst bietet Anforderungsklassen, die Sie verwenden können, u
 Alle Attribute mit Optionen erben von [EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) und enthalten eine [OptionSet-Eigenschaft](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset). Diese Eigenschaft enthält [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata)-Elemente, die wiederum die Optionen in der [Optionseigenschaft](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options) enthalten. 
 
 Mit dem Organisationsdienst können Sie die folgenden Nachrichten zum Abrufen von Informationen über Optionssätze verwenden:
+
 |Anforderungsklasse|Beschreibung|
 |--|--|
 |[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |Ruft Daten über alle *globalen* Optionssätze ab.|

@@ -9,12 +9,16 @@ ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/05/2018
 ms.author: gregli
-ms.openlocfilehash: b36510dc7c7dce9a0f49e4c3ab5e2e12cd15fa62
-ms.sourcegitcommit: 0f6d7bb9e524202c065b9a7ef92a7f54bdc4bc7c
+search.audienceType:
+- maker
+search.app:
+- PowerApps
+ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
+ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39018029"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43163635"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -157,6 +161,8 @@ Andere Elemente enthalten:
 
 ## <a name="g"></a>G
 **[GroupBy](functions/function-groupby.md)**: gibt eine Tabelle mit gruppierten Datensätzen zurück.
+
+**[GUID](functions/function-guid.md)**: konvertiert eine GUID-Zeichenfolge in einen GUID-Wert oder erstellt einen neuen GUID-Wert.
 
 ## <a name="h"></a>H
 **[HashTags](functions/function-hashtags.md)**: extrahiert die Hashtags (#strings) aus einer Zeichenfolge.

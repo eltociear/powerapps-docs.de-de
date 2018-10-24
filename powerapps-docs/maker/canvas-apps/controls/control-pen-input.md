@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37e5a701bb21d6454699b449f34629746d1547d1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: bad3dcf3b0268a8bb08036fec709281b2cbba253
+ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42860155"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075355"
 ---
 # <a name="pen-input-control-in-powerapps"></a>Stifteingabe-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -27,6 +27,8 @@ Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen
 Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können Diagramme zeichnen und Wörter schreiben, die in eingegebenen Text konvertiert werden können.
 
 ## <a name="key-properties"></a>Haupteigenschaften
+**Image**: Ausgabeeigenschaft, die das vom Endbenutzer gezeichnete Bild repräsentiert.
+
 **[Color](properties-color-border.md)**  – Die Farbe der Eingabestriche.
 
 **Mode** – Das Steuerelement ist im Modus **Draw** oder **Erase**.  Der Modus „Select“ ist veraltet.
@@ -46,7 +48,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**Input**: Eingabe
+**Input**: **veraltet**. Gibt an, ob Eingaben per Maus, Stift oder Berührung unterstützt werden.  Der Standardwert (7) unterstützt alle drei Möglichkeiten.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 

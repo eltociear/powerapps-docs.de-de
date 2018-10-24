@@ -1,198 +1,195 @@
 ---
-title: 'Hilfe, um Bearbeitungsmodus-getriebene App-Komponenten mit PowerApps hinzuzufügen oder zu bearbeiten | MicrosoftDocs'
-description: Mithilfe des PowerApps-App-Designers Komponenten hinzufügen und bearbeiten
+title: 'Tutorial: Hinzufügen oder Bearbeiten von Komponenten einer modellgesteuerten App mit PowerApps | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie mit dem App-Designer von PowerApps Komponenten hinzufügen oder bearbeiten.
 keywords: ''
 ms.date: 03/30/2018
 ms.service: crm-online
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 17
 topic-status: Drafting
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 87fec3bff3ad21a5c0474b67f001cca5c902d609
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39688033"
 ---
+# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>Tutorial: Hinzufügen oder Bearbeiten von Komponenten einer modellgesteuerten App mit dem PowerApps-App-Designer
 
-# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>Hilfe, um Bearbeitungsmodus-getriebene App-Komponenten mit PowerApps hinzuzufügen oder zu bearbeiten
+In diesem Tutorial erfahren Sie, wie Sie Komponenten einer modellgesteuerten App hinzufügen und daraus entfernen können. 
 
-In diesem Lernprogramm wird erläutert, wie Sie Komponenten hinzufügen und Komponenten aus einer Modell-angetriebenen App löschen. 
-
-Eine modell-getriebene App besteht aus verschiedenen Komponenten. Es gibt zwei Typen von Komponenten, die Sie einer App hinzufügen können: Artefakte und Entitätsressourcen. Im App-Designer sind Entitäten, Dashboards und Geschäftsprozessflüsse Artefakte einer App. Entitätsressourcen bestehen aus Formularen, Ansichten, Diagrammen und Dashboards.  
+Eine modellgesteuerte App besteht aus verschiedenen Komponenten. Sie können einer App zwei Arten von Komponenten hinzufügen: Artefakte und Entitätsressourcen. Im Rahmen des App-Designers gehören Entitäten, Dashboard und Geschäftsprozessfluss zu den Artefakten einer App. Entitätsressourcen bestehen aus Formularen, Ansichten, Diagrammen und Dashboards.  
   
-Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. Sie können ihn verwenden, um Komponenten wie Formulare, Ansichten und Diagramme und Dashboards zu erstellen.  
+Der App-Designer verweist auf vorhandene Metadaten in der Standardlösung. Sie können damit Komponenten wie Formulare, Ansichten, Diagramme und Dashboards erstellen.  
   
-## <a name="app-designer-layout"></a>App-Designer Darstellung  
- Der Anwendungs-Designer hat zwei Hauptbereiche. Auf der linken Seite sind die Canvas, in denen Sie App-Komponenten hinzufügen.  
+## <a name="app-designer-layout"></a>App-Designer-Layout  
+ Der App-Designer besteht aus zwei Hauptbereichen. Auf der linken Seite befindet sich die Canvas, in der Sie die App-Komponenten hinzufügen.  
   
-![Anwendungs-Designer-Canvas](../model-driven-apps/media/app-designer-canvas-pane.png)
+![App-Designer-Canvas](../model-driven-apps/media/app-designer-canvas-pane.png)
 
- Auf der rechten Seite sind Registerkarten, die Sie verwenden, um Komponenten auszuwählen und Komponenteneigenschaften festzulegen.  
+ Auf der rechten Seite befinden sich Registerkarten, mit denen Sie Komponenten auswählen und Komponenteneigenschaften festlegen können.  
+  
+ ![App-Designer-Komponenten](../model-driven-apps/media/app-designer-canvas-components-tab.png "App-Designer-Komponenten")  
+  
+ Auf der Canvas werden die Bereiche für Siteübersicht, Geschäftsprozessfluss, Dashboards und Entitäten angezeigt. Wenn Sie ein Dashboard oder einen Geschäftsprozessfluss auswählen oder eine Siteübersicht konfigurieren, fügt der App-Designer der Canvas automatisch die Entitäten hinzu, die in diesen Komponenten verwendet werden. Nachdem die Entitäten hinzugefügt wurden, müssen Sie nur noch jede Entität auswählen und die erforderlichen Entitätsressourcen wie Formulare, Ansichten und Diagramme hinzufügen.
  
- > [!div class="mx-imgBorder"]
- > ![App-Designer-Komponenten](../model-driven-apps/media/app-designer-canvas-components-tab.png "App-Designer-Komponenten")  
+ Sie können auch **Canvas durchsuchen** verwenden, um nach Komponenten auf der Canvas zu suchen. Wenn Sie **Canvas durchsuchen** auswählen, wird im rechten Bereich rechts neben den Registerkarten eine neue Suchregisterkarte geöffnet.   
   
- Auf der Canvas finden Sie Bereiche für Siteübersicht, Geschäftsprozessfluss, Dashboard und Entitäten. Wenn Sie ein Dashboard oder einen Geschäftsprozessfluss auswählen oder eine Siteübersicht konfigurieren, wird der App-Designer automatisch die Entitäten hinzufügen, die in diesen Komponenten vom Canvas verwendet werden. Nachdem Sie die Entitäten bereitgestellt haben, müssen Sie nur noch jede Entität auswählen und die erforderlichen Entitätsanlagen wie die Formulare, die Ansichten und die Diagramme hinzufügen.
- 
- Sie können auch **Canvas durchsuchen** verwenden, um nach Komponenten auf dem Canvas zu suchen. Wenn Sie **Canvas durchsuchen** auswählen, wird eine neue Suchregisterkarte rechts neben den Registerkarten im ganz rechten Bereich angezeigt.   
- 
- > [!div class="mx-imgBorder"]
- > ![Option "Canvas durchsuchen"](media/app-designer-search-tab.png "Canvas durchsuchen")
+ ![Option „Canvas durchsuchen“](media/app-designer-search-tab.png "Option „Canvas durchsuchen“")
 
-## <a name="open-an-app"></a>Eine App öffnen
+## <a name="open-an-app"></a>Öffnen einer App
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. 
 
-2. Wählen Sie **Modell-angetrieben** > aus und dann **Anwendungen** und wählen Sie eine vorhandene App aus oder wählen Sie **App erstellen** aus. Weitere Informationen darüber, wie Sie eine App erstellen, finden Sie unter [Erstellen oder Bearbeiten einer Modell-angetriebene App, mithilfe von App-Designer](create-edit-app.md#create-an-app).
+2. Wählen Sie **Modellgesteuert** > **Apps** und dann eine vorhandene App oder **App erstellen** aus. Weitere Informationen zum Erstellen einer App finden Sie unter [Erstellen oder Bearbeiten einer modellgesteuerten App mit dem App-Designer](create-edit-app.md#create-an-app).
 
-## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Hinzufügen eines Artefakt (Entität, Dashboard oder Geschäftsprozessfluss)  
- Wenn Sie ein Dashboard oder einen Geschäftsprozessfluss zu einer App hinzufügen, werden die verwendeten Entitäten automatisch der App hinzugefügt. Wenn eine Entität hinzugefügt wird, werden die Kacheln für die Anlagen automatisch hinzugefügt. Es gibt zwei Arten, wie Sie Artefakte dem Designer-Canvas hinzufügen können: Mithilfe der Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer") auf der Befehlsleiste oder mithilfe der Kacheln auf der Registerkarte **Komponenten**.  
+## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Hinzufügen eines Artefakts (Entität, Dashboard oder Geschäftsprozessfluss)  
+ Wenn Sie einer App ein Dashboard oder einen Geschäftsprozessfluss hinzufügen, werden die in diesem Rahmen verwendeten Entitäten automatisch der App hinzugefügt. Wenn Sie eine Entität hinzufügen, werden die Kacheln für ihre Ressourcen automatisch hinzugefügt. Artefakte lassen sich der Designer-Canvas auf zwei Wegen hinzufügen: über die Befehlsleiste und die Schaltfläche **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Schaltfläche „Hinzufügen“ im Designer") sowie über die Kacheln auf der Registerkarte **Komponenten**.  
   
- In diesem Abschnitt werden die Schritte zum Hinzufügen eines Dashboards zu der App erläutert. Verwenden Sie dieselben Schritte, um einen Geschäftsprozessfluss oder eine Entität hinzuzufügen.  
+ Die folgenden Schritte zeigen, wie Sie der App ein Dashboard hinzufügen. Gehen Sie genau so vor, um einen Geschäftsprozessfluss oder eine Entität hinzuzufügen.  
   
-1.  Wählen Sie auf der App-Design-Canvas die Kachel **Dashboards**.  
+1.  Wählen Sie auf der App-Designer-Canvas die Kachel **Dashboards** aus.  
   
-     Auf der App-Designer-Canvas werden im ganz rechten Bereich die Dashboards angezeigt, die in der Standardlösung verfügbar sind.  
+     Auf der Canvas des App-Designers werden im rechten Bereich Ihre Dashboards angezeigt, die in der Standardlösung verfügbar sind.  
   
     > [!TIP]
-    >  Alternativ können Sie eine der folgenden Möglichkeiten nutzen:  
+    >  Alternativ können Sie folgendermaßen vorgehen:  
     >   
-    > - Klicken Sie auf die Schaltfläche **Hinzufügen**![Hinzufügen-Schaltfläche im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer") und wählen Sie **Dashboards**.  
-    > - Wählen Sie auf der Registerkarte **Komponenten** unter **Artefakte** **Dashboards**.  
+    > - Wählen Sie **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Schaltfläche „Hinzufügen“ im Designer") und dann **Dashboards** aus.  
+    > - Wählen Sie auf der Registerkarte **Komponenten** unter **Artefakte** **Dashboards** aus.  
   
-2.  Im Feld **Suchen** geben Sie einige Suchbegriffen für den Dashboardnamen ein, den Sie suchen.  
+2.  Geben Sie in das Feld **Suchen** einige Schlüsselwörter für den gesuchten Dashboardnamen ein.  
   
-     Die Dashboardliste wird gefiltert, damit nur Ergebnisse angezeigt werden, die mit dem gesuchten Schlüsselwort übereinstimmen.  
+     Die Dashboardliste wird so gefiltert, dass die Ergebnisse angezeigt werden, die Ihren Schlüsselwörtern entsprechen.  
   
-3.  Wenn Sie möchten, dass Ihre App-Benutzer nur ausgewählte Dashboards verwenden können, aktivieren Sie das Kontrollkästchen für das Dashboard aus, das Sie hinzufügen möchten. Sie können die folgenden Arten von Dashboards auswählen:
-    - **Klassische Dashboards** werden in der Web-App und in der App mit einheitlicher Oberfläche angezeigt.
-    - **Interaktive Dashboards** werden nur in der App mit einheitlicher Oberfläche angezeigt. Wenn Sie als Clienttyp für die App die Web-App ausgewählt haben, wird die Option **Interaktive Dashboards** nicht angezeigt.
+3.  Wenn Sie möchten, dass Ihre Benutzer nur ausgewählte Dashboards verwenden, aktivieren Sie das Kontrollkästchen für die Dashboards, die Sie hinzufügen möchten. Die folgenden Dashboardtypen stehen zur Auswahl:
+    - **Klassische Dashboards** werden sowohl in der Web-App als auch in der App mit der einheitlichen Oberfläche angezeigt.
+    - **Interaktive Dashboards** werden nur in der App mit der einheitlichen Oberfläche angezeigt. Wenn Sie für den Clienttyp der App „Web-App“ ausgewählt haben, wird die Option **Interaktive Dashboards** nicht angezeigt.
 
-     Diese Dashboards werden der Kachel **Dashboard** auf der App-Designer-Canvas hinzugefügt. Die Kachel **Dashboard** zeigt auch die Anzahl der Dashboards an, die Sie der App hinzugefügt haben. Wenn Sie kein Dashboard auswählen, wird anstelle der Dashboard-Anzahl **Alle** angezeigt, und alle Dashboards sind für Benutzer verfügbar, wenn diese die App verwenden.  
+     Diese Dashboards werden der Kachel **Dashboard** auf der App-Designer-Canvas hinzugefügt. Die Kachel **Dashboard** gibt auch die Anzahl von Dashboards an, die Sie der App hinzugefügt haben. Wenn Sie kein Dashboard auswählen, wird **Alle** anstelle der Dashboardanzahl angezeigt, und Benutzern stehen bei Verwendung der App alle Dashboards zur Verfügung.  
   
-     Alle Entitäten, in denen das Dashboard verwendet wird, werden auch zum Bereich **Entitätsansicht** hinzugefügt. Wenn Sie das Kundenservicemanagerdashboard hinzufügen, werden die Fall-, Anspruchs- und Warteschlangenelemententitäten zum Entitätsansichtbereich hinzugefügt. Für jede Entität werden auch die Kacheln für die Ressourcen hinzugefügt. Sie können diese Kacheln verwenden, um die Formulare, Ansichten und Diagramme hinzufügen. Weitere Informationen: [Hinzufügen oder Bearbeiten von App-Komponenten im PowerApps App-Designer](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     Alle Entitäten, die das Dashboard verwendet, werden auch dem Bereich **Entitätsansicht** hinzugefügt. Wenn Sie beispielsweise das Dashboard „Leiter Kundendienst“ hinzufügen, werden dem Bereich „Entitätsansicht“ die Entitäten „Fall“, „Berechtigung“ und „Warteschlangenelement“ hinzugefügt. Für jede Entität werden auch die Kacheln für ihre Ressourcen hinzugefügt. Mit diesen Kacheln lassen sich Formulare, Ansichten und Diagramme hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen oder Bearbeiten von App-Komponenten im PowerApps-App-Designer](add-edit-app-components.md#bkmk_AddEntityAssets).   
   
-    ![Der App-Designer-Canvas eine Entität hinzufügen](../model-driven-apps/media/add-entity-app-designer-canvas.png "Der App-Designer-Canvas eine Entität hinzufügen")  
+    ![Hinzufügen von Entitäten zur App-Designer-Canvas](../model-driven-apps/media/add-entity-app-designer-canvas.png "Hinzufügen einer Entität zur App-Designer-Canvas")  
   
-4.  Wenn das gewünschte Dashboard nicht in der Standardlösung vorhanden ist, erstellen Sie ein Dashboard, indem Sie auf **Neu erstellen** auf der Registerkarte **Komponenten** rechts neben der Canvas klicken.  
+4.  Wenn das gewünschte Dashboard in der Standardlösung nicht vorhanden ist, erstellen Sie ein neues, indem Sie auf der Registerkarte **Komponenten** rechts neben der Canvas **Neu erstellen** auswählen.  
   
-     > [!div class="mx-imgBorder"]
-     > ![Einen neuen Link auf der Registerkarte "Komponenten" des App-Designers erstellen](../model-driven-apps/media/app-designer-components-tab-create-new.png "Einen neuen Link auf der Registerkarte \"Komponenten\" des App-Designers erstellen")  
+     ![Link „Neu erstellen“ auf der Registerkarte „Komponenten“ im App-Designer](../model-driven-apps/media/app-designer-components-tab-create-new.png "Link „Neu erstellen“ auf der Registerkarte „Komponenten“ im App-Designer")  
   
-     Der Dashboard-Designer wird geöffnet. Weitere Informationen: [Erstellen und Bearbeiten von Dashboards](create-edit-dashboards.md)  
+     Daraufhin wird der Dashboard-Designer geöffnet. Weitere Informationen finden Sie unter [Erstellen und Bearbeiten von Dashboards](create-edit-dashboards.md).  
   
     > [!NOTE]
-    > - Wenn Sie einen Geschäftsprozessfluss oder eine Entität hinzufügen, wird die Option **Neu erstellen** im entsprechenden Designer geöffnet. Weitere Informationen zur Erstellung von Geschäftsprozessflüssen finden Sie unter [Einen neuen Geschäftsprozessfluss erstellen](/flow/create-business-process-flow) und [Eine neue benutzerdefinierte Entität erstellen](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-entity).  
+    > - Wenn Sie einen Geschäftsprozessfluss oder eine Entität hinzufügen, öffnet die Option **Neu erstellen** den entsprechenden Designer. Weitere Informationen zum Erstellen von Geschäftsprozessflüssen und Entitäten finden Sie unter [Erstellen eines Geschäftsprozessflusses](/flow/create-business-process-flow) bzw. [Erstellen einer benutzerdefinierten Entität](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-entity).  
       
   
-5.  Wenn Sie mit dem Hinzufügen von Artefakten fertig sind, wählen Sie **Speichern**.  
+5.  Wenn Sie die Artefakte hinzugefügt haben, wählen Sie in der Befehlsleiste **Speichern** aus.  
   
 <a name="bkmk_AddEntityAssets"></a>   
 ## <a name="add-entity-assets-forms-views-charts-or-dashboards"></a>Hinzufügen von Entitätsressourcen (Formulare, Ansichten, Diagramme oder Dashboards)  
- Mit den Artefakten an der richtigen Stelle können Sie nun mit dem Hinzufügen von Entitätsanlagen wie Formulare, Ansichten, Diagramme und Dashboards zur App beginnen.
-Wenn Sie außerdem den Client mit einheitlicher Oberfläche verwenden, können Sie Entitätsdashboardanlagen zur App hinzufügen.  
+ Wenn die Artefakte hinzugefügt wurden, können Sie damit beginnen, der App Entitätsressourcen wie Formulare, Ansichten, Diagramme und Dashboards hinzuzufügen.
+Wenn Sie außerdem den Client für die einheitliche Oberfläche verwenden, können Sie der App auch Dashboardressourcen hinzufügen.  
   
- In diesem Abschnitt werden die Schritte zum Hinzufügen eines Formulars zu der App erläutert. Verwenden Sie dieselben Schritte, um eine Ansicht oder ein Diagramm einer App hinzuzufügen.  
+ Dieser Abschnitt beschreibt die Schritte zum Hinzufügen eines Formulars zur App. Gehen Sie genauso vor, um der App eine Ansicht oder ein Diagramm hinzuzufügen.  
   
-1.  Wählen Sie auf dem App-Designer-Canvas die Kachel **Formulare** für die Entität, die Sie in einem Formular hinzufügen möchten.  
+1.  Wählen Sie auf der App-Designer-Canvas die Kachel **Formulare** für die Entität aus, der Sie ein Formular hinzufügen möchten.  
   
-     Auf der App Designer-Canvas ist die gesamte Zeile für die Entität aktiviert. Auf der rechten Seite sehen Sie alle vorhandenen Formulare für die ausgewählte Entität.  
+     Auf der Canvas des App-Designers wird die gesamte Zeile für die Entität ausgewählt. Auf der rechten Seite werden alle vorhandenen Formulare für die ausgewählte Entität angezeigt.  
   
     > [!NOTE]
-    >  Alternativ können Sie eine der folgenden Möglichkeiten nutzen:  
+    >  Alternativ können Sie folgendermaßen vorgehen:  
     >   
-    > - Klicken Sie auf die Schaltfläche **Hinzufügen**![Hinzufügen-Schaltfläche im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer") und wählen Sie **Formulare**.  
-    > - Wählen Sie auf der Registerkarte **Komponenten** unter **Entitätsressourcen** **Formulare**.  
+    > - Wählen Sie **Hinzufügen** ![Schaltfläche „Hinzufügen“ im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Schaltfläche „Hinzufügen“ im Designer") und dann **Formulare** aus.  
+    > - Wählen Sie auf der Registerkarte **Komponenten** unter **Entitätsressourcen** **Formulare** aus.  
   
     > [!TIP]
-    >  Für alle für die App ausgewählten Entitäten wird die Schaltfläche **Weitere Optionen** (**...**) in der Liste **Entitäten auswählen** der Registerkarte **Komponenten** angezeigt. Um alle Ressourcen für die ausgewählte Entität hinzuzufügen, wählen Sie **Weitere Optionen** (**...**) und dann **Alle Ressourcen hinzufügen**.  
+    >  Für alle Entitäten, die für die App ausgewählt sind, erscheint auf der Registerkarte **Komponenten** in der Liste **Entitäten auswählen** die Schaltfläche **Weitere Optionen** (**...**). Um alle Ressourcen für die ausgewählte Entität hinzuzufügen, wählen Sie **Weitere Optionen** (**...**) und dann **Alle Ressourcen hinzufügen** aus.  
   
-2.  Wenn Sie möchten, dass Ihre App-Benutzer nur ausgewählte Formulare verwenden können, aktivieren Sie das Kontrollkästchen für die Formulare aus, das Sie hinzufügen möchten. Die Formulare definieren, wie Benutzer mit den Daten in der App interagieren. 
+2.  Wenn Ihre App-Benutzer nur ausgewählte Formulare verwenden sollen, aktivieren Sie die Kontrollkästchen für die Formulare, die Sie hinzufügen möchten. Die Formulare definieren, wie Benutzer Daten in der App angezeigt bekommen und mit ihnen interagieren. 
  
-     Die Formularkachel der ausgewählten Entität zeigt die Anzahl der hinzugefügten Formulare.  
+     Die Kachel „Formular“ der ausgewählten Entität zeigt die Anzahl von hinzugefügten Formularen an.  
   
-     ![Formularkacheln für die Anfrageentität](../model-driven-apps/media/add-forms-entity.png "Formularkacheln für die Anfrageentität")  
+     ![Kachel „Formular“ für die Entität „Fall“](../model-driven-apps/media/add-forms-entity.png "Kachel „Formular“ für die Entität „Fall“")  
   
-     Wenn Sie beispielsweise kein Formular für eine Entität auswählen, werden alle Formulare für diese Entität für Endbenutzer angezeigt, während Sie die App verwenden. Dieses Verhalten ist für Ansichten und Diagramme ähnlich, wenn kein Ansicht oder kein Diagramm ausgewählt wird. Dies erleichtert es Benutzern, Apps schnell zu erstellen, wenn sie mit allen verfügbaren Komponenten arbeiten müssen. Es ist nicht notwendig, jede Komponente während dem App-Design auszuwählen.  
+     Wenn Sie beispielsweise kein Formular für eine Entität auswählen, werden den Endbenutzern beim Verwenden der App alle Formulare für diese Entität angezeigt. Dieses Verhalten ähnelt dem von Ansichten und Diagrammen, wenn keine Ansicht bzw. kein Diagramm ausgewählt ist. So können Sie Apps schnell erstellen, wenn Sie mit allen verfügbaren Komponenten arbeiten müssen, weil Sie nicht jede Komponente beim App-Design auswählen müssen.  
 
-     Wenn keine Dashboards oder Geschäftsprozessflüsse ausgewählt werden, werden alle Dashboards und Geschäftsprozessflüsse für Benutzer verfügbar gemacht, während Sie die App verwenden.
+     Wenn keine Dashboards oder Geschäftsprozessflüsse ausgewählt sind, stehen den Benutzern beim Verwenden der App alle Dashboards und Geschäftsprozessflüsse zur Verfügung.
   
     > [!NOTE]
-    > Um die App auszuführen muss jede hinzugefügte Entität mindestens ein aktives Formular aufweisen. Falls Sie mehrere Formulare ausgewählt haben, wird das erste aktive Formular im Formularauftrag der Standardlösung verwendet, wenn Benutzer die App ausführen.  
+    > Damit die App ausgeführt werden kann, muss jede Entität, die Sie hinzufügen, mindestens ein aktives Formular haben. Wenn Sie mehrere Formulare ausgewählt haben, wird das erste aktive Formular verwendet, das in der Standardlösung angezeigt wird, wenn Benutzer die App ausführen.  
   
-3.  Wenn Sie ein neues Formular hinzufügen möchten, das nicht in der Liste angezeigt wird, wählen Sie **Neu erstellen**.  
+3.  Wenn Sie ein neues Formular hinzufügen möchten, das nicht in der Liste verfügbar ist, wählen Sie **Neu erstellen** aus.  
   
-     Wählen Sie in der Dropdownliste den Formulartyp aus, den Sie erstellen möchten.  
-  
-    > [!NOTE]
-    >  Die Dropdownliste ist nur verfügbar, wenn Sie Formulare hinzufügen. Es ist nicht für Ansichten und Diagramme verfügbar.  
-  
-     Der Formular-Designer wird geöffnet. Weitere Informationen: [Erstellen und Entwerfen von Formularen](create-design-forms.md)  
-  
-     Wenn Sie eine Ansicht oder ein Diagramm hinzufügen, öffnet die Option **Neu erstellen** den entsprechenden Designer. Weitere Informationen: [Ansichten verstehen](create-edit-views.md) und [Erstellen oder Bearbeiten eines Systemdiagramms](create-edit-system-chart.md)  
+     Wählen Sie in der Dropdownliste die Art des Formulars aus, das Sie erstellen möchten.  
   
     > [!NOTE]
-    >  Wenn Sie eine Ansicht hinzufügen, können Sie nur auf öffentliche Ansichten verweisen, die mit dem **Ansichten**-Knoten im Projektmappen-Explorer aufgelistet sind.  
+    >  Die Dropdownliste ist nur verfügbar, wenn Sie Formulare hinzufügen. Sie kann nicht für Ansichten und Diagramme verwendet werden.  
   
-4. Wählen Sie den Pfeil nach unten ![Dropdown-Symbol](../model-driven-apps/media/drop-down-icon.png "Pfeil nach unten"), um die Kachel zu erweitern und eine Liste der Formulare anzuzeigen, die hinzugefügt wurden.  
+     Daraufhin wird der Formulardesigner geöffnet. Weitere Informationen finden Sie unter [Erstellen und Gestalten von Formularen](create-design-forms.md).  
   
-     ![Erweiterte Formularkachel im App-Designer](../model-driven-apps/media/app-designer-expanded-form-tile.png "Erweiterte Formularkachel im App-Designer")  
+     Wenn Sie eine Ansicht oder ein Diagramm hinzufügen, öffnet die Option **Neu erstellen** den entsprechenden Designer. Weitere Informationen finden Sie unter [Grundlegendes zu Ansichten](create-edit-views.md) und [Erstellen oder Bearbeiten eines Systemdiagramms](create-edit-system-chart.md).  
   
-5.  Wiederholen Sie diese Schritte, um Entitätsansichten und Diagramme der App hinzuzufügen.  
+    > [!NOTE]
+    >  Wenn Sie eine Ansicht hinzufügen, können Sie nur auf öffentliche Ansichten verweisen, die im Projektmappen-Explorer unter dem Knoten **Ansichten** aufgeführt sind.  
   
-6.  Wählen Sie **Speichern** aus.  
+4. Wählen Sie den Dropdownpfeil ![Dropdownsymbol](../model-driven-apps/media/drop-down-icon.png "Dropdownpfeil") aus, um die Kachel zu erweitern und eine Liste der hinzugefügten Formulare anzuzeigen.  
   
-## <a name="edit-or-remove-artifacts"></a>Bearbeiten oder entfernen Sie Artefakte  
+     ![Erweiterte Kachel „Formular“ im App-Designer](../model-driven-apps/media/app-designer-expanded-form-tile.png "Erweiterte Kachel „Formular“ im App-Designer")  
   
-- Um ein Dashboard oder einen Geschäftsfluss zu bearbeiten, wählen Sie den Pfeil nach unten ![Dropdown-Symbol](../model-driven-apps/media/drop-down-icon.png "Pfeil nach unten"), um die Kachel zu erweitern, und wählen Sie dann die Schaltfläche ![Schaltfläche "Den Siteübersichtdesigner öffnen"](../model-driven-apps/media/dynamics365-open-designer.PNG "Schaltfläche \"Den Siteübersichtdesigner öffnen\"") gemäß dem Dashboard oder dem Prozessfluss, den Sie bearbeiten möchten.  
+5.  Wiederholen Sie diese Schritte, um der App Entitätsansichten und Diagramme hinzuzufügen.  
   
-     Der Designer für das ausgewählte Artefakt wird geöffnet.  
+6.  Wählen Sie **Speichern**.  
   
-- Wenn Sie ein Dashboard oder einen Geschäftsprozessfluss entfernen möchten, wählen Sie den Pfeil nach unten ![Dropdown-Symbol](../model-driven-apps/media/drop-down-icon.png "Pfeil nach unten"), um die Kachel zu erweitern. Wählen Sie dann das Dashboard oder den Geschäftsprozessfluss, das oder den Sie entfernen möchten. Wählen Sie auf der Befehlsleiste **Entfernen** aus.  
+## <a name="edit-or-remove-artifacts"></a>Bearbeiten oder Entfernen von Artefakten  
+  
+- Um ein Dashboard oder einen Geschäftsprozessfluss zu bearbeiten, wählen Sie den Dropdownpfeil ![Dropdownsymbol](../model-driven-apps/media/drop-down-icon.png "Dropdownpfeil") aus, um die Kachel zu erweitern, und wählen Sie dann die Schaltfläche ![Siteübersichts-Designer öffnen](../model-driven-apps/media/dynamics365-open-designer.PNG "Schaltfläche „Siteübersichts-Designer öffnen“") aus, die dem Dashboard bzw. Geschäftsprozessfluss entspricht, den Sie bearbeiten möchten.  
+  
+     Daraufhin wird der Designer für das ausgewählte Artefakt geöffnet.  
+  
+- Um ein Dashboard oder einen Geschäftsprozessfluss zu entfernen, wählen Sie den Dropdownpfeil ![Dropdownsymbol](../model-driven-apps/media/drop-down-icon.png "Dropdownpfeil") aus, um die Kachel zu erweitern, und wählen Sie dann das Dashboard bzw. den Geschäftsprozessfluss aus, den Sie entfernen möchten. Wählen Sie in der Befehlsleiste **Entfernen** aus.  
 
-    Eine weitere Methode, ein Dashboard oder einen Geschäftsprozessfluss zu entfernen, ist, die entsprechenden Kontrollkästchen auf der Registerkarte **Komponenten** zu deaktivieren.
+    Alternativ können Sie ein Dashboard oder einen Geschäftsprozessfluss entfernen, indem Sie das entsprechende Kontrollkästchen auf der Registerkarte **Komponenten** deaktivieren.
   
-- Zum Bearbeiten oder Entfernen einer Entität wählen Sie die Entitätskachel und dann auf der Befehlsleiste **Bearbeiten** oder **Entfernen**. Wenn Sie eine Entität bearbeiten, öffnet der Lösungsexplorer, wo Sie Änderungen an der Entität vornehmen können.  
+- Um eine Entität zu bearbeiten oder zu entfernen, wählen Sie die Entitätskachel und dann in der Befehlsleiste **Bearbeiten** bzw. **Entfernen** aus. Wenn Sie eine Entität bearbeiten, öffnet sich der Projektmappen-Explorer, in dem Sie Änderungen an der Entität vornehmen können.  
   
-     Alternativ wählen Sie das Dashboard oder den Geschäftsprozessfluss oder die Entitätskachel aus, um eine Komponente zu entfernen. Deaktivieren Sie auf der Registerkarte **Komponenten** die Kontrollkästchen für die Artefakte, die Sie aus dem Designer entfernen möchten.  
+     Alternativ können Sie eine Komponente entfernen, indem Sie das Dashboard, den Geschäftsprozessfluss oder die Entitätskachel auswählen. Deaktivieren Sie auf der Registerkarte **Komponenten** die Kontrollkästchen für die Artefakte, die Sie aus dem Designer entfernen möchten.  
   
     > [!NOTE]
-    >  Wenn Sie Änderungen an einer Entität vornehmen (beispielsweise das Ändern des Anzeigenamens der Entität oder der Beschreibung), werden die Änderungen nicht im App-Designer angezeigt, es sei denn, die Änderungen werden im Projektmappen-Explorer veröffentlicht.  
+    >  Wenn Sie Änderungen an einer Entität vornehmen &mdash; z.B. den Anzeigename oder die Beschreibung der Entität ändern &mdash; werden diese erst nach ihrer Veröffentlichung im Projektmappen-Explorer im App-Designer angezeigt.  
   
-## <a name="edit-or-remove-entity-assets"></a>Bearbeiten oder entfernen von Entitätsanlagen  
+## <a name="edit-or-remove-entity-assets"></a>Bearbeiten oder Entfernen von Entitätsressourcen  
 
-### <a name="edit-entity-assets"></a>Entitätsressourcen bearbeiten
+### <a name="edit-entity-assets"></a>Bearbeiten von Entitätsressourcen
   
-1. Wählen Sie den Pfeil nach unten ![Dropdown-Symbol](../model-driven-apps/media/drop-down-icon.png "Pfeil nach unten"), um die Kachel für Formulare, Ansichten, Diagramme oder Dashboards zu erweitern.  
+1. Wählen Sie den Dropdownpfeil ![Dropdownsymbol](../model-driven-apps/media/drop-down-icon.png "Dropdownpfeil") aus, um die Kachel für Formulare, Ansichten, Diagramme oder Dashboards zu erweitern.  
   
-2. Wählen Sie das Formular, die Ansicht, das Diagramm oder das Dashboard, das Sie bearbeiten möchten.  
+2. Wählen Sie das Formular, die Ansicht, das Diagramm oder das Dashboard aus, das Sie bearbeiten möchten.  
   
-3. Klicken Sie auf der Befehlsleiste auf **Bearbeiten**.
+3. Wählen Sie in der Befehlsleiste **Bearbeiten** aus.
 
    oder
 
-   Wählen Sie die Schaltfläche des Siteübersichtsdesigners ![Schaltfläche "Siteübersichts-Designer öffnen"](../model-driven-apps/media/dynamics365-open-designer.PNG "Schaltfläche \"Siteübersichts-Designer öffnen\"") gemäß dem Formular, der Ansicht, dem Diagramm oder dem Dashboard.  
+   Wählen Sie die Schaltfläche ![Siteübersichts-Designer öffnen](../model-driven-apps/media/dynamics365-open-designer.PNG "Schaltfläche „Siteübersichts-Designer öffnen“") aus, die dem Formular, der Ansicht, dem Diagramm oder dem Dashboard entspricht.  
 
-### <a name="remove-entity-assets"></a>Entfernen von Entitätsanlagen  
+### <a name="remove-entity-assets"></a>Entfernen von Entitätsressourcen  
 
-1. Wählen Sie den Pfeil nach unten ![Dropdown-Symbol](../model-driven-apps/media/drop-down-icon.png "Pfeil nach unten"), um die Kachel für Formulare, Ansichten, Diagramme oder Dashboards zu erweitern.  
+1. Wählen Sie den Dropdownpfeil ![Dropdownsymbol](../model-driven-apps/media/drop-down-icon.png "Dropdownpfeil") aus, um die Kachel für Formulare, Ansichten, Diagramme oder Dashboards zu erweitern.  
   
-2. Wählen Sie das Formular, die Ansicht, das Diagramm oder das Dashboard, das Sie bearbeiten möchten.
+2. Wählen Sie das Formular, die Ansicht, das Diagramm oder das Dashboard aus, das Sie bearbeiten möchten.
 
-3. Wählen Sie auf der Befehlsleiste **Entfernen** aus. 
+3. Wählen Sie in der Befehlsleiste **Entfernen** aus. 
 
-Alternativ können Sie die Kachel für Formulare, Ansichten, Diagrammen oder Dashboards auswählen und dann auf der Registerkarte **Komponenten** die Kontrollkästchen für die Ressourcen deaktivieren, die Sie aus dem Designer entfernen möchten.  
+Alternativ können Sie die Kachel „Formulare“, „Ansichten“, „Diagramme“ oder „Dashboards“ auswählen, und dann auf der Registerkarte **Komponenten** die Kontrollkästchen für die Ressourcen deaktivieren, die Sie aus dem Designer entfernen möchten.  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- [Erstellen einer App-Siteübersicht](create-site-map-app.md) </br>  
- [Überprüfen und Veröffentlichen Sie eine App](validate-app.md)
+ [Erstellen einer Siteübersicht für eine App](create-site-map-app.md) </br>  
+ [Überprüfen und Veröffentlichen einer App](validate-app.md)

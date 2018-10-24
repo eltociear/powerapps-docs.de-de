@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9497d257372181323a920bd2c1098601021e4f79
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
+ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863665"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44499520"
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -38,9 +38,9 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
 
-**AutoPause**: Ob ein Audio- oder Videoclip automatisch angehalten wird, wenn der Benutzer zu einem anderen Bildschirm navigiert.
+**AutoPause**: Gibt an, ob das Timersteuerelement automatisch angehalten wird, wenn der Benutzer zu einem anderen Bildschirm navigiert.
 
-**AutoStart** – Gibt an, ob ein Steuerelement Audio oder Video automatisch einen Clip wiedergibt, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.
+**AutoStart**: Gibt an, ob das Timersteuerelement automatisch wiedergegeben wird, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -92,7 +92,7 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
-**Start**: Ob ein Audio- oder Videoclip gespielt wird.
+**Start**: Gibt an, ob der Timer gestartet wird.
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 

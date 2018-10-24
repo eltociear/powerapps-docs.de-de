@@ -1,34 +1,34 @@
 ---
-title: Verwenden Sie den Azure Cosmos DB for SQL API Datenanbieter mit Common Data Service for Apps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie die Azure Cosmos Datenbank für SQL API Datenanbieter mit virtuellen Entitäten verwenden.'
-keywords: SQL API
+title: 'Previewfunktion: Verwenden des Azure Cosmos DB für SQL-API-Datenanbieters mit Common Data Service für Apps | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie den Azure Cosmos DB für SQL-API-Datenanbieter für die Verwendung mit virtuellen Entitäten konfigurieren.
+keywords: SQL-API
 ms.date: 06/27/2018
 ms.service: crm-online
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d0031ffc-8754-4a12-b8c1-e08edc49ff73
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: fa45376dff85205a0dfbf28334c678293528d00e
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39688594"
 ---
+# <a name="preview-feature-azure-cosmos-db-sql-api-data-provider-requirements"></a>Previewfunktion: Azure Cosmos DB für SQL-API-Datenanbieter – Anforderungen
 
-# <a name="preview-feature-azure-cosmos-db-sql-api-data-provider-requirements"></a>Vorschau-Funktion: Azure Cosmos DB für SQL API Datenanbieteranforderungen
-
-Dieses Thema beschreibt die Anforderungen an den Azure Cosmos DB for SQL API Datenanbieter sowie die Konfiguration und die empfohlenen bewährten Methoden bei der Verwendung des Azure Cosmos DB for SQL API Datenanbieters mit virtuellen Entitäten. 
+In diesem Thema werden die Anforderungen an den Azure Cosmos DB für SQL-API-Datenanbieter, seine Konfiguration und empfohlene Best Practices für seine Verwendung mit virtuellen Entitäten beschrieben. 
 
 > [!IMPORTANT]
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
@@ -36,81 +36,80 @@ Dieses Thema beschreibt die Anforderungen an den Azure Cosmos DB for SQL API Dat
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-no-ms-support.md)]
 
 
-## <a name="what-is-azure-cosmos-db"></a>Was ist Azure Cosmos Datenbank?
+## <a name="what-is-azure-cosmos-db"></a>Was ist Azure Cosmos DB?
 
-Azure Cosmos DB ist Microsofts weltweit verteilter Multi-Model-Datenbankdienst für unternehmenskritische Anwendungen. Sie stellt die umfassenden und konsistenten SQL-Abfragen-Funktionen mit niedrigen Wartezeiten zu Schema-losen JSON-Daten bereit. Weitere Informationen: [Einführung in die Azure Cosmos Datenbank: SQL-API](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction)
+Azure Cosmos DB ist der global verteilte Datenbankdienst von Microsoft mit mehreren Modellen für unternehmenskritische Anwendungen. Er stellt umfassende und vertraute SQL-Abfragefunktionen mit einheitlich geringen Latenzen für schemalose JSON-Daten bereit. Weitere Informationen finden Sie unter [Einführung in Azure Cosmos DB: SQL-API](https://docs.microsoft.com/azure/cosmos-db/sql-api-introduction).
 
 ## <a name="requirements"></a>Anforderungen
 
-- Azure Abonnement mit Azure Cosmos DB.
-- Eine Azure Cosmos DB SQL API Sammlung.
-- Der Datenbanktyp Azure Cosmos DB sollte SQL sein. 
+- Ein Azure-Abonnement mit Azure Cosmos DB
+- Eine SQL-API-Sammlung von Azure Cosmos DB
+- Der Azure Cosmos DB-Datenbanktyp muss SQL sein 
 
-## <a name="data-type-mapping"></a>Datentypzuordnungen
+## <a name="data-type-mapping"></a>Zuordnen von Datentypen
 
-Angenommen, Sie haben ein Azure Cosmos DB-Dokument in einer Sammlung mit dem Namen *Orders*, das die folgende JSON-Struktur hat.
+Angenommen, Sie haben ein Azure Cosmos DB-Dokument in einer Sammlung namens *Aufträge* mit der folgenden JSON-Struktur:
 
-![Beispiel JSON für SQL-API-Dokument.](media/documentdbexample.png)
+![JSON-Beispiel für SQL-API-Dokument](media/documentdbexample.png)
 
-Diese Tabelle zeigt die Datentypzuordnungen für das SQL-API-Dokument in der Sammlung *Orders* mit Common Data Service for Apps.
+Diese Tabelle zeigt die Datentypzuordnungen für das SQL-API-Dokument in der Sammlung *Aufträge* mit Common Data Service (CDS) für Apps.
 
-|SQL API-Daten|CDS for Apps|
+|SQL-API-Daten|CDS für Apps|
 |--|--|
 |`id`|Primärschlüssel|
-|`name`|Einzelne Textzeile|
+|`name`|Eine Textzeile|
 |`quantity`|Ganze Zahl|
-|`orderid`|Einzelne Textzeile|
+|`orderid`|Eine Textzeile|
 |`ordertype`|Optionssatz|
 |`amount`|Dezimalzahl oder Währung|
 |`delivered`|Zwei Optionen|
 |`datetimeoffset`|Datum und Uhrzeit|
 
 > [!NOTE]
-> - Attribute mit dem Präfix des Unterstrichs (_) werden durch die SQL API generiert«».
-> - Attribute, die im SQL API-Dokument als optional konfiguriert sind und in CDS for Apps als **Eingabe erforderlich** zugeordnet sind, werden einen Laufzeitfehler verursachen.
-> - ID-Attributwerte müssen Guids sein.
-> - Weitere Informationen zur Nutzung von Daten in SQL API finden Sie unter [Arbeiten mit Daten in Azure Cosmos DB](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/).
+> - Attribute mit einem Unterstrich (_) als Präfix werden mit der SQL-API generiert.
+> - Attribute, die im SQL-API-Dokument als optional konfiguriert sind und in CDS für Apps als **Eingabe erforderlich** zugeordnet werden, verursachen einen Laufzeitfehler.
+> - ID-Attributwerte müssen GUIDs sein.
+> - Weitere Informationen zum Verwenden von Datumsangaben in SQL-API finden Sie unter [Datumsangaben in Azure Cosmos DB](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/).
 
-## <a name="supported-sql-query-filtering"></a>Unterstützte SQL Abragefilter
+## <a name="supported-sql-query-filtering"></a>Unterstützte SQL-Abfragefilter
 
-SQL-Abfragefilter unterstützt die folgenden Zeichen. 
+Die SQL-Abfragefilter unterstützen die folgenden Operatoren. 
 
-- Vergleichsoperatoren:`<`,`>`,`<=`, `>=`,`!=`
+- Vergleichsoperatoren: `<`, `>`, `<=`, `>=`, `!=`
 - Logische Operatoren: `and`, `or` 
-- Satzoperatoren: `in`, `not in`
-- Zeichenfolgeoperatoren: `like`, `contains`, b`egins with`, `ends with`
+- Mengenoperatoren: `in`, `not in`
+- Zeichenfolgenoperatoren: `like`, `contains`, b`egins with`, `ends with`
 
 > [!NOTE]
-> Die Verwendung des Gleich-Operators wird in die entsprechenden `contains`/`begins with`/`ends with` Operatoren übersetzt. Die SQL-API unterstützt keine Musterargumente wie im Thema [Like (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql) beschrieben. Der Azure Cosmos DB for SQL API Data Provider kann den einzelnen Sonderfall `Like('[aA]%')` in `BeginsWith('a')` ODER `BeginsWith('A')` übersetzen. Beachten Sie, dass beim Zeichenfolgenvergleich in SQL API die Groß-/Kleinschreibung beachtet werden muss.
+> Beim Verwenden des „like“-Operators wird dieser in den entsprechenden Operator `contains`/`begins with`/`ends with` konvertiert. Die SQL-API unterstützt keine Musterargumente, wie im Thema [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql) erläutert. Azure Cosmos DB für SQL-API-Datenanbieter kann die einzige Ausnahme `Like('[aA]%')` in `BeginsWith('a')` ODER `BeginsWith('A')` konvertieren. Beachten Sie, dass der Zeichenfolgenvergleich in der SQL-API die Groß-/Kleinschreibung berücksichtigt.
 
-## <a name="add-a-data-source-using-the-azure-cosmos-db-for-sql-api-data-provider"></a>Fügen Sie einen Datenquelle mithilfe dem Azure Cosmos DB für SQL-API Datenanbieter hinzu.
+## <a name="add-a-data-source-using-the-azure-cosmos-db-for-sql-api-data-provider"></a>Hinzufügen einer Datenquelle mit dem Azure Cosmos DB für SQL-API-Datenanbieter
 
-1. Gehen Sie zu [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.documentdb_data_provider?tab=Overview), klicken Sie auf **JETZT ABRUFEN**, und folgen Sie den Anweisungen, um die Anwendung Ihrer Umgebung mit v9x oder höher hinzuzufügen.
-2. Wenn die Lösung installiert wurde, melden Sie an bei der Umgebung an navigieren Sie auf **Einstellungen** >  **Verwaltung** > **Virtuelle Entitäts-Datenquelle**.
-3. Auf der Aktionssymbolliste klicken Sie auf **NEU** und im Dialogfeld **Datenanbieter auswählen** die Option **Azure Cosmos DB für DocumentDB API Datenanbieter** und anschließend auf **OK**
-![Wählen Sie den Azure Cosmos DB für SQL API-Datenanbieter](media/createdatasource.png)
-1. Geben Sie die folgenden Informationen ein und klicken Sie dann auf **Speichern und beenden**.
+1. Öffnen Sie [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.documentdb_data_provider?tab=Overview), wählen Sie **JETZT HOLEN** aus, und befolgen Sie die Anweisungen, um die Anwendung mit v9x oder höher Ihrer Umgebung hinzuzufügen.
+2. Wenn die Lösung installiert wurde, melden Sie sich in der Umgebung an, und rufen Sie **Einstellungen** > **Verwaltung** > **Virtuelle Entitätsdatenquellen** auf.
+3. Wählen Sie in der Aktionssymbolleiste **NEU** und im Dialogfeld **Datenanbieter auswählen** **Azure Cosmos DB für SQL-API-Datenanbieter** und dann **OK** aus.
+![Auswählen des Azure Cosmos DB für SQL-API-Datenanbieters](media/createdatasource.png)
+1. Geben Sie die folgenden Informationen ein, und wählen Sie dann **Speichern und Schließen** aus.
 
     |Feld|Beschreibung|
     |--|--|
-    |**Name**|Geben Sie einen beschreibenden Namen für die Datenquelle ein.|
-    |**Sammlungsname**|Die ID der Azure Cosmos DB Datenbank-Sammlung, die die Daten enthält, die in einer virtuellen Entität auftauchen sollen.  |
-    |**Autorisierungsschlüssel**|Der Primär- oder Sekundärschlüssel für das Azure Cosmos DB-Konto. Sie finden den Schlüssel aus dem Azure Admin-Portal unter der **Schlüssel**-Einstellung in Ihrem Azure Cosmos DB-Konto.|
-    |**Uri**|Die URI der Ressourcengruppe, in der sich die Azure Cosmos DB-Sammlung befindet. Die URL wird ähnlich gebildet`https://contoso/documents.azure.com:443`. Sie finden die URI aus dem Azure Admin-Portal unter der **Schlüssel**-Einstellung für Ihr Azure Cosmos DB-Konto. |
-    |**Timeout in Sekunden**|Geben Sie die Anzahl der Sekunden ein, die auf eine Antwort des Azure Cosmos DB-Dienstes gewartet werden soll, bevor eine Zeitüberschreitung bei der Datenanforderung eintritt. Geben Sie beispielsweise 30 ein, um maximal 30 Sekunden zu warten, bevor ein Timeout eintritt. Die Standardverzögerung beträgt 120 Sekunden.|
+    |**Name**|Geben Sie einen Namen ein, der die Datenquelle beschreibt.|
+    |**Sammlungsname**|Die ID der Azure Cosmos DB-Datenbanksammlung, die die Daten enthält, die Sie in einer virtuellen Entität anzeigen möchten.  |
+    |**Autorisierungsschlüssel**|Der Primär- oder sekundäre Schlüssel für das Azure Cosmos DB-Konto. Sie finden den Schlüssel im Azure-Verwaltungsportal in der Einstellung **Schlüssel** für Ihr Azure Cosmos DB-Konto.|
+    |**URI**|Der URI der Ressourcengruppe, in der sich die Azure Cosmos DB-Sammlung befindet. Der URI hat etwa diese Struktur: `https://contoso/documents.azure.com:443`. Sie finden den URI im Azure-Verwaltungsportal in der Einstellung **Schlüssel** für Ihr Azure Cosmos DB-Konto. |
+    |**Timeout in Sekunden**|Geben Sie die Anzahl von Sekunden ein, die auf eine Antwort vom Azure Cosmos DB-Dienst gewartet werden soll, bevor ein Timeout der Datenanforderung eintritt. Geben Sie beispielsweise „30“ ein, um maximal 30 Sekunden zu warten, bevor ein Timeout eintritt. Das Standardtimeout beträgt 120 Sekunden.|
 
-    > [!div class="mx-imgBorder"] 
-    > ![So erstellen Sie die Datenquelle mithilfe des SQL-API Datenanbieters.](media/cosmosdb-datasource.png)
+    ![Erstellen der Datenquelle mit dem SQL-API-Datenanbieter](media/cosmosdb-datasource.png)
 
-## <a name="best-practices-and-limitations"></a>Bewährte Methoden und Einschränkungen
+## <a name="best-practices-and-limitations"></a>Best Practices und Einschränkungen
 
 - Beachten Sie Folgendes, wenn Sie Azure Cosmos DB als Datenquelle verwenden:
    - Jede Azure Cosmos DB-Datenquelle kann nur einer einzelnen virtuellen Entität zugeordnet werden.
    - Sie können mehrere Datenquellen mit derselben Sammlung in Azure Cosmos DB verbinden.
 - Sie können die Daten in einer Sammlung nicht nach Entität segmentieren.
-- Azure Cosmos DB-Datenbanken benötigen kein Schema, aber die Daten in Azure Cosmos DB müssen mithilfe eines vorhersagbaren Schemas strukturiert werden. 
-- Obwohl der Azure Cosmos DB for SQL API-Datenanbieter die Anfrage in einen Projektions-, Filter- und Sortieroperator übersetzt, unterstützt er keine verknüpften Operationen.
-- Mit der SQL API können Sie nur nach einer einzigen Spalte filtern.
+- Azure Cosmos DB-Datenbanken benötigen kein Schema. Allerdings müssen die Daten in der Azure Cosmos DB-Instanz nach einem vorhersehbaren Schema strukturiert werden. 
+- Obwohl der Azure Cosmos DB für SQL-API-Datenanbieter die Abfrageübersetzung von Projektions-, Filter- und Sortieroperatoren implementiert, unterstützt er keine JOIN-Vorgänge.
+- Mit der SQL-API können Sie nur nach einer einzelnen Spalte filtern.
 
 ## <a name="see-also"></a>Siehe auch
 

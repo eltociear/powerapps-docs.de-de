@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19199ade5c7f89f9d3d113b41ac9651a9b007ef6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 38745810321807e69d5eba8e1f2c281dafa73ae5
+ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42847894"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45640444"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Grundlegendes zu Canvas-App-Tabellen und -Datensätzen in PowerApps
 
@@ -40,7 +40,7 @@ Sie können eine Vielzahl von Formeln erstellen, die den Namen einer Tabelle als
 ### <a name="records"></a>Datensätze
 Jeder Datensatz enthält mindestens eine Kategorie von Informationen zu einer Person, einem Ort oder einem Gegenstand. Im obigen Beispiel für jedes Produkt ein Datensatz (**Chocolate** (Schokolade), **Bread** (Brot) und **Water** (Wasser)) und eine Spalte für jede Informationskategorie vorhanden (**Price** (Preis), **Quantity on Hand** (Lagerbestand) und **Quantity on Order** (bestellte Menge)).
 
-In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, der Datensatz **{ Name: "Strawberries", Price: 7.99 }** (Name: "Erdbeeren", Preis: 7.99) ist nicht mit einer Tabelle verknüpft.
+In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, der Datensatz **{ Name: "Strawberries", Price: 7.99 }** (Name: "Erdbeeren", Preis: 7.99) ist nicht mit einer Tabelle verknüpft. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
 
 ### <a name="fields"></a>Felder
 Ein Feld ist eine einzelne Information in einem Datensatz. Sie können diese Art von Feld als Wert in einer Spalte eines bestimmten Datensatzes visuell darstellen.

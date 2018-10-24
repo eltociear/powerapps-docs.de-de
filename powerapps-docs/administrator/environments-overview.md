@@ -6,14 +6,20 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 08/29/2018
 ms.author: manasma
-ms.openlocfilehash: 3e954db3ed224afa100d89be6aa03d7a2139a9d7
-ms.sourcegitcommit: 2e7b621066cdc3e7be329d5213ecfee0b4223641
+search.audienceType:
+- admin
+search.app:
+- D365CE
+- PowerApps
+- Powerplatform
+ms.openlocfilehash: e160098075b78a0a4de98da9c9915d0bef26d183
+ms.sourcegitcommit: b8eee36e680036accb0e7d9fc7a434906af1c4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39349936"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297326"
 ---
 # <a name="environments-overview"></a>Umgebungen – Übersicht
 Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschäftsdaten, Apps und Flows Ihres Unternehmens. Umgebungen dienen außerdem als Container zum Trennen von Apps, die unterschiedliche Rollen oder Sicherheitsanforderungen aufweisen oder sich an verschiedene Zielgruppen richten. In welcher Weise Sie Umgebungen nutzen, hängt von Ihrer Organisation und den Apps ab, die Sie erstellen möchten. Beispiel:
@@ -22,6 +28,7 @@ Eine Umgebung ist ein Bereich zum Speichern, Verwalten und Freigeben der Geschä
 * Sie können aber auch getrennte Umgebungen erstellen, um die Test- und Produktionsversionen Ihrer Apps zusammenzufassen.
 * Sie können getrennte Umgebungen erstellen, die bestimmten Teams oder Abteilungen im Unternehmen entsprechen und die jeweils relevanten Daten und Apps für die verschiedenen Zielgruppen enthalten.
 * Darüber hinaus können Sie separate Umgebungen für verschiedene Niederlassungen Ihres Unternehmens in der Welt erstellen.  
+* Nehmen Sie am [PowerApps-Vorschauprogramm](preview-environments.md) teil, um vorab Zugriff auf neue PowerApps-Funktionen zu erhalten.
 
 ## <a name="environment-scope"></a>Umgebungsumfang
 Jede Umgebung wird unter einem Azure AD-Mandanten erstellt, und nur Benutzer dieses Mandanten können auf ihre Ressourcen zugreifen. Eine Umgebung ist auch an einen geografischen Ort gebunden, wie etwa die USA. Wenn Sie eine App in einer Umgebung erstellen, wird diese App nur zu Rechenzentren am betreffenden geografischen Ort geroutet. Alle Elemente, die Sie in einer Umgebung erstellen (einschließlich Verbindungen, Gateways, Workflows mithilfe von Microsoft Flow und mehr), sind ebenfalls an den Standort ihrer Umgebung gebunden.
@@ -75,7 +82,7 @@ Die Standardumgebung ist wie folgt benannt: „{Azure AD-Mandantenname} (Standar
 Sie können Umgebungen für verschiedene Zwecke erstellen. Eine Testumgebung eignet sich z.B. zum Testen der Umgebung und der Datenbank mithilfe von Common Data Service-Funktionen. Sie kann nur für einen bestimmten Zeitraum verwendet werden. Weitere Informationen finden Sie unter [Administer environments in PowerApps (Verwalten von Umgebungen in PowerApps)](environments-administration.md).
 
 ## <a name="choosing-an-environment"></a>Auswählen einer Umgebung
-Die Einführung von Umgebungen umfasst auf [https://web.powerapps.com](https://web.powerapps.com) auch eine veränderte Benutzeroberfläche.  Die auf der Website sichtbaren Apps, Verbindungen und anderen Elemente sind jetzt nach der ausgewählten aktuellen Umgebung gefiltert.  Ihre aktuelle Umgebung wird im Umgebungswähler nahe der rechten Kante der Kopfleiste angezeigt. Um eine andere Umgebung auszuwählen, klicken oder tippen Sie auf den Umgebungswähler, dann wird eine Liste der verfügbaren Umgebungen angezeigt. Klicken oder tippen Sie auf die Umgebung, in die Sie eintreten möchten.
+Die Einführung von Umgebungen umfasst auf [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) auch eine veränderte Benutzeroberfläche.  Die auf der Website sichtbaren Apps, Verbindungen und anderen Elemente sind jetzt nach der ausgewählten aktuellen Umgebung gefiltert.  Ihre aktuelle Umgebung wird im Umgebungswähler nahe der rechten Kante der Kopfleiste angezeigt. Um eine andere Umgebung auszuwählen, klicken oder tippen Sie auf den Umgebungswähler, dann wird eine Liste der verfügbaren Umgebungen angezeigt. Klicken oder tippen Sie auf die Umgebung, in die Sie eintreten möchten.
 
 Eine Umgebung wird in Ihrer Auswahlliste angezeigt, wenn Sie eine der folgenden Bedingungen erfüllen:
 

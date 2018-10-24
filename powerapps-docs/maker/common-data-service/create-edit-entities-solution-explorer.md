@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer  | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Entität mithilfe des Lösungsexplorers erstellen'
+title: Erstellen und Bearbeiten von Entitäten mit dem Lösungs-Explorer | Microsoft-Dokumentation
+description: Erfahren Sie, wie mithilfe des Lösungs-Explorers eine Entität erstellt wird.
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,85 +9,85 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.author: matp
 manager: kvivek
-search.audienceType:
-  - maker
-search.app:
-  - PowerApps
-  - D365CE
+ms.openlocfilehash: 48025088da85bf0685ba1a46efa4f3a989a20a58
+ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39682201"
 ---
+# <a name="create-and-edit-entities-using-solution-explorer"></a>Erstellen und Bearbeiten von Entitäten mit dem Lösungs-Explorer
 
-# <a name="create-and-edit-entities-using-solution-explorer"></a>Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer
+Sie können ganz einfach eine Entität über das PowerApps-Portal für die gängigsten Situationen erstellen, es sind jedoch nicht alle Funktionen im Portal implementiert. Wenn Sie die unter [Erstellen und Bearbeiten von Entitäten in Common Data Service für Apps](create-edit-entities.md) genannten Anforderungen erfüllen müssen, können Sie hierfür Entitäten mit dem Lösungs-Explorer erstellen oder bearbeiten.
 
-Sie können keine Entität mithilfe des PowerApps-Portals für die meisten allgemeinen Situationen einfach erstellen, jedoch nicht alle Funktionen werden dort implementiert. Falls Sie diese Bedingungen erfüllen müssen, die in [Entitäten in Common Data Service erstellen und bearbeiten](create-edit-entities.md) beschrieben sind, können Sie sie ausführen, indem Sie mithilfe des Lösungs-Explorers Entitäten erstellen oder bearbeiten.
+## <a name="open-solution-explorer"></a>Öffnen des Lösungs-Explorers
 
-## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
-
-Ein Teil des Namens jeder benutzerdefinierten Entität, die Sie erstellen, ist das Anpassungspräfix. Dieser Satz basiert auf dem Lösungsherausgeber für die Lösung, in der Sie arbeiten. Wenn Ihnen das Anpassungspräfix wichtig ist, achten Sie darauf, dass Sie in einer nicht verwalteten Lösung oder der Standardlösung arbeiten, in der das Anpassungspräfix Ihren Wünschen für diese Entität entspricht. Weitere Informationen [Lösungsherausgeberpräfix ändern](change-solution-publisher-prefix.md) 
+Ein Teil des Namens einer Entität, die Sie erstellen, ist das Anpassungspräfix. Dieses wird basierend auf dem Lösungsherausgeber für die Lösung festgelegt, in der Sie momentan arbeiten. Wenn das Anpassungspräfix für Sie im Mittelpunkt steht, stellen Sie sicher, dass Sie in einer nicht verwalteten Lösung mit dem von Ihnen bevorzugten Anpassungspräfix für diese Entität arbeiten. Weitere Informationen finden Sie unter [Ändern des Präfixes für den Lösungsherausgeber](change-solution-publisher-prefix.md). 
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-## <a name="view-entities"></a>Entitäten anzeigen
+## <a name="view-entities"></a>Anzeigen von Entitäten
 
-Im Lösungs-Explorer-Knoten **Komponenten** wählen Sie den Knoten **Entitäten** aus.
+Klicken Sie im Lösungs-Explorer **Komponenten** auf den Knoten **Entitäten**.
 
-![Entitäten anzeigen im Lösungs-Explorer](media/view-entities-solution-explorer.png)
+![Anzeigen von Entitäten im Lösungs-Explorer](media/view-entities-solution-explorer.png)
 
 ## <a name="create-an-entity"></a>Erstellen einer Entität
 
-Beim [Entitäten anzeigen](#view-entities) auf der Menüleiste, wählen Sie **Neue Entität** zum Öffnen.
+Klicken Sie beim [Anzeigen von Entitäten](#view-entities) auf **Neu**, um das neue Entitätsformular zu öffnen.
 
-![Neues Entitätsformular im Lösungsexplorer](media/new-entity-form-solution-explorer.png)
+![Neues Entitätsformular im Lösungs-Explorer](media/new-entity-form-solution-explorer.png)
 
-Das neue Entitätsformular umfasst zwei Registerkarten. Die Registerkarte **Allgemein** ist für Entitätsoptionen. Die Registerkarte **Hauptfeld** ist für Optionen über das spezielle Textfeld, die jede einzelne Entität hat, die den angezeigten Text definiert, wenn ein Link zum Öffnen der Entität im Suchfeld vorhanden ist.
+Das neue Entitätsformular enthält zwei Registerkarten: Die Registerkarte **Allgemein** ist für Entitätsoptionen bestimmt. Die Registerkarte **Hauptfeld** ist für Optionen für die jeweilige einzelne Textzeile bestimmt, die jede Entität enthält. Sie definieren den Text, der angezeigt wird, wenn ein Link zum Öffnen der Entität in einem Suchfeld vorhanden ist.
 
-Weitere Informationen zu jedem Abschnitt finden Sie wie folgt:
-- [Hauptfeld konfigurieren](#configure-the-primary-field).
-- [Pflichtfelder konfigurieren](#configure-required-fields)
+Im Folgenden werden die einzelnen Abschnitte erläutert:
+- [Konfigurieren des Hauptfelds](#configure-the-primary-field)
+- [Konfigurieren der Pflichtfelder](#configure-required-fields)
 
 > [!NOTE]
-> Sie können aus der Entität eine benutzerdefinierte Aktivität machen. Diese Wahlmöglichkeit ändert einige der Standardoptionswerte. Weitere Informationen: [Benutzerdefinierte Aktivitätsentität erstellen](#create-custom-activity-entity)
+> Sie können aus der Entität auch eine benutzerdefinierte Aktivität machen. Durch diese Auswahl werden einige Standardoptionswerte geändert. Weitere Informationen finden Sie unter [Erstellen einer benutzerdefinierten Aktivitätsentität](#create-custom-activity-entity).
 
-Wenn Sie die erforderlichen Optionen für die Entität festgelegt haben, klicken Sie auf !["Speichern"-Befehl](media/save-entity-icon-solution-explorer.png) Erstellen Sie die benutzerdefinierte Entität.
+Nachdem Sie die erforderlichen Optionen für die Entität festgelegt haben, klicken Sie auf ![Speicherbefehl](media/save-entity-icon-solution-explorer.png) zum Erstellen der benutzerdefinierten Entität.
 
-### <a name="configure-the-primary-field"></a>Hauptfeld konfigurieren.
+### <a name="configure-the-primary-field"></a>Konfigurieren des Hauptfelds
 
-Auf der Registerkarte **Hauptfeld** können Sie die Standardwerte für das primäre Feld jedoch akzeptieren, aber Sie haben die folgenden Optionen:
+Auf der Registerkarte **Hauptfeld** können Sie in der Regel die Standardwerte für das Hauptfeld übernehmen, Sie haben jedoch die folgenden Optionen:
 
 |Feld   |Beschreibung  |
 |---------|---------|
-|**Anzeigename**|Geben Sie die lokalisierbare Beschriftung ein, die für das Feld in Formularen und Listen angezeigt wird. Der Standardwert ist **Name**.|
-|**Name**|Legen Sie einen Namen fest, der im System für dieses Feld verwendet wurde. Der Standardwert ist `<customization prefix>_name`.|
-|**Maximale Länge**|Geben Sie die maximale Länge für diesen Feldwert ein. Der Standard ist 100.|
+|**Anzeigename**|Geben Sie die lokalisierbare Beschriftung ein, die für dieses Feld in Formularen und Listen angezeigt wird. Der Standardwert lautet **Name**.|
+|**Name**|Legen Sie den Namen fest, der für dieses Feld im System verwendet wird. Der Standardwert ist `<customization prefix>_name`.|
+|**Maximale Länge**|Geben Sie die maximale Länge für die Feldwerte ein. Der Standardwert ist „100“.|
 
 > [!NOTE]
-> Diese Optionen treffen nicht zu, wenn die Entität eine Aktivitätsentität ist. Weitere Informationen: [Benutzerdefinierte Aktivitätsentität erstellen](#create-custom-activity-entity)
+> Diese Optionen gelten nicht, wenn die Entität eine Aktivitätsentität ist. Weitere Informationen finden Sie unter [Erstellen einer benutzerdefinierten Aktivitätsentität](#create-custom-activity-entity).
 
-### <a name="configure-required-fields"></a>Pflichtfelder konfigurieren
+### <a name="configure-required-fields"></a>Konfigurieren der Pflichtfelder
 
-In der Registerkarte **Allgemein** sind einige Optionen erforderlich, damit Sie die Entität speichern können.
+Auf der Registerkarte **Allgemein** müssen einige Optionen festgelegt werden, bevor Sie die Entität speichern können.
 
 |Feld   |Beschreibung  |
 |---------|---------|
-|**Anzeigename**|Dies ist der Name im Singular für die Entität, die in der App angezeigt wird.<br />Dieses Limit kann später geändert werden.|
-|**Pluralname**|Dies ist der Name im Plural für die Entität, die in der App angezeigt wird.<br />Dieses Limit kann später geändert werden.|
-|**Name**|Dieses Feld wird basierend auf dem von Ihnen eingegebenen Anzeigenamen vorab ausgefüllt. Es enthält das Anpassungspräfix des Lösungsherausgebers.|
-|**Besitz**|Sie können eine benutzer-/team-eigene oder eine organisationseigene Entität wählen. Weitere Informationen finden Sie unter [Entitätsbesitz](types-of-entities.md#entity-ownership).|
+|**Anzeigename**|Dies ist der Name für die Entität im Singular, der in der App angezeigt wird.<br />Dieser kann später geändert werden.|
+|**Pluralname**|Dies ist der Name für die Entität im Plural, der in der App angezeigt wird.<br />Dieser kann später geändert werden.|
+|**Name**|Dieses Feld ist basierend auf dem Anzeigenamen, den Sie eingeben, vorab aufgefüllt. Er enthält das Anpassungspräfix des Lösungsherausgebers.|
+|**Besitz**|Sie können entweder „Im Besitz eines Benutzers oder Teams“ oder „Im Besitz der Organisation“ auswählen. Weitere Informationen finden Sie unter [Besitz von Entitäten](types-of-entities.md#entity-ownership).|
 
 ## <a name="edit-an-entity"></a>Bearbeiten einer Entität
 
-Unter [Betrachtungsentitäten](#view-entities), wählen Sie die Entität aus, oder fahren mit dem Bearbeiten einer neuen Entität fort, die Sie gerade gespeichert haben.
+Wählen Sie beim [Anzeigen von Entitäten](#view-entities) die Entität aus, die Sie bearbeiten möchten, und fahren Sie mit der Bearbeitung einer neuen Entität fort, die Sie gerade gespeichert haben.
 
 > [!NOTE]
-> Standard-Informationsstrukturen oder benutzerdefinierte Entitäten, die Teil einer verwalteten Lösung sind, haben möglicherweise Einschränkungen auf Änderungen, die Sie haben können. Wenn die Option nicht verfügbar sind oder deaktiviert wird, dürfen Sie keine Änderungen vornehmen.
+> Standardentitäten oder benutzerdefinierte Entitäten, die Teil einer verwalteten Lösung sind, weisen möglicherweise Einschränkungen bezüglich der Änderungen auf, die Sie vornehmen können. Wenn die Option nicht verfügbar oder deaktiviert ist, ist es Ihnen nicht gestattet, die Änderung vorzunehmen.
 
-#### <a name="set-once-options"></a>Optionen einmal festlegen
+#### <a name="set-once-options"></a>Einmalig festzulegende Optionen
 
-Folgende Optionen können einmal festgelegt werden und können nicht geändert werden nachdem sie  festgelegt wurden. Legen Sie diese Optionen nur fest, wenn Sie sie benötigen.
+Die folgenden Optionen können nur einmal festgelegt und danach nicht mehr geändert werden, sobald Sie diese festgelegt haben. Legen Sie diese Optionen nur fest, wenn Sie diese tatsächlich benötigen.
 
 <!-- 
 Same data is presented in edit-entities.md
@@ -95,7 +95,7 @@ Both should point to this include
  -->
 [!INCLUDE [cc_entity-set-once-options-table](../../includes/cc_entity-set-once-options-table.md)]
 
-#### <a name="options-that-you-can-change"></a>Optionen, die Sie ändern können
+#### <a name="options-that-you-can-change"></a>Änderbare Optionen
 
 Die folgenden Eigenschaften können jederzeit geändert werden.
 
@@ -105,70 +105,70 @@ Both should point to this include
  -->
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
-Die folgenden Typen von Änderungen können vorgenommen werden:
-- Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)
+Sie können außerdem die folgenden Änderungen vornehmen:
+- [Erstellen und Bearbeiten von Feldern für Common Data Service für Apps](create-edit-fields.md)
 - [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
-- [Erstellen und Gestalten von Formularen](../model-driven-apps/create-design-forms.md)
-- [Einen neuen Geschäftsprozessfluss erstellen, um Prozesse zu standardisieren](/flow/create-business-process-flow)
+- [Erstellen und Entwerfen von Formularen](../model-driven-apps/create-design-forms.md)
+- [Erstellen eines Geschäftsprozessflusses zur Standardisierung von Prozessen](/flow/create-business-process-flow)
 
 ## <a name="delete-an-entity"></a>Löschen einer Entität
 
-Als Benutzer mit der Sicherheitsrolle "Systemadministrator" können Sie benutzerdefinierte Entitäten löschen, die nicht Teil einer verwalteten Lösung sind.  
+Als Benutzer mit der Sicherheitsrolle „Systemadministrator“ können Sie benutzerdefinierte Entitäten löschen, die nicht Teil einer verwalteten Lösung sind.  
   
 > [!IMPORTANT]
->  Wenn Sie eine benutzerdefinierte Entität löschen, werden die Datenbanktabellen, die Daten für diese Entität speichern, gelöscht, und alle enthaltenen Daten gehen verloren. Alle zugeordneten Datensätze mit einer hierarchischen Beziehung zu der benutzerdefinierten Entität werden ebenfalls gelöscht. Weitere Informationen über hierarchische Beziehungen finden Sie unter [Erstellen und Bearbeiten von Entitätsbeziehungen](create-edit-entity-relationships.md).  
+>  Wenn Sie eine benutzerdefinierte Entität löschen, werden die Datenbanktabellen gelöscht, die Daten für diese Entität speichern, und alle darin enthaltenen Daten gehen verloren. Zugehörige Datensätze, die eine übergeordnete Beziehung zu der benutzerdefinierten Entität aufweisen, werden ebenfalls gelöscht. Weitere Informationen zu übergeordneten Beziehungen finden Sie unter [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md).  
   
 > [!NOTE]
-> Die einzige Möglichkeit, Daten aus einer Entität wiederherzustellen, die entfernt wurde, besteht darin, die Datenbank von einem Zeitpunkt wiederherzustellen, bevor die Entität gelöscht wurde. Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung von Instanzen.](/dynamics365/customer-engagement/admin/backup-restore-instances)
+> Daten aus einer Entität können nur wiederhergestellt werden, indem die Datenbank vor dem Zeitpunkt, an dem die Entität gelöscht wurde, wiederhergestellt wird. Weitere Informationen finden Sie unter [Sichern und Wiederherstellen von Instanzen](/dynamics365/customer-engagement/admin/backup-restore-instances).
 
-Bei [Betrachtungsentitäten](#view-entities), klicken Sie auf den Befehl ![Löschenl](media/delete.gif) auf der Symbolleiste.
+Klicken Sie beim [Anzeigen von Entitäten](#view-entities) auf den ![Löschbefehl](media/delete.gif) in der Symbolleiste.
 
-Beim Anzeigen einer Entitätsverwendung nutzen Sie den Löschbefehl auf der Menüleiste.
+Verwenden Sie beim Anzeigen einer Entität den Löschbefehl in der Menüleiste.
 
-![Befehl löschen](media/delete-custom-entity-solution-explorer.png)
+![Löschbefehl](media/delete-custom-entity-solution-explorer.png)
 
 > [!WARNING]
-> Eine Entität löschen, die Daten enthalten, löscht alle Daten. Diese Daten können nur durch die Sicherung der Datenbank abgerufen werden.
+> Durch das Löschen einer Entität, die Daten enthält, werden alle Daten entfernt. Diese Daten können nur über die Sicherung der Datenbank abgerufen werden.
 
 > [!NOTE]
-> Falls Entitätsabhängigkeiten vorhanden sind, wird eine Fehlermeldung **Die Komponente kann nicht gelöscht werden.** mit einem **Detail** Link gesendet, die Sie verwenden können, um herauszufinden,  weshalb die Entität nicht gelöscht werden kann. In den meisten Fällen ist dies bei einer Abhängigkeit, die entfernt werden soll. 
+> Wenn Entitätsabhängigkeiten vorhanden sind, wird folgende Fehlermeldung angezeigt: **Die Komponente kann nicht gelöscht werden.** Dabei wird ein Link namens **Details** angezeigt, der weitere Informationen darüber enthält, warum die Entität nicht gelöscht werden kann. In den meisten Fällen ist der Grund eine Abhängigkeit, die entfernt werden muss. 
 >
-> Möglicherweise sind mehrere Abhängigkeit, die das Löschen einer Entität blockieren. Diese Fehlermeldung zeigt möglicherweise nur die ersten an. Eine andere Methode ermittelt Abhängigkeiten zu entdecken, finden Sie unter [Ermitteln Sie Entitätsabhängigkeiten](#identify-entity-dependencies)
+> Möglicherweise wird das Löschen einer Entität durch mehrere Abhängigkeiten verhindert. In dieser Fehlermeldung wird eventuell nur die erste Abhängigkeit angezeigt. Eine alternative Möglichkeit zum Ermitteln von Abhängigkeiten finden Sie unter [Identifizieren von Entitätsabhängigkeiten](#identify-entity-dependencies).
 
 
 
-### <a name="identify-entity-dependencies"></a>Entitätsabhängigkeiten gefunden
+### <a name="identify-entity-dependencies"></a>Identifizieren von Entitätsabhängigkeiten
 
-Sie können Abhängigkeiten identifizieren, die verhindern, dass eine Entität gelöscht wird, bevor Sie versuchen, diese zu löschen. 
+Bevor Sie Abhängigkeiten löschen, können Sie sie identifizieren und so verhindern, dass eine Entität gelöscht wird. 
 
-1. Klicken Sie im Lösungs-Explorer mit der ausgewählten Entität, klicken Sie auf **Abhängigkeiten anzeigen** in der Befehlsleiste.
+1. Klicken Sie im Lösungs-Explorer mit der markierten Entität auf **Abhängigkeiten anzeigen** in der Befehlsleiste.
 
-![Abhängigkeitsbefehl anzeigen](media/entity-show-dependencies.png)
+![Befehl „Abhängigkeiten anzeigen“](media/entity-show-dependencies.png)
 
-2. Im Dialog, der geöffnet wird, gehen Sie zu der Liste rechts, um **Abhängigkeitstyp** anzuzeigen.
+2. Scrollen Sie die Liste im Dialogfenster, das geöffnet wird, nach rechts, um die Spalte **Abhängigkeitstyp** anzuzeigen.
 
-![Veröffentlichter Abhängigkeitstyp](media/published-entity-dependency.png)
+![Typ der veröffentlichten Abhängigkeit](media/published-entity-dependency.png)
 
-**Veröffentlicht** Abhängigkeiten sperren das Löschen einer Entität. **Intern** Abhängigkeiten sollten vom System aufgelöst werden.  
+Bei **veröffentlichten** Abhängigkeiten ist das Löschen einer Entität nicht möglich. **Interne** Abhängigkeiten müssen vom System aufgelöst werden.  
 
-3. Entfernen Sie diese veröffentlichten Abhängigkeiten und Sie sollten in der Lage sein, die Entität zu löschen.
+3. Wenn Sie diese veröffentlichten Abhängigkeiten entfernen, sollten Sie die Entität löschen können.
 
  > [!NOTE]
- > Eine sehr häugige Abhängigkeit ist, dass ein anderes Entitätsformular über ein Suchfeld für die Entität verfügt, die Sie löschen. Dieses Suchfeld aus dem Formular wird die Abhängigkeit auflösen.
+ > Eine sehr häufige Abhängigkeit ist, dass ein anderes Entitätsformular ein Suchfeld für die Entität enthält, die Sie löschen möchten. Durch das Entfernen des Suchfelds aus dem Formular wird die Abhängigkeit aufgelöst.
 
 ## <a name="create-custom-activity-entity"></a>Erstellen einer benutzerdefinierten Aktivitätsentität
 
-Um die Entität als Aktivitätsentität zu erstellen, können Sie dieselben Schritte ausführen, die in diesem Thema beschriebenen sind, außer **Als Aktivitätsentität definieren**.
+Um die Entität als Aktivitätsentität zu erstellen, verwenden Sie die gleichen Schritte in diesem Thema, mit Ausnahme des Schritts zum Auswählen von **Als Aktivitätsentität definieren**.
 
-![Als Aktivitätsentität definieren](media/create-activity-entity-solution-explorer.png)
+![Definieren als Aktivitätsentität](media/create-activity-entity-solution-explorer.png)
 
-Die Aktivitätsentität ist eine spezielle Art von Entität, die Aktionen nachverfolgt, für die ein Eintrag in einem Kalender vorgenommen werden kann. Mehr Informationen: [Aktivitäten-Entitäten](types-of-entities.md#activity-entities).
+Eine Aktivitätsentität ist eine besondere Art von Entität, die Aktionen nachverfolgt, für die ein Eintrag in einem Kalender erstellt werden kann. Weitere Informationen finden Sie unter [Aktivitätsentitäten](types-of-entities.md#activity-entities).
 
-Wenn Sie diese Option festlegen, sind einige Entitätseigenschaften nicht kompatibel. Die Aktivitätsentität muss sich an die standardmäßigen Verhalten anpassen, die alle Entitäten verwenden.
+Einige Eigenschaften der Entität sind nicht kompatibel, wenn Sie diese Option festlegen. Eine Aktivitätsentität muss bestimmten Standardverhalten entsprechen, die alle Aktivitätsentitäten verwenden.
 
-Das primäre Feld **Name** und **Anzeigename** wird auf **Betreff** festgelegt und Sie können dies nicht ändern.
+Das Hauptfeld **Name** und **Anzeigenamen** werden auf **Betreff** festgelegt. Dies kann nicht geändert werden.
 
-Folgende Optionen sind standardmäßig festgelegt und können nicht mehr geändert werden:
+Die folgenden Optionen werden standardmäßig festgelegt und können nicht geändert werden:
 
  - **Feedback**
  - **Notizen (enthält Anlagen)**
@@ -180,23 +180,23 @@ Folgende Optionen können nicht festgelegt werden:
 
 - **Bereiche, in denen diese Entität angezeigt wird**
 - **Aktivitäten**
-- **E-Mail wird gesendet**
+- **E-Mail-Sendestatus**
 - **Seriendruck**
-- **Einzelne Datensatzüberwachung**
-- **Mehrere Datensatzüberwachung**
+- **Einzeldatensatzüberwachung**
+- **Mehrfachdatensatzüberwachung**
 
-## <a name="create-a-virtual-entity"></a>Eine virtuelle Entität erstellen
+## <a name="create-a-virtual-entity"></a>Erstellen einer virtuellen Entität
 
-Einige Optionen werden nur verwendet, falls eine virtuelle Entität erstellt wird.
+Einige Optionen werden nur bei der Erstellung einer virtuellen Entität verwendet.
 
 |Option   |Beschreibung  |
 |---------|---------|
 |**Virtuelle Entität**|Gibt an, ob die Entität eine virtuelle Entität ist.|
-|**Datenquelle**|Die Datenquelle für die Entität.|
+|**Datenquelle**|Gibt die Datenquelle für die Entität an.|
 
-Mehr Informationen: [Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten](create-edit-virtual-entities.md)
+Weitere Informationen finden Sie unter [Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten](create-edit-virtual-entities.md).
 
 ### <a name="see-also"></a>Siehe auch
-[Erstellen und bearbeiten Sie Entitäten in Common Data Service for Apps | MicrosoftDocs](create-edit-entities.md)<br />
-[Lernprogramm: Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Erstellen und Bearbeiten von benutzerdefinierten Entitäten in Common Data Service for Apps](create-edit-entities.md)<br />
+[Tutorial: Erstellen benutzerdefinierter Entitäten mit Komponenten in PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Erstellen einer Lösung](create-solution.md)

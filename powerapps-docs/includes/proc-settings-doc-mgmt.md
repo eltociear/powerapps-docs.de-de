@@ -1,0 +1,1 @@
+Wechseln Sie zu **Einstellungen** > **Dokumentverwaltung**.
