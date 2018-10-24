@@ -1,1 +1,0 @@
-Anwendungsblock mit zusammengesetzter UI
