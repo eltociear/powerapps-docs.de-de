@@ -1,6 +1,6 @@
 ---
-title: Schnellstart zum Ausführen von Apps in einem Webbrowser | Microsoft-Dokumentation
-description: In diesem Schnellstart erfahren Sie, wie Sie Apps in einem Webbrowser ausführen.
+title: Ausführen von Apps in einem Webbrowser | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie, wie Sie Apps in einem Webbrowser ausführen.
 author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
@@ -11,15 +11,20 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
-ms.openlocfilehash: b0b0cb39cf0a7d49ca24d31c2803ae463df2f97e
-ms.sourcegitcommit: bcfefb30b12cf94815dd9a0fd8cad29a8272d96e
+search.audienceType:
+- enduser
+search.app:
+- PowerApps
+- D365CE
+ms.openlocfilehash: f72d4b5192bd30da676e65e232bc2a3090cb77bb
+ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925637"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42832423"
 ---
-# <a name="quickstart-run-an-app-in-a-web-browser"></a>Schnellstart: Ausführen einer App in einem Webbrowser
-Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Schnellstart erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
+# <a name="run-an-app-in-a-web-browser"></a>Ausführen einer App in einem Webbrowser
+Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Artikel erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
 
 Für diesen Schnellstart benötigen Sie Folgendes:
 - Eine PowerApps-Lizenz. Diese ist in einem PowerApps-Plan wie der [Testversion für den PowerApps-Plan 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) oder in den [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)- oder [Dynamics 365](https://dynamics.microsoft.com/pricing/)-Plänen enthalten, in denen PowerApps enthalten ist. 
@@ -62,7 +67,7 @@ Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nu
 Melden Sie sich auf der Dynamics 365-Startseite ab, um eine App zu schließen, oder öffnen Sie eine andere App.
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Schnellstart haben Sie erfahren, wie Sie eine Canvas-App oder eine modellgesteuerte App in einem Webbrowser ausführen. Weitere Informationen zum Ausführen einer Canvas-App auf einem Mobilgerät finden Sie im nächsten Schnellstart.
+In diesem Artikel haben Sie erfahren, wie Sie eine Canvas-App oder eine modellgesteuerte App in einem Webbrowser ausführen. Weitere Informationen zum Ausführen einer Canvas-App auf einem Mobilgerät finden Sie im nächsten Thema.
 
 > [!div class="nextstepaction"]
 > [Run a canvas app on a mobile device (Ausführen einer Canvas-App auf einem mobilen Gerät)](run-app-client.md)
