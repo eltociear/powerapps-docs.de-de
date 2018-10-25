@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa2631d065425ab57e47dccbb470f577d6474f23
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: afbb6211ee947abd59e74a0712dd080f6911ec65
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806177"
 ---
 # <a name="integrate-powerapps-microsoft-flow-and-power-bi-with-sharepoint-online"></a>Integrieren von PowerApps, Microsoft Flow, und Power BI mit SharePoint Online
 Sie verfügen über SharePoint Online und möchten Ihre Geschäftsprozesse besser automatisieren und optimieren? Sie haben mit PowerApps, Microsoft Flow oder Power BI gearbeitet, sind aber nicht sicher, wie Sie diese mit SharePoint Online verwenden können? Dann sind Sie hier richtig. In dieser Reihe von Tutorials wird untersucht, wie eine grundlegende Canvas-App für das Projektmanagement entwickelt wird, die auf SharePoint-Listen und drei Schlüsseltechnologien basiert, die mit SharePoint Online integriert sind: PowerApps, Microsoft Flow und Power BI. Diese Technologien wirken zusammen und erleichtern das *Messen* Ihrer Geschäftsprozesse, das *Reagieren* auf die Ergebnisse und das *Automatisieren* Ihrer Workflows. Wenn Sie diese Reihe abgeschlossen haben, liegt Ihnen ein cooles Szenario wie die folgenden vor:
@@ -31,7 +31,7 @@ In dieser Reihe von Tutorials verfügt das Unternehmen Contoso über eine ShareP
 ## <a name="getting-started-quickly"></a>Schnelleinstieg
 Das in dieser Reihe von Tutorials vorgestellte Szenario scheint unkompliziert, wenn es einer umfassenden App für Projektmanagement und -analyse gegenübergestellt wird, dennoch dauert es jedoch eine gewisse Zeit, alle Aufgaben auszuführen. Wenn Sie lediglich eine rasche Einführung zum Verwenden von PowerApps, Microsoft Flow und Power BI mit SharePoint wünschen, sehen Sie die folgenden Artikel ein:
 
-* **PowerApps:** [Generieren einer App aus SharePoint mit PowerApps](generate-app-from-sharepoint-list-interface.md) und [Generieren einer App, um Daten in einer SharePoint-Liste zu verwalten](app-from-sharepoint.md)
+* **PowerApps:** [Generieren einer App aus SharePoint mit PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) und [Generieren einer App, um Daten in einer SharePoint-Liste zu verwalten](app-from-sharepoint.md)
 * **Microsoft Flow:** [Warten auf Genehmigung in Microsoft Flow](https://docs.microsoft.com/flow/wait-for-approvals)
 * **Power BI:** [Einbetten mit einem Berichts-Webpart in SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 

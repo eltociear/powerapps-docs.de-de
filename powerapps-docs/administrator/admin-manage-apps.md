@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2018
+ms.date: 10/24/2018
 ms.author: jimholtz
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: ac0ae8032ea64734030bf95ff9b473553e462b3b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f4dd7ddb4eaaef56b5720287842a2b84cd10d345
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835147"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991813"
 ---
 # <a name="manage-apps-created-in-your-organization"></a>Verwalten von in Ihrer Organisation erstellten Apps 
 Wenn Sie ein Umgebungsadministrator, ein globaler Office 365-Administrator oder ein Azure Active Directory-Mandantenadministrator sind, können Sie die Apps verwalten, die in Ihrer Organisation erstellt wurden.
@@ -49,7 +49,6 @@ Wenn Sie ein Umgebungsadministrator, ein globaler Office 365-Administrator oder 
 4. Führen Sie eine der folgenden Aktionen durch:
 
     * Klicken oder tippen Sie auf das Papierkorbsymbol, um die App zu löschen.
-    * Ändern Sie den Besitzer der App.
     * Zeigen Sie Datenverbindungen, Flows und weitere Details zur App an.
     * Klicken oder tippen Sie auf **Share** (Freigeben), um die Benutzer anzuzeigen oder zu ändern, für die die App freigegeben ist.
 

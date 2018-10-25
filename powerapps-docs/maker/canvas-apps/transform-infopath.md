@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e17015c05d23f4bd9f8a0906e7b1d9d00e2c38f
-ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
+ms.openlocfilehash: c2d72368b36f2de854a0aa575f9ef44f2f966ace
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48246049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806223"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>Transformieren des InfoPath-Formulars in ein PowerApps-Formular
 
@@ -76,7 +76,7 @@ Führen Sie die folgenden Schritte aus, um loszulegen:
 
 PowerApps erstellt eine App, die Sie dann anpassen können.
 
-Starten Sie die Erstellung Ihrer ersten App mit einer einfachen benutzerdefinierten Liste, die nur einige wenige Felder verschiedener Typen enthält. So können Sie eine solide Grundlage erstellen und behalten den Überblick. Machen Sie sich keine Gedanken, Sie sind im Handumdrehen ein Profi und bereit, komplexe Apps in Angriff zu nehmen. Hilfreiche Informationen zum Erstellen Ihrer ersten App finden Sie in dieser [Dokumentation](generate-app-from-sharepoint-list-interface.md) und in diesem [Communityvideo](https://youtu.be/BnYe_7fpZRM). Die folgenden Beispiele zeigen allgemeine InfoPath-Aufgaben und wie Sie sie in PowerApps erledigen. Jede davon baut auf einer einfachen SharePoint-Listen-App auf.
+Starten Sie die Erstellung Ihrer ersten App mit einer einfachen benutzerdefinierten Liste, die nur einige wenige Felder verschiedener Typen enthält. So können Sie eine solide Grundlage erstellen und behalten den Überblick. Machen Sie sich keine Gedanken, Sie sind im Handumdrehen ein Profi und bereit, komplexe Apps in Angriff zu nehmen. Hilfreiche Informationen zum Erstellen Ihrer ersten App finden Sie in dieser [Dokumentation](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) und in diesem [Communityvideo](https://youtu.be/BnYe_7fpZRM). Die folgenden Beispiele zeigen allgemeine InfoPath-Aufgaben und wie Sie sie in PowerApps erledigen. Jede davon baut auf einer einfachen SharePoint-Listen-App auf.
 
 ## <a name="how-do-you-do-that-with-powerapps"></a>Wie funktioniert das mit PowerApps?
 
@@ -129,7 +129,7 @@ Sie können komplexere Nachrichten (z.B. im Rahmen eines SharePoint-Genehmigungs
 Wenn Sie die gesuchte E-Mail-Option noch nicht gefunden haben, können Sie auch die PowerApps-Connectors für Benchmark Email, Gmail, MailChimp, Outlook.com, SendGrid oder SMTP nutzen. Das ist das Schöne an PowerApps: Konnektivität.
 
 **Workflows**  
-Es ist schwer, über Geschäftsanwendungen und Geschäftslogik zu sprechen, ohne eine Workflow-Engine zu erwähnen. Die gute Nachricht ist, dass das PowerApps-Team das Rad nicht neu erfunden hat, um Ihnen noch eine Workflow-Engine zur Verfügung zu stellen. Stattdessen wird Ihnen ein stabiler Connector zum Microsoft Flow-Dienst geboten. Sie können Prozesse und Aufgaben für mehr als [200 verschiedene Dienste](https://flow.microsoft.com/connectors/) automatisieren, indem Sie die benutzerfreundliche Workflow-Engine nutzen. Weitere Informationen zur Verbindung zwischen PowerApps und Microsoft Flow finden Sie in dieser [Dokumentation](using-logic-flows.md).
+Es ist schwer, über Geschäftsanwendungen und Geschäftslogik zu sprechen, ohne eine Workflow-Engine zu erwähnen. Die gute Nachricht ist, dass das PowerApps-Team das Rad nicht neu erfunden hat, um Ihnen noch eine Workflowengine zur Verfügung zu stellen. Stattdessen wird Ihnen ein stabiler Connector zum Microsoft Flow-Dienst geboten. Sie können Prozesse und Aufgaben für mehr als [200 verschiedene Dienste](https://flow.microsoft.com/connectors/) automatisieren, indem Sie die benutzerfreundliche Workflow-Engine nutzen. Weitere Informationen zur Verbindung zwischen PowerApps und Microsoft Flow finden Sie in dieser [Dokumentation](using-logic-flows.md).
 
 **Variablen mit PowerApps**  
 Beim Erstellen von Lösungen wird selbstverständlich davon ausgegangen, dass Variablen dazugehören. PowerApps bietet verschiedene Arten von Variablen. Nutzen Sie diese aber nur, wenn es wirklich notwendig ist. Anstatt darüber nachzudenken, Daten abzurufen, sie in einer Variablen zu speichern und dann auf die Variable zu verweisen, müssen Sie nur noch direkt auf diese Daten verweisen. Sie werden dieses Modell besser verstehen, wenn Sie es mit Excel vergleichen. In Excel ist die Summe keine Variable, sondern das Ergebnis der Addition anderer Felder. Wenn Sie diesen Wert also an anderer Stelle auf dem Blatt verwenden möchten, geben Sie die Zelle an, in der Sie die Summe berechnet haben. In der [Dokumentation](working-with-variables.md) finden Sie hierzu eine gute Erklärung. Seien Sie offen für einen anderen Denkprozess.
@@ -150,10 +150,10 @@ Wenn Sie dennoch Variablen benötigen (was in vielen Fällen vorkommt), erfahren
 
 - Sammlungen speichern Tabellen mit Informationen, die individuell aktualisiert werden können. Verwenden Sie [Collect](functions/function-clear-collect-clearcollect.md), um einen Warenkorb zu erstellen, für den der Benutzer verschiedene SharePoint-Elemente markiert, die er versenden möchte. Die Umsetzung dieses Konzepts wird in einem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/Learn-about-PowerApps-Collections/m-p/89180) veranschaulicht.
 
-**Hierarchische Dropdownlisten**  
+**Überlappende Dropdownmenüs**  
 Hierarchische Dropdownlisten sind sehr praktisch, da Sie z.B. die Auswahl in einer Dropdownliste basierend auf dem in der vorherigen Dropdownliste ausgewählten Wert filtern können. In PowerApps werden diese oft durch zwei Datenquellen in Ihrer App erzeugt. Die erste Datenquelle sind die Daten, die Sie anzeigen oder aktualisieren, und die zweite Datenquelle speichert die Werte, um den Hierarchieeffekt zu erzielen. Diese Abbildung zeigt ein Beispiel der zweiten Datenquelle mit den Auswahlmöglichkeiten.
 
-![Hierarchische Dropdownlisten](./media/transform-infopath/cascading-dropdowns.png)
+![Überlappende Dropdownmenüs](./media/transform-infopath/cascading-dropdowns.png)
 
 In diesem Beispiel können Sie eine Dropdownliste namens **ddSelectType** hinzufügen und die **Items**-Eigenschaft der Liste auf folgende Formel festlegen:
 
@@ -163,7 +163,7 @@ Die Dropdownliste würde nur die folgenden Elemente anzeigen: Cost, Program Impa
 
 ```Filter(Impacts,ddSelectType.Selected.Value in SCategory)```
 
-So einfach erhalten Sie hierarchische Dropdownlisten. Weitere Informationen finden Sie in diesem Beitrag des PowerApps-Teams [SharePoint: Cascading Dropdowns in 4 Easy Steps!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) (SharePoint: Hierarchische Dropdownlisten in vier einfachen Schritten) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
+So einfach erhalten Sie überlappende Dropdownmenüs. Weitere Informationen finden Sie in diesem Beitrag des PowerApps-Teams [SharePoint: Cascading Dropdowns in 4 Easy Steps!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) (SharePoint: Hierarchische Dropdownlisten in vier einfachen Schritten) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
 
 **Erstellen Sie keine einzelne Super-App**  
 Mit PowerApps können Sie eine App aus einer anderen App aufrufen. Anstatt also ein InfoPath-Massenformular zu erstellen, das praktisch nur mit Kaugummi zusammenhält, können Sie eine Gruppe von Apps erstellen, die sich gegenseitig aufrufen und sogar Daten weitergeben. Auf diese Weise wird die Entwicklung erheblich vereinfacht.
