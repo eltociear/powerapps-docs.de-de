@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0bdab9bcd45f456c00f933dfa7f1a8936e3fa85
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
+ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49806200"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>GroupBy- und Ungroup-Funktionen in PowerApps
 Gruppiert und hebt die Gruppierung von [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) auf.
@@ -68,7 +68,7 @@ Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahle
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche **Original**auf diese Formel fest:
    
     **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
-3. Drücken Sie F5, wählen Sie die Schaltfläche **Original** aus, und drücken Sie anschließend ESC.
+3. Halten Sie die ALT-TASTE gedrückt, und klicken Sie auf die Schaltfläche **Ursprünglich**.
    
     Sie haben jetzt eine [Sammlung](../working-with-data-sources.md#collections) mit dem Namen **CityPopulations** erstellt, die die folgenden Daten enthält:
    
@@ -82,7 +82,7 @@ Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahle
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche auf diese Formel fest:
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
-3. Drücken Sie F5, wählen Sie die Schaltfläche **Group** aus, und drücken Sie anschließend ESC.
+3. Halten Sie die ALT-TASTE gedrückt, und klicken Sie auf die Schaltfläche **Gruppe**.
    
     Sie haben jetzt eine Sammlung mit dem Namen **CitiesByCountry** erstellt, in der die Datensätze der vorherigen Sammlung mithilfe der Spalte **Country** gruppiert werden.
    
@@ -99,7 +99,7 @@ Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahle
 2. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche auf diese Formel fest:
    
     **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
-3. Drücken Sie F5, klicken Sie auf die Schaltfläche, die Sie hinzugefügt haben, und drücken Sie ESC.
+3. Halten Sie die ALT-TASTE gedrückt, und klicken Sie auf die Schaltfläche, die Sie hinzugefügt haben.
    
     Sie haben jetzt eine dritte Sammlung mit dem Namen **CitiesByCountryFiltered** erstellt, die nur Länder mit einem „e“ im Namen enthält, d h. nicht „Spain“ oder „Italy“.
    
@@ -126,8 +126,12 @@ Mit einer gruppierten Tabelle lassen sich außerdem Ergebnisse aggregieren.  In 
     ![](media/function-groupby/cities-sum.png)
    
     **[AddColumns](function-table-shaping.md)**  beginnt mit der grundlegenden Sammlung **CitiesByCountry** und fügt eine neue Spalte **Sum of City Populations** hinzu.  Die Werte dieser Spalte werden zeilenweise auf der Basis der Formel **Sum ( Cities, Population)** berechnet.  **AddColumns** stellt den Wert der Spalte **Cities** (eine Tabelle) für jede Zeile, und  **[Sum](function-aggregates.md)** addiert die Zahlen unter **Population** für jede Zeile dieser untergeordneten Tabelle.
-3. Wir haben jetzt die gewünschte Summe berechnet und können **[DropColumns](function-table-shaping.md)** verwenden, um die untergeordneten Tabellen zu entfernen.  Ändern Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft, um diese Formel zu verwenden:
-   
+
+    Wir haben jetzt die gewünschte Summe berechnet und können **[DropColumns](function-table-shaping.md)** verwenden, um die untergeordneten Tabellen zu entfernen.
+  
+3. Fügen Sie eine andere Schaltfläche hinzu, und legen Sie deren **[Text](../controls/properties-core.md)**-Eigenschaft so fest, dass die Schaltfläche **"SumOnly"** anzeigt.
+4. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** der Schaltfläche **"Sum"** auf diese Formel fest:
+
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    
     Dies führt zu folgendem Ergebnis:

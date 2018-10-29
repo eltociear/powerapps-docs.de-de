@@ -1,53 +1,52 @@
 ---
-title: Hinzufügen von Listenfeldern, Dropdownlisten und Optionsfeldern zu einer Canvas-App | Microsoft-Dokumentation
+title: Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern zu einer Canvas-App | Microsoft-Dokumentation
 description: Erstellen oder Konfigurieren von Mehrfachauswahloptionen in einer Canvas-App in PowerApps
-author: lonu
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 10/23/2016
-ms.author: lonu
+ms.date: 10/24/2018
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 71beefdb0c937d69e621d6b02fa000b96c5a3e73
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42861503"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991744"
 ---
-# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app-in-powerapps"></a>Hinzufügen eines Listenfelds, einer Dropdownliste oder eines Optionsfelds zu einer Canvas-App in PowerApps
+# <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>Hinzufügen eines Listenfelds, einer Dropdownliste oder eines Optionsfelds zu einer Canvas-App
 
-PowerApps bietet Mehrfachauswahl- und Einfachauswahloptionen für Canvas-Apps; hierzu zählen Listenfelder, Dropdownlisten und Optionsfelder. In diesem Thema werden diese Steuerelemente hinzugefügt, und mithilfe einer **Tabellen**-Formel werden die Listen erstellt. Wenn ein Element in der Liste ausgewählt wird, werden andere Steuerelemente aktualisiert.
+Zeigen Sie eine einzelne Spalte mit Daten (z.B. aus einer Tabelle mit mehreren Spalten) in einer Canvas-App an, damit Benutzer ein oder mehrere Elemente in einer Liste auswählen können.
+
+- Fügen Sie ein Listenfeld hinzu, um Benutzern die Auswahl von mehreren Optionen zu ermöglichen.
+- Fügen Sie eine Dropdownliste hinzu, um den beanspruchten Platz auf einem Bildschirm zu reduzieren.
+- Fügen Sie eine Gruppe von Optionsfeldern für einen bestimmten Designeffekt hinzu.
+
+Dieses Thema bezieht sich zwar auf Listenfelder und Optionsfelder, die Prinzipien gelten jedoch auch für Dropdownlisten.
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
-## <a name="add-a-list-box"></a>Hinzufügen eines Listenfelds
+## <a name="create-a-simple-list"></a>Erstellen einer einfachen Liste
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Steuerelemente** und anschließend **Listenfeld** aus:  
+1. Fügen Sie ein Steuerelement vom Typ **Listenfeld** mit der Bezeichnung **MyListBox** hinzu, und legen Sie seine **Items**-Eigenschaft auf folgenden Ausdruck fest:
 
-    ![][2]  
-
-2. Benennen Sie das **Listenfeld**-Steuerelement in **MyListBox** um:  
-
-    ![][3]
-
-3. Legen Sie seine **[Items](controls/properties-core.md)**-Eigenschaft auf den folgenden Ausdruck fest:  
-   ```["circle","triangle","rectangle"]```  <br/>
+    ```["circle","triangle","rectangle"]```  <br/>
 
     Der Designer sieht nun etwa wie folgt aus:
 
     ![][4]
 
-4. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** aus, wählen Sie den Kreis aus, und verschieben Sie ihn unter das **Listenfeld**-Steuerelement:
+4. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** aus, wählen Sie den Kreis aus, und verschieben Sie ihn unter **MyListBox**:
 
     ![][5]  
 
-5. Fügen Sie ein Dreieck und ein Rechteck aus, und ordnen Sie die Formen unter dem **Listenfeld**-Steuerelement in einer Reihe an:
+5. Fügen Sie ein Dreieck und ein Rechteck hinzu, und ordnen Sie die Formen unter **MyListBox** in einer Reihe an:
 
     ![][6]  
 
@@ -59,12 +58,14 @@ PowerApps bietet Mehrfachauswahl- und Einfachauswahloptionen für Canvas-Apps; h
    | triangle |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
    | rectangle |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
 
-7. Rufen Sie eine Vorschau der Ergebnisse auf (![][1]). Wählen Sie die verschiedenen Formen im **Listenfeld**-Steuerelement aus. Nur die ausgewählte Form bzw. die ausgewählten Formen werden angezeigt. Drücken Sie ESC, oder wählen Sie das **X** aus, um zum Bildschirm zurückzukehren.
+7. Wählen Sie bei gedrückter ALT-Taste eine oder mehrere Formen unter **MyListBox** aus.
 
-In diesen Schritten haben Sie mithilfe eines Ausdrucks eine Liste von Elementen in einem **Listenfeld**-Steuerelement erstellt. Je nach Auswahl im **Listenfeld**-Steuerelement werden andere Formen angezeigt. Sie können diese Vorgehensweise auf andere Elemente im Unternehmen anwenden. Sie können mit einem **Listenfeld**-Steuerelement beispielsweise Produktabbildungen, Produktbeschreibungen usw. anzeigen.
+    Nur die ausgewählte Form bzw. die ausgewählten Formen werden angezeigt.
+
+In diesen Schritten haben Sie mithilfe eines Ausdrucks eine Liste von Elementen erstellt. Sie können diese Vorgehensweise auf andere Elemente im Unternehmen anwenden. Sie können mit einem Steuerelement vom Typ **Dropdownliste** beispielsweise Produktabbildungen, Produktbeschreibungen usw. anzeigen.
 
 ## <a name="add-radio-buttons"></a>Hinzufügen von Optionsfeldern
-1. Wählen Sie auf der Registerkarte **Start** die Option **Neuer Bildschirm** aus.
+1. Klicken Sie erst auf der Registerkarte **Start** auf **Neuer Bildschirm** und anschließend auf **Leer**.
 
 2. Wählen Sie auf der Registerkarte **Einfügen** die Option **Steuerelemente** und anschließend **Radio** aus.
 
@@ -80,7 +81,7 @@ In diesen Schritten haben Sie mithilfe eines Ausdrucks eine Liste von Elementen 
 4. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** aus, und wählen Sie anschließend den Kreis aus.
 
 5. Legen Sie die **[Fill](controls/properties-color-border.md)**-Eigenschaft des Kreises auf die folgende Funktion fest:  
-   ```If(Choices.Selected.Value = "red", RGBA(192, 0, 0, 1), Choices.Selected.Value = "green", RGBA(0, 176, 80, 1), Choices.Selected.Value = "blue", RGBA(0, 32, 96, 1))```  
+   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     In dieser Formel ändert der Kreis je nach ausgewähltem Optionsfeld seine Farbe.
 
@@ -88,20 +89,7 @@ In diesen Schritten haben Sie mithilfe eines Ausdrucks eine Liste von Elementen 
 
     ![][14]  
 
-7. Rufen Sie eine Vorschau der Ergebnisse auf (![][1]). Wählen Sie ein anderes Optionsfeld aus, um die Farbe des Kreises ändern. Drücken Sie ESC, oder wählen Sie das **X** aus, um zum Bildschirm zurückzukehren.
-
-## <a name="add-a-drop-down-list"></a>Hinzufügen einer Dropdownliste
-1. Fügen Sie einen Bildschirm hinzu, und fügen Sie anschließend ein **Dropdown**-Steuerelement hinzu.
-
-    ![][15]  
-
-2. Benennen Sie das Steuerelement in **DDChoices** um, und legen Sie seine **[Items](controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:<br>
-   **["red","green","blue"]**
-
-3. Fügen Sie einen Kreis hinzu, verschieben Sie ihn unter das **Dropdown**-Steuerelement, und legen Sie die **[Fill](controls/properties-color-border.md)**-Eigenschaft des Kreises auf diese Formel fest:  
-   ```If(DDChoices.Selected.Value = "red", RGBA(192, 0, 0, 1), DDChoices.Selected.Value = "green", RGBA(0, 176, 80, 1), DDChoices.Selected.Value = "blue", RGBA(0, 32, 96, 1))```
-
-4. Rufen Sie eine Vorschau der Ergebnisse auf (![][1]). Wählen Sie die anderen Optionen zum Ändern der Farbe des Kreises aus.
+7. Wählen Sie bei gedrückter ALT-Taste ein anderes Optionsfeld aus, um die Farbe des Kreises ändern.
 
 [1]: ./media/add-list-box-drop-down-list-radio-button/preview.png
 [2]: ./media/add-list-box-drop-down-list-radio-button/listbox.png

@@ -1,5 +1,5 @@
 ---
-title: Integrieren von PowerApps in Websites und andere Dienste | Microsoft-Dokumentation
+title: Integrieren von Canvas-Apps in Websites und andere Dienste | Microsoft-Dokumentation
 description: Betten Sie Canvas-Apps in Websites und andere Dienste ein.
 author: mgblythe
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9cd4008bcb93e05d696fec082e400ee9661785b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 254d127237cff58728f208d62c30bf7aeb456a80
+ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835393"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991836"
 ---
-# <a name="integrate-powerapps-into-websites-and-other-services"></a>Integrieren von PowerApps in Websites und andere Dienste
+# <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die Apps, die Sie erstellen, sind oft dann besonders nützlich, wenn sie für Ihre Arbeitskollegen direkt an Ort und Stelle verfügbar sind. Mithilfe von PowerApps können Sie Canvas-Apps in einen iframe einbetten, sodass sich diese Apps in Websites und andere Dienste wie Power BI und SharePoint integrieren lassen.
 
 In diesem Thema zeigen wir das Festlegen von Parametern für die Einbettung von Apps. Anschließend betten wir Ihre App zum Bestellen von Geschäftsausstattung in eine Website ein.
@@ -32,7 +32,7 @@ Berücksichtigen Sie die folgenden Einschränkungen:
 * Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
 * Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
 
-PowerApps lassen sich außerdem (ohne Verwendung eines iframes) in SharePoint Online integrieren. Weitere Informationen finden Sie unter [Generieren einer App aus SharePoint mit PowerApps](../canvas-apps/generate-app-from-sharepoint-list-interface.md).
+PowerApps lassen sich außerdem (ohne Verwendung eines iframes) in SharePoint Online integrieren. Weitere Informationen finden Sie unter [Generieren einer App aus SharePoint mit PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Festlegen von URI-Parametern für Ihre App
 Wenn Sie über eine einzubettende App verfügen, besteht der erste Schritt im Festlegen von Parametern für den URI (Uniform Resource Identifier), um dem iframe mitzuteilen, wo sich die App befindet. Der URI liegt in der folgenden Form vor:
