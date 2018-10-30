@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 09/19/2018
+ms.date: 10/15/2018
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: b8cebc6f9db8a1a7c1a060aad461f4f32fcee05b
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
+ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46469347"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49328692"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>Integrieren von Daten in Common Data Service für Apps
 
@@ -88,6 +88,9 @@ Bevor Sie ein Datenintegrationsprojekt erstellen können, müssen Sie eine Verbi
 
     > [!div class="mx-imgBorder"] 
     > ![Verbindungsliste](media/data-integrator/CreateConnection1780.png "Verbindungsliste")
+
+> [!NOTE]
+> Stellen Sie sicher, dass das Konto, das Sie für die einzelnen Verbindungen angeben, über Zugriff auf Entitäten für die entsprechenden Anwendungen verfügt. Darüber hinaus kann sich das Konto für die einzelnen Verbindungen auf einem anderen Mandanten befinden. 
 
 ### <a name="how-to-create-a-connection-set"></a>Erstellen einer Verbindungsgruppe
 
@@ -169,8 +172,6 @@ Projekte ermöglichen den Datenfluss zwischen Systemen. Ein Projekt enthält Zuo
 
 ### <a name="execution-history"></a>Ausführungshistorie
 
-<!--note from editor: Do you think most people reading this will know what "upsert" means?-->
-
 Die Ausführungshistorie zeigt den Verlauf aller Projektausführungen mit Projektname, Zeitstempel der Projektausführung, Status der Ausführung sowie der Anzahl von upsert-Vorgängen und/oder Fehlern.
 
 -   Beispiel für den Projektausführungsverlauf.
@@ -228,6 +229,12 @@ Beachten Sie auch, dass Sie unter „Benachrichtigungen“ E-Mail-basierte Benac
 
 > [!div class="mx-imgBorder"] 
 > ![E-Mail-Benachrichtigung](media/data-integrator/EmailNotification780.png "E-Mail-Benachrichtigung")
+
+> [!NOTE]
+> - Derzeit unterstützen wir die Planung von 50 Integrationsprojekten zu einem beliebigen Zeitpunkt pro kostenpflichtigen Mandanten. Sie können jedoch weitere Projekte erstellen und sie interaktiv ausführen.
+Für Testmandanten besteht eine weitere Einschränkung: Ein geplantes Projekt wird nur für die ersten 50 Ausführungen ausgeführt.
+> - Wir bieten zwar Unterstützung dafür, Projekte für die Ausführung im Minutentakt zu planen, Sie sollten jedoch beachten, dass Ihre Apps hierdurch stark ausgelastet werden könnten und folglich die allgemeine Leistung beeinträchtigt werden kann. Benutzern wird ausdrücklich empfohlen, Projektausführungen unter tatsächlichen Lastbedingungen zu testen und die Leistung durch seltener ausgeführte Aktualisierungsvorgänge zu optimieren.
+In Produktionsumgebungen wird empfohlen, maximal 5 Projekte pro Minute pro Mandant auszuführen.
 
 ## <a name="customizing-projects-templates-and-mappings"></a>Anpassen von Projekten, Vorlagen und Zuordnungen 
 
