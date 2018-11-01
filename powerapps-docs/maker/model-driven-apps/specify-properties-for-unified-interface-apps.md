@@ -1,96 +1,96 @@
 ---
-title: Angeben von Eigenschaften für modellgesteuerte Apps mit einheitlicher Benutzeroberfläche in PowerApps | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie das Rastersteuerelement in Ihrer App konfigurieren.
+title: Festlegen von Eigenschaften für modellgesteuerte Einheitliche Oberfläche-Apps in PowerApps | MicrosoftDocs
+description: 'Erfahren Sie, wie das Rastersteuerelement für Ihre App konfiguriert wird'
 keywords: ''
 ms.date: 06/06/2018
 ms.service: crm-online
-ms.custom: ''
+ms.custom: null
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 3ecea4a7-0d18-4ccd-9609-3a62179e9e1b
 ms.author: matp
 manager: kvivek
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.reviewer: null
+ms.suite: null
+ms.tgt_pltfrm: null
 caps.latest.revision: 0
 topic-status: Drafting
-ms.openlocfilehash: 007ac566e317ee99bd85ab0675e5a53839800bb4
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39683513"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Angeben von Eigenschaften für modellgesteuerte Apps mit einheitlicher Benutzeroberfläche
 
-Das Framework für einheitliche Oberflächen nutzt Prinzipien des reaktionsfähigen Designs, um eine optimale Anzeige und Interaktion für jede Bildschirmgröße und -ausrichtung zu ermöglichen. Bei modellgesteuerten Apps, die das Framework für einheitliche Oberflächen verwenden, ist das Steuerelement zur Anzeige des Rasters reaktionsfähig. Wenn ein Container verkleinert wird – z.B. auf Smartphones und in Viewports –, wird das Raster in eine Liste umgewandelt. 
+# <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Festlegen von Eigenschaften für modellgesteuerte Einheitliche Oberfläche-Apps
 
-Das Steuerelement für schreibgeschützte Raster gibt an, wie ein Raster in unterschiedlichen Bildschirmgrößen dynamisch umbrochen wird. Wenn Sie als App-Ersteller mit einer App mit einheitlicher Benutzeroberfläche arbeiten, können Sie das Steuerelement für schreibgeschützte Raster und dessen Eigenschaften für benutzerdefinierte Raster und Listen konfigurieren.
-- **Card Form**-Eigenschaft: Verwenden Sie ein Kartenformular für Listen anstelle der standardmäßigen Listenvorlage. Kartenformulare bieten mehr Informationen für Listenelemente als die standardmäßige Listenvorlage.
-- **Reflow Behavior**-Eigenschaft: Verwenden Sie diesen Parameter, um festzulegen, ob ein Raster in eine Liste dynamisch umbrochen werden soll oder nicht.
+Das „Einheitliche Oberfläche”-Framework verwendet dynamische Webdesignprinzipien, um bei jeder Bildschirmgröße oder -ausrichtung die bestmögliche Ansicht und Interaktion zu bieten. Mit modellgesteuerten Apps, die das Einheitliche Oberlfäche-Framework verwenden, ist das Raster-(Ansichts-)-Steuerelement dynamisch. Wenn die Größe des Containers abnimmt – beispielsweise bei Smartphones und kleineren Viewports – wird das Raster in eine Liste umgewandelt. 
 
-## <a name="allow-grid-to-reflow-into-list"></a>Zulassen des dynamischen Umbruchs eines Rasters in eine Liste
+Das schreibgeschützte Rastersteuerelement gibt an, wie ein Raster an verschiedene Bildschirmgrößen angepasst wird. Wenn Sie als App-Hersteller mit einer „Einheitliche Oberfläche”-App arbeiten, können Sie das schreibgeschützte Rastersteuerelement und dessen Eigenschaften für benutzerdefinierte Raster und Listen anpassen.
+- **Kartenformular**-Eigenschaft: Verwenden Sie ein Kartenformular für Listen anstelle der Standardlistenvorlage. Kartenformulare stellen mehr Informationen zu Listenelementen bereit als die Standardlistenvorlage.
+- **Dynamisches Umbruchsverhalten**-Eigenschaften: Geben Sie mit diesem Parameter an, ob ein Raster in eine Liste umgewandelt wird.
 
-Durch Hinzufügen des Steuerelements für schreibgeschützte Raster zu Ihren Steuerelementen können Sie die folgenden Funktionen konfigurieren: 
-- Lassen Sie zu, dass ein Raster auf kleinen Displays z.B. von Mobilgeräten dynamisch in eine Liste umbrochen wird.
-- Geben Sie den Renderingmodus als „nur Raster“ oder „nur Liste“ an.  
+## <a name="allow-grid-to-reflow-into-list"></a>Raster in Liste umbrechen lassen
 
-1. Öffnen Sie den [Projektmappen-Explorer](advanced-navigation.md#solution-explorer).
-2. Erweitern Sie im Navigationsbereich die Option **Entitäten**, wählen Sie die gewünschte Entität aus (z.B. **Konto** oder **Kontakt**), und klicken Sie dann auf der Registerkarte **Steuerelemente** auf **Steuerelement hinzufügen**.
+Durch Hinzufügen des schreibgeschützten Rastersteuerelements zu Ihrer Steuerelementliste können Sie die folgenden Funktionen konfigurieren: 
+- Lassen Sie das Umbrechen eines Rasters in eine Liste bei kleinen Displays (z. B. Mobilgeräte) zu.
+- Legen Sie den Rendermodus als "nur Raster" oder "nur Liste" fest.  
 
-    ![Öffnen von „Steuerelement hinzufügen“](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "Öffnen von „Steuerelement hinzufügen“")
+1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).
+2. Erweitern Sie **Entitäten** im Navigationsbereich, wählen Sie die entsprechende Entität (beispielsweise **Firma** oder **Kontakt**) aus, und wählen Sie dann auf der Registerkarte **Steuerelemente** die Option **Steuerelement hinzufügen** aus.
 
-3. Wählen Sie **Read Only Grid** aus der Liste der Steuerelemente aus, und klicken Sie dann auf **Hinzufügen**.
+    ![Steuerelement hinzufügen öffnen](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "Steuerelement hinzufügen öffnen")
 
-    Das Steuerelement wird der Liste der verfügbaren Steuerelemente hinzugefügt.
+3. Wählen Sie in der Liste der Steuerlemente **Schreibgeschütztes Raster** aus, und wählen Sie dann **Hinzufügen** aus.
+
+    Das Steuerelement wird der Liste verfügbarer Steuerelemente hinzugefügt.
    
-    ![Auswählen eines Steuerelements](media/UnifiedInterface_ReadOnlyGrid_SelectControl.png "Auswählen eines Steuerelements")
+    ![Steuerelement auswählen](media/UnifiedInterface_ReadOnlyGrid_SelectControl.png "Steuerelement auswählen")
     
-4. Wählen Sie die Geräte aus (**Web**, **Smartphone** oder **Tablet**), für die Sie das Raster als schreibgeschützt festlegen möchten.
+4. Wählen Sie die Geräte aus (**Web**, **Telefon** oder **Tablet**), für die Sie ein schreibgeschütztes Raster möchten.
 
-    ![Auswählen des Gerätetyps](media/UnifiedInterface_ReadOnlyGrid_SelectDevice.png "Auswählen von Geräten")
+    ![Gerätetyp auswählen](media/UnifiedInterface_ReadOnlyGrid_SelectDevice.png "Geräte auswählen")
 
-5. Konfigurieren Sie die **Card Form**-Eigenschaft.
+5. Konfigurieren Sie die **Kartenformular**-Eigenschaft.
 
-    Sie können die Card Form-Eigenschaft verwenden, um Listenelemente anstelle der Standardlistenvorlage anzuzeigen. Kartenformulare bieten mehr Informationen für Listenelemente als die standardmäßige Listenvorlage.    
+    Sie können anstelle der Standardlistenvorlage die Kartenformular-Eigenschaft nutzen, um Listenelemente anzuzeigen. Kartenformulare stellen mehr Informationen zu Listenelementen bereit als die Standardlistenvorlage.    
 
-    a. Klicken Sie neben **Card Form** auf das Stiftsymbol.
+    a. Wählen Sie das Stiftssymbol neben **Kartenformular** aus.
 
-    ![Bearbeiten des Kartenformulars](media/UnifiedInterface_ReadOnlyGrid_CardForm.png "Bearbeiten des Kartenformulars")
+    ![Kartenformular bearbeiten](media/UnifiedInterface_ReadOnlyGrid_CardForm.png "Kartenformular bearbeiten")
 
-    b.  Wählen Sie die Typen **Entity** und **Card Form**.
+    b.  Wählen Sie die Typen **Entität** und **Kartenformular** aus.
 
-    ![Eigenschaften des Kartenformulars](media/UnifiedInterface_ReadOnlyGrid_CardFormProperties.png "Eigenschaften des Kartenformulars")
+    ![Kartenformulareigenschaften](media/UnifiedInterface_ReadOnlyGrid_CardFormProperties.png "Kartenformulareigenschaften")
 
-    c. Klicken Sie auf **OK**.
-6. Konfigurieren Sie die Eigenschaft **Reflow Behavior**. 
+    c. Wählen Sie **OK**.
+6. Konfigurieren Sie die **Dynamisches Umbruchsverhalten**-Eigenschaft. 
     
-    a. Klicken Sie neben **Reflow Behavior** auf das Stiftsymbol.
+    a. Wählen Sie das Stiftssymbol neben **Dynamisches Umbruchsverhalten** aus.
 
-    ![Bearbeiten des dynamischen Umbruchs](media/UnifiedInterface_ReadOnlyGrid_EditReflow.png "Bearbeiten des dynamischen Umbruchs")
+    ![Dynamisches Umbruchsverhalten bearbeiten](media/UnifiedInterface_ReadOnlyGrid_EditReflow.png "Dynamisches Umbruchsverhalten bearbeiten")
 
-    b. Wählen Sie in der Dropdownliste **An statische Optionen binden** den Umbruchtyp für das Raster aus.
-    |Umbruchtyp|Beschreibung|
+    b. Wählen Sie den Rasterflusstyp aus dem Dropdwon **An statische Optionen binden** aus.
+    |Flusstyp|Beschreibung|
     |--------------|--------------------|
-    |**Dynamischer Umbruch**|Ermöglicht es, das Raster im Listenmodus zu rendern, wenn auf dem Display nicht genügend Platz vorhanden ist.|
-    |**Nur Raster**|Verhindert, dass das Raster im Listenmodus gerendert wird, auch wenn auf dem Display nicht genügend Platz vorhanden ist.|
-    |**Nur Liste**|Es wird immer eine Liste angezeigt, auch wenn genügend Platz zur Anzeige als Raster vorhanden ist.|
+    |**Dynamischer Umbruch**|Ermöglicht dem Raster in einen Listenmodus gerendert zu werden, wenn nicht genügend Anzeigeplatz vorhanden ist.|
+    |**Nur Raster**|Schränkt das Umbrechen des Rasterns in eine Liste auch dann ein, wenn nicht genügend Anzeigeplatz vorhanden ist.|
+    |**Nur Liste**|Wird nur als Liste angezeigt, auch wenn ausreichend Platz zur Anzeige als Raster vorhanden ist.|
     
-     ![Eigenschaften des dynamischen Umbruchs](media/UnifiedInterface_ReadOnlyGrid_ReflowProperties.png "Eigenschaften des dynamischen Umbruchs")
+     ![Dynamisches Umbruchsverhalten-Eigenschaften](media/UnifiedInterface_ReadOnlyGrid_ReflowProperties.png "Dynamisches Umbruchsverhalten-Eigenschaften")
 
-    c. Klicken Sie auf **OK**.
+    c. Wählen Sie **OK**.
 
 
 7.  Speichern und veröffentlichen Sie die Änderungen. 
 
 
-## <a name="conditional-image"></a>Bedingte Grafik
-Sie können in einer Liste ein benutzerdefiniertes Symbol anstelle eines Werts anzeigen und mithilfe von JavaScript die Logik einrichten, die zur Auswahl der Option basierend auf den Werten einer Spalte verwendet wird. Weitere Informationen zu bedingten Grafiken finden Sie unter [Anzeigen von benutzerdefinierten Symbolen anstelle von Werten in Listenansichten](../common-data-service/display-custom-icons-instead.md).
+## <a name="conditional-image"></a>Bedingtes Bild
+Sie können ein benutzerdefiniertes Symbol anstelle eines Werts in der Liste anzeigen und die Logik zum Auswählen dieser basierend auf den Werten einer Spalte mit JavaScript erstellen. Weitere Informationen zu bedingten Bildern finden Sie unter [Benutzerdefinierte Symbole anstelle von Werten in Listenansichten anzeigen](../common-data-service/display-custom-icons-instead.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen oder Bearbeiten einer Ansicht](create-edit-views.md)

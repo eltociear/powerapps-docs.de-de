@@ -1,4 +1,4 @@
 > [!WARNING]
-> Wenn Sie eine Option entfernen, die von einem Entitätsdatensatz verwendet wurde, werden die Daten für diesen Datensatz ungültig, nachdem Sie Ihre Änderungen an dem globalen Optionssatz gespeichert haben.
+> Falls Sie eine Option entfernen, die von einem Entitätsdatensatz verwendet wurde, werden die Daten dieses Datensatzes ungültig, sobald Sie die vorgenommenen Änderungen im globalen Optionssatz speichern.
 >
->Bevor Sie eine verwendete Option entfernen, sollten Sie die Daten in jedem Entitätsdatensatz, der diese Option verwendet, in einen gültigen Wert ändern.
+>Bevor Sie eine bereits verwendete Option entfernen, sollten Sie die Daten in jedem Entitätsdatensatz, der diese Option nutzt, auf einen gültigen Wert ändern.

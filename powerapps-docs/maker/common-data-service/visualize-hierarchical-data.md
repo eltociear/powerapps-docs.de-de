@@ -1,108 +1,109 @@
 ---
-title: Visualisieren hierarchischer Daten mit modellgesteuerten Apps | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie hierarchiebezogene Daten abfragen und visualisieren.
+title: Visualisierung hierarchischer Daten mit modellgesteuerten Apps | MicrosoftDocs
+description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden'
 ms.custom: ''
-ms.date: 06/02/2018
+ms.date: 09/19/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: bed8662d7d9475215df8e92490702b68e36574e2
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39688113"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="visualize-hierarchical-data-with-model-driven-apps"></a>Visualisieren hierarchischer Daten mit modellgesteuerten Apps
+# <a name="visualize-hierarchical-data-with-model-driven-apps"></a>Visualisierung hierarchischer Daten mit modellgesteuerten Apps
 
-> [!NOTE]
-> Hierarchische Datenvisualisierungen sind nur für modellgesteuerte Apps verfügbar, die für den **Webclient** konfiguriert wurden. Visualisierungen sind nicht für den Client **Einheitliche Oberfläche** verfügbar. Weitere Informationen finden Sie unter [Erstellen einer modellgesteuerten App mithilfe des App-Designers](../model-driven-apps/create-edit-app.md).
+Wenn eine Entität so konfiguriert ist, dass sie eine hierarchische, auf sich selbst verweisende Beziehung hat, können Sie Visualisierungen mit Hilfe dieser Hierarchie konfigurieren. Weitere Informationen: [Definieren und Abfragen von hierarchisch verknüpften Daten](../common-data-service/define-query-hierarchical-data.md)
 
-Wenn eine Entität so konfiguriert ist, dass sie eine hierarchische selbstreferenzielle Beziehung aufweist, können Sie Visualisierungen mithilfe dieser Hierarchie konfigurieren. Weitere Informationen finden Sie unter [Definieren und Abfragen von hierarchiebezogenen Daten](../common-data-service/define-query-hierarchical-data.md).
-
-Visualisierungen sind standardmäßig für diese Entitäten verfügbar: [Konto](/powerapps/developer/common-data-service/reference/entities/account), [Position](/powerapps/developer/common-data-service/reference/entities/position) und [Benutzer](/powerapps/developer/common-data-service/reference/entities/systemuser). In der Rasteransicht dieser Entitäten sehen Sie links neben dem Datensatznamen das Symbol für das Hierarchiediagramm. Das Hierarchiesymbol ist standardmäßig nicht für alle Datensätze verfügbar. Das Symbol wird für die Datensätze angezeigt, die über die hierarchische Beziehung verknüpft sind.  
+Zu den Entitäten, die standardmäßig über Visualisierungen verfügen, gehören [Firma](/powerapps/developer/common-data-service/reference/entities/account), [Position](/powerapps/developer/common-data-service/reference/entities/position) und [Benutzer](/powerapps/developer/common-data-service/reference/entities/systemuser). in der Rasteransicht dieser Entitäten können Sie das symbol, das das Hierarchiendiagramm darstellt, links neben dem Datensatznamen finden. Das Hierarchiensymbol ist nicht standardmäßig für alle Datensätze vorhanden. Das Symbol wird für die Datensätze angezeigt, die über die hierarchische Beziehung miteinander verknüpft sind.  
+> [!div class="mx-imgBorder"] 
+> ![Schaltfläche "Hierarchie" anzeigen](media/view-hierarchy-button.png)  
   
- ![Konten mit Hierarchien](media/account-list-with-hierarchy.png)  
+ Wenn Sie das Hierarchiesymbol auswählen, können Sie die Hierarchie mit der Strukturansicht auf der linken Seite der Kachelansicht auf der rechten Seite anzeigen, wie unten gezeigt:  
   
- Wenn Sie das Hierarchiesymbol auswählen, können Sie die Hierarchie mit der Strukturansicht auf der linken Seite und der Kachelansicht auf der rechten Seite anzeigen:  
+> [!div class="mx-imgBorder"] 
+> ![Struktur- und Kachelansicht in der Hierarchie](media/tree-view-and-tile-view-in-hierarchy.png)  
   
- ![Struktur- und Kachelansicht für „Konto“](media/hierachy-security-accounts-tile-view.png)  
+ Einige andere Entitäten können für eine Hierarchie aktiviert werden. Zu diesen Entitäten gehören [Kontakt](/powerapps/developer/common-data-service/reference/entities/contact) und [Team](/powerapps/developer/common-data-service/reference/entities/team). Alle benutzerdefinierten Entitäten können für eine Hierarchie aktiviert werden.  
   
- Einige andere Entitäten können für eine Hierarchie aktiviert werden. Dazu gehören [Kontakt](/powerapps/developer/common-data-service/reference/entities/contact) und [Team](/powerapps/developer/common-data-service/reference/entities/team). Alle benutzerdefinierten Entitäten können für eine Hierarchie aktiviert werden.  
+Was Sie beachten müssen, wenn Sie Visualisierungen erstellen:  
   
-Wichtige Aspekte beim Erstellen von Visualisierungen:  
-  
-- Nur eine selbstreferenzielle 1:n-Beziehung pro Entität kann als hierarchisch festgelegt werden. In einer selbstreferenziellen Beziehung müssen die primäre und die verknüpfte Entität vom gleichen Typ sein.  
-- Eine Hierarchie bzw. Visualisierung basiert ausschließlich auf einer Entität. Sie können die Kontohierarchie mit Konten auf mehreren Ebenen darstellen, jedoch Konten und Kontakte nicht in der gleichen Hierarchievisualisierung anzeigen. 
-- In einer Kachel können maximal vier Felder angezeigt werden. Wenn Sie weitere Felder zur Schnellerfassung hinzufügen, die für die Kachelansicht verwendet wird, werden nur die ersten vier Felder angezeigt. 
+- Nur eine auf sich selbst verweisende (1: n)-Beziehung pro Entität kann als hierarchisch festgelegt werden. In einer auf sich selbst verweisenden Beziehung müssen die primäre Entität und die verknüpfte Entität vom gleichen Typ sein.  
+- Eine Hierarchie oder Visualisierung basiert auf nur einer Entität. Sie können die Firmenhierarchie so darstellen, dass Firmen auf verschiedenen Ebenen gezeigt werden, Sie können jedoch Firmen und Kontakte nicht in derselben Hierarchienvisualisierung anzeigen. 
+- Die Maximalanzahl an Feldern, die in einer Kachel angezeigt werden können, ist vier. Wenn Sie einer Schnellerfassung, das für die Kachel-Ansicht verwendet wird, mehr Felder hinzufügen, werden nur die ersten vier Felder angezeigt. 
 
 ## <a name="hierarchy-settings"></a>Hierarchieeinstellungen
 
-Um Visualisierungen für eine Hierarchie zu ermöglichen, müssen Sie die Hierarchie mit einem Schnellansichtsformular verknüpfen. Dies kann nur über den Projektmappen-Explorer erfolgen.
+Um Visualisierungen für eine Hierarchie zu ermöglichen, müssen Sie die Hierarchie mit einem Schnellansichtsformular verbinden. Dies ist nur mit dem Projektmappen-Explorer möglich.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-Die Hierarchieeinstellungen sind einer Entität im Projektmappen-Explorer zugeordnet. 
+Die Hierarchieeinstellungen sind einer Entität im Lösungs-Explorer zugeordnet. 
 
-1. Wählen Sie beim [Anzeigen von Entitäten](../common-data-service/create-edit-entities-solution-explorer.md#view-entities) **Hierarchieeinstellungen** aus.
-2. Sie können eine vorhandene Hierarchieeinstellung bearbeiten. Andernfalls klicken Sie auf **Neu**, um eine neue Einstellung zu erstellen.
+1. Während Sie [Entitäten anzeigen](../common-data-service/create-edit-entities-solution-explorer.md#view-entities), wählen Sie **Hierarchieeinstellungen**.
+2. Wenn eine vorhandene Hierarchieeinstellung vorhanden ist, können Sie sie ändern. Andernfalls klicken Sie auf **Neu**, um eine neue zu erstellen.
     
     > [!NOTE]
-    > Wenn keine Hierarchieeinstellungen vorhanden sind, ist die Entität nicht in der Lage, eine Hierarchie zu konfigurieren.
+    > Wenn die Hierarchieeinstellungen nicht vorhanden sind, ist es nicht möglich, eine Hierarchie zu konfigurieren.
     >Es kann nur eine Hierarchieeinstellung geben. 
 
-1. Bestimmen Sie die Daten in den folgenden Feldern:
+1. Stellen Sie die Daten in den folgenden Feldern ein:
 
 |Feld|Beschreibung|
 |--|--|
-|**Name**|*Erforderlich.* Fügen Sie einen eindeutigen Namen für die Hierarchieeinstellungen hinzu. Das ist in der Regel nur der Name der Entität. Dieser Wert enthält das Anpassungspräfix des Lösungsherausgebers.|
-|**Standardmäßiges Schnellansichtsformular**|*Erforderlich.* Wählen Sie ein vorhandenes Schnellansichtsformular oder **Neu erstellen** aus, um den Schnellansichtsformular-Editor zu öffnen und ggf. ein neues Formular zu erstellen.|
-|**Hierarchische Beziehung**|*Erforderlich.* Wenn für die Entität bereits eine hierarchische Beziehung definiert ist, wird hier der Wert gesetzt. Wenn kein Wert vorliegt, wählen Sie **Markieren Sie eine Beziehung als aktiviert für Hierarchien** aus, um ein Dialogfeld zu öffnen, in dem Sie eine verfügbare selbstreferenzielle Beziehung auswählen.|
-|**Description** (Beschreibung)|Fügen Sie eine Beschreibung des Hierarchiezwecks hinzu, damit Benutzer, die das System in Zukunft anpassen, dies nachvollziehen können.|
+|**Name**|*Erforderlich.* Fügen Sie einen eindeutigen Namen für die Hierarchieeinstellungen hinzu. Dies ist in der Regel nur der Name der Entität. Dieser Wert enthält den Präfix des Lösungsherausgebers für die Anpassung.|
+|**Standardmäßiges Schnellansichtsformular**|*Erforderlich.* Wählen Sie aus einem vorhandenen Schnellansichtsformular oder wählen Sie **Neu erstellen**, um den Schnellansichtsformular-Editor zu öffnen und ein neues zu erstellen.|
+|**Hierarchische Beziehung**|*Erforderlich.* Wenn für die Entität bereits eine hierarchische Beziehung definiert ist, wird hier der Wert gesetzt. Wenn es keinen Wert gibt, wählen Sie **Markieren Sie eine Beziehung als aktiviert für Hierarchien**, um einen Dialog zur Auswahl einer der verfügbaren auf sich selbst verweisenden Beziehungen zu öffnen.|
+|**Beschreibung**|Fügen Sie eine Beschreibung des Verwendungszwecks dieser Hierarchie hinzu, damit zukünftige Benutzer, die das System anpassen, verstehen können, warum dies geschehen ist.|
     
 
-Die gleichen hierarchischen Einstellungen für die Visualisierung werden einmalig festgelegt, gelten jedoch für Web- und mobile Clients. Bei Tablets werden die visuellen Elemente in einem geänderten Format gerendert, das für kleinere Formfaktoren geeignet ist. Die anpassbaren Komponenten für die hierarchische Visualisierung sind lösungsfähig und können daher wie andere Anpassungen zwischen Organisationen übertragen werden. Sie können die Attribute konfigurieren, die in der Visualisierung angezeigt werden, indem Sie über den Formular-Editor eine Schnellerfassung anpassen.
+Dieselben hierarchischen Einstellungen für Visualisierung werden einmal festgelegt, gelten jedoch sowohl für das Web als auch für mobile Clients. Auf Tablets werden die grafischen Elemente in einem für das kleinere Format geeigneten Format angezeigt. Die anpasbaren Komponenten für hierarchische Visualisierung sind lösungsspezifisch, daher können sie wie jede andere Anpassung zwischen Organisationen transportiert werden. Sie können die Attribute konfigurieren, die in der Visualisierung angezeigt werden, indem Sie eine Schnellerfassung mit dem Formular-Editor verwenden.
   
-## <a name="visualization-walk-through"></a>Visualisierung: exemplarische Vorgehensweise
+## <a name="visualization-walk-through"></a>Exemplarische Vorgehensweise Visualisierung
 
-Sehen wir uns ein Beispiel für das Erstellen einer Visualisierung für eine benutzerdefinierte Entität an. Wir haben eine benutzerdefinierte Entität namens `new_Widget` sowie eine selbstreferenzielle (1:n-)Beziehung `new_new_widget_new_widget` erstellt und diese als hierarchisch markiert, wie hier angezeigt:  
+Betrachten wir ein Beispiel der Erstellung der Visualisierung einer benutzerdefinierten Entität. Wir haben eine benutzerdefinierte Entität namens `new_Widget` erstellt, eine (1:N) auf sich selbst verweisende Beziehung `new_new_widget_new_widget` und diese als hierarchisch markiert, wie hier gezeigt.  
   
-![Widget für Beziehungsdefinition](media/widget-relationship-definition.png)  
+![Widget-Beziehungsdefinition](media/widget-relationship-definition.png)  
   
-Als Nächstes haben wir in der Rasteransicht **Hierarchieeinstellungen** die hierarchische Beziehung `new_new_widget_new_widget` ausgewählt. Im Formular wurden die Pflichtfelder ausgefüllt. Wenn Sie die 1:n-Beziehung noch nicht als hierarchisch markiert haben, gelangen Sie über den Link im Formular zurück zum Formular zur Beziehungsdefinition, in dem Sie die Beziehung als hierarchisch markieren können.  
+Als nächstes haben wir in der Rasteransicht **Hierarchieeinstellungen** die hierarchische Beziehung `new_new_widget_new_widget` gewählt. Im Formular füllten wir die Pflichtfelder aus. Wenn Sie die (1: N)-Beziehung noch nicht als hierarchisch markiert haben, führt Sie der Link im Formular wieder zu dem Beziehungsdefinitionsformular zurück, in dem Sie die Beziehung als hierarchisch markieren können.  
 
 > [!IMPORTANT]
-> Jede Entität kann jeweils nur eine hierarchische Beziehung haben. Das Ändern in eine andere selbstreferenzielle Beziehung kann Konsequenzen haben. Weitere Informationen finden Sie unter [Definieren hierarchischer Daten](../common-data-service/define-query-hierarchical-data.md#define-hierarchical-data).
+> Jede Entität kann jeweils nur eine hierarchische Beziehung haben. Eine Änderung in eine andere auf sich selbst verweisenden Beziehung kann Konsequenzen haben. Weitere Informationen: [Definieren von hierarchischen Daten](../common-data-service/define-query-hierarchical-data.md#define-hierarchical-data)
+
+> [!div class="mx-imgBorder"] 
+> ![Hierarchieeinstellungen](media/hierarchy-settings.png)  
   
-![Hierarchieeinstellungen](media/hierarchy-settings.png)  
+Für das **Schnellansichtsformular** erstellten wir ein Schnellerfassung mit der Bezeichnung **Kachelformular für Widget-Hierarchie**. In diesem Formular fügten wir vier Felder für die Anzeige in jeder Kachel hinzu.  
+
+> [!div class="mx-imgBorder"] 
+> ![Schnellerfassung für Widget erstellen](media/create-quickform.png)  
   
-Für das **Schnellansichtsformular** haben wir eine Schnellerfassung mit der Bezeichnung **Kachelformular der Widgethierarchie** erstellt. Wir haben diesem Formular vier Felder hinzugefügt, die in einzelnen Kacheln angezeigt werden.  
-  
-![Erstellen eines Schnellformulars für ein Widget](media/create-quickform.png)  
-  
-Nachdem wir die Einrichtung abgeschlossen haben, haben wir zwei Datensätze erstellt: *Standardwidget* und *Premiumwidget*. Nachdem Sie das Premiumwidget mit dem Suchfeld zu einem übergeordneten Element des Standardwidgets gemacht haben, zeigt die Rasteransicht `new_Widget` die Hierarchiesymbole an, wie hier veranschaulicht:  
-  
-![Hierarchieraster des Widgets](media/widget-hierarchy-grid.png)  
+Nachdem wir die EInrichtung abgeschlossen haben, haben wir zwei Datensätze erstellt: *Standard Widget* und *Premium Widget*. Nachdem das Premium-Widget durch Verwendung des Suchfeldes als Standardwidget festgelegt wurde, zeigte die Rasteransicht `new_Widget` die Hierarchiesymbole, wie unten dargestellt, an:  
+
+> [!div class="mx-imgBorder"] 
+> ![Hierarchieraster des Widgets](media/widget-hierarchy-grid.png)  
   
 > [!NOTE]
->  Die Hierarchiesymbole werden erst in der Rasteransicht des Datensatzes angezeigt, wenn die Datensätze über die hierarchische Beziehung verknüpft sind.  
+>  Die Hierarchiesymbole erscheinen erst in der Datensatzrasteransicht, wenn die Datensätze über die hierarchische Beziehung miteinander verknüpft sind.  
   
-Wenn Sie das Hierarchiesymbol auswählen, wird die `new_Widget`-Hierarchie mit der Strukturansicht auf der linken Seite und der Kachelansicht auf der rechten Seite mit zwei Datensätzen angezeigt. Jede Kachel enthält vier Felder, die wir im **Kachelformular der Widgethierarchie** bereitgestellt haben.  
-  
-![Struktur- und Kachelansicht des Widgets](media/widget-tree-tiles.png)  
+Wenn Sie das Hierarchiesymbol auswählen, wird die `new_Widget`-Hierarchie mit der Strukturansicht auf der linken Seite der Kachelansicht auf der rechten Seite angezeigt und zeigt zwei Datensätze. Jede Kachel enthält vier Felder, die wir im **Kachelformular für Widget-Hierarchie** bereitstellten.  
 
-Je nach Bedarf können Sie zwischen einer Strukturansicht, die die gesamte Hierarchie anzeigt, und einer Kachelansicht wählen, die einen kleineren Teil der Hierarchie zeigt. Beide Ansichten werden nebeneinander angezeigt. Sie können eine Hierarchie untersuchen, indem Sie eine Hierarchiestruktur erweitern und minimieren. 
+> [!div class="mx-imgBorder"] 
+> ![Struktur- und Kachelansichten des Widgets](media/widget-tree-tiles.png)  
+
+Je nach Ihren Anforderungen können Sie zwischen der Verwendung einer Strukturansicht, die die gesamte Hierarchie anzeigt, und einer Kachelansicht, die eine detaillierte Ansicht eines kleineren Teils der Hierarchie wiedergibt, wählen. Beide Ansichten werden nebeneinander angezeigt. Sie können eine Hierarchie erkunden, indem Sie eine Hierarchiestruktur erweitern und reduzieren. 
 
 ### <a name="see-also"></a>Siehe auch 
 
 [Definieren und Abfragen von hierarchiebezogenen Daten](../common-data-service/define-query-hierarchical-data.md)<br />
-[Video: Visualisierung von Hierarchien](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07) (in englischer Sprache)
+[Video: Hierarchievisualisierung in](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

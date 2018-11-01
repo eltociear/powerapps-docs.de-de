@@ -1,6 +1,6 @@
 ---
-title: Entitätenübersicht in PowerApps | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie über das PowerApps-Portal Entitäten erstellen und bearbeiten können.
+title: Entitätsübersicht in PowerApps | MicrosoftDocs
+description: Entitäten mit dem PowerApps-Portal erstellen und bearbeiten
 ms.custom: ''
 ms.date: 07/25/2018
 ms.reviewer: ''
@@ -9,26 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
-ms.assetid: ''
+ms.assetid: null
 caps.latest.revision: 0
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: 9172a0fca728acc57197d86ae0620d9bd6507dbe
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39683690"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="entity-overview"></a>Entitätenübersicht
 
-Entitäten werden zum Modellieren und Verwalten von Geschäftsdaten verwendet. Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte Entitäten oder beides verwenden. CDS für Apps stellt standardmäßig Standardentitäten bereit. Diese sind in Übereinstimmung mit bewährten Methoden entwickelt und dienen zum Erfassen der am häufigsten verwendeten Konzepte für Szenarios in einem Unternehmen.
+# <a name="entity-overview"></a>Übersicht über Entitäten
+
+Entitäten werden verwendet, um Geschäftsdaten zu modellieren und zu verwalten. Wenn Sie eine App entwickeln, können Sie Standardentitäten, benutzerdefinierte Entitäten oder beides erstellen. CDS for Apps bietet standardmäßig Standardentitäten. Diese wurden in Übereinstimmung mit bewährten Methoden entworfen, um die gängigsten Konzepte und Szenarien innerhalb der Organisation darzustellen.
 
 ## <a name="see-also"></a>Siehe auch
-[Erstellen einer benutzerdefinierten Entität](data-platform-create-entity.md) <br/>
+[Erstellen einer benutzerdefinierten Entität.](data-platform-create-entity.md) <br/>
 [Typen von Entitäten](types-of-entities.md)
 

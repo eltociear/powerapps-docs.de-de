@@ -1,28 +1,27 @@
 ---
-title: Grundlegendes zu Komponenten von modellgesteuerten Apps in PowerApps | Microsoft-Dokumentation
-description: Hier finden Sie Informationen zu verschiedenen Komponenten einer modellgesteuerten App wie Daten, Benutzeroberfläche, Logik und Visualisierung.
-Keywords: fields, attributes, model-driven app
+title: Modellgesteuerte Anwendungskomponenten in PowerApps verstehen | MicrosoftDocs
+description: 'Verschiedene Komponenten einer modellgesteuerten Anwendung wie Daten, Benutzeroberfläche, Logik und Visualisierung verstehen.'
+Keywords: 'fields, attributes, model-driven app'
 author: Mattp123
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
 ms.service: crm-online
 ms.topic: article
-ms.openlocfilehash: 249f0d35ce9eb466303ef16658aa01198632875e
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39682834"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="understand-model-driven-app-components"></a>Grundlegendes zu Komponenten von modellgesteuerten Apps
-Eine wohlgeformte modellgesteuerte App besteht aus mehreren Komponenten, die Sie mit dem Designer auswählen, um die Darstellung und Funktion der fertigen App zu erstellen. Die Komponenten und Komponenteigenschaften, die Designer zum Erstellen einer App verwenden, werden zu Metadaten. 
+# <a name="understand-model-driven-app-components"></a>Modellgesteuerte Anwendungskomponenten verstehen
+Eine gut gestaltete modellgesteuerte Anwendung besteht aus mehreren Komponenten, die Sie mit Hilfe des Designers auswählen, um das Aussehen und die Funktionalität der fertigen App zu gestalten. Die Komponenten und Komponenteneigenschaften, aus denen Designer eine App zusammensetzen, werden zu Metadaten. 
 
-Zum einfacheren Verständnis des Zusammenhangs zwischen Komponenten und App-Entwurf werden sie hier in die Kategorien *Daten*, *Benutzeroberfläche*, *Logik* und *Visualisierung* unterteilt. 
+Um zu verstehen, wie sich jede dieser Komponenten auf das App-Design bezieht, werden sie hier in die Kategorien *Daten*, *UI*, *Logik* und *Visualisierung* unterteilt. 
 
 ## <a name="data"></a>Daten
 Diese Komponenten bestimmen, auf welchen Daten die App basiert.
@@ -30,68 +29,68 @@ Diese Komponenten bestimmen, auf welchen Daten die App basiert.
 
 |Komponente  |Beschreibung  |Designer  |
 |---------|---------|---------|
-|Einrichtung     |Ein Element mit Eigenschaften, das Sie nachverfolgen, z.B. ein Kontakt oder Konto. Es stehen viele Standardentitäten zur Verfügung. Sie können eine nicht zum System gehörige Standardentität (Produktionsentität) anpassen oder eine benutzerdefinierte Entität von Grund auf neu erstellen.     | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer        |
-|Feld     | Eine Eigenschaft, die einer Entität zugeordnet ist. Ein Feld, das durch einen Datentyp definiert ist, der den Typ der Daten bestimmt, der eingegeben oder ausgewählt werden kann. Beispiele sind unter anderem Text, Zahl, Datum und Uhrzeit, Währung oder Nachschlagen (führt zu einer Beziehung mit einer anderen Entität). Felder werden in der Regel mit Formularen, Ansichten und Suchvorgängen verwendet.        | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer   |
-|Beziehung     | Entitätsbeziehungen definieren, wie Entitäten miteinander verknüpft werden können. Es gibt die Beziehungstypen 1:n (One-to-Many), n:1 (Many-to-One) und m:n (Many-to-Many). Durch das Hinzufügen eines Nachschlagefelds zu einer Entität wird z.B. eine neue 1:n-Beziehung zwischen den beiden Entitäten erstellt, und Sie können dieses Nachschlagefeld in ein Formular einfügen.   | [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entitäts-Designer        |
-|Feld „Optionssatz“     | Dies ist ein besonderes Feld, das dem Benutzer eine Reihe vorbestimmter Optionen bereitstellt. Jede Option verfügt über einen Zahlenwert und eine Bezeichnung. Wenn dieses Feld zu einem Formular hinzugefügt wird, wird ein Steuerelement angezeigt, damit der Benutzer eine Option auswählen kann.  Es gibt zwei Arten von Optionen: Optionen, bei denen der Benutzer nur eine Option auswählen kann und Optionen mit mehreren Auswahlmöglichkeiten.  | Optionen-Designer von [!INCLUDE [powerapps](../../includes/powerapps.md)]     |
+|Entität     |Ein Element mit Eigenschaften, die Sie nachverfolgen, wie z. B. Kontakte oder Firma. Viele Standard-Entitäten sind verfügbar. Sie können eine Nicht-System-Standard-Entität (Produktions-Entität) anpassen oder eine benutzerdefinierte Entität von Grund auf neu erstellen.     | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer        |
+|Feld     | Eine Eigenschaft, die einer Entität zugeordnet ist. Ein Feld wird durch einen Datentyp definiert, der die Art der Daten bestimmt, die eingegeben oder ausgewählt werden können. Dazu zählen Text, Nummer, Datum und Uhrzeit, Währung oder Suchen (erstellt eine Beziehung zu einer anderen Entität.) Felder werden typischerweise in Formularen, Ansichten und Suchen verwendet.        | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer   |
+|Beziehung     | Entitätsbeziehungen legen fest, wie Entitäten miteinander verknüpft werden können. Es gibt 1:N (eins-zu-viele), N:1 (viele-zu-eins) und N:N (viele-zu-viele) Arten von Beziehungen. Wenn Sie beispielsweise ein Suchfeld zu einer Entität hinzufügen, wird eine neue 1:N-Beziehung zwischen den beiden Entitäten erstellt und Sie können dieses Suchfeld in ein Formular einfügen.   | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer        |
+|Optionssatzfeld     | Dies ist ein spezieller Feldtyp, der dem Benutzer eine Reihe von vordefinierten Optionen bietet. Jede Option hat einen Zahlenwert und eine Beschriftung. Bei Hinzufügung zu einem Formular enthält dieses Feld ein Steuerelement für Benutzer zur Auswahl einer Option.  Es gibt zwei Arten von Optionssätzen: Optionssätze, bei denen der Benutzer nur eine Option auswählen kann, und Multi-Select-Optionssätze, die mehr als eine Auswahl erlauben.  | [!INCLUDE [powerapps](../../includes/powerapps.md)] Optionssatz-Designer     |
 
-Weitere Informationen: [Define data for your model-driven app (Definieren von Daten in Ihrer modellgesteuerten App)](define-data-model-driven-app.md) 
+Weitere Informationen: [Definieren Sie Daten für die modellgesteuerte App](define-data-model-driven-app.md) 
 
-## <a name="ui"></a>UI
-Diese Komponenten ermitteln, wie Benutzer mit der App interagieren. 
+## <a name="ui"></a>Benutzeroberfläche
+Diese Komponenten bestimmen, wie Benutzer mit der App interagieren. 
 
 |Komponente  |Beschreibung  |Designer  |
 |---------|---------|---------|
-|App     | Bestimmt die grundlegenden Bestandteile einer Anwendung, z.B. Komponenten, Eigenschaften, Clienttyp und URL für Ihre App.      | App-Designer   |
-|Siteübersicht     | Gibt die Navigation für Ihre App an.        | Designer für die Siteübersicht        |
-|Formular     | Eine Reihe von Dateneingabefeldern für eine angegebene Entität, die mit den Elementen übereinstimmt, die Ihre Organisation für die Entität nachverfolgt. Beispielsweise mehrere Dateneingabefelder, in denen Benutzer relevante Informationen eingeben, um die vorherigen Bestellungen eines Kunden zusammen mit Datumsangaben angeforderter Nachbestellungen nachzuverfolgen.        | Formular-Designer        |
-|Anzeigen     | Ansichten definieren, wie eine Liste von Datensätzen für eine bestimmte Entität in Ihrer Anwendung angezeigt wird. Eine Ansicht definiert die anzuzeigenden Spalten, die Breite jeder Spalte, das Sortierverhalten und die Standardfilter.   |  Ansicht-Designer       |
+|App     | Bestimmt die Anwendungsgrundlagen wie Komponenten, Eigenschaften, Clienttyp und URL für Ihre Anwendung.      | App-Designer   |
+|Siteübersicht     | Gibt die Navigation für Ihre App an.        | Siteübersichts-Designer        |
+|Formular     | Ein Satz von Dateneingabefeldern für eine bestimmte Entität, die mit den Elementen übereinstimmen, die Ihre Organisation für die Entität verfolgt. Zum Beispiel eine Reihe von Dateneingabefeldern, in denen der Benutzer relevante Informationen eingibt, um die früheren Bestellungen eines Kunden zusammen mit bestimmten gewünschten Nachbestellungsdaten zu verfolgen.        | Formulardesigner        |
+|Ansicht     | Ansichten definieren, wie eine Liste von Datensätzen für eine bestimmte Entität in Ihrer Anwendung angezeigt wird. Eine Ansicht definiert die anzuzeigenden Spalten, die Breite jeder Spalte, das Sortierverhalten und die Standardfilter.   |  Ansicht-Designer       |
 
 ![App-Designer und Formular-Designer](media/model-driven-app-overview/app-and-form-designers.png)
 
 ## <a name="logic"></a>Logik
-Bestimmt die Geschäftsprozesse, Regeln und die Automatisierung, über die die App verfügt. [!INCLUDE [powerapps](../../includes/powerapps.md)]-Entwickler verwenden einen Designer, der für den Prozesstyp oder die Regel spezifisch ist. 
+Bestimmt die Geschäftsprozesse, Regeln und die Automatisierung der Anwendung. [!INCLUDE [powerapps](../../includes/powerapps.md)] Hersteller verwenden einen Designer, der für die Art des Prozesses oder der Regel spezifisch ist. 
 
 
 |Logiktyp  |Beschreibung  |Designer  |
 |---------|---------|---------|
-|Geschäftsprozess     | Ein Onlineprozess, der Benutzer durch einen Standardgeschäftsprozess führt. Verwenden Sie z.B. einen Geschäftsprozess, wenn Sie möchten, dass Kundenserviceanfragen immer gleich behandelt werden oder dass Mitarbeiter die Rechnungsfreigabe vor der Aufgabe einer Bestellung erhalten.        | Geschäftsprozess-Designer        |
-|Workflow     |  Workflows automatisieren Geschäftsprozesse ohne eine Benutzeroberfläche. Designer verwenden Workflows, um die Automatisierung, die keine Benutzerinteraktion erfordert, zu initiieren.       | Workflow-Designer        |
-|Aktionen    |  Aktionen sind Prozesstypen, mit denen Sie Aktionen, einschließlich benutzerdefinierter Aktionen, direkt aus einem Workflow manuell aufrufen können.       |  Prozess-Designer       |
-|Geschäftsregel     | Wird verwendet, um auf ein Formular eine Regel- oder Empfehlungslogik anzuwenden, um beispielsweise Feldanforderungen festzulegen, Felder auszublenden oder Daten zu validieren. App-Designer verwenden eine einfache Schnittstelle, um sich schnell ändernde und häufig verwendete Regeln zu implementieren und zu verwalten.         |  Geschäftsregel-Designer       |
-|Flow     | Flow ist ein cloudbasierter Dienst, mit dem Sie automatisierte Workflows zwischen Apps und Diensten erstellen können, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu erfassen und viele weitere Aufgaben auszuführen.        | Microsoft Flow        |
+|Geschäftsprozessfluss     | Ein Online-Prozess, der die Benutzer durch einen Standardgeschäftsprozess führt. Verwenden Sie beispielsweise einen Geschäftsprozessfluss, wenn Sie möchten, dass jeder Kundenserviceanfragen auf die gleiche Methode bearbeitet, oder von Mitarbeitern eine Genehmigung für eine Rechnung erforderlich ist, bevor Sie einen Auftrag senden.        | Geschäftsprozessflow-Designer        |
+|Workflow     |  Workflows automatisieren Geschäftsprozesse ohne eine Benutzeroberfläche. Designer verwenden Workflows, um eine Automatisierung zu initiieren, die keine Benutzerinteraktion erfordert.       | Workflow-Designer        |
+|Aktionen    |  Aktionen sind ein Prozesstyp, mit dem Sie manuell Aktionen, einschließlich benutzerdefinierter Aktionen, direkt aus einem Workflow heraus aufrufen können.       |  Prozess-Gestalter       |
+|Geschäftsregel     | Wird verwendet, um eine Regel- oder Empfehlungslogik auf ein Formular anzuwenden, z. B. um Feldanforderungen festzulegen, Felder auszublenden oder Daten zu validieren. App-Designer verwenden eine einfache Schnittstelle, um schnell wechselnde und häufig verwendete Regeln zu implementieren und zu pflegen.         |  Geschäftsregel-Designer       |
+|Flow     | Flow ist ein Cloud-basierter Dienst, mit dem Sie automatisierte Workflows zwischen Anwendungen und Diensten erstellen können, um Benachrichtigungen zu erhalten, Dateien zu synchronisieren, Daten zu sammeln und vieles mehr.        | Microsoft Flow        |
 
-![Designer für Workflows, Aktionen und Geschäftsprozesse](media/model-driven-app-overview/designer-mash.png)
+![Workflow-, Aktions- und Geschäftsprozessfluss-Designer](media/model-driven-app-overview/designer-mash.png)
 
-Weitere Informationen: [Apply business logic in your model-driven app (Anwenden von Geschäftslogik in Ihrer modellgesteuerten App)](guide-staff-through-common-tasks-processes.md)
+Weitere Informationen: [Geschäftslogik in Ihrer modellgesteuerten App anwenden](guide-staff-through-common-tasks-processes.md)
 
 ## <a name="visualizations"></a>Visualisierungen
-Bestimmt, welche Art Datenvisualisierungen und Berichterstattung für die App verfügbar ist.
+Legt fest, welcher Typ von Datenvisualisierung und Berichten der App zur Verfügung steht.
 
 
 |Komponente  |Beschreibung  |Designer  |
 |---------|---------|---------|
-|Diagramm     | Eine einzelne Visualisierung in Diagrammform, die innerhalb einer Ansicht oder in einem Formular angezeigt oder einem Dashboard hinzugefügt werden kann.        | Diagramm-Designer        |
-|Dashboard     | Funktionen als Palette für mindestens eine grafische Visualisierung, die eine Übersicht über handlungsrelevante Geschäftsdaten bietet.        | Dashboard-Designer        |
-|Power BI Embedded     | Hinzufügen von Kacheln und Dashboards von Power BI Embedded zu Ihrer App. Power BI ist ein cloudbasierter Dienst, der Einblicke in Business Intelligence bietet.        |  Kombination von Diagramm-Designer, Dashboard-Designer und Power BI       |
+|Diagramm     | Eine einzelne grafische Visualisierung, die innerhalb einer Ansicht, auf einem Formular oder in einem Dashboard angezeigt werden kann.        | Diagramm-Designer        |
+|Informationsleiste     | Dient als Auswahl einer oder mehrerer grafischer Visualisierungen, die einen Überblick über verwertbare Geschäftsdaten gibt.        | Dashboard-Designer        |
+|Eingebettete Power BI     | Fügen Sie eingebettete Power BI-Kacheln und Dashboards zu Ihrer App hinzu. Power BI ist ein Cloud-basierter Service, der Einblicke in die Business Intelligence bietet.        |  Kombination aus Diagramm Designer, Dashboard Designer und Power BI       |
 
-![Beispieldashboard](media/model-driven-app-overview/dashboard-designer.png)
+![Beispiel-Dashboard](media/model-driven-app-overview/dashboard-designer.png)
 
-## <a name="advanced-model-driven-app-making"></a>Erstellung modellgesteuerter Apps im erweiterten Modus
-Der Projektmappen-Explorer ist ein umfassendes Tool für die Erstellung erweiterter modellgesteuerter Apps. Sie können innerhalb des Projektmappen-Explorers mithilfe des Navigationsbereichs auf der linken Seite des Tools durch eine Hierarchie navigieren, die aus allen App-Komponenten besteht.
+## <a name="advanced-model-driven-app-making"></a>Erweiterte modellgesteuerte App-Erstellung
+Der Lösungs-Explorer ist ein umfassendes Werkzeug zur modellgesteuerten Anwendungsentwicklung. Innerhalb des Lösungs-Explorers können Sie über den Navigationsbereich auf der linken Seite des Tools durch eine Hierarchie navigieren, die aus allen App-Komponenten besteht.
 
-![Projektmappen-Explorer](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
+![Lösungs-Explorer](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
 
-Wählen Sie zum Öffnen des Projektmappen-Explorers links von [!INCLUDE [powerapps](../../includes/powerapps.md)] die Option **Modellgesteuert** aus.
+Um den Lösungs-Explorer zu öffnen, wählen Sie **Modellgesteuert** im linken Bereich von [!INCLUDE [powerapps](../../includes/powerapps.md)]"2".
 
-  ![Auswahl von „Modellgesteuert“](media/model-driven-app-overview/app-type-picker-mod.png)
+  ![Wählen Sie Modellgesteuert aus.](media/model-driven-app-overview/app-type-picker-mod.png)
 
-Wählen Sie anschließend die Registerkarte **Erweitert** aus.
+Wählen Sie dann die Registerkarte **Erweitert**.
 
-Weitere Informationen: [Advanced app making and customization (Erweiterte App-Erstellung und -Anpassung)](advanced-navigation.md)
+Weitere Informationen: [Erweiterte App-Erstellung und -Anpassung](advanced-navigation.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Validate and publish your model-driven app (Überprüfen und Veröffentlichen Ihrer modellgesteuerten App)](validate-app.md)
+[Validieren und Veröffentlichen Ihrer modellgesteuerten Anwendung](validate-app.md)
 
-[Freigeben einer modellgesteuerten App](share-model-driven-app.md)
+[Freigeben Ihrer modellgesteuerten Anwendung](share-model-driven-app.md)

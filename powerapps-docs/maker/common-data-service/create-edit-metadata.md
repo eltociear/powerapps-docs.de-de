@@ -1,6 +1,6 @@
 ---
-title: Entitäten und Metadaten in Common Data Service für Apps | Microsoft-Dokumentation
-description: Hier erhalten Sie Informationen zu Entitäten und Metadaten in Common Data Service für Apps.
+title: Entitäten und Metadaten im Common Data Service for Apps | MicrosoftDocs
+description: Erfahren Sie mehr zu Entitäten und Metadaten im Common Data Service for Apps
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,47 +9,47 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 88b18946-474c-4c94-8e4c-27532f930757
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: ef2f92865205fa7c97ada356edc70ac69a637e0f
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39689746"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="entities-and-metadata-in-common-data-service-for-apps"></a>Entitäten und Metadaten in Common Data Service für Apps
 
-Mit Common Data Service für Apps (CDS für Apps) können Sie ganz schnell und einfach ein Datenmodell für Ihre Anwendung erstellen. Üblicherweise müssen Sie sich mit den Details der Metadaten nicht beschäftigen, die in diesem Thema vorgestellt werden. Wenn Sie jedoch genauer wissen möchten, wie Apps funktionieren, die CDS für Apps verwenden, oder wenn Sie die damit einhergehenden Möglichkeiten eruieren möchten, sind Kenntnisse der von CDS für Apps verwendeten Metadaten nützlich.
+# <a name="entities-and-metadata-in-common-data-service-for-apps"></a>Entitäten und Metadaten im Common Data Service for Apps
 
-*Metadaten* sind ganz einfach Daten über Daten. CDS für Apps bietet Ihnen eine flexible Plattform, da es relativ einfach ist, die Definitionen der Daten zu bearbeiten, die von der Umgebung verwendet werden. In CDS für Apps sind die Metadaten eine Sammlung von Entitäten. Entitäten beschreiben die Arten der Daten, die in der Datenbank gespeichert sind.  Jede Entität entspricht einer Datenbanktabelle, und jedes Feld (auch als Attribut bezeichnet) innerhalb einer Entität stellt eine Spalte in dieser Tabelle dar. Mit Entitätsmetadaten wird gesteuert, welche Arten von Datensätzen Sie erstellen können und welche Arten von Aktionen mit diesen ausgeführt werden können. Wenn Sie die Anpassungstools verwenden, um Entitäten, Felder und Entitätsbeziehungen zu erstellen oder zu bearbeiten, bearbeiten Sie diese Metadaten. 
+Common Data Service for Apps wurde entworfen, damit Sie ein Datenmodell für Ihre Anwendung schnell und einfach erstellen können. Normalerweise sollten Sie sich nicht mit einigen der Informationen zu Metadaten befassen müssen, die in diesem Thema vorstellt werden. Aber wenn Sie ein tieferes Verständnis davon erreichen möchten, wie Apps, die CDS for Apps verwenden, funktionieren, oder wenn Sie die Möglichkeiten auswerten, kann Verständnis der Metadaten, die von CDS for Apps verwendet werden, Ihnen Einsichten vermitteln.
+
+*Metadaten* bedeutet Daten über Daten. CDS for Apps bietet eine flexible Plattform für Sie, da es relativ einfach ist, die Definitionen der Daten zu bearbeiten, die von der Umgebung verwendet werden. In CDS for Apps sind die Metadaten eine Sammlung von Entitäten. Entitäten beschreiben die Arten von Daten, die in der Datenbank gespeichert werden.  Jede Entität entspricht einer Datenbanktabelle, und jedes Feld (auch als Attribut bezeichnet) in einer Entität stellt eine Spalte in dieser Tabelle dar. Entitätsmetadaten sind die Daten, die steuern, welche Arten von Datensätzen Sie erstellen und welche Arten von Aktionen dafür durchgeführt werden können. Wenn Sie die Anpassungstools verwenden, um Entitäten, Felder oder Entitätsbeziehungen erstellen oder bearbeiten, bearbeiten Sie diese Metadaten. 
   
-Die verschiedenen Clients, die von Benutzern für die Interaktion mit den Daten in Ihrer Umgebung verwendet werden, benötigen die Entitätsmetadaten und passen sich an geänderte Metadaten an. Diese Clients benötigen aber auch andere Daten, um zu steuern, welche visuellen Elemente angezeigt werden sollen, welche benutzerdefinierte Logik angewendet werden soll und welche Sicherheitsfunktionen genutzt werden sollen. Diese Systemdaten werden auch in Entitäten gespeichert, die Entitäten selbst können aber nicht angepasst werden.
+Verschiedene Clients, mit denen Benutzer mit den Daten in Ihrer Umgebung interagieren, hängen von den Entitätsmetadaten ab und passen sich an, wenn Sie die Metadaten anpassen. Aber diese Clients hängen auch von anderen Daten ab, um zu steuern, welche visuellen Elemente angezeigt werden, welche benutzerdefinierte Logik angewendet wird und wie die Sicherheit geregelt werden soll. Diese Systemdaten werden auch in Entitäten gespeichert, die Entitäten selbst können jedoch nicht angepasst werden.
 
-Weitere Informationen über Entitäten, Attribute und Entitätsbeziehungen, die von CDS für Apps standardmäßig eingeschlossen werden, finden Sie in der [Entitätsreferenz](/powerapps/developer/common-data-service/reference/about-entity-reference).
+Sie können mehr über Standardentitäten, -attribute und Entitätsbeziehungen erfahren, die standardmäßig in den CDS for Apps enthalten sind, indem Sie die [Entitätsreferenz](/powerapps/developer/common-data-service/reference/about-entity-reference) überprüfen.
 
 > [!TIP]
-> Die Designer, mit denen Sie Metadaten bearbeiten können, können nicht alle Informationen anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App namens **Metadata Browser** installieren, über die Sie alle Eigenschaften von Entitäten und Metadaten abrufen können, die im System gefunden werden. Weitere Informationen finden Sie unter [Durchsuchen der Metadaten für die Organisation](https://docs.microsoft.com/dynamics365/customer-engagement/developer/browse-your-metadata).
+> Die Designer, die zum Bearbeiten der Metadaten verfügbar sind, können nicht alle Details anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App mit dem Namen **Browser für Metadaten** installieren, die es Ihnen ermöglicht, alle Entitäten- und Metadateneigenschaften anzuzeigen, die im System vorhanden sind. Weitere Informationen: [Durchsuchen der Metadaten für die Umgebung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/browse-your-metadata).
   
 <a name="BKMK_CreateNewOrUseExistingMetadata"></a>
 
-## <a name="create-new-metadata-or-use-existing-metadata"></a>Erstellen neuer Metadaten oder Verwenden vorhandener Metadaten?
+## <a name="create-new-metadata-or-use-existing-metadata"></a>Neue Metadaten erstellen oder vorhandene nutzen?
 
-CDS für Apps enthält eine Reihe von Standardentitäten, die grundlegende Funktionen für Geschäftsanwendungen unterstützen. Daten zu Ihren Kunden oder potenziellen Kunden sollten beispielsweise mithilfe der Entitäten „Account“ oder „Contact“ gespeichert werden.  
+CDS for Apps verfügt über einige Standardentitäten, die Kernfähigkeiten von Geschäftsanwendungen unterstützen. So sollen beispielsweise Daten zu Ihren Kunden oder potenziellen Kunden mit den Entitäten Firma oder Kontakt gespeichert werden.  
   
-Jede dieser Entitäten enthält auch eine Reihe von Feldern, die gemeinsame Daten repräsentieren und die vom System möglicherweise für die jeweilige Entität gespeichert werden müssen.  
+Jede dieser Entitäten enthält auch eine Reihe von Feldern, die allgemeine Daten repräsentieren, die das System möglicherweise für die jeweilige Entität speichern muss.  
   
-In den meisten Organisationen ist es von Vorteil, die Standardentitäten und -attribute für die Zwecke zu verwenden, für die sie bereitgestellt wurden. 
+Für die meisten Organisationen ist es von Vorteil, die zu Standardentitäten und Attribute für die Zwecke zu verwenden, für die diese bereitgestellt wurden. 
   
-Wenn Sie eine Lösung installieren, können Sie davon ausgehen, dass der Lösungsentwickler die Standardentitäten und -attribute verwendet hat. Die Erstellung einer neuen, benutzerdefinierten Entität, die eine Systementität oder ein Systemattribut ersetzt, bedeutet, dass verfügbare Lösungen möglicherweise für Ihre Organisation nicht funktionieren.  
+Wenn Sie eine Lösung installieren, können Sie erwarten, dass der Lösungsentwickler die Standardentitäten und Attribute genutzt hat. Das Erstellen einer neuen benutzerdefinierten Entität, die eine Systementität oder ein Attribut ersetzt, kann bedeuten, dass verfügbare Lösungen nicht mehr für Ihre Organisation funktionieren.  
   
-Aus diesen Gründen empfiehlt es sich, die standardmäßigen Entitäten, Felder und Entitätsbeziehungen zu suchen und zu verwenden, wenn sie für Ihre Organisation sinnvoll sind. Wenn sie nicht sinnvoll sind und nicht an Ihre Anforderungen angepasst werden können, sollten Sie überprüfen, ob die Erstellung neuer Entitäten, Felder oder Entitätsbeziehungen erforderlich ist. 
+Daher wird empfohlen, die bereitgestellten Standardentitäten und Felder und Entitätsbeziehungen zu suchen und verwenden, wenn diese für Ihre Organisation sinnvoll sind. Wenn dies nicht der Fall ist, und sie nicht an Ihre Anforderungen angepasst werden könnten, sollten Sie prüfen, ob das Erstellen einer neuen Entität, einem neuen Feld oder einer neuen Entitätsbeziehung erforderlich ist. 
 
 <!--  Can we say this yet? 
     
@@ -58,21 +58,21 @@ Aus diesen Gründen empfiehlt es sich, die standardmäßigen Entitäten, Felder 
 
 -->
 
-Denken Sie daran, dass Sie den Anzeigenamen einer Entität ändern können, sodass sie in die Nomenklatur Ihrer Organisation passt. Beispielsweise kommt es sehr häufig vor, dass der Anzeigename der Entität „Account“ zu *Unternehmen* oder der Name der Entität „Contact“ zu *Person* geändert wird. Diese Änderungen können für Entitäten und Attribute durchgeführt werden, ohne dass sich das Verhalten der Entität ändert. Weitere Informationen zum Umbenennen von Entitäten finden Sie unter [Ändern des Namens einer Entität](edit-entities.md#change-the-name-of-an-entity).
+Denken Sie daran, dass Sie den Anzeigenamen einer Entität an die Benennungsstandards Ihrer Organisation anpassen können. Beispielsweise ist es sehr verbreitet, dass Benutzer den Anzeigenamen der Firmenentität zu *Unternehmen* oder den Namen der Kontaktentität zu *Person* ändern. Das kann mit Entitäten oder Attributen ausgeführt werden, ohne dass das Verhalten der Entität geändert wird. Weitere Informationen zum Umbenennen von Entitäten finden Sie unter [Den Namen einer Entität ändern](edit-entities.md#change-the-name-of-an-entity).
   
-Sie können standardmäßige Entitäten, Felder oder Entitätsbeziehungen nicht löschen. Diese sind Teil der Systemlösung, und jede Organisation muss über sie verfügen. Wenn Sie eine Standardentität verbergen möchten, ändern Sie die Berechtigungen der Sicherheitsrolle für Ihre Organisation, sodass die Leseberechtigung für diese Entität entfernt wird. Damit wird die Entität aus den meisten Teilen der Anwendung entfernt. Wenn Sie ein Systemfeld nicht benötigen, entfernen Sie es aus dem Formular und allen Ansichten, die dieses verwenden. Ändern Sie den Wert **Searchable** in den Definitionen für Feld und Entitätsbeziehung, sodass diese bei erweiterten Suchvorgängen nicht angezeigt werden. 
+Sie können Standardentitäten, Felder oder Entitätsbeziehungen nicht löschen. Diese gelten als Teil der Systemlösung ,und jede Organisation muss über sie verfügen. Wenn eine Standardentität ausblenden möchten, ändern Sie die Sicherheitsrollenberechtigungen für Ihre Organisation, um die Leseberechtigung für diese Entität zu entfernen. Dadurch wird die Entität aus den meisten Teilen der Anwendung entfernt. Wenn Sie ein Systemfeld nicht benötigen, entfernen Sie es aus dem Formular und allen Ansichten, die dieses verwenden. Ändern Sie den Wert **Durchsuchbar** in den Feld- und Entitätsbeziehungsdefinition, damit sie nicht in der erweiterten Suche angezeigt werden. 
   
 <a name="BKMK_LimitationsOnMetadata"></a>   
 
 ## <a name="limitations-on-creating-metadata-items"></a>Einschränkungen beim Erstellen von Metadatenelementen  
 
-Sie können nur eine begrenzte Anzahl von Entitäten erstellen. Informationen zur maximalen Anzahl finden Sie auf der Seite **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Verwaltung** > **Verwendete Ressourcen**. Wenn Sie weitere benutzerdefinierte Entitäten benötigen, wenden Sie sich an den technischen Support. Die Obergrenze kann angepasst werden.  
+Es gibt eine Grenze bei der Anzahl von Entitäten, die Sie erstellen können. Sie finden Informationen über die Höchstzahl auf der Seite **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Administration** > **Verwendete Ressourcen**. Wenn Sie mehr benutzerdefinierte Entitäten benötigen, wenden Sie sich an den technischen Support. Diese Obergrenze kann angepasst werden.  
   
-Innerhalb von Entitäten kann nur eine begrenzte Anzahl von Feldern erstellt werden. Dieser Grenzwert basiert auf den technischen Einschränkungen in Bezug auf die Menge der Daten, die in einer Zeile einer Datenbanktabelle gespeichert werden können. Ein genauer Wert lässt sich nur schwer beziffern, weil jede Art von Feld eine unterschiedliche Menge an Speicherplatz verwenden kann. Die Obergrenze hängt von dem Speicherplatz ab, der insgesamt von allen Feldern für die Entität verwendet wird.  
+Für jede Entität gibt es eine Obergrenze für die Anzahl von Feldern, die Sie erstellen können. Diese Beschränkung basiert auf den technischen Einschränkungen zum Datenvolumen, das in einer Zeile einer Datenbanktabelle gespeichert werden kann. Eine genaue Zahl lässt sich nicht angeben, da jede Feldart einen bestimmten Platz einnimmt. Die Obergrenze hängt von dem Gesamtplatz ab, den alle Felder für die Entität beanspruchen.  
   
-In den meisten Fällen werden nicht so viele benutzerdefinierte Felder erstellt, dass der Grenzwert erreicht wird. Wenn Sie aber planen, einer Entität Hunderte von benutzerdefinierten Feldern hinzuzufügen, sollten Sie überprüfen, ob dies der optimale Entwurf ist. Beschreiben alle Felder, die Sie planen, Eigenschaften für einen Datensatz für diese Entität? Können Sie wirklich davon ausgehen, dass alle Benutzer in Ihrer Organisation in der Lage sein werden, mit einem Formular umzugehen, dass eine so hohe Anzahl von Feldern umfasst? Die Anzahl von Feldern, die Sie einem Formular hinzufügen, erhöht die Menge an Daten, die bei jeder Bearbeitung eines Datensatzes übertragen werden müssen, und wirkt sich auf die Leistung des Systems aus. Berücksichtigen Sie diese Faktoren, wenn Sie einer Entität benutzerdefinierte Felder hinzufügen.  
+Die meisten Benutzer erreichen diese Obergrenze nicht, wenn Sie jedoch planen, einer Entität Hunderte benutzerdefinierter Felder hinzuzufügen, sollten Sie darüber nachdenken, ob dies die beste Lösung ist. Beschreiben alle geplanten Felder Eigenschaften eines Datensatzes für diese Entität? Erwarten Sie wirklich, dass Personen, die Ihre Organisation verwenden, ein Formular mit einer derart großen Menge von Feldern handhaben können? Die Anzahl von Feldern, die Sie einem Formular hinzufügen, erhöht die Menge der Daten, die bei jeder Bearbeitung des Formulars übertragen wird und wirkt sich so auf die Leistung des Systems aus. Berücksichtigen Sie diese Faktoren, wenn Sie einer Entität benutzerdefinierte hinzufügen.  
   
-Felder mit Optionssätzen enthalten Optionen, die auf einem Formular in einem Dropdown-Steuerelement oder bei einer erweiterten Suche in einem Auswahllisten-Steuerelement angezeigt werden. Ihre Umgebung kann Tausende von Optionen in einem Optionssatz unterstützen – Sie sollten diese Obergrenze aber nicht ausreizen. Studien zur Benutzerfreundlichkeit belegen, dass Benutzer Probleme haben, ein System zu verwenden, in dem Dropdown-Steuerelemente sehr viele Optionen enthalten. Verwenden Sie Felder für Optionssätze, um Kategorien für Daten zu definieren. Verwenden Sie diese Felder nicht zur Auswahl von Kategorien, die tatsächlich separate Datenelemente repräsentieren. Ein Beispiel: Anstatt ein Optionssatzfeld zu verwenden, das jeweils Hunderte von möglichen Herstellern eines bestimmten Produkts speichert, erstellen Sie lieber eine Entität, die Verweise auf jeden Hersteller speichert, und verwenden ein Nachschlagefeld anstelle eines Optionssatzes.  
+Optionssatzfelder bieten eine Reihe von Optionen, die in einer Dropdownliste in einem Formular oder bei Verwendung der erweiterten Suche in einer Auswahlliste angezeigt werden. Ihre Umgebung kann in einem Optionssatz Tausende von Optionen unterstützen, Sie sollten dies jedoch nicht als die Obergrenze erwägen. Benutzerfreundlichkeitsstudien haben gezeigt, dass Benutzer Schwierigkeiten mit der Verwendung eines Systems haben, in dem eine Dropdownliste zu viele Optionen anzeigt. Verwenden Sie Optionssatzfelder zur Definition der Kategorien für Daten. Verwenden Sie sie nicht zur Auswahl von Kategorien, die separate Datenelemente repräsentieren. Verwenden Sie beispielsweise nicht ein Optionssatzfeld, das Hunderte möglicher Hersteller eines bestimmten Geräts enthält; erstellen Sie stattdessen eine Entität mit Verweisen zu jedem Hersteller und ein Suchfeld anstelle eines Optionssatzes.  
   
 ## <a name="next-steps"></a>Nächste Schritte 
 

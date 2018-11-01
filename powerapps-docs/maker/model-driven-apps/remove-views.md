@@ -1,6 +1,6 @@
 ---
-title: Löschen oder Deaktivieren der Ansicht einer modellgesteuerten App in PowerApps | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie eine Ansicht löschen oder deaktivieren.
+title: Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht in PowerApps | MicrosoftDocs
+description: 'Erfahren Sie, wie Sie eine Ansicht löschen oder deaktivieren'
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
@@ -9,42 +9,41 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
+  - Dynamics 365 (online)
+  - Dynamics 365 Version 9.x
+  - powerapps
 author: Mattp123
 ms.assetid: 60865f78-7482-42da-8960-adbd3c155028
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
-ms.openlocfilehash: e8dd3ac1fb1528dabaf9fbc7006f5d4501c8c8cd
-ms.sourcegitcommit: aba996b1773ecdf62758e06b34eaf57bede29e08
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39686690"
+search.audienceType:
+  - maker
+search.app:
+  - PowerApps
+  - D365CE
 ---
-# <a name="delete-or-deactivate-a-model-driven-app-view"></a>Löschen oder Deaktivieren der Ansicht einer modellgesteuerten App 
+# <a name="delete-or-deactivate-a-model-driven-app-view"></a>Löschen oder Deaktivieren einer modellgesteuerten App-Ansicht 
 
 <a name="BKMK_RemoveViews"></a>   
 
- Sie verfügen möglicherweise über eine Ansicht, die Benutzern nicht angezeigt werden soll. Je nach Art der Ansicht können Sie sie entweder löschen oder deaktivieren.  
+ Möglicherweise haben Sie eine Ansicht, die von Mitarbeitern nicht angezeigt werden soll. Abhängig vom Typ der Ansicht können Sie sie löschen oder deaktivieren.  
   
 ## <a name="delete-a-view"></a>Löschen einer Ansicht  
- Sie können jede benutzerdefinierte öffentliche Ansicht löschen. Verwenden Sie die Schritte im Artikel über den [Zugriff auf Ansichtsdefinitionen](accessing-view-definitions.md), um nach der zu löschenden Ansicht zu suchen, und verwenden Sie den Befehl ![Löschen-Schaltfläche](media/delete.gif "Löschen-Schaltfläche")**Löschen**. Sobald Sie bestätigen, dass Sie die Ansicht wirklich löschen möchten, wird sie dauerhaft gelöscht.  
+ Sie können eine benutzerdefinierte öffentliche Ansicht löschen. Verwenden Sie die Schritte in [Auf Ansichtsdefinitionen zugreifen](accessing-view-definitions.md), um die Ansicht zu suchen, die Sie löschen möchten, und verwenden Sie den ![Schaltfläche Löschen](media/delete.gif "Schaltfläche Löschen") Befehl **Löschen**. Wenn Sie überprüft haben, dass Sie wirklich löschenden möchten, wird die Ansicht dauerhaft gelöscht.  
   
- Wenn Sie die Ansicht nicht dauerhaft löschen möchten, können Sie sie stattdessen deaktivieren.  
+ Wenn Sie die Ansicht nicht endgültig löschen möchten, können Sie sie stattdessen deaktivieren.  
   
-## <a name="deactivate-or-activate-views"></a>Deaktivieren bzw. Aktivieren von Ansichten  
- [Systemansichten](create-edit-views.md#system-views) können nicht gelöscht oder deaktiviert werden. Dies schließt auch vom System erstellte öffentliche Ansichten ein. Sie haben jedoch die Möglichkeit, eine beliebige öffentliche Ansicht zu deaktivieren, auch wenn diese vom System erstellt wurde.  
+## <a name="deactivate-or-activate-views"></a>Deaktivieren oder Aktivieren von Ansichten  
+ Sie können [Systemansichten](create-edit-views.md#system-views), einschließlich vom System erstellte öffentliche Ansichten, nicht löschen oder deaktivieren. Sie können öffentliche Ansichten, einschließlich vom System erstellte Ansichten, löschen oder deaktivieren.  
   
-### <a name="deactivate-or-activate-a-public-view"></a>Deaktivieren bzw. Aktivieren einer öffentlichen Ansicht  
+### <a name="deactivate-or-activate-a-public-view"></a>Deaktivieren oder Aktivieren einer öffentlichen Ansicht  
   
-1.  Navigieren Sie zu **Systemansichten**, wie im Artikel über den [Zugriff auf Ansichtsdefinitionen](accessing-view-definitions.md) beschrieben.  
+1.  Navigieren Sie zu **Systemansichten**, wie im Abschnitt [Zugriff auf Ansichtsdefinitionen](accessing-view-definitions.md) beschrieben.  
   
-2.  Wählen Sie eine öffentliche Ansicht aus. Um inaktive Ansichten anzuzeigen, verwenden Sie die Ansicht **Inaktive öffentliche Ansichten**.  
+2.  Wählen Sie eine öffentliche Ansicht aus. Um für inaktive Ansichten anzuzeigen, können Sie die Ansicht **Inaktive öffentliche Ansichten** verwenden.  
   
-3.  Wählen Sie in der Menüleiste **Weitere Aktionen** und dann entweder **Deaktivieren** oder **Aktivieren** aus.  
+3.  Wählen Sie auf der Menüleiste **Weitere Aktionen** aus, und anschließend wählen Sie entweder **Deaktivieren** oder **Aktivieren** aus.  
   
 4.  Wählen Sie **Alle Anpassungen veröffentlichen** aus. 
 
