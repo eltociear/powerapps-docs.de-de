@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ecf468f8c1b15d20b144aa127fe31c13dba484e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: 02aaaf7fd149ca0d9f3e1325b98e5287c90bebec
+ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849747"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49316997"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
 
@@ -62,25 +62,17 @@ In PowerApps können Sie die folgenden Arten von Apps erstellen und ausführen:
 - **Canvas-Apps** unterstützen das Entwerfen einer benutzerdefinierten Benutzeroberfläche und die Herstellung einer Verbindung mit Daten aus einer Vielzahl von Quellen.
 - **Modellgesteuerte Apps** verfügen über eine standardmäßige Benutzeroberfläche und stellen nur in Common Data Service (CDS) für Apps eine Verbindung mit Daten her. Sie können jedoch einfacher andere Elemente wie Ansichten, Dashboards und verschiedene Arten von Geschäftslogik erstellen.
 
-Standardmäßig zeigt die **Startseite** Optionen für das Erstellen und Ausführen von Canvas-Apps an. Um stattdessen modellgesteuerte Optionen anzuzeigen, wählen Sie eine Umgebung aus, die über eine CDS für Apps-Datenbank verfügt, und öffnen Sie dann das Menü in der linken unteren Ecke.
-
-![Wechseln zwischen Canvas-Apps und modellgesteuerten Apps](media/intro-maker-portal/mode-switcher.png)
+Wenn Sie eine Umgebung auswählen, die über CDS für eine App-Datenbank verfügt, können Sie Canvas-Apps oder modellgesteuerte von der gleichen **Startseite** aus erstellen.
 
 ## <a name="play-or-edit-an-app"></a>Wiedergeben oder Bearbeiten einer App
 
-Wenn Sie bereits eine App erstellt haben (oder jemand anders eine App erstellt und für Sie freigegeben hat), können Sie diese über die Seite **Apps** wiedergeben oder bearbeiten.
+Wenn Sie eine App erstellt haben (oder jemand anders eine App erstellt und für Sie freigegeben hat), können Sie diese über die Seite **Startseite** oder die Seite **Apps** wiedergeben oder bearbeiten.
 
-- Sie können eine App finden, indem Sie nach verschiedenen Kriterien filtern, beispielsweise danach, ob Sie die App vor Kurzem geöffnet haben.
+Auf der Seite **Apps** können Sie die Liste der Apps nach verschiedenen Kriterien filtern, beispielsweise danach, ob Sie eine App vor Kurzem geöffnet haben.
 
-    ![Liste der Canvas-Apps](media/intro-maker-portal/org-apps.png)
+![Liste der Apps](./media/intro-maker-portal/find-apps.png)
 
-    Sie können auch nach einer App suchen, indem Sie in das Suchfeld, das rechts oben angezeigt wird, ein oder mehrere Zeichen eingeben. Wenn Sie die gewünschte App gefunden haben, klicken Sie auf das Symbol mit den drei Auslassungspunkten, um Optionen zum Wiedergeben oder Bearbeiten der App anzuzeigen.
-
-    ![Menü nach Auswahl der Auslassungspunkte](media/intro-maker-portal/ellipsis-menu.png)
-
-- Sie können die Liste der modellgesteuerten Apps nicht filtern, aber Sie können nach einer App suchen, indem Sie in das Suchfeld, das rechts oben angezeigt wird, ein oder mehrere Zeichen eingeben. Wenn Sie die gewünschte App gefunden haben, klicken Sie auf das Symbol mit den drei Auslassungspunkten, um Optionen zum Wiedergeben oder Bearbeiten der App anzuzeigen.
-
-    ![Liste der modellgesteuerten Apps mit offenem Menü nach Auswahl der Auslassungspunkte](media/intro-maker-portal/model-driven-list.png)
+Sie können auch nach einer App suchen, indem Sie in das Suchfeld, das rechts oben angezeigt wird, ein oder mehrere Zeichen eingeben. Wenn Sie die gewünschte App gefunden haben, klicken Sie auf das Bannersymbol, um die App zu starten oder zu bearbeiten.
 
 ## <a name="create-an-app"></a>Erstellen einer App
 
