@@ -1,0 +1,1 @@
+Gibt einen Booleschen Wert an, der angibt, ob eines der Felder im Formular geändert wurde.

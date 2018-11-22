@@ -1,0 +1,1 @@
+Gibt eine Sammlung von Schritten der Phase zurück.

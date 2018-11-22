@@ -1,0 +1,1 @@
+Wählen Sie auf der Navigationsleiste **Microsoft Dynamics 365** > **Einstellungen** aus.

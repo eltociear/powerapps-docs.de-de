@@ -1,0 +1,1 @@
+Gibt einen Wert mit einem Ganzzahl-Datentyp an, der als Parameter übergeben werden kann.

@@ -1,0 +1,2 @@
+> [!NOTE]
+> Dieser Inhalt gilt für [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)] oder höher. Die Dokumentation für frühere Versionen finden Sie unter [Verwaltung von Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx).

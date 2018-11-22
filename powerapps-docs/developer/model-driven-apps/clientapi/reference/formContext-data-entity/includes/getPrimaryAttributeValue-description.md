@@ -1,0 +1,1 @@
+Ruft eine Zeichenfolge für den Wert des primären Attributs der Entität ab.

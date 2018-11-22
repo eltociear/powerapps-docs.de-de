@@ -1,0 +1,1 @@
+Gibt einen booleschen Wert zurück, der anzeigt, ob der Schritt im Geschäftsprozessfluss erforderlich ist.

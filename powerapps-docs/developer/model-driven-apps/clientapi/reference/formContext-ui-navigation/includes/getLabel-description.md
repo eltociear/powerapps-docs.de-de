@@ -1,0 +1,1 @@
+Gibt die Beschriftung für das Element zurück.

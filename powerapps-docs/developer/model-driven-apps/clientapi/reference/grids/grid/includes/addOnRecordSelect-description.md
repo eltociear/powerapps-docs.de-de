@@ -1,0 +1,1 @@
+Fügt eine Funktion hinzu, die ausgeführt wird, wenn der Benutzer einen Datensatz (eine Zeile) im Raster auswählt.

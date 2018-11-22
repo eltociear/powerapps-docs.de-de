@@ -1,0 +1,1 @@
+Gilt für Dynamics 365 (online), Version 9.x

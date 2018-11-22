@@ -1,0 +1,1 @@
+Die Microsoft Social Engagement-Services können Verbindungen mit den Drittanbieterservices Twitter und Facebook enthalten, um Engagement- und Analytics-Szenarien und damit verbundene Social Media Content-Abrufe zu ermöglichen. Bei einem entsprechenden Verbindungsaufbau können bestimmte Daten wie z. B. Ihre IP-Adresse an diese Dienste weitergegeben werden.

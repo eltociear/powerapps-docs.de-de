@@ -1,0 +1,1 @@
+Veraltet. Gibt [GridEntity](../../gridentity.md) für GridRowData zurück.

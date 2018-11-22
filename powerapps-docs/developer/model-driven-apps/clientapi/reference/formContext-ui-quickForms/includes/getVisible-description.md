@@ -1,0 +1,1 @@
+Gibt einen Wert zurück, der angibt, ob das Steuerelement für die Schnellansicht derzeit angezeigt wird.

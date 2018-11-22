@@ -1,0 +1,1 @@
+Einige der genannten Beispiele dienen nur zu Illustrationszwecken und sind frei erfunden. Jegliche Ähnlichkeit oder Verbindung ist rein zufällig.

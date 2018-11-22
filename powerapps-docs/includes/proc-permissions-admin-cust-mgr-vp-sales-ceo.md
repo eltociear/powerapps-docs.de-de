@@ -1,0 +1,1 @@
+Stellen Sie sicher, dass Sie über eine der folgenden Sicherheitsrollen oder entsprechende Berechtigungen verfügen: Systemadministrator, Systemanpasser, Vertriebsmanager, Vertriebsleiter, Marketingleiter oder Vorstandsvorsitzender.

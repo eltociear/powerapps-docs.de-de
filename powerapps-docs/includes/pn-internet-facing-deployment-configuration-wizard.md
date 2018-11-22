@@ -1,0 +1,1 @@
+Konfigurations-Assistent für die Bereitstellung mit Internetzugriff

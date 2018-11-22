@@ -1,0 +1,1 @@
+Gibt die Beschriftung für den Abschnitt zurück

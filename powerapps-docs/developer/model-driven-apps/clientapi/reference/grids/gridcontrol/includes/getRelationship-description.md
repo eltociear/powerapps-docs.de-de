@@ -1,0 +1,1 @@
+Ruft Informationen zu der Beziehung ab, mit der das Unterraster gefiltert wird.

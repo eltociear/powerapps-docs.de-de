@@ -1,0 +1,1 @@
+Gibt eine Zeichenfolge zurück, die den logische Namen des Entitätsdatensatz darstellt.

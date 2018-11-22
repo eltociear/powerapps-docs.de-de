@@ -1,0 +1,1 @@
+Microsoft Dynamics CRM-Listenkomponente für SharePoint Server

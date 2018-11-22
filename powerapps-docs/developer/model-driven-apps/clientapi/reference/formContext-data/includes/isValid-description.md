@@ -1,0 +1,1 @@
+Ruft einen booleschen Wert ab, der anzeigt, ob alle Formulardaten gültig sind. Dazu gehören die Hauptentität und alle ungebundenen Attribute.

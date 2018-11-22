@@ -1,0 +1,1 @@
+Ruft eine Sammlung von Phasen ab, die derzeit im aktiven Pfad sind und Methoden zur Interaktion mit den Phasen enthalten, die im Steuerelement für Geschäftsprozessflüsse angezeigt werden.

@@ -1,0 +1,1 @@
+Legt den Status des Steuerelements als entweder aktiviert bzw. deaktiviert fest.

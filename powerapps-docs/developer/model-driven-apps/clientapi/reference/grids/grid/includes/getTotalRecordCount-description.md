@@ -1,0 +1,1 @@
+ Gibt die Gesamtanzahl von Datensätzen zurück, die den Filterkriterien der Ansicht entsprechen. Eine Begrenzung anhand der Anzahl, die auf einer einzelnen Seite angezeigt werden, findet nicht statt.

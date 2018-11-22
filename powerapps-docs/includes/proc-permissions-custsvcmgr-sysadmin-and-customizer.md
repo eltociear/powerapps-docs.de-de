@@ -1,0 +1,1 @@
+Stellen Sie sicher, dass Sie über die Sicherheitsrolle „Kundenservicemanager“, „Systemadministrator“ oder „Systemanpasser“ bzw. entsprechende Berechtigungen verfügen.

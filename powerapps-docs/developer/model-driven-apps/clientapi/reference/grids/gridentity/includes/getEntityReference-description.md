@@ -1,0 +1,1 @@
+Gibt einen Suchwert zurück, der auf den Datensatz in der Zeile verweist.

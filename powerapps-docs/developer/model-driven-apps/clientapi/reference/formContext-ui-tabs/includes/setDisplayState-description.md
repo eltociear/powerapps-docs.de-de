@@ -1,0 +1,1 @@
+Legt den Anzeigenstatus der Registerkarte fest.

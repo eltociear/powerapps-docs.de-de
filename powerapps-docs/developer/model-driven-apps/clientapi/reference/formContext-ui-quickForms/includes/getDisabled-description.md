@@ -1,0 +1,1 @@
+Ruft einen booleschen Wert ab, der angibt, ob das Steuerelement deaktiviert ist.

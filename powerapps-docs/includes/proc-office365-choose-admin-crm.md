@@ -1,0 +1,1 @@
+Klicken Sie auf **Admin Center** > **Dynamics 365**.

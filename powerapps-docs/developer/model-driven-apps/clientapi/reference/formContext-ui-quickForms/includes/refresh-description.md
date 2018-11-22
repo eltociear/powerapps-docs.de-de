@@ -1,0 +1,1 @@
+Aktualisiert die Daten, die in einem Steuerelement für die Schnellansicht angezeigt werden.

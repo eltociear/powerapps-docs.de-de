@@ -1,0 +1,1 @@
+Gibt den Fortschritt der Funktionsstufe zurück.

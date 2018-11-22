@@ -1,0 +1,1 @@
+Gibt einen Wert an, der angibt, ob das Speichern-Ereignis abgebrochen wurde, weil Sie die [preventDefault](../preventDefault.md)-Methode in diesem Ereignishandler oder einem früheren Ereignishandler verwendet wurde.

@@ -1,0 +1,1 @@
+Ruft einen Entitätsdatensatz ab.

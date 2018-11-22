@@ -1,0 +1,1 @@
+Legt den aktuellen Status der aktiven Prozessinstanz fest.

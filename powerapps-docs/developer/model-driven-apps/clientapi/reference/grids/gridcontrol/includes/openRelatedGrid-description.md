@@ -1,0 +1,1 @@
+Zeigt das dem Raster zugeordnete Raster an. 

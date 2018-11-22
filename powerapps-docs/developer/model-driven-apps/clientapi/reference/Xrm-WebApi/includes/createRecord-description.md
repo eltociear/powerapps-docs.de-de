@@ -1,0 +1,1 @@
+Erstellt einen Entitätsdatensatz.

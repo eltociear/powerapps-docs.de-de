@@ -1,0 +1,1 @@
+Zum Verwenden dieser Funktion müssen Sie sie aktivieren und die Lizenzbedingungen akzeptieren. [Was sind Previewfunktionen, und wie werden sie aktiviert?](../admin/what-are-preview-features-how-do-i-enable-them.md).

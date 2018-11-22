@@ -1,0 +1,1 @@
+Entfernt ein vorhandenes Menübandelement aus der Verarbeitung für das Menüband.

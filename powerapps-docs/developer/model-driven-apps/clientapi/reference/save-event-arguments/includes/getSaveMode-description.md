@@ -1,0 +1,1 @@
+Gibt einen Wert zurück, der angibt, wie das Speichern-Ereignis vom Benutzer initiiert wurde.

@@ -1,0 +1,1 @@
+Ruft den Rastertyp (Raster oder Unterraster) ab.

@@ -1,0 +1,1 @@
+Dezember 2016 Service-Paket für Microsoft Dynamics 365 (lokal)

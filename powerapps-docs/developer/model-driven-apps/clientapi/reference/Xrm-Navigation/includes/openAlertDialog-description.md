@@ -1,0 +1,1 @@
+Zeigt einen Warnungsdialog an, der eine Nachricht und eine Schaltfläche enthält.

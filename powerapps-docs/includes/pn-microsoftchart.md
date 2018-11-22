@@ -1,0 +1,1 @@
+Microsoft Chart Controls für Microsoft .NET Framework 3.5

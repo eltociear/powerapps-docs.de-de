@@ -1,0 +1,1 @@
+Mit diesem Dokument erhalten Sie keinerlei Rechte an geistigem Eigentum in einem beliebigen Microsoft-Produkt. Sie können dieses Dokument als Kopie für eigene interne Referenzzwecke verwenden.

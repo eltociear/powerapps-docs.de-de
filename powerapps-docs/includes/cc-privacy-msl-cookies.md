@@ -1,0 +1,2 @@
+Mithilfe von Sitzungscookies ermöglicht Microsoft Social Engagement es Benutzern, von Seite zu Seite zu wechseln, ohne sich auf jeder Seite erneut anmelden zu müssen. Auf Anweisung des Benutzers können wir Cookies zum Speichern von Anmeldeinformationen verwenden, um die Authentifizierung bei zukünftigen Sitzungen zu vereinfachen.   
+ Sitzungscookies sind für die Verwendung von Microsoft Social Engagement notwendig. Es ist nicht möglich, diese Cookies abzuwählen. Anmeldecookies hingegen werden nur gespeichert, wenn der Benutzer dies wünscht.

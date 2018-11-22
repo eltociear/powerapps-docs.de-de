@@ -1,0 +1,1 @@
+Gibt den Status der Phase zurück.

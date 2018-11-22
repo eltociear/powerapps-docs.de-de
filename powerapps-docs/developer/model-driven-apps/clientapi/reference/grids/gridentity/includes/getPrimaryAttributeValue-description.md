@@ -1,0 +1,1 @@
+Gibt den primären Attributwert für den Datensatz in der Zeile zurück.

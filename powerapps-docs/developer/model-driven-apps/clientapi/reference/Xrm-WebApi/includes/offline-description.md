@@ -1,0 +1,1 @@
+Stellt Methoden zur Verfügung, mit denen im *Offlinemodus* Datensätze in den mobilen Clients modellgestützter Apps erstellt und verwaltet werden können. 

@@ -1,0 +1,1 @@
+Ruft einen booleschen Wert ab, der anzeigt, ob Formulardaten geändert wurden.

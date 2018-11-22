@@ -1,0 +1,1 @@
+Ruft den Formulartyp für den Datensatztyp ab.

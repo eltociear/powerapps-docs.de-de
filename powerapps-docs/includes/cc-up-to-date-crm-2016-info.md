@@ -1,0 +1,1 @@
+Aktuelle Kompatibilitätsinformation zu Dynamics 365 finden Sie unter [Kompatibilität mit Microsoft Dynamics CRM 2016](https://support.microsoft.com/en-us/kb/3124955).

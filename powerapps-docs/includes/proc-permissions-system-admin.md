@@ -1,0 +1,1 @@
+Stellen Sie sicher, dass Sie in Microsoft Dynamics 365 über die Sicherheitsrolle „Systemadministrator“ bzw. entsprechende Berechtigungen verfügen.

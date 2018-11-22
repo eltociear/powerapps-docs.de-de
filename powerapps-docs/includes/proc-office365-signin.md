@@ -1,0 +1,1 @@
+Rufen Sie das [Office 365-Administratorcenter](https://portal.office.com) auf, und melden Sie sich mit den Anmeldeinformationen des globalen Office 365-Administrators an.

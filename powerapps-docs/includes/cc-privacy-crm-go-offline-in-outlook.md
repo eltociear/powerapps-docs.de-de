@@ -1,0 +1,5 @@
+Wenn Sie Microsoft Dynamics 365 für Outlook verwenden, wird beim Wechsel in den Offline-Modus eine Kopie der Daten erstellt, die Sie bearbeiten, und auf Ihrem lokalen Computer gespeichert. Die Daten werden aus Dynamics 365 (online) auf Ihren Computer übertragen, indem eine sichere Verbindung verwendet wird, und ein Link wird zwischen der lokalen Kopie und Dynamics 365 (online) beibehalten. Beim nächsten Anmelden bei Dynamics 365 (online) werden die lokalen Daten mit Dynamics 365 (online) synchronisiert.  
+  
+ Ein Administrator legt über Sicherheitsrollen fest, ob Benutzer Ihrer Organisation mit Microsoft Dynamics 365 für Outlook in den Offline-Modus wechseln dürfen.  
+  
+ Benutzer und Administratoren können konfigurieren, welche Entitäten via Offlinesynchronisierung heruntergeladen werden, mithilfe der Einstellung **Synchronisierungsfilter** im Dialogfeld **Optionen**. Benutzer und Administratoren können alternativ konfigurieren, welche Felder heruntergeladen (und hochgeladen) werden, mithilfe von **Erweiterte Optionen** im Dialogfeld **Synchronisierungsfilter**.

@@ -1,0 +1,1 @@
+Gibt eine Zeichenfolge zurück, die de GUID-Wert für den Datensatz darstellt.

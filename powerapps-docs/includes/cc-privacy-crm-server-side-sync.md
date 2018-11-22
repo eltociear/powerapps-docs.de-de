@@ -1,0 +1,3 @@
+Wenn Sie in Dynamics 365 die serverseitige Synchronisierung verwenden, werden Kontakte und Aktivitäten von Dynamics 365 (einschließlich E-Mails, Termine, Kontakte und Aufgaben) in das von Ihnen angegebene E-Mail-System (z. B. Exchange) synchronisiert.  
+  
+ Ein Administrator kann serverseitige Synchronisierungsfunktionen konfigurieren, um anzugeben, welche Benutzer die Möglichkeit haben, E-Mails oder Termine aus Dynamics 365 zu senden oder Aktivitäten und Kontakte zwischen Dynamics 365 und dem Postfach des Benutzers zu synchronisieren. Sowohl der Administrator als auch Endbenutzer können Filterkriterien weiter anpassen, und Administratoren können sogar definieren, welche Entitätsfelder synchronisiert werden.

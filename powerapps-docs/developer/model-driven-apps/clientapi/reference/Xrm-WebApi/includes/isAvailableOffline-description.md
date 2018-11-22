@@ -1,0 +1,1 @@
+Gibt einen Booleschen Wert zurück, der angibt, ob eine Entität im Benutzerprofil vorhanden und zur Verwendung im Offlinemodus verfügbar ist.

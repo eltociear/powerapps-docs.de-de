@@ -1,0 +1,1 @@
+Ruft den Anzeigestatus für die Geschäftsprozesssteuerung ab.

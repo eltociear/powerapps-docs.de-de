@@ -1,0 +1,1 @@
+Zum Anzeigen der Entitätsmetadaten für Ihre Organisation installieren Sie die Metadatenbrowserlösung, die in [Durchsuchen der Metadaten für Ihre Organisation](../developer/browse-your-metadata.md) beschrieben ist. Sie können die Referenzdokumentation für Entitäten auch in der [Entitätsreferenz](../developer/about-entity-reference.md) durchsuchen.

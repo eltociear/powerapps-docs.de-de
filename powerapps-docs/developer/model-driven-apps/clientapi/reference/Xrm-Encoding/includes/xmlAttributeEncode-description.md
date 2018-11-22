@@ -1,0 +1,1 @@
+Codiert die angegebene Zeichenfolge so, dass sie in einem XML-Attribut verwendet werden kann.

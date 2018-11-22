@@ -1,0 +1,1 @@
+Gibt ein **Prozess**-Objekt zurück, das den aktiven Prozess darstellt.

@@ -1,0 +1,1 @@
+Gibt den eindeutigen Bezeichner der Phase zurück.

@@ -1,0 +1,1 @@
+Gibt den Namen der Registerkarte zurück.

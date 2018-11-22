@@ -1,0 +1,1 @@
+Fügt eine Funktion als Ereignishandler für das [OnStageChange](../../../events/onstagechange.md)-Ereignis hinzu, damit es bei Änderung der Phase des Geschäftsprozessflusses aufgerufen wird.

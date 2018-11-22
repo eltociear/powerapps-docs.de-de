@@ -1,0 +1,1 @@
+Fügt eine Funktion hinzu, die aufgerufen wird, wenn das Ereignis [TabStateChange](../../events/tabstatechange.md) auftritt.

@@ -1,0 +1,1 @@
+Gehen Sie zu **Service** > **Social Media-Profile**.

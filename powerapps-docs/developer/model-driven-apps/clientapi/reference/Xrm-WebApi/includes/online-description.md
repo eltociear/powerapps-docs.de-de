@@ -1,0 +1,1 @@
+Stellt Methoden zur Verfügung, mit denen die Web-API zur Erstellung und Verwaltung von Datensätzen und zur Ausführung von Web-API-Aktionen und -Funktionen in modellgestützten Apps verwendet werden kann, wenn eine Verbindung zum Server modellgestützter Apps (Onlinemodus) besteht. 

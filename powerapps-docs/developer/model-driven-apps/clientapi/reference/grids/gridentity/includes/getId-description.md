@@ -1,0 +1,1 @@
+Gibt die ID für den Datensatz in der Zeile zurück.

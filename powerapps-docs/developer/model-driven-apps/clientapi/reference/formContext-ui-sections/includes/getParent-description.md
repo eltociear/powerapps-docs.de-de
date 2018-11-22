@@ -1,0 +1,1 @@
+Gibt die Registerkarte zurück, die den Abschnitt enthält.

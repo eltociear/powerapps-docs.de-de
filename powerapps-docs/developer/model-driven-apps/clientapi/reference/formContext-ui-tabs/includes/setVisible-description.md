@@ -1,0 +1,1 @@
+Legt einen Wert fest, der angibt, ob die Registerkarte angezeigt wird.

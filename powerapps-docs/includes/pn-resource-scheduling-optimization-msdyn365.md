@@ -1,0 +1,1 @@
+Optimierung der Ressourcenplanung für Microsoft Dynamics 365

@@ -1,0 +1,1 @@
+Diese Aufgabe muss von einem Social Engagement-Administrator oder Power-Analysten ausgeführt werden.

@@ -1,0 +1,1 @@
+Gibt einen Wert mit einem Dezimalzahl-Datentyp an, der als Parameter übergeben werden kann.

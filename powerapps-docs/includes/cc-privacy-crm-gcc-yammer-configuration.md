@@ -1,0 +1,1 @@
+Durch Aktivieren von Yammer stimmen Sie zu, dass Ihre Daten in einem externen System freigegeben werden. Daten, die aus externen Systemen in Microsoft Dynamics 365 (online) importiert werden, unterliegen [Microsoft-Datenschutz und Cookies](http://go.microsoft.com/fwlink/p/?LinkID=521839).

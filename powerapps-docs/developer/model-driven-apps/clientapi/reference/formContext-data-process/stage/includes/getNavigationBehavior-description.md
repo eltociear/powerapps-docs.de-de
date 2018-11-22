@@ -1,0 +1,1 @@
+Gibt ein Navigationsverhaltensobjekt für eine Phase zurück, das verwendet wird, um zu definieren, ob die Schaltfläche **Erstellen** für die Benutzer verfügbar ist. Diese Schaltfläche ermöglicht es den Benutzern, andere Entitätsdatensätze in einem entitätsübergreifenden Geschäftsprozessfluss-Navigationsszenario zu erstellen.

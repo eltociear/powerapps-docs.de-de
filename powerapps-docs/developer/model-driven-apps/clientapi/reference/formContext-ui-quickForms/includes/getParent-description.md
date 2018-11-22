@@ -1,0 +1,1 @@
+Gibt einen Verweis auf das Abschnittsobjekt zurück, das das Steuerelement enthält.

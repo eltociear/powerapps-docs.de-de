@@ -1,0 +1,1 @@
+Tritt vor Betrieb des Hauptsystems und während der Datenbanktransaktion auf.<br /><br />Wenn Sie die Werte einer in einer Nachricht enthaltenen Entität ändern möchten, tun Sie dies hier.<br /><br />Brechen Sie an dieser Stelle besser keinen Vorgang ab. Andernfalls wird die Transaktion rückabgewickelt, und es kommt zu erheblichen Leistungseinbußen.

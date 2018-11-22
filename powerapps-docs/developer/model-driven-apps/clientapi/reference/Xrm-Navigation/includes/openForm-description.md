@@ -1,0 +1,1 @@
+Öffnet ein Entitätsformular oder ein Schnellerfassungsformular.

@@ -1,0 +1,1 @@
+Gibt einen Wert zurück, der angibt, ob die Registerkarte derzeit angezeigt wird.

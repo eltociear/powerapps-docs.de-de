@@ -1,0 +1,1 @@
+Gibt ein Suchwert zurück, der auf den Datensatz verweist.

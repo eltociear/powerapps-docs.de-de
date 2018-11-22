@@ -1,0 +1,1 @@
+Veraltet. Gibt [GridRowData](../../gridrowdata.md) für GridRow zurück.

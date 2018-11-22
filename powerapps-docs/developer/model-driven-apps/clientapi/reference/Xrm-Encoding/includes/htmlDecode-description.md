@@ -1,0 +1,1 @@
+Konvertiert eine HTML-codierte Zeichenfolge in eine decodierte Zeichenfolge.

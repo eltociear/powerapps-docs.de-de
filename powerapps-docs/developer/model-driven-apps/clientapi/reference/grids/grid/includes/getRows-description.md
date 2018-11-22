@@ -1,0 +1,1 @@
+Gibt eine Sammlung aller [GridRow](../../gridrow.md) im Raster zurück.

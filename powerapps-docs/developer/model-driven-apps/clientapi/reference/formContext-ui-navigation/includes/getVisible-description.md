@@ -1,0 +1,1 @@
+Gibt einen Wert zurück, der angibt, ob das Element derzeit angezeigt wird.

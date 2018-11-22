@@ -1,0 +1,1 @@
+Definiert eine Aktion zum Hinzufügen oder Ersetzen von Elementen auf dem Menüband.

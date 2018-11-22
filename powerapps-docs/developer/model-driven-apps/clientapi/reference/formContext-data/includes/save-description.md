@@ -1,0 +1,1 @@
+Speichert asynchron den Datensatz mit der Option, die auszuführenden Rückruffunktionen festzulegen, nachdem der Speichervorgang abgeschlossen ist.

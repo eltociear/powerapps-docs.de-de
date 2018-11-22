@@ -1,0 +1,1 @@
+Ruft eine Sammlung von Entitätsdatensätzen ab.

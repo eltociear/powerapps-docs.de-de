@@ -1,0 +1,1 @@
+Setzt den Anzeigestatus für die Geschäftsprozesssteuerung fest.

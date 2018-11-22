@@ -1,0 +1,5 @@
+Falls Sie Microsoft Dynamics 365 nutzen, sendet die Bing Maps-Funktion die Adresse automatisch über das Internet an den Bing Maps-Dienst, um eine Onlinekarte der Adresse in Dynamics 365 anzuzeigen.  Falls Sie auf Bing Maps innerhalb von Dynamics 365 klicken, werden Sie auf [www.bing.com/maps](http://www.bing.com/maps) weitergeleitet. Ihre Nutzung von Bing Maps wird auch von den [Bing Maps-Nutzungsbestimmungen für Endbenutzer](http://go.microsoft.com/?linkid=9710837) geregelt.  
+  
+ Ihr Administrator kann die Bing Maps-Funktion unter **Einstellungen** > **Verwaltung** > **Systemeinstellungen** aktivieren und deaktivieren. Durch Deaktivieren der Bing Maps-App wird die Funktion in Dynamics 365 deaktiviert.  
+  
+ Die Informationen, die an Bing Maps gesendet werden, unterliegen [Microsoft-Datenschutz und Cookies](http://go.microsoft.com/fwlink/p/?linkid=521839).

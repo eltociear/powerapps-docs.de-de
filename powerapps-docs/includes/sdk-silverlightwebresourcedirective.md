@@ -1,0 +1,1 @@
+Erstellen Sie zum Anzeigen einer Silverlight-Webressource außerhalb eines Entitätsformulars oder Diagramms eine HTML-Webressource als Hostseite für die Silverlight-Webressource. Verwenden Sie dann die **$webresource:**-Direktive, um die HTML-Webressource zu öffnen.

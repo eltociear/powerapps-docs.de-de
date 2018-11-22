@@ -1,0 +1,1 @@
+Dieses Dokument ist vertraulich und Eigentum von Microsoft. Die Offenlegung und Verwendung können nur im Rahmen eines Geheimhaltungsvertrags erfolgen.

@@ -1,0 +1,1 @@
+Speichert den Datensatz synchron mit den Optionen zum Schließen des Formulars oder Öffnen eines neuen Formulars, nachdem das Speichern ausgeführt wurde.

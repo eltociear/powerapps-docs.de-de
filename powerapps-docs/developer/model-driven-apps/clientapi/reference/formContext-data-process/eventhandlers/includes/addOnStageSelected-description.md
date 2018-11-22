@@ -1,0 +1,1 @@
+Fügt eine Funktion als Ereignishandler für das [OnStageSelected](../../../events/onstageselected.md)-Ereignis hinzu, damit es bei Auswahl der Geschäftsprozessflussphase aufgerufen wird.

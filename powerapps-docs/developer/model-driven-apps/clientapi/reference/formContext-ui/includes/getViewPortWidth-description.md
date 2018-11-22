@@ -1,0 +1,1 @@
+ Ruft die Breite des Viewports in Pixeln ab.

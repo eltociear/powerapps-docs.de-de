@@ -1,0 +1,1 @@
+Erhält Zugriff auf das [Raster](../../grid.md), das in GridControl (gridContext) verfügbar ist.

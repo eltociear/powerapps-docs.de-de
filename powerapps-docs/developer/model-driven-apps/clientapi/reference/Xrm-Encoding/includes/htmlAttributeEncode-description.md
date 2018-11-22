@@ -1,0 +1,1 @@
+Codiert die angegebene Zeichenfolge so, dass sie in einem HTML-Attribut verwendet werden kann.

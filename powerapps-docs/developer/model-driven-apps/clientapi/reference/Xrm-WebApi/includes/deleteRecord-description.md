@@ -1,0 +1,1 @@
+Löscht einen Entitätsdatensatz.

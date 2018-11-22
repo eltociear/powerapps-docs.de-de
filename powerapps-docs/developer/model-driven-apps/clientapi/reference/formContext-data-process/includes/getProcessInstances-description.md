@@ -1,0 +1,1 @@
+Gibt alle Prozessinstanzen für den Entitätsdatensatz zurück, auf die der aufrufende Benutzer zugreifen kann.

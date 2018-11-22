@@ -1,0 +1,5 @@
+Lizenzierte Benutzer von Dynamics 365 (online) mit bestimmten Sicherheitsrollen (Vorstandsvorsitzender, Vertriebsmanager, Vertriebsmitarbeiter, Systemadministrator, Systemanpasser und Vertriebsleiter) werden automatisch autorisiert, um auf den Dienst zuzugreifen, indem Dynamics 365 für Smartphones und andere Clients verwendet werden.  
+  
+ Ein Administrator hat die volle Kontrolle (auf der Benutzersicherheitsrollen- oder Entitätsebene) über den Zugriff und die Ebene des autorisierten Zugriffs im Zusammenhang mit dem Phone-Client. Benutzer können dann auf Dynamics 365 (online) zugreifen, indem sie Dynamics 365 für Smartphones nutzen, und Kundendaten werden auf dem Gerät zwischengespeichert, auf dem der bestimmte Client ausgeführt wird.  
+  
+ Basierend auf den bestimmten Einstellungen auf den Benutzersicherheits- und Entitätsebenen enthalten die Typen von Kundendaten, die aus Dynamics 365 (online) exportiert und auf dem Gerät eines Endbenutzers zwischengespeichert werden können, Datensatzdaten, Datensatzmetadaten, Entitätsdaten, Entitätsmetadaten und Geschäftslogik.

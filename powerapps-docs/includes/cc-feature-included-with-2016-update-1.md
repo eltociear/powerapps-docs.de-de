@@ -1,0 +1,1 @@
+Dieses Feature wird in Dynamics CRM Online 2016 Update 1 unterstützt. Sind Sie daran interessiert, diese Funktion zu nutzen? [Dynamics 365-Administrator oder Supportmitarbeiter suchen](http://../basics/find-administrator-support.md)

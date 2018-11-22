@@ -1,0 +1,1 @@
+Gehen Sie zu **Anpassungen** > **System anpassen**.

@@ -1,0 +1,1 @@
+Gibt den logischen Name der Entität zurück, die dieser Phase zugeordnet ist.

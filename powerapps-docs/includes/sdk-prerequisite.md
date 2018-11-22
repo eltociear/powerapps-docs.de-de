@@ -1,0 +1,1 @@
+Eine Internetverbindung ist eine Voraussetzung, um das Beispielprojekt herunterzuladen und die NuGet-Pakete wiederherzustellen, die im Beispielprojekt verwendet werden.

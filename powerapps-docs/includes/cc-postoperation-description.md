@@ -1,0 +1,1 @@
+Tritt nach Betrieb des Hauptsystems und während der Datenbanktransaktion auf.<br /><br />Mit dieser Phase können Sie die Eigenschaften der Nachricht ändern, bevor sie an den Anrufer zurückgeht.<br /><br />Die Entitäten in einer Nachricht sollten nicht geändert werden, weil das ein neues Update-Ereignis auslöst.

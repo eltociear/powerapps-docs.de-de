@@ -1,0 +1,1 @@
+Konvertiert eine Zeichenfolge in eine XML-codierte Zeichenfolge.

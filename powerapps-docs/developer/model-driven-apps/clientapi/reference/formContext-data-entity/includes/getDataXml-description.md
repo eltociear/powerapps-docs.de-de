@@ -1,0 +1,1 @@
+Gibt eine Zeichenfolge zurück, die die XML darstellt, die zum Server gesendet wird, wenn der Datensatz gespeichert wird. Nur Daten in den Feldern, die geändert wurden, werden auf den Server festgelegt.

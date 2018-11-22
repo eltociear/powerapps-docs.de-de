@@ -1,0 +1,1 @@
+Bei [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] sind bisherige Dynamics CRM-Funktionen jetzt als Teil einer Suite intelligenter Geschäftsanwendungen enthalten. Die Apps, die den CRM-Teil der Suite bilden, werden als „Customer Engagement“ bezeichnet. Sie umfassen Sales, Customer Service, Field Service, Project Service Automation und die jeweils zugehörigen Services.

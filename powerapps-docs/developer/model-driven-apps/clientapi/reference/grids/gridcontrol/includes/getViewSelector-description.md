@@ -1,0 +1,1 @@
+Mit dieser Methode können Sie auf die [ViewSelector-Methoden](../../viewselector.md) zugreifen, die für das Rastersteuerelement verfügbar sind.

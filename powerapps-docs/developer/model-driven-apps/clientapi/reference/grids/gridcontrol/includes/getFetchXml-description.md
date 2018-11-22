@@ -1,0 +1,1 @@
+Ruft die FetchXML-Abfrage ab, die die aktuellen Daten, einschließlich der gefilterten und sortierten Daten im Rastersteuerelement darstellt. 

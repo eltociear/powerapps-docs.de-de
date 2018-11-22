@@ -1,0 +1,1 @@
+Gibt eine Sammlung von Phasen des Prozesses zurück.

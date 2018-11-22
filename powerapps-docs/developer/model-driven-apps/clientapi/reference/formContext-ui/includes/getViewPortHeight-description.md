@@ -1,0 +1,1 @@
+Ruft die Höhe des Viewports in Pixeln ab.

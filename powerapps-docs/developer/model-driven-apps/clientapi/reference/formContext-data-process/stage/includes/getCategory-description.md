@@ -1,0 +1,1 @@
+Gibt ein Objekt mit einer **getValue**-Methode zurück, die den ganzzahligen Wert der Geschäftsprozessflusskategorie zurückgibt.

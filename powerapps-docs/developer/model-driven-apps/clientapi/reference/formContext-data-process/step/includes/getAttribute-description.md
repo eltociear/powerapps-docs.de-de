@@ -1,0 +1,1 @@
+Gibt den logischen Name des Attributs zurück, die dem Schritt zugeordnet ist.

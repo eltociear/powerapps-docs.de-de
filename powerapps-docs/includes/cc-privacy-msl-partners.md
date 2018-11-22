@@ -1,0 +1,1 @@
+Wenn Sie einen Microsoft-Partner festlegen (z. B. indem Sie Microsoft Social Engagement auf eine Aufforderung oder ein Angebot eines Partners hin testen oder kaufen oder indem Sie einen Partner benennen, der Sie bei der Verwendung oder Verwaltung von Social Engagement unterstützt), macht Microsoft Ihre Informationen gemäß Ihren Vorgaben für den Partner verfügbar.

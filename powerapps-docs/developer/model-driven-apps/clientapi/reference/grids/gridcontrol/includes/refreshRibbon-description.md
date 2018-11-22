@@ -1,0 +1,1 @@
+Aktualisiert die Menübandregeln des Rastersteuerelements.

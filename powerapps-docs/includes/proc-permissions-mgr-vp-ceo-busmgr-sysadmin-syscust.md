@@ -1,0 +1,1 @@
+Sie benötigen die Sicherheitsrolle vom Typ "Manager", "Vizepräsident", "Vorstandsvorsitzender", "Systemadministrator" oder "Systemanpasser" oder entsprechende Berechtigungen.

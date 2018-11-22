@@ -1,0 +1,1 @@
+Für die Funktionen in dieser Lösung ist [!INCLUDE [pn-crm-9-0-1-online](../includes/pn-crm-9-0-1-online.md)] erforderlich.

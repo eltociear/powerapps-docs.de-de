@@ -1,0 +1,1 @@
+Lync heißt jetzt Skype for Business. Momentan finden Sie in Microsoft Dynamics 365 noch Verweise auf „Lync“, Dynamics 365 arbeitet jedoch mit Skype for Business zusammen.

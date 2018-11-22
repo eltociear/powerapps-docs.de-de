@@ -1,0 +1,1 @@
+Gibt ein **Phasen**-Objekt zurück, das die aktive Phase darstellt.

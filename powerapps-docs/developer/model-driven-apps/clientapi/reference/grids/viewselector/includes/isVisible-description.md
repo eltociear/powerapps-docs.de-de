@@ -1,0 +1,1 @@
+Gibt einem booleschen Wert zurück, der angibt, ob die Ansichtsauswahl angezeigt wird.

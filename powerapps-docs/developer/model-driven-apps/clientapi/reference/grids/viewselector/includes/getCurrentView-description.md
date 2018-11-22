@@ -1,0 +1,1 @@
+Ruft einen Verweis auf die aktuelle Ansicht ab.

@@ -1,0 +1,1 @@
+Gibt eine Regel an, die den Typ des Microsoft Dynamics 365-Formulars feststellt.

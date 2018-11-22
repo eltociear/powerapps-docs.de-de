@@ -1,0 +1,1 @@
+Gibt den logischen Namen des Datensatztyps in der Zeile zurück.

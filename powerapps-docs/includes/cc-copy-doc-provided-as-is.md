@@ -1,0 +1,1 @@
+Dieses Dokument wird "wie besehen" bereitgestellt. Die in diesem Dokument enthaltenen Angaben und Daten, einschließlich URLs und anderer Verweise auf Websites, können ohne vorherige Ankündigung geändert werden.

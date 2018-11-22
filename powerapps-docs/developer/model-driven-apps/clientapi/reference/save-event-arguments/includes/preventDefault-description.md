@@ -1,0 +1,1 @@
+Bricht das Speichern-Ereignis ab, aber alle verbleibenden Handler für das Ereignis werden weiterhin ausgeführt.

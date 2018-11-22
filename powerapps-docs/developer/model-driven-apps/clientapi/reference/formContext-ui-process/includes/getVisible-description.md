@@ -1,0 +1,1 @@
+Gibt eine Wert zurück, der angibt, ob Geschäftsprozesssteuerung sichtbar ist.
