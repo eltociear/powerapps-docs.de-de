@@ -38,7 +38,7 @@ Andere Elemente enthalten:
 
 **[Acceleration](functions/signals.md)**: liest den Beschleunigungssensor in Ihrem Gerät.
 
-**[ACOS](functions/function-trig.md)** : gibt den Arkuskosinus einer Zahl im Bogenmaß zurück.
+**[Acos](functions/function-trig.md)** : gibt den Arkuskosinus einer Zahl im Bogenmaß zurück.
 
 **[Acot](functions/function-trig.md)**: gibt den Arkuskotangens einer Zahl im Bogenmaß zurück.
 
@@ -59,7 +59,7 @@ Andere Elemente enthalten:
 ## <a name="b"></a>B
 **[Back](functions/function-navigate.md)**: zeigt den vorherigen Bildschirm an.  
 
-**[Leer](functions/function-isblank-isempty.md)**: Gibt einen *leeren* Wert zurück, der zum Einfügen eines NULL-Werts in eine Datenquelle verwendet werden kann.
+**[Blank](functions/function-isblank-isempty.md)**: Gibt einen *leeren* Wert zurück, der zum Einfügen eines NULL-Werts in eine Datenquelle verwendet werden kann.
 
 ## <a name="c"></a>C
 **[Calendar](functions/function-clock-calendar.md)**: ruft Informationen zum Kalender für das aktuelle Gebietsschema ab.
@@ -293,7 +293,7 @@ Andere Elemente enthalten:
 
 **[ShowColumns](functions/function-table-shaping.md)**: gibt eine Tabelle zurück, die nur ausgewählte Spalten enthält.
 
-**[Second](functions/function-shuffle.md)**: ordnet die Datensätze einer Tabelle nach dem Zufallsprinzip an.
+**[Shuffle](functions/function-shuffle.md)**: ordnet die Datensätze einer Tabelle nach dem Zufallsprinzip an.
 
 **[Sin](functions/function-trig.md)**: gibt den Sinus eines im Bogenmaß angegebenen Winkels zurück.
 
