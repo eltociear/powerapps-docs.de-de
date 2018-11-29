@@ -26,7 +26,10 @@ search.app:
 ---
 # <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
 
-Diese Anleitung zeigt, wuie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können dann für Primäre- und Schnellerfassungsformularen angewendet werden, und sie können in den PowerApps, Dynamics 365 Customer Engagement Web-Apps, Dynamics 365 for tablets und  Dynamics 365 for Outlook (online oder offline Modus) verwendet werden.  
+Diese Anleitung zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können dann für Primäre- und Schnellerfassungsformularen angewendet werden, und sie können in den modellgesteuerten Apps, Dynamics 365 Customer Engagement Web-Apps, Dynamics 365 for tablets und Dynamics 365 for Outlook (online oder offline Modus) verwendet werden.
+
+> [!NOTE]
+> Um eine Geschäftsregel für eine Entität zu definieren, damit diese für alle Formulare und Server angewendet wird, siehe [Geschäftsregel für eine Enität erstellen](/powerapps/maker/common-data-service/data-platform-create-business-rule).
   
  Indem Sie Bedingungen und Aktionen kombinieren können Sie folgende Aktionen mit Geschäftsregeln ausführen:  
   

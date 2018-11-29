@@ -28,9 +28,7 @@ search.app:
  Kopf- und Fußzeilen entsprechen Abschnitten, können jedoch nicht entfernt werden. Wenn Sie nichts enthalten, werden sie nicht angezeigt. 
 
 Sie können auf **Abschnitteigenschaften** über die PowerApps-Webseite zugreifen. 
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-     ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
 

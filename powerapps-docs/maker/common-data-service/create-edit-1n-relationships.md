@@ -43,7 +43,7 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 > - Erstellen Sie ein neues Suchfeld für die verknüpfte Entität. <br />Weitere Informationen: [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)
 > - Importieren Sie eine Lösung, die die Definition der Entitäsbeziehung enthält. <br />Weitere Informationen dazu finden Sie [Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md)
 > - Verwenden Sie Power-Abfrage, um neue Entitäten zu erstellen und diese mit Daten auszufüllen. <br />Weitere Informationen:  [Daten einer Entität in Common Data Service für Apps mithilfe der Power-Abfrage hinzufügen](data-platform-cds-newentity-pq.md).
-> - Ein Entwickler kann [Webdienste](../../developer/common-data-service/use-web-services.md#metadata-services) verwenden, um ein Programm zum Schreiben, um Entitätsbeziehungen zu erstellen und zu aktualisieren. <br />Weitere Informationen finden Sie unter [Anpassen von Entitätsbeziehungsmetadaten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata).
+> - Ein Entwickler kann [Metadatendienste](../../developer/common-data-service/metadata-services.md) verwenden, um ein Programm zum Schreiben, um Entitätsbeziehungen zu erstellen und zu aktualisieren. <br />Weitere Informationen finden Sie unter [Anpassen von Entitätsbeziehungsmetadaten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata).
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 

@@ -32,7 +32,7 @@ Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, e
 
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. 
 
-2. Wählen Sie **Modellgesteuert** > **Daten** > **Entitäten** > und wählen Sie dann die gewünschte Entität, z.B. die Firma-Entität. 
+2. Wählen Sie **Daten** > **Entitäten** >und wählen Sie dann die gewünschte Entität, z.B. die Firma-Entität. 
 
 3. Wählen Sie die Registerkarte **Formulare** aus und öffnen Sie das gewünschte Formular, z. B. das Hauptformular **Firma**.
 

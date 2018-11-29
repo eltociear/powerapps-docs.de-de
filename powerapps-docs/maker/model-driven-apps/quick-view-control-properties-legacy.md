@@ -27,9 +27,8 @@ Ein Steuerelement für die Schnellansicht auf einem modellgesteuerten App-Formul
 > ![Kontaktschnellansichtsformular im Firmenformular](media/quick-view-form-contact.png "Kontaktschnellansichtsformular im Firmenformular")  
 
 Sie können auf **Eigenschaften des Steuerelements für die Schnellansicht** über die PowerApps-Webseite zugreifen. 
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-     ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
 

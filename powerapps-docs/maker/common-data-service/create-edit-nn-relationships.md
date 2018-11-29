@@ -43,7 +43,7 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 > [!NOTE]
 > Sie können eine neue n: n-Entitätsbeziehung folgendermaßen auch in Ihrer Umgebung erstellen mithilfe des folgenden:
 > - Importieren Sie eine Lösung, die die Definition der Beziehung enthält. Weitere Informationen dazu finden Sie [Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md)
-> - Ein Entwickler kann [Metadatendienste](../../developer/common-data-service/use-web-services.md#metadata-services) verwenden, um ein Programm zum Schreiben, um Entitätsbeziehungen zu erstellen und zu aktualisieren. Weitere Informationen: [Entwicklerdokumentation: Entitätsbeziehungseignungsmetadaten anpassen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - Ein Entwickler kann [Metadatendienste](../../developer/common-data-service/metadata-services.md) verwenden, um ein Programm zum Schreiben, um Entitätsbeziehungen zu erstellen und zu aktualisieren. Weitere Informationen: [Entwicklerdokumentation: Entitätsbeziehungseignungsmetadaten anpassen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 

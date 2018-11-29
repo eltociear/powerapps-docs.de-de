@@ -1,11 +1,11 @@
 ---
-title: Entitäten in Common Data Service for Apps | Microsoft-Dokumentation
-description: Informationen zu Entitäten, die in Common Data Service for Apps verfügbar sind.
+title: Common Data Service für Apps Entitäten | Microsoft Docs
+description: Erfahren Sie mehr zur Nutzung von Entität in Common Data Service für Apps
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: mayadumesh
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,79 +13,79 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/19/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: f40c05c3bdab521cb1230be15cefc5dbb58eac18
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42844224"
+  - PowerApps
+  - D365CE
 ---
-# <a name="common-data-service-for-apps-entities"></a>Entitäten in Common Data Service for Apps
+<!-- 
+Was Mike Carter
+This topic was not migrated it was written for PowerApps 
 
-Die wichtigste Funktion von Common Data Service for Apps ist das Speichern von Daten. Common Data Service umfasst verschiedene grundlegende Entitäten, die die von Geschäftsanwendungen verwendeten Daten strukturieren. 
+Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entities
 
-Diese grundlegenden Entitäten werden in der Referenz [Entitäten in Common Data Service for Apps](reference/about-entity-reference.md) aufgeführt.
+-->
+
+# <a name="common-data-service-for-apps-entities"></a>Common Data Service für Apps-Entitäten
+
+Stellt Speicher für Datenin den wichtigsten Funktion des Common Data Service für Apps bereit. Common Data Service umfasst einen Basissatz von Entitäten, die die Struktur für die erfassten Daten bereitstellt, die von Geschäftsanwendungen verwendet werden. 
+
+Sie können den Basissatz der Entitäten anzeigen in [Common Data Service für Apps-Entitätsreferenz](reference/about-entity-reference.md)
 
 ## <a name="modify-entities"></a>Ändern von Entitäten
 
-Es gibt verschiedene Möglichkeiten, die Entitätsmetadaten zu ändern.
+Sie können die Entitätsmetadaten mithilfe von einer Reihe von Methoden ändern.
 
-### <a name="use-designers"></a>Verwenden von Designern
+### <a name="use-designers"></a>Designer nutzen
 
-Es gibt verschiedene Möglichkeiten, mithilfe von Designern Entitätsmetadaten zu bearbeiten.
+Es gibt verschiedene Möglichkeiten, Entitätsmetadaten mithilfe eines Designers zu bearbeiten:
 
 
 |Designer  |Beschreibung  |
 |---------|---------|
-|powerapps.com|Sie können über die Website [powerapps.com](https://web.powerapps.com/) einen Common Data Service-Dienst bearbeiten, der einer Umgebung zugeordnet ist. Dies ist der einfachste und am häufigsten verwendete Ansatz. Änderungen, die hier angewendet werden, werden vor dem Hintergrund einer nicht verwalteten Common Data Service-Standardlösung vorgenommen. <!-- TODO: Add link to topic that describes this -->|
-|Standardprojektmappen-Explorer für Common Data Service|Auf der Website [powerapps.com](https://web.powerapps.com/) können Sie auf einen weiteren Designer zugreifen, wenn Sie Common Data Service bearbeiten. Im unteren linken Bereich können Sie über die Schaltfläche **Erweitert** die Common Data Service-Standardprojektmappe im Projektmappen-Explorer öffnen. |
-|Projektmappen-Explorer für Ihre Lösung |Wenn Sie eine Lösung verteilen möchten, sollten Sie sämtliche neue Entitäten, Attribute oder Beziehungen vor dem Hintergrund der nicht verwalteten Lösung erstellen, die Sie verwenden möchten, um Ihre Lösung zu entwickeln. <br /> Weitere Informationen finden Sie unter [Create a solution publisher and solution (Erstellen eines Lösungsherausgebers und einer Lösung)](introduction-solutions.md#create-a-solution-publisher-and-solution).|
-|Im Formular-Editor|Wenn Sie ein modellgesteuertes App-Formular für eine Entität bearbeiten, können Sie auf die Schaltfläche **Neues Feld** im **Feld-Explorer** klicken. Wenn Sie ein Nachschlagefeld erstellen, erstellen Sie gleichzeitig auch eine Entitätsbeziehung, um dieses zu unterstützen.|
+|powerapps.com|Die einfachste und beste Methode, das Schema zu ändern ist es, [powerapps.com](https://web.powerapps.com/) zu verwenden, um die Common Data Service zu bearbeiten, die einer Umgebung zugeordnet sind. Änderungen, die angewendet werden, werden im Rahmen einer nicht verwalteten Common Data Service Standardlösung ausgeführt. <!-- TODO: Add link to topic that describes this -->|
+|Common Data Service Standardlösung Explorer|Es gibt einen anderen Designer von [powerapps.com](https://web.powerapps.com/), wenn Sie den Common Data Service bearbeiten. In der unteren linken Ecke öffnet die Schaltfläche **Erweitert** den Lösungsexplorer in der Standardlösung Common Data Service. |
+|Lösungsexplorer für Ihre Lösung |Wenn Sie eine Lösung verteilen, sollten Sie alle neuen Entitäten, Attribute und Beziehungen im Kontext einer nicht verwalteten Lösung erstellen, die Sie verwenden, um Ihre Lösung zu entwickeln. <br /> Weitere Informationen: [Erstellen eines Lösungsherausgebers und eine Lösung](introduction-solutions.md#create-a-solution-publisher-and-solution)|
+|Vom Formular-Editor|Wenn Sie ein Modell-angetriebenes App-Formular für eine Entität bearbeiten, können Sie auf der Schaltfläche **Neues Feld** auf **Feld-Explorer** klicken. Wenn Sie ein Suchfeld erstellen, erstellen Sie eine neue Entitätsbeziehung zur Unterstützung|
 
 ### <a name="import-a-solution"></a>Importieren einer Lösung
 
-Lösungen können Entitätsmetadaten und andere benutzerdefinierte Komponenten enthalten. Wenn Sie eine verwaltete oder nicht verwaltete Projektmappe in ihren allgemeinen Common Data Service for Apps-Mandanten importieren, werden diese Entitäten hinzugefügt oder bereits vorhandene Entitäten um die neuen Entitätsmetadaten erweitert.
+Eine Lösung kann Entitätsmetadaten und andere benutzerdefinierte Komponenten enthalten. Das Importieren einer verwalteten oder nicht verwalteten Lösung in Ihren Common Data Service für Apps Mandanten enthält die Entitäten oder erweiterten vorhandene Entitäten mit den neuen Entitätsmetadaten, die sie beinhalten.
 
-### <a name="from-a-data-source-using-power-query"></a>In einer Datenquelle unter Verwendung von Power Query
+### <a name="from-a-data-source-using-power-query"></a>Von einer Datenquelle mithilfe Power-Abfrage
 
-Sie können neue Entitäten erstellen und mithilfe von Power Query mit Daten auffüllen. Weitere Informationen finden Sie unter [Hinzufügen von Daten zu einer Entität in Common Data Service für Apps mithilfe von Power Query](../../maker/common-data-service/data-platform-cds-newentity-pq.md).
+Sie können neue Entitäten erstellen und diese mit Daten mithilfe von Power-Abfrage ausfüllen. Weitere Informationen:  [Daten einer Entität in Common Data Service für Apps mithilfe der Power-Abfrage hinzufügen](../../maker/common-data-service/data-platform-cds-newentity-pq.md).
 
-### <a name="use-metadata-services"></a>Verwenden von Metadatendiensten
+### <a name="use-metadata-services"></a>Verwenden von Metadaten-Services
 
-Die in Common Data Service zur Verfügung gestellten Webdienste umfassen Funktionen zum Erstellen, Lesen, Schreiben und Löschen von Entitätsmetadaten. Diese Dienste werden am häufigsten verwendet, um die Metadaten zu lesen, da diese Daten Ihrem Code zur Laufzeit mitteilen können, wie die Umgebung verändert wurde.
-
-Weitere Informationen finden Sie unter [Metadatendienste](use-web-services.md#metadata-services)
+Die Webdienste, die in den CDS für Apps verfügbar gemacht werden, umfassen Funktionen, um Entitätsmetadaten zu erstellen, lesen, schreiben und löschen. Diese Dienste werden am häufigsten verwendet, um die Metadatenänderung zu lesen, da diese Daten  Ihren Code zu Laufzeit informieren können, inwieweit die Umgebung angepasst wurde. Weitere Informationen: [Metadaten-Services](metadata-services.md)
 
 ## <a name="entity-metadata"></a>Entitätsmetadaten
 
-Das Datenmodell wird als Metadatenelement definiert, das in Common Data Service gespeichert ist. Diese Schemadaten werden als *Entitätsmetadaten* bezeichnet. 
+Das Datenmodell ist als Metadaten definiert, die innerhalb des Common Data Service gespeichert ist. Diese Daten über das Schema sind als *Entitätsmetadaten* bekannt. 
 
-- Die [EntityMetadata-Klasse](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata) definiert diese Daten mithilfe des Organisationsdiensts. 
-- Der [Entitätstyp EntityMetadata](/dynamics365/customer-engagement/web-api/entitymetadata) definiert diese Daten für die Web-API. 
+- [EntityMetadata-Klasse](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata) definiert die mit dem Organisationsservice. 
+- Der [EntityMetadata EntityType](/dynamics365/customer-engagement/web-api/entitymetadata) definiert das für die Web API. 
 
-Die Entitätsmetadaten enthalten die folgenden Informationen:
+Die Entitätsmetadaten umfassen die folgenden Informationen:
 
 
 |Daten  |Beschreibung  |
 |---------|---------|
-|Entitätseigenschaften|Jede Entität verfügt über ca. 100 Eigenschaften, die beschreiben, wie sie jeweils ermittelt werden und wozu sie verwendet werden können.  Weitere Informationen finden Sie unter [Entitätsmetadaten](entity-metadata.md)|
-|Attribute|Die Entitätseigenschaft `Attributes` ist eine Auflistung von Attributen. Jedes Attribut verfügt über ca. 50 Eigenschaften, die beschreiben, wie dieses ermittelt wird, welche Daten es enthält, wie es formatiert ist und wozu es verwendet werden kann. Weitere Informationen finden Sie unter [Attributmetadaten](entity-attribute-metadata.md).|
-|Beziehungen|Bei drei der Entitätseigenschaften handelt es sich um Auflistungen von Beziehungen zwischen Entitäten. Diese Auflistungen enthalten verschiedene Beziehungstypen: n:n, n:1 und 1:n. Weitere Informationen finden Sie unter [Entity Relationships Metadata (Metadaten von Entitätsbeziehungen)](entity-relationship-metadata.md)|
-|Berechtigungen|Bei einer der Entitätseigenschaften handelt es sich um eine Auflistung von bis zu acht Berechtigungen, über die die verschiedenen Datenvorgänge ermittelt werden, die für diese Entität mit einem eindeutigen Bezeichner ausgeführt werden können, der dem jeweiligen Vorgang zugeordnet ist. Dabei geht es z.B. um die folgenden Vorgänge: *Append*, *AppendTo*, *Assign*, *Create*, *Delete*, *Read*, *Share* und *Write*.|
-|Schlüssel|Standardmäßig verfügt jede Entität über ein GUID-Attribut. Bei der `Keys`-Eigenschaft handelt es sich um eine leere Auflistung. Sie können alternative Schlüssel zu einer Entität hinzufügen. Weitere Informationen finden Sie unter [Entitätsschlüssel](entity-metadata.md#entity-keys).|
+|Entitätseigenschaften|Jede Entität besitzt fast 100 Eigenschaften, die beschreiben, wie es identifiziert wird und was mit ihm abgeschlossen werden kann.  Weitere Informationen finden Sie unter [Entitätsmetadaten](entity-metadata.md).|
+|Attribute|Die Entitäts `Attributes` eigenschaft ist eine Sammlung von Attributen. Jedes Attribut enthält ungefähr 50 Eigenschaften, die beschreiben, wie es erkannt wird, den Datentyp, den es enthält, wie es formatiert wird und was mit ihm abgeschlossen werden kann. Weitere Informationen: [Metadaten-Attribut](entity-attribute-metadata.md)|
+|Beziehungen|Drei der Entitätseigenschaften sind Sammlungen von Beziehungen zwischen Entitäten. Diese Sammlungen enthalten verschiedene Arten von Beziehungen: M: n, n: 1 und 1: n-. Weitere Informationen: [Entitätsbeziehungen Metadaten](entity-relationship-metadata.md)|
+|Rechte|Eine der Entitätseigenschaften ist eine Sammlung zwischen 0 und 8 Rechten, die die Arten von Datenenvorgängen identifizieren, die auf der betreffenden Entität mit einem eindeutigen Bezeichner ausgeführt werden, die jedem zugeordnet sind. Diese umfassen Vorgänge: *Anfügen*, *AppendTo*, *Zuweisen*, *Erstellen*, *Löschen*, *Lesen*, *Freigeben* und *Schreiben*.|
+|Schlüssel|Standardmäßig verfügt jede Entität über ein einzelnes GUID Attribut (Globally Unique Identifier) und die `Keys`-Eigenschaft ist eine leere Sammlung. Sie können Alternativschlüssel einer Entität hinzufügen. Weitere Informationen:[Entitätsschlüssel](entity-metadata.md#entity-keys)|
 
 > [!TIP]
-> Wenn Sie einen Überblick über die Entitätsmetadaten im System haben, kann Ihnen das helfen, wenn Sie verstehen möchten, wie Common Data Service funktioniert. Viele der Eigenschaften steuern auch die Funktionen von Entitäten in modellgesteuerten Apps. Die Designer, mit denen Sie Metadaten bearbeiten können, können nicht alle Informationen anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App installieren, die als Metadata Browser bezeichnet wird und über die Sie alle ausgeblendeten Eigenschaften von Entitäten und Metadaten, die im System gefunden werden, abrufen können. Weitere Informationen finden Sie unter [Durchsuchen der Metadaten für die Organisation](/dynamics365/customer-engagement/developer/browse-your-metadata).
+> Ein gutes Verständnis der Entitäts-Metadaten im System hilft dabei zu verstehen, wie die Common Data Service funktioniert. Viele der Eigenschaften steuern auch, welche Entitäten Sie in Modell-angetriebenen Apps vornehmen können. Die Designer, die zum Bearbeiten der Metadaten verfügbar sind, können nicht alle Details anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App mit dem Namen Browser für Metadaten installieren, die es Ihnen ermöglicht, alle ausgeblendeten Entitäten- und Metadateneigenschaften anzuzeigen, die im System vorhanden sind. Weitere Informationen: [Durchsuchen der Metadaten für Ihre Organisation](/dynamics365/customer-engagement/developer/browse-your-metadata).
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service for Apps Developer Overview (Übersicht für Entwickler: Common Data Service für Apps)](overview.md)
+[Common Data Service for Apps-Entwicklerübersicht](overview.md)
 
 

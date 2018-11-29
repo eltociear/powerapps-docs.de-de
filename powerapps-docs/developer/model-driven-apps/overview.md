@@ -1,11 +1,9 @@
 ---
-title: 'Übersicht für Entwickler: Modellgesteuerte Apps | Microsoft-Dokumentation'
-description: Erfahren Sie, wie Entwickler zu modellgesteuerten Apps beitragen können.
+title: Entwicklerübersicht zu modellgestützten Apps in PowerApps | Microsoft Docs
+description: 'Erfahren Sie, wie Entwickler einen Wertzuwachs modellgestützter Apps bewirken können; Lernprogramm; Einführung für Entwickler modellgestützter Apps in PowerApps'
 services: ''
-suite: powerapps
-documentationcenter: na
 author: JimDaly
-manager: faisalmo
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,60 +11,37 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/17/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 39fe83cdb059e0f1df634b9933f4a2f4251bca7b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42852412"
+  - PowerApps
+  - D365CE
 ---
-# <a name="model-driven-apps-developer-overview"></a>Übersicht für Entwickler: Modellgesteuerte Apps
 
-PowerApps bietet Benutzern, Unternehmen, Partnern, unabhängigen Softwareherstellern und Systemintegratoren eine leistungsstarke Plattform für das Erstellen von branchenspezifischen Apps. Modellgesteuerte Apps, die mit Common Data Service für Apps erstellt wurden, wurden in diesem Release von PowerApps neu hinzugefügt. Common Data Service für Apps enthält nun die Kernfunktionen der Dynamics 365 Customer Engagement-Anwendungen. Mit modellgesteuerten Apps können Sie Apps erstellen, die dieselben Erweiterungsfunktionen wie diese Anwendungen verwenden.
+# <a name="model-driven-apps-developer-guide"></a>Entwicklerhandbuch zu modellgestützten Apps
 
-Modellgesteuerte Apps sind in erster Linie ein Ansatz zum Entwickeln von Apps ohne oder nur mit wenigen Codekomponenten. Entwickler können durch Erweiterungen zu der Anwendung beitragen. Bevor Sie mit dem Schreiben von Code beginnen, sollten Sie lernen, wie Sie eine modellgesteuerte App erstellen, und welche Optionen ohne Code angewendet werden können. 
+PowerApps bietet Benutzern, Unternehmen, Partnern, unabhängigen Softwareherstellern (Independent Software Vendors, ISVs) und Systemintegratoren (SIs) eine leistungsfähige Plattform zum Erstellen von Unternehmens-Apps. Die neue Ergänzung zu PowerApps in dieser Version sind modellgestützte Apps, die mit dem neuen Common Data Service for Apps erstellt werden. Common Data Service for Apps enthält nun die Kernfunktionalität der Anwendungen. Mit modellgestützten Apps können Sie Apps erstellen, die die gleichen Erweiterbarkeitsfunktionen wie diese Anwendungen nutzen.
 
-## <a name="get-started"></a>Erste Schritte
-Wenn Sie bereits Erfahrung mit den Dynamics 365 Customer Engagement-Apps haben, können Sie diese Erfahrungen beim Erstellen von modellgesteuerten Apps nutzen. Es stehen zwar neue Designer zur Verfügung, im Allgemeinen sind deren Konzepte jedoch gleich.
+Modellgestützte Apps sind in erster Linie ein Ansatz der App-Entwicklung, der sich auf codefreie (No-Code) oder codearme (Low-Code) Komponenten konzentriert. Der Wertzuwachs, den Entwickler bereitstellen können, besteht in der Erweiterung der Anwendung. Bevor Sie mit dem Schreiben von Code beginnen, beginnen Sie mit [Informationen zum Entwicklen von modellgestützten Apps](/powerapps/maker/model-driven-apps/model-driven-app-components) und welche Optionen ohne Code angewendet werden können. 
 
-> [!NOTE]
-> Modellgesteuerte Apps sind mit Common Data Service für Apps verbunden. Informationen darüber, wie Entwickler auf Anwendungsebene einen Beitrag leisten können, finden Sie unter [Common Data Service for Apps Developer Overview (Übersicht für Entwickler: Common Data Service für Apps)](../common-data-service/overview.md).
-> Der Inhalt dieses Abschnitts befasst sich ausschließlich mit Erweiterungen, die von Entwicklern angewendet werden können und sich auf die Benutzerfreundlichkeit von modellgesteuerten Apps beziehen. 
-
-Wenn Sie noch nicht mit Dynamics 365 Customer Engagement-Anwendungen vertraut sind, finden Sie in den Themen in diesem Abschnitt eine allgemeine Übersicht über die wichtigen Konzepte, die beim Einstieg in die Arbeit mit modellgesteuerten Apps helfen. 
+Wenn Sie bereits mit Dynamics 365 Customer Engagement-Apps vertraut sind, werden Sie feststellen, dass Sie sich diese Erfahrung zu Nutze machen können, um modellgestützte Apps zu entwickeln. Es sind einige neue Designer für Sie verfügbar, die Konzepte sind im Allgemeinen aber identisch.
 
 > [!NOTE]
-> Da Common Data Service für Apps und Dynamics 365 Customer Engagement dieselbe Plattform verwenden, finden Sie ausführlichere Informationen für Entwickler im [Entwicklerhandbuch zu Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/developer-guide). In diesen Artikel erhalten Sie eine Übersicht mit Links zum Entwicklerhandbuch und anderen Handbüchern, die weitere Informationen enthalten.
+> Modellgestützte Apps stellen eine Verbindung mit Common Data Service for Apps her. Weitere Informationen, wie Entwickler einen Wertzuwachs auf Servicelevel bewirken, finden Sie unter [Entwicklerübersicht zu Common Data Service for Apps](../common-data-service/overview.md).
+> Der Inhalt in diesem Abschnitt bezieht sich nur auf Erweiterungen, die Entwickler ausführen können, die auf die Erfahrung von Benutzern modellgestützter Apps zutreffen. 
 
+Wenn Sie noch keine Erfahrung mit Common Data Service for Apps-Anwendungen haben, bieten die Tehmen in diesem Abschnitt eine allgemeine Übersicht über die wichtigen Konzepte, um Entwicklern den Einstieg in die Arbeit mit modellgestützten Apps zu erleichtern. 
 
-## <a name="community-tools-for-model-driven-apps"></a>Communitytools für modellgesteuerte Apps
+> [!div class="nextstepaction"]
+> [Erste Schritte](supported-customizations.md)
 
-Die Dynamics 365-Community erstellt Tools. Viele der beliebtesten Tools werden über [XrmToolBox](https://www.xrmtoolbox.com/) veröffentlicht. XrmToolBox ist eine Windows-Anwendung, die eine Verbindung mit Common Data Service für Apps herstellt, um Tools bereitzustellen, mit denen die Anpassungs-, Konfigurations- und Vorgangsaufgaben erleichtert werden. Die Anwendung enthält mehr als 30 Plug-Ins, um Verwaltungs-, Anpassungs- oder Konfigurationsaufgaben zu vereinfachen und zu beschleunigen.
+### <a name="related-topics"></a>Verwandte Themen
 
-Im Folgenden finden Sie eine Liste mit ausgewählten Communitytools, die über XrmToolBox verteilt wurden und die Sie für die Arbeit mit modellgesteuerten Apps verwenden können.
+[Grundlegendes zu Komponenten modellgestützter Apps](/powerapps/maker/model-driven-apps/model-driven-app-components)<br/>
+[Erstellen Ihrer ersten modellgestützten App](/powerapps/maker/model-driven-apps/build-first-model-driven-app)
 
-|Tool  |Beschreibung  |
-|---------|---------|
-|[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/)|Exportieren und Importieren von Übersetzungen mit kontextbasierten Informationen|
-|[Export to Excel](https://www.xrmtoolbox.com/plugins/Ryr.XrmToolBox.ExportToExcel/)|Einfaches Exportieren von Datensätzen aus der ausgewählten Ansicht oder über FetchXML in Excel|
-|[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)|Verwalten von benutzerdefinierten Entitätssymbolen in nur einem Bildschirm|
-|[Ribbon Workbench 2016](https://www.xrmtoolbox.com/plugins/RibbonWorkbench2016/)|Bearbeiten des Dynamics CRM-Menübands oder der Befehlsleiste innerhalb von XrmToolBox|
-|[View Designer](https://www.xrmtoolbox.com/plugins/Cinteros.XrmToolBox.ViewDesigner/)|Einfache Benutzeroberfläche zum Entwerfen von Ansichtslayouts und Ändern von Abfragen mithilfe von FetchXML Builder|
-|[View Layout Replicator](https://www.xrmtoolbox.com/plugins/MsCrmTools.ViewLayoutReplicator/)|Anwenden des gleichen Layouts auf mehrere Ansichten der gleichen Entität innerhalb eines einzelnen Vorgangs|
-|[WebResources Manager](https://www.xrmtoolbox.com/plugins/MsCrmTools.WebResourcesManager/)|Einfaches Verwalten von Webressourcen|
+### <a name="see-also"></a>Siehe auch
 
-Ein weiteres nützliches Tool, das nicht über XrmToolBox veröffentlicht wird, heißt [CRM REST Builder](https://github.com/jlattimer/CRMRESTBuilder) von Jason Lattimer. Dieses Tool erstellt JavaScript-Code für die Verwendung mit der Web-API.
-
-> [!NOTE]
-> Von der Community erstellte Tools werden nicht von Microsoft unterstützt. Wenden Sie sich an den Herausgeber, wenn Sie Probleme mit oder Fragen zu einem Tool haben.
-
-
-
-
+[PowerApps für Entwickler](/powerapps/#pivot=home&panel=developer)

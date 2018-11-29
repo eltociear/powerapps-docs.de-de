@@ -17,8 +17,12 @@ search.app:
 
 # <a name="create-a-business-rule-for-an-entity"></a>Geschäftsregel für eine Entität erstellen
 
-Sie können Geschäftsregeln und Empfehlungen erstellen, um Logik und Validierungen anzuwenden, ohne -Code zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. 
-  
+Sie können Geschäftsregeln und Empfehlungen erstellen, um Logik und Validierungen anzuwenden, ohne -Code zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten.
+
+> [!IMPORTANT]
+> Die für eine Entität definierten Geschäftsregeln gelten sowohl für *Canvas-Apps* als auch für *modellgesteuerte Apps*, wenn die Entität in der App verwendet wird. Nicht alle Geschäftsregelaktionen sind derzeit auf Canvas-Anwendungen verfügbar. Weitere Informationen: [Unterschiede zwischen Canvas und modellgesteuerten Apps](#differences-between-canvas-and-model-driven-apps)<br/><br/>
+> Um eine Geschäftsregel zu definieren, die für ein Formular in einer modellgesteuerten Anwendung gilt, siehe [Erstellen von Geschäftsregeln, um Logik in einem Modell-getriebenen App-Formular anzuwenden](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md) erstellen.
+
 Indem Sie Bedingungen und Aktionen kombinieren können Sie folgende Aktionen mit Geschäftsregeln ausführen:  
   
 * Feldwerte festlegen  
@@ -31,7 +35,7 @@ Indem Sie Bedingungen und Aktionen kombinieren können Sie folgende Aktionen mit
   
 ## <a name="differences-between-canvas-and-model-driven-apps"></a>Unterschiede zwischen Canvas und modellgesteuerten Apps
 
-Modellgesteuerte Apps können alle Aktionen verwenden, die in Geschäftsregeln verfügbar sind, jedoch sind derzeit nicht alle Geschäftsregelaktionen bei Canvas-Apps verfügbar. Die folgenden Aktionen sind **nicht** für Canvas-Apps verfügbar:
+Modellgesteuerte Apps können alle Aktionen verwenden, die in Geschäftsregeln verfügbar sind, jedoch sind derzeit nicht alle Geschäftsregelaktionen für Canvas-Apps verfügbar. Die folgenden Aktionen sind **nicht** für Canvas-Apps verfügbar:
 
 * Ein- oder Ausblenden von Feldern  
 * Aktivieren oder Deaktivieren von Feldern  

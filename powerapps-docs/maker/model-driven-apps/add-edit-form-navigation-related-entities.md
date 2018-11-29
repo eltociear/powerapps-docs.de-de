@@ -27,10 +27,9 @@ search.app:
 
 In diesem Thema nutzen Sie das Formular Navigationsbereich, das verwendet wird, um verknüpfte Entitäten hinzufügen. Wenn ein App-Benutzer in einem Datensatz auf einen dieser Links klickt, wird die zugeordnete Ansicht für die Entität angezeigt.   
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-    ![Modellgesteuerter Entwurfsmodus](../model-driven-apps/media/model-driven-switch.png)
-
+  
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierter Geschäftslogik durch Flows mit Flow| MicrosoftDocs
+title: Wenden Sie angepasste Geschäftslogik mit Geschäftsregeln und Flüssen in Modell-angetriebene Apps an | MicrosoftDocs
 description: 'Informationen über verschiedene Typen der Geschäftslogik, die Sie in Ihrer App verwenden können'
 ms.custom: ''
 ms.date: 08/02/2018
@@ -23,9 +23,27 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-custom-business-logic-with-flows"></a>Benutzerdefinierte Geschäftslogik mit Flows erstellen
+# <a name="apply-custom-business-logic-with-business-rules-and-flows-in-model-driven-apps"></a>Wenden Sie angepasste Geschäftslogik mit Geschäftsregeln und Flüssen in Modell-angetriebene Apps an
 
-Die Definition und Durchsetzung konsistenter Geschäftsprozesse ist eine der wichtigsten Gründe für die Verwendung von modellgesteuerten Apps. Konsistenten Prozesse helfen dabei, sicherzustellen, das sich die Benutzer einer PowerApps-App auf ihre Arbeit konzentrieren können und nicht daran denken müssen, eine Reihe manueller Schritte ausführen zu müssen. Flows können einfach oder komplex sein und sich im Laufe der Zeit ändern.  
+Die Definition und Durchsetzung konsistenter Geschäftsprozesse ist eine der wichtigsten Gründe für die Verwendung von modellgesteuerten Apps. Konsistente Prozesse helfen dabei, sicherzustellen, das sich die Benutzer einer modellgesteuerten App auf ihre Arbeit konzentrieren können und nicht daran denken müssen, eine Reihe manueller Schritte ausführen zu müssen. 
+
+## <a name="business-rules"></a>Geschäftsregeln
+
+Unternehmensregeln bieten eine einfache Schnittstelle, um schnell sich ändernde und häufig verwendeten Regeln zu implementieren und zu verwalten. Der *Umfang* einer Geschäftsregel definiert, wo die Geschäftsregel ausgeführt wird:
+
+|||  
+|-|-|  
+|**Wenn Sie dieses Element auswählen...**|**Ist der Bereich...**|  
+|**Entität**|Alle Formulare und Server|  
+|**Alle Formulare**|Alle Formulare|  
+|Bestimmtes Formular (z. B. **Firma**-Formular)|Nur dieses Formular| 
+
+Weitere Informationen zum Festlegen der Unternehmensregeln für ein Formular in einer Modell-angetriebenen App finden Sie unter [Erstellen von Geschäftsregeln um Lokik in einem Modell-angetriebenen App-Formular anzuwenden.](create-business-rules-recommendations-apply-logic-form.md)
+
+> [!NOTE]
+> Um eine Geschäftsregel für eine Entität zu definieren, damit diese auf der Serverebene für *Canvas-Apps* und *Modell-angetriebene Apps* angezeigt wird, gehen Sie zu[Geschäftsregel für eine Enität erstellen](/powerapps/maker/common-data-service/data-platform-create-business-rule).
+
+## <a name="flows"></a>Flows  
   
 Microsoft Flow umfasst einige Prozesstypen, die jeweils für einen anderen Zweck bestimmt sind:  
 
@@ -37,7 +55,12 @@ Microsoft Flow umfasst einige Prozesstypen, die jeweils für einen anderen Zweck
   
 -   Geschäftsprozessflows.  Stellen Sie sicher, dass die Mitarbeiter die Daten konsistent eingeben und jedes Mal, wenn sie in einer App arbeiten, die gleichen Schritte ausführen, indem sie einen Geschäftsprozessflow anlegen. Weitere Informationen: [Übersicht über Geschäftsprozessflüsse](/flow/business-process-flows-overview)
 
--   Common Data Service for Apps. Dynamics 365 Customer Engagement Anpasser ist möglicherweise mit dem klassischen Common Data Service für App-Prozesse vertraut, welches Workflows und Aktionen sind. Weitere Informationen: [Verwendung von Workflowprozessen](/flow/workflow-processes) und [Aktionsübersicht](/flow/actions)
+-   Workflow und Aktionen. Dynamics 365 Customer Engagement Anpasser ist möglicherweise mit dem klassischen CDS for Apps Prozesse vertraut, welches Workflows und Aktionen sind. Weitere Informationen: [Verwendung von Workflowprozessen](/flow/workflow-processes) und [Aktionsübersicht](/flow/actions)
   
-## <a name="see-also"></a>Siehe auch  
-[Tutorial: Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars](create-business-rules-recommendations-apply-logic-form.md)
+## <a name="next-step"></a>Nächster Schritt
+
+[Erstellen von Geschäftsregeln, um Logik in einem Modell-getriebenen App-Formular anzuwenden](create-business-rules-recommendations-apply-logic-form.md)
+
+### <a name="see-also"></a>Siehe auch
+
+[Beantragen Sie Geschäftslogik mit Common Data Service for Apps](../common-data-service/cds-processes.md)

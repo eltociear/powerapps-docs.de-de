@@ -49,7 +49,7 @@ Da die Umgebung, in der die Pet Grooming-Datensätze verwaltet werden, auch für
 Weitere Informationen zu Zugriffs- und Umfangsberechtigungen finden Sie unter [Sicherheitsrollen](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles).
 
 ## <a name="create-a-custom-security-role"></a>Erstellen einer benutzerdefinierten Sicherheitsrolle
-1. Wählen Sie auf der Seite [!INCLUDE [powerapps](../../includes/powerapps.md)] **Modellgesteuert** > **Apps** > **...**> **Link freigeben**.
+1. Wählen Sie auf der Seite [!INCLUDE [powerapps](../../includes/powerapps.md)] **Apps** > **…**> **Link freigeben**.
 2. Wählen Sie im Dialogfeld **Diese App freigeben** unter **Eine Sicherheitsrolle erstellen** Option **Sicherheitseinstellung** aus.
 3. Wählen Sie auf der Seite **Einstellungen** die Option **Neu** aus.  
 

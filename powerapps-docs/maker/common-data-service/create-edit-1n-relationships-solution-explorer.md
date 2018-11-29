@@ -2,7 +2,7 @@
 title: 'Erstellen oder Bearbeiten von 1: N (1: n- oder n): n: 1-) Entitätsbeziehungen (1 mithilfe des Lösungs-Explorers | MicrosoftDocs'
 description: 'Erstellen oder Bearbeiten von 1: N oder n: n Entitätsbeziehungen 1 mithilfe des PowerApps-Lösungs-Explorers'
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/28/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''

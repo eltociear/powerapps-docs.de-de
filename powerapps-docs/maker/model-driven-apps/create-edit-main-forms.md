@@ -35,9 +35,8 @@ Stellen Sie sicher, dass Sie über die Sicherheitsrolle „Systemadministrator�
 
 ## <a name="how-to-create-or-edit-a-main-form"></a>So erstellen oder bearbeiten Sie ein Hauptformular
   
-1.   Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.   Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-     ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
 
 > [!IMPORTANT]
 > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).   

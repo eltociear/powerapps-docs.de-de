@@ -33,7 +33,7 @@ Virtuelle Entitäten bestehen aus drei Hauptkomponenten, einem *Datenanbieter*, 
   
 CDS for Apps beinhaltet einen OData-Datenanbieter, den Sie verwenden können, um eine Verbindung mit einem OData v4-Webservice einzurichten, der auf die externen Daten zugreift. 
   
-Alternativ können Entwickler ihre eigenen Datenanbieter erstellen. Datenanbieter werden in einer Umgebung als Lösung installiert. Weitere Informationen: [Entwicklerdokumentation: Erste Schritte mit virtuellen Entitäten fest](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)
+Alternativ können Entwickler ihre eigenen Datenanbieter erstellen. Datenanbieter werden in einer Umgebung als Lösung installiert. Weitere Informationen: [Entwicklerdokumentation: Erste Schritte mit virtuellen Entitäten fest](../../developer/common-data-service/virtual-entities/get-started-ve.md)
   
  ![Diagramm einer virtuellen Entität](media/virtual-entity-diagram.png "Diagramm einer virtuellen Entität")  
   

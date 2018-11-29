@@ -157,17 +157,15 @@ Im folgenden Verfahren werden die Schritte zum Aktivieren der Sicherheitsrollen 
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Konfigurieren Sie ein interaktives Dashboard mit mehreren Streams mithilfe des Layouts mit 4 Spalten.  
  
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+  
+2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
 
-2.  Wählen Sie **Modellgesteuert** (unten links) aus.  
+3.  Wählen Sie die Registerkarte **Dashboards** und anschließend auf der Symbolleiste die Option **Dashboard hinzufügen** aus.  
   
-3.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
-
-4.  Wählen Sie die Registerkarte **Dashboards** und anschließend auf der Symbolleiste die Option **Dashboard hinzufügen** aus.  
+4.  Wählen Sie das Layout aus, entweder mit einer Spaltenbreite von 2, 3 oder 4.  
   
-5.  Wählen Sie das Layout aus, entweder mit einer Spaltenbreite von 2, 3 oder 4.  
-  
-6.  Wenn das Dashboardformular geöffnet wird, geben Sie die Filterungsinformationen oben im Formular ein, wie hier beschrieben.  
+5.  Wenn das Dashboardformular geöffnet wird, geben Sie die Filterungsinformationen oben im Formular ein, wie hier beschrieben.  
  
  > [!div class="mx-imgBorder"] 
  > ![Visuelle Filter hinzufügen](../model-driven-apps/media/interactive-dashboards-add-visual-filters.png "Visuelle Filter hinzufügen")  
@@ -220,7 +218,7 @@ Im folgenden Verfahren werden die Schritte zum Aktivieren der Sicherheitsrollen 
   
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.   
   
-2. Wählen Sie **Modellgesteuert** (unten links), **Daten** > **Entitäten** > die gewünschte Entität aus. Wählen Sie auf die Registerkarte **Dashboards** aus.  
+2. Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. Wählen Sie auf die Registerkarte **Dashboards** aus.  
   
      -ODER-  
    
@@ -241,15 +239,13 @@ Im folgenden Verfahren werden die Schritte zum Aktivieren der Sicherheitsrollen 
   
 1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-2.  Wählen Sie **Modellgesteuert** (unten links) aus.  
-  
-3.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
+2.  Wählen Sie **Daten** > **Entitäten** > die gewünschte Entität aus. 
 
-4.  Wählen Sie die Registerkarte **Dashboards** und anschließend auf der Symbolleiste die Option **Dashboard hinzufügen** aus.  
+3.  Wählen Sie die Registerkarte **Dashboards** und anschließend auf der Symbolleiste die Option **Dashboard hinzufügen** aus.  
   
-5.  Wählen Sie das Layout aus, entweder mit einer Spaltenbreite von 2, 3 oder 4.    
+4.  Wählen Sie das Layout aus, entweder mit einer Spaltenbreite von 2, 3 oder 4.    
   
-6.  Wenn das Dashboardformular geöffnet wird, wird für **Filternentitäten** die Entität vorgeeinstellt, für die Sie das Dashboard erstellen. Die **Entitätsansicht** Dropdownliste enthält die verfügbaren Ansichten für die Entität. Wählen Sie die Ansicht aus und füllen Sie restlichen erforderlichen Informationen auf der Seite aus.  
+5.  Wenn das Dashboardformular geöffnet wird, wird für **Filternentitäten** die Entität vorgeeinstellt, für die Sie das Dashboard erstellen. Die **Entitätsansicht** Dropdownliste enthält die verfügbaren Ansichten für die Entität. Wählen Sie die Ansicht aus und füllen Sie restlichen erforderlichen Informationen auf der Seite aus.  
   
  Der Rest des Setups ähnelt sehr der Einrichtung des Streamübersichts-Homepage-Dashboards, die im vorherigen Abschnitt beschrieben wurde.  
   

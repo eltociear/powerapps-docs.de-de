@@ -57,9 +57,7 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
 > [!NOTE]
 >  Die automatische Speicherung wird für das Formular deaktiviert, die Daten werden aber weiterhin gespeichert, wenn Sie die ![Schaltfläche "Automatisches Speichern"](media/auto-save-icon.png "Schaltfläche \"Automatisches Speichern\"") in der rechten unteren Ecke auswählen. Wenn Sie versuchen, von einem Formular wegzunavigieren oder ein Formular zu schließen, in dem Daten geändert wurden, werden Sie aufgefordert, die Änderungen zu speichern, bevor Sie dies tun können.  
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-    ![Modellgesteuerter Entwurfsmodus](../model-driven-apps/media/model-driven-switch.png)
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
   

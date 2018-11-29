@@ -2,7 +2,7 @@
 title: Veröffentlichen Sie Änderungen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Änderungen veröffentlicht werden, die an einer App vorgenommen wurden'
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -30,7 +30,13 @@ search.app:
  
 ## <a name="publish-your-customizations"></a>Veröffentlichen Ihrer Anpassungen
 
-- Wählen Sie im [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer) die Option **Alle Anpassungen veröffentlichen** aus.  
+1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
+
+2.  Wählen Sie die Lösung aus, die Sie öffentlichen möchten, um sie zu öffnen.
+
+3.  Wählen Sie in der Liste von Befehlen **Alle Anpassungen veröffentlichen** aus.  
+
+![Veröffentlichen aller Anpassungen](media/publish-all-customizations.PNG "Veröffentlichen aller Anpassungen")  
   
 > [!IMPORTANT]
 >  Das Vorbereiten von Anpassungen nimmt möglicherweise einige Zeit in Anspruch. Wenn Sie eine Mitteilung sehen, dass die Browserseite nicht mehr reagiert, warten Sie darauf, dass diese wieder reagiert und schießen Sie sie nicht.  

@@ -1,11 +1,11 @@
 ---
-title: Entitätsbeziehungsmetadaten | Microsoft-Dokumentation
-description: Erfahren Sie mehr über die Entitätsbeziehungsmetadaten, die in Common Data Service für Apps verwendet werden.
+title: Entitätsbeziehungsmetadaten | Microsoft Docs
+description: Erfahren Sie mehr zur Entitätsbeziehungs von Metadaten im Common Data Service für Apps
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: mayadumesh
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,58 +13,45 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/12/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: ea59e1eea1c0a85c2de1f2d654c10ed687ffe858
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863515"
+  - PowerApps
+  - D365CE
 ---
-# <a name="entity-relationship-metadata"></a>Entitätsbeziehungsmetadaten
 
-Wenn man den Projektmappen-Explorer oder die drei Auflistungen in `EntityMetadata` betrachtet, könnte man annehmen, dass es drei Typen von Entitätsbeziehungen gibt. Wie in der folgenden Tabelle dargestellt, sind es allerdings nur zwei.
+# <a name="entity-relationship-metadata"></a>Entitätsbeziehung von Metadaten
+
+Wenn Sie sich den Lösungsexplorer oder die drei Beziehungssammlungen in er `EntityMetadata` ansehen, denken Sie vielleicht, dass es drei Arten von Entitätsbeziehungen gibt. Tatsächlich sind es nur zwei, wie in der nachfolgenden Tabelle gezeigt wird.
 
 |Beziehungstyp|Beschreibung|
 |--|--|
-|1:n<br />[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)|Eine Entitätsbeziehung, bei der ein Entitätseintrag zur **primären Entität** vielen anderen Einträgen zur **verknüpften Entität** zugewiesen werden kann, da auf der verknüpften Entität ein Nachschlagefeld verfügbar ist.<br />Wenn Sie einen Eintrag zu einer primären Entität abrufen, wird eine Liste der Einträge zu der verknüpften Entität angezeigt, die dieser zugewiesen sind.|
-|m:n<br />[ManyToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.manytomanyrelationshipmetadata)|Eine Entitätsbeziehung, die von einer bestimmten *Entitätsbeziehung* abhängig ist (manchmal als *überschneidende* Entität bezeichnet), damit mehrere Einträge für eine Entität mehreren Einträgen für eine andere Entität zugeordnet werden können.<br />Wenn Sie die Einträge zu einer beliebigen Entität in einer m:n-Beziehung abrufen, wird eine Liste der Einträge zu der anderen Entität angezeigt, die dieser zugeordnet sind.|
+|Eine zu Vielen<br />[OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)|Eine Entitätsbeziehung, bei der ein Datensatz für die **Primäre Entität** mit mehreren anderen **Verknüpften Entitäts**-Datensätzen durch ein Suchfeld in der verknüpften Entität verknüpft werden kann.<br />Wenn Sie einen Datensatz der primären Entität anzeigen, sehen Sie eine Liste der verknüpften Datensätze, die dieser Entität zugeordnet sind.|
+|Viele zu Viele<br />[ManyToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.manytomanyrelationshipmetadata)|Eine Entitätsbeziehung, die von einer speziellen *Beziehungsentität* abhängig ist, oft als *Überschneidungs*entität bezeichnet, so dass mehrere Datensätze einer Entität mit mehreren Datensätzen einer anderen Entität verknüpft werden können.<br />Wenn Datensätze von verschiedenen Entitäten in einer N:N-Beziehung angezeigt werden, können Sie eine Liste aller Datensätze der anderen Entität anzeigen, die damit verknüpft sind.|
 
-Die `ManyToOneRelationships`-Auflistung von `EntityMetadata` enthält [OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)-Typen. 1:n-Beziehungen bestehen zwischen Entitäten und verweisen entweder als *primäre Entitäten* oder als *verknüpfte Entitäten* auf die einzelnen Entitäten. Die verknüpfte Entität, die manchmal als *untergeordnete Entität* bezeichnet wird, verfügt über ein Suchattribut, über das ein Verweis auf einen Eintrag aus der primären Entität gespeichert werden kann, die manchmal als *übergeordnete Entität* bezeichnet wird. Aus der Sicht der verknüpften Entität ist eine n:1-Beziehung nur eine 1:n-Beziehung.
+Eine `EntityMetadata` `ManyToOneRelationships` Sammlung enthält [OneToManyRelationshipMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.onetomanyrelationshipmetadata)-Typen. 1:n-Beziehungen bestehen zwischen Entitäten und verweisen auf jede Entität entweder als *Primäre Entität* or *Verknüpfte Entität*. Die verknüpfte Entität, oft als *untergeordnete* Entität bezeichnet, verfügt über ein Suchattribut, in dem das Speichern eines Verweises zu einem Datensatz aus der primären Entität, oft als *übergeordnete* Entität bezeichnet, möglich ist. Eine n: 1-Beziehung ist nur die untergeordnete Perspektive einer 1: n-Beziehung von der verknüpften Entität betrachtet.
 
 > [!NOTE]
-> Verknüpfte Entitäten werden zwar manchmal als *untergeordnete Entitäten* bezeichnet, Sie sollten sie aber nicht mit [untergeordneten Entitäten](entity-metadata.md#child-entities) verwechseln, die sich darauf beziehen, wie Sicherheit auf verknüpfte Entitäten angewendet wird.
+> Die verknüpfte Entitäten werden in *untergeordnete Entitäten* angezeigt, verwechseln Sie diese nicht mit [Untergeordnete Entitäten](entity-metadata.md#child-entities), die sich darauf bezieht, wie die  Sicherheit zu verknüpften Entitäten angewendet werden.
 
-Weitere Informationen finden Sie unter:
-- [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](/dynamics365/customer-engagement/customize/create-edit-entity-relationships)
-- [Anpassen von Entitätsbeziehungsmetadaten](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+Weitere Informationen: [Erstellen von Beziehungen zwischen Entitäten](../../maker/common-data-service/data-platform-entity-lookup.md)
 
-## <a name="cascade-configuration"></a>Weitergeben von Konfigurationen
+## <a name="cascade-configuration"></a>Kaskadierende Konfiguration
 
-Wenn eine 1:n-Beziehung besteht, bestehen auch Weitergabeverhalten, die konfiguriert werden können, um die Datenintegrität beizubehalten und Unternehmensprozesse zu automatisieren.
+Wenn eine 1:n-Entitätsbeziehung vorhanden ist, gibt es kaskadierende Verhaltensweisen, die konfiguriert werden können, um die Datenintegrität und zu erhalten und Geschäftsprozesse zu automatisieren. Weitere Informationen: [ Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten](configure-entity-relationship-cascading-behavior.md)
 
-Weitere Informationen finden Sie unter:
+## <a name="create-a-hierarchy-of-entities"></a>Erstellen Sie eine Hierarchie von Entitäten
 
-- [Dynamics 365 Customer Engagement Customization Guide: Create 1:N (one-to-many) or N:1 (many-to-one) relationships > Relationship behavior (Handbuch zur Anpassung von Dynamics 365 Customer Engagement: Erstellen von 1:n- oder n:1-Beziehungen > Beziehungsverhalten)](/dynamics365/customer-engagement/customize/create-and-edit-1n-relationships#relationship-behavior)
-- [Entitätenbeziehungsverhalten](/dynamics365/customer-engagement/developer/entity-relationship-behavior)
+Innerhalb einer auf sich selbst verweisenden 1: n-Beziehung können Sie eine Hierarchie festlegen, indem Sie die angezeigten `IsHierarchical`Eigenschaften auf `true` festlegen.
 
+Mit Modell-angetriebenen Apps ermöglicht es eine Umgebung, die Sie aktivieren, die Hierarchie anzuzeigen und damit und interagieren zu können. 
 
-## <a name="create-a-hierarchy-of-entities"></a>Erstellen einer Entitätshierarchie
+Entwickler können diese neue Typen von Abfragen anhand der Hierarchie mit `Under` und `Not Under` Operatoren aktivieren.
 
-Sie können innerhalb einer auf sich selbst verweisenden 1:n-Beziehung eine Hierarchie einrichten, indem Sie die `IsHierarchical`-Eigenschaft auf `true` festlegen.
-
-Bei modellgesteuerten Apps wird dadurch eine Funktion aktiviert, mit der Sie die Hierarchie anzeigen und mit ihr interagieren können. 
-
-Für Entwickler werden dadurch neue Abfragetypen aktiviert, die auf der Hierarchie basieren, die die Operatoren `Under` und `Not Under` verwendet.
-
-Weitere Informationen finden Sie unter: [Abfragen und Visualisieren von hierarchiebezogenen Daten](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)
+Weitere Informationen: [Common Data Service für Apps Entwicklerhandbuch: Hierarchisch verknüpfte Daten abfragen und visualisieren](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
 
 ### <a name="see-also"></a>Siehe auch
 
-[Entitäten in Common Data Service für Apps](entities.md)
+[Common Data Service für Apps-Entitäten](entities.md)

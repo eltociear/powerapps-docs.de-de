@@ -38,11 +38,14 @@ Um modellgesteuerte Beispiel-Apps abspielen oder bearbeiten zu können, müssen 
 
 ## <a name="customize-a-sample-app"></a>Anpassen einer Beispiel-App
 
-1. Melden Sie sich bei [powerapps.com](https://powerapps.com) an und wählen Sie **Modellgesteuert** für den Entwurfsmodus. 
+1. Anmelden bei [powerapps.com](https://powerapps.com)  
 
-    ![Entwurfsmodus wählen](media/overview-model-driven-samples/choose-design-mode.png)
+    
 
-2. Fahren Sie auf der Startseite mit der Maus über die Beispiel-App und klicken Sie auf **Anpassen**.
+2. Fahren Sie auf der Seite **Erstellen** mit der Maus über die Beispiel-App und klicken Sie auf **Diese App erstellen**.
+
+![Entwicklen einer Beispiel-App](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+
 3. Der App-Designer öffnet sich und bietet mehrere Optionen zum Anpassen der App. 
 4. Für zusätzliche Anpassungsoptionen klicken Sie auf **Erweitert** in der linken Navigation im Portal.
 

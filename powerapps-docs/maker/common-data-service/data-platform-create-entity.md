@@ -40,6 +40,9 @@ Unter [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&u
 
     * **Pluralanzeigename** - Dieses Feld wird automatisch befüllt, wenn Sie einen Anzeigenamen eingeben, aber Sie können ihn nach Bedarf ändern. Der Pluralanzeigename ist der Entitätsname in der Common Data Service WebAPI und wird beim Interagieren mit dieser Entität aus PowerApps oder Flow verwendet.
     * **Name** - Dieses Feld wird auch automatisch befüllt, wenn Sie einen Anzeigenamen eingeben. Das Präfix wurde eingerichtet, als die Umgebung erstellt wurde. es stellt sicher, dass die Entitäten, die Sie erstellen, ohne Konflikte mit anderen Entitätsnamen aus und in andere Umgebungen exportiert und importiert werden können. Sie können dieses Präfix ändern, indem Sie das Präfix in Ihrem Herausgeber Standardlösung von Common Data Service aktualisieren. Damit vorhandene Apps nicht beschädigt werden, können Sie den Namen nach der Speicherung der Entität nicht mehr ändern.
+
+       > [!NOTE]
+       > Damit der Entitätsname mit [Dynamics 365 for Customer Service-Integrierte Wissenssuche](/dynamics365/customer-engagement/customer-service/set-up-knowledge-management-embedded-knowledge-search) funktioniert, darf die maximale Länge des Entitätsnamens einschließlich des Publisher-Präfixes 24 Zeichen nicht überschreiten.
      
     ![Neue Entität](./media/data-platform-cds-create-entity/newentitypanel.png "Neuer Entitätsbereich")
 

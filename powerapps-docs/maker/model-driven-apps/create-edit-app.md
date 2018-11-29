@@ -2,7 +2,7 @@
 title: Erstellen oder Bearbeiten einer modellgesteuerten App mithilfe des App-Designers in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Apps mithilfe des App-Designer erstellt oder bearbeitet werden'
 keywords: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -36,16 +36,16 @@ In diesem Artikel lernen Sie die Grundlagen, wie Sie eine Modell-angetriebene Ap
 - Systemadministrator oder Systemanpasser-Sicherheitsrollen Weitere Informationen: [Über vordefinierte Sicherheitsrollen](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles).
  
 <a name="createApp"></a>   
-## <a name="create-an-app"></a>Eine App erstellen  
+## <a name="create-an-app"></a>App erstellen  
 
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Klicken Sie auf [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Start**-Seite die Option **Ohne Vorlage erstellen** für eine modellgesteuerte App aus.  
 
-    ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+    ![Modellgesteuertes Erstellen ohne Vorlage](media/start-from-blank-model-driven.png)
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. Wählen Sie **Anwendungen** und dann **App erstellen** aus.
+2. Wählen Sie **Diese App erstellen** aus.
 
 3. Geben Sie die folgenden Details auf der Seite **Neue App erstellen** ein: 
 
@@ -94,14 +94,14 @@ In diesem Artikel lernen Sie die Grundlagen, wie Sie eine Modell-angetriebene Ap
     Eine neue App wird erstellt und im Entwurfsstatus angezeigt. Die App-Designer-Canvas der neuen App wird angezeigt. Von dort können Sie die Komponenten, wie Entitäten, Ansichten, und Dashboards hinzufügen, um die App nützlich zu machen. Weitere Informationen: [Hinzufügen oder Bearbeiten von App-Komponenten](add-edit-app-components.md)  
    
 <a name="editApp"></a>   
-## <a name="edit-an-app"></a>Bearbeiten einer App  
+## <a name="edit-an-app"></a>App bearbeiten  
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 > [!IMPORTANT]
 > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. Klicken Sie im linken Navigationsbereich die Option **Apps**, wählen eine App und klicken Sie dann auf der Symbolleiste die Option **Bearbeiten** an.   
+2. Klicken Sie im linken Navigationsbereich die Option **Apps**, wählen eine modellgesteuerte App aus und klicken Sie dann auf der Symbolleiste die Option **Bearbeiten** an.   
 
 3. Im App Designer fügen Sie Komponenten hinzu oder bearbeiten Sie diese wie erforderlich. Weitere Informationen: [Hinzufügen oder Bearbeiten von App-Komponenten](add-edit-app-components.md)  
  

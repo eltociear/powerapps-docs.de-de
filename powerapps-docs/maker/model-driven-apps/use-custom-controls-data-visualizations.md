@@ -42,9 +42,9 @@ Sie können ein benutzerdefiniertes Steuerelement so festlegen, dass es in einem
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Verwenden eines benutzerdefinierten Steuerelements, um einem Feld Visualisierungen hinzuzufügen  
  Durch die Schritte dieses Vorgangs werden die standardmäßige Label- und Textfeld-Felder im Feld **Budgetbetrag** in das Schiebereglersteuerelement der Verkaufschancenentität geändert. Sie können auf ähnliche Weise ein vorhandenes Feld mit einem benutzerdefinierten Steuerelement ersetzen oder ein benutzerdefiniertes Steuerelement für ein benutzerdefiniertes Feld konfigurieren.  
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-     ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+     
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
   

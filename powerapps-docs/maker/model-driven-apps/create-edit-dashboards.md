@@ -28,9 +28,7 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Neues Dashboard erstellen  
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modell-angetrieben** (unterer linker Teil des Navigationsbereichs).
-
-    ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -52,7 +50,7 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Bearbeiten eines vorhandenen Dashboards  
   
-1. Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modell-angetrieben** (unterer linker Teil des Navigationsbereichs).
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    

@@ -38,9 +38,8 @@ Ein Schnellansichtsformular kann einem anderen Formular als Steuerelement zur sc
 ## <a name="create-a-quick-view-form"></a>Erstellen eines Schnellansichtsformulars  
  Sie können Schnellansichtsformulare mithilfe des Formular-Editors erstellen, ähnlich wie auch andere Formulare erstellt werden. Schnellansichtsformulare sind schreibgeschützt. Verwenden Sie diese, um Formulare zu erstellen, um die nur zum Lesen bstimmt sind.  
   
-1. Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-    ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     
@@ -75,7 +74,7 @@ Ein Schnellansichtsformular kann einem anderen Formular als Steuerelement zur sc
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>Hinzufügen eines Schnellansicht-Steuerelement zu einem Hauptformular  
  Schnellansichtsformulare können nur einem Hauptformular hinzugefügt werden, das ein Suchfeld enthält, das auf die Entität des Schnellansichtsformulars verweist.  
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).     

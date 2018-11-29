@@ -1,8 +1,8 @@
 ---
 title: 'Importieren, Aktualisieren und Exportieren von Lösungen | MicrosoftDocs'
-description: 'Erfahren Sie, wie eine Lösung importiert, aktualisiert und exportiert wird'
+description: 'Erfahren Sie, wie eine Lösung in PowerApps importiert, aktualisiert und exportiert wird'
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 11/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,44 +23,48 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="import-update-and-export-solutions"></a>Importieren, aktualisieren und exportieren von Lösungen 
+# <a name="import-update-and-export-solutions"></a>Lösungen importieren, aktualisieren und exportieren 
 
- Sie können Lösungen mithilfe der unten angegebenen Schritte manuell importieren. Importieren Sie nur Lösungen, die von einer vertrauenswürdigen Quelle stammen. Anpassungen können Code enthalten, durch den Daten an externe Quellen gesendet werden. Sie können die Standardlösung nur in die Organisation importieren, von der sie exportiert wurde, aber nicht in eine andere Organisation.  
+ Sie können Lösungen mithilfe der unten angegebenen Schritte manuell importieren. Importieren Sie nur Lösungen, die von einer vertrauenswürdigen Quelle stammen. Anpassungen können Code enthalten, durch den Daten an externe Quellen gesendet werden. Sie können die **Standardlösung** nur in die Organisation importieren, von der sie exportiert wurde, aber nicht in eine andere Organisation.  
   
-1. Gehen Sie zu **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Lösungen**.  
+1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.  
   
-2.  Wählen Sie im Lösungslistenmenü **Importieren** aus.  
+2.  Wählen Sie in der Lösungsliste die Option **Import** aus.  
+
+    > [!div class="mx-imgBorder"]  
+    > ![Lösung importieren](media/solution-import.png "Lösung importieren") 
   
-3.  Navigieren Sie im Dialogfeld **Lösung importieren** , Schritt **Lösungspaket auswählen**, zur komprimierten (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie importieren möchten. 
+3.  Navigieren Sie im Dialogfeld **Lösung importieren** , wählen Sie Schritt **Lösungspaket auswählen** und **wählen die Datei**, gehen Sie zur komprimierten Datei (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie importieren möchten. 
   
-4.  Klicken Sie auf **Weiter**.  
+4.  Wählen Sie **Weiter**.  
   
-5.  Sie können Informationen zur Lösung anzuzeigen, bevor Sie **Importieren** wählen.  
+5.  Informationen über eine vorgeschlagene Lösung anzeigen. Klicken Sie auf **Importieren**.  
   
-6.  Möglicherweise müssen Sie einige Momente beim Lösungsimport warten. Wenn dieser erfolgreich ausgeführt wurde, können Sie die Ergebnisse anzeigen und auf **Schließen** klicken.  
+6. Möglicherweise müssen Sie einige Momente beim Lösungsimport warten. Anzeigen der Ergebnisse und wählen Sie dann **Schließen** aus.  
   
  Falls Sie Änderungen importiert haben, die veröffentlicht werden müssen, müssen Sie Anpassungen veröffentlichen, bevor diese verfügbar sind. 
   
- Wenn der Import nicht erfolgreich ist, sehen Sie einen Bericht mit allen Fehlern oder Warnhinweisen, die erfasst wurden. Sie können auf **Protokolldatei herunterladen** klicken, um Informationen zu den Gründen für das Fehlschlagen des Imports geben. Die häufigste Ursache für das Fehlschlagen eines Lösungsimports besteht darin, dass die Lösung einige erforderliche Lösungskomponenten nicht vollständig enthielt..  
+ Wenn der Import nicht erfolgreich ist, sehen Sie einen Bericht mit allen Fehlern oder Warnhinweisen, die erfasst wurden. Wählen Sie **Protokolldatei herunterladen**, um Informationen zu den Gründen für das Fehlschlagen des Imports zu geben. Die häufigste Ursache für das Fehlschlagen eines Lösungsimports besteht darin, dass die Lösung einige erforderliche Lösungskomponenten nicht vollständig enthielt..  
   
  Wenn Sie die Protokolldatei herunterladen, sehen Sie eine XML-Datei, die Sie mit Office Excel öffnen können, um ihre Inhalte anzuzeigen.  
   
 > [!NOTE]
->  Sie können einen aktiven Weiterleitungsregelsatz nicht bearbeiten. Wenn Sie eine Lösung, die einen aktiven Weiterleitungsregelsatz umfasst, in eine Organisation importieren, in der Regel die bereits mit derselben ID vorhanden ist, schlägt der Lösungsimport fehl. Weitere Informationen: [Regeln erstellen, um Anfragen automatisch weiterzuleiten](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/create-rules-automatically-route-cases)  
+>  Sie können einen aktiven Weiterleitungsregelsatz nicht bearbeiten. Wenn Sie eine Lösung, die einen aktiven Weiterleitungsregelsatz umfasst, in eine Organisation importieren, in der in der Regel mit derselben ID vorhanden ist, schlägt der Lösungsimport fehl. Weitere Informationen: [Regeln erstellen, um Anfragen automatisch weiterzuleiten](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/create-rules-automatically-route-cases)  
   
 <a name="BKMK_UpdateSolutions"></a>   
 
 ## <a name="update-solutions"></a>Lösungen aktualisieren  
  Manchmal möchten Sie eine Aktualisierung zu einer vorhandenen verwalteten Lösung installieren. Die Vorgehensweise entspricht dem Installieren einer neuen verwalteten Lösung, mit Ausnahme einiger unterschiedlicher Optionen. Wenn Sie eine Lösung aktualisieren, die Sie von jemand anderem erhalten haben, sollten Sie den Lösungsherausgeber danach fragen, welche Optionen Sie auswählen sollten.  
   
-1. Gehen Sie zu **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Lösungen**.   
+1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
   
-2.  Wählen Sie im Lösungslistenmenü **Importieren** aus.  
+2.  Wählen Sie in der Lösungsliste die Option **Import** aus.  
   
-3.  Navigieren Sie im Dialogfeld **Lösung importieren** , Schritt **Lösungspaket auswählen**, zur komprimierten (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie aktualisieren möchten.  
-4.  Klicken Sie auf **Weiter**.  
+3.  Navigieren Sie im Dialogfeld **Lösung importieren** , wählen Sie Schritt **Lösungspaket auswählen** und **wählen die Datei**, gehen Sie zur komprimierten Datei (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie updaten möchten.
+
+4.  Wählen Sie **Weiter**.  
   
-5.  Sie können Informationen zur Lösung anzeigen, bevor Sie **Weiter** wählen. Diese Seite zeigt einen gelben Balken mit der Meldung **Das Lösungspaket enthält ein Update für eine bereits installierte Lösung** an.  
+5.  Zeigen Sie die Informationen zur Lösung an und klicken Sie auf **Weiter**. Diese Seite zeigt einen gelben Balken mit der Meldung **Das Lösungspaket enthält ein Update für eine bereits installierte Lösung** an.  
   
 6.  Sie haben die folgenden Optionen:  
   
@@ -72,9 +76,9 @@ search.app:
   
          Diese Option überschreibt nicht verwaltete Anpassungen, die zuvor für Komponenten in dieser Lösung vorgenommen wurden. Alle in dieser Lösung enthaltenen Aktualisierungen werden wirksam.  
   
-     Wählen Sie die entsprechende Option, und klicken Sie dann auf **Weiter**.  
+     Wählen Sie die entsprechende Option, und wählen Sie dann **Weiter**.  
   
-7.  Möglicherweise müssen Sie einige Momente beim Lösungsimport warten. Wenn dieser erfolgreich ausgeführt wurde, können Sie die Ergebnisse anzeigen und auf **Schließen** klicken.  
+7.  Möglicherweise müssen Sie einige Momente beim Lösungsimport warten. Anzeigen der Ergebnisse und wählen Sie dann **Schließen** aus.  
   
  Falls Sie Änderungen importiert haben, die veröffentlicht werden müssen, müssen Sie Anpassungen veröffentlichen, bevor diese verfügbar sind. 
   
@@ -83,34 +87,47 @@ search.app:
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>Exportieren von Lösungen  
- Es wird empfohlen, dass Sie Ihre nicht verwalteten Anpassungen regelmäßig exportieren, damit Sie für alle Fälle über ein Backup verfügen. Verwaltete Lösungen können nicht exportiert werden.  
+ Es wird empfohlen, dass Sie Ihre nicht verwalteten Anpassungen regelmäßig exportieren, damit Sie für alle Fälle über ein Backup verfügen. Verwaltete Lösungen können nicht exportiert werden. Sie können entweder PowerApps Lösungen exportieren, oder Sie können sie mithilfe der klassischen Erfahrung exportieren. 
+ 
+### <a name="export-from-powerapps"></a>Exportieren aus PowerApps
   
-1. Gehen Sie zu **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Lösungen**.   
+1.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.   
   
-2.  Wählen Sie in der Liste die Lösung aus, die Sie exportieren möchten, und wählen Sie **Export** aus.  
+2.  Wählen Sie in der Liste die Lösung aus, die Sie exportieren möchten, und wählen Sie dann **Export**. 
+
+3.  Wählen Sie den Pakettyp **nicht verwaltet** oder **verwaltet** aus. Dies startet den Export, der mehrere Minuten dauern kann, um den Vorgang abzuschließen. Nach Abschluss ist die Exportzip-datei im Downloadordner verfügbar, der über den Webbrowser angegeben ist.
+
+> [!div class="mx-imgBorder"]  
+> ![Lösung exportieren](media/solution-export.PNG "Lösung exportieren") 
+
+### <a name="export-from-the-classic-experience"></a>Export in der klassischen Erfahrung
+
+1.  Wählen Sie **Lösungen** in der linken Navigation und dann **Zu den Klassiker wechseln**. 
+  
+2.  Wählen Sie in der Liste die Lösung aus, die Sie exportieren möchten, und wählen Sie dann **Export**. 
   
 3.  Im Schritt **Anpassungen veröffentlichen** werden Sie daran erinnert, dass nur veröffentlichte Anpassungen exportiert werden und Sie die Option **Alle Anpassungen veröffentlichen** haben, bevor Sie auf **Weiter** klicken.  
   
-4.  Wenn Ihre Lösung fehlende erforderliche Komponenten enthält, sehen Sie den Schritt **Fehlende erforderliche Komponenten** Sie können diese Warnung nur dann ignorieren, wenn Sie diese Lösung als nicht verwaltete Lösung in die ursprüngliche Organisation zurückimportieren wollen. Befolgen Sie andernfalls die Anweisungen im Dialogfeld, um den Export abzubrechen und die erforderlichen Komponenten hinzuzufügen.  
+4.  Wenn Ihre Lösung fehlende erforderliche Komponenten enthält, sehen Sie den Schritt **Fehlende erforderliche Komponenten** Sie können diese Warnung nur dann ignorieren, wenn Sie diese Lösung als nicht verwaltete Lösung in die ursprüngliche Umgebung zurückimportieren wollen. Befolgen Sie andernfalls die Anweisungen im Dialogfeld, um den Export abzubrechen und die erforderlichen Komponenten hinzuzufügen.  
   
-5.  Im Schritt **Systemeinstellungen (Erweitert) exportieren** können Sie Systemeinstellungen auswählen, die in Ihre Lösung eingefügt werden. Wenn Ihre Lösung auf einer der Systemeinstellungsgruppen basiert, wählen Sie sie, und wählen Sie **Weiter** aus.  
+5.  Im Schritt **Systemeinstellungen (Erweitert) exportieren** können Sie Systemeinstellungen auswählen, die in Ihre Lösung eingefügt werden. Wenn Ihre Lösung auf einer der Systemeinstellungsgruppen basiert, wählen Sie sie und wählen Sie **Weiter** aus.  
   
      Siehe **Einstellungsoptionen für den Lösungsexport** unten für Details zu den Einstellungen, die für jede Option enthalten sind.  
   
 6.  Im Schritt **Pakettyp** müssen Sie auswählen, ob die Lösung als **Nicht verwaltete** oder **Verwaltete** exportiert werden soll..  
   
-7.  Der nächste Schritt ermöglicht es Ihnen, eine Ziellösung für eine bestimmte Dynamics 365-Version auszuwählen. Diese Option wird in der Regel von ISVs verwendet, die eine Lösung exportieren möchten, welche mit einer früheren Version kompatibel ist. Wenn Sie jedoch diese Lösung in eine Organisation importieren möchten, die nicht auf die gleiche Version wie die von Ihnen verwendete Organisationsversion aktualisiert ist, übernehmen Sie die Standardeinstellung.   
+7.  Der nächste Schritt ermöglicht es Ihnen, eine Ziellösung für eine bestimmte Dynamics 365 for Customer Engagement Version auszuwählen. Diese Option wird in der Regel von ISVs verwendet, die eine Lösung exportieren möchten, welche mit einer früheren Version kompatibel ist. Wenn Sie jedoch diese Lösung in eine Umgbun g importieren möchten, die nicht auf die gleiche Version wie die von Ihnen verwendete Umgebungsversion aktualisiert ist, übernehmen Sie die Standardeinstellung.   
   
 8.  Wählen Sie **Exportieren** aus, um die Lösungsdatei herunterzuladen.  
   
- Die exakte Verhaltensweise beim Download von Dateien ist für verschiedene Browser unterschiedlich.  
+ Die exakte Verhaltensweise beim Download von Dateien ist für verschiedene Web-Browser unterschiedlich.  
 
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>Einstellungsoptionen für den Lösungsexport  
- In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen aufgeführt:  
+ Wenn Sie die Lösung aus PowerApps exportieren, missachten Sie diesen Abschnitt. In der folgenden Tabelle sind die verfügbaren Optionen beim Export von Lösungen in der klassischen Erfahrung aufgeführt.  
   
-|Gruppe|Einstellungen|Beschreibung|  
+|Gruppe|Einstellung|Beschreibung|  
 |-----------|-------------|-----------------|  
 |Automatische Nummerierung|Präfix für Kampagnen|Präfix, das für die Nummerierung von Kampagnen verwendet wird.|  
 |Präfix für Anfragen|Präfix, das für alle Anfragen in der gesamten App zu verwenden ist.|  
@@ -120,7 +137,7 @@ search.app:
 |Auftragspräfix|Präfix, das für alle Aufträge in der gesamten App zu verwenden ist.|  
 |Eindeutige Zeichenfolgenlänge|Anzahl der Zeichen, die an Rechnungs-, Angebots- und Auftragsnummern angefügt werden.|  
 |Kalender|Kalendertyp|Kalendertyp für das System. Standardmäßig Gregorianisch US|  
-|Datumsformatcode|Informationen darüber, wie das Datum in Dynamics 365 angezeigt wird.|  
+|Datumsformatcode|Informationen darüber, wie das Datum in Dynamics 365  for Customer Engagement angezeigt wird.|  
 |Datumstrennzeichen|Zeichen, das zur Trennung von Monat, Tag und Jahr in Datumsangaben in der gesamten App verwendet wird.|  
 |Max. Termindauer|Maximale Anzahl von Tagen für einen Termin.|  
 |Wochennummer anzeigen|Informationen, durch die angegeben wird, ob die Wochennummer in Kalenderanzeigen in der gesamten App angezeigt werden soll.|  

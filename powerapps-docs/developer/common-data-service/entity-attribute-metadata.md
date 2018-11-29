@@ -1,11 +1,11 @@
 ---
-title: Attributmetadaten | Microsoft-Dokumentation
-description: Erfahren Sie mehr über Attributmetadaten, die in Common Data Service für Apps verwendet werden.
+title: Attributmetadaten| Microsoft Docs
+description: Erfahren Sie mehr zur Nutzung von Attribut-Metadaten im Common Data Service for Apps
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: mayadumesh
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,239 +13,239 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/12/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: f6fcf3ba1e8e9773df65ac566a9d5c798f4d13a9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859159"
+  - PowerApps
+  - D365CE
 ---
-# <a name="attribute-metadata"></a>Attributmetadaten
 
-Entitäten enthalten eine Auflistung der Attribute, die die Daten darstellen, die in jedem Datensatz enthalten sein können. Entwickler müssen die verschiedenen Attributtypen und die Arbeit mit ihnen verstehen. 
+<!-- This topic was not migrated it was written for PowerApps 
+Was Mike Carter
+Overlap with https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entity-attributes
 
-Weitere Informationen finden Sie unter [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Einführung in die Entitätsattribute](/dynamics365/customer-engagement/developer/introduction-entity-attributes).
+-->
+# <a name="attribute-metadata"></a>Attribut-Metadaten
 
-## <a name="attribute-names"></a>Attributnamen
+Entitäten enthalten eine Sammlung von Attributen, die für die Daten stehen, die in jedem Datensatz eingeschlossen sein können. Entwickler müssen die verschiedenen Arten von Attributen kennen und wie damit gearbeitet wird. 
 
-Wie bei Entitäten wird für jedes Attributen bei der Erstellung ein eindeutiger Name definiert. Dieser Name wird auf verschiedene Weisen dargestellt:
+Weitere Informationen: [Einführung in Entitätsattributen](/dynamics365/customer-engagement/developer/introduction-entity-attributes)
+
+## <a name="attribute-names"></a>Attributname.
+
+Wie Entitäten hat jedes Attribut einen eindeutig definierten Namen, wenn es erstellt wird, Dieser Name ist auf verschiedene Weise dargestellt:
 
 
 |Name |Beschreibung  |
 |---------|---------|
-|`SchemaName`|In der Regel ist dies der logische Name in der Pascal-Schreibweise, z.B. `AccountNumber`.|
-|`LogicalName`|Der Name in Kleinbuchstaben, z.B. `accountnumber`.|
+|`SchemaName`|In der Regel eine Pascal-umkleidete Version des logischen Namen. z. B. `AccountNumber`|
+|`LogicalName`|Alle kleingeschriebene Namen. z. B. `accountnumber`|
 
-Wenn Sie ein benutzerdefiniertes Attribut erstellen, wird dem von Ihnen ausgewählten Namen der Anpassungspräfixwert des Lösungsherausgebers vorangestellt, der mit der Lösung verknüpft ist, in der das Attribut erstellt wurde.
+Wenn Sie ein benutzerdefiniertes Attribut erstellen, wird der Name, den Sie auswählen, mit dem Anpassungspräfixwert des Lösungsherausgebers verwendet, der mit der Lösung zugeordnet wird, als das Attribut in erstellt wurde.
 
-Sie können den Attributnamen nicht mehr ändern, nachdem dieses erstellt wurde.
+Sie können die Namen eines Attributes nicht ändern, nachdem es erstellt wurde.
 
-Außerdem verfügt jedes Attribut über zwei Eigenschaften, die lokalisierte Werte anzeigen können. Dies sind die Werte, die verwendet werden, um auf die Attribute in einer App zu verweisen.
+Jedes Attribut weist auch zwei Eigenschaften auf, die lokalisierte Werte anzeigen. Dies sind die Werte, die verwendet werden, um sich auf die Attribute in einer App zu beziehen.
 
 |Name |Beschreibung  |
 |---------|---------|
-|`DisplayName`|In der Regel mit dem Schemanamen identisch, kann aber auch Leerzeichen enthalten, z.B. **Account Number**|
-|`Description`|Ein kurzer Satz, der das Attribut beschreibt oder den Benutzer unterstützt, z.B. *Geben Sie eine ID-Nummer oder Code für das Konto ein, um das Konto schnell in den Systemansichten zu finden und zu identifizieren*.<br />In modellgesteuerten Apps werden diese Informationen angezeigt, wenn Benutzer in einem Formular auf das Feld für dieses Attribut zeigen.|
+|`DisplayName`|Normalerweise gleich wie der Schemaname, können aber Leerzeichen enthalten. z. B. **Firmennummer**|
+|`Description`|Ein kurzer folgenden Satz, der das Attribut beschreibt oder eine Anweisung für Benutzer enthält. z.B.*Um eine Firma in Systemansichten schnell suchen und erkennen zu können, geben Sie eine ID-Nummer oder einen ID-Code für die Firma in der Systemansicht ein.*<br />In Modell-angetriebenen Apps werden diese Informationen angezeigt, wenn Benutzer über das Feld für dieses Attribut in einem Formular angezeigt werden.|
 
 
-Dies sind lokalisierbare Werte, die verwendet werden, um auf die Attribute in einer App zu verweisen. Diese Werte können jederzeit geändert werden. Informationen zum Hinzufügen oder Ändern von lokalisierten Werten finden Sie unter [Handbuch zur Anpassung von Dynamics 365 Customer Engagement: Übersetzen von benutzerdefiniertem Entitäts- und Feldtext in andere Sprachen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
+Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Attribute in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Um die Werte hinzufügen oder zu bearbeiten gehen Sie zu [Common Data Service für App-Anpassungs-Handbuch:  Angepasster Entitäts- und Feldtext in anderen Sprachen anpassen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
 
 ## <a name="attribute-types"></a>Attributtypen
 
-Die `AttributeTypeName`-Eigenschaft beschreibt den Typ eines Attributs. Diese Eigenschaft enthält einen Wert des Typs `AttributeTypeDisplayName`, der eine Bezeichnung für alle vorhandenen unterschiedlichen Attributtypen bereitstellt. 
+Die `AttributeTypeName`-Eigenschaft beschreibt den Typ eines Attributes. Diese Eigenschaft enthält einen Wert vom Typ, `AttributeTypeDisplayName` der eine Beschriftung für jedes der unterschiedlichen Arten von Attributen bietet, die es gibt. 
 
 > [!NOTE]
-> Verwechseln Sie sie nicht mit der `AttributeType`-Eigenschaft. Die Werte in dieser älteren Eigenschaft sind auf `AttributeTypeName` ausgerichtet, mit dem Unterschied, dass sie `ImageType`-Attribute als `Virtual` anzeigen. Anstelle der `AttributeType`-Eigenschaft sollten Sie auf die `AttributeTypeName`-Eigenschaft verweisen.
+> Lassen Sie sich nicht von der `AttributeType`-Eigenschaft verwirren. Die Werte in dieser älteren Eigenschaft sind mehrheitlich mit dem `AttributeTypeName` abgestimmt,  außer dass es `ImageType`-Attribute als `Virtual` zeigt. Sie sollten sich auf die Eigenschaft `AttributeTypeName` anstelle der Eigenschaft `AttributeType` beziehen.
 
-Inhalt der folgenden Tabelle:
+In der folgende Tabelle:
 
-- Diese Typen sind zum Vergleich anhand ihrer Kategorie gruppiert.
-- Für jeden `AttributeTypeDisplayName`-Wert wird die entsprechende abgeleitete Klasse [AttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.attributemetadata) der .NET Assembly angegeben, sofern diese verfügbar ist. Es gibt keine direkte Beziehung zwischen diesen Typen und der Bezeichnung `AttributeTypeDisplayName`.
-- Diese Attributtypen, die als benutzerdefinierte Attribute erstellt werden können, enthalten eine entsprechende Bezeichnung, die in der Benutzeroberfläche angezeigt wird.
+- Diese sind Typen für Vergleich nach Kategorie gruppiert.
+- Für jeden `AttributeTypeDisplayName`-Wert ist die entsprechende .NET-Assembly[AttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.attributemetadata) abgeleitete Klasse enthalten, wo verfügbar. Es ist keine 1:1 Beziehung zwischen diesen Datensatztypen und der `AttributeTypeDisplayName` Beschriftung.
+- Diese Attributtypen, die als benutzerdefinierte Attribute erstellt werden können, umfassen die entsprechenden Beschriftung, die auf der Benutzeroberfläche angezeigt wird.
 
 
-|Kategorie|AttributeTypeDisplayName/<br />AttributeMetadata-Typ|Kann Erstellen/<br />Bezeichnung|Beschreibung  |
+|Kateg.|AttributeTypeDisplayName/<br />AttributeMetadata Typ|Kan erstellen/<br />Beschriftung|Beschreibung  |
 |---------|---------|---------|---------|
-|Kategorisierung|`BooleanType`<br />[BooleanAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.booleanattributemetadata)|Ja<br />**Zwei Optionen**|Enthält den ausgewählten Optionswert von zwei Optionen, die in der Regel einen Wert angeben, der auf TRUE oder FALSE festgelegt ist.<br />Weitere Informationen finden Sie unter [Option Sets (Optionssätze)](#option-sets)|
-|Kategorisierung|`EntityNameType`<br />[EntityNameAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.entitynameattributemetadata)|Nein|Enthält einen Optionswert, der einer Entität in dem System entspricht. Nur zur internen Verwendung.|
-|Kategorisierung|`MultiSelectPicklistType`<br />[MultiSelectPicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.multiselectpicklistattributemetadata)|Ja<br />**MultiSelect-Optionssatz**|Enthält mehrere ausgewählte Optionswerte, mit denen mehrere Optionen ausgewählt werden können.<br />Weitere Informationen finden Sie unter: <br />[Option Sets (Optionssätze)](#option-sets)<br />[Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Mehrfachauswahl-Listenattribute](/dynamics365/customer-engagement/developer/multi-select-picklist)|
-|Kategorisierung|`PicklistType`<br />[PicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.picklistattributemetadata)|Ja<br />**Optionssatz**|Enthält den ausgewählten Optionswert, ab dem eine Option ausgewählt werden kann.<br />Weitere Informationen finden Sie unter [Option Sets (Optionssätze)](#option-sets)|
-|Kategorisierung|`StateType`<br />[StateAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stateattributemetadata)|Nein|Enthält den Optionswert, der den Status eines Entitätsdatensatzes beschreibt.<br />Weitere Informationen finden Sie unter [Option Sets (Optionssätze)](#option-sets)|
-|Kategorisierung|`StatusType`<br />[StatusAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.statusattributemetadata)|Nein|Enthält den Optionswert, der die Begründung für den Status eines Entitätsdatensatzes beschreibt.<br />Weitere Informationen finden Sie unter [Option Sets (Optionssätze)](#option-sets)|
-|Sammlung|`CalendarRulesType`|Nein|Enthält eine Sammlung von `CalendarRules`-Entitätsdatensätzen.<br />Es gibt keine Attribute, die diesen Typ verwenden. Wenn Sie einen Proxy generieren, erstellt das Tool zur Codegenerierung zwei simulierte Attribute, die nicht in den Metadaten vorhanden sind. Diese Attribute stellen eine Ansicht der CalendarRules-Datensätze dar, die eine 1:n-Beziehung zum Entitätsdatensatz haben.|
-|Sammlung|`PartyListType`|Nein|Enthält eine Sammlung von `ActivityParty`-Entitätsdatensätzen.<br />Weitere Informationen finden Sie unter [ActivityParty entity (ActivityParty-Entität)](#activityparty-entity)|
-|Datum und Uhrzeit|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|Ja<br />**Datum und Uhrzeit**|Enthält einen Wert für Datum und Uhrzeit.<br />Alle Attribute zu Datum und Uhrzeit unterstützen Werte ab 1.1.1753 00:00 Uhr.|
-|Bild|`ImageType`<br />[ImageAttributeMetadata]()|Ja<br />**Bild**|Enthält Daten, um das Abrufen von Bilddaten für einen Entitätsdatensatz zu unterstützen.<br />Weitere Informationen finden Sie unter [Entity Images (Entitätsbilder)](entity-metadata.md#entity-images)|
-|Verwaltete Eigenschaft|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Nein|Enthält Daten, die beschreiben, ob eine im Entitätsdatensatz gespeicherte Lösungskomponente angepasst werden kann, wenn sie in einer verwalteten Lösung enthalten ist.<br />Weitere Informationen finden Sie unter [Managed Properties (Verwaltete Eigenschaften)](introduction-solutions.md#managed-properties).|
+|Kategorisierung|`BooleanType`<br />[BooleanAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.booleanattributemetadata)|Ja<br />**Zwei Optionen**|Enthält den ausgewählten Optionswert von zwei Optionen, die normalerweise einen wahren oder falschen Wert angeben.<br />Weitere Informationen:[Optionssatz](#option-sets)|
+|Kategorisierung|`EntityNameType`<br />[EntityNameAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.entitynameattributemetadata)|Nein|Enthält einen Optionswerts, der einer Entität im System entspricht. Nur zur internen Verwendung.|
+|Kategorisierung|`MultiSelectPicklistType`<br />[MultiSelectPicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.multiselectpicklistattributemetadata)|Ja<br />**MultiSelect-Optionssatz**|Enthält mehrere ausgewählte Optionswerte, in der mehrere Optionen ausgewählt werden können.<br />Weitere Informationen: <br />[Optionssätze](#option-sets)<br />[Mehrfachauswahl-Listenattribute](/dynamics365/customer-engagement/developer/multi-select-picklist)|
+|Kategorisierung|`PicklistType`<br />[PicklistAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.picklistattributemetadata)|Ja<br />**Optionssatz**|Enthält den ausgewählten Optionswert, in dem mehrere Optionen ausgewählt werden können.<br />Weitere Informationen:[Optionssatz](#option-sets)|
+|Kategorisierung|`StateType`<br />[StateAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stateattributemetadata)|Nein|Enthält den Optionswerts, der den Status eines Entitätsdatensatzes beschreibt.<br />Weitere Informationen:[Optionssatz](#option-sets)|
+|Kategorisierung|`StatusType`<br />[StatusAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.statusattributemetadata)|Nein|Enthält den Optionswerts, der den Grund für den Status eines Entitätsdatensatzes beschreibt.<br />Weitere Informationen:[Optionssatz](#option-sets)|
+|Abholung|`CalendarRulesType`|Nein|Enthält eine Sammlung von `CalendarRules` Entitätsdatensätzen<br />Es gibt keine aktuellen Attribute, die diesen Typ verwenden. Wenn Sie einen Proxy erstellen, erstellt das Codegenerierungstool die folgenden zwei simulierten Attribute, die nicht in den Metadaten vorhanden sind. Diese Attribute repräsentieren tatsächlich eine Ansicht der Kalenderregeldatensätze, die in einer 1: n-Beziehung dem Entitätsdatensatz zugeordnet sind.|
+|Abholung|`PartyListType`|Nein|Enthält eine Sammlung von `ActivityParty` Entitätsdatensätzen<br />Mehr Informationen: [ActivityParty-Entität](#activityparty-entity).|
+|Datum und Uhrzeit|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|Ja<br />**Datum und Uhrzeit**|Enthält einen Datums- und einen Zeitwert.<br />Alle Daten- und Zeitattribute unterstützen Werte ab dem 1/1/1753 12:00 Uhr.|
+|Bild|`ImageType`<br />[ImageAttributeMetadata]()|Ja<br />**Bild**|Enthält Daten, um das Abrufen von Bilddaten nach einem Entitätsdatensatz zu unterstützen.<br />Weitere Informationen: [Entitätsbilder](entity-metadata.md#entity-images)|
+|Verwaltete Eigenschaft|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Nein|Enthält Daten, die beschreiben, dass die Lösungskomponente, die im Entitätsdatensatz gespeichert ist, angepasst werden kann, wenn sie in eine verwaltete Lösung eingebunden wird.<br />Weitere Informationen: [Verwaltete Eigenschaften](introduction-solutions.md#managed-properties)|
 |Menge|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|Nein|Enthält einen `BigInt`-Wert. Nur zur internen Verwendung.|
-|Menge|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|Ja<br />**Dezimalzahl**|Enthält einen `Decimal`-Wert. Die Eigenschaft `Precision` legt die Genauigkeit fest.|
-|Menge|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|Ja<br />**Gleitkommazahl**|Enthält einen `Double`-Wert. Die Eigenschaft `Precision` legt die Genauigkeit fest.|
+|Menge|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|Ja<br />**Dezimalzahl**|Enthält einen `Decimal`-Wert. Die `Precision`-Eigenschaftensätze der Berechtigungsebene der Genauigkeit.|
+|Menge|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|Ja<br />**Gleitkommazahl**|Enthält einen `Double`-Wert. Die `Precision`-Eigenschaftensätze der Berechtigungsebene der Genauigkeit.|
 |Menge|`IntegerType`<br />[IntegerAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.integerattributemetadata)|Ja<br />**Ganze Zahl**|Enthält einen `Int`-Wert.|
-|Menge|`MoneyType`<br />[MoneyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.moneyattributemetadata)|Ja<br />**Währung**|Enthält einen `Decimal`-Wert. Die Eigenschaft `PrecisionSource` bestimmt das Maß an Genauigkeit.<br />0: Die `Precision`-Eigenschaft<br />1: Das `Organization.PricingDecimalPrecision`-Attribut<br />2: Das `TransactionCurrency.CurrencyPrecision`-Attribut im Entitätsdatensatz|
-|Referenz|`CustomerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|Ja<br />**Kunde**|Enthält einen Verweis auf den Entitätsdatensatz eines Kontos oder Kontakts.|
-|Referenz|`LookupType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|Ja<br />**Nachschlagen**|Enthält einen Verweis auf einen Entitätsdatensatz. Die logischen Namen der gültigen Datensätze werden in der Regel in der `Targets`-Eigenschaft des Attributs gespeichert.|
-|Referenz|`OwnerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|Nein|Enthält einen Verweis auf einen Entitätsdatensatz eines Benutzers oder Teams.|
-|Zeichenfolge|`MemoType`<br />[MemoAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.memoattributemetadata)|Ja<br />**Mehrere Textzeilen**|Enthält einen Zeichenfolgenwert, der in einem mehrzeiligen Textfeld angezeigt werden soll.|
-|Zeichenfolge|`StringType`<br />[StringAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stringattributemetadata)|Ja<br />**Eine Textzeile**|Enthält einen Zeichenfolgenwert, der in einem einzeiligen Textfeld angezeigt werden soll.|
-|Eindeutiger Bezeichner|`UniqueidentifierType`<br />[UniqueIdentifierAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.uniqueidentifierattributemetadata)|Nein|Enthält einen eindeutigen GUID-Bezeichnerwert.|
-|Virtuell|`VirtualType`|Nein|Diese Attribute können nicht in Code verwendet werden und können im Allgemeinen ignoriert werden.|
+|<a name='money_type'></a>Menge|`MoneyType`<br />[MoneyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.moneyattributemetadata)|Ja<br />**Währung**|Enthält einen `Decimal`-Wert. Die `PrecisionSource`-Eigenschaft bestimmt, wo die Ebene der Genauigkeit festgelegt ist.<br />0: Die `Precision`-Eigenschaft<br />1: Das `Organization.PricingDecimalPrecision` Attribut<br />2: Das `TransactionCurrency.CurrencyPrecision`-Attribut im Entitätsdatensatz|
+|Referenz|`CustomerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|Ja<br />**Kunde**|Enthält einen Verweis entweder über eine Firma oder einen Kontaktentitätsdatensatz.|
+|Referenz|`LookupType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|Ja<br />**Suche**|Entfernen Sie eine Referenz auf einem Entitätsdatensatz. Die logischen Namen der gültigen Datensätze werden in der Regel in der Eigenschaft `Targets` des Attributs gespeichert.|
+|Referenz|`OwnerType`<br />[LookupAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.lookupattributemetadata)|Nein|Enthält einen Verweis entweder zu einem Benutzer- oder einem Team-Entitätsdatensatz.|
+|String|`MemoType`<br />[MemoAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.memoattributemetadata)|Ja<br />**Mehrere Textzeilen**|Enthält einen Zeichenwert der in einem mehrzeiligen Textfeld angezeigt werden soll.|
+|String|`StringType`<br />[StringAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.stringattributemetadata)|Ja<br />**Einzelne Textzeile**|Enthält einen Zeichenwert der in einem einzeiligen Textfeld angezeigt werden soll.|
+|Eindeutiger Bezeichner|`UniqueidentifierType`<br />[UniqueIdentifierAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.uniqueidentifierattributemetadata)|Nein|Enthält einen Wert des GUID- Bezeichners.|
+|Virtuell|`VirtualType`|Nein|Diese Attribute können nicht im Code verwenden und können im Wesentlichen ignoriert werden.|
 
 
-## <a name="supported-operations-and-form-usage-for-attributes"></a>Unterstützte Vorgänge und Formularnutzung für Attribute
+## <a name="supported-operations-and-form-usage-for-attributes"></a>Unterstützte Vorgänge und Formularverwendung für Attribute
 
-Jedes Attribut enthält boolesche Eigenschaften, die die Arten der Vorgänge beschreiben, an denen das Attribut teilnehmen kann, und die es in einem Formular annehmen kann.
+Jedes Attribut enthält boolesche Eigenschaften, die die Arten von Vorgängen beschreiben, an denen sie teilnehmen können und wie sie in einem Formular vorhanden sein können.
 
 |Eigenschaft|Beschreibung|
 |--|--|
-|`IsRequiredForForm`|Gibt an, ob das Attribut in einem Formular als Feld enthalten sein muss.|
-|`IsValidForCreate`|Gibt an, ob der Attributwert in einem Erstellungsvorgang festgelegt werden kann.|
-|`IsValidForForm`|Gibt an, ob das Attribut in einem Formular als Feld hinzugefügt werden kann.|
-|`IsValidForRead`|Gibt an, ob das Attribut abgerufen werden kann.|
-|`IsValidForUpdate`|Gibt an, ob der Attributwert in einem Aktualisierungsvorgang festgelegt werden kann.|
+|`IsRequiredForForm`|Ob das Attribut in einem Formular als Feld hinzugefügt werden muss.|
+|`IsValidForCreate`|Ob der Atributtwert in einen Erstellungsvorgang festgelegt werden kann.|
+|`IsValidForForm`|Ob das Attribut in einem Formular als Feld hinzugefügt werden muss.|
+|`IsValidForRead`|Ob der Attributwert abgerufen werden kann.|
+|`IsValidForUpdate`|Ob der Atributtwert in einen Aktualisierungssvorgang festgelegt werden kann.|
 
-Wenn Sie versuchen, einen Wert in einem Erstellungs- oder Aktualisierungsvorgang für ein Attribut festzulegen, das für diesen Vorgang nicht gültig ist, wird der Wert ignoriert.
-Wenn Sie versuchen ein Attribut abzurufen, das nicht zum Lesen gültig ist, wird ein NULL-Wert zurückgegeben.
+Wenn Sie versuchen, einen Wert in einem Erstellungs- oder Aktualisierungsvorgang für ein Attribut festzulegen, das für diesen Vorgang gültig ist, wird der Wert ignoriert.
+Wenn Sie versuchen, ein Attribut abzurufen, das zum Lesen ungültig ist, wird ein NULL-Wert zurückgegeben.
 
 
-## <a name="attribute-requirement-level"></a>Attribute für Erforderlichkeitsstufen
+## <a name="attribute-requirement-level"></a>Attribut-Anforderungsebene
 
-Die Eigenschaft `RequiredLevel` ist eine boolesche Eigenschaft, die verwaltet werden kann und beschreibt, ob ein Attributwert erforderlich ist.
+Die `RequiredLevel`-Eigenschaft ist eine boolesche verwaltete Eigenschaft, die beschreibt, wenn ein Attributwert erforderlich ist.
 
-Für diese Eigenschaft können die folgenden Werte festgelegt werden:
+Diese Eigenschaft kann einen der folgenden Werte sein:
 
-|Name|Wert|Benutzeroberflächenbezeichnung|Beschreibung|
+|Name|Value|UI-Beschriftung|Beschreibung|
 |--|--|--|--|
-|`None`|0|**Optional**|Es werden keine Anforderungen angegeben.|
-|`SystemRequired`|1|**Systemabhängig**|Dieses Attribut muss einen Wert aufweisen.|
-|`ApplicationRequired`|2|**Eingabe vom Unternehmen als erforderlich markiert**|Vom Unternehmen wird verlangt, dass dieses Attribut einen Wert aufweist.|
-|`Recommended`|3|**Eingabe vom Unternehmen empfohlen**|Es wird empfohlen, dass dieses Attribut einen Wert aufweist.|
+|`None`|0|**Optional**|Die Anforderungen werden angegeben.|
+|`SystemRequired`|1|**Systemabhängig**|Das Attribut ist erforderlich, um einen Wert zu haben.|
+|`ApplicationRequired`|2|**Eingabe erforderlich**|Das Attribut ist vom Geschäft erforderlich, um einen Wert zu haben.|
+|`Recommended`|3|**Eingabe empfohlen**|Es wird empfohlen, dass das Attribut ein Wert ist.|
 
-Common Data Service für Apps erzwingt die Option `SystemRequired` nur bei Attributen, die vom System erstellt wurden. Benutzerdefinierte Attribute können nicht so festgelegt werden, dass Sie die Option `SystemRequired` verwenden. 
+Common Data Service for Apps erzwingen nur die `SystemRequired`Option für Attribute, die vom System erstellt werden. Benutzerdefinierte Attribute können nicht angegeben werden, um die Option `SystemRequired` zu nutzen. 
 
-Modellgesteuerte Apps erzwingen die Option `ApplicationRequired` und verwenden eine andere Darstellung für die Option `Recommended`. Ersteller von benutzerdefinierten Clients können diese Informationen verwenden, um ähnliche Überprüfungs- oder Darstellungsoptionen zu erfordern.
+Modell-angetriebene Apps erzwingen die `ApplicationRequired` Option und verwenden eine Präsentation für die `Recommended` Option. Ersteller benutzerdefinierter Clients können diese Informationen brauchen, um ähnliche Überprüfungs- oder Präsentationsoptionen anzufordern.
 
-Da dies eine verwaltete Eigenschaft ist, können Sie als Herausgeber einer verwalteten Lösung entscheiden, ob die Verbraucher Ihrer Lösung diese Einstellungen von Attributen in Ihrer Lösung ändern dürfen.
+Da es sich um eine verwaltete Eigenschaft handelt, wie z.B. Herausgeber einer verwalteten Lösung können Sie entscheiden, ob der Verbraucher der Lösung diese Einstellungen der Attribute in Ihrer Lösung ändern kann.
 
-Weitere Informationen finden Sie unter [Managed Properties (Verwaltete Eigenschaften)](introduction-solutions.md#managed-properties).
+Weitere Informationen: [Verwaltete Eigenschaften](introduction-solutions.md#managed-properties)
 
 
-## <a name="rollup-and-calculated-attributes"></a>Rollup-Attribute und berechnete Attribute
+## <a name="rollup-and-calculated-attributes"></a>Rollup und berechnete Attribute
 
-Berechnete Attribute und Rollup-Attribute nehmen den Benutzern das manuelle Ausführen von Berechnungen ab und ermöglichen ihnen, sich auf ihre Arbeit zu konzentrieren. Systemadministratoren können ein Feld definieren, um den Wert auf vielen allgemeinen Berechnungen einzuschließen, ohne dabei mit einem Entwickler zusammenarbeiten zu müssen. Entwickler können auch die Funktionen der Plattform dafür nutzen, anstatt diese Berechnungen in ihrem eigenen Code auszuführen.
+Berechnete und Rollup-Attribute befreien den Benutzer von manuellen Berechnungen und lassen ihn sich auf die Arbeit konzentrieren. Systemadministratoren können jetzt ein Feld definieren, das den Wert vieler allgemeiner Berechnungen enthält, ohne mit einem Entwickler arbeiten zu müssen. Entwickler können die Plattformfunktionen auch dazu nutzen, diese Berechnungen anzustellen, anstatt dies im eigenen Code zu tun.
 
-Weitere Informationen finden Sie unter: 
-- [Handbuch zur Anpassung von Dynamics 365 Customer Engagement: Definition von Rollupfeldern, die Werte aggregieren](/dynamics365/customer-engagement/customize/define-rollup-fields)
-- [Handbuch zur Anpassung von Dynamics 365 Customer Engagement: Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](/dynamics365/customer-engagement/customize/define-calculated-fields)
-- [Dynamics 365 Customer Engagement Developer Guide: Calculated and rollup attributes (Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Berechnete Attribute und Rollup-Attribute)](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
+Weitere Informationen: 
+- [Common Data Service for Apps Anpassungs-Handbuch: Definieren der Rollupfelder, die Werte zusammenfassen](/dynamics365/customer-engagement/customize/define-rollup-fields)
+- [Common Data Service for Apps Anpassungs-Handbuch: Berechnete und Rollupattribute](/dynamics365/customer-engagement/customize/define-calculated-fields)
+- [Berechnete und Rollupattribute](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
 
 ## <a name="attribute-format"></a>Attributformat
 
-Die Formatierungswerte für Attribute steuern, wie diese in modellgesteuerten Apps angezeigt werden. Entwickler von benutzerdefinierten Apps können diese Informationen verwenden, um ähnliche Funktionen zu erstellen.
+Die Formatwerte für Attributkontrollen, wie sie in Modell-angetriebenen Apps angezeigt wird. Entwickler benutzerdefinierter Apps verwenden diese Informationen, um ähnliche Erfahrungen zu erstellen.
 
-### <a name="integer-formats"></a>Ganzzahlformate
+### <a name="integer-formats"></a>Ganzzahlige Formate
 
-Verwenden Sie die `Format`-Eigenschaften mit Ganzzahlattributen, um alternative Benutzeroberflächen für diesen Typ anzuzeigen.
+Verwenden Sie die `Format`-Eigenschaft mit Ganzzahlattributen, um andere Benutzerfreundlichkeiten für den Typ anzuzeigen.
 
 |Option|Beschreibung|
 |--|--|
-|`None`|Zeigt ein Textfeld zum Bearbeiten eines numerischen Werts an|
-|`Duration`|Zeigt eine Dropdownliste an, die Zeitintervalle enthält. Ein Benutzer kann einen Wert aus der Liste auswählen oder einen Ganzzahlwert eingeben, der die Anzahl von Minuten darstellt.|
+|`None`|Zeigt ein Textfeld, um einen Zahlenwert zu bearbeiten|
+|`Duration`|Zeigt eine Dropdownliste an, die Zeitintervallen enthält. Ein Benutzer kann einen Wert in der Liste auswählen oder einen ganzzahligen Wert eingeben, der die Anzahl von Minuten darstellt.|
 |`TimeZone`|Zeigt eine Dropdownliste an, die eine Liste von Zeitzonen enthält.|
-|`Language`|Zeigt eine Dropdownliste an, die eine Liste der Sprachen enthält, die für die Organisation aktiviert wurden. Wenn keine anderen Sprachen aktiviert wurden, ist die Basissprache die einzige Option. Der gespeicherte Wert ist der LCID-Wert für die Sprache.|
+|`Language`|Zeigt eine Dropdownliste an, die eine Liste von Sprachen enthält, die für die Organisation aktiviert sind. Wenn keine anderen Sprachen aktiviert sind, ist die einzige Option die Ausgangssprache. Der gespeicherte Wert ist der LCID-Wert für die Sprache.|
 
-### <a name="string-formats"></a>Zeichenfolgenformate
+### <a name="string-formats"></a>Zeichenkettenformate
 
-Verwenden Sie die `FormatName`-Eigenschaft mit Zeichenfolgenattributen, um Werte der [StringFormatName-Klasse](/dotnet/api/microsoft.xrm.sdk.metadata.stringformatname) zum Steuern der Formatierung von Zeichenfolgenattributen festzulegen.
+Verwenden Sie die `FormatName` Eigenschaft mit Zeichenattributen, um Werte von [StringFormatName-Klasse](/dotnet/api/microsoft.xrm.sdk.metadata.stringformatname) festzulegen, um zu steuern, wie das Zeichenfolgenattribut formatiert wird.
 
 |Name|Beschreibung|
 |--|--|
-|`Email`|Das Formularfeld überprüft, ob der Textwert einer E-Mail-Adresse entspricht, und erstellt einen MailTo-Link im Feld.|
-|`PhoneNumber`|Das Formularfeld enthält einen Link zum Initiieren eines Anrufs mit Skype.|
-|`PhoneticGuide`|Nur zur internen Verwendung.|
+|`Email`|Das Formfeld wird den Textwert als E-Mail-Adresse überprüfen und im Feld einen mailto-Link erstellen.|
+|`PhoneNumber`|Das Formularfeld enthält einen Link, um einen Telefonanruf mithilfe von Skype zu initiieren.|
+|`PhoneticGuide`|Nur zur internen Verwendung|
 |`Text`|Das Formular zeigt ein Textfeld an.|
-|`TextArea`|Das Formular zeigt ein Feld für einen Textbereich an.|
-|`TickerSymbol`|Das Formular zeigt einen Link an, über den ein Angebot des Aktientickersymbols geöffnet wird.|
-|`URL`|Das Formular zeigt einen Link zum Öffnen der URL an.|
+|`TextArea`|Das Formular zeigt ein Textbereichsfeld an.|
+|`TickerSymbol`|Das Formular zeigt einen Link an, der sich öffnet, um ein Angebot für das Aktientickersymbol anzuzeigen.|
+|`URL`|Das Formular zeigt einen Link an, um die URL zu öffnen.|
 |`VersionNumber`|Nur zur internen Verwendung.|
 
-### <a name="date-and-time-formats"></a>Formate für Datum und Uhrzeit
+### <a name="date-and-time-formats"></a>Datum- und Zeitformate
 
-Die `DateTimeBehavior`-Eigenschaft zum Steuern des Verhaltens von Datums- und Uhrzeitattributen.
+Die `DateTimeBehavior`-Eigenschaft, um das Verhalten für Datum und Zeitattributte zu steuern.
 Es gibt drei Optionen:
 
-|Option|Kurzbeschreibung|
+|Option|Kurze Beschreibung|
 |--|--|
-|`UserLocal`|Speichert Datum und Uhrzeit als UTC-Wert im System.|
-|`DateOnly`|Speichert den tatsächlichen Datumswert mit dem Zeitwert 00:00 Uhr (00:00:00) im System.|
-|`TimeZoneIndependent`|Speichert die tatsächlichen Werte für Datum und Uhrzeit im System unabhängig von der Zeitzone des Benutzers.|
+|`UserLocal`|Speichert den Datums- und Uhrzeitwert als UTC-Wert im System.|
+|`DateOnly`|Speichert den tatsächlichen Datumswert mit dem Zeitwert als 00:00 Uhr (00:0000) im System.|
+|`TimeZoneIndependent`|Speichert die tatsächlichen Datums- und Uhrzeitwerte im System unabhängig von der Benutzerzeitzone.|
 
-Verwenden Sie die `Format`-Eigenschaft zum Steuern davon, wie der Wert in einer modellgesteuerten App unabhängig von `DateTimeBehavior` angezeigt wird.
+Verwenden der `Format`-Eigenschaften, um zu steuern, wie beispielsweise Wert in einer Modell-angetriebenen App unabhängig von `DateTimeBehavior` angezeigt werden.
 
 |Option|Beschreibung|
 |--|--|
-|DateAndTime|Zeigt Datum und Uhrzeit vollständig an.|
-|DateOnly|Zeigt nur das Datum an.|
+|DateAndTime|Datum und Uhrzeit vollständig anzeigen|
+|DateOnly|Nur das Datum anzeigen.|
 
-Weitere Informationen finden Sie unter [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Verhalten und Format des Datums- und Uhrzeitattributs](/dynamics365/customer-engagement/developer/behavior-format-date-time-attribute).
+Weitere Informationen: [Verhalten und Format des Datums- und Uhrzeitattributs](/dynamics365/customer-engagement/developer/behavior-format-date-time-attribute)
 
 ## <a name="auto-number-attributes"></a>Automatische Nummerierungsattribute
 
-Sie können automatische Nummerierungsattribute für alle Entitäten festlegen. Derzeit können Sie das Attribut programmgesteuert hinzufügen. Es gibt keine Benutzeroberfläche zum Hinzufügen dieses Attributtyps.
-Weitere Informationen finden Sie unter [Dynamics 365 Customer Engagement Developer Guide: Create auto-number attributes (Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Erstellen von automatischen Nummerierungsattributen)](/dynamics365/customer-engagement/developer/create-auto-number-attributes).
+Sie können ein automatisches Nummerierungsattribut für eine beliebige Entität hinzufügen. Im Moment können Sie das Attribut auch programmgesteuert hinzufügen. Es gibt keine Benutzerschnittstelle, um dieses Typ des Attributs hinzuzufügen.
+Weitere Informationen [Automatisch nummerierte Attribute erstellen](/dynamics365/customer-engagement/developer/create-auto-number-attributes)
 
 ## <a name="option-sets"></a>Optionssätze
 
-Diese Attribute, die einen Satz von Optionen anzeigen, können einen Optionssatz, der von einem Attribut definiert wird, oder einen separaten Optionssatz referenzieren, der von mehreren Attributen gemeinsam genutzt werden kann. Das ist besonders nützlich, wenn Werte in einem Attribut auch für andere Attribute gelten. Durch das Referenzieren eines allgemeinen Optionssatzes können die Optionen an einem Ort verwaltet werden. Die Optionssätze, die freigegeben werden können, sind *globale* Optionssätze. Die Optionssätze, die in Attributen definiert sind, sind *lokale* Optionssätze.
+Diese Attribute, die eine Gruppe von Optionen anzeigen, können sich auf einen Satz von Optionen  beziehen, die durch das Attribut definiert sind oder sie können sich auf einen separaten Satz von Optionen beziehen, die von mehreren für ein Attribut freigegeben werden können. Dies gilt besonders dann, wenn Werte in einem Attribut auch für andere Attribute gelten. Durch das Verweisen auf einen allgemeinen Satz von Optionen können die Optionen an einem zentralen Ort verwaltet werden. Diese Optionssätze, die freigegeben werden können, sind *globale* . Optionssätze. Die im Attribut definierten sind *lokale* Optionssätze.
 
-### <a name="retrieve-options-data"></a>Abrufen von Optionsdaten
-Der Organisationsdienst bietet Anforderungsklassen, die Sie verwenden können, um die von einem Attribut verwendeten Optionen abzurufen.
+### <a name="retrieve-options-data"></a>Optionen Daten abrufen
+Der Organisationsservice stellt Anforderungsklassen zur Verfügung, die Sie verwenden können, um die Optionen abzurufen, die durch ein Attribut verwendet werden.
 
-#### <a name="use-the-organization-service-to-retrieve-options"></a>Verwenden des Organisationsdiensts zum Abrufen von Optionen
+#### <a name="use-the-organization-service-to-retrieve-options"></a>Nutzen Sie den Organistionsservicce, um Optionen abzurufen
 
-Alle Attribute mit Optionen erben von [EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) und enthalten eine [OptionSet-Eigenschaft](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset). Diese Eigenschaft enthält [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata)-Elemente, die wiederum die Optionen in der [Optionseigenschaft](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options) enthalten. 
+Jedes der Attribute mit Optionen von [EnumAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata) geerbt und umfasst eine [Optionssatz-Eigenschaft](/dotnet/api/microsoft.xrm.sdk.metadata.enumattributemetadata.optionset). Diese Eigenschaft enthält, [OptionSetMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata) welche Optionen in der [Optionseigenschaft](/dotnet/api/microsoft.xrm.sdk.metadata.optionsetmetadata.options) enthalten. 
 
-Mit dem Organisationsdienst können Sie die folgenden Nachrichten zum Abrufen von Informationen über Optionssätze verwenden:
+Mit dem Organisationsservice können Sie die folgenden Nachrichten verwenden, um Informationen zu  Optionsets abzurufen:
 
 |Anforderungsklasse|Beschreibung|
 |--|--|
-|[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |Ruft Daten über alle *globalen* Optionssätze ab.|
-|[RetrieveAttributeRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveattributerequest) |Ruft Daten über ein Attribut ab, einschließlich aller *lokalen* Optionssätze.|
-|[RetrieveMetadataChangesRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievemetadatachangesrequest) |Ruft Metadaten basierend auf einer Abfrage ab, die *lokale* Optionssätze enthalten kann.<br />Weitere Informationen finden Sie unter [Abrufen und Erkennen von Änderungen bei Metadaten](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata).|
-|[RetrieveOptionSetRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveoptionsetrequest) |Ruft Daten über einen *globalen* Optionssatz ab.|
+|[RetrieveAllOptionSetsRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievealloptionsetsrequest) |Ruft Daten für alle *globalen* Optionssets ab|
+|[RetrieveAttributeRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveattributerequest) |Ruft Daten über ein Attribut mit allen *lokalen* Optionensets ab|
+|[RetrieveMetadataChangesRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrievemetadatachangesrequest) |Ruft Metadaten auf Basis einer Abfrage ab, die *lokalw* Optionsets umfassen kann<br />Weitere Informationen: [Abrufen und Erkennen von Änderungen bei Metadaten](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata)|
+|[RetrieveOptionSetRequest](/dotnet/api/microsoft.xrm.sdk.messages.retrieveoptionsetrequest) |Ruft Daten für alle *globalen* Optionssets ab.|
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen: 
 - [Beispiel: Speichern von Attributauswahllisten-Metadaten in einer Datei](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Anpassen von globalen Optionssätzen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [Common Data Service for Apps Entwickler-Handbuch: Bearbeiten von globalen Optionssätzen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
-#### <a name="use-the-web-api-to-retrieve-options"></a>Verwenden der Web-API zum Abrufen von Optionen
+#### <a name="use-the-web-api-to-retrieve-options"></a>Nutzen Sie den Web API, um Optionen abzurufen
 
-Die Web-API stellt RESTful-Abfragen für Optionswerte bereit. Sie können lokale und globale Optionen abrufen, indem Sie die Attribute innerhalb einer Entität abrufen. Das folgende Beispiel gibt [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) für die Optionen zurück, die in der Eigenschaft [Account](reference/entities/account.md).[AccountCategoryCode-Eigenschaft](reference/entities/account.md#BKMK_AccountCategoryCode) enthalten sind.
+Der Web API stellt einen beruhigenden Stil zum Abfragen von Optionswerten bereit. Sie können diese lokalen bzw. globalen Optionen abrufen, indem Sie die Attribute innerhalb einer Entität abrufen. Im folgenden Beispiel gibt [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) für die Optionen zurück, einschließlich [Konto](reference/entities/account.md).[AccountCategoryCode property](reference/entities/account.md#BKMK_AccountCategoryCode).
 
 `GET <organization url>/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes(LogicalName='accountcategorycode')/Microsoft.Dynamics.CRM.PicklistAttributeMetadata?$select=LogicalName&$expand=OptionSet`
 
-Mit der Web-API können Sie auch die Funktion [RetrieveMetadataChanges](/dynamics365/customer-engagement/web-api/retrievemetadatachanges) verwenden.
+Mit der Web API können Sie auch [RetrieveMetadataChanges-Funktion](/dynamics365/customer-engagement/web-api/retrievemetadatachanges) abrufen.
 
-Weitere Informationen finden Sie unter [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Abfragen von Metadaten mit der Web-API > Abfragen von EntityMetadata-Attributen](/dynamics365/customer-engagement/developer/webapi/query-metadata-web-api#querying-entitymetadata-attributes)
+Weitere Informationen: [Abfrage von Metadaten mithilfe der Web API> Abfrage von EntityMetadaten-Attributen](/dynamics365/customer-engagement/developer/webapi/query-metadata-web-api#querying-entitymetadata-attributes)
 
 
 
-## <a name="attribute-mapping"></a>Attributzuordnung
+## <a name="attribute-mapping"></a>Attribut-Zuordnung
 
-Wenn Sie einen Entitätsdatensatz im Kontext eines bereits vorhandenen Entitätsdatensatzes erstellen, können Sie bestimmte Werte automatisch von dem vorhandenen Entitätsdatensatz als Standardwerte für den neuen Entitätsdatensatz übertragen. Dies optimiert die Dateneingabe für Personen, die modellgesteuerte Apps verwenden. Anwendungsbenutzer können die zugeordneten Werte sehen und bearbeiten, bevor sie die Entität speichern.
+Beim Erstellen eines neuen Entitätsdatensatz im Rahmen eines vorhandenen Entitätsdatensatzes können Sie bestimmte Werte des vorhandenen Datensatz über Standardwerte für den als neuen Entitätsdatensatz automatisch übertragen. Dadurch wird die Dateneingabe für Personen geführt , die Modell-angetriebene Apps verwenden. Anwendungsbenutzer sehen die zugeordneten Werte und können sie bearbeiten vor dem Speichern der Entität.
 
-Für Entwickler, die benutzerdefinierte Clients erstellen, kann das gleiche Verhalten erreicht werden, indem die `InitializeFrom`-Nachricht ([InitializeFromRequest Class](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) beim Organisationsdienst oder die Funktion [InitializeFrom](/dynamics365/customer-engagement/web-api/initializefrom) bei der Web-API) verwendet wird, um die Entitätsdaten mit den konfigurierten Standardwerten festzulegen.
+Für die Entwickler, die benutzerdefinierte Clients erstellen, kann das gleiche Verhalten erreicht werden, indem die `InitializeFrom`Meldung (Organisations-Service [InitializeFromRequest-Klasse](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) oder Internet API [InitializeFrom-Funktion](/dynamics365/customer-engagement/web-api/initializefrom)) verwendet wird, um die Entitätsdaten mit konfigurierten festgelegten Standardwerten abzurufen.
 
 Weitere Informationen 
-- [Dynamics 365 Customer Engagement Customization Guide: Map entity fields (Handbuch zur Anpassung von Dynamics 365 Customer Engagement: Zuordnen von Entitätsfeldern)](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Anpassen von Entitäts- und Attributzuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [Common Data Service for Apps Anpassungs-Handbuch: Zuordnungsentitätsfelder](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [Common Data Service for Apps Entwicklerhandbuch: Anpassen von Entitäts- und Attribut-Zuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>Siehe auch
 
-[Entitäten in Common Data Service für Apps](entities.md)
+[Common Data Service für Apps-Entitäten](entities.md)

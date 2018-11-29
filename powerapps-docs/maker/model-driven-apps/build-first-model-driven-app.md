@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 04/18/2018
+ms.date: 10/15/2018
 ms.author: matp
 search.audienceType:
   - maker
@@ -31,16 +31,14 @@ Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. Wenn Sie noch ke
 ## <a name="create-your-model-driven-app"></a>Erstellen Sie Ihre modellgesteuerte Anwendung
 
 1.  Wählen Sie die gewünschte Umgebung aus oder gehen Sie zu [PowerApps-Administratorcenter](https://admin.powerapps.com/), um eine neue zu erstellen.
-2.  Im linken Navigationsbereich wählen Sie die Option **Modell-angetrieben** aus. 
-
-    ![Modellgesteuert](media/build-first-model-driven-app/choose-design-mode.png)
 
   > [!IMPORTANT]
   > "Wenn der **Modell-angetriebe** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).   
 
-3. Im linken Bereich wählen Sie die Option **Anwendungen** und anschließend **App erstellen** aus.
+2. Klicken Sie auf der **Start**-Seite die Option **Ohne Vorlage erstellen** für eine modellgesteuerte App aus.
+![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
 
-4.  Klicken Sie auf der Seite **Eine neue App erstellen "** und geben Sie die folgenden Details ein und wählen dann **Fertig** aus: 
+3.  Klicken Sie auf der Seite **Eine neue App erstellen "** und geben Sie die folgenden Details ein und wählen dann **Fertig** aus: 
   - **Name**: Geben Sie einen Namen für die App ein, wie *Myfirstapp*. 
   - **Beschreibung**: Geben Sie eine kurze Beschreibung ein, um was es bei der App geht, wie *Dies ist meine erste App*.
 Informationen zu den zusätzlichen App-Eigenschaften finden Sie unter [Eine App erstellen](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app)

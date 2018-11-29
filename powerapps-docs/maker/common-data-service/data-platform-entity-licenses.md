@@ -50,13 +50,13 @@ Barb und Isaac erstellen Apps in PowerApps mit der CDS for Apps, um ihre Daten z
 
 Barb erstellt zwei Canvas-Apps:
 
-* App 1 &ndash; verwendet die Kontaktentität zusammen mit einer benutzerdefinierten Entität, die zugehörige Informationen speichert
-* App 2 &ndash; verwendet die Kontaktentität zusammen mit der Vorfallentität, die eine eingeschränkte Entität ist
+* App 1 &ndash; verwendet die Terminentität zusammen mit einer benutzerdefinierten Entität, die zugehörige Informationen speichert
+* App 2 &ndash; verwendet die Terminentität zusammen mit der Vorfallentität, die eine eingeschränkte Entität ist
 
 Isaac erstellt zwei modellgesteuerte Apps:
 
-* App 3 &ndash; verwendet die Kontaktentität zusammen mit einer benutzerdefinierten Entität, die zugehörige Informationen speichert
-* App 4 &ndash; verwendet die Kontaktentität zusammen mit der Vorfallentität, die eine eingeschränkte Entität ist
+* App 3 &ndash; verwendet die Terminentität zusammen mit einer benutzerdefinierten Entität, die zugehörige Informationen speichert
+* App 4 &ndash; verwendet die Terminentität zusammen mit der Vorfallentität, die eine eingeschränkte Entität ist
 
 Barb und Isaac benötigen die folgenden Lizenzen:
 * Barb benötigt eine PowerApps-Plan 1-Lizenz, um Canvas-Apps mithilfe der CDS for Apps zu erstellen. Wenn sie eine Datenbank oder eine benutzerdefinierte Entität erstellen muss, benötigt Sie eine PowerApps-Plan 2-Lizenz.

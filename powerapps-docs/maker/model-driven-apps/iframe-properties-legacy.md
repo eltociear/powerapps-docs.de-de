@@ -25,9 +25,7 @@ Sie können iFrames einem Formular hinzufügen, um Inhalt von einer anderen Webs
 
 Gehen Sie folgendermaßen vor, um die iFrame-Eigenschaften anzuzeigen.
 
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-    ![Modellgesteuerter Entwurfsmodus](../model-driven-apps/media/model-driven-switch.png)
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**. 
 

@@ -28,9 +28,8 @@ Wenn ein PowerApps-Formular für eine Standard-Entität nicht den Anforderungen 
 
 In diesem Thema fügen Sie ein Feld einem Formular hinzu.   
   
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
-    ![Modellgesteuerter Entwurfsmodus](../model-driven-apps/media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment). 

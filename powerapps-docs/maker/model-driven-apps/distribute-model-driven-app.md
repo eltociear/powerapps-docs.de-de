@@ -33,9 +33,7 @@ Modellgesteuerte Apps werden als Lösungskomponenten verteilt. Nachdem Sie eine 
 ## <a name="add-an-app-to-a-solution"></a>Eine App zu einer Lösung hinzufügen
 Um Ihre App zu verteilen, erstellen Sie eine Lösung, damit die Anwendung für den Export verpackt werden kann.
 
-1. Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-    ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2. Wählen Sie **Lösungen** und dann **Neue Lösung** aus.
 3. Füllen Sie die Felder auf der Seite **Neue Lösung** aus und wählen Sie dann **Speichern**. Weitere Informationen: [Erstellen einer Lösung](../common-data-service/create-solution.md)
@@ -63,9 +61,7 @@ Um Ihre Anwendung so zu verteilen, dass sie in eine andere Umgebung importiert o
 ## <a name="import-a-solution"></a>Importieren einer Lösung  
 Wenn Sie eine Lösungs-ZIP-Datei erhalten, die die App enthält, die Sie importieren möchten, öffnen Sie die Lösungskomponentenseite und importieren Sie die Lösung. Wenn die Lösung erfolgreich importiert wurde, kann die App in Ihrer Umgebung verwendet werden.
 
-1. Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-    ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2. Wählen Sie **Lösungen** und dann in der Symbolleiste **Importieren**.
 3. Wählen Sie die Datei aus, die Sie importieren möchten, und klicken Sie dann auf **Weiter**.

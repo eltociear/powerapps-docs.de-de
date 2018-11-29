@@ -1,11 +1,11 @@
 ---
-title: Einführung in Lösungen | Microsoft-Dokumentation
-description: Erfahren Sie, wie Lösungen zum Erstellen von modellgesteuerten Apps verwendet werden.
+title: Einführung in Lösungen | Microsoft Docs
+description: 'Erfahren Sie, wie Lösungen verwendet werden, um Modelle zu erstellen.'
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
-manager: faisalmo
+author: shmcarth
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,152 +13,147 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/19/2018
+ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: bcf89d9c52e1e277f65f7f02013885f30862aa56
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864977"
+  - PowerApps
+  - D365CE
 ---
+
 # <a name="introduction-to-solutions"></a>Einführung in Lösungen
 
-Mithilfe von *Lösungen* verfassen, packen und pflegen Benutzer, die Anpassungen vornehmen, und Entwickler Softwareeinheiten, die Common Data Service für Apps erweitern. Die Apps Dynamics 365 for Sales, Marketing und Customer Service beispielsweise bestehen aus Lösungen. Benutzer, die Anpassungen vornehmen, und Entwickler verteilen Lösungen so, dass Organisationen Common Data Service für Apps zum Installieren und Deinstallieren von Geschäftsfunktionen verwenden können, die durch die Lösung definiert werden.
+*Lösungen* wie Anpasser und Entwickler Lösungen von Softwareeinheiten erstellen, und verpacken, die Common Data Service (CDS) für Apps verpacken und verwalten. Beispielsweise sind Dynamics 365 for Sales, Marketing, Kundenservice Apps von Lösungen verfasst. Anpasser und Entwickler verteilen Lösungen, sodass Organisationen Common Data Service for Apps verwenden können, um die Funktionalität für das Unternehmen, das durch die Lösung definiert ist, installieren und deinstallieren.
 
-Jede Anpassung, die Sie an Common Data Service für Apps oder einer zuvor installierten Lösung vornehmen, ist Teil einer Lösung. Jede Änderung, die Sie anwenden, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösung exportieren, enthält diese alle Änderungen, die an dieser Lösung vorgenommen wurden in einer Datei, die Sie dann in eine andere Umgebung von Common Data Service für Apps exportieren können.
+Alle Anpassungen, die Sie an den CDS Apps oder einer bereits installierten Lösung machen, ist Teil einer Lösung. Jede Änderung, die Sie haben, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösungen exportiert, enthält sie alle Änderungen, die für die Lösung in eine Datei angewendet wurden, die Sie in verschiedenen CDS für App-Umgebung importieren können.
 
-Zum Transportieren von Anpassungen oder Erweiterungen zwischen verschiedenen Umgebungen von Common Data Service für Apps oder zum Verteilen von Lösungen mithilfe von AppSource, müssen Sie zunächst das Lösungsframework verstehen.
+Wenn Sie Anpassungen oder Erweiterungen zwischen verschiedenen CDS für App-Umgebungen übertragen oder Lösungen mit AppSource verteilen, müssen Sie das Lösungsframework kennen.
 
 ## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen
 
-Es gibt zwei Arten von Lösungen: *verwaltete* und *nicht verwaltete*.
+Es gibt zwei Typen von Lösungen: *verwaltet* und *nicht verwaltet*.
 
-Eine **verwaltete** Lösung ist eine vollständige Lösung, die verteilt und installiert werden soll. 
+Eine **verwaltete** Lösung ist eine abgeschlossene Lösung, die dafür vorgesehen ist, verteilt und installiert zu werden. 
 - Sie können die Komponenten einer verwalteten Lösung nicht bearbeiten.
-- Sie können verwaltete Lösungen nicht exportieren.
-- Sie können nicht verwaltete Anpassungen zu den Komponenten einer verwalteten Lösung hinzufügen. Wenn Sie dies tun, erstellen Sie eine Abhängigkeit zwischen Ihren nicht verwalteten Anpassungen und der verwalteten Lösung. Wenn eine Abhängigkeit vorhanden ist, kann die verwaltete Lösung erst deinstalliert werden, wenn Sie die Abhängigkeit entfernt haben.
-- Wenn eine verwaltete Lösung gelöscht (deinstalliert) wird, werden alle enthaltenen Anpassungen und Erweiterungen entfernt.
+- Verwaltete Lösungen können nicht exportiert werden.
+- Sie können nicht verwaltete Anpassungen Komponenten einer verwalteten Lösung hinzufügen. Wenn Sie dies tun, erstellen Sie eine Abhängigkeit zwischen den nicht verwalteten und den verwalteten Anpassungen der Lösung. Wenn eine Abhängigkeit vorhanden ist, kann die verwaltete Lösung nicht deinstalliert werden, nachdem Sie die zunächst entfernen.
+- Wenn einer verwalteten Lösung gelöscht (deinstalliert) wird, werden alle Anpassungen und Erweiterungen die darin enthalten sind, entfernt.
 
   > [!IMPORTANT]
-  > Die folgenden Daten gehen beim Deinstallieren einer verwalteten Lösung verloren: Daten, die in benutzerdefinierten Entitäten gespeichert sind, die Teil der verwalteten Lösung sind, und Daten, die in benutzerdefinierten Attributen gespeichert sind, die Teil der verwalteten Lösung in anderen Entitäten sind, die nicht Teil der verwalteten Lösung sind.
+  > Wenn Sie eine verwaltete Lösung deinstallieren, gehen die folgenden Daten verloren: Daten in  benutzerdefinierten Entitäten, die Teil der Lösung sind sowie die Daten, die in benutzerdefinierten Attributen in Systementitäten gespeichert werden, die nicht Teil der verwalteten Lösung sind.
 
-Eine **nicht verwaltete** Lösung ist eine Lösung, die sich noch in der Entwicklung befindet oder nicht verteilt werden soll. 
-- Solange eine Lösung nicht verwaltet ist, können Sie ihr Komponenten hinzufügen oder entfernen. 
-- Sie können eine nicht verwaltete Lösung exportieren, um nicht verwaltete Anpassungen von einer Umgebung in eine andere zu transportieren.
-- Wenn eine nicht verwaltete Lösung gelöscht wird, wird nur der Lösungscontainer der enthaltenen Lösungen gelöscht. Alle nicht verwalteten Anpassungen bleiben wirksam und gehören zur Standardlösung. 
-- Wenn die nicht verwaltete Lösung vollständig ist, und Sie sie verteilen möchten, exportieren Sie sie als verwaltete Lösung.
+Eine **nicht verwaltete** Lösung ist eine Lösung, die sich immer noch in der Entwicklung befindet oder nicht dafür vorgesehen ist, verteilt zu werden. 
+- Während eine Lösung nicht verwaltet ist, können Sie den Vorgang fortsetzen, um Komponenten hinzuzufügen und zu entfernen. 
+- Sie können eine nicht verwaltete Lösung exportieren, um nicht verwaltete Anpassungen von einer Umgebung in eine andere zu übertragen.
+- Wenn einer nicht verwalteten Lösung gelöscht wird, wird nur der Lösungscontainer sämtlicher Anpassungen, die in einer Anpassung enthalten sind, gelöscht. Alle nicht verwalteten Anpassungen bleiben bestehen und gehören zu der Standardlösung. 
+- Wenn die nicht verwaltete Lösung vollständig ist und Sie sie verteilen möchten, exportieren und verpacken möchten, exportieren Sie sie wie eine verwaltete Lösung.
 
   > [!NOTE]
-  > Sie können eine verwaltete Lösung nicht in die gleiche Umgebung importieren, die die ursprüngliche nicht verwaltete Lösung enthält. Zum Testen einer verwalteten Lösung benötigen Sie eine separate Umgebung, in die Sie sie importieren können.
+  > Sie können eine nicht verwaltete Lösung in dieselbe Umgebung importieren, die der Ursprungsvertrag der nicht verwalteten Lösung enthält. Wenn Sie eine verwaltete Lösung testen, wird eine separate Umgebungen benötigt, um sie zu importieren.
 
 ## <a name="solution-publishers"></a>Lösungsherausgeber
 
-Jede Lösung ist mit einem Lösungsherausgeber verknüpft. Der Lösungsherausgeber stellt Informationen zum Kontaktieren des Herausgebers und einen Anpassungspräfixwert bereit. Der Standardwert ist `new`.
+Jede Lösung ist mit einem Lösungsherausgeber verbunden. Dem Lösungsherausgeber werden Informationen bereitgestellt, wie der Herausgeber kontaktiert werden kann und wie der Anpassungspräfixwert ist. Der Standardwert ist `new`.
 
-Wenn Schemaänderungen als Teil einer Lösung enthalten sind, wird dem Namen des Schemaelemente das Anpassungspräfix des Lösungsherausgebers vorangestellt. Zu Benutzerdefinierten Aktionen wird dieser Wert ebenfalls hinzugefügt. Das ist hilfreich, da damit eine einfache Erkennung der Lösung ermöglicht wird, die dem Schemaelement oder der benutzerdefinierten Aktion hinzugefügt wird. Es ist nicht erforderlich, dass alle Schemaelemente und benutzerdefinierten Aktionen in einer Lösung dasselbe Anpassungspräfix verwenden, aber es wird dringend empfohlen.
+Wenn beliebige Schemaänderungen als Teil einer Lösung enthalten sind, wird das Lösungsherausgeberanpassungspräfix  mit dem Namen der Schemaelemente verwendet. Alle benutzerdefinierten Aktionen haben auch diesen Wert, der für diese Anfragen angefügt wird. Dies ist dann von Nutzen, da dies eine einfache Erkennung erlaubt, welche Lösungen dem Schemaelement oder der benutzerdefinierten Aktion hinzugefügt werden. Es ist nicht für alle Schemaelemente und benutzerdefinierte Aktionen des Schemas erforderlich, in einer Lösung dasselbe Anpassungspräfix zu verwenden, aber es ist jedoch empfohlen.
 
 > [!IMPORTANT]
-> Bevor Sie mit dem Erstellen einer Lösung beginnen, sollten Sie einen Datensatz für den Lösungsherausgeber und eine neue mit dem Herausgeber verknüpfte Lösung erstellen. Sie sollten sicherstellen, dass das Anpassungspräfix einen Wert darstellt, der für Sie sinnvoll ist. 
+> Bevor Sie mit dem Erstellen einer Lösung beginnen, sollten Sie einen Lösungsherausgeberdatensatz erstellen und eine neue Lösung erstellen, die mit diesen verknüpft ist. Sie müssen sicherstellen, dass der Wert einen Anpassungspräfix darstellt, der für Sie Sinn ergibt. 
 
-Die Auswahl Ihres Lösungsherausgebers ist wichtig, wenn Sie ein Update für eine Lösung veröffentlichen möchten, die Sie bereits geliefert haben. Ein Update kann nur auf verwaltete Lösungen mit dem gleichen Herausgeber wie die ursprüngliche verwaltete Lösung angewendet werden. 
+Die Auswahl des Lösungsherausgebers ist wichtig, wenn Sie ein Update für Lösungen veröffentlichen wollen, die Sie versenden möchten. Ein Update kann für eine verwaltete Lösung mit demselben Herausgeber wie die ursprüngliche verwaltete Lösung angewendet werden. 
 
-Weitere Informationen finden Sie unter [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Pflegen von verwalteten Lösungen > Erstellen von Aktualisierungen einer verwalteten Lösung](/dynamics365/customer-engagement/developer/maintain-managed-solutions#create-managed-solution-updates)
+Weitere Informationen: [Verwalten von verwaltete Lösungen > Verwaltete Lösungs-Updates erstellen](/dynamics365/customer-engagement/developer/maintain-managed-solutions#create-managed-solution-updates)
 
 ## <a name="create-a-solution-publisher-and-solution"></a>Erstellen eines Lösungsherausgebers und einer Lösung 
 
-Zum Erstellen eines Lösungsherausgebers und einer Lösung müssen Sie zum Anpassungsbereich von Dynamics 365 navigieren.
+Einen Lösungsherausgeber und eine Lösung erstellen, die zum CDS für App-Anpassungsbereich navigieren müssen.
 
-Auf der Website [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+Von [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
-1. Klicken Sie auf das *Waffel*-Symbol in der oberen linken Ecke.
-2. Klicken Sie im Dropdownmenü auf **Alle Apps**.
-3. Suchen Sie nach **Dynamics 365 - custom app** (benutzerdefinierte Dynamics 365-App).
- Sie sollten auf die Auslassungspunkte (...) klicken und **Pin this app** (Diese App anheften) auswählen, damit Sie sie beim nächsten Mal leichter finden.
-4. Klicken Sie auf die **Dynamics 365 - custom app** (benutzerdefinierte Dynamics 365-App), und wählen Sie die App aus.
-5. Navigieren Sie zu **Einstellungen** > **Anpassung** > **Anpassungen**.
+1. Wählen Sie das Symbol *Waffel* oben links aus
+2. Wählen Sie **Alle Apps**.
+3. Suchen Sie nach **CDS für Apps - benutzerdefinierte App**.
+ Sie können auf die Ellipse (...) klicken und **App anheften** auswählen, sodass die Navigation beim nächsten Mal einfacher ist.
+4. Klicken Sie auf **CDS für Apps - benutzerdefinierte App** App und wählen Sie sie aus.
+5. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
-Auf der Website [home.dynamics.com](http://home.dynamics.com/)
+Von [home.dynamics.com](http://home.dynamics.com/)
 
-1. Suchen Sie nach der Kachel **Dynamics 365 - custom** (Dynamics 365 – Benutzerdefiniert), und klicken Sie darauf.
-2. Navigieren Sie zu **Einstellungen** > **Anpassung** > **Anpassungen**.
+1. Suchen Sie die Kachel **CDS für Apps - benutzerdefinierte App** und klicken Sie darauf.
+2. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
 ### <a name="create-a-solution-publisher"></a>Erstellen eines Lösungsherausgebers
 
-1. Klicken Sie im Bereich „Anpassungen“ auf **Herausgeber**.
+1. Klicken Sie im Anpassungsbereich und wählen Sie **Herausgeber**
 2. Klicken Sie auf **Neu**.
-3. Geben Sie im Formular „Herausgeber“ einen **Anzeigenamen** ein. Der Wert für einen **Namen** wird basierend auf dem Anzeigenamen generiert. Sie können den generierten Wert akzeptieren oder einen neuen Wert angeben.
-4. Geben Sie im Feld **Präfix** das Anpassungspräfix an, das den benutzerdefinierten Schemaelementen vorangestellt werden soll, die Sie bei der Entwicklung Ihrer Lösung hinzufügen. Der Standardwert ist `new`. Wählen Sie einen Wert aus, der Ihre Organisation darstellt und bei der Identifizierung der von Ihrer Lösung installierten Komponenten hilft.
-5. Ein **Optionswertpräfix**-Wert wird basierend auf dem ausgewählten Anpassungspräfix generiert. Dieser Wert wird allen Werten für Optionen von Optionssätzen vorangestellt, die Sie den Attributen in Ihrer Lösung hinzufügen. Dieser Wert hilft beim Identifizieren von Optionen, die Sie Ihrer Lösung hinzufügen.
-6. Im Abschnitt **Kontaktdetails** des Formulars können Sie Kontaktinformationen hinzufügen, die Sie für diejenigen bereitstellen möchten, die Ihre Lösung installieren.
-7. Klicken Sie auf **Speichern und schließen**, wenn Sie fertig sind.
+3. Im Herausgeberformular geben Sie einen **Anzeigename** ein. Ein **Namen**-Wert wird basierend auf dem Wert in Anzeigename generiert. Sie können den generierten Wert übernehmen oder einen neuen Namen eingeben.
+4. Klicken Sie im Feld **Präfix** und definieren Sie den Anpassungspräfix, der für alle angepassten Schemaelementen angefügt werden sollte, die Sie hinzufügen, wenn Sie die Lösung entwickeln. Der Standardwert ist `new`. Wählen Sie einen Wert aus, der Ihre Organisation darstelle und Personen hilft zu identifizieren, welche Komponenten in Ihrem System von Ihrer Lösung stammt.
+5. Ein **Optionswertpräfix**-Wert wird auf Ihrer Auswahl für Anpassungspräfix generiert. Dies ist ein Wert, der für alle möglichen Werte für Optionssatzoptionen angefügt ist, für die Sie Attribute in Ihrer Lösung hinzufügen. Dieser Wert hilft, alle Optionen zu identifizieren, die Sie für die Lösung hinzufügen.
+6. Im Abschnitt des Formulars **Kontaktdetails**, können Sie möglicherweise alle Kontaktinformationen hinzufügen, die Sie für Benutzer zur Verfügung stellen möchten, um Ihre Lösung auszuwählen.
+7. Klicken oder tippen Sie auf **Speichern und schließen**, wenn Sie fertig sind.
 
 ### <a name="create-a-solution"></a>Erstellen einer Lösung
 
-1. Klicken Sie im Bereich „Anpassungen“ auf **Lösungen**.
+1. Klicken Sie im Anpassungsbereich und wählen Sie **Lösungen**
 2. Klicken Sie auf **Neu**.
-3. Geben Sie im Formular „Lösung“ einen **Anzeigenamen** ein. Der Wert für einen **Namen** wird basierend auf dem Anzeigenamen generiert. Sie können den generierten Wert akzeptieren oder einen neuen Wert angeben.
-4. Wählen Sie im Feld **Herausgeber** den Herausgeber aus, den Sie im Schritt [Erstellen eines Lösungsherausgebers](#create-a-solution-publisher) erstellt haben.
-5. Wählen Sie im Feld **Version** eine entsprechende Version für Ihre Lösung aus, z.B. 1.0.0.0.
-6. Klicken Sie auf **Speichern**, wenn Sie fertig sind.
+3. Im Lösungsformular geben Sie einen **Anzeigename** ein. Ein **Namen**-Wert wird basierend auf dem Wert in Anzeigename generiert. Sie können den generierten Wert übernehmen oder einen neuen Namen eingeben.
+4. Klicken Sie im Feld **Herausgeber** und suchen Sie dann den Wert, den darin erstellt haben unter[Lösungsherausgeber erstellen](#create-a-solution-publisher)
+5. Klicken Sie im Feld **Version** und wählen Sie eine entsprechende Versionen für die Lösung aus, z. B.  1.0.0.0.
+6. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
 
 > [!IMPORTANT]
-> Verwenden Sie diese Lösung, wenn Sie eine neue Lösungskomponente erstellen, die in dieser Lösung enthalten sein soll, oder eine andere Lösung, die dem gleichen Lösungsherausgeber zugeordnet ist, um sie hinzuzufügen.
-> Lösungskomponenten, die im Kontext einer Lösung erstellt wurden, die einem anderen Lösungsherausgeber zugeordnet ist, können zwar dieser Lösung hinzugefügt werden, jedoch werden für diese möglicherweise inkonsistente Werte für das Anpassungspräfix festgelegt.
+> Wenn Sie eine neue Lösungskomponente erstellen, die in dieser Lösung enthalten ist, können Sie dieser Lösung oder eine andere Lösung, die mit demselben Lösungsherausgeber zugeordnet wird, um ihn hinzuzufügen.
+> Für Lösungskomponenten, die im Rahmen einer Lösung einem anderen Lösungsherausgeber zugeordnet werden, können sie in dieser Lösung hinzugefügt werden, aber sie hat möglicherweise inkonsistente Anpassungspräfixwerte.
 
 ## <a name="solution-layering"></a>Lösungsebenen
 
-Es ist möglich, zwei verwaltete Lösungen zu installieren, die einander widersprechen, oder eine verwaltete Lösung durch auf die Umgebung angewendete Anpassungen zu überschreiben. Wie das funktioniert:
+Es ist möglich für zwei verwalteten Lösung, dass sie so installiert werden, dass sie sich widersprechen oder dass gewisse Anpassungen, die für die Organisationen angewendet werden, eine verwaltete Lösung überschreiben. Wie funktioniert die Anwendung?
 
-Das funktioniert, weil Common Data Service für Apps verwaltete Lösungen nach der Reihenfolge auswertet, in der sie installiert wurden, und weil alle Anpassungen, die sich nicht in einer verwalteten Lösung befinden, zuletzt ausgewertet werden.
+Das geht, weil Common Data Service für Apps verwaltete Lösungen über die Reihenfolge evaluiert, in der sie installiert wurden und alle Anpassungen, die nicht in einer verwalteten Lösung sind, zuletzt ausgewertet werden.
 
-Im folgenden Diagramm wird vorgestellt, wie verwaltete Lösungen und nicht verwaltete Anpassungen interagieren, um zu steuern, was zur Laufzeit in einer Anwendung enthalten ist.
+Im folgenden Diagramm wird erläutert, wie verwaltete Lösungen und nicht verwaltete Anpassungen interagieren, um das Anwendungsverhalten zu steuern.
 
-![Lösungsebenen in einem Diagramm](media/solution-layering.png)
+![Diagramm zeigt Lösungsüberlagerung](media/solution-layering.png)
 
-In diesem Beispiel wird das Standardverhalten, das in der Systemlösung definiert ist, von verwalteten Lösungen überschrieben oder angefügt. Alle nicht verwalteten Anpassungen können dann Anpassungen überschreiben oder anfügen, die in der Anwendung sichtbar sind.
+In diesem Beispiel wird das Standardverhalten, das in der Systemlösung definiert ist, mit verwalteten Lösungen überschrieben oder verwalteten Lösungen angefügt. Alle nicht verwalteten Anpassungen können dann Anpassungen überschreiben oder anfügen, die dann in der Anwendung angezeigt werden
 
-Weitere Informationen finden Sie unter [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Einführung in Lösungen > Verwaltete und nicht verwaltete Lösungen](/dynamics365/customer-engagement/developer/introduction-solutions#managed-and-unmanaged-solutions)
+Weitere Informationen: [Einführung in Lösungen > Nicht verwaltete und verwaltete Lösungen](/dynamics365/customer-engagement/developer/introduction-solutions#managed-and-unmanaged-solutions).
 
 ## <a name="managed-properties"></a>Verwaltete Eigenschaften
 
-Wenn Sie eine verwaltete Lösung veröffentlichen, kann jede Person, die Ihre Lösung installiert, ihre eigenen nicht verwalteten Anpassungen auf die Lösung anwenden. Diese nicht verwalteten Anpassungen können dann einer Lösung hinzugefügt werden, die als verwaltete Lösung veröffentlicht wurde und von Ihrer Lösung abhängt. Wie können Sie verhindern, dass jemand dies tut? Als Herausgeber der verwalteten Lösung können Sie verwaltete Eigenschaften verwenden, um bestimmte Anpassungen für die Komponenten Ihrer verwalteten Lösung zu deaktivieren.
+Wenn Sie eine verwaltete Lösung verteilen, kann jeder Benutzer, der Ihre Lösung installiert, ihre eigenen nicht verwalteten Anpassungen darauf integrieren. Diese nciht verwalteten Anpassungen können einer Lösung hinzugefügt werden, die dann als verwaltete Lösung verteilt werden, die von Ihrer Lösung abhängen. Aber was, wenn Sie möchten, dass Benutzer manche Aufgaben nicht ausführen? Ähnlich dem Herausgeber einer verwalteten Lösung können Sie die verwalteten Eigenschaften verwenden, um bestimmte Anpassungen für die Komponenten der verwalteten Lösung zu deaktivieren.
 
-Weitere Informationen finden Sie unter [Dynamics 365 Customer Engagement Developer Guide: Use managed properties (Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Verwenden von verwalteten Eigenschaften)](/dynamics365/customer-engagement/developer/use-managed-properties).
+Weitere Informationen: [Bearbeiten von verwalteten Eigenschaften](use-managed-properties.md)
 
 ## <a name="modular-solutions"></a>Modulare Lösungen
 
-Sie können das Lösungsframework verwenden, um diskrete Komponenten zu erstellen, die eine Reihe von Funktionen bereitstellen. Jede verwaltete Lösung kann installiert und deinstalliert werden, um die Bereitstellung des Kunden in den ursprünglichen Zustand zurückzuversetzen. Jede verwaltete Lösung, die Sie erstellen, wird auf der Systemlösung ausgeführt und kann auf die Funktionen der zugrunde liegenden Lösung zugreifen.
+Sie können das Lösungsframework verwenden, um einen einzelnen Satz von Komponenten zu erstellen, die eine Reihe von Funktionen aufweisen. Jede verwaltete Lösung kann installiert und deinstalliert werden, um die Bereitstellung der Kunden an den ursprünglichen Zustand zurückzukehren. Jede verwaltete Lösung, die Sie erstellen, läuft auf der Systemlösung und Sie können auf die Funktionen zugreifen, die dieser Lösung zugrunde liegen.
 
-Außerdem können Sie verwaltete Lösungen erstellen, die auf anderen Lösungen ausgeführt werden, um eine Reihe von Funktionen zu erstellen, die von verschiedenen Lösungen verwendet werden können. Auf diese Weise können Sie ein allgemeines Modul als Lösung erstellen und verwalten, um mehrere Lösungen zu unterstützen. Aus diesem Grund müssen Kunden nur die Lösungen installieren, die für sie geeignet sind, und Sie müssen die gleiche freigegebene Funktion nicht in jeder Lösung einschließen. Wenn Sie ein Update für eine Lösung veröffentlichen müssen, die mehrere Lösungen unterstützt, müssen Sie nur das allgemeine Modul aktualisieren.
+Sie können außerdem verwaltete Lösungen erstellen, die auf anderen Lösungen ausgeführt werden, um um eine Reihe von Funktionen zu erstellen, die von unterschiedlichen Lösungen verwendet werden können. Auf diese Weise können Sie ein häufiges Modul als Lösung erstellen und verwalten, um mehrere Lösungen zu unterstützen. Aus diesem Grund müssen Kunden nur Lösungen installieren, die für sie richtig sind und Sie müssen Sie nicht in freigegebenen Funktion in jeder Lösung freigeben. Wenn Sie ein Update zur Lösung zurückstellen müssen, das mehrere Lösungen unterstützt, müssen Sie nur das allgemeine Modul aktualisieren.
 
-Kunden, Systemimplementierer und andere unabhängige Softwarehersteller können dann Lösungen auf Ihren Lösungen aufbauen, um bestimmte von ihnen benötigte Anpassungen zu erstellen.
+Kunden, System-Implementierungen und anderer ISV können dann Lösungen auf den Lösung aufbauen, die dann bestimmte Anpassungene rreichen, die sie benötigen.
 
-Wenn mehrere Geschäftsfunktionen aus mehreren Lösungen bestehen, werden diese als Pakete bezeichnet. Sie können *Package Deployer* verwenden, um mehrere Lösungen in eine einzelne installierbare Einheit zusammenzufassen.
+Wenn ein Satz von Unternehmens-Funktionalitäten aus mehreren Lösungen besteht, werden die zugewiesenen Pakete bezeichnet. Sie können *Package Deployer* verwenden, um mehrere Lösungen in einer einzelnen installierbaren Einheit zu kombinieren.
 
 ## <a name="deploy-solution-packages"></a>Bereitstellen von Lösungspaketen
 
-Verwenden Sie *Package Deployer* zum Erstellen eines benutzerdefinierten Installers für ein Paket, das Folgendes enthalten kann: 
-- Mindestens eine Lösungsdatei
-- Flatfiles oder exportierte Konfigurationsdatendateien 
-- Benutzerdefinierter Code, der vor, während oder nach der Bereitstellung des Pakets ausgeführt werden kann.
-- HTML-Inhalt für das spezifische Paket, dass am Anfang und am Ende des Bereitstellungsprozesses angezeigt werden kann. Das kann beim Angeben einer Beschreibung der Lösungen und Dateien nützlich sein, die in dem Paket bereitgestellt werden.
+Verwenden Sie die *Package Deployer*, um ein benutzerdefiniertes Installationsprogramm für ein Paket zu erstellen, das integriert werden kann 
+- Eine oder mehrere Lösungsdateien.
+- Flache Dateien oder exportierte Konfigurationsdateien. 
+- Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket  bereitgestellt wurde.
+- inhaltsspezifische HTML für das Paket, das bei Start und Ende des Bereitstellungsprozesses angezeigt werden kann. Dies kann nützlich sein, um eine Beschreibung der Lösungen und Dateien bereitzustellen, die im Paket bereitgestellt werden.
 
-Weitere Informationen finden Sie unter [Dynamics 365 Customer Engagement Developer Guide: Create packages for the Dynamics 365 Package Deployer (Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Erstellen von Paketen für Dynamics 365-Package Deployer)](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
+Weitere Informationen: [Erstellen von Paketen für den CDS for Apps Package Deployer](package-deployer/create-packages-package-deployer.md)
 
-## <a name="team-development-of-solutions"></a>Entwicklung von Lösungen im Team
+## <a name="team-development-of-solutions"></a>Teamentwicklung von Lösungen
 
-Eine Lösungsdatei ist eine einzelne Binärdatei, die sich nicht für die Quellcodeverwaltung oder Teamentwicklung eignet. Es können nicht mehrere Entwickler an den benutzerdefinierten Komponenten in der Lösung arbeiten.
+Eine Lösungsdatei ist jedoch eine einzelne Binärdatei, die sich nicht für die Quellcodeverwaltung oder Teamentwicklung anbietet. Es gibt keine Möglichkeit, dass mehrere Entwickler die benutzerdefinierten Komponenten in der Lösung bearbeiten.
 
-Das Tool *SolutionPackager* löst das Problem bei der Quellcodeverwaltung und Teamentwicklung von Lösungsdateien. Das Tool identifiziert individuelle Komponenten in der komprimierten Lösungsdateien und extrahiert sie als einzelne Dateien. Das Tool kann eine Lösung auch wiederherstellen, indem es die zuvor extrahierten Dateien packt. Dadurch können mehrere Personen unabhängig voneinander an einer Lösung arbeiten und Änderungen in einen gemeinsamen Speicherort extrahieren. Da jede Komponente in der Lösungsdatei in mehrere Dateien aufgeteilt wird, wird das Zusammenführen von Anpassungen ohne Überschreiben der vorherigen Änderungen ermöglicht. Eine sekundäre Verwendung des SolutionPackager-Tools besteht darin, dass es in einem automatisierten Buildprozess aufgerufen werden kann, um eine komprimierte Lösungsdatei aus zuvor extrahierten Komponentendateien zu generieren, ohne dass eine Instanz von Dynamics 365 aktiv sein muss.
+Das *SolutionPackager-Tool* löst das Problem der Quellcodeverwaltung und Teamentwicklung von Lösungsdateien. Das Tool identifiziert einzelne Komponenten in der komprimierten Lösungsdatei und extrahiert sie in einzelne Dateien. Das Tool kann eine Lösungsdatei auch neu erstellen, indem die zuvor extrahierten Dateien gepackt werden. Dadurch können mehrere Personen unabhängig voneinander an einer einzelnen Lösung arbeiten und die Änderungen an eine gemeinsame Stelle extrahieren. Da jede Komponente in der Lösungsdatei in mehrere Dateien zerlegt wurde, ist es möglich, Anpassungen zusammenzuführen, ohne vorherige Änderungen zu überschreiben. Eine zweite Verwendungsmöglichkeit des SolutionPackager-Tools ist, dass es von einem automatischen Buildprozess aufgerufen werden kann, um eine komprimierte Lösungsdatei aus zuvor extrahierten Komponentendateien zu generieren, ohne dass eine aktive CDS for Apps-Instanz erforderlich ist.
 
-Weitere Informationen finden Sie unter [Entwicklerhandbuch zu Dynamics 365 Customer Engagement: Lösungstools für die Teamentwicklung](/dynamics365/customer-engagement/developer/solution-tools-team-development).
+Weitere Informationen: [Lösungstools für die Teamentwicklung](/dynamics365/customer-engagement/developer/solution-tools-team-development)
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service for Apps Developer Overview (Übersicht für Entwickler: Common Data Service für Apps)](overview.md)
+[Common Data Service for Apps-Entwicklerübersicht](overview.md)

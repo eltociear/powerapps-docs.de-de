@@ -2,7 +2,7 @@
 title: Erstellen einer Lösung | MicrosoftDocs
 description: 'Erfahren Sie, wie eine Lösung erstellt wird'
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 10/30/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -29,9 +29,9 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
   
  Weitere Informationen zu Lösungskonzepte, siehe [Arbeiten mit Lösungen](solutions-overview.md).  
   
-1.  Navigieren Sie zu **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Lösungen**. 
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie **Lösungen** aus der linken Navigation. 
   
-2.  Klicken Sie auf **Neu**, und füllen Sie die erforderlichen Felder für die Lösung aus.  
+2.  Klicken Sie auf **Neue Lösung**, und füllen Sie die erforderlichen Felder für die Lösung aus.
   
     |Feld|Beschreibung|  
     |-----------|-----------------|  
@@ -40,7 +40,7 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
     |**Herausgeber**|Sie können den Standardherausgeber auswählen oder einen neuen Herausgeber erstellen. Sofern Sie nicht planen, Ihre Lösung zu verteilen, sollten Sie den Standardherausgeber für Ihre Organisation verwenden.|  
     |**Version**|Geben Sie eine Nummer für die Version Ihrer Lösung an. Dies ist nur erforderlich, wenn Sie die Lösung exportieren. Die Versionsnummer wird im Dateinamen enthalten sein, wenn Sie die Lösung exportieren.|  
   
-3.  Klicken Sie auf **Speichern**.  
+3.  Wählen Sie **Speichern** aus.  
   
  Nachdem Sie die Lösung gespeichert haben, sollten Sie möglicherweise Informationen zu Feldern hinzufügen, die nicht erforderlich sind. Diese Schritte sind optional. Verwenden Sie das Feld **Beschreibung**, um die Lösung zu beschreiben und eine HTML-Webressource als **Konfigurationsseite** für die Lösung auszuwählen. Die Konfigurationsseite wird in der Regel von ISVs verwendet, die Lösungen verteilen. Wenn dies festgelegt ist, wird ein neuer **Konfiguration**-Knoten unter dem Knoten **Informationen** angezeigt, der diese Webressource anzeigt. Entwickler verwenden diese Seite für Anweisungen oder Steuerelemente, damit Sie Konfigurationsdaten einrichten oder ihre Lösung starten können.  
   
@@ -61,3 +61,6 @@ Da die Standardlösung alle Lösungskomponenten enthält, ist es wahrscheinlich 
 
 > [!IMPORTANT]
 >  Wenn Sie Termine in Lösungen aufnehmen möchten, sollten Sie nicht nur Termine und nur Terminserien in separate Lösungen einschließen. Beim Installieren und Deinstallieren separater Lösungen mit verschiedenen Termintypen tritt ein SQL Server-Fehler auf, und die Termine müssen erneut erstellt werden. 
+
+## <a name="see-also"></a>Siehe auch
+ [Verwenden von Lösungen](use-solution-explorer.md)

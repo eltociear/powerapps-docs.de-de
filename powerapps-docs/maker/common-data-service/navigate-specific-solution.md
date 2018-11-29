@@ -2,7 +2,7 @@
 title: Zu einer bestimmten Lösung mit PowerApps navigieren | MicrosoftDocs
 description: 'Erfahren Sie, wie eine bestimmte Lösung in Ihrer Umgebung gesucht und geöffnet wird'
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 10/29/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -28,13 +28,11 @@ search.app:
 
 Hat Ihre Organisation bereits eine bestimmte Lösung, in der Sie arbeiten sollten, finden Sie sie auf diese Weise. Informationen zum Erstellen einer neuen Lösung finden Sie unter [Erstellen Ihrer eigenen Lösung](create-solution.md).  
   
-## <a name="open-an-unmanaged-solution"></a>Öffnen einer nicht verwalteten Lösung  
+## <a name="open-a-solution"></a>Öffnen einer Lösung  
   
-1. Gehen Sie zu **[Einstellungen](../model-driven-apps/advanced-navigation.md#settings)** > **Lösungen**.  
+1. Wählen **Lösungen** im linken Navigationsbereich, um eine Liste der Lösungen in Ihrer Umgebung zu sehen.
   
-2. Doppelklicken Sie auf die nicht verwaltete Lösung, die Sie verwenden möchten, um sie zu öffnen.  
-  
- Wenn Sie sich in der Lösung befinden, sehen Sie die Lösungskomponenten. Weitere Informationen: [Hinzufügen von Lösungs-Komponenten](solutions-overview.md)  
+2. Wählen Sie die Lösung aus, die Sie verwenden möchten oder zeigen Sie alle darin enthaltenen Komponenten an. Weitere Informationen: [Hinzufügen von Komponenten](solutions-overview.md)  
 
  ## <a name="next-steps"></a>Nächste Schritte
 [Überwachen und Verwalten von Workflowprozessen](/flow/monitor-manage-processes)

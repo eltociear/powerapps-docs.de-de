@@ -1,5 +1,5 @@
 ---
-title: Beantragen Sie Geschäftslogik mit Common Data Service for Apps | MicrosoftDocs
+title: Geschäftslogik im Common Data Service for Apps anwenden | MicrosoftDocs
 description: 'Informationen über verschiedene Typen der Geschäftslogik, die Sie in Ihrer App verwenden können'
 ms.custom: ''
 ms.date: 08/06/2018
@@ -23,9 +23,15 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="apply-business-logic-with-common-data-service-for-apps"></a>Beantragen Sie Geschäftslogik mit Common Data Service for Apps
+# <a name="apply-business-logic-in-common-data-service-for-apps"></a>Geschäftslogik im Common Data Service for Apps anwenden
 
-Dynamics 365 Customer Engagement Anpasser ist möglicherweise mit dem klassischen Common Data Service für App-Prozesse vertraut, welches Workflows und Aktionen sind. Weitere Informationen: [Verwendung von Workflowprozessen](/flow/workflow-processes) und [Aktionsübersicht](/flow/actions)
-  
-## <a name="see-also"></a>Siehe auch  
-[Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
+Definieren Sie *Geschäftsregeln* für eine Entität, die für alle Entitätsformen und auf Serverebene gelten. Die für eine Entität definierten Geschäftsregeln gelten sowohl für *Canvas-Apps* als auch für *modellgesteuerte Apps*, wenn die Entität in der App verwendet wird. Weitere Informationen finden Sie unter [Erstellen einer Geschäftsregel für eine Entität](data-platform-create-business-rule.md)
+
+> [!NOTE]
+> Um eine Geschäftsregel zu definieren, die für ein Formular in einer modellgesteuerten Anwendung gilt, siehe [Geschäftsregeln für ein modellgesteuertes App-Formular](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md) erstellen.
+
+Sie können auch die klassischen Common Data Service (CDS) for Apps-Prozesse verwenden, also Workflows und Aktionen. Weitere Informationen: [Microsoft Flow: Workflowprozesse verwenden](/flow/workflow-processes) und [Microsoft Flow: Aktionsübersicht](/flow/actions).
+
+## <a name="see-also"></a>Siehe auch
+
+[Geschäftslogik in modellgesteuerten Apps anwenden](../model-driven-apps/guide-staff-through-common-tasks-processes.md)

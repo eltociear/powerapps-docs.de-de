@@ -2,7 +2,7 @@
 title: 'Hilfe, um Bearbeitungsmodus-getriebene App-Komponenten mit PowerApps hinzuzufügen oder zu bearbeiten | MicrosoftDocs'
 description: Mithilfe des PowerApps-App-Designers Komponenten hinzufügen und bearbeiten
 keywords: ''
-ms.date: 03/30/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -53,7 +53,7 @@ Der App-Designer bezieht sich auf vorhandene Metadaten in der Standardlösung. S
 ## <a name="open-an-app"></a>Eine App öffnen
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. 
 
-2. Wählen Sie **Modell-angetrieben** > aus und dann **Anwendungen** und wählen Sie eine vorhandene App aus oder wählen Sie **App erstellen** aus. Weitere Informationen darüber, wie Sie eine App erstellen, finden Sie unter [Erstellen oder Bearbeiten einer Modell-angetriebene App, mithilfe von App-Designer](create-edit-app.md#create-an-app).
+2. Wählen Sie eine vorhandene modellgetriebene Anwendung aus oder wählen Sie **Ohne Vorlage erstellen**. Weitere Informationen darüber, wie Sie eine App erstellen, finden Sie unter [Erstellen oder Bearbeiten einer Modell-angetriebene App, mithilfe von App-Designer](create-edit-app.md#create-an-app).
 
 ## <a name="add-an-artifact-entity-dashboard-or-business-process-flow"></a>Hinzufügen eines Artefakt (Entität, Dashboard oder Geschäftsprozessfluss)  
  Wenn Sie ein Dashboard oder einen Geschäftsprozessfluss zu einer App hinzufügen, werden die verwendeten Entitäten automatisch der App hinzugefügt. Wenn eine Entität hinzugefügt wird, werden die Kacheln für die Anlagen automatisch hinzugefügt. Es gibt zwei Arten, wie Sie Artefakte dem Designer-Canvas hinzufügen können: Mithilfe der Schaltfläche **Hinzufügen** ![Hinzufügen-Schaltfläche im Designer](../model-driven-apps/media/dynamics365-designer-addbutton.PNG "Hinzufügen-Schaltfläche im Designer") auf der Befehlsleiste oder mithilfe der Kacheln auf der Registerkarte **Komponenten**.  

@@ -66,7 +66,7 @@ Wenn Sie die App überprüfen, zeigt Ihnen die App-Designer-Canvas Details zu de
 
 Veröffentlichen Sie eine App, um sie Benutzern zur Verfügung zu stellen.  
   
- Nachdem Sie Komponenten hinzugefügt, überprüft und die App gespeichert haben, wählen Sie auf der Befehlsleiste **Veröffentlichen** aus. Sie können die App auch über die App-Kachel auf der der Seite [Meine Apps](advanced-navigation.md#my-apps) veröffentlichen. In der Ansicht **Apps werden bearbeitet** in der unteren rechten Ecke der App-Kachel, die Sie veröffentlichen möchten, klicken Sie auf die Schaltfläche **Weitere Optionen** (**...**) und wählen dann **Veröffentlichen** aus.  
+ Nachdem Sie Komponenten hinzugefügt, überprüft und die App gespeichert haben, wählen Sie auf der Befehlsleiste **Veröffentlichen** aus. Sie können die App auch über die App-Kachel auf der der Seite [Meine Apps](advanced-navigation.md#apps) veröffentlichen. In der Ansicht **Apps werden bearbeitet** in der unteren rechten Ecke der App-Kachel, die Sie veröffentlichen möchten, klicken Sie auf die Schaltfläche **Weitere Optionen** (**...**) und wählen dann **Veröffentlichen** aus.  
   
  Der Status der App wird auf "Veröffentlicht" geändert. Sie können dies in der oberen rechten Ecke des Anwendungs-Designers sehen. Die App wird von der Ansicht **Apps, die bearbeitet werden** in die Ansicht **Veröffentlichte Apps** verschoben und auf der App-Kachel wird das Publikationsdatum angezeigt.  
   

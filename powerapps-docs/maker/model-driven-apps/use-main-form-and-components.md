@@ -37,9 +37,7 @@ Gehen Sie wie folgt vor, um auf den Formular-Editor zuzugreifen.
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Zugriff auf den Formular-Editor über den App-Designer in PowerApps
 
-1.  Wählen Sie auf der Seite [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-    ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Klicken Sie im linken Navigationsbereich die Option **Apps**, wählen die gewünschte App aus und klicken Sie dann auf der Symbolleiste die Option **Bearbeiten** an.  
 
@@ -60,9 +58,7 @@ Gehen Sie wie folgt vor, um auf den Formular-Editor zuzugreifen.
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Zugiff auf den Formulareditor über die Standardlösung
 
-1.  Wählen Sie auf der Seite [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Modellgesteuert** (unterer linker Teil des Navigationsbereichs).  
-
-     ![Modellgesteuerter Entwurfsmodus](media/model-driven-switch.png)
+1.  Melden Sie sich bei [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 2.  Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.  
 
