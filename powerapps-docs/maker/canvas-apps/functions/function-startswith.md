@@ -41,7 +41,7 @@ Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter
 **StartsWith**( *Text*, *StartText* )
 
 * *Text*: Erforderlich.  Der zu prüfende Text
-* *Anfangstext*: erforderlich.  Der am Anfang von *Text* zu suchende Text  Wenn *StartText* eine leere Zeichenfolge ist, gibt **StartsWith** *TRUE* zurück.
+* *StartText*: erforderlich.  Der am Anfang von *Text* zu suchende Text  Wenn *StartText* eine leere Zeichenfolge ist, gibt **StartsWith** *TRUE* zurück.
 
 ## <a name="examples"></a>Beispiele
 
@@ -50,7 +50,7 @@ Verwenden Sie **EndsWith** und **StartsWith** mit der **[Filter](function-filter
 | **EndsWith( "Hello World", "world" )** |Überprüft, ob **"Hello World"** mit **"world"** endet.  Bei diesem Test wird die Groß-/Kleinschreibung nicht beachtet. |**TRUE** |
 | **EndsWith( "Good bye", "good" )** |Überprüft, ob **"Good bye"** mit **"good"** endet.  Das *EndText*-Argument (**"good"**) ist im Text enthalten, jedoch nicht am Ende. |**FALSE** |
 | **EndsWith( "Always say hello", "hello" )** |Prüft, ob **"Always say hello"** mit **"hello"** endet. |**TRUE** |
-| **Endswith( "Bye bye", "" )** |Prüft, ob **"Bye bye"** mit einer leeren Textzeichenfolge endet (**Len** gibt 0 zurück).  Bei seiner vereinfachten Verwendung in **Filter**-Ausdrücken ist **EndsWith** so definiert, dass in diesem Fall **TRUE** zurückgegeben wird. |**TRUE** |
+| **EndsWith( "Bye bye", "" )** |Prüft, ob **"Bye bye"** mit einer leeren Textzeichenfolge endet (**Len** gibt 0 zurück).  Bei seiner vereinfachten Verwendung in **Filter**-Ausdrücken ist **EndsWith** so definiert, dass in diesem Fall **TRUE** zurückgegeben wird. |**TRUE** |
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |

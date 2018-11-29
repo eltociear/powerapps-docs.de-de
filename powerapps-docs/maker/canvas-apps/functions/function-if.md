@@ -30,27 +30,27 @@ Die **Switch**-Funktion wertet eine Formel aus und bestimmt, ob das Ergebnis mit
 
 **If** und **Switch** sind sehr ähnlich, doch sollten Sie die beste Funktion für die jeweilige Situation verwenden:
 
-* Verwenden Sie **If**, um eine einzelne Bedingung auszuwerten. Die gebräuchlichste Syntax für diese Funktion ist **If**( *Bedingung*, *DannErgebnis*, *Standardergebnis* ), die das gängige Muster „if ...  then … else ...“ bereitstellt, das Sie aus anderen Programmiersprachen kennen.
+* Verwenden Sie **If**, um eine einzelne Bedingung auszuwerten. Die gebräuchlichste Syntax für diese Funktion ist **If**( *Bedingung*, *ThenResult*, *DefaultResult* ), die das gängige Muster „if ...  then … else ...“ bereitstellt, das Sie aus anderen Programmiersprachen kennen.
 * Verwenden Sie **If**, um mehrere unabhängige Bedingungen auszuwerten. In PowerApps können Sie (im Gegensatz zu Microsoft Excel) mehrere Bedingungen angegeben, ohne **If**-Formeln schachteln zu müssen.
 * Verwenden Sie **Switch**, um eine einzelne Bedingung im Abgleich mit mehreren möglichen Übereinstimmungen auszuwerten. Sie können auch in diesem Fall **If** verwenden, doch dann müssen Sie die Formel für jede mögliche Übereinstimmung wiederholen.
 
 Sie können diese beiden Formeln in [Verhaltensformeln](../working-with-formulas-in-depth.md) verwenden, um eine Verzweigung zwischen zwei oder mehr Aktionen zu erstellen. Nur eine Verzweigung löst eine Aktion aus. Bedingungen und Übereinstimmungen werden in der Reihenfolge ausgewertet und angehalten, wenn eine Bedingung **TRUE** ist oder eine Übereinstimmung gefunden wird.
 
-*Leer* wird zurückgegeben, wenn keine Bedingungen **TRUE** sind, keine Übereinstimmungen gefunden werden und Sie kein Standardergebnis angeben.
+*Blank* wird zurückgegeben, wenn keine Bedingungen **TRUE** sind, keine Übereinstimmungen gefunden werden und Sie kein Standardergebnis angeben.
 
 ## <a name="syntax"></a>Syntax
-**If**( *Bedingung*, *DannErgebnis* [, *Standardergebnis* ] )<br>**If**( *Bedingung1*, *DannErgebnis1* [, *Bedingung2*, *DannErgebnis2*, ... [ , *Standardergebnis* ] ] )
+**If**( *Condition*, *ThenResult* [, *DefaultResult* ] )<br>**If**( *Condition1*, *ThenResult1* [, *Condition2*, *ThenResult2*, ... [ , *DefaultResult* ] ] )
 
-* *Bedingung(en)*: Erforderlich. Auf **TRUE** zu testende Formeln. Solche Formeln enthalten häufig Vergleichs-[Operatoren](operators.md) (z.B. **<** ,  **>** und **=**) sowie Testfunktionen wie **[IsBlank](function-isblank-isempty.md)** und **[IsEmpty](function-isblank-isempty.md)** .
-* *DannErgebnis(sse)*: Erforderlich. Der entsprechende Wert für eine Bedingung, die **TRUE** ergibt, soll zurückgegeben werden.
-* *Standardergebnis*: Optional. Dies ist der zurückzugebende Wert, wenn keine Bedingung mit **TRUE** ausgewertet wird.  Wenn Sie dieses Argument nicht angeben, wird *blank* zurückgegeben.
+* *Condition(s)*: Erforderlich. Auf **TRUE** zu testende Formeln. Solche Formeln enthalten häufig Vergleichs-[Operatoren](operators.md) (z.B. **<** ,  **>** und **=**) sowie Testfunktionen wie **[IsBlank](function-isblank-isempty.md)** und **[IsEmpty](function-isblank-isempty.md)** .
+* *ThenResult(s*: Erforderlich. Der entsprechende Wert für eine Bedingung, die **TRUE** ergibt, soll zurückgegeben werden.
+* *DefaultResult*: Optional. Dies ist der zurückzugebende Wert, wenn keine Bedingung mit **TRUE** ausgewertet wird.  Wenn Sie dieses Argument nicht angeben, wird *blank* zurückgegeben.
 
-**Switch**( *Formel*, *Übereinstimmung1*, *Ergebnis1* [, *Übereinstimmung2*, *Ergebnis2*, ... [, *Standardergebnis* ] ] )
+**Switch**( *Formel*, *Übereinstimmung1*, *Ergebnis1* [, *Übereinstimmung2*, *Ergebnis2*, ... [, *DefaultResult* ] ] )
 
-* *Formel*: Erforderlich. Die für Übereinstimmungen auszuwertende Formel.  Diese Formel wird nur einmal ausgewertet.
+* *Formula*: Erforderlich. Die für Übereinstimmungen auszuwertende Formel.  Diese Formel wird nur einmal ausgewertet.
 * *Übereinstimmung(en)*: Erforderlich. Werte für einen Vergleich mit dem Ergebnis der *Formel*.  Wird eine genaue Übereinstimmung gefunden, wird das entsprechende *Ergebnis* zurückgegeben.
 * *Ergebnis(se)*: Erforderlich. Der entsprechende Wert, der zurückgegeben wird, wenn eine genaue Übereinstimmung gefunden wird.
-* *Standardergebnis*: Optional. Wenn keine genaue Übereinstimmung gefunden wird, wird dieser Wert zurückgegeben. Wenn Sie dieses Argument nicht angeben, wird *blank* zurückgegeben.
+* *DefaultResult*: Optional. Wenn keine genaue Übereinstimmung gefunden wird, wird dieser Wert zurückgegeben. Wenn Sie dieses Argument nicht angeben, wird *blank* zurückgegeben.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="values-in-formulas"></a>Werte in Formeln
@@ -63,7 +63,7 @@ In den folgenden Beispielen wird ein **Schieberegler**-Steuerelement mit dem Nam
 | **If( Slider1.Value&nbsp;>&nbsp;1000, "Result1" )** |Die Bedingung ist **FALSE**, und es wird kein *Standardergebnis* bereitgestellt. |*blank* |
 | **If( Slider1.Value&nbsp;>&nbsp;1000, "Result1", "Result2" )** |Die Bedingung ist **FALSE**, ein *Standardergebnis* wurde bereitgestellt und wird zurückgegeben. |"Result2" |
 | **If( Slider1.Value&nbsp;=&nbsp;25, "Result1", Slider1.Value&nbsp;>&nbsp;0, "Result2" )** |Die erste Bedingung ergibt **TRUE**, und das entsprechende Ergebnis wird zurückgegeben. Die zweite Bedingung ist auch **TRUE**, aber sie wird nicht ausgewertet, weil sie später in der Argumentliste als eine Bedingung vorkommt, die mit **TRUE** auswertet wird. |"Result1" |
-| **If( IsBlank(&nbsp;Slider1.Value&nbsp;), "Result1", IsNumeric(&nbsp;Slider1.Value&nbsp;), "Result2" )** |Die erste Bedingung ergibt **FALSE**, weil der Schieberegler nicht *leer* ist. Die zweite Bedingung ergibt **TRUE**, da der Wert des Schiebereglers eine Zahl ist und das entsprechende Ergebnis zurückgegeben wird. |"Result2" |
+| **If( IsBlank(&nbsp;Slider1.Value&nbsp;), "Result1", IsNumeric(&nbsp;Slider1.Value&nbsp;), "Result2" )** |Die erste Bedingung ergibt **FALSE**, weil der Schieberegler nicht *blank* ist. Die zweite Bedingung ergibt **TRUE**, da der Wert des Schiebereglers eine Zahl ist und das entsprechende Ergebnis zurückgegeben wird. |"Result2" |
 | **If( Slider1.Value&nbsp;>&nbsp;1000, "Result1", Slider1.Value&nbsp;>&nbsp;50, "Result2", "Result3")** |Die erste und zweite Bedingung ergeben **FALSE**, ein *Standardergebnis* wurde bereitgestellt und wird zurückgegeben. |"Result3" |
 | **Switch (Slider1.Value, 25, "Result1")** |Der Wert des Schiebereglers entspricht dem ersten Wert, der überprüft werden soll, und das entsprechende Ergebnis wird zurückgegeben. |"Result1" |
 | **Switch( Slider1.Value, 20, "Result1", 25, "Result2", 30, "Result3" )** |Der Wert des Schiebereglers entspricht dem zweiten Wert, der überprüft werden soll, und das entsprechende Ergebnis wird zurückgegeben. |"Result2" |

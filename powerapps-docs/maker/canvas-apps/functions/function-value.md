@@ -42,7 +42,7 @@ Verwenden Sie zum Konvertieren von Datums-und Uhrzeitwerten die Funktionen [**Da
 **Value**(*Zeichenfolge* [,*LanguageTag*])
 
 * *Zeichenfolge*: erforderlich. Die Zeichenfolge, die in einen numerischen Wert konvertiert werden soll
-* *Sprach-Tag*: optional.  Das Sprachkennzeichen, in dem die Zeichenfolge analysiert werden soll.  Standardmäßig wird die Sprache des aktuellen Benutzers verwendet, wenn die Sprache nicht angegeben wurde.
+* *LanguageTag*: optional.  Das Sprachkennzeichen, in dem die Zeichenfolge analysiert werden soll.  Standardmäßig wird die Sprache des aktuellen Benutzers verwendet, wenn die Sprache nicht angegeben wurde.
 
 ## <a name="examples"></a>Beispiele
 Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Englisch als seine Sprache ausgewählt.  Die Funktion **Language** gibt „en-US“ zurück.

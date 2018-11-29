@@ -89,7 +89,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 
 **Radians**( *Grad* )
 
-* *Grad*: Erforderlich.  Der Winkel in Grad, der in Bogenmaß konvertiert werden soll.
+* *Degrees*: Erforderlich.  Der Winkel in Grad, der in Bogenmaß konvertiert werden soll.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="single-number"></a>Einzelne Zahl

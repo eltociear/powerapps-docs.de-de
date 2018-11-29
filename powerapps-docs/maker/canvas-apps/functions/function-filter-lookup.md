@@ -44,7 +44,7 @@ Wie Zeichenfolgen und Zahlen sind auch [Tabellen](../working-with-tables.md) in 
 **Filter**( *Tabelle*, *Formel1* [, *Formel2*, ... ] )
 
 * *Tabelle* (erforderlich): die zu suchende Tabelle.
-* *Formel(n)* (erforderlich): Formel, anhand derer die einzelnen Datensätze in der Tabelle ausgewertet werden. Diese Funktion gibt alle Datensätze zurück, die zu **WAHR** ausgewertet werden. Sie können auf Spalten innerhalb der Tabelle verweisen. Wenn Sie mehr als eine Formel angeben, werden die Ergebnisse aller Formeln mit einer **[AND](function-logicals.md)**-Funktion kombiniert.
+* *Formel(n)* (erforderlich): Formel, anhand derer die einzelnen Datensätze in der Tabelle ausgewertet werden. Diese Funktion gibt alle Datensätze zurück, die zu **WAHR** ausgewertet werden. Sie können auf Spalten innerhalb der Tabelle verweisen. Wenn Sie mehr als eine Formel angeben, werden die Ergebnisse aller Formeln mit einer **[And](function-logicals.md)**-Funktion kombiniert.
 
 **Search**( *Tabelle*, *Suchzeichenfolge*, *Spalte1* [, *Spalte2*, ... ] )
 

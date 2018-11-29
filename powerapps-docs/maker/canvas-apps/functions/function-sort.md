@@ -90,7 +90,7 @@ Um diese Beispiele selbst auszuführen, erstellen Sie die Datenquelle **Speiseei
 2. Führen Sie eine Vorschau der App aus, wählen Sie die Schaltfläche aus, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 3. Wählen Sie im Menü **Datei** das Element **Sammlungen** aus, um die soeben erstellte Sammlung anzuzeigen, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 
-#### <a name="sort"></a>Sortieren
+#### <a name="sort"></a>Sort
 1. Fügen Sie eine weitere Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:<br>
    **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    

@@ -24,7 +24,7 @@ ms.locfileid: "42864614"
 Zeigt dem Benutzer eine Bannermeldung an.
 
 ## <a name="description"></a>Beschreibung
-Über die **Benachrichtigungsfunktion** wird dem Benutzer im oberen Bereich des Bildschirms eine Bannermeldung über der zu diesem Zeitpunkt geöffneten Seite angezeigt.  
+Über die **Benachrichtigungsfunktion** „Notify“ wird dem Benutzer im oberen Bereich des Bildschirms eine Bannermeldung über der zu diesem Zeitpunkt geöffneten Seite angezeigt.  
 
 Abhängig vom Typ der Meldung werden eine passende Farbe und ein passendes Symbol angezeigt.   Der Typ wird vom zweiten Argument der Funktion angegeben:
 

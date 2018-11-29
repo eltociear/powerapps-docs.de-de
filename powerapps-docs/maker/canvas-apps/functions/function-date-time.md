@@ -50,7 +50,7 @@ Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten m
 * *Second*: erforderlich. Eine Zahl zwischen 0 und 59.
 
 ## <a name="examples"></a>Beispiele
-### <a name="date"></a>Datum
+### <a name="date"></a>Date
 Wenn ein Benutzer **1979** in ein Texteingabe-Steuerelement mit dem Namen **HireYear** eingibt, die Zahl **3** in ein Texteingabe-Steuerelement mit dem Namen **HireMonth** und die Zahl **17** in ein Texteingabe-Steuerelement mit dem Namen **HireDay**, würde diese Funktion als das Datum **3/17/1979** zurückgeben:
 
 **Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**

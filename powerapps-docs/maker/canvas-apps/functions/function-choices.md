@@ -90,7 +90,7 @@ Derzeit können Sie Suchspalten nur mit SharePoint und Common Data Service für 
 
      ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Steuerelement **Kombinationsfeld** auf der Karte **Primärer Kontakt** ist ausgewählt und die Eigenschaft „Items“ wird mit der Formel „Choices( Accounts.'Primary Contact' )“ angezeigt](media/function-choices/accounts-primary-contact.png)
 
-9. Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Leer**.
+9. Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Blank**.
 
 10. Klicken Sie auf der Registerkarte **Einfügen** auf die Option **Datentabelle**.
 
