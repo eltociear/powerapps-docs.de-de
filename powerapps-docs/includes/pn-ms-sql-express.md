@@ -1,1 +1,1 @@
-SQL Server 2008 Express Edition
+SQL Server 2008 Express Edition

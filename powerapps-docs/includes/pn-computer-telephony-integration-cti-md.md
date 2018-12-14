@@ -1,1 +1,1 @@
-Computertelefonieintegration (CTI)
+Rechner-Telefonie-Integration (Computer Telephony Integration, CTI)

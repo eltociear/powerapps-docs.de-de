@@ -1,1 +1,1 @@
-Dynamics 365 für Android
+Dynamics 365 for Android
