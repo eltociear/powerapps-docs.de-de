@@ -1,1 +1,1 @@
-Dynamics 365 Administration Center
+Dynamics 365 Admin Center
