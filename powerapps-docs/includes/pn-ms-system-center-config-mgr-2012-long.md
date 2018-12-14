@@ -1,1 +1,1 @@
-Microsoft System Center 2012 Konfigurations-Manager
+Microsoft System Center 2012 Configuration Manager

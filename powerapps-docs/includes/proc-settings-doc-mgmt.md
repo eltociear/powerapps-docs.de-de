@@ -1,1 +1,1 @@
-Gehen Sie zu **Einstellungen** > **Dokumentenverwaltung**.
+Wechseln Sie zu **Einstellungen** > **Dokumentverwaltung**.
