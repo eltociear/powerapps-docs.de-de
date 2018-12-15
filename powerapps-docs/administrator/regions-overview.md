@@ -14,12 +14,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 2d36fcc9b09f157da4da6b6293c34fad4320acbb
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: a3ea651fd507bb257a3b778be4421454197733b9
+ms.sourcegitcommit: eec10beaee913e01fe488c839661b20bbb1e1cfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832769"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329273"
 ---
 # <a name="regions-overview-in-powerapps"></a>Übersicht der Regionen in PowerApps
 ## <a name="how-do-i-find-out-where-my-app-is-deployed"></a>Wie finde ich heraus, wo meine App bereitgestellt ist?
@@ -47,9 +47,6 @@ Wenn Sie Administrator sind, können Sie die Region für die einzelnen Umgebunge
 Umgebungen können in verschiedenen Regionen erstellt werden und sind dann an den betreffenden geografischen Ort gebunden. Wenn Sie eine App in einer Umgebung erstellen, wird diese App in Rechenzentren in der betreffenden geografischen Region bereitgestellt. Dies gilt auch für alle Elemente, die Sie in der betreffenden Umgebung erstellen, einschließlich Datenbanken im Common Data Service, Apps, Verbindungen, Gateways und benutzerdefinierte Connectors.
 
 Wenn sich Ihre Benutzer in Europa befinden, sollten Sie zum Erzielen optimaler Leistung die Umgebung in der Region Europa erstellen und verwenden. Wenn Ihre Benutzer in den Vereinigten Staaten sind, erstellen und verwenden Sie die Umgebung in den USA.
-
-> [!NOTE]
-> Derzeit können Sie Datenbanken nur in einer Produktions- oder Testumgebung erstellen, die sich in der Region Ihres Azure AD- oder Office 365-Mandanten befinden. Es wird daran gearbeitet, dass in Zukunft auch Datenbanken in Umgebungen erstellt werden können, die sich nicht in der Region Ihres Mandanten befinden. Außerdem können Sie derzeit (mit PowerApps Community-Plan) noch keine Datenbanken in der Standardumgebung und keine individuelle Umgebung erstellen.
 
 > [!NOTE]
 > Lokale Datengateways sind in der Region „Indien“ und in benutzerdefinierten Umgebungen nicht verfügbar. Gateways müssen in der Standardumgebung erstellt werden.

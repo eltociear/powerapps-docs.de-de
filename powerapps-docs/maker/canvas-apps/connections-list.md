@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20a725ff417ad1a36b83b6a24ca1aaecc667da14
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: f7a053aff947ffd543381956cf725a7e656d8a65
+ms.sourcegitcommit: ebe0a9c41b693a2134e9198ffc7e7a8eabee4330
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834560"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "51276370"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Übersicht über die Canvas-App-Connectors für PowerApps
 Daten bilden das Herzstück der meisten Apps, u.a. bei denen, die Sie in PowerApps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. PowerApps verfügt über Connectors für viele gängige Dienste und lokale Datenquellen, u.a. SharePoint, SQL Server, Office 365, Salesforce und Twitter. Die ersten Schritte zum Hinzufügen von Daten zu einer Canvas-App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.
@@ -59,7 +59,7 @@ Weitere Informationen zum Anpassen Ihrer Formel für benutzerdefinierte Updates 
 
 ## <a name="popular-connectors"></a>Gängige Connectors
 
-Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten verwendeten Connectors. Eine vollständige Liste der Connectors finden Sie unter [Alle Connectors](#all-connectors).
+Diese Tabelle enthält Links zu weiteren Informationen zu den am häufigsten verwendeten Connectors. Eine vollständige Liste der Connectors finden Sie unter [Alle Connectors](#all-standard-connectors).
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
