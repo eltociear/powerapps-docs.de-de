@@ -1,1 +1,1 @@
-Gibt eine Regel an, die den Typ der verwendeten Darstellung erkennt.
+Gibt eine Regel an, die den Typ der verwendeten Präsentation erkennt.
