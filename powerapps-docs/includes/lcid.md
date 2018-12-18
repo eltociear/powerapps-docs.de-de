@@ -1,1 +1,1 @@
-Gültige Gebietsschema-ID-Werte finden Sie unter [Gebietsschema-ID-Werte von Microsoft](http://go.microsoft.com/fwlink/?LinkId=122128).
+Gültige Gebietsschema-ID-Werte finden Sie unter [Gebietsschema-ID-Diagramm (LCID)](http://go.microsoft.com/fwlink/?LinkId=122128).

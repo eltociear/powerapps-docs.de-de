@@ -1,1 +1,1 @@
-Stellt Daten dar, die aus der Microsoft Dynamics 365-Anwendung abgerufen wurden und als Parameter übergeben werden können.
+Stellt aus der Microsoft Dynamics 365-Anwendung abgerufene Daten dar, die als Parameter übergeben werden können.

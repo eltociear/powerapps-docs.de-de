@@ -1,1 +1,1 @@
-Sprachcodes sind vier- oder fünfstellige Gebietsschema-IDs. Gültige Gebietsschema-ID-Werte finden Sie im [Gebietsschema-ID (LCID)-Diagramm)](http://go.microsoft.com/fwlink/?LinkId=122128).
+Sprachcodes sind vierstellige oder fünfstellige Gebietsschema-IDs. Gültige Gebietsschema-ID-Werte finden Sie unter [Gebietsschema-ID-Diagramm (LCID)](http://go.microsoft.com/fwlink/?LinkId=122128).

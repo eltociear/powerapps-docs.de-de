@@ -1,1 +1,1 @@
-Weitere Informationen zu den Anforderungen für die Ausführung des hier bereitgestellten Beispielcodes finden Sie unter [Verwendung des Beispiel- und Hilfscodes](../developer/org-service/use-sample-helper-code.md).
+Weitere Informationen zu den Anforderungen zum Ausführen des hier angegebenen Beispielcodes finden Sie unter [Beispiel- und Hilfscode verwenden](../developer/org-service/use-sample-helper-code.md).

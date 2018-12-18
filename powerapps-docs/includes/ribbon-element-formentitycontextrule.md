@@ -1,1 +1,1 @@
-Gibt eine Regel an, die erkennen kann, ob ein Formularmenüband im Kontext einer bestimmten Entität angezeigt wird.
+Gibt eine Regel an, mit der festgestellt werden kann, ob ein Formularmenüband im Kontext einer bestimmten Entität angezeigt wird.

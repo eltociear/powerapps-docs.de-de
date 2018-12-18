@@ -1,1 +1,1 @@
-Gibt einen Wert mit einem Boolean-Datentyp an, der als Parameter übergeben werden kann.
+Gibt einen Wert mit einem Booleschen Datentyp an, der als Parameter übergeben werden kann.
