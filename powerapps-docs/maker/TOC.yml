@@ -1,4 +1,11 @@
 items:
+- name: 'Erste Schritte: Was ist PowerApps?'
+  href: ../powerapps-overview.md
+  items:
+  - name: Für 30-Tage-Testversion registrieren
+    href: signup-for-powerapps.md
+  - name: Für Communityplan registrieren
+    href: dev-community-plan.md
 - name: Finden und Ausführen von Apps
   href: ../user/index.md
   items:
@@ -8,21 +15,71 @@ items:
     href: ../user/run-app-client.md
   - name: Auf einem Telefon (modellgesteuert)
     href: ../user/run-app-client-model-driven.md
-  - name: Auf einer SharePoint Online-Seite
+  - name: Auf einer SharePoint Online-Seite (Zeichenbereich)
     href: ../user/powerapps-web-part.md
-  - name: In Microsoft Teams
+  - name: In Microsoft Teams (Zeichenbereich)
     href: ../user/open-app-embedded-in-teams.md
   - name: Aus AppSource
     href: ../user/app-source.md
+  - name: Verwenden modellgesteuerter Apps
+    href: ../user/use-model-driven-apps.md
+    items:
+    - name: Einheitliche Oberfläche
+      href: ../user/unified-interface.md
+    - name: Navigation und Grundlagen
+      href: ../user/navigation.md
+      items:
+      - name: Anzeigen des Profils
+        href: ../user/view-your-user-profile.md
+      - name: Festlegen persönlicher Optionen
+        href: ../user/set-personal-options.md
+      - name: Verwenden einer Sprachausgabe
+        href: ../user/screen-reader.md
+      - name: Tastenkombinationen
+        href: ../user/keyboard-shortcuts.md
+    - name: Arbeiten mit Datensätzen
+      items:
+      - name: Erstellen eines Datensatzes
+        href: ../user/create-a-record.md
+      - name: Hinzufügen von Aktivitäten auf der Zeitachse
+        href: ../user/add-activities.md
+      - name: Zuweisen oder Freigeben von Datensätzen
+        href: ../user/assign-or-share-records.md
+      - name: Freigeben von Datensätzen mit Access Team
+        href: ../user/Access-team.md
+      - name: Deaktivieren von Konten oder Kontakten
+        href: ../user/deactivate-activate-account-contact.md
+      - name: Verfolgen des Fortschritts mit Dashboards und Diagrammen
+        href: ../user/track-your-progress-with-dashboard-and-charts.md
+    - name: Durchsuchen von Datensätzen
+      items:
+      - name: Suchen nach Datensätzen
+        href: ../user/search-records.md
+      - name: Verwenden der erweiterten Suche
+        href: ../user/create-edit-or-save-advanced-find-search.md
+    - name: Importieren und Exportieren von Daten
+      items:
+      - name: Importieren von Daten
+        href: ../user/import-data.md
+      - name: Exportieren von Daten nach Excel Online
+        href: ../user/export-to-excel-online.md
+      - name: Exportieren von Daten nach Excel
+        href: ../user/export-data-excel.md
+      - name: Exportieren in ein dynamisches Arbeitsblatt
+        href: ../user/export-excel-dynamic-worksheet.md
+      - name: Exportieren in ein statisches Arbeitsblatt
+        href: ../user/export-excel-static-worksheet.md
+      - name: Exportieren in eine Excel-PivotTable
+        href: ../user/export-excel-pivottable.md
+    - name: Automatisieren von Prozessen
+      items:
+      - name: Arbeiten mit Geschäftsprozessen
+        href: ../user/work-with-business-processes.md
+      - name: Verwenden von Flows
+        href: ../user/use-flows.md
 - name: Apps erstellen
   href: index.md
   items:
-  - name: PowerApps kostenlos ausprobieren
-    items:
-    - name: 30-Tage-Testversion
-      href: signup-for-powerapps.md
-    - name: PowerApps-Communityplan
-      href: dev-community-plan.md
   - name: Anmelden bei PowerApps
     href: ./canvas-apps/intro-maker-portal.md
   - name: Neuerungen
@@ -30,6 +87,8 @@ items:
 - name: Canvas-Apps
   href: ./canvas-apps/getting-started.md
   items:
+  - name: Systemanforderungen, Einschränkungen und Konfiguration
+    href: ./canvas-apps/limits-and-config.md
   - name: Beispiel-Apps erkunden
     href: ./canvas-apps/open-and-run-a-sample-app.md
     items:
@@ -95,6 +154,27 @@ items:
       items:
       - name: Bildschirm hinzufügen
         href: ./canvas-apps/add-screen-context-variables.md
+        items:
+        - name: Konfigurieren von Office 365-Bildschirmen
+          items:
+          - name: Bildschirm „Kalender“ – Übersicht
+            href: ./canvas-apps/screen-templates/calendar-screen-overview.md
+          - name: Bildschirm „Kalender“ – Referenz
+            href: ./canvas-apps/screen-templates/calendar-screen-reference.md
+          - name: Bildschirm „E-Mail“ – Übersicht
+            href: ./canvas-apps/screen-templates/email-screen-overview.md
+          - name: Bildschirm „E-Mail“ – Referenz
+            href: ./canvas-apps/screen-templates/email-screen-reference.md
+          - name: Bildschirm „Besprechungen“ – Übersicht
+            href: ./canvas-apps/screen-templates/meeting-screen-overview.md
+          - name: Bildschirm „Besprechungen“ – Referenz
+            href: ./canvas-apps/screen-templates/meeting-screen-reference.md
+          - name: Bildschirm „Benutzer“ – Übersicht
+            href: ./canvas-apps/screen-templates/people-screen-overview.md
+          - name: Bildschirm „Benutzer“ – Referenz
+            href: ./canvas-apps/screen-templates/people-screen-reference.md
+        - name: Scrollbildschirm hinzufügen
+          href: ./canvas-apps/add-scrolling-screen.md
       - name: Anzeigen einer Tabelle mit Elementen
         href: ./canvas-apps/add-gallery.md
       - name: Elemente unterschiedlicher Höhe anzeigen
@@ -116,8 +196,6 @@ items:
         href: ./canvas-apps/add-images-pictures-audio-video.md
       - name: Einen Barcode scannen
         href: ./canvas-apps/scan-barcode.md
-      - name: Scrollbildschirm hinzufügen
-        href: ./canvas-apps/add-scrolling-screen.md
       - name: Hinzufügen von Power BI-Daten
         href: ./canvas-apps/powerapps-custom-visual.md
       - name: Referenz zum Steuerelement
@@ -533,6 +611,8 @@ items:
           href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Year
           href: ./canvas-apps/functions/function-datetime-parts.md
+    - name: Erstellen einer App in einer Lösung
+      href: ./canvas-apps/add-app-solution.md
     - name: Eine globale App erstellen
       href: ./canvas-apps/global-apps.md
     - name: Zugänglichmachen einer App
@@ -542,6 +622,10 @@ items:
         href: ./canvas-apps/accessibility-checker.md
       - name: Verwenden von Farben für die Barrierefreiheit
         href: ./canvas-apps/accessible-apps-color.md
+      - name: Anzeigen oder Ausblenden von Inhalten von Hilfstechnologien
+        href: ./canvas-apps/accessible-apps-content-visibility.md
+      - name: Ankündigen dynamischer Änderungen mit Live-Regionen
+        href: ./canvas-apps/accessible-apps-live-regions.md
     - name: Experimentelle und Vorschaufeatures
       href: ./canvas-apps/working-with-experimental.md
   - name: Eine App speichern und veröffentlichen
@@ -645,6 +729,11 @@ items:
       - name: Arbeiten mit Formularen
         href: ./model-driven-apps/create-design-forms.md
         items:
+        - name: Verwenden des neuen Formulardesigners
+          href: ./model-driven-apps/form-designer-overview.md
+          items:
+          - name: Erstellen oder Bearbeiten von Formularen
+            href: ./model-driven-apps/create-and-edit-forms.md
         - name: Formulartypen
           href: ./model-driven-apps/types-forms.md
           items:
@@ -698,6 +787,13 @@ items:
             href: ./model-driven-apps/configure-event-handlers-legacy.md
           - name: Deaktivieren des automatischen Speicherns in einem Formular
             href: ./model-driven-apps/manage-auto-save.md
+      - name: Einbetten einer Canvas-App in ein Formular
+        href: ./model-driven-apps/embed-canvas-app-in-form.md
+        items:
+        - name: Übergeben des aktuellen Datensatzes an eine eingebettete Canvas-App
+          href: ./model-driven-apps/pass-current-embedded-canvas-app.md
+        - name: Übergeben zugehöriger Datensätze an eine eingebettete Canvas-App
+          href: ./model-driven-apps/pass-related-embedded-canvas-app.md
       - name: Arbeiten mit Ansichten
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -709,7 +805,7 @@ items:
           href: ./model-driven-apps/create-edit-views-app-designer.md
         - name: Auswählen und konfigurieren von Spalten in Ansichten
           href: ./model-driven-apps/choose-and-configure-columns.md
-        - name: 'Exemplarische Vorgehensweisen: Ansichten'
+        - name: 'Exemplarische Vorgehensweisen: Sichten'
           items:
           - name: Bearbeitbar machen von Rastern
             href: ./model-driven-apps/make-grids-lists-editable-custom-control.md
@@ -750,6 +846,8 @@ items:
           href: ./model-driven-apps/timer-control-legacy.md
       - name: Verwenden von benutzerdefinierten Steuerelementen für Datenvisualisierungen
         href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+    - name: Verwenden von Designs zum Anwenden des Brandings einer Organisation
+      href: ./model-driven-apps/create-themes-organization-branding.md
   - name: Überprüfen und veröffentlichen einer App
     href: ./model-driven-apps/validate-app.md
   - name: Eine App freigeben
@@ -778,7 +876,7 @@ items:
   - name: Barrierefreiheit im PowerApps-App-Designer
     href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
   - name: Für Entwickler
-    href: ../developer/model-driven-apps/TOC.yml
+    href: ../developer/model-driven-apps/overview.md
 - name: Common Data Service für Apps
   href: ./common-data-service/data-platform-intro.md
   items:
@@ -807,7 +905,7 @@ items:
       href: ./common-data-service/define-alternate-keys-portal.md
     - name: Definieren von Alternativschlüsseln über den Projektmappen-Explorer
       href: ./common-data-service/define-alternate-keys-solution-explorer.md
-    - name: 'Exemplarische Vorgehensweisen: Entität'
+    - name: 'Exemplarische Vorgehensweisen: Einrichtung'
       items:
       - name: Erstellen von Entitäten über das PowerApps-Portal
         href: ./common-data-service/create-edit-entities-portal.md
@@ -858,7 +956,7 @@ items:
       href: ./common-data-service/define-query-hierarchical-data.md
     - name: Konfigurieren von Verbindungsrollen
       href: ./common-data-service/configure-connection-roles.md
-    - name: 'Exemplarische Vorgehensweise: Beziehungen'
+    - name: 'Exemplarische Vorgehensweisen: Beziehungen'
       items:
       - name: Erstellen von m:n-Beziehungen über das PowerApps-Portal
         href: ./common-data-service/create-edit-nn-relationships-portal.md
@@ -881,7 +979,7 @@ items:
       href: ./common-data-service/create-edit-global-option-sets.md
     - name: Festlegen von verwalteten Eigenschaften für Felder
       href: ./common-data-service/set-managed-properties-for-field.md
-    - name: Verhalten und Format des Felds „Datum und Uhrzeit“
+    - name: Verhalten und Format des Datums- und Uhrzeitfelds
       href: ./common-data-service/behavior-format-date-time-field.md
     - name: 'Exemplarische Vorgehensweisen: Felder'
       items:
@@ -913,7 +1011,7 @@ items:
   - name: Arbeiten mit Lösungen
     href: ./common-data-service/solutions-overview.md
     items:
-    - name: Verwenden des Lösungs-Explorers
+    - name: Verwenden von Lösungen
       href: ./common-data-service/use-solution-explorer.md
     - name: Verwenden der Common Data Service-Standardlösung
       href: ./common-data-service/use-solutions-for-your-customizations.md
@@ -921,6 +1019,10 @@ items:
       href: ./common-data-service/import-update-export-solutions.md
     - name: Navigieren zu einer bestimmten Lösung
       href: ./common-data-service/navigate-specific-solution.md
+    - name: Erstellen einer Lösung
+      href: ./common-data-service/create-solution.md
+    - name: Verwenden der Lösungsprüfung
+      href: ./common-data-service/use-powerapps-checker.md
     - name: Verwenden von segmentierten Lösungen
       href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
     - name: Ändern des Präfix für den Lösungsherausgeber
@@ -938,19 +1040,12 @@ items:
       href: ./common-data-service/data-platform-restricted-entities.md
   - name: Einen Power BI-Bericht erstellen
     href: ./common-data-service/data-platform-powerbi-connector.md
-  - name: Erstellen eines Designs
-    href: ./common-data-service/change-color-scheme-add-logo-match-organizations-brand.md
   - name: Übersetzen von benutzerdefiniertem Entitäts- und Feldtext
     href: ./common-data-service/export-customized-entity-field-text-translation.md
   - name: Importieren von übersetztem Entitäts- und Feldtext in eine App
     href: ./common-data-service/import-translated-entity-field-text.md
   - name: Für Entwickler
-    href: ../developer/common-data-service/TOC.yml
-- name: Common Data Model
-  href: ../common-data-model/overview.md
-  items:
-  - name: Verwenden des Common Data Model
-    href: ../common-data-model/use-common-data-model.md
+    href: ../developer/common-data-service/overview.md
 - name: Von anderen Benutzern lernen
   items:
   - name: Webinare
@@ -961,8 +1056,6 @@ items:
     href: https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1
 - name: Problembehandlung
   items:
-  - name: Systemanforderungen, Einschränkungen und Konfiguration
-    href: ./canvas-apps/limits-and-config.md
   - name: Tipps zur Leistungssteigerung für Canvas-Apps
     href: ./canvas-apps/performance-tips.md
   - name: Häufige Probleme und Lösungen
@@ -973,9 +1066,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Support
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 3fbbedc26086c39f8e42bf14bea969ac9e81614c
-ms.sourcegitcommit: 2bcf40aeaa35420dc43f5803f4e57ff0f6afb57b
+ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
+ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "49454084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587761"
