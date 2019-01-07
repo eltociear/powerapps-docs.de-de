@@ -97,8 +97,8 @@ search.app:
 
 3.  Wählen Sie den Pakettyp **nicht verwaltet** oder **verwaltet** aus. Dies startet den Export, der mehrere Minuten dauern kann, um den Vorgang abzuschließen. Nach Abschluss ist die Exportzip-datei im Downloadordner verfügbar, der über den Webbrowser angegeben ist.
 
-> [!div class="mx-imgBorder"]  
-> ![Lösung exportieren](media/solution-export.PNG "Lösung exportieren") 
+    > [!div class="mx-imgBorder"]  
+    > ![Lösung exportieren](media/solution-export.png "Lösung exportieren") 
 
 ### <a name="export-from-the-classic-experience"></a>Export in der klassischen Erfahrung
 

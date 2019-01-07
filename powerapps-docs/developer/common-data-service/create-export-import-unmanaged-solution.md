@@ -83,7 +83,7 @@ Darüber hinaus, dass es eine Voraussetzung zum Erstellen einer verwalteten Lös
 
   Wenn Sie eine Lösung mithilfe der Webanwendung exportieren, können Sie im Schritt **Systemeinstellungen exportieren (Erweitert)** auswählen, welche Systemeinstellungen in die Lösung einbezogen werden sollen. Diese Optionen sind für Entwicklern verfügbar, und zwar mithilfe von <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest> über die in der Anforderung verfügbaren Member. In den Anmerkungen zur Anforderung finden Sie Details darüber, welche Einstellungen enthalten sind.  
 
-  Sie können eine Zielversion auswählen, wenn Sie eine Lösung exportieren. Sie können eine Lösung exportieren, die mit früheren Versionen kompatibel ist. Weitere Informationen: [Exportieren einer Lösung für eine bestimmte Dynamics 365-Version](export-solution-specific-version.md).  
+  <!--You can pick a target version when you export a solution. You can export a solution that is compliant with earlier versions. More information: [Export a solution for a specific Dynamics 365 version](export-solution-specific-version.md).-->  
 
 <a name="BKMK_ImportUnmanagedSolution"></a>   
 ## <a name="import-an-unmanaged-solution"></a>Importieren einer nicht verwalteten Lösung  

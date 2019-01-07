@@ -1,6 +1,6 @@
 ---
 title: openForm (Client-API-Referenz) in modellgestützten Apps| MicrosoftDocs
-ms.date: 10/31/2018
+ms.date: 11/09/2018
 ms.service: crm-online
 ms.topic: reference
 applies_to: Dynamics 365 (online)
@@ -45,7 +45,7 @@ search.app:
 <li><b>entityName</b>: (Optional) Zeichenfolge. Die ID des Entitätsdatensatzes, für den das Formular angezeigt wird.</li>
 <li><b>formId</b>: (Optional) Zeichenfolge. ID der anzuzeigenden Formularinstanz.</li>
 <li><b>Höhe</b>: (Optional) Zahl. Die Höhe des zu öffnenden Formulars in Pixeln.</li>
-<li><b>navBar</b>: (Optional) Zeichenfolge. Steuert, ob die Navigationsleiste angezeigt wird und ob Anwendungsnavigation über die in der Siteübersicht definierten Bereiche und Unterbereiche verfügbar ist. Gültige Werte sind: "an", "aus" und" Entität".<ul><li><code>on</code>: Die Navigationsleiste wird angezeigt. Dies ist das Standardverhalten, wenn der Parameter <b>navBar</b> nicht verwendet wird.</li>
+<li><b>navBar</b>: (Optional) Zeichenfolge. Steuert, ob die Navigationsleiste angezeigt wird und ob Anwendungsnavigation über die in der Siteübersicht definierten Bereiche und Unterbereiche verfügbar ist. Gültige Werte sind: "an", "aus" und" Entität".<ul><li><code>on</code>: Die Navigationsleiste wird angezeigt. Dies ist das Standardverhalten, wenn der Parameter <b>navbar</b> nicht verwendet wird.</li>
 <li><code>off</code>: Die Navigationsleiste wird nicht angezeigt. Benutzer können andere Benutzeroberflächenelemente oder die Schaltflächen Zurück und Weiter für die Navigation verwenden.</li><li><code>entity</code>: In einem Entitätsformular sind nur die Navigationsoptionen für verknüpfte Entitäten verfügbar. Nach der Navigation zu einer verknüpften Entität wird die Schaltfläche Zurück in der Navigationsleiste angezeigt, mit der Sie zum ursprünglichen Datensatz zurückkehren können.</li></ul></li>
 <li><b>openInNewWindow</b>: (Optional) Boolesch. Gibt an, ob das Formular in einem neuen Fenster angezeigt wird.</li>
 <li><b>windowPosition</b>: (Optional) Zahl. Geben Sie einen der folgenden Werte für die Fensterposition des Formulars auf den Bildschirm an:<ul><li><code>1:center</code></li><li><code>2:side</code></li></ul>
@@ -100,14 +100,12 @@ search.app:
 <tr>
 <td>successCallback</td>
 <td>Funktion</td>
-<td>Nr.</td>
+<td>Nein</td>
 <td>Ein Funktion, die in folgenden Fällen ausgeführt wird:
 <ul>
-<li>Das Entitätsformular wird für vorhandene Datensätze angezeigt.</li>
-<li>Der Datensatz wird im Entitätsformular für einen neuen Datensatz gespeichert.</li>
 <li>Der Datensatz wird im Formular "Schnellerfassung" gespeichert.</li>
+<li>Der Datensatz wird im Formular "Schnellerfassung" für einen mit <b>Speichern und neu</b> erstellten Datensatz gespeichert. Dies gilt nur für die <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">einheitliche Oberfläche</a>.</li>
 </ul>
-<b>HINWEIS</b>: Klicken Sie auf [Einheitliche Oberfläche](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps). Die Funktion <b>successCallback</b> wird nur ausgeführt, wenn Sie eine Aufzeichnung in einem Formular für Schnellerfassung speichern, das mit der **openForm**-Methode geöffnet wurde.
 
 Dieser Funktion wird ein Objekt als Parameter übergeben. Das Ziel ist ein <b>savedEntityReference</b>-Array mit den folgenden Eigenschaften, um den erstellten oder angezeigten Datensatz zu identifizieren:
 <ul>
@@ -115,7 +113,20 @@ Dieser Funktion wird ein Objekt als Parameter übergeben. Das Ziel ist ein <b>sa
 <li><b>id</b>: Eine Zeichenfolgendarstellung eines GUID-Werts für den Datensatz.</li>
 <li><b>name</b>: der primäre Attributwert des erstellten oder angezeigten Datensatzes.</li></ul>
 
-<b>HINWEIS:</b> Wenn Sie ein Formular für einen vorhandenen Datensatz öffnen oder einen Datensatz erstellen, enthält <b>savedEntityReference</b> ein einzelnes Element. Wenn Sie ein Formular für Schnellerfassung auf der [einheitlichen Oberfläche](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps) erstellen, und mehrere Datensätze erstellen, indem Sie auf <b>Speichern und neu</b> klicken, enthält <b>savedEntityReference</b> mehrere Elemente. Jedes Element stellt den Datensatz dar, der mithilfe des Schnellerfassungsformulars erstellt wurde.
+<b>Hinweis</b>:
+<ul>
+<li>Mit Webclient: <ul>
+    <li>Die <b>successCallback</b>-Funktion wird nicht ausgeführt, wenn Sie ein Formular für einen vorhandenen oder einen neuen Datensatz öffnen.</li>
+    <li>Die Funktion <b>successCallback</b> wird nur ausgeführt, wenn Sie eine Aufzeichnung in einem Formular für Schnellerfassung speichern, das mit der <strong>openForm</strong>-Methode geöffnet wurde.</li>
+    <li>Wenn Sie ein Formular "Schnellerfassung" öffnen und einen Datensatz erstellen, enthält das <b>savedEntityReference</b> Array ein einzelnes Element.</li>
+  </ul>
+</li>
+<li>Auf <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">Einheitlicher Oberfläche</a>:
+<ul>
+    <li>Die <b>successCallback</b>-Funktion wird nicht ausgeführt, wenn Sie ein Formular für einen vorhandenen oder einen neuen Datensatz öffnen.</li>
+<li>Die Funktion <b>successCallback</b> wird nur ausgeführt, wenn Sie eine Aufzeichnung in einem Formular für Schnellerfassung speichern, das mit der <strong>openForm</strong>-Methode geöffnet wurde.</li>
+    <li>Wenn Sie ein Formular "Schnellerfassung" öffnen und einen Datensatz erstellen, enthält das <b>savedEntityReference</b> Array ein einzelnes Element.</li>
+<li>Wenn Sie ein Formular für Schnellerfassung auf der einheitlichen Oberfläche erstellen, und mehrere Datensätze erstellen, indem Sie auf <b>Speichern und neu</b> klicken, enthält s<b>avedEntityReference</b> mehrere Elemente. Jedes Element stellt den Datensatz dar, der mithilfe des Schnellerfassungsformulars erstellt wurde.</li>
 </td>
 </tr>
 <tr>
@@ -124,7 +135,7 @@ Dieser Funktion wird ein Objekt als Parameter übergeben. Das Ziel ist ein <b>sa
 <td>Nr.</td>
 <td>Eine auszuführende Funktion, wenn der Vorgang fehlgeschlagen ist.<br>
 
-<b>HINWEIS</b>: In [Einheitliche Schnittstelle](/dynamics365/get-started/whats-new/customer-engagement/new-in-july-2017-update#unified-interface-framework-for-new-apps) wird die <b>errorCallback</b>-Funktion nur ausgeführt, wenn Sie das Schnellerfassungsformular öffnen.</td>
+<b>HINWEIS</b>: In [Einheitliche Schnittstelle](/dynamics365/customer-engagement/admin/about-unified-interface) wird die <b>errorCallback</b>-Funktion nur ausgeführt, wenn Sie das Schnellerfassungsformular öffnen.</td>
 </tr>
 </table>
 

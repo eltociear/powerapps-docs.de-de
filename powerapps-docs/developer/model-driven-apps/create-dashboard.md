@@ -144,7 +144,7 @@ SystemForm dashboard = new SystemForm
 _dashboardId = _serviceProxy.Create(dashboard);
  ``` 
   
- Ein vollständiges Beispiel finden Sie unter [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen eines Dialogs](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard). Ein Beispiel des Erstellens eines benutzereigenenn Dashboards und dessen Zuordnung an einen anderen Benutzer finden Sie unter [Beispiel: Zuordnung eines benutzereigenenn Dashboards an einen anderen Benutzer](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user).  <! - TODO-relevante Powerapps Repo-Themen müssen verlinkt sein> 
+ Ein vollständiges Beispiel finden Sie unter [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen eines Dialogs](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard). Ein Beispiel des Erstellens eines benutzereigenenn Dashboards und dessen Zuordnung an einen anderen Benutzer finden Sie unter [Beispiel: Zuordnung eines benutzereigenenn Dashboards an einen anderen Benutzer](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user).  <!-- TODO relevant powerapps repo topic must be linked> 
   
 <a name="UsingFormCustomization"></a>   
 ## <a name="create-an-organization-owned-dashboard-by-customizing-the-entity-form"></a>Erstellen eines Dashboards im Besitz eines Benutzers durch Anpassen des Entitätsformulars  

@@ -21,7 +21,7 @@ search.app:
 
 Verwenden Sie Script(JScript)-Webressourcen, um eine Bibliothek von JavaScript-Funktionen zu erstellen, auf die von überall aus zugegriffen werden kann.  
   
-<a name="BKMK_capabilties"></a>   
+<a name="BKMK_capabilities"></a>   
 ## <a name="capabilities-of-script-web-resources"></a>Verwendungsmöglichkeiten für Script-Webressourcen  
  Mit JavaScript-Webressourcen können Sie Code, der in den Formularskripten, in Webressourcen der Webseite (HTML) oder in Menübandbefehlen, verwendet wird, leistungsfähiger verwalten, indem sie mit den freigegebenen Bibliothek der JavaScript-Funktionen verknüpft werden.  
   

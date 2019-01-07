@@ -21,7 +21,7 @@ Dieses Beispiel zeigt, wie einem Benutzer oder Team Zugriff auf eine Warteschlan
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
-[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)
+[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 

@@ -1,8 +1,8 @@
 ---
-title: <Topic Title> (Common Data Service for Apps) | Microsoft Docs
-description: <Description>
+title: Asynchroner Dienst (Common Data Service for Apps)  | Microsoft Docs
+description: 'Erfahren Sie grundlegendes Asynchrone Dienste, die den Systemauftrag verwalten.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/27/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article

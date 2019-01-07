@@ -41,7 +41,7 @@ Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuereleme
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Weitere Informationen: [Übermitteln Sie Daten einer Seite als Parameter an Menüband-Aktionen](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd) <! - TODO muss den entsprechenden Link aus dem Powerapps Repo aktualisieren>
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Weitere Informationen: [Übermitteln von -Daten von einer Seite als Parameter an Menüband-Aktionen](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)<!-- TODO need to update the relevant link from the powerapps repo>
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]

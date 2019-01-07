@@ -234,7 +234,7 @@ In CDS for Apps unterstützen nur die folgenden Meldungen Entitätsbilder:
 
 Es gibt zwei Typen von Entitätsbildern: **Vorheriges Bild** und **Späteres Bild**. Wenn Sie sie konfigurieren, sind diese Bilder im Ausführungskontext als Eigenschaft <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> bzw. Eigenschaft <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages> verfügbar. Wie die Namen schon sagen, stellen diese Momentaufnahmen dar, wie die Entität vor und nach dem Vorgang aussieht. Wenn Sie ein Entitätsbild konfigurieren, definieren Sie einen *Entitätsalias*-Wert, der wie ein Schlüsselwert ist, den Sie verwenden, um auf ein bestimmtes Entitätsbild von den Eigenschaften `PreEntityImages` oder `PostEntityImages` zuzugreifen.
 
-#### <a name="availabilty-of-images"></a>Verfügbarkeit von Bildern
+#### <a name="availability-of-images"></a>Verfügbarkeit von Bildern
 
 Wenn Sie ein Entitätsbild konfigurieren, ist es wichtig, zu erkennen, dass der Typ der verfügbaren Entitätsbildern von der Phase des registrierten Schritts und vom Typ des Vorgangs abhängig ist. Beispiel:
 

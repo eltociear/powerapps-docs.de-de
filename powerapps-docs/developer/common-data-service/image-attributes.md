@@ -2,7 +2,7 @@
 title: Bild-Attribute (Common Data Service für Apps) | MicrosoftDocs
 description: 'Infos zu Bildattributen, die Bilddaten in der Anwendung umfassen, sowie zum Unterstützen von Attributen, das Abrufen von Bilddaten und Hochladen von Bilddaten.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/26/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,7 +19,7 @@ search.app:
 
 Entitätsdatensätze, die Bilddaten enthalten, bieten eine einzigartige Umgebung in der Anwendung. Als Entwickler müssen wissen, wie Sie mit Bilddaten arbeiten.  
   
- Nur bestimmte Systementitäten und benutzerdefinierte Entitäten unterstützen Bilder. Informationen dazu, welche Systementitäten Bilder unterstützen, finden Sie unter [Entitätsbilder](/dynamics365/customer-engagement/developer/introduction-entities.md#BKMK_EntityImages).  
+ Nur bestimmte Systementitäten und benutzerdefinierte Entitäten unterstützen Bilder. Informationen dazu, welche Systementitäten Bilder unterstützen, finden Sie unter [Entitätsbilder](/dynamics365/customer-engagement/developer/introduction-entities.md#entity-images).  
   
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>Unterstützen von Attributen  

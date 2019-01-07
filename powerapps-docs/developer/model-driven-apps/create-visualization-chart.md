@@ -51,7 +51,7 @@ Wenn Sie eine Visualisierung programmgesteuert erstellen möchten, müssen Sie e
 
  Mehrfachdiagramme ordnen mehrere Werte der (vertikalen) Reihenachse einem einzelnen Wert der (horizontalen) Kategorieachse zu. Der einzige Unterschied zu einem einfachen Seriendiagramm ist, dass in diesen Diagrammen mehrere `<measurecollection>`- und entsprechende `<series>`-Elemente vorhanden sind, die in den XML-Zeichenfolgen angegeben werden. Jedes `<measurecollection>`-Element enthält ein untergeordnetes Element mit der Bezeichnung `<measure>`, das einen Wert auf der (vertikalen) Reihenachse für denselben Wert der (horizontalen) Kategorieachse definiert. Weitere Informationen: [Diagramme verstehen: Zugrunde liegende Daten und Diagrammdarstellung](understand-charts-underlying-data-chart-representation.md).  
   
- Ein Beispiel für Mehrfachdiagramm und die entsprechenden Datenbeschreibungs- und Präsentationsbeschreibungs-XML-Zeichenfolgen finden Sie unter [TODO: Mehrfachseriendiagramm]<!--(sample-charts.md#MultiSeriesChart)-->.
+ Ein Beispiel-Mehrfachdiagramm und die entsprechenden Datenbeschreibungs- und Präsentationsbeschreibungs-XML-Zeichenfolgen finden Sie unter [TODO: Multi-Series Chart]<!--(sample-charts.md#MultiSeriesChart)-->.
   
 <a name="CreateWRVisualization"></a>   
 
