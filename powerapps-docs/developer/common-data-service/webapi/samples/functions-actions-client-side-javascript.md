@@ -98,7 +98,7 @@ Die WebAPIFunctionsAndActions.html- Webressource stellt den Kontext bereit, in d
  <h2>Instructions</h2>  
  <p>  
   Choose your preferences and run the JavaScript code.  
-  Use your browser's developer tools to view the output written to the console (e.g.: in IE11 or Edge,   
+  Use your browser's developer tools to view the output written to the console (e.g.: in IE11 or Microsoft Edge,   
   press F12 to load the Developer Tools).  
  </p>  
  <form id="preferences">  
