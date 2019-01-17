@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefinierte Aktivitäten (Common Data Service für Apps) | Microsoft Docs
-description: 'Benutzerdefinierte Aktivitäten unterstützen den Kommunikationsbedarf eines modernen Unternehmens, wie z. B. Instant Messaging (IM) in Dynamics 365.'
+description: 'Benutzerdefinierte Aktivitäten unterstützen den Kommunikationsbedarf eines modernen Unternehmens, wie z. B. Chat in Dynamics 365.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="custom-activities"></a>Benutzerdefinierte Aktivitäten
 
-In Common Data Service for Apps können Sie benutzerdefinierte Aktivitäten erstellen, um den Kommunikationsbedarf eines modernen Unternehmens zu unterstützen, wie z. B. Instant Messaging (IM) und Short Message Service (SMS). Um eine benutzerdefinierte Aktivität in CDs for Apps zu erstellen, erstellen Sie eine benutzerdefinierte Entität, und legen diese als Aktivitätsentität mithilfe der <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> fest. -Eigenschaft verfügbar.  
+In Common Data Service for Apps können Sie benutzerdefinierte Aktivitäten erstellen, um den Kommunikationsbedarf eines modernen Unternehmens zu unterstützen, wie z. B. Chat und Short Message Service (SMS). Um eine benutzerdefinierte Aktivität in CDs for Apps zu erstellen, erstellen Sie eine benutzerdefinierte Entität, und legen diese als Aktivitätsentität mithilfe der <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> fest. -Eigenschaft verfügbar.  
   
  Im Unterschied zu anderen benutzerdefinierten Entitäten können Sie jedoch kein primäres Attribut für eine benutzerdefinierte Aktivität angeben, da standardmäßig jede benutzerdefinierte Aktivität über ein primäres Attribut mit dem Namen "Betreff" verfügen muss.  
   
