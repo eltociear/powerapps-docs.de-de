@@ -1,0 +1,19 @@
+items:
+- name: Best Practices und Handlungsempfehlungen für modellgesteuerte Apps
+  href: index.md
+  items:
+  - name: Anwenden von Geschäftslogik durch Erstellen von Clientskripts
+    href: business-logic/index.md
+    items:
+    - name: Vermeiden von „window.top“
+      href: business-logic/avoid-window-top.md
+    - name: Asynchrone Interaktion mit HTTP- und HTTPS-Ressourcen
+      href: business-logic/interact-http-https-resources-asynchronously.md
+    - name: Entfernen von deaktivierten Anpassungen
+      href: business-logic/remove-deactivated-disabled-configurations.md
+ms.openlocfilehash: 3289c700ad61c47cc7f6907030516bab17c108b8
+ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54271426"

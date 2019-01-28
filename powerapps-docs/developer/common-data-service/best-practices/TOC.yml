@@ -1,0 +1,41 @@
+items:
+- name: Best Practices und Handlungsempfehlungen für Common Data Service für Apps
+  href: index.md
+  items:
+  - name: Anwenden von Geschäftslogik mithilfe von Code
+    href: business-logic/index.md
+    items:
+    - name: Vermeiden von Batchanforderungstypen in Plug-Ins und Workflowaktivitäten
+      href: business-logic/avoid-batch-requests-plugin.md
+    - name: Entwickeln von zustandslosen IPlugin-Implementierungen
+      href: business-logic/develop-iplugin-implementations-stateless.md
+    - name: Vermeiden der Registrierung eines duplizierten Plug-In-Schritts
+      href: business-logic/do-not-duplicate-plugin-step-registration.md
+    - name: Einschließen von Filterattributen in die Plug-In-Registrierung
+      href: business-logic/include-filtering-attributes-plugin-registration.md
+    - name: Beschränken der Registrierung von Plug-Ins für Retrieve- und RetrieveMultiple-Meldungen
+      href: business-logic/limit-registration-plugins-retrieve-retrievemultiple.md
+    - name: Optimieren der Entwicklung benutzerdefinierter Assemblys
+      href: business-logic/optimize-assembly-development.md
+    - name: Festlegen von „KeepAlive“ auf FALSE bei der Interaktion mit externen Hosts in einem Plug-In
+      href: business-logic/set-keepalive-false-interacting-external-hosts-plugin.md
+    - name: Verwenden von „InvalidPluginExecutionException“ in Plug-Ins und Workflowaktivitäten
+      href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
+  - name: Arbeiten mit Daten mithilfe von Code
+    href: work-with-data/index.md
+    items:
+    - name: Grenzwerte für API-Anforderungen
+      href: ../api-limits.md
+  - name: Arbeiten mit Metadaten mithilfe von Code
+    href: work-with-metadata/index.md
+    items:
+    - name: Abrufen von veröffentlichten Metadaten
+      href: work-with-metadata/retrieve-published-metadata.md
+    - name: Abrufen von spezifischen Spalten für eine Entität über Abfrage-APIs
+      href: work-with-metadata/retrieve-specific-columns-entity-via-query-apis.md
+ms.openlocfilehash: b7bdf6cb3f03f7af742b99558920a06be1c770c0
+ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334061"

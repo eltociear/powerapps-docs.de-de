@@ -6,6 +6,8 @@ items:
     href: signup-for-powerapps.md
   - name: Für Communityplan registrieren
     href: dev-community-plan.md
+  - name: Neuerungen
+    href: ../whats-new.md
 - name: Finden und Ausführen von Apps
   href: ../user/index.md
   items:
@@ -82,8 +84,6 @@ items:
   items:
   - name: Anmelden bei PowerApps
     href: ./canvas-apps/intro-maker-portal.md
-  - name: Neuerungen
-    href: ./canvas-apps/release-notes.md
 - name: Canvas-Apps
   href: ./canvas-apps/getting-started.md
   items:
@@ -695,6 +695,8 @@ items:
       href: ./canvas-apps/offline-apps.md
     - name: Kunden das Testen Ihrer Apps ermöglichen
       href: ./canvas-apps/dev-appsource-test-drive.md
+    - name: Erstellen einer Komponente
+      href: ./canvas-apps/create-component.md
 - name: Modellgesteuerte Apps
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -794,6 +796,10 @@ items:
           href: ./model-driven-apps/pass-current-embedded-canvas-app.md
         - name: Übergeben zugehöriger Datensätze an eine eingebettete Canvas-App
           href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+        - name: Freigeben einer eingebetteten Canvas-App
+          href: ./model-driven-apps/share-embedded-canvas-app.md
+        - name: Richtlinien für eingebettete Canvas-Apps
+          href: ./model-driven-apps/embedded-canvas-app-guidelines.md
       - name: Arbeiten mit Ansichten
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -1066,9 +1072,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Support
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
-ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
+ms.openlocfilehash: fdf353f31bfdd4e49c069f827c509fbd0603deab
+ms.sourcegitcommit: 8b7ef26f5ae782c73f0ae986e5575c39eaeb90ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587761"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54202663"
