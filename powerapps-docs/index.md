@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 0ab787c8b98d7c0fdc596f21028fad59a2552f8b
-ms.sourcegitcommit: e3330801e700110048c31d251b9789a1c0f98a4a
+ms.openlocfilehash: da5273e385da3f616404a531f91a96393ed63bc2
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54363983"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290901"
 ---
 <div id="main"
    class="v2">
@@ -296,6 +296,7 @@ ms.locfileid: "54363983"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">Felder</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Anwenden von Geschäftslogik</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Lösungen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Erstellen von Power BI-Berichten aus CDS für Apps-Daten</a></p>
                                  </div>
                               </div>
@@ -581,6 +582,7 @@ ms.locfileid: "54363983"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager-Tool</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">PackageDeployer-Tool</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Veröffentlichen einer App in AppSource</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
                                  </div>
                               </div>
                            </div>
