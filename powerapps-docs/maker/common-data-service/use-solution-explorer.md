@@ -27,12 +27,11 @@ search.app:
 
  In PowerApps können Sie eine Liste mit Lösungen anzeigen, indem Sie in der linken Navigation die Option **Lösungen** wählen. Sie können dann eine Lösung wählen, um alle ihrer Komponenten anzuzeigen. 
  
-> [!NOTE]
->  Die Lösungserfahrung ist nur online und für Umgebungen ab Version 9.1.0.267 und höher verfügbar. Um Ihre Version zu prüfen, gehen Sie zu [PowerApps-Administratorcenter](https://admin.powerapps.com/) > Umgebungen > wählen Sie Ihre Umgebung > Registerkarte „Details”. Bei Instanzen mit einer früheren Version wird durch die Auswahl einer Lösung eine Instanz in der klassischen Umgebung geöffnet. 
-
 > [!div class="mx-imgBorder"]  
 > ![Demolösung mit allen Komponenten](media/solution-all-items-list.PNG "Demolösung mit allen Komponenten")  
-  
+ 
+> [!NOTE]
+>  Die Lösungserfahrung ist nur online und für Umgebungen ab Version 9.1.0.267 und höher verfügbar. Um Ihre Version zu prüfen, gehen Sie zu ...[PowerApps-Administratorcenter](https://admin.powerapps.com/)> **Umgebungen** > wählen Sie Ihre Umgebung > Registerkarte **Details**. Bei Umgebungen in früheren Versionen wird die Lösung bei Auswahl in der klassischen Umgebung geöffnet.  
  
  Sie können alle Komponenten einer Lösung durchsuchen, indem Sie durch die Elemente scrollen. Wenn mehr als 100 Elemente in der Liste vorhanden sind, können Sie die Option **Die nächsten 100 Elemente laden** wählen, um mehr anzuzeigen. 
  
@@ -44,7 +43,7 @@ search.app:
  Sie können anhand des Namens nach einer bestimmten Komponente suchen. 
  
 > [!div class="mx-imgBorder"]  
-> ![Suchkomponente](media/solution-search-box.PNG "Suchkomponente")  
+> ![Suchkomponente](media/solution-search-box.png "Suchkomponente")  
  
  Oder filtern Sie die Elemente in der Liste anhand des Komponententyps.
   
@@ -56,7 +55,7 @@ search.app:
  Bei der Auswahl der einzelnen Komponenten ändern sich die in der Befehlsleiste zur Verfügung stehenden Aktionen je nach dem Typ der ausgewählten Komponente sowie danach, ob es sich um die Standardlösung oder um eine verwaltete Lösung handelt. 
  
 > [!div class="mx-imgBorder"]  
-> ![Komponentenspezifische Befehle](media/component-commands.PNG "Komponentenspezifische Befehle")  
+> ![Komponentenspezifische Befehle](media/component-commands.png "Komponentenspezifische Befehle")  
  
  Wenn Sie keine Komponente wählen, werden in der Befehlsleiste die Aktionen angezeigt, die auf die Lösung angewendet werden. 
  
@@ -87,7 +86,7 @@ search.app:
 >  Wenn Sie derzeit eine bereits vorhandene Entität einer Lösung hinzufügen, fügt das System automatisch alle Komponenten der Lösung hinzu, die Teil der Entität sind. Wenn dies nicht Ihre bevorzugte Möglichkeit ist, verwenden Sie den Befehl **In klassischen Modus wechseln**, um zur klassischen Erfahrung zu wechseln, und fügen Sie nur die Komponenten hinzu, die Sie möchten. <!-- We will soon improve this experience from PowerApps and allow you to select only the specific component(s) under entity that you want to add into a solution. -->
   
 > [!div class="mx-imgBorder"]  
-> ![Demolösung, die eine erweiterte Firmenentität anzeigt](media/solution-entity-account.PNG "Demolösung, die eine erweiterte Firmenentität anzeigt")  
+> ![Demolösung, die eine erweiterte Firmenentität anzeigt](media/solution-entity-account.png "Demolösung, die eine erweiterte Firmenentität anzeigt")  
 
 ## <a name="classic-solution-explorer"></a>Klassischer Projektmappen-Explorer
 
@@ -95,18 +94,18 @@ In PowerApps können Sie den klassischen Projektmappen-Explorer anzeigen, indem 
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-- Durch das Löschen oder Entfernen einer verwalteten Lösung wird nicht die Canvas-App aus PowerApps gelöscht.
+- Durch das Löschen oder Entfernen einer verwalteten Lösung wird nicht die Canvas-App in PowerApps gelöscht.
 - Benutzerdefinierte Konnektoren sind nicht in einer Lösung verfügbar.
-- Canvas-Apps müssen nach dem Import einer Lösung geöffnet sein, um die Verbindungen zu aktualisieren.
+- Canvas-Apps müssen nach dem Import einer Lösung geöffnet werden, um die Verbindungen zu aktualisieren.
 - Nach dem Hinzufügen einer vorhandenen SDK-Assembly wird diese nicht in der Lösung angezeigt. 
-- Wenn Canvas-Apps in einer verwalteten Lösung gepackt sind, können Sie auch in der neuen Umgebung noch von den Administratoren bearbeitet werden.
-- Abhängigkeiten sind für Canvas-Apps nicht verfügbar
-- Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt 
--   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank verwaltet
--   CDS-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück 
--   In einer Lösung erstellte Canvas-Apps können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden
--   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt 
--   Vorhandene Canvas-Apps sind nicht lösungsfähig 
+- Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung noch bearbeitet werden.
+- Abhängigkeiten sind für Canvas-Apps nicht verfügbar.
+- Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. 
+-   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service für Apps (CDS)-Datenbank verwaltet.
+-   CDS-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück. 
+-   In einer Lösung erstellte Canvas-Apps können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden.
+-   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt.
+-   Vorhandene Canvas-Apps sind nicht lösungsfähig. 
 
  Ausführliche Informationen zum Anpassen einzelner Lösungskomponenten finden Sie in den folgenden Themen:  
   

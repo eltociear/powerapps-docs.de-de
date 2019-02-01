@@ -2,7 +2,7 @@
 title: Spalten in Ansichten in Modell-angetriebenen App-Ansichten in PowerApps wählen und konfigurieren | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie Ansichten für Ihre App auswählen und konfigurieren'
 keywords: ''
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -26,11 +26,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-choose-and-configure-columns-in-model-driven-app-views"></a>Anleitung: Spalten in Ansichten in Modell-angetriebenen App-Ansichten in PowerApps wählen und konfigurieren
+# <a name="choose-and-configure-columns-in-model-driven-app-views"></a>Spalten in Ansichten in modellgestützten App-Ansichten wählen und konfigurieren
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- Zusammen mit Filterkriterien sind die Spalten, die in einer PowerApps-Ansicht angezeigt werden, sehr wichtig für den Wert der ausgewählten Ansicht. In diesem Lernprogramm Erstellen oder Bearbeiten Sie Ansichten, indem Sie die folgenden Aufgaben ausführen:  
+ Zusammen mit Filterkriterien sind die Spalten, die in einer PowerApps-Ansicht angezeigt werden, sehr wichtig für den Wert der ausgewählten Ansicht. In diesem Thema erstellen oder bearbeiten Sie Ansichten, indem Sie die folgenden Aufgaben ausführen:  
 
 -   [Ansicht-Editor öffnen](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -41,10 +41,14 @@ search.app:
 -   [Ändern der Spaltenbreite](choose-and-configure-columns.md#BKMK_ChangeColumnWidth)  
   
 -   [Verschieben einer Spalte](choose-and-configure-columns.md#BKMK_MoveAColumns)  
-  
--   [Präsenz für diese Spalte aktivieren oder deaktivieren](choose-and-configure-columns.md#BKMK_EnableOrDisablePresence)  
-  
--   [Suchspalten hinzufügen](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+    
+  > [!IMPORTANT]
+  > Die neueste Version des Ansicht-Designers befindet sich derzeit in der Vorschau. Einige Funktionen wie das Aktivieren oder Deaktivieren der Präsenz für eine Spalte und das Hinzufügen einer Suchspalte werden noch nicht unterstützt. Um diese Aufgaben zu erfüllen, [öffnen Sie die Ansicht im klassischen Ansicht-Designer](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer).
+  >  -   [Präsenz für diese Spalte aktivieren oder deaktivieren](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
+  >
+  >  -   [Suchspalten hinzufügen](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+
+
 
 ### <a name="open-the-view-editor"></a>Ansicht-Editor öffnen
 
@@ -61,27 +65,20 @@ search.app:
 ### <a name="add-columns"></a>Hinzufügen von Spalten  
  Sie können Spalten aus der aktuellen Entität oder der aus verknüpften Entitäten einschließen, bei denen eine 1:n-Entitätsbeziehung mit der aktuellen Entität besteht.  
   
- Beispielsweise, möchten Sie möglicherweise den Besitzer einer Entität im besitz eines Benutzers in einer Spalte anzeigen. Sie können auswählen, dass das Feld **Besitzer** der aktuellen Entität den Namen des Besitzers anzeigt. Dieser erscheint als Link, um den **Benutzer**-Datensatz für den Mitarbeiter zu öffnen, der der Besitzer ist. In diesem Fall haben Sie auch die Möglichkeit, die [Präsenz für eine Spalte zu aktivieren oder deaktivieren](choose-and-configure-columns.md#BKMK_EnableOrDisablePresence).  
+ Beispielsweise, möchten Sie möglicherweise den Besitzer einer Entität im besitz eines Benutzers in einer Spalte anzeigen. Sie können auswählen, dass das Feld **Besitzer** der aktuellen Entität den Namen des Besitzers anzeigt. Dieser erscheint als Link, um den **Benutzer**-Datensatz für den Mitarbeiter zu öffnen, der der Besitzer ist.  
   
  Wenn Sie die Telefonnummer für den Datensatzbesitzer anzeigen möchten, müssen Sie **Besitzer (Benutzer)** in der Dropdownliste **Datensatztyp** das Feld **Telefon 1** auswählen.  
   
 #### <a name="add-columns-to-views"></a>Hinzufügen von Spalten zu einer Ansicht  
   
-1.  Beim Erstellen und Bearbeiten von Ansichten, aktivieren Sie  **Spalten hinzufügen** 
+1.  Beim Erstellen und Bearbeiten von Ansichten, sollten Sie sicherstellen, dass der Bereich **Felder** geöffnet wird. Wenn nicht, wählen Sie **Felder hinzufügen** auf der Symbolleiste aus. 
 
     > [!div class="mx-imgBorder"] 
-    > ![Editor und Spalten anzeigen](media/view-editor.png)
+    > ![Editor und Spalten anzeigen](media/fields-drawer-view-designer.png)
 
-    Das Dialogfeld **Spalten hinzufügen** wird angezeigt.
+2.  Wählen Sie die Felder aus, die Sie dem Ansicht-Designer hinzufügen möchten. Dadurch wird das Feld als Spalte auf der rechten Seite der Ansicht hinzugefügt.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Hinzufügen von Spalten](media/add-columns.png)
-  
-2.  Wählen Sie **Datensatztyp** aus, wenn Sie Felder aus verknüpften Entitäten einfügen möchten.  
-  
-3.  Sie können auch mehrere Felder aus verknüpften Entitäten auswählen.  
-  
-4.  Wenn Sie die Felder, die Sie verwenden möchten, ausgewählt haben, wählen Sie **OK** aus, um das Dialogfeld **Spalten hinzufügen** zu schließen.  
+3.  Wählen Sie die Registerkarte **Verknüpft** aus, um verknüpfte Entitäten und die entsprechenden Felder anzuzeigen.
   
  Wenn Sie Spalten hinzufügen, erhöhen Sie die Breite der Ansicht. Wenn die Breite der Ansicht den Platz überschreitet, um sie auf der Seite anzuzeigen, erlauben horizontale Bildlaufleisten den Benutzern das Scrollen, um die ausgeblendeten Spalten anzuzeigen.  
   
@@ -94,68 +91,26 @@ search.app:
 <a name="BKMK_RemoveColumns"></a>   
 ### <a name="remove-columns"></a>Entfernen von Spalten  
   
-1.  Beim Erstellen und Bearbeiten von Ansichten wählen Sie die Spalte, die Sie entfernen möchten.  
+1.  Wählen Sie die Kopfzeile der Spalte aus, die entfernt werden soll.  
   
-2.  Im Bereich **Allgemeine Aufgaben** wählen Sie **Entfernen** aus.  
-  
-3.  Wählen Sie in der Bestätigungsmeldung **OK** aus.  
+2.  Wählen Sie in der Dropdownliste die Option **Entfernen** aus.  
   
 <a name="BKMK_ChangeColumnWidth"></a>   
 ### <a name="change-column-width"></a>Ändern der Spaltenbreite  
   
-1.  Beim Erstellen und Bearbeiten von Ansichten wählen Sie die Spalte, die Sie ändern möchten.  
+1.  Zeigen Sie mit der Maus auf den Bereich zwischen den Spalten in der Ansicht.  
   
-2.  Wählen Sie im Bereich **Allgemeine Aufgaben** die Option **Eigenschaften ändern** aus.  
+2.  Eine Linie erscheint und der Cursor wird zu einem doppelseitigen Pfeil.  
   
-3.  Wählen Sie im Dialogfeld **Spalteneigenschaften ändern** eine Option aus, um die Spaltenbreite festzulegen, und wählen Sie dann **OK** aus.  
+3.  Ziehen Sie die Spalte auf die entsprechende Breite.  
   
 <a name="BKMK_MoveAColumns"></a>   
 ### <a name="move-a-column"></a>Verschieben einer Spalte  
   
-1.  Beim Erstellen und Bearbeiten von Ansichten wählen Sie die Spalte, die Sie verschieben möchten.  
+Klicken und ziehen Sie die Spaltenkopfzeile zur richtigen Position.
   
-2.  Verschieben Sie die Spalte im Bereich **Allgemeine Aufgaben** mithilfe der Pfeile nach links oder rechts.  
+> [!TIP]
+>   Sie können auch die Kopfzeile der Spalte auswählen, die Sie verschieben möchten und aus dem Dropdown-Menü **Nach rechts** oder **Nach links**auswählen.  
   
-<a name="BKMK_EnableOrDisablePresence"></a>   
-### <a name="enable-or-disable-presence-for-a-column"></a>Präsenz für diese Spalte aktivieren oder deaktivieren  
- Wenn die folgenden Bedingungen zutreffen, können Personen ein Skype for Business-Onlinestatussteuerelement in Listen sehen, das anzeigt, ob die Person verfügbar ist und Mitarbeitern ermöglichen, mit ihnen über Instant Messaging zu interagieren:  
-  
--   Benutzer nutzen Edge oder Internet Explorer.  
-  
--   Für ist Skype for Business installiert.  
-  
--   Benutzer haben Microsoft ActiveX im Internet Explorer aktiviert.  
-  
--   Ihre Organisation hat Präsenz für das System in den Systemeinstellungen aktiviert.  
-  
- Das Präsenz-Steuerelement und die Einstellung, um es zu aktivieren, ist nur für Spalten verfügbar, die primäre Felder für E-Mail-fähige Entitäten anzeigen (Benutzer, Kontakte, Leads, Verkaufschancen oder benutzerdefinierte Entitäten).  
-  
-#### <a name="enable-or-disable-skype-for-business-presence-for-a-column"></a>Skype for Business-Präsenz für diese Spalte aktivieren oder deaktivieren  
-  
-1.  Beim Erstellen und Bearbeiten von Ansichten wählen Sie die Spalte, die Sie ändern möchten.  
-  
-2.  Wählen Sie im Bereich **Allgemeine Aufgaben** die Option **Eigenschaften ändern** aus.  
-  
-3.  Aktivieren oder deaktivieren Sie im Dialogfeld **Spalteneigenschaften ändern** die Option **Präsenz für diese Spalte aktivieren**, und wählen Sie dann **OK** aus.  
-  
-<a name="BKMK_AddFindColumns"></a>   
-### <a name="add-find-columns"></a>Suchspalten hinzufügen  
- Suchspalten sind die Spalten, die von der anwendung durchsucht werden, wen Mitarbeiter das textfeld **Nach Datensätzen suchen** verwenden, das für Listen angezeigt wird, oder wenn die Fähigkeit besteht, nach Datensätzen für eine Entität in der Anwendung zu suchen, wenn Mitarbeiter z. B. nach eine,m Datensatz für ein Suchfeld suchen.  
-  
-1.  Öffnen Sie eine Ansicht für die **Schnellsuche**. Informationen zum die Schnellsuche finden Sie unter [Typen von Ansichten](create-edit-views.md#types-of-views).  
-  
-2.  Wählen Sie **Suchspalten hinzufügen** aus, um das Dialogfeld zu öffnen.  
-  
-3.  Wählen Sie die Felder aus, die die Daten enthalten, die Sie suchen möchten.  
-  
-4.  Wählen Sie **OK** aus, um das Dialogfeld **Suchspalten hinzufügen** zu schließen.  
-
-## <a name="community-tools"></a>Community-Tools
-
-**Ansichts-Layout-Replikator** und **Ansicht-Designer** sind die Tools, die von der XrmToolbox-Community bereitgestellt werden und für Dynamics 365 Customer Engagement entwickelt wurden. Weitere Informationen finden Sie im Thema [Entwicklertools](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) für von der Community entwickelte Tools.
-
-> [!NOTE]
-> Die Communitytools sind kein Produkt von Microsoft Dynamics und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
-
 ## <a name="next-steps"></a>Nächste Schritte
-[Erstellen oder Bearbeiten von Ansichten](create-edit-views.md)
+[Ansichten erstellen oder bearbeiten](create-edit-views.md)

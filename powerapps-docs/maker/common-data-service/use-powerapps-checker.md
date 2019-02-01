@@ -17,36 +17,41 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Verwenden Sie Lösungsprüfer, um Ihre modellgesteuerten Apps in PowerApps zu prüfen
 
-Um komplexe geschäftliche Anforderungen zu liefern, können Modell-angetriebene App-Hersteller mit fortschrittlichen Lösungen arbeiten, die Common Data Service (CDS) für App-Plattform anpassen und erweitern. Mit der erweiterten Implementierungen kommt ein erhöhtes Risiko, wo, Leistung und Stabilität Zuverlässigkeitsprobleme eingegeben werden, und sich auf die Endbenutzererfahrung negativ auswirken können. Identifizieren und verstehen, wie diese Probleme zeitaufwendig und kompliziert sein können. Mit der Lösungsprüferfunktion können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen und diese problematischen Muster schnell ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
+Um komplexe geschäftliche Anforderungen zu liefern, können Modell-angetriebene App-Hersteller mit fortschrittlichen Lösungen arbeiten, die Common Data Service (CDS) für App-Plattform anpassen und erweitern. Mit der erweiterten Implementierungen kommt ein erhöhtes Risiko, wo, Leistung und Stabilität Zuverlässigkeitsprobleme eingegeben werden, und sich auf die Benutzererfahrung negativ auswirken können. Identifizieren und verstehen, wie diese Probleme zeitaufwendig und kompliziert sein können. Mit der Lösungsprüferfunktion können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen und diese problematischen Muster schnell ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
 
-Der Lösungsprüfer analysiert die Lösungskomponente. 
+Der Lösungsprüfer analysiert die Lösungskomponente: 
 - CDS für Apps Plug-Ins
 - CDS für Apps benutzerdefinierte Workflowaktivitäten 
 - CDS für App-Webressourcen (HTML) und JavaScript
 - CDS für App-Konfigurationen, wie SDK-Nachrichtenschritte 
 
-Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung exportiert werden. Lösungsprüfer funktioniert nicht mit folgenden Lösungen. 
+Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung exportiert werden. Lösungsprüfer funktioniert *nicht* mit folgenden Lösungen: 
+
+
+<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
+
 - Die Systemstandardlösungen (Standardlösung und Common Data Services Standardlösung).
 - Lösungen, die JavaScript mithilfe von ECMAScript 6 (2015) oder einer höheren Version enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
 
-> [!NOTE]
-> Die Funktion ist aktuell nur für Organisationen in der Region Nordamerika verfügbar. 
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-
 
 ## <a name="enable-the-solution-checker"></a>Aktivieren des Lösungsprüfer
-Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Sie die PowerApps-Prüferlösung installieren. Beachten Sie, dass Sie sie nicht finden können, indem Sie in Microsoft AppSource durchsuchen oder suchen. Sie müssen der Installation, indem Sie die folgenden Schritte ausführen.  
+Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Sie die PowerApps-Prüferlösung installieren. Beachten Sie, dass Sie sie nicht finden können, indem Sie in Microsoft AppSource durchsuchen oder suchen. Zur Installation führen Sie die folgenden Schritte aus:  
 
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen die Common Data Service Umgebung aus, in der Sie den Lösungsprüfer aktivieren möchten. 
 2. Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
-3. Klicken Sie auf der Symbolleiste die Option **Lösungsprüfer** und anschließend **Installieren** aus – das öffnet die Microsoft AppSource-Seite. Sie müssen Popups ermöglichen, wenn der Browser die Seite am Öffnen hindert. 
+3. Klicken Sie auf der Symbolleiste die Option **Lösungsprüfer** und anschließend **Installieren** aus – das öffnet die Microsoft AppSource-Seite. Sie müssen Popup-Fenster ermöglichen, wenn der Browser die Seite am Öffnen hindert. 
 
-   ![Listenlösung installieren](media/solution-checker-install.png)
+   > [!div class="mx-imgBorder"]
+   > ![Installieren des Lösungsprüfers](media/solution-checker-install.png "Installieren des Lösungsprüfers")
 
 4. Wählen Sie **Kostenlose Testversion** auf der AppSource-Seite. 
-5. Wenn Sie zustimmen, nehmen Sie die Bedingungen und wählen Sie die Organisationen aus, um die PowerApps-Prüferlösung zu installieren. 
-6.  Wenn die Installation abgeschlossen wird, führen Sie die Liste **Lösung** im PowerApps-Standort aus, um sicherzustellen, dass der Lösungsprüfer verfügbar ist.  
-7. Wenn Sie eine Lösung prüfen [Führen Sie den aus Lösungsprüfer aus](#run-the-solution-checker).
+
+
+<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
+
+5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
+6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
+7. To check a solution, [Run the solution checker](#run-the-solution-checker).
 
 
 <!-- ### Components created with the PowerApps checker
@@ -66,20 +71,22 @@ Nachdem Sie den PowerApps-Prüfer in Ihrer Umgebung installieren haben, steht ei
 2. Wählen Sie im Navigationsbereich **Lösungen** aus. 
 3. Neben der nicht verwalteten Lösung, die Sie auch zum Analysieren möchten, wählen Sie **...** aus, zeigen Sie auf **Lösungsprüfer** und dann auf **Ausführen**. 
 
-   ![Ausführen des Lösungsprüfer-Befehl](media/solution-checker-run.png)
+   > [!div class="mx-imgBorder"]
+   > ![Ausführen des Lösungsprüferbefehls](media/solution-checker-run.png "Ausführen des Lösungsprüferbefehls")
 
 4.  Der Statusbereich im oberen Recht Bereich der Seite **Lösung** zeigt **Lösungenprüfer wird ausgeführt**. 
 
-    ![Lösungsprüfer-Status](media/solution-checker-status.png)
+    > [!div class="mx-imgBorder"]
+    > ![Lösungsprüferstatus](media/solution-checker-status.png "Lösungsprüferstatus")
    
-     Beachten Sie Folgendes:
-       - Der Lösungsprüfer kann einige Minuten dauern, um die Analyse zu starten. 
+    Beachten Sie Folgendes:
+    - Der Lösungsprüfer kann einige Minuten dauern, um die Analyse zu starten. 
     
-       - Während dieser Zeit wird **Ausführen…** angezeigt Status in der Spalte **Lösungsprüfung** der Liste **Lösung**. 
+    - Während dieser Zeit wird **Ausführen…** angezeigt Status in der Spalte **Lösungsprüfung** der Liste **Lösung**. 
     
-       - Sie erhalten eine E-Mail-Benachrichtigung und eine Benachrichtigung im Bereich **Benachrichtigungen** des PowerApps-Standorts, wenn die automatische Suche ausgeführt wird.  
+    - Sie erhalten eine E-Mail-Benachrichtigung und eine Benachrichtigung im Bereich **Benachrichtigungen** des PowerApps-Standorts, wenn die automatische Suche ausgeführt wird.  
 
-5.  [Zum Anzeigen des Berichts](#reviewing-the-solution-checker-report) Wenn eine Prüfung abgeschlossen ist.
+5.  [Zum Anzeigen des Berichts](#review-the-solution-checker-report) Wenn eine Prüfung abgeschlossen ist.
 
 ## <a name="cancel-a-check"></a>Prüfvorgang abbrechen
 
@@ -96,9 +103,9 @@ Wenn Sie den Lösungsprüfer in Ihrer Umgebung installieren, steht die **Lösung
 |Wird ausgeführt...     | Die Lösung wird analysiert.       |
 |Konnte nicht abgeschlossen werden     |  Lösungsanalyse wurde angefordert, aber die Analyse wurde nicht erfolgreich abgeschlossen.       |
 |Ergebnisse erhalten *Datum und Uhrzeit*   | Lösungsanalyse abgeschlossen und Ergebnisse können heruntergeladen werden.      |
-| Konnte nicht abgeschlossen werden. Ergebnisse erhalten *Datum und Uhrzeit*     | Die aktuelle Analyseanforderung in nicht erfolgreich abgeschlossen. Die letzten erfolgreichen Ergebnisse können heruntergeladen werden.         |
+|Konnte nicht abgeschlossen werden. Ergebnisse erhalten *Datum und Uhrzeit*     | Die aktuelle Analyseanforderung in nicht erfolgreich abgeschlossen. Die letzten erfolgreichen Ergebnisse können heruntergeladen werden.         |
 |Geprüft von Microsoft     | Dies ist eine Microsoft-verwaltete Lösung. Lösungsanalyse ist für diese Lösungen nicht erlaubt.         |
-|Geprüft von Publisher     |  Dies ist eine verwalteten Lösung von Drittanbieter. Für die Erstellung der Lösungsanalyse nicht verfügbar.        |
+|Geprüft von Publisher     | Dies ist eine verwalteten Lösung von Drittanbieter. Für die Erstellung der Lösungsanalyse nicht verfügbar.        |
 
 
 ## <a name="review-the-solution-checker-report"></a>Wiederholen Sie den Lösungsprüferbericht
@@ -113,9 +120,9 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 |Berichtsfeld |Beschreibung  |Sie betrifft nur Komponente.   |
 |---------|---------|---------|
 |Problem     |   Der Titel des Problems ist in der Lösung identifiziert.      | Alle        |
-|Kateg.     | Kategorisiert das Problem wie **Leistung**, **Verwendung** oder **Unterstützung**.      |  Alle       |
-|Schweregrad     | Stellt die möglichen Auswirkungen des Problems identifizierten dar. Verfügbare Auswirkungstypen sind **Hoch**, **Mittel**, **Niedrig**, **Informatorisch**.         |  Alle       |
-|Anleitung     |  Verknüpfen Sie Artikel, die das Problem aufführen, beeinflussen und Lösungen empfehlen. Aktionen.       |  Alle       |
+|Kateg.     | Kategorisiert das Problem wie **Leistung**, **Verwendung** oder **Unterstützung**.      |  Alle     |
+|Schweregrad     | Stellt die möglichen Auswirkungen des Problems identifizierten dar. Verfügbare Auswirkungstypen sind **Hoch**, **Mittel**, **Niedrig** und **Informatorisch**.         |  Alle       |
+|Anleitung     |  Verknüpfen Sie Artikel, die das Problem aufführen, beeinflussen und Aktionen empfehlen.       |  Alle       |
 |Komponente     |  Die Lösungskomponente, in der das Problem identifiziert wird.        |   Alle      |
 |Location     |  Der Standort und/oder die Quelldatei der Komponente, in der das Problem ist, wie z.B. die Assembly  oder der JavaScript-Dateiname.        |  Alle       |
 |Linie #     |  Der Zeilennummernverweis des Problems in der betroffenen Webressourcenkomponente.       |  Webressourcen       |
@@ -126,9 +133,7 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 |Kommentare     | Details zum Problem, die Auflösungsstufen auf hohem Niveau verfügen.         |  Alle       |
 
 
-
 ## <a name="best-practice-rules-used-by-solution-checker"></a>Bewährte Methoden, die vom Lösungsprüfer verwendet werden
-
 
 |Lösungskomponente  |Regelname  |Regelbeschreibung  |
 |---------|---------|---------|
@@ -162,5 +167,4 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 
 
 ## <a name="see-also"></a>Siehe auch
-[Grundlegendes zur experimentelle und Vorschaufunktionen in PowerApps](../canvas-apps/working-with-experimental.md) <br/>
 [Anweisungen und bewährte Methoden zum Erstellen von PowerApps-Lösungen](https://docs.microsoft.com/dynamics365/customer-engagement/guidance/)

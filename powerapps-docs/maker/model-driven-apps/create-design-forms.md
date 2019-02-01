@@ -1,7 +1,7 @@
 ---
 title: Erstellen und entwerfen von Modell-angetriebenen App-Formularen | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/26/2018
+ms.date: 12/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -51,8 +51,41 @@ Es gibt immer noch mehrere Entitäten (klassische Entitäten), die die Darstellu
 |Gespeicherte Sicht|Dienst|Serviceaktivität|SharePoint-Website|Standort|  
 |Gebiet|Einheit|Einheitengruppe|||  
   
+## <a name="form-display-faq"></a>Formularanzeige FAQ
+
+### <a name="why-is-my-form-not-visible-in-the-form-selector-drop-down-in-my-app"></a>Warum ist mein Formular in der Dropdown-Formularauswahlliste meiner App nicht sichtbar?
+Ein Formular ist möglicherweise nicht verfügbar, weil es nicht zur App hinzugefügt wurde.
+1. Öffnen Sie eine App im App-Designer.
+2. Wählen Sie im Bereich **Entitätsansicht** **Formulare** neben der Entität aus.
+3. Überprüfen Sie auf der Registerkarte **Komponenten** die Hauptformulare, die für die App enthalten sind. Überprüfen Sie, ob das Formular, das Sie anzeigen möchten, aktiviert ist. Falls nicht, wählen Sie es aus und dann speichern und veröffentlichen Sie die App.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/forms-included-in-app.png "In der App enthaltene Formulare")
+   
+### <a name="why-isnt-my-form-displayed-as-the-default-form-in-the-app"></a>Warum wird mein Formular in der App nicht als Standardformular angezeigt?
+Ein Formular kann über die Konfiguration der Formularreihenfolge oder wenn ein Benutzer das Standardformular als Personalisierungseinstellung festlegt, als Standardformular festgelegt werden.
+1. Öffnen Sie den Projektmappen-Explorer. Erweitern Sie die Entität, die die Formulare beinhaltet, die Sie bestellen möchten, und wählen Sie dann **Formulare**.
+2. Wählen Sie in der Symbolleiste **Formularreihenfolge** > **Hauptformularsatz** aus. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/form-order-toolbar.png "Formularreihenfolge-Symbolleistenbefehl")
+   
+3. Die Formularreihenfolge wird angezeigt. Wählen Sie das Formular aus und bewegen Sie es mit den Pfeiltasten nach oben und unten innerhalb der Formularreihenfolge. Das Formular oben in der Liste ist das Standardformular. 
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/form-order-dialog.png "Dialogfeld für die Formularreihenfolge\"")
+   
+4. Wählen Sie **OK**, um die Änderungen der Formularreihenfolge zu speichern.
+5. Wählen Sie in der Symbolleiste des Formulardesigners **Veröffentlichen**, um die Formularreihenfolge in Apps verfügbar zu machen.
+ 
+#### <a name="form-order-user-personalization-setting"></a>Einstellung zur Personalisierung der Benutzer der Formularreihenfolge
+Beachten Sie, dass, wenn ein App-Benutzer die Formularauswahl im Dropdown-Menü einer App ändert, dieses Formular zum Standardformular für den Benutzer wird. Diese Personalisierung überschreibt das Standardformular, das für die Entität in der App angegeben ist.
+
+   > [!div class="mx-imgBorder"] 
+   > ![](media/change-form-user-setting.png "Benutzereinstellungzum Ändern des Standardformulars")
+   
 ### <a name="related-topics"></a>Verwandte Themen  
     
 [Zuweisen der Formularreihenfolge](assign-form-order.md) <br />
-[Steuern des Zugriffs zu Formularen](control-access-forms.md) <br />
+[Zugriff auf Formulare steuern](control-access-forms.md) <br />
 [Wie Hauptformulare in verschiedenen Clients erscheinen](main-form-presentations.md) <br />

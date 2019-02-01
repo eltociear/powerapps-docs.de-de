@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Modell-angetriebenen Geschäftsregeln und Empfehlungen | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 12/06/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -128,7 +128,22 @@ Diese Anleitung zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um F
 <a name="BKMK_LocalizingErrorMessages"></a>   
 ## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren der Fehlermeldungen in Geschäftsregeln  
  Sind mehrere Sprache für Ihre Organisation bereitgestellt, können Sie Ihre Fehlermeldungen lokalisieren. Bei jeder Meldung generiert das System eine Beschriftung. Wenn Sie die Übersetzungen in Ihrer Organisation exportieren, können Sie lokalisierte Versionen Ihrer Meldungen hinzufügen und diese Beschriftungen wieder in das System importieren, so dass Personen, die andere Sprachen als Ihre Ausgangssprache verwenden, die übersetzten Meldungen sehen.  
-  
+
+## <a name="is-your-business-rule-not-firing-for-a-form"></a>Löst ihre Geschäftsregel kein Ereignis eines Formulars aus?
+Eine Geschäftsregel darf nicht ausgeführt werden, weil das in der Geschäftsregel referenzierte Feld nicht im Formular enthalten ist. 
+1.  Öffnen Sie den Projektmappen-Explorer. Erweitern Sie die gewünschte Entität, und wählen Sie dann **Formulare**. 
+2.  Öffnen Sie das gewünschte Formular und wählen Sie dann im Formulardesigner-Menüband **Geschäftsregeln**. 
+3.  Im Formulardesigner öffnen Sie die Geschäftsregel. 
+4.  Wählen Sie im Geschäftsregeldesigner jede Bedingung und Aktion aus, um alle Felder zu überprüfen, auf die in jeder Bedingung und Aktion verwiesen wird. 
+
+     > [!div class="mx-imgBorder"] 
+     > ![](media/business-rule-field.png "Das in der Geschäftsregel referenzierte Feld ist in der Entität vorhanden.")
+
+ 5. Stellen Sie sicher, dass jedes Feld, auf das in der Geschäftsregel verwiesen wird, auch auf dem Formular enthalten ist. Falls nicht, fügen Sie das fehlenden Feld dem Formular hinzu.
+
+     > [!div class="mx-imgBorder"] 
+     > ![](media/account-name-on-form.png "Feld Firmaname auf Formular")
+
 ## <a name="next-steps"></a>Nächste Schritte  
  [Erstellen benutzerdefinierter Geschäftslogik durch Prozesse](guide-staff-through-common-tasks-processes.md)   
  [Erstellen eines Geschäftsprozessflusses](/flow/create-business-process-flow)   

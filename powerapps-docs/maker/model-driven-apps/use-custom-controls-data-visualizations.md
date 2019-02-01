@@ -23,9 +23,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-use-custom-controls-for-model-driven-app-data-visualizations"></a>Tutorial: Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen
+# <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen
 
-In diesem Lernprogramm wird erläutert, wie Sie ein benutzerdefiniertes Steuerelement für ein Feld konfigurieren. 
+In diesem Thema wird erläutert, wie Sie ein benutzerdefiniertes Steuerelement für ein Feld konfigurieren. 
 
 Mit benutzerdefinierten Steuerelementen können Sie Komponenten der Benutzeroberfläche von Anwendungen, wie z. B. ein Feld oder eine Ansicht, die traditionell Text enthalten, in Visualisierungen umwandeln. Benutzerdefinierte Steuerelemente können für Felder, Formulare, Dashboards, Ansichten und Gitter konfiguriert werden. Beispielsweise kann ein Schiebereglersteuerelement auf einem Zahlenfeld konfiguriert werden.
 
