@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 10/15/2018
+ms.date: 1/31/2019
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
-ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
+ms.openlocfilehash: 8723021a59ca1ecbbdff41ddfa793684fe1ee970
+ms.sourcegitcommit: 47a4218445e5715bc1f7bf7bd8735b2a42c33935
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328692"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55514028"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>Integrieren von Daten in Common Data Service für Apps
 
@@ -31,6 +31,9 @@ Wir haben mit Erstanbieter-Apps begonnen, z.B. mit Dynamics 365 for Finance and 
 > [!div class="mx-imgBorder"]
 > ![Datenquellen und Datenziele](media/data-integrator/DataIntegratorP2P-new.PNG "Datenquellen und Datenziele")
 
+> [!TIP]
+> Sehen Sie sich den Blog an: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/) (Updates für Data Integrator – Neue Features mit einer intuitiven Benutzeroberfläche für ein flüssiges Erlebnis).
+
 ## <a name="how-can-you-use-the-data-integrator-for-your-business"></a>Wie können Sie Data Integrator für Ihr Unternehmen einsetzen?
 
 Data Integrator (für Administratoren) unterstützt auch prozessbasierte Integrationsszenarien wie „Prospect to Cash“, die eine direkte Synchronisierung zwischen Dynamics 365 for Finance and Operations und Dynamics 365 for Sales ermöglichen. Die mit dem Datenintegrationsfeature verfügbaren Prospect to Cash-Vorlagen ermöglichen den Datenfluss für Konten, Kontakte, Produkte, Angebote, Bestellungen und Rechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales ausgetauscht werden, können Sie Vertriebs- und Marketingaktivitäten in Sales ausführen und die Auftragserfüllung mithilfe der Bestandsverwaltung in Finance and Operations abwickeln. 
@@ -40,7 +43,7 @@ Data Integrator (für Administratoren) unterstützt auch prozessbasierte Integra
 
 Die Prospect to Cash-Integration ermöglicht Verkäufern, ihre Vertriebsprozesse mit den leistungsstarken Features von Dynamics 365 for Sales zu verarbeiten und zu überwachen, während alle Aspekte der Auftragserfüllung und Rechnungsstellung mithilfe der umfangreichen Funktionen in Finance and Operations erfolgen. Mit der Microsoft Dynamics 365-Integration von Prospect to Cash profitieren Sie von der kombinierten Leistungsstärke beider Systeme. 
 
-Sehen Sie sich das Video an: [Integration von Prospect to Cash](https://www.youtube.com/watch?v=AVV9x5x-XCg).
+Sehen Sie sich das Video an: [Integration von Prospect to Cash](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
 Weitere Informationen zur Prospect to Cash-Integration finden Sie in der Dokumentation zur [Prospect to Cash-Lösung](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
@@ -73,7 +76,7 @@ Bevor Sie ein Datenintegrationsprojekt erstellen können, müssen Sie eine Verbi
 
 **So erstellen Sie eine Verbindung**
 
-1. Wechseln Sie zum [PowerApps Admin Center](https://admin.powerapps.com).
+1. Wechseln Sie zu [PowerApps](https://web.powerapps.com).
 
 2. Wählen Sie unter „Daten“ die Option **Verbindungen** und dann **Neue Verbindung** aus.
 
@@ -130,6 +133,8 @@ Ihre Verbindungsgruppe ist jetzt für die Verwendung in verschiedenen Integratio
 ### <a name="how-to-create-a-data-integration-project"></a>Erstellen eines Datenintegrationsprojekts
 
 Projekte ermöglichen den Datenfluss zwischen Systemen. Ein Projekt enthält Zuordnungen für eine oder mehrere Entitäten. Zuordnungen geben an, welches Feld welchen anderen Feldern zugeordnet ist.
+
+<a name="CreateProject">
 
 **So erstellen Sie ein Datenintegrationsprojekt**
 
@@ -197,6 +202,10 @@ Die Ausführungshistorie zeigt den Verlauf aller Projektausführungen mit Projek
 
     In beiden Fällen können Sie die Ausführung manuell wiederholen.
 
+> [!NOTE]
+> Jedes Mal, wenn Sie ein Projekt ausführen (manuell oder zeitgesteuert), wird ein detailliertes Protokoll generiert, das den Projektnamen, den zuletzt aktualisierten Zeitstempel und den Status anzeigt. Dies sehen Sie im Ausführungsverlauf für jedes Projekt. Der Ausführungsverlauf des Projekts wir für 45 Tage beibehalten und danach automatisch bereinigt.
+
+
 ### <a name="how-to-set-up-a-schedule-based-refresh"></a>Einrichten einer Aktualisierung nach Zeitplan
 
 Wir unterstützen heute zwei Arten von Ausführungen bzw. Schreibvorgängen:
@@ -235,6 +244,7 @@ Beachten Sie auch, dass Sie unter „Benachrichtigungen“ E-Mail-basierte Benac
 Für Testmandanten besteht eine weitere Einschränkung: Ein geplantes Projekt wird nur für die ersten 50 Ausführungen ausgeführt.
 > - Wir bieten zwar Unterstützung dafür, Projekte für die Ausführung im Minutentakt zu planen, Sie sollten jedoch beachten, dass Ihre Apps hierdurch stark ausgelastet werden könnten und folglich die allgemeine Leistung beeinträchtigt werden kann. Benutzern wird ausdrücklich empfohlen, Projektausführungen unter tatsächlichen Lastbedingungen zu testen und die Leistung durch seltener ausgeführte Aktualisierungsvorgänge zu optimieren.
 In Produktionsumgebungen wird empfohlen, maximal 5 Projekte pro Minute pro Mandant auszuführen.
+> - Jedes Mal, wenn Sie ein Projekt ausführen (manuell oder zeitgesteuert), wird ein detailliertes Protokoll generiert, das den Projektnamen, den zuletzt aktualisierten Zeitstempel und den Status anzeigt. Dies sehen Sie im Ausführungsverlauf für jedes Projekt. Der Ausführungsverlauf des Projekts wir für 45 Tage beibehalten und danach automatisch bereinigt.
 
 ## <a name="customizing-projects-templates-and-mappings"></a>Anpassen von Projekten, Vorlagen und Zuordnungen 
 
@@ -266,9 +276,9 @@ Sie können Projekte und Vorlagen auf folgende Weise anpassen:
 
 4. Wenn Sie die Feldzuordnungen angepasst haben, klicken Sie auf **Speichern**.
 
-### <a name="how-to-customize-or-create-your-own-template"></a>Anpassen einer Vorlage oder Erstellen einer eigenen Vorlage 
+### <a name="how-to-create-your-own-template"></a>So erstellen Sie eine eigene Vorlage 
 
-**So erstellen Sie eine eigene Vorlage**
+**So erstellen Sie eine eigene Vorlage durch Ändern vorhandener Vorlagen**
 
 1. Wechseln Sie zum [PowerApps Admin Center](https://admin.powerapps.com).
 
@@ -318,6 +328,51 @@ Sie können Projekte und Vorlagen auf folgende Weise anpassen:
 
     > [!div class="mx-imgBorder"] 
     > ![Anpassen der Vorlage – als Vorlage speichern](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Anpassen der Vorlage – als Vorlage speichern")
+
+**So erstellen Sie eine eigene Vorlage aus leeren Vorlagen**
+
+1. Wechseln Sie zum [PowerApps Admin Center](https://admin.powerapps.com).
+2. Erstellen Sie ein Datenintegrationsprojekt. Wählen Sie im linken Navigationsbereich die Registerkarte **Datenintegration** aus.
+3. Wählen Sie **Neues Projekt** aus, und geben Sie einen Namen für Ihr Projekt an. Zum Beispiel „Demo_CreateYourOwnTemplate project“.
+4. Wählen Sie in der Liste **Eine Vorlage auswählen** eine allgemeine leere Vorlage aus. 
+   Wählen Sie für dieses Beispiel die Vorlage **Sales zu Fin and Ops** aus, da wir Daten aus Dynamics 365 for Finance and Operations zu Dynamics 365 for Sales verschieben möchten.
+    
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-data-integration-project.png "Erstellen eines Datenintegrationsprojekts")
+
+4. Führen Sie die Schritte 6 bis 9 <a href="#CreateProject">hier</a> aus, um die Erstellung des Datenintegrationsprojekts abzuschließen. Wählen Sie **Speichern**.
+
+5. Es wird die Seite „Tasks“ angezeigt. Diese ist leer, da es sich um eine leere Vorlage ohne Tasks handelt. Wählen Sie **Task hinzufügen** aus, um eine Entität aus der Dropdownliste auszuwählen und eine neue Task hinzuzufügen.
+   In diesem Fall erstellen wir zu Demonstrationszwecken die Task **Aktivitäten „Sales zu Fin and Ops“**, indem wir die Entität **Aktivitäten** für Dynamics 365 for Finance und Operations and Dynamics 365 for Sales auswählen. Wählen Sie die Option **Erstellen**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/activities-sales-fin-opps-task.png "Aktivitäten „Sales zu Fin and Ops“")
+
+6. Sie sehen, dass die neue Task **Aktivitäten „Sales zu Fin and Ops“** hinzugefügt wurde. Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/new-task-added.png "Neue Aufgabe hinzugefügt")
+
+7. Das Projekt ist erstellt. Wählen Sie **Als Vorlage speichern** auf der Listenseite **Projekte** aus.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-as-template.png "Als Vorlage speichern")
+
+8. Geben Sie Name und Beschreibung ein, und wählen Sie dann **Speichern**. Wählen Sie zudem **Für jeden in meiner Organisation freigeben**, um diese Vorlage freizugeben.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-describe-share.png "Projekt als Vorlage speichern")
+
+Sehen Sie die neu erstellte Vorlage auf der Listenseite **Vorlagen**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/newly-created-template.png "Neu erstellte Vorlage")
+
+Wenn Sie nach der Erstellung eines neuen Integrationsprojekts **Eine Vorlage auswählen** wählen, sehen Sie Ihre neu erstellte Vorlage als Teil der Liste **Eine Vorlage auswählen**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/new-data-integration-project.png "Neues Datenintegrationsprojekt")
+
 
 ## <a name="advanced-data-transformation-and-filtering"></a>Erweiterte Datentransformation und -filterung 
 
