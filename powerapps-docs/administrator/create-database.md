@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2018
+ms.date: 02/01/2019
 ms.author: manasma
 search.audienceType:
 - admin
@@ -15,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: c7de26bff38ee0425e8bb3f9bc0da72317f0a6cf
-ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
+ms.openlocfilehash: f7b5fb27e5b135239e1fe2306f7c431d6d1e6aae
+ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48246118"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55558747"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Erstellen einer Common Data Service-Datenbank für Apps
 Mithilfe von Common Data Service für Apps als Datenspeicher können Sie eine Datenbank erstellen und Apps entwickeln. Sie können entweder Ihre eigenen benutzerdefinierten Entitäten erstellen oder die vordefinierten Entitäten verwenden. Um eine Datenbank erstellen zu können, müssen Sie zunächst eine Umgebung erstellen oder einer bereits vorhandenen Umgebung als **Umgebungsadministrator** zugewiesen sein. Darüber hinaus müssen Sie der entsprechenden Lizenz zugewiesen werden. Informationen zum Erwerb eines Plans für die Verwendung von CDS für Apps finden Sie unter [Pricing Info (Preise)](pricing-billing-skus.md).
@@ -45,17 +45,12 @@ Es gibt verschiedene Möglichkeiten zum Erstellen einer Datenbank:
     
     ![](./media/create-database/DB-Choose-options.png)
 
-
-
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>Erstellen einer Datenbank im Bereich „Entitäten“ von PowerApps
 1. Erweitern Sie unter [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Bereich **Daten**, und klicken oder tippen Sie im linken Navigationsbereich auf **Entitäten**.
 
 2. Klicken Sie auf **Datenbank erstellen**, um die Datenbank zu erstellen.
 
     ![](./media/create-database/Create-DB-From-Entities.png)
-
-> [!NOTE]
-> Derzeit ist es nicht möglich, eine Datenbank außerhalb Ihrer Azure AD-Region zu erstellen. Sie werden bald in einer anderen Region als Ihrer eigenen Azure AD-Region eine Datenbank erstellen können, aber stellen Sie vorläufig sicher, dass Sie eine Datenbank in einer Umgebung erstellen, deren Region mit Ihrer eigenen Azure AD-Region identisch ist.
 
 ## <a name="security-model-for-the-databases"></a>Sicherheitsmodell für die Datenbanken
 Wenn eine Datenbank erstellt wird, können die Benutzer, denen Umgebungsrollen zugewiesen sind, weiterhin diese Berechtigungen verwalten.  
