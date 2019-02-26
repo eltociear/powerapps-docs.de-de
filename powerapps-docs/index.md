@@ -320,11 +320,12 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Umgebung und Sicherheit</h3>
+                                    <h3 style="font-size: 1.15rem">Admin Center für die Power-Plattform</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">Verwalten von Umgebungen</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Konfigurieren der Umgebungssicherheit</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">Anzeigen von Apps in einer Umgebung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">Verwalten der Power-Plattform</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Hilfe und Support</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Abonnieren von Updates für April 2019</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Einstellungen verwalten</a></p>
                                  </div>
                               </div>
                            </div>
@@ -379,12 +380,11 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Admin Center für die Power-Plattform</h3>
+                                    <h3 style="font-size: 1.15rem">Umgebung und Sicherheit</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">Verwalten der Power-Plattform</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Hilfe und Support</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Abonnieren von Updates für April 2019</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/manage-environments">Verwalten von Umgebungen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">Verwalten von Umgebungen</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Konfigurieren der Umgebungssicherheit</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">Anzeigen von Apps in einer Umgebung</a></p>
                                  </div>
                               </div>
                            </div>
