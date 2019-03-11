@@ -6,15 +6,15 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/21/2018
+ms.date: 02/28/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4000a9c60410a8ea2e4f1205d8ca815d67976d23
-ms.sourcegitcommit: 4a27a2fa3d06296c88cd85c638dc075f7ed6f1f9
+ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
+ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54099645"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57251545"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
@@ -26,7 +26,7 @@ PowerApps bietet zugleich eine erweiterbare Plattform, mit der professionelle En
 
 ## <a name="powerapps-for-app-makerscreators"></a>PowerApps für App-Ersteller
 
-Mit PowerApps können zwei Arten von Apps erstellt werden: **Canvas-Apps** und **modellgesteuerte Apps**. Weitere Informationen finden Sie unter: [Übersicht über das Erstellen von Apps in PowerApps](maker/index.md).
+Mit PowerApps können zwei Arten von Apps erstellt werden: **Canvas-** und **modellgesteuerte** Apps. Weitere Informationen finden Sie unter: [Übersicht über das Erstellen von Apps in PowerApps](maker/index.md).
 
 Wenn Sie eine App erstellen möchten, beginnen Sie auf der Seite [web.powerapps.com](https://web.powerapps.com).
 
@@ -42,9 +42,11 @@ Sie können die Apps, die Sie erstellt haben oder die jemand erstellt und für S
 
 PowerApps-Administratoren haben folgende Möglichkeiten:
 
-- Über das **PowerApps Admin Center** ([admin.powerapps.com](https://admin.powerapps.com)) können Umgebungen, Benutzer, Rollen und DLP-Richtlinien erstellt und verwaltet werden. Weitere Informationen finden Sie unter: [Verwalten von PowerApps](administrator/admin-guide.md)
+- Über das **PowerApps Admin Center** ([admin.powerapps.com](https://admin.powerapps.com)) können Umgebungen, Benutzer, Rollen und DLP-Richtlinien erstellt und verwaltet werden. 
 
-- Über das **Admin Center für die Power-Plattform** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) können Umgebungen verwaltet, Selbsthilfe-Empfehlungen in Echtzeit und Unterstützung für Dynamics 365 Customer Engagement-Apps, PowerApps und Microsoft Flow abgerufen sowie CDS für Apps angezeigt werden. Weitere Informationen finden Sie unter: [Verwalten der Power-Plattform](https://docs.microsoft.com/power-platform/admin/admin-guide)
+- Über das **Admin Center für die Power-Plattform** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) können Umgebungen verwaltet, Selbsthilfe-Empfehlungen in Echtzeit und Unterstützung für Dynamics 365 Customer Engagement-Apps, PowerApps und Microsoft Flow abgerufen sowie CDS für Apps angezeigt werden. 
+
+Weitere Informationen finden Sie unter: [Verwalten von PowerApps](/power-platform/admin/admin-guide)
 
 ## <a name="powerapps-for-developers"></a>PowerApps für Entwickler
 
