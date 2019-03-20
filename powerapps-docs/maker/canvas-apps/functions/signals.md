@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9732a4e1d721a47906a71dba6e4a7ea5ac7bc87b
-ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
-ms.translationtype: HT
+ms.openlocfilehash: 147766eb9e9b17698882241e8eb3bd0ae7ba7e78
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "57801846"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172631"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“
 Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und welcher Bildschirm angezeigt wird  
@@ -43,7 +43,11 @@ Das Signal **App** gibt Informationen über die ausgeführte App zurück.
 
 | Eigenschaft | Beschreibung |
 | --- | --- |
-| **App.ActiveScreen** |Der angezeigte Bildschirm. Gibt ein Bildschirmobjekt zurück, das Sie zum Verweisen auf Bildschirmeigenschaften oder Vergleichen mit einem anderen Bildschirm verwenden können, um zu bestimmen, welcher Bildschirm angezeigt wird.  Mithilfe der Funktionen **[Back](function-navigate.md)** oder **[Navigate](function-navigate.md)** können Sie den angezeigten Bildschirm ändern. |
+| **App.ActiveScreen** | Der angezeigte Bildschirm. Gibt ein Bildschirmobjekt zurück, das Sie zum Verweisen auf Bildschirmeigenschaften oder Vergleichen mit einem anderen Bildschirm verwenden können, um zu bestimmen, welcher Bildschirm angezeigt wird. Verwenden Sie zum Ändern des angezeigten Bildschirms der **[wieder](function-navigate.md)** oder **[Navigate](function-navigate.md)** Funktion. |
+| **App.Width** | Gibt die Breite des Fensters, in dem die app ausgeführt wird. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Breite** Eigenschaft des Bildschirms, um einen reaktionsfähigen app zu erstellen.  |
+| **App.Height** | Gibt die Höhe des Fensters, in dem die app ausgeführt wird. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Höhe** Eigenschaft des Bildschirms, um einen reaktionsfähigen app zu erstellen. |
+| **App.DesignWidth** | Gibt die Breite der app in PowerApps Studio zurück. Sie können diese Eigenschaft in einer Formel verwenden, wenn Sie festlegen, die **Breite** -Eigenschaft des Bildschirms, um eine minimale Breite in einer reaktionsfähigen app sicherzustellen.  |
+| **App.DesignHeight** | Gibt die Höhe der app in PowerApps Studio zurück. Sie können diese Eigenschaft in einer Formel verwenden, wenn Sie festlegen, die **Höhe** -Eigenschaft des Bildschirms, um eine minimale Höhe in einem reaktionsfähigen app sicherzustellen.  |
 
 Die **App** -Objekt verfügt außerdem über eine [verhaltensformel](../working-with-formulas-in-depth.md) , die Sie festlegen können.
 

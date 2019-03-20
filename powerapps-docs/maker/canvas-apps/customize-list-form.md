@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
-ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
-ms.translationtype: HT
+ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57804445"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198634"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -98,7 +98,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 1. Passen Sie Ihr Formular eine Vielzahl von Möglichkeiten, wie z. B. diejenigen, die die folgenden Themen beschreiben:
 
     - Ändern Sie die Größe, Ausrichtung oder beides (Sie können das Formular z.B. [breiter machen](set-aspect-ratio-portrait-landscape.md))
-    - Fügen Sie ein Steuerelement hinzu, sodass Benutzer [Anlagen hochladen können](controls/properties-text.md).
+    - [Anpassen einer oder mehreren Karten](working-with-cards.md) (z. B. Ändern einer Karte Text oder Eingabe Steuerung der Anzeige).
     - Erstellen Sie ein [Nachschlagefeld](sharepoint-lookup-fields.md).
 
     Weitere Informationen finden Sie unter: [Verstehen der Integration von SharePoint-Formularen](sharepoint-form-integration.md)

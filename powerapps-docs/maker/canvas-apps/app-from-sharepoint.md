@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 042819241a40b9ad01f95085faf23b6393f62559
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317089"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198588"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Generieren einer Canvas-App in PowerApps aus einer SharePoint-Liste
 
-In diesem Artikel verwenden Sie PowerApps, um automatisch eine Canvas-App basierend auf Elementen einer SharePoint-Liste zu generieren. Sie können die App aus PowerApps oder SharePoint Online generieren. In PowerApps können Sie die App basierend auf einer Liste auf einer lokalen SharePoint-Website generieren, wenn Sie über ein Datengateway [eine Verbindung herstellen](connect-to-sharepoint.md).
+In diesem Artikel verwenden Sie PowerApps, um automatisch eine Canvas-App basierend auf Elementen einer SharePoint-Liste zu generieren. Sie können die App aus PowerApps oder SharePoint Online generieren. In PowerApps können Sie die App basierend auf einer Liste auf einer lokalen SharePoint-Website generieren, wenn Sie über ein Datengateway [eine Verbindung herstellen](connections/connection-sharepoint-online.md#create-a-connection).
 
 Die Apps, die Sie generieren, enthält drei Bildschirme:
 

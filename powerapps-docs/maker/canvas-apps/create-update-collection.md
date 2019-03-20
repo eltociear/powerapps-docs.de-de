@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aca1b78262ac359689d66f687f902103740fa3a6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800305"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198542"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in eine Canvas-app
 
@@ -116,7 +116,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>Einfügen einer SharePoint-Liste in eine Sammlung
 
-1. [Herstellen einer Verbindung mit einer SharePoint-Liste](connect-to-sharepoint.md)
+1. [Herstellen einer Verbindung mit einer SharePoint-Liste](connections/connection-sharepoint-online.md#create-a-connection)
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie die folgende Funktion für die **[OnSelect](controls/properties-core.md)**-Eigenschaft fest, ersetzen Sie hierbei *ListName* durch den Namen der SharePoint-Liste:<br>
 
@@ -128,7 +128,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 
 1. (optional) Um die Auflistung der Vorschau anzeigen, die Sie erstellt haben, wählen Sie **Sammlungen** auf die **Datei** Menü.
 
-Informationen dazu, wie Sie Daten aus einer SharePoint-Liste (z. B. Datumsangaben, Optionen und Personen) in einem Katalog anzeigen: [Anzeigen von Daten in einem Katalog](connections/connection-sharepoint-online.md#show-data-in-a-gallery). Informationen zum Anzeigen der Daten in einem Formular (mit Dropdownliste, Datumsauswahl und Personenauswahl): [Bearbeiten von Form und Display Form-Steuerelemente](controls/control-form-detail.md).
+Informationen dazu, wie Sie Daten aus einer SharePoint-Liste (z. B. Datumsangaben, Optionen und Personen) in einem Katalog anzeigen: [Anzeigen der von Listenspalten in einem Katalog](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Informationen zum Anzeigen der Daten in einem Formular (mit Dropdownliste, Datumsauswahl und Personenauswahl): [Bearbeiten von Form und Display Form-Steuerelemente](controls/control-form-detail.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
