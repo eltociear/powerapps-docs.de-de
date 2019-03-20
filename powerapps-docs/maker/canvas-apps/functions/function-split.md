@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cc3608d6a973c0ef301c9979b62f5ba898c029c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b8f8dc0d354dd17fedd16524fed0f358b70839d4
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848576"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "57798396"
 ---
 # <a name="split-function-in-powerapps"></a>Split-Funktion in PowerApps
 Teilt eine Textzeichenfolge in eine Tabelle von Teilzeichenfolgen auf.
@@ -28,7 +28,7 @@ Die **Split**-Funktion teilt eine Textzeichenfolge in eine Tabelle von Teilzeich
 
 Zum Aufteilen der Textzeichenfolge wird ein Trennzeichen verwendet.  Bei dem Trennzeichen kann es sich um 0 (null), ein oder mehr Zeichen handeln, die als Ganzes in der Textzeichenfolge verglichen werden.  Bei Verwendung einer Zeichenfolge der Länge 0 (null) bzw. einer *leeren* Zeichenfolge wird jedes Zeichen einzeln herausgetrennt.  Die verglichenen Trennzeichen werden nicht im Ergebnis zurückgegeben.  Wenn kein übereinstimmendes Trennzeichen gefunden wird, wird die gesamte Textzeichenfolge als einzelnes Ergebnis zurückgegeben.
 
-Mit der **[Concat](function-concatenate.md)**-Funktion können Sie die Zeichenfolgen wieder zusammenfügen (ohne die Trennzeichen).  
+Mit der **[Concat](function-concatenate.md)**-Funktion können Sie die Zeichenfolgen wieder zusammenfügen (ohne die Trennzeichen). Verwenden Sie die **[MatchAll](function-ismatch.md)** Funktion zum Extrahieren von Teilen einer Zeichenfolge mithilfe eines regulären Ausdrucks die (in einigen Fällen) Sie, zum Aufteilen einer Zeichenfolge verwenden können. 
 
 ## <a name="syntax"></a>Syntax
 **Split**( *Text*, *Trennzeichen* )

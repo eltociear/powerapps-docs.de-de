@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dea20bf885afa8e687329aff4babff00b4f3263b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ca4fbaf18d7fa993a28f5cbb70f317b4ef5d42fd
+ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864954"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "57800535"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Die Funktionen „Left“, „Mid“ und „Right“ in PowerApps
 Extrahiert die linken, mittleren oder rechten Teil einer Textzeichenfolge
@@ -39,13 +39,13 @@ Ist die Anfangsposition negativ oder hinter dem Ende des Strings, gibt die **Mid
 
 * *Zeichenfolge*: erforderlich. Die Zeichenfolge, aus der das Ergebnis extrahiert werden soll
 * *Anfangsposition*: erforderlich (nur bei **Mid**).  Die Anfangsposition.  Das erste Zeichen von der Zeichenfolge befindet sich an Position 1.
-* *AnzahlDerZeichen*: erforderlich.  Die Anzahl der zu zurückzugebenden Zeichen
+* *Anzahlderzeichen* : erforderlich (**Links** und **rechts** nur).  Die Anzahl der zu zurückzugebenden Zeichen  Wenn für die nicht angegeben. die **Mid** -Funktion, die Funktion gibt den Abschnitt ab der Startposition bis zum Ende der Zeichenfolge.
 
 **Left**( *einspaltigeTabelle*, *AnzahlDerZeichen* )<br>**Mid**( *einspaltigeTabelle*, *Anfangsposition*, *AnzahlDerZeichen* )<br>**Right**( *einspaltigeTabelle*, *AnzahlDerZeichen* )
 
 * *EinspaltigeTabelle*: erforderlich. Eine einspaltige Tabelle aus Zeichenfolgen, aus denen die Ergebnisse extrahiert werden sollen
 * *Anfangsposition*: erforderlich (nur bei **Mid**).  Die Anfangsposition.  Das erste Zeichen von der Zeichenfolge befindet sich an Position 1.
-* *AnzahlDerZeichen*: erforderlich.  Die Anzahl der zu zurückzugebenden Zeichen
+* *Anzahlderzeichen* : erforderlich (**Links** und **rechts** nur).  Die Anzahl der zu zurückzugebenden Zeichen  Wenn für die nicht angegeben. die **Mid** -Funktion, die Funktion gibt den Abschnitt ab der Startposition bis zum Ende der Zeichenfolge.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="single-string"></a>Einzelne Zeichenfolge
@@ -55,6 +55,7 @@ In den Beispielen in diesem Abschnitt wird ein Texteingabe-Steuerelement als [Da
 | --- | --- | --- |
 | **Left( Author.Text, 5 )** |Extrahiert bis zu fünf Zeichen vom Anfang der Zeichenfolge |„E. E.“ |
 | **Mid( Author.Text, 7, 4 )** |Extrahiert ab dem siebten Zeichen bis zu vier Zeichen aus der Zeichenfolge |„Cumm“ |
+| **Mid( Author.Text, 7 )** |Extrahiert alle Zeichen, beginnend mit dem siebten Zeichen aus der Zeichenfolge. |"Cummings" |
 | **Right( Author.Text, 5 )** |Extrahiert bis zu fünf Zeichen aus dem Ende der Zeichenfolge |„mings“ |
 
 ### <a name="single-column-table"></a>Einspaltige Tabelle

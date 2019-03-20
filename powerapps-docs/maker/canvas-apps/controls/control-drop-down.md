@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
-ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
-ms.translationtype: HT
+ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075378"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308384"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Dropdown-Steuerelement in PowerApps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.
@@ -66,7 +66,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
+**[FontWeight](properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -126,7 +126,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diesen Ausdruck fest:
 
-    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -139,13 +139,13 @@ Die Prinzipien in diesem Verfahren gelten für jede [Datenquelle, die Tabellen e
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diese Formel fest:
 
-    ```Distinct(Accounts, address1_city)```
+    `Distinct(Accounts, address1_city)`
 
     Diese Formel zeigt alle Städte in dem Element **Konten** (Accounts) an. Wenn mehr als ein Datensatz die gleiche Stadt besitzt, versteckt die **[Distinct](../functions/function-distinct.md)**-Funktion die Duplizierung in Ihrem Dropdown-Steuerelement.
 
 1. (optional) Benennen Sie Ihr **Dropdown**-Steuerelement in **Cities** (Städte) um, fügen Sie ein vertikales **Gallery**-Steuerelement (Katalog) hinzu, und legen Sie die **[Items](properties-core.md)**-Eigenschaft des Katalogs auf diese Formel fest:
 
-    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Diese **[Filter](../functions/function-filter-lookup.md)**-Funktion zeigt nur die Datensätze im **Accounts**-Element (Konten) an, bei denen die Stadt zu dem ausgewählten Wert im Steuerelement **Cities** (Städte) passt.
 

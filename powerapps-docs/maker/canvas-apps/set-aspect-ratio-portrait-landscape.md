@@ -1,53 +1,67 @@
 ---
 title: Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App | Microsoft-Dokumentation
 description: Schrittanleitung zum Ändern von Einstellungen, z.B. von Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
-author: lonu
+author: evchaki
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 10/16/2016
-ms.author: lonu
+ms.date: 11/07/2018
+ms.author: evchaki
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab41707c06faa11dd2e1d519b72fb35ff6b9914a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c4d9f648a4519ef30887d8d0739d7dc3d940555b
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835581"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58172677"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
 Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-1. Erstellen Sie eine App, oder öffnen Sie eine App zum Bearbeiten.
 
-2. Klicken oder tippen Sie im Menü **Datei** auf **App-Einstellungen**.
+Erstellen Sie eine app oder eine für die Bearbeitung, und wählen Sie dann **Anwendungseinstellungen** auf die **Datei** Menü.
 
 ## <a name="change-screen-size-and-orientation"></a>Ändern der Bildschirmgröße und -ausrichtung
-1. Klicken oder tippen Sie unter **App-Einstellungen** auf **Bildschirmgröße und -ausrichtung**.
+1. Wählen Sie unter **App settings**  (App-Einstellungen) die Option **Screen size + orientation**  (Bildschirmgröße und -ausrichtung) aus.
 
     ![Option zum Ändern der Bildschirmgröße und -ausrichtung einer App](./media/set-aspect-ratio-portrait-landscape/size-orientation.png)
 
-2. Klicken oder tippen Sie in der Liste **Ausrichtung** entweder auf **Hochformat** oder **Querformat**.
+1. In der **Ausrichtung** Liste **Hochformat** oder **Querformat**.
 
-3. (Gilt nur für Tablet-Apps) Klicken oder tippen Sie unter **Seitenverhältnis** auf das Seitenverhältnis, das dem Zielgerät für diese App entspricht.
+1. (Gilt nur für Tablet-apps) Klicken Sie unter **Seitenverhältnis**, führen Sie einen der folgenden Schritte aus:
+
+    - Wählen Sie das Seitenverhältnis, das dem Zielgerät für diese app übereinstimmt.
+    - Wählen Sie **benutzerdefinierte** , legen Sie Ihren eigenen Größe, und geben Sie eine Breite zwischen 50-3840 und eine Höhe zwischen 50-2160.
 
     ![Ändern des Seitenverhältnisses einer Tablet-App](./media/set-aspect-ratio-portrait-landscape/aspect-tablet.png)
+    
+1. Klicken Sie unter **an anpassen**, geben Sie entweder **auf** oder **aus**.
 
-4. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
+    Diese Einstellung ist standardmäßig so, dass app-Bildschirme Größe auf dem Gerät den verfügbaren Platz angepasst. Wenn diese Einstellung ist für der app **Breite** Eigenschaft entspricht der **DesignWidth**, und der app **Höhe** entspricht der **DesignHeight**.
 
-    Wenn Sie das Seitenverhältnis sperren, behält die App das angegebene Seitenverhältnis für ein Smartphone bei. Wenn die App auf einer anderen Art Gerät ausgeführt wird, wird die App falsch angezeigt, und es werden möglicherweise unerwünschte Ergebnisse angezeigt. Wenn Sie das Seitenverhältnis entsperren, wird die App an das Seitenverhältnis des Geräts angepasst, auf dem sie ausgeführt wird.
+    Wenn Sie diese Einstellung deaktivieren, wird die app an das Seitenverhältnis des Geräts auf dem es ausgeführt wird, und die gesamte verfügbare Platz angepasst. Die app nicht skaliert werden und daher Bildschirme Weitere Informationen anzeigen können.
 
-5. Geben Sie unter **Bildschirmausrichtung sperren** entweder **Ein** oder **Aus** an.
+    Wenn diese Einstellung deaktiviert ist, **Seitenverhältnis sperren** ist automatisch aktiviert und deaktiviert. Darüber hinaus die **Breite** alle Bildschirme-Eigenschaftensatz auf `Max(App.Width, App.DesignWidth)`, und ihre **Höhe** -Eigenschaftensatz auf `Max(App.Height, App.DesignHeight)` , damit sie die Dimensionen des Fensters verfolgen, in dem die app ausgeführt wird. Mit dieser Änderung können Sie apps erstellen, die auf verschiedenen Geräten und fensterabmessungen reagieren. Weitere Informationen finden Sie unter: [Dynamisches Layout erstellen](create-responsive-layout.md)
 
-    Wenn Sie die Bildschirmausrichtung der App sperren, behält die App die Ausrichtung bei, die Sie angeben. Wenn die App auf einem Gerät ausgeführt wird, das eine andere Bildschirmausrichtung besitzt, wird die App falsch angezeigt, und es werden möglicherweise unerwünschte Ergebnisse angezeigt. Wenn Sie die Ausrichtung der App entsperren, wird diese der Bildschirmausrichtung des Geräts angepasst, auf der sie ausgeführt wird.
+1. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
 
-6. Zum Speichern Ihrer Änderungen wählen Sie **Anwenden** aus.
+    Wenn diese Einstellung aktiviert ist, behält die app die bildschirmausrichtung und das Originalseitenverhältnis beibehalten, die Sie in den Schritten 2 und 3, unabhängig vom Gerät angegeben. Beispielsweise behält eine phoneapp, die in einem Webbrowser ausgeführt wird, das Verhältnis für ein Smartphone, einen dunklen Balken auf jeder Seite statt füllen das Fenster angezeigt.
+
+    Wenn diese Einstellung deaktiviert ist, passt sich die app an das Seitenverhältnis des Geräts auf dem es ausgeführt wird (und die Benutzeroberfläche verzerren, falls erforderlich).
+
+1. Geben Sie unter **Bildschirmausrichtung sperren** entweder **Ein** oder **Aus** an.
+
+    Wenn Sie die Ausrichtung der app sperren, behält die app die Ausrichtung, die Sie angeben. Wenn die app auf einem Gerät ausgeführt wird, für die der Bildschirm in eine andere Ausrichtung ist, wird die app falsch angezeigt, und möglicherweise unerwünschte Ergebnisse angezeigt. Wenn Sie die Ausrichtung der app entsperren, passt es auf die bildschirmausrichtung des Geräts auf dem er ausgeführt wird.
+
+    Sie können auch die Ausrichtung der app ändern, indem Sie aktivieren **aktivieren-app, die Benutzeroberfläche zum Einbetten** in **Erweiterte Einstellungen**. Dieses Feature oben links richtet die app aus, wenn es eingebettet ist, und die Hintergrundfarbe der hostingcanvas auf weiß ändert.
+
+1. Zum Speichern Ihrer Änderungen wählen Sie **Anwenden** aus.
 
 ## <a name="next-step"></a>Nächster Schritt
 Wählen Sie im Menü **Datei** die Option **Speichern** aus, um Ihre App mit den neuen Einstellungen erneut zu veröffentlichen.

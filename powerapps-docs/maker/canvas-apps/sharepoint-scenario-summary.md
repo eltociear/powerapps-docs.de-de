@@ -1,24 +1,24 @@
 ---
 title: Vollständige exemplarische Vorgehensweise für das Szenario der SharePoint Online-Integration | Microsoft-Dokumentation
 description: Befolgen Sie die vollständige exemplarische Vorgehensweise für das Szenario, das wir in dieser Reihe von Tutorials entwickelt haben.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 64a26fbd0e36937427bc679869d5bc942f254130
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850188"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799638"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Vollständige exemplarische Vorgehensweise für das komplette Szenario der SharePoint Online-Integration
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42850188"
 
 Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt – vom Erstellen von Apps und Flows bis hin zum Erstellen von Berichten und dem Einbetten dieser Berichte in SharePoint. Wir hoffen, dass Sie viel gelernt haben und jetzt wissen, wie diese Technologien ineinandergreifen, sodass Sie Canvas-Apps, Flows und Berichte entsprechend Ihren Anforderungen in SharePoint integrieren können. Vor dem Abschluss dieser Reihe möchten wir das Szenario vollständig durchgehen und betrachten, wie alle Teile zusammenwirken.
 
-## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Schritt 1: Hinzufügen eines Projekts zur Liste „Project Requests“ (Projektanforderungen)
+## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Schritt 1: Fügen Sie ein Projekt mit der Liste der Projektanforderungen
 1. Klicken oder tippen Sie in der Liste **Project Requests**  (Projektanforderungen) auf **Alle Elemente** und dann auf **Project Requests app** (Projektanforderungen-App).
    
     ![Ansicht „Project Requests app“ (Projektanforderungen-App)](./media/sharepoint-scenario-summary/09-00-01-view-app.png)
@@ -138,7 +138,7 @@ Wir haben in dieser Reihe von Tutorials eine enorme Anzahl von Themen behandelt 
    
     Wie bereits beim Erstellen dieser Visualisierung festgestellt, benötigen die Projekte, die Irvin Sayers zugewiesen sind, mehr Zeit bis zum Start, und zwei Projekte erfordern viel mehr Zeit als die restlichen Projekte.
 
-## <a name="step-6-respond-to-pending-project-delays"></a>Schritt 6: Reagieren auf Verzögerungen bei ausstehenden Projekten
+## <a name="step-6-respond-to-pending-project-delays"></a>Schritt 6: Reagieren Sie auf Verzögerungen bei ausstehenden Projekten
 1. Klicken oder tippen Sie im Power BI-Dienst auf das Dataset **project-analysis** und dann auf **JETZT AKTUALISIEREN**. Die Aktualisierung löst die Warnung aus, die wir für ausstehende Projekte eingerichtet haben.
    
     ![Dataset jetzt aktualisieren](./media/sharepoint-scenario-summary/09-06-01-refresh.png)

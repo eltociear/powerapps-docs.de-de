@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30d3378f46e587e45314c30be1fce3c36b2bb120
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
+ms.sourcegitcommit: 1b8578e38a09220ac66c5123644714139fc3c9e5
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832995"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800443"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Die Funktionen „EncodeUrl“ und „PlainText“ in PowerApps
 Codiert und decodiert Zeichenfolgen
 
 ## <a name="description"></a>Beschreibung
-Die **EncodeUrl**-Funktion codiert eine URL-Zeichenfolge, indem sie nicht alphanumerische Zeichen durch „%“ und eine hexadezimale Zahl ersetzt.  
+Die **EncodeUrl** Funktion codiert eine URL-Zeichenfolge, die bestimmte nicht-alphanumerischen Zeichen mit dem % und eine hexadezimale Zahl ersetzt.  
 
-Die **PlainText**-Funktion entfernt HTML- und XML-Tags und konvertiert Tags wie die folgenden in ein entsprechendes Symbol:
+Die **nur-Text** -Funktion entfernt HTML- und XML-Tags, konvertieren bestimmte Tags wie diese in ein entsprechendes Symbol:
 
 * **&amp;nbsp;**
 * **&amp;quot;**
 
-Der Rückgabewert dieser Funktionen ist die codierte oder decodierte Zeichenfolge.   
+Der Rückgabewert dieser Funktionen ist die codierte oder decodierte Zeichenfolge. Diese Funktion entfernt nicht alle HTML- und XML-Tags. 
 
 ## <a name="syntax"></a>Syntax
 **EncodeUrl**( *String* )

@@ -1,24 +1,24 @@
 ---
 title: Erstellen einer Canvas-App zum Verwalten von Projekten | Microsoft-Dokumentation
 description: In dieser Aufgabe erstellen wir eine Canvas-App von Grund auf neu. Mithilfe dieser App kann ein Benutzer Projekten einen Manager zuweisen und Projektdetails aktualisieren.
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842369"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799891"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Erstellen einer Canvas-App zum Verwalten von Projekten
 > [!NOTE]
@@ -86,7 +86,7 @@ Die App sollte nun wie in der folgenden Abbildung aussehen.
 
 ![Alle App-Bildschirme](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
-## <a name="step-2-connect-to-a-sharepoint-list"></a>Schritt 2: Verbinden mit einer SharePoint-Liste
+## <a name="step-2-connect-to-a-sharepoint-list"></a>Schritt 2: Verbinden Sie mit einer SharePoint-Liste
 In diesem Schritt stellen wir eine Verbindung mit der SharePoint-Liste **Product Details** (Produktdetails) her. Wir verwenden in dieser App lediglich eine Liste, Sie könnten jedoch auch problemlos eine Verbindung mit beiden herstellen, wenn Sie die App erweitern möchten.
 
 1. Klicken oder tippen Sie in der linken Navigationsleiste auf den Bildschirm **SelectTask**.
@@ -113,7 +113,7 @@ In diesem Schritt stellen wir eine Verbindung mit der SharePoint-Liste **Product
    
     ![Registerkarte „Datenquellen“](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
-## <a name="step-3-build-the-selecttask-screen"></a>Schritt 3: Erstellen des Bildschirms „SelectTask“
+## <a name="step-3-build-the-selecttask-screen"></a>Schritt 3: Bildschirm "SelectTask" erstellen
 In diesem Schritt richten wir eine Möglichkeit der Navigation zu den anderen Bildschirmen in der App ein. Dabei arbeiten wir mit einigen der Steuerelemente, Formeln und Formatierungsoptionen in PowerApps.
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>Aktualisieren des Titels und Einfügen von Einführungstext
@@ -169,7 +169,7 @@ Noch ist der Funktionsumfang der App recht begrenzt, Sie können sie jedoch trot
 
 4. Klicken oder tippen Sie auf ![Symbol „App-Vorschau schließen“](./media/sharepoint-scenario-build-app/icon-close-preview.png) in der rechten oberen Ecke, um die App zu schließen.
 
-## <a name="step-4-build-the-assignmanager-screen"></a>Schritt 4: Erstellen des Bildschirms „AssignManager“
+## <a name="step-4-build-the-assignmanager-screen"></a>Schritt 4: Erstellen der Bildschirms "AssignManager"
 In diesem Schritt zeigen wir mit einem Katalog alle Projekte an, die genehmigt wurden, denen jedoch noch kein Manager zugewiesen wurde. Wir fügen weitere Steuerelemente hinzu, sodass Sie einen Manager zuweisen können.
 
 > [!NOTE]
@@ -291,7 +291,7 @@ In diesem Schritt zeigen wir mit einem Katalog alle Projekte an, die genehmigt w
    
    * **Height**-Eigenschaft = **60**
 
-   * **OnSelect**-Eigenschaft = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. Weitere Informationen finden Sie unter [Detaillierte Erläuterungen zu Formeln](#formula-deep-dive).
+   * **OnSelect** property = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. Weitere Informationen finden Sie unter [Detaillierte Erläuterungen zu Formeln](#formula-deep-dive).
 
    * Mit dieser Formel wird die Liste **Project Details** (Projektdetails) aktualisiert, und es wird ein Wert für das Feld „PMAssigned“ festgelegt.
 
@@ -307,7 +307,7 @@ Der fertige Bildschirm sollte nun etwa dem in der folgenden Abbildung entspreche
 
 ![Fertiger Bildschirm „Assign Manager“ (Manager zuweisen)](./media/sharepoint-scenario-build-app/04-04-12-complete.png)
 
-## <a name="step-5-build-the-viewprojects-screen"></a>Schritt 5: Erstellen des Bildschirms „ViewProjects“
+## <a name="step-5-build-the-viewprojects-screen"></a>Schritt 5: Erstellen der Bildschirms "ViewProjects"
 In diesem Schritt ändern wir die Eigenschaften des Katalogs im Bildschirm **ViewProjects**. In diesem Katalog werden Elemente aus der Liste **Project Details** (Projektdetails) angezeigt. Sie wählen zunächst in diesem Bildschirm ein Element aus, dann bearbeiten Sie die Details im Bildschirm **UpdateDetails**.
 
 1. Klicken oder tippen Sie in der linken Navigationsleiste auf den Bildschirm **ViewProjects**.
@@ -364,7 +364,7 @@ In diesem Schritt ändern wir die Eigenschaften des Katalogs im Bildschirm **Vie
      
      ![Fertiger Bildschirm „View Project“ (Projekte anzeigen)](./media/sharepoint-scenario-build-app/04-05-07-viewprojects-final.png)
 
-## <a name="step-6-build-the-updatedetails-screen"></a>Schritt 6: Erstellen des Bildschirms „UpdateDetails“
+## <a name="step-6-build-the-updatedetails-screen"></a>Schritt 6: Erstellen der Bildschirms "UpdateDetails"
 In diesem Schritt verbinden wir das Bearbeitungsformular im Bildschirm **UpdateDetails** mit der Datenquelle, zudem nehmen wir einige Änderungen an Eigenschaften und Feldern vor. In diesem Bildschirm bearbeiten Sie Details für ein Projekt, das Sie im Bildschirm **View Projects** (Projekte anzeigen) ausgewählt haben.
 
 1. Klicken oder tippen Sie in der linken Navigationsleiste auf den Bildschirm **UpdateDetails**.
@@ -496,7 +496,7 @@ Nun ist die App auf der SharePoint-Website vorhanden, und wir übernehmen die Ro
 ## <a name="formula-deep-dive"></a>Detaillierte Erläuterung zu Formeln
 Dies ist der zweite optionale Abschnitt für PowerApps Formeln. In der ersten detaillierten Erläuterung haben wir eine der Formeln betrachtet, die von PowerApps für den durchsuchbaren Katalog in einer App mit drei Bildschirmen generiert wird. In dieser detaillierten Erläuterung betrachten wir eine Formel, die wir für den Bildschirm **AssignManager** der zweiten App verwenden. Die Formel lautet wie folgt:
 
-**Patch ( 'Project Details', LookUp ( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
+**Patch( 'Project Details', LookUp( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
 
 Welche Aktionen führt diese Formel aus? Wenn Sie ein Element im Katalog auswählen und auf die Schaltfläche **OK** klicken, aktualisiert die Formel die Liste **Project Details** (Projektdetails), wobei die Spalte **PMAssigned** auf den Wert festgelegt wird, der in der Texteingabe angegeben ist. Die Formel führt ihre Aufgaben mithilfe von Funktionen aus:
 

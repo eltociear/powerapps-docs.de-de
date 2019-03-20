@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
-ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
-ms.translationtype: HT
+ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44499520"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804376"
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -66,7 +66,7 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
+**[FontWeight](properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -169,3 +169,6 @@ Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informatione
   > Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
 
 * Fügen Sie ggf. eine **[Bezeichnung](control-text-box.md)** hinzu, die die verstrichene Zeit anzeigt. Weisen Sie den Benutzer mithilfe des **[Texts](properties-core.md)** an, ob der Timer gestartet oder beendet werden soll.
+
+### <a name="support-in-powerapps-studio"></a>Unterstützung in PowerApps Studio
+Wenn Sie eine app erstellen, Timer deaktiviert, um zu verhindern, dass Ereignisse auslösen. Sie können die Timer in PowerApps Studio testen, wenn Sie Preview öffnen oder speichern Sie die app und Testen Sie sie in PowerApps Mobile oder der webplayer können.

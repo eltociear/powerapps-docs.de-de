@@ -1,24 +1,24 @@
 ---
 title: Erstellen eines Power BI-Berichts zum Analysieren von Projekten | Microsoft-Dokumentation
 description: In dieser Aufgabe erstellen Sie einen Power BI-Bericht, der auf zwei SharePoint-Listen basiert.
-author: mgblythe
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/10/2018
-ms.author: mblythe
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: adda4a7adae9961b77f01320e92527b53ac61e7f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42828775"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799937"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Erstellen eines Power BI-Berichts zum Analysieren von Projekten
 > [!NOTE]
@@ -30,9 +30,9 @@ In dieser Aufgabe Sie einen Power BI-Bericht, der auf den beiden SharePoint-List
 > Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieses Berichts: „project-analysis.pbix“.
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Kurzübersicht über Power BI Desktop
-Bevor wir uns mit dem Erstellen von Berichten befassen, gehen wir kurz auf Power BI Desktop ein. Dies ist ein leistungsstarkes Tool mit einer Vielzahl von Funktionen, daher bieten wir einen schwerpunktmäßigen Überblick über die Bereiche, die wir in dieser Aufgabe verwenden werden. In Power BI Desktop gibt es drei Hauptarbeitsbereiche oder *Sichten*: die Sicht **Bericht**, die Sicht **Daten** und die Sicht **Beziehungen**. Power BI Desktop bietet außerdem einen **Abfrage-Editor**, der in einem separaten Fenster geöffnet wird.
+Bevor wir uns mit dem Erstellen von Berichten befassen, gehen wir kurz auf Power BI Desktop ein. Dies ist ein leistungsstarkes Tool mit einer Vielzahl von Funktionen, daher bieten wir einen schwerpunktmäßigen Überblick über die Bereiche, die wir in dieser Aufgabe verwenden werden. Es gibt drei Hauptarbeitsbereiche oder *Ansichten* in Power BI Desktop: **Bericht** Ansicht **Daten** Ansicht und **Beziehungen** anzeigen. Power BI Desktop bietet außerdem einen **Abfrage-Editor**, der in einem separaten Fenster geöffnet wird.
 
-In der folgenden Abbildung werden die Symbole für die drei Sichten entlang der linken Seite von Power BI Desktop gezeigt: **Bericht**, **Daten** und **Beziehungen** (von oben nach unten). Der gelbe Balken links zeigt die aktuelle Sicht an. In diesem Fall wird die Sicht **Bericht** angezeigt. Sie können zwischen den Sichten wechseln, indem Sie auf eines der drei Symbole klicken bzw. tippen.
+Der folgende Bildschirm zeigt die Symbole der drei Ansichten auf der linken Seite von Power BI Desktop: **Bericht**, **Daten**, und **Beziehungen**, von oben nach unten. Der gelbe Balken links zeigt die aktuelle Sicht an. In diesem Fall wird die Sicht **Bericht** angezeigt. Sie können zwischen den Sichten wechseln, indem Sie auf eines der drei Symbole klicken bzw. tippen.
 
 ![Sichten in Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-00-tabs.png)
 
@@ -65,7 +65,7 @@ Im **Abfrage-Editor** erstellen Sie Abfragen, und Sie transformieren Daten. Ansc
 
 ![Abfrage-Editor von Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-03-query.png)
 
-## <a name="step-1-get-data-into-power-bi-desktop"></a>Schritt 1: Übernehmen von Daten in Power BI Desktop
+## <a name="step-1-get-data-into-power-bi-desktop"></a>Schritt 1: Abrufen von Daten in Power BI Desktop
 In diesem Schritt wird zunächst eine Verbindung mit den zwei Listen hergestellt. Anschließend müssen die Daten bereinigt werden, indem nicht für die Datenanalyse benötigte Spalten entfernt werden. Zudem ändern wir die Datentypen für einige der verbleibenden Spalten, damit die Berechnungen ordnungsgemäß ausgeführt werden können. Weitere Informationen zum Übernehmen und Bereinigen von Daten in Power BI Desktop finden Sie im Abschnitt zum [Abrufen von Daten](https://powerbi.microsoft.com/guided-learning/powerbi-learning-1-1-overview-of-power-bi-desktop) in unserem Kurs für geführtes Lernen.
 
 ### <a name="connect-to-sharepoint-lists"></a>Herstellen einer Verbindung mit SharePoint-Listen
@@ -94,7 +94,7 @@ In diesem Schritt wird zunächst eine Verbindung mit den zwei Listen hergestellt
 2. Wählen Sie im mittleren Bereich die Spalte **FileSystemObjectType** aus, und klicken oder tippen Sie auf **Spalten entfernen**.
    
     ![Spalten entfernen](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. Entfernen Sie die zwei Spalten nach der Spalte **ID**: **ServerRedirectedEmbedURL** und **ContentTypeId**. 
+3. Entfernen Sie die zwei Spalten nach der **Id** Spalte: **ServerRedirectedEmbedURL** und **ContentTypeId**. 
    > [!TIP]
    > Mithilfe der Umschalttaste können Sie beide Spalten auswählen. Klicken oder tippen Sie anschließend auf **Spalten entfernen**.
 4. Entfernen Sie alle Spalten rechts von der Spalte **PMAssigned** (insgesamt 22 Spalten). Die Tabelle sollte wie die in der folgenden Abbildung aussehen:
@@ -105,11 +105,11 @@ In diesem Schritt wird zunächst eine Verbindung mit den zwei Listen hergestellt
     ![ Tabelle „Project Requests“ (Projektanforderungen) im Abfrage-Editor](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
 ### <a name="change-the-data-type-on-project-details-columns"></a>Ändern des Datentyps für Spalten von „Project Details“ (Projektdetails)
-1. Wählen Sie die Spalte **ProjectedDays** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und dann auf **Ganze Zahl**.
+1. Wählen Sie die **ProjectedDays** Spalte, klicken oder tippen Sie auf **-Datentyp: Alle**, klicken Sie dann **ganze Zahl**.
    
     ![Ändern des Datentyps in „Ganze Zahl“](./media/sharepoint-scenario-build-report/05-01-10-datatype-number.png)
 2. Wiederholen Sie den vorherigen Schritt für die Spalte **ActualDays**.
-3. Wählen Sie die Spalte **ApprovedDate** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und anschließend auf **Datum**.
+3. Wählen Sie die **ApprovedDate** Spalte, klicken oder tippen Sie auf **-Datentyp: Alle**, klicken Sie dann **Datum**.
    
     ![ Ändern des Datentyps in „Datum“](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
 
@@ -117,9 +117,9 @@ In diesem Schritt wird zunächst eine Verbindung mit den zwei Listen hergestellt
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Ändern des Datentyps für Spalten von „Project Requests“ (Projektanforderungen)
 
-1. Wählen Sie die Spalte **EstimatedDays** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und anschließend auf **Ganze Zahl**.
+1. Wählen Sie die **EstimatedDays** Spalte, klicken oder tippen Sie auf **-Datentyp: Alle**, klicken Sie dann **ganze Zahl**.
 
-2. Wählen Sie die Spalte **RequestDate** aus, klicken oder tippen Sie auf **Datentyp: Beliebig** und anschließend auf **Datum**.
+2. Wählen Sie die **RequestDate** Spalte, klicken oder tippen Sie auf **-Datentyp: Alle**, klicken Sie dann **Datum**.
 
 ### <a name="apply-and-save-changes"></a>Anwenden und Speichern der Änderungen
 
@@ -185,7 +185,7 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
 1. Klicken oder tippen Sie in der Tabelle mit Datumsangaben auf **Neue Spalte**.
    
     ![Neue Spalte](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Geben Sie in der Bearbeitungsleiste die folgende Formel ein: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
+2. Geben Sie in der Bearbeitungsleiste diese Formel ein: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
    
     Durch diese Formel wird bestimmt, ob es sich bei einem Datum in der Spalte **Date** um einen Werktag handelt. Wenn es sich bei dem Datum um einen Werktag handelt, erhält die Spalte **IsWeekDay** den Wert 1, andernfalls wird der Spalte der Wert 0 zugewiesen.
 3. Drücken Sie die EINGABETASTE, um der Tabelle **Dates** die Spalte **IsWeekDay** hinzuzufügen.
@@ -284,7 +284,7 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
    
     ![Hinzufügen des Measure „MaxDaysPending“](./media/sharepoint-scenario-build-report/05-02-12-measure-maxdayspending.png)
 
-## <a name="step-3-create-report-visualizations"></a>Schritt 3: Erstellen von Berichtsvisualisierungen
+## <a name="step-3-create-report-visualizations"></a>Schritt 3: Erstellen von berichtsvisualisierungen
 Nun kommen wir zu dem Schritt, der vielen bei der Datenanalyse zuerst in den Sinn kommt: das Erstellen von Visualisierungen, sodass Muster in den Daten aufgefunden werden können. In diesem Schritt erstellen wir vier Visualisierungen:
 
 * Ein Säulendiagramm, in dem die geplanten Tage den tatsächlichen Tagen eines Projekts gegenübergestellt werden

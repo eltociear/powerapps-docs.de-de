@@ -1,30 +1,30 @@
 ---
 title: Einrichten von Listen für die Integration von SharePoint Online in PowerApps, Microsoft Flow und Power BI | Microsoft-Dokumentation
 description: In dieser Aufgabe richten wir SharePoint-Listen als Datenquelle für Apps, Flows, Berichte und Dashboards ein.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/19/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1694a3190740c788eb9cd53de1187ed32d0fbc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833318"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799178"
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Einrichten von Listen für die Integration von SharePoint Online in PowerApps, Microsoft Flow und Power BI
 > [!NOTE]
 > Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
-SharePoint bietet zahllose Features für Freigabe und Zusammenarbeit, für dieses Szenario konzentrieren wir uns jedoch auf [SharePoint-Listen](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Eine Liste ist einfach eine Sammlung von Daten, die Sie für Teammitglieder und andere Websitebenutzer freigeben können. Wir beschreiben die für dieses Szenario verwendeten Listen. Anschließend können Sie sie auf der eigenen SharePoint Online-Website erstellen.
+SharePoint bietet zahllose Features für Freigabe und Zusammenarbeit, aber der Schwerpunkt auf ein Feature für dieses Szenario: [SharePoint-Listen](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Eine Liste ist einfach eine Sammlung von Daten, die Sie für Teammitglieder und andere Websitebenutzer freigeben können. Wir beschreiben die für dieses Szenario verwendeten Listen. Anschließend können Sie sie auf der eigenen SharePoint Online-Website erstellen.
 
 ## <a name="step-1-understand-the-lists"></a>Schritt 1: Verstehen der Listen
 Die erste Liste lautet **Project Requests** (Projektanforderungen). Dieser fügt ein Projektanforderer eine Anforderung hinzu. Anschließend überprüft der Projektgenehmiger die Anforderung und genehmigt sie oder lehnt sie ab.
@@ -34,7 +34,7 @@ Die erste Liste lautet **Project Requests** (Projektanforderungen). Dieser fügt
 | Title |Eine Textzeile |Standardspalte, wird für den Projektnamen verwendet |
 | Beschreibung |Eine Textzeile | |
 | ProjectType |Eine Textzeile |Werte: „New hardware“ (Neue Hardware), „Hardware update“ (Hardwareaktualisierung), „New software“ (Neue Software), „Software update“ (Softwareupdate) |
-| RequestDate |Datum | |
+| RequestDate |Date | |
 | Requestor (Anforderer) |Eine Textzeile | |
 | EstimatedDays |Number |Ermöglicht den Vergleich zwischen dem Schätzwert des Anforderers, dem Schätzwert des Projektmanagers und dem tatsächlichen Wert |
 | Approved (Genehmigt) |Eine Textzeile |Werte: „Ausstehend“, „Ja“, „Nein“ |
@@ -48,15 +48,15 @@ Die zweite Liste lautet **Project Details** (Projektdetails). In dieser werden D
 | --- | --- | --- |
 | Title |Eine Textzeile |Standardspalte, wird für den Projektnamen verwendet |
 | RequestID |Number |Entspricht dem Wert in der Spalte **ID** der Liste **Project Requests** (Projektanforderungen). |
-| ApprovedDate (Genehmigungsdatum) |Datum | |
+| ApprovedDate (Genehmigungsdatum) |Date | |
 | Status |Eine Textzeile |Werte: „Not started“ (Nicht gestartet), „In progress“ (In Bearbeitung), „Completed“ (Abgeschlossen) |
-| ProjectedStartDate |Datum |Das vom Projektmanager geschätzte Startdatum des Projekts |
+| ProjectedStartDate |Date |Das vom Projektmanager geschätzte Startdatum des Projekts |
 | ProjectedEndDate |Datum |Das vom Projektmanager geschätzte Enddatum des Projekts |
 | ProjectedDays |Number |Arbeitstage. Diese werden in der Regel berechnet, jedoch nicht in diesem Szenario. |
 | ActualDays (Tatsächliche Anzahl von Tagen) |Number |Für abgeschlossene Projekte |
 | PMAssigned |Eine Textzeile |Projektmanager |
 
-## <a name="step-2-create-and-review-the-lists"></a>Schritt 2: Erstellen und Überprüfen der Listen
+## <a name="step-2-create-and-review-the-lists"></a>Schritt 2: Erstellen Sie und überprüfen Sie die Listen
 Um mit dem Szenario fortzufahren, müssen Sie die beiden SharePoint-Listen erstellen und mit Beispieldaten auffüllen. Um Sie dabei anzuleiten, erstellen wir die Liste und fügen Beispieldaten in sie ein. Stellen Sie sicher, dass Sie über die Excel-Dateien aus dem [Downloadpaket](https://aka.ms/o4ia0f) verfügen.
 
 > [!NOTE]
@@ -105,9 +105,9 @@ Um mit dem Szenario fortzufahren, müssen Sie die beiden SharePoint-Listen erste
 4. Kopieren Sie die Daten, fügen Sie sie in das Raster in SharePoint ein, und klicken oder tippen Sie dann auf **Fertig**.
    
     ![Vollständige Liste mit Daten](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. Wiederholen Sie unter Verwendung der Arbeitsmappe „project-details.xlsx“ die Schritte zum Erstellen der Liste und Kopieren der Daten für die Liste „Project Details“ (Projektdetails). Die Spaltennamen und Datentypen können Sie der Tabelle „Project Details“ (Projektdetails) in [Schritt 1: Verstehen der Listen](#step-1-understand-the-lists) entnehmen.
+5. Wiederholen Sie unter Verwendung der Arbeitsmappe „project-details.xlsx“ die Schritte zum Erstellen der Liste und Kopieren der Daten für die Liste „Project Details“ (Projektdetails). Finden Sie in der Tabelle "Project Details" in [Schritt 1: Verstehen der Listen](#step-1-understand-the-lists) für die Spaltennamen und Spaltentypen.
 
-## <a name="step-3-update-connections-to-samples---optional"></a>Schritt 3: Aktualisieren von Verbindungen mit den Beispielen – optional
+## <a name="step-3-update-connections-to-samples---optional"></a>Schritt 3: Aktualisieren von Verbindungen mit Beispielen – optional
 Wie in der Einführung zu dieser Tutorialreihe erwähnt, enthält das [Downloadpaket](https://aka.ms/o4ia0f) zwei Beispiel-Apps und einen Beispielbericht. Sie können dieses Szenario ohne die Beispiele abschließen, wenn Sie jedoch die Beispiele verwenden möchten, müssen Sie die Verbindungen mit den SharePoint-Listen aktualisieren. Sie aktualisieren sie für die Verwendung *Ihrer* Listen statt unserer Listen als Datenquelle.
 
 ### <a name="update-connections-for-the-sample-apps"></a>Aktualisieren von Verbindungen für die Beispiel-Apps

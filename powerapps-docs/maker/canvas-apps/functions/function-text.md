@@ -7,29 +7,31 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 10/25/2016
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dab6004afe7350b2375ade21871efe9144b6325b
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3a3d272737783abeaf2fe33557457486dae31e45
+ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849291"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "57800558"
 ---
 # <a name="text-function-in-powerapps"></a>Funktion „Text“ in PowerApps
-Formatiert eine Zahl oder einen Datums-/Uhrzeit-Wert für die Anzeige als Textzeichenfolge.
+Konvertiert einen beliebigen Wert ein, und formatiert einen Zahl oder Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts.
 
 ## <a name="description"></a>Beschreibung
 Die Funktion **Text** formatiert eine Zahl oder einen Datums-/Uhrzeit-Wert auf der Grundlage eines dieser Argumenttypen:
 
-* Eines vordefinierten Datums-/Uhrzeitformats, das Sie mithilfe der **DateTimeFormat**-Enumeration angeben.  Dies ist das bevorzugte Format für Datums- und Uhrzeitwerte, da es sich automatisch an die Sprache und das Gebietsschema des Benutzers anpasst.
-* Eines benutzerdefinierten Formats, d.h. einer Textzeichenfolge, die Platzhalter beinhaltet, die ihrerseits die Formatierung der Zahl oder des Datums-/Uhrzeitwerts beschreiben. Platzhalter definieren, wie viele Stellen angezeigt, ob Gruppentrennzeichen verwendet und wie Monatsnamen angezeigt werden sollen. PowerApps unterstützt eine Teilmenge der von Microsoft Excel unterstützten Platzhalter.
+* Eines vordefinierten Datums-/Uhrzeitformats, das Sie mithilfe der **DateTimeFormat**-Enumeration angeben. Für die Datums- und Uhrzeitwerte ist dieser Ansatz bevorzugt, wie es auf Sprache und Region des Benutzers automatisch angepasst wird.
+* Ein benutzerdefiniertes Format, das eine Zeichenfolge mit Platzhaltern, die z. B. definieren umfasst, ob Zahlen zeigen an, ein Dezimaltrennzeichen und Datumsangaben den vollständigen Namen des Monats, den Monat als Abkürzung oder den Monat als Zahl zeigt. PowerApps unterstützt eine Teilmenge der von Microsoft Excel unterstützten Platzhalter. Der sprachplatzhalter in dieser Zeichenfolge gibt an, dass die Sprache, in dem die anderen Platzhalter interpretiert werden sollen. Wenn das benutzerdefinierte Format einen Punkt enthält, z. B. der Platzhalter für die Sprache-Format angibt, ob der Zeitraum ein Dezimaltrennzeichen (ja-JP) oder ein Tausendertrennzeichen Trennzeichen (es-ES).
 
 Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben](../show-text-dates-times.md).
+
+Die **Text** -Funktion kann auch einen beliebigen Datentyp aufweisen, eine Textdarstellung mit einem standardmäßigen Format konvertieren. Hiermit können Sie nicht-Text-Werte an textbasierten Funktionen übergeben werden z. B. [ **Len**](function-len.md), [ **rechts**](function-left-mid-right.md), und [  **"IsMatch"**](function-ismatch.md).
 
 ### <a name="predefined-datetime-formats"></a> Vordefinierte Datums-/Uhrzeitformate
 
@@ -53,18 +55,18 @@ Weitere Informationen finden Sie unter [Arbeiten mit Datums- und Uhrzeitangaben]
 | --- | --- |
 | **0** (*null*) |Zeigt nicht signifikante Nullen an, wenn eine Zahl weniger Stellen aufweist, als Nullen im Format festgelegt sind. Verwenden Sie beispielsweise das Format **#,00**, wenn Sie **8,9** im Format **8,90** anzeigen möchten. |
 | **#** |Folgt den gleichen Regeln wie **0** (null). **Text** gibt jedoch keine zusätzlichen Nullen zurück, wenn die Zahl weniger Stellen auf beiden Seiten des Dezimaltrennzeichens aufweist, als #-Symbole im Format vorhanden sind. Beispielsweise wird **8,9** angezeigt, wenn das benutzerdefinierte Format **#,##** und die zu formatierende Zahl **8,9** ist. |
-| **.** (*Punkt*) |Zeigt das Dezimaltrennzeichen in einer Zahl an.  Hängt von der Sprache des benutzerdefinierten Formats ab, Details finden Sie unter [globale Anwendungen](#global-apps). |
-| **.** (*Komma*) |Zeigt das Gruppierungstrennzeichen in einer Zahl an, häufig für Tausender verwendet. **Text** trennt Gruppen durch Punkte ab, wenn ein Format einen Punkt enthält, der von Zahlenzeichen (**#**) oder Nullen eingeschlossen ist.  Hängt von der Sprache des benutzerdefinierten Formats ab, Details finden Sie unter [globale Anwendungen](#global-apps). |
+| **.** (*Punkt*) |Zeigt das Dezimaltrennzeichen in einer Zahl an. Hängt von der Sprache des benutzerdefinierten Formats; finden Sie unter [globalen apps](#global-apps) Weitere Details. |
+| **.** (*Komma*) |Zeigt das Gruppierungstrennzeichen in einer Zahl an, häufig für Tausender verwendet. **Text** trennt Gruppen durch Punkte ab, wenn ein Format einen Punkt enthält, der von Zahlenzeichen (**#**) oder Nullen eingeschlossen ist. Hängt von der Sprache des benutzerdefinierten Formats; finden Sie unter [globalen apps](#global-apps) Weitere Details. |
 
 Wenn eine Zahl mehr Stellen rechts vom Dezimaltrennzeichen aufweist, als Platzhalter im Format vorhanden sind, wird die Zahl zu der im Format definierten Anzahl Dezimalstellen gerundet. Wenn links vom Dezimaltrennzeichen mehr Stellen als Platzhalter vorhanden sind, werden die zusätzlichen Stellen angezeigt. Wenn das Format nur Zahlenzeichen (#) links vom Dezimaltrennzeichen aufweist, beginnen Zahlen kleiner als 1 mit dem Dezimaltrennzeichen (z. B. **,47**).
 
 ### <a name="date-and-time-placeholders"></a>Platzhalter für Datum und Uhrzeit
 
-|                                                                                                 Platzhalter                                                                                                  |                                                                                                     Beschreibung                                                                                                     |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                    **m**                                                                                                     |                                                                               Zeigt den Monat als Zahl ohne führende Null an.                                                                                |
-|                                                                                                    **mm**                                                                                                    |                                                                        Zeigt den Monat als Zahl mit führender Null an, wenn das angebracht ist.                                                                         |
-|                                                                                                   **mmm**                                                                                                    |                                                                             Zeigt den Monat als Abkürzung an (**Jan** bis **Dez**).                                                                             |
+|   Platzhalter    |   Beschreibung                                                  |
+|------------------|----------------------------------------------------------------|
+|  **m**   |   Zeigt den Monat als Zahl ohne führende Null an.               |
+|  **mm**  |   Zeigt den Monat als Zahl mit führender Null an, wenn das angebracht ist. |
+|  **mmm** |   Zeigt den Monat als Abkürzung an (**Jan** bis **Dez**).          |
 |                                                                                                   **mmmm**                                                                                                   |                                                                          Zeigt den Monat als vollständigen Namen an (**Januar** bis **Dezember**).                                                                           |
 |                                                                                                    **d**                                                                                                     |                                                                                Zeigt den Tag als Zahl ohne führende Null an.                                                                                 |
 |                                                                                                    **dd**                                                                                                    |                                                                         Zeigt den Tag als Zahl mit führender Null an, wenn das angebracht ist.                                                                          |
@@ -73,15 +75,13 @@ Wenn eine Zahl mehr Stellen rechts vom Dezimaltrennzeichen aufweist, als Platzha
 |                                                                                                    **yy**                                                                                                    |                                                                                      Zeigt das Jahr als zweistellige Zahl an.                                                                                       |
 |                                                                                                   **yyyy**                                                                                                   |                                                                                      Zeigt das Jahr als vierstellige Zahl an.                                                                                      |
 |                                                                                                    **h**                                                                                                     |                                                                                Zeigt die Stunde als Zahl ohne führende Null an.                                                                                |
-|                                                                                                    **hh**                                                                                                    | Zeigt die Stunde als Zahl mit führender Null an, wenn das angebracht ist. Wenn das Format **AM** oder **PM** enthält, wird die Stunde basierend auf der 12-Stunden-Uhr angezeigt. Andernfalls wird die Stunde auf der 24-Stunden-Uhr basierend angezeigt. |
-|                                                                                                    **m**                                                                                                     |                                                                         Zeigt die Minute als Zahl ohne führende Null an.  > [!NOTE]                                                                          |
-|            Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen, andernfalls gibt **Text** den Monat anstelle von Minuten zurück.            |                                                                                                                                                                                                                     |
-|                                                                                                    **mm**                                                                                                    |                                                                   Zeigt die Minute als Zahl mit führender Null an, wenn das angebracht ist. > [!NOTE]                                                                   |
-| Der Code **m** oder **mm** muss unmittelbar auf den Code **h** oder **hh** folgen oder dem Code **ss** unmittelbar voranstehen. Andernfalls gibt **Text** den Monat anstelle von Minuten zurück. |                                                                                                                                                                                                                     |
-|                                                                                                    **s**                                                                                                     |                                                                               Zeigt die Sekunde als Zahl ohne führende Null an.                                                                               |
-|                                                                                                    **ss**                                                                                                    |                                                                        Zeigt die Sekunde als Zahl mit führender Null an, wenn das angebracht ist.                                                                        |
+|   **hh** | Zeigt die Stunde als Zahl mit führender Null an, wenn das angebracht ist. Wenn das Format **AM** oder **PM** enthält, wird die Stunde basierend auf der 12-Stunden-Uhr angezeigt. Andernfalls wird die Stunde auf der 24-Stunden-Uhr basierend angezeigt. | 
+|  **m**   |   Zeigt die Minute als Zahl ohne führende Null an.<br><br>Dieser Platzhalter muss unmittelbar die **h** oder **Hh** Code oder unmittelbar vor der **ss** code hingegen **Text** zurückgibt der Monat anstelle von Minuten.  |    
+| **mm**   | Zeigt die Minute als Zahl mit führender Null an, wenn das angebracht ist.<br><br>Dieser Platzhalter muss unmittelbar die **h** oder **Hh** Platzhalter oder unmittelbar vor der **ss** Platzhalter. Andernfalls **Text** gibt den Monat anstelle von Minuten zurück. |                                                                                                                   
+| **s**   |  Zeigt die Sekunde als Zahl ohne führende Null an.  |
+| **ss**  | Zeigt die Sekunde als Zahl mit führender Null an, wenn das angebracht ist.                                                                        |
 |                                                                                                    **f**                                                                                                     |                                                                                         Zeigt die Sekundenbruchteile an.                                                                                          |
-|                                                                                    **AM/PM**, **am/pm**, **A/P**, **a/p**                                                                                    |               Zeigt die Stunde basierend auf dem 12-Stunden-Format an. **Text** gibt „AM“, „am“, „A“ oder „a“ für Uhrzeiten von Mitternacht bis Mittag und „PM“, „pm“, „P“ oder „p“ für Uhrzeiten von Mittag bis Mitternacht an                |
+|                                                                                    **AM/PM**, **eine / p**                                                                                    |               Zeigt die Stunde basierend auf dem 12-Stunden-Format an. **Text** gibt "AM" oder "a" für ein Timeout von Mitternacht bis Mittag und "PM" oder "p" für ein Timeout ab Mittag bis Mitternacht                |
 
 ### <a name="literal-placeholders"></a>Literalplatzhalter
 Sie können jedes dieser Zeichen in Ihre Formatzeichenfolge aufnehmen.  Sie werden im Ergebnis von **Text** wie eingegeben angezeigt. Zusätzliche Zeichen sind für kommende Platzhalter reserviert, daher sollten Sie diese nicht verwenden.
@@ -107,49 +107,53 @@ Sie können jedes dieser Zeichen in Ihre Formatzeichenfolge aufnehmen.  Sie werd
 | &nbsp; |Leerzeichen |
 
 ## <a name="global-apps"></a>Globale Anwendungen
-Die Funktion **Text** ist global kompatibel.  Sie „weiß“ für eine Vielzahl von Sprachen, wie Datumswerte, Uhrzeiten, Währungen und Zahlen ordnungsgemäß geschrieben werden.  Für ihren Job benötigt sie zwei Informationen :
+Die Funktion **Text** ist global kompatibel. Sie „weiß“ für eine Vielzahl von Sprachen, wie Datumswerte, Uhrzeiten, Währungen und Zahlen ordnungsgemäß geschrieben werden. Für ihren Job benötigt sie zwei Informationen :
 
-* **Die Sprache des benutzerdefinierten Formats:** Wie soll ein benutzerdefiniertes Format aus Autorensicht interpretiert werden?  Die Trennzeichen (**.** und **,**) haben in verschiedenen Sprachen verschiedene Bedeutungen.  Dies wird mit einem besonderen Platzhalter bearbeitet, der ein Sprachkennzeichen enthält.  Um es noch zu vereinfachen, unterscheiden die [vordefinierten Datums-/Uhrzeitformate](#predefined-datetime-formats) nicht nach der Sprache.
-* **Die Sprache des Ergebnisses:** Welche Sprache soll für Benutzer im Ergebnis der Funktion verwendet werden?  Namen von Monaten und Wochentagen müssen in der für den Benutzer der App passenden Sprache ausgegeben werden.  Dies wird mithilfe eines dritten, optionalen Arguments der Funktion **Text** verarbeitet. 
+* **Die Sprache des benutzerdefinierten Formats:** Für Entwickler sollte wie ein benutzerdefiniertes Format werden interpretiert? Die Trennzeichen (**.** und **,**) haben in verschiedenen Sprachen verschiedene Bedeutungen. Wenn Sie ein benutzerdefiniertes Format angeben, können Sie sprachplatzhalter enthalten oder nutzen den Standardwert, der Sprache spiegelt wider, auf die Ihr Gerät festgelegt ist. Noch einfacher, können Sie eine der der [vordefinierte Datums-/Uhrzeitformate](#predefined-datetime-formats), die unabhängig von der Sprache sind.
+* **Die Sprache des Ergebnisses:** Für Benutzer sollte in welcher Sprache das Ergebnis der Funktion angezeigt werden? Namen von Monaten und Wochentagen müssen in der entsprechenden Sprache für den Benutzer der app, die Sie angeben können, durch das Hinzufügen einer dritten, optionalen Argument, werden die **Text** Funktion. 
 
-Für beide wird die Sprache in einem [Sprachkennzeichen](function-language.md#language-tags) angegeben.  Um eine Liste der unterstützten Sprachen anzuzeigen, geben Sie **Text( 1234, "", )** in die Bearbeitungsleiste oder die erweiterte Ansicht ein, und scrollen Sie durch die Liste der Gebietsschemas, die für das dritte Argument vorgeschlagen werden.
+Für beide Sie die Sprache angeben, indem eine [Sprach-Tag](function-language.md#language-tags). Um die Liste der unterstützten Sprachen anzuzeigen, geben **Text (1234, "",)** in der Bearbeitungsleiste oder die **erweitert** Registerkarte den rechten Bereich, und scrollen Sie durch die Liste der Gebietsschemas, die für das dritte Argument vorgeschlagen.
 
-#### <a name="custom-format-language-placeholder"></a>Sprachplatzhalter für benutzerdefiniertes Format
+### <a name="language-placeholder"></a>Sprachplatzhalter
 Um die Sprache des benutzerdefinierten Formats anzugeben, verwenden Sie:
 
 | Platzhalter | Beschreibung |
 | --- | --- |
-| **[$-*LanguageTag*]** |*Sprachkennzeichen* ist ein Sprachkennzeichen, wie es von der Funktion **Language** zurückgegeben wird.  Es kann die Form der einfachen Sprachangabe annehmen, wie etwa **[$-de]** für Deutsch, oder außerdem die Region enthalten, wie in **[$-de-AT]**, um das Gebietsschema auf Österreich einzugrenzen. |
+| **[$-*LanguageTag*]** |*Sprachkennzeichen* ist ein Sprachkennzeichen, wie es von der Funktion **Language** zurückgegeben wird. Er kann nur in die Sprache angeben (z. B. **[$-de]** für Englisch), oder sie können auch die Region angeben (z. B. **[$-En-GB]** zu Sprachangabe). |
 
 Der Sprachplatzhalter kann an beliebiger Stelle im benutzerdefinierten Format auftreten, darf jedoch nur einmal angegeben werden.
 
-Wenn Sie beim Erstellen einer Formel keinen Sprachplatzhalter angeben und das Format der Zeichenfolge vom globalen Standpunkt aus mehrdeutig ist, setzt das Verfassertool automatisch das Sprachkennzeichen für Ihre aktuelle Sprache ein.  
+Wenn Sie ein benutzerdefiniertes Format ohne sprachplatzhalter angeben und das Format von globalen Standpunkt aus mehrdeutig ist, wird automatisch das Sprachkennzeichen für Ihre aktuelle Sprache eingefügt.  
 
-**[$-en-US]** wird zugrunde gelegt, wenn dieser Platzhalter beim Ausführen Ihrer App nicht vorhanden ist. 
+**[$-En-US]**  wird angenommen, wenn dieser Platzhalter nicht vorhanden ist, wenn Ihre app ausgeführt wird. 
 
 > [!NOTE]
-> In einer kommenden Version kann sich dieser Platzhalter möglicherweise ändern, um die Verwechselung mit einem ähnlichen, aber doch unterschiedlichen Platzhalter zu vermeiden, der von Excel unterstützt wird.
+> In einer zukünftigen Version wird möglicherweise die Syntax dieser Platzhalter ändern, um Verwechslungen mit einem ähnlich, aber doch verschiedenen Platzhalter zu vermeiden, die Excel unterstützt.
 
-#### <a name="result-language-tag"></a>Sprachkennzeichen für das Ergebnis
-Im Ergebnis von **Text** werden übersetzte Zeichenfolgen für Monat, Wochentag und AM/PM-Angaben sowie die passenden Gruppen- und Dezimaltrennzeichen angezeigt.
+### <a name="result-language-tag"></a>Sprachkennzeichen für das Ergebnis
+Das Ergebnis des **Text** übersetzte Zeichenfolgen für die Monate, Wochentagen, und AM/PM-Angaben sowie die entsprechende Gruppe und Dezimaltrennzeichen enthält.
 
-Standardmäßig verwendet **Text** die Sprache des Benutzers, der die Anwendung ausführt.  Die Funktion **Language** gibt das Sprachkennzeichen für den aktuellen Benutzer zurück.  Sie können diesen Standardwert überschreiben, indem Sie ein Sprachkennzeichen für das optionale dritte Argument von **Text** angeben.
+Standardmäßig verwendet **Text** die Sprache des Benutzers, der die Anwendung ausführt. Die Funktion **Language** gibt das Sprachkennzeichen für den aktuellen Benutzer zurück. Sie können diesen Standardwert überschreiben, indem Sie ein Sprachkennzeichen für das dritte Argument angeben **Text**.
 
 ## <a name="syntax"></a>Syntax
-**Text**( *Number*, *DateTimeFormatEnum* [, *ResultLanguageTag* ] )
+**Text**( *NumberOrDateTime*, *DateTimeFormatEnum* [, *ResultLanguageTag* ] )
 
-* *Number*: erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
+* *NumberOrDateTime* : erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *DateTimeFormat*: erforderlich.  Ein Mitglied der **DateTimeFormat**-Enumeration.
-* *ResultLanguageTag*: optional.  Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll.  Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
+* *ResultLanguageTag*: optional. Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll. Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
 
-**Text**( *Number*, *CustomFormat* [, *ResultLanguageTag* ] )
+**Text**( *NumberOrDateTime*, *CustomFormat* [, *ResultLanguageTag* ] )
 
 * *Number*: erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *CustomFormat*: erforderlich. Mindestens ein in doppelte Anführungszeichen gesetzter Platzhalter.
-* *ResultLanguageTag*: optional.  Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll.  Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
+* *ResultLanguageTag*: optional. Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll. Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
+
+**Text**( *AnyValue* )
+
+* *AnyValue* : erforderlich. Wert, der in einem Textdarstellung zu konvertieren. Es wird ein Standardformat verwendet.
 
 ## <a name="examples"></a>Beispiele
-Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Englisch als seine Sprache ausgewählt.  Die Funktion **Language** gibt „en-US“ zurück.
+Sofern nicht anders angegeben, wird der Benutzer diese Formeln ausführt befindet sich in den USA und hat Englisch als Sprache ausgewählt.  Die Funktion **Language** gibt „en-US“ zurück.
 
 ### <a name="number"></a>Number
 
@@ -177,9 +181,17 @@ Der Benutzer, der diese Formeln ausführt, befindet sich in den USA und hat Engl
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text( 1234567,89; "[$-en-US]$ #.###" )** |Interpretiert **.** als Gruppierungszeichen, das nach jedem dritten Zeichen eingefügt wird, und **$** als Währungssymbol. Da keine Dezimalstellen angezeigt werden sollen, wird der Wert auf die nächsthöhere ganze Zahl aufgerundet. Die Angabe **[$-en-US]** ist in diesem Fall optional, da sie den Standardwert darstellt. |"$ 1.234.568" |
-| **Text( 1234567.89, "[$-es-ES]&euro; #,###" )** |Interpretiert **,** als Dezimaltrennzeichen und **&euro;** als Währungssymbol.  Da die Angabe **[$-fr-FR]** nur bestimmt, wie die Formatierungszeichenfolge interpretiert werden soll, verwendet das Ergebnis die Zeichen aus dem standardmäßigen Sprachkennzeichen "en-US" – **.** (Punkt) – als Dezimaltrennzeichen und **$** als Währungssymbol. |"$ 1234567.89" |
-| **Text( 1234567.89, "[$-es-ES]&euro; #,###", "es-ES" )** |Interpretiert **,** als Dezimaltrennzeichen.  Das Sprachkennzeichen für das Ergebnis wurde auf „fr-FR“ festgelegt, was bewirkt, dass **,** (Komma) als Dezimaltrennzeichen und **&euro;** als Währungssymbol verwendet wird. |"&euro; 1234567,89" |
-| **Text( Date(2016,1,31), "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Saturday January 31" |
-| **Text( Date(2016,1,31), "dddd mmmm d", "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo Enero 31" |
+| **Text (1234567,89; "[$-fr-FR] # ###, ## &euro;", "fr-FR")** | Zeigt Leerzeichen als Gruppierungszeichen, das Komma als Dezimaltrennzeichen, und **&euro;** als Währungssymbol. |"1&nbsp;234&nbsp;567,89 &euro;" |
+| **Text(1234567,89; "[$-fr-FR]# ###,## &euro;")** | Wenn die Quelldaten das französische benutzerdefinierte des durch ein Komma als Dezimaltrennzeichen folgt, müssen Sie das Gebietsschema auf Französisch ändern und trennen die Argumente durch ein Semikolon statt ein Komma, um das gleiche Ergebnis wie oben beschrieben zu erhalten. |"1&nbsp;234&nbsp;567,89 &euro;" |
+| **Text( Date(2016,1,31), "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag&nbsp;Januar&nbsp;31" |
+| **Text( Date(2016,1,31), "dddd mmmm d", "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo&nbsp;Enero&nbsp;31" |
 
+### <a name="converting-values-to-text"></a>Konvertieren von Werten in text
+
+| Formel | Beschreibung | Ergebnis |
+| --- | --- | --- |
+| **Text(&nbsp;1234567.89&nbsp;)** | Konvertiert eine Zahl in eine Zeichenfolge an. Es gibt keine Tausende Trennzeichen oder die Kontrolle über die Anzahl der Ziffern vor oder nach dem Dezimaltrennzeichen; Geben Sie zur präziseren Steuerung können zahlplatzhalter als zweites Argument ein. | "1234567.89" |
+| **Text(&nbsp;DateTimeValue(&nbsp;"01/04/2003"&nbsp;)&nbsp;)** | Konvertiert einen Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts an. Um die Konvertierung gesteuert werden, geben Sie entweder ein Mitglied der DateTimeFormat-Enumeration oder eine benutzerdefinierte Formatzeichenfolge ein. | "1/4/2003 12:00 UHR" |
+| **Text (&nbsp;"true"&nbsp;)** | Konvertiert einen booleschen Wert in eine Zeichenfolge an. | "true" |
+| **Text(&nbsp;GUID()&nbsp;)** | Konvertiert einen generierten GUID-Wert in eine Zeichenfolge an.  | "f8b10550-0f12-4f08-9aa3-bb10958bc3ff" |
+| **Left (&nbsp;Text (&nbsp;GUID()&nbsp;),&nbsp;4&nbsp;)** | Gibt die ersten vier Zeichen eine generierte GUID zurück. | "2d9c" | 

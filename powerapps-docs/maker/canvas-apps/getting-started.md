@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a9f85907da60e836c1a1115f31c6faf9ea05da9b
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: aa46510cdd46cf8d9fb64694e7b6306b255b1157
+ms.sourcegitcommit: fa0ad3f81efd41671dd8e118ce936acb274cfd7c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317066"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54079608"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
 
 Wenn Sie kein benutzerdefiniertes Design benötigen und Ihre Daten sich in Common Data Service (CDS) für Apps befinden, können Sie automatisch eine modellgesteuerte App aus Ihren Geschäftsdaten und Prozessen erstellen. Dieser App-Typ kann Formulare, Ansichten und andere Komponenten modellieren, und die Standardbenutzeroberfläche wird automatisch an Smartphones, Laptops und andere Geräte angepasst. Weitere Informationen zu diesem App-Typ finden Sie unter [Übersicht über die Erstellung einer modellgesteuerten App](../model-driven-apps/model-driven-app-overview.md).
 
-## <a name="build-an-app"></a>Eine App erstellen
+## <a name="build-an-app"></a>Erstellen einer app
 Generieren Sie zunächst automatisch eine App aus einer der folgenden Quellen (u.a.):
 - [eine Beispiel-App](open-and-run-a-sample-app.md)
 - [eine Vorlage](get-started-test-drive.md)
@@ -48,8 +48,8 @@ Führen Sie Ihre eigenen Apps – und alle Apps, die für Sie freigegeben wurden
 
 ## <a name="learn-more"></a>Weitere Informationen
 * Durchsuchen Sie die Anleitungen, Konzept- und Referenzthemen im Navigationsbereich auf der linken Seite.
-* Bearbeiten Sie die [Kurse zum geführten Lernen](https://docs.microsoft.com/powerapps/guided-learning/) im Selbststudium.
 * Sehen Sie sich die [Webinare](webinars-listing.md) an, auf die Sie bei Bedarf zugreifen können und in denen die Features und Funktionen von PowerApps behandelt werden.
+* Überprüfen Sie [Codierungsstandards](https://aka.ms/powerappscanvasguidelines) zum Maximieren der Leistung der app und Beibehalten von apps einfacher zu verwalten.
 
 ## <a name="share-your-experience"></a>Teilen Sie Ihre Erfahrungen
 * Beteiligen Sie sich an der [PowerApps-Community](https://aka.ms/powerapps-community), indem Sie mitlesen und Beiträge verfassen. Dort können alle Benutzer von PowerApps Fragen stellen, die dann von anderen Benutzern beantwortet werden. Bevor Sie eine Frage stellen, führen Sie eine Suche in der Community durch, um festzustellen, ob die Frage bereits beantwortet wurde.

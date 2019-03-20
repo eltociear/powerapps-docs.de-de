@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865507"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803571"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Funktion „UpdateContext“ in PowerApps
-Erstellt oder aktualisiert die [Kontextvariablen](../working-with-variables.md#create-a-context-variable) des aktuellen Bildschirms.
+Erstellt oder aktualisiert die [Kontextvariablen](../working-with-variables.md#use-a-context-variable) des aktuellen Bildschirms.
 
 ## <a name="overview"></a>Übersicht
 Verwenden Sie die **UpdateContext**-Funktion zum Erstellen einer Kontextvariablen, die vorübergehend eine Information enthält, wie z.B. wie oft ein Benutzer auf eine Schaltfläche geklickt hat oder das Ergebnis eines Datenvorgangs.
@@ -62,11 +62,11 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 
 * *UpdateRecord*: erforderlich. Ein Datensatz, der den Namen von mindestens eine Spalte und eine Wert für diese Spalte enthält. Eine Kontextvariable wird für jede Spalte und den von Ihnen angegebenen Wert erstellt oder aktualisiert.
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
+**UpdateContext**( { *ContextVariable1*: *Wert1* [, *Kontextvariable2*: *Value2* [,...]]} )
 
 * *Kontextvariable1*: erforderlich.  Der Name der zu erstellenden oder zu aktualisierenden Kontextvariablen
 * *Wert1*: erforderlich.  Der der Kontextvariablen zuzuweisende Wert
-* *Kontextvariable2*: *Wert2*,...: optional. Zusätzliche zu erstellende oder zu aktualisierende Kontextvariablen und deren Werte
+* *ContextVariable2*: *Value2*,...: Optional. Zusätzliche zu erstellende oder zu aktualisierende Kontextvariablen und deren Werte
 
 ## <a name="examples"></a>Beispiele
 
@@ -76,7 +76,7 @@ Jede Kontextvariable ist auf einen Bildschirm begrenzt. Wenn Sie eine Kontextvar
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Legt den Wert für die **Counter**-Kontextvariable aus dem vorherigen Beispiel auf **2** fest |**Counter** hat den Wert **2**. |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |Erstellt oder ändert die Kontextvariablen **Name** und **Score** und legt deren Werte auf **Lily** bzw. **10** fest. |**Name** hat den Wert **Lily**, und **Score** hat den Wert **10**. |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Erstellt oder ändert die Kontextvariable **Person** und legt deren Wert auf einen Datensatz fest. Der Datensatz enthält zwei Spalten mit den Namen **Name** und **Address**. Der Wert der **Name**-Spalte ist **Milton**, und der Wert der **Address**-Spalte ist **1 Main St**. |**Person** hat den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**.<br><br>Verweisen Sie mit dem Namen **Person** auf den kompletten Datensatz, oder verweisen Sie auf eine einzelne Spalte dieses Datensatzes mit **Person.Name** oder **Person.Address**. |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)**-Funktion zusammen, um die **Person**-Kontextvariable durch Festlegen des Werts von der **Address**-Spalte auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**. |
+| **UpdateContext( {&nbsp;Person: Patch (&nbsp;Person&nbsp;{Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)}&nbsp;)** |Arbeitet mit der **[Patch](function-patch.md)**-Funktion zusammen, um die **Person**-Kontextvariable durch Festlegen des Werts von der **Address**-Spalte auf **2 Main St** zu aktualisieren. |**Person** hat nun den Wert des Datensatzes **{&nbsp;Name:&nbsp;"Milton", Adresse:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**. |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
 1. Benennen Sie den Bildschirm **Quelle**, fügen Sie einen anderen Bildschirm hinzu, und nennen Sie diesen **Ziel**.

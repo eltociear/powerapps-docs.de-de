@@ -1,24 +1,24 @@
 ---
 title: Entwickeln von offlinefähigen Canvas-Apps | Microsoft-Dokumentation
 description: Entwickeln Sie offlinefähige Canvas-Apps, damit Ihre Benutzer online und offline stets produktiv sein können.
-author: mgblythe
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/09/2017
-ms.author: mblythe
+ms.date: 01/31/2019
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
-ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
-ms.translationtype: HT
+ms.openlocfilehash: f9922c64769aeacd9b9b65cc3039b091ac7fe353
+ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991767"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "57800374"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Entwickeln von offlinefähigen Canvas-Apps
 
@@ -29,10 +29,15 @@ Eins der häufigsten Szenarios, denen Sie als Entwickler von mobilen Apps begegn
 * Mithilfe des Signalobjekts [Connection](../canvas-apps/functions/signals.md#connection) bestimmen, ob eine App offline, online oder in einer getakteten Verbindung ist.
 * Verwenden von [Sammlungen](../canvas-apps/create-update-collection.md) und Nutzung von Funktionen wie [LoadData und SaveData](../canvas-apps/functions/function-savedata-loaddata.md), um offline grundlegende Datenspeicherung zur Verfügung zu machen.
 
-> [!NOTE]
-> Diese Funktion wird noch entwickelt und ist zum aktuellen Zeitpunkt noch nicht für jedes Szenario optimiert. Die Funktionen SaveData() zum Speichern von Daten auf und LoadData() zum Laden von Daten von einem lokalen Gerät arbeiten am besten in ihrer aktuellen Implementierung bei relativ kleinen Datenmengen (z.B. einige Dutzend Textdatensätze in einer Tabelle), die normalerweise 2 MB nicht überschreiten. Nützlich ist dies für einige einfache „Offlineszenarios“ oder für die Erhöhung der Startleistung von Canvas-Apps durch lokales Zwischenspeichern von Daten. Wenn Sie diese Funktion jedoch zum Speichern großer Datenmengen (z.B. Speichern von Tausenden Zeilen in einer Tabelle oder Zwischenspeicherung großer Bilder oder Videos) verwenden, sind Fehler oder ein unerwartetes Verhalten mit der aktuellen Implementierung möglich, was vermieden werden sollte. Die Funktionen lösen zudem Mergingkonflikte nicht automatisch, wenn ein Gerät, das offline war, wieder die Konnektivität herstellt. Die Konfiguration für die zu speichernden Daten und die Art und Weise, wie Daten gespeichert und die Neuverbindung hergestellt werden, richten sich nach dem Ersteller der Ausdrücke.
->
-> Wir arbeiten gerade an der Erweiterung der Funktionen von Offline-Apps, der Verbesserung der Stabilität und Größenbegrenzungen und (zukünftig) an der automatischen Verarbeitung von Entscheidungen, welche Daten gespeichert und wie Konflikte gehandhabt werden sollen. Halten Sie sich hier und im [PowerApps-Blog](https://powerapps.microsoft.com/blog/) auf dem Laufenden über neue verfügbare Aktualisierungen.
+## <a name="limitations"></a>Einschränkungen
+
+**LoadData** und **SaveData** kombinieren, um einen einfachen Mechanismus zum Speichern von kleine Mengen von Daten auf einem lokalen Gerät zu erstellen. Mithilfe dieser Funktionen können Sie einfache Offlinefunktionen zu Ihrer app hinzufügen.  
+
+Diese Funktionen werden durch die Größe des verfügbaren app-Speichers begrenzt, da sie in einer in-Memory-Sammlung ausgeführt werden. Verfügbare Arbeitsspeicher kann variieren, je nach Gerät, das Betriebssystem, den Arbeitsspeicher, den PowerApps Mobile verwendet und die Komplexität der app im Hinblick auf Bildschirme und Steuerelemente. Wenn Sie länger als einige Megabyte an Daten speichern, testen Sie Ihre app mit erwarteten Szenarien auf den Geräten, die auf denen Sie es erwarten. Sie erwarten, in der Regel zwischen 30 und 70 MB an verfügbarem Arbeitsspeicher haben.  
+
+Die Funktionen lösen nicht auch automatisch von Mergekonflikten Wenn ein Gerät gibt zurück, um Verbindungen von offline-Konfiguration auf welche Daten gespeichert werden und das erneute Verbindung zu behandeln ist bis zu den Hersteller, beim Schreiben von Ausdrücken.
+
+Wir arbeiten daran, um die Funktionalität für Offlineszenarien zu erweitern. Halten Sie sich hier und im [PowerApps-Blog](https://powerapps.microsoft.com/blog/) auf dem Laufenden über neue verfügbare Aktualisierungen.
 
 ## <a name="how-to-build-offline-capable-apps"></a>Erstellen von offlinefähigen Apps
 
@@ -58,7 +63,7 @@ Allgemein betrachtet, führt die App die folgenden Funktionen aus:
    * Wir veröffentlichen alle Tweets, die sich im lokalen Cache befinden.
    * Wir aktualisieren den lokalen Cache und speichern ihn mithilfe von [SaveData](../canvas-apps/functions/function-savedata-loaddata.md).
 
-### <a name="step-1-create-a-new-phone-app"></a>Schritt 1: Erstellen einer neuen Smartphone-App
+### <a name="step-1-create-a-new-phone-app"></a>Schritt 1: Erstellen einer neuen Smartphone-app
 1. Öffnen Sie PowerApps Studio.
 2. Klicken oder tippen Sie auf **Neu** > **Leere App** > **Smartphonelayout**.
 
@@ -74,27 +79,18 @@ Allgemein betrachtet, führt die App die folgenden Funktionen aus:
 
     ![Hinzufügen einer Twitter-Verbindung](./media/offline-apps/twitter-connection.png)
 
-### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Schritt 3: Laden von Tweets in eine LocalTweets-Sammlung beim Start
+### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Schritt 3: Laden von Tweets in eine LocalTweets-Sammlung beim Start der app
 Wählen Sie in der App die **OnVisible**-Eigenschaft für **Screen1** aus, und kopieren Sie die folgende Formel:
 
-```
-If(Connection.Connected,
-
-    ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100}));
-
-    UpdateContext({statusText: "Online data"})
-
-    ,
-
+```powerapps-dot
+If( Connection.Connected,
+    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+        UpdateContext( {statusText: "Online data"} ),
     LoadData(LocalTweets, "Tweets", true);
-
-    UpdateContext({statusText: "Local data"})
-
+        UpdateContext( {statusText: "Local data"} )
 );
-
-LoadData(LocalTweetsToPost, "LocalTweets", true);
-
-SaveData(LocalTweets, "Tweets")
+LoadData( LocalTweetsToPost, "LocalTweets", true );
+SaveData( LocalTweets, "Tweets" )
 ```
 
 ![Formel zum Laden von Tweets](./media/offline-apps/load-tweets.png)
@@ -104,9 +100,9 @@ Diese Formel überprüft, ob das Gerät online ist:
 * Wenn das Gerät online ist, lädt es mit dem Suchausdruck „PowerApps“ bis zu 100 Tweets in eine **LocalTweets**-Sammlung.
 * Wenn das Gerät offline ist, lädt es den lokalen Cache aus einer Datei mit dem Namen „Tweets“, sofern diese verfügbar ist.
 
-### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Schritt 4: Hinzufügen eines Katalogs und Anbindung des Katalogs an die LocalTweets-Sammlung
+### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Schritt 4: Fügen Sie einen Katalog hinzu und binden Sie es an die LocalTweets-Sammlung
 
-1. Fügen Sie einen neuen Katalog mit flexibler Höhe hinzu: **Einfügen** > **Katalog** > **Leer flexible Höhe**.
+1. Fügen Sie einen neuen Katalog mit flexibler Höhe: **Fügen Sie** > **Katalog** > **leer flexible Höhe**.
 
 2. Legen Sie die Eigenschaft **Items** auf **LocalTweets** fest.
 
@@ -117,39 +113,31 @@ Diese Formel überprüft, ob das Gerät online ist:
    * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
 4. Fügen Sie ein **Image**-Steuerelement hinzu, und legen Sie die **Image**-Eigenschaft auf **ThisItem.UserDetails.ProfileImageUrl** fest.
 
-### <a name="step-5-add-a-connection-status-label"></a>Schritt 5: Hinzufügen einer Verbindungsstatusbezeichnung
+### <a name="step-5-add-a-connection-status-label"></a>Schritt 5: Hinzufügen einer verbindungsstatusbezeichnung
 Fügen Sie ein neues **Label**-Steuerelement hinzu, und legen Sie dessen Eigenschaft **Text** auf die folgende Formel fest:
 
-```
-If (Connection.Connected, "Connected", "Offline")
-```
+```If( Connection.Connected, "Connected", "Offline" )```
 
 Diese Formel überprüft, ob das Gerät online ist. Wenn dies der Fall ist, lautet der Text der Bezeichnung „Verbunden“, andernfalls „Offline“.
 
-### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>Schritt 6: Hinzufügen einer Texteingabe zum Verfassen neuer Tweets
+### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>Schritt 6: Hinzufügen einer Texteingabe zum Verfassen neuer tweets
 
 1. Fügen Sie ein neues **Text input**-Steuerelement mit dem Namen „NewTweetTextInput“ hinzu.
 
 2. Legen Sie die **Reset**-Eigenschaft der Texteingabe auf **resetNewTweet** fest.
 
-### <a name="step-7-add-a-button-to-post-the-tweet"></a>Schritt 7: Hinzufügen einer Schaltfläche zum Veröffentlichen des Tweets
+### <a name="step-7-add-a-button-to-post-the-tweet"></a>Schritt 7: Fügen Sie eine Schaltfläche zum Veröffentlichen des TWEETS
 1. Fügen Sie ein **Button**-Steuerelement hinzu, und legen Sie die Eigenschaft **Text** auf „Tweet“ fest.
 2. Legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
-    ```
-    If (Connection.Connected,
-
-        Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
     );
-
-    UpdateContext({resetNewTweet: true});
-
-    UpdateContext({resetNewTweet: false})
+    UpdateContext( {resetNewTweet: true} );
+    UpdateContext( {resetNewTweet: false} )
     ```  
 
 Diese Formel überprüft, ob das Gerät online ist:
@@ -159,7 +147,7 @@ Diese Formel überprüft, ob das Gerät online ist:
 
 Anschließend setzt die Formel den Text im Textfeld zurück.
 
-### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>Schritt 8: Hinzufügen eines Timers zum Abrufen von Tweets alle fünf Minuten
+### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>Schritt 8: Hinzufügen eines Timers zu prüfen, Tweets alle fünf Minuten
 Fügen Sie ein neues **Timer**-Steuerelement hinzu:
 
 * Legen Sie die **Duration**-Eigenschaft auf 300000 fest.
@@ -168,18 +156,13 @@ Fügen Sie ein neues **Timer**-Steuerelement hinzu:
 
 * Legen Sie **OnTimerEnd** auf die folgende Formel fest:
 
-    ```
-    If(Connection.Connected,
-
-        ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-
-        Clear(LocalTweetsToPost);
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-
-        UpdateContext({statusText: "Online data"})
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost);
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+        UpdateContext( {statusText: "Online data"} )
     )
     ```
 

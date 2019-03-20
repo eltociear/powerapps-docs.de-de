@@ -1,24 +1,24 @@
 ---
 title: Anzeigen, Sortieren und Filtern von Daten in einem Katalog | Microsoft-Dokumentation
 description: Verwenden Sie einen Katalog, um Bilder und Text anzuzeigen. Sortieren und filtern Sie die Bilder in PowerApps.
-author: lonu
+author: adrianorth
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/02/2015
-ms.author: lonu
+ms.author: aorth
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e782b7082e8dbf0d4efee2060131aa620e7a4af1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: a557c73863dc25acb69627b51613e6e25f229bdb
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42844456"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799776"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Anzeigen, Sortieren und Filtern von Daten in einem PowerApps-Katalog
 Erstellen Sie einen Katalog, um Bilder und Text zu verschiedenen Produkten anzuzeigen, und sortieren und filtern Sie diese Informationen.
@@ -43,7 +43,7 @@ In PowerApps können Sie einen Katalog verwenden, um mehrere verwandte Elemente 
       
       ![][1]  
    2. Legen Sie die Eigenschaft **[OnSelect](controls/properties-core.md)** des Importsteuerelements auf die folgende Formel fest:  
-      **Collect(Inventory, Import1!Data)**
+      **Collect(Inventory, Import1.Data)**
       
       ![][12]  
    3. Klicken Sie auf die Schaltfläche **Daten importieren**, um den Windows-Explorer zu öffnen. Wählen Sie *CreateFirstApp.zip* und anschließend **Öffnen** aus.
@@ -79,14 +79,14 @@ In PowerApps können Sie einen Katalog verwenden, um mehrere verwandte Elemente 
    > 
    > 
 8. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:  
-    **ThisItem!UnitsInStock** <br/>
+    **ThisItem.UnitsInStock** <br/>
    
     Hierdurch zeigt die Bezeichnung die für jedes Produkt im Lager vorrätige Stückanzahl an:
 
 ![][8]  
 
 > [!NOTE]
-> Standardmäßig ist die **[Text](controls/properties-core.md)**-Eigenschaft der obersten Bezeichnung auf ```ThisItem!ProductName``` festgelegt. Sie können diese Einstellung auf ein anderes Element in Ihrer Sammlung festlegen. Wenn Ihre Sammlung beispielsweise über die Felder *ProductDescription* oder *Price* verfügt, können Sie die Bezeichnung auf ```ThisItem!ProductDescription``` oder ```ThisItem!Price``` festlegen.
+> Standardmäßig ist die **[Text](controls/properties-core.md)**-Eigenschaft der obersten Bezeichnung auf ```ThisItem.ProductName``` festgelegt. Sie können diese Einstellung auf ein anderes Element in Ihrer Sammlung festlegen. Wenn Ihre Sammlung beispielsweise über die Felder *ProductDescription* oder *Price* verfügt, können Sie die Bezeichnung auf ```ThisItem.ProductDescription``` oder ```ThisItem.Price``` festlegen.
 > 
 > 
 
@@ -102,7 +102,7 @@ Mithilfe der hier genannten Schritte haben Sie Daten in eine Sammlung importiert
    ![][10]  
 6. Wählen Sie auf der Registerkarte **Form** die Option **Sichtbar** aus, und geben Sie in der Bearbeitungsleiste die folgende Formel ein:  
    
-    **If(ThisItem!IsSelected, true)**
+    **If(ThisItem.IsSelected, true)**
    
     Die aktuelle Auswahl in einem Katalog ist von einem blauen Rechteck umgeben. Wählen Sie einige Katalogelemente aus, um zu bestätigen, dass das Rechteck um jedes ausgewählte Element platziert wird. Sie können auch die **Vorschau** ![][2] öffnen, um die erstellten Elemente zu testen.
 
@@ -137,7 +137,7 @@ Mithilfe der nachfolgenden Schritte werden wir die Katalogelemente in aufsteigen
    2. Wählen Sie auf der Registerkarte **Inhalt** die Einstellung **Max**, und geben Sie den folgenden Ausdruck ein:  
       ```Max(Inventory, UnitsInStock)```
 3. Wählen Sie ein Element im Katalog aus, *nicht jedoch* das erste Element. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft des Katalogs auf den folgenden Ausdruck fest:  
-   ```Filter(Inventory, UnitsInStock<=StockFilter!Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. Stellen Sie den Schieberegler in der **Vorschau** auf einen Wert zwischen der höchsten und der niedrigsten Menge im Katalog ein. Wenn Sie den Wert über den Schieberegler ändern, werden nur die Produkte angezeigt, deren Stückzahl unter dem ausgewählten Wert liegt:  
    ![][13]  
 
@@ -146,7 +146,7 @@ Fügen wir jetzt unseren Filter hinzu:
 1. Kehren Sie zum Designer zurück.
 2. Wählen Sie auf der Registerkarte **Einfügen** die Einstellung **Text** aus, wählen Sie **Eingabetext** aus, und benennen Sie das neue Steuerelement in **NameFilter** um. Verschieben Sie das Textsteuerelement unter den Schieberegler.
 3. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft des Katalogs auf den folgenden Ausdruck fest:  
-   ```Filter(Inventory, UnitsInStock<=StockFilter!Value && NameFilter!Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. Stellen Sie den Schieberegler in der **Vorschau** auf den Wert *30* ein, und geben Sie im Texteingabe-Steuerelement den Buchstaben *g* ein. Der Katalog zeigt nur Produkte an, bei denen die vorrätige Stückzahl unter 30 liegt *und* deren Name mit dem Buchstaben „g“ beginnt:  
    ![][14]  
 

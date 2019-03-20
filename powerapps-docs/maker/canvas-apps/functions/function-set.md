@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 96b8b8276b385a49bd29be150b9a41ba08ba67ba
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3292d03a55fe6296b8efdf2377efde5f2b4ad36e
+ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862816"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800489"
 ---
 # <a name="set-function-in-powerapps"></a>Set-Funktion in PowerApps
 Legt den Wert einer globalen Variablen fest.
@@ -26,14 +26,14 @@ Legt den Wert einer globalen Variablen fest.
 ## <a name="overview"></a>Übersicht
 Verwenden Sie die **Set**-Funktion zum Festlegen des Werts einer globalen Variablen, die vorübergehend eine Information enthält, z.B. wie oft ein Benutzer auf eine Schaltfläche geklickt hat oder das Ergebnis eines Datenvorgangs.  
 
-Globale Variablen sind in Ihrer App auf allen Bildschirmen verfügbar.  Sie stellen den einfachsten Typ von Variablen dar und erfüllen die Anforderungen in den meisten Situationen.  Es gibt auch Kontextvariablen, deren Gültigkeitsbereich auf einen einzigen Bildschirm beschränkt ist, sowie Sammlungen, die Änderungen von Tabellen auf Zeilenebene ermöglichen.  Weitere Informationen zu diesen anderen Optionen finden Sie unter [Grundlegendes zu Variablen in PowerApps](../working-with-variables.md).
+Globale Variablen sind in Ihrer App auf allen Bildschirmen verfügbar. Sie stellen den einfachsten Typ von Variablen dar und erfüllen die Anforderungen in den meisten Situationen. Es gibt auch Kontextvariablen, deren Gültigkeitsbereich auf einen einzigen Bildschirm beschränkt ist, sowie Sammlungen, die Änderungen von Tabellen auf Zeilenebene ermöglichen. Weitere Informationen zu diesen anderen Optionen finden Sie in [Grundlegendes zu Variablen](../working-with-variables.md).
 
-PowerApps basiert auf Formeln, die automatisch neu berechnet werden, während der Benutzer mit einer App interagiert.  Globale Variablen bieten diesen Vorteil nicht und können das Erstellen und Verstehen Ihrer App erschweren.  Konsultieren Sie vor der Verwendung einer Variablen den Artikel [Grundlegendes zu Variablen in PowerApps](../working-with-variables.md).
+PowerApps basiert auf Formeln, die automatisch neu berechnet werden, während der Benutzer mit einer App interagiert. Alle Formeln, die für eine Variable abhängig sind, werden automatisch aktualisiert, wenn sich diese ändern. Aber die Variable wird nicht automatisch aktualisiert, wenn der Wert der Formel in der **festgelegt** Änderungen funktionieren. Dies erfordert die app-Ersteller so aktualisieren Sie manuell die Variable, die fehleranfällig und für andere Benutzer zu schwieriger sein kann. Bevor Sie eine Variable verwenden, lesen Sie [Grundlegendes zu Variablen](../working-with-variables.md).
 
 ## <a name="description"></a>Beschreibung
-Globale Variablen werden mithilfe der **Set**-Funktion implizit erstellt.  Eine explizite Deklaration ist nicht erforderlich.  Wenn Sie alle **Set**-Funktionen für eine globale Variable entfernen, hört die globale Variable auf zu existieren.  Legen Sie zum Leeren einer Variablen ihren Wert auf das Ergebnis der [**Blank**-Funktion](function-isblank-isempty.md) fest.
+Globale Variablen werden mithilfe der **Set**-Funktion implizit erstellt. Es ist keine explizite Deklaration erforderlich. Wenn Sie alle Entfernen der **festgelegt** Funktionen für eine globale Variable, die globale Variable wird nicht mehr vorhanden. Um eine Variable zu löschen, legen Sie seinen Wert auf das Ergebnis der [ **leere** Funktion](function-isblank-isempty.md).
 
-Sie können die Werte, Definitionen und Verwendungen Ihrer Variablen in der Ansicht „Variablen“ unter dem Menü „Datei“ in der Erstellungsumgebung anzeigen.
+Sehen Sie Ihre Variablen Werte, Definitionen und verwendet, mit der Ansicht "Variablen" unter der **Datei** in PowerApps Studio im Menü.
 
 Wie in den Beispielen weiter unten in diesem Thema gezeigt, können globale Variablen verschiedene Arten von Informationen enthalten, u.a. folgende:
 

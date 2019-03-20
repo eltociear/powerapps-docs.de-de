@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55df8d30509720478c1594406865986ddc9a95c4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865806"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802099"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Funktionen „EditForm“, „NewForm“, „SubmitForm“, „ResetForm“ und „ViewForm“ in PowerApps
 Zeigen Sie ein Element an, bearbeiten oder erstellen Sie ein Element, speichern Sie den Inhalt und setzen Sie die Steuerelemente in einem **[Bearbeitungsformular](../controls/control-form-detail.md)**-Steuerelement zurück.
@@ -59,10 +59,10 @@ Die **NewForm**-Funktion ändert den Modus des Formularsteuerelements in **FormM
 Die **ResetForm**-Funktion setzt den Inhalt eines Formulars auf die ursprünglichen Werte zurück, bevor vom Benutzer Änderungen vorgenommen wurden. Wenn sich das Formular im **FormMode.New**-Modus befindet, wird das Formular in den **FormMode.Edit**-Modus zurückgesetzt. Das **[OnReset](../controls/control-form-detail.md)**-Verhalten der Formularsteuerelemente wird ebenfalls ausgeführt.  Sie können einzelne Steuerelemente auch mit der **[Reset](function-reset.md)**-Funktion zurücksetzen, jedoch lediglich innerhalb des Formulars.
 
 ### <a name="viewform"></a>ViewForm
-Die **ViewForm**-Funktion ändert den Modus des Formularsteuerelements in **FormMode.View**. In diesem Modus wird der Inhalt der **[Item](../controls/control-form-detail.md)**-Eigenschaft des Formularsteuerelements verwendet, um das Formular zu füllen.  Die **SubmitForm**-Funktion und die **RestForm**-Funktion haben in diesem Modus keine Auswirkungen.
+Die **ViewForm**-Funktion ändert den Modus des Formularsteuerelements in **FormMode.View**. In diesem Modus wird der Inhalt der **[Item](../controls/control-form-detail.md)**-Eigenschaft des Formularsteuerelements verwendet, um das Formular zu füllen.  Die **SubmitForm** und **"resetform"** Funktionen wirken sich nicht in diesem Modus.
 
-### <a name="displaymode-poperty"></a>DisplayMode-Eigenschaft
-Der aktuelle Modus kann über die **Mode**-Eigenschaft gelesen werden.  Der Modus bestimmt zudem den Wert der **DisplayMode**-Eigenschaft, der von Datenkarten und Steuerelementen innerhalb des Formularsteuerelements verwendet werden kann.  Häufig wird die **DisplayMode**-Eigenschaft der Datenkarte auf **Parent.DisplayMode** festgelegt (womit auf das Formular verwiesen wird); dasselbe gilt für die **DisplayMode**-Eigenschaft des Steuerelements (womit auf die Datenkarte verwiesen wird): 
+### <a name="displaymode-property"></a>DisplayMode-Eigenschaft
+Der aktuelle Modus kann über die **Mode**-Eigenschaft gelesen werden.  Der Modus bestimmt zudem den Wert der **DisplayMode**-Eigenschaft, der von Datenkarten und Steuerelementen innerhalb des Formularsteuerelements verwendet werden kann.  Häufig die der Datenkarte **"DisplayMode"** Eigenschaft auf festgelegt **Parent.DisplayMode** (Verweis auf das Formular) während des Steuerelements **"DisplayMode"** Eigenschaft (verweisen auf die Datenkarte): 
 
 | Modus | DisplayMode | Beschreibung |
 | --- | --- | --- |

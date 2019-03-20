@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 01/14/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3d29387c907808f90225f1ff67257d289de2b0a9
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
+ms.sourcegitcommit: b987589e946cacc86b806a0bd49b9b544ea489dd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806131"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297594"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generieren einer Canvas-App aus Excel in PowerApps
 
@@ -67,17 +67,49 @@ Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/document
 
 1. Filtern Sie die Liste, indem Sie Zeichen in das Suchfeld eingeben und einfügen.
 
-1. Klicken oder tippen Sie auf das Plussymbol, um einen Datensatz hinzuzufügen, fügen Sie beliebige Daten hinzu, und klicken oder tippen Sie dann auf das Häkchen, um die Änderungen zu speichern.
+    Beispielsweise geben oder fügen Sie **Honig** dem einzigen Eintrag für die angezeigt wird, dass die Zeichenfolge im Namen des Produkts, Kategorie oder Übersicht angezeigt wird.
 
-1. Klicken oder tippen Sie auf den Pfeil „Weiter“ des hinzugefügten Datensatzes. Klicken oder tippen Sie dann auf das Stiftsymbol, um den Datensatz zu bearbeiten. Aktualisieren Sie mindestens ein Feld, und klicken oder tippen Sie auf das Häkchen, um die Änderungen zu speichern.
+    ![Filterbeispiel](./media/get-started-create-from-data/filter-example.png)
 
-1. Klicken oder tippen Sie auf den Pfeil „Weiter“ des hinzugefügten Datensatzes. Klicken oder tippen Sie dann auf das Stiftsymbol, um den Datensatz zu bearbeiten. Aktualisieren Sie mindestens ein Feld, und klicken oder tippen Sie auf das Symbol „Abbrechen“, um die Änderungen zu verwerfen.
+1. Fügen Sie einen Eintrag hinzu:
 
-1. Klicken oder tippen Sie auf den Pfeil „Weiter“ des hinzugefügten Datensatzes, und klicken oder tippen Sie dann auf das Papierkorbsymbol, um diesen Datensatz zu löschen.
+    1. Wählen Sie das Pluszeichen.
+
+        ![Pluszeichen](./media/get-started-create-from-data/plus-icon.png)
+
+    1. Fügen Sie beliebige Daten, die Sie möchten, und wählen Sie dann auf das Häkchen, um die Änderungen zu speichern.
+
+        ![Symbol "Speichern"](./media/get-started-create-from-data/save-icon.png)
+
+1. Bearbeiten eines Datensatzes:
+
+    1. Wählen Sie den Pfeil für den Datensatz, den Sie bearbeiten möchten.
+
+        ![Pfeil „Weiter“](./media/get-started-create-from-data/next-arrow.png)
+
+    1. Wählen Sie das Stiftsymbol.
+
+        ![Stiftsymbol](./media/get-started-create-from-data/pencil-icon.png)
+
+    1. Aktualisieren Sie ein oder mehrere Felder aus, und wählen Sie dann auf das Häkchen, um die Änderungen zu speichern.
+
+        ![Symbol "Speichern"](./media/get-started-create-from-data/save-icon.png)
+
+        Wählen Sie alternativ das Symbol "Abbrechen", um Ihre Änderungen zu verwerfen.
+
+1. Löschen Sie Datensatz:
+
+    1. Wählen Sie den weiter-Pfeil für den Datensatz, den Sie löschen möchten.
+
+        ![Pfeil „Weiter“](./media/get-started-create-from-data/next-arrow.png)
+
+    1. Wählen Sie das Papierkorbsymbol.
+
+        ![Papierkorbsymbol](./media/get-started-create-from-data/trash-icon.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Passen Sie den Standardbildschirm zum Durchsuchen an Ihre Anforderungen an. Sie können beispielsweise die Liste nach Produktname statt nach Kategorie sortieren und filtern.
+Passen Sie den Standardbildschirm zum Durchsuchen an Ihre Anforderungen an. Sie können z. B. sortieren und Filtern Sie die Liste nach Produktname nur, nicht auf Kategorie oder Übersicht.
 
 > [!div class="nextstepaction"]
 > [Anpassen des Standardbildschirms zum Durchsuchen](customize-layout-sharepoint.md)

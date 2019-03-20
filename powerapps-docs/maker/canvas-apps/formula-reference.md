@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/05/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43163635"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803778"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -208,6 +208,10 @@ Andere Elemente enthalten:
 **[Lower](functions/function-lower-upper-proper.md)**: konvertiert Buchstaben in einer Textzeichenfolge in Kleinbuchstaben.
 
 ## <a name="m"></a>M
+**[Übereinstimmung](functions/function-ismatch.md)**  – extrahiert eine Teilzeichenfolge, die basierend auf einem Muster.  Reguläre Ausdrücke können verwendet werden.
+
+**[MatchAll](functions/function-ismatch.md)**  – mehrere Teilzeichenfolgen, die basierend auf einem Muster extrahiert.  Reguläre Ausdrücke können verwendet werden.
+
 **[Max](functions/function-aggregates.md)**: der Höchstwert eines Tabellenausdrucks oder eines Satzes von Argumenten.
 
 **[Mid](functions/function-left-mid-right.md)**: gibt den mittleren Teil einer Zeichenfolge zurück.
@@ -255,6 +259,8 @@ Andere Elemente enthalten:
 **[Rand](functions/function-rand.md)**: gibt eine pseudozufällige Zahl zurück.
 
 **[Refresh](functions/function-refresh.md)**: aktualisiert die Datensätze einer Datenquelle.
+
+**[Im Zusammenhang](functions/function-relate-unrelate.md)**  – bezieht sich die Datensätze der zwei Entitäten über eine 1: n- oder m: n Beziehung.
 
 **[Remove](functions/function-remove-removeif.md)**: entfernt einen oder mehrere bestimmte Datensätze aus einer Datenquelle.
 
@@ -322,7 +328,7 @@ Andere Elemente enthalten:
 
 **[Tan](functions/function-trig.md)**: gibt den Tangens eines im Bogenmaß angegebenen Winkels zurück.
 
-**[Text](functions/function-text.md)**: formatiert eine Zahl als Zeichenfolge für die Anzeige.
+**[Text](functions/function-text.md)**  : konvertiert einen beliebigen Wert und formatiert einen Zahl oder Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts.
 
 **[ThisItem](functions/operators.md#thisitem-operator)**: gibt in einem Katalog oder einem Formular die Daten für das aktuelle Element aus dem Container zurück.
 
@@ -341,9 +347,11 @@ Andere Elemente enthalten:
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)**: entfernt eine Gruppierung.
 
+**[Verknüpfung mit](functions/function-relate-unrelate.md)**  – Unrelates Datensätze von zwei Entitäten aus einer 1: n- oder m: n Beziehung.
+
 **[Update](functions/function-update-updateif.md)**: ersetzt einen Datensatz in einer Datenquelle.
 
-**[UpdateContext](functions/function-updatecontext.md)**: Legt den Wert einer oder mehrerer [Kontextvariablen](working-with-variables.md#create-a-context-variable) des aktuellen Bildschirms fest.
+**[UpdateContext](functions/function-updatecontext.md)**: Legt den Wert einer oder mehrerer [Kontextvariablen](working-with-variables.md#use-a-context-variable) des aktuellen Bildschirms fest.
 
 **[UpdateIf](functions/function-update-updateif.md)** : ändert eine Gruppe von Datensätzen in einer Datenquelle auf der Grundlage einer Bedingung.
 

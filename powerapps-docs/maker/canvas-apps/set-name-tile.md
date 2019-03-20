@@ -1,24 +1,24 @@
 ---
 title: Ändern des Namens und Symbols einer Canvas-App | Microsoft-Dokumentation
 description: Erfahren Sie anhand einer Schritt-für-Schritt-Anleitung, wie Sie die Einstellungen für eine Canvas-App in PowerApps ändern, z.B. ihren Namen und ihr Symbol.
-author: lonu
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
-ms.author: lonu
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 74e56e5819ff4171f5f16a4ebc8b5da39c8c0c8a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: bca875eb2160702c749f8556613b6ebe5a426cb4
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42825324"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798879"
 ---
 # <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>Ändern des Namens und Symbols einer Canvas-App in PowerApps
 Sie können eine Canvas-App anpassen, indem Sie ihren Namen und ihr Symbol ändern.

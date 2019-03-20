@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
-ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
-ms.translationtype: HT
+ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860608"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804353"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -77,9 +77,9 @@ Das benutzerdefinierte PowerApps-Visual ist in der Vorschauversion verfügbar un
 - Das benutzerdefinierte PowerApps-Visual kann keine Aktualisierung des Power BI-Berichts oder der Power BI-Datenquelle auslösen. Wenn Sie Daten von der App in dieselbe Datenquelle schreiben, die auch der Bericht verwendet, werden diese Änderungen nicht sofort angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
 - Das benutzerdefinierte PowerApps-Visual kann die Daten nicht filtern oder wieder an den Bericht senden.
 - Sie müssen die PowerApps-App getrennt von Ihrem Bericht freigeben. Weitere Informationen dazu finden Sie unter [sharing apps in PowerApps (Freigeben von Apps in PowerApps)](share-app.md).
-- Der Power BI-Berichtsserver und die mobile Power BI-App unterstützen das benutzerdefinierte PowerApps-Visual nicht.
+- Diese Technologien unterstützen keine benutzerdefinierten PowerApps-Visuals: Power BI-Berichtsserver, der mobilen app für Power BI und Internet Explorer.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * Befolgen Sie ein einfaches, [ausführliches Tutorial](embed-powerapps-powerbi.md).
-* Sehen Sie sich unser [Video](https://aka.ms/powerappscustomvisualvideo) an.
+* Sehen Sie sich unsere [video](https://aka.ms/powerappscustomvisualvideo).

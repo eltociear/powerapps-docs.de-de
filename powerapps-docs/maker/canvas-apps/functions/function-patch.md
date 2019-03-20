@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 64641b0cc0822a955de2b1c9e53692dac9dfcf31
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3adb036a1619263d2b8cef1f649c2d2f97925ceb
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865484"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803134"
 ---
 # <a name="patch-function-in-powerapps"></a>Funktion „Patch“ in PowerApps
 Ändert oder erstellt einen oder mehrere [Datensätze](../working-with-tables.md#records) in einer [Datenquelle](../working-with-data-sources.md) oder verbindet Datensätze außerhalb einer Datenquelle.
@@ -30,21 +30,21 @@ In weniger komplexen Situationen können Sie das Steuerelement **Bearbeitungsfor
 ## <a name="overview"></a>Übersicht
 Verwenden Sie die **Patch**-Funktion, um einen oder mehrere Datensätze für die Datenquelle zu ändern.  Die Werte bestimmter [Felder](../working-with-tables.md#elements-of-a-table) lassen sich ohne Auswirkungen auf andere Eigenschaften ändern. Beispielsweise ändert diese Formel die Telefonnummer für einen Kunden mit dem Namen Contoso:
 
-**Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )**
+`Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )`
 
 Verwenden Sie die Funktion **Patch** mit der **[Default](function-defaults.md)**-Funktion, um Einträge zu erstellen. Verwenden Sie dieses Verhalten zum Erstellen eines [kombinierten Bildschirms](../working-with-data-sources.md) für die Erstellung und Bearbeitung von Datensätzen. Beispielsweise erstellt diese Formel einen Datensatz für einen Kunden mit dem Namen Contoso:
 
-**Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )**
+`Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )`
 
 Auch wenn Sie nicht mit einer Datenquelle arbeiten, können Sie die **Patch**-Funktion zum Zusammenführen von zwei oder mehr Datensätzen nutzen. Diese Formel führt beispielsweise zwei Datensätze zu einem zusammen, der sowohl die Telefonnummer als auch den Standort von Contoso angibt:
 
-**Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
+`Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
 ## <a name="description"></a>Beschreibung
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>Ändern oder Erstellen eines Datensatzes in einer Datenquelle
 Um diese Funktion mit einer Datenquelle zu verwenden, geben Sie zunächst die Datenquelle an und anschließend einen Basisdatensatz:
 
-* Um einen Datensatz zu ändern, muss der Basisdatensatz aus einer Datenquelle stammen.  Der Basisdatensatz kann aus der **[Items](../controls/properties-core.md)**-Eigenschaft eines Katalogs stammen, in einer [Kontextvariablen](../working-with-variables.md#create-a-context-variable) platziert worden sein oder anderer Herkunft sein. Sie sollten den Basisdatensatz jedoch an die Datenquelle zurückverfolgen können.  Dies ist wichtig, da der Datensatz zusätzliche Informationen enthält, anhand derer Sie ihn wiederfinden können, um ihn zu ändern.  
+* Um einen Datensatz zu ändern, muss der Basisdatensatz aus einer Datenquelle stammen.  Der Basisdatensatz kann aus der **[Items](../controls/properties-core.md)**-Eigenschaft eines Katalogs stammen, in einer [Kontextvariablen](../working-with-variables.md#use-a-context-variable) platziert worden sein oder anderer Herkunft sein. Sie sollten den Basisdatensatz jedoch an die Datenquelle zurückverfolgen können.  Dies ist wichtig, da der Datensatz zusätzliche Informationen enthält, anhand derer Sie ihn wiederfinden können, um ihn zu ändern.  
 * Zum Erstellen eines Datensatzes verwenden Sie die **[Defaults](function-defaults.md)**-Funktion und erstellen einen Basisdatensatz mit Standardwerten.  
 
 Geben Sie anschließend einen oder mehrere Änderungsdatensätze mit jeweils neuen Eigenschaftswerten an, die die Eigenschaftswerte im Basisdatensatz überschreiben. Änderungsdatensätze werden nacheinander vom Anfang bis zum Ende der Argumenteliste verarbeitet, wobei spätere Eigenschaftswerte frühere Versionen überschreiben.
@@ -76,7 +76,7 @@ Geben Sie zwei oder mehr Datensätze an, die Sie zusammenführen möchten. Daten
 * *ChangeRecord(s)*: erforderlich.  Mindestens ein Datensatz, der Eigenschaften enthält, die für jeden Datensatz im *BaseRecord* geändert werden sollen.  Änderungsdatensätze werden nacheinander vom Anfang bis zum Ende der Argumenteliste verarbeitet, wobei spätere Eigenschaftswerte frühere Versionen überschreiben.
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>Ändern oder Erstellen einer Gruppe von Datensätzen in einer Datenquelle
-**Patch**( *DataSource*, *BaseRecordsTable*, *ChageRecordTable1*, [, *ChangeRecordTable2*, … ] )
+**Patch**( *DataSource*, *BaseRecordsTable*, *ChangeRecordTable1* [, *ChangeRecordTable2*, … ] )
 
 * *Datenquelle*: Erforderlich. Die Datenquelle mit den zu ändernden Datensätzen oder für die Sie Datensätze erstellen möchten.
 * *BaseRecordTable*: erforderlich. Eine Tabelle mit zu ändernden oder zu erstellenden Datensätzen.  Wenn der Datensatz aus einer Datenquelle stammt, wird der Datensatz gefunden und geändert. Wenn das Ergebnis der  **[Defaults](function-defaults.md)**-Funktion verwendet wird, wird ein Datensatz erstellt.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 688b1e87e5bc1d2ee3429711b9995f3b4ef61e1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857106"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308775"
 ---
 # <a name="forall-function-in-powerapps"></a>Funktion „ForAll“ in PowerApps
 Berechnet Werte und führt Aktionen für alle [Datensätze](../working-with-tables.md#records) einer [Tabelle](../working-with-tables.md) durch.
@@ -64,7 +64,7 @@ In den folgenden Beispielen wird die **Squares**-[Datenquelle](../working-with-d
 
 Legen Sie die **OnSelect**-Eigenschaft eines **Button**-Steuerelements auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um diese Datenquelle als Sammlung zu erstellen:
 
-* **ClearCollect( Squares, [ "1", "4", "9" ] )**
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ In den folgenden Beispielen wird die **Expressions**-[Datenquelle](../working-wi
 
 Legen Sie die **OnSelect**-Eigenschaft eines **Button**-Steuerelements auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um diese Datenquelle als Sammlung zu erstellen:
 
-* **ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )**
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 Dieses Beispiel verwendet auch eine [Microsoft Translator](../connections/connection-microsoft-translator.md)-Verbindung.  Wie Sie diese Verbindung zu Ihrer App hinzufügen, erfahren Sie im Thema [Manage your connections (Verwalten von Verbindungen)](../add-manage-connections.md).
 
@@ -104,7 +104,16 @@ In den folgenden Beispielen wird die **Products**-[Datenquelle](../working-with-
 
 Legen Sie die **OnSelect**-Eigenschaft eines **Button**-Steuerelements auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um diese Datenquelle als Sammlung zu erstellen:
 
-* **ClearCollect( Products, Table( { Product: "Widget", 'Quantity Requested': 6, 'Quantity Available': 3 }, { Product: "Gadget", 'Quantity Requested': 10, 'Quantity Available': 20 }, { Product: "Gizmo", 'Quantity Requested': 4, 'Quantity Available': 11 }, { Product: "Apparatus", 'Quantity Requested': 7, 'Quantity Available': 6 } ) )**
+```powerapps-dot
+ClearCollect( Products, 
+    Table( 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
+    )
+)
+```
 
 Unser Ziel ist es, mit einer abgeleiteten Tabelle zu arbeiten, die nur die Artikel enthält, von denen mehr angefordert wurde als verfügbar ist, und für die wir eine Bestellung aufgeben müssen:
 
@@ -115,7 +124,17 @@ Wir können diese Aufgabe auf verschiedene Weisen ausführen, die alle mit versc
 #### <a name="table-shaping-on-demand"></a>Tabellenstrukturierung nach Bedarf
 Erstellen Sie keine Kopie!  Wir können die folgende Formel an einer beliebigen Stelle verwenden:
 
-* **ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 Es wird ein [Datensatzbereich](../working-with-tables.md#record-scope) von den Funktionen **Filter** und **AddColumns** erstellt, um den Vergleich bzw. die Subtraktion mit den Feldern **'Quantity Requested'** (Angeforderte Menge) und **'Quantity Available'** (Verfügbare Menge) jedes Datensatzes durchzuführen.
 
@@ -126,7 +145,16 @@ Und da wir keine Kopie erstellt haben, muss keine zusätzliche Kopie der Informa
 #### <a name="forall-on-demand"></a>ForAll nach Bedarf
 Ein anderer Ansatz ist die **ForAll**-Funktion, um die Funktionen zur Tabellenstrukturierung zu ersetzen:
 
-* **ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) )**
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        { 
+            Product: Product, 
+            'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+        } 
+    ) 
+)
+```
 
 Diese Formel ist für einige Personen möglicherweise einfacher zu lesen und zu schreiben.
 
@@ -137,15 +165,50 @@ In einigen Situationen ist möglicherweise eine Kopie der Daten erforderlich.  E
 
 Wir verwenden die gleiche Tabellenstrukturierung wie in den beiden vorherigen Beispielen, aber wir erfassen das Ergebnis in einer Sammlung:
 
-* **ClearCollect( NewOrder, ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" ) )**
-* **ClearCollect( NewOrder, ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ShowColumns( 
+        AddColumns( 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
+        "Quantity To Order"
+    )
+)
+```
+
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        } 
+    )
+)
+```
 
 **ClearCollect** und **Collect** können nicht delegiert werden.  Deshalb ist die Menge der Daten, die auf diese Weise verschoben werden können, beschränkt.
 
 #### <a name="collect-within-forall"></a>Sammeln innerhalb von ForAll
 Schließlich können wir **Collect** direkt in **ForAll** ausführen:
 
-* **Clear( ProductsToOrder ); ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', Collect( NewOrder, { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        )
+    )
+)
+```
 
 In diesem Fall kann die **ForAll**-Funktion auch nicht delegiert werden.  Wenn die **Products**-Tabelle sehr groß ist, untersucht **ForAll** nur den ersten Satz von Datensätzen und lässt möglicherweise Produkte aus, die bestellt werden müssen.  Aber für Tabellen, die klein bleiben, ist dieser Ansatz in Ordnung.
 

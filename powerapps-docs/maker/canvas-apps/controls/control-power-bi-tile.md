@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 82a7089ec14753a70d52d09024d1df527dbeb866
+ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640352"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57804261"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
 
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.
 
-Sie verfügen nicht über Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
+Sie haben noch kein Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
 ## <a name="description"></a>Beschreibung
 
@@ -37,6 +37,20 @@ Wenn Sie eine App freigeben, die Power BI-Inhalt enthält, müssen Sie nicht nur
 ## <a name="performance"></a>Leistung
 
 Es wird nicht empfohlen, mehr als drei Power BI-Kacheln zur gleichen Zeit in einer App zu laden. Sie können den Ladungsvorgang von Kacheln und auch das Entladen steuern, indem Sie die Eigenschaft **LoadPowerBIContent** festlegen.
+
+## <a name="pass-a-parameter"></a>Weitergeben eines Parameters
+
+Übergeben Sie einen einzelnen Parameter aus der app, können Sie die Ergebnisse filtern, die in einer Power BI-Kachel angezeigt werden. Allerdings werden nur Zeichenfolgenwerte und den Equals-Operator unterstützt, und der Filter funktionieren möglicherweise nicht, wenn der Tabellenname oder den Namen der Spalte mit Leerzeichen enthält.
+
+Um einen einzelnen Filter-Wert übergeben wird, ändern Sie den Wert des der **TileURL** -Eigenschaft, die diese Syntax folgt:
+
+```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+
+Fügen Sie auf den Wert der diese Syntax:
+
+```&$filter=<TableName>/<ColumnName> eq "<Value>" ```
+
+Der Parameter wird einen Wert in das Dataset des Berichts gefiltert und stammt, in dem die Kachel.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 

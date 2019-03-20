@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6625df3f822462c86de1f720b7a310f5e516a6ca
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 25cae936ace1dcd3108f11271e3fe38cb41ae2e7
+ms.sourcegitcommit: 55c6af2f767e90c999eea4d29589c1fe19dfc4db
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849869"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443733"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Die Funktionen „Calendar“ und „Clock“ in PowerApps
 Ruft Kalender- und Uhrzeitinformationen zum aktuellen Gebietsschema ab
@@ -66,11 +66,11 @@ In den USA gibt **[Language](function-language.md)** „en-US“ zurück, und di
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Calendar.MonthsLong()** |Der Rückgabewert enthält den vollständigen Namen eines jeden Monats, beginnend mit „January“. |[ „January“, „February“, „March“, „April“, „May“, „June“, „July“, „August“, „September“, „October“, „November“, „December“ ] |
-| **Calendar.MonthsShort()** |Der Rückgabewert enthält die abgekürzten Namen eines jeden Monats, beginnend mit „January“. |[ „Jan“, „Feb“, „Mar“, „Apr“, „May“, „Jun“, „Jul“, „Aug“, „Sep“, „Oct“, „Nov“, „Dec“ ] |
-| **Calendar.WeekdaysLong()** |Der Rückgabewert enthält den vollständigen Namen eines jeden Wochentags, beginnend mit „Sunday“. |[ „Sunday“, „Monday“, „Tuesday“, „Wednesday“, „Thursday“, „Friday“, „Saturday“ ] |
-| **Calendar.WeekdaysShort()** |Der Rückgabewert enthält die abgekürzten Namen eines jeden Wochentags, beginnend mit „Sunday“. |[ „Sun“, „Mon“, „Tue“, „Wed“, „Thu“, „Fri“, „Sat“ ] |
-| **Clock.AmPm()** |Diese Sprache verwendet ein 12-Stunden-Format.  Der Rückgabewert enthält die Großbuchstaben der vollständigen AM/PM-Bezeichnungen. |[ „AM“, „PM“ ] |
-| **Clock.AmPmShort()** |Diese Sprache verwendet ein 12-Stunden-Format.  Der Rückgabewert enthält die Großbuchstaben der kurzen AM/PM-Bezeichnungen. |[ "A", "P" ] |
+| **Calendar.MonthsLong()** |Der Rückgabewert enthält den vollständigen Namen eines jeden Monats, beginnend mit "January". |[ „January“, „February“, „March“, „April“, „May“, „June“, „July“, „August“, „September“, „October“, „November“, „December“ ] |
+| **Calendar.MonthsShort()** |Der Rückgabewert enthält die abgekürzten Namen eines jeden Monats, beginnend mit "January". |[ „Jan“, „Feb“, „Mar“, „Apr“, „May“, „Jun“, „Jul“, „Aug“, „Sep“, „Oct“, „Nov“, „Dec“ ] |
+| **Calendar.WeekdaysLong()** |Der Rückgabewert enthält den vollständigen Namen eines Tages, beginnend mit "Sunday". |[ „Sunday“, „Monday“, „Tuesday“, „Wednesday“, „Thursday“, „Friday“, „Saturday“ ] |
+| **Calendar.WeekdaysShort()** |Der Rückgabewert enthält die abgekürzten Namen eines Tages, beginnend mit "Sunday". |[ „Sun“, „Mon“, „Tue“, „Wed“, „Thu“, „Fri“, „Sat“ ] |
+| **Clock.AmPm()** |Diese Sprache verwendet ein 12-Stunden-Format. Der Rückgabewert enthält die Großbuchstaben der vollständigen AM/PM-Bezeichnungen. |[ „AM“, „PM“ ] |
+| **Clock.AmPmShort()** |Diese Sprache verwendet ein 12-Stunden-Format. Der Rückgabewert enthält die Großbuchstaben der kurzen AM/PM-Bezeichnungen. |[ "A", "P" ] |
 | **Clock.IsClock24()** |Diese Sprache verwendet ein 12-Stunden-Format. |**FALSE** |
 

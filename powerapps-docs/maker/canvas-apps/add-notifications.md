@@ -1,24 +1,24 @@
 ---
 title: Senden einer Pushbenachrichtigung | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie Sie native Pushbenachrichtigungen an eine App in PowerApps senden.
-author: jamesol-msft
+author: kavishi
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 08/08/2017
-ms.author: jamesol
+ms.author: kaagar
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 031a481cda2a6f51aa5c455bd03c0fe5b79f7c60
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f5ee975343afc16faaca52194b16cedff57e7e9f
+ms.sourcegitcommit: fe47ad47873a37fbe17b30d39fb2ca6035b7d152
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830169"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "57800857"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
 Pushbenachrichtigungen werden bei mobilen Apps für Kunden- und Business-Szenarien in erster Linie verwendet, um mit den App-Benutzern zu kommunizieren und ihnen zu helfen, wichtige Aufgaben zu priorisieren. In PowerApps können Sie Benachrichtigungen über den Connector „PowerApps-Benachrichtigung“ senden. Sie können native Pushbenachrichtigungen an eine beliebige App senden, die Sie in PowerApps erstellen. In Zukunft sollen weitere Benachrichtigungstypen hinzukommen.

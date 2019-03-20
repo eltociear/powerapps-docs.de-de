@@ -1,24 +1,24 @@
 ---
 title: Übersicht über die SharePoint-Verbindung | Microsoft-Dokumentation
 description: Hier finden Sie die verfügbaren Funktionen, Antworten und Beispiele für SharePoint.
-author: sarafankit
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/12/2017
-ms.author: ankitsar
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a13d2602f06f436d4b805669b004f1ee63daeb9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
+ms.openlocfilehash: c7f973b9a62e50ea646999d6d10b185fb02306dd
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836733"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798925"
 ---
 # <a name="connect-to-sharepoint-from-powerapps"></a>Verbinden mit SharePoint aus PowerApps
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
@@ -62,7 +62,7 @@ PowerApps kann Spalten mit Leerzeichen lesen, aber die Leerzeichen werden durch 
 
     Die App verfügt standardmäßig über drei Bildschirme: jeweils einen zum Durchsuchen von Datensätzen, zum Anzeigen von Details zu einem Datensatz und zum Erstellen oder Aktualisieren eines Datensatzes. Nach dem Generieren der App können Sie [den Bildschirm zum Durchsuchen](../customize-layout-sharepoint.md) und [den Bearbeitungs- und Detailbildschirm](../customize-forms-sharepoint.md) an Ihre Anforderungen anpassen.
 
-    **Hinweis:** Wenn Ihre SharePoint-Liste eine Spalte vom Typ **Auswahl**, **Nachschlagen**, oder **Person oder Gruppe** enthält, finden Sie weitere Informationen unter [Anzeigen von Daten in einem Katalog](connection-sharepoint-online.md#show-data-in-a-gallery) weiter unten in diesem Thema.
+    **Hinweis:** Wenn die SharePoint-Liste enthält eine **Wahl**, **Lookup**, oder **Person oder Gruppe** Spalte finden Sie unter [Anzeigen von Daten in einem Katalog](connection-sharepoint-online.md#show-data-in-a-gallery) weiter unten in diesem Thema.
 
 * Erstellen Sie eine eigene Anwendung von Grund auf neu, indem Sie [eine Verbindung mit SharePoint herstellen](../connect-to-sharepoint.md), sich mit den Konzepten in [App von Grund auf neu erstellen](../get-started-create-from-blank.md) vertraut machen und sie in SharePoint anstelle von Excel anwenden.
 
@@ -128,7 +128,7 @@ Wenn Sie Daten aus einem dieser Spaltentypen in einem Katalog anzeigen möchten,
 
     Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine vollständige Liste der Optionen anzuzeigen, geben Sie **ThisItem.[Spaltenname].** (mit dem abschließenden Punkt) ein.
 
-    **Hinweis:** Für eine **CreatedBy**-Spalte geben Sie **ThisItem.Author.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste erstellt haben. Für eine **ModifiedBy**-Spalte geben Sie **ThisItem.Editor.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste geändert haben.
+    **Hinweis:** Für eine **CreatedBy** Spalte geben **ThisItem.Author.DisplayName** die Anzeigenamen von Benutzern angezeigt, die Elemente in der Liste erstellt haben. Für eine **ModifiedBy**-Spalte geben Sie **ThisItem.Editor.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste geändert haben.
 
 * Geben Sie für eine Spalte vom Typ **Verwaltete Metadaten** **ThisItem.[Spaltenname].Label** an, um Daten in dieser Spalte anzuzeigen.
 

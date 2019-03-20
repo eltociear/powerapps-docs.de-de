@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ccd505d53377617bd13cda775cce489c554bc64
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
+ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862574"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57892274"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>Integrieren von globaler Unterstützung in Canvas-Apps
 PowerApps ist ein globales Produkt. Sie können Canvas-Apps in vielen verschiedenen Sprachen und Regionen erstellen und verwenden.
 
-Sowohl beim Erstellen als auch beim Ausführen von Apps wurde der von PowerApps angezeigte Text in eine Vielzahl von Sprachen übersetzt.  Menüelemente, Dialogfelder, Menübandregisterkarten und anderer Text wird in Ihrer Muttersprache angezeigt.  Die Eingabe und die Datums- und Zahlenanzeige ist ebenfalls an Ihre bestimmte Sprache und Region angepasst.  Beispielsweise wird in einigen Regionen der Welt „.“ als Dezimaltrennzeichen verwendet, während in anderen Regionen „,“ verwendet wird.  
+Sowohl beim Erstellen als auch beim Ausführen von Apps wurde der von PowerApps angezeigte Text in eine Vielzahl von Sprachen übersetzt.  Menüelemente, Dialogfelder, Menübandregisterkarten und anderer Text wird in Ihrer Muttersprache angezeigt.  Die Eingabe und die Datums- und Zahlenanzeige ist ebenfalls an Ihre bestimmte Sprache und Region angepasst.  Z. B. einige Regionen der Welt eine **.** (Punkt oder ein Punkt) als Dezimaltrennzeichen, während andere verwenden eine **,** (Komma).  
 
 Die Apps, die Sie erstellen, können ebenfalls global kompatibel sein.  Verwenden Sie die Funktionen **[Language](functions/function-language.md)**, **[Text](functions/function-text.md)**, **[Value](functions/function-value.md)**, **[DateValue](functions/function-datevalue-timevalue.md)** sowie andere Funktionen, um anzupassen, was als Eingabe in verschiedenen Sprachen angezeigt und verwendet wird.   
 
@@ -39,9 +39,9 @@ Die Erstellungsumgebung passt sich an die Spracheinstellung des Autors an.  Die 
 Die meisten Elemente in einer Formel sind immer auf Englisch:
 
 * Funktionsnamen: **If**, **Navigate**, **Collect**, ...
-* Namen von Steuerelementeigenschaften: **Screen.Fill**, **Button.OnSelect**, **Textbox.Font**, ...
+* Steuerelement-Eigenschaftennamen: **Screen.Fill**, **Button.OnSelect**, **Textbox.Font**, ...
 * Enumerationsnamen: **Color.Aqua**, **DataSourceInfo.MaxValue**, **FontWeight.Bold**...
-* Einzelne Datensätze: **Compass.Heading**, **Location. Latitude**, **App.ActiveScreen**, ...
+* Signal-Datensätze: **Compass.Heading**, **Speicherort. Latitude**, **App.ActiveScreen**, ...
 * Operatoren: **Parent**, **in**, **exactIn**, ...
 
 Da die Erstellungsumgebung lokalisiert wird, werden Steuer- und andere Objektnamen in der Muttersprache des Autors angezeigt.  In Spanisch werden einige der Steuerelementnamen wie folgt angezeigt:
@@ -67,7 +67,7 @@ Einige [Trennzeichen und Operatoren](functions/operators.md) werden basierend au
 
 | Dezimaltrennzeichen der Sprache des Autors | Dezimaltrennzeichen von PowerApps | Listentrennzeichen von PowerApps | Verkettungsoperator von PowerApps |
 | --- | --- | --- | --- |
-| **.** (Punkt) |**.** (Punkt) |**,** (Komma) |**;** (Semikolon) |
+| **.** (Punkt oder Zeitraum) |**.** (Punkt oder Zeitraum) |**,** (Komma) |**;** (Semikolon) |
 | **,** (Komma) |**,** (Komma) |**;** (Semikolon) |**;;** (doppeltes Semikolon) |
 
 Die Änderung am Listentrennzeichen von PowerApps ist konsistent zu der Änderung am Listentrennzeichen von Excel.  Sie wirkt sich auf Folgendes aus:
@@ -76,15 +76,15 @@ Die Änderung am Listentrennzeichen von PowerApps ist konsistent zu der Änderun
 * Felder in einem [Datensatz](working-with-tables.md#elements-of-a-table)
 * Datensätze in einer [Wertetabelle](working-with-tables.md#inline-syntax)
 
-Betrachten Sie beispielsweise die folgende Formel in „en-US“:
+Betrachten Sie beispielsweise die folgende Formel, ausgedrückt in eine Sprache und Region, in der Punkt als Dezimaltrennzeichen, z. B. in Japan oder in Großbritannien verwendet:
 
-**If( Slider1.Value > 12.59, UpdateContext( { Validation: true, MovingOn: 1 } ); Navigate( "NextScreen", "" ), UpdateContext( { Validation: false } ) )**
+![PowerApps-Formel, wenn der öffnenden slider1 Punkt Wert größer als 12 Punkt 59 Komma Klammer benachrichtigen Open Klammer "Valid"! Komma Erfolg schließen Klammer Semikolon Navigieren zu öffnenden Klammer "NextScreen" Komma keine schließenden Klammer Komma benachrichtigen Open Klammer "Ungültig ist, versuchen Sie es erneut" Komma Fehler schließen Klammer schließen Klammer](media/global-apps/operators-dot.png)
 
-In einer Sprache, in der „,“ als Dezimaltrennzeichen verwendet wird, erscheint dies in der Erstellungsumgebung wie folgt:
+Jetzt können zeigen Sie diese dieselbe Formel in eine Sprache und Region, in denen ein Komma als Dezimaltrennzeichen verwendet, z. B. Frankreich oder Spanien dient, an:
 
-**If( Slider1.Value > 12,59; UpdateContext( { Validation: true; MovingOn: 1 } );; Navigate( "NextScreen", "" ); UpdateContext( { Validation: false } ) )**
+![PowerApps-Formel öffnenden slider1 Punkt Wert größer als 12 Komma 59 Semikolon Klammer benachrichtigen, wenn Open Klammer "Valid"! durch Semikolons Erfolg schließen Klammer doppeltes Semikolon Navigate geöffneten Klammer "NextScreen" Semikolon keine schließenden Klammer Semikolon benachrichtigen Open Klammer "Ungültig ist, versuchen Sie es erneut" durch Semikolons Fehler schließen Klammer schließen Klammer](media/global-apps/operators-comma.png)
 
-Beachten Sie, dass der Eigenschaftenauswahloperator **.** in **Slider1.Value** immer gleich ist, unabhängig davon, was als Dezimaltrennzeichen verwendet wird.
+Die Hervorhebung zeigt die Operatoren, die zwischen den beiden Versionen ändern.  Beachten Sie, dass der Eigenschaftenauswahloperator **.** (Punkt oder ein Punkt) in **Slider1.Value** ist immer gleich, unabhängig davon, was als Dezimaltrennzeichen verwendet wird.
 
 Intern wird die Formel nicht geändert; es wird nur geändert, wie diese vom Autor angezeigt und bearbeitet wird.  Zwei verschiedene Autoren, die zwei verschiedene Sprachen verwenden, können die gleiche Formel anzeigen und bearbeiten, wobei jedem die für seine Sprache entsprechenden Trennzeichen und Operatoren angezeigt werden.
 
@@ -125,17 +125,17 @@ Weitere Informationen finden Sie in der Dokumentation zur **[Text](functions/fun
 ### <a name="reading-numbers-dates-and-times"></a>Lesen von Zahlen, Datumsangaben und Zeitangaben
 Es gibt vier Funktionen zum Lesen von Zahlen, Datumsangaben und Uhrzeiten, die vom Benutzer bereitgestellt werden:
 
-* **[Value](functions/function-value.md)**: Konvertiert eine Zahl in einer Textzeichenfolge in einen numerischen Wert
-* **[DateValue](functions/function-datevalue-timevalue.md)**: Konvertiert einen Datumswert in einer Textzeichenfolge in einen date/time-Wert.  Jede Zeitangabe in der Textzeichenfolge wird ignoriert.
-* **[TimeValue](functions/function-datevalue-timevalue.md)**: Konvertiert einen Zeitwert in einer Textzeichenfolge in einen date/time-Wert.  Jede Datumsangabe in der Textzeichenfolge wird ignoriert.
-* **[DateTimeValue](functions/function-datevalue-timevalue.md)**: Konvertiert einen date- und time-Wert in einer Textzeichenfolge in einen date/time-Wert  
+* **[Wert](functions/function-value.md)**: Konvertiert eine Zahl in einer Textzeichenfolge in einen numerischen Wert an.
+* **[DateValue](functions/function-datevalue-timevalue.md)**: Einen Date-Wert in einer Textzeichenfolge konvertiert in einen Datum/Uhrzeit-Wert.  Jede Zeitangabe in der Textzeichenfolge wird ignoriert.
+* **[TimeValue](functions/function-datevalue-timevalue.md)**: Konvertiert einen Zeitwert in eine Zeichenfolge, Datum/Uhrzeit-Wert.  Jede Datumsangabe in der Textzeichenfolge wird ignoriert.
+* **[DateTimeValue](functions/function-datevalue-timevalue.md)**: Einen Datum und Uhrzeit-Wert in einer Textzeichenfolge konvertiert in einen Datum/Uhrzeit-Wert.  
 
 Wenn Sie Excel verwendet haben, werden alle diese Funktionen in der einzelnen **Value**-Funktion kombiniert.  Sie werden hier besonders ausgewiesen, da PowerApps über getrennte Typen für date/time-Werte und Zahlen verfügt.
 
 Alle diese Funktionen haben die gleichen Argumente:
 
 * *Zeichenfolge, erforderlich*: Eine Zeichenfolge des Benutzers. Beispielsweise gibt eine Zeichenfolge mit der **Text**-Eigenschaft Text in eine **Texteingabe**-Steuerelement ein und liest aus diesem.
-* *Sprache, optional*: Die Sprache, in der die *Zeichenfolge* interpretiert werden soll.  Dabei handelt es sich standardmäßig um die Spracheinstellung des Benutzers.
+* *Sprache, optional*: Die Sprache, die zum Interpretieren der *Zeichenfolge*.  Dabei handelt es sich standardmäßig um die Spracheinstellung des Benutzers.
 
 Beispiel:
 

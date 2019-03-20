@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886479b4cd2f7e04e9949c99ba05e6219e92b2b3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859984"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803594"
 ---
 # <a name="errors-function-in-powerapps"></a>Funktion „Errors“ in PowerApps
 Enthält Fehlerinformationen zu vorherigen Änderungen an einer [Datenquelle](../working-with-data-sources.md).
@@ -72,7 +72,7 @@ In diesem Beispiel arbeiten wir mit der Datenquelle **IceCream**:
 
 ![](media/function-errors/icecream.png)
 
-Über die App lädt ein Benutzer den Schokoladendatensatz in ein Dateneingabeformular und ändert anschließend den Wert für **Quantity** auf 90.  Der Datensatz, mit dem gearbeitet wird, befindet sich in der [Kontextvariablen](../working-with-variables.md#create-a-context-variable) **EditRecord**:
+Über die App lädt ein Benutzer den Schokoladendatensatz in ein Dateneingabeformular und ändert anschließend den Wert für **Quantity** auf 90.  Der Datensatz, mit dem gearbeitet wird, befindet sich in der [Kontextvariablen](../working-with-variables.md#use-a-context-variable) **EditRecord**:
 
 * **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
@@ -80,7 +80,7 @@ Für diese Änderung in der Datenquelle wird die **[Patch](function-patch.md)**-
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-wobei **Gallery.Updates** den Wert **{Quantity: 90}** ergibt, da nur die **Quantity**-Eigenschaft geändert wurde.
+wo **Gallery.Updates** ergibt **{Quantity: 90}**, da nur die **Menge** -Eigenschaft geändert wurde.
 
 Leider hat eine andere Person kurz vor dem Aufrufen der **[Patch](function-patch.md)**-Funktion den Wert für **Quantity** für Schokolade auf 80 geändert.  PowerApps erkennt dies und verhindert einen Änderungskonflikt.  Sie können dies anhand der folgenden Formel überprüfen:
 
@@ -90,7 +90,7 @@ Diese gibt **FALSE** zurück, da die **Errors**-Funktion die folgende Tabelle zu
 
 | Datensatz | Spalte | Nachricht | Fehler |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |*blank* |„Another user has modified the record that you're trying to modify. (Ein anderer Benutzer hat den Datensatz geändert, den Sie gerade ändern möchten.“) Please reload the record and try again.“ (Laden Sie den Datensatz neu, und versuchen Sie es erneut.) |ErrorKind.Conflict |
+| {Geschmacksrichtung: "Schokolade", Menge: 100 } |*blank* |„Another user has modified the record that you're trying to modify. (Ein anderer Benutzer hat den Datensatz geändert, den Sie gerade ändern möchten.“) Please reload the record and try again.“ (Laden Sie den Datensatz neu, und versuchen Sie es erneut.) |ErrorKind.Conflict |
 
 Sie können eine Bezeichnung auf dem Formular platzieren, um dem Benutzer diesen Fehler anzeigen.
 

@@ -1,24 +1,24 @@
 ---
 title: Anzeigen, Bearbeiten und Hinzufügen eines Datensatzes aus einer Tabelle in eine Canvas-App | Microsoft-Dokumentation
 description: Mithilfe eines Canvas-App-Formulars können Sie einen Datensatz aus einer Tabelle in der Datenquelle anzeigen, bearbeiten oder hinzufügen.
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/06/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 853f54448b3cf29ebd108299ca69cc96ce51be19
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4a434cd7a8d7eb029200c51fc5c8755946c13f3b
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854811"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798902"
 ---
 # <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Datensatz aus einer Tabelle in PowerApps anzeigen, bearbeiten oder hinzufügen
 

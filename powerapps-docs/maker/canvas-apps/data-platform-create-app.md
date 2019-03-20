@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8b24c9064e5012ff1ddb15d13dc338ed9565bef
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 1393d6dcdd9b88f4bca9e536a776b8601ae4c1c1
+ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49316767"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "57801777"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-for-apps-in-powerapps"></a>Generieren einer Canvas-App aus Common Data Service für Apps in PowerApps
 
@@ -28,7 +28,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Damit Sie diesem Schnellstart folgen können, müssen Sie [zu einer Umgebung wechseln](working-with-environments.md), in der eine Datenbank in CDS für Apps erstellt wurde, die Daten enthält und Updates zulässt. Wenn keine Umgebung dieser Art vorhanden ist, und Sie über Administratorrechte verfügen, können Sie [eine Umgebung erstellen](../../administrator/environments-administration.md#create-an-environment), die diese Anforderungen erfüllt.
+Um diesem Schnellstart folgen zu können, müssen Sie zum zugewiesen werden die [Umgebungsersteller](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles) Sicherheitsrolle, und Sie müssen [zu einer Umgebung wechseln](working-with-environments.md) bei dem eine Datenbank in CDS für Apps erstellt wurde, enthält Daten, und lässt Updates zu. Wenn keine Umgebung dieser Art vorhanden ist, und Sie über Administratorrechte verfügen, können Sie [eine Umgebung erstellen](https://docs.microsoft.com/power-platform/admin/environments-administration.md#create-an-environment), die diese Anforderungen erfüllt.
 
 ## <a name="generate-an-app"></a>Eine App generieren
 

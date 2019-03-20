@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/09/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a45aa397aa65e11ab01e04367d859e11bf552f66
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
+ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43164585"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57802628"
 ---
 # <a name="guid-function-in-powerapps"></a>Funktion „GUID“ in PowerApps
 Konvertiert eine GUID-Zeichenfolge ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier), global eindeutiger Bezeichner) in einen GUID-Wert oder erstellt einen neuen GUID-Wert.
@@ -35,11 +35,7 @@ Wenn Sie kein Argument angeben, erstellt diese Funktion eine neue GUID.
 
 Um einen GUID-Wert in eine Zeichenfolge zu konvertieren, verwenden Sie ihn einfach in einem Zeichenfolgenkontext. Der GUID-Wert wird in eine hexadezimale Darstellungszeichenfolge mit Bindestrichen und Kleinbuchstaben konvertiert. 
 
-> [!NOTE]
-> Zurzeit existiert ein bekannter Fehler, der es ermöglicht, dass GUID-Werte direkt mit Zeichenfolgen verglichen werden.  Verlassen Sie sich nicht auf dieses Verhalten, da es bald geändert wird und dann zu Fehlern führt.  Um eine Zeichenfolge mit einem GUID-Wert zu vergleichen, wandeln Sie die Zeichenfolge zuerst mit der GUID-Funktion in einen GUID-Wert um, und vergleichen Sie dann die GUID-Werte.  Dies normalisiert beide Werte, um einen sauberen Vergleich zu ermöglichen.  Wenn Sie diesen Schritt nicht ausführen, wird der GUID-Wert automatisch in eine Zeichenfolge konvertiert, und der Vergleich hängt von der Formatierung der Zeichenfolge und der Groß- und Kleinschreibung aller Buchstaben in der Zeichenfolge ab.
-
-> [!NOTE]
-> Es gibt zurzeit keine Möglichkeit, einen GUID-Wert in einer Datenbank zu lesen oder zu schreiben.  Die Unterstützung für Common Data Service und SQL Server ist bereits geplant. 
+Wenn Sie eine neue GUID zu generieren, verwendet diese Funktion Pseudozufallszahlen, erstellen Sie eine Version 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID. Beim Konvertieren einer Zeichenfolge in eine GUID, unterstützt diese Funktion eine GUID-Version durch das Akzeptieren einer beliebigen Zeichenfolge 32 Hexadezimalziffern an.
 
 ## <a name="volatile-functions"></a>Veränderliche Funktionen
 **GUID** ist eine veränderliche Funktion, wenn sie ohne Argument verwendet wird. Die Funktion gibt bei jeder Auswertung einen anderen Wert zurück.  
@@ -56,7 +52,6 @@ Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth
 
 ## <a name="syntax"></a>Syntax
 **GUID**( [ *GUIDString* ] )
-
 
 * *GUIDString*: Optional.  Eine Textzeichenfolge, die die hexadezimale Darstellung einer GUID enthält. Wenn keine Zeichenfolge bereitgestellt wird, wird eine neue GUID erstellt.
 

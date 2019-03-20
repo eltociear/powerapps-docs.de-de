@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e469cc3769c8deeb5046dc79f34b9ae42788b2d2
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865172"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073281"
 ---
-# <a name="rich-text-editor-control-experimental-in-powerapps"></a>Rich-Text-Editor-Steuerelement in PowerApps (experimentell)
-Ein experimentelles Steuerelement, über das Benutzer Text innerhalb eines WYSIWYG-Bearbeitungsbereichs formatieren können.  Die Ausgabe erfolgt im HTML-Format.
+# <a name="rich-text-editor-control-in-powerapps"></a>Rich-Text-Editor-Steuerelement in PowerApps
+Ermöglicht Endbenutzern, die zum Formatieren von Text in einem WYSIWYG Bereich für das Bearbeiten.  Die Ausgabe erfolgt im HTML-Format.
 
 ## <a name="description"></a>Beschreibung
 Das **Rich-Text-Editor**-Steuerelement stellt für den App-Benutzer einen WYSIWYG-Bearbeitungsbereich zum Formatieren von Text bereit.  Die Eingaben und Ausgaben des Steuerelements erfolgen im HTML-Format.
@@ -40,20 +40,10 @@ Derzeit werden die folgenden Features unterstützt:
 
 Wenn Sie das Steuerelement innerhalb eines Formulars verwenden möchten, klicken Sie auf die Karte „Mehrzeiligen Text bearbeiten“, und passen Sie dieses an, indem Sie das RTE-Steuerelement einfügen.
 
-## <a name="limitations"></a>Beschränkungen
-Die aktuelle Version des Steuerelements befindet sich aufgrund der folgenden temporären Einschränkungen noch in der Experimentierphase:
-- Das Steuerelement weist eingeschränkte Features zum Formatieren von Text auf.  
-
-- Das Steuerelement ist hauptsächlich für die Verwendung in Browsern auf großen Bildschirmen vorgesehen.  Die Verwendung des Steuerelements auf einem Smartphone kann daher sehr frustrierend sein.
-
-- Bekannte Probleme bei der Erstellung, wenn Windows Studio oder der Edge-Browser verwendet werden.  Derzeit wird empfohlen, Web Studio in Chrome zu verwenden.
-
-
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Standard:](properties-core.md)** Eingabeeigenschaft für den ersten Textwert, der im Editor angezeigt wird.
 
 **HtmlText:** Ausgabeeigenschaft für den entstandenen Rich-Text im HTML-Format.
-
 
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften

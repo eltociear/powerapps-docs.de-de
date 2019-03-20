@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 06/11/2018
+ms.date: 12/17/2018
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 218fb97f6cd523275c0ba296ea120d487cf67e4c
-ms.sourcegitcommit: c26976af24a3e510e4eced78cf5c48cc2f71cae2
+ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
+ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48025669"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57804445"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -29,81 +29,79 @@ Für die in diesem Artikel beschriebenen Schritte benötigen Sie eine einfache L
 > [!NOTE]
 > Wenn die Option **Formulare anpassen** nicht verfügbar ist oder nicht ordnungsgemäß für Ihre Liste ausgeführt wird, enthält diese möglicherweise Datentypen, die [von PowerApps nicht unterstützt werden](connections/connection-sharepoint-online.md#known-issues). Sie können Ihr Formular nicht in eine andere Liste oder [Umgebung](working-with-environments.md) verschieben.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="create-a-list"></a>Erstellen Sie eine Liste
 
-Erstellen Sie eine Liste auf einer SharePoint-Seite, und fügen Sie dann folgende Spalten ein:
+Erstellen Sie eine Liste, und klicken Sie dann fügen Sie diese Spalten in dieser Liste hinzu, auf einer SharePoint-Website:
 
-- **ProductName** (einzeiliger Text)
 - **Details** (ja/nein)
 - **Price** (Währung)
 - **Availability** (Datum ohne Uhrzeit)
 - **Color** (Auswahl)
 
-## <a name="open-the-form-in-powerapps"></a>Öffnen Sie das Formular in PowerApps
+> [!div class="mx-imgBorder"]
+> ![Wählen Sie die Website-Inhalte > Neu > auflisten, geben Sie den Listennamen und select erstellen. Wählen Sie für jede Spalte, Hinzufügen einer Spalte aus, geben Sie den "List" (Ja/Nein, Währung, Datum, Wahl), geben Sie den Listennamen (Details, Preise, Verfügbarkeit, Farbe), und wählen Sie speichern.](./media/customize-list-form/create-list.gif)
 
-1. Öffnen Sie die von Ihnen erstellte Liste, und klicken Sie dann auf der Befehlsleiste auf **Neu**.
+## <a name="open-the-form"></a>Öffnen Sie das Formular
 
-    Das Formular wird mit den von Ihnen hinzugefügten Feldern sowie **Title** und **Attachements** geöffnet.
-
-1. Klicken Sie oben im Formular auf **Anpassen**.
+1. Wählen Sie in der Befehlsleiste **PowerApps**, und wählen Sie dann **Formular anpassen**.
 
     PowerApps Studio wird auf der gleichen Registerkarte im Browser geöffnet.
 
 1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** geöffnet wird, wählen Sie **Überspringen** aus.
 
-## <a name="hide-extra-fields"></a>Ausblenden zusätzlicher Felder
+> [!div class="mx-imgBorder"]
+> ![Klicken Sie auf der Befehlsleiste wählen Sie PowerApps, und wählen Sie dann das Formular anpassen. PowerApps Studio wird auf der gleichen Registerkarte im Browser geöffnet. Wenn die Willkommen bei PowerApps Studio-Dialogfeld geöffnet wird, wählen Sie überspringen.](./media/customize-list-form/create-form.gif)
 
-In der Mitte des Bildschirms zeigt PowerApps Ihr Formular an. Dieses enthält jedoch Felder, die Sie nicht benötigen.
+## <a name="move-and-remove-a-field"></a>Verschieben und Entfernen von Feldern
 
-- Deaktivieren Sie im Bereich **Daten** die Kontrollkästchen für die Felder **Title** (Titel) und **Attachments** (Anlagen).
+1. Ziehen Sie die **Verfügbarkeit** Feld am Ende der Liste der Felder.
 
-    Diese Felder werden im Formular danach nicht mehr angezeigt, sodass Sie nur noch die von Ihnen hinzugefügten Felder sehen.
+    Felder, die in den, die von Ihnen angegebenen Reihenfolge angezeigt werden.
 
-    ![Feldliste](./media/customize-list-form/field-list.png)
+1. Zeigen Sie auf die **Anlagen** Feld, wählen Sie die Auslassungspunkte (...), die angezeigt wird, und wählen Sie dann **entfernen**.
+
+    Das Feld, das Sie angeben, nicht mehr auf das Formular.
+
+> [!div class="mx-imgBorder"]
+> ![Ziehen Sie das Feld für die Verfügbarkeit am Ende der Liste der Felder ein. Zeigen Sie auf das Feld "Anlagen", wählen Sie die Auslassungspunkte (...), die angezeigt wird, und wählen Sie dann auf Entfernen.](./media/customize-list-form/move-remove-fields.gif)
 
 ## <a name="set-conditional-formatting"></a>Festlegen bedingter Formatierung
 
 Sie können die Felder **Price**, **Availability** und **Colors** so konfigurieren, dass sie nur angezeigt werden, wenn **Details** auf „Yes“ (Ja) festgelegt ist.
 
-1. Wählen Sie Karte **Price** (Preis) aus, indem Sie einmal darauf klicken oder tippen.
+1. Erweitern Sie in der linken Navigationsleiste auf **Details_DataCard1**, und notieren Sie sich die Zahl, die am Ende angezeigt **DataCardValue**.
 
-    ![Karte „Price“ auswählen](./media/customize-list-form/select-card.png)
+1. Legen Sie die **Sichtbarkeit** Eigenschaft der **Farbe**, **Verfügbarkeit**, und **Preis** Karten auf diese Formel (ersetzen, falls erforderlich, die wird mit dem Sie im vorherigen Schritt notiert haben):
 
-1. Wählen Sie aus der Eigenschaftenliste **Visible** (Sichtbar) aus.
-
-    ![Eigenschaft „Visible“ auswählen](./media/customize-list-form/select-property.png)
-
-1. Geben Sie in der Formelleiste die folgende Formel ein (oder fügen Sie sie ein):
-
-    **If(DataCardValue3.Value = true, true)**
-
-    ![Wert der visible-Eigenschaft festlegen](./media/customize-list-form/build-formula.png)
-
-1. Führen Sie diese Schritte auch für die Karten **Availability** und **Color** durch.
+    **If(DataCardValue2.Value = true, true)**
 
 1. Halten Sie die ALT-TASTE gedrückt, und tippen oder klicken Sie mehrmals auf den Schalter **Details**.
 
     Die drei von Ihnen konfigurierten Felder werden angezeigt und wieder ausgeblendet.
 
-1. Optional: Sie können Ihr Formular auch weiter anpassen, z.B. wie folgt:
+> [!div class="mx-imgBorder"]
+> ![Beachten Sie in der linken Navigationsleiste auf die Zahl, die am Ende der DataCardValue angezeigt wird. Die Visibility-Eigenschaft, der die Farbe, Verfügbarkeit und Preis Karten auf diese Formel festgelegt. Halten Sie die Alt-Taste gedrückt, und wählen Sie das Detailsteuerelement mehrere Male.](./media/customize-list-form/conditional-format.gif)
 
-    - Ändern Sie die Größe, Ausrichtung oder beides (Sie können das Formular z.B. [breiter machen](set-aspect-ratio-portrait-landscape.md))
-    - Fügen Sie ein Steuerelement hinzu, sodass Benutzer [Anlagen hochladen können](controls/properties-text.md).
-    - Erstellen Sie ein [Nachschlagefeld](sharepoint-lookup-fields.md).
-
-## <a name="save-publish-and-show-the-form"></a>Speichern, veröffentlichen und zeigen Sie das Formular an
+## <a name="save-and-publish-the-form"></a>Speichern Sie und veröffentlichen Sie das Formular
 
 1. Öffnen Sie das Menü **Datei**, klicken Sie auf **Speichern**, und wählen Sie dann zweimal **In SharePoint veröffentlichen**.
 
 1. Klicken Sie in der oberen linken Ecke auf den Zurück-Pfeil, und klicken Sie dann auf **Zurück zu SharePoint**.
 
-1. Klicken Sie auf der Befehlsleiste auf **Neu**, um Ihr angepasstes Formular zu öffnen.
+> [!div class="mx-imgBorder"]
+> ![Öffnen Sie das Menü "Datei", wählen Sie speichern, und wählen Sie dann zweimal auf in SharePoint veröffentlichen. Wählen Sie den zurück-Pfeil, und wählen Sie dann wieder in SharePoint, in der oberen linken Ecke.](./media/customize-list-form/save-form.gif)
 
-1. Klicken Sie mehrmals auf den Schalter **Details**, um die letzten drei Felder ein- oder auszublenden.
+## <a name="further-customize-your-form"></a>Das Formular weiter anpassen
 
-Gehen Sie zum [Anpassen Ihres Formulars](sharepoint-form-integration.md) folgendermaßen vor: Öffnen Sie das Formular, und klicken Sie oben im Formular auf **Anpassen**. Nehmen Sie dann Änderungen vor, und speichern und veröffentlichen Sie diese.
+1. Öffnen Sie die Liste, wählen Sie **neu** im Befehl, und klicken Sie anschließend **anpassen** im oberen Bereich des Formulars.
 
-Wenn Sie mindestens ein Element mit diesem Formular erstellen, ist das Feld **Title** (Titel) leer. Sie können dieses Feld ausblenden, indem Sie die Standardansicht ändern.
+1. Passen Sie Ihr Formular eine Vielzahl von Möglichkeiten, wie z. B. diejenigen, die die folgenden Themen beschreiben:
+
+    - Ändern Sie die Größe, Ausrichtung oder beides (Sie können das Formular z.B. [breiter machen](set-aspect-ratio-portrait-landscape.md))
+    - Fügen Sie ein Steuerelement hinzu, sodass Benutzer [Anlagen hochladen können](controls/properties-text.md).
+    - Erstellen Sie ein [Nachschlagefeld](sharepoint-lookup-fields.md).
+
+    Weitere Informationen finden Sie unter: [Verstehen der Integration von SharePoint-Formularen](sharepoint-form-integration.md)
 
 ## <a name="use-the-default-form"></a>Verwenden des Standardformulars
 
@@ -131,41 +129,41 @@ Wenn Sie mindestens ein Element mit diesem Formular erstellen, ist das Feld **Ti
 
     ![Benutzerdefiniertes Formular löschen](./media/customize-list-form/use-default-sharepoint.png)
 
-## <a name="q--a"></a>Fragen und Antworten
+## <a name="q--a"></a>HÄUFIG GESTELLTE FRAGEN
 
 ### <a name="forms-vs-apps"></a>Vergleich: Formulare und Apps
 
-**F:** Wie unterscheidet sich ein benutzerdefiniertes Formular von einer eigenständigen App, die ich in SharePoint oder PowerApps erstelle?
+**Q:** Wie unterscheidet ein angepasstes Formular in eine eigenständige app, den ich in SharePoint oder PowerApps erstelle?
 
-**A:** Wenn Sie das Formular für eine SharePoint-Liste anpassen, wird das Formular nicht als App in PowerApps Studio oder PowerApps Mobile angezeigt. Sie können das Formular nur über die Liste öffnen, für die es erstellt wurde.
+**A:** Wenn Sie das Formular für eine SharePoint-Liste anpassen, nicht das Formular als app in PowerApps Studio oder PowerApps Mobile angezeigt. Sie können das Formular nur über die Liste öffnen, für die es erstellt wurde.
 
-**F:** Wann sollte ich ein Formular zum Verwalten von Daten in einer SharePoint-Liste anpassen, und wann sollte ich eine eigenständige App erstellen?
+**Q:** Wann sollten Sie ein Formular zum Verwalten von Daten in einer SharePoint-Liste anpassen, und wann sollte ich eine eigenständige app erstellen?
 
-**A:** Passen Sie ein Formular an, wenn Sie möchten, dass Benutzer Daten in SharePoint verwalten (z.B. in einem Desktopbrowser). Erstellen Sie eine App, wenn Sie möchten, dass Benutzer Daten außerhalb von SharePoint verwalten (z.B. auf einem mobilen Gerät).
+**A:** Anpassen eines Formulars an, wenn Sie möchten, dass Ihre Benutzer zum Verwalten von Daten ohne SharePoint (z. B. in einem Desktopbrowser). Erstellen Sie eine App, wenn Sie möchten, dass Benutzer Daten außerhalb von SharePoint verwalten (z.B. auf einem mobilen Gerät).
 
-**F:** Kann ich ein Formular anpassen und für dieselbe Liste eine App erstellen?
-
-**A:** Ja.
-
-**F:** Kann ich eine Liste anpassen und eine App mit den gleichen Features erstellen?
+**Q:** Kann ich Anpassen eines Formulars, und erstellen Sie eine app für die gleiche Liste?
 
 **A:** Ja.
 
-**F:** Kann ich ein Formular in einer anderen Umgebung als der Standardumgebung meiner Organisation anpassen?
+**Q:** Kann ich anpassen eine Liste und erstellen Sie eine app, indem die gleichen Funktionen?
+
+**A:** Ja.
+
+**Q:** Kann ich in meiner Organisation ein Formular in einer anderen Umgebung als standardumgebung anpassen?
 
 **A:** Nein.
 
 ### <a name="manage-your-custom-form"></a>Verwalten des benutzerdefinierten Formulars
 
-**F:** Wie kann ich mein Formular unkompliziert mit anderen teilen?
+**Q:** Wie kann ich mein Formular einfach für andere Benutzer freigeben?
 
-**A:** Öffnen Sie das Formular, klicken Sie auf **Link kopieren**, und schicken Sie den Link an jeden, der das Formular verwenden soll.
+**A:** Öffnen Sie das Formular, wählen Sie **Link kopieren**, und senden Sie dann auf den Link für alle Benutzer das Formular verwendet werden sollen.
 
-**F:** Kann ich ein Formular aktualisieren, ohne dass die Änderungen für andere Personen angezeigt werden?
+**Q:** Kann ich meine Form aktualisieren, ohne dass die Änderungen für andere Benutzer sichtbar?
 
 **A:** Ja. Sie können das Formular so oft ändern und speichern, wie Sie möchten. Die Änderungen werden jedoch erst für andere Benutzer sichtbar, wenn Sie zweimal auf **In SharePoint veröffentlichen** klicken.
 
-**F:** Kann ich eine frühere Version wiederherstellen, wenn mir beim Anpassen eines Listenformulars ein Fehler unterläuft?
+**Q:** Wenn ich ein Listenformular anpassen und ein Fehler unterläuft, kann ich eine frühere Version wiederherstellen?
 
 **A:** Ja.
 
@@ -183,31 +181,31 @@ Wenn Sie mindestens ein Element mit diesem Formular erstellen, ist das Feld **Ti
     > [!NOTE]
     > Wenn Sie die Fehlermeldung erhalten, dass die Wiederherstellung fehlgeschlagen ist, da das Formular von einem anderen Benutzer gesperrt ist, warten Sie, bis der Benutzer das Formular entsperrt, und wiederholen Sie den Vorgang.
 
-**F:** Kann ich mein Formular aus einer Liste in eine andere verschieben?
+**Q:** Kann ich mein Formular aus einer Liste in ein anderes verschieben?
 
 **A:** Nein.
 
 ### <a name="administer-your-custom-form"></a>Verwalten des benutzerdefinierten Formulars
 
-**F:** Wie gebe ich mein Formular frei?
+**Q:** Wie gebe ich mein Formular frei?
 
-**A:** Sie müssen das Formular nicht freigeben – es erbt die Berechtigungen aus der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint), damit es von anderen Benutzern verwendet werden kann.
+**A:** Sie müssen nicht die Form gemeinsam verwenden – das Formular erbt die Berechtigungen aus der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint), damit es von anderen Benutzern verwendet werden kann.
 
-**F:** Wer kann Formulare anpassen?
+**Q:** Wer kann Formulare anpassen?
 
-**A:** Jeder Benutzer mit SharePoint-Berechtigungen zum Verwalten, Entwerfen oder Bearbeiten der zugehörigen Liste.
+**A:** Jeder Benutzer mit SharePoint-Berechtigungen zum Verwalten, entwerfen oder Bearbeiten der zugehörigen Liste.
 
-**F:** Benötige ich eine PowerApps-Lizenz, um benutzerdefinierte Listenformulare zu erstellen und zu verwenden?
+**Q:** Benötige ich eine PowerApps-Lizenz zum Erstellen oder verwenden benutzerdefinierte Listenformulare?
 
-**A:** Sie benötigen [einen Office 365-Plan, der PowerApps beinhaltet](../../administrator/pricing-billing-skus.md#licenses).
+**A:** Sie müssen eine [Office 365-Plan, der PowerApps umfasst](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses).
 
-**F:** Was geschieht, wenn Gastbenutzer auf eine Liste zuzugreifen, die ein benutzerdefiniertes Formular aufweist?
+**Q:** Was geschieht, wenn der Gastbenutzer die Möglichkeit, eine Liste zuzugreifen, die ein benutzerdefiniertes Formular aufweist?
 
-**A:** Gastbenutzer erhalten eine Fehlermeldung, wenn sie versuchen, auf ein Listenformular zuzugreifen, das mit PowerApps angepasst wurde.
+**A:** Gastbenutzer erhalten eine Fehlermeldung angezeigt, wenn sie versuchen, ein Listenformular zuzugreifen, die mit PowerApps angepasst wurde.
 
-**F:** Wie erhalte ich als Administrator eine Liste aller benutzerdefinierten Formulare in meiner Organisation?
+**Q:** Als Administrator wie erhalte eine Liste aller benutzerdefinierten Formulare in meiner Organisation ich?
 
-**A:** Wenn Sie ein Mandantenadministrator für PowerApps sind oder über Umgebungsadministratorberechtigungen für die PowerApps-Standardumgebung Ihrer Organisation verfügen, gehen Sie wie folgt vor:
+**A:** Wenn Sie ein mandantenadministrator für PowerApps oder Sie die Umgebung-Administratorberechtigungen auf den PowerApps-standardumgebung Ihrer Organisation haben, führen Sie folgende Schritte aus:
 
 1. Wählen Sie im [PowerApps Admin Center](https://admin.powerapps.com) in der Liste der Umgebungen die Standardumgebung für Ihre Organisation aus.
 

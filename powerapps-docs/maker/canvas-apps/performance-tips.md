@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
-ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
-ms.translationtype: HT
+ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247584"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801961"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimieren der Leistung von Canvas-Apps in PowerApps
 Microsoft arbeitet beständig daran, die Leistung aller Apps zu verbessern, die auf der PowerApps-Plattform ausgeführt werden. Sie können aber die Best Practices in diesem Thema befolgen, um die Leistung der von Ihnen erstellten Apps noch weiter zu steigern.
@@ -65,7 +65,7 @@ Sie können diese Formel in die **Concurrent**-Funktion einschließen, um die ge
         
 Mit dieser Änderung ruft die App die Tabellen parallel ab: 
 
-![ClearCollect, parallele Ausführung](./media/performance-tips/perfconcurrent2.png)  
+![Parallele ClearCollect](./media/performance-tips/perfconcurrent2.png)  
 
 ## <a name="cache-lookup-data"></a>Zwischenspeichern von Suchdaten
 Verwenden Sie die **Set**-Funktion, um Daten aus Nachschlagetabellen lokal zwischenzuspeichern und so ein wiederholtes Abrufen von Daten aus der Quelle zu vermeiden. Diese Technik optimiert die Leistung, wenn sich die Daten während einer Sitzung voraussichtlich nicht ändern. Wie in diesem Beispiel werden die Daten einmal aus der Quelle abgerufen. Danach wird lokal auf die Daten verwiesen, bis der Benutzer die App schließt. 
@@ -101,3 +101,15 @@ Verwenden Sie Datenquellen und Formeln, die delegiert werden können, um die Lei
 
 ## <a name="republish-apps-regularly"></a>Regelmäßiges erneutes Veröffentlichen von Apps
 Veröffentlichen Sie Ihre Apps neu, um Leistungssteigerungen zu erzielen und von weiteren Features der PowerApps-Plattform zu profitieren. Informationen dazu finden Sie im Blogbeitrag [Republish your apps](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/).
+
+## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>Vermeiden Sie die gleiche Formel an mehreren Orten wiederholen
+Wenn mehrere Eigenschaften ausführen, die gleiche Formel (insbesondere, wenn es komplexe ist), sollten Sie Sie einmal festgelegt, und klicken Sie dann auf die Ausgabe der ersten Eigenschaft in dem alle weiteren verweisen. Z.B. festlegen, nicht die **"DisplayMode"** Eigenschaft von Steuerelementen, die auf die gleiche Formel für die komplexe A, B, C, D und E. Legen Sie stattdessen eine der **"DisplayMode"** Eigenschaftensatz auf die komplexen Formel B **"DisplayMode"** Eigenschaft, um das Ergebnis des A **"DisplayMode"** Eigenschaft, und so weiter für C, D und E.
+
+## <a name="enable-delayoutput-on-all-text-input-controls"></a>DelayOutput auf alle Texteingabe-Steuerelemente aktivieren
+Wenn Sie mehrere Formeln oder Regeln, die den Wert von Verweisen auf eine **Texteingabe** steuern, legen Sie die **DelayedOutput** Eigenschaft dieses Steuerelements auf "true". Die **Text** Eigenschaft dieses Steuerelements aktualisiert werden, erst nach Tasteneingaben in schneller Folge nicht mehr gegeben. Die Formeln oder Regeln nicht so häufig ausgeführt, und app-Leistung wird verbessert.
+
+## <a name="avoid-using-formupdates-in-rules-and-formulas"></a>Vermeiden Sie die Verwendung von Form.Updates in Regeln und Formeln
+Wenn Sie eine Benutzereingabe-Wert in einer Regel oder eine Formel mit Verweisen auf eine **Form.Updates** Variablen, es Datenkarten des Formulars durchläuft und ein Datensatz erstellt jedes Mal. Um Ihre app effizienter zu gestalten, verweisen Sie den Wert direkt aus der Daten oder die Control-Wert.
+
+## <a name="next-steps"></a>Nächste Schritte
+Überprüfen Sie die [Codierungsstandards](https://aka.ms/powerappscanvasguidelines) zum Maximieren der Leistung der app und Beibehalten von apps einfacher zu verwalten.

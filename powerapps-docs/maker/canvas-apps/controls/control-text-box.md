@@ -13,21 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8cb7bdfa995d2289f881b6d21074efd6cf11ac4
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640398"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802007"
 ---
-# <a name="label-control-in-powerapps"></a>Label-Steuerelement (Bezeichnung) in PowerApps
+# <a name="label-control-in-canvas-apps"></a>Label-Steuerelement in canvas-apps
+
 Ein Feld, das Daten wie Text, Zahlen, Datumsangaben oder Währung anzeigt.
 
 ## <a name="description"></a>Beschreibung
+
 Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, das genauso angezeigt wird, wie Sie es eingeben, oder als Formel, die zu einer Textzeichenfolge ausgewertet wird. Bezeichnungen werden häufig außerhalb anderer Steuerelemente (z.B. als Banner, das einen Bildschirm identifiziert), als Bezeichnung für die Identifizierung eines anderen Steuerelements (z.B. ein Bewertungs- oder Audiosteuerelement) oder in einer Galerie angezeigt, um einen bestimmten Typ von Information zu einem Element anzuzeigen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[AutoHeight](properties-core.md)**: Durch Festlegen auf TRUE kann die Größe der Bezeichnung automatisch erhöht werden, um den gesamten konfigurierten Text anzuzeigen. Durch Festlegen auf FALSE wird der Text auf die zugewiesene Größe abgeschnitten.
+
+**[AutoHeight](properties-core.md)**  : durch Festlegen auf "true", um die Bezeichnung auf den gesamten Text werden, um automatische Vergrößerung zu ermöglichen. Durch Festlegen auf FALSE wird der Text auf die zugewiesene Größe abgeschnitten.
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
@@ -38,6 +41,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 **[DelayOutput](properties-core.md)**: Durch Festlegen auf TRUE wird eine Aktion während der Texteingabe verzögert.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+
 **[Align](properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.
 
 **AutoHeight**: Gibt an, ob die **[Height](properties-size-location.md)**-Eigenschaft einer Bezeichnung automatisch erhöht wird, wenn ihre **[Text](properties-core.md)**-Eigenschaft mehr Zeichen enthält, als das Steuerelement gleichzeitig anzeigen kann.
@@ -62,7 +66,7 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
+**[FontWeight](properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -76,7 +80,11 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 
 **[LineHeight](properties-text.md)**: Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
-**Live**: Gibt an, wie die Sprachausgabe Änderungen am Bezeichnungstext ankündigt.  Mögliche Werte: **Off**, **Assertive** und **Polite**. Diese Eigenschaft ist nützlich, um dynamische Änderungen an der Benutzeroberfläche der App barrierefrei anzukündigen.
+**[Live](properties-accessibility.md)**  : wie eine Bildschirmsprachausgabe Änderungen des Werts, der die Bezeichnung kündigt **Text** Eigenschaft.
+
+* Bei Festlegung auf **aus**, die Sprachausgabe keine Änderungen bekanntgeben zu können.
+* Bei Festlegung auf **Polite**, die Sprachausgabe abgeschlossen ist, das halten öffentlicher Vorträge Ankündigung: Änderungen, die beim Ausführen die Sprachausgabe gesprochen habe.
+* Bei Festlegung auf **Assertive**, die Sprachausgabe von Hardwareinterrupts benötigt hat sich alle Änderungen, die aufgetreten sind, während die Sprachausgabe gesprochen habe, ankündigen zu können.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -95,6 +103,8 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 **[PressedColor](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
+
+**Rolle** -die semantischen Rolle der Text der Bezeichnung, z. B. Überschrift 1. Das Format der Bezeichnung ändert sich nicht, aber macht die Ausgabe für die Interpretation von der Sprachausgabe semantisch richtige.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
@@ -119,15 +129,19 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
+
 [**Text**( *Zahl*, "*CodesFormatieren*" )](../functions/function-text.md)
 
 ## <a name="examples"></a>Beispiele
+
 ### <a name="show-a-literal-string"></a>Anzeigen eines Zeichenfolgenliterals
+
 * Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](properties-core.md)**-Eigenschaft auf **"Hello, world"** fest (einschließlich der doppelten Anführungszeichen).
   
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 ### <a name="show-the-result-of-a-formula"></a>Anzeigen des Ergebnisses einer Formel
+
 * Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](properties-core.md)**-Eigenschaft auf eine Formel wie diese fest:<br>
   **Today()**
   
@@ -137,38 +151,45 @@ Eine Bezeichnung zeigt Daten an, die Sie als Textzeichenfolgenliteral angeben, d
     Benötigen Sie weitere Informationen zur **[Today](../functions/function-now-today-istoday.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
 ### <a name="show-data-in-a-gallery"></a>Anzeigen von Daten in einem Katalog
+
 In diesem Verfahren erstellen Sie eine Sammlung mit dem Namen **CityPopulations**, die Daten über die Bevölkerung verschiedener Städte in Europa enthält. Als Nächstes zeigen Sie diese Daten in einem Katalog an, der drei Bezeichnungen enthält, und geben den Datentyp an, der in jeder Bezeichnung angezeigt wird.
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](properties-core.md)** auf diese Formel fest:<br>
    **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. Drücken Sie F5, wählen Sie die Schaltfläche aus, und drücken Sie dann die ESC-TASTE.
 3. Fügen Sie einen Textkatalog hinzu, und legen Sie dessen **[Items](properties-core.md)**-Eigenschaft auf **CityPopulations** fest.
-   
+
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 4. Legen Sie im Bereich **Gallery1** die obere Liste auf **Population**, die mittlere Liste auf **City** und die untere Liste auf **Country** fest.
 
-
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+
 Ein **Bezeichnungs**-Steuerelement wird nicht ausschließlich als Bezeichnung für ein anderes Steuerelement verwendet. Es kann auch verwendet werden, um ein beliebiges Textfragment anzuzeigen.
 
 Außerdem kann es als Schaltfläche oder Link verwendet werden, indem **[OnSelect](properties-core.md)**-Verhalten angegeben wird. Wenn das Steuerelement auf diese Weise verwendet wird, gelten ähnliche Aspekte im Hinblick auf die Barrierefreiheit wie bei Schaltflächen.
 
 ### <a name="color-contrast"></a>Farbkontrast
+
 Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+
 * **[Color](properties-color-border.md)** und **[Fill](properties-color-border.md)**
 * Es gelten die [Standardanforderungen für Farbkontraste](../accessible-apps-color.md), wenn das Steuerelement als Schaltfläche oder Link verwendet wird.
 
-### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+### <a name="screen-reader-support"></a>Sprachausgabeunterstützung
 
-    > [!NOTE]
+* Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+* **[Live](properties-accessibility.md)**  sollte festgelegt werden, um **Polite** oder **Assertive** , wenn eine Sprachausgabe Änderungen an den Wert der ankündigen sollte die **Text** Eigenschaft.
+
+  > [!NOTE]
   > **Bezeichnungen** werden von der Sprachausgabe als Schaltflächen angesehen, wenn **[TabIndex](properties-accessibility.md)** gleich 0 oder größer ist.
 
 ### <a name="low-vision-support"></a>Unterstützte Anpassungen für Menschen mit Sehbehinderungen
+
 * Wenn eine **Bezeichnung** als Link verwendet wird, sollte diese auch wie ein Link aussehen.
-    * Legen Sie **[Underline](properties-text.md)** (Unterstrichen) auf **TRUE** fest.
-    * **[HoverColor](properties-color-border.md)** sollte sich von **[Color](properties-color-border.md)** unterscheiden.
+  * Legen Sie **[Underline](properties-text.md)** (Unterstrichen) auf **TRUE** fest.
+  * **[HoverColor](properties-color-border.md)** sollte sich von **[Color](properties-color-border.md)** unterscheiden.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
+
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, wenn der Text als Schaltfläche oder Link verwendet wird. So können Benutzer per Tastatur dorthin navigieren.
 * Fokusindikatoren müssen übersichtlich angezeigt werden, wenn der Text als Schaltfläche oder Link verwendet wird. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.

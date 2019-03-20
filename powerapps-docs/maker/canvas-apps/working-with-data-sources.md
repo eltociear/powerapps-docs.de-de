@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51b7cde36a70001ff8545c497da7c4b4d5d1fa3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9e31ae7600663daa694b46376008161502c9c428
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833909"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803410"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Grundlegendes zu Datenquellen für Canvas-Apps in PowerApps
 
@@ -80,13 +80,13 @@ Datenquellen einer Sammlung *können* innerhalb einer App erstellt und geändert
 * Die Informationen werden gespeichert und über einen Speicherdienst geteilt (in diesem Fall eine SharePoint-Liste einer Office 365-Website).
 * Eine Verbindung stellt diese Informationen der App zur Verfügung.  Die Verbindung übernimmt die Authentifizierung des Benutzers, der auf die Informationen zugreift.
 * Wenn die App gestartet wird oder die **[Refresh](functions/function-refresh.md)**-Funktion gedrückt wird, werden Informationen zur lokalen Verwendung aus der Verbindung in eine Datenquelle in der App geholt.
-* Formeln werden verwendet, um die Informationen zu lesen und sie in Steuerelementen verfügbar zu machen, die der Benutzer sehen kann. Sie können die Datensätze einer Datenquelle anzeigen, indem Sie einen Katalog auf einem Formular verwenden und die **[Items](controls/properties-core.md)**-Eigenschaft mit der Datenquelle verknüpfen: **Gallery.Items = DataSource**.  Sie verknüpfen Steuerelemente innerhalb des Katalogs mit dem Katalog, indem Sie die **[Default](controls/properties-core.md)**-Eigenschaft der Steuerelemente verwenden.  
+* Formeln werden verwendet, um die Informationen zu lesen und sie in Steuerelementen verfügbar zu machen, die der Benutzer sehen kann. Sie können die Datensätze einer Datenquelle anzeigen, indem Sie einen Katalog auf einem Bildschirm an und Verknüpfen mit der **[Elemente](controls/properties-core.md)** Eigenschaft mit der Datenquelle: **Gallery.Items = DataSource**.  Sie verknüpfen Steuerelemente innerhalb des Katalogs mit dem Katalog, indem Sie die **[Default](controls/properties-core.md)**-Eigenschaft der Steuerelemente verwenden.  
 * Die Datenquelle ist auch eine Tabelle.  Sie können also **[Filter](functions/function-filter-lookup.md)**, **[Sort](functions/function-sort.md)**, **[AddColumns](functions/function-table-shaping.md)** und andere Funktionen verwenden, um die Datenquelle zu optimieren und zu erweitern, bevor Sie sie als Ganzes verwenden.  Sie können auch **[Lookup](functions/function-filter-lookup.md)**, **[First](functions/function-first-last.md)**, **[Last](functions/function-first-last.md)** und andere Funktionen zur Arbeit mit einzelnen Datensätzen verwenden.
 
 ### <a name="modify-a-record"></a>Ändern eines Datensatzes
-Im vorherigen Abschnitt haben Sie gesehen, wie eine Datenquelle gelesen wird.  Beachten Sie, dass die Pfeile in der Abbildung oben unidirektional sind.  Änderungen an einer Datenquelle werden nicht mithilfe von Push über die gleichen Formeln zurückgeleitet, über die die Daten abgerufen wurden.  Stattdessen werden neue Formeln verwendet.  Häufig wird zum Bearbeiten eines Datensatzes ein anderes Formular als zum Durchsuchen von Datensätzen verwendet, vor allem auf einem mobilen Gerät.
+Im vorherigen Abschnitt wurde erläutert, wie eine Datenquelle zu lesen.  Beachten Sie, dass die Pfeile in der Abbildung oben unidirektional sind.  Änderungen an einer Datenquelle werden nicht mithilfe von Push über die gleichen Formeln zurückgeleitet, über die die Daten abgerufen wurden.  Stattdessen werden neue Formeln verwendet.  Häufig wird zum Bearbeiten eines Datensatzes ein anderes Formular als zum Durchsuchen von Datensätzen verwendet, vor allem auf einem mobilen Gerät.
 
-Beachten Sie, dass zum Ändern eines vorhandenen Datensatzes einer Datenquelle der Datensatz ursprünglich aus der Datenquelle stammen muss.  Der Datensatz kann durch einen Katalog, eine [Kontextvariable](working-with-variables.md#create-a-context-variable) und eine beliebige Anzahl von Formeln gegangen sein, aber sein Ursprung sollte zur Datenquelle zurückverfolgt werden können.  Dies ist wichtig, da zusätzliche Informationen mit dem Datensatz übertragen werden, durch die er eindeutig identifiziert werden kann, um sicherzustellen, dass Sie den richtigen Datensatz ändern.    
+Beachten Sie, dass zum Ändern eines vorhandenen Datensatzes einer Datenquelle der Datensatz ursprünglich aus der Datenquelle stammen muss.  Der Datensatz kann durch einen Katalog, eine [Kontextvariable](working-with-variables.md#use-a-context-variable) und eine beliebige Anzahl von Formeln gegangen sein, aber sein Ursprung sollte zur Datenquelle zurückverfolgt werden können.  Dies ist wichtig, da zusätzliche Informationen mit dem Datensatz übertragen werden, durch die er eindeutig identifiziert werden kann, um sicherzustellen, dass Sie den richtigen Datensatz ändern.    
 
 ![](media/working-with-data-sources/writing-to-a-datasource.png) Das obige Diagramm zeigt den Informationsfluss zum Aktualisieren einer Datenquelle:
 

@@ -1,24 +1,24 @@
 ---
 title: Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards | Microsoft-Dokumentation
 description: In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI-Dienst. Anschließend wird auf der Grundlage des Berichts ein Dashboard erstellt.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5a39ec04015fe360bc550d9ea4f708d887ba34c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833872"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799362"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42833872"
 
 In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI-Dienst. Anschließend wird auf der Grundlage des Berichts ein Dashboard erstellt. Ein Bericht enthält häufig eine große Anzahl von Visualisierungen, und im Dashboard wird lediglich eine Teilmenge davon verwendet. In diesem Fall werden dem Dashboard alle vier Visualisierungen hinzugefügt.
 
-## <a name="step-1-publish-the-dataset-and-report"></a>Schritt 1: Veröffentlichen des Datasets und des Berichts
+## <a name="step-1-publish-the-dataset-and-report"></a>Schritt 1: Veröffentlichen Sie das Dataset und den Bericht
 1. Klicken oder tippen Sie in Power BI Desktop auf der Registerkarte **Start** auf **Veröffentlichen**.
    
     ![Veröffentlichen des Datasets und des Berichts](./media/sharepoint-scenario-publish-report/06-01-01-publish.png)

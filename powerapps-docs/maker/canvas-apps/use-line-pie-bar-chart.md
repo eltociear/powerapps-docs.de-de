@@ -1,24 +1,24 @@
 ---
 title: Erstellen eines Diagramms in einer Canvas-App | Microsoft-Dokumentation
 description: Anzeigen von Datenkategorien als Linien-, Kreis- oder Balkendiagramme in einer Canvas-App in PowerApps
-author: lonu
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
-ms.author: lonu
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 142bb0e19fb8b9647c1808dcca10e781c4f69d4a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 0b710346c5e264fc13ee3cacb00073a32a4de0f0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862033"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799684"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Anzeigen von Daten in einem Linien-, Kreis- oder Balkendiagramm in PowerApps
 
@@ -65,7 +65,7 @@ In den folgenden Schritten importieren wir die Beispieldaten in eine Sammlung mi
    > Das Import-Steuerelement wird zum Importieren von Excel-ähnlichen Daten und zum Erstellen der Sammlung verwendet. Das Importsteuerelement importiert Daten, wenn Sie Ihre App erstellen und eine Vorschau der App anzeigen. Das Import-Steuerelement importiert derzeit keine Daten, wenn Sie Ihre App veröffentlichen.
    >
 
-6. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+6. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="add-a-pie-chart"></a>Hinzufügen eines Kreisdiagramms
 1. Wählen Sie auf der Registerkarte **Einfügen** **Diagramme** und anschließend **Kreisdiagramm** aus.

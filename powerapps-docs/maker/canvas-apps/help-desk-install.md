@@ -1,37 +1,37 @@
 ---
 title: Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3945bc2e164d9fa88ee122910d3e15371b9e239e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834622"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799845"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
 
 Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Help Desk“ für Canvas-Apps in PowerApps.
 
-Geschätzte Dauer: **10–15 Minuten**.
+Geschätzte Dauer: **10–15 Minuten**
 
 > [!TIP]
 > Eine Demonstration dieses Vorgangs finden Sie in diesem [Video](https://youtu.be/z4cdtD6hB_4).
 
 ## <a name="overview-of-the-sample"></a>Übersicht über das Beispiel
 
-Help Desk stellt eine benutzerfreundliche Oberfläche bereit, auf der Endbenutzer Supportexperten kontaktieren können. Hier finden Sie schnell Antworten auf Ihre wichtigsten Fragen und können den Status von offenen Tickets nachverfolgen sowie die Einzelheiten früherer Anfragen nachlesen. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
+Helpdesk stellt ein benutzerfreundliches Verfahren zum Endbenutzer Supportexperten kontaktieren. Schnell finden Sie Antworten auf Ihre drängendsten Fragen, Nachverfolgen Sie des Status von offenen Tickets und überprüfen Sie die Einzelheiten früherer Anfragen. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
 
 ![Startbildschirm der PowerApps-App „Help Desk“](./media/help-desk-install/Login-screen.png)
 
@@ -100,7 +100,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 3. Klicken Sie in der Optionsfeldliste **Type of information in this column is** (Der Informationstyp dieser Spalte ist) auf **Auswahl**.
 4. Geben Sie im Textfeld **Geben Sie jede Auswahl in einer neuen Zeile ein** die folgenden Werte jeweils in einer neuen Zeile ein: 
     - HOCH
-    - MITTEL (mittlere Nutzungsdauer)
+    - MITTEL
     - NIEDRIG
 5. Wählen Sie in der Optionsfeldliste **Eindeutige Werte erzwingen** den Wert **Nein** aus.
 6. Wählen Sie in der Optionsfeldliste **Auswahl anzeigen durch** den Wert **Dropdownmenü** aus.

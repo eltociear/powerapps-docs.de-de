@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 119b7e6ff590f63ad938016c5f0127f5d6521d65
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834380"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57801938"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>Erstellen barrierefreier Canvas-Apps in PowerApps
 Eine barrierefreie Canvas-App kann von Benutzern mit Sehschwäche, Gehörschädigung und anderen Beeinträchtigungen erfolgreich verwendet werden.  Die nachfolgenden Richtlinien sind nicht nur für viele Behörden und Organisationen verpflichtend, sie erhöhen zudem die Verwendbarkeit für alle Benutzer, unabhängig von ihren Fähigkeiten.
@@ -38,16 +38,16 @@ Ein allgemeingültiger und unkomplizierter Entwurf sorgt für eine einfachere Be
 Stellen Sie beim Testen der Barrierefreiheit Ihrer App sicher, dass die App auch über die Tastatur und in den Bedienungshilfemodi von iOS und Android verwendet werden kann und dass die Navigation mit aktivierter Sprachausgabe erfolgreich durchführbar ist.
 
 Stellen Sie bei der Tastaturnavigation (mit und ohne Sprachausgabe) sicher, dass bei Verwendung der TAB-TASTE zum Durchlaufen der Eingabefelder eine logische Abfolge eingehalten wird, indem Sie die Eigenschaft **[TabIndex](controls/properties-accessibility.md)** der einzelnen Steuerelemente festlegen:
-- Steuerelemente „Bezeichnung“, „Bild“, „Symbol“, „Form“: Wenn sie interaktive Elemente (z.B. Schaltflächen) darstellen, legen Sie TabIndex auf 0 fest. Wenn sie dekorative Elemente oder Text darstellen, legen Sie TabIndex auf -1 fest.
+- Symbol "Bezeichnung", "Image", Shape-Steuerelement – Wenn sie interaktive Elemente (z.B. Schaltflächen) darstellen legen Sie TabIndex auf 0; Wenn sie dekorative Elemente oder Text sind, können Sie TabIndex auf-1 festgelegt.
 - Vermeiden Sie das Festlegen von TabIndex auf einen höheren Wert als null.
 
 ## <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 Die folgenden Softwarekombinationen zeigen die unterstützten Empfehlungen für die Nutzung von PowerApps mit Sprachausgabe:
 
-- **Windows**: Microsoft Edge/Sprachausgabe
-- **macOS**: Safari/VoiceOver
-- **Android**: PowerApps-App/TalkBack
-- **iOS**: PowerApps-App/VoiceOver
+- **Windows**: Microsoft Edge / Sprachausgabe
+- **macOS**: Safari / VoiceOver
+- **Android**: PowerApps-app / Talkback
+- **iOS**: PowerApps-app / VoiceOver
 
 Um für die Sprachausgabe ein zufriedenstellendes Ergebnis sicherzustellen, wird Folgendes empfohlen:
 
@@ -58,7 +58,7 @@ Um für die Sprachausgabe ein zufriedenstellendes Ergebnis sicherzustellen, wird
 
 
 ## <a name="multimedia"></a>Multimedia
-Stellen Sie sicher, dass alle Videos mit Untertiteln versehen und Abschriften aller Audioaufnahmen für den Benutzer verfügbar sind.  Das Steuerelement **Video** unterstützt Untertitel im WebVTT-Format über die Eigenschaft **ClosedCaptionsUrl**.
+Stellen Sie sicher, dass alle Videos mit Untertiteln versehen und Abschriften aller Audioaufnahmen für den Benutzer verfügbar sind.  **Video** -Steuerelement unterstützt Untertitel im WebVTT-Format über die **ClosedCaptionsUrl** Eigenschaft.
 
 Beachten Sie, dass der **Timer** bei aktivierter Sprachausgabe nicht den Schaltflächentext, sondern die verstrichene Zeit angibt.  Die Ankündigungen können auch dann nicht deaktiviert werden, wenn der Timer durch niedrige Deckkraft ausgeblendet wurde.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 278560c1ececafd6d4c57945d6058879cf55170f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
+ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858311"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031352"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -36,7 +36,7 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Items](properties-core.md)** – Die Quelle der Daten, aus der Elemente ausgewählt werden können.
 
-**DefaultItems** – Die ursprünglich ausgewählten Elemente, bevor der Benutzer mit dem Steuerelement interagiert.
+**DefaultSelectedItems** – die ursprünglich ausgewählten Elemente aus, bevor der Benutzer mit dem Steuerelement interagiert.
 
 **SelectedItems** – Die Liste der aufgrund der Benutzerinteraktion ausgewählten Elemente.
 
@@ -54,8 +54,6 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 **[BorderStyle](properties-color-border.md)** – Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
-
-**[Default](properties-core.md)** – Die ursprüngliche Auswahl, bevor sie vom Benutzer im Einzelauswahlmodus geändert wird.
 
 **DisplayFields** – Die Liste der Felder, die für jedes von der Suche zurückgegebene Element angezeigt werden.  Diese Eigenschaft lässt sich am einfachsten im Bereich „Daten“ der Optionsregisterkarte „Eigenschaften“ konfigurieren.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf656c33bcfdc0114c1ff44936dd38fc7145158e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857083"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803617"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 Ändern, welcher Bildschirm angezeigt wird
@@ -28,7 +28,7 @@ Die meisten Apps umfassen mehrere Bildschirme.  Verwenden Sie die Funktionen **B
 
 Die Funktionen **Back** und **Navigate** ändern nur, welcher Bildschirm angezeigt wird. Bildschirme, die momentan nicht angezeigt werden, werden weiterhin im Hintergrund ausgeführt. Sie können Formeln erstellen, die sich auf Eigenschaften von Steuerelementen auf einem anderen Bildschirm beziehen. Beispielsweise kann ein Benutzer den Wert des Schiebereglers auf einem Bildschirm ändern, zu einem anderen Bildschirm navigieren, der diesen Wert in einer Formel verwendet, und sehen, wie sich dies darauf auswirkt, was auf dem neuen Bildschirm geschieht.  Der Benutzer kann dann wieder zum ursprünglichen Bildschirm zurück navigieren und sehen, dass der Wert des Schiebereglers beibehalten wurde.
 
-[Kontextvariablen](../working-with-variables.md#create-a-context-variable) werden ebenfalls beibehalten, wenn ein Benutzer zwischen Bildschirmen navigiert. Sie können **Navigate** verwenden, um eine oder mehrere Kontextvariablen für den Bildschirm festzulegen, den die Formel anzeigen wird. Dies ist die einzige Möglichkeit, von außerhalb des Bildschirms eine Kontextvariable festzulegen. Sie können diesen Ansatz verwenden, um Parameter an einen Bildschirm zu übergeben. Wenn Sie ein anderes Programmiertool verwendet haben, ähnelt diese Vorgehensweise der Übergabe von Parametern an Prozeduren.
+[Kontextvariablen](../working-with-variables.md#use-a-context-variable) werden ebenfalls beibehalten, wenn ein Benutzer zwischen Bildschirmen navigiert. Sie können **Navigate** verwenden, um eine oder mehrere Kontextvariablen für den Bildschirm festzulegen, den die Formel anzeigen wird. Dies ist die einzige Möglichkeit, von außerhalb des Bildschirms eine Kontextvariable festzulegen. Sie können diesen Ansatz verwenden, um Parameter an einen Bildschirm zu übergeben. Wenn Sie ein anderes Programmiertool verwendet haben, ähnelt diese Vorgehensweise der Übergabe von Parametern an Prozeduren.
 
 ## <a name="description"></a>Beschreibung
 ### <a name="back"></a>Back

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3d80c2bafb36bf4437a9c37541f5bb56945f3b4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851320"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802306"
 ---
 # <a name="iferror-function-in-powerapps"></a>IfError-Funktion in PowerApps
 Erkennt Fehler und stellt einen Alternativwert bereit oder führt eine Aktion aus.
@@ -39,7 +39,7 @@ Wenn alle Argumente für **IfError** zu einem Fehler führen, wird der Wert des 
 **IfError**( *Wert*, *Ausweichformel1* [, *Ausweichformel2*, ... ] )
 
 * *Value*: Erforderlich. Ein oder mehrere Formeln, die auf einen Fehlerwert geprüft werden. 
-* *Ausweichformel(n)*: erforderlich. Die auszuwertenden Formeln und zurückzugebenden Werte, wenn für vorherige Argumente ein Fehler zurückgegeben wurde.  Die *Ausweichargumente* werden nacheinander ausgewertet, bis ein Wert gefunden wird, der kein Fehlerwert ist.
+* *Ausweichformel(n)*: erforderlich. Die auszuwertenden Formeln und zurückzugebenden Werte, wenn für vorherige Argumente ein Fehler zurückgegeben wurde.  *Fallback* Argumente werden ausgewertet, in der Reihenfolge, bis zu dem Punkt, die ein Fehlerwert Wert gefunden wird.
 
 ## <a name="examples"></a>Beispiele
 

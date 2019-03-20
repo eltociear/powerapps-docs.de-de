@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 056c5e1142b3a34776e72f788f5b2cef9e3b2a27
-ms.sourcegitcommit: 3dc330d635aaf5bc689efa6bd39826d6e396c832
-ms.translationtype: HT
+ms.openlocfilehash: 7b0701c9fcf7033ab8d57bb039972ce63c8faf29
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48875897"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802398"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Die Funktionen „AddColumns“, „DropColumns“, „RenameColumns“ und „ShowColumns“ in PowerApps
 Formen eine [Tabelle](../working-with-tables.md) durch Hinzufügen, Verwerfen, Umbenennen und Auswählen der [Spalten](../working-with-tables.md#columns)
@@ -30,9 +30,12 @@ Diese Funktionen formen eine Tabelle, indem sie deren Spalten anpassen:
 * Fügen Sie einer Tabelle eine berechnete Spalte hinzu (z.B. die Spalte **Gesamtpreis**, die das Ergebnis der Multiplikation von **Quantität** und **Stückpreis** anzeigt).
 * Geben Sie einer Spalte für die Benutzer oder die Verwendung in Formeln einen aussagekräftigeren Namen.
 
-Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahlen.  Sie können eine Tabelle als Argument in einer Formel angeben, und Formeln können eine Tabelle als Ergebnis zurückgeben. Die in diesem Thema beschriebenen Funktionen ändern eine Tabelle nicht. Stattdessen nehmen sie eine Tabelle als Argument und geben eine neue Tabelle mit einer angewendeten Transformation zurück.  Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).  
+Tabellen stellen in PowerApps einen Wert dar, genau wie Zeichenfolgen oder Zahlen.  Sie können eine Tabelle als Argument in einer Formel angeben, und Formeln können eine Tabelle als Ergebnis zurückgeben.
 
-Die Spalten einer [Datenquelle](../working-with-data-sources.md) können durch diese Funktionen nicht geändert werden. Daten müssen an ihrer Quelle geändert werden. Sie können einer [Sammlung](../working-with-data-sources.md#collections) mit der **[Collect](function-clear-collect-clearcollect.md)** -Funktion Spalten hinzufügen.  Weitere Informationen finden Sie unter [Arbeiten mit Datenquellen](../working-with-data-sources.md).  
+> [!NOTE]
+> Die Funktionen, die in diesem Thema wird beschrieben, ändern Sie nicht die ursprüngliche Tabelle. Stattdessen nehmen diese Tabelle als Argument und geben Sie eine neue Tabelle mit einer angewendeten Transformation zurück. Weitere Details erfahren Sie unter [Arbeiten mit Tabellen](../working-with-tables.md).  
+
+Die Spalten einer [Datenquelle](../working-with-data-sources.md) können durch diese Funktionen nicht geändert werden. Daten müssen an ihrer Quelle geändert werden. Sie können einer [Sammlung](../working-with-data-sources.md#collections) mit der **[Collect](function-clear-collect-clearcollect.md)** -Funktion Spalten hinzufügen. Weitere Informationen finden Sie unter [Arbeiten mit Datenquellen](../working-with-data-sources.md).  
 
 ## <a name="description"></a>Beschreibung
 Die Funktion **AddColumns** fügt einer Tabelle eine Spalte hinzu, und eine Formel definiert die Werte in dieser Spalte. Vorhandene Spalten bleiben unverändert.
@@ -62,7 +65,7 @@ Das Ergebnis all dieser Funktionen ist eine neue Tabelle mit angewendeter Transf
 * *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *ColumnName(s)*: erforderlich. Name(n) der zu verwerfenden Spalte(n). Sie müssen für dieses Argument eine Zeichenfolge angeben (z.B. **"Name"** in doppelten Anführungszeichen)
 
-**RenameColumns**( *Tabelle*, *AlterSpaltenname1*, *NeuerSpaltenname1* [, *AlterSpaltenname2*, *NeuerSpaltenname2*, ... ] )
+**RenameColumns**( *Tabelle*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*,  *NewColumnName2*,...])
 
 * *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *AlterSpaltenname*: erforderlich. Name einer umzubenennenden Spalte aus der ursprünglichen Tabelle. Dieses Element wird als erstes in dem Argumentpaar angezeigt (oder als erstes in jedem Argumentpaar, wenn die Formel mehr als ein Paar enthält). Der Name muss eine Zeichenfolge sein (z.B. **"Name"** in doppelten Anführungszeichen).
@@ -85,7 +88,7 @@ Keines dieser Beispiele verändert die Datenquelle **IceCreamSales**. Jede Funkt
 | **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |Fügt dem Ergebnis die Spalte **Revenue** (Umsatz) hinzu.  **UnitPrice * QuantitySold** (Stückpreis * verkaufte Menge) wird für jeden Datensatz ausgewertet, und das Ergebnis wird in die neue Spalte eingefügt. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns( IceCreamSales, "UnitPrice" )** |Schließt die Spalte **UnitPrice** aus dem Ergebnis aus. Mit dieser Funktion können Spalten ausgeschlossen und mit **ShowColumns** eingeschlossen werden. |![](media/function-table-shaping/icecream-drop-price.png) |
 | **ShowColumns( IceCreamSales, "Flavor" )** |Schließt nur die Spalte **Flavor** (Geschmack) im Resultset ein. Mithilfe dieser Funktion können Sie Spalten einschließen und mithilfe der Funktion **DropColumns** ausschließen. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Benennt die Spalte **UnitPrice** im Resultset um. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Benennt die **UnitPrice** Spalte im Resultset. |![](media/function-table-shaping/icecream-rename-price.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Benennt die Spalten **UnitPrice** und **QuantitySold** im Ergebnis um. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
 | **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Führt der Reihe nach die folgenden Transformationen aus, beginnend im Kern der Formel: <ol><li>Fügt eine **Revenue**-Spalte basierend auf der Berechnung von **UnitPrice * Quantity** (Stückpreis * Menge) pro Datensatz hinzu.<li>Benennt **UnitPrice** in **Price** (Preis) um.<li>Schließt die Spalte **Quantity** aus.</ol>  Beachten Sie, dass diese Reihenfolge wichtig ist. Angenommen, **UnitPrice** kann nach der Umbenennung nicht berechnet werden. |![](media/function-table-shaping/icecream-all-transforms.png) |
 

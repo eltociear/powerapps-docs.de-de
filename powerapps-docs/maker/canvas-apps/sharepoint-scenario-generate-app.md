@@ -1,24 +1,24 @@
 ---
 title: Generieren einer Canvas-App zum Verarbeiten von Projektanforderungen | Microsoft-Dokumentation
 description: In dieser Aufgabe generieren wir eine einfache Canvas-App mit drei Bildschirmen direkt aus einer SharePoint-Liste.
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834257"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799316"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Generieren einer Canvas-App zum Verarbeiten von Projektanforderungen
 > [!NOTE]
@@ -29,7 +29,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
 > [!TIP]
 > Das [Downloadpaket](https://aka.ms/o4ia0f) für dieses Szenario enthält eine vollständige Version dieser App: project-requests-app.msapp.
 
-## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Schritt 1: Generieren einer App aus einer SharePoint-Liste
+## <a name="step-1-generate-an-app-from-a-sharepoint-list"></a>Schritt 1: Generieren einer App aus SharePoint
 
 1. Klicken oder tippen Sie in der von Ihnen erstellten Liste **Project Requests** (Projektanforderungen) auf **PowerApps** und dann auf **App erstellen**.
    
@@ -39,7 +39,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
    
     ![Einen Namen für die App angeben](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>Schritt 2: Überprüfen der App in PowerApps Studio
+## <a name="step-2-review-the-app-in-powerapps-studio"></a>Schritt 2: Überprüfen Sie die app in PowerApps Studio
 
 1. Auf der linken Navigationsleiste von PowerApps Studio wird standardmäßig eine hierarchische Ansicht der Bildschirme und Steuerelemente in der App angezeigt.
    
@@ -59,7 +59,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
       
       ![PowerApps Studio mit Miniaturansicht](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
-## <a name="step-3-customize-the-apps-browse-screen"></a>Schritt 3: Anpassen des App-Bildschirms zum Durchsuchen
+## <a name="step-3-customize-the-apps-browse-screen"></a>Schritt 3: Anpassen der app Bildschirm zum Durchsuchen
 
 1. Klicken oder tippen Sie auf den Bildschirm zum Durchsuchen.
    
@@ -93,7 +93,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
 
 6. Klicken oder tippen Sie auf **Datei** und anschließend auf **Speichern**. Klicken oder tippen Sie auf ![Symbol „Zurück zur App“](./media/sharepoint-scenario-generate-app/icon-back-to-app.png), um zur App zurückzukehren.
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Schritt 4: Überprüfen des Detailbildschirms und Bearbeitungsbildschirms der App
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Schritt 4: Überprüfen Sie die app Details-Bildschirm und bearbeitungsbildschirms
 1. Klicken oder tippen Sie auf den Detailbildschirm.
    
     Dieser Bildschirm hat ein anderes Layout, das ein *Anzeigeformular* enthält, um die Details für ein im Katalog ausgewähltes Element anzuzeigen. Es enthält Steuerelemente zum Bearbeiten und Löschen von Elementen und ein Steuerelement, mit dem Sie zum Bildschirm zum Durchsuchen zurückkehren können.
@@ -106,7 +106,7 @@ Da jetzt die SharePoint-Listen vorhanden sind, können wir unsere erste App erst
 
     ![Bearbeitungsformular](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>Schritt 5: Ausführen der App aus der Liste
+## <a name="step-5-run-the-app-from-the-list"></a>Schritt 5: Führen Sie die app aus der Liste
 
 1. Klicken oder tippen Sie in der Liste **Project Requests**  (Projektanforderungen) auf **Alle Elemente** und dann auf **Project Requests app** (Projektanforderungen-App).
    

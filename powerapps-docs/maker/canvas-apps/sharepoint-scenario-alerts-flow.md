@@ -1,24 +1,24 @@
 ---
 title: Einrichten von Datenwarnungen für das Power BI-Dashboard | Microsoft-Dokumentation
 description: In dieser Aufgabe wird Power BI eine Warnung hinzugefügt, die mitteilt, ob die Genehmigung ausstehender Projekte zu lange dauert, sowie ein Flow, der bei Auftreten dieser Warnung reagiert.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6426dedc9ce9d1a4648f9c880a53337767ec53d3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836393"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799086"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Einrichten von Datenwarnungen für das Power BI-Dashboard
 > [!NOTE]
@@ -45,7 +45,7 @@ Die Warnung wird nicht sofort ausgelöst, obwohl der Wert 56 über dem Schwellen
 
 Beim Auslösen der Warnung sendet Power BI eine E-Mail an den Ersteller der Warnung, und im nächsten Schritt erfahren Sie, wie zusätzliche E-Mails mit Microsoft Flow gesendet werden.
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Schritt 2: Erstellen eines Flows, der auf die Warnung reagiert
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Schritt 2: Erstellen Sie einen Flow, der auf die Warnung reagiert
 1. Melden Sie sich bei flow.microsoft.com an, und klicken oder tippen Sie auf **Dienste** und anschließend auf **Power BI**.
    
     ![Power BI in Microsoft Flow](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)

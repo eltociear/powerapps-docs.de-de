@@ -1,36 +1,40 @@
 ---
 title: Suchen nach einer Eigenschaft | Microsoft-Dokumentation
 description: Sie können anhand des Steuerelements, anhand der Kategorie oder alphabetisch nach einer Eigenschaft suchen.
-author: gregli-msft
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/17/2016
-ms.author: gregli
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c69d32f21bb5d1222122c4ec129d765b390d98f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863123"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073669"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Steuerelemente und Eigenschaften in PowerApps
+
 Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem Sie eine seiner Eigenschaften festlegen. Jeder Typ von Steuerelement verfügt über einen anderen Satz mit Eigenschaften. Einige Eigenschaften, z.B. **Height** und **Width**, sind für fast alle Typen von Steuerelementen gleich. Andere Eigenschaften, z.B. **CheckboxSize**, gelten nur für einen Typ von Steuerelement.
 
 ## <a name="controls"></a>Steuerelemente
+
 **[Add picture](controls/control-add-picture.md)** (Bild hinzufügen): Dient zum Laden von Bildern vom lokalen Gerät zum Hochladen in eine Datenquelle.
 
 **[Attachments](controls/control-attachments.md)**: Dient zum Herunterladen und Hochladen von Dateien vom lokalen Gerät in die Datenquelle.
 
 **[Audio](controls/control-audio-video.md)**: Dient zum Wiedergeben eines Audioclips oder des Audioteils eines Videoclips.
 
-**[Barcode scanner](controls/control-barcodescanner.md)** (Barcodescanner, experimentell): Dient zum Scannen eines Barcodes mit einem Gerät, das über eine Kamera verfügt.
+**[(Experimentell) Barcodescanner](controls/control-barcodescanner.md)**  -Codes in einem Webbrowser (Legacy/veraltet) überprüft.
+
+**[Barcode-Scanner](controls/control-new-barcode-scanner.md)**  – scannt Barcodes, QR-Codes und Datenmatrix Codes auf einem Android- oder iOS-Gerät.
 
 **[Button](controls/control-button.md)** (Schaltfläche): Dient zum Interagieren mit der App, indem darauf geklickt oder getippt wird.
 
@@ -56,7 +60,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Edit form](controls/control-form-detail.md)** (Formular bearbeiten): Dient zum Bearbeiten und Erstellen von Datensätzen in einer Datenquelle mit einem Formular.
 
-**[Entity form](entity-form-control.md)** (Entitätsformular): Experimentelles Feature: Dient zum Hinzufügen von dynamischen Formularen, in denen Benutzer relationale Daten über den Common Data Service durchsuchen, anzeigen und bearbeiten können.
+**[Entitätsformular](entity-form-control.md)**  -experimentelles Feature: Fügen Sie dynamische Formulare, die in denen Benutzer können anzuzeigen, navigieren und bearbeiten Sie relationale Daten aus dem Common Data Service.
 
 **[Export](controls/control-export-import.md)**: Dient zum Exportieren von Daten zur Verwendung an einer anderen Stelle von PowerApps.
 
@@ -88,7 +92,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Rating](controls/control-rating.md)** (Bewertung): Dient zum Angeben eines Werts zwischen 1 und einer angegebenen Zahl.
 
-**[Rich text editor](controls/control-richtexteditor.md)** (Rich-Text-Editor, experimentell): Ermöglicht App-Benutzern die Formatierung von Rich-Text.
+**[Rich-Text-Editor](controls/control-richtexteditor.md)**  – können Sie rich-Text-Formatierungen von app-Benutzer.
 
 **[Screen](controls/control-screen.md)** (Bildschirm): Dient zum Anzeigen und Aktualisieren von Daten zu einer bestimmten Aufgabe.
 
@@ -106,7 +110,10 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Video](controls/control-audio-video.md)**: Dient zum Wiedergeben eines Videoclips aus einer lokalen Datei, einer Datenquelle oder von YouTube.
 
+**[(Experimentell) Web Barcode-Scanner](controls/control-barcodescanner.md)**  – die ältere Barcode-Scanner, die veraltet ist, aber für die Überprüfung des Codes in einem Webbrowser nützlich sein.
+
 ## <a name="common-properties-by-category"></a>Allgemeine Eigenschaften nach Kategorie
+
 **[Color and border](controls/properties-color-border.md)** (Farbe und Rahmen): Dient zum Konfigurieren der Farbe und des Rahmens eines Steuerelements, die bzw. der sich ändern können, wenn Benutzer damit interagieren.
 
 **[Core](controls/properties-core.md)** (Kern): Dient zum Konfigurieren, ob Benutzer ein Steuerelement sehen und damit interagieren können.
@@ -118,7 +125,9 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Text](controls/properties-text.md)**: Dient zum Konfigurieren, wie Text in Steuerelementen angezeigt wird, z.B. Schriftmerkmale, Ausrichtung und Linienhöhe.  
 
 ## <a name="all-properties"></a>Alle Eigenschaften
+
 ### <a name="a"></a>A
+
 **[ActualZoom](controls/control-pdf-viewer.md)**: Der tatsächliche Vergrößerungsfaktor des Steuerelements. Dieser kann sich von dem Faktor unterscheiden, der mit der **Zoom**-Eigenschaft angefordert wurde.  Gilt für Steuerelemente des folgenden Typs: **[PDF-Viewer](controls/control-pdf-viewer.md)**.
 
 **[Align](controls/properties-text.md)** – Die Position von Text in Relation zur horizontalen Mitte des Steuerelements.  Gilt für viele Steuerelemente.
@@ -134,6 +143,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **AutoStart**: Gibt an, ob ein Audio- oder Video-Steuerelement automatisch einen Clip wiedergibt, wenn der Benutzer zu dem Bildschirm navigiert, der das Steuerelement enthält.  Gilt für Steuerelemente des folgenden Typs: **[Audio](controls/control-audio-video.md)**, **[Timer](controls/control-timer.md)** und **[Video](controls/control-audio-video.md)**.
 
 ### <a name="b"></a>B
+
 **[BackgroundImage](controls/properties-visual.md)**: Der Name einer Bilddatei, die als Hintergrund einer Bildschirmansicht angezeigt wird.  Gilt für das **[Screen](controls/control-screen.md)**-Steuerelement.
 
 **[BorderColor](controls/properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.  Gilt für viele Steuerelemente.
@@ -145,6 +155,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Brightness](controls/control-camera.md)**: Gibt an, wie hell ein Bild für Benutzer angezeigt wird.  Gilt für Steuerelemente des folgenden Typs: **[Kamera](controls/control-camera.md)**.
 
 ### <a name="c"></a>C
+
 **[CalculateOriginalDimensions](controls/control-image.md)**: Aktiviert die Eigenschaften **[OriginalHeight](controls/control-image.md)** und **[OriginalWidth](controls/control-image.md)**.  Gilt für Steuerelemente des folgenden Typs: **[Bild](controls/control-image.md)**.
 
 **[Camera](controls/control-camera.md)**: Auf einem Gerät mit mehr als einer Kamera ist dies die numerische ID der Kamera, die von der App verwendet wird.  Gilt für Steuerelemente des folgenden Typs: **[Kamera](controls/control-camera.md)**.
@@ -172,6 +183,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[CurrentPage](controls/control-pdf-viewer.md)**: Die Seitenzahl der Seite einer PDF-Datei, die derzeit angezeigt wird.  Gilt für Steuerelemente des folgenden Typs: **[PDF-Viewer](controls/control-pdf-viewer.md)**.
 
 ### <a name="d"></a>D
+
 **[Data](controls/control-export-import.md)**: Der Name einer Sammlung, die Sie in eine lokale Datei exportieren möchten.  Gilt für Steuerelemente des folgenden Typs: **[Export](controls/control-export-import.md)**.
 
 **[DataField](controls/control-card.md)**: Der Name des Felds in einem Datensatz, der von dieser Karte angezeigt und bearbeitet wird.  Gilt für Steuerelemente des folgenden Typs: **[Karte](controls/control-card.md)**.
@@ -203,6 +215,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Duration](controls/control-timer.md)**: Gibt an, wie lange ein Timer ausgeführt wird.  Gilt für Steuerelemente des folgenden Typs: **[Timer](controls/control-timer.md)**.
 
 ### <a name="e"></a>E
+
 **[EndYear](controls/control-date-picker.md)**: Das letzte Jahr, auf das Benutzer den Wert eines Steuerelements für die Datumsauswahl festlegen können.  Gilt für Steuerelemente des folgenden Typs: **[Datumsauswahl](controls/control-date-picker.md)**.
 
 **Error**: Die Bedeutung dieser Eigenschaft hängt vom jeweiligen Steuerelement ab:
@@ -216,6 +229,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Explode](controls/control-pie-chart.md)**: Der Abstand zwischen den Segmenten eines Kreisdiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Kreisdiagramm](controls/control-pie-chart.md)**.
 
 ### <a name="f"></a>F
+
 **[Fill](controls/properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.  Gilt für viele Steuerelemente.
 
 **[FindNext](controls/control-pdf-viewer.md)**: Dient zum Suchen nach der nächsten Instanz von **FindText** im Dokument.  Gilt für Steuerelemente des folgenden Typs: **[PDF-Viewer](controls/control-pdf-viewer.md)**.
@@ -226,12 +240,14 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Font](controls/properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.  Gilt für viele Steuerelemente.
 
-**[FontWeight](controls/properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).  Gilt für viele Steuerelemente.
+**[FontWeight](controls/properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.  Gilt für viele Steuerelemente.
 
 ### <a name="g"></a>G
+
 **[GridStyle](controls/control-column-line-chart.md)**: Gibt an, ob für ein Säulen- oder Liniendiagramm die x-Achse, die y-Achse, beide Achsen oder keine Achse angezeigt wird.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)** und **[Liniendiagramm](controls/control-column-line-chart.md)**.
 
 ### <a name="h"></a>H
+
 **[HandleActiveFill](controls/control-slider.md)**: Die Farbe des Handles eines Schiebereglers, wenn Benutzer den Wert ändern.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)**.
 
 **[HandleFill](controls/control-slider.md)**: Die Farbe des Handles (Element zum Verschieben) in einem Umschalten- oder Schieberegler-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Schieberegler](controls/control-slider.md)**.
@@ -251,6 +267,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[HTMLText](controls/control-html-text.md)**: Text, der in einem HTML-Textsteuerelement angezeigt wird und HTML-Tags enthalten kann.  Gilt für Steuerelemente des folgenden Typs: **[HTML-Text](controls/control-html-text.md)**.
 
 ### <a name="i"></a>I
+
 **[Image](controls/properties-visual.md)**: Der Name des Bilds, das in einem Bild-, Audio- oder Mikrofon-Steuerelement angezeigt wird.  Gilt für Steuerelemente des folgenden Typs: **[Audio](controls/control-audio-video.md)**, **[Bild](controls/control-image.md)**, **[Mikrofon](controls/control-microphone.md)** und **[Video](controls/control-audio-video.md)**.
 
 **[ImagePosition](controls/properties-visual.md)**: Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.  Gilt für viele Steuerelemente.
@@ -274,6 +291,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[ItemsGap](controls/control-column-line-chart.md)**: Der Abstand zwischen Spalten in einem Säulendiagramm.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)**.
 
 ### <a name="l"></a>L
+
 **[LabelPosition](controls/control-pie-chart.md)**: Die Position von Beschriftungen in einem Kreisdiagramm relativ zu seinen Segmenten.  Gilt für Steuerelemente des folgenden Typs: **[Kreisdiagramm](controls/control-pie-chart.md)**.
 
 **[LastSubmit](controls/control-form-detail.md)**: Der letzte erfolgreich übermittelte Datensatz, einschließlich der vom Server generierten Felder.  Gilt für Steuerelemente des folgenden Typs: **[Formular bearbeiten](controls/control-form-detail.md)**.
@@ -285,6 +303,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Loop](controls/control-audio-video.md)**: Gibt an, ob ein Audio- oder Videoclip am Ende der Wiedergabe automatisch neu gestartet wird.  Gilt für Steuerelemente des folgenden Typs: **[Audio](controls/control-audio-video.md)** und **[Video](controls/control-audio-video.md)**.
 
 ### <a name="m"></a>M
+
 **[Markers](controls/control-column-line-chart.md)**: Gibt an, ob in einem Säulen- oder Liniendiagramm der Wert der einzelnen Datenpunkte angezeigt wird.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)** und **[Liniendiagramm](controls/control-column-line-chart.md)**.
 
 **[MarkerSuffix](controls/control-column-line-chart.md)**: Text, der nach den einzelnen Werten in einem Säulendiagramm angezeigt wird, für das die **[Markers](controls/control-column-line-chart.md)**-Eigenschaft auf **true** festgelegt ist.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)**.
@@ -308,11 +327,13 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 * Steuerelement **[Text input](controls/control-text-input.md)** (Texteingabe): Das Steuerelement befindet sich im Modus **Einzeilig**, **Mehrzeilig** oder **Kennwort**.
 
 ### <a name="n"></a>N
+
 **[NavigationStep](controls/control-gallery.md)**: Gibt an, wie weit in einem Katalog ein Bildlauf durchgeführt werden kann, wenn die **[ShowNavigation](controls/control-gallery.md)**-Eigenschaft auf **true** festgelegt ist und der Benutzer am Ende des Katalogs jeweils einen Navigationspfeil verwendet.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)**.
 
 **[NumberOfSeries](controls/control-column-line-chart.md)**: Gibt an, wie viele Datenspalten in einem Säulen- oder Liniendiagramm widergespiegelt werden.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)** und **[Liniendiagramm](controls/control-column-line-chart.md)**.
 
 ### <a name="o"></a>O
+
 **[OnChange](controls/properties-core.md)**: Das Verhalten einer App, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).  Gilt für viele Steuerelemente.
 
 **OnCheck**: Das Verhalten einer App, wenn sich der Wert eines Kontrollkästchens oder von Umschalten auf **TRUE** ändert.  Gilt für Steuerelemente des folgenden Typs: **[Kontrollkästchen](controls/control-check-box.md)** und **[Umschalten](controls/control-toggle.md)**.
@@ -354,6 +375,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Overflow](controls/control-text-box.md)**: Gibt an, ob eine Bildlaufleiste in einer Bezeichnung angezeigt wird, wenn die **[Wrap](controls/control-text-box.md)**-Eigenschaft auf **true** festgelegt ist und der Wert der **[Text](controls/properties-core.md)**-Eigenschaft des Steuerelements mehr Zeichen enthält, als das Steuerelement gleichzeitig anzeigen kann.  Gilt für Steuerelemente des folgenden Typs: **[Label](controls/control-text-box.md)**.
 
 ### <a name="p"></a>P
+
 **[Padding](controls/properties-size-location.md)** – Der Abstand zwischen dem Text auf einer Import- oder Exportschaltfläche und den Rändern der Schaltfläche.  Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](controls/control-add-picture.md)**, **[Export](controls/control-export-import.md)** und **[Import](controls/control-export-import.md)**.
 
 **[PaddingBottom](controls/properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.  Gilt für viele Steuerelemente.
@@ -381,6 +403,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[PressedFill](controls/properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.  Gilt für viele Steuerelemente.
 
 ### <a name="r"></a>R
+
 **[RadioBackgroundFill](controls/control-radio.md)**: Die Farbe des Kreishintergrunds in einem Optionsfeld-Steuerelement.  Gilt für Steuerelemente des folgenden Typs: **[Optionsfeld](controls/control-radio.md)**.
 
 **[RadioBorderColor](controls/control-radio.md)**: Die Farbe des Kreises der einzelnen Optionen eines Optionsfeld-Steuerelements.  Gilt für Steuerelemente des folgenden Typs: **[Optionsfeld](controls/control-radio.md)**.
@@ -412,6 +435,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Reset](controls/properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.  Gilt für viele Steuerelemente.  Siehe auch die **[Reset](functions/function-reset.md)**-Funktion.
 
 ### <a name="s"></a>S
+
 **Selected**: Das ausgewählte Element.  Gilt für Steuerelemente des folgenden Typs: **[Dropdown](controls/control-drop-down.md)** und **[Katalog](controls/control-gallery.md)**.
 
 **[SelectedDate](controls/control-date-picker.md)**: Das Datum, das in einem Datum-Steuerelement ausgewählt ist.  Gilt für Steuerelemente des folgenden Typs: **[Datumsauswahl](controls/control-date-picker.md)**.
@@ -455,6 +479,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Strikethrough](controls/properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.  Gilt für viele Steuerelemente.
 
 ### <a name="t"></a>T
+
 **[TemplateFill](controls/control-gallery.md)**: Die Hintergrundfarbe eines Katalogs.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)**.
 
 **[TemplatePadding](controls/control-gallery.md)**: Der Abstand zwischen den Elementen eines Katalogs.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)**.
@@ -472,6 +497,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Transparency](controls/control-image.md)**: Gibt an, inwieweit Steuerelemente hinter einem Bild sichtbar bleiben.  Gilt für Steuerelemente des folgenden Typs: **[Bild](controls/control-image.md)**.
 
 ### <a name="u"></a>U
+
 **[Underline](controls/properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.  Gilt für viele Steuerelemente.
 
 **[Unsaved](controls/control-form-detail.md)**: „true“, wenn das Steuerelement vom Typ **[Formular bearbeiten](controls/control-form-detail.md)** ungespeicherte Änderungen des Benutzers enthält.  Gilt für Steuerelemente des folgenden Typs: **[Formular bearbeiten](controls/control-form-detail.md)**.
@@ -481,6 +507,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Updates](controls/control-form-detail.md)**: Die Werte, die für einen Datensatz, der in einem Formular-Steuerelement geladen ist, zurück in die Datenquelle geschrieben werden sollen.  Gilt für Steuerelemente des folgenden Typs: **[Formular bearbeiten](controls/control-form-detail.md)**.
 
 ### <a name="v"></a>V
+
 **Valid**: Gibt an, ob ein Steuerelement vom Typ **[Karte](controls/control-card.md)** oder **[Formular bearbeiten](controls/control-form-detail.md)** gültige Einträge enthält, die für die Übermittlung an die Datenquelle bereit sind.  Gilt für Steuerelemente des folgenden Typs: **[Karte](controls/control-card.md)** und **[Formular bearbeiten](controls/control-form-detail.md)**.
 
 **[Value](controls/properties-core.md)**: Gibt den Wert eines Eingabesteuerelements an.  Gilt für Steuerelemente des folgenden Typs: **[Kontrollkästchen](controls/control-check-box.md)**, **[Optionsfeld](controls/control-radio.md)**, **[Schieberegler](controls/control-slider.md)** und **[Umschalten](controls/control-toggle.md)**.
@@ -494,6 +521,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[Visible](controls/properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.  Gilt für viele Steuerelemente.
 
 ### <a name="w"></a>W
+
 **[Width](controls/properties-size-location.md)** – Der Abstand zwischen dem linken und rechten Rand eines Steuerelements.  Gilt für viele Steuerelemente.
 
 **[WidthFit](controls/properties-size-location.md)**: Gibt an, ob ein Steuerelement automatisch horizontal vergrößert wird, um leeren Raum in einem Containersteuerelement wie z. B. einem **[Formularbearbeitung](controls/control-form-detail.md)**-Steuerelement auszufüllen. Wenn bei mehreren Karten diese Eigenschaft auf **TRUE** festgelegt ist, teilen sie sich den Raum. Weitere Informationen finden Sie unter [Grundlegendes zum Layout von Datenformularen](working-with-form-layout.md).
@@ -503,11 +531,13 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[WrapCount](controls/control-gallery.md)**: Gibt an, wie viele Datensätze in jedem Element eines Katalogs angezeigt werden.  Gilt für Steuerelemente des folgenden Typs: **[Katalog](controls/control-gallery.md)**.
 
 ### <a name="x"></a>X
+
 **[X](controls/properties-size-location.md)** – Der Abstand zwischen dem linken Rand eines Steuerelements und dem linken Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist). Gilt für viele Steuerelemente. Für ein **[Karten](controls/control-card.md)**-Steuerelement in einem Container mit mehreren Spalten bestimmt diese Eigenschaft die Spalte, in der die Karte angezeigt wird.
 
 **[XLabelAngle](controls/control-column-line-chart.md)**: Der Winkel der Beschriftungen unterhalb der x-Achse eines Säulen- oder Liniendiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)** und **[Liniendiagramm](controls/control-column-line-chart.md)**.
 
 ### <a name="y"></a>Y
+
 **[Y](controls/properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist). Gilt für viele Steuerelemente. Für ein **[Karten](controls/control-card.md)**-Steuerelement in einem Container mit mehreren Zeilen bestimmt diese Eigenschaft die Zeile, in der die Karte angezeigt wird.
 
 **[YAxisMax](controls/control-column-line-chart.md)**: Der höchste Wert der y-Achse eines Liniendiagramms.  Gilt für das **[Liniendiagramm](controls/control-column-line-chart.md)**-Steuerelement.
@@ -517,4 +547,5 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 **[YLabelAngle](controls/control-column-line-chart.md)**: Der Winkel der Beschriftungen neben der y-Achse eines Linien- oder Säulendiagramms.  Gilt für Steuerelemente des folgenden Typs: **[Säulendiagramm](controls/control-column-line-chart.md)** und **[Liniendiagramm](controls/control-column-line-chart.md)**.
 
 ### <a name="z"></a>Z
+
 **Zoom**: Der Prozentsatz, mit dem ein Bild einer Kamera vergrößert wird (oder die Ansicht einer Datei in einem PDF-Viewer).  Gilt für Steuerelemente des folgenden Typs: **[Kamera](controls/control-camera.md)** und **[PDF-Viewer](controls/control-pdf-viewer.md)**.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43d623daecb609fbe3d4e593a7e15f95051871e9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836416"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "57800259"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Grundlegendes zum Layout von Datenformularen für Canvas-Apps in PowerApps
 
@@ -32,20 +32,20 @@ In diesem Tutorial durchlaufen wir die Schritte zum Erstellen dieses Formulars. 
 
 Wenn Sie noch nicht mit PowerApps vertraut sind (oder Apps bisher lediglich automatisch generiert haben), empfiehlt es sich, [eine App von Grund auf neu zu erstellen](get-started-create-from-blank.md), bevor Sie in dieses Thema einsteigen. Durch Erstellen einer App von Grund auf machen Sie sich mit den grundlegenden Konzepten vertraut, beispielsweise mit dem Hinzufügen von Datenquellen und Steuerelementen, die in diesem Artikel zwar erwähnt, jedoch nicht erläutert werden.
 
+In diesem Thema wird geschrieben, als ob man von einer Quelle mit dem Namen **Verkaufsauftrag** und enthält die Felder in der vorherigen Abbildung. Wenn Sie eine PowerApps Plan 2-Lizenz haben oder ein [Testlizenz](../signup-for-powerapps.md) und Systemadministrator oder benutzerdefinierte Berechtigungen, können Sie [erstellen Sie eine Entität](../common-data-service/data-platform-create-entity.md) in Common Data Service (CDS) für Apps und ähnliche Felder hinzufügen. 
+
 ## <a name="add-a-gallery"></a>Einen Katalog hinzufügen
 
-1. Erstellen Sie eine Tablet-App von Grund auf neu.
+1. Erstellen Sie eine Tablet-app von Grund auf neu, und fügen Sie die Datenquelle.
 
     Alles in diesem Artikel Besprochene gilt auch für Smartphonelayouts, allerdings haben Smartphone-Apps oft nur eine vertikale Spalte.
-2. Fügen Sie die Entität **Sales Order** (Verkaufsauftrag) in [Common Data Service](../common-data-service/data-platform-intro.md) als Datenquelle für die App hinzu.
-
-    Außerhalb dieses Tutorials können Sie eine beliebige Datenquelle verwenden, u.a. SharePoint-Listen und Excel-Tabellen.
-3. Fügen Sie ein vertikales **Katalog**-Steuerelement hinzu, und legen Sie dessen **Items**-Eigenschaft auf **'Sales order'** fest.
+    
+2. Fügen Sie ein vertikales **Katalog**-Steuerelement hinzu, und legen Sie dessen **Items**-Eigenschaft auf **'Sales order'** fest.
    
     (Optional) Um die Beispiele in diesem Tutorial anzugleichen, ändern Sie das **Layout** des Katalogs so, dass nur **Titel und Untertitel** angezeigt werden.
    
     ![Liste der Verkaufsaufträge](./media/working-with-form-layout/gallery-layout.png)
-4. Klicken oder tippen Sie im Katalog auf **SO004**.
+3. Klicken oder tippen Sie im Katalog auf **SO004**.
    
     ![Liste der Verkaufsaufträge](./media/working-with-form-layout/sales-order-gallery-screen.png)
    
@@ -204,8 +204,8 @@ Wie immer in PowerApps wird das Layout des Formulars von Eigenschaften für die 
 ### <a name="basic-layout-x-y-and-width"></a>Standardlayout: X, Y und Breite
 Mit der **X**-Eigenschaft und der **Y**-Eigenschaft wird die Position von Karten gesteuert. Wenn wir mit Steuerelementen im unformatierten Zeichenbereich arbeiten, geben diese Eigenschaften eine absolute Position an. In einem Formular hingegen haben diese Eigenschaften eine andere Bedeutung:
 
-* **X**: Reihenfolge innerhalb einer Zeile.
-* **Y**: Zeilennummer.
+* **X**: Bestellen Sie innerhalb einer Zeile.
+* **Y**: Nummer der Zeile.
 
 Vergleichbar mit Steuerelementen im Zeichenbereich gibt die Eigenschaft **Width** die Mindestbreite der Karte an (mehr zu diesem Aspekt später).
 

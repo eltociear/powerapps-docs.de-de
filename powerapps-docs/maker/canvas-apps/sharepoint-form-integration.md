@@ -1,24 +1,24 @@
 ---
 title: Grundlegendes zur Integration von SharePoint-Formularen | Microsoft-Dokumentation
 description: Hier erfahren Sie, wie benutzerdefinierte Formulare mit SharePoint verwendet werden.
-author: sarafankit
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 11/11/2017
-ms.author: ankitsar
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 341d6973504ba50dbeeb058019a32196f72ec8c5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 919efacd1a1dc5c931d71e07024aa7c8a30168bf
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864927"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799247"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Grundlegendes zur Integration von SharePoint-Formularen
 Sie können jetzt in PowerApps [jedes SharePoint-Listenformular leicht anpassen](customize-list-form.md). In diesem Artikel wird die Funktionsweise dieser Formulare erläutert und beschrieben, wie Sie sie weiter anpassen können.

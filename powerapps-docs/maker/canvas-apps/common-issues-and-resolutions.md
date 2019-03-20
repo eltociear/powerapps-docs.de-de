@@ -7,24 +7,36 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/02/2018
+ms.date: 11/09/2018
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5701f85d28d987229aa56756b5c1817892bd5c0
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
+ms.sourcegitcommit: 67f9974ee2fa06773c729876ba7ef95145c63a07
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42855100"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54253075"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 
 Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von PowerApps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
 
 ## <a name="added-after-february-2018"></a>Änderungen nach Februar 2018
+
+1. **Kamera-Problem auf Android-Mobilgeräte** (1. Januar 2019)
+
+    Wenn die Kamera nicht angehalten, die auf Android-Geräten steuern, veröffentlichen Sie Ihre app erneut, und öffnen Sie sie erneut auf dem Gerät. Die Kamera-Steuerelement wurde als Reaktion auf eine Änderung in der Android-Betriebssystem aktualisiert, und Ihre app profitieren von der das Update, wenn Sie erneut veröffentlichen.
+
+1. **Durchführen eines Bildlaufs in flexible Höhe Galerien** (27. November 2018)
+
+    Wenn Sie eine Einschränkung auftreten, wenn Sie mit dem Finger scrollen, heben Sie es aus, und starten Sie erneut einen Bildlauf durchführen.
+
+1. **Zeichnen mit Maus oder Touch-Eingabe ist nicht in PowerApps für Windows smooth** (SEP dargestellt werden. 24, 2018)
+
+    Stift-Steuerelement muss nur teilweise Unterstützung für das Zeichnen mit Maus oder touch-Eingabe in der Windows-app. Striche möglicherweise zeitweilig. Zum reibungslosen zeichnen, verwenden eines Stiftes, oder führen Sie die app in einem Browser.
 
 1. **Mehrere Medien-Steuerelemente in PowerApps Mobile** (2. August 2018)
 
@@ -39,7 +51,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. <a name="out-of-memory"></a>**Browser hat nicht genügend Arbeitsspeicher** (23. Juli 2018)
 
-    Wenn Sie bei der Verwendung von PowerApps nicht mehr genügend Arbeitsspeicher haben, sollten Sie eine 64-Bit-Version von Chrome, Edge oder Internet Explorer herunterladen.
+    Wenn Sie bei der Verwendung von PowerApps nicht genügend Arbeitsspeicher ausführen, sollten Sie eine 64-Bit-Version von Chrome, Microsoft Edge oder Internet Explorer herunterladen.
 
 1. **Starten einer Website aus einer eingebetteten App** (10. Mai 2018)
 

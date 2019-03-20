@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 91f84ebbec83c5734e910680f4ab3a79077164df
-ms.sourcegitcommit: ce621966a34061dda2f75232403847e21816ffa9
-ms.translationtype: HT
+ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2018
-ms.locfileid: "47459453"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802053"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
@@ -122,8 +122,8 @@ Ist abgeleitet von der zugrunde liegenden **Mode**-Eigenschaft und kann nicht un
 | Modus | Beschreibung |
 | --- | --- |
 | **FormMode.Edit** |Der Benutzer kann einen Datensatz mithilfe des Formulars bearbeiten. Die Werte auf den Karten des Formulars werden mithilfe des vorhandenen Datensatzes aufgefüllt. Der Benutzer kann sie dann ändern. Wenn die **[SubmitForm](../functions/function-form.md)**-Funktion erfolgreich ausgeführt wird, wird ein vorhandener Datensatz geändert. |
-| **FormMode.New** |Der Benutzer kann einen Datensatz mithilfe des Formulars erstellen. Die Werte in den Steuerelementen des Formulars werden mithilfe der Datensatz-Standardwerte der Datenquelle aufgefüllt. Wenn die **[SubmitForm](../functions/function-form.md)**-Funktion erfolgreich ausgeführt wird, wird ein Datensatz erstellt. |
-| **FormMode.View** |Der Benutzer kann einen Datensatz mithilfe des Formulars anzeigen. Die Werte in den Steuerelementen des Formulars werden mithilfe der Datensatz-Standardwerte der Datenquelle aufgefüllt. |
+| **FormMode.New** |Der Benutzer kann einen Datensatz mithilfe des Formulars erstellen. Die Werte in den Steuerelementen des Formulars werden mit Standardwerten für einen Datensatz der Datenquelle aufgefüllt. Wenn die **[SubmitForm](../functions/function-form.md)**-Funktion erfolgreich ausgeführt wird, wird ein Datensatz erstellt. |
+| **FormMode.View** |Der Benutzer kann einen Datensatz mithilfe des Formulars anzeigen. Die Werte in den Steuerelementen des Formulars werden mit Standardwerten für einen Datensatz der Datenquelle aufgefüllt. |
 
 Das Formular wechselt vom **New**-Modus in den **Edit**-Modus, wenn eine dieser Änderungen auftritt:
 
@@ -152,7 +152,7 @@ Das Formular wechselt vom **New**-Modus in den **Edit**-Modus, wenn eine dieser 
 
 * Diese Eigenschaft ist nur im **Formular bearbeiten**-Steuerelement verfügbar.
 * Verwenden Sie diese Eigenschaft, um die Feldwerte aus den Karten im Steuerelement zu extrahieren.  Sie können diese Werte verwenden, um die Datenquelle manuell zu aktualisieren, indem Sie die **[Patch](../functions/function-patch.md)**-Funktion oder eine andere verfügbare Methode aufrufen.  Sie müssen diese Eigenschaft nicht verwenden, wenn Sie die **[SubmitForm](../functions/function-form.md)**-Funktion ausführen.
-* Diese Eigenschaft gibt einen Datensatz von Werten zurück.  Beispiel: Wenn das Formularsteuerelement Kartensteuerelemente für die Felder **Name** und **Quantity** enthält und die Werte der **[Update](control-card.md)**-Eigenschaften für diese Karten „Widget“ und „10“ zurückgeben, würde die **Updates**-Eigenschaft für das Formularsteuerelement **{ Name: "Widget", Quantity: 10 }** zurückgeben.
+* Diese Eigenschaft gibt einen Datensatz von Werten zurück.  Wenn das Formularsteuerelement kartensteuerelemente für enthält z. B. **Namen** und **Menge** Felder und Werte von der **[Update](control-card.md)** Eigenschaften für diese Karten zurückgeben "Widget" und 10, und klicken Sie dann die **Updates** -Eigenschaft für das Formularsteuerelement zurück **{Name: "Widget", Menge: 10 }**.
 
 **Valid** – Gibt an, ob ein Steuerelement vom Typ **[Karte](control-card.md)** oder **Formular bearbeiten** gültige Einträge enthält, die für die Übermittlung an die Datenquelle bereit sind.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3a83f5ae96b8d9146163ed7d5ff4c4529f8d562
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830769"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802329"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Funktionen „Sort“ und „SortByColumns“
 Zum Sortieren von [Tabellen](../working-with-tables.md).
@@ -30,7 +30,7 @@ Die Formel wird für jeden [Datensatz](../working-with-tables.md#records) der Ta
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Um zuerst nach einer Spalte und dann nach einer anderen zu sortieren, betten Sie eine **Sort**-Formel in eine andere ein. Beispielsweise können Sie diese Formel verwenden, um eine Tabelle **Kontakte** zuerst nach der Spalte **Nachname** und dann nach der Spalte **Vorname** zu sortieren: **Sort( Sort( Kontakte, Nachname ), Vorname )**
+Um zuerst nach einer Spalte und dann nach einer anderen zu sortieren, betten Sie eine **Sort**-Formel in eine andere ein. Beispielsweise können mit dieser Formel sortieren ein **Kontakte** zuerst die Tabelle, indem Sie eine **"LastName"** Spalte und dann nach einer **FirstName** Spalte:  **Sort (Sort (Kontakte, "LastName"), FirstName)**
 
 Die Funktion **SortByColumns** kann ebenfalls verwendet werden, um eine Tabelle basierend auf einer oder mehreren Spalten zu sortieren.
 
@@ -86,7 +86,7 @@ Für das folgende Beispiel verwenden wir die **Speiseeis**-[Datenquelle](../work
 ### <a name="step-by-step"></a>Schritt für Schritt
 Um diese Beispiele selbst auszuführen, erstellen Sie die Datenquelle **Speiseeis** als [Sammlung](../working-with-data-sources.md#collections):
 
-1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:<br>**ClearCollect( Speiseeis, { Geschmacksrichtung: "Schokolade", Menge: 100, Nachbestellt: 150 }, { Geschmacksrichtung: "Vanille", Menge: 200, Nachbestellt: 20 }, { Geschmacksrichtung: "Erdbeer", Menge: 300, Nachbestellt: 0 }, { Geschmacksrichtung: "Schoko-Minz", Menge: 60, Nachbestellt: 100 }, { Geschmacksrichtung: "Pistazie", Menge: 200, Nachbestellt: 10 } )**
+1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:<br>**ClearCollect( IceCream, { Flavor: "Schokolade", Menge: 100, OnOrder: 150 }, { Flavor:  "Einfaches", Menge: 200, OnOrder: 20 }, { Flavor: "Strawberry", Menge: 300, OnOrder: 0 }, { Flavor: "Mint Schokolade", Menge: 60, OnOrder: 100 }, { Flavor: "Pistazie", Menge: 200, OnOrder: 10 } )**
 2. Führen Sie eine Vorschau der App aus, wählen Sie die Schaltfläche aus, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 3. Wählen Sie im Menü **Datei** das Element **Sammlungen** aus, um die soeben erstellte Sammlung anzuzeigen, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 
@@ -103,7 +103,7 @@ Um diese Beispiele selbst auszuführen, erstellen Sie die Datenquelle **Speiseei
 1. Fügen Sie eine weitere Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](../controls/properties-core.md)** auf diese Formel fest:<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     Die vorstehende Formel erstellt eine dritte Sammlung mit dem Namen **SortByQuantity**, die die gleichen Daten wie **Speiseeis** enthält. Die neue Sammlung enthält die Daten jedoch numerisch aufsteigend nach der Spalte **Menge** und dann absteigend nach der Spalte **Geschmacksrichtung** sortiert.
+     Die vorstehende Formel erstellt eine dritte Sammlung mit dem Namen **SortByQuantity**, die die gleichen Daten wie **Speiseeis** enthält. Die neue Sammlung enthält jedoch die Daten numerisch nach sortiert die **Menge** Spalte in aufsteigender Reihenfolge und dann nach der **Flavor** Spalte in absteigender Reihenfolge.
 2. Drücken Sie F5, wählen Sie die neue Schaltfläche aus, und drücken Sie dann ESC.
 3. Wählen Sie im Menü **Datei** das Element **Sammlungen** aus, um alle drei Sammlungen anzuzeigen, und drücken Sie dann ESC, um zum Standardarbeitsbereich zurückzukehren.
 4. Wiederholen Sie die letzten drei Schritte, ändern Sie jedoch den Namen der Sammlung, die Sie erstellen möchten, und ersetzen Sie die Formel **SortByColumns** durch eine andere Formel aus der Tabelle mit Beispielen weiter oben in diesem Abschnitt, die **SortByColumns** verwendet.

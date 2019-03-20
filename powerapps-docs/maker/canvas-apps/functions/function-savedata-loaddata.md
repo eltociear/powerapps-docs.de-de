@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 01/31/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5aa9992b9371724c77bcc1d2baf439bb2d7b9dab
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 3fb23fec6f6885a55b054889b90fed0c5efafd5e
+ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864325"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "57800351"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funktionen SaveData und LoadData in PowerApps
 Speichert eine [Sammlung](../working-with-data-sources.md#collections) und lädt diese erneut.
@@ -28,9 +28,15 @@ Die Funktion **SaveData** speichert eine Sammlung für die spätere Verwendung u
 
 Die Funktion **LoadData** lädt eine Sammlung über den Namen, über den diese zuvor mit **SaveData** gespeichert wurde, erneut. Sie können diese Funktion nicht dazu verwenden, eine Sammlung aus einer anderen Quelle zu laden.  
 
-**LoadData** erstellt die Sammlung nicht; die Funktion füllt nur eine vorhandene Sammlung aus. Zunächst müssen Sie die Sammlung mit den richtigen [Spalten](../working-with-tables.md#columns) erstellen, indem Sie **[Collect](function-clear-collect-clearcollect.md)** verwenden.
+Mit diesen Funktionen können beim Start der app-Leistung verbessern, indem das Zwischenspeichern von Daten in die **[App.OnStart](../controls/control-screen.md#additional-properties)** Formel auf die Willkommensseite, und klicken Sie dann den lokalen Cache bei nachfolgenden Ausführungen erneut laden. Sie können diese Funktionen auch verwenden, um hinzuzufügen [einfache Offlinefunktionen](../offline-apps.md) zu Ihrer app.
 
-Speicher wird verschlüsselt und befindet sich an einem privaten Speicherort auf dem lokalen Gerät, isoliert von anderen Benutzern und anderen Apps.  
+Sie können nicht diese Funktionen in einem Browser, wenn die app in PowerApps Studio erstellen oder beim Ausführen der app in der webplayer verwenden. Um Ihre app zu testen, führen Sie es in PowerApps Mobile auf einem iPhone oder Android-Gerät aus.
+
+Diese Funktionen werden durch die Größe des verfügbaren app-Speichers begrenzt, da sie in einer in-Memory-Sammlung ausgeführt werden. Verfügbare Arbeitsspeicher kann variieren, je nach Gerät und Betriebssystem, Arbeitsspeicher, den den PowerApps-Player verwendet und die Komplexität der app im Hinblick auf Bildschirme und Steuerelemente. Wenn Sie länger als einige Megabyte an Daten speichern, testen Sie Ihre app mit erwarteten Szenarien auf den Geräten, die auf denen Sie die Ausführung die Anwendung erwarten. Sie erwarten, in der Regel zwischen 30 und 70 MB an verfügbarem Arbeitsspeicher haben.  
+
+**LoadData** erstellt die Sammlung nicht; die Funktion füllt nur eine vorhandene Sammlung aus. Zunächst müssen Sie die Sammlung mit den richtigen [Spalten](../working-with-tables.md#columns) erstellen, indem Sie **[Collect](function-clear-collect-clearcollect.md)** verwenden. Die geladenen Daten werden an die Auflistung angefügt werden; Verwenden Sie die **[löschen](function-clear-collect-clearcollect.md)** zuerst ausgeführt werden, wenn Sie mit einer leeren Auflistung starten möchten.
+
+Speicher wird verschlüsselt und befindet sich an einem privaten Speicherort auf dem lokalen Gerät, isoliert von anderen Benutzern und anderen Apps.
 
 ## <a name="syntax"></a>Syntax
 **SaveData**( *Sammlung*, *Name* )<br>**LoadData**( *Sammlung*, *Name* [, *NichtVorhandeneDateiIgnorieren* ])

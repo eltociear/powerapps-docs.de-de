@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7aed7812890482bb781e2d5ff7eac8c996b8837
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d48559ee3a54cbb723621a0e36f09cb4a1d0fe3b
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850415"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803433"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Grundlegendes zu Verhaltensformeln für Canvas-Apps in PowerApps
 
@@ -30,11 +30,11 @@ Was bedeutet es in diesem Kontext, wenn der Benutzer ein **[Schaltflächen](cont
 
 Durch Auswahl eines **[Schaltflächen](controls/control-button.md)**-Steuerelements initiiert der Benutzer eine Abfolge von Aktionen oder Verhaltensweisen, die den Status der App ändern werden:
 
-* Ändern des angezeigten Bildschirms: Funktionen **[Back](functions/function-navigate.md)** und **[Navigate](functions/function-navigate.md)**
-* Steuern von [Signalen](functions/signals.md): Funktionen **[Enable](functions/function-enable-disable.md)** und **[Disable](functions/function-enable-disable.md)**
-* Aktualisieren oder Entfernen von Elementen in einer [Datenquelle](working-with-data-sources.md): Funktionen **[Refresh](functions/function-refresh.md)**, **[Update](functions/function-update-updateif.md)**, **[UpdateIf](functions/function-update-updateif.md)**, **[Patch](functions/function-patch.md)**, **[Remove](functions/function-remove-removeif.md)** und **[RemoveIf](functions/function-remove-removeif.md)**
-* Aktualisieren einer [Kontextvariablen](working-with-variables.md#create-a-context-variable): **[UpdateContext](functions/function-updatecontext.md)**-Funktion
-* Erstellen, Aktualisieren oder Entfernen von Elementen in einer [Sammlung](working-with-data-sources.md#collections): Funktionen **[Collect](functions/function-clear-collect-clearcollect.md)**, **[Clear](functions/function-clear-collect-clearcollect.md)** und **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
+* Ändern Sie den Bildschirm, der angezeigt wird: **[Wieder](functions/function-navigate.md)**  und **[Navigate](functions/function-navigate.md)** Funktionen.
+* Steuerelement eine [Signal](functions/signals.md): **[Aktivieren Sie](functions/function-enable-disable.md)**  und **[deaktivieren](functions/function-enable-disable.md)** Funktionen.
+* Aktualisieren, aktualisieren oder Entfernen von Elementen in einem [Datenquelle](working-with-data-sources.md): **[Aktualisieren Sie](functions/function-refresh.md)**,  **[Update](functions/function-update-updateif.md)**,  **["updateif"](functions/function-update-updateif.md)**, **[Patch](functions/function-patch.md)**,  **[Entfernen](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)** Funktionen.
+* Update einer ["Context"-Variablen](working-with-variables.md#use-a-context-variable):  **[UpdateContext](functions/function-updatecontext.md)**  Funktion.
+* Erstellen, aktualisieren oder Entfernen von Elementen in einem [Auflistung](working-with-data-sources.md#collections):  **[Sammeln von](functions/function-clear-collect-clearcollect.md)**,  **[löschen](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)** Funktionen.
 
 Da diese Funktionen den Status der App ändern, können sie nicht automatisch neu berechnet werden. Verwenden Sie sie in den Formeln für die **[OnSelect](controls/properties-core.md)**-, **[OnVisible](controls/control-screen.md)**-, **[OnHidden](controls/control-screen.md)**- und anderen **On...**-Eigenschaften, die Verhaltensformeln genannt werden.
 
