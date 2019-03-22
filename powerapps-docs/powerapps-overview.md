@@ -6,15 +6,15 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 3a314ee6fabc5d3891a19610bfc4cf8aebdd6dcf
-ms.sourcegitcommit: edd4b1029b7085bb3849d87b0c94e0d8cb5758aa
+ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251545"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58162261"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
@@ -23,6 +23,8 @@ PowerApps ist eine Suite von Apps, Diensten, Connectors und einer Datenplattform
 Mithilfe von PowerApps erstellte Apps bieten eine umfangreiche Geschäftslogik und Workflowfunktionen, die eine Umstellung Ihrer Geschäftsprozesse von manuellen auf digitale und automatisierte Abläufe ermöglichen. Zudem besitzen mit PowerApps erstellte Apps ein dynamisches Design und können nahtlos im Browser oder auf mobilen Geräten (Smartphones oder Tablets) ausgeführt werden. Da mit PowerApps funktionsreiche benutzerdefinierte Geschäfts-Apps erstellt werden können, ohne dass dazu das Schreiben von Code erforderlich ist, eignet es sich auch hervorragend für „nicht professionelle“ Benutzer.
 
 PowerApps bietet zugleich eine erweiterbare Plattform, mit der professionelle Entwickler programmgesteuert mit Daten und Metadaten interagieren, Geschäftslogik anwenden, benutzerdefinierte Connectors erstellen und in externe Daten integrieren können.
+
+Weitere Informationen finden Sie auf dem [YouTube-Kanal von PowerApps](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg).
 
 ## <a name="powerapps-for-app-makerscreators"></a>PowerApps für App-Ersteller
 

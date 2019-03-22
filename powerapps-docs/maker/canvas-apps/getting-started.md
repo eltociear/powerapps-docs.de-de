@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa46510cdd46cf8d9fb64694e7b6306b255b1157
-ms.sourcegitcommit: fa0ad3f81efd41671dd8e118ce936acb274cfd7c
+ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54079608"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330123"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
@@ -54,7 +54,7 @@ Führen Sie Ihre eigenen Apps – und alle Apps, die für Sie freigegeben wurden
 ## <a name="share-your-experience"></a>Teilen Sie Ihre Erfahrungen
 * Beteiligen Sie sich an der [PowerApps-Community](https://aka.ms/powerapps-community), indem Sie mitlesen und Beiträge verfassen. Dort können alle Benutzer von PowerApps Fragen stellen, die dann von anderen Benutzern beantwortet werden. Bevor Sie eine Frage stellen, führen Sie eine Suche in der Community durch, um festzustellen, ob die Frage bereits beantwortet wurde.
 * Reichen Sie Ihren Vorschlag zur Verbesserung von PowerApps unter [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) ein.
-* Erstellen Sie ein [Supportticket](https://powerapps.microsoft.com/support/pro/), wenn Sie technische Hilfe benötigen. Wenn Sie PowerApps-Administrator für Ihre Organisation sind, können Sie auch im [PowerApps-Admin Center](https://portal.office.com/Support/Support.aspx) ein Supportticket eröffnen.
+* Erstellen Sie ein [Supportticket](https://powerapps.microsoft.com/support/pro/), wenn Sie technische Hilfe benötigen. Wenn Sie PowerApps-Administrator für Ihre Organisation sind, können Sie auch im [PowerApps-Admin Center](https://admin.microsoft.com/Support/Support.aspx) ein Supportticket eröffnen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Für eine kostenlose Lizenz registrieren](../signup-for-powerapps.md)

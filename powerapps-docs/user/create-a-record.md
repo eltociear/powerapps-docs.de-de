@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 2/21/2019
+ms.date: 3/13/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,17 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f9b6b0ea2236027a0f27332115f34c25036f8ec
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
+ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56663290"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58073327"
 ---
 # <a name="create-a-new-record"></a>Neuen Datensatz erstellen
 
 
-Mit dem Befehl **Neuen Datensatz erstellen** ist die Eingabe von fast allen Informationen in das System schnell und einfach. Der Befehl befindet sich auf der Navigationsleiste. Er ist also immer verfügbar, wenn Sie neue Informationen in das System eingeben müssen. Wenn Sie diese Option verwenden, müssen Sie nur wenige Felder ausfüllen. Später können Sie weitere Details eingeben, wenn Sie mehr Zeit oder Informationen haben.  
+Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die Eingabe von fast allen Informationen in das System schnell und einfach. Der Befehl befindet sich auf der Navigationsleiste. Er ist also immer verfügbar, wenn Sie neue Informationen in das System eingeben müssen. Wenn Sie diese Option verwenden, müssen Sie nur wenige Felder ausfüllen. Später können Sie weitere Details eingeben, wenn Sie mehr Zeit oder Informationen haben.  
+
+> [!NOTE]
+> Die Option **Schnellerfassung** ist nur für Datensätze verfügbar, die von Ihrem Administrator aktiviert werden.
     
 1. Klicken Sie auf der Navigationsleiste auf das **Pluszeichen** ![Schaltfläche „Datensatz erstellen“](media/create-record-button.png "Schaltfläche „Datensatz erstellen“"), und wählen Sie dann das gewünschte Element aus.  
   

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be6055a2b8f42d8d4194653417313b29ab5610d
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: 2c367aa57294e52fc22f538f88b361c90c3afb99
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799845"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330238"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
 
@@ -47,7 +47,7 @@ Helpdesk stellt ein benutzerfreundliches Verfahren zum Endbenutzer Supportexpert
 
 In dieser Liste werden die Help Desk-Tickets gespeichert.
 
-1. Öffnen Sie einen Webbrowser, und navigieren Sie zu https://portal.office.com.
+1. Öffnen Sie einen Webbrowser, und navigieren Sie zu https://admin.microsoft.com.
 2. Melden Sie sich mit einem Konto an, das über die Berechtigung zum Erstellen von SharePoint-Listen verfügt.
 3. Navigieren Sie zur Websitesammlung, in der Sie die Liste „HelpDesk“ erstellen möchten.
 4. Klicken Sie auf das **Zahnradsymbol** oben rechts auf der Webseite.
