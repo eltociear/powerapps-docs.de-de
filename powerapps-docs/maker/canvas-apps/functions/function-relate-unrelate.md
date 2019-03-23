@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c50b2452829f0878c40ccf5f2e47010596bc0b7b
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57801593"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356768"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Beziehen Sie und Verknüpfung mit Funktionen in PowerApps
 
@@ -26,7 +26,7 @@ Beziehen Sie und Verknüpfung mit Datensätzen von zwei Entitäten über eine 1:
 
 ## <a name="description"></a>Beschreibung
 
-Die **Relate** -Funktion verknüpft den zwei Datensätzen über eine 1: n- oder m: n Beziehung in Common Data Service (CDS) für Apps. Die **Unrelate** Funktion kehrt den Prozesses um, und entfernt den Link.
+Die **Relate** -Funktion verknüpft den zwei Datensätzen über eine 1: n- oder m: n Beziehung in Common Data Service. Die **Unrelate** Funktion kehrt den Prozesses um, und entfernt den Link.
 
 Für 1: n Beziehungen hat die viele Entität ein Fremdschlüsselfeld, verweist auf einen Datensatz, der eine Entität. **Im Zusammenhang** setzt dieses Feld auf einen bestimmten Datensatz, der eine Entität zeigen während **Unrelate** setzt dieses Feld auf *leere*. Wenn das Feld bereits festgelegt ist **Relate** wird aufgerufen, wird der vorhandene Link zugunsten von neuen Link verloren gehen. Sie können dieses Feld auch festlegen, mit der [ **Patch** ](function-patch.md) Funktion oder ein **[Bearbeitungsformular](../controls/control-form-detail.md)** Steuerelement; verwenden Sie nicht benötigen die **Relate**  Funktion.
 

@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
-ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57802628"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357067"
 ---
 # <a name="guid-function-in-powerapps"></a>Funktion „GUID“ in PowerApps
 Konvertiert eine GUID-Zeichenfolge ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier), global eindeutiger Bezeichner) in einen GUID-Wert oder erstellt einen neuen GUID-Wert.
 
 ## <a name="description"></a>Beschreibung
-Verwenden Sie die **GUID**-Funktion, um eine Zeichenfolge, die die hexadezimale Darstellung einer GUID enthält, in einen GUID-Wert zu konvertieren, der an eine Datenbank übergeben werden kann. GUID-Werte werden von Datenbanksystemen wie Common Data Service für Apps und SQL Server als Schlüssel verwendet.
+Verwenden Sie die **GUID**-Funktion, um eine Zeichenfolge, die die hexadezimale Darstellung einer GUID enthält, in einen GUID-Wert zu konvertieren, der an eine Datenbank übergeben werden kann. GUID-Werte werden als Schlüssel von Datenbanksystemen wie Common Data Service und SQL Server verwendet.
 
 Die übergebene Zeichenfolge kann Groß- oder Kleinbuchstaben enthalten, muss aber aus 32 Hexadezimalziffern in einem der folgenden Formate bestehen:
 

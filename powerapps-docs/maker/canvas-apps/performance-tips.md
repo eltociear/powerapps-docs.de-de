@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801961"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357849"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimieren der Leistung von Canvas-Apps in PowerApps
 Microsoft arbeitet beständig daran, die Leistung aller Apps zu verbessern, die auf der PowerApps-Plattform ausgeführt werden. Sie können aber die Best Practices in diesem Thema befolgen, um die Leistung der von Ihnen erstellten Apps noch weiter zu steigern.
@@ -32,7 +32,7 @@ Wenn ein Benutzer eine App öffnet, durchläuft sie folgende Ausführungsphasen,
 ## <a name="limit-data-connections"></a>Einschränken von Datenverbindungen 
 **Stellen Sie in ein und derselben App nicht mehr als 30 Verbindungen mit Datenquellen her**. Apps fordern neue Benutzer auf, sich bei jedem Connector anzumelden, daher erhöht jeder Connector die Zeitspanne, die die App zum Starten benötigt. Während der Ausführung einer App erfordert jeder Connector CPU-Ressourcen, Arbeitsspeicher und Netzwerkbandbreite, wenn die App Daten aus einer Quelle anfordert. 
 
-Sie können die Leistung Ihrer App schnell messen, indem Sie während der Ausführung der App die Entwicklertools in [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) oder [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) aktivieren. Ihre App benötigt wahrscheinlich mehr als 15 Sekunden für die Datenrückgabe, wenn sie häufig Daten aus mehr als 30 Datenquellen wie Common Data Service für Apps, Azure SQL, SharePoint und Excel on OneDrive anfordert.  
+Sie können die Leistung Ihrer App schnell messen, indem Sie während der Ausführung der App die Entwicklertools in [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) oder [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) aktivieren. Ihre app ist wahrscheinlich länger als 15 Sekunden, um Daten zurückzugeben, wenn sie häufig Daten von mehr als 30 Datenquellen, z. B. Common Data Service, Azure SQL, SharePoint und Excel auf OneDrive anfordert.  
 
 ## <a name="limit-the-number-of-controls"></a>Beschränken der Anzahl von Steuerelementen 
 **Fügen Sie einer App nicht mehr als 500 Steuerelemente hinzu**. PowerApps generiert ein HTML-DOM-Element für jedes Steuerelement, das gerendert werden muss. Je mehr Steuerelemente Sie hinzufügen, desto mehr Zeit benötigt PowerApps zum Generieren. 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 194da16a1025daa84c658ae8884734a08780c6c1
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802053"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356837"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>„Formular anzeigen“- und „Formular bearbeiten“-Steuerelemente in PowerApps
 Zeigen Sie Datensätze aus einer Datenquelle an, bearbeiten Sie diese und erstellen Sie neue.
@@ -33,7 +33,7 @@ Wenn Sie ein **[Bildkatalog](control-gallery.md)**-Steuerelement hinzufügen, k�
 ### <a name="record-selection"></a>Datensatzauswahl
 Bei beiden Formulartypen können Sie die Eigenschaft **DataSource** als Datensatztabelle und die **Item**-Eigenschaft so konfigurieren, dass ein bestimmter Datensatz in der Tabelle angezeigt wird. Beispiel: Sie können die **Item**-Eigenschaft eines Formulars als **SelectedItem**-Eigenschaft eines **[Bildkatalog](control-gallery.md)**-Steuerelements konfigurieren. Wenn der Benutzer im Bildkatalog einen Datensatz auswählt, wird er im Formular angezeigt (im Formular können mehr Felder dargestellt werden). Wenn der Benutzer zum Bildkatalog zurückkehrt und einen anderen Datensatz auswählt, ändert sich der Wert der **SelectedItem**-Eigenschaft des Bildkatalogs. Dadurch wird die **Item**-Eigenschaft des Formulars aktualisiert, wodurch der nun ausgewählte Datensatz angezeigt wird.
 
-Sie können auch die **Item**-Eigenschaft eines Formulars mithilfe eines **Dropdown**-Steuerelements wie unter [Show, edit, or add a record (Anzeigen, Bearbeiten oder Hinzufügen eines Datensatzes)](../add-form.md) beschrieben festlegen. Alternativ können Sie Funktionen wie **Lookup** oder **First** verwenden. Sie können die **Item**-Eigenschaft auf eine der folgenden Formeln festlegen, um den Eintrag „Fabrikam“ in der Entität **Accounts** in Common Data Service für Apps anzuzeigen:
+Sie können auch die **Item**-Eigenschaft eines Formulars mithilfe eines **Dropdown**-Steuerelements wie unter [Show, edit, or add a record (Anzeigen, Bearbeiten oder Hinzufügen eines Datensatzes)](../add-form.md) beschrieben festlegen. Alternativ können Sie Funktionen wie **Lookup** oder **First** verwenden. Sie können z. B. Festlegen der **Element** -Eigenschaft in der folgenden Formeln zum Anzeigen des Fabrikam-Eintrags in der **Konten** Entität in Common Data Service:
 
 ```First(Accounts)```
 

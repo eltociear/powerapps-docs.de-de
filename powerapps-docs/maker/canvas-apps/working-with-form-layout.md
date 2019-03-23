@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: a8abc0a641f13cc05e723b96d48dd2d877f0b70f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800259"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356906"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Grundlegendes zum Layout von Datenformularen für Canvas-Apps in PowerApps
 
@@ -32,7 +32,7 @@ In diesem Tutorial durchlaufen wir die Schritte zum Erstellen dieses Formulars. 
 
 Wenn Sie noch nicht mit PowerApps vertraut sind (oder Apps bisher lediglich automatisch generiert haben), empfiehlt es sich, [eine App von Grund auf neu zu erstellen](get-started-create-from-blank.md), bevor Sie in dieses Thema einsteigen. Durch Erstellen einer App von Grund auf machen Sie sich mit den grundlegenden Konzepten vertraut, beispielsweise mit dem Hinzufügen von Datenquellen und Steuerelementen, die in diesem Artikel zwar erwähnt, jedoch nicht erläutert werden.
 
-In diesem Thema wird geschrieben, als ob man von einer Quelle mit dem Namen **Verkaufsauftrag** und enthält die Felder in der vorherigen Abbildung. Wenn Sie eine PowerApps Plan 2-Lizenz haben oder ein [Testlizenz](../signup-for-powerapps.md) und Systemadministrator oder benutzerdefinierte Berechtigungen, können Sie [erstellen Sie eine Entität](../common-data-service/data-platform-create-entity.md) in Common Data Service (CDS) für Apps und ähnliche Felder hinzufügen. 
+In diesem Thema wird geschrieben, als ob man von einer Quelle mit dem Namen **Verkaufsauftrag** und enthält die Felder in der vorherigen Abbildung. Wenn Sie eine PowerApps Plan 2-Lizenz haben oder ein [Testlizenz](../signup-for-powerapps.md) und Systemadministrator oder benutzerdefinierte Berechtigungen, können Sie [erstellen Sie eine Entität](../common-data-service/data-platform-create-entity.md) in Common Data Service und ähnliche Felder hinzufügen. 
 
 ## <a name="add-a-gallery"></a>Einen Katalog hinzufügen
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db511edd7e64f4d8ccd27cb59cae9a2c369e1a90
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804238"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357251"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdownlisten in einer Canvas-app
 
@@ -206,6 +206,6 @@ Dieses Symptom ist wahrscheinlich aufgrund einer **LookUp** Spalte in SharePoint
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-Diese Konfiguration ist verfügbar auf **Dropdown** -Steuerelemente, als auch **im Kombinationsfeld** und **Listenfeld** Steuerelemente, mit denen eine Auswahl zu einem Zeitpunkt. Sie können keine der **Abhängigkeiten** die Konfiguration dieser Steuerelemente, wenn sie die Mehrfachauswahl zulässig. Dieser Ansatz wird nicht empfohlen, für die Arbeit mit Optionssätze in Common Data Service für Apps.
+Diese Konfiguration ist verfügbar auf **Dropdown** -Steuerelemente, als auch **im Kombinationsfeld** und **Listenfeld** Steuerelemente, mit denen eine Auswahl zu einem Zeitpunkt. Sie können keine der **Abhängigkeiten** die Konfiguration dieser Steuerelemente, wenn sie die Mehrfachauswahl zulässig. Dieser Ansatz wird nicht empfohlen, für die Arbeit mit Optionssätze in Common Data Service.
 
 Die **Abhängigkeiten** Konfiguration unterstützt keine statischen Daten oder Auflistungen. Um abhängige Dropdownlisten mit diesen Quellen konfigurieren zu können, müssen bearbeiten Sie den Ausdruck direkt in der Bearbeitungsleiste. Darüber hinaus PowerApps unterstützt nicht die Verwendung von zwei Choice Felder ohne eine entsprechende Tabelle von Daten in SharePoint, und es wird keine definieren **übereinstimmende Feld** mit dieser Benutzeroberfläche.

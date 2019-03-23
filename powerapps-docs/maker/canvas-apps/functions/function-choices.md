@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 531a614493ef739acd7be71f396dfc2f7e1ada1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832794"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357596"
 ---
 # <a name="choices-function-in-powerapps"></a>Funktion „Choices“ in PowerApps
 Gibt eine Tabelle mit den möglichen Werten für eine Suchspalte zurück.
@@ -38,7 +38,7 @@ Für die Funktion **Choices** ist es nicht wie bei den Funktionen [**ShowColumns
 
 Spaltenverweise müssen direkt auf die Datenquelle verweisen. Wenn beispielsweise **Accounts** die Datenquelle ist und nach **SLA** gesucht wird, lautet der Spaltenverweis **Accounts.SLA**. Der Verweis kann eine Funktion, eine Variable oder ein Steuerelement durchlaufen. Wenn aber **Accounts** an das Steuerelement **Gallery** übergeben wird, verwenden Sie die Formel **Gallery.Selected.SLA**, um auf die SLA für das ausgewählte Konto zu verweisen. Dieser Verweis hat dann ein Steuerelement durchlaufen und kann daher nicht an die Funktion **Columns** übergeben werden. Daher müssen Sie weiterhin **Accounts.SLA** verwenden.
 
-Derzeit können Sie Suchspalten nur mit SharePoint und Common Data Service für Apps verwenden.
+Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data Service.
 
 ## <a name="syntax"></a>Syntax
 **Choices**( *Spalte-Verweis* )
@@ -49,11 +49,11 @@ Derzeit können Sie Suchspalten nur mit SharePoint und Common Data Service für 
 
 #### <a name="choices-for-a-lookup"></a>Die Funktion „Choices“ für eine Suche
 
-1. [Erstellen Sie eine Datenbank](../../../administrator/create-database.md) in Common Data Service für Apps, und klicken Sie auf das Feld **Beispiel-Apps und -Daten einschließen**.
+1. [Erstellen Sie eine Datenbank](../../../administrator/create-database.md) in Common Data Service verwendet werden, und wählen die **enthalten die Beispiel-apps und Daten** Feld.
 
     Es werden einige Entitäten wie z.B. **Accounts** erstellt.
 
-    **Hinweis:** Entitätennamen werden auf web.powerapps.com im Singular und in PowerApps Studio im Plural aufgeführt.
+    **Hinweis:** Entitätsnamen werden auf web.powerapps.com Singular- und Pluralformen in PowerApps Studio.
 
     ![Ausschnitt aus einer Liste der Felder aus der Entität „Account“ in Common Data Service für Apps, in dem hervorgehoben wird, dass „Primärer Kontakt“ ein Suchfeld ist](media/function-choices/entity-account.png)
 

@@ -13,23 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
-ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
+ms.openlocfilehash: 6968e15bbfdb16d3f5443c51065765069ae8867b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330123"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357182"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
 
-Wenn Sie kein benutzerdefiniertes Design benötigen und Ihre Daten sich in Common Data Service (CDS) für Apps befinden, können Sie automatisch eine modellgesteuerte App aus Ihren Geschäftsdaten und Prozessen erstellen. Dieser App-Typ kann Formulare, Ansichten und andere Komponenten modellieren, und die Standardbenutzeroberfläche wird automatisch an Smartphones, Laptops und andere Geräte angepasst. Weitere Informationen zu diesem App-Typ finden Sie unter [Übersicht über die Erstellung einer modellgesteuerten App](../model-driven-apps/model-driven-app-overview.md).
+Wenn nicht, einen benutzerdefinierten Entwurf entwickeln erforderlich und Ihre Daten in Common Data Service, können Sie automatisch eine modellgesteuerte app aus Ihren Geschäftsdaten und Prozessen generieren. Dieser App-Typ kann Formulare, Ansichten und andere Komponenten modellieren, und die Standardbenutzeroberfläche wird automatisch an Smartphones, Laptops und andere Geräte angepasst. Weitere Informationen zu diesem App-Typ finden Sie unter [Übersicht über die Erstellung einer modellgesteuerten App](../model-driven-apps/model-driven-app-overview.md).
 
 ## <a name="build-an-app"></a>Erstellen einer app
 Generieren Sie zunächst automatisch eine App aus einer der folgenden Quellen (u.a.):
 - [eine Beispiel-App](open-and-run-a-sample-app.md)
 - [eine Vorlage](get-started-test-drive.md)
-- [CDS für Apps](data-platform-create-app.md)
+- [Common Data Service](data-platform-create-app.md)
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
@@ -39,7 +39,7 @@ Generieren Sie zunächst automatisch eine App aus einer der folgenden Quellen (u
 
 Nachdem Sie die App automatisch generiert haben, passen Sie deren Standarddarstellung und -verhalten auf Grundlage der Workflows Ihrer Benutzer an. Sie können also beispielsweise ändern, welche Daten angezeigt werden, wie diese sortiert werden und sogar festlegen, ob Benutzer eine Zahl angeben, indem sie diese eingeben oder einen Schieberegler verwenden. Fügen Sie [Anzeigen](add-screen-context-variables.md), [Kataloge](customize-layout-sharepoint.md), [Formulare](customize-forms-sharepoint.md) und andere Steuerelemente hinzu, und passen Sie diese an.
 
-Nachdem Sie einige Apps automatisch generiert haben und etwas Erfahrung mit dem Anpassen gesammelt haben, erstellen Sie eine App von Grund auf neu, die auf [CDS für Apps](data-platform-create-app-scratch.md), [Excel](get-started-create-from-blank.md) und anderen Datenquellen basiert. Durch das Arbeiten von Grund auf gewinnen Sie Flexibilität beim App-Design, beim Arbeitsablauf und bei Steuerelementen und können mehr verschiedene Datenquellen integrieren.
+Nachdem Sie eine app oder zwei automatisch generiert und eine gewisse Erfahrung mit anpassen haben, erstellen Sie eine app von Grund auf neu, die basierend auf [Common Data Service](data-platform-create-app-scratch.md), [Excel](get-started-create-from-blank.md), oder einer anderen Datenquelle. Durch das Arbeiten von Grund auf gewinnen Sie Flexibilität beim App-Design, beim Arbeitsablauf und bei Steuerelementen und können mehr verschiedene Datenquellen integrieren.
 
 ## <a name="share-and-run-an-app"></a>Freigeben und Ausführen einer App
 Wenn Sie mit der App fertig sind und sie in der Cloud speichern, [geben Sie diese für andere Mitarbeiter Ihrer Organisation frei](share-app.md). Legen Sie fest, welche Benutzer oder Gruppen die App ausführen dürfen und ob sie sie anpassen und für weitere Personen in der Organisation freigeben können.

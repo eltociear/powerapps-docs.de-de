@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
-ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54308384"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357642"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Dropdown-Steuerelement in PowerApps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.
@@ -133,7 +133,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 1. Zeigen Sie die Elemente in der Liste an, indem Sie auf den Abwärtspfeil des Steuerelements klicken und gleichzeitig die ALT-Taste drücken.
 
 ### <a name="list-from-a-data-source"></a>Liste aus einer Datenquelle
-Die Prinzipien in diesem Verfahren gelten für jede [Datenquelle, die Tabellen enthält (data source that provides tables)](../connections-list.md#tables). Um diese Schritte jedoch genau auszuführen, müssen Sie eine Umgebung öffnen, für die eine Datenbank für Common Data Service für Apps erstellt wurde und Beispieldaten hinzugefügt wurden.
+Die Prinzipien in diesem Verfahren gelten für jeden [-Datenquelle, die Tabelle enthält](../connections-list.md#tables) aber, um diese Schritte genau befolgen zu können, müssen Sie eine Umgebung eine Common Data Service-Datenbank für die Daten, die erstellt und Beispieldaten hinzugefügt wurde öffnen.
 
 1. [Öffnen einer leeren App](../data-platform-create-app-scratch.md#open-a-blank-app) (Open a blank app), dann [Angeben des **(specify the )** Elements](../data-platform-create-app-scratch.md#specify-an-entity) (entity) des Kontos.
 

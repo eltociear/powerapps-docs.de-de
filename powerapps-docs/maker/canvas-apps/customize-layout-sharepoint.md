@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e77ddfcc572a776e80ab90d3907aaa7b67f01ea
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864770"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357136"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
 
@@ -47,7 +47,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-[Generieren Sie eine App](data-platform-create-app.md) aus der Entität **Konten** des Common Data Service (CDS) für Apps.
+[Generieren einer app](data-platform-create-app.md) aus der **Konten** Entität von Common Data Service.
 
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
 

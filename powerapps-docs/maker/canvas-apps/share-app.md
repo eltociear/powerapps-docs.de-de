@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57a63ddf829e2a6c1062cad34e0f3c608d69afad
-ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57804215"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357274"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
 Nachdem Sie eine Canvas-App erstellt haben, die eine geschäftliche Anforderung behandelt, geben Sie an, welche Benutzer in Ihrer Organisation die App ausführen dürfen und welche sie ändern oder sogar erneut freigeben dürfen. Geben Sie jeden Benutzer anhand seines Namens an, oder geben Sie eine Sicherheitsgruppe in Azure Active Directory an. Wenn jeder von Ihrer App profitieren würde, geben Sie an, dass Ihre gesamte Organisation diese ausführen darf.
 
 > [!IMPORTANT]
-> Damit eine freigegebene App wie erwartet funktionieren kann, müssen Sie auch die Berechtigungen für die Datenquelle oder Quellen, auf denen die App basiert, verwalten, z.B. [Common Data Service für Apps](#common-data-service-for-apps) oder [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
+> Für eine freigegebene app wie erwartet funktionieren, müssen Sie auch Berechtigungen für die Datenquelle oder auf dem die app, z. B. basiert Datenquellen verwalten [Common Data Service](#common-data-service) oder [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -68,7 +68,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
 1. Wenn Ihre app mit Daten verbunden ist für die Benutzer Berechtigungen benötigen, geben Sie sie.
 
-    Beispielsweise kann Ihre app mit einer Entität in CDS für Apps-Datenbank verbinden. Wenn Sie eine solche Anwendung freigeben, werden Sie von der Freigabe Bereich aufgefordert, Verwalten der Sicherheit für diese Entität.
+    Beispielsweise kann Ihre app mit einer Entität in einer Common Data Service-Datenbank verbinden. Wenn Sie eine solche Anwendung freigeben, werden Sie von der Freigabe Bereich aufgefordert, Verwalten der Sicherheit für diese Entität.
 
     ![Festlegen von Berechtigungen](./media/share-app/set-permissions.png)
 
@@ -99,16 +99,16 @@ Sie können Berechtigungen für einen Benutzer oder eine Sicherheitsgruppe ände
 
 ## <a name="manage-entity-permissions"></a>Verwalten von Entitätsberechtigungen
 
-### <a name="common-data-service-for-apps"></a>Common Data Service für Apps
+### <a name="common-data-service"></a>Common Data Service
 
-Wenn Sie eine app basierend auf CDS für Apps erstellen, müssen Sie auch sicherstellen, dass die Benutzer, mit denen Sie die app freigeben, verfügen die entsprechenden Berechtigungen für die Entität bzw. Entitäten, die auf denen die app basiert. Insbesondere müssen die Benutzer einer Sicherheitsrolle gehören, die Aufgaben wie erstellen, lesen, schreiben und Löschen von Datensätzen mit relevanten ausführen können. In vielen Fällen sollten Sie eine oder mehrere benutzerdefinierte Sicherheitsrollen mit den genauen Berechtigungen zu erstellen, die Benutzer benötigen, um die app auszuführen. Sie können jeden Benutzer nach Bedarf dann eine Rolle zuweisen.
+Wenn Sie eine app basierend auf den Common Data Service erstellen, müssen Sie auch sicherstellen, dass die Benutzer, mit denen Sie die app freigeben, verfügen die entsprechenden Berechtigungen für die Entität bzw. Entitäten, die auf denen die app basiert. Insbesondere müssen die Benutzer einer Sicherheitsrolle gehören, die Aufgaben wie erstellen, lesen, schreiben und Löschen von Datensätzen mit relevanten ausführen können. In vielen Fällen sollten Sie eine oder mehrere benutzerdefinierte Sicherheitsrollen mit den genauen Berechtigungen zu erstellen, die Benutzer benötigen, um die app auszuführen. Sie können jeden Benutzer nach Bedarf dann eine Rolle zuweisen.
 
 > [!NOTE]
 > Während ich dies schreibe, können Sie Sicherheitsrollen für einzelne Benutzer jedoch nicht für Sicherheitsgruppen zuweisen.
 
 #### <a name="prerequisite"></a>Voraussetzung
 
-Für die nächsten beiden Verfahren müssen Sie über **Systemadministratorberechtigungen** für eine CDS for Apps-Datenbank verfügen.
+Um die nächsten beiden Verfahren ausführen zu können, benötigen Sie **Systemadministrator** Berechtigungen für eine Common Data Service-Datenbank.
 
 #### <a name="create-a-security-role"></a>Sicherheitsrolle erstellen
 

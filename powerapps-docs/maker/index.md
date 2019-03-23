@@ -8,14 +8,9 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: ''
-ms.openlocfilehash: c3e40df2d2ecc13e2c466aa91178ccb5d23548fe
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806086"
+ms.reviewer: null
 ---
+
 # <a name="overview-of-creating-apps-in-powerapps"></a>Übersicht über das Erstellen von Apps in PowerApps
 
 Bei PowerApps handelt es sich um eine produktive Entwicklungsplattform für Geschäfts-Apps, die aus drei wesentlichen Komponenten besteht:
@@ -57,7 +52,7 @@ Die ersten Schritte mit modellgesteuerten Apps sind einfach. Sie können mit fol
 - [Hinzufügen von Sicherheit](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
 - [Hinzufügen von Geschäftslogik](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>Common Data Service für Apps
+## <a name="common-data-service"></a>Common Data Service
 
 Mit Common Data Service können Sie Daten sicher innerhalb von Standardentitäten und benutzerdefinierten Entitäten speichern und verwalten. Sie können nach Bedarf ebenfalls Felder zu diesen Entitäten hinzufügen.
 

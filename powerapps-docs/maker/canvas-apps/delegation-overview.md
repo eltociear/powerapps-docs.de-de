@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 813dddc205eb5abb870d333635723fcd5e2f2738
-ms.sourcegitcommit: 6d1ec3d5afa0466d1a5ce4434e588686a195d0fa
+ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "57802536"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357619"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Grundlagen der Delegierung in einer Canvas-App
 PowerApps umfasst eine leistungsfähige Sammlung von Funktionen für Filterung, Sortierung und Strukturierung von Tabellen mit Daten in einer Canvas-app: **[Filter](functions/function-filter-lookup.md)**,  **[Sortierreihenfolge](functions/function-sort.md)**, und **[AddColumns](functions/function-table-shaping.md)** Funktionen, um nur einige zu nennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
@@ -37,7 +37,7 @@ Die Schwierigkeit hierbei ist, dass nicht alle Vorgänge, die in einer PowerApps
 ## <a name="delegable-data-sources"></a>Delegierbare Datenquellen
 Delegierung wird für nur bestimmte tabellarische Datenquellen unterstützt. Wenn eine Datenquelle Delegierung unterstützt die [connectordokumentation](https://docs.microsoft.com/connectors/) wird beschrieben, die unterstützen. Beispielsweise diese tabellarische Datenquellen sind die beliebtesten, und sie die Delegierung unterstützt:
 
-- [Common Data Service (CDS) für Apps](https://docs.microsoft.com/connectors/commondataservice/) 
+- [Common Data Service](https://docs.microsoft.com/connectors/commondataservice/) 
 - [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/) 
 - [SQL Server](https://docs.microsoft.com/connectors/sql/) 
 
@@ -131,7 +131,7 @@ Um einfacher unterscheiden zu können, welche Elemente delegiert werden, zeigt P
 Delegierungswarnungen werden nur für Formeln angezeigt, die für delegierbare Datenquellen verwendet werden. Wenn keine Warnung angezeigt wird und Sie der Meinung sind, dass Ihre Formal nicht richtig delegiert wird, können Sie den Typ der Datenquelle anhand der obigen Liste mit den [delegierbaren Datenquellen](delegation-overview.md#delegable-data-sources) überprüfen.
 
 ## <a name="examples"></a>Beispiele
-Für dieses Beispiel generieren Sie automatisch eine App mit drei Anzeigen, die auf einer SQL Server-Tabelle mit dem Namen **[dbo].[Fruit]** basieren. Informationen zum Generieren der App finden Sie in dem Artikel zu [Common Data Service für Apps](data-platform-create-app.md). Die darin aufgeführten Prinzipien können auch auf SQL Server angewendet werden.
+Für dieses Beispiel generieren Sie automatisch eine App mit drei Anzeigen, die auf einer SQL Server-Tabelle mit dem Namen **[dbo].[Fruit]** basieren. Informationen dazu, wie Sie die app generiert haben, können Sie ähnliche Prinzipien gebunden wie in Anwenden der [Thema zu Common Data Service](data-platform-create-app.md) mit SQL Server.
 
 ![App mit drei Bildschirmen](./media/delegation-overview/products-afd.png)
 

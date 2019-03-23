@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384246"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357895"
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
-Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien in einer SharePoint-Liste oder einer Common Data Service für Apps-Entität hochladen und löschen können.
+Ein Steuerelement, mit der Benutzer zum Herunterladen von Dateien auf ihr Gerät als auch hochladen und Löschen von Dateien von einer SharePoint-Liste oder einer Common Data Service-Entität.
 
-## <a name="limitations"></a>Beschränkungen
+## <a name="limitations"></a>Einschränkungen
 Für das Steuerelement für Anlagen gelten folgende Einschränkungen:
-1. Anlagen werden für SharePoint-Listen und Common Data Service für Apps-Entitäten unterstützt.
+1. Anlagen werden mit SharePoint-Listen und Entitäten im Common Data Service unterstützt.
 
 1. Die Funktionen zum Hochladen und Löschen funktionieren nur in Formularen.  Das Steuerelement für Anlagen wird im Bearbeitungsmodus deaktiviert angezeigt, wenn es sich nicht in einem Formular befindet. Beachten Sie, dass der Endbenutzer das Formular speichern muss, um hinzugefügte und gelöschte Dateien im Back-End zu speichern.
 
 1. Sie können nur Dateien bis maximal 10 MB hochladen.  
 
 ## <a name="description"></a>Beschreibung
-Mit dem **Attachments**-Steuerelement können Sie Dateien aus einer SharePoint-Liste öffnen, hinzufügen und löschen.
+Ein **Anlagen** gesteuert, die Sie öffnen, hinzufügen und Löschen von Dateien von einer SharePoint-Liste oder einer Common Data Service-Entität.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Items](properties-core.md)** – Die Quelle mit Beschreibungen der Dateien, die heruntergeladen werden können.
