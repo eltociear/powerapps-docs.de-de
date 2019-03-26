@@ -1,6 +1,6 @@
 ---
-title: 'Entwickler: Best Practices und Anleitungen zur Arbeit mit Daten für den Common Data Service for Apps | Microsoft Docs'
-description: Best Practices und Anleitungen zur Arbeit mit Daten für Entwickler des Common Data Service for Apps in PowerApps.
+title: 'Entwickler: Best Practices und Handlungsempfehlungen zum Arbeiten mit Daten für Common Data Service | Microsoft-Dokumentation'
+description: Best Practices und Handlungsempfehlungen zum Arbeiten mit Daten für Entwickler von Common Data Service in PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -22,13 +22,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service-for-apps"></a>Best Practices und Anleitungen zur Arbeit mit Daten für den Common Data Service for Apps
+# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Best Practices und Handlungsempfehlungen zum Arbeiten mit Daten für Common Data Service
 
-Diese Liste enthält alle bewährten Verfahren und Anleitungen zur Integration von Daten mit Code in den Common Data Service for Apps.
+In der folgenden Liste sind alle Best Practices und Handlungsempfehlungen zur Integration von Daten mithilfe von Code für Common Data Service aufgeführt.
 
-|Bewährte Methode  |Beschreibung  |
+|Best Practice  |Beschreibung  |
 |---------|---------|
-|[API-Grenzwerte (Common Data Service for Apps)](../../api-limits.md)     |Verstehen Sie die Begrenzungen für API-Anforderungen.         |
+|[Begrenzungen von API-Anforderungen (Common Data Service)](../../api-limits.md)     |Lernen Sie die Grenzwerte für API-Anforderungen kennen.         |
 
 # <a name="see-also"></a>Siehe auch
-[Arbeiten mit Daten mithilfe von Code in Common Data Service für Apps (PowerApps)](../../work-with-data-cds.md)<br />
+[Arbeiten mit Daten mithilfe von Code in Common Data Service (PowerApps)](../../work-with-data-cds.md)<br />

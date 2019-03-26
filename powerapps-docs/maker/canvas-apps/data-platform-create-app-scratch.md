@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Canvas-App von Grund auf mit Common Data Service für Apps | Microsoft-Dokumentation
-description: Erstellen Sie in PowerApps eine Canvas-App, um Datensätze in Common Data Service für Apps hinzuzufügen, zu aktualisieren und zu löschen.
+title: Erstellen einer Canvas-App von Grund auf mit Common Data Service | Microsoft-Dokumentation
+description: Erstellen Sie in PowerApps eine Canvas-App, um Datensätze in Common Data Service hinzuzufügen, zu aktualisieren und zu löschen.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dab8caea5679701735685a5c4383c77cd7ed44f6
-ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.openlocfilehash: 0528d3324e85984e05b549f8b8ba282fdc1df4af
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56091221"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356883"
 ---
-# <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service für Apps
+# <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service
 
-Erstellen Sie eine Canvas-App, um Daten zu verwalten, die in Common Data Service für Apps gespeichert sind. Verwenden Sie dazu (integrierte) Standardentitäten, (von Ihrem Unternehmen erstellte) benutzerdefinierte Entitäten oder beides.
+Erstellen Sie eine Canvas-App, um Daten zu verwalten, die in Common Data Service gespeichert sind. Verwenden Sie dazu (integrierte) Standardentitäten, (von Ihrem Unternehmen erstellte) benutzerdefinierte Entitäten oder beides.
 
 Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung über PowerApps herstellen, wie dies bei Datenquellen wie SharePoint, Dynamics 365 und Salesforce erforderlich ist. Sie müssen lediglich angeben, welche Entitäten Sie anzeigen und verwalten oder für beide Aktivitäten in der App verwenden möchten.
 

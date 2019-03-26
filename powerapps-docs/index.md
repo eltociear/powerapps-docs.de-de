@@ -209,7 +209,7 @@ ms.custom:
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in PowerApps zwei Arten von Apps erstellen: <strong>Canvas-Apps</strong> und <strong>modellgesteuerte Apps</strong>. <strong>CDS für Apps</strong> ist die Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
+                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in PowerApps zwei Arten von Apps erstellen: <strong>Canvas-Apps</strong> und <strong>modellgesteuerte Apps</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -278,20 +278,20 @@ ms.custom:
                               <div class="card">
                                  <div class="cardImageOuter">
                                     <div class="cardImage">
-                                       <img alt="Common Data Service (CDS) for Apps" src="media/index/i_common-data-service.svg">
+                                       <img alt="Common Data Service" src="media/index/i_common-data-service.svg">
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">CDS für Apps</h3>
+                                    <h3 style="font-size: 1.15rem">Common Data Service</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">Was ist CDS für Apps?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">Was ist Common Data Service?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/entity-overview">Entitäten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/relationships-overview">Entitätsbeziehungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">Felder</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Anwenden von Geschäftslogik</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Lösungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Erstellen von Power BI-Berichten aus CDS für Apps-Daten</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Erstellen von Power BI-Berichten aus Common Data Service-Daten</a></p>
                                  </div>
                               </div>
                            </div>
@@ -343,7 +343,7 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Datenintegration und Anträge einer betroffenen Person</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">Integrieren von Daten in CDS für Apps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">Integrieren von Daten in Common Data Service</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-gdpr-dsr-guide">Beantworten von Anträgen einer betroffenen Person</a></p>
                                  </div>
                               </div>
@@ -398,7 +398,7 @@ ms.custom:
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Entwickler sind <a href="/powerapps/?branch=release-crm-mig-vivek#pivot=home&panel=maker">App-Ersteller</a>, die Geschäftsanwendungen mithilfe von Code erweitern können. Außerdem haben sie die Möglichkeit, Clientanwendungen zu erstellen, die eine Verbindung mit CDS für Apps herstellen.</p>
+                           <p>Entwickler sind <a href="/powerapps/?branch=release-crm-mig-vivek#pivot=home&panel=maker">App-Ersteller</a>, die Geschäftsanwendungen mithilfe von Code erweitern können. Außerdem haben sie die Möglichkeit, Clientanwendungen zu erstellen, die eine Verbindung mit Common Data Service herstellen.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -415,7 +415,7 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Erste Schritte</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">CDS für Apps: Entwicklerübersicht</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">Common Data Service: Entwicklerübersicht</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/overview">Modellgesteuerte Apps: Entwicklerübersicht</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/dev-enterprise-intro">Canvas-Apps: Entwicklerübersicht</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/common-data-model/overview">Common Data Model</a></p>
@@ -479,7 +479,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Arbeiten mit CDS für Apps-Daten</h3>
+                                    <h3 style="font-size: 1.15rem">Arbeiten mit Common Data Service-Daten</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/overview">Verwenden der Web-API</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/overview">Verwenden des Organisationsdiensts</a></p>
@@ -502,7 +502,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Arbeiten mit CDS für Apps-Metadaten</h3>
+                                    <h3 style="font-size: 1.15rem">Arbeiten mit Common Data Service-Metadaten</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/metadata-services">Erste Schritte mit Metadaten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/browse-your-metadata">Durchsuchen von Umgebungsmetadaten</a></p>
@@ -527,8 +527,8 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Anwenden von Geschäftslogik</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/plug-ins">Plug-Ins (CDS für Apps)</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/workflow/workflow-extensions">Workflowerweiterungen (CDS für Apps)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/plug-ins">Plug-Ins (Common Data Service)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/workflow/workflow-extensions">Workflowerweiterungen (Common Data Service)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Erstellen von Clientskripts (modellgesteuerte Apps)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/business-logic">Best Practices: Plug-Ins und Workflowerweiterungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices/business-logic">Best Practices: Erstellen von Clientskripts</a></p>
@@ -547,7 +547,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Integrieren von Daten mit CDS für Apps</h3>
+                                    <h3 style="font-size: 1.15rem">Integrieren von Daten in Common Data Service</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/virtual-entities/get-started-ve">Virtuelle Entitäten</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/azure-integration">Azure-Integration</a></p>
@@ -592,7 +592,7 @@ ms.custom:
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Erstellen von Clientanwendungen für CDS für Apps</h3>
+                                    <h3 style="font-size: 1.15rem">Erstellen von Clientanwendungen für Common Data Service</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/authentication">Authentifizierung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/discovery-service">Ermitteln von Benutzerorganisationen</a></p>
@@ -614,7 +614,7 @@ ms.custom:
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Bewährte Methoden</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices">CDS für Apps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices">Common Data Service</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices">Modellgesteuerte Apps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/performance-tips">Canvas-Apps</a></p>
                                  </div>
