@@ -104,5 +104,5 @@ Um die neueste Version der Tools abzurufen, wiederholen Sie diese Schritte.
 [Erstellen früh gebundener Entitätsklassen](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)<br />
 [Erstellen von Erweiterungen für das Codegenerierungstool](org-service/extend-code-generation-tool.md)<br />
 [Durchsuchen der Metadaten für die Organisation](browse-your-metadata.md)<br />
-[Bereitstellen von Paketen mit dem Dynamics Dynamics 365 Package Deployer und Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
+[Bereitstellen von Paketen mit dem Dynamics 365 Package Deployer und Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
 [Registrieren eines Plug-Ins](register-plug-in.md)<br />

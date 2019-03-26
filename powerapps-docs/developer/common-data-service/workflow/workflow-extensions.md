@@ -75,7 +75,7 @@ Weitere Informationen:
 
 Da Prozesse Windows Workflow Foundation verwenden, können Sie eine erstellte Assembly mithilfe der [.NET Framework-Aktivitätsbibliothek](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) speichern, die benutzerdefinierte Aktivitäten definiert, die innerhalb des Webanwendungs-Editors angezeigt werden und aufgerufen werden, wenn der Prozess ausgeführt wird.
 
-Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.5.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2) bereit, die von der "CDS für Apps"-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
+Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) bereit, die von der "CDS für Apps"-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
 
 Workflowaktivitäten können auch Eingabe- und Ausgabeparameter definieren, die im Prozess-Designer sichtbar sind, und sie ermöglichen es einer Person, Daten an die Workflowaktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Eigenschaften für diese Parameter hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die CDS für Apps verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
 
@@ -102,7 +102,7 @@ Weitere Informationen: [Installieren von Visual Studio 2017](/visualstudio/insta
 
 Im Folgenden werden allgemeine Schritte angegeben, die verwendet werden, um eine benutzerdefinierte Workflowaktivität mithilfe von Visual Studio zu erstellen. Ein vollständiges Beispiel mit einer Schritt-für-Schritt-Anleitung finden Sie unter [Tutorial: Erstellen einer Workflowerweiterung ](tutorial-create-workflow-extension.md) Sie unter.
 
-1. Erstellen Sie ein Workflowaktivitäts-Bibliotheksprojekt mithilfe von .NET Framework 4.5.2 als Zielframework
+1. Erstellen Sie ein Workflowaktivitäts-Bibliotheksprojekt mithilfe von .NET Framework 4.6.2 als Zielframework
 1. Löschen Sie die Datei Activity1.xaml, die mit dem Projekt generiert wurde.
 1. Installieren Sie das [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet-Paket.
 
@@ -128,7 +128,7 @@ Im Folgenden werden allgemeine Schritte angegeben, die verwendet werden, um eine
 
     Weitere Informationen: [Parameter hinzufügen](#add-parameters)
 
-1. Stellen Sie sicher, dass Ihre Klasse von der [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.5.2) abgeleitet ist, und implementieren Sie die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2), die die Vorgänge enthält, die Ihre Aktivität ausführen wird.
+1. Stellen Sie sicher, dass Ihre Klasse von der [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2) abgeleitet ist, und implementieren Sie die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2), die die Vorgänge enthält, die Ihre Aktivität ausführen wird.
 
     Weitere Informationen: [Fügen Sie Ihren Code der Execute-Methode hinzu](#add-your-code-to-the-execute-method)
 
@@ -232,7 +232,7 @@ public InArgument<OptionSetValue> IndustryCode { get; set; }
 
 ## <a name="add-your-code-to-the-execute-method"></a>Fügen Sie Ihren Code der Execute-Methode hinzu
 
-Die Logik, die Sie in die [CodeActivity.Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.5.2)-Methode einbeziehen, definiert, was Ihre Workflowaktivität ausführt.
+Die Logik, die Sie in die [CodeActivity.Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2)-Methode einbeziehen, definiert, was Ihre Workflowaktivität ausführt.
 
 > [!IMPORTANT]
 > Der Code in der `Execute`-Methode sollte als statusfrei geschrieben werden. Es wird nicht empfohlen, globale oder Membervariablen zu verwenden, um Daten von einem Aufruf zum nächsten zu übergeben.
@@ -240,7 +240,7 @@ Die Logik, die Sie in die [CodeActivity.Execute(CodeActivityContext)-Methode](/d
 
 ### <a name="reference-parameters"></a>Parameter referenzieren
 
-Um auf Parameter, die für Ihre Klasse definiert sind, zu verweisen, verwenden Sie die Methoden [Argument.Get](/dotnet/api/system.activities.argument.get?view=netframework-4.5.2) oder [Argument.Set(ActivityContext, Object)](/dotnet/api/system.activities.argument.set?view=netframework-4.5.2), die sie bereitstellen. Diese erfordern die Instanz [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext), die an die `Execute`-Methode übergeben wird. Im folgenden Beispiel wird gezeigt, wie auf den Wert eines Eingabeparameters zugegriffen wird und wie der Wert eines Ausgabeparameters festgelegt wird.
+Um auf Parameter, die für Ihre Klasse definiert sind, zu verweisen, verwenden Sie die Methoden [Argument.Get](/dotnet/api/system.activities.argument.get?view=netframework-4.6.2) oder [Argument.Set(ActivityContext, Object)](/dotnet/api/system.activities.argument.set?view=netframework-4.6.2), die sie bereitstellen. Diese erfordern die Instanz [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext), die an die `Execute`-Methode übergeben wird. Im folgenden Beispiel wird gezeigt, wie auf den Wert eines Eingabeparameters zugegriffen wird und wie der Wert eines Ausgabeparameters festgelegt wird.
 
 ```csharp
 using Microsoft.Xrm.Sdk.Workflow;
@@ -397,6 +397,7 @@ Wenn alle Prozesse konvertiert sind, um die neue Assembly zu verwenden, können 
 
 ### <a name="see-also"></a>Siehe auch
 
+[Bewährte Methoden und Anweisungen zu Workflowentwicklung Plug-In- und](../best-practices/business-logic/index.md)
 [Lernprogramm: Erstellen einer Workflow-Erweiterung](tutorial-create-workflow-extension.md)<br />
 [Beispiel: Eine benutzerdefinierte Workflowaktivität erstellen](sample-create-custom-workflow-activity.md)<br />
 [Beispiel: Aktualisieren des nächsten Geburtstags mithilfe einer benutzerdefinierten Workflowaktivität](sample-update-next-birthday-using-custom-workflow-activity.md)<br />

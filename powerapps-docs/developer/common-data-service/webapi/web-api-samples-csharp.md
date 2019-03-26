@@ -25,9 +25,9 @@ search.app:
 Dieses Thema enthält Informationen zu den Web-API-Beispielen in C#. Jedes Beispiel beschäftigt sich mit einem anderen Aspekt der "Common Data Service für Apps"-Web-API. Merkmale und Struktur sind ähnlich.  
   
 > [!NOTE]
->  Dieser Implementierungsansatz verwendet eine Objekterstellung auf niedriger Ebene und explizite HTTP-Nachrichtenaufrufe. Diese Ansatz ermöglicht das Steuern von Objekteigenschaften auf unterer Ebene, die das Verhalten der Web-API steuern. Dies unterstützt Sie dabei, die internen Arbeitsweise zu verstehen. Es ist jedoch nicht notwendigerweise ein Ansatz für die beste Entwicklerproduktivitätserfahrung.  
->   
->  Übergeordnete Bibliotheken wie die [OData-Bibliothek](https://msdn.microsoft.com/library/hh525392\(v=vs.103\).aspx) dagegen abstrahieren einen großen Teil der Low-Level-Clientlogik.  Die [OData T4-Vorlage](https://blogs.msdn.microsoft.com/odatateam/2012/07/02/trying-out-the-prerelease-odata-client-t4-template/) kann optional in Verbindung mit der OData-Bibliothek verwendet werden, um Cliententitätsklassen automatisch zu generieren.  
+> Dieser Implementierungsansatz verwendet eine Objekterstellung auf niedriger Ebene und explizite HTTP-Nachrichtenaufrufe. Diese Ansatz ermöglicht das Steuern von Objekteigenschaften auf unterer Ebene, die das Verhalten der Web-API steuern. Dies unterstützt Sie dabei, die internen Arbeitsweise zu verstehen. Es ist jedoch nicht notwendigerweise ein Ansatz für die beste Entwicklerproduktivitätserfahrung.  
+>
+> Übergeordnete Bibliotheken wie die [OData-Bibliothek](https://msdn.microsoft.com/library/hh525392\(v=vs.103\).aspx) dagegen abstrahieren einen großen Teil der Low-Level-Clientlogik.  Die [OData T4-Vorlage](https://blogs.msdn.microsoft.com/odatateam/2012/07/02/trying-out-the-prerelease-odata-client-t4-template/) kann optional in Verbindung mit der OData-Bibliothek verwendet werden, um Cliententitätsklassen automatisch zu generieren.  
 
 <a name="bkmk_prerequisites"></a>
    
@@ -35,17 +35,14 @@ Dieses Thema enthält Informationen zu den Web-API-Beispielen in C#. Jedes Beisp
 
 Folgendes wird benötigt, um die "Common Data Service für Apps"-Web-API-C#-Beispiele auszuführen:  
   
--   Eine Version von Microsoft Visual Studio 2015 oder höher.  Eine kostenlose [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)-Version steht [hier](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) zum Download bereit.  
-  
--   Eine Internetverbindung, um die referenzierten NuGet-Pakete herunterzuladen und zu aktualisieren.  
-  
--   Zugriff auf Common Data Service für Apps mit Rechten, CRUD-Vorgänge auszuführen.  
-  
-<!-- TODO:
--   In order to run samples against CDS for Apps, you must register your application with Azure Active Directory to obtain a client ID and redirect URL. For more information, see [Walkthrough: Register a Common Data Service for Apps app with Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).   -->
+- Eine Version von Microsoft Visual Studio 2015 oder höher.  Eine kostenlose [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)-Version steht [hier](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) zum Download bereit.  
+
+- Zugriff auf Common Data Service für Apps mit Rechten, CRUD-Vorgänge auszuführen.  
+ 
+- Um Samples gegen CDS for Apps ausführen zu können, müssen Sie Ihre Anwendung bei Azure Active Directory registrieren, um eine Kunden-ID zu erhalten und die URL umzuleiten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Registrieren Sie einen Common Data Service for Apps-Apps mit Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
 
 > [!NOTE]
-> Diese Beispiele erfordern die Version 2.x von Assembly [Microsoft.IdentityModel.Client.ActiveDirectory](https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet) für OAuth-basierte Authentifizierung.
+> Diese Beispiele erfordern die Version 2.x von Assembly [Microsoft.IdentityModel.Client.ActiveDirectory](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet) für OAuth-basierte Authentifizierung.
   
 <a name="bkmk_webApiSamplesListing"></a>
 
@@ -64,25 +61,15 @@ Die folgende Tabelle enthält Beispiele in C#.  Jedes Beispiel wird allgemein in
 
 ## <a name="how-to-download-and-run-the-samples"></a>Herunterladen und ausführen der Beispiele
   
-Der Quellcode für jedes Beispiel ist in der [MSDN-Codegalerie](https://code.msdn.microsoft.com/site/search?f%5b0%5d.type=user&f%5b0%5d.value=microsoft%20dynamics%20crm%20sdk%20documentation%20team) verfügbar. Der Link, um jedes Beispiels herunterzuladen ist in dem Beispielthema enthalten. Der Beispieldownload ist eine komprimierten ZIP-Datei, die die Visual Studio 2015-Lösungsdateien zum Beispiel beinhaltet. Weitere Informationen Sie im Abschnitt **Dieses Beispiel ausführen** im jeweiligen Beispielthema.  
-  
-<a name="bkmk_commonElements"></a>
-
-## <a name="common-elements-found-in-each-sample"></a>Allgemeine Elemente in jedem Beispiel
-
-Die meisten Beispiele haben eine vergleichbare Struktur und umfassen häufige Methoden und Ressourcen, um die grundlegenden Infrastruktur für ein Web-API C#-Programm bereitzustellen.  
-  
-Viele dieser allgemeinen Elemente sind auch vorhanden, wenn Sie eine neue Lösung erstellen, die auf die "CDS für Apps"-Web-API zugreift. Weitere Informationen finden Sie unter [Starten eines Web-API-Projekts in Visual Studio (C#)](start-web-api-project-visual-studio-csharp.md).  
+Der Quellcode für jedes Sample ist auf [GitHub](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23) verfügbar. Sie können das Repository als Zip-Datei herunterladen, die die Lösungsdateien für die Samples enthält. Weitere Informationen finden Sie im Abschnitt **Ausführen dieses Beispiels** in jedem Beispielthema.  
   
 ### <a name="utilized-libraries-and-frameworks"></a>Verwendete Bibliotheken und Frameworks
- 
-Diese C#-Implementierung hängt vom folgenden Hilfecode für die HTTP-Kommunikation, Anwendungskonfiguration, Authentifizierung, Fehlerbehandlung und JSON-Serialisierung ab.  
+
+Diese C#-Implementierung hängt von den folgenden Faktoren ab:
   
--   Die Standard-.NET Framework HTTP-Messagingklassen, die im [System.Net.Http-Namespace](/dotnet/api/system.net.http) enthalten sind, insbesondere [HttpClient](/dotnet/api/system.net.http.httpclient), [HttpRequestMessage](/dotnet/api/system.net.http.httprequestmessage) und[HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage) werden für das HTTP-Messaging verwendet.  
+- Die Standard-.NET Framework HTTP-Messagingklassen, die im [System.Net.Http-Namespace](/dotnet/api/system.net.http) enthalten sind, insbesondere [HttpClient](/dotnet/api/system.net.http.httpclient), [HttpRequestMessage](/dotnet/api/system.net.http.httprequestmessage) und[HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage) werden für das HTTP-Messaging verwendet.  
   
--   Die "Common Data Service für Apps"-Web-API Hilfsprogrammbibliothek wird verwendet, um die Anwendungskonfigurationsdatei zu lesen, beim "CDS für Apps"-Server zu authentifizieren und die Fehlerbehandlung während des Vorgangs zu unterstützen.  Weitere Informationen finden Sie unter [Verwenden der "Common Data Service für Apps"-Web-API-Hilfsprogrammbibliothek (C#)](use-microsoft-dynamics-365-web-api-helper-library-csharp.md).  
-  
--   Die Newtonsoft [Json.NET](http://www.newtonsoft.com/json)-Bibliothek unterstützt das JSON-Datenformat.  
+- Die Newtonsoft [Json.NET](http://www.newtonsoft.com/json)-Bibliothek, die das JSON-Datenformat unterstützt.  
   
 #### <a name="jsonnet-library"></a>Json.NET-Bibliothek
 
@@ -117,9 +104,10 @@ JObject contact1 = JObject.Parse(@"{firstname: 'Peter', lastname: 'Cambel', "
   
 ```csharp  
   
-HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "contacts");  
-request.Content = new StringContent(contact1.ToString(), Encoding.UTF8, "application/json");  
-HttpResponseMessage response = await httpClient.SendAsync(request1);  
+HttpRequestMessage createrequest1 = new HttpRequestMessage(HttpMethod.Post, client.BaseAddress + "contacts");
+createrequest1.Content = new StringContent(contact1.ToString());
+createrequest1.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+HttpResponseMessage createResponse1 = client.SendAsync(createrequest1, HttpCompletionOption.ResponseHeadersRead).Result; 
   
 ```  
   
@@ -128,19 +116,34 @@ HttpResponseMessage response = await httpClient.SendAsync(request1);
 ```csharp  
   
 //contact2Uri contains a reference to an existing CRM contact instance.  
-string queryOptions = "?$select=fullname,annualincome,jobtitle,description";  
-HttpResponseMessage response = await httpClient.GetAsync(contact2Uri + queryOptions);  
-JObject contact2 = JsonConvert.DeserializeObject<JObject>(await response.Content.ReadAsStringAsync());  
-  
-```  
+string queryOptions = "?$select=fullname,annualincome,jobtitle,description";
+HttpResponseMessage retrieveResponse1 = client.GetAsync(contact1Uri + queryOptions, HttpCompletionOption.ResponseHeadersRead).Result;
+if (retrieveResponse1.IsSuccessStatusCode) //200
+   {
+     retrievedcontact1 = JObject.Parse(retrieveResponse1.Content.ReadAsStringAsync().Result);
+     Console.WriteLine("Contact '{0}' retrieved: \n\tAnnual income: {1}" + "\n\tJob title: {2} \n\tDescription: {3}.",
+
+// Can use either indexer or GetValue method (or a mix of two)
+retrievedcontact1.GetValue("fullname"),
+retrievedcontact1["annualincome"],
+retrievedcontact1["jobtitle"],
+retrievedcontact1["description"]);   //description is initialized empty.
+    }
+else
+{
+Console.WriteLine("Failed to retrieve contact for reason: {0}",retrieveResponse1.ReasonPhrase);
+throw new Exception(string.Format("Failed to retrieve contact for reason: {0}", retrieveResponse1.Content));
+ } 
+
+```
   
 ### <a name="response-success-and-error-handling"></a>Erfolgreiche Antwort und Fehlerbehandlung
 
 Im Allgemeinen nutzen die Beispiele eine einfachen Methode zum Verarbeiten von HTTP-Antworten. Wenn die Anfrage erfolgreich ist, werden Informationen über den Vorgang der Regel per Konsole ausgegeben. Ob die Antwort eine JSON-Nutzlast oder nützliche Header enthält, werden diese Informationen nur bei Erfolg verarbeitet. Wenn letztlich eine "Common Data Service für Apps"-Entität erstellt wurde, wird die `entityUris`-Sammlung mit der URI dieser Ressource aktualisiert. Die [DeleteRequiredRecords](#bkmk_deleteRequiredRecords)-Methode nutzt die Sammlung, um optional Daten, die durch das Beispiel erstellt wurden, auf Ihrem "Common Data Service für Apps"-Server zu löschen.  
   
-Wenn die Anforderung fehlschlägt, gibt das Programm eine kontextbezogene Nachricht über den fehlgeschlagenen Vorgang aus und löst dann eine benutzerdefinierte Ausnahme des Typs `CrmHttpResponseException` aus. Der Ausnahmehandler gibt mehr Informationen zur Ausnahme aus und dann wird die Kontrolle an einen `finally`-Block übergeben, der eine Bereinigungslogik enthält. Dies ist wieder ein Anruf von `DeleteRequiredRecords` Der folgende Code zeigt diesen Fehlerbehandlungsansatz einer POST-Anfrage zur Erstellung eines Datensatzes.  
+Wenn die Anforderung fehlschlägt, gibt das Programm eine kontextbezogene Nachricht über den fehlgeschlagenen Vorgang aus und löst dann eine benutzerdefinierte Ausnahme des Typs `Exception` aus. Der Ausnahmehandler gibt mehr Informationen zur Ausnahme aus und dann wird die Kontrolle an einen `finally`-Block übergeben, der eine Bereinigungslogik enthält. Dies ist wieder ein Anruf von `DeleteRequiredRecords` Der folgende Code zeigt diesen Fehlerbehandlungsansatz einer POST-Anfrage zur Erstellung eines Datensatzes.  
   
-```csharp  
+```csharp
   
 if (response.StatusCode == HttpStatusCode.NoContent)  //204  
 {  
@@ -152,103 +155,21 @@ entityUris.Add(entityUri);
 else  
 {  
 Console.WriteLine("Operation failed: {0}", response.ReasonPhrase);  
-throw new CrmHttpResponseException(response.Content);  
+throw new Exception(string.Format(" Operation Failed", response.Content));  
 }  
   
 ```  
-  
+
  [HttpStatusCode](https://msdn.microsoft.com/library/hh435235.aspx).NoContent entspricht einem HTTP-Statuscode 204 “No content” (Kein Inhalt). Hier zeigt der Statuscode, dass die POST-Anfrage erfolgreich war. Weitere Informationen finden Sie unter [Zusammenstellen von HTTP-Anforderungen und Fehlerbehandlung](https://msdn.microsoft.com/en-us/library/gg334391.aspx).  
   
 ### <a name="characteristics-and-methods"></a>Eigenschaften und Methoden
   
 Die meisten Beispiele nutzen dieselben allgemeinen Architekturmuster mit den folgenden Eigenschaften:  
   
-- Der C#-Beispielcode befindet sich in der entsprechenden primären Quelldatei namens `Program.cs`. Diese enthält eine einzelne Klasse mit demselben Namen wie das Beispielprojekt.  
-  
-- Die Beispielklassen und die ["Common Data Service für Apps"-Web-API-Hilfsprogrammbibliothek](use-microsoft-dynamics-365-web-api-helper-library-csharp.md) befinden sich im Namespace `Microsoft.Crm.Sdk.Samples`.  
+- Der C#-Beispielcode befindet sich in der entsprechenden primären Quelldatei namens `SampleProgram.cs`. Diese enthält eine einzelne Klasse mit demselben Namen wie das Beispielprojekt.  
   
 - Die Beispiele sind großzügig kommentiert: Zusammenfassungen werden auf Klassen- und Methodenebenen bereitgestellt, und auch die meisten wichtigen Anweisungen sind kommentiert.  Ergänzende Dateien, z. B. die Anwendungskonfigurationsdatei `App.config`, enthalten häufig wichtige Kommentare.  
-  
-- Die primäre Beispielklasse ist so strukturiert, dass sie den folgenden allgemeinen Methodensatz enthält: [Main](#bkmk_main), [ConnectToCRM](#bkmk_connectToCrm), [CreateRequiredRecords](#bkmk_createRequiredRecords), [RunAsync](#bkmk_runAsync), [DisplayException](#bkmk_displayException) und [DeleteRequiredRecords](#bkmk_deleteRequiredRecords).  
-  
-<a name="bkmk_main"></a>
    
-#### <a name="main-method"></a>Main-Methode
-
-Definitionsgemäß beginnt mit dieser Methode die Ausführung des Beispiels.  Sie enthält ausschließlich Ablaufsteuerungs- und Ausnahmebehandlungslogik auf hoher Ebene, häufig den folgenden Code:  
-  
-```csharp  
-  
-static void Main(string[] args)  
-{  
-FunctionsAndActions app = new FunctionsAndActions();  
-try  
-{  
-//Read configuration file and connect to specified CRM server.  
-app.ConnectToCRM(args);  
-app.CreateRequiredRecords();  
-Task.WaitAll(Task.Run(async () => await app.RunAsync()));  
-}  
-catch (System.Exception ex) { DisplayException(ex);  
-}  
-finally  
-{  
-if (app.httpClient != null)  
-{  
-app.DeleteRequiredRecords(true);  
-app.httpClient.Dispose();  
-}  
-Console.WriteLine("Press <Enter> to exit the program.");  
-Console.ReadLine();  
-}  
-}  
-  
-```  
-  
-<a name="bkmk_connectToCrm"></a>
-
-#### <a name="connecttocrm-method"></a>ConnectToCRM-Methode
- 
-Diese Methode ruft die Hilfsprogrammbibliotheken auf, um die Anwendungskonfigurationsdatei zu lesen und richtet dann dann eine Verbindung zum angegebenen "Common Data Service für Apps"-Server ein. Das Ergebnis dieser Schritte ist die Initialisierung einer [HttpClient](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient\(v=vs.110\).aspx)-Klasseneigenschaft, die während des Programms verwendet wird, um Web-Anforderungen zu senden und Antworten zu empfangen.  Beachten Sie, dass die folgenden Eigenschaften für dieses Objekt festgelegt werden:  
-  
-```csharp  
-  
-//Define the Web API address, the max period of execute time, the Odata  
-// version, and the expected response payload format.  
-httpClient.BaseAddress = new Uri(config.ServiceUrl + "api/data/v8.1/");  
-httpClient.Timeout = new TimeSpan(0, 2, 0);  // 2 minute timeout  
-httpClient.DefaultRequestHeaders.Add("OData-MaxVersion", "4.0");  
-httpClient.DefaultRequestHeaders.Add("OData-Version", "4.0");  
-httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));  
-  
-```  
-  
- Weitere Informationen zur Beispielanwendungskonfiguration und Authentifizierung finden Sie unter [Verwenden der "Common Data Service für Apps"-Web-API-Hilfsprogrammbibliothek (C#)](use-microsoft-dynamics-365-web-api-helper-library-csharp.md).  
-  
-<a name="bkmk_createRequiredRecords"></a>
-
-#### <a name="createrequiredrecords-method"></a>CreateRequiredRecords-Methode
- 
-Diese Methode erstellt und initialisiert die Entitätsdatensätze, die das Beispiel benötigt. Jedoch nur, wenn die entsprechenden Vorgänge nicht zum primären Thema des Beispiels gehören.  Das [Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md) enthält beispielsweise diese Methode nicht, da es im Beispiel primär um die Datensatzerstellung geht.  
-  
-<a name="bkmk_runAsync"></a>
-
-#### <a name="runasync-method"></a>RunAsync-Methode
-
-Diese asynchrone Methode enthält entweder den entsprechenden Quellcode, oder, für längere Programme, ruft die Methoden auf, die den Beispielcode gruppieren. In enthaltene Code wird über eingebettete Kommentare und Kommentar im Abschnitt **Anmerkungen** des entsprechenden Beispielthemas erläutert.  
-  
-<a name="bkmk_displayException"></a>
-  
-#### <a name="displayexception-method"></a>DisplayExceptions-Methode
-
-Diese Hilfsmethode zeigt die Ausnahmeinformationen (inkl. der internen Ausnahmen) über die Standardkonsole an.  
-  
-<a name="bkmk_deleteRequiredRecords"></a>
-  
-#### <a name="deleterequiredrecords-method"></a>DeleteRequiredRecords-Methode
-
-Diese Begleitermethode löscht optional die Beispieldatensätze und andere "Common Data Service für Apps"-Serverressourcen, die im Programm und insbesondere über die [CreateRequiredRecords](#bkmk_createRequiredRecords)-Methode erstellt wurden. Sie holte eine Überprüfung des Vorgangs über den Benutzer ein, durchläuft dann die `entityUris`-Sammlung, und versucht, jedes Element mit einer HTTPS- DELETE-Nachricht zu löschen.  
-  
 ### <a name="see-also"></a>Siehe auch  
 
 [Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />

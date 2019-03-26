@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-iframe-and-web-resource-controls-on-a-form"></a>Verwenden von IFRAME- und Webressourcen-Steuerelementen in einem Formular
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/use-iframe-and-web-resource-controls-on-a-form -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-iframe-and-web-resource-controls-on-a-form -->
 
 
 Durch IFRAME- und Webressourcensteuerelemente wird der eingebettete Inhalt von einem anderen Ort aus auf den Seiten mithilfe eines HTML-IFRAME-Elements gesteuert.  

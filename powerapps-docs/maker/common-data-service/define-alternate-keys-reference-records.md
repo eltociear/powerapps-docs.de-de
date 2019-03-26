@@ -86,7 +86,7 @@ Wenn ein Schlüssel erstellt wurde, überprüft das System, ob dieser Schlüssel
 
 ### <a name="unicode-characters-in-key-value"></a>Unicode-Zeichen im Schlüsselwert
 
-Wenn die Daten innerhalb eines Felds, das in einem Alternativschlüssel verwendet wird, eines der folgenden Zeichen enthält `<`,`>`,`*`,`%`,`&`,`:`,`\\` funktionieren Patarbeiten, und patch- oder upsert-Aktionen nicht. 
+Wenn die Daten innerhalb eines Felds, das in einem Alternativschlüssel verwendet wird, eines der folgenden Zeichen enthält `<`,`>`,`*`,`%`,`&`,`:`,`/`,`\\` funktionieren Patarbeiten, und patch- oder upsert-Aktionen nicht. 
 
 Wenn Sie nur Eindeutigkeit benötigen, reicht dieser Ansatz aus, wenn Sie jedoch diese Schlüssel im Rahmen der Datenintegration benötigen, sollten Sie den Schlüssel besser in Feldern ohne Daten mit diesen Zeichen erstellen.
 

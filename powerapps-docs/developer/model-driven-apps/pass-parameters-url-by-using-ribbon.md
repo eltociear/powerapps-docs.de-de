@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>Parameter mit dem Menüband an eine URL übergeben
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/pass-parameters-url-by-using-ribbon -->
 
 Menübandaktionen werden im `<Actions>`-Element eines`<CommandDefinition>`-Elements definiert. Es gibt mehrere Möglichkeiten, kontextbezogene Informationen modellgestützter Apps mit dem Menüband als Abfragezeichenfolgenparameter an eine URL zu übergeben.  
   
@@ -45,13 +45,13 @@ Menübandaktionen werden im `<Actions>`-Element eines`<CommandDefinition>`-Eleme
 >  Es ist empfehlenswert, den Entitätsnamen statt des Entitätstypcodes zu verwenden, da der Entitätstypcode möglicherweise je nach MDA-Installation verschieden ist.  
   
 ### <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird die URL ohne Parameter veranschaulicht:  
+ Im folgenden Beispiel wird die URL ohne Parameter gezeigt:  
   
 ```  
 http://myserver/mypage.aspx  
 ```  
   
- Das folgenden Beispiel veranschaulicht die Parameter, die enthalten sind, wenn das Menübandsteuerelement für die Firmenentität dargestellt wird, für eine Organisation namens "AdventureWorksCycle ", wenn die Sprache des Benutzers und die Organisationsausgangssprache Englisch ist, und die GUID für den Firmendatensatz DBD5DBFB-0666-DC11-A5D9-0003FF9CE217 ist:  
+ Das folgenden Beispiel veranschaulicht die Parameter, die enthalten sind, wenn das Menübandsteuerelement für die Account-Entität dargestellt wird, für eine Organisation namens "AdventureWorksCycle ", wenn die Sprache des Benutzers und die Organisationsausgangssprache Englisch ist, und die GUID für den Account-Datensatz DBD5DBFB-0666-DC11-A5D9-0003FF9CE217 ist:  
   
 ```  
 http://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1033&type=1&typename=account&id=%7BDBD5DBFB-0666-DC11-A5D9-0003FF9CE217%7D  

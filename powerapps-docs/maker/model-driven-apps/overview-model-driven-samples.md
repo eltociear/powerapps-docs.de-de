@@ -2,14 +2,14 @@
 title: Modellgesteuerte Beispielapps
 description: 'Erfahren Sie, wie Sie modelgesteuerte Beispiel-Apps erhalten, anpassen und entfernen können.'
 documentationcenter: na
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
   - maker
 search.app:

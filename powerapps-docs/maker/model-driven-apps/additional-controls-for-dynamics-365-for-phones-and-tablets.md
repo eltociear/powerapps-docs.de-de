@@ -92,7 +92,7 @@ search.app:
 |CC_Timeline_URL|Zuzuweisendes URL-Feld zur Anzeigte der URL jedes Zeitachsenelements.|  
 |CC_Timeline_URL_Desc|Beschreibung für URL-Feld|  
 |CC_Timeline_ThumbnailURL|Zuzuweisendes Feld für Miniaturansichten des Bilds/Symbols, das für jedes Element angezeigt wird-|  
-|CC_Timeline_ThumnailURL_Desc|Beschreibung für das `ThumbnailURL`-Feld.|  
+|CC_Timeline_ThumbnailURL_Desc|Beschreibung für das `ThumbnailURL`-Feld.|  
 |CC_Timeline_Filter|Zuzuweisendes Feld für jeden Zeitachsenfilter.|  
 |CC_Timeline_Filter_Desc|Beschreibung für Filter.|  
 |CC_Timeline_Footer|Als Fußzeile der Zeitachse anzuzeigende Webressource.|  

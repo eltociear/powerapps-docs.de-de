@@ -2,7 +2,7 @@
 title: Erstellen oder bearbeiten von modellgesteuerten Schnellerstellungsformularen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten'
 ms.custom: ''
-ms.date: 10/15/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -49,7 +49,8 @@ Sie können benutzerdefinierte Aktivitätsentitäten aktivieren, um Schnellerfas
  Obwohl Sie mehrere Schnellerfassungsformulare definieren können, kann nur ein Schnellerfassungsformular von jedem Benutzer verwendet werden. Das Formular, das jeder verwenden wird, wird mithilfe der Formularreihenfolge festgelegt. Schnellerfassungsformulare können nicht Sicherheitsrollen zugewiesen werden, und sie ermöglichen dem Benutzer nicht, Formulare zu wechseln.  
   
 > [!NOTE]
->  Für die Entität muss die Option **Schnellerfassung erlauben** aktiviert sein, damit das Schnellerfassungsformular angezeigt werden kann. 
+>  - Für die Entität muss die Option **Schnellerfassung erlauben** aktiviert sein, damit das Schnellerfassungsformular angezeigt werden kann. 
+>  - Einige Felder wie das CREATEDON Feld, können nicht in einem Schnellerfassungsformular hinzuzugefügt werden.  
   
 ### <a name="how-to-create-a-quick-create-form"></a>So erstellen Sie ein Schnellerfassungsformular  
   

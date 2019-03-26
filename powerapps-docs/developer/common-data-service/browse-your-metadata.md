@@ -89,4 +89,4 @@ Die folgenden Aktionen können Sie für eine einzelne Entität ausführen:
 
  [Entwicklertools für CDS for Apps](developer-tools.md)<br />
  [Anpassen von Entitätsmetadaten](customize-entity-metadata.md)<br />
- [Analysieren von Plug-In-Leistung](/dynamics365/customer-engagement/developer/analyze-plugin-performance)<br />
+ 

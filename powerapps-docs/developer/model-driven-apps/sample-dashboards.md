@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-dashboards"></a>Beispiel-Dashboards
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-dashboards -->
 
 Dieses Thema enthält Beispiel-Dashboards zusammen mit den entsprechenden FormXML-Zeichenfolgen. Sie können die FormXML-Zeichenfolge für ein Dashboard mithilfe des `SystemForm.FormXml`-Attributs für ein Dashboard im Besitz der Organisation oder mithilfe von `UserForm.FormXml` für ein Dashboard im Besitz eines Benutzers angeben.  
   

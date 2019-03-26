@@ -22,7 +22,7 @@ search.app:
 
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mithilfe von Code
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
 Zusätzlich zur Erstellung einer modellgesteuerte Apps mit dem PowerApps App Designer können Sie modellgesteuerte Apps programmgesteuert erstellen und verwalten. 
 

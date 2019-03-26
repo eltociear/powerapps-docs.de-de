@@ -2,7 +2,7 @@
 title: 'Exemplarische Vorgehensweise: Registrierung und Konfiguration von SimpleSPA-Anwendung mit adal.js (Common Data Service für Apps) | Microsoft Docs'
 description: Diese Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegenden Single-Page-Anwendung (SPA) für den Zugriff auf Daten in Dynamics 365 Customer Engagement mithilfe von adal.js und Cross-origin Resource Sharing (CORS).
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 02/12/2019
 ms.service:
   - powerapps
 ms.custom:
@@ -22,25 +22,23 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Exemplarische Vorgehensweise: SPA-Anwendung mit adal.js registrieren und konfigurieren
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-registering-configuring-simplespa-application-adal-js -->
-
-Diese exemplarische Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegendsten Single-Page-Anwendung (SPA) für den Zugriff auf Daten in Dynamics 365 Common Data Service für Apps mithilfe von adal.js und Cross-origin Resource Sharing (CORS). Weitere Informationen: [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung mit Dynamics 365 (online) zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+Diese exemplarische Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegendsten Single-Page-Anwendung (SPA) für den Zugriff auf Daten in Common Data Service für Apps mithilfe von adal.js und Cross-origin Resource Sharing (CORS). Weitere Informationen: [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung mit Dynamics 365 (online) zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
   
 ## <a name="prerequisites"></a>Voraussetzungen  
   
-- Dynamics 365  
+- PowerApps CDS for Apps  
   
--   Sie müssen über ein Dynamics 365 (online)-Systembenutzerkonto mit einer Administratorrolle für Office 365 verfügen.  
+- Sie müssen über ein Dynamics 365 (online)-Systembenutzerkonto mit einer Administratorrolle für Office 365 verfügen.  
   
--   Ein Azure-Abonnement für die Anwendungsregistrierung. Eine Probefirma funktioniert auch.  
+- Ein Azure-Abonnement zur Registrierung Ihrer Anwendung. Eine Probefirma funktioniert auch.  
   
-- Visual Studio 2015  
+- Visual Studio 2017  
   
 <a name="bkmk_goal"></a>
 
 ## <a name="goal-of-this-walkthrough"></a>Ziel dieser exemplarischen Vorgehensweise
 
-Wenn Sie diese exemplarische Vorgehensweise abschließen, können Sie eine einfache SPA-Anwendung in Visual Studio ausführen, über die sich der Benutzer authentifizieren und Daten aus Dynamics 365 (online) abrufen kann. Diese Anwendung besteht aus einer einzelnen HTML-Seite.  
+Wenn Sie diese exemplarische Vorgehensweise durchführen, können Sie eine einfache SPA-Anwendung in Visual Studio ausführen, die es einem Benutzer ermöglicht, sich zu authentifizieren und Daten von CDS for Apps abzurufen. Diese Anwendung besteht aus einer exemplarischen HTML-Seite.  
 
 Wenn Sie die Anwendung debuggen, gibt es zunächst nur eine Schaltfläche **Anmelden**.  
 
@@ -48,25 +46,27 @@ Klicken Sie auf **Anmelden**. Sie werden zu Anmeldeseite umgeleitet und geben Ih
 
 Nachdem Sie Ihre Anmeldeinformationen eingegeben haben, werden sie wieder zur HTML-Seite umgeleitet. Dort finden Sie die Schaltflächen **Anmelden**, **Abmelden** und **Firmen abrufen**. Sie sehen außerdem eine Begrüßung mit Informationen zu Ihrem Benutzerkonto.  
 
-Klicken Sie auf die Schaltfläche **Firmen abrufen**, um 10 Firmendatensätze Ihrer Dynamics 365-Organisation abzurufen. Die Schaltfläche **Firmen abrufen** ist wie im folgenden Screenshot dargestellt deaktiviert:  
+Klicken Sie auf die Schaltfläche **Get Accounts**, um 10 Kontendatensätze aus Ihrer CDS for Apps Organisation abzurufen. Die Schaltfläche **Firmen abrufen** ist wie im folgenden Screenshot dargestellt deaktiviert:  
   
 ![Die SimpleSPA-Seite](media/simple-spa.png "Die SimpleSPA-Seite")  
 
 > [!NOTE]
->  Das erstmalige Laden von Daten aus Dynamics 365 kann langsam sein während die Vorgänge zur Unterstützung der Authentifizierung stattfinden. Nachfolgende Vorgänge sind jedoch deutlich schneller.  
+>  Das anfängliche Laden von Daten aus CDS for Apps kann langsam sein, da die Vorgänge zur Unterstützung der Authentifizierung stattfinden, aber nachfolgende Vorgänge sind viel schneller.  
 
-Klicken Sie zuletzt auf die Schaltfläche **Abmelden**, um sich abzumelden.  
+Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abzumelden.  
 
 > [!NOTE]
 >  Diese SPA-Anwendung ist nicht als Muster zum Entwickeln von SPA-Anwendungen vorgesehen. Sie dient nur zu Beschreibung des Vorgangs der Registrierung und Konfiguration der Anwendung.  
+
+<a name="bkmk_createwebapp"></a>
+
+## <a name="create-a-web-application-project"></a>Erstellen eines Webanwendungsprojekts  
   
-### <a name="create-a-web-application-project"></a>Erstellen eines Webanwendungsprojekts  
+1.  Erstellen Sie mit Visual Studio 2017 ein neues **ASP.NET-Webanwendung**-Projekt und nutzen Sie die Vorlage **Leer**. Sie können das Projekt beliebig benennen.  
   
-1.  Erstellen Sie mit Visual Studio 2015 ein neues **ASP.NET-Webanwendung**-Projekt und nutzen Sie die Vorlage **Leer**. Sie können das Projekt beliebig benennen.  
+    Möglicherweise können Sie auch frühere Versionen von Visual Studio verwenden. Für diese Schritte wird jedoch Visual Studio 2017 verwendet.  
   
-    Möglicherweise können Sie auch frühere Versionen von Visual Studio verwenden. Für diese Schritte wird jedoch Visual Studio 2015 verwendet.  
-  
-2.  Fügen Sie eine neue HTML-Seite namens SimpleSPA.html zum Projekt hinzu und fügen Sie den folgenden Code ein:  
+2.  Fügen Sie dem Projekt eine neue HTML-Seite namens `SimpleSPA.html` hinzu und fügen Sie den folgenden Code ein:  
   
     ```html  
     <!DOCTYPE html>  
@@ -74,15 +74,15 @@ Klicken Sie zuletzt auf die Schaltfläche **Abmelden**, um sich abzumelden.
     <head>  
      <title>Simple SPA</title>  
      <meta charset="utf-8" />  
-     <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/adal.min.js"></script>  
+     <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.17/js/adal.min.js"></script>  
      <script type="text/javascript">  
       "use strict";  
   
       //Set these variables to match your environment  
-      var organizationURI = "https:// [organization name].crm.dynamics.com"; //The URL to connect to CRM (online)  
+      var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your CDS for Apps organization  
       var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
       var clientId = "[client id]"; //The ClientId you got when you registered the application  
-      var pageUrl = "http://localhost: [PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
+      var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
   
       var user, authContext, message, errorMessage, loginButton, logoutButton, getAccountsButton, accountsTable, accountsTableBody;  
   
@@ -96,7 +96,7 @@ Klicken Sie zuletzt auf die Schaltfläche **Abmelden**, um sich abzumelden.
        clientId: clientId,  
        postLogoutRedirectUri: pageUrl,  
        endpoints: endpoints,  
-       cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.  
+       cacheLocation: 'localStorage', 
       };  
   
       document.onreadystatechange = function () {  
@@ -176,7 +176,7 @@ Klicken Sie zuletzt auf die Schaltfläche **Abmelden**, um sich abzumelden.
   
        getAccountsButton.disabled = true;  
        var retrievingAccountsMessage = document.createElement("p");  
-       retrievingAccountsMessage.textContent = "Retrieving 10 accounts from " + organizationURI + "/api/data/v8.0/accounts";  
+       retrievingAccountsMessage.textContent = "Retrieving 10 accounts from " + organizationURI + "/api/data/v9.1/accounts";  
        message.appendChild(retrievingAccountsMessage)  
   
        // Function to perform operation is passed as a parameter to the aquireToken method  
@@ -193,7 +193,7 @@ Klicken Sie zuletzt auf die Schaltfläche **Abmelden**, um sich abzumelden.
        }  
   
        var req = new XMLHttpRequest()  
-       req.open("GET", encodeURI(organizationURI + "/api/data/v8.0/accounts?$select=name,address1_city&$top=10"), true);  
+       req.open("GET", encodeURI(organizationURI + "/api/data/v9.1/accounts?$select=name,address1_city&$top=10"), true);  
        //Set Bearer token  
        req.setRequestHeader("Authorization", "Bearer " + token);  
        req.setRequestHeader("Accept", "application/json");  
@@ -271,77 +271,112 @@ Klicken Sie zuletzt auf die Schaltfläche **Abmelden**, um sich abzumelden.
   
     ```  
   
-3.  Legen Sie diese Seite als Startseite für das Projekt fest  
+3.  Klicken Sie mit der rechten Maustaste auf die SimpleSPA.html-Datei und wählen Sie **Als Startseite festlegen**, um diese Seite als Startseite für das Projekt festzulegen.  
   
-4.  In die Eigenschaften des Projekts wählen Sie **Web** und unter **Server** die Option **Projekt-URL**. Sie sollte ungefähr so aussehen: `http://localhost:46575/`. Beachten Sie die Portnummer, die generiert wird. Sie benötigen diese im nächsten Schritt.  
+4.  In die Eigenschaften des Projekts wählen Sie **Web** und unter **Server** die Option **Projekt-URL**. Sie sollte ungefähr so aussehen: `http://localhost:62111/`. Beachten Sie die Portnummer, die generiert wird. Sie benötigen diese im nächsten Schritt.  
   
 5.  Innerhalb der Seite SimpleSPA.html finden Sie die folgenden Konfigurationsvariablen und legen Sie sie nach Bedarf fest. Sie können `clientId` festlegen, nachdem Sie den folgenden folgenden Teil dieser exemplarischen Verfahren gelesen haben.  
   
     ```javascript  
     //Set these variables to match your environment  
-    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to CRM (online)  
+    var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps CDS for Apps  
     var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
     var clientId = "[client id]"; //The ClientId you got when you registered the application  
     var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
   
     ```  
   
-### <a name="register-the-application"></a>Registrieren der Anwendung  
+## <a name="register-the-application"></a>Registrieren der Anwendung  
   
-1.  [Melden Sie sich an](http://manage.windowsazure.com) im Azure-Verwaltungsportal mithilfe eines Kontos mit Administratorberechtigungen. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten. Sie können auch auf das Azure-Portal über das Office 365 Administratoren-Center zugreifen, indem Sie das Element **ADMIN** im linken Navigationsbereich erweitern und **Azure AD** auswählen.  
+1.  [Melden Sie sich an](https://portal.azure.com) im Azure-Verwaltungsportal mithilfe eines Kontos mit Administratorberechtigungen. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten. Sie können auch auf das Azure-Portal über das Office 365 Administratoren-Center zugreifen, indem Sie das Element **ADMIN** im linken Navigationsbereich erweitern und **Azure AD** auswählen.  
   
-     Falls Sie keinen Azure-Mandanten (Konto) haben oder darüber zwar verfügen, aber Ihr Office 365-Abonnement mit Dynamics 365 (online) nicht in Ihrem Azure-Abonnement verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für die Entwickler-Website](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program), um die beiden Konten zuzuordnen.  
+     Wenn Sie keinen Azure-Mandaten (Konto) haben oder wenn Sie einen haben, aber Ihr Office 365-Abonnement mit CDS for Apps in Ihrem Azure-Abonnement nicht verfügbar ist, befolgen Sie die Anweisungen im Abschnitt [Azure Active Directory-Zugang für Ihre Entwicklerseite einrichten](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zu verbinden.  
   
-     Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](http://azure.microsoft.com/pricing/details/active-directory/)  
+     Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Mehr Informationen: [Active Directory Preisgestaltung Details](http://azure.microsoft.com/pricing/details/active-directory/).  
   
-2.  Klicken Sie auf **Active Directory** in der linken Spalte der Seite. Möglicherweise müssen Sie in der linken Spalte einen Bildlauf durchführen, um das Symbol und die Beschriftung von **Active Directory** zu sehen.  
+2.  Klicken Sie auf **Azure Active Directory** in der linken Spalte der Seite. Möglicherweise müssen Sie in der linken Spalte scrollen, um das **Azure Active Directory**-Symbol und die Bezeichnung zu sehen.  
   
-3.  Klicken Sie auf das gewünschte Mandantenverzeichnis in der Verzeichnisliste.  
+3.  Wählen Sie nun im sich öffnenden Fenster **Enterprise Applications** aus.
+
+![Unternehmensanwendungen auswählen](media/register-spa-app-registration.PNG)
+
+4.  Wählen Sie **Neue Anwendung** (oben auf der Seite) und dann unter **Eigene Anwendung hinzufügen** die Option **Anwendung, die Sie gerade entwickeln**.  
+
+![Wählen Sie die Anwendung, die Sie entwickeln möchten.](media/register-spa-app-you-developing.PNG)
   
-    ![Liste verfügbarer Active Directory-Einträge](media/azure-active-directory.PNG "Liste verfügbarer Active Directory-Einträge")  
-  
-    Wenn Ihr Azure-Mandantenverzeichnis in der Verzeichnisliste nicht angezeigt wird, klicken Sie auf **Hinzufügen**, und wählen Sie dann im Dialogfeld **Vorhandenes Verzeichnis verwenden** aus. Folgen Sie den bereitgestellten Eingabeaufforderungen und Anweisungen, und kehren Sie dann zu Schritt 1 zurück.  
-  
-4.  Wenn das Zielverzeichnis ausgewählt ist, klicken Sie auf **Anwendungen** (am oberen Seitenrand), und klicken Sie dann auf **Hinzufügen**.  
-  
-5.  Klicken Sie im Dialogfeld **Wie möchten Sie vorgehen?** auf **Hinzufügen einer Anwendung, die meine Organisation entwickelt**.  
-  
-6.  Wenn Sie zur dazu aufgefordert werden, geben Sie einen Namen für die Anwendung ein (z. B. "SimpleSPA"), wählen Sie den Typ aus: **Webanwendung und/oder Web-API**, und wählen Sie dann zum Fortfahren den rechten Pfeil. Klicken Sie auf das Fragezeichen **?**, um weitere Informationen über die entsprechenden Werte für jedes Eingabefeld zu erhalten.  
+5.  Klicken Sie nun auf **Ok, bringen Sie mich zu App Registrierungen, um meine neue Anwendung zu registrieren**.
+
+![Wählen Sie Ok, bringen Sie mich zu den App-Registrierungen.](media/register-spa-take-me-app-reg.PNG)
+
+6.  Klicken Sie nun auf **Registrierung neuer Anwendungen** (oben auf der Seite).  
+
+![Wählen Sie die Registrierung einer neuen Anwendung](media/register-spa-new-reg.PNG)
   
 7.  Geben Sie die folgenden Informationen ein:  
   
-    **Anmelde-URL**  
-    Dies ist die URL, zu der Benutzer nach der Anmeldung umgeleitet werden. Für Debugzwecke in Visual Studio sollte sie `http://localhost:####/SimpleSPA.html` sein, wobei #### die Portnummer darstellt, die Sie in Schritt 4 der Vorgehensweise **Erstellen eines Webanwendungsprojektes** erhalten haben.  
-  
-    **APP ID URI**  
-    Hierbei muss es sich um einen eindeutigen Bezeichner für die Anwendung handeln. Verwenden Sie `https://XXXX.onmicrosoft.com/SimpleSPA`, wobei XXXX der Active Directory-Mandant ist.  
-  
-8.  Mit der Registerkarte die neu registrierten App ausgewählt klicken Sie auf **Konfigurieren**, suchen Sie **Client-ID** und kopieren Sie die ID.  
+  - **Name**<br />Der Name der Anwendung.
+
+  - **Web-Anwendungstyp**<br />Wählen Sie **Web App/API**.
+
+  - **Anmelde-URL**<br />Dies ist die URL, zu der Benutzer nach der Anmeldung umgeleitet werden. Für Debugzwecke in Visual Studio sollte sie `http://localhost:####/SimpleSPA.html` sein, wobei #### die Portnummer darstellt, die Sie in Schritt 4 der Vorgehensweise [Erstellen eines Webanwendungsprojektes](#bkmk_createwebapp) erhalten haben.  
+
+![Details eingeben](media/register-spa-enter-details.PNG)
+    
+8. Klicken Sie dann am Ende der Seite auf **Erstellen**.
+
+9.  Kopieren Sie auf der Registerkarte der neu registrierten Anwendung die **Anwendungs-ID**.  
   
     Legen Sie die `clientId`-Variablen auf der Seite SimpleSPA.html auf diesen Wert fest. Siehe Schritt 5 der Vorgehensweise. **Erstellen eines Webanwendungsprojekt**.  
+
+10. Klicken Sie nun auf **Einstellungen** und wählen Sie dann **Erforderliche Berechtigungen**.
+
+![Erforderliche Berechtigungen auswählen](media/register-spa-settings-permissions.PNG)
+
+11. Klicken Sie auf **Hinzufügen** und wählen Sie dann **Eine API auswählen**. Wählen Sie nun **Dynamics CRM Online** und klicken Sie am Ende der Seite auf **Auswählen**.
+
+![Wählen Sie Dynamics CRM Online unter Auswahl einer API.](media/register-spa-permission-dyncrm.PNG)
+
+12. Wählen Sie nun auf der Registerkarte **Ausgewählte Berechtigungen** alle **delegierten Berechtigungen** aus und klicken Sie am Ende der Seite auf **Auswählen**.
+
+![Alle delegierten Berechtigungen auswählen](media/register-spa-del-permissions.PNG)
+
+13. Wählen Sie dann **Fertig**. Sie sehen eine Zeile für **Dynamics CRM Online** hinzugefügt.
+
+![Neue Zeile für Dynamics CRM Online wurde hinzugefügt.](media/register-spa-row-dyncrm.PNG)
+
+14. Schließen Sie nun die Registerkarte **Einstellungen**. Wählen Sie auf der Registerkarte der registrierten App die Option **Manifest**.
+
+15. Klicken Sie auf **Bearbeiten** und suchen Sie die Linie: `"oauth2AllowImplicitFlow": false,` und ändern Sie `false` in `true` und klicken Sie dann auf **Speichern**, um die Datei zu speichern.
+
+![Setzt oauth2AllowImplicitFlow in der Manifestdatei auf true.](media/register-spa-edit-manifest.PNG)
+
+16. Für eine erfolgreiche Ausführung Ihrer Anwendung müssen Sie außerdem die Zustimmung des Administrators erteilen. Melden Sie sich dazu als Mandantenadministrator in Ihrem Azure Management Portal an und wählen Sie **Azure Active Directory**. Klicken Sie dann auf **Enterprise Applications** und wählen Sie aus der Liste der angezeigten Anwendungen die Anwendung aus, die Sie gerade erstellt haben.
+
+![Erteilen Sie dem Administrator die Zustimmung zu Ihrer Anwendung.](media/simple-spa-admin-consent.PNG)
+
+17. Wählen Sie nun wie oben gezeigt **Berechtigungen** aus und klicken Sie auf **Zustimmung des Administrators gewähren**`<your AAD Org name>`.
+
+![Klicken Sie auf die Schaltfläche Einwilligung des Administrators gewähren.](media/simple-spa-admin-consent-button.PNG)
+
+18. Sobald Sie auf diese Schaltfläche klicken, öffnet sich ein Anmeldefenster und fragt Sie, ob Sie Ihrer Anwendung die erforderlichen Berechtigungen erteilen möchten. Klicken Sie zum Fortfahren auf **Akzeptieren**.
+
+![Klicken Sie auf Akzeptieren, um die angeforderten Berechtigungen zu erteilen.](media/simple-spa-admin-consent-click-accept.PNG)
+
+19. Sobald dies erledigt ist, fahren Sie mit dem Debuggen der Anwendung fort.
+
+## <a name="debugging-the-application"></a>Debuggen der Anwendung  
   
-9. Führen Sie einen Bildlauf nach unten durch und klicken Sie auf **Anwendung hinzufügen**. Wählen Sie im Dialogfeld **Dynamics 365 Online** aus und Schließen Sie das Dialogfeld.  
-  
-10. Die "Berechtigungen für andere Anwendungen" finden Sie eine Zeile für **Dynamics 365 Online** und **Delegierte Berechtigungen: 0**. Wählen Sie diese und fügen Sie **Zugriff auf Dynamics 365 (online) als Organisationsbenutzer** hinzu.  
-  
-11. Speichern der Anwendungsregistrierung  
-  
-12. Wählen Sie unten **Manifest verwalten** und **Manifest herunterladen** aus.  
-  
-13. Öffnen Sie die JSON-Datei, die Sie heruntergeladen und suchen Sie die Zeile `"oauth2AllowImplicitFlow": false,` und ändern Sie `false` zu `true` und speichern Sie die Datei.  
-  
-14. Wechseln Sie wieder zu **Manifest verwalten**. Wählen Sie **Upload-Manifest** aus und laden Sie die JSON-Datei hoch, die Sie gerade gespeichert haben.  
-  
-### <a name="debugging-the-application"></a>Debuggen der Anwendung  
-  
-1.  Legen Sie als Browser die Verwendung von Microsoft Edge, Google Chrome oder Mozilla Firefox fest.  
+1.  Stellen Sie den Browser so ein, dass er Microsoft Edge oder Google Chrome verwendet.  
   
     > [!NOTE]
     > Internet Explorer funktioniert in diesem Fall nicht für das Debuggen.  
   
 2.  Drücken Sie F5, um das Debuggen zu starten. Sie sollten das in [Ziel dieser exemplarischen Vorgehensweise](walkthrough-registering-configuring-simplespa-application-adal-js.md#bkmk_goal) beschriebene Verhalten erwarten.  
   
-     Wenn Sie nicht die erwarteten Ergebnisse erhalten, prüfen Sie die Werte, die Sie bei der Registrierung der Anwendung und der Konfiguration des SimpleSPA.html-Codes festgelegt haben.  
+Wenn Sie nicht die erwarteten Ergebnisse erhalten, überprüfen Sie die Werte, die Sie bei der Registrierung der Anwendung und der Konfiguration des `SimpleSPA.html`-Codes eingestellt haben.  
   
-### <a name="see-also"></a>Siehe auch  
- [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung mit Dynamics 365 (online) zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen von Client-Anwendungen](connect-cds.md)<br />
+ [Tutorial: Registrieren Sie eine App bei Azure Active Directory](walkthrough-register-app-azure-active-directory.md) <br />
+ [Erstellen von Webanwendungen mit Hilfe der Server zu Server(S2S)-Authentifizierung](build-web-applications-server-server-s2s-authentication.md)<br />
+ [Verwenden Sie OAuth mit Cross-Origin Resource Sharing, um eine Single Page Application mit CDS für Apps zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)

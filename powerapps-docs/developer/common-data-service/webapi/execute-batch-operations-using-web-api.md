@@ -62,10 +62,7 @@ Das Batchende muss einen Indikator für das Beenden wie den folgenden enthalten:
   
 ```  
 --batch_WKQS9Yui9r--  
-```  
-  
->[!NOTE]
->  Die odata.continue-on-error Einstellung wird von der Internet-API unterstützt. Jeder Fehler, der im Batch auftritt, beendet die Verarbeitung des restlichen Batches.  
+```   
   
 <a name="bkmk_ChangeSets"></a>
 

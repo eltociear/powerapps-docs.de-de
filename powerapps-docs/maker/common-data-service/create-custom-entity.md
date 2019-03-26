@@ -1,12 +1,12 @@
 ---
-title: 'Lernprogramm zum Erstellen einer benutzerdefinierten Entität, die Komponenten mit PowerApps | Microsoft Docs'
-description: Schritt-für-Schritt-Anleitung zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer PowerApps-App.
+title: 'Erstellen einer benutzerdefinierten Entität, die Komponenten enthält, mit PowerApps | Microsoft Docs'
+description: Thema zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer PowerApps-App.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: tutorial
-ms.date: 06/22/2018
+ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -15,11 +15,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-create-a-custom-entity-that-has-components-in-powerapps"></a>Lernprogramm: Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen
+# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen
 
 Mit PowerApps können eine modellgesteuerte App genauer an die Branche, Benennungsstandards und besonderen Geschäftsprozesse Ihrer Organisation anpassen. PowerApps-App-Entwicklung umfasst das Hinzufügen von Standard" vordefinierten Entitäten oder zum Erstellen benutzerdefinierter Entitäten. Eine Entität definiert die Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. 
 
-In diesem Lernprogramm erstellen Sie eine Entität und fügen Schlüsselkomponenten wie Felder, Beziehungen, Ansichten und Formularen hinzu und bearbeiten sie. Informationen zu:
+In diesem Thema erstellen Sie eine Entität und fügen Schlüsselkomponenten wie Felder, Beziehungen, Ansichten und Formularen hinzu und bearbeiten sie. Informationen zu:
 
 - Erstellen einer benutzerdefinierten Entität.
 - Fügen Sie benutzerdefinierte Felder der Entität hinzu
@@ -27,7 +27,7 @@ In diesem Lernprogramm erstellen Sie eine Entität und fügen Schlüsselkomponen
 - Anpassen von Ansichten 
 - Formular anpassen
 
-Dieses Lernprogramm folgt der Firma Contoso, die ein Haustierpflegeunternehmen hat, das Hunde und Katzen betreut. Contoso erfordert eine App für Client- und Haustiernachverfolgung von Mitarbeitern, die mit einer Reihe unterschiedlicher Geräte verwendet werden kann.
+Dieses Thema folgt der Firma Contoso, die ein Haustierpflegeunternehmen hat, das Hunde und Katzen betreut. Contoso erfordert eine App für Client- und Haustiernachverfolgung von Mitarbeitern, die mit einer Reihe unterschiedlicher Geräte verwendet werden kann.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -117,17 +117,16 @@ Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm
 
 Überspringen Sie diesen Schritt, wenn Sie nur die Haustierentität in einer Canvas-App verwenden möchten. 
 
-1. Im linken Navigationsbereich der PowerApps wählen Sie die Option **Modell-angetrieben** aus.
-2. Klicken Sie im linken Navigationsbereich auf **Daten** erweitern und wählen Sie **Entitäten** und wählen Sie dann im Hauptbereich **Haustier** aus.
-3. Wählen Sie die Registerkarte **Formulare**, und wählen Sie dann **Informationen** neben dem Formulartyp **Hauptformular** aus, um den Formular-Editor zu öffnen.
+1. Klicken Sie im linken Navigationsbereich auf **Daten** erweitern und wählen Sie **Entitäten** und wählen Sie dann im Hauptbereich **Haustier** aus.
+2. Wählen Sie die Registerkarte **Formulare**, und wählen Sie dann **Informationen** neben dem Formulartyp **Hauptformular** aus, um den Formular-Editor zu öffnen.
     > [!div class="mx-imgBorder"] 
     > ![Hauptformular bearbeiten](media/create-custom-entity/main-form-edit.png)
-4. Im Formulareditor Ziehen Sie die Felder **Spezies**, **Zucht**, **Termindatum** und **Firma** im Explorer-Bereich in den Abschnitt Allgemein im Formularcanvas bis das Formular wie dieses aussieht.
+3. Im Formulareditor Ziehen Sie die Felder **Spezies**, **Zucht**, **Termindatum** und **Firma** im Explorer-Bereich in den Abschnitt Allgemein im Formularcanvas bis das Formular wie dieses aussieht.
     > [!div class="mx-imgBorder"] 
     > ![Wählen Sie die Felder vom Hauptformular](media/create-custom-entity/main-form-edit2.png) 
-5. Wählen Sie **Speichern** aus.
-6. Wählen Sie **Veröffentlichen** aus.
-7. Klicken Sie auf **Speichern und schließen**, um den Formular-Editor zu schließen.
+4. Wählen Sie **Speichern** aus.
+5. Wählen Sie **Veröffentlichen** aus.
+6. Klicken Sie auf **Speichern und schließen**, um den Formular-Editor zu schließen.
 
 ## <a name="add-the-custom-entity-to-an-app"></a>Fügen Sie die benutzerdefinierte Entität einer App hinzu
 
@@ -135,6 +134,6 @@ Ihre Entität ist nun bereit, um entweder eine Canvas oder Modell-angetriebene A
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Lernprogramm erfuhren Sie, wie Sie eine Entität erstellen, die verwendet werden kann, um eine nützliche App zu erstellen. 
+In diesem Thema erfuhren Sie, wie Sie eine Entität erstellen, die verwendet werden kann, um eine nützliche App zu erstellen. 
 - Sie können erfahren, wie eine Modell-angetriebene App erstellt wird[Erstellen Sie Ihre erste Modell-angetriebene App](../model-driven-apps/build-first-model-driven-app.md).
 - Hier erfahren Sie, wie Sie eine Canvas-App erstellen, vgl. [Erstellen Sie eine App neu](../canvas-apps/get-started-create-from-blank.md).

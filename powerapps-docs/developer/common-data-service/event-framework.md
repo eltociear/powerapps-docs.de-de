@@ -18,8 +18,8 @@ search.app:
 # <a name="event-framework"></a>Ereignisframework
 
 <!-- Re-write from
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-event-framework
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/event-execution-pipeline
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-event-framework
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/event-execution-pipeline
 
 See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7tBtIIB4VZmvasZ1Nsbl4F5zlD1ZQ?e=FNlBmr 
 
@@ -27,9 +27,9 @@ See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7t
 Make sure to call out the changes due to the legacy update messages. That information was moved.
 
 See 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
 
 
 -->
@@ -61,6 +61,33 @@ Ein Schritt enthält die Informationen, auf welche Message die Erweiterung reagi
 Im Allgemeinen können Sie wie, eine Meldung für die meisten **Anforderungs*klassen in oder <xref:Microsoft.Crm.Sdk.Messages> in den Namespaces<xref:Microsoft.Xrm.Sdk.Messages> benötigen, aber Sie erhalten außerdem Beiträge für alle benutzerdefinierten Aktionen, die in der Organisation erstellt wurden. Vorgänge mit Einbezug von Entitätsmetadaten sind nicht verfügbar.
 
 Daten über organisationsübergreifende Messages werden in [SDK-Message](reference/entities/sdkmessage.md) und im [SdkMessageFilter](reference/entities/sdkmessagefilter.md) gespeichert. Das Plug-In-Registrierungstool filtert diese Informationen, um nur gültige Nachrichten anzuzeigen.
+
+Um zu überprüfen, ob eine Kombination aus Nachricht und Entität die Ausführung von Plugins mit einer Datenbankabfrage unterstützt, verwenden Sie die erweiterte Suche oder ein Community-Tool (z. B. [FetchXML Builder](http://fxb.xrmtoolbox.com)), um die folgende fetchXML-Abfrage auszuführen. Wenn Sie die erweiterte Suche verwenden, müssen Sie die Abfrage interaktiv erstellen.
+
+```xml
+<fetch>
+  <entity name='sdkmessage' >
+    <attribute name='name' />
+    <link-entity name='sdkmessagefilter' alias='filter' to='sdkmessageid' from='sdkmessageid' link-type='inner' >
+      <filter type='and' >
+        <condition attribute='iscustomprocessingstepallowed' operator='eq' value='1' />
+        <condition attribute='isvisible' operator='eq' value='1' />
+      </filter>
+      <attribute name='primaryobjecttypecode' />
+    </link-entity>
+    <filter>
+      <condition attribute='isprivate' operator='eq' value='0' />
+      <condition attribute='name' operator='not-in' >
+        <value>SetStateDynamicEntity</value>
+        <value>RemoveRelated</value>
+        <value>SetRelated</value>
+       <value>Execute</value>
+      </condition>
+    </filter>
+    <order attribute='name' />
+  </entity>
+</fetch>
+```
 
 > [!CAUTION]
 > Die `Execute` Nachricht ist verfügbar, aber Sie sollten Erweiterungen in der Regel nicht registrieren, da diese von jedem Vorgang erstellt werden.
@@ -94,27 +121,4 @@ Wenn Ihre Erweiterung ein Plug-In ist, empfängt Sie ein Parameter, der die <xre
 
 Wenn die Erweiterung ein Internet-Hook oder ein Azure Servicebusendpunkt ist, stehen die Daten, die zum registrierten Endpunkt im Formular <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext> veröffentlicht werden, in dem Formular, <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> und <xref:Microsoft.Xrm.Sdk.IExecutionContext>, das beide implementiert
 
-### <a name="information-about-the-operation"></a>Informationen über einen Vorgang
-
-Die Eigenschaften der <xref:Microsoft.Xrm.Sdk.IExecutionContext> Benutzeroberfläche sind die meisten Informationen über den Vorgang, der angezeigt wird.
-
-Zwei der Schlüsseleigenschaften zum Ereignis werden im <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> und <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters> in den Eigenschaften gefunden. Diese <xref:Microsoft.Xrm.Sdk.ParameterCollection>-Werte enthalten die Daten des Vorgangs.
-
-Alle Eigenschaften von <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> sind schreibgeschützt, aber die Erweiterung werden die Inhalte von Eigenschaften ändern, die diese haben.
-
-In den **PreValidation** Phasen und der Eigenschaft **PreOperation** enthält <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> die Parameter für die<xref:Microsoft.Xrm.Sdk.OrganizationRequest>-Klasse.
-
-In der **PostOperations-Phase** enthält das  <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>die  die<xref:Microsoft.Xrm.Sdk.OrganizationResponse>-Klasse, die durch den Vorgang zurückgegeben wird.
-
-### <a name="shared-variables"></a>Freigegebene Variablen
-
-Die <xref:Microsoft.Xrm.Sdk.IExecutionContext.SharedVariables>-Eigenschaft lässt das Einschließen von Daten zu, die von einem Plug-In an einen Schritt übergeben werden können, der später in der Ausführungspipeline auftritt. Da dies ein <xref:Microsoft.Xrm.Sdk.ParameterCollection>-Wert ist, können Plug-Ins Eigenschaften hinzufügen, lesen oder ändern, um Daten für nachfolgende Schritten freizugeben.
-
-### <a name="entity-images"></a>Entitätsbilder
-
-Wenn Sie einen Schritt für ein Plug-In registrieren, das eine Entität vom Datenmigrations-Assistenten als einen der Parameter enthält, haben Sie die Möglichkeit anzugeben, ob eine Kopie der Entitätsdaten als *Momentaufnahme* oder Bild mit der <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> und/oder <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages> Eigenschaft ist.
-
-Diese Daten stellen einen Vergleichspunkt für Entitätsdaten zur Verfügung, während sie durch die Ereignispipeline durchfließt. Mithilfe dieser Bilder kann eine bessere Leistung bereitgestellt werden, anstelle Code in einen Plug-In einzubeziehen, um eine Entität abzurufen, oder um nur die Attributwerte zu vergleichen.
-
-
-
+Weitere Informationen zum Ausführungskontext finden Sie unter [Verstehen des Ausführungskontexts](understand-the-data-context.md).

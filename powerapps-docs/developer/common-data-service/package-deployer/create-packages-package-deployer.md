@@ -31,9 +31,9 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 ## <a name="prerequisites"></a>Voraussetzungen  
 
 - Stellen Sie sicher, dass Sie alle Lösungen und Dateien haben, die Sie in Paket einschließen möchten.  
-- Microsoft .NET Framework 4.5.2
-- Visual Studio 2012, Visual Studio 2013 oder Visual Studio 2015
-- NuGet Package Manager für [Visual Studio 2012](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c), [Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/4ec1526c-4a8c-4a84-b702-b21a8f5293ca) oder [Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d)
+- Microsoft .NET Framework 4.6.2
+- Visual Studio 2015 oder Visual Studio 2017
+- NuGet Package Manager für [Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d)
     - In Visual Studio 2017 werden NuGet und der NuGet-Paket-Manager automatisch installiert, wenn Sie alle .NET-bezogenen Workloads auswählen.
 - Microsoft Dynamics CRM SDK-Vorlagen für Visual Studio, die die Paketvorlage enthalten. Sie können es erhalten, indem Sie die [Microsoft Dynamics CRM SDK-Vorlagen](http://go.microsoft.com/fwlink/p/?LinkId=400925) herunterladen und auf die `CRMSDKTemplates.vsix`-Datei doppelklicken, um die Vorlage in Visual Studio zu installieren.  
 
@@ -59,7 +59,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 2. Im Dialogfeld **Neues Projekt**: 
 
    1. Erweitern Sie in der Liste der installierten Vorlagen **Visual C#**, und wählen Sie **Dynamics 365-SDK Vorlagen** aus.  
-   2. Stellen Sie sicher, dass **.NET Framework 4.5.2** ausgewählt ist.  
+   2. Stellen Sie sicher, dass **.NET Framework 4.6.2** ausgewählt ist.  
    3. Wählen Sie das **Dynamics 365-Paket** aus.  
    4. Geben Sie den Namen und den Standort des Projekts an, und klicken Sie auf **OK**.  
 

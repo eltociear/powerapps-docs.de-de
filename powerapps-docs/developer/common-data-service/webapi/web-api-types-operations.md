@@ -2,7 +2,7 @@
 title: Web-API-Typen und -vorgänge (Common Data Service für Apps) | Microsoft Docs
 description: 'Dieses Thema beschreibt, was für Sie verfügbar ist, um die Web-API vis-a-vis zu verwenden. Es informiert über wichtige Themen und darüber, wie Sie benötigte Informationen in der Dokumentation finden, die aus Service- und Metadaten-Dokumenten erstellt wurde und aus der Dokumentation zu Systementitätstypen, Funktionen und Aktionen'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/05/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -252,19 +252,20 @@ OData unterstützt eine Vielzahl von Datentypen, aber Common Data Service für A
 |Memo|Edm.String|Reihenfolge von UTF-8-Zeichen|  
 |Zahlung|Edm.Decimal|Numerische Werte mit fester Genauigkeit und Skala|  
 |Eigentümer|einzelwertige Navigationseigenschaften|Ein Verweis auf <xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" />. Systemuser- und Team-Entitättypen erben ihre ownerid-Eigenschaft vom prinzipalen Entitätstyp.|  
+|Bei Auswahllistenattributen ist keine Texteingabe möglich.|Edm.Int32|32-Bit-Ganzzahl|  
+|Status|Edm.Int32|32-Bit-Ganzzahl|  
+|Status|Edm.Int32|32-Bit-Ganzzahl|  
+|String|Edm.String|Reihenfolge von UTF-8-Zeichen|  
+|Uniqueidentifier|Edm.Guid|eindeutiger Bezeichner des 16-Bytes (128-Bit)|  
+
 <!-- TODO:
 |PartyList|Collection-valued navigation property to the `activityparty` entity type.|The activitypartyparticipationtypemask property contains a value to represent the role of the participant. See [Activity Party Types](../activityparty-entity.md#ActivityPartyTypes) for more information.|   -->
-|Picklist|Edm.Int32|ganze 32-Bit-Zahl mit Vorzeichen|  
-|State|Edm.Int32|ganze 32-Bit-Zahl mit Vorzeichen|  
-|Status|Edm.Int32|ganze 32-Bit-Zahl mit Vorzeichen|  
-|String|Edm.String|Reihenfolge von UTF-8-Zeichen|  
-|Uniqueidentifier|Edm.Guid|eindeutiger 16-Byte-(128-Bit)-Bezeichner|  
-  
+
 <a name="bkmk_lookupProperties"></a>
  
 ### <a name="lookup-properties"></a>Such-Eigenschaften
 
-Für die meisten einzelwertigen Navigationseigenschaften finden Sie eine berechnete, schreibgeschützte Eigenschaft, die die folgende Namenskonvention verwendet: `_<name>_value` wo `<name>` dem Namen der einzelwertigen Navigationseigenschaft entspricht. Ausnahmen zu diesem Muster bildet ein Suchattribut einer Entität, das mehrere Typen von Entitätsverweisen annehmen kann. Ein allgemeines Beispiel dafür ist das `incident` `customerid` Entitätsattribut, das als Referenz gesetzt werden kann und entweder eine `contact` oder `account` Entität ist. Unter <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Einzelwertige Navigationseigenschaften](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties) finden Sie `customerid_account` und `customerid_contact` als separate einzelwertige Navigationseigenschaften, um den Kunden widerzuspiegeln, der der Verkaufschance zugeordnet ist. Wenn diese einzelwertige Navigationseigenschaften festgelegt ist, wird die andere auf Null gesetzt, weil sie an das `customerid`-Attribut gebunden sind. Unter den <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Eigenschaften](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) finden Sie eine `_customerid_value`-Sucheneigenschaft, die denselben Wert enthält, der für die einzelwertigen Navigationseigenschaften festgelegt ist, die einen Wert enthalten.  
+Für die meisten einzelwertigen Navigationseigenschaften finden Sie eine berechnete, schreibgeschützte Eigenschaft, die die folgende Namenskonvention verwendet: `_<name>_value` wo `<name>` dem Namen der einzelwertigen Navigationseigenschaft entspricht. Ausnahmen zu diesem Muster bildet ein Suchattribut einer Entität, das mehrere Typen von Entitätsverweisen annehmen kann. Ein allgemeines Beispiel dafür ist das `incident` `customerid` Entitätsattribut, das als Referenz gesetzt werden kann und entweder eine `contact` oder `account` Entität ist. Unter <xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Einzelwertige Navigationseigenschaften](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Single-valued_navigation_properties) finden Sie `customerid_account` und `customerid_contact` als separate einzelwertige Navigationseigenschaften, um den Kunden widerzuspiegeln, der der Verkaufschance zugeordnet ist. Wenn diese einzelwertige Navigationseigenschaften festgelegt ist, wird die andere auf Null gesetzt, weil sie an das `customerid`-Attribut gebunden sind. Unter den [<xref href="Microsoft.Dynamics.CRM.incident?text=incident EntityType" /> [Eigenschaften](/dynamics365/customer-engagement/web-api/incident?view=dynamics-ce-odata-9#Properties) finden Sie eine `_customerid_value`-Sucheneigenschaft, die denselben Wert enthält, der für die einzelwertigen Navigationseigenschaften festgelegt ist, die einen Wert enthalten.  
   
 Im Allgemeinen sollten Sie keine Sucheigenschaften verwenden und stattdessen die entsprechenden einzelwertigen Navigationseigenschaften verwenden. Diese Eigenschaften sind eingeschlossen, weil sie möglicherweise für bestimmte Integrationsszenarien hilfreich sein können. Diese Eigenschaften sind schreibgeschützt und berechnet, weil sie einfach die Änderungen wiedergeben, die mithilfe der entsprechenden einzelwertigen Navigationseigenschaft angewendet werden.  
   

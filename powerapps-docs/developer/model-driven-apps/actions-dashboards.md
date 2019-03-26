@@ -22,7 +22,7 @@ search.app:
 
 # <a name="actions-on-dashboards"></a>Aktionen für Dashboards
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->
 
 Sie können fAktionen ausführen, wie Dashboards im Besitz der Organisation und im Besitz des Benutzers erstellen, abrufen, aktualisieren oder löschen.  
   

@@ -2,7 +2,7 @@
 title: Verwenden des allgemeinen XRM-Tooling-Anmeldesteuerelements in Ihren Client-Anwendungen (Common Data Service für Apps) | Microsoft Docs
 description: 'Das „CDS für Apps”-SDK stellt Ihnen eine Vorlage für Visual Studio bereit, mit dessen Hilfe Sie das allgemeine Anmeldungssteuerelement in Ihren Client-Anwendungen verwenden können. Der Code für die „CDS für Apps”-Authentifizierung, das Speichern und Abrufen von Anmeldeinformationen und das diagnostische Protokollieren, sind in der Vorlage integriert, so dass Sie diese Funktionen in Ihren Windows-Client-Anwendungen für CDS für Apps schnell nutzen können.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/16/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -25,24 +25,22 @@ search.app:
 
 Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungssteuerelement in den Client-Anwendungen verwenden können. Der Code für die „CDS für Apps”-Authentifizierung, das Speichern und Abrufen von Anmeldeinformationen und das diagnostische Protokollieren, sind in der Vorlage integriert, so dass Sie diese Funktionen in Ihren Windows-Client-Anwendungen für CDS für Apps schnell nutzen können. Das allgemeine Anmeldungssteuerelement ist eine Implementierung des <xref:Microsoft.Xrm.Tooling.CrmConnectControl>, wobei das Steuerelement dem folgenden Bild gleicht.  
   
- <!--TODO:
- ![XRM Tooling common login control](../media/crm-sdk-v6-commonlogincontrol.png "XRM Tooling common login control")   -->
+ 
+ ![XRM-Tooling-Anmeldungssteuerelement](../media/crm-sdk-v6-commonlogincontrol.png "XRM-Tooling-Anmeldungssteuerelement")
   
 <a name="Prereq"></a>
 
 ## <a name="prerequisites"></a>Voraussetzungen
   
-- .NET Framework 4.5.2
-- Visual Studio 2012 oder höher
-- NuGet-Paket-Manager für Ihre Version von Visual Studio  
+- .NET Framework 4.6.2
+- Visual Studio 2017 (empfohlen)
 - Mit dem Internet verbunden, sodass Sie die erforderlichen Nuget-Pakete herunterzuladen und wiederherstellen können, während Sie die Projektvorlage verwenden.  
-- CRM-SDK-Vorlagenvorlagen für Visual Studio, die die allgemeine Anmeldesteuerelementvorlage enthält. Sie können sie erhalten durch Herunterladen der [Microsoft Dynamics CRM SDK-Vorlagen](http://go.microsoft.com/fwlink/p/?LinkId=400925) aus der Visual Studio-Galerie und durch Doppelklicken auf die `CRMSDKTemplates.vsix`-Datei zum Installieren der Vorlage in Visual Studio.  
   
 <a name="NewProjectUsingTemplate"></a>
    
 ## <a name="create-a-wpf-application-using-the-common-login-control-template"></a>Erstellen einer WPF-Anwendung mithilfe der allgemeinen Anmeldungssteuerelement-Vorlage
   
- Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foundation (WPF)-Anwendung zu erstellen, die das allgemeine Anmeldungssteuerelement verwendet sowie den zugrundeliegenden Code für die Authentifizierung, das Speichern und Wiederverwenden von Anmeldeinformationen und das standardmäßig Rückverfolgen oder Protokollieren.  
+Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foundation (WPF)-Anwendung zu erstellen, die das allgemeine Anmeldungssteuerelement verwendet sowie den zugrundeliegenden Code für die Authentifizierung, das Speichern und Wiederverwenden von Anmeldeinformationen und das standardmäßig Rückverfolgen oder Protokollieren.  
   
 1.  Starten Sie Visual Studio, und erstellen Sie ein neues Projekt.  
 2.  Im Dialogfeld **Neues Projekt**:  
@@ -51,8 +49,17 @@ Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungsst
     3.  Wählen Sie **WPF-Anwendung für Dynamics 365** aus.  
     4.  Geben Sie den Namen und den Standort des Projekts an, und klicken Sie auf **OK**.  
   
- <!-- TODO:
- ![WPF Application for CDS for Apps template](../media/crm-sdk-v6-xrmtooling-newproject.png "WPF Application for CDS for Apps template")   -->
+> [!div class="mx-imgBorder"]
+> ![WPF-Anwendung für CDS für App-Vorlage](../media/crm-sdk-v6-xrm-tooling-newproject.png "WPF-Anwendung für CDS für App-Vorlage")   
+
+> [!NOTE]
+> **Bekannte Probleme mit Visual Studio 2015**
+> 
+> Wenn Sie Ihr Projekt/Lösung in VS 2015 im Debug-Modus ausführen, können Sie möglicherweise keine Verbindung herstellen. Dies geschieht unabhängig davon, ob Sie ein Zielframework von 4.6.2 oder höher verwenden. Dies kann auftreten, weil der Visual Studio-Hostingprozess gegen .NET 4.5 kompiliert ist, was bedeutet, dass er standardmäßig TLS 1.2 nicht unterstützt. Sie können den Visual Studio-Hostingprozess als Umgehung deaktivieren. 
+>
+> Klicken Sie mit der rechten Maustaste auf den Namen Ihres Projekts in Visual Studio und dann auf **Eigenschaften**. Auf der Registerkarte **Debuggen** können Sie die Option **Visual Studio Hostingprozess aktivieren** deaktivieren. 
+>
+> Dies wirkt sich nur auf das Debugging-Umgebung in VS 2015 aus. Es hat keinen Einfluss auf die erstellten Binärdateien bzw. ausführbaren Datei. Das gleiche Problem tritt nicht in Visual Studio 2017 auf.
   
 3.  So testen Sie das Projekt:  
   
@@ -76,18 +83,20 @@ Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungsst
   
     2.  Erweitern Sie im Dialogfeld **Neues Element hinzufügen** in der Liste der installierten Vorlagen **Visual C#**, und wählen Sie **„CDS für Apps”-SDK-Vorlagen** aus. Klicken Sie auf **„CDS für Apps”„”-Anmeldungsformular für WPF-Anwendungen**, und klicken Sie auf **OK**.  
   
- <!--TODO:
- ![Add the common login control template](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Add the common login control template")   -->
+ 
+ > [!div class="mx-imgBorder"]
+ > ![Hinzufügen der Anmeldungssteuerelementvorlage](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "Hinzufügen der Anmeldungssteuerelementvorlage")
   
 3.  Das neu hinzugefügte `CrmLoginForm1.xaml`-Anmeldungssteuerelement wirds im XAML-Designerbreich angezeigt. Falls es nicht angezeigt wird, doppelklicken Sie auf die Datei `CrmLoginForm1.xaml` im Bereich **Projektmappen-Explorer**.  
   
- <!--TODO: 
-![Verify that the login control renders properly](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Verify that the login control renders properly")   -->
+ 
+![Überprüfen, ob das Anmeldungssteuerelement ordnungsgemäß rendert](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Überprüfen, ob das Anmeldungssteuerelement ordnungsgemäß rendert")
   
 4.  Sie müssen jetzt das neu hinzugefügte Anmeldungssteuerelement aus Ihrer Anwendung aufrufen. Fügen Sie dazu ein Steuerelement **Schaltfläche** für Ihre Datei `MainWindow.xaml` hinzu, und legen Sie den Namen und den Inhalt jeweils auf **btnSignIn** und **Bei CDS für Apps anmelden** fest.  
   
- <!--TODO:
- ![Add a control to call the login form](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Add a control to call the login form")   -->
+ 
+ > [!div class="mx-imgBorder"]
+ > ![Hinzufügen eines Steuerelements zum Aufrufen des Anmeldeformulars](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "Hinzufügen eines Steuerelements zum Aufrufen des Anmeldeformulars")
   
 5.  Doppelklicken Sie auf die Schaltfläche, um Code für das Klickereignis der Schaltfläche **btnSignIn** in der Datei `MainWindow.xaml.cs` hinzuzufügen.  
   
@@ -135,7 +144,7 @@ Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungsst
   
 8.  So wird Ihre Datei `MainWindow.xaml.cs` angezeigt, nachdem Code von den vorherigen zwei Schritten hinzugefügt wurde:  
   
- <!--TODO: ![Sample code](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Sample code")   -->
+![Beispielcode](../media/crm-sdk-v6-xrmtooling-addtemplate04.png "Beispielcode")
   
 9. So testen Sie das Projekt:  
   
@@ -143,13 +152,15 @@ Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungsst
   
     2.  Testen Sie die Authentifizierung, indem Sie Ihre Anmeldeinformationen zur Verbindung mit CDS für Apps angeben, und klicken Sie dann auf **Anmeldung**. Wenn erfolgreich, erscheint eine Message darüber, die den Namen der Version und der Organisation, mit der Sie verbunden sind, angibt. Klicken Sie auf **OK**, um die Message zu schließen.  
   
- <!--TODO:
- ![Project test results](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Project test results")   -->
+ 
+> [!div class="mx-imgBorder"]
+> ![Projekttestergebnisse](../media/crm-sdk-v6-xrmtooling-addtemplate05.png "Projekttestergebnisse") 
   
     3.  Wenn Sie erneut auf **Bei Dynamics 365 anmelden** klicken, fordert die Anwendung Sie entweder dazu auf, die gespeicherten Anmeldeinformationen aus der letzten Anmeldeaktivität zu wählen oder die neuen Anmeldeinformationen erneut einzugeben.  
   
- <!--TODO:
- ![Stored credentials](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Stored credentials")   -->
+
+> [!div class="mx-imgBorder"]
+> ![Gespeicherte Anmeldeinformationen](../media/crm-sdk-v6-xrmtooling-addtemplate06.png "Gespeicherte Anmeldeinformationen")
   
 ### <a name="see-also"></a>Siehe auch  
 

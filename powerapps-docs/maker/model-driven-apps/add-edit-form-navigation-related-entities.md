@@ -1,6 +1,6 @@
 ---
 title: Modell-angetriebene Appformularnavigation für zugehörige Entitäten in PowerApps hinzufügen | MicrosoftDocs
-descriptoin: Learn how to add form navigation for related entities
+description: Mehr zu Formularnavigation für verknüpfte Entitäten hinzufügen
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''

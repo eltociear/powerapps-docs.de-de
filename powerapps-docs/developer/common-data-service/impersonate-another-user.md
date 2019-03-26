@@ -62,7 +62,7 @@ Zum Übernehmen der Identität von einem anderen Benutzer, legen Sie die `Caller
 ## <a name="impersonate-another-using-in-plug-ins"></a>Identitätwechsel mithilfe von Plug-Ins
 
 Sie können ein Plug-In registrieren, für das Sie einen Benutzer definieren können, für den der Vorgang verewendet werden soll. Innerhalb des Codes eines Plug-Ins können Sie diese Präferenzen überschreiben.
-Weitere Informationen: [Identitätswechsel](write-plug-in.md#impersonation)
+Weitere Informationen: [Annehmen der Identität eines Benutzers](impersonate-a-user.md)
 
 
 ### <a name="see-also"></a>Siehe auch

@@ -6,7 +6,7 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -48,13 +48,13 @@ Erstellen Sie ein asynchrones Plug-In, das in der Erstellungsmeldung der Firmene
 
 ## <a name="create-a-plug-in-project"></a>Plug-In-Projekt erstellen
 
-Sie müssen ein Plug-In in Visual Studio schreiben. Führen Sie diese Schritte aus, um ein grundlegendes Plug-In zu schreiben.
+Sie müssen ein Plug-In in Visual Studio schreiben. Führen Sie diese Schritte aus, um ein grundlegendes Plug-In zu schreiben. Alternativ finden Sie hier die kompletten Plug-in-Lösungsdateien: [Beispiel: Erstellen Sie ein Basis-Plugin](org-service/samples/basic-followup-plugin.md).
 
 ### <a name="create-a-visual-studio-project-for-the-plug-in"></a>Ein Visual Studio-Projekt für das Plug-In erstellen
 
-1. Öffnen Sie Visual Studio 2017 und öffnen Sie ein neues **Klassenbibliothek (.NET Framework)**-Projekt mit **.NET Framework 4.5.2**
+1. Öffnen Sie Visual Studio 2017 und öffnen Sie ein neues **Klassenbibliothek (.NET Framework)**-Projekt mit **.NET Framework 4.6.2**
 
-    ![öffnen Sie eine neuen Klassenbibliothek (.NET Framework)-Projekt mit .NET Framework 4.5.2](media/tutorial-write-plug-in-create-visual-studio-project.png)
+    ![öffnen Sie eine neuen Klassenbibliothek (.NET Framework)-Projekt mit .NET Framework 4.6.2](media/tutorial-write-plug-in-create-visual-studio-project.png)
 
     Der Name, der für das Projekt verwendet wird, ist der Name der Assemblys. Dieses Lernprogramm verwendetet den Namen `BasicPlugin`.
 1. Klicken Sie im **Lösungsexplorer** mit der rechten Maustaste in das Projekt und wählen Sie **NuGet Pakete verwalten...** aus dem Kontextmenü aus.
@@ -146,7 +146,7 @@ if (context.InputParameters.Contains("Target") &&
 ### <a name="about-the-code"></a>Infos zum Code
 
 - <xref:Microsoft.Xrm.Sdk.ITracingService> ermöglicht das Schreiben in das Ablaufverfolgungsprotokoll.  Sie können ein Beispiel im letzten catch-Block sehen. Weitere Informationen: [Verwenden der Ablaufverfolgung](debug-plug-in.md#use-tracing)
-- <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> bietet Zugriff auf den Kontext für das Ereignis, das das Plug-In ausgeführt hat.  Weitere Informationen: [Ausführungskontext](write-plug-in.md#execution-context).
+- <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> bietet Zugriff auf den Kontext für das Ereignis, das das Plug-In ausgeführt hat.  Mehr Informationen: [Verstehen Sie den Kontext der Ausführung](understand-the-data-context.md).
 - Der Code überprüft, dass der Kontext <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> die erwarteten Parameter für <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> enthält, für das dieses Plug-In registriert ist. Wenn die <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest.Target>-Eigenschaft vorhanden ist, ist <xref:Microsoft.Xrm.Sdk.Entity>, das der Anforderung übergeben wurde, verfügbar.
 - Die <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>-Schnittstelle bietet Zugriff auf eine Servicevariable, die die <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Benutzeroberfläche implementiert, die die Methoden bereitstellt, die Sie verwenden, um mit dem Service zu interagieren, um die Aufgabe zu erstellen.
 
@@ -230,10 +230,10 @@ Zum Registrieren eines Plug-Ins benötigen Sie das Plug-In-Registrierungstool
 
     ![Dialog "Neue Assembly registrieren"](media/tutorial-write-plug-in-register-new-assembly-dialog.png)
 
-1. Überprüfen Sie, dass der **Isolationsmodus**auf **Sandkastenumgebung** und der **Speicherort** zum Speichern der Assemblys auf **Datenbank** festgelegt ist.
+1. Vergewissern Sie sich für Office 365-Benutzer, dass der **Isolationsmodus** **Sandbox** und der **Speicherort** für die Assembly **Datenbank** ist.
 
     > [!NOTE]
-    > Weitere Optionen für **Isolationsmodus** und **Speicherort** gelten für lokale Dynamics 365-Bereitstellungen.
+    > Weitere Optionen für **Isolationsmodus** und **Speicherort** gelten für lokale Dynamics 365-Bereitstellungen. Als Standort können Sie die Datenbank des D365-Servers, den lokalen Speicher (Festplatte) des Servers oder den Cache für die globale Assembly des Servers angeben. Weitere Informationen finden Sie unter [Plug-in-Speicher](/dynamics365/customer-engagement/developer/register-deploy-plugins#plug-in-storage).
 
 1. Klicken Sie auf **Ausgewählte Plug-ins registrieren**.
 1. Sie sehen ein **Registrierte Plug-Ins** Bestätigungsdialogfeld.

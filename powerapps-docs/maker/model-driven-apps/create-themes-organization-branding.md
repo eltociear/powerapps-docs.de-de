@@ -1,7 +1,7 @@
 ---
 title: 'Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend der Marke Ihrer Organisation  | MicrosoftDocs'
 ms.custom: ''
-ms.date: 06/18/2018
+ms.date: 02/19/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -50,7 +50,7 @@ Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstelle
   
 -   Linkeffekt beim Daraufzeigen  
   
--   Prozesssteuerelementfarbe  
+-   Veraltete Akzentfarbe (Primärhintergrund für Prozesssteuerelemente)  
   
 -   Standardentitätsfarbe  
   

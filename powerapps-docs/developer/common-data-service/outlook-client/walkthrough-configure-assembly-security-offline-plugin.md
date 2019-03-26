@@ -21,7 +21,7 @@ Die "Common Data Service für Apps"-Plattform wendet eine zusätzliche Sicherhei
   
 ### <a name="get-the-public-key-token"></a>Öffentliches Schlüsseltoken abrufen  
   
-1.  Laden Sie die Assembly mit dem Offline-Plug-In in das Plug-In-Registrierungstool. Weitere Informationen zum Verwenden des Tools finden Sie unter [Exemplarische Vorgehensweise: Registrieren eines Plug-Ins mithilfe des Plug-In-Registrierungstools](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool).  
+1.  Laden Sie die Assembly mit dem Offline-Plug-In in das Plug-In-Registrierungstool. Weitere Informationen finden Sie unter [Ein Plug-in registrieren](../register-plug-in.md).  
   
 2.  Wählen Sie die Plug-In-Assembly in der Strukturansicht des Tools aus.  
   
@@ -43,5 +43,5 @@ Die "Common Data Service für Apps"-Plattform wendet eine zusätzliche Sicherhei
   
 ### <a name="see-also"></a>Siehe auch  
  [Plug-In-Entwicklung](/dynamics365/customer-engagement/developer/plugin-development)   
- [Beispiel: Grundlegendes Plug-In](/dynamics365/customer-engagement/developer/sample-create-basic-plugin)   
+ [Beispiel: Erstellen eines grundlegenden Plug-Ins](../org-service/samples/basic-followup-plugin.md)   
  [Registrieren und Bereitstellen von Plug-Ins](/dynamics365/customer-engagement/developer/register-deploy-plugins)

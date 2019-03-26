@@ -79,7 +79,7 @@ Wenn Benutzer eine modellgestützte App (nur Einheitliche Oberfläche) öffnen, 
 In diesem Thema erfahren Sie, wie Sie mit der Einbettung einer Canvas-App in einem modellgestützen Formular beginnen. Sie können die eingebettete Canvas-App weiter anpassen, um Daten aus einer Vielzahl von Datenquellen zu verbinden und einzubringen. Verwenden Sie die Funktionen Filter, Suche und LookUp und den vom Hostmodell-basierten Formular übergebenen Kontext, um bestimmte Datensätze in diesen Datenquellen zu filtern oder zu finden. Verwenden Sie den WYSIWYG-Canvas-App-Editor, um einfach die Benutzeroberfläche zu entwerfen, die Ihren Anforderungen entspricht.
 
 ## <a name="see-also"></a>Siehe auch
-[Einbetten einer Canvas-App in ein modellgesteuertes Formular](embed-canvas-app-in-form.md) <br />
+[Einbetten einer Canvas-App in einem modellgesteuerten Formular](embed-canvas-app-in-form.md) <br />
 [Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
 [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md) <br />
 [Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)

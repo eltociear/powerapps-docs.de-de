@@ -2,11 +2,11 @@
 title: 'Lernprogramm: Debuggen eines Plug-In (Common Data Service für Apps) | MicrosoftDocs'
 description: 'Dieses Lernprogramm ist das zweite in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten. '
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/28/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -60,6 +60,9 @@ Da ein Plug-In auf einen Remoteserver ausgeführt wird, können Sie keinen Debug
 1. Nehmen Sie im Dialog **Profiler-Einstellungen** die Standardeinstellungen an und klicken Sie auf **OK**, um den Dialog zu schließen.
 
     ![foo](media/tutorial-debug-plug-in-profiler-settings.png)
+
+
+Weitere Informationen zur Ausführung des Profils finden Sie unter [Ausführen des Plug-in-Profilers über ein Eingabeaufforderungsfenster](#run-profiler-standalone).
 
 ## <a name="capture-a-profile"></a>Erfassen eines Profils
 
@@ -122,3 +125,14 @@ Weitere Informationen zu allgemeinen Optionen bei Plug-Ins finden Sie unter [Ler
 
 Wenn Sie nicht beim nächsten Lernprogramm fortsetzen, sollten Sie die Registrierung der BasicPlugin-Assembly, die Sie in diesem Schritt erstellt haben, aufheben. Anweisungen finden Sie unter [Registrierung der Assembly, des Plug-Ins und des Schritts aufheben](tutorial-update-plug-in.md#unregister-assembly-plug-in-and-step).
 
+<a name="run-profiler-standalone"></a>
+
+## <a name="run-the-plug-in-profiler-from-a-command-prompt-window"></a>Starten Sie den Plug-in-Profiler über ein Eingabeaufforderungsfenster.
+
+ Während es oft vorzuziehen ist, den Profiler interaktiv über das Plug-in-Registrierungswerkzeug auszuführen, kann der Profiler unabhängig vom Werkzeug über ein Eingabeaufforderungsfenster ausgeführt werden. Dies ist hilfreich, um das Plug-In-Profilprotokoll vom [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)]-App-Server eines Kunden zu erhalten, um ein fehlerhaftes Plug-In zu debuggen. Ein Entwickler kann dann diesen Datensatz verwenden, um die Ausführung von Plug-Ins im Plug-In-Registrierungstool erneut zu wiederholen und das Plug-In mithilfe von [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] zu debuggen.
+
+### <a name="procedure-run-the-plug-in-profiler-from-a-command-prompt"></a>Verfahren: Ausführen des Plug-In-Profilers von einer Eingabeaufforderung aus
+
+1. Öffnen Sie ein Eingabeaufforderungsfenster und legen Sie das Arbeitsverzeichnis auf den Ordner fest, in dem Sie das Plug-in-Registrierungswerkzeug `PluginRegistration.exe` heruntergeladen haben.
+2. Geben Sie diesen Befehl ein, um die verfügbaren Laufzeitparameter anzuzeigen: `PluginProfiler.Debugger.exe /?`.  
+3. Überprüfen Sie die Liste der unterstützten Parameterliste und führen Sie das PluginProfiler.Debugger.exe-Programm mit den entsprechenden Parametern erneut aus. 

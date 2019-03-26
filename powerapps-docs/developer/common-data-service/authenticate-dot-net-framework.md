@@ -2,7 +2,7 @@
 title: Authentifizierung mit.NET Framework-Anwendungen (Common Data Service for Apps) | Microsoft Docs
 description: Wie.NET Framework-Anwendungen sich mit dem Common Data Service for Apps authentifizieren können.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -55,9 +55,6 @@ Verwenden Sie 4.6.2 .NET Framework oder höher, wenn Client-Anwendungen erstelle
 > Klicken Sie mit der rechten Maustaste auf den Namen Ihres Projekts in Visual Studio und dann auf **Eigenschaften**. Auf der Registerkarte **Debuggen** können Sie die Option **Visual Studio Hostingprozess aktivieren** deaktivieren. 
 >
 > Dies wirkt sich nur auf das Debugging-Umgebung in VS 2015 aus. Es hat keinen Einfluss auf die erstellten Binärdateien bzw. ausführbaren Datei. Das gleiche Problem tritt nicht in Visual Studio 2017 auf.
-
-> [!IMPORTANT]
-> Bei der Entwicklung von Plug-In- und Workflowaktivität-Assemblys, die keine Authentifizierung erfordern, müssen Sie .NET Framework 4.5.2 verwenden.
 
 ## <a name="net-framework-applications-without-sdk-assemblies"></a>.NET Framework-Anwendungen ohne SDK-Assemblys
 

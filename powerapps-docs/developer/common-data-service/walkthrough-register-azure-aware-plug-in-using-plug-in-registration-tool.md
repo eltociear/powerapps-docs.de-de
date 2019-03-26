@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>Tutorial: Azure-fähiges Plug-In mit Plug-In-Registrierungstool registrieren
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
 
 Diese exemplarische Vorgehensweise veranschaulicht, wie Sie einen Dienstendpunktschritt konfigurieren und mithilfe des Plug-In-Registrierungstools registrieren. Nach Abschluss der Konfiguration kann Dynamics 365 (online) Common Data Service für Apps den Ausführungskontext des aktuellen Vorgangs an einen Azure-Lösungsendpunkt bereitstellen. Bei diese exemplarische Vorgehensweise wird der Schritt zum Bereitstellen des Ausführungskontexts der <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Nachricht für eine `Account`-Entität des Azure Service Bus registriert.  
   

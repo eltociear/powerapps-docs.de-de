@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service-for-apps"></a>Tutorial: Konfigurieren von Azure (SAS) für die Integration in Common Data Service für Apps
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
 
 Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Konfigurieren des Azure Service Bus-Austellers, -Bereichs und der -Regeln, damit eine Listener-Anwendung die „CDS für Apps”-Nachrichten lesen kann, die an den Azure Service Bus übermittelt werden.  
   

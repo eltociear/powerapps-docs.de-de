@@ -11,9 +11,9 @@ tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
+ms.reviewer: kvivek
 ms.workload: na
-ms.date: 10/31/2018
+ms.date: 01/28/2019
 ms.author: jdaly
 search.audienceType:
   - developer
@@ -29,6 +29,9 @@ search.app:
 Alle Anpassungen, die Sie an den CDS Apps oder einer bereits installierten Lösung machen, ist Teil einer Lösung. Jede Änderung, die Sie haben, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösungen exportiert, enthält sie alle Änderungen, die für die Lösung in eine Datei angewendet wurden, die Sie in verschiedenen CDS für App-Umgebung importieren können.
 
 Wenn Sie Anpassungen oder Erweiterungen zwischen verschiedenen CDS für App-Umgebungen übertragen oder Lösungen mit AppSource verteilen, müssen Sie das Lösungsframework kennen.
+
+> [!NOTE]
+> Ausführliche Informationen dazu, wie Sie effektiv Lösungen für eine erfolgreiche Implementierung Anwendungslebenszyklusverwaltung (ALM)- wird, finden Sie unter [Whitepaper: Lösungs-Lebenszyklus-Verwaltung](https://www.microsoft.com/en-us/download/details.aspx?id=57777)
 
 ## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen
 

@@ -2,13 +2,13 @@
 title: Übergeben von Daten von einer Seite als Parameter an Menüband-Aktionen (modellgestützte Apps) | Microsoft Docs
 description: 'In diesem Thema werden die Optionen für die Verwendung des Elements <CrmParameter> zum Abrufen dieser Werte beschrieben. '
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 02/15/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: KumarVivek
-ms.author: kvivek
-manager: shilpas
+author: hazhouMSFT
+ms.author: hazhou
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -17,13 +17,11 @@ search.app:
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>Übergeben von Daten von einer Seite als Parameter an Menüband-Aktionen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions -->
-
 Wenn Sie eine Aktion in einem Menüband definieren, müssen Sie oft Daten von der Seite entweder an eine JavaScript-Funktion oder eine URL übergeben. In diesem Thema werden die Optionen für die Verwendung des <[\<CrmParameter\>](https://msdn.microsoft.com/library/gg309332.aspx)Elements zum Abrufen dieser Werte beschrieben.
 
 ## <a name="form-and-grid-context-in-ribbon-actions"></a>Formular- und Rasterkontext in Menübandaktionen
 
-Damit die Informationen des Ausführungskontexts (*Formularkontext*oder *Rasterkontext*) zu JavaScript-Funktion für Ihre Menübandaktionen zu übergebende, geben Sie PrimaryControl wenn der **Wert** in `<CrmParameter>` der Menübanddefinition an. Der in PrimaryControl übergebene Wert wird als Argument in der JavaScript-Funktion verwendet, die den *Formularkontext* oder *Rasterkontext* bietet, je nachdem, wo der Menübandbefehl ausgeführt wird. 
+Um im Ausführungskontext (*Formularkontext* oder *Rasterkontext*) Informationen an die JavaScript-Funktion für Ihre Ribbon-Aktionen zu übergeben, geben Sie **PrimaryControl** für den Formularkontext oder **SelectedControl** für den Gitterkontext als Wert `<CrmParameter>` in Ihrer Ribbondefinition an. **SelectedControl** wird im Grid-Kontext übergeben, sowohl für Teilraster als auch für Homepageraster. Der in **PrimaryControl** übergebene oder der **SelectedControl**-Wert wird als Argument in Ihrer JavaScript-Funktion für den *Formular*- bzw. *Rasterkontext* verwendet. 
 
 Beispielsweise ist hier eine Beispielmenübanddefinition, wo wir den **PrimaryControl:** n Parameter an die JavaScript-Funktion geben:
 
@@ -39,7 +37,7 @@ Beispielsweise ist hier eine Beispielmenübanddefinition, wo wir den **PrimaryCo
 </CommandDefinition>
 ```
 
-In der**new_mySampleScript.js** Webressourcedatei, die auf das Beispiel oben verweist, definieren Sie die JavaScript-Funktion mit der **primaryControl** Variable als Argument. Dies Argument dient als *Formular* oder *Raster* Kontext, abhängig davon, wo der Menübandbefehl ausgeführt wird:
+In der**new_mySampleScript.js** Webressourcedatei, die auf das Beispiel oben verweist, definieren Sie die JavaScript-Funktion mit der **primaryControl** Variable als Argument. Dieses Argument liefert den *Formularkontext*, in dem der Ribbon-Befehl ausgeführt wird:
 
 ```JavaScript
 function mySampleFunction(primaryControl) {

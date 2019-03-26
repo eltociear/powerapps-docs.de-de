@@ -2,11 +2,11 @@
 title: Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen (Common Data Service for Apps) | Microsoft Docs
 description: 'Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service for Apps hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -77,5 +77,13 @@ Diese Themen leiten Sie bei dem Prozess zum Erstellen einiger einfacher Plug-Ins
 Diese Themen enthalten Informationen, die Sie zum Erstellen von Plug-Ins verwenden.
 
 - [Schreiben eines Plug-Ins](write-plug-in.md)
+- [Verarbeiten von Ausnahmen](handle-exceptions.md)
 - [Registrieren eines Plug-Ins](register-plug-in.md)
 - [Debuggen von Plug-Ins](debug-plug-in.md)
+- 
+Diese Themen enthalten weitere Informationen zum Schreiben oder Debugging ein Plug-In oder Analysieren der Leistung.
+
+- [Die Identität eines Benutzers annehmen](impersonate-a-user.md)
+- [Protokollierung und Ablaufverfolgung](logging-tracing.md)
+- [Analysieren der Leistung](analyze-performance.md)
+- [Zugriff auf externe Web-Ressourcen](access-web-services.md)]

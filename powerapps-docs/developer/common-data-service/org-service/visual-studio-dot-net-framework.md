@@ -2,7 +2,7 @@
 title: Visual Studio und .NET Framework (Common Data Service für Apps) | Microsoft Docs
 description: Erfahren Sie mehr über die Entwicklungstools und Anforderungen für verwalteten Code.
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="visual-studio-and-the-net-framework"></a>Visual Studio und .NET Framework
 
-Die .NET SDK-Assemblys für Common Data Service für Apps sind auf der Grundlage von .NET Framework 4.5.2 erstellt. 
+Die .NET SDK-Assemblys für Common Data Service für Apps sind auf der Grundlage von .NET Framework 4.6.2 erstellt. 
 
-Sie können mit Visual Studio Ihre Anwendungen für verwalteten Code mithilfe von .NET Framework 4.5.2 oder höher erstellen. 
+Sie können mit Visual Studio Ihre Anwendungen für verwalteten Code mithilfe von .NET Framework 4.6.2 oder höher erstellen. 
 
 > [!IMPORTANT]
 > Sie sollten alle benutzerdefinierten Client-Anwendungen mit Microsoft .NET Framework 4.6.2. oder höher erstellen.
-> Nur Anwendungen, die Transport Level Security (TLS) 1.2 oder eine bessere Sicherheit verwenden, dürfen eine Verbindung mit CDS für Apps herstellen. TLS 1.2 ist nicht das Standardprotokoll, das von .NET Framework 4.5.2 verwendet wird, aber es ist in .NET Framework 4.6.2.
+> Nur Anwendungen, die Transport Level Security (TLS) 1.2 oder eine bessere Sicherheit verwenden, dürfen eine Verbindung mit CDS für Apps herstellen. TLS 1.2 ist nicht das Standardprotokoll, das von .NET Framework 4.5.2 verwendet wird, aber es ist in .NET Framework 4.6.2. 
 > 
 > Weitere Informationen: [Blogbeitrag: Kommende Updates zu Dynamics 365 Customer Engagement-Verbindungssicherheit](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 > 

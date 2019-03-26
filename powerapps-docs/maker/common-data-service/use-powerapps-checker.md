@@ -167,4 +167,6 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 
 
 ## <a name="see-also"></a>Siehe auch
-[Anweisungen und bewährte Methoden zum Erstellen von PowerApps-Lösungen](https://docs.microsoft.com/dynamics365/customer-engagement/guidance/)
+[Best Practices und Leitlinien für den Common Data Service for Apps](../../developer/common-data-service/best-practices/index.md)<br />
+[Best Practices und Anleitungen für modellgetriebene Anwendungen](../../developer/model-driven-apps/best-practices/index.md)<br />
+[Häufige Probleme und Lösungen für Solution Checker](common-issues-resolutions-solution-checker.md)<br />

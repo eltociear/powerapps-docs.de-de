@@ -1,5 +1,5 @@
 ---
-title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service für Apps)| Microsoft Docs
+title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service für Apps) | Microsoft Docs
 description: 'Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service für Apps-Web-API Duplikate erkennen.'
 ms.custom: ''
 ms.date: 10/31/2018

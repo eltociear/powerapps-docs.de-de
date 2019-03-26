@@ -29,6 +29,6 @@ Ein internes Plug-In mit Namen ServiceBusPlugin wird mit Dynamics 365 (online) C
  Sie können außerdem eine benutzerdefinierte Workflowaktivität schreiben, die den Ausführungskontext auch über den Servicebus veröffentlichen und diese Aktivität in Ihren Workflow integrieren kann. Beispielcode für eine benutzerdefinierte Azure-fähige Workflowaktivität wird in folgendem Thema bereitgestellt: [Beispiel: Azure-fähige benutzerdefinierte Workflowaktivität](/dynamics365/customer-engagement/developer/sample-azure-aware-custom-workflow-activity) 
   
 ### <a name="see-also"></a>Siehe auch  
-[Schreiben eines Plug-In](write-plug-in.md)<br/>   
-[Ereignisausführungspipeline](event-framework.md#event-execution-pipeline)<br/>   
+[Schreiben eines Plug-In](write-plug-in.md)<br/>
+[Ereignisausführungspipeline](event-framework.md#event-execution-pipeline)<br/> 
 [ServiceEndPoint-Entität](reference/entities/serviceendpoint.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: Einbetten einer Canvas-App in ein modellgesteuertes Formular | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/10/2018
+ms.date: 12/17/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -30,12 +30,12 @@ Canvas-Apps ermöglichen es Herstellern, mit dem Low-Code, WYSIWYG Canvas-App-De
 
 > [!NOTE]
 > Diese Funktion befindet sich derzeit in der Vorschau. <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] <br /><br />
 
 Mit eingebetteten Canvas-Anwendungen können Hersteller die Leistungsfähigkeit von Canvas-Anwendungen in ihre modellgesteuerten Formulare integrieren. Mit eingebetteten Canvas-Apps können Sie auf einfache Weise umfangreiche visuelle Bereiche auf einem Formular erstellen und Daten aus einer Vielzahl von Quellen direkt neben Daten aus dem Common Data Service anzeigen.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/embed-canvas-app-in-form.png "Eingebettete Canvas-App in einem modelgestützten App-Formular")
+   > ![Eingebettete Canvas-App in einem modellgetriebenen App-Formular](media/embed-canvas-app-in-form.png "Eingebettete Canvas-App in einem modellgetriebenen App-Formular")
 
 Canvas-Anwendungen werden in modellgestützte Formulare eingebettet, genauso wie andere benutzerdefinierte Steuerelemente hinzugefügt werden. Eine eingebettete Canvas-App enthält umfangreiche Datenintegrationsfunktionen, die kontextuelle Daten aus dem Hostmodell-basierten Formular in die eingebettete Canvas-App einbringen.
 
@@ -43,11 +43,15 @@ Die Schritte zum Einbetten einer Canvas-Applikation in Ihr modellgestütztes For
 -   Übergeben Sie den aktuellen Datensatz als Datenkontext. Weitere Informationen: [Den aktuellen Datensatz als Datenkontext mit einer eingebetteten Canvas-App übergeben](pass-current-embedded-canvas-app.md)
 -   Übergeben Sie eine Liste von Datensätzen, die sich auf den aktuellen Datensatz beziehen, als Datenkontext. Weitere Informationen: [Eine Liste von aktuellen Datensätzen als Datenkontext mit einer eingebetteten Canvas-App übergeben ](pass-related-embedded-canvas-app.md) 
 
-<!-- After you have added an embedded canvas app to your model-driven form, learn how to share your embedded canvas app with other users (LINK TO ARTICLE #4).  -->
+Nachdem Sie eine eingebettete Canvas-App zu Ihrem modellgestützten Formular hinzugefügt haben, lernen Sie, wie Sie Ihre eingebettete Canvas-App mit anderen Benutzern teilen. Weitere Informationen: [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md).
 
-<!-- For things to keep in mind when working with embedded canvas apps and to help troubleshoot any issues you might encounter, see (LINK TO ARTICLE #5). -->
+Richtlinien für die Arbeit mit eingebetteten Canvas-Apps sowie hilfreiche Tipps zur Fehlerbehebung bei Problemen, die auftreten könnten, finden Sie hier: [Richtlinien für die Arbeit mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md).
 
 ## <a name="see-also"></a>Siehe auch
 [Was sind Canvas-Apps in PowerApps?](../canvas-apps/getting-started.md) <br />
 [Hinzufügen und konfigurieren eines CanvasApp-Steuerelements in PowerApps](../canvas-apps/add-configure-controls.md) <br />
-[Übersicht über CanvasApp-Konnektoren für PowerApps](../canvas-apps/connections-list.md) 
+[Übersicht über CanvasApp-Konnektoren für PowerApps](../canvas-apps/connections-list.md) <br />
+[Den aktuellen Datensatz als Datenkontext an eine eingebettete Canvas-App übergeben](pass-current-embedded-canvas-app.md) <br />
+[Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
+[Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md) <br />
+[Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)

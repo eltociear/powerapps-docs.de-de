@@ -1,8 +1,8 @@
 ---
-title: Benutzerdefinierte Symbole anstelle von Werten in Listenansichten anzeigen mit PowerApps | MicrosoftDocs
+title: Anzeige benutzerdefinierter Symbole neben Werten in Listenansichten mit PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansicht angezeigt werden'
 ms.custom: ''
-ms.date: 06/21/2018
+ms.date: 02/14/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -23,11 +23,14 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="display-custom-icons-instead-of-values-in-list-views"></a>Benutzerdefinierte Symbole anstelle von Werten in Listenansichten anzeigen
+# <a name="display-custom-icons-alongside-values-in-list-views"></a>Benutzerdefinierte Symbole zusammen mit Werten in Listenansichten anzeigen
 
 <a name="GridIcons"></a>   
 
- PowerApps-Umgebungsadministratoren und -Systemanpasser können Grafiken einer Ansicht hinzufügen und die Logik einrichten, die verwendet wird, um die Grafik anhand eines Spaltenwerts mithilfe von JavaScript auszuwählen. Die Fähigkeit, Listenansichten anzuzeigen, die Symbole statt Text oder Zahlenwerte in mehreren Spalten anzeigen, wurde in „Beziehungsinformationen” eingeführt. 
+ PowerApps-Umgebungsadministratoren und -Systemanpasser können Grafiken einer Ansicht hinzufügen und die Logik einrichten, die verwendet wird, um die Grafik anhand eines Spaltenwerts mithilfe von JavaScript auszuwählen. Mit dieser Funktion können Sie Listenansichten anpassen, die Symbole neben Text- oder Zahlenwerten anzeigen. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/icon-in-opportunity-view.png "Ansicht alle Verkaufschancen mit der Bewertungsspalte mit Symbolanzeige und Textwert")
   
 > [!NOTE]
 >  Rastersymbole werden nur der Weboberfläche angezeigt. Sie werden nicht in [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] oder in der mobilen App angezeigt.  
@@ -38,7 +41,7 @@ search.app:
   
 2.  Schreiben Sie einen oder mehrere JavaScript-Funktionen, die definieren, welche Symbole für welche Werte angezeigt werden (Sie benötigen in der Regel eine Funktion für jede Spalte, die Sie anpassen möchten). Jede Funktion muss ein Zeilendatenobjekt und einen Sprachcode (LCID) als Eingabe akzeptieren einen Array mit einem Bildnamen und Tooltiptext zurückgeben. Im Abschnitt [Beispiel-JavaScript-Funktion](#SampleJavascript) weiter unten in diesem Thema finden Sie eine Beispielfunktion.  
   
-3.  Melden Sie sich in Ihrer Umgebung als Administrator an, und öffnen Sie den [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer).  
+3.  Melden Sie sich bei Ihrer Umgebung als Administrator an, und öffnen Sie den Projektmappen-Explorer.  
   
 4.  Die Fenster **Standardlösung** wird geöffnet. Navigieren Sie zu **Komponenten** > **Webressourcen**.  
   
@@ -91,12 +94,15 @@ search.app:
 <a name="SampleJavascript"></a>   
 
 ### <a name="sample-javascript-function"></a>Beispiel-JavaScript-Funktion  
- Die JavaScript-Funktion zum Anzeigen benutzerdefinierter Symbole und Tooltips erwartet die folgenden beiden Argumente: das gesamte Zeilenobjekt angegeben in layoutxml und des aufrufender Benutzers Gebietsschema-ID (LCID). Der LCID-Parameter ermöglicht Ihnen, Tooltiptext für das Symbol in mehreren Sprachen zu definieren. Weitere Informationen zu den von der Umgebung unterstützten Sprachen, siehe [Sprachen aktivieren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages) und [Installieren oder Upgraden von Sprachpaketen für Dynamics 365](https://technet.microsoft.com/library/hh699674.aspx). Eine Liste mit Werten von lokalen Gebietsschema-ID (LCID)-Werten, die Sie in Ihrem Code verwenden können, finden Sie unter [Von Microsoft zugewiesene lokale IDs](https://go.microsoft.com/fwlink/?linkid=829588).
+ Die JavaScript-Funktion zum Anzeigen benutzerdefinierter Symbole und Tooltips erwartet die folgenden beiden Argumente: das gesamte Zeilenobjekt angegeben in layoutxml und des aufrufender Benutzers Gebietsschema-ID (LCID). Der LCID-Parameter ermöglicht Ihnen, Tooltiptext für das Symbol in mehreren Sprachen zu definieren. Weitere Informationen zu den von der Umgebung unterstützten Sprachen, siehe [Sprachen aktivieren](/dynamics365/customer-engagement/admin/enable-languages) und [Installieren oder Upgraden von Sprachpaketen für Dynamics 365 for Customer Engagement ](/dynamics365/customer-engagement/on-premises/install-or-upgrade-language-packs). Eine Liste mit Werten von lokalen Gebietsschema-ID (LCID)-Werten, die Sie in Ihrem Code verwenden können, finden Sie unter [Von Microsoft zugewiesene lokale IDs](https://go.microsoft.com/fwlink/?linkid=829588).
 
   
  Sie werden wahrscheinlich benutzerdefinierte Symbole für einen Optionssatztyp von Attributen hinzufügen, bei dem die vordefinierten Optionen begrenzt sind. Stellen Sie sicher, dass Sie den ganzzahligen Wert der Optionen anstelle der Beschriftung verwenden, um zu Lokalisierungsprobleme zu verhindern.  
   
  Der folgende Beispielcode zeigt Symbole und Tooltips auf Basis von drei Werten an (1: Hot, 2: Warm, 3: Cold) im Attribut opportunityratingcode (Bewertung) an. Der Beispielcode zeigt auch, wie ein lokalisiertes Tooltip angezeigt wird. Damit dieses Beispiel funktioniert, müssen Sie drei Bildwebressourcen von 16x16 Bildern mit den folgenden Namen erstellen: new_Hot, new_Warm und new_Cold.  
+
+> [!IMPORTANT]
+> Dieses Beispiel erfordert die Opportunity-Entität, die mit Dynamics 365 for Customer Engagement Apps verfügbar ist.
   
 ```  
 function displayIconTooltip(rowData, userLCID) {      
@@ -148,9 +154,9 @@ function displayIconTooltip(rowData, userLCID) {
 }  
 ```  
   
- Dadurch werden Symbole mit Tooltips in der Spalte **Bewertung** angezeigt, die auf den Werten der jeweiligen Zeile basieren. Das Ergebnis kann wie folgt aussehen:  
+ <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![Beispiel für eine benutzerdefinierte Spaltengrafik](media/custom-column-graphics-example.png "Beispiel für eine benutzerdefinierte Spaltengrafik")  
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
  
  ### <a name="see-also"></a>Siehe auch
- [Erstellen oder Bearbeiten von Ansichten](../model-driven-apps/create-edit-views.md)
+[Grundlegendes zu Ansichten modellgestützter Apps](../model-driven-apps/create-edit-views.md)

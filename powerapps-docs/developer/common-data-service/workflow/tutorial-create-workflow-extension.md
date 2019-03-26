@@ -83,7 +83,7 @@ Dies Projekt erstellt eine einfache Workflow-Assembly, die einen Dezimalwert um 
 
     ![Workflowaktivitätsprojekt erstellen](media/tutorial-create-workflow-activity-create-workflow-activity-project.png)
 
-1. Navigieren Sie zum Menü **Projekt** und wählen Sie **Eigenschaften** aus. Geben Sie auf der Registerkarte **Anwendung** als Zielframework **.NET Framework 4.5.2** an.
+1. Navigieren Sie zum Menü **Projekt** und wählen Sie **Eigenschaften** aus. Geben Sie auf der Registerkarte **Anwendung** als Zielframework **.NET Framework 4.6.2** an.
 
     ![Projekteigenschaften festlegen](media/tutorial-create-workflow-activity-workflow-project.png)
 

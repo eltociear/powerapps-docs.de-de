@@ -1,13 +1,13 @@
 ---
 title: Erstellen eines PowerBI-Bericht | Microsoft Docs
 description: Verbinden Ihrer Daten aus PowerBI Desktop mithilfe des Common Data Service for Apps-Konnektors.
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -85,7 +85,7 @@ Wenn Sie beispielsweise einen Optionssatz in Ihrer Entität haben, der ApprovalS
 * ApprovalStatus - Damit wird ein eindeutiger ganzzahliger Wert für jedes Element in Ihrem Optionssatz angezeigt. Das hilft, wenn Sie Filter anwenden, damit sie nicht betroffen sind, wenn Sie zukünftige Änderungen am Anzeigenamen vornehmen.
 * ApprovalStatus_display - Damit wird der benutzerfreundliche Anzeigenamen des Elements angezeigt. Er wird am häufigsten verwendet, wenn die Option in einer Tabelle oder in einem Diagramm dargestellt wird.
 
-    |ApproalStatus|ApprovalStatus_Display|
+    |ApprovalStatus|ApprovalStatus_Display|
     |---------|---------|
     1|Gesendet
     2|In Überprüfung

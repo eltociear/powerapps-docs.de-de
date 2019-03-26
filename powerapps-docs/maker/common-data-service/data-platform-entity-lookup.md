@@ -1,13 +1,13 @@
 ---
 title: 'Erstellen einer Beziehung zwischen Entitäten, mithilfe eines Suchfelds | Microsoft Docs'
 description: Schrittweise Anleitung zur Erstellung einer Beziehung zwischen Entitäten in PowerApps mithilfe eines Suchfelds.
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 03/21/2018
-ms.author: clwesene
+ms.date: 02/21/2019
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -86,6 +86,9 @@ Momentan ist dies nur für das erweiterte Menü verfügbar. Klicken Sie in der P
 
 ## <a name="use-a-lookup-field-in-an-app"></a>Verwenden eines Suchfelds in einer App
 Wenn Sie [automatisch eine App erstellen](../canvas-apps/data-platform-create-app.md), die aus einer Entität erstellt wird, die ein Suchfeld enthält, wird es als **Dropdown**-Steuerelement angezeigt, das Daten im Feld **Primärer Name** der Entität enthält.
+
+## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Hinzufügen von 1:N- und N:N-Beziehungen für Canvas-Anwendungen
+Verwenden Sie die Funktion **Relate**, um zwei Datensätze über eine One-to-Many oder Many-to-Many Beziehung im Common Data Service (CDS) for Apps zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Generieren einer App mit einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app.md)

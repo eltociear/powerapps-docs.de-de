@@ -2,9 +2,9 @@
 title: Arbeiten mit Lösungen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Lösungen verteilt werden'
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,18 +23,17 @@ search.app:
   - PowerApps
   - D365CE
 ---
-
-<a name="BKMK_Solutions"></a>   
+   
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
   In PowerApps werden Lösungen genutzt, um Apps und Komponenten von einer Umgebung in eine andere zu transportieren oder um einen Satz von Anpassungen für vorhandene Apps zu übernehmen. Eine Lösung kann mindestens eine App sowie andere Komponenten, wie Entitäten, Optionssätze usw., enthalten. Sie können eine Lösung aus [AppSource](https://appsource.microsoft.com/) oder durch einen unabhängigen Softwarehersteller (ISV) erhalten.
   
-Weitere Informationen: [Whitepaper: Muster und Prinzipien für Lösungsentwickler](http://go.microsoft.com/fwlink/p/?LinkID=533946)  
+Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  Als ISV, der eine App erstellt, die Sie verteilen werden, müssen Sie Lösungen verwenden. Weitere Informationen zum Arbeiten mit Lösungen, siehe [Paketieren und Verteilen von Erweiterungen mit Lösungen](https://msdn.microsoft.com/library/gg334530.aspx).  
   
- Wenn Sie daran interessiert sind, PowerApps-Apps für den organisatorischen Einsatz zu erstellen oder Dynamics 365 anzupassen, finden Sie hier Informationen über Lösungen:  
+ Wenn Sie daran interessiert sind, PowerApps-Anwendungen für den organisatorischen Einsatz zu erstellen oder Dynamics 365 for Customer Engagement-Anwendungen anzupassen, erfahren Sie hier, was Sie über Lösungen wissen müssen:  
   
 -   Das Erstellen von Lösungen ist optional. Sie können Anwendungen direkt in Ihrer PowerApps-Umgebung erstellen oder anpassen, ohne jemals eine Lösung zu erstellen.  
   

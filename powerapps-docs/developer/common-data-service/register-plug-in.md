@@ -2,11 +2,11 @@
 title: Registrieren eines Plug-Ins (Common Data Service for Apps) | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie ein Plug-In registrieren, um benutzerdefinierte Geschäftslogik auf Common Data Service for Apps anzuwenden.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/19/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -160,12 +160,12 @@ Wenn Sie einen Schritt registrieren, gibt es viele Optionen, die für Sie verfü
 |**Filterattribute**|Wenn Sie bei der Message `Update` die **Primäre Entität** festlegen, wird durch Filtern von Attributen die Ausführung des Plug-Ins auf solche Fälle eingeschränkt, bei denen die ausgewählten Attribute im Update enthalten sind. Dies ist eine bewährte Methode für die Leistung. |
 |**Ereignishandler**|Dieser Wert wird anhand des Namens der Assembly und der Plug-In-Klasse automatisch aufgefüllt. |
 |**Schrittname**|Der Name des Schritts. Ein Wert wird auf der Basis der Konfiguration des Schritts automatisch aufgefüllt, aber dieser Wert kann überschrieben werden.|
-|**Im Kontext des Benutzers ausführen**|Stellt Optionen zum Anwenden des Identitätswechsels für den Schritt bereit. Der Standardwert ist **Aufrufender Benutzer**. Wenn der aufrufende Benutzer keine ausreichenden Rechte besitzt, um Vorgänge im Schritt auszuführen, müssen Sie dies ggf. für einen Benutzer mit solchen Rechten festlegen. Weitere Informationen: [Identitätswechsel](write-plug-in.md#impersonation) |
-|**Ausführungsreihenfolge**|Mehrere Schritte können für dieselbe Phase derselben Nachricht registriert werden. Der Wert in diesem Feld bestimmt die Reihenfolge, in der sie vom niedrigsten bis hin zum höchsten angewendet werden. Bearbeiten Sie sie, um zu steuern, in welcher Reihenfolge Plug-Ins in der Phase angewendet werden.|
-|**Beschreibung**|Eine Beschreibung des Schritts. Dieser Wert wird automatisch aufgefüllt, kann aber überschrieben werden.|
+|**Im Kontext des Benutzers ausführen**|Stellt Optionen zum Anwenden des Identitätswechsels für den Schritt bereit. Der Standardwert ist **Aufrufender Benutzer**. Wenn der aufrufende Benutzer keine ausreichenden Rechte besitzt, um Vorgänge im Schritt auszuführen, müssen Sie dies ggf. für einen Benutzer mit solchen Rechten festlegen. Weitere Informationen: [Annehmen der Identität eines Benutzers](impersonate-a-user.md) |
+|**Ausführungsreihenfolge**|Mehrere Schritte können für dieselbe Phase derselben Nachricht registriert werden. Der Wert in diesem Feld bestimmt die Reihenfolge, in der sie vom niedrigsten bis hin zum höchsten angewendet werden. <br/> **Hinweis**: Sie sollten dies einstellen, um die Reihenfolge zu steuern, in der Plug-Ins im Stadium angewendet werden. Es wird nicht empfohlen, einfach den Standardwert zu übernehmen. Wenn alle Plugins für die gleiche Stufe, Entität und Nachricht den gleichen Wert haben, bestimmt der Wert von [SdkMessageProcessingStep.SdkMessageFilterId](/dynamics365/customer-engagement/developer/entities/sdkmessageprocessingstep#BKMK_SdkMessageFilterId) die Reihenfolge, in der sie ausgeführt werden.|
+|**Beschreibung**|Eine Beschreibung des Schritts. Dieser Wert ist vorbelegt, kann aber überschrieben werden.|
 
 > [!NOTE]
-> In bestimmten Fällen können Plug-Ins, die für das Ereignis `Update` registriert sind, zweimal aufgerufen werden. Weitere Informationen: [Verhalten spezieller Vorgänge mithilfe Update](special-update-operation-behavior.md)
+> Es gibt bestimmte Fälle, in denen für das Ereignis `Update` registrierte Plugins zweimal aufgerufen werden können. Weitere Informationen: [Verhalten spezieller Vorgänge mithilfe Update](special-update-operation-behavior.md)
 
 
 ### <a name="event-pipeline-stage-of-execution"></a>Ereignis-Pipeline-Phase der Ausführung

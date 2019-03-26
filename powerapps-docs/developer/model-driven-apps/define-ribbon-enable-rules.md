@@ -2,17 +2,17 @@
 title: Menübanddefinitionen definieren (modellgesteuerte Apps) | Microsoft Docs
 description: 'Infos zum Festlegen bestimmter Regeln, die steuern, wann die Menübandelemente während des Konfigurierens von Menübandelementen aktiviert werden.'
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 02/08/2019
 ms.service:
   - powerapps
 ms.custom:
   - ''
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
-author: JimDaly
-ms.author: jdaly
-manager: shilpas
-ms.reviewer: null
+author: JesseParsons
+ms.author: jeparson
+manager: annbe
+ms.reviewer: kvivek
 search.audienceType:
   - developer
 search.app:
@@ -21,8 +21,6 @@ search.app:
 ---
 
 # <a name="define-ribbon-enable-rules"></a>Definieren von Menüband-Aktivierungsregeln
-
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-enable-rules -->
 
 Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definieren, die steuern, wann die Menübandelemente aktiviert werden. Das `<EnableRule>`-Element wird wie folgt verwendet:  
 
@@ -48,9 +46,9 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
 
 |   Value   |                                                                               Präsentation                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       Die Befehlsleiste wird mit Dynamics 365 for tablets dargestellt.                                       |
+| `Modern`  |                                       Die Befehlsleiste wird mithilfe von [!INCLUDE[pn_moca_full](../../includes/pn-moca-full.md)] dargestellt.                                       |
 | `Refresh` |                                                      Die Befehlsleiste wird mithilfe der aktualisierten Benutzeroberfläche angezeigt.                                                      |
-| `Legacy`  | Das Menüband wird in Formularen für Entitäten, die nicht aktualisiert wurden, oder in einer Listenansicht in Dynamics 365 for Outlook angezeigt. |
+| `Legacy`  | Das Menüband wird in Formularen für Entitäten, die nicht aktualisiert wurden, oder in einer Listenansicht in [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)] angezeigt. |
 
 ### <a name="crm-client-type-rule"></a>Crm-Clienttyp-Regel
 Verwendet das `<CrmClientTypeRule>`-Element, um die Definition von Regeln abhängig vom Typ des verwendeten Clients zu erlauben. Die Typoptionen lauten wie folgt:  
@@ -60,27 +58,64 @@ Verwendet das `<CrmClientTypeRule>`-Element, um die Definition von Regeln abhän
 -   `Outlook`  
 
 ### <a name="crm-offline-access-state-rule"></a>Crm-Offlinezugriff-Zugriffsstatusregel
- Verwendet das `<CrmOfflineAccessStateRule>`-Element. Verwenden Sie diese Kriterien, um ein Menübandelement zu aktivieren, je nachdem, ob Dynamics 365 for Microsoft Office Outlook mit Offline-Zugriff derzeit offline ist.  
+ Verwendet das `<CrmOfflineAccessStateRule>`-Element. Verwenden Sie diese Kriterien, um ein Menübandelement abhängig davon zu aktivieren, ob [!INCLUDE[pn_crm_outlook_offline_access](../../includes/pn-crm-outlook-offline-access.md)] derzeit im Offlinemodus ist.  
 
 ### <a name="crm-outlook-client-type-rule"></a>Crm Outlook-Clienttyp-Regel
- Verwendet das `<CrmOutlookClientTypeRule>`-Element. Verwenden Sie diese Regel, wenn Sie eine Schaltfläche nur für einen spezifischen Dynamics 365 for Outlook-Typ anzeigen möchten. Die Typoptionen lauten wie folgt:  
+ Verwendet das `<CrmOutlookClientTypeRule>`-Element. Verwenden Sie diese Regel, wenn Sie eine Schaltfläche nur für rinrn spezifischen [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)]-Typ anzeigen möchten. Die Typoptionen lauten wie folgt:  
 
 -   `CrmForOutlook`  
 
 -   `CrmForOutlookOfflineAccess`  
 
 ### <a name="custom-rule"></a>Benutzerdefinierte Regel
- Verwendet das `<CustomRule>`-Element. Verwenden Sie diese Art von Regel, um eine Funktion in einer JavaScript-Bibliothek aufzurufen, die einen Booleschen Wert zurückgibt.  
+ Verwendet das `<CustomRule>`-Element. Verwenden Sie diese Art von Regel, um eine Funktion in einer JavaScript-Bibliothek aufzurufen, die ein Promise (Einheitliche Oberfläche) oder Boolean (Einheitliche Oberfläche und Web Client) zurückgibt.
+
+```JavaScript
+function EnableRule()
+{
+    const value = Xrm.Page.getAttribute("field1").getValue();
+    return value === "Active";
+}
+```
 
 > [!NOTE]
->  Benutzerdefinierte Regeln, die nicht schnell einen Wert zurückgeben, können sich auf die Leistung des Menübands auswirken. Wenn Sie Logik ausführen müssen, die möglicherweise einige Zeit in Anspruch nimmt, verwenden Sie die folgende Strategie, um Ihre benutzerdefinierte Regel asynchron zu machen:  
->   
-> 1.  Definieren Sie eine Regel, die ein benutzerdefiniertes Objekt überprüft. Sie können auf ein Objekt wie `Window.ContosoCustomObject.RuleIsTrue` prüfen, das Sie einfach an das Fenster anhängen.  
-> 2.  Wenn dieses Objekt vorhanden ist, geben Sie es zurück.  
-> 3.  Wenn das Objekt nicht vorhanden ist, definieren Sie das Objekt und legen Sie den Wert als "False" fest.  
-> 4.  Bevor Sie einen Wert zurückgeben, verwenden Sie [settimeout](https://msdn.microsoft.com/library/ms536753\(VS.85\).aspx) <!-- TODO not sure about this link-->, um eine asynchrone Rückruffunktion auszuführen, um das Objekt zurückzusetzen. Geben Sie dann "False" zurück.  
-> 5.  Nachdem die Rückruffunktion die Vorgänge durchgeführt hat, die nötig sind, um das richtige Resultat zu bestimmen, setzt sie den Wert des Objekts fest und verwendet die `refreshRibbon`-Methode, um das Menüband zu aktualisieren.  
-> 6.  Wenn das Menüband aktualisiert ist, erkennt es das Objekt zusammen mit dem korrekten Wertesatz, und die Regel wird geprüft.  
+>  Benutzerdefinierte Regeln, die nicht schnell einen Wert zurückgeben, können sich auf die Leistung des Menübands auswirken. Wenn Sie eine Logik ausführen müssen, deren Ausführung einige Zeit in Anspruch nehmen kann (z. B. eine Netzwerkanforderung), verwenden Sie die folgende Strategie, um Ihre benutzerdefinierte Regel asynchron zu machen.
+
+ Einheitliche Oberfläche-Regeln unterstützen die Rückgabe eines Promises und nicht boolesch für die asynchrone Regelauswertung. Wenn das Versprechen nicht innerhalb von 10 Sekunden aufgelöst wird, löst die Regel mit einem falschen Wert auf.
+ > [!NOTE]
+>  Versprechungsbasierte Regeln funktionieren nur auf der Einheitliche Oberfläche, sodass sie nicht verwendet werden können, wenn der klassische Web Client weiterhin verwendet wird.
+ ```JavaScript
+function EnableRule()
+{
+    const request = new XMLHttpRequest();
+    request.open('GET', '/bar/foo');
+
+    return new Promise((resolve, reject) =>
+    {
+        request.onload = function (e)
+        {
+            if (request.readyState === 4)
+            {
+                if (request.status === 200)
+                {
+                    resolve(request.responseText === "true");
+                }
+                else
+                {
+                    reject(request.statusText);
+                }
+            }
+        };
+        request.onerror = function (e)
+        {
+            reject(request.statusText);
+        };
+
+        request.send(null);
+    });
+}
+```
+
 
 ### <a name="entity-rule"></a>Entitätsregel
  Verwendet das `<EntityRule>`-Element. Entitätsregeln lassen die Evaluierung der aktuellen Entität zu. Dies ist hilfreich, wenn Sie benutzerdefinierte Aktionen definieren, die für die Entitätsvorlage gelten, statt für bestimmte Entitäten. Beispielsweise möchten Sie möglicherweise ein Menübandelement für alle Entitäten hinzufügen, mit Ausnahme einiger bestimmter Entitäten. Es ist einfacher, die benutzerdefinierte Aktion für die Entitätsvorlage zu definieren, die für alle Entitäten gilt, und dann eine Entitätsregel zu verwenden, die die Entitäten herausfiltert, die ausgeschlossen werden sollen.  
@@ -104,10 +139,10 @@ Verwendet das `<CrmClientTypeRule>`-Element, um die Definition von Regeln abhän
  Verwendet das `<OrRule>`-Element. Mit der `OrRule`-Regel können Sie den standardmäßigen UND-Vergleich für mehrere Aktivierungsregeltypen überschreiben. Verwenden Sie das `OrRule`-Element, um mehrere mögliche gültige Kombinationen zu definieren, die zu überprüfen sind.
 
 ### <a name="outlook-item-tracking-rule"></a>Outlook-Element-Nachverfolgungsregel
- Verwendet das `<OutlookItemTrackingRule>`-Element. Verwenden Sie das `TrackedInCrm`-Attribut für dieses Element, um festzulegen, ob der Datensatz in Common Data Service for Apps nachverfolgt wird.  
+ Verwendet das `<OutlookItemTrackingRule>`-Element. Verwenden Sie das Attribut `TrackedInCrm` für dieses Element, um festzulegen, ob der Datensatz in PowerApps verfolgt wird.  
 
 ### <a name="outlook-version-rule"></a>Outlook-Versionsregel
- Verwendet das `<OutlookVersionRule>`-Element. Verwenden Sie dies, um ein Menübandelement für eine bestimmte Version von Office Outlook anzuzeigen wie folgt:  
+ Verwendet das `<OutlookVersionRule>`-Element. Verwenden Sie diesl, um ein Menübandelement für eine bestimmte Version von [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)] anzuzeigen wie folgt:  
 
 -   `2003`  
 
@@ -124,17 +159,8 @@ Verwendet das `<CrmClientTypeRule>`-Element, um die Definition von Regeln abhän
 ### <a name="selection-count-rule"></a>Auswahlzählungsregel
  Verwendet das `<SelectionCountRule>`-Element. Verwenden Sie diese Art von Regel mit einem für eine Liste angezeigten Menüband, um eine Schaltfläche zu aktivieren, wenn bestimmte Höchst- und Mindestzahlen von Datensätzen in dem Raster ausgewählt werden. Zum Beispiel: Wenn Ihre Schaltfläche Datensätze zusammenführt, sollten Sie sicherstellen, dass mindestens zwei Datensätze ausgewählt werden, bevor  das Menübandsteuerelement aktiviert wird.  
 
-### <a name="sku-rule"></a>Sku-Regel
- Verwendet das `<SkuRule>`-Element. Verwenden Sie diese Art von Regel, um ein Menübandelement für eine bestimmte SKU-Version von Dynamics 365 wie folgt zu aktivieren:  
-
--   `OnPremise`  
-
--   `Online`  
-
--   `Spla`  
-
 ### <a name="value-rule"></a>Wertregel
-Verwendet das `<ValueRule>`-Element. Verwenden Sie diese Regel, um den Wert eines bestimmten Felds im Datensatz zu suchen, der im Formular angezeigt wird. Sie müssen für die Prüfung das `Field` und den `Value` angeben.  
+Verwendet das `<ValueRule>`-Element. Verwenden Sie diese Regel, um den Wert eines bestimmten Felds im Datensatz zu suchen, der im Formular angezeigt wird. Sie müssen für die Prüfung das `Field` und den `Value` angeben.
 
 ### <a name="see-also"></a>Siehe auch  
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   

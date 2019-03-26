@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="webpage-html-web-resources"></a>Webressourcen der Webseite (HTML)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/webpage-html-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/webpage-html-web-resources -->
 
 Verwenden Sie Webressourcen der Webseite (HTML), um Benutzeroberflächenelemente für Clienterweiterungen zu erstellen.
 

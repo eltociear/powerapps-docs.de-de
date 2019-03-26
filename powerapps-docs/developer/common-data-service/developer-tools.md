@@ -1,9 +1,9 @@
 ---
-title: <Topic Title> (Common Data Service for Apps) | Microsoft Docs
-description: <Description>
+title: Entwicklertools und -ressourcen (Common Data Service for Apps) | Microsoft Docs
+description: Informationen zu verfügbaren Tools und Ressourcen beim Arbeiten mit Lösungen.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/31/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -15,10 +15,6 @@ search.app:
   - PowerApps
   - D365CE
 ---
-<!-- The information about SDK assemblies should be found elsewhere
-Perhaps this topic should call out the available tools at a high level?
-Community tools should go here?
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/developer-tools -->
 
 # <a name="developer-tools-and-resources"></a>Entwicklertools und -ressourcen
 
@@ -33,7 +29,7 @@ Die folgenden Tools werden in NuGet-Paketen verteilt. Das [Entwicklerhandbuch: H
 |Codeerstellungstool `CrmSvcUtil.exe`|Ein Befehlszeilencodegenerierungstool, das .NET Framework-Klassen mit früher Bindung erzeugt, die das vom Organisationsservice verwendete Entitätsdatenmodell darstellen. <br />Weitere Informationen: <br />[Organisationsdienst](work-with-data-cds.md#organization-service)<br />[Entitätsklassen mit früher Bindung mit dem Codegenerierungstool erstellen (CrmSvcUtil.exe) ](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
 |Configuration Migration-Tool `DataMigrationUtility.exe`|Wird verwendet, um Konfigurationsdaten in verschiedenen Umgebungen zu verschieben. Konfigurationsdaten werden verwendet, um benutzerdefinierte Funktionen in  zu definieren und sind normalerweise in benutzerdefinierten Entitäten gespeichert. Dieses Tool ist nicht dazu gedacht, Geschäftsdaten zu verschieben. <br /> Weitere Informationen finden Sie unter [Common Data Service for Apps-Administratorhandbuch: Verschieben von Konfigurationsdaten über Instanzen und Organisationen hinweg mit dem Konfigurationsmigration-Tool](/dynamics365/customer-engagement/admin/manage-configuration-data).|
 |Package Deployer `PackageDeployer.exe`|Wird verwendet, um Pakete auf Common Data Service for Apps-Instanzen bereitzustellen. Ein Paket ist eine installierbare Einheit, die Lösungen beinhaltet. <br /> Weitere Informationen: <br />[Bereitstellen von Lösungspaketen](introduction-solutions.md#deploy-solution-packages)<br />[Erstellen von Paketen für den CDS for Apps-Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
-|Plug-In-Registrierungstool `PluginRegistration.exe`|Ein Tool, das verwendet wird, um Plug-In-Klassen der.NET-Assembly für Serverereignisse zu abonnieren. <br />Weitere Informationen: <br />[Plug-In erstellen](apply-business-logic-with-code.md#create-a-plug-in)<br />[Exemplarische Vorgehensweise: Registrieren eines Plug-Ins mithilfe des Plug-In-Registrierungstools](/dynamics365/customer-engagement/developer/walkthrough-register-plugin-using-plugin-registration-tool)|
+|Plug-In-Registrierungstool `PluginRegistration.exe`|Ein Tool, das verwendet wird, um Plug-In-Klassen der.NET-Assembly für Serverereignisse zu abonnieren. <br />Weitere Informationen: <br />[Plug-In erstellen](apply-business-logic-with-code.md#create-a-plug-in)<br />[Registrieren eines Plug-Ins](register-plug-in.md)|
 |SolutionPackager-Tool `SolutionPackager.exe`|SolutionPackager ist ein Tool, mit dem eine komprimierte Common Data Service for Apps-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können.<br /> Weitere Informationen: <br />[Teamentwicklung von Lösungen](introduction-solutions.md#team-development-of-solutions)<br />[Verwenden des SolutionPackager-Tools, um eine Lösungsdatei zu komprimieren und zu extrahieren](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
 ## <a name="net-sdk-assemblies"></a>.NET-SDK-Assemblys 

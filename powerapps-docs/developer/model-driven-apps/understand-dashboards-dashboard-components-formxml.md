@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="understand-dashboards-dashboard-components-and-formxml"></a>Grundlegendes zu Dashboards: Dashboardkomponenten und FormXML
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/understand-dashboards-dashboard-components-formxml -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/understand-dashboards-dashboard-components-formxml -->
 
 Dashboards sind eine der unterschiedlichen Arten von Formularen in modellgestützten Apps. Sie können das Attribut `SystemForm.Type` oder `UserForm.Type` verwenden, um zu ermitteln, ob das Formular ein Dashboard ist. Ein Formular vom Typ Dashboard besitzt den Eigenschaftswert "0 ".  
 

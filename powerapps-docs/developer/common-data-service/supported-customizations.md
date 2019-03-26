@@ -2,7 +2,7 @@
 title: Unterstützte Anpassungen für Common Data Service for Apps (Common Data Service for Apps) | Microsoft Docs
 description: 'Lesen Sie, wie Sie Common Data Service for Apps anpassen können, indem Sie Tools verwenden, die im PowerApps-Portal verfügbar sind oder in den Dokumenten beschrieben werden.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 
 <!-- This is the portion of the old topic that applies to CDS
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/supported-extensions
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
  -->
 
 
@@ -86,17 +86,16 @@ Die Möglichkeit, angepasste Workflowaktivitäten (Assemblys) zu erstellen, die 
 
 ## <a name="support-for-net-framework-versions"></a>Unterstützung für .NET Framework-Versionen
 
-Im Folgenden werden die Unterstützungsüberlegungen für benutzerdefinierten Code, der mit Microsoft .NET Framework 4.5.2. geschrieben wurde, beschrieben.
+Im Folgenden werden die Unterstützungsüberlegungen für benutzerdefinierten Code, der mit Microsoft .NET Framework 4.6.2. geschrieben wurde, beschrieben.
 
-- Jeder Webdienstclient, der mithilfe von Microsoft .NET Framework 4.5.2. oder höher erstellt wurde, der Webservices aufruft, wird in CDS for Apps vollständig unterstützt.
+- Jeder Webdienstclient, der mithilfe von Microsoft .NET Framework 4.6.2. oder höher erstellt wurde, der Webservices aufruft, wird in CDS for Apps vollständig unterstützt.
 
 > [!IMPORTANT]
 > Sie sollten alle benutzerdefinierten Client-Anwendungen mit Microsoft .NET Framework 4.6.2. oder höher erstellen. Nur Anwendungen sind zulässig, die die Sicherheit auf Transportebene (TLS) 1.2 oder höher verwenden. TLS 1.2 ist nicht das Standardprotokoll, das von .NET Framework 4.5.2 verwendet wird, aber es ist in .NET Framework 4.6.2.
 > 
 > Wenn Clients für ältere Versionen von Dynamics 365 Customer Engagement eine Verbindung mit einer Version oder einem Bereitstellungstyp herstellen sollen, können Sie sich vorbereiten, indem Sie die Anwendung erneut kompilieren, damit sie .NET Framework 4.6.2 verwenden kann. Weitere Informationen: [Blogbeitrag: Kommende Updates zu Dynamics 365 Customer Engagement-Verbindungssicherheit](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
 
-- Sämtliche .NET-Assemblys, die mit Microsoft .NET Framework 4.5.2 für die Verwendung in CDS for Apps als Plug-In-Assembly oder als benutzerdefinierte Workflowaktivität erstellt werden, werden unterstützt.
-- Sämtliche Visualisierungen (Diagramme), die mit .NET Framework 4.5.2 erstellt werden.
+- Sämtliche .NET-Assemblys, die mit Microsoft .NET Framework 4.6.2 für die Verwendung in CDS for Apps als Plug-In-Assembly oder als benutzerdefinierte Workflowaktivität erstellt werden, werden unterstützt.
 
 ## <a name="unsupported-customizations"></a>Nicht unterstützte Anpassungen
 

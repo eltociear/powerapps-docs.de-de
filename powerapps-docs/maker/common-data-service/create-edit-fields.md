@@ -1,7 +1,7 @@
 ---
 title: So erstellen und bearbeiten Sie Felder für Common Data Service for Apps | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/08/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -14,7 +14,7 @@ applies_to:
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
@@ -45,16 +45,25 @@ Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie v
 
 Sie sollten das PowerApps-Portal verwenden, um Felder Common Data Service for Apps zu erstellen und zu bearbeiten, außer Sie müssen eine der folgenden Anforderungen erfüllen:
 
-- Erstellen eines Suchfeld für Kunden
-- Erstellen eines Felds in einer Lösung, die keine CDS-Standardlösung ist
-- Festlegen von Statusgrundübergängen
-- Mehrere Felder gleichzeitig bearbeiten
-- Aktivieren der Überwachung
-- Sicherheit auf Feldebene aktivieren
-- Auswählen, ob das Feld in interaktiven Funktionen im globalen Filter angezeigt wird
-- Auswählen, ob das Feld in Dashboards für interaktive Funktionen sortierbar ist
-- Festlegen einer Anforderungsstufe "Eingabe empfohlen" für das Feld
-- Verwaltete Eigenschaften für ein Feld einrichten
+- Erstellen eines Suchfeld für Kunden. 
+   - Weitere Informationen: [Unterschiedliche Suchmethoden](types-of-fields.md#different-types-of-lookups)
+- Erstellen eines Felds in einer Lösung, die keine CDS-Standardlösung ist. 
+   - Weitere Informationen finden Sie in [Überblick zu Lösungen](solutions-overview.md).
+- Festlegen von Statusgrundübergängen. 
+   - Weitere Informationen: [Festlegen von Statusgrundübergängen für benutzerdefinierte Entitäten](define-status-reason-transitions.md)
+- Mehrere Felder gleichzeitig bearbeiten.
+- Aktivieren der Überwachung. 
+   - Mehr Informationen: [Überblick über die Auditierung](../../developer/common-data-service/auditing-overview.md)
+- Sicherheit auf Feldebene aktivieren. 
+   - Mehr Informationen: [Entitäten für die Feldsicherheit](../../developer/common-data-service/field-security-entities.md)
+- Auswählen, ob das Feld in interaktiven Funktionen im globalen Filter angezeigt wird. 
+   - Mehr Informationen: [Konfigurieren Sie modellgetriebene interaktive Dashboards für Anwendungen.](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- Auswählen, ob das Feld in Dashboards für interaktive Funktionen sortierbar ist. 
+   - Mehr Informationen: [Konfigurieren Sie modellgetriebene interaktive Dashboards für Anwendungen.](../model-driven-apps/configure-interactive-experience-dashboards.md)
+- Festlegen einer Anforderungsstufe "Eingabe empfohlen" für das Feld 
+   - Weitere Informationen: [Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md)
+- Verwaltete Eigenschaften für ein Feld einrichten 
+   - Weitere Informationen: [Verwaltete Eigenschaften für Felder festlegen](set-managed-properties-for-field.md)
 
 > [!NOTE]
 > Sie können ein Suchfeld im PowerApps-Portal oder im Projektmappen-Explorer erstellen, indem Sie eine 1: n-Beziehung für die Entität erstellen. Nur der Projektmappen-Explorer bietet die Option, um diese Beziehung beim Erstellen eines Felds zu erstellen.

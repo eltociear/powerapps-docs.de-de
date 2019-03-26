@@ -22,7 +22,7 @@ search.app:
 
 # <a name="write-a-custom-azure-aware-plug-in"></a>Schreiben eines benutzerdefinierten Azure-Plug-Ins
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
 Das Schreiben eines Plug-Ins, das mit Azure funktioniert ähnelt dem Schreiben eines beliebigen anderen "Dynamics 365 Common Data Service für Apps"-Plug-Ins. Allerdings zusätzlich zum Aufrufen aller gewünschten Webdienstmethoden muss das Plug-In Code enthalten, um das Veröffentlichen des Ausführungskontexts im Azure Service Bus einzuleiten.  
   
@@ -143,6 +143,5 @@ Für ein Plug-In, das für die asynchrone Ausführung registriert ist, umfasst <
 [Azure-Erweiterungen für Dynamics 365](azure-integration.md)<br />
 [Senden von Dynamics 365-Daten über den Microsoft Azure Service Bus](work-data-azure-solution.md)<br />
 [Schreiben eines Plug-Ins](write-plug-in.md)<br />
-<!--[Plug-in Isolation, Trust, and the Disallowed List](plugin-isolation-trusts-statistics.md)<br /> TODO -->
 [Ereignisausführungspipeline](event-framework.md)<br />
 [Registrieren und Bereitstellen von Plug-Ins](register-plug-in.md)
