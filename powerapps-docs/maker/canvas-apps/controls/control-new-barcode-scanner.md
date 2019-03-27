@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 961f8908014ef9cd85eadacb97a7c1dfc7e52b25
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57800995"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491574"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Barcodescanner Steuerelement für Canvas-apps
 
@@ -72,3 +72,11 @@ Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Ba
 **[X](properties-size-location.md)** – Der Abstand zwischen dem linken Rand eines Steuerelements und dem linken Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
+
+## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+Dieselben Richtlinien wie für die **[Schaltfläche](control-button.md)** Steuerelement gelten für die **Barcode-Scanner** steuern, da es sich um eine Schaltfläche handelt, die die Überprüfung wird gestartet.
+
+### <a name="visual-alternatives"></a>Visuellen alternativen
+* Der Barcodescanner ist eine Schaltfläche, die das Überprüfungsergebnis nicht angezeigt wird. Sollten Sie erwägen, die das Überprüfungsergebnis mit einem **[Bezeichnung](control-text-box.md)** Steuerelement. Legen Sie die Bezeichnung des **[Text](properties-core.md)** Eigenschaft des Barcodescanners **Wert** Eigenschaft. Legen Sie die Bezeichnung des **[Live](properties-accessibility.md)** Eigenschaft **Polite** , damit Benutzer der Sprachausgabe über Änderungen benachrichtigt werden. Diese Änderung wird den gescannten Wert für jedermann, unabhängig von visual Möglichkeit zugänglich.
+
+* Benutzer, die mit visual und motor behinderungen möglicherweise nicht auf die Kamera zeigen Sie auf einen Barcode bevorzugen. Erwägen Sie eine andere Form der Eingabe, z. B. eine **[Texteingabe](control-text-input.md)** -Steuerelement, für den Benutzer zur Eingabe von Barcodes.

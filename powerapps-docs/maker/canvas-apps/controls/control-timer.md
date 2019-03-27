@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
-ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.openlocfilehash: 5d20e2324f2efb4f866ed4fc183f289733c10a41
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57804376"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491663"
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -26,7 +26,9 @@ Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse 
 ## <a name="description"></a>Beschreibung
 Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder andere Eigenschaften eines Steuerelements ändern, nachdem eine bestimmte Zeit verstrichen ist.
 
-Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Timer im Designer ausgeführt wird.  Dadurch können Benutzer den Timer ohne zeitliche Einschränkung im Designer konfigurieren.
+> [!NOTE]
+> Führen in PowerApps Studio Zeitgeber nur im Vorschaumodus.
+
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Duration**: Gibt an, wie lange ein Timer ausgeführt wird (in Millisekunden).  Es gibt keinen Höchstwert.
@@ -142,33 +144,31 @@ Beachten Sie, dass Sie die App im Vorschaumodus ausführen müssen, damit der Ti
 
 5. Klicken Sie auf die Timer-Schaltfläche, um die Animation zu starten oder zu beenden. Der Text in der Bezeichnung wird weiß, kehrt zur vollständigen Intensität zurück und wiederholt den Prozess.
 
-
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
-Es gelten dieselben Richtlinien wie für **[Schaltflächen](control-button.md)**, da ein **Timer** nur eine besondere Schaltfläche ist.
+Dieselben Richtlinien wie für die **[Schaltfläche](control-button.md)** Steuerelement gelten für die **Timer** steuern, wenn der Benutzer mit ihr interagieren können.
 
-> [!IMPORTANT]
-> Das Steuern des **Timers** ohne direkten Eingriff des Benutzers wird aus Gründen der Barrierefreiheit nicht unterstützt. Ein Timer kann z.B. verborgen werden, indem ein anderes Steuerelemente darüber gelegt oder die Eigenschaft **[Sichtbar](properties-core.md)** auf **FALSE** festgelegt wird. Der Timer startet automatisch, wenn ein Bildschirm angezeigt wird, und führt nach einiger Zeit auch automatisch eine Aktion aus. Derzeit ist es nicht allgemein möglich, dieses Szenario zugänglich zu machen.
+### <a name="background-timers"></a>Hintergrund-Timer
+Hintergrund-Zeitgeber automatisch ausgeführt und sind ausgeblendet. Verwenden sie eine untergeordnete Rolle, wobei die verstrichene Zeit von geringem Interesse an den Benutzer. Sie können z. B. einmal pro Minute Daten zu aktualisieren oder eine Meldung nur für einen bestimmten Zeitraum anzeigen.
 
-Im Folgenden finden Sie weitere Richtlinien für Barrierefreiheit.
+Hintergrund-Timer müssen ihre **[Visible](properties-core.md)** Eigenschaft auf False festgelegt, damit sie von allen Benutzern ausgeblendet sind.
 
-### <a name="timing"></a>Zeitliche Steuerung
-Beim automatischen Starten oder Beenden eines **Timers**, sollten Sie beachten, ob Benutzern ausreichend Zeit zum Lesen und Reagieren bleibt. Benutzer, die die Tastatur oder die Sprachausgabe verwenden, benötigen möglicherweise mehr Zeit, um auf ein solches Ereignis zu reagieren.
+### <a name="timing-considerations"></a>Timing-Überlegungen
+Wenn eine **Timer** führt automatisch, überlegen Sie, ob es sich bei Benutzer haben ausreichend Zeit zum Lesen und reagieren bleibt. Tastatur und Bildschirm-Reader-Benutzern möglicherweise mehr Zeit, um auf ein zeitlich festgelegtes Ereignis zu reagieren.
 
 Eine der folgenden Vorgehensweisen ist ausreichend:
-* Benutzern ermöglichen, das zeitlich begrenzte Ereignis abzubrechen
-* Benutzern ermöglichen, das Zeitlimit anzupassen, bevor es beginnt
-* 20 Sekunden vor Ende des Zeitlimits warnen und eine Möglichkeit bieten, es auf einfache Weise zu verlängern
+* Ermöglicht Benutzern die zeitlich begrenzte Ereignis abzubrechen.
+* Ermöglicht Benutzern das Zeitlimit anzupassen, bevor sie beginnt.
+* Warnen Sie 20 Sekunden vor Ablauf des Zeitlimits und bieten Sie eine einfache Möglichkeit, um den Grenzwert zu erweitern.
 
 Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informationen finden Sie in der englischsprachigen [WCAG 2.0-Richtlinie für Zeitlimits](https://www.w3.org/TR/WCAG20/#time-limits).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
-* Verwenden Sie **[Text](properties-core.md)** niemals für zeitkritische und wichtige Informationen. Benutzer der Sprachausgabe werden über Änderungen an **[Text](properties-core.md)** nicht informiert.
+* Wenn Sie Änderungen auf dem aktuellen Bildschirm von ein Timer ausgelöst wird, verwenden Sie eine [dynamischen Bereichs](../accessible-apps-live-regions.md) Sprachausgabe Benutzern mitteilen, was sich geändert.
 
     > [!NOTE]
-  > Die Sprachausgabe informiert alle fünf Sekunden über die verstrichene Zeit. Die **[Text](properties-core.md)**-Eigenschaft des Timers wird in der Ankündigung jedoch nicht berücksichtigt.
+    > Wenn der Zeitgeber sichtbar ist und ausgeführt wird, wird die verstrichene Zeit alle fünf Sekunden die Sprachausgabe.
 
-* Fügen Sie ggf. eine **[Bezeichnung](control-text-box.md)** hinzu, die die verstrichene Zeit anzeigt. Weisen Sie den Benutzer mithilfe des **[Texts](properties-core.md)** an, ob der Timer gestartet oder beendet werden soll.
-
-### <a name="support-in-powerapps-studio"></a>Unterstützung in PowerApps Studio
-Wenn Sie eine app erstellen, Timer deaktiviert, um zu verhindern, dass Ereignisse auslösen. Sie können die Timer in PowerApps Studio testen, wenn Sie Preview öffnen oder speichern Sie die app und Testen Sie sie in PowerApps Mobile oder der webplayer können.
+* Verwenden Sie nicht die **[Text](properties-core.md)** Eigenschaft eines Steuerelements für zeitkritische und wichtige Informationen. Wird nicht die Sprachausgabe Änderungen  **[Text](properties-core.md)**.
+* Für interaktive Timer:
+    * Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+    * Erwägen Sie eine **[Bezeichnung](control-text-box.md)** -Steuerelement an die verstrichene Zeit. Mithilfe des **[Text](properties-core.md)** Eigenschaft, um den Benutzer anweisen, starten oder Beenden des Zeitgebers.
