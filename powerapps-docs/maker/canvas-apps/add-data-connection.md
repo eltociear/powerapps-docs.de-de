@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33ca717967989a202fabbf8281b93f8b8263b79d
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 28357a6187831e05fe27075b8b22514950215ab4
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853202"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545059"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Hinzufügen einer Datenverbindung in einer Canvas-App in PowerApps
 
@@ -34,57 +34,54 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
 
 [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 
-## <a name="add-a-data-source"></a>Datenquelle hinzufügen
-1. Zeigen Sie auf der Registerkarte **Start** auf die Kachel **Mit leerer App starten**, und klicken Sie auf **Diese App erstellen**.
+## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 
-    ![App von Grund auf neu erstellen](./media/add-data-connection/blank-app-tile.png)
+1. Auf der **Startseite** Registerkarte **Canvas-app mit leerer App**.
+
+1. Geben Sie einen Namen für Ihre app, und wählen Sie dann **erstellen**.
 
 1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** angezeigt wird, klicken Sie auf **Überspringen**.
 
-3. Klicken oder tippen Sie im mittleren Bereich auf **Mit Daten verbinden**.
+## <a name="add-data-source"></a>Datenquelle hinzufügen
 
-4. Wenn die gewünschte Verbindung in der Liste im Bereich **Daten** aufgeführt wird, klicken Sie darauf, um sie der App hinzuzufügen. Andernfalls fahren Sie mit dem nächsten Schritt fort.
+1. Wählen Sie im mittleren Bereich **Verbinden mit Daten** zum Öffnen der **Daten** Bereich.
 
-    ![Datenquelle hinzufügen](./media/add-data-connection/choose-existing-connections.png)
+    Wenn dies wäre eine vorhandene app und der Bildschirm bereits ein Steuerelement enthalten, wählen Sie **Ansicht** > **Datenquellen** auf den gleichen Bereich zu öffnen.
 
-5. Klicken Sie auf **Neue Verbindung**, um eine Liste der Connectors anzuzeigen.
+1. Wählen Sie **Datenquelle hinzufügen**.
 
-    ![Hinzufügen einer Verbindung](./media/add-data-connection/new-connection.png)
+1. Wenn die Liste der Verbindungen das enthält, die Sie möchten, wählen Sie es, um es der app hinzuzufügen. Andernfalls fahren Sie mit dem nächsten Schritt fort.
 
-6. Scrollen Sie durch die Liste der Connectors bis zum gewünschten Verbindungstyp (z.B. **Office 365 Outlook**), und klicken Sie darauf.
+    ![Wählen Sie eine vorhandene Verbindung](./media/add-data-connection/choose-existing-connection.png)
 
-    ![Auswählen der Verbindung](./media/add-data-connection/choose-connection.png)
+1. Wählen Sie **neue Verbindung** eine Liste der Verbindungen angezeigt.
 
-7. Klicken Sie auf **Erstellen**, um die Verbindung zu erstellen und der App hinzuzufügen.
+    ![Hinzufügen einer Verbindung](./media/add-data-connection/add-connection.png)
+
+1. Geben Sie in der Suchleiste oder fügen Sie die ersten Buchstaben der gewünschten Verbindung, und klicken Sie dann Verbindung wenn es angezeigt wird.
+
+    ![Suchen Sie nach einer Verbindung](./media/add-data-connection/search-connections.png)
+
+1. Klicken Sie auf **Erstellen**, um die Verbindung zu erstellen und der App hinzuzufügen.
 
     Einige Connectors wie **Office 365 Outlook** erfordern keine weiteren Schritte, und Sie können sofort Daten daraus anzeigen. Andere Connectors fordern Sie auf, Anmeldeinformationen bereitzustellen, einen bestimmten Satz von Daten anzugeben oder weitere Schritte durchzuführen. In [SharePoint](connections/connection-sharepoint-online.md) und [SQL Server](connections/connection-azure-sqldatabase.md) sind z.B. zusätzliche Informationen erforderlich, bevor Sie sie verwenden können.
-
-## <a name="add-another-data-source"></a>Hinzufügen einer anderen Datenquelle
-1. Fügen Sie ein Steuerelement hinzu, dem Sie eine Datenquelle hinzufügen möchten.
-
-    Das Steuerelement muss so wie Kataloge und Listenfelder über eine **Items**-Eigenschaft oder so wie Formulare über eine **Item**-Eigenschaft verfügen.
-
-1. Öffnen Sie im Bereich **Daten** (wird automatisch geöffnet) die Liste unter **Datenquelle**, und klicken Sie auf **Datenquelle hinzufügen**.
-
-1. Führen Sie die vorherige Anleitung ab Schritt 4 aus.
 
 ## <a name="identify-or-change-a-data-source"></a>Identifizieren oder Ändern einer Datenquelle
 Wenn Sie eine App aktualisieren, müssen Sie möglicherweise die im Katalog angezeigte Datenquelle, ein Formular oder ein anderes Steuerelement angeben oder ändern. Beispiel: Beim Aktualisieren einer App müssen Sie eine Datenquelle identifizieren, die von jemand anderem vor Kurzem oder von Ihnen selbst vor längerer Zeit erstellt wurde.
 
-1. Wählen Sie das Steuerelement aus, für das Sie die Datenquelle identifizieren oder ändern möchten.
-
-    Wählen Sie z.B. einen Katalog (und kein Steuerelement im Katalog) aus, indem Sie in der hierarchischen Liste der Bildschirme und Steuerelemente am linken Rand darauf klicken oder tippen.
+1. Wählen Sie das Steuerelement, z. B. einen Katalog, die für den Sie angeben oder die Datenquelle ändern möchten.
 
     Der Name der Datenquelle wird im rechten Bereich auf der Registerkarte **Eigenschaften** angezeigt.
 
-2. Wählen Sie die Datenquelle aus, um sie zu ändern oder um weitere Informationen dazu anzuzeigen.
+    ![Identifizieren Sie eine Verbindung](./media/add-data-connection/identify-connection.png)
 
-    ![Bereich „Daten“](./media/add-data-connection/data-pane.png)
+1. Wählen Sie den Pfeil nach unten neben dem Namen, um weitere Informationen zur Datenquelle anzuzeigen oder um ihn zu ändern.
 
-3. Um die Datenquelle zu ändern, öffnen Sie die Liste der Datenquellen, und wählen Sie eine andere Quelle aus, oder erstellen Sie eine neue.
+    Weitere Informationen über die aktuelle Datenquelle angezeigt, und Sie können auswählen, oder erstellen Sie eine andere Quelle.
 
-     ![Bereich „Daten“](./media/add-data-connection/datasource-list.png)
+    ![Ändern einer Verbindung](./media/add-data-connection/change-connection.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 * Zum Anzeigen und Aktualisieren von Daten in einer Quelle wie Excel, SharePoint oder SQL Server [fügen Sie einen Katalog hinzu](add-gallery.md), und [fügen Sie ein Formular hinzu](add-form.md).
 * Verwenden Sie für die Daten in anderen Quellen Connector-spezifische Funktionen, z.B. für [Office 365 Outlook](connections/connection-office365-outlook.md), [Twitter](connections/connection-twitter.md) und [Microsoft Translator](connections/connection-microsoft-translator.md).

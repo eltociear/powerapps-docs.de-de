@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 6089063e2478c95bb5bfbc5926608d85552cea40
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198542"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545105"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in eine Canvas-app
 
@@ -86,7 +86,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 
     ![Festlegen Sie der Items-Eigenschaft des Katalogs, und ändern Sie die Felder, die es zeigt](./media/create-update-collection/configure-gallery.png)
 
-1. Schließen der **Daten** Bereich, und legen Sie die **Layout** Feld **Titel und Untertitel**.
+1. Schließen der **Daten** , wählen Sie den Katalog, und legen Sie dann die **Layout** Feld **Titel und Untertitel**.
 
     ![Festlegen Sie der Items-Eigenschaft des Katalogs, und ändern Sie die Felder, die es zeigt](./media/create-update-collection/change-layout.png)
 

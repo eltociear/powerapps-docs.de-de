@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357136"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545082"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
 
@@ -53,8 +53,6 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
-    [![PowerApps-Startseite](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
-
 1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol (**...** ) für sie und dann **Bearbeiten** aus.
 
     ![App zur Bearbeitung öffnen](./media/customize-layout-sharepoint/open-app.png)
@@ -69,25 +67,15 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
     ![Katalog auswählen](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. Wählen Sie in der Nähe des rechten Rands **Konten** aus, um den Bereich **Daten** zu öffnen.
-
-    ![Öffnen Sie den Bereich **Daten**](./media/customize-layout-sharepoint/open-data-pane.png)
-
-1. Öffnen Sie im Bereich **Daten** die Liste der Optionen unter **Layout**.
-
-    ![Layoutoptionen anzeigen](./media/customize-layout-sharepoint/show-layouts.png)
-
-1. Wählen Sie in der Liste der Optionen die Option aus, die nur einen Titel anzeigt.
+1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, öffnen Sie die Liste der Optionen unter **Layout**, und wählen Sie dann die Option, die nur einen Titel anzeigt.
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Öffnen Sie im Bereich **Daten** die Liste der Optionen für den Titel.
+1. Neben **Felder**Option **bearbeiten**, und wählen Sie dann auf den Abwärtspfeil für das Feld "Titel" ein.
 
     Der Name dieses Steuerelements endet in einer Zahl, z.B. **Titel1**, die Zahl unterscheidet sich jedoch basierend auf anderen Aktionen, die Sie möglicherweise ausgeführt haben.
 
-    ![Öffnen der Liste von Optionen für die Titelbezeichnung](./media/customize-layout-sharepoint/show-title-options.png)
-
-1. Wählen Sie in der Liste der Optionen **Kontoname (Name)** aus, und schließen Sie dann den Bereich **Daten**.
+1. Wählen Sie in der Liste der Optionen, **Kontoname**, und schließen Sie dann die **Daten** Bereich.
 
     Der Katalog zeigt den Namen jedes Kontos an.
 
@@ -154,9 +142,7 @@ Wenn die Geräte Ihrer Benutzer weder über Touchscreens noch Mausräder verfüg
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. Wählen Sie auf der Registerkarte **Katalog** die Option **Scrollleiste anzeigen** aus, und überprüfen Sie, ob der Wert der Eigenschaft sich in **TRUE** geändert hat.
-
-    ![Scrollleiste anzeigen](./media/customize-layout-sharepoint/show-scrollbar.png)
+1. Festlegen des Katalogs **scrollleiste anzeigen** Eigenschaft **"true"**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
