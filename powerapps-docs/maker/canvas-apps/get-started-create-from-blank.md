@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/23/2018
+ms.date: 03/26/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c398bb7a916c98aa769e39477fe889a74fce32c
-ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
+ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
+ms.sourcegitcommit: 926f42cd61ac3751540d42e74e4408bc82afc444
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2018
-ms.locfileid: "51333994"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58504041"
 ---
-# <a name="create-an-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
+# <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
 
-Erstellen Sie Ihre eigene Canvas-App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber erfahrene App-Entwickler können damit die beste App für ihre Anforderungen erstellen.
+Erstellen Sie Ihre eigene Canvas-App auf Grundlage von Excel-Daten im Tabellenformat, und fügen Sie auf Wunsch Daten aus anderen Quellen hinzu. Mithilfe dieses Tutorials können Sie eine App erstellen, die zwei Bildschirme enthält. Auf einem Bildschirm können Benutzer eine Reihe von Datensätzen durchsuchen. Auf dem anderen Bildschirm können Benutzer einen Datensatz erstellen, ein oder mehrere Felder in einem Datensatz aktualisieren oder einen vollständigen Datensatz löschen. Dieser Ansatz ist zeitaufwändiger als das [automatische Generieren einer App](get-started-create-from-data.md), aber App-Entwickler mit mehr Erfahrung können damit die beste App für ihre Anforderungen erstellen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -34,10 +34,10 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
     | --- | --- | --- | --- |
     | Saturday |10am-noon |Vasquez |Kumashiro |
     | Saturday |noon-2pm |Ice |Singhal |
-    | Saturday |2pm-4-pm |Myk |Mueller |
+    | Saturday |2pm-4pm |Myk |Mueller |
     | Sunday |10am-noon |Li |Adams |
-    | Sunday |10am-noon |Singh |Morgan |
-    | Sunday |10am-noon |Batye |Nguyen |
+    | Sunday | noon-2pm |Singh |Morgan |
+    | Sunday | 2pm-4pm |Batye |Nguyen |
 
 2. Formatieren Sie diese Daten als Tabelle mit dem Namen **Schedule**, sodass die Informationen von PowerApps analysiert werden können.
 
@@ -49,19 +49,27 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 > Sie können Ihre eigene Excel-Datei verwenden und dieses Tutorial nur für allgemeine Konzepte durchsehen. Die Daten in der Excel-Datei müssen jedoch als Tabelle formatiert sein. Weitere Informationen finden Sie unter [Formatieren einer Tabelle in Excel](how-to-excel-tips.md).
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
+
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+
+1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
+
+    > [!div class="mx-imgBorder"]
+    >![Erstellen einer Canvas-App ohne Vorlage](./media/get-started-create-from-blank/blank-app.png)
+
+1. Geben Sie einen Namen für Ihre App an, wählen Sie **Telefon** aus, und klicken Sie dann auf **Erstellen**.
 
     Sie können eine App von Grund auf neu für Telefone oder andere Geräte (z.B. Tablets) entwerfen. Dieses Thema konzentriert sich auf den Entwurf einer App für Telefone.
 
-1. Zeigen Sie unter **Eigene App erstellen** auf die Kachel **Mit leerer App starten** für Canvas-Apps, wählen Sie das Telefonsymbol und anschließend **Diese App erstellen** aus.
-
-    ![Kachel für leere App](./media/get-started-create-from-blank/start-from-blank.png)
+    > [!div class="mx-imgBorder"]
+    >![Angeben des Namens und Formats einer App](./media/get-started-create-from-blank/excel-demo.png)
 
     PowerApps Studio erstellt eine leere App für Telefone.
 
 1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** geöffnet wird, wählen Sie **Überspringen** aus.
 
 ## <a name="connect-to-data"></a>Herstellen einer Datenverbindung
+
 1. Wählen Sie in der Mitte des Bildschirms **Mit Daten verbinden** aus.
 
 1. Wählen Sie im Bereich **Daten** die Verbindung für Ihr Cloudspeicherkonto aus, wenn es angezeigt wird. Gehen Sie andernfalls folgendermaßen vor, um eine Verbindung hinzuzufügen:
@@ -73,97 +81,93 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
 1. Aktivieren Sie unter **Eine Tabelle auswählen** das Kontrollkästchen für **Schedule**, und wählen Sie dann **Verbinden** aus.
 
+1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen (X) auswählen.
+
 ## <a name="create-the-view-screen"></a>Erstellen des Anzeigebildschirms
 
-1. Wählen Sie auf der Registerkarte **Home** den Pfeil nach unten neben **Neuer Bildschirm** aus, um eine Liste der Bildschirmtypen zu öffnen, und wählen Sie dann **Listenbildschirm** aus.
-
-    ![Hinzufügen einer Listenanzeige](./media/get-started-create-from-blank/add-list-screen.png)
+1. Wählen Sie auf der Registerkarte **Home** (Startseite) den Pfeil nach unten neben **Neuer Bildschirm** aus, um eine Liste der Bildschirmtypen zu öffnen, und wählen Sie dann **Liste** aus.
 
     Es wird ein Bildschirm mit mehreren Standardsteuerelementen hinzugefügt, wie etwa einem Suchfeld und einem **[Katalog](controls/control-gallery.md)**-Steuerelement. Der Katalog deckt den gesamten Bildschirm unter dem Suchfeld ab.
 
-2. Wählen Sie den Katalog durch Klicken oder Tippen in der Nähe seiner Mitte aus.
+1. Wählen Sie am oberen Rand des neuen Bildschirms das Steuerelement **[Bezeichnung](controls/control-text-box.md)** aus, und ersetzen Sie dann **[Titel]** durch **Datensätze anzeigen**.
+
+     ![Ändern der Titelleiste](./media/get-started-create-from-blank/change-title-bar.png)
+
+1. Klicken Sie auf der linken Navigationsleiste auf **BrowseGallery1**.
 
     Ein Auswahlrahmen mit Ziehpunkten umgibt den Katalog.
 
     ![Hinzufügen einer Listenanzeige](./media/get-started-create-from-blank/select-gallery.png)
 
-3. Wählen Sie im rechten Bereich **CustomGallerySample** aus, um den Bereich **Daten** zu öffnen.
+1. Klicken Sie auf der Registerkarte **Eigenschaften** im rechten Bereich auf den Pfeil nach unten, um das **Layoutmenü** anzuzeigen.
 
-    ![Bereich „Daten“ öffnen](./media/get-started-create-from-blank/custom-gallery-sample.png)
+    ![Öffnen des Layoutmenüs](./media/get-started-create-from-blank/select-layout.png)
 
-4. Wählen Sie unter **Datenquelle** den Pfeil nach unten aus, um die Liste der Datenquellen für die App zu öffnen, und wählen Sie dann **Schedule** aus.
+1. Wählen Sie **Titel, Untertitel und Text** aus.
 
-    ![Datenquelle auswählen](./media/get-started-create-from-blank/select-schedule.png)
+1. Ersetzen Sie auf der Leiste mit den Formeln **CustomGallerySample** durch **Schedule**, und ersetzen Sie dann beide Instanzen von **SampleText** durch **Volunteer** (Freiwilliger).
 
-5. Wählen Sie unter **Layout** den Pfeil nach unten aus, um die Liste der Layouts zu öffnen, und wählen Sie dann **Titel, Untertitel und Text** aus.
+1. Klicken Sie am rechten Rand der Leiste mit den Formeln auf den Pfeil nach unten, und wählen Sie dann **Text formatieren** aus.
 
-    ![Auswählen des Layouts](./media/get-started-create-from-blank/select-layout.png)
+    Die Formel stimmt mit diesem Beispiel überein:
 
-6. Ändern Sie unter **Title2** die angezeigte Spalte von **Backup** in **Volunteer**.
+    ```powerapps-dot
+    SortByColumns(
+        Search(
+            Schedule,
+            TextSearchBox1.Text,
+            "Volunteer"
+        ),
+        "Volunteer",
+        If(
+            SortDescending1,
+            SortOrder.Descending,
+            SortOrder.Ascending
+        )
+    )
+    ```
 
-     ![Spalte in Bezeichnung ändern](./media/get-started-create-from-blank/change-title2.png)
+1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich neben der Bezeichnung **Felder** die Option **Bearbeiten** aus.
 
-7. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen auswählen.
+1. Klicken Sie im Feld **Title2** auf **Volunteer**.
 
-    Der Katalog zeigt den Namen jedes Freiwilligen sowie Tag und Uhrzeit seiner Schicht an.
+1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen (X) auswählen.
 
-    ![Die unsortierten „Schedule“-Daten im Katalog](./media/get-started-create-from-blank/show-data-unsorted.png)
+Benutzer können den Katalog nach den Namen der Freiwilligen basierend auf den Funktionen **SortByColumns** und **Search** in dieser Formel sortieren und filtern.
 
-8. Wählen Sie den Katalog aus, und vergewissern Sie sich, dass die Eigenschaftenliste **[Items](controls/properties-core.md)** anzeigt.
+- Wenn ein Benutzer mindestens einen Buchstaben in das Suchfeld eingibt, zeigt der Katalog nur die Datensätze an, bei denen das Feld **Volunteer** den Text enthält, den der Benutzer eingibt.
+- Wenn ein Benutzer die Sortierschaltfläche (zwischen der Schaltfläche „Aktualisieren“ und „+“ auf der Titelleiste) auswählt, zeigt der Katalog die Datensätze in aufsteigender oder absteigender Reihenfolge (je nachdem, wie häufig der Benutzer die Schaltfläche auswählt) basierend auf dem Feld **Volunteer** an.
 
-    Wie in die Bearbeitungsleiste gezeigt, hat diese Eigenschaft den Wert **Schedule**.
-
-    ![Die unsortierten „Schedule“-Daten im Katalog](./media/get-started-create-from-blank/set-property.png)
-
-9. Ändern Sie den Wert der Eigenschaft **Items**, indem Sie diese Formel kopieren und in die Bearbeitungsleiste einfügen:
-
-    **SortByColumns(Search(Schedule, TextSearchBox1.Text, "Volunteer"), "Volunteer", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))**
-
-    Der Katalog zeigt Daten in alphabetischer Reihenfolge nach den Namen der Freiwilligen an.
-
-    ![Die sortierten „Schedule“-Daten im Katalog](./media/get-started-create-from-blank/show-data-sorted.png)
-
-    Benutzer können den Katalog nach den Namen der Freiwilligen basierend auf den Funktionen **SortByColumns** und **Search** in dieser Formel sortieren und filtern.
-
-   - Wenn ein Benutzer mindestens einen Buchstaben in das Suchfeld eingibt, zeigt der Katalog nur die Datensätze an, bei denen das Feld **Volunteer** den Text enthält, den der Benutzer eingibt.
-   - Wenn ein Benutzer die Sortierschaltfläche auswählt, zeigt der Katalog die Datensätze in aufsteigender oder absteigender Reihenfolge (je nachdem, wie häufig der Benutzer die Schaltfläche auswählt) basierend auf dem Feld **Volunteer** an.
-
-     Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
-
-10. Geben Sie ein **i** in das Suchfeld ein, wählen Sie die Sortierschaltfläche durch Klicken oder Tippen aus, und wählen Sie sie noch einmal aus (oder eine ungerade Anzahl weiterer Male).
-
-     Der Katalog zeigt diese Ergebnisse an.
-
-     ![Sortieren und Filtern der Galerie](./media/get-started-create-from-blank/sort-filter.png)
-
-11. Löschen Sie den gesamten Text im Suchfeld.
-
-12. Wählen Sie am oberen Rand des Bildschirms das Steuerelement **[Bezeichnung](controls/control-text-box.md)** aus, und ersetzen Sie dann **[Titel]** durch **Datensätze anzeigen**.
-
-     ![Ändern der Titelleiste](./media/get-started-create-from-blank/change-title-bar.png)
+Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
 
 ## <a name="create-the-change-screen"></a>Erstellen des Änderungsbildschirms
-1. Wählen Sie auf der Registerkarte **Home** den Pfeil nach unten neben **Neuer Bildschirm** und dann **Formularbildschirm** aus.
 
-     ![Formularbildschirm hinzufügen](./media/get-started-create-from-blank/add-form-screen.png)
+1. Wählen Sie auf der Registerkarte **Home** den Pfeil nach unten neben **Neuer Bildschirm** und dann **Formular** aus.
 
-1. Wählen Sie im Bildschirm, den Sie gerade hinzugefügt haben, **Mit Daten verbinden** aus, um den Bereich **Daten** zu öffnen, und legen Sie als Datenquelle **Schedule** fest.
+1. Klicken Sie auf der linken Navigationsleiste auf **EditForm1**.
 
-1. Aktivieren Sie unter **Felder** alle Kontrollkästchen, um alle Felder im Formular anzuzeigen.
+1. Wählen Sie auf der Registerkarte **Eigenschaften** auf der rechten Seite den Pfeil nach unten neben **Datenquelle** aus, und klicken Sie anschließend in der Liste, die daraufhin angezeigt wird, auf **Schedule** (Zeitplan).
 
-     ![Felder anzeigen](./media/get-started-create-from-blank/show-fields.png)
+1. Wählen Sie unter der Datenquelle, die Sie soeben angegeben haben, **Felder bearbeiten** aus.
 
-1. Ziehen Sie das Feld **Volunteer** nach oben, sodass es am oberen Rand der Liste der Felder angezeigt wird.
+1. Wählen Sie im Bereich **Felder** die Option **Feld hinzufügen** aus, aktivieren Sie jeweils das Kontrollkästchen für jedes Feld, und klicken Sie auf **Hinzufügen**.
+
+1. Klicken Sie auf den Pfeil neben dem Namen jedes Felds, um es zuzuklappen. Ziehen Sie das Feld **Volunteer** dann nach oben, sodass es ganz oben in der Liste der Felder angezeigt wird.
 
      ![Felder neu anordnen](./media/get-started-create-from-blank/reorder-fields.png)
 
-1. Wählen Sie das Formular aus, und legen Sie für seine Eigenschaft **Item** diesen Ausdruck fest, indem Sie ihn in die Bearbeitungsleiste eingeben oder einfügen:<br>**BrowseGallery1.Selected**
+1. Schließen Sie den Bereich **Felder**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen (X) auswählen.
+
+1. Legen Sie die Eigenschaft **Item** im Formular für diesen Ausdruck fest, indem Sie ihn in die Bearbeitungsleiste Folgendes eingeben oder einfügen:
+
+    `BrowseGallery1.Selected`
 
 1. Wählen Sie am oberen Rand des Bildschirms das Steuerelement **[Bezeichnung](controls/control-text-box.md)** aus, und ersetzen Sie dann **[Titel]** durch **Datensätze ändern**.
 
     ![Ändern der Titelleiste](./media/get-started-create-from-blank/change-title-bar2.png)
 
 ## <a name="delete-and-rename-screens"></a>Löschen und Umbenennen von Bildschirmen
+
 1. Wählen Sie in der linken Navigationsleiste die Auslassungspunkte (...) für **Screen1** und dann **Löschen** aus.
 
     ![Bildschirm löschen](./media/get-started-create-from-blank/delete-screen.png)
@@ -173,11 +177,14 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 1. Wählen Sie die Auslassungspunkte (...) für **Screen3** aus, wählen Sie **Umbenennen** aus, und geben bzw. fügen Sie dann **ChangeScreen** ein.
 
 ## <a name="configure-icons-on-the-view-screen"></a>Konfigurieren von Symbolen auf dem Anzeigebildschirm
+
 1. Wählen Sie am oberen Rand des **ViewScreen** das Gebogener-Pfeil-Symbol aus.
 
     ![Hinzufügen eines Datensatzes](./media/get-started-create-from-blank/refresh-icon.png)
 
-1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:<br>**Refresh(Schedule)**
+1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
+
+    `Refresh(Schedule)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden die Daten von **Schedule** auf Basis der Excel-Datei aktualisiert.
 
@@ -187,7 +194,9 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     ![Hinzufügen eines Datensatzes](./media/get-started-create-from-blank/add-record.png)
 
-1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:<br>**NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)**
+1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
+
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der **ChangeScreen** angezeigt, wobei jedes Feld leer ist, damit der Benutzer einen Datensatz einfacher erstellen kann.
 
@@ -195,16 +204,21 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     ![Pfeil auswählen](./media/get-started-create-from-blank/select-arrow.png)
 
-1. Legen Sie die Eigenschaft **OnSelect** für den Pfeil auf die folgende Formel fest:<br>**EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)**
+1. Legen Sie die Eigenschaft **OnSelect** für den Pfeil auf die folgende Formel fest:
+
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird in **ChangeScreen** jedes Feld mit den Daten für den ausgewählten Datensatz angezeigt, sodass der Benutzer den Datensatz leichter bearbeiten oder löschen kann.
 
 ## <a name="configure-icons-on-the-change-screen"></a>Konfigurieren von Symbolen auf dem Änderungsbildschirm
+
 1. Wählen Sie auf **ChangeScreen** das „X“-Symbol in der oberen linken Ecke aus.
 
     ![Symbol „Abbrechen“](./media/get-started-create-from-blank/cancel-icon.png)
 
-1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:<br>**ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)**
+1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
+
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen verworfen, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -212,7 +226,9 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     ![Häkchensymbol](./media/get-started-create-from-blank/checkmark-icon.png)
 
-1. Legen Sie die Eigenschaft **OnSelect** für das Häkchen auf die folgende Formel fest:<br>**SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)**
+1. Legen Sie die Eigenschaft **OnSelect** für das Häkchen auf die folgende Formel fest:
+
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen gespeichert, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -222,14 +238,27 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     ![Papierkorbsymbol](./media/get-started-create-from-blank/trash-icon.png)
 
-1. Legen Sie die Eigenschaft **OnSelect** für das Papierkorbsymbol auf die folgende Formel fest:<br>**Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)**
+1. Legen Sie die Eigenschaft **Visible** für das Papierkorbsymbol auf die folgende Formel fest:
+
+    `EditForm1.Mode = FormMode.Edit`
+
+    Dieses Symbol wird nur angezeigt, wenn sich das Formular im **Bearbeitungsmodus** befindet und nicht im Modus **Neu**.
+
+1. Legen Sie die Eigenschaft **OnSelect** für das Papierkorbsymbol auf die folgende Formel fest:
+
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der ausgewählte Datensatz aus der Datenquelle gelöscht, und der Anzeigebildschirm wird geöffnet.
 
 ## <a name="test-the-app"></a>Testen der App
+
 1. Wählen Sie den **ViewScreen** aus, und rufen Sie die Vorschau durch Drücken von F5 auf (oder durch Auswählen des **Vorschausymbols** in der Nähe der oberen rechten Ecke).
 
     ![Öffnen des Vorschaumodus](./media/get-started-create-from-blank/open-preview.png)
+
+1. Tippen oder fügen Sie mindestens einen Buchstaben in das Suchfeld ein, um in der Liste basierend auf dem Namen des Freiwilligen zu filtern.
+
+1. Klicken Sie einmal oder mehrmals auf das Symbol zum Sortieren, um die Daten in aufsteigender oder absteigender Reihenfolge basierend auf dem Namen des Freiwilligen anzuzeigen.
 
 1. Fügen Sie einen Datensatz hinzu.
 
