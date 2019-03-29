@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
+ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357596"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58623393"
 ---
 # <a name="choices-function-in-powerapps"></a>Funktion „Choices“ in PowerApps
 Gibt eine Tabelle mit den möglichen Werten für eine Suchspalte zurück.
@@ -83,10 +83,10 @@ Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data S
 
 8. Klicken Sie auf der Karte für den **Primären Kontakt** auf das **Kombinationsfeld**-Steuerelement.
 
-    Die Eigenschaft **Items** dieses Steuerelements wird basierend auf dem Status des Kontrollkästchens **Anzeigenamen für Spalten verwenden** auf eine der beiden Formeln festgelegt.
+    Die **Elemente** Eigenschaft dieses Steuerelements auf eine Formel, die die Spalte identifiziert festgelegt ist, indem Sie entweder den Anzeigenamen, wie im ersten Beispiel, oder der logische Name, wie im zweiten Beispiel:
 
-   - Wenn das Kontrollkästchen aktiviert ist, wird die Eigenschaft auf die folgende Formel festgelegt:<br>**Choices( Accounts.'Primary Contact' )**
-   - Wenn das Kontrollkästchen nicht aktiviert ist, wird die Eigenschaft auf die folgende Formel festgelegt:<br>**Choices( Accounts.primarycontactid )**
+   - **Choices( Accounts.'Primary Contact' )**
+   - **Choices( Accounts.primarycontactid )**
 
      ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Steuerelement **Kombinationsfeld** auf der Karte **Primärer Kontakt** ist ausgewählt und die Eigenschaft „Items“ wird mit der Formel „Choices( Accounts.'Primary Contact' )“ angezeigt](media/function-choices/accounts-primary-contact.png)
 
@@ -94,10 +94,9 @@ Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data S
 
 10. Klicken Sie auf der Registerkarte **Einfügen** auf die Option **Datentabelle**.
 
-11. Legen Sie die **Items**-Eigenschaft des Steuerelements **Datentabelle** auf eine der folgenden Formeln fest:
+11. Legen Sie die **Elemente** Eigenschaft der **Datentabelle** -Steuerelements auf diese Formel:
 
-     - Wenn unter den erweiterten Einstellungen das Kontrollkästchen **Anzeigenamen für Spalten verwenden** aktiviert ist, verwenden Sie die folgende Formel:<br>**Choices( Accounts.'Primary Contact' )**
-     - Verwenden Sie andernfalls die folgende Formel:<br>**Choices( Accounts.primarycontactid )**
+     **Choices( Accounts.'Primary Contact' )**
 
 12. Öffnen Sie den Bereich **Daten**, und aktivieren Sie die Kontrollkästchen für **Vorname** und **Nachname** oder für ein anderes Feld, das Sie gerne anzeigen lassen möchten.
 

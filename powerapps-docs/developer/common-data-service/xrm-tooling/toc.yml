@@ -1,0 +1,37 @@
+items:
+- name: Erstellen von Windows-Clientanwendungen mithilfe der XRM-Tools
+  href: build-windows-client-applications-xrm-tools.md
+  items:
+  - name: Verwenden von CrmServiceClient-Konstruktoren zum Herstellen von Verbindungen
+    href: use-crmserviceclient-constructors-connect.md
+  - name: Verwenden von Verbindungszeichenfolgen in den XRM-Tools zum Herstellen von Verbindungen
+    href: use-connection-strings-xrm-tooling-connect.md
+  - name: Verwenden von PowerShell-Cmdlets für XRM-Tools zum Herstellen von Verbindungen
+    href: use-powershell-cmdlets-xrm-tooling-connect.md
+  - name: Verwenden von XRM-Tools zum Ausführen von Aktionen
+    href: use-xrm-tooling-execute-actions.md
+    items:
+    - name: Verwenden von XRM-Tools zum Erstellen von Daten
+      href: use-xrm-tooling-create-data.md
+    - name: Verwenden von XRM-Tools zum Abrufen von Daten
+      href: use-xrm-tooling-retrieve-data.md
+    - name: Verwenden von XRM-Tools zum Aktualisieren von Daten
+      href: use-xrm-tooling-update-data.md
+    - name: Verwenden von XRM-Tools zum Löschen von Daten
+      href: use-xrm-tooling-delete-data.md
+    - name: Verwenden von Nachrichten mit der ExecuteCrmOrganizationRequest-Methode
+      href: use-messages-executecrmorganizationrequest-method.md
+  - name: Verwenden des allgemeinen Anmelde-Steuerelements der XRM-Tools in Clientanwendungen
+    href: use-xrm-tooling-common-login-control-client-applications.md
+  - name: Konfigurieren der Ablaufverfolgung für XRM-Tools
+    href: configure-tracing-xrm-tooling.md
+  - name: Vereinfachte Verbindung – Schnellstart
+    href: sample-simplified-connection-quick-start.md
+  - name: 'Beispiel: Schnellstart für die XRM-Tools-API'
+    href: sample-quick-start-xrm-tooling-api.md
+ms.openlocfilehash: 6ffd323731891e38feb1b728f7e6f43120d5cc37
+ms.sourcegitcommit: 499fdc1a7c78d7d10e372a8caf26dfafc3492b6c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58542784"

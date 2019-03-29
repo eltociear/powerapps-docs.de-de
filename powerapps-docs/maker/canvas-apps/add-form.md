@@ -1,5 +1,5 @@
 ---
-title: Anzeigen, Bearbeiten und Hinzufügen eines Datensatzes aus einer Tabelle in eine Canvas-App | Microsoft-Dokumentation
+title: Anzeigen, bearbeiten oder Hinzufügen eines Eintrags in einer Canvas-app | Microsoft-Dokumentation
 description: Mithilfe eines Canvas-App-Formulars können Sie einen Datensatz aus einer Tabelle in der Datenquelle anzeigen, bearbeiten oder hinzufügen.
 author: emcoope-msft
 manager: kvivek
@@ -13,102 +13,93 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a434cd7a8d7eb029200c51fc5c8755946c13f3b
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: e94aa48ed3fba1b4591e196e3b81d3fb0f76666f
+ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798902"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58581022"
 ---
-# <a name="show-edit-or-add-a-record-from-a-table-in-powerapps"></a>Datensatz aus einer Tabelle in PowerApps anzeigen, bearbeiten oder hinzufügen
+# <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Anzeigen, bearbeiten oder Hinzufügen eines Eintrags in einer Canvas-app
 
-Wenn alle Felder in einem Datensatz angezeigt werden sollen, müssen Sie ein **[Formular anzeigen](controls/control-form-detail.md)**-Steuerelement in eine Canvas-App hinzufügen und es konfigurieren. Wenn Sie ein Feld in einem Datensatz bearbeiten (bzw. einen Datensatz hinzufügen) und die Änderungen in einer Datenquelle speichern möchten, fügen Sie ein **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelement zu einer Canvas-App hinzu, und konfigurieren Sie dieses.
+In einer Canvas-app hinzufügen und Konfigurieren einer **[Anzeige](controls/control-form-detail.md)** Formularsteuerelement, um alle Felder in einem Datensatz, anzuzeigen, können Sie auch hinzufügen und Konfigurieren einer **[bearbeiten](controls/control-form-detail.md)** Formularsteuerelement, das ein Feld in einem Datensatz bearbeiten, Hinzufügen eines Datensatzes und speichern Sie die Änderungen an einer Datenquelle.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Erfahren Sie, wie Sie in PowerApps [ein Steuerelement hinzufügen und konfigurieren](add-configure-controls.md).
-* Laden Sie [diese Excel-Datei](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) mit Beispieldaten für dieses Lernprogramm herunter.
-* Laden Sie die Excel-Datei in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch, z.B. in OneDrive for Business.
-* [Fügen Sie eine Verbindung](add-data-connection.md) in einer neuen oder vorhandenen App zur **FlooringEstimates**-Tabelle in der Excel-Datei hinzu.
-* Bei Verwendung einer vorhandenen App müssen Sie dieser [einen Bildschirm hinzufügen](add-screen-context-variables.md).
+- Erfahren Sie, wie Sie in PowerApps [ein Steuerelement hinzufügen und konfigurieren](add-configure-controls.md).
+- Laden Sie [diese Excel-Datei](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx) mit Beispieldaten für dieses Lernprogramm herunter.
+- Laden Sie die Excel-Datei in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch, z.B. in OneDrive for Business.
+- Erstellen oder öffnen Sie eine app für Telefone, [fügen Sie eine Verbindung](add-data-connection.md) auf die **FlooringEstimates** -Tabelle in der Excel-Datei.
+
+    Sie können ein Formular hinzufügen, um eine Tablet-app, aber es wird nicht in diesem Thema überein, da das Formular drei Spalten in der Standardeinstellung verfügen.
+
+- Wenn Sie eine vorhandene app öffnen [fügen Sie einen Bildschirm](add-screen-context-variables.md) zuzuweisen.
 
 ## <a name="add-a-form-and-show-data"></a>Hinzufügen eines Formulars und Anzeigen von Daten
-1. Fügen Sie ein **[Dropdown](controls/control-drop-down.md)**-Steuerelement hinzu, weisen Sie ihm den Namen **ChooseProduct** hinzu, und legen Sie seine **[Items](controls/properties-core.md)**-Eigenschaft auf diesen Wert fest:
-
-    **FlooringEstimates.Name**
+1. Fügen Sie auf einen leeren Bildschirm, einen **[Dropdown](controls/control-drop-down.md)** steuern, und nennen Sie sie **ChooseProduct**.
 
     > [!NOTE]
    > Weitere Informationen zum Hinzufügen und Umbenennen eines Steuerelements sowie zum Festlegen einer Eigenschaft finden Sie unter [Hinzufügen und Konfigurieren eines Steuerelements](add-configure-controls.md).
 
+1. Auf der **Eigenschaften** Registerkarte im rechten Bereich legen Sie **Elemente** zu `FlooringEstimates` und **Wert** zu `Name`.
+
+    ![Festlegen der Items-Eigenschaft des Formulars](./media/add-form/items-property.png)
+
     In der Liste werden Namen von Bodenbelägen aus der Datenquelle aufgeführt.
 
-2. Fügen Sie ein **Formular bearbeiten**-Steuerelement hinzu, verschieben Sie es unter **ChooseProduct**, und ändern Sie dann die Größe des Formulars, sodass es den größten Teil des Bildschirms einnimmt.
+1. Hinzufügen einer **bearbeiten** Formularsteuerelement, verschieben Sie es unter **ChooseProduct**, und Ändern der Größe des Formulars, sodass der Großteil des Bildschirms abzudecken.
 
     ![Ein Formular hinzufügen](./media/add-form/add-a-form.png)
 
     > [!NOTE]
-   > In diesem Artikel wird das **Formular bearbeiten**-Steuerelement beschrieben, gleiche Prinzipien gelten jedoch auch für das **Formular anzeigen**-Steuerelement.
+   > In diesem Thema wird beschrieben, die **bearbeiten** Formularsteuerelement, gleiche Prinzipien gelten jedoch auf die **Anzeige** Formularsteuerelement.
 
-3. Legen Sie die **[DataSource](controls/control-form-detail.md)**-Eigenschaft des Formulars auf **FlooringEstimates** und die **[Item](controls/control-form-detail.md)**-Eigenschaft des Formulars auf diese Formel fest:
+1. Festlegen des Formulars **[DataSource](controls/control-form-detail.md)** Eigenschaft **FlooringEstimates** und die zugehörige **[Element](controls/control-form-detail.md)** Eigenschaft Diese Formel:
 
-   **First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))**
+    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 
    Mit dieser Formel wird angegeben, dass im Formular nach abgeschlossener Konfiguration der Datensatz angezeigt wird, den der Benutzer in **ChooseProduct** auswählt.
 
-4. Klicken oder tippen Sie im Bereich **Daten** auf das Kontrollkästchen jedes Felds, um es anzuzeigen.
+1. Auf der **Eigenschaften** im rechten Bereich auf der Registerkarte **Bearbeitungsfelder**.
 
-    > [!NOTE]
-   > Wenn der Bereich **Daten** geschlossen ist, öffnen Sie ihn, indem Sie links das Formular auswählen und anschließend rechts auf **Daten** klicken oder tippen.
+    ![Bearbeiten von Feldern](./media/add-form/edit-fields.png)
 
-    ![Anzeigen der Felder im Formular](./media/add-form/checkbox.png)
+1. Wählen Sie im Bereich **Felder** die Option **Feld hinzufügen** aus, aktivieren Sie jeweils das Kontrollkästchen für jedes Feld, und klicken Sie auf **Hinzufügen**.
 
-5. Ziehen Sie im Bereich **Daten** den Eintrag **Name** in der Liste an die oberste Stelle.
+    ![Hinzufügen von Feldern](./media/add-form/add-fields.png)
 
-    ![Karte verschieben](./media/add-form/drag-field.png)
+1. Wählen Sie die Auslassungspunkte (...) neben **Feld hinzufügen**Option **alle reduzieren**, und ziehen Sie dann **Namen** am Anfang der Liste.
 
-    Das **Formular bearbeiten**-Steuerelement spiegelt die vorgenommene Änderung wider.
+    ![Posunout Pole](./media/add-form/move-field.png)
 
-    ![„Name“ an oberster Position](./media/add-form/move-card-form.png)
+    Die **bearbeiten** Formularsteuerelement zeigt Ihre Änderung.
+
+    ![Formular anzeigen](./media/add-form/show-form1.png)
 
 ## <a name="set-the-card-type-for-a-field"></a>Festlegen des Kartentyps für ein Feld
-1. Klicken oder tippen Sie bei ausgewähltem Formular auf die Kartenauswahl für **Price** im Bereich **Daten**.
+1. In der **Felder** Bereich, erweitern Sie die **Preis** Feld den Pfeil nach unten auswählen.
 
-    ![Kartenauswahl](./media/add-form/price-card2.png)
+1. Öffnen der **Steuerelementtyp** aus, und wählen Sie dann **Schieberegler bearbeiten**.
 
-2. Scrollen Sie nach unten, und klicken oder tippen Sie auf die Option **Text anzeigen**, um das Feld als schreibgeschützt festzulegen.
+    ![Schieberegler bearbeiten](./media/add-form/edit-slider.png)
 
-    ![Text anzeigen](./media/add-form/view-text.png)
+    In der Form die **Preis** Feld eine **Schieberegler** steuern anstelle von einer **Texteingabe** Steuerelement.
 
-    Das Formular spiegelt die vorgenommene Änderung wider.
-
-    ![Schreibgeschützte Zahl](./media/add-form/read-only.png)  
+1. (optional) Gehen Sie zum Ändern des Steuerelements für die **Übersicht** Feld eine **mehrzeiligen Text bearbeiten** Steuerelement.
 
 ## <a name="edit-form-only-save-changes"></a>(Nur „Formular bearbeiten“) Speichern der Änderungen
-1. Wählen Sie im linken Bereich das Formular aus, und klicken oder tippen Sie auf die Auslassungspunkte (...).
 
-   ![Formular auswählen](./media/add-form/select-form.png)
+1. Benennen Sie das Formular **EditForm**.
 
-2. Klicken oder tippen Sie auf **Umbenennen**, und benennen Sie das Formular in **EditForm** um.
+1. Fügen Sie ein **[Button](controls/control-button.md)**-Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](controls/properties-core.md)**-Eigenschaft auf diese Formel fest:
 
-3. Fügen Sie ein **[Button](controls/control-button.md)**-Steuerelement hinzu, und legen Sie seine **[Text](controls/properties-core.md)**-Eigenschaft auf **Save** fest.
+   `SubmitForm(EditForm)`
 
-    ![Hinzufügen einer Schaltfläche „Save“](./media/add-form/save-button.png)  
+1. Drücken Sie F5, um die Vorschau zu öffnen, ändern Sie den Namen eines Produkts, und wählen Sie dann auf die Schaltfläche, die Sie erstellt haben.
 
-4. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft der Schaltfläche **Save** auf diese Formel fest:
+    Die **[SubmitForm](functions/function-form.md)** Funktion speichert die Änderungen an der Datenquelle.
 
-   **SubmitForm(EditForm)**
-
-5. Öffnen Sie den Vorschaumodus, indem Sie auf die Wiedergabeschaltfläche in der oberen rechten Ecke klicken oder tippen (oder indem Sie F5 drücken).
-
-    ![Öffnen des Vorschaumodus](./media/add-form/open-preview.png)
-
-6. Ändern Sie den Namen eines Produkts, und klicken oder tippen Sie anschließend auf die soeben erstellte Schaltfläche **Save**.
-
-    Die **[SubmitForm](functions/function-form.md)**-Funktion speichert die Änderungen an der Datenquelle, mit der das Formular konfiguriert wurde.
-
-7. (optional) Wählen Sie das Schließen-Symbol aus, um die Vorschau zu schließen (Sie können auch ESC drücken).
-
-    ![Schließen der Vorschau](./media/add-form/close-preview.png)
+1. (optional) Schließen Sie die Vorschau durch Drücken von Esc (oder durch Auswahl des schließsymbols in der oberen rechten Ecke).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Erfahren Sie mehr über das Arbeiten mit [Formularen](working-with-forms.md) und [Formeln](working-with-formulas.md).
