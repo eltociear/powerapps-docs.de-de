@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
-ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
+ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
+ms.sourcegitcommit: 6b116a4079eb56ebd598d317a12df8856ff3e52a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58623393"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58671953"
 ---
 # <a name="choices-function-in-powerapps"></a>Funktion „Choices“ in PowerApps
 Gibt eine Tabelle mit den möglichen Werten für eine Suchspalte zurück.
@@ -63,41 +63,43 @@ Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data S
 
     Für jedes Konto wird entweder ein Kontakt als primärer Kontakt festgelegt oder die Spalte bleibt *leer*.
 
-2. [Generieren Sie eine App](../data-platform-create-app.md) aus der Entität **Accounts**.
+1. [Generieren Sie eine App](../data-platform-create-app.md) aus der Entität **Accounts**.
 
-3. Scrollen Sie in der Liste mit den Anzeigen und Steuerelementen in der linken Ecke nach unten, bis **EditScreen1** angezeigt wird, und klicken Sie dann darunter auf **EditForm1**.
+1. Scrollen Sie in der Liste mit den Anzeigen und Steuerelementen in der linken Ecke nach unten, bis **EditScreen1** angezeigt wird, und klicken Sie dann darunter auf **EditForm1**.
 
     ![Auf der linken Navigationsleiste unter „EditScreen1“ auf „EditForm1“ klicken](media/function-choices/select-editform.png)
 
-4. Klicken Sie auf der Registerkarte **Eigenschaften** im Bereich auf der rechten Seite auf **Accounts**.
+1. Auf der **Eigenschaften** im rechten Bereich auf der Registerkarte **Bearbeitungsfelder**.
 
-    ![Auf „Accounts“ klicken, um den Bereich „Daten“ zu öffnen](media/function-choices/open-data-pane.png)
+    ![Öffnen Sie den Bereich "Daten"](media/function-choices/open-data-pane.png)
 
-5. Scrollen Sie im Bereich **Daten** nach unten zu der Liste mit den Feldern.
+1. In der **Felder** wählen Sie im Bereich **Feld hinzufügen**.
+
+1. Suchen Sie nach der **Hauptkontaktperson** Feld, aktivieren Sie das Kontrollkästchen, und wählen Sie dann **hinzufügen**.
 
     ![Auf „Accounts“ klicken, um den Bereich „Daten“ zu öffnen](media/function-choices/field-list.png)
 
-6. Suchen Sie das Kontrollkästchen **Primärer Kontakt**, und aktivieren Sie dieses, falls noch nicht geschehen.
+    Die **Hauptkontaktperson** Feld am unteren Rand des Formulars angezeigt wird. Wenn das Feld einen Fehler angezeigt wird, wählen Sie **Datenquellen** auf die **Ansicht** Registerkarte, wählen Sie die Auslassungspunkte (...) für die **Konten** -Datenquelle, und wählen Sie dann **aktualisieren** .
 
-7. (Optional) Ziehen Sie das Feld **Primärer Kontakt** aus dem unteren Bereich der Liste in den oberen Bereich.
+1. (Optional) Ziehen Sie das Feld **Primärer Kontakt** aus dem unteren Bereich der Liste in den oberen Bereich.
 
-8. Klicken Sie auf der Karte für den **Primären Kontakt** auf das **Kombinationsfeld**-Steuerelement.
+1. Klicken Sie auf der Karte für den **Primären Kontakt** auf das **Kombinationsfeld**-Steuerelement.
 
     Die **Elemente** Eigenschaft dieses Steuerelements auf eine Formel, die die Spalte identifiziert festgelegt ist, indem Sie entweder den Anzeigenamen, wie im ersten Beispiel, oder der logische Name, wie im zweiten Beispiel:
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Steuerelement **Kombinationsfeld** auf der Karte **Primärer Kontakt** ist ausgewählt und die Eigenschaft „Items“ wird mit der Formel „Choices( Accounts.'Primary Contact' )“ angezeigt](media/function-choices/accounts-primary-contact.png)
+     ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Kombinationsfeld-Steuerelement innerhalb der primäre Ansprechpartner Karte ausgewählt ist, und die Items-Eigenschaft, mit der Formel Optionen (Konten. "Primärkontakt") angezeigt wird](media/function-choices/accounts-primary-contact.png)
 
-9. Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Blank**.
+1. Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Blank**.
 
-10. Klicken Sie auf der Registerkarte **Einfügen** auf die Option **Datentabelle**.
+1. Klicken Sie auf der Registerkarte **Einfügen** auf die Option **Datentabelle**.
 
-11. Legen Sie die **Elemente** Eigenschaft der **Datentabelle** -Steuerelements auf diese Formel:
+1. Legen Sie die **Elemente** Eigenschaft der **Datentabelle** -Steuerelements auf diese Formel:
 
      **Choices( Accounts.'Primary Contact' )**
 
-12. Öffnen Sie den Bereich **Daten**, und aktivieren Sie die Kontrollkästchen für **Vorname** und **Nachname** oder für ein anderes Feld, das Sie gerne anzeigen lassen möchten.
+1. In der Mitte der der **Datentabelle** steuern, wählen Sie den Link, der beginnt **wählen Sie die Felder...** , und wählen Sie dann die Kontrollkästchen für das Feld oder Felder, die Sie anzeigen möchten (z. B. **Firstname** und **"LastName"**).
 
      ![Eine Canvas-Anzeige mit einem Datentabellensteuerelement Die Eigenschaft „Items“ ist auf die Formel „Choices( Accounts.'Primary Contact' )“ festgelegt, und in der Tabelle werden die Spalten „Vorname“ und „Nachname“ für den ersten Datensatz aus der Entität „Contacts“ angezeigt](media/function-choices/full-accounts-pc.png)
