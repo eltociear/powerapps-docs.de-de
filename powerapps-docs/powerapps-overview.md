@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58162261"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357573"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
-PowerApps ist eine Suite von Apps, Diensten, Connectors und einer Datenplattform für eine schnelle Entwicklungsumgebung für Anwendungen, mit der Sie benutzerdefinierte Apps entsprechend Ihren Geschäftsanforderungen erstellen können. Mit PowerApps können Sie schnell benutzerdefinierte Geschäfts-Apps erstellen, die Sie mit Ihren Geschäftsdaten verbinden können. Der Speicherort dieser Daten kann *entweder* die zugrunde liegende Datenplattform sein (**Common Data Service für Apps**) *oder* verschiedene Online- oder lokale Datenquellen (SharePoint, Excel, Office 365, Dynamics 365, SQL Server usw.). 
+PowerApps ist eine Suite von Apps, Diensten, Connectors und einer Datenplattform für eine schnelle Entwicklungsumgebung für Anwendungen, mit der Sie benutzerdefinierte Apps entsprechend Ihren Geschäftsanforderungen erstellen können. Mit PowerApps können Sie schnell benutzerdefinierte Geschäfts-Apps erstellen, die Sie mit Ihren Geschäftsdaten verbinden können. Der Speicherort dieser Daten kann *entweder* die zugrunde liegende Datenplattform sein (**Common Data Service**) *oder* verschiedene Online- oder lokale Datenquellen (SharePoint, Excel, Office 365, Dynamics 365, SQL Server usw.). 
 
 Mithilfe von PowerApps erstellte Apps bieten eine umfangreiche Geschäftslogik und Workflowfunktionen, die eine Umstellung Ihrer Geschäftsprozesse von manuellen auf digitale und automatisierte Abläufe ermöglichen. Zudem besitzen mit PowerApps erstellte Apps ein dynamisches Design und können nahtlos im Browser oder auf mobilen Geräten (Smartphones oder Tablets) ausgeführt werden. Da mit PowerApps funktionsreiche benutzerdefinierte Geschäfts-Apps erstellt werden können, ohne dass dazu das Schreiben von Code erforderlich ist, eignet es sich auch hervorragend für „nicht professionelle“ Benutzer.
 
@@ -46,7 +46,7 @@ PowerApps-Administratoren haben folgende Möglichkeiten:
 
 - Über das **PowerApps Admin Center** ([admin.powerapps.com](https://admin.powerapps.com)) können Umgebungen, Benutzer, Rollen und DLP-Richtlinien erstellt und verwaltet werden. 
 
-- Über das **Admin Center für die Power-Plattform** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) können Umgebungen verwaltet, Selbsthilfe-Empfehlungen in Echtzeit und Unterstützung für Dynamics 365 Customer Engagement-Apps, PowerApps und Microsoft Flow abgerufen sowie CDS für Apps angezeigt werden. 
+- Über das **Admin Center für die Power-Plattform** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) können Umgebungen verwaltet, Selbsthilfe-Empfehlungen in Echtzeit und Unterstützung für Dynamics 365 Customer Engagement-Apps, PowerApps und Microsoft Flow abgerufen sowie Common Data Service-Analysen angezeigt werden. 
 
 Weitere Informationen finden Sie unter: [Verwalten von PowerApps](/power-platform/admin/admin-guide)
 
@@ -56,7 +56,7 @@ Entwickler sind App-Ersteller, die durch Schreiben von Code das Erstellen und An
 
 ## <a name="powerapps-and-dynamics-365"></a>PowerApps und Dynamics 365
 
-Dynamics 365-Anwendungen, wie Dynamics 365 for Sales, Dynamics 365 for Service und Dynamics 365 for Marketing, verwenden auch die zugrunde liegende Datenplattform (CDS für Apps), die von PowerApps zum Speichern und Sichern von Daten verwendet wird. Dadurch können Sie Apps mit PowerApps und Common Data Service für Apps direkt mit Ihren wichtigsten Unternehmensdaten erstellen, die bereits in Dynamics 365 verwendet werden, ohne diese integrieren zu müssen. Weitere Informationen finden Sie unter: [Dynamics 365 und Common Data Service für Apps](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service-for-apps)
+Dynamics 365-Anwendungen, wie Dynamics 365 for Sales, Dynamics 365 for Service und Dynamics 365 for Marketing, verwenden auch die zugrunde liegende Datenplattform (Common Data Service), die von PowerApps zum Speichern und Sichern von Daten verwendet wird. Dadurch können Sie Apps mit PowerApps und Common Data Service direkt mit Ihren wichtigsten Unternehmensdaten erstellen, die bereits in Dynamics 365 verwendet werden, ohne diese integrieren zu müssen. Weitere Informationen finden Sie unter: [Dynamics 365 und Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service)
 
 ## <a name="try-powerapps-for-free"></a>PowerApps kostenlos ausprobieren
 
