@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abf88db2bfb97a6541ee638ba8be5af27c20bc5f
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.openlocfilehash: e3d5f40a604d2cbfa074ed5973d599c40a6c5c05
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459572"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765581"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>Referenzinformationen zu den Kalender-Bildschirmvorlage für Canvas-apps
 
@@ -191,7 +191,7 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und Steuerel
     ```
 
     > [!NOTE]
-    > Definitionen für  **\_FirstDayOfMonth**,  **\_FirstDayInView**, und  **\_LastDayOfMonth** sind nahezu identisch, mit denen in der [Dropdown-Kalender](#calendar-dropdown) Abschnitt dieses Themas.
+    > Definitionen für  **\_FirstDayOfMonth**,  **\_FirstDayInView**, und  **\_LastDayOfMonth** sind nahezu identisch, mit denen in der [Dropdown-Kalender](#calendar-drop-down) Abschnitt dieses Themas.
 
     Die ersten drei Zeilen des vorherigen Codes, der ausgeführt wird, wenn der Benutzer die nächsten Monate Chevron-Schaltfläche auswählt, legen Sie die Variablen, die erforderlich sind, um die richtige Kalenderansicht angezeigt. Der restliche Code wird nur dann, wenn der Benutzer diesen Monat für den ausgewählten Kalender zuvor ausgewählt wurde nicht ausgeführt.
 

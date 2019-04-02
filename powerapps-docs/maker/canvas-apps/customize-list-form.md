@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198634"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765477"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -189,7 +189,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 **Q:** Wie gebe ich mein Formular frei?
 
-**A:** Sie müssen nicht die Form gemeinsam verwenden – das Formular erbt die Berechtigungen aus der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-list-form-back-to-sharepoint), damit es von anderen Benutzern verwendet werden kann.
+**A:** Sie müssen nicht die Form gemeinsam verwenden – das Formular erbt die Berechtigungen aus der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-form), damit es von anderen Benutzern verwendet werden kann.
 
 **Q:** Wer kann Formulare anpassen?
 

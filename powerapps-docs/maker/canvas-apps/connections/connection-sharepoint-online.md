@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fbc97e6c2663210bea79cc7236ce784110a4950
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198611"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765500"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Verbinden Sie mit SharePoint aus einer Canvas-app
 
@@ -34,7 +34,7 @@ Verbinden mit einer SharePoint-Website, um eine app aus einer benutzerdefinierte
 Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können PowerApps [eine app mit drei Bildschirmen automatisch für Sie generieren](../app-from-sharepoint.md). Benutzer können die Liste auf dem ersten Bildschirm durchsuchen, Details zum Anzeigen eines Elements im zweiten Bildschirm, und erstellen oder aktualisieren Elemente im dritten Bildschirm.
 
 > [!NOTE]
-> Wenn die SharePoint-Liste enthält eine **Wahl**, **Lookup**, oder **Person oder Gruppe** Spalte finden Sie unter [Anzeigen von Daten in einem Katalog](connection-sharepoint-online.md#show-data-in-a-gallery) weiter unten in diesem Thema.
+> Wenn die SharePoint-Liste enthält eine **Wahl**, **Lookup**, oder **Person oder Gruppe** Spalte finden Sie unter [Anzeigen von Daten in einem Katalog](connection-sharepoint-online.md#show-list-columns-in-a-gallery) weiter unten in diesem Thema.
 
 ## <a name="create-a-connection"></a>Verbindung erstellen
 
