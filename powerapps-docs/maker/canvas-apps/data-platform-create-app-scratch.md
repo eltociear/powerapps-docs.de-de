@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0528d3324e85984e05b549f8b8ba282fdc1df4af
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 68c54838b613d0aa459833509cad57b49ade759a
+ms.sourcegitcommit: dd7659f9fe5161df6053a735781fdfb62bbea88e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356883"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58624257"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service
 
 Erstellen Sie eine Canvas-App, um Daten zu verwalten, die in Common Data Service gespeichert sind. Verwenden Sie dazu (integrierte) Standardentitäten, (von Ihrem Unternehmen erstellte) benutzerdefinierte Entitäten oder beides.
 
-Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung über PowerApps herstellen, wie dies bei Datenquellen wie SharePoint, Dynamics 365 und Salesforce erforderlich ist. Sie müssen lediglich angeben, welche Entitäten Sie anzeigen und verwalten oder für beide Aktivitäten in der App verwenden möchten.
+Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindung über PowerApps herstellen, wie dies bei Datenquellen wie SharePoint, Dynamics 365 oder Salesforce erforderlich ist. Sie müssen nur die Entitäten angeben, die Sie in der App anzeigen bzw. verwalten möchten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -36,37 +36,37 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-1. Zeigen Sie unter **Eigene App erstellen** auf die Kachel **Mit leerer App starten**, klicken oder tippen Sie erst auf das Telefonsymbol und anschließend auf **Diese App erstellen**.
+1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
 
-    ![Kachel für leere App](./media/data-platform-create-app-scratch/start-from-blank.png)
+    ![Kachel für leere App](./media/data-platform-create-app-scratch/blank-app.png)
 
-    Sie können für Smartphones oder andere Geräte (wie Tablets) Apps von Grund auf neu erstellen. In diesem Artikel erfahren Sie, wie Sie Apps für Smartphone erstellen können.
+1. Geben Sie einen Namen für Ihre App an, wählen Sie **Telefon** aus, und klicken Sie dann auf **Erstellen**.
+
+    Sie können auch für Tablets eine App von Grund auf neu erstellen. In diesem Thema geht es jedoch um das Erstellen einer App für Smartphones.
 
 ## <a name="specify-an-entity"></a>Angeben einer Entität
 
-1. Klicken oder tippen Sie in der Mitte des Bildschirms auf **Mit Daten verbinden** und dann im Bereich **Daten** auf die Verbindung **Common Data Service**.
+1. Wählen Sie in der Mitte des Bildschirms **Mit Daten verbinden** aus.
 
-1. Geben Sie im Suchfeld die ersten Buchstaben des Worts **Accounts** (Konten) ein (bzw. fügen Sie sie ein), um die Liste mit den Entitäten zu filtern. Aktvieren Sie das Kontrollkästchen **Konten**, und klicken oder tippen Sie auf **Verbinden**.
+1. Klicken Sie im Bereich **Daten** auf **Common Data Service**, aktivieren Sie das Kontrollkästchen bei **Konten**, und klicken Sie anschließend auf **Verbinden**.
 
-    ![Angeben der Entität „Accounts“](./media/data-platform-create-app-scratch/cds-connect.png)
-
-1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke auf das Symbol zum Schließen klicken oder tippen.
+1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen auswählen.
 
 ## <a name="add-a-list-screen"></a>Hinzufügen einer Listenanzeige
 
-1. Klicken oder tippen Sie auf der Registerkarte **Start** unter **Neuer Bildschirm** auf den Pfeil nach unten, und klicken oder tippen Sie dann auf **Bildschirmliste**.
+1. Wählen Sie auf der Registerkarte **Start** den Pfeil nach unten für **Neuer Bildschirm** aus, und klicken Sie dann auf **Liste**.
 
     ![Hinzufügen einer Listenanzeige](./media/data-platform-create-app-scratch/list-screen.png)
 
-1. Klicken oder tippen Sie in der Navigationsleiste auf der linken Seite auf **TemplateGalleryList1**, und legen Sie dann den Wert für die Eigenschaft **Items** auf die folgende Formel fest:
+1. Klicken Sie in der linken Navigationsleiste auf **BrowseGallery1**, und legen Sie dann den Wert für die Eigenschaft **Elemente** auf die folgende Formel fest:
 
     `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Diese Formel gibt Folgendes an:
 
    - Im Katalog sollten die Daten aus der Entität **Accounts** angezeigt werden.
-   - Die Daten sollten in aufsteigender Reihenfolge angezeigt werden, bis der Benutzer auf die Schaltfläche „Sortieren“ klickt oder tippt, um die Reihenfolge zu ändern.
-   - Wenn der Benutzer mindestens ein Zeichen in die Suchleiste eintippt (bzw. einfügt), werden in der Liste nur die Konten angezeigt, in denen die Namensfelder die vom Benutzer angegebenen Zeichen enthalten.
+   - Die Daten sollten in aufsteigender Reihenfolge angezeigt werden, bis der Benutzer auf die Schaltfläche „Sortieren“ klickt, um die Reihenfolge umzukehren.
+   - Wenn der Benutzer mindestens ein Zeichen in die Suchleiste eintippt bzw. einfügt (**TextSearchBox1**), werden in der Liste nur die Konten angezeigt, in denen das **Namensfeld** die vom Benutzer angegebenen Zeichen enthält.
 
      Sie können [diese sowie viele weitere Funktionen](formula-reference.md) verwenden, um anzugeben, wie Ihre App angezeigt werden und sich verhalten soll.
 
@@ -76,9 +76,9 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
     ![Bildschirm zum Durchsuchen](./media/data-platform-create-app-scratch/final-browse.png)
 
-1. Klicken oder tippen Sie in der linken Navigationsleiste erst auf **Screen1**, dann auf die Auslassungspunkte (...) und anschließend auf **Löschen**.
+1. Zeigen Sie in der linken Navigationsleiste auf **Screen1**, klicken Sie auf die Auslassungspunkte (...), und klicken Sie anschließend auf **Löschen**.
 
-1. Klicken oder tippen Sie in der linken Navigationsleiste erst auf **Screen2**, dann auf die Auslassungspunkte (...) und anschließend auf **Umbenennen**.
+1. Zeigen Sie in der linken Navigationsleiste auf **Screen2**, klicken Sie auf die Auslassungspunkte (...), und klicken Sie anschließend auf **Umbenennen**.
 
 1. Geben bzw. fügen Sie **BrowseScreen** ein, und benennen Sie den Katalog in dieser Anzeige in **BrowseGallery** um.
 
@@ -86,20 +86,24 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
 ## <a name="add-a-form-screen"></a>Hinzufügen eines Formularbildschirm
 
-1. Wiederholen Sie den ersten Schritt des letzten Vorgangs, aber fügen Sie einen **Formularbildschirm** anstelle einer **Bildschirmliste** hinzu.
+1. Wiederholen Sie den ersten Schritt des letzten Vorgangs, aber fügen Sie einen **Formularbildschirm** anstelle eines **Listenbildschirms** hinzu.
 
-1. Legen Sie die **DataSource**-Eigenschaft des Kontos auf **Accounts** und die **Item**-Eigenschaft auf **BrowseGallery.Selected** fest. Dies wird auf der rechten Seite in der Registerkarte **Erweitert** angezeigt.
+1. Legen Sie die Formulareigenschaft **DataSource** auf **Konten** und die Eigenschaft **Element** auf **BrowseGallery.Selected** fest. Dies wird auf der Registerkarte **Erweitert** im rechten Bereich angezeigt.
 
     ![Festlegen der Eigenschaften „Datasource“ und „Item“ des Formulars](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. Klicken oder tippen Sie rechts auf der Registerkarte **Eigenschaften** auf **Konten**, um den Bereich **Daten** zu öffnen, und aktivieren Sie die Kontrollkästchen für diese Felder:
+1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich die Option **Felder bearbeiten** aus, um den Bereich **Felder** zu öffnen.
 
-    - Kontoname
-    - Adresse 1: Straße 1
-    - Adresse 1: Ort
-    - Adresse 1: Postleitzahl
-    - Anzahl der Mitarbeiter
-    - Jahresumsatz
+1. Klicken Sie auf **Feld hinzufügen**, und aktivieren Sie anschließend die Kontrollkästchen der folgenden Felder:
+
+    - **Kontoname**
+    - **Adresse 1: Straße 1**
+    - **Adresse 1: Ort**
+    - **Adresse 1: Postleitzahl**
+    - **Anzahl der Mitarbeiter**
+    - **Jahresumsatz**
+
+1. Klicken Sie auf **Hinzufügen**.
 
 1. Legen Sie die **Text**-Eigenschaft der Titelleiste auf **Create/Edit** (Erstellen/Bearbeiten) fest.
 
@@ -111,37 +115,37 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
 ## <a name="configure-icons"></a>Konfigurieren von Symbolen
 
-1. Klicken oder tippen Sie unter **BrowseScreen** auf den kreisförmigen Pfeil im oberen Bereich des Bildschirms, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+1. Legen Sie unter **BrowseScreen** die Eigenschaft **OnSelect** für den kreisförmigen Pfeil im oberen Bereich des Bildschirms auf die folgende Formel fest:
 
     `Refresh(Accounts)`
 
     ![Symbol zum Aktualisieren](./media/data-platform-create-app-scratch/refresh-icon.png)
 
-1. Klicken oder tippen Sie auf das Pluszeichen und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+1. Legen Sie die Eigenschaft **OnSelect** für das Pluszeichen auf die folgende Formel fest:
 
     `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Symbol „Hinzufügen“](./media/data-platform-create-app-scratch/plus-icon.png)
 
-1. Klicken oder tippen Sie auf den ersten Pfeil nach rechts, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+1. Legen Sie die Eigenschaft **OnSelect** für den ersten Pfeil nach rechts auf die folgende Formel fest:
 
     `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Symbol „Weiter“](./media/data-platform-create-app-scratch/next-icon.png)
 
-1. Klicken oder tippen Sie unter **FormScreen** auf das Symbol „Abbrechen“, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+1. Legen Sie unter **FormScreen** die Eigenschaft **OnSelect** für das Symbol „Abbrechen“ auf die folgende Formel fest:
 
     `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Symbol „Abbrechen“](./media/data-platform-create-app-scratch/cancel-icon.png)
 
-1. Klicken oder tippen Sie auf das Häkchensymbol, und legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
+1. Legen Sie die Eigenschaft **OnSelect** für das Häkchensymbol auf die folgende Formel fest:
 
     `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Häkchensymbol](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
-1. Klicken oder tippen Sie auf der Registerkarte **Einfügen** erst auf **Symbole** und dann auf das **Papierkorbsymbol**.
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** und dann das **Papierkorbsymbol** aus.
 
 1. Legen Sie für das **Papierkorbsymbol** die **Color**-Eigenschaft auf **Weiß** und die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
@@ -151,11 +155,11 @@ Wenn Sie eine App in Common Data Service erstellen, müssen Sie keine Verbindung
 
 ## <a name="test-the-app"></a>Testen der App
 
-1. Klicken oder tippen Sie im linken Navigationsbereich auf **BrowseScreen**, und öffnen Sie dann die Vorschau, indem Sie F5 drücken bzw. auf das Wiedergabesymbol in der oberen rechten Ecke klicken oder tippen.
+1. Klicken Sie in der linken Navigationsleiste auf **BrowseScreen**, und öffnen Sie dann die Vorschau, indem Sie F5 drücken (oder auf das Wiedergabesymbol in der oberen rechten Ecke klicken).
 
     ![Vorschau öffnen](./media/data-platform-create-app-scratch/open-preview.png)
 
-1. Lassen Sie die Liste abwechselnd in aufsteigender und absteigender Reihenfolge anzeigen, und filtern Sie diese nach bestimmten Zeichen in den einzelnen Kontonamen.
+1. Lassen Sie die Liste abwechselnd in aufsteigender und absteigender Reihenfolge anzeigen, und filtern Sie diese nach einem oder mehreren Zeichen im Kontonamen.
 
 1. Fügen Sie ein Konto hinzu, bearbeiten Sie dieses, und beginnen Sie mit dem Update des Kontos. Verwerfen Sie jedoch Ihre Änderungen, und löschen Sie das Konto.
 
