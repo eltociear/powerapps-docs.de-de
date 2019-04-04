@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 35e07c87e515759a6e61a0c0a027c190b11bef53
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358010"
 ---
-
 # <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Best Practices und Handlungsempfehlungen zum Arbeiten mit Metadaten für Common Data Service
 
 In der folgenden Liste sind alle Best Practices und Handlungsempfehlungen zur Interaktion und Arbeit mit Metadaten in Common Data Service aufgeführt.

@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 01/07/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c89042e1f94e6f891bfdc255c38f72929c27cb1e
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357343"
 ---
-
 # <a name="best-practices-and-guidance-for-the-common-data-service"></a>Best Practices und Handlungsempfehlungen für Common Data Service
 
 Common Data Service ist ein erweiterbares Framework, mit dem Entwickler benutzerdefinierte und individuelle Lösungen erstellen können. Bei der Anpassung, Erweiterung oder Integration von Common Data Service sollten Entwickler Handlungsempfehlungen und Best Practices beachten. 
