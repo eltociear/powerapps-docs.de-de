@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 12/17/2018
+ms.date: 04/04/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711d8029f0f8353efcdff5bea8cbb1402884502f
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765477"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042730"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -95,13 +95,13 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 1. Öffnen Sie die Liste, wählen Sie **neu** im Befehl, und klicken Sie anschließend **anpassen** im oberen Bereich des Formulars.
 
-1. Passen Sie Ihr Formular eine Vielzahl von Möglichkeiten, wie z. B. diejenigen, die die folgenden Themen beschreiben:
+1. Passen Sie das Formular in einer Vielzahl von Möglichkeiten, wie etwa solche, die die folgenden Themen beschreiben:
 
     - Ändern Sie die Größe, Ausrichtung oder beides (Sie können das Formular z.B. [breiter machen](set-aspect-ratio-portrait-landscape.md))
     - [Anpassen einer oder mehreren Karten](working-with-cards.md) (z. B. Ändern einer Karte Text oder Eingabe Steuerung der Anzeige).
     - Erstellen Sie ein [Nachschlagefeld](sharepoint-lookup-fields.md).
 
-    Weitere Informationen finden Sie unter: [Verstehen der Integration von SharePoint-Formularen](sharepoint-form-integration.md)
+    Weitere Informationen finden Sie unter: [Verstehen Sie die SharePoint-Formularintegration](sharepoint-form-integration.md).
 
 ## <a name="use-the-default-form"></a>Verwenden des Standardformulars
 
@@ -157,7 +157,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 **Q:** Wie kann ich mein Formular einfach für andere Benutzer freigeben?
 
-**A:** Öffnen Sie das Formular, wählen Sie **Link kopieren**, und senden Sie dann auf den Link für alle Benutzer das Formular verwendet werden sollen.
+**A:** Öffnen Sie das Formular, wählen Sie **Link kopieren**, und senden dann den Link zu einem Benutzer das Formular verwenden möchten.
 
 **Q:** Kann ich meine Form aktualisieren, ohne dass die Änderungen für andere Benutzer sichtbar?
 
@@ -179,7 +179,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 1. Kehren Sie zur Seite **Versionen** auf der anderen Browserregisterkarte zurück, suchen Sie die Version, die Sie wiederherstellen möchten, und klicken Sie dann auf **Wiederherstellen**.
 
     > [!NOTE]
-    > Wenn Sie die Fehlermeldung erhalten, dass die Wiederherstellung fehlgeschlagen ist, da das Formular von einem anderen Benutzer gesperrt ist, warten Sie, bis der Benutzer das Formular entsperrt, und wiederholen Sie den Vorgang.
+    > Wenn Sie eine Fehlermeldung angezeigt erhalten, dass die Wiederherstellung fehlgeschlagen, da das Formular von einem anderen Benutzer gesperrt ist, warten Sie, bis der Benutzer das Formular entsperrt, und versuchen Sie es dann erneut.
 
 **Q:** Kann ich mein Formular aus einer Liste in ein anderes verschieben?
 
@@ -189,7 +189,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 **Q:** Wie gebe ich mein Formular frei?
 
-**A:** Sie müssen nicht die Form gemeinsam verwenden – das Formular erbt die Berechtigungen aus der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-form), damit es von anderen Benutzern verwendet werden kann.
+**A:** Sie müssen nicht die Form gemeinsam verwenden, erbt die Berechtigungen aus der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-form), damit es von anderen Benutzern verwendet werden kann.
 
 **Q:** Wer kann Formulare anpassen?
 
@@ -211,6 +211,6 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 1. Wählen Sie oben auf der Seite für die Standardumgebung **Ressourcen** aus.
 
-1. Suchen Sie in der Liste der Apps nach Apps mit dem App-Typ **SharePoint-Formular** – dies sind die angepassten Formulare.
+1. Suchen Sie in der Liste der apps für apps mit einer **SharePoint-Standardformular** app-Typ – Hierbei handelt es sich um die angepassten Formulare.
 
     ![Liste der benutzerdefinierten Formulare](./media/customize-list-form/all-customized-forms.png)

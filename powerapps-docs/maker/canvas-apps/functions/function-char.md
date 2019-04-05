@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d29d883a14e34dd89d766a6aeffb17275bde6b
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803456"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042624"
 ---
 # <a name="char-function-in-powerapps"></a>Funktion „Char“ in PowerApps
 
@@ -38,9 +38,9 @@ Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entspr
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Char( 65 )** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |"A" |
-| **Char( 105 )** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |"i" |
-| **Char( 35 )** |Gibt das Zeichen zurück, das ASCII-Code 35 entspricht |"#" |
+| **Char (65)** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |"A" |
+| **Char (105)** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |"i" |
+| **Char (35)** |Gibt das Zeichen zurück, das ASCII-Code 35 entspricht |"#" |
 
 ### <a name="display-a-character-map"></a>Zeigt eine zeichenzuordnung
 
@@ -60,7 +60,7 @@ Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entspr
     - **TemplateSize**: 30
     - **TemplatePadding**: 0
 
-    Der Wert des der **Elemente** Eigenschaft multipliziert, 16 x die Nummer der Spalte, die von der Spalte Wert der bereitgestellten der **Elemente** Eigenschaft aus dem ersten Katalog (0-7 ThisItem.Value). Die Formel fügt dann das Ergebnis auf eine der Nummern der Zeilen aus dem Katalog der zweiten (0 bis 15 im Datensatz zu begrenzen, die die [ **ForAll** ](function-forall.md) -Funktion).
+    Der Wert des der **Elemente** Eigenschaft multipliziert, 16 x die Nummer der Spalte, die von der Spalte Wert der bereitgestellten der **Elemente** Eigenschaft aus dem ersten Katalog (0 bis 7 in `ThisItem.Value`). Die Formel fügt dann das Ergebnis auf eine der Nummern der Zeilen aus dem Katalog der zweiten (0 bis 15 im Datensatz zu begrenzen, die die [ **ForAll** ](function-forall.md) -Funktion).
 
 1. Der zweite (vertikal) Katalog, fügen Sie eine **Bezeichnung** steuern, und legen Sie diese Eigenschaften:
 

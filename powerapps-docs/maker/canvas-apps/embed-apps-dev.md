@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a6b23b97195f000e6e17bb6fd6f0e9f3a2da4f09
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799040"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042684"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
-Die Apps, die Sie erstellen, sind oft dann besonders nützlich, wenn sie für Ihre Arbeitskollegen direkt an Ort und Stelle verfügbar sind. Mithilfe von PowerApps können Sie Canvas-Apps in einen iframe einbetten, sodass sich diese Apps in Websites und andere Dienste wie Power BI und SharePoint integrieren lassen.
+Die apps, die Sie erstellen, sind oft am nützlichsten, wenn sie verfügbar sind, direkt auf, wenn Personen ihre Arbeit zu erledigen. Canvas-apps in einen Iframe einbetten, können Sie diese apps in Websites und andere Dienste wie Power BI und SharePoint integrieren.
 
 In diesem Thema zeigen wir das Festlegen von Parametern für die Einbettung von Apps. Anschließend betten wir Ihre App zum Bestellen von Geschäftsausstattung in eine Website ein.
 
@@ -29,10 +29,10 @@ In diesem Thema zeigen wir das Festlegen von Parametern für die Einbettung von 
 
 Berücksichtigen Sie die folgenden Einschränkungen:
 
-* Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
-* Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
+- Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
+- Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
 
-PowerApps lassen sich außerdem (ohne Verwendung eines iframes) in SharePoint Online integrieren. Weitere Informationen finden Sie unter [Generieren einer App aus SharePoint mit PowerApps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online).
+Sie können auch Canvas-apps in SharePoint Online integrieren, ohne Verwendung eines IFRAMES. Weitere Informationen finden Sie unter: [Verwenden Sie das PowerApps-Webpart](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Festlegen von URI-Parametern für Ihre App
 Wenn Sie über eine einzubettende App verfügen, besteht der erste Schritt im Festlegen von Parametern für den URI (Uniform Resource Identifier), um dem iframe mitzuteilen, wo sich die App befindet. Der URI liegt in der folgenden Form vor:
@@ -58,10 +58,10 @@ Die App-ID ist auf „powerapps.com“ verfügbar. Führen Sie für die einzubet
 1. Klicken oder tippen Sie in [powerapps.com](https://powerapps.microsoft.com) auf der Registerkarte **Apps** auf die Auslassungspunkte ( **. . .** ) und dann auf **Details**.
    
     ![Wechseln zu den App-Details](./media/embed-apps-dev/details.png)
-2. Kopieren Sie die **App ID**.
+1. Kopieren Sie die **App ID**.
    
     ![Kopieren der App-ID aus den Detailinformationen](./media/embed-apps-dev/app-id.png)
-3. Ersetzen Sie den `[AppID]`-Wert im URI. Für unsere App zum Bestellen von Geschäftsausstattung sieht der URI wie folgt aus:
+1. Ersetzen Sie den `[AppID]`-Wert im URI. Für unsere App zum Bestellen von Geschäftsausstattung sieht der URI wie folgt aus:
    
     ```
     https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
@@ -85,8 +85,7 @@ Auf dem folgenden Bild sehen Sie die App zum Bestellen von Geschäftsausstattung
 
 Beachten Sie hinsichtlich der Authentifizierung von Benutzern Ihrer App die folgenden Punkte:
 
-* Wenn Ihre Website AAD-basierte (Azure Active Directory) Authentifizierung verwendet, ist keine zusätzliche Anmeldung erforderlich.
-* Wenn Ihre Website einen anderen Anmeldemechanismus verwendet oder auf Authentifizierung verzichtet, wird Ihren Benutzern eine Anmeldeaufforderung auf dem iframe angezeigt. Nach erfolgter Anmeldung können Ihre Benutzer die App so lange ausführen, wie der Autor der App sie freigegeben hat.
+- Wenn Ihre Website AAD-basierte (Azure Active Directory) Authentifizierung verwendet, ist keine zusätzliche Anmeldung erforderlich.
+- Wenn Ihre Website einen anderen Anmeldemechanismus verwendet oder auf Authentifizierung verzichtet, wird Ihren Benutzern eine Anmeldeaufforderung auf dem iframe angezeigt. Nach erfolgter Anmeldung können Ihre Benutzer die App so lange ausführen, wie der Autor der App sie freigegeben hat.
 
 Wie Sie sehen können, ist das Einbetten von Apps ein einfaches und leistungsstarkes Verfahren. Durch Einbetten können Sie Apps direkt dort zur Verfügung stellen, wo Sie und Ihre Kunden arbeiten – auf Websites, Power BI-Dashboards, SharePoint-Seiten und vielem mehr.
-

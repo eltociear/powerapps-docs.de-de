@@ -1,6 +1,6 @@
 ---
 title: PowerApps für Unternehmensentwickler, Partner und ISVs | Microsoft-Dokumentation
-description: Eine Einführung in die Entwicklung von Lösungen in PowerApps.
+description: Eine Einführung in die Entwicklung von Lösungen mit Canvas-apps.
 author: ImadYanni
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a99af6cbc963a82fc0f375336e0db9c07cbdc411
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: c50908704e06f95f91a23c0b560ff41e63ea475b
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798994"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042623"
 ---
-# <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps für Unternehmensentwickler, Partner und ISVs
+# <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Canvas-apps für Unternehmensentwickler, Partner und ISVs
 
 Als Entwickler können Sie Canvas-Apps in PowerApps erweitern, um noch leistungsfähigere Lösungen für Unternehmen und Kunden zu ermöglichen.
 
@@ -28,7 +28,7 @@ Als Entwickler können Sie Canvas-Apps in PowerApps erweitern, um noch leistungs
 
 Ermöglichen Sie Ihrer Organisation als Unternehmensentwickler, stabile, maßgeschneiderte Lösungen in PowerApps zu erstellen:
 
-- **Erstellen von benutzerdefinierten Connectors**: Entwickeln Sie benutzerdefinierte Connectors für die Verbindung mit der Daten Ihrer Organisation und Webdiensten über Microsoft Flow. [Weitere Informationen](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Erstellen von benutzerdefinierten Connectors**: Entwickeln Sie benutzerdefinierte Connectors für die Verbindung mit der Daten Ihrer Organisation und Webdiensten. [Weitere Informationen](https://docs.microsoft.com/connectors/custom-connectors/)
 
 - **Erstellen von Azure Functions**: Gestalten Sie Azure-Funktionen, um Apps um benutzerdefinierte serverseitige Logik zu erweitern. [Weitere Informationen](https://docs.microsoft.com/azure/azure-functions/functions-powerapps-scenario)
 

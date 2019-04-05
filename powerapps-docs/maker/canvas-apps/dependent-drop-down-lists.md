@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 02/28/2019
+ms.date: 04/04/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e00c81f25de9a764e8f6d963ff94f3c0ffe052a2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357251"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042753"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdownlisten in einer Canvas-app
 
@@ -28,7 +28,7 @@ Als bewährte Methode erstellen Sie eine Datenquelle für die Werte in der "Übe
 
 Speichern Sie für das Szenario in diesem Thema Mitarbeiter senden Probleme, die eine **Incidents** Liste durch ein Formular. Mitarbeiter geben Sie nicht nur den Speicherort des Speichers auf dem der Fehler aufgetreten ist, sondern auch die Abteilung in diesen Speicherort. Nicht alle Speicherorte haben die gleichen Abteilungen, sodass eine **Speicherorte** Liste wird sichergestellt, dass die Mitarbeiter eine Abteilung für einen Standort angeben können, das diese Abteilung keine.
 
-In diesem Thema wird eine SharePoint-Listen als Datenquellen verwendet, aber alle tabellarischen Datenquellen in gleicher Weise.
+In diesem Thema wird eine Microsoft SharePoint-Listen als Datenquellen verwendet, aber alle tabellarischen Datenquellen in gleicher Weise.
 
 ## <a name="create-data-sources"></a>Erstellen von Datenquellen
 
@@ -49,7 +49,7 @@ Ein **Speicherorte** Liste enthält die Abteilungen an jedem Standort.
 | Pembroke       | Zu erzeugen          |
 | Pembroke       | Blumen           |
 
-Ein **Incidents** Liste zeigt Kontaktinformationen und Informationen über jeden Vorfall. Erstellen Sie die Spalte "Date" als eine **Datum** Spalte, aber erstellen Sie die anderen Spalten als **Textzeile** Spalten, die Konfiguration vereinfachen und zu vermeiden [Delegierung](./delegation-overview.md) Warnungen im PowerApps ist.
+Ein **Incidents** Liste zeigt Kontaktinformationen und Informationen über jeden Vorfall. Erstellen Sie die Spalte "Date" als eine **Datum** Spalte, aber erstellen Sie die anderen Spalten als **Textzeile** Spalten, die Konfiguration vereinfachen und zu vermeiden [Delegierung](./delegation-overview.md) Warnungen im Microsoft PowerApps.
 
 | Vorname | Nachname | Telefonnummer     | Location | Department | Beschreibung       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -86,7 +86,7 @@ Nach dieser Änderung können Sie ignorieren die **Titel** Spalte, oder Sie kön
 
 ## <a name="replace-the-controls"></a>Ersetzen Sie die Steuerelemente
 
-1. In der **Felder** Bereich, wählen Sie den Pfeil nach unten neben **Speicherort**.
+1. In der **Felder** Bereich, wählen Sie den Pfeil neben **Speicherort**.
 
     Wenn Sie geschlossen haben die **Felder** Bereich können Sie es öffnen erneut durch Auswahl **SharePointForm1** in der linken Navigationsleiste klicken und dann **Bearbeitungsfelder** auf die **Eigenschaften** Registerkarte im rechten Bereich.
 
@@ -108,7 +108,7 @@ Nach dieser Änderung können Sie ignorieren die **Titel** Spalte, oder Sie kön
 1. Wählen Sie das Kontrollkästchen für die Liste, und wählen Sie dann **Connect**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bereich "Daten"](./media/dependent-drop-down-lists/select-list.png)
+    > ![Bereich „Daten“](./media/dependent-drop-down-lists/select-list.png)
 
     Die Liste der Verbindungen zeigt die **Incidents** Liste, auf dem die Form basiert, und die **Speicherorte** Liste, die Standorte und Abteilungen in der Form identifiziert wird.
 
@@ -144,7 +144,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie sie leichter identifizieren 
 
 ## <a name="configure-the-departments"></a>Konfigurieren Sie die Abteilungen
 
-1. Wählen Sie **DdDepartment** , und klicken Sie auf die **Eigenschaften** im rechten Bereich auf der Registerkarte **abhängig.**
+1. Wählen Sie **DdDepartment**, und klicken Sie auf die **Eigenschaften** im rechten Bereich auf der Registerkarte **abhängig.**
 
 1. Klicken Sie unter **übergeordnete Steuerelement**, sicher, dass **DdLocation** angezeigt wird, in der oberen Liste und **Ergebnis** in der unteren Liste angezeigt wird.
 
@@ -202,7 +202,7 @@ Bestätigen Sie, ob Sie das richtige Feld für das Steuerelement in einer der fo
     > ![Kombinationsfeld ändern](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **Meine untergeordnetes Dropdown-Liste enthält doppelte Elemente.**
-Dieses Symptom ist wahrscheinlich aufgrund einer **LookUp** Spalte in SharePoint oder eine **Auswahlmöglichkeiten** -Funktion in PowerApps. Um die Duplizierung zu entfernen, umschließen einer **Distinct** Funktion, um die ordnungsgemäße zurückgegebenen Daten. Weitere Informationen finden Sie unter: [DISTINCT-Funktion](functions/function-distinct.md)
+Dieses Symptom ist wahrscheinlich aufgrund einer **LookUp** Spalte in SharePoint oder eine **Auswahlmöglichkeiten** -Funktion in PowerApps. Um die Duplizierung zu entfernen, umschließen einer **Distinct** Funktion, um die ordnungsgemäße zurückgegebenen Daten. Weitere Informationen finden Sie unter: [DISTINCT-Funktion](functions/function-distinct.md).
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 

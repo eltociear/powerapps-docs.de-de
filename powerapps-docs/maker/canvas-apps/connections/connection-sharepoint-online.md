@@ -1,30 +1,32 @@
 ---
 title: Übersicht über die SharePoint-Verbindung | Microsoft-Dokumentation
-description: Hier finden Sie die verfügbaren Funktionen, Antworten und Beispiele für SharePoint.
+description: Für SharePoint finden Sie unter den verfügbaren Funktionen, Antworten und Beispiele.
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 07/12/2017
+ms.date: 04/03/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
-ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
+ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
+ms.sourcegitcommit: 4fe0a71efd54c1f4d22a279aa74c6bde3d908b9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58765500"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59007887"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Verbinden Sie mit SharePoint aus einer Canvas-app
 
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
 Verbinden mit einer SharePoint-Website, um eine app aus einer benutzerdefinierten Liste automatisch zu generieren, oder erstellen Sie eine Verbindung aus, bevor Sie das Hinzufügen von Daten zu einer vorhandenen app oder eine app von Grund auf neu erstellen.
+
+Je nachdem, wo Ihre Daten befinden können Sie eine oder beide der folgenden Ansätze ausführen:
 
 - Zeigen Sie Daten aus einer benutzerdefinierten Liste in einer SharePoint Online-Website oder einem lokalen Standort.
 - Anzeigen von Bildern und Wiedergabe von Video- oder audio-Dateien in einer Bibliothek (nur SharePoint-Online).
@@ -65,7 +67,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Po
         Geben Sie **Windows** als Authentifizierungstyp an, und geben Sie dann Ihre Anmeldeinformationen ein. (Wenn Ihre Anmeldeinformationen einen Domänennamen enthalten, geben Sie sie folgendermaßen an: *Domäne\Alias*.)
 
         > [!div class="mx-imgBorder"]
-        > ![Geben Sie die Anmeldeinformationen](./media/connection-sharepoint-online/specify-creds.png)
+        > ![Eingeben der Anmeldeinformationen](./media/connection-sharepoint-online/specify-creds.png)
 
         Klicken Sie unter **wählen Sie ein Gateway**, wählen Sie das Gateway, das Sie verwenden möchten, und wählen Sie dann **erstellen**.
 
@@ -73,7 +75,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Po
         > Wenn Sie ein lokales datengateway installiert haben, nicht [installieren Sie eine](../gateway-reference.md), und wählen Sie dann auf das Symbol, um die Liste der Gateways zu aktualisieren.
 
         > [!div class="mx-imgBorder"]
-        > ![Gateway auswählen](./media/connection-sharepoint-online/choose-gateway.png)
+        > ![Auswählen des Gateways](./media/connection-sharepoint-online/choose-gateway.png)
 
         Die Verbindung wird hergestellt, und Sie können zum Hinzufügen eines zu einer vorhandenen app oder eine app von Grund auf neu erstellen.
 
@@ -96,7 +98,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Po
     > [!div class="mx-imgBorder"]
     > ![Klicken Sie unter Wählen Sie eine Liste Wählen Sie das Kontrollkästchen für Dokumente oder eine oder mehrere Listen, die Sie verwenden möchten, und wählen Sie dann auf Verbinden](./media/connection-sharepoint-online/select-sp-tables.png)
 
-    Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen.  Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld **Benutzerdefinierten Listennamen eingeben** ein.
+    Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen. Wenn der Name der Liste, die Sie verwenden möchten, angezeigt wird, scrollen Sie nach unten, und geben Sie den Namen der Liste in das Feld **Geben Sie benutzerdefinierte Tabellennamen**.
 
     > [!div class="mx-imgBorder"]
     > ![Geben Sie den Namen der Liste in das Feld Geben Sie einen Namen für die benutzerdefinierte Liste ein.](./media/connection-sharepoint-online/custom-list.png)
@@ -111,20 +113,20 @@ Gelten die Konzepte in [erstellen Sie eine app von Grund auf Neu](../get-started
 
 Wenn die benutzerdefinierte Liste alle Typen von Spalten enthält, zeigen Sie die Daten in eine **Katalog** Steuerelement mithilfe der Bearbeitungsleiste zum Festlegen der **Text** Eigenschaft einer oder mehreren **Bezeichnung** Steuerelemente in diesem Katalog:
 
-- Geben Sie für eine Spalte vom Typ **Auswahl** oder **Nachschlagen** **ThisItem.[Spaltenname].Value** an, um Daten in dieser Spalte anzuzeigen.
+- Für eine **Wahl** oder **Lookup** Spalte geben **ThisItem.** _ColumnName_**. Wert** Daten in dieser Spalte angezeigt.
 
     Geben Sie z.B. **ThisItem.Standort.Value** an, wenn Sie eine **Auswahl**-Spalte mit dem Namen **Standort** haben. Geben Sie **ThisItem.PostalCode.Value** für eine **Nachschlage**-Spalte namens **PostalCode** ein.
 
-- Geben Sie bei einer Spalte vom Typ **Person oder Gruppe** **ThisItem.[Spaltenname].DisplayName** an, um den Anzeigenamen des Benutzers oder der Gruppe anzuzeigen.
+- Für eine **Person oder Gruppe** Spalte geben **ThisItem.** _ColumnName_**. "DisplayName"** um den Anzeigenamen des Benutzers oder der Gruppe anzuzeigen.
 
     Geben Sie z.B. **ThisItem.Manager.DisplayName** an, um die Anzeigenamen aus einer **Person oder Gruppe**-Spalte mit dem Namen **Manager** anzuzeigen.
 
-    Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine vollständige Liste der Optionen anzuzeigen, geben Sie **ThisItem.[Spaltenname].** (mit dem abschließenden Punkt) ein.
+    Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine vollständige Liste der Optionen anzuzeigen, geben **ThisItem.** _ColumnName_**.** (einschließlich des nachgestellten Punkts).
 
     > [!NOTE]
     > Für eine **CreatedBy** Spalte geben **ThisItem.Author.DisplayName** die Anzeigenamen von Benutzern angezeigt, die Elemente in der Liste erstellt haben. Für eine **ModifiedBy**-Spalte geben Sie **ThisItem.Editor.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste geändert haben.
 
-- Geben Sie für eine Spalte vom Typ **Verwaltete Metadaten** **ThisItem.[Spaltenname].Label** an, um Daten in dieser Spalte anzuzeigen.
+- Für eine **verwaltete Metadaten** Spalte geben **ThisItem.** _ColumnName_**. Bezeichnung** Daten in dieser Spalte angezeigt.
 
     Geben Sie z.B. **ThisItem.Sprachen.Label** ein, wenn Sie mit einer **Verwaltete Metadaten**-Spalte mit dem Namen **Sprachen** arbeiten.
 
