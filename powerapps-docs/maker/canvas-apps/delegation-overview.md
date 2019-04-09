@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e709c600e02d0acf26883da76ead163c62411802
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
+ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357619"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59098044"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Grundlagen der Delegierung in einer Canvas-App
 PowerApps umfasst eine leistungsfähige Sammlung von Funktionen für Filterung, Sortierung und Strukturierung von Tabellen mit Daten in einer Canvas-app: **[Filter](functions/function-filter-lookup.md)**,  **[Sortierreihenfolge](functions/function-sort.md)**, und **[AddColumns](functions/function-table-shaping.md)** Funktionen, um nur einige zu nennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.
@@ -29,7 +29,7 @@ Mit der *Delegierung* wird erreicht, dass die Ausdrucksstärke von PowerApps-For
 
 Die Schwierigkeit hierbei ist, dass nicht alle Vorgänge, die in einer PowerApps-Formel ausgedrückt werden können, an jede Datenquelle delegiert werden können. Dies ist der Grund für diesen Artikel. Die PowerApps-Sprache ist an die Formelsprache von Excel angelehnt und verfügt über umfassenden und sofortigen Zugriff auf eine vollständige Arbeitsmappe im Arbeitsspeicher, die viele verschiedene numerische Funktionen und Funktionen für die Textbearbeitung enthält. Daher ist die PowerApps-Sprache relativ komplex und kann von den meisten Datenquellen nicht unterstützt werden, darunter auch leistungsstarke Datenbank-Engines wie SQL Server.
 
-**Zum Verwenden von großen Datasets ist die Nutzung von Datenquellen und Formeln erforderlich, für die eine Delegierung möglich ist.** Nur auf diese Weise erzielen Sie für Ihre App eine gute Leistung und können sicherstellen, dass die Benutzer auf alle benötigten Informationen zugreifen können. Achten Sie auf Delegierungswarnungen, die anzeigen, an welcher Stelle keine Delegierung möglich ist. Wenn Sie mit kleinen Datasets arbeiten (weniger als 500 Datensätze), können Sie eine beliebige Datenquelle und Formel verwenden, weil die App Daten lokal verarbeiten kann, falls das Delegieren der Formel nicht möglich ist. 
+**Arbeiten mit großen Datasets erfordert das Verwenden von Datenquellen und Formeln, die delegiert werden können.** Nur auf diese Weise erzielen Sie für Ihre App eine gute Leistung und können sicherstellen, dass die Benutzer auf alle benötigten Informationen zugreifen können. Achten Sie auf Delegierungswarnungen, die anzeigen, an welcher Stelle keine Delegierung möglich ist. Wenn Sie mit kleinen Datasets arbeiten (weniger als 500 Datensätze), können Sie eine beliebige Datenquelle und Formel verwenden, weil die App Daten lokal verarbeiten kann, falls das Delegieren der Formel nicht möglich ist. 
 
 > [!NOTE]
 > Delegierungswarnungen wurden zwar in der Vergangenheit in PowerApps als Vorschläge mit einem blauen Punkt markiert, aber Delegierungsempfehlungen werden mittlerweile als Warnungen neu klassifiziert. Wenn die Daten in Ihrer Datenquelle mehr als 500 Datensätze umfassen und eine Funktion nicht delegiert werden kann, kann PowerApps möglicherweise nicht alle Daten abrufen, und Ihre App erhält ggf. falsche Ergebnisse. Mithilfe von Delegierungswarnungen können Sie Ihre App so verwalten, dass die Ergebnisse richtig sind.
@@ -59,10 +59,10 @@ In den Funktionen **Filter** und **LookUp** können Sie für Spalten der Tabelle
 * **[+](functions/operators.md)**, **[-](functions/operators.md)**
 * **[TrimEnds](functions/function-trim.md)**
 * **[IsBlank](functions/function-isblank-isempty.md)**
-* **[StartsWith](functions/function-startswith.md)**
+* **[StartsWith](functions/function-startswith.md)**, **[EndsWith](functions/function-startswith.md)**
 * Konstante Werte, die in allen Datensätzen gleich sind, z.B. Steuerelementeigenschaften sowie [globale und Kontextvariablen](working-with-variables.md).
 
-Sie können auch Teile Ihrer Formel verwenden, die zu einem konstanten Wert für alle Datensätze ausgewertet werden. Beispielsweise ist **Left( Language(), 2 )** nicht von Spalten des Datensatzes abhängig und gibt daher für alle Datensätze den gleichen Wert zurück. Es ist also praktisch eine Konstante. Die Verwendung von Kontextvariablen, Sammlungen und Signalen ist ggf. nicht konstant und verhindert daher, dass die Funktionen **Filter** und **LookUp** delegiert werden können.  
+Sie können auch Teile Ihrer Formel verwenden, die zu einem konstanten Wert für alle Datensätze ausgewertet werden. Z. B. **Left (Language(), 2)**, **Datum (2019, 3, 31)**, und **Today()** keine Spalten des Datensatzes abhängig und, folglich derselbe Wert für alle Datensätze zurückgegeben. Diese Werte an die Datenquelle als eine Konstante gesendet werden können, und Blockieren von Delegierung nicht. 
 
 In der obigen Liste werden die folgenden wichtigen Elemente nicht aufgeführt:
 
@@ -72,7 +72,7 @@ In der obigen Liste werden die folgenden wichtigen Elemente nicht aufgeführt:
 * **[ExactIn](functions/operators.md)**
 * Funktionen zur Zeichenfolgenmanipulation: **[Niedrigere](functions/function-lower-upper-proper.md)**,  **[oberen](functions/function-lower-upper-proper.md)**,  **[Links](functions/function-left-mid-right.md)**, **[Mitte](functions/function-left-mid-right.md)**,  **[Len](functions/function-left-mid-right.md)**,...
 * Signale: **[Location](functions/signals.md)**, **[Acceleration](functions/signals.md)**, **[Compass](functions/signals.md)**, ...
-* "Volatiles": **[Jetzt](functions/function-now-today-istoday.md)**,  **[heute](functions/function-now-today-istoday.md)**,  **[Rand](functions/function-rand.md)**,...
+* "Volatiles": **[Rand](functions/function-rand.md)**,...
 * [Sammlungen](working-with-variables.md)
 
 ### <a name="sorting-functions"></a>Sortierfunktionen
@@ -87,24 +87,32 @@ Zählfunktionen wie **[CountRows](functions/function-table-counts.md)**, **[Coun
 
 Andere Aggregatfunktionen wie **[StdevP](functions/function-aggregates.md)** und **[VarP](functions/function-aggregates.md)** können nicht delegiert werden.
 
+### <a name="table-shaping-functions"></a>Tabellenstrukturierung-Funktionen
+
+**[AddColumns](functions/function-table-shaping.md)**,  **[DropColumns](functions/function-table-shaping.md)**,  **[RenameColumns](functions/function-table-shaping.md)**, und **[ShowColumns](functions/function-table-shaping.md)** teilweise die Delegierung unterstützt.  Formeln in ihre Argumente können delegiert werden.  Die Ausgabe dieser Funktionen sind jedoch gemäß den Grenzwert nicht delegieren Datensatz.
+
+Wie in diesem Beispiel verwenden Entwickler häufig **AddColumns** und **LookUp** zum Zusammenführen von Informationen aus einer Tabelle in eine andere häufig als eine Verknüpfung in der Datenbanksprache bezeichnet:
+
+```powerapps-dot
+AddColumns( Products, 
+    "Supplier Name", 
+    LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name 
+)
+```
+
+Obwohl **Produkte** und **Lieferanten** möglicherweise Delegierbare Datenquellen und **LookUp** ist eine Delegierbare Funktion, die Ausgabe des der **AddColumns**Funktion ist nicht delegierbar. Das Ergebnis der gesamten Formel ist der erste Teil auf die **Produkte** -Datenquelle. Da die **LookUp**-Funktion und die dazugehörige Datenquelle delegierbar sind, kann eine Übereinstimmung für **Suppliers** auch dann überall in der Datenquelle gefunden werden, wenn diese groß ist. 
+
+Bei Verwendung von **AddColumns** auf diese Weise **LookUp** müssen separate Aufrufe an die Datenquelle für die einzelnen in dieser ersten Datensätze, **Produkte**, wodurch viele Netzwerk CHATTER. Wenn **Lieferanten** ist klein genug, und ändert sich nicht häufig können Sie Aufrufen der **sammeln** -Funktion in [ **OnStart** ](functions/signals.md) zum Zwischenspeichern der Daten die Quelle in Ihrer app beim Start. Als Alternative können Sie Ihrer app umstrukturieren, so, dass Sie nur, wenn der Benutzer auffordert, der sie die verknüpften Datensätze abzurufen.  
+ 
 ## <a name="non-delegable-functions"></a>Nicht delegierbare Funktionen
 Für alle anderen Funktionen einschließlich der Folgenden wird die Delegierung nicht unterstützt:
 
-* Tabellenstrukturierung: **[AddColumns](functions/function-table-shaping.md)**, **[DropColumns](functions/function-table-shaping.md)**, **[ShowColumns](functions/function-table-shaping.md)**, ...
 * **[First](functions/function-first-last.md)**, **[FirstN](functions/function-first-last.md)**, **[Last](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**
 * **[Choices](functions/function-choices.md)**
 * **[Concat](functions/function-concatenate.md)**
 * **[Collect](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**
 * **[CountIf](functions/function-table-counts.md)**, **[RemoveIf](functions/function-remove-removeif.md)**, **[UpdateIf](functions/function-update-updateif.md)**
 * **[GroupBy](functions/function-groupby.md)**, **[Ungroup](functions/function-groupby.md)**
-
-Ein häufiges Muster ist die Verwendung von **AddColumns** und **LookUp** zum Zusammenführen von Informationen aus einer Tabelle in eine andere. In der Datenbanksprache wird dies meist als „Join“ (Verknüpfung“) bezeichnet.  Beispiel:
-
-**AddColumns( Products, "Supplier Name", LookUp( Suppliers, Suppliers.ID = Product.SupplierID ).Name )**
-
-Bei **Products** und **Suppliers** kann es sich zwar ggf. um delegierbare Datenquellen handeln, und **LookUp** ist eine delegierbare Funktion, aber die Funktion **AddColumns** ist nicht delegierbar.  Das Ergebnis der gesamten Formel ist auf den ersten Teil der Datenquelle **Products** beschränkt.  
-
-Da die **LookUp**-Funktion und die dazugehörige Datenquelle delegierbar sind, kann eine Übereinstimmung für **Suppliers** auch dann überall in der Datenquelle gefunden werden, wenn diese groß ist. Ein potenzieller Nachteil ist, dass **LookUp** für jeden dieser ersten Datensätze in **Products** separate Aufrufe der Datenquelle durchführt, wodurch im Netzwerk viel Datenverkehr anfällt. Wenn **Suppliers** klein genug ist und sich nicht häufig ändert, können Sie die Datenquelle stattdessen in Ihrer App mit einem **Collect**-Aufruf zwischenspeichern, sobald die App gestartet wird (per [**OnVisible**](controls/control-screen.md) auf dem Startbildschirm), und einen **LookUp**-Vorgang dafür durchführen.  
 
 ## <a name="non-delegable-limits"></a>Grenzwerte für Fälle, in denen keine Delegierung möglich ist
 Formeln, die nicht delegiert werden können, werden lokal verarbeitet. Auf diese Weise kann die gesamte Bandbreite der PowerApps-Formelsprache genutzt werden. Dies hat aber einen Preis: Alle Daten müssen zuerst auf das Gerät übertragen werden, sodass unter Umständen eine größere Datenmenge über das Netzwerk abgerufen werden muss. Dies kann eine Weile dauern, sodass der Eindruck entsteht, dass Ihre App langsam ist oder hängt.
