@@ -13,22 +13,29 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 710bc4a11e4de9921e0efa077cb0e18f58f09cb5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
+ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831502"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59425309"
 ---
-# <a name="gallery-control-in-powerapps"></a>Bildkatalog-Steuerelement in PowerApps
+# <a name="gallery-control-in-canvas-apps"></a>Bildkatalog-Steuerelement in Canvas-apps
+
 Ein Steuerelement, das andere Steuerelemente enthält und einen Datensatz anzeigt.
 
 ## <a name="description"></a>Beschreibung
+
 Ein **Bildkatalog**-Steuerelement kann mehrere Datensätze aus einer Datenquelle darstellen. Jeder Datensatz kann mehrere Datentypen enthalten. Ein **Bildkatalog**-Steuerelement kann beispielsweise mehrere Kontakte darstellen, wobei jedes Element Kontaktdaten wie den Namen, eine Adresse und eine Telefonnummer umfasst. Jedes Datenfeld wird in einem eigenen Steuerelement innerhalb des **Bildkatalog**-Steuerelements angezeigt. Sie können diese Steuerelemente mithilfe dieser Vorlage konfigurieren. Die Vorlage wird im Bildkatalog als erstes Element angezeigt. Sie finden sie am linken Rand des **Bildkatalog**-Steuerelements (Querformat bzw. horizontale Ausrichtung) bzw. an der Oberseite des **Bildkatalog**-Steuerelements (Hochformat bzw. vertikale Ausrichtung). Änderungen an der Vorlage beziehen sich auf das **Bildkatalog**-Steuerelement insgesamt.
 
-Es stehen vordefinierte Bildkatalog-Vorlagen für die Darstellung von Bildern, von Text und von Elementen mit unterschiedlicher Höhe zur Verfügung.
+Vordefinierte Vorlagen für angezeigt, dass die Bilder und Texte in einem Katalog verfügbar sind, sowie einen Katalog für Elemente mit variabler Höhe.
+
+## <a name="limitations"></a>Einschränkungen
+
+Wenn ein Benutzer blättert die **Flexible Höhe** Katalog-Steuerelements, bevor alle Elemente geladen sind, wird das Element, die derzeit in Ansicht möglicherweise der Ansicht nach unten und außen verschoben, wenn der Datenladevorgang abgeschlossen ist. Um dieses Problem zu vermeiden, verwenden Sie einen Standard **Katalog** -Steuerelement statt der **Flexible Höhe** Variant-Wert.
 
 ## <a name="key-properties"></a>Haupteigenschaften
+
 **[Default:](properties-core.md)** Das Element oder der Datensatz aus der Datenquelle, das bzw. der beim Starten der App im Katalog ausgewählt werden soll.
 
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
@@ -36,7 +43,8 @@ Es stehen vordefinierte Bildkatalog-Vorlagen für die Darstellung von Bildern, v
 **Selected** – Das ausgewählte Element.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte die Elementliste beschreiben.
+
+**[AccessibleLabel](properties-accessibility.md)**  – Bezeichnung des Katalogs (nicht den darin enthaltenen Elementen) für Sprachausgaben. Sollte die Elementliste beschreiben.
 
 **AllItems** – Alle Elemente eines Katalogs, einschließlich zusätzlicher Steuerelementwerte, die Teil der Vorlage des Katalogs sind.
 
@@ -52,9 +60,11 @@ Es stehen vordefinierte Bildkatalog-Vorlagen für die Darstellung von Bildern, v
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**Layout** – Gibt an, ob der Benutzer in einem Katalog scrollen oder einen Schieberegler von oben nach unten (**Vertical**) oder von links nach rechts (**Horizontal**) verschieben muss.
+**ItemAccessibleLabel** – Bezeichnung jedes Katalogelement für Sprachausgaben. Sollte beschreiben, was jedes Element ist.
 
 **NavigationStep** – Gibt an, wie weit in einem Katalog gescrollt werden kann, wenn die **ShowNavigation**-Eigenschaft auf **true** festgelegt ist und der Benutzer am Ende des Katalogs jeweils einen Navigationspfeil verwendet.
+
+**Auswählbare** : Legt fest, ob Katalogelemente ausgewählt werden können. Bei Festlegung auf **"true"**, Sprachausgabe Identifizieren der-Galerie als eine Liste auswählbarer und wählen Sie ein Element durch Klicken oder tippen. Bei Festlegung auf **"false"**, Sprachausgabe Identifizieren der-Galerie als eine normale Liste und klicken oder tippen auf ein Element nicht wählen Sie ihn.
 
 **ShowNavigation** – Gibt an, ob in einem Katalog an beiden Enden ein Pfeil angezeigt wird, damit Benutzer durch die Elemente scrollen können, indem Sie auf einen Pfeil klicken oder tippen.
 
@@ -81,36 +91,52 @@ Es stehen vordefinierte Bildkatalog-Vorlagen für die Darstellung von Bildern, v
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+
+[**Filter**( *DataSource*, *Formel* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Beispiele
+
 ### <a name="show-and-filter-data"></a>Anzeigen und Filtern von Daten
-* [Anzeigen von Text](control-text-box.md#show-data-in-a-gallery)
+
+* [Anzeigen von text](control-text-box.md#show-data-in-a-gallery)
 * [Anzeigen von Bildern](control-image.md#show-a-set-of-images-from-a-data-source)
 * [Filtern von Daten mithilfe einer Listenoption](control-drop-down.md#example)
-* [Filtern von Daten mithilfe eines Schiebereglers](control-slider.md#example)
+* [Filtern von Daten per Schieberegler](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>Abrufen von Daten eines Benutzers
-* [Abrufen von Text](control-text-input.md#collect-data)
-* [Abrufen von Bildern](control-add-picture.md#add-images-to-an-image-gallery-control)
+
+* [Abrufen von text](control-text-input.md#collect-data)
+* [Images abrufen](control-add-picture.md#add-images-to-an-image-gallery-control)
 * [Abrufen von Fotos](control-camera.md#example)
 * [Abrufen von Tönen](control-microphone.md#example)
 * [Abrufen von Zeichnungen](control-pen-input.md#create-a-set-of-images)
 
-
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+
 ### <a name="color-contrast"></a>Farbkontrast
+
 Wenn ein Katalogelement aktiviert wird, indem man auf eine beliebige Stelle klickt, muss zwischen den folgenden Elementen ein angemessener Farbkontrast vorhanden sein:
+
 * Zwischen **[BorderColor](properties-color-border.md)** und der Farbe außerhalb des Katalogs, wenn es einen Rahmen gibt
 * Zwischen **[Fill](properties-color-border.md)** und der Farbe außerhalb des Katalogs, wenn es keinen Rahmen gibt
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-  > Die Sprachausgabe meldet, wenn Elemente im Katalog verändert werden. **AccessibleLabel** wird ebenfalls erwähnt. Dadurch wird die Meldung in einen Kontext gesetzt und hat eine noch wichtigere Funktion, wenn mehrere Kataloge gleichzeitig angezeigt werden.
+    > Die Sprachausgabe wird bei der Elemente im Katalog ändern. **AccessibleLabel** wird ebenfalls erwähnt. Dadurch wird die Meldung in einen Kontext gesetzt und hat eine noch wichtigere Funktion, wenn mehrere Kataloge gleichzeitig angezeigt werden.
+
+* Wenn ein Katalogelement mehrere Steuerelemente enthält, verwenden Sie **ItemAccessibleLabel** um das Galerieelement Inhalt zusammenzufassen.
+
+* Legen Sie den Wert der **Selectable** zu **"true"** sollen Benutzer ein Katalogelement auswählen. Andernfalls legen Sie diesen Wert auf **"false"**.
+
+* Wenn ein Katalogelement mehrere Steuerelemente enthält, verwenden Sie **ItemAccessibleLabel** eine Zusammenfassung des Katalogs Inhalt des Elements angeben.
+
+* **Auswählbare** sollte entsprechend festgelegt werden, je nachdem, ob Benutzer gedacht sind, um ein Katalogelement auszuwählen.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
+
 * Sie sollten **ShowScrollbar** auf **TRUE** festlegen. Auf den meisten Geräten mit Touchscreen wird die Scrollleiste erst angezeigt, wenn der Benutzer mit dem Scrollen beginnt.
 * Wenn ein Katalogelement aktiviert wird, indem man auf eine beliebige Stelle klickt, muss es auch eine Möglichkeit für Tastaturbenutzer geben, dieses Katalogelement auszuwählen. Sie können z.B. eine **[Schaltfläche](control-button.md)** hinzufügen, für die die **OnSelect**-Eigenschaft auf **Select(Parent)** festgelegt ist.
 
