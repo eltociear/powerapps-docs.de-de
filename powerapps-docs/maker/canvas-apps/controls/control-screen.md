@@ -55,7 +55,7 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 ## <a name="example"></a>Beispiel
 
-1. Fügen Sie ein**[Optionsfeld](control-radio.md)**-Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgenden Wert fest:
+1. Fügen Sie ein **[Optionsfeld](control-radio.md)**-Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgenden Wert fest:
 
     `["Red", "Green"]`
 
