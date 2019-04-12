@@ -1,9 +1,9 @@
 ---
-title: Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps mit Projekt-Explorer | MicrosoftDocs
+title: Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Lösungs-Explorer | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,12 +19,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-global-option-sets-for-common-data-service-for-apps-using-solution-explorer"></a>Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps mit Projekt-Explorer
+# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Lösungs-Explorer
 
-Der Projektmappen-Explorer bietet eine Möglichkeit zur Erstellung globale Optionssätze für Common Data Service for Apps mithilfe von Common Data Service for Apps.
+Lösungs-Explorer bietet eine Möglichkeit, um globale Optionssätze für Common Data Service zu erstellen und zu bearbeiten.
 
 [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können mithilfe des Lösungs-Explorers nur festgelegt werden. <br />Weitere Informationen: 
-- [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service für Apps](create-edit-global-option-sets.md)
+- [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service](create-edit-global-option-sets.md)
 - [Einen Optionssatz erstellen](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
@@ -40,7 +40,7 @@ Ein Teil des Namens jedes globalen Optionssatzes, die Sie erstellen, ist das Anp
 ![Globale Optionssätze anzeigen](media/view-global-option-sets-solution-explorer.png)
 
 > [!NOTE]
-> Einige globale Systemoptionssätze sind nicht anpassbar. Diese Optionen können sich bei neuen Versionen oder Updates ändern, daher wird empfohlen, sie nicht zu verwenden, sofern Sie nicht sicher sind, dass die Anforderungen der Art entsprechen, in der CDS for Apps die Werte verwendet.
+> Einige globale Systemoptionssätze sind nicht anpassbar. Diese Optionen können sich bei neuen Versionen oder Updates ändern, daher wird empfohlen, sie nicht zu verwenden, sofern Sie nicht sicher sind, dass die Anforderungen der Art entsprechen, in der Common Data Service die Werte verwendet.
 
 ## <a name="create-a-global-option-set"></a>Erstellen eines globalen Optionssatzes
 
@@ -81,7 +81,7 @@ Um einen globalen Optionssatz zu löschen, wenn Sie die Liste anzeigen, wählen 
   
 ### <a name="see-also"></a>Siehe auch
  
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service für Apps](create-edit-global-option-sets.md)<br />
+[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service](create-edit-global-option-sets.md)<br />
 [Einen Optionssatz erstellen](custom-picklists.md)<br />
 [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)<br />
 [Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets).

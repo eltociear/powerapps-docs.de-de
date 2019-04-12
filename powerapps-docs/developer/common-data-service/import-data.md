@@ -1,6 +1,6 @@
 ---
-title: Importieren von Daten (Common Data Service für Apps) | Microsoft Docs
-description: 'Wenn Sie Daten in Common Data Service for Apps importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe von Datenimport können Sie Daten aus verschiedenen Kundenbeziehungs-Verwaltungssystemen und Datenquellen in CDS für Apps hochladen.'
+title: Datenimport (Common Data Service) | Microsoft Docs
+description: 'Wenn Sie Daten in Common Data Service importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe des Datenimports können Sie Daten aus verschiedenen Kundenbeziehungssystemen und Datenquellen in Common Data Service hochladen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -21,7 +21,7 @@ search.app:
 Was Mike Carter
 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/import-data
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/import-data
 
 
 
@@ -31,30 +31,30 @@ Should there be a separate topic for organization service and Web API?
 All these functions & actions exist:
 
 RetrieveParsedDataImportFile Function
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/retrieveparseddataimportfile?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/retrieveparseddataimportfile?view=dynamics-ce-odata-9
 GetDistinctValuesImportFile Function
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/getdistinctvaluesimportfile?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/getdistinctvaluesimportfile?view=dynamics-ce-odata-9
 ParseImport Function
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/parseimport?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/parseimport?view=dynamics-ce-odata-9
 TransformImport Action
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/transformimport?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/transformimport?view=dynamics-ce-odata-9
 ImportRecordsImport Action
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/importrecordsimport?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/importrecordsimport?view=dynamics-ce-odata-9
 ExportMappingsImportMap Action
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/exportmappingsimportmap?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/exportmappingsimportmap?view=dynamics-ce-odata-9
 ImportMappingsImportMap Action
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/importmappingsimportmap?view=dynamics-ce-odata-9
+https://docs.microsoft.com/dynamics365/customer-engagement/web-api/importmappingsimportmap?view=dynamics-ce-odata-9
 
 Or should the core general content simply include both?
 
 -->
-Wenn Sie Daten in Common Data Service for Apps importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe von Datenimport können Sie Daten aus verschiedenen Kundenbeziehungs-Verwaltungssystemen und Datenquellen in CDS für Apps hochladen. Sie können Daten in Standard- und benutzerdefinierte Attribute der meisten Geschäfts- und benutzerdefinierten Entitäten importieren. Sie können auch zugehörige Daten, wie etwa Notizen und Anlagen, hinzufügen.  
+Wenn Sie Daten in Common Data Service importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe des Datenimports können Sie Daten aus verschiedenen Kundenbeziehungssystemen und Datenquellen in Common Data Service hochladen. Sie können Daten in Standard- und benutzerdefinierte Attribute der meisten Geschäfts- und benutzerdefinierten Entitäten importieren. Sie können auch zugehörige Daten, wie etwa Notizen und Anlagen, hinzufügen.  
   
-Common Data Service für Apps umfasst ein Webanwendungstool, das Datenimport-Assistenten heißt. Sie können dieses Tool verwenden, um Datensätze aus einer oder mehr Dateien mit durch Komma getrennten Werten (.csv), XML-Kalkulationstabellen 2003 (.xml) oder aus Textdateien zu importieren.  
+Common Data Service umfasst ein Webanwendungstool, das Datenimport-Assistent heißt. Sie können dieses Tool verwenden, um Datensätze aus einer oder mehr Dateien mit durch Komma getrennten Werten (.csv), XML-Kalkulationstabellen 2003 (.xml) oder aus Textdateien zu importieren.  
   
- Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu CDs for Apps.  
+ Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu Common Data Service.  
   
- Die Common Data Service für Apps-Webdienste bieten die folgenden zusätzlichen Funktionen, die im Datenimport-Assistenten nicht verfügbar sind:  
+ Die Common Data Service-Webdienste bieten die folgenden zusätzlichen Funktionen, die im Datenimport-Assistenten nicht verfügbar sind:  
   
 - Erstellen Sie Datenzuordnungen, die komplexe Transformationszuordnungen, wie Verkettungen, Teilungen und Ersetzungen, einschließen.  
   
@@ -68,7 +68,7 @@ Common Data Service für Apps umfasst ein Webanwendungstool, das Datenimport-Ass
   
 - Fügen Sie `LookupMap`XML-Tags in der Datenzuordnung hinzu, um anzugeben, dass die Datensuche initiiert und in einer Quelldatei ausgeführt wird, die bei dem Import verwendet wird.  
   
-- Fügen Sie benutzerdefinierte `OwnerMetadata`XML-Tags in der Datenzuordnung hinzu, sodass die Benutzerdatensätze in der Quelldatei den Datensätzen des Benutzers (Systembenutzer) in CDS for Apps entsprechen.  
+- Fügen Sie benutzerdefinierte `OwnerMetadata`-XML-Tags in der Datenzuordnung hinzu, sodass die Benutzerdatensätze in der Quelldatei den Datensätzen des Benutzers (Systembenutzer) in Common Data Service entsprechen.  
   
 - Verwenden Sie optionale Überprüfungen.  
   
@@ -89,7 +89,7 @@ Common Data Service für Apps umfasst ein Webanwendungstool, das Datenimport-Ass
   
 - Transformieren Sie die analysierten Daten.  
   
-- Laden Sie die transformierten Daten in den CDS for Apps-Zielserver hoch.  
+- Laden Sie die transformierten Daten in den Common Data Service-Zielserver hoch.  
   
   Sie können Daten aus einer oder mehreren Quelldateien importieren. Eine Quelldatei kann Daten für einen oder mehrere Entitätstypen enthalten.  
   

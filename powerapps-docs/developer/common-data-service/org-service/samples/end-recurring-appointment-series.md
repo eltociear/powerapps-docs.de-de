@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Eines wiederkehrenden Termins beenden (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Beenden eines wiederkehrenden Termins (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie eine wiederkehrende Terminserie beenden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-end-a-recurring-appointment-series"></a>Beispiel: Erstellen einer Terminserie
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-end-recurring-appointment-series -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-end-recurring-appointment-series -->
 
-Das folgende Beispiel zeigt, wie eine wiederkehrende Terminserie mithilfe der [DeleteOpenInstancesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.deleteopeninstancesrequest?view=dynamics-general-ce-9)-Message abgeschlossen wird. Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EndRecurringAppointment).
+Das folgende Beispiel zeigt, wie eine wiederkehrende Terminserie mithilfe der [DeleteOpenInstancesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.deleteopeninstancesrequest?view=dynamics-general-ce-9)-Message abgeschlossen wird. Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EndRecurringAppointment).
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

@@ -1,10 +1,10 @@
 ---
-title: 'Beispiel: Berechnen eines Kreditsatzes mit einer benutzerdefinierten Workflowaktivität (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Berechnen eines Kreditsatzes mit einer benutzerdefinierten Workflowaktivität (Common Data Service) | Microsoft Docs'
 description: Die folgende Beispielworkflowaktivität berechnet den Kreditscore anhand der Sozialversicherungsnummer (SSN) und des Namens.
 ms.custom: ''
 ms.date: 12/03/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="sample-calculate-a-credit-score-with-a-custom-workflow-activity"></a>Beispiel: Berechnen Sie mit einer benutzerdefinierten Workflowaktivität einen Kreditscore
 
-Dieser Beispielcode ist für Common Data Service for Apps bestimmt. Laden Sie hier das vollständige Beispiel herunter [Benutzerdefinierte Workflowaktivitätsbeispiele](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285).
+Dieser Beispielcode ist für Common Data Service bestimmt. Laden Sie hier das vollständige Beispiel herunter [Benutzerdefinierte Workflowaktivitätsbeispiele](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

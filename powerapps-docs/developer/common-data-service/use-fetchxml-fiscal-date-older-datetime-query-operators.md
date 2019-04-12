@@ -1,5 +1,5 @@
 ---
-title: Steuerdatum und "älter als"-Datums-/Zeit-Abfrageoperatoren in FetchXML (Common Data Service für Apps) | Microsoft Docs
+title: Steuerdatum und "älter als"-Datums-/Zeit-Abfrageoperatoren in FetchXML (Common Data Service) | Microsoft Docs
 description: Infos zur Verwendung von konditionalen FetchXML-Steuerdatenoperatoren und &quot;älter als&quot;-Klausen für Datums- und Uhrzeitwerte
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="fiscal-date-and-older-than-datetime-query-operators-in-fetchxml"></a>Steuerdatum und "älter als"-Datums-/Zeit-Abfrageoperatoren in FetchXML
 
-Eine FetchXML-Abfrage in Common Data Service für Apps kann spezielle Steuerdatumswerte und *älter als*-Klauseln für Datums- und Uhrzeitwerte in Abfragen verwenden. Beispielsweise kann eine FetchXML-Abfrage alle Bestellungen finden, die im letzten Geschäftsmonat erfüllt wurden, oder dringende Anfragen mit hohem Schweregrad, die älter sind als 15 Minuten.  
+Eine FetchXML-Abfrage in Common Data Service kann spezielle Steuerdatumswerte und *älter als*-Klauseln für Datums- und Uhrzeitwerte in Abfragen verwenden. Beispielsweise kann eine FetchXML-Abfrage alle Bestellungen finden, die im letzten Geschäftsmonat erfüllt wurden, oder dringende Anfragen mit hohem Schweregrad, die älter sind als 15 Minuten.  
   
 > [!NOTE]
 >  Die FetchXML-Abfrage verwendet die Einstellungen zum Geschäftsjahr der Organisation für alle Steuerdatumsabfragen.  

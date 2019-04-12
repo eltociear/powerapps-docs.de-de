@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden Sie Verbindungen, um Datensätze miteinander zu verknüpfen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Verwenden Sie Verbindungen, um Datensätze miteinander zu verknüpfen (Common Data Service) | Microsoft Docs'
 description: 'Verbindungsentitaten hilfen Ihnen, die Abfrageverbindungen zu aktivieren und zu erstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,11 +17,11 @@ search.app:
 ---
 # <a name="use-connections-to-link-records-to-each-other"></a>Verwenden Sie Verbindungen, um Datensätze miteinander zu verknüpfen
 
-Die *Verbindungen* bieten eine flexible Möglichkeit, die Beziehungen zwischen zwei beliebigen Entitätsaufzeichnungen Common Data Service for Apps zu verbinden und zu beschreiben. Sie hilft Ihnen, Teamwork, Zusammenarbeit und die effektive Verwaltung des Unternehmens und der Vertriebsprozesse zu fördern. Mit Verbindungen können Sie problemlos Benutzer, Kontakte, Angebote, Vertriebsaufträge und viele andere Entitätsdatensätze einander zuordnen. Den Datensätzen in der Zuordnung können bestimmte Rollen zugewiesen werden, mit denen der Zweck der Beziehung definiert werden kann.  
+Die *Verbindungen* bieten eine flexible Möglichkeit, die Beziehungen zwischen zwei beliebigen Entitätsaufzeichnungen Common Data Service zu verbinden und zu beschreiben. Sie hilft Ihnen, Teamwork, Zusammenarbeit und die effektive Verwaltung des Unternehmens und der Vertriebsprozesse zu fördern. Mit Verbindungen können Sie problemlos Benutzer, Kontakte, Angebote, Vertriebsaufträge und viele andere Entitätsdatensätze einander zuordnen. Den Datensätzen in der Zuordnung können bestimmte Rollen zugewiesen werden, mit denen der Zweck der Beziehung definiert werden kann.  
   
  Verbindungen bieten die folgenden Funktionen:  
   
-- Eine einfache und flexible Möglichkeit, um eine Verbindung zwischen zwei Datensätzen der meisten CDs for Apps-Entitätstypen zu erstellen. Alle anpassbaren Geschäfts- und benutzerdefinierten Entitäten können für Verbindungen aktiviert werden.  
+- Eine einfache und flexible Möglichkeit, um eine Verbindung zwischen zwei Datensätzen der meisten Common Data Service-Entitätstypen zu erstellen. Alle anpassbaren Geschäfts- und benutzerdefinierten Entitäten können für Verbindungen aktiviert werden.  
   
 - Eine Option zum Hinzufügen von nützlichen Informationen, wie eine Beschreibung der Verbindung und der Dauer.  
   

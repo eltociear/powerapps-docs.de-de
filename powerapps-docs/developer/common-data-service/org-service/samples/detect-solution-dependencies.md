@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erkennen von Lösungsabhängigkeiten (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Erkennen von Lösungsabhängigkeiten (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie man Abhängigkeiten von Lösungen erkennt.'
 ms.custom: ''
 ms.date: 10/31/2018

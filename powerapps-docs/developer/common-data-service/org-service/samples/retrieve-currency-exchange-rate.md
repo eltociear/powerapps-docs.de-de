@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen von Wechselkursen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen von Wechselkursen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie Sie eine neue Währung erstellen und den Wechselkurs abrufen und anzeigen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-currency-exchange-rate"></a>Beispiel: Abrufen von Wechselkursen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-currency-exchange-rate -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-currency-exchange-rate -->
 
 Dieses Beispiel zeigt, wie Sie eine neue Währung erstellt und wie der Wechselkurs in Bezug zur Basiswährung der Organisation abgerufen und angezeigt werden kann. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveCurrencyExchangeRate) herunterladen.
 

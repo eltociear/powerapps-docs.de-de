@@ -1,10 +1,10 @@
 ---
-title: HTTP-Abfragen erstellen und Fehler behandeln (Common Data Service for Apps)| Microsoft Docs
+title: HTTP-Abfragen erstellen und Fehler behandeln (Common Data Service)| Microsoft Docs
 description: 'Lesen Sie über die HTTP-Methoden und Header, die einen Teil der HTTP-Anforderungen, die mit der Web-API interagieren, formieren, und wie Fehler, die in Antwort zurückgegeben werden, zu erkennen und zu beheben.'
 ms.custom: ''
 ms.date: 11/05/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -117,7 +117,7 @@ Sie können zusätzliche Kopfzeilen verwenden, um bestimmte Möglichkeiten zu ak
 
 ## <a name="identify-status-codes"></a>Ermitteln von Statuscodes
 
- Egal, ob eine HTTP-Anforderung erfolgreich ist oder fehlschlägt, die Antwort umfasst einen Statuscode. Die Statuscodes, die von der Common Data Service for Apps-Web-API zurückgegeben werden, umfassen Folgendes.  
+ Egal, ob eine HTTP-Anforderung erfolgreich ist oder fehlschlägt, die Antwort umfasst einen Statuscode. Die Statuscodes, die von der Common Data Service-Web-API zurückgegeben werden, umfassen Folgendes.  
   
 |Code|Beschreibung|Typ|  
 |----------|-----------------|----------|  

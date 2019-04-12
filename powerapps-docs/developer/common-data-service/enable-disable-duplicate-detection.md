@@ -1,5 +1,5 @@
 ---
-title: Aktivieren und deaktivieren von Duplikaterkennung (Common Data Service für Apps) | Microsoft Docs
+title: Aktivieren und deaktivieren von Duplikaterkennung (Common Data Service) | Microsoft Docs
 description: 'Dieses Thema enthält Informationen dazu, wie Sie die Duplikaterkennung für alle Entitäten in einer Organisation, für eine bestimmte Entität oder für Einzelgeschäfte aktivieren und wie Sie diese global oder für einen Entitätstyp deaktivieren, indem die Veröffentlichung der Duplikaterkennungsregeln rückgängig gemacht wird oder indem die veröffentlichten Regeln gelöscht werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -47,7 +47,7 @@ Vor der Ausführung der Duplikaterkennung müssen Sie diese für jede der folgen
   
 - Setzen Sie die folgenden Attribute auf `true`:  
   
-  - `Organization.IsDuplicateDetectionEnabledForOnlineCreateUpdate`. Erstellen oder Aktualisieren von Datensätzen in den CDS für Apps mithilfe der Webanwendung oder Dynamics 365 for Outlook verwenden. Dieses Attribut aktiviert bzw. deaktiviert die Duplikaterkennung für Datensätze, die mit dem Parameter <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> und der Nachricht <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> erstellt oder aktualisiert wurden. Dies hat jedoch keine Auswirkungen auf Datensätze, die mithilfe der Methoden <xref:Microsoft.Xrm.Sdk.IOrganizationService>. und <xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> erstellt oder aktualisiert wurden. und <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> Methoden.  
+  - `Organization.IsDuplicateDetectionEnabledForOnlineCreateUpdate`. Erstellen oder Aktualisieren von Datensätzen in den Common Data Service mithilfe der Webanwendung oder von Dynamics 365 for Outlook. Dieses Attribut aktiviert bzw. deaktiviert die Duplikaterkennung für Datensätze, die mit dem Parameter <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> und der Nachricht <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> erstellt oder aktualisiert wurden. Dies hat jedoch keine Auswirkungen auf Datensätze, die mithilfe der Methoden <xref:Microsoft.Xrm.Sdk.IOrganizationService>. und <xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> erstellt oder aktualisiert wurden. und <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> Methoden.  
   
   - `Organization.IsDuplicateDetectionEnabledForOfflineSync`. Synchronisieren Sie Offline-Datensätzen, wenn Dynamics 365 for Outlook vom Offlinemodus in den Onlinemodus wechselt.  
   

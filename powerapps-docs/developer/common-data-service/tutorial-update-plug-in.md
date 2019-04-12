@@ -1,12 +1,12 @@
 ---
-title: 'Lernprogramm: Aktualisieren eines Plug-In (Common Data Service für Apps) | MicrosoftDocs'
+title: 'Lernprogramm: Aktualisieren eines Plug-In (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Lernprogramm ist das dritte in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten. '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:

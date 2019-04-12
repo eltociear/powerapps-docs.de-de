@@ -1,5 +1,5 @@
 ---
-title: Entitäten erstellen mithilfe des Organisationsservices (Common Data Service für Apps)| Microsoft Docs
+title: Entitäten mithilfe des Organisationsservices erstellen (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,8 @@ Dieses Thema enthält Beispiele zu später und früherer gebundenen Programmieru
 
 Die folgenden Beispiele veranschaulichen, wie einem Entitätsdatensatz mithilfe des späten und frühen Generierung Stils erstellt wird
 
-<!-- TODO make this an include? -->Jedes der Beispiele verwendet eine `svc`-Variable, die eine Instanz einer Klasse darstellt, die Sie auf der Benutzeroberfläche der <xref:Microsoft.Xrm.Sdk.IOrganizationService> implementieren. Weitere Informationen zu Klassen finden Sie unter [Organisationsservice-Benutzeroberfläche](iorganizationservice-interface.md).
+<!-- TODO make this an include? -->
+Jedes der Beispiele verwendet eine `svc`-Variable, die eine Instanz einer Klasse darstellt, die Sie auf<xref:Microsoft.Xrm.Sdk.IOrganizationService> der Benutzeroberfläche implementieren. Weitere Informationen zu Klassen finden Sie unter [Organisationsservice-Benutzeroberfläche](iorganizationservice-interface.md).
 
 > [!NOTE]
 > Jede Entität besitzt ein Attribut mit eindeutigem Bezeichnerwert, den Sie angeben können, wenn Sie eine Entität erstellen. In den meisten Fällen empfiehlt das System, dass Sie diese Option festlegen, da die Werte, die vom System generiert werden, für eine bestmögliche Leistung optimiert werden.
@@ -228,7 +229,7 @@ Weitere Informationen: [DoppelteAbfdra Daten mit dem Organisationsdienst erkenne
 
 Wenn Benutzer neue Datensätze in der Anwendung erstellen, sind sie im Rahmen eines anderen Datensatzes erstellt. So erstellen Sie möglicherweise einen neuen Kontaktdatensatz im Kontext einer Firma. Wenn dies geschieht, werden bestimmte Attributwerte von der Firmaenentität im Kontaktformular kopiert. Dies beschleunigt die Erstellung des neuen verknüpften Datensatzes, da der neue Datensatz einige Standardwerte hat, die festgelegt werden, so dass die Person, die den Datensatz erstellt, diesen nicht bearbeitet muss, um den Wert einzugeben. Sie können die Werte ändern, wenn Sie dies möchten, vor dem Speichern.
 
-Die Werte, die kopiert werden, wenn ein neuer Datensatz erstellt wird, wird gleich erstellt und ist von der verknüpften Konfiguration mit der CDS für Apps-Umgebung gesteuert, sodass sie zwischen den Umgebungen wechseln können. 
+Die Werte, die kopiert werden, wenn ein neuer Datensatz auf diese Weise erstellt wird, wird von der verknüpften Konfiguration mit der Common Data Service-Umgebung gesteuert, sodass sie zwischen den Umgebungen wechseln können. 
 
 Weitere Informationen: 
 - [Entitätsfelder zuordnen](../../../maker/common-data-service/map-entity-fields.md)

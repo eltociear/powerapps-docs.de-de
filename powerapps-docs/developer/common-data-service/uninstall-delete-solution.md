@@ -1,5 +1,5 @@
 ---
-title: Deinstallieren oder Löschen einer Lösung (Common Data Service für Apps) | Microsoft Docs
+title: Deinstallieren oder Löschen einer Lösung (Common Data Service) | Microsoft Docs
 description: Dieses Dokument enthält Beschreibungen zum Deinstallieren und Löschen für verwaltete und nicht verwaltete Lösung in Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018

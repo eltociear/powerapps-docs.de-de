@@ -1,5 +1,5 @@
 ---
-title: 'Kundenentitäten (Konto, Kontakt) (Common Data Service für Apps) | Microsoft Docs'
+title: 'Kundenentitäten (Firma, Kontakt) (Common Data Service) | Microsoft Docs'
 description: 'Die Entitäten Firma und Kontakt in Dynamics 365 werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine Kundenadressenentität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,17 +20,17 @@ search.app:
 <!-- 
 Was Mike Carter
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customer-entities-account-contact
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/customer-entities-account-contact
 
 Refactor so that the links to entity reference are in the body, not just in the See allso.
 Add some h2 sections so it is skimmable
  -->
 
-Die Entitäten *Firma* und *Kontakt* in Common Data Service for Apps werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine *Kundenadressen*entität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.  
+Die Entitäten *Firma* und *Kontakt* in Common Data Service werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine *Kundenadressen*entität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.  
   
 ## <a name="account-entity"></a>Firmenentität
  
-Die der Firmenentität ist eine der Entitäten in CDS for Apps, denen die meisten anderen Entitäten angefügt oder untergeordnet werden. In CDS for Apps steht eine Firma für ein Unternehmen, mit dem die Unternehmenseinheit eine Geschäftsbeziehung unterhält. Informationen, die zu einer Firma erfasst werden, sind alle relevanten Kontaktinformationen, Unternehmensinformationen, Kategorien, Beziehungstypen und Adresseinformationen. Weitere Informationen, die verwendet werden können, sind die folgenden Elemente:  
+Die Firmenentität ist eine der Entitäten in Common Data Service, denen die meisten anderen Entitäten angefügt oder untergeordnet werden. In Common Data Service steht eine Firma für ein Unternehmen, mit dem die Unternehmenseinheit eine Geschäftsbeziehung unterhält. Informationen, die zu einer Firma erfasst werden, sind alle relevanten Kontaktinformationen, Unternehmensinformationen, Kategorien, Beziehungstypen und Adresseinformationen. Weitere Informationen, die verwendet werden können, sind die folgenden Elemente:  
   
 - Eine Firma kann fast jeder anderen Entität übergeordnet sein. Hierzu zählt auch eine andere Firma.  
   
@@ -46,7 +46,7 @@ Weitere Informationen: [Firmenentität](reference/entities/account.md)
   
 ## <a name="contact-entity"></a>Kontakt Entität
 
-In CDS for Apps kann ein Kontakt eine Person, in der Regel ein Individuum, mit dem eine Unternehmenseinheit eine Geschäftsbeziehung wie Kunde, Lieferant oder Kollege unterhält, darstellen. Die Kontaktentität ist eine der Entitäten, mit der die meisten anderen Entitäten verknüpft werden. Ein Kontakt kann eine eigenständige Entität sein. In dieser Entität können Informationen zu beruflichen, persönlichen und familiären Verhältnissen sowie mehrere Adressen enthalten sein. Weitere Informationen: [Kontakt-Entität](reference/entities/contact.md)
+In Common Data Service kann ein Kontakt eine Person, in der Regel ein Individuum, mit dem eine Unternehmenseinheit eine Geschäftsbeziehung wie Kunde, Lieferant oder Kollege unterhält, darstellen. Die Kontaktentität ist eine der Entitäten, mit der die meisten anderen Entitäten verknüpft werden. Ein Kontakt kann eine eigenständige Entität sein. In dieser Entität können Informationen zu beruflichen, persönlichen und familiären Verhältnissen sowie mehrere Adressen enthalten sein. Weitere Informationen: [Kontakt-Entität](reference/entities/contact.md)
   
 Firmen und Kontakte sind Bestandteil der Verwaltung von Kunden und stehen folgendermaßen in Beziehungen zueinander:  
   

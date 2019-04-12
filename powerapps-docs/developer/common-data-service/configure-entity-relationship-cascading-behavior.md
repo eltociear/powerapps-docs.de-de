@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten (Common Data Service für Apps) | Microsoft Docs
-description: 'Konfigurieren Sie in Common Data Service for Apps kaskadierendes Verhalten für eine 1:n-Beziehung , um die Datenintegrität zu erhalten und Geschäftsprozesse zu automatisieren.'
+title: Konfigurieren der Entitätsbeziehungen mit ableitendem Verhalten (Common Data Service) | Microsoft Docs
+description: 'Konfigurieren Sie in Common Data Service kaskadierendes Verhalten für eine 1:n-Beziehung , um die Datenintegrität zu erhalten und Geschäftsprozesse zu automatisieren.'
 services: ''
 suite: powerapps
 documentationcenter: na

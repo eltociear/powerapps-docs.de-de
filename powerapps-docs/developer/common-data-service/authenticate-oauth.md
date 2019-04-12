@@ -1,6 +1,6 @@
 ---
-title: OAuth mit Common Data Service für Apps verwenden (Common Data Service für Apps) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service für Apps durchführen können.'
+title: OAuth mit Common Data Service verwenden (Common Data Service) | Microsoft Docs
+description: 'Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -15,16 +15,16 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-oauth-with-common-data-service-for-apps"></a>OAuth mit Common Data Service für Apps verwenden
+# <a name="use-oauth-with-common-data-service"></a>OAuth mit Common Data Service verwenden
 
 [OAuth 2.0](https://oauth.net/2/) ist das branchenübliche Protokoll für die Autorisierung. Nachdem die Personen Anmeldeinformationen zur Authentifizierung bereitgestellt haben, stellt OAuth fest, ob sie berechtigt sind, auf die Ressourcen zuzugreifen.
 
 Client-Anwendungen müssen die Verwendung von OAuth für den Datenzugriff über die Web-API unterstützen. OAuth ermöglicht eine Zwei-Faktor-Authentifizierung (2FA) oder eine zertifikatsbasierte Authentifizierung für Server-zu-Server-Anwendungsszenarien.
 
-OAuth benötigt für die Authentifizierung einen Identitätsanbieter. Für Common Data Service for Apps ist der Identitätsanbieter Azure Active Directory (AAD). Um sich mit AAD über ein Microsoft-Arbeits- oder Schulkonto zu authentifizieren, verwenden Sie die Azure Active Directory Authentication Libraries (ADAL).
+OAuth benötigt für die Authentifizierung einen Identitätsanbieter. Für Common Data Service ist der Identitätsanbieter Azure Active Directory (AAD). Um sich mit AAD über ein Microsoft-Arbeits- oder Schulkonto zu authentifizieren, verwenden Sie die Azure Active Directory Authentication Libraries (ADAL).
 
 > [!NOTE]
-> In diesem Thema werden allgemeine Konzepte für die Anbindung an CDS für Apps mit OAuth mit den ADAL-Bibliotheken vorgestellt. Dieser Inhalt konzentriert sich darauf, wie ein Entwickler eine Verbindung zu CDS für Apps herstellen kann, nicht aber auf die Funktionsweise von OAuth oder den ADAL-Bibliotheken. Vollständige Informationen zur Authentifizierung finden Sie in der Dokumentation zu Azure Active Directory. [Was ist Authentifizierung](/azure/active-directory/develop/authentication-scenarios) ist ein guter Ausgangspunkt.
+> In diesem Thema werden allgemeine Konzepte für die Anbindung an Common Data Service mit OAuth mit den ADAL-Bibliotheken vorgestellt. Dieser Inhalt konzentriert sich darauf, wie ein Entwickler eine Verbindung mit Common Data Service herstellen kann, nicht aber auf die Funktionsweise von OAuth oder den ADAL-Bibliotheken. Vollständige Informationen zur Authentifizierung finden Sie in der Dokumentation zu Azure Active Directory. [Was ist Authentifizierung](/azure/active-directory/develop/authentication-scenarios) ist ein guter Ausgangspunkt.
 >
 >Die von uns zur Verfügung gestellten Muster sind mit entsprechenden Registrierungswerten vorkonfiguriert, so dass Sie sie ohne Generierung einer eigenen App-Registrierung ausführen können. Wenn Sie eigene Apps veröffentlichen, müssen Sie eigene Registrierungswerte verwenden.
 
@@ -32,7 +32,7 @@ OAuth benötigt für die Authentifizierung einen Identitätsanbieter. Für Commo
 
 Wenn Sie sich über OAuth verbinden, müssen Sie zunächst eine Anwendung in Ihrem Azure AD-Mandant registrieren. Wie Sie Ihre App registrieren sollten, hängt von der Art der App ab, die Sie erstellen möchten.
 
-Beginnen Sie in allen Fällen mit den grundlegenden Schritten zur Registrierung einer App, die im AAD-Thema beschrieben ist: [Schnellstart: Registrieren Sie eine App mit dem Azure Active Directory v1.0-Endpunkt](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app). Für CDS für Apps spezifische Anweisungen , siehe [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory> Erstellen einer Anwendungsregistrierung](walkthrough-register-app-azure-active-directory.md#create-an-application-registration).
+Beginnen Sie in allen Fällen mit den grundlegenden Schritten zur Registrierung einer App, die im AAD-Thema beschrieben ist: [Schnellstart: Registrieren Sie eine App mit dem Azure Active Directory v1.0-Endpunkt](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app). Common Data Service spezifische Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory> Erstellen einer Anwendungsregistrierung](walkthrough-register-app-azure-active-directory.md#create-an-application-registration).
 
 Die Entscheidungen, die in diesem Schritt treffen müssen, hängt größtenteils von der Wahl des Anwendungstyps ab.
 
@@ -50,13 +50,14 @@ Wenn Sie **Web App /API** auswählen, müssen Sie eine **Anmelde-URL** angeben, 
 
 Wenn Sie **Native** wählen, müssen Sie eine Umleitungs-URI bereitstellen. Dies ist eine eindeutige Kennung, an die Azure AD den Benutzer-Agenten in einer OAuth 2.0-Anfrage weiterleitet. Dies ist normalerweise ein Wert, der so formatiert ist: `//app:<guid>`. 
 
-### <a name="giving-access-to-cds-for-apps"></a>Zugriff auf CDS für Apps ermöglichen
+### <a name="giving-access-to-common-data-service"></a>Zugriff auf Common Data Service gewähren
 
 Wenn Ihre Anwendung ein Client ist, der es dem authentifizierten Benutzer ermöglicht, Operationen auszuführen, müssen Sie die Anwendung so konfigurieren, dass die Access Dynamics 365 als Berechtigung von Organisationsbenutzern vergeben wird.
 
 Konkrete Schritte hierzu finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory > Berechtigungen anwenden](walkthrough-register-app-azure-active-directory.md#apply-permissions).
 
-<!-- TODO Verify this --> Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.
+<!-- TODO Verify this -->
+ Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.
 
 ### <a name="enable-implicit-flow"></a>Impliziten Fluss aktivieren
 
@@ -271,7 +272,7 @@ Auch wenn dieses Beispiel <xref:System.Net.Http.HttpClient>.<xref:System.Net.Htt
 
 ## <a name="connect-as-an-app"></a>Als App verbinden
 
-Einige Anwendungen, die Sie erstellen werden, sind nicht dazu gedacht, von einem Benutzer interaktiv ausgeführt zu werden. Beispielsweise können Sie eine Web-Client-Anwendung erstellen, die Operationen mit CDS für Apps-Daten ausführen kann, oder eine Konsolenanwendung, die eine geplante Aufgabe in irgendeiner Form ausführt. 
+Einige Anwendungen, die Sie erstellen werden, sind nicht dazu gedacht, von einem Benutzer interaktiv ausgeführt zu werden. Beispielsweise können Sie eine Web-Client-Anwendung erstellen, die Operationen mit Common Data Service-Daten ausführen kann, oder eine Konsolenanwendung, die eine geplante Aufgabe in irgendeiner Form ausführt. 
 
 Während Sie diese Szenarien mit Anmeldeinformationen für einen normalen Benutzer erreichen könnten, müsste dieses Benutzerkonto eine kostenpflichtige Lizenz verwenden. Dies ist nicht die empfohlene Verfahrensweise.
 
@@ -281,7 +282,7 @@ In diesen Fällen können Sie einen speziellen Anwendungsbenutzer erstellen, der
 
 Um sich als App zu verbinden, benötigen Sie:
  - Eine registrierte App
- - Einen CDS for Apps-Benutzer, der an die registrierte App gebunden ist.
+ - Ein an die registrierte App gebundener Common Data Service-Benutzer
  - Verbinden Sie sich entweder über das Anwendungsgeheimnis oder über einen Zertifikat-Fingerabdruck.
 
 #### <a name="register-your-app"></a>Registrieren Sie die App
@@ -308,15 +309,15 @@ So fügen Sie ein Passwort hinzu:
 
   Die Spalte ganz rechts enthält den Schlüsselwert, nachdem Sie die Konfigurationsänderungen gespeichert haben. Achten Sie darauf, den Schlüssel für die Verwendung in Ihrem Client-Anwendungscode zu kopieren, da er nach dem Verlassen dieser Seite nicht mehr zugänglich ist.
 
-#### <a name="cds-for-apps-user-account-bound-to-the-registered-app"></a>CDS für Apps-Benutzerkonto, das an die registrierte App gebunden ist.
+#### <a name="common-data-service-user-account-bound-to-the-registered-app"></a>An die registrierte App gebundenes Common Data Service-Benutzerkonto
 
-Das erste, was Sie tun müssen, ist, eine benutzerdefinierte Sicherheitsrolle zu erstellen, die definiert, welchen Zugriff und welche Berechtigungen dieses Konto innerhalb des CDS für Apps-Unternehmens hat. Weitere Information finden Sie unter [Erstellen oder Konfigurieren einer benutzerdefinierten Sicherheitsrolle](../../administrator/database-security.md#create-or-configure-a-custom-security-role)
+Das erste, was Sie tun müssen, ist, eine benutzerdefinierte Sicherheitsrolle zu erstellen, die definiert, welchen Zugriff und welche Berechtigungen dieses Konto innerhalb der Common Data Service-Organisation hat. Weitere Information finden Sie unter [Erstellen oder Konfigurieren einer benutzerdefinierten Sicherheitsrolle](https://docs.microsoft.com/power-platform/admin/database-security.md#create-or-configure-a-custom-security-role)
 
 Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie das Benutzerkonto erstellen, das sie verwenden wird.
 
 <!-- Almost exactly the same intructions below can be found in powerapps-docs\developer\common-data-service\use-multi-tenant-server-server-authentication.md -->
 
-#### <a name="manually-create-a-cds-for-apps-application-user"></a>Manuelles Erstellen eines CDS für Apps-Anwendungsbenutzer  
+#### <a name="manually-create-a-common-data-service-application-user"></a>Manuell einen Common Data Service-Anwendungsbenutzer erstellen  
 
  Die Vorgehensweise, um diesen Benutzer zu erstellen, unterscheidet sich vom Erstellen eines lizenzierten Benutzers. Verwenden Sie die folgenden Schritte:  
   
@@ -387,5 +388,5 @@ using (CrmServiceClient svc = new CrmServiceClient(ConnectionStr))
 
 ### <a name="see-also"></a>Siehe auch
 
-[Authentifizierung mit Common Data Service for Apps-Webdienst](authentication.md)<br />
+[Authentifizierung mit Common Data Service-Webdiensten](authentication.md)<br />
 [Authentifizierung mit .NET Framework-Anwendungen](authenticate-dot-net-framework.md)

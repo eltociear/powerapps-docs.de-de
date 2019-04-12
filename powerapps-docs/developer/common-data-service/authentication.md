@@ -1,5 +1,5 @@
 ---
-title: Authentifizierung mit den Common Data Service for Apps-Webservices (Common Data Service for Apps) | Microsoft Docs
+title: Authentifizierung mit Common Data Service-Webservices (Common Data Service) | Microsoft Docs
 description: 'Stellt Authentifizierungsoptionen vor, die vom Software-Framework abhängen, das Sie verwenden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,9 +15,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="authentication-with-common-data-service-for-apps-web-services"></a>Authentifizierung mit Common Data Service for Apps-Webdienste
+# <a name="authentication-with-common-data-service-web-services"></a>Authentifizierung mit Common Data Service-Webdiensten
 
-Wenn Sie Client-Anwendungen erstellen, die CDS for Apps Webdienste verwenden, müssen Sie diese authentifizieren um den Zugriff auf Daten zu erhalten. Wie Sie authentifizieren , ist abhängig vom Software-Framework, das Sie verwenden und vom Webdienst mit dem verbunden werden soll.
+Wenn Sie Client-Anwendungen erstellen, die Common Data Service-Webdienste verwenden, müssen Sie diese authentifizieren um den Zugriff auf Daten zu erhalten. Wie Sie authentifizieren , ist abhängig vom Software-Framework, das Sie verwenden und vom Webdienst mit dem verbunden werden soll.
 
 ## <a name="net-framework-applications"></a>.NET Framework Anwendungen
 
@@ -35,7 +35,7 @@ OAuth ist auch erforderlich, um Folgendes zu unterstützen:
  - Verwendung von geheimen Clientschlüsseln zur Aktivierung von Server-zu-Server-Authentifizierungsszenarien.
  - Cross-Origin Resource Sharing (CORS) zur Anbindung einer Single Page Application (SPA)
 
-Weitere Informationen: [Verwenden des Common Data Service for Apps](authenticate-oauth.md)
+Weitere Informationen: [Verwenden von OAuth mit Common Data Service](authenticate-oauth.md)
 
 ### <a name="office-365"></a>Office 365
 
@@ -49,4 +49,4 @@ Weitere Informationen: [Authentifizierung mit .NET Framework-Anwendungen](authen
 
 Wenn Sie etwas anderes als.NET Framework verwenden, müssen Sie sich mit OAuth authentifizieren und die OData RESTful-Webdienste (Web API und OData Global Discovery Service) verwenden.
 
-Weitere Informationen: [Verwenden des Common Data Service for Apps](authenticate-oauth.md)
+Weitere Informationen: [Verwenden von OAuth mit Common Data Service](authenticate-oauth.md)

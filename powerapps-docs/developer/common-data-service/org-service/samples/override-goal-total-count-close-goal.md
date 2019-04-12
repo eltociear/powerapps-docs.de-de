@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Überschreiben der Zielgesamtanzahl und Schließen des Ziels (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Überschreiben der Zielgesamtanzahl und Schließen des Ziels (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie die Zielgesamtanzahl überschreiben und das Ziel schließen.'
 ms.custom: ''
 ms.date: 10/31/2018

@@ -3,7 +3,7 @@ title: Verbindungsrollen konfigurieren | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
 ---
 # <a name="configure-connection-roles"></a>Verbindungsrollen konfigurieren
 
-Mit Common Data Service für Apps für können Sie **Verbindungen** zwischen Entitäten definieren, ohne eine Entitätsbeziehung zu erstellen. In Modell-angetriebenen Apps können Personen einem benannten Link zwischen Datensätzen erstellen, um eine weniger formelle Beziehung zu erstellen, die keine tatsächliche Entitätsbeziehung erstellt. Einige Beispiele sind *Freund*, *Geschwister*, *Ehegatte*, *Teilnehmer* und *Stakeholder*. Einige Verbindungen können auch reziprok sein wie *Kind* und *Eltern*, *Ehemann* und *Frau* oder *Doktor* und *Patient*.
+Mit Common Data Service können Sie **Verbindungen** zwischen Entitäten definieren, ohne eine Entitätsbeziehung zu erstellen. In Modell-angetriebenen Apps können Personen einem benannten Link zwischen Datensätzen erstellen, um eine weniger formelle Beziehung zu erstellen, die keine tatsächliche Entitätsbeziehung erstellt. Einige Beispiele sind *Freund*, *Geschwister*, *Ehegatte*, *Teilnehmer* und *Stakeholder*. Einige Verbindungen können auch reziprok sein wie *Kind* und *Eltern*, *Ehemann* und *Frau* oder *Doktor* und *Patient*.
 
 Wenn Benutzer eine Verbindung zwischen zwei Datensätzen erstellen, können diese eine Beschreibung und eine zusätzliche Informationen wie z. B. Start- und Enddatum für Beziehungen hinzufügen. Weitere Informationen: [Verbindungen erstellen, um Beziehungen zwischen Datensätzen zu definieren und anzuzeigen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records).
 
@@ -29,7 +29,7 @@ Jeder Benutzer mit Schreibzugriff zur **Verbindungsrollen**-Entität kann defini
 
 ## <a name="view-connection-roles"></a>Verbindungsrollen anzeigen
 
-Es gibt mehrere Standardverbindungsrollen, die in den CDS für Apps konfiguriert werden. Um sie anzuzeigen, wechseln Sie zu Einstellungsbereich. 
+Es gibt mehrere Standardverbindungsrollen, die in Common Data Service konfiguriert werden. Um sie anzuzeigen, wechseln Sie zu Einstellungsbereich. 
 
 ### <a name="navigate-to-the-settings-area"></a>Navigieren Sie zum Einstellungsbereich
 
@@ -91,7 +91,7 @@ Die standardmäßige **Verbindungsrollen-Kategorie**-Werte lauten:
 - VERTRIEBSTEAM
 - Service
 
-Sie können neue Kategorien hinzufügen oder vorhandene ändern, indem Sie die **Kategorie** globalen Optionssatz bearbeiten. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps (Auswahl)](create-edit-global-option-sets.md)
+Sie können neue Kategorien hinzufügen oder vorhandene ändern, indem Sie die **Kategorie** globalen Optionssatz bearbeiten. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)
 
 ### <a name="select-record-types"></a>Datensatztyp auswählen
 
@@ -125,7 +125,7 @@ Wird mehr als einer übereinstimmende Verbindungsrolle konfiguriert, stellen die
 ### <a name="see-also"></a>Siehe auch
 <!-- This is in the basics guide. It needs to be migrated -->
 [Erstellen von Verbindungen zum Festlegen von Beziehungen zwischen Datensätzen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service für Apps (Auswahl)](create-edit-global-option-sets.md)<br />
+[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)<br />
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
 
 

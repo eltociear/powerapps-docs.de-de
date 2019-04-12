@@ -1,5 +1,5 @@
 ---
-title: Quellsteuerelement mit Lösungsdateien (Common Data Service für Apps) | Microsoft Docs
+title: Quellsteuerelement mit Lösungsdateien (Common Data Service) | Microsoft Docs
 description: 'Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem verwendet werden. Nachdem eine Lösungs-ZIP-Datei in einen Ordner extrahiert wurde, fügen Sie einfach die Dateien zu Ihrem Quellcodeverwaltungssystem hinzu. Diese Dateien können dann auf einem anderen Computer synchronisiert werden, wo sie in eine neue identische Lösungs-ZIP-Datei gepackt werden können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -36,7 +36,7 @@ Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem v
   
 1. Entwickler A und Entwickler B arbeiten beide an derselben Lösung.  
   
-2. Auf unabhängigen Computern erhalten beide die neuesten Quellen der Lösung vom Quellsteuerelement, Paket, und importieren eine ZIP-Datei einer nicht verwalteten Lösung in unabhängige "CDS für Apps"-Organisationen.  
+2. Auf unabhängigen Computern erhalten beide die neuesten Quellen der Lösung von der Quellcodeverwaltung, packen und importieren eine nicht verwaltete Lösungs-ZIP-Datei in unabhängige Common Data Service-Organisationen.  
   
 3. Entwickler A passt die "Aktive Kontakte"-Systemansicht und das Hauptformular für die Kontaktentität an.  
   
@@ -88,7 +88,7 @@ Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem v
   
         3.  Wenn die vorherige Änderung als unnötig angesehen werden kann, erlaubt Entwickler B, dass seine Kopie der Datei die Version in der Quellcodeverwaltung überschreibt, und reicht sie ein.  
   
-    Ob in gemeinsam genutzten oder unabhängigen Organisationen, die Team-Entwicklung von "CDS für Apps"-Lösungen erfordert, dass alle, die an einer gemeinsamen Lösung aktiv arbeiten, die Arbeit der anderen Beteiligten kennen. Das SolutionPackager-Tool beseitigt diese Notwendigkeit nicht vollständig, erlaubt aber das einfache Zusammenführen nicht im Konflikt stehender Änderungen auf Quellcodeverwaltungsebene und meldet proaktiv die Komponenten, bei denen Konflikte aufgetreten sind.  
+    Ob in gemeinsam genutzten oder unabhängigen Organisationen, die Team-Entwicklung von Common Data Service-Lösungen erfordert, dass alle, die an einer gemeinsamen Lösung arbeiten, die Arbeit der anderen beteiligten kennen. Das SolutionPackager-Tool beseitigt diese Notwendigkeit nicht vollständig, erlaubt aber das einfache Zusammenführen nicht im Konflikt stehender Änderungen auf Quellcodeverwaltungsebene und meldet proaktiv die Komponenten, bei denen Konflikte aufgetreten sind.  
   
     Die folgenden Abschnitte enthalten die generischen Prozesse für die effektive Verwendung des SolutionPackager-Tools in der Quellcodeverwaltung bei der Entwicklung in Teams. Diese funktionieren gleichermaüen in unabhängigen und in gemeinsam genutzten Entwicklungsorganisationen, obwohl im letzteren Fall der Export und die Extrahierung natürlich alle Änderungen beinhalten, die innerhalb der Lösung vorgenommen wurden, und nicht nur die, die der Entwickler vorgenommen hat, der den Export durchführt. Entsprechend tritt beim Import einer Lösungs-ZIP-Datei das natürliche Verhalten des Überschreibens aller Komponenten auf.  
   
@@ -96,7 +96,7 @@ Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem v
 ## <a name="create-a-solution"></a>Erstellen einer Lösung  
  Die folgende Prozedur identifizeirt die typischen Schritte bei der ersten Erstellung einer Lösung.  
   
-1. Erstellen Sie in einer sauberen Organisation eine Lösung auf dem „CDS für Apps”-Server, und erstellen Sie dann nach Bedarf die Komponenten, oder fügen Sie sie hinzu.  
+1. Erstellen Sie in einer sauberen Organisation eine Lösung auf dem Common Data Service-Server, und erstellen Sie dann nach Bedarf die Komponenten, oder fügen Sie sie hinzu.  
   
 2. Wenn Sie bereit sind zum Einchecken, gehen Sie wie folgt vor.  
   

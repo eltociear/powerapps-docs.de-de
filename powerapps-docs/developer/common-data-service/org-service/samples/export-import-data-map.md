@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Exportieren und importieren von Datenzuordnung  (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Exportieren und importieren von Datenzuordnung (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie Sie eine Datenzuordnung erstellen und diese exportieren'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-export-and-import-a-data-map"></a>Beispiel: Exportieren und Importieren einer Datenzuordnung
 
-Dieses Beispiel zeigt, wie Sie eine Importzuordnung (Datenzuordnung) in Common Data Service für Apps  erstellen, diese als XML-formatierte Daten exportieren, geänderte Zuordnungen importieren und eine neue Importzuordnung in CDS für Apps basierend auf den importierten Zuordnungen erstellen. Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap).
+Dieses Beispiel zeigt, wie Sie eine Importzuordnung (Datenzuordnung) in Common Data Service erstellen, diese als XML-formatierte Daten exportieren, geänderte Zuordnungen importieren und eine neue Importzuordnung in Common Data Service basierend auf den importierten Zuordnungen erstellen. Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap).
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

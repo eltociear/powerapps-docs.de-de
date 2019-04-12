@@ -1,6 +1,6 @@
 ---
-title: Verwenden des Common Data Service for Apps-Organisationsservice (Common Data Service for Apps) | Microsoft Docs
-description: 'Lesen Sie, wie Sie mithilfe des CDS for Apps-Organisationsservice mit Daten und Metadaten arbeiten können.'
+title: Verwenden der Common Data Service-Organisationsservices (Common Data Service) | Microsoft Docs
+description: 'Lesen Sie, wie Sie mithilfe des Common Data Service-Organisationsservice mit Daten und Metadaten arbeiten können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -16,13 +16,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="use-the-common-data-service-for-apps-organization-service"></a>Nutzen des Common Data Service for Apps-Organisationsservice
+# <a name="use-the-common-data-service-organization-service"></a>Nutzen des Common Data Service-Organisationsservice
 
-Der Organisationsservice ist eine von zwei Webdiensten, die Sie zum Arbeiten mit Daten und Metadaten in Common Data Service for Apps verwenden können. Der andere ist die [Web-API](../webapi/overview.md).
+Der Organisationsservice ist eine von zwei Webdiensten, die Sie zum Arbeiten mit Daten und Metadaten in Common Data Service verwenden können. Der andere ist die [Web-API](../webapi/overview.md).
 
 Der Organisationsservice wird für die Verwendung mit dem .NET Framework und den SDK-Assemblys im NuGet-Paket [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) optimiert, um die Klassen für die <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Benutzeroberfläche bereitzustellen, die zum Arbeiten mit Daten und Metadaten unter Verwendung dieses Service erforderlich sind. 
 
-Einige Erweiterungsfunktionen, wie z. B. Plug-Ins und Workflowerweiterungen, sind von dem .NET Framework und den Klassen abhängig, die in diesen Assemblys definiert sind. Deshalb ist der Organisationsservice die einzige Option, wenn diese Methoden zum Erweitern von CDS for Apps verwendet werden.
+Einige Erweiterungsfunktionen, wie z. B. Plug-Ins und Workflowerweiterungen, sind von dem .NET Framework und den Klassen abhängig, die in diesen Assemblys definiert sind. Deshalb ist der Organisationsservice die einzige Option, wenn diese Methoden zum Erweitern von Common Data Service verwendet werden.
 
 ## <a name="organization-service-assemblies"></a>Organisationsserviceassemblys
 

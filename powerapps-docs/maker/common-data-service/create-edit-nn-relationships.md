@@ -1,10 +1,10 @@
 ---
-title: 'Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des PowerApps-Portals – Übersicht | MicrosoftDocs'
+title: 'Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des PowerApps-Portals – Übersicht | MicrosoftDocs'
 description: 'Erfahren Sie, wie Sie N:N-Beziehungen erstellen'
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,8 +37,8 @@ Es gibt zwei Ansicht, die Sie verwenden können, um 1:n (eine-zu-vielen) oder N:
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des PowerApps-Portals](create-edit-nn-relationships-portal.md)|
-|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md) |
+|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des PowerApps-Portals](create-edit-nn-relationships-portal.md)|
+|Lösungs-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Lösungs-Explorers](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
 > Sie können eine neue n: n-Entitätsbeziehung folgendermaßen auch in Ihrer Umgebung erstellen mithilfe des folgenden:
@@ -55,7 +55,7 @@ Sie sollten das PowerApps-Portal verwenden, um Viele-zu-viele (N:N)-Entitätsbez
 ## <a name="see-also"></a>Siehe auch
 
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)<br />
-[Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des PowerApps-Portals](create-edit-nn-relationships-portal.md)<br />
-[Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)<br />
+[Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des PowerApps-Portals](create-edit-nn-relationships-portal.md)<br />
+[Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Lösungs-Explorers](create-edit-nn-relationships-solution-explorer.md)<br />
 [Entwicklerdokumentation: Entitätsbeziehungseignungsmetadaten anpassen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Entwicklerdokumentation: Entitätsbeziehungseignung](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

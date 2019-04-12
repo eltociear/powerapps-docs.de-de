@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen gültiger Statusübergänge (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen gültiger Statusübergänge (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie gültige Statusübergänge abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,5 +1,5 @@
 ---
-title: Erstellen Sie Ihre eigenen Aktionen (Common Data Service for Apps) | Microsoft Docs
+title: Erstellen Sie Ihre eigenen Aktionen (Common Data Service) | Microsoft Docs
 description: 'Aktionen sind angepasste Nachrichten, die halfen, Funktionen von Dynamics 365 Customer Engagement zu erweitern. Erfahren Sie, wie Sie Ihrer eigene geschäftlichen Aktionen erstellen'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,11 +17,11 @@ search.app:
 ---
 # <a name="create-your-own-actions"></a>Erstellen Ihrer eigenen Aktionen
 
-Sie können die Funktionalität von Common Data Service for Apps erweitern, indem Sie benutzerdefinierte Nachrichten, sogenannte *Aktionen*, erstellen. Diese Aktionen verfügen über zugewiesene Antwort-/Anforderungsklassen, und eine Web API-Aktion wird generiert. Aktionen werden in der Regel verwendet, um neue domänenspezifische Funktionen zum Organisationswebdienst hinzuzufügen oder um mehrere Webdienstmeldungsanforderungen einer Organisation zu einer einzelnen Anforderung zu kombinieren. Beispielsweise können Sie in einem Supportcallcenter die Meldungen , Erstellen, Zuweisen und Setstate zur einer einzelnen neuen „Eskalieren“-Meldung kombinieren.  
+Sie können die Funktionalität von Common Data Service erweitern, indem Sie benutzerdefinierte Messages, sogenannte *Aktionen*, erstellen. Diese Aktionen verfügen über zugewiesene Antwort-/Anforderungsklassen, und eine Web API-Aktion wird generiert. Aktionen werden in der Regel verwendet, um neue domänenspezifische Funktionen zum Organisationswebdienst hinzuzufügen oder um mehrere Webdienstmeldungsanforderungen einer Organisation zu einer einzelnen Anforderung zu kombinieren. Beispielsweise können Sie in einem Supportcallcenter die Meldungen , Erstellen, Zuweisen und Setstate zur einer einzelnen neuen „Eskalieren“-Meldung kombinieren.  
   
  Die Geschäftslogik einer Aktion wird mithilfe eines Workflows implementiert. Wenn Sie eine Aktion erstellen, wird der zugeordnete Echtzeitworkflow automatisch registriert, um in Phase 30 (Kernvorgang) der Ausführungspipeline ausgeführt zu werden. Weitere Informationen zu Echtzeitworkflows finden Sie unter [Workflowtypen](/dynamics365/customer-engagement/developer/process-categories).  
   
- Während Aktionen in beiden CDS für Apps unterstützt werden, wird die Erstellung einer Aktion im Code (mit XAML) nur von lokalen und IFD-Bereitstellungen unterstützt. Onlinekunden müssen Aktionen interaktiv in der Webanwendung erstellen.  
+ Während Aktionen in beiden Common Data Service-Diensten unterstützt werden, wird das Erstellen einer Aktion in Code (mit XAML) nur von lokalen und IFD-Bereitstellungen unterstützt. Onlinekunden müssen Aktionen interaktiv in der Webanwendung erstellen.  
   
 <a name="about_actions"></a>   
 
@@ -71,7 +71,7 @@ Sie können die Funktionalität von Common Data Service for Apps erweitern, inde
 
 ## <a name="package-an-action-for-distribution"></a>Packen einer Aktion zur Verteilung
 
- Um Ihre Aktion so zu verteilen, dass sie in eine CDS for Apps-Organisation importiert werden kann, fügen Sie Ihre Aktion einer CDS for Apps-Lösung hinzu. Mit der Webanwendung ist das ganz einfach, indem Sie zu **Einstellungen** > **Anpassungen** > **Lösungen** gehen. Sie können auch Code schreiben, um die Lösung zu erstellen. Weitere Informationen zur Verwendung von Lösungen finden Sie unter [Packen und Verteilen von Erweiterungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).  
+ Um die Aktion zu verteilen, sodass sie in eine Common Data Service-Organisation importiert werden kann, fügen Sie die Aktion zu einer Common Data Service-Lösung hinzu. Mit der Webanwendung ist das ganz einfach, indem Sie zu **Einstellungen** > **Anpassungen** > **Lösungen** gehen. Sie können auch Code schreiben, um die Lösung zu erstellen. Weitere Informationen zur Verwendung von Lösungen finden Sie unter [Packen und Verteilen von Erweiterungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).  
   
 <a name="bkmk_gentypes"></a>
 
@@ -81,13 +81,13 @@ Sie können die Funktionalität von Common Data Service for Apps erweitern, inde
   
 Um das CrmSvcUtil.exe herunterzuladen, siehe [Tools von NuGet herunterladen](download-tools-NuGet.md)
   
- Im folgenden Beispiel wird das Format für die Ausführung von Tools in der Befehlszeile für eine lokale Installation von CDS for Apps gezeigt. Sie stellen die Parameterwerte für die Installation bereit.  
+ Im folgenden Beispiel wird das Format für die Ausführung von Tools in der Befehlszeile für eine lokale Installation von Common Data Service gezeigt. Sie stellen die Parameterwerte für die Installation bereit.  
   
 ```ms-dos  
 CrmSvcUtil.exe /url:http://<serverName>/<organizationName>/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /domain:<domainName> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
 ```  
   
- Im folgenden Beispiel wird das Format für die Ausführung von Tools in der Befehlszeile mit CDS for Apps gezeigt. Sie stellen die geeigneten Parameterwerte für Ihr Konto und Ihren Server bereit.  
+ Im folgenden Beispiel wird das Format für die Ausführung von Tools in der Befehlszeile mit Common Data Service gezeigt. Sie stellen die geeigneten Parameterwerte für Ihr Konto und Ihren Server bereit.  
   
 ```ms-dos  
 CrmSvcUtil.exe /url:https://<organizationUrlName>.api.crm.dynamics.com/XRMServices/2011/Organization.svc /out:<outputFilename>.cs /username:<username> /password:<password> /namespace:<outputNamespace> /serviceContextName:<serviceContextName> /generateActions  
@@ -143,7 +143,7 @@ Die vorhandenen <xref:Microsoft.Xrm.Sdk.IExecutionContext.Depth>-Plattformprüfu
 Wenn einer der Schritte im Echtzeitworkflow der Aktion eine benutzerdefinierte Workflowaktivität ist, wird diese benutzerdefinierte Workflowaktivität innerhalb der isolierten Laufzeitumgebung des Sandkastens ausgeführt und unterliegt dem zweiminütigen Timeoutlimit, ähnlich wie Plug-Ins in Sandkästen verwaltet werden. Es gibt allerdings keine Einschränkungen für die Gesamtzeit, die die Aktion selbst benötigen kann. Wenn eine Aktion an einer Transaktion teilnimmt, bei der Rollback aktiviert ist, gelten außerdem SQL Server-Timeouts.  
 
 > [!TIP]
->  Eine bewährte Vorgehensweise ist, dass lang laufende Operationen außerhalb von CDS for Apps mit asynchronen oder Hintergrundprozessen von .NET ausgeführt werden sollten.  
+>  Eine bewährte Vorgehensweise ist, dass lang laufende Vorgänge außerhalb von Common Data Service mithilfe von asynchronen oder im Hintergrund laufenden .NET-Prozessen ausgeführt werden.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Erstellen von Echtzeitworkflows](/dynamics365/customer-engagement/developer/create-real-time-workflows)   

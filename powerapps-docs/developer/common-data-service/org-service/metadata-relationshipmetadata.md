@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Abrufen der Entitätsbeziehung (Common Data Service für Apps) | Microsoft Docs
+title: Erstellen und Abrufen der Entitätsbeziehung (Common Data Service) | Microsoft Docs
 description: Zeigt Codebeispiele zum Erstellen und Abrufen von Entitätsbeziehungen.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-and-retrieve-entity-relationships"></a>Erstellen und Abrufen von Entitätsbeziehungen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
 
 Dieses Thema zeigt, wie Entitätsbeziehungen erstellt und abgerufen werden.  
   

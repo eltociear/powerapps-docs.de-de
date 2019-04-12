@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Erweiterungen für die Generierung von Codetools (Common Data Service for Apps) | Microsoft Docs
+title: Erstellen von Erweiterungen für die Generierung von Codetools (Common Data Service) | Microsoft Docs
 description: 'Das SDK-Downloadpaket enthält eine Erweiterung für das CrmSvcUtil-Codegenerierungstool, das Sie verwenden können, um Enumerationen für alle Optionssatzwerte, einschließlich globaler Optionssätze, Auswähllisten, Status und Statuswerte zu generieren.'
 ms.custom: ''
 ms.date: 10/31/2018

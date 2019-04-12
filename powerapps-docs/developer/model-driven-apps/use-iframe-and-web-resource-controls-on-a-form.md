@@ -74,7 +74,7 @@ Durch IFRAME- und Webressourcensteuerelemente wird der eingebettete Inhalt von e
  [!INCLUDE[languagecode](../../includes/languagecode.md)]  
 
 > [!NOTE]
->  Es ist empfehlenswert, den Entitätsnamen statt des Typcodes zu verwenden, da der Entitätstypcode für benutzerdefinierte Entitäten möglicherweise je nach CDS für Apps-Organisation verschieden ist.  
+>  Es ist empfehlenswert, den Entitätsnamen statt des Typcodes zu verwenden, da der Entitätstypcode für benutzerdefinierte Entitäten möglicherweise je nach Common Data Service-Organisation verschieden ist.  
 
 ### <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die URL ohne Parameter gezeigt:  

@@ -1,6 +1,6 @@
 ---
-title: Erkennen von doppelten Daten mithilfe des Organisationsservices (Common Data Service für Apps)| Microsoft Docs
-description: 'Der Organisationsservice ermöglicht es Ihnen, doppelte Datensätze im Common Data Service (CDS) für Apps zu erkennen, um die Integrität der Daten zu gewährleisten.'
+title: Erkennen von doppelten Daten mithilfe des Organisationsservices (Common Data Service)| Microsoft Docs
+description: 'Der Organisationsservice ermöglicht es Ihnen, doppelte Datensätze im Common Data Service zu erkennen, um die Integrität der Daten zu gewährleisten.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="detect-duplicate-data-using-the-organization-service"></a>Duplikaterkennung mithilfe des Organisation-Service
 
-Der Common Data Service (CDS) Organisationsservice ermöglicht es Ihnen, doppelte Datensätze zu erkennen, um die Integrität der Daten zu gewährleisten. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mithilfe von Code](../detect-duplicate-data-with-code.md). 
+Der Common Data Service-Organisationsservice ermöglicht es Ihnen, doppelte Datensätze zu erkennen, um die Integrität der Daten zu gewährleisten. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mithilfe von Code](../detect-duplicate-data-with-code.md). 
 
 > [!NOTE]
-> Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. CDS for Apps enthält standardmäßig Duplikaterkennungsregeln für Konten, Kontakte und Leads, nicht aber für andere Arten von Datensätzen. Wenn Sie das System von Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [Duplikatregelentitäten](../duplicaterule-entities.md).
+> Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. Common Data Service enthält standardmäßige Duplikaterkennungsregeln für Firmen, Kontakte und Leads, jedoch nicht für andere Datensatztypen. Wenn Sie das System von Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [Duplikatregelentitäten](../duplicaterule-entities.md).
 
 
 ## <a name="use-retrieveduplicatesrequest-message-to-detect-duplicates-before-you-create-or-update-record"></a>Verwenden Sie die Meldung RetrieveDuplicatesRequest, um Duplikate zu erkennen, bevor Sie einen Datensatz erstellen oder aktualisieren.

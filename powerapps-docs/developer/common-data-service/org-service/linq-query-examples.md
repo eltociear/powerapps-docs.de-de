@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service for Apps) | Microsoft Docs
+title: Linq-Abfragebeispiele (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,7 +15,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service-for-apps"></a>LINQ-Abfragenbeispiele mithilfe von OrganizationServiceContext mit Common Data Service für Apps
+# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service"></a>LINQ-Abfragenbeispiele mithilfe von OrganizationServiceContext mit Common Data Service
 
 Dieses Thema enthält viele Code-Beispiele für INQ-Abfragen.  
   

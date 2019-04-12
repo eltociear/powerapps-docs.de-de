@@ -1,6 +1,6 @@
 ---
-title: Suchdienste (Common Data Service for Apps) | MicrosoftDocs
-description: Ein CDS for Apps-Suchdienst ist entweder über die Web-API oder den Organisationsdienst zugänglich.
+title: Suchdienste (Common Data Service) | MicrosoftDocs
+description: Common Data Service-Suchdienst ist entweder über die Web-API oder den Organisationsdienst zugänglich.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -27,5 +27,5 @@ Ein Suchdienst ist entweder über die Web-API oder den Organisationsdienst zugä
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](webapi/overview.md)<br />
-[Nutzen des Common Data Service for Apps-Organisationsservice](org-service/overview.md)
+[Common Data Service-Web-API verwenden](webapi/overview.md)<br />
+[Nutzen des Common Data Service-Organisationsservice](org-service/overview.md)

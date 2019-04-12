@@ -3,7 +3,7 @@ title: Web API-Abfragedatenbeispiele (clientseitiges JavaScript) | Microsoft Doc
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-query-data-sample-client-side-javascript"></a>Web API-Abfragedatenbeispiele (clientseitiges JavaScript)
 
-Dieses Beispiel veranschaulicht, wie Sie grundlegende Abfragenanforderungen mit der Common Data Service for Apps-Web-API unter Verwendung von clientseitigem JavaScript ausführen  
+Dieses Beispiel veranschaulicht, wie Sie grundlegende Abfragenanforderungen mit der Common Data Service-Web-API unter Verwendung von clientseitigem JavaScript ausführen  
   
 > [!NOTE]
 >  Dieses Beispiel implementiert die Vorgänge, die unter [Web API-Abfragedatenbeispiel](../web-api-query-data-sample.md) beschrieben sind, und nutzt bekannte clientseitige JavaScript-Konstrukte, die unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md) beschrieben sind.  
@@ -33,7 +33,7 @@ Dieses Beispiel veranschaulicht, wie Sie grundlegende Abfragenanforderungen mit 
 
  Dies ist erforderlich, um das Beispiel auszuführen:  
   
-- Rufen Sie die CDS für Apps-Umgebung auf.  
+- Greifen Sie auf die Common Data Service-Umgebung zu.  
   
 - Ein Benutzerkonto mit Rechten zum Import von Lösungen und zur Durchführung von CRUD-Vorgängen (normalerweise eine "Systemadministrator" oder "Systemanpasser" Sicherheitsrolle).  
   
@@ -41,7 +41,7 @@ Dieses Beispiel veranschaulicht, wie Sie grundlegende Abfragenanforderungen mit 
 
 ## <a name="run-this-sample"></a>Beispiel ausführen
 
-Um dieses Beispiel auszuführen, wechseln Sie zu [Web API-Abfragedatenbeispiel für Microsoft CRM (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824050), und laden die Beispielarchivdatei "Microsoft CRM Web API Query Data Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte des Beispiels, und suchen Sie die Datei für die verwaltete WebAPIQueryData_1_0_0_0_managed.zip-Lösung. Importieren Sie die verwaltete Lösung in die CDS for Apps-Organisation, und führen Sie das Beispiel aus. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
+Um dieses Beispiel auszuführen, wechseln Sie zu [Web API-Abfragedatenbeispiel für Microsoft CRM (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824050), und laden die Beispielarchivdatei "Microsoft CRM Web API Query Data Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte des Beispiels, und suchen Sie die Datei für die verwaltete WebAPIQueryData_1_0_0_0_managed.zip-Lösung. Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und führen Sie das Beispiel aus. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
   
 <a name="bkmk_codeSample"></a>
 
@@ -757,7 +757,7 @@ distinct=\"false\" page=\"3\" count=\"4\"> \
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](../overview.md)<br />
+[Common Data Service-Web-API verwenden](../overview.md)<br />
 [Datenabfrage mit Web-API](../query-data-web-api.md)<br />
 [Web API Beispiele](../web-api-samples.md)<br />
 [Web API-Abfragedatenbeispiel](../web-api-query-data-sample.md)<br />

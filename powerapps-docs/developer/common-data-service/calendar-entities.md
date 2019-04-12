@@ -1,5 +1,5 @@
 ---
-title: Kalenderentitäten (Common Data Service for Apps) | Microsoft Docs
+title: Kalender-Entitäten (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie Daten für Kundenservice- und Feiertagskalender mit den Kalenderentitäten speichern können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,7 +21,7 @@ Der Kalenderentität speichert Daten für Kundenservicekalender und Feiertagskal
   
  Ein Kalender beschreibt die Verfügbarkeit eines Service oder einer Ressource. Kalender sind mit `calendarrule`-Datensätzen verknüpft, die Details über die Dauer, die Start- und Endzeiten und wiederkehrende Muster von Ereignissen im Kalender enthalten.  
   
- Es gibt zwei Typen von Kalenderregeln im Common Data Service for Apps:  
+ Es gibt zwei Typen von Kalenderregeln im Common Data Service:  
   
 - **Stamm**: Eine Kalenderregel, die einen inneren Kalender enthält oder geschachtelte (Blatt-) Regeln umfasst. Sie können einen inneren Kalender für eine Stammkalenderregel angeben, indem Sie das `CalendarRule.InnerCalendarId`-Attribut verwenden. Der Attributwert `CalendarRule.InnerCalendarId` einer Stammregel ist mit dem Attributwert `CalendarRule.CalendarId` der zugehörigen Blattregeln identisch.  
   

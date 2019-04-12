@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: CRUD E-Mail-Anlagen <Topic Title> (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: CRUD E-Mail-Anlagen <Topic Title> (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie CRUD-Vorgänge auf E-Mail- Anhänge ausführt werden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,10 +19,10 @@ search.app:
 
 Dieses Beispiel zeigt, wie Sie anhand dieser Methoden eine E-Mail-Anlage erstellen, abrufen, aktualisieren und löschen:
 
-- [IOrganizationService.Create](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9)
-- [IOrganizationService.Retrieve](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9)
-- [IOrganizationService.Update](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.update?view=dynamics-general-ce-9)
-- [IOrganizationService.Delete](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.delete?view=dynamics-general-ce-9)
+- [IOrganizationService.Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9)
+- [IOrganizationService.Retrieve](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9)
+- [IOrganizationService.Update](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.update?view=dynamics-general-ce-9)
+- [IOrganizationService.Delete](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.delete?view=dynamics-general-ce-9)
 
 Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CRUDEmailAttachements) herunterladen.
 

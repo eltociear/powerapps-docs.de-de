@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 1: Füllen Sie das App-Unterordnungsformular auf AppSource aus (Common Data Service for Apps) | Microsoft Docs'
+title: 'Schritt 1: Füllen Sie das App-Unterordnungsformular auf AppSource aus (Common Data Service) | Microsoft Docs'
 description: 'Erfahren Sie, wie Sie ein App Eingabeformular auf AppSource ausfüllen, um einige anfängliche Details für eine App bereitzustellen.'
 ms.custom: ''
 ms.date: 10/31/2018

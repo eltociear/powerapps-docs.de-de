@@ -51,7 +51,7 @@ Wenn Sie eine Visualisierung programmgesteuert erstellen möchten, müssen Sie e
 
  Mehrfachdiagramme ordnen mehrere Werte der (vertikalen) Reihenachse einem einzelnen Wert der (horizontalen) Kategorieachse zu. Der einzige Unterschied zu einem einfachen Seriendiagramm ist, dass in diesen Diagrammen mehrere `<measurecollection>`- und entsprechende `<series>`-Elemente vorhanden sind, die in den XML-Zeichenfolgen angegeben werden. Jedes `<measurecollection>`-Element enthält ein untergeordnetes Element mit der Bezeichnung `<measure>`, das einen Wert auf der (vertikalen) Reihenachse für denselben Wert der (horizontalen) Kategorieachse definiert. Weitere Informationen: [Diagramme verstehen: Zugrunde liegende Daten und Diagrammdarstellung](understand-charts-underlying-data-chart-representation.md).  
   
- Ein Beispiel für Mehrfachdiagramm und die entsprechenden Datenbeschreibungs- und Präsentationsbeschreibungs-XML-Zeichenfolgen finden Sie unter [TODO: Mehrfachseriendiagramm]<!--(sample-charts.md#MultiSeriesChart)-->.
+ Ein Beispiel-Mehrfachdiagramm und die entsprechenden Datenbeschreibungs- und Präsentationsbeschreibungs-XML-Zeichenfolgen finden Sie unter [TODO: Multi-Series Chart].<!--(sample-charts.md#MultiSeriesChart)-->.
   
 <a name="CreateWRVisualization"></a>   
 
@@ -72,7 +72,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Wenn Sie eine Webressourcenvisualisierung erstellen möchten, indem Sie die Dynamics 365 Common Data Service for Apps-Webanwendung verwenden, müssen Sie eine XML-Datei im folgenden Format erstellen und dann **Diagramm importieren** auf dem Menüband verwenden, um die Visualisierung zu importieren.  
+ Wenn Sie eine Webressourcenvisualisierung erstellen möchten, indem Sie die Dynamics 365 Common Data Service-Webanwendung verwenden, müssen Sie eine XML-Datei im folgenden Format erstellen und dann **Diagramm importieren** auf dem Menüband verwenden, um die Visualisierung zu importieren.  
   
 ```xml  
 <visualization>  
@@ -102,4 +102,4 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
  [Aktionenen im Diagramm](actions-visualizations-charts.md)   
  [Beispieldiagramme](sample-charts.md)   
  [Datenvisualisierung und Analysen](customize-visualizations-dashboards.md)   
- [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Diagramms](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart) <!-- TODO need to replace the link with powerapps -->
+ [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Diagramms](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!-- TODO need to replace the link with powerapps -->

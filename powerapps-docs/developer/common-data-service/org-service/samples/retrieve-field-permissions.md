@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen von Feldberechtigungen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen von Feldberechtigungen (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie gesicherte Felder für einen Benutzer abgerufen werden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-field-permissions"></a>Beispiel: Abrufen von Feldberechtigungen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-field-permissions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-field-permissions -->
 
-Dieses Beispiel zeigt das Abrufen von gesicherten Feldern für einen Benutzer gemäß den Schritten, die unter [Feldsicherheitsentitäten](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/field-security-entities) erläutert werden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission) herunterladen.
+Dieses Beispiel zeigt das Abrufen von gesicherten Feldern für einen Benutzer gemäß den Schritten, die unter [Feldsicherheitsentitäten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/field-security-entities) erläutert werden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission) herunterladen.
 
 Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die erforderlichen Benutzer manuell in **Office 365**, um das Beispiel ohne Fehler auszuführen. Erstellen Sie für dieses Beispiel ein Benutzerprofil **wie** unten gezeigt. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 

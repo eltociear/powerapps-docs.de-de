@@ -1,9 +1,9 @@
 ---
 title: Erstellen von Modell-angetriebenen Geschäftsregeln und Empfehlungen | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 03/15/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -24,9 +24,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="tutorial-create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
+# <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
 
-Diese Anleitung zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können dann für Primäre- und Schnellerfassungsformularen angewendet werden, und sie können in den modellgesteuerten Apps, Dynamics 365 Customer Engagement Web-Apps, Dynamics 365 for tablets und Dynamics 365 for Outlook (online oder offline Modus) verwendet werden.
+Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können dann für Primäre- und Schnellerfassungsformularen angewendet werden, und sie können in den modellgesteuerten Apps, Dynamics 365 Customer Engagement Web-Apps, Dynamics 365 for tablets und Dynamics 365 for Outlook (online oder offline Modus) verwendet werden.
 
 > [!NOTE]
 > Um eine Geschäftsregel für eine Entität zu definieren, damit diese für alle Formulare und Server angewendet wird, siehe [Geschäftsregel für eine Enität erstellen](/powerapps/maker/common-data-service/data-platform-create-business-rule).
@@ -129,7 +129,13 @@ Diese Anleitung zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um F
 ## <a name="localize-error-messages-used-in-business-rules"></a>Lokalisieren der Fehlermeldungen in Geschäftsregeln  
  Sind mehrere Sprache für Ihre Organisation bereitgestellt, können Sie Ihre Fehlermeldungen lokalisieren. Bei jeder Meldung generiert das System eine Beschriftung. Wenn Sie die Übersetzungen in Ihrer Organisation exportieren, können Sie lokalisierte Versionen Ihrer Meldungen hinzufügen und diese Beschriftungen wieder in das System importieren, so dass Personen, die andere Sprachen als Ihre Ausgangssprache verwenden, die übersetzten Meldungen sehen.  
 
-## <a name="is-your-business-rule-not-firing-for-a-form"></a>Löst ihre Geschäftsregel kein Ereignis eines Formulars aus?
+## <a name="common-issues"></a>Allgemeine Probleme
+Dieser Abschnitt beschreibt allgemeine Probleme, die auftreten können, wenn Sie Unternehmensregeln verwenden. 
+
+### <a name="full-name-field-not-supported-with-unified-interface-apps"></a>Das Feld "Name" wird für Apps mit einheitlicher Oberfläche nicht unterstützt.
+Aktionen oder Bedingungen, die ein Feld vom Typ **Vollständiger Name** verwenden, werden in Apps mit einheitlicher Oberfläche nicht unterstützt.  Alternativ können Sie Aktionen oder Bedingungen mit den Feldern **Vorname** (firstname) und **Nachname** (lastname) verwenden. 
+
+### <a name="is-your-business-rule-not-firing-for-a-form"></a>Löst ihre Geschäftsregel kein Ereignis eines Formulars aus?
 Eine Geschäftsregel darf nicht ausgeführt werden, weil das in der Geschäftsregel referenzierte Feld nicht im Formular enthalten ist. 
 1.  Öffnen Sie den Projektmappen-Explorer. Erweitern Sie die gewünschte Entität, und wählen Sie dann **Formulare**. 
 2.  Öffnen Sie das gewünschte Formular und wählen Sie dann im Formulardesigner-Menüband **Geschäftsregeln**. 

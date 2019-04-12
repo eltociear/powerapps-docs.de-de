@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service for Apps) | Microsoft Docs
+title: Verwenden der QueryByAttribute-Klasse (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,4 +17,4 @@ search.app:
 ---
 # <a name="use-the-querybyattribute-class"></a>Verwenden der QueryByAttribute-Klasse
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/use-querybyattribute-class -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-querybyattribute-class -->

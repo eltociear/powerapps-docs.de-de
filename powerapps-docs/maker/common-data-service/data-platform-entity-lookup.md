@@ -88,7 +88,7 @@ Momentan ist dies nur für das erweiterte Menü verfügbar. Klicken Sie in der P
 Wenn Sie [automatisch eine App erstellen](../canvas-apps/data-platform-create-app.md), die aus einer Entität erstellt wird, die ein Suchfeld enthält, wird es als **Dropdown**-Steuerelement angezeigt, das Daten im Feld **Primärer Name** der Entität enthält.
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Hinzufügen von 1:N- und N:N-Beziehungen für Canvas-Anwendungen
-Verwenden Sie die Funktion **Relate**, um zwei Datensätze über eine One-to-Many oder Many-to-Many Beziehung im Common Data Service (CDS) for Apps zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
+Verwenden Sie die Funktion **Relate**, um zwei Datensätze über eine 1:n- oder n:n-Beziehung im Common Data Service zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Generieren einer App mit einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app.md)

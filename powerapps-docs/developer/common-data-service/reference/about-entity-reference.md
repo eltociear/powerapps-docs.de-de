@@ -1,5 +1,5 @@
 ---
-title: Über die Entitätsreferenz (Common Data Service for Apps)| Microsoft Docs
+title: Über die Entitätsreferenz (Common Data Service) | Microsoft Docs
 description: 'Verwenden Sie diese Referenz, um die verfügbaren Vorgänge, die für bestimmte Entitäten, die Standardattributattribute, Attribute jeder Entität und Beziehungen zwischen Entitäten ausgeführt werden können, zu verstehen.'
 services: ''
 suite: powerapps
@@ -35,7 +35,7 @@ Verwenden Sie diese Referenz, um die verfügbaren Vorgänge, die für bestimmte 
 > - Die Entität unterstützt eine Art direkten Datenmodifikationsvorgang.
 >    - Dies schließt Entitäten aus, mit denen Sie nicht direkt arbeiten können. 
 >
-> Alle Entitätsmetadateninformationen für Ihre Umgebung finden Sie unter: [CDS for Apps-Entwicklerhandbuch: Metadaten für Ihr Unternehmen durchsuchen](/dynamics365/customer-engagement/developer/browse-your-metadata).
+> Alle Entitätsmetadateninformationen für Ihre Umgebung finden Sie im [Common Data Service-Entwicklerhandbuch: Metadaten für Ihr Unternehmen durchsuchen](/dynamics365/customer-engagement/developer/browse-your-metadata).
 
 
 ## <a name="entity-properties"></a>Entitätseigenschaften
@@ -73,7 +73,7 @@ Für jede 1: n-Beziehung sind folgende Eigenschaften enthalten:
 |`ReferencingAttribute`|Der logische Name des Attributs in der zugehörigen Entität, das einen Verweis auf den Primärschlüssel der primären Entität enthält.|
 |`IsHierarchical`|Ob die Beziehung eine auf sich selbst verweisende hierarchische Beziehung darstellt|
 |`IsCustomizable`|Ob die Eigenschaften der Beziehung geändert werden können.|
-|`ReferencedEntityNavigationPropertyName`|Der Name der von der Web-API-Sammlung bewerteten Navigationseigenschaft für diese Beziehung.<br />Weitere Informationen:[Common Data Service for Apps Entwicklerhandbuch Navigationseigenschaften](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
+|`ReferencedEntityNavigationPropertyName`|Der Name der von der Web-API-Sammlung bewerteten Navigationseigenschaft für diese Beziehung.<br />Weitere Informationen:[Common Data Service-Entwicklerhandbuch – Navigationseigenschaften](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
 |`AssociatedMenuConfiguration`|Daten, die von modellgesteuerten Apps verwendet werden, um zu steuern, ob und wie auf die zugehörigen Entitätsdaten in der Benutzeroberfläche von der primären Entität aus zugegriffen werden kann.|
 |`CascadeConfiguration`|Daten, die beschreiben, welche Vorgänge an der übergeordneten Entität ausgeführt werden, die bis zu den verknüpften Entitäten kaskadiert werden.<br />Weitere Informationen: [Konfiguration kaskadieren](../entity-relationship-metadata.md#cascade-configuration)|
 
@@ -88,7 +88,7 @@ Für jede n: n-Beziehung sind folgende Eigenschaften enthalten:
 |`IntersectEntityName`|Der logische Name der überschneidenden Entität , die diese n: n-Beziehung unterstützt|
 |`Entity1LogicalName`|Der logische Name der ersten Entität in der Beziehung.|
 |`Entity1IntersectAttribute`|Der logische Name des Attributs der sich überschneidenden Entität, das eine Referenz auf den Primärschlüssel der ersten Entität enthält.|
-|`Entity1NavigationPropertyName`|Der Name der von der Web-API-Sammlung bewerteten Navigationseigenschaft für diese Beziehung.<br />Weitere Informationen: [Common Data Service for Apps Entwicklerhandbuch Navigationseigenschaften](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
+|`Entity1NavigationPropertyName`|Der Name der von der Web-API-Sammlung bewerteten Navigationseigenschaft für diese Beziehung.<br />Weitere Informationen: [Common Data Service-Entwicklerhandbuch – Navigationseigenschaften](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#navigation-properties)|
 |`Entity1AssociatedMenuConfiguration`|Daten, die von modellgesteuerten App verwendet werden, um zu steuern, ob und wie auf die ersten Entitätsdaten in der Benutzeroberfläche von der zweiten Entität aus zugegriffen werden kann.|
 |`Entity2LogicalName`|Der logische Name der zweiten Entität in der Beziehung.|
 |`Entity2IntersectAttribute`|Der logische Name des Attributs der sich überschneidenden Entität, das eine Referenz auf den Primärschlüssel der zweiten Entität enthält.|

@@ -1,6 +1,6 @@
 ---
 title: Befehlsleisten- oder Menübandpräsentation (modellgesteuerte Apps) | Microsoft Docs
-description: 'Daten, die Befehle in Common Data Service for Apps definieren, können abhängig vom Client und von den Unterschieden bezüglich dessen, wie einige Entitäten behandelt werden, auf verschiedene Weisen dargestellt werden. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.'
+description: 'Daten, die Befehle in Common Data Service definieren, können auf verschiedene Weisen dargestellt werden, abhängig vom Client und von den Unterschieden in der Behandlung einige Entitäten. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.'
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="command-bar-or-ribbon-presentation"></a>Darstellen von Befehlsleisten und Menübändern
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/command-bar-ribbon-presentation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/command-bar-ribbon-presentation -->
 
-Daten, die Befehle in Common Data Service for Apps definieren, können abhängig vom Client und von den Unterschieden bezüglich dessen, wie einige Entitäten behandelt werden, auf verschiedene Weisen dargestellt werden. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.
+Daten, die Befehle in Common Data Service definieren, können auf verschiedene Weisen dargestellt werden, abhängig vom Client und von den Unterschieden in der Behandlung einige Entitäten. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.
   
 <a name="BKMK_DifferentPresentations"></a>   
 ## <a name="different-presentations-of-commands"></a>Verschiedene Darstellungen von Befehlen  

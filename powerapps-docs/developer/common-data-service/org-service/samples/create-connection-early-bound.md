@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen einer Verbindungsrolle (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Erstellen einer Verbindungsrolle (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel veranschaulicht, wie eine Verbindungsrolle erstellt wird.'
 ms.custom: ''
 ms.date: 10/31/2018

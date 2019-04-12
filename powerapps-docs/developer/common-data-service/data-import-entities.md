@@ -1,5 +1,5 @@
 ---
-title: Datenimportentitäten (Common Data Service für Apps) | Microsoft Docs
+title: Datenimportentitäten (Common Data Service) | Microsoft Docs
 description: 'Listet die Datenimportentitäten für die Erstellung von Datenzuordnungen auf, die für Konfiguration und Ausführung von Datenimporten und die Protokollierung von Fehlerinformationen verwendet werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="data-import-entities"></a>Datenimportentitäten
 
-Die Common Data Service for Apps-Datenimportentitäten werden für die Erstellung von Datenzuordnungen, die Konfiguration und Ausführung von Datenimporten und die Protokollierung von Fehlerinformationen verwendet.  
+Die Common Data Service-Datenimportentitäten werden für die Erstellung von Datenzuordnungen, die Konfiguration und Ausführung von Datenimporten und die Protokollierung von Fehlerinformationen verwendet.  
 
  Die folgende Tabelle enthält die Entitäten, die verwendet werden, um Importvorgänge zu konfigurieren und auszuführen, sowie um Fehler zu protokollieren.  
 
@@ -33,10 +33,10 @@ Die Common Data Service for Apps-Datenimportentitäten werden für die Erstellun
 |                    Anzeigename der Entität                     |                                                                                                                      Beschreibung                                                                                                                       |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                       importmap (Datenzuordnung)                        |                                                                                                           Die Datenzuordnung, die für den Import verwendet wird.                                                                                                            |
-|                  columnmapping (Spaltenzuordnung)                   |                                                           Zuordnung zwischen einer Spalte in der Quelldatei und einem Zielattribut in CDs for Apps.                                                           |
+|                  columnmapping (Spaltenzuordnung)                   |                                                           Zuordnung zwischen einer Spalte in der Quelldatei und einem Zielattribut in Common Data Service.                                                           |
 |                  lookupmapping (Suchzuordnung)                   |       Zuordnung zwischen einer Spalte in der Quelldatei oder einer Ausgabe einer komplexen Transformation und einem Zielattribut vom Typ <xref:Microsoft.Xrm.Sdk.EntityReference>. Dies wird in Verbindung mit Spaltenzuordnung oder komplexer Transformationszuordnung verwendet.        |
-|                   ownermapping (Besitzerzuordnung)                    |                                                             Zuordnung zwischen einem in der Quelldatei angegebenen Benutzer und einem Benutzer in CDS for Apps.                                                             |
-|                picklistmapping (Auswahllistenzuordnung)                 | Zuordnung zwischen einer Spalte in der Quelldatei und einem Zielattribut vom Typ <xref:Microsoft.Xrm.Sdk.OptionSetValue>, Boolescher Wert, Zustand oder Status in CDS for Apps. In Verbindung mit Spaltenzuordnung verwendet. |
+|                   ownermapping (Besitzerzuordnung)                    |                                                             Zuordnung zwischen einem angegebenen Benutzer in der Quelldatei und einem Benutzer in Common Data Service.                                                             |
+|                picklistmapping (Auswahllistenzuordnung)                 | Zuordnung zwischen einer Spalte in der Quelldatei und einem Zielattribut vom Typ <xref:Microsoft.Xrm.Sdk.OptionSetValue>, Boolescher Wert, Zustand oder Status in Common Data Service. In Verbindung mit Spaltenzuordnung verwendet. |
 |          transformationmapping (Transformationszuordnung)           |                                                                                                            Komplexe Transformationszuordnung.                                                                                                             |
 | transformationparametermapping (Transformationsparameterzuordnung) |                                                                                           Parameterzuordnung, die in der komplexen Transformationszuordnung verwendet wird.                                                                                            |
 
@@ -46,13 +46,15 @@ Die Common Data Service for Apps-Datenimportentitäten werden für die Erstellun
  [ImportFile-Entität](reference/entities/importfile.md)   
  [ImportLog-Entität](reference/entities/importlog.md)   
  [ImportMap-Entität](reference/entities/importmap.md)   
- <!-- jdaly These links will have content when we re-gen docs after bug 689487 is checked in. START --> [ColumnMapping-Entität](reference/entities/columnmapping.md)   
+ <!-- jdaly These links will have content when we re-gen docs after bug 689487 is checked in. START -->
+ [ColumnMapping-Entität](reference/entities/columnmapping.md)   
  [LookupMapping-Entität](reference/entities/lookupmapping.md)   
  [OwnerMapping-Entität](reference/entities/ownermapping.md)   
  [PicklistMapping-Entität](reference/entities/picklistmapping.md)   
  [TransformationMapping-Entität](reference/entities/transformationmapping.md)    
  [TransformationParameterMapping-Entität](reference/entities/transformationparametermapping.md)   
- <!-- jdaly These links will have content  when we re-gen docs after bug 689487 is checked in. END --> [Beispiel: Exportieren und Importieren einer Datenzuordnung](/dynamics365/customer-engagement/developer/sample-export-import-data-map)   
+ <!-- jdaly These links will have content  when we re-gen docs after bug 689487 is checked in. END -->
+ [Beispiel: Exportieren und Importieren einer Datenzuordnung](/dynamics365/customer-engagement/developer/sample-export-import-data-map)   
  [Erstellen von Datenzuordnungen für den Import](create-data-maps-for-import.md)<br />
  [Hinzufügen von Transformationszuordnungen für den Import](add-transformation-mappings-import.md)<br />
  [Konfiguration des Datenimports](configure-data-import.md)<br />

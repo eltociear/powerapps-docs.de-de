@@ -1,10 +1,10 @@
 ---
-title: Web-API-Typen und -vorgänge (Common Data Service für Apps) | Microsoft Docs
+title: Web-API-Typen und -vorgänge (Common Data Service) | Microsoft Docs
 description: 'Dieses Thema beschreibt, was für Sie verfügbar ist, um die Web-API vis-a-vis zu verwenden. Es informiert über wichtige Themen und darüber, wie Sie benötigte Informationen in der Dokumentation finden, die aus Service- und Metadaten-Dokumenten erstellt wurde und aus der Dokumentation zu Systementitätstypen, Funktionen und Aktionen'
 ms.custom: ''
 ms.date: 02/05/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -166,7 +166,7 @@ Standardmäßig entspricht der Entitätssetname dem <xref href="Microsoft.Dynami
 
 ### <a name="alternate-keys"></a>Alternativschlüssel
 
-Obwohl Common Data Service für Apps das Erstellen von Alternativschlüsseln zulässt, kann nur der Primärschlüssel in den Standardentitäten gefunden werden.  
+Obwohl Common Data Service das Erstellen von Alternativschlüsseln zulässt, kann nur der Primärschlüssel in den Standardentitäten gefunden werden.  
   
  Keine dieser Systementitäten hat definierte Alternativschlüssel. Wenn Sie Alternativschlüssel für eine Entität definieren, werden diese im `$metadata` `EntityType`-Element als eine `Annotation` wie die folgende eingeschlossen:  
   
@@ -233,7 +233,7 @@ Jede Eigenschaft kann auch Beschränkungen haben, ob sie aktualisiert wird. Dies
 
 ### <a name="primitive-types"></a>Primitive Typen
  
-OData unterstützt eine Vielzahl von Datentypen, aber Common Data Service für Apps verwendet nicht alle davon. Die folgende Tabelle beschreibt, wie "CDS für Apps"-Organisationsservicetypen zu primitiven OData-Typen zugeordnet werden.  
+OData unterstützt eine Vielzahl von Datentypen, aber Common Data Service verwendet nicht alle davon. Die folgende Tabelle beschreibt, wie Common Data Service-Organisationsservicetypen primitiven OData-Typen zugeordnet werden.  
   
 |Organisationsservicetype|Web API Typ|Beschreibung|  
 |-------------------------------|------------------|-----------------|  
@@ -373,6 +373,6 @@ Ein normale überschneidene Entität hat nur die folgenden vier grundlegenden Ei
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
-[Authentifizierung beim Common Data Service für Apps mit der Web API](authenticate-web-api.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
+[Authentifizierung beim Common Data Service mit der Web-API](authenticate-web-api.md)<br />
 [Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)

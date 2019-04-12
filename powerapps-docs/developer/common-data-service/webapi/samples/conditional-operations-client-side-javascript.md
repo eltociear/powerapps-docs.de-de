@@ -1,10 +1,10 @@
 ---
-title: Beispiel bedingter Web-API-Operationen (clientseitiges JavaScript) (Common Data Service for Apps) | Microsoft Docs
-description: 'Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service for Apps-Web-API und clientseitigem JavaScript ausführen'
+title: Beispiel bedingter Web-API-Operationen (clientseitiges JavaScript) (Common Data Service) | Microsoft Docs
+description: 'Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service-Web-API und clientseitigem JavaScript ausführen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample-client-side-javascript"></a>Beispiele bedingter Web API-Operationen (clientseitiges JavaScript)
 
-Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service for Apps-Web-API unter Verwendung von clientseitigem JavaScript ausführen  
+Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service-Web-API mit clientseitigem JavaScript ausführen.  
   
 > [!NOTE]
 >  Dieses Beispiel implementiert die Vorgänge, die unter [Beispiel bedingter Web-API-Operationen](../web-api-conditional-operations-sample.md) beschrieben sind und nutzt bekannte clientseitige -JavaScript Konstrukte, die unter [Web-API-Beispiele (Clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md) beschrieben sind.  
@@ -34,7 +34,7 @@ Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Dat
 
  Dies ist erforderlich, um das Beispiel auszuführen:  
   
--   Zugriff auf CDS for Apps online Version 8.0 oder höher.  
+-   Zugriff auf Common Data Service, Online-Version 8.0 oder höher.  
   
 -   Ein Benutzerkonto mit Rechten zum Import von Lösungen und zur Durchführung von CRUD-Vorgängen (normalerweise eine "Systemadministrator" oder "Systemanpasser" Sicherheitsrolle).  
   
@@ -42,7 +42,7 @@ Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Dat
  
 ## <a name="run-this-sample"></a>Beispiel ausführen
 
-Um dieses Beispiel auszuführen, wechseln Sie zu [Microsoft CRM – Beispiel für bedingte Operationen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824046) und laden die Beispieldatei "CRM Web API Conditional Operations Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte und suchen Sie die verwaltete Lösung "WebAPIConditionalOperations_1_0_0_0_managed.zip". Importieren Sie die verwaltete Lösung in die CDS for Apps-Organisation, und zeigen Sie die Lösungskonfigurationsseite an, um das Beispiel auszuführen. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
+Um dieses Beispiel auszuführen, wechseln Sie zu [Microsoft CRM – Beispiel für bedingte Operationen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824046) und laden die Beispieldatei "CRM Web API Conditional Operations Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte und suchen Sie die verwaltete Lösung "WebAPIConditionalOperations_1_0_0_0_managed.zip". Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und zeigen Sie die Lösungskonfigurationsseite an, um das Beispiel auszuführen. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
   
 <a name="bkmk_sampleCode"></a>
 
@@ -441,7 +441,7 @@ Sdk.startSample = function () {
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](../overview.md)<br />
+[Common Data Service-Web-API verwenden](../overview.md)<br />
 [Bedingte Vorgänge mithilfe der Web-API ausführen](../perform-conditional-operations-using-web-api.md)<br />
 [Web API Beispiele](../web-api-samples.md)<br />
 [Beispiel bedingter Web-API-Operationen](../web-api-conditional-operations-sample.md)<br />

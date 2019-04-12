@@ -1,10 +1,10 @@
 ---
-title: 'Beispiel bedingter Web-API-Operationen (C#) (Common Data Service für Apps) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service for Apps-Web-API und C# ausführen'
+title: 'Beispiel für bedingte Web-API-Vorgänge (C#) (Common Data Service) | Microsoft Docs'
+description: 'Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service-Web-API und C# ausführen'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,16 +22,16 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample-c"></a>Beispiel bedingter Web-API-Operationen (C#)
 
-Dieses Beispiel veranschaulicht, wie Sie bedingte Vorgänge mit der CDS for Apps-Web-API und C# ausführen.  
+Dieses Beispiel veranschaulicht, wie Sie bedingte Operationen mit der Common Data Service-Web-API und C# ausführen.  
   
 > [!NOTE]
-> Dieses Beispiel implementiert den Common Data Service für Apps-Operationen und -Konsolenausgaben, der in [Beispiel bedingter Web-API-Operationen](../web-api-conditional-operations-sample.md) beschrieben ist, und verwendet die in [Web API Beispiele (C#)](../web-api-samples-csharp.md) beschriebenen gemeinsamen C#-Konstrukte.  
+> Dieses Beispiel implementiert die Common Data Service-Operationen und -Konsolenausgaben, die in [Beispiel bedingter Web-API-Operationen](../web-api-conditional-operations-sample.md) beschrieben sind, und verwendet die in [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) beschriebenen gemeinsamen C#-Konstrukte.  
   
 <a name="bkmk_Prereqs"></a>
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die Voraussetzungen für alle CDS for Apps-Web-API C#-Beispiele werden im Abschnitt [Voraussetzungen](../web-api-samples-csharp.md#bkmk_prerequisites) des übergeordneten Themas [Web API Beispiele (C#)](../web-api-samples-csharp.md) aufgeführt.  
+Die Voraussetzungen für alle C#-Beispiele der Common Data Service-Web-API sind im Abschnitt [Voraussetzungen](../web-api-samples-csharp.md#bkmk_prerequisites) des übergeordneten Themas [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) beschrieben.  
   
 <a name="bkmk_RunSample"></a>
  
@@ -42,7 +42,7 @@ Gehen Sie zu [Web API Conditional Operations Sample (C#)](https://github.com/Mic
 |Datei|Beschreibung|  
 |----------|-----------------|  
 |SampleProgram.cs|Enthält den primären Quellcode für dieses Beispiel.|  
-|App.config|Die Anwendungskonfigurationsdatei, die Platzhalter für CDS for Apps-Server-Verbindungsinformationen enthält. Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Wenn Sie Verbindungsinformationen für ein Sample konfigurieren, können Sie die anderen Samples mit der gleichen Konfiguration ausführen.|  
+|App.config|Die Konfigurationsdatei der Anwendung, die Platzhalterinformationen der Common Data Service-Serververbindung enthält. Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Wenn Sie Verbindungsinformationen für ein Sample konfigurieren, können Sie die anderen Samples mit der gleichen Konfiguration ausführen.|  
 |SampleHelper.cs|Enthält den Helfercode, der bei der Ausführung allgemeiner Aufgaben wie Konfiguration, Authentifizierung und `HTTP`-Antwortfehlerbehandlung hilft. <br/> Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Es enthält Hilfsmethoden zur Verwaltung von Ausnahmen und das OAuth Token. Weitere Informationen zu den Methoden in dieser Datei finden Sie im Beispiel der Simple Web API.|
 |SampleMethod.cs|Enthält alle Methoden, die den Quellcode im Beispiel unterstützen. In dieser Datei können Funktionen definiert werden, die in SampleProgram.cs verwendet werden. |
 |ConditionalOperations.sln<br /> ConditionalOperations.csproj<br /> Packages.config<br /> AssemblyInfo.cs|Die Standard-Visual Studio 2017-Lösung, das Projekt, das NuGet-Paket und Assemblyinformationsdateien für dieses Beispiel.|  
@@ -51,7 +51,7 @@ Gehen Sie zu [Web API Conditional Operations Sample (C#)](https://github.com/Mic
   
 1. Erstellen Sie die Lösung (**Erstellen** > **Lösung erstellen**). Dies sollte alle erforderlichen NuGet-Pakete automatisch herunterladen und aktualisieren.  
   
-1. Bearbeiten Sie die Datei "App.Config" in der Lösung, um Ihre CDS for Apps-Serverinstanz anzugeben, mit der Sie dieses Beispiel ausführen wollen.  
+1. Bearbeiten Sie die Datei "App.Config" in der Lösung, um Ihre Common Data Service-Serverinstanz anzugeben, mit der Sie dieses Beispiel ausführen wollen.  
   
 1. Führen Sie das Projekt aus.  Alle Beispielprojekte sind für die Ausführung im Debugmodus konfiguriert.  
   
@@ -402,7 +402,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](../overview.md)<br />
+[Common Data Service-Web-API verwenden](../overview.md)<br />
 [Bedingte Vorgänge mithilfe der Web-API ausführen](../perform-conditional-operations-using-web-api.md)<br />
 [Web API Beispiele](../web-api-samples.md)<br />
 [Beispiel bedingter Web-API-Operationen](../web-api-conditional-operations-sample.md)

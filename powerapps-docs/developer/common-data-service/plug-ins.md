@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen (Common Data Service for Apps) | Microsoft Docs
-description: 'Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service for Apps hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.'
+title: Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen (Common Data Service) | Microsoft Docs
+description: 'Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.'
 ms.custom: ''
 ms.date: 1/23/2019
 ms.reviewer: ''
@@ -17,10 +17,10 @@ search.app:
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen
 
-Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service for Apps hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.
+Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.
 
 > [!IMPORTANT]
-> Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in CDS for Apps](../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../maker/common-data-service/cds-processes.md)<br/><br/>
 > Verwenden Sie Plug-Ins, wenn ein deklarativer Prozess nicht Ihre Bedingung erfüllt.
 
 Die Klassen im Assembly, die für einen Schritt registriert werden können, müssen die <xref:Microsoft.Xrm.Sdk.IPlugin>-Benutzeroberfläche bereitstellen. Diese Schnittstelle unterstützt eine einzelne Methode: <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>. Wenn ein Ereignis auftritt, für das eine Klasse registriert ist, werden kontextbezogene Daten an die Methode `Execute` übergeben. Innerhalb der `Execute`-Methode können Sie Folgendes tun:

@@ -22,7 +22,7 @@ search.app:
 
 # <a name="define-ribbon-display-rules"></a>Definieren von Menüband-Anzeigeregeln
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
 
 Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definieren, die steuern, wann die Menübandelemente angezeigt werden.  
 
@@ -181,7 +181,7 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
 - NoRelationship  
 
   `<SkuRule>`  
-  Verwenden Sie diese Art von Regel, um ein Menübandelement für eine bestimmte SKU-Version von Common Data Service for Apps wie folgt anzuzeigen:  
+  Verwenden Sie diese Art von Regel, um wie folgt ein Menübandelement für eine bestimmte SKU-Version von Common Data Service anzuzeigen:  
 
 - OnPremise  
 

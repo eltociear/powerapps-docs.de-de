@@ -1,10 +1,10 @@
 ---
-title: Nutzen der Web-API mit Metadaten (Common Data Service für Apps) | Microsoft Docs
+title: Nutzen der Web-API mit Metadaten (Common Data Service) | Microsoft Docs
 description: 'Dieser Abschnitt enthält Anweisungen dazu, wie die Web-API mit Entitätstypen verwendet wird, die in der WEB-API-Metadaten-EntityType-Referenz enthalten sind.'
 ms.custom: ''
 ms.date: 11/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -63,5 +63,5 @@ Sie können feststellen, ob Entitäten sich für die Teilnahme an einer Beziehun
 
 <!-- TODO [Metadata and data models](../metadata-data-models.md)<br /> -->
 [Durchsuchen Sie Metadaten für die Organisation](../browse-your-metadata.md)<br />
-<!--  TODO [Use the Organization service with Common Data Service for Apps metadata](../org-service/use-organization-service-metadata.md)<br /> -->
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)
+<!--  TODO [Use the Organization service with Common Data Service metadata](../org-service/use-organization-service-metadata.md)<br /> -->
+[Common Data Service-Web-API verwenden](overview.md)

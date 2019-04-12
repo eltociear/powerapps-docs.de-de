@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen, abrufen, aktualisieren und löschen (spät gebunden) (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Erstellen, abrufen, aktualisieren und löschen (spät gebunden) (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Entität-Klasse mit später Bindung.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="sample-late-bound-entity-operations"></a>Beispiel: Spät gebundene Entitätsvorgänge
 
-<!-- show deep insert equivilent 
+<!-- show deep insert equivalent 
 
 sample-initialize-record-existing-record.md
 sample-create-retrieve-update-delete-late-bound.md
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-late-bound
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-late-bound
 
 -->
 Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Entität-Klasse mit später Bindung. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/LateBoundEntityOperations) herunterladen.

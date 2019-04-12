@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="developer-tools"></a>Entwicklertools
 
-Die Common Data Service for Apps-Community erstellt Tools! Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/) verteilt. XrmToolBox ist eine Windows-Anwendung, die sich mit dem Common Data Service for Apps verbindet und Tools zur Verfügung stellt, die die Anpassung, Konfiguration und Bedienung erleichtern. Es wird mit mehr als 30 Plugins ausgeliefert, um Administrations-, Anpassungs- oder Konfigurationsaufgaben einfacher und zeitsparender zu gestalten.
+Die Common Data Service-Community erstellt Tools! Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/) verteilt. XrmToolBox ist eine Windows-Anwendung, die sich mit dem Common Data Service verbindet und Tools zur Verfügung stellt, die die Anpassung, Konfiguration und Bedienung erleichtern. Es wird mit mehr als 30 Plugins ausgeliefert, um Administrations-, Anpassungs- oder Konfigurationsaufgaben einfacher und zeitsparender zu gestalten.
 
 Nachfolgend finden Sie eine ausgewählte Liste von Community-Tools, die über die XrmToolBox verteilt werden und die Sie mit modellgesteuerten Apps verwenden können.
 

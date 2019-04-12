@@ -1,5 +1,5 @@
 ---
-title: Webdienst-Fehlercodes (Common Data Service für Apps) | Microsoft Docs
+title: Webdienst-Fehlercodes (Common Data Service) | Microsoft Docs
 description: 'In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftreten können, wenn Sie den Code debuggen. Diese Fehlercodes sind auch im Dynamics 365 SDK Paket verfügbar'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -21,9 +21,9 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 
 <a name="BKMK_CRMErrors"></a>   
 
-## <a name="common-data-service-for-apps-errors"></a>Common Data Service für Apps - Fehler 
+## <a name="common-data-service-errors"></a>Common Data Service-Fehler 
 
- Die folgende Liste zeigt die Fehlercodes an, die in Common Data Service für Apps verwendet werden. Weitere Informationen finden Sie unter [Behandlung von Ausnahmen in Ihrem Code](/dynamics365/customer-engagement/developer/org-service/handle-exceptions-code).  
+ Die folgende Liste zeigt die Fehlercodes an, die in Common Data Service verwendet werden. Weitere Informationen finden Sie unter [Behandlung von Ausnahmen in Ihrem Code](/dynamics365/customer-engagement/developer/org-service/handle-exceptions-code).  
 
 > [!div class="mx-tdBreakAll"]  
 > 

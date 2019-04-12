@@ -2,9 +2,9 @@
 title: Zugriff auf modellgesteuerte App-Formulare in PowerApps steuern | MicrosoftDocs
 description: 'Erfahren Sie, wie Zugriff auf Hauptformulare gesteuert wird'
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 03/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -40,14 +40,14 @@ search.app:
   
  Genaue Anweisungen finden Sie unter [Zuweisen von Sicherheitsrollen zu Formularen](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form).  
   
- Sind mehrere Haupt- oder Mobilformulare für eine Entität definiert, können Sie auswählen, welche Formulare Benutzer aufgrund ihrer Sicherheitsrollen verwenden können. Da jede Entität in der Lage sein muss, ein Formular für beliebige Benutzer anzuzeigen, muss mindestens ein Formular als "Fallback"-Formular festgelegt werden - ein Formular, das für die Benutzer sichtbar ist, deren Sicherheitsrollen keine spezifischen Formulare zugewiesen wurden.  
+ Sind mehrere Haupt- oder andere Typen von Formularen für eine Entität definiert, können Sie auswählen, welche Formulare Benutzer aufgrund ihrer Sicherheitsrollen verwenden können. Da jede Entität in der Lage sein muss, ein Formular für beliebige Benutzer anzuzeigen, muss mindestens ein Formular als "Fallback"-Formular festgelegt werden - ein Formular, das für die Benutzer sichtbar ist, deren Sicherheitsrollen keine spezifischen Formulare zugewiesen wurden.  
   
 > [!NOTE]
->  Schnellerfassungs- und Schnellansichtsformulare können keinen Sicherheitsrollen zugewiesen werden.  
+>  Schnellerfassungs-, Schnellansichts- und Kartenformulare können nicht zu Sicherheitsrollen zugewiesen werden.  
   
- Sie können im Formular-Editor oder aus dem Formulareraster einem Formular Sicherheitsrollen zuweisen. Solange jedoch nur ein Formular für die Entität vorhanden ist, können Sie die Option **Für Fallback aktiviert** im Dialogfeld **Sicherheitsrollen zuweisen** nicht löschen. Obwohl Sie dem Formular Sicherheitsrollen zugewiesen haben, können in diesem Fall alle Benutzer, die einer beliebigen Sicherheitsrolle zugeordnet sind, das Formular weiterhin anzeigen, da es als Ausweichformular aktiviert wurde.  
+ Sie können im Formular-Editor oder aus dem Formularraster einem Hauptformular Sicherheitsrollen zuweisen. Solange jedoch nur ein Formular für die Entität vorhanden ist, können Sie die Option **Für Fallback aktiviert** im Dialogfeld **Sicherheitsrollen zuweisen** nicht löschen. Obwohl Sie dem Formular Sicherheitsrollen zugewiesen haben, können in diesem Fall alle Benutzer, die einer beliebigen Sicherheitsrolle zugeordnet sind, das Formular weiterhin anzeigen, da es als Ausweichformular aktiviert wurde.  
   
- Nachdem Sie ein zweites Haupt- oder Mobilformular für die Entität erstellt haben, können Sie die Option **Für Fallback aktiviert** für eines der Formulare deaktivieren. Über das System wird immer sichergestellt, dass immer mindestens ein Formular als Ausweichformular ("Fallback") aktiviert ist.  
+ Nachdem Sie ein zweites Hauptformular für die Entität erstellt haben, können Sie die Option **Für Fallback aktiviert** für eines der Formulare deaktivieren. Über das System wird immer sichergestellt, dass immer mindestens ein Formular als Ausweichformular ("Fallback") aktiviert ist.  
   
  Wenn Sie mehr als ein Hauptformular haben, können Sie eine Formularreihenfolge angeben, die steuert, welches der Formulare, die ein Benutzer anzeigen kann, das Standardformular ist. Falls mehrere Formulare vorhanden sind, die sie verwenden können, können sie Formulare wechseln, und das ausgewählte Formular wird dann das Standardformular, bis sie wieder ein anderes wählen. Diese Einstellung wird in ihrem Browser gespeichert. Wenn Sie einen anderen Browser oder einen anderen Computer verwenden, sehen sie das ursprüngliche Standardformular.  
   

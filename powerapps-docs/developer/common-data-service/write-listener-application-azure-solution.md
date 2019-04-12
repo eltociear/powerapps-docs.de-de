@@ -1,6 +1,6 @@
 ---
-title: Schreiben einer Listener-Anwendung für eine Microsoft Azure-Lösung (Common Data Service für Apps) | Microsoft Docs
-description: 'In dem Thema wird beschrieben, wie Sie eine Listener-Anwendung für eine Azure-Lösung schreiben, die "Dynamics 365 (online) Common Data Service für Apps"-Nachrichten lesen und verarbeiten kann, die im Azure-Servicebus veröffentlicht werden.'
+title: Schreiben einer Listener-Anwendung für eine Microsoft Azure-Lösung (Common Data Service) | Microsoft Docs
+description: 'In dem Thema wird beschrieben, wie Sie eine Listener-Anwendung für eine Azure-Lösung schreiben, die "Dynamics 365 (online) Common Data Service"-Messages lesen und verarbeiten kann, die im Azure-Servicebus veröffentlicht werden.'
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-listener-application-azure-solution -->
 
-In diesem Thema wird beschrieben, wie Sie eine Listener-Anwendung für eine Azure-Lösung schreiben, die "Dynamics 365 (online) Common Data Service für Apps"-Nachrichten lesen und verarbeiten kann, die im Azure-Servicebus veröffentlicht werden. Sie sollten sich zunächst damit vertraut machen, wie Sie einen Azure Service Bus-Listener schreiben, bevor Sie sich den Besonderheiten eines Dynamics 365-Listeners zuwenden. Weitere Informationen bietet die [Dokumentation zu Azure Service Bus](https://azure.microsoft.com/en-us/documentation/services/service-bus/).  
+In diesem Thema wird beschrieben, wie Sie eine Listener-Anwendung für eine Azure-Lösung schreiben, die "Dynamics 365 (online) Common Data Service"-Messages lesen und verarbeiten kann, die im Azure-Servicebus veröffentlicht werden. Sie sollten sich zunächst damit vertraut machen, wie Sie einen Azure Service Bus-Listener schreiben, bevor Sie sich den Besonderheiten eines Dynamics 365-Listeners zuwenden. Weitere Informationen bietet die [Dokumentation zu Azure Service Bus](https://azure.microsoft.com/en-us/documentation/services/service-bus/).  
   
 <a name="bkmk_writequeued"></a>
 

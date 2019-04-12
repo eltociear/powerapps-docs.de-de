@@ -1,5 +1,5 @@
 ---
-title: Schrieben eines Plug-In (Common Data Service für Apps) | MicrosoftDocs
+title: Schrieben eines Plug-In (Common Data Service) | MicrosoftDocs
 description: 'Erfahren Sie über die Konzepte und technischen Details, die für das Schreiben von Plug-Ins notwendig sind.'
 ms.custom: ''
 ms.date: 10/31/2018

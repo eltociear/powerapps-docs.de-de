@@ -1,5 +1,5 @@
 ---
-title: Duplikaterkennung ausführen (Common Data Service for Apps) | Microsoft Docs
+title: Duplikaterkennung ausführen (Common Data Service) | Microsoft Docs
 description: 'Führen Sie die Duplikaterkennung für einen bestimmten, ausgewählten Entitätstyp Datensatz aus, beim Erstellen oder während der Aktualisierungsvorgänge.'
 ms.custom: ''
 ms.date: 10/31/2018

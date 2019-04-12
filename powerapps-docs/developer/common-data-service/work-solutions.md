@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Lösungen (Common Data Service für Apps) | Microsoft Docs
+title: Arbeiten mit Lösungen (Common Data Service) | Microsoft Docs
 description: ''
 keywords: ''
 ms.date: 10/31/2018

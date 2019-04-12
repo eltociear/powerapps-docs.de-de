@@ -1,10 +1,10 @@
 ---
-title: Beispiele für Web-API-Datenvorgänge (Common Data Service für Apps) | Microsoft Docs
-description: 'Das "Common Data Service für Apps"-SDK bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. Sie finden hier die C#- und JavaScript-Implementierungen grundlegender Operationen, Abfragedaten, bedingter Operationen sowie Beispiele für Funktionen und Aktionen'
+title: Beispiele für Web-API-Datenvorgänge (Common Data Service) | Microsoft Docs
+description: 'Das "Common Data Service"-SDK bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. Sie finden hier die C#- und JavaScript-Implementierungen grundlegender Operationen, Abfragedaten, bedingter Operationen sowie Beispiele für Funktionen und Aktionen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-data-operations-samples"></a>Beispiele für Web-API-Datenvorgänge
 
-Sie können die "Common Data Service für Apps"-Web-API mit einer Vielzahl von Programmiersprachen oder - bibliotheken verwenden. Dieser Leitfaden bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. In diesem Thema sind Beispiele enthalten, die für jede Gruppe verfügbar sind und zeigen, wie diese Vorgänge mithilfe verschiedener Sprachen oder Verwendungen ausgeführt werden.
+Sie können die "Common Data Service"-Web-API mit einer Vielzahl von Programmiersprachen oder - bibliotheken verwenden. Dieser Leitfaden bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. In diesem Thema sind Beispiele enthalten, die für jede Gruppe verfügbar sind und zeigen, wie diese Vorgänge mithilfe verschiedener Sprachen oder Verwendungen ausgeführt werden.
 
 <!-- TODO:
 > [!NOTE]
@@ -30,7 +30,7 @@ Sie können die "Common Data Service für Apps"-Web-API mit einer Vielzahl von P
   
 ## <a name="web-api-sample-matrix"></a>Web API Beispielmatrix
 
-Die folgende Tabelle beschreibt die "Common Data Service für Apps"-Web-API-Beispiele und die sprachspezifischen Implementierungen.  
+Die folgende Tabelle beschreibt die "Common Data Service"-Web-API-Beispiele und die sprachspezifischen Implementierungen.  
   
 |Sprachunabhängige Beschreibung|C# Implementierung|Clientseitiges JavaScript-Implementierung|  
 |-----------------------------------|------------------------|--------------------------------------------|  
@@ -65,7 +65,7 @@ Die folgende Tabelle enthält Themen, die standardsprachliche oder bibliothekssp
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
 [Beispiel grundlegender Web-API-Operationen](web-api-basic-operations-sample.md)<br />
 [Web API-Abfragedatenbeispiel](web-api-query-data-sample.md)<br />
 [Beispiel bedingter Web-API-Operationen](web-api-conditional-operations-sample.md)<br />

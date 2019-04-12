@@ -1,6 +1,6 @@
 ---
-title: Überwachungsübersicht (Common Data Service for Apps) | MicrosoftDocs
-description: 'Lesen Sie, wie die Überwachungsfähigkeit von CDS for Apps genutzt werden kann, um Änderungen von Attribut- und Entitätsdaten im Laufe der Zeit für Analyse- und Berichtszwecke aufzuzeichnen.'
+title: Überwachungsübersicht (Common Data Service) | MicrosoftDocs
+description: 'Lesen Sie, wie die Überwachungsfähigkeit von Common Data Service genutzt werden kann, um Änderungen von Attribut- und Entitätsdaten im Laufe der Zeit für Analyse- und Berichtszwecke aufzuzeichnen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="auditing-overview"></a>Überwachungsübersicht
 
-Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit von Kundeninteraktionsverlauf, Überwachungsprotokollen, Zugriffsberichten und Sicherheitsvorfallnachverfolgung sicherzustellen. Organisationen können Änderungen in Common Data Service for Apps-Daten für Sicherheit und Analysezwecke nachverfolgen.  
+Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit von Kundeninteraktionsverlauf, Überwachungsprotokollen, Zugriffsberichten und Sicherheitsvorfallnachverfolgung sicherzustellen. Organisationen können Änderungen in Common Data Service-Daten für Sicherheit und Analysezwecke nachverfolgen.  
   
- CDS for Apps unterstützt eine Überwachungsfunktion, in der sich Entitäts- und Attributdaten innerhalb der Organisation ändern und über einen bestimmten Zeitraum für Analyse- und Berichterstellungszwecke erfasst werden können. Die Überwachung wird für alle benutzerdefinierten und für die meisten anpassbaren Entitäten und Attribute unterstützt. Die Überwachung wird nicht für Metadatenänderungen, Abrufvorgänge, Exportvorgänge oder während der Authentifizierung unterstützt. Weitere Informationen darüber, wie die Überwachung zu konfigurieren, finden Sie unter [Konfigurieren von Entitäten und Attributen für Überwachung](configure-entities-attributes-auditing.md).  
+ Common Data Service unterstützt eine Überwachungsfunktion, in der sich Entitäts- und Attributdaten innerhalb der Organisation ändern und über einen bestimmten Zeitraum für Analyse- und Berichterstellungszwecke erfasst werden können. Die Überwachung wird für alle benutzerdefinierten und für die meisten anpassbaren Entitäten und Attribute unterstützt. Die Überwachung wird nicht für Metadatenänderungen, Abrufvorgänge, Exportvorgänge oder während der Authentifizierung unterstützt. Weitere Informationen darüber, wie die Überwachung zu konfigurieren, finden Sie unter [Konfigurieren von Entitäten und Attributen für Überwachung](configure-entities-attributes-auditing.md).  
   
 ## <a name="supported-for-auditing"></a>Unterstützt für Überwachung  
- Nachfolgend sind die Überwachungsleistungen für CDS for Apps aufgelistet:  
+ Nachfolgend sind die Überwachungsfunktionen für Common Data Service aufgelistet:  
 <!-- TODO: Jim, I don't think this is online only. Please correct the tokens here. -->
   
 * Überwachung anpassbarer Entitäten
@@ -41,7 +41,7 @@ Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit
 * Überwachungs-APIs für Entwickler
   
 ## <a name="not-supported-for-auditing"></a>Nicht unterstützt für Überwachung  
- Nachfolgend wird gezeigt, was für CDS for Apps nicht überwacht werden kann:  
+ Nachfolgend wird aufgeführt, was für Common Data Service nicht geprüft werden kann:  
   
 * Überwachung von Lesevorgängen
 * Überwachung von Metadatenänderungen 
@@ -70,7 +70,7 @@ Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit
   
 -   Löschung von Überwachungsprotokollen.  
   
--   Wenn (Datum/Zeit) ein Benutzerzugriff auf CDS for Apps-Daten erfolgt, wie lange und über welchen Client.  
+-   Wann (Datum/Zeit) ein Benutzerzugriff auf Common Data Service-Daten erfolgt, wie lange und über welchen Client.  
   
  Das Aktivieren oder Deaktivieren der Sicherheit auf Feldebene durch Festlegen des <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsSecured>-Attributs kann nicht überwacht werden.  
   

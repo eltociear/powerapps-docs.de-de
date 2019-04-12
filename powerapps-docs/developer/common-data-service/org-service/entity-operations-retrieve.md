@@ -1,5 +1,5 @@
 ---
-title: Rufen Sie eine Entität ab mithilfe des Organisationsservices (Common Data Service für Apps)| Microsoft Docs
+title: Rufen Sie eine Entität mithilfe des Organisationsservices ab (Common Data Service) | Microsoft Docs
 description: 'Beschreibt die Optionen, die verfügbar sind, wenn Sie einen Datensatz programmgesteuert abrufen'
 ms.custom: ''
 ms.date: 10/31/2018

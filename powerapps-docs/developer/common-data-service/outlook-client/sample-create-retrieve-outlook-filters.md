@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen oder Abrufen von Outlook-Filtern (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Erstellen oder Abrufen von Outlook-Filtern (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie Filter für Microsoft Dynamics 365 for Outlook abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>Beispiel: Outlook-Filter erstellen und abrufen
 
-Dieser Beispielcode ist für Common Data Service for Apps bestimmt. Um das Beispiel herunterladen, gehen Sie zu [Beispiel: Erstellen und abrufen von Outlook-Filtern](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
+Dieser Beispielcode ist für Common Data Service bestimmt. Um das Beispiel herunterladen, gehen Sie zu [Beispiel: Erstellen und abrufen von Outlook-Filtern](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

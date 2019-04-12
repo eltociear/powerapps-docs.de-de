@@ -1,10 +1,10 @@
 ---
-title: Beispiel für Bedingte Web-API-Vorgänge (Common Data Service für Apps) | Microsoft Docs
-description: 'Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt sind durch die Version des Entitätsdatensatzes, die auf dem "Common Data Service für Apps"-Server enthalten ist und/oder derzeit vom Client verwaltet wird.'
+title: Beispiel für bedingte Web-API-Vorgänge (Common Data Service) | Microsoft Docs
+description: 'Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt sind durch die Version des Entitätsdatensatzes, die auf dem "Common Data Service"-Server enthalten ist und/oder derzeit vom Client verwaltet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,11 +22,11 @@ search.app:
 ---
 # <a name="web-api-conditional-operations-sample"></a>Beispiel bedingter Web-API-Operationen
 
-Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt sind durch die Version des Entitätsdatensatzes, die auf dem "Common Data Service für Apps"-Server enthalten ist und/oder derzeit vom Client verwaltet wird. Weitere Informationen finden Sie unter [Ausführen bedingter Operationen mit der Web-API](perform-conditional-operations-using-web-api.md). Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:  
+Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt sind durch die Version des Entitätsdatensatzes, die auf dem "Common Data Service"-Server enthalten ist und/oder derzeit vom Client verwaltet wird. Weitere Informationen finden Sie unter [Ausführen bedingter Operationen mit der Web-API](perform-conditional-operations-using-web-api.md). Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:  
   
  [Beispiel bedingter Web-API-Operationen (C#)](samples/conditional-operations-csharp.md)  
  
- Die "Common Data Service für Apps"-Web-API folgt den Konventionen des [OData v4.0](http://www.odata.org/documentation/)-Protokolls, das [ETags](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752236) verwendet, um die Ressourcenversionssteuerung zu implementieren. Web API-bedingte Operationen hängen von diesem Versionenmechanismus ab.  
+ Die "Common Data Service"-Web-API folgt den Konventionen des [OData v4.0](http://www.odata.org/documentation/)-Protokolls, das [ETags](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752236) verwendet, um die Ressourcenversionssteuerung zu implementieren. Web API-bedingte Operationen hängen von diesem Versionenmechanismus ab.  
   
  In diesem Thema werden die Struktur und der Inhalt der Beispiele für eine spätere, sprachunabhängigen Ebene behandelt. Sie erläutert die Details der HTTP-Anforderungen und die Reaktionen und die zugeordnete Programmausgabe, soweit vorhanden. Wiederholen Sie die verknüpften Beispielthemen oben, um sprachspezifische Implementierungen und verwandte Details zu erhalten und zu sehen, wie die in diesem Thema beschriebenen Methoden verwendet werde.  
   
@@ -40,7 +40,7 @@ Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt
 |[Optimistische Parallelität beim Löschen und Aktualisieren](#bkmk_optimisiticConcurrency)|[Optimistische Parallelität anwenden](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency)|  
 |[Steuern von upsert Vorgänge](#bkmk_controllingUpsert)|[upsert-Vorgänge begrenzen](perform-conditional-operations-using-web-api.md#bkmk_limitUpsertOperations)|  
   
- Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten "Common Data Service für Apps"-Web-API-Vorgängen, sowie den entsprechenden HTTP-Nachrichten und der zugeordneten Konsolenausgabe, die für jede Sprachimplementierung gleich ist. Der Kürze halber sind entsprechende HTTP-Kopfzeilen weggelassen worden. Die URIs der Datensätze unterscheiden sich infolge der Grundorganisationsadresse und der ID des Datensatzes, der durch Ihren "Common Data Service für Apps"-Server zugewiesen wird.  
+ Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten "Common Data Service"-Web-API-Vorgängen, sowie den entsprechenden HTTP-Messages und der zugeordneten Konsolenausgabe, die für jede Sprachimplementierung gleich ist. Der Kürze halber sind entsprechende HTTP-Kopfzeilen weggelassen worden. Die URIs der Datensätze unterscheiden sich infolge der Grundorganisationsadresse und der ID des Datensatzes, der durch Ihren "Common Data Service"-Server zugewiesen wird.  
   
 <a name="bkmk_sampleData"></a>
    
@@ -488,6 +488,6 @@ Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
 [Bedingte Vorgänge mithilfe der Web-API ausführen](perform-conditional-operations-using-web-api.md)<br />
 [Beispiel bedingter Web-API-Operationen (C#)](samples/conditional-operations-csharp.md)   

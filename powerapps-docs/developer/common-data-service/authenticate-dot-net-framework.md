@@ -1,6 +1,6 @@
 ---
-title: Authentifizierung mit.NET Framework-Anwendungen (Common Data Service for Apps) | Microsoft Docs
-description: Wie.NET Framework-Anwendungen sich mit dem Common Data Service for Apps authentifizieren können.
+title: Authentifizierung mit.NET Framework-Anwendungen (Common Data Service) | Microsoft Docs
+description: Wie.NET Framework-Anwendungen sich mit dem Common Data Service authentifizieren können.
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -62,6 +62,6 @@ Wenn Sie es vorziehen, keine Abhängigkeit zu SDK-Assemblys zu haben, können Si
 
 ### <a name="see-also"></a>Siehe auch
 
-[Authentifizierung mit Common Data Service for Apps-Webdienst](authentication.md)<br />
-[OAuth mit Common Data Service für Apps verwenden](authenticate-oauth.md)
+[Authentifizierung mit Common Data Service-Webdiensten](authentication.md)<br />
+[OAuth mit Common Data Service verwenden](authenticate-oauth.md)
 

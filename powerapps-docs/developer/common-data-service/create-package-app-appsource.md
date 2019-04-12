@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 4: Erstellen eines AppSource-Paket für die App (Common Data Service for Apps) | Microsoft Docs'
+title: 'Schritt 4: Erstellen eines AppSource-Paket für die App (Common Data Service) | Microsoft Docs'
 description: 'Lernen Sie, wie Sie eine AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -32,7 +32,7 @@ Sie müssen ein AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demo
 
 Ein Paket können Sie in mehrere Dateien bündeln und bereitstellen, die gleichzeitig mit der App verknüpft sind. 
 
-1. Erstellt ein Dynamics 365 Paket , um die Lösungs- und Konfigurationsdatendateien zu integrieren, die Sie erstellt haben in [Schritt 2: Erstellen einer verwalteten Lösung für Ihre App](create-solution-app-appsource.md) Ein benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket auf der CDS for Apps-Instanz bereitgestellt wird. Ausführliche Informationen zum Verwenden einer Vorlage zum Erstellen eines Pakets, finden Sie unter [Erstellen von Paketen für Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
+1. Erstellt ein Dynamics 365 Paket , um die Lösungs- und Konfigurationsdatendateien zu integrieren, die Sie erstellt haben in [Schritt 2: Erstellen einer verwalteten Lösung für Ihre App](create-solution-app-appsource.md) Ein benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket auf der Common Data Service-Instanz bereitgestellt wird. Ausführliche Informationen zum Verwenden einer Vorlage zum Erstellen eines Pakets, finden Sie unter [Erstellen von Paketen für Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
 
     Nachdem Sie ein Paket erstellt haben, besteht das Paket aus folgenden Ereignisse:
 

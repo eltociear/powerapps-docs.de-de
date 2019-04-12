@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Erste Schritte mit modellgesteuerter App-Anpassung durch Code
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/supported-extensions
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
 Split to just include MDA issues
  -->
 
@@ -41,13 +41,13 @@ Die folgenden Anpassungsmethoden können verwendet werden, um vollständig unter
 - Reporting Services. Weitere Informationen finden Sie unter [Berichte und Analysen-Handbuch für modellgestützte Apps](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365).
 
 > [!NOTE]
-> Die Verhaltensweisen von modellgestützte Apps hängen von den Anpassungen ab, die dem Common Data Service for Apps zugeordnet sind. Weitere Informationen: [Unterstützte Anpassungen für Common Data Service for Apps](../common-data-service/supported-customizations.md)
+> Die Verhaltensweisen von modellgestützte Apps hängen von den Anpassungen ab, die dem Common Data Service zugeordnet sind. Weitere Informationen: [Unterstützte Anpassungen für Common Data Service](../common-data-service/supported-customizations.md)
 > *Vollständig unterstützt* bedeutet, dass der Entwicklersupport Unterstützung für Anpassungen bereitstellen kann und dass der Anwendungssupport Kunden bei der Ausführung solcher Änderungen helfen kann.
 
 
 ## <a name="customizations-applied-using-code"></a>Mit Code angewendete Anpassungen
 
-Die Dokumentation auf dieser Website für Entwickler, technischen Artikel und der Beispielcode, der auf dieser Website veröffentlicht wird und die Informationen, die vom CDS for Apps Developer Support Team freigegeben wurden, sind in den Bereich der Anpassungen enthalten, die mithilfe von Code angewendet werden. Die bestimmten Aktionen und Ebenen der Supportfähigkeit und Aktualisierbarkeit werden weiter unten in diesem Thema beschrieben.
+Die Dokumentation auf dieser Website für Entwickler, technischen Artikel, der Beispielcode, der auf dieser Website veröffentlicht wird und die Informationen, die vom Common Data Service-Developer Support Team freigegeben wurden, sind in den Bereich der Anpassungen enthalten, die mithilfe von Code angewendet werden. Die bestimmten Aktionen und Ebenen der Supportfähigkeit und Aktualisierbarkeit werden weiter unten in diesem Thema beschrieben.
 
 ### <a name="client-side-javascript"></a>Clientseitiges JavaScript
 
@@ -83,7 +83,7 @@ Im Folgenden finden Sie eine Liste nicht unterstützter Aktionstypen, nach denen
 
 ### <a name="see-also"></a>Siehe auch
 
-[Unterstützte Anpassungen für Common Data Service für Apps](../common-data-service/supported-customizations.md)<br/>
+[Unterstützte Anpassungen für Common Data Service](../common-data-service/supported-customizations.md)<br/>
 [Anwenden von Geschäftslogik mit Client-Skripting in modellgestützten Anwendungen mit JavaScript](client-scripting.md)<br/>
 [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)<br/>
 [Webressourcen in modellgestützten Apps](web-resources.md)

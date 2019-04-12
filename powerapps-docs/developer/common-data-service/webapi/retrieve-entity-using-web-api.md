@@ -1,10 +1,10 @@
 ---
-title: Abrufen einer Entität mithilfe des Web-API (Common Data Service for Apps) | Microsoft Docs
-description: 'Lesen Sie, wie Sie eine GET-Anforderung mit Common Data Service for Apps-Web-API anfordern, um Daten für eine Entität abzurufen, die als die Ressource mit einem eindeutigen Bezeichner angegeben wurde'
+title: Abrufen einer Entität mit Web-API (Common Data Service) | Microsoft Docs
+description: 'Lesen Sie, wie Sie eine GET-Anforderung mit der Common Data Service-Web-API anfordern, um Daten für eine Entität abzurufen, die als die Ressource mit einem eindeutigen Bezeichner angegeben wurde'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 Um mehrere Entitäten gleichzeitig abzurufen, seihe [Grundlegendes Abfragebeispiel](query-data-web-api.md#bkmk_basicQuery) in [Abfragen von Daten mit Internet-API](query-data-web-api.md).
 
 > [!CAUTION]
->  Das oben genannte Beispiel gibt alle Eigenschaften für den Firmendatensatz zurück, was die Leistung beim Abruf von Daten senkt. Dieses Beispiel war nur dazu gedacht, zu veranschaulichen, wie Sie einen grundlegenden Abruf einer Entitätsinstanz in CDS for Apps tätigen können. Weil alle Eigenschaften zurückgegeben wurden, haben wir die Antwortinformation für die Anfrage nicht in dieses Beispiel aufgenommen.
+>  Das oben genannte Beispiel gibt alle Eigenschaften für den Firmendatensatz zurück, was die Leistung beim Abruf von Daten senkt. Dieses Beispiel war nur dazu gedacht, zu veranschaulichen, wie Sie einen grundlegenden Abruf einer Entitätsinstanz in Common Data Service tätigen können. Weil alle Eigenschaften zurückgegeben wurden, haben wir die Antwortinformation für die Anfrage nicht in dieses Beispiel aufgenommen.
 >
 >  Als leistungsoptimiertes Verfahren müssen Sie immer die Systemanfragen-Option `$select` verwenden, um die zurückgegebenen Eigenschaften zu begrenzen beim Abruf von Daten. Sehen Sie den folgenden Abschnitt, **Spezifische Eigenschaften abrufen** für Informationen darüber.
   

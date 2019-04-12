@@ -1,5 +1,5 @@
 ---
-title: Optimistische Parallelität (Common Data Service für Apps) | Microsoft Docs
+title: Optimistische Parallelität (Common Data Service) | Microsoft Docs
 description: 'Mit der optimistischen Parallelität können die Anwendungen feststellen, ob ein Entitätsdatensatz auf dem Server zwischen dem Abrufen des Datensatzes durch die Anwendung und dem Versuch der Anwendung, den Datensatz zu aktualisieren oder zu löschen, geändert wurde.'
 ms.custom: ''
 ms.date: 10/31/2018

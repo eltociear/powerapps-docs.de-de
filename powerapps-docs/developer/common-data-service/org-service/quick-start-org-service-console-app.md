@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Organisationsservicebeispiel (C#) (Common Data Service for Apps) | Microsoft Docs'
-description: 'Dieser Schnellstart zeigt, wie Sie mit dem Organisationsservice des Common Data Service for Apps eine Verbindung herstellen.'
+title: 'Schnellstart: Organisationsservicebeispiel (C#) (Common Data Service) | Microsoft Docs'
+description: 'Dieser Schnellstart zeigt, wie Sie mit dem Organisationsservice des Common Data Service eine Verbindung herstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-organization-service-sample-c"></a>Schnellstart: Organisationsservicebeispiel (C#)
 
-Dies ist, wo Sie Ihre Arbeit mit den .NET-SDK-Assemblys beginnen, um mit Daten unter Verwendung von Common Data Service for Apps zu arbeiten.
+Dies ist, wo Sie Ihre Arbeit mit den .NET-SDK-Assemblys beginnen, um mit Daten unter Verwendung von Common Data Service zu arbeiten.
 
 In diesem Schnellstart erstellen Sie eine minimale Konsolenanwendung, um unter Verwendung der Klasse <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> eine Verbindung mit dem Organisationsservice herzustellen. Sie übergeben Ihre Verbindungsdaten mithilfe einer Verbindungszeichenfolge, die dem Konstruktor übergeben wird.
 
@@ -31,10 +31,10 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
 
  - Visual Studio (2017 empfohlen)
  - Internetverbindung
- - Gültiges Benutzerkonto für eine Common Data Service for Apps-Instanz
+ - Gültiges Benutzerkonto für eine Common Data Service-Instanz
     - Ihr Benutzername
     - Ihr Kennwort
- - URL zur CDS for Apps-Umgebung, mit der Sie eine Verbindung herstellen möchten
+ - URL zur Common Data Service-Umgebung, mit der Sie eine Verbindung herstellen möchten
  - Grundlegendes Verständnis der Visual C#-Sprache
 
 ## <a name="create-visual-studio-project"></a>Erstellen eines Visual Studio-Projekts
@@ -127,7 +127,7 @@ Sie haben erfolgreich eine Verbindung mit dem Organisationsservice hergestellt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Themen erklären mehr über das Arbeiten mit CDS for Apps-Entitäten:
+Diese Themen erklären, wie Sie mit Common Data Service-Entitäten arbeiten:
 
 [Entitäts-Vorgänge mithilfe des Organisationsservice](entity-operations.md)<br />
 [Erstellen von Entitäten mit dem Organisationsservice](entity-operations-create.md)<br />

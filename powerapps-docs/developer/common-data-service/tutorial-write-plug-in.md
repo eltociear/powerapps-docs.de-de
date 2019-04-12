@@ -1,5 +1,5 @@
 ---
-title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Service für Apps) | MicrosoftDocs'
+title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Lernprogramm ist das erste in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -38,7 +38,7 @@ Erstellen Sie ein asynchrones Plug-In, das in der Erstellungsmeldung der Firmene
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Zugriff auf Administratorebene auf eine Common Data Service for Apps-Umgebung
+- Zugriff auf Administratorebene auf eine Common Data Service-Umgebung
 - Eine modellgesteuerte App, die die Firmen- und Aufgabenentitäten einschließt.
     - Wenn Sie über keine modellgesteuerte App verfügen, die diese enthält, finden Sie Schritte zum [neuen Erstellen Ihrer ersten modellgesteuerten App](../../maker/model-driven-apps/build-first-model-driven-app.md) in nur wenigen Minuten.
 - Visual Studio 2017

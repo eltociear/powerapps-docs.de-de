@@ -1,5 +1,5 @@
 ---
-title: Debuggen von Workflow-Aktivitäten (Common Data Service für Apps) | Microsoft Docs
+title: Debuggen von Workflow-Aktivitäten (Common Data Service) | Microsoft Docs
 description: 'Beschreibt, wie Sie Workflow-Aktivitäten mit dem Plug-In-Registrierungstool debuggen können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -33,7 +33,7 @@ Vom PRT aus können Sie die Plug-in-Profilerlösung installieren, indem Sie auf 
 
 Diese Lösung bietet die Möglichkeit, den Kontext zu erfassen, der an Ihre Workflowaktivität übergeben wird und ermöglicht die Wiedergabe, mit der Sie die Logik in Ihrem Code lokal mit Visual Studio debuggen können.
 
-Wenn der **Plug-In-Profiler** für Ihre CDS for Apps-Instanz installiert ist, sehen Sie ihn im PRT am unteren Rand der Liste **Registrierte Plug-Ins & benutzerdefinierte Workflow-Aktivitäten**.
+Wenn der **Plug-In-Profiler** für Ihre Common Data Service-Instanz installiert ist, sehen Sie ihn im PRT am unteren Rand der Liste **Registrierte Plug-Ins & benutzerdefinierte Workflow-Aktivitäten**.
 
 ![Plug-In-Profiler im Plug-in-Registrierungstool](media/Plug-in-Profiler.png)
 
@@ -91,7 +91,7 @@ Der kopierte Profilworkflow wird ebenfalls in einen Hintergrund-(asynchronen) Wo
 
 Speichern Sie den kopierten Profilworkflow und aktivieren Sie ihn.
 
-Aktualisieren Sie in einer App, die mit Ihrer CDS für Apps-Instanz verbunden ist oder durch die Verwendung der Webservices den Wert **Kontoname** einer Firmenentität. Dadurch wird eine Instanz des Kontexts erfasst, die an Ihre benutzerdefinierte Workflowaktivität übergeben wird, und sie wird als Profildatensatz im System gespeichert.
+Aktualisieren Sie in einer App, die mit Ihrer Common Data Service-Instanz verbunden ist, oder durch die Verwendung der Webservices den Wert **Firmenname** einer Firmenentität. Dadurch wird eine Instanz des Kontexts erfasst, die an Ihre benutzerdefinierte Workflowaktivität übergeben wird, und sie wird als Profildatensatz im System gespeichert.
 
 > [!TIP]
 > Wenn Ihr Workflow asynchron ist, stellen Sie sicher, dass er abgeschlossen ist, bevor Sie mit dem nächsten Schritt fortfahren. Gehen Sie zu Einstellungen > Systemaufträge und überprüfen Sie, ob der Workflow erfolgreich war.

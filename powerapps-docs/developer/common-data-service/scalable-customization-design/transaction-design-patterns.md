@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Transaktionsdesign-Muster (Common Data Service for Apps) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Transaktionsdesign-Muster (Common Data Service) | Microsoft Docs'
 description: 'Das vierte in einer Reihe von Themen. '
 ms.custom: ''
 ms.date: 11/18/2018
@@ -18,17 +18,17 @@ search.app:
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Skalierbares Anpassungsdesign: Transaktionsdesign-Muster
 
 > [!NOTE]
-> Dies ist der vierte in einer Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service für Apps](overview.md).
+> Dies ist der vierte in einer Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service](overview.md).
 
 Dieser Abschnitt beschreibt die zu vermeidenden oder zu minimierenden Entwurfsmuster und deren Auswirkungen. Jedes Entwurfsmuster muss im Zusammenhang mit dem zu lösenden Geschäftsproblem betrachtet werden und kann als Option zur Untersuchung nützlich sein.
 
 ## <a name="dont-avoid-locking"></a>Vermeiden Sie nicht die Sperrung
 
-Das Sperren ist eine sehr wichtige Komponente von SQL Server und CDS für Apps und ist für einen reibungslosen Betrieb und die Konsistenz des Systems unerlässlich. Aus diesem Grund ist es wichtig, die Auswirkungen auf das Design zu verstehen, insbesondere in Bezug auf die Größe.
+Das Sperren ist eine sehr wichtige Komponente von SQL Server und Common Data Service und ist für einen reibungslosen Betrieb und die Konsistenz des Systems unerlässlich. Aus diesem Grund ist es wichtig, die Auswirkungen auf das Design zu verstehen, insbesondere in Bezug auf die Größe.
 
 ## <a name="transaction-usage-nolock-hint"></a>Transaktionsverwendung: Nolock-Hinweis
 
-Eine Funktion der CDS for Apps-Plattform, die von Ansichten stark genutzt wird, ist die Möglichkeit, anzugeben, dass eine Abfrage mit einem nolock-Hinweis ausgeführt werden kann, der der Datenbank mitteilt, dass für diese Abfrage keine Sperre erforderlich ist. 
+Eine Funktion der Common Data Service-Plattform, die von Ansichten stark genutzt wird, ist die Möglichkeit, anzugeben, dass eine Abfrage mit einem nolock-Hinweis ausgeführt werden kann, der der Datenbank mitteilt, dass für diese Abfrage keine Sperre erforderlich ist. 
 
 Ansichten verwenden diesen Ansatz, da es keinen direkten Zusammenhang zwischen dem Akt des Startens der Ansicht und nachfolgenden Aktionen gibt. Eine Reihe weiterer Aktivitäten können entweder von diesem Benutzer oder anderen dazwischen ausgeführt werden, und es ist nicht praktisch oder sinnvoll, die gesamte Tabelle der Daten, die die Ansicht anzeigt, zu sperren, bis der Benutzer fortgefahren ist. 
 
@@ -139,9 +139,9 @@ Beim Entwurf mehrerer Schichten funktionaler Aktivität ist es zwar eine gute Pr
  
 Im Fallbehandlungsszenario ist es völlig logisch, zuerst einen Fall mit einem Standardeigentümer zu aktualisieren, der auf dem Kunden basiert, gegen den er erhoben wird, und dann später einen separaten Prozess zu haben, um automatisch Mitteilungen an diesen Kunden zu senden und das letzte Kontaktdatum gegen den Fall zu aktualisieren. 
 
-Die Herausforderung besteht jedoch darin, dass es mehrere Anfragen an CDS for Apps gibt, um den gleichen Datensatz zu aktualisieren, was eine Reihe von Auswirkungen hat:
+Die Herausforderung besteht jedoch darin, dass es mehrere Anfragen an Common Data Service gibt, um den gleichen Datensatz zu aktualisieren, was eine Reihe von Auswirkungen hat:
 
-- Jede Anforderung ist ein separates Plattform-Update, das dem CDS for Apps-Server eine Gesamtlast zufügt und die Gesamttransaktionslänge verlängert, was die Wahrscheinlichkeit einer Sperrung erhöht.
+- Jede Anforderung ist ein separates Plattform-Update, das dem Common Data Service-Server eine Gesamtlast zufügt und die Gesamttransaktionslänge verlängert, was die Wahrscheinlichkeit einer Sperrung erhöht.
 - Es bedeutet auch, dass der Falldatensatz von der ersten Aktion an gesperrt wird, die an diesem Fall durchgeführt wurde, was bedeutet, dass die Sperre während des gesamten weiteren Verlaufs der Transaktion gehalten wird. Wenn auf den Fall über mehrere parallele Prozesse zugegriffen wird, kann dies zur Sperrung anderer Aktivitäten führen. 
 
 Die Konsolidierung von Aktualisierungen desselben Datensatzes zu einem einzigen Aktualisierungsschritt und später in der Transaktion kann einen erheblichen Vorteil für die allgemeine Skalierbarkeit haben, insbesondere wenn der Datensatz stark umstritten ist oder von mehreren Personen schnell nach der Erstellung aufgerufen wird, z. B. wie bei einem Fall.
@@ -150,9 +150,9 @@ Die Entscheidung, ob Aktualisierungen für denselben Datensatz zu einem einzigen
 
 ## <a name="only-update-things-you-need-to"></a>Nur Dinge aktualisieren, die Sie benötigen.
 
-Obwohl es wichtig ist, den Nutzen eines CDS for Apps-Systems nicht zu verringern, indem Aktivitäten ausgeschlossen werden, die von Vorteil wären, werden oft Anpassungen gefordert, die wenig Geschäftswert schaffen, aber die tatsächliche technische Komplexität erhöhen.
+Obwohl es wichtig ist, den Nutzen eines Common Data Service-Systems nicht zu verringern, indem Aktivitäten ausgeschlossen werden, die von Vorteil wären, werden oft Anpassungen gefordert, die wenig Geschäftswert schaffen, aber die tatsächliche technische Komplexität erhöhen.
  
-Wenn wir jedes Mal, wenn wir eine Aufgabe erstellen, auch den Benutzerdatensatz mit der Anzahl der Aufgaben aktualisieren, die sie derzeit zugewiesen haben, könnte dies zu einer sekundären Sperrebene führen, da der Benutzerdatensatz nun ebenfalls stark beansprucht werden würde. Es würde eine weitere Ressource hinzufügen, die jede Anforderung möglicherweise blockieren und warten muss, obwohl sie nicht unbedingt kritisch für die Aktion ist. In diesem Beispiel sollten Sie sorgfältig prüfen, ob die Speicherung der Anzahl der Aufgaben gegen den Benutzer wichtig ist oder ob die Anzahl bei Bedarf berechnet oder an anderer Stelle gespeichert werden kann, z. B. durch die Verwendung von Hierarchie- und Rollup-Feldfunktionen in CDS for Apps. 
+Wenn wir jedes Mal, wenn wir eine Aufgabe erstellen, auch den Benutzerdatensatz mit der Anzahl der Aufgaben aktualisieren, die sie derzeit zugewiesen haben, könnte dies zu einer sekundären Sperrebene führen, da der Benutzerdatensatz nun ebenfalls stark beansprucht werden würde. Es würde eine weitere Ressource hinzufügen, die jede Anforderung möglicherweise blockieren und warten muss, obwohl sie nicht unbedingt kritisch für die Aktion ist. In diesem Beispiel sollten Sie sorgfältig prüfen, ob die Speicherung der Anzahl der Aufgaben gegen den Benutzer wichtig ist oder ob die Anzahl bei Bedarf berechnet oder an anderer Stelle gespeichert werden kann, z. B. durch die Verwendung von Hierarchie- und Rollup-Feldfunktionen in Common Data Service. 
 
 ![Problembeispiel mit Anzeige unnötiger Updates](media/only-update-things-you-need-to.png)
 
@@ -177,12 +177,12 @@ Häufig muss ein Kompromiss zwischen verschiedenen Verhaltensweisen in Betracht 
 |Vorabprüfung|Synchronisierung|Plug-In|Kurzfristige Validierung von Eingabewerten|Lang laufende Aktionen.<br /><br />Bei der Erstellung verwandter Elemente, die zurückgesetzt werden sollten, wenn spätere Schritte fehlschlagen.|
 |Vor Operation|Synchronisierung|Workflow/Plug-in|Kurzfristige Validierung von Eingabewerten.<br /><br />Bei der Erstellung verwandter Elemente, die als Teil des Plattformschrittfehlers zurückgesetzt werden sollten.|Lang laufende Aktionen.<br /><br />Beim Erstellen eines Elements muss die resultierende GUID gegen das Element gespeichert werden, das der Plattformschritt erstellt bzw. aktualisiert.|
 |Nach Operation |Synchronisierung|Workflow/Plug-in|Kurz laufende Aktionen, die natürlich dem Plattformschritt folgen und zurückgesetzt werden müssen, wenn spätere Schritte fehlschlagen, z. B. die Erstellung einer Aufgabe für den Eigentümer eines neu erstellten Kontos.<br /><br />Erstellung von zugehörigen Elementen, die die GUID des erstellten Elements benötigen und die im Fehlerfall den Plattformschritt zurücksetzen sollten.|Lang laufende Aktionen.<br /><br />Wo ein Versagen die Fertigstellung der Plattform-Pipeline nicht beeinträchtigen sollte.|
-|Nicht in Ereignis-Pipeline|Asynchron|Workflow/Plug-in|Mittelgroße Aktionen, die sich auf die Benutzerfreundlichkeit auswirken würden.<br /><br />Aktionen, die im Fehlerfall ohnehin nicht zurückgenommen werden können.<br /><br />Aktionen, die das Zurücksetzen des Plattformschritts im Falle eines Ausfalls nicht erzwingen sollten.|Sehr lang laufende Aktionen.<br /><br />Diese sollten nicht in CDS for Apps verwaltet werden.<br /><br />Sehr kostengünstige Aktionen. Der Aufwand für die Generierung von asynchronem Verhalten für sehr kostengünstige Aktionen kann untragbar sein; wenn möglich, synchronisieren Sie diese und vermeiden Sie den Aufwand der asynchronen Verarbeitung.|
+|Nicht in Ereignis-Pipeline|Asynchron|Workflow/Plug-in|Mittelgroße Aktionen, die sich auf die Benutzerfreundlichkeit auswirken würden.<br /><br />Aktionen, die im Fehlerfall ohnehin nicht zurückgenommen werden können.<br /><br />Aktionen, die das Zurücksetzen des Plattformschritts im Falle eines Ausfalls nicht erzwingen sollten.|Sehr lang laufende Aktionen.<br /><br />Diese sollte nicht im Common Data Service verwaltet werden.<br /><br />Sehr kostengünstige Aktionen. Der Aufwand für die Generierung von asynchronem Verhalten für sehr kostengünstige Aktionen kann untragbar sein; wenn möglich, synchronisieren Sie diese und vermeiden Sie den Aufwand der asynchronen Verarbeitung.|
 |Nicht zutreffend<br />Verwendet den Kontext, von dem aus er aufgerufen wird.||Benutzerdefinierte Aktionen|Kombinationen von Aktionen, die von einer externen Quelle gestartet wurden, z. B. von einer Web-Ressource.|Wenn immer als Reaktion auf ein Plattformereignis ausgelöst, verwenden Sie in diesen Fällen Plug-in/Workflow.|
 
 ## <a name="plug-insworkflows-arent-batch-processing-mechanisms"></a>Plug-Ins/Workflows sind keine Batch-Verarbeitungsmechanismen.
 
-Lang laufende oder Volume-Aktionen sind nicht dazu gedacht, von Plug-Ins oder Workflows ausgeführt zu werden. CDS for Apps ist nicht als Computing-Plattform gedacht und insbesondere nicht als Controller, um große Gruppen von unabhängigen Updates anzusteuern.
+Lang laufende oder Volume-Aktionen sind nicht dazu gedacht, von Plug-Ins oder Workflows ausgeführt zu werden. Common Data Service ist nicht als Berechnungsplattform gedacht und insbesondere nicht als Controller, um große Gruppen von unabhängigen Updates anzusteuern.
 
 Wenn Sie dies tun müssen, entlasten Sie einen separaten Dienst, z. B. eine Azure-Worker-Rolle, und führen Sie ihn aus. 
 
@@ -215,7 +215,7 @@ Ein sehr häufiger Eskalationsbereich ist die Skalierbarkeit der Sicherheitseinr
 
 ## <a name="diagram-related-actions"></a>Diagrammbezogene Aktionen
 
-Eine Aktivität, die sowohl als vorbeugende Maßnahme als auch als Werkzeug zur Diagnose von Blockierungsproblemen sehr nützlich ist, ist die Darstellung von Aktionen, die in der CDS for Apps-Plattform ausgelöst werden. Dabei hilft es, sowohl absichtliche als auch unbeabsichtigte Abhängigkeiten und Auslöser im System hervorzuheben. Wenn Sie dies für Ihre Lösung nicht tun können, haben Sie möglicherweise kein klares Bild davon, was Ihre Implementierung tatsächlich tut. Die Erstellung eines solchen Diagramms kann unbeabsichtigte Folgen haben und ist in einer Implementierung jederzeit eine gute Praxis. 
+Eine Aktivität, die sowohl als vorbeugende Maßnahme als auch als Werkzeug zur Diagnose von Blockierungsproblemen sehr nützlich ist, ist die Darstellung von Aktionen, die in der Common Data Service-Plattform ausgelöst werden. Dabei hilft es, sowohl absichtliche als auch unbeabsichtigte Abhängigkeiten und Auslöser im System hervorzuheben. Wenn Sie dies für Ihre Lösung nicht tun können, haben Sie möglicherweise kein klares Bild davon, was Ihre Implementierung tatsächlich tut. Die Erstellung eines solchen Diagramms kann unbeabsichtigte Folgen haben und ist in einer Implementierung jederzeit eine gute Praxis. 
 
 Das folgende Beispiel verdeutlicht, wie zunächst zwei Prozesse perfekt zusammenwirken, aber in der laufenden Wartung kann die Hinzufügung eines neuen Schrittes zum Anlegen einer Aufgabe eine unbeabsichtigte Schleife erzeugen. Die Verwendung dieser Dokumentationstechnik kann dies bereits bei der Konstruktion hervorheben und eine Beeinträchtigung des Systems vermeiden.
 
@@ -231,7 +231,7 @@ Wenn bestimmte Fehler auftreten, kann es auch nützlich sein, die Server-Trace-D
 
 ## <a name="summary"></a>Zusammenfassung
 
-Der Inhalt in [Skalierbare Anpassungsgestaltung in Common Data Service for Apps](overview.md) und die nachfolgenden Themen [Datenbanktransaktionen](database-transactions.md) und [Concurrency-Probleme](concurrency-issues.md) haben die folgenden Konzepte mit Beispielen und Strategien beschrieben, die Ihnen helfen werden, zu verstehen, wie man skalierbare Anpassungen für CDS for Apps entwirft und implementiert.
+Der Inhalt in [Skalierbare Anpassungsgestaltung in Common Data Service](overview.md) und die nachfolgenden Themen [Datenbanktransaktionen](database-transactions.md) und [Parallelitätsprobleme](concurrency-issues.md) haben die folgenden Konzepte mit Beispielen und Strategien beschrieben, die Ihnen helfen werden, zu verstehen, wie Sie skalierbare Anpassungen für Common Data Service entwerfen und implementieren.
 
 Einige wichtige Dinge, die Sie beachten sollten, sind die folgenden: 
 

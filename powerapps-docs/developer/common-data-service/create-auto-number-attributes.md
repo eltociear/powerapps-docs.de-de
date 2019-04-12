@@ -1,5 +1,5 @@
 ---
-title: Automatische Nummerierungsattribute erstellen (Common Data Service für Apps) | MicrosoftDocs
+title: Automatische Nummerierungsattribute erstellen (Common Data Service) | MicrosoftDocs
 description: 'Erfahren Sie über das Erstellen des automatischen Nummerierungsattributs in derselben Weise, wie Sie ein Zeichenfolgenattribut mithilfe der StringAttributeMetadata-Klasse erstellen, außer Verwendung der neuen AutoNumberFormat-Eigenschaft. Verwenden Sie die AutoNumberFormat-Eigenschaft, um ein Muster zu definieren, das Sequenznummern und zufällige Zeichenfolgen beim Zusammenstellen der Platzhalter enthält und die Länge und den Typ der generierten Werte bestimmt.'
 keywords: Automatische Nummerierungsattribute
 ms.custom: ''
@@ -18,7 +18,7 @@ search.app:
 ---
 # <a name="create-auto-number-attributes"></a>Automatische Nummerierungsattribute erstellen
 
-Mit Common Data Service for Apps können Sie ein Automatisches Nummerierungsattribut-Attribut für jede Entität hinzufügen. Im Moment können Sie das Attribut auch programmgesteuert hinzufügen. Es gibt keine Benutzerschnittstelle, um dieses Typ des Attributs hinzuzufügen. Dieses Thema erläutert, wie Sie ein automatisches Nummerierungsattribut programmgesteuert erstellen und einen Startwert für sequenzielle Elemente festlegen können. Außerdem wird im Thema gezeigt, wie die Sequenznummer für den nächsten Datensatz festgelegt wird, wenn Sie später den Startwert jederzeit zurücksetzen müssen.
+Mit Common Data Service können Sie ein automatisches Nummerierungsattribut für jede Entität hinzufügen. Im Moment können Sie das Attribut auch programmgesteuert hinzufügen. Es gibt keine Benutzerschnittstelle, um dieses Typ des Attributs hinzuzufügen. Dieses Thema erläutert, wie Sie ein automatisches Nummerierungsattribut programmgesteuert erstellen und einen Startwert für sequenzielle Elemente festlegen können. Außerdem wird im Thema gezeigt, wie die Sequenznummer für den nächsten Datensatz festgelegt wird, wenn Sie später den Startwert jederzeit zurücksetzen müssen.
 > [!NOTE]
 >Die Einstellung des Startwerts ist optional. Es ist nicht erforderlich, den Startwert anzurufen, wenn Sie den Startwert nicht erneut festlegen müssen.
 
@@ -136,7 +136,7 @@ Diese Beispiele zeigen, wie Sie die **AutoNumberFormat**-Eigenschaft konfigurier
 |`CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMMddhh}-{RANDSTRING:6}`|`CAS-002002-2017091309-HTZOUR`|
 |`CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMM}-{RANDSTRING:6}-{DATETIMEUTC:hhmmss}`|`CAS-002000-201709-Z8M2Z6-110901`|
 
-Die zufälligen Zeichenfolgenplatzhalter sind optional. Sie können mehr als einen zufälligen Zeichenfolgenplatzhalter einschließen. Verwenden Sie jeden der Formatwerte für Datum-Zeit-Platzhalter von [Standardzeichenfolgen für Datums- und Uhrzeitformat](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
+Die zufälligen Zeichenfolgenplatzhalter sind optional. Sie können mehr als einen zufälligen Zeichenfolgenplatzhalter einschließen. Verwenden Sie jeden der Formatwerte für Datum-Zeit-Platzhalter von [Standardzeichenfolgen für Datums- und Uhrzeitformat](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
 ### <a name="string-length"></a>Zeichenfolgenlänge
 
@@ -263,11 +263,11 @@ OData-Version: 4.0
 
 ### <a name="auto-number-manager"></a>Automatische Nummerierungmanager erstellen
 
-**[Automatischer Nummerierungsmanager](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** for XrmToolBox ist ein Community-basiertes Tool für CDS for Apps, das eine Benutzeroberfläche zum Einstellen, Aktualisieren und Entfernen des automatischen Zahlenformats für neue oder bestehende Attribute bereitstellt.
+**[Automatischer Zahlen-Manager](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** für XrmToolBox ist ein Community-gestütztes Werkzeug für Common Data Service, das eine Benutzeroberfläche bereitstellt, mit der das automatische Zahlenformat auf neuen oder vorhandenen Attributen festgelegt, aktualisiert und entfernt werden kann.
 Weitere Informationen finden Sie im [Entwicklertools](developer-tools.md) Thema für Community entwickelte Tools und [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) weitere Informationen zum automatischen Zahlen-Manager.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von CDS for Apps und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
+> Die Communitytools sind kein Produkt von Common Data Service und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
 
 
 ### <a name="see-also"></a>Siehe auch

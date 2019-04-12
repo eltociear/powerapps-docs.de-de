@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Messages mithilfe des Organisationsservices (Common Data Service für Apps) | Microsoft Docs
+title: Verwenden von Messages mithilfe des Organisationsservices (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Messages verwendet werden, um Vorgänge mithilfe des Organisationsservices aufzurufen.'
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,13 +1,13 @@
 ---
 title: Verwalten von benutzerdefinierten Feldern in einer Entität | Microsoft Docs
-description: 'Exemplarische Vorgehensweise zum Erstellen, Lesen, Aktualisieren und Löschen benutzerdefinierter Felder in einer Entität Common Data Service (CDS) for Apps.'
-author: clwesene
+description: 'Exemplarische Vorgehensweise zum Erstellen, Lesen, Aktualisieren und Löschen benutzerdefinierter Felder in einer Entität Common Data Service.'
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

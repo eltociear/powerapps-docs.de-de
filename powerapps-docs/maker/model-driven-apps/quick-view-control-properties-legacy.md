@@ -1,7 +1,7 @@
 ---
 title: Schnellansichts-Steuerlementeigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | MicrosoftDocs
 description: Grundlegendes zu Schnellansichts-Steuerlementeigenschaften für Hauptformulare
-Keywords: Quick view control properties; Dynamics 365; Main forms
+Keywords: Eigenschaften des Steuerelements für die Schnellansicht; Dynamics 365; Hauptformulare
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 68f68d5b-6c71-4b95-bb46-d48c59d9008e
 search.audienceType:

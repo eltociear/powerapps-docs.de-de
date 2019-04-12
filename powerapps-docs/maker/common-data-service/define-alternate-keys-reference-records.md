@@ -1,10 +1,10 @@
 ---
-title: 'Definieren Sie Alternativschlüssel, um Datensätze mit Common Data Service for Apps zu verweisen | MicrosoftDocs'
-description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um Datensätze in Common Data Service for Apps zu verweisen'
+title: 'Definieren Sie Alternativschlüssel, um Datensätze mit Common Data Service zu verweisen | MicrosoftDocs'
+description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um Datensätze in Common Data Service zu verweisen'
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Definieren von Alternativschlüsseln für den Verweis auf Datensätze
 
-*Alternativschlüsseln* bieten eine genaue und effiziente Methode der Integration mit Daten aus externen Systemen. Es ist von größter Wichtigkeit, wenn ein externes System die IDs des Globally Unique Identifier (GUID) nicht speichern, die Datensätze im Common Data Service for Apps eindeutig identifizieren. 
+*Alternativschlüsseln* bieten eine genaue und effiziente Methode der Integration mit Daten aus externen Systemen. Wenn ein externes System die IDs des Globally Unique Identifier (GUID) nicht speichern, ist es von größter Wichtigkeit, dass die Datensätze im Common Data Service eindeutig identifiziert werden. 
 
 Ein Datenintegrationssystem verwendet Alternativschlüssel, um Datensätze mit einem oder mehreren Entitätsfeldwerten, die eine eindeutige Kombination darstellen, eindeutig zu identifizieren. Jeder Alternativschlüssel hat einen eindeutigen Namen. 
 
@@ -61,7 +61,7 @@ Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie v
 
 Sie sollten das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um Alternative Schlüssel zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
-- Erstellen eines Alternativschlüssels in einer Lösung die keine Common Data Service for Apps -Standardlösung ist
+- Erstellen eines Alternativschlüssels in einer Lösung die keine Common Data Service-Standardlösung ist
 - Sie möchten den erstellten Systemauftrag, der den Status der Erstellung der unterstützenden Indizes nachverfolgt, ganz leicht nachverfolgen
 
 

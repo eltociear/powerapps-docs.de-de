@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Patches zur Vereinfachung von Lösungsupdates (Common Data Service for Apps) | Microsoft Docs
+title: Erstellen von Patches zur Vereinfachung von Lösungsupdates (Common Data Service) | Microsoft Docs
 description: 'Patches helfen Ihnen, Entitäten und zugehörigen Ressourcen zu verwalten, wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, werden die Entität und alle ihre verknüpften Objekte in die Lösung exportiert.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,12 +19,12 @@ search.app:
 
 Wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, werden die Entität und alle ihre verknüpften Objekte in die Lösung exportiert. Diese Objekte umfassen Attribute, Formulare, Ansichten, Beziehungen und Visualisierungen und alle anderen Objekte, die zusammen mit der Entität ausgeliefert wurden. Alle Objekte zu exportieren bedeutet, dass Sie unbeabsichtigt Objekte in der Zielbereitstellung ändern können oder unbeabsichtigte Abhängigkeiten übertragen können.  
   
- Um dies zu lösen, können Sie entweder Lösungspatches erstellen und veröffentlichen, die Unterkomponenten von Entitäten enthalten, anstatt eine vollständige Entität und alle ihre Objekte zu erstellen.  Die ursprüngliche Lösung und eines oder mehrere verknüpfte Patches können zu einem späteren Zeitpunkt als Rollup (Zusammenführung) in einer aktualisierten Version bereitgestellt werden, die dann die ursprüngliche Lösung in der Common Data Service for Apps-Zielorganisation ersetzt.  
+ Um dies zu lösen, können Sie entweder Lösungspatches erstellen und veröffentlichen, die Unterkomponenten von Entitäten enthalten, anstatt eine vollständige Entität und alle ihre Objekte zu erstellen.  Die ursprüngliche Lösung und eines oder mehrere verknüpfte Patches können zu einem späteren Zeitpunkt als Rollup (Zusammenführung) in einer aktualisierten Version bereitgestellt werden, die dann die ursprüngliche Lösung in der Common Data Service-Zielorganisation ersetzt.  
   
 ## <a name="patches"></a>Patches  
  Sie können entweder Patches auf verwaltete oder nicht verwaltete Lösungen anwenden und nur Änderungen an Entitäten und verknüpften Entitätsobjekten einfügen. Patches enthalten keine nicht-angepassten Systemkomponenten oder -beziehungen, von denen sie abhängen, da diese Komponenten bereits in der Organisation vorhanden sind, für die sie bereitgestellt wurden. Zu einem bestimmten Zeitpunkt in Ihrem Bereitstellungszyklus können Sie ein Rollup aller Patches in eine neue Lösungsversion durchführen, um die ursprüngliche Lösung zu ersetzen, aus der heraus die Patches erstellt wurden.  
   
- Patches werden in der CDS for Apps-Datenbank als `Solution`-Entitätsdatensätze gespeichert. Ein Nicht-null-`ParentSolutionId`-Attribut gibt an, dass die Lösung ein Patch ist. Patches können durch den Organisationsdienst oder Web-APIs erstellt und verwaltet werden. Diese sind nützlich für die Entwicklung von Automatisierung, wie beispielsweise ein Produktinstallationsskript. Allerdings stellt die CDS for Apps-Webanwendung verschiedene Webformulare bereit, mit denen Sie Patches interaktiv erstellen und verwalten können.  
+ Patches werden in der Common Data Service-Datenbank als `Solution`-Entitätsdatensätze gespeichert. Ein Nicht-null-`ParentSolutionId`-Attribut gibt an, dass die Lösung ein Patch ist. Patches können durch den Organisationsdienst oder Web-APIs erstellt und verwaltet werden. Diese sind nützlich für die Entwicklung von Automatisierung, wie beispielsweise ein Produktinstallationsskript. Allerdings stellt die Common Data Service-Webanwendung verschiedene Webformulare bereit, mit denen Sie Patches interaktiv erstellen und verwalten können.  
   
 - Patches können nur von einer übergeordneten Lösung aus mithilfe von <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> oder <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" /> erstellt werden.  
   
@@ -48,7 +48,7 @@ Wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, we
   
 - Verwenden Sie keine unverwalteten Patches für Produktionszwecke.  
   
-- Patches werden nur in CDS for Apps-Organisationen der Version 8.0 oder höher unterstützt.  
+- Patches werden nur in Common Data Service-Organisationen der Version 8.0 oder höher unterstützt.  
   
   Die SolutionPackager- und PackageDeployer-Tools in dieser Version unterstützen Lösungspatches. Weitere Informationen erhalten Sie in der Onlinehilfe des Tools für alle Befehlszeilenoptionen, die mit Patches verknüpft sind.  
   
@@ -99,7 +99,7 @@ Wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, we
   
  Für eine nicht verwaltete Lösung müssen Sie alle Patches der Basislösung zuerst löschen, in der umgekehrten Versionsreihenfolge, als in der sie erstellt wurden, bevor Sie die Basislösung deinstallieren.  
   
- Für eine verwaltete Lösung deinstallieren Sie einfach die Basislösung. Das CDS for Apps-System deinstalliert automatisch die Patches in umgekehrter Versionsreihenfolge, bevor die Basislösung deinstalliert wird. Sie können auch einfach einen einzelnen Patch deinstallieren.  
+ Für eine verwaltete Lösung deinstallieren Sie einfach die Basislösung. Das Common Data Service-System deinstalliert automatisch die Patches in umgekehrter Versionsreihenfolge, bevor die Basislösung deinstalliert wird. Sie können auch einfach einen einzelnen Patch deinstallieren.  
   
 ## <a name="update-a-solution"></a>Eine Lösung aktualisieren  
  Beim Aktualisieren einer Lösung wird ein Rollup (Zusammenführung) aller Patches für diese Lösung in eine neue Version der Lösung ausgeführt. Danach wird die Lösung entsperrt und kann erneut geändert werden (nur nicht verwaltete Lösung) oder exportiert werden. Für eine verwaltete Lösung sind keine weiteren Änderungen der Lösung zulässig, außer wenn Patches aus der neu aktualisierten Lösung erstellt werden. Wenn Sie einen Rollup für Patches in eine nicht verwaltete Lösung ausführen, verwenden Sie <xref:Microsoft.Crm.Sdk.Messages.CloneAsSolutionRequest> oder die <xref href="Microsoft.Dynamics.CRM.CloneAsSolution?text=CloneAsSolution Action" />. Beim Clonen einer Lösung wird eine neue Version der nicht verwalteten Lösung erstellt. Dabei werden alle ihre Patches einbezogen, mit einer höheren *major.minor*-Versionsnummer, demselben eindeutigen Namen und einem Anzeigename.  

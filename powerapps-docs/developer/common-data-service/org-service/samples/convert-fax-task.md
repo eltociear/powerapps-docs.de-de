@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Konvertieren Sie Faxe in Abfragen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Konvertieren Sie Faxe in Abfragen (Common Data Service) | Microsoft Docs'
 description: 'Beispiel, das zeigt, wie man einen Fax in eine Aufgabe umwandelt. '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-convert-a-fax-to-a-task"></a>Beispiel: Konvertieren eines Faxes für eine Aufgabe
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-convert-fax-task -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-convert-fax-task -->
 
 
 Beispiel, das zeigt, wie man einen **Fax** in eine **Aufgabe** umwandelt. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertFaxToTask) herunterladen.

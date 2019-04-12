@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 3: Erstellen einer verwaltete Lösung für die App (Common Data Service for Apps) | Microsoft Docs'
+title: 'Schritt 3: Erstellen einer verwaltete Lösung für die App (Common Data Service) | Microsoft Docs'
 description: 'Lernen Sie, wie Sie eine verwaltete Lösung erstellen, sodass die App alle Komponenten einschließt. Dies ist für das Veröffentlichen einer serverseitigen Synchronisierung Appsource erforderlich.'
 ms.custom: ''
 ms.date: 10/31/2018

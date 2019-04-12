@@ -1,5 +1,5 @@
 ---
-title: 'Azure-fähiges, benutzerdefiniertes Plug-In (Common Data Service für Apps) | Microsoft Docs'
+title: 'Azure-fähiges, benutzerdefiniertes Plug-In (Common Data Service) | Microsoft Docs'
 description: Dieses Beispiel-Plugin kann den Pipeline-Ausführungskontext auf den Azure Service Bus posten.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-azure-aware-custom-plug-in"></a>Beispiel: Benutzerdefiniertes Azure-fähiges Plug-In
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-azure-aware-custom-plugin -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-azure-aware-custom-plugin -->
 
 Das Plug-In demonstriert, wie der Ausführungskontext und der Nachverfolgungsdienst vom Dienstanbieterparameter der `Execute`-Methode abgerufen werden kann. Das Plug-In veröffentlicht den Kontext dann auf dem Azure Service Bus-Endpunkt und schreibt Informationen in das Ablaufverfolgungsprotokoll, um das Debuggen zu erleichtern. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/Azureplugin) herunterladen.
 

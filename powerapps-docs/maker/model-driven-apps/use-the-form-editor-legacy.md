@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie Sie die Navigation in einem Formular ändern'
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
   
  Alle Entitätsbeziehungen, die so konfiguriert werden, dass sie angezeigt werden, können im Formular-Editor überschrieben werden. Sie können auch Navigationslinks einschließen, um Webressourcen oder andere Websites per Formularnavigation anzuzeigen.  
   
- Detaillierte Anweisungen finden Sie unter [Erstellen oder Bearbeiten von Entitätsbeziehungen für Common Data Service for Apps](../common-data-service/create-edit-entity-relationships.md)  
+ Detaillierte Anweisungen finden Sie unter [Erstellen oder Bearbeiten von Entitätsbeziehungen für Common Data Service](../common-data-service/create-edit-entity-relationships.md)  
   
  Zur Aktivierung der Bearbeitung der Navigation müssen Sie zuerst den Befehl **Navigation** in der Gruppe **Auswählen** auf der Registerkarte **Start** des Formular-Designers auswählen.  
  

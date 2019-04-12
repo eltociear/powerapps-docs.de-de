@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service for Apps) | Microsoft Docs
+title: <Topic Title> (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,16 +19,16 @@ search.app:
 
 <!-- 
 Was Mike Carter
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/upload-manage-document-templates
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/upload-manage-document-templates
 
-Add the short description from  https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/template-entities which was not migrated.
+Add the short description from  https://docs.microsoft.com/dynamics365/customer-engagement/developer/template-entities which was not migrated.
 -->
 
-Bei Common Data Service für Apps helfen Ihnen die Entitäten des Typs *Vorlage* dabei, konsistente Layouts und konsistente Inhalte in E-Mails, Artikeln, Seriendruckdokumenten und Microsoft Office-Dokumenten zu erstellen (Excel und Word).
+Bei Common Data Service helfen Ihnen die Entitäten des Typs *Vorlage* dabei, konsistente Layouts und konsistente Inhalte in E-Mails, Artikeln, Seriendruckdokumenten und Microsoft Office-Dokumenten zu erstellen (Excel und Word).
 
 Dies sind die Typen der Vorlagenentitäten:
 
-<!-- Not in CDS, must be in service ContractTemplate  -->
+<!-- Not in Common Data Service, must be in service ContractTemplate  -->
 - [DocumentTemplate](reference/entities/documenttemplate.md)
 - [KbArticleTemplate](reference/entities/kbarticletemplate.md) 
 - [MailMergeTemplate](reference/entities/mailmergetemplate.md) 

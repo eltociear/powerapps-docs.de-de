@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Überwachung von Entitätsdatenänderungen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Überwachung von Entitätsdatenänderungen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie Entitätsdatenenänderungen überwachen.'
 ms.custom: ''
 ms.date: 10/31/2018

@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie Sie eine Entität mithilfe des Lösungsexplorers
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -106,9 +106,9 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 Die folgenden Typen von Änderungen können vorgenommen werden:
-- Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
 - [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
-- [Erstellen und Gestalten von Formularen](../model-driven-apps/create-design-forms.md)
+- [Formulare erstellen und gestalten](../model-driven-apps/create-design-forms.md)
 - [Einen neuen Geschäftsprozessfluss erstellen, um Prozesse zu standardisieren](/flow/create-business-process-flow)
 
 ## <a name="delete-an-entity"></a>Löschen einer Entität
@@ -197,6 +197,6 @@ Einige Optionen werden nur verwendet, falls eine virtuelle Entität erstellt wir
 Mehr Informationen: [Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>Siehe auch
-[Erstellen und bearbeiten Sie Entitäten in Common Data Service for Apps | MicrosoftDocs](create-edit-entities.md)<br />
+[Erstellen und bearbeiten Sie Entitäten in Common Data Service](create-edit-entities.md)<br />
 [Lernprogramm: Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Erstellen einer Lösung](create-solution.md)

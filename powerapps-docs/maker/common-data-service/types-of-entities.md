@@ -3,7 +3,7 @@ title: Arten von Entitäten | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 ---
 # <a name="types-of-entities"></a>Typen von Entitäten
 
-Bevor Sie Entitäten in Common Data Service for Apps erstellen oder bearbeiten, sollten Sie wissen, dass es verschiedene Arten von Entitäten gibt. Nachdem eine benutzerdefinierte Entität erstellt wurde, können diese Typen nicht geändert werden. Die beiden wichtigen Typen basieren auf dem Entitätsbesitz und darauf, ob es sich um aktive Entitäten handelt.  
+Bevor Sie Entitäten in Common Data Service erstellen oder bearbeiten, sollten Sie wissen, dass es verschiedene Arten von Entitäten gibt. Nachdem eine benutzerdefinierte Entität erstellt wurde, können diese Typen nicht geändert werden. Die beiden wichtigen Typen basieren auf dem Entitätsbesitz und darauf, ob es sich um aktive Entitäten handelt.  
   
 <a name="BKMK_EntityOwnership"></a>
 
@@ -51,7 +51,7 @@ Eine Aktivität ist eine Aktion, für die ein Eintrag in einem Kalender vorgenom
   
 Aktivitätsentitäten können jeweils nur einen Benutzer oder ein Team als Besitzer haben, eine Organisation ist dafür nicht möglich.  
   
-Die folgende Tabelle listet Aktivitätsentitäten auf, die in einer Standard CDS for Apps Umgebung verfügbar sind.
+Die folgende Tabelle listet Aktivitätsentitäten auf, die in einer Standard Common Data Service-Umgebung verfügbar sind.
   
 |Name|Beschreibung|In Aktivitätsmenüs anzeigen|Referenz|
 |----------|-----------------|----------------|---------------|  

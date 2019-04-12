@@ -1,6 +1,6 @@
 ---
 title: Anzeigen von Daten mit Visualisierungen (Diagrammen) (modellgesteuerte Apps) | Microsoft Docs
-description: 'Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird an eine Entität in Common Data Services für Apps angehängt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden.'
+description: 'Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird an eine Entität in Common Data Service angehängt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,9 @@ search.app:
 ---
 # <a name="view-data-with-visualizations-charts"></a>Daten mit Visualisierungen (Diagramme) anzeigen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/view-data-with-visualizations-charts -->
-
-
-Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird an eine Entität in Common Data Services für Apps angehängt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden. Weitere Informationen: [Analyisieren von Daten mit Dashboards](analyze-data-with-dashboards.md)  
+Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Visualisierung wird an eine Entität in Common Data Service angehängt. Sie können mehrere Visualisierungen an eine Entität anfügen, jedoch kann jeweils nur eine Visualisierung neben einem Raster gleichzeitig angezeigt werden. Sie können gleichzeitig mehrere Visualisierungen anzeigen, indem Sie ein Dashboard verwenden. Weitere Informationen: [Analyisieren von Daten mit Dashboards](analyze-data-with-dashboards.md)  
   
- Sie können ein Diagramm oder eine Webressource als Visualisierung in CDS für Apps verwenden. Für Diagramme können Sie den Diagrammdesigner in "Modellgesteuerte Apps" verwenden. Um jedoch eine Webressource in einer Visualisierung zu verwenden, müssen Sie entweder das SDK verwenden oder eine benutzerdefinierte Visualisierungs-XML in "Modellgesteuerte Apps" importieren.
+ Sie können ein Diagramm oder eine Webressource als Visualisierung in Common Data Service verwenden. Für Diagramme können Sie den Diagrammdesigner in "Modellgesteuerte Apps" verwenden. Um jedoch eine Webressource in einer Visualisierung zu verwenden, müssen Sie entweder das SDK verwenden oder eine benutzerdefinierte Visualisierungs-XML in "Modellgesteuerte Apps" importieren.
   
 <a name="VisualizationTypes"></a>   
 ## <a name="visualization-ownership"></a>Visualisierungsbesitz  
@@ -50,7 +47,7 @@ Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Vi
 ### <a name="chart-types-in-microsoft-chart-controls"></a>Diagrammtypen in Microsoft-Diagrammsteuerelementen  
  Microsoft Chart Controls wird verwendet, um Diagramme in modellgesteuerten Apps zu erstellen. Microsoft Chart Controls ermöglichen es Ihnen, verschiedene Diagrammtypen zu erstellen, wie z. B. Spalten, Balken, Bereich, gestapelt, Zeilen, Blasen und Kreis.  
   
- Die folgenden Diagrammtypen werden vorkonfiguriert in "CDS für Apps" unterstützt: *Spalte*, *Bereich*, *Balken*, *Zeile*, *Kreis* und *Trichter*. Sie können die Funktionalität aber erweitern, indem Sie weitere unterstützte Microsoft Chart Controls-Diagrammtypen wie Mehrfachdiagramme, gestapelte Diagramme und 100 % gestapelte (Vergleichs-) Diagramme erstellen, indem Sie entsprechende Inhalte in den Datenbeschreibungs- und den Darstellungsbeschreibungs-XML-Zeichenfolgen für ein Diagramm angeben. Weitere Informationen: [Angeben der Diagrammdaten](understand-charts-underlying-data-chart-representation.md)  
+ Die folgenden Diagrammtypen werden vorkonfiguriert in Common Data Service unterstützt: *Spalte*, *Bereich*, *Balken*, *Zeile*, *Kreis* und *Trichter*. Sie können die Funktionalität aber erweitern, indem Sie weitere unterstützte Microsoft Chart Controls-Diagrammtypen wie Mehrfachdiagramme, gestapelte Diagramme und 100 % gestapelte (Vergleichs-) Diagramme erstellen, indem Sie entsprechende Inhalte in den Datenbeschreibungs- und den Darstellungsbeschreibungs-XML-Zeichenfolgen für ein Diagramm angeben. Weitere Informationen: [Angeben der Diagrammdaten](understand-charts-underlying-data-chart-representation.md)  
   
 <a name="WebResources"></a>   
 ## <a name="web-resource-visualizations"></a>Webressourcenvisualisierungen  
@@ -60,7 +57,7 @@ Mit Visualisierungen können Sie Ihre Geschäftsdaten grafisch anzeigen. Eine Vi
   
 <a name="SupportedVisualizationEntities"></a>   
 ## <a name="entities-supported-for-visualizations"></a>Für Visualisierungen unterstützte Entitäten  
- Sie können Visualisierungen erstellen und diese nur an die Entitäten in CDS für Apps anfügen, die die neue Menübandschnittstelle unterstützen. Dies ist darauf zurückzuführen, dass die Diagrammsteuerelemente nur in der Menübandschnittstelle von CDS für Apps verfügbar sind. Benutzerdefinierte Entitäten werden ebenfalls für Visualisierungen unterstützt. Sie können für benutzerdefinierte Entitäten die Visualisierungsunterstützung deaktivieren, wenn Sie dies wünschen. Allerdings können Sie die Visualisierungsunterstützung nicht für standardmäßige Entitäten deaktivieren.  
+ Sie können Visualisierungen erstellen und diese nur an die Entitäten in Common Data Service anfügen, die die neue Menübandschnittstelle unterstützen. Dies ist darauf zurückzuführen, dass Diagrammsteuerelemente nur in der Menübandschnittstelle von Common Data Service verfügbar sind. Benutzerdefinierte Entitäten werden ebenfalls für Visualisierungen unterstützt. Sie können für benutzerdefinierte Entitäten die Visualisierungsunterstützung deaktivieren, wenn Sie dies wünschen. Allerdings können Sie die Visualisierungsunterstützung nicht für standardmäßige Entitäten deaktivieren.  
   
  Nachfolgend werden die standardmäßigen Entitäten aufgeführt, die für Visualisierungen unterstützt werden.  
   

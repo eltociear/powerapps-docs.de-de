@@ -1,5 +1,5 @@
 ---
-title: Verwenden von spät gebundenen Entitätsklassen mit einer LINQ-Abfrage (Common Data Service für Apps) | Microsoft Docs
+title: Verwenden von spät gebundenen Entitätsklassen mit einer LINQ-Abfrage (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie die späte Bindung mit .NET Language-Integrated Query (LINQ)-Abfragen verwenden können'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-late-bound-entity-class-with-a-linq-query"></a>Verwenden von spät gebundenen Entitätsklassen mit einer LINQ-Abfrage
 
-In Common Data Service für Apps können Sie die späte Bindung mit .NET Language-Integrated Query (LINQ)-Abfragen verwenden. Späte Bindung verwendet den logischen Namen des Attributs und wird zur Laufzeit aufgehoben.  
+In Common Data Service können Sie die späte Bindung mit .NET Language-Integrated Query (LINQ)-Abfragen verwenden. Späte Bindung verwendet den logischen Namen des Attributs und wird zur Laufzeit aufgehoben.  
   
 <a name="usinglatebindingjoin"></a>   
 

@@ -1,5 +1,5 @@
 ---
-title: Optionssätze anpassen (Common Data Service für Apps) | Microsoft Docs
+title: Optionssätze anpassen (Common Data Service) | Microsoft Docs
 description: 'Beschreibt, wie mit globalen und lokale Optionssätzen im Code gearbeitet wird.'
 ms.custom: ''
 ms.date: 10/31/2018

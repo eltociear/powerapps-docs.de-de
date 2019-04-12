@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren eines wiederkehrenden Termins (Common Data Service für Apps) | Microsoft Docs
+title: Aktualisieren eines wiederkehrenden Termins (Common Data Service) | Microsoft Docs
 description: Aktualisieren Sie wiederkehrende Terminsehrie mit der IOrganizationService.Entity-Methode oder der UpdateRequest-Nachricht für die RecurringAppointmentMaster-Entität.
 ms.custom: ''
 ms.date: 10/31/2018

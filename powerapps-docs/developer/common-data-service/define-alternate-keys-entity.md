@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit alternativen Schlüsseln (Common Data Service for Apps) | Microsoft Docs
+title: Arbeiten mit alternativen Schlüsseln (Common Data Service) | Microsoft Docs
 description: 'Das Thema erläutert, wie Sie Alternativschlüssel für eine Entität erstellen. Sie können Alternativschlüssel programmgesteuert erstellen oder mithilfe der Anpassungstools.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="work-with-alternate-keys"></a>Arbeiten mit Alternativschlüsseln
 
-Alle Common Data Service for Apps-Datensätze haben eindeutige Bezeichner, die als GUIDs definiert sind. Diese sind der Primärschlüssel für jede Entität. Wenn Sie mit einem externen Datenspeicher integrieren müssen, können Sie möglicherweise eine Spalte zu externen Datenbanktabellen hinzufügen, sodass ein Verweis zum eindeutigen Bezeichner in CDS for Apps vorhanden ist. Dies ermöglicht einen lokalen Verweis für einen Link zu dem CDS for Apps-Datensatz. Manchmal können Sie jedoch die externe Datenbank nicht ändern. Mit Alternativschlüsseln können Sie jetzt ein Attribut in einer CDS for Apps-Entität definieren, um einem eindeutigen Bezeichner (oder einer eindeutigen Kombination von Spalten), der vom externen Datenspeicher verwendet wird, zu entsprechen. Sie können diesen Alternativschlüssel anstelle des Primärschlüssels verwenden, um einen Datensatz in CDS for Apps eindeutig zu identifizieren. Sie müssen in der Lage sein, zu definieren, welche Attribute eine eindeutige Identität für Ihre Datensätze darstellen. Nachdem Sie die Attribute ermittelt haben, die für die Entität eindeutig sind, können sie als Alternativschlüssel über die Anpassungs-Benutzeroberfläche oder im Code deklariert werden. Dieses Thema enthält Informationen zum Festlegen von Alternativschlüsseln im Datenmodell.  
+Alle Common Data Service-Datensätze haben eindeutige Bezeichner, die als GUIDs definiert sind. Diese sind der Primärschlüssel für jede Entität. Wenn Sie mit einem externen Datenspeicher integrieren müssen, können Sie möglicherweise eine Spalte zu externen Datenbanktabellen hinzufügen, sodass ein Verweis zum eindeutigen Bezeichner in Common Data Service vorhanden ist. Dies ermöglicht einen lokalen Verweis für einen Link zu dem Common Data Service-Datensatz. Manchmal können Sie jedoch die externe Datenbank nicht ändern. Mit Alternativschlüsseln können Sie jetzt ein Attribut in einer Common Data Service-Entität definieren, um einem eindeutigen Bezeichner (oder einer eindeutigen Kombination von Spalten), der vom externen Datenspeicher verwendet wird, zu entsprechen. Sie können diesen Alternativschlüssel anstelle des Primärschlüssels verwenden, um einen Datensatz in Common Data Service eindeutig zu identifizieren. Sie müssen in der Lage sein, zu definieren, welche Attribute eine eindeutige Identität für Ihre Datensätze darstellen. Nachdem Sie die Attribute ermittelt haben, die für die Entität eindeutig sind, können sie als Alternativschlüssel über die Anpassungs-Benutzeroberfläche oder im Code deklariert werden. Dieses Thema enthält Informationen zum Festlegen von Alternativschlüsseln im Datenmodell.  
 
 <a name="BKMK_Declare"></a>
 
@@ -47,7 +47,7 @@ Sie sollten folgende Einschränkungen berücksichtigen, wenn Alternativschlüsse
 
 - **Maximale Anzahl an Alternativschlüsseldefinitionen für eine Entität**  
 
-   Es gibt ein Maximum von 5 Alternativschlüsseldefinitionen für eine Entität in einer CDS for Apps-Instanz.  
+   Es gibt ein Maximum von 5 Alternativschlüsseldefinitionen für eine Entität in einer Common Data Service-Instanz.  
 
 - **Unicode-Zeichen im Schlüsselwert**
 

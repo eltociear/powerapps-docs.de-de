@@ -1,6 +1,6 @@
 ---
 title: Datenanalyse mit Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
-description: 'Die Dashboardentitäten in Dynamics 365 Common Data Service for Apps ermöglichen Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.'
+description: 'Die Dashboard-Entitäten in Dynamics 365 Common Data Service ermöglichen es Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.'
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="analyze-data-with-dashboards"></a>Analysieren von Daten mit Dashboards
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
 
-Die Dashboardentitäten in Common Data Service for Apps ermöglichen Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.  
+Die Dashboardentitäten in Common Data Service ermöglichen es Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.  
   
 ## <a name="types-of-dashboards"></a>Dashboardtypen  
 Es stehen zwei Arten von Dashboards zur Verfügung: Dashboards im Besitz der Organisation und Dashboards im Besitz des Benutzers.  
@@ -45,6 +45,8 @@ Ein Dashboard im Besitz des Benutzers wird durch die `UserForm`-Entität dargest
  [Aktionen für Dashboards](actions-dashboards.md)   
  [Erstellen eines Dashboards](create-dashboard.md)   
  [Beispiel-Dashboards](sample-dashboards.md)   
- [Dashboard-Entitäten](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities) <!-- TODO: Need to find the topic in powerapps repo to link--> [Beispiel: Erstellen, Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Dashboards](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO: Need to find the topic in powerapps repo to link-->  
- [Beispiel: Zuweisen eines benutzerdefinierten Dashboards an einen anderen Benutzer ](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user) <!-- TODO: Need to find the topic in powerapps repo to link--> [Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)     
+ [Dashboardentitäten](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities)   <!-- TODO: Need to find the topic in powerapps repo to link-->
+ [Beispiel: Ein Dashboard erstellen, abrufen, aktualisieren und löschen (EAAL)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO: Need to find the topic in powerapps repo to link-->  
+ [Beispiel: Zuweisen eines Dashboards im Besitz eines Benutzers an einen anderen Benutzer](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)  <!-- TODO: Need to find the topic in powerapps repo to link--> 
+ [Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)     
  [Anpassen von Visualisierungen und Dashboards](customize-visualizations-dashboards.md)

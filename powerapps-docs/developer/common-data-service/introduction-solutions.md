@@ -24,11 +24,11 @@ search.app:
 
 # <a name="introduction-to-solutions"></a>Einführung in Lösungen
 
-*Lösungen* wie Anpasser und Entwickler Lösungen von Softwareeinheiten erstellen, und verpacken, die Common Data Service (CDS) für Apps verpacken und verwalten. Beispielsweise sind Dynamics 365 for Sales, Marketing, Kundenservice Apps von Lösungen verfasst. Anpasser und Entwickler verteilen Lösungen, sodass Organisationen Common Data Service for Apps verwenden können, um die Funktionalität für das Unternehmen, das durch die Lösung definiert ist, installieren und deinstallieren.
+Mit *Lösungen* erstellen, verpacken und verwalten Anpasser und Entwickler Softwareeinheiten, die Common Data Service erweitern. Beispielsweise sind Dynamics 365 for Sales, Marketing, Kundenservice Apps von Lösungen verfasst. Anpasser und Entwickler verteilen Lösungen, sodass Organisationen Common Data Service verwenden können, um die Funktionalität für das Unternehmen, das durch die Lösung definiert ist, installieren und deinstallieren.
 
-Alle Anpassungen, die Sie an den CDS Apps oder einer bereits installierten Lösung machen, ist Teil einer Lösung. Jede Änderung, die Sie haben, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösungen exportiert, enthält sie alle Änderungen, die für die Lösung in eine Datei angewendet wurden, die Sie in verschiedenen CDS für App-Umgebung importieren können.
+Alle Anpassungen, die Sie an Common Data Service oder eine bereits installierte Lösung vornehmen, ist Teil einer Lösung. Jede Änderung, die Sie haben, wird nachverfolgt, und alle Abhängigkeiten können berechnet werden. Wenn Sie eine verwaltete Lösungen exportieren, enthält sie alle Änderungen, die für die Lösung in eine Datei angewendet wurden, die Sie in verschiedenen Common Data Service-Umgebung importieren können.
 
-Wenn Sie Anpassungen oder Erweiterungen zwischen verschiedenen CDS für App-Umgebungen übertragen oder Lösungen mit AppSource verteilen, müssen Sie das Lösungsframework kennen.
+Wenn Sie Anpassungen oder Erweiterungen zwischen verschiedenen Common Data Service-Umgebungen übertragen oder Lösungen mit AppSource verteilen, müssen Sie das Lösungsframework kennen.
 
 > [!NOTE]
 > Ausführliche Informationen dazu, wie Sie effektiv Lösungen für eine erfolgreiche Implementierung Anwendungslebenszyklusverwaltung (ALM)- wird, finden Sie unter [Whitepaper: Lösungs-Lebenszyklus-Verwaltung](https://www.microsoft.com/en-us/download/details.aspx?id=57777)
@@ -70,20 +70,20 @@ Weitere Informationen: [Verwalten von verwaltete Lösungen > Verwaltete Lösungs
 
 ## <a name="create-a-solution-publisher-and-solution"></a>Erstellen eines Lösungsherausgebers und einer Lösung 
 
-Einen Lösungsherausgeber und eine Lösung erstellen, die zum CDS für App-Anpassungsbereich navigieren müssen.
+Um einen Lösungsherausgeber und eine Lösung zu erstellen, müssen Sie zum Common Data Service-Anpassungsbereich navigieren.
 
 Von [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
 1. Wählen Sie das Symbol *Waffel* oben links aus
 2. Wählen Sie **Alle Apps**.
-3. Suchen Sie nach **CDS für Apps - benutzerdefinierte App**.
+3. Suchen Sie nach **Common Data Service - benutzerdefinierte App**.
  Sie können auf die Ellipse (...) klicken und **App anheften** auswählen, sodass die Navigation beim nächsten Mal einfacher ist.
-4. Klicken Sie auf **CDS für Apps - benutzerdefinierte App** App und wählen Sie sie aus.
+4. Klicken Sie auf die App **Common Data Service - benutzerdefinierte App** und wählen Sie sie aus.
 5. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
 Von [home.dynamics.com](http://home.dynamics.com/)
 
-1. Suchen Sie die Kachel **CDS für Apps - benutzerdefinierte App** und klicken Sie darauf.
+1. Suchen Sie nach dem Titel **Common Data Service - benutzerdefinierte App** und klicken Sie darauf.
 2. Navigieren Sie auf **Einstellungen** > **Anpassung** > **Anpassungen**.
 
 ### <a name="create-a-solution-publisher"></a>Erstellen eines Lösungsherausgebers
@@ -113,7 +113,7 @@ Von [home.dynamics.com](http://home.dynamics.com/)
 
 Es ist möglich für zwei verwalteten Lösung, dass sie so installiert werden, dass sie sich widersprechen oder dass gewisse Anpassungen, die für die Organisationen angewendet werden, eine verwaltete Lösung überschreiben. Wie funktioniert die Anwendung?
 
-Das geht, weil Common Data Service für Apps verwaltete Lösungen über die Reihenfolge evaluiert, in der sie installiert wurden und alle Anpassungen, die nicht in einer verwalteten Lösung sind, zuletzt ausgewertet werden.
+Das geht, weil Common Data Service verwaltete Lösungen in der Reihenfolge evaluiert, in der sie installiert wurden, und alle Anpassungen, die nicht in einer verwalteten Lösung sind, zuletzt ausgewertet werden.
 
 Im folgenden Diagramm wird erläutert, wie verwaltete Lösungen und nicht verwaltete Anpassungen interagieren, um das Anwendungsverhalten zu steuern.
 
@@ -147,16 +147,16 @@ Verwenden Sie die *Package Deployer*, um ein benutzerdefiniertes Installationspr
 - Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket  bereitgestellt wurde.
 - inhaltsspezifische HTML für das Paket, das bei Start und Ende des Bereitstellungsprozesses angezeigt werden kann. Dies kann nützlich sein, um eine Beschreibung der Lösungen und Dateien bereitzustellen, die im Paket bereitgestellt werden.
 
-Weitere Informationen: [Erstellen von Paketen für den CDS for Apps Package Deployer](package-deployer/create-packages-package-deployer.md)
+Weitere Informationen: [Erstellen von Paketen für den Package Deployer von Common Data Service](package-deployer/create-packages-package-deployer.md).
 
 ## <a name="team-development-of-solutions"></a>Teamentwicklung von Lösungen
 
 Eine Lösungsdatei ist jedoch eine einzelne Binärdatei, die sich nicht für die Quellcodeverwaltung oder Teamentwicklung anbietet. Es gibt keine Möglichkeit, dass mehrere Entwickler die benutzerdefinierten Komponenten in der Lösung bearbeiten.
 
-Das *SolutionPackager-Tool* löst das Problem der Quellcodeverwaltung und Teamentwicklung von Lösungsdateien. Das Tool identifiziert einzelne Komponenten in der komprimierten Lösungsdatei und extrahiert sie in einzelne Dateien. Das Tool kann eine Lösungsdatei auch neu erstellen, indem die zuvor extrahierten Dateien gepackt werden. Dadurch können mehrere Personen unabhängig voneinander an einer einzelnen Lösung arbeiten und die Änderungen an eine gemeinsame Stelle extrahieren. Da jede Komponente in der Lösungsdatei in mehrere Dateien zerlegt wurde, ist es möglich, Anpassungen zusammenzuführen, ohne vorherige Änderungen zu überschreiben. Eine zweite Verwendungsmöglichkeit des SolutionPackager-Tools ist, dass es von einem automatischen Buildprozess aufgerufen werden kann, um eine komprimierte Lösungsdatei aus zuvor extrahierten Komponentendateien zu generieren, ohne dass eine aktive CDS for Apps-Instanz erforderlich ist.
+Das *SolutionPackager-Tool* löst das Problem der Quellcodeverwaltung und Teamentwicklung von Lösungsdateien. Das Tool identifiziert einzelne Komponenten in der komprimierten Lösungsdatei und extrahiert sie in einzelne Dateien. Das Tool kann eine Lösungsdatei auch neu erstellen, indem die zuvor extrahierten Dateien gepackt werden. Dadurch können mehrere Personen unabhängig voneinander an einer einzelnen Lösung arbeiten und die Änderungen an eine gemeinsame Stelle extrahieren. Da jede Komponente in der Lösungsdatei in mehrere Dateien zerlegt wurde, ist es möglich, Anpassungen zusammenzuführen, ohne vorherige Änderungen zu überschreiben. Eine zweite Verwendungsmöglichkeit des SolutionPackager-Tools ist, dass es von einem automatischen Buildprozess aufgerufen werden kann, um eine komprimierte Lösungsdatei aus zuvor extrahierten Komponentendateien zu generieren, ohne dass eine aktive Common Data Service-Instanz erforderlich ist.
 
 Weitere Informationen: [Lösungstools für die Teamentwicklung](/dynamics365/customer-engagement/developer/solution-tools-team-development)
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service for Apps-Entwicklerübersicht](overview.md)
+[Common Data Service-Entwicklerübersicht](overview.md)

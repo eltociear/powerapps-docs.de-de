@@ -1,5 +1,5 @@
 ---
-title: Teilerweiterungsmodell für Serientermine (Common Data Service für Apps) | Microsoft Docs
+title: Teilerweiterungsmodell für Serientermine (Common Data Service) | Microsoft Docs
 description: 'Das Teilerweiterungsmodell ist ein asynchroner Auftrag in , der in vorab festgelegten Intervallen ausgeführt wird und auf der Organisationsebene definiert und zum Erstellen wiederkehrender Termininstanzen verwendet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="recurring-appointment-partial-expansion-model"></a>Teilerweiterungsmodell für Serientermine
 
-Common Data Service for Apps implementiert ein Teilerweiterungsmodell, um Serientermininstanzen in der Datenbank zu erstellen. Die Serieninformationen, die beim Erstellen eines `RecurringAppointmentMaster`-Datensatzes angegeben wurden, werden verwendet, um einzelne Instanzen schrittweise zu erstellen oder zu synchronisieren. Dies steuert die Erstellung einer großen Anzahl von Termindatensätzen in CDS for Apps aufgrund der Erstellung oder Synchronisierung von Serienterminen, die einen großen oder unbegrenzten (kein Enddatum) Serienbereich haben.  
+Common Data Service implementiert ein Teilerweiterungsmodell, um Serientermininstanzen in der Datenbank zu erstellen. Die Serieninformationen, die beim Erstellen eines `RecurringAppointmentMaster`-Datensatzes angegeben wurden, werden verwendet, um einzelne Instanzen schrittweise zu erstellen oder zu synchronisieren. Dies steuert die Erstellung einer großen Anzahl von Termindatensätzen in Common Data Service aufgrund der Erstellung oder Synchronisierung von Serienterminen, die einen großen oder unbegrenzten (kein Enddatum) Serienbereich haben.  
 
- Das Teilerweiterungsmodell ist ein asynchroner Auftrag in CDS for Apps, der in vorab festgelegten Intervallen ausgeführt wird und auf der Organisationsebene mithilfe des Attributs `Organization.RecurrenceExpansionJobBatchInterval` definiert wird. Darüber hinaus hängt das Instanzerweiterungsmodell von einem Parameter auf Organisationsebene ab, wie beispielsweise "n", wobei "n" für die maximale Anzahl von Instanzen steht, die synchron erstellt werden können. Sie können einen geeigneten Wert für diese Variable mithilfe des Attributs `Organization.RecurrenceExpansionSynchCreateMax` angeben. Diese Eigenschaften werden detailliert im Abschnitt [Parameter für den eingeschränkten Erweiterungsauftrag](#Parameter) behandelt.  
+ Das Teilerweiterungsmodell ist ein asynchroner Auftrag in Common Data Service, der in vorab festgelegten Intervallen ausgeführt wird und auf der Organisationsebene mithilfe des Attributs `Organization.RecurrenceExpansionJobBatchInterval` definiert wird. Darüber hinaus hängt das Instanzerweiterungsmodell von einem Parameter auf Organisationsebene ab, wie beispielsweise "n", wobei "n" für die maximale Anzahl von Instanzen steht, die synchron erstellt werden können. Sie können einen geeigneten Wert für diese Variable mithilfe des Attributs `Organization.RecurrenceExpansionSynchCreateMax` angeben. Diese Eigenschaften werden detailliert im Abschnitt [Parameter für den eingeschränkten Erweiterungsauftrag](#Parameter) behandelt.  
 
 <a name="Scenario1"></a>   
 ## <a name="when-the-recurring-appointment-instances-are-less-than-or-equal-to-n"></a>Wenn die Serientermininstanzen kleiner oder gleich "n" sind  
- Wenn die Anzahl der zu generierenden Instanzen aufgrund der Serieninformationen kleiner oder gleich "n" ist, wird die tatsächliche Anzahl von Instanzen ab dem effektiven Startdatum des Termins synchron erstellt. Jede Instanz wird als Termindatensatz in CDS for Apps gespeichert.  
+ Wenn die Anzahl der zu generierenden Instanzen aufgrund der Serieninformationen kleiner oder gleich "n" ist, wird die tatsächliche Anzahl von Instanzen ab dem effektiven Startdatum des Termins synchron erstellt. Jede Instanz wird als Termindatensatz in Common Data Service gespeichert.  
 
 <a name="Scenario2"></a>   
 
 ## <a name="when-the-recurring-appointment-instances-are-more-than-n"></a>Wenn die Serientermininstanzen größer oder gleich "n" sind  
- Für jeden Serientermin, der in CDS for Apps erstellt wird, wird ein asynchroner Erweiterungsauftrag erstellt. Die Instanzen des Serientermins werden in den folgenden Phasen erweitert:  
+ Für jeden Serientermin, der in Common Data Service erstellt wird, wird ein asynchroner Erweiterungsauftrag erstellt. Die Instanzen des Serientermins werden in den folgenden Phasen erweitert:  
 
 1. **Synchrone Erweiterung**: Die ersten "n" Instanzen des Serientermins werden ab dem effektiven Startdatum synchron erstellt. Jede Instanz wird als Termindatensatz gespeichert, wobei das Attribut `Appointment.InstanceTypeCode` auf "2 " (Wiederkehrende Instanz) festgelegt ist. Die Erweiterung der restlichen Instanzen wird an einen asynchronen Auftrag übergeben. Das effektive Startdatum ist das Datum, ab dem die Serienterminserie erweitert werden muss.  
 

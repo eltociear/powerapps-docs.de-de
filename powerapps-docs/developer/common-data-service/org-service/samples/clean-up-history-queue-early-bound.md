@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Bereinigung des Verlaufs für eine Warteschlange (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Bereinigung des Verlaufs für eine Warteschlange (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie Sie einen Verlauf für eine Warteschlange bereinigen'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>Beispiel: Bereinigung des Verlaufs für eine Warteschlange
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
 
- Dieses Beispiel zeigt, wie Sie den Verlauf für die Warteschlange bereinigen können, indem Sie [RemoveFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) mit inaktiven Elementen verwenden. Es werden beendete Telefonanrufe in der Warteschlange gefunden und die zugeordneten Warteschlangenelemente werden entfernt. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) herunterladen.
+ Dieses Beispiel zeigt, wie Sie den Verlauf für die Warteschlange bereinigen können, indem Sie [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) mit inaktiven Elementen verwenden. Es werden beendete Telefonanrufe in der Warteschlange gefunden und die zugeordneten Warteschlangenelemente werden entfernt. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
@@ -42,7 +42,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Ruft queueitem mit inaktiven Telefonanrufen aus einer Warteschlange über die Message [RemoveFromQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) ab.
+1. Ruft queueitem mit inaktiven Telefonanrufen aus einer Warteschlange über die Message [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) ab.
 
 ### <a name="clean-up"></a>Bereinigung
 

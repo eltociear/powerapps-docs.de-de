@@ -49,7 +49,7 @@ Wenn es sich um eine geeignete Lösung handelt, befolgen Sie diese Tipps, um die
 
 - Vermeiden Sie es, lang laufende Aufgaben einzubeziehen, insbesondere solche, die nicht deterministisch sein können, wie z.B. der Aufruf von externen Serviceanrufen oder komplexe Abfragen an Dynamics 365.
 
-- Beschränken oder vermeiden Sie die Abfrage zusätzlicher Daten vom Common Data Service for Apps.
+- Beschränken oder vermeiden Sie die Abfrage zusätzlicher Daten vom Common Data Service.
 
 ### <a name="virtual-entities"></a>Virtuelle Entitäten
 
@@ -57,7 +57,7 @@ Am häufigsten wird Retrieve and RetrieveMultiple innerhalb von Plugins aufgeruf
 
 ### <a name="retrieve-caution"></a>Vorsicht bei Retrieve
 
-Common Data Service for Apps löst mindestens zwei Abrufnachrichten für jedes Laden von Entitätsformularen aus.  Ein Abruf enthält begrenzte Attribute, die je nach Entität variieren können, und nachfolgende Aufrufe enthalten mehr Attribute.  Wenn Sie erwarten, dass während des Ladens eines Formulars eine einzelne Aktion ausgeführt wird, dann verlassen Sie sich nicht strikt auf den Auslöser einer Retrieve-Nachricht.
+Common Data Service löst mindestens zwei AbrufMessages für jedes Laden von Entitätsformularen aus.  Ein Abruf enthält begrenzte Attribute, die je nach Entität variieren können, und nachfolgende Aufrufe enthalten mehr Attribute.  Wenn Sie erwarten, dass während des Ladens eines Formulars eine einzelne Aktion ausgeführt wird, dann verlassen Sie sich nicht strikt auf den Auslöser einer Retrieve-Nachricht.
 
 <a name='additional'></a>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Persistenter Warteschlangenlistener (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Persistenter Warteschlangenlistener (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie eine Azure Service Bus-Listeneranwendung für einen persistenten Warteschlangenendpunktvertrag geschrieben wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-persistent-queue-listener"></a>Beispiel: Persistenter Warteschlangenlistener
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-persistent-queue-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-persistent-queue-listener -->
 
 Dieses Beispiel zeigt, wie eine Azure Service Bus-Listeneranwendung für einen persistenten Warteschlangenendpunktvertrag geschrieben wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/PersistentQueueListener) herunterladen.
 

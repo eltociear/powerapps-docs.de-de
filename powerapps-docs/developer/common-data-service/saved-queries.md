@@ -1,6 +1,6 @@
 ---
-title: Gespeicherte Abfragen (Common Data Service for Apps) | Microsoft Docs
-description: 'Hier erfahren Sie, wie gespeicherte Abfragen die Suchenumgebung in CDS for Apps erweitern.'
+title: Gespeicherte Abfragen (Common Data Service) | Microsoft Docs
+description: 'Hier erfahren Sie, wie gespeicherte Abfragen die Suchenumgebung Common Data Service erweitern.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="saved-queries"></a>Gespeicherte Abfragen
 
-Gespeicherte Abfragen sind Geschäftsentitäten, die die Parameter und Kriterien einer Common Data Service (CDS) for Apps-Umgebungssuche definieren. Gespeicherte Abfragen unterstützen Suchen über mehrere Entitäten. Es gibt zwei Entitäten, die für Abfragen in der Common Data Service (CDS) for Apps-Umgebung verfügbar sind.  
+Gespeicherte Abfragen sind Geschäftsentitäten, die die Parameter und Kriterien einer Common Data Service-Umgebungssuche definieren. Gespeicherte Abfragen unterstützen Suchen über mehrere Entitäten. Es gibt zwei Entitäten, die für Abfragen in der Common Data Service-Umgebung verfügbar sind.  
   
 - Eine *Benutzerabfrage*, die in der Anwendung als gespeicherte Ansicht bezeichnet wird, befindet sich im Besitz eines einzelnen Benutzers, kann anderen Benutzern zugewiesen und für andere Benutzer freigegeben werden und kann von anderen Benutzern abhängig von den Zugriffsrechten der Abfrage angezeigt werden. Dies ist für häufig verwendete Abfragen, die sich über mehrere Entitätstypen erstrecken, und Abfragen, die eine Aggregation ausführen, geeignet. Weitere Informationen: [UserQuery-Entität](reference/entities/userquery.md) 
 

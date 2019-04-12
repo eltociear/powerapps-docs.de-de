@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl (Common Data Service) | Microsoft Docs'
 description: Dieses Beispiel veranschaulicht das Rollup von Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rollup-goal-data-fiscal-period-stretch-target-count -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rollup-goal-data-fiscal-period-stretch-target-count -->
 
 Dieses Beispiel zeigt, wie ein Rollup der Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl zum Darstellen einiger abgeschlossener Telefonanrufe durchgeführt wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GoalDataForFiscalYear) herunterladen.
 

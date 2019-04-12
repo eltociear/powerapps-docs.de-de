@@ -1,5 +1,5 @@
 ---
-title: Entitätbeziehungsberechtigung (Common Data Service für Apps) | Microsoft Docs
+title: Entitätbeziehungsberechtigung (Common Data Service) | Microsoft Docs
 description: 'In diesem Artikel werden die Meldungen aufgelistet, die Sie verwenden können, um zu bestimmen, ob Entitäten an Entitätsbeziehungen teilnehmen können.'
 ms.custom: ''
 ms.date: 10/31/2018

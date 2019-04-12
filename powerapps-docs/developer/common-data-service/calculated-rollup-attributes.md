@@ -1,5 +1,5 @@
 ---
-title: Berechnete und Rollupattribute (Common Data Service for Apps) | Microsoft Docs
+title: Berechnete und Rollupattribute (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie über die allgemeinen Elemente und Parameter, berechnete Attribute, Rollupattribute, rufen Sie einen berechneten Rollupfeldwert und SourceTypeMasks-Enumeration sofort ab.'
 ms.custom: ''
 ms.date: 10/31/2018

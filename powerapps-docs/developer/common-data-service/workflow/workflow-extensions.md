@@ -1,5 +1,5 @@
 ---
-title: Workflowerweiterungen (Common Data Service für Apps) | Microsoft Docs
+title: Workflowerweiterungen (Common Data Service) | Microsoft Docs
 description: 'Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die CodeActivity-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>Workflowerweiterungen
 
-Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen, der für Common Data Service für Apps verwendet wird. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die [CodeActivity](/dotnet/api/system.activities.codeactivity)-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.
+Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen, der für Common Data Service verwendet wird. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die [CodeActivity](/dotnet/api/system.activities.codeactivity)-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.
 
 Sie können diese benutzerdefinierten Erweiterungen innerhalb des Designers verwenden, der für Workflows, benutzerdefinierte Aktionen und Dialoge verwendet wird.
 
 > [!IMPORTANT]
-> Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service für Apps](../../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../../maker/common-data-service/cds-processes.md)<br/><br/>
 > Verwenden Sie Workflowerweiterungen, wenn ein deklarativer Prozess nicht Ihre Bedingung erfüllt.
 
 ## <a name="when-to-create-a-workflow-extension"></a>Wann eine Workflowerweiterung zu erstellen ist
@@ -66,7 +66,7 @@ Wenn Sie Dynamics 365 Customer Engagement Sales oder Service-Lösungen haben, k�
 Weitere Informationen: 
 
 - [Workflowphasen und Schritte konfigurieren](/flow/configure-workflow-steps)
-- [Verwenden von "CDS für Apps"-Dialogen für angeleitete Prozesse](/flow/use-cds-for-apps-dialogs)
+- [Verwendung des Common Data Service-Dialogs für geführte Prozesse](/flow/use-cds-for-apps-dialogs)
 - [Erstellen eines benutzerdefinierten Attributs](/flow/create-actions)
 
 
@@ -75,9 +75,9 @@ Weitere Informationen:
 
 Da Prozesse Windows Workflow Foundation verwenden, können Sie eine erstellte Assembly mithilfe der [.NET Framework-Aktivitätsbibliothek](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) speichern, die benutzerdefinierte Aktivitäten definiert, die innerhalb des Webanwendungs-Editors angezeigt werden und aufgerufen werden, wenn der Prozess ausgeführt wird.
 
-Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) bereit, die von der "CDS für Apps"-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
+Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) bereit, die von der "Common Data Service"-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
 
-Workflowaktivitäten können auch Eingabe- und Ausgabeparameter definieren, die im Prozess-Designer sichtbar sind, und sie ermöglichen es einer Person, Daten an die Workflowaktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Eigenschaften für diese Parameter hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die CDS für Apps verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
+Workflowaktivitäten können auch Eingabe- und Ausgabeparameter definieren, die im Prozess-Designer sichtbar sind, und sie ermöglichen es einer Person, Daten an die Workflowaktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Parameter für diese Eigenschaften hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die Common Data Service verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
 
 ## <a name="visual-studio-requirements"></a>Visual Studio-Anforderungen
 
@@ -236,7 +236,7 @@ Die Logik, die Sie in die [CodeActivity.Execute(CodeActivityContext)-Methode](/d
 
 > [!IMPORTANT]
 > Der Code in der `Execute`-Methode sollte als statusfrei geschrieben werden. Es wird nicht empfohlen, globale oder Membervariablen zu verwenden, um Daten von einem Aufruf zum nächsten zu übergeben.
-> Zur Verbesserung der Leistung werden benutzerdefinierte Workflowaktivitätsinstanzen von CDS für Apps zwischengespeichert. Deshalb wird der Konstruktor nicht für jeden Aufruf der benutzerdefinierten Workflowaktivität aufgerufen. Außerdem könnten mehrere Systemthreads die benutzerdefinierte Workflowaktivität gleichzeitig ausführen. Sie sollten nur die Informationen verwenden, die über den Parameter [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) an die `Execute`-Methode übergeben werden.
+> Zur Verbesserung der Leistung werden benutzerdefinierte Workflowaktivitätsinstanzen von Common Data Service zwischengespeichert. Deshalb wird der Konstruktor nicht für jeden Aufruf der benutzerdefinierten Workflowaktivität aufgerufen. Außerdem könnten mehrere Systemthreads die benutzerdefinierte Workflowaktivität gleichzeitig ausführen. Sie sollten nur die Informationen verwenden, die über den Parameter [CodeActivityContext](/dotnet/api/system.activities.codeactivitycontext) an die `Execute`-Methode übergeben werden.
 
 ### <a name="reference-parameters"></a>Parameter referenzieren
 
@@ -308,7 +308,7 @@ Für benutzerdefinierte Workflowaktivitäten müssen Sie die folgenden Eigenscha
 |Beschreibung|Wird in der Benutzeroberfläche des Prozessdesigners nicht angezeigt, kann aber bei der Erstellung der Dokumentation von Daten aus der PluginType-Entität hilfreich sein, in der diese Informationen gespeichert werden.|
 |FriendlyName|Anzeigename des Benutzers für das Plug-In.|
 |Name|Der Name des dargestellten Menüs.|
-|WorkflowActivityGroupName|Der Name des Untermenüs, das dem Hauptmenü im CDS for Apps Prozess hinzugefügt wurde.|
+|WorkflowActivityGroupName|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service-Prozess hinzugefügt wurde.|
 
 ![Beschreibende Eigenschaften festlegen](media/create-workflow-activity-set-properties.png)
 
@@ -317,7 +317,7 @@ Für benutzerdefinierte Workflowaktivitäten müssen Sie die folgenden Eigenscha
 
 ## <a name="debug-workflow-activities"></a>Workflowaktivitäten debuggen
 
-Mit benutzerdefinierten Workflowaktivitäten, die für CDS für Apps bereitgestellt sind, können Sie Profile erfassen, um sie für lokale Debugvorgänge erneut wiederzugeben und Sie können den Ablaufverfolgungsdienst verwenden, um Informationen in eine Entität zu schreiben. 
+Mit benutzerdefinierten Workflowaktivitäten, die für Common Data Service bereitgestellt sind, können Sie Profile erfassen, um sie für lokale Debugvorgänge erneut wiederzugeben und Sie können den Ablaufverfolgungsdienst verwenden, um Informationen in eine Entität zu schreiben. 
 
 Das folgende Bespiel zeigt, wie mithilfe des Ablaufverfolgungsdiensts die folgende Nachricht geschrieben wird: `Add your message.`
 

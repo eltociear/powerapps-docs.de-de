@@ -1,6 +1,6 @@
 ---
-title: Abfrage von Daten mithilfe des Organisationsservices (Common Data Service für Apps)| Microsoft Docs
-description: 'Stellt die verschiedenen Arten vor, Daten mithilfe der CDS Apps für SDK-Assemblys abzufragen.'
+title: Abfrage von Daten mithilfe des Organisationsservices (Common Data Service)| Microsoft Docs
+description: 'Stellt die verschiedenen Arten vor, mit denen Daten mithilfe der Common Data Service-SDK-Assemblys abgefragt werden können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

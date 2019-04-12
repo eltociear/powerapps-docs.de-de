@@ -1,10 +1,10 @@
 ---
-title: Verwenden des Virtual Entity Walkthrough mit dem OData Data Provider in Common Data Service for Apps | MicrosoftDocs
+title: Verwenden des Virtual Entity Walkthrough mit dem OData Data Provider in Common Data Service | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie den Datenanbieter ODatas v4-Clients mit der virtuellen Entität verwenden'
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

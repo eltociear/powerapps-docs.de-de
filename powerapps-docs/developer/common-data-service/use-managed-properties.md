@@ -1,5 +1,5 @@
 ---
-title: Verwaltete Eigenschaften nutzen (Common Data Service für Apps) | Microsoft Docs
+title: Verwaltete Eigenschaften nutzen (Common Data Service) | Microsoft Docs
 description: 'Mit verwalteten Eigenschaften können Sie definieren, welche der verwalteten Lösungskomponenten anpassbar sind.'
 ms.custom: ''
 ms.date: 10/31/2018

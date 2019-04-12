@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Sicherheitsentitäten für eine Entitä aktivieren (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Sicherheitsentitäten für eine Entität aktivieren (Common Data Service) | Microsoft Docs'
 description: Dieses Beispiel zeigt die Aktivierung der Feldsicherheit für eine Entität
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>Beispiel: Aktivierung der Feldsicherheit für eine Entität
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-enable-field-security-entity -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-enable-field-security-entity -->
 
 Dieses Beispiel zeigt die Aktivierung der Feldsicherheit für eine Entität.  Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/FieldSecurity). 
 

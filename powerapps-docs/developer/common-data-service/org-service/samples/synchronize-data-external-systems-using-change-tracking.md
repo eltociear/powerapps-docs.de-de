@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Synchronisieren Sie Daten mit externen Systemen mithilfe des Änderungsnachverfolgungssystems (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Synchronisieren Sie Daten mit externen Systemen mithilfe des Änderungsnachverfolgungssystems (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Änderungen aus einer Entität abgerufen werden und Daten mit externen Systemen synchronisiert werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>Beispiel: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-synchronize-data-external-systems-using-change-tracking -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-synchronize-data-external-systems-using-change-tracking -->
 
 Dieser Beispielcode zeigt, wie Änderungen aus einer Entität abgerufen werden und Daten mithilfe der `RetrieveEntityChanges`-Nachricht mit den [RetrieveEntityChangesRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveentitychangesrequest) und [RetrieveEntityChangesResponse](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveentitychangesresponse)- Klassen mit externen Systemen synchronisiert werden. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/Changetracking) herunterladen.
 

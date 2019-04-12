@@ -1,5 +1,5 @@
 ---
-title: Massenlöschung von Daten (Common Data Service for Apps) | Microsoft Docs
+title: Massenlöschung von Daten (Common Data Service) | Microsoft Docs
 description: 'Massenlöschung von Daten hilft beim Aufrechterhalten der Datenqualität und Verwalten des Verbrauchs der Systemspeicherung, indem Daten gelöscht werden, die nicht mehr benötigt werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="delete-data-in-bulk"></a>Löschen von Datensätzen in einem Massenvorgang
 
-Die *Massenlöschungs* funktion hilft Ihnen, die Datenqualität und den Verbrauch des Systemspeichers in Common Data Service (CDS) for Apps zu verwalten, indem nicht mehr benötigte Daten gelöscht werden. So können Sie beispielsweise die folgenden Daten in einem Massenvorgang löschen:  
+Die *Massenlöschungs* funktion hilft Ihnen, die Datenqualität und den Verbrauch des Systemspeichers in Common Data Service zu verwalten, indem nicht mehr benötigte Daten gelöscht werden. So können Sie beispielsweise die folgenden Daten in einem Massenvorgang löschen:  
   
 - Veraltete Daten.  
   

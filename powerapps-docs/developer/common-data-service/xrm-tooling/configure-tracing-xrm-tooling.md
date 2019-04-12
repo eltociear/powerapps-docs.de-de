@@ -1,10 +1,10 @@
 ---
-title: Konfigurieren Sie das Tracing für XRM-Tools (Common Data Service for Apps) | Microsoft Docs
+title: Konfigurieren Sie das Tracing für XRM-Tools (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie die Ablaufverfolgung für Komponenten wie Vorgangsanrufe, Warnungen und andere bedeutende Ereignisse in XRM-Tooling zu konfigurieren.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

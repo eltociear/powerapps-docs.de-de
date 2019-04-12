@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abfragen von Verbindungen durch reziproke Rollen (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Abfragen von Verbindungen durch reziproke Rollen (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel veranschaulicht, wie Verbindungsrollen durch rezproke Rollen abgefragt werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>Beispiel: Abfragen von Verbindungen durch reziproke Rollen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
 
 Dieses Beispiel zeigt, wie entsprechende Rollen erstellt werden und dann eine entsprechende Rolle für eine bestimmte Rolle gefunden wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryByReciprocalRole) herunterladen.
 

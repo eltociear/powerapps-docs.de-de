@@ -1,10 +1,10 @@
 ---
-title: Nutzen von XRM-Tooling zur Datenlöschung (Common Data Service für Apps) | Microsoft Docs
-description: 'Verwenden der CrmServiceClient-Klasse, um Daten aus CDS für Apps zu löschen'
+title: Nutzen von XRM-Tooling zum Löschen von Daten (Common Data Service) | Microsoft Docs
+description: 'Verwenden der CrmServiceClient-Klasse, um Daten aus Common Data Service zu löschen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,11 +23,11 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-delete-data"></a>Verwendung von XRM-Tooling zum Löschen von Daten
 
-Es gibt zwei Methoden in der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse, um Daten in CDS für Apps zu löschen: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntity(System.String,System.Guid,System.Guid)> und <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntityAssociation(System.String,System.Guid,System.String,System.Guid,System.String,System.Guid)>.  
+Es gibt zwei Möglichkeiten in der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse zum Löschen von Daten in Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntity(System.String,System.Guid,System.Guid)> und <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.DeleteEntityAssociation(System.String,System.Guid,System.String,System.Guid,System.String,System.Guid)>.  
   
 ## <a name="deleteentity"></a>DeleteEntity  
 
-DeleteEntity wird verwendet, um eine einzelne Zeile von Daten aus CDS für Apps zu entfernen. Um diese Möglichkeit zu nutzen, müssen Sie den Entitätsschemanamen und die GUID der Zeile kennen, die Sie entfernen möchten.  
+DeleteEntity wird verwendet, um eine einzelne Datenzeile aus Common Data Service zu entfernen. Um diese Möglichkeit zu nutzen, müssen Sie den Entitätsschemanamen und die GUID der Zeile kennen, die Sie entfernen möchten.  
   
 ```csharp  
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", <Domain>),"<Server>", "<Port>", "<OrgName>");  
@@ -93,5 +93,5 @@ else
 ### <a name="see-also"></a>Siehe auch  
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Verwenden von XRM-Tooling, um eine Verbindung mit CDS für Apps herzustellen](use-crmserviceclient-constructors-connect.md)<br />
-[Verwenden der XRM-Tooling-API, um Aktionen in CDS für Apps auszuführen](use-xrm-tooling-execute-actions.md)
+[Verwenden von XRM-Tooling zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: Verwenden von LINQ zum Erstellen einer Abfrage (Common Data Service für Apps) | Microsoft Docs
+title: Verwenden von LINQ zum Erstellen einer Abfrage (Common Data Service) | Microsoft Docs
 description: 'Hier wird beschrieben, wie der Abfrageanbieter .NET Language-Integrated Query(LINQ) in Dynamics 365 zum Erstellen einer Abfrage verwendet wird'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,19 +17,19 @@ search.app:
 ---
 # <a name="use-linq-to-construct-a-query"></a>Verwenden von LINQ zum Erstellen einerAbfrage
 
-Der Abfrageanbieter .NET Language-Integrated Query(LINQ) in Common Data Service für Apps verwendet eine Standard-LINQ-Syntax. Der erste Schritt zum Erstellen einer LINQ-Abfrage besteht darin, die relevanten Entitätstypen und die Beziehungen zwischen diesen zu identifizieren. Sie können dann die Datenquelle und die anderen Abfrageparameter angeben.  
+Der Abfrageanbieter ".NET Language-Integrated Query(LINQ)" in Common Data Service verwendet eine Standard-LINQ-Syntax. Der erste Schritt zum Erstellen einer LINQ-Abfrage besteht darin, die relevanten Entitätstypen und die Beziehungen zwischen diesen zu identifizieren. Sie können dann die Datenquelle und die anderen Abfrageparameter angeben.  
 
  Die `from`-Klausel wird verwendet, um eine einzelne „Stamm“-Entität zurückzugeben. Der Abfragenanbieter kann nur Entitäten eines einzigen Entitätstyps zurückgeben. `orderby` und `select`-Klauseln müssen auf diese Stammentität verweisen. Mit `join`-Klauseln können Sie Entitäten einer Beziehung zur „Stamm“-Entität hinzuzufügen.  
 
 <a name="bkmk_operators"></a>   
 
 ## <a name="linq-operators"></a>LINQ-Operatoren  
- Alle LINQ-Abfrageausdrücke haben ein ähnliches Format. In der folgenden Tabelle sind die häufigsten Klauseln in einem LINQ-Abfrageausdruck aufgeführt, wenn der LINQ-Abfragenanbieter von CDS für Apps verwendet wird.  
+ Alle LINQ-Abfrageausdrücke haben ein ähnliches Format. In der folgenden Tabelle sind die häufigsten Klauseln in einem LINQ-Abfrageausdruck aufgeführt, wenn der LINQ-Abfrageanbieter von Common Data Service verwendet wird.  
 
 ### <a name="from"></a>von  
  Wenn Sie den generierten Dienstkontext und ältere Bindung verwenden, verwenden Sie den Entitätssatz, wie z. B. `IQueryable` `AccountSet`, im generierten Kontext.  
 
- Wenn Sie keinen generierten Kontext verwenden, können Sie mit der `CreateQuery`-Methode im Servicekontext der Organisation auf CDS für Apps-Entitäten zugreifen.  
+ Wenn Sie keinen generierten Kontext verwenden, können Sie mit der `CreateQuery`-Methode im Servicekontext der Organisation auf Common Data Service-Entitäten zugreifen.  
 
  Beispiel:  
 
@@ -120,7 +120,7 @@ select new Contact
 
 ## <a name="filter-multiple-entities"></a>Filtern mehrerer Entitäten  
 
- Sie können komplexe .NET-sprachintegrierte Abfrage(LINQ)-Abfragen in CDS für Apps erstellen. Sie können mehrere `Join`-Klauseln mit Filterklauseln verwenden, um ein Ergebnis zu erhalten, das nach Attributen aus mehreren Entitäten gefiltert ist.  
+ Sie können komplexe ".NET Language Integrated Query(LINQ)"-Abfragen in Common Data Service erstellen. Sie können mehrere `Join`-Klauseln mit Filterklauseln verwenden, um ein Ergebnis zu erhalten, das nach Attributen aus mehreren Entitäten gefiltert ist.  
 
  Das folgende Beispiel zeigt, wie Sie eine LINQ-Abfrage erstellen, die mit zwei Entitäten arbeitet und das Ergebnis anhand von Werten aus den einzelnen Entitäten filtert.  
 

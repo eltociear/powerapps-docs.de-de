@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Arbeiten mit Suchdienst <Topic Title> (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Arbeiten mit Suchdienst <Topic Title> (Common Data Service) | Microsoft Docs'
 description: 'Dieser Beispielcode zeigt, wie Sie Suchdienste verwenden können.'
 ms.custom: ''
 ms.date: 10/31/2018

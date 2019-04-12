@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erkennen von Mehrfachduplikat-Datensätzen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Erkennen von Mehrfachduplikat-Datensätzen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie mehrere doppelte Datensätze für einen angegebenen Entitätstyp erkannt und protokolliert werden können.'
 ms.custom: ''
 ms.date: 10/31/2018

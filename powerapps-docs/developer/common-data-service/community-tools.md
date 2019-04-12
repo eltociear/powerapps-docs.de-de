@@ -1,6 +1,6 @@
 ---
-title: Communitytools für Common Data Service for Apps (Common Data Service for Apps) | Microsoft Docs
-description: 'Informieren Sie sich über die Community erstellten Tools, mit denen Sie verschiedene Aufgaben mit PowerApps CDS for Apps ausführen können.'
+title: Communitytools für Common Data Service (Common Data Service) | Microsoft Docs
+description: 'Informieren Sie sich über die Community erstellten Tools, mit denen Sie verschiedene Aufgaben mit PowerApps Common Data Service ausführen können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="community-tools-for-common-data-service"></a>Community-Tools für Common Data Service
 
-Die CDS for App-Community erstellt Tools! Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/) verteilt. XrmToolBox ist eine Windows-Anwendung, die sich mit dem Common Data Service for Apps verbindet und Tools zur Verfügung stellt, die die Anpassung, Konfiguration und Bedienung erleichtern. Es wird mit mehr als 30 Plugins ausgeliefert, um Administrations-, Anpassungs- oder Konfigurationsaufgaben einfacher und zeitsparender zu gestalten.
+Die Common Data Service-Community erstellt Tools! Viele der beliebtesten werden über die [XrmToolBox](https://www.xrmtoolbox.com/) verteilt. XrmToolBox ist eine Windows-Anwendung, die sich mit dem Common Data Service verbindet und Tools zur Verfügung stellt, die die Anpassung, Konfiguration und Bedienung erleichtern. Es wird mit mehr als 30 Plugins ausgeliefert, um Administrations-, Anpassungs- oder Konfigurationsaufgaben einfacher und zeitsparender zu gestalten.
 
-Nachfolgend finden Sie eine ausgewählte Liste von Community-Tools, die über die XrmToolBox verteilt werden und die Sie mit dem Common Data Service for Apps verwenden können.
+Nachfolgend finden Sie eine ausgewählte Liste von Community-Tools, die über die XrmToolBox verteilt werden und die Sie mit dem Common Data Service verwenden können.
 
 |Tool  |Beschreibung  |
 |---------|---------|

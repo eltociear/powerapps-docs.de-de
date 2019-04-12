@@ -4,7 +4,7 @@ description: 'Erstellen oder Bearbeiten von 1: N oder n: n Entitätsbeziehungen 
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu-einer) Entitätsbeziehung mithilfe des Lösungs-Explorers 
 
-Projektmappen-Explorer bietet eine Möglichkeit, um 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen für Common Data Service für Apps zu erstellen und zu bearbeiten.
+Der Lösungs-Explorer bietet eine Möglichkeit, um 1:N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen für Common Data Service zu erstellen und zu bearbeiten.
 
 [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können mithilfe des Lösungs-Explorers nur festgelegt werden. Weitere Informationen: 
 - [1:N (1: n) oder N:1-Beziehungen erstellen](create-edit-1n-relationships.md)

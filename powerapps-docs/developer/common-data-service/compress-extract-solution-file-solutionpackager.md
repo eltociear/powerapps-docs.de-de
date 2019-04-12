@@ -1,5 +1,5 @@
 ---
-title: SolutionPackager Tool (Common Data Service für Apps) | MicrosoftDocs
+title: SolutionPackager-Tool (Common Data Service) | MicrosoftDocs
 description: 'SolutionPackager ist ein Tool, mit dem eine komprimierte Dynamics 365 Customer Engagement-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="solutionpackager-tool"></a>SolutionPackager-Tool
 
-SolutionPackager ist ein Tool, mit dem eine komprimierte Common Data Service (CDS) for Apps-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können. Die folgenden Abschnitte zeigen, wie Sie das Tool ausführen und es mit verwalteten und nicht verwalteten Lösungen verwenden.  
+SolutionPackager ist ein Tool, mit dem eine komprimierte Common Data Service-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können. Die folgenden Abschnitte zeigen, wie Sie das Tool ausführen und es mit verwalteten und nicht verwalteten Lösungen verwenden.  
   
 <a name="bkm_where"></a>   
 
@@ -198,7 +198,7 @@ Das folgende XML-Codebeispiel zeigt eine vollständige Zuordnungsdatei, die das 
 
 ## <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
 
- Eine for Apps komprimierte Lösungs (.zip)-Datei kann auf eine von zwei Weisen exportiert werden.  
+ Eine komprimierte Common Data Service-Lösungsdatei (ZIP) kann auf eine von zwei Weisen exportiert werden.  
   
  **Verwaltete Lösung**  
  Eine abgeschlossene Lösung, die bereit ist, in eine Organisation importiert zu werden. Nach dem Importieren können keine Komponenten hinzugefügt oder entfernt werden, aber sie können optional weitere Anpassung erlauben. Dies wird empfohlen, nachdem die Entwicklung der Lösung abgeschlossen ist.  
@@ -206,7 +206,7 @@ Das folgende XML-Codebeispiel zeigt eine vollständige Zuordnungsdatei, die das 
  **Nicht verwaltete Lösung**  
  Eine offene Lösung ohne Einschränkungen dahingehend, was hinzugefügt, entfernt oder geändert werden kann. Dieses wird während der Entwicklung einer Lösung empfohlen.  
   
- Das Format einer komprimierten Lösungsdatei basiert auf dem Typ,verwaltet oder nicht verwaltet. Der SolutionPackager kann komprimierte Lösungsdateien beider Typen verarbeiten. Das Tool kann jedoch nicht einen Typ mzu einem anderen konvertieren. Die einzige Möglichkeit, Lösungsdateien zu einem anderen Typs zu konvertieren, etwa von verwaltete zu nicht verwaltete, besteht im Import der nicht verwalteten Lösungs-ZIP-Datei in einen CDS for Apps-Server und dem anschließenden Export der Lösung als verwaltete Lösung.  
+ Das Format einer komprimierten Lösungsdatei basiert auf dem Typ,verwaltet oder nicht verwaltet. Der SolutionPackager kann komprimierte Lösungsdateien beider Typen verarbeiten. Das Tool kann jedoch nicht einen Typ mzu einem anderen konvertieren. Die einzige Möglichkeit, Lösungsdateien zu einem anderen Typ zu konvertieren, etwa von verwaltete zu nicht verwaltete, besteht im Import der nicht verwalteten Lösungs-ZIP-Datei in einen Common Data Service-Server und dem anschließenden Export der Lösung als verwaltete Lösung.  
   
  Der SolutionPackager kann verwaltete und nicht verwaltete Lösungs-ZIP-Dateien als kombinierten Satz über den /PackageType:Both-Parameter verarbeiten. Dazu ist es erforderlich, Ihre Lösung zweimal in jedem Typ zu exportieren, wobei die ZIP-Dateien wie folgt benannt werden.  
   

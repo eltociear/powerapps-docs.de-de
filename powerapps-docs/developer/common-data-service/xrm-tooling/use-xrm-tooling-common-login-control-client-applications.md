@@ -1,10 +1,10 @@
 ---
-title: Verwenden des allgemeinen XRM-Tooling-Anmeldesteuerelements in Ihren Client-Anwendungen (Common Data Service für Apps) | Microsoft Docs
-description: 'Das „CDS für Apps”-SDK stellt Ihnen eine Vorlage für Visual Studio bereit, mit dessen Hilfe Sie das allgemeine Anmeldungssteuerelement in Ihren Client-Anwendungen verwenden können. Der Code für die „CDS für Apps”-Authentifizierung, das Speichern und Abrufen von Anmeldeinformationen und das diagnostische Protokollieren, sind in der Vorlage integriert, so dass Sie diese Funktionen in Ihren Windows-Client-Anwendungen für CDS für Apps schnell nutzen können.'
+title: Verwenden des allgemeinen XRM-Tooling-Anmeldesteuerelements in Ihren Client-Anwendungen (Common Data Service) | Microsoft Docs
+description: 'Das Common Data Service-SDK stellt Ihnen eine Vorlage für Visual Studio bereit, mit dessen Hilfe Sie das Anmeldungssteuerelement in Client-Anwendungen verwenden können. Der Code für die Common Data Service-Authentifizierung, das Speichern und Abrufen von Anmeldeinformationen und das diagnostische Protokollieren, sind in der Vorlage integriert, so dass Sie diese Funktionen in Ihren Windows-Client-Anwendungen für Common Data Service schnell nutzen können.'
 ms.custom: ''
 ms.date: 1/16/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="use-the-xrm-tooling-common-login-control-in-your-client-applications"></a>Verwenden des allgemeinen Anmeldungssteuerelements der XRM-Tools in Ihren Client-Anwendungen
 
-Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungssteuerelement in den Client-Anwendungen verwenden können. Der Code für die „CDS für Apps”-Authentifizierung, das Speichern und Abrufen von Anmeldeinformationen und das diagnostische Protokollieren, sind in der Vorlage integriert, so dass Sie diese Funktionen in Ihren Windows-Client-Anwendungen für CDS für Apps schnell nutzen können. Das allgemeine Anmeldungssteuerelement ist eine Implementierung des <xref:Microsoft.Xrm.Tooling.CrmConnectControl>, wobei das Steuerelement dem folgenden Bild gleicht.  
+Es gibt eine Vorlage für Visual Studio, mit der Sie das allgemeine Anmeldungssteuerelement in den Client-Anwendungen verwenden können. Der Code für die Common Data Service-Authentifizierung, das Speichern und Abrufen von Anmeldeinformationen und das diagnostische Protokollieren, sind in der Vorlage integriert, so dass Sie diese Funktionen in Ihren Windows-Client-Anwendungen für Common Data Service schnell nutzen können. Das allgemeine Anmeldungssteuerelement ist eine Implementierung des <xref:Microsoft.Xrm.Tooling.CrmConnectControl>, wobei das Steuerelement dem folgenden Bild gleicht.  
   
  
  ![XRM-Tooling-Anmeldungssteuerelement](../media/crm-sdk-v6-commonlogincontrol.png "XRM-Tooling-Anmeldungssteuerelement")
@@ -44,13 +44,13 @@ Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foun
   
 1.  Starten Sie Visual Studio, und erstellen Sie ein neues Projekt.  
 2.  Im Dialogfeld **Neues Projekt**:  
-    1.  Erweitern Sie in der Liste der installierten Vorlagen **Visual C#**, und wählen Sie **„CDS für Apps”-SDK Vorlagen** aus.  
+    1.  Erweitern Sie in der Liste der installierten Vorlagen **Visual C#** und wählen Sie **Common Data Service-SDK-Vorlagen** aus.  
     2.  Stellen Sie sicher, dass **.NET Framework 4.6.2** ausgewählt ist.  
     3.  Wählen Sie **WPF-Anwendung für Dynamics 365** aus.  
     4.  Geben Sie den Namen und den Standort des Projekts an, und klicken Sie auf **OK**.  
   
 > [!div class="mx-imgBorder"]
-> ![WPF-Anwendung für CDS für App-Vorlage](../media/crm-sdk-v6-xrm-tooling-newproject.png "WPF-Anwendung für CDS für App-Vorlage")   
+> ![WPF-Anwendung für Common Data Service-Vorlage](../media/crm-sdk-v6-xrm-tooling-newproject.png "WPF-Anwendung für Common Data Service-Vorlage")   
 
 > [!NOTE]
 > **Bekannte Probleme mit Visual Studio 2015**
@@ -65,15 +65,15 @@ Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foun
   
     1.  Speichern Sie das Projekt, und drücken Sie F5, oder klicken Sie auf **Debuggen** > **Debuggen starten**, um zu überprüfen, ob das Projekt erfolgreich kompiliert wird. Bei erfolgreicher Kompilierung sehen Sie ein MainWindow mit einer **Anmelden bei Dynamics 365**-Schaltfläche. Klicken Sie auf die Schaltfläche, um das Anmeldungssteuerelement anzuzeigen.  
   
-    2.  Testen Sie die Authentifizierung, indem Sie Ihre Anmeldeinformationen zur Verbindung mit CDS für Apps angeben, und klicken Sie dann auf **Anmeldung**. Eine Meldung zeigt Ihren „CDS für Apps”-Verbindungsstatus an.  
+    2.  Testen Sie die Authentifizierung, indem Sie Ihre Anmeldeinformationen zur Verbindung mit Common Data Service angeben, und klicken Sie dann auf **Anmeldung**. Eine Message zeigt den Verbindungsstatus Ihres Common Data Service an.  
   
- Ein Beispiel, bei dem die Vorlage des allgemeinen Anmeldungssteuerelements verwendet wird, um eine Verbindung mit CDS für Apps herzustellen und um unterschiedliche Vorgänge ausführen, finden Sie unter [Beispiel: Schnellstart für XRM-Tooling-API](sample-quick-start-xrm-tooling-api.md).  
+ Ein Beispiel, bei dem die Vorlage des Anmeldungssteuerelements verwendet wird, um eine Verbindung mit Common Data Service herzustellen und um unterschiedliche Vorgänge ausführen, finden Sie unter [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md).  
   
 <a name="Add"></a>
 
 ## <a name="add-the-common-login-control-template-to-your-existing-wpf-application"></a>Hinzufügen der allgemeinen Anmeldungssteuerelement-Vorlage zur vorhandenen WPF-Anwendung
 
- Wenn Sie bereits eine WPF-Client-Anwendung haben, können Sie ihr die Vorlage des allgemeinen Anmeldungssteuerelements problemlos hinzufügen zur Nutzung der einheitlichen Anmeldungserfahrung und des zugrunde liegenden Codes für die „CDS für Apps”-Authentifizierung, das Speichern und die Wiederverwendung von Anmeldeinformationen sowie die standardmäßige Nachverfolgung oder Protokollierung. In diesem Fall müssen Sie in der Benutzeroberfläche ein Steuerelement der vorhandenen Client-Anwendung erstellen, um das allgemeine Anmeldungssteuerelement aufzurufen, eine Instanz des „CDS für Apps”-Verbindungsobjekts zu instanziieren und anschließend das Verbindungsobjekt zu verwenden, um verschiedene Vorgänge in CDS für Apps auszuführen.  
+ Wenn Sie bereits eine WPF-Client-Anwendung haben, können Sie ihr die Vorlage des allgemeinen Anmeldungssteuerelements problemlos hinzufügen zur Nutzung der einheitlichen Anmeldungserfahrung und des zugrunde liegenden Codes für die Common Data Service-Authentifizierung, das Speichern und die Wiederverwendung von Anmeldeinformationen und Speicher sowie die standardmäßige Rückverfolgung oder Protokollierung. In diesem Fall müssen Sie in der Benutzeroberfläche ein Steuerelement der vorhandenen Client-Anwendung erstellen, um das allgemeine Anmeldungssteuerelement aufzurufen, eine Instanz des Common Data Service-Verbindungsobjekts zu instanziieren und anschließend das Verbindungsobjekt zu verwenden um verschiedene Vorgänge in Common Data Service auszuführen.  
   
 1.  Öffnen Sie ein vorhandenes WPF-Anwendungsprojekt in Visual Studio. Für dieses Beispiel wird angenommen, dass der Name des WPF-Anwendungsprojekts SampleWPFApp ist.  
   
@@ -81,7 +81,7 @@ Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foun
   
     1.  Klicken Sie im **Projektmappen-Explorer**-Bereich mit der rechten Maustaste auf den Projektnamen, und klicken Sie dann auf **Hinzufügen** > **Neues Element hinzufügen**.  
   
-    2.  Erweitern Sie im Dialogfeld **Neues Element hinzufügen** in der Liste der installierten Vorlagen **Visual C#**, und wählen Sie **„CDS für Apps”-SDK-Vorlagen** aus. Klicken Sie auf **„CDS für Apps”„”-Anmeldungsformular für WPF-Anwendungen**, und klicken Sie auf **OK**.  
+    2.  Erweitern Sie im Dialogfeld **Neues Element hinzufügen** in der Liste der installierten Vorlagen **Visual C#**, und wählen Sie **Common Data Service-SDK-Vorlagen** aus. Klicken Sie auf **Common Data Service-Anmeldungsformular für WPF-Anwendungen** und auf **OK**.  
   
  
  > [!div class="mx-imgBorder"]
@@ -92,7 +92,7 @@ Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foun
  
 ![Überprüfen, ob das Anmeldungssteuerelement ordnungsgemäß rendert](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "Überprüfen, ob das Anmeldungssteuerelement ordnungsgemäß rendert")
   
-4.  Sie müssen jetzt das neu hinzugefügte Anmeldungssteuerelement aus Ihrer Anwendung aufrufen. Fügen Sie dazu ein Steuerelement **Schaltfläche** für Ihre Datei `MainWindow.xaml` hinzu, und legen Sie den Namen und den Inhalt jeweils auf **btnSignIn** und **Bei CDS für Apps anmelden** fest.  
+4.  Sie müssen jetzt das neu hinzugefügte Anmeldungssteuerelement aus Ihrer Anwendung aufrufen. Fügen Sie dazu ein Steuerelement **Schaltfläche** für Ihre Datei `MainWindow.xaml` hinzu, und legen Sie den Namen und den Inhalt jeweils auf **btnSignIn** und **Bei Common Data Service anmelden** fest.  
   
  
  > [!div class="mx-imgBorder"]
@@ -100,7 +100,7 @@ Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foun
   
 5.  Doppelklicken Sie auf die Schaltfläche, um Code für das Klickereignis der Schaltfläche **btnSignIn** in der Datei `MainWindow.xaml.cs` hinzuzufügen.  
   
-6.  Fügen Sie den folgenden Beispielcode zum Klickereignis der Schaltfläche **btnSignIn** hinzu, um das Steuerelement `CrmLoginForm1` aufzurufen, und erstellen Sie eine Instanz des „CDS für Apps”-Verbindungsobjekts.  
+6.  Fügen Sie den folgenden Beispielcode zum Klickereignis der Schaltfläche **btnSignIn** hinzu, um das Steuerelement `CrmLoginForm1` aufzurufen, und erstellen Sie eine Instanz des Common Data Service-Verbindungsobjekts.  
   
     ```csharp
     // Establish the Login control.  
@@ -148,9 +148,9 @@ Im Anschluss finden Sie eine schnelle Methode, um eine Windows Presentation Foun
   
 9. So testen Sie das Projekt:  
   
-    1.  Speichern Sie das Projekt, und drücken Sie F5, oder klicken Sie auf **Debuggen** > **Debuggen starten**, um zu überprüfen, ob das Projekt erfolgreich kompiliert wird. Bei erfolgreicher Kompilierung sehen Sie ein MainWindow mit der neuen Schaltfläche **Bei „CDS für Apps” anmelden**. Klicken Sie darauf, um das Anmeldungssteuerelement anzuzeigen.  
+    1.  Speichern Sie das Projekt, und drücken Sie F5, oder klicken Sie auf **Debuggen** > **Debuggen starten**, um zu überprüfen, ob das Projekt erfolgreich kompiliert wird. Bei erfolgreicher Kompilierung sehen Sie ein MainWindow mit der neuen Schaltfläche **Bei Common Data Service anmelden**. Klicken Sie darauf, um das Anmeldungssteuerelement anzuzeigen.  
   
-    2.  Testen Sie die Authentifizierung, indem Sie Ihre Anmeldeinformationen zur Verbindung mit CDS für Apps angeben, und klicken Sie dann auf **Anmeldung**. Wenn erfolgreich, erscheint eine Message darüber, die den Namen der Version und der Organisation, mit der Sie verbunden sind, angibt. Klicken Sie auf **OK**, um die Message zu schließen.  
+    2.  Testen Sie die Authentifizierung, indem Sie Ihre Anmeldeinformationen zur Verbindung mit Common Data Service angeben, und klicken Sie dann auf **Anmeldung**. Wenn erfolgreich, erscheint eine Message darüber, die den Namen der Version und der Organisation, mit der Sie verbunden sind, angibt. Klicken Sie auf **OK**, um die Message zu schließen.  
   
  
 > [!div class="mx-imgBorder"]

@@ -1,5 +1,5 @@
 ---
-title: Auslagern von umfangreichen Ergebnissätzen mit LINQ (Common Data Service for Apps) | Microsoft Docs
+title: Auslagern von umfangreichen Ergebnissätzen mit LINQ (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie Sie Ergebnisse einer großen .NET-sprachintegrierten Abfrage (LINQ), Language-Integrated Query auslagern können, indem Sie die Nehmen- und Überspringen-Operatoren verwenden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="page-large-result-sets-with-linq"></a>Auslagern von umfangreichen Ergebnissätzen mit LINQ
 
-In Common Data Service for Apps können Sie die Ergebnisse einer großen .NET-sprachintegrierten Abfrage (LINQ, Language-Integrated Query) auslagern, indem Sie die Operatoren `Take` und `Skip` verwenden. Der `Take`-Operator ruft eine angegebene Anzahl von Ergebnisse ab, und der `Skip`-Operator überspringt eine angegebene Anzahl von Ergebnissen.  
+In Common Data Service können Sie die Ergebnisse einer großen .NET-sprachintegrierten Abfrage (LINQ, Language-Integrated Query) auslagern, indem Sie die Operatoren `Take` und `Skip` verwenden. Der `Take`-Operator ruft eine angegebene Anzahl von Ergebnisse ab, und der `Skip`-Operator überspringt eine angegebene Anzahl von Ergebnissen.  
   
 ## <a name="linq-paging-example"></a>LINQ-Beispiel  
 

@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde (Common Data Service für Apps) | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde (Common Data Service) | Microsoft Docs'
 description: 'Diese exemplarische Vorgehensweise zeigt das Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde.'
 keywords: ''
 ms.date: 10/31/2018
@@ -22,7 +22,7 @@ search.app:
 
 # <a name="tutorial-update-a-service-endpoint-imported-from-a-solution"></a>Tutorial: Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
 
 Ein extre Schritt ist nach dem Import einer Lösung, die mindestens einen Dienstendpunkt enthält, der für die SAS-Autorisierung konfiguriert ist in eine Organisation erforderlich. Wenn die Lösung mit den Dienstendpunkten exportiert wird, enthält die exportierte Lösung nicht den SAS-Schlüssel für jeden Dienstendpunkt. Nachdem Sie die Lösung in eine Organisation Importiert haben, müssen Sie einen weiteren Schritt ausführen, um den SAS-Schlüssel für jeden Dienstendpunkt bereitzustellen.  
   

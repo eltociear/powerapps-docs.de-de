@@ -1,5 +1,5 @@
 ---
-title: Sicherheitsmodell (Common Data Service for Apps) | Microsoft Docs
+title: Sicherheitsmodell (Common Data Service) | Microsoft Docs
 description: 'PowerApps bietet ein Sicherheitsmodell, mit dem die Datenintegrität geschützt und die Geheimhaltung von Daten gewährleistet wird. Außerdem wird damit ein effizienter Datenzugriff und eine effiziente Zusammenarbeit unterstützt.'
 ms.custom: ''
 ms.date: 10/31/2018

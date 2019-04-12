@@ -1,6 +1,6 @@
 ---
-title: Importieren oder Exportieren von Daten vom Common Data Service for Apps
-description: 'Massenimportieren und -exportieren von Daten aus Excel oder CSV-Dateien in Entitäten in Common Data Service for Apps, indem Sie die Funktion "Daten aus Excel abrufen" verwenden'
+title: Importieren oder Exportieren von Daten vom Common Data Service
+description: 'Führen Sie einen Massenimporti und -export von Daten aus Excel oder CSV-Dateien in Entitäten in Common Data Service durch, indem Sie die Funktion "Daten aus Excel abrufen" verwenden'
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,9 +13,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="import-or-export-data-from-common-data-service-for-apps"></a>Importieren oder Exportieren von Daten vom Common Data Service for Apps
+# <a name="import-or-export-data-from-common-data-service"></a>Importieren oder Exportieren von Daten vom Common Data Service
 
-Um einen Massenimport und -export von Daten aus Microsoft Excel oder CSV-Dateien durchzuführen, verwenden Sie die Funktionen "Daten aus Excel-Datei abrufen" und "Daten exportieren" für aktualisierte Common Data Service for Apps-Umgebungen.
+Um einen Massenimport und -export von Daten aus Microsoft Excel oder CSV-Dateien durchzuführen, verwenden Sie die Funktionen "Daten aus Excel-Datei abrufen" und "Daten exportieren" für aktualisierte Common Data Service-Umgebungen.
 
 Es gibt zwei Möglichkeiten, um Dateien aus Excel oder aus CSV-Dateien in Entitäten zu importieren.
 
@@ -66,7 +66,7 @@ Jede Entität besitzt Pflichtfelder, die in der Eingabedatei vorhanden sein müs
 
 ## <a name="option-2-import-by-bringing-your-own-source-file"></a>Option 2: Import durch Bereitstellen der eigenen Quelldatei
 
-Wenn Sie ein fortgeschrittener Benutzer sind und die erforderlichen Felder für eine bestimmte Entität für Common Data Service for Apps-Entitäten kennen, definieren Sie Ihre eigene Excel- oder CSV-Quelldatei. Folgen Sie den Schritten in **Die Datei importieren**.
+Wenn Sie ein fortgeschrittener Benutzer sind und die erforderlichen Felder für eine bestimmte Entität für Common Data Service-Entitäten kennen, definieren Sie Ihre eigene Excel- oder CSV-Quelldatei. Folgen Sie den Schritten in **Die Datei importieren**.
 
 ## <a name="navigate-mapping-errors"></a>Zuordnungsfehler navigieren
 
@@ -92,7 +92,7 @@ Wenn Sie Zuordnungsfehler erhalten, nachdem Sie Ihre Datei hochladen, wählen Si
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Stellen Sie die Eindeutigkeit sicher, wenn Sie Daten aus Excel oder CSV in eine Entität importieren
 
-Common Data Service for Apps-Entitäten verwenden einen Primärschlüssel, um Datensätze in einer Common Data Service-Tabelle eindeutig zu identifizieren. Der Primärschlüssel für eine Common Data Service-Entität ist ein GUID (globally unique identifier). Es bietet die Standardgrundlage für Datensatzidentifikation. Datenvorgänge, wie das Importieren von Daten in Common Data Service-Entitäten, zeigen den Standardprimärschlüssel an.
+Common Data Service-Entitäten verwenden einen Primärschlüssel, um Datensätze in einer Common Data Service-Tabelle eindeutig zu identifizieren. Der Primärschlüssel für eine Common Data Service-Entität ist ein GUID (globally unique identifier). Es bietet die Standardgrundlage für Datensatzidentifikation. Datenvorgänge, wie das Importieren von Daten in Common Data Service-Entitäten, zeigen den Standardprimärschlüssel an.
 
 Beispiel:  
 Der Primärschlüssel für eine Entität **Firma** ist **accountid**.

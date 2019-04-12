@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen einer benutzerdefinierten Aktivität (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Erstellen einer benutzerdefinierten Aktivität (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel zeigt, wie eine benutzerdefinierte benutzerdefinierten Aktivität erstellet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-custom-activity"></a>Beispiel: Erstellen einer benutzerdefinierten Aktivität
 
-Dieses Beispiel zeigt, wie man eine benutzerdefinierte Aktivität mit [CreateEntityRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.createentityrequest?view=dynamics-general-ce-9) und [CreateAttributeRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.createattributerequest?view=dynamics-general-ce-9) erstellt. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CustomActivity) herunterladen. 
+Dieses Beispiel zeigt, wie man eine benutzerdefinierte Aktivität mit [CreateEntityRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.createentityrequest?view=dynamics-general-ce-9) und [CreateAttributeRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.createattributerequest?view=dynamics-general-ce-9) erstellt. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CustomActivity) herunterladen. 
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

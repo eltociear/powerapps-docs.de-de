@@ -1,5 +1,5 @@
 ---
-title: Datenexportservice (Common Data Service für Apps) | Microsoft Docs
+title: Datenexportservice (Common Data Service) | Microsoft Docs
 description: 'Funktionen, Voraussetzungen, API und Programmierung des Datenexport-Service.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="data-export-service"></a>Datenexportservice
 
-Der Datenexport ist ein Add-On-Service, der von der Common Data Service for Apps-Lösung bereitgestellt wird und der die Möglichkeit gibt, Common Data Service for Apps-Daten auf einen Microsoft Azure SQL-Datenbankspeicher in einem kundeneigenen Microsoft Azure Abonnement zu replizieren. Die unterstützten Zielziele sind Microsoft Azure SQL Datenbank sowie Microsoft Azure SQL Server auf Microsoft Azure virtuellen Computern. Datenexport synchronisiert intelligent das gesamte Dynamics 365 Schema und die Daten und synchronisiert danach auf fortlaufender Basis, wenn Änderungen eintreten (Delta-Änderungen) in Dynamics 365 (online).  
+Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung bereitgestellt wird und der die Möglichkeit gibt, Common Data Service-Daten auf einen Microsoft Azure SQL-Datenbankspeicher in einem kundeneigenen Microsoft Azure Abonnement zu replizieren. Die unterstützten Zielziele sind Microsoft Azure SQL Datenbank sowie Microsoft Azure SQL Server auf Microsoft Azure virtuellen Computern. Datenexport synchronisiert intelligent das gesamte Dynamics 365 Schema und die Daten und synchronisiert danach auf fortlaufender Basis, wenn Änderungen eintreten (Delta-Änderungen) in Dynamics 365 (online).  
   
- Der Datenexportservice bietet eine Schnittstelle zum Verwalten der Konfiguration und der laufenden Verwaltung dieses Service auf CDS for Apps.  Weitere Informationen finden Sie unter [Datenexport](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). In diesem Thema werden die entsprechenden programmgesteuerte Benutzeroberfläche und die Probleme für diesen Service behandelt.  
+ Der Datenexportservice bietet eine Schnittstelle zum Verwalten der Konfiguration und der laufenden Verwaltung dieses Service aus Common Data Service.  Weitere Informationen finden Sie unter [Datenexport](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). In diesem Thema werden die entsprechenden programmgesteuerte Benutzeroberfläche und die Probleme für diesen Service behandelt.  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>Voraussetzungen für die Verwendung des Datenexport-Service  
- Da dieser Service einen externen Zugriff auf die Microsoft Azure SQL Datenbank von CDS for Apps erfordert, müssen einige Voraussetzungen erfüllt sein, bevor Sie erfolgreich auf den Service zugreifen können. Die folgenden Voraussetzungen werden im Detail aus Sicht eines Administrators erläutert im Abschnitt [Voraussetzungen für die Verwendung des Datenexport-Service-](https://technet.microsoft.com/library/mt744592.aspx).  
+ Da dieser Service einen externen Zugriff auf die Microsoft Azure SQL Datenbank von Common Data Service erfordert, müssen einige Voraussetzungen erfüllt sein, bevor Sie erfolgreich auf den Service zugreifen können. Die folgenden Voraussetzungen werden im Detail aus Sicht eines Administrators erläutert im Abschnitt [Voraussetzungen für die Verwendung des Datenexport-Service-](https://technet.microsoft.com/library/mt744592.aspx).  
   
- Der CDS for Apps - Dienst muss konfiguriert werden, damit:  
+ Der Common Data Service-Service muss entsprechend konfiguriert sein:  
   
 - Die Entitäten, die exportiert wurden, werden mit Änderungsnachverfolgung aktiviert. Weitere Informationen finden Sie unter [Verwenden von Änderungsnachverfolgung zum Synchronisieren von Daten mit externen Systemen](use-change-tracking-synchronize-data-external-systems.md).  
   
@@ -35,7 +35,7 @@ Der Datenexport ist ein Add-On-Service, der von der Common Data Service for Apps
   
  Die SQL Azure Ziel Datenbank muss konfiguriert werden, damit:  
   
-- Das Abonnement muss die Menge der Daten, die von Ihrer CDS for Apps-Instanz synchronisiert werden unterstützen.  
+- Das Abonnement muss die Menge der Daten, die von Ihrer Common Data Service-Instanz synchronisiert werden, unterstützen.  
   
 - Firewalleinstellungen muss den Zugriff von der IP-Adresse des Datenexportservice erlauben. Weitere Informationen: [Eine Azure SQL Datenbankserverstufen-Firewallregel mithilfe von Azure Portal konfigurieren](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/).  
   
@@ -62,7 +62,7 @@ Für online Lösungen und Services stellt Azure einen [Key Vault](https://azure.
 Es ist ratsam, dass die Domäne https://discovery.crmreplication.azure.net/ der Liste der vertrauenswürdigen Websites in Ihrem Browser hinzugefügt und Popups für diesen Ort aktiviert werden.  
   
 ## <a name="programming-for-the-data-export-service"></a>Programmierung für den Datenexport-Service  
- Der Datenexport-Service trifft auf eine Rest-basierte API, die in zwei Gruppen unterteilt werden: eine Gruppe von `Metadata`-Vorgänge, um CDS for Apps-Organisationsstrukturen, -Beziehungen und -Verbindungsinformationen zu erkunden und eine Gruppe für `Profiles`-Vorgänge zum Konfigurieren und Verwalten der Datenenreplikation.  Die API ist in den folgenden Swagger URLs definiert und dokumentiert: [Swaggern von](http://swagger.io/) URLs:  
+ Der Datenexport-Service macht eine REST-basierte API verfügbar, die in zwei Gruppen unterteilt werden: eine Gruppe von `Metadata`-Vorgängen, um Common Data Service-Organisationsstrukturen, -Beziehungen und -Verbindungsinformationen zu erkunden und eine Gruppe für `Profiles`-Vorgänge zum Konfigurieren und Verwalten der Datenreplikation.  Die API ist in den folgenden Swagger URLs definiert und dokumentiert: [Swaggern von](http://swagger.io/) URLs:  
   
 |Swagger-Endpunkt|Beschreibung|  
 |----------------------|-----------------|  
@@ -100,7 +100,7 @@ Es ist ratsam, dass die Domäne https://discovery.crmreplication.azure.net/ der 
 |profiles/{id}/failures|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|Hier finden Sie die Verbindungszeichenfolge für einen Blob, der Fehlerdetails für ein gegebenes Profil enthält|  
   
 ### <a name="gain-access"></a>Zugriff erhalten  
-Da nur CDS for Apps-Systemadministratoren die Autorisierung besitzen, um Datenexportvorgänge auszuführen, können diese APIs die Anruferautorisierung durch die Nutzung von Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)) [Sicherheitstokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) erzwingen. Der folgende Codeausschnitt wird zeigt das Generieren eines Tokens für eine Webanwendung, indem er der Name und das Kennwort des Administrators verwendet.   Sie müssen `AppId`, `crmAdminUser` und `crmAdminPassword` durch die Werte ersetzen, die Ihrem Dienst entsprechen. Diese Methode kann für die Entwicklung und Tests verwendet werden, aber für die Produktion sollten sicherere Methoden wie Azure Key Vault genutzt werden.  
+Da nur Common Data Service-Systemadministratoren die Autorisierung besitzen, um Datenexportvorgänge auszuführen, können diese APIs die Anruferautorisierung durch die Nutzung von Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)) [Sicherheitstokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) erzwingen. Der folgende Codeausschnitt wird zeigt das Generieren eines Tokens für eine Webanwendung, indem er der Name und das Kennwort des Administrators verwendet.   Sie müssen `AppId`, `crmAdminUser` und `crmAdminPassword` durch die Werte ersetzen, die Ihrem Dienst entsprechen. Diese Methode kann für die Entwicklung und Tests verwendet werden, aber für die Produktion sollten sicherere Methoden wie Azure Key Vault genutzt werden.  
   
 ```csharp  
   

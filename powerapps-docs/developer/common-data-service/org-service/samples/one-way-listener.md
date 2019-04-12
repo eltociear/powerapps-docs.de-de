@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Unidirektionaler Listener (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Unidirektionaler Listener (Common Data Service) | Microsoft Docs'
 description: 'Diese Beispiel zeigt, wie die Anwendung ein Remote-Dienst-Plug-In registriert, das ausgeführt wird, wenn eine-Nachricht an einen eindirektionalen Endpunkt gesendet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-one-way-listener"></a>Beispiel: Eindirektionaler Listener
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-one-way-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-one-way-listener -->
 
 Dieses Beispiel zeigt, wie ein `Azure Service Bus`-Listener für einen eindirektionalen Endpunktvertrag geschrieben wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OneWayListeners) herunterladen.
 

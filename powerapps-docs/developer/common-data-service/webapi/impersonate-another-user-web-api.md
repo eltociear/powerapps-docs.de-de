@@ -1,10 +1,10 @@
 ---
-title: Wechsel der Identität eines Benutzers mithilfe der Web API (Common Data Service for Apps) | Microsoft Docs
-description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service for Apps auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses benutzers auszuführen. Lesen Sie, wie Sie die Identität eines anderen Benutzers in Common Data Service for apps mithilfe der Web API wechseln können.'
+title: Wechsel der Identität eines Benutzers mithilfe der Web-API (Common Data Service) | Microsoft Docs
+description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. Lesen Sie, wie Sie die Identität eines anderen Benutzers in Common Data Service mithilfe der Web-API wechseln können.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/18/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -34,7 +34,7 @@ Es gibt Zeiten, in denen Ihr Code im Namen eines anderen Benutzers Vorgänge aus
 
 ## <a name="requirements-for-impersonation"></a>Anforderungen für den Identitätswechsel
 
-Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service für Apps auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. Dies ist erforderlich, da die Common Data Service for Apps Webdienste von verschiedenen Clients und Services im Auftrag eines CDS for Apps-Benutzers aufgerufen werden können, etwa in einem Workflow oder einer benutzerdefinierten ISV-Lösung. Der Identitätswechsel betrifft zwei verschiedene Benutzerkonten: ein Benutzerkonto (A) wird bei der Ausführung von Code zur Ausführung einer Aufgabe im Auftrag eines anderen Benutzers (B) verwendet.  
+Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. Dies ist erforderlich, da die Common Data Service-Webdienste von verschiedenen Clients und Services im Auftrag eines Common Data Service-Benutzers aufgerufen werden können, etwa in einem Workflow oder einer benutzerdefinierten ISV-Lösung. Der Identitätswechsel betrifft zwei verschiedene Benutzerkonten: ein Benutzerkonto (A) wird bei der Ausführung von Code zur Ausführung einer Aufgabe im Auftrag eines anderen Benutzers (B) verwendet.  
   
 Benutzerkonto (A) benötigt die Berechtigung `prvActOnBehalfOfAnotherUser`, die in der Sicherheitsrolle "Stellvertretung" enthalten ist. Die aktuelle Gruppe von Rechten, die verwendet wird, um Daten zu ändern, ist die Schnittmenge der Rechte, die der Stellvertreterbenutzer besitzt, und der des Benutzers, dessen Identität angenommen wird. In anderen Worten: Benutzer (A) kann nur dann etwas tun, wenn Benutzer (A) und der Benutzer (B), dessen Identität angenommen wird, über die dazu erforderlichen Rechte verfügen.  
   
@@ -42,12 +42,17 @@ Benutzerkonto (A) benötigt die Berechtigung `prvActOnBehalfOfAnotherUser`, die 
 
 ## <a name="how-to-impersonate-a-user"></a>So wird die Identität eines Benutzers angenommen
 
-Um den Kontext eines Benutzers zu nutzen, fügen Sie einen Anforderungsheader mit dem Namen MSCRMCallerID mit einem GUID-Wert entsprechend der systemuserid des Benutzers vor dem Senden der Anforderung an den Webdienst hinzu. In diesem Beispiel wird eine neue Kontoentität im Auftrag des Benutzers mit systemuserid 00000000-0000-0000-000000000002 erstellt.  
+Es gibt zwei Möglichkeiten, um die Identität eines Benutzers anzunehmen. Beide sind möglich, indem ein Header mit der entsprechenden Benutzer-ID übergeben wird.
+
+ 1. **Bevorzugt:** Nehmen Sie die Identität eines Benutzers auf Basis der Azure Active Directory (AAD)-Objekt-ID an, indem Sie diesen Wert zusammen mit dem Header `CallerObjectId` übergeben.
+2. **Legacy:** Um die Identität eines Benutzers auf Grundlage der systemuserid anzunehmen, können Sie `MSCRMCallerID` mit dem entsprechenden guid-Wert nutzen.
+
+ In diesem Beispiel wird im Auftrag des Benutzers eine neue Firmenentität mit der Azure Active Directory-Objekt-ID `e39c5d16-675b-48d1-8e67-667427e9c084` erstellt.   
   
  **Anforderung**  
 ```http 
 POST [Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-MSCRMCallerID: 00000000-0000-0000-000000000002  
+CallerObjectId: e39c5d16-675b-48d1-8e67-667427e9c084  
 Accept: application/json  
 Content-Type: application/json; charset=utf-8  
 OData-MaxVersion: 4.0  
@@ -84,30 +89,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 ETag: W/"506868"  
   
-{  
-    "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,createdby,createdonbehalfby,owninguser,createdby(fullname),createdonbehalfby(fullname),owninguser(fullname))/$entity",  
-    "@odata.etag": "W/\"506868\"",  
-    "name": "Sample Account created using impersonation",  
-    "accountid": "00000000-0000-0000-000000000003",  
-    "createdby": {  
-        "@odata.etag": "W/\"506834\"",  
-        "fullname": "Impersonated User",  
-        "systemuserid": "00000000-0000-0000-000000000002",  
-        "ownerid": "00000000-0000-0000-000000000002"  
-    },  
-    "createdonbehalfby": {  
-        "@odata.etag": "W/\"320678\"",  
-        "fullname": "Actual User",  
-        "systemuserid": "00000000-0000-0000-000000000001",  
-        "ownerid": "00000000-0000-0000-000000000001"  
-    },  
-    "owninguser": {  
-        "@odata.etag": "W/\"506834\"",  
-        "fullname": "Impersonated User",  
-        "systemuserid": "00000000-0000-0000-000000000002",  
-        "ownerid": "00000000-0000-0000-000000000002"  
-    }  
-}  
+{
+  "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,createdby(fullname,azureactivedirectoryobjectid),createdonbehalfby(fullname,azureactivedirectoryobjectid),owninguser(fullname,azureactivedirectoryobjectid))/$entity",
+  "@odata.etag": "W/\"2751197\"",
+  "name": "Sample Account created using impersonation",
+  "accountid": "00000000-0000-0000-000000000003",
+  "createdby": {
+    "@odata.etag": "W/\"2632435\"",
+    "fullname": "Impersonated User",
+    "azureactivedirectoryobjectid": "e39c5d16-675b-48d1-8e67-667427e9c084",
+    "systemuserid": "75df116d-d9da-e711-a94b-000d3a34ed47",
+    "ownerid": "75df116d-d9da-e711-a94b-000d3a34ed47"
+  },
+  "createdonbehalfby": {
+    "@odata.etag": "W/\"2632445\"",
+    "fullname": "Actual User",
+    "azureactivedirectoryobjectid": "3d8bed3e-79a3-47c8-80cf-269869b2e9f0",
+    "systemuserid": "278742b0-1e61-4fb5-84ef-c7de308c19e2",
+    "ownerid": "278742b0-1e61-4fb5-84ef-c7de308c19e2"
+  },
+  "owninguser": {
+    "@odata.etag": "W/\"2632435\"",
+    "fullname": "Impersonated User",
+    "azureactivedirectoryobjectid": "e39c5d16-675b-48d1-8e67-667427e9c084",
+    "systemuserid": "75df116d-d9da-e711-a94b-000d3a34ed47",
+    "ownerid": "75df116d-d9da-e711-a94b-000d3a34ed47"
+  }
+}
 ```  
   
 ### <a name="see-also"></a>Siehe auch

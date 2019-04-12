@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Verwenden von Dynamics 365 for Outlook-Methoden (Common Data Service for Apps)| Microsoft Docs'
+title: 'Beispiel: Verwenden von Dynamics 365 for Outlook-Methoden (Common Data Service)| Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie die Methoden in der `Microsoft.Crm.Outlook.Sdk.dll`-Assembly verwendet werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-dynamics-365-for-outlook-methods"></a>Beispiel: Verwenden von Dynamics 365 für Outlook-Methoden
 
-Dieser Beispielcode ist für Common Data Service for Apps bestimmt. Um das Beispiel herunterladen, verweisen Sie auf [Beispiel: Dynamics 365 for Outlook Methoden verwenden](https://msdn.microsoft.com/en-us/library/gg309513.aspx).
+Dieser Beispielcode ist für Common Data Service bestimmt. Um das Beispiel herunterladen, verweisen Sie auf [Beispiel: Dynamics 365 for Outlook Methoden verwenden](https://msdn.microsoft.com/en-us/library/gg309513.aspx).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

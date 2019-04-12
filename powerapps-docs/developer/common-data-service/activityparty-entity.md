@@ -1,5 +1,5 @@
 ---
-title: ActivityParty-Entität (Common Data Service for Apps) | Microsoft Docs
+title: ActivityParty-Entität (Common Data Service) | Microsoft Docs
 description: 'Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität zugeordnet ist. Eine Aktivität kann mehrere Aktivitätsparteien haben.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,7 +23,7 @@ Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität 
 
 ## <a name="activity-party-types"></a>Aktivitätsparteitypen  
 
- Es stehen 11 Aktivitätsparteitypen in Common Data Service for Apps zur Verfügung. Der Aktivitätsparteityp ist als ganzzahliger Wert im `ActivityParty.ParticipationTypeMask`-Attribut gespeichert. In der folgenden Tabelle sind die verschiedenen Aktivitätsparteitypen, der entsprechende ganzzahlige Wert für das `ActivityParty.ParticipationTypeMask`-Attribut und die Beschreibung aufgeführt.  
+ Es stehen 11 Aktivitätsparteitypen in Common Data Service zur Verfügung. Der Aktivitätsparteityp ist als ganzzahliger Wert im `ActivityParty.ParticipationTypeMask`-Attribut gespeichert. In der folgenden Tabelle sind die verschiedenen Aktivitätsparteitypen, der entsprechende ganzzahlige Wert für das `ActivityParty.ParticipationTypeMask`-Attribut und die Beschreibung aufgeführt.  
   
 |Aktivitätsparteityp|Value|Beschreibung|  
 |-------------------------|-----------|-----------------|  
@@ -41,7 +41,7 @@ Eine Aktivitätspartei stellt eine Person oder Gruppe dar, die einer Aktivität 
   
 <a name="SupportedActivityPartyTypes"></a>   
 ## <a name="activity-party-types-available-for-each-activity"></a>Aktivitätsparteitypen, die für jede Aktivität verfügbar sind  
- Nicht alle Aktivitätsparteitypen sind für jede Aktivität in CDS for Apps verfügbar, mit Ausnahme einer benutzerdefinierten Aktivität. Eine benutzerdefinierte Aktivität unterstützt alle Aktivitätsparteitypen. Sie können einen Aktivitätsparteityp einer Aktivität zuordnen, indem Sie das jeweilige Attribut einer Aktivität verwenden. Möchten Sie also beispielsweise einen `Organizer`-Aktivitätsparteityp einer Terminaktivität zuordnen, müssen Sie einen Wert oder ein Wertarray des `ActivityParty`-Typs im `Appointment.Organizer`-Attribut angeben.  
+ Nicht alle Aktivitätsparteitypen sind für jede Aktivität in Common Data Service verfügbar, mit Ausnahme einer benutzerdefinierten Aktivität. Eine benutzerdefinierte Aktivität unterstützt alle Aktivitätsparteitypen. Sie können einen Aktivitätsparteityp einer Aktivität zuordnen, indem Sie das jeweilige Attribut einer Aktivität verwenden. Möchten Sie also beispielsweise einen `Organizer`-Aktivitätsparteityp einer Terminaktivität zuordnen, müssen Sie einen Wert oder ein Wertarray des `ActivityParty`-Typs im `Appointment.Organizer`-Attribut angeben.  
   
  Um zu steuern, welche E-Mail-Adresse für das Senden von E-Mails an die Aktivitätspartei oder zum Antworten auf E-Mails von der Aktivitätspartei verwendet werden soll, legen Sie das `ActivityParty.AddressUsed`-Attribut-fest.  
   

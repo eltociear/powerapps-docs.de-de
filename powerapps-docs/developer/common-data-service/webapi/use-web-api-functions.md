@@ -1,10 +1,10 @@
 ---
-title: Nutzen von Web-API-Funktionen (Common Data Service für Apps) | Microsoft Docs
-description: 'Funktionen sind wiederverwendbare Vorgänge, die mit einer GET-Anforderung zum Abrufen von Daten aus CDS für Apps verwendet werden'
+title: Nutzen von Web-API-Funktionen (Common Data Service) | Microsoft Docs
+description: 'Funktionen sind wiederverwendbare Vorgänge, die mit einer GET-Anforderung zum Abrufen von Daten aus Common Data Service verwendet werden'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

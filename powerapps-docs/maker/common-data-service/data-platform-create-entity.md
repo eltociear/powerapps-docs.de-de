@@ -22,12 +22,12 @@ In diesem Thema erfahren Sie, wie Sie eine benutzerdefinierte Entität namens "P
 ## <a name="prerequisites"></a>Voraussetzungen
 Um dieser Vorgehensweise zu folgen, sind die folgenden Elemente erforderlich:
 * Entweder ein PowerApps-Plan 2 oder eine Microsoft Flow Plan 2-Lizenz. Alternativ können Sie sich für eine [kostenlose Testversion von PowerApps Plan 2](https://web.powerapps.com/signup?redirect=marketing&email=) registrieren.
-* Entweder eine Systemadministrator- oder eine Systemanpasser-Sicherheitsrolle in Common Data Service for Apps.
+* Entweder eine Systemadministrator- oder eine Systemanpasser-Sicherheitsrolle in Common Data Service.
 
 ## <a name="sign-in-to-powerapps"></a>Bei PowerApps anmelden
 Unter [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei PowerApps anmelden.
 
-## <a name="create-an-entity"></a>Erstellen einer Entität
+## <a name="create-an-entity"></a>Entität erstellen
 1. Klicken oder tippen Sie im Navigationsbereich auf **Daten**, um sie zu erweitern, und klicken oder tippen Sie dann auf **Entitäten**.
 
     ![Liste der Entitäten und ihrer Details](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")

@@ -3,7 +3,7 @@ title: Anzeigen oder Herunterladen von Entwicklerressourcen | MicrosoftDocs
 description: Suchen Sie Entwicklerressourcen und Serviceendpunkt URLs
 keywords: ''
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -54,9 +54,9 @@ Dieser Abschnitt enthält Links für Entwickler zum Finden von Ressourcen. Die f
 <!-- TODO update 512122 to go to https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-tools-nuget -->
 
 
-## <a name="connect-your-apps-to-this-instance-of-common-data-service-for-apps"></a>Verbinden Sie Ihre Apps mit dieser Instanz von Common Data Service for Apps.
+## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Verbinden Sie Ihre Apps mit dieser Instanz von Common Data Service.
 
-Dieser Abschnitt enthält Informationen, die Sie benötigen, um eine Verbindung zu Ihrem Common Data Service for Apps herzustellen.
+Dieser Abschnitt enthält Informationen, die Sie benötigen, um eine Verbindung zu Ihrem Common Data Service herzustellen.
 
 ### <a name="instance-web-api"></a>Instanz-Web-API
 
@@ -75,9 +75,9 @@ Diese Informationen beschreiben eindeutig Ihre Instanz. Es gibt eine GUID **ID**
 Diese Informationen werden benötigt, wenn Sie Azure-Erweiterungen mit Ihrer Instanz verwenden.
 Weitere Informationen: [Dokumentation für Entwickler: Azure-Erweiterungen für Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/azure-extensions)
 
-## <a name="connect-your-apps-to-the-common-data-service-for-apps-discovery-service"></a>Verbinden Sie Ihre Apps mit dem Common Data Service for Apps-Suchdienst.
+## <a name="connect-your-apps-to-the-common-data-service-discovery-service"></a>Verbinden Sie Ihre Apps mit dem Common Data Service-Suchdienst.
 
-Da Personen Zugriff auf mehrere CDS for Apps-Umgebungen haben können, ermöglichen die Suchdienste das Abrufen der verfügbaren Umgebungen, auf die eine Person basierend auf ihren Benutzerdaten zugreifen kann.
+Da Personen Zugriff auf mehrere Common Data Service-Umgebungen haben können, ermöglichen die Suchdienste das Abrufen der verfügbaren Umgebungen, auf die eine Person basierend auf ihren Benutzerdaten zugreifen kann.
 
 ### <a name="discovery-web-api"></a>Suchdienst-Web-API
 

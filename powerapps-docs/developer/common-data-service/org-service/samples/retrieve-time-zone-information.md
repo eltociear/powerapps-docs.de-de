@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen von Zeitzoneninformationen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen von Zeitzoneninformationen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Zeitzoneninformationen abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-time-zone-information"></a>Beispiel: Abrufen von Zeitzoneninformationen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-time-zone-information -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-time-zone-information -->
 
 Dieses Beispiel zeigt, wie Zeitzoneninformationen abgerufen werden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveTimeZone) herunterladen.
 

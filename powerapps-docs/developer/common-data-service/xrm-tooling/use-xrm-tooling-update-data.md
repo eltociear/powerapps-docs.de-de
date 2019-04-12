@@ -1,10 +1,10 @@
 ---
-title: Nutzen von XRM-Tooling zur Datenaktualisierung (Common Data Service für Apps) | Microsoft Docs
-description: 'Verwenden der CrmServiceClient-Klasse, um Daten in CDS für Apps zu aktualisieren'
+title: Nutzen von XRM-Tooling zum Aktualisieren von Daten (Common Data Service) | Microsoft Docs
+description: 'Verwenden der CrmServiceClient-Klasse, um Daten in Common Data Service zu aktualisieren'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,13 +23,13 @@ search.app:
 ---
 # <a name="use-xrm-tooling-to-update-data"></a>Verwendung von XRM-Tooling zum Aktualisieren von Daten
 
-Es gibt zwei Methoden in der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse, um Daten in CDS für Apps zu aktualisieren: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> und <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)>.  
+Es gibt zwei Möglichkeiten in der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse zum Aktualisieren von Daten in Common Data Service: <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateEntity(System.String,System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper},System.String,System.Boolean,System.Guid)> und <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.UpdateStateAndStatusForEntity(System.String,System.Guid,System.String,System.String,System.Guid)>.  
   
 Für eine Updateaktion mithilfe der XRM-Tooling-API ist eine Datennutzlast erforderlich. Die Datennutzlast ist ein Dictionary\<string, CrmDataTypeWrapper>-Objekt. <xref:Microsoft.Xrm.Tooling.Connector.CrmDataTypeWrapper> wird verwendet, um der Schnittstelle mitzuteilen, welche Verarbeitung auf den Datenpunkt angewendet werden soll, auf den verwiesen wird.  
   
 ## <a name="updateentity"></a>UpdateEntity  
 
-Dies ist die Ankermethode zum Aktualisieren eines jeden Datensatzes in CDS für Apps, mit Ausnahme des Einstellungsstatus oder des Status eines Datensatzes. Zur Verwendung müssen Sie die folgenden Informationen zu berücksichtigen: der Schemaname der Entität, die Sie aktualisieren möchten, das Primärschlüsselfeld der Entität, die Sie aktualisieren möchten, die GUID des Datensatzes, den Sie aktualisieren möchten, und das Datennutzlastarray, mit dem aktualisiert werden soll.  
+Dies ist die Ankermethode zum Aktualisieren eines jeden Datensatzes in Common Data Service, mit Ausnahme des Einstellungsstatus oder des Status eines Datensatzes. Zur Verwendung müssen Sie die folgenden Informationen zu berücksichtigen: der Schemaname der Entität, die Sie aktualisieren möchten, das Primärschlüsselfeld der Entität, die Sie aktualisieren möchten, die GUID des Datensatzes, den Sie aktualisieren möchten, und das Datennutzlastarray, mit dem aktualisiert werden soll.  
   
 ```csharp  
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -79,11 +79,11 @@ else
   
 ## <a name="updatestateandstatusforentity"></a>UpdateStateAndStatusForEntity 
  
-Diese Methode wird verwendet, um den Status eines Datensatzes in CDS für Apps festzulegen. So starten z. B. alle Datensätze im Allgemeinen in einem „geöffneten“ Status. Der Name des Status wird basierend auf dem Typ des Datensatzes und sogar je nach Auswahl des Entwicklers geändert. Ein Angebot enthält beispielsweise mehrere mögliche Status: **Entwurf**, **Aktiv**, **Schließen**, **Verloren**, **Gewonnen**.  
+Diese Methode wird verwendet, um den Status eines Datensatzes in Common Data Service festzulegen. So starten z. B. alle Datensätze im Allgemeinen in einem „geöffneten“ Status. Der Name des Status wird basierend auf dem Typ des Datensatzes und sogar je nach Auswahl des Entwicklers geändert. Ein Angebot enthält beispielsweise mehrere mögliche Status: **Entwurf**, **Aktiv**, **Schließen**, **Verloren**, **Gewonnen**.  
   
 <!-- TODO:
 > [!TIP]
->  You can use the OptionSets.cs file in the SDK\SampleCode\CS\HelperCode folder of the SDK download package to view and use the global option sets available for various entities in CDS for Apps. For more information about global option sets, see [Customize Global Option Sets](../org-service/customize-global-option-sets.md).   -->
+>  You can use the OptionSets.cs file in the SDK\SampleCode\CS\HelperCode folder of the SDK download package to view and use the global option sets available for various entities in Common Data Service. For more information about global option sets, see [Customize Global Option Sets](../org-service/customize-global-option-sets.md).   -->
   
 Zum Aktualisieren des Status einer Entität müssen Sie wissen, wie der Soll-Zustand und der Status lauten, entweder nach Namen nach IDs. Sowohl die Namen als auch die IDs finden Sie, indem Sie die Metadaten für die Entität abrufen und auf die Felder „Status“ und „Zustand“ achten. In diesem Beispiel wird veranschaulicht, wie Sie den Status eines Firmendatensatzes auf **Inaktiv** festgelegen.  
   
@@ -124,7 +124,7 @@ else
 ### <a name="see-also"></a>Siehe auch  
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Verwenden von XRM-Tooling, um eine Verbindung mit CDS für Apps herzustellen](use-crmserviceclient-constructors-connect.md)<br />
-[Verwenden der XRM-Tooling-API, um Aktionen in CDS für Apps auszuführen](use-xrm-tooling-execute-actions.md)<br />
+[Verwenden von XRM-Tooling zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)<br />
 <!-- TODO:
 [Work with attribute metadata](../org-service/work-attribute-metadata.md) -->

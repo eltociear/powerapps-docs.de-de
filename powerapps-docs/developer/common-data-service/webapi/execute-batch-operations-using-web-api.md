@@ -1,10 +1,10 @@
 ---
-title: Stapelvorgänge mithilfe von der Web-API ausführen (Common Data Service für Apps) | Microsoft Docs
+title: Stapelvorgänge mithilfe von der Web-API ausführen (Common Data Service) | Microsoft Docs
 description: Mit Batchvorgängen können Sie mehrere Vorgänge in einer einzigen HTTPS-Anforderung gruppieren. Infos zum Ausführen von Batchbetrieben mithilfe der Web-API
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

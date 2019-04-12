@@ -1,5 +1,5 @@
 ---
-title: 'Aufgaben-, Fax-, Telefonanruf- und Briefaktivitäten-Entitäten (Common Data Service for Apps) | Microsoft Docs'
+title: 'Aufgaben-, Fax-, Telefonanruf- und Briefaktivitäten-Entitäten (Common Data Service) | Microsoft Docs'
 description: 'Erfahren Sie mehr über Entitäten, die es Ihnen ermöglichen, Hauptaktivitäten zu verwalten, die in einer Beziehungsverwaltungslösung ausgeführt werden.'
 ms.custom: ''
 ms.date: 10/31/2018

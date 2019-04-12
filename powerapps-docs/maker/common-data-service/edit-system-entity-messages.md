@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie Systementitätsnachrichten bearbeitet werden'
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="edit-system-entity-messages"></a>Bearbeiten von Systementitätenmeldungen
 
-Der standardmäßige Anzeigename einiger Systementitäten wird in den Text- und Fehlermeldungen der Benutzeroberfläche im Common Data Service for Apps verwendet. Wenn Sie den Anzeigenamen ändern, sollten Sie auch alle Meldungen ändern, die den Standard-Anzeigenamen verwenden. Wenn Sie zum Beispiel den Anzeigenamen von *Firma* zu *Unternehmen* ändern, könnten Sie immer noch eine Fehlermeldung mit dem alten Namen sehen.  
+Der standardmäßige Anzeigename einiger Systementitäten wird in den Text- und Fehlermeldungen der Benutzeroberfläche im Common Data Service verwendet. Wenn Sie den Anzeigenamen ändern, sollten Sie auch alle Meldungen ändern, die den Standard-Anzeigenamen verwenden. Wenn Sie zum Beispiel den Anzeigenamen von *Firma* zu *Unternehmen* ändern, könnten Sie immer noch eine Fehlermeldung mit dem alten Namen sehen.  
 
 Sie können Systemmeldungen nicht über das PowerApps-Portal bearbeiten, Sie müssen den Lösungs-Explorer verwenden.
 

@@ -1,5 +1,5 @@
 ---
-title: Asynchroner Dienst (Common Data Service for Apps)  | Microsoft Docs
+title: Asynchroner Dienst (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie grundlegendes Asynchrone Dienste, die den Systemauftrag verwalten.'
 ms.custom: ''
 ms.date: 11/27/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="asynchronous-service"></a>Asynchroner Service
 
-Der asynchrone Service führt die Vorgänge mit langer Laufzeit unabhängig vom hauptsächlichen Common Data Service for Apps-Kernvorgang aus. Dies führt zu einer optimierten Gesamtsystemleistung und Skalierbarkeit. Der asynchrone Dienst verfügt über eine verwaltete First-In, First-Out (FIFO)-Warteschlange für die Ausführung von asynchron registrierten Plug-Ins, Workflows und Operationen wie Massenmail, Massenimport und Verbreitung von Aktivitätsweitergaben. Diese Vorgänge werden beim asynchronen Dienst registriert und in regelmäßigen Intervallen ausgeführt, wenn der Dienst die Warteschlange verarbeitet.
+Der asynchrone Service führt die Vorgänge mit langer Laufzeit unabhängig vom hauptsächlichen Common Data Service-Kernvorgang aus. Dies führt zu einer optimierten Gesamtsystemleistung und Skalierbarkeit. Der asynchrone Dienst verfügt über eine verwaltete First-In, First-Out (FIFO)-Warteschlange für die Ausführung von asynchron registrierten Plug-Ins, Workflows und Operationen wie Massenmail, Massenimport und Verbreitung von Aktivitätsweitergaben. Diese Vorgänge werden beim asynchronen Dienst registriert und in regelmäßigen Intervallen ausgeführt, wenn der Dienst die Warteschlange verarbeitet.
 
 
 Nachdem ein Ereignis eingetreten ist und alle synchronen Erweiterungen verarbeitet wurden, serialisiert die Plattform den Kontext für alle asynchronen Erweiterungen und speichert ihn als **Systemauftrag** in der [AsyncOperation-Entität](reference/entities/asyncoperation.md) in der Datenbank. Der Systemauftrag definiert und verfolgt die Ausführung des asynchronen Betriebs. Wenn Ressourcen verfügbar werden, werden Systemaufträge verarbeitet und die von ihnen definierten Operationen ausgeführt. Alle in der Erweiterung definierten Datenoperationen werden erneut von der Ereignisausführungspipeline verarbeitet, diesmal jedoch als synchrone Operation.

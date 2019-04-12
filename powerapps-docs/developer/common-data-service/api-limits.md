@@ -1,14 +1,14 @@
 ---
-title: API-Einschränkungen (Common Data Service für Apps) | Microsoft Docs
+title: API-Einschränkungen (Common Data Service) | Microsoft Docs
 description: Verstehen Sie die Begrenzungen für API-Anforderungen.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/21/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: MicroSri
-ms.author: jdaly
-manager: ryjones
+author: brandonsimons
+ms.author: bsimons
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -17,46 +17,32 @@ search.app:
 ---
 # <a name="api-limits"></a>API-Begrenzungen
 
-Ab 19. März 2018 wird die Anzahl der API-Anforderungen, die von jedem Benutzer erteilt werden können, pro Organisationsinstanz innerhalb eines fünfminütigen Intervalls begrenzt. Wenn dieser Grenzwert überschritten wird, wird eine Ausnahme durch die Plattform ausgelöst.
+Wir begrenzen die Anzahl der API-Anforderungen, die von jedem Benutzer erteilt werden können, pro Organisationsinstanz innerhalb eines fünfminütigen gleitenden Fensters. Außerdem beschränken wir die Anzahl der gleichzeitigen Anforderungen, die auf einmal eingehen können.  Wenn einer dieser Grenzwerte überschritten wird, gibt die Plattform eine Ausnahme zurück.
 
-Mit dieser Einschränkung wird sichergestellt, dass Benutzer nicht durch andere Benutzer beeinträchtigt werden, die Anwendungen mit außerordentlich hohen Anforderungen an Server ausführen. Die Einschränkung hat keine Auswirkungen auf normale Plattformbenutzer. Nur Anwendungen, die eine sehr große Anzahl an API-Anforderungen ausführen, sind betroffen. Gemäß der Analyse von Telemetriedaten liegt dieser Grenzwert innerhalb des Rahmens der meisten Anwendungen, die eine große Anzahl an API-Anforderungen ausführen. Er bietet einen gewissen Schutz vor dem unwillkürlichen und unerwarteten Anstieg des Anforderungsvolumens, das die Verfügbarkeit und Leistungsfähigkeit der Common Data Service for Apps-Plattform gefährdet.
+Die Beschränkung stellt sicher, dass Benutzer, die Anwendungen ausführen, sich nicht aufgrund vorhandener Ressourceneinschränkungen gegenseitig stören. Die Grenzwerte haben keine Auswirkungen auf normale Plattformbenutzer. Nur Anwendungen, die eine sehr große Anzahl an API-Anforderungen ausführen, sind möglicherweise betroffen. Er bietet einen gewissen Schutz vor dem unwillkürlichen und unerwarteten Anstieg des Anforderungsvolumens, das die Verfügbarkeit und Leistungsfähigkeit der Common Data Service-Plattform gefährdet.
 
 Falls bei Ihrer Anwendung die Möglichkeit besteht, diese Begrenzung zu überschreiten, beachten Sie bitte die Leitlinien, die Sie im Abschnitt [Was ist zu tun, wenn meine Anwendung die Begrenzung überschreitet?](#what-should-i-do-if-my-application-exceeds-the-limit) unten finden.
 
-## <a name="what-is-the-limit"></a>Wie hoch ist die Begrenzung?
-
-Jeder Benutzer kann bis zu 60.000 API-Anforderungen pro Organisationsinstanz innerhalb eines fünfminütigen gleitenden Intervalls erteilen.
-
 ## <a name="what-happens-when-the-limit-is-exceeded"></a>Was geschieht, wenn die Begrenzung überschritten wird?
 
-Wenn die Begrenzung überschritten wird, werden bei sämtlichen weiteren Anforderungen Fehlerantworten zurückgegeben.
+Wenn die Begrenzung überschritten wird, wird für alle Anforderungen desselben Benutzers eine Fehlerantwort zurückgegeben.
 
-Wenn Sie die .NET SDK-Assemblys verwenden, reagiert die Plattform mit einem `FaultException<OrganizationServiceFault>` WCF-Fehler mit dem Fehlercode `-2147015902` und der Meldung `Number of requests exceeded the limit of 60000, measured over time window of 300 seconds.`
+Wenn Sie die .NET-SDK-Assemblys verwenden, reagiert die Plattform mit einem `FaultException<OrganizationServiceFault>` WCF-Fehler.  
 
-Wenn Sie HTTP-Anforderungen verwenden, beinhaltet die Antwort diese Eigenschaften:<br />
-`StatusCode` : `429`<br />
-`Message` : `Number of requests exceeded the limit of 60000, measured over time window of 300 seconds.`
+| Fehlercode | Meldung |
+|------------|-------------------------------------|
+|`-2147015902`|`Number of requests exceeded the limit of 4000, measured over time window of 300 seconds.`|
+|`-2147015903`|`Combined execution time of incoming requests exceeded limit of 1,200,000 milliseconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later.`|
+|`-2147015898`|`Number of concurrent requests exceeded the limit of X`|
+
+Wenn Sie HTTP-Anforderungen verwenden, beinhaltet die Antwort dieselbe Message aber mit:<br />
+`StatusCode` : `429`
 
 Von allen Anforderungen werden diese Fehlerantworten zurückgegeben, bis das Volumen der API-Anforderungen unter die Begrenzung fällt. Wenn Sie diese Antworten erhalten, sollten von Ihrer Anwendung keine weiteren API-Anforderungen mehr gesendet werden, bis das Volumen der Anforderungen unterhalb der Begrenzung liegt.
 
-## <a name="how-is-this-limit-calculated"></a>Wie wird dieser Grenzwert berechnet?
-
-Innerhalb einer Organisationsinstanz werden API-Anforderungen, die von jedem der lizenzierten Benutzer vorgenommen werden (einschließlich der lizenzierten Identität, die zum Ausführen der Automatisierung verwendet wird) anhand dieser Begrenzung gemessen. Die Plattform misst die Anzahl der API-Anforderungen, die in fünf Minuten erteilt werden, wobei sie ständig im Rahmen eines bestimmten Zeitraums gleitet. Während jedes Messintervalls wird am Ende von fünf Minuten die Anzahl der vom Benutzer erteilten API-Anforderungen gezählt. In der Abbildung unten erteilen drei Benutzer API-Aufrufanforderungen über einen sechsminütigen Zeitraum.  
-
-![api-limit-implementation](media/api-limit-implementation-1.png)
-
-|Intervall|Beschreibung|
-|--|--|
-|A|Am Ende von fünf Minuten beträgt die Gesamtanzahl von API-Anforderungen für Benutzer eins 6.000, für Benutzer zwei 3.000 und für Benutzer drei 10.000.|
-|F|Bei 5+X Minuten, wobei X ein konstanter Zeitabschnitt ist (beispielsweise ein paar Sekunden), was die gleitende Intervallkonstante ist, wird von der Plattform die Gesamtanzahl für jeden dieser Benutzer gemessen, die immer noch aktiv sind. Gemäß dem Diagramm oben wäre dies Benutzer 1 = 7.000, Benutzer 2 = 6.000 und Benutzer 3 = 25.000. Alle kumulativen Anzahlen sind immer noch unterhalb der Begrenzung von 60.000. Das heißt, dass keine Verhaltensänderung für diese Benutzer erwartet wird.|
-|C|Mit der Zeit und sobald 5+2X erreicht werden, erteilt Benutzer drei ungefähr 40.000 API-Anforderungen, während Benutzer eins und Benutzer zwei jeweils 8.000 und 9.000 Aufrufe vornehmen. Dies führt dazu, dass Benutzer drei 65.000 API-Anforderungen innerhalb von fünf Minuten erreicht, was bewirkt, dass 5.000 (65.000-60.000=5.000) seiner Anforderungen abgelehnt werden.|
-
-> [!NOTE]
-> Anforderungen, die mehrere API-Anforderungen, wie <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> oder <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> mithilfe der .NET SDK-Assemblys oder `$batch` mithilfe der Web-API ausführen, zählen als einzelne Anforderung, um diese Begrenzung zu berechnen. Allerdings müssen diese API-Anforderungen die [Laufzeitbegrenzungen](org-service/execute-multiple-requests.md#limitations) für diese Typen von Vorgängen einhalten.
-
 ## <a name="what-should-i-do-if-my-application-exceeds-the-limit"></a>Was muss ich tun, wenn meine Anwendung die Begrenzung überschreitet?
 
-Wenn von Ihrer Anwendung die Begrenzung überschritten wird, gibt die Fehlerantwort vom Server an, wie lange Sie warten sollten, bis Sie weitere Anforderungen übermitteln. Das Antwortobjekt ist etwas anders, wenn Sie SDK-Assemblys oder HTTP-Anforderungen verwenden.
+Wenn von Ihrer Anwendung die Begrenzung überschritten wird, gibt die Fehlerantwort vom Server möglicherweise an, wie lange Sie warten sollten, bis Sie weitere Anforderungen übermitteln. Das Antwortobjekt ist etwas anders, wenn Sie SDK-Assemblys oder HTTP-Anforderungen verwenden.
 
 Eine Diskussion zu bewährten Methoden finden Sie unter [Bewährte Methoden in der Azure-Architektur zur Behandlung von vorübergehenden Fehlern](/azure/architecture/best-practices/transient-faults)
 
@@ -91,6 +77,8 @@ using System.Threading;
 public class Retry
 {
     private const int RateLimitExceededErrorCode = -2147015902;
+    private const int TimeLimitExceededErrorCode = -2147015903;
+    private const int ConcurrencyLimitExceededErrorCode = -2147015898;
 
     public static TResult Do<TResult>(Func<TResult> func, int maxRetries = 3)
     {
@@ -120,7 +108,7 @@ public class Retry
                     // else use exponential backoff delay
                     delay = TimeSpan.FromSeconds(Math.Pow(2, retryCount));
                 }
-                
+
                 Thread.Sleep(delay);
             }
         }
@@ -129,7 +117,9 @@ public class Retry
     private static bool IsTransientError(FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
     {
         // You can add more transient fault codes to retry here
-        if (ex.Detail.ErrorCode == RateLimitExceededErrorCode)
+        if (ex.Detail.ErrorCode == RateLimitExceededErrorCode ||
+            ex.Detail.ErrorCode == TimeLimitExceededErrorCode ||
+            ex.Detail.ErrorCode == ConcurrencyLimitExceededErrorCode)
         {
             return true;
         }
@@ -137,14 +127,11 @@ public class Retry
         return false;
     }
 }
-
 ```
-
-
 
 ### <a name="see-also"></a>Siehe auch
 
-[CDS für App-Webdienste verwenden](webapi/overview.md)<br />
-[Verwenden des CDS für App-Organisations-Service](org-service/overview.md)<br />
+[Common Data Service-Web-API verwenden](webapi/overview.md)<br />
+[Nutzen des Common Data Service-Organisationsservice](org-service/overview.md)<br />
 [Ausführen von Batchbetrieben mithilfe der Web-API](webapi/execute-batch-operations-using-web-api.md)<br />
 [Verwenden von "ExecuteMultiple" zur Verbesserung der Leistung bei Massendatenlast](org-service/execute-multiple-requests.md)

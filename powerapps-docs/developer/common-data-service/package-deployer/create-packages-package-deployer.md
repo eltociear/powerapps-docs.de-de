@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Paketen für den Package Deployer (Common Data Service for Apps) | Microsoft Docs
-description: 'Erstellen Sie Pakete, die Administratoren im Common Data Service for Apps-Instanzen bereitstellen können.'
+title: Erstellen von Paketen für den Package Deployer (Common Data Service) | Microsoft Docs
+description: 'Erstellen Sie Pakete, die Administratoren im Common Data Service-Instanzen bereitstellen können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="create-packages-for-the-package-deployer"></a>Erstellen von Paketen für den Package Deployer
 
-Mit dem Package Deployer können Administratoren Pakete auf Common Data Service for Apps-Instanzen bereitstellen. Ein *Paket* kann aus einem oder allen der folgenden Elemente bestehen:  
+Mit dem Package Deployer können Administratoren Pakete auf Common Data Service-Instanzen bereitstellen. Ein *Paket* kann aus einem oder allen der folgenden Elemente bestehen:  
 
-- Eine oder mehrere CDS for Apps-Lösungsdateien.  
+- Mindestens eine Common Data Service-Lösungsdatei.  
 - Flache Dateien oder exportierte Konfigurationsdatendateien aus dem Configuration Migration-Tool. Weitere Informationen zum Tool finden Sie unter  [Verschieben von Konfigurationsdaten über Instanzen und Organisationen hinweg mit dem Konfigurationsmigration-Tool](/dynamics365/customer-engagement/admin/manage-configuration-data).  
-- Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket auf der CDS for Apps-Instanz bereitgestellt wird.  
+- Benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket auf der Common Data Service-Instanz bereitgestellt wird.  
 - inhaltsspezifische HTML für das Paket, das bei Start und Ende des Bereitstellungsprozesses angezeigt werden kann. Dies kann nützlich sein, um eine Beschreibung der Lösungen und Dateien bereitzustellen, die im Paket bereitgestellt werden.  
 
-CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser Pakete zur Verfügung, die Sie mit dem Package Deployer-Tool verwenden können, um sie in einer CDS for Apps-Instanz bereitzustellen.
+Common Data Service stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser Pakete zur Verfügung, die Sie mit dem Package Deployer-Tool verwenden können, um sie in einer Common Data Service-Instanz bereitzustellen.
 
 <a name="Prereq"></a>
  
@@ -91,7 +91,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 1. Definieren Sie die Paketkonfiguration, indem Sie Informationen über das Paket in der Datei **ImportConfig.xml** im **PkgFolder** hinzufügen. Doppelklicken Sie auf die Datei, um sie für die Bearbeitung zu öffnen. Die folgende Liste enthält Informationen zu den Parametern und Knoten in der CONFIG-Datei.  
 
     `installsampledata`  
-    `True` oder `false`. Wenn `true`, werden Beispieldaten in der CDS for Apps-Instanz installiert. Hierbei handelt es sich um dieselben Beispieldaten, die Sie aus dem Bereich **Einstellungen** > **Datenverwaltung** in CDS for Apps installieren können.  
+    `True` oder `false`. Wenn `true`, werden Beispieldaten auf der Common Data Service-Instanz installiert. Hierbei handelt es sich um dieselben Beispieldaten, die Sie aus dem Bereich **Einstellungen** > **Datenverwaltung** in Common Data Service installieren können.  
 
     `waitforsampledatatoinstall`  
    **True** oder **False**. Wenn **true** und wenn **installsampledata** ebenfalls auf **true** festgelegt ist, wird darauf gewartet, dass Beispieldaten installiert werden, bevor das Paket bereitgestellt wird.  
@@ -114,9 +114,9 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 
    - Sie können eine lokalisierte Version der Konfigurationsdatendatei basierend auf der Gebietsschema-ID (LCID) importieren, die unter Verwendung der neuen Laufzeiteinstellungen angegeben wird, während Package Deployer ausgeführt wird. Verwenden Sie den Knoten `<cmtdatafile>` (später erläutert), um die lokalisierten Versionen der Konfigurationsdatendatei in einem Paket anzugeben, und dann die Methode `OverrideConfigurationDataFileLanguage` (später erläutert), um die Logik für das Importieren der Konfigurationsdatendatei basierend auf der Gebietsschema-ID anzugeben, die mithilfe der Laufzeiteinstellungen angegeben wurde. Sie können nicht mehrere Konfigurationsdatendateien gleichzeitig mithilfe eines Pakets importieren.  
 
-   - Wenn Ihre Konfigurationsdatendatei Benutzerinformationen enthält und sich sowohl das Quell- als auch das Ziel-CDS for Apps-Instanzen auf derselben Active Directory-Domäne befinden, werden Benutzerinformationen für CDS for Apps (lokal) in das Ziel-CDS for Apps importiert. Um Benutzerinformation in eine CDS for Apps (lokal)-Instanz auf einer anderen Domäne zu importieren, müssen Sie die Benutzerkartendatei (.xml), erzeugt unter Verwendung des Konfigurationsmigration-Tools in Ihrem Projekt mit einschließen und sie zusammen mit der Konfigurationsdatendatei unter Verwendung des `usermapfilename`-Attributes im `<cmtdatafile>`-Knoten, der später erklärt wird, angeben. Benutzerinformation können nicht zu CDS for Apps-Instanzen importiert werden.  
+   - Für Common Data Service (lokal): wenn Ihre Konfigurationsdatendatei Benutzerinformation enthält, und sowohl die Quell- als auch die Zielinstanz von Common Data Service in der gleichen Active Directory-Domäne sind, werden Benutzerinformation zur Zielinstanz von Common Data Service importiert. Um Benutzerinformation in eine Common Data Service (lokal)-Instanz auf einer anderen Domäne zu importieren, müssen Sie die Benutzerkartendatei (.xml) in Ihrem Projekt mit einschließen, die unter Verwendung des Konfigurationsmigration-Tools , erzeugt wurde, und sie zusammen mit der Konfigurationsdatendatei unter Verwendung des `usermapfilename`-Attributes im `<cmtdatafile>`-Knoten, der später erklärt wird, angeben. Benutzerinformation können nicht zu Common Data Service-Instanzen importiert werden.  
      `<solutions>` Knoten  
-     Enthält ein Array aus `<configsolutionfile>`-Knoten, das die zu importierenden Lösungen beschreibt. Der Reihenfolge der Lösungen unter diesem Knoten gibt die Reihenfolge an, in der die Lösungen auf der Zielinstanz von CDS for Apps Instanzen importiert werden.  
+     Enthält ein Array aus `<configsolutionfile>`-Knoten, das die zu importierenden Lösungen beschreibt. Der Reihenfolge der Lösungen unter diesem Knoten gibt die Reihenfolge an, in der die Lösungen auf der Zielinstanz von Common Data Service importiert werden.  
 
      `<configsolutionfile>` Knoten  
      Verwenden Sie diesen Knoten unter dem `<solutions>` Knoten, um die einzelnen Lösungen und die folgenden Informationen zu spezifizieren, damit jede Lösung importiert werden kann:  
@@ -147,7 +147,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
     Enthält ein Array von `<configimportfile>` und `<zipimportdetails>` Knoten, die verwendet werden, um die einzelnen Dateien und ZIP-Dateien zu beschreiben, die importiert werden.  
 
     `<configimportfile>` Knoten  
-    Verwenden Sie den Knoten unter dem `<configimportfile>` Knoten, um eine Datei zu beschreiben, die zu CDS for Apps importiert wird. Sie können mehrere Dateien in einem Paket hinzufügen, indem Sie genauso viele `<configimportfile>` Knoten hinzufügen.  
+    Verwenden Sie den Knoten unter dem `<configimportfile>`-Knoten, um eine Datei zu beschreiben, die zu Common Data Service importiert wird. Sie können mehrere Dateien in einem Paket hinzufügen, indem Sie genauso viele `<configimportfile>` Knoten hinzufügen.  
 
    ```xml  
 
@@ -185,7 +185,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
    |--|-|
    |`filename`| Name der Datei, die die importierten Daten enthält. Wenn die Datei eine ZIP-Datei ist, muss ein `<zipimportdetails>` Knoten mit einem     `<zipimportdetail>` Knoten für jede Datei in der in der ZIP-Datei vorhanden sein. |
    |`filetype`|Dies kann csv, xml oder zip sein.          |
-   |`associatedmap`|Name der CDS for Apps-Importdatenzuordnung, die mit dieser Datei verwendet werden soll. Wenn leer, wird versucht, der vom System bestimmte Importdatenzuordnungsname diese Datei zu verwenden.|
+   |`associatedmap`|Name der Common Data Service-Importdatenzuordnung, die mit dieser Datei verwendet werden soll. Wenn leer, wird versucht, der vom System bestimmte Importdatenzuordnungsname diese Datei zu verwenden.|
    |`importtoentity`| Dies kann der Name der EXE-Datei in der ZIP-Datei, eine URL oder eine MSI-Datei sein, um einen Link bereitzustellen, der am Ende des Vorgangs aufgerufen wird.|
    |`datadelimiter`| In der Importdatei verwendeter Name des Datentrennzeichens. Gültige Werte sind einfache Anführungszeichen oder doppelte Anführungszeichen.|
    |`fielddelimiter`|In der Importdatei verwendeter Name des Feldtrennzeichens. Gültige Werte sind Komma oder Doppelpunkt oder einfache Anführungszeichen.|
@@ -225,7 +225,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
     Dieser Knoten enthält ein Array von `<configmapimportfile>` Knoten für den Import. Die Reihenfolge der Zuordnungsdateien in diesem Knoten gibt die Reihenfolge an, in der sie importiert werden. Informationen zu Datenzuordnungen, siehe [Datenzuordnungen für Import erstellen](../create-data-maps-for-import.md).  
 
     `<configimportmapfile>` Knoten  
-    Verwenden Sie den Knoten unter dem `<filesmapstoimport>` Knoten, um Informationen zu einer einzelnen Zuordnungsdatei für den Import in CDS for Apps bereitzustellen.  
+    Verwenden Sie den Knoten unter dem `<filesmapstoimport>`-Knoten, um Informationen zu einer einzelnen Zuordnungsdatei für den Import in Common Data Service bereitzustellen.  
 
    ```xml  
    <filesmapstoimport>  
@@ -360,9 +360,9 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 
        Dadurch kann der Administrator die Eingabeaufforderung oder das [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage)-Cmdlet verwenden, um anzugeben, ob die Sicherheitsprüfungen beim Ausführen des Package Deployer-Tools zum Importieren des Pakets übersprungen werden sollen. Weitere Informationen: [Bereitstellen von Paketen mit Dynamics 365 Package Deployer und Windows PowerShell](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)  
 
-   2. Geben Sie kundenspezifischen Code ein, der ausgeführt wird, bevor die Lösungen in die Definition der Überschreibungsmethode von `PreSolutionImport` importiert werden, um zu spezifizieren, ob Anpassungen bei der Aktualisierung der spezifizierten Lösung in einer Zielinstanz von CDS for Apps beibehalten oder überschrieben werden sollen, und ob Plug-Ins und Arbeitsflüsse automatisch aktiviert werden.  
+   2. Geben Sie kundenspezifischen Code ein, der ausgeführt wird, bevor die Lösungen in die Definition der Überschreibungsmethode von `PreSolutionImport` importiert werden, um zu spezifizieren, ob Anpassungen bei der Aktualisierung der spezifizierten Lösung in einer Zielinstanz von Common Data Service beibehalten oder überschrieben werden sollen, und ob Plug-Ins und Arbeitsflüsse automatisch aktiviert werden.  
 
-   3. Verwenden Sie die Außerkraftsetzungsmethodendefinition von `RunSolutionUpgradeMigrationStep`, um Datenumwandlung oder Aktualisierung zwischen zwei Versionen einer Lösung auszuführen. Diese Methode wird nur aufgerufen, sofern die Lösung, die Sie importieren, in der CDS for Apps-Zielinstanz bereits vorhanden ist.  
+   3. Verwenden Sie die Außerkraftsetzungsmethodendefinition von `RunSolutionUpgradeMigrationStep`, um Datenumwandlung oder Aktualisierung zwischen zwei Versionen einer Lösung auszuführen. Diese Methode wird nur aufgerufen, sofern die Lösung, die Sie importieren, in der Common Data Service-Zielinstanz bereits vorhanden ist.  
 
         Diese Funktion erwartet die folgenden Parameter:  
 
@@ -381,7 +381,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 
        Sie spezifizieren die verfügbaren Sprachen für die Konfigurationsdaten im `<cmtdatafiles>` Knoten in der `ImportConfig.xml` Datei. Die Standard-Konfigurationsdaten-Importdatei wird im Attribut `crmmigdataimportfile` in der Datei `ImportConfig.xml` spezifiziert.  
 
-       Überspringen der Datenfehler (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = wahr) kann hier effektiv sein, wenn Sie sicher sind, dass die CDS for Apps-Zielinstanz keine Daten enthält.  
+       Überspringen der Datenfehler (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = wahr) kann hier effektiv sein, wenn Sie sicher sind, dass die Common Data Service-Zielinstanz keine Daten enthält.  
 
    6. Geben Sie benutzerdefinierten Code ein, der ausgeführt wird, nachdem der Import abgeschlossen wird, in der Überschreibungsdefinition der Methode `AfterPrimaryImport`. Die restlichen Textdateien, die nicht früher importiert wurden, bevor der angestellte Lösungsimport, werden jetzt importiert.  
 
@@ -449,8 +449,8 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog>| Klassenzeiger|Dies ist ein Zeiger auf die initialisierte Protokollierungs-Schnittstelle für das Paket. Diese Schnittstelle wird von einem Paket verwendet, um Nachrichten und Ausnahmen in der Paketprotokolldatei zu protokollieren.|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|Eigenschaft|Dies ist eine Verteilerschnittstelle, die verwendet wird, um dem Steuerelement zu ermöglichen, während der Paketbereitstellung eine eigene Benutzeroberfläche zu rendern. Sie verwenden diese Schnittstelle, um beliebige UI-Elemente oder -Befehle einzubinden. Es ist wichtig, diese Variable vor der Nutzung auf NULL-Werte zu prüfen, da sie auf einen Wert festgelegt sein können, oder nicht.  |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CrmSvc>|Eigenschaft |Dies ist ein Zeiger auf die <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse, die es einem Paket ermöglicht, aus dem Paket heraus Dynamics 365 zu adressieren. Diese Klasse wird verwendet, um SDK-Methoden und weitere Aktionen in den überschriebenen Methoden auszuführen.|
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Eigenschaft|Verwenden Sie dieses, um zu spezifizieren, ob Dynamics 365 Package Deployer alle Datenimport-Operationen überspringt, wie Import von CDS for Apps-Beispieldaten, von Textdateien und von Daten, die vom Konfigurationsmigration-Tool exportiert werden. Geben Sie true oder false an. Der Standardwert ist `false`.|
-   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Eigenschaft|Verwenden Sie dieses, um zu spezifizieren, ob Dynamics 365 Package Deployer einige seiner Sicherheitskontrollen überspringt, was hilft, die Importleistung zu verbessern. Geben Sie `true` oder `false` an. Der Standardwert ist `false`.<br /><br /> Sie sollten dieses nur dann auf `true` setzen, wenn die CDS for Apps-Zielinstanz keine Daten enthält.|
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |Eigenschaft|Verwenden Sie dies, um zu spezifizieren, ob Dynamics 365 Package Deployer alle Datenimport-Operationen überspringt, wie Import von Common Data Service-Beispieldaten, von Textdateien und von Daten, die vom Konfigurationsmigration-Tool exportiert werden. Geben Sie true oder false an. Der Standardwert ist `false`.|
+   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Eigenschaft|Verwenden Sie dieses, um zu spezifizieren, ob Dynamics 365 Package Deployer einige seiner Sicherheitskontrollen überspringt, was hilft, die Importleistung zu verbessern. Geben Sie `true` oder `false` an. Der Standardwert ist `false`.<br /><br /> Sie sollten dieses nur dann auf `true` setzen, wenn die Common Data Service-Zielinstanz keine Daten enthält.|
 
 
 4. Speichern Sie Ihr Projekt, und bauen Sie es auf (**Aufbauen** > **Lösung aufbauen**), um das Paket zu erstellen. Ihr Paket ist die folgenden Dateien unter dem *\<Project>* \Bin\Debug-Ordner  
@@ -465,7 +465,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
   
 ## <a name="deploy-a-package"></a>Ein Paket bereitstellen  
 
- Nachdem Sie ein Paket erstellt haben, können Sie es auf der CDS for Apps-Instanz bereitstellen, indem Sie entweder das Package Deployer-Tool oder Windows PowerShell verwenden. 
+ Nachdem Sie ein Paket erstellt haben, können Sie es auf der Common Data Service-Instanz bereitstellen, indem Sie entweder das Package Deployer-Tool oder Windows PowerShell verwenden. 
 
  Das Package Deployer-Tool wird bereitgestellt als Teil des [Microsoft.CrmSdk.XrmTooling.PackageDeployment.WPF](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet-Pakets. Zum Herunterladen des Package Deployer Tools, siehe [Herunterladen von Tools von NuGet](../download-tools-nuget.md).
 
@@ -477,7 +477,7 @@ CDS for Apps stellt Ihnen eine Visual Studio-Vorlage für die Erstellung dieser 
 
 Beim Erstellen von Paketen, müssen Entwickler sicherstellen, dass die Paketassemblys signiert sind.  
 
-Beim Bereitstellen der Pakete müssen CDS for Apps-Administratoren Folgendes durchführen:  
+Beim Bereitstellen der Pakete müssen Common Data Service-Administratoren Folgendes durchführen:  
 
 - Auf einer signierten Paketassembly bestehen, damit Sie eine Assembly bis zu ihrer Quelle zurück nachverfolgen können.  
 - das Paket auf einer Vor-Produktionsinstanz testen, (vorzugsweise als Spiegelbild der Produktionsinstanz), bevor sie in einer Produktionsinstanz ausgeführt wird.  

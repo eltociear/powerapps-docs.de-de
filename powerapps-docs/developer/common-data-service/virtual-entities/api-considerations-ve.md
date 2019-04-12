@@ -1,8 +1,8 @@
 ---
-title: API-Überlegungen virtueller Entitäten (Common Data Service for Apps) | Microsoft Docs
+title: API-Überlegungen virtueller Entitäten (Common Data Service) | Microsoft Docs
 description: Beschreibt API-Überlegungen von virtuellen Einheiten.
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="api-considerations-of-virtual-entities"></a>API-Rücksichten auf virtuelle Entitäten
 
-Es gibt zwei große Kategorien von Änderungen am Metadatensystem, die mit der Einführung virtueller Einheiten im Common Data Service for Apps verbunden sind:
+Es gibt zwei große Kategorien von Änderungen am Metadatensystem, die mit der Einführung virtueller Einheiten im Common Data Service verbunden sind:
 
 - Hinzufügung eines neuen Assemblys, der Namespaces, Klassen und anderer Typen, um die Entwicklung der virtuellen Entitätsdatenanbieter zu unterstützen
 - Änderungen an der Kernplattform einschließlich einige zusätzliche Eigenschaften, um die externe Datenquellenzuordnung und Modifizierung des Verhaltens der vorhandenen Entitäts- und Attributeigenschaften, die die Beschränkungen der ursprünglichen Implementierung dieser Funktion widerspiegeln, zu unterstützen
@@ -43,11 +43,11 @@ Diese Assembly wird als NuGet-Paket verteilt: [Microsoft.CrmSdk.Daten](https://w
 
 ## <a name="changes-to-the-core-platform"></a>Änderungen an der Kernplattform
 
-Die folgenden Änderungen an den Standard-CDS for Apps-Referenztypen wurden eingeführt, um virtuelle Einheiten zu unterstützen.
+Die folgenden Änderungen an den standardmäßigen Common Data Service-Referenztypen wurden eingeführt, um virtuelle Entitäten zu unterstützen.
 
 ### <a name="new-entities"></a>Neue Entitäten
 
-Das CDS for Apps stellt virtuelle Entitätsdatenanbieter und -quellen als die folgenden neuen Entitäten dar: [EntityDataProvider](../reference/entities/entitydataprovider.md) und [EntityDataSource](../reference/entities/entitydatasource.md). 
+Common Data Service stellt virtuelle Entitätsdatenanbieter und -quellen als die folgenden neuen Entitäten dar: [EntityDataProvider](../reference/entities/entitydataprovider.md) und [EntityDataSource](../reference/entities/entitydatasource.md). 
 
 ### <a name="new-metadata-properties"></a>Neue Metadateneigenschaften
 

@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Benutzer-Rollupabfragen zur Nachverfolgung von Zielen (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Benutzer-Rollupabfragen zur Nachverfolgung von Zielen (Common Data Service) | Microsoft Docs'
 description: In diesem Beispiel wird die Verwendung von Rollupabfragen zur Nachverfolgung von Zielen dargestellt
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>Beispiel: Verwendung von Rollupabfragen zur Nachverfolgung von Zielen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-use-rollup-queries-track-goals -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-use-rollup-queries-track-goals -->
 
 In diesem Beispiel wird die Verwendung von Rollupabfragen zur Nachverfolgung von Zielen dargestellt. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueriesTrackGoals) herunterladen.
 

@@ -1,10 +1,10 @@
 ---
-title: Abrufen und Ausführen von vordefinierten Abfragen (Common Data Service for Apps) | Microsoft Docs
-description: 'Common Data Service for Apps bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Lesen Sie, wie Sie eine vordefinierte Abfrage mit FetchXML verfassen können, um eine Abfragezeichenfolge zu erstellen, um die Daten abzurufen'
+title: Abrufen und Ausführen von vordefinierten Abfragen (Common Data Service) | Microsoft Docs
+description: 'Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Lesen Sie, wie Sie eine vordefinierte Abfrage mit FetchXML verfassen können, um eine Abfragezeichenfolge zu erstellen, um die Daten abzurufen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,13 +24,13 @@ search.app:
 
 # <a name="retrieve-and-execute-predefined-queries"></a>Abrufen und Ausführen von vordefinierten Abfragen
 
-Common Data Service (CDS) for Apps bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Einzelne Benutzer können die erweiterten Suchanfragen speichern und in der Anwendung wiederverwenden. Beide stellen vordefinierte Abfragen dar die Sie mit der Web-API abrufen und ausführen können. Sie können eine Abfrage auch mit FetchXml erstellen und zum Abfragen von Daten nutzen.
+Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Einzelne Benutzer können die erweiterten Suchanfragen speichern und in der Anwendung wiederverwenden. Beide stellen vordefinierte Abfragen dar die Sie mit der Web-API abrufen und ausführen können. Sie können eine Abfrage auch mit FetchXml erstellen und zum Abfragen von Daten nutzen.
 
 <a name="bkmk_predefinedQueries"></a>
 
 ## <a name="predefined-queries"></a>Vordefinierte Abfragen
 
-Common Data Service for Apps erlaubt Ihnen, wie hier aufgelistet zwei Arten von Abfragen zu definieren, zu speichern und durchzuführen.
+Common Data Service erlaubt Ihnen, wie hier aufgelistet zwei Arten von Abfragen zu definieren, zu speichern und durchzuführen.
 
 |Abfragetyp|Beschreibung|
 |----------------|-----------------|

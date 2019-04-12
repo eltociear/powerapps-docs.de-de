@@ -1,5 +1,5 @@
 ---
-title: Entitäten verknüpfen und trennen mithilfe des Organisationsservices (Common Data Service für Apps)| Microsoft Docs
+title: Entitäten verknüpfen und trennen mithilfe des Organisationsservices (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie mithilfe des Organisations-Service Entitäten zuordnen und trennen'
 ms.custom: ''
 ms.date: 10/31/2018

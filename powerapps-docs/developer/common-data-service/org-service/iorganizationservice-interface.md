@@ -1,6 +1,6 @@
 ---
-title: IOrganizationService Schnittstelle (Common Data Service für Apps) | Microsoft Docs
-description: 'Informationen zu allgemeinen Methoden, die verfügbar gemacht werden, um Datenenvorgänge mit CDS für Apps auszuführen.'
+title: IOrganizationService-Schnittstelle (Common Data Service) | Microsoft Docs
+description: 'Informationen zu allgemeinen Methoden, die verfügbar gemacht werden, um Datenvorgänge mit Common Data Service für Apps auszuführen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

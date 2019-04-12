@@ -1,5 +1,5 @@
 ---
-title: ' Ereignisframework (Common Data Service für Apps) | Microsoft Docs'
+title: ' Ereignisframework (Common Data Service) | Microsoft Docs'
 description: 'Beschreibt das Ereignisframework und Informationsentwickler sollten wissen, wenn sie damit arbeiten.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -34,7 +34,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 -->
 
-Die Funktion, die Angabe des Common Data Service für Apps für zu erweitern hängt vom Erkennen ab, wann Ereignisse im Server auftreten. *Ereignisframework* bietet die Möglichkeit, benutzerdefinierte Codes zu erfassen, die in Antworten für bestimmte Ereignisse ausgeführt werden. 
+Die Funktion zur Erweiterung des Standardverhaltens von Common Data Service hängt davon ab, dass erkannt wird, wann Ereignisse im Server auftreten. *Ereignisframework* bietet die Möglichkeit, benutzerdefinierte Codes zu erfassen, die in Antworten für bestimmte Ereignisse ausgeführt werden. 
 
 Alle Funktionen, das standardmäßige Verhalten der Plattform zu erweitern hängt vom Ereignisframework ab. Wenn Sie einen Workflow so konfigurieren, dass er auf Ereignisse mithilfe des Workflowdesigners reagiert ohne einen Code zu verfassen, wird dieses Ereignis vom Ereignisframework bereitgestellt. 
 
@@ -50,7 +50,7 @@ Damit das Ereignisframework für die benutzerdefinierten Erweiterungen profitier
 
 ## <a name="available-events"></a>Folgende Ereignisse sind verfügbar
 
-Wie beschrieben unter [Verwenden von Messages mit Organisationsservice](org-service/use-messages.md), Datenenvorgänge in den CDS für App-Plattform basieren Sie auf Messages und jede Message hat einen Namen. Es gibt `Create``Retrieve``RetrieveMultiple``Update``Delete``Associate`, und `Disassociate` Nachrichten, die die Vorgänge der grundlegenden Daten enthalten, die mit Entitäten geschehen. Darüber hinaus spezialisierte Messages für komplexere Transformationsvorgänge. Benutzerdefinierte Aktionen fügen neue Messages hinzu.
+Wie unter [Verwenden von Messages mit Organisationsservice](org-service/use-messages.md) beschrieben, basieren Datenenvorgänge in der Common Data Service-Plattform auf Messages, und jede Message hat einen Namen. Es gibt `Create``Retrieve``RetrieveMultiple``Update``Delete``Associate`, und `Disassociate` Nachrichten, die die Vorgänge der grundlegenden Daten enthalten, die mit Entitäten geschehen. Darüber hinaus spezialisierte Messages für komplexere Transformationsvorgänge. Benutzerdefinierte Aktionen fügen neue Messages hinzu.
 
 Wenn Sie Plug-In-Registrierungstool verwenden, um eine Erweiterung für eine bestimmte E-Mail-Nachricht zuzuordnen, registrieren Sie sie als *Schritt* Der Screenshot unten ist der Dialog **Registrieren neuer Schritt** verwendet, wenn er ein Plug-In  registriert.
 

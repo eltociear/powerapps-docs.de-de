@@ -1,10 +1,10 @@
 ---
-title: Erstellen und Aktualisieren Sie Entitätsdefinitionen mithilfe von Web-API (Common Data Service for Apps) | Microsoft Docs
+title: Erstellen und Aktualisieren Sie Entitätsdefinitionen mithilfe von Web-API (Common Data Service) | Microsoft Docs
 description: Informationen zum Erstellen und Aktualisieren von Entitätsdefinitionen mit Internet-API.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -792,7 +792,7 @@ Wie in [Aktualisieren von Entitäten](create-update-entity-definitions-using-web
   
 ### <a name="see-also"></a>Siehe auch
 
-[Nutzen der Web-API mit Common Data Service for Apps-Metadaten](use-web-api-metadata.md)<br />
+[Nutzen der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
 [Metadatenabfrage mit Web-API](query-metadata-web-api.md)<br />
 [Abrufen von Metadaten über den Namen oder die MetadataId](retrieve-metadata-name-metadataid.md)<br />
 [Entitätsbeziehungen modellieren mit Web-API](create-update-entity-relationships-using-web-api.md)<br />

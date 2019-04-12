@@ -22,9 +22,9 @@ search.app:
 
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
 
-Die Standardeinstellung, eine Anwendungsbefehlsleiste oder ein Menüband, wird durch den Common Data Service for Apps Metadaten definiert. Die standardmäßigen Daten können nicht geändert werden, aber Sie können Definitionen bestimmter Aktionen einschließen, die das Standardmenüband überschreiben.  
+Die Standardeinstellung, eine Anwendungsbefehlsleiste oder ein Menüband, wird durch den Common Data Service Metadaten definiert. Die standardmäßigen Daten können nicht geändert werden, aber Sie können Definitionen bestimmter Aktionen einschließen, die das Standardmenüband überschreiben.  
   
 ## <a name="types-of-custom-actions"></a>Typen benutzerdefinierter Aktionen  
  Es gibt zwei Typen benutzerdefinierte Aktionen für Menübänder:  
@@ -60,4 +60,5 @@ Die Standardeinstellung, eine Anwendungsbefehlsleiste oder ein Menüband, wird d
   
 ### <a name="see-also"></a>Siehe auch  
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
- [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link--> [Definieren der Skalierung für Menübandelemente](define-scaling-ribbon-elements.md)
+ [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant PowerApps repo link-->
+ [Definieren der Skalierung für Menübandelemente](define-scaling-ribbon-elements.md)

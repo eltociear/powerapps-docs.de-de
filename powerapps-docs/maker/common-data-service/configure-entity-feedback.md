@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie Feedback für eine Entität aktiviert wird'
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,8 @@ Bearbeiten Sie die Entität, um **Feedback** zu aktivieren. Weitere Informatione
 
 Standardmäßig müssen Benutzer zur Liste der verknüpften Datensätze des Datensatzes wechseln, für den Sie Feedback hinzufügen möchten. Damit Benutzer Feedback einfacher hinzufügen können, können Sie ein Feedback-Unterraster zum Formular der Entität hinzufügen, für die Sie Feedback ermöglichen möchten.  
 
-<!-- This is the closest I could find to a topic about adding an subgrid to a form. --> Weitere Informationen: [Unterrastereigenschaftenübersicht](../model-driven-apps/sub-grid-properties-legacy.md)
+<!-- This is the closest I could find to a topic about adding an subgrid to a form. -->
+Weitere Informationen: [Übersicht der Unterrastereigenschaften](../model-driven-apps/sub-grid-properties-legacy.md)
 
 ## <a name="add-a-rollup-field--to-the-entity-form-to-show-the-ratings"></a>Hinzufügen eines Rollupfelds zum Entitätsformular, um die Bewertungen anzuzeigen  
 

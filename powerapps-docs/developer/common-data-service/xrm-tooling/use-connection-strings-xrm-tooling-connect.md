@@ -1,10 +1,10 @@
 ---
-title: Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service für Apps (Common Data Service für Apps) | Microsoft Docs
-description: XRM-Tooling ermöglicht Ihnen die Verbindung mit Ihrer Common Data Service für Apps-Umgebung durch Verwendung von Verbindungszeichenfolgen
+title: Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service (Common Data Service) | Microsoft Docs
+description: XRM-Tooling ermöglicht Ihnen die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service-for-apps"></a>Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service für Apps
+# <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service
 
-Mit CDS für Apps ermöglicht das XRM-Tooling Ihnen die Verbindung mit Ihrer CDS für Apps-Umgebung durch Verwendung von Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in SQL Server verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, CDS für Apps-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht hartcodiert in der Anwendung, um eine Verbindung zu Ihrer CDS für Apps-Umgebung herzustellen.  
+Mit Common Data Service ermöglicht Ihnen XRM-Tooling die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in SQL Server verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, Common Data Service-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht hartcodiert in der Anwendung, um eine Verbindung mit Ihrer Common Data Service-Umgebung herzustellen.  
   
 <a name="Create"></a> 
 
@@ -51,7 +51,7 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
 > [!NOTE]
 >  Sie müssen die folgende `using`-Direktive in Ihrem Code verwenden, um auf den `System.Configuration`-Namespace verweisen, um auf die Verbindungszeichenfolge in Ihrem Code zuzugreifen: `using System.Configuration;`  
   
- Nachdem Sie ein <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Objekt erstellt haben, können Sie das Objekt verwenden, um Aktionen in CDS für Apps auszuführen. Weitere Informationen: [XRM-Tooling zur Ausführung von Aktionen in CDS für Apps verwenden](use-xrm-tooling-execute-actions.md)  
+ Nachdem Sie ein <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Objekt erstellt haben, können Sie das Objekt verwenden, um Aktionen in Common Data Service auszuführen. Weitere Informationen: [Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)  
   
 <a name="Parameters"></a>
 
@@ -61,12 +61,12 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
   
 |Parametername|Beschreibung|  
 |--------------------|-----------------|  
-|`ServiceUri`, `Service Uri`, `Url` oder `Server`|Gibt die URL für die CDS für Apps-Umgebung an. Die URL kann das http- oder https-Protokoll verwenden, und der Port ist optional. Standardmäßig wird der Port 80 für das http-Protokoll und 443 für das https-Protokoll verwendet. Die Server-URL ist normalerweise im Format `https://`*`<organization-name>`*`.crm.dynamics.com`<br /><br /> Der Organisationsname muss angegeben werden.|  
+|`ServiceUri`, `Service Uri`, `Url` oder `Server`|Gibt die Basis-URL zur Common Data Service-Umgebung an. Die URL kann das http- oder https-Protokoll verwenden, und der Port ist optional. Standardmäßig wird der Port 80 für das http-Protokoll und 443 für das https-Protokoll verwendet. Die Server-URL ist normalerweise im Format `https://`*`<organization-name>`*`.crm.dynamics.com`<br /><br /> Der Organisationsname muss angegeben werden.|  
 |`Domain`|Gibt die Domäne an, die Anmeldeinformationen von Benutzern überprüft.|  
 |`UserName`, `User Name`, `UserId` oder `User Id`|Gibt die Benutzerkennung an, die den Anmeldeinformationen zugeordnet ist.|  
 |`Password`|Gibt das Kennwort für den Benutzernamen, das den Anmeldeinformationen zugeordnet ist.|  
 |`HomeRealmUri` oder `Home Realm Uri`|Gibt den Startbereichs-URL an.|  
-|`AuthenticationType` oder `AuthType`|Gibt den Authentifizierungstyp an, um eine Verbindung mit der CDS für Apps-Umgebung herzustellen. Gültige Werte sind: `AD`, `IFD` (AD FS) aktiviert, `OAuth` oder `Office365`.<br /><br /> -   `AD` und `IFD` sind nur für lokale CDS für Apps-Umgebungen zulässig.<br />-   `OAuth` ist für CDS für Apps- und lokale Umgebungen zulässig.<br />-   `Office365` ist nur für CDS für Apps-Umgebungen zulässig.|  
+|`AuthenticationType` oder `AuthType`|Gibt den Authentifizierungstyp an, um eine Verbindung mit der Common Data Service-Umgebung herzustellen. Gültige Werte sind: `AD`, `IFD` (AD FS) aktiviert, `OAuth` oder `Office365`.<br /><br /> -   `AD` und `IFD` sind nur für lokale Common Data Service-Umgebungen zulässig.<br />-   `OAuth` ist für Common Data Service und lokale Umgebungen zulässig.<br />-   `Office365` ist nur für Common Data Service-Umgebungen zulässig.|  
 |`RequireNewInstance`|Definiert, ob die vorhandene Verbindung wieder verwendet wird, wenn  Sie aufgerufen wird, solange die Verbindung noch aktiv ist. Standardwert ist `false`, der angibt, dass die bestehende Verbindung wiederverwendet wird. Wenn auf `true` festgelegt, wird das System gezwungen, eine eindeutige Verbindung herzustellen.|  
 |`ClientId`, `AppId` oder `ApplicationId`|Gibt die `ClientID` an, die zugewiesen wird, wenn Sie Ihre Anwendung in Azure Active Directory oder in Active Directory Federation Services (AD FS) registriert haben.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
 |`RedirectUri` oder `ReplyUrl`|Gibt die Umleitungs-URI der Anwendung an, die Sie in Azure Active Directory oder in Active Directory Federation Services (AD FS) registriert haben.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
@@ -122,7 +122,7 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
   LoginPrompt=Auto"/>  
 ```  
   
-<!-- ### OAuth using named account in CDS for Apps on-premises with UX to prompt for authentication  
+<!-- ### OAuth using named account in Common Data Service on-premises with UX to prompt for authentication  
   
 ```xml
 <add name="MyCRMServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com; Password=passcode;Url=https://contoso:8080/Test;AppId=<GUID>;RedirectUri=app://<GUID>;TokenCacheStorePath =c:\MyTokenCache;LoginPrompt=Auto"/>  
@@ -158,6 +158,6 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
 ### <a name="see-also"></a>Siehe auch
 
 [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md)<br />
-[CrmServiceClient-Konstruktoren verwenden, um eine Verbindung mit CDS für Apps herzustellen](use-crmserviceclient-constructors-connect.md)<br />
-[XRM-Tooling zur Ausführung von Aktionen in CDS für Apps verwenden](use-xrm-tooling-execute-actions.md)<br />
+[Verwenden von CrmServiceClient-Konstruktoren zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)<br />
 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>

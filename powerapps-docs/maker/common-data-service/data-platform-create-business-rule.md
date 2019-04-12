@@ -1,13 +1,13 @@
 ---
-title: Erstellen einer Geschäftsregel in Common Data Service for Apps | MicrosoftDocs
-description: Schrittweise Anweisungen zur Erstellung einer Geschäftsregel in Common Data Service (CDS) for Apps.
-author: clwesene
+title: Erstellen einer Geschäftsregel in Common Data Service | MicrosoftDocs
+description: Schrittweise Anweisungen zur Erstellung einer Geschäftsregel in Common Data Service.
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -15,7 +15,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="create-a-business-rule-for-an-entity"></a>Geschäftsregel für eine Entität erstellen
+# <a name="create-a-business-rule-for-an-entity"></a>Eine Geschäftsregel für eine Entität erstellen
 
 Sie können Geschäftsregeln und Empfehlungen erstellen, um Logik und Validierungen anzuwenden, ohne -Code zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten.
 

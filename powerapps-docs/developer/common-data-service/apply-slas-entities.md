@@ -1,5 +1,5 @@
 ---
-title: SLAs für Entitäten übernehmen (Common Data Service for Apps) | Microsoft Docs
+title: SLAs für Entitäten übernehmen (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie über das Übernehmen von SLAs für die benutzerdefinierten Entitäten, wenn Sie die Entitäten zum Übernehmen von Vereinbarungen zum Servicelevel (SLAs) aktivieren. Also können Sie auch SLA-KPIs erstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="apply-slas-to-entities"></a>SLAs für Entitäten übernehmen
 
-Vereinbarungen zum Service Level (SLAs) in Common Data Service for Apps helfen Ihnen festzulegen, welchen Service- oder Supportlevel Ihre Organisation einem Kunden anbietet, indem Elemente zum Definieren von Metriken oder Key Performance Indicators (KPI) eingeschlossen werden, damit der Servicelevel erreicht wird. Sie können SLAs auf benutzerdefinierte Entitäten und die folgenden Systementitäten anwenden:  
+Vereinbarungen zum Service Level (SLAs) in Common Data Service helfen Ihnen festzulegen, welchen Service- oder Supportlevel Ihre Organisation einem Kunden anbietet, indem Elemente zum Definieren von Metriken oder Key Performance Indicators (KPI) eingeschlossen werden, damit der Servicelevel erreicht wird. Sie können SLAs auf benutzerdefinierte Entitäten und die folgenden Systementitäten anwenden:  
   
 -   Alle Aktivitätsentitäten (wie E-Mail, Aufgabe und Termine) außer Serienterminen (RecurringAppointmentMaster)  
   
@@ -57,7 +57,7 @@ Vereinbarungen zum Service Level (SLAs) in Common Data Service for Apps helfen I
    
 ## <a name="apply-slas-to-entity-records"></a>Anwenden von SLAs auf Entitätsdatensätze  
 
- Unter Verwendung des CDS for Apps-Webclients können Sie SLAs für eine SLA-aktivierte Entität erstellen und ein SLA als Standard für die Entität festlegen, sodass diese automatisch auf alle neuen Entitätsdatensätze angewendet wird.  
+ Unter Verwendung des Common Data Service-Webclients können Sie SLAs für eine SLA-fähige Entität erstellen und ein SLA als Standard für die Entität festlegen, sodass diese automatisch auf alle neuen Entitätsdatensätze angewendet wird.  
   
  Wenn Sie jedoch manuell SLAs auf Entitätsdatensätze basierend auf benutzerdefinierten Geschäftsanforderungen anwenden möchten, können Sie den Entitätsdatensatz programmgesteuert so aktualisieren, dass er den `SLAId`-Attributwert auf den gewünschten aktiven SLA-Datensatz setzt.  
   
@@ -65,7 +65,7 @@ Vereinbarungen zum Service Level (SLAs) in Common Data Service for Apps helfen I
 
 ## <a name="limitations-to-applying-slas-in-dynamics-365-online"></a>Beschränkungen beim Anwenden von SLAs in Dynamics 365 (online)  
 
- In CDS for Apps gelten die folgenden Beschränkungen für SLAs per CDS for Apps-Instanz (Organisation):  
+ Im Common Data Service gelten pro Common Data Service-Instanz (Organisation) die folgenden Einschränkungen für die SLA:  
   
 -   Sie können ein Maximum von 7 Entitäten haben, die aktive SLAs haben. Es kommt zu einem Fehler beim Aktivieren einer SLA, wenn die Begrenzung überschritten wird.  
   

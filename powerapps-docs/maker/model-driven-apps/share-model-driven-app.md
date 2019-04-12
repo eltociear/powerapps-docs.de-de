@@ -1,16 +1,16 @@
 ---
-title: Lernprogramm zur Freigabe einer modellgesteuerten Anwendung mit PowerApps | Microsoft Docs
-description: 'In diesem Lernprogramm erfahren Sie, wie Sie eine modellgesteuerte Anwendung freigeben können.'
+title: Gemeinsame Nutzung einer modellgesteuerten Anwendung mit PowerApps | Microsoft Docs
+description: 'Erfahren Sie, wie eine modellgestützte App freigeben'
 documentationcenter: ''
 author: Mattp123
-manager: kfile
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 03/21/2018
+ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -19,11 +19,11 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-share-a-model-driven-app-with-powerapps"></a>Lernprogramm: Gemeinsame Nutzung einer modellgesteuerten Anwendung mit PowerApps
+# <a name="share-a-model-driven-app-with-powerapps"></a>Gemeinsame Nutzung einer modellgesteuerten Anwendung mit PowerApps
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] Apps verwenden rollenbasierte Sicherheit für die gemeinsame Nutzung. Das grundlegende Konzept der rollenbasierten Sicherheit besteht darin, dass eine Sicherheitsrolle Privilegien enthält, die eine Reihe von Aktionen definieren, die innerhalb der Anwendung ausgeführt werden können. Alle App-Benutzer müssen einer oder mehreren vordefinierten oder benutzerdefinierten Rollen zugeordnet sein. Oder Rollen können auch Teams zugeordnet werden. Wenn ein Benutzer oder ein Team einer dieser Rollen zugeordnet ist, erhält die Person oder das Teammitglied die mit dieser Rolle verbundenen Berechtigungen. 
 
-In diesem Lernprogramm führen Sie die Aufgaben für die gemeinsame Nutzung einer modellgesteuerten Anwendung aus, damit andere sie nutzen können. Informationen zu:
+In diesem Thema führen Sie die Aufgaben für die gemeinsame Nutzung einer modellgesteuerten Anwendung aus, damit andere sie nutzen können. Informationen zu:
 - Erstellen einer benutzerdefinierten Sicherheitsrolle
 - Benutzer der benutzerdefinierten Sicherheitsrolle zuweisen
 - Zuweisen der Sicherheitsrolle zu einer App
@@ -34,8 +34,8 @@ Um eine App freizugeben müssen Sie die [!INCLUDE [powerapps](../../includes/pow
 ## <a name="sign-in-to-powerapps"></a>Bei PowerApps anmelden
 Melden Sie sich bei [PowerApps](https://powerapps.microsoft.com/) an. Wenn Sie noch kein [!INCLUDE [powerapps](../../includes/powerapps.md)] Konto haben, wählen Sie den Link **Kostenlos beginnen** aus.
 
-## <a name="share-an-app"></a>Eine App freigeben 
-Dieses Lernprogramm folgt der Firma Contoso, die ein Haustierpflegeunternehmen hat, das Hunde und Katzen betreut. Eine App, die eine benutzerdefinierte Entität zur Nachverfolgung des Haustierpflegegeschäfts enthält, wurde bereits erstellt und veröffentlicht. Jetzt muss die App freigegeben werden, damit die Tierpfleger sie benutzen können. Um die App freizugeben, weist ein Administrator oder App-Entwickler den Benutzern und der App eine oder mehrere Sicherheitsrollen zu. 
+## <a name="share-an-app"></a>App freigeben 
+Dieses Thema folgt der Firma Contoso, die ein Haustierpflegeunternehmen hat, das Hunde und Katzen betreut. Eine App, die eine benutzerdefinierte Entität zur Nachverfolgung des Haustierpflegegeschäfts enthält, wurde bereits erstellt und veröffentlicht. Jetzt muss die App freigegeben werden, damit die Tierpfleger sie benutzen können. Um die App freizugeben, weist ein Administrator oder App-Entwickler den Benutzern und der App eine oder mehrere Sicherheitsrollen zu. 
 
 ## <a name="create-or-configure-a-security-role"></a>Erstellen oder Konfigurieren einer Sicherheitsrolle
 Die [!INCLUDE [powerapps](../../includes/powerapps.md)]-Umgebung umfasst [vordefinierte Sicherheitsrollen](#about-predefined-security-roles), die allgemeine Benutzeraufgaben mit Zugriffsebenen widerspiegeln, die so definiert sind, dass sie dem Ziel der bewährten Methoden der Sicherheit entsprechen, den Zugriff auf die für die Nutzung der Anwendung erforderliche Mindestmenge an Geschäftsdaten zu ermöglichen. Denken Sie daran, dass die Contoso Pet Grooming-App auf einer benutzerdefinierten Entität basiert. Da die Entität benutzerdefiniert ist, müssen Rechte explizit angegeben werden, bevor Benutzer darin arbeiten können. Dazu können Sie eine der folgenden Möglichkeiten wählen.
@@ -50,22 +50,36 @@ Weitere Informationen zu Zugriffs- und Umfangsberechtigungen finden Sie unter [S
 
 ## <a name="create-a-custom-security-role"></a>Erstellen einer benutzerdefinierten Sicherheitsrolle
 1. Wählen Sie auf der Seite [!INCLUDE [powerapps](../../includes/powerapps.md)] **Apps** > **…**> **Link freigeben**.
+
 2. Wählen Sie im Dialogfeld **Diese App freigeben** unter **Eine Sicherheitsrolle erstellen** Option **Sicherheitseinstellung** aus.
+
 3. Wählen Sie auf der Seite **Einstellungen** die Option **Neu** aus.  
 
 4. Im Sicherheitsrollen-Designer wählen Sie die Aktionen wie Lesen, Schreiben oder Löschen und den Umfang für die Ausführung dieser Aktion aus. Umfang legt fest, wie tief oder hoch der Benutzer innerhalb der Umgebungshierarchie eine bestimmte Aktion ausführen kann. Geben Sie im Feld **Rollenname** *Pet Grooming Technicians* ein.
+
 5. Wählen Sie die Registerkarte **Benutzerdefinierte Entitäten**, und suchen Sie dann die Entität, die Sie verwenden möchten. Für dieses Beispiel wird die benutzerdefinierte Entität **Pet** verwendet. 
+
 6. Wählen Sie in der Zeile **Pet** jedes der folgenden Rechte viermal aus, bis der globale Organisationsumfang ![globaler Organisationsumfang](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wurde: **Lesen, Schreiben, Anhängen**
-> [!div class="mx-imgBorder"] 
-> ![Neue Sicherheitsrolle](media/share-model-driven-app/custom-security-role.png)
+
+   > [!div class="mx-imgBorder"] 
+   > ![Neue Sicherheitsrolle](media/share-model-driven-app/custom-security-role.png)
+
 7. Da die Pet Grooming-App auch eine Beziehung zur Firmenentität hat, wählen Sie die Registerkarte **Kerndatensätze**, und wählen Sie auf der **Firma**-Zeile **Lesen** viermal, bis globaler Organisationsumfang ![Globaler Organisationsumfang](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wurde. 
-8. Klicken Sie auf **Speichern und schließen**. 
-9. Geben Sie im Sicherheitsrollendesigner im Feld **Rollenname** *Pet Grooming Schedulers* ein. 
-10. Wählen Sie die Registerkarte **Benutzerdefinierte Entitäten**, und suchen Sie dann die Entität **Pet**. 
-11. Wählen Sie in der Zeile **Pet** jedes der folgenden Rechte viermal aus, bis der globale Organisationsumfang ![globaler Organisationsumfang](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wurde: **Erstellen, Lesen, Schreiben, Löschen, Anhängen, Anhängen, Zuweisen, Teilen**
-12. Da die Pet Grooming-App auch eine Beziehung zur Firmenentität hat und die Planer in der Lage sein müssen, Firmendatensätze zu erstellen und zu ändern, wählen Sie die Registerkarte **Kerndatensätze** aus, und wählen Sie in der Zeile **Firma** jedes der folgenden Rechte viermal aus, bis der globale Organisationsumfang ![Globaler Organisationsumfang](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wurde. 
+
+8. Wählen Sie die Registerkarte **Anpassung** und wählen Sie dann in der Rechtsliste das Recht **Lesen** neben **Modellgestützte App** aus, damit der Organisationsbereich ![Globaler Organisationsbereich](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wird.
+
+9. Klicken Sie auf **Speichern und schließen**. 
+
+10. Geben Sie im Sicherheitsrollendesigner im Feld **Rollenname** *Pet Grooming Schedulers* ein. 
+
+11. Wählen Sie die Registerkarte **Benutzerdefinierte Entitäten**, und suchen Sie dann die Entität **Pet**. 
+
+12. Wählen Sie in der Zeile **Pet** jedes der folgenden Rechte viermal aus, bis der globale Organisationsumfang ![globaler Organisationsumfang](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wurde: **Erstellen, Lesen, Schreiben, Löschen, Anhängen, Anhängen, Zuweisen, Teilen**
+
+13. Da die Pet Grooming-App auch eine Beziehung zur Firmenentität hat und die Planer in der Lage sein müssen, Firmendatensätze zu erstellen und zu ändern, wählen Sie die Registerkarte **Kerndatensätze** aus, und wählen Sie in der Zeile **Firma** jedes der folgenden Rechte viermal aus, bis der globale Organisationsumfang ![Globaler Organisationsumfang](media/share-model-driven-app/organizational-scope-privilege.png) ausgewählt wurde. 
     **Erstellen, Lesen, Schreiben, Löschen, Anfügen, Anfügen an, Zuweisen, Freigeben**
-13. Klicken Sie auf **Speichern und schließen**.
+
+14. Klicken Sie auf **Speichern und schließen**.
 
 ## <a name="assign-security-roles-to-users"></a>Zuweisen von Sicherheitsrollen zu Benutzern
 Sicherheitsrollen steuern den Zugriff eines Benutzers auf Daten durch einen satz von Zugriffsebenen und Berechtigungen. Die Kombination von Zugriffsebenen und Berechtigungen, die in einer bestimmten Sicherheitsrolle enthalten sind, begrenzt die Möglichkeit des Benutzers zur Anzeige von Daten und die Interaktionen des Benutzers mit den Daten.

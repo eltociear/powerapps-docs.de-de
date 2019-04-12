@@ -37,7 +37,7 @@ Bei der Entwicklung von kundenspezifischen Baugruppen gibt es einige Überlegung
     - Erhöhte Komplexität der Wartbarkeit
     - Potenzielle Erhöhung der Länge der Plug-in-Ausführung
 
-2. Die Größenbeschränkung für Sandbox-Assemblies beträgt 16 MB im Common Data Service for Apps.
+2. Die Größenbeschränkung für Sandbox-Assemblies im Common Data Service beträgt 16 MB.
 
 <a name='guidance'></a>
 
@@ -48,11 +48,11 @@ Bei der Entwicklung von kundenspezifischen Baugruppen gibt es einige Überlegung
 
 ### <a name="consolidate-plug-ins-or-custom-workflow-activities-into-a-single-assembly"></a>Konsolidieren Sie Plug-Ins oder benutzerdefinierte Workflow-Aktivitäten in einer einzigen Assembly.
 
-Plug-Ins und benutzerdefinierte Workflow-Aktivitäten, die für eine Common Data Service for Apps-Lösung entwickelt wurden, sollten zusammen mit anderen in einem einzigen Visual Studio-Projekt existieren. Erwägen Sie, separate Plug-Ins/Anpassungen von Arbeitsabläufen zu einem einzigen Visual Studio-Projekt/Assembly zusammenzuführen, es sei denn, die Plug-Ins fallen unter die folgenden Ausnahmen:
+Plug-Ins und benutzerdefinierte Workflow-Aktivitäten, die für eine Common Data Service-Lösung entwickelt wurden, sollten zusammen mit anderen in einem einzigen Visual Studio-Projekt existieren. Erwägen Sie, separate Plug-Ins/Anpassungen von Arbeitsabläufen zu einem einzigen Visual Studio-Projekt/Assembly zusammenzuführen, es sei denn, die Plug-Ins fallen unter die folgenden Ausnahmen:
 
 1. Eine Plug-in- und benutzerdefinierte Workflow-Aktivität muss selektiv in einer Umgebung eingesetzt werden, nicht aber in anderen.
 
-2. Die Größe der physischen Assembly liegt nahe oder größer als 16 MB für einen Common Data Service for Apps Instanz.
+2. Die Größe der physischen Assembly für eine Common Data Service-Instanz liegt nahe bei oder ist größer als 16 MB.
 
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>Plug-Ins/Benutzerdefinierte Workflow-Aktivitäten in mehrere Assemblies verschieben
@@ -66,12 +66,12 @@ PowerApps und Dynamics 365 (online) haben eine Assembly-Größenbeschränkung vo
 ### <a name="multiple-assemblies"></a>Mehrere Assemblys
 Bei mehreren Assemblies gibt es eine Reihe von Bereichen, die betroffen sein können:
 
-1. Leistung - jede Assembly hat einen Lebenszyklus, der von Common Data Service for Apps verwaltet wird.  Dazu gehören das Laden, Zwischenspeichern und Entladen der Assemblies.  Wenn mehr als eine Assembly vorhanden ist, wird mehr Arbeit auf dem Server geleistet, indem eine Assembly geladen und zwischengespeichert wird, was sich auf die gesamte Ausführungsdauer von Plugins und benutzerdefinierten Workflow-Aktivitäten auswirken kann.
+1. Leistung - jede Assembly hat einen Lebenszyklus, der von Common Data Service verwaltet wird.  Dazu gehören das Laden, Zwischenspeichern und Entladen der Assemblies.  Wenn mehr als eine Assembly vorhanden ist, wird mehr Arbeit auf dem Server geleistet, indem eine Assembly geladen und zwischengespeichert wird, was sich auf die gesamte Ausführungsdauer von Plugins und benutzerdefinierten Workflow-Aktivitäten auswirken kann.
 
 2. Wartbarkeit - mehr als ein Visual Studio-Projekt mit mehr als einer Plug-in- und benutzerdefinierten Workflow-Aktivität führt zu einem komplexeren Application Lifecycle Management (ALM). Es erhöht das Risiko und die Zeitspanne, wenn das entsprechende Projekt für ein bestimmtes Plug-in/eine bestimmte Workflow-Aktivität aktualisiert bzw. gepatcht wird, wenn die Plug-ins/die benutzerdefinierten Workflow-Aktivitäten in einer Lösung zusammengefasst werden und wenn Plug-ins/die benutzerdefinierten Workflow-Aktivitäten innerhalb einer Bereitstellung verwaltet werden.
 
 ### <a name="assembly-larger-than-16-mb"></a>Assembly größer als 16 MB
-Sie können keine benutzerdefinierte Assembly innerhalb des Common Data Service for Apps registrieren, die größer als 16 MB ist.
+Sie können keine benutzerdefinierte Assembly innerhalb des Common Data Service registrieren, die größer als 16 MB ist.
 
 <a name='additional'></a>
 

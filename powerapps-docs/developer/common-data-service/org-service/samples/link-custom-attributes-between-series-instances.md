@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Verknüpfen Sie benutzerdefinierte Attribute zwischen Reihen und Instanzen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Verknüpfen Sie benutzerdefinierte Attribute zwischen Reihen und Instanzen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie benutzerdefinierte Attributen zwischen Reihen und Instanzen verknüpft werden.'
 ms.custom: ''
 ms.date: 10/31/2018

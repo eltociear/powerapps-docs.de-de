@@ -1,5 +1,5 @@
 ---
-title: <Topic Title> (Common Data Service for Apps) | Microsoft Docs
+title: Seite der Entwicklerressourcen (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="developer-resources-page"></a>Entwicklerressourcenseite
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/developer-resources-page
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-resources-page
 
 - The UI in the app needs to be updated
 - Remove references to on-premises

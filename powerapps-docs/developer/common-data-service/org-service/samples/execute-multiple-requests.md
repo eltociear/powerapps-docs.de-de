@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Überprüfen und Ausführen mehrer Abfragen (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Überprüfen und Ausführen mehrer Abfragen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie mehrere Organisationsnachrichtenanforderungen mithilfe eines einzelnen Webdienst-Methodenaufrufs ausführen und  als Parameter übergeben.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-execute-multiple-requests"></a>Beispiel: Ausführen mehrerer Anforderungen
 
-Dieses Beispiel zeigt, wie Sie mehrere Organisationsnachrichtenanforderungen mithilfe eines einzelnen Webdienst-Methodenaufrufs ausführen und als [ExecuteMultipleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.executemultiplerequest?view=dynamics-general-ce-9) als Parameter übergeben. Das Reduzieren der Anzahl der Nachrichtenanforderungen, die über das Netzwerk gesendet werden müssen, führt zu einer höheren Nachrichtenverarbeitungsleistung.
+Dieses Beispiel zeigt, wie Sie mehrere Organisationsnachrichtenanforderungen mithilfe eines einzelnen Webdienst-Methodenaufrufs ausführen und als [ExecuteMultipleRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.executemultiplerequest?view=dynamics-general-ce-9) als Parameter übergeben. Das Reduzieren der Anzahl der Nachrichtenanforderungen, die über das Netzwerk gesendet werden müssen, führt zu einer höheren Nachrichtenverarbeitungsleistung.
 
 Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExecutemultipleRequests).
 

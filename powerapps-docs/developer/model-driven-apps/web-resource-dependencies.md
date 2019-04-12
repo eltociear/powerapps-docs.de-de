@@ -1,6 +1,6 @@
 ---
 title: Webressourcenabhängigkeiten (modellgesteuerte Apps) | Microsoft Docs
-description: Erfahren Sie über das Definieren von Abhängigkeiten zwischen Webressourcen in CDS für Apps
+description: Erfahren Sie mehr über das Definieren von Abhängigkeiten zwischen Webressourcen in Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="web-resource-dependencies"></a>Abhängigkeiten von Webressourcen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/web-resource-dependencies -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resource-dependencies -->
 
 Sie können anderen Abhängigkeiten zwischen Webressourcen definieren. Hauptzweck der Funktionen ist es, Zuordnung von Webressourcen der Zeichenfolge (RESX) mit der JavaScript-Webressourcen zu erlauben, die sie verwendet. Dies ist auch der Weg, um Webressourcen, die HTML-Webressourcen für die Offline-Vewendung erfordern, auch für die oiffline Verfügbarkeit zu konfigurieren. 
 
@@ -42,7 +42,8 @@ Allerdings werden Webressourceabhängigkeiten nicht auf RESX-Webressourcen besch
 <a name="attribute-dependencies"></a>
 
 # <a name="attribute-dependencies"></a>Attributabhängigkeiten
-<!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference --> Beginnend mit modellgesteuerten Apps, wenn die JavaScript-Webressource von einem Entitätsattributwert abhängt, den Sie nicht im Formular anzeigen möchten, können Sie das Attribut als Abhängigkeit für die JavaScript-Webressource festlegen. Das bedeutet, dass das Attribut im Client API-Attributsammlung zur Verfügung steht sodass Sie den benötigten Wert in Ihrem Code abrufen oder festlegen können. Wenn Sie eine Abhängigkeit auf diese Weise hinzufügen, ist die Kontrollensammlung des Attributs leer, da nur vorhandene Einheiten im Formular vorhanden sind.
+<!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference -->
+ Beginnend mit modellgesteuerten Apps, wenn die JavaScript-Webressource von einem Entitätsattributwert abhängt, den Sie nicht im Formular anzeigen möchten, können Sie das Attribut als Abhängigkeit für die JavaScript-Webressource festlegen. Das bedeutet, dass das Attribut im Client API-Attributsammlung zur Verfügung steht sodass Sie den benötigten Wert in Ihrem Code abrufen oder festlegen können. Wenn Sie eine Abhängigkeit auf diese Weise hinzufügen, ist die Kontrollensammlung des Attributs leer, da nur vorhandene Einheiten im Formular vorhanden sind.
 
 Vor dieser Funkltion müssen Sie manuell das Attribut dem Formular hinzufügen und dann die Steuerelement konfigurieren, die Sie verbergen möchten. Jetzt können Sie diese Abhängigkeit direkter einrichten und die Möglichkeit eliminieren, dass jemand das ausgeblendete Feld aus dem Formular entfernt. 
 

@@ -3,7 +3,7 @@ title: 'Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend 
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -116,7 +116,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
 ### <a name="theme-contrast"></a>Designkontrast  
  Es wird die folgende Methode zur Bereitstellung von Kontrastfarben empfohlen:  
   
--   Wählen Sie die kontrastierenden Farben sorgfältig aus. Der Common Data Service für Apps mit  Standarddesign  hat die richtigen Kontrastverhältnisse, um optimale Benutzerfreundlichkeit sicherzustellen. Verwenden Sie ähnliche Verhältnisse für die neuen Designs.  
+-   Wählen Sie die kontrastierenden Farben sorgfältig aus. Der Common Data Service mit Standarddesign hat die richtigen Kontrastverhältnisse, um optimale Benutzerfreundlichkeit sicherzustellen. Verwenden Sie ähnliche Verhältnisse für die neuen Designs.  
   
 -   Für den kontrastreichen Modus können Sie die standardmäßige Farbeneinstellungen verwenden.  
   

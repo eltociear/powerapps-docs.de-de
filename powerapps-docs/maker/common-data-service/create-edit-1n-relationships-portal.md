@@ -4,7 +4,7 @@ description: 'Erstellen oder Bearbeiten von 1: N oder n: n: Entitätsbeziehungen
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer) Entitätsbeziehungen im PowerApps Portal
 
-Das [PowerApps Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, 1:N (eine-zu-viele) oder N:1 (viele-zu-einer) -Entitätsbeziehungen für Common Data Service für Apps zu erstellen und zu bearbeiten.
+Das [PowerApps Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, 1:N (eine-zu-viele) oder N:1 (viele-zu-einer) -Entitätsbeziehungen für Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. Weitere Informationen: 
 - [Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer)-Entitätsbeziehungen](create-edit-1n-relationships.md)
@@ -73,7 +73,7 @@ Wählen Sie **Verknüpfte Entität** oder **Primäre Entität** für die Beziehu
 Sobald Sie die Entität ausgewählt ist, können Sie die Beziehung bearbeiten. In diesem Beispiel können mehrere Kontaktentitätsdatensätze einer Firma zugeordnet werden.
 
 <!-- These are the correct screenshots from the UI as of 6/11/18 -->
-![Beziehungen zwischen einer Firma und vielen Kontakten](media/One-to-many-account-contact.png)
+![1:n-Beziehungskonto und -Kontakt](media/One-to-many-account-contact.png)
 
 Sie können die bereitgestellten Standardwerte bearbeiten vor dem Speichern. Wählen Sie **Weitere Optionen** aus, um die Felder **Beziehungsname** und **Suchfeld-Description** anzuzeigen.
 

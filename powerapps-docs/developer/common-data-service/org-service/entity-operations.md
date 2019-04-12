@@ -1,6 +1,6 @@
 ---
-title: Entitätsvorgänge mithilfe des Organisationsservices (Common Data Service für Apps)| Microsoft Docs
-description: 'Lernen Sie die Entitätsklasse, die für Datenenvorgänge verwendet wird, die mithilfe der CDS für App-Organisationsservice verwendet wird'
+title: Entitätsvorgänge mithilfe des Organisationsservices (Common Data Service)| Microsoft Docs
+description: 'Lernen Sie die Entitätsklasse kennen, die für Datenvorgänge verwendet wird, die mithilfe der Common Data Service-Organisationsservice verwendet wird'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="entity-operations-using-the-organization-service"></a>Entitäts-Vorgänge mithilfe des Organisationsservice
 
-Wenn Sie mit Common Data Service for Apps Daten mithilfe des Organisationsservice arbeiten,  verwenden Sie die -<xref:Microsoft.Xrm.Sdk.Entity>-Klasse mit später Bindung oder mit erstellten Entitätsklassen mithilfe früher Bindung. Die erstellten Entitätsklassen erben von der <xref:Microsoft.Xrm.Sdk.Entity> Klasse, deshalb ist das Verstehen der <xref:Microsoft.Xrm.Sdk.Entity> Klasse für jeden Stil wichtig.
+Wenn Sie mit Common Data Service-Daten mithilfe des Organisationsservice arbeiten, verwenden Sie die <xref:Microsoft.Xrm.Sdk.Entity>-Klasse mit später Bindung oder mit erstellten Entitätsklassen mithilfe früher Bindung. Die erstellten Entitätsklassen erben von der <xref:Microsoft.Xrm.Sdk.Entity> Klasse, deshalb ist das Verstehen der <xref:Microsoft.Xrm.Sdk.Entity> Klasse für jeden Stil wichtig.
 
 In diesem Kapitel werden einige der am häufigsten verwendeten Eigenschaften und Methoden der <xref:Microsoft.Xrm.Sdk.Entity>-Klasse beschrieben.
 
@@ -199,7 +199,7 @@ Account account2 = retrievedEntity.ToEntity<Account>();
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Themen erklären mehr über das Arbeiten mit CDS für App-Entitäten.
+Diese Themen erklären genauer, wie Sie mit Common Data Service-Entitäten arbeiten.
 
 [Schnellstart: Organisationsservicebeispiel C#](quick-start-org-service-console-app.md)
 [Abfragedaten](entity-operations-query-data.md)<br />

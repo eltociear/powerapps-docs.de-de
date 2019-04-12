@@ -1,10 +1,10 @@
 ---
-title: Erstellen und Aktualisieren Sie Optionssätze mithilfe von Web-API (Common Data Service for Apps) | Microsoft Docs
-description: 'Informationen zum Erstellen und Aktualisieren einer Common Data Service for Apps verwendet eine metadatengetriebene Architektur, um die Flexibilität zu bieten, benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute zu erstellen.'
+title: Erstellen und Aktualisieren Sie Optionssätze mithilfe von Web-API (Common Data Service) | Microsoft Docs
+description: 'Informationen zum Erstellen und Aktualisieren einer Entität, mit der Common Data Service eine metadatengestützte Architektur verwendet, um die Flexibilität zu bieten, mit der benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute erstellt werden können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

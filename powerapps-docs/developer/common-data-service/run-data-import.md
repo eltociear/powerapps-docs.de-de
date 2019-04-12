@@ -1,5 +1,5 @@
 ---
-title: Ausführen des Datenimports (Common Data Service for Apps) | Microsoft Docs
+title: Datenimport ausführen (Common Data Service) | Microsoft Docs
 description: 'Dateneinfuhr wird direkt auf dem Dynamics 365 Server ausgeführt und erfordert drei asynchrone Aufträge für das Analysieren, zuordnungsgeführte Transformation und Hochladen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,15 +17,15 @@ search.app:
 ---
 # <a name="run-data-import"></a>Ausführen des Datenimports
 
-Der Datenimport wird direkt auf dem Common Data Service for Apps-Server ausgeführt. Richten Sie zum Ausführen des Datenimports asynchrone Aufträge ein, die im Hintergrund ausgeführt werden und Folgendes in der angegebenen Reihenfolge ausführen:  
+Der Datenimport wird direkt auf dem Common Data Service-Server ausgeführt. Richten Sie zum Ausführen des Datenimports asynchrone Aufträge ein, die im Hintergrund ausgeführt werden und Folgendes in der angegebenen Reihenfolge ausführen:  
   
 - Analysieren Sie Quelldaten, die in der Importdatei enthalten sind.  
   
 - Formen Sie analysierte Daten mithilfe der Datenzuordnung um.  
   
-- Laden Sie die transformierten Daten in CDS für Apps hoch.  
+- Laden Sie transformierte Daten in den Common Data Service hoch.  
   
-  Alle CDS for Apps-Benutzer mit entsprechenden Rechten können den Datenimport ausführen.  
+  Alle Common Data Service-Benutzer mit entsprechenden Rechten können den Datenimport ausführen.  
   
 <a name="parse"></a>   
 ## <a name="parse-source-data"></a>Analysieren von Quelldaten  
@@ -51,9 +51,9 @@ Der Datenimport wird direkt auf dem Common Data Service for Apps-Server ausgefü
   
 <a name="upload"></a>   
 ## <a name="upload-transformed-data-to-the-target-server"></a>Hochladen transformierter Daten auf den Zielserver  
- Nachdem Sie die Transformation erfolgreich abgeschlossen haben, können die Daten auf den CDS for Apps-Server hochgeladen werden.  
+ Nachdem Sie die Transformation erfolgreich abgeschlossen haben, können die Daten auf den Common Data Service-Server hochgeladen werden.  
   
- Verwenden Sie die Message <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest>, um einen asynchronen Auftrag zu senden und die transformierten Daten nach CDS for Apps hochzuladen. Der eindeutige Bezeichner des zugeordneten Imports (Datenimport) muss in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId>-Eigenschaft der Anforderung angegeben werden. Ein eindeutiger Bezeichner des asynchronen Auftrags, der im Hintergrund ausgeführt wird und die Daten nach CDS for Apps hochlädt, wird in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId>-Eigenschaft der Message-Antwort zurückgegeben. Alle Importdateien, die dem angegebenen Import (Datenimport) zugeordnet sind, werden importiert.  
+ Verwenden Sie die Message <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest>, um einen asynchronen Auftrag zu senden und die transformierten Daten in Common Data Service hochzuladen. Der eindeutige Bezeichner des zugeordneten Imports (Datenimport) muss in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportRequest.ImportId>-Eigenschaft der Anforderung angegeben werden. Ein eindeutiger Bezeichner des asynchronen Auftrags, der im Hintergrund ausgeführt wird und die Daten in Common Data Service hochlädt, wird in der <xref:Microsoft.Crm.Sdk.Messages.ImportRecordsImportResponse.AsyncOperationId>-Eigenschaft der Message-Antwort zurückgegeben. Alle Importdateien, die dem angegebenen Import (Datenimport) zugeordnet sind, werden importiert.  
   
  Jeder Importauftrag besitzt eine eigene Sequenznummer, die im `ImportSequenceNumber`-Attribut der erstellten Datensätze gespeichert ist. Das `Organization.CurrentImportSequenceNumber`-Attribut enthält eine eindeutige Sequenznummer des letzten Importauftrags, der im System lief. Sie können diese eindeutigen Sequenznummern verwenden, um Datensätze nachzuverfolgen, die zu einem Importauftrag gehören.  
   
@@ -65,14 +65,14 @@ Der Datenimport wird direkt auf dem Common Data Service for Apps-Server ausgefü
   
 <a name="import_audit"></a>   
 ## <a name="import-auditing-data"></a>Importieren von Überwachungsdaten  
- Die CDS for Apps-Entitäten haben vier Standardattribut, die verwendet werden, um nachzuverfolgen, an welchem Datum und zu welcher Uhrzeit ein Datensatz erstellt und zuletzt geändert wurde. Außerdem wird die Person nachverfolgt, die den Datensatz erstellt und geändert hat:  
+ Die Common Data Service-Entitäten haben vier Standardattribute, die verwendet werden, um nachzuverfolgen, an welchem Datum und zu welcher Uhrzeit ein Datensatz erstellt und zuletzt geändert wurde. Außerdem wird die Person nachverfolgt, die den Datensatz erstellt und geändert hat:  
   
  Das Attribut `createdon` gibt das Datum und die Uhrzeit an, an dem bzw. zu der der Datensatz erstellt wurde. Um Daten in das `createdon`-Attribut zu importieren, ordnen Sie die Quellspalte, die diese Daten enthält, dem `overriddencreatedon`-Attribut zu. Während des Imports wird das `createdon`-Attribut des Datensatzes mit dem Wert aktualisiert, der dem `overriddencreatedon`-Attribut zugeordnet ist, und das `overriddencreatedon`-Attribut wird auf das Datum und die Uhrzeit festgelegt, an dem bzw. zu der die Daten importiert wurden. Wenn dem `overriddencreatedon`-Attribut kein Quellcode zugeordnet ist, wird das `createdon`-Attribut auf das Datum und die Uhrzeit festgelegt, an dem bzw. zu der die Daten importiert werden. Das `overriddencreatedon`-Attribut ist auf keinen Wert festgelegt.  
   
 > [!NOTE]
 >  Wenn Sie den Wert im `createdon`-Attribut beim Importieren überschreiben möchten, benötigen Sie das `prvOverrideCreatedOnCreatedBy`-Recht. Beachten Sie, das der Name des Rechts besagt, dass Sie das `createdby`-Attribut auch während des Imports überschreiben können. Allerdings wird diese Funktion derzeit nicht unterstützt.  
   
- Sie können keine Daten in die Attribute `modifiedon`, `createdby` und `modifiedby` importieren. Wenn Sie Information dazu speichern müssen, wer den Datensatz erstellt und geändert hat und wann die Daten geändert wurde, können Sie in CDS for Apps benutzerdefinierte Attribute erstellen und die Quellspalten den neuen benutzerdefinierten Attributen zuordnen.  
+ Sie können keine Daten in die Attribute `modifiedon`, `createdby` und `modifiedby` importieren. Wenn Sie Information dazu speichern müssen, wer den Datensatz erstellt und geändert hat und wann die Daten geändert wurden, können Sie in Common Data Service benutzerdefinierte Attribute erstellen und die Quellspalten den neuen benutzerdefinierten Attributen zuordnen.  
   
 ### <a name="see-also"></a>Siehe auch
 

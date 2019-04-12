@@ -1,5 +1,5 @@
 ---
-title: Field-Sicherheitsentitäten (Common Data Service für Apps) | Microsoft Docs
+title: Feldsicherheitsentitäten (Common Data Service) | Microsoft Docs
 description: 'Infos zum Verwenden von Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="field-security-entities"></a>Feldsicherheitsentitäten
 
-Sie verwenden Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt. Der Umfang der Sicherheit auf Feldebene ist global, was bedeutet, dass sie für alle Datensätze innerhalb der Organisationen gilt, unabhängig von der Hierarchieebene der Unternehmenseinheit, zu der der Datensatz oder Benutzer gehört. Die Field-Sicherheit arbeitet in allen Common Data Service für Apps Clients, also auch für den Webclient Dynamics 365 for Outlook und Dynamics. Sie gilt für alle Komponenten, also für CDS für Apps Web-Services,, Berichte, Suche, Offlinekomponente, gefilterte Ansichten, Überwachung und Duplikaterkennung. Für diese Version kann die Feldsicherheit sowohl für benutzerdefinierten Felder als auch viele vordefinierte (OOB)- Felder angewendet werden.  
+Sie verwenden Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt. Der Umfang der Sicherheit auf Feldebene ist global, was bedeutet, dass sie für alle Datensätze innerhalb der Organisationen gilt, unabhängig von der Hierarchieebene der Unternehmenseinheit, zu der der Datensatz oder Benutzer gehört. Die Feldsicherheit funktioniert in allen Common Data Service-Clients, auch im Webclient, in Dynamics 365 for Outlook und in Dynamics. Sie gilt für alle Komponenten, also für die Common Data Service-Webdienste, Berichte, Suche, Offlinekomponente, gefilterte Ansichten, Überwachung und Duplikaterkennung. Für diese Version kann die Feldsicherheit sowohl für benutzerdefinierten Felder als auch viele vordefinierte (OOB)- Felder angewendet werden.  
   
  Weitere Informationen, wie gesicherte Felder das Verhalten von Methoden ändern, siehe [Wie Feldsicherheit verwendet werden kann, um Zugriff auf Feldwerte in Dynamics 365 zu steuern](/dynamics365/customer-engagement/developer/security-dev/use-field-security-control-access-field-values).  
   
 > [!IMPORTANT]
->  Profile für Sicherheit auf Feldebene hindern Benutzer daran, Zugriff auf CDS für Apps-Daten anhand der Profildefinitionen zu erlangen. Wenn die SQL-Server-ACLs falsch konfiguriert sind oder wenn es ein SQL-Einschleusungsproblem gibt, können Unbefugte direkten Zugriff auf Daten in  erhalten und auf diese Weise die Beschränkungen der Sicherheit auf Feldebene umgehen. Weitere Informationen finden Sie unter [Übersicht über Webanwendungs-Sicherheitsbedrohungen](https://msdn.microsoft.com/library/f13d73y6.aspx).  
+>  Profile für Sicherheit auf Feldebene hindern Benutzer daran, Zugriff auf Common Data Service-Daten anhand der Profildefinitionen zu erlangen. Wenn die SQL-Server-ACLs falsch konfiguriert sind oder wenn es ein SQL-Einschleusungsproblem gibt, können Unbefugte direkten Zugriff auf Daten in  erhalten und auf diese Weise die Beschränkungen der Sicherheit auf Feldebene umgehen. Weitere Informationen finden Sie unter [Übersicht über Webanwendungs-Sicherheitsbedrohungen](https://msdn.microsoft.com/library/f13d73y6.aspx).  
   
 <a name="bkmk_setup"></a>   
 

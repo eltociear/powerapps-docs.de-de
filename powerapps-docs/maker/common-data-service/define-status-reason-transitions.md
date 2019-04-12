@@ -4,7 +4,7 @@ description: Statusgrundübergänge definieren
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -29,7 +29,7 @@ search.app:
 Sie können für die (**Case**) Vorfallentität eine benutzerdefinierte Entitäte angeben.
 
 > [!NOTE]
-> Obwohl die Vorfallsentität (Anfrage) nicht in der Standardumgebung des Common Data Service for Apps enthalten ist, wird diese von [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) verwendet und im [allgemeinen Datenmodell](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json) definiert.
+> Obwohl die Vorfalls- (Anfrage)-Entität nicht in der Standardumgebung von Common Data Service enthalten ist, wird diese von [Dynamics 365 for Customer Service](https://dynamics.microsoft.com/customer-service/) verwendet und im [allgemeinen Datenmodell](https://github.com/Microsoft/CDM/blob/master/schemaDocuments/core/applicationCommon/foundationCommon/crmCommon/service/Incident.cdm.json) definiert.
   
 Statusgrundübergänge stellen eine optionale zusätzliche Filterebene dar, um zu definieren, in was der Statusgrundwert für die einzelnen Statusgründe geändert werden kann. Die Definition einer begrenzten Liste von gültigen Optionen kann es für Benutzer einfacher machen, den korrekten nächsten Statusgrund für einen Datensatz auszuwählen, wenn es eine große Zahl von Kombinationen für gültige Statusgrundwerte gibt.  
   
@@ -60,7 +60,7 @@ Die Metadaten für das Feld definieren, welche Werte für einen bestimmten Statu
 Sie können die Optionen für das Statusgrundfeld für die Entität Case (Fall) und angepasste Entitäten modifizieren, um zu definieren, welche weiteren Statusgrundoptionen gewählt werden können. Die einzige Beschränkung besteht darin, dass jede Statusgrundoption für einen aktiven Status mindestens einen Pfad zu einem inaktiven Status zulassen muss. Andernfalls könnten Sie einen Zustand schaffen, in dem der Fall weder gelöst noch abgebrochen werden kann.  
 
 > [!NOTE]
-> Die Bearbeitung der Statusgrundübergänge erfordert die Verwendung des Projektmappen-Explorers. Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit PowerApps-Lösungsexplorer](create-edit-field-solution-explorer.md).
+> Die Bearbeitung der Statusgrundübergänge erfordert die Verwendung des Projektmappen-Explorers. Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md).
   
  Wenn Sie ein Feld "Statusgrund" bearbeiten, ist die Schaltfläche **Statusgrund-Übergänge bearbeiten** im Menü. 
 
@@ -81,7 +81,7 @@ Im folgenden Screenshot sehen Sie ein Beispiels, das die folgenden Anforderungen
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
 [Entitätsmetadaten > Entitätsstatus](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [Definieren von benutzerdefinierten Statusmodellübergängen](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

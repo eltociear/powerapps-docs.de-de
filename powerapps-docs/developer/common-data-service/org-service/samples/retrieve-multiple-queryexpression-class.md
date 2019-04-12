@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abruf von Vielfachen mit der QueryExpression (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abruf von Vielfachen mit der QueryExpression (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie Sie mehrere Entitäten mit QueryExpression abrufen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>Beispiel: Rufen Sie mit der QueryExpressions-Klasse Vielfaches ab
 
 <!-- Re-title? This is really about retrieving  related records 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-queryexpression-class
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-queryexpression-class
 -->
-Dieses Beispiel zeigt, wie Sie mehrere Entitäten mit der Methode [IOrganizationService.RetrieveMultiple(QueryBase)](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_IOrganizationService_RetrieveMultiple_Microsoft_Xrm_Sdk_Query_QueryBase_) mit [QueryExpression](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.query.queryexpression?view=dynamics-general-ce-9) und den verknüpften Entitätsspalten abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleByQueryExpression) herunterladen.
+Dieses Beispiel zeigt, wie Sie mehrere Entitäten mit der Methode [IOrganizationService.RetrieveMultiple(QueryBase)](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_IOrganizationService_RetrieveMultiple_Microsoft_Xrm_Sdk_Query_QueryBase_) mit [QueryExpression](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.query.queryexpression?view=dynamics-general-ce-9) und den verknüpften Entitätsspalten abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleByQueryExpression) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

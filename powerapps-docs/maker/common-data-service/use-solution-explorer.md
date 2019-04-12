@@ -4,7 +4,7 @@ description: 'Hier erfahren Sie, wie Sie die Lösung nutzen, um Apps zu erstelle
 ms.custom: ''
 ms.date: 10/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -101,8 +101,8 @@ In PowerApps können Sie den klassischen Projektmappen-Explorer anzeigen, indem 
 - Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung noch bearbeitet werden.
 - Abhängigkeiten sind für Canvas-Apps nicht verfügbar.
 - Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. 
--   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service für Apps (CDS)-Datenbank verwaltet.
--   CDS-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück. 
+-   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank verwaltet.
+-   Common Data Service-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück. 
 -   In einer Lösung erstellte Canvas-Apps können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden.
 -   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt.
 -   Vorhandene Canvas-Apps sind nicht lösungsfähig. 

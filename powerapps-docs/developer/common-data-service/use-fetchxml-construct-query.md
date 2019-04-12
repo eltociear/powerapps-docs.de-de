@@ -1,6 +1,6 @@
 ---
-title: Verwendung von FetchXML zum Abfragen von Daten (Common Data Service für Apps) | Microsoft Docs
-description: 'FetchXML ist eine herstellereigene Abfragesprache, die in Common Data Service (CDS) für Apps verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt.'
+title: Verwendung von FetchXML zum Abfragen von Daten (Common Data Service) | Microsoft Docs
+description: 'FetchXML ist eine herstellereigene Abfragesprache, die in Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="use-fetchxml-to-construct-a-query"></a>Verwenden von FetchXML zum Erstellen einerAbfrage
 
-FetchXML ist eine herstellereigene Abfragesprache, die in Common Data Service (CDS) für Apps verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt. Die FetchXML-Sprache unterstützt ähnliche Abfragefunktionen als Abfrageausdrücke. Zusätzlich wird sie als serialisiertes Abfrageformular verwendet, das verwendet wird, um eine Abfrage als gespeicherte benutzereigene Ansicht in der [UserQuery Entität](reference/entities/userquery.md) und als gespeicherte organisationseigene Ansicht in der [SavedQuery-Entität](reference/entities/savedquery.md) zu speichern.  
+FetchXML ist eine herstellereigene Abfragesprache, die in Common Data Service verwendet wird. Sie basiert auf einem Schema, das die Funktionalität der Sprache beschreibt. Die FetchXML-Sprache unterstützt ähnliche Abfragefunktionen als Abfrageausdrücke. Zusätzlich wird sie als serialisiertes Abfrageformular verwendet, das verwendet wird, um eine Abfrage als gespeicherte benutzereigene Ansicht in der [UserQuery Entität](reference/entities/userquery.md) und als gespeicherte organisationseigene Ansicht in der [SavedQuery-Entität](reference/entities/savedquery.md) zu speichern.  
   
 Eine FetchXML-Abfrage kann mithilfe von **Web API** oder **Organization Service** ausgeführt werden.
 

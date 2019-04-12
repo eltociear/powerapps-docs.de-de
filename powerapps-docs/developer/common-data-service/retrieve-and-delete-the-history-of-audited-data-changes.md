@@ -1,5 +1,5 @@
 ---
-title: Abrufen und Löschen des Verlaufs von überwachten Datenänderungen (Common Data Service for Apps) | Microsoft Docs
+title: Abrufen und Löschen des Verlaufs von überwachten Datenänderungen (Common Data Service) | Microsoft Docs
 description: Programmgesteuert die Überwachungsänderungsgeschichte abrufen oder Prüfprotokolle deaktivieren.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -31,13 +31,13 @@ Wenn die Überwachung aktiviert ist und Datenänderungen an diesen Entitäten un
 
 ## <a name="delete-the-change-history-for-a-date-range"></a>Überwachungsdatensatz-Änderungsverlauf löschen
 
- Sie können `audit`-Datensätze mithilfe der Anforderung <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> löschen. Überwachungsdatensätze werden sequentiell vom ältesten zum neuesten Vorgang gelöscht. Die Funktionalität dieser Anforderung unterscheidet sich etwas, basierend auf der Edition von Microsoft SQL Server, die von Ihrem CDS for Apps-Server verwendet wird. CDS for Apps verwendet eine Enterprise Edition von SQL Server.
+ Sie können `audit`-Datensätze mithilfe der Anforderung <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest> löschen. Überwachungsdatensätze werden sequentiell vom ältesten zum neuesten Vorgang gelöscht. Die Funktionalität dieser Anforderung unterscheidet sich etwas, basierend auf der Edition von Microsoft SQL Server, die von Ihrem Common Data Service-Server verwendet wird. Common Data Service verwendet eine Enterprise Edition von SQL Server.
 
- Wenn der CDS for Apps-Server eine Standard Edition von SQL Server verwendet, welche die Datenbankpartitionierungsfunktion nicht unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsprotokolle, die bis zu dem Enddatum erstellt wurden, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist.
+ Wenn der Common Data Service-Server eine Standard Edition von SQL Server verwendet, welche die Datenbankpartitionierungsfunktion nicht unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsprotokolle, die bis zu dem Enddatum erstellt wurden, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist.
 
- Wenn der CDS for Apps-Server eine Enterprise Edition von SQL Server verwendet, welche Partitionierung unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsdaten in den Partitionen, deren Enddatum vor dem Datum liegt, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist. Alle leeren Partitionen werden ebenfalls gelöscht. Allerdings können weder die aktuelle (aktive) Partition noch die `audit`-Datensätze in dieser aktiven Partition gelöscht werden, indem diese Anforderung oder eine andere Anforderung verwendet wird.
+ Wenn der Common Data Service-Server eine Enterprise Edition von SQL Server verwendet, welche Partitionierung unterstützt, löscht die <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest>-Anforderung alle Überwachungsdaten in den Partitionen, deren Enddatum vor dem Datum liegt, das in der Eigenschaft <xref:Microsoft.Crm.Sdk.Messages.DeleteAuditDataRequest.EndDate> angegeben ist. Alle leeren Partitionen werden ebenfalls gelöscht. Allerdings können weder die aktuelle (aktive) Partition noch die `audit`-Datensätze in dieser aktiven Partition gelöscht werden, indem diese Anforderung oder eine andere Anforderung verwendet wird.
 
- Neue Partitionen werden automatisch von der CDS for Apps-Plattform auf vierteljährlicher Basis jedes Jahr erstellt. Diese Funktionalität ist nicht konfigurierbar und kann nicht geändert werden. Sie können die Liste der Partitionen mithilfe der <xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest>-Anforderung abrufen. Wenn das Enddatum einer Partition nach dem aktuellen Datum liegt, können Sie diese Partition oder darin enthaltene `audit`-Datensätze nicht löschen.  
+ Neue Partitionen werden von der Common Data Service-Plattform automatisch jedes Jahr vierteljährlich erstellt. Diese Funktionalität ist nicht konfigurierbar und kann nicht geändert werden. Sie können die Liste der Partitionen mithilfe der <xref:Microsoft.Crm.Sdk.Messages.RetrieveAuditPartitionListRequest>-Anforderung abrufen. Wenn das Enddatum einer Partition nach dem aktuellen Datum liegt, können Sie diese Partition oder darin enthaltene `audit`-Datensätze nicht löschen.  
 
 ### <a name="see-also"></a>Siehe auch
 

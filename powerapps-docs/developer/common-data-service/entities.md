@@ -1,6 +1,6 @@
 ---
-title: Common Data Service für Apps Entitäten | Microsoft Docs
-description: Erfahren Sie mehr zur Nutzung von Entität in Common Data Service für Apps
+title: Aktivitäten-Entitäten von Common Data Service | Microsoft Docs
+description: Erfahren Sie mehr zu in Common Data Service verfügbaren Entitäten.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -25,15 +25,15 @@ search.app:
 Was Mike Carter
 This topic was not migrated it was written for PowerApps 
 
-Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entities
+Overlap with content in https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entities
 
 -->
 
-# <a name="common-data-service-for-apps-entities"></a>Common Data Service für Apps-Entitäten
+# <a name="common-data-service-entities"></a>Common Data Service-Entitäten
 
-Stellt Speicher für Datenin den wichtigsten Funktion des Common Data Service für Apps bereit. Common Data Service umfasst einen Basissatz von Entitäten, die die Struktur für die erfassten Daten bereitstellt, die von Geschäftsanwendungen verwendet werden. 
+Stellt Speicher für Daten in den wichtigsten Funktion des Common Data Service bereit. Common Data Service umfasst einen Basissatz von Entitäten, die die Struktur für die erfassten Daten bereitstellt, die von Geschäftsanwendungen verwendet werden. 
 
-Sie können den Basissatz der Entitäten anzeigen in [Common Data Service für Apps-Entitätsreferenz](reference/about-entity-reference.md)
+Sie können den Basissatz der Entitäten in der [Common Data Service-Entitätsreferenz](reference/about-entity-reference.md) anzeigen.
 
 ## <a name="modify-entities"></a>Ändern von Entitäten
 
@@ -53,7 +53,7 @@ Es gibt verschiedene Möglichkeiten, Entitätsmetadaten mithilfe eines Designers
 
 ### <a name="import-a-solution"></a>Importieren einer Lösung
 
-Eine Lösung kann Entitätsmetadaten und andere benutzerdefinierte Komponenten enthalten. Das Importieren einer verwalteten oder nicht verwalteten Lösung in Ihren Common Data Service für Apps Mandanten enthält die Entitäten oder erweiterten vorhandene Entitäten mit den neuen Entitätsmetadaten, die sie beinhalten.
+Eine Lösung kann Entitätsmetadaten und andere benutzerdefinierte Komponenten enthalten. Das Importieren einer verwalteten oder nicht verwalteten Lösung in Ihren Common Data Service-Mandanten enthält die Entitäten oder erweiterte vorhandene Entitäten mit den neuen Entitätsmetadaten, die sie beinhalten.
 
 ### <a name="from-a-data-source-using-power-query"></a>Von einer Datenquelle mithilfe Power-Abfrage
 
@@ -61,7 +61,7 @@ Sie können neue Entitäten erstellen und diese mit Daten mithilfe von Power-Abf
 
 ### <a name="use-metadata-services"></a>Verwenden von Metadaten-Services
 
-Die Webdienste, die in den CDS für Apps verfügbar gemacht werden, umfassen Funktionen, um Entitätsmetadaten zu erstellen, lesen, schreiben und löschen. Diese Dienste werden am häufigsten verwendet, um die Metadatenänderung zu lesen, da diese Daten  Ihren Code zu Laufzeit informieren können, inwieweit die Umgebung angepasst wurde. Weitere Informationen: [Metadaten-Services](metadata-services.md)
+Die Webdienste, die in Common Data Service verfügbar gemacht werden, umfassen Funktionen, um Entitätsmetadaten zu erstellen, lesen, schreiben und löschen. Diese Dienste werden am häufigsten verwendet, um die Metadatenänderung zu lesen, da diese Daten  Ihren Code zu Laufzeit informieren können, inwieweit die Umgebung angepasst wurde. Weitere Informationen: [Metadaten-Services](metadata-services.md)
 
 ## <a name="entity-metadata"></a>Entitätsmetadaten
 
@@ -86,6 +86,6 @@ Die Entitätsmetadaten umfassen die folgenden Informationen:
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service for Apps-Entwicklerübersicht](overview.md)
+[Common Data Service-Entwicklerübersicht](overview.md)
 
 

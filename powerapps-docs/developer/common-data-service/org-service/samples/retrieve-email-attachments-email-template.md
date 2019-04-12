@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen von E-Mail-Anlagen für eine E-Mail-Vorlage (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen von E-Mail-Anlagen für eine E-Mail-Vorlage (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie E-Mail-Anlagen, die einer E-Mail-Vorlage zugeordnet sind, abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-email-attachments-for-an-email-template"></a>Beispiel: Abrufen von E-Mail-Anlagen für eine E-Mail-Vorlage
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-email-attachments-email-template -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-email-attachments-email-template -->
 
-Dieses Beispiel zeigt, wie E-Mail-Anlagen, die einer E-Mail-Vorlage zugeordnet sind, mithilfe der Methode [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) abgerufen werden können. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveEmailAttach) herunterladen.
+Dieses Beispiel zeigt, wie E-Mail-Anlagen, die einer E-Mail-Vorlage zugeordnet sind, mithilfe der Methode [IOrganizationService.RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) abgerufen werden können. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveEmailAttach) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

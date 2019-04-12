@@ -1,6 +1,6 @@
 ---
-title: Registrieren eines Plug-Ins (Common Data Service for Apps) | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie ein Plug-In registrieren, um benutzerdefinierte Geschäftslogik auf Common Data Service for Apps anzuwenden.'
+title: Registrieren eines Plug-In (Common Data Service) | MicrosoftDocs
+description: 'Erfahren Sie, wie Sie ein Plug-In registrieren, um benutzerdefinierte Geschäftslogik auf Common Data Service anzuwenden.'
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
@@ -48,14 +48,14 @@ Sie verwenden das Plugin Registration Tool (PRT), um Ihre Plug-In-Assemblys und 
 
 PRT ist eines der Tools, die als Download von NuGet verfügbar sind. Führen Sie die Anweisungen unter [Downloadtools von NuGet](download-tools-nuget.md) aus. Dieses Thema enthält Anweisungen zur Verwendung eines PowerShell-Skripts, um die aktuellen Tools von NuGet herunterzuladen.
 
-Nachdem Sie das PRT heruntergeladen haben, führen Sie die Schritte unter [Herstellen einer Verbindung über das Plugin Registration Tool (PRT)](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md) aus, um eine Verbindung zu Ihrer CDS for Apps-Umgebung herzustellen.
+Nachdem Sie das PRT heruntergeladen haben, führen Sie die Schritte unter [Herstellen einer Verbindung über das Plugin Registration Tool (PRT)](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md) aus, um eine Verbindung zu Ihrer Common Data Service-Umgebung herzustellen.
 
 ## <a name="register-an-assembly"></a>Registrieren einer Assembly
 
-Eine Assembly zu registrieren, ist der Prozess des Hochladens der Assembly in die CDS für App-Datenbank. Lesen Sie die Anweisungen unter [Registrieren der Assembly](tutorial-write-plug-in.md#register-your-assembly) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md)
+Durch die Registrierung einer Assembly zu registrieren wird die Assembly in die Common Data Service-Datenbank hochgeladen. Lesen Sie die Anweisungen unter [Registrieren der Assembly](tutorial-write-plug-in.md#register-your-assembly) im [Lernprogramm: Schreiben und Registrieren eines Plugins](tutorial-write-plug-in.md)
 
 > [!NOTE]
-> Sie finden die Optionen, die mit dem *Isolationsmodus* und *Speicherort* der Assembly verknüpft sind. Diese beziehen sich auf Optionen, die für lokale Bereitstellungen gelten. CDS for Apps ist nicht für lokale Bereitstellungen verfügbar. Deshalb akzeptieren Sie immer die Standardoptionen **Sandkasten** und **Datenbank** für diese Optionen.
+> Sie finden die Optionen, die mit dem *Isolationsmodus* und *Speicherort* der Assembly verknüpft sind. Diese beziehen sich auf Optionen, die für lokale Bereitstellungen gelten. Common Data Service ist nicht für lokale Bereitstellungen verfügbar. Deshalb akzeptieren Sie immer die Standardoptionen **Sandbox** und **Datenbank** für diese Optionen.
 
 Wenn eine Assembly hochgeladen wird, wird sie in der Entität `PluginAssembly` gespeichert. Die meisten Eigenschaften werden mithilfe der Reflektion der importierten Entität festgelegt. Die base64-codierten Bytes der Assembly werden im Attribut `Content` gespeichert. Beim Anzeigen der **Eigenschaften** der Assembly im PRT können Sie nur den Attributwert **Description** bearbeiten.
 
@@ -195,7 +195,7 @@ Asynchrone Plug-Ins können nur für die Phase **PostOperation** registriert wer
 
 |Option|Beschreibung|
 |--|--|
-|**Server**|Das Plug-In wird auf dem CDS for Apps-Server ausgeführt.|
+|**Server**|Das Plug-In wird auf dem Common Data Service-Server ausgeführt.|
 |**Offline**|Das Plug-In wird innerhalb des Dynamics 365 for Outlook-Clients ausgeführt, wenn der Benutzer im Offlinemodus ist.|
 
 <!-- TODO Add link to where more information about offline-plugins will be documented -->
@@ -214,7 +214,7 @@ Wenn das Plug-In in den Phasen **PreValidation** oder **PreOperation** der Ausf�
 
 #### <a name="messages-that-support-entity-images"></a>Nachrichten, die Entitätsbilder unterstützen
 
-In CDS for Apps unterstützen nur die folgenden Meldungen Entitätsbilder:
+In Common Data Service unterstützen nur die folgenden Messages Entitätsbilder:
 
 |Meldung|Anforderungs-Klassen-Eigenschaft| Beschreibung|
 |--|--|--|

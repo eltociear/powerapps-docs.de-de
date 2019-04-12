@@ -1,6 +1,6 @@
 ---
-title: Wechsel der Identität eines Benutzers mithilfe der Web API (Common Data Service for Apps) | Microsoft Docs
-description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik im Auftrag eines anderen Common Data Service für Apps auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen.'
+title: Die Identität eines anderen Benutzers annehmen (Common Data Service) | Microsoft Docs
+description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="impersonate-another-user"></a>Annehmen der Identität eines anderen Benutzers
 
-Der Identitätswechsel wird verwendet, um die Geschäftslogik im Auftrag eines anderen Common Data Service für Apps auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. 
+Der Identitätswechsel wird verwendet, um die Geschäftslogik im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. 
 
-Dies ist erforderlich, da die CDS for Apps-Webdienste von verschiedenen Clients und Services im Auftrag eines -Benutzers aufgerufen werden können, etwa in einem Workflow oder einer benutzerdefinierten CDS for App Nuztzers.
+Dies ist erforderlich, da die Common Data Service-Webdienste von verschiedenen Clients und Services im Auftrag eines Common Data Service-Benutzers aufgerufen werden können.
 
 Identitätswechsel benötigt zwei unterschiedliche Benutzerkonten: 
 
@@ -40,7 +40,7 @@ In anderen Worten der *Identitätenübernehmer* kann *nur dann etwas tun, wenn* 
 
 ## <a name="impersonation-with-server-to-server-authentication"></a>Identitätenwechsel mit Server-zu-Server-Authentifizierung
 
-Wenn Sie eine Webclient-Anwendung erstellen, die ein Benutzerkonto erfordert, das im Auftrag eines abonnierten Benutzers reagieren kann, können Sie die spezielle *Anwendungsbenutzer*-firma nutzen, sodass Sie sich nicht mehr um zahlende CDS für App-Benutzerlizenz kümmern müssen.
+Wenn Sie eine Webclient-Anwendung erstellen, die ein Benutzerkonto erfordert, das im Auftrag eines abonnierten Benutzers reagieren kann, können Sie die spezielle *Anwendungsbenutzer*-Firma nutzen, sodass Sie sich nicht mehr um zahlende Common Data Service-Benutzerlizenz kümmern müssen.
 
 Weitere Informationen finden Sie unter: [Webanwendungen mit der Server-zu-Server-(S2S)-Authentifizierung erstellen.](build-web-applications-server-server-s2s-authentication.md).
 
@@ -59,7 +59,7 @@ Zum Übernehmen der Identität von einem anderen Benutzer, legen Sie die `Caller
 - <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.CallerId>
 - <xref:Microsoft.Xrm.Sdk.WebServiceClient.OrganizationWebProxyClient>.<xref:Microsoft.Xrm.Sdk.WebServiceClient.OrganizationWebProxyClient.CallerId>
 
-## <a name="impersonate-another-using-in-plug-ins"></a>Identitätwechsel mithilfe von Plug-Ins
+## <a name="impersonate-another-user-using-plug-ins"></a>Übernehmen der Identität eines anderen Benutzers mithilfe von Plug-Ins
 
 Sie können ein Plug-In registrieren, für das Sie einen Benutzer definieren können, für den der Vorgang verewendet werden soll. Innerhalb des Codes eines Plug-Ins können Sie diese Präferenzen überschreiben.
 Weitere Informationen: [Annehmen der Identität eines Benutzers](impersonate-a-user.md)

@@ -1,6 +1,6 @@
 ---
 title: Aktionen bei Visualisierungen (Diagramme) (modellgetriebene Anwendungen) | Microsoft Docs
-description: Mithilfe der Common Data Service for Apps-Webdienste können Sie folgende Aktionen für die Visualisierungsentitäten ausführen.
+description: Mithilfe der Common Data Service-Webdienste können Sie folgende Aktionen für die Visualisierungsentitäten ausführen.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="actions-on-visualizations-charts"></a>Aktionen für Visualisierungen (Diagramme)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->
 
-Mithilfe der Common Data Service (CDS) for Apps-Webdienste können Sie folgende Aktionen für die Visualisierungsentitäten ausführen.  
+Mithilfe der Common Data Service können Sie folgende Aktionen für die Visualisierungsentitäten ausführen.  
   
 ## <a name="actions-on-organization-owned-visualizations"></a>Aktionen für Visualisierungen im Besitz der Organisation  
  Um Aktionen für eine Visualisierung im Besitz der Organisation auszuführen (`SavedQueryVisualization`), müssen Sie über die Rolle "Systemadministrator" oder "Systemanpasser" verfügen. Sie können die folgenden Aktionen für eine Visualisierung im Besitz der Organisation ausführen:  
@@ -39,10 +39,10 @@ Mithilfe der Common Data Service (CDS) for Apps-Webdienste können Sie folgende 
   > [!NOTE]
   >  Sie können keine Visualisierung ändern oder aktualisieren, um sie einer anderen Entität anzufügen, nachdem Sie die Visualisierung erstellt haben. Da bedeutet, dass das `SavedQueryVisualization.PrimaryEntityTypeCode`-Attribut nicht gültig ist, um die Visualisierung im Besitz der Organisation zu aktualisieren.
   
-- Geben Sie eine Visualisierung im Besitz der Organisation als die Standardvisualisierung für die zugeordnete Entität an, indem Sie das `SavedQueryVisualization.IsDefault`-Attribut auf `true` festlegen. Wenn Sie eine Visualisierung im Besitz der Organisation als die Standardvisualisierung für eine Entität festlegen, dann wird die Visualisierung standardmäßig angezeigt, wenn Sie festlegen, die Visualisierungen für diese Entität in CDS for Apps anzuzeigen.
+- Geben Sie eine Visualisierung im Besitz der Organisation als die Standardvisualisierung für die zugeordnete Entität an, indem Sie das `SavedQueryVisualization.IsDefault`-Attribut auf `true` festlegen. Wenn Sie eine Visualisierung im Besitz der Organisation als die Standardvisualisierung für eine Entität festlegen, dann wird die Visualisierung standardmäßig angezeigt, wenn Sie festlegen, die Visualisierungen für diese Entität in Common Data Service anzuzeigen.
   
   > [!NOTE]
-  >  Wenn Sie unter Verwendung von CDS for Apps-Webdiensten eine Visualisierung im Besitz der Organisation als Standard für eine Entität festlegen, für die bereits eine andere Visualisierung als Standard festgelegt wurde, dann werden beide Visualisierungen als Standardvisualisierungen für die Entität gekennzeichnet.  Um eine Visualisierung als Standardvisualisierung für eine Entität festzulegen, müssen Sie sicherstellen, dass keine Visualisierung als Standardvisualisierung für die Entität festgelegt ist.  
+  >  Wenn Sie unter Verwendung von Common Data Service-Webdiensten eine Visualisierung im Besitz der Organisation als Standard für eine Entität festlegen, für die bereits eine andere Visualisierung als Standard festgelegt wurde, dann werden beide Visualisierungen als Standardvisualisierungen für die Entität gekennzeichnet.  Um eine Visualisierung als Standardvisualisierung für eine Entität festzulegen, müssen Sie sicherstellen, dass keine Visualisierung als Standardvisualisierung für die Entität festgelegt ist.  
   
   Eine Liste der unterstützten Meldungen für die organisationseigene Visualisierungsentität finden Sie unter [SavedQueryVisualization-Entität](../common-data-service/reference/entities/savedqueryvisualization.md).
   
@@ -69,5 +69,8 @@ Mithilfe der Common Data Service (CDS) for Apps-Webdienste können Sie folgende 
  [Diagramme verstehen: Zugrunde liegende Daten und Diagrammdarstellung](understand-charts-underlying-data-chart-representation.md)   
  [Erstellen eines Diagramms](create-visualization-chart.md)   
  [Beispieldiagramme](sample-charts.md)   
- [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Chart](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart) <!--TODO: Need to find the topic in Powerapps repo to link --> [Samples: Alle Charts abrufen, die an eine Entität angehängt sind](/dynamics365/customer-engagement/developer/customize-dev/sample-retrieve-all-charts-attached-entity) <!--TODO: Need to find the topic in Powerapps repo to link --> [Beispiel : Ein Diagramm einem anderen Benutzer zuweisen](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-chart-another-user) <!--TODO: Need to find the topic in Powerapps repo to link --> [SavedQueryVisualization-Entität](../common-data-service/reference/entities/savedqueryvisualization.md)   
+ [Beispiel: Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Diagramms](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!--TODO: Need to find the topic in Powerapps repo to link --> 
+ [Beispiel: Abrufen aller Diagramme, die an eine Entität angehängt sind](/dynamics365/customer-engagement/developer/customize-dev/sample-retrieve-all-charts-attached-entity)   <!--TODO: Need to find the topic in Powerapps repo to link -->
+ [Beispiel: Zuweisen eines Diagramms zu einem anderen Benutzer](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-chart-another-user)   <!--TODO: Need to find the topic in Powerapps repo to link -->
+ [SavedQueryVisualization-Entität](../common-data-service/reference/entities/savedqueryvisualization.md)   
  [UserQueryVisualization-Entität](../common-data-service/reference/entities/userqueryvisualization.md)

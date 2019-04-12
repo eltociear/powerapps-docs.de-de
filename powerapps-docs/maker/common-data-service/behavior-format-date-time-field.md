@@ -1,9 +1,9 @@
 ---
-title: Verhalten und Format des Datums- und Uhrzeitfelds in Common Data Service for PowerApps | MicrosoftDocs
+title: Verhalten und Format des Datums- und Uhrzeitfelds in Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,9 +22,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="behavior-and-format-of-the-date-and-time-field"></a>Verhalten und Format des Datums- und Uhrzeitfelds
+# <a name="behavior-and-format-of-the-date-and-time-field"></a>Funktionsweise und Format des Datums- und Uhrzeitfelds
 
-Im Common Data Service für Apps wird der Datums- und Uhrzeitdatentyp in vielen Standardentitätsfeldern verwendet. Je nachdem, was das Feld darstellt, können Sie viele andere Feldverhalten auswählen: **Ortszeit Benutzer**, **Nur Datum** oder **zeitzonenunabhängig**.  
+Im Common Data Service wird der Datums- und Uhrzeitdatentyp in vielen Standardentitätsfeldern verwendet. Je nachdem, was das Feld darstellt, können Sie viele andere Feldverhalten auswählen: **Ortszeit Benutzer**, **Nur Datum** oder **zeitzonenunabhängig**.  
   
 <a name="Behavior"></a>   
 

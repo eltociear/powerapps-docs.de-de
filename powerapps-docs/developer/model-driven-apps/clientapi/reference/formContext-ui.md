@@ -2,7 +2,7 @@
 title: formContext.ui (Client-API-Referenz) in modellgestützten Apps| MicrosoftDocs
 description: Erfahren Sie mehr über das Verwenden modellgestützten Apps mithilfe von Client-API.
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: f93e0e21-f911-4681-81b0-82ccf98ee28b

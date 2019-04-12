@@ -1,8 +1,8 @@
 ---
-title: Benutzerdefinierte virtueller Entitätsdatenanbieter (Common Data Service for Apps) | Microsoft Docs
-description: 'Durch Verwenden von CDS for Apps Data SDK haben .NET-Entwickler die Möglichkeit benutzerdefinierte virtuelle Entitätsdatenanbieter zu erstellen, um die Integration externer Datenquellentypen zu unterstützen, die von einem bestehenden Datenanbieter nicht unterstützt werden.'
+title: Benutzerdefinierter virtueller Entitätsdatenanbieter (Common Data Service) | Microsoft Docs
+description: 'Durch Verwenden von Common Data Service-Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu integrieren, die nicht von einem vorhandenen Datenanbieter unterstützt werden.'
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="custom-virtual-entity-data-providers"></a>Benutzerdefinierte virtuelle Entitätsdatenanbieter
 
-Durch Verwenden von CDS for Apps Data SDK haben .NET-Entwickler die Möglichkeit benutzerdefinierte virtuelle Entitätsdatenanbieter zu erstellen, um die Integration externer Datenquellentypen zu unterstützen, die von einem bestehenden Datenanbieter nicht unterstützt werden. Jeder Datenanbieter besteht aus einem wiederverwendbaren Satz von CDS for Apps-Plug-Ins, die die unterstützten CRUD-Vorgänge implementieren. (Die ursprüngliche Version ist auf **Abrufen** und **RetrieveMultiple**-Lesevorgänge beschränkt.) Dieser Abschnitt enthält erläuternde Informationen zu Datenanbietern und Vorgehensweisen zum Entwickeln benutzerdefinierter Anbieter, einschließlich Beispielcode.
+Durch Verwenden von Common Data Service-Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu integrieren, die nicht von einem vorhandenen Datenanbieter unterstützt werden. Jeder Datenanbieter besteht aus einem wiederverwendbaren Satz von Common Data Service-Plugins, die die unterstützten CRUD-Vorgänge implementieren. (Die ursprüngliche Version ist auf **Abrufen** und **RetrieveMultiple**-Lesevorgänge beschränkt.) Dieser Abschnitt enthält erläuternde Informationen zu Datenanbietern und Vorgehensweisen zum Entwickeln benutzerdefinierter Anbieter, einschließlich Beispielcode.
 
 > [!NOTE]
 > Alternativ zum Erstellen eines benutzerdefinierten Datenquellenanbieters, sollten Sie erwägen, die Datenquelle an einen vorhandenen Datenanbieter anzupassen. Wenn Sie z. B. eine Schnittstelle von ODatas v4 zur externen Datenquelle erstellen, dann können Sie auf sie mit dem angegebenen Standard-Datenanbieter ODatas v4 direkt zugreifen. Die Funktion zum Hinzufügen dieser REST-Schnittstelle variiert nach der zugrunde liegenden Datendiensttechnologie, beispielsweise [WCF Data Services 4.5](https://docs.microsoft.com/dotnet/framework/data/wcf/). OData hat breiten Branchesupport, mit einer breiten Palette von dedizierten von Tools und kompatiblen Technologien.
@@ -33,9 +33,9 @@ Benutzerdefinierte Datenanbieter erfordern erhebliche Entwicklungsressourcen, um
 
 
 <!-- TODO:
-- CDS for Apps metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
-- CDS for Apps event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
-- CDS for Apps plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
+- Common Data Service metadata schema: More information: [The metadata and data models in Microsoft Dynamics 365](../metadata-data-models.md).
+- Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
+- Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
 
 Diese `Microsoft.Xrm.Sdk.Data.dll` Assembly wird als NuGet-Paket verteilt: [Microsoft.CrmSdk.Daten](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
 
@@ -56,10 +56,10 @@ Der Standard-Odata v4-Datenanbieter und der Cosmos DB-Datenanbieter sind Beispie
 
 ## <a name="steps-to-use-a-custom-data-provider"></a>Schritte, um einen benutzerdefinierten Datenanbieter zu verwenden
 
-Es gibt verschiedene Schritte, die erforderlich sind, um eine virtuelle Entitätsdatenanbieterlösung zu erstellen, die in die CDS for Apps-Anwendungen importiert werden können:
+Es gibt verschiedene Schritte, die erforderlich sind, um eine virtuelle Entitätsdatenanbieterlösung zu erstellen, die in die Common Data Service -Anwendungen importiert werden können:
 
 1. Entwickeln des benutzerdefinierten Datenanbieter-Pug-Ins in DLL (oder ein Satz von DLLs).
-2. Registrieren des benutzerdefinierten Datenanbieters in Ihrem CDS for Apps-Dienst unter Verwendung des Plug-In-Registrierungstools (PRT).
+2. Registrieren Sie den benutzerdefinierten Datenanbieter unter Verwendung des Plug-In-Registrierungstools (PRT) in Ihrem Common Data Service-Dienst.
 3. Erstellen einer Datenanbieterlösung.
 4. Anpassen der Datenquellenentität, um einen Typ oder besondere Instanz widerzuspiegeln.
 5. Exportieren Sie die benutzerdefinierte Datenanbieterlösung.
@@ -78,9 +78,9 @@ Für beide Ereignisse müssen Sie:
 
 1. Konvertieren Sie die entsprechenden Informationen im Ausführungskontext in eine Abfrage, die für Ihre externe Datenquelle funktioniert.
 2. Abrufen von Daten aus dem externen System.
-3. Für **Abrufen** konvertieren Sie Daten in eine <xref:Microsoft.Xrm.Sdk.Entity>; andernfalls, für **RetrieveMultiple**, konvertieren Sie sie in eine <xref:Microsoft.Xrm.Sdk.EntityCollection>. Das Ergebnis wird mithilfe der CDS for Apps-Plattform dem Benutzer zurückgegeben, der die Abfrage ausführt. 
+3. Für **Abrufen** konvertieren Sie Daten in eine <xref:Microsoft.Xrm.Sdk.Entity>; andernfalls, für **RetrieveMultiple**, konvertieren Sie sie in eine <xref:Microsoft.Xrm.Sdk.EntityCollection>. Das Ergebnis wird dem Benutzer mithilfe der Common Data Service-Plattform zurückgegeben, der die Abfrage ausführt. 
 
-Die Klassen im <xref:Microsoft.Xrm.Sdk.Data>-Namespace bieten ein Framework, das Ihnen hilft, die CDS for Apps-Abfrageinformationen aus dem Ausführungskontext in eine Abfrage im für Ihre externe Datenquelle geeigneten Format abzubilden. Dieses Framework hilft Ihnen, die Daten zu konvertieren, die zu den entsprechenden <xref:Microsoft.Xrm.Sdk.Entity> oder <xref:Microsoft.Xrm.Sdk.EntityCollection>-Typen zurückgegeben werden, die von der CDS for Apps-Plattform erwartet wird. 
+Die Klassen im <xref:Microsoft.Xrm.Sdk.Data>-Namespace bieten ein Framework, das Ihnen hilft, die Common Data Service-Abfrageinformationen aus dem Ausführungskontext in eine Abfrage im für Ihre externe Datenquelle geeigneten Format abzubilden. Dieses Framework hilft Ihnen, die Daten zu konvertieren, die zu den entsprechenden <xref:Microsoft.Xrm.Sdk.Entity> oder <xref:Microsoft.Xrm.Sdk.EntityCollection>-Typen zurückgegeben werden, die von der Common Data Service-Plattform erwartet wird. 
 
 #### <a name="data-provider-exceptions"></a>Datenanbieterausnahmen
 

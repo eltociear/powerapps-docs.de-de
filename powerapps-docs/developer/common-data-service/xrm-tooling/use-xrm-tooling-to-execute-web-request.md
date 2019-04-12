@@ -4,7 +4,7 @@ description: 'Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um O
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,15 +24,15 @@ search.app:
 
 Das Klassenobjekt <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> wird verwenden, um Aktionen mit Ihren Dynamics 365-Daten ausführen, z. B. Daten erstellen, aktualisieren, abrufen oder löschen.
 
-Sie können jetzt die Methode <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> verwenden, um eine Webanforderung anhand der XRM-Web-API auszuführen.
+Sie können jetzt die <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode verwenden, um eine Webanforderung anhand der XRM-Web-API auszuführen.
 
-Das folgende Codebeispiel demonstriert, wie Sie mithilfe der <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>-->-Methode eine Webanforderung ausführen können. 
+Das folgende Codebeispiel demonstriert die Ausführung einer Webanforderung mithilfe von <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode. 
 
 >[!NOTE]
 > Diese Methode gilt nur, wenn der Authentifizierungstyp als `OAuth` oder `Certificate` angegeben ist.
 
 ## <a name="create-a-record"></a>Erstellen eines Datensatzes
-Das folgende Codebeispiel demonstriert, wie Sie einen Datensatz mithilfe der <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>-->-Methode erstellen können. Erstellen Sie in diesem Beispiel eine Firma und zeigen Sie dann im Antwortobjekt die ID an.  
+Das folgende Codebeispiel demonstriert, die Erstellung eines Datensatzes mithilfe von <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode. Erstellen Sie in diesem Beispiel eine Firma und zeigen Sie dann im Antwortobjekt die ID an.  
 
 ```csharp
  Dictionary<string, List<string>> ODataHeaders = new Dictionary<string, List<string>>() {

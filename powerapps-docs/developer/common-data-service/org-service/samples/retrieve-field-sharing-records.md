@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen von Feldfreigabedatensätzen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen von Feldfreigabedatensätzen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie die Feldfreigabe-Datensätze für eine Entität abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-retrieve-field-sharing-records"></a>Beispiel: Abrufen von Feldfreigabedatensätzen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-retrieve-field-sharing-records -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-retrieve-field-sharing-records -->
 
 Dieses Beispiel veranschaulicht, wie die `PrincipalObjectAttributeAccess` (Feldfreigabe)-Datensätze für eine Entität abgerufen werden. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldSharing) herunterladen.
 

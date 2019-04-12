@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Importdaten mithilfe komplexer Datenzuordnung (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Daten mithilfe komplexer Datenzuordnung importieren (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie neue Datensätze mithilfe des Datenimports erstellt werden.'
 ms.custom: ''
 ms.date: 10/31/2018

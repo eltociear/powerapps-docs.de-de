@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customize-visualizations-and-dashboards"></a>Anpassen von Visualisierungen und Dashboards
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-visualizations-dashboards -->
 
 Datenvisualisierung und Analysen in Modellgesteuerten Apps ermöglichen Ihnen, die Daten für Ihr Unternehmen grafisch anzuzeigen und zu analysieren, und helfen Ihnen, schneller Einblicke zu gewinnen, um wichtige unternehmerische Entscheidungen zu treffen. Sie können Dashboards so konfigurieren, dass Sie Daten aus verschiedenen Bereichen , beispielsweise Vertrieb, Marketing und Service, anzeigen können. Sie können sogar die in Visualisierungen und Dashboards angezeigten Daten entsprechend Ihren Unternehmensanforderungen anpassen, indem Sie Filter anwenden.  
   
@@ -40,24 +40,24 @@ Datenvisualisierung und Analysen in Modellgesteuerten Apps ermöglichen Ihnen, d
  [Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Erweitern des Metadatenmodells](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)<!-- TODO Need to update relevant powerapps repo link-->
+ [Erweitern des Metadatenmodells](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [Anpassen von Entitätsformularen](customize-entity-forms.md)  
   
  [Anpassen von Entitätsansichten](customize-entity-views.md)  
   
- [Anpassen der globalen Optionssätze](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<!-- TODO Need to update relevant powerapps repo link-->
+ [Anpassen von globalen Optionssätzen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)  <!-- TODO Need to update relevant powerapps repo link-->
   
- [Anwendungsnavigation mithilfe von SiteMap ändern](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<!-- TODO Need to update relevant powerapps repo link-->
+ [Änderungsantragnavigation mithilfe von SiteMap](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)  
   
- [Servicekalender-Darstellungs-Konfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)<!-- TODO Need to update relevant powerapps repo link-->
+ [Servicekalender-Darstellungs-Konfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [Veröffentlichen von Anpassungen](publish-customizations.md)  
   
  [Informationen zum Bearbeiten der Anpassungsdatei](when-edit-customization-file.md)  
   
- [Erweitern des Clients](/dynamics365/customer-engagement/developer/extend-client)<!-- TODO Need to update relevant powerapps repo link-->
+ [Erweitern des Clients](/dynamics365/customer-engagement/developer/extend-client)  <!-- TODO Need to update relevant powerapps repo link-->
   
  [Webressourcen](web-resources.md)

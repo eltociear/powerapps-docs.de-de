@@ -1,7 +1,7 @@
 ---
 title: iFrame-Eigenschaften für Hauptformulare in modellgesteuerten Apps in PowerApps | MicrosoftDocs
 description: Grundlegendes zur iFrame-Eigenschaften für Hauptformulare
-Keywords: Main form; iFrame properties; Dynamics 365
+Keywords: Hauptformular; iFrame-Eigenschaften; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/18/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 1b7e6a0c-18a9-47e2-aa7d-0cffb8c93b19
 search.audienceType:

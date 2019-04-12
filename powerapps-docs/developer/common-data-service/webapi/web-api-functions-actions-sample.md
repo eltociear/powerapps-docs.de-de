@@ -1,10 +1,10 @@
 ---
-title: Beispiel für Web-API-Funktionen und Aktionen (Common Data Service für Apps) | Microsoft Docs
-description: 'Diese Beispielgruppe veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service für Apps"-Web API ausgeführt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
+title: Beispiel für Web-API-Funktionen und Aktionen (Common Data Service) | Microsoft Docs
+description: 'Diese Beispielgruppe veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service"-Web API ausgeführt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Web API-Funktionen- und Aktionen-Beispiel
 
-Diese Beispielgruppe veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service für Apps"-Web API ausgeführt werden. Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:  
+Diese Beispielgruppe veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service"-Web API ausgeführt werden. Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:  
   
 -   [Beispiel für Funktionen und Aktionen (C#)](samples/functions-actions-csharp.md)  
   
@@ -46,13 +46,13 @@ Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält We
 |[Verwenden von ungebundenen benutzerdefinierten Aktionen mit Parametern](#bkmk_unboundCustomActionWithParams)|[Nutzen einer benutzerdefinierten Aktion](use-web-api-actions.md#bkmk_customActions)<br /><br /> [Ungebundene Aktionen](use-web-api-actions.md#bkmk_unboundActions)<br /><br /> <xref href="Microsoft.Dynamics.CRM.account?text=account EntityType" />|  
 |[Behandlung von Ausnahmen für benutzerdefinierte Aktionen](#bkmk_boundCustomActionErrorHandling)|[Nutzen einer benutzerdefinierten Aktion](use-web-api-actions.md#bkmk_customActions)<br /><br /> [Ungebundene Aktionen](use-web-api-actions.md#bkmk_unboundActions)<br /><br /> <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" />|  
   
-Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten CDS für Apps-Web-API-Vorgängen, sowie den entsprechenden HTTP-Nachrichten und den Ausgaben, die der Konsolen zugeordnet sind.  
+Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten Common Data Service-Web-API-Vorgängen, sowie den entsprechenden HTTP-Messages und den Ausgaben, die der Konsolen zugeordnet sind.  
   
 <a name="bkmk_sampleData"></a>
    
 ## <a name="sample-data"></a>Beispieldaten  
 
-Um die ordnungsgemäße Ausführung der Vorgänge in diesem Beispiel sicherzustellen, erstellen Sie zuerst Beispieldaten auf dem "CDS für Apps"-Server. Diese Beispieldaten werden vom Server gelöscht, es sei denn, der Benutzer entscheidet sich, sie nicht zu löschen. Die Daten in diesem Beispiel werden wie folgt einzeln erstellt.  
+Um die ordnungsgemäße Ausführung der Vorgänge in diesem Beispiel, erstellen Sie zuerst Beispieldaten auf dem Common Data Service-Server. Diese Beispieldaten werden vom Server gelöscht, es sei denn, der Benutzer entscheidet sich, sie nicht zu löschen. Die Daten in diesem Beispiel werden wie folgt einzeln erstellt.  
   
 - Erstellen Sie ein Konto (z. B.: `Fourth Coffee`) und ordnen Sie es einem Vorfall zu, der drei 30-minütige Aufgaben hat (insg. 90 Minuten). Nachdem die Aufgaben erstellt sind, werden sie als abgeschlossen markiert. Der Vorgang berechnet die gesamte Zeit, die zur Ausführung dieser drei Aufgaben erforderlich ist.  
   
@@ -318,7 +318,7 @@ Bound Action: AddToQueue
   
 ## <a name="working-with-custom-actions"></a>Verwenden von benutzerdefinierten Aktionen  
 
-Wenn Sie benutzerdefinierte Aktionen in Ihrer Lösung definieren, können Sie diese über die "CDS für Apps"-Web-API aufrufen. Unabhängig davon, ob die Vorgänge in der benutzerdefinierten Aktion Nebenwirkungen haben, können sie möglicherweise Daten ändern und gelten daher eher als Aktionen und nicht als Funktionen. Es gibt keine Möglichkeit, eine benutzerdefinierte Funktion zu erstellen. Weitere Informationen: [Eine benutzerdefinierte Aktion verwenden](use-web-api-actions.md#bkmk_customActions).  
+Wenn Sie benutzerdefinierte Aktionen in Ihrer Lösung definieren, können Sie diese über die Common Data Service-Web-API aufrufen. Unabhängig davon, ob die Vorgänge in der benutzerdefinierten Aktion Nebenwirkungen haben, können sie möglicherweise Daten ändern und gelten daher eher als Aktionen und nicht als Funktionen. Es gibt keine Möglichkeit, eine benutzerdefinierte Funktion zu erstellen. Weitere Informationen: [Eine benutzerdefinierte Aktion verwenden](use-web-api-actions.md#bkmk_customActions).  
   
 Dieses Beispiel verfügt über zwei benutzerdefinierte Aktionen. Sie erfordern beide Parameter. Eine ist gebunden und die andere ungebunden.  
   
@@ -486,7 +486,7 @@ Expected custom error: ContactFirstName and ContactLastName are required when Cu
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
 [Nutzen von Web-API-Funktionen](use-web-api-functions.md)<br />
 [Nutzen von Web-API-Aktionen](use-web-api-actions.md)<br />
 [Internet-API-Funktionen- und Aktionen-Beispiel (C#)](samples/functions-actions-csharp.md)<br />

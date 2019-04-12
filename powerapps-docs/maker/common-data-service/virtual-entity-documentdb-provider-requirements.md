@@ -1,9 +1,9 @@
 ---
-title: Verwenden Sie den Azure Cosmos DB for SQL API Datenanbieter mit Common Data Service for Apps | MicrosoftDocs
+title: 'Vorschaufunktionen: Verwenden Sie den Azure Cosmos DB for SQL-API-Datenanbieter mit Common Data Service | MicrosoftDocs'
 description: 'Erfahren Sie, wie Sie die Azure Cosmos Datenbank für SQL API Datenanbieter mit virtuellen Entitäten verwenden.'
 keywords: SQL API
 ms.date: 02/15/2019
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -54,7 +54,7 @@ Angenommen, Sie haben ein Azure Cosmos DB-Dokument in einer Sammlung mit dem Nam
 
 Diese Tabelle zeigt die Datentypzuordnungen für das SQL-API-Dokument in der Sammlung *Orders* mit Common Data Service for Apps.
 
-|SQL API-Daten|CDS for Apps|
+|SQL API-Daten|Common Data Service|
 |--|--|
 |`id`|Primärschlüssel|
 |`name`|Einzelne Textzeile|
@@ -67,7 +67,7 @@ Diese Tabelle zeigt die Datentypzuordnungen für das SQL-API-Dokument in der Sam
 
 > [!NOTE]
 > - Attribute mit dem Präfix des Unterstrichs (_) werden durch die SQL API generiert«».
-> - Attribute, die im SQL API-Dokument als optional konfiguriert sind und in CDS for Apps als **Eingabe erforderlich** zugeordnet sind, werden einen Laufzeitfehler verursachen.
+> - Attribute, die im SQL-API-Dokument als optional konfiguriert sind und in Common Data Service als **Eingabe erforderlich** zugeordnet sind, werden einen Laufzeitfehler verursachen.
 > - ID-Attributwerte müssen Guids sein.
 > - Weitere Informationen zur Nutzung von Daten in SQL API finden Sie unter [Arbeiten mit Daten in Azure Cosmos DB](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/).
 
@@ -78,7 +78,7 @@ SQL-Abfragefilter unterstützt die folgenden Zeichen.
 - Vergleichsoperatoren:`<`,`>`,`<=`, `>=`,`!=`
 - Logische Operatoren: `and`, `or` 
 - Satzoperatoren: `in`, `not in`
-- Zeichenfolgeoperatoren: `like`, `contains`, b`egins with`, `ends with`
+- Zeichenfolgeoperatoren: `like`, `contains`, `begins with`, `ends with`
 
 > [!NOTE]
 > Die Verwendung des Gleich-Operators wird in die entsprechenden `contains`/`begins with`/`ends with` Operatoren übersetzt. Die SQL-API unterstützt keine Musterargumente wie im Thema [Like (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql) beschrieben. Der Azure Cosmos DB for SQL API Data Provider kann den einzelnen Sonderfall `Like('[aA]%')` in `BeginsWith('a')` ODER `BeginsWith('A')` übersetzen. Beachten Sie, dass beim Zeichenfolgenvergleich in SQL API die Groß-/Kleinschreibung beachtet werden muss.

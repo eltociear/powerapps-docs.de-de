@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Mit Aktivitätspartei-Datensätzen arbeiten (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Mit Aktivitätspartei-Datensätzen arbeiten (Common Data Service) | Microsoft Docs'
 description: In diesem Beispiel wird das Arbeiten mit Aktivitätsparteidatensätzen dargestellt.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-work-with-activity-party-records"></a>Beispiel: Arbeiten mit Aktivitätsparteidatensätzen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-work-activity-party-records -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-work-activity-party-records -->
 
 Dieser Beispielcode zeigt, wie mit Aktivitätsparteidatensätzen gearbeitet wird. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ActivityPartyRecords) herunterladen.
 

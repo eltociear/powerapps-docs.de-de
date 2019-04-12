@@ -189,7 +189,7 @@ Leserechte, statische und konstante Elemente sind von Natur aus threadsicher und
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Nachdem Common Data Services for Apps die Plugin-Klasse instanziiert hat, speichert die Plattform diese Plugin-Instanz aus Performancegründen zwischen. Die Zeitspanne, in der eine Plug-Instanz im Cache gehalten wird, wird von der Plattform verwaltet.  Bestimmte Vorgänge, wie das Ändern der Registrierungseigenschaften eines Plug-Ins, lösen eine Benachrichtigung an die Plattform aus, um den Cache zu aktualisieren.  In diesen Szenarien wird das Plug-in neu initialisiert.
+Nachdem Common Data Services die Plugin-Klasse instanziiert hat, speichert die Plattform diese Plugin-Instanz aus Performancegründen zwischen. Die Zeitspanne, in der eine Plug-Instanz im Cache gehalten wird, wird von der Plattform verwaltet.  Bestimmte Vorgänge, wie das Ändern der Registrierungseigenschaften eines Plug-Ins, lösen eine Benachrichtigung an die Plattform aus, um den Cache zu aktualisieren.  In diesen Szenarien wird das Plug-in neu initialisiert.
 
 Da die Plattform Plugin-Klasseninstanzen zwischenspeichert, wird der Konstruktor nicht bei jedem Aufruf der Plugin-Ausführung aufgerufen.  Aus diesem Grund sollten IPlugin-Implementierungen nicht vom Zeitpunkt der Operationen im Konstruktor abhängen, abgesehen vom Erhalten statischer Konfigurationsdaten. 
 

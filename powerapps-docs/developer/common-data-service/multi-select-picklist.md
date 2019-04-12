@@ -1,5 +1,5 @@
 ---
-title: Mehrfachauswahl-Listenattribute (Common Data Service für Apps) | Microsoft Docs
+title: Mehrfachauswahl-Listenattribute (Common Data Service) | Microsoft Docs
 description: 'Infos zu Mehrfachauswahllistenattributen, die das Speichern von mehreren Options-Auswahlen in einem einzelnen Attribut erlauben.'
 ms.custom: ''
 ms.date: 10/31/2018

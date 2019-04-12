@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 5: Speichern Sie Ihr AppSource-Paket in Azure Storage und generieren Sie eine URL mit SAS-Schlüssel (Common Data Service for Apps) | Microsoft Docs'
+title: 'Schritt 5: Speichern Sie Ihr AppSource-Paket in Azure Storage und generieren Sie eine URL mit SAS-Schlüssel (Common Data Service) | Microsoft Docs'
 description: 'Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und eine Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.'
 ms.custom: ''
 ms.date: 10/31/2018

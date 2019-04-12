@@ -1,10 +1,10 @@
 ---
-title: Anpassungslösungsdateischema (Common Data Service für Apps) | Microsoft Docs
-description: Im Folgenden finden Sie die Schema-Definition für eine Lösungsanpassungsdatei von Common Data Service for Apps.
+title: Anpassungslösungsdateischema (Common Data Service) | Microsoft Docs
+description: Im Folgenden finden Sie die Schema-Definition für eine Lösungsanpassungsdatei von Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,12 +23,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customization-solutions-file-schema -->
 
 # <a name="customization-solutions-file-schema"></a>Anpassungslösungsdateischema
 
 
-Im Folgenden finden Sie die Schema-Definition für eine Import-/Exportanpassungsdatei von Common Data Service for Apps. 
+Im Folgenden finden Sie die Schema-Definition für eine Import-/Exportanpassungsdatei von Common Data Service. 
 
 Sie können das Schema im Ordner `Schemas\9.0.0.2090\CustomizationsSolution.xsd` finden, wenn Sie die Schemas-zip-Datei herunterladen.
 

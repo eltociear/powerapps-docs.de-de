@@ -1,5 +1,5 @@
 ---
-title: Schreiben Sie ein benutzerdefiniertes Azure-kompatibles Plug-In (Common Data Service für Apps) | Microsoft Docs
+title: Schreiben Sie ein benutzerdefiniertes Azure-kompatibles Plug-In (Common Data Service) | Microsoft Docs
 description: 'Das folgende Beispiel zeigt, wie Plug-In-Code hinzugefügt werden kann, um den Azure-Dienstanbieter abzurufen und die Veröffentlichung des Ausführungskontexts auf dem Servicebus durch Aufrufen von IExecutionContext) zu initiieren.'
 keywords: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
-Das Schreiben eines Plug-Ins, das mit Azure funktioniert ähnelt dem Schreiben eines beliebigen anderen "Dynamics 365 Common Data Service für Apps"-Plug-Ins. Allerdings zusätzlich zum Aufrufen aller gewünschten Webdienstmethoden muss das Plug-In Code enthalten, um das Veröffentlichen des Ausführungskontexts im Azure Service Bus einzuleiten.  
+Das Schreiben eines Plug-Ins, das mit Azure funktioniert ähnelt dem Schreiben eines beliebigen anderen "Dynamics 365 Common Data Service"-Plug-Ins. Allerdings zusätzlich zum Aufrufen aller gewünschten Webdienstmethoden muss das Plug-In Code enthalten, um das Veröffentlichen des Ausführungskontexts im Azure Service Bus einzuleiten.  
   
 <a name="bkmk_design"></a>
 
@@ -42,7 +42,7 @@ Beachten Sie, dass es für synchrone registrierte Plug-Ins möglich ist, den Aus
 Im folgenden Beispiel wurde Plug-In-Code hinzugefügt, um den Azure-Dienstanbieter abzurufen und die Bereitstellung des Ausführungskontexts auf dem Servicebus durch Aufrufen von <xref:Microsoft.Xrm.Sdk.IServiceEndpointNotificationService.Execute(Microsoft.Xrm.Sdk.EntityReference,Microsoft.Xrm.Sdk.IExecutionContext)> zu initiieren. Ablaufverfolgungscode wurde hinzugefügt, um das Debuggen von Plug-Ins zu erleichtern, da das Plug-In im Sandkasten ausgeführt werden muss.  
 
 > [!NOTE]
-> Die `serviceEndpointId`, die an den Konstruktor in diesem Code übergeben wurde, ist diejenige, die Sie durch Erstellen eines Dienstendpunkts erhalten, wie in [Exemplarische Vorgehensweise: Konfigurieren von Azure (SAS) für die Integration mit CDS für Apps](walkthrough-configure-azure-sas-integration.md) beschrieben.
+> Die `serviceEndpointId`, die an den Konstruktor in diesem Code übergeben wurde, ist diejenige, die Sie vom Erstellen eines Dienstendpunkts erhalten, wie beschrieben in [Exemplarische Vorgehensweise: Konfigurieren von Azure (SAS) für die Integration mit Common Data Service](walkthrough-configure-azure-sas-integration.md)
 >
 > Sie können verfügbare Dienstendpunkte für Ihre Umgebung mit einer `GET`-Anforderung an die Web-API abfragen. Verwenden Sie dazu Ihren Browser mit einer Abfrage wie der Folgenden: *`[organization Uri]`*`/api/data/v9.0/serviceendpoints?$select=name,description,serviceendpointid`
   

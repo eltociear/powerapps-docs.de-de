@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Webzugriff aus einem Plug-in (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Webzugriff aus einem Plug-in (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie man ein Plug-in schreibt, das auf Ressourcen im Web (Netzwerk) zugreifen kann.'
 ms.custom: ''
 ms.date: 1/16/2019

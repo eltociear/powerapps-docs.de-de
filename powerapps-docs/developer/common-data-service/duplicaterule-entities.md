@@ -1,5 +1,5 @@
 ---
-title: Duplikatregelentitäten (Common Data Service für Apps) | Microsoft Docs
+title: Duplikatregelentitäten (Common Data Service) | Microsoft Docs
 description: 'Diese Entitäten enthalten Daten, die Duplikaterkennungsregeln definieren.'
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,14 +1,14 @@
 ---
-title: 'Fügen Sie in Common Data Service for Apps Daten einer Entität hinzu, indem Sie Power Query verwenden | Microsoft Docs'
-description: 'Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle im Common Data Service (CDS) for Apps hinzuzufügen.'
-author: AFTOwen
+title: 'Fügen Sie in Common Data Service Daten einer Entität hinzu, indem Sie Power Query verwenden | Microsoft Docs'
+description: 'Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle im Common Data Service hinzuzufügen.'
+author: mllopis
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
-ms.author: anneta
+ms.author: millopis
 search.audienceType:
   - maker
 search.app:
@@ -16,8 +16,8 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Fügen Sie in Common Data Service for Apps Daten einer Entität hinzu, indem Sie Power Query verwenden
-In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service (CDS) for Apps](data-platform-intro.md)und befüllen diese Entität mit Daten aus einem OData-Feed, indem Sie Power Query verwenden. Sie können dieselben Techniken verwenden, um Daten aus diesen Online- und lokalen Quellen zu integrieren, unter anderem:
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Fügen Sie in Common Data Service Daten einer Entität hinzu, indem Sie Power Query verwenden
+In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service](data-platform-intro.md) und befüllen diese Entität mit Daten aus einem OData-Feed, indem Sie Power Query verwenden. Sie können dieselben Techniken verwenden, um Daten aus diesen Online- und lokalen Quellen zu integrieren, unter anderem:
 
 * SQL Server
 * Salesforce

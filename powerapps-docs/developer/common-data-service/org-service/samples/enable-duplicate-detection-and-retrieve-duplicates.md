@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Aktivieren und deaktivieren von Duplikaterkennung (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Aktivieren und deaktivieren von Duplikaterkennung (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie die Duplikaterkennung aktivieren und doppelte Datensätze abrufen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-enable-duplicate-detection-and-retrieve-duplicates"></a>Beispiel: Duplikaterkennung aktivieren und Duplikate abrufen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-enable-duplicate-detection-and-retrieve-duplicates -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-enable-duplicate-detection-and-retrieve-duplicates -->
 
 Dieses Beispiel zeigt, wie Sie die Duplikaterkennung aktivieren und doppelte Datensätze abrufen. Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EnableDuplicateDetection).
 

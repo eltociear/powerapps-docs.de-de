@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen und Aktualisieren von verknüpften Datensätzen (früher gebunden) (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Erstellen und Aktualisieren von verknüpften Datensätzen (früher gebunden) (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Klasse mit früher Bindung. '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,7 @@ show deep insert equivalent
 
 sample-initialize-record-existing-record.md
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-records-early-bound
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-create-retrieve-update-delete-records-early-bound
 
 -->
 

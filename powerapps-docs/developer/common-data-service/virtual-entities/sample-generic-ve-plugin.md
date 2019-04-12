@@ -1,10 +1,10 @@
 ---
-title: 'Beispiel: Generisches virtuelles Entitätsdatenanbieter-Plug-In (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Generisches virtuelles Entitätsdatenanbieter-Plug-In (Common Data Service) | Microsoft Docs'
 description: 'Das Beispiel veranschaulicht, wie ein virtuelles allgemeines benutzerdefiniertes Dynamics 365 Entitäts-Plug-In implementiert wird.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
@@ -25,7 +25,7 @@ search.app:
 
 ## <a name="demonstrates"></a>Demonstriert
 
-Dieses Beispiel zeigt eine minimale Implementierung für das allgmeine virtuelle CDS for App-Entitätsdatenanbieter-Plug-In **DropboxRetrieveMultiplePlugin** für den Filesharing-Service [Dropbox](https://www.dropbox.com/). Es wird der "Bare Metal"-Ansatz verwendet, wobei der <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> durch das Erstellen einer benutzerdefinierten Besucherklasse **DropBoxExpressionVisitor** übersetzt wird. Es wird eine Sammlung der Dateien zurückgegeben, die den Suchkriterien als <xref:Microsoft.Xrm.Sdk.EntityCollection> entsprechen. 
+Dieses Beispiel zeigt eine minimale Implementierung für das allgmeine virtuelle Common Data Service-Entitätsdatenanbieter-Plug-In **DropboxRetrieveMultiplePlugin** für den Filesharing-Service [Dropbox](https://www.dropbox.com/). Es wird der "Bare Metal"-Ansatz verwendet, wobei der <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> durch das Erstellen einer benutzerdefinierten Besucherklasse **DropBoxExpressionVisitor** übersetzt wird. Es wird eine Sammlung der Dateien zurückgegeben, die den Suchkriterien als <xref:Microsoft.Xrm.Sdk.EntityCollection> entsprechen. 
 
 ## <a name="getting-started"></a>Erste Schritte
 

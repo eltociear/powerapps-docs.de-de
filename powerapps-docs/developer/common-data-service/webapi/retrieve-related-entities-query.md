@@ -1,10 +1,10 @@
 ---
-title: Abrufen von verwandten Entitäten mit einer Abfrage (Common Data Service for Apps)| Microsoft Docs
+title: Abrufen von verwandten Entitäten mit einer Abfrage (Common Data Service)| Microsoft Docs
 description: 'Lesen Sie, wie Sie verwandte Objekte abrufen können, indem Sie die Navigationseigenschaften erweitern.'
 ms.custom: ''
 ms.date: 02/06/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Abrufen von verknüpften Entitäten mit einer Abfrage
+# <a name="retrieve-related-entities-with-a-query"></a>Abrufen von verknüpften Entitäten mit einer Abfrage
 
 Verwenden Sie die `$expand`-Systemabfrageoption in den Navigationseigenschaften, um zu steuern, welche Daten von den verbundenen Entitäten zurückgegeben werden. Es gibt zwei Typen von Navigationseigenschaften:  
   
@@ -36,11 +36,11 @@ Wenn Sie nur den Namen der Navigationseigenschaft einschließen, rufen Sie alle 
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 
-## Abrufen verwandter Entitäten durch Erweitern von einfach bewerteten Navigationseigenschaften
+## <a name="retrieve-related-entities-by-expanding-single-valued-navigation-properties"></a>Abrufen verwandter Entitäten durch Erweitern von einfach bewerteten Navigationseigenschaften
 
 Im folgenden Beispiel wird gezeigt, wie der Kontakt für alle Firmendatensätze abgerufen wird. Für die in Verbindung stehenden Kontaktdatensätze rufen wir nur die Kontaktkennung und den vollen Namen ab.  
   
-****Anforderung****  
+**Anforderung**  
 
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$select=name&$expand=primarycontactid($select=contactid,fullname) HTTP/1.1  
@@ -49,7 +49,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
-****Antwort**** 
+**Antwort** 
  
 ```http 
 HTTP/1.1 200 OK  
@@ -155,7 +155,7 @@ OData-Version: 4.0
 
 Anstatt, die verbundenen Entitäten für Entitätensätze abzurufen, können Sie auch Verweise (Verbindungen) auf die verbundenen Entitäten zurückgeben, indem Sie die einwertige Navigationseigenschaft mit der Option `$ref` erweitern. Im folgenden Beispiel werden Links zum Kontaktdatensatz für alle Firmen zurückgegeben.  
   
- ****Anforderung****
+ **Anforderung**
 
 ```http  
 GET [Organization URI]/api/data/v9.0/accounts?$select=name&$expand=primarycontactid/$ref HTTP/1.1  
@@ -164,7 +164,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
- ****Antwort****
+ **Antwort**
  
 ```http 
 HTTP/1.1 200 OK  
@@ -270,13 +270,13 @@ OData-Version: 4.0
 
 <a bkmk="bkmk_retrieverelatedentityexpandcollectionnavprop"></a>
 
-## Abrufen verwandter Entitäten durch Erweitern von sammlungsbewerteten Navigationseigenschaften
+## <a name="retrieve-related-entities-by-expanding-collection-valued-navigation-properties"></a>Abrufen verwandter Entitäten durch Erweitern von sammlungsbewerteten Navigationseigenschaften
 
 Wenn Sie die sammlungsbewerteten Navigationsparameter erweitern, um verwandte Objekte für Entity-Sets abzurufen, wird eine `@odata.nextLink`-Eigenschaft für die verwandten Objekte zurückgegeben. Sie sollten den Wert der `@odata.nextLink`-Eigenschaft mit einer neuen `GET`-Anforderung nutzen, um die benötigten Daten zurückzugeben.  
 
 Im folgenden Beispiel werden die Aufgaben zurückgegeben, die den Ersten 5 Firmendatensätzen zugewiesen werden.  
   
-****Anforderung****
+**Anforderung**
 
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$top=5&$select=name&$expand=Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
@@ -285,7 +285,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
-****Antwort**** 
+**Antwort** 
  
 ```http 
 HTTP/1.1 200 OK  
@@ -347,13 +347,13 @@ OData-Version: 4.0
 
 <a bkmk="bkmk_retrieverelatedentitysingleandcollectionnavprop"></a>
   
-## Abrufen verwandter Einheiten durch Erweitern sowohl von Single-Value- als auch von Collection-Value-Navigationseigenschaften
+## <a name="retrieve-related-entities-by-expanding-both-single-valued-and-collection-valued-navigation-properties"></a>Abrufen verwandter Einheiten durch Erweitern sowohl von Single-Value- als auch von Collection-Value-Navigationseigenschaften
 
 Das folgende Beispiel zeigt, wie Sie verknüpfte Entitäten für Entity-Sets mit Hilfe von ein- und sammlungsbewerteten Navigationseigenschaften erweitern können. Wie zuvor erklärt, gibt die Erweiterung auf sammlungswertige Navigationseigenschaften, um verbundene Entitäten für Entitätssätze zurückzugeben eine `@odata.nextLink`-Eigenschaft für die verbundenen Entitäten zurück. Sie sollten den Wert der `@odata.nextLink`-Eigenschaft mit einer neuen `GET`-Anforderung nutzen, um die benötigten Daten zurückzugeben.  
   
 In diesem Beispiel rufen wir den Kontakt und die Aufgaben ab, die den ersten 3 Firmen zugewiesen werden.  
   
-****Anforderung****
+**Anforderung**
 
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$top=3&$select=name&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
@@ -362,7 +362,7 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
 ```  
   
-****Antwort****  
+**Antwort**  
 
 ```http 
 HTTP/1.1 200 OK  
@@ -416,12 +416,12 @@ OData-Version: 4.0
   
 ```
 
-## Siehe auch
+## <a name="see-also"></a>Siehe auch
 
-[[Abfrage von Daten über die Web-API](query-data-web-api.md)](query-data-web-api.md)<br />
-[[Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)](perform-operations-web-api.md)<br />
-[[HTTP-Anforderungen verfassen und Fehler beheben](compose-http-requests-handle-errors.md)](compose-http-requests-handle-errors.md)<br />
-[[Erstellen einer Entität mithilfe des Web-API](create-entity-web-api.md)](create-entity-web-api.md)<br />
-[[Abrufen einer Entität mithilfe des Web-API](retrieve-entity-using-web-api.md)](retrieve-entity-using-web-api.md)<br />
-[[Entitäten aktualisieren und löschen mithilfe der Web API](update-delete-entities-using-web-api.md)](update-delete-entities-using-web-api.md)<br />
-[[Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web API](associate-disassociate-entities-using-web-api.md)](associate-disassociate-entities-using-web-api.md)
+[Abfrage von Daten über die Web-API](query-data-web-api.md)<br />
+[Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)<br />
+[HTTP-Anforderungen verfassen und Fehler beheben](compose-http-requests-handle-errors.md)<br />
+[Erstellen einer Entität mithilfe des Web-API](create-entity-web-api.md)<br />
+[Abrufen einer Entität mithilfe des Web-API](retrieve-entity-using-web-api.md)<br />
+[Entitäten aktualisieren und löschen mithilfe der Web API](update-delete-entities-using-web-api.md)<br />
+[Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web API](associate-disassociate-entities-using-web-api.md)

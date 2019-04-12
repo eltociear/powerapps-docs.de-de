@@ -1,10 +1,10 @@
 ---
-title: 'Beispiel: Erstellen einer benutzerdefinierten Workflowaktivität (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Erstellen einer benutzerdefinierten Workflow-Aktivität (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Workflowaktivität schreiben, die eine neue Firma sowie eine Aufgabe für die Firma erstellen kann. Dieses Beispiel verwendet frühere Bindungen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples

@@ -1,10 +1,10 @@
 ---
-title: Ermitteln Sie die URL für Ihre Organisation mit Web API (Common Data Service for Apps)| Microsoft Docs
+title: Ermitteln Sie die URL für Ihre Organisation mit Web-API (Common Data Service)| Microsoft Docs
 description: 'Hier erfahren Sie, wie Sie Web-API verwenden können, um die zur Laufzeit die Organisationen zu erkunden, oder Instanzen, zu denen der angemeldete Benutzer gehört.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -38,7 +38,7 @@ Zusätzlich zu Ermittlungsdiensten für bestimmte Datencenter, die für den 2011
 GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
 ```  
   
-Im oben genannten Beispiel wird der globale Ermittlungsdienst von CDS for Apps verwendet, um die Organisationsinformationen der Instanz mit einem eindeutigen Namen "myorg" abzurufen. Weitere Details zu dieser Anforderung werden später in diesem Thema ausführlicher behandelt.  
+Im oben genannten Beispiel wird der globale Ermittlungsdienst von Common Data Service verwendet, um die Organisationsinformationen der Instanz mit einem eindeutigen Namen "myorg" abzurufen. Weitere Details zu dieser Anforderung werden später in diesem Thema ausführlicher behandelt.  
   
 ### <a name="scope-of-the-returned-information"></a>Umfang der zurückgegebenen Informationen
 
@@ -52,14 +52,14 @@ Für den globalen Ermittlungsdienst gibt der Entitätssatz `Instances` den Entit
 
 ## <a name="how-to-access-the-discovery-services"></a>Wie erfolgt der Zugriff auf die Ermittlungsdienste
 
-Im Allgemeinen hat die Web-API-Adresse des Ermittlungsdiensts das folgende Format: `<service base address>/api/discovery/`.  Die Adressen für jeden Bereitstellungstyp werden unten identifiziert. Sie können die Web-API-Adressen und Versionsnummer für Ihre Bereitstellung einfach in der CDS for Apps-Webanwendung finden, indem Sie zu **Einstellungen > Anpassung > Entwicklerressourcen** navigieren  
+Im Allgemeinen hat die Web-API-Adresse des Ermittlungsdiensts das folgende Format: `<service base address>/api/discovery/`.  Die Adressen für jeden Bereitstellungstyp werden unten identifiziert. Sie können die Web-API-Adressen und Versionsnummer für Ihre Bereitstellung einfach in der Common Data Service-Webanwendung finden, indem Sie zu **Einstellungen > Anpassung > Entwicklerressourcen** navigieren  
   
-### <a name="cds-for-apps-discovery-services"></a>CDS für App-Suchdienste  
+### <a name="common-data-service-discovery-services"></a>Common Data Service-Suchdienste  
 
 Die Dienstbasisadresse des globalen Ermittlungsdiensts ist: `https://globaldisco.crm.dynamics.com/`. Dies führt als Ergebnis zur Serviceadresse von `https://globaldisco.crm.dynamics.com/api/discovery/`.  
   
 <!-- TODO:
-The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available CDS for Apps datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
+The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available Common Data Service datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
   
 ## <a name="using-the-discovery-service"></a>Verwenden des Suchdiensts  
 
@@ -67,13 +67,13 @@ Ein Entitätssatz mit der Bezeichnung `Instances` wird zum Abrufen von Instanzin
   
 ### <a name="authentication"></a>Authentifizierung
 
-CDS for Apps-Web-API-Instanzen des Ermittlungsdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens. Lokale oder IFD-Instanzen der Ermittlungs-Web-API übernehmen das Authentifizierungsmodell ihrer Bereitstellung. Dabei unterstützen sie entweder die Integrierte Windows-Authentifizierung (IWA) oder OAuth-Tokens von einem vertrauenswürdigen Tokenanbieter. Webanwendungssitzungs-Authentifizierung wird nicht unterstützt.  
+Common Data Service-Web-API-Instanzen des Suchdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens. Lokale oder IFD-Instanzen der Ermittlungs-Web-API übernehmen das Authentifizierungsmodell ihrer Bereitstellung. Dabei unterstützen sie entweder die Integrierte Windows-Authentifizierung (IWA) oder OAuth-Tokens von einem vertrauenswürdigen Tokenanbieter. Webanwendungssitzungs-Authentifizierung wird nicht unterstützt.  
   
 Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des "allgemeinen" Endpunkts und der Ressourcenkennung des Service aus.  Wenn in ähnlicher Weise eine lokale Bereitstellung für OAuth konfiguriert wird, gibt eine Trägerabfrage die lokale Autoritäts-URL sowie die Ressourcenkennung des Service zurück.  
   
 ### <a name="web-api-versioning"></a>Web-API-Versionsverwaltung
 
-Versionsverwaltung des Ermittlungsdiensts für ein Datencenter oder lokal/IFD wird unterstützt und ist konsistent mit Versionsnummerierung, wie sie vom Organisationsdienst verwendet wird . Der globale Ermittlungsdienst von CDS for Apps ist jedoch nicht an die Versionsnummer der CDS for Apps-Bereitstellung gebunden. Stattdessen verwendet der globale Service seine eigene Versionsnummerierung. Zum jetzigen Zeitpunkt befindet sich der globalen Suchdienst von CDS for Apps in der Version 1.0 (v1.0). Beispiel:  
+Versionsverwaltung des Ermittlungsdiensts für ein Datencenter oder lokal/IFD wird unterstützt und ist konsistent mit Versionsnummerierung, wie sie vom Organisationsdienst verwendet wird . Der globale Suchdienst von Common Data Service ist jedoch nicht an die Versionsnummer der Common Data Service-Bereitstellung gebunden. Stattdessen verwendet der globale Service seine eigene Versionsnummerierung. Ab Verfassung dieses Texts befindet sich der globale Suchdienst von Common Data Service bei Version 1.0 (v1.0). Beispiel:  
   
 ```http  
 GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  

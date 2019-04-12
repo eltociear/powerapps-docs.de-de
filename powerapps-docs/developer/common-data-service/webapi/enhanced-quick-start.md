@@ -1,10 +1,10 @@
 ---
-title: Verbesserte Schnellstartfunktion (Common Data Service for Apps)| Microsoft Docs
-description: 'Erstellen Sie ein neues Projekt in Visual Studio, um eine Konsolenanwendung zu unterstützen, die Common Data Service for Apps-Web-API verwendet'
+title: Verbesserte Schnellstartfunktion (Common Data Service) | Microsoft Docs
+description: 'Erstellen Sie ein neues Projekt in Visual Studio, um eine Konsolenanwendung zu unterstützen, die Common Data Service-Web-API verwendet'
 ms.custom: ''
 ms.date: 02/02/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,11 +21,11 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# Verbesserte Schnellstartfunktion
+# <a name="enhanced-quick-start"></a>Verbesserte Schnellstartfunktion
 
 Dieses Thema zeigt, wie Sie den Code im [Schnellstartthema](quick-start-console-app-csharp.md) überarbeiten können, indem Sie wiederverwendbare <xref:System.Net.Http.HttpClient> und Fehlerbehandlungsmethoden hinzufügen. Führen Sie die Schritte im [Schnellstartthema](quick-start-console-app-csharp.md) aus, um ein neues Visual Studio-Projekt zu erstellen, bevor Sie mit diesem Thema beginnen.
 
-## Aktivieren der Übergabe von Anmeldeinformationen in einer Verbindungszeichenfolge
+## <a name="enable-passing-credentials-in-a-connection-string"></a>Aktivieren der Übergabe von Anmeldeinformationen in einer Verbindungszeichenfolge
 
 Das Einfügen von Benutzeranmeldeinformationen in Ihren Code auf die gleiche Weise wie im [Schnellstartbeispiel](quick-start-console-app-csharp.md) ist keine gute Vorgehensweise. 
 
@@ -33,18 +33,18 @@ Wie Sie die Benutzeranmeldeinformationen erfassen, hängt von der Art des Client
 
 Um dies zu ermöglichen, sind drei Schritte erforderlich:
 
-1. [[Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
-1. [[Bearbeiten der Anwendungskonfigurationsdatei](#2-edit-the-application-configuration-file)](#2-edit-the-application-configuration-file)
-1. [[Hinzufügen mit Anweisung zur Program.cs](#3-add-using-statement-to-programcs)](#3-add-using-statement-to-programcs)
+1. [Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
+1. [Bearbeiten der Anwendungskonfigurationsdatei](#2-edit-the-application-configuration-file)
+1. [Hinzufügen mit Anweisung zur Program.cs](#3-add-using-statement-to-programcs)
 
 
-### Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen
+### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Referenzen** und wählen Sie **Referenz hinzufügen...**.
 1. Suchen Sie im Dialog **Referenzmanager** nach `System.Configuration` und aktivieren Sie das Kontrollkästchen, um diese Referenz zu Ihrem Projekt hinzuzufügen.
 1. Klicken Sie auf **OK**, um das Dialogfeld **Reference Manager** zu schließen.
   
-### Bearbeiten der Anwendungskonfigurationsdatei
+### <a name="edit-the-application-configuration-file"></a>Bearbeiten der Anwendungskonfigurationsdatei
 
 Öffnen Sie im **Lösungs-Explorer** die Datei **App.config**. Sie sollte ungefähr so aussehen:
 
@@ -74,9 +74,9 @@ Bearbeiten Sie das Element `<configuration>`, um einen Knoten `connectionStrings
 ```
 Dadurch entsteht eine Verbindungszeichenfolge, die namentlich referenziert werden kann, in diesem Fall `Connect`, sodass Sie bei Bedarf mehr als eine Verbindung definieren können.
 
-Bearbeiten Sie die Werte für die Verbindungszeichenfolge `Url`, `Username` und `Password` in der `connectionString` so, dass sie mit dem übereinstimmen, was Sie für die Verbindung zu Ihrer CDS-Umgebung benötigen.
+Bearbeiten Sie die Werte für die Verbindungszeichenfolge `Url`, `Username` und `Password` in der `connectionString` so, dass sie mit dem übereinstimmen, was Sie für die Verbindung zu Ihrer Common Data Service-Umgebung benötigen.
 
-### Hinzufügen mit Anweisung zur Program.cs
+### <a name="add-using-statement-to-programcs"></a>Hinzufügen mit Anweisung zur Program.cs
 
 Fügen Sie dies oben in Ihrer Program.cs-Datei mit der Anweisung hinzu:
 
@@ -84,7 +84,7 @@ Fügen Sie dies oben in Ihrer Program.cs-Datei mit der Anweisung hinzu:
 using System.Configuration;
 ```
 
-## Helfercode hinzufügen
+## <a name="add-helper-code"></a>Helfercode hinzufügen
 
 Im [Schnellstartbeispiel](quick-start-console-app-csharp.md) befindet sich der gesamte Code innerhalb der Datei `program.cs`. Wir werden den Code, der sich mit dem Verbinden und Erstellen einer <xref:System.Net.Http.HttpClient> beschäftigt, in eine separate Datei mit Hilfsmethoden verschieben. 
 
@@ -228,7 +228,7 @@ Diese Helfer werden auch in der [SampleHelper.cs](https://github.com/Microsoft/P
     }
     ```
 
-## Program.cs aktualisieren
+## <a name="update-programcs"></a>Program.cs aktualisieren
 
 Nachdem Sie nun die Änderungen an [Enable passing credentials in a connection string](#enable-passing-credentials-in-a-connection-string) und [Add helper code](#add-helper-code) vorgenommen haben, können Sie die Methode `Main` in Ihrer `Program.cs` aktualisieren, um nur Folgendes zu enthalten:
 
@@ -279,7 +279,7 @@ Drücken Sie F5, um das Programm auszuführen. Genau wie das [Schnellstartbeispi
     Press any key to exit.
     ```
 
-## Erstellen von wiederverwendbaren Methoden
+## <a name="create-re-usable-methods"></a>Erstellen von wiederverwendbaren Methoden
 
 Während wir die Gesamtmenge des Codes in der Methode `Program.cs` `main` reduziert haben, werden Sie kein Programm schreiben, um nur eine Operation aufzurufen, und es ist nicht realistisch, so viel Code zu schreiben, nur um eine einzelne Operation aufzurufen.
 
@@ -331,7 +331,7 @@ Führen Sie in Ihrem Visual Studio-Projekt die folgenden Schritte aus:
 
     `partial class Program`
 
-1. Erstellen Sie eine neue Klasse mit dem Namen `ProgramMethods.cs`. `ProgramMethods.cs`
+1. Erstellen Sie eine neue Klasse mit dem Namen `ProgramMethods.cs`.
 
     Ändern Sie dies unter `ProgramMethods.cs`:
 
@@ -417,7 +417,7 @@ Führen Sie in Ihrem Visual Studio-Projekt die folgenden Schritte aus:
 1. Drücken Sie F5, um das Beispiel auszuführen, und Sie sollten die gleichen Ergebnisse wie zuvor erhalten.
 
 
-## Problembehandlung
+## <a name="troubleshooting"></a>Problembehandlung
 
 Wenn Sie Probleme beim Ausführen dieser Samples haben, können Sie alle PowerApps-Beispiele aus dem GitHub-Repository unter [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) herunterladen.
 
@@ -428,16 +428,16 @@ Sie sollten in der Lage sein, die Datei `SimpleWebApi.sln` in Visual Studio zu �
 > [!IMPORTANT]
 > Alle Beispiele auf dem GitHub Repo sind so konfiguriert, dass sie eine gemeinsame App.config verwenden, die sich bei `PowerApps-Samples-master\cds\App.config` befindet. Wenn Sie Ihre Verbindungszeichenfolge festlegen, müssen Sie diese Datei bearbeiten. Wenn Sie dies tun, können Sie alle Samples ausführen, ohne Ihre Anmeldeinformationen erneut festzulegen.
 
-## Erstellen eines Template-Projekts
+## <a name="create-a-template-project"></a>Erstellen eines Template-Projekts
 
 Bevor Sie das Thema verlassen, sollten Sie darüber nachdenken, das Projekt als Projektvorlage zu speichern. Sie können die Vorlage dann wieder für zukünftige Lernprojekte verwenden und sich etwas Zeit und Aufwand bei der Erstellung neue Projekte ersparen. Wählen Sie dazu im Menü **Datei** die Option **Exportvorlage**, aus, während das Projekt in Microsoft Visual Studio geöffnet ist. Befolgen Sie Anweisungen des [Vorlagenexportassistenten](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates) zum Erstellen der Vorlage.  
   
-## Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Verwenden Sie die folgenden Ressourcen, um mehr zu erfahren:
 
 > [!div class="nextstepaction"]
-> [[Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)](perform-operations-web-api.md)<br /><br />
-> [[Probieren Sie Web API Datenoperationen Beispiele (C#)](web-api-samples-csharp.md)](web-api-samples-csharp.md)<br /><br />
-> [[Überprüfung von Web-API-Beispielen (C#) auf GitHub](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23)](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23)
+> [Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)<br /><br />
+> [Probieren Sie Web API Datenoperationen Beispiele (C#)](web-api-samples-csharp.md)<br /><br />
+> [Überprüfung von Web-API-Beispielen (C#) auf GitHub](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23)
 

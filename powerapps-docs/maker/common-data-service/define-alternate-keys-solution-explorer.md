@@ -1,10 +1,10 @@
 ---
 title: Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen | MicrosoftDocs
-description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um Datensätze in Common Data Service for Apps mithilfe des Projektmappen-Explorers zu verweisen'
+description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um Datensätze in Common Data Service mithilfe des Lösungs-Explorers zu verweisen'
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen
 
-Projektmappen-Explorer bietet eine Möglichkeit, um Alternativschlüssel für Common Data Service for Apps anzuzeigen und zu erstellen.
+Lösungs-Explorer bietet eine Möglichkeit, um Alternativschlüssel für Common Data Service anzuzeigen und zu erstellen.
 
 [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können mithilfe des Lösungs-Explorers nur festgelegt werden. <br />Weitere Informationen: 
 - [Definieren von Alternativschlüsseln für den Verweis auf Datensätze](define-alternate-keys-reference-records.md)<br />

@@ -1,5 +1,5 @@
 ---
-title: Definieren von benutzerdefinierten Statusmodellübergängen (Common Data Service for Apps) | Microsoft Docs
+title: Definieren von benutzerdefinierten Statusmodellübergängen (Common Data Service) | Microsoft Docs
 description: Erfahren Sie mehr über die Definition von benutzerdefinierten Statusmodellübergängen für die Vorfall (Anfrage)-Entität oder benutzerdefinierte Entitäten.
 ms.custom: ''
 ms.date: 10/31/2018

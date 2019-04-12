@@ -4,7 +4,7 @@ description: Entitäten mit dem PowerApps-Portal erstellen und bearbeiten
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -25,10 +25,10 @@ search.app:
 
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>Entitäten mit dem PowerApps-Portal erstellen und bearbeiten
 
-Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Felder vom Common Data Service für Apps zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Felder vom Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. Weitere Informationen: 
-- [Erstellen und bearbeiten Sie Entitäten in Common Data Service for Apps | MicrosoftDocs](create-edit-entities.md)
+- [Erstellen und bearbeiten Sie Entitäten in Common Data Service](create-edit-entities.md)
 - [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>Entitäten anzeigen
@@ -62,7 +62,7 @@ Geben Sie Daten in die folgenden Felder ein:
 |--|--|
 |**Anzeigename**|Dies ist der Name im Singular für die Entität, die in der App angezeigt wird. Dieses Limit kann später geändert werden.|
 |**Plural-Anzeigename**|Dies ist der Name im Plural für die Entität, die in der App angezeigt wird. Dieses Limit kann später geändert werden.|
-|**Name**|Dieses Feld wird basierend auf dem von Ihnen eingegebenen **Anzeigenamen** vorab ausgefüllt. Es enthält das Anpassungspräfix des CDS Lösungsherausgebers. Eine spätere Änderung ist nach dem Speichern der Entität nicht möglich.|
+|**Name**|Dieses Feld wird basierend auf dem von Ihnen eingegebenen **Anzeigenamen** vorab ausgefüllt. Es enthält das Anpassungspräfix des Common Data Service-Lösungsherausgebers. Eine spätere Änderung ist nach dem Speichern der Entität nicht möglich.|
 |**Beschreibung**|Geben Sie eine aussagekräftige Beschreibung des Zwecks der Entität ein.|
 
 Wählen Sie **Weiter**, um fortzufahren, dadurch wird der Bereich **Neue Entität** beendet und die Liste der Felder angezeigt.
@@ -144,7 +144,7 @@ Wenn die Entität Abhängigkeiten hat, die das Löschen verhindern, wird eine Fe
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen und bearbeiten Sie Entitäten in Common Data Service for Apps | MicrosoftDocs](create-edit-entities.md)<br />
+[Erstellen und bearbeiten Sie Entitäten in Common Data Service](create-edit-entities.md)<br />
 [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)
 
 

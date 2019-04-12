@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Dynamics 365-Ereignisdaten in Ihrer Azure Event Hub-Lösung (Common Data Service für Apps) | Microsoft Docs
+title: Arbeiten mit Dynamics 365-Ereignisdaten in Ihrer Azure-Ereignis-Hub-Lösung (Common Data Service) | Microsoft Docs
 description: In dem Artikel wird die Arbeit mit Ereignisdaten in der Azure-Ereignishublösung beschrieben.
 keywords: ''
 ms.date: 10/31/2018
@@ -20,7 +20,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="work-with-common-data-service-for-apps-event-data-in-your-azure-event-hub-solution"></a>Arbeiten mit Common Data Service für Apps-Ereignisdaten in Ihrer Azure Event Hub-Lösung
+# <a name="work-with-common-data-service-event-data-in-your-azure-event-hub-solution"></a>Arbeiten mit Common Data Service-Ereignisdaten in Ihrer Azure-Ereignis-Hub-Lösung
 
 Azure Event Hubs ist ein hoch-skalierbarer öffentlicher Abonnementservice, der Millionen von Ereignissen pro Sekunde übernehmen und in mehrere Anwendungen streamen kann. Die Dynamics 365-Azure-Schnittstelle ermöglicht, dass Ihre Azure Customer Engagement-Ereignisdaten im [!INCLUDEAzure Service Bus veröffentlicht und den Abonnenten Ihrer Ereignishublösung zur Verfügung gestellt werden. Die folgenden Informationen beschreiben die allgemeinen Aufgaben, die abgeschlossen werden müssen, um Azure-Ereignisdaten an eine Ereignishublösung zu schicken.  
   

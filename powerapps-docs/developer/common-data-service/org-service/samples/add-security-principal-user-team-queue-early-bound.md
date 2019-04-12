@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) zu einer Warteschlange (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) zu einer Warteschlange (Common Data Service) | Microsoft Docs'
 description: Hinzufügen eines Sicherheitsprinzipals zu einer Warteschlange
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>Beispiel: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) zu einer Warteschlange 
 
-Dieses Beispiel zeigt, wie einem Benutzer oder Team Zugriff auf eine Warteschlange gewährt wird. Die [AddPrincipalToQueueRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addprincipaltoqueuerequest?view=dynamics-general-ce-9) fügt den angegebenen Prinzipal der Liste der Warteschlangenmitglieder hinzu. Wenn der angegebene Sicherheitsprinzipal ein Team ist, wird jedes Teammitglied der Warteschlange hinzugefügt. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AddSecurityPrincipalToQueue) herunterladen.
+Dieses Beispiel zeigt, wie einem Benutzer oder Team Zugriff auf eine Warteschlange gewährt wird. Die [AddPrincipalToQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.addprincipaltoqueuerequest?view=dynamics-general-ce-9) fügt den angegebenen Prinzipal der Liste der Warteschlangenmitglieder hinzu. Wenn der angegebene Sicherheitsprinzipal ein Team ist, wird jedes Teammitglied der Warteschlange hinzugefügt. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AddSecurityPrincipalToQueue) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

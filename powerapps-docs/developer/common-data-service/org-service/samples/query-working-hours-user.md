@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abfragen der Arbeitszeit eines Benutzers (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abfragen der Arbeitszeit eines Benutzers (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie die Arbeitszeit eines Benutzers abrufen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-query-the-working-hours-of-a-user"></a>Beispiel: Abfragen der Arbeitszeit eines Benutzers
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-working-hours-user -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-working-hours-user -->
 
-Dieses Beispiel zeigt, wie Sie die Arbeitszeit eines Benutzers mithilfe der Message [QueryScheduleRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.queryschedulerequest?view=dynamics-general-ce-9) abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryWorkingHours
+Dieses Beispiel zeigt, wie Sie die Arbeitszeit eines Benutzers mithilfe der Message [QueryScheduleRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.queryschedulerequest?view=dynamics-general-ce-9) abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryWorkingHours
 ) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt

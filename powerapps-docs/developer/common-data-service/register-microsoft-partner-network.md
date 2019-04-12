@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 2: Registrieren für Microsoft-Partners-Netzwerk-Account (Common Data Service for Apps) | Microsoft Docs'
+title: 'Schritt 2: Registrieren für Microsoft-Partners-Netzwerk-Account (Common Data Service) | Microsoft Docs'
 description: 'Mitglieder müssen App-Generatoren des Microsoft Partner Network (MPN), werden, um auf AppSource Apps zu veröffentlichen.'
 ms.custom: ''
 ms.date: 10/31/2018

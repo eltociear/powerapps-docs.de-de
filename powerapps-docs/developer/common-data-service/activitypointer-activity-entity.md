@@ -1,5 +1,5 @@
 ---
-title: ActivityPointer (Aktivität)-Entität (Common Data Service for Apps) | Microsoft Docs
+title: ActivityPointer (Aktivität)-Entität (Common Data Service) | Microsoft Docs
 description: 'Die Aktivitätszeiger (Aktivität)-Entität stellt eine Aktivität oder Aufgabe dar, die von einem Benutzer ausgeführt wird, oder ausgeführt werden soll. Eine Aktivität ist eine beliebige Aktion, für die ein Eintrag in einem Kalender vorgenommen werden kann.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 Die Aktivitätszeiger (Aktivität)-Entität stellt eine Aktivität oder Aufgabe dar, die von einem Benutzer ausgeführt wird, oder ausgeführt werden soll. Eine Aktivität ist eine beliebige Aktion, für die ein Eintrag in einem Kalender vorgenommen werden kann.  
   
- Wenn Sie einen Aktivitätsdatensatz in Common Data Service for Apps erstellen, wird ein entsprechender Aktivitätszeigerdatensatz erstellt. Dies bedeutet, dass der Aktivitätsdatensatz und der entsprechende Aktivitätszeigerdatensatz denselben Wert für das `ActivityId`-Attribut haben. Wenn Sie z. B. einen `Email`-Datensatz erstellen, sind die Attributwerte von `Email.ActivityId` und des entsprechenden `ActivityPointer.ActivityId` identisch.  
+ Wenn Sie einen Aktivitätsdatensatz in Common Data Service erstellen, wird ein entsprechender Aktivitätszeigerdatensatz erstellt. Dies bedeutet, dass der Aktivitätsdatensatz und der entsprechende Aktivitätszeigerdatensatz denselben Wert für das `ActivityId`-Attribut haben. Wenn Sie z. B. einen `Email`-Datensatz erstellen, sind die Attributwerte von `Email.ActivityId` und des entsprechenden `ActivityPointer.ActivityId` identisch.  
   
  Das `ActivityPointer.ActivityTypeCode`-Attribut definiert den Typ der Aktivität. Die möglichen Werte für dieses Attribut sind im globalen Optionssatz `activitypointer_activitytypecode` definiert.  
   

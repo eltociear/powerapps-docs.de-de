@@ -2,7 +2,7 @@
 title: 'Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mithilfe von Code | Microsoft Docs'
 description: 'Erfahren Sie, wie Sie modellgesteuerte Apps mit Code in PowerApps erstellen, verwalten und veröffentlichen.'
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/04/2019
 ms.service:
   - powerapps
 ms.custom:
@@ -39,11 +39,7 @@ Das Erstellen einer modellgesteuerten App umfasst die folgenden Schritte:
 
 ## <a name="create-your-model-driven-app-and-define-its-properties"></a>Erstellen Sie die modellgesteuerte App und definieren Sie deren Eigenschaften
 
-Sie müssen über die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ bzw. entsprechende Berechtigungen verfügen, um eine App zu erstellen. Sie können einen der folgenden Typen auswählen für die App, um dem Client anzugeben, dass die App verwendet wird für: 
-- **Internet**: Dies ist der klassische Dynamics 365-Webbrowser-Client.
-- **Einheitliche Oberfläche**: Wird auf der neuen einheitlichen Oberfläche ausgeführt, die in Sachen Barrierefreiheit und dynamisches Design große Vorteile hat. Weitere Informationen zur einheitlichen Oberfläche finden Sie unter [Einheitliche Oberfläche als Framework für neue Apps](/dynamics365/get-started/whats-new/customer-engagement/new-in-version-9#unified-interface-framework-for-new-apps). 
-
-Sie wählen den App-Typ aus, indem Sie jeweils einen ganzzahligen Wert für das **clienttype**-Attribut angeben: 2 für **Internet** 4 für **Einheitliche Schnittstelle**. Wenn Sie nicht den Typ für eine App angeben, wird die Verwendungsart standardmäßig auf **Internet** festgelegt. 
+Sie müssen über die Sicherheitsrolle „Systemadministrator“ oder „Systemanpasser“ bzw. entsprechende Berechtigungen verfügen, um eine App zu erstellen. 
 
 Sie müssen mindestens die folgenden Eigenschaften angeben, um eine App zu erstellen:
 - **Name**: Eindeutig für die App
@@ -62,8 +58,7 @@ Accept: application/json
 {
     "name": "SDKTestApp",
     "uniquename":"SDKTestApp",
-    "webresourceid":"953b9fac-1e5e-e611-80d6-00155ded156f",
-    "clienttype": 4
+    "webresourceid":"953b9fac-1e5e-e611-80d6-00155ded156f"    
 }
 ```
 
@@ -81,7 +76,7 @@ Sie können Komponenten in einer App hinzufügen oder entfernen, wie Siteübersi
 
 Verwenden Sie die <xref:Microsoft.Dynamics.CRM.AddAppComponents>-Aktion oder die <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest>-Meldung, um Komponenten der modellgesteuerten App hinzuzufügen. Für die Aktion müssen Sie Folgendes angeben:
 - **AppId**: ID der App, der Sie Komponenten hinzufügen möchten
-- **Komponenten** Eine Sammlung von Komponenten, die hinzugefügt werden sollen. Sie müssen die ID sowie den Entitätstyp der Komponente angeben, die Sie hinzufügen möchten. Eine Liste der Entitäten in der CDS for Apps-Web API finden Sie unter <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
+- **Komponenten** Eine Sammlung von Komponenten, die hinzugefügt werden sollen. Sie müssen die ID sowie den Entitätstyp der Komponente angeben, die Sie hinzufügen möchten. Eine Liste der Entitäten in der Common Data Service-Internet API finden Sie unter <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
 
 Die folgende Internet-API-Anforderung fügt der App eine Ansicht (savedquery) und ein Formular (systemform) hinzu:
 
@@ -212,7 +207,7 @@ Accept: application/json
 
 ## <a name="manage-access-to-model-driven-app-using-security-roles"></a>Verwalten des Zugriffs auf modellgetriebene Anwendungen mithilfe von Sicherheitsrollen
 
-Um Benutzern Zugriff auf Ihre Apps bereitzustellen, damit diese darauf aus ihrem Bereich **Einstellungen** > **Meine Apps** oder der Dynamics 365-Startseite zugreifen können, können Sie den modellgesteuerten Apps Sicherheitsrollen hinzufügen. Benutzer, die den zugeordneten Sicherheitsrollen zugewiesen sind, können Ihre modellgesteuerten Apps in CDS for Apps anzeigen und verwenden. 
+Um Benutzern Zugriff auf Ihre Apps bereitzustellen, damit diese darauf aus ihrem Bereich **Einstellungen** > **Meine Apps** oder der Dynamics 365-Startseite zugreifen können, können Sie den modellgesteuerten Apps Sicherheitsrollen hinzufügen. Benutzer, die den zugeordneten Sicherheitsrollen zugewiesen sind, können Ihre modellgesteuerten Apps in Common Data Service anzeigen und verwenden. 
 
 Verwenden Sie die **appmoduleroles_association**-Navigationseigenschaft der [AppModule-Entität](../common-data-service/reference/entities/appmodule.md)-Entität, um eine modellgesteuerte App zu einer Sicherheitsrolle zuzuordnen. Die folgende Anforderung veranschaulicht, wie Sie eine modellgesteuerte App einer Sicherheitsrolle zuordnen:
 

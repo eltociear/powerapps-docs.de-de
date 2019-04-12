@@ -1,5 +1,5 @@
 ---
-title: Bild-Attribute (Common Data Service für Apps) | MicrosoftDocs
+title: Bildattribute (Common Data Service) | MicrosoftDocs
 description: 'Infos zu Bildattributen, die Bilddaten in der Anwendung umfassen, sowie zum Unterstützen von Attributen, das Abrufen von Bilddaten und Hochladen von Bilddaten.'
 ms.custom: ''
 ms.date: 11/26/2018
@@ -19,7 +19,7 @@ search.app:
 
 Entitätsdatensätze, die Bilddaten enthalten, bieten eine einzigartige Umgebung in der Anwendung. Als Entwickler müssen wissen, wie Sie mit Bilddaten arbeiten.  
   
- Nur bestimmte Systementitäten und benutzerdefinierte Entitäten unterstützen Bilder. Informationen dazu, welche Systementitäten Bilder unterstützen, finden Sie unter [Entitätsbilder](/dynamics365/customer-engagement/developer/introduction-entities.md#entity-images).  
+ Nur bestimmte Systementitäten und benutzerdefinierte Entitäten unterstützen Bilder. Informationen dazu, welche Systementitäten Bilder unterstützen, finden Sie unter [Entitätsbilder](/dynamics365/customer-engagement/developer/introduction-entities#entity-images).  
   
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>Unterstützen von Attributen  
@@ -85,9 +85,9 @@ Entitätsdatensätze, die Bilddaten enthalten, bieten eine einzigartige Umgebung
 |![Bild vor Größenanpassung](media/crm-itpro-cust-imagebeforeresize.png "Bild vor Größenanpassung")<br /><br /> 300x428|![Bild nach Größenanpassung](media/crm-itpro-cust-imageafterresize.jpg "Bild nach Größenanpassung")<br /><br /> 144x144|  
 |![Zweites Bild-Größenanpassungsbeispiel](media/crm-itpro-cust-imagebeforeresizeexample2.png "Zweites Bild-Größenanpassungsbeispiel")<br /><br /> 91x130|![Zweites Bild-Größenanpassungsbeispiel](media/crm-itpro-cust-imageafterresizeexample2.jpg "Zweites Bild-Größenanpassungsbeispiel")<br /><br /> 91x91|  
   
- Mehr Informationen [Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images.md)  
+ Mehr Informationen [Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)  
   
 ### <a name="see-also"></a>Siehe auch  
  [Einführung in Entitäten in Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entities)   
  [Einführung in die Entitätsattribute in Dynamics 365](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
- [Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images.md)
+ [Beispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)

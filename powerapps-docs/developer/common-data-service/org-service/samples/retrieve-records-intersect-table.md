@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle (Common Data Service) | Microsoft Docs'
 description: Dieses Beispiel veranschaulicht das Abrufen eines Datensatzes aus einer Überschneidungstabelle.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,8 @@ search.app:
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>Beispiel: Abrufen von Datensätzen aus einer Überschneidungstabelle
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-records-intersect-table --> Dieses Beispiel veranschaulicht das Abrufen von Datensätzen aus einer Überschneidungstabelle. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveRecordsFromIntersectTable) herunterladen.
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-records-intersect-table -->
+ Dieses Beispiel veranschaulicht das Abrufen von Datensätzen aus einer Überschneidungstabelle. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveRecordsFromIntersectTable) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

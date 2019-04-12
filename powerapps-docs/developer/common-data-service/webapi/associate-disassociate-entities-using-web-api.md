@@ -1,10 +1,10 @@
 ---
-title: Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web API (Common Data Service für Apps) | Microsoft Docs
+title: Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web-API (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie eine Referenz auf eine sammlungwertige Navigationseigenschaft hinzuzufügen, eine Referenz zu entfernen und eine vorhandene Referenz mithilfe der Web-API zu ändern.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

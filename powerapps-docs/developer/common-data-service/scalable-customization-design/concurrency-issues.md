@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Concurrency-Probleme (Common Data Service for Apps) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Concurrency-Probleme (Common Data Service) | Microsoft Docs'
 description: 'Das dritte in einer Reihe von Themen. '
 ms.custom: ''
 ms.date: 1/15/2019
@@ -19,7 +19,7 @@ search.app:
 # <a name="scalable-customization-design-concurrency-issues"></a>Skalierbares Anpassungsdesign: Concurrency-Probleme
 
 > [!NOTE]
-> Dies ist das dritte in einer Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service für Apps](overview.md).
+> Dies ist das dritte in einer Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service](overview.md).
 > Das vorherige Thema [Skalierbares Anpassungsdesign: Datenbanktransaktionen](database-transactions.md) beschrieben, wie Datenbanktransaktionen angewendet werden und welche Auswirkungen sie auf verschiedene Arten von Anpassungen haben.
 
 Wenn Sie gleichzeitige Anfragen haben, wird die Wahrscheinlichkeit von Kollisionen an Sperren höher. Je länger die Transaktionen dauern, desto länger werden die Sperren gehalten. Die Wahrscheinlichkeit einer Kollision ist noch größer und die Gesamtwirkung für den Endbenutzer ist größer. 
@@ -32,15 +32,15 @@ Einige Schlüsselbereiche, für die man das Design in Betracht ziehen und prüfe
 
 - **Benutzergesteuerte Aktivität**: Direkt über die Benutzeroberfläche.
 - **Async-Aktionen**: Aktivität, die später durch andere Aktionen auftritt. Wann diese Aktivität verarbeitet wird, ist zum Zeitpunkt der Auslösung der auslösenden Aktion nicht bekannt.
-- **Batch-Aktivitäten**: Entweder aus dem Common Data Service for Apps (CDS for Apps) (z. B. Massenlöschaufträge oder serverseitige Synchronisationsverarbeitung) oder aus externen Quellen (z. B. Integration aus einem anderen System).
+- **Batch-Aktivitäten**: Entweder aus dem Common Data Service (z. B. Massenlöschaufträge oder serverseitige Synchronisationsverarbeitung) oder aus externen Quellen (z. B. Integration aus einem anderen System).
 
 ## <a name="async-operations-in-parallel"></a>Parallele asynchrone Operationen
 
-Ein häufiger Irrtum ist, dass asynchrone Workflows oder Plug-Ins seriell aus einer Warteschlange verarbeitet werden und es keinen Konflikt zwischen ihnen geben würde. Dies ist nicht korrekt, da CDS for Apps mehrere asynchrone Aktivitäten parallel sowohl innerhalb jeder asynchronen Service-Instanz als auch zwischen asynchronen Service-Instanzen, die über verschiedene Server verteilt sind, verarbeitet, um den Durchsatz zu erhöhen. Jeder Async-Dienst ruft tatsächlich Aufträge ab, die in Stapeln von ca. 20 Stück pro Dienst ausgeführt werden sollen, basierend auf Konfiguration und Last.
+Ein häufiger Irrtum ist, dass asynchrone Workflows oder Plug-Ins seriell aus einer Warteschlange verarbeitet werden und es keinen Konflikt zwischen ihnen geben würde. Dies ist nicht korrekt, da Common Data Service mehrere asynchrone Aktivitäten parallel sowohl innerhalb jeder asynchronen Service-Instanz als auch zwischen asynchronen Service-Instanzen, die über verschiedene Server verteilt sind, verarbeitet, um den Durchsatz zu erhöhen. Jeder Async-Dienst ruft tatsächlich Aufträge ab, die in Stapeln von ca. 20 Stück pro Dienst ausgeführt werden sollen, basierend auf Konfiguration und Last.
 
 Wenn Sie mehrere asynchrone Aktivitäten aus demselben Ereignis auf demselben Datensatz initiieren, werden diese wahrscheinlich parallel verarbeitet. Da sie den gleichen Datensatz nutzen, ist ein gemeinsames Muster die Aktualisierung auf den gleichen übergeordneten Datensatz; daher ist die Konfliktgelegenheit hoch. 
 
-Wenn ein auslösendes Ereignis eintritt, wie z. B. die Erstellung eines Kontos, kann die asynchrone Logik in CDS for Apps Einträge in der [AsyncOperation (System Job) Entity](../reference/entities/asyncoperation.md) für jeden Prozess oder jede Aktion erstellen, die durchgeführt werden soll. Der Async Service überwacht diese Tabelle, nimmt wartende Anforderungen in Chargen auf und verarbeitet sie dann. Da die Workflows gleichzeitig ausgelöst werden, ist es sehr wahrscheinlich, dass sie in derselben Charge aufgenommen und gleichzeitig verarbeitet werden. 
+Wenn ein auslösendes Ereignis eintritt, wie z. B. die Erstellung eines Kontos, kann die asynchrone Logik in Common Data Service Einträge in der [AsyncOperation (System Job) Entity](../reference/entities/asyncoperation.md) für jeden Prozess oder jede Aktion erstellen, die durchgeführt werden soll. Der Async Service überwacht diese Tabelle, nimmt wartende Anforderungen in Chargen auf und verarbeitet sie dann. Da die Workflows gleichzeitig ausgelöst werden, ist es sehr wahrscheinlich, dass sie in derselben Charge aufgenommen und gleichzeitig verarbeitet werden. 
 
 ## <a name="why-its-important-to-understand-transactions"></a>Warum es wichtig ist, Transaktionen zu verstehen
 

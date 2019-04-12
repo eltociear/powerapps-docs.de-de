@@ -1,5 +1,5 @@
 ---
-title: Abhängigkeitsnachverfolgung für Lösungskomponenten (Common Data Service for Apps) | Microsoft Docs
+title: Abhängigkeitsnachverfolgung für Lösungskomponenten (Common Data Service) | Microsoft Docs
 description: 'Mithilfe der Komponentenabhängigkeiten kann sichergestellt werden, dass Sie beim Verwenden von Lösungen über eine zuverlässige Umgebung verfügen. Diese können in der Anwendung angezeigt werden, indem Sie auf "Abhängigkeiten anzeigen" klicken'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Abhängigkeitsnachverfolgung für Lösungskomponenten
 
-Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen** in Common Data Service for Apps verwenden, um Lösungskomponenten zu erstellen oder hinzuzufügen. Sie können diese Aktionen programmgesteuert ausführen, indem Sie die Meldung <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> verwenden, oder eine beliebige Meldung, die Lösungskomponenten erstellt oder aktualisiert, die einen `SolutionUniqueName`-Parameter enthalten.  
+Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen** in Common Data Service verwenden, um Lösungskomponenten zu erstellen oder hinzuzufügen. Sie können diese Aktionen programmgesteuert ausführen, indem Sie die Meldung <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> verwenden, oder eine beliebige Meldung, die Lösungskomponenten erstellt oder aktualisiert, die einen `SolutionUniqueName`-Parameter enthalten.  
   
  Lösungskomponenten sind oft von anderen Lösungskomponenten abhängig. Sie können keine Lösungskomponente löschen, von der andere Lösungskomponenten abhängig sind. Beispielsweise benötigt ein benutzerdefiniertes Menüband normalerweise Bild- oder Skript-Webressourcen, um Symbole anzuzeigen und Aktionen mithilfe von Skripts auszuführen. Solange das benutzerdefinierte Menüband Bestandteil der Lösung ist, werden verwendeten die Webressourcen benötigt. Bevor Sie die Webressourcen löschen können, müssen Sie diese Referenzen im benutzerdefinierten Menüband entfernen. Diese Abhängigkeiten der Lösungskomponenten können in der Anwendung angezeigt werden, indem Sie auf **Abhängigkeiten anzeigen** klicken.  
   
@@ -50,7 +50,7 @@ Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen*
   Es gibt drei Arten von Lösungskomponentenabhängigkeiten:  
   
   **Lösungsintern**  
-  Interne Abhängigkeiten werden von CDS for Apps verwaltet. Diese sind dann vorhanden, wenn eine bestimmte Lösungskomponente nicht ohne eine andere Lösungskomponente verwendet werden kann.  
+  Interne Abhängigkeiten werden von Common Data Service verwaltet. Diese sind dann vorhanden, wenn eine bestimmte Lösungskomponente nicht ohne eine andere Lösungskomponente verwendet werden kann.  
   
   **Veröffentlicht**  
   Veröffentlichte Abhängigkeiten werden erstellt, wenn zwei Lösungskomponenten miteinander verknüpft sind und dann veröffentlicht werden. Um diese Art von Abhängigkeit zu entfernen, müssen Sie die Zuordnung entfernen und anschließend die Entitäten erneut veröffentlichen.  
@@ -120,7 +120,7 @@ Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen*
 <a name="BKMK_Entity"></a>   
 
 ### <a name="entity-entity"></a>Entität (Entity)  
- Die primäre Struktur, die verwendet wird, um Daten in CDS for Apps zu modellieren und zu verwalten. Diagramme, Formulare, Entitätsbeziehungen, Ansichten und Attribute, die einer Entität zugeordnet sind, werden automatisch gelöscht, wenn die Entität aufgrund der internen Abhängigkeiten zwischen ihnen gelöscht wird. Entitäten weisen oft veröffentlichte Abhängigkeiten von Prozessen, Dashboards und E-Mail-Vorlagen auf.  
+ Die primäre Struktur, die verwendet wird, um Daten in Common Data Service zu modellieren und zu verwalten. Diagramme, Formulare, Entitätsbeziehungen, Ansichten und Attribute, die einer Entität zugeordnet sind, werden automatisch gelöscht, wenn die Entität aufgrund der internen Abhängigkeiten zwischen ihnen gelöscht wird. Entitäten weisen oft veröffentlichte Abhängigkeiten von Prozessen, Dashboards und E-Mail-Vorlagen auf.  
   
 <a name="BKMK_FieldSecurityProfile"></a>   
 ### <a name="field-security-profile-fieldsecurityprofile"></a>Feldsicherheitsprofil (FieldSecurityProfile)  
@@ -152,7 +152,7 @@ Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen*
   
 <a name="BKMK_Role"></a>   
 ### <a name="security-role-role"></a>Sicherheitsrolle (Role)  
- Gruppieren von Sicherheitsrechten. Benutzern werden Rollen zugewiesen, die ihren Zugriff auf das CDS for Apps-System autorisieren. Entitätsformulare können bestimmten Sicherheitsrollen zugeordnet werden, um zu steuern, wer das Formular anzeigen kann. Dadurch wird eine veröffentlichte Abhängigkeit zwischen der Sicherheitsrolle und dem Formular erstellt.  
+ Gruppieren von Sicherheitsrechten. Benutzern werden Rollen zugewiesen, die ihren Zugriff auf das Common Data Service-System autorisieren. Entitätsformulare können bestimmten Sicherheitsrollen zugeordnet werden, um zu steuern, wer das Formular anzeigen kann. Dadurch wird eine veröffentlichte Abhängigkeit zwischen der Sicherheitsrolle und dem Formular erstellt.  
   
 > [!NOTE]
 >  Nur Sicherheitsrollen aus der Unternehmenseinheit der Organisation können einer Lösung hinzugefügt werden. Nur Benutzer mit Lesezugriff auf diese Sicherheitsrollen können sie einer Lösung hinzufügen.  

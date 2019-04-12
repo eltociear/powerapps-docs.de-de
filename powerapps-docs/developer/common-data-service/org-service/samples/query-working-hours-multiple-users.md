@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abfragen der Arbeitszeit von mehreren Benutzern (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abfragen der Arbeitszeit von mehreren Benutzern (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie die Arbeitszeit von mehrere Benutzern abgefragt wird'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>Beispiel: Abfragen der Arbeitszeit von mehreren Benutzern
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-working-hours-multiple-users -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-working-hours-multiple-users -->
 
-Dieses Beispiel zeigt, wie Sie die Arbeitszeit von mehreren Benutzern mithilfe der Message [QueryMultipleSchedulesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9) abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23) herunterladen.
+Dieses Beispiel zeigt, wie Sie die Arbeitszeit von mehreren Benutzern mithilfe der Message [QueryMultipleSchedulesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9) abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23) herunterladen.
 
 Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System vorhanden sind. Erstellen Sie den erforderlichen Benutzer manuell **wie dargestellt** unten in **Office 365**, bevor Sie sich das Beispiel ausführen. Ersetzen Sie `yourorg` durch den `OrgName` Ihrer Organisation.
 

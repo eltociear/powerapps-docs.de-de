@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten einer Quelldatei für den Import (Common Data Service for Apps) | Microsoft Docs
+title: Vorbereiten einer Quelldatei für den Import (Common Data Service) | Microsoft Docs
 description: 'Datenimport unterstützt Quellendateien, die als durch Trennzeichen getrennten Datei (CSV-Datei), Textdateien oder 2003 (XML-Dateien) Textdateien formatiert sind.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="prepare-source-files-for-import"></a>Vorbereiten einer Quelldatei für den Import
 
-Bevor Sie Daten in Common Data Service (CDS) for Apps importieren können, müssen Sie die Quelldatendateien erstellen.  
+Bevor Sie Daten in Common Data Service importieren können, müssen Sie die Quelldatendateien erstellen.  
   
-Die Datenquellendateien, die Sie in einem Import verwenden, müssen als durch Trennzeichen getrennten Datei (CSV-Datei), Textdateien oder 2003 (XML-Dateien) Textdateien formatiert werden. Die Verwendung von Quelldateien ermöglicht die Übertragung von Daten zwischen Datenbanksystemen, die unterschiedliche Formate verwenden in CDS for APPs.  
+Die Datenquellendateien, die Sie in einem Import verwenden, müssen als durch Trennzeichen getrennten Datei (CSV-Datei), Textdateien oder 2003 (XML-Dateien) Textdateien formatiert werden. Die Verwendung von Quelldateien ermöglicht es, Daten zwischen Datenbanksystemen, die unterschiedliche Formate verwenden, in Common Data Service zu übertragen.  
   
 Eine Quelldatei enthält unter Umständen Daten für einen Entitätstyp oder mehrere Entitätstypen wie Firmen und Kontakte. Für mehrere Quelldateien, die Daten mehrerer Entitätsdaten enthalten, müssen Sie eine Zuordnung verfügbar machen, die das Tag `<EntitiesPerFile>` enthält. Legen Sie den Wert dieses Tags auf "Mehrere", um anzuzeigen, dass es in der Quelldatei mehr als einen Entitätstyp gibt. Fügen Sie das `Dedupe = “Eliminate”` Attribut `<EntityMap>` dem Tag hinzu. Dies gewährleistet, dass für den Fall, dass die Datei für den den Entitätstyp doppelte Zeilen enthält, nur eine einzelne Linie verwendet wir, um Suchfehler zu minimieren.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Speichern von Entitätsmetadaten in einer Datei (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Speichern von Entitätsmetadaten in einer Datei (Common Data Service) | Microsoft Docs'
 description: 'BeispieldatenDieses Beispiel zeigt, wie alle Entitätsmetadaten in einer XML-Datei ausgeschrieben werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-dump-entity-metadata-to-a-file"></a>Beispiel: Speichern von Entitätsmetadaten in einer Datei
 
-Dieses Beispiel zeigt, wie alle Entitätsmetadaten in eine `XML` ausgeschrieben werden. Es wird die [RetrieveAllEntitiesRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.messages.retrieveallentitiesrequest?view=dynamics-general-ce-9)-Nachricht verwendet.
+Dieses Beispiel zeigt, wie alle Entitätsmetadaten in eine `XML` ausgeschrieben werden. Es wird die [RetrieveAllEntitiesRequest](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.messages.retrieveallentitiesrequest?view=dynamics-general-ce-9)-Nachricht verwendet.
 
 Das folgende Bespiel erstellt eine neue Datei unter `\Entities\bin\Debug\EntityInfo.xml`. Diese Datei können Sie in Office Excel öffnen, um einen tabellarischen Bericht anzuzeigen. Möglicherweise benötigen Sie diese Informationen, um den Entitätstypcode für eine benutzerdefinierte Entität zur Verwendung in Berichten zu ermitteln. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/DumpEntityMetadata) herunterladen.
 

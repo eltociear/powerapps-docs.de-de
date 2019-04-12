@@ -1,5 +1,5 @@
 ---
-title: Abonnieren Sie SDK-Assembly-Updates mithilfe von NuGet (Common Data Service for Apps) | Microsoft Docs
+title: Abonnieren Sie SDK-Assembly-Updates mithilfe von NuGet (Common Data Service) | Microsoft Docs
 description: '.NET-SDK-Assemblys und einige Befehlszeilentools sind durch eine Softwareverteilungswebsite verfügbar nuget.org. Verwendung von NuGet Paketen in Ihrem Anwendungsprojekt ermöglicht Ihnen, das aktuelle Projekt beizubehalten mit den neuesten Versionen der SDK-Assemblys und Tools.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Abonnieren von SDK-Assemblyaktualisierungen mithilfe von NuGet
 
-.NET-SDK-Assemblys und einige Befehlszeilentools sind durch eine Softwareverteilungswebsite verfügbar [nuget.org.](http://www.nuget.org). Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht Ihnen, das aktuelle Projekt beizubehalten mit den neuesten Versionen der SDK-Assemblys und Tools. Visual Studio hat diese Funktion seit Version 2010 unterstützt und es gibt sogar einen eigenständigen NuGet-Client für diese Entwickler, die nicht in Visual Studio entwickeln. Ein weiterer Vorteil der Verwendung der NuGet-Pakete in Ihren Projekten besteht darin, dass Assembly-Verweise und Abhängigkeiten für Sie automatisch versorgt werden. NuGet-Pakete sind für allgemeine Common Data Service for Apps und für und sich von ältere Versionen von Dynamics 365 Customer Engagement verfügbar.  
+.NET-SDK-Assemblys und einige Befehlszeilentools sind durch eine Softwareverteilungswebsite verfügbar [nuget.org.](http://www.nuget.org). Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht Ihnen, das aktuelle Projekt beizubehalten mit den neuesten Versionen der SDK-Assemblys und Tools. Visual Studio hat diese Funktion seit Version 2010 unterstützt und es gibt sogar einen eigenständigen NuGet-Client für diese Entwickler, die nicht in Visual Studio entwickeln. Ein weiterer Vorteil der Verwendung der NuGet-Pakete in Ihren Projekten besteht darin, dass Assembly-Verweise und Abhängigkeiten für Sie automatisch versorgt werden. NuGet-Pakete sind für allgemeine Common Data Service und für ältere Versionen von Dynamics 365 Customer Engagement verfügbar.  
   
 <a name="BKMK_GetNuGetPackages"></a>
 
 ## <a name="where-to-find-the-nuget-sdk-packages"></a>Bezugsquellen für NuGet SDK-Pakete
 
-Die NuGet-SDK-Pakete befinden sich unter dem [crmsdk](https://www.nuget.org/profiles/crmsdk)-Profil. Dies sind die offiziellen CDS for Apps-Pakete. Wählen Sie ein Paket in der Liste aus, um die Paketdetailseite aufzurufen. Die folgenden sind die aktuellen NuGet-Pakete, die relevant sind für CDS for Apps.  
+Die NuGet-SDK-Pakete befinden sich unter dem [crmsdk](https://www.nuget.org/profiles/crmsdk)-Profil. Dies sind die offiziellen Common Data Service-Pakete. Wählen Sie ein Paket in der Liste aus, um die Paketdetailseite aufzurufen. Es folgen die aktuellen NuGet-Pakete, die für Common Data Service relevant sind.  
 
 
 |Paket|Beschreibung|

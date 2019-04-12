@@ -1,5 +1,5 @@
 ---
-title: Aktivitätentitäten (Common Data Service for Apps) | Microsoft Docs
+title: Aktivitäten-Entitäten (Common Data Service) | Microsoft Docs
 description: 'In Dynamics 365 (online) sind Aktivitäten die Aufgaben, die Sie oder Ihre Teams ausführen, wenn sie mit Kunden in Kontakt treten, z. B. über Briefe oder Telefonanrufe.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="activity-entities"></a>Aktivitätsentitäten
 
-In Common Data Service for Apps sind Aktivitäten Aufgaben, die Sie oder Ihre Teams ausführen, wenn sie mit Kunden in Kontakt treten, z. B. über Briefe oder Telefonanrufe. Sie können Aktivitäten für sich selbst erstellen, können sie aber auch einer anderen Person zuweisen oder sie für andere Benutzer oder Teams freigeben. Eine Aktivität ist eine Aktion, die in einen Kalender eingetragen werden kann und Zeitdimensionen hat (Startzeit, Endzeit, Fälligkeitsdatum und Dauer), um leichter zu ermitteln, wann die Aktion geschehen ist oder wird. Aktivitäten enthalten auch grundlegende Eigenschaften die bestimmen helfen, welche Aktion die Aktivität repräsentiert, etwa Betreff und Beschreibung. Ein Aktivitätsstatus kann geöffnet, storniert oder abgeschlossen werden. Der abgeschlossene Status einer Aktivität hat verschiedene verknüpfte Substatuswerte, die klären, in welcher Weise die Aktivität abgeschlossen wurde.  
+In Common Data Service sind Aktivitäten Aufgaben, die Sie oder Ihre Teams ausführen, wenn sie mit Kunden in Kontakt treten, z. B. über Briefe oder Telefonanrufe. Sie können Aktivitäten für sich selbst erstellen, können sie aber auch einer anderen Person zuweisen oder sie für andere Benutzer oder Teams freigeben. Eine Aktivität ist eine Aktion, die in einen Kalender eingetragen werden kann und Zeitdimensionen hat (Startzeit, Endzeit, Fälligkeitsdatum und Dauer), um leichter zu ermitteln, wann die Aktion geschehen ist oder wird. Aktivitäten enthalten auch grundlegende Eigenschaften die bestimmen helfen, welche Aktion die Aktivität repräsentiert, etwa Betreff und Beschreibung. Ein Aktivitätsstatus kann geöffnet, storniert oder abgeschlossen werden. Der abgeschlossene Status einer Aktivität hat verschiedene verknüpfte Substatuswerte, die klären, in welcher Weise die Aktivität abgeschlossen wurde.  
   
- Aktivitäten beziehen einen oder mehrere Teilnehmer, die in CDS for Apps als Aktivitätsparteien bezeichnet werden. Bei einer Besprechungsaktivität sind die Teilnehmer die Kontakte oder Benutzer, welche an der Besprechung teilnehmen. Bei einer Telefonanruf- oder Faxaktivität sind die Seiten der Anrufer und die Person, die angerufen wird. Das folgende Diagramm zeigt die Entitätsbeziehungen für Aktivitäten.  
+ Aktivitäten beziehen sich auf einen oder mehrere Teilnehmer, die in Common Data Service als Aktivitätsparteien bezeichnet werden. Bei einer Besprechungsaktivität sind die Teilnehmer die Kontakte oder Benutzer, welche an der Besprechung teilnehmen. Bei einer Telefonanruf- oder Faxaktivität sind die Seiten der Anrufer und die Person, die angerufen wird. Das folgende Diagramm zeigt die Entitätsbeziehungen für Aktivitäten.  
   
  ![Aktivitätsdiagramm](media/entity-model-activity.gif "Aktivitätsdiagramm")  
   
- Um den Kommunikationsbedarf moderner Unternehmen zu unterstützen, wie z. B. Instant Messaging und SMS, können Sie in CDS for Apps benutzerdefinierte Aktivitäten erstellen.  
+ Um den Kommunikationsbedarf moderner Unternehmen zu unterstützen, wie z. B. Instant Messaging und SMS, können Sie in Common Data Service benutzerdefinierte Aktivitäten erstellen.  
   
  **Weitere Aktivitätsentitäten**  
   

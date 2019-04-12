@@ -40,7 +40,7 @@ Das Abrufen aller Spalten kann zu Folgendem führen:
 
 ## <a name="guidance"></a>Anleitung
 
-Für eine optimale Leistung sollten Sie bei der Abfrage von Daten des Common Data Service for Apps nur die von Ihrer Anwendung benötigte Mindestmenge an Daten auswählen. 
+Für eine optimale Leistung sollten Sie bei der Abfrage von Daten des Common Data Service nur die von Ihrer Anwendung benötigte Mindestmenge an Daten auswählen. 
 
 ### <a name="columnset-parameter"></a>ColumnSet-Parameter
 

@@ -1,5 +1,5 @@
 ---
-title: Transaktionswährungs (Währungs)-Entität (Common Data Service für Apps) | Microsoft Docs
+title: Transaktionswährungs (Währungs)-Entität (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie mehr über die Transaktionswährung, die eine Mehrfachwährungsfunktion ist und es Benutzern ermöglicht, finanzielle Transaktionen in mehreren Währungen auszuführen. Mehrere Datensätze in verschiedenen Transaktionswährungen können in einer einheitlichen Währung aggregiert, verglichen oder analysiert werden, indem die Basiswährung verwendet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="transaction-currency-currency-entity"></a>Entität der Transaktionswährung (Währung)
 
-Common Data Service for Apps ist ein Mehrfachwährungssystem, in dem jeder Datensatz seiner eigenen Währung zugeordnet werden kann. Diese Währung wird als *Transaktionswährung* bezeichnet. Mit den Mehrfachwährungsfunktionen können Benutzer finanzielle Transaktionen wie Verkaufschancen, Angebote, Aufträge und Rechnungen in mehreren Währungen ausführen. Diese Funktion bietet außerdem eine Währungsauswahl für den Endbenutzer, wenn eine finanzielle Transaktion auftritt.  
+Common Data Service ist ein Mehrfachwährungssystem, in dem jeder Datensatz seiner eigenen Währung zugeordnet werden kann. Diese Währung wird als *Transaktionswährung* bezeichnet. Mit den Mehrfachwährungsfunktionen können Benutzer finanzielle Transaktionen wie Verkaufschancen, Angebote, Aufträge und Rechnungen in mehreren Währungen ausführen. Diese Funktion bietet außerdem eine Währungsauswahl für den Endbenutzer, wenn eine finanzielle Transaktion auftritt.  
   
  Mehrere Datensätze in verschiedenen Transaktionswährungen können hinsichtlich einer einheitlichen Währung aggregiert, verglichen oder analysiert werden, indem ein Wechselkurs verwendet wird. Dies wird als *Basiswährung* bezeichnet. Sie definieren zuerst eine Basiswährung für die Organisation und definieren dann die Wechselkurse, um die Basiswährung den Transaktionswährungen zuzuordnen. Die Basiswährung ist die Währung, in der andere Währungen angeboten werden. Der Umrechnungskurs ist der Wert einer Transaktionswährung gleich einer Basiswährung.  
   
@@ -43,7 +43,7 @@ Alle Entitäten, die an finanziellen Transaktionen beteiligt sind, unterstützen
   
 Sie können die Dezimalgenauigkeit für die Transaktionswährung bestimmen, indem Sie das `TransactionCurrency.CurrencyPrecision`-Attribut verwenden. Um die Quelle der Genauigkeit für die Attribute vom Typ Geld anzugeben, verwenden Sie <xref:Microsoft.Xrm.Sdk.Metadata.MoneyAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.MoneyAttributeMetadata.PrecisionSource>-. -Attribut zugeordnet ist.  
   
-Alle Geldeigenschaften in einem Datensatz teilen dieselbe Transaktionswährung, siehe zum Beispiel das `Account.CreditLimit`-Attribut. Für jedes money-Attribut in einer Entität erstellt Common Data Service for Apps automatisch ein entsprechendes, schreibgeschütztes money-Attribut, das vom System berechnet wurde und als "Basis" bezeichnet wird. Dies ist ein money-Attribut, das den Wert des entsprechenden Attributs in einer Basiswährungsentsprechung speichert, siehe zum Beispiel das `Account.CreditLimit_Base`-Attribut.  
+Alle Geldeigenschaften in einem Datensatz teilen dieselbe Transaktionswährung, siehe zum Beispiel das `Account.CreditLimit`-Attribut. Für jedes money-Attribut in einer Entität erstellt Common Data Service automatisch ein entsprechendes, schreibgeschütztes money-Attribut, das vom System berechnet wurde und als "Basis" bezeichnet wird. Dies ist ein money-Attribut, das den Wert des entsprechenden Attributs in einer Basiswährungsentsprechung speichert, siehe zum Beispiel das `Account.CreditLimit_Base`-Attribut.  
   
 Die folgende Formel wird verwendet, um den Basiswert zu berechnen:  
   

@@ -1,10 +1,10 @@
 ---
-title: 'Web API Funktionen und Operationen, Beispiel  (clientseitiges JavaScript) (Common Data Service for Apps) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service für Apps"-Web API und clientseitiges JavaScript ausgeführt werden.'
+title: Beispiel der Web-API-Funktionen und Aktionen (clientseitiges JavaScript) (Common Data Service) | Microsoft Docs
+description: 'Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service"-Web-API und clientseitiges JavaScript ausgeführt werden.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Beispiele von Web API-Funktionen und Aktionen (clientseitiges JavaScript)
 
-Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service für Apps"-Web API mithilfe des clientseitigen JavaScript ausgeführt werden.  
+Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service"-Web-API mit clientseitigem JavaScript ausgeführt werden.  
   
 > [!NOTE]
 >  Dieses Beispiel implementiert die Operationen, die unter [Beispiel für Web-API-Funktionen und -Aktionen](../web-api-functions-actions-sample.md) beschrieben sind, und nutzt bekannte clientseitige JavaScript-Konstrukte, die in[ Web-API-Beispiele  WEB API Beispiele (Clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md) beschrieben sind.  
@@ -39,14 +39,14 @@ Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Ak
 
  Dies ist erforderlich, um das Beispiel auszuführen:  
   
-- Zugriff auf CDS for Apps online oder lokale Version 8.0 oder höher.  
+- Zugriff auf Common Data Service online oder lokale Version 8.0 oder höher.  
 - Ein Benutzerkonto mit Rechten zum Import von Lösungen und zur Durchführung von CRUD-Vorgängen (normalerweise eine "Systemadministrator" oder "Systemanpasser" Sicherheitsrolle).  
   
 <a name="bkmk_runsample"></a>
  
 ## <a name="run-this-sample"></a>Beispiel ausführen
 
-Um dieses Beispiel auszuführen, wechseln Sie zu [Beispiel für Web-API-Funktionen und -Aktionen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824048) und laden die Beispieldatei "Microsoft CRM Web API Functions and Actions Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte, und suchen Sie die verwaltete Lösungsdatei "WebAPIFunctionsandActions_1_0_0_0_managed.zip". Importieren Sie die verwaltete Lösung in die CDS for Apps-Organisation, und zeigen Sie die Lösungskonfigurationsseite an, um das Beispiel auszuführen. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
+Um dieses Beispiel auszuführen, wechseln Sie zu [Beispiel für Web-API-Funktionen und -Aktionen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824048) und laden die Beispieldatei "Microsoft CRM Web API Functions and Actions Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte, und suchen Sie die verwaltete Lösungsdatei "WebAPIFunctionsandActions_1_0_0_0_managed.zip". Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und zeigen Sie die Konfigurationsseite der Lösung an, um das Beispiel auszuführen. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
   
 <a name="bkmk_codeSample"></a>
 
@@ -711,7 +711,7 @@ Sdk.createAccountWithOpportunityToWin = function () {
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](../overview.md)<br />
+[Common Data Service-Web-API verwenden](../overview.md)<br />
 [Nutzen von Web-API-Funktionen](../use-web-api-functions.md)<br />
 [Nutzen von Web-API-Aktionen](../use-web-api-actions.md)<br />
 [Web API Beispiele](../web-api-samples.md)<br />

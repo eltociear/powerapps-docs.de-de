@@ -1,5 +1,5 @@
 ---
-title: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung (Common Data Service für Apps) | Microsoft Docs
+title: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung (Common Data Service) | Microsoft Docs
 description: 'Mit der neuen Änderungsnachverfolgungsfunktion in Dynamics 365 Customer Engagement können die Daten performant synchronisiert werden, indem feststellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 
-Mit der neuen Änderungsnachverfolgungsfunktion in Common Data Service für Apps können die Daten performant synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. Zuvor war es ohne diese neue Funktion schwierig, einen effizienten und zuverlässigen Mechanismus zu entwickeln, um zu bestimmen, welche Datensätze in CDS für Apps geändert wurden. In diesem Thema wird erläutert, wie Änderungen für eine Entität abgerufen werden.  
+Mit der neuen Änderungsnachverfolgungsfunktion in Common Data Service können die Daten performant synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. Zuvor war es ohne diese neue Funktion schwierig, einen effizienten und zuverlässigen Mechanismus zu entwickeln, um zu bestimmen, welche Datensätze in Common Data Service geändert wurden. In diesem Thema wird erläutert, wie Änderungen für eine Entität abgerufen werden.  
   
 <a name="BKMK_enable"></a>   
 ## <a name="enable-change-tracking-for-an-entity"></a>Aktivieren der Änderungsnachverfolgung für eine Entität  
@@ -122,7 +122,7 @@ Systemabfrageoptionen `$filter`, `$orderby` und `$top` werden nicht unterstützt
   
 - Wenn ein Client einen Änderungssatz für eine Entität besitzt, z. B. Version 1, wird ein Datensatz erstellt und vor der nächsten Änderungsabfrage gelöscht, sie erhalten das gelöschte Element, selbst wenn sie nicht das Element für den Start hatten.  
   
-- Datensätze werden in der Reihenfolge abgerufen wie von der serverseitige Logik bestimmt. Normalerweise erhält der Endbenutzer zuerst alle neuen oder aktualisierten Datensätze (sortiert nach Versionsnummer), gefolgt von den gelöschten Datensätzen.  Wenn 3000 Datensätze erstellt oder aktualisiert werden und 2000 Datensätze gelöscht werden, gibt CDS für Apps eine Sammlung von 5000 Datensätzen zurück, in der die ersten 3000 Einträge die der neuen oder aktualisierten Datensätze sind und die letzten 2000 Einträge die der gelöschten Datensätze.  
+- Datensätze werden in der Reihenfolge abgerufen wie von der serverseitige Logik bestimmt. Normalerweise erhält der Endbenutzer zuerst alle neuen oder aktualisierten Datensätze (sortiert nach Versionsnummer), gefolgt von den gelöschten Datensätzen.  Wenn 3000 Datensätze erstellt oder aktualisiert werden und 2000 Datensätze werden gelöscht, gibt Common Data Service eine Sammlung von 5000 Datensätzen zurück, in der die ersten 3000 Einträge die der neuen oder aktualisierten Datensätze sind und die letzten 2000 Einträge die der gelöschten Datensätze.  
   
 - Wenn die neue oder aktualisierte Elementsammlung größer als 5000 ist, kann der Benutzer durch die Sammlung blättern.  
   

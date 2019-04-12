@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abruf von Vielfachen mit der QueryByAttribute-Klasse (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abruf von Vielfachen mit der QueryByAttribute-Klasse (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie die QueryByAttribute-Klasse verwendet wird'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 
 # <a name="sample-retrieve-multiple-with-the-querybyattribute-class"></a>Beispiel: Abruf von Vielfachen mit der QueryByAttribute-Klasse
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-querybyattribute-class -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-retrieve-multiple-querybyattribute-class -->
 
-In diesem Beispiel wird gezeigt, wie [QueryByAttribute](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.query.querybyattribute?view=dynamics-general-ce-9) in der Methode [RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) verwendet wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleQueryByAttribute) herunterladen.
+In diesem Beispiel wird gezeigt, wie [QueryByAttribute](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.query.querybyattribute?view=dynamics-general-ce-9) in der Methode [RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9) verwendet wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveMultipleQueryByAttribute) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

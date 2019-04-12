@@ -22,7 +22,7 @@ search.app:
 
 # <a name="customization-xml-reference"></a>Anpassungs-XML-Verweis
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customization-xml-reference -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customization-xml-reference -->
 
 Die customizations.xml -Datei ist eine der Dateien, die in einer exportierten nicht verwalteten Lösung enthalten sind. Die Datei enthält alle oder ausgewählte Bereiche und Konfigurationen für Ihr System. 
   
@@ -36,12 +36,14 @@ Die customizations.xml -Datei ist eine der Dateien, die in einer exportierten ni
 
  [Menüband-Core-Schema](ribbon-core-schema.md) [Menübandtypenschema](ribbon-types-schema.md)  
  [Menüband-WSS-Schema](ribbon-wss-schema.md)  
- [SiteMap-Schema](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link--> [Formular-XML-Schema](form-xml-schema.md)<br/> 
+ [SiteMap-Schema](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link--> 
+ [Formular-XML-Schema](form-xml-schema.md)<br/> 
  [FetchXML-Schema](../common-data-service/fetchxml-schema.md) 
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
- [In Dynamics 365 verwendete Schemas](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> [Wann die Anpassungsdatei zu bearbeiten ist](../common-data-service/when-edit-customization-file.md)  
+ [In Dynamics 365 verwendete Schemas](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> 
+ [Wann Anpassungsdatei zu bearbeiten ist](../common-data-service/when-edit-customization-file.md)  
 [Bearbeiten der Anpassungsdatei mit Schemaüberprüfung](edit-customizations-xml-file-schema-validation.md)  
  [Anpassen des Menübands für Dynamics 365](customize-commands-ribbon.md)  
- [Anwendungsnavigation mithilfe der SiteMap ändern](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 
+ [Anwendungsnavigation mithilfe von SiteMap ändern](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 

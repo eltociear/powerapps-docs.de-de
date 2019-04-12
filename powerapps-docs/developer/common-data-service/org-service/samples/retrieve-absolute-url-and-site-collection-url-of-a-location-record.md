@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abruf der absoluten URL und der Websitesammlungs-URL (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Abruf der absoluten URL und der Websitesammlungs-URL (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie die absolute URL und die Websitesammlungs-URL eines SharePoint-Ortes abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record"></a>Beispiel: Abruf der absoluten URL und der Websitesammlungs-URL eines Ortsdatensatzes
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/integration-dev/sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/integration-dev/sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record -->
 
-Dieses Beispiel zeigt, wie die absolute URL und die Websitesammlungs-URL eines SharePoint-Server-Ortdatensatzes mit der Message [RetrieveAbsoluteAndSiteCollectionUrlRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.retrieveabsoluteandsitecollectionurlrequest?view=dynamics-general-ce-9) abgerufen werden.
+Dieses Beispiel zeigt, wie die absolute URL und die Websitesammlungs-URL eines SharePoint-Server-Ortdatensatzes mit der Message [RetrieveAbsoluteAndSiteCollectionUrlRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.retrieveabsoluteandsitecollectionurlrequest?view=dynamics-general-ce-9) abgerufen werden.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

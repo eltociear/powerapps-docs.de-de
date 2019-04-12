@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abfragenverbindungsrollen mithilfe von Entitätstypcode (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Abfragenverbindungsrollen mithilfe von Entitätstypcode (Common Data Service) | MicrosoftDocs'
 description: 'In diesem Beispiel wird gezeigt, wie Sie einen Verbindungsrolle abfragen'
 ms.custom: ''
 ms.date: 10/31/2018

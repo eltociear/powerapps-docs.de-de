@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen und Entfernen von Beispieldaten (Common Data Service for Apps) | Microsoft Docs
+title: Hinzufügen und Entfernen von Beispieldaten (Common Data Service) | Microsoft Docs
 description: Installieren oder Deinstallieren von Beispieldaten mithilfe der Web-API oder des Organisationsservice
 ms.custom: ''
 ms.date: 10/31/2018

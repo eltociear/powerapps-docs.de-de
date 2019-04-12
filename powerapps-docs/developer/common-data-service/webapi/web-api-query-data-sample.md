@@ -1,10 +1,10 @@
 ---
-title: Beispiel für Web-API-Abfragedaten (Common Data Service für Apps) | Microsoft Docs
+title: Beispiel für Web-API-Abfragedaten (Common Data Service) | Microsoft Docs
 description: 'Diese Gruppe von Beispielen zeigt, wie Daten mit der Web-API abgefragt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-query-data-sample"></a>Web API-Abfragedatenbeispiel
 
-Diese Gruppe von Beispielen zeigt, wie Daten mit der "Common Data Service für Apps"-Web-API abgefragt werden. Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:
+Diese Gruppe von Beispielen zeigt, wie Daten mit der "Common Data Service"-Web-API abgefragt werden. Dieses Beispiel wurde als ein separates Projekt für die folgenden Sprachen implementiert:
 
 - [Web API-Abfragedatenbeispiele (clientseitiges JavaScript)](samples/query-data-client-side-javascript.md)
 
@@ -49,7 +49,7 @@ Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält We
 |[FetchXML queries](#bkmk_fetchxml)|[FetchXML schema](../org-service/fetchxml-schema.md)<br /><br /> [Page large result sets with FetchXML](../org-service/page-large-result-sets-with-fetchxml.md)<br /><br /> [Use custom FetchXML](retrieve-and-execute-predefined-queries.md#bkmk_useFetchXML)| -->
 |[Vordefinierte Abfragen](#bkmk_predefinedqueries)|[Vordefinierte Abfragen abrufen und ausführen](retrieve-and-execute-predefined-queries.md)<br /><br /> <xref href="Microsoft.Dynamics.CRM.userquery?text=userquery EntityType" /><br /><br /> <xref href="Microsoft.Dynamics.CRM.savedquery?text=savedquery EntityType" />|
 
-Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten CDS für Apps-Web-API-Vorgängen, sowie den entsprechenden HTTP-Nachrichten und den Ausgaben, die der Konsolen zugeordnet sind.
+Die folgenden Abschnitte enthalten eine kurze Diskussion zu den ausgeführten Common Data Service-Web-API-Vorgängen, sowie den entsprechenden HTTP-Messages und den Ausgaben, die der Konsolen zugeordnet sind.
 
 <a name="bkmk_sampleData"></a>
 
@@ -211,11 +211,11 @@ Contact basic info:
  
 Filteroptionen verwenden, um Kriterien für die gewünschten Ergebnisse festzulegen. Sie können sowohl einfache als auch komplexen Filter mithilfe einer Kombination aus Abfragenfunktionen, Vergleichsoperatoren und logischen Operatoren erstellen. Weitere Informationen: [Filterergebnisse](query-data-web-api.md#bkmk_filter).  
   
-Abfragefunktionen sind Funktionen, die als Filterkriterium in einer Abfrage verwendet werden. Es gibt Standardabfragenfunktionen und "CDS für Apps"-spezifische Abfragenfunktionen. Diese Funktionen nehmen Parameter an und geben einen `Boolean`-Wert zurück. Dieses Beispiel veranschaulicht, wie eine Abfrage für jeden Typ erstellt wird.  
+Abfragefunktionen sind Funktionen, die als Filterkriterium in einer Abfrage verwendet werden. Es gibt Standardabfragefunktionen und Common Data Service-spezifische Abfragefunktionen. Diese Funktionen nehmen Parameter an und geben einen `Boolean`-Wert zurück. Dieses Beispiel veranschaulicht, wie eine Abfrage für jeden Typ erstellt wird.  
   
 ### <a name="standard-query-functions"></a>Standardabfragenfunktionen
 
-"CDS für Apps" unterstützt eine kleine Teilmenge integrierter OData-Abfragenfunktionen, insbesondere: `contains`, `endswith` und `startswith`. Zum Beispiel erlaubt uns die `contains`-Standardabfragenfunktion nach Eigenschaften, die einer Zeichenfolge entsprechen, zu filtern. In diesem Vorgang fragen wir nach allen Kontakten mit `fullname` ab, die die Zeichenfolge `(sample)` enthalten. Weitere Informationen: [Standardabfragenfunktionen](query-data-web-api.md#bkmk_buildInQueryFunctions).  
+Common Data Service unterstützt kleine Teilmenge von OData-Abfragefunktionen, insbesondere: `contains`,`endswith` und `startswith`. Zum Beispiel erlaubt uns die `contains`-Standardabfragenfunktion nach Eigenschaften, die einer Zeichenfolge entsprechen, zu filtern. In diesem Vorgang fragen wir nach allen Kontakten mit `fullname` ab, die die Zeichenfolge `(sample)` enthalten. Weitere Informationen: [Standardabfragenfunktionen](query-data-web-api.md#bkmk_buildInQueryFunctions).  
   
  **HTTP-Anforderung**  
   
@@ -361,11 +361,11 @@ Contacts filtered by fullname containing '(sample)':
   
 ```  
   
-### <a name="common-data-service-for-apps-query-functions"></a>"Common Data Service für Apps"-Abfragefunktionen
+### <a name="common-data-service-query-functions"></a>Common Data Service-Abfragefunktionen
 
-"CDS für Apps"-Abfragenfunktionen bieten zahlreiche Optionen zum Erstellen von Abfragen, die für CDS für Apps relevant sind. Eine komplette Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Weitere Informationen: [Verfassen Sie eine Abfrage mit Funktionen](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
+Common Data Service-Abfragefunktionen bieten zahlreiche Optionen zum Erstellen von Abfragen, die für Common Data Service relevant sind. Eine komplette Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Weitere Informationen: [Verfassen Sie eine Abfrage mit Funktionen](use-web-api-functions.md#bkmk_composeQueryWithFunctions)  
   
-Sie werden diese Abfragenfunktionen in ähnlicher Weise wie die Standardabfragenfunktionen verwenden. Der Hauptunterschied ist, dass bei der Verwendung der "CDS für Apps"-Abfragenfunktionen der vollständige Name der Funktion sowie der/die Parametername(n) angeben werden müssen. Wenn Sie beispielsweise einer Liste von Kontakten erhalten wollen, die in der letzten Stunde erstellt wurden, können Sie eine Abfrage unter Verwendung der <xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" /> erstellen.  
+Sie werden diese Abfragenfunktionen in ähnlicher Weise wie die Standardabfragenfunktionen verwenden. Der Hauptunterschied ist, dass bei der Verwendung der Common Data Service-Abfragefunktionen der vollständige Name der Funktion sowie der/die Parametername/n angeben werden müssen. Wenn Sie beispielsweise einer Liste von Kontakten erhalten wollen, die in der letzten Stunde erstellt wurden, können Sie eine Abfrage unter Verwendung der <xref href="Microsoft.Dynamics.CRM.LastXHours?text=LastXHours Function" /> erstellen.  
   
  **HTTP-Anforderung**  
   
@@ -1091,7 +1091,7 @@ Contacts top 5 results:
 
 ### <a name="result-count"></a>Ergebniszähler
 
-Sie können lediglich die Anzahl der Datensätze aus einer als Sammlung bewerteten Eigenschaft oder eine Anzahl entsprechender Entitäten in einem Filter abrufen. Das Abrufen der Anzahl zeigt uns die Anzahl der möglichen Einträge in unserem Ergebnis. Der "CDS für Apps"-Server gibt jedoch nicht mehr als eine maximale Anzahl von 5000 zurück, auch wenn das Ergebnis möglicherweise höher ist. In diesem Beispiel erstellen wir einen Filter mit `jobtitle`, der entweder `Senior` oder `Manager` enthält und fordern ebenfalls eine `$count` des Ergebnisses an. Die Antwort enthält die Anzahl der `@odata.count`-Eigenschaft sowie die Ergebnisse der Abfrage. Weitere Informationen: [Abrufen einer Anzahl von Entitäten](query-data-web-api.md#bkmk_retrieveCount).  
+Sie können lediglich die Anzahl der Datensätze aus einer als Sammlung bewerteten Eigenschaft oder eine Anzahl entsprechender Entitäten in einem Filter abrufen. Das Abrufen der Anzahl zeigt uns die Anzahl der möglichen Einträge in unserem Ergebnis. Der Common Data Service-Server gibt jedoch nicht mehr als eine maximale Anzahl von 5000 zurück, auch wenn das Ergebnis möglicherweise höher ist. In diesem Beispiel erstellen wir einen Filter mit `jobtitle`, der entweder `Senior` oder `Manager` enthält und fordern ebenfalls eine `$count` des Ergebnisses an. Die Antwort enthält die Anzahl der `@odata.count`-Eigenschaft sowie die Ergebnisse der Abfrage. Weitere Informationen: [Abrufen einer Anzahl von Entitäten](query-data-web-api.md#bkmk_retrieveCount).  
   
  **HTTP-Anforderung**  
   
@@ -2233,7 +2233,7 @@ Saved User Query:
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
 [Datenabfrage mit Web-API](query-data-web-api.md)<br />
 [Abrufen und Ausführen von vordefinierten Abfragen](retrieve-and-execute-predefined-queries.md)<br />
 [Web API-Abfragedatenbeispiel (C#)](samples/query-data-csharp.md)<br />

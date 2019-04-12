@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Verwendung von Aggregation in FetchXML (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Verwendung von Aggregation in FetchXML (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie aggregierte Datensatzdaten mithilfe von FetchXMLs abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>Beispiel: Verwendung von Aggregation in FetchXML
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
 
 Dieses Beispiel zeigt, wie aggregierte Datensatzdaten mithilfe von FetchXMLs abgerufen werden.
 

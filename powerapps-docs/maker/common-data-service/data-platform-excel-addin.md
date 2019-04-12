@@ -1,13 +1,13 @@
 ---
 title: Entitätsdaten in Excel öffnen | Microsoft Docs
 description: Öffnen Sie Entitätsdaten für interaktives Anzeigen und Bearbeiten in Excel.
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -78,6 +78,6 @@ Falls ein Problem auftritt, das nicht hier nicht beschrieben wird, kontaktieren 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Verwalten von Feldern in einer Entität](data-platform-manage-fields.md)
 * [Beziehungen zwischen Entitäten definierten](data-platform-entity-lookup.md)
-* [Generieren einer App mit Common Data Service for Apps](../canvas-apps/data-platform-create-app.md)
-* [Erstellen einer App von Grund auf mit Common Data Service for Apps](../canvas-apps/data-platform-create-app-scratch.md)
+* [Generieren einer App mit Common Data Service](../canvas-apps/data-platform-create-app.md)
+* [Erstellen einer App von Grund auf mit Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

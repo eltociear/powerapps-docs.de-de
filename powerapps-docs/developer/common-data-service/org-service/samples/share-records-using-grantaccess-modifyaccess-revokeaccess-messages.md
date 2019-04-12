@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Freigeben von Datensätzen mithilfe von GrantAccess, ModifyAccess und RevokeAccess (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Freigeben von Datensätzen mithilfe von GrantAccess, ModifyAccess und RevokeAccess (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie ein Datensatz mithilfe der GrantAccess-, ModifyAccess- und RevokeAcces-Message freigegeben wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="sample-share-records-using-grantaccess-modifyaccess-and-revokeaccess-messages"></a>Beispiel: Datensätze mithilfe von GrantAccess, ModifyAccess und RevokeAccess Nachrichten teilen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-share-records-using-grantaccess-modifyaccess-revokeaccess-messages 
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-share-records-using-grantaccess-modifyaccess-revokeaccess-messages 
 
-Change sample to make sure it works with CDS
+Change sample to make sure it works with Common Data Service
 -->
 
 Dieses Beispiel zeigt, wie ein Datensatz mit den nachfolgenden Meldungen geteilt wird:
 
-[GrantAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.grantaccessrequest?view=dynamics-general-ce-9)
+[GrantAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.grantaccessrequest?view=dynamics-general-ce-9)
 
-[ModifyAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.modifyaccessrequest?view=dynamics-general-ce-9)
+[ModifyAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.modifyaccessrequest?view=dynamics-general-ce-9)
 
-[RevokeAccessRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.revokeaccessrequest?view=dynamics-general-ce-9)
+[RevokeAccessRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.revokeaccessrequest?view=dynamics-general-ce-9)
 
 Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GrantModifyRevokeAccess) herunterladen.
 

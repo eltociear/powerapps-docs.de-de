@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Buchen eines Termins (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Buchen eines Termins (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie einen Termin buchen oder planen '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-book-an-appointment"></a>Beispiel: Buchen eines Termins
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-book-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-book-appointment -->
 
-Dieses Beispiel veranschaulicht, wie Sie mithilfe der Meldung [BookRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) einen Termin buchen oder planen. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BookAppointment) herunterladen.
+Dieses Beispiel veranschaulicht, wie Sie mithilfe der Meldung [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) einen Termin buchen oder planen. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BookAppointment) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
@@ -40,7 +40,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 
 ### <a name="demonstrate"></a>Demonstrieren
 
-1. Erstellt die Termininstanz mithilfe der Nachricht [BookRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) und überprüft, ob der Termin geplant ist oder nicht.
+1. Erstellt die Termininstanz mithilfe der Nachricht [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) und überprüft, ob der Termin geplant ist oder nicht.
 
 ### <a name="clean-up"></a>Bereinigung
 

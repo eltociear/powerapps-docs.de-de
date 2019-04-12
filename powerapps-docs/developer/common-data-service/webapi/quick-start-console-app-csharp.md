@@ -1,6 +1,6 @@
 ---
-title: 'Schnellstart: Web API-Beispiel (C#) (Common Data Service for Apps)| Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie Sie sich mit einem Common Data Service for Apps-Server authentifizieren und dann einen grundlegenden Web API-Vorgang aufrufen, die WhoAmI-Funktion.'
+title: 'Schnellstart: Web API-Beispiel (C#) (Common Data Service) | Microsoft Docs'
+description: 'Dieses Beispiel veranschaulicht, wie Sie sich mit einem Common Data Service-Server authentifizieren und dann einen grundlegenden Web API-Vorgang, die WhoAmI-Funktion, aufrufen.'
 ms.custom: ''
 ms.date: 02/02/2019
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-web-api-sample-c"></a>Schnellstart: Web API-Beispiel (C#)
 
-In diesem Schnellstart erstellen Sie eine einfache Konsolenanwendung, um eine Verbindung mit Ihrer Common Data Service for Apps-Umgebung mithilfe der Web-API herzustellen. 
+In diesem Schnellstart erstellen Sie eine einfache Konsolenanwendung, um eine Verbindung mit Ihrer Common Data Service-Umgebung mithilfe der Web-API herzustellen. 
 
 Sie authentifizieren sich und verwenden eine <xref:System.Net.Http.HttpClient>, um eine `GET`-Anfrage an die <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> zu senden, die Antwort ist eine <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" />. Sie zeigen den Wert der Eigenschaft `UserId` an.
 
@@ -28,10 +28,10 @@ Sie authentifizieren sich und verwenden eine <xref:System.Net.Http.HttpClient>, 
 
  - Visual Studio (2017 empfohlen)
  - Internetverbindung
- - Gültiges Benutzerkonto für eine Common Data Service for Apps-Instanz
+ - Gültiges Benutzerkonto für eine Common Data Service-Instanz
     - Ihr Benutzername
     - Ihr Kennwort
- - URL zur CDS for Apps-Umgebung, mit der Sie eine Verbindung herstellen möchten
+ - URL zur Common Data Service-Umgebung, mit der Sie eine Verbindung herstellen möchten
  - Grundlegendes Verständnis der Visual C#-Sprache
 
 > [!NOTE]

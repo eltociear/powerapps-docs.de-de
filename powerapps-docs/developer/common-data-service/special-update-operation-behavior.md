@@ -1,5 +1,5 @@
 ---
-title: Verhalten von spezialisierten Aktualisierungsvorgängen (Common Data Service for Apps) | Microsoft Docs
+title: Verhalten von spezialisierten Aktualisierungsvorgängen (Common Data Service) | Microsoft Docs
 description: Beschreibt ein spezielles Verhalten in Plug-Ins und in Workflows für Update-Ereignisse aufgrund veralteter Nachrichten.
 ms.custom: ''
 ms.date: 10/31/2018

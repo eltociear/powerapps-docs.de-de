@@ -1,6 +1,6 @@
 ---
-title: Mehrerer Anforderungen mithilfe des Organisationsservices ausführen (Common Data Service für Apps)| Microsoft Docs
-description: ExecuteMultipleRequest-Message unterstützt die Massenmessage von höheren durchlaufenden Szenarien in Common Data Service für Apps.
+title: Mehrerer Anforderungen mithilfe des Organisationsservices ausführen (Common Data Service) | Microsoft Docs
+description: ExecuteMultipleRequest-Message unterstützt die Massen-Message von höheren durchlaufenden Szenarien in Common Data Service.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -19,12 +19,12 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/use-executemultiple-improve-performance-bulk-data-load 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-executemultiple-improve-performance-bulk-data-load 
 
 -->
 Hauptzweck des Ausführens von mehreren Anforderungen ist es, die Leistung in der Hochwartezeitumgebung zu verbessern, indem Sie den gesamten Datenbestand reduzieren, der über das Netzwerk gesendet wird.
 
-Sie können die <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> Message verwendenm, um höhere durchlaufenden Szenarien in Common Data Service für Apps zu unterstützen. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> nimmt eine Eingang-Collection der <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest.Requests>-Nachricht entgegen, führt jede Nachrichtenanforderung in der Reihenfolge in der Collection aus, und gibt optional eine Collection von <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleResponse.Responses> mit jeder Reaktion auf die Nachricht oder dem aufgetretenen Fehler zurück. Jede Messageanforderung in der Eingabesammlung wird in einer separaten Datenbanktransaktion verarbeitet. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> wird über <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> ausgeführt. Methode.  
+Sie können die <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-Message verwenden, um höheren Durchsatz bei Massen-Messages, die Szenarien in Common Data Service weiterleiten, zu unterstützen. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> nimmt eine Eingang-Collection der <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest.Requests>-Nachricht entgegen, führt jede Nachrichtenanforderung in der Reihenfolge in der Collection aus, und gibt optional eine Collection von <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleResponse.Responses> mit jeder Reaktion auf die Nachricht oder dem aufgetretenen Fehler zurück. Jede Messageanforderung in der Eingabesammlung wird in einer separaten Datenbanktransaktion verarbeitet. <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> wird über <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> ausgeführt. Methode.  
   
 Generell verhält sich <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> genauso, als ob Sie jede Messageanforderung separat in der Eingabeanforderungssammlung ausführen, nur mit besserer Leistung. Die Verwendung der <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.CallerId>-Parameter des Serviceproxys wird berücksichtigt und wird bei der Ausführung jeder Message in der Eingabeanforderungssammlung angewendet. Plug-Ins und Workflowaktivitäten werden ausgeführt, wie es für jede verarbeitete Message zu erwarten ist.  
   
@@ -111,9 +111,9 @@ Es gibt mehrere Beschränkungen, die zur mit der Verwendung von <xref:Microsoft.
   
 -   **Keine Rekursion zulässig** <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-  kann <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> nicht aufrufen. Ein <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-Element, das in der Anforderungssammlung gefunden wird, verursacht einen Fehler für das Anforderungselement.  
   
--   **Maximale Batchgröße** Es gibt eine Beschränkung bei der Anzahl von Anforderungen, die einer Anforderungssammlung hinzugefügt werden können. Wird dieser Grenzwert überschritten, wird ein Fehler ausgelöst, bevor die erste Anforderung ausgeführt wird. Eine Limit von 1000 Anforderungen ist typisch, obwohl die maximale Menge für die CDS for Apps Bereitstellung festgelegt werden kann.
+-   **Maximale Batchgröße** Es gibt eine Beschränkung bei der Anzahl von Anforderungen, die einer Anforderungssammlung hinzugefügt werden können. Wird dieser Grenzwert überschritten, wird ein Fehler ausgelöst, bevor die erste Anforderung ausgeführt wird. Ein Limit von 1000 Anforderungen ist typisch, obwohl die maximale Menge für die Common Data Service-Bereitstellung festgelegt werden kann.
   
--   **Einschränkung von gleichzeitigen Aufrufe**  Für CDS für Apps gibt es eine Beschränkung von 2 gleichzeitig ausgeführten <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-Elementen pro Organisation. Wird dieser Grenzwert überschritten, wird ein *Server Ausgelastet*-Fehler ausgelöst, bevor die erste Anforderung ausgeführt wird. 
+-   **Einschränkung von gleichzeitigen Aufrufen**  Für Common Data Service gibt es eine Beschränkung von 2 gleichzeitig ausgeführten <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>-Elementen pro Organisation. Wird dieser Grenzwert überschritten, wird ein *Server Ausgelastet*-Fehler ausgelöst, bevor die erste Anforderung ausgeführt wird. 
 
   
 <a name="fault"></a>

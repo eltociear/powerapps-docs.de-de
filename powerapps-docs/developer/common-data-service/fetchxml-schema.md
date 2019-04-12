@@ -1,6 +1,6 @@
 ---
-title: FetchXML-Schema (Common Data Service für Apps) | Microsoft Docs
-description: 'Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service Apps Datenbank zu erstellen'
+title: FetchXML-Schema (Common Data Service) | Microsoft Docs
+description: 'Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service-Datenbank zu erstellen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="fetchxml-schema"></a>FetchXML-Schema
 
-Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service Apps Datenbank zu erstellen Folgendes ist das Schema für die FetchXML-Abragesprache. Weitere Informationen finden Sie unter [Verwendung von FetchXML, um eine Abfrage zu erstellen](use-fetchxml-construct-query.md).
+Die FetchXML-Abfragesprache wird verwendet, um Abfragen anhand der Common Data Service-Datenbank zu erstellen. Folgendes ist das Schema für die FetchXML-Abragesprache. Weitere Informationen finden Sie unter [Verwendung von FetchXML, um eine Abfrage zu erstellen](use-fetchxml-construct-query.md).
 
 Sie können dieses Schema im Ordner `Schemas\9.0.0.2090\Fetch.xsd` finden, wenn Sie die Schemas-zip-Datei herunterladen.
 Laden Sie [Schemas](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) herunter.

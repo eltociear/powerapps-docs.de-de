@@ -1,10 +1,10 @@
 ---
-title: Aktualisieren und Löschen von Entitäten mithilfe der Web-API (Common Data Service für Apps) | Microsoft Docs
+title: Aktualisieren und Löschen von Entitäten mithilfe der Web-API (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie Sie das Update und Löschen für Entitäten unter Verwendung der Web-API durchführen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

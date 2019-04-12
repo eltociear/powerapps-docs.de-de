@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen, importieren oder aktualisieren einer verwalteten Lösung (Common Data Service for Apps) | Microsoft Docs'
+title: 'Erstellen, importieren oder aktualisieren einer verwalteten Lösung (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018

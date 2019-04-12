@@ -1,5 +1,5 @@
 ---
-title: Nutzen von Metadaten mit Code (Common Data Service für Apps) | Microsoft Docs
+title: Nutzen von Metadaten mit Code (Common Data Service) | Microsoft Docs
 description: 'Sowohl die [Web-API](org-service/overview.md) als auch der [Organisationsservice](webapi/overview.md) enthalten Funktionen für CRUD-Vorgänge auf dem Entitätsschema.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -30,10 +30,10 @@ Einige Beispiele:
 
 ## <a name="browse-the-metadata-for-your-organization"></a>Durchsuchen der Metadaten für die Organisation
 
-Ein gutes Verständnis der Metadaten im System hilft dabei zu verstehen, wie die Common Data Service für Apps-Plattform funktioniert. Die Designer, die zum Bearbeiten der Metadaten verfügbar sind, können nicht alle Details anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App mit dem Namen *Browser für Metadaten* installieren, die es Ihnen ermöglicht, alle ausgeblendeten Entitäten- und Metadateneigenschaften anzuzeigen, die im System vorhanden sind. Weitere Informationen zu *Browser für Metadaten*: [Durchsuchen der Metadaten für Ihre Organisation](browse-your-metadata.md)
+Ein gutes Verständnis der Metadaten im System hilft dabei zu verstehen, wie die Common Data Service-Plattform funktioniert. Die Designer, die zum Bearbeiten der Metadaten verfügbar sind, können nicht alle Details anzeigen, die in den Metadaten gefunden werden. Sie können eine modellgesteuerte App mit dem Namen *Browser für Metadaten* installieren, die es Ihnen ermöglicht, alle ausgeblendeten Entitäten- und Metadateneigenschaften anzuzeigen, die im System vorhanden sind. Weitere Informationen zu *Browser für Metadaten*: [Durchsuchen der Metadaten für Ihre Organisation](browse-your-metadata.md)
 
 ## <a name="programmatically-work-with-metadata"></a>Programmtechnisch mit Metadaten arbeiten
 
 Weitere Informationen zum programmgesteuerten Arbeiten mit Metadaten mittels:
-- **Web-API**: [Nutzen der Web-API mit CDS für Apps-Metadaten](webapi/use-web-api-metadata.md)
-- **Organisationsservice**: [Verwenden des Organisationsservice mit CDS für Apps-Metadaten](org-service/work-with-metadata.md)
+- **Web-API**: [Verwenden der Web-API mit Common Data Service-Metadaten](webapi/use-web-api-metadata.md)
+- **Organisationsservice**: [Verwenden des Organisationsservice mit Common Data Service-Metadaten](org-service/work-with-metadata.md)

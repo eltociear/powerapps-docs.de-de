@@ -1,10 +1,10 @@
 ---
-title: Nutzen von XRM-Tooling zur Datenerstellung (Common Data Service für Apps) | Microsoft Docs
-description: 'Verwenden der CrmServiceClient-Klasse, um Daten in CDS für Apps zu erstellen'
+title: Nutzen von XRM-Tooling zum Erstellen von Daten (Common Data Service) | Microsoft Docs
+description: 'Verwenden der CrmServiceClient-Klasse, um Daten in Common Data Service zu erstellen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -27,7 +27,7 @@ Es gibt sieben Möglichkeiten, um in der <xref:Microsoft.Xrm.Tooling.Connector.C
   
 ## <a name="createnewrecord"></a>CreateNewRecord  
 
-Diese Methode wird verwendet, um Entitätsdaten jeden Typs in CDS für Apps zu erstellen. Um sie zu verwenden, müssen Sie den Schemanamen der Entität, in der Sie einen Datensatz erstellen möchten, können, und Sie müssen eine Datennutzlast für die Übergane erstellen. In diesem Beispiel wird ein Kontodatensatz erstellt.  
+Diese Methode wird verwendet, um Entitätsdaten jeden Typs in Common Data Service zu erstellen. Um sie zu verwenden, müssen Sie den Schemanamen der Entität, in der Sie einen Datensatz erstellen möchten, können, und Sie müssen eine Datennutzlast für die Übergane erstellen. In diesem Beispiel wird ein Kontodatensatz erstellt.  
   
 ```csharp 
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>",“<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -73,7 +73,7 @@ In diesem Beispiel haben wir ein Datennutzlast-Objekt mit der Bezeichnung `indat
   
 ## <a name="createannotation"></a>CreateAnnotation
   
-Diese Methode wird verwendet, um ein Notizenobjekt zu erstellen und an einen Entitätsdatensatz anzuhängen. Während Sie alle Variablen für die Notiz im ersten Durchlauf eingeben können, müssen Sie nur die Felder für den Betreff und den Notizentext ausfüllen. In der Praxis wird dies allgemein verwendet, um systemgenerierte Notizen an eine Entität anzuhängen, oder um in CDS für Apps gespeicherte Dateien an eine Entität anzuhängen. Wenn Sie zudem Ihre eigene UI für die Generierung von Notizen für Ihren Benutzer angeben, ist dies auch die Weise, in der Sie die Notiz an die Besitzerentität in CDS für Apps anhängen. Dieses Beispiel setzt das vorherige Beispiel fort und erstellt eine Notiz zu dem neu erstellten Konto.  
+Diese Methode wird verwendet, um ein Notizenobjekt zu erstellen und an einen Entitätsdatensatz anzuhängen. Während Sie alle Variablen für die Notiz im ersten Durchlauf eingeben können, müssen Sie nur die Felder für den Betreff und den Notizentext ausfüllen. In der Praxis wird dies allgemein verwendet, um systemgenerierte Notizen an eine Entität anzuhängen, oder um in Common Data Service gespeicherte Notizen an eine Entität anzuhängen. Wenn Sie Ihre eigene UI für die Generierung von Notizen für Ihren Benutzer angeben, ist dies auch die Weise, in der Sie die Notiz an die Eigentümerentität in Common Data Service anhängen. Dieses Beispiel setzt das vorherige Beispiel fort und erstellt eine Notiz zu dem neu erstellten Konto.  
   
 ```csharp
 CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
@@ -108,4 +108,4 @@ else
 ### <a name="see-also"></a>Siehe auch  
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Verwenden der XRM-Tooling-API, um Aktionen in CDS für Apps auszuführen](use-xrm-tooling-execute-actions.md)
+[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)

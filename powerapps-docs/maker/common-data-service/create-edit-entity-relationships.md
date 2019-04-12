@@ -1,9 +1,9 @@
 ---
-title: Erstellen und Bearbeiten von Entitäts-Beziehungen für Common Data Service für Apps | MicrosoftDocs
+title: Erstellen und Bearbeiten von Entitäts-Beziehungen für Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,7 +21,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="entity-relationships-overview"></a>Übersicht über Entitätsbeziehungen
+# <a name="entity-relationships-overview"></a>Überblick über Entitätsbeziehungen
 
 Entitätsbeziehungen definieren, wie Datensätze in der Datenbank miteinander verknüpft werden können. Auf der einfachsten Ebene erstellt das Hinzufügen eines Suchfeldes zu einer Entität eine neue 1:n (eins-zu-viele)-Beziehung zwischen den beiden Entitäten und ermöglicht Ihnen, dieses Suchfeld in ein Formular einzusetzen. Mit dem Suchfeld können Benutzer mehrere *untergeordnete* Datensätze dieser Entität einer einzelnen *übergeordneten* Entität zuordnen.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden einer linken äußeren Verknüpfung in FetchXML für Abfragen nach Datensätzen, die &bdquo;nicht in&bdquo; sind (Common Data Service für Apps) | Microsoft Docs'
+title: 'Verwenden einer linken äußeren Verknüpfung in FetchXML für Abfragen nach Datensätzen, die &bdquo;nicht in&bdquo; sind (Common Data Service) | Microsoft Docs'
 description: 'Erfahren Sie, wie eine linke äußere Verknüpfung mithilfe der FetchXML-Klasse verwendet wird, um eine Abfrage auszuführen, die die Verknüpfungstabelle filtert, und eine Abfrage zu erstellen, die Datensätze des Typs „nicht in“ in einer Gruppe findet'
 ms.custom: ''
 ms.date: 10/31/2018

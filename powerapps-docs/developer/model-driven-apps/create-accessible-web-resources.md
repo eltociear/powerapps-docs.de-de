@@ -22,7 +22,7 @@ search.app:
 
 # <a name="create-accessible-web-resources"></a>Erstellen von barrierefreien Webressourcen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-accessible-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-accessible-web-resources -->
 
 
 Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der Lösung bereitstellen, müssen Sie sicherstellen, dass Sie Voraussetzungen einschließen, die es Personen mit Behinderung ermöglichen, die Webressourcen zu verwenden.  
@@ -45,31 +45,32 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
   
  Als erstes muss sichergestellt werden, dass das HTML erwarteten Verwendungsmustern folgt. Sie können beispielsweise ein `div`-HTML-Element mit einem Klickereignis definieren, sodass es genau wie ein `button`-HTML-Element funktioniert. Der Browser erwartet jedoch nicht, dass ein `div`-Element als Schaltfläche verwendet wird und macht nicht die gleichen Eigenschaften und Ereignisse für eine AT-Anwendung verfügbar.  
   
- Es ist wichtig, dass Sie die richtigen HTML-Elemente für die Typen von Interaktionen verwenden, die Benutzer mit Ihren Webressourcen tätigen. Dies wird als [semantisches HTML](https://docs.microsoft.com/en-us/microsoft-edge/accessibility) bezeichnet.  
+ Es ist wichtig, dass Sie die richtigen HTML-Elemente für die Typen von Interaktionen verwenden, die Benutzer mit Ihren Webressourcen tätigen. Dies wird als [semantisches HTML](https://docs.microsoft.com/microsoft-edge/accessibility) bezeichnet.  
   
- Allerdings sind dem semantischen HTML Grenzen gesetzt. Moderne Webanwendungen enthalten in der Regel benutzerdefinierte Steuerelemente, die aus vielen HTML-Elementen bestehen, die zusammenarbeiten. Seiteninhalt, der häufig mithilfe von asynchronem JavaScript dynamisch aktualisiert wird, ist für AT-Anwendungen, die nur auf semantischem HTML basieren, verwirrend. [ARIA (Accessible Rich Internet Application)](https://docs.microsoft.com/en-us/microsoft-edge/accessibility) Technologie bietet eine Lösung durch die Erweiterung von HTML mit zusätzlichen Attributen, die benutzerdefinierte Semantik übermitteln.  
+ Allerdings sind dem semantischen HTML Grenzen gesetzt. Moderne Webanwendungen enthalten in der Regel benutzerdefinierte Steuerelemente, die aus vielen HTML-Elementen bestehen, die zusammenarbeiten. Seiteninhalt, der häufig mithilfe von asynchronem JavaScript dynamisch aktualisiert wird, ist für AT-Anwendungen, die nur auf semantischem HTML basieren, verwirrend. [ARIA (Accessible Rich Internet Application)](https://docs.microsoft.com/microsoft-edge/accessibility) Technologie bietet eine Lösung durch die Erweiterung von HTML mit zusätzlichen Attributen, die benutzerdefinierte Semantik übermitteln.  
   
  ARIA bietet einen Standardsatz von erweiterten Attributen, die auf HTML-Elemente angewandt werden können, die in einem Steuerelement oder einem "Widget" verwendet werden. Diese Attribute beschreiben die Rolle, die das HTML-Element im Steuerelement spielt. ARIA bietet auch Funktionen, um die Navigationserfahrung zu verbessern und den Benutzer auf Elemente aufmerksam zu machen, die dynamisch aktualisiert werden können. Das empfohlene Verfahren besteht darin, semantisches HTML mit ARIA zu überlagern.  
   
- Zusätzlich zum Einschließen von Unterstützung für AT müssen noch weitere Anforderungen berücksichtigt werden. Wie passt sich beispielsweise die Benutzeroberfläche an, wenn der Benutzer die Textgröße vergrößert? Muss der Benutzer auf der Benutzeroberfläche Farben unterscheiden können, um Aufgaben auszuführen? Können alle Aktionen ausgeführt werden, indem eine Tastatur verwendet wird? Weitere Informationen finden Sie unter [Einführung in Web-Barrierefreiheit](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh452681(v=win.10)).
+ Zusätzlich zum Einschließen von Unterstützung für AT müssen noch weitere Anforderungen berücksichtigt werden. Wie passt sich beispielsweise die Benutzeroberfläche an, wenn der Benutzer die Textgröße vergrößert? Muss der Benutzer auf der Benutzeroberfläche Farben unterscheiden können, um Aufgaben auszuführen? Können alle Aktionen ausgeführt werden, indem eine Tastatur verwendet wird? Weitere Informationen finden Sie unter [Einführung in Web-Barrierefreiheit](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10)).
   
 <a name="BKMK_SilverlightWebResources"></a>   
 ## <a name="accessible-silverlight-web-resources"></a>Barrierefreie Silverlight-Webressourcen  
- Silverlight-Webressourcen werden in einem Formular oder einer HTML-Webressource gehostet und die Benutzeroberfläche wird vom Silverlight-Browser-Plug-in gerendert. Silverlight ist eine Teilmenge von Windows Presentation Frameworks (WPF) und daher werden der programmgesteuerter Zugriff und AT über UIA verfügbar gemacht, dass WPF-Windows-Anwendungen ähnelt. Weitere Informationen finden Sie unter [Silverlight-Barrierefreiheit für Entwickler](https://docs.microsoft.com/en-us/previous-versions/windows/).  
+ Silverlight-Webressourcen werden in einem Formular oder einer HTML-Webressource gehostet und die Benutzeroberfläche wird vom Silverlight-Browser-Plug-in gerendert. Silverlight ist eine Teilmenge von Windows Presentation Frameworks (WPF) und daher werden der programmgesteuerter Zugriff und AT über UIA verfügbar gemacht, dass WPF-Windows-Anwendungen ähnelt. Weitere Informationen finden Sie unter [Silverlight-Barrierefreiheit für Entwickler](https://docs.microsoft.com/previous-versions/windows/).  
   
 <a name="BKMK_AccessiblityTestingTools"></a>   
 ## <a name="accessibility-testing-tools"></a>Tools zum Testen der Barrierefreiheit  
  Die folgende Liste enthält einige öffentlich verfügbare Tools zum Testen der Barrierefreiheit:  
   
- [Visual Studio-Barrierefreiheitsprüfung](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link--> Wenn Sie Visual Studio verwenden, um Ihre HTML-Webressourcendateien zu bearbeiten, werden Sie feststellen, dass integrierte Tools vorhanden sind, mit denen nach Barrierefreiheitproblemen gesucht werden kann. Wählen Sie im Menü **Extras** die Option **Barrierefreiheit überprüfen**, um einen Bericht anzuzeigen, der Anleitungen im Hinblick auf Barrierefreiheitprobleme bietet.  
+ [Visual Studio-Barrierefreiheitsprüfung](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
+ Wenn Sie Visual Studio verwenden, um Ihre HTML-Webressourcendateien zu bearbeiten, werden Sie feststellen, dass integrierte Tools vorhanden sind, mit denen nach Barrierefreiheitproblemen gesucht werden kann. Wählen Sie im Menü **Extras** die Option **Barrierefreiheit überprüfen**, um einen Bericht anzuzeigen, der Anleitungen im Hinblick auf Barrierefreiheitprobleme bietet.  
   
  [Benutzeroberflächen-Barrierefreiheitsprüfung](http://acccheck.codeplex.com/)  
  Benutzeroberflächen-Barrierefreiheitsprüfung (oder AccChecker) aktiviert Prüfvorrichtungen, um auf einfache Weise Barrierefreiheitsprobleme mit Microsoft Active Accessibility (MSAA) und anderen Benutzeroberflächenimplementierungen für Windows zu finden. AccChecker entstammt der Erkenntnis, dass vorhandene Windows Automatisierungs-API-Tools, wie beispielsweise Inspect, zwar detaillierte Details über die Implementierung bereitstellen, jedoch keine Informationen im Hinblick darauf, ob eine Implementierung korrekt ist oder nicht.  
   
- [Inspect (Inspect.exe)](https://docs.microsoft.com/en-us/windows/desktop/WinAuto/inspect-objects)  
+ [Inspect (Inspect.exe)](https://docs.microsoft.com/windows/desktop/WinAuto/inspect-objects)  
  Inspect (Inspect.exe) ist ein Windows-basiertes Tool, mit dem Sie ein beliebiges Benutzeroberflächenelement auswählen und die Barrierefreiheitsdaten des Elements anzeigen können. Sie können Eigenschaften und Steuerelementmuster der Microsoft-Benutzeroberflächenautomatisierung zusätzlich zu Microsoft Active Accessibility-Eigenschaften anzeigen. Mithilfe von Inspect können Sie außerdem die Navigationsstruktur der Automatisierungselemente in der Benutzeroberflächenautomatisierungs-Struktur sowie die barrierefreien Objekte in der Microsoft Active Accessibility-Hierarchie testen.  
   
- [Accessible Event Watcher (AccEvent.exe)](https://docs.microsoft.com/en-us/windows/desktop/WinAuto/accessible-event-watcher)  
+ [Accessible Event Watcher (AccEvent.exe)](https://docs.microsoft.com/windows/desktop/WinAuto/accessible-event-watcher)  
  Mit dem Accessible Event Watcher (AccEvent) können Entwickler und Tester überprüfen, ob die Benutzeroberflächenelemente einer Anwendung entsprechende Microsoft-Benutzeroberflächenautomatisierungs- und Microsoft Active Accessibility-Ereignisse aktivieren, wenn Änderungen der Benutzeroberfläche eintreten. Änderungen der Benutzeroberfläche können eintreten, wenn sich der Fokus ändert oder wenn ein Benutzeroberflächenelement aufgerufen oder ausgewählt wird bzw. eine Status- oder Eigenschaftenänderung aufweist.
   
 <a name="BKMK_AdditionalResources"></a>   
@@ -78,11 +79,11 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
   
 -   [CRM, Barrierefreiheit und 508](http://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
   
--   [Einführung in Web-Barrierefreiheit](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh452681(v=win.10))  
+-   [Einführung in Web-Barrierefreiheit](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10))  
   
--   [Barrierefreiheit in Visual Studio und der ASP.NET](https://msdn.microsoft.com/library/ms228004) <!--TODO No relevant microsoft docs link-->
+-   [Barrierefreiheit in Visual Studio und der ASP.NET](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
   
--   [Silverlight-Barrierefreiheit für Entwickler](https://docs.microsoft.com/en-us/previous-versions/windows/)  
+-   [Silverlight-Barrierefreiheit für Entwickler](https://docs.microsoft.com/previous-versions/windows/)  
   
 -   [Barrierefreiheit – Übersicht](https://developer.microsoft.com/en-us/windows/accessible-apps)  
   
@@ -92,4 +93,5 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
   
 ### <a name="see-also"></a>Siehe auch  
  [Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!--TODO No relevant topic in powerapps repo--> [Webressourcen](web-resources.md)
+ [Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!--TODO No relevant topic in powerapps repo-->
+ [Webressourcen](web-resources.md)

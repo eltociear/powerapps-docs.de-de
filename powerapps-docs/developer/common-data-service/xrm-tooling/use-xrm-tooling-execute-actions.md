@@ -1,10 +1,10 @@
 ---
-title: Nutzung von XRM-Tooling zum Ausführen von Aktionen in CDS für Apps (Common Data Service für Apps) | Microsoft Docs
-description: 'Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um Vorgänge mit „CDS für Apps”-Daten zu erstellen, abzurufen, zu aktualisieren und zu löschen'
+title: Nutzung von XRM-Tooling zum Ausführen von Aktionen in Common Data Service (Common Data Service) | Microsoft Docs
+description: 'Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um Vorgänge mit „Common Data Service”-Daten zu erstellen, abzurufen, zu aktualisieren und zu löschen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-xrm-tooling-to-execute-actions-in-cds-for-apps"></a>XRM-Tooling zur Ausführung von Aktionen in CDS für Apps verwenden
+# <a name="use-xrm-tooling-to-execute-actions-in-common-data-service"></a>Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service
 
-Nachdem Sie eine Verbindung mit CDS für Apps hergestellt haben, können Sie das Klassenobjekt <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> verwenden, um Aktionen mit den CDS für Apps-Daten ausführen, z. B. Daten erstellen, aktualisieren, abrufen oder löschen. Dieser Abschnitt enthält Beispiele zur Durchführung von Aktionen in CDS für Apps mithilfe von XRM-Tooling.  
+Nachdem Sie eine Verbindung mit Common Data Service hergestellt haben, können Sie das Klassenobjekt <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> verwenden, um Aktionen mit den Common Data Service-Daten ausführen, z. B. Daten erstellen, löschen oder aktualisieren. Dieser Abschnitt enthält Beispiele zur Durchführung von Aktionen in Common Data Service mit XRM-Tooling.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -35,5 +35,5 @@ Nachdem Sie eine Verbindung mit CDS für Apps hergestellt haben, können Sie das
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der XRM-Tooling-API, um eine Verbindung mit CDS für Apps herzustellen](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden der XRM-Tooling-API zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
 [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md)

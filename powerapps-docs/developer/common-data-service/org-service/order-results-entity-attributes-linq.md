@@ -1,5 +1,5 @@
 ---
-title: Bestellergebnisse mithilfe von Entitätsattributen mit LINQ (Common Data Service für Apps) | Microsoft Docs
+title: Bestellergebnisse mithilfe von Entitätsattributen mit LINQ (Common Data Service) | Microsoft Docs
 description: 'Infos zu Such- oder Optionen (Auswahlliste)-Attributen, um Ergebnisse innerhalb der LINQ-Abfrage zu finden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="order-results-using-entity-attributes-with-linq"></a>Bestellergebnisse mithilfe von LINQ der Entitätsattributen
 
-In Common Data Service(CDS) für Apps können Sie Such- oder OptionSet (Auswahlliste)-Attribute verwenden, um Ergebnisse innerhalb der LINQ-Abfrage zu sortieren. Dieses Thema zeigt verschiedene Beispiele dieser Art von Abfragen an.  
+In Common Data Service(Common Data Service) für Apps können Sie Such- oder OptionSet (Auswahlliste)-Attribute verwenden, um Ergebnisse innerhalb der LINQ-Abfrage zu sortieren. Dieses Thema zeigt verschiedene Beispiele dieser Art von Abfragen an.  
   
 ## <a name="using-a-lookup-value-to-order-by"></a>Verwenden eines Suchwerts für Bestellt durch  
 

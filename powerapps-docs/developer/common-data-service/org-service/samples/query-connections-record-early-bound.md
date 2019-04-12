@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Abfragen von Verbindungen nach Datensatz (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Abfragen von Verbindungen nach Datensatz (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel zeigt, wie ein bestimmter Datensatz in Verbindungen abgefragt wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-query-connections-by-a-record"></a>Beispiel: Abfragen von Verbindungen nach Datensatz 
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-query-connections-record-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-record-early-bound -->
 
 Dieses Beispiel zeigt, wie ein bestimmter Datensatz in Verbindungen abgefragt wird. Dabei werden Verbindungen zwischen einem Kontakt und zwei Konten erstellt und dann die Verbindungen des Kontakts gesucht. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryByRecord) herunterladen.
 

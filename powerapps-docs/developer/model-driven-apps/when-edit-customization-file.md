@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="when-to-edit-the-customizations-file"></a>Informationen zum Bearbeiten der Anpassungsdatei
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/when-edit-customization-file -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/when-edit-customization-file -->
 
 Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung exportiert wird, kann bearbeitet werden, sodass bestimmte Anpassungsaufgaben ausgeführt werden. Nachdem Sie die Datei bearbeitet haben, können Sie die geänderte Datei zusammen mit anderen Dateien komprimieren, die in der nicht verwalteten Lösung exportiert werden. Sie übernehmen die Änderungen, indem Sie die geänderte nicht verwaltete Lösung importieren.  
   
@@ -48,7 +48,7 @@ Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung expo
  Definitionen von Ansichten für Entitäten sind in der Datei customizations.xml enthalten und können manuell bearbeitet werden. Der Ansicht-Editor in der Anwendung ist das am häufigsten verwendeten Tool für diesen Zweck. Alternativ kann die Datei customizations.xml bearbeitet werden. Weitere Informationen finden Sie unter [Anpassen von Entitätsansichten](customize-entity-views.md).  
   
  **Bearbeiten von ISV.config**  
-  Für CDS für Apps stellt das Menüband die Möglichkeit bereit, die Anwendung zu erweitern. Die einzige verbleibenden Funktion in ISV.Config ist die Anpassung der Darstellung des Servicekalenders. Weitere Informationen finden Sie unter [Servicekalender-Darstellungskonfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).  
+  Bei Common Data Service bietet das Menüband die Möglichkeit, die Anwendung zu erweitern. Die einzige verbleibenden Funktion in ISV.Config ist die Anpassung der Darstellung des Servicekalenders. Weitere Informationen finden Sie unter [Servicekalender-Darstellungskonfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).  
   
 ## <a name="unsupported-tasks"></a>Nicht unterstützte Aufgaben  
  Das Definieren anderer Lösungskomponenten durch Bearbeitung der exportierten Datei customizations.xml wird nicht unterstützt. Dies beinhaltet Folgendes:  

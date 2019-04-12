@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Überprüfen eines Termins (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Überprüfen eines Termins (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie ein Termin überprüft wird'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-validate-an-appointment"></a>Beispiel: Prüfen eines Termins
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-validate-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-validate-appointment -->
 
-Dieses Beispiel veranschaulicht, wie Sie mithilfe der Meldung [ValidateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.validaterequest?view=dynamics-general-ce-9) einen Termin überprüfen. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateAppointment) herunterladen.
+Dieses Beispiel veranschaulicht, wie Sie mithilfe der Meldung [ValidateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.validaterequest?view=dynamics-general-ce-9) einen Termin überprüfen. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ValidateAppointment) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

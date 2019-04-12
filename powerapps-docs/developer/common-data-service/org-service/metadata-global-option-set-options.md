@@ -1,5 +1,5 @@
 ---
-title: 'Einfügen, Aktualisieren, Löschen und Anordnen von Optionen des globalen Optionssatzes (Common Data Service für Apps) | Microsoft Docs'
+title: 'Einfügen, Aktualisieren, Löschen und Anordnen von Optionen des globalen Optionssatzes (Common Data Service) | Microsoft Docs'
 description: 'Die Codebeispiele zeigen, wie Option im globalen Optionssatz eingefügt, aktualisiert, gelöscht und angeordnet werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/insert-update-delete-order-global-option-set-options 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/insert-update-delete-order-global-option-set-options 
 
 -->
 

@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
-description: Organisationseigene Dashboards können mit dem Common Data Service for Apps Web Services (SDK) oder durch Anpassen des Entitätsformulars im Common Data Service for Apps durch Bearbeiten der Datei customizations.xml erstellt werden.
+description: Organisationseigene Dashboards können mit dem Common Data Service-Web Services (SDK) oder durch Anpassen des Entitätsformulars im Common Data Service durch Bearbeiten der Datei customizations.xml erstellt werden.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="create-a-dashboard"></a>Erstellen eines Dashboards
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
-Organisationseigene Dashboards können mit dem Common Data Service for Apps oder durch Anpassen des Entitätsformulars im Common Data Service for Apps durch Bearbeiten der Datei customizations.xml erstellt werden.  
+Organisationseigene Dashboards können mit dem Common Data Service oder durch Anpassen des Entitätsformulars im Common Data Service durch Bearbeiten der Datei customizations.xml erstellt werden.  
   
 > [!NOTE]
 >  Einige Dashboards, die unter Verwendung von SDK oder durch Anpassung des Entitätsformulars erstellt wurden, werden vom Dashboard-Designer in der Webanwendung nicht unterstützt. Weitere Informationen finden Sie unter [Einschränkungen: Dashboards mithilfe des SDK oder durch Formularanpassung erstellen](#Limitations) unten in diesem Thema.  
@@ -152,7 +152,7 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 #### <a name="create-a-dashboard-by-customizing-an-entity-form"></a>Erstellen eines Dashboards durch Anpassen eines Entitätsformulars  
   
-1. Melden Sie sich am Common Data Service for Apps an.  
+1. Melden Sie sich beim Common Data Service an.  
   
 2. Exportieren Sie eine Lösung. Informationen dazu finden Sie unter [Exportierung, Vorbereitung zum Bearbeiten und Importierung des Menübands](export-prepare-edit-import-ribbon.md).  
   
@@ -179,13 +179,13 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 6. Speichern der customizations.xml-Datei.  
   
-7. Importieren Sie die ZIP-Datei als eine Lösung in CDS for Apps. Weitere Informationen: [Exportieren, Vorbereiten der Bearbeitung und Importieren des Menübands](export-prepare-edit-import-ribbon.md).  
+7. Importieren Sie die ZIP-Datei als eine Lösung in Common Data Service. Weitere Informationen: [Exportieren, Vorbereiten der Bearbeitung und Importieren des Menübands](export-prepare-edit-import-ribbon.md).  
   
 <a name="Limitations"></a>   
 
 ## <a name="limitations-creating-dashboards-by-using-the-sdk-or-through-form-customization"></a>Einschränkungen: Erstelen von Dashboards mithilfe des SDK oder durch Formularanpassung  
 
- Bestimmte Dashboards, die unter Verwendung von CDS for Apps oder durch Formularanpassung erstellt wurden, werden vom Dashboard-Designer in der Webanwendung nicht unterstützt. Vermeiden Sie Folgendes beim Erstellen oder Ändern eines Dashboards mithilfe des SDK oder durch Formularanpassung.  
+ Bestimmte Dashboards, die unter Verwendung von Common Data Service oder durch Formularanpassung erstellt wurden, werden vom Dashboard-Designer in der Webanwendung nicht unterstützt. Vermeiden Sie Folgendes beim Erstellen oder Ändern eines Dashboards mithilfe des SDK oder durch Formularanpassung.  
   
 ### <a name="general"></a>Allgemein  
   
@@ -212,4 +212,5 @@ _dashboardId = _serviceProxy.Create(dashboard);
  [Nutzung der FormXML-Datei für Dashboards](understand-dashboards-dashboard-components-formxml.md)   
  [Aktionen für Dashboards](actions-dashboards.md)   
  [Beispiel-Dashboards](sample-dashboards.md)   
- [Beispiel: Erstellen, Erstellen, Abrufen, Aktualisieren und Löschen (CRUD) eines Dashboards](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO relevant powerapps repo topic must be linked--> [Anpassen von Entitätsformularen](customize-entity-forms.md)
+ [Beispiel: Ein Dashboard erstellen, abrufen, aktualisieren und löschen (EAAL)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked-->
+ [Anpassen von Entitätsformularen](customize-entity-forms.md)

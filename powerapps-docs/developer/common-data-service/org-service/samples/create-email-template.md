@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen Sie eine E-Mail mit einer Vorlage (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Erstellen Sie eine E-Mail mit einer Vorlage (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie ein E-Mail-Datensatz instanziiert wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-an-email-using-a-template"></a>Beispiel: Erstellen einer E-Mail mithilfe einer Vorlage
 
-Dieses Beispiel zeigt, wie ein E-Mail-Datensatz unter Verwendung der [InstantiateTemplateRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.instantiatetemplaterequest?view=dynamics-general-ce-9)-Nachricht instanziiert werden kann. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EmailTemplate) herunterladen. 
+Dieses Beispiel zeigt, wie ein E-Mail-Datensatz unter Verwendung der [InstantiateTemplateRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.instantiatetemplaterequest?view=dynamics-general-ce-9)-Nachricht instanziiert werden kann. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/EmailTemplate) herunterladen. 
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

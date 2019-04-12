@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Einen Termin in einen wiederkehrenden Termin umwandeln (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Einen Termin in einen wiederkehrenden Termin umwandeln (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie einen Termin in eine wiederkehrende Terminserie umwandeln können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>Beispiel: Konvertieren eines Termins in eine Terminserie
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-convert-appointment-recurring-appointment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-convert-appointment-recurring-appointment -->
 
-Dieses Beispiel zeigt, wie Sie einen Termin in eine wiederkehrende Terminserie umwandeln können, indem Sie die Meldung [AddRecurrenceRequest](https://docs.microsoft.com/en-us/dotnet/api/microsoft.crm.sdk.messages.addrecurrencerequest?view=dynamics-general-ce-9) verwenden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertToRecurring) herunterladen.
+Dieses Beispiel zeigt, wie Sie einen Termin in eine wiederkehrende Terminserie umwandeln können, indem Sie die Meldung [AddRecurrenceRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.addrecurrencerequest?view=dynamics-general-ce-9) verwenden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConvertToRecurring) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

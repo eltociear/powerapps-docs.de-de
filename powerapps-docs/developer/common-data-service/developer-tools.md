@@ -1,5 +1,5 @@
 ---
-title: Entwicklertools und -ressourcen (Common Data Service for Apps) | Microsoft Docs
+title: Entwicklertools und -ressourcen (Common Data Service) | Microsoft Docs
 description: Informationen zu verfügbaren Tools und Ressourcen beim Arbeiten mit Lösungen.
 ms.custom: ''
 ms.date: 1/31/2019
@@ -18,7 +18,7 @@ search.app:
 
 # <a name="developer-tools-and-resources"></a>Entwicklertools und -ressourcen
 
-Entwickler verwenden die folgenden Tools und Ressourcen, wenn sie mit Lösungen arbeiten, die Common Data Service for Apps verwenden.
+Entwickler verwenden die folgenden Tools und Ressourcen, wenn sie mit Lösungen arbeiten, die Common Data Service verwenden.
 
 ## <a name="tools-available-for-download-from-nuget"></a>Tools verfügbar zum Herunterladen bei NuGet
 
@@ -27,10 +27,10 @@ Die folgenden Tools werden in NuGet-Paketen verteilt. Das [Entwicklerhandbuch: H
 |Tool  |Beschreibung  |
 |---------|---------|
 |Codeerstellungstool `CrmSvcUtil.exe`|Ein Befehlszeilencodegenerierungstool, das .NET Framework-Klassen mit früher Bindung erzeugt, die das vom Organisationsservice verwendete Entitätsdatenmodell darstellen. <br />Weitere Informationen: <br />[Organisationsdienst](work-with-data-cds.md#organization-service)<br />[Entitätsklassen mit früher Bindung mit dem Codegenerierungstool erstellen (CrmSvcUtil.exe) ](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
-|Configuration Migration-Tool `DataMigrationUtility.exe`|Wird verwendet, um Konfigurationsdaten in verschiedenen Umgebungen zu verschieben. Konfigurationsdaten werden verwendet, um benutzerdefinierte Funktionen in  zu definieren und sind normalerweise in benutzerdefinierten Entitäten gespeichert. Dieses Tool ist nicht dazu gedacht, Geschäftsdaten zu verschieben. <br /> Weitere Informationen finden Sie unter [Common Data Service for Apps-Administratorhandbuch: Verschieben von Konfigurationsdaten über Instanzen und Organisationen hinweg mit dem Konfigurationsmigration-Tool](/dynamics365/customer-engagement/admin/manage-configuration-data).|
-|Package Deployer `PackageDeployer.exe`|Wird verwendet, um Pakete auf Common Data Service for Apps-Instanzen bereitzustellen. Ein Paket ist eine installierbare Einheit, die Lösungen beinhaltet. <br /> Weitere Informationen: <br />[Bereitstellen von Lösungspaketen](introduction-solutions.md#deploy-solution-packages)<br />[Erstellen von Paketen für den CDS for Apps-Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
+|Configuration Migration-Tool `DataMigrationUtility.exe`|Wird verwendet, um Konfigurationsdaten in verschiedenen Umgebungen zu verschieben. Konfigurationsdaten werden verwendet, um benutzerdefinierte Funktionen in  zu definieren und sind normalerweise in benutzerdefinierten Entitäten gespeichert. Dieses Tool ist nicht dazu gedacht, Geschäftsdaten zu verschieben. <br /> Weitere Informationen finden Sie unter [Common Data Service-Administratorhandbuch: Verschieben von Konfigurationsdaten über Instanzen und Organisationen hinweg mit dem Konfigurationsmigration-Tool](/dynamics365/customer-engagement/admin/manage-configuration-data).|
+|Package Deployer `PackageDeployer.exe`|Wird verwendet, um Pakete auf Common Data Service-Instanzen bereitzustellen. Ein Paket ist eine installierbare Einheit, die Lösungen beinhaltet. <br /> Weitere Informationen: <br />[Bereitstellen von Lösungspaketen](introduction-solutions.md#deploy-solution-packages)<br />[Erstellen von Paketen für den Package Deployer von Common Data Service](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
 |Plug-In-Registrierungstool `PluginRegistration.exe`|Ein Tool, das verwendet wird, um Plug-In-Klassen der.NET-Assembly für Serverereignisse zu abonnieren. <br />Weitere Informationen: <br />[Plug-In erstellen](apply-business-logic-with-code.md#create-a-plug-in)<br />[Registrieren eines Plug-Ins](register-plug-in.md)|
-|SolutionPackager-Tool `SolutionPackager.exe`|SolutionPackager ist ein Tool, mit dem eine komprimierte Common Data Service for Apps-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können.<br /> Weitere Informationen: <br />[Teamentwicklung von Lösungen](introduction-solutions.md#team-development-of-solutions)<br />[Verwenden des SolutionPackager-Tools, um eine Lösungsdatei zu komprimieren und zu extrahieren](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
+|SolutionPackager-Tool `SolutionPackager.exe`|Dies ist ein Tool, mit dem eine komprimierte Common Data Service-Lösungsdatei reversibel in mehrere XML-Dateien und andere Dateien zerlegt werden kann, so dass diese Dateien durch ein Quellcodeverwaltungssystem leicht verwaltet werden können.<br /> Weitere Informationen: <br />[Teamentwicklung von Lösungen](introduction-solutions.md#team-development-of-solutions)<br />[Verwenden des SolutionPackager-Tools, um eine Lösungsdatei zu komprimieren und zu extrahieren](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
 ## <a name="net-sdk-assemblies"></a>.NET-SDK-Assemblys 
 
@@ -40,7 +40,7 @@ Im Folgenden finden Sie Assemblys, die von NET-Entwicklern verwendet werden kön
 
 Verwenden Sie die Assemblys, um mit dem Organisationsservice und den Suchservices zu interagieren.
 
-Weitere Informationen: [Verwenden des CDS for Apps-Organisationsservice](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
+Weitere Informationen: [Verwenden des Common Data Service-Organisationsdiensts](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
 
 **NuGet-Paket**: [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/)
 
@@ -81,7 +81,7 @@ Weitere Informationen [Erstellen von Windows-Client-Anwendungen mithilfe der XRM
 
 Verwenden Sie diese Assemblys, um Pakete für den Package Deployer zu erstellen.
 
-Weitere Informationen: [Erstellen von Paketen für den CDS for Apps Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)
+Weitere Informationen: [Erstellen von Paketen für den Package Deployer von Common Data Service](/dynamics365/customer-engagement/developer/create-packages-package-deployer)
 
 **NuGet Paket**: [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment/)
 
@@ -103,7 +103,7 @@ Weitere Informationen: [Erste Schritte mit virtuellen Entitäten](/dynamics365/c
 
 ### <a name="extend-outlook-client"></a>Outlook-Client erweitern
 
-Verwenden Sie diese Assembly, um mit Microsoft Dynamics 365 for Outlook und Microsoft CDS for Apps für Microsoft Office Outlook mit Offlinezugriff zu interagieren. 
+Verwenden Sie diese Assembly, um mit Microsoft Dynamics 365 for Outlook und Microsoft Common Data Service für Microsoft Office Outlook mit Offlinezugriff zu interagieren. 
 
 Weitere Informationen: [Dynamics 365 for Outlook erweitern](/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook)
 

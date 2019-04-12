@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: REST-Listener (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: REST-Listener (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie ein Azure Service Bus-Listener für einen REST-Endpunktvertrag geschrieben wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rest-listener"></a>Beispiel: REST-Listener
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rest-listener -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rest-listener -->
 
 Dieses Beispiel zeigt, wie ein `Azure Service Bus` Listener für einen `REST`-Endpunktvertrag geschrieben wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RESTListener) herunterladen.
 

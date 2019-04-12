@@ -1,6 +1,6 @@
 ---
 title: Entitätmetadaten| Microsoft Docs
-description: Erfahren Sie mehr zur Nutzung von Entität-Metadaten im Common Data Service for Apps
+description: Erfahren Sie mehr zur Nutzung von Entität-Metadaten im Common Data Service
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -25,12 +25,12 @@ search.app:
 Was Mike Carter
 This topic was not migrated it was written for PowerApps 
 
-Overlap with content in https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/introduction-entities
+Overlap with content in https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entities
 
 -->
 # <a name="entity-metadata"></a>Entitätsmetadaten
 
-Jede Entität enthält die Funktion, strukturierte Daten zu speichern. Für Entwickler entsprechen Entitäten den Klassen, die Sie beim Arbeiten mit Daten im Common Data Service für Apps.
+Jede Entität enthält die Funktion, strukturierte Daten zu speichern. Für Entwickler entsprechen Entitäten den Klassen, die Sie beim Arbeiten mit Daten im Common Data Service verwenden.
 
 ## <a name="entity-names"></a>Entitätsnamen
 Jede Entitäten hat einen eindeutig definierten Namen, wenn es erstellt wird, Dieser Name ist auf verschiedene Weise dargestellt:
@@ -55,7 +55,7 @@ Jedes Entität weist auch drei Eigenschaften auf, die lokalisierte Werte anzeige
 |`DisplayCollectionName`|Eine mehrzahlige Version des Anzeigenamens. z. B. Konto|
 |`Description`|Ein kurzer SAtz, der die Entität beschreibt, z.B. *Ein Geschäft, das einen Kunden oder einen potenziellen Kunden darstellt. Das Unternehmen, mit dem Geschäftstransaktionen abgerechnet werden.*|
 
-Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Entität in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Um die Werte hinzufügen oder zu bearbeiten gehen Sie zu [CDS für Apps Anpassungs-Handbuch:  Angepasster Entitäts- und Feldtext in anderen Sprachen anpassen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
+Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Entität in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Informationen zum Hinzufügen oder Bearbeiten von lokalisierten Werten finden Sie unter [Common Data Service-Anpassungshandbuch: Übersetzen angepasster Entitäts- und Feldtexte in andere Sprachen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
 
 
 ## <a name="primary-key"></a>Primärschlüssel
@@ -90,8 +90,8 @@ Jede Entität, die Entitätsbilder werden, bestehen aus drei unterstützenden At
 |`EntityImageId`|`UniqueIdentifierType`|Der eindeutige Bezeichner des Bilds|
 
 Weitere Informationen: 
-- [Common Data Service für Apps Entwicklungshandbuch Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)
-- [Common Data Service for Apps Entwicklerhandbuch: Beispiel, Anpassen und Abrufen von Entitäts- und Attribut-Zuordnungen](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
+- [Common Data Service-Entwicklungshandbuch – Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)
+- [Common Data Service-Entwicklerhandbuchbeispiel: Anpassen und Abrufen von Entitäts- und Attribut-Zuordnungen](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 
 > [!NOTE]
 > Dies ist anders als das Symbol, das für eine Entität in Modell-angetriebenen Apps angezeigt wird. Die `IconVectorName`-Eigenschaft enthält den Namen der SVG-Webressource, die dieses festlegt.
@@ -126,7 +126,7 @@ Aktivitäten werden anders gestaltet als andere Arten Entitäten, die Geschäfts
 |[Email](reference/entities/email.md)|Aktivität, die unter Verwendung von E-Mail-Protokollen übermittelt wird.|
 |[Fax](reference/entities/fax.md)|Aktivität, die das Anrufergebnis sowie die Anzahl der Seiten eines Fax nachverfolgt und optional eine elektronische Kopie des Dokuments speichert|
 |[Brief](reference/entities/letter.md)|Aktivität, die die Zustellung eines Briefs nachverfolgt. Die Aktivität kann die elektronische Kopie des Briefs enthalten.|
-|[PhoneCall ](reference/entities/phonecall.md)|Aktivität zur Nachverfolgung eines Telefonanrufs.|
+|[PhoneCall](reference/entities/phonecall.md)|Aktivität zur Nachverfolgung eines Telefonanrufs.|
 |[RecurringAppointmentMaster](reference/entities/recurringappointmentmaster.md)|Der Mastertermin einer Terminserie.|
 |[Social Media-Aktivitäten](reference/entities/socialactivity.md)|Nur zur internen Verwendung.|
 |[Aufgabe](reference/entities/task.md)|Allgemeine Aktivität, die die auszuführende Arbeit darstellt|
@@ -156,8 +156,8 @@ Beispielsweise `PostComment`, `PostLike`und `PostRole` sind alle untergeordneten
 Jede Alternativschlüsseldefinition hat eine oder mehrere Attribute in Kombination, mit der eine Entitätsinstanz eindeutig identifiziert wird. Alternativschlüssel werden in der Regel nur für die Integration mit externen Systemen angewendet. Sie können Alternativschlüssel definieren, um einen Datensatz eindeutig zu identifizieren. Dies ist dann von Nutzen, wenn Sie Daten in ein einzelnes System integrieren, das nicht den Schlüssel des GUID- Bezeichnerwert unterstützt. Sie können einen einzelnen Feldwert oder einer Kombination von Feldwerten definieren, um eine Entität eindeutig zu identifizieren. Einen Alternativschlüssel hinzufügen, wird eine Eindeutigkeitseinschränkung für diese Attribute. Es ist nicht möglich, einen anderen Entitätsdatensatz zu erstellen oder zu aktualisieren, um die gleichen Werte zu haben.
 
 Weitere Informationen: 
- - [Common Data Service for Apps Anpassungsleitfaden: Alternativschlüssel definieren, um auf CDS für Apps Datensätze zu verweisen](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
- - [Definieren Sie Alternativschlüssel für eine Entität oder ein Entwicklerhandbuch: Synchronisieren von CDS für App-Daten mit externen Systemen](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
+ - [Common Data Service-Anpassungsleitfaden: Alternativschlüssel definieren, um auf Common Data Service-Datensätze zu verweisen](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
+ - [Definieren Sie Alternativschlüssel für eine Entität und Entwicklerhandbuch: Synchronisieren von Common Data Service-Daten mit externen Systemen](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
 
 ## <a name="entity-states"></a>Entitätsstatus
 
@@ -191,4 +191,4 @@ Für die Entität "Anfrage" und benutzerdefinierte Entitäten können Sie zusät
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service für Apps-Entitäten](entities.md)
+[Common Data Service-Entitäten](entities.md)

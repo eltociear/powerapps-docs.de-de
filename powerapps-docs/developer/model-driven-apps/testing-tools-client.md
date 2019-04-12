@@ -1,5 +1,5 @@
 ---
-title: Testtools für clientseitige Entwicklung (Common Data Service for Apps) | Microsoft Docs
+title: Testtools für clientseitige Entwicklung (Common Data Service) | Microsoft Docs
 description: Informieren Sie sich über Testframeworks für clientseitige Entwicklung.
 ms.custom: ''
 ms.date: 10/31/2018

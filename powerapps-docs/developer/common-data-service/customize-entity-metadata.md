@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Entitäts-Metadaten (Common Data Service für Apps) | Microsoft Docs
+title: Anpassen von Entitäts-Metadaten (Common Data Service) | Microsoft Docs
 description: Entitäten werden von Metadaten definiert. Durch die Definition oder Änderung der Entitätsmetadaten können Sie die Funktionen einer Entität steuern.
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,10 +1,10 @@
 ---
-title: Geschäftslogik im Common Data Service for Apps anwenden | MicrosoftDocs
+title: Geschäftslogik im Common Data Service anwenden | MicrosoftDocs
 description: 'Informationen über verschiedene Typen der Geschäftslogik, die Sie in Ihrer App verwenden können'
 ms.custom: ''
 ms.date: 08/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -23,14 +23,14 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="apply-business-logic-in-common-data-service-for-apps"></a>Geschäftslogik im Common Data Service for Apps anwenden
+# <a name="apply-business-logic-in-common-data-service"></a>Beantragen Sie Geschäftslogik in Common Data Service
 
 Definieren Sie *Geschäftsregeln* für eine Entität, die für alle Entitätsformen und auf Serverebene gelten. Die für eine Entität definierten Geschäftsregeln gelten sowohl für *Canvas-Apps* als auch für *modellgesteuerte Apps*, wenn die Entität in der App verwendet wird. Weitere Informationen finden Sie unter [Erstellen einer Geschäftsregel für eine Entität](data-platform-create-business-rule.md)
 
 > [!NOTE]
 > Um eine Geschäftsregel zu definieren, die für ein Formular in einer modellgesteuerten Anwendung gilt, siehe [Geschäftsregeln für ein modellgesteuertes App-Formular](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md) erstellen.
 
-Sie können auch die klassischen Common Data Service (CDS) for Apps-Prozesse verwenden, also Workflows und Aktionen. Weitere Informationen: [Microsoft Flow: Workflowprozesse verwenden](/flow/workflow-processes) und [Microsoft Flow: Aktionsübersicht](/flow/actions).
+Sie können auch die klassischen Common Data Service-Prozesse verwenden, also Workflows und Aktionen. Weitere Informationen: [Microsoft Flow: Workflowprozesse verwenden](/flow/workflow-processes) und [Microsoft Flow: Aktionsübersicht](/flow/actions).
 
 ## <a name="see-also"></a>Siehe auch
 

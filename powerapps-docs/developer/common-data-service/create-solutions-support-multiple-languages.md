@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen von Lösungen, die mehrere Sprachen unterstützen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Erstellen von Lösungen, die mehrere Sprachen unterstützen (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-solutions-that-support-multiple-languages"></a>Erstellen von Lösungen, die mehrere Sprachen unterstützen
 
-Common Data Service for Apps unterstützt mehrere Sprachen Wenn Sie die Lösung für Organisationen installieren möchten, die verschiedene Ausgangssprachen enthalten oder die mehrere Sprachen bereitstellen, berücksichtigen Sie diese Option, wenn Sie Ihre Lösung planen. Die folgende Tabelle enthält Taktiken für die Verwendung mit Lösungskomponenten, um sie in einer Lösung einzuschließen, die mehrere Sprachen unterstützt.  
+Common Data Service unterstützt mehrere Sprachen Wenn Sie die Lösung für Organisationen installieren möchten, die verschiedene Ausgangssprachen enthalten oder die mehrere Sprachen bereitstellen, berücksichtigen Sie diese Option, wenn Sie Ihre Lösung planen. Die folgende Tabelle enthält Taktiken für die Verwendung mit Lösungskomponenten, um sie in einer Lösung einzuschließen, die mehrere Sprachen unterstützt.  
   
 |Taktik|Lösungskomponententyp|  
 |------------|-----------------------------|  
@@ -34,7 +34,7 @@ Common Data Service for Apps unterstützt mehrere Sprachen Wenn Sie die Lösung 
  <a name="BKMK_Localizable_Web_Resources"></a>
 
  ## <a name="string-resx-web-resources"></a>Zeichenfolge (RESX) Webressourcen
- Wenn Zeichenfolge (RESX)-Webressourcen mit CDS for Apps hinzugefügt werden, verfügen Entwickler über eine Option, robustere Webressourcen zu erstellen, die mehrere Sprachen unterstützen. Weitere Information [Webressourcen der Zeichenfolge (RESX)](/dynamics365/customer-engagement/developer/resx-web-resources)
+ Wenn Zeichenfolge (RESX)-Webressourcen mit Common Data Service hinzugefügt werden, verfügen Entwickler über eine Option, robustere Webressourcen zu erstellen, die mehrere Sprachen unterstützen. Weitere Information [Webressourcen der Zeichenfolge (RESX)](/dynamics365/customer-engagement/developer/resx-web-resources)
 
  Für frühere Versionen siehe [Entwickleroption](https://msdn.microsoft.com/library/hh670609(v=crm.8).aspx#BKMK_DeveloperOption)
   
@@ -73,7 +73,7 @@ Common Data Service for Apps unterstützt mehrere Sprachen Wenn Sie die Lösung 
   
 4. In der Tabelle können Sie die entsprechenden Übersetzungen bereitstellen.  
   
-5. Importieren Sie Übersetzungen zurück in dieselbe CDS for Apps-Organisation mithilfe der Funktionen "Übersetzungen importieren" und veröffentlichen Sie die Änderungen.  
+5. Importieren Sie Übersetzungen zurück in dieselbe Common Data Service-Organisation mithilfe der Funktionen "Übersetzungen importieren" und veröffentlichen Sie die Änderungen.  
   
 6. Beim nächsten Exportieren der Lösung sind alle Übersetzungen enthalten, die Sie bereitgestellt haben.  
   
@@ -112,9 +112,9 @@ Common Data Service for Apps unterstützt mehrere Sprachen Wenn Sie die Lösung 
  Nach dem Importieren der fertig gestellten Übersetzungen wird benutzerdefinierter Text für Benutzer angezeigt, die in den Sprachen arbeiten, in die der Text übersetzt wurde.  
   
 > [!NOTE]
-> CDS for Apps kann übersetzten Text mit mehr als 500 Zeichen nicht importieren. Wenn Elemente in Ihrer Übersetzung eine Länge von 500 Zeichen überschreiten, tritt beim Importvorgang ein Fehler auf. Überprüfen Sie bei Auftreten eines Importfehlers die Zeile in der Datei, durch die der Fehler verursacht wurde, verringern Sie die Zeichenanzahl, und führen Sie einen erneuten Importvorgang aus.  
+> In Common Data Service kann übersetzter Text mit mehr als 500 Zeichen nicht importiert werden. Wenn Elemente in Ihrer Übersetzung eine Länge von 500 Zeichen überschreiten, tritt beim Importvorgang ein Fehler auf. Überprüfen Sie bei Auftreten eines Importfehlers die Zeile in der Datei, durch die der Fehler verursacht wurde, verringern Sie die Zeichenanzahl, und führen Sie einen erneuten Importvorgang aus.  
   
- Da die Anpassung nur in der Ausgangssprache unterstützt wird, können Sie in CDS for Apps mit der Ausgangssprache arbeiten, die als Spracheinstellung eingestellt ist. Wenn Sie überprüfen möchten, ob der übersetzte Text angezeigt wird, muss die Spracheinstellung für die CDS for Apps-Benutzeroberfläche geändert werden. Zum Ausführen weiterer Anpassungen muss die Spracheinstellung dann wieder auf die Ausgangssprache festgelegt werden.  
+ Da die Anpassung nur in der Ausgangssprache unterstützt wird, können Sie Common Data Service so verwenden, dass die Ausgangssprache auf Ihre Spracheinstellung festgelegt ist. Wenn Sie überprüfen möchten, ob der übersetzte Text angezeigt wird, muss die Spracheinstellung für die Benutzeroberfläche von Common Data Service geändert werden. Zum Ausführen weiterer Anpassungen muss die Spracheinstellung dann wieder auf die Ausgangssprache festgelegt werden.  
   
 <a name="BKMK_LocalizationInBaseLanguageStrings"></a>   
 
@@ -171,7 +171,7 @@ Common Data Service for Apps unterstützt mehrere Sprachen Wenn Sie die Lösung 
   
 6. Bei Verwendung der Organisationsausgangssprache können Sie zum Bereich **Lösungen** unter **Einstellungen** navigieren und das lokalisierte Dialogfeld als Teil einer Lösung hinzufügen.  
   
-   Das Dialogfeld, das in der anderen Sprache erstellt wurde, wird nur Benutzern angezeigt, die CDS for Apps mithilfe dieser Sprache anzeigen.  
+   Das Dialogfeld, das in der anderen Sprache erstellt wurde, wird nur Benutzern angezeigt, die Common Data Service in dieser Sprache anzeigen.  
   
 <a name="BKMK_UseXMLWebResourcesAsLanguageResources"></a>   
 

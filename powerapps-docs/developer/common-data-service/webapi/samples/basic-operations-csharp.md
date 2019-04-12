@@ -1,10 +1,10 @@
 ---
-title: 'Web API Basic Operations Sample (C#) (Common Data Service für Apps)| Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Common Data Service for Apps-Entitätsinstanzen über die Common Data Service for Apps-Web-API durchführen'
+title: 'Beispiel zu grundlegenden Web-API-Vorgängen (C#) (Common Data Service)| Microsoft Docs'
+description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Common Data Service-Entitätsinstanzen über die Common Data Service-Web-API durchführen'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,16 +22,16 @@ search.app:
 ---
 # <a name="web-api-basic-operations-sample-c"></a>Beispiel grundlegender Web-API-Operationen (C#)
 
-Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Common Data Service for Apps-Entitätsinstanzen über die Common Data Service for Apps-Web-API durchführen.  
+Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Common Data Service-Entitätsinstanzen über die Common Data Service-Web-API durchführen.  
   
 > [!NOTE]
-> Dieses Beispiel implementiert den Common Data Service für Apps-Operationen und -Konsolenausgaben, der in [Web API Basic Operations Sample](../web-api-basic-operations-sample.md) beschrieben ist, und verwendet die in [Web API Samples (C#)](../web-api-samples-csharp.md) beschriebenen gemeinsamen C#-Konstrukte.  
+> Dieses Beispiel implementiert die Common Data Service-Operationen und -Konsolenausgaben, die in [Grundlegendes Web-API-Betriebsbeispiel](../web-api-basic-operations-sample.md) beschrieben sind, und verwendet die in [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) beschriebenen gemeinsamen C#-Konstrukte.  
   
 <a name="bkmk_prerequisites"></a>
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die Voraussetzungen für alle Common Data Service for Apps Web API C# Beispiele sind im Abschnitt [Voraussetzungen](../web-api-samples-csharp.md#bkmk_prerequisites) des übergeordneten Themas [Web API Samples (C#)](../web-api-samples-csharp.md) beschrieben.  
+Die Voraussetzungen für alle C#-Beispiele der Common Data Service-Web-API sind im Abschnitt [Voraussetzungen](../web-api-samples-csharp.md#bkmk_prerequisites) des übergeordneten Themas [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) beschrieben.  
   
 <a name="bkmk_runSample"></a>
   
@@ -42,7 +42,7 @@ Gehen Sie zu [Web API Basic Operations Sample (C#)](https://github.com/Microsoft
 |Datei|Zweck/Beschreibung|  
 |----------|--------------------------|  
 |SampleProgram.cs|Enthält den primären Quellcode für dieses Beispiel.|  
-|App.config|Die Konfigurationsdatei der Anwendung, die den Platzhalter Common Data Service for Apps Server-Verbindungsinformationen enthält. Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Wenn Sie Verbindungsinformationen für ein Sample konfigurieren, können Sie die anderen Samples mit der gleichen Konfiguration ausführen.|  
+|App.config|Die Konfigurationsdatei der Anwendung, die Platzhalterinformationen der Common Data Service-Serververbindung enthält. Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Wenn Sie Verbindungsinformationen für ein Sample konfigurieren, können Sie die anderen Samples mit der gleichen Konfiguration ausführen.|  
 |SampleHelper.cs|Enthält den Helfercode, der bei der Ausführung häufiger Aufgaben wie Anwendungskonfiguration, Authentifizierung und `HTTP`-Antwortfehlerbehandlung hilft.<br/>Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Es enthält Hilfsmethoden zur Verwaltung von Ausnahmen und das OAuth Token. Weitere Informationen zu den Methoden in dieser Datei finden Sie im Beispiel der Simple Web API.|  
 |SampleMethod.cs|Enthält alle Methoden, die den Quellcode im Beispiel unterstützen. In dieser Datei können Funktionen definiert werden, die in SampleProgram.cs verwendet werden. |
 |BasicOperations.sln <br />BasicOperations.csproj <br />Packages.config <br />AssemblyInfo.cs|Die Standard-Visual Studio 2017-Lösung, das Projekt, die NuGet-Paketkonfiguration Assemblyinformationsdateien für dieses Beispiel.|  
@@ -50,7 +50,7 @@ Gehen Sie zu [Web API Basic Operations Sample (C#)](https://github.com/Microsoft
  Führen Sie als Nächstes das folgende Verfahren aus, um dieses Beispiel auszuführen.  
   
 1. Suchen und doppelklicken Sie auf die Lösungsdatei BasicOperations.sln um die Lösung in Visual Studio zu laden. Erstellen Sie die BasicOperations-Lösung. Dies sollte alle erforderlichen NuGet-Pakete automatisch herunterladen und installieren.
-2. Bearbeiten Sie die Anwendungskonfigurationsdatei App.config um Verbindungsinformationen für Ihren Common Data Service for Apps-Server anzugeben.
+2. Bearbeiten Sie die Anwendungskonfigurationsdatei App.config um Verbindungsinformationen für Ihren Common Data Service-Server anzugeben.
 3. Führen Sie das Projekt BasicOperations in Visual Studio aus. Alle Beispiellösungen sind für die Ausführung im Debugmodus konfiguriert.
 
 <a name="bkmk_codeListing"></a>
@@ -563,7 +563,7 @@ HttpResponseMessage disassocResponse2 = client.DeleteAsync(dis2Uri).Result;
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](../overview.md)<br />
+[Common Data Service-Web-API verwenden](../overview.md)<br />
 [Erstellen einer Entität mithilfe des Web-API](../create-entity-web-api.md)<br />
 [Entitäten aktualisieren und löschen mithilfe der Web API](../update-delete-entities-using-web-api.md)<br />
 [Abrufen einer Entität mithilfe des Web-API](../retrieve-entity-using-web-api.md)<br />

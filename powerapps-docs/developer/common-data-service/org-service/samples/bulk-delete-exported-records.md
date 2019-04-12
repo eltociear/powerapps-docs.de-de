@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Massenlöschung exportierter Datensätze (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Massenlöschung exportierter Datensätze (Common Data Service) | Microsoft Docs'
 description: 'In diesem Beispiel wird gezeigt, wie Sie eine Massenlöschung von Datensätzen ausführen'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-bulk-delete-exported-records"></a>Beispiel: Massenlöschung exportierter Datensätze
 
-Dieses Beispiel zeigt, wie eine Massenlöschung von Datensätzen durchgeführt wird, die zuvor aus Common Data Service for Apps exportiert wurden, indem die Option **Exportieren nach Excel** verwendet wurde. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteExported) herunterladen.
+Dieses Beispiel zeigt, wie eine Massenlöschung von Datensätzen durchgeführt wird, die zuvor aus Common Data Service exportiert wurden, indem die Option **Exportieren nach Excel** verwendet wurde. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteExported) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

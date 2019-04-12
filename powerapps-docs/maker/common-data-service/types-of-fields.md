@@ -1,9 +1,9 @@
 ---
-title: Felddatentypen im Common Data Service for Apps | MicrosoftDocs
+title: Felddatentypen im Common Data Service | MicrosoftDocs
 description: 'Lernen Sie die verschiedenen Felddatentypen, die für Ihre Anwendung zur Verfügung stehen, kennen.'
 keywords: ''
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -58,8 +58,8 @@ Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps-Portal](http
 |**Ganze Zahl**|**Ganze Zahl**<br />*Kein*-Format|`IntegerType`|
 
 Weitere Beschreibungen für jeden Typ, den Sie hinzufügen oder bearbeiten können, finden Sie im Thema des entsprechenden Designers:
- - [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit PowerApps-Portal: Feld Datentyp](create-edit-field-portal.md#field-data-types)
- - [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit PowerApps-Lösungsexplorer: Feld Datentyp](create-edit-field-solution-explorer.md#field-data-types)
+ - [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Portal: Felddatentypen](create-edit-field-portal.md#field-data-types)
+ - [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungsexplorer: Felddatentypen](create-edit-field-solution-explorer.md#field-data-types)
 
 Weitere Informationen darüber, wie Felddatentypen in der API definiert werden, finden Sie unter [Attributmetadaten](/powerapps/developer/common-data-service/entity-attribute-metadata)
 

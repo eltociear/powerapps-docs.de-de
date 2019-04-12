@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Senden von Massen-E-Mails und Überwachen der Ergebnisse (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Senden von Massen-E-Mails und Überwachen der Ergebnisse (Common Data Service) | Microsoft Docs'
 description: 'Diese Beispiele zeigen, wie Massen-E-Mails gesendet und Ergebnisse überwacht werden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-send-bulk-email-and-monitor-results"></a>Beispiel: Senden von Massen-E-Mails und Überwachen der Ergebnisse
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-send-bulk-email-monitor-results -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-send-bulk-email-monitor-results -->
 
 Dieses Beispiel zeigt, wie mithilfe von <xref:Microsoft.Crm.Sdk.Messages.SendBulkMailRequest> Massen-E-Mails gesendet und die Ergebnisse durch Abrufen von Datensätzen aus der `AsyncOperation`-Entität überwacht werden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkEmail) herunterladen.
 

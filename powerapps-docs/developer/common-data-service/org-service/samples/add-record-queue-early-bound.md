@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Einen Datensatz zur Abfrage hinzufügen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Einen Datensatz zur Abfrage hinzufügen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie einem einer Warteschlange ein Datensatz zugefügt wird.'
 ms.custom: ''
 ms.date: 10/31/2018

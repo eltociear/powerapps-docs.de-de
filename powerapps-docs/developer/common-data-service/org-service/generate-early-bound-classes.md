@@ -1,6 +1,6 @@
 ---
-title: Generieren Sie früh gebundene Klassen für den Organisationsservice (Common Data Service für Apps) | Microsoft Docs
-description: 'CrmSvcUtil.exe ist ein Befehlszeilen-Codegenerierungstool für die Verwendung mit Common Data Service für Apps. Dieses Tool erstellt .NET-Framework-Klassen mit früher Bindung, die das Entity Data Model darstellen, das von CDS für Apps verwendet wird.'
+title: Generieren Sie früh gebundene Klassen für den Organisationsservice (Common Data Service) | Microsoft Docs
+description: 'CrmSvcUtil.exe ist ein Befehlszeilen-Codegenerierungstool für die Verwendung mit Common Data Service. Dieses Tool erstellt .NET-Framework-Klassen mit früher Bindung, die das Entity Data Model darstellen, das von Common Data Service verwendet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="generate-early-bound-classes-for-the-organization-service"></a>Generieren von Klassen mit früher Bindung für den Organisationsdienst
 
-**CrmSvcUtil.exe** ist ein Befehlszeilen-Codegenerierungstool für die Verwendung mit Common Data Service für Apps. Dieses Tool erstellt .NET-Framework-Klassen mit früher Bindung, die das Entity Data Model darstellen, das von CDS für Apps verwendet wird. Das Codegenerierungstool (CrmSvcUtil.exe) wird als Bestandteil des [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools)-NuGet-Pakets verteilt. 
+**CrmSvcUtil.exe** ist ein Befehlszeilen-Codegenerierungstool für die Verwendung mit Common Data Service. Dieses Tool erstellt .NET-Framework-Klassen mit früher Bindung, die das Entity Data Model darstellen, das von Common Data Service verwendet wird. Das Codegenerierungstool (CrmSvcUtil.exe) wird als Bestandteil des [Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools)-NuGet-Pakets verteilt. 
 
 > [!NOTE]
 > Informationen zum Herunterladen vom Codegenerierungstool (CrmSvcUtil.exe) finden Sie unter [Tools von NuGet herunterladen](../download-tools-NuGet.md).
@@ -28,11 +28,11 @@ Das **CrmSvcUtil.exe-Tool** erstellt eine Microsoft Visual C# oder Visual Basic 
 
 ## <a name="generate-an-organizationservicecontext-class"></a>Erstellt eine OrganizationServiceContext-Klasse
 
-Das Tool kann auch verwendet werden, um eine Klasse zu generieren, die von der <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>-Klasse abgeleitet ist, die als in Entitätscontainer im Entity Data Model auftritt. Der Servicekontext bietet die Einrichtungen für die Nachverfolgung von Änderungen und das Verwalten von Identitäten, Parallelität und Beziehungen. Diese Klasse stellt auch eine <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>-Methode zur Verfügung, die in CDS für Apps Datensätze schreibt, einfügt, aktualisiert und löscht. Weitere Informationen finden Sie unter [Die Organisationsdienst-Kontextklasse verwenden](organizationservicecontext.md).  
+Das Tool kann auch verwendet werden, um eine Klasse zu generieren, die von der <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>-Klasse abgeleitet ist, die als in Entitätscontainer im Entity Data Model auftritt. Der Servicekontext bietet die Einrichtungen für die Nachverfolgung von Änderungen und das Verwalten von Identitäten, Parallelität und Beziehungen. Diese Klasse stellt auch eine <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>-Methode zur Verfügung, die in Common Data Service-Datensätze schreibt, einfügt, aktualisiert und löscht. Weitere Informationen finden Sie unter [Die Organisationsdienst-Kontextklasse verwenden](organizationservicecontext.md).  
 
 ## <a name="use-generated-classes"></a>Verwenden von erstellten Klassen
 
-Die Klassen, die vom Codegenerierungstool erstellt werden, sind konzipiert, um in eine Klassenbibliothek eigebaut zu werden, auf die in Projekten verwiesen wird, die CDS für Apps verwenden. Nachdem Sie die Klassendatei mithilfe des Tools erstellt haben, sollten Sie die Datei dem Visual Studio-Projekt hinzufügen. Sie müssen auch einigen Assemblys Verweise hinzufügen, von denen die generierten Klassen abhängig sind.  
+Die Klassen, die vom Codegenerierungstool erstellt werden, sind konzipiert, um in eine Klassenbibliothek eingebaut zu werden, auf die in Projekten verwiesen wird, die Common Data Service verwenden. Nachdem Sie die Klassendatei mithilfe des Tools erstellt haben, sollten Sie die Datei dem Visual Studio-Projekt hinzufügen. Sie müssen auch einigen Assemblys Verweise hinzufügen, von denen die generierten Klassen abhängig sind.  
 
 Die folgenden Liste führt Aassemblys auf, auf die in Ihrem Projekt verwiesen werden muss, wenn Sie die generierte Codedatei verwenden.  
 
@@ -49,7 +49,7 @@ Das Codegenerierungstool nimmt einige Parameter, die die Inhalte der Datei besti
 
 Führen Sie das `CrmSvcUtil.exe` Tool im `Tools\CoreTools` Ordner aus, der erstellt wurde, als Sie die Tools mithilfe des Skripts ein, das heruntergeladen haben in beschrieben wurde [Laden Sie herunter NuGet von Tools](../download-tools-NuGet.md). Wenn Sie das Tool in einem anderen Ordnerspeicherort ausführen, stellen Sie sicher, dass eine Kopie der `Microsoft.Xrm.Sdk.dll`-Assemblys sich in dem gleichen Ordner befindet.  
 
-Im folgenden Beispiel wird das Format für die Ausführung von Tools in der Befehlszeile mit CDS for Apps gezeigt. Um die interaktiven Anmeldung zu verwenden, können Sie diese einfach Optionen zur Verfügung stellen:
+Im folgenden Beispiel wird das Format für die Ausführung von Tools in der Befehlszeile mit Common Data Service gezeigt. Um die interaktiven Anmeldung zu verwenden, können Sie diese einfach Optionen zur Verfügung stellen:
 
 ```ms-dos
 CrmSvcUtil.exe /interactivelogin ^
@@ -88,7 +88,7 @@ CrmSvcUtil.exe ^
 > [!NOTE]
 > Die oben aufgeführten Beispiele nutzen dasTabstoppzeichen des Karat (`^`), um die Liste von Parametern für Lesbarkeit oben zu unterbrechen. Sie können die Befehlsparameter mit Argumenten mithilfe des Notizblockes verfassen und ihn in der Befehlszeile einfügen.
 
-- Bei `username` und `password`-Parameter geben Sie den Benutzernamen bzw. das Kennwort ein, das verwendet wird, um sich für die CDS Apps anmelden. 
+- Bei `username` und `password`-Parameter geben Sie den Benutzernamen bzw. das Kennwort ein, das verwendet wird, um sich für Common Data Service anmelden. 
 - Für die `url` Parameter können Sie die korrekte URL der Webanwendung finden, indem Sie **Einstellungen** auswählen, zu **Anpassungen** navigieren, und dann **Entwickleressourcen** schließen. Die URL wird unter **Organisationsservice** angezeigt.  
 
 Verwenden Sie den folgenden Befehl, um die unterstützten Befehlszeilenparameter anzuzeigen.
@@ -118,8 +118,8 @@ Die folgende Tabelle enthält die Codegenerierungstoolparameter und gibt eine ku
 |`help`|`?`|Verwendungsinformationen anzeigen.|False|
 |`nologo`||Das Banner zur Laufzeit unterdrücken.|False|
 |`generateActions`||Generieren Sie Anforderungs- und Antwortklassen für benutzerdefinierte Aktionen.|False|
-|`interactivelogin`|`il`|Wenn es auf Dialog festgelegt wird, wird ein Dialog zur Anmeldung zum CDS für Apps-Service angezeigt. Alle anderen Parameter, die mit der Verbindung zusammen hängen, die auf der Befehlszeile angegeben wurden, werden ignoriert.|False|  
-|`connectionstring`|`connstr`|Enthält Informationen, als einzelne Zeichenfolge bereitgestellt, zur Verbindung mit einer CDS für Apps Organisation. Alle anderen Parameter, die mit der Verbindung zusammen hängen, die auf der Befehlszeile angegeben wurden, werden ignoriert. Weitere Informationen finden Sie unter [Verbindungszeichenfolgen nutzen in XRM Tools, um sich mit Common Data Service für Apps zu verbinden](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md).|False|
+|`interactivelogin`|`il`|Bei Verwendung wird ein Dialog zur Anmeldung zum Common Data Service-Service angezeigt. Alle anderen Parameter, die mit der Verbindung zusammen hängen, die auf der Befehlszeile angegeben wurden, werden ignoriert.|False|  
+|`connectionstring`|`connstr`|Enthält als einzelne Zeichenfolge bereitgestellte Informationen zur Verbindung mit einer Common Data Service-Organisation. Alle anderen Parameter, die mit der Verbindung zusammen hängen, die auf der Befehlszeile angegeben wurden, werden ignoriert. Weitere Informationen finden Sie unter [Verbindungszeichenfolgen in XRM-Tooling nutzen, um sich mit Common Data Service zu verbinden](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md).|False|
 
 
 <a name="bkmk_sampleconfig"></a>

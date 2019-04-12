@@ -1,10 +1,10 @@
 ---
-title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service für Apps) | Microsoft Docs
-description: 'Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service für Apps-Web-API Duplikate erkennen.'
+title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service) | Microsoft Docs
+description: 'Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service-Web-API Duplikate erkennen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -24,7 +24,7 @@ search.app:
 
 # <a name="detect-duplicate-data-using-the-web-api"></a>Erkennen von doppelten Daten mit der Web-API
 
-Common Data Service (CDS) für App erlaubt, doppelte Datensätze eines vorhandenen Datensatzes zu erkennen, um die Richtigkeit der Daten zu wahren. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mit Code](../detect-duplicate-data-with-code.md) 
+Common Data Service erlaubt, doppelte Datensätze eines vorhandenen Datensatzes zu erkennen, um die Richtigkeit der Daten zu wahren. Ausführliche Informationen zum Erkennen von doppelten Daten mithilfe des Codes, finden Sie unter [Erkennen von doppelten Daten mit Code](../detect-duplicate-data-with-code.md) 
 
 ## <a name="detect-duplicates-during-create-operation"></a>Erkennen von Duplikaten beim Vorgang "Erstellen"
 
@@ -40,7 +40,7 @@ Verwenden Sie die Voreinstellungskopfzeile `MSCRM.SuppressDuplicateDetection`, u
 
 
 > [!NOTE]
-> Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. Common Data Service für Apps enthält standardmäßige Duplikaterkennungsregeln für Firmen, Kontakte und Leads, jedoch nicht für andere Datensatztypen. Wenn Sie das System von Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [vgl. Duplikaterkennungsregeln](../duplicaterule-entities.md). 
+> Stellen Sie sicher, dass entsprechende Duplikaterkennungsregeln vorhanden sind. Common Data Service enthält standardmäßige Duplikaterkennungsregeln für Firmen, Kontakte und Leads, jedoch nicht für andere Datensatztypen. Wenn Sie das System von Duplikate für andere Datensatztypen erkennen soll, müssen Sie eine neue Regel erstellen. <br/>- Informationen darüber, wie Sie eine Duplikaterkennungsregel mithilfe der Benutzeroberfläche erstellen, finden Sie unter [Einrichten einer Duplikaterkennungsregel, um Ihre Daten sauber zu halten](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean).<br/>- Weitere Informationen zum Erstellen von Duplikaterkennungsregeln mit Code [vgl. Duplikaterkennungsregeln](../duplicaterule-entities.md). 
 
 
 

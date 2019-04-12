@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen Sie eine wiederkehrende Terminserie, Instanz oder Ausnahme (Common Data Service for Apps) | Microsoft Docs'
+title: 'Erstellen Sie eine wiederkehrende Terminserie, eine Instanz oder eine Ausnahme (Common Data Service) | Microsoft Docs'
 description: 'Erstellen Sie programmgesteuert einen Serienterminmaster (Serie), einzelne Serientermininstanzen, Ausnahmen zu diesen Instanzen, oder konvertieren Sie einen Termin in einen Serientermin.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>Erstellen einer Terminserie, Instanz oder Ausnahme
 
-Wenn Sie einen Terminserienmaster (Serie) erstellen, erstellt Common Data Service for Apps einzelne Termininstanzen basierend auf den angegebenen Wiederholungsinformationen. Sie können auch einzelne Serientermininstanzen und Ausnahmen für diese Instanzen erstellen, und Sie können einen Termin zu einem Serientermin konvertieren.  
+Wenn Sie einen Terminserienmaster (Serie) erstellen, erstellt Common Data Service einzelne Termininstanzen basierend auf den angegebenen Wiederholungsinformationen. Sie können auch einzelne Serientermininstanzen und Ausnahmen für diese Instanzen erstellen, und Sie können einen Termin zu einem Serientermin konvertieren.  
   
 <a name="bkmk_createseries"></a>   
 
@@ -61,7 +61,7 @@ Wenn Sie einen Terminserienmaster (Serie) erstellen, erstellt Common Data Servic
 <a name="bkmk_convert"></a>   
 
 ## <a name="convert-an-appointment-to-a-recurring-appointment"></a>Konvertieren eines Termins in eine Terminserie  
- Eine Terminserie ist ein Termin mit Wiederholungsinformationen. Sie können in CDS for Apps einen vorhandenen Termin in eine Terminserie konvertieren, indem Sie <xref:Microsoft.Crm.Sdk.Messages.AddRecurrenceRequest> verwenden. Wenn Sie einen vorhandenen Termin in eine Terminserie konvertieren, werden die Daten von dem vorhandenen Termin in eine neue Terminserienmasterinstanz kopiert und der vorhandene Termin wird gelöscht.  
+ Eine Terminserie ist ein Termin mit Wiederholungsinformationen. Sie können in Common Data Service einen vorhandenen Termin in eine Terminserie konvertieren, indem Sie <xref:Microsoft.Crm.Sdk.Messages.AddRecurrenceRequest> verwenden. Wenn Sie einen vorhandenen Termin in eine Terminserie konvertieren, werden die Daten von dem vorhandenen Termin in eine neue Terminserienmasterinstanz kopiert und der vorhandene Termin wird gelöscht.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Serientermin-Entitäten](/dynamics365/customer-engagement/developer/recurring-appointment-entities)   

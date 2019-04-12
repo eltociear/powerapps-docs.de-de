@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie Entitätsfelder zugeordnet werden'
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -98,7 +98,7 @@ Die folgenden Regeln zeigen, welche Arten von Daten zugeordnet werden können.
 - Falls es sich bei den Feldern um Optionssätze handelt, müssen die ganzzahligen Werte für jede Option identisch sein.  
   
 > [!NOTE]
->  Wenn Sie Optionssatzfelder zuordnen müssen, wird empfohlen, beide Felder für die Verwendung desselben globalen Optionssatzes zu konfigurieren. Andernfalls kann es schwierig sein, zwei verschiedene Sätze von Optionen manuell synchronisiert zu halten. Wenn die ganzzahligen Werte für jede Option nicht richtig zugeordnet sind, können Sie Probleme in Ihren Daten bekommen. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps (Auswahl)](create-edit-global-option-sets.md)  
+>  Wenn Sie Optionssatzfelder zuordnen müssen, wird empfohlen, beide Felder für die Verwendung desselben globalen Optionssatzes zu konfigurieren. Andernfalls kann es schwierig sein, zwei verschiedene Sätze von Optionen manuell synchronisiert zu halten. Wenn die ganzzahligen Werte für jede Option nicht richtig zugeordnet sind, können Sie Probleme in Ihren Daten bekommen. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)  
   
 ## <a name="automatically-generate-field-mappings"></a>Automatisches Generieren von Feldzuordnungen  
 

@@ -1,10 +1,10 @@
 ---
-title: Common Data Service für Apps-Web-API-Versionen (Common Data Service für Apps) | Microsoft Docs
-description: 'Lesen Sie wie die Versionsverwaltung der "Common Data Service für Apps"""-Web-API funktioniert. "Common Data Service für Apps"-Web-API-Versionen unterstützen versionsspezifische Unterschiede in derselben Umgebung, die sich vom Verhalten in v8x.-Versionen unterscheiden, in der neue Funktionen additiv waren.'
+title: Common Data Service-Web-API-Versionen (Common Data Service) | Microsoft Docs
+description: 'Lesen Sie wie die Versionsverwaltung der "Common Data Service"-Web-API funktioniert. "Common Data Service"-Web-API-Versionen unterstützen versionsspezifische Unterschiede in derselben Umgebung, die sich vom Verhalten in v8x.-Versionen unterscheiden, in der neue Funktionen additiv waren.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,7 +20,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="common-data-service-for-apps-web-api-versions"></a>"Common Data Service für Apps"-Web-API-Versionen
+# <a name="common-data-service-web-api-versions"></a>Common Data Service-Web-API-Versionen
 
 Ab der (v9.0)-Version von Dynamics 365 unterstützt die Web-API versionsspezifische Unterschiede in derselben Umgebung.  
   
@@ -30,7 +30,7 @@ Darüber hinaus können sich die Funktionen des Service ändern, einschließlich
   
 ## <a name="web-api-limitations"></a>-Web-API-Einschränkungen  
 
-Die "Common Data Service für Apps"-Web API bietet komplette Parität mit den Fähigkeiten des Organisationsservices. Für Common Data Service für Apps beschreibt dieses Thema die Beschränkungen, die von der Common Data Service für Apps v8.x-Version weitergegeben wurden. Informationen zu früheren Versionen finden Sie unter [Web-API-Einschränkungen in Dynamics CRM 2016](https://msdn.microsoft.com/library/mt628816\(CRM.8\).aspx).  
+Die "Common Data Service"-Web-API bietet komplette Parität mit den Fähigkeiten des Organisationsservices. Für Common Data Service beschreibt dieses Thema die Beschränkungen, die von der Common Data Service v8.x-Version weitergegeben wurden. Informationen zu früheren Versionen finden Sie unter [Web-API-Einschränkungen in Dynamics CRM 2016](https://msdn.microsoft.com/library/mt628816\(CRM.8\).aspx).  
  
 > [!NOTE] 
 > Wenn Sie eine benutzerdefinierte Aktion definiert haben, die einem komplexen und einen einfachen Rückgabewert enthielt, stand in der Web-API keine entsprechende Aktion zur Verfügung, dafür aber im SOAP-Endpunkt 2011. Ein komplexer Rückgabewert ist ein `EntityReference`, `Entity`oder `EntityCollection`. Sie können eine beliebige Kombination von einfachen Rückgabewerten oder einem einzelner komplexen Rückgabewert haben. Weitere Informationen: [Erstellen eigener Aktionen](/dynamics365/customer-engagement/developer/create-own-actions).
@@ -44,7 +44,7 @@ Die "Common Data Service für Apps"-Web API bietet komplette Parität mit den F�
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
-[Authentifizierung beim Common Data Service für Apps mit der Web API](authenticate-web-api.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
+[Authentifizierung beim Common Data Service mit der Web-API](authenticate-web-api.md)<br />
 [Internet API-Typen und -Vorgänge](web-api-types-operations.md)<br />
 [Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)

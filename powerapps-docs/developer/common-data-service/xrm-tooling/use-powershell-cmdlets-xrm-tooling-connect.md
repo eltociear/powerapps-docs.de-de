@@ -1,10 +1,10 @@
 ---
-title: 'Verwenden von PowerShell-Cmdlets für XRM-Tooling, um eine Verbindung mit CDS für Apps herzustellen (Common Data Service für Apps)| Microsoft Docs'
-description: 'Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tooling wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service für Apps herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer zugreifen kann'
+title: Verwenden von PowerShell-cmdlets für XRM-Tooling zum Verbinden mit Common Data Service (Common Data Service) | Microsoft Docs
+description: 'Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tooling wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer zugreifen kann'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-cds-for-apps"></a>Verwenden von PowerShell-Cmdlets für XRM-Tooling, um eine Verbindung mit CDS für Apps herzustellen
+# <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden von PowerShell-Cmdlets für XRM-Tooling zum Verbinden mit Common Data Service
 
-XRM-Tooling stellt die folgenden Windows PowerShell-Cmdlets bereit, die Sie verwenden können, um eine Verbindung mit CDS für Apps herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat: `Get-CrmConnection` und `Get-CrmOrganizations`.  
+XRM-Tooling stellt die folgenden Windows PowerShell-Cmdlets bereit, die Sie verwenden können, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat: `Get-CrmConnection` und `Get-CrmOrganizations`.  
   
 <a name="Prereq"></a>   
 
@@ -95,18 +95,18 @@ Get-Help “Crm”
   
 <a name="RetrieveOrgs"></a>   
 
-## <a name="use-the-cmdlet-to-retrieve-organizations-from-cds-for-apps"></a>Verwenden Sie das Cmdlet, um Organisationen von CDS für Apps abzurufen  
+## <a name="use-the-cmdlet-to-retrieve-organizations-from-common-data-service"></a>Verwenden Sie das Cmdlet, um Organisationen vom Common Data Service abzurufen  
 
 Verwenden Sie das `Get-CrmOrganizations`-Cmdlet, um Organisationen abzurufen, auf die Sie Zugriff haben.  
   
-1.  Stellen Sie die Anmeldeinformationen für die Verbindung mit Ihrer CDS für Apps-Instanz bereit. Bei Ausführung des folgenden Befehls werden Sie aufgefordert, Ihren Benutzernamen und Ihr Kennwort einzugeben, um eine Verbindung mit der CDS für Apps-Instanz herzustellen, und sie wird in der `$Cred`-Variable gespeichert.  
+1.  Stellen Sie die Anmeldeinformationen bereit, um eine Verbindung mit der Common Data Service-Instanz herzustellen. Bei Ausführung des folgenden Befehls werden Sie aufgefordert, Ihren Benutzernamen und Ihr Kennwort einzugeben, um eine Verbindung mit der Common Data Service-Instanz herzustellen, und sie wird in der `$Cred`-Variable gespeichert.  
   
     ```powershell  
     $Cred = Get-Credential  
     ```  
 2.  Verwenden Sie den folgenden Befehl, um die Organisationen abzurufen, und speichern Sie die Informationen in der Variable `$CRMOrgs`: 
 
-    - Wenn Sie eine Verbindung mit der CDS für Apps-Instanz herstellen:  
+    - Wenn Sie eine Verbindung mit einer Common Data Service-Instanz herstellen:  
   
         ```powershell  
         $CRMOrgs = Get-CrmOrganizations -Credential $Cred -DeploymentRegion NorthAmerica –OnlineType Office365  
@@ -121,7 +121,7 @@ Verwenden Sie das `Get-CrmOrganizations`-Cmdlet, um Organisationen abzurufen, au
         $CRMOrgs = Get-CrmOrganizations –ServerUrl http://<CRM_Server_Host> –Credential $Cred  
         ```      
   
-    -   If you’re connecting to the CDS for Apps server using the claims-based authentication against the specified Home realm:  
+    -   If you’re connecting to the Common Data Service server using the claims-based authentication against the specified Home realm:  
   
         ```powershell  
         $CRMOrgs = Get-CrmOrganizations –ServerUrl http://<CRM_Server_Host> –Credential $Cred –HomRealmURL http://<Identity_Provider_Address>  
@@ -134,39 +134,39 @@ Verwenden Sie das `Get-CrmOrganizations`-Cmdlet, um Organisationen abzurufen, au
     ```  
   
     <!-- TODO:
-     ![CDS for Apps organization information](../media/xrmtooling-powershell-1.png)   -->
+     ![Common Data Service organization information](../media/xrmtooling-powershell-1.png)   -->
   
     > [!TIP]
-    >  Sie können die Variable, die verwendet wurde, um die abgerufenen CDS für Apps-Organisationen (in diesem Fall `$CRMOrgs`) zu speichern, mit dem `Get-CrmConnection`-Cmdlet verwenden, um eine Verbindung mit CDS für Apps herzustellen. Um den Namen der Organisation anzugeben, verwenden Sie den folgenden Befehl: `$CRMOrgs.UniqueName`.  
+    >  Sie können die Variable, die verwendet wurde, um die abgerufenen Common Data Service-Organisationen (in diesem Fall `$CRMOrgs`) zu speichern, mit dem `Get-CrmConnection`-Cmdlet verwenden, um eine Verbindung mit Common Data Service herzustellen. Um den Namen der Organisation anzugeben, verwenden Sie den folgenden Befehl: `$CRMOrgs.UniqueName`.  
     >   
     >  Wenn mehr als einen Organisationswert in der `$CRMOrgs`-Variable gespeichert ist, können auf die `nth`-Organisation mithilfe des folgenden Befehls verweisen: `$CRMOrgs[n-1]`. Wenn Sie beispielsweise auf den eindeutigen Namen der zweiten Organisation in der `$CRMOrgs`-Variable verweisen, verwenden Sie den folgenden Befehl: `$CRMOrgs[1].UniqueName`. Weitere Informationen: [Zugreifen auf Werte in einem Array](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692791\(v=technet.10\))  
   
 <a name="ConnecttoCRM"></a>
    
-## <a name="use-the-cmdlet-to-connect-to-cds-for-apps"></a>Verwenden des Cmdlet, um die Verbindung mit CDS für Apps herzustellen  
+## <a name="use-the-cmdlet-to-connect-to-common-data-service"></a>Verwenden des Cmdlet zur Herstellung einer Verbindung mit Common Data Service  
 
-Verwenden Sie das `Get-CrmConnection`-Cmdlet, um eine Verbindung mit der CDS für Apps-Instanz herzustellen. Mit dem Cmdlet können Sie entweder das allgemeine Anmeldungssteuerelement von XRM-Tooling verwenden, um die Anmeldeinformationen anzugeben und eine Verbindung mit CDS für Apps herzustellen oder um die Anmeldeinformationen als Inline-Parameter anzugeben. Weitere Informationen: [Verwenden des allgemeinen XRM-Tooling-Anmeldungssteuerelements](use-xrm-tooling-common-login-control-client-applications.md)
+Verwenden Sie das Cmdlet `Get-CrmConnection` zur Herstellung einer Verbindung mit einer Common Data Service-Instanz. Mit dem Cmdlet können Sie entweder das allgemeine Anmeldungssteuerelement von XRM-Tooling verwenden, um die Anmeldeinformationen anzugeben und eine Verbindung mit Common Data Service herzustellen oder um die Anmeldeinformationen als Inline-Parameter anzugeben. Weitere Informationen: [Verwenden des allgemeinen XRM-Tooling-Anmeldungssteuerelements](use-xrm-tooling-common-login-control-client-applications.md)
 
 > [!IMPORTANT]
 > Vor der Nutzung des `Get-CrmConnection` cmdlets, stellen Sie sicher, dass Sie den folgenden Befehl  verwenden, um mithilfe von TLS 1,2 x PowerShell mit der Customer Engagement Instanz eine Verbindung herzustellen:<br/>
 > `[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12`<br/>
 > Weitere Informationen zur TLS Anforderung 1.2 für Customer Engagement Verbindung: [Blogbeitrag: Updates, die zur Dynamics 365 Customer Engagement Verbindungssicherheit beitragen](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)   
   
-### <a name="connect-to-cds-for-apps-by-using-the-common-login-control"></a>Mit dem allgemeinen Anmeldungssteuerelement eine Verbindung mit CDS für Apps herstellen  
+### <a name="connect-to-common-data-service-by-using-the-common-login-control"></a>Mit dem allgemeinen Anmeldungssteuerelement eine Verbindung mit Common Data Service herstellen  
   
-1.  Wenn Sie das allgemeine Anmeldungssteuerelement verwenden möchten, um die Anmeldeinformationen bei der Herstellung einer Verbindung mit CDS für Apps bereitzustellen, verwenden Sie den folgenden Befehl. Die Informationen werden in der `$CRMConn`-Variablen gespeichert, damit Sie sie später verwenden können.  
+1.  Wenn Sie das allgemeine Anmeldungssteuerelement verwenden möchten, um die Anmeldeinformationen bei der Herstellung einer Verbindung mit der Common Data Service-Instanz bereitzustellen, verwenden Sie den folgenden Befehl. Die Informationen werden in der `$CRMConn`-Variablen gespeichert, damit Sie sie später verwenden können.  
   
     ```powershell  
     $CRMConn = Get-CrmConnection -InteractiveMode  
     ```  
   
-2.  Das Dialogfeld **Anmeldesteuerelement** wird angezeigt. Stellen Sie die Anmeldeinformationen bereit, um eine Verbindung mit der CDS für Apps-Instanz herzustellen, und klicken Sie auf **Anmelden**.  
+2.  Das Dialogfeld **Anmeldesteuerelement** wird angezeigt. Stellen Sie die Anmeldeinformationen bereit, um eine Verbindung mit der Common Data Service-Instanz herzustellen und klicken Sie auf **Anmelden**.  
   
-### <a name="connect-to-cds-for-apps-by-specifying-credentials-inline"></a>Stellen Sie eine Verbindung mit CDS für Apps her, indem Sie die Anmeldeinformationen inline angeben.  
+### <a name="connect-to-common-data-service-by-specifying-credentials-inline"></a>Stellen Sie eine Verbindung mit Common Data Service her, indem Sie inline Anmeldeinformationen angeben.  
   
-1.  Verwenden Sie folgende Befehle, um die Verbindung mit CDS für Apps herzustellen. Beachten Sie, dass diese befehle die `$Cred`-Variable verwenden, um die Anmeldeinformationen beim Abrufen der Organisationen zu speichern. Die Verbindungsinformationen werden in der `$CRMConn`-Variablen gespeichert:
+1.  Verwenden Sie die folgenden Befehle, um eine Verbindung mit Common Data Service herzustellen. Beachten Sie, dass diese befehle die `$Cred`-Variable verwenden, um die Anmeldeinformationen beim Abrufen der Organisationen zu speichern. Die Verbindungsinformationen werden in der `$CRMConn`-Variablen gespeichert:
 
-    <!-- -   If you’re connecting to a CDS for Apps instance:   -->
+    <!-- -   If you’re connecting to a Common Data Service instance:   -->
   
         ```powershell  
         $CRMConn = Get-CrmConnection -Credential $Cred -DeploymentRegion <Deployment region name> –OnlineType Office365 –OrganizationName <OrgName>  
@@ -182,7 +182,7 @@ Verwenden Sie das `Get-CrmConnection`-Cmdlet, um eine Verbindung mit der CDS fü
         $CRMConn = Get-CrmConnection –ServerUrl http://<CRM_Server_Host> -Credential $Cred -OrganizationName <OrgName>  
         ```
   
-    -   If you’re connecting to the CDS for Apps server using the claims-based authentication against the specified Home realm:  
+    -   If you’re connecting to the Common Data Service server using the claims-based authentication against the specified Home realm:  
   
         ```powershell  
         $CRMConn = Get-CrmConnection –ServerUrl http://<CRM_Server_Host> -Credential $Cred -OrganizationName <OrgName> –HomRealmURL http://<Identity_Provider_Address>  
@@ -198,10 +198,10 @@ Verwenden Sie das `Get-CrmConnection`-Cmdlet, um eine Verbindung mit der CDS fü
     ```  
   
     <!--TODO:
-     ![CDS for Apps connection information and status](../media/xrm-tooling-powershell-2.png "CDS for Apps connection information and status")   -->
+     ![Common Data Service connection information and status](../media/xrm-tooling-powershell-2.png "Common Data Service connection information and status")   -->
   
 ### <a name="see-also"></a>Siehe auch
   
-[Verwenden der XRM-Tooling-API, um eine Verbindung mit CDS für Apps herzustellen](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden der XRM-Tooling-API zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
 [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md)<br />
 [Blog: PowerShell-Modul für die Ausführung von Datenvorgängen und die Bearbeitung der Benutzer- und Systemeinstellungen in CRM](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)

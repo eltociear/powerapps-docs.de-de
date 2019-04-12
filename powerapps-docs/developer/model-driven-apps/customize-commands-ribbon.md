@@ -1,6 +1,6 @@
 ---
 title: Passen Sie Befehle und Menüband an (modellgesteuerte Apps) | Microsoft Docs
-description: 'Common Data Service for Apps zeigt Befehle auf unterschiedliche Arten an, abhängig von der Entität und dem Client. An den meisten Stellen in der Webanwendung wird eine Befehlsleiste anstelle eines Menübands angezeigt. Dynamics 365 für Tablets verwendet auch Daten, die als Menübänder definiert sind, um zu steuern, welche Befehle auf einer für Toucheingabe optimierten Befehlsleiste verfügbar sind.'
+description: 'Common Data Service zeigt Befehle auf unterschiedliche Arten an, abhängig von der Entität und dem Client. An den meisten Stellen in der Webanwendung wird eine Befehlsleiste anstelle eines Menübands angezeigt. Dynamics 365 für Tablets verwendet auch Daten, die als Menübänder definiert sind, um zu steuern, welche Befehle auf einer für Toucheingabe optimierten Befehlsleiste verfügbar sind.'
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
@@ -22,9 +22,9 @@ search.app:
 
 # <a name="customize-commands-and-the-ribbon"></a>Passen Sie Befehle und das Menüband an
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
 
- Common Data Service for Apps zeigt Befehle auf unterschiedliche Arten an, abhängig von der Entität und dem Client. An den meisten Stellen in der Webanwendung wird eine *Befehlsleiste* anstelle eines Menübands angezeigt. Dynamics 365 for Tablets verwendet auch Daten, die als Menübänder definiert sind, um zu steuern, welche Befehle auf einer für Toucheingabe optimierten Befehlsleiste verfügbar sind.  
+ Common Data Service zeigt Befehle auf unterschiedliche Arten an, abhängig von der Entität und dem Client. An den meisten Stellen in der Webanwendung wird eine *Befehlsleiste* anstelle eines Menübands angezeigt. Dynamics 365 for Tablets verwendet auch Daten, die als Menübänder definiert sind, um zu steuern, welche Befehle auf einer für Toucheingabe optimierten Befehlsleiste verfügbar sind.  
   
  Die Befehlsleiste bietet verbesserte Leistung. Das Menüband wird weiterhin in der Webanwendung für bestimmte Entitätsformulare angezeigt und für Listenansichten in Dynamics 365 for Outlook verwendet.  
   

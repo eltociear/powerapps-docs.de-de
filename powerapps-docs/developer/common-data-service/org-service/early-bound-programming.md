@@ -1,5 +1,5 @@
 ---
-title: Programmierung von später und früher Bindung mithilfe des Organisationsservice (Common Data Service für Apps) | Microsoft Docs
+title: Programmierung von späterer und früherer Bindung mithilfe des Organisationsservice (Common Data Service) | Microsoft Docs
 description: 'Beschreibt die verschiedenen Programmierungsstile, die verfügbar sind, wenn .NET-SDK-Assemblys mit dem Organisationsservice  verwendet wird.'
 ms.custom: ''
 ms.date: 10/31/2018

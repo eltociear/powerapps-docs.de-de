@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Abrufen von Änderungen an Metadaten (Common Data Service für Apps) | Microsoft Docs
+title: Erstellen und Abrufen von Änderungen an Metadaten (Common Data Service) | Microsoft Docs
 description: 'Die Klassen im Abfrage-Namespace und die RetrieveMetadataChangesRequest und RetrieveMetadataChangesResponse-Klassen erlauben Ihnen, effiziente Metadatenabfragen aufzubauen und Änderungen an den Metadaten, die im Laufe der Zeit auftreten, zu erfassen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -27,7 +27,7 @@ Die Klassen im <xref:Microsoft.Xrm.Sdk.Metadata.Query>-Namespace und die <xref:M
   
 ## <a name="strategies-for-using-metadata"></a>Strategien für die Verwendung von Metadaten  
 
- Mithilfe von Metadaten können Sie Anwendungen erstellen, die sich anpassen, während das Common Data Service für Apps-Datenmodell sich ändert. Metadaten sind für die folgenden Typen von Anwendungen wichtig:  
+ Mithilfe von Metadaten können Sie Anwendungen erstellen, die sich anpassen, während sich das Common Data Service-Datenmodell ändert. Metadaten sind für die folgenden Typen von Anwendungen wichtig:  
   
 -   UI für-Client-Anwendungen  
   

@@ -1,13 +1,13 @@
 ---
 title: Lizenzanforderungen für Entitäten | Microsoft Docs
-description: Eine Erläuterung der Lizenzanforderungen für Entitäten in Common Data Service (CDS) for Apps.
-author: clwesene
+description: Eine Erläuterung der Lizenzanforderungen für Entitäten in Common Data Service.
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/01/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -16,13 +16,13 @@ search.app:
 ---
 
 # <a name="license-requirements-for-entities"></a>Lizenzanforderungen für Entitäten
-App-Hersteller können die meisten Entitäten verwenden, die in Common Data Service (CDS) for Apps verfügbar sind (einschließlich benutzerdefinierter Entitäten und Entitäten, die Teil des allgemeinen Datenmodells sind), um Apps und Flows für Benutzer zu erstellen, die eine PowerApps-Plan 1 oder Microsoft Flow Plan 1-Lizenz haben. In einigen Fällen enthalten Entitäten komplexe Geschäftslogik oder sind an Dynamics 365-Anwendungen gebunden, die von App-Benutzer eine bestimmte Lizenz erfordern. 
+App-Hersteller können die meisten Entitäten verwenden, die in Common Data Service verfügbar sind (einschließlich benutzerdefinierter Entitäten und Entitäten, die Teil des allgemeinen Datenmodells sind), um Apps und Flows für Benutzer zu erstellen, die eine PowerApps-Plan 1 oder Microsoft Flow Plan 1-Lizenz haben. In einigen Fällen enthalten Entitäten komplexe Geschäftslogik oder sind an Dynamics 365-Anwendungen gebunden, die von App-Benutzer eine bestimmte Lizenz erfordern. 
 
 
 |Entität    |Beschreibung    |Anforderung    |
 |---------|---------|---------|
 |Entitäten mit komplexer Geschäftslogik   | Dies sind Entitäten, die komplexe serverseitige Geschäftslogik verwenden. Beispielsweise jede Entität, die ein Echtzeitworkflow- oder Code-Plug-In verwendet.       |  [PowerApps-Plan 2](https://powerapps.microsoft.com/pricing/) oder [Flow-Plan 2](https://flow.microsoft.com/pricing/)        |
-|Eingeschränkte Entitäten  |  Dies sind Entitäten, die nicht zum Standard von Common Data Service for Apps gehören, sondern in einer Dynamics 365 Customer Engagement-Anwendung oder einer Drittanbieter-Lösung enthalten sind. Beispielsweise die Entitäten für Wissensartikel, Ziel und Anspruch.     |  [Ein Dynamics 365-Plan](https://dynamics.microsoft.com/pricing/)      | 
+|Eingeschränkte Entitäten  |  Dies sind Entitäten, die nicht zum Standard von Common Data Service gehören, sondern in einer Dynamics 365 Customer Engagement-Anwendung oder einer Drittanbieter-Lösung enthalten sind. Beispielsweise die Entitäten für Wissensartikel, Ziel und Anspruch.     |  [Ein Dynamics 365-Plan](https://dynamics.microsoft.com/pricing/)      | 
 
 
 > [!NOTE]
@@ -40,13 +40,13 @@ Für Entitäten, die die folgende komplexe serverseitige Logik enthalten, benöt
 Um zu wissen ob Sie Ihren Entitäten komplexere Geschäftslogik hinzugefügt haben, oder nicht, überprüfen Sie die Liste der Plug-In-Assemblys und Workflows, die in Ihrer Umgebung konfiguriert sind. Die Liste der Entitäten, die möglicherweise serverseitige Logik enthalten, nachdem Sie eine Dynamics 365-Anwendung eingerichtet haben, finden Sie unter [Komplexe Entitäten, die PowerApps-Plan 2-Lizenzen benötigen](data-platform-complex-entities.md)  
 
 ### <a name="impacting-license-requirements-when-adding-complex-business-logic"></a>Auswirkungen von Lizenzanforderungen, wenn komplexe Geschäftslogik hinzugefügt wird
-App-Hersteller können Entitäten in der CDS for Apps Code-Plug-Ins und Echtzeitworkflows hinzufügen, ändern dabei jedoch die Lizenzanforderungen für Benutzer von bereits bereitgestellten Apps. App-Hersteller sollten vorsichtig sein, wenn Sie einer Entität komplexer Geschäftslogik hinzufügen und sollten zuerst überprüfen, welche Apps die Entität verwenden und ob die Benutzer dieser Apps die entsprechenden Lizenzen haben.
+App-Hersteller können Entitäten in Code-Plug-Ins und Echtzeitworkflows in Common Data Service hinzufügen, ändern dabei jedoch die Lizenzanforderungen für Benutzer von bereits bereitgestellten Apps. App-Hersteller sollten vorsichtig sein, wenn Sie einer Entität komplexer Geschäftslogik hinzufügen und sollten zuerst überprüfen, welche Apps die Entität verwenden und ob die Benutzer dieser Apps die entsprechenden Lizenzen haben.
 
 ## <a name="restricted-entities"></a>Eingeschränkte Entitäten
 Bestimmte Entitäten, die an die Funktionsweise von Dynamics 365-Anwendungen gebunden sind, benötigen von App-Benutzern die entsprechende Lizenz für die Anwendung, wenn Sie Datensätzen in den Entitäten erstellen, aktualisieren bzw. löschen möchten. Eine vollständige Liste der eingeschränkten Entitäten finden Sie unter [Eingeschränkten Entitäten, die Dynamics 365-Lizenzen erfordern](data-platform-restricted-entities.md).
 
 ## <a name="licensing-examples"></a>Lizenzierungsbeispiele
-Barb und Isaac erstellen Apps in PowerApps mit der CDS for Apps, um ihre Daten zu speichern.
+Barb und Isaac erstellen Apps in PowerApps mit Common Data Service, um ihre Daten zu speichern.
 
 Barb erstellt zwei Canvas-Apps:
 
@@ -59,7 +59,7 @@ Isaac erstellt zwei modellgesteuerte Apps:
 * App 4 &ndash; verwendet die Terminentität zusammen mit der Vorfallentität, die eine eingeschränkte Entität ist
 
 Barb und Isaac benötigen die folgenden Lizenzen:
-* Barb benötigt eine PowerApps-Plan 1-Lizenz, um Canvas-Apps mithilfe der CDS for Apps zu erstellen. Wenn sie eine Datenbank oder eine benutzerdefinierte Entität erstellen muss, benötigt Sie eine PowerApps-Plan 2-Lizenz.
+* Barb benötigt noch eine PowerApps-Plan 1-Lizenz, um Canvas-Apps mithilfe von Common Data Service zu erstellen. Wenn sie eine Datenbank oder eine benutzerdefinierte Entität erstellen muss, benötigt Sie eine PowerApps-Plan 2-Lizenz.
 
 * Isaac benötigt eine PowerApps-Plan 2-Lizenz, um modellgesteuerte Apps zu erstellen.
 
@@ -77,7 +77,7 @@ App-Benutzer benötigen die folgenden Lizenzen:
 Sehen wir uns jetzt an, was passiert, wenn Isaac der benutzerdefinierten Entität einen Echtzeitworkflow hinzugefügt, den Barb und Isaac in ihren Apps verwenden.
 
 Barb und Isaac benötigen die folgenden Lizenzen:
-* Barb benötigt noch eine PowerApps-Plan 1-Lizenz, um Canvas-Apps mithilfe der CDS for Apps zu erstellen.
+* Barb benötigt noch eine PowerApps-Plan 1-Lizenz, um Canvas-Apps mithilfe von Common Data Service zu erstellen.
 
 * Isaac benötigt noch eine PowerApps-Plan 2-Lizenz, um modellgesteuerte Apps zu erstellen.
 

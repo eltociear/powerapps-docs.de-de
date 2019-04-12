@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Erstellen einer Verbindungsrolle (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Erstellen einer Verbindungsrolle (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel veranschaulicht, wie eine Verbindungsrolle erstellt wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-connection-role"></a>Beispiel: Erstellen einer Verbindungsrolle
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-create-connection-role-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-create-connection-role-early-bound -->
 
 Dieses Beispiel zeigt, wie eine Verbindungsrolle erstellt wird, die für Firmen und Kontakte verwendet werden kann. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ConnectionRole) herunterladen.
 

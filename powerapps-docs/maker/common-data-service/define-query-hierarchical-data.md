@@ -1,10 +1,10 @@
 ---
-title: Definieren und Abfragen von hierarchischen Daten Common Data Service for Apps | MicrosoftDocs
+title: Definieren und Abfragen von hierarchischen Daten Common Data Service | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie hierarchiebezogene Daten festlegen und abfragen'
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -35,7 +35,7 @@ Einige Standardobjekte haben bereits Hierarchien definiert. Andere Entitäten, e
 
 ## <a name="define-hierarchical-data"></a>Definieren Sie hierarchische Daten
 
-Mit Common Data Service for Apps werden hierarchische Datenstrukturen durch *auf sich selbst verweisende* Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. 
+Mit Common Data Service werden hierarchische Datenstrukturen durch auf *sich selbst verweisende* Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. 
 
 > [!NOTE]
 > *Auf sich selbst verweisen* bedeutet, dass die Entität mit sich selbst verknüpft ist. Beispielsweise enthält die Firmenentität ein Suchfeld, um sie einem anderen Firmenentitätsdatensatz zuzuweisen.

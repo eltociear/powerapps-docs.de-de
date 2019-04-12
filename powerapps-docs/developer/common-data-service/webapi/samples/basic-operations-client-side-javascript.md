@@ -1,10 +1,10 @@
 ---
-title: Beispiel grundlegender Web-API-Operationen (clientseitiges JavaScript) (Common Data Service for Apps) | Microsoft Docs
-description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Entitätsinstanzen unter Verwendung von clientseitigem JavaScript über die Common Data Service for Apps-Web-API durchführen'
+title: Beispiel grundlegender Web-API-Operationen (clientseitiges JavaScript) (Common Data Service) | Microsoft Docs
+description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Entitätsinstanzen unter Verwendung von clientseitigem JavaScript über die Common Data Service-Web-API durchführen'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -34,7 +34,7 @@ Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Create, Re
 
  Dies ist erforderlich, um das Beispiel auszuführen:  
   
-- Zugriff auf CDS for Apps online oder lokale Version 8.0 oder höher.  
+- Zugriff auf Common Data Service online oder lokale Version 8.0 oder höher.  
   
 - Ein Benutzerkonto mit Rechten zum Import von Lösungen und zur Durchführung von CRUD-Vorgängen (normalerweise eine "Systemadministrator" oder "Systemanpasser" Sicherheitsrolle).  
   
@@ -42,7 +42,7 @@ Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Create, Re
 
 ## <a name="run-this-sample"></a>Beispiel ausführen
 
-Um dieses Beispiel auszuführen, müssen Sie das Lösungspaket hier herunterladen [Microsoft CRM – Beispiele grundlegender Web API-Operationen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824043). Laden Sie die Datei "Microsoft CRM Web API Basic Operations Sample (Client-side JavaScript).zip" herunter und extrahieren Sie die Inhalte. Suchen Sie die WebAPIBasicOperations_1_0_0_1_managed.zip-Lösung, importieren Sie sie in Ihre CDS for Apps-Organisation, und führen Sie das Beispiel aus. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
+Um dieses Beispiel auszuführen, müssen Sie das Lösungspaket hier herunterladen [Microsoft CRM – Beispiele grundlegender Web API-Operationen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824043). Laden Sie die Datei "Microsoft CRM Web API Basic Operations Sample (Client-side JavaScript).zip" herunter und extrahieren Sie die Inhalte. Suchen Sie die WebAPIBasicOperations_1_0_0_1_managed.zip-Lösung, importieren Sie sie in Ihre Common Data Service-Organisation, und führen Sie das Beispiel aus. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
   
 <a name="bkmk_codesample"></a>
 
@@ -491,7 +491,7 @@ Sdk.basicCreateAndUpdatesAsync = function () {
    var contactAlt = {};  
    contactAlt.jobtitle = "Senior Developer";  
    contactAlt.annualincome = 95000;  
-   contactAlt.description = "MS Azure and Common Data Service for Apps Specialist";  
+   contactAlt.description = "MS Azure and Common Data Service Specialist";  
    var properties = [  
       "fullname",  
       "annualincome",  
@@ -865,7 +865,7 @@ Sdk.deleteSampleData = function () {
   
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](../overview.md)<br />
+[Common Data Service-Web-API verwenden](../overview.md)<br />
 [Erstellen einer Entität mithilfe des Web-API](../create-entity-web-api.md)<br />
 [Abrufen einer Entität mithilfe des Web-API](../retrieve-entity-using-web-api.md)<br />
 [Entitäten aktualisieren und löschen mithilfe der Web API](../update-delete-entities-using-web-api.md)<br />

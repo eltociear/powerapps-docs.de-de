@@ -22,7 +22,7 @@ search.app:
 
 # <a name="define-ribbon-actions"></a>Definieren von Menübandaktionen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->
 
 Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuerelemente in einem `<CommandDefinition>`-Element in Kombination mit Regeln ausgeführt werden, die steuern, ob das Steuerelement aktiviert bzw. im Menüband angezeigt wird.  
   
@@ -59,4 +59,4 @@ Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuereleme
 ### <a name="see-also"></a>Siehe auch  
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
  [Definieren von Menüband-Anzeigeregeln](define-ribbon-display-rules.md)   
- [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd) <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo-->

@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie für Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz ein Rollup durchgeführt wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>Beispiel: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-rollup-goal-data-custom-period-target-revenue -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-rollup-goal-data-custom-period-target-revenue -->
 
 Dieses Beispiel zeigt, wie für Zieldaten während einer benutzerdefinierten Periode für den Zielumsatz ein Rollup durchgeführt wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RollupGoalData) herunterladen.
 

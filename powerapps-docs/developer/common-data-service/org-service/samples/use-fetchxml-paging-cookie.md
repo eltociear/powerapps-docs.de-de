@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Verwenden von FetchXML mit einem Auslagerungscookie (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Verwenden von FetchXML mit einem Auslagerungscookie (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie das Auslagerungscookie in FetchXML verwendet wird'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -18,9 +18,9 @@ search.app:
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>Beispiel: Verwenden von FetchXML mit einem Auslagerungscookie
 
 <!-- This could be greatly simplified IMHO 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-fetchxml-paging-cookie
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-fetchxml-paging-cookie
 -->
-Dieses Beispiel zeigt, wie Sie einen Auslagerungscookie in einer FetchXML-Abfrage verwenden, um aufeinander folgende Seiten von Abfrageergebnissen abzurufen. Es verwendet die [IOrganizationService. RetrieveMultiple](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9)-Methode. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseFetchXMLWithPaging) herunterladen.
+Dieses Beispiel zeigt, wie Sie einen Auslagerungscookie in einer FetchXML-Abfrage verwenden, um aufeinander folgende Seiten von Abfrageergebnissen abzurufen. Es verwendet die [IOrganizationService. RetrieveMultiple](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrievemultiple?view=dynamics-general-ce-9)-Methode. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseFetchXMLWithPaging) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

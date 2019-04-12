@@ -1,5 +1,5 @@
 ---
-title: Entitätsattribute Metadatennachrichten (Common Data Service für Apps) | Microsoft Docs
+title: Entitätsattribut-MetadatenMessages (Common Data Service) | Microsoft Docs
 description: 'Über die Nachrichten, die verwendet werden, um Entitätsattributmetadaten zu bearbeiten, auch als Eigenschaften oder Felder bekannt.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 <!-- 
 Was Mike Carter
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/entity-attribute-metadata-messages -->
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-attribute-metadata-messages -->
 
 Ein Entitätsattribut ist ein Container für ein Datenelement in einer Entität. Der Begriff *Attribut* und *Eigenschaft* (Klasseneigenschaft) werden oftmals synonym für den Begriff *Entitätsattribut* verwendet. Die modellgesteuerte Anwendung verwendet den Begriff *Feld*, wenn sie auf Entitätsattribute verweist.  
 

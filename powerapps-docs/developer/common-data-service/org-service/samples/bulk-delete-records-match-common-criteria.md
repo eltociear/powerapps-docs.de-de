@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Massenlöschung von Datensätzen in großen Mengen, die gemeinsamen Kriterien entsprechen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Massenlöschung von Datensätzen in großen Mengen, die gemeinsamen Kriterien entsprechen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt das Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>Beispiel: Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-bulk-delete-records-match-common-criteria -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-bulk-delete-records-match-common-criteria -->
 
 Dieses Beispiel zeigt das Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/BulkDeleteMatchCriteria) herunterladen.
 

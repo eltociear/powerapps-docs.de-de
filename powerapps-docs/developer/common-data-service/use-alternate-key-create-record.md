@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen (Common Data Service für Apps) | Microsoft Docs'
+title: 'Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen (Common Data Service) | Microsoft Docs'
 description: 'Sie können Alternativschlüssel zum Erstellen von Instanzen von der Entity- und EntityReference-Klassen verwenden. Dieses Thema erörtert Verwendungsmuster und mögliche Ausnahmen, die möglicherweise beim Verwenden von Alternativschlüsseln ausgelöst werden.'
 ms.custom: ''
 ms.date: 10/31/2018

@@ -1,5 +1,5 @@
 ---
-title: Organisieren von Lösungen (Common Data Service für Apps) | Microsoft Docs
+title: Organisieren von Lösungen (Common Data Service) | Microsoft Docs
 description: 'Dieses Dokument enthält einige Strategien, um Ihre Lösungen zu organisieren'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,7 +19,7 @@ search.app:
 
 Bevor Sie Lösungen erstellen, nehmen Sie sich etwas Zeit, um im Voraus zu planen. Überlegen Sie beispielsweise, wie viele Lösungen Sie freigeben möchten und ob die Lösungen Komponenten gemeinsam nutzen sollen.  
   
- Außerdem muss ermittelt werden, wie viele Common Data Service für Apps-Organisationen Sie benötigen, um Ihre Linie von Lösungen zu entwickeln. Sie können eine einzelne Organisation für die meisten Strategien verwenden, die in diesem Thema beschrieben werden. Wenn Sie sich jedoch für nur eine Organisation entscheiden und später realisieren, dass Sie mehr benötigen, kann es schwierig sein, die Lösungen zu ändern, falls Benutzer sie bereits installiert haben. Die Verwendung von mehreren Organisationen, obwohl mit mehr Komplexität verbunden, kann bessere Flexibilität bieten.  
+ Außerdem muss ermittelt werden, wie viele Common Data Service-Organisationen Sie benötigen, um Ihre Linie von Lösungen zu entwickeln. Sie können eine einzelne Organisation für die meisten Strategien verwenden, die in diesem Thema beschrieben werden. Wenn Sie sich jedoch für nur eine Organisation entscheiden und später realisieren, dass Sie mehr benötigen, kann es schwierig sein, die Lösungen zu ändern, falls Benutzer sie bereits installiert haben. Die Verwendung von mehreren Organisationen, obwohl mit mehr Komplexität verbunden, kann bessere Flexibilität bieten.  
   
 <a name="BKMK_OptionsToModularize"></a>   
 ## <a name="strategies-to-organize-your-solutions"></a>Strategien zum Organisieren von Lösungen  
@@ -38,7 +38,7 @@ Bevor Sie Lösungen erstellen, nehmen Sie sich etwas Zeit, um im Voraus zu plane
 <a name="BKMK_NoCustomSolution"></a> 
   
 ### <a name="no-custom-solutions"></a>Keine benutzerdefinierten Lösungen  
- Sie müssen keine Lösungen erstellen. Sie können CDS für Apps direkt anpassen, indem Sie die Standardlösung verwenden.  
+ Sie müssen keine Lösungen erstellen. Sie können Common Data Service direkt anpassen, indem Sie die Standardlösung verwenden.  
   
  Sie können die Standardlösung noch als nicht verwaltete Lösung exportieren, um sie zwischen Organisationen zu übertragen.  
   
@@ -69,7 +69,7 @@ Bevor Sie Lösungen erstellen, nehmen Sie sich etwas Zeit, um im Voraus zu plane
 ### <a name="solution-libraries"></a>Lösungsbibliotheken  
  Bei einem ISV mit mehreren Lösungen oder einer großen Unternehmensbereitstellung müssen wahrscheinlich viele Lösungskomponenten gemeinsam genutzt werden. Die besten Möglichkeiten für Lösungen zur gemeinsamen Nutzung von Komponenten bieten Lösungsbibliotheken. Erstellen Sie eine Lösungsbibliothek, indem Sie eine nicht verwaltete Lösung in einer separaten Organisation erstellen und dann diese Komponenten in eine verwaltete Lösung packen. Installieren Sie die verwaltete Lösung in einer anderen Organisation und veranlassen Sie Entwickler, auf diese gemeinsam genutzten Komponenten zu verweisen.  
   
- Das CDS für Apps-Solutions Framework ermöglicht es Ihnen, Schichten von Lösungen zu erstellen, die voneinander abhängen. In der Regel können Sie eine Lösungsbibliothek erstellen, die eine" Basislösung" darstellt. Weitere Lösungen können aufbauend auf dieser Basislösung erstellt werden. Dies ermöglicht eine klarere Trennung von Komponenten. Entwicklerteams, die an Lösungsbibliotheken arbeiten, und diejenigen, die an den abhängigen Lösungen arbeiten, können mit unterschiedlichem Tempo arbeiten. Die abhängigen Lösungen müssen erstellt werden, nachdem die Lösungsbibliotheken installiert wurden.  
+ Das Common Data Service-Solutions Framework ermöglicht es Ihnen, Schichten von Lösungen zu erstellen, die voneinander abhängen. In der Regel können Sie eine Lösungsbibliothek erstellen, die eine" Basislösung" darstellt. Weitere Lösungen können aufbauend auf dieser Basislösung erstellt werden. Dies ermöglicht eine klarere Trennung von Komponenten. Entwicklerteams, die an Lösungsbibliotheken arbeiten, und diejenigen, die an den abhängigen Lösungen arbeiten, können mit unterschiedlichem Tempo arbeiten. Die abhängigen Lösungen müssen erstellt werden, nachdem die Lösungsbibliotheken installiert wurden.  
   
  Dies erfordert, dass Sie eine Voraussetzungslösung erstellen, die Kunden installieren müssen, bevor sie eine abhängige Lösung installieren können. Entwickler, die an den Lösungsbibliotheken arbeiten, können die Arbeit fortsetzen und Aktualisierungen durchführen, solange sie keine abhängigen Lösungen unterbrechen, die sie benötigen.  
   

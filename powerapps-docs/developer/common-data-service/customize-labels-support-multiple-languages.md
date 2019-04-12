@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen von Bezeichnungen, die mehrere Sprachen unterstützen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Erstellen von Bezeichnungen, die mehrere Sprachen unterstützen (Common Data Service) | Microsoft Docs'
 description: 'Infos zum Anpassen von Etiketten, um mehrere Sprachen zu unterstützen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>Anpassen von Etiketten, um mehrere Sprachen zu unterstützen
 
-Wenn Sie Anpassungen in Common Data Service for Apps erstellen, können Sie mehrere Sprachen unterstützen, indem Sie Etiketten verwenden.  
+Wenn Sie Anpassungen in Common Data Service erstellen, können Sie mehrere Sprachen unterstützen, indem Sie Etiketten verwenden.  
 
 <a name="BKMK_UsingLabels"></a>   
 
@@ -28,7 +28,7 @@ Wenn Sie Anpassungen in Common Data Service for Apps erstellen, können Sie mehr
 |<xref:Microsoft.Xrm.Sdk.Label> Klasse|<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" />|
 |<xref:Microsoft.Xrm.Sdk.LocalizedLabel> Klasse|<xref href="Microsoft.Dynamics.CRM.LocalizedLabel?text=LocalizedLabel ComplexType" />|
 
- Etiketten sind lokalisierte Zeichenfolgen, die Benutzern in den Client-Anwendungen angezeigt werden. Sie werden implementiert durch Verwendung der `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> oder <xref:Microsoft.Xrm.Sdk.Label>-Klasse), die Sprachpakete unterstützt. Zeichenfolgen, die den Benutzern angezeigt werden, wie etwa Anzeigenamen von Entitäten oder Optionen in einem Optionssatz, können in mehreren Sprachen gespeichert werden. Benutzer können die Sprache auswählen, in der Formulare und Ansichten in CDS for Apps angezeigt werden sollen.  
+ Etiketten sind lokalisierte Zeichenfolgen, die Benutzern in den Client-Anwendungen angezeigt werden. Sie werden implementiert durch Verwendung der `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> oder <xref:Microsoft.Xrm.Sdk.Label>-Klasse), die Sprachpakete unterstützt. Zeichenfolgen, die den Benutzern angezeigt werden, wie etwa Anzeigenamen von Entitäten oder Optionen in einem Optionssatz, können in mehreren Sprachen gespeichert werden. Benutzer können die Sprache auswählen, in der Formulare und Ansichten in Common Data Service-Apps angezeigt werden.  
 
  Die folgende Tabelle enthält alle Metadaten, die die `Label` verwenden.  
 
@@ -83,14 +83,14 @@ Wenn Sie Anpassungen in Common Data Service for Apps erstellen, können Sie mehr
  Nach dem Importieren der fertig gestellten Übersetzungen wird benutzerdefinierter Text für Benutzer angezeigt, die in den Sprachen arbeiten, in die der Text übersetzt wurde.  
 
 > [!NOTE]
-> CDS for Apps kann übersetzten Text mit mehr als 500 Zeichen nicht importieren. Wenn Elemente in Ihrer Übersetzung eine Länge von 500 Zeichen überschreiten, tritt beim Importvorgang ein Fehler auf. Überprüfen Sie bei Auftreten eines Importfehlers die Zeile in der Datei, durch die der Fehler verursacht wurde, verringern Sie die Zeichenanzahl, und führen Sie einen erneuten Importvorgang aus.  
+> In Common Data Service kann übersetzter Text mit mehr als 500 Zeichen nicht importiert werden. Wenn Elemente in Ihrer Übersetzung eine Länge von 500 Zeichen überschreiten, tritt beim Importvorgang ein Fehler auf. Überprüfen Sie bei Auftreten eines Importfehlers die Zeile in der Datei, durch die der Fehler verursacht wurde, verringern Sie die Zeichenanzahl, und führen Sie einen erneuten Importvorgang aus.  
 
- Da die Anpassung nur in der Ausgangssprache unterstützt wird, können Sie in CDS for Apps mit der Ausgangssprache arbeiten, die als Spracheinstellung eingestellt ist. Wenn Sie überprüfen möchten, ob der übersetzte Text angezeigt wird, muss die Spracheinstellung für die CDS for Apps-Benutzeroberfläche geändert werden. Zum Ausführen weiterer Anpassungen muss die Spracheinstellung dann wieder auf die Ausgangssprache festgelegt werden.  
+ Da die Anpassung nur in der Ausgangssprache unterstützt wird, können Sie Common Data Service so verwenden, dass die Ausgangssprache auf Ihre Spracheinstellung festgelegt ist. Wenn Sie überprüfen möchten, ob der übersetzte Text angezeigt wird, muss die Spracheinstellung für die Benutzeroberfläche von Common Data Service geändert werden. Zum Ausführen weiterer Anpassungen muss die Spracheinstellung dann wieder auf die Ausgangssprache festgelegt werden.  
 
 <a name="BKMK_ManagingLanguages"></a>   
 
 ## <a name="manage-languages-for-your-organization"></a>Verwalten von Sprachen für Ihre Organisation  
- Mit CDS for Apps wird es Ihnen ermöglicht, mehrere Sprachpakete auf einem Server zu speichern und Benutzern die Auswahl von Sprachpaketen zu ermöglichen. Informationen zum Installieren der Language Packs finden Sie in unter [Aktivieren von Sprachen](/dynamics365/customer-engagement/admin/enable-languages). Dieser Abschnitt enthält Informationen zu den Meldungen, mit denen die für Ihre Organisation installierten Sprachpakete verwaltet werden.  
+ Mit Common Data Service wird es Ihnen ermöglicht, mehrere Sprachpakete auf einem Server zu speichern und Benutzern die Auswahl von Sprachpaketen zu ermöglichen. Informationen zum Installieren der Language Packs finden Sie in unter [Aktivieren von Sprachen](/dynamics365/customer-engagement/admin/enable-languages). Dieser Abschnitt enthält Informationen zu den Meldungen, mit denen die für Ihre Organisation installierten Sprachpakete verwaltet werden.  
 
  Die folgende Tabelle enthält die Meldungen, die Sie für die Arbeit mit Sprachpaketen verwenden. Verwenden Sie diese Meldungen mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*>-Methode. Methode.  
 

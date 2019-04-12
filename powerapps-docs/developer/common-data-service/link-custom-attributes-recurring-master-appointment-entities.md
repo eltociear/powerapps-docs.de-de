@@ -1,5 +1,5 @@
 ---
-title: Verknüpfen Sie Attribute für benutzerdefinierte Serienterminmaster- und Terminentitäten (Common Data Service for Apps) | Microsoft Docs
+title: Verknüpfen Sie Attribute für benutzerdefinierte Serienterminmaster- und Terminentitäten (Common Data Service) | Microsoft Docs
 description: 'Verknüpfen benutzerdefinierter Attribute der RecurringAppointmentMaster-Entität mit benutzerdefinierten Attributen der Terminentität, um Daten automatisch zu kopieren.'
 ms.custom: ''
 ms.date: 10/31/2018

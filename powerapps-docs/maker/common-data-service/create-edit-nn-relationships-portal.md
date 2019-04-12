@@ -1,10 +1,10 @@
 ---
-title: 'Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des PowerApps-Portals | MicrosoftDocs'
+title: 'Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des PowerApps-Portals | MicrosoftDocs'
 description: 'Erfahren Sie, wie Sie N:N-Beziehungen erstellen'
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,13 +22,13 @@ search.app:
   - D365CE
 ---
 
-# <a name="create-many-to-many-entity-relationships-in-common-data-service-for-apps-using-powerapps-portal"></a>Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des PowerApps-Portals
+# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-powerapps-portal"></a>Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des PowerApps-Portals
 
-DAs [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, viele-zu-viele-Entitätsbeziehungen für Common Data Service für Apps zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, viele-zu-viele-Entitätsbeziehungen für Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. Weitere Informationen: 
 - [N:N (viele-zu-viele)-Beziehungen erstellen](create-edit-nn-relationships.md)
-- [Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)
+- [Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Lösungs-Explorers](create-edit-nn-relationships-solution-explorer.md)
 
 ## <a name="view-many-to-many-entity-relationships"></a>Viele-zu-viele-Entitätsbeziehungen anzeigen
 
@@ -79,11 +79,11 @@ Während dem [Anzeigen von Entitätsbeziehungen](#view-many-to-many-entity-relat
 
 ![Entitätsbeziehung löschen](media/delete-entity-relationship-portal.png)
 
-Sie können den Befehl **Beziehung löschen** in der Befehlsleiste oder im Zeilenkontextmenü verwenden, wenn Sie die Elipses (**...**) auswählen.
+Sie können den Befehl **Beziehung löschen** in der Befehlsleiste oder im Zeilenkontextmenü verwenden, wenn Sie die Ellipsen (**...**) auswählen.
 
 Durch das Löschen der n:n-Beziehung wird auch die Beziehungsentität gelöscht. Alle Daten, die Entitäten mit der Beziehung verbinden, gehen verloren.
 
 ### <a name="see-also"></a>Siehe auch
 
 [N:N (viele-zu-viele)-Beziehungen erstellen](create-edit-nn-relationships.md)<br />
-[Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)
+[Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Lösungs-Explorers](create-edit-nn-relationships-solution-explorer.md)

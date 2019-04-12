@@ -2,7 +2,7 @@
 title: formContext.ui.navigation Element (Client-API-Referenz) in modellgestützten Apps| MicrosoftDocs
 description: Erfahren Sie mehr über das Verwenden modellgestützten Apps mithilfe von Client-API.
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: 661d084d-744b-44b0-be82-abde6f6e7e90

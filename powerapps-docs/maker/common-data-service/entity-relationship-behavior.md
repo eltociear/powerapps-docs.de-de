@@ -1,5 +1,5 @@
 ---
-title: Entitätbeziehungsverhalten (Common Data Service für Apps) | Microsoft Docs
+title: Entitätbeziehungsverhalten (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 08/01/2018

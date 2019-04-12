@@ -1,9 +1,9 @@
 ---
-title: Verweden des Virtual Entity OData v4 Data Provider mit Common Data Service for Apps | MicrosoftDocs
+title: Verwenden von Virtual Entity OData v4 Data Provider mit Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -28,16 +28,16 @@ In diesem Thema wird beschrieben, wie Sie den OData v4-Datenanbieter konfigurier
 
 ## <a name="odata-v4-data-provider-best-practices"></a>OData v4-Datenanbieter - bewährte Methoden
 
-- Common Data Service for Apps erfordert, dass alle Entitäten ein ID-Attribut haben, diese ID ist bekannt als eindeutiger Bezeichner und der Wert muss ein GUID sein.  Sie können nur ID-Felder zu externen Feldern mit dem `Edm.Guid`-Datentyp zuordnen.  Sie können einen `Edm.Int32`-Datentyp nicht einem Eindeutiger Bezeichner-Datentypfeld in CDS for Apps zuordnen.
--  OData-Entitäten mit auf NULL festlegbaren Eigenschaften müssen so festgelegt werden, dass sie dem zugeordneten Feld in der virtuellen Entität entsprechen. Zum Beispiel muss eine OData-Entitätseigenschaft mit Nullable=False das gemappte Feld in CDS for Apps **Feldanforderung**-Attribut auf **Eingabe erforderlich** gesetzt haben. 
+- Common Data Service erfordert, dass alle Entitäten ein ID-Attribut haben. Diese ID ist bekannt als eindeutiger Bezeichner und der Wert muss ein GUID sein.  Sie können nur ID-Felder zu externen Feldern mit dem `Edm.Guid`-Datentyp zuordnen.  Sie können einen `Edm.Int32`-Datentyp nicht einem eindeutigen Bezeichner-Datentypfeld in Common Data Service zuordnen.
+-  OData-Entitäten mit auf NULL festlegbaren Eigenschaften müssen so festgelegt werden, dass sie dem zugeordneten Feld in der virtuellen Entität entsprechen. Zum Beispiel muss bei einer OData-Entitätseigenschaft mit Nullable=False das zugeordnete Feld in Common Data Service **Feldanforderung**-Attribut auf **Eingabe erforderlich** festgelegt sein. 
 - Für mehrere Abfragen, erhalten Sie, wenn Sie z.B. Daten in einem Raster laden, die Größe des von der externen Datenquelle zurückgegeben Datensets steuern, mithilfe der ausgewählten Filterabfrageparameter.
 - Wenn noch nicht aktiviert, sollten Systemadministratoren Plug-in-Ablaufverfolgung aktivierten. Sobald aktiviert, werden alle Fehler im OData-Endpunkt im Plug-in Ablaufverfolgungsprotokoll aufgezeichnet. Weitere Informationen:  [Administratoren-Handbuch: Systemeinstellungen (Dialogfeld) – Anpassung (Registerkarte)](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab). 
 
 ## <a name="data-type-mapping"></a>Datentypzuordnungen
 
-Die folgende Tabelle enthält das OData-EntityData Model (EDM)- Datentypzuordnungen mit CDS for Apps-Datentypen. 
+Die folgende Tabelle enthält die OData-EntityData Model (EDM)-Datentypzuordnungen mit Common Data Service-Datentypen. 
 
-|OData-Datentyp|CDS for App-Datentyp  |
+|OData-Datentyp|Common Data Service- Datentyp  |
 |---------|---------|
 |`Edm.Boolean`|Zwei Optionen|
 |`Edm.DateTime`|Datum und Uhrzeit|
@@ -69,7 +69,7 @@ Dieses Verfahren zeigt, wie Sie den OData-Standarddatenanbieter als virtuelle Da
 1. Klicken Sie auf der Aktionssymbolleiste auf **Neu**.  
 1. Wählen Sie im Dialogfenster **Datenanbieter auswählen** aus den folgenden Datenquellen und klicken Sie dann auf **OK**.  
   
-    - **OData v4-Datenanbieter**. CDS for Apps beinhaltet einen OData v4-Datenanbieter, der verwendet werden kann, um eine Verbindung mit Datenquellen einzurichten, die den OData v4 offenen Standard unterstützen.  
+    - **OData v4-Datenanbieter**. Common Data Service beinhaltet einen OData v4-Datenanbieter, der verwendet werden kann, um eine Verbindung mit Datenquellen einzurichten, die den offenen Standard OData v4 unterstützen.  
     - *Benutzerdefinierter Datenanbieter*. Wenn Sie ein Datenanbieter-Plug-In importiert haben, wird der Datenanbieter hier angezeigt. Weitere Informationen:  [Entwicklerdokumentation: Erste Schritte mit virtuellen Entitäten](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve)  
     
 1. Füllen Sie auf der Seite **Neue Datenquelle** Eigenschaften die folgenden Felder aus und speichern Sie den Datensatz.  

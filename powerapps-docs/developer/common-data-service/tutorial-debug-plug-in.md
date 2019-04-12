@@ -1,5 +1,5 @@
 ---
-title: 'Lernprogramm: Debuggen eines Plug-In (Common Data Service für Apps) | MicrosoftDocs'
+title: 'Lernprogramm: Debuggen eines Plug-In (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Lernprogramm ist das zweite in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten. '
 ms.custom: ''
 ms.date: 1/28/2019
@@ -49,7 +49,7 @@ Da ein Plug-In auf einen Remoteserver ausgeführt wird, können Sie keinen Debug
 
     ![Profiler installieren](media/tutorial-debug-plug-in-install-profiler.md.png)
 
-1. Dies installiert eine neue verwaltete Lösung namens Plug-in Profiler in Ihrer CDS for App-Umgebung. Es dauert eine Minute oder zwei, den Vorgang abzuschließen.
+1. Dies installiert eine neue verwaltete Lösung namens Plug-in Profiler in Ihrer Common Data Service-Umgebung. Es dauert eine Minute oder zwei, den Vorgang abzuschließen.
 
 ## <a name="start-profiling"></a>Profilierung starten
 

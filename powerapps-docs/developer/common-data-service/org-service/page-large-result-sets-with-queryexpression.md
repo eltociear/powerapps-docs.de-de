@@ -1,5 +1,5 @@
 ---
-title: Auslagern von umfangreichen Ergebnissätzen mit QueryExpression (Common Data Service for Apps) | Microsoft Docs
+title: Auslagern von umfangreichen Ergebnissätzen mit QueryExpression (Common Data Service) | Microsoft Docs
 description: 'In Dynamics 365 (Online) Customer Engagement können Sie die Auslagerungscookiefunktion verwenden, um Auslagerung in einer einzelnen Anwendung für umfangreiche Datasets schneller auszuführen. Die Funktion ist in FetchXML und QueryExpression-Abfragen verfügbar.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="page-large-result-sets-with-queryexpression"></a>Auslagern von umfangreichen Ergebnissätzen mit QueryExpression
 
-In Common Data Service for Apps können Sie die Auslagerungscookiefunktion verwenden, damit die Auslagerung in einer Anwendung für umfangreiche Datasets schneller ausgeführt werden kann. Die Funktion ist in FetchXML und <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Abfragen verfügbar. Wenn Sie die Auslagerungscookiefunktion bei der Abfrage einer Datensatzgruppe verwenden, enthält das Ergebnis einen Wert für das Auslagerungscookie. Um eine höhere Systemleistung zu erzielen, können Sie diesen Wert dann übergeben, wenn Sie die folgende Datensatzgruppe abrufen.  
+In Common Data Service können Sie die Auslagerungscookiefunktion verwenden, damit die Auslagerung in einer Anwendung für umfangreiche Datasets schneller ausgeführt werden kann. Die Funktion ist in FetchXML und <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Abfragen verfügbar. Wenn Sie die Auslagerungscookiefunktion bei der Abfrage einer Datensatzgruppe verwenden, enthält das Ergebnis einen Wert für das Auslagerungscookie. Um eine höhere Systemleistung zu erzielen, können Sie diesen Wert dann übergeben, wenn Sie die folgende Datensatzgruppe abrufen.  
   
  FetchXML und <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> und FetchXML verwenden unterschiedliche Formate für die Auslagerungscookies. Wenn Sie eine Konvertierung von einem Abfrageformat in anderes durchführen, indem Sie die <xref:Microsoft.Crm.Sdk.Messages.QueryExpressionToFetchXmlRequest>- oder die <xref:Microsoft.Crm.Sdk.Messages.FetchXmlToQueryExpressionRequest>-Meldung verwenden, wird der Auslagerungscookiewert ignoriert. Wenn Sie nicht aufeinanderfolgende Seiten abfragen, wird der Auslagerungscookiewert außerdem ignoriert.  
   

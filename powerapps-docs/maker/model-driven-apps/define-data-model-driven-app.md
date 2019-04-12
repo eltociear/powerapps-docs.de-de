@@ -1,7 +1,7 @@
 ---
 title: Definieren Sie Daten für Ihr modellgesteuerten App in PowerApps | MicrosoftDocs
 description: Grundlagen zum Definieren von Daten für die modellgesteuerte App
-Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
+Keywords: 'Daten, Entität, Felder, Beziehung, Attribute, modellgestützte App'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker
@@ -20,15 +20,15 @@ search.app:
 ---
 # <a name="define-data-for-your-model-driven-app"></a>Definieren von Daten für die modellgesteuerte App
 
-Daten für Ihre modellgesteuerte App werden in [Common Data Service (CDS) for Apps](../common-data-service/data-platform-intro.md) definiert. 
+Daten für Ihre modellgesteuerte App werden in [Common Data Service](../common-data-service/data-platform-intro.md) definiert. 
 
 Sie definieren Ihre App-Daten mit den folgenden Komponenten: *Entität*, *Feld* und *Beziehung*.
 
-Ausführliche Informationen zum Arbeiten mit diesen Komponenten in den CDS for Apps zum Definieren der Daten für die modellgesteuerte App, finden Sie in den folgenden Themen im CDS for App-Abschnitt:
+Ausführliche Informationen zum Arbeiten mit diesen Komponenten in den Common Data Service zum Definieren der Daten für die modellgesteuerte App, finden Sie in den folgenden Themen im Common Data Service-Abschnitt:
 
 |Komponente |Thema|
 |-----|----|
-|Entität| [Arbeiten mit Entitäten](../common-data-service/entity-overview.md)|
+|Entität| [Mit Entitäten arbeiten](../common-data-service/entity-overview.md)|
 |Feld| [Mit Feldern arbeiten](../common-data-service/fields-overview.md)|
 |Beziehungen| [Arbeiten mit Beziehungen](../common-data-service/relationships-overview.md)|
 

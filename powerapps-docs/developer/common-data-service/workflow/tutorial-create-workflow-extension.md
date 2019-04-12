@@ -1,5 +1,5 @@
 ---
-title: 'Lernprogramm: Erstellen von Workflow-Erweiterungen (Common Data Service für Apps) | Microsoft Docs'
+title: 'Lernprogramm: Erstellen von Workflow-Erweiterungen (Common Data Service) | Microsoft Docs'
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -33,8 +33,8 @@ In diesem Lernprogramm wird ein sehr einfaches Beispiel verwendet, den Fokus auf
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - Sie müssen Windows Workflow Foundation als einzelne Komponente in Visual Studio 2017 integrieren.  Weitere Informationen: [Visual Studio-Anforderungen](workflow-extensions.md#visual-studio-requirements)
-- Eine Common Data Service for Apps-Instanz und Administratorrechte
-- Verstehen, wie Workflows konfiguriert werden. Weitere Informationen: [Klassische Common Data Service (CDS) für Apps-Workflows](/flow/workflow-processes)
+- Eine Common Data Service-Instanz und Administratorrechte
+- Verstehen, wie Workflows konfiguriert werden. Weitere Informationen: [Klassische Common Data Service-Workflows](/flow/workflow-processes)
 - Eine modellgesteuerte App, die es Ihnen ermöglicht, Firmen zu bearbeiten.
 
 ## <a name="goal"></a>Ziel
@@ -204,7 +204,7 @@ Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Regi
     ![Assembly-Dialog registrieren](media/tutorial-create-workflow-activity-register-assembly-dialog.png)
 
     > [!NOTE]
-    > Hinweis: Bei CDS for Apps werden die gültigen Optionen für die Schritte 3 und 4 ausgewählt und ungültige Optionen werden deaktiviert.
+    > Hinweis: Bei Common Data Service werden die gültigen Optionen für die Schritte 3 und 4 ausgewählt und ungültige Optionen werden deaktiviert.
 
 1. Wählen Sie **Ausgewählte Plug-ins registrieren** aus. Es sollte ein Bestätigungsdialogfeld angezeigt werden.
 
@@ -222,7 +222,7 @@ Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Regi
     |Beschreibung||Gibt den Wert des Eingabeparameters plus 10 zurück.|Wird in der Benutzeroberfläche des Prozessdesigners nicht angezeigt, kann aber bei der Erstellung der Dokumentation von Daten aus der PluginType-Entität hilfreich sein, in der diese Informationen gespeichert werden.|
     |FriendlyName|ein GUID-Wert|IncrementByTen|Anzeigename des Benutzers für das Plug-In.|
     |Name|SampleWorkflowActivity.IncrementByTen|Erhöhen um 10|Der Name des dargestellten Menüs.|
-    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|Probe|Der Name des Untermenüs, das dem Hauptmenü im CDS for Apps Prozess hinzugefügt wurde.|
+    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|Probe|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service-Prozess hinzugefügt wurde.|
 
     > [!NOTE]
     > Wenn **Name** und **WorkflowActivityGroupName** auf null festgelegt sind, wird die benutzerdefinierte Aktivität nicht im Prozessdesigner angezeigt.

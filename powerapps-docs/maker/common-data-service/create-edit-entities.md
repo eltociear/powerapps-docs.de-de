@@ -1,10 +1,10 @@
 ---
-title: Erstellen und bearbeiten Sie Entitäten in Common Data Service for Apps | MicrosoftDocs
+title: Erstellen und bearbeiten Sie Entitäten in Common Data Service | MicrosoftDocs
 description: Informationen zum Erstellen und Bearbeiten von Entitäten
 ms.custom: ''
 ms.date: 05/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-entities-in-common-data-service-for-apps"></a>Erstellen und bearbeiten Sie Entitäten in Common Data Service for Apps | MicrosoftDocs
+# <a name="create-and-edit-entities-in-common-data-service"></a>Erstellen und bearbeiten Sie Entitäten in Common Data Service
 
 Bevor Sie eine benutzerdefinierte Entität erstellen, prüfen Sie, ob die Verwendung einer vorhandenen Entität Ihre Anforderungen erfüllen könnte. Weitere Informationen [Neue Metadaten oder bestehende Metadaten erstellen](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Freigeben eines Datensatzes mithilfe eines Zugriffsteams (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Freigeben eines Datensatzes mithilfe eines Zugriffsteams (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Zugriff auf einen Datensatz mithilfe eines Zugriffsteams gewährt wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-share-a-record-using-an-access-team"></a>Beispiel: Freigeben eines Datensatzes mithilfe eines Zugriffsteams
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-share-record-using-access-team -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-share-record-using-access-team -->
 
 Dieses Beispiel zeigt, wie Zugriff auf einen Datensatz mithilfe eines Zugriffsteams gewährt wird. Alle Mitglieder des Teams erhalten denselben Zugriff auf den Datensatz, der dem Team gewährt wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ShareRecordUsingAccessTeam) herunterladen.
 

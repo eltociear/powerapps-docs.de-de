@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Feedbackentität zum Verwalten von Feedback und Bewertungen für Datensätze (Common Data Service für Apps) | Microsoft Docs
+title: Verwenden der Feedbackentität zum Verwalten von Feedback und Bewertungen für Datensätze (Common Data Service) | Microsoft Docs
 description: 'In diesem Thema wird die Feedbackentität behandelt, mit der Feedback und Bewertungen für Datensätze abgerufen werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="use-the-feedback-entity-to-manage-feedback-and-ratings-for-records"></a>Verwenden der Feedbackentität zum Verwalten von Feedback und Bewertungen für Datensätze
 
-Verbessern Sie Ihre Produkte und Services, indem Sie Benutzern ermöglichen, Feedback und Bewertungen für Entitätsdatensätze in Common Data Service für Apps abzugeben. Zum Beispiel können Sie Feedback und Bewertungen für die `Product`-Entität ermöglichen, um das Feedback der Benutzer zu den Produkten zu kennen, die Sie verkaufen, oder zur `Incident`-(Fall)-Entität, um die Qualität Ihres Kundensupportteams zu verstehen und zu verbessern.  
+Verbessern Sie Ihre Produkte und Services, indem Sie Benutzern ermöglichen, Feedback und Bewertungen für Entitätsdatensätze in Common Data Service abzugeben. Zum Beispiel können Sie Feedback und Bewertungen für die `Product`-Entität ermöglichen, um das Feedback der Benutzer zu den Produkten zu kennen, die Sie verkaufen, oder zur `Incident`-(Fall)-Entität, um die Qualität Ihres Kundensupportteams zu verstehen und zu verbessern.  
   
- Sie können das Feedback und die Bewertung für System- und benutzerdefinierte Entitäten in CDS für Apps aktivieren. Feedback und Bewertung sind standardmäßig für die Entität `KnowledgeArticle` aktiviert. Verwenden Sie die neue `Feedback`-Entität, um Feedback für Entitätsdatensätze automatisch zu erstellen und zu verwalten.  
+ Sie können das Feedback und die Bewertung für System- und benutzerdefinierte Entitäten in Common Data Service aktivieren. Feedback und Bewertung sind standardmäßig für die Entität `KnowledgeArticle` aktiviert. Verwenden Sie die neue `Feedback`-Entität, um Feedback für Entitätsdatensätze automatisch zu erstellen und zu verwalten.  
   
  Zum Aktivieren von programmgesteuertem Feedback für eine:  
   
@@ -30,7 +30,7 @@ Verbessern Sie Ihre Produkte und Services, indem Sie Benutzern ermöglichen, Fee
   Sobald Sie eine Entität für Feedback und Bewertung aktiviert haben, können Sie sie nicht deaktivieren. Nachdem Sie eine Entität für Feedback aktiviert haben, wird eine entsprechende Beziehung zwischen der Entität und der `Feedback`-Entität hergestellt.  
   
 > [!NOTE]
->  Sie können die Anpassungstools in CDS für Apps benutzen, um Feedback und Bewertung für System- und benutzerdefinierte Entitäten zu aktivieren. Weitere Informationen: [Eine Entität für Feedback aktivieren](http://go.microsoft.com/fwlink/p/?LinkId=785436)  
+>  Sie können die Anpassungstools in Common Data Service benutzen, um Feedback und Bewertung für System- und benutzerdefinierte Entitäten zu aktivieren. Weitere Informationen: [Eine Entität für Feedback aktivieren](http://go.microsoft.com/fwlink/p/?LinkId=785436)  
   
  Die `Feedback`-Entität speichert die folgenden Informationen:  
   
@@ -49,7 +49,7 @@ Verbessern Sie Ihre Produkte und Services, indem Sie Benutzern ermöglichen, Fee
   
 - Feedback-Status, wie "Offen" oder "Geschlossen"  
   
-- Feedback-Quelle, um die Quelle anzuzeigen, von der das Feedback eingereicht wurde. Wenn das Feedback von CDS für Apps aus erstellt wurde, wird der Wert auf **Intern** festgelegt. Entwickler können je nach Anwendung, die zum Bereitstellen des Feedbacks verwendet wird, einen Wert ihrer Wahl hinzufügen.  
+- Feedback-Quelle, um die Quelle anzuzeigen, von der das Feedback eingereicht wurde. Wenn das Feedback von Common Data Service aus erstellt wurde, wird der Wert auf **Intern** festgelegt. Entwickler können je nach Anwendung, die zum Bereitstellen des Feedbacks verwendet wird, einen Wert ihrer Wahl hinzufügen.  
   
 - Benutzer, die den Feedback-Datensatz erstellt oder als letztes geändert haben  
   

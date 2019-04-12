@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Verwenden der Duplikaterkennung für die Erstellung und Aktualisierung von Datensätzen (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Verwenden der Duplikaterkennung für die Erstellung und Aktualisierung von Datensätzen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie die Duplikaterkennung für die Erstellung und Aktualisierung von Entitätsdatensätzen aufrufen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,8 @@ search.app:
 ---
 # <a name="sample-use-duplicate-detection-when-creating-and-updating-records"></a>Beispiel: Verwenden der Duplikaterkennung für die Erstellung und Aktualisierung von Datensätzen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/org-service/sample-use-duplicate-detection-when-creating-and-updating-records --> Dieses Beispiel zeigt, wie Sie die Duplikaterkennung für die Erstellung und Aktualisierung von Entitätsdatensätzen aufrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseDuplicatedetectionforCRUD) herunterladen.
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-duplicate-detection-when-creating-and-updating-records -->
+ Dieses Beispiel zeigt, wie Sie die Duplikaterkennung für die Erstellung und Aktualisierung von Entitätsdatensätzen aufrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseDuplicatedetectionforCRUD) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

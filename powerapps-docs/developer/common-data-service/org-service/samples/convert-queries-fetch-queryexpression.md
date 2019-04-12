@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Konvertieren von Abfragen zwischen FetchXML und QueryExpression (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Konvertieren von Abfragen zwischen FetchXML und QueryExpression (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Abfragen zwischen FetchXML und QueryExpression konvertiert werden'
 ms.custom: ''
 ms.date: 10/31/2018

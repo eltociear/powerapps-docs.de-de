@@ -1,6 +1,6 @@
 ---
-title: Offline- und Outlook-Filter und Vorlagen (Common Data Service für Apps)| Microsoft Docs
-description: 'Daten, die zwischen dem Common Data Service für Apps und Dynamics 365 for Outlook synchronisiert werden sollen, werden durch Datenfilter für Office Outlook festgelegt'
+title: Offline- und Outlook-Filter und Vorlagen (Common Data Service)| Microsoft Docs
+description: 'Daten, die zwischen dem Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen, werden durch Datenfilter für Office Outlook festgelegt'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,8 +17,8 @@ search.app:
 ---
 # <a name="offline-and-outlook-filters-and-templates"></a>Offline- und Outlook-Filter und -Vorlagen
 
-Datenfilter für Office Outlook bestimmen, welche Daten zwischen dem Common Data Service für Apps und Dynamics 365 for Outlook synchronisiert werden sollen. CDS für Apps unterstützt die Möglichkeit, den Standardfilter mithilfe des SDK zu ändern und die Änderungen an einen oder alle Benutzer zu übertragen.  
-Sie können Code schreiben, der Administratoren ermöglicht, Filtervorlagen zu erstellen und zu veröffentlichen. Dies ermöglicht einem CDS für Apps-Administrator, allgemeine oder erwünschte Filter zu erstellen, die den Benutzern für die Synchronisierung mit dem Outlook Store und der Offlinedatenbank veröffentlicht werden können. Dies bietet auch die Möglichkeit, eine Standardfiltervorlage anzupassen, die für Benutzer angewendet wird, die zum System hinzugefügt werden, nachdem die Vorlagen ursprünglich veröffentlicht wurden. Der Administrator besitzt auch die Möglichkeit, Benutzerfilter zu aktualisieren oder zu löschen, nachdem sie veröffentlicht wurden.  
+Datenfilter für Office Outlook bestimmen, welche Daten zwischen dem Common Data Service und Dynamics 365 for Outlook synchronisiert werden sollen. Common Data Service unterstützt die Möglichkeit, den Standardfilter mithilfe des SDK zu ändern und die Änderungen an einen oder alle Benutzer zu übertragen.  
+Sie können Code schreiben, der Administratoren ermöglicht, Filtervorlagen zu erstellen und zu veröffentlichen. Dies ermöglicht einem Common Data Service-Administrator, allgemeine oder erwünschte Filter zu erstellen, die den Benutzern für die Synchronisierung mit dem Outlook-Speicher und der Offlinedatenbank veröffentlicht werden können. Dies bietet auch die Möglichkeit, eine Standardfiltervorlage anzupassen, die für Benutzer angewendet wird, die zum System hinzugefügt werden, nachdem die Vorlagen ursprünglich veröffentlicht wurden. Der Administrator besitzt auch die Möglichkeit, Benutzerfilter zu aktualisieren oder zu löschen, nachdem sie veröffentlicht wurden.  
 Damit diese Anpassungen unterstützt werden, gibt es vier neue Abfragetypen für gespeicherte Abfragen (Ansicht). Wenn Sie einen gespeicherten Abfragedatensatz (Ansicht) erstellen, geben Sie einen dieser Typen im `SavedQuery.QueryType`-Attribut mithilfe der <xref:Microsoft.Crm.Sdk.SavedQueryQueryType>-Enumeration an. Der Zugriff ist nur möglich, indem Sie die hier beschriebenen Methoden verwenden. Es gibt keine Benutzeroberfläche, um ihn zu ändern. Sie können verschiedene Filter angeben, sodass Sie für Ihr Mobiltelefon nicht alles mit Outlook synchronisieren müssen. Filtervorlagen sind lösungsfähig, sodass sie zusammen mit einer Lösung exportiert werden können.  
   
  In der folgenden Tabelle sind die neuen Abfragetypen für Filter und Filtervorlagen aufgelistet.  
@@ -40,7 +40,7 @@ Neue Benutzer erhalten automatisch die Filter aus den Filtervorlagen, die als St
 
 Es gibt einen neuen Filtertyp, den Administratoren definieren können und der als Systemfilter bezeichnet wird. Diese Filter werden als `SavedQuery`-Datensätze mit dem Abfragetyp <xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookFilters> oder <xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters> definiert. Systemfilter gelten automatisch für alle Benutzer, und können von den Benutzern nicht geändert werden.  
 
-Es gibt eine Beschränkung der Filteranzahl, die Sie hinzufügen können. Diese Einstellung wird vom CDS für Apps-Bereitstellungsadministrator gesteuert, um Benutzer oder Administratoren davon abzuhalten, zu viele Filter zu erstellen, was die Serverleistung beeinträchtigt. Dieselbe Grenzeneinstellung wird auf alle Entitäten angewendet.  
+Es gibt eine Beschränkung der Filteranzahl, die Sie hinzufügen können. Diese Einstellung wird vom Common Data Service-Bereitstellungsadministrator gesteuert, um Benutzer oder Administratoren davon abzuhalten, zu viele Filter zu erstellen, was die Serverleistung beeinträchtigt. Dieselbe Grenzeneinstellung wird auf alle Entitäten angewendet.  
 
 Standardmäßig gibt es unbegrenzte Einstellungen für Systemfilter und Benutzerfilter.  
 

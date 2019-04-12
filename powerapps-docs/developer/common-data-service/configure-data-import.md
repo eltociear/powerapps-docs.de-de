@@ -1,5 +1,5 @@
 ---
-title: Datenimport konfigurieren (Common Data Service für Apps) | Microsoft Docs
+title: Datenimport konfigurieren (Common Data Service) | Microsoft Docs
 description: 'Die Konfigurationsinformationen, die zum Importieren von Daten erforderlich sind, sind in der Datenimportentität und der Importquelldateientität enthalten.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -20,7 +20,7 @@ search.app:
 <!-- 
 Was Mike Carter's
 
-https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/configure-data-import 
+https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-data-import 
 
 Child topic of 
 powerapps-docs/developer/common-data-service/import-data.md
@@ -49,7 +49,7 @@ Die Konfigurationsinformationen, die zum Importieren von Daten erforderlich sind
 - Lesen Sie den Inhalt der Quelldatei in den `ImportFile.Content` ein.  
   
 > [!IMPORTANT]
->  Es ist nicht empfohlen, Datensätze durch den programmgesteuerten Import von Daten zu aktualisieren. Verwenden Sie für die Aktualisierung die Datenexport- und Importfunktionen der CDS for Apps-Webanwendung. Verwenden Sie **Exportieren zu Excel**, um Datensätze in eine XML-Spreadsheet 2003 (.xml) Datei zu exportieren. Dies ist der einzige gültige Quelldateityp für den Updatemodus. Der Rückimport der Daten aus der XML Spreadsheet 2003 (.xml)-Datei garantiert die Datenintegrität in CDs for Apps. Verwenden Sie zum Import aktualisierter Daten den CDS for Apps-Datenimport-Assistenten. Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu CDs for Apps.  
+>  Es ist nicht empfohlen, Datensätze durch den programmgesteuerten Import von Daten zu aktualisieren. Verwenden Sie für die Aktualisierung die Datenexport- und Importfunktionen die Common Data Service-Webanwendung . Verwenden Sie **Exportieren zu Excel**, um Datensätze in eine XML-Spreadsheet 2003 (.xml) Datei zu exportieren. Dies ist der einzige gültige Quelldateityp für den Updatemodus. Der Rückimport der Daten aus der XML Spreadsheet 2003 (.xml)-Datei garantiert die Datenintegrität in Common Data Service. Verwenden Sie zum Import aktualisierter Daten den Common Data Service-Datenimport-Assistenten. Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu Common Data Service.  
  
 ### <a name="see-also"></a>Siehe auch
 

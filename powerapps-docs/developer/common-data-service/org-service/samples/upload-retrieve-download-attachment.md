@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage (Common Data Service für Apps) | Microsoft Docs'
+title: 'Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie Sie eine Anlage hochladen, abrufen und herunterladen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,9 +17,9 @@ search.app:
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-upload-retrieve-download-attachment -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-upload-retrieve-download-attachment -->
 
-Das Beispiel veranschaulicht, wie Sie eine Anlage für eine Anmerkung mithilfe der [IOrganizationService.Create](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9)- und [IOrganizationService.Retrieve](https://docs.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9)-Methoden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/URDAttachement) herunterladen.
+Das Beispiel veranschaulicht, wie Sie eine Anlage für eine Anmerkung mithilfe der [IOrganizationService.Create](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.create?view=dynamics-general-ce-9)- und [IOrganizationService.Retrieve](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.iorganizationservice.retrieve?view=dynamics-general-ce-9)-Methoden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/URDAttachement) herunterladen.
 
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 

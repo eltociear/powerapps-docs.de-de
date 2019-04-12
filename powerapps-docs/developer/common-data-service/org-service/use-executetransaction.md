@@ -1,5 +1,5 @@
 ---
-title: Ausführen von Messages in einer einzelnen Datenbanktransaktion (Common Data Service für Apps) | Microsoft Docs
+title: Ausführen von Messages in einer einzelnen Datenbanktransaktion (Common Data Service) | Microsoft Docs
 description: Sie können mehrere Organisationsserviceanforderungen in einer einzelnen Datenbanktransaktion mit der ExecuteTransactionRequest-Message-Anforderung ausführen.
 ms.custom: ''
 ms.date: 10/31/2018

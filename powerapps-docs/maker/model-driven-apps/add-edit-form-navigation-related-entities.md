@@ -4,7 +4,7 @@ description: Mehr zu Formularnavigation für verknüpfte Entitäten hinzufügen
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -83,4 +83,4 @@ In diesem Thema nutzen Sie das Formular Navigationsbereich, das verwendet wird, 
 > Das Installieren einer Lösung oder Veröffentlichen von Anpassungen kann den normalen Systembetrieb stören. Wir empfehlen, dass Sie einen Lösungsimport planen, wenn er Benutzer am wenigsten stört.
   
 ## <a name="next-steps"></a>Nächste Schritte  
- [Erstellen und Bearbeiten von Entitäts-Beziehungen für Common Data Service für Apps](../common-data-service/create-edit-entity-relationships.md)
+ [Erstellen und Bearbeiten von Entitäts-Beziehungen für Common Data Service](../common-data-service/create-edit-entity-relationships.md)

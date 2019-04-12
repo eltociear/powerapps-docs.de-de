@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei Power Query | Microsoft Docs
-description: 'Beheben Sie das Problem mit Power Query, oder indem Sie in Common Data Service for Apps eine benutzerdefinierte Entität erstellen.'
+description: 'Beheben Sie das Problem mit Power Query, oder indem Sie in Common Data Service eine benutzerdefinierte Entität erstellen.'
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -20,7 +20,7 @@ Wenn Sie Power Query for Excel verwenden, um eine benutzerdefinierte Entität zu
 
 >"Ihr Azure Active Directory-Administrator hat eine Richtlinie festgelegt, die verhindert, dass Sie diese Funktionen verwenden. Wenden Sie sich an Ihren Administrator, der Berechtigungen für diese Funktionalität in Ihrem Auftrag gewähren kann."
 
-Dieser Fehler wird angezeigt, wenn Power Query nicht in PowerApps oder Common Data Service for Apps auf die Daten der Organisation zugreifen kann. Diese Situation entsteht unter zwei Umständen:
+Dieser Fehler wird angezeigt, wenn Power Query nicht in PowerApps oder Common Data Service auf die Daten der Organisation zugreifen kann. Diese Situation entsteht unter zwei Umständen:
 
 * Ein Azure Active Directory (Azure AD)-Mandantenadministrator hat die Möglichkeit der Benutzer nicht zugelassen, Apps zuzustimmen, die in ihrem Namen auf Unternehmensdaten zugreifen.
 * Verwenden eines nicht verwalteten Active Directory-Mandanten. Ein nicht verwalteter Mandanten ist ein Verzeichnis ohne einen globalen Administrator, der erstellt wurde, um ein Self-Service-Verpflichtungsangebot abzuschließen. Um dieses Szenario zu beheben, müssen Benutzer zunächst in eine verwaltetes Mandat konvertieren und dann eine von zwei Lösungen für dieses Problem befolgen. Die Lösungen finden Sie im nächsten Abschnitt.

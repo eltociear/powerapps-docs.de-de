@@ -1,10 +1,10 @@
 ---
-title: Abfragen von Metadaten mit der Web-API (Common Data Service for Apps) | Microsoft Docs
+title: Abfragen von Metadaten mit der Web-API (Common Data Service) | Microsoft Docs
 description: 'Die Funktion, Systemmetadaten abzufragen, ist mit der Web-API und dem Organisationsservice verfügbar, indem RetrieveMetadataChangesRequest verwendet wird.'
 ms.custom: ''
 ms.date: 11/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="query-metadata-using-the-web-api"></a>Metadaten mit Web-API abfragen
 
-Da Common Data Service for Apps eine metadatengesteuerte Anwendung ist, müssen Entwickler unter Umständen die Systemmetadaten zur Laufzeit abfragen, um die Konfiguration der Organisation anzupassen. Dieses Feature verwendet einen RESTful-Abfragenstil.
+Da Common Data Service eine metadatengesteuerte Anwendung ist, müssen Entwickler unter Umständen die Systemmetadaten zur Laufzeit abfragen, um die Konfiguration der Organisation anzupassen. Dieses Feature verwendet einen RESTful-Abfragenstil.
 
 > [!NOTE]
 > Sie können auch eine Abfrage mithilfe eines objektbasierten Stils unter Verwendung des <xref href="Microsoft.Dynamics.CRM.EntityQueryExpression?text=EntityQueryExpression ComplexType" /> mit der <xref href="Microsoft.Dynamics.CRM.RetrieveMetadataChanges?text=RetrieveMetadataChanges Function" /> erstellen. Diese Funktion ermöglicht die Ablaufverfolgung von Änderungen an den Metadaten zwischen zwei Zeiträumen sowie das Zurückgeben einer begrenzten Anzahl für Metadaten, die von einer Abfrage definiert werden, die Sie angeben.
@@ -345,7 +345,7 @@ Sie können den festgelegten `GlobalOptionSetDefinitions`-Entitätspfad verwende
 
 ### <a name="see-also"></a>Siehe auch
 
-[Nutzen der Web-API mit Common Data Service for Apps-Metadaten](use-web-api-metadata.md)<br />
+[Nutzen der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
 [Abrufen von Metadaten über den Namen oder die MetadataId](retrieve-metadata-name-metadataid.md)<br />
 [Metadaten-Entitäten und Attribute unter Verwendung der Web-API](create-update-entity-definitions-using-web-api.md)<br />
 [Metadaten-Entitätsbeziehungen modellieren mit Internet-API](create-update-entity-relationships-using-web-api.md)

@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zum Zusammenführen verwalteter Lösungen (Common Data Service für Apps) | Microsoft Docs
+title: Grundlegendes zum Zusammenführen verwalteter Lösungen (Common Data Service) | Microsoft Docs
 description: 'Um zu vermeiden, dass mehrere installierte Lösungen sich stören, befolgen Sie beim Erstellen einer Lösung die bewährten Methoden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -19,12 +19,12 @@ search.app:
 
 Wenn Sie die Installation Ihrer verwalteten Lösung vorbereiten, denken Sie daran, dass eine Organisation mehrere Lösungen installiert haben kann oder dass andere Lösungen in der Zukunft installiert werden können. Erstellen Sie eine Lösung, die erfolgreich bewährten Praktiken folgt, so dass Ihre Lösung nicht andere Lösungen behindert.  
   
- Die Prozesse, die von Common Data Service für Apps verwendet werden, um Anpassungen zusammenzuführen, legen den Fokus auf die Aufrechterhaltung der Funktionalität der Lösung. Während alle Anstrengungen unternommen werden, um die Darstellung zu wahren, können Inkompatibilitäten zwischen Anpassungen es erforderlich machen, dass die gesteuerte Endpunktauflösung gewisse Darstellungsdetails zugunsten der Anpassungsfunktionalität ändert.  
+ Die Prozesse, die von Common Data Service verwendet werden, um Anpassungen zusammenzuführen, legen den Fokus auf die Aufrechterhaltung der Funktionalität der Lösung. Während alle Anstrengungen unternommen werden, um die Darstellung zu wahren, können Inkompatibilitäten zwischen Anpassungen es erforderlich machen, dass die gesteuerte Endpunktauflösung gewisse Darstellungsdetails zugunsten der Anpassungsfunktionalität ändert.  
   
 <a name="BKMK_MergingFormCustomizations"></a>   
 
 ## <a name="merge-form-customizations"></a>Formularanpassungen zusammenführen  
- Die einzigen Formularanpassungen, die zusammengeführt werden müssen, sind diejenigen, die bei Entitätsformularen ausgeführt werden, die bereits in der Organisation vorliegen. Dies bedeutet in der Regel, dass nur Formularanpassungen zusammengeführt werden müssen, wenn Ihre Lösung Formulare anpasst, die für Entitäten eingeschlossen waren und erstellt wurden, als CDS für Apps installiert wurde. Eine Möglichkeit, das Formularzusammenführen zu vermeiden, ist es, neue Formulare für beliebige CDS für Apps-Entitäten bereitzustellen. Formulare für benutzerdefinierte Entitäten benötigen keine Zusammenführung, es sei denn, Sie erstellen eine Lösung, die bestehende verwaltete Lösungen aktualisiert oder modifiziert, die von den benutzerdefinierten Entitäten und Formularen erstellt wurden.  
+ Die einzigen Formularanpassungen, die zusammengeführt werden müssen, sind diejenigen, die bei Entitätsformularen ausgeführt werden, die bereits in der Organisation vorliegen. Dies bedeutet in der Regel, dass nur Formularanpassungen zusammengeführt werden müssen, wenn Ihre Lösung Formulare anpasst, die für Entitäten eingeschlossen waren und erstellt wurden als Common Data Service installiert wurde. Eine Möglichkeit, das Formularzusammenführen zu vermeiden ist es, neue Formulare für beliebige Common Data Service-Entitäten bereitzustellen. Formulare für benutzerdefinierte Entitäten benötigen keine Zusammenführung, es sei denn, Sie erstellen eine Lösung, die bestehende verwaltete Lösungen aktualisiert oder modifiziert, die von den benutzerdefinierten Entitäten und Formularen erstellt wurden.  
   
  Wenn einer Lösung als verwaltete Lösung verpackt wird, werden die Formulardefinitionen, die im XML-Formular gespeichert sind, Datei Formular mit dem ursprünglichen XML-Formular verglichen und es werden nur die Unterschieden in der verwalteten Lösung hinzugefügt. Wenn die verwaltete Lösung in einer neuen Organisation installiert ist, werden die Formularanpassungsunterschiede mit dem XML-Formular zusammengeführt, damit aus dem bestehenden Formular eine neue Formulardefinition erstellt werden kann. Diese neue Formulardefinition ist, was der Benutzer sieht und was ein Systemanpasser ändern kann. Wenn die verwaltete Lösung deinstalliert wurde, werden nur jene Formularelementen entfernt, die in der verwalteten Lösung gefunden werden.  
   

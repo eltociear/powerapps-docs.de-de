@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Entitäts- und Attribut-Zuordnungen in PowerApps (Common Data Service for Apps) | Microsoft Docs
+title: Anpassen von Entitäts- und Attribut-Zuordnungen in PowerApps (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie mehr über das Zuordnen von Attributen zwischen Entitäten, die eine Entitätsbeziehung in PowerApps haben. Hiermit können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,7 +23,7 @@ Sie können Attributen zwischen Entitäten zuordnen, die eine Entitätsbeziehung
 
 ## <a name="behavior-in-the-application"></a>Verhaltensweise in der Anwendung
 
- Durch Zuordnungen in Common Data Service for Apps wird die Dateneingabe beim Erstellen neuer Datensätze optimiert, die einem anderen Datensatz zugeordnet sind. Wenn eine Entität eine Entitätsbeziehung mit einer anderen Entität aufweist, können Sie verknüpfte Entitätsdatensätze erstellen, indem Sie die **Verknüpfte erstellen**-Registerkarte auf dem Menüband verwenden. Wenn Sie in dieser Weise einen neuen Datensatz erstellen, werden die zugeordneten Daten aus dem Datensatz der primären Entität in das Formular des Datensatzes der neuen zugeordneten Entität kopiert. Durch due Zuordnung von Entitätsattributen steuern Sie, welche Daten kopiert werden, indem Sie der Beziehung zwischen den beiden Entitäten neue Zuordnungen hinzufügen. Wenn ein Datensatz auf andere Weise als über die zugeordnete Ansicht der primären Entität erstellt wird, werden keine Daten zugeordnet.  
+ Durch Zuordnungen in Common Data Service wird die Dateneingabe beim Erstellen neuer Datensätze optimiert, die einem anderen Datensatz zugeordnet sind. Wenn eine Entität eine Entitätsbeziehung mit einer anderen Entität aufweist, können Sie verknüpfte Entitätsdatensätze erstellen, indem Sie die **Verknüpfte erstellen**-Registerkarte auf dem Menüband verwenden. Wenn Sie in dieser Weise einen neuen Datensatz erstellen, werden die zugeordneten Daten aus dem Datensatz der primären Entität in das Formular des Datensatzes der neuen zugeordneten Entität kopiert. Durch due Zuordnung von Entitätsattributen steuern Sie, welche Daten kopiert werden, indem Sie der Beziehung zwischen den beiden Entitäten neue Zuordnungen hinzufügen. Wenn ein Datensatz auf andere Weise als über die zugeordnete Ansicht der primären Entität erstellt wird, werden keine Daten zugeordnet.  
 
  Beispielsweise können Sie eine Zuordnung zwischen den Adressfeldern in Konten und den Adressfeldern in Kontakten einrichten. Mit dieser Zuordnung gilt: Wenn ein Benutzer einen Kontakt hinzufügt, der einem bestimmten Konto zugeordnet ist, werden die Adressfelder für den Kontakt automatisch ausgefüllt.  
 

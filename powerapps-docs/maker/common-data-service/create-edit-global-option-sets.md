@@ -1,9 +1,9 @@
 ---
-title: Erstellen und Bearbeiten globaler Optionssätze (Auswahllisten) – Übersicht für Common Data Service for Apps | MicrosoftDocs
+title: Erstellen und Bearbeiten globaler Optionssätze (Auswahllisten) – Übersicht für Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,7 +37,7 @@ Sie können zwei Designer verwenden, um globale Optionssätze zu erstellen oder 
 |Designer| Beschreibung|
 |--|--|
 |[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Ein Optionssatz erstellen](custom-picklists.md) |
-|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps mit Projekt-Explorer](create-edit-global-option-sets-solution-explorer.md) |
+|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Projekt-Explorer](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
 > Sie können globale Optionssätze in Ihrer Umgebung auch wie folgt erstellen:
@@ -50,7 +50,7 @@ Sie können das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&
 
 - Optionen Farben zuweisen
 - Die Reihenfolge von Optionen ändern
-- Erstellen eines globalen Optionssatzes in einer Lösung, die keine CDS-Standardlösung ist
+- Erstellen eines globalen Optionssatzes in einer Lösung, die keine Common Data Service-Standardlösung ist
 - Verwaltete Eigenschaften festlegen
 - Festlegen der Eigenschaften, die für virtuelle Entitäten verwendet werden
 - Abhängigkeiten anzeigen
@@ -58,7 +58,7 @@ Sie können das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&
 ## <a name="see-also"></a>Siehe auch
 
 [Einen Optionssatz erstellen](custom-picklists.md)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps mit Projekt-Explorer](create-edit-global-option-sets-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Lösungs-Explorer](create-edit-global-option-sets-solution-explorer.md)<br />
 [Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets).
   
 

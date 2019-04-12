@@ -1,9 +1,8 @@
 ---
 title: openForm (Client-API-Referenz) in modellgestützten Apps| MicrosoftDocs
-ms.date: 11/09/2018
-ms.service: crm-online
+ms.date: 03/10/2019
+ms.service: powerapps
 ms.topic: reference
-applies_to: Dynamics 365 (online)
 ms.assetid: 0206c43b-b1fc-490d-a867-1d75331885a8
 author: KumarVivek
 ms.author: kvivek
@@ -15,8 +14,6 @@ search.app:
   - D365CE
 ---
 # <a name="openform-client-api-reference"></a>openForm (Client-API-Referenz)
-
-
 
 [!INCLUDE[./includes/openForm-description.md](./includes/openForm-description.md)]
 
@@ -95,17 +92,14 @@ search.app:
 <td>formParameters</td>
 <td>Objekt</td>
 <td>No</td>
-<td>Ein Wörterbuchobjekt, das dem Formular zusätzliche Parameter übergibt. Ungültige Parameter führen zu einem Fehler.<br/><br/>Informationen zum Übergeben von Parametern an ein Formular, siehe [Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden](../../../set-field-values-using-parameters-passed-form.md) und [Ein Formular konfigurieren, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren](../../../configure-form-accept-custom-querystring-parameters.md) </td>
+<td>Ein Wörterbuchobjekt, das dem Formular zusätzliche Parameter übergibt. Ungültige Parameter führen zu einem Fehler.<br/><br/>Informationen zum Übergeben von Parametern an ein Formular finden Sie unter <a href="https://docs.microsoft.com/powerapps/developer/model-driven-apps/set-field-values-using-parameters-passed-form
+">Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden</a> und <a href="https://docs.microsoft.com/powerapps/developer/model-driven-apps/configure-form-accept-custom-querystring-parameters">Ein Formular konfigurieren, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren</a></td>
 </tr>
 <tr>
 <td>successCallback</td>
 <td>Funktion</td>
 <td>Nein</td>
-<td>Ein Funktion, die in folgenden Fällen ausgeführt wird:
-<ul>
-<li>Der Datensatz wird im Formular "Schnellerfassung" gespeichert.</li>
-<li>Der Datensatz wird im Formular "Schnellerfassung" für einen mit <b>Speichern und neu</b> erstellten Datensatz gespeichert. Dies gilt nur für die <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">einheitliche Oberfläche</a>.</li>
-</ul>
+<td>Ein Feature, das ausgeführt wird, wenn der Datensatz im Schnellerfassungsformular gespeichert wird.
 
 Dieser Funktion wird ein Objekt als Parameter übergeben. Das Ziel ist ein <b>savedEntityReference</b>-Array mit den folgenden Eigenschaften, um den erstellten oder angezeigten Datensatz zu identifizieren:
 <ul>
@@ -114,25 +108,16 @@ Dieser Funktion wird ein Objekt als Parameter übergeben. Das Ziel ist ein <b>sa
 <li><b>name</b>: der primäre Attributwert des erstellten oder angezeigten Datensatzes.</li></ul>
 
 <b>Hinweis</b>:
-<ul>
-<li>Mit Webclient: <ul>
+  <ul>
     <li>Die <b>successCallback</b>-Funktion wird nicht ausgeführt, wenn Sie ein Formular für einen vorhandenen oder einen neuen Datensatz öffnen.</li>
-    <li>Die Funktion <b>successCallback</b> wird nur ausgeführt, wenn Sie eine Aufzeichnung in einem Formular für Schnellerfassung speichern, das mit der <strong>openForm</strong>-Methode geöffnet wurde.</li>
-    <li>Wenn Sie ein Formular "Schnellerfassung" öffnen und einen Datensatz erstellen, enthält das <b>savedEntityReference</b> Array ein einzelnes Element.</li>
+    <li>Die Funktion <b>successCallback</b> wird nur ausgeführt, wenn Sie eine Aufzeichnung in einem Formular für Schnellerfassung speichern, das mit der <strong>openForm</strong>-Methode geöffnet wurde.</li>    
   </ul>
-</li>
-<li>Auf <a href="/dynamics365/customer-engagement/admin/about-unified-interface" data-raw-source="[Unified Interface](/dynamics365/customer-engagement/admin/about-unified-interface)">Einheitlicher Oberfläche</a>:
-<ul>
-    <li>Die <b>successCallback</b>-Funktion wird nicht ausgeführt, wenn Sie ein Formular für einen vorhandenen oder einen neuen Datensatz öffnen.</li>
-<li>Die Funktion <b>successCallback</b> wird nur ausgeführt, wenn Sie eine Aufzeichnung in einem Formular für Schnellerfassung speichern, das mit der <strong>openForm</strong>-Methode geöffnet wurde.</li>
-    <li>Wenn Sie ein Formular "Schnellerfassung" öffnen und einen Datensatz erstellen, enthält das <b>savedEntityReference</b> Array ein einzelnes Element.</li>
-<li>Wenn Sie ein Formular für Schnellerfassung auf der einheitlichen Oberfläche erstellen, und mehrere Datensätze erstellen, indem Sie auf <b>Speichern und neu</b> klicken, enthält s<b>avedEntityReference</b> mehrere Elemente. Jedes Element stellt den Datensatz dar, der mithilfe des Schnellerfassungsformulars erstellt wurde.</li>
 </td>
 </tr>
 <tr>
 <td>errorCallback</td>
 <td>Funktion</td>
-<td>Nr.</td>
+<td>Nein</td>
 <td>Eine auszuführende Funktion, wenn der Vorgang fehlgeschlagen ist.<br>
 
 <b>HINWEIS</b>: In [Einheitliche Schnittstelle](/dynamics365/customer-engagement/admin/about-unified-interface) wird die <b>errorCallback</b>-Funktion nur ausgeführt, wenn Sie das Schnellerfassungsformular öffnen.</td>

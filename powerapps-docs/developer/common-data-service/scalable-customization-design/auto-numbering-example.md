@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Beispiel für automatische Nummerierung (Common Data Service for Apps) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Beispiel für automatische Nummerierung (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel veranschaulicht, wie Transaktionen und Probleme mit der Parallelität in einer Codeanpassung berücksichtigt werden müssen.'
 ms.custom: ''
 ms.date: 1/15/2019
@@ -18,9 +18,9 @@ search.app:
 # <a name="scalable-customization-design-auto-numbering-example"></a>Skalierbares Anpassungsdesign: Beispiel für automatische Nummerierung
 
 > [!NOTE]
-> Dieses Beispiel unterstützt eine Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service für Apps](overview.md).
+> Dieses Beispiel unterstützt eine Reihe von Themen über skalierbares Anpassungsdesign. Um am Anfang zu beginnen, siehe [Skalierbares Anpassungsdesign im Common Data Service](overview.md).
 
-Ein Szenario, das das häufige Missverständnis veranschaulicht, wie Transaktionen innerhalb von CDS for Apps behandelt werden, ist die Implementierung eines automatischen Nummerierungssystems.
+Ein Szenario, das das häufige Missverständnis veranschaulicht, wie Transaktionen innerhalb von Common Data Service behandelt werden, ist die Implementierung eines automatischen Nummerierungssystems.
 
 In diesem Szenario ist die Anforderung typischerweise zu:
 
@@ -37,7 +37,7 @@ Der typische Ansatz besteht aus folgenden Variationen:
 - Notieren Sie die neue Nummer gegen den neu erzeugten Datensatz.
 - Speichern Sie die neue Nummer wieder als die zuletzt verwendete Nummer im automatischen Nummernverzeichnisspeicher.
 
-Die folgenden Abschnitte beschreiben verschiedene Ansätze, die innerhalb von CDS für Apps angewendet werden können, und heben die Auswirkungen hervor, indem sie sowohl die Bedeutung als auch den Nutzen des Verständnisses der Art und Weise, wie Transaktionen verwendet werden, verdeutlichen. 
+Die folgenden Abschnitte beschreiben verschiedene Ansätze, die innerhalb von Common Data Service angewendet werden können, und heben die Auswirkungen hervor, indem sie sowohl die Bedeutung als auch den Nutzen des Verständnisses der Art und Weise, wie Transaktionen verwendet werden, verdeutlichen. 
 
 ## <a name="approach-1-out-of-a-transaction"></a>Ansatz 1: Aus einer Transaktion heraus
 

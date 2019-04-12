@@ -1,9 +1,9 @@
 ---
-title: Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps-Portals| MicrosoftDocs
+title: Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 02/28/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -12,20 +12,20 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-portal"></a>Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps-Portals
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal
 
-DAs [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Felder vom Common Data Service für Apps zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Felder vom Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. <br />Weitere Informationen: 
-- Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)
-- [Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer](create-edit-field-solution-explorer.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Ansichtsfelder
 
@@ -52,8 +52,8 @@ Es sind nur drei Feldeigenschaften verfügbar:
  |Eigenschaft|Beschreibung|
  |--|--|
  |**Anzeigename**|Der Text für das Feld auf der Benutzeroberfläche, der angezeigt werden soll.|
- |**Name**|Der eindeutige Name Ihrer Umgebung. Ein Name wird für Sie basierend auf dem Anzeigenamen generiert, die Sie eingegeben haben, aber Sie können ihn ändern, bevor Sie ihn speichern. Sobald ein Feld erstellt wurde, kann der Name nicht geändert werden, da er unter Umständen auf die Anwendungen oder Code verweist. Der Name hat folgendes Anpassungspräfix für das **CDS Standardherausgeber**-Elemente verwendet.|
- |**Datentyp**|Steuert, wie Werte gespeichert werden sowie wie sie in einigen Anwendungen formatiert werden. Sobald ein Feld gespeichert ist, können Sie den Typ nicht mehr ändern, da sich das möglicherweise auf die Daten in der Entität auswirkt.|
+ |**Name**|Der eindeutige Name Ihrer Umgebung. Ein Name wird für Sie basierend auf dem Anzeigenamen generiert, die Sie eingegeben haben, aber Sie können ihn ändern, bevor Sie ihn speichern. Sobald ein Feld erstellt wurde, kann der Name nicht geändert werden, da er unter Umständen auf die Anwendungen oder Code verweist. Der Name hat folgendes Anpassungspräfix für das **Common Data Service-Standardherausgeber**-Elemente verwendet.|
+ |**Datentyp**|Steuert, wie Werte gespeichert werden sowie wie sie in einigen Anwendungen formatiert werden. Sobald ein Feld gespeichert ist, können Sie den Datentyp nicht ändern, abgesehen von der Konvertierung von Feldern mit automatischer Nummerierung.|
 
 Sie können auch weitere Optionen abhängig von der Auswahl von **Datentyp** festlegen.
 
@@ -75,6 +75,7 @@ Standardtextfelder können bis zu 4.000 Zeichen speichern. Die Standardoption [M
 |**URL**|Ein Textwert als URL validiert und gerendert als Link, um die URL zu öffnen.|
 |**Tickersymbol**|Ein Textwert für ein Tickersymbol, das einen Link anzeigt, der geöffnet wird, um ein Angebot für ein Börsentickersymbol anzuzeigen. |
 |**Telefonnummer**|Ein als Textwert überprüfte Telefonnummer gerendert als Link, um einen Telefonanruf einzuleiten mithilfe von Skype. |
+|**Automatische Nummerierung**|Eine anpassbare Kombination von Zahlen und Buchstaben, die automatisch von Server generiert wird, wenn der Datensatz erstellt wird. Weitere Informationen: [Felder mit automatischer Nummerierung](autonumber-fields.md). |
 
 #### <a name="max-length"></a> Max. Länge 
 
@@ -170,7 +171,7 @@ Weitere Informationen: [Definieren der Rollupfelder für die Gesamtwerte](define
 
 ## <a name="number-field-options"></a>Nummernfeldoptionen
 
-Jeder Typ Zahlenfeld hat absolute minimale und maximale Werte. Sie können einen entsprechenden **Minimalen Wert** und **Maximalen Wert** in diesen absoluten Werte festlegen. Wählen Sie diese Möglichkeit aus, um CDS für Apps die Werte für die Daten zu prüfen, die Sie im Feld speichern möchten.
+Jeder Typ Zahlenfeld hat absolute minimale und maximale Werte. Sie können einen entsprechenden **Minimalen Wert** und **Maximalen Wert** in diesen absoluten Werte festlegen. Wählen Sie diese Möglichkeit aus, um Common Data Service die Werte für die Daten prüfen zu lassen, die Sie im Feld speichern möchten.
 
 Für **Gleitkommazahl** und **Dezimalzahl** Datentypen können Sie einige **Dezimalstellen** angeben.
 
@@ -224,8 +225,8 @@ Alle Felder, die direkte Texteingabe ermöglichen, haben einen IME-Modus. Der Ei
 
 
 ### <a name="see-also"></a>Siehe auch  
-Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
 [Feldtypen und Felddatentypen](types-of-fields.md)<br />
 [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
 [Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />

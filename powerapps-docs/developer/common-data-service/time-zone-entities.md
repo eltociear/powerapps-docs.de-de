@@ -1,5 +1,5 @@
 ---
-title: Zeitzonen-Entitäten (Common Data Service for Apps) | Microsoft Docs
+title: Zeitzonen-Entitäten (Common Data Service) | Microsoft Docs
 description: 'Die Zeitzonenentitäten enthalten Zeitzoneninformationen, wie unterstützte Zeitzone, Zeitzonencode, die lokalisierte Zeitzone, und speichern Informationen dazu, wie Uhrzeit berechnet werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="time-zone-entities"></a>Zeitzonenentitäten
 
-Die *Zeitzonenentitäten*-Entitäten können verwendet werden, wenn Sie Code schreiben, der in mehreren Zeitzonen funktioniert. Die folgenden drei schreibgeschützten Entitäten in Common Data Service for Apps enthalten Zeitzoneninformationen:  
+Die *Zeitzonenentitäten*-Entitäten können verwendet werden, wenn Sie Code schreiben, der in mehreren Zeitzonen funktioniert. Die folgenden drei schreibgeschützten Entitäten in Common Data Service enthalten Zeitzoneninformationen:  
   
 - Die *Zeitzonendefinitionsentität* speichert grundlegende Informationen über sämtliche unterstützte Zeitzone, einschließlich des Zeitzonencodes und des standardmäßigen Zeitzonennamens.  
   

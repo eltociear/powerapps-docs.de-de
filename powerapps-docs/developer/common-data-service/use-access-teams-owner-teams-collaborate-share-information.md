@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden von Zugriffsteams und Besitzerteams, um zusammenzuarbeiten und Informationen zu teilen (Common Data Service für Apps) | Microsoft Docs'
+title: 'Verwenden von Zugriffsteams und Besitzerteams, um zusammenzuarbeiten und Informationen zu teilen (Common Data Service) | Microsoft Docs'
 description: 'Lernen Sie mehr über das Verwenden von Zugriffsteams und Besitzersteams, um zusammenzuarbeiten und Informationen zu teilen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-access-teams-and-owner-teams-to-collaborate-and-share-information"></a>Verwenden von Zugriffsteams und Besitzersteams, um zusammenzuarbeiten und Informationen zu teilen
 
-Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht freigeben und über Unternehmenseinheiten hinweg mit Benutzern in Common Data Service für Apps zusammenarbeiten. Ein Team gehört zu einer Unternehmenseinheit, aber es kann Benutzer von anderen Unternehmenseinheiten enthalten. Ein Benutzer kann mehr als einem Team zugewiesen werden.  
+Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht freigeben und über Unternehmenseinheiten hinweg mit Benutzern in Common Data Service zusammenarbeiten. Ein Team gehört zu einer Unternehmenseinheit, aber es kann Benutzer von anderen Unternehmenseinheiten enthalten. Ein Benutzer kann mehr als einem Team zugewiesen werden.  
   
  Ein Besitzerteam besitzt Datensätze und ihm sind Sicherheitsrollen zugewiesen. Die Berechtigungen eines Teams werden durch diese Sicherheitsrollen definiert. Zusätzlich zu den Berechtigungen, die das Team bereitgestellt werden, verfügen Teammitglieder über die Berechtigungen, die durch die ihre individuellen Sicherheitsrollen und durch die Rollen aus den anderen Teams, in denen sie Mitglieder sind, bestimmt werden. Ein Team verfügt über vollständige Zugriffsrechte auf die Datensätze, die das Team besitzt.  
   
@@ -36,7 +36,7 @@ Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht fr
   
 - Das Besitzen von Datensätzen durch andere Entitäten als Benutzer wird durch die Richtlinien Ihres Unternehmens erfordert.  
   
-- Die Anzahl der Teams ist bekannt, wenn Ihr CDS für Apps-System eingerichtet wird.  
+- Die Anzahl der Teams ist nicht bekannt, wenn Ihr Common Data Service-System eingerichtet wird.  
   
 - Tägliche Berichte zum Fortschritt der Besitzerteams sind erforderlich.  
   
@@ -44,7 +44,7 @@ Mit *Besitzerteams* oder *Zugriffsteams* können Sie Geschäftsobjekte leicht fr
   
 - Die Teams werden dynamisch gebildet und aufgelöst. Dies geschieht typischerweise dann, wenn keine klaren Kriterien für die Bildung der Teams existieren, wie etwa ein bestimmtes Territorium, Produkt oder Volumen.  
   
-- Die Anzahl der Teams ist nicht bekannt, wenn Ihr CDS für Apps-System eingerichtet wird.  
+- Die Anzahl der Teams ist nicht bekannt, wenn Ihr Common Data Service-System eingerichtet wird.  
   
 - Die Teammitglieder benötigen unterschiedliche Zugriffsrechte zu den Datensätzen. Sie können einen Datensatz für verschiedene Zugriffsteams freigeben, wobei jedes Team unterschiedliche Zugriffsrechte für den Datensatz vergibt. Beispielsweise wird das Lesezugriffsrecht einem Team auf dem Account erteilt und einem anderen Team Lese-, Schreib- und Freigaberechte für den gleichen Account.  
   

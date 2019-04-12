@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Benutzerzugriff überwachen (Common Data Service for Apps) | Microsoft Docs'
+title: 'Beispiel: Benutzerzugriff überwachen (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie den Benutzerzugriff überwachen können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-audit-user-access"></a>Beispiel: Überwachung von Benutzerzugriffen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-audit-user-access -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-audit-user-access -->
 
 Dieser Beispielcode zeigt, wie Sie den Benutzerzugriff überwachen können. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AuditUserAccess) herunterladen.
 

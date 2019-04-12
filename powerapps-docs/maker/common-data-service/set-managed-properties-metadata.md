@@ -1,10 +1,10 @@
 ---
-title: Verwaltete Eigenschaften in Common Data Service for Apps Metadaten | MicrosoftDocs
+title: Verwaltete Eigenschaften in Common Data Service-Metadaten festlegen | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie verwaltete Eigenschaften für Metadatenelemente in einer Lösung festlegen können.'
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Verwaltete Eigenschaften in Common Data Service for Apps Metadaten 
+# <a name="set-managed-properties-in-common-data-service-metadata"></a>Verwaltete Eigenschaften in Common Data Service-Metadaten festlegen 
 
 Verwaltete Eigenschaften gelten nur, wenn Sie Metadaten in einer verwalteten Lösung hinzufügen und in eine andere Umgebung importieren. Diese Einstellungen ermöglichen einem Lösungsentwickler, die Anpassungsmöglichkeiten zu steuern, die Benutzer, die ihre verwaltete Lösung installieren, haben sollen. 
 
@@ -58,7 +58,7 @@ Entitäten haben mehr verwaltete Eigenschaften als andere Arten von Lösungskomp
 
 ## <a name="field-managed-properties"></a>Feld Verwaltete Eigenschaften
 
-Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit PowerApps-Lösungsexplorer](create-edit-field-solution-explorer.md).
+Weitere Informationen zum Bearbeiten von Feldern finden Sie unter [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md).
 
 Wählen Sie beim [Anzeigen von Feldern](create-edit-field-solution-explorer.md#view-fields) ein benutzerdefiniertes Feld aus einer nicht verwalteten Lösung aus, und wählen Sie dann **Weitere Aktionen** >  **Verwaltete Eigenschaften** in der Menüleiste.
 
@@ -94,6 +94,6 @@ Bei Beziehungen ist die einzige verwaltete Eigenschaft **Kann angepasst werden**
 
 [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)<br />
 [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
 [Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
-[Erstellen von n:n-Entitätsbeziehungen in Common Data Service for Apps mithilfe des Projektmappen-Explorers](create-edit-nn-relationships-solution-explorer.md)
+[Erstellen von n:n-Entitätsbeziehungen in Common Data Service mithilfe des Lösungs-Explorers](create-edit-nn-relationships-solution-explorer.md)

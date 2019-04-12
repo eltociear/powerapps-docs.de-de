@@ -1,12 +1,12 @@
 ---
-title: Debuggen von Plug-Ins (Common Data Service für Apps) | Microsoft Docs
+title: Debuggen von Plug-Ins (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie mit dem Plug-in-Registrierungstool Plug-Ins debuggen können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -54,7 +54,7 @@ Wenn Sie ein Testautomatisierungs-Framework verwenden möchten, werden Sie fests
 
 Wie unter [Verwendung des Tracing-Dienstes](write-plug-in.md#use-the-tracing-service) beschrieben, können Sie Nachrichten an die [PluginTraceLog Entität](reference/entities/plugintracelog.md) im Code Ihres Plug-Ins schreiben, indem Sie die <xref:Microsoft.Xrm.Sdk.ITracingService>.<xref:Microsoft.Xrm.Sdk.ITracingService.Trace*> verwenden. Methode.
 
-Bevor Sie diesen Service nutzen können, müssen Sie in Ihrer CDS for Apps-Umgebung das Tracing aktivieren. Der Prozess ist in  [Ablaufverfolgungsprotokolle anzeigen](tutorial-write-plug-in.md#view-trace-logs) beschrieben.
+Bevor Sie diesen Service nutzen können, müssen Sie in Ihrer Common Data Service-Umgebung das Tracing aktivieren. Der Prozess ist in  [Ablaufverfolgungsprotokolle anzeigen](tutorial-write-plug-in.md#view-trace-logs) beschrieben.
 
 > [!NOTE]
 > Die Ablaufverfolgungsprotokollierung erfordert Organisationsspeicherplatz, insbesondere wenn viele Ablaufverfolgungen und Ausnahmen generiert werden. Sie sollten die Ablaufverfolgungsprotokollierung nur für das Debugging und die Problembehandlung aktivieren, und deaktivieren, wenn die Überprüfung abgeschlossen ist.

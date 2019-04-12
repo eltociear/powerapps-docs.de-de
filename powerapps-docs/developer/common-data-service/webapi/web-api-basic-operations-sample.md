@@ -1,10 +1,10 @@
 ---
-title: Beispiel für grundlegende Web-API-Vorgänge (Common Data Service für Apps) | Microsoft Docs
+title: Beispiel zu grundlegenden Web-API-Vorgängen (Common Data Service)| Microsoft Docs
 description: 'Diese Beispiele veranschaulichen, wie Sie CRUD-Operationen (Erstellen, Abrufen, Aktualisieren und Löschen) mithilfe der Web-API ausführen. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="web-api-basic-operations-sample"></a>Beispiel grundlegender Web-API-Operationen
 
-Diese Gruppe von Beispielen veranschaulicht, wie Sie einfache CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) und assoziative Vorgänge mithilfe der Common Data Service für Apps-Web-API ausführen.  
+Diese Gruppe von Beispielen veranschaulicht, wie Sie einfache CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) und assoziative Vorgänge mithilfe der Common Data Service-Web-API ausführen.  
   
 -   [Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md)  
   
@@ -33,7 +33,7 @@ Diese Gruppe von Beispielen veranschaulicht, wie Sie einfache CRUD-Vorgänge (Er
  
 ## <a name="demonstrates"></a>Demonstriert  
 
-Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält "CDS für Apps"-Web-API-Vorgänge, die in den entsprechenden Themenabschnitten detailliert behandelt werden.  
+Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält Common Data Service-Web-API-Datenabfragen, Vorgänge, die in den entsprechenden Themenabschnitten detailliert behandelt werden.  
   
 |Abschnitt Code .|Zugeordnete konzeptuelle Themen|  
 |------------------|----------------------------------|  
@@ -44,7 +44,7 @@ Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält "C
 |[Abschnitt 5: Löschungsentitäten (Beispielbereinigung)](#bkmk_section5)|[Grundlegende Löschung](update-delete-entities-using-web-api.md#bkmk_delete)|  
   
 > [!NOTE]
->  Der Kürze halber sind entsprechende HTTP-Kopfzeilen weggelassen worden. Die URLs der Datensätze unterscheiden sich infolge der Grundorganisationsadresse und der ID des Datensatzes, der Ihnen durch Ihren "CDS für Apps"-Server zugewiesen wird.  
+>  Der Kürze halber sind entsprechende HTTP-Kopfzeilen weggelassen worden. Die URLs der Datensätze unterscheiden sich infolge der Grundorganisationsadresse und der ID des Datensatzes, der durch Ihren "Common Data Service"-Server zugewiesen wird.  
   
 <a name="bkmk_section1"></a>
    
@@ -855,7 +855,7 @@ This section demonstrates how to delete entity instances. The corresponding mess
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
 [Erstellen einer Entität mithilfe des Web-API](create-entity-web-api.md)<br />
 [Abrufen einer Entität mithilfe des Web-API](retrieve-entity-using-web-api.md)<br />
 [Entitäten aktualisieren und löschen mithilfe der Web API](update-delete-entities-using-web-api.md)<br />

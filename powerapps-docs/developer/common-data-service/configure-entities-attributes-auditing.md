@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Entitäten und Attributen für das Überwachen (Common Data Service für Apps) | Microsoft Docs
+title: Konfigurieren von Entitäten und Attributen für das Überwachen (Common Data Service) | Microsoft Docs
 description: 'Erläutert die Konfigurationsanforderungen, um die Entitäten und Attributen für die Überwachung zu aktivieren und zu deaktivieren.'
 ms.custom: ''
 ms.date: 10/31/2018

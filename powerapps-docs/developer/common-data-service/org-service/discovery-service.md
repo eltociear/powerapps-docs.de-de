@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Suchdienstes mit SDK Assemblys (Common Data Service für Apps) | Microsoft Docs
+title: Verwenden des Suchdienstes mit SDK Assemblys (Common Data Service) | Microsoft Docs
 description: 'Beschreibt, wie Sie den Suchdienst mit .NET SDK-Assemblies verwenden können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -43,7 +43,7 @@ Es gibt drei Nachrichten, die Sie verwenden können, die alle von der abstrakten
   
 |Meldung|Beschreibung|  
 |-------------|-----------------|  
-|<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveUserIdByExternalIdRequest>|Ruft die ID eines angemeldeten Benutzers in CDS for Apps ab.|  
+|<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveUserIdByExternalIdRequest>|Ruft die ID eines angemeldeten Benutzers in Common Data Service ab.|  
 |<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveOrganizationRequest>|Ruft Informationen zu einer einzelnen Organisation ab.|  
 |<xref:Microsoft.Xrm.Sdk.Discovery.RetrieveOrganizationsRequest>|Ruft Informationen zu allen Organisationen ab, zu denen der Benutzer gehört.|  
 

@@ -1,9 +1,9 @@
 ---
-title: So erstellen und bearbeiten Sie Felder für Common Data Service for Apps | MicrosoftDocs
+title: So erstellen und bearbeiten Sie Felder für Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 02/08/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="how-to-create-and-edit-fields"></a>So erstellen und bearbeiten Sie Felder
 
-In Common Data Service for Apps definieren die Felder die einzelnen Datenelemente, die verwendet werden, um Daten in einer Entität zu speichern. Felder werden von Entwicklern auch als *Attribute* bezeichnet. 
+In Common Data Service definieren die Felder die einzelnen Datenelemente, die verwendet werden, um Daten in einer Entität zu speichern. Felder werden von Entwicklern auch als *Attribute* bezeichnet. 
   
 Bevor Sie ein benutzerdefiniertes Feld erstellen, prüfen Sie, ob die Verwendung eines vorhandenen Feldes Ihre Anforderungen erfüllen könnte. Weitere Informationen [Neue Metadaten oder bestehende Metadaten erstellen](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 
@@ -31,8 +31,8 @@ Sie können zwei Designer verwenden, um Felder zu erstellen oder zu bearbeiten:
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit dem PowerApps-Portal](create-edit-field-portal.md)|
-|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps mit PowerApps-Lösungsexplorer](create-edit-field-solution-explorer.md) |
+|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)|
+|Lösungs-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungsexplorer](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > Sie können Felder in Ihrer Umgebung auch wie folgt erstellen:
@@ -43,11 +43,11 @@ Sie können zwei Designer verwenden, um Felder zu erstellen oder zu bearbeiten:
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie sollten das PowerApps-Portal verwenden, um Felder Common Data Service for Apps zu erstellen und zu bearbeiten, außer Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie sollten das PowerApps-Portal verwenden, um Felder Common Data Service zu erstellen und zu bearbeiten, außer Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Erstellen eines Suchfeld für Kunden. 
    - Weitere Informationen: [Unterschiedliche Suchmethoden](types-of-fields.md#different-types-of-lookups)
-- Erstellen eines Felds in einer Lösung, die keine CDS-Standardlösung ist. 
+- Erstellen eines Felds in einer Lösung, die keine Common Data Service-Standardlösung ist. 
    - Weitere Informationen finden Sie in [Überblick zu Lösungen](solutions-overview.md).
 - Festlegen von Statusgrundübergängen. 
    - Weitere Informationen: [Festlegen von Statusgrundübergängen für benutzerdefinierte Entitäten](define-status-reason-transitions.md)
@@ -70,14 +70,14 @@ Sie sollten das PowerApps-Portal verwenden, um Felder Common Data Service for Ap
 
 ## <a name="community-tools"></a>Community-Tools
 
-**[Attribut-Manager](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** ist ein Tool, das die XrmToolbox-Community für CDS for Apps entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) für von der Community entwickelte Tools.
+**[Attribut-Manager](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) für von der Community entwickelte Tools.
 
 > [!NOTE]
 > Die Communitytools sind kein Produkt von Microsoft und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Siehe auch  
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps-Portals](create-edit-field-portal.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
 [Feldtypen und Felddatentypen](types-of-fields.md)<br />
 [Dokumentation für Entwickler: Arbeiten mit Attributmetadaten](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

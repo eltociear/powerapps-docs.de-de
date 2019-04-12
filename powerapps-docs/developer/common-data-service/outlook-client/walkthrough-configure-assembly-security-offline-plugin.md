@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Konfigurieren von Assembly-Sicherheit für ein Offline-Plug-In (Common Data Service für Apps) | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Konfigurieren von Assembly-Sicherheit für ein Offline-Plug-In (Common Data Service) | Microsoft Docs'
 description: Dieses Thema enthält eine exemplarische Vorgehensweise für das Konfigurieren einer Assemblysicherheit für ein Offline-Plug-In.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="walkthrough-configure-assembly-security-for-an-offline-plug-in"></a>Exemplarische Vorgehensweise: Assemblysicherheit für ein Offline-Plug-In konfigurieren
 
-Die "Common Data Service für Apps"-Plattform wendet eine zusätzliche Sicherheitsauflage auf registrierte Offline-Plug-In-Assemblys an. Wenn Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff installiert wird, wird ein AllowList-Schlüssel der Systemregistrierung im Clientcomputer hinzugefügt. Für jede Assembly mit einem von Ihnen registrierten Offline-Plug-In müssen Sie einen Registrierungsunterschlüssel unter dem AllowList-Schlüssel registrieren, wobei der Schlüsselname vom öffentlichen Schlüsseltoken der Assembly abgeleitet wird. Wird der Schlüssel nicht hinzugefügt, kann das Offline-Plug-In von der Plattform nicht ausgeführt werden, auch wenn das Plug-In registriert ist. In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie diesen Unterschlüssel für eine Plug-In-Assembly hinzufügen.  
+Die Common Data Service-Plattform wendet eine zusätzliche Sicherheitsauflage auf registrierte Offline-Plug-In-Assemblys an. Wenn Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff installiert wird, wird ein AllowList-Schlüssel der Systemregistrierung im Clientcomputer hinzugefügt. Für jede Assembly mit einem von Ihnen registrierten Offline-Plug-In müssen Sie einen Registrierungsunterschlüssel unter dem AllowList-Schlüssel registrieren, wobei der Schlüsselname vom öffentlichen Schlüsseltoken der Assembly abgeleitet wird. Wird der Schlüssel nicht hinzugefügt, kann das Offline-Plug-In von der Plattform nicht ausgeführt werden, auch wenn das Plug-In registriert ist. In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie diesen Unterschlüssel für eine Plug-In-Assembly hinzufügen.  
   
 ### <a name="get-the-public-key-token"></a>Öffentliches Schlüsseltoken abrufen  
   

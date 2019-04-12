@@ -1,5 +1,5 @@
 ---
-title: Abfragen hierarchischer Daten (Common Data Service für Apps) | Microsoft Docs
+title: Abfragen hierarchischer Daten (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie Sie die neuen Abfragebedingungsoperatoren nutzen, um Entitäten mit expliziten hierarchischen Beziehungen abzufragen.'
 ms.custom: ''
 ms.date: 10/31/2018

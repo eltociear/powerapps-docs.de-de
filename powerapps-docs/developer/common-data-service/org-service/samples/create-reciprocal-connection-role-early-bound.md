@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Eine reziproke Verbindungsrolle erstellen (Common Data Service for Apps) | MicrosoftDocs'
+title: 'Beispiel: Erstellen einer reziproken Verbindungsrolle (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Beispiel veranschaulicht, wie eine reziproke Verbindungsrolle erstellt wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-create-a-reciprocal-connection-role"></a>Beispiel: Eine reziproke Verbindungsrolle erstellen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-create-reciprocal-connection-role-early-bound -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-create-reciprocal-connection-role-early-bound -->
 
 Dieses Beispiel veranschaulicht, wie gegenseitige Verbindungsrollen erstellt werden. Es erstellt eine Verbindungsrolle für eine neue Firma sowie eine Verbindungsrolle für einen Kontakt und dann wird die Behandlung reziprok, indem sie einander zugeordnet werden. Sie können das Beispiel von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ReciprocalConnection
 ) herunterladen.

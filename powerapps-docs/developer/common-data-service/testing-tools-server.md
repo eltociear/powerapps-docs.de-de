@@ -1,5 +1,5 @@
 ---
-title: Testtools für serverseitige Entwicklung (Common Data Service for Apps) | Microsoft Docs
+title: Testtools für serverseitige Entwicklung (Common Data Service) | Microsoft Docs
 description: Informieren Sie sich über Testframeworks für serverseitige Entwicklung.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="testing-tools-for-server-side-development"></a>Testtools für serverseitige Entwicklung
 
-Viele Entwickler plädieren nachdrücklich im Rahmen ihrer Entwicklungsprozesses einen Komponententest durchzuführen. Andere sind nicht sicher. Common Data Service for Apps stellt keine Tools für Testframeworks bereit, aber Sie sollten beachten, dass Communitytools erhältlich sind, die Sie verwenden können. Ein beliebtes Framework für serverseitige Entwicklung ist [Fake Xrm Easy](https://dynamicsvalue.com/home). Dieses Framework kann mit den .NET-Framework Testframeworks Ihrer Wahl kombiniert werden. [FakeItEasy](https://fakeiteasy.github.io/) ist eine häufige Wahl.
+Viele Entwickler plädieren nachdrücklich im Rahmen ihrer Entwicklungsprozesses einen Komponententest durchzuführen. Andere sind nicht sicher. Common Data Service stellt keine Tools für Testframeworks bereit, aber Sie sollten beachten, dass Communitytools erhältlich sind, die Sie verwenden können. Ein beliebtes Framework für serverseitige Entwicklung ist [Fake Xrm Easy](https://dynamicsvalue.com/home). Dieses Framework kann mit den .NET-Framework Testframeworks Ihrer Wahl kombiniert werden. [FakeItEasy](https://fakeiteasy.github.io/) ist eine häufige Wahl.
 
 > [!NOTE]
 > Microsoft bietet keinen Support für die Tools von der Community. Bei Problemen mit einem Community-Tool werden können Sie sich an den Herausgeber wenden.

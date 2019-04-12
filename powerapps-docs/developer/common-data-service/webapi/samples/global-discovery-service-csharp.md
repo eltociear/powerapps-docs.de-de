@@ -1,5 +1,5 @@
 ---
-title: 'Web API Global Discovery Service Beispiel (C#) (Common Data Service für Apps) | Microsoft Docs'
+title: 'Web API Global Discovery Service Beispiel (C#) (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie Sie den Web API Global Discovery Service nutzen'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -25,7 +25,7 @@ Dieses Beispiel ist auf Github verfügbar unter [https://github.com/Microsoft/Po
 
 ## <a name="what-this-sample-does"></a>Funktionsweise:
 
-Dieses Beispiel enthält die folgenden Common Data Service für Apps-Instanzen für gegebenen Benutzeranmeldeinformationen zurückgegeben.
+Dieses Beispiel gibt die verfügbaren Common Data Service-Instanzen für gegebene Benutzeranmeldeinformationen zurück.
 
 ## <a name="how-this-sample-works"></a>Wie dieses Beispiel funktioniert
 
@@ -50,7 +50,7 @@ Das Beispiel hängt von der `GetInstances` Methode und der `Instance` Klasse unt
     {
 
       string GlobalDiscoUrl = "https://globaldisco.crm.dynamics.com/";
-      AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common", false);
+      AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.com", false);
 
       UserCredential cred = new UserCredential(username, password);
       AuthenticationResult authResult = authContext.AcquireToken(GlobalDiscoUrl, clientId, cred);

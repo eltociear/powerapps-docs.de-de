@@ -1,6 +1,6 @@
 ---
 title: Entitätsbeziehungsmetadaten | Microsoft Docs
-description: Erfahren Sie mehr zur Entitätsbeziehungs von Metadaten im Common Data Service für Apps
+description: Erfahren Sie mehr über die Entitätsbeziehungsmetadaten im Common Data Service
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -50,8 +50,8 @@ Mit Modell-angetriebenen Apps ermöglicht es eine Umgebung, die Sie aktivieren, 
 
 Entwickler können diese neue Typen von Abfragen anhand der Hierarchie mit `Under` und `Not Under` Operatoren aktivieren.
 
-Weitere Informationen: [Common Data Service für Apps Entwicklerhandbuch: Hierarchisch verknüpfte Daten abfragen und visualisieren](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
+Weitere Informationen: [Common Data Service-Entwicklerhandbuch: Hierarchisch verknüpfte Daten abfragen und visualisieren](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service für Apps-Entitäten](entities.md)
+[Common Data Service-Entitäten](entities.md)

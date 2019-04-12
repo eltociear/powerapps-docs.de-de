@@ -1,7 +1,7 @@
 ---
 title: Xrm.WebApi (Client-API-Referenz) in modellgestützten Apps | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: a6646fc8-c2e4-43fe-95f1-51483de38688
@@ -42,6 +42,6 @@ Stellt Eigenschaften und Methoden zur Verwendung der Web-API bereit, um Datensä
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Verwenden der Common Data Service für Apps-Web-API](../../../common-data-service/webapi/overview.md)
+[Common Data Service-Web-API verwenden](../../../common-data-service/webapi/overview.md)
 
 [Client-API-Xrm-Objekt](../clientapi-xrm.md)

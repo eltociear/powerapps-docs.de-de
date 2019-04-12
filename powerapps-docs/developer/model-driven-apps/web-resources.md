@@ -1,6 +1,6 @@
 ---
 title: Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Webressourcen sind virtuelle Dateien, die in der "CDS für Apps"-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.'
+description: 'Webressourcen sind virtuelle Dateien, die in der "Common Data Service"-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,18 +17,18 @@ search.app:
 ---
 # <a name="web-resources-in-model-driven-apps"></a>Webressourcen in modellgesteuerten Apps
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resources -->
 
 
-Webressourcen sind *virtuelle Dateien*, die in der "Common Data Services für Apps"-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.  
+Webressourcen sind *virtuelle Dateien*, die in der "Common Data Service"-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.  
   
 <a name="BKMK_CapabilitiesOfWebResources"></a>   
 ## <a name="capabilities-of-web-resources"></a>Verwendungsmöglichkeiten für Webressourcen  
- Webressourcen sind Dateien, die verwendet werden können, um die "CDS für Apps"-Webanwendung zu erweitern, beispielsweise HTML-Dateien, JavaScript und CSS sowie verschiedene Bildformate. Sie können Webressourcen in Formularanpassungen, die `SiteMap` oder im Anwendungsmenüband verwenden, da auf sie mithilfe der URL-Syntax verwiesen werden kann.  
+ Webressourcen sind Dateien, die verwendet werden können, um die Common Data Service-Webanwendung zu erweitern, beispielsweise HTML-Dateien, JavaScript und CSS sowie verschiedene Bildformate. Sie können Webressourcen in Formularanpassungen, die `SiteMap` oder im Anwendungsmenüband verwenden, da auf sie mithilfe der URL-Syntax verwiesen werden kann.  
   
- Die URL-Syntax für Webressourcen ermöglicht relative Pfadverweise. Mit den Entwicklungswerkzeugen können Sie eine Gruppe voneinander abhängiger Dateien auf einem Entwicklungsserver erstellen, indem Sie Dateitypen verwenden, die mit Webressourcen kompatibel sind. Wenn Sie dann eine einheitliche Namenskonvention und relative Pfadverweise verwenden, funktioniert die Website, nachdem Sie alle Dateien in CDS für Apps hochgeladen haben.
+ Die URL-Syntax für Webressourcen ermöglicht relative Pfadverweise. Mit den Entwicklungswerkzeugen können Sie eine Gruppe voneinander abhängiger Dateien auf einem Entwicklungsserver erstellen, indem Sie Dateitypen verwenden, die mit Webressourcen kompatibel sind. Wenn Sie dann eine einheitliche Namenskonvention und relative Pfadverweise verwenden, funktioniert die Website, nachdem Sie alle Dateien in Common Data Service hochgeladen haben.
   
- Da Webressourcen in CDS für Apps gespeichert werden und Lösungskomponenten sind, können sie einfach exportiert und in anderen "CDS für Apps"-Organisationen installiert werden. Webressourcen sind auch für Benutzer von CDS für Apps für Microsoft Office Outlook mit Offlinezugriff verfügbar, wenn sie offline sind, da sie mit den Daten des Benutzers synchronisiert werden.  
+ Da Webressourcen in Common Data Service gespeichert werden und Lösungskomponenten sind, können einfach exportiert und in anderen "Common Data Service"-Organisationen installiert werden. Webressourcen sind auch für Benutzer von Common Data Service für Microsoft Office Outlook mit Offlinezugriff verfügbar, wenn sie offline sind, da sie mit den Daten des Benutzers synchronisiert werden.  
   
  Sie können den Formular-Editor verwenden, um formularfähige Webressourcen Ihren Entitätsformularen hinzuzufügen und um sie zu konfigurieren.  
   
@@ -36,9 +36,9 @@ Webressourcen sind *virtuelle Dateien*, die in der "Common Data Services für Ap
   
 <a name="BKMK_LimitationsOfWebResources"></a>   
 ### <a name="limitations-of-web-resources"></a>Einschränkungen für Webressourcen  
- Es gibt keinen Webressourcentyp, der die Funktionalität einer   ASP.NET(.aspx) -Seite unterstützt, um Code auf dem Server auszuführen. Webressourcen sind auf statische Dateien begrenzt oder auf Dateien, die im Browser verarbeitet werden. Eine Webressource kann Code enthalten, der im Browser verarbeitet wird, um Webdienstaufrufe zur Interaktion mit "CDS für Apps"-Daten auszuführen.
+ Es gibt keinen Webressourcentyp, der die Funktionalität einer   ASP.NET(.aspx) -Seite unterstützt, um Code auf dem Server auszuführen. Webressourcen sind auf statische Dateien begrenzt oder auf Dateien, die im Browser verarbeitet werden. Eine Webressource kann Code enthalten, der im Browser verarbeitet wird, um Webdienstaufrufe zur Interaktion mit Common Data Service-Daten auszuführen.
   
- Webressourcen sind nur verfügbar, wenn Sie den Sicherheitskontext für "CDS für Apps"-Webanwendungen verwenden. Nur lizenzierte "CDS für Apps"-Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.  
+ Webressourcen sind nur verfügbar, wenn Sie den Sicherheitskontext für Common Data Service-Webanwendungen verwenden. Nur lizenzierte Common Data Service-Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.  
   
 #### <a name="size-limitations"></a>Größeneinschränkungen  
 Die maximale Größe für Dateien, die hochgeladen werden können, wird durch die Organization.MaxUploadFileSize-Eigenschaft bestimmt. Diese Eigenschaft wird in der Dynamics 365-Anwendung auf der Registerkarte E-Mail in den Systemeinstellungen festgelegt. Mit dieser Einstellung wird die Größe von Dateien begrenzt, die an E-Mail-Nachrichten, Notizen und Webressourcen angefügt werden können. Die Standardeinstellung ist 5 MB.
@@ -79,7 +79,7 @@ $webresource:<name of Web Resource>
 ```  
   
 > [!NOTE]
->  Bei Verwendung der `$webresource`-Direktive werden von CDS für Apps Lösungsabhängigkeiten erstellt oder aktualisiert.  
+>  Bei Verwendung der `$webresource`-Direktive werden von Common Data Service Lösungsabhängigkeiten erstellt oder aktualisiert.  
   
 ### <a name="xrmnavigationopenwebresource"></a>Xrm.Navigation.openWebResource  
  Die Funktion Xrm.Navigation.[openWebResource](clientapi/reference/Xrm-Navigation/openWebResource.md) öffnet eine HTML-Webressource in einem neuen Fenster, wobei als Parameter der Name der Webressource, beliebige Abfragezeichenfolgendaten für den Datenparameter sowie Informationen über Höhe und Breite des Fensters übergeben werden können.  
@@ -110,18 +110,18 @@ $webresource:<name of Web Resource>
  Das folgende Beispiel zeigt das Format einer URL, die zur Anzeige von Webressourcen verwendet werden kann.  
   
 ```  
-<CDS for Apps URL>/WebResources/<name of web resource>  
+<Common Data Service Environment URL>/WebResources/<name of web resource>  
 ```  
   
  Die Anwendung wird diese URL verarbeiten und die Datei mit der aktuelle Version der Webressource zurückgeben. Diese URL sieht folgendermaßen aus:  
   
 ```  
-<CDS for Apps URL>/%7B<version value>%7D/WebResources/<name of web resource>  
+<Common Data Service Environment URL>/%7B<version value>%7D/WebResources/<name of web resource>  
 ```  
   
  Der Versionen-Wert wird aktualisiert, wenn Sie Anpassungen veröffentlichen, sodass sichergestellt ist, dass der Browser die zuletzt zwischengespeicherte Version der Webressource verwendet. Verwenden Sie deshalb einen relativen Pfad zu einer Webressource, die Xrm.Naviation.[openWebResource](clientapi/reference/Xrm-Navigation/openWebResource.md)-Funktion oder die [$webresource Directive](web-resources.md#BKMK_WebResourceDirective) (wenn möglichlich) , da der Versionen-Wert automatisch eingefügt wird. Bei umfangreichen Webressourcen kann es zu signifikanten Leistungsbeeinträchtigungen kommen, wenn Sie nicht die zwischengespeicherte Version der Datei verwenden.  
   
- Das folgende Beispiel zeigt eine URL für CDS für Apps, wobei `MyOrganization` der Name Ihrer Organisation ist und `new_/test/test.htm` der Name der Webressource:  
+ Das folgende Beispiel zeigt eine URL für Common Data Service, wobei `MyOrganization` der Name Ihrer Common Data Service-Umgebung ist und `new_/test/test.htm` der Name der Webressource:  
   
 ```  
 https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm  
@@ -131,14 +131,14 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
 >  Das Einfügen des Zeichens "/" und einer Dateinamenerweiterung im Namen der Webressource ist eine bewährte Methode.  
   
   
- Wenn Sie Code schreiben, der auf eine Webressource verweist die für CDS für Apps funktioniert, sollten Sie die [getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md)-Funktion verwenden.
+ Wenn Sie Code schreiben, der auf eine Webressource verweist, die für Common Data Service funktioniert, sollten Sie die [getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md)-Funktion verwenden.
 
 ## <a name="community-tools"></a>Community-Tools
 
-**WebResources-Manager** ist ein Tool, das die XrmToolbox-Community für CDS für Apps entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
+**WebResources-Manager** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von CDS for Apps und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
+> Die Communitytools sind kein Produkt von Common Data Service und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
   
 ### <a name="see-also"></a>Siehe auch  
 

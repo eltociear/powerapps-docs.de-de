@@ -1,10 +1,10 @@
 ---
-title: Downloadtools von NuGet (Common Data Service für Apps) Startseite | Microsoft Docs
+title: Tools von NuGet herunterladen (Common Data Service) Startseite | Microsoft Docs
 description: 'Laden Sie die Plug-in-Registrierung, Paketbereitstellung und andere Kerntools von Nuget herunter.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

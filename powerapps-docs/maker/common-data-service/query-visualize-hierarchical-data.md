@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und vi
 ms.custom: ''
 ms.date: 06/20/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="query-and-visualize-hierarchically-related-data"></a>Abfragen und Visualisieren von hierarchiebezogenen Daten
+# <a name="query-and-visualize-hierarchically-related-data"></a>Hierarchiebezogene Daten abfragen und visualisieren
 
 Sie können wertvolle Unternehmenseinblicke erhalten, indem Sie hierarchisch verknüpften Daten darstellen. Die hierarchischen Modellierungs- und Visualisierungsfähigkeiten bieten Ihnen eine Reihe von Vorteilen:  
   
@@ -37,7 +37,7 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten  
- Mit Common Data Service for Apps werden hierarchische Datenstrukturen durch auf sich selbst verweisende Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
+ Mit Common Data Service werden hierarchische Datenstrukturen durch auf sich selbst verweisende Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
   
  Die folgenden Beispiele illustrieren verschiedene Szenarien für das Abfragen von Hierarchien:  
   

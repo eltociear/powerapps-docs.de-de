@@ -1,5 +1,5 @@
 ---
-title: Auslagern von umfangreichen Ergebnissätzen mit FetchXML (Common Data Service for Apps) | Microsoft Docs
+title: Auslagern von umfangreichen Ergebnissätzen mit FetchXML (Common Data Service) | Microsoft Docs
 description: 'Sie können die Ergebnisse einer FetchXML-Abfrage auslagern, indem Sie das Auslagerungscookie verwenden.'
 ms.custom: ''
 ms.date: 10/31/2018

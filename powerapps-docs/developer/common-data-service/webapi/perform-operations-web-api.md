@@ -1,15 +1,15 @@
 ---
-title: Ausführen von Vorgängen mithilfe der Web-API (Common Data Service for Apps)| Microsoft Docs
-description: 'Die Web-API von Common Data Service for Apps bietet einen modernen RESTful-Webdienst, den Sie verwenden können, um mit Daten in Common Data Service for Apps mithilfe vielerlei Plattformen, Programmiersprachen und Geräten zu interagieren. Informieren Sie sich über die Vorgänge, die mithilfe von Internet von Web-API ausgeführt werden können'
+title: Ausführen von Vorgängen mithilfe der Web-API (Common Data Service) | Microsoft Docs
+description: 'Die Web-API von Common Data Service bietet einen modernen RESTful-Webdienst, den Sie verwenden können, um mit Daten in Common Data Service mithilfe vielerlei Plattformen, Programmiersprachen und Geräten zu interagieren. Informieren Sie sich über die Vorgänge, die mithilfe von Internet von Web-API ausgeführt werden können'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - CDS for Apps (online)
+  - Common Data Service (online)
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
 author: brandonsimons
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="perform-operations-using-the-web-api"></a>Vorgänge mithilfe der Web-API ausführen
 
-Die Web-API bietet einen modernen RESTful-Webdienst, den Sie verwenden können, um mit Daten in Common Data Service for Apps mithilfe vielerlei Plattformen, Programmiersprachen und Geräten zu interagieren.
+Die Web-API bietet einen modernen RESTful-Webdienst, den Sie verwenden können, um mit Daten in Common Data Service mithilfe vielerlei Plattformen, Programmiersprachen und Geräten zu interagieren.
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
@@ -43,6 +43,6 @@ Die Web-API bietet einen modernen RESTful-Webdienst, den Sie verwenden können, 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden der Common Data Service for Apps-Web-API](overview.md)<br />
-[Authentifizierung beim Common Data Service für Apps mit der Web API](authenticate-web-api.md)<br />
+[Common Data Service-Web-API verwenden](overview.md)<br />
+[Authentifizierung beim Common Data Service mit der Web-API](authenticate-web-api.md)<br />
 [Web API-Typen, Funktionen und Aktionen](web-api-types-operations.md)

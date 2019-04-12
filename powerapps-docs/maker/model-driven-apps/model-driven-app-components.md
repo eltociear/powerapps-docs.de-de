@@ -1,7 +1,7 @@
 ---
 title: Modellgesteuerte Anwendungskomponenten in PowerApps verstehen | MicrosoftDocs
 description: 'Verschiedene Komponenten einer modellgesteuerten Anwendung wie Daten, Benutzeroberfläche, Logik und Visualisierung verstehen.'
-Keywords: 'fields, attributes, model-driven app'
+Keywords: 'Felder, Attribute, modellgestützte App'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker
@@ -18,7 +18,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="understand-model-driven-app-components"></a>Modellgesteuerte Anwendungskomponenten verstehen
+# <a name="understand-model-driven-app-components"></a>Grundlegendes zu Komponenten modellgestützter Apps
 Eine gut gestaltete modellgesteuerte Anwendung besteht aus mehreren Komponenten, die Sie mit Hilfe des Designers auswählen, um das Aussehen und die Funktionalität der fertigen App zu gestalten. Die Komponenten und Komponenteneigenschaften, aus denen Designer eine App zusammensetzen, werden zu Metadaten. 
 
 Um zu verstehen, wie sich jede dieser Komponenten auf das App-Design bezieht, werden sie hier in die Kategorien *Daten*, *UI*, *Logik* und *Visualisierung* unterteilt. 

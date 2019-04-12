@@ -1,5 +1,5 @@
 ---
-title: Registrieren eines Webhooks (Common Data Service für Apps) | MicrosoftDocs
+title: Registrieren eines Webhooks (Common Data Service) | MicrosoftDocs
 description: 'In diesem Thema wird beschrieben, wie ein Webhook mithilfe des Plug-In-Registrierungstools registriert wird'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -34,7 +34,7 @@ Wenn Sie einen Webhook registrieren, müssen Sie drei Arten von Informationen zu
 
 ## <a name="authentication-options"></a>Authentifizierungsoptionen
 
-Die richtige zu verwendende Authentifizierungsoption zur Webhook-Registrierung und die Werte hängen davon ab, was der Endpunkt erwartet.  Der Besitzer des Endpunkts muss Ihnen mitteilen, was verwendet werden soll. Zum Verwenden von Webhooks mit CDS for Apps muss der Endpunkt eine der drei nachfolgend beschriebenen Authentifizierungsoptionen zulassen:
+Die richtige zu verwendende Authentifizierungsoption zur Webhook-Registrierung und die Werte hängen davon ab, was der Endpunkt erwartet.  Der Besitzer des Endpunkts muss Ihnen mitteilen, was verwendet werden soll. Zum Verwenden von Webhooks mit Common Data Service muss der Endpunkt eine der drei nachfolgend beschriebenen Authentifizierungsoptionen zulassen:
 
 
 |Typ  |Beschreibung  |

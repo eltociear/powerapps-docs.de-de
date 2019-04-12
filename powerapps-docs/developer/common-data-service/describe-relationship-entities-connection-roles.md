@@ -1,5 +1,5 @@
 ---
-title: Beschreiben Sie eine Beziehung zwischen Entitäten mit Verbindungsrollen (Common Data Service for Apps) | Microsoft Docs
+title: Beschreiben Sie eine Beziehung zwischen Entitäten mit Verbindungsrollen (Common Data Service) | Microsoft Docs
 description: Beschreibung einer Beziehung zwischen Entitäten unter Verwendung von Verbindungsrollen und Verbindungsrollenkategorien.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -47,7 +47,7 @@ Sie können die Beziehung zwischen Datensätzen durch Rollen die beschreiben, di
   
 - Verwenden Sie das Attribut `ConnectionRole.Category`, um eine Rollenkategorie anzugeben. Die möglichen Werte für dieses Attribut werden im globalen Optionssatz `connectionrole_category` definiert.  
   
-- Wenn Sie eine Verbindungsrolle erstellen, können Sie einen Entitätstyp angeben, auf den die Rolle angewendet wird, beispielsweise Lead, Firma oder Mitbewerber. Wenn Sie keinen bestimmten Entitätstyp angeben, können Sie eine Verbindungsrolle auf alle CDs for Apps-Entitäten anwenden. Um den Entitätstyp zu definieren, verwenden Sie das `ConnectionRoleObjectTypeCode.AssociatedObjectTypeCode`-Attribut. Um die Verbindungsrolle mit einem spezifischen Entitätstyp zu verbinden, verwenden Sie das `ConnectionRoleObjectTypeCode.ConnectionRoleId`-Attribut. Auf einen Verbindungsrollen-Datensatz kann von mehreren Verbindungsobjekttypcode-Datensätzen verwiesen werden. Um alle Verweise auf den Verbindungsrollen-Datensatz zu entfernen, können Sie diese Verbindungsrolle auf alle CDS for Apps-Entitäten anwenden.  
+- Wenn Sie eine Verbindungsrolle erstellen, können Sie einen Entitätstyp angeben, auf den die Rolle angewendet wird, beispielsweise Lead, Firma oder Mitbewerber. Wenn Sie keinen bestimmten Entitätstyp angeben, können Sie eine Verbindungsrolle auf alle Common Data Service-Entitäten anwenden. Um den Entitätstyp zu definieren, verwenden Sie das `ConnectionRoleObjectTypeCode.AssociatedObjectTypeCode`-Attribut. Um die Verbindungsrolle mit einem spezifischen Entitätstyp zu verbinden, verwenden Sie das `ConnectionRoleObjectTypeCode.ConnectionRoleId`-Attribut. Auf einen Verbindungsrollen-Datensatz kann von mehreren Verbindungsobjekttypcode-Datensätzen verwiesen werden. Um alle Verweise auf den Verbindungsrollen-Datensatz zu entfernen, können Sie diese Verbindungsrolle auf alle Common Data Service-Entitäten anwenden.  
   
   > [!TIP]
   >  Um die Verbindungsrollen für eine Firmenentität zu suchen, geben Sie in der Abfrage alle Rollen an, die mit der Firmenentität (Entitäts-Typcode = 1) oder mit allen Entitäten (Entitäts-Typcode = 0) verknüpft sind.  

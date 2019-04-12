@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Abfragen mit QueryExpression (Common Data Service für Apps) | Microsoft Docs
+title: Erstellen von Abfragen mit QueryExpression (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie Sie die QueryExpression-Klasse zum programmgesteuerten Erstellen einer Abfrage, die Datenfilter und Suchbedingungen, die den Umfang einer Datenbanksuche definieren, enthält, verwenden können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="build-queries-with-queryexpression"></a>Erstellen von Abfragen mit QueryExpression
 
-In Common Data Service for Apps können Sie die <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Klasse zum programmgesteuerten Erstellen einer Abfrage, die Datenfilter und Suchbedingungen, die den Umfang einer Datenbanksuche definieren, enthält, verwenden. Ein Abfrageausdruck wird für Einzelobjektsuchen verwendet. Beispielsweise können Sie eine Suche erstellen, um alle Firmen zurückzugeben, die bestimmten Suchkriterien entsprechen. Die Klasse <xref:Microsoft.Xrm.Sdk.Query.QueryBase> ist die Basisklasse für Abfrageausdrücke. Es gibt zwei abgeleitete Klassen: <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> und <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>. Die Klasse `QueryExpression` unterstützt komplexe Abfragen. Die Klasse `QueryByAttribute` ist eine einfache Möglichkeit, um nach Entitäten zu suchen, bei denen Attribute mit angegebenen Werten übereinstimmen.  
+In Common Data Service können Sie die <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Klasseverwenden, um programmgesteuert eine Abfrage zu erstellen, die Datenfilter und Suchbedingungen enthält, die den Umfang einer Datenbanksuche definieren. Ein Abfrageausdruck wird für Einzelobjektsuchen verwendet. Beispielsweise können Sie eine Suche erstellen, um alle Firmen zurückzugeben, die bestimmten Suchkriterien entsprechen. Die Klasse <xref:Microsoft.Xrm.Sdk.Query.QueryBase> ist die Basisklasse für Abfrageausdrücke. Es gibt zwei abgeleitete Klassen: <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> und <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>. Die Klasse `QueryExpression` unterstützt komplexe Abfragen. Die Klasse `QueryByAttribute` ist eine einfache Möglichkeit, um nach Entitäten zu suchen, bei denen Attribute mit angegebenen Werten übereinstimmen.  
   
  Abfrageausdrücke werden in Methoden verwendet, die mehr als einen Datensatz abfragen, z.B. die <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> Methode, in Nachrichten, die eine Operation mit einer durch einen Abfrageausdruck spezifizierten Ergebnismenge durchführen, z.B. <xref:Microsoft.Crm.Sdk.Messages.BulkDeleteRequest> und wenn die ID für einen bestimmten Datensatz nicht bekannt ist.  
   
@@ -26,7 +26,7 @@ In Common Data Service for Apps können Sie die <xref:Microsoft.Xrm.Sdk.Query.Qu
 > [!WARNING]
 >  Rufen Sie nicht alle Attribute in einer Abfrage ab, da dadurch die Leistung beeinträchtigt wird. Das trifft insbesondere zu, wenn die Abfrage als Parameter in einer Updateanforderung verwendet wird. Wenn in einem Update alle Attribute enthalten sind, werden dadurch alle Feldwerte festgelegt, selbst wenn sie unverändert sind, und häufig werden kaskadierende Updates zu untergeordneten Datensätzen ausgelöst.  
   
- Es gibt zwei weitere Möglichkeiten, Abfragen zu erstellen, um Datensätze aus CDS for Apps abzurufen. FetchXML, die herstellereigene CDS for Apps-Abfragesprache, kann verwendet werden, um einige Abfragen auszuführen, indem XML-basierte Abfragen verwendet werden. Weitere Informationen finden Sie unter [Abfragen erstellen mit FetchXML](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml). Sie können auch .NET Language-Integrated Query (LINQ) zum Schreiben von Abfragen verwenden. Weitere Informationen: [Erstellen von Abfragen mit LINQ (.NET Language-Integrated Query)](build-queries-with-linq-net-language-integrated-query.md).  
+ Es gibt zwei weitere Möglichkeiten, Abfragen zu erstellen, um Datensätze aus Common Data Service abzurufen. FetchXML, die herstellereigene Common Data Service-Abfragesprache, kann verwendet werden, um einige Abfragen auszuführen, indem XML-basierte Abfragen verwendet werden. Weitere Informationen finden Sie unter [Abfragen erstellen mit FetchXML](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml). Sie können auch .NET Language-Integrated Query (LINQ) zum Schreiben von Abfragen verwenden. Weitere Informationen: [Erstellen von Abfragen mit LINQ (.NET Language-Integrated Query)](build-queries-with-linq-net-language-integrated-query.md).  
   
  Um eine Abfrage zu speichern, können Sie sie in FetchXML mithilfe von <xref:Microsoft.Crm.Sdk.Messages.QueryExpressionToFetchXmlRequest> konvertieren, und sie mithilfe der `userquery`-Entität als gespeicherte Ansicht speichern.  
   

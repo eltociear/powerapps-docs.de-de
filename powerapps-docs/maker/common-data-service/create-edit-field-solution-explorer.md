@@ -1,9 +1,9 @@
 ---
-title: Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Projektmappen-Explorer | MicrosoftDocs
+title: Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps Lösungs-Explorer | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,13 +19,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-solution-explorer"></a>Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps Lösungs-Explorer
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps Lösungs-Explorer
 
-Projektmappen-Explorer bietet eine Möglichkeit, um Felder für Common Data Service für Apps zu erstellen und zu bearbeiten.
+Lösungs-Explorer bietet eine Möglichkeit, um Felder für Common Data Service zu erstellen und zu bearbeiten.
 
 [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können mithilfe des Lösungs-Explorers nur festgelegt werden. <br />Weitere Informationen: 
-- Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)
-- [Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps-Portals](create-edit-field-portal.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
 
@@ -142,7 +142,7 @@ Wenn Sie **Vorhandenen Optionssatz verwenden** wählen, zeigt der Designer eine 
 
 ![Konfigurieren eines globalen Optionssatzes](media/global-option-set-solution-explorer.png)
 
-Sie können globale Optionssätze auch separat konfigurieren. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service for Apps (Auswahl)](create-edit-global-option-sets.md)
+Sie können globale Optionssätze auch separat konfigurieren. Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)
 
 > [!NOTE]
 > Wenn Sie jeden Optionssatz als globalen Optionssatz in der Liste der globalen Optionssätze definieren, wächst diese Liste und könnte zum Verwalten schwierig werden. Wenn Sie wissen, dass der Datensatz von Optionen nur an einer Stelle verwendet wird, verwenden Sie einen lokalen Optionssatz.
@@ -260,8 +260,8 @@ Alle Felder, die direkte Texteingabe ermöglichen, haben einen IME-Modus. Der Ei
 
 
 ### <a name="see-also"></a>Siehe auch  
-Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service für Apps mit PowerApps-Portals](create-edit-field-portal.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)<br />
 [Feldtypen und Felddatentypen](types-of-fields.md)<br />
 [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
 [Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />

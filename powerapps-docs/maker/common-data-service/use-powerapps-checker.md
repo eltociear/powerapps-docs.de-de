@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 12/04/2018
+ms.date: 03/20/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -17,22 +17,18 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Verwenden Sie Lösungsprüfer, um Ihre modellgesteuerten Apps in PowerApps zu prüfen
 
-Um komplexe geschäftliche Anforderungen zu liefern, können Modell-angetriebene App-Hersteller mit fortschrittlichen Lösungen arbeiten, die Common Data Service (CDS) für App-Plattform anpassen und erweitern. Mit der erweiterten Implementierungen kommt ein erhöhtes Risiko, wo, Leistung und Stabilität Zuverlässigkeitsprobleme eingegeben werden, und sich auf die Benutzererfahrung negativ auswirken können. Identifizieren und verstehen, wie diese Probleme zeitaufwendig und kompliziert sein können. Mit der Lösungsprüferfunktion können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen und diese problematischen Muster schnell ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
+Um komplexe geschäftliche Anforderungen zu liefern, können Modell-angetriebene App-Hersteller mit fortschrittlichen Lösungen arbeiten, die Common Data Service-Plattform anpassen und erweitern. Mit der erweiterten Implementierungen kommt ein erhöhtes Risiko, wo, Leistung und Stabilität Zuverlässigkeitsprobleme eingegeben werden, und sich auf die Benutzererfahrung negativ auswirken können. Identifizieren und verstehen, wie diese Probleme zeitaufwendig und kompliziert sein können. Mit der Lösungsprüferfunktion können Sie eine umfangreiche Prüfung der statischen Analyse auf Ihren Lösungen für einen Satz von Regeln der bewährten Methode ausführen und diese problematischen Muster schnell ermitteln. Nach der Überprüfung erhalten Sie einen Bericht, der Probleme aufzeigt, die bestimmt werden, welche Komponenten und Code betroffen sind und die Dokumentation verknüpft, die beschreibt, wie ein Problem zu beheben ist.
 
 Der Lösungsprüfer analysiert die Lösungskomponente: 
-- CDS für Apps Plug-Ins
-- CDS für Apps benutzerdefinierte Workflowaktivitäten 
-- CDS für App-Webressourcen (HTML) und JavaScript
-- CDS für App-Konfigurationen, wie SDK-Nachrichtenschritte 
+- Common Data Service-Plug-Ins
+- Benutzerdefinierte Common Data Service-Workflow-Aktivitäten 
+- Common Data Service-Webressourcen (HTML und JavaScript)
+- Common Data Service-Konfigurationen wie SDK-Message-Schritte 
 
-Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung exportiert werden. Lösungsprüfer funktioniert *nicht* mit folgenden Lösungen: 
+Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung exportiert werden. 
 
-
-<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
-
-- Die Systemstandardlösungen (Standardlösung und Common Data Services Standardlösung).
-- Lösungen, die JavaScript mithilfe von ECMAScript 6 (2015) oder einer höheren Version enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
-
+> [!NOTE]
+> Lösungsprüfer funktioniert nicht für Lösungen, die JavaScript mit ECMAScript 6 (2015 ) oder höheren Versionen enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
 
 ## <a name="enable-the-solution-checker"></a>Aktivieren des Lösungsprüfer
 Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Sie die PowerApps-Prüferlösung installieren. Beachten Sie, dass Sie sie nicht finden können, indem Sie in Microsoft AppSource durchsuchen oder suchen. Zur Installation führen Sie die folgenden Schritte aus:  
@@ -62,7 +58,7 @@ When you install the PowerApps checker these solution specific components are cr
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your CDS for Apps environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>Ausführen es Lösungsprüfer
 Nachdem Sie den PowerApps-Prüfer in Ihrer Umgebung installieren haben, steht ein Menüelement **Lösungsprüfer** zur Verfügung, wenn Sie eine nicht verwaltete Lösung PowerApps **Lösungen** im Bereich aktivieren. 
@@ -157,7 +153,7 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 |Webressourcen  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Sprechen Sie nicht die Microsoft Dynamics CRM 2011 SOAP-Dienstleistungen an.   |
 |Webressourcen  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Verwenden Sie keine Internet Explorer-Vorgänger APIs Internet oder Browser-Plug-Ins.   |
 |Webressourcen  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | Verwenden Sie keine veralteten Microsoft Dynamics CRM-Objektmodell 2011.  |
-|Webressourcen  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Verwenden Sie keine CDS für App-Endpunkt URLs.    |
+|Webressourcen  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Verwenden Sie keine absoluten Common Data Service-Endpunkt-URLs.    |
 |Webressourcen  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Nutzen Sie Client-Kontexte.   |
 |Webressourcen  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Nutzen Sie Dialog-API-Parameter.   |
 |Webressourcen  | [web-use-org-setting](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Nutzen Sie Organisationseinstellungen.   |
@@ -167,6 +163,6 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 
 
 ## <a name="see-also"></a>Siehe auch
-[Best Practices und Leitlinien für den Common Data Service for Apps](../../developer/common-data-service/best-practices/index.md)<br />
+[Bewährte Methoden und Leitlinien für den Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
 [Best Practices und Anleitungen für modellgetriebene Anwendungen](../../developer/model-driven-apps/best-practices/index.md)<br />
 [Häufige Probleme und Lösungen für Solution Checker](common-issues-resolutions-solution-checker.md)<br />

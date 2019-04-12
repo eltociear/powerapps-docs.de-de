@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer benutzerdefinierte Entität (Common Data Service für Apps) | Microsoft Docs
-description: 'Zeigt, wie Sie programmgesteuert eine benutzerdefinierte Entität im Common Data Service (CDS) for Apps erstellen.'
+title: Erstellen einer benutzerdefinierten Entität (Common Data Service) | Microsoft Docs
+description: 'Zeigt, wie Sie programmgesteuert eine benutzerdefinierte Entität im Common Data Service erstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

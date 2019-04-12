@@ -4,7 +4,7 @@ description: 'Informationen zu den verschiedenen Arten, wie eine Entität bearbe
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,7 +39,7 @@ Es gibt zwei Möglichkeiten, eine Entität mithilfe eines Designers zu bearbeite
 
 Sowohl im PowerApps-Portal als auch im Lösungs-Explorer können Sie Folgendes durchführen:
 
-- **Bearbeiten der Entitätsfelder**. Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service for Apps](create-edit-fields.md)
+- **Bearbeiten der Entitätsfelder**. Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
   
 - **Bearbeiten der Entitätsbeziehungen**. Weitere Informationen:  [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
 

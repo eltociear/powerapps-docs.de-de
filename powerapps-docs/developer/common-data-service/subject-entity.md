@@ -1,5 +1,5 @@
 ---
-title: Betreff-Entität (Common Data Service für Apps) | Microsoft Docs
+title: Betreff-Entität (Common Data Service) | Microsoft Docs
 description: 'Weitere Informationen zu betreffkategorisierenden Entitätsdatensätzen in PowerApps, z. B. Artikel und Vertriebsdokumentation. Wenn Sie Betreffe verwenden, können Sie eine Themenhierarchie erstellen, um Informationen zu organisieren und zu verwalten.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="subject-entity"></a>Betreff-Entität
 
-Ein *Betreff* kategorisiert Entitätsdatensätze, wie z. B. Artikel und Vertriebsdokumentation. Wenn Sie Betreffe verwenden, können Sie eine Themenhierarchie erstellen, um in Common Data Service (CDS) for Apps Informationen zu organisieren und zu verwalten. Die Informationen, die in der Betreffstruktur organisiert sind, können für eine beliebige Entität in CDS for Apps verwendet werden. Die `Subject`-Entität kategorisiert Folgendes:  
+Ein *Betreff* kategorisiert Entitätsdatensätze, wie z. B. Artikel und Vertriebsdokumentation. Wenn Sie Betreffe verwenden, können Sie eine Themenhierarchie erstellen, um in Common Data Service Informationen zu organisieren und zu verwalten. Die Informationen, die in der Betreffstruktur organisiert sind, können für eine beliebige Entität in Common Data Service verwendet werden. Die `Subject`-Entität kategorisiert Folgendes:  
   
 - Wissensdatenbankartikel:  
   

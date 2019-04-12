@@ -1,5 +1,5 @@
 ---
-title: Entitätsbeziehungs-Metadatennachrichten (Common Data Service für Apps) | Microsoft Docs
+title: Entitätsbeziehungs-MetadatenMessages (Common Data Service) | Microsoft Docs
 description: 'In diesem Artikel sind die Meldungen aufgeführt, die Sie verwenden können, um Entitätsmetadatenbeziehungen mithilfe von Web API und Organisationservice zu erstellen, abzurufen, zu aktualisieren und zu löschen.'
 ms.custom: ''
 ms.date: 10/31/2018

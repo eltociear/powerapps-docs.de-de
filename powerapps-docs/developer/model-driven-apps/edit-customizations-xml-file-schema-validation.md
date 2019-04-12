@@ -22,7 +22,7 @@ search.app:
 
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>Bearbeiten der XML-Datei für Anpassungen mit Schemaüberprüfung
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/edit-customizations-xml-file-schema-validation -->
 
 Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die als Lösung exportiert wird. Bestimmte Teile der Datei customizations.xml können manuell bearbeitet werden. Informationen zum Schema helfen dabei, sicherzustellen, dass alle Änderungen, die Sie vornehmen, gültig sind.  
   
@@ -49,13 +49,13 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
   
 - VisualizationDataDescription.xsd  
   
-  Diese Dateien werden auch auf dem lokalen allgemeinen [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service für App-Server installiert: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
+  Diese Dateien werden auch auf dem lokalen allgemeinen [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service-Server installiert: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
   
 [!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd ist das Schema für die exportierte Lösung. Es enthält Verweise auf andere XSD-Dateien. Alle Dateien müssen sich im selben Ordner befinden.  
   
 <a name="BKMK_UseSchemaValidation"></a>   
 ## <a name="using-schema-validation"></a>Verwenden von Schemaüberprüfung  
- Da die exportierte XML-Datei eine Textdatei ist, können Sie sie mithilfe eines Text-Editors wie [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] bearbeiten. Es wird jedoch unbedingt empfohlen, dass Sie eine Anwendung verwenden, die die Überprüfung von XSD-Schemas unterstützt, wie z. B. [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. XSD-Überprüfung bietet [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> Schemaüberprüfung, Informationen in [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)], um Fehler zu vermeiden.  
+ Da die exportierte XML-Datei eine Textdatei ist, können Sie sie mithilfe eines Text-Editors wie [!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] bearbeiten. Es wird jedoch unbedingt empfohlen, dass Sie eine Anwendung verwenden, die die Überprüfung von XSD-Schemas unterstützt, wie z. B. [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)]. XSD-Überprüfung in [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> bietet [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)]-Informationen und Schemaüberprüfung, um Fehler zu vermeiden.  
   
  Die XCD-Schemadateien, die verwendet werden, um die Datei customizations.xml in einer Lösung zu validieren, stehen unter  zur Verfügung. [!INCLUDE[schema_download](../../includes/schema-download.md)]. Stellen Sie sicher, dass Sie alle Dateien aus diesem Ordner in dasselbe Verzeichnis kopieren. Sie müssen die Datei customizations.xml mit der Datei CustomizationsSolution.xsd verknüpfen. Diese Datei enthält Verweise auf alle anderen XSD-Dateien im Ordner.  
   
@@ -78,7 +78,7 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
   
 ### <a name="see-also"></a>Siehe auch
 
-[Wann die Anpassungsdatei bearbeitet ist für Common Data Service für Apps](when-edit-customization-file.md)<br/> 
+[Wann die Anpassungsdatei bearbeitet ist für Common Data Service](when-edit-customization-file.md)<br/> 
 [Menüband-Core-Schema](ribbon-core-schema.md)<br/>
 [Menübandtypenschema](ribbon-types-schema.md)<br/>
 [Menüband-WSS-Schema](ribbon-wss-schema.md)<br/>

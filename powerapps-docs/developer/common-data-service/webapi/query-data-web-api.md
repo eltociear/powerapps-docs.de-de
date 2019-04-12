@@ -1,10 +1,10 @@
 ---
-title: Datenabfrage mit Web-API (Common Data Service for Apps) | Microsoft Docs
-description: 'Informieren Sie sich über die verschiedenen Methoden zum Abfragen mit der Common Data Service für Apps-Daten mit dem Common Data Servce for Apps-Web-API und verschiedenen Systemabfrageoptionen, die in diesen Abfragen angewandt werden können.'
+title: Abfragen von Daten mit der Web-API (Common Data Service) | Microsoft Docs
+description: 'Informieren Sie sich über die verschiedenen Methoden zum Abfragen mit der Common Data Service-Daten mit der Common Data Servce-Web-API und verschiedenen Systemabfrageoptionen, die in diesen Abfragen angewandt werden können.'
 ms.custom: ''
 ms.date: 02/06/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -214,9 +214,9 @@ Die Web API unterstützt diese Standardfunktionen der OData-Zeichenkettenabfrage
 > [!NOTE]
 >  Dies ist eine Teilmenge von [11.2.5.1.2 Integrierte Abfragefunktionen](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` und andere String-Funktionen werden nicht in der Web-API unterstützt.  
   
-### <a name="common-data-service-for-apps-web-api-query-functions"></a>Common Data Service for Apps-Web-API-Abfragefunktionen
+### <a name="common-data-service-web-api-query-functions"></a>Common Data Service-Web-API-Abfragefunktionen
  
-Common Data Service for Apps enthält einige spezielle Funktionen, die Parameter akzeptieren, Boolesche Werte zurückgeben und als Filterkriterium in einer Abfrage verwendet werden können. Eine Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Im Folgenden finden Sie ein Beispiel für die Suche von <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" /> nach Firmen mit einer Mitarbeiterzahl zwischen 5 und 2000.  
+Common Data Service enthält einige spezielle Funktionen, die Parameter akzeptieren, Boolesche Werte zurückgeben und als Filterkriterium in einer Abfrage verwendet werden können. Eine Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Im Folgenden finden Sie ein Beispiel für die Suche von <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" /> nach Firmen mit einer Mitarbeiterzahl zwischen 5 und 2000.  
   
 ```http 
 GET [Organization URI]/api/data/v9.0/accounts?$select=name,numberofemployees&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
@@ -249,7 +249,7 @@ Wenn Sie `$apply` verwenden, können Sie Ihre Daten dynamisch sammeln und gruppi
 |Datum und Uhrzeit für zuletzt erstellten Datensatz|`$apply=aggregate(createdon with max as lastCreate)`|
 |Datum und Uhrzeit für zuerst erstellten Datensatz|`$apply=aggregate(createdon with min as firstCreate)`|
 
-Die Aggregatfunktionen werden auf eine Sammlung von 50.000 Datensätzen beschränkt.  Weitere Informationen zur Nutzung der Aggregatfunktionalität mit CDS for Apps finden Sie hier: [Verwenden Sie FetchXML, um eine Abfrage zu erstellen](../use-fetchxml-construct-query.md).
+Die Aggregatfunktionen werden auf eine Sammlung von 50.000 Datensätzen beschränkt.  Weitere Informationen zur Nutzung der Aggregatfunktionalität mit Common Data Service finden Sie hier: [Verwenden Sie FetchXML, um eine Abfrage zu erstellen](../use-fetchxml-construct-query.md).
 
 Weitere Details zur OData-Datenaggregation finden Sie hier: [OData Erweiterung für Datenaggregation Version 4.0.](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)  Beachten Sie, dass Dynamics 365 for Customer Engagement Apps nur eine Teilmenge dieser Aggregatmethoden unterstützt.
 

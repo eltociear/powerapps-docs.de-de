@@ -1,5 +1,5 @@
 ---
-title: Typen von Kalendern (Common Data Service for Apps) | MicrosoftDocs
+title: Typen von Kalendern (Common Data Service) | MicrosoftDocs
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="types-of-calendars"></a>Kalendertypen
 
-Die Kalenderentität wurde geändert, um zusätzliche Kalendertypen in Common Data Service for Apps zu unterstützen.  
+Die Kalenderentität wurde geändert, um zusätzliche Kalendertypen in Common Data Service zu unterstützen.  
   
 ## <a name="calendar-type"></a>Kalendertyp  
  Das `Type`-Auswahllistenattribut enthält die folgenden Optionen:  
