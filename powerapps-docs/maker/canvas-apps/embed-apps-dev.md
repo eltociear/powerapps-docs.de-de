@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59042684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993755"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die apps, die Sie erstellen, sind oft am nützlichsten, wenn sie verfügbar sind, direkt auf, wenn Personen ihre Arbeit zu erledigen. Canvas-apps in einen Iframe einbetten, können Sie diese apps in Websites und andere Dienste wie Power BI und SharePoint integrieren.

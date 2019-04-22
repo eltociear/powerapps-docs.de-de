@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d20c19e44f3fb247314613cdfe23e1d1e5820cba
-ms.sourcegitcommit: 0aa8344e6ff1096b67fbac6b986515ec2540e5fd
+ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59541813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993824"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
@@ -26,10 +26,18 @@ Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren könn
 ## <a name="description"></a>Beschreibung
 Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Symbole, deren Eigenschaften wie Füllung, Größe und Position sich konfigurieren lassen. Sie können auch konfigurieren, deren **[OnSelect](properties-core.md)** Eigenschaft, damit die app reagiert, wenn der Benutzer das Steuerelement auswählt.
 
-## <a name="key-properties"></a>Haupteigenschaften
+## <a name="key-properties-icons-and-shapes"></a>Schlüsseleigenschaften (Symbole und Formen)
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
 **[OnSelect](properties-core.md)**  – wie die app reagiert, wenn der Benutzer ein Steuerelement auswählt.
+
+## <a name="key-properties-icons-only"></a>Schlüsseleigenschaften (nur für Symbole)
+
+**Symbol "** -den Typ des Symbols angezeigt (z. B. **ArrowDown** oder **ShoppingCart**). 
+
+**Drehung** -Anzahl Grad zu drehen Sie das Symbol. 
+
+**Farbe** – die Farbe des Symbols, das anhand des Namens oder RGBA-Werte.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben

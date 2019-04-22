@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 28357a6187831e05fe27075b8b22514950215ab4
-ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
+ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58545059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993801"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Hinzufügen einer Datenverbindung in einer Canvas-App in PowerApps
 
@@ -58,7 +58,7 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
 
     ![Hinzufügen einer Verbindung](./media/add-data-connection/add-connection.png)
 
-1. Geben Sie in der Suchleiste oder fügen Sie die ersten Buchstaben der gewünschten Verbindung, und klicken Sie dann Verbindung wenn es angezeigt wird.
+1. Klicken Sie in der Suchleiste Geben Sie oder fügen Sie die ersten Buchstaben der gewünschten Verbindung, und wählen Sie dann die Verbindung aus, wenn es angezeigt wird.
 
     ![Suchen Sie nach einer Verbindung](./media/add-data-connection/search-connections.png)
 
@@ -67,7 +67,7 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
     Einige Connectors wie **Office 365 Outlook** erfordern keine weiteren Schritte, und Sie können sofort Daten daraus anzeigen. Andere Connectors fordern Sie auf, Anmeldeinformationen bereitzustellen, einen bestimmten Satz von Daten anzugeben oder weitere Schritte durchzuführen. In [SharePoint](connections/connection-sharepoint-online.md) und [SQL Server](connections/connection-azure-sqldatabase.md) sind z.B. zusätzliche Informationen erforderlich, bevor Sie sie verwenden können.
 
 ## <a name="identify-or-change-a-data-source"></a>Identifizieren oder Ändern einer Datenquelle
-Wenn Sie eine App aktualisieren, müssen Sie möglicherweise die im Katalog angezeigte Datenquelle, ein Formular oder ein anderes Steuerelement angeben oder ändern. Beispiel: Beim Aktualisieren einer App müssen Sie eine Datenquelle identifizieren, die von jemand anderem vor Kurzem oder von Ihnen selbst vor längerer Zeit erstellt wurde.
+Wenn Sie eine App aktualisieren, müssen Sie möglicherweise die im Katalog angezeigte Datenquelle, ein Formular oder ein anderes Steuerelement angeben oder ändern. Beispielsweise müssen Sie eine Datenquelle zu identifizieren, wie Sie einer app bereits erstellte oder aktualisieren, die Sie vor kurzem erstellt haben.
 
 1. Wählen Sie das Steuerelement, z. B. einen Katalog, die für den Sie angeben oder die Datenquelle ändern möchten.
 
