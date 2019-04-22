@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042753"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdownlisten in einer Canvas-app
@@ -108,7 +108,7 @@ Nach dieser Änderung können Sie ignorieren die **Titel** Spalte, oder Sie kön
 1. Wählen Sie das Kontrollkästchen für die Liste, und wählen Sie dann **Connect**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bereich „Daten“](./media/dependent-drop-down-lists/select-list.png)
+    > ![Bereich "Daten"](./media/dependent-drop-down-lists/select-list.png)
 
     Die Liste der Verbindungen zeigt die **Incidents** Liste, auf dem die Form basiert, und die **Speicherorte** Liste, die Standorte und Abteilungen in der Form identifiziert wird.
 

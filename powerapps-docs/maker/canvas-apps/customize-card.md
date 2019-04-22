@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870906"
 ---
 # <a name="customize-a-card-in-a-canvas-app"></a>Anpassen einer Karte in einer Canvas-app
@@ -44,7 +44,7 @@ Ersetzen Sie in diesem Verfahren eine **[Texteingabe-](controls/control-text-inp
 1. Wählen Sie in der Liste der Felder, die den Pfeil nach unten **Number of Employees**, und öffnen Sie dann die Liste unter **Steuerelementtyp**.
 
     > [!div class="mx-imgBorder"]
-    > ![Dropdownliste der Optionen für eine Zahlenkarte](./media/customize-card/card-selector.png)
+    > ![Dropdown-Liste von Optionen für eine zahlenkarte](./media/customize-card/card-selector.png)
 
 1. Wählen Sie **Schieberegler bearbeiten**.
 

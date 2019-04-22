@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 776a542d8e790cc9ae3591b6cda9f08d0d347ef7
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.openlocfilehash: cad1d7f138a8f831631d9a57b55c54b30d537b9c
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59042776"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671605"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Erstellen von reaktionsfähigen Layouts in Canvas-apps
 
@@ -44,7 +44,7 @@ Um die Reaktionsfähigkeit Ihrer app steigern, müssen Sie zusätzliche Schritte
 
 Um Ihrer app-Layouts, die Reaktion auf Änderungen in den bildschirmabmessungen machen zu können, Schreiben Sie Formeln, mit denen die **Breite** und **Höhe** Bildschirmeigenschaften. Um diese Eigenschaften anzuzeigen, öffnen Sie eine app in PowerApps Studio, und wählen Sie dann auf einen Bildschirm. Die Standardformel für diese Eigenschaften werden auf die **erweitert** Registerkarte im rechten Bereich.
 
-**Width** = `Max(App.Width, App.DesignWidth)`
+**Breite** = `Max(App.Width, App.DesignWidth)`
 
 **Höhe** = `Max(App.Height, App.DesignHeight)`
 
@@ -67,9 +67,9 @@ Im einfachsten Fall füllt ein Steuerelement einen ganzen Bildschirm an. Um dies
 
 | Eigenschaft      | Value            |
 |--------|---------------|
-| **X**      | 0             |
-| **Y**      | 0             |
-| **Breite**  | `Parent.Width`  |
+| **X**      | `0`             |
+| **Y**      | `0`             |
+| **Width**  | `Parent.Width`  |
 | **Höhe** | `Parent.Height` |
 
 Diese Formeln verwenden die **übergeordneten** Operator. Für ein Steuerelement direkt auf einem Bildschirm platziert **übergeordneten** bezieht sich auf dem Bildschirm. Mit diesen Eigenschaftswerten des Steuerelements angezeigt wird, in der oberen linken Ecke des Bildschirms (0, 0) und hat die gleiche **Breite** und **Höhe** als Bildschirm.
@@ -82,14 +82,14 @@ Wenn Sie ein zweites Steuerelement auf der unteren Hälfte der im gleichen Bilds
 
 | Steuerelement | Eigenschaft | Formel           |
 |-|----------|-------------------|
-| **Upper** | **X**        | 0                 |
-| **Upper** | **Y**        | 0                 |
-| **Upper** | **Breite**    | `Parent.Width`      |
-| **Upper** | **Höhe**   | `Parent.Height / 2` |
-| **Lower** | **X**        | 0                 |
-| **Lower** | **Y**        | `Parent.Height / 2` |
-| **Lower** | **Breite**    | `Parent.Width`      |
-| **Lower** | **Höhe**   | `Parent.Height / 2` |
+| **obere** | **X**        | `0`                 |
+| **obere** | **Y**        | `0`                 |
+| **obere** | **Width**    | `Parent.Width`      |
+| **obere** | **Höhe**   | `Parent.Height / 2` |
+| **niedrigere** | **X**        | `0`                 |
+| **niedrigere** | **Y**        | `Parent.Height / 2` |
+| **niedrigere** | **Width**    | `Parent.Width`      |
+| **niedrigere** | **Höhe**   | `Parent.Height / 2` |
 
 ![Obere und einer geringeren-Steuerelement](media/create-responsive-layout/dynamic-layout.png)
 
@@ -100,14 +100,14 @@ Um diesen Effekt zu erstellen, müssen Sie zum Aktualisieren der **Höhe** Eigen
 
 | Steuerelement | Eigenschaft | Formel           |
 |-|----------|-------------------|
-| **Upper** | **X**        | 0                 |
-| **Upper** | **Y**        | 0                 |
-| **Upper** | **Breite**    | `Parent.Width`      |
-| **Upper** | **Höhe**   | `Parent.Height / 2` |
-| **Lower** | **X**        | 0                       |
-| **Lower** | **Y**        | `Upper.Y + Upper.Height`  |
-| **Lower** | **Breite**    | `Parent.Width`            |
-| **Lower** | **Höhe**   | `Parent.Height - Lower.Y` |
+| **obere** | **X**        | `0`                 |
+| **obere** | **Y**        | `0`                 |
+| **obere** | **Width**    | `Parent.Width`      |
+| **obere** | **Höhe**   | `Parent.Height / 2` |
+| **niedrigere** | **X**        | `0`                       |
+| **niedrigere** | **Y**        | `Upper.Y + Upper.Height`  |
+| **niedrigere** | **Width**    | `Parent.Width`            |
+| **niedrigere** | **Höhe**   | `Parent.Height - Lower.Y` |
 
 ![Obere und untere steuert relativen Größen](media/create-responsive-layout/dynamic-layout2.png)
 
@@ -117,9 +117,9 @@ Sie können diese Formel Muster verwenden, zum Ausdrücken von häufig Layout Be
 
 | Beziehung zwischen C und seinem übergeordneten Element | Eigenschaft | Formel | Abbildung |
 |--|--|--|--|
-| **C** füllt die Breite des übergeordneten Elements, mit einem Rand von *N* | **X**| *N* | ![Beispiel C füllen Breite des übergeordneten Elements](media/create-responsive-layout/c1.png) |
-|  | **Breite** | `Parent.Width - (N * 2)` |  |
-| **C** füllt der Höhe des übergeordneten Elements, mit einem Rand von *N* | **Y** | *N* | ![Beispiel für die C-füllen-Höhe des übergeordneten Elements](media/create-responsive-layout/c2.png) |
+| **C** füllt die Breite des übergeordneten Elements, mit einem Rand von *N* | **X**| `N` | ![Beispiel C füllen Breite des übergeordneten Elements](media/create-responsive-layout/c1.png) |
+|  | **Width** | `Parent.Width - (N * 2)` |  |
+| **C** füllt der Höhe des übergeordneten Elements, mit einem Rand von *N* | **Y** | `N` | ![Beispiel für die C-füllen-Höhe des übergeordneten Elements](media/create-responsive-layout/c2.png) |
 |  | **Höhe** | `Parent.Height - (N * 2)` |  |
 | **C** rechten Rand des übergeordneten Elements, mit Rand ausgerichtet *N* | **X** | `Parent.Width - (C.Width + N)` | ![Beispiel C mit Kante des übergeordneten Elements](media/create-responsive-layout/c3.png) |
 | **C** unteren Rand des übergeordneten Elements, mit Rand ausgerichtet *N* | **Y** | `Parent.Height - (C.Height + N)` | ![Beispiel C mit Kante des übergeordneten Elements](media/create-responsive-layout/c4.png) |
@@ -129,7 +129,7 @@ Sie können diese Formel Muster verwenden, zum Ausdrücken von häufig Layout Be
 | Beziehung zwischen C und D | Eigenschaft | Formel | Abbildung |
 |--|--|--|--|
 | **C** horizontal ausgerichtet **D** und dieselbe Breite wie **D** | **X** | `D.X` | ![Beispiel für Muster](media/create-responsive-layout/d1.png) |
-|  | **Breite**    | `D.Width` |  |
+|  | **Width**    | `D.Width` |  |
 | **C** vertikal ausgerichtet **D** und derselben Höhe wie **D**  | **Y** | `D.Y` | ![Beispiel für Muster](media/create-responsive-layout/d2.png) |
 |  | **Höhe** | `D.Height` |  |
 | Rechte Kante des **C** rechten Rand ausgerichtet **D** | **X** | `D.X + D.Width - C.Width` | ![Beispiel für Muster](media/create-responsive-layout/d3.png) |
@@ -139,7 +139,7 @@ Sie können diese Formel Muster verwenden, zum Ausdrücken von häufig Layout Be
 | **C** positioniert auf der rechten Seite des **D** Abstand von N | **X** | `D.X + D.Width - N` | ![Beispiel für Muster](media/create-responsive-layout/d7.png) |
 | **C** unten positioniert **D** Abstand von *N*             | **Y** | `D.Y + D.Height + N` | ![Beispiel für Muster](media/create-responsive-layout/d8.png) |
 | **C** füllt Leerzeichen zwischen **D** und Rechte Kante des übergeordneten Elements | **X** | `D.X + D.Width` | ![Beispiel für Muster](media/create-responsive-layout/d9.png) |
-|  | **Breite** | `Parent.Width - C.X` |  |
+|  | **Width** | `Parent.Width - C.X` |  |
 | **C** füllt Leerzeichen zwischen **D** und unteren Rand des übergeordneten Elements | Y | `D.Y + D.Height` | ![Beispiel für Muster](media/create-responsive-layout/d10.png) |
 
 ## <a name="hierarchical-layout"></a>Hierarchischer Anordnung
@@ -164,10 +164,10 @@ Legen Sie die Eigenschaften für diese Steuerelemente, um diese Werte:
 
 | Eigenschaft | Header | Menü " | Schließen | Title |
 |--|--|--|--|--|
-| **X** | 0  | 0 | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
-| **Y** | 0 | 0 | 0 | 0 |
-| **Breite**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
-| **Höhe** | 64 | `Parent.Height` | `Parent.Height` | `Parent.Height` |
+| **X** | `0`  | `0` | `Parent.Width - Close.Width` | `Menu.X + Menu.Width` |
+| **Y** | `0` | `0` | `0` | `0` |
+| **Width**  | `Parent.Width` | `Parent.Height` | `Parent.Height` | `Close.X - Title.X` |
+| **Höhe** | `64` | `Parent.Height` | `Parent.Height` | `Parent.Height` |
 
 Für die **Header** Steuerelement `Parent` bezieht sich auf dem Bildschirm. Für die anderen `Parent` bezieht sich auf die **Header** Steuerelement.
 
@@ -192,7 +192,7 @@ Mit einem Bildschirm **Höhe** von 1136 und eine Geräte-Höhe (in diesem Ausric
 
 Anpassen des Bildschirms **Breite** und **Höhe** Eigenschaften, die Ausrichtung, können Sie diese Formeln:
 
-**Width** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
+**Breite** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
 
 **Höhe** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
@@ -200,25 +200,67 @@ Diese Formeln Tauschen der app **DesignWidth** und **DesignHeight** Werte, je na
 
 Nach dem Anpassen des Bildschirms **Breite** und **Höhe** Formeln, Sie sollten auch zum Neuanordnen von Steuerelementen in dem Bildschirm, um den verfügbaren Platz besser einzusetzen. Wenn jeder von zwei Steuerelementen Hälfte des Bildschirms einnimmt, können Sie z. B. vertikal gestapelt, im Hochformat jedoch ordnen Sie sie nebeneinander im Querformat.
 
+Können Sie des Bildschirms des **Ausrichtung** Eigenschaft, um zu bestimmen, ob der Bildschirm vertikal oder horizontal ausgerichtet ist.
+
 > [!NOTE]
 > Im Querformat die **oberen** und **niedrigere** Steuerelemente, die als linken und rechten Steuerelemente angezeigt werden.
 
 | Steuerelement | Eigenschaft | Formel |
 |--|----------|---|
-| **Upper** | **X** | 0 |
-| **Upper** | **Y** | 0 |
-| **Upper** | **Breite** | `If(Parent.Width < Parent.Height, Parent.Width, Parent.Width / 2)` |
-| **Upper** | **Höhe**   | `If(Parent.Width < Parent.Height, Parent.Height / 2, Parent.Height)` |
-| **Lower** | X | `If(Parent.Width < Parent.Height, 0, Upper.X + Upper.Width)`  |
-| **Lower** | Y | `If(Parent.Width < Parent.Height, Upper.Y + Upper.Height, 0)` |
-| **Lower** | **Breite** | `Parent.Width - Lower.X` |
-| **Lower** | **Höhe** | `Parent.Height - Lower.Y` |
+| **obere** | **X** | `0` |
+| **obere** | **Y** | `0` |
+| **obere** | **Width** | `If(Parent.Orientation = Layout.Vertical, Parent.Height, Parent.Width, Parent.Width / 2)` |
+| **obere** | **Höhe**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
+| **niedrigere** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
+| **niedrigere** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
+| **niedrigere** | **Width** | `Parent.Width - Lower.X` |
+| **niedrigere** | **Höhe** | `Parent.Height - Lower.Y` |
 
 ![Ausdrücke Hochformat anpassen.](media/create-responsive-layout/portrait.png)
 
 ![Ausdrücke, die ein Querformat anpassen](media/create-responsive-layout/landscape.png)
 
-### <a name="known-limitations"></a>Bekannte Einschränkungen
+### <a name="screen-sizes-and-breakpoints"></a>Bildschirmgrößen und Haltepunkte
+
+Sie können das Layout, die basierend auf der Größe des Geräts anpassen. Des Bildschirms **Größe** Eigenschaft klassifiziert die aktuelle GeräteGröße. Die Größe ist eine positive ganze Zahl; Der Typ ScreenSize enthält benannte Konstanten zur Lesbarkeit bei. Diese Tabelle enthält die Konstanten:
+
+| Konstante              | Value | Typische Gerätetyp (mit Standard-app-Einstellungen) |
+|-----------------------|-------|--------------------------------------------------|
+| ScreenSize.Small      | 1     | Telefon                                            |
+| ScreenSize.Medium     | 2     | Vertikal gehaltenen-Tablet                          |
+| ScreenSize.Large      | 3     | Horizontal-Tablet                        |
+| ScreenSize.ExtraLarge | 4     | Desktop-computer                                 |
+
+Verwenden Sie diese Größen, um Entscheidungen zu Ihrer app-Layout. Sie z. B., wenn Sie ein Steuerelement auf einem Telefon Größe Gerät jedoch sichtbar andernfalls ausgeblendet werden soll, konnte Festlegen des Steuerelements **Visible** -Eigenschaft auf diese Formel:
+
+`Parent.Size >= ScreenSize.Medium`
+
+Diese Formel berechnet **"true"** Wenn die Größe ist, mittelgroßen oder größeren und **"false"** andernfalls.
+
+Wenn Sie ein Steuerelement für einen anderen Bruchteil der Bildschirmbreite basierend auf die Größe des Bildschirms belegen möchten, legen Sie die **Breite** -Eigenschaft auf diese Formel:
+
+```
+Parent.Width *  
+    Switch(Parent.Size,  
+        ScreenSize.Small, 0.5,  
+        ScreenSize.Medium, 0.3,  
+        0.25)
+```
+Diese Formel legt die Breite des Steuerelements auf der Hälfte der Bildschirmbreite auf einem kleinen Bildschirm, drei-Zehntelsekunden die Bildschirmbreite auf einen Bildschirm "Mittel", und ein Viertel der Bildschirmbreite auf alle anderen Bildschirmen fest.
+
+## <a name="custom-breakpoints"></a>Benutzerdefinierte breakpoints
+
+Des Bildschirms **Größe** Eigenschaft wird durch Vergleichen des Bildschirms berechnet **Breite** Eigenschaft, um die Werte in der app **SizeBreakpoints** Eigenschaft. Diese Eigenschaft ist eine einspaltige Tabelle mit Zahlen, die die Breite Haltepunkte angeben, die die benannte Bildschirmgrößen trennen:
+
+In einer app für Tablets oder Webanwendung erstellt, der Standardwert in der app **SizeBreakpoints** Eigenschaft **[600, 900, 1200]**. In einer app für Telefone erstellt, der Wert ist **[1200, 1800, 2400]**. (Die Werte für Phone-apps werden verdoppelt, da solche apps Koordinaten zu verwenden, die effektiv die doppelte die Koordinaten, die in anderen apps verwendet werden.)
+
+![Standardwerte der App.SizeBreakpoints-Eigenschaft](media/create-responsive-layout/default-breakpoints.png)
+
+Sie können Ihrer app Breakpoints anpassen, indem Sie das Ändern der Werte in der app **SizeBreakpoints** Eigenschaft. Wählen Sie **App** wählen Sie in der Strukturansicht **SizeBreakpoints** in der Eigenschaft aus, und klicken Sie dann die Werte in der Bearbeitungsleiste bearbeiten. Sie können beliebig viele Haltepunkte benannte Bildschirmgrößen wie Ihre app benötigt, aber nur Größen von 1 bis 4 entsprechen. In Formeln finden Sie in den Größen über ExtraLarge nach ihren numerischen Werten (5, 6 und So weiter).
+
+Sie können auch weniger Haltepunkte angeben. Beispielsweise Ihrer app müssen möglicherweise nur drei Größen von Computern (zwei Haltepunkte), damit die mögliche Bildschirmgrößen klein, Mittel und groß werden.
+
+## <a name="known-limitations"></a>Bekannte Einschränkungen
 
 Im erstellungsbereich Zeichenbereich reagiert nicht auf die größenanpassung-Formeln erstellt. Um reaktionsfähige Verhalten zu testen, speichern Sie und veröffentlichen Sie Ihre app, und öffnen Sie es auf Geräten oder im Browserfenster verschiedener Größe und Ausrichtung schön.
 

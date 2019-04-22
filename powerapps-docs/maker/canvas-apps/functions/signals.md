@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d13f4a0669ae9f0d7ef9a5f4ef7115e006256bd9
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480237"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671559"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“
 Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und welcher Bildschirm angezeigt wird  
@@ -48,12 +48,13 @@ Das Signal **App** gibt Informationen über die ausgeführte App zurück.
 | **App.Height** | Gibt die Höhe des Fensters, in dem die app ausgeführt wird. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Höhe** Eigenschaft des Bildschirms, um einen reaktionsfähigen app zu erstellen. |
 | **App.DesignWidth** | Gibt die Breite der app in PowerApps Studio zurück. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Breite** Eigenschaft des Bildschirms, um eine minimale Breite in einer reaktionsfähigen app sicherzustellen.  |
 | **App.DesignHeight** | Gibt die Höhe der app in PowerApps Studio zurück. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Höhe** Eigenschaft des Bildschirms, um eine minimale Höhe in einem reaktionsfähigen app sicherzustellen.  |
+| **App.SizeBreakpoints** | Eine einspaltige Tabelle mit Zahlen, die Größe des Bildschirms trennen Adressbereiche, die die [ **Screen.Size** ](../controls/control-screen.md) Eigenschaft zurückgibt. Die Werte in dieser Tabelle möglicherweise geändert werden, zum Anpassen der Haltepunkte an, dass alle app Bildschirme verwenden.
 
 Die **App** -Objekt verfügt außerdem über eine [verhaltensformel](../working-with-formulas-in-depth.md) , die Sie festlegen können.
 
 | Eigenschaft  | Beschreibung |
 | --- | --- |
-| **OnStart** | Das Verhalten einer app, wenn der Benutzer gestartet wird. Diese Eigenschaft wird am häufigsten zum Abrufen und Zwischenspeichern von Daten in Sammlungen mit der **[sammeln](function-clear-collect-clearcollect.md)** Funktion richten Sie Variablen mit der **[festgelegt](function-set.md)** funktionieren, und navigieren Sie zu einer ersten Bildschirm mit der **[Navigate](function-navigate.md)** Funktion. Diese Formel wird ausgewertet, bevor der erste Bildschirm angezeigt wird. Kein Bildschirm geladen wird, damit Sie Kontextvariablen mit festlegen, können die **["updatecontext"](function-updatecontext.md)** Funktion. Sie können aber auch Kontextvariablen mit übergeben die **Navigate** Funktion. |
+| **App.OnStart** | Das Verhalten einer app, wenn der Benutzer gestartet wird. Entscheidungsträger in Unternehmen häufig verwenden Sie diese Eigenschaft zum Abrufen und Zwischenspeichern von Daten in Sammlungen mit der **[sammeln](function-clear-collect-clearcollect.md)** Funktion richten Sie Variablen mit der **[festgelegt](function-set.md)** funktionieren, und navigieren Sie zu einer ersten Bildschirm mit der **[Navigate](function-navigate.md)** Funktion. Diese Formel wird ausgewertet, bevor der erste Bildschirm angezeigt wird. Kein Bildschirm geladen wird, damit Sie Kontextvariablen mit festlegen, können die **["updatecontext"](function-updatecontext.md)** Funktion. Sie können aber auch Kontextvariablen mit übergeben die **Navigate** Funktion. |
 
 Die **App** Objekt am Anfang der hierarchischen Liste der Steuerelemente im linken Navigationsbereich angezeigt wird, und Sie können dieses Objekt wie ein Steuerelement auf einem Bildschirm auswählen. Nachdem Sie das Objekt ausgewählt haben, können Sie anzeigen und bearbeiten eine seiner Eigenschaften, wenn Sie diese Eigenschaft in der Dropdown-Liste auf der linken Seite der Bearbeitungsleiste auswählen.  
 
@@ -102,8 +103,8 @@ In einem Feld Baseball löst ein Pitcher aus des pitchers ein Smartphone, einem 
 | **Acceleration.Y** |Gibt die Beschleunigung des Geräts zwischen Vorder- und Rückseite an. Der Pitcher beschleunigt das Gerät anfänglich durch den Wurf erheblich, von 0 auf 90 Meilen pro Stunde (132 Fuß pro Sekunde) innerhalb einer halben Sekunde. Einmal in der Luft beschleunigt das Telefon, wenn die Luftreibung außen vor gelassen wird, nicht weiter. Das Gerät wird verlangsamt, wenn der Catcher es fängt, und wird angehalten. |8.2, während der Pitcher das Geräts wirft<br><br>0, während sich das Gerät in der Luft befindet<br><br>-8.2, während der Catcher das Gerät fängt |
 | **Acceleration.Z** |Gibt die Beschleunigung des Geräts vom oberen zum unteren Rand an. Das Telefon unterliegt in der Luft den Auswirkungen der Schwerkraft. |0, bevor der Pitcher das Geräts wirft<br><br>1, während sich das Gerät in der Luft befindet<br><br>0, nachdem der Catcher das Gerät gefangen hat |
 | **Acceleration** |Gibt die Beschleunigung als Datensatz zurück |{ X: 0, Y: 264, Z: {0} als der Pitcher das Gerät löst. |
-| **Connection.Connected** |Gibt einen booleschen Wert zurück, der angibt, ob das Gerät mit einem Netzwerk verbunden ist |**"True"** |
-| **Connection.Metered** |Gibt einen booleschen Wert zurück, der angibt, ob die Verbindung getaktet ist |**"True"** |
-| **App.ActiveScreen = PlayBall** |Gibt einen booleschen Wert zurück, der angibt, ob **PlayBall** angezeigt wird. |**"True"** |
+| **Connection.Connected** |Gibt einen booleschen Wert zurück, der angibt, ob das Gerät mit einem Netzwerk verbunden ist |**TRUE** |
+| **Connection.Metered** |Gibt einen booleschen Wert zurück, der angibt, ob die Verbindung getaktet ist |**TRUE** |
+| **App.ActiveScreen = PlayBall** |Gibt einen booleschen Wert zurück, der angibt, ob **PlayBall** angezeigt wird. |**TRUE** |
 | **App.ActiveScreen.Fill** |Gibt die Hintergrundfarbe des angezeigten Bildschirms zurück |**Color.Green** |
 

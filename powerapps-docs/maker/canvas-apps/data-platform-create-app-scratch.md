@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 428ca1fd96df4ed8a9c3fd7c14a1ad3e07356c70
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480214"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59686222"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service
 
@@ -30,7 +30,7 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
 
 - Bevor Sie eine App von Grund auf neu erstellen, sollten Sie sich mit den PowerApps-Grundlagen vertraut machen, indem Sie erst eine [App generieren](data-platform-create-app.md) und anschließend den [Katalog](customize-layout-sharepoint.md), die [Formulare](customize-forms-sharepoint.md) und die [Karten](customize-card.md) der App anpassen.
 - [Wechseln Sie in eine Umgebung](working-with-environments.md), in der mithilfe von einfachen Daten eine Datenbank erstellt wurde. Wenn Sie über eine entsprechende Lizenz verfügen, können Sie dafür eine [Umgebung erstellen](../../administrator/create-environment.md).
-- Um eine App erstellen zu können, müssen Sie der Sicherheitsrolle [Umgebungsersteller](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles) zugewiesen sein.
+- Um eine App erstellen zu können, müssen Sie der Sicherheitsrolle [Umgebungsersteller](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) zugewiesen sein.
 
 ## <a name="open-a-blank-app"></a>Öffnen einer leeren App
 

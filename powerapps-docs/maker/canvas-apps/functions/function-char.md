@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042624"
 ---
 # <a name="char-function-in-powerapps"></a>Funktion „Char“ in PowerApps
@@ -38,9 +38,9 @@ Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entspr
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Char (65)** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |"A" |
-| **Char (105)** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |"i" |
-| **Char (35)** |Gibt das Zeichen zurück, das ASCII-Code 35 entspricht |"#" |
+| **Char( 65 )** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |"A" |
+| **Char( 105 )** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |"i" |
+| **Char( 35 )** |Gibt das Zeichen zurück, das ASCII-Code 35 entspricht |"#" |
 
 ### <a name="display-a-character-map"></a>Zeigt eine zeichenzuordnung
 

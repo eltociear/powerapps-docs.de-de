@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c09bd3dead3ca3ac31f5c052929625b271efac3
-ms.sourcegitcommit: 7f67cd28c781a48f6a211ed82c2c861ae3acf1a5
+ms.openlocfilehash: 6fedff6d6ffc34fe390ec6978672d699480a7cb9
+ms.sourcegitcommit: 39c9b4cbc26617e302d46085d81c6d397e01fbf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "57800742"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671582"
 ---
 # <a name="screen-control-in-powerapps"></a>Bildschirm-Steuerelement in PowerApps
 
@@ -36,11 +36,13 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
+**Höhe** – die Höhe des Bildschirms. Wenn die app reaktionsfähig ist ([**an anpassen** ](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) ist **aus**) und das Gerät, auf denen die app ausgeführt wird, ist kürzer als diese Eigenschaft, vertikal scrollen können.
+
 **[ImagePosition](properties-visual.md)**: Die Position (**Fill**, **Fit**, **Stretch**, **Tile** oder **Center**) eines Bilds auf einem Bildschirm oder in einem Steuerelement, wenn die Größe nicht mit der Bildgröße identisch ist.
 
-**OnHidden**: Das Verhalten einer App, wenn der Benutzer zu einer anderen Bildschirmansicht wechselt.
+**Namen** -der Name des Bildschirms.
 
-**OnVisible**: Das Verhalten einer App, wenn der Benutzer zu einem Bildschirm navigiert.
+**OnHidden**: Das Verhalten einer App, wenn der Benutzer zu einer anderen Bildschirmansicht wechselt.
 
 **OnStart**: Das Verhalten einer App, wenn sie vom Benutzer geöffnet wird.
 
@@ -48,6 +50,14 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 - Sie können mit der [**UpdateContext**](../functions/function-updatecontext.md)-Funktion keine [Kontextvariablen](../working-with-variables.md) festlegen, da noch kein Bildschirm angezeigt wurde. Sie können Kontextvariablen allerdings an die **Navigate**-Funktion übergeben und eine [Sammlung](../working-with-variables.md) mithilfe der [**Collect**](../functions/function-clear-collect-clearcollect.md)-Funktion erstellen und auffüllen.
 - Wenn Sie eine App aktualisieren, wird die Formel, auf die diese Eigenschaft festgelegt ist, beim Laden der App in PowerApps Studio ausgeführt. Um die Auswirkungen einer Änderung dieser Eigenschaft anzuzeigen, müssen Sie Ihre App speichern, schließen und neu laden.
 - Die **OnStart**-Eigenschaft ist tatsächlich eine Eigenschaft der App und nicht des Bildschirms. Zur Vereinfachung der Bearbeitung wird sie als Eigenschaft auf dem ersten Bildschirm Ihrer App angezeigt und geändert. Wenn Sie den ersten Bildschirm entfernen oder Bildschirme neu anordnen, kann diese Eigenschaft schwer zu finden sein. In diesem Fall sollten Sie Ihre App speichern, schließen und neu laden, woraufhin die Eigenschaft wieder als Eigenschaft auf dem ersten Bildschirm angezeigt wird.
+
+**OnVisible**: Das Verhalten einer App, wenn der Benutzer zu einem Bildschirm navigiert.
+
+**Ausrichtung** -die Ausrichtung des Bildschirms. Wenn die **Breite** ist größer als die **Höhe**, der die Ausrichtung werden **Layout.Horizontal**ist, andernfalls wird **Layout.Vertical** .
+
+**Größe** -eine positive ganze Zahl, die die Größe des Bildschirms klassifiziert. Die Klassifizierung wird bestimmt durch Vergleich des Bildschirms **Breite** Eigenschaft, um die Werte in der [ **App.SizeBreakpoints** ](../functions/signals.md) Eigenschaft. Die **ScreenSize** Typ besteht aus vier Werten (**kleine**, **Mittel**, **groß**, und **ExtraLarge** ), die die ganzen Zahlen 1 bis 4 entsprechen.
+
+**Breite** -die Breite des Bildschirms. Wenn die app reaktionsfähig ist ([**an anpassen** ](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) ist **aus**) und das Gerät, auf denen die app ausgeführt wird, ist enger gefasst als diese Eigenschaft, horizontal scrollen können.
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 

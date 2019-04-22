@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59425309"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Bildkatalog-Steuerelement in Canvas-apps
@@ -92,21 +92,21 @@ Wenn ein Benutzer blättert die **Flexible Höhe** Katalog-Steuerelements, bevor
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Filter**( *DataSource*, *Formel* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Beispiele
 
 ### <a name="show-and-filter-data"></a>Anzeigen und Filtern von Daten
 
-* [Anzeigen von text](control-text-box.md#show-data-in-a-gallery)
+* [Anzeigen von Text](control-text-box.md#show-data-in-a-gallery)
 * [Anzeigen von Bildern](control-image.md#show-a-set-of-images-from-a-data-source)
 * [Filtern von Daten mithilfe einer Listenoption](control-drop-down.md#example)
-* [Filtern von Daten per Schieberegler](control-slider.md#example)
+* [Filtern von Daten mithilfe eines Schiebereglers](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>Abrufen von Daten eines Benutzers
 
-* [Abrufen von text](control-text-input.md#collect-data)
-* [Images abrufen](control-add-picture.md#add-images-to-an-image-gallery-control)
+* [Abrufen von Text](control-text-input.md#collect-data)
+* [Abrufen von Bildern](control-add-picture.md#add-images-to-an-image-gallery-control)
 * [Abrufen von Fotos](control-camera.md#example)
 * [Abrufen von Tönen](control-microphone.md#example)
 * [Abrufen von Zeichnungen](control-pen-input.md#create-a-set-of-images)

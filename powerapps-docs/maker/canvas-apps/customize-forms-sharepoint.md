@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1a6465a00f135489d594bad75b8a25942e05dd25
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870929"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Anpassen eines Canvas-App-Formulars in PowerApps
@@ -87,12 +87,12 @@ Wenn Sie mit der Canvas-Pps nicht vertraut sind, finden Sie unter [Was sind Canv
 1. Öffnen Sie den Vorschaumodus durch Drücken von F5 (oder durch Auswählen des Symbols **Preview** in der Nähe der oberen rechten Ecke).
 
     > [!div class="mx-imgBorder"]
-    > ![„Preview“-Symbol](./media/customize-forms-sharepoint/open-preview.png)
+    > ![Symbol "Vorschau"](./media/customize-forms-sharepoint/open-preview.png)
 
 1. Wählen Sie in der oberen rechten Ecke das Plussymbol zum Hinzufügen eines Eintrags in **EditScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Hinzufügen eines Datensatzes](./media/customize-forms-sharepoint/add-record.png)
+    > ![Datensatz hinzufügen](./media/customize-forms-sharepoint/add-record.png)
 
 1. Fügen Sie beliebige Daten werden soll, und wählen Sie dann das Häkchen in der oberen rechten Ecke die Änderungen zu speichern und zum zurückkehren **BrowseScreen1**.
 
@@ -112,7 +112,7 @@ Wenn Sie mit der Canvas-Pps nicht vertraut sind, finden Sie unter [Was sind Canv
 1. Ändern Sie die Informationen in einem oder mehreren Feldern, und wählen Sie dann das Häkchen in der oberen rechten Ecke die Änderungen zu speichern und zum zurückkehren **DetailScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Änderungen speichern](./media/customize-forms-sharepoint/save-record.png)
+    > ![Speichern von Änderungen](./media/customize-forms-sharepoint/save-record.png)
 
 1. Wählen Sie in der Nähe der oberen rechten Ecke das Papierkorb-Symbol, die den Datensatz zu löschen, die Sie gerade aktualisiert und um zurückzugeben **BrowseScreen1**.
 
