@@ -1,6 +1,6 @@
 ---
-title: 'Entwickler: Bewährte Methoden und Anleitungen zur Arbeit mit Daten für den Common Data Service | Microsoft Docs'
-description: Bewährte Methoden und Anleitungen zur Arbeit mit Daten für Entwickler des Common Data Service in PowerApps.
+title: 'Entwickler: Best Practices und Handlungsempfehlungen zum Arbeiten mit Daten für Common Data Service | Microsoft-Dokumentation'
+description: Best Practices und Handlungsempfehlungen zum Arbeiten mit Daten für Entwickler von Common Data Service in PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,19 +16,24 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759bed0c21bfc2035e3855f6d02b991b753dbf4b
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61528341"
 ---
+# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Best Practices und Handlungsempfehlungen zum Arbeiten mit Daten für Common Data Service
 
-# <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Bewährte Methoden und Anleitungen zur Arbeit mit Daten für den Common Data Service
+In der folgenden Liste sind alle Best Practices und Handlungsempfehlungen zur Integration von Daten mithilfe von Code für Common Data Service aufgeführt.
 
-Diese Liste enthält alle bewährten Methoden und Anleitungen zur Integration von Daten mit Code in den Common Data Service.
-
-|Bewährte Methode  |Beschreibung  |
+|Best Practice  |Beschreibung  |
 |---------|---------|
-|[API-Grenzwerte (Common Data Service)](../../api-limits.md)     |Verstehen Sie die Begrenzungen für API-Anforderungen.         |
+|[Begrenzungen von API-Anforderungen (Common Data Service)](../../api-limits.md)     |Lernen Sie die Grenzwerte für API-Anforderungen kennen.         |
 
 # <a name="see-also"></a>Siehe auch
 [Arbeiten mit Daten mithilfe von Code in Common Data Service (PowerApps)](../../work-with-data-cds.md)<br />
