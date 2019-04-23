@@ -1,4 +1,4 @@
-items:
+# This TOC is a work in progress. The specific location of items is not locked down
 - name: Common Data Service
   href: ../../maker/common-data-service/data-platform-intro.md
 - name: Entwicklerübersicht
@@ -6,418 +6,414 @@ items:
 - name: Erste Schritte
   href: get-started-cds-developers.md
   items:
-  - name: Unterstützte Anpassungen
-    href: supported-customizations.md
+    - name: Unterstützte Anpassungen
+      href: supported-customizations.md
 - name: Arbeiten mit Daten mithilfe von Code
   href: work-with-data-cds.md
   items:
-  - name: Verwenden der Web-API
-    href: webapi/index.md
-  - name: Verwenden des Organisationsdiensts
-    href: org-service/index.md
-  - name: Hinzufügen und Entfernen von Beispieldaten
-    href: sample-data.md
-  - name: Verwenden von FetchXML zum Abfragen von Daten
-    href: use-fetchxml-construct-query.md
-    items:
-    - name: Verwenden der FetchXML-Aggregation
-      href: use-fetchxml-aggregation.md
-    - name: FetchXML-Operatoren zur Abfrage von Datum/Uhrzeit mit Steuerdatumsangaben und „older than“
-      href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
-    - name: Verwenden einer linken äußeren Verknüpfung in FetchXML zur Abfrage von Datensätzen, die sich nicht in einem Resultset befinden
-      href: use-fetchxml-left-outer-join-query-records-not-in.md
-  - name: Gespeicherte Abfragen
-    href: saved-queries.md
-  - name: Abfragen von hierarchischen Daten
-    href: query-hierarchical-data.md
-  - name: Überwachen von Datenänderungen
-    href: auditing-overview.md
-    items:
-    - name: Konfigurieren von Entitäten und Attributen für die Überwachung
-      href: configure-entities-attributes-auditing.md
-    - name: Abrufen und Löschen des Verlaufs für überwachte Datenänderungen
-      href: retrieve-and-delete-the-history-of-audited-data-changes.md
-    - name: Überwachen des Benutzerzugriffs
-      href: audit-user-access.md
-    - name: Erstellen von Attributen für die automatische Nummerierung
-      href: create-auto-number-attributes.md
-  - name: Erkennen von duplizierten Daten
-    href: detect-duplicate-data-with-code.md
-    items:
-    - name: Aktivieren und Deaktivieren der Duplikaterkennung
-      href: enable-disable-duplicate-detection.md
-    - name: Ausführen der Duplikaterkennung
-      href: run-duplicate-detection.md
-    - name: Meldungen für die Duplikaterkennung
-      href: duplicate-detection-messages.md
-    - name: Duplikatregelentitäten
-      href: duplicaterule-entities.md
-  - name: Massenlöschung von Daten
-    href: delete-data-bulk.md
-  - name: Verwenden von optimistischer Parallelität zur Vermeidung eines Datenverlusts
-    href: optimistic-concurrency.md
-  - name: Annehmen einer anderen Benutzeridentität
-    href: impersonate-another-user.md
-  - name: Best Practices
-    href: best-practices/work-with-data/index.md
+    - name: Verwenden der Web-API
+      href: webapi/index.md
+    - name: Verwenden des Organisationsdiensts
+      href: org-service/index.md
+    - name: Hinzufügen und Entfernen von Beispieldaten
+      href: sample-data.md
+    - name: Verwenden von FetchXML zum Abfragen von Daten
+      href: use-fetchxml-construct-query.md
+      items:
+        - name: Verwenden der FetchXML-Aggregation
+          href: use-fetchxml-aggregation.md
+        - name: FetchXML-Operatoren zur Abfrage von Datum/Uhrzeit mit Steuerdatumsangaben und „older than“
+          href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
+        - name: 'Verwenden einer linken äußeren Verknüpfung in FetchXML zur Abfrage von Datensätzen, die sich nicht in einem Resultset befinden'
+          href: use-fetchxml-left-outer-join-query-records-not-in.md
+    - name: Gespeicherte Abfragen
+      href: saved-queries.md
+    - name: Abfragen von hierarchischen Daten
+      href: query-hierarchical-data.md
+    - name: Überwachen von Datenänderungen
+      href: auditing-overview.md
+      items:
+        - name: Konfigurieren von Entitäten und Attributen für die Überwachung
+          href: configure-entities-attributes-auditing.md
+        - name: Abrufen und Löschen des Verlaufs für überwachte Datenänderungen
+          href: retrieve-and-delete-the-history-of-audited-data-changes.md
+        - name: Überwachen des Benutzerzugriffs
+          href: audit-user-access.md
+        - name: Erstellen von Attributen für die automatische Nummerierung
+          href: create-auto-number-attributes.md
+    - name: Erkennen von duplizierten Daten
+      href: detect-duplicate-data-with-code.md
+      items:
+        - name: Aktivieren und Deaktivieren der Duplikaterkennung
+          href: enable-disable-duplicate-detection.md
+        - name: Ausführen der Duplikaterkennung
+          href: run-duplicate-detection.md
+        - name: Meldungen für die Duplikaterkennung
+          href: duplicate-detection-messages.md
+        - name: Duplikatregelentitäten
+          href: duplicaterule-entities.md
+    - name: Massenlöschung von Daten
+      href: delete-data-bulk.md
+    - name: Verwenden von optimistischer Parallelität zur Vermeidung eines Datenverlusts
+      href: optimistic-concurrency.md
+    - name: Annehmen einer anderen Benutzeridentität
+      href: impersonate-another-user.md
+    - name: Best Practices
+      href: best-practices/work-with-data/index.md
 - name: Anwenden von Geschäftslogik mithilfe von Code
   href: apply-business-logic-with-code.md
   items:
-  - name: Ereignisframework
-    href: event-framework.md
-    items:
-    - name: Verstehen des Ausführungskontexts
-      href: understand-the-data-context.md
-    - name: Verhalten spezieller Updatevorgänge
-      href: special-update-operation-behavior.md
-  - name: Asynchroner Dienst
-    href: asynchronous-service.md
-  - name: Plug-Ins
-    href: plug-ins.md
-    items:
-    - name: Erstellen eines Plug-Ins
-      href: write-plug-in.md
-    - name: Verarbeiten von Ausnahmen
-      href: handle-exceptions.md
-    - name: Annehmen der Identität eines Benutzers
-      href: impersonate-a-user.md
-    - name: Registrieren eines Plug-Ins
-      href: register-plug-in.md
-    - name: Debuggen eines Plug-Ins
-      href: debug-plug-in.md
-    - name: Ablaufverfolgung und Protokollierung
-      href: logging-tracing.md
-    - name: Analysieren der Leistung
-      href: analyze-performance.md
-    - name: Zugreifen auf externe Webressourcen
-      href: access-web-services.md
-    - name: Lernprogramme
+    - name: Ereignisframework
+      href: event-framework.md
       items:
-      - name: Schreiben und Registrieren eines Plug-Ins
-        href: tutorial-write-plug-in.md
-      - name: Debuggen eines Plug-Ins
-        href: tutorial-debug-plug-in.md
-      - name: Aktualisieren eines Plug-Ins
-        href: tutorial-update-plug-in.md
-    - name: Beispielcode
+        - name: Verstehen des Ausführungskontexts
+          href: understand-the-data-context.md
+        - name: Verhalten spezieller Updatevorgänge
+          href: special-update-operation-behavior.md
+    - name: Asynchroner Dienst
+      href: asynchronous-service.md
+    - name: Plug-Ins
+      href: plug-ins.md
       items:
-      - name: Erstellen eines grundlegenden Plug-Ins
-        href: org-service/samples/basic-followup-plugin.md
-      - name: Webzugriff über ein Plug-In
-        href: org-service/samples/web-access-plugin.md
-  - name: Workflowerweiterungen
-    href: workflow/workflow-extensions.md
-  - name: Entwurf skalierbarer Anpassungen
-    href: scalable-customization-design/overview.md
-  - name: Best Practices
-    href: best-practices/business-logic/index.md
+        - name: Erstellen eines Plug-Ins
+          href: write-plug-in.md
+        - name: Verarbeiten von Ausnahmen
+          href: handle-exceptions.md
+        - name: Annehmen der Identität eines Benutzers
+          href: impersonate-a-user.md
+        - name: Registrieren eines Plug-Ins
+          href: register-plug-in.md
+        - name: Debuggen eines Plug-Ins
+          href: debug-plug-in.md
+        - name: Ablaufverfolgung und Protokollierung
+          href: logging-tracing.md
+        - name: Analysieren der Leistung
+          href: analyze-performance.md
+        - name: Plug-Ins für die Problembehandlung
+          href: troubleshoot-plug-in.md
+        - name: Zugreifen auf externe Webressourcen
+          href: access-web-services.md
+        - name: Lernprogramme
+          items:
+            - name: Schreiben und Registrieren eines Plug-Ins
+              href: tutorial-write-plug-in.md
+            - name: Debuggen eines Plug-Ins
+              href: tutorial-debug-plug-in.md
+            - name: Aktualisieren eines Plug-Ins
+              href: tutorial-update-plug-in.md
+        - name: Beispielcode
+          items:
+            - name: Erstellen eines grundlegenden Plug-Ins
+              href: org-service/samples/basic-followup-plugin.md
+            - name: Webzugriff über ein Plug-In
+              href: org-service/samples/web-access-plugin.md
+    - name: Workflowerweiterungen
+      href: workflow/workflow-extensions.md
+    - name: Entwurf skalierbarer Anpassungen
+      href: scalable-customization-design/overview.md
+    - name: Best Practices
+      href: best-practices/business-logic/index.md
 - name: Integrieren von Daten mithilfe von Code
   items:
-  - name: Importieren von Daten
-    href: import-data.md
-    items:
-    - name: Vorbereiten von Quelldateien für den Import
-      href: prepare-source-files-import.md
-    - name: Erstellen von Datenzuordnungen für den Import
-      href: create-data-maps-for-import.md
-    - name: Hinzufügen von Transformationszuordnungen für den Import
-      href: add-transformation-mappings-import.md
-    - name: Konfigurieren des Datenimports
-      href: configure-data-import.md
-    - name: Ausführen des Datenimports
-      href: run-data-import.md
-    - name: Datenimportentitäten
-      href: data-import-entities.md
-  - name: Datenexportdienst
-    href: data-export-service.md
-  - name: Synchronisieren von Daten
-    href: data-synchronization.md
-    items:
-    - name: Verwenden eines alternativen Schlüssels zum Erstellen eines Datensatzes
-      href: use-alternate-key-create-record.md
-    - name: Verwenden der Änderungsnachverfolgung zum Synchronisieren von Daten mit externen Systemen
-      href: use-change-tracking-synchronize-data-external-systems.md
-    - name: Verwenden des Upsert-Vorgangs zum Einfügen oder Aktualisieren eines Datensatzes
-      href: use-upsert-insert-update-record.md
-  - name: Serverseitige Synchronisierung
-    href: server-side-synchronization-entities.md
-    items:
-    - name: Konfigurieren von Exchange-Nachverfolgungsregeln auf der Ordnerebene
-      href: configure-exchange-folder-level-tracking-rules.md
-  - name: Virtuelle Entitäten
-    href: virtual-entities/
-  - name: Azure-Integration
-    href: azure-integration.md
-    items:
-    - name: Arbeiten mit Daten in einer Azure-Lösung
-      href: work-data-azure-solution.md
-    - name: Arbeiten mit Daten in einer Azure Event Hub-Lösung
-      href: work-event-data-azure-event-hub-solution.md
-    - name: Konfigurieren der Azure-Integration mit Common Data Service für App
-      href: configure-azure-integration.md
-    - name: Erstellen eines benutzerdefinierten Azure-fähigen-Plug-Ins
-      href: write-custom-azure-aware-plugin.md
-    - name: Erstellen einer Listeneranwendung für eine Azure-Lösung
-      href: write-listener-application-azure-solution.md
-    - name: 'Lernprogramm: Konfigurieren von Azure (SAS) zur Integration mit Customer Engagement'
-      href: walkthrough-configure-azure-sas-integration.md
-    - name: 'Lernprogramm: Registrieren eines Azure-fähigen Plug-Ins mithilfe des Plug-In-Registrierungstools'
-      href: walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md
-    - name: 'Lernprogramm: Aktualisieren eines aus einer Lösung importierten Dienstendpunkts'
-      href: walkthrough-update-service-endpoint-imported-solution.md
-  - name: Verwenden von Webhooks
-    href: use-webhooks.md
-    items:
-    - name: Verwenden von Webhooks zum Erstellen externer Handler für Serverereignisse
+    - name: Importieren von Daten
+      href: import-data.md
+      items:
+        - name: Vorbereiten von Quelldateien für den Import
+          href: prepare-source-files-import.md
+        - name: Erstellen von Datenzuordnungen für den Import
+          href: create-data-maps-for-import.md
+        - name: Hinzufügen von Transformationszuordnungen für den Import
+          href: add-transformation-mappings-import.md
+        - name: Konfigurieren des Datenimports
+          href: configure-data-import.md
+        - name: Ausführen des Datenimports
+          href: run-data-import.md
+        - name: Datenimportentitäten
+          href: data-import-entities.md
+    - name: Datenexportdienst
+      href: data-export-service.md
+    - name: Synchronisieren von Daten
+      href: data-synchronization.md
+      items:
+        - name: Verwenden eines alternativen Schlüssels zum Erstellen eines Datensatzes
+          href: use-alternate-key-create-record.md
+        - name: Verwenden der Änderungsnachverfolgung zum Synchronisieren von Daten mit externen Systemen
+          href: use-change-tracking-synchronize-data-external-systems.md
+        - name: Verwenden des Upsert-Vorgangs zum Einfügen oder Aktualisieren eines Datensatzes
+          href: use-upsert-insert-update-record.md
+    - name: Serverseitige Synchronisierung
+      href: server-side-synchronization-entities.md
+      items:
+        - name: Konfigurieren von Exchange-Nachverfolgungsregeln auf der Ordnerebene
+          href: configure-exchange-folder-level-tracking-rules.md
+    - name: Virtuelle Entitäten
+      href: virtual-entities/
+    - name: Azure-Integration
+      href: azure-integration.md
+      items:
+        - name: Arbeiten mit Daten in einer Azure-Lösung
+          href: work-data-azure-solution.md
+        - name: Arbeiten mit Daten in einer Azure Event Hub-Lösung
+          href: work-event-data-azure-event-hub-solution.md
+        - name: Konfigurieren der Azure-Integration mit Common Data Service für App
+          href: configure-azure-integration.md
+        - name: Erstellen eines benutzerdefinierten Azure-fähigen-Plug-Ins
+          href: write-custom-azure-aware-plugin.md
+        - name: Erstellen einer Listeneranwendung für eine Azure-Lösung
+          href: write-listener-application-azure-solution.md
+        - name: 'Lernprogramm: Konfigurieren von Azure (SAS) zur Integration mit Customer Engagement'
+          href: walkthrough-configure-azure-sas-integration.md
+        - name: 'Lernprogramm: Registrieren eines Azure-fähigen Plug-Ins mithilfe des Plug-In-Registrierungstools'
+          href: walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md
+        - name: 'Lernprogramm: Aktualisieren eines aus einer Lösung importierten Dienstendpunkts'
+          href: walkthrough-update-service-endpoint-imported-solution.md
+    - name: Verwenden von Webhooks
       href: use-webhooks.md
-    - name: Registrieren eines Webhooks
-      href: register-web-hook.md
-    - name: Testen der Webhookregistrierung
-      href: test-webhook-registration.md
+      items:
+        - name: Verwenden von Webhooks zum Erstellen externer Handler für Serverereignisse
+          href: use-webhooks.md
+        - name: Registrieren eines Webhooks
+          href: register-web-hook.md
+        - name: Testen der Webhookregistrierung
+          href: test-webhook-registration.md
 - name: Arbeiten mit Common Data Service-Entitäten
   href: entities.md
   items:
-  - name: Kundenentitäten
-    href: customer-entities-account-contact.md
-  - name: Aktivitätsentitäten
-    href: activity-entities.md
-    items:
-    - name: Benutzerdefinierte Aktivitäten
-      href: custom-activities.md
-    - name: Entitäten für E-Mail-Aktivitäten
-      href: email-activity-entities.md
-    - name: Aktivitätsentitäten für Aufgaben, Faxe, Telefonanrufe und Briefe
-      href: task-fax-phone-call-letter-activity-entities.md
-    - name: ActivityParty-Entität
-      href: activityparty-entity.md
-    - name: ActivityPointer-Entität (Aktivität)
-      href: activitypointer-activity-entity.md
-    - name: Terminserie
+    - name: Kundenentitäten
+      href: customer-entities-account-contact.md
+    - name: Aktivitätsentitäten
+      href: activity-entities.md
       items:
-      - name: Teilerweiterungsmodell für Terminserie
-        href: recurring-appointment-partial-expansion-model.md
-      - name: Erstellen einer Terminserie, Terminserieninstanz oder Terminserienausnahme
-        href: create-recurring-appointment-series-instance-exception.md
-      - name: Aktualisieren einer Terminserie
-        href: update-recurring-appointment.md
-      - name: Verknüpfen von benutzerdefinierten Attributen der Terminserienmaster- und Terminentitäten
-        href: link-custom-attributes-recurring-master-appointment-entities.md
-  - name: Entität für Anmerkung (Notiz)
-    href: annotation-note-entity.md
-  - name: Kalenderentitäten
-    href: calendar-entities.md
-    items:
-    - name: Kalendertypen
-      href: types-calendars.md
-  - name: Warteschlangenentitäten
-    href: queue-entities.md
-  - name: Subjektentität
-    href: subject-entity.md
-  - name: Anwenden von Vereinbarungen zum Servicelevel (SLAs)
-    href: apply-slas-entities.md
-  - name: Entität für Transaktionswährung
-    href: transaction-currency-currency-entity.md
-  - name: Kategorienentität
-    href: use-category-entity.md
-  - name: Feedbackentität
-    href: use-feedback-entity-manage-feedback-ratings-records.md
-  - name: Sicherheitsentitäten
-    href: security-model.md
-    items:
-    - name: Benutzer- und Teamentitäten
-      href: user-team-entities.md
+        - name: Benutzerdefinierte Aktivitäten
+          href: custom-activities.md
+        - name: Entitäten für E-Mail-Aktivitäten
+          href: email-activity-entities.md
+        - name: 'Aktivitätsentitäten für Aufgaben, Faxe, Telefonanrufe und Briefe'
+          href: task-fax-phone-call-letter-activity-entities.md
+        - name: ActivityParty-Entität
+          href: activityparty-entity.md
+        - name: ActivityPointer-Entität (Aktivität)
+          href: activitypointer-activity-entity.md
+        - name: Terminserie
+          items:
+            - name: Teilerweiterungsmodell für Terminserie
+              href: recurring-appointment-partial-expansion-model.md
+            - name: 'Erstellen einer Terminserie, Terminserieninstanz oder Terminserienausnahme'
+              href: create-recurring-appointment-series-instance-exception.md
+            - name: Aktualisieren einer Terminserie
+              href: update-recurring-appointment.md
+            - name: Verknüpfen von benutzerdefinierten Attributen der Terminserienmaster- und Terminentitäten
+              href: link-custom-attributes-recurring-master-appointment-entities.md
+    - name: Entität für Anmerkung (Notiz)
+      href: annotation-note-entity.md
+    - name: Kalenderentitäten
+      href: calendar-entities.md
       items:
-      - name: Festlegen von Zeitzoneneinstellungen für einen Benutzer
-        href: specify-time-zone-settings-user.md
-      - name: Zeitzonenentitäten
-        href: time-zone-entities.md
-      - name: BusinessUnit-Entität
-        href: businessunit-entity.md
-      - name: Feldsicherheitsentitäten
-        href: field-security-entities.md
-      - name: Verwenden von Zugriffs- und Besitzerteams zur Zusammenarbeit und Freigabe von Informationen
-        href: use-access-teams-owner-teams-collaborate-share-information.md
-  - name: Vorlagenentitäten
-    href: upload-manage-document-templates.md
+        - name: Kalendertypen
+          href: types-calendars.md
+    - name: Warteschlangenentitäten
+      href: queue-entities.md
+    - name: Subjektentität
+      href: subject-entity.md
+    - name: Anwenden von Vereinbarungen zum Servicelevel (SLAs)
+      href: apply-slas-entities.md
+    - name: Entität für Transaktionswährung
+      href: transaction-currency-currency-entity.md
+    - name: Kategorienentität
+      href: use-category-entity.md
+    - name: Feedbackentität
+      href: use-feedback-entity-manage-feedback-ratings-records.md
+    - name: Sicherheitsentitäten
+      href: security-model.md
+      items:
+        - name: Benutzer- und Teamentitäten
+          href: user-team-entities.md
+          items:
+            - name: Festlegen von Zeitzoneneinstellungen für einen Benutzer
+              href: specify-time-zone-settings-user.md
+            - name: Zeitzonenentitäten
+              href: time-zone-entities.md
+            - name: BusinessUnit-Entität
+              href: businessunit-entity.md
+            - name: Feldsicherheitsentitäten
+              href: field-security-entities.md
+            - name: Verwenden von Zugriffs- und Besitzerteams zur Zusammenarbeit und Freigabe von Informationen
+              href: use-access-teams-owner-teams-collaborate-share-information.md
+    - name: Vorlagenentitäten
+      href: upload-manage-document-templates.md
 - name: Arbeiten mit Metadaten mithilfe von Code
   href: metadata-services.md
   items:
-  - name: Durchsuchen von Umgebungsmetadaten
-    href: browse-your-metadata.md
-  - name: Entitätsmetadaten
-    href: entity-metadata.md
-    items:
-    - name: Anpassen von Entitätsmetadaten
-      href: customize-entity-metadata.md
-    - name: Definieren von Alternativschlüsseln für eine Entität
-      href: define-alternate-keys-entity.md
-  - name: Attributmetadaten
-    href: entity-attribute-metadata.md
-    items:
-    - name: Meldungen für Entitätsattributmetadaten
-      href: entity-attribute-metadata-messages.md
-    - name: Verhalten und Format des Datums- und Uhrzeitattributs
-      href: behavior-format-date-time-attribute.md
-    - name: Berechnete Attribute und Rollupattribute
-      href: calculated-rollup-attributes.md
-    - name: Attribute für Mehrfachauswahllisten
-      href: multi-select-picklist.md
-    - name: Bildattribute
-      href: image-attributes.md
-    - name: Definieren von benutzerdefinierten Zustandsmodellübergängen
-      href: define-custom-state-model-transitions.md
-  - name: Metadaten von Entitätsbeziehungen
-    href: entity-relationship-metadata.md
-    items:
-    - name: Berechtigungen für Entitätsbeziehungen
-      href: entity-relationship-eligibility.md
-    - name: Meldungen für Entitätsbeziehungsmetadaten
-      href: entity-relationship-metadata-messages.md
-    - name: Kaskadierungsverhalten für Entitätsbeziehungen
-      href: configure-entity-relationship-cascading-behavior.md
-  - name: Anpassen von Entitäts- und Attributzuordnungen
-    href: customize-entity-attribute-mappings.md
-  - name: Verwenden von Verbindungen zum Verknüpfen von Datensätzen
-    href: connection-entities.md
-    items:
-    - name: Beschreiben einer Entitätsbeziehung mithilfe von Verbindungsrollen
-      href: describe-relationship-entities-connection-roles.md
-  - name: Anpassen von Bezeichnungen zur Unterstützung mehrerer Sprachen
-    href: customize-labels-support-multiple-languages.md
-  - name: Best Practices
-    href: best-practices/work-with-metadata/index.md
+    - name: Durchsuchen von Umgebungsmetadaten
+      href: browse-your-metadata.md
+    - name: Entitätsmetadaten
+      href: entity-metadata.md
+      items:
+        - name: Anpassen von Entitätsmetadaten
+          href: customize-entity-metadata.md
+        - name: Definieren von Alternativschlüsseln für eine Entität
+          href: define-alternate-keys-entity.md
+    - name: Attributmetadaten
+      href: entity-attribute-metadata.md
+      items:
+        - name: Meldungen für Entitätsattributmetadaten
+          href: entity-attribute-metadata-messages.md
+        - name: Verhalten und Format des Datums- und Uhrzeitattributs
+          href: behavior-format-date-time-attribute.md
+        - name: Berechnete Attribute und Rollupattribute
+          href: calculated-rollup-attributes.md
+        - name: Attribute für Mehrfachauswahllisten
+          href: multi-select-picklist.md
+        - name: Bildattribute
+          href: image-attributes.md
+        - name: Definieren von benutzerdefinierten Zustandsmodellübergängen
+          href: define-custom-state-model-transitions.md
+    - name: Metadaten von Entitätsbeziehungen
+      href: entity-relationship-metadata.md
+      items:
+        - name: Berechtigungen für Entitätsbeziehungen
+          href: entity-relationship-eligibility.md
+        - name: Meldungen für Entitätsbeziehungsmetadaten
+          href: entity-relationship-metadata-messages.md
+        - name: Kaskadierungsverhalten für Entitätsbeziehungen
+          href: configure-entity-relationship-cascading-behavior.md
+    - name: Anpassen von Entitäts- und Attributzuordnungen
+      href: customize-entity-attribute-mappings.md
+    - name: Verwenden von Verbindungen zum Verknüpfen von Datensätzen
+      href: connection-entities.md
+      items:
+        - name: Beschreiben einer Entitätsbeziehung mithilfe von Verbindungsrollen
+          href: describe-relationship-entities-connection-roles.md
+    - name: Anpassen von Bezeichnungen zur Unterstützung mehrerer Sprachen
+      href: customize-labels-support-multiple-languages.md
+    - name: Best Practices
+      href: best-practices/work-with-metadata/index.md
 - name: Packen und Verteilen von Erweiterungen mithilfe von Lösungen
   items:
-  - name: Einführung in Lösungen
-    href: introduction-solutions.md
-    items:
-    - name: Abhängigkeitsnachverfolgung für Lösungskomponenten
-      href: dependency-tracking-solution-components.md
-    - name: Warten von verwalteten Lösungen
-      href: maintain-managed-solutions.md
-    - name: Organisieren von Lösungen
-      href: organize-solutions.md
-    - name: Organisieren eines Teams zum Entwickeln von Lösungen
-      href: organize-team-develop-solutions.md
-    - name: Verwenden von verwalteten Eigenschaften
-      href: use-managed-properties.md
-    - name: Grundlegendes zum Zusammenführen von verwalteten Lösungen
-      href: understand-managed-solutions-merged.md
-    - name: Erstellen von Lösungen, die mehrere Sprachen unterstützen
-      href: create-solutions-support-multiple-languages.md
-    - name: Verwalten von Lösungen
+    - name: Einführung in Lösungen
+      href: introduction-solutions.md
       items:
-      - name: Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung
-        href: create-export-import-unmanaged-solution.md
-      - name: Deinstallieren oder Löschen einer Lösung
-        href: uninstall-delete-solution.md
-      - name: Arbeiten mit Lösungen
-        href: work-solutions.md
-      - name: Erstellen, Installieren und Aktualisieren einer verwalteten Lösung
-        href: create-install-update-managed-solution.md
-      - name: Erstellen von Patches zur Vereinfachung von Lösungsupdates
-        href: create-patches-simplify-solution-updates.md
-      - name: Bearbeitungsszenarios für die Anpassungsdatei
-        href: when-edit-customization-file.md
-  - name: SolutionPackager-Tool
-    href: compress-extract-solution-file-solutionpackager.md
-    items:
-    - name: Quellcodeverwaltung mit Lösungsdateien
-      href: use-source-control-solution-files.md
-  - name: Package Deployer-Tool
-    href: package-deployer/create-packages-package-deployer.md
-  - name: Veröffentlichen einer App in AppSource
-    href: publish-app-appsource.md
-    items:
-    - name: 'Schritt 1: Ausfüllen des App-Teilnahmeformulars in AppSource'
-      href: fill-app-submission-form-appsource.md
-    - name: 'Schritt 2: Registrierung für ein Microsoft Partner Network-Konto'
-      href: register-microsoft-partner-network.md
-    - name: 'Schritt 3: Erstellen einer verwalteten Lösung für eine App'
-      href: create-solution-app-appsource.md
-    - name: 'Schritt 4: Erstellen eines AppSource-Pakets für eine App'
-      href: create-package-app-appsource.md
-    - name: 'Schritt 5: Speichern eines AppSource-Pakets in Azure Storage und Generieren einer URL mit SAS-Schlüssel'
-      href: store-appsource-package-azure-storage.md
-    - name: 'Nächste Schritte: Übermitteln der App im Cloud-Partnerportal'
-      href: next-steps-submit-app-cloud-partner-portal.md
-    - name: 'Anhang: Checkliste mit den Best Practices zum Entwerfen von Apps'
-      href: appendix-app-design-best-practices-checklist.md
-    - name: 'Anhang: Checkliste zur App-Zertifizierung'
-      href: appendix-app-certification-checklist.md
+        - name: Abhängigkeitsnachverfolgung für Lösungskomponenten
+          href: dependency-tracking-solution-components.md
+        - name: Warten von verwalteten Lösungen
+          href: maintain-managed-solutions.md
+        - name: Organisieren von Lösungen
+          href: organize-solutions.md
+        - name: Organisieren eines Teams zum Entwickeln von Lösungen
+          href: organize-team-develop-solutions.md
+        - name: Verwenden von verwalteten Eigenschaften
+          href: use-managed-properties.md
+        - name: Grundlegendes zum Zusammenführen von verwalteten Lösungen
+          href: understand-managed-solutions-merged.md
+        - name: 'Erstellen von Lösungen, die mehrere Sprachen unterstützen'
+          href: create-solutions-support-multiple-languages.md
+        - name: Verwalten von Lösungen
+          items:
+            - name: 'Erstellen, Exportieren oder Importieren einer nicht verwalteten Lösung'
+              href: create-export-import-unmanaged-solution.md
+            - name: Deinstallieren oder Löschen einer Lösung
+              href: uninstall-delete-solution.md
+            - name: Arbeiten mit Lösungen
+              href: work-solutions.md
+            - name: 'Erstellen, Installieren und Aktualisieren einer verwalteten Lösung'
+              href: create-install-update-managed-solution.md
+            - name: Erstellen von Patches zur Vereinfachung von Lösungsupdates
+              href: create-patches-simplify-solution-updates.md
+            - name: Bearbeitungsszenarios für die Anpassungsdatei
+              href: when-edit-customization-file.md
+    - name: SolutionPackager-Tool
+      href: compress-extract-solution-file-solutionpackager.md
+      items:
+        - name: Quellcodeverwaltung mit Lösungsdateien
+          href: use-source-control-solution-files.md
+    - name: Package Deployer-Tool
+      href: package-deployer/create-packages-package-deployer.md
+    - name: Veröffentlichen einer App in AppSource
+      href: publish-app-appsource.md
+      items:
+        - name: 'Schritt 1: Ausfüllen des App-Teilnahmeformulars in AppSource'
+          href: fill-app-submission-form-appsource.md
+        - name: 'Schritt 2: Registrierung für ein Microsoft Partner Network-Konto'
+          href: register-microsoft-partner-network.md
+        - name: 'Schritt 3: Erstellen einer verwalteten Lösung für eine App'
+          href: create-solution-app-appsource.md
+        - name: 'Schritt 4: Erstellen eines AppSource-Pakets für eine App'
+          href: create-package-app-appsource.md
+        - name: 'Schritt 5: Speichern eines AppSource-Pakets in Azure Storage und Generieren einer URL mit SAS-Schlüssel'
+          href: store-appsource-package-azure-storage.md
+        - name: 'Nächste Schritte: Übermitteln der App im Cloud-Partnerportal'
+          href: next-steps-submit-app-cloud-partner-portal.md
+        - name: 'Anhang: Checkliste mit den Best Practices zum Entwerfen von Apps'
+          href: appendix-app-design-best-practices-checklist.md
+        - name: 'Anhang: Checkliste zur App-Zertifizierung'
+          href: appendix-app-certification-checklist.md
 - name: Erstellen von Clientanwendungen
   href: connect-cds.md
   items:
-  - name: Authentifizierung
-    href: authentication.md
-    items:
-    - name: .NET Framework-Anwendungen
-      href: authenticate-dot-net-framework.md
-    - name: Verwenden von OAuth
-      href: authenticate-oauth.md
-  - name: 'Lernprogramm: Registrieren einer App bei Azure Active Directory'
-    href: walkthrough-register-app-azure-active-directory.md
-  - name: Erstellen von Webanwendungen mit Server-zu-Server-Authentifizierung (S2S)
-    href: build-web-applications-server-server-s2s-authentication.md
-    items:
-    - name: Verwenden der Server-zu-Server-Authentifizierung für Multi-Tenant-Anwendungen
-      href: use-multi-tenant-server-server-authentication.md
-    - name: Verwenden der Server-zu-Server-Authentifizierung für Single-Tenant-Anwendungen
-      href: use-single-tenant-server-server-authentication.md
-  - name: Verwenden von OAuth mit Cross-Origin Resource Sharing zur Verbindung mit einer Single-Page-Webanwendung
-    href: oauth-cross-origin-resource-sharing-connect-single-page-application.md
-  - name: 'Lernprogramm: Registrieren und Konfigurieren einer SPA-Anwendung mit adal.js'
-    href: walkthrough-registering-configuring-simplespa-application-adal-js.md
-  - name: Erstellen von Windows-Client-Apps mithilfe von XRM-Tools
-    href: xrm-tooling/
-  - name: Ermitteln von Benutzerorganisationen
-    href: discovery-service.md
+    - name: Authentifizierung
+      href: authentication.md
+      items:
+        - name: .NET Framework-Anwendungen
+          href: authenticate-dot-net-framework.md
+        - name: Verwenden von OAuth
+          href: authenticate-oauth.md
+    - name: 'Lernprogramm: Registrieren einer App bei Azure Active Directory'
+      href: walkthrough-register-app-azure-active-directory.md
+    - name: Erstellen von Webanwendungen mit Server-zu-Server-Authentifizierung (S2S)
+      href: build-web-applications-server-server-s2s-authentication.md
+      items:
+        - name: Verwenden der Server-zu-Server-Authentifizierung für Multi-Tenant-Anwendungen
+          href: use-multi-tenant-server-server-authentication.md
+        - name: Verwenden der Server-zu-Server-Authentifizierung für Single-Tenant-Anwendungen
+          href: use-single-tenant-server-server-authentication.md
+    - name: Verwenden von OAuth mit Cross-Origin Resource Sharing zur Verbindung mit einer Single-Page-Webanwendung
+      href: oauth-cross-origin-resource-sharing-connect-single-page-application.md
+    - name: 'Lernprogramm: Registrieren und Konfigurieren einer SPA-Anwendung mit adal.js'
+      href: walkthrough-registering-configuring-simplespa-application-adal-js.md
+    - name: Erstellen von Windows-Client-Apps mithilfe von XRM-Tools
+      href: xrm-tooling/
+    - name: Ermitteln von Benutzerorganisationen
+      href: discovery-service.md
 - name: Bewährte Methoden
   href: best-practices/index.md
 - name: Beispiele
   items:
-  - name: Web-API
-    href: webapi/samples/toc.yml
-  - name: Organisationsdienst
-    href: org-service/samples/toc.yml
+    - name: Web-API
+      href: webapi/samples/toc.yml
+    - name: Organisationsdienst
+      href: org-service/samples/toc.yml
 - name: Ressourcen
   items:
-  - name: Ressourcenseite für Entwickler
-    href: developer-resources-page.md
-  - name: Entwicklertools
-    href: developer-tools.md
-    items:
-    - name: Herunterladen von Tools über NuGet
-      href: download-tools-nuget.md
-  - name: Communitytools
-    href: community-tools.md
-  - name: Testtools
-    href: testing-tools-server.md
+    - name: Ressourcenseite für Entwickler
+      href: developer-resources-page.md
+    - name: Entwicklertools
+      href: developer-tools.md
+      items:
+        - name: Herunterladen von Tools über NuGet
+          href: download-tools-nuget.md
+    - name: Communitytools
+      href: community-tools.md
+    - name: Testtools
+      href: testing-tools-server.md
 - name: Referenz
   items:
-  - name: Entitätsreferenz
-    href: reference/entities/toc.yml
-  - name: Web-API-Referenz
-    href: /dynamics365/customer-engagement/web-api/about
-  - name: Organisationsdienst
-    href: /dotnet/api/?view=dynamics-general-ce-9
-  - name: XRM-Tools
-    href: /dotnet/api/?view=dynamics-xrmtooling-ce-9
-  - name: Virtuelle Entität
-    href: /dotnet/api/?view=dynamics-virtualentity-ce-9
-  - name: Workflow
-    href: /dotnet/api/?view=dynamics-workflow-ce-9
-  - name: PackageDeployer
-    href: /dotnet/api/?view=dynamics-deployer-ce-9
-  - name: Schema für Anpassungslösungsdatei
-    href: customization-solutions-file-schema.md
-  - name: Referenz für Lösungskomponentendatei (SolutionPackager)
-    href: solution-component-file-reference-solutionpackager.md
-  - name: FetchXML-Schema
-    href: fetchxml-schema.md
-ms.openlocfilehash: 3a162e476d0d3c9c4935d185b9e3942c86960edd
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357044"
+    - name: Entitätsreferenz
+      href: reference/entities/toc.yml
+    - name: Web-API-Referenz
+      href: /dynamics365/customer-engagement/web-api/about
+    - name: Organisationsdienst
+      href: /dotnet/api/?view=dynamics-general-ce-9
+    - name: XRM-Tools
+      href: /dotnet/api/?view=dynamics-xrmtooling-ce-9
+    - name: Virtuelle Entität
+      href: /dotnet/api/?view=dynamics-virtualentity-ce-9
+    - name: Workflow
+      href: /dotnet/api/?view=dynamics-workflow-ce-9
+    - name: PackageDeployer
+      href: /dotnet/api/?view=dynamics-deployer-ce-9
+    - name: Schema für Anpassungslösungsdatei
+      href: customization-solutions-file-schema.md
+    - name: Referenz für Lösungskomponentendatei (SolutionPackager)
+      href: solution-component-file-reference-solutionpackager.md
+    - name: FetchXML-Schema
+      href: fetchxml-schema.md
