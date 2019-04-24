@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
-ms.sourcegitcommit: 5a1864d1531b55b332749437674fd1378e1f55ca
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61543951"
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
 Ein Steuerelement, über das App-Benutzer mit ihren Geräten Ton aufnehmen können.
