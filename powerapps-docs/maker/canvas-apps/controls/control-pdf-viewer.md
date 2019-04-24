@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d3add2ccb460e11211baa993c61902856c8f083
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548798"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -26,11 +26,18 @@ Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
 ## <a name="description"></a>Beschreibung
 Zeigen Sie Text, Grafiken und anderen Inhalt in einer PDF-Datei an, indem Sie diese Art von Steuerelement hinzufügen und seine **Document**-Eigenschaft auf die URL der Datei festlegen, die Sie anzeigen möchten. Verwenden Sie dabei doppelte Anführungszeichen.
 
-## <a name="limitations"></a>Beschränkungen
-Beachten Sie, dass der PDF-Viewer aufgrund der Sicherheitsarchitektur PowerApps nur HTTPS-Links und nicht HTTP unterstützt.  
-Wenn sich das PDF-Dokument auf einem Server mit restriktiven CORS-Einstellungen befindet, können es möglicherweise nicht in Ihrer App angezeigt werden.  Um dieses Problem zu beheben, muss der Server, der PDF-Dokumente hostet, Cross-Origin-Anfragen (CORS) von powerapps.com zulassen.
+## <a name="limitations"></a>Einschränkungen
+1. Die Sicherheitsarchitektur PowerApps erfordert der PDF-Viewer nur HTTPS-Links, und nicht HTTP unterstützen.  
 
-Wenn das Dokument in PowerApps nicht geöffnet werden kann, wird dem Endanwender die Option zum Öffnen des Dokuments in einem externen Browser angezeigt.  Diese Option ist auch im Systemmenü für alle externen Dokumente verfügbar.
+2. Die **Dokument** Eigenschaft muss direkt in die PDF-Datei verknüpfen. Serverumleitungen oder HTML-Ansichten des Dokuments werden nicht unterstützt.
+
+3. Der Server, der das Dokument hostet, muss keine Authentifizierung erforderlich ist.
+
+4. Sie können möglicherweise kein PDF-Dokument in Ihrer app anzeigen, wenn das Dokument auf einem Server befindet, die über restriktive Cross-Origin Resource sharing (CORS)-Einstellungen verfügt. Um dieses Problem zu beheben, muss der Server, der PDF-Dokumente hostet, Cross-Origin-Anfragen auf powerapps.com zulassen.
+
+App-Benutzer können diese Einschränkungen umgehen, indem PDF-Dokumente öffnen, in einem externen Browser, wie Sie dazu aufgefordert werden, wenn das Steuerelement ein Dokument nicht öffnen kann. Diese Option ist auch im Systemmenü für alle externen Dokumente verfügbar.
+
+App-Entwickler können diese Einschränkungen umgehen, durch Einschließen von PDF-Dokumente als Medienressourcen in der app. Auf diese Weise kann für das PDF-Viewer-Steuerelement immer das Dokument anzeigen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Document**: gibt die, in doppelten Anführungszeichen gesetzte, URL der PDF-Datei an.

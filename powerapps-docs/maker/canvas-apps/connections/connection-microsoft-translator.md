@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545611"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Herstellen einer Verbindung mit Microsoft Translator aus PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -75,7 +75,7 @@ Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen 
 4. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-microsoft-translator/preview.png)). Geben Sie Text in **Source** ein, wählen Sie eine Sprache in **TargetLang** aus, und wählen Sie dann die Wiedergabeschaltfläche im Audio-Steuerelement aus.
 
     Die App spielt eine Audioversion des eingegebenen Texts in der ausgewählten Sprache ab.
-5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+5. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="detect-the-source-language"></a>Erkennen der Ausgangssprache
 In den folgenden Schritten werden die gleichen Texteingabe-Steuerelemente (**Source**) und Text (**Target**) verwendet. Sie können auch neue Steuerelemente erstellen, in diesem Fall müssen Sie nur die Namen in der Formel aktualisieren.
@@ -127,7 +127,7 @@ Text übersetzen: Übersetzt Text mit Microsoft Translator aus einer angegebenen
 Keine
 
 ### <a name="detect"></a>Detect
-Sprache erkennen: Erkennt die Ausgangssprache eines angegebenen Texts
+Erkennen Sie Sprache: Erkennt die Ausgangssprache eines angegebenen Texts
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -143,7 +143,7 @@ Sprache erkennen: Erkennt die Ausgangssprache eines angegebenen Texts
 | Name |Zeichenfolge |Nein | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-Sprachen abrufen: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
+Sprachen für Sprachausgabe abrufen: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 Keine

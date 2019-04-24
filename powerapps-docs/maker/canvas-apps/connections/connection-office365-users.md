@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557338"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Herstellen einer Verbindung mit Office 365-Benutzer aus PowerApps
 ![Office 365-Benutzer](./media/connection-office365-users/office365icon.png)
@@ -214,7 +214,7 @@ Vorgesetzten abrufen: Ruft das Benutzerprofil für den Vorgesetzten des angegebe
 | AccountEnabled |Boolesch |Flag für aktiviertes Konto |
 
 ### <a name="directreports"></a>DirectReports
-Get direct reports (Direkt unterstellte Mitarbeiter abrufen): Ruft die direkt unterstellten Mitarbeiter ab.
+Direkte Mitarbeiter abrufen: Direkte Mitarbeiter abrufen
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -239,7 +239,7 @@ Get direct reports (Direkt unterstellte Mitarbeiter abrufen): Ruft die direkt un
 | AccountEnabled |Boolesch |Flag für aktiviertes Konto |
 
 ### <a name="searchuser"></a>SearchUser
-Search for users (Benutzer suchen): Ruft die Suchergebnisse von Benutzerprofilen ab.
+Nach Benutzern suchen: Ruft die Suchergebnisse von Benutzerprofilen ab.
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 

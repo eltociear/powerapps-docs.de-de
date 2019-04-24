@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61527204"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Beziehen Sie und Verknüpfung mit Funktionen in PowerApps
 
@@ -100,7 +100,7 @@ Erstellen Sie zunächst eine einfache app, um anzuzeigen, und weisen Sie die Res
 
 1. Erstellen Sie eine [Tablet-app mit leerer App](../data-platform-create-app-scratch.md).
 
-1. Auf der **Ansicht** Registerkarte **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
 1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **Common Data Service** > **Produkte**  >  **Verbinden**.  
 
@@ -170,7 +170,7 @@ Mit dieser app kann Benutzer eine Reservierung ein Produkt in eine andere versch
 
 An diesem Punkt können Sie die Beziehung zwischen den Datensätzen in eine andere verschieben, aber Sie können die Beziehung nicht vollständig entfernen. Sie können die **Unrelate** Funktion, um einen Datensatz für die Reservierung von einem Produkt zu trennen.
 
-1. Auf der **Ansicht** Registerkarte **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
 1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **Common Data Service** > **Reservierungen**  >  **Verbinden**.
 
@@ -271,7 +271,7 @@ Erstellen Sie eine andere app, das diesem ähnelt, die, das Sie zuvor in diesem 
 
     ![Symbol "Abbrechen" Konfigurieren](media/function-relate-unrelate/contacts-unrelate.png)
 
-1. Auf der **Ansicht** Registerkarte **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
 1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **Common Data Service** > **Kontakte**  >  **Verbinden**.
 

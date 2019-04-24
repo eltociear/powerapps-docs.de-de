@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7ac87e794341fe79a6e4f949893b64462c384f83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544635"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
@@ -106,18 +106,18 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 
     > [!TIP]
    > Die Wiedergabeschaltfläche für das **Video**-Steuerelement wird angezeigt, wenn Sie auf das Steuerelement zeigen.
-5. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+5. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="play-a-youtube-video"></a>Abspielen eines YouTube-Videos
 1. Fügen Sie ein **Video**-Steuerelement hinzu, und legen Sie die **Media**-Eigenschaft auf die URL (in doppelten Anführungszeichen) eines YouTube-Videos fest.
 2. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des **Video**-Steuerelements ab.
-3. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+3. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ### <a name="play-a-video-from-azure-media-services"></a>Abspielen eines Videos aus Azure Media Services
 1. Nachdem die Videos auf AMS veröffentlicht wurden, kopieren Sie die URL der Manifestdatei. Starten Sie den Streamingendpunkt Ihres Diensts, falls noch nicht geschehen.
 1. Fügen Sie ein **Video**-Steuerelement hinzu, und legen Sie die **Media**-Eigenschaft auf die URL (in doppelten Anführungszeichen) eines AMS-Videos fest.
 2. Drücken Sie F5, und spielen Sie den Clip durch Klicken oder Tippen auf die Wiedergabeschaltfläche des **Video**-Steuerelements ab.
-3. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+3. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit

@@ -11,11 +11,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 11ec805a713743e2524651128b036ccaaade69e3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61542531"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Überprüfen einer Canvas-App in PowerApps auf Barrierefreiheit
 
@@ -70,7 +70,7 @@ Die Barrierefreiheitsüberprüfung klassifiziert jedes Problem auf Grundlage des
 | **Automatischen Start deaktivieren.**                 | Warnung  | Wenn die **Autostart**-Eigenschaft eines **Audio**- oder **Video**-Steuerelements auf **true** festgelegt ist. | Legen Sie die **Autostart**-Eigenschaft auf **false** fest. | Video- und Audiodateien, die automatisch wiedergegeben werden, können Benutzer ablenken. Lassen Sie Benutzer entscheiden, ob sie einen Clip abspielen möchten. |
 | **Namen des Bildschirms überarbeiten.**                 | Tipp      | Wenn ein Bildschirm über einen Standardnamen verfügt, der von Sprachausgaben vorgelesen wird, wenn Benutzer in der App navigieren. | Geben Sie dem Bildschirm einen Namen, der beschreibt, was auf dem Bildschirm angezeigt oder wofür er verwendet wird.| Personen, die blind oder sehbehindert sind oder eine Lese-/Rechtschreibschwäche besitzen, verlassen sich bei der Navigation auf die Bildschirmnamen und die Sprachausgabe. |
 | **Hinweistext für Zustand hinzufügen.**          | Tipp      |  Wenn ein Steuerelement zwar über einen Status verfügt (z.B. eine Umschaltfläche), für das aber die Wertbezeichnungen deaktiviert sind. | Legen Sie die Eigenschaft **ShowValue** des Steuerelements auf **true** fest, um den aktuellen Status anzuzeigen. | Benutzer erhalten keine Bestätigung ihrer Aktionen, wenn der Zustand des Steuerelements nicht angezeigt wird. |
-| **Reihenfolge der Bildschirmelemente überprüfen**| Tipp      | Wenn die Eigenschaft **TabIndex** größer als 1 ist. App-Entwickler können benutzerdefinierte Registerkartenreihenfolgen festlegen, indem Sie die **TabIndex**-Eigenschaft auf einen numerischen Wert wie 1, 2, 3 und 4 festlegen. Dieser Tipp erinnert Sie daran, die interaktive Reihenfolge für diesen Bildschirm zu überprüfen. Es hat sich bewährt, ein Design zu verwenden, in dem die **TabIndex**-Eigenschaft 0 ist.  | Stellen Sie sicher, dass die Bildschirmelemente in der Reihenfolge vorliegen, in der Sie sie durchlaufen möchten. | Wenn eine Sprachausgabe die Elemente einer App vorliest, sollten diese in der Reihenfolge dargestellt werden, in der ein Benutzer sie sehen würde und nicht in einer weniger intuitiven Reihenfolge.  |
+| **Reihenfolge der Bildschirmelemente überprüfen**| Tipp      | Wenn die Eigenschaft **TabIndex** größer als 1 ist. App-Entwickler können benutzerdefinierte Registerkartenreihenfolgen festlegen, indem Sie die **TabIndex**-Eigenschaft auf einen numerischen Wert wie 1, 2, 3 und 4 festlegen. Dieser Tipp erinnert Sie daran, die interaktive Reihenfolge für diesen Bildschirm zu überprüfen. Es hat sich bewährt, ein Design zu verwenden, in dem die **TabIndex**-Eigenschaft 0 ist.  | Stellen Sie sicher, dass die Bildschirmelemente in der Reihenfolge vorliegen, in der Sie sie durchlaufen möchten. | Wenn eine Sprachausgabe die Elemente einer App vorliest, sollten diese in der Reihenfolge dargestellt werden, in der ein Benutzer sie sehen würde und nicht in einer weniger intuitiven Reihenfolge.  |
 | **Andere Eingabemethode hinzufügen.**           | Tipp      | Wenn eine App ein **Stift**-Steuerelement enthält. Dieser Tipp erinnert Sie daran, eine separate Eingabemethode einzuschließen. | Fügen Sie zusätzlich zum **Stiftsteuerelement** ein **Texteingabesteuerelement** hinzu, um eine barrierefreie Lösung anzubieten. | Einige Benutzer können keinen Stift verwenden und benötigen eine weitere Möglichkeit zur Eingabe von Informationen (Beispiel: die Eingabe einer Unterschrift). |
 
 ## <a name="next-steps"></a>Nächste Schritte

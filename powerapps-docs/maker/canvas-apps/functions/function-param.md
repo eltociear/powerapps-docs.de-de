@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4a53d8c20bd4b7784cb94daa574682c041f104ea
-ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59993778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544336"
 ---
 # <a name="download-launch-and-param-functions-in-canvas-apps"></a>Download-, Launch- und Param-Funktionen in Canvas-apps
 Lädt eine Webseite herunter oder startet eine Webseite oder eine App mit Parametern.  

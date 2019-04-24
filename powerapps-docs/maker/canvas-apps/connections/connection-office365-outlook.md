@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4f22f55b3c64d38cc274b0b69d8e7799c1a24f60
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545334"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>Herstellen einer Verbindung mit Office 365 Outlook aus PowerApps
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
@@ -75,7 +75,7 @@ Die Office 365 Outlook-Verbindung wurde erstellt und Ihrer App hinzugefügt. Sie
     `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
 5. Verschieben Sie die Schaltfläche, sodass sie unter den anderen Steuerelementen angezeigt wird, und legen Sie ihre **[Text](../controls/properties-core.md)**-Eigenschaft auf **"Send email"** fest.
 6. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche (![Vorschauschaltfläche](./media/connection-office365-outlook/preview.png)) aus. Geben Sie eine gültige E-Mail-Adresse in **inputTo** ein, und geben Sie in den anderen beiden **Texteingabe**-Steuerelementen beliebigen Text ein.
-7. Wählen Sie **end email** aus, um die Nachricht zu senden. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+7. Wählen Sie **end email** aus, um die Nachricht zu senden. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="send-a-message-with-an-attachment"></a>Senden einer Nachricht mit einem Anhang
 Sie können beispielsweise eine App erstellen, in der der Benutzer Bilder mit der Kamera des Geräts aufzeichnet und diese als Anhänge sendet. Benutzer können zudem viele weitere Dateitypen an eine E-Mail-App anhängen.
@@ -115,7 +115,7 @@ In diesem Beispiel wird zusätzlich zum Foto eine Audiodatei gesendet:
     
     > [!NOTE]
     > Hierdurch werden die ausgewählten E-Mails aus dem Posteingang gelöscht. Vergewissern Sie sich daher, dass Sie die richtigen E-Mails auswählen.
-7. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+7. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="mark-a-message-as-read"></a>Markieren einer Nachricht als gelesen
 In diesem Abschnitt werden die gleichen Steuerelemente verwendet wie unter [Löschen einer Nachricht](connection-office365-outlook.md#delete-a-message).

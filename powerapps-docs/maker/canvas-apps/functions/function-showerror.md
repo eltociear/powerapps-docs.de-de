@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519723"
 ---
 # <a name="notify-function-in-powerapps"></a>Benachrichtigungsfunktion in PowerApps
 Zeigt dem Benutzer eine Bannermeldung an.
@@ -45,7 +45,7 @@ PowerApps kann auch über einen anderen Mechanismus, der sich gänzlich von **No
 
 **Notify** gibt immer *TRUE* zurück.
 
-Hinweis: Diese Funktion hatte in der Vergangenheit den Namen **ShowError**, wenn nur Fehlermeldungen angezeigt werden konnten.
+Hinweis: Diese Funktion wurde zuvor mit dem Namen **ShowError** Wenn konnte es nur Fehlermeldungen angezeigt.
 
 ## <a name="syntax"></a>Syntax
 **Notify**( *Message*, [ *NotificationType* ] )

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 22c60af513df1b91be1d9dffb252337e3197bf98
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536527"
 ---
 # <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>Wiederherstellen der vorherigen Version einer Canvas-App in PowerApps
 In diesem Artikel erfahren Sie, wie Sie eine Canvas-App auf eine frühere Version wiederherstellen, die von Ihrem PowerApps-Konto in der Cloud gespeichert wurde.

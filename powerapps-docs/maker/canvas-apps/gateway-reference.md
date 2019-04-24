@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5dcc07f3ba9b9b4baca39cf2090a2c57cb7e67b7
-ms.sourcegitcommit: 967812754d8e5b1ff72baa35ffbe548f3b9b0085
-ms.translationtype: HT
+ms.openlocfilehash: 831e63920db07414db7b40fe69be82989add89eb
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61554489"
 ---
 # <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>Grundlegendes zu lokalen Datengateways für Canvas-Apps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration
@@ -125,7 +125,7 @@ Hier finden Sie eine Liste der vollqualifizierten Domänennamen, die vom Gateway
 | *.servicebus.windows.net |443, 9350-9354 |Listener auf Service Bus Relay über TCP (erfordert 443 für Access Control-Tokenabruf) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
 | *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
+| *login.microsoftonline.com |443 |HTTPS |
 | *.msftncsi.com |443 |Wird verwendet, um die Internetkonnektivität zu testen, wenn das Gateway vom Power BI-Dienst nicht erreicht werden kann. |
 
 **Anmeldekonto**
@@ -156,57 +156,57 @@ Aktuell können Mandantenadministratoren nicht alle Gateways an einer Stelle ges
 * FileSystem
 * DB2
 
-**Frage:** Benötige ich ein Gateway für Datenquellen in der Cloud wie z.B. SQL Azure?  
+**Frage:** Benötige ich ein Gateway für Datenquellen in der Cloud, z.B. SQL Azure?  
 **Antwort:** Nein. Ein Gateway stellt nur eine Verbindung zu lokalen Datenquellen her.
 
-**Frage:** Wie heißt der eigentliche Windows-Dienst?  
-**Antwort:** Unter „Dienste“ heißt das Gateway **Power BI Enterprise Gateway Service**.
+**Frage:** Wie wird der eigentliche Windows-Dienst genannt?  
+**Antwort:** In Diensten, das Gateway den Namen **Power BI Enterprise Gateway Service**.
 
-**Frage:** Gibt es eingehende Verbindungen zum Gateway aus der Cloud?  
+**Frage:** Gibt es eingehenden Verbindungen an das Gateway aus der Cloud?  
 **Antwort:** Nein. Das Gateway verwendet ausgehende Verbindungen zum Azure Service Bus.
 
 **Frage:** Was geschieht, wenn ich ausgehende Verbindungen blockiere? Was muss ich öffnen?  
-**Antwort:** In der Liste oben finden Sie die Ports und Hosts, die vom Gateway verwendet werden.
+**Antwort:** Finden Sie in der Liste der Ports und Hosts, denen über das Gateway verwendet.
 
-**Frage:** Muss das Gateway auf demselben Computer installiert werden wie die Datenquelle?  
+**Frage:** Muss das Gateway auf dem gleichen Computer wie die Datenquelle installiert werden?  
 **Antwort:** Nein. Das Gateway stellt eine Verbindung mit der Datenquelle mithilfe der bereitgestellten Verbindungsinformationen her. Stellen Sie sich das Gateway in diesem Sinn wie eine Clientanwendung vor. Es muss nur eine Verbindung zum bereitgestellten Servernamen herstellen können.
 
-**Frage:** Wie ist die Latenzzeit für das Ausführen von Abfragen an eine Datenquelle über das Gateway? Was ist die beste Architektur?  
-**Antwort:** Installieren Sie das Gateway so nahe an der Datenquelle wie möglich, um die Netzwerklatenz zu reduzieren. Wenn Sie das Gateway auf der Datenquelle installieren können, wird die Latenzzeit minimiert. Berücksichtigen Sie auch die Rechenzentren. Wenn Ihr Dienst zum Beispiel das Rechenzentrum im Westen der USA nutzt und SQL Server auf einem virtuellen Azure-Computer gehostet wird, möchten Sie, dass sich der virtuelle Azure-Computer auch im Westen der USA befindet. Dadurch werden die Latenzzeit minimiert und Gebühren für ausgehenden Datenverkehr auf dem virtuellen Azure-Computer vermieden.
+**Frage:** Was ist die Latenzzeit für das Ausführen von Abfragen mit einer Datenquelle zwischen dem Gateway? Was ist die beste Architektur?  
+**Antwort:**  Um die Netzwerklatenz zu reduzieren, installieren Sie das Gateway als in der Nähe der Datenquelle wie möglich. Wenn Sie das Gateway auf der Datenquelle installieren können, wird die Latenzzeit minimiert. Berücksichtigen Sie auch die Rechenzentren. Wenn Ihr Dienst zum Beispiel das Rechenzentrum im Westen der USA nutzt und SQL Server auf einem virtuellen Azure-Computer gehostet wird, möchten Sie, dass sich der virtuelle Azure-Computer auch im Westen der USA befindet. Dadurch werden die Latenzzeit minimiert und Gebühren für ausgehenden Datenverkehr auf dem virtuellen Azure-Computer vermieden.
 
 **Frage:** Gibt es Anforderungen an die Netzwerkbandbreite?  
-**Antwort:** Es wird empfohlen, über eine Netzwerkverbindung mit gutem Durchsatz zu verfügen. Jede Umgebung ist anders, und die Menge der übermittelten Daten wird sich auf die Ergebnisse auswirken. ExpressRoute könnte Ihnen dabei helfen, einen gewissen Durchsatz zwischen lokalen und Azure-Rechenzentren zu gewährleisten.
+**Antwort:** Es wird empfohlen, einen guten Durchsatz für die Netzwerkverbindung aufweisen. Jede Umgebung ist anders, und die Menge der übermittelten Daten wird sich auf die Ergebnisse auswirken. ExpressRoute könnte Ihnen dabei helfen, einen gewissen Durchsatz zwischen lokalen und Azure-Rechenzentren zu gewährleisten.
 
 Sie können das Drittanbietertool [Azure Speed Test-App](http://azurespeedtest.azurewebsites.net/) verwenden, um Ihren Durchsatz zu messen.
 
-**Frage:** Kann das Gateway Windows-Dienst mit einem Azure Active Directory-Konto ausgeführt werden?  
+**Frage:** Werden das Gateway-Windows-Dienst kann mit einem Azure Active Directory-Konto ausgeführt?  
 **Antwort:** Nein. Der Windows-Dienst muss über ein gültiges Windows-Konto verfügen. In der Standardeinstellung wird er mit der Dienst-SID *NT SERVICE\PBIEgwService* ausgeführt.
 
-**Frage:** Wie werden Ergebnisse zurück an die Cloud übermittelt?  
+**Frage:** Wie werden Ergebnisse zurück in die Cloud gesendet?  
 **Antwort:** Dies erfolgt über den Azure Service Bus. Weitere Informationen finden Sie unter [Funktionsweise des Gateways](gateway-reference.md#how-the-gateway-works).
 
 **Frage:** Wo werden meine Anmeldeinformationen gespeichert?  
-**Antwort:** Die Anmeldeinformationen, die Sie für eine Datenquelle eingeben, werden verschlüsselt im Gatewayclouddienst gespeichert. Die Anmeldeinformationen werden auf dem Gateway lokal entschlüsselt.
+**Antwort:** Die Anmeldeinformationen, die Sie für eine Datenquelle eingeben werden verschlüsselt im gatewayclouddienst gespeichert. Die Anmeldeinformationen werden auf dem Gateway lokal entschlüsselt.
 
-**Frage:** Kann ich das Gateway in einem Umkreisnetzwerk (auch als DMZ bzw. demilitarisierte Zone bezeichnet) platzieren?  
-**Antwort:** Für das Gateway ist eine Verbindung zur Datenquelle erforderlich. Wenn sich die Datenquelle nicht in Ihrem Umkreisnetzwerk befindet, kann das Gateway möglicherweise keine Verbindung herstellen. Zum Beispiel befindet sich der Computer, auf dem SQL Server ausgeführt wird, möglicherweise nicht in Ihrem Umkreisnetzwerk, und Sie können aus dem Umkreisnetzwerk keine Verbindung zu diesem Computer herstellen. Wenn Sie das Gateway in Ihrem Umkreisnetzwerk platzieren, kann das Gateway keine Verbindung zu dem Computer herstellen, auf dem SQL Server ausgeführt wird.
+**Frage:** Kann ich das Gateway in einem Umkreisnetzwerk (auch bekannt als DMZ, demilitarisierte Zone und überwachtes Subnetz bezeichnet) platzieren?  
+**Antwort:** Das Gateway ist eine Verbindung mit der Datenquelle erforderlich. Wenn sich die Datenquelle nicht in Ihrem Umkreisnetzwerk befindet, kann das Gateway möglicherweise keine Verbindung herstellen. Zum Beispiel befindet sich der Computer, auf dem SQL Server ausgeführt wird, möglicherweise nicht in Ihrem Umkreisnetzwerk, und Sie können aus dem Umkreisnetzwerk keine Verbindung zu diesem Computer herstellen. Wenn Sie das Gateway in Ihrem Umkreisnetzwerk platzieren, kann das Gateway keine Verbindung zu dem Computer herstellen, auf dem SQL Server ausgeführt wird.
 
 #### <a name="high-availabilitydisaster-recovery"></a>Hohe Verfügbarkeit und Notfallwiederherstellung
-**Frage:** Ist es geplant, Szenarios mit Hochverfügbarkeit für das Gateway zu aktivieren?  
-**Antwort:** Hochverfügbarkeit wird durch Verknüpfen von mindestens zwei Gateways in demselben Cluster aktiviert.  Für Gatewaycluster mit Hochverfügbarkeit ist das Update von November 2017 auf ein lokales Datengateway oder höher erforderlich.  Weitere Informationen finden Sie unter [Blogbeitragsankündigung](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow).
+**Frage:** Gibt es Pläne für die Aktivierung von Szenarien mit hochverfügbarkeit mit dem Gateway?  
+**Antwort:** Hoher Verfügbarkeit wird durch Verknüpfen von mindestens 2 Gateways in demselben Cluster aktiviert.  Für Gatewaycluster mit Hochverfügbarkeit ist das Update von November 2017 auf ein lokales Datengateway oder höher erforderlich.  Weitere Informationen finden Sie unter [Blogbeitragsankündigung](https://powerapps.microsoft.com/en-us/blog/gateway-high-availability-for-powerapps-and-flow).
 
-**Frage:** Welche Optionen sind für die Notfallwiederherstellung verfügbar?  
+**Frage:** Welche Optionen sind für die notfallwiederherstellung verfügbar?  
 **Antwort:** Sie können den Wiederherstellungsschlüssel zum Wiederherstellen oder Verschieben eines Gateways verwenden. Geben Sie beim Installieren des Gateways den Wiederherstellungsschlüssel an.
 
 **Frage:** Was ist der Vorteil des Wiederherstellungsschlüssels?  
-**Antwort:** Er bietet eine Möglichkeit zum Migrieren oder Wiederherstellen Ihrer Gatewayeinstellungen nach einem Notfall.
+**Antwort:** Es bietet eine Möglichkeit zum Migrieren oder Wiederherstellen Ihrer gatewayeinstellungen nach einem Notfall.
 
 #### <a name="troubleshooting"></a>Problembehandlung
-**Frage:** Wo befinden sich die Gatewayprotokolle?  
-**Antwort:** Siehe [Tools](gateway-reference.md#tools) weiter unten in diesem Thema.
+**Frage:** Wo sind die gatewayprotokolle?  
+**Antwort:** Finden Sie unter [Tools](gateway-reference.md#tools) weiter unten in diesem Thema.
 
-**Frage:** Wie kann ich sehen, welche Abfragen an die lokale Datenquelle übermittelt werden?  
-**Antwort:** Sie können die Abfrageablaufverfolgung aktivieren, die auch die Abfragen umfasst, die gerade übermittelt werden. Denken Sie daran, sie nach der Problembehandlung wieder in den ursprünglichen Wert zu ändern. Wenn Sie die Abfrageablaufverfolgung aktiviert lassen, werden die Protokolle größer.
+**Frage:** Wie kann ich feststellen, welche Abfragen werden an die lokale Datenquelle gesendet?  
+**Antwort:** Sie können die abfrageablaufverfolgung aktivieren die die gesendeten Abfragen beinhaltet. Denken Sie daran, sie nach der Problembehandlung wieder in den ursprünglichen Wert zu ändern. Wenn Sie die Abfrageablaufverfolgung aktiviert lassen, werden die Protokolle größer.
 
 Sie können sich auch Tools ansehen, die die Datenquelle für die Abfrageablaufverfolgung bietet. Sie können beispielsweise erweiterte Ereignisse oder SQL Profiler für SQL Server und Analysis Services verwenden.
 
@@ -231,7 +231,7 @@ Wenn ein Benutzer mit einem Element interagiert, das mit einer lokalen Datenquel
 #### <a name="update-to-the-latest-version"></a>Aktualisieren auf die neueste Version
 Viele Probleme können auftreten, wenn die Gatewayversion veraltet ist.  Es wird allgemein empfohlen, die neueste Version zu verwenden.  Wenn Sie das Gateway einen Monat oder länger nicht aktualisiert haben, empfiehlt es sich, die neueste Version des Gateways zu installieren und zu sehen, ob das Problem erneut auftritt.
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fehler: Fehler beim Hinzufügen des Benutzers zur Gruppe.  (-2147463168   PBIEgwService   Leistungsprotokollbenutzer   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fehler: Fehler beim Hinzufügen der Benutzer zur Gruppe.  (-2147463168   PBIEgwService   Leistungsprotokollbenutzer   )
 Dieser Fehler wird möglicherweise angezeigt, wenn Sie versuchen, das Gateway auf einem Domänencontroller zu installieren, da dies nicht unterstützt wird. Sie müssen das Gateway auf einem Computer bereitstellen, der kein Domänencontroller ist.
 
 ## <a name="tools"></a>Tools

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7b64914e436856196aa0a7021ba9c3772172ef59
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61552535"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Löschen einer Canvas-App aus PowerApps
 In diesem Artikel wird gezeigt, wie Sie eine Canvas-App aus Ihrem PowerApps-Konto und aus Konten von anderen Benutzern löschen, für die die App freigegeben wurde.

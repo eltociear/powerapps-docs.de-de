@@ -1,6 +1,6 @@
 ---
-title: 'Barcodescanner-Steuerelement: Referenz | Microsoft-Dokumentation'
-description: Informationen, einschließlich Eigenschaften und Beispiele, über das Barcodescanner-Steuerelement
+title: 'Web-Barcodescanner Steuerelement: Referenz | Microsoft-Dokumentation'
+description: Informationen, einschließlich Eigenschaften und Beispiele, über das Barcodescanner Steuerelement
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,23 +13,27 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 853558273521491467fa7474688ce9c984ac5db6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544589"
 ---
-# <a name="barcode-scanner-control-experimental-in-powerapps"></a>Barcodescanner-Steuerelement in PowerApps (experimentell)
-Ein experimentelles Steuerelement, mit dem der Benutzer mithilfe des Barcodescanners auf seinem Gerät Fotos aufnehmen kann.
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Web Barcodescanner Steuerelement in PowerApps (experimentell)
+
+Das ältere Barcodescanner Steuerelement, das ist veraltet, jedoch für die Überprüfung des Codes in einem Webbrowser nützlich sein.
 
 ## <a name="description"></a>Beschreibung
-Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mit einem oder mehreren Fotos vom aktuellen Ort, an dem die App ausgeführt wird, aktualisieren.
+
+Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Barcodes auf allen Geräten überprüfen können. Das Steuerelement ist aufgrund einer schlechten Leistung und die Mobile veraltet **[Barcode-Scanner](control-new-barcode-scanner.md)** -Steuerelement ersetzt dieses Steuerelement.
 
 ## <a name="key-properties"></a>Haupteigenschaften
+
 **barcode scanner** – Auf einem Gerät mit mehreren Barcodescannern die numerische ID des von der App verwendeten Barcodescanners.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
+
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
@@ -61,24 +65,32 @@ Wenn Sie dieses Steuerelement hinzufügen, kann der Benutzer eine Datenquelle mi
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
+
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
+
 ### <a name="add-photos-to-an-image-gallery-control"></a>Hinzufügen von Fotos zu einem Bildkatalog-Steuerelement
+
 1. Fügen Sie ein **Barcodescanner**-Steuerelement hinzu, und benennen Sie es **Mybarcode scanner**.
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
-2. Fügen Sie ein **Bezeichnungs**-Steuerelement hinzu, und legen Sie dessen Ausgabe auf den **Text** des Barcodes fest.  
-3. Scannen Sie einen Barcode des in der BarcodeType-Eigenschaft festgelegten Typs.
-4. In der Bezeichnung wird der gescannte Barcode angezeigt.
 
+1. Hinzufügen einer **Bezeichnung** steuern, und legen Sie dessen Ausgabe des Barcodescanners **Text** Eigenschaft.
+
+1. Scannen eines Barcodes des Typs unter Gruppe **BarcodeType** Eigenschaft.
+
+    Die Bezeichnung wird den gescannten Barcode angezeigt.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
+
 ### <a name="video-alternatives"></a>Videoalternativen
+
 * Sie sollten eine **[Bezeichnung](control-text-box.md)** hinzufügen, deren **[Text](properties-core.md)** auf den **Text** des Barcodescanners festgelegt ist. Da der Barcodescanner nicht den ermittelten Barcodewert anzeigt, kann jeder Benutzer den Scanner verwenden und nicht nur Benutzer mit Sehbehinderung.
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
+
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-  > Die Sprachausgabe meldet, wenn ein neuer Barcode gefunden wurde. Der Wert wird jedoch nicht genannt. Solange der Barcode angezeigt wird, erinnert die Sprachausgabe alle 5 Sekunden daran, dass immer noch derselbe Barcode ermittelt wird.
+  > Die Sprachausgabe wird, wenn ein neuer Barcode gefunden wurde. Der Wert wird nicht angekündigt werden. Solange der Barcode angezeigt wird, erinnert Sprachausgabe den Benutzer alle fünf Sekunden, die immer noch denselben Barcode identifiziert wird.

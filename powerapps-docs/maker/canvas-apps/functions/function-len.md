@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b92008425ade7976259087309de9a540dbceb455
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563171"
 ---
 # <a name="len-function-in-powerapps"></a>Funktion „Len“ in PowerApps
 Gibt die Länge einer Textzeichenfolge zurück

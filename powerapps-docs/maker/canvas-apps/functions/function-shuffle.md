@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3fd93ce6cf9703e9e9fbf69c5826213d9aa78e02
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519177"
 ---
 # <a name="shuffle-function-in-powerapps"></a>Funktion „Shuffle“ in PowerApps
 Sortiert die [Datensätze](../working-with-tables.md#records) einer [Tabelle](../working-with-tables.md) nach dem Zufallsprinzip neu

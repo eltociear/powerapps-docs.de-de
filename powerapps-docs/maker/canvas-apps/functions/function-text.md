@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3a3d272737783abeaf2fe33557457486dae31e45
-ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "57800558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519200"
 ---
 # <a name="text-function-in-powerapps"></a>Funktion „Text“ in PowerApps
 Konvertiert einen beliebigen Wert ein, und formatiert einen Zahl oder Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts.

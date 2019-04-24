@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 16226203262d5ecacc8fc49a88c9934dd0f673e6
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562874"
 ---
 # <a name="hashtags-function-in-powerapps"></a>Funktion „HashTags“ in PowerApps
 Extrahiert die Hashtags (#strings) aus einer Textzeichenfolge.

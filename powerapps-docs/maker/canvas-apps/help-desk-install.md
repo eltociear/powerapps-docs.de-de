@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9981a549aaf0ce88f6e66dd4df2c7897901d219b
-ms.sourcegitcommit: 5c098a62f66a2f33418967fdce9363bd529e0fc1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58581091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61554311"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Help Desk“ in PowerApps
 
@@ -172,7 +172,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 4.  Klicken Sie auf **Erstellen**.
 5.  Wählen Sie im Popupfenster das Konto aus, mit dem Sie sich angemeldet haben.
 
-## <a name="import-the-app"></a>Importieren Sie die app
+## <a name="import-the-app"></a>Importieren der App
 
 1. Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
 2. Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
@@ -216,17 +216,17 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 ### <a name="delete-connections"></a>Löschen von Verbindungen
 
-1. Auf der **Ansicht** Registerkarte **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 1. In der **Daten** Bereich, wählen Sie die Auslassungspunkte (...) neben **HelpDesk**, und wählen Sie dann **entfernen**.
 
 ### <a name="helpdesk-list"></a>HelpDesk-Liste
 
-1. Auf der **Ansicht** Registerkarte **Datenquellen**.
-1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **neue Verbindung** > **SharePoint**  >  **Erstellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
+1. Klicken Sie im Bereich **Daten** auf **Datenquelle hinzufügen** > **Neue Verbindung** > **SharePoint** > **Erstellen**.
 1. Wählen Sie in der Liste **Zuletzt geöffnete Websites** die SharePoint-Website aus, auf der Sie die HelpDesk-Liste erstellt haben.
 
     > [!TIP] 
-    > Wenn der Standort in der Liste nicht angezeigt wird, geben oder fügen Sie die URL zur SharePoint-Website in das Textfeld ein, und wählen Sie dann **wechseln**.
+    > Wenn die Website nicht in der Liste angezeigt wird, geben Sie die URL der SharePoint-Website in das Textfeld ein oder fügen Sie sie dort ein, und klicken Sie auf **Los**.
 
 1. In der **Suche** Feld am oberen Rand der Liste, geben oder fügen Sie **HelpDesk**.
 1. Aktivieren Sie das Kontrollkästchen neben **HelpDesk**, und wählen Sie dann **Connect**.
@@ -244,7 +244,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
    > Wenn Sie mehr als ein Administrator verfügen, verwenden Sie ein Komma, um die Liste der Administratoren zu begrenzen. Beispiel: "admin1@microsoft.com","admin2@microsoft.com".
    > Sehen Sie sich unter „Ansicht“ > „Variablen“ > „Global“ > „MyProfile“ (Mein Profil) in der Spalte „E-Mail“ das E-Mail-Format an, um zu überprüfen, ob die Adressen in „AdminList“ dem von PowerApps erwarteten Format entsprechen.
 
-1. Wählen Sie **Datei** > **speichern** > **veröffentlichen** > **diese Version veröffentlichen**.
+1. Klicken Sie auf **Datei** > **Speichern** > **Veröffentlichen** > **Diese Version veröffentlichen**.
 
 ## <a name="modify-the-flow"></a>Ändern des Flows
 
@@ -272,7 +272,7 @@ In dieser Liste werden die Help Desk-Tickets gespeichert.
 
 11. Klicken Sie auf **Flow aktualisieren**.
 
-## <a name="play-the-app"></a>Führen Sie die app
+## <a name="play-the-app"></a>Ausführen der App
 
 1. Klicken Sie im Webbrowser auf **Apps**.
 2. Klicken Sie auf die Auslassungspunkte (...) neben der Help Desk-app.

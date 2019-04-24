@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61546991"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Funktionen „EndsWith“ und „StartsWith“ in PowerApps
 Testet, ob eine Textzeichenfolge mit einer anderen Textzeichenfolge beginnt oder endet.
@@ -68,7 +68,7 @@ Die Beispiele im Rest dieses Themas zeigen die Ergebnisse der Suche in einer Lis
 
 Erstellen Sie ein **[Button](../controls/control-button.md)**-Steuerelement, und legen Sie dessen **OnSelect**-Eigenschaft auf folgende Formel fest, um diese Datenquelle als Sammlung zu erstellen:
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect (Customers-Tabelle ({Name: "Fred Garcia", Unternehmen: "Northwind Traders"} {Name: "Cole Miller", Unternehmen: "Contoso"} {Name: "Glenda Johnson", Unternehmen: "Contoso"} {Name: "Mike Collins", Unternehmen: "Adventure Works"}, {Name: "Colleen Jones" Unternehmen: "Adventure Works" } ) )**
 
 Sie können wie in diesem Beispiel eine Datensatzliste in einem [**Katalogsteuerelement**](../controls/control-gallery.md) am unteren Rand des Bildschirms anzeigen. Fügen Sie im oberen Bereich des Bildschirms ein [**Texteingabe**](../controls/control-text-input.md)-Steuerelement mit dem Namen **SearchInput** ein, sodass Benutzer angeben können, welche Datensätze für sie relevant sind.
 

@@ -1,6 +1,6 @@
 ---
-title: Eigenschaften von Bedienungshilfen | Microsoft-Dokumentation
-description: Enthält Referenzinformationen zu Eigenschaften, z.B. TabIndex, QuickInfo.
+title: Eigenschaften von Bedienungshilfen für canvas-apps | Microsoft-Dokumentation
+description: Referenzinformationen zu Eigenschaften wie z. B. TabIndex und QuickInfo
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4d75fcd4c0605e295c1e61c5232ba747203d1647
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5fa8b6fecdf690114cbf6a0945f2dfec66b067c3
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42854145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61560413"
 ---
-# <a name="accessibility-properties-in-powerapps"></a>Eigenschaften von Bedienungshilfen in PowerApps
+# <a name="accessibility-properties-for-canvas-apps"></a>Eigenschaften von Bedienungshilfen für Canvas-apps
+
 Hier geht es um die Konfiguration von Eigenschaften, die für Benutzer mit Sehschwäche als Hilfe für alternative Interaktionsmöglichkeiten mit Steuerelementen dienen.
 
-### <a name="properties"></a>Eigenschaften
+## <a name="properties"></a>Eigenschaften
+
 **AccessibleLabel**: Bezeichnung für Sprachausgaben. Durch einen leeren Wert für Bild-, Symbol- und Formsteuerelemente werden diese für die Bildschirmsprachausgabe unsichtbar und als Dekoration behandelt.
+
+**Live** : wie Änderungen an Inhalten die Sprachausgabe sollten. Verfügbar nur in der **[Bezeichnung](control-text-box.md)** Steuerelement.
+
+* Bei Festlegung auf **aus**, die Sprachausgabe keine Änderungen bekanntgeben zu können.
+* Bei Festlegung auf **Polite**, die Sprachausgabe abgeschlossen ist, das halten öffentlicher Vorträge Ankündigung: Änderungen, die beim Ausführen die Sprachausgabe gesprochen habe.
+* Bei Festlegung auf **Assertive**, die Sprachausgabe von Hardwareinterrupts benötigt hat sich alle Änderungen, die aufgetreten sind, während die Sprachausgabe gesprochen habe, ankündigen zu können.
+
+Erfahren Sie, wie Sie [dynamische Änderungen mit live-Regionen ankündigen](../accessible-apps-live-regions.md).
 
 **TabIndex**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 

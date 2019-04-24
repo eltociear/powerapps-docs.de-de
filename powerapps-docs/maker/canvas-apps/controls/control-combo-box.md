@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
-ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61552041"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -84,15 +84,21 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie aus der Registerkarte „Einfügen“ des Menüs „Steuerelemente“ ein **Kombinationsfeld**-Steuerelement hinzu.  
-2. Klicken Sie auf der Optionsregisterkarte „Eigenschaften“ auf „Daten“.  
-3. Wählen Sie unten die Datenquelle, das Layout und die entsprechenden Eigenschaften aus.
-4. Legen Sie auf der Registerkarte „Erweitert“ die **SelectMultiple**-Eigenschaft fest.
+1. Auf der **einfügen** Registerkarte Öffnen der **Steuerelemente** Menü, und wählen Sie dann **Kombinationsfeld**.  
 
-    In der App wird ein funktionsfähiges **Kombinationsfeld** angezeigt.
+1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, und Öffnen der **Vybrat zdroj DAT** Liste (neben **Elemente**), und klicken Sie dann hinzufügen, oder wählen Sie eine Datenquelle.
 
-    Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
+1. Wählen Sie auf der gleichen Registerkarte **bearbeiten** (neben **Felder**).
 
+1. In der **Daten** , öffnen Sie im Bereich der **primärer Text** aus, und wählen Sie die Spalte, die in angezeigt werden sollen. die **Kombinationsfeld** Steuerelement.
+
+1. Wählen Sie den Pfeil nach unten zu öffnen, während Sie die Alt-Taste gedrückt halten, die **Kombinationsfeld** Steuerelement.
+
+    Das Steuerelement zeigt die Daten aus der Spalte, die Sie in der Datenquelle angegeben, dass Sie angegeben haben.
+    
+1. (optional) Um den ersten Datensatz in der Standardeinstellung anzuzeigen, legen die **DefaultSelectedItems** Eigenschaft auf den folgenden Ausdruck ein, und Ersetzen Sie dabei *DataSource* mit dem Namen der Datenquelle:
+
+    `First(DataSource)`
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast

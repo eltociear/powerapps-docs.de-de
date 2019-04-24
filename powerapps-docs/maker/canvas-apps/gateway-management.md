@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 85806799a5f5ea91a4671a27e71cf95daabcd01a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553564"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Verwalten eines lokalen Datengateways in PowerApps
 Installieren Sie ein lokales Datengateway zur schnellen und sicheren Datenübertragung zwischen einer in PowerApps erstellten Canvas-App und einer Datenquelle, die sich nicht in der Cloud befindet, z.B. eine lokale SQL Server-Datenbank oder eine lokale SharePoint-Website. Zeigen Sie alle Gateways an, für die Sie Administratorberechtigungen haben, und verwalten Sie Berechtigungen und Verbindungen für diese Gateways.
@@ -54,9 +54,9 @@ Ein Gateway ermöglicht Ihnen die folgenden Verbindungen mit lokalen Daten:
 
 2. Fügen Sie einen Benutzer zu einem Gateway hinzu, indem Sie auf **Benutzer** klicken oder tippen, einen Benutzer oder eine Gruppe und anschließend eine Berechtigungsstufe angeben:
 
-   * **Verwenden**: Benutzer, die Verbindungen im Gateway erstellen dürfen, die für Apps und Flows verwendet werden, aber das Gateway nicht freigeben dürfen. Wählen Sie diese Berechtigung für Benutzer, die Apps ausführen, aber nicht freigeben.
-   * **Verwenden + freigeben**: Benutzer, die Verbindungen im Gateway erstellen dürfen, die für Apps und Flows verwendet werden, und das Gateway automatisch freigeben, wenn eine App freigegeben wird. Wählen Sie diese Berechtigung für Benutzer, die Apps für andere Benutzer oder die Organisation freigeben.
-   * **Administrator**: Administratoren mit Vollzugriff auf das Gateway dürfen u. a. Benutzer hinzufügen, Berechtigungen festlegen, Verbindungen mit allen verfügbaren Datenquellen erstellen und das Gateway löschen.
+   * **Können**: Benutzer können Verbindungen erstellen, auf dem Gateway für apps und Flows verwenden, aber das Gateway nicht freigeben. Wählen Sie diese Berechtigung für Benutzer, die Apps ausführen, aber nicht freigeben.
+   * **Verwenden + freigeben**: Benutzer, die eine Verbindung erstellen, auf dem Gateway für apps und Flows verwenden und das Gateway automatisch freigeben, wenn eine app freigegeben. Wählen Sie diese Berechtigung für Benutzer, die Apps für andere Benutzer oder die Organisation freigeben.
+   * **Admin**: Administratoren vollständige Kontrolle über das Gateway haben, z.B. Hinzufügen von Benutzern, Berechtigungen festlegen, Verbindungen mit allen verfügbaren Datenquellen erstellen und Löschen des Gateways.
 
 Für die Berechtigungsstufen **Verwenden** und **Verwenden + freigeben** wählen Sie die Datenquellen, mit denen der Benutzer über das Gateway eine Verbindung herstellen kann.
 
