@@ -1,0 +1,120 @@
+- name: Arbeiten mit Daten mithilfe von Code
+  href: ../work-with-data-cds.md
+- name: Verwenden des Organisationsdiensts
+  href: overview.md
+- name: Erste Schritte
+  items:
+    - name: 'Schnellstart: Erstellen einer Konsolen-App'
+      href: quick-start-org-service-console-app.md
+    - name: Programmierung mit später und früher Bindung
+      href: early-bound-programming.md
+    - name: IOrganizationService-Schnittstelle
+      href: iorganizationservice-interface.md
+    - name: OrganizationServiceContext
+      href: organizationservicecontext.md
+    - name: Erstellen einer Client-App
+      href: create-client-app.md
+      items:
+        - name: Abonnieren von SDK-Assemblyupdates mithilfe von NuGet
+          href: subscribe-sdk-assembly-updates-using-nuget.md
+        - name: Visual Studio und das .NET Framework
+          href: visual-studio-dot-net-framework.md
+        - name: Ermittlungsdienst
+          href: discovery-service.md
+        - name: Verwenden von XRM-Tools
+          href: ../xrm-tooling/build-windows-client-applications-xrm-tools.md
+- name: Entitätsvorgänge
+  href: entity-operations.md
+  items:
+    - name: Abfragen von Daten
+      href: entity-operations-query-data.md
+      items:
+        - name: Erstellen von Abfragen mit QueryExpression
+          href: build-queries-with-queryexpression.md
+          items:
+            - name: Verwenden der QueryExpression-Klasse
+              href: use-queryexpression-class.md
+            - name: Verwenden der ConditionExpression-Klasse
+              href: use-conditionexpression-class.md
+            - name: Verwenden der FilterExpression-Klasse
+              href: use-filterexpression-class.md
+            - name: Verwenden der ColumnSet-Klasse
+              href: use-the-columnset-class.md
+            - name: Auslagern umfangreicher Resultsets mit QueryExpression
+              href: page-large-result-sets-with-queryexpression.md
+            - name: 'Verwenden einer linken äußeren Verknüpfung in QueryExpression zur Abfrage von Datensätzen, die sich nicht in einem Resultset befinden'
+              href: use-left-outer-join-queryexpression-query-records-not-in.md
+            - name: Verwenden der QueryByAttribute-Klasse
+              href: use-querybyattribute-class.md
+            - name: Auslagern umfangreicher Resultsets mit FetchXML
+              href: page-large-result-sets-with-fetchxml.md
+    - name: Erstellen von Entitäten
+      href: entity-operations-create.md
+    - name: Abrufen einer Entität
+      href: entity-operations-retrieve.md
+    - name: Aktualisieren und Löschen von Entitäten
+      href: entity-operations-update-delete.md
+    - name: Zuordnen von Entitäten und Aufheben von Zuordnungen
+      href: entity-operations-associate-disassociate.md
+- name: Verwenden von Nachrichten
+  href: use-messages.md
+- name: Bestimmte Vorgänge
+  items:
+    - name: Verwenden von ExecuteAsync
+      href: use-executeAsync.md
+    - name: Verwenden von ExecuteTransaction
+      href: use-executetransaction.md
+    - name: Ausführen mehrerer Anforderungen
+      href: execute-multiple-requests.md
+- name: Verwenden von OrganizationServiceContext
+  items:
+    - name: Erstellen von Abfragen mit LINQ (Language Integrated Query für .NET)
+      href: build-queries-with-linq-net-language-integrated-query.md
+    - name: Beispiele für LINQ-Abfragen
+      href: linq-query-examples.md
+    - name: Sortieren von Ergebnissen mit Entitätsattributen mit LINQ
+      href: order-results-entity-attributes-linq.md
+    - name: Auslagern umfangreicher Resultsets mit LINQ
+      href: page-large-result-sets-linq.md
+    - name: Verwenden von Entitätsklassen mit später Bindung mit einer LINQ-Abfrage
+      href: use-late-bound-entity-class-linq-query.md
+    - name: Verwenden von LINQ zum Erstellen einer Abfrage
+      href: use-linq-construct-query.md
+- name: Erkennen von duplizierten Daten
+  href: detect-duplicate-data.md
+- name: Generieren von Klassen für die Programmierung mit früher Bindung
+  href: generate-early-bound-classes.md
+  items:
+    - name: Erstellen von Erweiterungen für das Tool zur Codegenerierung
+      href: extend-code-generation-tool.md
+- name: Arbeiten mit Metadaten
+  href: work-with-metadata.md
+  items:
+    - name: Erstellen einer benutzerdefinierten Entität
+      href: create-custom-entity.md
+    - name: Arbeiten mit Attributmetadaten
+      href: metadata-attributemetadata.md
+    - name: 'Einfügen, Aktualisieren, Löschen und Anordnen von globalen Optionssatzoptionen'
+      href: metadata-global-option-set-options.md
+    - name: Anpassen von Optionssätzen
+      href: metadata-option-sets.md
+    - name: Erstellen und Abrufen von Entitätsbeziehungen
+      href: metadata-relationshipmetadata.md
+    - name: Abrufen und Erkennen von Änderungen an Metadaten
+      href: metadata-retrieve-detect-changes.md
+    - name: 'Abrufen, Aktualisieren und Löschen von Entitäten'
+      href: metadata-retrieve-update-delete-entities.md
+    - name: Erstellen einer Entität zum Senden von E-Mail-Aktivitäten
+      href: create-update-entity-emailed.md
+- name: Importieren von Daten
+  href: ../import-data.md
+- name: Beispieldaten
+  href: ../sample-data.md
+- name: Praktiken zur Codeerstellung
+  items:
+    - name: Behandeln von Ausnahmen in Ihrem Code
+      href: handle-exceptions-code.md
+    - name: Webdienst-Fehlercodes
+      href: web-service-error-codes.md
+- name: Beispiele
+  href: samples/toc.yml

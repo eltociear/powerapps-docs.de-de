@@ -1,0 +1,14 @@
+- name: Anwenden von Geschäftslogik mithilfe von Code
+  href: ../apply-business-logic-with-code.md
+- name: Workflowerweiterungen
+  href: workflow-extensions.md
+- name: Debuggen von Workflowaktivitäten
+  href: debug-workflow-activites.md
+- name: 'Lernprogramm: Erstellen einer Workflowerweiterung'
+  href: tutorial-create-workflow-extension.md
+- name: 'Beispiel: Erstellen einer benutzerdefinierten Workflowaktivität'
+  href: sample-create-custom-workflow-activity.md
+- name: 'Beispiel: Aktualisieren des nächsten Geburtstags mit einer benutzerdefinierten Workflowaktivität'
+  href: sample-update-next-birthday-using-custom-workflow-activity.md
+- name: 'Beispiel: Berechnen einer Kreditwürdigkeit mit einer benutzerdefinierten Workflowaktivität'
+  href: sample-calculate-credit-score-custom-workflow-activity.md
