@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63320995"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Filter-, Search- und LookUp-Funktionen in PowerApps
 Sucht nach einem oder mehreren [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md).
@@ -78,7 +78,7 @@ Die folgenden Beispiele verwenden die **IceCream**-[Datenquelle](../working-with
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |Sucht einen Datensatz, bei dem **Flavor** „chocolate“ entspricht. Hierzu gibt es einen passenden Datensatz.  Für den ersten gefundenen Datensatz wird die **Quantity** dieses Datensatzes zurückgegeben. |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |Sucht einen Datensatz mit **Quantity** größer als 100, von denen es mehrere gibt.  Für den ersten gefundenen Datensatz, welcher „Vanilla“-**Flavor** ist, wird die Summe der Spalten **Quantity** und **OnOrder** zurückgegeben. |250 |
 | **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |Sucht einen Datensatz, bei dem **Flavor** „Pistachio“ entspricht. Hierzu gibt es keinen passenden Datensatz.  Deswegen gibt **LookUp** *blank* zurück. |*blank* |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |Sucht einen Datensatz, bei dem **Flavor** „Vanilla“ entspricht. Hierzu gibt es einen passenden Datensatz.  Da keine Reduzierformel angegeben wurde, wird der gesamte Datensatz zurückgegeben. |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |Sucht einen Datensatz, bei dem **Flavor** „Vanilla“ entspricht. Hierzu gibt es einen passenden Datensatz.  Da keine Reduzierformel angegeben wurde, wird der gesamte Datensatz zurückgegeben. |{Geschmacksrichtung: "Einfaches", Menge: 200, OnOrder: 75 } |
 
 ### <a name="search-user-experience"></a>Benutzererfahrung beim Durchsuchen
 In vielen Apps können Sie ein oder mehrere Zeichen in ein Suchfeld eingeben, um eine gefilterte Liste mit Datensätzen aus einem großen Datenbestand zu erzeugen. Bei der Eingabe zeigt die Liste nur die Datensätze, die den Suchkriterien entsprechen.
@@ -89,7 +89,7 @@ Die nachfolgenden Beispiele zeigen Ergebnisse der Suche in einer Liste namens **
 
 Erstellen Sie ein **[Button](../controls/control-button.md)**-Steuerelement, und legen Sie dessen **OnSelect**-Eigenschaft auf folgende Formel fest, um diese Datenquelle als Sammlung zu erstellen:
 
-**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
+**ClearCollect (Customers-Tabelle ({Name: "Fred Garcia", Unternehmen: "Northwind Traders"} {Name: "Cole Miller", Unternehmen: "Contoso"} {Name: "Glenda Johnson", Unternehmen: "Contoso"} {Name: "Mike Collins", Unternehmen: "Adventure Works"}, {Name: "Colleen Jones" Unternehmen: "Adventure Works" } ) )**
 
 Sie können wie in diesem Beispiel eine Datensatzliste in einem [**Katalogsteuerelement**](../controls/control-gallery.md) am unteren Rand des Bildschirms anzeigen. Fügen Sie im oberen Bereich des Bildschirms ein [**Texteingabe**](../controls/control-text-input.md)-Steuerelement mit dem Namen **SearchInput** ein, sodass Benutzer angeben können, welche Datensätze für sie relevant sind.
 

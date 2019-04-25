@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b70026e84eb7dfee67583abe26665bf78a566b76
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321040"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>Die Funktionen „DateAdd“, „DateDiff“ und „TimeZoneOffset“ in PowerApps
 Dienen zum Hinzufügen zu oder Auffinden des Unterschiedes bei Datum-/Uhrzeit-Werten und Konvertieren zwischen Ortszeit und UTC.
@@ -41,13 +41,13 @@ Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten m
 
 * *DatumUhrzeit*: erforderlich. Der zu verarbeitende Datum/Uhrzeit-Wert
 * *Addition*: erforderlich. Die *DateTime* hinzuzufügende Anzahl in *Einheiten*.
-* *Einheiten*: optional. Mögliche Typen von *Einheiten* sind **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**, **Quartale** oder **Jahre**.  Wenn nicht angegeben, werden **Tage** verwendet.
+* *Einheiten*: optional. Der Typ des *Einheiten* hinzufügen: **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**,  **Quartale**, oder **Jahre**.  Wenn nicht angegeben, werden **Tage** verwendet.
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *AnfangDatumUhrzeit*: erforderlich. Der Anfangs-Datum/Uhrzeit-Wert
 * *EndeDatumUhrzeit*: erforderlich. Der End-Datum/Uhrzeit-Wert
-* *Einheiten*: optional. Mögliche Typen von *Einheiten* sind **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**, **Quartale** oder **Jahre**.  Wenn nicht angegeben, werden **Tage** verwendet.
+* *Einheiten*: optional. Der Typ des *Einheiten* hinzufügen: **Millisekunden**, **Sekunden**, **Minuten**, **Stunden**, **Tage**, **Monate**,  **Quartale**, oder **Jahre**.  Wenn nicht angegeben, werden **Tage** verwendet.
 
 **TimeZoneOffset**( [ *DateTime* ] )
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59098044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318101"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Grundlagen der Delegierung in einer Canvas-App
 PowerApps umfasst eine leistungsfähige Sammlung von Funktionen für Filterung, Sortierung und Strukturierung von Tabellen mit Daten in einer Canvas-app: **[Filter](functions/function-filter-lookup.md)**,  **[Sortierreihenfolge](functions/function-sort.md)**, und **[AddColumns](functions/function-table-shaping.md)** Funktionen, um nur einige zu nennen. Mit diesen Funktionen können Sie für Ihre Benutzer den genauen Zugriff auf die benötigten Informationen bereitstellen. Für Leser mit Datenbankkenntnissen: Die Verwendung dieser Funktionen entspricht dem Schreiben einer Datenbankabfrage.

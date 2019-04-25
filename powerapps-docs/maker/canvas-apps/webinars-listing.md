@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42845336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321634"
 ---
 # <a name="powerapps-webinar-listing"></a>Liste der PowerApps-Webinare #
 Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von Microsoft PowerApps helfen. Webinare sind nach der Liveübertragung auf Anforderung verfügbar. Beachten Sie, dass Sie die Registrierungsinformationen ggf. erneut eingeben müssen. Anschließend erhalten Sie per E-Mail einen Link zu der Aufzeichnung. 
@@ -70,7 +70,7 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 **PowerApps Administration | Frequently Asked Questions (PowerApps-Verwaltung | Häufig gestellte Fragen)**
 <br>von Manas Maheshwari [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**Inside the Universal Audit App: See what PowerApps and Flow are capable of – Paul Culmsee (Einblick in die „Universal Audit App“: Potenzial von PowerApps und Flow – Paul Culmsee)**
+**In der Universal Audit App: Welche PowerApps und Flow von Paul Culmsee sind finden Sie unter**
 <br>von Paul Culmsee [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>Webinarreihe für Fortgeschrittene ##
@@ -108,7 +108,7 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 **The Power of Office Graph with PowerApps (Das Potenzial von Office Graph mit PowerApps)**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-**Working with Connectors: Project Online (PWA) (Arbeiten mit Connectors: Project Online (PWA))**
+**Arbeiten mit Connectors: Project Online (PWA)**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>Webinarreihe zu SharePoint ##
@@ -150,5 +150,5 @@ Diese Webinare können Ihnen bei der Verwendung der Features und Funktionen von 
 **Building Dialogs or Pop-up Messages in PowerApps (Erstellen von Dialogfeldern und Popupmeldungen)**
 <br>von Veronica Ward [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**Look behind the curtain with one of the PowerApps Developers - A closer look at templates: Marie Hoeger (Blick hinter die Kulissen mit einem der PowerApps-Entwickler – Eine eingehendere Betrachtung von Vorlagen: Marie Hoeger)**
+**Blick hinter die Kulissen mit einem der PowerApp-Entwickler – eine genauere Betrachtung von Vorlagen: Marie Hoeger**
 <br>von Audrie Gordon [Jetzt ansehen](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

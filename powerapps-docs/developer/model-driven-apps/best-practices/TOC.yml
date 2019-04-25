@@ -1,21 +1,14 @@
-items:
 - name: Best Practices und Handlungsempfehlungen für modellgesteuerte Apps
   href: index.md
   items:
-  - name: Anwenden von Geschäftslogik durch Erstellen von Clientskripts
-    href: business-logic/index.md
-    items:
-    - name: Vermeiden von „window.top“
-      href: business-logic/avoid-window-top.md
-    - name: Erwägen Sie, NavBar zu deaktivieren, wenn Sie Entitätsformulare oder -ansichten programmgesteuert öffnen.
-      href: business-logic/consider-disabling-navbar-programmatically-opening-entity-forms-views.md
-    - name: Asynchrone Interaktion mit HTTP- und HTTPS-Ressourcen
-      href: business-logic/interact-http-https-resources-asynchronously.md
-    - name: Entfernen von deaktivierten Anpassungen
-      href: business-logic/remove-deactivated-disabled-configurations.md
-ms.openlocfilehash: 0602b8fc8f4783d44ddbd7eeb05c24fc3ec1eec6
-ms.sourcegitcommit: 44ca0a386fce0c4a18310b515a4880065942dd05
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537871"
+    - name: Anwenden von Geschäftslogik durch Erstellen von Clientskripts
+      href: business-logic/index.md
+      items:
+        - name: Vermeiden von „window.top“
+          href: business-logic/avoid-window-top.md
+        - name: 'Erwägen Sie, NavBar zu deaktivieren, wenn Sie Entitätsformulare oder -ansichten programmgesteuert öffnen.'
+          href: business-logic/consider-disabling-navbar-programmatically-opening-entity-forms-views.md
+        - name: Asynchrone Interaktion mit HTTP- und HTTPS-Ressourcen
+          href: business-logic/interact-http-https-resources-asynchronously.md
+        - name: Entfernen von deaktivierten Anpassungen
+          href: business-logic/remove-deactivated-disabled-configurations.md

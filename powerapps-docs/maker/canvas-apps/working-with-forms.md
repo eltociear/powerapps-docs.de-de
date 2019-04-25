@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 661f6710c8cec55868ccc9d67d0f83dd230f89c1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318243"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Grundlegendes zu Canvas-App-Formularen in Microsoft PowerApps
 
@@ -334,7 +334,7 @@ Bisher wurde noch nicht über zwei Steuerelemente oben im Bildschirm zum Durchsu
 
 ![Sortieren und Durchsuchen von Steuerelementen auf dem Bildschirm zum Durchsuchen](./media/working-with-forms/afd-browse-search-sort.png)
 
-Wenn der Benutzer auf die Sortierschaltfläche klickt, wird die Sortierreihenfolge des Katalogs umgekehrt. Um dieses Verhalten hervorzurufen, verwenden wir eine *Kontextvariable*, um die Richtung zu verfolgen, in der der Katalog sortiert wird. Wenn der Benutzer diese Schaltfläche auswählt, wird die Variable aktualisiert und die Richtung umgekehrt. Die **[OnSelect](controls/properties-core.md)**-Eigenschaft der Sortierschaltfläche wird auf diese Formel festgelegt: **UpdateContext( {SortDescending1: !SortDescending1} )**
+Wenn der Benutzer auf die Sortierschaltfläche klickt, wird die Sortierreihenfolge des Katalogs umgekehrt. Um dieses Verhalten hervorzurufen, verwenden wir eine *Kontextvariable*, um die Richtung zu verfolgen, in der der Katalog sortiert wird. Wenn der Benutzer diese Schaltfläche auswählt, wird die Variable aktualisiert und die Richtung umgekehrt. Die **[OnSelect](controls/properties-core.md)** -Eigenschaft der Sortierschaltfläche wird auf diese Formel festgelegt: **UpdateContext( {SortDescending1: !SortDescending1} )**
 
 Die **[UpdateContext](functions/function-updatecontext.md)**-Funktion erstellt die **SortDescending1**-Kontextvariable, wenn sie nicht bereits vorhanden ist. Die Funktion liest den Wert der Variablen und legt diesen mithilfe des **!**-Operators auf das logische Gegenteil fest. Wenn der Wert *TRUE* lautet, entspricht die Variable *FALSE*. Wenn der Wert *FALSE* lautet, entspricht die Variable *TRUE*.
 

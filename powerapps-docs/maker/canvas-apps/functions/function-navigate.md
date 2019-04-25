@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/08/2015
+ms.date: 04/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f0bd11881dc0999cada58f65d7ed8d7f9df68c5a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 0033d0a2d7473e6aaeac1e8533f62873e0d2f49a
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562782"
+ms.locfileid: "63321959"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 Ändern, welcher Bildschirm angezeigt wird
@@ -39,12 +39,14 @@ Geben Sie im ersten Argument den Namen des Bildschirms an, der angezeigt werden 
 
  Geben Sie im zweiten Argument an, wie der alte Bildschirm auf den neuen Bildschirm wechselt:
 
-| „Transition“-Argument | Beschreibung |
-| --- | --- |
-| **ScreenTransition.Cover** |Der neue Bildschirm gleitet in die Ansicht und deckt dabei den aktuellen Bildschirm ab. |
-| **ScreenTransition.Fade** |Der alte Bildschirm wird ausgeblendet, um den neuen Bildschirm anzuzeigen. |
-| **ScreenTransition.None** |Der alte Bildschirm wird schnell durch den neuen Bildschirm ersetzt. |
-| **ScreenTransition.UnCover** |Der alte Bildschirm gleitet aus der Ansicht und löst dabei die Abdeckung des neuen Bildschirms. |
+| „Transition“-Argument | Beschreibung | Demo |
+| --- | --- | --- |
+| **ScreenTransition.Cover** |Der neue Bildschirm gleitet in die Ansicht, Verschieben von rechts nach links, um den aktuellen Bildschirm abdeckt. | ![Bildschirm Cover übergangsanimation](media/function-navigate/cover.gif) |
+| **ScreenTransition.CoverRight** |Der neue Bildschirm Folien in der Ansicht, die Verschieben von links nach rechts, um den aktuellen Bildschirm abdeckt. | ![Bildschirm Cover rechten übergangsanimation](media/function-navigate/coverright.gif) |
+| **ScreenTransition.Fade** |Der aktuelle Bildschirm wird ausgeblendet entfernt, um den neuen Bildschirm anzuzeigen. | ![Animation zum Ausblenden von Bildschirm Übergang](media/function-navigate/fade.gif) |
+| **ScreenTransition.None** (Standard) |Der neue Bildschirm wird schnell im aktuellen Fenster ersetzt. | ![Bildschirm Übergang keine Animation](media/function-navigate/none.gif) |
+| **ScreenTransition.UnCover** | Der aktuelle Bildschirm wird ausgeblendet, Verschieben von rechts nach links, um den neuen Bildschirm zu gewinnen. | ![Bildschirmübergang aufdecken animation](media/function-navigate/uncover.gif) |
+| **ScreenTransition.UnCoverRight** | Die aktuellen Bildschirm Folien aus der Sicht, die Verschieben von links nach rechts, um den neuen Bildschirm zu gewinnen. | ![Bildschirmübergang nach rechts Animation aufdecken.](media/function-navigate/uncoverright.gif) |
 
 Sie können **Navigate** verwenden, um Kontextvariablen des neuen Bildschirms zu erstellen oder zu aktualisieren. Als optionales drittes Argument übergeben Sie einen [Datensatz](../working-with-tables.md#records), der den Kontextvariablennamen als [Spaltennamen](../working-with-tables.md#columns) sowie den neuen Wert für die Kontextvariable enthält.  Dieser Datensatz ist identisch mit dem Datensatz, den Sie mit der **[UpdateContext](function-updatecontext.md)**-Funktion verwenden.
 
@@ -57,17 +59,17 @@ Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-for
 ## <a name="syntax"></a>Syntax
 **Back**()
 
-**Navigate**( *Bildschirm*, *Übergang* [, *Kontextaktualisierungs-Datensatz* ] )
+**Navigieren Sie**( *Bildschirm* [, *Übergang* [, *kontextaktualisierungs-Datensatz* ]])
 
 * *Bildschirm*: Erforderlich. Der anzuzeigende Bildschirm.
-* *Übergang*: Erforderlich.  Der visuelle Übergang, der zwischen dem aktuellen Bildschirm und dem nächsten Bildschirm verwendet werden soll. Weitere Informationen finden Sie in der Liste der gültigen Werte für dieses Argument weiter oben in diesem Thema.
+* *Übergang* : Optional.  Der visuelle Übergang, der zwischen dem aktuellen Bildschirm und dem nächsten Bildschirm verwendet werden soll. Weitere Informationen finden Sie in der Liste der gültigen Werte für dieses Argument weiter oben in diesem Thema. Der Standardwert ist **keine**.
 * *Kontextaktualisierungs-Datensatz*: Optional.  Ein Datensatz, der den Namen mindestens einer Spalte und einen Wert für jede Spalte enthält. Dieser Datensatz aktualisiert die Kontextvariablen des neuen Bildschirms wie bei der Übergabe an die **[UpdateContext](function-updatecontext.md)**-Funktion.
 
 ## <a name="examples"></a>Beispiele
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Navigate( Details, ScreenTransition.None )** |Zeigt den **Detailbildschirm** ohne Übergang oder Änderung des Werts einer Kontextvariablen an. |Der **Detailbildschirm** erscheint schnell. |
+| **Navigate( Details )** |Zeigt den **Detailbildschirm** ohne Übergang oder Änderung des Werts einer Kontextvariablen an. |Der **Detailbildschirm** erscheint schnell. |
 | **Navigate( Details, ScreenTransition.Fade )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an.  Kein Wert einer Kontextvariablen wird geändert. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. |
 | **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an und aktualisiert den Wert der Kontextvariable **ID** auf **12**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen, und die Kontextvariable **ID** auf diesem Bildschirm wird auf **12** festgelegt. |
 | **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an. Aktualisiert den Wert der Kontextvariable **ID** auf **12** und aktualisiert den Wert der Kontextvariable **Shade** auf **Color.Red**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. Die Kontextvariable **ID** auf dem **Detailbildschirm** wird auf **12** festgelegt, und die Kontextvariable **Shade** wird auf **Color.Red** festgelegt. Wenn Sie die **Fill**-Eigenschaft eines Steuerelements auf dem **Detailbildschirm** auf **Shade** festlegen, würde dieses Steuerelement rot angezeigt werden. |
@@ -77,7 +79,7 @@ Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-for
 2. Fügen Sie einen Bildschirm hinzu, und nennen Sie diesen **AddlScreen**.
 3. Fügen Sie eine Bezeichnung zu **AddlScreen** hinzu, und legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft der Bezeichnung so fest, dass diese **Addl** anzeigt.
 4. Fügen Sie eine Schaltfläche zu **AddlScreen** hinzu, und legen Sie ihre **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>**Navigate(DefaultScreen, ScreenTransition.Fade)**
-5. Drücken Sie von **AddlScreen** aus auf F5, und wählen Sie anschließend die Schaltfläche aus.<br>**DefaultScreen** wird angezeigt.
+5. Drücken Sie von **AddlScreen** aus auf F5, und wählen Sie anschließend die Schaltfläche aus.<br>**DefaultScreen** über einem ausblendübergang angezeigt wird.
 
 [Ein weiteres Beispiel](../add-screen-context-variables.md)
 

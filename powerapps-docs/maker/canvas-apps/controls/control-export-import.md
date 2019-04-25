@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b78f88941fce85b9e63427635cb946f944aa120a
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63319954"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Export-Steuerelement und Import-Steuerelement in PowerApps
 Steuerelemente zum Exportieren von Daten in eine lokale Datei und anschließenden Importieren dieser Daten in eine andere App in PowerApps.
@@ -29,7 +29,7 @@ Wenn Sie mehrere Apps erstellen möchten, die die gleichen Daten verwenden, dies
 ## <a name="warning"></a>Warnung
 Das Aktivieren dieser Funktion in Ihrer App kann Sicherheitslücken und Datenlecks verursachen.  Sie sollten die Benutzer anweisen, nur bekannte und vertrauenswürdige Dateien zu importieren und nur Daten zu exportieren, die nicht vertraulich oder sensibel sind.
 
-## <a name="limitations"></a>Beschränkungen
+## <a name="limitations"></a>Einschränkungen
 Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 
 ## <a name="key-properties"></a>Haupteigenschaften
@@ -66,7 +66,7 @@ Die Exportfunktion wird in Webbrowsern nicht unterstützt.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
+**[FontWeight](properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
