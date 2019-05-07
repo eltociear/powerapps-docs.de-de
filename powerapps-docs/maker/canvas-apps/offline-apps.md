@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61538367"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Entwickeln von offlinefähigen Canvas-Apps
 
@@ -82,15 +83,15 @@ Allgemein betrachtet, führt die App die folgenden Funktionen aus:
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Schritt 3: Laden von Tweets in eine LocalTweets-Sammlung beim Start der app
 Wählen Sie in der App die **OnVisible**-Eigenschaft für **Screen1** aus, und kopieren Sie die folgende Formel:
 
-```powerapps-dot
-If( Connection.Connected,
-    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
-        UpdateContext( {statusText: "Online data"} ),
-    LoadData(LocalTweets, "Tweets", true);
+```powerapps-comma
+If( Connection.Connected;
+    ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
+        UpdateContext( {statusText: "Online data"} );
+    LoadData(LocalTweets; "Tweets"; true);;
         UpdateContext( {statusText: "Local data"} )
-);
-LoadData( LocalTweetsToPost, "LocalTweets", true );
-SaveData( LocalTweets, "Tweets" )
+);;
+LoadData( LocalTweetsToPost; "LocalTweets"; true );;
+SaveData( LocalTweets; "Tweets" )
 ```
 
 ![Formel zum Laden von Tweets](./media/offline-apps/load-tweets.png)
@@ -110,13 +111,13 @@ Diese Formel überprüft, ob das Gerät online ist:
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " \@" & ThisItem.UserDetails.UserName**
    * **"RT: " & ThisItem.RetweetCount**
-   * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
+   * **Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)**
 4. Fügen Sie ein **Image**-Steuerelement hinzu, und legen Sie die **Image**-Eigenschaft auf **ThisItem.UserDetails.ProfileImageUrl** fest.
 
 ### <a name="step-5-add-a-connection-status-label"></a>Schritt 5: Hinzufügen einer verbindungsstatusbezeichnung
 Fügen Sie ein neues **Label**-Steuerelement hinzu, und legen Sie dessen Eigenschaft **Text** auf die folgende Formel fest:
 
-```If( Connection.Connected, "Connected", "Offline" )```
+```If( Connection.Connected; "Connected"; "Offline" )```
 
 Diese Formel überprüft, ob das Gerät online ist. Wenn dies der Fall ist, lautet der Text der Bezeichnung „Verbunden“, andernfalls „Offline“.
 
@@ -130,13 +131,13 @@ Diese Formel überprüft, ob das Gerät online ist. Wenn dies der Fall ist, laut
 1. Fügen Sie ein **Button**-Steuerelement hinzu, und legen Sie die Eigenschaft **Text** auf „Tweet“ fest.
 2. Legen Sie die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
-    );
-    UpdateContext( {resetNewTweet: true} );
+    ```powerapps-comma
+    If( Connection.Connected;
+        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
+    );;
+    UpdateContext( {resetNewTweet: true} );;
     UpdateContext( {resetNewTweet: false} )
     ```  
 
@@ -156,12 +157,12 @@ Fügen Sie ein neues **Timer**-Steuerelement hinzu:
 
 * Legen Sie **OnTimerEnd** auf die folgende Formel fest:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
-        Clear( LocalTweetsToPost);
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+    ```powerapps-comma
+    If( Connection.Connected;
+        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
+        Clear( LocalTweetsToPost);;
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+        SaveData( LocalTweetsToPost; "LocalTweetsToPost" );;
         UpdateContext( {statusText: "Online data"} )
     )
     ```

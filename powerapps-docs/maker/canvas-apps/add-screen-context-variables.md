@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321383"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>Hinzufügen eines Bildschirms in eine Canvas-App und Wechseln zwischen Bildschirmen
 
@@ -65,7 +66,7 @@ Zeigen Sie in der linken Navigationsleiste auf einen Bildschirm, den Sie verwend
 
 4. Fügen Sie im Bildschirm **Target** einen **Pfeil „Zurück“** hinzu, und legen Sie dessen **[OnSelect](controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:
 
-    `Navigate(Source, ScreenTransition.Fade)`
+    `Navigate(Source; ScreenTransition.Fade)`
 
 5. Während Sie die Alt-Taste gedrückt halten, wechseln Sie zwischen den Bildschirmen, indem Sie den Pfeil auf den einzelnen Bildschirmen auswählen.
 

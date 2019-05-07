@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61539211"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Übersicht über die e-Mail-Bildschirmvorlage für Canvas-apps
 
@@ -86,10 +87,10 @@ Dadurch können Benutzer ein einzelnes Image mit ihrer e-Mail-Adresse als Anlage
    Dies verhindert, dass das Steuerelement Waren vor der **PeopleBrowseGallery** Steuerelement.
 1. Ändern der **Höhe** Eigenschaft **EmailPeopleGallery** auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
         304
     )
     ```
@@ -102,31 +103,31 @@ Dadurch können Benutzer ein einzelnes Image mit ihrer e-Mail-Adresse als Anlage
     
 1. Ändern der **OnSelect** Eigenschaft der **IconMail** -Steuerelements auf diese Formel:
 
-    ```powerapps-dot
-    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
-    If( IsBlank( UploadedImage1 ),
-        'Office365'.SendEmail( _emailRecipientString, 
-            TextEmailSubject1.Text, 
-            TextEmailMessage1.Text, 
+    ```powerapps-comma
+    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
+    If( IsBlank( UploadedImage1 );
+        'Office365'.SendEmail( _emailRecipientString; 
+            TextEmailSubject1.Text; 
+            TextEmailMessage1.Text; 
             { Importance: "Normal" }
-        ),
-        'Office365'.SendEmail( _emailRecipientString, 
-            TextEmailSubject1.Text, 
-            TextEmailMessage1.Text, 
+        );
+        'Office365'.SendEmail( _emailRecipientString; 
+            TextEmailSubject1.Text; 
+            TextEmailMessage1.Text; 
             {
-                Importance: "Normal",
+                Importance: "Normal";
                 Attachments: Table(
                     {
-                        Name: "Image.jpg", 
+                        Name: "Image.jpg"; 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );
-    Reset( TextEmailSubject1 );
-    Reset( TextEmailMessage1 );
-    Reset( AddMediaButton1 );
+    );;
+    Reset( TextEmailSubject1 );;
+    Reset( TextEmailMessage1 );;
+    Reset( AddMediaButton1 );;
     Clear( MyPeople )
     ```
     

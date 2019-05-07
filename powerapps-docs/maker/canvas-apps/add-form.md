@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321445"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Anzeigen, bearbeiten oder Hinzufügen eines Eintrags in einer Canvas-app
 
@@ -56,7 +57,7 @@ In einer Canvas-app hinzufügen und Konfigurieren einer **[Anzeige](controls/con
 
 1. Festlegen des Formulars **[DataSource](controls/control-form-detail.md)** Eigenschaft **FlooringEstimates** und die zugehörige **[Element](controls/control-form-detail.md)** Eigenschaft Diese Formel:
 
-    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates; Name=ChooseProduct.Selected.Value))`
 
    Mit dieser Formel wird angegeben, dass im Formular nach abgeschlossener Konfiguration der Datensatz angezeigt wird, den der Benutzer in **ChooseProduct** auswählt.
 

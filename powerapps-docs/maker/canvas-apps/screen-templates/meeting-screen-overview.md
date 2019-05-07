@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61535968"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Übersicht über die Besprechung Bildschirmvorlage für Canvas-apps
 
@@ -58,10 +59,10 @@ Einige hilfreiche Hinweise:
 * Um eine Besprechung zu erstellen, Sie müssen mindestens einer Person als Teilnehmer hinzufügen, geben Sie einen Betreff, und wählen einen Zeitpunkt in der **Zeitplan** Registerkarte.
 * Nachdem Sie die Anfrage zu senden, wird alle zugehörigen Informationen gelöscht.
 * Die **OnSelect** -Anweisung von Symbol "Senden" (in der oberen rechten Ecke), enthält diese Formel:
-    ```powerapps-dot
-    Set( _myCalendarName, 
-        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
-    );
+    ```powerapps-comma
+    Set( _myCalendarName; 
+        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
+    );;
     ```
 * "Kalender" ist der standardmäßige Anzeigename für die meisten Office Kalender des Benutzers Ihrer Organisation kann sich unterscheiden. Wenn dies der Fall ist, können Sie "Kalender" auf den entsprechenden Begriff für Ihre Organisation bieten ändern.
 * Sie erhalten eine Fehlermeldung, wenn Sie versuchen, eine Besprechung zu planen, die in der Vergangenheit liegt oder Hinzufügen von mehr als 20 Mitarbeitern zu einer Besprechung.

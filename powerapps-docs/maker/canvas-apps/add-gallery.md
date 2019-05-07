@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61528029"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
 
@@ -98,20 +99,20 @@ Die **[Items](controls/properties-core.md)**-Eigenschaft eines **Katalog**-Steue
 
 1. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft des **Katalog**-Steuerelements auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text),
-            FlooringEstimates,
+            (IsBlank(TextSearchBox1.Text);
+            FlooringEstimates;
             Filter(
-                FlooringEstimates,
+                FlooringEstimates;
                 TextSearchBox1.Text in Text(Name)
             )
-        ),
-        Name,
+        );
+        Name;
         If(
-            SortDescending1,
-            SortOrder.Descending,
+            SortDescending1;
+            SortOrder.Descending;
             SortOrder.Ascending
         )
     )
@@ -130,16 +131,16 @@ Die **[Items](controls/properties-core.md)**-Eigenschaft eines **Katalog**-Steue
 ## <a name="highlight-the-selected-item"></a>Hervorheben des ausgewählten Elements
 Legen Sie die **Katalog** des Steuerelements **TemplateFill** Eigenschaft, um eine Formel, die wie in diesem Beispiel, aber Sie können verschiedene Farben geben, wenn Sie möchten:
 
-**If(ThisItem.IsSelected, LightCyan, White)**
+**If(ThisItem.IsSelected; LightCyan; White)**
 
 ## <a name="change-the-default-selection"></a>Ändern der Standardauswahl
 Legen Sie die **Default**-Eigenschaft des **Katalog**-Steuerelements auf den Datensatz fest, der standardmäßig ausgewählt sein soll. Sie können beispielsweise angeben, das fünfte Element in der **FlooringEstimates** Datenquelle:
 
-**Last(FirstN(FlooringEstimates, 5))**
+**Last(FirstN(FlooringEstimates; 5))**
 
 In diesem Beispiel geben Sie das erste Element in der Kategorie **Hardwood** der Datenquelle **FlooringEstimates** an:
 
-**First(Filter(FlooringEstimates, Category = "Hardwood"))**
+**First(Filter(FlooringEstimates; Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zum Arbeiten mit [Formularen](working-with-forms.md) und [Formeln](working-with-formulas.md).

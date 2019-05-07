@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548729"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="screen-control-in-powerapps"></a>Bildschirm-Steuerelement in PowerApps
 
@@ -61,13 +62,13 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 
 1. Fügen Sie ein **[Optionsfeld](control-radio.md)**-Steuerelement hinzu, nennen Sie es **ScreenFills**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgenden Wert fest:
 
-    `["Red", "Green"]`
+    `["Red"; "Green"]`
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -75,17 +76,17 @@ Die meisten Apps verfügen über mehrere **Bildschirm**-Steuerelemente, die **[B
 
 1. In **Quelle**, Hinzufügen einer **[Form](control-shapes-icons.md)** steuern (z.B. einen Pfeil), und legen dessen **[OnSelect](properties-core.md)** Eigenschaft Diese Formel:
 
-    `Navigate(Target, ScreenTransition.Fade)`
+    `Navigate(Target; ScreenTransition.Fade)`
 
     Benötigen Sie weitere Informationen zur **[Navigate](../functions/function-navigate.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
 1. Fügen Sie in **Target** ein **[Shape](control-shapes-icons.md)**-Steuerelement hinzu (z.B. einen Pfeil), und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:
 
-    `Navigate(Source, ScreenTransition.Fade)`
+    `Navigate(Source; ScreenTransition.Fade)`
 
 1. Legen Sie die **[Fill](properties-color-border.md)**-Eigenschaft von **Target** auf diese Formel fest:
 
-    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
+    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
 
 1. Wählen Sie die **Quelle** und klicken Sie dann, während Sie die Alt-Taste gedrückt halten, wählen Sie eine der Optionen im der **[Radio](control-radio.md)** steuern, und wählen Sie dann die **[Form](control-shapes-icons.md)** Steuerelement.
 

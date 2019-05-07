@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559661"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="char-function-in-powerapps"></a>Funktion „Char“ in PowerApps
 
@@ -46,7 +47,7 @@ Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entspr
 
 1. Auf einem leeren Bildschirm in eine Tablet-app hinzufügen eine [ **Katalog** ](../controls/control-gallery.md) steuern Sie mit einer **leere horizontale** Layout, und legen Sie diese Eigenschaften:
 
-    - **Elemente**: `[0,1,2,3,4,5,6,7]`
+    - **Elemente**: `[0;1;2;3;4;5;6;7]`
     - **Width**: 800
     - **Höhe**: 500
     - **TemplateSize**: 100
@@ -54,7 +55,7 @@ Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entspr
 
 1. Fügen Sie diesen Katalog, eine **Katalog** steuern Sie mit einer **leere vertikale** Layout, und legen Sie diese Eigenschaften:
 
-    - **Elemente**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
+    - **Elemente**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
     - **Width**: 100
     - **Höhe**: 500
     - **TemplateSize**: 30
@@ -79,7 +80,7 @@ Sie haben ein Diagramm mit den ersten 128 ASCII-Zeichen erstellt. Zeichen, die a
 
 Um die erweiterten ASCII-Zeichen anzuzeigen, legen die **Elemente** -Eigenschaft des zweiten Katalogs auf diese Formel, die jeder Zeichenwert 128 hinzufügt:
 
-`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
 
 ![Erweiterte ASCII-Zeichen](media/function-char/chart-higher.png)
 

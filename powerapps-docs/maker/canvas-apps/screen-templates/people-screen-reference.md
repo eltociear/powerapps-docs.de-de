@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61540689"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Referenzinformationen zu den Personen Bildschirmvorlage für Canvas-apps
 
@@ -50,11 +51,11 @@ Einige andere Steuerelemente interagieren oder eine Abhängigkeit für das Textf
 * Eigenschaft: **Elemente**<br>
     Wert: Die Logik, um Benutzer zu suchen, wenn der Benutzer mit der Eingabe beginnt:
     
-    ```powerapps-dot
-    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
+    ```powerapps-comma
+    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ), 
+                searchTerm: Trim( TextSearchBox.Text ); 
                 top: 15
             }
         )
@@ -76,12 +77,12 @@ Die `Office365Users.SearchUser` Vorgang innerhalb einer `If(!IsBlank(Trim(TextSe
 * Eigenschaft: **OnSelect**<br>
     Wert: Code, um den Benutzer zu einer Sammlung auf app-Ebene hinzuzufügen, und wählen Sie dann den Benutzer:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Set( _selectedUser, ThisItem ),
-        Reset( TextSearchBox ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem )
+        Set( _selectedUser; ThisItem );
+        Reset( TextSearchBox );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem )
         )
     )
     ```
@@ -98,9 +99,9 @@ Dieses Steuerelement auswählen, führt drei Aufgaben gleichzeitig:
 * Eigenschaft: **Bild**<br>
     Wert: Die Logik zum Abrufen eines Benutzers das Profilfoto.
 
-    ```powerapps-dot
+    ```powerapps-comma
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
@@ -126,7 +127,7 @@ Dies ist die Sammlung von Personen, die dazu hinzugefügt oder initialisiert die
 ![PeopleAddedGallery Titel des Steuerelements](media/people-screen/people-people-gall-title.png)
 
 * Eigenschaft: **OnSelect**<br>
-    Wert: `Set( _selectedUser, ThisItem )`
+    Wert: `Set( _selectedUser; ThisItem )`
 
 Legt die **_selectedUser** -Variable auf das Element im ausgewählten **EmailPeopleGallery**.
 
@@ -135,7 +136,7 @@ Legt die **_selectedUser** -Variable auf das Element im ausgewählten **EmailPeo
 ![PeopleAddedGallery IconRemove-Steuerelement](media/people-screen/people-people-gall-delete.png)
 
 * Eigenschaft: **OnSelect**<br>
-    Wert: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Wert: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 Sucht nach den Datensatz in die **MyPeople** Sammlung, in denen **"userPrincipalName"** entspricht der **"userPrincipalName"** ausgewählte Element, und klicken Sie dann entfernt, die von Aufzeichnen der Auflistung.
 

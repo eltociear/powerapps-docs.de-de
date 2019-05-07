@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61550442"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Testen Ihrer Canvas-App durch Kunden auf AppSource
 
@@ -59,9 +60,9 @@ Die importierten Daten sind *statisch* und daher schreibgeschützt. Wenn Ihre Ap
 
 Wenn für Ihre Daten Lese-/Schreibzugriff besteht, ziehen Sie die Daten aus den einzelnen Tabellen zuerst in eine *Sammlung*, die eine Tabellendatenstruktur in PowerApps darstellt. Arbeiten Sie dann mit der Sammlung anstelle der Tabelle. So ziehen Sie Daten aus den Tabellen **SiteInspector** und **SitePhotos** in die Sammlungen **SiteInspectorCollect** und **SitePhotosCollect**:
 
-```powerapps-dot
-ClearCollect( SiteInspectorCollect, SiteInspector ); 
-ClearCollect( SitePhotosCollect, SitePhotos )
+```powerapps-comma
+ClearCollect( SiteInspectorCollect; SiteInspector );; 
+ClearCollect( SitePhotosCollect; SitePhotos )
 ```
 
 Die Formel leert beide Sammlungen und sammelt anschließend die Daten aus den einzelnen Tabellen in der entsprechenden Sammlung:
@@ -77,12 +78,12 @@ Sie haben gesehen, wie Daten direkt und aus einer Sammlung gelesen werden; jetzt
 
 **Um einer Sammlung eine Zeile hinzuzufügen**, verwenden Sie [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-dot
-Collect( SiteInspectorCollect,
+```powerapps-comma
+Collect( SiteInspectorCollect;
     {
-        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
-        Title: TitleText.Text,
-        SubTitle: SubTitleText.Text,
+        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
+        Title: TitleText.Text;
+        SubTitle: SubTitleText.Text;
         Description: DescriptionText.Text
     }
 )
@@ -90,12 +91,12 @@ Collect( SiteInspectorCollect,
 
 **Um eine Zeile in einer Sammlung zu aktualisieren** , verwenden Sie [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-dot
-UpdateIf( SiteInspectorCollect,
-    ID = record.ID,
+```powerapps-comma
+UpdateIf( SiteInspectorCollect;
+    ID = record.ID;
     {
-        Title: TitleEditText.Text,
-        SubTitle: SubTitleEditText.Text,
+        Title: TitleEditText.Text;
+        SubTitle: SubTitleEditText.Text;
         Description: DescriptionEditText.Text
     }
 )
@@ -103,8 +104,8 @@ UpdateIf( SiteInspectorCollect,
 
 **Um eine Zeile aus einer Sammlung zu löschen**, verwenden Sie [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-dot
-RemoveIf( SiteInspectorCollect, ID = record.ID )
+```powerapps-comma
+RemoveIf( SiteInspectorCollect; ID = record.ID )
 ```
 
 > [!NOTE]

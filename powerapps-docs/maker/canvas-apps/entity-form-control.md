@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61547826"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-the-entity-form-control"></a>Verwenden des Steuerelements „Formularentität“
 Erstellen Sie Apps schneller, indem Sie das Steuerelement **Formularentität** verwenden, mit dem Sie umfangreiche Formulare für eine Common Data Service-Entität hinzufügen können.
@@ -48,12 +49,12 @@ Hier sind die wichtigsten Eigenschaften des Steuerelements **Formularentität**.
 Beispiel: Wenn die **Formularentität** Steuerelement zeigt eine Liste mit Verkaufsauftrag-Datensätzen, die **ausgewählte** Eigenschaft erhalten Sie den Datensatz, der gerade ausgewählt ist. Sie können auch auf ein Feld in einem Datensatz zugreifen. (Geben Sie z.B. für den Wert des **Account**-Felds (Konto) des ausgewählten Datensatzes **Selected.Account** an.)
 
 **SelectableFields**: Gibt an, welche Felder als Links angezeigt werden sollen. Legen Sie den Wert dieser Eigenschaft mithilfe der folgenden Syntax fest:  
-**{Field1Name : true, Field2Name : true}**  
+**{Field1Name : true; Field2Name : true}**  
 Beispiel: Wenn Sie möchten die **SalesOrderId** und **Konto** Felder als Links in einem Formular angezeigt werden die **SelectableFields** -Eigenschaft dieses Formulars auf diesen Wert:  
-**{SalesOrderId : true, Account : true}**
+**{SalesOrderId : true; Account : true}**
 
 **SelectedField**: Bestimmt, welches Feld angeklickt oder angetippt wurde. Dies gilt nur für die Felder, die als **SelectableFields** angegeben werden.  
-Beispiel: Setzen Sie die **SelectableFields** Eigenschaft, um **{SalesOrderId: "true", "Konto: true}** und der Benutzer klickt oder tippt der **Konto** Feld  **SelectedField.Account** wird festgelegt auf "true".
+Beispiel: Setzen Sie die **SelectableFields** Eigenschaft, um **{SalesOrderId: "true"; "Konto: true}** und der Benutzer klickt oder tippt der **Konto** Feld  **SelectedField.Account** wird festgelegt auf "true".
 
 **OnFieldSelect**: Gibt an, wie eine App reagiert, wenn der Benutzer auf ein Feld klickt oder tippt. Dies gilt nur für die Felder, die als **SelectableFields** angegeben werden.
 

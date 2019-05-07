@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61546579"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Collect-, Clear- und ClearCollect-Funktionen in PowerApps
 
@@ -48,7 +49,7 @@ Sie können auch die **[Patch](function-patch.md)**-Funktion für die Erstellung
 
 Die **Clear**-Funktion löscht alle Datensätze einer Sammlung.  Die Spalten der Sammlung bleiben erhalten.
 
-Beachten Sie, dass **Clear** nur bei Sammlungen und nicht bei anderen Datenquellen angewendet wird.  Für diesen Zweck können Sie **[RemoveIf](function-remove-removeif.md)( *DataSource*, TRUE)** verwenden.  Seien Sie vorsichtig, da dies alle Datensätze aus dem Speicher der Datenquelle entfernt und Auswirkungen auf andere Benutzer haben kann.
+Beachten Sie, dass **Clear** nur bei Sammlungen und nicht bei anderen Datenquellen angewendet wird.  Für diesen Zweck können Sie **[RemoveIf](function-remove-removeif.md)( *DataSource*; TRUE)** verwenden.  Seien Sie vorsichtig, da dies alle Datensätze aus dem Speicher der Datenquelle entfernt und Auswirkungen auf andere Benutzer haben kann.
 
 Sie können die **[Remove](function-remove-removeif.md)**-Funktion verwenden, um Datensätze gezielt zu entfernen.
 
@@ -62,7 +63,7 @@ Die **ClearCollect**-Funktion löscht alle Datensätze aus einer Sammlung und f�
 
 ## <a name="syntax"></a>Syntax
 
-**Collect**( *Datenquelle*, *Element*, ... )
+**Collect**( *Datenquelle*; *Element*; ... )
 
 * *Datenquelle*: Erforderlich. Die Datenquelle, in die Sie Daten hinzufügen möchten.  Wenn nicht bereits vorhanden, wird eine neue Sammlung erstellt.
 * *Element(e)*: Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
@@ -71,7 +72,7 @@ Die **ClearCollect**-Funktion löscht alle Datensätze aus einer Sammlung und f�
 
 * *Auflistung*: Erforderlich. Die Sammlung, die Sie löschen möchten.
 
-**ClearCollect**( *Auflistung*, *Element*, ... )
+**ClearCollect**( *Auflistung*; *Element*; ... )
 
 * *Auflistung*: Erforderlich. Die Sammlung, die Sie löschen und zu der Sie dann Daten hinzufügen möchten.
 * *Element(e)*: Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
@@ -86,8 +87,8 @@ In diesen Beispielen löschen und fügen Sie Daten zu einer Sammlung mit dem Nam
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Löscht alle Daten aus der Sammlung **IceCream**, und fügt anschließend einen Datensatz hinzu, der eine Menge von Erdbeereis enthält. |<style> IMG {Max-Width: none} </style> ![Tabelle mit einem Datensatz](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt zwei Datensätze zur Sammlung **IceCream** hinzu, die eine Menge von Pistazien- und Orangeneis enthält. |![Tabelle mit zwei Datensätzen](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
+| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Löscht alle Daten aus der Sammlung **IceCream**, und fügt anschließend einen Datensatz hinzu, der eine Menge von Erdbeereis enthält. |<style> IMG {Max-Width: none} </style> ![Tabelle mit einem Datensatz](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
+| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt zwei Datensätze zur Sammlung **IceCream** hinzu, die eine Menge von Pistazien- und Orangeneis enthält. |![Tabelle mit zwei Datensätzen](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
 | **Clear( IceCream )** |Entfernt alle Datensätze aus der Sammlung **IceCream**. |![Leere Tabelle](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
 
 Schrittweise Anweisungen zum Erstellen einer Sammlung, finden Sie unter [erstellen und Aktualisieren einer Sammlung](../create-update-collection.md).

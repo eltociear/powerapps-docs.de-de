@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61561619"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in eine Canvas-app
 
@@ -50,15 +51,15 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 
 1. Ersetzen Sie in der Bearbeitungsleiste **DropDownSample** mit dem folgenden Ausdruck:
 
-    `["Red","Green","Blue"]`
+    `["Red";"Green";"Blue"]`
 
 1. Hinzufügen einer **Schaltfläche** steuern, legen Sie seine **Text** Eigenschaft **"Hinzufügen"**, und legen Sie seine **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Collect(
-        ProductList,
+        ProductList;
         {
-            Product: ProductName.Text,
+            Product: ProductName.Text;
             Color: Colors.Selected.Value
         }
     )
@@ -106,7 +107,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 
 1. Legen Sie des Symbol " **OnSelect** -Eigenschaft auf diese Formel:
 
-    `Remove(ProductList, ThisItem)`
+    `Remove(ProductList; ThisItem)`
 
 1. Fügen Sie außerhalb des Katalogs, eine Schaltfläche hinzu, legen Sie seine **Text** Eigenschaft, um **"Clear"**, und legen Sie seine **OnSelect** -Eigenschaft auf diese Formel:
 
@@ -120,7 +121,7 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 
 1. Fügen Sie eine Schaltfläche hinzu, und legen Sie die folgende Funktion für die **[OnSelect](controls/properties-core.md)**-Eigenschaft fest, ersetzen Sie hierbei *ListName* durch den Namen der SharePoint-Liste:<br>
 
-    `Collect(MySPCollection, ListName)`
+    `Collect(MySPCollection; ListName)`
 
     Diese Funktion erstellt eine Sammlung namens **MySPCollection**, die die gleichen Daten wie Ihre SharePoint-Liste enthält.
 

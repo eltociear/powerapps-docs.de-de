@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61527204"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Beziehen Sie und Verknüpfung mit Funktionen in PowerApps
 
@@ -43,12 +44,12 @@ Sie können diese Funktionen nur in [verhaltensformeln](../working-with-formulas
 
 ## <a name="syntax"></a>Syntax
 
-**Relate**( *Entity1RelatedTable*, *Entity2Record* )
+**Relate**( *Entity1RelatedTable*; *Entity2Record* )
 
 * *Entity1RelatedTable* : erforderlich. Einen Datensatz der *' Entity1 '*, die Tabelle der *Entity2* Datensätze, die über eine 1: n- oder m: n Beziehung verknüpft.
 * *Entity2Record* : erforderlich. Die *Entity2* Datensatz der Beziehung hinzu.
 
-**Verknüpfung mit**( *Entity1RelatedTable*, *Entity2Record* )
+**Verknüpfung mit**( *Entity1RelatedTable*; *Entity2Record* )
 
 * *Entity1RelatedTable* : erforderlich. Einen Datensatz der *' Entity1 '*, die Tabelle der *Entity2* Datensätze, die über eine 1: n- oder m: n Beziehung verknüpft.
 * *Entity2Record* : erforderlich. Die *Entity2* Datensatz aus der Beziehung zu entfernen.
@@ -64,29 +65,29 @@ Erwägen Sie eine **Produkte** Entität mit dem die folgenden Beziehungen, wie i
 
 **Produkte** und **Reservierungen** beziehen sich über eine 1: N-Beziehung.  Verbinden Sie den ersten Datensatz der **Reservierungen** Entität mit den ersten Datensatz der **Produkte** Entität:
 
-`Relate( First( Products ).Reservations, First( Reservations ) )`
+`Relate( First( Products ).Reservations; First( Reservations ) )`
 
 So entfernen Sie die Beziehung zwischen diesen Datensätzen:
 
-`Unrelate( First( Products ).Reservations, First( Reservations ) )`
+`Unrelate( First( Products ).Reservations; First( Reservations ) )`
 
 Zu keinem Zeitpunkt haben wir erstellen oder entfernen "oder" einen Datensatz, der nur die Beziehung zwischen den Datensätzen wurde geändert.
 
 **Produkte** und **Kontakte** beziehen sich durch eine m: N-Beziehung.  Verbinden Sie den ersten Datensatz der **Kontakte** Entität mit den ersten Datensatz der **Produkte** Entität:
 
-`Relate( First( Products ).Contacts, First( Contacts ) )`
+`Relate( First( Products ).Contacts; First( Contacts ) )`
 
 Als m: N Beziehungen sind symmetrisch, es könnte auch dies getan haben in die entgegengesetzte Richtung:
 
-`Relate( First( Contacts ).Products, First( Products ) )`
+`Relate( First( Contacts ).Products; First( Products ) )`
 
 So entfernen Sie die Beziehung zwischen diesen Datensätzen:
 
-`Unrelate( First( Products ).Contacts, First( Contacts ) )`
+`Unrelate( First( Products ).Contacts; First( Contacts ) )`
 
 oder:
 
-`Unrelate( First( Contacts ).Products, First( Products ) )`
+`Unrelate( First( Contacts ).Products; First( Products ) )`
 
 Die exemplarische Vorgehensweise, folgt, wird genau diese Vorgänge für diese Entitäten, die mit einer app mit **Katalog** und **Kombinationsfeld** Steuerelementen zum Auswählen der betroffenen Datensätze.
 
@@ -152,8 +153,8 @@ Erstellen Sie zunächst eine einfache app, um anzuzeigen, und weisen Sie die Res
 
 1. In **Gallery2**legen **NextArrow2**des **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Relate( ComboBox1.Selected.Reservations, ThisItem )
+    ```powerapps-comma
+    Relate( ComboBox1.Selected.Reservations; ThisItem )
     ```
 
     Wenn der Benutzer dieses Symbol auswählt, ändert sich die aktuelle Reservierung für das Produkt, die der Benutzer im ausgewählt **ComboBox1**.
@@ -176,11 +177,11 @@ An diesem Punkt können Sie die Beziehung zwischen den Datensätzen in eine ande
 
 1. In **Gallery2**legen die **OnSelect** Formel zum **NextArrow2** auf diese Formel:
 
-    ```powerapps-dot
-    If( IsBlank( ComboBox1.Selected ),
-        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
-        Relate( ComboBox1.Selected.Reservations, ThisItem )
-    );
+    ```powerapps-comma
+    If( IsBlank( ComboBox1.Selected );
+        Unrelate( Gallery1.Selected.Reservations; ThisItem );
+        Relate( ComboBox1.Selected.Reservations; ThisItem )
+    );;
     Refresh( Reservations )
     ```
     ![Richtige Symbol "konfigurieren"](media/function-relate-unrelate/reservations-relate-unrelate.png)
@@ -193,8 +194,8 @@ An diesem Punkt können Sie die Beziehung zwischen den Datensätzen in eine ande
 
 1. Stellen Sie sicher, dass das Duplikat der **Gallery2** heißt **Gallery2_1**, und legen Sie dann die **Elemente** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Filter( Reservations, IsBlank( 'Product Reservation' ) )
+    ```powerapps-comma
+    Filter( Reservations; IsBlank( 'Product Reservation' ) )
     ```
 
     Es wird eine delegierungswarnung, aber es nicht relevant, mit der geringeren Menge an Daten in diesem Beispiel.
@@ -265,8 +266,8 @@ Erstellen Sie eine andere app, das diesem ähnelt, die, das Sie zuvor in diesem 
 
 1. Legen Sie die **Abbrechen** Symbols **OnSelect** -Eigenschaft auf diese Formel: 
 
-    ```powerapps-dot
-    Unrelate( Gallery1.Selected.Contacts, ThisItem )
+    ```powerapps-comma
+    Unrelate( Gallery1.Selected.Contacts; ThisItem )
     ```
 
     ![Symbol "Abbrechen" Konfigurieren](media/function-relate-unrelate/contacts-unrelate.png)
@@ -285,8 +286,8 @@ Erstellen Sie eine andere app, das diesem ähnelt, die, das Sie zuvor in diesem 
 
 1. Fügen Sie eine **hinzufügen** Symbol, und legen Sie dessen **OnSelect** -Eigenschaft auf diese Formel: 
 
-    ```powerapps-dot
-    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
+    ```powerapps-comma
+    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
     ```
 
     ![Symbol zum Hinzufügen von konfigurieren](media/function-relate-unrelate/contacts-relate.png)
@@ -324,9 +325,9 @@ M: n Beziehungen sind symmetrisch. Sie können das Beispiel, um einen Kontakt Pr
     - Label1_1.Text = `"Selected Contact Products"`
     - Gallery2_1.Items = `Gallery1_1.Selected.Products`
     - Title2_1.Text = `ThisItem.Name`
-    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
+    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
     - ComboBox1_1.Items = `Products`
-    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
+    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
 
     Das Ergebnis ähnelt dem vorherigen Bildschirm sieht jedoch wird die Beziehung zwischen der **Kontakte** Seite.
 

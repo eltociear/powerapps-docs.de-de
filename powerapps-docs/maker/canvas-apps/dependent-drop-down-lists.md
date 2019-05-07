@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61550792"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdownlisten in einer Canvas-app
 
@@ -138,7 +139,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie sie leichter identifizieren 
 
 1. Legen Sie die **Elemente** Eigenschaft **Ddlocation** auf diese Formel:
 
-    `Distinct(Locations, Location)`
+    `Distinct(Locations; Location)`
 
 1. (optional) Während Sie die Alt-Taste gedrückt halten, öffnen Sie **DdLocation**, und vergewissern Sie sich, dass die Liste mit allen drei Speicherorten enthält.
 
@@ -158,7 +159,7 @@ Wenn Sie die Steuerelemente umbenennen, können Sie sie leichter identifizieren 
 
     Die **Elemente** Eigenschaft **DdDepartment** wird auf diese Formel festgelegt:
 
-    `Filter(Locations, Location = ddLocation.Selected.Result)`
+    `Filter(Locations; Location = ddLocation.Selected.Result)`
 
     Diese Formel filtert die Elemente im **DdDepartment** basierend auf der Auswahl des Benutzers in **DdLocation**. Eine solche Konfiguration wird sichergestellt, dass die Liste "untergeordnete" Abteilungen die Daten für den Speicherort der "übergeordneten" als widerspiegelt das **Speicherorte** Liste in SharePoint gibt.
 

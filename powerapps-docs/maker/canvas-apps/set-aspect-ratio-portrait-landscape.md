@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61536038"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>Ändern der Bildschirmgröße und -ausrichtung einer Canvas-App in PowerApps
 Passen Sie eine Canvas-App an, indem Sie Bildschirmgröße und -ausrichtung ändern.
@@ -47,7 +48,7 @@ Erstellen Sie eine app oder eine für die Bearbeitung, und wählen Sie dann **An
 
     Wenn Sie diese Einstellung deaktivieren, wird die app an das Seitenverhältnis des Geräts auf dem es ausgeführt wird, und die gesamte verfügbare Platz angepasst. Die app nicht skaliert werden und daher Bildschirme Weitere Informationen anzeigen können.
 
-    Wenn diese Einstellung deaktiviert ist, **Seitenverhältnis sperren** ist automatisch aktiviert und deaktiviert. Darüber hinaus die **Breite** alle Bildschirme-Eigenschaftensatz auf `Max(App.Width, App.DesignWidth)`, und ihre **Höhe** -Eigenschaftensatz auf `Max(App.Height, App.DesignHeight)` , damit sie die Dimensionen des Fensters verfolgen, in dem die app ausgeführt wird. Mit dieser Änderung können Sie apps erstellen, die auf verschiedenen Geräten und fensterabmessungen reagieren. Weitere Informationen finden Sie unter: [Dynamisches Layout erstellen](create-responsive-layout.md)
+    Wenn diese Einstellung deaktiviert ist, **Seitenverhältnis sperren** ist automatisch aktiviert und deaktiviert. Darüber hinaus die **Breite** alle Bildschirme-Eigenschaftensatz auf `Max(App.Width; App.DesignWidth)`, und ihre **Höhe** -Eigenschaftensatz auf `Max(App.Height; App.DesignHeight)` , damit sie die Dimensionen des Fensters verfolgen, in dem die app ausgeführt wird. Mit dieser Änderung können Sie apps erstellen, die auf verschiedenen Geräten und fensterabmessungen reagieren. Weitere Informationen finden Sie unter: [Dynamisches Layout erstellen](create-responsive-layout.md)
 
 1. Geben Sie unter **Seitenverhältnis sperren** entweder **Ein** oder **Aus** an.
 

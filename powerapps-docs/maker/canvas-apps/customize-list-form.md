@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042730"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -73,7 +74,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 1. Legen Sie die **Sichtbarkeit** Eigenschaft der **Farbe**, **Verfügbarkeit**, und **Preis** Karten auf diese Formel (ersetzen, falls erforderlich, die wird mit dem Sie im vorherigen Schritt notiert haben):
 
-    **If(DataCardValue2.Value = true, true)**
+    **If(DataCardValue2.Value = true; true)**
 
 1. Halten Sie die ALT-TASTE gedrückt, und tippen oder klicken Sie mehrmals auf den Schalter **Details**.
 

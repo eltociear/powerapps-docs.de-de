@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61536109"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Übersicht über die Benutzer-Bildschirmvorlage für Canvas-apps
 
@@ -94,19 +95,19 @@ Der Bildschirm für Personen speichert Ihre Auswahl der Personen in der **MyPeop
 1. Legen Sie die **OnSelect** Eigenschaft **BackIcon** zu `Back()`.
 1. Legen Sie die **OnSelect** Eigenschaft **SendIcon** auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Office365.SendEmail( 
-        Concat( MyPeople, UserPrincipalName & ";" ), 
-        SubjectLine.Text, 
+        Concat( MyPeople; UserPrincipalName & ";" ); 
+        SubjectLine.Text; 
         MessageBody.Text 
     )
     ```
     
-    Hier verwenden Sie den Outlook-Connector, um eine e-Mail senden. Sie übergeben `Concat(MyPeople, UserPrincipalName & ";")` als die Liste der Empfänger. Diese Formel verkettet alle e-Mail-Adressen in der **MyPeople** Auflistung in einer einzelnen Zeichenfolge durch ein Semikolon voneinander getrennt sind. Dies unterscheidet sich von schreibt eine Zeichenfolge mit e-Mail-Adressen getrennt durch ein Semikolon in der Zeile "To" Ihre bevorzugte e-Mail-Clients.
+    Hier verwenden Sie den Outlook-Connector, um eine e-Mail senden. Sie übergeben `Concat(MyPeople; UserPrincipalName & ";")` als die Liste der Empfänger. Diese Formel verkettet alle e-Mail-Adressen in der **MyPeople** Auflistung in einer einzelnen Zeichenfolge durch ein Semikolon voneinander getrennt sind. Dies unterscheidet sich von schreibt eine Zeichenfolge mit e-Mail-Adressen getrennt durch ein Semikolon in der Zeile "To" Ihre bevorzugte e-Mail-Clients.
     * Übergeben Sie `SubjectLine.Text` als Betreff der Nachricht und `MessageBody.Text` als Text der Nachricht.
 1. Fügen Sie auf dem Bildschirm Personen in der oberen rechten Ecke der **-e-Mails** Symbol.
    Ändern Sie die Farbe des Symbols, was auch immer Sie geeignet ist.
-1. Legen Sie die **OnSelect** Eigenschaft der **SendIcon** zu `Navigate( EmailScreen, None )`.
+1. Legen Sie die **OnSelect** Eigenschaft der **SendIcon** zu `Navigate( EmailScreen; None )`.
 
     Sie haben nun eine app mit zwei Bildschirmen, in der Benutzer auswählen, erstellen sie eine e-Mail-Nachricht und senden Sie sie. Probieren Sie es aus, aber Achten Sie darauf, da die app sendet eine e-Mail an alle Benutzer Sie ruhig Hinzufügen der **MyPeople** Auflistung.
 
