@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0c972120a70df8471f27a2b6e4e99f7a66182e04
-ms.sourcegitcommit: 065b3b210273e5fe9025d41d27a08a62dfa16d03
-ms.translationtype: HT
+ms.openlocfilehash: 21e1042dc525e666fcab40610c290793abe37395
+ms.sourcegitcommit: 91f084def8d7c2b78eeef20fa3959d1d34b8da66
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64904067"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65516817"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -93,12 +93,13 @@ In dieser Liste werden alle Dienste aufgeführt, mit denen PowerApps Studio komm
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Laufzeit der Connector/APIs |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: Zum Abrufen von Benutzerinformationen (z.B. Profilfotos) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: zum Abrufen von Benutzerinformationen (z.B. Profilfotos) |
 | gallery.azure.com |https |Beispiel- und Vorlagen-Apps |
 | \*.azure-apim.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
-| \*.powerapps.com |https |WebAuth + Portal |
-| \*.azureedge.net |https |WebAuth |
-| \*.blob.core.windows.net |https |Blob Storage |
+| \*.powerapps.com |https | create.powerapps.com + web.powerapps.com |
+| \*.azureedge.net |https | create.powerapps.com |
+| \*.blob.core.windows.net |https | Blob Storage |
+| \*.flow.microsoft.com | https | create.powerapps.com + web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetrie |
 
 > [!NOTE]

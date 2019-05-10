@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543963"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517332"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Barcodescanner Steuerelement für Canvas-apps
 
@@ -60,6 +60,8 @@ Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Ba
 **FlashlightEnabled** –, ob die Taschenlampe automatisch aktiviert ist, wenn die Überprüfung geöffnet wird.
 
 **[Höhe](properties-size-location.md)**  – die Höhe der Schaltfläche, die die Überprüfung aktiviert.
+
+**PreferFrontCamera** –, ob die vordere Kamera, sofern verfügbar, für die Überprüfung verwendet wird.
 
 **[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 

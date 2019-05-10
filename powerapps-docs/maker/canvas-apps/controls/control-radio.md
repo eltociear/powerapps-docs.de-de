@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548775"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517375"
 ---
 # <a name="radio-control-in-powerapps"></a>Radio-Steuerelement in PowerApps
 
@@ -40,6 +39,8 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 **Layout**: Gibt an, ob die Optionen vertikal oder horizontal angeordnet werden.
 
 **[Value](properties-core.md)**: Gibt den Wert eines Eingabesteuerelements an.
+
+**Ausgewählte** – der Datensatz, der das ausgewählte Element darstellt.
 
 ## <a name="all-properties"></a>Alle Eigenschaften
 
@@ -107,6 +108,8 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 **[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
+**SelectedText (veraltet)** – ein Zeichenfolgenwert, der das ausgewählte Element darstellt.
+
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
@@ -127,19 +130,19 @@ Das Steuerelement kann über ein horizontales oder vertikales Layout verfügen.
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 
 1. Fügen Sie das **Radio**-Steuerelement hinzu, nennen Sie es **Pricing**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf die folgende Formel fest:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
 2. Fügen Sie ein Steuerelement **[Label](control-text-box.md)** (Bezeichnung) hinzu, verschieben Sie es unter das **Radio**-Steuerelement (Optionsfeld) und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Label](control-text-box.md)** auf diese Formel fest:
 
-    **If("Premium" in Pricing.Selected.Value; "$200 pro Tag"; "$150 pro Tag")**
+    **If("Premium" in Pricing.Selected.Value, "$200 pro Tag", "$150 pro Tag")**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 

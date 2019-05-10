@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a7128ace53cc1e0754eb7247282b2ecae7642672
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544389"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517421"
 ---
 # <a name="list-box-control-in-powerapps"></a>Listenfeld-Steuerelement in PowerApps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
@@ -31,6 +30,8 @@ Ein **Listenfeld**-Steuerelement zeigt immer alle verfügbare Optionen an (im Ge
 **[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+
+**Ausgewählte** – der Datensatz, der das ausgewählte Element darstellt.
 
 Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eigenschaftenliste standardmäßig **Items** an, sodass Sie ganz einfach die Daten angeben können, die das neue Steuerelement anzeigen soll. Sie können zum Beispiel die **Items**-Eigenschaft eines Katalogs auf die **Account**-Tabelle in Salesforce festlegen, eine Tabelle mit dem Namen **Inventory**, die Sie in Excel erstellt und in die Cloud hochgeladen haben, oder auf eine SharePoint-Liste mit dem Namen **ConferenceSpeakers**.
 
@@ -97,6 +98,8 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
+**SelectedText (veraltet)** – ein Zeichenfolgenwert, der das ausgewählte Element darstellt.
+
 **[SelectionColor](properties-color-border.md)**: Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
 **[SelectionFill](properties-color-border.md)** : gibt die Hintergrundfarbe der ausgewählten Elemente in einer Liste oder eines ausgewählten Bereichs des Stift-Steuerelements an.
@@ -122,11 +125,11 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Listenfeld**-Steuerungselement hinzu, nennen Sie es **CategoryList**, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf folgende Formel fest:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
@@ -134,16 +137,16 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 2. Fügen Sie drei **[Dropdown](control-drop-down.md)**-Steuerelemente hinzu, verschieben Sie sie unter **CategoryList**, und nennen Sie diese **CarpetList**, **HardwoodList** und **TileList**.
 3. Legen Sie die **[Items](properties-core.md)**-Eigenschaft jedes **[Dropdown](control-drop-down.md)**-Steuerelements auf einen der folgenden Werte fest:
    
-   * CarpetList: **["Caserta Stone Beige"; "Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige", "Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/flooring-names.png)
 4. Legen Sie die **[Visible](properties-core.md)**-Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
    
-   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value; true)**
-   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value; true)**
-   * TileList: **If("Tile" in CategoryList.SelectedItems.Value; true)**
+   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 5. Drücken Sie F5, und wählen Sie ein oder mehrere Elemente in **CategoryList** aus.

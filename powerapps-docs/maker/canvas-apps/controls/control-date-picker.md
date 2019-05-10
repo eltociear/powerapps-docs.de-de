@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eb8835a2e5c66bb975bc384d9ca782cd3a0f7d85
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321718"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517439"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Datumsauswahl-Steuerelement in PowerApps
 Ein Steuerelement, mit dem Benutzer durch Klicken oder Tippen ein Datum angeben können.
@@ -37,7 +36,7 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 * Das Steuerelement zeigt **12/31/2017**, wenn der Benutzer auf den letzten Tag von 2017 klickt oder tippt. Die **Format**-Eigenschaft ist auf **ShortDate**, die **Language**-Eigenschaft auf **en-us** festgelegt.
 * Das Steuerelement zeigt **dimanche 31 decembre 2017**, wenn der Benutzer auf den letzten Tag von 2017 klickt oder tippt. Die **Format**-Eigenschaft ist auf **LongDate**, die **Language**-Eigenschaft auf **fr-fr** festgelegt.
 
-**Sprache** – Bestimmt die Sprache, die zum Formatieren von Datumsangaben, einschließlich der Namen von Monaten, verwendet wird. Wenn diese Eigenschaft nicht angegeben ist, wird die Sprache von der Geräteeinstellung des Benutzers bestimmt.
+**Sprache** – bestimmt die Sprache, die zum Formatieren von Datumsangaben, einschließlich der Namen von Monaten. Wenn diese Eigenschaft nicht angegeben ist, wird die Sprache von der Geräteeinstellung des Benutzers bestimmt. Unterstützte Werte sind "EN-us" und "FR".
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
@@ -76,6 +75,8 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
 **IconBackground:** die Hintergrundfarbe eines Symbols für die Datumsauswahl.
 
+**InputTextPlaceholder** – Hinweistext, der angezeigt wird, wenn keine Daten eingegeben werden.
+
 **[Italic](properties-text.md)** – Legt fest, ob der Text in einem Steuerelement kursiv formatiert ist.
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
@@ -110,7 +111,7 @@ Wenn Sie ein **Datumsauswahl**-Steuerelement anstatt eines **[Texteingabe](contr
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](properties-core.md)**-Eigenschaft auf diese Formel fest:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Benötigen Sie weitere Informationen zur **[DateDiff](../functions/function-dateadd-datediff.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Drücken Sie F5, legen Sie für **Deadline** ein Datum fest, und klicken oder tippen Sie dann auf **OK**.

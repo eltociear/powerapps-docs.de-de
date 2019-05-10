@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544267"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517385"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Dropdown-Steuerelement in PowerApps
 Eine Liste, die nur das erste Element anzeigt, bis der Benutzer sie öffnet.
@@ -34,7 +33,9 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
   
 **Value**: Die Datenspalte, die Sie im Steuerelement anzeigen möchten (z.B., wenn eine Datenquelle mehrere Spalten besitzt).
 
-**Selected**: Das ausgewählte Element.
+**Ausgewählte** – der Datensatz, der das ausgewählte Element darstellt.
+
+**AllowEmptySelection** : Legt fest, ob das Steuerelement einer leeren Auswahl anzeigt, wenn kein Element ausgewählt wurde. App-Benutzer können ihre Optionen auch löschen, indem Sie das leere Element auswählen.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
@@ -99,6 +100,8 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 **[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
+**SelectedText (veraltet)** – ein Zeichenfolgenwert, der das ausgewählte Element darstellt.
+
 **[SelectionColor](properties-color-border.md)**: Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
 **[SelectionFill](properties-color-border.md)** – Die Hintergrundfarbe des ausgewählten Elements oder der Elemente in einer Liste oder eines ausgewählten Bereichs eines Stift-Steuerelements.
@@ -127,7 +130,7 @@ Ein **Dropdown**-Steuerelement ist platzsparend und eignet sich besonders für u
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diesen Ausdruck fest:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -140,13 +143,13 @@ Die Prinzipien in diesem Verfahren gelten für jeden [-Datenquelle, die Tabelle 
 
 1. Fügen Sie ein **Dropdown**-Steuerelement hinzu, und legen Sie seine **[Items](properties-core.md)**-Eigenschaft auf diese Formel fest:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Diese Formel zeigt alle Städte in dem Element **Konten** (Accounts) an. Wenn mehr als ein Datensatz die gleiche Stadt besitzt, versteckt die **[Distinct](../functions/function-distinct.md)**-Funktion die Duplizierung in Ihrem Dropdown-Steuerelement.
 
 1. (optional) Benennen Sie Ihr **Dropdown**-Steuerelement in **Cities** (Städte) um, fügen Sie ein vertikales **Gallery**-Steuerelement (Katalog) hinzu, und legen Sie die **[Items](properties-core.md)**-Eigenschaft des Katalogs auf diese Formel fest:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Diese **[Filter](../functions/function-filter-lookup.md)**-Funktion zeigt nur die Datensätze im **Accounts**-Element (Konten) an, bei denen die Stadt zu dem ausgewählten Wert im Steuerelement **Cities** (Städte) passt.
 
