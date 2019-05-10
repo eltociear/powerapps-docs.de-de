@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 503ffa049ecd737cfd9e948c3e2af25c8cdd831d
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61541545"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088122"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Erstellen einer Canvas-App zum Verwalten von Projekten
 > [!NOTE]
@@ -88,7 +87,7 @@ Die App sollte nun wie in der folgenden Abbildung aussehen.
 ![Alle App-Bildschirme](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
 ## <a name="step-2-connect-to-a-sharepoint-list"></a>Schritt 2: Verbinden Sie mit einer SharePoint-Liste
-In diesem Schritt stellen wir eine Verbindung mit der SharePoint-Liste **Product Details** (Produktdetails) her. Wir verwenden in dieser App lediglich eine Liste, Sie könnten jedoch auch problemlos eine Verbindung mit beiden herstellen, wenn Sie die App erweitern möchten.
+In diesem Schritt verbinden wir die **Projektdetails** SharePoint-Liste. Wir verwenden in dieser App lediglich eine Liste, Sie könnten jedoch auch problemlos eine Verbindung mit beiden herstellen, wenn Sie die App erweitern möchten.
 
 1. Klicken oder tippen Sie in der linken Navigationsleiste auf den Bildschirm **SelectTask**.
 2. Klicken oder tippen Sie im rechten Bereich auf **Datenquelle hinzufügen**.
@@ -141,7 +140,7 @@ In diesem Schritt richten wir eine Möglichkeit der Navigation zu den anderen Bi
     ![Hinzufügen einer Schaltfläche](./media/sharepoint-scenario-build-app/04-03-05-button-default.png)
 2. Legen Sie in der Bearbeitungsleiste die folgenden Eigenschaften für die Schaltfläche fest:
    
-   * **OnSelect**-Eigenschaft = **Navigate(AssignManager; Fade)**. Wenn Sie die App ausführen und auf diese Schaltfläche klicken, wechseln Sie zum zweiten Bildschirm in der App, mit einem Ausblendübergang zwischen den Bildschirmen.
+   * **OnSelect**-Eigenschaft = **Navigate(AssignManager, Fade)**. Wenn Sie die App ausführen und auf diese Schaltfläche klicken, wechseln Sie zum zweiten Bildschirm in der App, mit einem Ausblendübergang zwischen den Bildschirmen.
 
    * **Text**-Eigenschaft = **"Assign Manager"**
 
@@ -150,7 +149,7 @@ In diesem Schritt richten wir eine Möglichkeit der Navigation zu den anderen Bi
     ![Aktualisieren des Schaltflächentexts](./media/sharepoint-scenario-build-app/04-03-06-button-updated.png)
 4. Einfügen einer weiteren Schaltfläche mit den folgenden Eigenschaften:
    
-   * **OnSelect**-Eigenschaft = **Navigate(ViewProjects; Fade)**.
+   * **OnSelect**-Eigenschaft = **Navigate(ViewProjects, Fade)**.
 
    * **Text**-Eigenschaft = **"Update Details"**
      
@@ -208,7 +207,7 @@ In diesem Schritt zeigen wir mit einem Katalog alle Projekte an, die genehmigt w
 
    * **Height**-Eigenschaft = **40**
 
-   * **OnSelect**-Eigenschaft = **Navigate(SelectTask; Fade)**
+   * **OnSelect**-Eigenschaft = **Navigate(SelectTask, Fade)**
 
    * **Width**-Eigenschaft = **40**
      
@@ -234,7 +233,7 @@ In diesem Schritt zeigen wir mit einem Katalog alle Projekte an, die genehmigt w
 
    * **BorderStyle**-Eigenschaft = **Dotted**
 
-   * **Items**-Eigenschaft = **Filter('Project Details'; PMAssigned="Unassigned")**. Im Katalog sind nur Projekte enthalten, denen kein Manager zugewiesen ist.
+   * **Items**-Eigenschaft = **Filter('Project Details', PMAssigned="Unassigned")**. Im Katalog sind nur Projekte enthalten, denen kein Manager zugewiesen ist.
      
      ![Katalog mit Text aus der Liste](./media/sharepoint-scenario-build-app/04-04-06-gallery-updated.png)
 
@@ -292,7 +291,7 @@ In diesem Schritt zeigen wir mit einem Katalog alle Projekte an, die genehmigt w
    
    * **Height**-Eigenschaft = **60**
 
-   * **OnSelect** property = **Patch('Project Details'; LookUp('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text})**. Weitere Informationen finden Sie unter [Detaillierte Erläuterungen zu Formeln](#formula-deep-dive).
+   * **OnSelect** property = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. Weitere Informationen finden Sie unter [Detaillierte Erläuterungen zu Formeln](#formula-deep-dive).
 
    * Mit dieser Formel wird die Liste **Project Details** (Projektdetails) aktualisiert, und es wird ein Wert für das Feld „PMAssigned“ festgelegt.
 
@@ -327,7 +326,7 @@ In diesem Schritt ändern wir die Eigenschaften des Katalogs im Bildschirm **Vie
 
 5. Wählen Sie die Aktualisierungsschaltfläche ![Aktualisierungssymbol](./media/sharepoint-scenario-build-app/icon-refresh.png) aus, und legen Sie ihre **OnSelect**-Eigenschaft auf **Refresh('Project Details')** fest.
 
-6. Wählen Sie die Schaltfläche für neue Elemente ![Neues Element hinzufügen](./media/sharepoint-scenario-build-app/icon-add-item.png) aus, und legen Sie ihre **OnSelect**-Eigenschaft auf **NewForm(EditForm1);; Navigate(UpdateDetails; ScreenTransition.None)** fest.
+6. Wählen Sie die Schaltfläche für neue Elemente ![Neues Element hinzufügen](./media/sharepoint-scenario-build-app/icon-add-item.png) aus, und legen Sie ihre **OnSelect**-Eigenschaft auf **NewForm(EditForm1); Navigate(UpdateDetails, ScreenTransition.None)** fest.
 
 ### <a name="add-a-back-arrow-to-return-to-the-selecttask-screen"></a>Hinzufügen eines Rückwärtspfeils, um zum Bildschirm „SelectTask“ zurückzukehren
 
@@ -339,15 +338,15 @@ In diesem Schritt ändern wir die Eigenschaften des Katalogs im Bildschirm **Vie
    
     ![Schaltfläche „Zurück“](./media/sharepoint-scenario-build-app/04-05-04-left-arrow-v.png)
    
-    Alle Eigenschaften werden mit übernommen, einschließlich der **OnSelect**-Eigenschaft mit dem Wert **Navigate(SelectTask; Fade)**.
+    Alle Eigenschaften werden mit übernommen, einschließlich der **OnSelect**-Eigenschaft mit dem Wert **Navigate(SelectTask, Fade)**.
 
 ### <a name="change-the-data-source-for-the-browsegallery1-gallery"></a>Ändern der Datenquelle für den Katalog „BrowseGallery1“
 
-1. Wählen Sie den Katalog **BrowseGallery1** aus, und legen Sie die **Items**-Eigenschaft des Katalogs auf **SortByColumns(Filter('Project Details'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** fest.
+1. Wählen Sie den Katalog **BrowseGallery1** aus, und legen Sie die **Items**-Eigenschaft des Katalogs auf **SortByColumns(Filter('Project Details', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** fest.
    
     Dadurch wird die Datenquelle des Katalogs auf die Liste **Project Details** (Projektdetails) festgelegt, und für Such- und Sortiervorgänge wird das Feld **Title** (Titel) verwendet.
 
-2. Wählen Sie das ![Details-Pfeilsymbol](./media/sharepoint-scenario-build-app/icon-details-arrow.png) im ersten Katalogelement aus, und legen Sie die **OnSelect**-Eigenschaft auf **Navigate(UpdateDetails; None)** fest.
+2. Wählen Sie das ![Details-Pfeilsymbol](./media/sharepoint-scenario-build-app/icon-details-arrow.png) im ersten Katalogelement aus, und legen Sie die **OnSelect**-Eigenschaft auf **Navigate(UpdateDetails, None)** fest.
    
     ![ Katalog „Projekte anzeigen“ – erstes Element ausgewählt](./media/sharepoint-scenario-build-app/04-05-05b-gallery-arrow-v.png)
 
@@ -397,7 +396,7 @@ In diesem Schritt verbinden wir das Bearbeitungsformular im Bildschirm **UpdateD
    * **ActualDays**
      
      ![Bearbeiten der Felder des Formulars](./media/sharepoint-scenario-build-app/04-06-03-edit-fields.png)
-6. Klicken Sie auf die Schaltfläche zum Abbrechen ![Symbol „Abbrechen“](./media/sharepoint-scenario-build-app/icon-cancel.png), und legen Sie ihre **OnSelect**-Eigenschaft auf **ResetForm(EditForm1);; Back()** fest.
+6. Klicken Sie auf die Schaltfläche zum Abbrechen ![Symbol „Abbrechen“](./media/sharepoint-scenario-build-app/icon-cancel.png), und legen Sie ihre **OnSelect**-Eigenschaft auf **ResetForm(EditForm1); Back()** fest.
 
 7. Wählen Sie die Schaltfläche zum Speichern ![Häkchensymbol „Speichern“](./media/sharepoint-scenario-build-app/icon-check-mark.png) aus, und probieren Sie die **OnSelect**-Formel aus – **SubmitForm(EditForm1)**. Da wir das Steuerelement zum Bearbeiten von Formularen verwenden, können wir **Submit()** und nicht wie früher **Patch()** verwenden.
 
@@ -497,7 +496,7 @@ Nun ist die App auf der SharePoint-Website vorhanden, und wir übernehmen die Ro
 ## <a name="formula-deep-dive"></a>Detaillierte Erläuterung zu Formeln
 Dies ist der zweite optionale Abschnitt für PowerApps Formeln. In der ersten detaillierten Erläuterung haben wir eine der Formeln betrachtet, die von PowerApps für den durchsuchbaren Katalog in einer App mit drei Bildschirmen generiert wird. In dieser detaillierten Erläuterung betrachten wir eine Formel, die wir für den Bildschirm **AssignManager** der zweiten App verwenden. Die Formel lautet wie folgt:
 
-**Patch( 'Project Details'; LookUp( 'Project Details'; ID = Gallery1.Selected.ID ); {PMAssigned: TextInput1.Text} )**
+**Patch( 'Project Details', LookUp( 'Project Details', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
 
 Welche Aktionen führt diese Formel aus? Wenn Sie ein Element im Katalog auswählen und auf die Schaltfläche **OK** klicken, aktualisiert die Formel die Liste **Project Details** (Projektdetails), wobei die Spalte **PMAssigned** auf den Wert festgelegt wird, der in der Texteingabe angegeben ist. Die Formel führt ihre Aufgaben mithilfe von Funktionen aus:
 

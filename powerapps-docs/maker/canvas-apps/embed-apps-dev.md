@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed812fb8da85d36ff7c0790fe401b33043786cb8
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550305"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670380"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die apps, die Sie erstellen, sind oft am nützlichsten, wenn sie verfügbar sind, direkt auf, wenn Personen ihre Arbeit zu erledigen. Canvas-apps in einen Iframe einbetten, können Sie diese apps in Websites und andere Dienste wie Power BI und SharePoint integrieren.
@@ -38,8 +38,7 @@ Sie können auch Canvas-apps in SharePoint Online integrieren, ohne Verwendung e
 Wenn Sie über eine einzubettende App verfügen, besteht der erste Schritt im Festlegen von Parametern für den URI (Uniform Resource Identifier), um dem iframe mitzuteilen, wo sich die App befindet. Der URI liegt in der folgenden Form vor:
 
 ```
-https://web.powerapps.com/webplayer/iframeapp?source=iframe
-&appId=/providers/Microsoft.PowerApps/apps/[AppID]
+https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
 > [!NOTE]
@@ -70,7 +69,7 @@ Die App-ID ist auf „powerapps.com“ verfügbar. Führen Sie für die einzubet
 ## <a name="embed-your-app-in-a-website"></a>Einbetten der App in eine Website
 Zum Einbetten Ihrer App brauchen Sie nur den iframe in den HTML-Code Ihrer Website einzufügen (oder in einen anderen Dienst mit iframe-Unterstützung wie Power BI und SharePoint):
 
-```
+```html
 <iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]" allow="geolocation; microphone; camera"/>
 ```
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 7eb5e7385c57e0cabaab1c8457f17dc1feff96fb
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321251"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64671049"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Erstellen eines Power BI-Berichts zum Analysieren von Projekten
 > [!NOTE]
@@ -186,7 +185,7 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
 1. Klicken oder tippen Sie in der Tabelle mit Datumsangaben auf **Neue Spalte**.
    
     ![Neue Spalte](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Geben Sie in der Bearbeitungsleiste diese Formel ein: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]); 1;0;7;0;1)**.
+2. Geben Sie in der Bearbeitungsleiste diese Formel ein: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
    
     Durch diese Formel wird bestimmt, ob es sich bei einem Datum in der Spalte **Date** um einen Werktag handelt. Wenn es sich bei dem Datum um einen Werktag handelt, erhält die Spalte **IsWeekDay** den Wert 1, andernfalls wird der Spalte der Wert 0 zugewiesen.
 3. Drücken Sie die EINGABETASTE, um der Tabelle **Dates** die Spalte **IsWeekDay** hinzuzufügen.
@@ -199,17 +198,12 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
     ![Neue Spalte](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
 2. Geben Sie in der Bearbeitungsleiste diese Formel ein:
    
-    ```
+    ```dax
     ApprovedStartDiff = CALCULATE(SUM(Dates[IsWeekday]),
-   
        DATESBETWEEN(Dates[Date],
-   
           'Project Details'[ApprovedDate],
-   
           'Project Details'[ProjectedStartDate]
-   
       )
-   
     )
     ```
    
@@ -224,17 +218,12 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
     ![Neue Spalte](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
 2. Geben Sie in der Bearbeitungsleiste diese Formel ein:
    
-    ```
+    ```dax
     RequestDateAge = CALCULATE(SUM(Dates[IsWeekday]),
-   
        DATESBETWEEN(Dates[Date],
-   
           'Project Requests'[RequestDate],
-   
           NOW()
-   
        )
-   
     )
     ```
    
@@ -249,13 +238,10 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
     ![Neues Measure](./media/sharepoint-scenario-build-report/05-02-00-modeling-measure.png)
 2. Geben Sie in der Bearbeitungsleiste diese Formel ein:
    
-    ```
+    ```dax
     VarProjectedActual = DIVIDE(
-   
         SUM('Project Details'[ActualDays]) - SUM('Project Details'[ProjectedDays]),
-   
         SUM('Project Details'[ProjectedDays])
-   
     )
     ```
    
@@ -270,13 +256,10 @@ Bei der Übernahme der Listen in Power BI Desktop wurde eine Beziehung zwischen 
     ![Neues Measure](./media/sharepoint-scenario-build-report/05-02-00-modeling-measure.png)
 2. Geben Sie in der Bearbeitungsleiste diese Formel ein:
    
-    ```
+    ```dax
     MaxDaysPending = MAXX(
-   
         FILTER('Project Requests', 'Project Requests'[Approved]="Pending"),
-   
         'Project Requests'[RequestDateAge]
-   
     )
     ```
    

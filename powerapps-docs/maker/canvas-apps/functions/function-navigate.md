@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0033d0a2d7473e6aaeac1e8533f62873e0d2f49a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321959"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670921"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 Ändern, welcher Bildschirm angezeigt wird
@@ -60,7 +59,7 @@ Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-for
 ## <a name="syntax"></a>Syntax
 **Back**()
 
-**Navigieren Sie**( *Bildschirm* [; *Übergang* [; *kontextaktualisierungs-Datensatz* ]])
+**Navigieren Sie**( *Bildschirm* [, *Übergang* [, *kontextaktualisierungs-Datensatz* ]])
 
 * *Bildschirm*: Erforderlich. Der anzuzeigende Bildschirm.
 * *Übergang* : Optional.  Der visuelle Übergang, der zwischen dem aktuellen Bildschirm und dem nächsten Bildschirm verwendet werden soll. Weitere Informationen finden Sie in der Liste der gültigen Werte für dieses Argument weiter oben in diesem Thema. Der Standardwert ist **keine**.
@@ -71,15 +70,15 @@ Sie können diese Funktionen nur in einer [Verhaltensformel](../working-with-for
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Navigate( Details )** |Zeigt den **Detailbildschirm** ohne Übergang oder Änderung des Werts einer Kontextvariablen an. |Der **Detailbildschirm** erscheint schnell. |
-| **Navigate( Details; ScreenTransition.Fade )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an.  Kein Wert einer Kontextvariablen wird geändert. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. |
-| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an und aktualisiert den Wert der Kontextvariable **ID** auf **12**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen, und die Kontextvariable **ID** auf diesem Bildschirm wird auf **12** festgelegt. |
-| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;;&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an. Aktualisiert den Wert der Kontextvariable **ID** auf **12** und aktualisiert den Wert der Kontextvariable **Shade** auf **Color.Red**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. Die Kontextvariable **ID** auf dem **Detailbildschirm** wird auf **12** festgelegt, und die Kontextvariable **Shade** wird auf **Color.Red** festgelegt. Wenn Sie die **Fill**-Eigenschaft eines Steuerelements auf dem **Detailbildschirm** auf **Shade** festlegen, würde dieses Steuerelement rot angezeigt werden. |
+| **Navigate( Details, ScreenTransition.Fade )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an.  Kein Wert einer Kontextvariablen wird geändert. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. |
+| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an und aktualisiert den Wert der Kontextvariable **ID** auf **12**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen, und die Kontextvariable **ID** auf diesem Bildschirm wird auf **12** festgelegt. |
+| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an. Aktualisiert den Wert der Kontextvariable **ID** auf **12** und aktualisiert den Wert der Kontextvariable **Shade** auf **Color.Red**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. Die Kontextvariable **ID** auf dem **Detailbildschirm** wird auf **12** festgelegt, und die Kontextvariable **Shade** wird auf **Color.Red** festgelegt. Wenn Sie die **Fill**-Eigenschaft eines Steuerelements auf dem **Detailbildschirm** auf **Shade** festlegen, würde dieses Steuerelement rot angezeigt werden. |
 
 ### <a name="step-by-step"></a>Schritt für Schritt
 1. Benennen Sie den Standardbildschirm **DefaultScreen**, fügen Sie eine Bezeichnung zu ihm hinzu, und legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft dieser Bezeichnung so fest, dass diese **Default** anzeigt.
 2. Fügen Sie einen Bildschirm hinzu, und nennen Sie diesen **AddlScreen**.
 3. Fügen Sie eine Bezeichnung zu **AddlScreen** hinzu, und legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft der Bezeichnung so fest, dass diese **Addl** anzeigt.
-4. Fügen Sie eine Schaltfläche zu **AddlScreen** hinzu, und legen Sie ihre **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>**Navigate(DefaultScreen; ScreenTransition.Fade)**
+4. Fügen Sie eine Schaltfläche zu **AddlScreen** hinzu, und legen Sie ihre **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>**Navigate(DefaultScreen, ScreenTransition.Fade)**
 5. Drücken Sie von **AddlScreen** aus auf F5, und wählen Sie anschließend die Schaltfläche aus.<br>**DefaultScreen** über einem ausblendübergang angezeigt wird.
 
 [Ein weiteres Beispiel](../add-screen-context-variables.md)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 798a355e1c8728b41f3e92f183d4a4e2831b7cc2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3311433b3950bcf48dc6c7b7969da501e542952c
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530389"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670904"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements in PowerApps
 
@@ -51,7 +51,7 @@ Wählen Sie zur Veranschaulichung der Funktionsweise dieser Liste, **Bezeichnung
 
 ![Screen2 in Liste](./media/add-configure-controls/add-label.png)
 
-Auf dem Bildschirm umschließt ein Feld mit sechs Handles die Bezeichnung in der Standardeinstellung an. Diese Art von Feld umgeben ist, welches Steuerelement ausgewählt ist. Wenn Sie den Bildschirm durch Klicken oder tippen es (jedoch außerhalb der Bezeichnung) auswählen, wird das Feld aus der Bezeichnung ausgeblendet. Bezeichnung auszuwählen erneut, Sie können klicken oder tippen Sie auf diese oder können Sie klicken oder tippen Sie auf **Label2** in der hierarchischen Liste der Steuerelemente.
+Auf dem Bildschirm umschließt ein Feld mit sechs Handles die Bezeichnung in der Standardeinstellung an. Diese Art von Feld umgeben ist, welches Steuerelement ausgewählt ist. Wenn Sie den Bildschirm durch Klicken oder tippen es (jedoch außerhalb der Bezeichnung) auswählen, wird das Feld aus der Bezeichnung ausgeblendet. Bezeichnung auszuwählen erneut, Sie klicken oder tippen Sie in der sie können, oder Sie klicken oder tippen Sie auf den Namen in der hierarchischen Liste der Steuerelemente können.
 
 > [!IMPORTANT]
 > Sie müssen immer ein Steuerelement auswählen, bevor Sie sie konfigurieren können.

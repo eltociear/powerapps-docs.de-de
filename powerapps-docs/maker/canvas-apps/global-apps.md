@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4aae487a0b2efe50e3ac6bd42c90d26de23fed60
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee2e2b854b56dadfd63b35a984e92db2ca515093
+ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553800"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65046053"
 ---
 # <a name="build-global-support-into-canvas-apps"></a>Integrieren von globaler Unterstützung in Canvas-Apps
 PowerApps ist ein globales Produkt. Sie können Canvas-Apps in vielen verschiedenen Sprachen und Regionen erstellen und verwenden.
@@ -71,7 +70,7 @@ Einige [Trennzeichen und Operatoren](functions/operators.md) werden basierend au
 | **.** (Punkt oder Zeitraum) |**.** (Punkt oder Zeitraum) |**,** (Komma) |**;** (Semikolon) |
 | **,** (Komma) |**,** (Komma) |**;** (Semikolon) |**;;** (doppeltes Semikolon) |
 
-Die Änderung am Listentrennzeichen von PowerApps ist konsistent zu der Änderung am Listentrennzeichen von Excel.  Sie wirkt sich auf Folgendes aus:
+Die Änderung das Listentrennzeichen von PowerApps ist konsistent mit, was mit dem Listentrennzeichen von Excel geschieht.  Sie wirkt sich auf Folgendes aus:
 
 * Argumente in Funktionsaufrufen
 * Felder in einem [Datensatz](working-with-tables.md#elements-of-a-table)
@@ -101,7 +100,7 @@ Unter anderem können Sie **Language** dazu verwenden, Ihren Benutzern übersetz
 
 Anschließend kann eine Formel wie die folgende verwendet werden, um übersetzte Zeichenfolgen aus der Tabelle zu ziehen:
 
-**LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+**LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Bedenken Sie, dass die übersetzten Zeichenfolgen in anderen Sprachen wesentlich länger sein könnten als sie in Ihrer Sprache sind.  In vielen Fällen müssen die Bezeichnungen und anderen Elemente, die die Zeichenfolgen in Ihrer Benutzerschnittstelle anzeigen, breiter sein, um sich dem anzupassen.
 
@@ -114,8 +113,8 @@ Die **[Text](functions/function-text.md)**-Funktion formatiert Zahlen und Datums
 
 **Text** erfordert, dass eine Formatzeichenfolge weiß, wie Sie die Zahl oder die Datumsangabe formatieren möchten.  Diese Zeichenfolge kann eine von zwei Formen annehmen:
 
-* **Eine global kompatible Enumeration**.  Zum Beispiel **Text( Now(); DateTimeFormat.LongDate )**.  Mit dieser Formel wird das aktuelle Datum in einem für die Sprache geeigneten Format formatiert.  Dies stellt die bevorzugte Methode zum Angeben der Formatzeichenfolge dar.
-* **Eine benutzerdefinierte Formatzeichenfolge**.  Zum Beispiel zeigt **Text( Now(); "[$-en-US]dddd, mmmm dd, yyyy" )** den gleichen Text wie die Enumeration an, wenn sie in der Sprache „en-US“ verwendet wird.  Der Vorteil der benutzerdefinierten Formatzeichenfolge ist, dass Sie genau angeben können, was Sie möchten.
+* **Eine global kompatible Enumeration**.  Zum Beispiel **Text( Now(), DateTimeFormat.LongDate )**.  Mit dieser Formel wird das aktuelle Datum in einem für die Sprache geeigneten Format formatiert.  Dies stellt die bevorzugte Methode zum Angeben der Formatzeichenfolge dar.
+* **Eine benutzerdefinierte Formatzeichenfolge**.  Zum Beispiel zeigt **Text( Now(), "[$-en-US]dddd, mmmm dd, yyyy" )** den gleichen Text wie die Enumeration an, wenn sie in der Sprache „en-US“ verwendet wird.  Der Vorteil der benutzerdefinierten Formatzeichenfolge ist, dass Sie genau angeben können, was Sie möchten.
 
 "[$-en-US]" am Anfang der benutzerdefinierten Formatzeichenfolge gibt **Text** an, in welcher Sprache die benutzerdefinierte Formatzeichenfolge interpretiert werden soll.  Dies wird für Sie eingefügt und übernimmt standardmäßig Ihre Erstellungssprache.  Normalerweise müssen Sie dies nicht ändern.  Es ist hilfreich, wenn Autoren mit verschiedenen Sprachen die gleiche App bearbeiten.
 
@@ -140,10 +139,10 @@ Alle diese Funktionen haben die gleichen Argumente:
 
 Beispiel:
 
-* **Value( "12,345.678"; "en-US" )** oder **Value( "12,345.678" )**, wo die Sprache des Benutzers „en-US“ ist, gibt die Zahl **12345,678** zurück, bereit für Berechnungen.
-* **DateValue( "1/2/01"; "es-ES" )** oder **DateValue( "1/2/01" )**, wo die Sprache des Benutzers „es-ES“ ist, gibt den date/time-Wert **February 1, 2001 at midnight** (01. Februar 2001, Mitternacht) zurück.
-* **TimeValue( "11:43:02"; "fr-FR" )** or **DateValue( "11:43:02" )**, wo die Sprache des Benutzers „fr-FR“ ist, gibt den date/time-Wert **January 1, 1970 at 11:43:02** (01. Januar 1970, 11:43:02) zurück.
-* **TimeDateValue( "11:43:02 1/2/01"; "de-DE" )** or **DateValue( "11:43:02" )**, wo die Sprache des Benutzers „de-DE“ ist, gibt den date/time-Wert **February 1, 2001 at 11:43:02** (01. Februar 2001, 11:43:02) zurück.
+* **Value( "12,345.678", "en-US" )** oder **Value( "12,345.678" )**, wo die Sprache des Benutzers „en-US“ ist, gibt die Zahl **12345,678** zurück, bereit für Berechnungen.
+* **DateValue( "1/2/01", "es-ES" )** oder **DateValue( "1/2/01" )**, wo die Sprache des Benutzers „es-ES“ ist, gibt den date/time-Wert **February 1, 2001 at midnight** (01. Februar 2001, Mitternacht) zurück.
+* **TimeValue( "11:43:02", "fr-FR" )** or **DateValue( "11:43:02" )**, wo die Sprache des Benutzers „fr-FR“ ist, gibt den date/time-Wert **January 1, 1970 at 11:43:02** (01. Januar 1970, 11:43:02) zurück.
+* **TimeDateValue( "11:43:02 1/2/01", "de-DE" )** or **DateValue( "11:43:02" )**, wo die Sprache des Benutzers „de-DE“ ist, gibt den date/time-Wert **February 1, 2001 at 11:43:02** (01. Februar 2001, 11:43:02) zurück.
 
 Weitere Informationen finden Sie in der Dokumentation zu den Funktionen **[Value](functions/function-value.md)**, **[DateValue, TimeValue und DateTimeValue](functions/function-datevalue-timevalue.md)** sowie unter [Show text and format dates and times in PowerApps (Anzeigen von Text und Formatieren von Datums- und Zeitangaben in PowerApps)](show-text-dates-times.md).
 

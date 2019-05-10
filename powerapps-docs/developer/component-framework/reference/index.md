@@ -8,23 +8,18 @@ ms.assetid: ''
 author: nkrb
 ms.author: nabuthuk
 manager: Jdaly
-ms.openlocfilehash: 8351f48019635dd0a6ec9921d8888d8ca4b77f80
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4e84956807b91e535e709aa2e0739fdf121bc2f7
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394381"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "64524293"
 ---
 # <a name="powerapps-component-framework-api-reference"></a>API-Referenz zum PowerApps-Komponentenframework
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-In diesem Abschnitt ist die Referenzdokumentation für das Erstellen benutzerdefinierter Steuerelemente mithilfe des PowerApps-Komponentenframeworks enthalten.
-
-> [!IMPORTANT]
-> - Beim PowerApps-Komponentenframework handelt es sich um eine Previewfunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+Dieser Abschnitt enthält die Referenzdokumentation zum Erstellen benutzerdefinierter Komponenten mithilfe des PowerApps-Komponentenframeworks.
 
 |Name|Beschreibung|
 |----|-----------|

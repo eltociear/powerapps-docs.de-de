@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.openlocfilehash: 66fe60c0d74c86705615522621d8f277fcc343ae
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59042730"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088167"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -72,9 +71,9 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 1. Erweitern Sie in der linken Navigationsleiste auf **Details_DataCard1**, und notieren Sie sich die Zahl, die am Ende angezeigt **DataCardValue**.
 
-1. Legen Sie die **Sichtbarkeit** Eigenschaft der **Farbe**, **Verfügbarkeit**, und **Preis** Karten auf diese Formel (ersetzen, falls erforderlich, die wird mit dem Sie im vorherigen Schritt notiert haben):
+1. Legen Sie die **sichtbar** Eigenschaft der **Farbe**, **Verfügbarkeit**, und **Preis** Karten auf diese Formel (ersetzen, falls erforderlich, die Ziffer mit dem Sie im vorherigen Schritt notiert haben):
 
-    **If(DataCardValue2.Value = true; true)**
+    **If(DataCardValue2.Value = true, true)**
 
 1. Halten Sie die ALT-TASTE gedrückt, und tippen oder klicken Sie mehrmals auf den Schalter **Details**.
 
@@ -198,7 +197,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 **Q:** Benötige ich eine PowerApps-Lizenz zum Erstellen oder verwenden benutzerdefinierte Listenformulare?
 
-**A:** Sie müssen eine [Office 365-Plan, der PowerApps umfasst](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses).
+**A:** Sie müssen eine [Office 365-Plan, der PowerApps umfasst](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
 
 **Q:** Was geschieht, wenn der Gastbenutzer die Möglichkeit, eine Liste zuzugreifen, die ein benutzerdefiniertes Formular aufweist?
 

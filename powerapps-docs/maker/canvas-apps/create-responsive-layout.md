@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: af07bcb7b343a14f6342c53ed2e083e214a12368
+ms.sourcegitcommit: b27a5206f8c7b4b4c1bcca814a1f7c32724c1fcf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562523"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65206383"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Erstellen von reaktionsfähigen Layouts in Canvas-apps
 
@@ -45,9 +44,9 @@ Um die Reaktionsfähigkeit Ihrer app steigern, müssen Sie zusätzliche Schritte
 
 Um Ihrer app-Layouts, die Reaktion auf Änderungen in den bildschirmabmessungen machen zu können, Schreiben Sie Formeln, mit denen die **Breite** und **Höhe** Bildschirmeigenschaften. Um diese Eigenschaften anzuzeigen, öffnen Sie eine app in PowerApps Studio, und wählen Sie dann auf einen Bildschirm. Die Standardformel für diese Eigenschaften werden auf die **erweitert** Registerkarte im rechten Bereich.
 
-**Breite** = `Max(App.Width; App.DesignWidth)`
+**Breite** = `Max(App.Width, App.DesignWidth)`
 
-**Höhe** = `Max(App.Height; App.DesignHeight)`
+**Höhe** = `Max(App.Height, App.DesignHeight)`
 
 Diese Formeln finden Sie in der **Breite**, **Höhe**, **DesignWidth**, und **DesignHeight** Eigenschaften der app. Der app **Breite** und **Höhe** Eigenschaften entsprechen den Dimensionen im Gerät oder Browser-Fenster, in dem Ihre app ausgeführt wird. Wenn der Benutzer das Browserfenster angepasst wird (oder das Gerät dreht, wenn Sie deaktiviert haben **bildschirmausrichtung Sperren**), die Werte dieser Eigenschaften dynamisch ändern. Die Formeln in des Bildschirms **Breite** und **Höhe** Eigenschaften werden erneut ausgewertet, wenn diese Werte ändern.
 
@@ -137,7 +136,7 @@ Sie können diese Formel Muster verwenden, zum Ausdrücken von häufig Layout Be
 | Unteren Rand des **C** unteren Rand ausgerichtet **D** | **Y** | `D.Y + D.Height - C.Height` | ![Beispiel für Muster](media/create-responsive-layout/d4.png) |
 | **C** horizontal zentriert, relativ zum **D** | **X** | `D.X + (D.Width - C.Width) / 2`  | ![Beispiel für Muster](media/create-responsive-layout/d5.png) |
 | **C** vertikal zentriert, relativ zum **D** | **Y** | `D.Y + (D.Height - C.Height) /2` | ![Beispiel für Muster](media/create-responsive-layout/d6.png) |
-| **C** positioniert auf der rechten Seite des **D** Abstand von N | **X** | `D.X + D.Width - N` | ![Beispiel für Muster](media/create-responsive-layout/d7.png) |
+| **C** positioniert auf der rechten Seite des **D** Abstand von N | **X** | `D.X + D.Width + N` | ![Beispiel für Muster](media/create-responsive-layout/d7.png) |
 | **C** unten positioniert **D** Abstand von *N*             | **Y** | `D.Y + D.Height + N` | ![Beispiel für Muster](media/create-responsive-layout/d8.png) |
 | **C** füllt Leerzeichen zwischen **D** und Rechte Kante des übergeordneten Elements | **X** | `D.X + D.Width` | ![Beispiel für Muster](media/create-responsive-layout/d9.png) |
 |  | **Width** | `Parent.Width - C.X` |  |
@@ -186,16 +185,16 @@ Bisher haben Sie gelernt, wie Sie Formeln verwenden, Ändern des Steuerelements 
 
 Die Standardformel für eines Bildschirms des **Breite** und **Höhe** Eigenschaften, wie in diesem Artikel, die zuvor beschriebenen wird nicht unbedingt bieten eine gute Erfahrung, wenn ein Benutzer ein Gerät dreht. Eine app für ein Telefon im Hochformat verfügt beispielsweise über eine **DesignWidth** von 640 und ein **DesignHeight** von 1136. Die gleiche app auf einem Smartphone im Querformat verfügen diese Eigenschaftswerte:
 
-- Des Bildschirms **Breite** -Eigenschaftensatz auf `Max(App.Width; App.DesignWidth)`. Der app **Breite** (1136) ist größer als die **DesignWidth** (640), sodass die Formel 1136 ausgewertet wird.
-- Des Bildschirms **Höhe** -Eigenschaftensatz auf `Max(App.Height; App.DesignHeight)`. Der app **Höhe** (640) ist kleiner als die **DesignHeight** (1136), sodass die Formel 1136 ausgewertet wird.
+- Des Bildschirms **Breite** -Eigenschaftensatz auf `Max(App.Width, App.DesignWidth)`. Der app **Breite** (1136) ist größer als die **DesignWidth** (640), sodass die Formel 1136 ausgewertet wird.
+- Des Bildschirms **Höhe** -Eigenschaftensatz auf `Max(App.Height, App.DesignHeight)`. Der app **Höhe** (640) ist kleiner als die **DesignHeight** (1136), sodass die Formel 1136 ausgewertet wird.
 
 Mit einem Bildschirm **Höhe** von 1136 und eine Geräte-Höhe (in diesem Ausrichtung) von 640, muss der Benutzer den Bildschirm vertikal aus, damit alle seinen Inhalt angezeigt, die die Umgebung möglicherweise nicht die gewünschten scrollen.
 
 Anpassen des Bildschirms **Breite** und **Höhe** Eigenschaften, die Ausrichtung, können Sie diese Formeln:
 
-**Breite** = `Max(App.Width; If(App.Width < App.Height; App.DesignWidth; App.DesignHeight))`
+**Breite** = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`
 
-**Höhe** = `Max(App.Height; If(App.Width < App.Height; App.DesignHeight; App.DesignWidth))`
+**Höhe** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
 Diese Formeln Tauschen der app **DesignWidth** und **DesignHeight** Werte, je nachdem, ob das Gerät die Breite kleiner als die Höhe (Hochformat) oder größer als die Höhe (Querformat) ist .
 
@@ -210,10 +209,10 @@ Können Sie des Bildschirms des **Ausrichtung** Eigenschaft, um zu bestimmen, ob
 |--|----------|---|
 | **obere** | **X** | `0` |
 | **obere** | **Y** | `0` |
-| **obere** | **Width** | `If(Parent.Orientation = Layout.Vertical; Parent.Width; Parent.Width / 2)` |
-| **obere** | **Höhe**   | `If(Parent.Orientation = Layout.Vertical; Parent.Height / 2; Parent.Height)` |
-| **niedrigere** | X | `If(Parent.Orientation = Layout.Vertical; 0; Upper.X + Upper.Width)`  |
-| **niedrigere** | Y | `If(Parent.Orientation = Layout.Vertical; Upper.Y + Upper.Height; 0)` |
+| **obere** | **Width** | `If(Parent.Orientation = Layout.Vertical, Parent.Width, Parent.Width / 2)` |
+| **obere** | **Höhe**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
+| **niedrigere** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
+| **niedrigere** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
 | **niedrigere** | **Width** | `Parent.Width - Lower.X` |
 | **niedrigere** | **Höhe** | `Parent.Height - Lower.Y` |
 
@@ -240,7 +239,7 @@ Diese Formel berechnet **"true"** Wenn die Größe ist, mittelgroßen oder grö�
 
 Wenn Sie ein Steuerelement für einen anderen Bruchteil der Bildschirmbreite basierend auf die Größe des Bildschirms belegen möchten, legen Sie die **Breite** -Eigenschaft auf diese Formel:
 
-```
+```powerapps-dot
 Parent.Width *  
     Switch(Parent.Size,  
         ScreenSize.Small, 0.5,  
@@ -253,7 +252,7 @@ Diese Formel legt die Breite des Steuerelements auf der Hälfte der Bildschirmbr
 
 Des Bildschirms **Größe** Eigenschaft wird durch Vergleichen des Bildschirms berechnet **Breite** Eigenschaft, um die Werte in der app **SizeBreakpoints** Eigenschaft. Diese Eigenschaft ist eine einspaltige Tabelle mit Zahlen, die die Breite Haltepunkte angeben, die die benannte Bildschirmgrößen trennen:
 
-In einer app für Tablets oder Webanwendung erstellt, der Standardwert in der app **SizeBreakpoints** Eigenschaft **[600; 900; 1200]**. In einer app für Telefone erstellt, der Wert ist **[1200; 1800; 2400]**. (Die Werte für Phone-apps werden verdoppelt, da solche apps Koordinaten zu verwenden, die effektiv die doppelte die Koordinaten, die in anderen apps verwendet werden.)
+In einer app für Tablets oder Webanwendung erstellt, der Standardwert in der app **SizeBreakpoints** Eigenschaft **[600, 900, 1200]**. In einer app für Telefone erstellt, der Wert ist **[1200, 1800, 2400]**. (Die Werte für Phone-apps werden verdoppelt, da solche apps Koordinaten zu verwenden, die effektiv die doppelte die Koordinaten, die in anderen apps verwendet werden.)
 
 ![Standardwerte der App.SizeBreakpoints-Eigenschaft](media/create-responsive-layout/default-breakpoints.png)
 
