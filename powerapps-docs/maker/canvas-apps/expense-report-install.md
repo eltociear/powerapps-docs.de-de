@@ -1,24 +1,24 @@
 ---
 title: Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560952"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535298"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
 
@@ -29,7 +29,7 @@ Geschätzte Dauer: **10–15 Minuten**
 > [!TIP]
 > Sehen Sie sich [in diesem Video](https://youtu.be/kJXZPILfbwU) eine Demonstration zur Verwendung der Beispiel-App „Expense Report“ an. 
 
-Verfolgen Sie Ausgabenberichte nach – von der Einreichung bis zur Genehmigung. Buchen Sie Positionen als individuellen Ausgabenzuwachs, und senden Sie die Berichte zur Genehmigung, wenn sie fertig sind. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
+Verfolgen Sie Ausgabenberichte nach, von der Einreichung bis zur Genehmigung. Tally-Positionen als individuellen ausgabenzuwachs, und senden für die Genehmigung, wenn Sie fertig sind. Diese App erfordert ein geringes Maß an Einrichtung, um sie an Ihre Anforderungen anzupassen.
 
 ![Startbildschirm der PowerApp „Expense Report“](./media/expense-report-install/expense-report-powerapp.png)
 
@@ -89,7 +89,7 @@ In dieser Liste werden die Ausgabenbereich gespeichert.
 5. Geben Sie im Textfeld **Spaltenname** **Status** ein.
 6. Klicken Sie in der Optionsfeldliste **Type of information in this column is** (Der Informationstyp dieser Spalte ist) auf **Auswahl**.
 7. Geben Sie im Textfeld **Geben Sie jede Auswahl in einer neuen Zeile ein** die folgenden Werte jeweils in einer neuen Zeile ein: 
-    - Offen
+    - Öffnen
     - Ausstehend
     - Approved (Genehmigt)
 8. Geben Sie im Textfeld **Standardwert** **Öffnen** ein.

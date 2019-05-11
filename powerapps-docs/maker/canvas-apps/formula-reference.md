@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c801a67cc7944d32a6a0a93e8b8566618b66da98
+ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559585"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525637"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -49,6 +49,8 @@ Andere Elemente enthalten:
 **[App](functions/signals.md)**: gibt Informationen zur derzeit ausgeführten App zurück, z.B. welcher Bildschirm gerade angezeigt wird.
 
 **[Asin](functions/function-trig.md)**: gibt den Arkussinus einer Zahl im Bogenmaß zurück.
+
+**[AsType](functions/function-astype-istype.md)**  – einen Datensatzverweis als einen bestimmten Entitätstyp behandelt.
 
 **[Atan](functions/function-trig.md)**: gibt den Arkustangens einer Zahl im Bogenmaß zurück.
 
@@ -183,6 +185,8 @@ Andere Elemente enthalten:
 **[IsNumeric](functions/function-isnumeric.md)**: sucht nach einem numerischen Wert.
 
 **[IsToday](functions/function-now-today-istoday.md)**: überprüft, ob ein Datums- oder Uhrzeitwert am heutigen Tag gilt.
+
+**[IsType](functions/function-astype-istype.md)**  – überprüft, ob ein Datensatzverweis auf einen bestimmten Entitätstyp bezieht.  
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)**: gibt den Sprach-Tag des aktuellen Benutzers zurück.

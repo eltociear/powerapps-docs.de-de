@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a46635276f6598cf0591dc21ae5aeb855b6667c1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 60340c3833f61be4acf4780a90d18e483c1dc010
+ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560477"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65521041"
 ---
 # <a name="text-input-control-in-powerapps"></a>Texteingabe-Steuerelement in PowerApps
 Ein Feld, in das der Benutzer Text, Zahlen und andere Daten eingeben kann
@@ -125,6 +124,8 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
+**VirtualKeyboardMode** – Typ der virtuellen Tastatur, Text oder numerische, die auf einem app-Benutzer Touchscreen angezeigt wird. Die **Format** Eigenschaft legt den Standardwert. Unterstützung für Geräte variieren. Geräte, auf denen iOS benötigen mindestens Version 12.2. Die empfohlene Version von Android ist 9.0 und Funktionen von numerischen Tastaturen für Android-Geräte variieren. Windows 10 unterstützt diese Eigenschaft nicht.  
+
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
 **[Width](properties-size-location.md)** – Der Abstand zwischen dem linken und rechten Rand eines Steuerelements.
@@ -142,7 +143,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie eine Schaltfläche hinzu, legen Sie ihre **[Text](properties-core.md)**-Eigenschaft auf **Add** (Hinzufügen) und ihre **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Fügen Sie einen Textkatalog im Hochformat hinzu, legen sie seine **[Items](properties-core.md)**-Eigenschaft auf **Names** und seine **[Text](properties-core.md)**-Eigenschaft von **Subtitle1** auf **ThisItem.FirstName** fest.
@@ -155,7 +156,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu, nennen Sie es **inputPassword**, und legen Sie seine **Mode**-Eigenschaft auf **Password** fest.
 
 1. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Access granted"; "Access denied")**
+   **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 
