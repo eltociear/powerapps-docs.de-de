@@ -1,5 +1,5 @@
 ---
-title: Verwenden einer Beispiel-App (Schnellstart) | Microsoft-Dokumentation
+title: Verwenden einer Beispiel-App | Microsoft-Dokumentation
 description: Ausführliche Anleitungen zum Erstellen einer Canvas-App auf Grundlage eines Beispiels in PowerApps
 author: AFTOwen
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
+ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540323"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65546870"
 ---
-# <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Schnellstart: Erstellen Sie eine Canvas-app aus einem Beispiel in PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Erstellen Sie eine Canvas-app aus einem Beispiel in PowerApps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.
 
 Jedes Beispiel stellt ein reales Szenario dar, verwendet jedoch fiktive Daten. Sie benötigen ein Cloudspeicherkonto wie Dropbox, Google Drive oder OneDrive, um diese Daten zu speichern.
