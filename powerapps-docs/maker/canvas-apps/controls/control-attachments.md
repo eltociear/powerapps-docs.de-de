@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9d24094bfbc596c232e7455ef3d8b8dcdfc5be5c
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320871"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609364"
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
 Ein Steuerelement, mit der Benutzer zum Herunterladen von Dateien auf ihr Gerät als auch hochladen und Löschen von Dateien von einer SharePoint-Liste oder einer Common Data Service-Entität.
@@ -27,9 +27,9 @@ Ein Steuerelement, mit der Benutzer zum Herunterladen von Dateien auf ihr Gerät
 Für das Steuerelement für Anlagen gelten folgende Einschränkungen:
 1. Anlagen werden mit SharePoint-Listen und Entitäten im Common Data Service unterstützt.
 
-1. Die Funktionen zum Hochladen und Löschen funktionieren nur in Formularen.  Das Steuerelement für Anlagen wird im Bearbeitungsmodus deaktiviert angezeigt, wenn es sich nicht in einem Formular befindet. Beachten Sie, dass der Endbenutzer das Formular speichern muss, um hinzugefügte und gelöschte Dateien im Back-End zu speichern.
+1. Hochladen, und Löschen von Funktionen arbeiten nur in einem Formular. Das Steuerelement für Anlagen wird deaktiviert angezeigt bei im Bearbeitungsmodus und nicht in einem Formular. Um hinzugefügte und gelöschte Dateien zu speichern, muss der app-Benutzer das Formular zu speichern. Aufgrund dieser Einschränkung können die Dateianlage-Steuerelement ist nicht verfügbar in der **einfügen** Registerkarte wird jedoch im Formular erscheint, wenn das Formularfeld Anlage in ein Format SharePoint oder Common Data Service aktiviert ist.
 
-1. Sie können nur Dateien bis maximal 10 MB hochladen.  
+1. Sie können Dateien nur dann, wenn sie 10 MB sind oder kleineren hochladen.  
 
 ## <a name="description"></a>Beschreibung
 Ein **Anlagen** gesteuert, die Sie öffnen, hinzufügen und Löschen von Dateien von einer SharePoint-Liste oder einer Common Data Service-Entität.
