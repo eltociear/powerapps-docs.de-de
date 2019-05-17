@@ -99,7 +99,7 @@ search.app:
 <td>successCallback</td>
 <td>Funktion</td>
 <td>Nein</td>
-<td>Ein Feature, das ausgeführt wird, wenn der Datensatz im Schnellerfassungsformular gespeichert wird.
+<td>Ein Feature zum Ausführen, ob der Datensatz im Schnellerfassungsformular gespeichert wird.
 
 Dieser Funktion wird ein Objekt als Parameter übergeben. Das Ziel ist ein <b>savedEntityReference</b>-Array mit den folgenden Eigenschaften, um den erstellten oder angezeigten Datensatz zu identifizieren:
 <ul>

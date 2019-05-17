@@ -2,8 +2,7 @@
 title: Beispiel zu grundlegenden Web-API-Vorgängen (Common Data Service)| Microsoft Docs
 description: 'Diese Beispiele veranschaulichen, wie Sie CRUD-Operationen (Erstellen, Abrufen, Aktualisieren und Löschen) mithilfe der Web-API ausführen. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: f006f88c-74cb-4fde-90e5-e1faf2051673
 caps.latest.revision: 25
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -56,59 +56,59 @@ Dieser Abschnitt erstellt einen einzelnen Kontakt und führt dann eine Reihe von
   
  **Anforderung** 
   
-    ```http
-    POST http://[Organization URI]/api/data/v9.0/contacts HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "firstname": "Peter",  
-      "lastname": "Cambel"  
-    }  
-    ```  
+```http
+POST http://[Organization URI]/api/data/v9.0/contacts HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "firstname": "Peter",  
+  "lastname": "Cambel"  
+}  
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http  
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)  
-    ```  
+```http  
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)  
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Contact 'Peter Cambel' created.  
-    ```  
+```  
+Contact 'Peter Cambel' created.  
+```  
   
-     Die Eigenschaften, die für jeden Attributtyp verfügbar sind, werden im Metadatendokuments definiert und sind auch für den Abschnitt <xref:Microsoft.Dynamics.CRM.EntityTypeIndex> dokumentiert. Allgemeinere Informationen finden Sie unter [Web-API-Typen und -Operationen](web-api-types-operations.md).  
+Die Eigenschaften, die für jeden Attributtyp verfügbar sind, werden im Metadatendokuments definiert und sind auch für den Abschnitt <xref:Microsoft.Dynamics.CRM.EntityTypeIndex> dokumentiert. Allgemeinere Informationen finden Sie unter [Web-API-Typen und -Operationen](web-api-types-operations.md).  
   
 2.  Aktualisieren Sie den Kontakt mit Werten für das Jahreseinkommen (80.000 Dollar) und Job-Position (Junior Developer).  
   
  **Anforderung** 
   
-    ```http  
-    PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "annualincome": 80000,  
-      "jobtitle": "Junior Developer"  
-    }  
-    ```  
+```http  
+PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "annualincome": 80000,  
+  "jobtitle": "Junior Developer"  
+}  
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http  
-    HTTP/1.1 204 No Content  
-    ```  
+```http  
+HTTP/1.1 204 No Content  
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Contact 'Peter Cambel' updated with job title and annual income.  
-    ```  
+```  
+Contact 'Peter Cambel' updated with job title and annual income.  
+```  
   
 3.  Rufen Sie den Kontakt mit den Datensatz explizit mit den initialisierten Eigenschaften ab.  Die `fullname` ist eine schreibgeschützte Eigenschaft, die von den `firstname` und `lastname`-Eigenschaften berechnet wird, die explizit initialisiert wurden, als die Instanz erstellt wurde. Demgegenüber wurde die `description`-Eigenschaft nicht explizit initialisiert, damit diese ein Standardwert, eine `null` Zeichenfolge fest.  
   
@@ -124,208 +124,208 @@ Dieser Abschnitt erstellt einen einzelnen Kontakt und führt dann eine Reihe von
   
  **Anforderung** 
   
-    ```http  
-    GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,annualincome,jobtitle,description HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    ```  
+```http  
+GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,annualincome,jobtitle,description HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```  
   
  **Antwort**  
   
-    ```http
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,annualincome,jobtitle,description)/$entity",  
-       "@odata.etag":"W/\"628883\"",  
-       "fullname":"Peter Cambel",  
-       "annualincome":80000.0000,  
-       "jobtitle":"Junior Developer",  
-       "description":null,  
-       "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
-       "contactid":"60f77a42-5f0e-e611-80e0-00155da84c03"  
-    }  
-    ```  
+```http
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,annualincome,jobtitle,description)/$entity",  
+   "@odata.etag":"W/\"628883\"",  
+   "fullname":"Peter Cambel",  
+   "annualincome":80000.0000,  
+   "jobtitle":"Junior Developer",  
+   "description":null,  
+   "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
+   "contactid":"60f77a42-5f0e-e611-80e0-00155da84c03"  
+}  
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```http    
-    Contact 'Peter Cambel' retrieved:  
-            Income: 80000  
-            Job title: Junior Developer  
-            Description: .    
-    ```  
+```http    
+Contact 'Peter Cambel' retrieved:  
+       Income: 80000  
+       Job title: Junior Developer  
+       Description: .    
+```  
   
-    > [!IMPORTANT]
-    >  Sie sollten immer Auswahl und Filtern bei Abrufvorgängen verwenden, um die Leistung optimieren. Weitere Informationen finden Sie unter [Abfragen von Daten mit Web-API](query-data-web-api.md).  
+> [!IMPORTANT]
+>  Sie sollten immer Auswahl und Filtern bei Abrufvorgängen verwenden, um die Leistung optimieren. Weitere Informationen finden Sie unter [Abfragen von Daten mit Web-API](query-data-web-api.md).  
   
 4.  Aktualisieren Sie die Kontaktentitätsinstanz, indem Sie neue Werte für die selben Eigenschaften festlegen.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http
-    PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "jobtitle": "Senior Developer",  
-      "annualincome": 95000,  
-      "description": "Assignment to-be-determined"  
-    }    
-    ```  
+```http
+PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+   "jobtitle": "Senior Developer",  
+   "annualincome": 95000,  
+   "description": "Assignment to-be-determined"  
+}    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```http    
-    Contact 'Peter Cambel' updated:  
-            Job title: Senior Developer  
-            Annual income: 95000  
-            Description: Assignment to-be-determined    
-    ```  
+```http    
+Contact 'Peter Cambel' updated:  
+       Job title: Senior Developer  
+       Annual income: 95000  
+       Description: Assignment to-be-determined    
+```  
   
-    > [!IMPORTANT]
-    >  Senden Sie nur geänderte Eigenschaften an Updateanforderungen. Weitere Informationen finden Sie unter [Grundlegendes Update](update-delete-entities-using-web-api.md#bkmk_update).  
+> [!IMPORTANT]
+>  Senden Sie nur geänderte Eigenschaften an Updateanforderungen. Weitere Informationen finden Sie unter [Grundlegendes Update](update-delete-entities-using-web-api.md#bkmk_update).  
   
 5.  Legen Sie explizit eine einzelne Eigenschaft fest, die einzelne primäre Telefonnummer. Hinweis: Dies ist eine `PUT` Anforderung und dass der JSON-Schlüssel, der `value` heißt, verwendet wird, wenn der Vorgang oder einzelne Eigenschaften ausgeführt werden.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http  
-    PUT http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "value": "555-0105"  
-    }  
-    ```  
+```http  
+PUT http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "value": "555-0105"  
+}  
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http  
-    HTTP/1.1 204 No Content  
-    ```  
+```http  
+HTTP/1.1 204 No Content  
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Contact 'Peter Cambel' phone number updated.  
-    ```  
+```  
+Contact 'Peter Cambel' phone number updated.  
+```  
   
 6.  Rufen Sie die dieselbe Eigenschaft ab, die einzelne primäre Telefonnummer. Beachten Sie erneut die Verwendung der Schlüssel, der `value` heißt.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http  
-    GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    ```  
+```http  
+GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1",  
-       "value":"555-0105"  
-    }    
-    ```  
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1",  
+   "value":"555-0105"  
+}    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Contact's telephone# is: 555-0105.  
-    ```  
+```  
+Contact's telephone# is: 555-0105.  
+```  
   
 7.  Einen gleichen Kontakt erstellen aber auch die Instanzinformation im gleichen Vorgang zurückgeben. Die letzte Funktion wird durch die `Prefer: return=representation` Kopfzeile aktiviert.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
-    OData-Version: 4.0  
-    Content-Type: application/json; charset=utf-8  
-    Prefer: return=representation  
-    {  
-      "firstname": "Peter_Alt",  
-      "lastname": "Cambel",  
-      "jobtitle": "Junior Developer",  
-      "annualincome": 80000,  
-      "telephone1": "555-0110"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
+OData-Version: 4.0  
+Content-Type: application/json; charset=utf-8  
+Prefer: return=representation  
+{  
+  "firstname": "Peter_Alt",  
+  "lastname": "Cambel",  
+  "jobtitle": "Junior Developer",  
+  "annualincome": 80000,  
+  "telephone1": "555-0110"  
+ }    
+ ```  
   
  **Antwort**  
   
-    ```http    
-    HTTP/1.1 201 Created  
-    Content-Type: application/json; odata.metadata=minimal  
-    Preference-Applied: return=representation  
-    OData-Version: 4.0  
-    {  
-      "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
-    }    
-    ```  
+ ```http    
+ HTTP/1.1 201 Created  
+ Content-Type: application/json; odata.metadata=minimal  
+ Preference-Applied: return=representation  
+ OData-Version: 4.0  
+ {  
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
+ }    
+ ```  
   
  **Konsolenausgabe**  
   
-    ```    
-    Contact 'Peter_Alt Cambel' created:  
-            Annual income: 80000  
-            Job title: Junior Developer  
-    Contact URI: http://[Organization URI]/api/data/v9.0/contacts(199250b7-6cbe-e611-80f7-00155da84c08)  
-    ```  
+ ```    
+ Contact 'Peter_Alt Cambel' created:  
+        Annual income: 80000  
+        Job title: Junior Developer  
+ Contact URI: http://[Organization URI]/api/data/v9.0/contacts(199250b7-6cbe-e611-80f7-00155da84c08)  
+ ```  
   
 8.  Diesen gleichen Kontakt updaten und auch die Instanzinformation im gleichen Vorgang zurückgeben. Diese Funktion wird durch die `Prefer: return=representation` Kopfzeile aktiviert.
   
  **Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
-    OData-Version: 4.0  
-    Content-Type: application/json; charset=utf-8  
-    Prefer: return=representation  
-    {  
-      "firstname": "Peter_Alt",  
-      "lastname": "Cambel",  
-      "jobtitle": "Junior Developer",  
-      "annualincome": 80000,  
-      "telephone1": "555-0110"  
-    }    
-    ```  
+ ```http    
+ POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
+ OData-Version: 4.0  
+ Content-Type: application/json; charset=utf-8  
+ Prefer: return=representation  
+ {  
+   "firstname": "Peter_Alt",  
+   "lastname": "Cambel",  
+   "jobtitle": "Junior Developer",  
+   "annualincome": 80000,  
+   "telephone1": "555-0110"  
+ }    
+ ```  
   
  **Antwort**  
   
-    ```http    
-    HTTP/1.1 201 Created  
-    Content-Type: application/json; odata.metadata=minimal  
-    Preference-Applied: return=representation  
-    OData-Version: 4.0  
-    {  
-      "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
-    }    
-    ```  
+ ```http    
+ HTTP/1.1 201 Created  
+ Content-Type: application/json; odata.metadata=minimal  
+ Preference-Applied: return=representation  
+ OData-Version: 4.0  
+ {  
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
+ }    
+ ```  
   
  **Konsolenausgabe**  
   
-    ```    
-    Contact 'Peter_Alt Cambel' updated:  
-            Annual income: 95000  
-            Job title: Senior Developer   
-    ```  
+```    
+Contact 'Peter_Alt Cambel' updated:  
+        Annual income: 95000  
+        Job title: Senior Developer   
+```  
   
 <a name="bkmk_section2"></a>  
  
@@ -335,51 +335,51 @@ Dieser Abschnitt erstellt eine neue Firmeninstanz namens `Contoso, Ltd.` und ver
   
 1.  Legen Sie die Firma Contoso, Ltd an, und setzen Sie das primäre Kontaktattribut auf den vorhandenen Kontakt Peter Cambel.  Der `@odata.bind` Zusatz gibt an, dass eine Zuordnung erstellt wurde und die `primarycontactid` einzelbewertete Navigationseigenschaft dem bestehenden Kontakt Peter Cambel hinzugefügt wurde.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http  
-    POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "name": "Contoso Inc",  
-      "telephone1": "555-5555",  
-      "primarycontactid@odata.bind": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
-    }    
-    ```  
+```http  
+POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "name": "Contoso Inc",  
+  "telephone1": "555-5555",  
+  "primarycontactid@odata.bind": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
+}    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Account 'Contoso Inc' created.  
-    ```  
+```  
+Account 'Contoso Inc' created.  
+```  
   
 2.  Rufen Sie den primären Kontakt für die Firma Contoso, Ltd. mithilfe von `$expand` mit der `primarycontactid` einzel-bewerteten Navigationseigenschaft auf, um auf den zugeordneten Datensatz <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> zuzugreifen.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0   
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0   
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
-    {   
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+{   
        "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
        "@odata.etag":"W/\"628886\"",  
        "name":"Contoso Inc",  
@@ -391,17 +391,17 @@ Dieser Abschnitt erstellt eine neue Firmeninstanz namens `Contoso, Ltd.` und ver
           "annualincome":95000.0000,  
           "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
           "contactid":"60f77a42-5f0e-e611-80e0-00155da84c03"  
-       }  
-    }    
-    ```  
+     }  
+}    
+```  
   
  **Konsolenausgabe**  
   
-    ```    
-    Account 'Contoso Inc' has primary contact 'Peter Cambel':  
-         Job title: Senior Developer  
-         Income: 95000    
-    ```  
+ ```    
+ Account 'Contoso Inc' has primary contact 'Peter Cambel':  
+     Job title: Senior Developer  
+     Income: 95000    
+ ```  
   
 <a name="bkmk_section3"></a>  
  
@@ -415,133 +415,133 @@ Dieser Abschnitt erstellt eine Firma, einen primären Kontakt und einen Reihe vo
   
  **Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
+ ```http    
+ POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
+ Content-Type: application/json  
+ OData-MaxVersion: 4.0  
+ OData-Version: 4.0  
+ {  
+   "name": "Fourth Coffee",  
+   "primarycontactid": {  
+   "firstname": "Susie",  
+   "lastname": "Curtis",  
+   "jobtitle": "Coffee Master",  
+   "annualincome": 48000,  
+   "Contact_Tasks": [  
+   {  
+       "subject": "Sign invoice",  
+       "description": "Invoice #12321",  
+       "scheduledend": "2016-04-19T00:00:00-07:00"  
+    },  
     {  
-      "name": "Fourth Coffee",  
-      "primarycontactid": {  
-        "firstname": "Susie",  
-        "lastname": "Curtis",  
-        "jobtitle": "Coffee Master",  
-        "annualincome": 48000,  
-        "Contact_Tasks": [  
-          {  
-            "subject": "Sign invoice",  
-            "description": "Invoice #12321",  
-            "scheduledend": "2016-04-19T00:00:00-07:00"  
-          },  
-          {  
-            "subject": "Setup new display",  
-            "description": "Theme is - Spring is in the air",  
-            "scheduledstart": "2016-04-20T00:00:00-07:00"  
-          },  
-          {  
-            "subject": "Conduct training",  
-            "description": "Train team on making our new blended coffee",  
-            "scheduledstart": "2016-06-01T00:00:00-07:00"  
-          }  
-        ]  
-      }  
-    }    
-    ```  
+       "subject": "Setup new display",  
+       "description": "Theme is - Spring is in the air",  
+       "scheduledstart": "2016-04-20T00:00:00-07:00"  
+    },  
+    {  
+       "subject": "Conduct training",  
+       "description": "Train team on making our new blended coffee",  
+       "scheduledstart": "2016-06-01T00:00:00-07:00"  
+     }  
+   ]  
+  }  
+}    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Account 'Fourth Coffee' created.  
-    ```  
+```  
+Account 'Fourth Coffee' created.  
+```  
   
 2.  Rufen Sie selektiv die neu erstellte Fourth Coffee-Firma und den primären Kontakt ab.  Eine Erweiterung wird auf der einzel-bewerteten Navigationseigenschaft `primarycontactid`ausgeführt.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0   
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
-       "@odata.etag":"W/\"628902\"",  
-       "name":"Fourth Coffee",  
-       "accountid":"6af77a42-5f0e-e611-80e0-00155da84c03",  
-       "primarycontactid":{   
-          "@odata.etag":"W/\"628892\"",  
-          "fullname":"Susie Curtis",  
-          "jobtitle":"Coffee Master",  
-          "annualincome":48000.0000,  
-          "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
-          "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03"  
-       }  
-    }    
-    ```  
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0   
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
+   "@odata.etag":"W/\"628902\"",  
+   "name":"Fourth Coffee",  
+   "accountid":"6af77a42-5f0e-e611-80e0-00155da84c03",  
+   "primarycontactid":{   
+     "@odata.etag":"W/\"628892\"",  
+     "fullname":"Susie Curtis",  
+     "jobtitle":"Coffee Master",  
+     "annualincome":48000.0000,  
+     "_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03",  
+     "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03"  
+  }  
+}    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```    
-    Account 'Fourth Coffee' has primary contact 'Susie Curtis':  
-            Job title: Coffee Master  
-            Income: 48000    
-    ```  
+```    
+Account 'Fourth Coffee' has primary contact 'Susie Curtis':  
+       Job title: Coffee Master  
+       Income: 48000    
+```  
   
 3.  Rufen Sie selektiv die dazugehörenden Aufgaben auf, die dem primären Kontakt zugeordnet werden, der im vorherigen Vorgang abgerufen wird.  Eine Erweiterung wird auf der Sammlungs-bewerteten Navigationseigenschaft `Contact_Tasks`ausgeführt.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,&$expand=Contact_Tasks($select=subject,description,scheduledstart,scheduledend) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,&$expand=Contact_Tasks($select=subject,description,scheduledstart,scheduledend) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0   
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,Contact_Tasks,Contact_Tasks(subject,description,scheduledstart,scheduledend))/$entity",  
-       "@odata.etag":"W/\"628892\"",  
-       "fullname":"Susie Curtis",  
-       "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03",  
-       "Contact_Tasks":[   
-          {   
-             "@odata.etag":"W/\"628903\"",  
-             "subject":"Sign invoice",  
-             "description":"Invoice #12321",  
-             "scheduledstart":"2016-04-19T00:00:00Z",  
-             "scheduledend":"2016-04-19T00:00:00Z",  
-             "activityid":"6cf77a42-5f0e-e611-80e0-00155da84c03"  
-          },  
-          {   
-             "@odata.etag":"W/\"628905\"",  
-             "subject":"Setup new display",  
-             "description":"Theme is - Spring is in the air",  
-             "scheduledstart":"2016-04-20T00:00:00Z",  
-             "scheduledend":"2016-04-20T00:00:00Z",  
-             "activityid":"6df77a42-5f0e-e611-80e0-00155da84c03"  
-          },  
+```http    
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0   
+{   
+    "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,Contact_Tasks,Contact_Tasks(subject,description,scheduledstart,scheduledend))/$entity",  
+    "@odata.etag":"W/\"628892\"",  
+    "fullname":"Susie Curtis",  
+    "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03",  
+    "Contact_Tasks":[   
+      {   
+         "@odata.etag":"W/\"628903\"",  
+         "subject":"Sign invoice",  
+         "description":"Invoice #12321",  
+         "scheduledstart":"2016-04-19T00:00:00Z",  
+         "scheduledend":"2016-04-19T00:00:00Z",  
+         "activityid":"6cf77a42-5f0e-e611-80e0-00155da84c03"  
+      },  
+      {   
+         "@odata.etag":"W/\"628905\"",  
+         "subject":"Setup new display",  
+         "description":"Theme is - Spring is in the air",  
+         "scheduledstart":"2016-04-20T00:00:00Z",  
+         "scheduledend":"2016-04-20T00:00:00Z",  
+         "activityid":"6df77a42-5f0e-e611-80e0-00155da84c03"  
+      },  
           {   
              "@odata.etag":"W/\"628907\"",  
              "subject":"Conduct training",  
@@ -552,27 +552,27 @@ Dieser Abschnitt erstellt eine Firma, einen primären Kontakt und einen Reihe vo
           }  
        ]  
     }    
-    ```  
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```    
-    Contact 'Susie Curtis' has the following assigned tasks:  
-    Subject: Sign invoice,  
-            Description: Invoice #12321  
-            Start: 4/19/2016  
-            End: 4/19/2016  
+```    
+Contact 'Susie Curtis' has the following assigned tasks:  
+Subject: Sign invoice,  
+        Description: Invoice #12321  
+        Start: 4/19/2016  
+        End: 4/19/2016  
   
-    Subject: Setup new display,  
-            Description: Theme is - Spring is in the air  
-            Start: 4/20/2016  
-            End: 4/20/2016  
+Subject: Setup new display,  
+        Description: Theme is - Spring is in the air  
+        Start: 4/20/2016  
+        End: 4/20/2016  
   
-    Subject: Conduct training  
-            Description: Train team on making our new blended coffee,  
-            Start: 6/1/2016  
-            End: 6/1/2016    
-    ```  
+Subject: Conduct training  
+        Description: Train team on making our new blended coffee,  
+        Start: 6/1/2016  
+        End: 6/1/2016    
+```  
   
 <a name="bkmk_section4"></a>
    
@@ -582,44 +582,44 @@ In diesem Abschnitt wird gezeigt, wie vorhandene Entitätsinstanzen zugeordnet w
   
 1.  Fügen Sie Peter Cambel als Kontakt der Firma Fourth Coffee mithilfe der `contact_customer_accounts` Sammlung-bewerteten Navigationseigenschaft hinzu. Beachten Sie die Verwendung des Schlüssels `@odata.id`, um den zugeordneten Datensatz zu definieren.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "@odata.id": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "@odata.id": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
+}    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Contact 'Peter Cambel' associated to account 'Fourth Coffee'.  
-    ```  
+```  
+Contact 'Peter Cambel' associated to account 'Fourth Coffee'.  
+```  
   
 2.  Bestätigen Sie den vorhergehenden Vorgang, indem Sie die Sammlung von Kontakten für das Konto Fourth Coffee abrufen. Die Antwort enthält das Element Array mit einem einzigen Element, das kürzlich dem Kontakt Peter Cambel hinzugefügt wurde.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts?$select=fullname,jobtitle HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts?$select=fullname,jobtitle HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
+```http    
     HTTP/1.1 200 OK  
     Content-Type: application/json; odata.metadata=minimal  
     OData-Version: 4.0   
@@ -630,44 +630,44 @@ In diesem Abschnitt wird gezeigt, wie vorhandene Entitätsinstanzen zugeordnet w
         }  
       ]  
     }    
-    ```  
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```    
+```    
     Contact list for account 'Fourth Coffee':  
-            Name: Peter Cambel, Job title: Senior Developer    
-    ```  
+    Name: Peter Cambel, Job title: Senior Developer    
+```  
   
 3.  Entfernen der Zuordnung, die zwischen der Firma Fourth Coffee und dem Kontakte Peter Cambel erstellt wurde.  
   
  **Anforderung** 
   
-    ```http    
-    DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref?$id=http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref?$id=http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
  **Konsolenausgabe**  
   
-    ```  
-    Contact 'Peter Cambel' dissociated from account 'Fourth Coffee'.  
-    ```  
+```  
+Contact 'Peter Cambel' dissociated from account 'Fourth Coffee'.  
+```  
   
 4.  Erstellen eines Mitbewerbers namens `Adventure Works`  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/competitors HTTP/1.1  
+```http    
+POST http://[Organization URI]/api/data/v9.0/competitors HTTP/1.1  
     Content-Type: application/json  
     OData-MaxVersion: 4.0  
     OData-Version: 4.0  
@@ -675,138 +675,138 @@ In diesem Abschnitt wird gezeigt, wie vorhandene Entitätsinstanzen zugeordnet w
       "name": "Adventure Works",  
       "strengths": "Strong promoter of private tours for multi-day outdoor adventures"  
     }    
-    ```  
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(77f77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(77f77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Competitor 'Adventure Works' created.  
-    ```  
+```  
+Competitor 'Adventure Works' created.  
+```  
   
 5.  Erstellen einer Verkaufschance namens `River rafting adventure`  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/opportunities HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "name": "River rafting adventure",  
-      "description": "Sales team on a river-rafting offsite and team building"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/opportunities HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "name": "River rafting adventure",  
+  "description": "Sales team on a river-rafting offsite and team building"  
+}    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content  
-    OData-Version: 4.0  
-    OData-EntityId: http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)    
-    ```  
+```http    
+HTTP/1.1 204 No Content  
+OData-Version: 4.0  
+OData-EntityId: http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Opportunity 'River rafting adventure' created.  
-    ```  
+```  
+Opportunity 'River rafting adventure' created.  
+```  
   
 6.  Ordnen Sie die neue Verkaufschance diesem neuen Mitbewerber zu. Beachten Sie, dass dieselbe allgemeine Syntax in dieser m: n-Zuordnung verwendet wird, wie im vorherigen Beispiel eine 1: n-Zuordnung verwendet wurde.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    POST http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
-    {  
-      "@odata.id": "http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)"  
-    }    
-    ```  
+```http    
+POST http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+{  
+  "@odata.id": "http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)"  
+}    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Opportunity 'River rafting adventure' associated with competitor 'Adventure Works'.  
-    ```  
+```  
+Opportunity 'River rafting adventure' associated with competitor 'Adventure Works'.  
+```  
   
 7.  Rufen Sie selektiv alle Verkaufschancen ab, die mit dem Mitbewerber Adventure Works zugeordnet werden.  Ein Array mit einer einzelnen Verkaufschance wird zurückgegeben.  
   
  **Anforderung** 
   
-    ```http    
-    GET http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=opportunitycompetitors_association($select=name,description) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+GET http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=opportunitycompetitors_association($select=name,description) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
  **Antwort**  
   
-    ```http    
-    HTTP/1.1 200 OK  
-    {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#competitors(name,opportunitycompetitors_association,opportunitycompetitors_association(name,description))/$entity",  
-       "@odata.etag":"W/\"628913\"",  
-       "name":"Adventure Works",  
-       "competitorid":"77f77a42-5f0e-e611-80e0-00155da84c03",  
-       "opportunitycompetitors_association":[   
-          {   
-             "@odata.etag":"W/\"628917\"",  
-             "name":"River rafting adventure",  
-             "description":"Sales team on a river-rafting offsite and team building",  
-             "opportunityid":"7cf77a42-5f0e-e611-80e0-00155da84c03"  
-          }  
-       ]  
-    }    
-    ```  
+```http    
+HTTP/1.1 200 OK  
+{   
+   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#competitors(name,opportunitycompetitors_association,opportunitycompetitors_association(name,description))/$entity",  
+   "@odata.etag":"W/\"628913\"",  
+   "name":"Adventure Works",  
+   "competitorid":"77f77a42-5f0e-e611-80e0-00155da84c03",  
+   "opportunitycompetitors_association":[   
+      {   
+        "@odata.etag":"W/\"628917\"",  
+        "name":"River rafting adventure",  
+        "description":"Sales team on a river-rafting offsite and team building",  
+        "opportunityid":"7cf77a42-5f0e-e611-80e0-00155da84c03"  
+      }  
+   ]  
+}    
+```  
   
  **Konsolenausgabe**  
   
-    ```    
-    Competitor 'Adventure Works' has the following opportunities:  
-            Name: River rafting adventure,  
-            Description: Sales team on a river-rafting offsite and team building    
-    ```  
+```    
+Competitor 'Adventure Works' has the following opportunities:  
+       Name: River rafting adventure,  
+       Description: Sales team on a river-rafting offsite and team building    
+```  
   
 8.  So heben Sie die Zuordnung eines Mitbewerbers zu einer Verkaufschance auf:  Beachten Sie erneut, das dieselbe allgemeine Syntax verwendet wird, die auch eine 1: n-Zuordnung entfernt..  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref?$id=http://[Token-CRM-Org-Name]/Contoso/api/data/v8.1/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http    
+DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref?$id=http://[Token-CRM-Org-Name]/Contoso/api/data/v8.1/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
- **Konsolenausgabe**  
+**Konsolenausgabe**  
   
-    ```  
-    Opportunity 'River rafting adventure' disassociated from competitor 'Adventure Works'.  
-    ```  
+```  
+Opportunity 'River rafting adventure' disassociated from competitor 'Adventure Works'.  
+```  
   
 <a name="bkmk_section5"></a> 
   
@@ -817,41 +817,41 @@ This section demonstrates how to delete entity instances. The corresponding mess
   
 1.  Jedes Element der Sammlung der Entität der URLs wird gelöscht.  Der erste ist ein Kontaktdatensatz von Peter Cambel.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http
-    DELETE http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    Content-Type: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0    
-    ```  
+```http
+DELETE http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+Content-Type: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0    
+```  
   
- **Antwort**  
+**Antwort**  
   
-    ```http    
-    HTTP/1.1 204 No Content    
-    ```  
+```http    
+HTTP/1.1 204 No Content    
+```  
   
 2.  Nachfolgende Iterationen durch die Sammlung löschen die verbleibenden Datensätze.  
   
- **Anforderung** 
+**Anforderung** 
   
-    ```http    
-    DELETE http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+```http    
+DELETE http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+DELETE http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .  
+DELETE http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .  
   
-    DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
-    . . .    
-    ```  
+DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+. . .    
+```  
   
 ### <a name="see-also"></a>Siehe auch  
 
@@ -861,4 +861,3 @@ This section demonstrates how to delete entity instances. The corresponding mess
 [Entitäten aktualisieren und löschen mithilfe der Web API](update-delete-entities-using-web-api.md)<br />
 [Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web API](associate-disassociate-entities-using-web-api.md)<br />
 [Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md)<br />
-

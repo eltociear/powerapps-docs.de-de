@@ -1,8 +1,8 @@
 ---
-title: "Nutzen von XRM-Tooling zum Ausführen von Aktionen in Dynamics 365 (Entwicklerhandbuch zu Dynamics\_365 Customer Engagement) | MicrosoftDocs"
+title: Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service | MicrosoftDocs
 description: 'Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um Operationen mit Daten in Dynamics 365 zu erstellen, abzurufen, zu aktualisieren und zu löschen'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -12,7 +12,6 @@ applies_to:
   - Dynamics 365 (online)
 ms.assetid: 72e9238d-e0fb-453b-b1ab-3a15ffb19838
 caps.latest.revision: 13
-author: Navakiran
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
@@ -24,7 +23,7 @@ search.app:
 
 Das Klassenobjekt <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> wird verwenden, um Aktionen mit Ihren Dynamics 365-Daten ausführen, z. B. Daten erstellen, aktualisieren, abrufen oder löschen.
 
-Sie können jetzt die <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode verwenden, um eine Webanforderung anhand der XRM-Web-API auszuführen.
+Sie können jetzt die <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode zum Ausführen einer Webanforderung anhand der XRM-Web-API.
 
 Das folgende Codebeispiel demonstriert die Ausführung einer Webanforderung mithilfe von <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode. 
 
@@ -32,6 +31,7 @@ Das folgende Codebeispiel demonstriert die Ausführung einer Webanforderung mith
 > Diese Methode gilt nur, wenn der Authentifizierungstyp als `OAuth` oder `Certificate` angegeben ist.
 
 ## <a name="create-a-record"></a>Erstellen eines Datensatzes
+
 Das folgende Codebeispiel demonstriert, die Erstellung eines Datensatzes mithilfe von <!--<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>.<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmWebRequest>--> Methode. Erstellen Sie in diesem Beispiel eine Firma und zeigen Sie dann im Antwortobjekt die ID an.  
 
 ```csharp
@@ -41,34 +41,26 @@ Das folgende Codebeispiel demonstriert, die Erstellung eines Datensatzes mithilf
         {"OData-Version", new List<string>(){"4.0"}}
       };
 
+using (CrmServiceClient svc = new CrmServiceClient(conn))
+ {
+    if (svc.IsReady)
+    {
+      HttpResponseMessage response = svc.ExecuteCrmWebRequest(HttpMethod.Get, "accounts?$select=name", "{ \"name\":\"Test Account\"}", ODataHeaders, "application/json");
 
-            using (CrmServiceClient svc = new CrmServiceClient(conn))
-            {
+    if (response.IsSuccessStatusCode)
+     {
+        var accountUri = response.Headers.GetValues("OData-EntityId").FirstOrDefault();
+        Console.WriteLine("Account URI: {0}", accountUri);
+       }
+    else
+     {
+       Console.WriteLine(response.ReasonPhrase);
+        }
 
-                if (svc.IsReady)
-                {
-                    HttpResponseMessage response = svc.ExecuteCrmWebRequest(HttpMethod.Get, "accounts?$select=name", "{ \"name\":\"Test Account\"}", ODataHeaders, "application/json");
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        
-                        var accountUri = response.Headers.GetValues("OData-EntityId").FirstOrDefault();
-
-                       Console.WriteLine("Account URI: {0}", accountUri);
-                    }
-                    else
-                    {
-                        Console.WriteLine(response.ReasonPhrase);
-                    }
-
-                }
-                else
-                {
-                    Console.WriteLine(svc.LastCrmError);
-                }
-
-
-
-            }
+  }
+    else
+      {
+        Console.WriteLine(svc.LastCrmError);
+           }
+}
 ```
-

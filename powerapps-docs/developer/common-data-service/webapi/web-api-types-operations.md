@@ -2,8 +2,7 @@
 title: Web-API-Typen und -vorgänge (Common Data Service) | Microsoft Docs
 description: 'Dieses Thema beschreibt, was für Sie verfügbar ist, um die Web-API vis-a-vis zu verwenden. Es informiert über wichtige Themen und darüber, wie Sie benötigte Informationen in der Dokumentation finden, die aus Service- und Metadaten-Dokumenten erstellt wurde und aus der Dokumentation zu Systementitätstypen, Funktionen und Aktionen'
 ms.custom: ''
-ms.date: 02/05/2019
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,8 @@ applies_to:
 ms.assetid: d80cfb87-d4f1-4c75-bcc8-4f54d1351e26
 caps.latest.revision: 27
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -23,7 +22,10 @@ search.app:
 ---
 # <a name="web-api-types-and-operations"></a>Internet API-Typen und -Vorgänge
 
-Um Web API zu verwenden, müssen Sie Informationen zu dem suchen, was für Sie zur Nutzung verfügbar ist. Der Dienst beschreibt sich über Service- und Metadatendokumente, auf die Sie zugreifen können. Dieses Thema enthält wichtige Konzepte und beschreibt, wie Sie die von Ihnen benötigten Informationen mithilfe von Dokumentationen finden, die aus Service- und Metadatendokumenten sowie der Dokumentation der Systementitätstypen, Funktionen und Aktionen erstellt werden.  
+Um Web API zu verwenden, müssen Sie Informationen zu dem suchen, was für Sie zur Nutzung verfügbar ist. Der Dienst beschreibt sich über Service- und Metadatendokumente, auf die Sie zugreifen können. Dieses Thema enthält wichtige Konzepte und beschreibt, wie Sie die von Ihnen benötigten Informationen mithilfe von Dokumentationen finden, die aus Service- und Metadatendokumenten sowie der Dokumentation der Systementitätstypen, Funktionen und Aktionen erstellt werden. 
+
+> [!NOTE]
+> Informationen in diesem Thema gelten auch für Benutzer von Dynamics 365 for Customer Engagement-Apps (online und on-premises).
   
 <a name="bkmk_terminology"></a>
   
@@ -375,4 +377,5 @@ Ein normale überschneidene Entität hat nur die folgenden vier grundlegenden Ei
 
 [Common Data Service-Web-API verwenden](overview.md)<br />
 [Authentifizierung beim Common Data Service mit der Web-API](authenticate-web-api.md)<br />
-[Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)
+[Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)<br/>
+[Entwicklerhandbuch zu Dynamics 365 for Customer Engagement-Apps](/dynamics365/customer-engagement/developer/developer-guide)

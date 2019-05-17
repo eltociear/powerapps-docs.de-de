@@ -2,7 +2,7 @@
 title: Nutzung von XRM-Tooling zum Ausführen von Aktionen in Common Data Service (Common Data Service) | Microsoft Docs
 description: 'Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um Vorgänge mit „Common Data Service”-Daten zu erstellen, abzurufen, zu aktualisieren und zu löschen'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: 845a198f-a2b1-4c38-83e8-0968e684b627
 caps.latest.revision: 13
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer

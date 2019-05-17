@@ -24,6 +24,9 @@ Der Organisationsservice wird für die Verwendung mit dem .NET Framework und den
 
 Einige Erweiterungsfunktionen, wie z. B. Plug-Ins und Workflowerweiterungen, sind von dem .NET Framework und den Klassen abhängig, die in diesen Assemblys definiert sind. Deshalb ist der Organisationsservice die einzige Option, wenn diese Methoden zum Erweitern von Common Data Service verwendet werden.
 
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Verwenden des Dynamics 365 for Customer Engagement-Organisationsdiensts](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-organization-service)
+
 ## <a name="organization-service-assemblies"></a>Organisationsserviceassemblys
 
 Es ist wichtig zu wissen, dass der Organisationsservice die Plattform definiert. Der Organisationsservice definiert die unterstützten Vorgänge als Nachrichten. Jede Nachricht hat einen Namen. Diese Meldungen entsprechen den Ereignissen, die vom Ereignisframework ausgegeben werden. Weitere Informationen: [Ereignisframework](../event-framework.md)

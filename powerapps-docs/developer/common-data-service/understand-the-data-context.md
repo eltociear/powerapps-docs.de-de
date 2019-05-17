@@ -54,7 +54,7 @@ Wie beschrieben unter [Nachrichten mit Organisationsdienst verwenden](org-servic
 
 Wie im [Ereignisframework](event-framework.md) beschrieben, durchlaufen Vorgänge eine Reihe von Phasen, und Sie können Ihr Plug-In in Phasen registrieren, die auftreten, bevor die Daten in die Datenbank geschrieben werden. Innerhalb der **PreValidation**- und **PreOperation**-Phasen können Sie die Werte der `InputParameters` lesen und ändern, sodass Sie das erwartete Ergebnis des Datenenvorgangs steuern können.
 
-Wenn Sie feststellen, dass die Werte in der `InputParameters`-Sammlung eine Bedingung darstellen, die Sie nicht zulassen können, können Sie eine <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> auslösen (vorzugsweise in der Phase **PreValidation**). Dadurch wird der Vorgang abgebrochen und dem Benutzer mit einem synchronsen Plug-In ein Fehler angezeigt, oder es wird der Fehler protokolliert, wenn das Plug-In asynchron ist. Weitere Informationen: [Abbrechen eines Vorgangs](#cancelling-an-operation)
+Wenn Sie feststellen, dass die Werte in der `InputParameters`-Sammlung eine Bedingung darstellen, die Sie nicht zulassen können, können Sie eine <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> auslösen (vorzugsweise in der Phase **PreValidation**). Dadurch wird der Vorgang abgebrochen und dem Benutzer mit einem synchronsen Plug-In ein Fehler angezeigt, oder es wird der Fehler protokolliert, wenn das Plug-In asynchron ist. Weitere Informationen: [Abbrechen eines Vorgangs](handle-exceptions.md#cancelling-an-operation)
 
 ## <a name="outputparameters"></a>OutputParameters
 

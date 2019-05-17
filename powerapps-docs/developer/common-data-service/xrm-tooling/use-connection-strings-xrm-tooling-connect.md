@@ -2,7 +2,7 @@
 title: Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service (Common Data Service) | Microsoft Docs
 description: XRM-Tooling ermöglicht Ihnen die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: a98b2fce-df49-4b60-91f4-a4446aa61cd3
 caps.latest.revision: 21
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -23,33 +23,37 @@ search.app:
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service
 
-Mit Common Data Service ermöglicht Ihnen XRM-Tooling die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in SQL Server verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, Common Data Service-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht hartcodiert in der Anwendung, um eine Verbindung mit Ihrer Common Data Service-Umgebung herzustellen.  
-  
+Mit Common Data Service ermöglicht Ihnen XRM-Tooling die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in **SQL Server** verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, Common Data Service-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht hartcodiert in der Anwendung, um eine Verbindung mit Ihrer Common Data Service-Umgebung herzustellen.  
+
+> [!NOTE]
+> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Verwenden von Verbindungszeichenfolgen zum Herstellen einer Verbindung zu Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect)
+
 <a name="Create"></a> 
 
 ## <a name="create-a-connection-string"></a>Erstellen einer Verbindungszeichenfolge
 
- Sie geben diese Verbindungszeichenfolge in der Datei app.config oder web.config für das Projekt an, wie im folgenden Beispiel angezeigt.  
+ Sie geben diese Verbindungszeichenfolge in der Datei `app.config` oder `web.config` für das Projekt an, wie im folgenden Beispiel angezeigt.  
   
 ```xml  
 <connectionStrings>  
-    <add name="MyCDSServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test;" />  
+    <add name="MyCDSServer" connectionString="AuthType=Office365;Url=http://contoso:8080/Test;UserName=jsmith@contoso.onmicrosoft.com; 
+  Password=passcode" />  
 </connectionStrings>  
 ```  
   
 > [!IMPORTANT]
->  Wenn Sie vertrauliche Informationen zur Datei app.config oder web.config hinzufügen, z. B. ein Firmenkennwort, müssen Sie sicherstellen, dass geeignete Sicherheitsvorkehrungen zum Schutz dieser Informationen getroffen werden.  
+> Wenn Sie vertrauliche Informationen zu `app.config` oder `web.config file` hinzufügen, z. B. ein Firmenkennwort, müssen Sie sicherstellen, dass geeignete Sicherheitsvorkehrungen zum Schutz dieser Informationen getroffen werden.  
   
  Nachdem Sie die Verbindungszeichenfolge erstellt haben, verwenden Sie diese, um ein <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Objekt zu erstellen.  
   
 ```csharp  
 //Use the connection string named "MyCDSServer"  
 //from the configuration file  
-CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionStrings["MyCDSServer"].ConnectionString);  
+CrmServiceClient svc = new CrmServiceClient(ConnectionString);  
 ```  
   
 > [!NOTE]
->  Sie müssen die folgende `using`-Direktive in Ihrem Code verwenden, um auf den `System.Configuration`-Namespace verweisen, um auf die Verbindungszeichenfolge in Ihrem Code zuzugreifen: `using System.Configuration;`  
+> Sie müssen die folgende `using`-Direktive in Ihrem Code verwenden, um auf den `System.Configuration`-Namespace verweisen, um auf die Verbindungszeichenfolge in Ihrem Code zuzugreifen: `using System.Configuration;`  
   
  Nachdem Sie ein <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Objekt erstellt haben, können Sie das Objekt verwenden, um Aktionen in Common Data Service auszuführen. Weitere Informationen: [Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)  
   
@@ -74,28 +78,14 @@ CrmServiceClient crmSvc = new CrmServiceClient(ConfigurationManager.ConnectionSt
 |`LoginPrompt`|Gibt an, ob der Benutzer zur Eingabe der Anmeldeinformationen aufgefordert wird, wenn die Anmeldeinformationen nicht angegeben wurden. Gültige Werte sind:<br /><br /> -   `Always`: Fordert immer den Benutzer auf, Anmeldeinformationen anzugeben.<br />-   `Auto`: Ermöglicht dem Benutzer, in der Anmeldungssteuerelement-Benutzeroberfläche auszuwählen, ob die Eingabeaufforderung angezeigt wird oder nicht.<br />-   `Never`: Fordert den Benutzer nicht auf, Anmeldeinformationen anzugeben. Wenn für die Verwendung einer Verbindungsmethode keine Benutzeroberfläche bereitgestellt wird, müssen Sie diesen Wert verwenden.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
 |`StoreName` oder `CertificateStoreName`|Definiert den Speichernamen, unter dem das Zertifikat für den Fingerabdruck gefunden wird. Wenn festgelegt, ist der Fingerabdruck erforderlich.|
 |`Thumbprint` oder `CertThumbprint`| Definiert den Fingerabdruck des Zertifikats, der während einer S2S-Verbindung verwendet wird. Wenn festgelegt, ist die AppID erforderlich und die Benutzer-ID und das Kennwort werden ignoriert.|
-|`SkipDiscovery`|Gibt an, ob Instanz-Erkennung aufgerufen wird, um die Verbindungs-uri für eine bestimmte Instanz zu bestimmen. Ab Nuget-Version Microsoft.CrmSdk.XrmTooling.CoreAssembly 9.0.2.7, Standard = true. Standard der ältere Versionen ist false. <br/> Hinweis: Wenn Sie true  festlegen, ist es wichtig, dass der Benutzer den entsprechenden und präzisen URI für die Zielinstanz zur Verfügung hat.| 
-  
+|`SkipDiscovery`|Gibt an, ob Instanz-Erkennung aufgerufen wird, um die Verbindungs-URI für eine bestimmte Instanz zu bestimmen. Ab NuGet-Version Microsoft.CrmSdk.XrmTooling.CoreAssembly 9.0.2.7, Standard = true. Standard der ältere Versionen ist false. <br/> Hinweis: Wenn Sie true  festlegen, ist es wichtig, dass der Benutzer den entsprechenden und präzisen URI für die Zielinstanz zur Verfügung hat.|
+
 <a name="Examples"></a>
 
 ## <a name="connection-string-examples"></a>Beispiele für Verbindungszeichenfolgen
  
-Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für die Verbindung mit Bereitstellungen und Authentifizierungsszenarien verwenden können.  
+Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für die Verbindung mit Online-Bereitstellungen und Authentifizierungsszenarien verwenden können. Die Verbindungszeichenfolgenbeispiele on-premises und IFD-Bereitstellungsinstanzen ist nun in der Customer Engagement-Dokumentation unter folgendem Link verfügbar: [Verwenden Sie Zeichenfolgen in XRM-Tooling, um eine Verbindung mit Customer Engagement herzustellen](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
 
-<!-- TODO: Get rid of on-premises examples & settings? or just comment them out? -->
-
-<!-- ### Integrated on-premises authentication  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test;" />  
-```  
-  
-### Named account using on-premises authentication  
-  
-```xml  
-<add name="MyCRMServer" connectionString="AuthType=AD;Url=http://contoso:8080/Test; Domain=CONTOSO; Username=jsmith; Password=passcode" />  
-```  
-   -->
 ### <a name="named-account-using-office-365"></a>Benanntes Konto unter Verwendung von Office 365  
   
 ```xml
@@ -121,18 +111,6 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
   TokenCacheStorePath =c:\MyTokenCache;
   LoginPrompt=Auto"/>  
 ```  
-  
-<!-- ### OAuth using named account in Common Data Service on-premises with UX to prompt for authentication  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com; Password=passcode;Url=https://contoso:8080/Test;AppId=<GUID>;RedirectUri=app://<GUID>;TokenCacheStorePath =c:\MyTokenCache;LoginPrompt=Auto"/>  
-```  
-  
-### IFD using a named account with delegation to a sub realm  
-  
-```xml
-<add name="MyCRMServer" connectionString="AuthType=IFD;Url=http://contoso:8080/Test; HomeRealmUri=https://server-1.server.com/adfs/services/trust/mex/;Domain=CONTOSO; Username=jsmith; Password=passcode" />  
-```   -->
 
 ### <a name="certificate-based-authentication"></a>Zertifikatsbasierte Authentifizierung
 
@@ -148,7 +126,6 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
   />
 ```
 
-  
 <a name="ConnectionStatus"></a>
 
 ## <a name="determine-your-connection-status"></a>Bestimmung Ihres Verbindungsstatus

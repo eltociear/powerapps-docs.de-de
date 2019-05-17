@@ -3,7 +3,6 @@ title: Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web-API (Common
 description: 'Lesen Sie, wie eine Referenz auf eine sammlungwertige Navigationseigenschaft hinzuzufügen, eine Referenz zu entfernen und eine vorhandene Referenz mithilfe der Web-API zu ändern.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: ad4e4eac-117a-4958-9df0-b7353305b0c7
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

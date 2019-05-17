@@ -3,7 +3,6 @@ title: Abrufen einer Entität mit Web-API (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie Sie eine GET-Anforderung mit der Common Data Service-Web-API anfordern, um Daten für eine Entität abzurufen, die als die Ressource mit einem eindeutigen Bezeichner angegeben wurde'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: abae4614-9e03-45e7-94fa-9e6e7225ece5
 caps.latest.revision: 21
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

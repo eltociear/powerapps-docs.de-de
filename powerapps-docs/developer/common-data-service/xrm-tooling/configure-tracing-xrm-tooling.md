@@ -2,7 +2,7 @@
 title: Konfigurieren Sie das Tracing für XRM-Tools (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie die Ablaufverfolgung für Komponenten wie Vorgangsanrufe, Warnungen und andere bedeutende Ereignisse in XRM-Tooling zu konfigurieren.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: d7586a5a-40da-427e-bbeb-4f8a371a8dcf
 caps.latest.revision: 8
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -28,8 +28,7 @@ Sie können die Ablaufverfolgung für die Datensatzdaten aktivieren, die mit Pro
 - eine Ablaufverfolgungsquelle  
 - einen Ablaufverfolgungslistener  
 - eine andere Ablaufverfolgungsebene als **Aus** Dies sind die andere Werte, die Sie angeben können: **Fehler**, **Warnung**, **Informationen** und **ausführlich**.  
-  
- Dies ist die Konfiguration für die Aktivierung der Ablaufverfolgung für eine Komponente im XRM-Tooling. Die folgende Konfiguration aktiviert die Ablaufverfolgung beispielsweise nur für die Microsoft.Xrm.Tooling.CrmConnectControl-Komponente:  
+Dies ist die Konfiguration für die Aktivierung der Ablaufverfolgung für eine Komponente im XRM-Tooling. Die folgende Konfiguration aktiviert die Ablaufverfolgung beispielsweise nur für die Microsoft.Xrm.Tooling.CrmConnectControl-Komponente:  
   
 ```xml  
 </configuration>  

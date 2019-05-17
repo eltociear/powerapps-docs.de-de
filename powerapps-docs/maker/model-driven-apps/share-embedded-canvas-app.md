@@ -3,7 +3,7 @@ title: Eine eingebettete Canvas-App freigeben | MicrosoftDocs
 ms.custom: ''
 ms.date: 01/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -42,4 +42,5 @@ Eingebettete Canvas-Apps sind auch lösungsfähig. Standardmäßig werden eingeb
 [Einbetten einer Canvas-App in ein modellgesteuertes Formular](embed-canvas-app-in-form.md) <br />
 [Den aktuellen Datensatz als Datenkontext an eine eingebettete Canvas-App übergeben](pass-current-embedded-canvas-app.md) <br />
 [Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
+[Führen Sie vordefinierte Aktionen aus einer eingebetteten Canvas-App auf dem Hostformular aus](embedded-canvas-app-actions.md) <br />
 [Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)

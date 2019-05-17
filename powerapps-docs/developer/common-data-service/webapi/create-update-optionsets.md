@@ -3,7 +3,6 @@ title: Erstellen und Aktualisieren Sie Optionssätze mithilfe von Web-API (Commo
 description: 'Informationen zum Erstellen und Aktualisieren einer Entität, mit der Common Data Service eine metadatengestützte Architektur verwendet, um die Flexibilität zu bieten, mit der benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute erstellt werden können.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 caps.latest.revision: 15
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

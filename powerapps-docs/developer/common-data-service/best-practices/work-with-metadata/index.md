@@ -1,6 +1,6 @@
 ---
-title: 'Entwickler: Best Practices und Handlungsempfehlungen zum Arbeiten mit Metadaten für Common Data Service | Microsoft-Dokumentation'
-description: Best Practices und Handlungsempfehlungen zum Arbeiten mit Metadaten für Entwickler von Common Data Service in PowerApps.
+title: 'Entwickler: Bewährte Methoden und Anleitungen bei der Arbeit mit Metadaten für Common Data Service | Microsoft Docs'
+description: Bewährte Methoden und Anleitungen für die Arbeit mit Metadaten für Entwickler des Common Data Service in PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,26 +16,21 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 35e07c87e515759a6e61a0c0a027c190b11bef53
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528387"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Best Practices und Handlungsempfehlungen zum Arbeiten mit Metadaten für Common Data Service
 
-In der folgenden Liste sind alle Best Practices und Handlungsempfehlungen zur Interaktion und Arbeit mit Metadaten in Common Data Service aufgeführt.
+# <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Bewährte Methoden und Anleitungen bei der Arbeit mit Metadaten für Common Data Service
+
+Diese Liste enthält alle Anleitungen und bewährten Methoden für die Interaktion und Arbeit mit Metadaten innerhalb des Common Data Service.
 
 
-|Best Practice  |Beschreibung  |
+|Bewährte Methode  |Beschreibung  |
 |---------|---------|
-|[Abrufen von veröffentlichten Metadaten](retrieve-published-metadata.md)     |Durch den Abruf nicht veröffentlichter Metadaten wird die Anforderung nicht nur langsamer verarbeitet, sondern es werden möglicherweise auch Metadaten zurückgegeben, die der Anforderer nicht erwartet.         |
-|[Abrufen von spezifischen Spalten für eine Entität über Abfrage-APIs](retrieve-specific-columns-entity-via-query-apis.md)     |Abfragen zum Abrufen von Daten sollte nicht alle, sonder nur spezifische Spalten in der ColumnSet-Instanz enthalten, die zur Abfrage gehört.         |
+|[Abrufen veröffentlichter Metadaten](retrieve-published-metadata.md)     |Das Abrufen unveröffentlichter Metadaten führt nicht nur zu einem höheren Aufwand bei der Verarbeitung der Anfrage selbst, sondern kann auch Metadaten zurückgeben, die der Anforderer nicht erwartet.         |
+|[Abrufen spezifischer Spalten für eine Entität über Query-APIs](retrieve-specific-columns-entity-via-query-apis.md)     |Abfragen, die zum Abrufen von Daten übermittelt werden, sollten bestimmte Spalten in der ColumnSet-Instanz enthalten, die der Abfrage zugeordnet ist, und nicht alle Spalten.         |
 
 # <a name="see-also"></a>Siehe auch
 [Arbeiten mit Metadaten mithilfe von Code](../../metadata-services.md)<br />

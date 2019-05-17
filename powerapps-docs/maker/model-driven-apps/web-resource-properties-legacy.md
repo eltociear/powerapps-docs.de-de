@@ -9,7 +9,7 @@ applies_to:
   - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 04/03/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 82cd41ea-95b0-4606-9e7d-43eb5ce9ecd6
@@ -36,8 +36,10 @@ Dadurch wird das Dialogfeld **Webressource hinzufügen** oder **Webressourceneig
 
 ![Webressource-Dialog hinzufügen](media/add-web-resource-dialog.png)
 
+> [!IMPORTANT]
+> Sie müssen die Option **Standardmäßig sichtbar** auswählen, damit die Webressource im Formular erscheint und für Benutzer zur Verfügung steht.
 
-## <a name="web-resource-properties"></a>Webressourceneigenschaften
+## <a name="web-resource-properties"></a>Eigenschaften von Webressourcen
 
  Das Dialogfeld **Webressource hinzufügen** oder **Webressourceneigenschaften** hat zwei, manchmal drei Registerkarten, je nach Art der Webressource.
 

@@ -3,7 +3,6 @@ title: Abrufen von verwandten Entitäten mit einer Abfrage (Common Data Service)
 description: 'Lesen Sie, wie Sie verwandte Objekte abrufen können, indem Sie die Navigationseigenschaften erweitern.'
 ms.custom: ''
 ms.date: 02/06/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''

@@ -37,7 +37,7 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten  
- Mit Common Data Service werden hierarchische Datenstrukturen durch auf sich selbst verweisende Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
+ Mit Common Data Service werden hierarchische Datenstrukturen durch auf sich selbst verweisende Beziehungen der verknüpften Datensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
   
  Die folgenden Beispiele illustrieren verschiedene Szenarien für das Abfragen von Hierarchien:  
   
@@ -53,17 +53,22 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
  ![Verkaufschancen zur abgefragten Firma](media/query-account-related-opportunities.png "Verkaufschancen zur abgefragten Firma")  
   
- Um die Daten als Hierarchie abzufragen, müssen Sie die auf sich selbst verweisenden Eins-zu-Viele (1:N)-Beziehungen als hierarchisch festlegen. So aktivieren Sie die Hierarchie  
+ Um die Daten als Hierarchie abzufragen, müssen Sie die auf sich selbst verweisenden Beziehungen als hierarchisch festlegen. So aktivieren Sie die Hierarchie  
   
-1.  Öffnen Sie den [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer). 
-  
-2.  Wählen Sie die gewünschte Entität aus, wählen Sie **1:n-Beziehungen** aus, und wählen Sie dann eine (1:n)-Beziehung aus. 
 
-3.  In **Beziehungsdefinition** legen Sie **Hierarchisch** auf **Ja** fest.  
+1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+
+2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
+
+3. Klicken Sie auf **Beziehungen**.
+
+4.  Wählen Sie eine auf sich selbst verweisende Beziehung.
+
+5.  Überprüfen Sie im Bereich Beziehungsdetails **Hierarchisch**.  
   
 > [!NOTE]
-> - Einige der standardmäßigen (1:N)-Beziehungen können nicht angepasst werden. Dieses hindert Sie, diese Beziehungen als hierarchisch festzulegen.  
-> - Sie können eine hierarchische Beziehung für die auf sich selbst verweisenden Beziehungen des Systems festlegen. Hierzu zählen die auf sich selbst verweisenden 1:n-Beziehungen vom Systemtyp, beispielsweise die "contact_master_contact"-Beziehung.  
+> - Einige der standardmäßigen Beziehungen können nicht angepasst werden. Dieses hindert Sie, diese Beziehungen als hierarchisch festzulegen.  
+> - Sie können eine hierarchische Beziehung für die auf sich selbst verweisenden Beziehungen des Systems festlegen. Hierzu zählen die auf sich selbst verweisenden Beziehungen vom Systemtyp, beispielsweise die "contact_master_contact"-Beziehung.  
   
 <a name="BKMK_Visualizedata"></a>   
 ## <a name="visualize-hierarchical-data"></a>Visualisieren von hierarchischen Daten  
@@ -85,18 +90,19 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
  Was Sie beachten müssen, wenn Sie Visualisierungen erstellen:  
   
--   Nur eine auf sich selbst verweisende (1: n)-Beziehung pro Entität kann als hierarchisch festgelegt werden. In dieser Beziehung müssen die primäre Entität und die verknüpfte Entität vom gleichen Typ sein, z. B. account_parent_account oder new_new_widget_new_widget.  
+-   Nur eine auf sich selbst verweisende (1: n)-Beziehung pro Entität kann als hierarchisch festgelegt werden. In dieser Beziehung müssen die primäre Entität und die verknüpfte Entität vom gleichen Typ sein, z. B. account_parent_account oder Widget_new_Widget_new_Widget.  
   
 -   Derzeit ist eine Hierarchie oder Visualisierung auf nur einer Entität basiert. Sie können die Firmenhierarchie so darstellen, dass Firmen auf verschiedenen Ebenen gezeigt werden, Sie können jedoch Firmen und Kontakte nicht in derselben Hierarchienvisualisierung anzeigen.  
   
 -   Die Maximalanzahl an Feldern, die in einer Kachel angezeigt werden können, ist vier. Wenn Sie einer Schnellerfassung, das für die Kachel-Ansicht verwendet wird, mehr Felder hinzufügen, werden nur die ersten vier Felder angezeigt.  
   
 ### <a name="visualization-example"></a>Visualisierungsbeispiel  
- Betrachten wir ein Beispiel der Erstellung der Visualisierung einer benutzerdefinierten Entität. Wir erstellten eine benutzerdefinierte Entität namens new_Widget, dann erstellten wir eine auf sich selbst verweisende (1:N)-Beziehung **new_new_widget_new_widget** und markierten diese als hierarchisch, wie hier gezeigt:  
-  
- ![Widgetbeziehungsdefinition](media/widget-relationship-definition.png "Widgetbeziehungsdefinition")  
-  
- Dann wählten wir in der Rasteransicht **Hierarchien-Einstellungen** die hierarchische Beziehung **new_new_widget_new_widget** aus. Im Formular füllten wir die Pflichtfelder aus. Wenn Sie die (1: N)-Beziehung noch nicht als hierarchisch markiert haben, führt Sie der Link im Formular wieder zu dem Beziehungsdefinitionsformular zurück, in dem Sie die Beziehung als hierarchisch markieren können.  
+ Betrachten wir ein Beispiel der Erstellung der Visualisierung einer benutzerdefinierten Entität. Wir haben eine benutzerdefinierte Entität namens new_Widget erstellt, eine auf sich selbst verweisende Beziehung und diese als hierarchisch markiert, wie hier gezeigt.  
+ 
+> [!div class="mx-imgBorder"] 
+> ![Widgetbeziehungsdefinition](media/widget-relationship-definition.png "Widgetbeziehungsdefinition")  
+   
+ Dann wählten wir in der Rasteransicht **Hierarchien-Einstellungen** die hierarchische Beziehung **Widget_new_Widget_new_Widget** aus. Im Formular füllten wir die Pflichtfelder aus. Wenn Sie die Beziehung noch nicht als hierarchisch markiert haben, führt Sie der Link im Formular wieder zu dem klassischen Enitätseditor, in dem Sie die Beziehung auch als hierarchisch markieren können.  
   
  Für das **Schnellansichtsformular** erstellten wir ein Schnellerfassung mit der Bezeichnung **Kachelformular für Widget-Hierarchie**. In diesem Formular fügten wir vier Felder für die Anzeige in jeder Kachel hinzu.  
   

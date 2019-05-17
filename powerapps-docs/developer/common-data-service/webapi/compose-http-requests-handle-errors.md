@@ -3,7 +3,6 @@ title: HTTP-Abfragen erstellen und Fehler behandeln (Common Data Service)| Micro
 description: 'Lesen Sie über die HTTP-Methoden und Header, die einen Teil der HTTP-Anforderungen, die mit der Web-API interagieren, formieren, und wie Fehler, die in Antwort zurückgegeben werden, zu erkennen und zu beheben.'
 ms.custom: ''
 ms.date: 11/05/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 64a39182-25de-4d31-951c-852025a75811
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

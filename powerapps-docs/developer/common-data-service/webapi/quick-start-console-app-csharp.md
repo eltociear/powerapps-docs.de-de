@@ -3,11 +3,11 @@ title: 'Schnellstart: Web API-Beispiel (C#) (Common Data Service) | Microsoft Do
 description: 'Dieses Beispiel veranschaulicht, wie Sie sich mit einem Common Data Service-Server authentifizieren und dann einen grundlegenden Web API-Vorgang, die WhoAmI-Funktion, aufrufen.'
 ms.custom: ''
 ms.date: 02/02/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

@@ -3,7 +3,6 @@ title: Abrufen von Metadaten über den Namen oder die MetadataId (Common Data Se
 description: 'Common Data Service verwendet eine durch Metadaten gesteuerte Architektur, um die Flexibilität bereitzustellen, benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute zu erstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 80bcdd8e-7c4f-4fd5-8708-00345f5d0408
 caps.latest.revision: 8
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

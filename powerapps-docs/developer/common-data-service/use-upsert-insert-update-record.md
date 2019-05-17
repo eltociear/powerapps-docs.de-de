@@ -2,7 +2,7 @@
 title: 'Verwenden von Upsert, um einen Datensatz einzufügen oder zu aktualisieren (Common Data Service) | Microsoft Docs'
 description: 'Die UpsertRequest(Update oder Insert)-Meldung hilft Ihnen, verschiedene Datenintegrationsszenarien zu vereinfachen, in denen Sie nicht wissen, ob ein Datensatz bereits in Dynamics 365 existiert. In solchen Fällen wissen Sie nicht, ob Sie einen UpdateRequest- oder CreateRequest-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Die UpsertRequest-Meldung hilft Ihnen, dieses zu Problem beheben'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Einen Datensatz mit Upsert einfügen oder aktualisieren
 
-Sie können die Komplexität verringern, die in Datenintegrationsszenarien involviert ist, indem Sie die Nachricht <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> verwenden. Wenn Sie Daten in Common Data Service Customer Engagement von einem externen System laden, beispielsweise in einem Massendaten-Integrationsszenario, wissen Sie möglicherweise nicht, ob ein Datensatz bereits in Common Data Service vorhanden ist. In solchen Fällen wissen Sie nicht, ob Sie einen <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>- oder <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Sie können jetzt diese Komplexität verringern und Daten effizienter in Common Data Service zu laden, indem die neue <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (Aktualisieren oder Einfügen)-Message verwendet wird.  
+Sie können die Komplexität verringern, die in Datenintegrationsszenarien involviert ist, indem Sie die Nachricht <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> verwenden. Wenn Sie Daten in Common Data Service von einem externen System laden, beispielsweise in einem Massendaten-Integrationsszenario, wissen Sie möglicherweise nicht, ob ein Datensatz bereits in Common Data Service vorhanden ist. In solchen Fällen wissen Sie nicht, ob Sie einen <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest>- oder <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Vorgang aufrufen müssen. Dies führt dazu, dass bei der Abfrage des Datensatzes zuerst bestimmt werden muss, ob er vorhanden ist, bevor der entsprechende Vorgang ausgeführt wird. Sie können jetzt diese Komplexität verringern und Daten effizienter in Common Data Service zu laden, indem die neue <xref:Microsoft.Xrm.Sdk.Messages.UpsertRequest> (Aktualisieren oder Einfügen)-Message verwendet wird.  
   
 <a name="BKMK_UsingUpsert"></a>   
 ## <a name="using-upsert"></a>Verwenden von Upsert  

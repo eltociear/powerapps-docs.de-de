@@ -28,7 +28,7 @@ Dieses Beispiel zeigt, wie neue Datensätze mithilfe des Datenimports erstellt w
 
 ## <a name="how-this-sample-works"></a>Wie dieses Beispiel funktioniert
 
-Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene Szenario zu simulieren, geht das Beispiel wie folgt vor:
+Um das oben beschriebene Beispiel zu simulieren, geht das Beispiel wie folgt vor:
 
 ### <a name="setup"></a>Einrichten
 

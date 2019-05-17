@@ -58,6 +58,5 @@ Jede der Klassen, die die Benutzeroberfläche <xref:Microsoft.Xrm.Sdk.IOrganizat
 ## <a name="see-also"></a>Siehe auch
 
 [Verwenden von Messages mithilfe des Organisationsservices](use-messages.md)<br />
-[Erstellen einer Client-Anwendung](create-client-app.md)<br />
 [Schreiben eines Plug-Ins](../write-plug-in.md)<br />
 [Entitäts-Vorgänge mithilfe des Organisationsservice](entity-operations.md)

@@ -3,7 +3,6 @@ title: Aktualisieren und Löschen von Entitäten mithilfe der Web-API (Common Da
 description: 'Lesen Sie, wie Sie das Update und Löschen für Entitäten unter Verwendung der Web-API durchführen'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 694889fd-2b85-43a0-97bc-1e760695db31
 caps.latest.revision: 17
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

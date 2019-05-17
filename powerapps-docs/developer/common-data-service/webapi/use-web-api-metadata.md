@@ -2,19 +2,14 @@
 title: Nutzen der Web-API mit Metadaten (Common Data Service) | Microsoft Docs
 description: 'Dieser Abschnitt enthält Anweisungen dazu, wie die Web-API mit Entitätstypen verwendet wird, die in der WEB-API-Metadaten-EntityType-Referenz enthalten sind.'
 ms.custom: ''
-ms.date: 11/04/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-ms.assetid: a0edc029-c6db-48ac-9538-b0270fe94440
-caps.latest.revision: 10
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -24,7 +19,9 @@ search.app:
 # <a name="use-the-web-api-with-metadata"></a>Verwenden der Web-API mit Metadaten
 
 Sie können die Metadatenvorgänge mit der Web-API ausführen, die Sie mithilfe des Organisationsservice ausführen können. Dieser Abschnitt enthält Anweisungen dazu, wie die Web-API mit Entitätstypen, die in der <xref:Microsoft.Dynamics.CRM.MetadataEntityTypeIndex> enthalten sind, verwendet werden.  
-  
+> [!NOTE]
+> Informationen in diesem Abschnitt gelten auch für Benutzer von Dynamics 365 for Customer Engagement-Apps (online und on-premises).
+
  Es gibt vier festgelegte Pfade der Entität, die verfügbar gemacht werden, um Vorgänge mit Metadatenentitäten auszuführen (siehe folgende Tabelle).  
   
 |Festgelegter Pfad der Entität|Beschreibung|  
@@ -60,8 +57,6 @@ Sie können feststellen, ob Entitäten sich für die Teilnahme an einer Beziehun
 
 ### <a name="see-also"></a>Siehe auch
 
-
-<!-- TODO [Metadata and data models](../metadata-data-models.md)<br /> -->
 [Durchsuchen Sie Metadaten für die Organisation](../browse-your-metadata.md)<br />
-<!--  TODO [Use the Organization service with Common Data Service metadata](../org-service/use-organization-service-metadata.md)<br /> -->
-[Common Data Service-Web-API verwenden](overview.md)
+[Verwenden Common Data Service-Web-API](overview.md)
+[Entwicklerhandbuch zu Dynamics 365 for Customer Engagement-Apps](/dynamics365/customer-engagement/developer/developer-guide)

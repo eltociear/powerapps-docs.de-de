@@ -3,11 +3,11 @@ title: 'Web API Global Discovery Service Beispiel (C#) (Common Data Service) | M
 description: 'Dieses Beispiel zeigt, wie Sie den Web API Global Discovery Service nutzen'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
   - developer

@@ -2,8 +2,7 @@
 title: Ausführen von Vorgängen mithilfe der Web-API (Common Data Service) | Microsoft Docs
 description: 'Die Web-API von Common Data Service bietet einen modernen RESTful-Webdienst, den Sie verwenden können, um mit Daten in Common Data Service mithilfe vielerlei Plattformen, Programmiersprachen und Geräten zu interagieren. Informieren Sie sich über die Vorgänge, die mithilfe von Internet von Web-API ausgeführt werden können'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,8 +12,8 @@ applies_to:
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
 author: brandonsimons
-ms.author: jdaly
-manager: amyla
+ms.author: susikka
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:
@@ -24,6 +23,10 @@ search.app:
 # <a name="perform-operations-using-the-web-api"></a>Vorgänge mithilfe der Web-API ausführen
 
 Die Web-API bietet einen modernen RESTful-Webdienst, den Sie verwenden können, um mit Daten in Common Data Service mithilfe vielerlei Plattformen, Programmiersprachen und Geräten zu interagieren.
+
+> [!NOTE]
+> Informationen in diesem Abschnitt gelten auch für Benutzer von Dynamics 365 for Customer Engagement-Apps (online und on-premises). 
+
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

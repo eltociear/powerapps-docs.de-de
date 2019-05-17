@@ -3,7 +3,6 @@ title: Beispiel grundlegender Web-API-Operationen (clientseitiges JavaScript) (C
 description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Entitätsinstanzen unter Verwendung von clientseitigem JavaScript über die Common Data Service-Web-API durchführen'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 11847c67-2807-4cb5-998b-90f45d3d98a7
 caps.latest.revision: 27
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: amyla
 search.audienceType:
   - developer

@@ -3,7 +3,6 @@ title: 'Beispiel für Web-API-Abfragedaten (C#) (Common Data Service) | Microsof
 description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende Abfrageanforderungen mit der Common Data Service-Web-API und C# ausführen'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 ms.assetid: 91183105-bc99-4e34-a1b3-1085e1a51f82
 caps.latest.revision: 16
 author: brandonsimons
+ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
   - developer

@@ -3,7 +3,6 @@ title: Common Data Service-Web-API-Versionen (Common Data Service) | Microsoft D
 description: 'Lesen Sie wie die Versionsverwaltung der "Common Data Service"-Web-API funktioniert. "Common Data Service"-Web-API-Versionen unterstützen versionsspezifische Unterschiede in derselben Umgebung, die sich vom Verhalten in v8x.-Versionen unterscheiden, in der neue Funktionen additiv waren.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: d9bb79a5-2bfa-4ffe-8cb4-60f192359489
 caps.latest.revision: 34
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

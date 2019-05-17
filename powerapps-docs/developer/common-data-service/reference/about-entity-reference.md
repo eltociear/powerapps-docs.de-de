@@ -1,20 +1,14 @@
 ---
 title: Über die Entitätsreferenz (Common Data Service) | Microsoft Docs
 description: 'Verwenden Sie diese Referenz, um die verfügbaren Vorgänge, die für bestimmte Entitäten, die Standardattributattribute, Attribute jeder Entität und Beziehungen zwischen Entitäten ausgeführt werden können, zu verstehen.'
-services: ''
-suite: powerapps
-documentationcenter: na
 author: JimDaly
 manager: kvivek
-editor: ''
-tags: ''
 ms.service: powerapps
 ms.devlang: na
 ms.topic: reference
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/31/2018
+ms.date: 03/31/2019
 ms.author: jdaly
+ms.reviewer: kvivek
 search.audienceType:
   - developer
 search.app:

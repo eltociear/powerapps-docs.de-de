@@ -2,7 +2,7 @@
 title: Nutzen von XRM-Tooling zum Erstellen von Daten (Common Data Service) | Microsoft Docs
 description: 'Verwenden der CrmServiceClient-Klasse, um Daten in Common Data Service zu erstellen'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,7 +13,7 @@ applies_to:
 ms.assetid: f6a03552-1f07-4d4b-b7ae-fa246a0d7c29
 caps.latest.revision: 14
 author: MattB-msft
-ms.author: kvivek
+ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
   - developer
@@ -27,24 +27,19 @@ Es gibt sieben Möglichkeiten, um in der <xref:Microsoft.Xrm.Tooling.Connector.C
   
 ## <a name="createnewrecord"></a>CreateNewRecord  
 
-Diese Methode wird verwendet, um Entitätsdaten jeden Typs in Common Data Service zu erstellen. Um sie zu verwenden, müssen Sie den Schemanamen der Entität, in der Sie einen Datensatz erstellen möchten, können, und Sie müssen eine Datennutzlast für die Übergane erstellen. In diesem Beispiel wird ein Kontodatensatz erstellt.  
-  
-```csharp 
-CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>",“<Domain>”),"<Server>", "<Port>", "<OrgName>");  
-  
+Diese Methode wird verwendet, um Entitätsdaten jeden Typs in Common Data Service zu erstellen. Um sie zu verwenden, müssen Sie den Schemanamen der Entität, in der Sie einen Datensatz erstellen möchten, können, und Sie müssen eine Datennutzlast für die Übergane erstellen. In diesem Beispiel wird ein Kontodatensatz erstellt.
+
+```csharp
+CrmServiceClient svc = new CrmServiceClient("connectionstring");  
 // Verify that you are connected  
-if (crmSvc != null && crmSvc.IsReady)  
+if (svc != null && svc.IsReady)  
 {  
-    //Display the CRM version number and org name that you’re connected to.  
-    Console.WriteLine("Connected to CRM! (Version: {0}; Org: {1}",   
-    crmSvc.ConnectedOrgVersion, crmSvc.ConnectedOrgUniqueName);  
-  
     // Create an account record  
     Dictionary<string, CrmDataTypeWrapper> inData = new Dictionary<string, CrmDataTypeWrapper>();  
     inData.Add("name", new CrmDataTypeWrapper("Sample Account Name", CrmFieldType.String));  
     inData.Add("address1_city", new CrmDataTypeWrapper("Redmond", CrmFieldType.String));  
     inData.Add("telephone1", new CrmDataTypeWrapper("555-0160", CrmFieldType.String));  
-    accountId = ctrl.CrmConnectionMgr.CrmSvc.CreateNewRecord("account", inData);  
+    accountId = ctrl.CrmConnectionMgr.svc.CreateNewRecord("account", inData);  
   
     // Verify if the account is created.  
     if (accountId != Guid.Empty)  
@@ -55,51 +50,46 @@ if (crmSvc != null && crmSvc.IsReady)
 else  
 {  
     // Display the last error.  
-    Console.WriteLine("An error occurred: {0}", crmSvc.LastCrmError);  
+    Console.WriteLine("An error occurred: {0}", svc.LastCrmError);  
   
-    // Display the last exception message if any.  
-    Console.WriteLine(crmSvc.LastCrmException.Message);  
-    Console.WriteLine(crmSvc.LastCrmException.Source);  
-    Console.WriteLine(crmSvc.LastCrmException.StackTrace);  
+    // Display the last exception message if any.   
+    Console.WriteLine(svc.LastCrmException.Message);  
+    Console.WriteLine(svc.LastCrmException.Source);  
+    Console.WriteLine(svc.LastCrmException.StackTrace);  
   
     return;  
 }  
-```  
-  
+```
 In diesem Beispiel haben wir ein Datennutzlast-Objekt mit der Bezeichnung `indata` erstellt. Anschließend füllten wir es mit der allgemeinen Syntax: `crmFieldName , new CrmDataTypeWrapper(data,CrmFieldType)`. Nach der Einrichtung des `indata`-Objekts für die zu erstellenden Werte riefen wir die `CreateNewRecord`-Methode auf und gaben dabei den logischen Entitätsnamen für das Konto und die Daatennutzlast an (`indata`).  
   
 > [!NOTE]
->  Sie können einen Entitätsdatensatz auch mit XRM-Tooling durch Ausführung der <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Meldung mit der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*>-Methode erstellen. Weitere Informationen: [Nachrichten mit der ExecuteCrmOrganizationRequest-Methode verwenden](use-messages-executecrmorganizationrequest-method.md)  
+> Sie können einen Entitätsdatensatz auch mit XRM-Tooling durch Ausführung der <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest>-Meldung mit der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ExecuteCrmOrganizationRequest*>-Methode erstellen. Weitere Informationen: [Nachrichten mit der ExecuteCrmOrganizationRequest-Methode verwenden](use-messages-executecrmorganizationrequest-method.md)  
   
 ## <a name="createannotation"></a>CreateAnnotation
   
 Diese Methode wird verwendet, um ein Notizenobjekt zu erstellen und an einen Entitätsdatensatz anzuhängen. Während Sie alle Variablen für die Notiz im ersten Durchlauf eingeben können, müssen Sie nur die Felder für den Betreff und den Notizentext ausfüllen. In der Praxis wird dies allgemein verwendet, um systemgenerierte Notizen an eine Entität anzuhängen, oder um in Common Data Service gespeicherte Notizen an eine Entität anzuhängen. Wenn Sie Ihre eigene UI für die Generierung von Notizen für Ihren Benutzer angeben, ist dies auch die Weise, in der Sie die Notiz an die Eigentümerentität in Common Data Service anhängen. Dieses Beispiel setzt das vorherige Beispiel fort und erstellt eine Notiz zu dem neu erstellten Konto.  
   
 ```csharp
-CrmServiceClient crmSvc = new CrmServiceClient(new System.Net.NetworkCredential("<UserName>", "<Password>", “<Domain>”),"<Server>", "<Port>", "<OrgName>");  
+CrmServiceClient svc = new CrmServiceClient(connectionstring);  
   
 // Verify that you are connected.  
-if (crmSvc != null && crmSvc.IsReady)  
+if (svc != null && svc.IsReady)  
 {  
-    //Display the CRM version number and org name that you are connected to.  
-    Console.WriteLine("Connected to CRM! (Version: {0}; Org: {1}",   
-    crmSvc.ConnectedOrgVersion, crmSvc.ConnectedOrgUniqueName);  
-  
     // Create and attach a note.  
     inData.Clear();   
-    inData.Add("subject", new CrmDataTypeWrapper("This is a NOTE from the API" , CrmFieldType.String));   
+    inData.Add("subject", new CrmDataTypeWrapper("This is a NOTE from the API" , CrmFieldType.String));
     inData.Add("notetext", new CrmDataTypeWrapper("This is text that will go in the body of the note" , CrmFieldType.String));  
-    Guid noteID = crmSvc.CreateAnnotation("account", accountId, inData);  
+    Guid noteID = svc.CreateAnnotation("account", accountId, inData);  
 }  
 else  
 {  
     // Display the last error.  
-    Console.WriteLine("An error occurred: {0}", crmSvc.LastCrmError);  
+    Console.WriteLine("An error occurred: {0}", svc.LastCrmError);  
   
     // Display the last exception message if any.  
-    Console.WriteLine(crmSvc.LastCrmException.Message);  
-    Console.WriteLine(crmSvc.LastCrmException.Source);  
-    Console.WriteLine(crmSvc.LastCrmException.StackTrace);  
+    Console.WriteLine(svc.LastCrmException.Message);  
+    Console.WriteLine(svc.LastCrmException.Source);  
+    Console.WriteLine(svc.LastCrmException.StackTrace);  
   
     return;  
 }  

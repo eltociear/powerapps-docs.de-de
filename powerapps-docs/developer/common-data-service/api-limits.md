@@ -17,9 +17,11 @@ search.app:
 ---
 # <a name="api-limits"></a>API-Begrenzungen
 
-Wir begrenzen die Anzahl der API-Anforderungen, die von jedem Benutzer erteilt werden können, pro Organisationsinstanz innerhalb eines fünfminütigen gleitenden Fensters. Außerdem beschränken wir die Anzahl der gleichzeitigen Anforderungen, die auf einmal eingehen können.  Wenn einer dieser Grenzwerte überschritten wird, gibt die Plattform eine Ausnahme zurück.
+Wir begrenzen die Anzahl der API-Anforderungen, die von jedem Benutzer erteilt werden können, pro Organisationsinstanz in einem fünfminütigen gleitenden Fenster. Außerdem beschränken wir die Anzahl der gleichzeitigen Anforderungen, die auf einmal eingehen können.  Wenn einer dieser Grenzwerte überschritten wird, gibt die Plattform eine Ausnahme zurück.
 
 Die Beschränkung stellt sicher, dass Benutzer, die Anwendungen ausführen, sich nicht aufgrund vorhandener Ressourceneinschränkungen gegenseitig stören. Die Grenzwerte haben keine Auswirkungen auf normale Plattformbenutzer. Nur Anwendungen, die eine sehr große Anzahl an API-Anforderungen ausführen, sind möglicherweise betroffen. Er bietet einen gewissen Schutz vor dem unwillkürlichen und unerwarteten Anstieg des Anforderungsvolumens, das die Verfügbarkeit und Leistungsfähigkeit der Common Data Service-Plattform gefährdet.
+
+Da Plug-Ins und benutzerdefinierte Workflow-Aktivitäten auf dem Server unabhängig eines angemeldeten Benutzers ausgeführt werden, zählen Aufrufe vom Plugin-Code nicht zu diesem externen API-Aufruflimit.
 
 Falls bei Ihrer Anwendung die Möglichkeit besteht, diese Begrenzung zu überschreiten, beachten Sie bitte die Leitlinien, die Sie im Abschnitt [Was ist zu tun, wenn meine Anwendung die Begrenzung überschreitet?](#what-should-i-do-if-my-application-exceeds-the-limit) unten finden.
 
@@ -35,7 +37,7 @@ Wenn Sie die .NET-SDK-Assemblys verwenden, reagiert die Plattform mit einem `Fau
 |`-2147015903`|`Combined execution time of incoming requests exceeded limit of 1,200,000 milliseconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later.`|
 |`-2147015898`|`Number of concurrent requests exceeded the limit of X`|
 
-Wenn Sie HTTP-Anforderungen verwenden, beinhaltet die Antwort dieselbe Message aber mit:<br />
+Wenn Sie HTTP-Anforderungen verwenden, beinhaltet die Antwort dieselbe Nachricht aber mit:<br />
 `StatusCode` : `429`
 
 Von allen Anforderungen werden diese Fehlerantworten zurückgegeben, bis das Volumen der API-Anforderungen unter die Begrenzung fällt. Wenn Sie diese Antworten erhalten, sollten von Ihrer Anwendung keine weiteren API-Anforderungen mehr gesendet werden, bis das Volumen der Anforderungen unterhalb der Begrenzung liegt.

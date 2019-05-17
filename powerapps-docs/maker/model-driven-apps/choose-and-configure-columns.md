@@ -3,7 +3,7 @@ title: Spalten in Ansichten in Modell-angetriebenen App-Ansichten in PowerApps w
 description: 'Erfahren Sie, wie Sie Ansichten für Ihre App auswählen und konfigurieren'
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -46,7 +46,7 @@ search.app:
   > Die neueste Version des Ansicht-Designers befindet sich derzeit in der Vorschau. Einige Funktionen wie das Aktivieren oder Deaktivieren der Präsenz für eine Spalte und das Hinzufügen einer Suchspalte werden noch nicht unterstützt. Um diese Aufgaben zu erfüllen, [öffnen Sie die Ansicht im klassischen Ansicht-Designer](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer).
   >  -   [Präsenz für diese Spalte aktivieren oder deaktivieren](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
   >
-  >  -   [Suchspalten hinzufügen](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+  >  -   [Suchspalten hinzufügen](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_AddFindColumns) 
 
 
 
@@ -111,6 +111,8 @@ Klicken und ziehen Sie die Spaltenkopfzeile zur richtigen Position.
   
 > [!TIP]
 >   Sie können auch die Kopfzeile der Spalte auswählen, die Sie verschieben möchten und aus dem Dropdown-Menü **Nach rechts** oder **Nach links**auswählen.  
+
+
   
 ## <a name="next-steps"></a>Nächste Schritte
 [Ansichten erstellen oder bearbeiten](create-edit-views.md)

@@ -3,7 +3,6 @@ title: Erkennen von doppelten Daten mithilfe der Web-API (Common Data Service) |
 description: 'Lesen Sie, wie Sie mit dem MSCRM.SuppressDuplicateDetections-Header und der Common Data Service-Web-API Duplikate erkennen.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,9 +11,9 @@ applies_to:
   - Dynamics 365 (online)
 ms.assetid: AE107774-4545-44B4-94C8-A0271EFA7876
 caps.latest.revision: 11
-author: SushantSikka
+author: susikka
 ms.author: susikka
-manager: amyla
+manager: shujoshi
 search.audienceType:
   - developer
 search.app:

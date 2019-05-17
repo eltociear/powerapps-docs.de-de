@@ -3,7 +3,6 @@ title: Wechsel der Identität eines Benutzers mithilfe der Web-API (Common Data 
 description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik (Code) im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. Lesen Sie, wie Sie die Identität eines anderen Benutzers in Common Data Service mithilfe der Web-API wechseln können.'
 ms.custom: ''
 ms.date: 03/18/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 74d07683-63ff-4d05-a434-dcfd44cd634d
 caps.latest.revision: 9
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

@@ -3,7 +3,6 @@ title: 'Beispiele für Web-API-Datenvorgänge (C#) (Common Data Service) | Micro
 description: 'Dieses Thema enthält eine Beschreibung verschiedener Web-API-Beispiele, die mit C# implementiert werden'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 66e26684-819e-45f7-bec4-c250be4d6fed
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:
@@ -139,7 +139,7 @@ throw new Exception(string.Format("Failed to retrieve contact for reason: {0}", 
   
 ### <a name="response-success-and-error-handling"></a>Erfolgreiche Antwort und Fehlerbehandlung
 
-Im Allgemeinen nutzen die Beispiele eine einfachen Methode zum Verarbeiten von HTTP-Antworten. Wenn die Anfrage erfolgreich ist, werden Informationen über den Vorgang der Regel per Konsole ausgegeben. Ob die Antwort eine JSON-Nutzlast oder nützliche Header enthält, werden diese Informationen nur bei Erfolg verarbeitet. Wenn letztlich eine "Common Data Service"-Entität erstellt wurde, wird die `entityUris`-Sammlung mit der URI dieser Ressource aktualisiert. Die [DeleteRequiredRecords](#bkmk_deleteRequiredRecords)-Methode nutzt die Sammlung, um optional Daten, die durch das Beispiel erstellt wurden, auf Ihrem "Common Data Service"-Server zu löschen.  
+Im Allgemeinen nutzen die Beispiele eine einfachen Methode zum Verarbeiten von HTTP-Antworten. Wenn die Anfrage erfolgreich ist, werden Informationen über den Vorgang der Regel per Konsole ausgegeben. Ob die Antwort eine JSON-Nutzlast oder nützliche Header enthält, werden diese Informationen nur bei Erfolg verarbeitet. Wenn letztlich eine "Common Data Service"-Entität erstellt wurde, wird die `entityUris`-Sammlung mit der URI dieser Ressource aktualisiert. Die `DeleteRequiredRecords`-Methode nutzt die Sammlung, um optional Daten, die durch das Beispiel erstellt wurden, auf Ihrem "Common Data Service"-Server zu löschen.  
   
 Wenn die Anforderung fehlschlägt, gibt das Programm eine kontextbezogene Nachricht über den fehlgeschlagenen Vorgang aus und löst dann eine benutzerdefinierte Ausnahme des Typs `Exception` aus. Der Ausnahmehandler gibt mehr Informationen zur Ausnahme aus und dann wird die Kontrolle an einen `finally`-Block übergeben, der eine Bereinigungslogik enthält. Dies ist wieder ein Anruf von `DeleteRequiredRecords` Der folgende Code zeigt diesen Fehlerbehandlungsansatz einer POST-Anfrage zur Erstellung eines Datensatzes.  
   

@@ -3,7 +3,6 @@ title: Beispiel für bedingte Web-API-Vorgänge (Common Data Service) | Microsof
 description: 'Diese Gruppe von Beispielen zeigt, wie Vorgänge ausgeführt werden, die bedingt sind durch die Version des Entitätsdatensatzes, die auf dem "Common Data Service"-Server enthalten ist und/oder derzeit vom Client verwaltet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: f2e5d22b-93fe-43b7-af15-3e281f3b3084
 caps.latest.revision: 13
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

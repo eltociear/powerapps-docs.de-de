@@ -3,7 +3,7 @@ title: Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 01/07/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -55,9 +55,10 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
      - Um den Datensatz direkt zu referenzieren, können Sie die [Funktion First](../canvas-apps/functions/function-first-last.md) verwenden. Beispiel: First(ModelDrivenFormIntegration.Data).Name
 -   Eine manuelle Änderung der App-ID in den Canvas-App-Steuerelementeigenschaften ist so weit wie möglich zu vermeiden.
      - Die App-ID der Canvas-App wird automatisch generiert und für Sie ausgefüllt. 
-     - Wenn Sie es aus irgendeinem Grund manuell bearbeiten müssen, müssen Sie sicherstellen, dass jede von Ihnen verwendete App-ID einer *eingebetteten* Canvas-App entspricht und nicht nur einer eigenständigen Canvas-App.
+     - Wenn Sie es aus irgendeinem Grund manuell bearbeiten müssen, müssen Sie sicherstellen, dass jede von Ihnen verwendete App-ID einer *eingebetteten* Canvas-App entspricht und nicht nur einer eigenständigen Canvas-App. 
      - Die eingebettete Canvas-App muss ebenfalls mit dem gleichen Datenkontext erstellt werden, den Ihr modellgestütztes Formular senden wird.
-     - Nachdem Sie die App-ID aktualisiert haben, wählen Sie **Anpassen**, um die Verbindung zur neuen App herzustellen.
+     - Nachdem Sie die App-ID aktualisiert haben, wählen Sie **Anpassen**, um sie in PowerApps Studio zu öffnen und die Verbindung zur neuen App herzustellen.
+     - Nehmen Sie eine kleine Änderung in der App vor, um sie in einen nicht gespeicherten Status zu versetzten, dann speichern und veröffentlichen Sie die App.
 - Wenn Sie ein modellgetriebenes Formular mit einer eingebetteten Canvas-Applikation anzeigen und eine Fehlermeldung mit der Aufschrift "Leider konnte diese Anwendungs-ID nicht gefunden werden" sehen, stellen Sie sicher, dass die eingebettete Canvas-App in der gleichen Lösung wie das modellgestützte Formular ist.
 - Wenn Sie ein modellgestütztes Formular mit einer eingebetteten Canvas-App anzeigen und Ihnen wird eine Fehlermeldung angezeigt, die lautet: "Anscheinend haben Sie keinen Zugriff auf diese App. Bitten Sie den Besitzer, sie mit Ihnen zu teilen", stellen Sie sicher, dass der Autor die eingebettete Canvas-App mit Ihnen geteilt hat. Weitere Informationen: [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md).
 
@@ -78,10 +79,12 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
 - Wenn Sie einen neuen Datensatz erstellen, wird eine eingebettete Canvas-App in einem Formular auch nach dem Speichern des Datensatzes nicht angezeigt. 
 -    Das ModelDrivenFormIntegration.Data-Objekt arbeitet derzeit nicht mit dem Anzeigenformular und den Formular bearbeiten-Steuerelementen.
 - Sie können das **Canvas-App**-Recht in einer Sicherheitsrolle nicht verwenden, um App-Benutzern Zugriff auf eine eingebettete oder eigenständige Canvas-App zu gewähren. Weitere Informationen zum Teilen einer eingebetteten Canvas-App finden Sie unter: [Eine eingebettete Canvas-App teilen](share-embedded-canvas-app.md).
-- Wenn Sie die gleichen Daten zurückschreiben, die auch im Hostmodell-basierten Formular angezeigt werden, zeigt das Formular weiterhin alte Daten an, bis es aktualisiert wird. 
+- Wenn Sie die gleichen Daten zurückschreiben, die auch im Hostmodell-basierten Formular angezeigt werden, zeigt das Formular weiterhin alte Daten an, bis es aktualisiert wird. Eine einfache Möglichkeit dazu ist Verwendung der [RefreshForm](embedded-canvas-app-actions.md)-Methode.
+- Wenn Sie IntelliSense für die [Methoden zum Ausführen vordefinierter Aktionen](embedded-canvas-app-actions.md) nicht in eingebetteten Canvas-Apps finden, die erstellt wurden, bevor die Funktion zur Verfügung gestellt wurde, schließen Sie die App und öffnen Sie sie erneut. 
 
 ## <a name="see-also"></a>Siehe auch
 [Einbetten einer Canvas-App in ein modellgesteuertes Formular](embed-canvas-app-in-form.md) <br />
 [Den aktuellen Datensatz als Datenkontext an eine eingebettete Canvas-App übergeben](pass-current-embedded-canvas-app.md) <br />
 [Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
+[Führen Sie vordefinierte Aktionen aus einer eingebetteten Canvas-App auf dem Hostformular aus](embedded-canvas-app-actions.md) <br />
 [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md)

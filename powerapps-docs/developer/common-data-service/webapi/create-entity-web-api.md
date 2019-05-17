@@ -3,7 +3,6 @@ title: Erstellen einer Entität mit Web-API (Common Data Service) | Microsoft Do
 description: 'Lesen Sie, wie Sie eine POST-Anforderung erstellen, um Daten zu senden, um eine Entität auf Common Data Service mithilfe der Web-API zu erstellen'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

@@ -2,7 +2,7 @@
 title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Service) | MicrosoftDocs'
 description: 'Dieses Lernprogramm ist das erste in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article

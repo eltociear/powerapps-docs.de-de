@@ -42,7 +42,7 @@ Ein *Thema* ähnelt einer Warteschlange, aber implementiert eine Veröffentlichu
 > [!IMPORTANT]
 >  Um diese Warteschlangen oder Themen zu verwenden, müssen Sie Ihre Listener-Anwendungen mithilfe der [Azure-SDK](http://azure.microsoft.com/downloads/archive-net-downloads/)-Version 1.7 oder höher schreiben.  
   
-Die Verwendung von Warteschlangen und Themen in Ihrem Multisystem-Software-Entwurf kann zu einem Entkoppeln von Systemen führen. Wenn die Listener-Anwendung ggf. überhaupt nicht mehr verfügbar ist, findet die Nachrichtenzustellung aus Dynamics 365 dennoch statt. Die Listener-Anwendung kann mit der Verarbeitung der Warteschlangennachricht fortfahren, wenn sie wieder online ist. [!INCLUDEMore Informationen [Warteschlangen, Themen und Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
+Die Verwendung von Warteschlangen und Themen in Ihrem Multisystem-Software-Entwurf kann zu einem Entkoppeln von Systemen führen. Wenn die Listener-Anwendung ggf. überhaupt nicht mehr verfügbar ist, findet die Nachrichtenzustellung aus Dynamics 365 dennoch statt. Die Listener-Anwendung kann mit der Verarbeitung der Warteschlangennachricht fortfahren, wenn sie wieder online ist. [!INCLUDEWeitere Informationen [Warteschlangen, Themen und Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 <a name="bkmk_writeoneway"></a>
 

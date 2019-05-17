@@ -3,7 +3,6 @@ title: Beispiel für Web-API-Funktionen und Aktionen (Common Data Service) | Mic
 description: 'Diese Beispielgruppe veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der "Common Data Service"-Web API ausgeführt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,6 +12,7 @@ applies_to:
 ms.assetid: 953c3137-6171-4e6e-b249-6a96221c6e96
 caps.latest.revision: 16
 author: brandonsimons
+ms.reviewer: susikka
 ms.author: jdaly
 search.audienceType:
   - developer

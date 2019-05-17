@@ -3,7 +3,6 @@ title: Verbesserte Schnellstartfunktion (Common Data Service) | Microsoft Docs
 description: 'Erstellen Sie ein neues Projekt in Visual Studio, um eine Konsolenanwendung zu unterstützen, die Common Data Service-Web-API verwendet'
 ms.custom: ''
 ms.date: 02/02/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 08377156-32c7-492a-8e66-50a47a330dc6
 caps.latest.revision: 14
 author: brandonsimons
 ms.author: jdaly
-manager: ''
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -33,9 +33,9 @@ Wie Sie die Benutzeranmeldeinformationen erfassen, hängt von der Art des Client
 
 Um dies zu ermöglichen, sind drei Schritte erforderlich:
 
-1. [Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen](#1-add-reference-to-systemconfiguration-to-the-visual-studio-project)
-1. [Bearbeiten der Anwendungskonfigurationsdatei](#2-edit-the-application-configuration-file)
-1. [Hinzufügen mit Anweisung zur Program.cs](#3-add-using-statement-to-programcs)
+1. [Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen](#add-reference-to-systemconfiguration-to-the-visual-studio-project)
+1. [Bearbeiten der Anwendungskonfigurationsdatei](#edit-the-application-configuration-file)
+1. [Hinzufügen mit Anweisung zur Program.cs](#add-using-statement-to-programcs)
 
 
 ### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen

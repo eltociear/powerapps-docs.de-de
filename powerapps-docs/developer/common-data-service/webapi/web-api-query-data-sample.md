@@ -3,7 +3,6 @@ title: Beispiel für Web-API-Abfragedaten (Common Data Service) | Microsoft Docs
 description: 'Diese Gruppe von Beispielen zeigt, wie Daten mit der Web-API abgefragt werden. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 9457ce4f-0ef6-4085-8346-fe3134ec7106
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

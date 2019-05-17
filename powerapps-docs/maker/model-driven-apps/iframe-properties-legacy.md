@@ -41,7 +41,7 @@ Gehen Sie folgendermaßen vor, um die iFrame-Eigenschaften anzuzeigen.
 |---------|--------------|-----------------|  
 |**Allgemein**|**Name**|**Erforderlich**: Ein eindeutiger Name für den iFrame. Der Name kann nur alphanumerische Zeichen und Unterstrichzeichen enthalten.|  
 ||**URL**|**Erforderlich**: Die URL für die in dem iFrame anzuzeigende Seite.|  
-||**Code des Datensatzobjekttyps und eindeutige Bezeichner als Parameter übergeben**|Daten zu der Organisation, dem Benutzer und dem Datensatz können an den iFrame übergeben werden. Weitere Informationen: [Übergeben von Parametern an iFrame](iframe-properties-legacy.md#BKMK_PassParametersToIFRAMEs)|  
+||**Code des Datensatzobjekttyps und eindeutige Bezeichner als Parameter übergeben**|Daten zu der Organisation, dem Benutzer und dem Datensatz können an den iFrame übergeben werden. Weitere Informationen: [Übergeben von Parametern an iFrame](#pass-parameters-to-iframes) |  
 ||**Bezeichnung**|**Erforderlich**: Eine für den iFrame anzuzeigende Beschriftung.|  
 ||**Beschriftung im Formular anzeigen**|Ob die Beschriftung angezeigt werden soll.|  
 ||**Frameübergreifendes Skripting einschränken, wenn unterstützt.**|Es gilt als Sicherheitsrisiko, zuzulassen, dass Seiten von einer anderen Website über Skripts mit der Dynamics 365-Anwendung interagieren. Verwenden Sie diese Option, um frameübergreifendes Skripting für Seiten, die Sie nicht kontrollieren, zu verhindern.<br /><br />|  

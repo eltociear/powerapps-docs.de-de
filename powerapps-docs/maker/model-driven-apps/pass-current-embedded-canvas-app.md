@@ -3,7 +3,7 @@ title: Den aktuellen Datensatz als Datenkontext mit einer eingebetteten Canvas-A
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -81,5 +81,6 @@ In diesem Thema erfahren Sie, wie Sie mit der Einbettung einer Canvas-App in ein
 ## <a name="see-also"></a>Siehe auch
 [Einbetten einer Canvas-App in einem modellgesteuerten Formular](embed-canvas-app-in-form.md) <br />
 [Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
+[Führen Sie vordefinierte Aktionen aus einer eingebetteten Canvas-App auf dem Hostformular aus](embedded-canvas-app-actions.md) <br />
 [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md) <br />
 [Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)

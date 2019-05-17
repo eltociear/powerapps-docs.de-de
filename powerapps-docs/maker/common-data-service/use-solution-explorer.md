@@ -75,16 +75,13 @@ search.app:
 > [!div class="mx-imgBorder"]  
 > ![Vorhandene Komponente einer Lösung hinzufügen](media/solution-add-existing-component.PNG "Vorhandene Komponente einer Lösung hinzufügen")  
   
- Bei verwalteten Lösungen sind keine Befehle verfügbar, und Sie sehen die unten angezeigte Message. Sie müssen die Komponente in der Lösung namens **Standardlösung** suchen und versuchen, sie dort zu bearbeiten, oder sie einer anderen von Ihnen erstellten nicht verwalteten Lösung hinzuzufügen. Möglicherweise kann die Komponente nicht angepasst werden. Weitere Informationen: [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)
+ Bei verwalteten Lösungen sind nur bestimmte Befehle verfügbar, und Sie sehen die unten angezeigte Message. Sie müssen die Komponente in der Lösung namens **Standardlösung** suchen und versuchen, sie dort zu bearbeiten, oder sie einer anderen von Ihnen erstellten nicht verwalteten Lösung hinzuzufügen. Möglicherweise kann die Komponente nicht angepasst werden. Weitere Informationen: [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)
 
 > [!div class="mx-imgBorder"]  
 > ![Verwaltete Lösung](media/managed-solution.PNG "Verwaltete Lösung")  
 
  Viele der Anpassungen, die Sie ausführen möchten, werden Entitäten einbeziehen. Sie können den Filter **Entität** verwenden, um eine Liste aller Entitäten in der aktuellen Lösung anzuzeigen, die in irgendeiner Weise angepasst werden können. Sobald Sie Detailinformationen zu einer Entität anzeigen, können Sie die Komponenten sehen, die Teil der Entität sind, wie im folgenden Screenshot mit der Firmenentität gezeigt: 
- 
-> [!NOTE]
->  Wenn Sie derzeit eine bereits vorhandene Entität einer Lösung hinzufügen, fügt das System automatisch alle Komponenten der Lösung hinzu, die Teil der Entität sind. Wenn dies nicht Ihre bevorzugte Möglichkeit ist, verwenden Sie den Befehl **In klassischen Modus wechseln**, um zur klassischen Erfahrung zu wechseln, und fügen Sie nur die Komponenten hinzu, die Sie möchten. <!-- We will soon improve this experience from PowerApps and allow you to select only the specific component(s) under entity that you want to add into a solution. -->
-  
+   
 > [!div class="mx-imgBorder"]  
 > ![Demolösung, die eine erweiterte Firmenentität anzeigt](media/solution-entity-account.png "Demolösung, die eine erweiterte Firmenentität anzeigt")  
 
@@ -94,18 +91,18 @@ In PowerApps können Sie den klassischen Projektmappen-Explorer anzeigen, indem 
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-- Durch das Löschen oder Entfernen einer verwalteten Lösung wird nicht die Canvas-App in PowerApps gelöscht.
 - Benutzerdefinierte Konnektoren sind nicht in einer Lösung verfügbar.
 - Canvas-Apps müssen nach dem Import einer Lösung geöffnet werden, um die Verbindungen zu aktualisieren.
-- Nach dem Hinzufügen einer vorhandenen SDK-Assembly wird diese nicht in der Lösung angezeigt. 
 - Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung noch bearbeitet werden.
 - Abhängigkeiten sind für Canvas-Apps nicht verfügbar.
 - Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. 
 -   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank verwaltet.
 -   Common Data Service-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück. 
--   In einer Lösung erstellte Canvas-Apps können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden.
+-   In einer Lösung erstellte Canvas-Apps und Flows können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden.
 -   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt.
--   Vorhandene Canvas-Apps sind nicht lösungsfähig. 
+- Über eine Schaltfläche ausgelöste Flows sind in Lösungen nicht verfügbar.
+- Über Canvas-App ausgelöste Flows sind in Lösungen nicht verfügbar.
+- Über Microsoft 365-Anwendungen wie SharePoint und Excel ausgelöste Flows sind nicht in Lösungen verfügbar.
 
  Ausführliche Informationen zum Anpassen einzelner Lösungskomponenten finden Sie in den folgenden Themen:  
   

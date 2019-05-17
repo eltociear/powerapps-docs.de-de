@@ -3,7 +3,6 @@ title: 'Beispiel zu grundlegenden Web-API-Vorgängen (C#) (Common Data Service)|
 description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Common Data Service-Entitätsinstanzen über die Common Data Service-Web-API durchführen'
 ms.custom: ''
 ms.date: 1/09/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 45cdefe5-0776-496a-9b06-b5cad768e543
 caps.latest.revision: 20
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 search.audienceType:
   - developer
 search.app:

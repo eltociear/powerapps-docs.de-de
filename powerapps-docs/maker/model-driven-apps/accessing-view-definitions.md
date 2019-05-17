@@ -4,7 +4,7 @@ description: 'In diesem Thema erfahren Sie, wie Sie auf Entitätsansichten zugre
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -31,7 +31,7 @@ search.app:
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>Öffnen einer Ansicht zum Bearbeiten im aktuellen Ansicht-Designer
 
 > [!IMPORTANT]
-> Die neueste Version des Ansicht-Designers befindet sich derzeit in der Vorschau. Einige Funktionen wie erweiterte Filterung, benutzerdefinierte Steuerelemente und Spalteneigenschaften werden noch nicht unterstützt. Um diese Aufgaben zu erfüllen, [öffnen Sie die Ansicht im klassischen Ansicht-Designer](#open-a-view-in-solution-explorer).
+> Die neueste Version des Ansicht-Designers befindet sich derzeit in der Vorschau. Einige Funktionen wie erweiterte Filterung, benutzerdefinierte Steuerelemente und Spalteneigenschaften werden noch nicht unterstützt. Um diese Aufgaben durchzuführen, [Öffnen Sie eine Ansicht zum Bearbeiten im Lösungsexplorer](#open-a-view-for-editing-in-solution-explorer).
 
 1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 

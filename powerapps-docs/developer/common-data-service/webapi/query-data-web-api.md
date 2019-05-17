@@ -3,7 +3,6 @@ title: Abfragen von Daten mit der Web-API (Common Data Service) | Microsoft Docs
 description: 'Informieren Sie sich über die verschiedenen Methoden zum Abfragen mit der Common Data Service-Daten mit der Common Data Servce-Web-API und verschiedenen Systemabfrageoptionen, die in diesen Abfragen angewandt werden können.'
 ms.custom: ''
 ms.date: 02/06/2019
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: annbe
 search.audienceType:
   - developer

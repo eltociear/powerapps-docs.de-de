@@ -2,8 +2,7 @@
 title: Ermitteln Sie die URL für Ihre Organisation mit Web-API (Common Data Service)| Microsoft Docs
 description: 'Hier erfahren Sie, wie Sie Web-API verwenden können, um die zur Laufzeit die Organisationen zu erkunden, oder Instanzen, zu denen der angemeldete Benutzer gehört.'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 04/22/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:
@@ -27,7 +27,15 @@ search.app:
 
 Mit dem Web API Discovery Service können Sie die Standardparameter `$filter` und `$select` für eine Web API Service-Anforderung verwenden, um die zurückgegebene Liste der Instanzdaten anzupassen.
 <!-- TODO should only talk about the global discovery service -->
+
+## <a name="global-discovery-service"></a>Globaler Suchdienst
+
 Zusätzlich zu Ermittlungsdiensten für bestimmte Datencenter, die für den 2011 (SOAP)-Endpunkt verfügbar sind, und durch die Web-API, gibt es auch einen globalen Ermittlungsdienst nur für Web-API, der sich über alle betriebsbereiten Datencenter erstreckt. Weitere Informationen zu dem Ermittlungsdienst für den 2011-Endpunkt finden Sie unter [Discovery Service](../org-service/discovery-service.md).
+
+> [!NOTE]
+> Es wird empfohlen, dass Benutzer vom bisherigen regionalen Suchdienst (`https://disco.crm.dynamics.com`) zum globalen Suchdienst (`https://globaldisco.crm.dynamics.com`) wechseln.
+> 
+> Für Benutzer von Dynamics 365 US Government ist der globale Suchdienst nur für die **GCC**-Benutzer verfügbar und die URL lautet `https://globaldisco.crm9.dynamics.com`. Weitere Informationen: [Dynamics 365 Government-URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>Informationen, die vom Ermittlungsdienst bereitgestellt werden 
@@ -39,6 +47,9 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 ```  
   
 Im oben genannten Beispiel wird der globale Ermittlungsdienst von Common Data Service verwendet, um die Organisationsinformationen der Instanz mit einem eindeutigen Namen "myorg" abzurufen. Weitere Details zu dieser Anforderung werden später in diesem Thema ausführlicher behandelt.  
+
+ 
+
   
 ### <a name="scope-of-the-returned-information"></a>Umfang der zurückgegebenen Informationen
 
@@ -58,27 +69,15 @@ Im Allgemeinen hat die Web-API-Adresse des Ermittlungsdiensts das folgende Forma
 
 Die Dienstbasisadresse des globalen Ermittlungsdiensts ist: `https://globaldisco.crm.dynamics.com/`. Dies führt als Ergebnis zur Serviceadresse von `https://globaldisco.crm.dynamics.com/api/discovery/`.  
   
-<!-- TODO:
-The service base address of the Discovery service for a datacenter is : `https://disco.crm[N].dynamics.com/`. This results in the Discovery service address of `https://disco.crm[N].dynamics.com/api/discovery/`. Each datacenter has an N number associated with it. For a complete list of available Common Data Service datacenters, and their N numbers,  see [Download endpoints using Developer resources page](../developer-resources-page.md).   -->
-  
 ## <a name="using-the-discovery-service"></a>Verwenden des Suchdiensts  
 
 Ein Entitätssatz mit der Bezeichnung `Instances` wird zum Abrufen von Instanzinformationen verwendet. Sie können `$select` und `$filter` mit der Instanzentität verwenden, die für das Filtern der zurückgegebenen Daten festgelegt wurde. Sie können auch mithilfe `$metadata` das Metadatendokument des Services abrufen.  
   
 ### <a name="authentication"></a>Authentifizierung
 
-Common Data Service-Web-API-Instanzen des Suchdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens. Lokale oder IFD-Instanzen der Ermittlungs-Web-API übernehmen das Authentifizierungsmodell ihrer Bereitstellung. Dabei unterstützen sie entweder die Integrierte Windows-Authentifizierung (IWA) oder OAuth-Tokens von einem vertrauenswürdigen Tokenanbieter. Webanwendungssitzungs-Authentifizierung wird nicht unterstützt.  
-  
-Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des "allgemeinen" Endpunkts und der Ressourcenkennung des Service aus.  Wenn in ähnlicher Weise eine lokale Bereitstellung für OAuth konfiguriert wird, gibt eine Trägerabfrage die lokale Autoritäts-URL sowie die Ressourcenkennung des Service zurück.  
-  
-### <a name="web-api-versioning"></a>Web-API-Versionsverwaltung
+Common Data Service-Web-API-Instanzen des Suchdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens.
 
-Versionsverwaltung des Ermittlungsdiensts für ein Datencenter oder lokal/IFD wird unterstützt und ist konsistent mit Versionsnummerierung, wie sie vom Organisationsdienst verwendet wird . Der globale Suchdienst von Common Data Service ist jedoch nicht an die Versionsnummer der Common Data Service-Bereitstellung gebunden. Stattdessen verwendet der globale Service seine eigene Versionsnummerierung. Ab Verfassung dieses Texts befindet sich der globale Suchdienst von Common Data Service bei Version 1.0 (v1.0). Beispiel:  
-  
-```http  
-GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
-```  
-  
+Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des "allgemeinen" Endpunkts und der Ressourcenkennung des Service aus.
 ### <a name="cors-support"></a>CORS-Support
 
 Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff, wie das für die Web-API zutrifft.  Für weitere Informationen zu CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)  
@@ -87,9 +86,9 @@ Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungs�
   
 -   Rufen Sie die Details einer bestimmten Instanz ab. Wenn Sie die GUID auslassen, werden alle Instanzen zurückgegeben, auf die der authentifizierte Benutzer Zugriff hat.  
   
-    ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v8.1/Instances(<guid>)  
-    GET https://dev.crm.external.contoso.com/api/discovery/v8.1/Instances(<guid>)  
+    ```http      
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
+    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   Sie können das UniqueName-Attribut als Alternativschlüssel verwenden.  
@@ -107,7 +106,10 @@ Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungs�
 -   Rufen Sie den Kennungseigenschaftswert einer bestimmten Instanz ab.  
   
     ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v8.1/Instances(UniqueName='myorg')/Id/$value  
+    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(UniqueName='myorg')/Id/$value  
     ```
 
-<!-- TODO: Add a see also section -->
+## <a name="see-also"></a>Siehe auch
+
+[Web API Globaler Discovery Service-Beispiel (C#)](samples/global-discovery-service-csharp.md)
+

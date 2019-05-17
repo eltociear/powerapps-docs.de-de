@@ -6,9 +6,9 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 10/30/2018
+ms.date: 04/11/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -39,9 +39,9 @@ Verwenden Sie den Lösungs-Explorer, um die App-Erstellungs- und -Anpassungsaufg
 
 1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2.  Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.  
-3.  Wählen Sie auf der Symbolleiste **In klassischen Modus wechseln**, um den Projektmappen-Explorers zu öffnen. 
-
+3.  Wählen Sie auf der Symbolleiste **In klassischen Modus wechseln**, um Ansicht **Alle Lösungen** zu öffnen. 
     Beachten Sie, dass Sie der Befehl **In klassischen Modus wechseln** nicht verfügbar ist, wenn Sie eine Lösung aus der Liste auswählen.
+4.  Wählen Sie in der Liste der verfügbaren Lösungen die Lösung aus, die in der Spalte **Anzeigename** den Projektmappen-Explorer öffnen sollen.
 
 ## <a name="apps"></a>Apps
 Der App-Bereich listet alle modellgesteuerten und Canvas-Apps auf, für die Sie über Rechte in Ihrer Umgebung verfügen. Zusätzlich zum Starten einer App aus dem Apps-Bereich heraus, können Sie auch Sicherheitsrollen zuweisen. 

@@ -3,7 +3,7 @@ title: Erstellen und Bearbeiten von öffentlichen Ansichten oder Systemansichten
 description: 'Erfahren Sie jetzt, wie Ansichten mithilfe des App-Designers erstellt oder bearbeitet werden'
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -57,7 +57,7 @@ Als App-Entwickler können Sie öffentliche Ansichten mithilfe von PowerApps ers
 
 4. Geben Sie im Dialogfeld **Erstellen einer Ansicht** einen Namen und optional eine Beschreibung ein und wählen Sie dann **OK** aus. 
     
-5. Wählen Sie im Ansicht-Designer die Plus-Schaltfläche aus, um weitere Spalten hinzuzufügen, die in der Ansicht angezeigt werden sollen. Weitere Informationen: [Hinzufügen einer Spalte zu einer Ansicht](#add-a-column-to-your-view)
+5. Wählen Sie im Ansicht-Designer die Plus-Schaltfläche aus, um weitere Spalten hinzuzufügen, die in der Ansicht angezeigt werden sollen. Weitere Informationen: [Hinzufügen einer Spalte zur Anzeige im App-Designer](#add-a-column-to-your-view-in-app-designer) 
 
    ![Spalte hinzufügen](../common-data-service/media/add-column-to-view.png)
 

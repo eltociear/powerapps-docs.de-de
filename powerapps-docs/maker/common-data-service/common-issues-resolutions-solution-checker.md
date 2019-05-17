@@ -100,6 +100,10 @@ Wenn HTML-Webressourcen innerhalb des Solution Checker verarbeitet werden, wird 
 
 ECMAScript 6 (2015) oder neuere Versionen werden derzeit für Solution Checker nicht unterstützt. Wenn Solution Checker JavaScript mit ECMAScript 6 oder höher analysiert, wird ein webgestütztes Syntaxproblem für die Webressource gemeldet.  
 
+## <a name="multiple-violations-reported-for-plug-ins-and-workflow-activities-based-on-call-scope"></a>Mehrere Verletzungen für Plug-Ins und Workflowaktivitäten anhand des Anrufumfangs gemeldet
+
+Für Plug-In- und Workflowaktivitätsregeln, bei denen das Problem nur im aufrufenden Kontext relevant ist, beginnt das Solution Checker-Tool die Analyse bei der IPlugin-Schnittstellenimplementierung und durchläuft ein Anrufdiagramm, um Probleme im Umfang der Implementierung zu erkennen.  In einigen Fällen gehen viele Anrufpfade ggf. am gleichen Standort ein, wo das Problem erkannt wird.  Da das Problem für den Anrufumfang relevant ist, meldet das Tool möglicherweise auf Grundlage dieses Umfangs, statt auf unterschiedlichen Standorten, um ein besseres Bild der Auswirkungen zu bieten. Daher verweisen verschiedene Probleme möglicherweise einen Standort, der behoben werden soll.
+
 ## <a name="see-also"></a>Siehe auch
 [Bewährte Methoden und Leitlinien für den Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
 [Best Practices und Anleitungen für modellgetriebene Anwendungen](../../developer/model-driven-apps/best-practices/index.md)<br />

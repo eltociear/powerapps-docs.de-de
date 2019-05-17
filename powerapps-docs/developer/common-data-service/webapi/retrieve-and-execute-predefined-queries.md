@@ -3,7 +3,6 @@ title: Abrufen und Ausführen von vordefinierten Abfragen (Common Data Service) 
 description: 'Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Lesen Sie, wie Sie eine vordefinierte Abfrage mit FetchXML verfassen können, um eine Abfragezeichenfolge zu erstellen, um die Daten abzurufen'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,7 +13,8 @@ ms.assetid: 3d771a18-3dc5-4372-a7c7-40b3b1f986d8
 caps.latest.revision: 16
 author: brandonsimons
 ms.author: jdaly
-manager: amyla
+ms.reviewer: susikka
+manager: annbe
 search.audienceType:
   - developer
 search.app:

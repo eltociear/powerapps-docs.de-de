@@ -2,7 +2,7 @@
 title: Entitäten mithilfe des Organisationsservices aktualisieren und löschen (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie, wie Sie mithilfe des Organisations-Service Entitäten updaten und trennen'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,16 +17,6 @@ search.app:
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>Aktualisieren und Löschen von Entitäten mit dem Organisationsservice
 
-<!-- 
-Adding parity with Web API topics
-
-include information from https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update 
-
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/use-early-bound-entity-classes-create-update-delete
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/manage-duplicate-detection-create-update
-
--->
-
 Dieses Thema enthält Beispiele zu später und früherer gebundenen Programmierungsstile. Weitere Informationen: [Programmierung mit später und früher Bindung mithilfe des Organisationsservices](early-bound-programming.md)
 
 Jedes der Beispiele verwendet eine `svc`-Variable, die eine Instanz einer Klasse darstellt, die Sie auf<xref:Microsoft.Xrm.Sdk.IOrganizationService> der Benutzeroberfläche implementieren. Weitere Informationen zu Klassen finden Sie unter [Organisationsservice-Benutzeroberfläche](iorganizationservice-interface.md).
@@ -37,13 +27,20 @@ Jedes der Beispiele verwendet eine `svc`-Variable, die eine Instanz einer Klasse
 > Sie sollten eine Entitätsinstanz neu erstellen, das ID-Attribut sowie alle Attributwerte festlegen, die Sie ändern und diese Entitätsinstanz verwenden, um den Datensatz zu aktualisieren.
 
 > [!NOTE]
-> Metadaten für Attribute enthält eine `RequiredLevel`-Eigenschaft. Falls das auf `SystemRequired` festgelegt ist, können Sie dieser Attribute auf einen NULL-Wert nicht festlegen. Weitere Informationen: [Attributerforderlichkeitsstufe](../entity-attribute-metadata.md#attribute-requirement-level)
+> Metadaten für Attribute enthält eine `RequiredLevel`-Eigenschaft. Falls das auf `SystemRequired` festgelegt ist, können Sie dieser Attribute auf einen NULL-Wert nicht festlegen. Wenn Sie dies versuchen, erhalten Sie Fehlercode `-2147220989` mit der Meldung`Attribute: <attribute name> cannot be set to NULL`.
+> 
+> Weitere Informationen: [Attributerforderlichkeitsstufe](../entity-attribute-metadata.md#attribute-requirement-level)
 
 ## <a name="basic-update"></a>Grundlegende Aktualisierung
 
 Beide der folgenden Beispiele verwendeten<xref:Microsoft.Xrm.Sdk.IOrganizationService><xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> Methode, um Attributwerte für eine Entität festzulegen, die zuvor erhalten wurde.
 
 Verwenden Sie die <xref:Microsoft.Xrm.Sdk.Entity>.<xref:Microsoft.Xrm.Sdk.Entity.Id> Eigenschaft, um den eindeutigen Bezeichnerwert der Entität zur Entitätsinstanz zu übertragen, die verwendet wird, um den Vorgang upzudaten.
+
+> [!NOTE]
+> Wenn Sie versuchen, einen Datensatz ohne einen Primärschlüsselwert zu aktualisieren, wird der Fehler: `Entity Id must be specified for Update` angezeigt.
+> 
+> Falls Sie keinen Primärschlüsselwert haben, können Sie Datensätze auch mithilfe der Alternativschlüssel ausführen. Weitere Informationen: [Update mit Alternativschlüssel](#update-with-alternate-key)
 
 ### <a name="late-bound-example"></a>Spät gebundenes Beispiel
 
@@ -223,6 +220,30 @@ svc.Update(account);
 
 Wenn Sie eine Entität aktualisieren, können Sie die Werte änder, damit der Datensatz ein Duplikat für einen anderen Datensatz darstellt. Weitere Informationen: [DoppelteAbfdra Daten mit dem Organisationsdienst erkennen](detect-duplicate-data.md).
 
+## <a name="update-with-alternate-key"></a>Aktualisierung mit Alternativschlüsseln
+
+Wenn Sie über einen Alternativschlüssel verfügen, der für eine Entität definiert wurde, können Sie diesen anstelle des Primärschlüssels verwenden, um einen Datensatz zu aktualisieren. Sie können die früh gebundene Klasse nicht verwendet, um den Alternativschlüssel anzugeben. Sie müssen den Konstruktor [Entity(String, KeyAttributeCollection)](/dotnet/api/microsoft.xrm.sdk.entity.-ctor#Microsoft_Xrm_Sdk_Entity__ctor_System_String_Microsoft_Xrm_Sdk_KeyAttributeCollection_) verwenden, um den Alternativschlüssel anzugeben.
+
+Bei Nutzung von Typen mit früher Bindung können Sie <xref:Microsoft.Xrm.Sdk.Entity> mittels der <xref:Microsoft.Xrm.Sdk.Entity.ToEntity``1>-Methode in eine früh gebundene Klasse konvertieren.
+
+Im folgenden Beispiel wird veranschaulicht, wie Sie eine `Account`-Entität mit einem Alternativschlüssel aktualisieren, der für das Attribut `accountnumber` definiert wurde.
+
+> [!IMPORTANT]
+> Standardmäßig sind keine Alternativschlüssel für Entitäten definiert. Diese Methode kann nur verwendet werden, wenn für die Umgebung konfiguriert wird, um einen Alternativschlüssel für eine Entität zu definieren.
+
+```csharp
+var accountNumberKey = new KeyAttributeCollection();
+accountNumberKey.Add(new KeyValuePair<string, object>("accountnumber", "123456"));
+
+Account exampleAccount = new Entity("account", accountNumberKey).ToEntity<Account>();
+exampleAccount.Name = "New Account Name";
+svc.Update(exampleAccount);
+```
+
+Weitere Informationen: 
+- [Arbeiten mit Alternativschlüsseln](../define-alternate-keys-entity.md)
+- [Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen](../use-alternate-key-create-record.md)
+
 ## <a name="use-upsert"></a>Verwendung von Upsert
 
 In der Regel müssen Sie in den Datenenintegrationsszenarien Daten in Common Data Service aus anderen Quellen erstellen oder aktualisieren. Common Data Service verfügt ggf. bereits über Datensätze mit dem gleichen eindeutigen Bezeichner, die möglicherweise ein Alternativschlüssel sind. Wenn ein Entitätsdatensatz vorhanden ist,  möchten Sie diesen aktualisieren. Sollte er nicht vorhanden sein, erstellen Sie ihn, damit die Daten, die hinzugefügt werden, mit den Quelldaten synchronisiert werden. Dies ist erforderlich, wenn Sie upsert verwenden möchten.
@@ -371,4 +392,3 @@ Weitere Informationen: [Verhalten spezieller Vorgänge mithilfe Update](../speci
 [Erstellen von Entitäten mit dem Organisationsservice](entity-operations-create.md)<br />
 [Abrufen einer Entität mithilfe des Organisationsdienstes](entity-operations-retrieve.md)<br />
 [Entitäten mithilfe des Organisations-Service zuordnen oder trennen](entity-operations-associate-disassociate.md)<br />
-

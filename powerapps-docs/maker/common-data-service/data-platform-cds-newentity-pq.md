@@ -67,7 +67,7 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
 
 1. In der Liste **Primäres Namensfeld** klicken oder tippen Sie auf **ContactName** und dann auf **Weiter** in der rechten unteren Ecke.
 
-    Sie können ein anderes Primär-Namenfeld angeben, eine andere Spalte in der Quelltabelle für jedes Feld in der Entität zuordnen, die Sie erstellen, oder beides. Um diesem Lernprogramm genau zu folgen, belassen Sie die Standardspaltenzuordnung.
+    Sie können ein anderes Primär-Namenfeld angeben, eine andere Spalte in der Quelltabelle für jedes Feld in der Entität zuordnen, die Sie erstellen, oder beides. Sie können auch angeben, ob Textspalten in der Abfrageausgabe als mehrzeiliger Text oder einzeiliger Text im Common Data Service erstellt werden sollen. Um diesem Lernprogramm genau zu folgen, belassen Sie die Standardspaltenzuordnung.
 
 1. Wenn der **Ladestatus** **Abgeschlossen** ist, wählen Sie **Fertig** in der rechten unteren Ecke aus.
 

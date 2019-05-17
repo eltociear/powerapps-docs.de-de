@@ -3,7 +3,6 @@ title: Abfragen von Metadaten mit der Web-API (Common Data Service) | Microsoft 
 description: 'Die Funktion, Systemmetadaten abzufragen, ist mit der Web-API und dem Organisationsservice verfügbar, indem RetrieveMetadataChangesRequest verwendet wird.'
 ms.custom: ''
 ms.date: 11/04/2018
-ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,6 +13,7 @@ ms.assetid: 3ad4a332-a304-421f-a9fa-82ea3e0503fe
 caps.latest.revision: 18
 author: brandonsimons
 ms.author: jdaly
+ms.reviewer: susikka
 manager: amyla
 search.audienceType:
   - developer

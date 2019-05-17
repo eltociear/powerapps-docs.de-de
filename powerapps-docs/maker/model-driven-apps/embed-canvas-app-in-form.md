@@ -3,7 +3,7 @@ title: Einbetten einer Canvas-App in ein modellgesteuertes Formular | MicrosoftD
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -53,5 +53,6 @@ Richtlinien für die Arbeit mit eingebetteten Canvas-Apps sowie hilfreiche Tipps
 [Übersicht über CanvasApp-Konnektoren für PowerApps](../canvas-apps/connections-list.md) <br />
 [Den aktuellen Datensatz als Datenkontext an eine eingebettete Canvas-App übergeben](pass-current-embedded-canvas-app.md) <br />
 [Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
+[Führen Sie vordefinierte Aktionen aus einer eingebetteten Canvas-App auf dem Hostformular aus](embedded-canvas-app-actions.md) <br />
 [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md) <br />
 [Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)
