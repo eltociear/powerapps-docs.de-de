@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2019
 ms.locfileid: "65828178"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Funktionen „Back“ und „Navigate“ in PowerApps
 
@@ -71,7 +72,7 @@ Wenn die **wieder** -Funktion ausgeführt wird, den umgekehrten Übergang wird s
 
 * *Übergang* : Optional. Der visuelle Übergang, der zwischen dem aktuellen Bildschirm und dem vorherigen Bildschirm verwendet werden soll. Finden Sie in der Liste der gültigen Werte für dieses Argument weiter oben in diesem Thema. Standardmäßig ist die Umstellung, die über die ein Bildschirm gibt die Umkehrung des Übergangs durch die es angezeigt.
 
-**Navigieren Sie**( *Bildschirm* [, *Übergang* [, *kontextaktualisierungs-Datensatz* ]])
+**Navigieren Sie**( *Bildschirm* [; *Übergang* [; *kontextaktualisierungs-Datensatz* ]])
 
 * *Bildschirm*: Erforderlich. Der anzuzeigende Bildschirm.
 * *Übergang* : Optional.  Der visuelle Übergang, der zwischen dem aktuellen Bildschirm und dem nächsten Bildschirm verwendet werden soll. Weitere Informationen finden Sie in der Liste der gültigen Werte für dieses Argument weiter oben in diesem Thema. Der Standardwert ist **keine**.
@@ -82,9 +83,9 @@ Wenn die **wieder** -Funktion ausgeführt wird, den umgekehrten Übergang wird s
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
 | **Navigate( Details )** |Zeigt den **Detailbildschirm** ohne Übergang oder Änderung des Werts einer Kontextvariablen an. |Der **Detailbildschirm** erscheint schnell. |
-| **Navigate( Details, ScreenTransition.Fade )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an.  Kein Wert einer Kontextvariablen wird geändert. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. |
-| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an und aktualisiert den Wert der Kontextvariable **ID** auf **12**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen, und die Kontextvariable **ID** auf diesem Bildschirm wird auf **12** festgelegt. |
-| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an. Aktualisiert den Wert der Kontextvariable **ID** auf **12** und aktualisiert den Wert der Kontextvariable **Shade** auf **Color.Red**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. Die Kontextvariable **ID** auf dem **Detailbildschirm** wird auf **12** festgelegt, und die Kontextvariable **Shade** wird auf **Color.Red** festgelegt. Wenn Sie die **Fill**-Eigenschaft eines Steuerelements auf dem **Detailbildschirm** auf **Shade** festlegen, würde dieses Steuerelement rot angezeigt werden. |
+| **Navigate( Details; ScreenTransition.Fade )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an.  Kein Wert einer Kontextvariablen wird geändert. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. |
+| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an und aktualisiert den Wert der Kontextvariable **ID** auf **12**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen, und die Kontextvariable **ID** auf diesem Bildschirm wird auf **12** festgelegt. |
+| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;;&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Zeigt den **Detailbildschirm** mit einem **Fade**-Übergang an. Aktualisiert den Wert der Kontextvariable **ID** auf **12** und aktualisiert den Wert der Kontextvariable **Shade** auf **Color.Red**. |Der aktuelle Bildschirm wird ausgeblendet, um den **Detailbildschirm** anzuzeigen. Die Kontextvariable **ID** auf dem **Detailbildschirm** wird auf **12** festgelegt, und die Kontextvariable **Shade** wird auf **Color.Red** festgelegt. Wenn Sie die **Fill**-Eigenschaft eines Steuerelements auf dem **Detailbildschirm** auf **Shade** festlegen, würde dieses Steuerelement rot angezeigt werden. |
 | **Back()** | Zeigt dem vorherigen Bildschirm mit dem Standard-zurück-Übergang. | Zeigt die vorherige Ansicht der umgekehrten Umstellung des Übergangs über die vom aktuelle Bildschirm angezeigt wurde. |
 | **Back( ScreenTransition.Cover )** |  Zeigt den vorherigen Bildschirm mit der **behandelt** Übergang. | Zeigt den vorherigen Bildschirm über das **behandelt** Übergang, unabhängig von den Übergang, der über die vom aktuelle Bildschirm angezeigt wurde. |
 
@@ -100,8 +101,8 @@ Wenn die **wieder** -Funktion ausgeführt wird, den umgekehrten Übergang wird s
 
 1. Auf **Screen2**, fügen Sie eine Schaltfläche hinzu, und legen dessen **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Navigate( Screen1, ScreenTransition.Cover )
+    ```powerapps-comma
+    Navigate( Screen1; ScreenTransition.Cover )
     ```
 
 1. Halten Sie die **Alt** Schlüssel, klicken Sie auf die Schaltfläche.
@@ -110,7 +111,7 @@ Wenn die **wieder** -Funktion ausgeführt wird, den umgekehrten Übergang wird s
 
 1. Auf **Screen1**, fügen Sie eine Schaltfläche hinzu, und legen dessen **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Back()
     ```
 

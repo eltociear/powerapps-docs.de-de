@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65526052"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>AsType und IsType-Funktionen in canvas-apps
 
@@ -46,31 +47,31 @@ Die **AsType** Funktion behandelt einen Datensatz Verweis als einen bestimmten T
 
 Verwenden Sie diese Funktionen zusammen, um testen Sie zunächst den Entitätstyp eines Datensatzes, und klicken Sie dann als ein Datensatz des betreffenden Typs behandelt, sodass die Felder verfügbar sind:
 
-```powerapps-dot
-If( IsType( First( Accounts ).Owner, Users ),
-    AsType( First( Accounts ).Owner, Users ).'Full Name',
-    AsType( First( Accounts ).Owner, Teams ).'Team Name'
+```powerapps-comma
+If( IsType( First( Accounts ).Owner; Users );
+    AsType( First( Accounts ).Owner; Users ).'Full Name';
+    AsType( First( Accounts ).Owner; Teams ).'Team Name'
 )
 ```
 
 Sie benötigen diese Funktionen nur, wenn Sie die Felder eines Datensatzes Verweises zugreifen. Sie können z. B. Datensatz verweisen, in der [ **Filter** ](function-filter-lookup.md) Funktion ohne **IsType** oder **AsType**:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Users ) )
+```powerapps-comma
+Filter( Accounts; Owner = First( Users ) )
 ```
 
 Auf ähnliche Weise können Sie Datensätze Verweise mit der [ **Patch** ](function-patch.md) Funktion:
 
-```powerapps-dot
-Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
+```powerapps-comma
+Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
 ```  
 
 Wird in einem Datensatz, z. B. in verwendet eine [ **Katalog** ](../controls/control-gallery.md) oder [ **Bearbeitungsformular** ](../controls/control-form-detail.md) -Steuerelement, müssen Sie möglicherweise verwenden Sie die [globale Operator zur mehrdeutigkeitsvermeidung](operators.md#disambiguation-operator) auf den Entitätstyp verweisen. Beispielsweise wäre diese Formel für einen Katalog, das eine Liste von Kontakten anzeigt, in denen **Firmenname** ist eine **Kunden** Suche.
 
-```powerapps-dot
-If( IsType( ThisItem.'Company Name', [@Accounts] ),
-    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+```powerapps-comma
+If( IsType( ThisItem.'Company Name'; [@Accounts] );
+    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
 )
 ```
 
@@ -80,12 +81,12 @@ Wenn der Datensatzverweis ist *leere*, **IsType** gibt *"false"*, und **AsType**
 
 ## <a name="syntax"></a>Syntax
 
-**AsType**( *RecordReference*, *EntityType* )
+**AsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* : erforderlich. Ein Datensatzverweis, häufig ein Nachschlagefeld, die auf einen Datensatz in mehrere Entitäten verweisen kann.
 - *EntityType* : erforderlich. Die bestimmte Entität für die Sie testen.
 
-**IsType**( *RecordReference*, *EntityType* )
+**IsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* : erforderlich. Ein Datensatzverweis, häufig ein Nachschlagefeld, die auf einen Datensatz in mehrere Entitäten verweisen kann.
 - *EntityType* : erforderlich. Die bestimmte Entität, umgewandelt.
@@ -130,11 +131,11 @@ Wenn der Datensatzverweis ist *leere*, **IsType** gibt *"false"*, und **AsType**
 
 1. Legen Sie die **Text** Eigenschaft **Subtitle1** auf diese Formel:
 
-    ```powerapps-dot
-    If( IsBlank( ThisItem.'Company Name' ), "--",
-        IsType( ThisItem.'Company Name', [@Accounts] ),
-            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+    ```powerapps-comma
+    If( IsBlank( ThisItem.'Company Name' ); "--";
+        IsType( ThisItem.'Company Name'; [@Accounts] );
+            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
     )
     ```
 
