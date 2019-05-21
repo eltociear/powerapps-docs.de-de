@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c801a67cc7944d32a6a0a93e8b8566618b66da98
-ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
+ms.openlocfilehash: 85ab89641fd29fa91e8c5b5d7b3d36e9cddedaf2
+ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65525637"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65940508"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -32,6 +32,7 @@ Andere Elemente enthalten:
 
 * [Alle Operatoren](functions/operators.md)
 * [Steuerelemente und deren Eigenschaften](reference-properties.md)
+* [Datentypen](functions/data-types.md)
 
 ## <a name="a"></a>A
 **[Abs](functions/function-numericals.md)** : absoluter Wert einer Zahl  

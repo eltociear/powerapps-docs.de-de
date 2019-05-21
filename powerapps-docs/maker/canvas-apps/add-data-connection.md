@@ -13,21 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 15f3f38dd4812ffcbebeeaab4d301f715c97e1d1
+ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530133"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65922529"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Hinzufügen einer Datenverbindung in einer Canvas-App in PowerApps
 
-Fügen Sie in PowerApps einer vorhandenen Canvas-App oder einer von Grund auf neu erstellten App eine Datenverbindung hinzu. Ihre App kann eine Verbindung zu SharePoint, Salesforce, OneDrive oder [vielen anderen Datenquellen](connections-list.md) herstellen.
+Fügen Sie in PowerApps einer vorhandenen Canvas-App oder einer von Grund auf neu erstellten App eine Datenverbindung hinzu. Verbinden Ihrer app kann mit SharePoint, Common Data Service, Salesforce, OneDrive oder [viele andere Datenquellen](connections-list.md).
 
 Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten aus dieser Datenquelle in der App anzuzeigen und zu verwalten; siehe folgende Beispiele:
 
 * Verbinden mit OneDrive und Verwalten von Daten in einer Excel-Arbeitsmappe in Ihrer App.
 * Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
+* Eine Verbindung mit Common Data Service herstellen, und Aktualisieren einer Entität aus Ihrer app.
 * Herstellen einer Verbindung mit SQL Server und Aktualisieren einer Tabelle aus Ihrer App.
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -64,7 +65,7 @@ Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten au
 
 1. Klicken Sie auf **Erstellen**, um die Verbindung zu erstellen und der App hinzuzufügen.
 
-    Einige Connectors wie **Office 365 Outlook** erfordern keine weiteren Schritte, und Sie können sofort Daten daraus anzeigen. Andere Connectors fordern Sie auf, Anmeldeinformationen bereitzustellen, einen bestimmten Satz von Daten anzugeben oder weitere Schritte durchzuführen. In [SharePoint](connections/connection-sharepoint-online.md) und [SQL Server](connections/connection-azure-sqldatabase.md) sind z.B. zusätzliche Informationen erforderlich, bevor Sie sie verwenden können.
+    Einige Connectors wie **Office 365 Outlook** erfordern keine weiteren Schritte, und Sie können sofort Daten daraus anzeigen. Andere Connectors fordern Sie auf, Anmeldeinformationen bereitzustellen, einen bestimmten Satz von Daten anzugeben oder weitere Schritte durchzuführen. In [SharePoint](connections/connection-sharepoint-online.md) und [SQL Server](connections/connection-azure-sqldatabase.md) sind z.B. zusätzliche Informationen erforderlich, bevor Sie sie verwenden können. Mit [Common Data Service](connections/connection-common-data-service.md), Sie können die Umgebung ändern, bevor Sie eine Entität auswählen.
 
 ## <a name="identify-or-change-a-data-source"></a>Identifizieren oder Ändern einer Datenquelle
 Wenn Sie eine App aktualisieren, müssen Sie möglicherweise die im Katalog angezeigte Datenquelle, ein Formular oder ein anderes Steuerelement angeben oder ändern. Beispielsweise müssen Sie eine Datenquelle zu identifizieren, wie Sie einer app bereits erstellte oder aktualisieren, die Sie vor kurzem erstellt haben.
@@ -83,5 +84,5 @@ Wenn Sie eine App aktualisieren, müssen Sie möglicherweise die im Katalog ange
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* Zum Anzeigen und Aktualisieren von Daten in einer Quelle wie Excel, SharePoint oder SQL Server [fügen Sie einen Katalog hinzu](add-gallery.md), und [fügen Sie ein Formular hinzu](add-form.md).
+* Zum Anzeigen und Aktualisieren von Daten in einer Quelle wie Excel, SharePoint, Common Data Service und SQL Server, [Hinzufügen eines Katalogs](add-gallery.md), und [fügen Sie ein Formular](add-form.md).
 * Verwenden Sie für die Daten in anderen Quellen Connector-spezifische Funktionen, z.B. für [Office 365 Outlook](connections/connection-office365-outlook.md), [Twitter](connections/connection-twitter.md) und [Microsoft Translator](connections/connection-microsoft-translator.md).
