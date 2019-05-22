@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/18/2018
+ms.date: 09/21/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
+ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319654"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65974253"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Erstellen einer Canvas-App von Grund auf mit Common Data Service
 
@@ -61,7 +60,7 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
 
 1. Klicken Sie in der linken Navigationsleiste auf **BrowseGallery1**, und legen Sie dann den Wert für die Eigenschaft **Elemente** auf die folgende Formel fest:
 
-    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Diese Formel gibt Folgendes an:
 
@@ -93,7 +92,7 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
 
     ![Festlegen der Eigenschaften „Datasource“ und „Item“ des Formulars](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich die Option **Felder bearbeiten** aus, um den Bereich **Felder** zu öffnen.
+1. Auf der **Eigenschaften** im rechten Bereich auf der Registerkarte **Felder bearbeiten** zum Öffnen der **Felder** Bereich.
 
 1. Klicken Sie auf **Feld hinzufügen**, und aktivieren Sie anschließend die Kontrollkästchen der folgenden Felder:
 
@@ -103,6 +102,9 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
     - **Adresse 1: Postleitzahl**
     - **Anzahl der Mitarbeiter**
     - **Jahresumsatz**
+
+    > [!NOTE]
+    > Außerhalb dieses Szenario können Sie ein benutzerdefiniertes Feld erstellen, durch Auswahl **neues Feld**, Bereitstellen der erforderlichen Informationen ein, und wählen dann **Fertig**. Weitere Informationen finden Sie unter: [Erstellen Sie ein Feld](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Wählen Sie aus, und fügen Sie ein Feld hinzu.")
 
 1. Klicken Sie auf **Hinzufügen**.
 
@@ -124,25 +126,25 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Pluszeichen auf die folgende Formel fest:
 
-    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Symbol „Hinzufügen“](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Legen Sie die Eigenschaft **OnSelect** für den ersten Pfeil nach rechts auf die folgende Formel fest:
 
-    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Symbol „Weiter“](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. Legen Sie unter **FormScreen** die Eigenschaft **OnSelect** für das Symbol „Abbrechen“ auf die folgende Formel fest:
 
-    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Symbol „Abbrechen“](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Häkchensymbol auf die folgende Formel fest:
 
-    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Häkchensymbol](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -150,7 +152,7 @@ Wenn Sie eine App mit Common Data Service erstellen, müssen Sie keine Verbindun
 
 1. Legen Sie für das **Papierkorbsymbol** die **Color**-Eigenschaft auf **Weiß** und die **OnSelect**-Eigenschaft auf die folgende Formel fest:
 
-    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Papierkorbsymbol](./media/data-platform-create-app-scratch/trash-icon.png)
 

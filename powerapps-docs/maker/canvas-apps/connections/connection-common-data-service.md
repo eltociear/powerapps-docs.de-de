@@ -13,22 +13,33 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ede2736711fbb79250e1ca4b8e735f7fbd19b78d
-ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
+ms.openlocfilehash: c521fd5961bc9b8d940a374383baca1aeef0cbe4
+ms.sourcegitcommit: 93096dfa1aadba77159db1e5922f3d5528eecb7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65922491"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65986386"
 ---
 # <a name="connect-to-common-data-service"></a>In Common Data Service herstellen
 
 Sie können sicher speichern Ihre Geschäftsdaten in Common Data Service und rich-apps in PowerApps erstellen, sodass Benutzer Daten verwalten können. Sie können auch Daten integrieren, die in Lösungen, die Microsoft Flow und Power BI Daten aus Dynamics 365 enthalten.
 
-Standardmäßig verbindet sich der Common Data Service-Connector auf Daten in aktuellen Environmnent Ihrer app. Wenn Ihre app in einer anderen Umgebung verschoben wird, verbindet sich der Connector auf Daten in der neuen Umgebung. Dies eignet sich gut für eine app mit einer einzigen Umgebung oder eine app, die einen ALM-Prozess für das Verschieben von der Entwicklung, Test oder Produktion folgt.
+Standardmäßig verbindet sich der Common Data Service-Connector auf Daten in aktuellen Environmnent Ihrer app. Wenn Ihre app in einer anderen Umgebung verschoben wird, verbindet sich der Connector auf Daten in der neuen Umgebung. Dies eignet sich für eine app mit einer einzigen Umgebung oder eine app, die einen ALM-Prozess für das Verschieben von der Entwicklung, Test oder Produktion folgt.
 
-Wenn Sie eine Datenquelle mit dem Common Data Service-Connector hinzufügen, können Sie die Umgebung ändern, und wählen Sie dann eine oder mehrere Entitäten.  Standardmäßig verbindet sich die app Daten in der aktuellen Umgebung und die Benutzeroberfläche zeigt **(aktuellen)** über der Liste der Entitäten. Bei Auswahl von **Änderung**, können Sie angeben eine andere Umgebung Daten daraus anstelle von oder zusätzlich zu der aktuellen Umgebung. 
+Wenn Sie eine Datenquelle mit dem Common Data Service-Connector hinzufügen, können Sie die Umgebung ändern, und wählen Sie dann eine oder mehrere Entitäten. Standardmäßig verbindet sich die app Daten in der aktuellen Umgebung und die Benutzeroberfläche zeigt **(aktuellen)** über der Liste der Entitäten.
 
-![Common Data Service Change-Umgebung](media/connection-common-data-service/common-data-service-connection-change-environment.png)
+> [!div class="mx-imgBorder"]
+> ![Standardumgebung](media/connection-common-data-service/common-data-service-connection-change-environment.png)
+
+Bei Auswahl von **Änderung**, können Sie angeben eine andere Umgebung Daten daraus anstelle von oder zusätzlich zu der aktuellen Umgebung.
+
+> [!div class="mx-imgBorder"]
+> ![Andere Umgebungen](media/connection-common-data-service/common-data-service-connection-select-environment.png)
+
+Der Name der ausgewählten Umgebung wird unter dem Suchfeld angezeigt.
+
+> [!div class="mx-imgBorder"]
+> ![Neue Umgebungen](media/connection-common-data-service/common-data-service-connection-after-change-environment.png)
 
 Der Common Data Service-Connector ist robuster als die Dynamics 365-Connector und annähern Featureparität.
 
