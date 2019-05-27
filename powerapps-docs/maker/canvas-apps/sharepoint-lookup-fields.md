@@ -1,24 +1,24 @@
 ---
 title: Erstellen einer Beziehung zwischen SharePoint-Listen mithilfe eines Nachschlagefelds in einer Canvas-App | Microsoft-Dokumentation
 description: Erstellen Sie in PowerApps mithilfe eines Nachschlagefelds eine Beziehung zwischen SharePoint-Listen in einer Canvas-App.
-author: gregli-msft
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/20/2017
-ms.author: gregli
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 32a7c0a6848ee5b9521de65b9af0f28d85939f57
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8b7b718564ec62d9a7fa2ca78d52727831635c1c
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537170"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224949"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Verknüpfen von SharePoint-Listen mithilfe von Nachschlagefeldern in PowerApps
 

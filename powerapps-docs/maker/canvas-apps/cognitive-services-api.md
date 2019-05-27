@@ -1,25 +1,24 @@
 ---
 title: Verwenden von Cognitive Services in PowerApps | Microsoft-Dokumentation
 description: Erstellen Sie eine weitere grundlegende Canvas-app, die den Azure Cognitive Services Text Analytics-API verwendet, um Text zu analysieren.
-author: gregli-msft
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/08/2017
-ms.author: gregli
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 07548ff8fb14626543472b72ea52b80c858eeb0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ee3f7684ed1636cf2445945d1d01507733c18625
+ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556263"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66224937"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Verwenden von Cognitive Services in PowerApps
 In diesem Artikel erfahren Sie, wie Sie eine weitere grundlegende Canvas-app zu erstellen, verwendet der [Azure Cognitive Services-Textanalyse-API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
@@ -113,7 +112,7 @@ Befolgen Sie die Schritte unten, um diesen Bildschirm zu erstellen. Ist ein Steu
    
     ![App mit Bezeichnungen und Katalog](./media/cognitive-services-api/partial-app-step3.png)
 
-9. Wählen Sie im linken Bereich **Screen1** > Auslassungspunkte (**. . .**) > **Löschen** aus (dieser Bildschirm wird für die App nicht benötigt).
+9. Wählen Sie im linken Bereich **Screen1** > Auslassungspunkte ( **. . .** ) > **Löschen** aus (dieser Bildschirm wird für die App nicht benötigt).
 
 Diese App ist bewusst einfach gehalten, um sich auf das Aufrufen der Textanalyse-API zu konzentrieren. Natürlich könnten Sie einige Elemente hinzufügen, wie z.B. Logik zum Ein- und Ausblenden von Steuerelementen je nach den aktivierten Kontrollkästchen, Fehlerbehandlung, wenn der Benutzer keine Optionen auswählt usw.
 
@@ -128,34 +127,34 @@ Nun verfügen Sie über eine App, die ganz ordentlich aussieht, damit können ab
 
 Vor diesem Hintergrund fügen wir nun die Formel für die **OnSelect**-Eigenschaft der Schaltfläche hinzu. Hier liegt nun die ganze Zauberei.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1; 
+                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrases(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentiment(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -173,7 +172,7 @@ Hier geht einiges vor sich, gehen wir also etwas näher darauf ein:
 
   * In **DetectLanguage()** ist **numberOfLanguagesToDetect** als 1 hartcodiert, Sie könnten diesen Parameter aber auch entsprechend einer bestimmten Logik in der App übergeben.
 
-  * In **KeyPhrases()** und **DetectSentiment()**, **Sprache** ist hartcodiert, wie "En", aber Sie diesen Parameter, die anhand der Logik in der app übergeben werden können. Sie könnten beispielsweise zuerst die Sprache erkennen und anschließend diesen Parameter entsprechend dem von **DetectLanguage()** zurückgegebenen Wert festlegen.
+  * In **KeyPhrases()** und **DetectSentiment()** , **Sprache** ist hartcodiert, wie "En", aber Sie diesen Parameter, die anhand der Logik in der app übergeben werden können. Sie könnten beispielsweise zuerst die Sprache erkennen und anschließend diesen Parameter entsprechend dem von **DetectLanguage()** zurückgegebenen Wert festlegen.
 
 * Für jeden getätigten Aufruf fügen wir die Ergebnisse der entsprechenden Sammlung hinzu:
 
@@ -188,15 +187,15 @@ Zum Anzeigen der Ergebnisse der API-Aufrufe verweisen Sie auf die entsprechende 
 
 1. Legen Sie die **Text**-Eigenschaft der Sprachbezeichnung auf folgenden Wert fest: `"The language detected is " & First(languageCollect).name`.
    
-    Die **First()**-Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
+    Die **First()** -Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
 
-2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
    
-    Diese Formel verwendet ebenfalls die **First()**-Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
+    Diese Formel verwendet ebenfalls die **First()** -Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
 
 3. Legen Sie die **Items**-Eigenschaft des Katalogs mit Schlüsselbegriffen auf folgenden Wert fest: `phrasesCollect`.
    
-    Sie arbeiten nun mit einem Katalog, daher benötigen Sie nicht die **First()**-Funktion zum Abrufen eines Einzelwerts. Sie verweisen auf die Sammlung, und im Katalog werden die Schlüsselbegriffe als Liste angezeigt.
+    Sie arbeiten nun mit einem Katalog, daher benötigen Sie nicht die **First()** -Funktion zum Abrufen eines Einzelwerts. Sie verweisen auf die Sammlung, und im Katalog werden die Schlüsselbegriffe als Liste angezeigt.
 
 ## <a name="run-the-app"></a>Ausführen der App
 

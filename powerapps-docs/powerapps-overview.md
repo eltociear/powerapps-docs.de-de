@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
-ms.translationtype: HT
+ms.openlocfilehash: eb90f35286098f27454e6cad883b0113a211af78
+ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357573"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65609399"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
-PowerApps ist eine Suite von Apps, Diensten, Connectors und einer Datenplattform für eine schnelle Entwicklungsumgebung für Anwendungen, mit der Sie benutzerdefinierte Apps entsprechend Ihren Geschäftsanforderungen erstellen können. Mit PowerApps können Sie schnell benutzerdefinierte Geschäfts-Apps erstellen, die Sie mit Ihren Geschäftsdaten verbinden können. Der Speicherort dieser Daten kann *entweder* die zugrunde liegende Datenplattform sein (**Common Data Service**) *oder* verschiedene Online- oder lokale Datenquellen (SharePoint, Excel, Office 365, Dynamics 365, SQL Server usw.). 
+PowerApps ist eine Suite von Apps, Diensten, Connectors und einer Datenplattform für eine schnelle Entwicklungsumgebung für Anwendungen, mit der Sie benutzerdefinierte Apps entsprechend Ihren Geschäftsanforderungen erstellen können. Mit PowerApps können Sie schnell benutzerdefinierte Geschäfts-Apps erstellen, die Sie mit Ihren Geschäftsdaten verbinden können. Der Speicherort dieser Daten kann *entweder* die zugrunde liegende Datenplattform sein ([Common Data Service](/powerapps/maker/common-data-service/data-platform-intro)) *oder* verschiedene Online- oder lokale Datenquellen (SharePoint, Excel, Office 365, Dynamics 365, SQL Server usw.). 
 
 Mithilfe von PowerApps erstellte Apps bieten eine umfangreiche Geschäftslogik und Workflowfunktionen, die eine Umstellung Ihrer Geschäftsprozesse von manuellen auf digitale und automatisierte Abläufe ermöglichen. Zudem besitzen mit PowerApps erstellte Apps ein dynamisches Design und können nahtlos im Browser oder auf mobilen Geräten (Smartphones oder Tablets) ausgeführt werden. Da mit PowerApps funktionsreiche benutzerdefinierte Geschäfts-Apps erstellt werden können, ohne dass dazu das Schreiben von Code erforderlich ist, eignet es sich auch hervorragend für „nicht professionelle“ Benutzer.
 

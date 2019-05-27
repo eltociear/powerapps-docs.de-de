@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e96bf33b5ca5446c309eeb8a35ff0dd1c7fc5847
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: f9acc04a9159349075647ca4e318f15939a230f7
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65941622"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216629"
 ---
 # <a name="data-types-in-canvas-apps"></a>Datentypen in Canvas-apps
 
@@ -62,10 +62,6 @@ Da alle Datentypen unterstützt *leere*, **booleschen** und **zwei Option** Date
 
 Alle vier dieser Datentypen basieren auf einer [Unicode](https://en.wikipedia.org/wiki/Unicode) Textzeichenfolge.
 
-### <a name="size-limits"></a>Größenbeschränkungen
-
-Diese Datentypen werden nicht beschränkt auf ihre Länge aufweisen. Die zugrunde liegende JavaScript-Implementierung in Ihrem Browser oder auf Ihrem Gerät kann maximal verursachen, aber es ist in der Regel deutlich mehr als 100 MB. Allerdings kann die Menge des verfügbaren Arbeitsspeichers auf dem Gerät durch einen anderen Grenzwert verursachen, die wahrscheinlich niedriger ist als 100 MB. Um zu bestimmen, ob Ihre app innerhalb dieser Grenzwerte ausgeführt wird, testen Sie allgemeine Szenarien auf allen Geräten, die auf denen sie ausgeführt werden soll.
-
 ### <a name="image-and-media-resources"></a>Image und Medienressourcen
 
 Durch die **Datei** Menü, Video- und Audiodateien Bilddateien können app-Ressourcen hinzugefügt. Der Name der importierten Datei wird der Ressourcenname in der app. In dieser Abbildung, die das Logo für Northwind Traders, mit dem Namen **Nwindlogo**, eine app hinzugefügt wurde:
@@ -94,11 +90,21 @@ Dieser URI wird eine erweiterten Version zwei Lila Diamanten angezeigt:
 
 ![](media/data-types/double-diamonds.png)
 
-Können Sie anzeigen, das neueste Image erfasst werden, eine [ **Kamera** ](../controls/control-camera.md) steuern, wenn Sie festlegen, die **Image** Eigenschaft eines Bildsteuerelements zu der **Foto** die Eigenschaft von der Kamera-Steuerelement. Die app enthält das Bild im Arbeitsspeicher, und die **Foto** Eigenschaft von der Kamera-Steuerelement gibt einen URI-Verweis auf das Bild zurück. Sie können z. B. dauern, ein Bild und der Kamera **Foto** Eigenschaft zurückgeben könnte **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"**.
+Können Sie anzeigen, das neueste Image erfasst werden, eine [ **Kamera** ](../controls/control-camera.md) steuern, wenn Sie festlegen, die **Image** Eigenschaft eines Bildsteuerelements zu der **Foto** die Eigenschaft von der Kamera-Steuerelement. Die app enthält das Bild im Arbeitsspeicher, und die **Foto** Eigenschaft von der Kamera-Steuerelement gibt einen URI-Verweis auf das Bild zurück. Sie können z. B. dauern, ein Bild und der Kamera **Foto** Eigenschaft zurückgeben könnte **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** .
 
 Sie verwenden einen URI zum Verweisen auf ein Bild oder eine andere Media-Datei, die in einer Datenbank gespeichert. Auf diese Weise die app nicht die eigentlichen Daten abzurufen, bis sie tatsächlich benötigt wird. Beispielsweise kann ein Anhang in einer Common Data Service-Entität zurückgeben **"Appres://datasources/Contacts/table/..."** Sie können dieses Image durch Festlegen von anzeigen, wie im Beispiel Kamera der **Image** Eigenschaft eines Bildsteuerelements auf diesen Verweis, der die binären Daten abgerufen.
 
 Wenn Sie einen Media-Datentyp, z. B. ein Bild, mit einer Datenbank speichern, sendet die app an das tatsächliche Bild oder die Media-Daten, nicht den URI-Verweis.
+
+### <a name="size-limits"></a>Größenbeschränkungen
+
+Als Zeichenfolgen und URIs haben diese Datentypen nicht beschränkt auf ihre Länge auf.
+
+Die binären Daten, die diese Daten auch Verweistypen können Größe nicht beschränkt. Z. B. ein Bild, die über das kamerasteuerelement, das nun als Bezug genommen wird erfasst **"Appres: / / /..."** können als große und hohe Auflösung sein, wie die Kamera des Geräts in dessen bewältigen kann. Die Auflösung, Framerate und andere Attribute von Mediendateien werden nicht durch den Datentyp beschränkt, aber bestimmte Steuerelemente zum Wiedergeben und Aufzeichnen von Medien möglicherweise ihre eigenen Einschränkungen.
+
+Die Menge an verfügbarem Arbeitsspeicher in der app jedoch unterliegen alle Datengrößen. Browser, die in der Regel auf einem Desktopcomputer ausführen unterstützen mehr als 100 MB Daten. Die Menge des verfügbaren Speichers auf einem Gerät wie einem Smartphone möglicherweise jedoch viel niedriger, in der Regel im Bereich von 30 bis 70 MB. Um zu bestimmen, ob Ihre app innerhalb dieser Grenzwerte ausgeführt wird, testen Sie allgemeine Szenarien auf allen Geräten, die auf denen sie ausgeführt werden soll.
+
+Als bewährte Methode enthalten Sie Daten im Arbeitsspeicher nur so lange nach Bedarf. Hochladen von Bildern in einer Datenbank schnell wie möglich; Laden Sie Bilder, nur, wenn die app Benutzer sie anfordert.
 
 ## <a name="number-and-currency"></a>Zahl und Währung
 
@@ -121,7 +127,7 @@ Datum/Uhrzeit-Werte fallen in den folgenden Kategorien:
 
 Diese Tabelle zeigt einige Beispiele:
 
-| Datum/Uhrzeit-Typ | In der Datenbank gespeicherten Wert | Wert angezeigt, und 7 Stunden westlicher Richtung gemessen wird UTC eingegeben | Wert angezeigt, und 4 Stunden östlich UTC eingegeben | 
+| Datum/Uhrzeit-Typ | In der Datenbank gespeicherten Wert | Wert angezeigt, und 7 Stunden westlicher Richtung gemessen wird UTC eingegeben | Wert angezeigt, und 4 Stunden östlich UTC eingegeben |
 |--------------------------|------------------------------|------------------------------|
 | **Lokaler Benutzer** | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Samstag,&nbsp;möglicherweise&nbsp;18,&nbsp;2019<br>21:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>8:00 UHR |
 | **Unabhängig von Zeitzone** | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | 
@@ -153,9 +159,15 @@ Unix-Zeit zeigt z. B. 9. September 2001, 01:46:40 UTC, als 1.000.000.000. Zum An
 
 Diese Funktion jedoch zurückgibt **Samstag, 8. September 2001 18:46:40** bei Verwendung der **DateTimeFormat.LongDateTime24** Format in einer anderen Zeitzone, der-7 Stunden von der koordinierten Weltzeit (7 Stunden westlicher Richtung gemessen wird UTC) versetzt ist. Dieses Ergebnis zeigt die **"DateTime"** Wert anhand der lokalen Zeitzone richtig.
 
+Um eine Unix-Zeit zu konvertieren, unterteilen Sie das Ergebnis von **Wert** mit 1000:
+<br>**"RoundDown" (Wert ("unixtime") / 1000, 0)**
+
+Bei Bedarf die Unix-Zeit in einer **Datum** Wert für weitere Berechnungen oder in PowerApps anzuzeigen, verwenden Sie diese Formel:
+<br>**DateAdd( Date( 1970,1,1 ), UnixTime, Seconds )**
+
 ### <a name="sql-server"></a>SQL Server
 
-SQL Server verfügt über [ **"DateTime"**, **Datetime2**, und andere Datum/Uhrzeit-Datentypen](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) , die nicht mit einen Zeitzonenoffset einschließen und nicht der Zeitzone angeben wie. Canvas-apps wird vorausgesetzt, diese Werte werden in UTC gespeichert und behandelt sie als **Benutzer lokale**. Wenn die Werte Zeitzone unabhängig sein sollen, für die UTC-Übersetzungen korrigieren, mithilfe der [ **"timeZoneOffset"** ](function-dateadd-datediff.md#converting-to-utc) Funktion.
+SQL Server verfügt über [ **"DateTime"** , **Datetime2**, und andere Datum/Uhrzeit-Datentypen](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) , die nicht mit einen Zeitzonenoffset einschließen und nicht der Zeitzone angeben wie. Canvas-apps wird vorausgesetzt, diese Werte werden in UTC gespeichert und behandelt sie als **Benutzer lokale**. Wenn die Werte Zeitzone unabhängig sein sollen, für die UTC-Übersetzungen korrigieren, mithilfe der [ **"timeZoneOffset"** ](function-dateadd-datediff.md#converting-to-utc) Funktion.
 
 Canvas-apps verwenden Sie die enthaltene Zeitzonen-Informationen in **Datetimeoffset** Felder beim Konvertieren eines Werts mit Ihrer Darstellung in der app interne UTC. Verwenden Sie die apps immer UTC Zeitzone (null Offset der Zeitzone) Wenn sie Daten schreiben.
 
@@ -194,7 +206,7 @@ Sie können jedoch diese Formel:
 
 `If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
-Für globale Optionssätze (freigeben, welche Entitäten), den Namen der Optionssatz Enumeration entspricht der Name des Satzes globale Option. Für lokale Optionssätze (die eine Entität zugeordnet sind), der Name kann den Namen der Entität enthalten. Dadurch werden Konflikte vermieden, wenn mehrere Entitäten Optionssätze verfügen, die den gleichen Namen haben. Z. B. die **Konten** Entität eine **"orderstatus"** -Option festgelegt werden soll, und der Name möglicherweise **"orderstatus" (Konten)**. Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, damit Sie ihn in einfache Anführungszeichen umgeben müssen, wenn Sie in einer Formel darauf verweisen.
+Für globale Optionssätze (freigeben, welche Entitäten), den Namen der Optionssatz Enumeration entspricht der Name des Satzes globale Option. Für lokale Optionssätze (die eine Entität zugeordnet sind), der Name kann den Namen der Entität enthalten. Dadurch werden Konflikte vermieden, wenn mehrere Entitäten Optionssätze verfügen, die den gleichen Namen haben. Z. B. die **Konten** Entität eine **"orderstatus"** -Option festgelegt werden soll, und der Name möglicherweise **"orderstatus" (Konten)** . Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, damit Sie ihn in einfache Anführungszeichen umgeben müssen, wenn Sie in einer Formel darauf verweisen.
 
 Darüber hinaus können Werte von zwei-Option auch als boolesche Werte sich Verhalten. Z. B. einen zwei-Option-Wert, der mit dem Namen **TaxStatus** möglicherweise die Bezeichnungen **steuerbaren** und **Non-steuerbare**, entsprechen die *"true"* und *"false"* bzw. Um zu veranschaulichen, können Sie diese Formel:
 

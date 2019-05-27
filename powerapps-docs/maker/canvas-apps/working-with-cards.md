@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db0e42a45af217e9e5703242c2a5a867a52b687b
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: MT
+ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63317825"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216620"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Grundlegendes zu Datenkarten in PowerApps
 
@@ -97,9 +97,6 @@ Ein weiteres Beispiel: Entsperren Sie die Karte **ImageURL**, und fügen Sie ihr
 
 Legen Sie auf der Bearbeitungsleiste die **Image**-Eigenschaft dieses Steuerelements auf *TextBox*.**Text** fest, wobei *TextBox* der Name des **Texteingabe**-Steuerelements ist, das die URL enthält:
 
-> [!TIP]
-> Drücken Sie die ALT-TASTE, um den Namen der einzelnen Steuerelemente anzuzeigen.
-
 ![](./media/working-with-cards/show-image.png)
 
 Jetzt sehen Sie die Bilder und können deren URLs bearbeiten. Beachten Sie, dass Sie auch **Parent.Default** als **Image**-Eigenschaft hätten verwenden können, bei einer Änderung der URL durch den Benutzer würde dann jedoch keine Aktualisierung stattfinden.
@@ -139,7 +136,7 @@ Sehen Sie sich die Steuerelemente an, aus denen eine einfache Dateneingabekarte 
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-Halten Sie die ALT-TASTE gedrückt, um die Namen der Steuerelemente anzuzeigen, aus denen diese Karte besteht:
+In dieser Abbildung müssen die Steuerelemente auf der Datenkarte mit der Bezeichnung wurde:
 
 ![](./media/working-with-cards/dissect-card2.png)
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b92008425ade7976259087309de9a540dbceb455
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d99cf1129ae23eda97b79457cb2b93db6a74a5ea
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563171"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216018"
 ---
 # <a name="len-function-in-powerapps"></a>Funktion „Len“ in PowerApps
 Gibt die Länge einer Textzeichenfolge zurück
@@ -27,7 +26,7 @@ Gibt die Länge einer Textzeichenfolge zurück
 ## <a name="description"></a>Beschreibung
 Wenn Sie eine einzelne Zeichenfolge als Argument angeben, entspricht der Rückgabewert der Länge als Zahl.  Wenn Sie eine einspaltige [Tabelle](../working-with-tables.md) angeben, die Zeichenfolgen enthält, ist der Rückgabewert eine einspaltige Tabelle, die die Länge jeder Zeichenfolge enthält. Mehrspaltige Tabellen können in einspaltige Tabellen umgeformt werden, wie unter [Arbeiten mit Tabellen](../working-with-tables.md) beschrieben.
 
-Bei Angabe einer [leeren](function-isblank-isempty.md) Zeichenfolge gibt **Len** 0 zurück.
+Bei Angabe einer [leere](function-isblank-isempty.md) Zeichenfolge **Len** gibt 0 zurück.
 
 ## <a name="syntax"></a>Syntax
 **Len**( *String* )
@@ -54,6 +53,6 @@ Für das erste Beispiel in diesem Abschnitt erhält die Datenquelle den Namen **
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Len( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |In der **Adress**[-Spalte](../working-with-tables.md#columns) der **People**-Tabelle:<br><ul><li>Misst die Länge jeder einzelnen Zeichenfolge.</li><li>Gibt eine einspaltige Tabelle zurück, die die Länge jeder einzelnen Zeichenfolge enthält.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
-| **Len( [ "Hello"; "to the"; "World"; "" ] )** |In der **[Value](function-value.md)**-Spalte der linearen Tabelle:<br><ul><li>Misst die Länge jeder einzelnen Zeichenfolge.</li><li>Gibt eine einspaltige Tabelle zurück, die die Länge jeder einzelnen Zeichenfolge enthält.</li> |![](media/function-len/people-table-len-inline.png) |
+| **Len( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |In der **Adress**[-Spalte](../working-with-tables.md#columns) der **People**-Tabelle:<br><ul><li>Misst die Länge jeder einzelnen Zeichenfolge.</li><li>Gibt eine einspaltige Tabelle zurück, die die Länge jeder einzelnen Zeichenfolge enthält.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
+| **Len( [ "Hello", "to the", "World", "" ] )** |In der **[Value](function-value.md)**-Spalte der linearen Tabelle:<br><ul><li>Misst die Länge jeder einzelnen Zeichenfolge.</li><li>Gibt eine einspaltige Tabelle zurück, die die Länge jeder einzelnen Zeichenfolge enthält.</li> |![](media/function-len/people-table-len-inline.png) |
 

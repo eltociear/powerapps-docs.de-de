@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 04/26/2016
+ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5883ae65beb698a8c7681d9eac6ba0f7439ca19e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 264bce9c986544f8294d4a0346be2e7694d606d8
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557735"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216175"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>Grundlegendes zu Canvas-App-Tabellen und -Datensätzen in PowerApps
 
@@ -41,12 +40,12 @@ Sie können eine Vielzahl von Formeln erstellen, die den Namen einer Tabelle als
 ### <a name="records"></a>Datensätze
 Jeder Datensatz enthält mindestens eine Kategorie von Informationen zu einer Person, einem Ort oder einem Gegenstand. Im obigen Beispiel für jedes Produkt ein Datensatz (**Chocolate** (Schokolade), **Bread** (Brot) und **Water** (Wasser)) und eine Spalte für jede Informationskategorie vorhanden (**Price** (Preis), **Quantity on Hand** (Lagerbestand) und **Quantity on Order** (bestellte Menge)).
 
-In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, dieser Datensatz **{Name: "Erdbeeren"; Price: 7,99}** ist nicht mit einer Tabelle verknüpft. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
+In einer Formel können Sie mit geschweiften Klammern auf einen Datensatz selbst, außerhalb eines Tabellenkontexts verweisen. Angenommen, dieser Datensatz **{Name: "Erdbeeren", Price: 7.99}** ist nicht mit einer Tabelle verknüpft. Beachten Sie, dass die Feldnamen in diesem Beispiel, **Name** und **Price**, nicht in doppelte Anführungszeichen eingeschlossen sind.
 
 ### <a name="fields"></a>Felder
 Ein Feld ist eine einzelne Information in einem Datensatz. Sie können diese Art von Feld als Wert in einer Spalte eines bestimmten Datensatzes visuell darstellen.
 
-Wie mit einem Steuerelement verweisen Sie auf ein Feld, indem Sie den **.**- [Operator](functions/operators.md) auf einen Datensatz anwenden.  **First(Products).Name** gibt beispielsweise das Feld **Name** für den ersten Datensatz in der Tabelle **Products** (Produkte) zurück.
+Wie mit einem Steuerelement verweisen Sie auf ein Feld, indem Sie den **.** - [Operator](functions/operators.md) auf einen Datensatz anwenden.  **First(Products).Name** gibt beispielsweise das Feld **Name** für den ersten Datensatz in der Tabelle **Products** (Produkte) zurück.
 
 Ein Feld kann einen anderen Datensatz oder eine andere Tabelle enthalten, wie im Beispiel zur **[GroupBy](functions/function-groupby.md)**-Funktion dargestellt. Sie können beliebig viele Ebenen von Datensätzen und Tabellen verschachteln.
 
@@ -65,7 +64,7 @@ Alle Werte innerhalb einer Spalte gehören dem gleichen Datentyp an. Im obigen B
 In anderen Tools können Spalten „Felder“ genannt werden.
 
 > [!NOTE]
-> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"**. **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+> Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, ersetzt PowerApps die Leerzeichen durch **"\_X0020\_"** . **"Name der Spalte"** in SharePoint oder Excel wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 ### <a name="table"></a>Tabelle
 Eine Tabelle umfasst mindestens einen Datensatz, jeder mit mehreren Feldern, die datensatzübergreifend konsistente Namen aufweisen.
@@ -74,11 +73,11 @@ Alle Tabellen, die in einer Datenquelle oder eine Sammlung gespeichert sind, hab
 
 Sie können wie im folgenden Beispiel eine Tabelle in einer Formel ausdrücken, indem Sie die **[Table](functions/function-table.md)**-Funktion mit einer Reihe von Datensätzen verwenden, die Sie in geschweiften Klammern ausdrücken:
 
-`Table( { Value: "Strawberry" }; { Value: "Vanilla" } )`
+`Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
 Sie können auch eine einspaltige Tabelle mit eckigen Klammern definieren.  Alternativ können Sie den obigen Ausdruck wie folgt schreiben:
 
-`[ "Strawberry"; "Vanilla" ]`
+`[ "Strawberry", "Vanilla" ]`
 
 ## <a name="table-formulas"></a>Tabellenformeln
 In Excel und PowerApps verwenden Sie Formeln zum Bearbeiten von Zahlen und Textzeichenfolgen auf ähnliche Weise:
@@ -88,7 +87,7 @@ In Excel und PowerApps verwenden Sie Formeln zum Bearbeiten von Zahlen und Textz
 
 In beiden Fällen ändert sich der berechnete Wert automatisch, wenn die Werte der Argumente geändert werden (z.B. die Zahl in Zelle **A1** oder der Wert von **Slider1**).
 
-Sie können Formeln auf ähnliche Weise verwenden, um auf Daten in Tabellen und Datensätzen zuzugreifen und diese zu bearbeiten. In einigen Formeln können Sie Tabellennamen wie **Min(Catalog; Price)** als Argumente verwenden, um den niedrigsten Wert in der Spalte **Price** der **Catalog**-Tabelle anzuzeigen. Andere Formeln stellen ganze Tabellen als Rückgabewerte bereit, wie z.B. **RenameColumns(Catalog; "Price"; "Cost")**, womit alle Datensätze aus der **Catalog**-Tabelle zurückgegeben werden, jedoch der Name der Spalte **Price** in **Cost** (Kosten) geändert wird.
+Sie können Formeln auf ähnliche Weise verwenden, um auf Daten in Tabellen und Datensätzen zuzugreifen und diese zu bearbeiten. In einigen Formeln können Sie Tabellennamen wie **Min(Catalog, Price)** als Argumente verwenden, um den niedrigsten Wert in der Spalte **Price** der **Catalog**-Tabelle anzuzeigen. Andere Formeln stellen ganze Tabellen als Rückgabewerte bereit, wie z.B. **RenameColumns(Catalog, "Price", "Cost")** , womit alle Datensätze aus der **Catalog**-Tabelle zurückgegeben werden, jedoch der Name der Spalte **Price** in **Cost** (Kosten) geändert wird.
 
 Ebenso wie Zahlen, werden Formeln, die Tabellen und Datensätze enthalten, automatisch neu berechnet, wenn die zugrunde liegenden Tabelle oder der zugrunde liegende Datensatz geändert wird. Wenn die Kosten eines Produkts in die **Catalog**-Tabelle unter den vorherigen Mindestwert sinken, wird der Rückgabewert der **[Min](functions/function-aggregates.md)**-Formel automatisch geändert und angepasst.
 
@@ -105,7 +104,7 @@ Lassen Sie einige einfache Beispiele ansehen.
 
 2. Statt die **[Items](controls/properties-core.md)**-Eigenschaft auf den Namen einer Tabelle festzulegen, legen Sie sie auf eine Formel fest, die den Namen der Tabelle als Argument enthält, wie in diesem Beispiel:
 
-    `Sort(CustomGallerySample; SampleHeading; Descending)`
+    `Sort(CustomGallerySample, SampleHeading, Descending)`
 
     Diese Formel beinhaltet die **[Sort](functions/function-sort.md)**-Funktion, die den Namen einer Tabelle als erstes Argument und der Name einer Spalte in dieser Tabelle als zweites Argument akzeptiert. Die Funktion unterstützt auch ein optionales drittes Argument, das vorschreibt, dass die Daten in absteigender Reihenfolge sortiert werden sollen.
 
@@ -113,16 +112,19 @@ Lassen Sie einige einfache Beispiele ansehen.
 
 3. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft auf eine Formel fest, die die Formel aus dem vorherigen Schritt als Argument akzeptiert und eine Tabelle zurückgibt, wie im folgenden Beispiel:
 
-    `FirstN(Sort(CustomGallerySample; SampleHeading; Descending); 2)`
+    `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
     In dieser Formel verwenden Sie die Funktion **[FirstN](functions/function-first-last.md)**, um eine bestimmte Anzahl von Datensätzen in einer Tabelle anzuzeigen. Verwenden Sie die **[Sort](functions/function-sort.md)**-Funktion als erstes Argument für **[FirstN](functions/function-first-last.md)** und eine Zahl (in diesem Fall **2**) als das zweite Argument, das angibt, wie viele Datensätze angezeigt werden sollen.
-   
+
     Die gesamte Formel gibt eine Tabelle zurück, die die ersten beiden Datensätze der **CustomGallerySample**-Tabelle enthält, sortiert nach der Spalte **SampleHeading** in absteigender Reihenfolge.
-   
+
     ![](media/working-with-tables/gallery-items-sort-firstn.png)
 
-### <a name="table-functions-and-control-properties"></a>Tabellenfunktionen und Steuerelementeigenschaften
-Viele Funktionen in PowerApps akzeptieren den Namen einer Tabelle als Argument, erstellen eine zweite Tabelle, die dieselben Daten enthält, bearbeiten die neue Tabelle auf Grundlage der anderen Argumente und geben dann das Ergebnis zurück. Diese Funktionen ändern nicht die ursprüngliche Tabelle, selbst wenn es sich um eine Datenquelle handelt.
+## <a name="table-functions-and-control-properties"></a>Tabellenfunktionen und Steuerelementeigenschaften
+
+Betrachten Sie die **niedrigere** Funktion. Wenn die Variable **Willkommen** enthält die Zeichenfolge **"Hello, World"** , die Formel **senken (Willkommen)** gibt **"Hello, World"** .  Diese Funktion nicht der Fall, in keiner Weise, den Wert in der Variablen ändern. **Niedrigere** ist eine reine Funktion, darin, dass nur Eingabe und erzeugt eine Ausgabe verarbeitet. Das ist alles; Es hat keine Nebenwirkungen. Alle Funktionen in Excel und die meisten Funktionen in PowerApps sind reine Funktionen, sodass die Arbeitsmappe oder die app automatisch neu berechnet werden.
+
+PowerApps bietet eine Reihe von Funktionen, die in Tabellen auf die gleiche Weise ausgeführt werden. Diese Funktionen nehmen Tabellen als Eingabe und filtern, sortieren, transformieren, reduzieren und ganze Tabellen von Daten zusammenfassen. In der Tat **niedrigere** und viele andere Funktionen, die in der Regel einen einzelnen Wert annehmen können ebenfalls eine einspaltige Tabelle als Eingabe.
 
 * **[Sort](functions/function-sort.md)**, **[Filter](functions/function-filter-lookup.md)**: sortieren und filtern Datensätze
 * **[FirstN](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**: geben die ersten N oder letzten N Datensätze einer Tabelle zurück
@@ -136,26 +138,30 @@ Viele Funktionen in PowerApps akzeptieren den Namen einer Tabelle als Argument, 
 * **[HashTags](functions/function-hashtags.md)**: sucht in einer Zeichenfolge nach Hashtags
 * **[Error](functions/function-errors.md)**: stellt bei der Arbeit mit einer Datenquelle Fehlerinformationen bereit
 
-Sie können die Funktion auf eine Tabelle ausführen, die mehrere Spalten enthält, selbst wenn die Funktion eine einzelne Spalte als Argument erfordert. Um eine einzelne Spalte aus einer Tabelle mit mehreren Spalten zu extrahieren, verwenden Sie die Funktion **[ShowColumns](functions/function-table-shaping.md)** als Argument für die Funktion, die Sie verwenden möchten, so wie in diesem Beispiel:<br>**Lower( ShowColumns( Products; "Name" ) )**
+Viele dieser Funktionen nehmen eine einspaltige Tabelle als Eingabe an. Wenn eine gesamte Tabelle nur eine Spalte verfügt, können Sie es anhand des Namens angeben. Wenn eine Tabelle mehrere Spalten verfügt, können Sie eine der Spalten angeben, mit *Table.Column* Syntax. Z. B. **"Products"** gibt zurück, der nur die einspaltige Tabelle **Namen** Werte aus der **Produkte** Tabelle.
 
-Diese Formel erstellt eine einspaltige Tabelle, die alle Daten aus der Spalte **Name** der Tabelle **Products** (Produkte) enthält, jedoch alle Großbuchstaben in Kleinbuchstaben konvertiert. Bei Angabe einer Tabelle als Argument für die Funktionen **[AddColumns](functions/function-table-shaping.md)**, **[RenameColumns](functions/function-table-shaping.md)** oder **[DropColumns](functions/function-table-shaping.md)** können Sie die Tabelle nach Ihren Vorstellungen komplett umgestalten.
+Sie können eine Tabelle vollständig umformen, beliebig mithilfe der  **[AddColumns](functions/function-table-shaping.md)**,  **[RenameColumns](functions/function-table-shaping.md)**,  **[ ShowColumns](functions/function-table-shaping.md)**, oder **[DropColumns](functions/function-table-shaping.md)** Funktion. In diesem Fall ändern Sie diese Funktionen nur ihre Ausgabe nicht an der Quelle.
 
-Wenn Sie eine Datenquelle als Argument für eine dieser Funktionen angeben, werden die Datensätze der Datenquelle geändert und der neue Wert der Datenquelle im Allgemeinen als Tabelle zurückgegeben.
+Eigenschaften von Steuerelementen können auch Tabellen werden:
 
-* **[Collect](functions/function-clear-collect-clearcollect.md)**, **[Clear](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**: erstellen, löschen und fügen zu einer Sammlung hinzu
+* **Elemente** -gilt für Kataloge, Listenfelder und Kombinationsfelder. Diese Eigenschaft definiert die Tabelle, die den Katalog oder die Liste zeigt.
+* **SelectedItems** -gilt für Listenfelder und Kombinationsfelder. Diese Eigenschaft definiert die Tabelle der Elemente, die der Benutzer ausgewählt hat, wenn **SelectMultiple** aktiviert ist.
+
+## <a name="behavioral-formulas"></a>Verhalten von Formeln
+
+Andere Funktionen wurden speziell entwickelt, zum Ändern von Daten und die nachteiligen Auswirkungen haben. Da diese Funktionen nicht rein sind, müssen Sie sie sorgfältig erstellen, und sie können nicht automatisch Neuberechnen von Werten in der app beteiligt. Sie können diese Funktionen nur in [Verhalten Formeln](working-with-formulas-in-depth.md).
+
+* **[Sammeln von](functions/function-clear-collect-clearcollect.md)**,  **[löschen](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)** – Sammlungen erstellt, löscht sie aus, und fügt Sie Daten an Diese.
+* **[Patch](functions/function-patch.md)**  -ändert eine oder mehrere Felder in einem Datensatz.
 * **[Update](functions/function-update-updateif.md)**, **[UpdateIf](functions/function-update-updateif.md)**: aktualisiert Datensätze, die mindestens einem von Ihnen angegebenen Kriterium entsprechen
 * **[Remove](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)**: löscht Datensätze, die mindestens einem von Ihnen angegebenen Kriterium entsprechen
 
-Diese Eigenschaften werden auf Werte festgelegt, die Tabellen darstellen:
-
-* **Items**: gilt für Kataloge und Listenfelder. Tabelle, die im Katalog angezeigt werden soll
-* **SelectedItems**: gilt für Listenfelder. Tabelle der Elemente, die der Benutzer ausgewählt hat.
-
 ## <a name="record-formulas"></a>Datensatzformeln
+
 Sie können auch eine Formel erstellen, die Daten für einen einzelnen Datensatz berechnet, einen einzelnen Datensatz als Argument akzeptiert und einen einzelnen Datensatz als Rückgabewert bereitstellt. Lassen Sie uns zum Katalogbeispiel zurückkehren und die **Gallery1.Selected**-Eigenschaft zum Anzeigen von Informationen aus einem beliebigen Datensatz verwenden, den der Benutzer aus dem Katalog ausgewählt hat.
 
-1. Fügen Sie eine Schaltfläche hinzu, und legen Sie ihre Eigenschaft **[OnSelect](controls/properties-core.md)** auf diese Formel fest:<br>
-    **Collect( SelectedRecord; Gallery1.Selected )**
+1. Hinzufügen einer [ **Schaltfläche**](controls/control-button.md), und legen Sie dessen **[OnSelect](controls/properties-core.md)** -Eigenschaft auf diese Formel:<br>
+    **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
 
@@ -168,13 +174,13 @@ Diese Formel gibt einen Datensatz zurück, der nicht nur die Daten aus dem Daten
 > [!NOTE]
 > Die Spalte **Subtitle1** kann z.B. **Subtitle2** genannt werden, wenn Sie andere Elemente als die in diesem Thema verwendeten hinzugefügt haben.
 
-Da Sie nun über den ausgewählten Datensatz verfügen, können Sie mit dem **.**-Operator fest.
+Da Sie nun über den ausgewählten Datensatz verfügen, können Sie mit dem **.** -Operator fest.
 
 1. Fügen Sie ein **[Bezeichnung](controls/control-text-box.md)**-Steuerelement hinzu, und verschieben Sie es unter den Katalog und die Schaltfläche.
 
 1. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft auf den folgenden Ausdruck fest:<br>
     **"Selected: " & Gallery1.Selected.SampleHeading**
-   
+
     ![](media/working-with-tables/gallery-selected.png)
 
 Sie haben aus der **Selected**-Eigenschaft, die einen Datensatz darstellt, die **SampleHeading**-Eigenschaft extrahiert.
@@ -187,7 +193,7 @@ Sie können einen Datensatz auch als einen Allzweckcontainer für verwandte bena
 
 In diesen Fällen war der Datensatz niemals Teil einer Tabelle.
 
-### <a name="record-functions-and-control-properties"></a>Datensatzfunktionen und Steuerelementeigenschaften
+## <a name="record-functions-and-control-properties"></a>Datensatzfunktionen und Steuerelementeigenschaften
 Funktionen, die Datensätze zurückgeben:
 
 * **[FirstN](functions/function-first-last.md)**, **[LastN](functions/function-first-last.md)**: geben den ersten oder letzten Datensatz oder Datensätze der Tabelle zurück
@@ -202,25 +208,39 @@ Eigenschaften, die Datensätze zurückgeben:
 * **[Update](functions/function-update-updateif.md)**: gilt für Eingabesteuerelemente wie Texteingabe-Steuerelemente und Schieberegler. Richtet einzelne, zusammenzustellende Eigenschaften für den Katalog ein
 
 ## <a name="record-scope"></a>Datensatzebene
-Einige Funktionen werten eine Formel in allen Datensätzen einer Tabelle einzeln aus.  Das Ergebnis der Formel wird auf verschiedene Weise verwendet:  
+
+Einige Funktionen werten eine Formel in allen Datensätzen einer Tabelle einzeln aus. Das Ergebnis der Formel wird auf verschiedene Weise verwendet:
 
 * **Filter**, **Lookup**: Die Formel bestimmt, ob der Datensatz in die Ausgabe aufgenommen werden soll.
 * **Sort**: Die Formel stellt den Wert bereit, nach dem die Datensätze sortiert werden sollen.
 * **Concat**: Die Formel bestimmt die zu verkettenden Zeichenfolgen.
 * **ForAll**: Die Formel kann einen beliebigen Wert zurückgeben, u.U. mit Nebeneffekten.
-* **Distinct**: Die Formel gibt einen Wert zurück, mit dem doppelte Datensätze ermittelt werden können.  
+* **Distinct**: Die Formel gibt einen Wert zurück, mit dem doppelte Datensätze ermittelt werden können.
 * **AddColumns**: Die Formel stellt den Wert des hinzugefügten Felds bereit.
 * **Average**, **Max**, **Min**, **Sum**, **StdevP**, **VarP**: Die Formeln stellen den zu aggregierenden Wert bereit.
 
-Innerhalb dieser Formeln können Sie auf die Felder des aktuell verarbeiteten Datensatzes verweisen.  Jede dieser Funktionen erstellt eine „Datensatzebene“, in dem die Formel ausgewertet wird und in dem die Felder des Datensatzes als Bezeichner der obersten Ebene verfügbar sind.  Sie können aus der gesamten App auch auf Steuerelementeigenschaften und andere Werte verweisen.
+Innerhalb dieser Formeln können Sie auf die Felder des aktuell verarbeiteten Datensatzes verweisen. Jede dieser Funktionen erstellt eine „Datensatzebene“, in dem die Formel ausgewertet wird und in dem die Felder des Datensatzes als Bezeichner der obersten Ebene verfügbar sind. Sie können aus der gesamten App auch auf Steuerelementeigenschaften und andere Werte verweisen.
 
 Nehmen Sie z.B. die Tabelle **Products**:
 
 ![](media/working-with-tables/requested.png)
 
-Um festzustellen, ob bei einem dieser Produkte die Nachfrage das Angebot überstieg, verwenden Sie diese Formel:
+Um diese Beispieltabelle in Ihrer app zu erstellen, fügen Sie eine Schaltfläche aus, legen Sie dessen **OnSelect** -Eigenschaft auf diese Formel ein, und wählen Sie dann die Schaltfläche (klicken sie bei der Sie halten Sie die Alt-Taste in PowerApps Studio):
 
-`Filter( Products; 'Quantity Requested' > 'Quantity Available' )`
+```powerapps-dot
+Set( Products,
+    Table(
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 }
+    )
+)
+```
+
+Um zu bestimmen, ob bei einem dieser Produkte mehr angefordert haben, als verfügbar ist:
+
+`Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
 Das erste Argument für **Filter** ist die Tabelle von Datensätzen, die verarbeitet wird, und das zweite Argument ist eine Formel.  **Filter** erstellt eine Datensatzebene für die Auswertung dieser Formel, in dem die Felder jedes Datensatzes verfügbar sind, in diesem Fall **Product**, **Quantity Requested** (Nachgefragte Menge) und **Quantity Available** (verfügbare Menge).  Das Ergebnis des Vergleichs bestimmt, ob jeder Datensatz in das Ergebnis der Funktion aufgenommen werden soll:
 
@@ -228,66 +248,67 @@ Das erste Argument für **Filter** ist die Tabelle von Datensätzen, die verarbe
 
 Außerdem können wir berechnen, wie viel von jedem Produkt bestellt werden soll:
 
-```powerapps-comma
+```powerapps-dot
 AddColumns( 
-    Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-    "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
+    Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+    "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
 )
 ```
 
-Hier wird dem Ergebnis eine berechnete Spalte hinzugefügt.  **AddColumns** verfügt über eine eigene Datensatzebene, die zum Berechnen des Unterschiedes zwischen dem Angeforderten und dem Verfügbaren verwendet wird.
+Hier wird dem Ergebnis eine berechnete Spalte hinzugefügt. **AddColumns** verfügt über eine eigene Datensatzebene, die zum Berechnen des Unterschiedes zwischen dem Angeforderten und dem Verfügbaren verwendet wird.
 
 ![](media/working-with-tables/toorder.png)
 
-Schließlich kann die Ergebnistabelle auf nur bestimmte Spalten reduziert werden:
+Schließlich können wir die Ergebnistabelle auf nur die Spalten reduzieren, die wir möchten:
 
-```powerapps-comma
-ShowColumns( 
-    AddColumns( 
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
-    ); 
-    "Product"; 
+```powerapps-dot
+ShowColumns(
+    AddColumns(
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ),
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+    ),
+    "Product",
     "Quantity To Order"
 )
 ```
 
 ![](media/working-with-tables/toorderonly.png)
 
-Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") und an anderen einfache Anführungszeichen (') verwendet haben.  Einfache Anführungszeichen sind beim Verweisen auf den Wert eines Objekts wie ein Feld oder eine Tabelle erforderlich, wenn der Name des Objekts ein Leerzeichen enthält.  Doppelte Anführungszeichen werden verwendet, wenn nicht auf den Wert eines Objekts verweisen wird, sondern darüber gesprochen. Dies kommt vor allem dann vor, wenn das Objekt noch nicht vorhanden ist, wie bei **AddColumns**.  
+Beachten Sie, dass wir oben an einigen Stellen doppelte Anführungszeichen (") und an anderen einfache Anführungszeichen (') verwendet haben.  Einfache Anführungszeichen sind beim Verweisen auf den Wert eines Objekts wie ein Feld oder eine Tabelle erforderlich, wenn der Name des Objekts ein Leerzeichen enthält.  Doppelte Anführungszeichen werden verwendet, wenn nicht auf den Wert eines Objekts verweisen wird, sondern darüber gesprochen. Dies kommt vor allem dann vor, wenn das Objekt noch nicht vorhanden ist, wie bei **AddColumns**.
 
-### <a name="disambiguation"></a>Mehrdeutigkeitsvermeidung
-Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [**@**-Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
+## <a name="disambiguation"></a>Mehrdeutigkeitsvermeidung
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster nutzen:<br>_Tabelle_**[@**_Feldname_**]**
-* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@**_Objektname_**]** (ohne Tabellenbezeichnung).
+Feldnamen, die mit auf Datensatzebene hinzugefügt wurden, haben Vorrang vor denselben Namen von woanders in der App.  In diesem Fall können Sie weiterhin von außerhalb der Datensatzebene mithilfe des [ **@** -Operators zur Mehrdeutigkeitsvermeidung](functions/operators.md) auf Werte zugreifen:
 
-Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter(** _Tabelle_**,** ... **)** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@** -Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster nutzen:<br>_Tabelle_ **[@** _Feldname_ **]**
+* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@** _Objektname_ **]** (ohne Tabellenbezeichnung).
+
+Wenn es sich bei der gerade verarbeiteten Tabelle um einen Ausdruck wie **Filter(** _Tabelle_ **,** ... **)** handelt, kann der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet werden.  Nur die innerste Datensatzebene kann auf Felder aus diesem Tabellenausdruck zugreifen, indem der Operator zur Mehrdeutigkeitsvermeidung nicht verwendet wird.
 
 Angenommen, Sie haben eine Sammlung **X**:
 
 ![](media/working-with-tables/X.png)
 
-Sie können diese Sammlung mit **ClearCollect( Y; \["A"; "B"\] )** erstellen.
+Sie können diese Sammlung mit **ClearCollect( Y, \["A", "B"\] )** erstellen.
 
 Und eine weitere Sammlung **Y**:
 
 ![](media/working-with-tables/Y.png)
 
-Sie können diese Sammlung mit **ClearCollect( Y; ["A"; "B"] )** erstellen.
+Sie können diese Sammlung mit **ClearCollect( Y, ["A", "B"] )** erstellen.
 
 Definieren Sie darüber hinaus eine Kontextvariable namens **Wert** mit dieser Formel: **UpdateContext( {Value: "!"} )**
 
-Lassen Sie uns alle Puzzleteile zusammensetzen.  In diesem Kontext ergibt die folgende Formel:
+Lassen Sie uns alle Puzzleteile zusammensetzen. In diesem Kontext ergibt die folgende Formel:
 
-```powerapps-comma
-Ungroup( 
-    ForAll( X; 
-        ForAll( Y; 
-            Y[@Value] & Text( X[@Value] ) & [@Value] 
-        ) 
-    ); 
-    "Value" 
+```powerapps-dot
+Ungroup(
+    ForAll( X,
+        ForAll( Y,
+            Y[@Value] & Text( X[@Value] ) & [@Value]
+        )
+    ),
+    "Value"
 )
 ```
 
@@ -295,71 +316,89 @@ die folgende Tabelle:
 
 ![](media/working-with-tables/XY.png)
 
-Was ist hier passiert?  Die äußerste **ForAll**-Funktion definiert eine Datensatzebene für **X** und erlaubt den Zugriff auf das **Value**-Feld jedes Datensatzes während der Verarbeitung.  Der Zugriff erfolgt einfach mithilfe des Wortes **Value** oder mithilfe von **X[@Value]**.
+Was ist hier passiert?  Die äußerste **ForAll**-Funktion definiert eine Datensatzebene für **X** und erlaubt den Zugriff auf das **Value**-Feld jedes Datensatzes während der Verarbeitung.  Der Zugriff erfolgt einfach mithilfe des Wortes **Value** oder mithilfe von **X[@Value]** .
 
 Die innerste **ForAll**-Funktion definiert eine andere Datensatzebene für **Y**.  Da für diese Tabelle auch ein **Value**-Feld definiert wurde, wird bei der Verwendung von **Value** auf das Feld im Datensatz von **Y** verwiesen, nicht mehr auf den von **X**.  Um hier auf das **Value**-Feld von **X** zuzugreifen, muss die längere Version mit dem Operator zur Mehrdeutigkeitsvermeidung verwendet werden.
 
 Da **Y** die innerste Datensatzebene darstellt, ist beim Zugriff auf Felder dieser Tabelle keine Mehrdeutigkeitsvermeidung erforderlich. Die Verwendung dieser Formel erzielt daher dasselbe Ergebnis:
 
-```powerapps-comma
-Ungroup( 
-    ForAll( X; 
-        ForAll( Y; 
-            Value & Text( X[@Value] ) & [@Value] 
-        ) 
-    ); 
-    "Value" 
+```powerapps-dot
+Ungroup(
+    ForAll( X,
+        ForAll( Y,
+            Value & Text( X[@Value] ) & [@Value]
+        )
+    ),
+    "Value"
 )
 ```
 
-Alle Datensatzebenen von **ForAll** sind dem globalen Bereich übergeordnet.  Die von uns definierte **Value**-Kontextvariable ist ohne den Operator zur Mehrdeutigkeitsvermeidung nicht anhand des Namens verfügbar.   Um auf diesen Wert zugreifen, muss **[@Value]** verwendet werden.
+Alle Datensatzebenen von **ForAll** sind dem globalen Bereich übergeordnet. Die **Wert** Kontextvariablen, die wir definiert haben, ist nicht anhand des Namens ohne den Operator zur mehrdeutigkeitsvermeidung verfügbar. Verwenden Sie den Zugriff auf diesen Wert **[@Value]** .
 
-**Ungroup** vereinfacht das Ergebnis, da geschachtelte **ForAll**-Funktionen eine geschachtelte Tabelle ergeben.
+**Aufheben der Gruppierung von** vereinfacht das Ergebnis, da geschachtelte **ForAll** Funktionen führen eine geschachtelte Ergebnistabelle.
 
-## <a name="inline-syntax"></a>Inlinesyntax
-### <a name="records"></a>Datensätze
+## <a name="single-column-tables"></a>Tabellen mit einer Spalte
+
+Um auf eine einzelne Spalte aus einer Tabelle angewendet werden, verwenden die **ShowColumns** funktionieren, wie im folgenden Beispiel:
+
+```powerapps-dot
+ShowColumns( Products, "Product" )
+```
+
+Diese Formel erzeugt diese Tabelle mit einer Spalte:
+
+![](media/working-with-tables/single-column.png)
+
+Geben Sie für eine kürzere Alternative, *Table.Column*, extrahiert die einfach die einspaltige Tabelle mit *Spalte* aus *Tabelle*. Diese Formel erzeugt z. B. genau das gleiche Ergebnis wie mit **ShowColumns**.
+
+```powerapps-dot
+Products.Product
+```
+
+## <a name="inline-records"></a>Inline-Datensätze
+
 Datensätze werden mit geschweiften Klammern ausgedrückt, die die Namen von Feldwerten enthalten.  Sie können den ersten Datensatz in der Tabelle am Anfang dieses Themas z.B. mit dieser Formel ausdrücken:
 
-`{ Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 }`
+`{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
 
 Sie können Formeln auch in andere Formeln einbetten, wie in diesem Beispiel gezeigt:
 
-`{ Name: First(Products).Name; Price: First(Products).Price * 1,095 }`
+`{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }`
 
 Datensätze lassen sich auch schachteln, indem geschweifte Klammern geschachtelt werden, wie in diesem Beispiel gezeigt:
 
-`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand; 'OnOrder': ThisItem.QuantOnOrder } }`
+`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }`
 
 Schließen Sie jeden Spaltenname, die ein Sonderzeichen wie ein Leerzeichen oder einen Doppelpunkt enthält, in einfache Anführungszeichen ein.  Um ein einfaches Anführungszeichen in einem Spaltennamen zu verwenden, verdoppeln Sie es.
 
 Beachten Sie, dass der Wert in der **Price**-Spalte kein Währungssymbol wie ein Dollarzeichen enthält. Die Formatierung wird angewendet, wenn der Wert angezeigt wird.  
 
-### <a name="tables"></a>Tabellen
+## <a name="inline-tables"></a>Inline-Tabellen
 Mithilfe mit der **[Table](functions/function-table.md)**-Funktion und einem Satz von Datensätzen können Sie eine Tabelle erstellen. Die Tabelle zu Beginn dieses Themas lässt sich mit dieser Formel ausdrücken:
 
-```powerapps-comma
+```powerapps-dot
 Table( 
-    { Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 };
-    { Name: "Bread"; Price: 4,95; 'Quantity on Hand': 34; 'Quantity on Order': 0 };
-    { Name: "Water"; Price: 4,95; 'Quantity on Hand': 10; 'Quantity on Order': 0 } 
+    { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
+    { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
+    { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
 )
 ```
 
 Sie können Tabellen auch schachteln:
 
-```powerapps-comma
+```powerapps-dot
 Table( 
-    { Name: "Chocolate"; 
-      'Quantity History': Table( { Quarter: "Q1"; OnHand: 10; OnOrder: 10 };
-                                 { Quarter: "Q2"; OnHand: 18; OnOrder: 0 } ) 
+    { Name: "Chocolate", 
+      'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
+                                 { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
     }
 )
 ```
 
-### <a name="value-tables"></a>Werttabellen
+## <a name="inline-value-tables"></a>Inline-Wert-Tabellen
 Sie können einspaltige Tabellen erstellen, indem Sie Werte in eckigen Klammern angeben. Die daraus resultierende Tabelle enthält eine einzelne Spalte namens **Value**.
 
-Z. B. `[ 1; 2; 3; 4 ]` entspricht `Table( { Value: 1 }; { Value: 2 }; { Value: 3 }; { Value: 4 } )` und diese Tabelle zurückgegeben:
+Z. B. `[ 1, 2, 3, 4 ]` entspricht `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` und diese Tabelle zurückgegeben:
 
 ![](media/working-with-tables/inline-table.png)
 

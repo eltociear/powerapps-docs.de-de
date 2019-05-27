@@ -13,14 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8436656150d3abf36c8c4a26efc46e940e35f06
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: 284e9dfca0dff9a3bb92c2f5b073cfbe962ce5e9
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940488"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66215990"
 ---
 # <a name="operators-in-powerapps"></a>Operatoren in PowerApps
+
 Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere Informationen finden Sie unter den Informationen zu [globalen Apps](../global-apps.md).
 
 
@@ -51,7 +52,7 @@ Einige dieser Operatoren sind von der Sprache des Erstellers abhängig.  Weitere
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                Teilzeichenfolgentest (Groß-/Kleinschreibung wird nicht berücksichtigt)                                                                                                                 |
 |                                **@**                                | [Operator zur Mehrdeutigkeitsvermeidung](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       Mehrdeutigkeitsvermeidung für Felder                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      Globale Mehrdeutigkeitsvermeidung                                                                                                                       |
-| **,**<br>[[sprachabhängig](../global-apps.md)]  |                   Listentrennzeichen                    | **If( X < 10, "Low", "Good" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | Trennt Folgendes: <ul><li>Argumente in Funktionsaufrufen</li><li>Felder in einem [Datensatz](../working-with-tables.md#elements-of-a-table)</li><li>Datensätze in einer [Value-Tabelle](../working-with-tables.md#inline-syntax)</li></ul>.  Diese Zeichen hängt von der Sprache ab. |
+| **,**<br>[[sprachabhängig](../global-apps.md)]  |                   Listentrennzeichen                    | **If( X < 10, "Low", "Good" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | Trennt Folgendes: <ul><li>Argumente in Funktionsaufrufen</li><li>Felder in einem [Datensatz](../working-with-tables.md#elements-of-a-table)</li><li>Datensätze in einem [Tabelle](../working-with-tables.md#inline-value-tables)</li></ul> Diese Zeichen hängt von der Sprache ab. |
 | **;**<br>[[sprachabhängig](../global-apps.md)] |                  Formelverkettung                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          Separate Aufrufe von Funktionen in Verhaltenseigenschaften. Der Verkettungsoperator, hängt von der Sprache ab.                                                                          |
 |                             **Parent**                              |         [Parent-Operator](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           Zugriff auf Eigenschaften eines Steuerelementcontainers                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem-Operator](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          Zugriff auf Felder eines Katalogs oder Form-Steuerelements                                                                                                           |
@@ -84,10 +85,10 @@ In PowerApps kann von jedem Ort der App aus auf jedes Steuerelement verwiesen we
 Steuerelemente auf diesem Bildschirm verfügen über eine weitere Option. Sie können einen relativen Verweis verwenden: **Parent.Fill**. Der **[Parent](operators.md#parent-operator)**-Operator bezieht sich auf das Steuerelement, mit dem dieses Steuerelement gehostet wird, und macht alle zugehörigen Eigenschaften verfügbar. Die Verwendung von **[Parent](operators.md#parent-operator)** ist hilfreich, weil dafür keine Abhängigkeit vom Namen des Steuerelements besteht. Sie können ein Containersteuerelement kopieren und einfügen, ohne dass Sie Verweise im Container anpassen müssen. Mit diesem Operator wird außerdem die Beziehung zwischen dem untergeordneten und übergeordneten Steuerelement beim Lesen von Formeln besser verdeutlicht.
 
 ## <a name="disambiguation-operator"></a>Operator zur Mehrdeutigkeitsvermeidung
-Für einige Funktionen werden [Datensatzbereiche](../working-with-tables.md#record-scope) zum Zugreifen auf die Felder der Tabelle erstellt, während die einzelnen Datensätze verarbeitet werden, z.B. **Filter**, **AddColumns** und **Sum**.  Feldnamen, die mit dem Datensatzbereich hinzugefügt werden, setzen die gleichen Namen von anderen Orten der App außer Kraft.  Wenn dies passiert, können Sie mit dem **@**-Operator zur Mehrdeutigkeitsvermeidung trotzdem auf Werte außerhalb des Datensatzbereichs zugreifen:
+Für einige Funktionen werden [Datensatzbereiche](../working-with-tables.md#record-scope) zum Zugreifen auf die Felder der Tabelle erstellt, während die einzelnen Datensätze verarbeitet werden, z.B. **Filter**, **AddColumns** und **Sum**.  Feldnamen, die mit dem Datensatzbereich hinzugefügt werden, setzen die gleichen Namen von anderen Orten der App außer Kraft.  Wenn dies passiert, können Sie mit dem **@** -Operator zur Mehrdeutigkeitsvermeidung trotzdem auf Werte außerhalb des Datensatzbereichs zugreifen:
 
-* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@**-Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster nutzen:<br>_Tabelle_**[@**_Feldname_**]**
-* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@**_Objektname_**]** (ohne Tabellenbezeichnung).
+* Verwenden Sie zum Zugreifen auf Werte aus geschachtelten Datensatzbereichen den **@** -Operator mit dem Namen der jeweiligen Tabelle, indem Sie das folgende Muster nutzen:<br>_Tabelle_ **[@** _Feldname_ **]**
+* Verwenden Sie zum Zugreifen auf globale Werte, z.B. Datenquellen, Sammlungen und Kontextvariablen, das Muster **[@** _Objektname_ **]** (ohne Tabellenbezeichnung).
 
 Weitere Informationen und Beispiele finden Sie unter [Datensatzbereiche](../working-with-tables.md#record-scope).
 

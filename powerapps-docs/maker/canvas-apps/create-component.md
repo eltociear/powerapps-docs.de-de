@@ -10,13 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 369304ded3fdc9fcd69459da9875e6080d5d860c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: MT
+ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
+ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562014"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66034865"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Erstellen Sie eine Komponente für Canvas-apps
 
@@ -51,9 +50,12 @@ Komponenten unterstützen nicht die **"updatecontext"** -Funktion, aber Sie kön
 
 ## <a name="import-and-export"></a>Importieren und exportieren
 
-Wenn Sie eine Komponente exportiert haben, erstellen Sie eine lokale Datei, die in einer anderen app importiert werden kann. Wenn die app eine geänderte Version der gleichen Komponente enthält, werden Sie aufgefordert zu entscheiden, ob die geänderte Version ersetzen oder der Import Abbrechen. In diesem Dokument nicht Komponenten in der Cloud speichern oder freigeben innerhalb einer Umgebung.
+Wählen Sie zum Importieren von ein oder mehrere Komponenten aus einer app in einer anderen **importieren Komponenten** in der Dropdown-Liste der Komponenten. Ein Dialogfeld listet alle apps, die Komponenten enthalten, die Berechtigung zum Bearbeiten. Wählen Sie eine app, und wählen Sie dann **importieren** So importieren Sie die neueste veröffentlichte Version der Komponenten in dieser app. Nachdem Sie mindestens eine Komponente importiert haben, können Ihre Kopie bearbeiten und löschen, die Sie nicht benötigen.
 
-![Importieren und exportieren](./media/create-component/import.png)
+> [!div class="mx-imgBorder"]
+> ![Importieren Komponenten (Dialogfeld)](./media/create-component/import-components.png)
+
+Wenn Sie eine Komponente exportiert haben, erstellen Sie eine lokale Datei, die in einer anderen app importiert werden kann. Wenn die app eine geänderte Version der gleichen Komponente enthält, werden Sie aufgefordert zu entscheiden, ob die geänderte Version ersetzen oder der Import Abbrechen. 
 
 ## <a name="custom-properties"></a>Benutzerdefinierte Eigenschaften
 
@@ -105,7 +107,7 @@ In diesem Beispiel erstellen Sie eine Menükomponente, die ähnelt dieser Abbild
 
 1. Legen Sie der Komponente **Elemente** -Eigenschaft auf diese Formel:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Table({Item:"SampleText"})
     ```
 
@@ -115,7 +117,7 @@ In diesem Beispiel erstellen Sie eine Menükomponente, die ähnelt dieser Abbild
 
 1. Stellen Sie sicher, dass die Eigenschaftenliste die **Elemente** Eigenschaft (genauso wie in der Standardeinstellung), und legen Sie den Wert dieser Eigenschaft auf den folgenden Ausdruck:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent.Items
     ```
 
@@ -141,8 +143,8 @@ Als Nächstes Sie die Komponente zu einem Bildschirm hinzufügen und geben Sie e
 
 1. Legen Sie die **Elemente** Eigenschaft **MenuComponent_1** auf diese Formel:
 
-    ```powerapps-comma
-    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
+    ```powerapps-dot
+    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
     ```
 
     Diese Instanz ähnelt dieser Abbildung, aber Sie können den Text und andere Eigenschaften der einzelnen Instanzen anpassen.
@@ -161,7 +163,7 @@ Bisher haben Sie eine Komponente erstellt und an eine app hinzugefügt. Als Näc
 
 1. Auf der **erweitert** Registerkarte, legen Sie den Wert, der die **ausgewählte** Eigenschaft auf den folgenden Ausdruck, der die Zahl in der Name des Katalogs anpassen, bei Bedarf:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.Item
     ```
 
@@ -169,7 +171,7 @@ Bisher haben Sie eine Komponente erstellt und an eine app hinzugefügt. Als Näc
 
 1. Klicken Sie auf dem Standardbildschirm der app, fügen Sie eine Bezeichnung hinzu, und legen dessen **Text** Eigenschaft auf den folgenden Ausdruck, der die Zahl in den Namen der Komponente anpassen, falls erforderlich:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent_1.Selected
     ```
 
@@ -181,7 +183,7 @@ Bisher haben Sie eine Komponente erstellt und an eine app hinzugefügt. Als Näc
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-- Während ich dies schreibe, werden nicht Datenquellen mit Komponenten, gespeichert, sodass Formulare und Datentabellen deaktiviert sind. 
+- Während ich dies schreibe, werden nicht Datenquellen mit Komponenten, gespeichert, sodass Formulare und Datentabellen deaktiviert sind.
 - Wenn Sie eine Variable in einer Komponente zu erstellen, wird diese Variable bezieht sich nur auf diese Komponente und nicht mit app-Variablen angezeigt.
 - PowerApps unterstützt keine Auflistungen in Komponenten.
 - Sie können keine Komponente in einem Katalog, einem Formular oder eine Datenkarte einfügen.
