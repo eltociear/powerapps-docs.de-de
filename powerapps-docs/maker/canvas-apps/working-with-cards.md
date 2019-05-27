@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
-ms.translationtype: HT
+ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
+ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216620"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66225168"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Grundlegendes zu Datenkarten in PowerApps
 
@@ -157,6 +157,9 @@ Um diese Steuerelemente mit Daten aufzufüllen, können deren Eigenschaften von 
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |Das Textfeld-Steuerelement zeigt den benutzerfreundlichen Namen, den Sie oder die Metadaten der Datenquelle bereitstellen, und die in der **[DisplayName](controls/control-card.md)**-Eigenschaft der Karte festgelegt wird. |
 | **InputText.Default** |**Parent.Default** |Das Texteingabe-Steuerelements zeigt zuerst den Wert des Felds der Datenquelle, wie er vom Standardwert der Karte bereitgestellt wird. |
 | **TextErrorMessage.Text** |**Parent.Error** |Wenn ein Überprüfungsproblem auftritt, bietet die **Error**-Eigenschaft der Karte eine entsprechende Fehlermeldung. |
+
+> [!NOTE]
+> Die **Parent.Error** Eigenschaft ist eine nur für Output-Eigenschaft, die Sie mithilfe einer Formel nicht festlegen können. Diese Eigenschaft wird nicht aus diesem Grund angezeigt, in der Liste der Eigenschaften, die in der Nähe der oberen linken Ecke oder in der **Eigenschaften** oder **erweitert** Registerkarten am rechten Rand. Die Bearbeitungsleiste wird diese Eigenschaft vorgeschlagen, wenn Sie eine Formel erstellen, die die Eigenschaft verweisen kann.
 
 Folgende Schlüsselformeln stehen zur Verfügung, um Informationen aus diesen Steuerelementen abzurufen und sie wieder in die Datenquelle einzufügen:
 
