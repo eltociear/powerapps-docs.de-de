@@ -10,12 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc556eaac82f910fa7044def9969c2fb8ca04c4b
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
-ms.translationtype: HT
+ms.openlocfilehash: 0a20218d3670775f67b26c907ce5a3a54fa0af7b
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034865"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216667"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Erstellen Sie eine Komponente für Canvas-apps
 
@@ -184,7 +184,6 @@ Bisher haben Sie eine Komponente erstellt und an eine app hinzugefügt. Als Näc
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
 - Während ich dies schreibe, werden nicht Datenquellen mit Komponenten, gespeichert, sodass Formulare und Datentabellen deaktiviert sind.
-- Wenn Sie eine Variable in einer Komponente zu erstellen, wird diese Variable bezieht sich nur auf diese Komponente und nicht mit app-Variablen angezeigt.
 - PowerApps unterstützt keine Auflistungen in Komponenten.
 - Sie können keine Komponente in einem Katalog, einem Formular oder eine Datenkarte einfügen.
 - Eine master Instanz einer Komponente ist eine lokale Master- und deren Bereich auf die app. Wenn Sie eine master-Instanz ändern, werden nur Kopien von der Komponente in der app die Änderung zu übernehmen. Kopien in anderen apps bleiben gleich, es sei denn, Sie die Bibliothek erneut importieren. Alle master-Instanzen in diesen apps werden automatisch erkannt und aktualisiert werden.
