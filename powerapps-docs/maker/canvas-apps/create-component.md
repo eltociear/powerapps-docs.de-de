@@ -16,6 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66216667"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Erstellen Sie eine Komponente für Canvas-apps
 
@@ -107,7 +108,7 @@ In diesem Beispiel erstellen Sie eine Menükomponente, die ähnelt dieser Abbild
 
 1. Legen Sie der Komponente **Elemente** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Table({Item:"SampleText"})
     ```
 
@@ -117,7 +118,7 @@ In diesem Beispiel erstellen Sie eine Menükomponente, die ähnelt dieser Abbild
 
 1. Stellen Sie sicher, dass die Eigenschaftenliste die **Elemente** Eigenschaft (genauso wie in der Standardeinstellung), und legen Sie den Wert dieser Eigenschaft auf den folgenden Ausdruck:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MenuComponent.Items
     ```
 
@@ -143,8 +144,8 @@ Als Nächstes Sie die Komponente zu einem Bildschirm hinzufügen und geben Sie e
 
 1. Legen Sie die **Elemente** Eigenschaft **MenuComponent_1** auf diese Formel:
 
-    ```powerapps-dot
-    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
+    ```powerapps-comma
+    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
     ```
 
     Diese Instanz ähnelt dieser Abbildung, aber Sie können den Text und andere Eigenschaften der einzelnen Instanzen anpassen.
@@ -163,7 +164,7 @@ Bisher haben Sie eine Komponente erstellt und an eine app hinzugefügt. Als Näc
 
 1. Auf der **erweitert** Registerkarte, legen Sie den Wert, der die **ausgewählte** Eigenschaft auf den folgenden Ausdruck, der die Zahl in der Name des Katalogs anpassen, bei Bedarf:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.Item
     ```
 
@@ -171,7 +172,7 @@ Bisher haben Sie eine Komponente erstellt und an eine app hinzugefügt. Als Näc
 
 1. Klicken Sie auf dem Standardbildschirm der app, fügen Sie eine Bezeichnung hinzu, und legen dessen **Text** Eigenschaft auf den folgenden Ausdruck, der die Zahl in den Namen der Komponente anpassen, falls erforderlich:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MenuComponent_1.Selected
     ```
 

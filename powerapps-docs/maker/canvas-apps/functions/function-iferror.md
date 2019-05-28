@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66215922"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="iferror-function-in-powerapps"></a>IfError-Funktion in PowerApps
 
@@ -33,18 +34,18 @@ Die **IfError** Funktion testet eine oder mehrere Werte aus, bis er ein Fehlerer
 
 Verwendung **IfError** um Fehlerwerte durch gültige Werte zu ersetzen. Verwenden Sie diese Funktion z. B., wenn Benutzereingaben in einer Division durch Null führen kann. Erstellen Sie eine Formel, um das Ergebnis aus, ersetzen Sie dies durch eine 0 oder einen anderen Wert, der für Ihre app geeignet ist, sodass nachfolgende Berechnungen fortgesetzt werden können. Die Formel kann so einfach wie in diesem Beispiel werden:
 
-```powerapps-dot
-IfError( 1/x, 0 )
+```powerapps-comma
+IfError( 1/x; 0 )
 ```
 
 Wenn der Wert des **x** ist nicht 0 (null), die Formel gibt **1 / x**. Andernfalls **1 / x** einen Fehler erzeugt, und die Formel gibt 0 zurück, stattdessen.
 
 Verwendung **IfError** in [verhaltensformeln](../working-with-formulas-in-depth.md) , führen Sie eine Aktion und überprüfen Sie vor dem Ausführen weiterer Aktionen, wie dieses Muster für einen Fehler:
 
-```powerapps-dot
+```powerapps-comma
 IfError(
-    Patch( DS1, ... ), Notify( "problem in the first action" ),
-    Patch( DS2, ... ), Notify( "problem in the second action" )
+    Patch( DS1; ... ); Notify( "problem in the first action" );
+    Patch( DS2; ... ); Notify( "problem in the second action" )
 )
 ```
 
@@ -54,7 +55,7 @@ Wenn die Formel keine Fehler zu finden und Sie, das optionale angegeben haben *S
 
 ## <a name="syntax"></a>Syntax
 
-**IfError**( *Value1*, *ausweichformel1* [, *Value2*, *ausweichformel2*,... [, *Standardergebnis* ]])
+**IfError**( *Value1*; *ausweichformel1* [; *Value2*; *ausweichformel2*;... [; *Standardergebnis* ]])
 
 * *Werte* : erforderlich. Ein oder mehrere Formeln, die auf einen Fehlerwert geprüft werden.
 * *Ausweichformel(n)* : erforderlich. Die auszuwertenden Formeln und zurückzugebenden Werte, wenn der Abgleich *Wert* Argumente hat einen Fehler zurückgegeben.
@@ -64,10 +65,10 @@ Wenn die Formel keine Fehler zu finden und Sie, das optionale angegeben haben *S
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **IfError( 1, 2 )** |Das erste Argument ist ein Fehler nicht. Die Funktion weist keine weiteren Fehler überprüfen und kein Standardwert, der Wert zurückgegeben. Die Funktion gibt den letzten *Wert* Argument ausgewertet.   | 1 |
-| **IfError( 1/0, 2 )** | Das erste Argument gibt einen Fehlerwert (aufgrund der Division durch null) zurück. Die Funktion ergibt das zweite Argument und gibt ihn als das Ergebnis zurück. | 2 |
-| **IfError( 1/0, Notify( "There was an internal problem", NotificationType.Error ) )** | Das erste Argument gibt einen Fehlerwert (aufgrund der Division durch null) zurück. Die Funktion ergibt das zweite Argument und zeigt eine Meldung an den Benutzer. Der Rückgabewert von **IfError** ist der Rückgabewert von **Notify** und wird in denselben Typ wie das erste Argument für **IfError** (eine Zahl) umgewandelt. | 1 |
-| **IfError( 1, 2, 3, 4, 5 )** | Das erste Argument ist keinen Fehler aus, damit die Bewertung der Funktion nicht, dass das Argument fallback entsprechende. Das dritte Argument ist ein Fehler, nicht, damit die Bewertung der Funktion nicht, dass das Argument fallback entsprechende. Das fünfte Argument hat keine entsprechende Fallback und wird standardmäßig das Ergebnis. Die Funktion gibt das Ergebnis, da die Formel keine Fehler enthält. | 5 |
+| **IfError( 1; 2 )** |Das erste Argument ist ein Fehler nicht. Die Funktion weist keine weiteren Fehler überprüfen und kein Standardwert, der Wert zurückgegeben. Die Funktion gibt den letzten *Wert* Argument ausgewertet.   | 1 |
+| **IfError( 1/0; 2 )** | Das erste Argument gibt einen Fehlerwert (aufgrund der Division durch null) zurück. Die Funktion ergibt das zweite Argument und gibt ihn als das Ergebnis zurück. | 2 |
+| **IfError( 1/0; Notify( "There was an internal problem"; NotificationType.Error ) )** | Das erste Argument gibt einen Fehlerwert (aufgrund der Division durch null) zurück. Die Funktion ergibt das zweite Argument und zeigt eine Meldung an den Benutzer. Der Rückgabewert von **IfError** ist der Rückgabewert von **Notify** und wird in denselben Typ wie das erste Argument für **IfError** (eine Zahl) umgewandelt. | 1 |
+| **IfError( 1; 2; 3; 4; 5 )** | Das erste Argument ist keinen Fehler aus, damit die Bewertung der Funktion nicht, dass das Argument fallback entsprechende. Das dritte Argument ist ein Fehler, nicht, damit die Bewertung der Funktion nicht, dass das Argument fallback entsprechende. Das fünfte Argument hat keine entsprechende Fallback und wird standardmäßig das Ergebnis. Die Funktion gibt das Ergebnis, da die Formel keine Fehler enthält. | 5 |
 
 ### <a name="step-by-step"></a>Schritt für Schritt
 
@@ -77,7 +78,7 @@ Wenn die Formel keine Fehler zu finden und Sie, das optionale angegeben haben *S
 
 3. Legen Sie für die **Text**-Eigenschaft von **Label1** die folgende Formel fest:
 
-    **IfError( Value( TextEingabe1.Text ), -1 )**
+    **IfError( Value( TextEingabe1.Text ); -1 )**
 
 4. Geben Sie in **TextEingabe1** die Zeichenfolge **1234** ein.  
 

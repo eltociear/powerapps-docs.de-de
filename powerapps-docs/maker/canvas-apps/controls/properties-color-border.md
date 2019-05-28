@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/26/2019
 ms.locfileid: "66225139"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>Farb- und Rahmeneigenschaften in PowerApps
 
@@ -40,11 +41,11 @@ Sie können die Farben in vielerlei Hinsicht angeben:
 
 - [**ColorFade** ](../functions/function-colors.md) Funktion: Angeben, wie ausgeblendeten eine Farbe, von vollständig schwarz (-100 %) vollständig (100 %), wie im folgenden Beispiel in Weiß:
 
-  - **ColorFade( Color.Red, 50% )**
+  - **ColorFade( Color.Red; 50% )**
 
 - [**RGBA** ](../functions/function-colors.md) Funktion: Geben Sie die Komponenten roten, grünen und blauen einer Farbe von 0 bis 255, und geben Sie einen alpha-Kanal zwischen 0 % (vollständig transparent) auf 100 % (vollständig deckend), wie im folgenden Beispiel:
 
-  - **RGBA( 255, 0, 255, 25% )**
+  - **RGBA( 255; 0; 255; 25% )**
 
 Color-Eigenschaften können auch andere Farbe-Eigenschaften verweisen. Z. B. **Label.PressedColor** kann festgelegt werden, auf die Formel **Label1.Color**automatisch eine Änderung einer Eigenschaft in einem anderen cascading.
 

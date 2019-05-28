@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66215959"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="text-function-in-powerapps"></a>Funktion „Text“ in PowerApps
 Konvertiert einen beliebigen Wert ein, und formatiert einen Zahl oder Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts.
@@ -136,13 +137,13 @@ Das Ergebnis des **Text** übersetzte Zeichenfolgen für die Monate, Wochentagen
 Standardmäßig verwendet **Text** die Sprache des Benutzers, der die Anwendung ausführt. Die Funktion **Language** gibt das Sprachkennzeichen für den aktuellen Benutzer zurück. Sie können diesen Standardwert überschreiben, indem Sie ein Sprachkennzeichen für das dritte Argument angeben **Text**.
 
 ## <a name="syntax"></a>Syntax
-**Text**( *NumberOrDateTime*, *DateTimeFormatEnum* [, *ResultLanguageTag* ] )
+**Text**( *NumberOrDateTime*; *DateTimeFormatEnum* [; *ResultLanguageTag* ] )
 
 * *NumberOrDateTime* : erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *DateTimeFormat*: erforderlich.  Ein Mitglied der **DateTimeFormat**-Enumeration.
 * *ResultLanguageTag*: optional. Das Sprachkennzeichen, das für den Ergebnistext verwendet werden soll. Standardmäßig wird die Sprache des aktuellen Benutzers verwendet.
 
-**Text**( *NumberOrDateTime*, *CustomFormat* [, *ResultLanguageTag* ] )
+**Text**( *NumberOrDateTime*; *CustomFormat* [; *ResultLanguageTag* ] )
 
 * *Number*: erforderlich. Die zu formatierende Zahl bzw. der zu formatierende Datums-/Uhrzeitwert.
 * *CustomFormat*: erforderlich. Mindestens ein in doppelte Anführungszeichen gesetzter Platzhalter.
@@ -162,8 +163,8 @@ Sofern nicht anders angegeben, wird der Benutzer diese Formeln ausführt befinde
 | **Text (&nbsp;1234.59,&nbsp;"###, #"&nbsp;)** |Formatiert die Zahl mit einer Dezimalstelle. |"1234,6" |
 | **Text (&nbsp;8,9&nbsp;"#,000"&nbsp;)** |Füllt die Nachkommastellen der Zahl mit nachfolgenden Nullen auf, falls erforderlich. |"8,900" |
 | **Text (&nbsp;0,631,&nbsp;"0,#"&nbsp;)** |Füllt den ganzzahligen Teil der Zahl mit führenden Nullen auf, falls erforderlich. |"0,6" |
-| **Text(&nbsp;12;&nbsp;"#,0#"&nbsp;)**<br>**Text(&nbsp;1234,568;&nbsp;"#,0#"&nbsp;)** |Füllt die Nachkommastellen der Zahl mit Nullen für eine Dezimalstelle auf und schließt eine zweite Dezimalstelle ein, wenn sie angegeben wird. |"12,0"<br>"1234,57" |
-| **Text(&nbsp;12000;&nbsp;"$ #.###"&nbsp;)**<br>**Text(&nbsp;1200000;&nbsp;"$&nbsp;#.###"&nbsp;)** |Fügt nach jeweils drei Stellen ein Tausendertrennzeichen ein und schließt ein Währungssymbol mit ein. |"$&nbsp;12.000"<br>"$&nbsp;1.200.000" |
+| **Text(&nbsp;12;;&nbsp;"#,0#"&nbsp;)**<br>**Text(&nbsp;1234;568;;&nbsp;"#,0#"&nbsp;)** |Füllt die Nachkommastellen der Zahl mit Nullen für eine Dezimalstelle auf und schließt eine zweite Dezimalstelle ein, wenn sie angegeben wird. |"12,0"<br>"1234,57" |
+| **Text(&nbsp;12000;;&nbsp;"$ #.###"&nbsp;)**<br>**Text(&nbsp;1200000;;&nbsp;"$&nbsp;#.###"&nbsp;)** |Fügt nach jeweils drei Stellen ein Tausendertrennzeichen ein und schließt ein Währungssymbol mit ein. |"$&nbsp;12.000"<br>"$&nbsp;1.200.000" |
 
 ### <a name="datetime"></a>Datum/Uhrzeit
 * Um **2:37:47 PM** am **Montag, 23. November 2015**
@@ -171,28 +172,28 @@ Sofern nicht anders angegeben, wird der Benutzer diese Formeln ausführt befinde
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text( Now(); DateTimeFormat.LongDate )** |Formatiert als lange Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"Montag, 23 November 2015" |
-| **Text( Now(); DateTimeFormat.LongDateTime )** |Formatiert als lange Datums- und Uhrzeitzeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers und legt eine 12-Stunden-Uhr zugrunde. |"Montag, 23. November 2015 2:37:47 PM" |
-| **Text( Now(); DateTimeFormat.LongTime24 )** |Formatiert als lange Uhrzeitzeichenfolge und legt eine 24-Stunden-Uhr zugrunde. |"14:37:47" |
-| **Text( Now(); DateTimeFormat.ShortDate )** |Formatiert als kurze Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"23.11.2015" |
-| **Text( Now(); "d-mmm-yy" )** |Formate mit Platzhalterzeichen: <ul><li>**d** für eine einstellige oder zweistellige Angabe des Tags im Monat<li>**-** als literales Zeichen, das in das Ergebnis kopiert wird<li>**mmm** für eine aus drei Buchstaben bestehende Abkürzung des Monats<li>**-** als weiteres literales Zeichen, das in das Ergebnis kopiert wird<li>**yy** für eine zweistellige Kurzform für das Jahr</ul> |"23. Nov. 15" |
+| **Text( Now();; DateTimeFormat.LongDate )** |Formatiert als lange Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"Montag, 23 November 2015" |
+| **Text( Now();; DateTimeFormat.LongDateTime )** |Formatiert als lange Datums- und Uhrzeitzeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers und legt eine 12-Stunden-Uhr zugrunde. |"Montag, 23. November 2015 2:37:47 PM" |
+| **Text( Now();; DateTimeFormat.LongTime24 )** |Formatiert als lange Uhrzeitzeichenfolge und legt eine 24-Stunden-Uhr zugrunde. |"14:37:47" |
+| **Text( Now();; DateTimeFormat.ShortDate )** |Formatiert als kurze Datumszeichenfolge in der Sprache und dem Gebietsschema des aktuellen Benutzers. |"23.11.2015" |
+| **Text( Now();; "d-mmm-yy" )** |Formate mit Platzhalterzeichen: <ul><li>**d** für eine einstellige oder zweistellige Angabe des Tags im Monat<li>**-** als literales Zeichen, das in das Ergebnis kopiert wird<li>**mmm** für eine aus drei Buchstaben bestehende Abkürzung des Monats<li>**-** als weiteres literales Zeichen, das in das Ergebnis kopiert wird<li>**yy** für eine zweistellige Kurzform für das Jahr</ul> |"23. Nov. 15" |
 | **Text (1448318857 * 1000, "mmm. Dd, Yyyy (hh: mm: ss AM/PM) ")** | Zeigt einen Unix-Datum / Uhrzeit-Wert in von Menschen lesbaren Format an, wenn Sie den Wert des mit 1000 multiplizieren. | "November 23 2015 (02:47:37 PM)" |
 
 ### <a name="global-apps"></a>Globale Anwendungen
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text (1234567,89; "[$-fr-FR] # ###, ## &euro;", "fr-FR")** | Zeigt Leerzeichen als Gruppierungszeichen, das Komma als Dezimaltrennzeichen, und **&euro;** als Währungssymbol. |"1&nbsp;234&nbsp;567,89 &euro;" |
-| **Text(1234567,89; "[$-fr-FR]# ###,## &euro;")** | Wenn die Quelldaten das französische benutzerdefinierte des durch ein Komma als Dezimaltrennzeichen folgt, müssen Sie das Gebietsschema auf Französisch ändern und trennen die Argumente durch ein Semikolon statt ein Komma, um das gleiche Ergebnis wie oben beschrieben zu erhalten. |"1&nbsp;234&nbsp;567,89 &euro;" |
-| **Text( Date(2016,1,31), "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag&nbsp;Januar&nbsp;31" |
-| **Text( Date(2016,1,31), "dddd mmmm d", "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo&nbsp;Enero&nbsp;31" |
+| **Text (1234567;89;; "[$-fr-FR] # ###, ## &euro;"; "fr-FR")** | Zeigt Leerzeichen als Gruppierungszeichen, das Komma als Dezimaltrennzeichen, und **&euro;** als Währungssymbol. |"1&nbsp;234&nbsp;567,89 &euro;" |
+| **Text(1234567;89;; "[$-fr-FR]# ###,## &euro;")** | Wenn die Quelldaten das französische benutzerdefinierte des durch ein Komma als Dezimaltrennzeichen folgt, müssen Sie das Gebietsschema auf Französisch ändern und trennen die Argumente durch ein Semikolon statt ein Komma, um das gleiche Ergebnis wie oben beschrieben zu erhalten. |"1&nbsp;234&nbsp;567,89 &euro;" |
+| **Text( Date(2016;1;31); "dddd mmmm d" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache des aktuellen Benutzers zurück. Da keiner der Platzhalter sprachabhängig ist, gibt es keine Notwendigkeit für ein Textformat-Sprachkennzeichen. |"Samstag&nbsp;Januar&nbsp;31" |
+| **Text( Date(2016;1;31); "dddd mmmm d"; "es-ES" )** |Gibt den Wochentag, Monat und Tag des Monats in der Sprache „es-ES“ zurück. |"Domingo&nbsp;Enero&nbsp;31" |
 
 ### <a name="converting-values-to-text"></a>Konvertieren von Werten in text
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text(&nbsp;1234567.89&nbsp;)** | Konvertiert eine Zahl in eine Zeichenfolge an. Es gibt keine Tausende Trennzeichen oder die Kontrolle über die Anzahl der Ziffern vor oder nach dem Dezimaltrennzeichen; Geben Sie zur präziseren Steuerung können zahlplatzhalter als zweites Argument ein. | "1234567.89" |
+| **Text(&nbsp;1234567,89&nbsp;)** | Konvertiert eine Zahl in eine Zeichenfolge an. Es gibt keine Tausende Trennzeichen oder die Kontrolle über die Anzahl der Ziffern vor oder nach dem Dezimaltrennzeichen; Geben Sie zur präziseren Steuerung können zahlplatzhalter als zweites Argument ein. | "1234567.89" |
 | **Text(&nbsp;DateTimeValue(&nbsp;"01/04/2003"&nbsp;)&nbsp;)** | Konvertiert einen Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts an. Um die Konvertierung gesteuert werden, geben Sie entweder ein Mitglied der DateTimeFormat-Enumeration oder eine benutzerdefinierte Formatzeichenfolge ein. | "1/4/2003 12:00 UHR" |
 | **Text (&nbsp;"true"&nbsp;)** | Konvertiert einen booleschen Wert in eine Zeichenfolge an. | "true" |
 | **Text(&nbsp;GUID()&nbsp;)** | Konvertiert einen generierten GUID-Wert in eine Zeichenfolge an.  | "f8b10550-0f12-4f08-9aa3-bb10958bc3ff" |
-| **Left (&nbsp;Text (&nbsp;GUID()&nbsp;),&nbsp;4&nbsp;)** | Gibt die ersten vier Zeichen eine generierte GUID zurück. | "2d9c" | 
+| **Left (&nbsp;Text (&nbsp;GUID()&nbsp;);&nbsp;4&nbsp;)** | Gibt die ersten vier Zeichen eine generierte GUID zurück. | "2d9c" | 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66215974"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Die Funktionen „And“, „Or“ und „Not“ in PowerApps
 
@@ -36,16 +37,16 @@ Diese Funktionen funktionieren genauso wie in Excel. Sie können auch [Operatore
 
 | Funktion-notation | Visual Basic-Operator-notation | JavaScript-Operator-notation |
 | -------------|------------|--------|
-| **And( x, y )** | **X und y** | **x && y** |
-| **Or( x, y )** | **X oder y** | **x &#124;&#124; y** |
+| **And( x; y )** | **X und y** | **x && y** |
+| **Or( x; y )** | **X oder y** | **x &#124;&#124; y** |
 | **Not( x )** | **Nicht-x** | **! x** |
 
 Diese Funktionen arbeiten mit logischen Werten. Sie können keine sie eine Zahl oder eine Zeichenfolge direkt übergeben; Stattdessen müssen Sie einen Vergleich oder einen Test. Beispielsweise diese logische Formel **x > 1** den booleschen Wert ergibt **"true"** Wenn **x** ist größer als **1**. Wenn **x** ist kleiner als **1**, ergibt die Formel **"false"** .
 
 ## <a name="syntax"></a>Syntax
 
-**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
-**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
 **Not**( *LogicalFormula* )
 
 - *LogicalFormula(s)* : erforderlich.  Logische Formeln, die bewertet und verarbeitet werden sollen
@@ -62,18 +63,18 @@ In die Beispielen in diesem Abschnitt verwenden Sie diese globale Variablen:
 
 Um diese globalen Variablen in einer app zu erstellen, fügen Sie eine [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel:
 
-```powerapps-dot
-Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
+```powerapps-comma
+Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
 ```
 
 Wählen Sie die Schaltfläche (indem Sie darauf klicken und Sie halten Sie die Alt-Taste gedrückt), und legen Sie dann die **Text** Eigenschaft eine [ **Bezeichnung** ](../controls/control-text-box.md) Steuerelement auf eine Formel in der ersten Spalte der folgenden Tabelle.
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **And( a, b )** | Überprüft die Werte der **eine** und **b**.  Eines der Argumente ist *"false"* , sodass die Funktion gibt *"false"* . | *FALSE* |
+| **And( a; b )** | Überprüft die Werte der **eine** und **b**.  Eines der Argumente ist *"false"* , sodass die Funktion gibt *"false"* . | *FALSE* |
 | **ein And b** | Identisch mit dem vorherigen Beispiel mithilfe der Visual Basic-Notation. | *FALSE* |
 | **a && b** | Identisch mit dem vorherigen Beispiel mithilfe der JavaScript-Notation. | *FALSE* |
-| **Or( a, b )** | Überprüft die Werte der **eine** und **b**. Eines der Argumente ist *"true"* , sodass die Funktion gibt *"true"* . | *TRUE* |
+| **Or( a; b )** | Überprüft die Werte der **eine** und **b**. Eines der Argumente ist *"true"* , sodass die Funktion gibt *"true"* . | *TRUE* |
 | **a Or b** | Identisch mit dem vorherigen Beispiel mithilfe der Visual Basic-Notation. | *TRUE* |
 | **a &#124;&#124; b** | Identisch mit dem vorherigen Beispiel mithilfe der JavaScript-Notation. | *TRUE* |
 | **Keine (a)** | Testet, ob der Wert des **eine**. Das Argument ist *"false"* , sodass die Funktion den entgegengesetzte Ergebnis zurückgibt. | *TRUE* |
