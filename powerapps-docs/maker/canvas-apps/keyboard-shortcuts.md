@@ -13,14 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19c5382baba643e673edb7e77e0398616e880980
-ms.sourcegitcommit: 2b1ed0db9312152f330bd8a8ea663f01b40e7c23
-ms.translationtype: MT
+ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66185641"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66249806"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Tastenkombinationen für Canvas-apps
+
+> [!NOTE]
+> Tastenkombinationen können auf der Grundlage Sprache variieren.
 
 ## <a name="file"></a>Datei
 
@@ -56,6 +59,7 @@ ms.locfileid: "66185641"
 | STRG += oder STRG + Shift += | Zoomen Sie herein. |
 | STRG +- oder STRG + UMSCHALT +- | Verkleinern. |
 | STRG + 0 | Passen Sie die Canvas, um die Seite. |
+| UMSCHALT + EINGABETASTE | Zerlegen einer Zeile in einer Formel. |
 
 ## <a name="preview"></a>Vorschau
 
