@@ -42,7 +42,7 @@ Praktisch müssen alle interaktiven Steuerelemente einen ausreichenden Farbkontr
 Alle interaktiven Steuerelemente müssen einen ausreichenden Farbkontrast aufweisen zwischen:
 * **[FocusedBorderColor](controls/properties-color-border.md)** und der Farbe außerhalb des Steuerelements
 
-Zusätzliche Überprüfungen des Farbkontrasts sind für Steuerelemente erforderlich, wo der gesamte Bereich interaktiv oder informativ ist. Beispiel: eine **[Schaltfläche](controls/control-button.md)** oder ein als Schaltfläche verwendetes **[Symbol](controls/control-shapes-icons.md)**. So wird sichergestellt, dass die Grenzen des Steuerelements deutlich sind, und Benutzer wissen, wo sie klicken oder tippen können.
+Zusätzliche Überprüfungen des Farbkontrasts sind für Steuerelemente erforderlich, wo der gesamte Bereich interaktiv oder informativ ist. Beispiel: eine **[Schaltfläche](controls/control-button.md)** oder ein als Schaltfläche verwendetes **[Symbol](controls/control-shapes-icons.md)** . So wird sichergestellt, dass die Grenzen des Steuerelements deutlich sind, und Benutzer wissen, wo sie klicken oder tippen können.
 
 Wenn ein solches Steuerelement einen Rahmen hat, sollte der Farbkontrast ausreichend sein zwischen:
 * **[BorderColor](controls/properties-color-border.md)** und der Farbe außerhalb des Steuerelements
@@ -55,7 +55,7 @@ Wenn kein Rahmen vorhanden ist, sollte der Farbkontrast ausreichend sein zwische
 * **[HoverFill](controls/properties-color-border.md)** und der Farbe außerhalb des Steuerelements
 
 ### <a name="graphical-objects"></a>Grafikobjekte
-Wenn ein Bild wichtige Informationen vermittelt, achten Sie besonders auf etwaige Kontrastprobleme. Dies gilt für Steuerelemente, in denen ein Bild angezeigt werden können: **[Audio](controls/control-audio-video.md)**,  **[Image](controls/control-image.md)**,  **[Mikrofon](controls/control-microphone.md)**, und **[Video](controls/control-audio-video.md)**.
+Wenn ein Bild wichtige Informationen vermittelt, achten Sie besonders auf etwaige Kontrastprobleme. Dies gilt für Steuerelemente, in denen ein Bild angezeigt werden können: **[Audio](controls/control-audio-video.md)** ,  **[Image](controls/control-image.md)** ,  **[Mikrofon](controls/control-microphone.md)** , und **[Video](controls/control-audio-video.md)** .
 
 Überprüfen Sie Videoinhalte auf Kontrastprobleme. Stellen Sie alternativ oder darüber hinaus [Untertitel](controls/control-audio-video.md) bereit, die das Video beschreiben.
 

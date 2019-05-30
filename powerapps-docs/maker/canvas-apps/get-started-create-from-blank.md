@@ -15,11 +15,10 @@ search.app:
 - PowerApps
 ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
 ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61555321"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
 
@@ -112,17 +111,17 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     Die Formel stimmt mit diesem Beispiel überein:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -197,7 +196,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der **ChangeScreen** angezeigt, wobei jedes Feld leer ist, damit der Benutzer einen Datensatz einfacher erstellen kann.
 
@@ -207,7 +206,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für den Pfeil auf die folgende Formel fest:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird in **ChangeScreen** jedes Feld mit den Daten für den ausgewählten Datensatz angezeigt, sodass der Benutzer den Datensatz leichter bearbeiten oder löschen kann.
 
@@ -219,7 +218,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen verworfen, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -229,7 +228,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Häkchen auf die folgende Formel fest:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen gespeichert, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -247,7 +246,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Papierkorbsymbol auf die folgende Formel fest:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der ausgewählte Datensatz aus der Datenquelle gelöscht, und der Anzeigebildschirm wird geöffnet.
 

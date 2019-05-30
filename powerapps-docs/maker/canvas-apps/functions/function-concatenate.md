@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66216049"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funktionen „Concat“ und „Concatenate“ in PowerApps
 
@@ -29,7 +28,7 @@ Verketten einzelne Zeichenfolgen von Text und Zeichenfolgen in [Tabellen](../wor
 
 Die **Concatenate**-Funktion verkettet eine Mischung aus einzelnen Zeichenfolgen und eine einspaltige Tabelle von Zeichenfolgen. Wenn Sie diese Funktion mit einzelnen Zeichenfolgen verwenden, ist äquivalent zur Verwendung der **&** [Operator](operators.md).
 
-Die **Concat**-Funktion verkettet das Ergebnis einer Formel, das in allen [Datensätzen](../working-with-tables.md#records) einer Tabelle angewendet wird, was zu einer einzelnen Zeichenfolge führt. Verwenden Sie diese Funktion, um die Zeichenfolgen einer Tabelle zusammenzufassen, wie es die **[Sum](function-aggregates.md)**-Funktion bei Zahlen macht.
+Die **Concat**-Funktion verkettet das Ergebnis einer Formel, das in allen [Datensätzen](../working-with-tables.md#records) einer Tabelle angewendet wird, was zu einer einzelnen Zeichenfolge führt. Verwenden Sie diese Funktion, um die Zeichenfolgen einer Tabelle zusammenzufassen, wie es die **[Sum](function-aggregates.md)** -Funktion bei Zahlen macht.
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -37,12 +36,12 @@ Verwenden der [ **Split** ](function-split.md) oder [ **MatchAll** ](function-is
 
 ## <a name="syntax"></a>Syntax
 
-**Concat**( *Tabelle*; *Formel* )
+**Concat**( *Tabelle*, *Formel* )
 
 - *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 - *Formel* (erforderlich):  Die auf alle Datensätze der Tabelle anzuwendende Formel.
 
-**Concatenate**( *Zeichenfolge1* [; *Zeichenfolge2*; ...] )
+**Concatenate**( *Zeichenfolge1* [, *Zeichenfolge2*, ...] )
 
 - *Zeichenfolge(n)* : Erforderlich.  Mischung aus einzelnen Zeichenfolgen oder eine einspaltige Tabelle von Zeichenfolgen.
 
@@ -56,13 +55,13 @@ In die Beispielen in diesem Abschnitt verwenden Sie diese globale Variablen:
 
 Um diese globalen Variablen in einer app zu erstellen, fügen Sie eine [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel:
 
-```powerapps-comma
-Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
-Set( Products;
+```powerapps-dot
+Set( FirstName, "Jane" ); Set( LastName, "Doe" );
+Set( Products,
     Table(
-        { Name: "Violin"; Type: "String" };
-        { Name: "Cello"; Type: "String" };
-        { Name: "Trumpet"; Type: "Wind" }
+        { Name: "Violin", Type: "String" },
+        { Name: "Cello", Type: "String" },
+        { Name: "Trumpet", Type: "Wind" }
     )
 )
 ```
@@ -86,7 +85,7 @@ In diesem Beispiel fügen Sie eine leere, vertikale [ **Katalog** ](../controls/
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Concatenate( "Name:&nbsp;";&nbsp;Products.Name; ",&nbsp;Type:&nbsp;";&nbsp;Products.Type )** | Für jeden Datensatz in die **Produkte** Tabelle, die Zeichenfolge verkettet **"Name:"** , den Namen des Produkts, die Zeichenfolge **", Typ:"** und den Typ des Produkts.  | ![Tabelle von Produkten](media/function-concatenate/single-column.png) |
+| **Concatenate( "Name:&nbsp;",&nbsp;Products.Name, ",&nbsp;Type:&nbsp;",&nbsp;Products.Type )** | Für jeden Datensatz in die **Produkte** Tabelle, die Zeichenfolge verkettet **"Name:"** , den Namen des Produkts, die Zeichenfolge **", Typ:"** und den Typ des Produkts.  | ![Tabelle von Produkten](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat-Funktion
 
@@ -94,8 +93,8 @@ Legen Sie für diese Beispiele die **Text** -Eigenschaft einer Bezeichnung auf e
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Concat( Products; Name & ", " )** | Wertet den Ausdruck **Name der & ","** für jeden Datensatz der **Produkte** und die Ergebnisse in eine einzelne Zeichenfolge verkettet.  | "Violine,&nbsp;Cello,&nbsp;Trumpet,&nbsp;" |
-| **Concat( Filter(&nbsp;Products;&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;); Name & ", " )** | Wertet die Formel **Name der & ","** für jeden Datensatz der **Produkte** , die den Filter entspricht **Typ = "String"** , und die Ergebnisse in einer Zeichenfolge verkettet.   | "Violine,&nbsp;Cello,&nbsp;" |
+| **Concat( Products, Name & ", " )** | Wertet den Ausdruck **Name der & ","** für jeden Datensatz der **Produkte** und die Ergebnisse in eine einzelne Zeichenfolge verkettet.  | "Violine,&nbsp;Cello,&nbsp;Trumpet,&nbsp;" |
+| **Concat( Filter(&nbsp;Products,&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;), Name & ", " )** | Wertet die Formel **Name der & ","** für jeden Datensatz der **Produkte** , die den Filter entspricht **Typ = "String"** , und die Ergebnisse in einer Zeichenfolge verkettet.   | "Violine,&nbsp;Cello,&nbsp;" |
 
 ### <a name="trimming-the-end"></a>Verkürzen des Endes
 
@@ -119,4 +118,4 @@ Diese Beispiele hinzufügen, einen Katalog leer, vertikalen, legen Sie seine **E
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
 | **Split ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;), ",")** | Teilt die Zeichenfolge mit dem Trennzeichen **","** . Damit die letzte Zeile in das Ergebnis eine leere Zeichenfolge ist, endet die Zeichenfolge durch ein Komma und Leerzeichen.  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;); "[^ \s,]+"). FullMatch** | Teilt die Zeichenfolge anhand der Zeichen, die Leerzeichen oder Kommas sind. Diese Formel wird entfernt, die zusätzliches Komma und Leerzeichen am Ende der Zeichenfolge. | ![Table](media/function-concatenate/matchall.png)
+| **MatchAll ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;), "[^ \s,]+"). FullMatch** | Teilt die Zeichenfolge anhand der Zeichen, die Leerzeichen oder Kommas sind. Diese Formel wird entfernt, die zusätzliches Komma und Leerzeichen am Ende der Zeichenfolge. | ![Table](media/function-concatenate/matchall.png)

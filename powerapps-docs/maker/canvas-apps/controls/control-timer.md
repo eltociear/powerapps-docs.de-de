@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61560465"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -53,19 +52,19 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledColor](properties-color-border.md)**: Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledColor](properties-color-border.md)** : Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledFill](properties-color-border.md)** : Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
@@ -99,11 +98,11 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 
 **[Strikethrough](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text durchgestrichen ist.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Text](properties-core.md)** – Text, der in einem Steuerelement angezeigt wird oder von einem Benutzer in ein Steuerelement eingegeben wird.
 
-**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -126,9 +125,9 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie die Eigenschaft **Duration** für den Timer auf **10000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:
-   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000, 0)**
 
-    Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
     Die Bezeichnung zeigt die bis zum Neustart des Timers verbleibenden Sekunden an.
 
@@ -139,9 +138,9 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie für diese Eigenschaften des Timers Folgendes fest: **Dauer** = **5000**, **Wiederholen** = **TRUE** und **[Text](properties-core.md)** = **Toggle animation** (Umschalter-Animation).
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf **Welcome!** fest und legen Sie dessen Eigenschaft **[Color](properties-color-border.md)** auf diese Formel fest:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
-    Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
 5. Klicken Sie auf die Timer-Schaltfläche, um die Animation zu starten oder zu beenden. Der Text in der Bezeichnung wird weiß, kehrt zur vollständigen Intensität zurück und wiederholt den Prozess.
 
@@ -169,7 +168,7 @@ Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informatione
     > [!NOTE]
     > Wenn der Zeitgeber sichtbar ist und ausgeführt wird, wird die verstrichene Zeit alle fünf Sekunden die Sprachausgabe.
 
-* Verwenden Sie nicht die **[Text](properties-core.md)** Eigenschaft eines Steuerelements für zeitkritische und wichtige Informationen. Wird nicht die Sprachausgabe Änderungen  **[Text](properties-core.md)**.
+* Verwenden Sie nicht die **[Text](properties-core.md)** Eigenschaft eines Steuerelements für zeitkritische und wichtige Informationen. Wird nicht die Sprachausgabe Änderungen  **[Text](properties-core.md)** .
 * Für interaktive Timer:
-    * Die **[Text](properties-core.md)**-Eigenschaft muss vorhanden sein.
+    * Die **[Text](properties-core.md)** -Eigenschaft muss vorhanden sein.
     * Erwägen Sie eine **[Bezeichnung](control-text-box.md)** -Steuerelement an die verstrichene Zeit. Mithilfe des **[Text](properties-core.md)** Eigenschaft, um den Benutzer anweisen, starten oder Beenden des Zeitgebers.

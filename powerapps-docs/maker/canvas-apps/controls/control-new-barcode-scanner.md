@@ -55,7 +55,7 @@ Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Ba
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **FlashlightEnabled** –, ob die Taschenlampe automatisch aktiviert ist, wenn die Überprüfung geöffnet wird.
 
@@ -63,7 +63,7 @@ Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Ba
 
 **PreferFrontCamera** –, ob die vordere Kamera, sofern verfügbar, für die Überprüfung verwendet wird.
 
-**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **Typ** – der Typ des Codes, der bei der Überprüfung gefunden wurden, die zuletzt erfolgreich ausgeführt.
 

@@ -43,14 +43,14 @@ Sie können konfigurieren, nur eine **[Bezeichnung](controls/control-text-box.md
 * **Polite**: Die Sprachausgabe Änderungen nach Abschluss sprechen. Verwenden Sie diesen Wert für nicht kritische Benachrichtigungen, die keine unmittelbare Aufmerksamkeit erfordern.
 * **Assertive**: Sprachausgaben unterbrechen selbst, um die Änderungen sofort bekanntgeben zu können. Verwenden Sie diese für wichtige Benachrichtigungen, die sofortige Aufmerksamkeit erfordern.
 
-Wenn das Textinhalt eines dynamischen Bereichs geändert wird, wird den gesamte Textinhalt, nicht nur der geänderte Teil die Sprachausgabe. Wenn der Wert des der **[Text](controls/properties-core.md)** -Eigenschaftensatz auf eine leere Zeichenfolge **""**, der Sprachausgabe nicht vorgelesen nichts.
+Wenn das Textinhalt eines dynamischen Bereichs geändert wird, wird den gesamte Textinhalt, nicht nur der geänderte Teil die Sprachausgabe. Wenn der Wert des der **[Text](controls/properties-core.md)** -Eigenschaftensatz auf eine leere Zeichenfolge **""** , der Sprachausgabe nicht vorgelesen nichts.
 
 Um eine Nachricht wiederholen, löschen Sie Textinhalt durch Festlegen des Werts, der die **[Text](controls/properties-core.md)** Eigenschaft eine leere Zeichenfolge **""** und legen Sie den Wert an die Nachricht erneut.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
 * Legen Sie immer **[Visible](controls/properties-core.md)** auf "true". Einige Bildschirmsprachausgaben erkennen nicht dynamische Bereiche, die aus- und wieder eingeblendet.
-* Vermeiden Sie die Änderung des Werts der  **[Live](controls/properties-accessibility.md)**. Einige Bildschirm, die Leser erkennen nicht, wird eine nicht-live-Region live und umgekehrt.
+* Vermeiden Sie die Änderung des Werts der  **[Live](controls/properties-accessibility.md)** . Einige Bildschirm, die Leser erkennen nicht, wird eine nicht-live-Region live und umgekehrt.
 * Positionieren des dynamischen Bereichs in einer logischen Position in der app an, auch wenn es nicht angezeigt wird. Sicherstellen Sie, dass dessen Inhalt im Kontext mit den Elementen sinnvolle davor und danach. Benutzer können zugreifen ein dynamischen Bereichs jederzeit über die normalen Navigation mit Sprachausgabe, nicht nur, wenn Änderungen auftreten.
 
 ## <a name="next-steps"></a>Nächste Schritte

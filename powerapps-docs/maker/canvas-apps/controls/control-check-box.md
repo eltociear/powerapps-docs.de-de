@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559447"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="check-box-control-in-powerapps"></a>Kontrollkästchen-Steuerelement in PowerApps
 Ein Steuerelement, das der Benutzer aktivieren und deaktivieren kann (wobei der Wert des Elements auf **true** bzw. **false** festgelegt wird).
@@ -67,7 +66,7 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
+**[FontWeight](properties-text.md) ** – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -122,14 +121,14 @@ Mithilfe dieses seit Jahrzehnten aus GUIs vertrauten Steuerelements können Benu
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Kontrollkästchen**-Steuerelement hinzu, nennen Sie es **chkReserve**, und legen Sie für die **[Text](properties-core.md)**-Eigenschaft den Wert **Jetzt buchen** fest.
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein **[Datumsauswahl](control-date-picker.md)**-Steuerelement hinzu, und geben Sie für die **[Visible](properties-core.md)**-Eigenschaft diese Formel an:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
 3. Drücken Sie F5, klicken oder tippen Sie auf **chkReserve**, um den Wert der entsprechenden **[Value](properties-core.md)**-Eigenschaft auf **true** festzulegen, und klicken oder tippen Sie dann erneut auf **chkReserve**, um den Wert der **[Value](properties-core.md)**-Eigenschaft auf **false** festzulegen.

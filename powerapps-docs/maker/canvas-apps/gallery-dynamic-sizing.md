@@ -57,7 +57,7 @@ Wenn Sie noch niemals einem Katalog Steuerelemente hinzugefügt haben, führen S
     ![Hinzufügen des Katalogs](./media/gallery-dynamic-sizing/add-flexible.png)
 2. Ändern Sie die Größe des Katalogs, sodass er den gesamten Bildschirm ausfüllt.
 
-3. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft des Katalogs auf **FlooringEstimates** fest.
+3. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des Katalogs auf **FlooringEstimates** fest.
 
 ## <a name="show-the-product-names"></a>Anzeigen der Produktnamen
 1. Klicken oder tippen Sie in der oberen linken Ecke des Katalogs auf das Stiftsymbol, um die Katalogvorlage auszuwählen.
@@ -91,12 +91,12 @@ Wenn Sie noch niemals einem Katalog Steuerelemente hinzugefügt haben, führen S
 
     Sie können der Vorlage beim Erstellen der App leichter Steuerelemente hinzufügen, und diese Änderung hat keine Auswirkung auf das Aussehen der App während ihrer Ausführung.
 
-2. Fügen Sie der ausgewählten Katalogvorlage ein **[Bild](controls/control-image.md)**-Steuerelement hinzu, und verschieben Sie es unter das Feld **OverviewText**.
+2. Fügen Sie der ausgewählten Katalogvorlage ein **[Bild](controls/control-image.md)** -Steuerelement hinzu, und verschieben Sie es unter das Feld **OverviewText**.
 
 3. Stellen Sie sicher, dass die **Image**-Eigenschaft des **Bild**-Steuerelements auf den folgenden Ausdruck festgelegt ist:<br>
     **ThisItem.Image**
 
-4. Legen Sie die **[Y](controls/properties-core.md)**-Eigenschaft des **Bild**-Steuerelements entsprechend der Position und Größe des Felds **OverviewText** fest, wie in dem folgenden Ausdruck:
+4. Legen Sie die **[Y](controls/properties-core.md)** -Eigenschaft des **Bild**-Steuerelements entsprechend der Position und Größe des Felds **OverviewText** fest, wie in dem folgenden Ausdruck:
    <br>**OverviewText.Y + OverviewText.Height + 5**
 
     ![Fertiggestellte App](./media/gallery-dynamic-sizing/final-app.png)

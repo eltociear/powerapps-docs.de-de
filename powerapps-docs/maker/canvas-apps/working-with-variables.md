@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61558985"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-canvas-app-variables-in-powerapps"></a>Grundlegendes zu Canvas-App-Variablen in PowerApps
 
@@ -57,16 +56,16 @@ Beachten Sie, dass die **Label1** Steuerelement ausgewählt ist, dessen **[Text]
 
 Die Formel für **Label1** wurde automatisch neu berechnet, mit dem neuen Wert.
 
-In PowerApps können Sie Formeln nicht nur verwenden, um den primären Wert eines Steuerelements zu bestimmen, sondern auch, um Eigenschaften, wie z.B. das Format, zu bestimmen. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)**-Eigenschaft der Bezeichnung automatisch negative Werte rot an. Die **[If](functions/function-if.md)**-Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
+In PowerApps können Sie Formeln nicht nur verwenden, um den primären Wert eines Steuerelements zu bestimmen, sondern auch, um Eigenschaften, wie z.B. das Format, zu bestimmen. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animation der bedingten Formatierung](media/working-with-variables/recalc-color.gif)
 
 Sie können verschiedene Formeln für eine Vielfalt an Szenarios verwenden:
 
 * Indem Sie das GPS Ihres Geräts verwenden, kann ein Kartensteuerelement mit einer Formel, die **Location.Latitude** und **Location.Longitude** verwendet, Ihre aktuelle Standort anzeigen.  Während Sie sich bewegen, verfolgt die Karte automatisch Ihren Standort.
-* Andere Benutzer können [Datenquellen](working-with-data-sources.md) aktualisieren.  Andere Mitglieder Ihres Teams können z.B. die Elemente in einer SharePoint-Liste aktualisieren.  Wenn Sie eine Datenquelle aktualisieren, werden alle abhängigen Formeln automatisch neu berechnet, um die aktualisierten Daten widerzuspiegeln. Wenn Sie das Beispiel fortführen, können Sie beispielsweise die **[Items](controls/properties-core.md)**-Eigenschaft eines Katalogs auf die Formel **Filter (SharePointList)** festlegen, sodass automatisch die neu gefilterte Menge von [Datensätze](working-with-tables.md#records) angezeigt wird.
+* Andere Benutzer können [Datenquellen](working-with-data-sources.md) aktualisieren.  Andere Mitglieder Ihres Teams können z.B. die Elemente in einer SharePoint-Liste aktualisieren.  Wenn Sie eine Datenquelle aktualisieren, werden alle abhängigen Formeln automatisch neu berechnet, um die aktualisierten Daten widerzuspiegeln. Wenn Sie das Beispiel fortführen, können Sie beispielsweise die **[Items](controls/properties-core.md)** -Eigenschaft eines Katalogs auf die Formel **Filter (SharePointList)** festlegen, sodass automatisch die neu gefilterte Menge von [Datensätze](working-with-tables.md#records) angezeigt wird.
 
 ### <a name="benefits"></a>Vorteile
 
@@ -105,7 +104,7 @@ Sie benötigen eine Variable, die die laufende Summe enthält, um unseren hinzuf
 
 Funktionsweise von globalen Variablen:
 
-* Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)**-Funktion fest.  Durch **Set( MyVar; 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
+* Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)** -Funktion fest.  Durch **Set( MyVar, 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
 * Sie verwenden die globale Variable, indem Sie mit der **Set**-Funktion auf den verwendeten Namen verweisen.  In diesem Fall gibt **MyVar** den Wert **1** zurück.
 * Globale Variablen können beliebige Werte enthalten, z.B. Zeichenfolgen, Zahlen, Datensätze und [Tabellen](working-with-tables.md).
 
@@ -113,11 +112,11 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer globalen Variablen neu:
 
 1. Fügen Sie ein Texteingabe-Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
 
-2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
+2. Legen Sie die **[Text](controls/properties-core.md)** -Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
 
-3. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
+3. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
 
-    **Set( RunningTotal; RunningTotal + TextInput1 )**
+    **Set( RunningTotal, RunningTotal + TextInput1 )**
 
     Das bloße Vorhandensein dieser Formel wird **RunningTotal** als globale Variable, die eine Zahl aufgrund der enthält die **+** Operator. Sie können auf verweisen **RunningTotal** an einer beliebigen Stelle in der app. Sobald der Benutzer diese app öffnet **RunningTotal** hat einen Anfangswert von *leere*.
 
@@ -125,13 +124,13 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer globalen Variablen neu:
 
     ![OnSelect-Eigenschaft der Schaltfläche "hinzufügen" wird festgelegt, Funktion](media/working-with-variables/global-variable-1.png)
 
-4. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
+4. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
 
-    **Set( RunningTotal; 0 )**
+    **Set( RunningTotal, 0 )**
 
     ![OnSelect-Eigenschaft von der Schaltfläche "löschen" festgelegt ist, um die Funktion festgelegt](media/working-with-variables/global-variable-2.png)
 
-5. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](controls/properties-core.md)**-Eigenschaft auf **RunningTotal** fest.
+5. Fügen Sie ein **[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](controls/properties-core.md)** -Eigenschaft auf **RunningTotal** fest.
 
     Diese Formel wird automatisch neu berechnet und zeigt dem Benutzer den Wert von **RunningTotal** an, während sie sich auf Grundlage der vom Benutzer ausgewählten Schaltflächen ändert.
 
@@ -161,13 +160,13 @@ PowerApps verfügt über drei Arten von Variablen:
 
 ## <a name="create-and-remove-variables"></a>Erstellen und Entfernen von Variablen
 
-Alle Variablen werden implizit erstellt, wenn sie in angezeigt werden eine **festgelegt**, **"updatecontext"**, **Navigate**, **sammeln**, oder  **ClearCollect** Funktion. Um eine Variable und ihren Typ zu deklarieren, muss nur diese in einer dieser Funktionen eine beliebige Stelle in Ihrer app eingeschlossen werden. Keiner dieser Funktionen erstellen Sie Variablen; Sie werden nur Variablen mit Werten füllen. Sie deklarieren nie Variablen explizit Sie in eine anderes Programmiertool verwenden können, und alle Eingabe ist implizit von der Nutzung.
+Alle Variablen werden implizit erstellt, wenn sie in angezeigt werden eine **festgelegt**, **"updatecontext"** , **Navigate**, **sammeln**, oder  **ClearCollect** Funktion. Um eine Variable und ihren Typ zu deklarieren, muss nur diese in einer dieser Funktionen eine beliebige Stelle in Ihrer app eingeschlossen werden. Keiner dieser Funktionen erstellen Sie Variablen; Sie werden nur Variablen mit Werten füllen. Sie deklarieren nie Variablen explizit Sie in eine anderes Programmiertool verwenden können, und alle Eingabe ist implizit von der Nutzung.
 
-Angenommen, Sie müssen möglicherweise ein Schaltflächen-Steuerelement mit einem **OnSelect** Formel gleich **Set (X, 1)**. Diese Formel wird **X** als Variable mit einem Datentyp Number. Sie können **X** in Formeln als eine Zahl aus, und diese Variable hat den Wert *leere* nach dem Öffnen der app, aber bevor Sie die Schaltfläche auswählen. Wenn Sie die Schaltfläche auswählen, geben Sie **X** den Wert der **1**.
+Angenommen, Sie müssen möglicherweise ein Schaltflächen-Steuerelement mit einem **OnSelect** Formel gleich **Set (X, 1)** . Diese Formel wird **X** als Variable mit einem Datentyp Number. Sie können **X** in Formeln als eine Zahl aus, und diese Variable hat den Wert *leere* nach dem Öffnen der app, aber bevor Sie die Schaltfläche auswählen. Wenn Sie die Schaltfläche auswählen, geben Sie **X** den Wert der **1**.
 
-Wenn Sie eine weitere hinzugefügt Schaltfläche, und legen Sie seine **OnSelect** Eigenschaft **Set (X, "Hello")**, würde ein Fehler auftreten, da der Typ (Textzeichenfolge) nicht den Typ in der vorherigen übereinstimmt **festgelegt**(Anzahl). Alle implizite Definitionen der Variablen müssen auf dem Typ übereinstimmen. In diesem Fall all dies passiert, weil Sie erwähnt **X** in Formeln, die nicht verwendet werden, da keines dieser Formeln nicht tatsächlich ausgeführt haben.
+Wenn Sie eine weitere hinzugefügt Schaltfläche, und legen Sie seine **OnSelect** Eigenschaft **Set (X, "Hello")** , würde ein Fehler auftreten, da der Typ (Textzeichenfolge) nicht den Typ in der vorherigen übereinstimmt **festgelegt**(Anzahl). Alle implizite Definitionen der Variablen müssen auf dem Typ übereinstimmen. In diesem Fall all dies passiert, weil Sie erwähnt **X** in Formeln, die nicht verwendet werden, da keines dieser Formeln nicht tatsächlich ausgeführt haben.
 
-Sie eine Variable entfernen, indem Sie alle Entfernen der **festgelegt**, **"updatecontext"**, **Navigate**, **sammeln**, oder **ClearCollect**  Funktionen, die die Variable implizit herstellen. Ohne diese Funktionen nicht die Variable nicht vorhanden. Sie müssen auch alle Verweise auf die Variable entfernen, da sie einen Fehler verursacht.
+Sie eine Variable entfernen, indem Sie alle Entfernen der **festgelegt**, **"updatecontext"** , **Navigate**, **sammeln**, oder **ClearCollect**  Funktionen, die die Variable implizit herstellen. Ohne diese Funktionen nicht die Variable nicht vorhanden. Sie müssen auch alle Verweise auf die Variable entfernen, da sie einen Fehler verursacht.
 
 ## <a name="variable-lifetime-and-initial-value"></a>Die Lebensdauer der Variablen und Anfangswert
 
@@ -181,13 +180,13 @@ Wenn der Benutzer die app geöffnet wird, müssen alle Variablen einen Anfangswe
 
 Verwenden Sie den Namen der Variablen, um den Wert zu lesen. Beispielsweise können Sie eine Variable mit dieser Formel definieren:
 
-`Set( Radius; 12 )`
+`Set( Radius, 12 )`
 
 Dann können Sie einfach mithilfe **Radius** allen Orten mit Sie eine Zahl können, und er wird durch ersetzt **12**:
 
-`Pi() * Power( Radius; 2 )`
+`Pi() * Power( Radius, 2 )`
 
-Wenn Sie einer Kontextvariable besitzen den gleichen Namen wie eine globale Variable oder eine Sammlung zuweisen, hat die Kontextvariable Vorrang vor. Sie jedoch können weiterhin verweisen, die globale Variable oder Sammlung bei Verwendung der [Operator zur mehrdeutigkeitsvermeidung](functions/operators.md#disambiguation-operator) **@[Radius]**.
+Wenn Sie einer Kontextvariable besitzen den gleichen Namen wie eine globale Variable oder eine Sammlung zuweisen, hat die Kontextvariable Vorrang vor. Sie jedoch können weiterhin verweisen, die globale Variable oder Sammlung bei Verwendung der [Operator zur mehrdeutigkeitsvermeidung](functions/operators.md#disambiguation-operator) **@[Radius]** .
 
 ## <a name="use-a-context-variable"></a>Verwenden Sie eine Kontextvariable
 
@@ -205,9 +204,9 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 1. Fügen Sie ein Texteingabe-Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
 
-2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
+2. Legen Sie die **[Text](controls/properties-core.md)** -Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
 
-3. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
+3. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
 
     **UpdateContext ({RunningTotal: RunningTotal + TextInput1 } )**
 
@@ -217,15 +216,15 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
     ![OnSelect-Eigenschaft der Schaltfläche "hinzufügen"](media/working-with-variables/context-variable-1.png)
 
-4. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
+4. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
 
     **UpdateContext ({RunningTotal: 0 } )**
 
-    In diesem Fall **["updatecontext"](functions/function-updatecontext.md)** wird verwendet, mit der Formel **UpdateContext ({RunningTotal: 0 } )**.
+    In diesem Fall **["updatecontext"](functions/function-updatecontext.md)** wird verwendet, mit der Formel **UpdateContext ({RunningTotal: 0 } )** .
 
     ![OnSelect-Eigenschaft von der Schaltfläche "löschen"](media/working-with-variables/context-variable-2.png)
 
-5. Fügen Sie ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](controls/properties-core.md)**-Eigenschaft auf **RunningTotal** fest.
+5. Fügen Sie ein **[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](controls/properties-core.md)** -Eigenschaft auf **RunningTotal** fest.
 
     Diese Formel wird automatisch neu berechnet und zeigt dem Benutzer den Wert von **RunningTotal** an, während sie sich auf Grundlage der vom Benutzer ausgewählten Schaltflächen ändert.
 
@@ -237,7 +236,7 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 7. Sie können den Wert einer Kontextvariablen beim Wechsel zu einem Bildschirm festlegen. Dies ist hilfreich, wenn Sie den „Kontext“ bzw. die „Parameter“ von einem Bildschirm an einen anderen übergeben möchten. Um dieses Verfahren zu veranschaulichen, fügen Sie einen Bildschirm, fügen Sie eine Schaltfläche, und legen dessen **OnSelect** -Eigenschaft auf diese Formel:
 
-    **Navigate( Screen1; None; { RunningTotal: -1000 } )**
+    **Navigate( Screen1, None, { RunningTotal: -1000 } )**
 
     ![OnSelect-Eigenschaft einer Schaltfläche](media/working-with-variables/context-variable-5.png)
 
@@ -259,19 +258,19 @@ Veranschaulichen wir abschließend das Erstellen der Rechenmaschine mithilfe ein
 
 Funktionsweise von Sammlungen:
 
-* Erstellen Sie Sammlungen mithilfe der **[ClearCollect](functions/function-clear-collect-clearcollect.md)**-Funktion, oder legen Sie diese fest.  Sie können stattdessen die **[Collect](functions/function-clear-collect-clearcollect.md)**-Funktion verwenden; jedoch erfordert diese eine andere Variable statt die alte lediglich zu ersetzen.  
-* Eine Sammlung ist eine Art von Datenquelle und somit eine Tabelle. Verwenden Sie die **[First](functions/function-first-last.md)**-Funktion, um auf einen einzelnen Wert in einer Sammlung zuzugreifen, und extrahieren Sie ein Feld aus dem resultierenden Datensatz. Wenn Sie einen einzelnen Wert mit **[ClearCollect](functions/function-clear-collect-clearcollect.md)** verwendet haben, ist dies das **Value**-Feld, wie in diesem Beispiel:<br>
+* Erstellen Sie Sammlungen mithilfe der **[ClearCollect](functions/function-clear-collect-clearcollect.md)** -Funktion, oder legen Sie diese fest.  Sie können stattdessen die **[Collect](functions/function-clear-collect-clearcollect.md)** -Funktion verwenden; jedoch erfordert diese eine andere Variable statt die alte lediglich zu ersetzen.  
+* Eine Sammlung ist eine Art von Datenquelle und somit eine Tabelle. Verwenden Sie die **[First](functions/function-first-last.md)** -Funktion, um auf einen einzelnen Wert in einer Sammlung zuzugreifen, und extrahieren Sie ein Feld aus dem resultierenden Datensatz. Wenn Sie einen einzelnen Wert mit **[ClearCollect](functions/function-clear-collect-clearcollect.md)** verwendet haben, ist dies das **Value**-Feld, wie in diesem Beispiel:<br>
 **First(** *VariableName* **).Value**
 
 Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
-1. Fügen Sie ein  **[Texteingabe](controls/control-text-input.md)**-Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
+1. Fügen Sie ein  **[Texteingabe](controls/control-text-input.md)** -Steuerelement mit dem Namen **TextInput1** hinzu, und zwei Schaltflächen mit dem Namen **Button1** und **Button2**.
 
-2. Legen Sie die **[Text](controls/properties-core.md)**-Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
+2. Legen Sie die **[Text](controls/properties-core.md)** -Eigenschaft von **Button1** auf **"Add"** fest, und legen Sie die **Text**-Eigenschaft von **Button2** auf **"Clear"** fest.
 
-3. Legen Sie die **[OnSelect](controls/properties-core.md)**-Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
+3. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
 
-    **Collect( PaperTape; TextInput1.Text )**
+    **Collect( PaperTape, TextInput1.Text )**
 
     Das bloße Vorhandensein dieser Formel wird **PaperTape** als eine Auflistung, die eine einspaltige Tabelle von Textzeichenfolgen enthält. Sie können auf verweisen **PaperTape** an einer beliebigen Stelle in dieser app. Wenn ein Benutzer diese app öffnet **PaperTape** wird eine leere Tabelle.
 
@@ -285,9 +284,9 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
     ![OnSelect-Eigenschaft von der Schaltfläche "löschen"](media/working-with-variables/papertape-2.png)
 
-5. Fügen Sie eine Bezeichnung hinzu, um die laufende Summe anzuzeigen, und legen Sie ihre **[Text](controls/properties-core.md)**-Eigenschaft auf folgende Formel fest:
+5. Fügen Sie eine Bezeichnung hinzu, um die laufende Summe anzuzeigen, und legen Sie ihre **[Text](controls/properties-core.md)** -Eigenschaft auf folgende Formel fest:
 
-    **Sum( PaperTape; Value )**
+    **Sum( PaperTape, Value )**
 
     ![Die Texteigenschaft der Bezeichnung](media/working-with-variables/papertape-3.png)
 
@@ -297,7 +296,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 7. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
-8. Fügen Sie zum Anzeigen des Papierstreifens ein **Datentabellen**-Steuerelement hinzu, und legen Sie dessen **[Items](controls/properties-core.md)**-Eigenschaft auf diese Formel fest:
+8. Fügen Sie zum Anzeigen des Papierstreifens ein **Datentabellen**-Steuerelement hinzu, und legen Sie dessen **[Items](controls/properties-core.md)** -Eigenschaft auf diese Formel fest:
 
     **PaperTape**
 
@@ -311,7 +310,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 10. Klicken Sie zum Speichern und Abrufen der Sammlung, fügen Sie zwei weitere Schaltflächensteuerelemente hinzu, und legen ihre **Text** Eigenschaften **Load** und **speichern**. Legen Sie die **OnSelect** Eigenschaft der **Load** Schaltfläche auf diese Formel:
 
-     **Clear( PaperTape );; LoadData( PaperTape; "StoredPaperTape"; true )**
+     **Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true )**
 
      Müssen Sie die Auflistung zuerst da löschen **LoadData** fügt die gespeicherten Werte an das Ende der Auflistung.
 
@@ -319,7 +318,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 11. Legen Sie die **OnSelect** Eigenschaft der **speichern** Schaltfläche auf diese Formel:
 
-     **SaveData( PaperTape; "StoredPaperTape" )**
+     **SaveData( PaperTape, "StoredPaperTape" )**
 
      ![OnSelect *-Eigenschaft von der Schaltfläche "Speichern"](media/working-with-variables/papertape-6.png)
 

@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551236"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>Date- und Time-Funktionen in PowerApps
 Konvertiert Datums- und Zeitkomponenten in einen Datums- oder Uhrzeitwert
@@ -33,18 +32,18 @@ Die **Date**-Funktion konvertiert einzelne Werte für Jahr, Monat und Tag in ein
 
 Die **Time**-Funktion konvertiert die einzelnen Werte für Stunde, Minute und Sekunde in einen Datums- oder Uhrzeitwert.  Dem Ergebnis ist kein Datum zugeordnet.
 
-Weitere Informationen dazu, wie Sie eine Zeichenkette in einen Wert konvertieren, finden Sie unter den  **[DateValue](function-datevalue-timevalue.md)**,  **[TimeValue](function-datevalue-timevalue.md)** und  **[DateTimeValue](function-datevalue-timevalue.md)**-Funktionen.  
+Weitere Informationen dazu, wie Sie eine Zeichenkette in einen Wert konvertieren, finden Sie unter den  **[DateValue](function-datevalue-timevalue.md)** ,  **[TimeValue](function-datevalue-timevalue.md)** und  **[DateTimeValue](function-datevalue-timevalue.md)** -Funktionen.  
 
 Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten mit Datums- und Uhrzeitangaben)](../show-text-dates-times.md).
 
 ## <a name="syntax"></a>Syntax
-**Date**( *Year*; *Month*; *Day* )
+**Date**( *Year*, *Month*, *Day* )
 
 * *Year*: erforderlich.  Zahlen größer als 1899 werden als absolute Zahlen interpretiert (1980 wird als 1980 interpretiert), Zahlen zwischen 0 und 1899 werden als relativ zu 1900 interpretiert. (So wird beispielsweise 80 als 1980 interpretiert.)
 * *Month*: erforderlich.  Eine Zahl zwischen 1 und 12.
 * *Day*: erforderlich. Eine Zahl zwischen 1 und 31.
 
-**Time**( *Hour*; *Minute*; *Second* )
+**Time**( *Hour*, *Minute*, *Second* )
 
 * *Hour*: erforderlich.  Eine Zahl zwischen 0 (12:00 Uhr) und 23 (23:00 Uhr).
 * *Minute*: erforderlich. Eine Zahl zwischen 0 und 59.
@@ -54,10 +53,10 @@ Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten m
 ### <a name="date"></a>Date
 Wenn ein Benutzer **1979** in ein Texteingabe-Steuerelement mit dem Namen **HireYear** eingibt, die Zahl **3** in ein Texteingabe-Steuerelement mit dem Namen **HireMonth** und die Zahl **17** in ein Texteingabe-Steuerelement mit dem Namen **HireDay**, würde diese Funktion als das Datum **3/17/1979** zurückgeben:
 
-**Date(Value(HireYear.Text); Value(HireMonth.Text); Value(HireDay.Text))**
+**Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
 ### <a name="time"></a>Uhrzeit
 Wenn ein Benutzer **14** in ein Texteingabe-Steuerelement mit dem Namen **BirthHour**, **50** in ein Texteingabe-Steuerelement mit dem Namen **BirthMinute** und **24** in ein Texteingabe-Steuerelement mit dem Namen **BirthSecond** eingibt, gibt diese Funktion **02:50:24 p** zurück.
 
-**Text(Time(Value(BirthHour.Text); Value(BirthMinute.Text); Value(BirthSecond.Text)); "hh:mm:ss a/p")**
+**Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
 

@@ -80,11 +80,11 @@ Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe
 
 1. Zeigen Sie auf die **Canvas-app mit leerer App** Kachel, und wählen Sie dann **diese App**.
 
-1. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)**-Steuerelement hinzu, und nennen Sie es **RecordTitle**.
+1. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)** -Steuerelement hinzu, und nennen Sie es **RecordTitle**.
 
-1. Fügen Sie ein **[Schaltflächen](controls/control-button.md)**-Steuerelement hinzu, und verschieben Sie es unter **RecordTitle**.
+1. Fügen Sie ein **[Schaltflächen](controls/control-button.md)** -Steuerelement hinzu, und verschieben Sie es unter **RecordTitle**.
 
-1. Wählen Sie bei ausgewähltem **[Schaltflächen](controls/control-button.md)**-Steuerelement **Flows** auf der Registerkarte **Aktion** aus.
+1. Wählen Sie bei ausgewähltem **[Schaltflächen](controls/control-button.md)** -Steuerelement **Flows** auf der Registerkarte **Aktion** aus.
 
     ![Option „Flows“ auf der Registerkarte „Aktion“](./media/using-logic-flows/action-tab.png)
 

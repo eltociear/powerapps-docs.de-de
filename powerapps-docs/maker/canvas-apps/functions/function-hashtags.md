@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61562874"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="hashtags-function-in-powerapps"></a>Funktion „HashTags“ in PowerApps
 Extrahiert die Hashtags (#strings) aus einer Textzeichenfolge.
@@ -43,7 +42,7 @@ Die **HashTags**-Funktion durchsucht eine Zeichenfolge nach Hashtags. Hashtags b
 ### <a name="step-by-step"></a>Schritt für Schritt
 1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement hinzu, benennen Sie dieses **Tweet**, und geben Sie folgenden Satz ein:
    
-    **Diese #App ist #TOLL und kann #123zählen oder #123ABC; aber Sie kann nicht #1-23 oder #$\*(#\@“)**
+    **Diese #App ist #TOLL und kann #123zählen oder #123ABC, aber Sie kann nicht #1-23 oder #$\*(#\@“)**
 2. Fügen Sie einen vertikalen benutzerdefinierten Katalog hinzu, und legen seine **[Items](../controls/properties-core.md)**-Eigenschaft auf folgende Funktion fest:
    
     **HashTags(Tweet.Text)**

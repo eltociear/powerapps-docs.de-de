@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551029"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="find-function-in-powerapps"></a>Funktion „Find“ in PowerApps
 Sucht nach einer Textzeichenfolge in einer anderen Zeichenfolge (falls vorhanden)
@@ -30,7 +29,7 @@ Die **Find**-Funktion sucht innerhalb einer anderen Zeichenfolge nach einer Zeic
 **Find** gibt die Anfangsposition der Zeichenfolge zurück, die gefunden wurde.  Position 1 ist das erste Zeichen der Zeichenfolge. **Find** gibt *blank* zurück, wenn die Zeichenfolge, in der Sie suchen, nicht die Zeichenfolge enthält, nach der Sie suchen.
 
 ## <a name="syntax"></a>Syntax
-**Find**( *FindString*; *WithinString* [; *StartingPosition* ] )
+**Find**( *FindString*, *WithinString* [, *StartingPosition* ] )
 
 * *ZuSuchendeZeichenfolge*: erforderlich.  Die zu suchende Zeichenfolge
 * *InnerhalbDerZeichenfolge*: erforderlich.  Die Zeichenfolge, in der gesucht werden soll

@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548085"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Kreisdiagramm-Steuerelement in PowerApps
 Ein Steuerelement, das einen Vergleich relativer Werte anzeigt
@@ -30,7 +29,7 @@ Fügen Sie ein **Kreisdiagramm**-Steuerelement hinzu, wenn Sie relative Daten au
 Dieses gruppierte Steuerelement enthält drei Steuerelemente: eine **[Bezeichnung](control-text-box.md)** für den Titel, ein Diagramm und eine **Legende**.
 
 ## <a name="chart-key-properties"></a>Kerneigenschaften des Diagramms
-**[Items](properties-core.md)**: Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+**[Items](properties-core.md)** : Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
 **ShowLabels**: gibt an, ob ein Kreisdiagramm einen Wert darstellt, der mit jedem seiner Segmente verknüpft ist.
 
@@ -43,9 +42,9 @@ Dieses gruppierte Steuerelement enthält drei Steuerelemente: eine **[Bezeichnun
 
 **[Color](properties-color-border.md)** – Die Farbe des Texts in einem Steuerelement.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **Explode**: gibt den Abstand zwischen den Segmenten in einem Kreisdiagramm an.
 
@@ -69,7 +68,7 @@ Dieses gruppierte Steuerelement enthält drei Steuerelemente: eine **[Bezeichnun
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -80,17 +79,17 @@ Dieses gruppierte Steuerelement enthält drei Steuerelemente: eine **[Bezeichnun
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein **[Button](control-button.md)**-Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
-   **Collect(Revenue2015; {Product:"Europa"; Revenue:27000}; {Product:"Ganymede"; Revenue:26300}; {Product:"Callisto"; Revenue:29200})**
+1. Fügen Sie ein **[Button](control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
+   **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
    
-    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)**-Funktion oder [anderen Funktionen](../formula-reference.md)?
+    Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 2. Drücken F5, klicken oder tippen Sie auf das Steuerelement des Typs **[Schaltfläche](control-button.md)** , und drücken Sie anschließend die ESC-Taste, um in den Standardarbeitsbereich zurückzukehren.
-3. Fügen Sie ein Steuerelements des Typs **Kreisdiagramm** hinzu, und legen Sie seine  **[Items](properties-core.md)**-Eigenschaft auf **Revenue2015** fest.
+3. Fügen Sie ein Steuerelements des Typs **Kreisdiagramm** hinzu, und legen Sie seine  **[Items](properties-core.md)** -Eigenschaft auf **Revenue2015** fest.
    
     Das **Kreisdiagramm**-Steuerelement zeigt die Umsatzdaten für jedes Produkt in Bezug auf die anderen Produkte.
 

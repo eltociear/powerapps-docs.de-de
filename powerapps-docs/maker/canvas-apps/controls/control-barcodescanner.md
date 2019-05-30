@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544589"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Web Barcodescanner Steuerelement in PowerApps (experimentell)
 
@@ -35,7 +34,7 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -43,7 +42,7 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -55,7 +54,7 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 
 **Text**: Barcodewert, der vom Scanner zuletzt erkannt wurde.
 
-**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -67,7 +66,7 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
 

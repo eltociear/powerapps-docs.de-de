@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559378"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Steuerelemente für Säulendiagramme und Liniendiagramme in PowerApps
 Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
@@ -114,11 +113,11 @@ Steuerelemente, die Daten in Form eines Diagramms mit X- und Y-Achse darstellen.
 **YLabelAngle** – Der Winkel der Beschriftungen neben der y-Achse eines Linien- oder Säulendiagramms.
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Max**( *DataSource*; *ColumnName* )](../functions/function-aggregates.md)
+[**Max**( *DataSource*, *ColumnName* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **[Button](control-button.md)**-Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
-   **Collect(Revenue; {Year:"2013"; Europa:24000; Ganymede:22300; Callisto:21200}; {Year:"2014"; Europa:26500; Ganymede:25700; Callisto:24700};{Year:"2014"; Europa:27900; Ganymede:28300; Callisto:25600})**
+   **Collect(Revenue, {Year:"2013", Europa:24000, Ganymede:22300, Callisto:21200}, {Year:"2014", Europa:26500, Ganymede:25700, Callisto:24700},{Year:"2014", Europa:27900, Ganymede:28300, Callisto:25600})**
    
     Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
    

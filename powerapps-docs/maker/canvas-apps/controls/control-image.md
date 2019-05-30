@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544612"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="image-control-in-powerapps"></a>Image-Steuerelement in PowerApps
 Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle anzeigt
@@ -28,7 +27,7 @@ Ein Steuerelement, das ein Image aus einer lokalen Datei oder einer Datenquelle 
 Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, können Sie einzelne Images, die nicht Teil eines Datensatzes sind, anzeigen oder Images von Datensätzen in Datenquellen integrieren.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Image](properties-visual.md)** : der Name des Images, das in einem Image-, Audio- oder Mikrofon-Steuerelement angezeigt wird
+**[Image](properties-visual.md) **: der Name des Images, das in einem Image-, Audio- oder Mikrofon-Steuerelement angezeigt wird
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
@@ -112,7 +111,7 @@ Wenn Sie ein oder mehrere **Image**-Steuerelemente in Ihrer App hinzufügen, kö
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Remove**( *DataSource*; ThisItem)](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*, ThisItem)](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="show-an-image-from-a-local-file"></a>Anzeigen eines Images aus einer lokalen Datei

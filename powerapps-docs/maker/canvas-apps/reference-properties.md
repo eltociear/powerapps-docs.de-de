@@ -32,7 +32,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Audio](controls/control-audio-video.md)**: Dient zum Wiedergeben eines Audioclips oder des Audioteils eines Videoclips.
 
-**[Barcode-Scanner](controls/control-new-barcode-scanner.md)**  – scannt Barcodes, QR-Codes und Datenmatrix Codes auf einem Android- oder iOS-Gerät.
+**[Barcode-Scanner](controls/control-new-barcode-scanner.md) ** – scannt Barcodes, QR-Codes und Datenmatrix Codes auf einem Android- oder iOS-Gerät.
 
 **[Button](controls/control-button.md)** (Schaltfläche): Dient zum Interagieren mit der App, indem darauf geklickt oder getippt wird.
 
@@ -58,7 +58,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Edit form](controls/control-form-detail.md)** (Formular bearbeiten): Dient zum Bearbeiten und Erstellen von Datensätzen in einer Datenquelle mit einem Formular.
 
-**[Entitätsformular](entity-form-control.md)**  -experimentelles Feature: Fügen Sie dynamische Formulare, die in denen Benutzer können anzuzeigen, navigieren und bearbeiten Sie relationale Daten aus dem Common Data Service.
+**[Entitätsformular](entity-form-control.md) ** -experimentelles Feature: Fügen Sie dynamische Formulare, die in denen Benutzer können anzuzeigen, navigieren und bearbeiten Sie relationale Daten aus dem Common Data Service.
 
 **[Export](controls/control-export-import.md)**: Dient zum Exportieren von Daten zur Verwendung an einer anderen Stelle von PowerApps.
 
@@ -90,7 +90,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Rating](controls/control-rating.md)** (Bewertung): Dient zum Angeben eines Werts zwischen 1 und einer angegebenen Zahl.
 
-**[Rich-Text-Editor](controls/control-richtexteditor.md)**  – können Sie rich-Text-Formatierungen von app-Benutzer.
+**[Rich-Text-Editor](controls/control-richtexteditor.md) ** – können Sie rich-Text-Formatierungen von app-Benutzer.
 
 **[Screen](controls/control-screen.md)** (Bildschirm): Dient zum Anzeigen und Aktualisieren von Daten zu einer bestimmten Aufgabe.
 
@@ -108,7 +108,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Video](controls/control-audio-video.md)**: Dient zum Wiedergeben eines Videoclips aus einer lokalen Datei, einer Datenquelle oder von YouTube.
 
-**[(Experimentell) Web Barcode-Scanner](controls/control-barcodescanner.md)**  – die ältere Barcode-Scanner, die veraltet ist, aber für die Überprüfung des Codes in einem Webbrowser nützlich sein.
+**[(Experimentell) Web Barcode-Scanner](controls/control-barcodescanner.md) ** – die ältere Barcode-Scanner, die veraltet ist, aber für die Überprüfung des Codes in einem Webbrowser nützlich sein.
 
 ## <a name="common-properties-by-category"></a>Allgemeine Eigenschaften nach Kategorie
 
@@ -238,7 +238,7 @@ Konfigurieren Sie die Darstellung und das Verhalten eines Steuerelements, indem 
 
 **[Font](controls/properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.  Gilt für viele Steuerelemente.
 
-**[FontWeight](controls/properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.  Gilt für viele Steuerelemente.
+**[FontWeight](controls/properties-text.md) ** – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.  Gilt für viele Steuerelemente.
 
 ### <a name="g"></a>G
 

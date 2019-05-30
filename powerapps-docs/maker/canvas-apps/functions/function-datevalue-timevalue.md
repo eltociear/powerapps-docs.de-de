@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551190"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>Die Funktionen „DateValue“, „TimeValue“ und „DateTimeValue“ in PowerApps
 Konvertiert ein Datum und/oder eine Uhrzeit in einer Zeichenfolge in einen Datum/Uhrzeit-Wert
@@ -42,60 +41,60 @@ Datumsangaben müssen eines der folgenden Formate aufweisen:
 * TT Mon JJJJ
 * Monat DD, YYYY
 
-Weitere Informationen zum Konvertieren der numerischen Komponenten Datum, Monat und Jahr, und Stunde, Minute und Sekunde finden Sie unter den **[Date](function-date-time.md)**- und **[Time](function-date-time.md)**-Funktionen.
+Weitere Informationen zum Konvertieren der numerischen Komponenten Datum, Monat und Jahr, und Stunde, Minute und Sekunde finden Sie unter den **[Date](function-date-time.md)** - und **[Time](function-date-time.md)** -Funktionen.
 
 Weitere Informationen finden Sie unter [Working with dates and times (Arbeiten mit Datums- und Uhrzeitangaben)](../show-text-dates-times.md).
 
-Informationen zum Konvertieren von Zahlen finden Sie unter der **[Value](function-value.md)**-Funktion.
+Informationen zum Konvertieren von Zahlen finden Sie unter der **[Value](function-value.md)** -Funktion.
 
 ## <a name="syntax"></a>Syntax
-**DateValue**( *String* [; *Language* ])<br>**DateTimeValue**( *String* [; *Language* ])<br>**TimeValue**( *String* [; *Language* ])
+**DateValue**( *String* [, *Language* ])<br>**DateTimeValue**( *String* [, *Language* ])<br>**TimeValue**( *String* [, *Language* ])
 
 * *Zeichenfolge*: erforderlich.  Eine Textzeichenfolge, die einen Datum-, Uhrzeit- oder einen Datum/Uhrzeit-Wert enthält.
-* *Sprache*: optional.  Eine Sprachzeichenfolge, wie man sie durch die ersten beiden Zeichen des Rückgabewertes der **[Language](function-language.md)**-Funktion erhält.  Wenn nicht anders angegebenen, wird die Sprache des Clients des aktuellen Benutzers verwendet.  
+* *Sprache*: optional.  Eine Sprachzeichenfolge, wie man sie durch die ersten beiden Zeichen des Rückgabewertes der **[Language](function-language.md)** -Funktion erhält.  Wenn nicht anders angegebenen, wird die Sprache des Clients des aktuellen Benutzers verwendet.  
 
 ## <a name="examples"></a>Beispiele
 ### <a name="datevalue"></a>DateValue
-Wenn Sie **10/11/2014** in ein Texteingabe-Steuerelement mit dem Namen **StartDate** eingegeben haben, und Sie dann die **[Text](../controls/properties-core.md)**-Eigenschaft einer Bezeichnung für diese Funktion festgelegt haben, gibt es mehrere Möglichkeiten:
+Wenn Sie **10/11/2014** in ein Texteingabe-Steuerelement mit dem Namen **StartDate** eingegeben haben, und Sie dann die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung für diese Funktion festgelegt haben, gibt es mehrere Möglichkeiten:
 
-* **Text(DateValue(Startdate.Text); DateTimeFormat.LongDate)**
+* **Text(DateValue(Startdate.Text), DateTimeFormat.LongDate)**
   
     Die Bezeichnung zeigt **Saturday, October 11, 2014** an, wenn das Gebietsschema Ihres Computers auf **en** festgelegt wurde.
   
     > [!NOTE]
   > Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
-* **Text(DateValue(Startdate.Text; "fr"); DateTimeFormat.LongDate)**
+* **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
   
     Die Bezeichnung zeigt **Monday, November 10, 2014** an.
 
 Wenn Sie dasselbe für **October 20, 2014** durchgeführt haben:
 
-* **DateDiff(DateValue(Startdate.Text); Today())**
+* **DateDiff(DateValue(Startdate.Text), Today())**
   
-    Wenn die Sprache Ihres Computers auf **en** festgelegt wurde, zeigt die Bezeichnung **9** an, was die Anzahl der Tage zwischen dem 11. und 20. Oktober ist. Die **[DateDiff](function-dateadd-datediff.md)**-Funktion kann auch die Differenz in Monaten, Quartalen oder Jahren angezeigt.
+    Wenn die Sprache Ihres Computers auf **en** festgelegt wurde, zeigt die Bezeichnung **9** an, was die Anzahl der Tage zwischen dem 11. und 20. Oktober ist. Die **[DateDiff](function-dateadd-datediff.md)** -Funktion kann auch die Differenz in Monaten, Quartalen oder Jahren angezeigt.
 
 ### <a name="datetimevalue"></a>DateTimeValue
-Wenn Sie **10/11/2014 1:50:24.765 PM** in ein Texteingabe-Steuerelement mit dem Namen **Start** eingegeben haben, und Sie anschließend die **[Text](../controls/properties-core.md)**-Eigenschaft einer Bezeichnung auf folgende Funktion festgelegt haben, gibt es mehrere Möglichkeiten:
+Wenn Sie **10/11/2014 1:50:24.765 PM** in ein Texteingabe-Steuerelement mit dem Namen **Start** eingegeben haben, und Sie anschließend die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung auf folgende Funktion festgelegt haben, gibt es mehrere Möglichkeiten:
 
-* **Text(DateTimeValue(Start.Text); DateTimeFormat.LongDateTime)**
+* **Text(DateTimeValue(Start.Text), DateTimeFormat.LongDateTime)**
   
     Die Bezeichnung zeigt **Saturday, October 11, 2014 1:50:24 PM**, wenn das Gebietsschema Ihres Computers auf „en“ konfiguriert wurde.
   
     > [!NOTE]
   > Sie können mehrere Optionen mit dem **DateTimeFormat**-Parameter verwenden, allerdings nicht **LongDateTime**. Geben Sie den Parameter, unmittelbar gefolgt von einem Ausrufezeichen, in das Funktionsfeld ein, um eine Liste dieser Optionen anzuzeigen.
-* **Text(DateTimeValue(Start.Text; "fr"); DateTimeFormat.LongDateTime)**
+* **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
   
     Die Bezeichnung zeigt **Monday, November 10, 2014 1:50:24 PM** an.
-* **Text(DateTimeValue(Start.Text); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
+* **Text(DateTimeValue(Start.Text), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
   
     Die Bezeichnung zeigt **Saturday, October 11, 2014 01:50:24:765 PM**, wenn das Gebietsschema Ihres Computers auf **en** festgelegt ist.
   
     Als Alternative können Sie **hh:mm:ss.f** oder **hh:mm:ss.ff** angeben, um die Zeit auf das nächste Zehntel oder Hundertstel einer Sekunde zu runden.
 
 ### <a name="timevalue"></a>TimeValue
-Benennen Sie ein Texteingabe-Steuerelement **FinishedAt**, und legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft einer Bezeichnung auf folgende Funktion fest:
+Benennen Sie ein Texteingabe-Steuerelement **FinishedAt**, und legen Sie die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung auf folgende Funktion fest:
 
-**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"); "You made it!"; "Too late!")**
+**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"), "You made it!", "Too late!")**
 
 * Wenn Sie **4:59:59.999 PM** in das **FinishedAt**-Steuerelement eingegeben haben, zeigt die Bezeichnung „You made it!“ (Geschafft!) an
 * Wenn Sie **5:00:00.000 PM** in das **FinishedAt**-Steuerelement eingeben, zeigt die Bezeichnung „Too late!“ (Zu spät!) an

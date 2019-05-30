@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544244"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Bildkatalog-Steuerelement in Canvas-apps
 
@@ -45,7 +44,7 @@ Wenn ein Benutzer blättert die **Flexible Höhe** Katalog-Steuerelements, bevor
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
-**[AccessibleLabel](properties-accessibility.md)**  – Bezeichnung des Katalogs (nicht den darin enthaltenen Elementen) für Sprachausgaben. Sollte die Elementliste beschreiben.
+**[AccessibleLabel](properties-accessibility.md) ** – Bezeichnung des Katalogs (nicht den darin enthaltenen Elementen) für Sprachausgaben. Sollte die Elementliste beschreiben.
 
 **AllItems** – Alle Elemente eines Katalogs, einschließlich zusätzlicher Steuerelementwerte, die Teil der Vorlage des Katalogs sind.
 
@@ -93,7 +92,7 @@ Wenn ein Benutzer blättert die **Flexible Höhe** Katalog-Steuerelements, bevor
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Beispiele
 
