@@ -7,29 +7,34 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18bd89549aa330b5da333dccfd723887db38a36e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d375adeb8a20dfe2d9629a9c34944a8dcd80a8e7
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553908"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451439"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“
-Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und welcher Bildschirm angezeigt wird  
+
+Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und welcher Bildschirm angezeigt wird
 
 ## <a name="description-and-syntax"></a>Beschreibung und Syntax
-Alle Signale geben einen [Datensatz](../working-with-tables.md#records) von Informationen zurück. Sie können diese Informationen als Datensatz verwenden und speichern oder einzelne Eigenschaften mithilfe des **.**- [Operators](operators.md) extrahieren.
+
+Signale sind Werte, die sich ändern können, zu einem beliebigen Zeitpunkt, unabhängig von der, wie der Benutzer mit der app interagiert werden kann. Formeln, die automatisch auf Signalen basieren neu berechnen, wie diese Werte zu ändern.
+
+Signale zurück, in der Regel eine [Datensatz](../working-with-tables.md#records) Informationen. Sie können diese Informationen als Datensatz verwenden und speichern oder einzelne Eigenschaften mithilfe des **.** - [Operators](operators.md) extrahieren.
 
 > [!NOTE]
 > Die **Acceleration** und **Compass** Funktionen geben genaue Werte in einen nativen Spieler wie z. B. unter iOS oder Android zurück, aber diese Funktionen geben einen Nullwert zurück beim Erstellen oder eine app im Browser zu ändern.
 
 ### <a name="acceleration"></a>Acceleration
+
 Das Signal **Acceleration** gibt die Beschleunigung des Geräts dreidimensional im Verhältnis zum Bildschirm des Geräts zurück. Die Beschleunigung wird in *g*-Einheiten von 9.81 m/Sekunde<sup>2</sup> oder 32.2 ft/Sekunde<sup>2</sup> gemessen (die Erdbeschleunigung wird aufgrund der Schwerkraft an Objekte auf der Erdoberfläche übertragen).
 
 | Eigenschaft | Beschreibung |
@@ -39,28 +44,14 @@ Das Signal **Acceleration** gibt die Beschleunigung des Geräts dreidimensional 
 | **Acceleration.Z** |Hoch und herunter.  Hoch ist eine positive Zahl. |
 
 ### <a name="app"></a>App
-Das Signal **App** gibt Informationen über die ausgeführte App zurück.
+
+Unter anderem den **App** Objekt enthält ein Signal, der angibt, welcher Bildschirm angezeigt wird.
 
 | Eigenschaft | Beschreibung |
 | --- | --- |
-| **App.ActiveScreen** | Der angezeigte Bildschirm. Gibt ein Bildschirmobjekt zurück, das Sie zum Verweisen auf Bildschirmeigenschaften oder Vergleichen mit einem anderen Bildschirm verwenden können, um zu bestimmen, welcher Bildschirm angezeigt wird. Verwenden Sie zum Ändern des angezeigten Bildschirms der **[wieder](function-navigate.md)** oder **[Navigate](function-navigate.md)** Funktion. |
-| **App.Width** | Gibt die Breite des Fensters, in dem die app ausgeführt wird. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Breite** Eigenschaft des Bildschirms, um einen reaktionsfähigen app zu erstellen.  |
-| **App.Height** | Gibt die Höhe des Fensters, in dem die app ausgeführt wird. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Höhe** Eigenschaft des Bildschirms, um einen reaktionsfähigen app zu erstellen. |
-| **App.DesignWidth** | Gibt die Breite der app in PowerApps Studio zurück. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Breite** Eigenschaft des Bildschirms, um eine minimale Breite in einer reaktionsfähigen app sicherzustellen.  |
-| **App.DesignHeight** | Gibt die Höhe der app in PowerApps Studio zurück. Sie können diese Eigenschaft in einer Formel verwenden, beim Festlegen der **Höhe** Eigenschaft des Bildschirms, um eine minimale Höhe in einem reaktionsfähigen app sicherzustellen.  |
-| **App.SizeBreakpoints** | Eine einspaltige Tabelle mit Zahlen, die Größe des Bildschirms trennen Adressbereiche, die die [ **Screen.Size** ](../controls/control-screen.md) Eigenschaft zurückgibt. Die Werte in dieser Tabelle möglicherweise geändert werden, zum Anpassen der Haltepunkte an, dass alle app Bildschirme verwenden.
+| **App.ActiveScreen** |Bildschirm, der angezeigt wird. Gibt ein Bildschirmobjekt, die Sie verwenden können, verweisen auf Bildschirmeigenschaften oder vergleichen mit einem anderen Bildschirm, um zu bestimmen, welcher Bildschirm angezeigt wird. Können Sie die **[wieder](function-navigate.md)** oder **[Navigate](function-navigate.md)** Funktion, um den Bildschirm zu ändern, die angezeigt wird. |
 
-Die **App** -Objekt verfügt außerdem über eine [verhaltensformel](../working-with-formulas-in-depth.md) , die Sie festlegen können.
-
-| Eigenschaft  | Beschreibung |
-| --- | --- |
-| **App.OnStart** | Das Verhalten einer app, wenn der Benutzer gestartet wird. Entscheidungsträger in Unternehmen häufig verwenden Sie diese Eigenschaft zum Abrufen und Zwischenspeichern von Daten in Sammlungen mit der **[sammeln](function-clear-collect-clearcollect.md)** Funktion richten Sie Variablen mit der **[festgelegt](function-set.md)** funktionieren, und navigieren Sie zu einer ersten Bildschirm mit der **[Navigate](function-navigate.md)** Funktion. Diese Formel wird ausgewertet, bevor der erste Bildschirm angezeigt wird. Kein Bildschirm geladen wird, damit Sie Kontextvariablen mit festlegen, können die **["updatecontext"](function-updatecontext.md)** Funktion. Sie können aber auch Kontextvariablen mit übergeben die **Navigate** Funktion. |
-
-Die **App** Objekt am Anfang der hierarchischen Liste der Steuerelemente im linken Navigationsbereich angezeigt wird, und Sie können dieses Objekt wie ein Steuerelement auf einem Bildschirm auswählen. Nachdem Sie das Objekt ausgewählt haben, können Sie anzeigen und bearbeiten eine seiner Eigenschaften, wenn Sie diese Eigenschaft in der Dropdown-Liste auf der linken Seite der Bearbeitungsleiste auswählen.  
-
-Nach dem Ändern der **OnStart** -Eigenschaft, können Sie testen, indem Sie mit dem Mauszeiger auf die **App** Objekt in den Links im Navigationsbereich, Sie auf die Auslassungspunkte (...), der angezeigt wird, und wählen dann **ausführen OnStart**. Im Gegensatz zu, wenn die app zum ersten Mal geladen wird werden vorhandene Auflistungen und Variablen bereits festgelegt. Verwenden der **[ClearCollect](function-clear-collect-clearcollect.md)** -Funktion anstelle von der **sammeln** Funktion für den Einstieg leere Sammlungen.
-
- ![App-Kontextmenü mit OnStart ausführen](media/appobject-runonstart.png)
+Weitere Informationen finden Sie unter: [**App** Objekt](object-app.md) Dokumentation.
 
 ### <a name="compass"></a>Compass
 Das Signal **Compass** gibt die Kompassausrichtung des oberen Bildschirmrands zurück. Die Ausrichtung basiert auf dem elektromagnetischen Norden.
