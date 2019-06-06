@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 34cf740bb029440480618a180ac45bc094c061d5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c1107fd96070e62ffc8df53ad756dea01da7c5f7
+ms.sourcegitcommit: db2d38f0351fd41f74fa44f7a1d80703a6b38527
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61539959"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66723976"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
@@ -52,8 +52,8 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 1. Geben Sie anhand des Namens oder Alias der Benutzer oder Sicherheitsgruppen in Azure Active Directory mit dem Sie die app freigeben möchten.
 
     - Die gesamte Organisation, führen Sie die app (jedoch nicht ändern oder freigeben) zulassen möchten, geben Sie **jeder** im Bedienfeld "freigeben".
-    - Sie können eine app freigeben, mit einer Liste der Aliase, leicht zu merkende Namen oder eine Kombination der Argumente (z. B. **Jane Doe &lt; jane.doe@contoso.com>**) Wenn die Elemente durch Semikolons getrennt sind. Wenn mehr als eine Person hat den gleichen Namen, aber unterschiedliche Aliase, die erste Person, die gefunden werden zur Liste hinzugefügt werden. Eine QuickInfo angezeigt wird, wenn der Name oder Alias bereits über die Berechtigung verfügt, oder kann nicht aufgelöst werden. 
-    
+    - Sie können eine app freigeben, mit einer Liste der Aliase, leicht zu merkende Namen oder eine Kombination der Argumente (z. B. **Jane Doe &lt; jane.doe@contoso.com>** ) Wenn die Elemente durch Semikolons getrennt sind. Wenn mehr als eine Person hat den gleichen Namen, aber unterschiedliche Aliase, die erste Person, die gefunden werden zur Liste hinzugefügt werden. Eine QuickInfo angezeigt wird, wenn der Name oder Alias bereits über die Berechtigung verfügt, oder kann nicht aufgelöst werden. 
+
     ![Geben Sie Benutzer und mitbesitzern](./media/share-app/share-everyone.png)
 
     > [!NOTE]
@@ -62,7 +62,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 1. Wenn Sie zulassen möchten, die für die Sie freigeben die app zum Bearbeiten und freigeben (zusätzlich zur Ausführung), wählen Sie die **Mitbesitzer** Kontrollkästchen.
 
     Sie können keine gewähren **Mitbesitzer** Berechtigung einer Sicherheitsgruppe zu gruppieren, wenn Sie [erstellt die app aus in einer Projektmappe](add-app-solution.md).
-    
+
     > [!NOTE]
     > Unabhängig von Berechtigungen können keine zwei Benutzer eine app zur gleichen Zeit bearbeiten. Wenn ein Benutzer die app zur Bearbeitung geöffnet wird, können andere Personen, führen Sie es aber nicht bearbeiten.
 
@@ -70,7 +70,8 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
     Beispielsweise kann Ihre app mit einer Entität in einer Common Data Service-Datenbank verbinden. Wenn Sie eine solche Anwendung freigeben, werden Sie von der Freigabe Bereich aufgefordert, Verwalten der Sicherheit für diese Entität.
 
-    ![Festlegen von Berechtigungen](./media/share-app/set-permissions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Zuweisen einer Sicherheitsrolle](media/share-app/cds-assign-security-role.png)
 
     Weitere Informationen zum Verwalten der Sicherheit für eine Entität finden Sie unter [verwalten Entitätsberechtigungen](share-app.md#manage-entity-permissions) weiter unten in diesem Thema.
 
@@ -95,6 +96,7 @@ Sie können Berechtigungen für einen Benutzer oder eine Sicherheitsgruppe ände
 ## <a name="security-group-considerations"></a>Überlegungen zu Sicherheitsgruppen
 
 - Wenn Sie eine App für eine Sicherheitsgruppe, bestehende Mitglieder dieser Gruppe und jeden freigeben, der dieser Gruppe beitritt, verfügen alle über die von Ihnen angegebenen Berechtigungen für diese Gruppe. Jeder, der die Gruppe verlässt, verliert diese Berechtigung, es sei denn, die Person gehört noch zu einer anderen Gruppe, die über Zugriff verfügt, oder Sie verleihen der Person die Berechtigung als Einzelperson.
+
 - Jedes Mitglied einer Sicherheitsgruppe besitzt dieselbe Berechtigung für eine App wie die Gruppe. Sie können allerdings für ein Mitglied oder mehrere Mitglieder dieser Gruppe tiefgreifendere Berechtigungen angeben, um diesen Personen besseren Zugriff zu gewähren. Beispielsweise Sie die Sicherheitsgruppe A die Berechtigung zum Ausführen einer app erteilen, aber Sie können auch festlegen, die zu dieser Gruppe gehört, Benutzer B **Mitbesitzer** Berechtigung. Jedes Mitglied der Sicherheitsgruppe kann die App ausführen, aber nur Benutzer B kann diese bearbeiten. Wenn Sie die Sicherheitsgruppe A geben **Mitbesitzer** und Benutzer B Berechtigung zum Ausführen der app, dieser Benutzer kann die app trotzdem bearbeiten.
 
 ## <a name="manage-entity-permissions"></a>Verwalten von Entitätsberechtigungen
@@ -104,47 +106,19 @@ Sie können Berechtigungen für einen Benutzer oder eine Sicherheitsgruppe ände
 Wenn Sie eine app basierend auf den Common Data Service erstellen, müssen Sie auch sicherstellen, dass die Benutzer, mit denen Sie die app freigeben, verfügen die entsprechenden Berechtigungen für die Entität bzw. Entitäten, die auf denen die app basiert. Insbesondere müssen die Benutzer einer Sicherheitsrolle gehören, die Aufgaben wie erstellen, lesen, schreiben und Löschen von Datensätzen mit relevanten ausführen können. In vielen Fällen sollten Sie eine oder mehrere benutzerdefinierte Sicherheitsrollen mit den genauen Berechtigungen zu erstellen, die Benutzer benötigen, um die app auszuführen. Sie können jeden Benutzer nach Bedarf dann eine Rolle zuweisen.
 
 > [!NOTE]
-> Während ich dies schreibe, können Sie Sicherheitsrollen für einzelne Benutzer jedoch nicht für Sicherheitsgruppen zuweisen.
+> Während ich dies schreibe, können Sie Sicherheitsrollen für einzelne Benutzer und Sicherheitsgruppen in Azure Active Directory jedoch nicht für Office-Gruppen zuweisen.
 
 #### <a name="prerequisite"></a>Voraussetzung
 
-Um die nächsten beiden Verfahren ausführen zu können, benötigen Sie **Systemadministrator** Berechtigungen für eine Common Data Service-Datenbank.
+Um eine Rolle zuzuweisen, benötigen Sie **Systemadministrator** Berechtigungen für eine Common Data Service-Datenbank.
 
-#### <a name="create-a-security-role"></a>Sicherheitsrolle erstellen
+#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Zuweisen einer Sicherheitsgruppe in Azure AD, um eine Rolle
 
-1. Wählen Sie im Bereich Freigabe **Festlegen von Berechtigungen** unter **Datenberechtigungen**, und wählen Sie dann die **Sicherheitsrollen** Link.
+1. Wählen Sie im Bereich Freigabe **Zuweisen einer Sicherheitsrolle** unter **Datenberechtigungen**.
 
-    ![Öffnen von Sicherheitsrollen](media/share-app/security-roles.png)
+1. Wählen Sie die Rolle bzw. Rollen in Common Data Service, die für den Benutzer oder die Sicherheitsgruppe zuweisen mit dem Sie die app freigeben möchten, in Azure AD werden sollen.
 
-1. Wählen Sie unter **Alle Rollen** **Neu** aus, tippen oder geben Sie dann einen Namen für die Rolle, die Sie erstellen, ein.
-
-    ![Sicherheitsgruppe erstellen](media/share-app/new-role.png)
-
-1. Wählen Sie mindestens eine Registerkarte aus, um die Entität bzw. Entitäten zu suchen, die von Ihrer App verwendet werden. Wählen Sie anschließend die Berechtigungen aus, denen Sie die Sicherheitsrolle zuweisen möchten.
-
-    Z. B. die folgende Grafik zeigt, dass die **Core Datensätze** Registerkarte enthält die **Konten** Entität und Benutzern, denen diese Sicherheitsrolle zugewiesen wurde, zu erstellen, lesen, schreiben und Löschen von Datensätzen in dieser Entität können .
-
-    ![Berechtigungen angeben](media/share-app/grant-access.png)
-
-1. Klicken Sie auf **Speichern und schließen**.
-
-#### <a name="assign-a-user-to-a-role"></a>Benutzer einer Rolle zuweisen
-
-1. Wählen Sie im Bereich Freigabe **Festlegen von Berechtigungen** unter **Datenberechtigungen**, und wählen Sie dann die **Benutzer** Link.
-
-    ![Verknüpfung „Benutzer“](media/share-app/open-users.png)
-
-1. Tippen oder geben Sie in der oberen rechten Ecke den Namen des Benutzers ein, dem die Rolle zugewiesen werden soll, und klicken Sie dann auf das Suchsymbol.
-
-    ![Nach Benutzern suchen](media/share-app/search-users.png)
-
-1. Zeigen Sie in den Suchergebnissen auf das gewünschte Ergebnis, und aktivieren Sie dann das Kontrollkästchen, das angezeigt wird.
-
-1. Wählen Sie oben im Banner **Rollen verwalten** aus.
-
-1. Wählen Sie im angezeigten Dialogfeld die Kontrollkästchen für **Common Data Service-Benutzer** und die Rolle, die der Benutzer für Ihre app benötigt, und wählen Sie dann **OK.**
-
-    ![Benutzer einer Rolle zuweisen](media/share-app/assign-users.png)
+    ![Liste der Security-Rolle](media/share-app/cds-assign-security-role-list.png)
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (vorherige Version)
 
