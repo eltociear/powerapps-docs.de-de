@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b64914e436856196aa0a7021ba9c3772172ef59
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: fb10fd0a59395223530e5934d827581640928f57
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61552535"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736262"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Löschen einer Canvas-App aus PowerApps
 In diesem Artikel wird gezeigt, wie Sie eine Canvas-App aus Ihrem PowerApps-Konto und aus Konten von anderen Benutzern löschen, für die die App freigegeben wurde.
 
 ## <a name="delete-an-app-from-your-account"></a>Löschen einer App aus Ihrem Konto
-1. Öffnen Sie [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken oder tippen Sie in der linken Navigationsleiste auf **Apps**.
+1. Open [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und wählen Sie dann **Apps** in der linken Seite **Strukturansicht** Bereich.
    
     ![](./media/delete-app/file-apps.png)
 2. (optional) Filtern Sie in der oberen linken Ecke die Liste der Apps, um nur die Apps anzuzeigen, die Sie besitzen oder zu denen Sie beitragen.
@@ -33,16 +33,16 @@ In diesem Artikel wird gezeigt, wie Sie eine Canvas-App aus Ihrem PowerApps-Kont
    
     > [!NOTE]
    > Wenn die App, die Sie löschen möchten, nicht angezeigt wird, sollten Sie sicherstellen, dass Sie sich in der richtigen Umgebung befinden.
-3. Klicken oder tippen Sie am rechten Rand auf das Info-Symbol der App, die Sie löschen möchten.
+3. Wählen Sie am rechten Rand der Info-Symbol der app, die Sie löschen möchten.
    
     ![](./media/delete-app/app-options.png)
-4. Klicken oder tippen Sie in der oberen rechten Ecke auf das Papierkorb-Symbol, um die App zu löschen.
+4. Wählen Sie in der Nähe der oberen rechten Ecke das Papierkorb-Symbol, um die app zu löschen.
    
     ![](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > Sie benötigen die Berechtigung **Mitwirkender**, um eine App löschen zu können.
-5. Klicken oder tippen Sie im erscheinenden Dialogfeld auf **Aus der Cloud löschen**.  
+5. Wählen Sie in das Dialogfeld, das angezeigt wird, **aus Cloud löschen**.  
    
     > [!IMPORTANT]
    > Durch diese Aktion wird diese App nicht nur dauerhaft aus Ihrem Konto gelöscht, sondern auch aus den Konten aller Benutzer, mit denen diese App geteilt wurde.

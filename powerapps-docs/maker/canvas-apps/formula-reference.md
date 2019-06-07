@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
+ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451400"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66736222"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -187,7 +187,10 @@ Andere Elemente enthalten:
 
 **[IsToday](functions/function-now-today-istoday.md)** : überprüft, ob ein Datums- oder Uhrzeitwert am heutigen Tag gilt.
 
-**[IsType](functions/function-astype-istype.md)**  – überprüft, ob ein Datensatzverweis auf einen bestimmten Entitätstyp bezieht.  
+**[IsType](functions/function-astype-istype.md)**  – überprüft, ob ein Datensatzverweis auf einen bestimmten Entitätstyp bezieht.
+
+## <a name="j"></a>J
+**[JSON](functions/function-json.md)**  -generiert eine JSON-Text-Zeichenfolge für eine Tabelle, einen Datensatz oder einen Wert.
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** : gibt den Sprach-Tag des aktuellen Benutzers zurück.
