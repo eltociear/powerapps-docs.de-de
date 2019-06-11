@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66806742"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Erstellen Sie eine Zusammenfassung Formular in einer Canvas-app
 
@@ -96,7 +97,7 @@ In diesem Abschnitt fügen Sie Steuerelemente, um eine Zusammenfassung der belie
 
 1. Legen Sie in der Bearbeitungsleiste die **DataSource** -Eigenschaft des Formulars auf diesen Wert:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Orders
     ```
 
@@ -215,7 +216,7 @@ In diesem Beispiel benötigen Sie nicht den Uhrzeitteil von die Datumsfelder ent
 
 1. Legen Sie die Zusammenfassung des **Element** Eigenschaft auf den folgenden Ausdruck:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected
     ```
 
@@ -239,7 +240,7 @@ In diesem Beispiel benötigen Sie nicht den Uhrzeitteil von die Datumsfelder ent
 1. Öffnen der **Steuerelementtyp** Liste:
 
     > [!div class="mx-imgBorder"]
-    > ![Öffnen der ** Steuerelementliste Typ **](media/northwind-orders-canvas-part2/alt-02.png)
+    > ![Öffnen der ** Steuerelementliste Typ **](media/northwind-orders-canvas-part2/alt-02,png)
 
 1. Wählen Sie die **Anzeigetext** Datenkarte:
 
@@ -294,7 +295,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie die **Image** -Eigenschaft des Bildes auf diese Formel, und Ersetzen Sie dabei die Zahl am Ende des DataCardValue bei Bedarf:
 
-    ```powerapps-dot
+    ```powerapps-comma
     DataCardValue7.Selected.Picture
     ```
 
@@ -327,7 +328,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. In der **Strukturansicht** Bereich bestätigen, dass es sich bei den Namen des Formulars wird **Form1**, und legen Sie dann auf des Symbol " **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SubmitForm( Form1 )
     ```
 
@@ -338,8 +339,8 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbol " **" DisplayMode "** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -349,7 +350,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbol " **DisabledColor** -Eigenschaft auf diesen Wert:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -380,7 +381,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbol "Abbrechen" des **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ResetForm( Form1 )
     ```
 
@@ -391,8 +392,8 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbol "Abbrechen" des **"DisplayMode"** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -402,7 +403,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbol "Abbrechen" des **DisabledColor** -Eigenschaft auf diesen Wert:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -433,7 +434,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbols zum Hinzufügen des **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     NewForm( Form1 )
     ```
 
@@ -444,8 +445,8 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbols zum Hinzufügen des **"DisplayMode"** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -458,7 +459,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Symbols zum Hinzufügen des **DisabledColor** -Eigenschaft auf diesen Wert:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -492,8 +493,8 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Papierkorbsymbol **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Remove( Orders, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Orders; Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -503,8 +504,8 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Papierkorbsymbol **"DisplayMode"** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -514,7 +515,7 @@ Die **Bestellungen** Entität verfügt über eine n: 1 Beziehung mit der **Mitar
 
 1. Legen Sie des Papierkorbsymbol **DisabledColor** -Eigenschaft auf diesen Wert:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -537,7 +538,7 @@ Zusammenfassend lässt sich sagen, haben Sie ein Formular, in dem der Benutzer k
 - Ein Symbol, einen Auftrag zu speichern: `SubmitForm( Form1 )`
 - Ein Symbol zum Abbrechen von Änderungen an einer Bestellung: `ResetForm( Form1 )`
 - Ein Symbol, um einen Auftrag zu erstellen: `NewForm( Form1 )`
-- Ein Symbol, um einen Auftrag zu löschen: `Remove( Orders, Gallery1.Selected )`
+- Ein Symbol, um einen Auftrag zu löschen: `Remove( Orders; Gallery1.Selected )`
 
 ## <a name="next-step"></a>Nächster Schritt
 

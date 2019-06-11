@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66736397"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="json-function-in-powerapps"></a>JSON-Funktion in PowerApps
 
@@ -34,16 +35,16 @@ Canvas-apps unterstützen die [Datentypen](data-types.md) , die diese Tabelle en
 |-----------|-------------|---------|
 | **Boolean** | *"true"* oder *"false"* . | `true` |
 | **Farbe** | Eine Zeichenfolge, die die 8-stellige hexadezimale Darstellung für die Farbe enthält. Diese Darstellung hat das Format #*Rrggbbaa*, wobei *rr* ist die Rotkomponente, *Gg* ist Grün, *bb* ist Blau und *aa* ist der alpha-Kanal. Für den Alphakanal **00** ist vollständig transparent, und **ff** vollständig deckend ist. Sie können die Zeichenfolge, die übergeben die [ **ColorValue** ](function-colors.md) Funktion.  | `"#102030ff"` |
-| **Währung** | Zahl, die die entsprechenden Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Wissenschaftliche Schreibweise wird verwendet, wenn erforderlich. | `1.345` |
+| **Währung** | Zahl, die die entsprechenden Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Wissenschaftliche Schreibweise wird verwendet, wenn erforderlich. | `1,345` |
 | **Datum** | Zeichenfolge, das Datum im ISO 8601 enthält **jjjj-mm-tt** Format. | `"2019-03-31"` |
 | **DateTime** | Zeichenfolge, die von einem ISO 8601-Datum/Uhrzeit enthält. Datum/Uhrzeit-Werte sind in UTC, als der Ende "Z" steht.  | `"2019-03-31T22:32:06.822Z"`  |
 | **GUID** | Eine Zeichenfolge, die den GUID-Wert enthält. Buchstaben sind Kleinbuchstaben. | `"751b58ac-380e-4a04-a925-9f375995cc40"`
 | **Abbildung Medien** | Wenn **IncludeBinaryData** angegeben ist, wird von Mediendateien in einer Zeichenfolge codiert werden. Web-Verweise, die die Verwendung des http: oder Https: URL-Schema werden nicht geändert werden. Verweise auf binäre Daten im Arbeitsspeicher mit codiert sind die ["Daten:*Mimetype*; base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) Format. In-Memory-Daten enthält Images, die Benutzer mithilfe der Erfassen der [ **Kamera** ](../controls/control-camera.md) -Steuerelement und alle anderen Verweise mit der Appres: und -Blob: URL-Schemas.| `"data:image/jpeg;base64,/9j/4AA..."` |
-| **Anzahl** | Zahl, die die entsprechenden Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Wissenschaftliche Schreibweise wird verwendet, wenn erforderlich. | `1.345` |
+| **Anzahl** | Zahl, die die entsprechenden Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Wissenschaftliche Schreibweise wird verwendet, wenn erforderlich. | `1,345` |
 | **Option&nbsp;set** | Numerischer Wert der Option festgelegt, nicht die Bezeichnung, die für die Anzeige verwendet wird. Der numerische Wert wird verwendet, da es sich um sprachunabhängig ist.  | `1001` |
 | **Zeit** | Zeichenfolge mit einer ISO-8601 *ss.fff* Format.  | `"23:12:49.000"` |
-| **Record** | Durch Trennzeichen getrennte Liste, zwischen **{** und **}** , Felder und ihre Werte. Diese Notation ähnelt, die für Datensätze in der Canvas-apps, aber der Name ist immer in doppelte Anführungszeichen ein. Dieses Format unterstützt keine Datensätze, die für die n: 1 Beziehungen basieren.  | `{ "First Name": "Fred", "Age": 21 }` |
-| **Tabelle** | Durch Trennzeichen getrennte Liste, zwischen **[** und **]** , der Datensätze. Dieses Format unterstützt keine Tabellen, die für die 1: n Beziehungen basieren.  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
+| **Record** | Durch Trennzeichen getrennte Liste, zwischen **{** und **}** , Felder und ihre Werte. Diese Notation ähnelt, die für Datensätze in der Canvas-apps, aber der Name ist immer in doppelte Anführungszeichen ein. Dieses Format unterstützt keine Datensätze, die für die n: 1 Beziehungen basieren.  | `{ "First Name": "Fred"; "Age": 21 }` |
+| **Tabelle** | Durch Trennzeichen getrennte Liste, zwischen **[** und **]** , der Datensätze. Dieses Format unterstützt keine Tabellen, die für die 1: n Beziehungen basieren.  | `[ { "First Name": "Fred"; "Age": 21 }; { "First Name": "Jean"; "Age": 20 } ]` |
 | **Two&nbsp;option** | Boolescher Wert, der zwei-Option *"true"* oder *"false"* , nicht die Bezeichnung, die für die Anzeige verwendet wird. Der boolesche Wert wird verwendet, da es sich um sprachunabhängig ist. | `false` |
 | **Hyperlink, Text** | Eine Zeichenfolge in doppelte Anführungszeichen ein. Die Funktion eingebettete doppelte Anführungszeichen mit einem umgekehrten Schrägstrich mit Escapezeichen zu versehen, ersetzt der neue Zeilen mit "\n" und andere standard-JavaScript-Ersetzungen macht. | `"This is a string."` |
 
@@ -65,7 +66,7 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
 
 ## <a name="syntax"></a>Syntax
 
-**JSON**( *DataStructure* [, *Format* ])
+**JSON**( *DataStructure* [; *Format* ])
 
 * *DataStructure* : erforderlich. Die Datenstruktur in JSON konvertieren.  Tabellen, Datensätze und primitive Werte werden unterstützt und beliebig geschachtelt an.
 * *Format* : Optional.  **JSONFormat** Enum-Wert. Der Standardwert ist **Compact**, die keine Zeilenumbrüche oder Leerzeichen hinzufügen und blockiert die Binärdaten und nicht unterstützte Spalten.
@@ -76,16 +77,16 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
 
 1. Fügen Sie eine [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel.
 
-    ```powerapps-dot
-    ClearCollect( CityPopulations,
-        { City: "London",    Country: "United Kingdom", Population: 8615000 },
-        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
-        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
-        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
-        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
-        { City: "Munich",    Country: "Germany",        Population: 1494000 }
-    );
-    ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )
+    ```powerapps-comma
+    ClearCollect( CityPopulations;
+        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
+        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
+        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
+        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
+        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
+        { City: "Munich";    Country: "Germany";        Population: 1494000 }
+    );;
+    ClearCollect( CitiesByCountry; GroupBy( CityPopulations; "Country"; "Cities" ) )
     ```
 
 1. Wählen Sie die Schaltfläche, während Sie die Alt-Taste gedrückt halten.
@@ -102,8 +103,8 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
 
 1. Einfügen einer weiteren Schaltfläche, und legen Sie dessen **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Set( CitiesByCountryJSON, JSON( CitiesByCountry ) )
+    ```powerapps-comma
+    Set( CitiesByCountryJSON; JSON( CitiesByCountry ) )
     ```
 
     Diese Formel wird die globale Variable **CitiesByCountryJSON** die JSON-Darstellung für **CitiesByCountry**.
@@ -112,7 +113,7 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
 
 1. Fügen Sie eine [ **Bezeichnung** ](../controls/control-text-box.md) steuern, und legen dessen **Text** Eigenschaft, um diese Variable.
 
-    ```powerapps-dot
+    ```powerapps-comma
     CitiesByCountryJSON
     ```
 
@@ -124,8 +125,8 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
 
 1. Ändern Sie die zweite Schaltfläche Formel ein, um die Ausgabe besser lesbar zu machen.
 
-    ```powerapps-dot
-    Set( CitiesByCountryJSON, JSON(CitiesByCountry, JSONFormat.IndentFour ))
+    ```powerapps-comma
+    Set( CitiesByCountryJSON; JSON(CitiesByCountry; JSONFormat.IndentFour ))
     ```
 
 1. Wählen Sie die zweite Schaltfläche, während Sie die Alt-Taste gedrückt halten.
@@ -184,15 +185,15 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
 
 1. Hinzufügen einer [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel.
 
-    ```powerapps-dot
-    Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )
+    ```powerapps-comma
+    Set( ImageJSON; JSON( SampleImage; JSONFormat.IncludeBinaryData ) )
     ```
 
 1. Wählen Sie die Schaltfläche, während Sie die Alt-Taste gedrückt halten.
 
 1. Fügen Sie eine Bezeichnung hinzu, und legen dessen **Text** Eigenschaft, um diese Variable.
 
-    ```powerapps-dot
+    ```powerapps-comma
     ImageJSON
     ```
 

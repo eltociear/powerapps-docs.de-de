@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66736230"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="data-types-in-canvas-apps"></a>Datentypen in Canvas-apps
 
@@ -29,7 +30,7 @@ Dieser Artikel enthält Details für die Datentypen, die canvas-Unterstützung f
 | Datentyp | Beschreibung | Beispiele |
 |-----------|-------------|---------|
 | **Boolean** | Ein *"true"* oder *"false"* Wert.  Kann verwendet werden, direkt in **Wenn**, **Filter** und andere Funktionen ohne einen Vergleich.  | *TRUE* |
-| **Farbe** | Eine Farbe-Spezifikation, einschließlich der alpha-Kanal. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255, 128, 0, 0.5 )** |
+| **Farbe** | Eine Farbe-Spezifikation, einschließlich der alpha-Kanal. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255; 128; 0; 0,5 )** |
 | **Währung** | Ein Währungswert, der in einer Gleitkommazahl gespeichert sind. Currency-Werte sind identisch mit der Number-Werte mit Currency-Formatierungsoptionen.  | **123**<br>**4.56** |
 | **Datum** | Ein Datum ohne Zeit, in der Zeitzone des Benutzers von der app. | **Datum (2019, 5, 16)** |
 | **DateTime** | Ein Datum mit Zeit, in der Zeitzone des Benutzers von der app. | **DateTimeValue( "May 16, 2019 1:23:09 PM" )** |
@@ -39,9 +40,9 @@ Dieser Artikel enthält Details für die Datentypen, die canvas-Unterstützung f
 | **Medien** | Eine URI-Text-Zeichenfolge, ein video oder audio-Aufzeichnung. | **MyVideo** als app-Ressource hinzugefügt<br>**„https://northwindtraders.com/intro.mp4“**<br>**"appres://blobmanager/3ba411c..."** |
 | **Anzahl** | Eine Gleitkommazahl. | **123**<br>**-4.567**<br>**8.903e121** |
 | **Optionssatz** | Eine Auswahl aus einer Reihe von Optionen, die durch eine Reihe gesichert. Dieser Datentyp kombiniert eine Bezeichnung lokalisierbaren Text mit einem numerischen Wert an. Die Bezeichnung wird in der app angezeigt, und der numerische Wert gespeichert und für Vergleiche verwendet. | **ThisItem.OrderStatus** |
-| **Record** | Ein Datensatz von Datenwerten. Dieser zusammengesetzten Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **{Unternehmen: "Nordwind"<br>Mitarbeiter: 35, <br>gemeinnützige Organisationen: false}** |
+| **Record** | Ein Datensatz von Datenwerten. Dieser zusammengesetzten Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **{Unternehmen: "Nordwind"<br>Mitarbeiter: 35; <br>gemeinnützige Organisationen: false}** |
 | **Datensatz-Referenz** | Ein Verweis auf einen Datensatz in einer Entität. Solche Verweise werden häufig mit polymorphen Suchvorgänge verwendet. Weitere Informationen finden Sie unter: [Arbeiten mit Verweise](../working-with-references.md).| **First(Accounts).Owner** |
-| **Tabelle** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für die Felder mit den gleichen Datentypen und Weggelassene Felder werden als behandelt *leere*. Dieser zusammengesetzten Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **Tabelle ({FirstName: "Sidney",<br>"LastName": "Higa"}, <br>{FirstName: "Nancy"<br>"LastName": "Anderson" } )**
+| **Tabelle** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für die Felder mit den gleichen Datentypen und Weggelassene Felder werden als behandelt *leere*. Dieser zusammengesetzten Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **Tabelle ({FirstName: "Sidney";<br>"LastName": "Higa"}; <br>{FirstName: "Nancy"<br>"LastName": "Anderson" } )**
 | **Text** | Eine Unicode-Text-Zeichenfolge. | **"Hello, World"** |
 | **Zeit** | Eine Uhrzeit ohne ein Datum in der Zeitzone des Benutzers von der app. | **Zeit ("11", "23", "45")** |
 | **Zwei-option** | Eine Auswahl aus einem Satz von zwei Optionen, die durch einen booleschen Wert gesichert werden soll. Dieser Datentyp kombiniert eine Bezeichnung lokalisierbaren Text mit einem booleschen Wert. Die Bezeichnung wird in der app angezeigt, und der boolesche Wert gespeichert und für Vergleiche verwendet. | **ThisItem.Taxable** |
@@ -52,7 +53,7 @@ Viele dieser Datentypen sind vergleichbar und besitzen die gleiche zugrunde lieg
 
 Alle Datentypen haben einen Wert von *leere* (das heißt, kein Wert). Der Begriff "Null" wird häufig in Datenbanken für dieses Konzept verwendet.  
 
-Verwenden der **leere** -Funktion mit der **festgelegt** oder **Patch** Funktion, um eine Variable festlegen oder das Feld *leere*. Z. B. **Set (X, Blank())** Werte in der globalen Variablen entfernt **x**.  
+Verwenden der **leere** -Funktion mit der **festgelegt** oder **Patch** Funktion, um eine Variable festlegen oder das Feld *leere*. Z. B. **Set (X; Blank())** Werte in der globalen Variablen entfernt **x**.  
 
 Test für eine *leere* Wert mithilfe der [ **"isblank"** ](function-isblank-isempty.md) Funktion. Ersetzen Sie dies möglich *leer* Werte mit nicht -*leer* Werte mithilfe der [ **Coalesce** ](function-isblank-isempty.md) Funktion.
 
@@ -82,7 +83,7 @@ Canvas-apps verweisen auf die jedes Image oder eine andere Mediadatei, in der Cl
 
 Z. B. die **Image** Eigenschaft eines Bildsteuerelements akzeptiert nicht nur app-Ressourcen, sondern auch Links zu Bildern im Web, wie z. B. "https://northwindtraders.com/logo.jpg". Die Eigenschaft akzeptiert auch Inlinebilder, mit denen die [Daten-URI-Schema](https://en.wikipedia.org/wiki/Data_URI_scheme), wie in diesem Beispiel:
 
-```powerapps-dot
+```powerapps-comma
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -163,7 +164,7 @@ Um eine Unix-Zeit zu konvertieren, unterteilen Sie das Ergebnis von **Wert** mit
 <br>**"RoundDown" (Wert ("unixtime") / 1000, 0)**
 
 Bei Bedarf die Unix-Zeit in einer **Datum** Wert für weitere Berechnungen oder in PowerApps anzuzeigen, verwenden Sie diese Formel:
-<br>**DateAdd( Date( 1970,1,1 ), UnixTime, Seconds )**
+<br>**DateAdd( Date( 1970;1;1 ); UnixTime; Seconds )**
 
 ### <a name="sql-server"></a>SQL Server
 
@@ -173,11 +174,11 @@ Canvas-apps verwenden Sie die enthaltene Zeitzonen-Informationen in **Datetimeof
 
 Canvas-apps lesen und Schreiben von Werten der der [ **Zeit** ](https://docs.microsoft.com/en-us/sql/t-sql/data-types/time-transact-sql) -Datentyp in der SQL Server als Textzeichenfolgen in die [Zeitformat ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Beispielsweise müssen Sie dieses Zeichenfolgenformat zu analysieren und verwenden Sie die [ **Zeit** ](function-date-time.md) Funktion, die Textzeichenfolge zu konvertieren **"PT2H1M39S"** auf eine **Zeit** Wert:
 
-```powerapps-dot
+```powerapps-comma
 First(
     ForAll(
-        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-        Time( Value( hours ), Value( minutes ), Value( seconds ) )
+        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
+        Time( Value( hours ); Value( minutes ); Value( seconds ) )
     )
 ).Value
 ```
@@ -200,18 +201,18 @@ Wenn app-Benutzer eine Option auswählt, und die Änderung speichert, überträg
 
 Die Bezeichnungen werden nur zu Anzeigezwecken. Direkte Vergleiche mit den Bezeichnungen können nicht ausgeführt werden, da sie für eine Sprache spezifisch sind. Stattdessen enthält jede Optionssatz eine Enumeration, die mit der zugrunde liegende Anzahl oder ein boolescher Wert. Beispielsweise können Sie keine diese Formel:
 
-`If( ThisItem.OrderStatus = "Active", ...`
+`If( ThisItem.OrderStatus = "Active"; ...`
 
 Sie können jedoch diese Formel:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
 
 Für globale Optionssätze (freigeben, welche Entitäten), den Namen der Optionssatz Enumeration entspricht der Name des Satzes globale Option. Für lokale Optionssätze (die eine Entität zugeordnet sind), der Name kann den Namen der Entität enthalten. Dadurch werden Konflikte vermieden, wenn mehrere Entitäten Optionssätze verfügen, die den gleichen Namen haben. Z. B. die **Konten** Entität eine **"orderstatus"** -Option festgelegt werden soll, und der Name möglicherweise **"orderstatus" (Konten)** . Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, damit Sie ihn in einfache Anführungszeichen umgeben müssen, wenn Sie in einer Formel darauf verweisen.
 
 Darüber hinaus können Werte von zwei-Option auch als boolesche Werte sich Verhalten. Z. B. einen zwei-Option-Wert, der mit dem Namen **TaxStatus** möglicherweise die Bezeichnungen **steuerbaren** und **Non-steuerbare**, entsprechen die *"true"* und *"false"* bzw. Um zu veranschaulichen, können Sie diese Formel:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
 
 Sie können auch die folgenden gleichwertigen Formel verwenden:
 
-`If( ThisItem.Taxable, ...`
+`If( ThisItem.Taxable; ...`

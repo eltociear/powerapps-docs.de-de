@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66761003"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Erstellen Sie einen Order-Katalog in einer Canvas-app
 
@@ -105,8 +106,8 @@ Führen Sie schrittweise Anweisungen zum Erstellen eines Katalogs Reihenfolge in
 
 1. Legen Sie in der Bearbeitungsleiste den Text des Katalogs **Elemente** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Sort( Orders, 'Order Number', Descending )
+    ```powerapps-comma
+    Sort( Orders; 'Order Number'; Descending )
     ```
 
     Die [ **Sortierreihenfolge** ](functions/function-sort.md) -Funktion sortiert die Liste, damit die neueste Reihenfolge (mit der höchsten Anzahl von Reihenfolge) ersten angezeigt wird.
@@ -132,7 +133,7 @@ Führen Sie schrittweise Anweisungen zum Erstellen eines Katalogs Reihenfolge in
 
 1. Legen Sie in der Bearbeitungsleiste den Text der Bezeichnung **Text** Eigenschaft auf den folgenden Ausdruck:
 
-    ```powerapps-dot
+    ```powerapps-comma
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -148,7 +149,7 @@ Führen Sie schrittweise Anweisungen zum Erstellen eines Katalogs Reihenfolge in
 
 1. Legen Sie in der Bearbeitungsleiste den Text der Bezeichnung **Text** Eigenschaft auf den folgenden Ausdruck:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Customer.Company
     ```
 
@@ -192,7 +193,7 @@ In diesem Verfahren Sie Speicherplatz im Katalog für eine Bezeichnung hinzufüg
 
 1. Legen Sie die **Text** Eigenschaft, der die neue Bezeichnung auf den folgenden Ausdruck:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.'Order Status'
     ```
 
@@ -215,12 +216,12 @@ In diesem Verfahren Sie Speicherplatz im Katalog für eine Bezeichnung hinzufüg
 
 1. Legen Sie in der Bearbeitungsleiste die **Farbe** -Eigenschaft der statusbezeichnung auf diese Formel:
 
-    ```powerapps-dot
-    Switch( ThisItem.'Order Status',
-        'Orders Status'.Closed, Green,
-        'Orders Status'.New, Black,
-        'Orders Status'.Invoiced, Blue,
-        'Orders Status'.Shipped, Purple
+    ```powerapps-comma
+    Switch( ThisItem.'Order Status';
+        'Orders Status'.Closed; Green;
+        'Orders Status'.New; Black;
+        'Orders Status'.Invoiced; Blue;
+        'Orders Status'.Shipped; Purple
     )
     ```
 
@@ -250,8 +251,8 @@ In diesem Verfahren Sie Speicherplatz im Katalog für eine Bezeichnung hinzufüg
 
 1. Legen Sie in der Bearbeitungsleiste, der neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -282,8 +283,8 @@ Zusammenfassend lässt sich sagen, Sie erstellen eine einzelnen Bildschirm Canva
 - Ein Ausdruck, der die Reihenfolgennummer angezeigt werden soll: `"Orders " & ThisItem.OrderNumber`
 - Ein Feld in einer n: 1 Beziehung: `ThisItem.Customer.Company`
 - Eine Bezeichnung, die mit dem Namen einer Option in einer Gruppe angezeigt: `ThisItem.'Order Status'`
-- Eine Bezeichnung, die sich, das Ändern auf die Bezeichnung, welche Option in einem Satz zeigt basiert: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
-- Eine komplexe aggregate-Funktion über eine 1: n Beziehung: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
+- Eine Bezeichnung, die sich, das Ändern auf die Bezeichnung, welche Option in einem Satz zeigt basiert: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
+- Eine komplexe aggregate-Funktion über eine 1: n Beziehung: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Nächstes Thema
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66760957"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Erstellen Sie einen Details-Katalog in einer Canvas-app
 
@@ -71,7 +72,7 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie die **Elemente** -Eigenschaft des Katalogs auf diese Formel Detail:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.'Order Details'
     ```
 
@@ -103,7 +104,7 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.'Product Name'
     ```
 
@@ -141,7 +142,7 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Das Bild des **Image** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.Picture
     ```
 
@@ -161,7 +162,7 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie die neuen Bezeichnung **Text** Eigenschaft auf den folgenden Ausdruck:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Quantity
     ```
 
@@ -179,8 +180,8 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Wenn Sie nicht den Sprach-Tag enthalten ( **[$-En-US]** ), wird er hinzugefügt werden, basierend auf Ihre Sprache und Region. Wenn Sie eine andere Sprachtag verwenden, sollten Sie zum Entfernen der **$** direkt nach dem Schließen eckige Klammer ( **]** ), und fügen Sie dann Ihre eigenen Währungssymbol an dieser Position.
@@ -197,8 +198,8 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     In diesem Fall, wenn Sie nicht den Sprach-Tag enthalten ( **[$-En-US]** ), wird er hinzugefügt werden, basierend auf Ihre Sprache und Region. Wenn das Tag anders ist, sollten Sie mit Ihren eigenen Währungssymbol statt der **$** direkt nach dem Schließen eckige Klammer ( **]** ).
@@ -273,8 +274,8 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Sum( Gallery1.Selected.'Order Details', Quantity )
+    ```powerapps-comma
+    Sum( Gallery1.Selected.'Order Details'; Quantity )
     ```
 
     Diese Formel wird eine delegierungswarnung, jedoch können Sie diese ignorieren, da keine einzelnen Auftrag mehr als 500 Produkten enthält.
@@ -288,8 +289,8 @@ Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter o
 
 1. Legen Sie der Kopiervorgangs des **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     Diese Formel wird eine delegierungswarnung, jedoch können Sie diese ignorieren, da keine einzelnen Auftrag mehr als 500 Produkten enthält.
@@ -357,7 +358,7 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 
 1. Festlegen des Kombinationsfelds **Elemente** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Choices( 'Order Details'.Product )
     ```
 
@@ -418,7 +419,7 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 
 1. Legen Sie die **Image** -Eigenschaft des Bildes an:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ComboBox1.Selected.Picture
     ```
 
@@ -449,7 +450,7 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 1. Legen Sie die **Standard** Eigenschaft dieses Steuerelements auf **""** :
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie die ** Standard **-Eigenschaft das Texteingabe-Feld](media/northwind-orders-canvas-part3/add-details-21.png)
+    > ![Legen Sie die ** Standard **-Eigenschaft das Texteingabe-Feld](media/northwind-orders-canvas-part3/add-details-21,png)
 
 1. Auf der **Startseite** Registerkarte, legen Sie die Ausrichtung des Texts dieses Steuerelements auf **rechts**:
 
@@ -467,8 +468,8 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 
 1. Ändern der Größe und verschieben Sie die Bezeichnung rechts neben dem Texteingabe Steuerelement und legen Sie die Bezeichnung des **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -488,8 +489,8 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 
 1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -518,18 +519,18 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 
 1. Ändern der Größe und verschieben Sie dieses Symbol an den rechten Rand des Bereichs hellblaue und legen Sie dann auf des Symbol " **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Patch( 'Order Details',
-        Defaults('Order Details'),
+    ```powerapps-comma
+    Patch( 'Order Details';
+        Defaults('Order Details');
         {
-            Order: Gallery1.Selected,
-            Product: ComboBox1.Selected,
-            Quantity: Value(TextInput1.Text),
+            Order: Gallery1.Selected;
+            Product: ComboBox1.Selected;
+            Quantity: Value(TextInput1.Text);
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );
-    Refresh( Orders );
-    Reset( ComboBox1 );
+    );;
+    Refresh( Orders );;
+    Reset( ComboBox1 );;
     Reset( TextInput1 )
     ```
 
@@ -582,8 +583,8 @@ In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzu
 
 1. Ändern der Größe und verschieben Sie das Papierkorbsymbol auf die rechte Seite der Vorlage für die Details des Katalogs auf das Symbol des **OnSelect** -Eigenschaft auf diese Formel:
 
-    ```powerapps-dot
-    Remove( 'Order Details', ThisItem ); Refresh( Orders )
+    ```powerapps-comma
+    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -608,7 +609,7 @@ Zusammenfassend lässt sich sagen, haben Sie einen anderen Katalog zum Anzeigen 
 - Eine n: 1 Beziehung aus der **Bestelldetails** Entität, die die **Bestellprodukte** Entität: `ThisItem.Product.'Product Name'` und `ThisItem.Product.Picture`
 - Die **Auswahlmöglichkeiten** Funktion, um eine Liste der Produkte abzurufen: `Choices( 'Order Details'.Product' )`
 - Die **ausgewählte** Eigenschaft eines Kombinationsfelds als die vollständige viele-zu-eins Datensatz verknüpfte: `ComboBox1.Selected.Picture` und `ComboBox1.Selected.'List Price'`
-- Die **Patch** Funktion zum Erstellen einer **Bestelldetails** Datensatz: `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
-- Die **entfernen** Funktion zum Löschen einer **Bestelldetails** Datensatz: `Remove( 'Order Details', ThisItem )`
+- Die **Patch** Funktion zum Erstellen einer **Bestelldetails** Datensatz: `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
+- Die **entfernen** Funktion zum Löschen einer **Bestelldetails** Datensatz: `Remove( 'Order Details'; ThisItem )`
 
 Diese Reihe von Themen wurde eine kurze exemplarische Vorgehensweise zur Verwendung von Common Data Service-Beziehungen und Option wird in einer Canvas-app zu Lernzwecken. Bevor Sie jede app in der produktionsumgebung veröffentlichen, sollten Sie feldvalidierung, Fehlerbehandlung und viele andere Faktoren.
