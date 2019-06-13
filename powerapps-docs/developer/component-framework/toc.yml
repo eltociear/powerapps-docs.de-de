@@ -4,13 +4,27 @@
       href: overview.md
     - name: Was sind benutzerdefinierte Komponenten?
       href: custom-controls-overview.md
-    - name: 'Erstellen, Debuggen und Bereitstellen benutzerdefinierter Komponenten mithilfe der Microsoft PowerApps-CLI'
-      href: create-custom-controls-using-pcf.md
-    - name: Implementieren benutzerdefinierter Komponenten in TypeScript
-      href: implementing-controls-using-typescript.md
-    - name: Aktualisieren vorhandener Bestandteile von PowerApps-Komponentenframeworks in das neue Format für Tools
-      href: updating-existing-controls.md
-    - name: Einschränkungen für PowerApps-Komponentenframeworks
+    - name: Tools
+      href: get-powerapps-cli.md
+    - name: Lernprogramm
+      items:
+        - name: Implementieren von Beispielkomponenten
+          href: implementing-controls-using-typescript.md
+    - name: Vorgehensweise
+      items:
+        - name: Erstellen und Bereitstellen einer benutzerdefinierten Komponente
+          href: create-custom-controls-using-pcf.md
+        - name: Debuggen einer benutzerdefinierten Komponente
+          href: debugging-custom-controls.md
+        - name: Packen einer benutzerdefinierten Komponente
+          href: import-custom-controls.md
+        - name: Hinzufügen von Komponenten zu Entitäten oder Feldern
+          href: add-custom-controls-to-a-field-or-entity.md
+        - name: Aktualisieren vorhandener benutzerdefinierter Komponenten
+          href: updating-existing-controls.md
+        - name: Veröffentlichen benutzerdefinierter Komponenten auf AppSource
+          href: publish-components-app-source.md
+    - name: Beschränkungen
       href: limitations.md
     - name: Häufig gestellte Fragen (FAQ)
       href: faq.md
