@@ -70,16 +70,16 @@
   items:
     - name: Erstellen von Abfragen mit LINQ (Language Integrated Query für .NET)
       href: build-queries-with-linq-net-language-integrated-query.md
-    - name: Beispiele für LINQ-Abfragen
-      href: linq-query-examples.md
+    - name: Verwenden von LINQ zum Erstellen einer Abfrage
+      href: use-linq-construct-query.md
+    - name: Verwenden von Entitätsklassen mit später Bindung mit einer LINQ-Abfrage
+      href: use-late-bound-entity-class-linq-query.md
     - name: Sortieren von Ergebnissen mit Entitätsattributen mit LINQ
       href: order-results-entity-attributes-linq.md
     - name: Auslagern umfangreicher Resultsets mit LINQ
       href: page-large-result-sets-linq.md
-    - name: Verwenden von Entitätsklassen mit später Bindung mit einer LINQ-Abfrage
-      href: use-late-bound-entity-class-linq-query.md
-    - name: Verwenden von LINQ zum Erstellen einer Abfrage
-      href: use-linq-construct-query.md
+    - name: Beispiele für LINQ-Abfragen
+      href: linq-query-examples.md
 - name: Erkennen von duplizierten Daten
   href: detect-duplicate-data.md
 - name: Generieren von Klassen für die Programmierung mit früher Bindung
