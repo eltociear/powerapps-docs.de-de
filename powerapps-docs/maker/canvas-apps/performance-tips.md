@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 08/31/2018
+ms.date: 06/17/2019
 ms.author: yingchin
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c0926c2c38adac6b3377de9a87eef4dd7d7a7cf7
+ms.sourcegitcommit: 9c4d95eeace85a3e91a00ef14fefe7cce0af69ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536362"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349803"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Optimieren der Leistung von Canvas-Apps in PowerApps
 Microsoft arbeitet beständig daran, die Leistung aller Apps zu verbessern, die auf der PowerApps-Plattform ausgeführt werden. Sie können aber die Best Practices in diesem Thema befolgen, um die Leistung der von Ihnen erstellten Apps noch weiter zu steigern.
@@ -79,10 +79,11 @@ Verwenden Sie die **Set**-Funktion, um Daten aus Nachschlagetabellen lokal zwisc
 Kontaktinformationen ändern sich nicht häufig, und das Gleiche gilt für Standardwerte und Benutzerinformationen. Sie können diese Technik also im Allgemeinen auch mit den Funktionen **Defaults** und **User** verwenden. 
 
 ## <a name="avoid-controls-dependency-between-screens"></a>Vermeiden der Abhängigkeit von Steuerelementen zwischen Bildschirmen
-Wenn der Wert eines Steuerelements vom Wert eines Steuerelements in einem anderen Bildschirm abhängig ist, verwalten Sie die Daten mithilfe einer Variablen, einer Sammlung oder einem Datenquellenverweis.
+Zur Verbesserung der Leistung werden Bildschirme in einer app in den Arbeitsspeicher geladen, nur, wenn sie benötigt werden. Diese Optimierung kann beeinträchtigt werden, wenn Sie z. B. Bildschirm 1 geladen wird und eine der Formeln eine Eigenschaft eines Steuerelements vom Bildschirm 2 verwendet. Jetzt muss (Bildschirm 2) geladen werden, um die Abhängigkeit zu erfüllen, bevor der Bildschirm 1 angezeigt werden kann. Angenommen Sie, Bildschirm 2 eine Abhängigkeit auf dem Bildschirm 3 verfügt, die hat eine andere Abhängigkeit (Bildschirm 4) und So weiter. Diese Abhängigkeitskette kann dazu führen, dass viele Bildschirme geladen werden.
 
-## <a name="use-global-variables"></a>Verwenden von globalen Variablen
-Um den Zustand einer App zwischen Bildschirmen zu übergeben, erstellen oder ändern Sie den Wert einer globalen Variablen, indem Sie die [**Set**](functions/function-set.md)-Funktion anstelle der Funktionen **Navigate** und **UpdateContext** verwenden.
+Vermeiden Sie aus diesem Grund Formel Abhängigkeiten zwischen den Bildschirmen. In einigen Fällen können Sie eine globale Variable oder Sammlung verwenden, um Informationen zwischen Bildschirmen freigeben.
+
+Es ist eine Ausnahme aus. Stellen Sie im vorherigen Beispiel sich vor, dass die einzige Möglichkeit, Bildschirm 1 angezeigt wird, durch die Navigation von Bildschirm 2. Klicken Sie dann wird (Bildschirm 2) bereits im Arbeitsspeicher geladen wurden Bildschirm 1 wurde geladen werden. Keine zusätzliche Arbeit erforderlich ist, um die Abhängigkeit für den Bildschirm 2 zu erfüllen, und daher besteht keine Auswirkungen auf die Leistung.
 
 ## <a name="use-delegation"></a>Verwenden der Delegierung
 Verwenden Sie nach Möglichkeit Funktionen, die die Datenverarbeitung an die Datenquelle delegieren, anstatt Daten zur Verarbeitung auf das lokale Gerät abzurufen. Wenn eine App Daten lokal verarbeiten muss, benötigt dieser Vorgang wesentlich mehr Verarbeitungsleistung, Arbeitsspeicher und Netzwerkbandbreite – insbesondere bei großen Datasets.
