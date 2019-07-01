@@ -328,6 +328,20 @@
           href: use-source-control-solution-files.md
     - name: Package Deployer-Tool
       href: package-deployer/create-packages-package-deployer.md
+    - name: Überprüfen der Qualität von Lösungen und Paketen
+      items:
+        - name: Verwenden der PowerApps-Überprüfungs-Web-API
+          href: checker/webapi/overview.md
+        - name: Aufrufen der Analyse
+          href: checker/webapi/analyze.md
+        - name: Überprüfen des Analysestatus
+          href: checker/webapi/check-status.md
+        - name: Abrufen der Regelliste
+          href: checker/webapi/retrieve-rules.md
+        - name: Abrufen der Regelsatzliste
+          href: checker/webapi/retrieve-rulesets.md
+        - name: Hochladen einer Datei für die Analyse
+          href: checker/webapi/upload-file.md
     - name: Veröffentlichen einer App in AppSource
       href: publish-app-appsource.md
       items:

@@ -52,6 +52,8 @@
           href: sample-controls/map-control.md
         - name: Komponente für die Navigations-API
           href: sample-controls/navigation-api-control.md
+        - name: Komponente für React-Facepile
+          href: sample-controls/react-facepile-control.md
         - name: Komponente für Tabellen
           href: sample-controls/table-control.md
         - name: Komponente für Tabellenraster

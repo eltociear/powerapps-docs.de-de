@@ -81,6 +81,8 @@
               href: ../user/work-with-business-processes.md
             - name: Verwenden von Flows
               href: ../user/use-flows.md
+    - name: Verwenden der Dynamics 365-App für Outlook
+      href: ../user/use-outlook-app.md
 - name: Apps erstellen
   items:
     - name: Übersicht
@@ -981,6 +983,8 @@
           href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: Barrierefreiheit im PowerApps-App-Designer
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
+    - name: Anpassen der Dynamics 365-App für Outlook
+      href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Für Entwickler
       href: ../developer/model-driven-apps/overview.md
 - name: Common Data Service
@@ -1156,6 +1160,8 @@
       href: ./common-data-service/export-customized-entity-field-text-translation.md
     - name: Importieren von übersetztem Entitäts- und Feldtext in eine App
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: Sicherheit im Common Data Service
+      href: /power-platform/admin/wp-security
     - name: Für Entwickler
       href: ../developer/common-data-service/overview.md
 - name: AI Builder
