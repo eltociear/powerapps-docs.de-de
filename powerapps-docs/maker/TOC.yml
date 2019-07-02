@@ -75,6 +75,18 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Exportieren in eine Excel-PivotTable
               href: ../user/export-excel-pivottable.md
+        - name: Berichte
+          items:
+            - name: Arbeiten mit Berichten
+              href: ../user/work-with-reports.md
+            - name: Erstellen eines Berichts mithilfe des Berichts-Assistenten
+              href: ../user/create-report-with-wizard.md
+            - name: Hinzufügen eines vorhandenen Berichts
+              href: ../user/add-existing-report.md
+            - name: Bearbeiten des Standardfilters eines Berichts
+              href: ../user/edit-report-filter.md
+            - name: Problembehandlung bei Berichten
+              href: ../user/troubleshoot-reports.md
         - name: Automatisieren von Prozessen
           items:
             - name: Arbeiten mit Geschäftsprozessen
@@ -883,19 +895,25 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: Deaktivieren des automatischen Speicherns in einem Formular
                       href: ./model-driven-apps/manage-auto-save.md
-            - name: Einbetten einer Canvas-App in ein Formular
+            - name: Einbetten einer Canvas-App in einem modellgesteuerten Formular
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
-                - name: Übergeben des aktuellen Datensatzes an eine eingebettete Canvas-App
-                  href: ./model-driven-apps/pass-current-embedded-canvas-app.md
-                - name: Übergeben zugehöriger Datensätze an eine eingebettete Canvas-App
-                  href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+                - name: Hinzufügen einer eingebetteten Canvas-App
+                  href: ./model-driven-apps/embedded-canvas-app-add-classic-designer.md
+                - name: Bearbeiten einer eingebetteten Canvas-App
+                  href: ./model-driven-apps/embedded-canvas-app-edit-classic-designer.md
+                - name: Anpassen der Bildschirmgröße und -ausrichtung
+                  href: ./model-driven-apps/embedded-canvas-app-customize-screen.md
                 - name: Durchführen von vordefinierten Aktionen auf dem Hostformular
                   href: ./model-driven-apps/embedded-canvas-app-actions.md
+                - name: Steuerelement „ModelDrivenFormIntegration“
+                  href: ./model-driven-apps/embedded-canvas-app-properties-actions.md
                 - name: Freigeben einer eingebetteten Canvas-App
                   href: ./model-driven-apps/share-embedded-canvas-app.md
                 - name: Richtlinien für eingebettete Canvas-Apps
                   href: ./model-driven-apps/embedded-canvas-app-guidelines.md
+                - name: Migrieren der eingebetteten Canvas aus der öffentlichen Vorschauversion
+                  href: ./model-driven-apps/embedded-canvas-app-migrate-from-preview.md
             - name: Einbetten eines Power BI-Berichts in einem Formular
               href: ./model-driven-apps/embed-powerbi-report-in-system-form.md
             - name: Arbeiten mit Ansichten
@@ -954,6 +972,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: Verwenden von Designs zum Anwenden des Brandings einer Organisation
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: Hinzufügen der Berichterstellung zu Ihrer App
+          href: ./model-driven-apps/add-reporting-to-app.md
     - name: Überprüfen und veröffentlichen einer App
       href: ./model-driven-apps/validate-app.md
     - name: Eine App freigeben
