@@ -1,1 +1,0 @@
-Führen Sie eine bestimmte Aktion, Funktion oder einen CRUD-Vorgang aus.
