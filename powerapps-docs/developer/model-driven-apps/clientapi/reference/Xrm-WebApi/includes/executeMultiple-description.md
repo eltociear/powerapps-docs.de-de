@@ -1,0 +1,1 @@
+Führen Sie eine bSammlung von Aktionen, Funktionen oder einen CRUD-Vorgängen aus.
