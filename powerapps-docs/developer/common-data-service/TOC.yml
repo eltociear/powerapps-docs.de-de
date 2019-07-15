@@ -321,6 +321,14 @@
               href: create-patches-simplify-solution-updates.md
             - name: Bearbeitungsszenarios für die Anpassungsdatei
               href: when-edit-customization-file.md
+    - name: Buildtools für Azure DevOps
+      items:
+        - name: Übersicht
+          href: build-tools-overview.md
+        - name: Aufgaben
+          href: build-tools-tasks.md
+        - name: Tutorial und häufig gestellte Fragen
+          href: build-tools-tutorial-faq.md
     - name: SolutionPackager-Tool
       href: compress-extract-solution-file-solutionpackager.md
       items:
@@ -361,6 +369,16 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: 'Anhang: Checkliste zur App-Zertifizierung'
           href: appendix-app-certification-checklist.md
+    - name: ISV-App-Verwaltung und -Überwachung
+      items:
+        - name: Einführung in ISV Studio
+          href: isv-app-management.md
+        - name: Homepage
+          href: isv-app-management-homepage.md
+        - name: App-Seite
+          href: isv-app-management-apppage.md
+        - name: Mandantenseite
+          href: isv-app-management-tenantpage.md
 - name: Erstellen von Clientanwendungen
   href: connect-cds.md
   items:

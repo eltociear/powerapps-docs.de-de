@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: e22a8e4dd147e1e5dba102de12c5bc28dcde5efc
-ms.sourcegitcommit: dc4100c826085130fb1c5e841b8477be0d5c8ec7
+ms.openlocfilehash: a010515fcb928eb3b971ee6bb5eea918ced1901e
+ms.sourcegitcommit: 2fd158b88f0d88bae5d1c3aca1990bcc7a5b3204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67395427"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "67866447"
 ---
 <div id="main"
    class="v2">
@@ -583,6 +583,8 @@ ms.locfileid: "67395427"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager-Tool</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">PackageDeployer-Tool</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Verwenden der PowerApps-Überprüfung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">PowerApps-Buildtools für Azure DevOps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV-App-Verwaltung und -Überwachung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Veröffentlichen einer App in AppSource</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
                                  </div>
