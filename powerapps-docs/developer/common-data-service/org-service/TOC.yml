@@ -46,8 +46,6 @@
               href: use-left-outer-join-queryexpression-query-records-not-in.md
             - name: Verwenden der QueryByAttribute-Klasse
               href: use-querybyattribute-class.md
-            - name: Auslagern umfangreicher Resultsets mit FetchXML
-              href: page-large-result-sets-with-fetchxml.md
     - name: Erstellen von Entitäten
       href: entity-operations-create.md
     - name: Abrufen einer Entität

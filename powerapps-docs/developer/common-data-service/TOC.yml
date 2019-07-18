@@ -26,6 +26,8 @@
           href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
         - name: 'Verwenden einer linken äußeren Verknüpfung in FetchXML zur Abfrage von Datensätzen, die sich nicht in einem Resultset befinden'
           href: use-fetchxml-left-outer-join-query-records-not-in.md
+        - name: Auslagern umfangreicher Resultsets mit FetchXML
+          href: org-service/page-large-result-sets-with-fetchxml.md
     - name: Gespeicherte Abfragen
       href: saved-queries.md
     - name: Abfragen von hierarchischen Daten
