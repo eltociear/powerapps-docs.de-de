@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: b4832962165c9d275cbee9aa76ad1dc21e3d1d67
-ms.sourcegitcommit: ec05425ad7baf4102da95a071c11b5bb4381ed53
+ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
+ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229652"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313323"
 ---
 <div id="main"
    class="v2">
@@ -150,7 +150,7 @@ ms.locfileid: "68229652"
                   </ul>
                </li>
                <li>
-                  <a href="#user"><strong>Informationen für App-Benutzer</strong></a>
+                  <a href="#user"><strong>Ich bin App-Benutzer</strong></a>
                   <ul id="user"
                      class="cardsF">
                      <li>
@@ -210,12 +210,12 @@ ms.locfileid: "68229652"
                   </ul>
                </li>
                <li>
-                  <a href="#maker"><strong>Informationen für App-Ersteller</strong></a>
+                  <a href="#maker"><strong>Ich bin App-Ersteller</strong></a>
                   <ul id="maker"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in PowerApps zwei Arten von Apps erstellen: <strong>Canvas-Apps</strong> und <strong>modellgesteuerte Apps</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
+                           <p>App-Ersteller können benutzerdefinierte Geschäftsanwendungen zur Verwaltung organisationskritischer Daten erstellen, ohne Code schreiben zu müssen. Sie können in PowerApps drei Arten von Apps erstellen: <strong>Canvas-Apps</strong>, <strong>modellgesteuerte Apps</strong> und <strong>Portale</strong>. <strong>Common Data Service</strong> ist eine Datenplattform, mit der Sie Daten, die von Geschäftsanwendungen verwendet werden, sicher speichern und verwalten können. Weitere Informationen finden Sie unter: <a href="/powerapps/maker">Erstellen von Apps</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -284,6 +284,28 @@ ms.locfileid: "68229652"
                               <div class="card">
                                  <div class="cardImageOuter">
                                     <div class="cardImage">
+                                       <img alt="Customize icon" src="media/index/i_portals.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">Portale</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Was ist PowerApps Portals?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Erstellen eines Portals</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Verwalten vorhandener Portale</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Portalverwaltung</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Häufig gestellte Fragen zu PowerApps Portals</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
                                        <img alt="Common Data Service" src="media/index/i_common-data-service.svg">
                                     </div>
                                  </div>
@@ -307,7 +329,7 @@ ms.locfileid: "68229652"
                   </ul>
                </li>
                <li>
-                  <a href="#admin"><strong>Informationen für Administratoren</strong></a>
+                  <a href="#admin"><strong>Ich bin Administrator</strong></a>
                   <ul id="admin"
                      class="cardsF">
                      <li>
@@ -400,7 +422,7 @@ ms.locfileid: "68229652"
                   </ul>
                </li>
                <li>
-                  <a href="#developer"><strong>Informationen für Entwickler</strong></a>
+                  <a href="#developer"><strong>Ich bin Entwickler</strong></a>
                   <ul id="developer"
                      class="cardsF">
                      <li>

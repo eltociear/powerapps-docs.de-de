@@ -6,22 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 03/18/2018
+ms.date: 07/18/2018
 ms.author: anneta
 ms.reviewer: ''
-ms.openlocfilehash: 6a8432e93f854b1c0794512da42ef25c9aa02adc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: cfc849574153ea4ab983112528a91974d80dea7f
+ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528594"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68308748"
 ---
 # <a name="overview-of-creating-apps-in-powerapps"></a>Übersicht über das Erstellen von Apps in PowerApps
 
-Bei PowerApps handelt es sich um eine produktive Entwicklungsplattform für Geschäfts-Apps, die aus drei wesentlichen Komponenten besteht:
+PowerApps ist eine hochproduktive Entwicklungsplattform für Geschäfts-Apps und umfasst vier Hauptkomponenten:
 
 - Bei [Canvas-Apps](canvas-apps/getting-started.md) beginnen Sie mit der Benutzeroberfläche, erstellen eine stark angepasste, leistungsfähige Schnittstelle und verbinden diesen mit Ihrer Auswahl aus 200 Datenquellen. Sie können Canvas-Apps für mobile Anwendungen sowie für Web- und Tabletanwendungen erstellen.
 - Bei [modellgesteuerten Apps](model-driven-apps/model-driven-app-overview.md) beginnen Sie mit Ihrem Datenmodell. Die Erstellung beginnt bei der Form Ihrer wichtigsten Geschäftsdaten und -prozesse in Common Data Service. Auf dieser Grundlage werden Formulare, Ansichten und andere Komponenten modelliert. Modellgesteuerte Apps generieren automatisch eine leistungsstarke UI, die geräteübergreifend reagiert.
+- In [Portals](portals/overview.md) beginnen Sie mit der Erstellung externer Websites, bei denen sich Benutzer außerhalb Ihrer Organisation mit einer Vielzahl von Identitäten anmelden, Daten in Common Data Service erstellen und anzeigen oder sogar Inhalte anonym durchsuchen können.
 - Bei [Common Data Service](common-data-service/data-platform-intro.md) handelt es sich um die in PowerApps enthaltene Datenplattform, die Ihnen das Speichern und Modellieren von Geschäftsdaten ermöglicht. Auf dieser Plattform werden Dynamics 365-Anwendungen erstellt. Wenn Sie ein Kunde von Dynamics sind, befinden Ihre Daten sich bereits in Common Data Service.
 
 Sie können Ihre erste App schnell und einfach erstellen. Es gibt einen 30-tägigen Testplan und einen kostenlosen Communityplan. Finden Sie heraus, welcher Plan am besten zu Ihnen passt, und legen Sie los.
