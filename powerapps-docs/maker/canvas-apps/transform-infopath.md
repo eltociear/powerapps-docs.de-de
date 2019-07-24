@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 52f97ce8360981b060500ce62da44a58002f4afa
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: 4e0609ce53f88f5945409e688cfc65df39bd6b96
+ms.sourcegitcommit: 8f27a61ce2ec32b8d911845dd00708e3c87b86bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224831"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68428725"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>Transformieren des InfoPath-Formulars in ein PowerApps-Formular
 
@@ -51,7 +50,7 @@ PowerApps ist ein großartiges Tool, um Ihr SharePoint-Erlebnis auf zwei Arten z
 
 Die **Anpassung eines SharePoint-Formulars** ist eine praktische Methode, wenn Sie die Art und Weise anpassen möchten, in der Benutzer Elemente in einer Liste hinzufügen, anzeigen oder bearbeiten, die sie bei ihrer täglichen Arbeit verwenden. Wenn Sie auf **Formulare anpassen** klicken, wird eine &quot;Formular-App&quot; mit einem einzigen Bildschirm erstellt, in der die Modi (Neu/Bearbeiten/Ansicht) kontextabhängig geändert werden. SharePoint verwaltet diese Apps; ihre Berechtigungen sind die gleichen wie die Listenberechtigungen zum Bearbeiten bzw. Anzeigen.
 
-Die **Erstellung einer PowerApps-Zeichenbereich-App aus SharePoint** ermöglicht es Ihnen, die App selbst auf einem mobilen Gerät auszuführen. Sie können auch die app in einer SharePoint-Seite einbetten. Mit einem Klick wird eine App mit drei Bildschirmen erstellt („Liste durchsuchen“, „Details anzeigen“ und „Element erstellen/aktualisieren“). Das Berechtigungs-/Freigabemodell für diese Apps ist nicht an SharePoint gebunden, sondern wird von PowerApps verwaltet.
+Die **Erstellung einer PowerApps-Zeichenbereich-App aus SharePoint** ermöglicht es Ihnen, die App selbst auf einem mobilen Gerät auszuführen. Sie können die APP auch in eine SharePoint-Seite einbetten. Mit einem Klick wird eine App mit drei Bildschirmen erstellt („Liste durchsuchen“, „Details anzeigen“ und „Element erstellen/aktualisieren“). Das Berechtigungs-/Freigabemodell für diese Apps ist nicht an SharePoint gebunden, sondern wird von PowerApps verwaltet.
 
 Nachdem Sie nun den Unterschied zwischen den beiden Optionen kennen, erhalten Sie im folgenden Abschnitt einen Überblick über deren Verwendung.
 
@@ -88,35 +87,35 @@ Erfolgreiche Formulare erzwingen häufig eine strikte Geschäftslogik, indem z.B
 
 ![Aus- bzw. Einblenden gesperrter Datenkarten](./media/transform-infopath/hide-show-lock.png)
 
-Scrollen Sie im rechten Bereich zur **DefaultMode**-Eigenschaft, sodass Sie diese bearbeiten können.
+Scrollen Sie im rechten Bereich zu der **Display Mode** -Eigenschaft, damit Sie Sie bearbeiten können.
 
 ![If-Else-Anweisungsausdrücke](./media/transform-infopath/if-else-statement.png)
 
 In diesem Beispiel verwenden Sie eine **If**-Formel:
 
-```If(ThisItem.Color = "Blue"; DisplayMode.View; DisplayMode.Edit)```
+```If(ThisItem.Color = "Blue", DisplayMode.View, DisplayMode.Edit)```
 
 Diese Formel besagt Folgendes: Wenn das **Color**-Feld des aktuellen Elements auf **Blue** festgelegt ist, ist das **Animal**-Feld schreibgeschützt. Andernfalls kann das Feld bearbeitet werden.
 
 Um die Karte auszublenden, anstatt sie als schreibgeschützt festzulegen, fügen Sie eine ähnliche Funktion in die **Visible**-Eigenschaft direkt oberhalb von **DisplayMode** ein.
 
-Sie können beispielsweise auch eine Genehmigungsschaltfläche verwenden, die nur angezeigt wird, wenn die E-Mail-Adresse des Benutzers der E-Mail-Adresse der genehmigenden Person entspricht. (Hinweis: Verwendung **User(). E-Mail-** auf die e-Mail-Adresse des aktuellen Benutzers zugreifen.) Sie können also die E-Mail-Adresse der genehmigenden Person in **YourDataCard** speichern und dann die **Visible**-Eigenschaft der Schaltfläche auf diese Formel festlegen:
+Sie können beispielsweise auch eine Genehmigungsschaltfläche verwenden, die nur angezeigt wird, wenn die E-Mail-Adresse des Benutzers der E-Mail-Adresse der genehmigenden Person entspricht. Deuteten Verwenden Sie den **Benutzer (). E-Mail** für den Zugriff auf die e-Mail-Adresse des aktuellen Benutzers.) Sie können also die E-Mail-Adresse der genehmigenden Person in **YourDataCard** speichern und dann die **Visible**-Eigenschaft der Schaltfläche auf diese Formel festlegen:
 
-```If( YourDataCard.Text = User().Email; true; false )```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **Bedingte Formatierung**  
 In ähnlicher Weise wie oben, wo Sie das Feld ausgeblendet haben, können Sie den Benutzern auch visuelles Feedback geben. Möglicherweise möchten Sie Text in Rot markieren, wenn der eingegebene Wert außerhalb des zulässigen Bereichs liegt, oder den Text und die Farbe der Uploadschaltfläche ändern, nachdem der Benutzer eine Datei hochgeladen hat. Beides können Sie in Eigenschaften wie **Color** oder **Visible** mithilfe einer Funktion umsetzen, z.B. **If**.
 
 Sie könnten z.B. die **If**-Funktion zusammen mit der [IsMatch](functions/function-ismatch.md)-Funktion verwenden, um die Textfarbe des E-Mail-Felds in Rot zu ändern, wenn der Benutzer keine korrekt formatierte E-Mail-Adresse in das Eingabefeld eingibt. In diesem Fall legen Sie den **Color**-Wert von **TextInput1** (das Feld, in dem der Benutzer eine E-Mail-Adresse eingibt) auf die folgende Formel fest:
 
-```If( IsMatch(TextInput1.Text; Email); Black; Red )```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 **IsMatch** bietet eine Vielzahl von vordefinierten Mustern (wie E-Mail-Adressen) und die Möglichkeit, eigene Muster zu erstellen. Weitere Informationen zur bedingten Formatierung finden Sie in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962).
 
 **Implementieren der rollenbasierten Sicherheit**  
 Die erste Funktion, die Sie ins Auge fassen sollten, lautet [DataSourceInfo](functions/function-datasourceinfo.md). Die Informationen, die Sie von der Datenquelle erhalten, variieren, aber häufig können Sie diese Formel verwenden, um zu prüfen, ob der Benutzer Zugriff auf die Daten hat (ersetzen Sie *YourDataSource* durch den Namen Ihrer Datenquelle):
 
-```DataSourceInfo( YourDataSource; DataSourceInfo.EditPermission )```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 So können Sie ein Formular oder eine Schaltfläche nur dann einblenden, wenn der Benutzer über Schreibzugriff verfügt. Die vollständige Liste der Informationen, die Sie in der Funktion abfragen können, finden Sie in der Dokumentation zu [DataSourceInfo](functions/function-datasourceinfo.md).
 
@@ -139,7 +138,7 @@ Wenn Sie dennoch Variablen benötigen (was in vielen Fällen vorkommt), erfahren
 
 - Globale Variablen sind das, woran Sie zuerst denken. Geben Sie mit der [Set](functions/function-set.md)-Funktion einen Wert für eine globale Variable an, und machen Sie den Wert in der gesamten App verfügbar:
 
-    ```Set( YourVariable; YourValue )```
+    ```Set( YourVariable, YourValue )```
 
     Dann können Sie in der gesamten App namentlich auf *YourVariable* verweisen.
 
@@ -158,13 +157,13 @@ Hierarchische Dropdownlisten sind sehr praktisch, da Sie z.B. die Auswahl in ein
 
 In diesem Beispiel können Sie eine Dropdownliste namens **ddSelectType** hinzufügen und die **Items**-Eigenschaft der Liste auf folgende Formel festlegen:
 
-```Distinct( Impacts; Title )```
+```Distinct( Impacts, Title )```
 
 Die Dropdownliste würde nur die folgenden Elemente anzeigen: Cost, Program Impact und Schedule. Dann können Sie eine zweite Dropdownliste hinzufügen und deren **Items**-Eigenschaft auf die folgende Formel festlegen:
 
-```Filter( Impacts; ddSelectType.Selected.Value in SCategory )```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-So einfach erhalten Sie überlappende Dropdownmenüs. Weitere Informationen finden Sie in diesem Beitrag des PowerApps-Teams [SharePoint: Überlappende Dropdownmenüs in 4 Schritten!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
+So einfach erhalten Sie überlappende Dropdownmenüs. Weitere Informationen finden Sie in diesem Beitrag aus dem powerapps-Team [SharePoint: Kaskadierende Dropdown Listen in 4 einfachen Schritten!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
 
 **Erstellen Sie keine einzelne Super-App**  
 Mit PowerApps können Sie eine App aus einer anderen App aufrufen. Anstatt also ein InfoPath-Massenformular zu erstellen, das praktisch nur mit Kaugummi zusammenhält, können Sie eine Gruppe von Apps erstellen, die sich gegenseitig aufrufen und sogar Daten weitergeben. Auf diese Weise wird die Entwicklung erheblich vereinfacht.
