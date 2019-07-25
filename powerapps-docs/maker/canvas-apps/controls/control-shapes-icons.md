@@ -13,32 +13,31 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 54ab2ba2186f68fcb68b9aa59729933af5d04652
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318435"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473907"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
 
 ## <a name="description"></a>Beschreibung
-Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Symbole, deren Eigenschaften wie Füllung, Größe und Position sich konfigurieren lassen. Sie können auch konfigurieren, deren **[OnSelect](properties-core.md)** Eigenschaft, damit die app reagiert, wenn der Benutzer das Steuerelement auswählt.
+Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Symbole, deren Eigenschaften wie Füllung, Größe und Position sich konfigurieren lassen. Sie können auch die **[onselect](properties-core.md)** -Eigenschaft so konfigurieren, dass die APP reagiert, wenn der Benutzer das Steuerelement auswählt.
 
 ## <a name="key-properties-icons-and-shapes"></a>Schlüsseleigenschaften (Symbole und Formen)
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
-**[OnSelect](properties-core.md)**  – wie die app reagiert, wenn der Benutzer ein Steuerelement auswählt.
+**[Onselect](properties-core.md)** – gibt an, wie die APP reagiert, wenn der Benutzer ein Steuerelement auswählt.
 
-## <a name="key-properties-icons-only"></a>Schlüsseleigenschaften (nur für Symbole)
+## <a name="key-properties-icons-only"></a>Schlüsseleigenschaften (nur Symbole)
 
-**Symbol "** -den Typ des Symbols angezeigt (z. B. **ArrowDown** oder **ShoppingCart**). 
+**Icon** : der Typ des anzuzeigenden Symbols (z. b. **ArrowDown** oder **ShoppingCart**). 
 
-**Drehung** -Anzahl Grad zu drehen Sie das Symbol. 
+**Rotation** : die Anzahl der Grad, um die das Symbol gedreht wird. 
 
-**Farbe** – die Farbe des Symbols, das anhand des Namens oder RGBA-Werte.
+**Color** : die Farbe des Symbols nach Name oder RGBA-Werten.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 **[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
@@ -53,9 +52,9 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 **[HoverFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger über ihm hält.
 
-**[PressedBorderColor](properties-color-border.md)**  – die Farbe des Rahmens eines Steuerelements, wenn der Benutzer dieses Steuerelement auswählt.
+**[Pressedbordercolor](properties-color-border.md)** – die Farbe des Rahmens eines Steuer Elements, wenn der Benutzer dieses Steuerelement auswählt.
 
-**[PressedFill](properties-color-border.md)**  – die Hintergrundfarbe eines Steuerelements, wenn der Benutzer dieses Steuerelement auswählt.
+**[Pressedfill](properties-color-border.md)** – die Hintergrundfarbe eines Steuer Elements, wenn der Benutzer dieses Steuerelement auswählt.
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
@@ -69,7 +68,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*, *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Beispiel
 
@@ -81,15 +80,15 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. Fügen Sie in **Source** ein **Shape**-Steuerelement hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
-1. Drücken Sie F5, und wählen Sie dann die **Form** Steuerelement.
+1. Drücken Sie F5, und wählen Sie dann das **Shape** -Steuerelement aus.
 
     Der Bildschirm **Target** wird angezeigt.
 
 1. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren, fügen Sie ein **Shape**-Steuerelement zu **Target** hinzu, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft des **Shape**-Steuerelements auf diese Formel fest:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 
@@ -111,19 +110,19 @@ Für Formen ohne Rahmen:
 - **[HoverFill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn dieses als Schaltfläche verwendet wird
 
 ### <a name="screen-reader-support"></a>Sprachausgabeunterstützung
-- **[AccessibleLabel](properties-accessibility.md)**  muss auf eine nicht leere Zeichenfolge festgelegt werden, wenn die Grafik als Schaltfläche verwendet wird, oder befindet sich nicht allein zu Darstellungszwecken andernfalls.
+- **[Accessiblelabel](properties-accessibility.md)** muss auf eine nicht leere Zeichenfolge festgelegt werden, wenn die Grafik als Schaltfläche verwendet wird, oder andernfalls nicht nur für die Dekoration.
 
-- **[AccessibleLabel](properties-accessibility.md)**  muss leer sein oder die leere Zeichenfolge **""** , wenn die Grafik redundanten Informationen enthält oder ausschließlich Dekoration ist. Dieser Wert führt dazu, dass Sprachausgaben die Grafik ignoriert werden sollen.
+- **[Accessiblelabel](properties-accessibility.md)** muss leer sein oder die leere Zeichenfolge **""** lauten, wenn die Grafik redundante Informationen bereitstellt oder ausschließlich für die Dekoration vorgesehen ist. Dieser Wert bewirkt, dass Bildschirm Sprachausgaben die Grafik ignorieren.
 
-Legen Sie z. B. möglicherweise die **[AccessibleLabel](properties-accessibility.md)** Eigenschaft eine **Einstellungen** Symbol **Einstellungen**. Dieses Symbol wird nicht als Schaltfläche verwendet. Es befindet sich neben einer **[Bezeichnung](control-text-box.md)** , die ebenfalls den Namen **Einstellungen**. Sprachausgaben lesen sowohl Symbol-als auch die Bezeichnung als **Einstellungen**, d.h. unnötig ausführlich. In diesem Fall auf das Symbol muss kein  **[AccessibleLabel](properties-accessibility.md)** .
+Beispielsweise können Sie die **[accessiblelabel](properties-accessibility.md)** -Eigenschaft eines **Einstellungs** Symbols auf **Settings**festlegen. Dieses Symbol wird nicht als Schaltfläche verwendet. Sie befindet sich neben einer **[Bezeichnung](control-text-box.md)** , die ebenfalls **Einstellungen**besagt. Die Sprachausgabe liest das Symbol und die Bezeichnung als **Einstellungen**, was unnötig ausführlich ist. In diesem Fall benötigt das Symbol kein **[accessiblelabel](properties-accessibility.md)** .
 
 > [!IMPORTANT]
-> Sprachausgaben lesen erst gelesen wird, ein Symbol oder eine Form als **Schaltfläche** wenn seine **[AccessibleLabel](properties-accessibility.md)** auf eine leere Zeichenfolge festgelegt ist und die zugehörige **[TabIndex ](properties-accessibility.md)** auf 0 (null) oder höher festgelegt ist. Diese Symbole oder Formen werden als Schaltflächen gerendert. 
+> Sprachausgaben lesen ein Symbol oder eine Form als **Schaltfläche** , wenn das **[accessiblelabel](properties-accessibility.md)** -Element auf eine leere Zeichenfolge festgelegt ist und dessen **[TabIndex](properties-accessibility.md)** auf 0 (null) oder größer festgelegt ist. Solche Symbole oder Formen werden als Schaltflächen gerendert. 
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-- **[TabIndex](properties-accessibility.md)**  muss 0 (null) oder höher, wenn die Grafik als Schaltfläche verwendet wird. Wenn Sie diesen Wert für ein Symbol oder eine Form festlegen, können Benutzer über die Tastatur dorthin navigieren.
+- **[TabIndex](properties-accessibility.md)** muss 0 (null) oder größer sein, wenn die Grafik als Schaltfläche verwendet wird. Wenn Sie diesen Wert für ein Symbol oder eine Form festlegen, können Tastatur Benutzer dorthin navigieren.
 
-- Fokusindikatoren müssen übersichtlich angezeigt werden, wenn die Grafik als Schaltfläche verwendet, wird sein. Verwendung **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** um dieses Ergebnis zu erzielen.
+- Fokus Indikatoren müssen klar sichtbar sein, wenn die Grafik als Schaltfläche verwendet wird. Verwenden Sie **[focusedbordercolor](properties-color-border.md)** und **[focusedborderdicke](properties-color-border.md)** , um dieses Ergebnis zu erzielen.
 
     > [!NOTE]
-    > Wenn **[TabIndex](properties-accessibility.md)** gleich 0 (null) oder größer ist, werden das Symbol oder die Form als Schaltfläche gerendert. Seine Darstellung nicht geändert, aber die Sprachausgabe erkennt das Bild als Schaltfläche richtig. Ist **[TabIndex](properties-accessibility.md)** kleiner als 0 (null), wird das Symbol oder die Form als Bild erkannt.
+    > Wenn **[TabIndex](properties-accessibility.md)** gleich 0 (null) oder größer ist, werden das Symbol oder die Form als Schaltfläche gerendert. Seine Darstellung ändert sich nicht, aber Bildschirm Sprachausgaben identifizieren das Bild ordnungsgemäß als Schaltfläche. Ist **[TabIndex](properties-accessibility.md)** kleiner als 0 (null), wird das Symbol oder die Form als Bild erkannt.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed555f5de4abc1e29b7d2a637413c440bd882f13
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9d3e9c6c408d70e22d566855e5899a0f5b0fae7
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546738"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473967"
 ---
 # <a name="choices-function-in-powerapps"></a>Funktion „Choices“ in PowerApps
 Gibt eine Tabelle mit den möglichen Werten für eine Suchspalte zurück.
@@ -38,7 +38,7 @@ Für die Funktion **Choices** ist es nicht wie bei den Funktionen [**ShowColumns
 
 Spaltenverweise müssen direkt auf die Datenquelle verweisen. Wenn beispielsweise **Accounts** die Datenquelle ist und nach **SLA** gesucht wird, lautet der Spaltenverweis **Accounts.SLA**. Der Verweis kann eine Funktion, eine Variable oder ein Steuerelement durchlaufen. Wenn aber **Accounts** an das Steuerelement **Gallery** übergeben wird, verwenden Sie die Formel **Gallery.Selected.SLA**, um auf die SLA für das ausgewählte Konto zu verweisen. Dieser Verweis hat dann ein Steuerelement durchlaufen und kann daher nicht an die Funktion **Columns** übergeben werden. Daher müssen Sie weiterhin **Accounts.SLA** verwenden.
 
-Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data Service.
+Zu diesem Zeitpunkt können Sie Such Spalten nur mit SharePoint und Common Data Service verwenden.
 
 ## <a name="syntax"></a>Syntax
 **Choices**( *Spalte-Verweis* )
@@ -49,17 +49,17 @@ Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data S
 
 #### <a name="choices-for-a-lookup"></a>Die Funktion „Choices“ für eine Suche
 
-1. [Erstellen Sie eine Datenbank](../../../administrator/create-database.md) in Common Data Service verwendet werden, und wählen die **enthalten die Beispiel-apps und Daten** Feld.
+1. Erstellen Sie in Common Data Service [eine Datenbank](../../../administrator/create-database.md) , und aktivieren Sie das Kontrollkästchen **Beispiel-apps und-Daten einschließen** .
 
     Es werden einige Entitäten wie z.B. **Accounts** erstellt.
 
-    **Hinweis:** Entitätsnamen werden auf web.powerapps.com Singular- und Pluralformen in PowerApps Studio.
+    **Hinweis:** Entitäts Namen sind in Web.powerapps.com Singular und Plural in PowerApps Studio.
 
-    ![Ausschnitt aus einer Liste der Felder aus der Entität „Account“ in Common Data Service für Apps, in dem hervorgehoben wird, dass „Primärer Kontakt“ ein Suchfeld ist](media/function-choices/entity-account.png)
+    ![Eine partielle Liste der Felder aus der Konto Entität in Common Data Service für apps, die darauf hinweist, dass "primärer Kontakt" ein Nachschlage Feld ist.](media/function-choices/entity-account.png)
 
     Die Entität **Accounts** weist eine Spalte für den **Primären Kontakt** auf, die eine Suchspalte für die Entität **Contacts** darstellt.  
 
-    ![Ausschnitt aus der Liste mit den Feldern aus der Entität „Contact“ in Common Data Service](media/function-choices/entity-contact.png)
+    ![Eine partielle Liste der Felder aus der Contact-Entität im Common Data Service](media/function-choices/entity-contact.png)
 
     Für jedes Konto wird entweder ein Kontakt als primärer Kontakt festgelegt oder die Spalte bleibt *leer*.
 
@@ -69,37 +69,37 @@ Zu diesem Zeitpunkt können Sie Suchspalten nur mit SharePoint und Common Data S
 
     ![Auf der linken Navigationsleiste unter „EditScreen1“ auf „EditForm1“ klicken](media/function-choices/select-editform.png)
 
-1. Auf der **Eigenschaften** im rechten Bereich auf der Registerkarte **Bearbeitungsfelder**.
+1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten **Bereich Felder bearbeiten**aus.
 
-    ![Öffnen Sie den Bereich "Daten"](media/function-choices/open-data-pane.png)
+    ![Öffnen des Datenbereichs](media/function-choices/open-data-pane.png)
 
-1. In der **Felder** wählen Sie im Bereich **Feld hinzufügen**.
+1. Wählen Sie im Bereich **Felder** die Option **Feld hinzufügen**aus.
 
-1. Suchen Sie nach der **Hauptkontaktperson** Feld, aktivieren Sie das Kontrollkästchen, und wählen Sie dann **hinzufügen**.
+1. Suchen Sie nach dem Feld **Primäres Kontakt** , aktivieren Sie das entsprechende Kontrollkästchen, und wählen Sie dann **Hinzufügen**aus.
 
     ![Auf „Accounts“ klicken, um den Bereich „Daten“ zu öffnen](media/function-choices/field-list.png)
 
-    Die **Hauptkontaktperson** Feld am unteren Rand des Formulars angezeigt wird. Wenn das Feld einen Fehler angezeigt wird, wählen Sie **Datenquellen** auf die **Ansicht** Registerkarte, wählen Sie die Auslassungspunkte (...) für die **Konten** -Datenquelle, und wählen Sie dann **aktualisieren** .
+    Das **primäre Kontakt** Feld wird unten im Formular angezeigt. Wenn im Feld ein Fehler angezeigt wird, wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen** aus, wählen Sie die Auslassungs Punkte (...) für die Datenquelle **Accounts** aus, und klicken Sie dann auf **Aktualisieren**.
 
 1. (Optional) Ziehen Sie das Feld **Primärer Kontakt** aus dem unteren Bereich der Liste in den oberen Bereich.
 
 1. Klicken Sie auf der Karte für den **Primären Kontakt** auf das **Kombinationsfeld**-Steuerelement.
 
-    Die **Elemente** Eigenschaft dieses Steuerelements auf eine Formel, die die Spalte identifiziert festgelegt ist, indem Sie entweder den Anzeigenamen, wie im ersten Beispiel, oder der logische Name, wie im zweiten Beispiel:
+    Die **Items** -Eigenschaft dieses Steuer Elements wird auf eine Formel festgelegt, die die Spalte entweder durch ihren anzeigen Amen, wie im ersten Beispiel, oder durch den logischen Namen identifiziert, wie im zweiten Beispiel dargestellt:
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Kombinationsfeld-Steuerelement innerhalb der primäre Ansprechpartner Karte ausgewählt ist, und die Items-Eigenschaft, mit der Formel Optionen (Konten. "Primärkontakt") angezeigt wird](media/function-choices/accounts-primary-contact.png)
+     ![Eine Canvas-Anzeige mit einem Formularsteuerelement Das Kombinations Feld-Steuerelement in der primären Kontaktkarte ist ausgewählt, und die Items-Eigenschaft mit den Formel Optionen ("Accounts", "primärer Kontakt") wird angezeigt.](media/function-choices/accounts-primary-contact.png)
 
 1. Klicken Sie erst auf der Registerkarte **Start** auf die Option **Neuer Bildschirm** und anschließend auf **Blank**.
 
 1. Klicken Sie auf der Registerkarte **Einfügen** auf die Option **Datentabelle**.
 
-1. Legen Sie die **Elemente** Eigenschaft der **Datentabelle** -Steuerelements auf diese Formel:
+1. Legen Sie die **Items** -Eigenschaft des **Datentabellen** -Steuer Elements auf diese Formel fest:
 
      **Choices( Accounts.'Primary Contact' )**
 
-1. In der Mitte der der **Datentabelle** steuern, wählen Sie den Link, der beginnt **wählen Sie die Felder...** , und wählen Sie dann die Kontrollkästchen für das Feld oder Felder, die Sie anzeigen möchten (z. B. **Firstname** und **"LastName"**).
+1. Wählen Sie in der Mitte des **Datentabellen** -Steuer Elements den Link aus, der beginnt, **Wählen Sie die Felder aus...** , und aktivieren Sie dann die Kontrollkästchen für die Felder, die Sie anzeigen möchten (z. b. **FirstName** und **LastName**).
 
      ![Eine Canvas-Anzeige mit einem Datentabellensteuerelement Die Eigenschaft „Items“ ist auf die Formel „Choices( Accounts.'Primary Contact' )“ festgelegt, und in der Tabelle werden die Spalten „Vorname“ und „Nachname“ für den ersten Datensatz aus der Entität „Contacts“ angezeigt](media/function-choices/full-accounts-pc.png)

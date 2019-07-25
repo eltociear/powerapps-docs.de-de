@@ -1,6 +1,6 @@
 ---
-title: Erstellen Sie einen Details-Katalog in einer Canvas-app | Microsoft-Dokumentation
-description: Erstellen Sie einen Details-Katalog in einer Canvas-app, um Daten für Northwind Traders zu verwalten.
+title: Erstellen einer Detail Galerie in einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen eines Detail Katalogs in einer Canvas-App zum Verwalten von Daten für Northwind Traders
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,603 +13,602 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9549b8f389cf696cf3fc8e4659da6b418383ac6e
-ms.sourcegitcommit: e85072f7a80da308c4caabe20adbf2509588ca57
+ms.openlocfilehash: 36fc8c552dea9331ff5ffbaa2dca3bdac5508306
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66760957"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68474631"
 ---
-# <a name="create-a-detail-gallery-in-a-canvas-app"></a>Erstellen Sie einen Details-Katalog in einer Canvas-app
+# <a name="create-a-detail-gallery-in-a-canvas-app"></a>Erstellen einer Detail Galerie in einer Canvas-App
 
-Führen Sie schrittweise Anweisungen zum Erstellen eines Katalogs Details in einer Canvas-app für die Verwaltung von fiktiven Daten in der Datenbank Northwind Traders ein. Dieses Thema ist Teil einer Reihe, die erklärt, wie Sie eine Geschäfts-app auf relationalen Daten in Common Data Service zu erstellen. Erkunden Sie diese Themen in dieser Sequenz, für optimale Ergebnisse:
+Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen eines Detail Katalogs in einer Canvas-App zum Verwalten von fiktiven Daten in der Datenbank Northwind Traders. Dieses Thema ist Teil einer Reihe, in der erläutert wird, wie eine Geschäfts-App für relationale Daten in Common Data Service erstellt wird. Um optimale Ergebnisse zu erzielen, sollten Sie sich diese Themen in dieser Sequenz ansehen:
 
-1. [Erstellen eines Katalogs Reihenfolge](northwind-orders-canvas-part1.md).
-1. [Erstellen Sie eine Zusammenfassung Formular](northwind-orders-canvas-part2.md).
-1. Erstellen Sie einen Details-Katalog (**in diesem Thema**).
+1. [Erstellen Sie eine Order Gallery](northwind-orders-canvas-part1.md).
+1. [Erstellen Sie ein Zusammenfassungs Formular](northwind-orders-canvas-part2.md).
+1. Erstellen Sie eine Detail Galerie (**dieses Thema**).
 
 > [!div class="mx-imgBorder"]
-> ![Definition der Bildschirmbereiche](media/northwind-orders-canvas-part1/orders-parts.png)
+> ![Definition von Bildschirm Bereichen](media/northwind-orders-canvas-part1/orders-parts.png)
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Vorraussetzungen
 
-Bevor Sie in diesem Thema beginnen, installieren Sie die Datenbank, wie weiter oben in diesem Thema beschrieben. Müssen Sie Sie dann dem Order-Katalog und die Zusammenfassung Form zu erstellen oder öffnen Sie die **Northwind Orders (Canvas) – Teil 3 beginnen** -app, die bereits dem Katalog und dieses Formular enthält.
+Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in diesem Thema beschrieben installieren. Sie müssen dann entweder den Order Gallery und das Zusammenfassungs Formular erstellen oder die **Northwind Orders (Canvas)-BEGIN Part 3-** APP öffnen, die bereits diesen Katalog und dieses Formular enthält.
 
-## <a name="create-another-title-bar"></a>Erstellen Sie eine andere Titelleiste
+## <a name="create-another-title-bar"></a>Erstellen einer weiteren Titelleiste
 
-1. Wählen Sie am oberen Rand des Bildschirms, das [ **Bezeichnung** ](controls/control-text-box.md) -Steuerelement als Titelleiste, kopieren Sie sie durch Drücken von STRG + C, und fügen Sie ihn dann durch Drücken von STRG-v:
-
-    > [!div class="mx-imgBorder"]
-    > ![Kopieren Sie und fügen Sie die Titelleiste](media/northwind-orders-canvas-part3/details-01.png)
-
-1. Die Größe und verschieben Sie die Kopie, sodass es direkt unter der Zusammenfassung Formular angezeigt wird.
-
-1. Entfernen Sie den Text aus der Kopie in einer der folgenden Methoden:
-
-    - Doppelklicken Sie auf den Text, um es auszuwählen, und drücken Sie ENTF.
-    - Legen Sie die Bezeichnung des **Text** Eigenschaft auf eine leere Zeichenfolge ( **""** ).
+1. Wählen Sie am oberen Bildschirmrand das [**Label**](controls/control-text-box.md) -Steuerelement aus, das als Titelleiste fungiert, kopieren Sie es durch Drücken von STRG + C, und fügen Sie es durch Drücken von STRG + V ein:
 
     > [!div class="mx-imgBorder"]
-    > ![Entfernen Sie den Text aus der Kopie der Titelleiste](media/northwind-orders-canvas-part3/details-02.png)
+    > ![Titelleiste kopieren und Einfügen](media/northwind-orders-canvas-part3/details-01.png)
+
+1. Ändern Sie die Größe, und verschieben Sie die Kopie so, dass Sie direkt unter dem Zusammenfassungs Formular angezeigt wird.
+
+1. Entfernen Sie den Text aus der Kopie auf eine der folgenden Arten:
+
+    - Doppelklicken Sie auf den Text, um ihn auszuwählen, und drücken Sie dann ENTF.
+    - Legen Sie die **Text** -Eigenschaft der Bezeichnung auf eine leere Zeichenfolge ( **""** ) fest.
+
+    > [!div class="mx-imgBorder"]
+    > ![Entfernen Sie den Text aus der Titelleisten Kopie.](media/northwind-orders-canvas-part3/details-02.png)
 
 ## <a name="add-a-gallery"></a>Einen Katalog hinzufügen
 
-1. Fügen Sie eine [ **Katalog** ](controls/control-gallery.md) steuern Sie mit einem **Leerzeichen vertikal** Layout:
+1. Fügen Sie ein Katalog [ **-Steuerelement**](controls/control-gallery.md) mit einem **leeren vertikalen** Layout ein:
 
     > [!div class="mx-imgBorder"]
     > ![Hinzufügen eines leeren vertikalen Katalogs](media/northwind-orders-canvas-part3/details-03.png)
 
-    Der neue Katalog, der Auftragsdetails angezeigt wird, wird in der oberen linken Ecke angezeigt:
+    Der neue Katalog, in dem die Bestelldetails angezeigt werden, wird in der oberen linken Ecke angezeigt:
 
     > [!div class="mx-imgBorder"]
-    > ![Der Standardspeicherort des Auftragsdetails Katalogs](media/northwind-orders-canvas-part3/details-04.png)
+    > ![Standard Speicherort der Order-Details-Galerie](media/northwind-orders-canvas-part3/details-04.png)
 
-1. Schließen der **Daten** Bereich, und klicken Sie dann Ändern der Größe und Verschieben der Detail-Katalog in der Ecke unten rechts unterhalb der Titelleiste für die neue:
+1. Schließen Sie den Bereich **Daten** , und ändern Sie dann die Größe, und verschieben Sie die Detail Galerie in die untere rechte Ecke unterhalb der neuen Titelleiste:
 
     > [!div class="mx-imgBorder"]
-    > ![Endgültige Position der Auftragsdetails Katalog](media/northwind-orders-canvas-part3/details-05.png)
+    > ![Abschließender Speicherort der Order-Details-Galerie](media/northwind-orders-canvas-part3/details-05.png)
 
-1. Legen Sie die **Elemente** -Eigenschaft des Katalogs auf diese Formel Detail:
+1. Legen Sie die **Items** -Eigenschaft der Detail Galerie auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.'Order Details'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Festlegen der Items-Eigenschaft des Katalogs detail](media/northwind-orders-canvas-part3/details-06.png)
+    > ![Festlegen der Items-Eigenschaft der Detail Galerie](media/northwind-orders-canvas-part3/details-06.png)
 
-    Wenn ein Fehler angezeigt wird, vergewissern Sie sich, dass die Order-Katalog den Namen **Gallery1** (in der **Strukturansicht** Bereich am linken Rand). Wenn Sie diesen Katalog über einen anderen Namen aufweist, benennen Sie sie **Gallery1**.
+    Wenn ein Fehler angezeigt wird, vergewissern Sie sich, dass die Order Gallery den Namen **Gallery1** hat (im Struktur Ansichts Bereich in der Nähe des linken Rands). Wenn dieser Katalog einen anderen Namen hat, benennen Sie ihn **Gallery1**um.
 
-    Sie haben nur die beiden Kataloge verknüpft. Wenn der Benutzer eine Bestellung in der Order-Galerie auswählt, identifiziert die Auswahl ein Datensatzes in die **Bestellungen** Entität. Wenn, dass der Auftrag über mindestens eine Zeile enthält Elemente, den Datensatz in die **Bestellungen** Entität verknüpft ist, auf eine oder mehrere Datensätze in der **Bestelldetails** Entität und Daten aus diesen Datensätzen angezeigt wird, im Detail-Katalog. Dies spiegelt wider, die 1: n Beziehung, die für Sie zwischen erstellt wurde die **Bestellungen** und **Bestelldetails** Entitäten. Die Formel, die Sie angegeben haben führt"" dieser Beziehung Sie mithilfe der Punktnotation:
-
-    > [!div class="mx-imgBorder"]
-    > ![1: n Beziehung zwischen der Orders-Entität und der Order Details-Entität](media/northwind-orders-canvas-part3/schema-orders-rel.png)
-
-## <a name="show-product-names"></a>Anzeigen der Produktnamen
-
-1. Wählen Sie den Katalog Detail **Hinzufügen eines Elements aus der Registerkarte "Einfügen"** um die Katalogvorlage auszuwählen:
+    Sie haben die beiden Galerien soeben verknüpft. Wenn der Benutzer eine Bestellung im Order Gallery auswählt, identifiziert diese Auswahl einen Datensatz in der Entität **Orders** . Wenn diese Reihenfolge ein oder mehrere Zeilen Elemente enthält, wird der Datensatz in der Entität **Orders** mit einem oder mehreren Datensätzen in der Entität **Order Details** verknüpft, und Daten aus diesen Datensätzen werden im Detail Katalog angezeigt. Dieses Verhalten spiegelt die 1: n-Beziehung wider, die für Sie zwischen den Entitäten **Orders** und **Order Details** erstellt wurde. Die von Ihnen angegebene Formel "durchläuft" diese Beziehung mithilfe der Punkt Notation:
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie die Vorlage für den Katalog detail](media/northwind-orders-canvas-part3/details-07.png)
+    > ![1: n-Beziehung zwischen der Entität "Orders" und der Entität "Order Details"](media/northwind-orders-canvas-part3/schema-orders-rel.png)
 
-    Stellen Sie sicher, dass Sie die Katalogvorlage anstelle der eigentlichen Sammlung ausgewählt haben. Das umgebende Feld sollte etwas innerhalb des Katalogs Grenzen und wahrscheinlich des Katalogs Höhe kleiner sein. Wie Sie Steuerelemente in dieser Vorlage einfügen, werden sie für jedes Element im Katalog wiederholt.
+## <a name="show-product-names"></a>Produktnamen anzeigen
 
-1. Auf der **einfügen** Registerkarte, fügen Sie eine Bezeichnung, im Detail-Katalog.
-
-    Die Bezeichnung sollte innerhalb des Katalogs angezeigt werden; Wenn dies nicht der Fall, versuchen Sie es erneut, aber Achten Sie darauf, die Vorlage des Katalogs auswählen, bevor Sie die Bezeichnung einfügen.
+1. Wählen Sie im Detail Katalog auf **der Registerkarte Einfügen die Option Element hinzufügen aus** , um die Katalog Vorlage auszuwählen:
 
     > [!div class="mx-imgBorder"]
-    > ![Eine Bezeichnung im Katalog Details hinzufügen](media/northwind-orders-canvas-part3/details-08.png)
+    > ![Wählen Sie die Vorlage für die Detail Galerie aus.](media/northwind-orders-canvas-part3/details-07.png)
 
-1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
+    Stellen Sie sicher, dass Sie die Katalog Vorlage anstelle der Galerie selbst ausgewählt haben. Das Begrenzungsfeld sollte sich leicht innerhalb der Galerie Grenzen und wahrscheinlich kürzer als die Höhe des Katalogs befinden. Wenn Sie Steuerelemente in diese Vorlage einfügen, werden Sie für jedes Element im Katalog wiederholt.
 
-    ```powerapps-comma
+1. Fügen Sie auf der Registerkarte **Einfügen** eine Bezeichnung in die Detail Galerie ein.
+
+    Die Bezeichnung sollte in der Galerie angezeigt werden. Wenn dies nicht der Fall ist, versuchen Sie es noch mal. Achten Sie jedoch darauf, die Vorlage des Katalogs auszuwählen, bevor Sie die Bezeichnung einfügen.
+
+    > [!div class="mx-imgBorder"]
+    > ![Fügen Sie der Detail Galerie eine Bezeichnung hinzu.](media/northwind-orders-canvas-part3/details-08.png)
+
+1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
+
+    ```powerapps-dot
     ThisItem.Product.'Product Name'
     ```
 
-    Wenn kein Text angezeigt wird, wählen Sie den Pfeil für **Reihenfolge 0901** im unteren Bereich des Katalogs Reihenfolge.
+    Wenn kein Text angezeigt wird, wählen Sie den Pfeil für die **Reihenfolge 0901** am unteren Rand der Auftrags Galerie aus.
 
-1. Ändern Sie die Bezeichnung, sodass der vollständige Text angezeigt wird:
-
-    > [!div class="mx-imgBorder"]
-    > ![Produktname wird in den Details der Bestellung anzeigen.](media/northwind-orders-canvas-part3/details-09.png)
-
-    Dieser Ausdruck führt Sie aus einem Datensatz in die **Bestelldetails** Entität. Der Datensatz wird, verbleibt in **ThisItem** an die **Bestellprodukte** Entität über eine n: 1 Beziehung:
+1. Ändern Sie die Größe der Bezeichnung so, dass der vollständige Text angezeigt wird:
 
     > [!div class="mx-imgBorder"]
-    > ![Viele-zu-eins-Beziehung zwischen der Order Details-Entität und die Reihenfolge Product-Entität](media/northwind-orders-canvas-part3/schema-orderdetails-rel.png)
+    > ![Produktnamen in Bestelldetails anzeigen](media/northwind-orders-canvas-part3/details-09.png)
 
-    Die **Produktname** Feld (und anderen Feldern, die Sie wahrscheinlich) extrahiert werden:
-
-    > [!div class="mx-imgBorder"]
-    > ![Felder in der Reihenfolge Products-Entität](media/northwind-orders-canvas-part3/schema-products-fields.png)
-
-## <a name="show-product-images"></a>Anzeigen der Produktbilder
-
-1. Auf der **einfügen** Registerkarte ein [ **Image** ](controls/control-image.md) Steuerelement in der Galerie Detail:
+    Dieser Ausdruck führt einen Datensatz in der **Order Details** -Entität aus. Der Datensatz wird in **thisitem** über eine n:1-Beziehung zur **Order Products** -Entität gespeichert:
 
     > [!div class="mx-imgBorder"]
-    > ![Image-Steuerelement einfügen](media/northwind-orders-canvas-part3/details-10.png)
+    > ![N:1-Beziehung zwischen der Entität "Order Details" und der Entität "Order Product"](media/northwind-orders-canvas-part3/schema-orderdetails-rel.png)
 
-1. Die Größe und verschieben Sie das Abbild und die Bezeichnung, die parallel angeboten werden.
+    Das Feld " **Produkt Name** " (und andere Felder, die Sie verwenden möchten) werden extrahiert:
+
+    > [!div class="mx-imgBorder"]
+    > ![Felder in der Entität "Order Products"](media/northwind-orders-canvas-part3/schema-products-fields.png)
+
+## <a name="show-product-images"></a>Produkt Images anzeigen
+
+1. Fügen Sie auf der Registerkarte **Einfügen** ein [**Bild**](controls/control-image.md) Steuerelement in die Detail Galerie ein:
+
+    > [!div class="mx-imgBorder"]
+    > ![Bild Steuerelement einfügen](media/northwind-orders-canvas-part3/details-10.png)
+
+1. Ändern Sie die Größe, und verschieben Sie das Bild und die Bezeichnung nebeneinander.
 
     > [!TIP]
-    > Präzise Steuerung der Größe und die Position eines Steuerelements starten Sie zum Ändern der Größe oder verschieben, ohne die Alt-Taste drücken, und fahren Sie mit der Größe oder Position des Steuerelements, während Sie die Alt-Taste gedrückt halten:
+    > Für eine differenzierte Steuerung der Größe und Position eines Steuer Elements können Sie die Größe ändern oder verschieben, ohne die Alt-Taste gedrückt zu halten, und dann die Größe des Steuer Elements ändern, während Sie die Alt-Taste gedrückt halten:
 
     > [!div class="mx-imgBorder"]
-    > ![Verschieben Sie die Image-Steuerelement](media/northwind-orders-canvas-part3/details-11.png)
+    > ![Bild Steuerelement verschieben](media/northwind-orders-canvas-part3/details-11.png)
 
-1. Das Bild des **Image** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Image** -Eigenschaft des Bilds auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.Picture
     ```
 
-    Der Ausdruck verweist auf ein Produkt, das mit dieser verknüpft ist in diesem Fall zu bestellen, Details und das Extrahieren der **Bild** anzuzeigende Feld.
+    Auch hier verweist der Ausdruck auf ein Produkt, das mit diesem Bestell Detail verknüpft ist und  das anzuzeigende Bildfeld extrahiert.
 
     > [!div class="mx-imgBorder"]
     > ![Produktbild anzeigen](media/northwind-orders-canvas-part3/details-12.png)
 
-1. Reduzieren Sie die Höhe der Vorlage des Katalogs, also, mehr als eine **Order Detail** Datensatz zu einem Zeitpunkt angezeigt wird:
+1. Verringern Sie die Höhe der Vorlage des Katalogs, sodass mehr als ein Datensatz für die **Bestelldetails** gleichzeitig angezeigt wird:
 
     > [!div class="mx-imgBorder"]
-    > ![Verkürzen Sie die Vorlage des Katalogs](media/northwind-orders-canvas-part3/details-13.png)
+    > ![Kürzen der Galerie Vorlage](media/northwind-orders-canvas-part3/details-13.png)
 
 ## <a name="show-product-quantity-and-cost"></a>Produktmenge und Kosten anzeigen
 
-1. Auf der **einfügen** Registerkarte, fügen Sie eine andere Bezeichnung im Detail-Katalog, und klicken Sie dann ändern Sie die Größe und verschieben Sie die neue Bezeichnung rechts neben die Produktinformationen.
+1. Fügen Sie auf der Registerkarte **Einfügen** eine andere Bezeichnung in die Detail Galerie ein, und ändern Sie dann die Größe, und verschieben Sie die neue Bezeichnung rechts neben den Produktinformationen.
 
-1. Legen Sie die neuen Bezeichnung **Text** Eigenschaft auf den folgenden Ausdruck:
+1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Quantity
     ```
 
-    Diese Formel Ruft die Informationen direkt aus der **Bestelldetails** Entität (keine Beziehung erforderlich).
+    Diese Formel Ruft Informationen direkt aus der Entität " **Order Details** " (keine Beziehung erforderlich) ab.
 
     > [!div class="mx-imgBorder"]
     > ![Produktmenge anzeigen](media/northwind-orders-canvas-part3/details-13b.png) 
 
-1. Auf der **Startseite** Registerkarte, Ändern der Ausrichtung dieses Steuerelements auf **rechts**:
+1. Ändern Sie auf der Registerkarte **Startseite** die Ausrichtung dieses Steuer Elements in **Rechts**:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern der Ausrichtung](media/northwind-orders-canvas-part3/details-14.png)
+    > ![Ausrichtung ändern](media/northwind-orders-canvas-part3/details-14.png)
 
-1. Auf der **einfügen** Registerkarte, fügen Sie eine andere Bezeichnung im Katalog Detail, und klicken Sie dann ändern Sie die Größe und verschieben Sie die Bezeichnung rechts neben der Bezeichnung Menge.
+1. Fügen Sie auf der Registerkarte **Einfügen** eine andere Bezeichnung in die Detail Galerie ein, und ändern Sie dann die Größe, und verschieben Sie die Bezeichnung nach rechts neben der Bezeichnung Menge.
 
-1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    Wenn Sie nicht den Sprach-Tag enthalten ( **[$-En-US]** ), wird er hinzugefügt werden, basierend auf Ihre Sprache und Region. Wenn Sie eine andere Sprachtag verwenden, sollten Sie zum Entfernen der **$** direkt nach dem Schließen eckige Klammer ( **]** ), und fügen Sie dann Ihre eigenen Währungssymbol an dieser Position.
+    Wenn Sie das Sprachtag ( **[$-en-US]** ) nicht einschließen, wird es basierend auf Ihrer Sprache und Region für Sie hinzugefügt. Wenn Sie ein anderes Sprachtag verwenden, sollten Sie das **$** unmittelbar nach der schließenden eckigen Klammer ( **]** ) entfernen und dann Ihr eigenes Währungssymbol an dieser Position hinzufügen.
 
     > [!div class="mx-imgBorder"]
-    > ![Anzeigen der Preis pro Einheit](media/northwind-orders-canvas-part3/details-15.png)
+    > ![Einheitspreis anzeigen](media/northwind-orders-canvas-part3/details-15.png)
 
-1. Auf der **Startseite** Registerkarte, Ändern der Ausrichtung dieses Steuerelements auf **rechts**:
+1. Ändern Sie auf der Registerkarte **Startseite** die Ausrichtung dieses Steuer Elements in **Rechts**:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern der Ausrichtung](media/northwind-orders-canvas-part3/details-16.png)
+    > ![Ausrichtung ändern](media/northwind-orders-canvas-part3/details-16.png)
 
-1. Auf der **einfügen** Registerkarte, fügen Sie einen anderen Label-Steuerelement im Detail-Katalog, und klicken Sie dann ändern Sie die Größe und verschieben Sie die neue Bezeichnung rechts neben der Preis.
+1. Fügen Sie auf der Registerkarte **Einfügen** ein weiteres Label-Steuerelement in die Detail Galerie ein, und ändern Sie dann die Größe, und verschieben Sie die neue Bezeichnung rechts neben dem Einheitspreis.
 
-1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
-    In diesem Fall, wenn Sie nicht den Sprach-Tag enthalten ( **[$-En-US]** ), wird er hinzugefügt werden, basierend auf Ihre Sprache und Region. Wenn das Tag anders ist, sollten Sie mit Ihren eigenen Währungssymbol statt der **$** direkt nach dem Schließen eckige Klammer ( **]** ).
+    Wenn Sie das Sprachtag ( **[$-en-US]** ) nicht einschließen, wird es auf Grundlage ihrer Sprache und Region für Sie hinzugefügt. Wenn das-Tag anders ist, sollten Sie anstelle von **$** unmittelbar nach der schließenden eckigen Klammer ( **]** ) Ihr eigenes Währungssymbol verwenden.
 
     > [!div class="mx-imgBorder"]
-    > ![Erweiterte Preis anzeigen](media/northwind-orders-canvas-part3/details-17.png)
+    > ![Erweiterten Preis anzeigen](media/northwind-orders-canvas-part3/details-17.png)
 
-1. Auf der **Startseite** Registerkarte, Ändern der Ausrichtung dieses Steuerelements auf **rechts**:
-
-    > [!div class="mx-imgBorder"]
-    > ![Ändern der Ausrichtung](media/northwind-orders-canvas-part3/details-18.png)
-
-    Hinzufügen von Steuerelementen im Detail-Katalog ist jetzt fertig.
-
-1. In der **Strukturansicht** wählen Sie im Bereich **Screen1** um sicherzustellen, dass der Detail-Katalog nicht mehr ausgewählt ist.
-
-## <a name="add-text-to-the-new-title-bar"></a>Hinzufügen von Text in die neue Titelleiste
-
-1. Auf der **einfügen** Registerkarte, fügen Sie eine andere Bezeichnung auf dem Bildschirm:
+1. Ändern Sie auf der Registerkarte **Startseite** die Ausrichtung dieses Steuer Elements in **Rechts**:
 
     > [!div class="mx-imgBorder"]
-    > ![Beschriftung einfügen](media/northwind-orders-canvas-part3/details-19.png)
+    > ![Ausrichtung ändern](media/northwind-orders-canvas-part3/details-18.png)
 
-1. Ändern der Größe und verschieben Sie die neue Bezeichnung über die Bilder der Produkte in der zweiten Titelleiste, und ändern Sie die Farbe des Texts auf Weiß auf die **Startseite** Registerkarte.
+    Das Hinzufügen von Steuerelementen zum Detail Katalog ist nun abgeschlossen.
 
-1. Doppelklicken Sie auf der Bezeichnungstext, und geben Sie **Produkt**:
+1. Wählen Sie  im Struktur Ansichts Bereich die Option **Screen1** aus, um sicherzustellen, dass die Detail Galerie nicht mehr ausgewählt ist.
 
-    > [!div class="mx-imgBorder"]
-    > ![Ändern von Beschriftungstext Produkt](media/northwind-orders-canvas-part3/details-20.png)
+## <a name="add-text-to-the-new-title-bar"></a>Hinzufügen von Text zur neuen Titelleiste
 
-1. Kopieren und Einfügen der Product-Bezeichnung, und klicken Sie dann Ändern der Größe und verschieben Sie die Kopie über der Mengenspalte.
-
-1. Doppelklicken Sie auf die neue Bezeichnung Text, und geben Sie **Menge**:
+1. Fügen Sie auf der Registerkarte **Einfügen** eine andere Bezeichnung auf dem Bildschirm ein:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern von Beschriftungstext Menge](media/northwind-orders-canvas-part3/details-21.png)
+    > ![Bezeichnung einfügen](media/northwind-orders-canvas-part3/details-19.png)
 
-1. Kopieren und Einfügen die Bezeichnung für Menge und Größe, und verschieben Sie die Kopie oberhalb der Einzelpreis Spalte.
+1. Ändern Sie die Größe, und verschieben Sie die neue Bezeichnung über die Abbildungen der Produkte in der zweiten Titelleiste, und ändern Sie dann die Farbe des Texts auf der Registerkarte **Start** in weiß.
 
-1. Doppelklicken Sie auf die neue Bezeichnung Text, und geben Sie **Unit Price**:
-
-    > [!div class="mx-imgBorder"]
-    > ![Ändern von Beschriftungstext zum Preis pro Einheit](media/northwind-orders-canvas-part3/details-22.png)
-
-1. Kopieren und Einfügen der Einzelpreis Bezeichnung, und klicken Sie dann ändern Sie die Größe und verschieben oberhalb der Endpreis Spalte.
-
-1. Doppelklicken Sie auf den Text, der die neue Bezeichnung, und geben Sie **erweiterte**:
+1. Doppelklicken Sie auf den Text der Bezeichnung, und geben Sie dann **Product**:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern von Beschriftungstext auf Extended](media/northwind-orders-canvas-part3/details-23.png)
+    > ![Bezeichnungs Text in Product ändern](media/northwind-orders-canvas-part3/details-20.png)
 
-## <a name="display-order-totals"></a>Die Reihenfolge Gesamtergebnisse anzeigen
+1. Kopieren Sie die Produktbezeichnung, und fügen Sie Sie ein. ändern Sie dann die Größe, und verschieben Sie die Kopie oberhalb der Spalte Menge.
 
-1. Reduzieren Sie die Höhe des Detail Katalog aus, um Platz für die Auftragssummen am unteren Rand des Bildschirms zu machen:
-
-    > [!div class="mx-imgBorder"]
-    > ![Verkürzen Sie die Auftragsdetails Katalog](media/northwind-orders-canvas-part3/sum-01.png)
-
-1. Kopieren und fügen Sie die Titelleiste in der Mitte der Bildschirm, und klicken Sie dann die Kopie in den unteren Rand des Bildschirms verschieben:
+1. Doppelklicken Sie auf den Text der neuen Bezeichnung, und geben Sie dann **Menge**ein:
 
     > [!div class="mx-imgBorder"]
-    > ![Kopieren Sie die Titelleiste, und verschieben Sie die Kopie an den unteren Rand](media/northwind-orders-canvas-part3/sum-02.png)
+    > ![Bezeichnungs Text in Menge ändern](media/northwind-orders-canvas-part3/details-21.png)
 
-1. Kopieren und fügen Sie die Bezeichnung "Product" über die mittleren Titelleiste, und verschieben Sie die Kopie dann in die Titelleiste des nach unten, nur auf der linken Seite des der **Menge** Spalte.
+1. Kopieren Sie die Mengen Bezeichnung, und fügen Sie Sie ein, und ändern Sie dann die Größe, und verschieben Sie die Kopie oberhalb der Einheitspreis Spalte.
 
-1. Doppelklicken Sie auf die neue Bezeichnung Text, und geben Sie diesen Text:<br>**Gesamtbetrag der Bestellung:**
+1. Doppelklicken Sie auf den Text der neuen Bezeichnung, und geben Sie dann **Unit Price**(uniprice) ein:
 
     > [!div class="mx-imgBorder"]
-    > ![Bezeichnung für die Auftragssummen hinzufügen](media/northwind-orders-canvas-part3/sum-03.png)
+    > ![Bezeichnungs Text in Einheitspreis ändern](media/northwind-orders-canvas-part3/details-22.png)
 
-1. Kopieren und Einfügen der Auftragssummen Bezeichnung, und klicken Sie dann ändern Sie die Größe und rechts neben die Auftragssummen Bezeichnung verschieben.
+1. Kopieren Sie die Bezeichnung Unit-Price, und fügen Sie Sie ein, und ändern Sie dann die Größe, und verschieben Sie die Kopie oberhalb der Spalte Extended Price.
 
-1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
+1. Doppelklicken Sie auf den Text der neuen Bezeichnung, und geben Sie dann **erweitert**ein:
 
-    ```powerapps-comma
-    Sum( Gallery1.Selected.'Order Details'; Quantity )
+    > [!div class="mx-imgBorder"]
+    > ![Bezeichnungs Text in erweitert ändern](media/northwind-orders-canvas-part3/details-23.png)
+
+## <a name="display-order-totals"></a>Gesamtsumme der anzeigen
+
+1. Verringern Sie die Höhe des Detail Katalogs, um Platz für die Bestell Summen am unteren Bildschirmrand zu schaffen:
+
+    > [!div class="mx-imgBorder"]
+    > ![Kürzen der Order-Details-Galerie](media/northwind-orders-canvas-part3/sum-01.png)
+
+1. Kopieren Sie die Titelleiste in der Mitte des Bildschirms, und verschieben Sie Sie dann an den unteren Rand des Bildschirms:
+
+    > [!div class="mx-imgBorder"]
+    > ![Titelleiste kopieren und kopieren an den unteren Rand verschieben](media/northwind-orders-canvas-part3/sum-02.png)
+
+1. Kopieren Sie die Product-Bezeichnung, und fügen Sie Sie aus der mittleren Titelleiste ein, und verschieben Sie die Kopie dann in die untere Titelleiste, und zwar direkt links neben der Spalte **Menge** .
+
+1. Doppelklicken Sie auf den Text der neuen Bezeichnung, und geben Sie den folgenden Text ein:<br>**Bestell Summen:**
+
+    > [!div class="mx-imgBorder"]
+    > ![Bezeichnung für Bestell Summen hinzufügen](media/northwind-orders-canvas-part3/sum-03.png)
+
+1. Kopieren Sie die Bezeichnung Order-Summen, und fügen Sie Sie ein, und ändern Sie dann die Größe, und verschieben Sie die Kopie rechts neben die Bezeichnung Order-Total.
+
+1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
+
+    ```powerapps-dot
+    Sum( Gallery1.Selected.'Order Details', Quantity )
     ```
 
-    Diese Formel wird eine delegierungswarnung, jedoch können Sie diese ignorieren, da keine einzelnen Auftrag mehr als 500 Produkten enthält.
+    Diese Formel zeigt eine Delegierungs Warnung an, Sie können Sie jedoch ignorieren, da keine einzelne Bestellung mehr als 500 Produkte enthalten wird.
 
-1. Auf der **Startseite** Registerkarte, auf die neue Bezeichnung textausrichtung festgelegt **rechts**:
+1. Legen Sie auf der Registerkarte **Start** Seite die Textausrichtung der neuen Bezeichnung auf **right**fest:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern der Ausrichtung](media/northwind-orders-canvas-part3/sum-04.png)
+    > ![Ausrichtung ändern](media/northwind-orders-canvas-part3/sum-04.png)
 
-1. Kopieren und Einfügen diesen Label-Steuerelement, und klicken Sie dann ändern Sie die Größe und verschieben Sie die Kopie in die **erweiterte** Spalte.
+1. Kopieren Sie dieses Bezeichnung-Steuerelement, fügen Sie es ein, und ändern Sie dann die Größe, und verschieben Sie die Kopie in die **Erweiterte**
 
-1. Legen Sie der Kopiervorgangs des **Text** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Text** -Eigenschaft der Kopie auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
-    Diese Formel wird eine delegierungswarnung, jedoch können Sie diese ignorieren, da keine einzelnen Auftrag mehr als 500 Produkten enthält.
+    Diese Formel zeigt eine Delegierungs Warnung an, Sie können Sie jedoch ignorieren, da keine einzelne Bestellung mehr als 500 Produkte enthalten wird.
 
     > [!div class="mx-imgBorder"]
-    > ![Gesamtkosten der Reihenfolge anzeigen](media/northwind-orders-canvas-part3/sum-05.png)
+    > ![Gesamtkosten der Bestellung anzeigen](media/northwind-orders-canvas-part3/sum-05.png)
 
-## <a name="add-space-for-new-details"></a>Speicherplatz für neue Details hinzufügen
+## <a name="add-space-for-new-details"></a>Platz für neue Details hinzufügen
 
-In einem Katalog Sie können Daten anzeigen, aber nicht aktualisieren oder Hinzufügen von Datensätzen. Unter den Details-Katalog, fügen Sie einen Bereich, in denen der Benutzer kann einen Datensatz im konfigurieren, der **Bestelldetails** Entität und einfügen, die in einer Bestellung aufzeichnen.
+In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nicht aktualisieren oder Datensätze hinzufügen. In der Detail Galerie fügen Sie einen Bereich hinzu, in dem der Benutzer einen Datensatz in der **Order Details** -Entität konfigurieren und diesen Datensatz in eine Bestellung einfügen kann.
 
-1. Reduzieren Sie die Höhe des Detail-Katalogs genug Platz für einen einzelnen Element bearbeiten Speicherplatz unter diesen Katalog vornehmen.
+1. Verringern Sie die Höhe des Detail Katalogs genug, um Platz für einen Bearbeitungsbereich mit einem einzelnen Element in diesem Katalog zu schaffen.
 
-    In diesem Bereich werden Sie Steuerelemente hinzufügen, damit der Benutzer eine Details zur Bestellung hinzufügen kann:
-
-    > [!div class="mx-imgBorder"]
-    > ![Kürzen Sie den Katalog Details](media/northwind-orders-canvas-part3/add-details-01.png)
-
-1. Auf der **einfügen** Registerkarte, fügen Sie eine Bezeichnung, und klicken Sie dann ändern Sie die Größe und verschieben Sie es unter den Details-Katalog.
+    In diesem Bereich fügen Sie Steuerelemente hinzu, sodass der Benutzer ein Bestell Detail hinzufügen kann:
 
     > [!div class="mx-imgBorder"]
-    > ![Fügen Sie eine Bezeichnung](media/northwind-orders-canvas-part3/add-details-02.png)
+    > ![Kürzen der Detail Galerie](media/northwind-orders-canvas-part3/add-details-01.png)
 
-1. Doppelklicken Sie auf den Text, der die neue Bezeichnung, und drücken Sie ENTF.
-
-1. Auf der **Startseite** Registerkarte, legen Sie die neuen Bezeichnung **füllen** Farbe **Hellblau**:
+1. Fügen Sie auf der Registerkarte **Einfügen** eine Bezeichnung ein, und ändern Sie dann die Größe, und verschieben Sie Sie in die Detail Galerie.
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern Sie Bezeichnung Füllung auf Hellblau](media/northwind-orders-canvas-part3/add-details-03.png)
+    > ![Bezeichnung einfügen](media/northwind-orders-canvas-part3/add-details-02.png)
 
-## <a name="add-the-order-details-data-source"></a>Die Order Details-Datenquelle hinzufügen
+1. Doppelklicken Sie auf den Text der neuen Bezeichnung, und drücken Sie dann ENTF.
 
-1. Auf der **Ansicht** Registerkarte **Datenquellen**, und wählen Sie dann **Datenquelle hinzufügen** in die **Daten** Bereich:
-
-    > [!div class="mx-imgBorder"]
-    > ![Hinzufügen einer Datenquelle](media/northwind-orders-canvas-part3/add-details-04.png)
-
-1. Wählen Sie **Common Data Service**:
+1. Legen **Sie** auf der Registerkarte **Startseite** die Füllfarbe der neuen Bezeichnung auf **LightBlue**fest:
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie Common Data Service](media/northwind-orders-canvas-part3/add-details-05.png)
+    > ![Füllung der Bezeichnung in Hellblau ändern](media/northwind-orders-canvas-part3/add-details-03.png)
 
-1. Am oberen Rand der **Daten** im Bereich **Reihenfolge** wählen Sie in das Suchfeld der **Order Details** aus, und wählen Sie dann **Connect** an die Ende des Bereichs:
+## <a name="add-the-order-details-data-source"></a>Hinzufügen der Datenquelle "Order Details"
+
+1. Wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen**aus, und wählen Sie dann im Bereich **Daten** die Option **Datenquelle hinzufügen** aus:
 
     > [!div class="mx-imgBorder"]
-    > ![Angeben von Order Details-Entität](media/northwind-orders-canvas-part3/add-details-06.png)
+    > ![Datenquelle hinzufügen](media/northwind-orders-canvas-part3/add-details-04.png)
 
-    Sie haben soeben eine andere Datenquelle für die app hinzugefügt:
+1. Wählen Sie **Common Data Service**aus:
+
+    > [!div class="mx-imgBorder"]
+    > ![Common Data Service auswählen](media/northwind-orders-canvas-part3/add-details-05.png)
+
+1. Geben Sie am oberen Rand des **Daten** Bereichs im Suchfeld **Order** ein, aktivieren Sie das Kontrollkästchen **Order Details** , und wählen Sie dann am unteren Rand des Fensters **verbinden** aus:
+
+    > [!div class="mx-imgBorder"]
+    > ![Sortier Details angeben (Entität)](media/northwind-orders-canvas-part3/add-details-06.png)
+
+    Sie haben der APP soeben eine weitere Datenquelle hinzugefügt:
 
     > [!div class="mx-imgBorder"]
     > ![Liste der Datenquellen](media/northwind-orders-canvas-part3/add-details-07.png)
 
-    Sie müssen diese Datenquelle hinzufügen, daran, auch wenn die app über eine 1: n Beziehung gelesen werden können, die app noch Zurückschreiben von Änderungen nicht möglich. Die app muss direkt mit der verknüpften Entität ändern.
+    Sie müssen diese Datenquelle hinzufügen, da die APP zwar eine 1: n-Beziehung lesen kann, aber die APP kann noch keine Änderungen zurückschreiben. Die APP muss direkt mit der zugehörigen Entität Änderungen vornehmen.
 
-1. Schließen der **Daten** Bereich.
+1. Schließen Sie den **Daten** Bereich.
 
-## <a name="select-a-product"></a>Wählen Sie ein Produkt
+## <a name="select-a-product"></a>Produkt auswählen
 
-1. Auf der **einfügen** Registerkarte **Steuerelemente** > **Kombinationsfeld**:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option Steuer **Elemente** > Kombinations**Feld**:
 
     > [!div class="mx-imgBorder"]
-    > ![Fügen Sie im Kombinationsfeld](media/northwind-orders-canvas-part3/add-details-08.png)
+    > ![Kombinations Feld einfügen](media/northwind-orders-canvas-part3/add-details-08.png)
 
-    Die [ **Kombinationsfeld** ](controls/control-combo-box.md) Steuerelement angezeigt wird, in der oberen linken Ecke.
+    Das Kombinations [**Feld**](controls/control-combo-box.md) -Steuerelement wird in der linken oberen Ecke angezeigt.
 
-1. Festlegen des Kombinationsfelds **Elemente** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Items** -Eigenschaft des Kombinations Felds auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Choices( 'Order Details'.Product )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie das Kombinationsfeld für den Box-Items-Eigenschaft](media/northwind-orders-canvas-part3/add-details-09.png)
+    > ![Festlegen der Items-Eigenschaft des Kombinations Felds](media/northwind-orders-canvas-part3/add-details-09.png)
 
-    Die [ **Auswahlmöglichkeiten** ](functions/function-choices.md) Funktionsergebnis ist eine Tabelle aller möglichen Werte für die **Produkt** -Feld in der **Order Details** Entität. Dieses Feld ist eine Suche in einer n: 1 Beziehung, also **Auswahlmöglichkeiten** gibt alle Datensätze in der **Bestellprodukte** Entität.
+    Die [**Auswahl**](functions/function-choices.md) Funktion gibt eine Tabelle mit allen möglichen Werten für das Feld " **Product** " in der Entität " **Order Details** " zurück. Dieses Feld ist eine Suche in einer n:1-Beziehung, sodass die **Auswahl** alle Datensätze in der Entität " **Order Products** " zurückgibt.
 
     > [!NOTE]
-    > Sie können auch **Auswahlmöglichkeiten** mit Optionssätze für eine Tabelle mit allen Optionen zurück. Die Schritte dieser Ansatz jedoch nicht erwähnt, aber verwendet bereits verwendet werden, wenn Sie im Kombinationsfeld hinzugefügt, die zeigt, **Bestellstatus** in der Zusammenfassung Form.
+    > Sie können auch **Optionen** mit Options Sätzen verwenden, um eine Tabelle mit allen Optionen zurückzugeben. Diese Vorgehensweise wurde von den Schritten nicht erwähnt, aber Sie haben Sie bereits verwendet, als Sie das Kombinations Feld hinzugefügt haben, das den **Auftrags Status** im Zusammenfassungs Formular anzeigt.
 
-1. In der **Daten** , öffnen Sie im Bereich der **primärer Text** aus, und wählen Sie dann **Nwind_productname**. 
+1. Öffnen Sie im Bereich **Daten** die **primäre Textliste** , und wählen Sie dann **nwind_productname**aus. 
 
-1. Öffnen der **SearchField** aus, und wählen Sie dann **Nwind_productname**.
+1. Öffnen Sie die Liste **searchfield** , und wählen Sie dann **nwind_productname**aus.
 
-    Geben Sie den logischen Namen, da die **Daten** Bereich Anzeigenamen noch in diesem Fall unterstützt nicht:
-
-    > [!div class="mx-imgBorder"]
-    > ![Legen Sie den primären Text für das Kombinationsfeld](media/northwind-orders-canvas-part3/add-details-10.png)
-
-1. Schließen der **Daten** Bereich.
-
-1. In der **Eigenschaften** Registerkarte am rechten Rand, scrollen Sie nach unten, deaktivieren Sie **Mehrfachauswahl zulassen**, und stellen sicher, dass **zulassen suchen** aktiviert ist:
+    Sie geben den logischen Namen an, da der **Daten** Bereich in diesem Fall noch keine anzeigen Amen unterstützt:
 
     > [!div class="mx-imgBorder"]
-    > ![Deaktivieren Sie die Auswahl mehrerer und aktivieren Sie die Suche](media/northwind-orders-canvas-part3/add-details-12.png)
+    > ![Legen Sie den primären Text für das Kombinations Feld fest.](media/northwind-orders-canvas-part3/add-details-10.png)
 
-1. Die Größe und Position im Kombinationsfeld in den Bereich von hellblaue, direkt unter der Produktname Spalte im Detail-Katalog:
+1. Schließen Sie den **Daten** Bereich.
+
+1. Scrollen Sie in der Nähe des rechten Rands auf der Registerkarte **Eigenschaften** nach unten, deaktivieren Sie **Mehrfachauswahl zulassen**, und stellen Sie sicher, dass **Suche zulassen** aktiviert ist:
 
     > [!div class="mx-imgBorder"]
-    > ![Verschieben Sie im Kombinationsfeld](media/northwind-orders-canvas-part3/add-details-13.png)
+    > ![Mehrfachauswahl deaktivieren und Suche aktivieren](media/northwind-orders-canvas-part3/add-details-12.png)
 
-    In diesem Kombinationsfeld wird der Benutzer einen Datensatz im Angeben der **Produkt** Entität für die **Order Details** Datensatz, der die app zu erstellen, wird.
+1. Ändern Sie die Größe, und verschieben Sie das Kombinations Feld in den hellblauen Bereich, direkt unterhalb der Spalte Product-Name in der Detail Galerie:
 
-1. Während Sie die Alt-Taste gedrückt halten, wählen Sie das Kombinationsfeld-Pfeil.
+    > [!div class="mx-imgBorder"]
+    > ![Kombinations Feld "verschieben"](media/northwind-orders-canvas-part3/add-details-13.png)
+
+    In diesem Kombinations Feld gibt der Benutzer einen Datensatz in der **Product** -Entität für den **Bestell Details** -Datensatz an, den die App erstellt.
+
+1. Wenn Sie die Alt-Taste gedrückt halten, wählen Sie den Pfeil nach unten aus.
 
     > [!TIP]
-    > Indem Sie die Alt-Taste gedrückt halten, können Sie Daten mit Steuerelementen in PowerApps Studio interagieren, ohne im Vorschaumodus zu öffnen.
+    > Wenn Sie die Alt-Taste gedrückt halten, können Sie mit Steuerelementen in PowerApps Studio interagieren, ohne den Vorschaumodus zu öffnen.
 
-1. Wählen Sie in der Liste der Produkte, die angezeigt wird, ein Produkt aus:
-
-    > [!div class="mx-imgBorder"]
-    > ![Wählen Sie ein Produkt im Kombinationsfeld](media/northwind-orders-canvas-part3/add-details-14.png)
-
-## <a name="add-a-product-image"></a>Hinzufügen eines Produkts-Images
-
-1. Auf der **einfügen** Registerkarte **Media** > **Image**:
+1. Wählen Sie in der Liste der angezeigten Produkte ein Produkt aus:
 
     > [!div class="mx-imgBorder"]
-    > ![Image-Steuerelement einfügen](media/northwind-orders-canvas-part3/add-details-15.png)
+    > ![Wählen Sie ein Produkt im Kombinations Feld aus.](media/northwind-orders-canvas-part3/add-details-14.png)
 
-    Die [ **Image** ](controls/control-image.md) Steuerelement in der oberen linken Ecke angezeigt wird:
+## <a name="add-a-product-image"></a>Hinzufügen eines Produkt Images
+
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Medien** > **Bild**:
 
     > [!div class="mx-imgBorder"]
-    > ![Der Standardspeicherort der Image-Steuerelement](media/northwind-orders-canvas-part3/add-details-16.png)
+    > ![Bild Steuerelement einfügen](media/northwind-orders-canvas-part3/add-details-15.png)
 
-1. Die Größe und Position des Bilds in den Bereich hellblaue, unter der anderen Produktbilder und neben dem Kombinationsfeld.
+    Das [**Bild**](controls/control-image.md) Steuerelement wird in der oberen linken Ecke angezeigt:
 
-1. Legen Sie die **Image** -Eigenschaft des Bildes an:
+    > [!div class="mx-imgBorder"]
+    > ![Standard Speicherort des Image-Steuer Elements](media/northwind-orders-canvas-part3/add-details-16.png)
 
-    ```powerapps-comma
+1. Ändern Sie die Größe, und verschieben Sie das Bild in den hellblauen Bereich unter den anderen Produktbildern und neben dem Kombinations Feld.
+
+1. Legen Sie für die **Image** -Eigenschaft des Bilds Folgendes fest:
+
+    ```powerapps-dot
     ComboBox1.Selected.Picture
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie die Image-Eigenschaft des Images](media/northwind-orders-canvas-part3/add-details-17.png)
+    > ![Festlegen der Image-Eigenschaft des Bilds](media/northwind-orders-canvas-part3/add-details-17.png)
 
-    Sie verwenden die gleiche Lösung wie früher, um Mitarbeiter in der Zusammenfassung Form angezeigt. Die **ausgewählte** Eigenschaft des Kombinationsfelds gibt den gesamten Datensatz, der alle Produkte, die der Benutzer auswählt, einschließlich der **Bild** Feld.
+    Sie verwenden denselben Trick, den Sie zum Anzeigen des Mitarbeiter Bilds im Zusammenfassungs Formular verwendet haben. Die **ausgewählte** Eigenschaft des Kombinations Felds gibt den gesamten Datensatz eines beliebigen Produkts zurück, das der Benutzer auswählt  , einschließlich des Bilds.
 
-## <a name="add-a-quantity-box"></a>Fügen Sie das Menge hinzu
+## <a name="add-a-quantity-box"></a>Feld "Menge hinzufügen"
 
-1. Auf der **einfügen** Registerkarte **Text** > **Texteingabe**:
-
-    > [!div class="mx-imgBorder"]
-    > ![Texteingabe-Feld hinzufügen](media/northwind-orders-canvas-part3/add-details-18.png)
-
-    Die [ **Texteingabe** ](controls/control-text-input.md) Steuerelement in der oberen linken Ecke angezeigt wird:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Text** > **Texteingabe**:
 
     > [!div class="mx-imgBorder"]
-    > ![Standardspeicherort für die Texteingabe-Feld](media/northwind-orders-canvas-part3/add-details-19.png)
+    > ![Texteingabefeld hinzufügen](media/northwind-orders-canvas-part3/add-details-18.png)
 
-1. Ändern der Größe und verschieben Sie das Texteingabe-Feld nach rechts des Kombinationsfelds, unter der Spalte "Quantity" in der Galerie Detail:
-
-    > [!div class="mx-imgBorder"]
-    > ![Die Größe und Position der Texteingabe-Feld](media/northwind-orders-canvas-part3/add-details-20.png)
-
-    Durch die Verwendung dieses Dialogfelds Texteingabe des Benutzers geben die **Menge** Feld der **Bestelldetails** Datensatz.
-
-1. Legen Sie die **Standard** Eigenschaft dieses Steuerelements auf **""** :
+    Das [**Text Eingabe**](controls/control-text-input.md) -Steuerelement wird in der oberen linken Ecke angezeigt:
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie die ** Standard **-Eigenschaft das Texteingabe-Feld](media/northwind-orders-canvas-part3/add-details-21,png)
+    > ![Standard Speicherort des Texteingabe Felds](media/northwind-orders-canvas-part3/add-details-19.png)
 
-1. Auf der **Startseite** Registerkarte, legen Sie die Ausrichtung des Texts dieses Steuerelements auf **rechts**:
+1. Ändern Sie die Größe, und verschieben Sie das Texteingabefeld nach rechts neben dem Kombinations Feld unter der Spalte Menge in der Detail Galerie:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern der Ausrichtung](media/northwind-orders-canvas-part3/add-details-22.png)
+    > ![Textfeld "Größe ändern und Text verschieben"-Eingabefeld](media/northwind-orders-canvas-part3/add-details-20.png)
 
-## <a name="show-the-unit-and-extended-prices"></a>Die Einheit und erweiterte Preise anzeigen
+    Wenn Sie dieses Texteingabefeld verwenden, gibt der Benutzer das Feld " **Menge** " des **Datensatzes "Bestell Details** " an.
 
-1. Auf der **einfügen** Registerkarte ein **Bezeichnung** Steuerelement.
+1. Legen Sie die **default** -Eigenschaft dieses Steuer Elements auf **""** fest:
+
+    > [!div class="mx-imgBorder"]
+    > ![Festlegen der * * Default * *-Eigenschaft des Texteingabe Felds](media/northwind-orders-canvas-part3/add-details-21.png)
+
+1. Legen Sie auf der Registerkarte **Home** die Textausrichtung dieses Steuer Elements auf **right**fest:
+
+    > [!div class="mx-imgBorder"]
+    > ![Ausrichtung ändern](media/northwind-orders-canvas-part3/add-details-22.png)
+
+## <a name="show-the-unit-and-extended-prices"></a>Anzeigen der Einheit und der erweiterten Preise
+
+1. Fügen Sie auf der Registerkarte **Einfügen** ein **Label** -Steuerelement ein.
 
     Die Bezeichnung wird in der oberen linken Ecke des Bildschirms angezeigt:
 
     > [!div class="mx-imgBorder"]
-    > ![Fügen Sie eine Bezeichnung](media/northwind-orders-canvas-part3/add-details-23.png)
+    > ![Bezeichnung einfügen](media/northwind-orders-canvas-part3/add-details-23.png)
 
-1. Ändern der Größe und verschieben Sie die Bezeichnung rechts neben dem Texteingabe Steuerelement und legen Sie die Bezeichnung des **Text** -Eigenschaft auf diese Formel:
+1. Ändern Sie die Größe, und verschieben Sie die Bezeichnung auf die Rechte Seite des Texteingabe-Steuer Elements, und legen Sie die **Text** -Eigenschaft der Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie die Bezeichnung des Text-Eigenschaft](media/northwind-orders-canvas-part3/add-details-24.png)
+    > ![Festlegen der Text-Eigenschaft der Bezeichnung](media/northwind-orders-canvas-part3/add-details-24.png)
 
-    Dieses Steuerelement zeigt die **Listenpreis** aus der **Bestellprodukte** Entität. Dieser Wert bestimmt die **Unit Price** Feld der **Bestelldetails** Datensatz.
+    Dieses Steuerelement zeigt den **Listenpreis** aus der Entität " **Bestell Produkte** " an. Durch diesen Wert wird das Feld " **Unit Price** " im Datensatz " **Order Details** " bestimmt.
 
     > [!NOTE]
-    > In diesem Szenario der Wert ist schreibgeschützt, aber anderen Szenarien können aufrufen, für den app-Benutzer ändern. In diesem Fall verwenden Sie eine **Texteingabe** steuern, und legen dessen **Standard** Eigenschaft **Listenpreis**.
+    > In diesem Szenario ist der Wert schreibgeschützt, aber andere Szenarien erfordern möglicherweise, dass der App-Benutzer ihn ändert. Verwenden Sie in diesem Fall ein **Text Eingabe** -Steuerelement, und legen Sie dessen **Standard** Eigenschaft auf **List Price**fest.
 
-1. Auf der **Startseite** Registerkarte, legen Sie die Ausrichtung des Texts der Listenpreis Bezeichnung auf **rechts**:
+1. Legen Sie auf der Registerkarte **Start** Seite die Textausrichtung der Bezeichnung List-Price auf **right**fest:
 
     > [!div class="mx-imgBorder"]
-    > ![Ändern der Ausrichtung](media/northwind-orders-canvas-part3/add-details-25.png)
+    > ![Ausrichtung ändern](media/northwind-orders-canvas-part3/add-details-25.png)
 
-1. Kopieren und Einfügen der Listenpreis Bezeichnung, und klicken Sie dann ändern Sie die Größe und verschieben Sie die Kopie auf der rechten Seite der Listenpreis Bezeichnung.
+1. Kopieren Sie die Bezeichnung List-Price, und fügen Sie Sie ein, und ändern Sie dann die Größe, und verschieben Sie die Kopie nach rechts neben der Bezeichnung List-Price.
 
-1. Legen Sie die neuen Bezeichnung **Text** -Eigenschaft auf diese Formel:
+1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie die neue Bezeichnung Text-Eigenschaft](media/northwind-orders-canvas-part3/add-details-27.png)
+    > ![Legen Sie die Text-Eigenschaft der neuen Bezeichnung fest.](media/northwind-orders-canvas-part3/add-details-27.png)
 
-    Dieses Steuerelement zeigt den erweiterten Preis basierend auf der Menge, die der app-Benutzer angegeben und den Listenpreis des Produkts, das der app-Benutzer ausgewählt. Es ist lediglich zur Informationen für den app-Benutzer.
+    Dieses Steuerelement zeigt den erweiterten Preis basierend auf der Menge an, die der App-Benutzer angegeben hat, und dem Listenpreis des Produkts, das der App-Benutzer ausgewählt hat. Es handelt sich lediglich um eine Informations Meldung für den Benutzer der app.
 
-1. Doppelklicken Sie auf die Texteingabe-Steuerelement für eine Menge aus, und geben Sie eine Zahl.
+1. Doppelklicken Sie auf das Texteingabe-Steuerelement für Menge, und geben Sie dann eine Zahl ein.
 
-    Die **erweiterte** Preis Bezeichnung neu berechnet, um den neuen Wert anzuzeigen:
-
-    > [!div class="mx-imgBorder"]
-    > ![Geben Sie eine Menge aus, und zeigen Sie die erweiterten Preises](media/northwind-orders-canvas-part3/add-details-28.png)
-
-## <a name="add-an-add-icon"></a>Ein Symbol hinzufügen "hinzufügen"
-
-1. Auf der **einfügen** Registerkarte **Symbole** > **hinzufügen**:
+    Die **Erweiterte** Preis Bezeichnung wird neu berechnet, um den neuen Wert anzuzeigen:
 
     > [!div class="mx-imgBorder"]
-    > ![Symbol zum Hinzufügen von einfügen](media/northwind-orders-canvas-part3/add-details-29.png)
+    > ![Geben Sie eine Menge an, und zeigen Sie den erweiterten Preis an.](media/northwind-orders-canvas-part3/add-details-28.png)
+
+## <a name="add-an-add-icon"></a>Hinzufügen eines Symbols
+
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Hinzufügen**aus:
+
+    > [!div class="mx-imgBorder"]
+    > ![Add-Symbol einfügen](media/northwind-orders-canvas-part3/add-details-29.png)
 
     Das Symbol wird in der oberen linken Ecke des Bildschirms angezeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![Der Standardspeicherort der hinzufügen-Symbol](media/northwind-orders-canvas-part3/add-details-30.png)
+    > ![Standard Speicherort des Symbols zum Hinzufügen](media/northwind-orders-canvas-part3/add-details-30.png)
 
-1. Ändern der Größe und verschieben Sie dieses Symbol an den rechten Rand des Bereichs hellblaue und legen Sie dann auf des Symbol " **OnSelect** -Eigenschaft auf diese Formel:
+1. Ändern Sie die Größe, und verschieben Sie dieses Symbol an den rechten Rand des hellblauen Bereichs, und legen Sie dann die **onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Patch( 'Order Details';
-        Defaults('Order Details');
+    ```powerapps-dot
+    Patch( 'Order Details',
+        Defaults('Order Details'),
         {
-            Order: Gallery1.Selected;
-            Product: ComboBox1.Selected;
-            Quantity: Value(TextInput1.Text);
+            Order: Gallery1.Selected,
+            Product: ComboBox1.Selected,
+            Quantity: Value(TextInput1.Text),
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );;
-    Refresh( Orders );;
-    Reset( ComboBox1 );;
+    );
+    Refresh( Orders );
+    Reset( ComboBox1 );
     Reset( TextInput1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie das Symbol "OnSelect-Eigenschaft](media/northwind-orders-canvas-part3/add-details-31.png)
+    > ![Festlegen der onselect-Eigenschaft des Symbols](media/northwind-orders-canvas-part3/add-details-31.png)
 
-    Im Allgemeinen die [ **Patch** ](functions/function-patch.md) Funktion aktualisiert, und Datensätze erstellt und bestimmten Argumenten in der folgenden Formel bestimmt die genauen Änderungen beschrieben, die die Funktion machen werden.
+    Im Allgemeinen werden von der [**Patch**](functions/function-patch.md) -Funktion Datensätze aktualisiert und erstellt, und die spezifischen Argumente in dieser Formel bestimmen die genauen Änderungen, die die Funktion durchführt.
 
-    - Das erste Argument gibt die Datenquelle (in diesem Fall die **Bestelldetails** Entity) in dem die Funktion zu aktualisieren oder erstellen Sie einen Eintrag.
-    - Das zweite Argument gibt an, dass die Funktion mit den Standardwerten für einen Datensatz erstellt die **Bestelldetails** Entität sofern nicht anders in das dritte Argument angegeben.
-    - Das dritte Argument gibt an, dass vier Spalten im neuen Datensatz Werte des Benutzers enthält.
+    - Mit dem ersten Argument wird die Datenquelle (in diesem Fall die Entität **Order Details** ) angegeben, in der die Funktion einen Datensatz aktualisiert oder erstellt.
+    - Das zweite Argument gibt an, dass die Funktion einen Datensatz mit den Standardwerten für die **Order Details** -Entität erstellt, sofern im dritten Argument nicht anders angegeben.
+    - Das dritte Argument gibt an, dass vier Spalten im neuen Datensatz Werte vom Benutzer enthalten.
 
-      - Die **Reihenfolge** Spalte enthält die Anzahl von der Reihenfolge, in der Benutzer im Katalog der Reihenfolge ausgewählt.
-      - Die **Produkt** Spalte enthält den Namen des Produkts, dass der Benutzer, der im Kombinationsfeld ausgewählt, die Produkte angezeigt.
-      - Die **Menge** Spalte enthält den Wert, der der Benutzer in das Texteingabe-Feld angegeben.
-      - Die **Unit Price** Spalte enthält den Listenpreis des Produkts, das der Benutzer für diese Bestelldetails ausgewählt.
+      - Die Spalte **Order** enthält die Nummer der Reihenfolge, die der Benutzer im Order Gallery ausgewählt hat.
+      - Die Spalte **Product** enthält den Namen des Produkts, das der Benutzer im Kombinations Feld, in dem Produkte angezeigt werden, ausgewählt hat.
+      - Die Spalte **Menge** enthält den Wert, der vom Benutzer im Feld Texteingabe angegeben wurde.
+      - Die Spalte **Einheitspreis** enthält den Listenpreis des Produkts, das der Benutzer für dieses Bestell Detail ausgewählt hat.
 
     > [!NOTE]
-    > Sie können Formeln, mit denen Daten aus einer beliebigen Spalte erstellen (in der **Bestellprodukte** Entität) für alle Produkte der app-Benutzer im Kombinationsfeld auswählt, die Produkte angezeigt. Wenn der Benutzer wählt einen Datensatz in die **Bestellprodukte** Entität nicht nur wird den Namen des Produkts, die in diesem im Kombinationsfeld angezeigt, sondern auch der Einzelpreis des Produkts in einer Bezeichnung angezeigt wird. Jede Suchwert in einer Canvas-app verweist auf einen vollständigen Datensatz, nicht nur einen Primärschlüssel.
+    > Sie können Formeln erstellen, die Daten aus beliebigen Spalten (in der Entität **Order Products** ) für das Produkt verwenden, das der App-Benutzer im Kombinations Feld auswählt, in dem Produkte angezeigt werden. Wenn der Benutzer einen Datensatz in der Entität " **Bestell Produkte** " auswählt, wird nicht nur der Name des Produkts in diesem Kombinations Feld angezeigt, sondern auch der Einzelpreis des Produkts in einer Bezeichnung. Jeder Such Wert in einer Canvas-App verweist auf einen vollständigen Datensatz, nicht nur auf einen Primärschlüssel.
 
-    Die **aktualisieren** Funktion wird sichergestellt, dass die **Bestellungen** Entität spiegelt wider, den Datensatz, den Sie gerade hinzugefügt haben die **Bestelldetails** Entität. Die **zurücksetzen** Funktion löscht die Product, Quantity und Einzelpreis Daten, damit der Benutzer eine andere Details zur Bestellung für die gleiche Bestellung einfacher erstellen kann.
+    Die **Refresh** -Funktion stellt sicher, dass die **Orders** -Entität den Datensatz widerspiegelt, den Sie soeben der Entität **Order Details** hinzugefügt haben. Mit der **Reset** -Funktion werden die Daten für Produkt, Menge und Einheitspreis gelöscht, sodass der Benutzer auf einfache Weise weitere Bestelldetails für dieselbe Bestellung erstellen kann.
 
-1. Drücken Sie F5, und wählen Sie dann die **hinzufügen** Symbol.
+1. Drücken Sie F5, und wählen Sie dann das Symbol **Hinzufügen** aus.
 
-    Die Reihenfolge entspricht, die Informationen, die Sie angegeben haben:
-
-    > [!div class="mx-imgBorder"]
-    > ![Animation ein Details zur Bestellung hinzufügen](media/northwind-orders-canvas-part3/add-details.gif)
-
-1. (optional) Fügen Sie ein anderes Element der Bestellung hinzu.
-
-1. Drücken Sie Esc, um das Schließen des Vorschaumodus.
-
-## <a name="remove-an-order-detail"></a>Entfernen Sie ein Order-detail
-
-1. Wählen Sie in der Mitte des Bildschirms die Vorlage des Katalogs Details ein:
+    Die von Ihnen angegebenen Informationen werden in der Reihenfolge angezeigt:
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie Katalog: Vorlage](media/northwind-orders-canvas-part3/remove-details-01.png)
+    > ![Animation zum Hinzufügen eines Bestelldetails](media/northwind-orders-canvas-part3/add-details.gif)
 
-1. Auf der **einfügen** Registerkarte **Symbole** > **Papierkorb**:
+1. optionale Fügen Sie der Bestellung ein weiteres Element hinzu.
+
+1. Drücken Sie ESC, um den Vorschaumodus zu schließen.
+
+## <a name="remove-an-order-detail"></a>Entfernen eines Bestelldetails
+
+1. Wählen Sie in der Mitte des Bildschirms die Vorlage der Detail Galerie aus:
 
     > [!div class="mx-imgBorder"]
-    > ![Fügen Sie den Papierkorb-Symbol](media/northwind-orders-canvas-part3/remove-details-02.png)
+    > ![Katalog Vorlage auswählen](media/northwind-orders-canvas-part3/remove-details-01.png)
 
-    Das Papierkorb-Symbol wird in der oberen linken Ecke des Katalogs-Vorlage.
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Papierkorb**:
 
     > [!div class="mx-imgBorder"]
-    > ![Der Standardspeicherort des Symbols](media/northwind-orders-canvas-part3/remove-details-03.png)
+    > ![Papierkorb Symbol einfügen](media/northwind-orders-canvas-part3/remove-details-02.png)
 
-1. Ändern der Größe und verschieben Sie das Papierkorbsymbol auf die rechte Seite der Vorlage für die Details des Katalogs auf das Symbol des **OnSelect** -Eigenschaft auf diese Formel:
+    Das Papierkorb Symbol wird in der oberen linken Ecke der Galerie Vorlage angezeigt.
 
-    ```powerapps-comma
-    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
+    > [!div class="mx-imgBorder"]
+    > ![Standard Speicherort des Symbols](media/northwind-orders-canvas-part3/remove-details-03.png)
+
+1. Ändern Sie die Größe, und verschieben Sie das Papierkorb Symbol auf die Rechte Seite der Detail Galerie Vorlage, und legen **Sie die onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
+
+    ```powerapps-dot
+    Remove( 'Order Details', ThisItem ); Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Legen Sie das Symbol "OnSelect-Eigenschaft](media/northwind-orders-canvas-part3/remove-details-04.png)
+    > ![Festlegen der onselect-Eigenschaft des Symbols](media/northwind-orders-canvas-part3/remove-details-04.png)
 
-    Während ich dies schreibe, kann nicht Entfernen eines Eintrags direkt über eine Beziehung, sodass die [ **entfernen** ](functions/function-remove-removeif.md) -Funktion entfernt einen Eintrag aus der verknüpften Entität direkt. **ThisItem** gibt an, zu entfernen, der Datensatz stammt aus den gleichen Datensatz im Detail-Katalog, in dem das Papierkorb-Symbol angezeigt wird.
+    Zum Zeitpunkt der Erstellung dieses Artikels können Sie einen Datensatz nicht direkt aus einer Beziehung entfernen, daher entfernt die [**Remove**](functions/function-remove-removeif.md) -Funktion einen Datensatz direkt aus der verknüpften Entität. **Thisitem** gibt den zu entfernenden Datensatz aus demselben Datensatz in der Detail Galerie an, in dem das Papierkorb Symbol angezeigt wird.
 
-    In diesem Fall der Vorgang verwendet zwischengespeicherte Daten, also die **aktualisieren** Funktion informiert die **Bestellungen** Entität aus, für die app, die eine der zugehörigen Entitäten geändert wurde.
+    Der Vorgang verwendet wiederum zwischengespeicherte Daten, sodass die **Aktualisierungs** Funktion der **Orders** -Entität mitteilt, dass die APP eine der zugehörigen Entitäten geändert hat.
 
-1. Drücken Sie F5 zum Öffnen des Vorschaumodus, und wählen Sie dann das Papierkorbsymbol neben jeder **Bestelldetails** Datensatz, der aus dem Auftrag entfernt werden sollen.
+1. Drücken Sie F5, um den Vorschaumodus zu öffnen, und wählen Sie dann das Papierkorb Symbol neben jedem Datensatz mit **Bestell Details** aus, den Sie aus der Bestellung entfernen möchten.
 
-1. Versuchen Sie es hinzufügen und Entfernen von verschiedenen Bestelldetails aus Ihre Bestellungen:
+1. Versuchen Sie, verschiedene Bestelldetails in Ihren Bestellungen hinzuzufügen und zu entfernen:
 
     > [!div class="mx-imgBorder"]
-    > ![Animation hinzufügen und Entfernen von Auftragsdetails](media/northwind-orders-canvas-part3/remove-details.gif)
+    > ![Animation zum Hinzufügen und Entfernen von Bestelldetails](media/northwind-orders-canvas-part3/remove-details.gif)
 
-## <a name="in-conclusion"></a>Zusammenfassung
+## <a name="in-conclusion"></a>Schlussfolgerung
 
-Zusammenfassend lässt sich sagen, haben Sie einen anderen Katalog zum Anzeigen von Auftragsdetails und Steuerelemente hinzufügen und entfernen eine Order-Details in der app hinzugefügt. Sie haben diese Elemente verwendet:
+Zur Wiederholung haben Sie einen weiteren Katalog hinzugefügt, um Bestelldetails und Steuerelemente zum Hinzufügen und Entfernen von Bestelldetails in der APP anzuzeigen. Sie haben diese Elemente verwendet:
 
-- Ein zweite Katalog-Steuerelement, das mit dem Order-Katalog über eine 1: n Beziehung verknüpft ist: **Gallery2.Items** = `Gallery1.Selected.'Order Details'`
-- Eine n: 1 Beziehung aus der **Bestelldetails** Entität, die die **Bestellprodukte** Entität: `ThisItem.Product.'Product Name'` und `ThisItem.Product.Picture`
-- Die **Auswahlmöglichkeiten** Funktion, um eine Liste der Produkte abzurufen: `Choices( 'Order Details'.Product' )`
-- Die **ausgewählte** Eigenschaft eines Kombinationsfelds als die vollständige viele-zu-eins Datensatz verknüpfte: `ComboBox1.Selected.Picture` und `ComboBox1.Selected.'List Price'`
-- Die **Patch** Funktion zum Erstellen einer **Bestelldetails** Datensatz: `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
-- Die **entfernen** Funktion zum Löschen einer **Bestelldetails** Datensatz: `Remove( 'Order Details'; ThisItem )`
+- Ein zweites Katalog Steuerelement, das über eine 1: n-Beziehung mit der Order Gallery verknüpft ist: **Wenn gallery2. Items** = `Gallery1.Selected.'Order Details'`
+- Eine n:1-Beziehung zwischen der Entität " **Order Details** " und der Entität " `ThisItem.Product.'Product Name'` **Order Products** ": und`ThisItem.Product.Picture`
+- Die **Auswahl** Funktion zum erhalten einer Liste von Produkten:`Choices( 'Order Details'.Product' )`
+- Die **ausgewählte** Eigenschaft eines Kombinations Felds als kompletter n:1-Datensatz: `ComboBox1.Selected.Picture` und`ComboBox1.Selected.'List Price'`
+- Die **Patch** -Funktion zum Erstellen eines **Auftrags Details-Daten** Satzes:`Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
+- Die **Remove** -Funktion zum Löschen eines **Auftrags Details-Daten** Satzes:`Remove( 'Order Details', ThisItem )`
 
-Diese Reihe von Themen wurde eine kurze exemplarische Vorgehensweise zur Verwendung von Common Data Service-Beziehungen und Option wird in einer Canvas-app zu Lernzwecken. Bevor Sie jede app in der produktionsumgebung veröffentlichen, sollten Sie feldvalidierung, Fehlerbehandlung und viele andere Faktoren.
+Diese Themenreihe war eine kurze exemplarische Vorgehensweise zur Verwendung von Common Data Service Beziehungen und Options Sätzen in einer Canvas-APP zu Schulungszwecken. Bevor Sie eine APP für die Produktion freigeben, sollten Sie die Feld Validierung, die Fehlerbehandlung und viele andere Faktoren berücksichtigen.

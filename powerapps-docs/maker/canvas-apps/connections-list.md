@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29de71e413a83a1c0939796f7b65bd42d4aca3c4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61556657"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68474005"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Übersicht über die Canvas-App-Connectors für PowerApps
 Daten bilden das Herzstück der meisten Apps, u.a. bei denen, die Sie in PowerApps erstellen. Daten werden in einer *Datenquelle* gespeichert, und Sie übergeben diese Daten an Ihre App, indem Sie eine *Verbindung* erstellen. Die Verbindung verwendet einen bestimmten *Connector* für die Kommunikation mit der Datenquelle. PowerApps verfügt über Connectors für viele gängige Dienste und lokale Datenquellen, u.a. SharePoint, SQL Server, Office 365, Salesforce und Twitter. Die ersten Schritte zum Hinzufügen von Daten zu einer Canvas-App werden unter [Hinzufügen einer Datenverbindung in PowerApps](add-data-connection.md) beschrieben.
@@ -31,11 +31,11 @@ Wenn Ihr Connector Tabellen bereitstellt, fügen Sie Ihre Datenquelle hinzu und 
 
  ![Items-Eigenschaft für Quelle mit einfachen Daten](./media/connections-list/ItemPropertyPlain.png)
 
-Sie können die Daten angeben, die von Ihrer App abgerufen werden, indem Sie die **Items**-Eigenschaft des Steuerelements anpassen, das Ihre Daten anzeigt. Als Fortführung des vorherigen Beispiels können Sie die Daten in der Tabelle **Lessons** sortieren oder filtern, indem Sie diesen Namen als Argument für die Funktionen **Search** und **SortByColumn** verwenden. In dieser Abbildung wird durch die Formel, auf die die **Items**-Eigenschaft festgelegt ist, angegeben, dass die Daten basierend auf dem Text in **TextSearchBox1** sortiert und gefiltert werden sollen. 
+Sie können die Daten angeben, die Ihre APP abruft, indem Sie die **Items** -Eigenschaft des Steuer Elements anpassen, das Ihre Daten anzeigt. Als Fortführung des vorherigen Beispiels können Sie die Daten in der Tabelle **Lessons** sortieren oder filtern, indem Sie diesen Namen als Argument für die Funktionen **Search** und **SortByColumn** verwenden. In dieser Abbildung wird durch die Formel, auf die die **Items**-Eigenschaft festgelegt ist, angegeben, dass die Daten basierend auf dem Text in **TextSearchBox1** sortiert und gefiltert werden sollen. 
 
  ![Items-Eigenschaft für Quelle mit erweiterten Daten](./media/connections-list/ItemPropertyExpanded.png)
 
-Weitere Informationen zum Anpassen Ihrer Formel mit Tabellen finden Sie unter folgenden Themen:
+Weitere Informationen zum Anpassen der Formel mit Tabellen finden Sie in den folgenden Themen:
 
   [Grundlegendes zu Datenquellen in PowerApps](working-with-data-sources.md)<br> 
   [Generieren einer App aus Excel-Daten](get-started-create-from-data.md)<br> 
@@ -53,12 +53,12 @@ Wenn Ihr Connector Aktionen bereitstellt, müssen Sie trotzdem weiterhin wie obe
 
 Wenn Sie benutzerdefinierte Datenupdates für Aktionsconnectors verarbeiten müssen, erstellen Sie eine Formel, die die **Patch**-Funktion enthält. Geben Sie in der Formel die Aktion und die Felder an, die Sie an die Aktion binden.  
 
-Weitere Informationen zum Anpassen Ihrer Formel für benutzerdefinierte Updates finden Sie unter folgenden Themen:
+Weitere Informationen zum Anpassen der Formel für benutzerdefinierte Updates finden Sie in den folgenden Themen:
 
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps funktioniert nicht mit dynamischen Schemas**. Das dynamische Schema der Ausdruck bezieht sich auf die Möglichkeit, dass die gleiche Aktion möglicherweise eine andere Tabelle mit unterschiedlichen Spalten zurückgeben. Bedingungen, unter denen die Spalten in den Tabellen unterscheiden können, enthalten die Eingabeparameter der Aktion, die Benutzer oder Rolle, die die Aktion ausgeführt wird und die Gruppe, in der der Benutzer, unter anderem arbeitet. SQL Server gespeicherte Prozeduren können z. B. andere Spalten zurück, wenn es sich bei mit unterschiedlichen Eingaben ausgeführt. Für Aktionen beim dynamischen Schema zeigt die connectordokumentation **die Ausgaben dieses Vorgangs sind dynamisch.** als Rückgabewert. Im Gegensatz dazu wird Microsoft Flow arbeitet mit dynamisches Schema festgelegt, und es wird möglicherweise eine problemumgehung für Ihr Szenario bereitzustellen.
+>  **Powerapps funktioniert nicht mit dynamischem Schema**. Der Ausdruck Dynamic Schema bezieht sich auf die Möglichkeit, dass dieselbe Aktion eine andere Tabelle mit unterschiedlichen Spalten zurückgeben kann. Bedingungen, die dazu führen können, dass sich die Spalten in den Tabellen unterscheiden, sind u. a. die Aktions Eingabeparameter, der Benutzer oder die Rolle, der die Aktion ausführt, und die Gruppe, in der der Benutzer arbeitet. Beispielsweise können SQL Server gespeicherten Prozeduren andere Spalten zurückgeben, wenn Sie mit unterschiedlichen Eingaben ausgeführt werden. Für Aktionen mit dynamischem Schema zeigt die Connector-Dokumentation an, dass **die Ausgaben dieses Vorgangs dynamisch sind.** als Rückgabewert. Im Gegensatz dazu funktioniert Microsoft Flow mit dynamischem Schema und bietet möglicherweise eine Problem Umgehung für Ihr Szenario.
 
 ## <a name="popular-connectors"></a>Gängige Connectors
 

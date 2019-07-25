@@ -1,6 +1,6 @@
 ---
 title: Funktionen „Count“, „CountA“, „CountIf“ und „CountRows“ | Microsoft-Dokumentation
-description: Referenzinformationen, einschließlich Syntax und Beispiel für die Funktionen „Count“, „CountA“, „CounfIf“ und „CountRows“ in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "count", "count", "count", "count" und "countrytrows" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 717baab028b480063f76b799a1267155464d8ac3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8a904db98226152a5e485184e82461634902d6b9
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543511"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473938"
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>Funktionen „Count“, „CountA“, „CounfIf“ und „CountRows“ in PowerApps
 Zählen alle [Datensätze](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md) oder alle Datensätze, die eine Bedingung erfüllen
@@ -43,7 +42,7 @@ Jede dieser Funktionen gibt eine Zahl zurück.
 
 * *EinspaltigeTabelle*: erforderlich.  Die zu zählende Spalte mit Datensätzen.  
 
-**CountIf**( *Tabelle*; *LogischeFormel* )
+**CountIf**( *Tabelle*, *LogischeFormel* )
 
 * *Tabelle* (erforderlich):  Die zu zählende Tabelle mit Datensätzen.
 * *LogischeFormel*: Erforderlich.  Die für jeden Datensatz der Tabelle auszuwertende Formel.  Es werden Datensätze gezählt, die für diese Formel **TRUE** zurückgeben.  Die Formel kann auf Spalten der Tabelle verweisen.
@@ -56,7 +55,7 @@ Jede dieser Funktionen gibt eine Zahl zurück.
 1. Importieren oder Erstellen Sie eine [Sammlung](../working-with-data-sources.md#collections) mit dem Namen **Inventory**, wie im ersten Unterverfahren unter [Show images and text in a gallery (Anzeigen von Bildern und Text in einem Katalog)](../show-images-text-gallery-sort-filter.md) beschrieben.
 2. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:
    
-    **CountIf(Inventory; UnitsInStock < 30)**
+    **CountIf(Inventory, UnitsInStock < 30)**
    
     Die Bezeichnung zeigt **2** an, da von zwei Produkten (Ganymed und Callisto) weniger als 30 Einheiten auf Lager sind.
 3. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:
