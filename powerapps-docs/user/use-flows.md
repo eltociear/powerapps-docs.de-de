@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3041b6cb230aec72a5c3609ef1ea63443bd4a2cc
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.openlocfilehash: 0ecf255ab6e710bf65bd60e39b6dc9b8023876f6
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034832"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67457210"
 ---
 # <a name="use-microsoft-flow-to-automate-processes"></a>Automatisieren von Prozessen mit Microsoft Flow
 
@@ -34,7 +34,7 @@ Stellen Sie in Ihrer App eine Verbindung mit Microsoft Flow her, um Ihre Flows z
 > [!NOTE]
 > Zum Verwalten und Ausführen von Microsoft Flow in Ihrer App muss Microsoft Flow in den Systemeinstellungen für Ihre Organisation aktiviert sein. Weitere Informationen finden Sie unter:  [Flows in Ihrer Organisation](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. Wählen Sie auf der Befehlsleiste **Flow**.  
+1. Wählen Sie in der Befehlsleiste **Flow**aus.  
   
    > [!div class="mx-imgBorder"]
    > ![Menü „Microsoft Flow“](media/flow.png "Menü „Microsoft Flow“") 
@@ -47,7 +47,7 @@ Stellen Sie in Ihrer App eine Verbindung mit Microsoft Flow her, um Ihre Flows z
   
    -   Klicken Sie auf **Beim Flow anmelden**, um sich mit Microsoft Flow zu verbinden und alle Flows anzuzeigen, die Sie ausführen können. Diese Option wird nur angezeigt, wenn Sie aktuell nicht bei Microsoft Flow angemeldet sind.   
 
-    Weitere Informationen zum Erstellen eines Flows finden Sie unter [Erste Schritte mit Microsoft Flow](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
+    Weitere Informationen zum Erstellen eines Flows finden Sie unter [Erste Schritte mit Microsoft Flow](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
     
  
     

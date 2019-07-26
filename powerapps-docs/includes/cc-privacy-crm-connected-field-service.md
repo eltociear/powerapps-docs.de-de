@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: ce9db35844f46e9779055ec30dcba0f9459c3a16
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61575531"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225800"
 ---
 Wenn Sie [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)] installieren und Ihre [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Abonnementinformationen angeben, werden die erforderlichen [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Ressourcen (im Folgenden aufgeführt) bereitgestellt, und Ihre [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)]-Instanz sendet Daten (z. B. Befehle und Registrierungen) an [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Auf diese Weise werden IoT-fähige Szenarios möglich, in denen Geräte registriert werden und dann Befehle an diese gesendet und von ihnen empfangen werden. Administratoren können Connected Field Service deinstallieren, um die entsprechenden Funktionen zu entfernen, und dann zum [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Portal navigieren, um zugehörige [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Dienste zu verwalten, die nicht mehr benötigt werden.  
   
@@ -26,7 +26,7 @@ Wenn Sie [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-servi
   
  [IoT Hub](https://azure.microsoft.com/services/iot-hub/)  
   
- Connected Field Services nutzt IoT Hub zum Verwalten des Status registrierter Geräte und Objekte. Darüber hinaus sendet IoT Hub Befehle und Benachrichtigungen an verbundene Geräte – und verfolgt den Nachrichtenempfang durch Bestätigungsbelege nach. Um die Nachrichtenübermittlung auch bei Geräten mit Verbindungsunterbrechungen sicherzustellen, werden Gerätenachrichten in beständiger Form gesendet.  
+ Connected Field Services nutzt IoT Hub zum Verwalten des Status registrierter Geräte und Objekte. Darüber hinaus sendet IoT Hub Befehle und Benachrichtigungen an verbundene Geräte – und verfolgt den Nachrichtenempfang durch Bestätigungsbelege nach. Geräte Nachrichten werden auf dauerhafte Weise gesendet, um zeitweise verbundene Geräte zu unterstützen.  
   
  **Simulator**  
   

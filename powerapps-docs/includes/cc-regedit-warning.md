@@ -1,1 +1,9 @@
-Durch die unsachgemäße Bearbeitung der Registrierung mit dem Registrierungs-Editor oder mithilfe einer anderen Methode werden möglicherweise schwerwiegende Probleme verursacht. Diese Probleme können dazu führen, dass das Betriebssystem und Microsoft Dynamics 365 neu installiert werden müssen. Es wird keine Garantie übernommen, dass diese Probleme behoben werden können. Änderungen der Registrierung erfolgen auf eigenes Risiko.
+---
+ms.openlocfilehash: 53744746617b5bc3ce81766248291d6ca5b91bda
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67211985"
+---
+Durch die unsachgemäße Änderung der Registrierung mit dem Registrierungs-Editor oder einer anderen Methode können schwerwiegende Probleme verursacht werden. Diese Probleme können eine Neuinstallation des Betriebssystems und von Microsoft Dynamics 365 erfordern. Microsoft kann nicht garantieren, dass sich diese Probleme beheben lassen. Ändern Sie die Registrierung auf eigene Gefahr.

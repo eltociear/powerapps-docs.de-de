@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 747ea34b784b852261debe91f587d64ee3277804
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61574942"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212511"
 ---
 Durch die Installation und Aktivierung der [!INCLUDE[pn_gamification](pn-gamification.md)]-Lösung werden die Konto-IDs des aktivierenden Benutzers (wie Vorname, Nachname und E-Mail-Adresse) in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gespeichert, um eine Autorisierung mit dem [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)]-Dienst zu ermöglichen, der in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gehostet wird. Dies gilt für alle Benutzer, die im [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)]-Dienst von ihrem Administrator aktiviert werden. Die [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)]-Lösung sendet von einem Administrator konfigurierte Daten zu Key Performance Indicators (KPIs) an den [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Service. Die Daten werden dann im strukturierten [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher sowie im Blobspeicher gespeichert.  Avatar, benutzerdefinierte Auszeichnungen und Unternehmenslogo der einzelnen Benutzer werden zwar in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gespeichert, aber nicht an [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] zurückgegeben.  
   
