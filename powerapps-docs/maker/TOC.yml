@@ -1001,6 +1001,16 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: Erstellen eines interaktiven Begleiters
           href: ./model-driven-apps/create-guided-help-learning-path.md
+    - name: Umstellen von Webclientanwendungen
+      items:
+        - name: Schnellstart zur Umstellung
+          href: ./model-driven-apps/transition-web-app.md
+        - name: Schnellstart zur Verwendung einer vorhandenen Anwendung für die Umstellung
+          href: ./model-driven-apps/transition-web-app-existing.md
+        - name: Playbook für eine einheitliche Oberfläche
+          href: ./model-driven-apps/unified-interface-playbook.md
+        - name: Ansatz für eine Umstellung auf eine einheitliche Oberfläche
+          href: ./model-driven-apps/approaching-unified-interface.md
     - name: Barrierefreiheit im PowerApps-App-Designer
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Anpassen der Dynamics 365-App für Outlook
