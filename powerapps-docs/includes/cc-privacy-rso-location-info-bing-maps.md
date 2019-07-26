@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 80f59be59cfcbd12c6a75748f4110a87dfb385e9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577499"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212094"
 ---
 Durch Aktivieren der Optimierung für die Ressourcenplanung werden Informationen, einschließlich Konfigurationsinformationen zum Zeitplan und Arbeitsauftragsdetails (ortsbezogene Adressinformationen, wie Kontoadresse und Ressourcenadresse), von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] an [!INCLUDE[pn_bing_maps](pn-bing-maps.md)] gesendet, um Folgendes zu ermöglichen:  
   

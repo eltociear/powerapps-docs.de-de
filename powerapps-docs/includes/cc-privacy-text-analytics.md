@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 80997689e9d4ebca8eb4809cc3e94dab549482b5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577550"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224729"
 ---
 Durch Aktivierung des Textanalysefeatures aktivieren Sie abhängige Features in [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], die die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Cognitive Services-Textanalyse-API für erweiterte Einblicke nutzen. Diese abhängigen Features sind:  
   
