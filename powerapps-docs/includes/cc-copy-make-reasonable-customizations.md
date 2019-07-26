@@ -1,1 +1,9 @@
-Sie können für interne Zwecke in angemessenem Rahmen Anpassungen an diesem Dokumentationsdownload vornehmen. Sie tragen für jegliche Anpassungen, die Sie vornehmen, die alleinige Verantwortung und Haftung. Dies schließt alle negativen Auswirkungen ein, die Ihre Anpassungen auf jegliche Funktionalität der verknüpften lizenzierten Software haben. Darunter fällt die Softwaredokumentation selber sowie anderweitige Auswirkungen, die mit ihren Anpassungen in Bezug stehen.
+---
+ms.openlocfilehash: a70c96b779a905779c745d299ada79eef1897dcd
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67226831"
+---
+Sie dürfen sinnvolle Anpassungen an diesem Dokumentationsdownload nur für Ihren internen Gebrauch vornehmen. Für alle von Ihnen vorgenommenen Anpassungen sind Sie allein verantwortlich. Sie tragen dafür die volle Verantwortung. Hierzu zählen alle negativen Auswirkungen, die Ihre Anpassungen auf die Funktionsweise der entsprechenden lizenzierten Software, die Dokumentation selbst oder anderen Elementen im Zusammenhang mit der Verwendung Ihrer Anpassungen haben.
