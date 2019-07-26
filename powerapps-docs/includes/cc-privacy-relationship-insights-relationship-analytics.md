@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 864bb7bde775f88cdf43ba5c453bd1ff02f81b85
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 1f6d0eb19a8127e42f1d6a8da8d8c3a452782be0
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577518"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456915"
 ---
 Durch Aktivieren der Beziehungsanalyse, einer Funktion von „Eingebettete Intelligenz“, werden [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Kundendaten, einschließlich benutzerbezogener Informationen, an [!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)] gesendet und dort gespeichert. Dieser Dienst wird in Azure ausgeführt, um Beziehungs-KPIs zwischen [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Benutzern und -Kunden zu verarbeiten. Die Daten werden auch vorübergehend in [!INCLUDE[pn_azure_service_fabric](pn-azure-service-fabric.md)] gespeichert und für die weitere Ausgabe verarbeitet, z.B. zum Ermitteln von Beziehungsintegrität und Trends. Dann werden die Informationen an [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] und anschließend an [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] zurückgegeben.  
   
@@ -20,7 +20,7 @@ Durch Aktivieren der Beziehungsanalyse, einer Funktion von „Eingebettete Intel
   
  [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], ein Dienst, der in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] ausgeführt wird, speichert [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Daten, einschließlich personenbezogener Kundeninformationen, zum Berechnen der Ausgabe für die Beziehungsanalysefunktion. Die Vorschau von [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] unterliegt diesen [ergänzenden Nutzungsbedingungen für Previewfunktionen](http://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
- [Hier erfahren Sie mehr über die Vorschauversion von Customer Insights.](https://azure.microsoft.com/en-us/services/customer-insights/)  
+ [Hier erfahren Sie mehr über die Vorschauversion von Customer Insights.](https://azure.microsoft.com/services/customer-insights/)  
   
  [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)  
   

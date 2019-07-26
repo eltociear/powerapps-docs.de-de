@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 252f09737dbf55309a64ef5d02d479fde0e61c0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577515"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224861"
 ---
 Wenn Sie die E-Mail-Nachverfolgung aktivieren, ein Feature der eingebetteten Intelligenz, werden beim Senden einer E-Mail, die mit der Einstellung **Folgen** markiert wurde, von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] Informationen über Interaktionen mit der E-Mail durch die Empfänger gesammelt und in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gespeichert. Dort können KPIs zu Aktivitäten des Empfängers und Interaktionen mit „verfolgten“ E-Mails berechnet werden.  
   

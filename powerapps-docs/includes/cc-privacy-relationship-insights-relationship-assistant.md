@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 40dcde544894751da2696defc76819892659cb25
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61577531"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224799"
 ---
 Nach dem Aktivieren des Beziehungsassistenten werden Exchange-Daten in begrenztem Umfang, wie etwa der Name und die E-Mail-Adresse eines Absenders sowie Auszüge aus dem E-Mail-Text, abgerufen (in [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] jedoch nicht gespeichert), um relevante Informationen über Ihre E-Mails anzeigen zu können. Darüber hinaus kann der Beziehungsassistent so konfiguriert werden, dass Nachrichten, Finanzinformationen und Fluginformationen durch Senden von Anforderungen an externe Komponenten wie MSN Finanzen und Bing (die nicht als Basisdienste von [!INCLUDE[pn_ms_dyn_365](pn-ms-dyn-365.md)] gelten) abgerufen werden. Administratoren können den Beziehungsassistenten aktivieren und deaktivieren, indem sie zu **Einstellungen** > **Intelligenzkonfiguration** navigieren, auf die Registerkarte **Beziehungsassistent** klicken und die entsprechende Auswahl treffen.  
   

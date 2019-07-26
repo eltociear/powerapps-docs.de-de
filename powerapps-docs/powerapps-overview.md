@@ -6,15 +6,15 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/18/2019
+ms.date: 07/15/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: eb90f35286098f27454e6cad883b0113a211af78
-ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.openlocfilehash: c1d1f9b15c276b6092fca4a1d741812fda99628f
+ms.sourcegitcommit: 1c0b01ab9c76ac353854f7b61d5a9ef13e8b093f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65609399"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68308549"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
@@ -28,7 +28,7 @@ Weitere Informationen finden Sie auf dem [YouTube-Kanal von PowerApps](https://w
 
 ## <a name="powerapps-for-app-makerscreators"></a>PowerApps für App-Ersteller
 
-Mit PowerApps können zwei Arten von Apps erstellt werden: **Canvas-** und **modellgesteuerte** Apps. Weitere Informationen finden Sie unter: [Übersicht über das Erstellen von Apps in PowerApps](maker/index.md).
+Mithilfe von powerapps können Sie drei Arten von apps erstellen: **Canvas**, **Modell gesteuert**und **Portal**. Weitere Informationen finden Sie unter: [Übersicht über das Erstellen von Apps in PowerApps](maker/index.md).
 
 Wenn Sie eine App erstellen möchten, beginnen Sie auf der Seite [web.powerapps.com](https://web.powerapps.com).
 

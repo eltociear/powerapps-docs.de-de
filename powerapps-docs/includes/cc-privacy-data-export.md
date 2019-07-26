@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: e9b0446c2fb09cad33f5a3ae4bb69103f7d07d70
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61579118"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212649"
 ---
 Wenn Sie beim Datenexportdienst ein Datenexportprofil über [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] aktivieren, werden die Daten der Entitäten, die dem Profil hinzugefügt werden, an [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gesendet. Die erste Synchronisierung umfasst alle Daten, die mit den dem Exportprofil hinzugefügten Entitäten verknüpft sind, aber danach umfasst die Synchronisierung nur neue Änderungen, die kontinuierlich an den Datenexportdienst gesendet werden. An den Datenexportdienst gesendete Daten werden vorübergehend in [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)]- und [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage gespeichert, in [!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)] verarbeitet und schließlich mit der im [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Abonnement angegebenen Zieldatenbank synchronisiert (eingefügt, aktualisiert oder gelöscht). Nachdem die Daten synchronisiert wurden, werden sie aus [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)]- und [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage gelöscht. Bei einem Fehler während der Datensynchronisierung werden wenige Daten, die dem Entitätstyp, der Datensatz-ID und dem Synchronisierungszeitstempel entsprechen, in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage gespeichert, um das Herunterladen einer Liste von Datensätzen, die nicht aktualisiert wurden, zu ermöglichen.  
   

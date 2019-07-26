@@ -1,25 +1,33 @@
-Wenn Sie die Produktempfehlungen-Funktion aktivieren und ein Empfehlungsmodell über [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] erstellen, werden die historischen Transaktionsdaten auf Grundlage der konfigurierten Warenkorbdatenentitäten ihr ihrer Filter an [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gesendet, in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] verarbeitet, vorübergehend im [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher gespeichert und zuletzt an die Azure Recommendations API gesendet, um das Machine Learning-Modell zu erstellen. Nachdem das Modell mit der Azure Recommendations API erstellt wurde, werden die Daten aus dem [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher gelöscht. Beachten Sie, dass nur IDs (Firmen-ID, Produkt-ID, Transaktions-ID) zu [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gesendet werden, um das Empfehlungsmodell zu erstellen.
+---
+ms.openlocfilehash: 1cdcb40245aae9a23ecb6d3392e412f8a60b95ba
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212309"
+---
+Beim Erstellen eines Empfehlungsmodells von [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] aus werden durch Aktivieren des Features Produktempfehlungen die historischen Transaktionsdaten basierend auf konfigurierten Warenkorbdaten-Entitäten und ihrer Filter an [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gesendet, in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] verarbeitet, vorübergehend in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher gespeichert und schließlich zum Erstellen des Machine Learning-Modells an die Azure-Empfehlungs-API gesendet. Nach dem Erstellen des Modells mit der Azure-Empfehlungs-API werden die Daten aus dem [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher gelöscht. Beachten Sie, dass nur IDs (Konto-ID, Produkt-ID, Transaktions-ID) an [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] gesendet werden, um das Empfehlungsmodell zu erstellen.
 
-Ein Administrator kann die Produktempfehlungen-Funktion unter **Einstellungen** &gt; **Verwaltung** &gt; **Systemeinstellungen** &gt; Registerkarte **Vorschau** in der [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)]-Organisation aktivieren. Daten werden nur zur Azure Recommendations API gesendet, wenn ein Empfehlungsmodell erstellt wird. Der Systemadministrator kann das bestehende Modell löschen, um Daten zu löschen, die für die Azure Recommendations API freigegeben wurden. Darüber hinaus kann der Systemadministrator die Verbindung zur Azure Recommendations API löschen, damit in Zukunft keine Empfehlungsmodelle erstellt werden können.
+Ein Administrator kann das Feature Produktempfehlungen unter **Einstellungen**&gt;**Verwaltung**&gt;**Systemeinstellungen**&gt; Registerkarte **Vorschau** in der [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)]-Organisation aktivieren. Daten werden nur dann an die Azure-Empfehlungs-API gesendet werden, wenn ein Empfehlungsmodell erstellt wird. Der Systemadministrator hat die Option zum Löschen des vorhandenen Modells, um für die Empfehlungs-API von Azure freigegebene Daten zu löschen. Darüber hinaus kann der Systemadministrator die Verbindung mit der Azure-Empfehlungs-API löschen, um das zukünftige Erstellen von Empfehlungsmodellen zu unterbinden.
 
-Die im Rahmen der Produktempfehlungen-Funktion verfügbaren [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Komponenten und ‑Services sind in den folgenden Abschnitten ausführlich dargestellt.
+[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Komponenten und -Dienste, die mit den Produktempfehlungen in Zusammenhang stehen, werden in den folgenden Abschnitten ausführlich dargestellt.
 
 [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]
 
-[Azure Logik-Apps](https://azure.microsoft.com/services/app-service/logic/)
+[Azure Logic Apps](https://azure.microsoft.com/services/app-service/logic/)
 
-Liefert die orchestrierte Datenpipeline zur Synchronisierung von Produktkatalog und Transaktionsdaten mit der Recommendations API zur Erstellung der Empfehlungsmodellversion. Diese Pipeline wird als mehrinstanzenfähiger Service mit mehreren API-Apps zur Kommunikation zwischen einer Dynamics 365-Organisation und der Recommendations API ausgeführt. Logic Apps werden von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] mit minimalem Kontext ausgelöst, z. B. Modellversion-ID und [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Organisations-URL. 
+Hiermit wird die orchestrierte Datenpipeline zum Synchronisieren von Produktkatalog und -transaktionsdaten mit der Empfehlungs-API zum Erstellen der Empfehlungsmodellversion bereitgestellt. Diese Pipeline wird als mehrinstanzenfähiger Dienst mit mehreren API-Apps für die Kommunikation zwischen einer Dynamics 365-Organisation und der Empfehlungs-API ausgeführt. Logik-Apps werden von [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] mit minimalem Kontext ausgelöst, z.B. der Modellversions-ID und der [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Organisations-URL. 
 
-[Azure API-Apps](https://azure.microsoft.com/services/app-service/api/)
+[Azure-API-Apps](https://azure.microsoft.com/services/app-service/api/)
 
-Dies sind die Webanwendungen, die Webaufträge starten, die Daten der [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Organisation lesen und Daten zu Recommendations API senden, um das Empfehlungsmodell zu erstellen. Es gibt drei API-Apps und entsprechende Webaufträge – einen zum Lesen von Produktdaten, einen zum Lesen von Transaktionsdaten und einen zum Erstellen eines Empfehlungsmodells. API-Apps verwenden einen Webauftrag, um die tatsächliche Datenverarbeitung im Hintergrund auszuführen und die Datenausgabe in den [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-BLOB-Speicher zu schreiben. Die Daten werden vorübergehend im [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-BLOB-Speicher gespeichert. Nachdem das Modell erstellt wurde, werden die Daten aus dem [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher gelöscht.
+Hierbei handelt es sich um die Webanwendungen, die die Webaufträge auslösen, die Daten aus der [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Organisation und lesen und Daten an die Empfehlungs-API senden, um das Empfehlungsmodell zu erstellen. Es gibt 3 API-Apps und entsprechende Webaufträge – einen für das Lesen von Produktdaten, einen für das Lesen von Transaktionsdaten und einen zum Erstellen eines Empfehlungsmodells. API-Apps verwenden einen Webauftrag für die eigentliche Datenverarbeitung im Hintergrund zum Schreiben der Datenausgabe in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage. Die Daten werden vorübergehend in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage gespeichert. Sobald das Modell erstellt ist, werden die Daten schließlich aus [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage gelöscht.
 
 [Azure-Tabelle](https://azure.microsoft.com/services/storage/tables/)
 
-Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Tabelle wird für die Übermittlung von Modellversion und Organisationskontext zwischen der API-App und einem Webauftrag verwendet.
+[!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Tabelle wird für den Austausch der Modellversion und des Organisationskontexts zwischen der API-App und einem Webauftrag verwendet.
 
-[Azure Blob-Speicher](https://azure.microsoft.com/services/storage/) 
+[Azure Blob Storage](https://azure.microsoft.com/services/storage/) 
 
-Daten werden von Webaufträgen vorübergehend im [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-BLOB-Speicher gespeichert und gelöscht, nachdem die Logic App-Pipeline das Ausführen abgeschlossen hat.
+Webaufträge speichern Daten vorübergehend in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage und löschen sie, sobald die Logik-App-Pipeline die Ausführung abgeschlossen hat.
 
-[Azure Recommendations API](https://www.microsoft.com/cognitive-services/en-us/recommendations-api) Die Azure Recommendations API wird mit minimalen Daten der Produkt-IDs, Transaktions-IDs und Firmen-IDs gesendet, um das Empfehlungsmodell zu erstellen. Daten werden mit dem Recommendations API-Service gespeichert, bis eine entsprechende Modellversion existiert.
+[Azure-Empfehlungs-API](https://www.microsoft.com/cognitive-services/en-us/recommendations-api) Die Azure-Empfehlungs-API wird mindestens mit Produkt-IDs, Transaktions-IDs und Konto-IDs gesendet, um das Empfehlungsmodell zu erstellen. Daten werden mit dem Empfehlungs-API-Dienst gespeichert, bis eine entsprechende Version des Modells vorhanden ist.
