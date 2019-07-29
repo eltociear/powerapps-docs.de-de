@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 7dd418db04f72310210925345611bc1a0b2a6f17
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444407"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63318515"
 ---
 # <a name="share-records-using-access-team"></a>Freigeben von Datensätzen mit Access Team
 
@@ -35,7 +35,7 @@ Ein Zugriffsteam gewährt den Zugriff auf Datensätze über deren Freigabe. Mitg
   > [!div class="mx-imgBorder"]
   > ![Meine aktiven Konten](media/AccessTeam1.png "Meine aktiven Konten")
 
-3. Klicken Sie im Abschnitt **Mitglieder des Zugriffsteams** auf **Weitere Befehle** (**…**) > **Benutzer hinzufügen**.
+3. Klicken Sie im Abschnitt **Mitglieder des Zugriffsteams** auf **Weitere Befehle** ( **…** ) > **Benutzer hinzufügen**.
 
   > [!div class="mx-imgBorder"]
   > ![Hinzufügen eines Benutzers zum Zugriffsteam](media/AccessTeam2.png "Hinzufügen eines Benutzers zum Zugriffsteam")
