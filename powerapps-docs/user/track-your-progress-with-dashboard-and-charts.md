@@ -67,7 +67,7 @@ Diagramme bieten Ihnen einen schnellen Überblick über die Nachverfolgung ihrer
 
 -   Zeigen Sie mit der Maus auf das Diagramm, um eine QuickInfo mit schnellen Informationen zu diesem Bereich des Diagramms anzuzeigen.
 -   Klicken Sie auf den Bereich eines Diagramms, um eine Rasteransicht mit weiteren Details zu den Daten im Diagramm anzuzeigen.
--   Um ein Diagramm zu erweitern, wählen **Sie die Schalt**Fläche Diagramm erweitern Diagramm![Ansicht]erweitern Diagramm(media/expandviewbutton.png "Ansicht") erweitern aus.
+-   Um ein Diagramm zu erweitern, wählen **Sie die Schalt**Fläche Diagramm erweitern Diagramm![Ansicht](media/expandviewbutton.png " erweitern Diagramm Ansicht") erweitern aus.
 -   Wählen Sie ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") aus, und wählen Sie dann eine Aktion aus, um Datensätze im Diagramm anzuzeigen oder das Diagramm zu aktualisieren: **Aktualisieren** oder **Anzeigen von Datensätzen**.
      
      > [!div class="mx-imgBorder"]
