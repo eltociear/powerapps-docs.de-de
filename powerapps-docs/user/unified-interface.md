@@ -27,7 +27,7 @@ ms.locfileid: "61563135"
 Die einheitliche Schnittstelle für Modell gesteuerte Apps bietet eine konsistente und barrierefreie Benutzeroberfläche auf allen Geräten – ob auf einem Desktop, Laptop, Tablet oder Smartphone. Die apps werden skaliert, indem die Komponenten auf dem Bildschirm wieder geleitet werden. Das reaktionsfähige Design passt sich je nach Bildschirmgröße an Ihre Umgebung an. je mehr verfügbarer Speicherplatz vorhanden ist, desto mehr Informationen können angezeigt werden.
 
 > [!div class="mx-imgBorder"]
-> ![Vereinheitlichte Schnittstelle an Bildschirm] anpassen (media/Reflow.png "Vereinheitlichte Schnittstelle an Bildschirm") anpassen
+> ![Vereinheitlichte Schnittstelle an Bildschirm](media/Reflow.png " anpassen Vereinheitlichte Schnittstelle an Bildschirm") anpassen
 
 ## <a name="navigation"></a>Navigation
 
