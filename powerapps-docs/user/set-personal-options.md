@@ -29,7 +29,7 @@ ms.locfileid: "61564389"
     
 ## <a name="to-set-personal-options"></a>So legen Sie persönliche Optionen fest  
   
-1.  Klicken Sie in der oberen rechten Ecke des Bildschirms auf die Schaltfläche **mit den Schalt** Flächen ![Optionen für powerapps]-(media/options-button.png "Optionen für powerapps") .  
+1.  Klicken Sie in der oberen rechten Ecke des Bildschirms auf die Schaltfläche **mit den Schalt** Flächen ![Optionen für powerapps](media/options-button.png "Optionen für powerapps") .  
   
 2.  Wählen Sie **Personalisierungs Einstellungen**aus.  
   
