@@ -822,6 +822,8 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: Hinzufügen oder bearbeiten von App-Komponenten
                   href: ./model-driven-apps/add-edit-app-components.md
+                - name: Hinzufügen der Teamentität als Nachschlageoption
+                  href: ./model-driven-apps/team-entity-lookup.md
             - name: Arbeiten mit Formularen
               href: ./model-driven-apps/create-design-forms.md
               items:
