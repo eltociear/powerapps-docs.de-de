@@ -57,11 +57,11 @@ Informationen zum Erstellen eines benutzerdefinierten Berichts finden Sie im [Ha
   
    2.  Das Textfeld über **geordneter Bericht** zeigt den übergeordneten Bericht des aktuellen Berichts an, sofern vorhanden.  
   
-   3. **Kategorien**. Wählen Sie die Schaltfläche mit den Auslassungs Punkten der Schaltfläche mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern aus** ![](media/ellipsis-button.png "") , und geben Sie dann die Kategorien an, die in diesen Bericht aufgenommen  
+   3. **Kategorien**. Wählen Sie die Schaltfläche mit den Auslassungs Punkten der Schaltfläche mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern aus** ![Auslassungsschaltfläche](media/ellipsis-button.png "Auslassungsschaltfläche") , und geben Sie dann die Kategorien an, die in diesen Bericht aufgenommen  
   
-   4. **Zugehörige Daten Satz Typen**. Damit der Bericht in der Liste Berichte auf einer Seite für bestimmte Daten Satz Typen angezeigt wird, klicken Sie auf die Schaltfläche mit den Auslassungs Punkten auf der Schaltfläche mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern** ![](media/ellipsis-button.png "") , und wählen Sie dann Daten Satz Typen aus.  
+   4. **Zugehörige Daten Satz Typen**. Damit der Bericht in der Liste Berichte auf einer Seite für bestimmte Daten Satz Typen angezeigt wird, klicken Sie auf die Schaltfläche mit den Auslassungs Punkten auf der Schaltfläche mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern** ![Auslassungsschaltfläche](media/ellipsis-button.png "Auslassungsschaltfläche") , und wählen Sie dann Daten Satz Typen aus.  
   
-   5. **Anzeigen in**. Um anzugeben, wo Berichte sichtbar sein sollen, wählen Sie die Schaltfläche mit den Auslassungs Punkten der Schaltfläche mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern aus** ![Ellipsis button](media/ellipsis-button.png "Ellipsis button") , und wählen Sie dann eine oder mehrere der Optionen aus.  
+   5. **Anzeigen in**. Um anzugeben, wo Berichte sichtbar sein sollen, wählen Sie die Schaltfläche mit den Auslassungs Punkten der Schaltfläche mit **den Auslassungs Punkten für dieses Feld auswählen oder ändern aus** ![Auslassungsschaltfläche(media/ellipsis-button.png "Auslassungsschaltfläche") , und wählen Sie dann eine oder mehrere der Optionen aus.  
   
         Wenn keine Werte ausgewählt sind, ist der Bericht für Endbenutzer nicht sichtbar.  
   
