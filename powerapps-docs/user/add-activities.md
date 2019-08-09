@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/26/2018
+ms.date: 8/02/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,14 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 308e36938c673a5f6ba83be02591a7199af20432
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 8f061078b4401ee1ea2db9a2e7e6a4443bd053b6
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61529455"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783687"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick über Ihre gesamte Kommunikation mit einem Kunden oder Kontakt zu behalten. Sie können z.B. Notizen erstellen, Beiträge und eine Aufgabe hinzufügen, E-Mails senden, Details zu Telefonaten hinzufügen oder Termine ausmachen. Das System versieht jede Aktivität automatisch mit einem Zeitstempel und zeigt an, wer sie angelegt hat. Sie und andere Mitglieder Ihres Teams können durch die Aktivitäten scrollen, um den Verlauf der Zusammenarbeit mit einem Kunden einzusehen. 
 
@@ -30,6 +32,7 @@ Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick 
 - Wenn das Feld **Bezug** einer Aktivität festgelegt ist, wird die Aktivität in dem Datensatz angezeigt, dem sie zugeordnet ist. 
 - Sie können auch im Filterbereich die Aktivitäten nach Datensatztyp und Datum filtern. 
 - Wenn eine neue Aktivität erstellt wird, erhalten Sie auf der Pinnwand **Zeitachse** eine Benachrichtigung des Typs **Was Sie verpasst haben**.
+- Eine e-Mail mit einem angefügten Bild wird Inline mit dem Textkörper der e-Mail angezeigt.
 
   > [!div class="mx-imgBorder"]
   > ![Zeitachsenansicht von Aktivitäten in PowerApps](media/TimelineViewOfActivity.png "Zeitachsenansicht von Aktivitäten in PowerApps")  
@@ -95,6 +98,17 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
 5. Um eine Vorlage für den E-Mail-Text zu verwenden, klicken Sie auf der Befehlsleiste auf **Vorlage einfügen**, und wählen Sie dann die Vorlage aus.   
   
 6. Wenn Sie mit dem Ausfüllen des Formulars fertig sind, klicken Sie auf **Senden**. 
+
+
+    > [!NOTE]
+    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > **e-Mail-** Registerkarte, und wählen Sie dann **e-Mail als Konversation auf der Zeita** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](set-personal-options.md).
+
+   > [!div class="mx-imgBorder"]
+   > ![Persönliche Optionen festlegen](media/emailsettings1.png "Persönliche Optionen festlegen")
+   
+    > [!div class="mx-imgBorder"]
+    > ![Persönliche e-Mail-Optionen festlegen](media/emailsettings2.png "Persönliche e-Mail-Optionen festlegen")
+
   
 ## <a name="add-an-appointment"></a>Hinzufügen eines Termins  
 
@@ -118,10 +132,14 @@ Sie können im Aktivitätsbereich auch ganz einfach Notizen hinzufügen.
 
 3. Wenn Sie mit dem Ausfüllen des Formulars fertig sind, klicken Sie auf **Notiz hinzufügen**, um die Notiz zu speichern.
 
+
+> [!NOTE]
+> Sie können eine Notiz hinzufügen, indem Sie im oberen Abschnitt der Pinnwand **Zeitachse** auf das **Pluszeichen** klicken.
+
    > [!div class="mx-imgBorder"]
    > ![Hinzufügen einer Notiz](media/addnote.png "Hinzufügen einer Notiz")
 
-Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten. Sie können eine Notiz hinzufügen, indem Sie im oberen Abschnitt der Pinnwand **Zeitachse** auf das **Pluszeichen** klicken.
+Nachdem die Notiz hinzugefügt wurde, können Sie sie löschen oder bearbeiten.
 
 
 > [!div class="mx-imgBorder"]
@@ -154,17 +172,13 @@ Klicken Sie auf der Pinnwand **Zeitachse** auf die ![Schaltfläche „Mehr“ ](
 
 ## <a name="use-the-filter-pane"></a>Verwenden des Filterbereichs
 
-Sie können Aktivitäten, Notizen oder Beiträge auf der Pinnwand „Zeitachse“ mithilfe des Filterbereichs schnell nach Datensatz- oder Aktivitätstyp und Datum filtern.
+Sie können Aktivitäten, Notizen oder Beiträge auf der Pinnwand „Zeitachse“ mithilfe des Filterbereichs schnell nach Datensatz- oder Aktivitätstyp und Datum filtern. Sie können mehrere Filter und Filteroptionen gleichzeitig auswählen. Sie können das Aktivitäts Fälligkeitsdatum, das Änderungsdatum oder den Status der Aktivität Filtern und anzeigen.
 
-1. Klicken Sie auf der Pinnwand **Zeitachse** auf die ![Schaltfläche „Mehr“ ](media/MoreButton.png "Schaltfläche „Mehr“") und dann auf **Filterbereich öffnen**.
+- Wählen Sie in der **Zeit** Achsen-Wand das Symbol Filter Bereichs Symbol **Öffnen** aus.
 
 > [!div class="mx-imgBorder"]
 > ![Filterbereich auf der Zeitachse](media/filterpane.png "Filterbereich auf der Zeitachse")
 
-2. Klicken Sie nach dem Anzeigen der gefilterten Informationen auf das Trichtersymbol **Alle Filter löschen**, um den Filter zu löschen. Dadurch wird der Filter zurückgesetzt, sodass alle Informationen auf der Pinnwand „Zeitachse“ angezeigt werden.
-
-> [!div class="mx-imgBorder"]
-> ![Zurücksetzen des Filters](media/resetfilter.png "Zurücksetzen des Filters")
 
 ## <a name="manage-activities"></a>Verwalten von Aktivitäten
 Sie können Aktivitäten direkt auf der Zeitachse verwalten, z.B. eine Aktivität einer anderen Person zuordnen, eine Aktivität löschen oder schließen, eine Aktivität zu einer Warteschlange hinzufügen, einen zugehörigen Datensatz öffnen oder Notizen und Beiträge bearbeiten.

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 08/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,15 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3894efdf379c5568ae6f95baa87e9ec77dae5d8
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 11d9318ac06e264b6b917c81358d060d97864eb8
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61564389"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783556"
 ---
 # <a name="set-personal-options"></a>Festlegen persönlicher Optionen
 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Ändern Sie die Anzeigeeinstellungen in einer APP entsprechend Ihren Vorlieben. Beispielsweise können Sie die Seite auswählen, die angezeigt werden soll, sobald Sie sich bei der App anmelden. Sie können auch viele andere Optionen wie Sprache, Währung und Zeitzone personalisieren.  
     
@@ -111,6 +113,7 @@ ms.locfileid: "61564389"
 |                                                                                           Konfigurieren von Regeln für die Ordner Verfolgung                                                                                           |                                                                                                                                        Richten Sie Ordner ein, damit eingehende e-Mails automatisch nachverfolgt werden.                                                                                                                                          |
 |                                                           **Automatisches Erstellen von Datensätzen in Dynamics 365**                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                                                                       Stelle                                                                                                        |                                                                                                                                                                                 Wählen Sie diese Option aus, damit Dynamics 365 aus den Informationen in nach verfolgten e-Mail-Nachrichten automatisch Leads oder Kontakte erstellen kann.                                                                                                                                                                                  |
+|                                                                                                  E-Mails als Konversation auf der Zeitachse anzeigen                                                                                                 |                                                                                                                                                                                                                                                    Wählen Sie diese Option aus, um e-Mails in einem Konversations Thread aufzulisten, so wie viele e-Mail-Anwendungen beim Anzeigen von e-Mails in einer Konversation                                                                                                                                                                                                                                                    |
 |                                                                                                  Anzeigen Ihres Postfachs                                                                                                  |                                                                                                                                                                                                                                                    Wählen Sie diesen Link aus, um die Post Fach Details anzuzeigen.                                                                                                                                                                                                                                                    |
   
 ## <a name="privacy-tab-options"></a>Optionen für Datenschutz  

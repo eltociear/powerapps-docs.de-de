@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 3/13/2019
+ms.date: 8/01/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,24 +15,26 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: e21c9763e42dd45c7bed4691dfc27899263bef00
+ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61545056"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783577"
 ---
 # <a name="create-a-new-record"></a>Neuen Datensatz erstellen
 
 
-Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die Eingabe von fast allen Informationen in das System schnell und einfach. Der Befehl befindet sich auf der Navigationsleiste. Er ist also immer verfügbar, wenn Sie neue Informationen in das System eingeben müssen. Wenn Sie diese Option verwenden, müssen Sie nur wenige Felder ausfüllen. Später können Sie weitere Details eingeben, wenn Sie mehr Zeit oder Informationen haben.  
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die Eingabe von fast allen Informationen in das System schnell und einfach. Der Befehl befindet sich auf der Navigationsleiste. Er ist also immer verfügbar, wenn Sie neue Informationen in das System eingeben müssen. Sie können auch einen Datensatz speichern und einen neuen Datensatz direkt aus dem Formular für die **schneller** Fassung erstellen.
 
 > [!NOTE]
 > Die Option **Schnellerfassung** ist nur für Datensätze verfügbar, die von Ihrem Administrator aktiviert werden.
     
 1. Klicken Sie auf der Navigationsleiste auf das **Pluszeichen** ![Schaltfläche „Datensatz erstellen“](media/create-record-button.png "Schaltfläche „Datensatz erstellen“"), und wählen Sie dann das gewünschte Element aus.  
   
-2.  Füllen Sie die Felder aus, und klicken Sie dann auf **Speichern und schließen**.  
+2.  Füllen Sie die Felder aus, und klicken Sie dann auf **Speichern und schließen**. Oder klicken Sie zum Speichern und Erstellen eines weiteren Datensatzes auf den Pfeil nach unten, und wählen Sie dann speichern aus, **& neu erstellen**.
 
   ![Speichern eines Datensatzes](media/quick_create.png "Speichern eines Datensatzes")
   
