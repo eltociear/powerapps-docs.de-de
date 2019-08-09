@@ -842,6 +842,8 @@
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: Eigenschaften im Formular-Designer
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: Konfigurieren von Headereigenschaften
+                      href: ./model-driven-apps/form-designer-header-properties.md
                     - name: Verwenden der Strukturansicht
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: Formulartypen
