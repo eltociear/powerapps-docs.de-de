@@ -1,8 +1,8 @@
 ---
-title: Protokollierung und Rückverfolgung (Common Data Service) | Microsoft Docs
+title: Protokollierung und Verfolgung (Common Data Service) | Microsoft Docs
 description: 'Verwenden Sie das Trace-Protokoll, um Informationen zur Ausführung von Plug-Ins zu speichern, um das Plug-In-Debugging zu unterstützen.'
 ms.custom: ''
-ms.date: 1/28/2019
+ms.date: 05/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,97 +17,82 @@ search.app:
 ---
 # <a name="tracing-and-logging"></a>Protokollierung und Ablaufverfolgung
 
- Eine alternative Methode, Probleme bei einem Plug-In oder einer benutzerdefinierten Workflowaktion (benutzerdefinierter Code) zu beheben, verglichen mit Debugging in [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)], ist das Verwenden der Ablaufverfolgung. Die Ablaufverfolgung unterstützt Entwickler durch die Aufzeichnung von benutzerdefinierten Informationen zur Laufzeit als Hilfe bei der Ursachendiagnose für Codefehler. Die Ablaufverfolgung ist besonders hilfreich bei der Problembehebung von registriertem benutzerdefiniertem Code von [!INCLUDE[pn_CRM_Online](../../includes/pn-crm-online.md)], da dies die einzige unterstützte Problembehebungsmethode für dieses Szenario ist. Ablaufverfolgung wird für Sandkasten- (mit teilweiser Vertrauenswürdigkeit) und registrierten benutzerdefinierten Code mit voller Vertrauenswürdigkeit und beim synchronen oder asynchronen Ausführen unterstützt. Ablaufverfolgung wird nicht unterstützt für benutzerdefinierten Code, der in [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../../includes/pn-microsoft-dynamics-crm-for-outlook.md)] oder einem anderen Mobil-Client ausgeführt wird.  
+Verwenden Sie eine Verfolgung, um Fehler bei einem Plug-In oder einer benutzerdefinierten Workflowaktivität (benutzerdefiniertem Code) zu beheben. Die Ablaufverfolgung unterstützt Entwickler durch die Aufzeichnung von Informationen zur Laufzeit als Hilfe bei der Ursachendiagnose für Codefehler. Die Ablaufverfolgung wird für synchrone oder synchrone Ausführung unterstützt.
   
- Die Aufzeichnung von Ablaufverfolgungsinformationen zur Laufzeit für [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)]-Apps wird von einem Dienst namens <xref:Microsoft.Xrm.Sdk.ITracingService> bereitgestellt. Die Informationen, die für diesen Dienst durch benutzerdefinierten Code bereitgestellt werden, können an drei verschiedenen Orten erfasst werden, wie hier identifiziert.  
-
-> [!NOTE]
-> Nachverfolgungsrotokollierung mithilfe von `ITracingService` Schnittstellen geht nur, wenn das Plug-In im Sandkastenumgebung-Modus registriert ist.
+Die Aufzeichnung von Ablaufverfolgungsinformationen zur Laufzeit für Common Data Service wird von einem Dienst namens <xref:Microsoft.Xrm.Sdk.ITracingService> bereitgestellt. Die Informationen, die für diesen Dienst durch benutzerdefinierten Code bereitgestellt werden, können an drei verschiedenen Orten erfasst werden, wie hier identifiziert.  
 
 - **Ablaufverfolgungsprotokoll**  
   
-     Ablaufverfolgungsprotokoll-Datensätze vom Typ **PluginTraceLog** können in der Webanwendung gefunden werden. Navigieren Sie zu **Einstellungen** und wählen die Kachel **Plug-in Trace Log**. Die Kachel ist nur sichtbar, wenn Sie über Zugriff auf die Ablaufverfolgungsprotokoll-Entitätsdatensätze in Ihrer zugewiesenen Sicherheitsrolle verfügen. Das Schreiben dieser Datensätze wird über die Ablaufverfolgungseinstellungen gesteuert, die im nächsten Abschnitt beschrieben werden.
-  
-    > [!NOTE]
+    Ablaufverfolgungsprotokolldatensätze werden für die [PluginTraceLog-Entität](reference/entities/plugintracelog.md) erstellt. Das Schreiben dieser Datensätze wird über die Ablaufverfolgungseinstellungen gesteuert, die in [Ablaufverfolgungsprotokollierung aktivieren](#enable-trace-logging) beschrieben werden.
+
+    Diese Daten können in modellgesteuerten Anwendungen gefunden werden, indem Sie zu **Einstellungen** navigieren und die Kachel **Plug-In-Ablaufverfolgungsprotokoll** auswählen. Die Kachel ist nur sichtbar, wenn Sie über Zugriff auf die Ablaufverfolgungsprotokoll-Entitätsdatensätze in Ihrer zugewiesenen Sicherheitsrolle verfügen.
+
+    Sie finden es möglicherweise einfacher, diese Daten mit der Web-API in Ihrem Browser unter Anwendung des Beispiels abzurufen, das unter [Ablaufverfolgung verwenden](debug-plug-in.md#use-tracing) dargestellt wird, oder indem Sie das [Plug-in Trace-Viewer](#plug-in-trace-viewer)-Community-Tool verwenden.
+
+    > [!IMPORTANT]
     > Die Ablaufverfolgungsprotokollierung erfordert Organisationsspeicherplatz, insbesondere wenn viele Ablaufverfolgungen und Ausnahmen generiert werden. Sie sollten die Ablaufverfolgungsprotokollierung nur für das Debugging und die Problembehandlung aktivieren, und deaktivieren, wenn die Überprüfung abgeschlossen ist.  
   
 - **Fehlerdialogfeld**  
   
-     Ein synchrones registriertes Plug-In oder eine benutzerdefinierte Workflowaktion, die eine Ausnahme an die Plattform zurückgibt, führt zu einem Fehlerdialogfeld in der Webanwendung, die dem angemeldeten Benutzer angezeigt wird. Der Benutzer kann die Schaltfläche **Protokolldatei herunterladen** im Dialogfeld auswählen, um das Protokoll mit der Ausnahme und der Ablaufverfolgungsausgabe anzuzeigen.  
+     Ein synchrones registriertes Plug-In oder eine benutzerdefinierte Workflowaktivität, die eine Ausnahme von der Plattform zurückgibt, führt zu einem Fehlerdialogfeld in der Webanwendung, die dem angemeldeten Benutzer angezeigt wird. Der Benutzer kann die Schaltfläche **Protokolldatei herunterladen** im Dialogfeld auswählen, um das Protokoll mit der Ausnahme und der Ablaufverfolgungsausgabe anzuzeigen.  
   
 - **Systemauftrag**  
   
      Bei asynchronen registrierten Plug-Ins oder benutzerdefinierten Workflowaktionen, die eine Ausnahme zurückgeben, werden die Ablaufverfolgungsinformationen im Bereich **Details** des **Systemauftrag**-Formulars in der Webanwendung angezeigt.  
   
-<a name="bkmk_trace-settings"></a>   
-## <a name="enable-trace-logging"></a>Ablaufverfolgungsprotokollierung aktivieren  
- Um die Ablaufverfolgungsprotokollierung in einer Organisation zu aktivieren, die diese Funktion unterstützt, navigieren Sie in der Webanwendung zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen**. Auf der Registerkarte **Anpassung** suchen Sie das Dropdownmenü namens **Protokollierung in Plug-in-Ablaufverfolgungsprotokoll aktivieren** und wählen Sie eine der verfügbaren Optionen aus.  
-  
-|Option|Beschreibung|  
-|------------|-----------------|  
-|Deaktiviert|Das Schreiben in das Ablaufverfolgungsprotokoll ist deaktiviert. Kein **PluginTraceLog** Datensatz wird erstellt. Allerdings kann benutzerdefinierter Code weiter die <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])>-Methode aufrufen, auch wenn noch kein Protokoll geschrieben wurde.|  
-|Ausnahmen|Ablaufverfolgungsinformationen werden in das Protokoll geschrieben, wenn eine Ausnahme wieder an die Plattform von benutzerdefiniertem Code zurückgegeben wird.|  
-|Alle|Ablaufverfolgungsinformationen werden bei Fertigstellung von Code in das Protokoll geschrieben, oder wenn eine Ausnahme wieder an die Plattform von benutzerdefiniertem Code zurückgegeben wird.|  
-  
- Wenn die Ablaufverfolgungsprotokollierungs-Einstellung auf **Ausnahme** gesetzt ist und benutzerdefinierter Code eine Ausnahme wieder zur Plattform zurückgibt, wird ein Ablaufverfolgungsprotokolldatensatz erstellt und Ablaufverfolgungsinformationen werden zudem an einen anderen Ort geschrieben. Bei benutzerdefiniertem Code, der synchron ausgeführt wird, werden die Informationen in einem Fehlerdialogfeld dem Benutzer angezeigt; andernfalls, für asynchronen Code, werden die Informationen in den verknüpften Systemauftrag geschrieben.  
-  
- Standardmäßig weisen die Rollen "Systemadministrator" und "Systemanpasser" die erforderlichen Berechtigungen auf, um die Ablaufverfolgungsprotokollierungs-Einstellung zu ändern, die in einem <xref:Microsoft.Xrm.Sdk.Deployment.TraceSettings>-Entitätsdatensatz gespeichert wird. Ablaufverfolgungseinstellungen haben einen Organisationsbereich.  
-  
-## <a name="write-to-the-tracing-service"></a>Schreiben in den Ablaufverfolgungsdienst  
- Bevor Sie in den Ablaufverfolgungsdienst schreiben, müssen Sie erst das Ablaufverfolgungsdienstobjekt aus dem übergebenen Ausführungskontext extrahieren. Danach fügen Sie ggf. einfach <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])>-Aufrufe benutzerdefiniertem Code hinzu, wobei alle relevanten Diagnoseinformationen in diesem Methodenaufruf übergeben werden.  
+<a name="bkmk_trace-settings"></a>
 
- Laden Sie das Beispiel herunter: [Arbeiten mit Plug-Ins](https://code.msdn.microsoft.com/Sample-Create-a-basic-plug-64d86ade).
+## <a name="enable-trace-logging"></a>Ablaufverfolgungsprotokollierung aktivieren
+
+Ob Ablaufverfolgungsprotokolle geschrieben werden, hängt vom Wert der [Organisations](/powerapps/developer/common-data-service/reference/entities/organization)-Entität und dem [PluginTraceLogSetting](/powerapps/developer/common-data-service/reference/entities/organization#BKMK_PluginTraceLogSetting)-Attributwert ab.
+
+Um die Ablaufverfolgungsprotokollierung zu aktivieren, können Sie diesen Wert programmatisch aktualisieren oder in der Webanwendung zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen** navigieren. Auf der Registerkarte **Anpassung** suchen Sie das Dropdownmenü namens **Protokollierung in Plug-in-Ablaufverfolgungsprotokoll aktivieren** und wählen Sie eine der verfügbaren Optionen aus.  
+  
+|Value|Option|Beschreibung|  
+|------------|-----------------|-----------------|  
+|0|Deaktiviert|Das Schreiben in das Ablaufverfolgungsprotokoll ist deaktiviert. Kein **PluginTraceLog** Datensatz wird erstellt. Allerdings kann benutzerdefinierter Code weiter die <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])>-Methode aufrufen, auch wenn noch kein Protokoll geschrieben wurde.|  
+|1|Ausnahmen|Ablaufverfolgungsinformationen werden in das Protokoll geschrieben, wenn eine Ausnahme wieder an die Plattform von benutzerdefiniertem Code zurückgegeben wird.|  
+|2|Alle|Ablaufverfolgungsinformationen werden bei Fertigstellung von Code in das Protokoll geschrieben, oder wenn eine Ausnahme wieder an die Plattform von benutzerdefiniertem Code zurückgegeben wird.|  
+  
+Wenn die Ablaufverfolgungsprotokollierungs-Einstellung auf **Ausnahme** gesetzt ist und benutzerdefinierter Code eine Ausnahme wieder zur Plattform zurückgibt, wird ein Ablaufverfolgungsprotokolldatensatz erstellt und Ablaufverfolgungsinformationen werden zudem an einen anderen Ort geschrieben. Bei benutzerdefiniertem Code, der synchron ausgeführt wird, werden die Informationen in einem Fehlerdialogfeld dem Benutzer angezeigt; andernfalls, für asynchronen Code, werden die Informationen in den verknüpften Systemauftrag geschrieben.  
+
+## <a name="write-to-the-tracing-service"></a>Schreiben in den Ablaufverfolgungsdienst
+
+Bevor Sie in den Ablaufverfolgungsdienst schreiben, müssen Sie erst das Ablaufverfolgungsdienstobjekt aus dem übergebenen Ausführungskontext extrahieren. Danach fügen Sie ggf. einfach <xref:Microsoft.Xrm.Sdk.ITracingService.Trace(System.String,System.Object[])>-Aufrufe benutzerdefiniertem Code hinzu, wobei alle relevanten Diagnoseinformationen in diesem Methodenaufruf übergeben werden.  
+
   
  ```csharp
-//Extract the tracing service for use in debugging sandboxed plug-ins.
+//Extract the tracing service for use in debugging plug-ins.
  ITracingService tracingService =
      (ITracingService)serviceProvider.GetService(typeof(ITracingService));
 
- // Obtain the execution context from the service provider.
- IPluginExecutionContext context = (IPluginExecutionContext)
-     serviceProvider.GetService(typeof(IPluginExecutionContext));
-
- // For this sample, execute the plug-in code only while the client is online. 
- tracingService.Trace("AdvancedPlugin: Verifying the client is not offline.");
- if (context.IsExecutingOffline || context.IsOfflinePlayback)
-     return;
-
- // The InputParameters collection contains all the data passed 
- // in the message request.
- if (context.InputParameters.Contains("Target") &&
-     context.InputParameters["Target"] is Entity)
- {
-     // Obtain the target entity from the Input Parameters.
-     tracingService.Trace
-         ("AdvancedPlugin: Getting the target entity from Input Parameters.");
-     Entity entity = (Entity)context.InputParameters["Target"];
-
-     // Obtain the image entity from the Pre Entity Images.
-     tracingService.Trace
-         ("AdvancedPlugin: Getting image entity from PreEntityImages.");
-     Entity image = (Entity)context.PreEntityImages["Target"];
+ // Use the tracing service 
+ tracingService.Trace("Write your message here.");
+ 
 ```
 
-  
- Entwickeln Sie anschließend das Plug-In oder die benutzerdefinierte Workflowaktion und stellen Sie diese(s) bereit. Während der Ausführung von benutzerdefiniertem Code wird die Information, die in den -Methodenaufrufen **Ablaufverfolgung** bereitgestellt wird, in einen Ablaufverfolgungsprotokoll-Entitätsdatensatz von <xref:Microsoft.Xrm.Sdk.ITracingService> geschrieben, wenn dies von Ihrer Organisation unterstützt wird und aktiviert ist, und kann auch dem Benutzer in einem Web-Dialog oder Systemauftrag bereitgestellt werden, wie im vorherigen Abschnitt beschrieben. Die Ablaufverfolgungsinformationen, die in das Ablaufverfolgungsprotokoll geschrieben werden, werden in den Ablaufverfolgungseinstellungen konfiguriert. Weitere Informationen finden Sie unter [Trace-Logging aktivieren](#bkmk_trace-settings).  
+Entwickeln Sie anschließend das Plug-In oder die benutzerdefinierte Workflowaktion und stellen Sie diese(s) bereit. Während der Ausführung von benutzerdefiniertem Code wird die Information, die in den -Methodenaufrufen **Ablaufverfolgung** bereitgestellt wird, in einen Ablaufverfolgungsprotokoll-Entitätsdatensatz von <xref:Microsoft.Xrm.Sdk.ITracingService> geschrieben, wenn dies von Ihrer Organisation unterstützt wird und aktiviert ist, und kann auch dem Benutzer in einem Web-Dialog oder Systemauftrag bereitgestellt werden, wie im vorherigen Abschnitt beschrieben. Die Ablaufverfolgungsinformationen, die in das Ablaufverfolgungsprotokoll geschrieben werden, werden in den Ablaufverfolgungseinstellungen konfiguriert. Weitere Informationen finden Sie unter [Trace-Logging aktivieren](#bkmk_trace-settings).  
   
 > [!NOTE]
-> Wenn benutzerdefinierter Code in einer Datenbanktransaktion ausgeführt wird und eine Ausnahme auftritt, die ein Transaktionsrollback verursacht, werden alle Entitätsdatenänderungen durch Code rückgängig gemacht. Die **PluginTraceLog**-Datensätze bleiben jedoch bis zum Fertigstellen des Rollbacks vorhanden.  
+> Wenn benutzerdefinierter Code in einer Datenbanktransaktion ausgeführt wird und eine Ausnahme auftritt, die ein Transaktionsrollback verursacht, werden alle Entitätsdatenänderungen durch Code rückgängig gemacht. Die [PluginTraceLog](reference/entities/plugintracelog.md)-Datensätze bleiben jedoch bis zum Fertigstellen des Rollbacks vorhanden.  
   
 ## <a name="additional-information-about-the-tracing-service"></a>Zusätzliche Informationen über den Tracing-Dienst
 
- Die<xref:Microsoft.Xrm.Sdk.ITracingService> verarbeitet stapelweise die Informationen, die dafür über die **Ablaufverfolgungs** -Methode bereitgestellt werden. Die Informationen werden in einen neuen **PluginTraceLog**-Datensatz geschrieben, wenn benutzerdefinierter Code erfolgreich zum Abschluss ausgeführt oder eine Ausnahme ausgelöst wurde.  
+Die<xref:Microsoft.Xrm.Sdk.ITracingService> verarbeitet stapelweise die Informationen, die dafür über die **Ablaufverfolgungs** -Methode bereitgestellt werden. Die Informationen werden in einen neuen [PluginTraceLog](reference/entities/plugintracelog.md)-Datensatz geschrieben, wenn benutzerdefinierter Code erfolgreich zum Abschluss ausgeführt oder eine Ausnahme ausgelöst wurde.  
   
- PluginTraceLog-Datensätze haben eine begrenzte Gültigkeitsdauer. Ein Massenlöschungs-Hintergrundauftrag wird einmal täglich ausgeführt, um Datensätze zu löschen, die älter als 24 Stunden seit der Erstellung sind. Dieser Auftrag kann bei Bedarf deaktiviert werden. 
+[PluginTraceLog](reference/entities/plugintracelog.md)-Datensätze haben eine begrenzte Gültigkeitsdauer. Ein Massenlöschungs-Hintergrundauftrag wird einmal täglich ausgeführt, um Datensätze zu löschen, die älter als 24 Stunden seit der Erstellung sind. 
+
+> [!CAUTION]
+> Während dieser Auftrag deaktiviert oder die Häufigkeit, mit dem er auftritt, angepasst werden kann, wird häufig festgestellt, dass ein fehlendes Zurücksetzen auf die ursprüngliche Einstellung der Grund für spätere Leistungsprobleme ist.
 
 ## <a name="community-tools"></a>Community-Tools
 
  ### <a name="plug-in-trace-viewer"></a>Plug-in Trace-Viewer
 
-**Plug-In-Ablaufverfolgungsanzeige** ist ein Tool, das die XrmToolbox-Community für [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)]-Apps entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
+**Plug-In-Ablaufverfolgungsanzeige** ist ein Tool, das die XrmToolbox-Community entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von [!include[pn_microsoft_dynamics](../../includes/pn-microsoft-dynamics.md)]-Apps. Es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).  
+> Die Communitytools sind kein Produkt von Microsoft und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).  
 
 ### <a name="see-also"></a>Siehe auch
 

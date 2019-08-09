@@ -1,7 +1,7 @@
 ---
 title: Eine Liste von aktuellen Datensätzen als Datenkontext mit einer eingebetteten Canvas-App übergeben | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/17/2018
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -24,12 +24,11 @@ search.app:
 ---
 
 # <a name="pass-a-list-of-related-records-as-data-context-to-an-embedded-canvas-app"></a>Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben
+> [!IMPORTANT]
+> Canvas-Apps, die in modellgesteuerte Formulare eingebettet sind, sind jetzt nicht mehr in der Vorschau sondern allgemein verfügbar. Die unten aufgeführten Schritte sind veraltet und gelten nur für die öffentliche Vorschauversion von Canvas-Apps, die in modellgesteuerten Formularen eingebettet sind.
+> Die aktualisierte Liste von Schritten für die aktuelle Version finden Sie unter: [Hinzufügen einer eingebetteten Canvas-App in einem modellgesteuerten Formular](embedded-canvas-app-add-classic-designer.md)
 
 In diesem Thema wird erläutert, wie Sie eine eingebettete Canvas-App hinzufügen und eine Liste von Datensätzen, die in Bezug zum aktuellen (Hauptformular-)Datensatz stehen, als Datenkontext an die eingebettete Canvas-App übergeben.
-
-> [!NOTE]
-> Diese Funktion befindet sich derzeit in der Vorschau. <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 Stellen Sie sich vor, Sie möchten eine eingebettete Canvas-App in ein Firmenhauptformular einfügen und eine Liste von Datensätzen, die in Bezug zum aktuellen Firmendatensatz stehen, an die eingebettete Canvas-App übergeben. Gehen Sie dazu wie folgt vor:
 
@@ -49,9 +48,9 @@ Stellen Sie sich vor, Sie möchten eine eingebettete Canvas-App in ein Firmenhau
          -  Die Filterkriterien für eine Ansicht werden zum Zeitpunkt der Erstellung nicht verwendet. Daher werden die Daten, die Sie beim Erstellen von eingebetteten Canvas-Anwendungen sehen, nicht gefiltert, es ist lediglich eine Liste der wichtigsten Datensätze, auf die Sie Zugriff haben. Zur Laufzeit werden die Filterkriterien für die Ansicht erwartungsgemäß angewendet und den Benutzern werden nur relevante Daten angezeigt.
      -  Die Eigenschaft **App ID** gibt die ID der eingebetteten Canvas-App an. Sie ist bei Erstellung der Canvas-App automatisch generiert und eingetragen.
          -  Beachten Sie, dass jede Änderung des Wertes App ID die Verknüpfung von dem modellgestützten Formular zur eingebetteten Canvas-App unterbricht.
-10. Zum Erstellen oder Bearbeiten Ihrer Canvas-App wählen Sie die Schaltfläche **Anpassen** aus. Dies öffnet PowerApps-Studio in einer neuen Browser-Registerkarte.
+10. Zum Erstellen oder Bearbeiten Ihrer Canvas-App wählen Sie die Schaltfläche **Anpassen** aus. Dadurch wird PowerApps Studio in einer neuen Browserregisterkarte geöffnet.
      > [!IMPORTANT]
-     > Wenn das Öffnen von PowerApps Studio aufgrund eines Popup-Blockers des Webbrowsers blockiert ist, müssen Sie die Website web.powerapps.com aktivieren oder den Popup-Blocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen. 
+     > Wenn das Öffnen von PowerApps Studio aufgrund eines Popupblockers des Webbrowsers blockiert ist, müssen Sie die Website web.powerapps.com aktivieren oder den Popupblocker vorübergehend deaktivieren und dann erneut **Anpassen** auswählen. 
 11. Beachten Sie in PowerApps Studio, dass sich im linken Bereich ein **ModelDrivenFormIntegration**-Steuerelement befindet. Dieses Steuerelement ist dafür verantwortlich, Kontextdaten aus dem Hostmodell-basierten Formular in die eingebettete Canvas-App zu bringen. 
 12. Wählen Sie das Steuerelement **Gallery1** und stellen Sie fest, dass die Eigenschaft **Elemente** auf **ModelDrivenFormIntegration.Data** gesetzt ist.
 13. Wählen Sie im Eigenschaftenbereich rechts neben **Felder** **Bearbeiten** aus.
@@ -65,7 +64,7 @@ Stellen Sie sich vor, Sie möchten eine eingebettete Canvas-App in ein Firmenhau
       -  Bei späterem Speichern, müssen Sie **Veröffentlichen** und dann **Diese Version veröffentlichen** auswählen, um Ihre Änderungen zur Verfügung stellen.
 20. Wählen Sie **Zurück** und dann die Browser-Registerkarte, auf der der Formular-Editor geöffnet ist. 
 21. Beachten Sie, dass die Eigenschaft **App ID** des **Canvas-App**-Steuerelements nun einen automatisch ausgefüllten Wert hat. Beachten Sie Folgendes: 
-     -  Der Formular-Editor verfügt über eine direkte Verbindung zu PowerApps Studio, das in einem früheren Schritt in einem anderen Browser-Tab geöffnet wurde.
+     -  Der Formular-Editor verfügt über eine direkte Verbindung zu PowerApps Studio, das in einem früheren Schritt in einer anderen Browserregisterkarte geöffnet wurde.
      -  Der Formular-Editor wartete darauf, dass die App ID an ihn gesendet wurde.
      -  Die App ID wurde gesendet, als die App gespeichert wurde.
 22. Wählen Sie im Dialog **Eigenschaften festlegen** die Registerkarte **Anzeige**, löschen Sie **Beschriftung im Formular anzeigen** und wählen Sie dann **OK**.
@@ -80,7 +79,11 @@ In diesem Thema erfahren Sie, wie Sie mit der Einbettung einer Canvas-App in ein
 
 ## <a name="see-also"></a>Siehe auch
 [Einbetten einer Canvas-App in einem modellgesteuerten Formular](embed-canvas-app-in-form.md) <br />
-[Den aktuellen Datensatz als Datenkontext an eine eingebettete Canvas-App übergeben](pass-current-embedded-canvas-app.md) <br />
+[Hinzufügen einer eingebetteten Canvas-App in einem modellgesteuerten Formular](embedded-canvas-app-add-classic-designer.md) <br />
+[Bearbeiten einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-edit-classic-designer.md) <br />
+[Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-customize-screen.md) <br />
 [Führen Sie vordefinierte Aktionen aus einer eingebetteten Canvas-App auf dem Hostformular aus](embedded-canvas-app-actions.md) <br />
+[Eigenschaften und Aktionen des ModelDrivenFormIntegration-Steuerelements](embedded-canvas-app-properties-actions.md) <br />
 [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md) <br />
-[Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)
+[Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md) <br />
+[Migrieren von eingebetteten Canvas-Apps in modellgesteuerten Formularen, die mithilfe der öffentlichen Vorschauversion als die neueste Version erstellt wurden](embedded-canvas-app-migrate-from-preview.md) <br />

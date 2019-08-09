@@ -1,5 +1,5 @@
 ---
-title: Datenexportservice (Common Data Service) | Microsoft Docs
+title: Datenenexportservice (Common Data Service) | Microsoft Docs
 description: 'Funktionen, Voraussetzungen, API und Programmierung des Datenexport-Service.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,14 +17,14 @@ search.app:
 ---
 # <a name="data-export-service"></a>Datenexportservice
 
-Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung bereitgestellt wird und der die Möglichkeit gibt, Common Data Service-Daten auf einen Microsoft Azure SQL-Datenbankspeicher in einem kundeneigenen Microsoft Azure Abonnement zu replizieren. Die unterstützten Zielziele sind Microsoft Azure SQL Datenbank sowie Microsoft Azure SQL Server auf Microsoft Azure virtuellen Computern. Datenexport synchronisiert intelligent das gesamte Dynamics 365 Schema und die Daten und synchronisiert danach auf fortlaufender Basis, wenn Änderungen eintreten (Delta-Änderungen) in Dynamics 365 (online).  
+Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung bereitgestellt wird und der die Möglichkeit gibt, Common Data Service-Daten auf einen Microsoft Azure SQL-Datenbankspeicher in einem kundeneigenen Microsoft Azure-Abonnement zu replizieren. Die unterstützten Ziele sind Microsoft Azure SQL-Datenbank und Microsoft Azure SQL Server auf virtuellen Microsoft Azure-Computern. Datenexport synchronisiert intelligent das gesamte Dynamics 365-Schema und die Daten und synchronisiert danach auf fortlaufender Basis, wenn Änderungen im Dynamics 365 (online)-System eintreten (Delta-Änderungen).  
   
- Der Datenexportservice bietet eine Schnittstelle zum Verwalten der Konfiguration und der laufenden Verwaltung dieses Service aus Common Data Service.  Weitere Informationen finden Sie unter [Datenexport](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). In diesem Thema werden die entsprechenden programmgesteuerte Benutzeroberfläche und die Probleme für diesen Service behandelt.  
+ Der Datenexportservice bietet eine Schnittstelle zum Verwalten der Konfiguration und der laufenden Verwaltung dieses Service auf Common Data Service.  Weitere Informationen finden Sie unter [Datenexport](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d). In diesem Thema werden die entsprechenden programmgesteuerte Benutzeroberfläche und die Probleme für diesen Service behandelt.  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>Voraussetzungen für die Verwendung des Datenexport-Service  
- Da dieser Service einen externen Zugriff auf die Microsoft Azure SQL Datenbank von Common Data Service erfordert, müssen einige Voraussetzungen erfüllt sein, bevor Sie erfolgreich auf den Service zugreifen können. Die folgenden Voraussetzungen werden im Detail aus Sicht eines Administrators erläutert im Abschnitt [Voraussetzungen für die Verwendung des Datenexport-Service-](https://technet.microsoft.com/library/mt744592.aspx).  
+ Da dieser Service einen externen Zugriff auf die Microsoft Azure SQL-Datenbank vom Common Data Service erfordert, müssen einige Voraussetzungen erfüllt sein, bevor Sie erfolgreich auf den Service zugreifen können. Die folgenden Voraussetzungen werden im Detail aus Sicht eines Administrators erläutert im Abschnitt [Voraussetzungen für die Verwendung des Datenexport-Service-](https://technet.microsoft.com/library/mt744592.aspx).  
   
- Der Common Data Service-Service muss entsprechend konfiguriert sein:  
+ Der Common Data Service - Dienst muss konfiguriert werden, damit:  
   
 - Die Entitäten, die exportiert wurden, werden mit Änderungsnachverfolgung aktiviert. Weitere Informationen finden Sie unter [Verwenden von Änderungsnachverfolgung zum Synchronisieren von Daten mit externen Systemen](use-change-tracking-synchronize-data-external-systems.md).  
   
@@ -35,13 +35,13 @@ Der Datenexport ist ein Add-On-Service, der von der Common Data Service-Lösung 
   
  Die SQL Azure Ziel Datenbank muss konfiguriert werden, damit:  
   
-- Das Abonnement muss die Menge der Daten, die von Ihrer Common Data Service-Instanz synchronisiert werden, unterstützen.  
+- Das Abonnement muss die Menge der Daten, die von Ihrer Common Data Service-Instanz synchronisiert werden unterstützen.  
   
-- Firewalleinstellungen muss den Zugriff von der IP-Adresse des Datenexportservice erlauben. Weitere Informationen: [Eine Azure SQL Datenbankserverstufen-Firewallregel mithilfe von Azure Portal konfigurieren](https://azure.microsoft.com/en-us/documentation/articles/sql-database-configure-firewall-settings/).  
+- Firewalleinstellungen muss den Zugriff von der IP-Adresse des Datenexportservice erlauben. Weitere Informationen: [Eine Azure SQL Datenbankserverstufen-Firewallregel mithilfe von Azure Portal konfigurieren](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/).  
   
 - Es wird empfohlen, die Option "Zugriff an Azure Services" aktiviert zu lassen.  
   
-- Der Datenbankbenutzer, der in der Datenexportverbindungszeichenfolge definiert ist, muss die richtigen Berechtigungen verfügen, um auf der Zieldatenbank zu erstellen und zu ändern.  Als Minimum schließen diese ein: `CRTB`, `CRTY`, `CRVW`, `CRPR`und `ALUS`. Weitere Informationen finden Sie unter [Berechtigungen (Database Engine)](https://msdn.microsoft.com/en-us/library/ms191291.aspx).  
+- Der Datenbankbenutzer, der in der Datenexportverbindungszeichenfolge definiert ist, muss die richtigen Berechtigungen verfügen, um auf der Zieldatenbank zu erstellen und zu ändern.  Als Minimum schließen diese ein: `CRTB`, `CRTY`, `CRVW`, `CRPR`und `ALUS`. Weitere Informationen finden Sie unter [Berechtigungen (Database Engine)](https://msdn.microsoft.com/library/ms191291.aspx).  
   
 - Mindestens ein Benutzer muss Berechtigungen für das Schema haben. Im folgenden Skript wird ein neuer Benutzer erstellt.  
   
@@ -57,12 +57,12 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
   
 ```  
   
-Für online Lösungen und Services stellt Azure einen [Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)-Service bereit, um kryptografische Schlüssel, Kennwörter und andere Geheimnisse zu schützen.  Um Vault Azure zu verwenden, muss dieser kundeneigene Service konfiguriert sein, damit die Berechtigung für "Dynamics 365-Datenexport-Service" gewährt wird, das verwendet wird, um die SQL Azure-Verbindungszeichenfolge sicher zu speichern. Um diese Konfiguration mit einem PowerShell-Skript ausführen, siehe [Einrichten von Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Alternativ kann dieser Service über die REST-API verwaltet werden; sehen Sie dazu [Key Vault-Verwaltung](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
+Für online Lösungen und Services stellt Azure einen [Key Vault](https://azure.microsoft.com/services/key-vault/)-Service bereit, um kryptografische Schlüssel, Kennwörter und andere Geheimnisse zu schützen.  Um Vault Azure zu verwenden, muss dieser kundeneigene Service konfiguriert sein, damit die Berechtigung für "Dynamics 365-Datenexport-Service" gewährt wird, das verwendet wird, um die SQL Azure-Verbindungszeichenfolge sicher zu speichern. Um diese Konfiguration mit einem PowerShell-Skript ausführen, siehe [Einrichten von Azure Key Vault](https://technet.microsoft.com/library/mt744592.aspx). Alternativ kann dieser Service über die REST API verwaltet werden; sehen Sie dazu [Key Vault-Verwaltung](https://msdn.microsoft.com/library/azure/mt620024.aspx).  
   
 Es ist ratsam, dass die Domäne https://discovery.crmreplication.azure.net/ der Liste der vertrauenswürdigen Websites in Ihrem Browser hinzugefügt und Popups für diesen Ort aktiviert werden.  
   
 ## <a name="programming-for-the-data-export-service"></a>Programmierung für den Datenexport-Service  
- Der Datenexport-Service macht eine REST-basierte API verfügbar, die in zwei Gruppen unterteilt werden: eine Gruppe von `Metadata`-Vorgängen, um Common Data Service-Organisationsstrukturen, -Beziehungen und -Verbindungsinformationen zu erkunden und eine Gruppe für `Profiles`-Vorgänge zum Konfigurieren und Verwalten der Datenreplikation.  Die API ist in den folgenden Swagger URLs definiert und dokumentiert: [Swaggern von](http://swagger.io/) URLs:  
+ Der Datenexport-Service trifft auf eine Rest-basierte API, die in zwei Gruppen unterteilt werden: eine Gruppe von `Metadata` Vorgänge, um Common Data Service Organisationsstrukturen, Beziehungen und Verbindungsinformationen zu erkunden und eine Gruppe für `Profiles` Vorgänge zum Konfigurieren und Verwalten der Datenenreplikation.  Die API ist in den folgenden Swagger URLs definiert und dokumentiert: [Swaggern von](http://swagger.io/) URLs:  
   
 |Swagger-Endpunkt|Beschreibung|  
 |----------------------|-----------------|  
@@ -90,17 +90,17 @@ Es ist ratsam, dass die Domäne https://discovery.crmreplication.azure.net/ der 
 |Ressource|Methoden|Beschreibung|  
 |--------------|-------------|-----------------|  
 |Profile|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfilesByOrganizationId), [POST](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_CreateProfile)|Rufen Sie die Profile für die angegebene Organisation ab, erstellen Sie ein neues Exportprofil|  
-|Profile/{ID}|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileById), [PUT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_UpdateProfile), [DELETE](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_DeleteProfileById)|Bestimmtes Profil abrufen, aktualisieren oder Löschen|  
-|Profile/{ID}/aktivieren|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Activate)|Aktivieren Sie ein Profil, das die Replikation beider zugeordneten Metadaten und Daten startet|  
-|profiles/{id}/activatemetadata|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateMetadata)|Aktivieren Sie nur Profile für Metadatenreplikation|  
-|profiles/{id}/activatedata|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateData)|Aktivieren Sie nur Profile für Datenreplikation|  
-|profiles/{id}/deactivate|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Deactivate)|Ein Profil deaktivieren|  
-|profiles/{id}/test|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetTestResultById)|Führen Sie auf einem vorhandenen Profil Testvorgänge aus|  
+|Profile/{id}|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileById), [PUT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_UpdateProfile), [DELETE](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_DeleteProfileById)|Bestimmtes Profil abrufen, aktualisieren oder Löschen|  
+|Profile/{id}/aktivieren|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Activate)|Aktivieren Sie ein Profil, das die Replikation beider zugeordneten Metadaten und Daten startet|  
+|Profile/{id}/Metadaten aktivieren|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateMetadata)|Aktivieren Sie nur Profile für Metadatenreplikation|  
+|Profile/{id}/Daten aktivieren|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ActivateData)|Aktivieren Sie nur Profile für Datenreplikation|  
+|Profile/{id}/deaktivieren|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_Deactivate)|Ein Profil deaktivieren|  
+|Profile/{id}/Test|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetTestResultById)|Führen Sie auf einem vorhandenen Profil Testvorgänge aus|  
 |Profile/überprüfen|[NACHRICHT](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_ValidateBeforeProfileCreation)|Führen Sie Testvorgänge auf einer Profilbeschreibung aus, bevor Sie es erstellen|  
-|profiles/{id}/failures|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|Hier finden Sie die Verbindungszeichenfolge für einen Blob, der Fehlerdetails für ein gegebenes Profil enthält|  
+|Profile/{id}/Fehler|[GET](https://discovery.crmreplication.azure.net/swagger/ui/index#/Profiles/Profiles_GetProfileFailuresInfoById)|Hier finden Sie die Verbindungszeichenfolge für einen Blob, der Fehlerdetails für ein gegebenes Profil enthält|  
   
 ### <a name="gain-access"></a>Zugriff erhalten  
-Da nur Common Data Service-Systemadministratoren die Autorisierung besitzen, um Datenexportvorgänge auszuführen, können diese APIs die Anruferautorisierung durch die Nutzung von Azure Active Directory ([AAD](https://azure.microsoft.com/en-us/services/active-directory/)) [Sicherheitstokens](https://azure.microsoft.com/en-us/documentation/articles/active-directory-token-and-claims/) erzwingen. Der folgende Codeausschnitt wird zeigt das Generieren eines Tokens für eine Webanwendung, indem er der Name und das Kennwort des Administrators verwendet.   Sie müssen `AppId`, `crmAdminUser` und `crmAdminPassword` durch die Werte ersetzen, die Ihrem Dienst entsprechen. Diese Methode kann für die Entwicklung und Tests verwendet werden, aber für die Produktion sollten sicherere Methoden wie Azure Key Vault genutzt werden.  
+Da nur Common Data Service-Systemadministratoren die Autorisierung besitzen, um Datenexportvorgänge auszuführen, erzwingen diese APIs die Aufruferautorisierung durch die Nutzung von Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) [Sicherheitstokens](https://azure.microsoft.com/documentation/articles/active-directory-token-and-claims/). Der folgende Codeausschnitt wird zeigt das Generieren eines Tokens für eine Webanwendung, indem er der Name und das Kennwort des Administrators verwendet.   Sie müssen `AppId`, `crmAdminUser` und `crmAdminPassword` durch die Werte ersetzen, die Ihrem Dienst entsprechen. Diese Methode kann für die Entwicklung und Tests verwendet werden, aber für die Produktion sollten sicherere Methoden wie Azure Key Vault genutzt werden.  
   
 ```csharp  
   
@@ -119,7 +119,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
   
 ```  
   
-Anweisungen wie Sie ein `AppId` erhalten finden Sie unter [Autorisieren Sie den Zugriff auf Webanwendungen mithilfe von OAuths 2.0 und Azure Active Directorys](https://azure.microsoft.com/en-us/documentation/articles/active-directory-protocols-oauth-code/). Weitere Informationen über die Azure Benutzersicherheit finden Sie unter [Authentifizierungsszenarien für Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/).  
+Anweisungen, wie Sie eine `AppId` erhalten, finden Sie unter [Autorisieren des Zugriffs auf Webanwendungen mithilfe von OAuth 2.0 und Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-protocols-oauth-code/). Weitere Informationen über die Azure-Benutzersicherheit finden Sie unter [Authentifizierungsszenarien für Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/).  
   
 ### <a name="error-handling-and-failure-processing"></a>Fehlerbehandlung und Fehlerverarbeitung  
  Sobald ein Profil korrekt konfiguriert ist, ist die Synchronisierung normalerweise sehr zuverlässig. Wenn ein Datensatz nicht synchronisiert, gilt die folgende Fehlerverarbeitung:  

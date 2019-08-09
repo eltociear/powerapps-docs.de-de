@@ -3,8 +3,7 @@ title: 'Exemplarische Vorgehensweise: Aktualisieren eines Dienstendpunkts, der a
 description: 'Diese exemplarische Vorgehensweise zeigt das Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -47,4 +46,4 @@ Ein extre Schritt ist nach dem Import einer Lösung, die mindestens einen Dienst
 ### <a name="see-also"></a>Siehe auch  
 [Azure-Integration für Dynamics 365](azure-integration.md)
 
- [Service Bus-Authentifizierung und -Autorisierung](https://azure.microsoft.com/en-us/documentation/articles/service-bus-authentication-and-authorization/)
+ [Service Bus-Authentifizierung und -Autorisierung](https://azure.microsoft.com/documentation/articles/service-bus-authentication-and-authorization/)

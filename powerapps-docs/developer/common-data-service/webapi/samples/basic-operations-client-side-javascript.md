@@ -1,6 +1,6 @@
 ---
 title: Beispiel grundlegender Web-API-Operationen (clientseitiges JavaScript) (Common Data Service) | Microsoft Docs
-description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Entitätsinstanzen unter Verwendung von clientseitigem JavaScript über die Common Data Service-Web-API durchführen'
+description: 'Dieses Beispiel veranschaulicht, wie Sie grundlegende CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) sowie assoziative und trennende Operationen auf Entitätsinstanzen unter Verwendung von clientseitigem JavaScript und der Common Data Service-Web-API durchführen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -383,7 +383,7 @@ Sdk.basicCreateAndUpdatesAsync = function () {
    "description"].join();  
   
   // NOTE: For performance best practices, use $select to limit the properties you want to return  
-  // See also: https://msdn.microsoft.com/en-us/library/gg334767.aspx#bkmk_requestProperties  
+  // See also: https://msdn.microsoft.com/library/gg334767.aspx#bkmk_requestProperties  
   var query = "?$select=" + properties;  
   return Sdk.request("GET", Sdk.SampleVariables.contact1Uri + query, null);  
  })  
@@ -639,7 +639,7 @@ Sdk.createRelatedAsync = function () {
   // Expand on primarycontactid to select some of contact's properties.  
   // NOTE: With $expand, the CRM server will return values for the selected properties.   
   // The CRM Web API only supports expansions one level deep.  
-  // See also: https://msdn.microsoft.com/en-us/library/mt607871.aspx#bkmk_expandRelated  
+  // See also: https://msdn.microsoft.com/library/mt607871.aspx#bkmk_expandRelated  
   var query = "?$select=name&$expand=primarycontactid($select=" + contactProperties + ")";  
   return Sdk.request("GET", Sdk.SampleVariables.account2Uri + query, null);  
  })  
@@ -842,7 +842,7 @@ Sdk.deleteSampleData = function () {
   // by default, automatically cascade delete child instances. In this program,   
   // tasks related using the Contact_Tasks relationship have contact as their parent.   
   // Other relationships may behave differently.  
-  // See also: https://msdn.microsoft.com/en-us/library/gg309412.aspx#BKMK_CascadingBehavior  
+  // See also: https://msdn.microsoft.com/library/gg309412.aspx#BKMK_CascadingBehavior  
   console.log("\n--Section 5 started--");  
   if (Sdk.SampleVariables.deleteData) {  
    for (var i = 0; i < Sdk.SampleVariables.entitiesToDelete.length; i++) {  
@@ -865,7 +865,7 @@ Sdk.deleteSampleData = function () {
   
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service-Web-API verwenden](../overview.md)<br />
+[Verwenden der Common Data Service-Web-API](../overview.md)<br />
 [Erstellen einer Entität mithilfe des Web-API](../create-entity-web-api.md)<br />
 [Abrufen einer Entität mithilfe des Web-API](../retrieve-entity-using-web-api.md)<br />
 [Entitäten aktualisieren und löschen mithilfe der Web API](../update-delete-entities-using-web-api.md)<br />

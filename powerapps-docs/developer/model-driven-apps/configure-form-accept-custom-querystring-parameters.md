@@ -3,8 +3,7 @@ title: 'Konfigurieren Sie ein Formular, um benutzerdefinierte Querystring-Parame
 description: 'Erfahren Sie über das Konfigurieren eines Formulars, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren. Verwenden Sie diese Parameter, um Standardwerte festzulegen, wenn Sie in der Anwendung einen neuen Datensatz erstellen.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>Ein Formular konfigurieren, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren.
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
 
 Werte an eine Webseite mithilfe von Abfragenzeichenfolgen zu übergeben, stellt ein Sicherheitsrisiko dar. Modellgesteuerte Apps arbeitet nach der bewährten Verfahrensweise, bei der alle in einer Abfragenzeichenkette übergebenen Parameter mit einer Liste der erwarteten Parameternamen und Datentypen verglichen werden.  
   

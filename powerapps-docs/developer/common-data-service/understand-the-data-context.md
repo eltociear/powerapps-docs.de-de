@@ -1,14 +1,14 @@
 ---
-title: Verstehen des Ausführungskontexts (Common Data Service) | Microsoft Docs
+title: Grundlegendes zum Ausführungskontext (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie mehr über die Daten, die bei der Ausführung an Ihre Plugins übergeben werden.'
 ms.custom: ''
-ms.date: 1/23/2019
-ms.reviewer: ''
+ms.date: 06/20/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: phecke
-ms.author: pehecke
-manager: kvivek
+author: JimDaly
+ms.author: jdaly
+manager: ryjones
 search.audienceType:
   - developer
 search.app:
@@ -18,7 +18,11 @@ search.app:
 
 # <a name="understand-the-execution-context"></a>Verstehen des Ausführungskontextes
 
-Die **Event Execution Pipeline** übergibt registrierten Plugins eine Fülle von Daten über den aktuellen Vorgang und die Ausführungsumgebung des Plug-Ins. Sie können auf diese Daten in Ihrem Plugin-Code zugreifen, indem Sie eine Variable setzen, die die Schnittstelle <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> implementiert:
+Die **Event Execution Pipeline** übergibt registrierten Plugins eine Fülle von Daten über den aktuellen Vorgang und die Ausführungsumgebung des Plug-Ins.
+
+## <a name="for-plug-ins"></a>Für Plug-Ins
+
+Mit Plug-Ins können Sie auf diese Daten in Ihrem Code zugreifen, indem Sie eine Variable setzen, die die Schnittstelle <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> implementiert:
 
 ```csharp
 // Obtain the execution context from the service provider.  
@@ -26,9 +30,47 @@ IPluginExecutionContext context = (IPluginExecutionContext)
     serviceProvider.GetService(typeof(IPluginExecutionContext));
 ```
 
-Dieser <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> bietet einige Informationen über die <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.Stage>, für die das Plug-In registriert ist, sowie Informationen über den <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext>, der Informationen über jeglichen Vorgang innerhalb eines anderen Plug-In bereitstellt, das den aktuellen Vorgang ausgelöst hat.
+Dieses <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext> bietet Informationen über das <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.Stage>, für das das Plug-In registriert ist, sowie Informationen über das <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext>. Siehe [Übergeordneter Kontext](#parentcontext)
 
-Die übrigen verfügbaren Informationen werden jedoch von der <xref:Microsoft.Xrm.Sdk.IExecutionContext>-Schnittstelle bereitgestellt, die diese Klasse implementiert. Alle Eigenschaften dieser Klasse stellen nützliche Informationen bereit, auf die Sie möglicherweise in Ihrem Code zugreifen müssen, aber zwei der wichtigsten sind die Eigenschaften <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> und <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>. 
+## <a name="for-custom-workflow-activities"></a>Für benutzerdefinierte Workflowaktivitäten
+
+Mit benutzerdefinierten Workflowaktivitäten können Sie auf diese Daten in Ihrem Code zugreifen, indem Sie eine Variable setzen, die die Schnittstelle <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext> implementiert:
+
+```csharp
+// Obtain the execution context using the GetExtension method.  
+protected override void Execute(CodeActivityContext context)
+{
+ IWorkflowContext workflowContext = context.GetExtension<IWorkflowContext>();
+...
+```
+
+<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext> bietet Informationen zum Workflow, in dem das Plug-In ausgeführt wird.
+
+|Eigenschaft  |Beschreibung  |
+|---------|---------|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.ParentContext>|Ruft den übergeordneten Kontext ab. Siehe [Übergeordneter Kontext](#parentcontext)|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.StageName>|Ruft die Phaseninformationen der Prozessinstanz ab.|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowCategory>|Ruft die Prozesskategorieinformationen der Prozessinstanz ab: Ist es ein Workflow oder ein Dialog (veraltet).|
+|<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode>|Gibt an, wie der Workflow ausgeführt werden soll. 0 = asynchron, 1 = synchron|
+
+## <a name="parentcontext"></a>Übergeordneter Kontext
+
+Der `ParentContext` bietet Informationen über alle Vorgänge, die das Plug-In oder die benutzerdefinierte Workflowaktivität auslösen.
+
+Mit Ausnahme von speziell dokumentierten Fällen sollten Sie vermeiden, eine Abhängigkeit auf Werte zu übertragen die Sie in `ParentContext` finden, um Ihre Geschäftslogik anzuwenden. Die entsprechende Reihenfolge, in der Vorgänge auftreten, ist nicht garantiert und kann sich im Laufe der Zeit ändern.
+
+Wenn Sie sich für eine Abhängigkeit von den Werten in `ParentContext` entscheiden, sollten Sie Maßnahmen ergreifen, um sicherzustellen, dass Ihr Code bei potenziellen Änderungen unverändert bleibt. Sie sollten die Logik regelmäßig testen, um sicherzustellen, dass die Bedingungen, von denen Sie abhängig sind, im Laufe der Zeit auch wirksam bleiben.
+
+## <a name="executioncontext"></a>ExecutionContext
+
+Die übrigen verfügbaren Informationen werden jedoch von der <xref:Microsoft.Xrm.Sdk.IExecutionContext>-Schnittstelle bereitgestellt, die die <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>- und <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>-Klassen implementieren.
+
+Für Plug-Ins bieten alle Eigenschaften dieser Klasse hilfreiche Informationen, auf die Sie unter Umständen in Ihrem Code zugreifen müssen. 
+
+> [!NOTE]
+> Bei benutzerdefinierten Workflowaktivitäten werden diese Eigenschaften im Allgemeinen nicht verwendet.
+
+Zwei der wichtigsten sind die <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters>- und<xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>-Eigenschaften.
 
 Andere häufig verwendete Eigenschaften sind <xref:Microsoft.Xrm.Sdk.IExecutionContext.SharedVariables>, <xref:Microsoft.Xrm.Sdk.IExecutionContext.PreEntityImages> und <xref:Microsoft.Xrm.Sdk.IExecutionContext.PostEntityImages>.
 
@@ -44,6 +86,7 @@ Die <xref:Microsoft.Xrm.Sdk.ParameterCollection>-Werte sind als <xref:System.Col
 ```csharp
 var entity = (Entity)context.InputParameters["Target"];
 ```
+
 Verwenden Sie die Dokumentation <xref:Microsoft.Xrm.Sdk.Messages> und <xref:Microsoft.Crm.Sdk.Messages>, um die Namen der Nachrichten zu erfahren, die in den SDK-Assemblys definiert sind. Für benutzerdefinierte Aktionen finden Sie weitere Informationen unter den Namen der Parameter, die im System definiert sind.
 
 ## <a name="inputparameters"></a>InputParameters
@@ -106,10 +149,12 @@ public class PostOperation : IPlugin
     }
 }
 ```
+
 > [!IMPORTANT]
 > Jede Art von Daten, die der Collection der gemeinsamen Variablen hinzugefügt werden, muss serialisierbar sein, da der Server sonst nicht weiß, wie die Daten serialisiert werden sollen, und die Ausführung des Plugins schlägt fehl.  
-  
- Bei einem Plug-In, das in Phase 20 oder 40 registriert wird, um auf die freigegebenen Variablen eines in Phase 10 registrierten Plug-Ins zuzugreifen, das beim Erstellen, Aktualisieren Löschen oder <xref:Microsoft.Crm.Sdk.Messages.RetrieveExchangeRateRequest> ausgeführt wird, müssen Sie auf die Sammlung <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext>.**SharedVariables** zugreifen In allen anderen Fällen enthält <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>.**SharedVariables** die Sammlung. 
+
+> [!NOTE]
+> Bei einem Plug-In, das für die Phasen **PreOperation** oder **PostOperation** registriert ist, um auf die freigegebenen Variablen über ein Plug-In zuzugreifen, das für die Phase **PreValidation** registriert ist, das bei **Erstellen**, **Altualisieren**, **Löschen** oder durch eine <xref:Microsoft.Crm.Sdk.Messages.RetrieveExchangeRateRequest> ausgeführt wird, müssen Sie auf die Sammlung <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext.ParentContext>.**SharedVariables** zugreifen. In allen anderen Fällen enthält <xref:Microsoft.Xrm.Sdk.IPluginExecutionContext>.**SharedVariables** die Sammlung.
 
 ## <a name="entity-images"></a>Entitätsbilder
 
@@ -123,7 +168,12 @@ Wenn Sie ein Entitätsbild definieren, geben Sie einen Entitätsaliaswert an, di
 var oldAccountName = (string)context.PreEntityImages["a"]["name"];
 ```
 
-Weitere Informationen: [Entitätsbilder definieren](register-plug-in.md#define-entity-images)
+Weitere Informationen:
+
+- [Definieren von Entitätsbildern](register-plug-in.md#define-entity-images)
+- [Entitätsbilder für Workflowerweiterungen](workflow/workflow-extensions.md#entity-images-for-workflow-extensions)
+
+
 
 ### <a name="see-also"></a>Siehe auch
 

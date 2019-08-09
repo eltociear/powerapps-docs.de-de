@@ -2,7 +2,7 @@
 title: 'Schnellstart: Organisationsservicebeispiel (C#) (Common Data Service) | Microsoft Docs'
 description: 'Dieser Schnellstart zeigt, wie Sie mit dem Organisationsservice des Common Data Service eine Verbindung herstellen.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="quick-start-organization-service-sample-c"></a>Schnellstart: Organisationsservicebeispiel (C#)
 
-Dies ist, wo Sie Ihre Arbeit mit den .NET-SDK-Assemblys beginnen, um mit Daten unter Verwendung von Common Data Service zu arbeiten.
+Hier beginnen Sie Ihre Arbeit mit den .NET-SDK-Assemblys, um mit Daten unter Verwendung von Common Data Service zu arbeiten.
 
 In diesem Schnellstart erstellen Sie eine minimale Konsolenanwendung, um unter Verwendung der Klasse <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> eine Verbindung mit dem Organisationsservice herzustellen. Sie übergeben Ihre Verbindungsdaten mithilfe einer Verbindungszeichenfolge, die dem Konstruktor übergeben wird.
 
@@ -37,7 +37,7 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
  - URL zur Common Data Service-Umgebung, mit der Sie eine Verbindung herstellen möchten
  - Grundlegendes Verständnis der Visual C#-Sprache
 
-## <a name="create-visual-studio-project"></a>Erstellen eines Visual Studio-Projekts
+## <a name="create-visual-studio-project"></a>Visual Studio-Projekt erstellen
 
 1. Erstellen eines neuen Konsolen-App (.NET Framework)-Projekts mit .NET Framework 4.6.2
 
@@ -46,9 +46,9 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
     > [!NOTE]
     > Dieser Screenshot zeigt den Namen `OrgServiceQuickStart` an, aber Sie können für das Projekt und die Lösung einen beliebigen Namen auswählen. 
 
-1. Klicken Sie in **Lösungs-Explorer** mit der rechten Maustaste auf das von Ihnen erstellte Projekt und wählen Sie im Kontextmenü **NuGet-Pakete verwalten...** aus.
+1. Klicken Sie im **Lösungs-Explorer** mit der rechten Maustaste auf das von Ihnen erstellte Projekt und wählen Sie im Kontextmenü **NuGet-Pakete verwalten...** aus.
 
-    ![NuGet-Pakete hinzufügen](../media/quick-start-org-service-console-app-2.png)
+    ![NuGet-Paket hinzufügen](../media/quick-start-org-service-console-app-2.png)
 
 1. Navigieren Sie zur neuesten Version des NuGet-Pakets `Microsoft.CrmSdk.XrmTooling.CoreAssembly` und installieren Sie es.
 
@@ -66,7 +66,7 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
     using Microsoft.Xrm.Tooling.Connector;
     ```
 
-1. Ersetzen Sie die `Main`-Methode durch den folgenden Code:
+1. Ersetzen Sie die `Main`-Methode durch den folgenden Code. Die unterstützten Werte für *AuthType* sind unter [Parameter für Verbindungszeichenfolgen](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters) aufgeführt.
 
     ```csharp
     static void Main(string[] args)
@@ -75,7 +75,7 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
         string url = "<your environment url>";
         // e.g. you@yourorg.onmicrosoft.com
         string userName = "<your user name>";
-        // e.g. y0urp455w0rd
+        // e.g. y0urp455w0rd 
         string password = "<your password>";
 
         string conn = $@"
@@ -100,7 +100,7 @@ Sie werden den <xref:Microsoft.Xrm.Sdk.IOrganizationService> verwenden.<xref:Mic
     }
     ```
 
-1. Bearbeiten Sie die folgenden Werte, um Informationen für die Umgebung hinzuzufügen:
+1. Bearbeiten Sie die folgenden Werte, um Informationen für die Umgebung hinzuzufügen. Ihre Umgebungs-URL finden Sie in der Webanwendung unter **Einstellungen > Anpassung > Entwicklerressourcen**.
 
     ```csharp
     // e.g. https://yourorg.crm.dynamics.com
@@ -127,7 +127,7 @@ Sie haben erfolgreich eine Verbindung mit dem Organisationsservice hergestellt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Themen erklären, wie Sie mit Common Data Service-Entitäten arbeiten:
+Diese Themen erklären mehr über das Arbeiten mit Common Data Service-Entitäten:
 
 [Entitäts-Vorgänge mithilfe des Organisationsservice](entity-operations.md)<br />
 [Erstellen von Entitäten mit dem Organisationsservice](entity-operations-create.md)<br />

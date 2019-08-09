@@ -82,4 +82,4 @@ Im Rechten Bereich des modellgestützten Formulardesigners können Sie mit dem E
 
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über den modellgestützten Formulardesigner](form-designer-overview.md) <br />
-[Erstellen und Bearbeiten von Formularen mit dem Formulardesigner](create-and-edit-forms.md)
+[Erstellen oder Bearbeiten von Formularen mit dem Formulardesigner](create-and-edit-forms.md)

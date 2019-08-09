@@ -2,7 +2,7 @@
 title: Visualisierung hierarchischer Daten mit modellgesteuerten Apps | MicrosoftDocs
 description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden'
 ms.custom: ''
-ms.date: 09/19/2018
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''

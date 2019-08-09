@@ -1,6 +1,6 @@
 ---
 title: Attributmetadaten| Microsoft Docs
-description: Erfahren Sie mehr zur Nutzung von Attributsmetadaten im Common Data Service
+description: Sie erhalten Informationen über die Attributmetadatenverwendung in Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -55,7 +55,7 @@ Jedes Attribut weist auch zwei Eigenschaften auf, die lokalisierte Werte anzeige
 |`Description`|Ein kurzer folgenden Satz, der das Attribut beschreibt oder eine Anweisung für Benutzer enthält. z.B.*Um eine Firma in Systemansichten schnell suchen und erkennen zu können, geben Sie eine ID-Nummer oder einen ID-Code für die Firma in der Systemansicht ein.*<br />In Modell-angetriebenen Apps werden diese Informationen angezeigt, wenn Benutzer über das Feld für dieses Attribut in einem Formular angezeigt werden.|
 
 
-Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Attribute in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Informationen zum Hinzufügen oder Bearbeiten von lokalisierten Werten finden Sie unter [Common Data Service-Anpassungshandbuch: Übersetzen angepasster Entitäts- und Feldtexte in andere Sprachen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
+Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Attribute in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Um die lokalisierten Werte hinzuzufügen oder zu bearbeiten gehen Sie zu [Common Data Service-Anpassungs-Handbuch:  Angepassten Entitäts- und Feldtext in andere Sprachen übersetzen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
 
 ## <a name="attribute-types"></a>Attributtypen
 
@@ -82,8 +82,8 @@ In der folgende Tabelle:
 |Abholung|`CalendarRulesType`|Nein|Enthält eine Sammlung von `CalendarRules` Entitätsdatensätzen<br />Es gibt keine aktuellen Attribute, die diesen Typ verwenden. Wenn Sie einen Proxy erstellen, erstellt das Codegenerierungstool die folgenden zwei simulierten Attribute, die nicht in den Metadaten vorhanden sind. Diese Attribute repräsentieren tatsächlich eine Ansicht der Kalenderregeldatensätze, die in einer 1: n-Beziehung dem Entitätsdatensatz zugeordnet sind.|
 |Abholung|`PartyListType`|Nein|Enthält eine Sammlung von `ActivityParty` Entitätsdatensätzen<br />Mehr Informationen: [ActivityParty-Entität](reference/entities/activityparty.md).|
 |Datum und Uhrzeit|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|Ja<br />**Datum und Uhrzeit**|Enthält einen Datums- und einen Zeitwert.<br />Alle Daten- und Zeitattribute unterstützen Werte ab dem 1/1/1753 12:00 Uhr.|
-|Bild|`ImageType`<br />[ImageAttributeMetadata]()|Ja<br />**Bild**|Enthält Daten, um das Abrufen von Bilddaten nach einem Entitätsdatensatz zu unterstützen.<br />Weitere Informationen: [Entitätsbilder](entity-metadata.md#entity-images)|
-|Verwaltete Eigenschaft|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Nein|Enthält Daten, die beschreiben, dass die Lösungskomponente, die im Entitätsdatensatz gespeichert ist, angepasst werden kann, wenn sie in eine verwaltete Lösung eingebunden wird.<br />Weitere Informationen: [Verwaltete Eigenschaften](introduction-solutions.md#managed-properties)|
+|Bild|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|Ja<br />**Bild**|Enthält Daten, um das Abrufen von Bilddaten nach einem Entitätsdatensatz zu unterstützen.<br />Weitere Informationen: [Entitätsbilder](entity-metadata.md#entity-images)|
+|Verwaltete Eigenschaft|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.managedpropertyattributemetadata)|Nein|Enthält Daten, die beschreiben, dass die Lösungskomponente, die im Entitätsdatensatz gespeichert ist, angepasst werden kann, wenn sie in eine verwaltete Lösung eingebunden wird.<br />Weitere Informationen: [Verwaltete Eigenschaften](introduction-solutions.md#managed-properties)|
 |Menge|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|Nein|Enthält einen `BigInt`-Wert. Nur zur internen Verwendung.|
 |Menge|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|Ja<br />**Dezimalzahl**|Enthält einen `Decimal`-Wert. Die `Precision`-Eigenschaftensätze der Berechtigungsebene der Genauigkeit.|
 |Menge|`DoubleType`<br />[DoubleAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.doubleattributemetadata)|Ja<br />**Gleitkommazahl**|Enthält einen `Double`-Wert. Die `Precision`-Eigenschaftensätze der Berechtigungsebene der Genauigkeit.|
@@ -127,7 +127,7 @@ Diese Eigenschaft kann einen der folgenden Werte sein:
 |`ApplicationRequired`|2|**Eingabe erforderlich**|Das Attribut ist vom Geschäft erforderlich, um einen Wert zu haben.|
 |`Recommended`|3|**Eingabe empfohlen**|Es wird empfohlen, dass das Attribut ein Wert ist.|
 
-Common Data Service erzwingen nur die `SystemRequired`-Option für Attribute, die vom System erstellt werden. Benutzerdefinierte Attribute können nicht angegeben werden, um die Option `SystemRequired` zu nutzen. 
+Common Data Service erzwingt nur die `SystemRequired`-Option für Attribute, die vom System erstellt werden. Benutzerdefinierte Attribute können nicht angegeben werden, um die Option `SystemRequired` zu nutzen. 
 
 Modell-angetriebene Apps erzwingen die `ApplicationRequired` Option und verwenden eine Präsentation für die `Recommended` Option. Ersteller benutzerdefinierter Clients können diese Informationen brauchen, um ähnliche Überprüfungs- oder Präsentationsoptionen anzufordern.
 
@@ -142,7 +142,7 @@ Berechnete und Rollup-Attribute befreien den Benutzer von manuellen Berechnungen
 
 Weitere Informationen: 
 - [Common Data Service-Anpassungshandbuch: Definieren der Rollupfelder, die Werte zusammenfassen](/dynamics365/customer-engagement/customize/define-rollup-fields)
-- [Common Data Service Anpassungshandbuch: Berechnete und Rollupattribute](/dynamics365/customer-engagement/customize/define-calculated-fields)
+- [Common Data Service-Anpassungshandbuch: Berechnete und Rollupattribute](/dynamics365/customer-engagement/customize/define-calculated-fields)
 - [Berechnete und Rollupattribute](/dynamics365/customer-engagement/developer/calculated-rollup-attributes)
 
 ## <a name="attribute-format"></a>Attributformat
@@ -222,7 +222,7 @@ Mit dem Organisationsservice können Sie die folgenden Nachrichten verwenden, um
 
 Weitere Informationen: 
 - [Beispiel: Speichern von Attributauswahllisten-Metadaten in einer Datei](/dynamics365/customer-engagement/developer/org-service/sample-dump-attribute-picklist-metadata-file)
-- [Common Data Service Entwicklerhandbuch: Bearbeiten von globalen Optionssätzen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
+- [Common Data Service-Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Nutzen Sie den Web API, um Optionen abzurufen
 
@@ -243,8 +243,8 @@ Beim Erstellen eines neuen Entitätsdatensatz im Rahmen eines vorhandenen Entit�
 Für die Entwickler, die benutzerdefinierte Clients erstellen, kann das gleiche Verhalten erreicht werden, indem die `InitializeFrom`Meldung (Organisations-Service [InitializeFromRequest-Klasse](/dotnet/api/microsoft.crm.sdk.messages.initializefromrequest) oder Internet API [InitializeFrom-Funktion](/dynamics365/customer-engagement/web-api/initializefrom)) verwendet wird, um die Entitätsdaten mit konfigurierten festgelegten Standardwerten abzurufen.
 
 Weitere Informationen 
-- [Common Data Service Anpassungshandbuch: Zuordnungsentitätsfelder](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
-- [Common Data Service Entwicklerhandbuch: Anpassen von Entitäts- und Attribut-Zuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
+- [Common Data Service-Anpassungshandbuch: Zuordnen von Entitätsfeldern](/dynamics365/customer-engagement/customize/map-entity-fields#BKMK_mappingEntityFields)
+- [Common Data Service-Entwicklerhandbuch: Anpassen von Entitäten und Attributzuordnungen](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)
 
 ### <a name="see-also"></a>Siehe auch
 

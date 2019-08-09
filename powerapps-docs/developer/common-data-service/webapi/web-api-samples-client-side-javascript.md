@@ -1,5 +1,5 @@
 ---
-title: Beispiele für Web-API-Datenvorgänge (clientseitiges JavaScript) (Common Data Service) | Microsoft Docs
+title: Beispiele für Web API-Datenvorgänge (clientseitiges JavaScript) (Common Data Service)| Microsoft Docs
 description: 'Dieses Thema enthält eine Beschreibung verschiedener Web-API-Beispiele, die mit clientseitigen JavaScript implementiert werden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -88,7 +88,7 @@ Falls Sie eine frühere Version von Common Data Service Customer Engagement verw
   
 -   Program output and error messages are sent to the browser’s debugger console. To see these output, open the console window first before running the sample.  Press F12 to access the developer tools, including the console window, in the [!INCLUDE[pn_Windows_Internet_Explorer](../../includes/pn-windows-internet-explorer.md)] and [!INCLUDE[pn_microsoft_edge](../../includes/pn-microsoft-edge.md)] browsers.  
   
--   These samples use the browser native [ES6-Promise](https://msdn.microsoft.com/en-us/library/dn802826\(v=vs.94\).aspx) implementation for modern browsers that support it. For [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)], this sample uses the [ES6-Promise polyfill](https://github.com/stefanpenner/es6-promise) because [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)] is the only browser supported by Common Data Service which does not have native support for this feature.  
+-   These samples use the browser native [ES6-Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx) implementation for modern browsers that support it. For [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)], this sample uses the [ES6-Promise polyfill](https://github.com/stefanpenner/es6-promise) because [!INCLUDE[pn_ie_11](../../includes/pn-ie-11.md)] is the only browser supported by Common Data Service which does not have native support for this feature.  
   
      Promises are not required. Similar interactions can be performed using callback functions. For more information, see [Create a re-usable function using promises](get-started-web-api-client-side-javascript.md#bkmk_createPromiseFunction).  
   
@@ -153,11 +153,11 @@ Falls Sie eine frühere Version von Common Data Service Customer Engagement verw
     };  
     ```  
   
-     The `Sdk.request` function returns a promise. When the request wrapped by the promise is completed, the promise is either resolved or rejected. If it is resolved, the function in the following `then` method will be called. If it is rejected, the function in the following `catch` method will be called. If the function within the `then` method itself returns a promise, the chain of operations within consecutive `then` methods can continue. Returning a promise allows us to chain these sample operations together in a way that is preferred by many developers to traditional callback functions. For more information about promise, see [JavaScript Promise](https://msdn.microsoft.com/en-us/library/dn802826\(v=vs.94\).aspx).-->  
+     The `Sdk.request` function returns a promise. When the request wrapped by the promise is completed, the promise is either resolved or rejected. If it is resolved, the function in the following `then` method will be called. If it is rejected, the function in the following `catch` method will be called. If the function within the `then` method itself returns a promise, the chain of operations within consecutive `then` methods can continue. Returning a promise allows us to chain these sample operations together in a way that is preferred by many developers to traditional callback functions. For more information about promise, see [JavaScript Promise](https://msdn.microsoft.com/library/dn802826\(v=vs.94\).aspx).-->  
   
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service-Web-API verwenden](overview.md)<br />
+[Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Web API Beispiele](web-api-samples.md)<br />
 [Web API Beispiele (C#)](web-api-samples-csharp.md)   
  

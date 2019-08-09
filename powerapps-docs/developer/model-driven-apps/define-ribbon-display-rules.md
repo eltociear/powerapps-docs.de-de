@@ -3,8 +3,7 @@ title: Definieren von Menüband-Anzeigeregeln (modellgesteuerte Apps) | Microsof
 description: 'Infos zum Festlegen bestimmter Regeln, die steuern, wann die Menübandelemente während des Konfigurierens von Menübandelementen angezeigt werden. '
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -43,9 +42,9 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
  Die `Type`-Werte entsprechen dem Folgenden:  
 
 
-|   Value   |                                                                               Präsentation                                                                               |
+|   Wert   |                                                                               Präsentation                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       Die Befehlsleiste wird mit Dynamics 365 for tablets dargestellt.                                       |
+| `Modern`  |                                       Die Befehlsleiste wird mithilfe von Dynamics 365 for tablets dargestellt.                                       |
 | `Refresh` |                                                      Die Befehlsleiste wird mithilfe der aktualisierten Benutzeroberfläche angezeigt.                                                      |
 | `Legacy`  | Das Menüband wird in Formularen für Entitäten, die nicht aktualisiert wurden, oder in einer Listenansicht in Dynamics 365 for Outlook angezeigt. |
 
@@ -57,10 +56,10 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
 - Outlook  
 
   `<CrmOfflineAccessStateRule>`  
-  Verwenden Sie diese Kriterien, um ein Menübandelement anzuzeigen, je nachdem, ob Dynamics 365 for Microsoft Office Outlook mit Offline-Zugriff derzeit offline ist.  
+  Verwenden Sie diese Kriterien, um ein Menübandelement abhängig davon anzuzeigen, ob Dynamics 365 for Microsoft Office Outlook mit Offlinezugriff derzeit im Offlinemodus ist.  
 
   `<CrmOutlookClientTypeRule>`  
-  Verwenden Sie diese Regel, wenn Sie eine Schaltfläche für einen spezifischen Dynamics 365 for Outlook-Typ anzeigen möchten. Die `Type`-Optionen lauten wie folgt:  
+  Verwenden Sie diese Regel, wenn Sie eine Schaltfläche für den spezifischen Dynamics 365 for Outlook-Typ anzeigen möchten. Die `Type`-Optionen lauten wie folgt:  
 
 - CrmForOutlook  
 
@@ -181,7 +180,7 @@ Wenn Sie Menübandelemente konfigurieren, können Sie bestimmte Regeln definiere
 - NoRelationship  
 
   `<SkuRule>`  
-  Verwenden Sie diese Art von Regel, um wie folgt ein Menübandelement für eine bestimmte SKU-Version von Common Data Service anzuzeigen:  
+  Verwenden Sie diese Art von Regel, um ein Menübandelement für eine bestimmte SKU-Version von Common Data Service wie folgt anzuzeigen,:  
 
 - OnPremise  
 

@@ -1,10 +1,9 @@
 ---
-title: Wann die Anpassungsdatei zu bearbeiten ist (Common Data Service) | Microsoft Docs
+title: Informationen zum Bearbeiten der Anpassungsdatei (Common Data Service) | MicrosoftDocs
 description: 'Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung exportiert wird, kann bearbeitet werden, sodass bestimmte Anpassungsaufgaben ausgeführt werden. Nachdem Sie die Datei bearbeitet haben, können Sie die geänderte Datei zusammen mit anderen Dateien komprimieren, die in der nicht verwalteten Lösung exportiert werden. Sie übernehmen die Änderungen, indem Sie die geänderte nicht verwaltete Lösung importieren.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -35,10 +34,10 @@ Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung expo
  **Bearbeiten des Menübands**  
  Diese Dokumentation beschreibt den Vorgang zum Bearbeiten des Menübands durch direkte Bearbeitung der Datei customization.xml. Einige Benutzer haben Ribbon-Editoren erstellt, die eine Benutzeroberfläche bieten, die das Bearbeiten des Menübands vereinfacht. Die gängigste bisher ist das [Ribbon Workbench](https://www.develop1.net/public/rwb/ribbonworkbench.aspx). Um Support für die Verwendung der Software zu erhalten, setzen Sie sich mit dem Programmherausgeber in Verbindung.  
   
- Weitere Informationen zum Bearbeiten des Menübands durch manuelle Bearbeitung der Datei customization.xml finden Sie unter [Customize the Ribbon for Microsoft Dynamics 365](../model-driven-apps/customize-commands-ribbon.md).  
+ Weitere Informationen zum Bearbeiten des Menübands durch manuelle Bearbeitung der Datei customization.xml finden Sie unter [Anpassen des Menübands für Microsoft Dynamics 365](../model-driven-apps/customize-commands-ribbon.md).  
   
  **Bearbeiten der Siteübersicht**  
- Das SDK beschreibt den Vorgang zum Bearbeiten des Menübands durch direkte Bearbeitung der Datei customization.xml. Allerdings wird empfohlen, den Siteübersichts-Designer in Common Data Service zu verwenden, um Siteübersichten zu erstellen oder zu aktualisieren. Weitere Informationen: [Erstellen einer Siteübersicht für eine App mithilfe des Siteübersichtsdesigners](../../maker/model-driven-apps/create-site-map-app.md)
+ Das SDK beschreibt den Vorgang zum Bearbeiten des Menübands durch direkte Bearbeitung der Datei customization.xml. Allerdings wird empfohlen, den Siteübersichtdesigner in Common Data Service zu verwenden, um Siteübersichten zu erstellen oder zu aktualisieren. Weitere Informationen: [Erstellen einer Siteübersicht für eine App mithilfe des Siteübersichtsdesigners](../../maker/model-driven-apps/create-site-map-app.md)
   
  Sie können einen Community-entwickelten der Siteübersichtseditoren verwenden, wie den [XrmToolBox-Siteübersichts-Editor](https://www.xrmtoolbox.com/plugins/MsCrmTools.SiteMapEditor/).   
   
@@ -46,13 +45,13 @@ Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung expo
  
   
  **Bearbeiten von FormXml**  
- FormXml wird verwendet, um Entitätsformulare und Dashboards zu definieren. Der Formular-Editor und der Dashboard-Designer in der Anwendung sind die am häufigsten verwendeten Tools für diesen Zweck. Alternativ kann die Datei customizations.xml bearbeitet werden. Weitere Informationen finden Sie unter [Passen Sie Entitätsformulare in Microsoft Dynamics 365](../model-driven-apps/customize-entity-forms.md) und [Dashboard erstellen](../model-driven-apps/create-dashboard.md).
+ FormXml wird verwendet, um Entitätsformulare und Dashboards zu definieren. Der Formular-Editor und der Dashboard-Designer in der Anwendung sind die am häufigsten verwendeten Tools für diesen Zweck. Alternativ kann die Datei customizations.xml bearbeitet werden. Weitere Informationen finden Sie unter [Anpassen von Entitätsformularen in Microsoft Dynamics 365](../model-driven-apps/customize-entity-forms.md) und [Erstellen eines Dashboards](../model-driven-apps/create-dashboard.md).
   
  **Bearbeiten von gespeicherten Abfragen**  
  Definitionen von Ansichten für Entitäten sind in der Datei customizations.xml enthalten und können manuell bearbeitet werden. Der Ansicht-Editor in der Anwendung ist das am häufigsten verwendeten Tool für diesen Zweck. Alternativ kann die Datei customizations.xml bearbeitet werden. Weitere Informationen finden Sie unter [Anpassen von Entitätsansichten in Microsoft Dynamics 365](../model-driven-apps/customize-entity-views.md).
   
  **Bearbeiten von ISV.config**  
- In älteren Versionen von Dynamics 365 Common Data Service diente ISV.Config zum Hinzufügen von Client-Anwendungserweiterungen und einigen anderen Konfigurationsoptionen. Für Microsoft Dynamics CRM 2011 and Microsoft Dynamics 365 Online stellt das Menüband die Möglichkeit bereit, die Anwendung zu erweitern. Die einzige verbleibenden Funktion in ISV.Config ist die Anpassung der Darstellung des Servicekalenders. Weitere Informationen finden Sie unter [Servicekalender-Darstellungskonfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).
+ In älteren Versionen von Dynamics 365 Common Data Service diente ISV.Config zum Hinzufügen von Client-Anwendungserweiterungen und einigen anderen Konfigurationsoptionen. Für Microsoft Dynamics CRM 2011 und Microsoft Dynamics 365 Online stellt das Menüband die Möglichkeit bereit, die Anwendung zu erweitern. Die einzige verbleibenden Funktion in ISV.Config ist die Anpassung der Darstellung des Servicekalenders. Weitere Informationen finden Sie unter [Servicekalender-Darstellungskonfiguration](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration).
   
 ## <a name="unsupported-tasks"></a>Nicht unterstützte Aufgaben  
  Das Definieren anderer Lösungskomponenten durch Bearbeitung der exportierten Datei customizations.xml wird nicht unterstützt. Dies beinhaltet Folgendes:  
@@ -94,7 +93,7 @@ Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung expo
 -   Feldsicherheitsprofile  
   
 ### <a name="see-also"></a>Siehe auch  
- [Anpassen von Microsoft Dynamics 365 und Microsoft Dynamics 365 (Online)](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)   <!-- TODO Need to find the topic in powerapps repo-->
+ [Anpassen von Microsoft Dynamics 365 und Microsoft Dynamics 365 (online)](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)   <!-- TODO Need to find the topic in powerapps repo-->
  [Anpassen der XML-Referenz](../model-driven-apps/customization-xml-reference.md) [Anpassen des Lösungsdateischemas](customization-solutions-file-schema.md)  
  [Menübandkernschema](../model-driven-apps/ribbon-core-schema.md) [Menübandtypenschema](../model-driven-apps/ribbon-types-schema.md) [Menüband-WSS-Schema](../model-driven-apps/ribbon-wss-schema.md)   
  [SiteMap-Schema](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema) [Formular-XML-Schema](../model-driven-apps/form-xml-schema.md)   

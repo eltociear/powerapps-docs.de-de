@@ -14,6 +14,10 @@ ms.assetid: 16691acb-a58c-4ca6-b6a8-58c76c9db1ca
 
 # <a name="iimageinfo"></a>IImageInfo
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Eigenschaften
+
 ## <a name="url"></a>Url
 
 Die URL des bedingten Bilds.

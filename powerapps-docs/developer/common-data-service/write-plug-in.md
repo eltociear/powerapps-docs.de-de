@@ -1,8 +1,8 @@
 ---
-title: Schrieben eines Plug-In (Common Data Service) | MicrosoftDocs
+title: Schreiben eines Plug-Ins (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie über die Konzepte und technischen Details, die für das Schreiben von Plug-Ins notwendig sind.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,8 +19,8 @@ search.app:
 
 Der Prozess des Schreibens, Registrierens und Debuggens eines Plugins ist:
 
-1. **Erstellen Sie ein .NET-Framework-Klassenbibliotheksprojekt in Visual Studio**
-1. **Fügen Sie das `Microsoft.CrmSdk.CoreAssemblies` NuGet-Paket dem Projekt hinzu**
+1. **Erstellen Sie ein .NET Framework-Klassenbibliotheksprojekt in Visual Studio**
+1. **Fügen Sie das `Microsoft.CrmSdk.CoreAssemblies`-NuGet-Paket dem Projekt hinzu**
 1. **Implementieren Sie die <xref:Microsoft.Xrm.Sdk.IPlugin>-Schnittstelle in Klassen, die als Schritte registriert werden.**
 1. **Fügen Sie Ihren Code der <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>-Methode hinzu, die für die Schnittstelle erforderlich ist**
     1. **Rufen Sie Referenzen auf Dienste ab, die Sie benötigen**
@@ -43,6 +43,10 @@ Inhalt in diesem Thema befasst sich mit dem Schritten **in fett** oben und unter
 
 Wenn Sie Assemblys erstellen, beachten Sie die folgenden Einschränkungen.
 
+### <a name="use-net-framework-462"></a>Verwenden von .NET Framework 4.6.2
+
+Plug-Ins und benutzerdefinierte Workflow-Assemblys sollten .NET Framework 4.6.2 verwenden. Während die Assemblys, die spätere Versionen verwenden, im Allgemeinen funktionieren. Wenn sie eine Funktion verwenden, die nach 4.6.2 eingeführt wurde, tritt ein Fehler auf.
+
 ### <a name="optimize-assembly-development"></a>Optimieren der Assemblyentwicklung
 
 Die Assembly sollte mehrere Plug-In-Klassen (oder Typen) beinhalten, aber sie kann nicht größer als 16 MB sein. Es wird empfohlen, Plug-Ins und Workflow-Assemblys in eine einzelne Assembly zu konsolidieren, solange die Größe unter 16 MB bleibt. Weitere Informationen: [Optimieren von Assemblyentwicklung](/dynamics365/customer-engagement/guidance/server/optimize-assembly-development)
@@ -57,7 +61,7 @@ Plug-In-Assemblys müssen die gesamte notwendige Logik innerhalb der jeweiligen 
 
 ## <a name="iplugin-interface"></a>IPlugin-Schnittstelle
 
-Ein Plug-In ist eine Klasse innerhalb einer Assembly, die mithilfe eines .NET Framework-Klassenbibliothekprojekts mithilfe von .NET Framework 4.6.2 in Visual Studio erstellt ist. Jede Klasse im Projekt, die als Schritt registriert wird, muss die Schnittstelle <xref:Microsoft.Xrm.Sdk.IPlugin> implementieren, die die <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>-Methode benötigt.
+Ein Plug-In ist eine Klasse innerhalb einer Assembly, die mithilfe eines .NET Framework-Klassenbibliothekprojekts mithilfe von .NET Framework 4.6.2 in Visual Studio erstellt wird. Jede Klasse im Projekt, die als Schritt registriert wird, muss die Schnittstelle <xref:Microsoft.Xrm.Sdk.IPlugin> implementieren, die die <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*>-Methode benötigt.
 
 > [!IMPORTANT]
 > Beim Implementieren von `IPlugin`, sollte die Klasse *statusfrei* sein. Dies liegt daran, dass die Plattform eine Klasseninstanz zwischenspeichert und sie aus Leistungsgründen erneut verwendet. Eine einfache Möglichkeit, sich dies vorzustellen, besteht darin, dass Sie keine Eigenschaften oder Methoden der Klasse hinzufügen sollten, und alles sollte in der `Execute`-Methode eingeschlossen sein. Es gibt einige Ausnahmen davon. Beispielsweise können Sie eine Eigenschaft haben, die eine Konstante darstellt, und Sie können Methoden haben, die Funktionen darstellen, die von der `Execute`-Methode aus aufgerufen werden. Es ist wichtig, dass Sie nie irgendeine Serviceinstanz oder Kontextdaten als Eigenschaft in Ihrer Klasse speichern. Diese ändern sich bei jedem Aufruf, und Sie möchten nicht, dass diese Daten zwischengespeichert und auf darauf folgende Aufrufe angewendet werden.  Weitere Informationen: [Entwickeln von IPlugin-Implementierungen als statusfrei](/dynamics365/customer-engagement/guidance/server/develop-iplugin-implementations-stateless)
@@ -76,7 +80,7 @@ public SamplePlugin()
 public SamplePlugin(string unsecure)  
 public SamplePlugin(string unsecure, string secure)
 ```
-Die sicheren Konfigurationsdaten werden in einer separaten Entität gespeichert. Nur Systemadministratoren haben das Recht, sie zu lesen. Weitere Informationen: [Konfigurationsdaten festlegen](register-plug-in.md#set-configuration-data)
+Die sicheren Konfigurationsdaten werden in einer separaten Entität gespeichert. Nur Systemadministratoren haben das Recht, sie zu lesen. Weitere Informationen: [Registrieren des Plug-In-Schritts > Konfigurationsdaten festlegen](register-plug-in.md#set-configuration-data)
 
 ## <a name="services-you-can-use-in-your-code"></a>Dienste, die Sie in Ihrem Code verwenden können
 
@@ -105,17 +109,19 @@ IOrganizationServiceFactory serviceFactory =
     (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
 IOrganizationService svc = serviceFactory.CreateOrganizationService(context.UserId);
 ```
+
 Die Variable `context.UserId`, die mit <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>-<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> verwendet wird kommt aus dem Ausführungskontext der <xref:Microsoft.Xrm.Sdk.IExecutionContext.UserId>-Eigenschaft. Somit erfolgt dieser Aufruf, nachdem auf den Ausführungskontext zugegriffen wurde.
 
 Weitere Informationen:
- - [Entitätsvorgänge](org-service/entity-operations.md)
- - [Daten abfragen](org-service/entity-operations-query-data.md)
- - [Entitäten erstellen](org-service/entity-operations-create.md)
- - [Eine Entität abrufen](org-service/entity-operations-retrieve.md)
- - [Entitäten aktualisieren und löschen](org-service/entity-operations-update-delete.md)
- - [Entitäten zuordnen und ihre Zuordnung aufheben](org-service/entity-operations-associate-disassociate.md)
- - [Nachrichten verwenden](org-service/use-messages.md)
- - [Spät gebundene und früh gebundene Programmierung](org-service/early-bound-programming.md)
+
+- [Entitätsvorgänge](org-service/entity-operations.md)
+- [Daten abfragen](org-service/entity-operations-query-data.md)
+- [Entitäten erstellen](org-service/entity-operations-create.md)
+- [Eine Entität abrufen](org-service/entity-operations-retrieve.md)
+- [Entitäten aktualisieren und löschen](org-service/entity-operations-update-delete.md)
+- [Entitäten zuordnen und ihre Zuordnung aufheben](org-service/entity-operations-associate-disassociate.md)
+- [Nachrichten verwenden](org-service/use-messages.md)
+- [Spät gebundene und früh gebundene Programmierung](org-service/early-bound-programming.md)
 
 Sie können Typen mit früher Bindung innerhalb eines Plug-Ins verwenden. Fügen Sie einfach die Datei mit generierten Typen in Ihr Projekt ein. Aber Sie sollten beachten, dass sämtliche Entitätstypen, die von den Ausführungskontext-Eingabeparametern bereitgestellt werden, spät gebundene Typen sind. Sie müssen sie in Typen mit früher Bindung konvertieren. Beispielsweise können Sie die folgenden Schritte ausführen, wenn Sie wissen, dass der Parameter `Target` eine Kontoentität darstellt.
 
@@ -127,6 +133,7 @@ Aber Sie sollten nie versuchen, den Wert mithilfe eines Typs mit früher Bindung
 ```csharp
 context.InputParameters["Target"] = new Account() { Name = "MyAccount" }; // WRONG: Do not do this. 
 ```
+
 Infolge dessen tritt eine <xref:System.Runtime.Serialization.SerializationException> auf.
 
 ## <a name="use-the-tracing-service"></a>Den Ablaufverfolgungsdienst verwenden
@@ -152,7 +159,10 @@ Weitere Informationen finden Sie unter: [Tracing verwenden](debug-plug-in.md#use
 
 ## <a name="performance-considerations"></a>Leistungsüberlegungen
 
-Wenn Sie die Geschäftslogik für Ihr Plug-In hinzufügen, müssen Sie sich der Auswirkungen sehr bewusst sein, die sie auf die Gesamtleistung haben. Der Abschluss der Geschäftslogik in Plug-Ins sollte nicht mehr als 2 Sekunden dauern.
+Wenn Sie die Geschäftslogik für Ihr Plug-In hinzufügen, müssen Sie sich der Auswirkungen sehr bewusst sein, die sie auf die Gesamtleistung haben.
+
+> [!IMPORTANT]
+> Der Abschluss der Geschäftslogik in Plug-Ins, die für synchrone Schritte registriert wurden, sollte nicht mehr als 2 Sekunden dauern.
 
 ### <a name="time-and-resource-constraints"></a>Zeit- und Ressourcenbeschränkungen
 
@@ -179,7 +189,7 @@ Laufzeitinformationen zu Plug-Ins und benutzerdefinierten Workflowerweiterungen 
 |TerminateMemoryContributionPercent|Der Beitrag des Plug-In-Typs an der Beendigung des Arbeitsprozesses aufgrund übermäßiger Arbeitsspeichernutzung in Prozent. |
 |TerminateOtherContributionPercent|Der Beitrag des Plug-In-Typs an der Beendigung des Arbeitsprozesses aus unbekannten Gründen in Prozent. |
 
-Diese Daten sind ebenfalls verfügbar, damit Sie sie mithilfe des [Organisationsinformationen-Plug-In-Dashboard](/dynamics365/customer-engagement/admin/use-organization-insights-solution-view-instance-metrics#plug-ins) neben vielen anderen nützlichen Berichten durchsuchen können.
+Die Daten können Sie ebenfalls mithilfe des [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) durchstöbern. Wählen Sie **Analyse** > **Common Data Service** > **Plug-Ins** aus.
 
 
 ## <a name="next-steps"></a>Nächste Schritte

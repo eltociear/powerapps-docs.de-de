@@ -14,6 +14,10 @@ ms.assetid: 08ea66d3-b4af-44af-a3ae-cb2ebad043e8
 
 # <a name="retrievemultipleresponse"></a>RetrieveMultipleResponse
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Eigenschaften
+
 ## <a name="entities"></a>Entitäten
 
 Ein Array von JSON-Objekten, wobei jedes Objekt den abgerufenen Entitätsdatensatz darstellt, der die Attribute und Ihre Werte enthält.

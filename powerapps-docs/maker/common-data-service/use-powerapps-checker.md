@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 03/20/2019
+ms.date: 06/25/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -21,19 +21,20 @@ Um komplexe geschäftliche Anforderungen zu liefern, können Modell-angetriebene
 
 Der Lösungsprüfer analysiert die Lösungskomponente: 
 - Common Data Service-Plug-Ins
-- Benutzerdefinierte Common Data Service-Workflow-Aktivitäten 
-- Common Data Service-Webressourcen (HTML und JavaScript)
-- Common Data Service-Konfigurationen wie SDK-Message-Schritte 
+- Common Data Service benutzerdefinierte Workflowaktivitäten 
+- Common Data Service-Webressourcen (HTML) und JavaScript
+- Common Data Service-Konfigurationen, wie SDK-Nachrichtenschritte 
 
 Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung exportiert werden. 
 
 > [!NOTE]
-> Lösungsprüfer funktioniert nicht für Lösungen, die JavaScript mit ECMAScript 6 (2015 ) oder höheren Versionen enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
+> - In diesem Artikel wird erläutert, wie der Lösungsprüfer über das PowerApps-Herstellerportal ausgeführt wird. Ein PowerShell-Modul ist ebenfalls verfügbar, das Sie verwenden können, um direkt mit dem Service zu interagieren. Das Microsoft.PowerApps.Checker.PowerShell-Modul kann für die Analyse verwalteter und nicht verwalteter Lösungen für unterstützte Versionen von lokalen und Online-Umgebungen verwendet werden, oder der Service kann automatisiert und in Ihre Build- und Release-Pipelines integrieren. Weitere Informationen: [Microsoft.PowerApps.Checker.PowerShell-Übersicht]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - Der Lösungsprüfer funktioniert nicht für Lösungen, die JavaScript mit ECMAScript 6 (2015 ) oder höhere Versionen enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
 
 ## <a name="enable-the-solution-checker"></a>Aktivieren des Lösungsprüfer
-Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Sie die PowerApps-Prüferlösung installieren. Beachten Sie, dass Sie sie nicht finden können, indem Sie in Microsoft AppSource durchsuchen oder suchen. Zur Installation führen Sie die folgenden Schritte aus:  
+Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Sie die PowerApps-Prüferlösung installieren. Beachten Sie, dass Sie sie nicht finden können, indem Sie Microsoft AppSource durchsuchen oder darin stöbern. Zur Installation führen Sie die folgenden Schritte aus:  
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen die Common Data Service Umgebung aus, in der Sie den Lösungsprüfer aktivieren möchten. 
+1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie die Common Data Service-Umgebung aus, in der Sie den Lösungsprüfer aktivieren möchten. 
 2. Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
 3. Klicken Sie auf der Symbolleiste die Option **Lösungsprüfer** und anschließend **Installieren** aus – das öffnet die Microsoft AppSource-Seite. Sie müssen Popup-Fenster ermöglichen, wenn der Browser die Seite am Öffnen hindert. 
 
@@ -137,22 +138,25 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 |Plug-in oder Workflowaktivität   | [meta-remove-dup-reg](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | Vermeiden Sie doppeltes Dynamics 365 for Customer Engagement Plug-In Registrierungen.     |
 |Plug-in oder Workflowaktivität   | [il-turn-off-keepalive](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | Legen Sie KeepAlive auf false, wenn Sie mit externen Hosts in einem Dynamics 365 for Customer Engagement Plug-in interagieren.     |
 |Plug-in oder Workflowaktivität   | [il-avoid-unpub-metadata](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | Vermeiden Sie es, unveröffentlichtes Dynamics 365 for Customer Engagement Metadaten  abzurufen.     |
-|Plug-in oder Workflowaktivität   | [il-avoid-batch-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | Vermeiden Sie die Nutzung von Dynamics 365 Customer Engagement Plug-ins und und Workflowaktivitäten.    |
+|Plug-in oder Workflowaktivität   | [il-avoid-batch-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | Vermeiden Sie die Verwendung von Batch-Requesttypen in Dynamics 365 Customer Engagement-Plugins und -Workflow-Aktivitäten.    |
 |Plug-in oder Workflowaktivität   | [meta-avoid-reg-no-attribute](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | Schließen Sie Filterungsattribute mit Dynamics 365 for Customer Engagement Plug-In-Registrierungen ein.    |
 |Plug-in oder Workflowaktivität   | [meta-avoid-reg-retrieve](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | Verwenden Sie Dynamics 365 for Customer Engagement Plug-ins mit Vorsicht, die für Retrieve und RetrieveMultiple Nachrichten angemeldet sind.    |
 |Plug-in oder Workflowaktivität   | [meta-remove-inactive](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | Entfernen Sie inaktive Konfigurationen in Dynamics 365 for Customer Engagement.    |
-|Plug-in oder Workflowaktivität   | [Vermeiden Sie die Verwendung von window.top](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-window-top&client=PAChecker&source=featuredocs)   | Vermeiden Sie die Verwendung von window.top.    |
-|Plug-in oder Workflowaktivität   | [il-meta-avoid-crm2011-depr-message](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | Verwenden Sie keine Microsoft Dynamics CRM veraltete 2011 Nachrichten.     |
-|Plug-in oder Workflowaktivität   | [meta-avoid-crm4-event](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | Verwenden Sie keine Microsoft Dynamics CRM 4.0 Registrierungs-Phase.    |
-|Plug-in oder Workflowaktivität   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | Verwenden Sie keine speziellen Aktualisierungsvorgangsanforderungen in Dynamics 365 for Customer Engagement.        |
+|Plug-in oder Workflowaktivität   | [il-meta-avoid-crm2011-depr-message](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | Verwenden Sie keine veralteten Microsoft Dynamics CRM 2011-Messages.     |
+|Plug-in oder Workflowaktivität   | [meta-avoid-crm4-event](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | Verwenden Sie keine Microsoft Dynamics CRM 4.0-Plug-In-Registrierungs-Phase.    |
+|Plug-in oder Workflowaktivität   | [il-avoid-specialized-update-ops](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | Verwenden Sie keine speziellen Aktualisierungsvorgangsanforderungen in Dynamics 365 for Customer Engagement.    | 
+| Plug-in oder Workflowaktivität |  [il-use-autonumber-feature](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |Verwenden Sie die automatische Zahlenfunktion statt einer benutzerdefinierten automatischen Nummerierungslösung. | 
+| Plug-in oder Workflowaktivität  | [il-avoid-parallel-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | Die Verwendung von parallelen Mustern sollte innerhalb von Plug-Ins vermieden werden.  |
+| Plug-in oder Workflowaktivität  | [il-avoid-lock-plugin](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | Vermeiden Sie die Sperre statischer Mitglieder in Plug-Ins.  |
+| Plug-in oder Workflowaktivität  | [meta-avoid-retrievemultiple-annotation](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | Vermeiden Sie die Registrierung eines Plug-Ins bei RetrieveMultiple der Anmerkung.  |
 |Webressourcen  | [web-use-async](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  Interagieren mit HTTP- und HTTPS-Ressourcen asynchron.   |
 |Webressourcen  | [meta-remove-invalid-form-handler](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | Korrigieren Sie oder entfernen Sie ungültiges Dynamics 365 for Customer Engagement Formular-Ereignisanmeldungen.   |
 |Webressourcen  | [meta-remove-orphaned-form-element](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | Korrigieren Sie oder entfernen Sie ungültiges Dynamics 365 for Customer Engagement Formular-Ereignisanmeldungen.   |
 |Webressourcen  | [web-avoid-modals](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-modals&client=PAChecker&source=featuredocs)  | Vermeiden Sie die Nutzung von modalen Dialogfelder.   |
-|Webressourcen  | [web-avoid-crm2011-service-odata](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | Sprechen Sie nicht Microsoft Dynamics CRM 2011 ODatas 2.0 Endpunkte an.     |
-|Webressourcen  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Sprechen Sie nicht die Microsoft Dynamics CRM 2011 SOAP-Dienstleistungen an.   |
-|Webressourcen  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Verwenden Sie keine Internet Explorer-Vorgänger APIs Internet oder Browser-Plug-Ins.   |
-|Webressourcen  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | Verwenden Sie keine veralteten Microsoft Dynamics CRM-Objektmodell 2011.  |
+|Webressourcen  | [web-avoid-crm2011-service-odata](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | Zielen Sie nicht auf den Microsoft Dynamics CRM 2011 ODatas 2.0-Endpunkt ab.     |
+|Webressourcen  | [web-avoid-crm2011-service-soap](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Zielen Sie nicht auf die Microsoft Dynamics CRM 2011 SOAP-Services ab.   |
+|Webressourcen  | [web-avoid-browser-specific-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Verwenden Sie keine Internet Explorer-Vorgänger APIs Internet oder -Browser-Plug-Ins.   |
+|Webressourcen  | [web-avoid-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | Verwenden Sie kein veraltetes Microsoft Dynamics CRM 2011-Objektmodell.  |
 |Webressourcen  | [web-use-relative-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Verwenden Sie keine absoluten Common Data Service-Endpunkt-URLs.    |
 |Webressourcen  | [web-use-client-context](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Nutzen Sie Client-Kontexte.   |
 |Webressourcen  | [web-use-dialog-api-param](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Nutzen Sie Dialog-API-Parameter.   |
@@ -160,9 +164,17 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 |Webressourcen  | [web-use-grid-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-grid-api&client=PAChecker&source=featuredocs)   | Verwenden Sie Gitter-APIs.    |
 |Webressourcen  | [web-avoid-isActivityType](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-isActivityType&client=PAChecker&source=featuredocs)   | Ersetzen Sie Xrm.Utility.isActivityType-Methode mit neuen Xrm.Utility.getEntityMetadata und verwenden Sie nicht die Menübandregeln.    |
 |Webressourcen  | [meta-avoid-silverlight](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-silverlight&client=PAChecker&source=featuredocs)   | Die Nutzung der Webressource Silverlight (XAP) ist veraltet.   |
+| Webressourcen  | [web-remove-debug-script](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-remove-debug-script&client=PAChecker)  | Verwenden SIe keine Debugskripts in Nicht-Entwicklungsumgebungen.  | 
+| Webressourcen  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | Verwenden Sie den strengem Modus, wenn möglich.  | 
+| Webressourcen  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Verwenden Sie strenge Gleichheitsoperatoren.  | 
+| Webressourcen  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | Verwenden Sie nicht die Funktion „eval” oder deren funktionale Entsprechungen.  | 
+
+## <a name="limitations"></a>Einschränkungen
+
+Der Lösungsprüfer kann zu diesem Zeitpunkt nicht automatisiert werden. Sie müssen ihn über https://web.powerapps.com ausführen. Weitere Informationen: [Ausführen des Lösungsprüfers](#run-the-solution-checker)
 
 
-## <a name="see-also"></a>Siehe auch
-[Bewährte Methoden und Leitlinien für den Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
+### <a name="see-also"></a>Siehe auch
+[Bewährte Methoden sowie Anweisungen zum Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
 [Best Practices und Anleitungen für modellgetriebene Anwendungen](../../developer/model-driven-apps/best-practices/index.md)<br />
 [Häufige Probleme und Lösungen für Solution Checker](common-issues-resolutions-solution-checker.md)<br />

@@ -1,10 +1,9 @@
 ---
-title: CSS Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Verwendet Cascading Stylesheets (CSS), um Stylesheets zur Verwendung in Webseitenwebressourcen zu erstellen. '
+title: CSS-Webressourcen (modellgesteuerte Apps) | Microsoft Docs
+description: 'Verwenden Sie Cascading Stylesheets (CSS)-Webressourcen, um Stylesheets zur Verwendung in Webseiten-Webressourcen zu erstellen. '
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,15 +21,15 @@ search.app:
 
 # <a name="css-web-resources"></a>CSS Webressourcen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/css-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/css-web-resources -->
 
-Verwendet Cascading Stylesheets (CSS), um Stylesheets zur Verwendung in Webseitenwebressourcen zu erstellen.  
+Verwenden Sie Cascading Stylesheets (CSS)-Webressourcen, um Stylesheets zur Verwendung in Webseiten-Webressourcen zu erstellen.  
   
 ## <a name="capabilities-of-css-web-resources"></a>Funktionen von CSS-Webressourcen  
- Mit CSS-Webressourcen können Sie die Darstellung der Webseitenwebressourcen verwalten, indem Sie sie mit einer freigegebenen Bibliothek mit CSS-Formaten verknüpfen.  
+ Mit CSS-Webressourcen können Sie die Darstellung der Webseiten-Webressourcen verwalten, indem Sie sie mit einer freigegebenen Bibliothek mit CSS-Formaten verknüpfen.  
   
 ### <a name="limitations-of-css-web-resources"></a>Einschränkungen von CSS-Webressourcen  
- Wie alle Webressourcen sind CSS-Webressourcen nur im entsprechenden Sicherheitskontext verfügbar. Nur lizenzierte Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.
+ Wie alle Webressourcen sind CSS-Webressourcen nur im Sicherheitskontext verfügbar. Nur lizenzierte Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.
   
 ## <a name="referencing-a-style-sheet-web-resource-from-a-webpage-web-resource"></a>Auf eine Stylesheetwebressource aus einer Webseitenwebressource verweisen  
  Alle Webressourcen können relative URLs verwenden, um aufeinander zu verweisen. Im folgenden Beispiel wird der Webseitenwebressource `sample_/content/contentpage.htm`, um auf die Stylesheetwebressource `sample_/styles/styles.css` zu verweisen, das folgende Beispiel dem Anfangselement von sample_ /content/contentpage.htm hinzugefügt:  

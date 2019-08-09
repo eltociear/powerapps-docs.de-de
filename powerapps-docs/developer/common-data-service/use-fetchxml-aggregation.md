@@ -1,8 +1,8 @@
 ---
-title: Verwenden von FetchXML-Aggregation (Common Data Service) | Microsoft Docs
+title: Verwenden der FetchXML-Aggregation (Common Data Service) | Microsoft Docs
 description: 'Erfahren Sie mehr über die Gruppierungs- und Aggregationsfunktionen von FetchXML, mit denen Sie die Summe, das durchschnittliche Minimum, das durchschnittliche Maximum und die Anzahl berechnen können.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -22,25 +22,20 @@ In Common Data Service enthält `FetchXML` Gruppierungs- und Aggregationsfunktio
   
  Die folgenden Aggregatfunktionen werden unterstützt:  
   
--   sum  
-  
--   avg  
-  
--   Min.  
-  
--   max  
-  
--   count(*)  
-  
--   count(*attribute name*)  
+- sum  
+- avg  
+- Min.  
+- max  
+- count(*)  
+- count(*attribute name*)
   
 <a name="Aggregation"></a>
 
 ## <a name="about-aggregation"></a>Über Aggregation
  
- Um ein Aggregatattribut zu erstellen, legen Sie das Schlüsselwort `aggregate` auf `true` fest, und geben Sie dann einen gültigen *Entitätsnamen*, *Attributnamen* und *Alias* (Variablennamen) an. Sie müssen auch den Typ der Aggregation angeben, den Sie ausführen möchten.  
+Um ein Aggregatattribut zu erstellen, legen Sie das Schlüsselwort `aggregate` auf `true` fest, und geben Sie dann einen gültigen *Entitätsnamen*, *Attributnamen* und *Alias* (Variablennamen) an. Sie müssen auch den Typ der Aggregation angeben, den Sie ausführen möchten.  
   
- Das folgende Beispiel zeigt ein einfaches Aggregatattribut in `FetchXML`.  
+Das folgende Beispiel zeigt ein einfaches Aggregatattribut in `FetchXML`.  
   
 ```xml  
 <fetch distinct='false' mapping='logical' aggregate='true'>   
@@ -50,9 +45,9 @@ In Common Data Service enthält `FetchXML` Gruppierungs- und Aggregationsfunktio
 </fetch>
 ```  
   
- Das Ergebnis einer Abfrage mit einem Aggregatattribut unterscheidet sich von den Ergebnissen einer Standardabfrage. Der Aliaswert wird als der Tagbezeichner für das Aggregatergebnis verwendet.  
+Das Ergebnis einer Abfrage mit einem Aggregatattribut unterscheidet sich von den Ergebnissen einer Standardabfrage. Der Aliaswert wird als der Tagbezeichner für das Aggregatergebnis verwendet.  
   
- Im folgenden Beispiel wird das Format von dem Ergebnis einer Aggregatabfrage gezeigt.  
+Im folgenden Beispiel wird das Format von dem Ergebnis einer Aggregatabfrage gezeigt.  
   
 ```xml
 <resultset morerecords="0"'>   
@@ -62,7 +57,7 @@ In Common Data Service enthält `FetchXML` Gruppierungs- und Aggregationsfunktio
 </resultset>
 ```  
   
- Das folgende Beispiel zeigt die Ergebnisse einer Abfrage, wenn die zu Aliasvariable auf `account_count` festgelegt ist.  
+Das folgende Beispiel zeigt die Ergebnisse einer Abfrage, wenn die zu Aliasvariable auf `account_count` festgelegt ist.  
   
 ```xml
 <resultset morerecords="0"'>   
@@ -71,17 +66,32 @@ In Common Data Service enthält `FetchXML` Gruppierungs- und Aggregationsfunktio
    </result>  
 </resultset>
 ```  
+
+<a name="Limitations"></a>
+
+## <a name="limitations"></a>Einschränkungen
+
+Abfragen, doe aggregierte Werte zurückgeben, sind auf 50.000 Datensätze beschränkt. Diese Beschränkung hilft dabei, die Systemleistung und Zuverlässigkeit zu erhalten. Wenn die Filterabfragen in Ihrer Abfrage mehr als 50.000 Datensätzen enthalten, wird die folgende Fehlermeldung angezeigt:
+
+Fehlercode: `-2147164125`<br />
+Hexadezimal-Fehlercode: `8004E023`<br />
+Plattform-Fehlermeldung: `AggregateQueryRecordLimit exceeded. Cannot perform this operation.`<br />
+Client-Fehlermeldung: Die maximale Datensatzgrenze wird überschritten. Reduzieren Sie die Anzahl der Datensätze.<br />
+
+Um diesen Fehler zu vermeiden, fügen Sie entsprechende Filter zu Ihrer Abfrage hinzu, um sicherzustellen, dass nicht mehr als 50.000 Datensätzen ausgewertet werden müssen. Führen Sie Ihre Abfrage dann mehrmals aus und kombinieren Sie die Ergebnisse.
+
+> [!TIP]
+> Wenn Sie eine Gesamtanzahl der Datensätze ohne Filter erhalten möchten, verwenden Sie die Message `RetrieveTotalRecordCount` entweder mit der Web-API <xref href="Microsoft.Dynamics.CRM.RetrieveTotalRecordCount?text=RetrieveTotalRecordCount Function" /> oder mit der <xref:Microsoft.Crm.Sdk.Messages.RetrieveTotalRecordCountRequest>-Message-Klasse des Organisationsservice.
   
 <a name="AVG"></a>
 
 ## <a name="avg"></a>Durchschnitt
 
- Im folgenden Beispiel wird gezeigt, wie das `avg``aggregate`-Attribut verwendet wird.  
+ Im folgenden Beispiel wird gezeigt, wie das `avg` `aggregate`-Attribut verwendet wird.  
   
  ```csharp
 // Fetch the average of estimatedvalue for all opportunities.  This is the equivalent of 
 // SELECT AVG(estimatedvalue) AS estimatedvalue_avg ... in SQL.
-System.Console.WriteLine("===============================");
 string estimatedvalue_avg = @" 
 <fetch distinct='false' mapping='logical' aggregate='true'> 
     <entity name='opportunity'> 
@@ -97,13 +107,13 @@ foreach (var c in estimatedvalue_avg_result.Entities)
     System.Console.WriteLine("Average estimated value: " + aggregate1);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
-### <a name="limitation-with-null-values-while-computing-average"></a>Beschränkung mit Nullwerten beim Berechnen des Durchschnitts  
- **Null**-Werte werden nicht berücksichtigt, wenn Common Data Service den Durchschnitt von Daten berechnet. NULL (0) wird jedoch verwendet.  
+### <a name="limitation-with-null-values-while-computing-average"></a>Beschränkung mit Nullwerten beim Berechnen des Durchschnitts
+
+**NULL**-Werte werden nicht berücksichtigt, wenn Common Data Service den Durchschnitt von Daten berechnet. NULL (0) wird jedoch verwendet.  
   
- Im folgenden Beispiel wird mit den folgenden Daten als Durchschnittswert für Firma 1 (zwei Einträge) 250 angezeigt, während als Durchschnittswert für Firma 2 (zwei Einträge) 125 angezeigt wird.  
+Im folgenden Beispiel wird mit den folgenden Daten als Durchschnittswert für Firma 1 (zwei Einträge) 250 angezeigt, während als Durchschnittswert für Firma 2 (zwei Einträge) 125 angezeigt wird.  
   
 |Thema|Potenz. Kunde|Erwarteter Wert|  
 |-----|------------------|---------------|  
@@ -116,7 +126,7 @@ System.Console.WriteLine("===============================");
 
 ## <a name="count"></a>Anzahl
 
- Im folgenden Beispiel wird gezeigt, wie das `count``aggregate`-Attribut verwendet wird.  
+Im folgenden Beispiel wird gezeigt, wie das `count` `aggregate`-Attribut verwendet wird.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -139,14 +149,13 @@ foreach (var c in opportunity_count_result.Entities)
     System.Console.WriteLine("Count of all opportunities: " + aggregate2); 
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="count_column"></a>
 
 ### <a name="countcolumn"></a>CountColumn
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie das `countcolumn``aggregate`-Attribut verwenden, um Spalten zu zählen.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie das `countcolumn` `aggregate`-Attribut verwenden, um Spalten zu zählen.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -169,14 +178,13 @@ foreach (var c in opportunity_colcount_result.Entities)
     System.Console.WriteLine("Column count of all opportunities: " + aggregate3);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="count_distinct"></a>
  
 ### <a name="count-distinct-columns"></a>Eindeutige Spalten zählen
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie das `countcolumn``aggregate`-Attribut mit dem `distinct`-Attribut verwenden, um distinkte Spalten zu zählen.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie das `countcolumn` `aggregate`-Attribut mit dem `distinct`-Attribut verwenden, um distinkte Spalten zu zählen.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -199,48 +207,46 @@ foreach (var c in opportunity_distcount_result.Entities)
     System.Console.WriteLine("Distinct name count of all opportunities: " + aggregate4);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="max"></a>
 
-## <a name="max"></a>Max
+## <a name="max"></a>Max.
 
- **Null**-Werte werden nicht berücksichtigt, wenn Common Data Service das Maximum von Daten berechnet. NULL (0) wird jedoch verwendet.  
+**NULL**-Werte werden nicht berücksichtigt, wenn Common Data Service das Maximum an Daten berechnet. NULL (0) wird jedoch verwendet.  
   
- Im folgenden Beispiel wird gezeigt, wie das `max``aggregate`-Attribut verwendet wird.  
+Im folgenden Beispiel wird gezeigt, wie das `max` `aggregate`-Attribut verwendet wird.  
   
  ```csharp
 // *****************************************************************************************************************
-//                FetchXML      opportunity_distcount   Aggregate 4
+//                FetchXML      estimatedvalue_max   Aggregate 5
 // *****************************************************************************************************************
-// Fetch the count of distinct names for opportunities.  This is the equivalent of 
-// SELECT COUNT(DISTINCT name) AS opportunity_count ... in SQL.
-string opportunity_distcount = @" 
+// Fetch the maximum estimatedvalue of all opportunities.  This is the equivalent of 
+// SELECT MAX(estimatedvalue) AS estimatedvalue_max ... in SQL.
+string estimatedvalue_max = @" 
 <fetch distinct='false' mapping='logical' aggregate='true'> 
     <entity name='opportunity'> 
-       <attribute name='name' alias='opportunity_distcount' aggregate='countcolumn' distinct='true'/> 
+        <attribute name='estimatedvalue' alias='estimatedvalue_max' aggregate='max' /> 
     </entity> 
 </fetch>";
 
-EntityCollection opportunity_distcount_result = _serviceProxy.RetrieveMultiple(new FetchExpression(opportunity_distcount));
+EntityCollection estimatedvalue_max_result = service.RetrieveMultiple(new FetchExpression(estimatedvalue_max));
 
-foreach (var c in opportunity_distcount_result.Entities)
+foreach (var c in estimatedvalue_max_result.Entities)
 {
-    Int32 aggregate4 = (Int32)((AliasedValue)c["opportunity_distcount"]).Value;
-    System.Console.WriteLine("Distinct name count of all opportunities: " + aggregate4);
+    decimal aggregate5 = ((Money)((AliasedValue)c["estimatedvalue_max"]).Value).Value;
+    Console.WriteLine("Max estimated value of all opportunities: " + aggregate5);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="min"></a>
  
-## <a name="min"></a>Min
+## <a name="min"></a>Min.
 
- **Null**-Werte werden nicht berücksichtigt, wenn Common Data Service das Minimum von Daten berechnet. NULL (0) wird jedoch verwendet.  
+**NULL**-Werte werden nicht berücksichtigt, wenn Common Data Service das Minimum an Daten berechnet. NULL (0) wird jedoch verwendet.  
   
- Im folgenden Beispiel wird gezeigt, wie das `min``aggregate`-Attribut verwendet wird.  
+Im folgenden Beispiel wird gezeigt, wie das `min``aggregate`-Attribut verwendet wird.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -263,14 +269,13 @@ foreach (var c in estimatedvalue_min_result.Entities)
     System.Console.WriteLine("Minimum estimated value of all opportunities: " + aggregate6);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="sum"></a>
 
 ## <a name="sum"></a>Summe
 
- Im folgenden Beispiel wird gezeigt, wie das `sum``aggregate`-Attribut verwendet wird.  
+Im folgenden Beispiel wird gezeigt, wie das `sum``aggregate`-Attribut verwendet wird.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -293,14 +298,13 @@ foreach (var c in estimatedvalue_sum_result.Entities)
     System.Console.WriteLine("Sum of estimated value of all opportunities: " + aggregate7);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="mult_agg"></a>
  
 ## <a name="multiple-aggregates"></a>Mehrere Aggregate
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie mehrere `aggregate`-Attribute verwenden, um ein Minimum und ein Maximum festzulegen.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie mehrere `aggregate`-Attribute verwenden, um ein Minimum und ein Maximum festzulegen.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -328,14 +332,13 @@ foreach (var c in estimatedvalue_avg2_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate8c);
 
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="groupby"></a>
  
 ## <a name="group-by"></a>Gruppieren nach
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie mehrere `aggregate`-Attribute und ein verknüpftes `groupby`-Attribut verwenden.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie mehrere `aggregate`-Attribute und ein verknüpftes `groupby`-Attribut verwenden.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -363,30 +366,23 @@ foreach (var c in groupby1_result.Entities)
     string aggregate9d = (string)((AliasedValue)c["ownerid_owneridyominame"]).Value;
     System.Console.WriteLine("Owner: " + aggregate9d);
 }
-System.Console.WriteLine("===============================");
 ```
   
- Die unteren Beispiele zeigen die folgende Gruppe nach Beispielen:  
+Die unteren Beispiele zeigen die folgende Gruppe nach Beispielen:  
   
- [Gruppieren nach mit verknüpfter Entität](use-fetchxml-aggregation.md#groupby_linked)  
-  
- [Gruppieren nach Jahr](use-fetchxml-aggregation.md#groupby_year)  
-  
- [Gruppieren nach Quartal](use-fetchxml-aggregation.md#groupby_quarter)  
-  
- [Gruppieren nach Monat](use-fetchxml-aggregation.md#groupby_month)  
-  
- [Gruppieren nach Woche](use-fetchxml-aggregation.md#groupby_week)  
-  
- [Gruppieren nach Tag](use-fetchxml-aggregation.md#groupby_day)  
-  
- [Mehrere "Gruppieren nach"](use-fetchxml-aggregation.md#Multiple_GroupBy)  
+- [Gruppieren nach mit verknüpfter Entität](use-fetchxml-aggregation.md#groupby_linked)
+- [Gruppieren nach Jahr](use-fetchxml-aggregation.md#groupby_year)
+- [Gruppieren nach Quartal](use-fetchxml-aggregation.md#groupby_quarter)
+- [Gruppieren nach Monat](use-fetchxml-aggregation.md#groupby_month)
+- [Gruppieren nach Woche](use-fetchxml-aggregation.md#groupby_week)  
+- [Gruppieren nach Tag](use-fetchxml-aggregation.md#groupby_day)  
+- [Mehrere "Gruppieren nach"](use-fetchxml-aggregation.md#Multiple_GroupBy)  
   
 <a name="groupby_linked"></a>
 
 ### <a name="group-by-with-linked-entity"></a>Gruppieren nach mit verknüpfter Entität
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie das `sum``aggregate`-Attribut verwenden, um verknüpfte Entitätswerte zu summieren.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie das `sum``aggregate`-Attribut verwenden, um verknüpfte Entitätswerte zu summieren.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -412,14 +408,13 @@ foreach (var c in groupby2_result.Entities)
       int? aggregate10a = (int?)((AliasedValue)c["opportunity_count"]).Value;
       System.Console.WriteLine("Count of all opportunities: " + aggregate10a + "\n");
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="groupby_year"></a>
 
 ### <a name="group-by-year"></a>Gruppieren nach Jahr
 
- "Gruppieren nach" für Datumsangaben verwenden den Wert für Tag, Woche, Monat, Quartal oder Jahr. Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Jahr zu gruppieren.  
+"Gruppieren nach" für Datumsangaben verwenden den Wert für Tag, Woche, Monat, Quartal oder Jahr. Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Jahr zu gruppieren.  
   
  ```csharp
 
@@ -455,14 +450,13 @@ foreach (var c in byyear_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate11c);
     System.Console.WriteLine("----------------------------------------------");
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="groupby_quarter"></a>
  
 ### <a name="group-by-quarter"></a>Gruppieren nach Quartal
 
- Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Quartal zu gruppieren.  
+Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Quartal zu gruppieren.  
   
  ```csharp
  // *****************************************************************************************************************
@@ -497,14 +491,13 @@ System.Console.WriteLine("===============================");
      System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate12c);
      System.Console.WriteLine("----------------------------------------------");
  }
- System.Console.WriteLine("===============================");
 ```
   
 <a name="groupby_month"></a>
 
 ### <a name="group-by-month"></a>Gruppieren nach Monat
 
- Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Monat zu gruppieren.  
+Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Monat zu gruppieren.  
   
 ```csharp
 // *****************************************************************************************************************
@@ -539,13 +532,13 @@ foreach (var c in bymonth_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate13c);
     System.Console.WriteLine("----------------------------------------------");
 }
-System.Console.WriteLine("===============================");
 ``` 
+
 <a name="groupby_week"></a>
 
 ### <a name="group-by-week"></a>Gruppieren nach Woche
 
- Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Woche zu gruppieren.  
+Im folgenden Beispiel wird gezeigt, wie Sie das `aggregate`-Attribut und das `groupby`-Attribut verwenden, um die Ergebnisse nach Woche zu gruppieren.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -580,7 +573,6 @@ foreach (var c in byweek_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate14c);
     System.Console.WriteLine("----------------------------------------------");
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="groupby_day"></a>
@@ -622,14 +614,13 @@ foreach (var c in byday_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate15c);
     System.Console.WriteLine("----------------------------------------------");
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="Multiple_GroupBy"></a>
  
 ### <a name="multiple-group-by"></a>Mehrere "Gruppieren nach"
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie das `aggregate`-Attribut und mehrere `groupby`-Klauseln verwenden.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie das `aggregate`-Attribut und mehrere `groupby`-Klauseln verwenden.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -667,14 +658,13 @@ foreach (var c in byyrqtr_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate16c);
     System.Console.WriteLine("----------------------------------------------");
 }
-System.Console.WriteLine("===============================");
 ```
   
 <a name="orderby_aggregate"></a>
 
 ## <a name="order-by"></a>Ordnen nach
 
- Im folgenden Beispiel wird veranschaulicht, wie Sie das `aggregate`-Attribut und mehrere `orderby`-Klauseln verwenden.  
+Im folgenden Beispiel wird veranschaulicht, wie Sie das `aggregate`-Attribut und mehrere `orderby`-Klauseln verwenden.  
   
  ```csharp
 // *****************************************************************************************************************
@@ -713,13 +703,12 @@ foreach (var c in byyrqtr2_result.Entities)
     System.Console.WriteLine("Average of estimated value of all opportunities: " + aggregate17c);
     System.Console.WriteLine("----------------------------------------------");
 }
-System.Console.WriteLine("===============================");
 ```
   
-### <a name="see-also"></a>Siehe auch  
- [Abfragen erstellen mit FetchXML](/dynamics365/customer-engagement/developer/build-queries-fetchxml)   
- [Auslagern von umfangreichen Ergebnissätzen mit FetchXML](org-service/page-large-result-sets-with-fetchxml.md)   
- [Fetch-XML-Schema](fetchxml-schema.md)   
- <xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*>   
- <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest>   
- <xref:Microsoft.Xrm.Sdk.Query.FetchExpression>
+### <a name="see-also"></a>Siehe auch
+
+[Auslagern von umfangreichen Ergebnissätzen mit FetchXML](org-service/page-large-result-sets-with-fetchxml.md)<br />
+[Fetch-XML-Schema](fetchxml-schema.md)<br />
+<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*><br />
+<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest><br />
+<xref:Microsoft.Xrm.Sdk.Query.FetchExpression>

@@ -28,16 +28,16 @@ In diesem Thema wird beschrieben, wie Sie den OData v4-Datenanbieter konfigurier
 
 ## <a name="odata-v4-data-provider-best-practices"></a>OData v4-Datenanbieter - bewährte Methoden
 
-- Common Data Service erfordert, dass alle Entitäten ein ID-Attribut haben. Diese ID ist bekannt als eindeutiger Bezeichner und der Wert muss ein GUID sein.  Sie können nur ID-Felder zu externen Feldern mit dem `Edm.Guid`-Datentyp zuordnen.  Sie können einen `Edm.Int32`-Datentyp nicht einem eindeutigen Bezeichner-Datentypfeld in Common Data Service zuordnen.
--  OData-Entitäten mit auf NULL festlegbaren Eigenschaften müssen so festgelegt werden, dass sie dem zugeordneten Feld in der virtuellen Entität entsprechen. Zum Beispiel muss bei einer OData-Entitätseigenschaft mit Nullable=False das zugeordnete Feld in Common Data Service **Feldanforderung**-Attribut auf **Eingabe erforderlich** festgelegt sein. 
+- Common Data Service erfordert, dass alle Entitäten ein ID-Attribut haben, diese ID ist bekannt als eindeutiger Bezeichner und der Wert muss ein guid sein.  Sie können nur ID-Felder zu externen Feldern mit dem `Edm.Guid`-Datentyp zuordnen.  Sie können einen `Edm.Int32`-Datentyp nicht einem Eindeutiger Bezeichner-Datentypfeld in Common Data Service zuordnen.
+-  OData-Entitäten mit auf NULL festlegbaren Eigenschaften müssen so festgelegt werden, dass sie dem zugeordneten Feld in der virtuellen Entität entsprechen. Beispielsweise muss eine OData-Entitätseigenschaft mit Nullable=False das zugeordnete Feld im Common Data Service-**Feldanforderungs**-Attribut haben, das auf **Eingabe erforderlich** festgelegt ist. 
 - Für mehrere Abfragen, erhalten Sie, wenn Sie z.B. Daten in einem Raster laden, die Größe des von der externen Datenquelle zurückgegeben Datensets steuern, mithilfe der ausgewählten Filterabfrageparameter.
 - Wenn noch nicht aktiviert, sollten Systemadministratoren Plug-in-Ablaufverfolgung aktivierten. Sobald aktiviert, werden alle Fehler im OData-Endpunkt im Plug-in Ablaufverfolgungsprotokoll aufgezeichnet. Weitere Informationen:  [Administratoren-Handbuch: Systemeinstellungen (Dialogfeld) – Anpassung (Registerkarte)](/dynamics365/customer-engagement/admin/system-settings-dialog-box-customization-tab). 
 
 ## <a name="data-type-mapping"></a>Datentypzuordnungen
 
-Die folgende Tabelle enthält die OData-EntityData Model (EDM)-Datentypzuordnungen mit Common Data Service-Datentypen. 
+Die folgende Tabelle enthält das OData-EntityData Model (EDM)- Datentypzuordnungen mit Common Data Service-Datentypen. 
 
-|OData-Datentyp|Common Data Service- Datentyp  |
+|OData-Datentyp|Common Data Service Datentyp  |
 |---------|---------|
 |`Edm.Boolean`|Zwei Optionen|
 |`Edm.DateTime`|Datum und Uhrzeit|
@@ -52,9 +52,9 @@ Die folgende Tabelle enthält die OData-EntityData Model (EDM)-Datentypzuordnung
 
 ### <a name="odata-edm-data-types-that-are-not-supported-for-mapping-with-virtual-entities"></a>ODate EDM-Datentypen, die nicht zum Zuordnen mit virtuellen Entitäten unterstützt werden 
 
-- `Edm.Binary `
+- `Edm.Binary`
 - `Edm.Time` 
-- `Edm.Float `
+- `Edm.Float`
 - `Edm.Single` 
 - `Edm.Int16` 
 - `Edm.Byte` 

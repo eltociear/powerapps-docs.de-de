@@ -3,8 +3,7 @@ title: Menübanddefinitionen definieren (modellgesteuerte Apps) | Microsoft Docs
 description: 'Infos zum Festlegen bestimmter Regeln, die steuern, wann die Menübandelemente während des Konfigurierens von Menübandelementen aktiviert werden.'
 keywords: ''
 ms.date: 02/08/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
-title: Debuggen von Workflow-Aktivitäten (Common Data Service) | Microsoft Docs
+title: Debugging von Workflowaktivitäten (Common Data Service) | Microsoft Docs
 description: 'Beschreibt, wie Sie Workflow-Aktivitäten mit dem Plug-In-Registrierungstool debuggen können.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -21,7 +21,7 @@ Da benutzerdefinierte Workflow-Erweiterungen .NET Framework-Assemblys sind, kön
 
 ## <a name="use-the-plug-in-registration-tool"></a>Verwenden Sie das Plug-in-Registrierungstool.
 
-Das Plug-In-Registration Tool (PRT) ist eines der Tools, die Sie bei NuGet herunterladen können. Weitere Informationen: [Tools von NuGet herunterladen](../download-tools-nuget.md).
+Das Plugin Registration Tool (PRT) ist eines der Tools, die Sie bei NuGet herunterladen können. Weitere Informationen: [Tools von NuGet herunterladen](../download-tools-nuget.md).
 
 Nachdem Sie das FHM heruntergeladen haben, klicken Sie auf den `PluginRegistration.exe`, um es auszuführen.
 
@@ -33,7 +33,7 @@ Vom PRT aus können Sie die Plug-in-Profilerlösung installieren, indem Sie auf 
 
 Diese Lösung bietet die Möglichkeit, den Kontext zu erfassen, der an Ihre Workflowaktivität übergeben wird und ermöglicht die Wiedergabe, mit der Sie die Logik in Ihrem Code lokal mit Visual Studio debuggen können.
 
-Wenn der **Plug-In-Profiler** für Ihre Common Data Service-Instanz installiert ist, sehen Sie ihn im PRT am unteren Rand der Liste **Registrierte Plug-Ins & benutzerdefinierte Workflow-Aktivitäten**.
+Wenn der **Plug-In-Profiler** für Ihre Common Data Service-Instanz installiert ist, sehen Sie ihn im PRT am unteren Rand der Liste **Registrierte Plug-Ins & benutzerdefinierte Workflowaktivitäten**.
 
 ![Plug-In-Profiler im Plug-in-Registrierungstool](media/Plug-in-Profiler.png)
 
@@ -91,7 +91,7 @@ Der kopierte Profilworkflow wird ebenfalls in einen Hintergrund-(asynchronen) Wo
 
 Speichern Sie den kopierten Profilworkflow und aktivieren Sie ihn.
 
-Aktualisieren Sie in einer App, die mit Ihrer Common Data Service-Instanz verbunden ist, oder durch die Verwendung der Webservices den Wert **Firmenname** einer Firmenentität. Dadurch wird eine Instanz des Kontexts erfasst, die an Ihre benutzerdefinierte Workflowaktivität übergeben wird, und sie wird als Profildatensatz im System gespeichert.
+Aktualisieren Sie in einer App, die mit Ihrer Common Data Service-Instanz verbunden ist oder durch die Verwendung der Webservices den Wert **Kontoname** einer Firmenentität. Dadurch wird eine Instanz des Kontexts erfasst, die an Ihre benutzerdefinierte Workflowaktivität übergeben wird, und sie wird als Profildatensatz im System gespeichert.
 
 > [!TIP]
 > Wenn Ihr Workflow asynchron ist, stellen Sie sicher, dass er abgeschlossen ist, bevor Sie mit dem nächsten Schritt fortfahren. Gehen Sie zu Einstellungen > Systemaufträge und überprüfen Sie, ob der Workflow erfolgreich war.
@@ -124,7 +124,7 @@ Dadurch wird die Kopie des erstellten Workflows gelöscht.
     ![Wählen Sie das Profil aus, die Sie soeben generiert haben](media/select-profile-from-crm-dialog.png)
 
     > [!NOTE]
-    > Sie können die erfassten Profile in der **benutzerdefinierten Dynamics 365** Webanwendung verwalten, indem Sie zu **Einstellungen** > **Erweiterungen** > **Plug-In-Profile** navigieren.
+    > Sie können die erfassten Profile in der **benutzerdefinierten Dynamics 365**-Webanwendung verwalten, indem Sie zu **Einstellungen** > **Erweiterungen** > **Plug-In-Profile** navigieren.
 
 1. Klicken Sie auf **Auswählen**, um den Dialog zu schließen.
 1. Klicken Sie im Feld **Assembly-Speicherort** auf die Schaltfläche Auslassungspunkte (**...**), um den Speicherort der Assemblys hinzufügen, die die Workflowaktivität enthalten, die Sie debuggen.
@@ -139,12 +139,12 @@ Dadurch wird die Kopie des erstellten Workflows gelöscht.
     > [!TIP]
     > Der Suchfilter hilft Ihnen, diesen schneller zu finden. Die dem Prozess zugeordnete Prozess-ID (PID) wird für jede Sitzung unterschiedlich sein. Die PID wird im Dialogfeld **Plug-In-Ausführung wiederholen** unter **Plug-In Verfolgung** angezeigt.
 
-    ![Visual Studio an Prozess anhängen-Dialogfeld](media/visual-studio-attach-to-process-dialog.png)
+    ![Visual Studio – Dialog "Zum Verarbeiten anfügen"](media/visual-studio-attach-to-process-dialog.png)
 
 1. Klicken Sie auf **Anfügen**, um Ihren Visual Studio-Debugger an die PRT-Anwendung anzuhängen, die die Prozesswiedergabe ausführen soll.
 1. Klicken Sie im Dialogfeld **Plug-In-Ausführung wiederholen** im PRT auf die Schaltfläche **Ausführung beginnen**.
 
-Sie sollten nun in der Lage sein, durch Ihren Code zu navigieren und Ihre Workflowaktivität mit Visual Studio.
+Sie sollten nun in der Lage sein, durch Ihren Code zu navigieren und Ihre Workflowaktivität mit Visual Studio zu debuggen.
 
 
 

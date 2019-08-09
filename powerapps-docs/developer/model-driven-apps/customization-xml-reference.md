@@ -3,8 +3,7 @@ title: Anpassungs-XML-Verweis (modellgesteuerte Apps) | Microsoft Docs
 description: 'Die customizations.xml -Datei ist eine der Dateien, die in einer exportierten nicht verwalteten Lösung enthalten sind. Die Datei enthält alle oder ausgewählte Bereiche der Anpassung und Konfigurationen für Ihr System'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

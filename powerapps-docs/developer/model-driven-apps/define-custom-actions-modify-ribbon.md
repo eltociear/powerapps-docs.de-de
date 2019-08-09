@@ -3,8 +3,7 @@ title: Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands (mode
 description: Infos zum Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-custom-actions-modify-ribbon -->
 
-Die Standardeinstellung, eine Anwendungsbefehlsleiste oder ein Menüband, wird durch den Common Data Service Metadaten definiert. Die standardmäßigen Daten können nicht geändert werden, aber Sie können Definitionen bestimmter Aktionen einschließen, die das Standardmenüband überschreiben.  
+Der Standard, eine Anwendungsbefehlsleiste oder ein Menüband, wird von den Common Data Service-Metadaten definiert. Die standardmäßigen Daten können nicht geändert werden, aber Sie können Definitionen bestimmter Aktionen einschließen, die das Standardmenüband überschreiben.  
   
 ## <a name="types-of-custom-actions"></a>Typen benutzerdefinierter Aktionen  
  Es gibt zwei Typen benutzerdefinierte Aktionen für Menübänder:  

@@ -3,8 +3,7 @@ title: Entitätsansichten anpassen (modellgesteuerte Apps) | Microsoft Docs
 description: Informationen zur Anpassung der Entitätsansichten.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

@@ -18,11 +18,6 @@ Diese Beispielkomponente untersucht die verschiedenen Methoden, die im Rahmen de
 > [!div class="mx-imgBorder"]
 > ![Navigations-API-Komponente](../media/navigation-api-control.png "Navigations-API-Komponente")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest
 
 ```xml
@@ -216,31 +211,31 @@ Die `openAlertDialog`-Methode bietet die Möglichkeit einen Warnungsdialog anzuz
 Wenn Sie in diesem Beispiel auf `openAlertDialogButton` klicken, wird ein Warndialog geöffnet und der Wert davon wird auf `Alert dialog closed` festgelegt, wenn der Dialog entweder mit der Schaltfläche `OK` oder der Schaltfläche `X` geschlossen wird.
 
 > [!NOTE]
-> Dies gleicht dem Aufruf der [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog)-Methode in ClientAPI.  
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openAlertDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openalertdialog)-Methode in ClientAPI.  
 
 Die `openConfirmDialog`-Methode bietet die Möglichkeit einen Warnungsdialog anzuzeigen, der eine Nachricht und zwei Schaltflächen enthält. Sie können diese Methode verwenden, um unterschiedliche Logik anhand der geklickten Schaltfläche zu implementieren. Sie können den Erfolgsrückruf implementieren, der aufgerufen wird, wenn der Dialog geschlossen wird, indem auf eine der Schaltflächen geklickt wird.
   
 In diesem Beispiel wird der Bestätigungsdialog gezeigt, wenn Sie auf `openConfirmDialogButton` klicken und der Wert davon wird auf `Ok` oder `Cancel` oder `X` festgelegt, je nach der Schaltfläche, auf die geklickt wurde.
 
 > [!NOTE]
-> Dies gleicht dem Aufruf der [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog)-Methode in ClientAPI.
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openConfirmDialog](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openconfirmdialog)-Methode in ClientAPI.
   
 Die `openFile`-Methode bietet die Möglichkeit, eine Datei zu öffnen. Sie müssen das Dateiobjekt übergeben, das den Dateinamen, den Inhalt den mimetype und die Dateigröße enthält. Sie können auch den optionalen Parameter des Modus übergeben, für den die Datei als 1 oder 2 geöffnet werden soll. Dabei ist 1 der Standard, der die Datei im Lese- oder Öffnen-Modus öffnet.
   
 In diesem Beispiel wird eine Datei namens `SampleDemo.txt` im sicheren Modus beim Klicken auf `openFileButton` geöffnet.
 
 > [!NOTE]
-> Dies gleicht dem Aufruf der [Xrm.Navigation.openFile](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile)-Methode in ClientAPI.
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openFile](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openfile)-Methode in ClientAPI.
 
 Die `openUrl`-Methode bietet die Möglichkeit, eine URL zu öffnen. Sie müssen die URL als eine Zeichenfolge an die Methode übergeben und auch die optionalen Parameter für Höhe, Breite und openInNewWindow als wahr übergeben, wenn die URL in einem neuen Fenster geöffnet werden soll.
   
 In diesem Beispiel wird ein neues Fenster geöffnet und die microsoft.com home page wird beim Klicken auf `openUrlButton` geladen.
 
 > [!NOTE]
-> Dies gleicht dem Aufruf der [Xrm.Navigation.openUrl](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl)-Methode in ClientAPI.
+> Dies gleicht dem Aufruf der [Xrm.Navigation.openUrl](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/xrm-navigation/openurl)-Methode in ClientAPI.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

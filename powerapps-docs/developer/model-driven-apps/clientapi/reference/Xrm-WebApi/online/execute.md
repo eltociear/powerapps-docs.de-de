@@ -1,7 +1,7 @@
 ---
 title: Xrm.WebApi.online.execute (Client-API-Referenz) in modellgestützten Apps | MicrosoftDocs
 ms.date: 11/21/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: d4e92999-3b79-4783-8cac-f656fc5f7fda
@@ -21,7 +21,7 @@ search.app:
 [!INCLUDE[./includes/execute-description.md](./includes/execute-description.md)]
 
 > [!NOTE]
-> Diese Methode wird nur für den online-Modus unterstützt ([Xrm.WebApi.online](online.md)).
+> Diese Methode wird nur für den online-Modus unterstützt ([Xrm.WebApi.online](../online.md)).
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,7 +46,7 @@ search.app:
 <ul><li>Geben Sie <code>undefined</code> an, wenn Sie eine CRUD Anforderung ausführen.</li>
 <li>Geben Sie <code>null</code> an, wenn die auszuführende Aktion oder die Funktionen an eine dieser Entität gebunden ist.</li>
 <li>Geben Sie <code>entity</code> an, wenn die auszuführende Aktion oder die Funktionen an eine dieser Entität gebunden ist. </li></ul>
-<li><b>operationName</b>: (Optional). Zeichenfolge. Name der Aktion, Funktion oder einer der folgenden Werte, wenn Sie eine CRUD Anforderung ausführen: "Erstellen ", "Anpassen ", "RetrieveMultiple ", "Aktualisieren "oder "Löschen".</li>
+<li><b>operationName</b>: (Optional). Zeichenfolge. Name der Aktion, Funktion oder einer der folgenden Werte, wenn Sie eine CRUD-Anforderung ausführen: "Erstellen", "Anpassen", "Abrufen", "Aktualisieren" oder "Löschen".</li>
 <li><b>operationType</b>: (Optional). Nummer. Gibt den Typ des Vorgangs an, den Sie ausführen; geben Sie einen der folgenden Werte an:
 <br/><code>0: Action</code>
 <br/><code>1: Function</code>
@@ -99,7 +99,7 @@ Bei Erfolg wird ein Versprechenobjekt mit den Attributen zurückgegeben, die zuv
 
 ### <a name="execute-an-action"></a>Ausführen einer Aktion
 
-Im folgenden Beispiel wird gezeigt, wie diese die <xref:Microsoft.Dynamics.CRM.WinOpportunity>-Aktion ausgeführt wird. Das Anforderungsobjekt wird anhand der Aktionsdefinition hier erstellt: [Ungebundene Aktionen](../../../../common-data-service/webapi/use-web-api-actions.md#unbound-actions)
+Im folgenden Beispiel wird gezeigt, wie diese die <xref:Microsoft.Dynamics.CRM.WinOpportunity>-Aktion ausgeführt wird. Das Anforderungsobjekt wird anhand der Aktionsdefinition hier erstellt: [Ungebundene Aktionen](../../../../../common-data-service/webapi/use-web-api-actions.md#unbound-actions)
 ```JavaScript
 var Sdk = window.Sdk || {};
 /**
@@ -201,7 +201,7 @@ Xrm.WebApi.online.execute(whoAmIRequest).then(
 ### <a name="related-topics"></a>Verwandte Themen
 
 
-[Xrm.WebApi](../xrm-webapi.md)
+[Xrm.WebApi](../../xrm-webapi.md)
 
 
 

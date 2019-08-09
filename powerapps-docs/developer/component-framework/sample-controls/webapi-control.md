@@ -12,15 +12,10 @@ ms.author: nabuthuk
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Die Web-API-Komponente wurde entworfen, um Funktionen auszuführen, zu erstellen, abzurufen, zu aktualisieren und zu löschen. Die Komponente rendert vier Schalflächen, die angeklickt werden können, um verschiedene Web-API-Aktionen aufzurufen. Das Ergebnis der Web-API-Aufrufe wird am Ende der benutzerdefinierten Komponente in ein HTML-div-Element eingebracht.  
+Die Web-API-Komponente wurde entworfen, um Aktionen auszuführen, zu erstellen, abzurufen, zu aktualisieren und zu löschen. Die Komponente rendert vier Schalflächen, die angeklickt werden können, um verschiedene Web-API-Aktionen aufzurufen. Das Ergebnis der Web-API-Aufrufe wird am Ende der benutzerdefinierten Komponente in ein HTML-div-Element eingebracht.  
 
 > [!div class="mx-imgBorder"]
 > ![Web-API-Komponente](../media/web-api-control.png "Web-API-Komponente")
-
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
 
  ## <a name="manifest"></a>Manifest
 
@@ -582,5 +577,5 @@ Bei erfolgreichem Abruf der Datensätze verfügt die benutzerdefinierte Komponen
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

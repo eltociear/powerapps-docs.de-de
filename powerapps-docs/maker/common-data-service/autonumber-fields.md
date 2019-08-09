@@ -1,5 +1,5 @@
 ---
-title: Felder für automatische Nummerierung im Common Data Service | MicrosoftDocs
+title: Felder für automatische Nummerierung in Common Data Service | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie Felder mit automatischer Nummerierung erstellen, verwalten und verwenden'
 keywords: ''
 ms.date: 02/26/2019
@@ -49,7 +49,7 @@ Beispielsweise kann eine Zahl mit vorangestelltem Datum solche Datensätze wie *
 ### <a name="custom"></a>Benutzerdefiniert
 
 Für erweiterte Hersteller mit bestimmten Anwendungsfällen bieten wir die Möglichkeit, das gewünschte Format eines für Felds mit automatisierter Nummerierung vollständig anzupassen. Das Format kann aus ein Zeichenfolgenkonstanten,automatisch inkrementiert Zahlen, formatierten Daten oder zufälligen alphanumerischen Sequenzen bestehen.
-Ausführliche Informationen dazu, wie benutzerdefinierte Formate definiert werden, finden Sie unter [AutoNumberFormat-Optionen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options).
+Ausführliche Informationen dazu, wie benutzerdefinierte Formate definiert werden, finden Sie unter [AutoNumberFormat-Optionen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-auto-number-attributes#autonumberformat-options).
 
 ## <a name="seed-values"></a>Startwerte
 
@@ -57,9 +57,7 @@ Der Startwert eines Felds für automatisierte Nummerierung ist die Startzahl, di
 
 
 > [!IMPORTANT]
-> Das Erstellen eines benutzerdefinierten Startwerts wird derzeit nur unterstützt, wenn Sie ein neues Feld mit automatisierter Nummerierung erstellen. 
->
-> Festlegen des Startwerts ändert nur den aktuellen Zahlenwert für das angegebene Attribut in der aktuellen Umgebung. Es gibt keinen allgemeinen Startwert für das Attribut an. Der Startwert ist nicht in einer Lösung enthalten, wenn er in einer anderen Umgebung importiert ist. 
+> Festlegen des Startwerts ändert nur den aktuellen Zahlenwert für das angegebene Attribut in der aktuellen Umgebung. Der Startwert ist nicht in einer Lösung enthalten, wenn er in einer anderen Umgebung importiert ist. 
 
 ## <a name="create-an-autonumber-field"></a>Erstellen eines Felds mit automatisierter Nummerierung
   

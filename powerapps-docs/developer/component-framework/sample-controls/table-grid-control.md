@@ -19,11 +19,6 @@ Die Komponentenüberschriftspalten die internen Datensatzwerte werden an vorhand
 > [!div class="mx-imgBorder"]
 > ![Tabellenrasterkomponente](../media/table-grid-control.png "Tabellenrasterkomponente")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest 
 
 ```xml
@@ -459,5 +454,5 @@ Wenn allocatedHeight –1 ist, bedeutet das, das die Höhe nicht begrenzt ist. D
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

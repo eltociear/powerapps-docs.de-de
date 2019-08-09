@@ -2,13 +2,13 @@
 title: Beispieldiagramme (modellgestützte Apps) | Microsoft Docs
 description: Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbeschreibungs- und Präsentations-XML-Zeichenfolgen.
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 01/17/2019
+ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: shilpas
+manager: null
 search.audienceType:
   - developer
 search.app:
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="sample-charts"></a>Beispieldiagramme
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/sample-charts -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/sample-charts -->
 
 Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbeschreibungs- und Präsentations-XML-Zeichenfolgen. Sie können Folgendes angeben:  
   
@@ -585,6 +585,6 @@ Dieses Thema enthält Beispieldiagramme zusammen mit den entsprechenden Datenbes
  [Datenvisualisierung und Analysen](customize-visualizations-dashboards.md)   
  [Visualisierungsdaten-Beschreibungsschema](visualization-data-description-schema.md)   
  [Erstellen eines Diagramms](create-visualization-chart.md)   
- [Daten mit Visualisierungen (Diagrammen) anzeigen](view-data-with-visualizations-charts.md)   
- [Beispielcode für Diagramme (Visualisierungen)](/dynamics365/customer-engagement/developer/customize-dev/sample-code-charts-visualizations)
+ [Daten mit Visualisierungen (Diagramme) anzeigen](view-data-with-visualizations-charts.md)   
+ 
 

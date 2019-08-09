@@ -19,11 +19,6 @@ ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
 
 Dieser Abschnitt enthält Referenzdokumentation für das Manifestschema, das mithilfe der PowerApps-CLI generiert wird.
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 |Element|Beschreibung|
 |----|-----------|
 |[code](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|

@@ -1,6 +1,6 @@
 ---
-title: Benutzerdefinierter virtueller Entitätsdatenanbieter (Common Data Service) | Microsoft Docs
-description: 'Durch Verwenden von Common Data Service-Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu integrieren, die nicht von einem vorhandenen Datenanbieter unterstützt werden.'
+title: Benutzerdefinierte virtuelle Entitätsdatenanbieter (Common Data Service) | Microsoft Docs
+description: 'Durch Verwenden von Common Data Service Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu kennen, die nicht von einem vorhandenen Datenanbieter unterstützt werden.'
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="custom-virtual-entity-data-providers"></a>Benutzerdefinierte virtuelle Entitätsdatenanbieter
 
-Durch Verwenden von Common Data Service-Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu integrieren, die nicht von einem vorhandenen Datenanbieter unterstützt werden. Jeder Datenanbieter besteht aus einem wiederverwendbaren Satz von Common Data Service-Plugins, die die unterstützten CRUD-Vorgänge implementieren. (Die ursprüngliche Version ist auf **Abrufen** und **RetrieveMultiple**-Lesevorgänge beschränkt.) Dieser Abschnitt enthält erläuternde Informationen zu Datenanbietern und Vorgehensweisen zum Entwickeln benutzerdefinierter Anbieter, einschließlich Beispielcode.
+Durch Verwenden von Common Data Service Data SDK haben .NET-Entwickler die Möglichkeit zum Erstellen benutzerdefinierter virtueller Entitätsdatenanbieter, um externe Datenquellentypen zu kennen, die nicht von einem vorhandenen Datenanbieter unterstützt werden. Jeder Datenanbieter besteht aus einem wiederverwendbaren Satz von Common Data Service-Plugins, die die unterstützten CRUD-Vorgänge implementieren. (Die ursprüngliche Version ist auf **Abrufen** und **RetrieveMultiple**-Lesevorgänge beschränkt.) Dieser Abschnitt enthält erläuternde Informationen zu Datenanbietern und Vorgehensweisen zum Entwickeln benutzerdefinierter Anbieter, einschließlich Beispielcode.
 
 > [!NOTE]
 > Alternativ zum Erstellen eines benutzerdefinierten Datenquellenanbieters, sollten Sie erwägen, die Datenquelle an einen vorhandenen Datenanbieter anzupassen. Wenn Sie z. B. eine Schnittstelle von ODatas v4 zur externen Datenquelle erstellen, dann können Sie auf sie mit dem angegebenen Standard-Datenanbieter ODatas v4 direkt zugreifen. Die Funktion zum Hinzufügen dieser REST-Schnittstelle variiert nach der zugrunde liegenden Datendiensttechnologie, beispielsweise [WCF Data Services 4.5](https://docs.microsoft.com/dotnet/framework/data/wcf/). OData hat breiten Branchesupport, mit einer breiten Palette von dedizierten von Tools und kompatiblen Technologien.
@@ -37,7 +37,7 @@ Benutzerdefinierte Datenanbieter erfordern erhebliche Entwicklungsressourcen, um
 - Common Data Service event system: More information: [Introduction to the event framework](../introduction-event-framework.md). 
 - Common Data Service plug-in architecture and development: More information: [Plug-in development](../plugin-development.md). -->
 
-Diese `Microsoft.Xrm.Sdk.Data.dll` Assembly wird als NuGet-Paket verteilt: [Microsoft.CrmSdk.Daten](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
+Die `Microsoft.Xrm.Sdk.Data.dll`-Assembly wird als NuGet-Paket bereitgestellt: [Microsoft.CrmSdk.Data](https://www.nuget.org/packages/Microsoft.CrmSdk.Data/)
 
 <!-- ## Data Provider Architecture -->
 <!-- TODO: it would be nice to have a more detailed architecture diagram of a data provider and add discussion. -->
@@ -56,10 +56,10 @@ Der Standard-Odata v4-Datenanbieter und der Cosmos DB-Datenanbieter sind Beispie
 
 ## <a name="steps-to-use-a-custom-data-provider"></a>Schritte, um einen benutzerdefinierten Datenanbieter zu verwenden
 
-Es gibt verschiedene Schritte, die erforderlich sind, um eine virtuelle Entitätsdatenanbieterlösung zu erstellen, die in die Common Data Service -Anwendungen importiert werden können:
+Es gibt verschiedene Schritte, die erforderlich sind, um eine virtuelle Entitätsdatenanbieterlösung zu erstellen, die in die Common Data Service-Anwendungen importiert werden können:
 
 1. Entwickeln des benutzerdefinierten Datenanbieter-Pug-Ins in DLL (oder ein Satz von DLLs).
-2. Registrieren Sie den benutzerdefinierten Datenanbieter unter Verwendung des Plug-In-Registrierungstools (PRT) in Ihrem Common Data Service-Dienst.
+2. Registrieren des benutzerdefinierten Datenanbieters in Ihrem Common Data Service-Dienst unter Verwendung des Plug-In-Registrierungstools (PRT).
 3. Erstellen einer Datenanbieterlösung.
 4. Anpassen der Datenquellenentität, um einen Typ oder besondere Instanz widerzuspiegeln.
 5. Exportieren Sie die benutzerdefinierte Datenanbieterlösung.
@@ -78,9 +78,9 @@ Für beide Ereignisse müssen Sie:
 
 1. Konvertieren Sie die entsprechenden Informationen im Ausführungskontext in eine Abfrage, die für Ihre externe Datenquelle funktioniert.
 2. Abrufen von Daten aus dem externen System.
-3. Für **Abrufen** konvertieren Sie Daten in eine <xref:Microsoft.Xrm.Sdk.Entity>; andernfalls, für **RetrieveMultiple**, konvertieren Sie sie in eine <xref:Microsoft.Xrm.Sdk.EntityCollection>. Das Ergebnis wird dem Benutzer mithilfe der Common Data Service-Plattform zurückgegeben, der die Abfrage ausführt. 
+3. Für **Abrufen** konvertieren Sie Daten in eine <xref:Microsoft.Xrm.Sdk.Entity>; andernfalls, für **RetrieveMultiple**, konvertieren Sie sie in eine <xref:Microsoft.Xrm.Sdk.EntityCollection>. Das Ergebnis wird mithilfe der Common Data Service-Plattform dem Benutzer zurückgegeben, der die Abfrage ausführt. 
 
-Die Klassen im <xref:Microsoft.Xrm.Sdk.Data>-Namespace bieten ein Framework, das Ihnen hilft, die Common Data Service-Abfrageinformationen aus dem Ausführungskontext in eine Abfrage im für Ihre externe Datenquelle geeigneten Format abzubilden. Dieses Framework hilft Ihnen, die Daten zu konvertieren, die zu den entsprechenden <xref:Microsoft.Xrm.Sdk.Entity> oder <xref:Microsoft.Xrm.Sdk.EntityCollection>-Typen zurückgegeben werden, die von der Common Data Service-Plattform erwartet wird. 
+Die Klassen im <xref:Microsoft.Xrm.Sdk.Data>-Namespace bieten ein Framework, das Ihnen hilft, die Common Data Service-Abfrageinformationen aus dem Ausführungskontext in eine Abfrage im für Ihre externe Datenquelle geeigneten Format abzubilden. Dieses Framework hilft Ihnen, die Daten zu konvertieren, die zu den entsprechenden <xref:Microsoft.Xrm.Sdk.Entity>- oder <xref:Microsoft.Xrm.Sdk.EntityCollection>-Typen zurückgegeben werden, die von der Common Data Service-Plattform erwartet werden. 
 
 #### <a name="data-provider-exceptions"></a>Datenanbieterausnahmen
 
@@ -88,10 +88,8 @@ Wenn aus irgendeinem Grund Ihr Code nicht das erwartete Ergebnis erzielen kann, 
 
 |**Ausnahme-Klasse**|**Beschreibung**|
 |---------------|-----------|
-|<xref:Microsoft.Xrm.Sdk.Data.Exceptions.AttributeNotFoundException>|Die Abfrage gibt ein Attribut an, das nicht in dem zugeordneten externen Datensatz gefunden wurde. Tritt in der Regel als Ergebnis der fehlerhaften Typzuordnung oder einer externen Datenquellenschemaänderung auf.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.AuthenticationException>|Ein Fehler ist bei der Sicherheitsauthentifizierung für den externem auf Datenquellenservice aufgetreten, z. B. HTTP-Status 401 wird von externe Datenservice erhalten. Tritt in der Regel auf, weil der aktuelle Benutzer nicht die erforderlichen Rechte hat, oder die zugeordneten Informationen in **EntityDataSource** sind falsch.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.EndpointException>|Die Endpunktkonfiguration in der Datenquellenentität ist ungültig oder der Endpunkt ist nicht vorhanden.|
-|<xref:Microsoft.Xrm.Sdk.Data.Exceptions.EntityNotFoundException>|Die Abfrage zielt auf eine Entität, die nicht vorhanden ist. Tritt in der Regel als Ergebnis der fehlerhaften Typzuordnung oder einer externen Datenquellenschemaänderung auf.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.GenericDataAccessException>|Ein allgemeiner Datenzugriffsfehler ist aufgetreten, wird verwendet, wenn der Fehler nicht einer bestimmteren Ausnahme zugeordnet ist.|
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.InvalidMetadataException>| |
 |<xref:Microsoft.Xrm.Sdk.Data.Exceptions.InvalidQueryException>|Die angegebene Abfrage ist ungültig; beispielsweise eine ungültige die Klauselkombination oder ein nicht unterstützter Vergleichsoperator.|
@@ -106,7 +104,7 @@ Wenn aus irgendeinem Grund Ihr Code nicht das erwartete Ergebnis erzielen kann, 
 
 ### <a name="plug-in-registration"></a>Plug-In-Registrierung
 
-Im Gegensatz zu gewöhnliches ein Plug-In verwenden Sie die _Plugin Registrierung Tool_ (PRT) die Assembly und Plug-Ins die für jedes Ereignis zu registrieren. Sie registrieren nicht bestimmte Schritte. Ihr Plug-In wird ausgeführt in der Phase 30, der Hauptkerntransaktionsphase für den Vorgang, die nicht für gewöhnliche Plugin-Schritte verfügbar ist. Anstatt Schritte zu registrieren, konfigurieren Sie Ihren Datenanbieter mit den folgenden Entitäten. 
+Im Gegensatz zu gewöhnlichen Plug-Ins verwenden Sie nur das Plugin Registration Tool (PRT), um die Assembly und Plug-Ins für jedes Ereignis zu registrieren. Sie registrieren nicht bestimmte Schritte. Ihr Plug-In wird ausgeführt in der Phase 30, der Hauptkerntransaktionsphase für den Vorgang, die nicht für gewöhnliche Plugin-Schritte verfügbar ist. Anstatt Schritte zu registrieren, konfigurieren Sie Ihren Datenanbieter mit den folgenden Entitäten. 
 
 
 |**Entität**|**Beschreibung**|

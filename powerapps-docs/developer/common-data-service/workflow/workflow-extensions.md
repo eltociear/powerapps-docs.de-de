@@ -1,9 +1,9 @@
 ---
-title: Workflowerweiterungen (Common Data Service) | Microsoft Docs
+title: Workflow-Erweiterungen (Common Data Service) | Microsoft Docs
 description: 'Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die CodeActivity-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.'
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 06/20/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -17,13 +17,16 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>Workflowerweiterungen
 
-Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen, der für Common Data Service verwendet wird. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die [CodeActivity](/dotnet/api/system.activities.codeactivity)-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.
+Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen, die in Common Data Service verwendet werden. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die [CodeActivity](/dotnet/api/system.activities.codeactivity)-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.
 
 Sie können diese benutzerdefinierten Erweiterungen innerhalb des Designers verwenden, der für Workflows, benutzerdefinierte Aktionen und Dialoge verwendet wird.
 
 > [!IMPORTANT]
-> Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../../maker/common-data-service/cds-processes.md)<br/><br/>
+> Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../../maker/common-data-service/cds-processes.md)
+> 
 > Verwenden Sie Workflowerweiterungen, wenn ein deklarativer Prozess nicht Ihre Bedingung erfüllt.
+> 
+> Dieser Inhalt ist für Common Data Service-Workflow-Assemblys und gilt auch für Dynamics 365 for Customer Engagement-Apps (online). Optionen für lokale Bereitstellungen von Dynamics 365 for Customer Engagement-Apps sind hier beschrieben: [Lokale Optionen](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies#on-premises-options).
 
 ## <a name="when-to-create-a-workflow-extension"></a>Wann eine Workflowerweiterung zu erstellen ist
 
@@ -66,7 +69,7 @@ Wenn Sie Dynamics 365 Customer Engagement Sales oder Service-Lösungen haben, k�
 Weitere Informationen: 
 
 - [Workflowphasen und Schritte konfigurieren](/flow/configure-workflow-steps)
-- [Verwendung des Common Data Service-Dialogs für geführte Prozesse](/flow/use-cds-for-apps-dialogs)
+- [Verwenden von Common Data Service-Dialogen für Kundeninteraktionen](/flow/use-cds-for-apps-dialogs)
 - [Erstellen eines benutzerdefinierten Attributs](/flow/create-actions)
 
 
@@ -75,19 +78,19 @@ Weitere Informationen:
 
 Da Prozesse Windows Workflow Foundation verwenden, können Sie eine erstellte Assembly mithilfe der [.NET Framework-Aktivitätsbibliothek](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) speichern, die benutzerdefinierte Aktivitäten definiert, die innerhalb des Webanwendungs-Editors angezeigt werden und aufgerufen werden, wenn der Prozess ausgeführt wird.
 
-Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) bereit, die von der "Common Data Service"-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
+Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) bereit, die von der Common Data Service-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
 
-Workflowaktivitäten können auch Eingabe- und Ausgabeparameter definieren, die im Prozess-Designer sichtbar sind, und sie ermöglichen es einer Person, Daten an die Workflowaktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Parameter für diese Eigenschaften hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die Common Data Service verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
+Workflowaktivitäten können auch Eingabe- und Ausgabeparameter definieren, die im Prozess-Designer sichtbar sind, und sie ermöglichen es einer Person, Daten an die Workflowaktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Eigenschaften für diese Parameter hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die Common Data Service verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
 
 ## <a name="visual-studio-requirements"></a>Visual Studio-Anforderungen
 
-Um benutzerdefinierte Workflowaktivitäten zu erstellen, müssen Sie Visual Studio mit der Workload **.NET-Desktopentwicklung** installieren sowie die einzelne Komponente **Windows Workflow Foundation**.
+Um benutzerdefinierte Workflowaktivitäten zu erstellen, müssen Sie Visual Studio mit dem Workload **.NET-Desktopentwicklung** installieren sowie die einzelne Komponente **Windows Workflow Foundation**.
 
-Sie können die kostenlose Visual Studio 2017 Community-Edition oder die Professional- und Enterprise-Editionen verwenden.
+Sie können die kostenlose Visual Studio 2017 Community-Edition oder die Professional- und Enterprise Editions verwenden.
 
 Zur Überprüfung der Installation oder um diese Komponente hinzuzufügen:
 
-1. Öffnen Sie Visual Studio 2017
+1. Öffnen von Visual Studio 2017
 1. Wählen Sie **Extras** > **Tools und Funktionen abrufen…** . Dadurch wird das Visual Studio-Installationsprogramm geöffnet
 1. Stellen Sie auf der Registerkarte **Workloads** sicher, dass die Workload **.NET-Desktopentwicklung** ausgewählt ist.
     ![Erforderliche Visual Studio-Workloads](media/visual-studio-workloads-workflow-extensions.png)
@@ -102,9 +105,11 @@ Weitere Informationen: [Installieren von Visual Studio 2017](/visualstudio/insta
 
 Im Folgenden werden allgemeine Schritte angegeben, die verwendet werden, um eine benutzerdefinierte Workflowaktivität mithilfe von Visual Studio zu erstellen. Ein vollständiges Beispiel mit einer Schritt-für-Schritt-Anleitung finden Sie unter [Tutorial: Erstellen einer Workflowerweiterung ](tutorial-create-workflow-extension.md) Sie unter.
 
-1. Erstellen Sie ein Workflowaktivitäts-Bibliotheksprojekt mithilfe von .NET Framework 4.6.2 als Zielframework
+1. Erstellen Sie ein Workflowaktivitäts-Bibliotheksprojekt mithilfe von .NET Framework 4.6.2 als Zielframework.
+    > [!IMPORTANT]
+    > Während die Assemblys, die spätere Versionen verwenden, im Allgemeinen funktionieren. Wenn sie eine Funktion verwenden, die nach 4.6.2 eingeführt wurde, tritt ein Fehler auf.
 1. Löschen Sie die Datei Activity1.xaml, die mit dem Projekt generiert wurde.
-1. Installieren Sie das [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet-Paket.
+1. Installieren Sie das [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)-NuGet-Paket.
 
     Dieses Paket umfasst das [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/)-Paket.
 
@@ -143,7 +148,7 @@ Im Folgenden werden allgemeine Schritte angegeben, die verwendet werden, um eine
 
 ## <a name="add-parameters"></a>Parameter hinzufügen
 
-Wenn Sie Parameter für Ihre Klasse definieren, müssen Sie sie als [InArgument<T>](/dotnet/api/system.activities.inargument-1)-, [OutArgument<T>](/dotnet/api/system.activities.outargument-1)-, or [InOutArgument<T>](/dotnet/api/system.activities.inoutargument-1)-Typen definieren. Diese Typen stellen Methoden bereit, die von einer allgemeinen [Argument-Klasse](/dotnet/api/system.activities.argument) geerbt werden zum Abrufen oder Festlegen der Parameter. Ihr Code verwendet diese Methoden in der Execute-Methode. Weitere Informationen: [Fügen Sie Ihren Code der Execute-Methode hinzu](#add-your-code-to-the-execute-method)
+Wenn Sie Parameter für Ihre Klasse definieren, müssen Sie sie als [InArgument\<T>](/dotnet/api/system.activities.inargument-1)-, [OutArgument\<T>](/dotnet/api/system.activities.outargument-1)- oder [InOutArgument\<T>](/dotnet/api/system.activities.inoutargument-1)-Typen definieren. Diese Typen stellen Methoden bereit, die von einer allgemeinen [Argument-Klasse](/dotnet/api/system.activities.argument) geerbt werden zum Abrufen oder Festlegen der Parameter. Ihr Code verwendet diese Methoden in der Execute-Methode. Weitere Informationen: [Fügen Sie Ihren Code der Execute-Methode hinzu](#add-your-code-to-the-execute-method)
 
 Wenn Ihre benutzerdefinierte Workflowaktivität Eingabe- oder Ausgabeparameter verwendet, müssen Sie den öffentlichen Klasseneigenschaften, die sie definieren, entsprechende .NET-Attribute hinzufügen. Die Daten werden vom Prozess-Designer gelesen, um zu definieren, wie die Parameter im Prozess-Designer festgelegt werden können.
 
@@ -268,7 +273,7 @@ namespace SampleWorkflowActivity
 
 ### <a name="get-contextual-information"></a>Kontextbezogene Informationen abrufen
 
-Wenn Ihr Code kontextbezogene Informationen benötigt, können Sie darauf mithilfe der [CodeActivityContext.GetExtension<T>-Methode](/dotnet/api/system.activities.activitycontext.getextension) mit der <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>-Schnittstelle zugreifen. Dieses Objekt wird von der <xref:Microsoft.Xrm.Sdk.IExecutionContext>-Schnittstelle abgeleitet, welche Zugriff auf viele schreibgeschützte Eigenschaften bereitstellt, die den Kontext des Vorgangs beschreiben. Der `IWorkflowContext` stellt ähnliche kontextbezogene Informationen bereit, die für den ausführenden Workflow spezifisch sind, der Ihre Workflowassembly verwendet.
+Wenn Ihr Code kontextbezogene Informationen benötigt, können Sie darauf mithilfe der [CodeActivityContext.GetExtension\<T>-Methode](/dotnet/api/system.activities.activitycontext.getextension) mit der <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>-Schnittstelle zugreifen. Dieses Objekt wird von der <xref:Microsoft.Xrm.Sdk.IExecutionContext>-Schnittstelle abgeleitet, welche Zugriff auf viele schreibgeschützte Eigenschaften bereitstellt, die den Kontext des Vorgangs beschreiben. Der `IWorkflowContext` stellt ähnliche kontextbezogene Informationen bereit, die für den ausführenden Workflow spezifisch sind, der Ihre Workflowassembly verwendet.
 
 Verwenden Sie den folgenden Code in Ihrer `Execute`-Funktion, um auf `IWorkflowContext` zuzugreifen:
 
@@ -280,9 +285,12 @@ protected override void Execute(CodeActivityContext context)
 ...
 ```
 
+> [!IMPORTANT]
+> Sie sollten keine Logikabhängigkeiten basierend auf Kontextinformationen einfügen. Wenn eine benutzerdefinierte Workflowaktivität in einem Workflow verwendet wird, sollten alle relevanten Eingabeparameter innerhalb des Designers festgelegt werden. Der Ausgabewert oder das Verhalten der benutzerdefinierten Aktivität sollte immer alleine durch die Eingabeparameter bestimmt werden, sodass es keine versteckten Faktoren gibt, die das Verhalten ändern. Wenn jemand die benutzerdefinierte Aktivität im Designer verwendet, sollte das Verhalten immer vorhersagbar sein.
+
 ### <a name="use-the-organization-service"></a>Verwenden Sie den Organisationsservice
 
-Wenn Sie Datenvorgänge mithilfe des Organisationsdiensts ausführen müssen, können Sie darauf mithilfe der [CodeActivityContext.GetExtension<T>](/dotnet/api/system.activities.activitycontext.getextension)-Methode mit der <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>-Schnittstelle zugreifen. Von dort aus können Sie die <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})>-Methode verwenden, um auf eine Instanz oder den Service-Proxy zuzugreifen, den Sie für die Durchführung von Datenvorgängen verwenden können. Im <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> kann verwendet werden, um den zu verwendenden Benutzerkontext zu bestimmen, wenn Sie möchten, dass der Vorgang im selben Kontext wie der aufrufende Prozess ausgeführt wird.
+Wenn Sie Datenvorgänge mithilfe des Organisationsdiensts ausführen müssen, können Sie darauf mithilfe der [CodeActivityContext.GetExtension\<T>](/dotnet/api/system.activities.activitycontext.getextension)-Methode mit der <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory>-Schnittstelle zugreifen. Von dort aus können Sie die <xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})>-Methode verwenden, um auf eine Instanz oder den Service-Proxy zuzugreifen, den Sie für die Durchführung von Datenvorgängen verwenden können. Im <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> kann verwendet werden, um den zu verwendenden Benutzerkontext zu bestimmen, wenn Sie möchten, dass der Vorgang im selben Kontext wie der aufrufende Prozess ausgeführt wird.
 Verwenden Sie den folgenden Code in Ihrer `Execute`-Funktion, um Zugriff auf den Organisationsdienst zu erhalten:
 
 ```csharp
@@ -308,7 +316,7 @@ Für benutzerdefinierte Workflowaktivitäten müssen Sie die folgenden Eigenscha
 |Beschreibung|Wird in der Benutzeroberfläche des Prozessdesigners nicht angezeigt, kann aber bei der Erstellung der Dokumentation von Daten aus der PluginType-Entität hilfreich sein, in der diese Informationen gespeichert werden.|
 |FriendlyName|Anzeigename des Benutzers für das Plug-In.|
 |Name|Der Name des dargestellten Menüs.|
-|WorkflowActivityGroupName|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service-Prozess hinzugefügt wurde.|
+|WorkflowActivityGroupName|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service Prozess hinzugefügt wurde.|
 
 ![Beschreibende Eigenschaften festlegen](media/create-workflow-activity-set-properties.png)
 
@@ -393,6 +401,44 @@ Wenn Sie Änderungen vornehmen, die signifikante Änderungen an öffentlichen Kl
     ![für den Workflow festgelegte Version](media/workflow-set-version.png)
 
 Wenn alle Prozesse konvertiert sind, um die neue Assembly zu verwenden, können Sie das Plug-In-Registrierungstool verwenden, um die Registrierung der Assembly aufzuheben, sodass sie nicht mehr verfügbar ist. Weitere Informationen: [Registrierung für Komponenten aufheben](../register-plug-in.md#unregister-components)
+
+## <a name="performance-guidance"></a>Leistungs-Anweisungen
+
+Leistungsüberlegungen für die Workflowerweiterungen stimmen mit denen wie für gewöhnliche Plug-Ins überein. Weitere Informationen: [Leistungsüberlegungen](../write-plug-in.md#performance-considerations)
+
+Im Gegensatz zu gewöhnlichen Plug-Ins haben Sie bei Workflowerweiterungen nicht die Möglichkeit, Ihren Code explizit für einen bestimmten Schritt zu registrieren. Das bedeutet, dass Sie nicht festlegen, ob der Code in Ihrer Workflowerweiterung synchron oder asynchron ausgeführt wird. Besonders muss auf Code geachtet werden, der synchron ausgeführt wird, weil er sich direkt auf die Benutzererfahrung der Anwendung auswirkt.
+
+Als wiederverwendbare Komponenten können Workflowerweiterungen zu beliebigen Workflows oder zu benutzerdefinierten Aktionen hinzugefügt werden. Der Workflow kann als *Echtzeit*-Workflow konfiguriert werden, wodurch die Anwendung synchron ausgeführt wird. Benutzerdefinierte Aktionen sind immer synchron, aber sie sind nicht Teil einer Transaktion, es sei denn, für sie ist **Rollback aktivieren** festgelegt.
+
+> [!IMPORTANT]
+> Wenn Ihre Workflowerweiterung in einem synchronen Workflow oder in einer benutzerdefinierte Aktion verwendet wird, wirkt sie die Zeit für das Ausführen des Code direkt auf die Benutzererfahrung aus. Daher sollten Workflowerweiterungen nicht mehr als zwei Sekunden zum Abschließen erfordern, wenn sie synchron verwendet werden. Wenn Ihre Erweiterung mehr Zeit benötigt, sollten Sie dies dokumentieren und die Verwendung der Erweiterung in synchronen Workflows oder benutzerdefinierten Aktionen nicht empfehlen.
+
+Sie sollten außerdem darauf achten, dass jeder Fehler, der in einem synchronen Workflow oder einer benutzerdefinierten Aktion, die Teil der Transaktion ist, von der Workflowerweiterung zurückgegeben wird, dazu führt, dass für die gesamte Transaktion ein Rollback ausgeführt wird. Dies ist ein sehr kostspieliger Vorgang, der sich auf die Leistung auswirken kann.
+
+Sie können den Wert in der Eigenschaft <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode> verwenden, um zu ermitteln, ob das Plug-In synchron ausgeführt wird.
+
+## <a name="real-time-workflow-stages"></a>Echtzeit-Workflowphasen
+
+Wenn eine Workflowerweiterung in einem Echtzeit-Workflow (synchron) verwendet wird, wird sie in den Ereignisausführungspipeline-Phasen aufgerufen, die in der folgenden Tabelle veranschaulicht werden. Weitere Informationen: [Ereignisausführungspipeline](../event-framework.md#event-execution-pipeline)
+
+|Meldung  |Phase  |
+|---------|---------|
+|**Erstellen**|PostOperation|
+|**Löschen**|PreOperation|
+|**Update**|PreOperation oder <br /> PostOperation|
+
+Sie können den Wert in der Eigenschaft <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.StageName> verwenden, um die Phase zu ermitteln.
+
+Für den Vorgang **Aktualisieren** ist die Phase mithilfe der Optionen **Vor** oder **Danach** im Workflow-Designer konfigurierbar. Weitere Informationen: [Echtzeitworkflows verwenden](/flow/configure-workflow-steps#using-real-time-workflows)
+
+Wenn Ihre Workflowerweiterung von Daten abhängig ist, die an den Ausführungskontext übergeben werden, steuert die Phase, in der sie ausgeführt wird, ob die Daten hier verfügbar sind: <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext><xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> und <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters>.
+
+> [!NOTE]
+> Wir empfehlen nicht, Logikabhängigkeiten basierend auf <xref:Microsoft.Xrm.Sdk.IExecutionContext.InputParameters> und <xref:Microsoft.Xrm.Sdk.IExecutionContext.OutputParameters> aufzunehmen. Workflowerweiterungen sollten von den konfigurierten [Ein- und Ausgabeparametern](#input-and-output-parameters) abhängen, sodass die Person, die die Workflowerweiterung verwendet, das erwartete Verhalten verstehen kann, ohne dass etwas vor ihr verborgen ist.
+
+## <a name="entity-images-for-workflow-extensions"></a>Entitätsbilder für Workflowerweiterungen
+
+Es gibt keine Möglichkeit, Entitätsbilder für Workflowerweiterungen zu konfigurieren, da Sie nur die Assembly registrieren und die Workflowaktivität im Kontext des Workflows ausgeführt wird. Für Workflowerweiterungen sind Entitätsbilder mithilfe der Schlüsselwerte `PreBusinessEntity` und `PostBusinessEntity` jeweils für vorherige und spätere Entitätsbilder verfügbar. Weitere Informationen: [Entitätsbilder](../understand-the-data-context.md#entity-images)
 
 
 ### <a name="see-also"></a>Siehe auch

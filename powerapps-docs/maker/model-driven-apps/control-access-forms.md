@@ -2,7 +2,7 @@
 title: Zugriff auf modellgesteuerte App-Formulare in PowerApps steuern | MicrosoftDocs
 description: 'Erfahren Sie, wie Zugriff auf Hauptformulare gesteuert wird'
 ms.custom: ''
-ms.date: 03/07/2019
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -71,11 +71,15 @@ search.app:
   
 <a name="BKMK_UseFormScripting"></a>   
 ## <a name="use-form-scripting"></a>Verwenden von Formularskripts  
+Der Client-API-Formularkontext (formContext) bietet eine Referenz im Formular oder auf ein Element im Formular, wie z. B. ein Steuerelement für die Schnellansicht oder eine Zeile in einem bearbeitbaren Raster, für den der aktuelle Code ausgeführt wird. Weitere Informationen: [Client-API-Formularkontext](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
- Schließlich ist es in der Webanwendung möglich, jedoch nicht empfohlen, dass ein Entwickler im Formularereignis Onload Skripts verwendet, um die [Xrm.Page.ui.formSelector.items-Sammlung](http://go.microsoft.com/fwlink/p/?LinkID=513300) zu nutzen, um verfügbare Formulare abzufragen und Benutzer per Navigation zu einem bestimmten Formular zu führen. Denken Sie daran, dass das [Navigationsverfahren](http://go.microsoft.com/fwlink/p/?LinkID=513301) dazu führt, dass das Formular erneut geladen wird (und das Onload-Ereignis erneut ausgeführt wird). Ihre Logik im Ereignishandler sollte immer nach Bedingungen sehen, bevor Sie das Navigationsverfahren verwenden, um eine Endlosschleife zu vermeiden oder damit Benutzer nicht in unnötiger Weise daran gehindert werden, zwischen Formularen zu navigieren.  
+> [!IMPORTANT]
+> Mit Dynamics 365 for Customer Engagement-Apps, Version 9.0, ist das Xrm.Page-Object [veraltet](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), und Sie sollten nun die [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext)-Methode aus dem zur Ausführung übergebenen Kontextobjekt verwenden, um die Referenz ins entsprechende Formular oder ein Element im Formular zurückzugeben.
+<!-- 
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
- Diese Methode funktioniert nicht für Dynamics 365 for tablets, da nicht mehrere Formulare zur Auswahl verfügbar sind.  
+ This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 
-### <a name="next-steps"></a>Nächste Schritte  
+### <a name="see-also"></a>Siehe auch  
 
 [Zuweisen von Sicherheitsrollen zu Formularen](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form)

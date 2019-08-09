@@ -42,6 +42,6 @@ Stellt Eigenschaften und Methoden zur Verwendung der Web-API bereit, um Datensä
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Common Data Service-Web-API verwenden](../../../common-data-service/webapi/overview.md)
+[Verwenden der Common Data Service-Web-API](../../../common-data-service/webapi/overview.md)
 
 [Client-API-Xrm-Objekt](../clientapi-xrm.md)

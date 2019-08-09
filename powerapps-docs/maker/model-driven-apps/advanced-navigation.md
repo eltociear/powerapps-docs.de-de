@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/11/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -64,12 +64,12 @@ Verwenden Sie den -Einstellungsbereich, um Umgebungseinstellungen zu konfigurier
 Prüfen Sie zunächst, ob die benötigten Einstellungen im  > ![Symbol Einstellungen](media/powerapps-gear.png)**Erweiterte Anpassungen** sind.
 
 Um Einstellungen zu finden, die nicht unter **Erweiterte Anpassungen**verfügbar sind:  
-1.  Greifen Sie auf Ihre Umgebung im Dynamics 365 Administration Center zu. Für die Umgebung in Nordamerika wechseln Sie zu [https://port.crm.dynamics.com/G/instances/InstancePicker.aspx](https://port.crm.dynamics.com/G/instances/InstancePicker.aspx). Für andere Speicherorte suchen Sie unter Direkte Anmelduing im Dynamics 365 Administration Center
-2.  Wählen Sie die Umgebung, die Sie möchten und wählen Sie **Öffnen**.
+1.  Wählen Sie in einer modellgesteuerten PowerApps-App **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) auf der App-Symbolleiste und dann **Erweiterte Einstellungen** aus. 
+2.  Wählen Sie **Einstellungen** und dann den gewünschten Einstellungsbereich aus.
 
     > [!div class="mx-imgBorder"] 
-    > ![Umgebung öffnen](media/open-environment.png)
+    > ![Bereiche für Einstellungen](media/settings-areas.png) 
 
 ## <a name="see-also"></a>Siehe auch
-[Erstellen oder bearbeiten Sie eine modellgesteuerte Anwendung mit dem App-Designer](create-edit-app.md)
-[Erstellen oder bearbeiten Sie Anwendungen in PowerApps Studio for Web](../canvas-apps/create-app-browser.md).
+[Erstellen oder Bearbeiten einer modellgesteuerten App mithilfe des App-Designers](create-edit-app.md)
+[Erstellen oder Bearbeiten von Apps in PowerApps Studio für Web](../canvas-apps/create-app-browser.md)

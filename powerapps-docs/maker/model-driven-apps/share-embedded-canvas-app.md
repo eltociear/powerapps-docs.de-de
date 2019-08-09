@@ -1,7 +1,7 @@
 ---
 title: Eine eingebettete Canvas-App freigeben | MicrosoftDocs
 ms.custom: ''
-ms.date: 01/07/2019
+ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -24,8 +24,6 @@ search.app:
 ---
 
 # <a name="share-an-embedded-canvas-app"></a>Freigeben einer eingebetteten Canvas-App
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 In diesem Thema wird erklärt, wie Sie eine eingebettete Canvas-App freigeben, die Sie bereits erstellt haben.
 
 Nachdem Sie eine eingebettete Canvas-App erstellt und einem modellgestützten Formular hinzugefügt haben, müssen Sie sicherstellen, dass alle Benutzer, die Zugriff auf das modellgestützte Formular haben, auch über Zugriff auf die Canvas-App und von ihr verwendeten Daten verfügen. Informationen halten die folgenden Richtlinien bereit:
@@ -39,8 +37,11 @@ Nachdem Sie eine eingebettete Canvas-App erstellt und einem modellgestützten Fo
 Eingebettete Canvas-Apps sind auch lösungsfähig. Standardmäßig werden eingebettete Canvas-Apps in derselben Lösung wie das modellgestützte Formular des Hosts erstellt. Um die eingebettete Canvas-App von einer Umgebung in eine andere zu verschieben, exportieren und importieren Sie eingebettete Canvas-Apps als Teil einer Lösung wie jede andere Komponente.
 
 ## <a name="see-also"></a>Siehe auch
-[Einbetten einer Canvas-App in ein modellgesteuertes Formular](embed-canvas-app-in-form.md) <br />
-[Den aktuellen Datensatz als Datenkontext an eine eingebettete Canvas-App übergeben](pass-current-embedded-canvas-app.md) <br />
-[Eine Liste von aktuellen Datensätzen als Datenkontext an eine eingebettete Canvas-App übergeben](pass-related-embedded-canvas-app.md) <br />
+[Einbetten einer Canvas-App in einem modellgesteuerten Formular](embed-canvas-app-in-form.md) <br />
+[Hinzufügen einer eingebetteten Canvas-App in einem modellgesteuerten Formular](embedded-canvas-app-add-classic-designer.md) <br />
+[Bearbeiten einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-edit-classic-designer.md) <br />
+[Anpassen der Bildschirmgröße und Ausrichtung einer Canvas-App, die in einem modellgesteuerten Formular eingebettet ist](embedded-canvas-app-customize-screen.md) <br />
 [Führen Sie vordefinierte Aktionen aus einer eingebetteten Canvas-App auf dem Hostformular aus](embedded-canvas-app-actions.md) <br />
-[Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md)
+[Eigenschaften und Aktionen des ModelDrivenFormIntegration-Steuerelements](embedded-canvas-app-properties-actions.md) <br />
+[Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps](embedded-canvas-app-guidelines.md) <br />
+[Migrieren von eingebetteten Canvas-Apps in modellgesteuerten Formularen, die mithilfe der öffentlichen Vorschauversion als die neueste Version erstellt wurden](embedded-canvas-app-migrate-from-preview.md) <br />

@@ -1,8 +1,8 @@
 ---
 title: 'Lernprogramm: Erstellen von Workflow-Erweiterungen (Common Data Service) | Microsoft Docs'
-description: <Description>
+description: 'In diesem Lernprogramm wird der Prozess gezeigt, um den Workflowdesigner zu erweitern, um benutzerdefinierte Aktivitäten und Logik unter Verwendung einer Workflow-Assembly hinzufügen'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -73,9 +73,9 @@ Im zweiten Schritt weist die Aktion **Datensatz aktualisieren** die Ausgabe des 
 
 Dies Projekt erstellt eine einfache Workflow-Assembly, die einen Dezimalwert um 10 erhöht.
 
-1. Visual Studio starten.
+1. Starten Sie Visual Studio.
 1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
-1. Erweitern Sie im Dialogfeld **Neues Projekt** unter **Andere Sprache** die Option "Visual C#" und wählen Sie **Workflow** und dann **Aktivitätsbibliothek** aus.
+1. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **Visual C#** und wählen Sie **Workflow** und dann **Aktivitätsbibliothek** aus.
 1. Geben Sie einen Namen und einen Speicherort für die Lösung ein, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
@@ -88,11 +88,11 @@ Dies Projekt erstellt eine einfache Workflow-Assembly, die einen Dezimalwert um 
     ![Projekteigenschaften festlegen](media/tutorial-create-workflow-activity-workflow-project.png)
 
 1. Löschen Sie die `Activity1.xaml`-Datei im Projekt.
-1. Klicken Sie im Lösungsexplorer mit der rechten Maustaste in das Projekt und wählen Sie **NuGet Pakete verwalten...** aus. .
+1. Klicken Sie im Lösungsexplorer mit der rechten Maustaste in das Projekt und wählen Sie **NuGet-Pakete verwalten...** aus. .
 
     ![NuGet-Package verwalten](media/tutorial-create-workflow-activity-manage-nuget-packages.png)
 
-1. Suchen Sie nach dem [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/) NuGet-Paket und installieren Sie es.
+1. Suchen Sie nach dem [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)-NuGet-Paket und installieren Sie es.
 
     > [!NOTE]
     > Stellen Sie sicher, dass das Paket, das Sie installieren im Besitz von [crmsdk](https://www.nuget.org/profiles/crmsdk) ist. Dieses Paket enthält `Microsoft.Xrm.Workflow.dll`, einer Abhängigkeit des [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/)-Pakets, sodass die erforderliche `Microsoft.Xrm.Sdk.dll`-Assembly auch enthalten ist. 
@@ -189,7 +189,7 @@ Fügen Sie innerhalb der Ausführungsmethode Logik hinzu, um die Logik anwenden,
 
 ## <a name="register-your-assembly"></a>Registrieren Ihrer Assembly
 
-Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Registrierungs-Tools registriert. Dieses Tool stellt eine grafische Benutzeroberfläche bereit und unterstützt das Registrieren Assemblys, die Plug-Ins oder benutzerdefinierte Workflowaktivitäten enthalten. Informationen zum Abrufen des Plug-in Registrationstools finden Sie unter [Tools von NuGet herunterladen](../download-tools-nuget.md)
+Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Registrierungs-Tools registriert. Dieses Tool stellt eine grafische Benutzeroberfläche bereit und unterstützt das Registrieren Assemblys, die Plug-Ins oder benutzerdefinierte Workflowaktivitäten enthalten. Das Plug-In-Registrierungstool finden Sie unter: [Tools von NuGet herunterladen](../download-tools-nuget.md)
 
 [!INCLUDE [cc-connect-plugin-registration-tool](../includes/cc-connect-plugin-registration-tool.md)]
 
@@ -204,7 +204,7 @@ Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Regi
     ![Assembly-Dialog registrieren](media/tutorial-create-workflow-activity-register-assembly-dialog.png)
 
     > [!NOTE]
-    > Hinweis: Bei Common Data Service werden die gültigen Optionen für die Schritte 3 und 4 ausgewählt und ungültige Optionen werden deaktiviert.
+    > Hinweis: Bei Common Data Service werden die gültigen Optionen für die Schritte 3 und 4 ausgewählt und ungültige Optionen deaktiviert.
 
 1. Wählen Sie **Ausgewählte Plug-ins registrieren** aus. Es sollte ein Bestätigungsdialogfeld angezeigt werden.
 
@@ -222,7 +222,7 @@ Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Regi
     |Beschreibung||Gibt den Wert des Eingabeparameters plus 10 zurück.|Wird in der Benutzeroberfläche des Prozessdesigners nicht angezeigt, kann aber bei der Erstellung der Dokumentation von Daten aus der PluginType-Entität hilfreich sein, in der diese Informationen gespeichert werden.|
     |FriendlyName|ein GUID-Wert|IncrementByTen|Anzeigename des Benutzers für das Plug-In.|
     |Name|SampleWorkflowActivity.IncrementByTen|Erhöhen um 10|Der Name des dargestellten Menüs.|
-    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|Probe|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service-Prozess hinzugefügt wurde.|
+    |WorkflowActivityGroupName|SampleWorkflowActivity (1.0.0.0)|Probe|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service Prozess hinzugefügt wurde.|
 
     > [!NOTE]
     > Wenn **Name** und **WorkflowActivityGroupName** auf null festgelegt sind, wird die benutzerdefinierte Aktivität nicht im Prozessdesigner angezeigt.

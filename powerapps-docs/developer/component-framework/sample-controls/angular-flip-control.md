@@ -18,11 +18,6 @@ In diesem Beispiel wird gezeigt, wie Sie Drittanbieterbibliotheken verwenden, um
 > [!div class="mx-imgBorder"]
 > ![Angular-Kippen](../media/angular-flip.png "Angular-Kippen")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest
 
 ```XML
@@ -298,5 +293,5 @@ border-radius : 4px
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)<br />
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br />
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br />
 [Übersicht über das PowerApps-Komponentenframework](../overview.md)

@@ -1,6 +1,6 @@
 ---
 title: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung (Common Data Service) | Microsoft Docs
-description: 'Mit der neuen Änderungsnachverfolgungsfunktion in Dynamics 365 Customer Engagement können die Daten performant synchronisiert werden, indem feststellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden.'
+description: 'Mit der neuen Änderungsnachverfolgungsfunktion in Dynamics 365 Customer Engagement können die Daten effizient synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,12 +17,12 @@ search.app:
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 
-Mit der neuen Änderungsnachverfolgungsfunktion in Common Data Service können die Daten performant synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. Zuvor war es ohne diese neue Funktion schwierig, einen effizienten und zuverlässigen Mechanismus zu entwickeln, um zu bestimmen, welche Datensätze in Common Data Service geändert wurden. In diesem Thema wird erläutert, wie Änderungen für eine Entität abgerufen werden.  
+Mit der neuen Änderungsnachverfolgungsfunktion in Common Data Service können die Daten effizient synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. Zuvor war es ohne diese neue Funktion schwierig, einen effizienten und zuverlässigen Mechanismus zu entwickeln, um zu bestimmen, welche Datensätze in Common Data Service geändert wurden. In diesem Thema wird erläutert, wie Änderungen für eine Entität abgerufen werden.  
   
 <a name="BKMK_enable"></a>   
 ## <a name="enable-change-tracking-for-an-entity"></a>Aktivieren der Änderungsnachverfolgung für eine Entität  
 
- Bevor Sie die Änderungen für eine Entität abrufen, sollten Sie sicherstellen, dass die Änderungsnachverfolgungsfunktion für diese Entität aktiviert ist. Diese Funktion kann aktiviert werden, indem Sie die Anpassungsbenutzeroberfläche verwenden, oder programmgesteuert, indem die <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ChangeTrackingEnabled>-Eigenschaft auf `True` festgelegt wird. Anmerkung `Org.OData.Capabilities.V1.ChangeTracking ` wird Entitätssätzen hinzugefügt, die die Änderungsnachverfolgung aktiviert haben. Um Anmerkungen in Entitätsmetadaten, gehen Sie so vor 
+ Bevor Sie die Änderungen für eine Entität abrufen, sollten Sie sicherstellen, dass die Änderungsnachverfolgungsfunktion für diese Entität aktiviert ist. Diese Funktion kann aktiviert werden, indem Sie die Anpassungsbenutzeroberfläche verwenden, oder programmgesteuert, indem die <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.ChangeTrackingEnabled>-Eigenschaft auf `True` festgelegt wird. Anmerkung `Org.OData.Capabilities.V1.ChangeTracking` wird Entitätssätzen hinzugefügt, die die Änderungsnachverfolgung aktiviert haben. Um Anmerkungen in Entitätsmetadaten, gehen Sie so vor 
 
  ```http 
  GET [Organization URI]/api/data/v9.0/$metadata?annotations=true

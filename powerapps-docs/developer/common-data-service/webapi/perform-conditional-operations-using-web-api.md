@@ -1,5 +1,5 @@
 ---
-title: Ausführen bedingter Vorgänge mithilfe der Web-API (Common Data Service) | Microsoft Docs
+title: Ausführen bedingter Vorgänge mit der Web-API (Common Data Service) | Microsoft Docs
 description: 'Lesen Sie, wie Sie Bedingungen erstellen, die bestimmen, ob und wie die Vorgänge mithilfe von Web-API ausgeführt werden'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -23,15 +23,15 @@ search.app:
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Bedingte Vorgänge mithilfe der Web-API ausführen
 
-Common Data Service bietet Unterstützung für eine Reihe von Bedingungsvorgängen, die vom standardmäßigen HTTP-Ressourcen-Versionsverwaltungs-Mechanismus abhängen, der als *ETags* bekannt ist.  
+Common Data Service stellt Unterstützung für einen Satz bedingter Vorgänge bereit, die auf dem standardmäßigen HTTP-Ressourcen-Versionsverwaltungsmechanismus basieren, der als *ETags* bezeichnet wird.  
   
 <a name="bkmk_ETags"></a>
   
 ## <a name="etags"></a>ETags
 
-Das HTTP-Protokoll definiert einen *Entitätstag* oder kurz ausgedrückt [ETag](https://msdn.microsoft.com/en-us/library/dd541486.aspx), um spezifische Versionen einer Ressource zu identifizieren. ETag sind undurchsichtige Bezeichner, deren genauen Werte von der Implementierung abhängen. ETag-Werte treten in zwei Arten auf: starke und schwache Überprüfung. Eine starke Überprüfung gibt an, dass eine eindeutige Ressource, die durch eine spezfische URI identifziert ist, auf binärer Ebene identisch ist, wenn ihr entsprechender ETag-Wert unverändert ist. Eine schwache Überprüfung stellt nur sicher, dass die Ressourcendarstellung für denselben ETag-Wert semantisch gleichwertig ist.  
+Das HTTP-Protokoll definiert einen *Entitätstag* oder kurz ausgedrückt [ETag](https://msdn.microsoft.com/library/dd541486.aspx), um spezifische Versionen einer Ressource zu identifizieren. ETag sind undurchsichtige Bezeichner, deren genauen Werte von der Implementierung abhängen. ETag-Werte treten in zwei Arten auf: starke und schwache Überprüfung. Eine starke Überprüfung gibt an, dass eine eindeutige Ressource, die durch eine spezfische URI identifziert ist, auf binärer Ebene identisch ist, wenn ihr entsprechender ETag-Wert unverändert ist. Eine schwache Überprüfung stellt nur sicher, dass die Ressourcendarstellung für denselben ETag-Wert semantisch gleichwertig ist.  
   
-Common Data Service generiert eine schwache Überprüfungs-`@odata.etag`-Eigenschaft für jede Entitätsinstanz, und diese Eigenschaft wird automatisch bei jedem abgerufenen Entitätsdatensatz zurückgegeben. Weitere Informationen finden Sie unter [Abrufen einer Entität mithilfe des Web-API](retrieve-entity-using-web-api.md).  
+Common Data Service generiert eine schwache Überprüfungs-`@odata.etag`-Eigenschaft für jede Entitätsinstanz und diese Eigenschaft wird automatisch bei jedem abgerufenen Entitätsdatensatz zurückgegeben. Weitere Informationen finden Sie unter [Abrufen einer Entität mithilfe des Web-API](retrieve-entity-using-web-api.md).  
   
 <a name="bkmk_ifMatchHeaders"></a>
  

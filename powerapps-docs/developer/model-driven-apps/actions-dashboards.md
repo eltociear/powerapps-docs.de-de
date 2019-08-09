@@ -3,8 +3,7 @@ title: Aktionen für Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
 description: 'Erfahren Sie, wie die Aktionen wie Erstellen, Abrufen, Aktualisieren oder Löschen für Dashboards im Besitz der Organisation und im Besitz des Benutzers auszuführen.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -27,14 +26,14 @@ search.app:
 Sie können fAktionen ausführen, wie Dashboards im Besitz der Organisation und im Besitz des Benutzers erstellen, abrufen, aktualisieren oder löschen.  
   
 ## <a name="actions-on-an-organization-owned-dashboard"></a>Aktionen für ein Dashboard im Besitz der Organisation  
- Damit Sie die folgenden Aktionen für ein Dashboard im Besitz der Organisation (`SystemForm`) ausführen können, muss Ihrem Konto in Common Data Service die Rolle „Systemadministrator” oder „Systemanpasser” zugewiesen sein:  
+ Damit Sie die folgenden Aktionen für ein Dashboard im Besitz der Organisation (`SystemForm`) ausführen können, muss Ihrem Konto in Common Data Service die Rolle "Systemadministrator" oder "Systemanpasser" zugewiesen sein:  
   
 - Erstellen, Abrufen, Aktualisieren und Löschen. Sie können ein Dashboard im Besitz der Organisation erstellen oder aktualisieren, indem Sie die Common Data Service-Webdienste verwenden oder das Entitätsformular anpassen. Weitere Informationen zum Erstellen eines Systemdashboards finden Sie unter [Erstellen eines Dashboards](create-dashboard.md).  
   
 - Legen Sie ein Dashboards im Besitz der Organisation als Standarddashboard für eine Organisation fest, indem Sie beim Erstellen oder Aktualisieren des Dashboards den Attributwert `SystemForm.IsDefault` auf `true` festlegen.  
   
   > [!IMPORTANT]
-  >  Mithilfe der Methoden, die in Common Data Service-Webdiensten verfügbar sind, ist es möglich, zwei Dashboards als Standarddashboard festzulegen. Stellen Sie sicher, dass kein anderes Dashboard als Standarddashboard für die Organisation festgelegt wurde, bevor Sie diese Einstellung programmgesteuert festlegen.  
+  >  Mithilfe der Methoden, die in Common Data Service-Webdiensten verfügbar sind, ist es möglich, zwei Dashboards als Standarddashboard festlegen. Stellen Sie sicher, dass kein anderes Dashboard als Standarddashboard für die Organisation festgelegt wurde, bevor Sie diese Einstellung programmgesteuert festlegen.  
   
   Nachdem Sie ein organisationseigenes Dashboard aktualisiert haben, müssen Sie die Metadatenänderungen veröffentlichen, damit sie organisationsweit zu sehen sind. Sie können die Meldung <xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> oder die Meldung <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> verwenden, um die Änderungen zu veröffentlichen, die für ein organisationseigenes Dashboard vorgenommen wurden. Einen Beispielcode, der dies darstellt, finden Sie unter [Beispiel: Ein Dashboard erstellen, abrufen, aktualisieren und löschen (EAAL)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard).<!-- TODO Need to update the powerapps repo's topic link. As of now not found-->.  
   

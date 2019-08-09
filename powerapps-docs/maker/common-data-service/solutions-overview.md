@@ -2,7 +2,7 @@
 title: Arbeiten mit Lösungen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Lösungen verteilt werden'
 ms.custom: ''
-ms.date: 01/28/2019
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -26,7 +26,7 @@ search.app:
    
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
-  In PowerApps werden Lösungen genutzt, um Apps und Komponenten von einer Umgebung in eine andere zu transportieren oder um einen Satz von Anpassungen für vorhandene Apps zu übernehmen. Eine Lösung kann mindestens eine App sowie andere Komponenten, wie Entitäten, Optionssätze usw., enthalten. Sie können eine Lösung aus [AppSource](https://appsource.microsoft.com/) oder durch einen unabhängigen Softwarehersteller (ISV) erhalten.
+  In PowerApps werden Lösungen genutzt, um Apps und Komponenten von einer Umgebung in eine andere zu transportieren oder um einen Satz von Anpassungen für vorhandene Apps zu übernehmen. Eine Lösung kann mindestens eine App sowie andere Komponenten, wie Entitäten, Optionssätze usw. enthalten. Sie können eine Lösung aus [AppSource](https://appsource.microsoft.com/) oder durch einen unabhängigen Softwarehersteller (ISV) erhalten.
   
 Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
@@ -37,7 +37,7 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
   
 -   Das Erstellen von Lösungen ist optional. Sie können Anwendungen direkt in Ihrer PowerApps-Umgebung erstellen oder anpassen, ohne jemals eine Lösung zu erstellen.  
   
--   Wenn Sie die PowerApps Umgebung direkt anpassen, ohne eine Lösung zu erstellen, arbeiten Sie mit einer speziellen Lösung namens **Common Data Services Default Solution**. Diese Lösung enthält alle Anpassungen, die Sie in der PowerApps-Umgebung erstellen.  
+-   Wenn Sie die PowerApps Umgebung direkt anpassen, ohne eine Lösung zu erstellen, arbeiten Sie mit einer speziellen Lösung namens **Standardlösung von Common Data Service**. Diese Lösung enthält alle Anpassungen, die Sie in der PowerApps-Umgebung erstellen.  
   
 -   Es gibt eine andere spezielle Lösung, die **Standardlösung** genannt wird. Diese Lösung enthält alle Komponenten in Ihrem System, egal, ob sie von Ihnen oder einem anderen Benutzer erstellt wurde. Sie können die **Standardlösung** exportieren, um ein Backup der Anpassungen, die Sie in Ihrer Organisation definiert haben, zu erstellen. Dies ist eine bewährte Methode, um Ihre Änderungen für den schlimmsten Fall zu sichern.  
   

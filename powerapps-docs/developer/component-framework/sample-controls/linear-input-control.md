@@ -20,11 +20,6 @@ Wenn Sie diese Komponente implementieren möchten, müssen Sie die [Manifest](..
 > [!div class="mx-imgBorder"]
 > ![Steuerelement der lineare Eingabekomponente](../media/linear-input-control.png "Steuerelement der lineare Eingabekomponente")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest
 
 ```xml
@@ -64,7 +59,7 @@ private inputElement: HTMLInputElement;
 private _container: HTMLDivElement;
 // Reference to ComponentFramework Context object
 private _context: ComponentFramework.Context<IInputs>;
-// Event Handelr 'refreshData' reference
+// Event Handler 'refreshData' reference
 private _refreshData: EventListenerOrEventListenerObject;
 /**
 * Empty constructor.
@@ -247,5 +242,5 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>,):
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

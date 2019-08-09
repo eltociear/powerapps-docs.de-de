@@ -3,8 +3,7 @@ title: Definieren von Menübandregisterkarte-Anzeigeregeln (modellgesteuerte App
 description: Infos zum Definieren von Menübandregisterkarten-Anzeigeregeln.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-ribbon-tab-display-rules"></a>Definieren von Menüband-Registerkartenanzeigenregeln
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-tab-display-rules -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-tab-display-rules -->
 
 Registerkartenanzeigeregeln legen fest, ob eine bestimmte Registerkarte für ein Menüband angezeigt wird oder nicht.  
   

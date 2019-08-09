@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel für Web-API-Funktionen und Aktionen (C#) (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der Common Data Service für Apps Web-API und C# ausgeführt werden.'
+title: 'Beispiel für Web-API-Funktionen und -Aktionen (C#) (Common Data Service) | Microsoft Docs'
+description: 'Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen mithilfe der Common Data Service-Web-API und C# aufgerufen werden'
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-functions-and-actions-sample-c"></a>Internet-API-Funktionen- und Aktionen-Beispiel (C#)
 
-Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen, mithilfe der Common Data Service für Apps Web-API ausgeführt werden.  
+Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen mithilfe dem Common Data Service Web API angerufen werden.  
   
 > [!NOTE]
 > Dieses Beispiel implementiert die Vorgänge, die unter [Beispiel für Web-API-Funktionen und -Aktionen](../web-api-functions-actions-sample.md) beschrieben sind, und nutzt bekannte C#-Konstrukte, die in [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) beschrieben sind.  
@@ -31,7 +31,7 @@ Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Ak
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die Voraussetzungen für alle C#-Beispiele der Common Data Service-Web-API sind im Abschnitt [Voraussetzungen](../web-api-samples-csharp.md#bkmk_prerequisites) des übergeordneten Themas [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) beschrieben.  
+Die Voraussetzungen für alle Common Data Service-Web-API-C#-Beispiele werden im Abschnitt [Voraussetzungen](../web-api-samples-csharp.md#bkmk_prerequisites) des übergeordneten Themas [Web-API-Beispiele (C#)](../web-api-samples-csharp.md) aufgeführt.  
   
 <a name="bkmk_runSample"></a>
 
@@ -42,17 +42,17 @@ Gehen Sie zu [Web API Functions and Actions Sample (C#)](https://github.com/Micr
 |Datei|Zweck/Beschreibung|  
 |----------|--------------------------|  
 |SampleProgram.cs|Enthält den primären Quellcode für dieses Beispiel.|  
-|App.config|Die Konfigurationsdatei der Anwendung, die Platzhalterinformationen der Common Data Service-Serververbindung enthält. Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Wenn Sie Verbindungsinformationen für ein Sample konfigurieren, können Sie die anderen Samples mit der gleichen Konfiguration ausführen.|  
+|App.config|Die Anwendungskonfigurationsdatei, die Platzhalter für Common Data Service-Server-Verbindungsinformationen enthält. Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Wenn Sie Verbindungsinformationen für ein Sample konfigurieren, können Sie die anderen Samples mit der gleichen Konfiguration ausführen.|  
 |SampleHelper.cs|Enthält den Helfercode, der bei der Ausführung allgemeiner Aufgaben wie Konfiguration, Authentifizierung und `HTTP`-Antwortfehlerbehandlung hilft.<br/> Diese Datei wird mit allen Web-API-Samples im Repo geteilt. Es enthält Hilfsmethoden zur Verwaltung von Ausnahmen und das OAuth Token. Weitere Informationen zu den Methoden in dieser Datei finden Sie im Beispiel der Simple Web API.|
 |SampleMethod.cs|Enthält alle Methoden, die den Quellcode im Beispiel unterstützen. Die in `SampleProgram.cs` verwendeten Funktionen können in dieser Datei definiert werden. |
-|FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|Die Standard-Visual Studio 2017-Lösung, das Projekt, die NuGet-Paketkonfiguration Assemblyinformationsdateien für dieses Beispiel.|  
+|FunctionsAndActions.sln <br />FunctionsAndActions.csproj <br />Packages.config <br />AssemblyInfo.cs|Die Standard-Visual Studio 2017-Lösung, das Projekt, die NuGet-Paketkonfiguration und Assemblyinformationsdateien für dieses Beispiel.|  
 |WebAPIFunctionsandActions_1_0_0_0_managed.zip|Eine benutzerdefinierte verwaltete Lösung, die zwei benutzerdefinierte Aktionen für dieses Beispiel enthält.|  
   
 Führen Sie als Nächstes das folgende Verfahren aus, um dieses Beispiel auszuführen.  
   
-1. Suchen und doppelklicken Sie auf die Lösungsdatei "FunctionsAndActions.sln", um die Lösung in Visual Studio zu laden. Erstellen Sie die **FunctionsAndActions**-Lösung.  Dies sollte alle erforderlichen NuGet-Pakete automatisch herunterladen und installieren.  
+1. Suchen und doppelklicken Sie auf die Lösungsdatei "FunctionsAndActions.sln", um die Lösung in Visual Studio zu laden. Erstellen Sie die **FunctionsAndActions**-Lösung.  Dies sollte alle erforderlichen NuGet-Pakete, die entweder fehlen oder aktualisiert werden müssen, automatisch herunterladen und installieren.  
   
-2. Bearbeiten Sie die Anwendungskonfigurationsdatei App.config um Verbindungsinformationen für Ihren Common Data Service-Server anzugeben.  
+2. Bearbeiten Sie die Anwendungskonfigurationsdatei, App.config, um Verbindungsinformationen für Ihren Common Data Service-Server anzugeben.  
   
 3. Führen Sie das Projekt **FunctionsAndActions** in Visual Studio aus.  Alle Beispiellösungen sind für die Ausführung im Debugmodus konfiguriert.  
   
@@ -221,7 +221,7 @@ namespace PowerApps.Samples
                     //Add a new letter tracking activity to the current user's queue. Uses the AddToQueue 
                     //action: https://msdn.microsoft.com/library/mt607880.aspx, which is bound to the queue 
                     //entity type: https://msdn.microsoft.com/library/mt607886.aspx, and returns a 
-                    //AddToQueueResponse complex type: https://msdn.microsoft.com/en-us/library/mt608105.aspx.
+                    //AddToQueueResponse complex type: https://msdn.microsoft.com/library/mt608105.aspx.
                     string queueItemId;
                     //Create a letter tracking instance.
                     string letterUri;
@@ -443,7 +443,7 @@ namespace PowerApps.Samples
   
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service-Web-API verwenden](../overview.md)<br />
+[Verwenden der Common Data Service-Web-API](../overview.md)<br />
 [Nutzen von Web-API-Funktionen](../use-web-api-functions.md)<br />
 [Nutzen von Web-API-Aktionen](../use-web-api-actions.md)<br />
 [Web API Beispiele](../web-api-samples.md)<br />

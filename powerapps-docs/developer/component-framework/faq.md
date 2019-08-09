@@ -9,18 +9,13 @@ ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 ---
 
-# <a name="faqs"></a>Häufig gestellte Fragen
+# <a name="faq"></a>Häufig gestellte Fragen
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## <a name="multiple-components-in-single-manifest-file"></a>Mehrere Komponenten in einer Manifestdatei
 
 Es ist nicht möglich, mehrere Komponenten in einer Manifestdatei zu definieren. 
-
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="calling-processesactions"></a>Aufrufprozesse/-Aktionen
 

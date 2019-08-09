@@ -22,7 +22,7 @@ search.app:
 ---
 # <a name="web-api-data-operations-samples-c"></a>Beispiele für Web-API-Datenvorgänge (C#)
 
-Dieses Thema enthält Informationen zu den Web-API-Beispielen in C#. Jedes Beispiel beschäftigt sich mit einem anderen Aspekt der "Common Data Service"-Web-API. Merkmale und Struktur sind ähnlich.  
+Dieses Thema enthält Informationen zu den Web-API-Beispielen in C#. Jedes Beispiel beschäftigt sich mit einem anderen Aspekt der Common Data Service-Web-API. Merkmale und Struktur sind ähnlich.  
   
 > [!NOTE]
 > Dieser Implementierungsansatz verwendet eine Objekterstellung auf niedriger Ebene und explizite HTTP-Nachrichtenaufrufe. Diese Ansatz ermöglicht das Steuern von Objekteigenschaften auf unterer Ebene, die das Verhalten der Web-API steuern. Dies unterstützt Sie dabei, die internen Arbeitsweise zu verstehen. Es ist jedoch nicht notwendigerweise ein Ansatz für die beste Entwicklerproduktivitätserfahrung.  
@@ -33,13 +33,13 @@ Dieses Thema enthält Informationen zu den Web-API-Beispielen in C#. Jedes Beisp
    
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Folgendes wird benötigt, um die "Common Data Service"-Web-API-C#-Beispiele auszuführen:  
+Das Folgende wird benötigt, um Common Data Service-Web-API C#-Beispiele zu erstellen und auszuführen:  
   
 - Eine Version von Microsoft Visual Studio 2015 oder höher.  Eine kostenlose [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)-Version steht [hier](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) zum Download bereit.  
 
-- Zugriff auf Common Data Service mit Rechten, um CRUD-Vorgänge auszuführen.  
+- Zugriff auf Common Data Service mit Rechten, CRUD-Vorgänge auszuführen.  
  
-- Um die Beispiele für Common Data Service ausführen, müssen Sie die Anwendung mit Azure Active Directory registrieren, um eine Client-ID und eine Umleitungs-URL zu erhalten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Registrieren Sie eine Common Data Service -App mit Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
+- Um die Beispiele gegen Common Data Service ausführen, müssen Sie die Anwendung mit Azure Active Directory registrieren, um eine Client-ID und eine Umleitungs-URL zu erhalten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer Common Data Service-App bei Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
 
 > [!NOTE]
 > Diese Beispiele erfordern die Version 2.x von Assembly [Microsoft.IdentityModel.Client.ActiveDirectory](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet) für OAuth-basierte Authentifizierung.
@@ -52,8 +52,8 @@ Die folgende Tabelle enthält Beispiele in C#.  Jedes Beispiel wird allgemein in
   
 |Probe|Beispielgruppe|Beschreibung|  
 |------------|------------------|-----------------|  
-|[Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md)|[Beispiel grundlegender Web-API-Operationen](web-api-basic-operations-sample.md)|Veranschaulicht, wie "Common Data Service"-Entitätsdatensätze erstellt, abgerufen, aktualisiert, gelöscht, zugeordnet und deren Zuordnungen aufgehoben werden.|  
-|[Web API-Abfragedatenbeispiel (C#)](samples/query-data-csharp.md)|[Web API-Abfragedatenbeispiel](web-api-query-data-sample.md)|Veranschaulicht, wie "OData v4"-Abfragesyntax und -Funktionen sowie "Common Data Service"-Abfragefunktionen verwendet werden. Enthält Beispiele zur Arbeit mit vordefinierten Abfragen und die Verwendung von FetchXML, um Abfragen ausführen.|  
+|[Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md)|[Beispiel grundlegender Web-API-Operationen](web-api-basic-operations-sample.md)|Veranschaulicht, wie Common Data Service Entitätsdatensätze erstellt, abgerufen, aktualisiert, gelöscht zugeordnet und aufgehoben werden.|  
+|[Web API-Abfragedatenbeispiel (C#)](samples/query-data-csharp.md)|[Web API-Abfragedatenbeispiel](web-api-query-data-sample.md)|Veranschaulicht, wie OData v4 Abfragensyntax und -Funktionen und Common Data Service Abfragefunktionen verwendet werden. Enthält Beispiele zur Arbeit mit vordefinierten Abfragen und die Verwendung von FetchXML, um Abfragen ausführen.|  
 |[Beispiel bedingter Web-API-Operationen (C#)](samples/conditional-operations-csharp.md)|[Beispiel bedingter Web-API-Operationen](web-api-conditional-operations-sample.md)|Veranschaulicht, wie Sie bedingte Operationen ausführen, die mit ETag-Kriterien angegeben werden.|  
 |[Internet-API-Funktionen- und Aktionen-Beispiel (C#)](samples/functions-actions-csharp.md)|[Web API-Funktionen- und Aktionen-Beispiel](web-api-functions-actions-sample.md)|Veranschaulicht, wie Sie gebundene/ungebundene Funktionen und Aktionen, einschließlich benutzerdefinierte Aktionen verwenden.|  
   
@@ -75,7 +75,7 @@ Diese C#-Implementierung hängt von den folgenden Faktoren ab:
 
 In C# und die meisten sonstigen verwalteten Sprachen das JSON-Datenformat nicht nativ unterstützen, ist die aktuelle beste Methode, eine Bibliothek für diese Funktionen zu verwenden. Weitere Informationen finden Sie unter [Eine Einführung zur JavaScript-Objektnotation (JSON) in JavaScript und in .NET](https://msdn.microsoft.com/library/bb299886.aspx). Json.NET ist eine beliebte Wahl für .NET-Projekte. Es stellt ein robustes, performantes Open-Source-Framework ([MIT-Lizenz](https://opensource.org/licenses/MIT)) für das Serialisieren, Konvertieren, Analysieren, Abfragen sowie zum Formatieren von JSON-Daten bereit. Weitere Informationen finden Sie in der [Json.NET-Dokumentation](http://www.newtonsoft.com/json/help/html/Introduction.htm).  
   
-In den C#-Beispielen wird dieser Bibliothek vor allem zur Serialisierung von Daten zwischen .NET-Objekten und HTTP-Nachrichtentexten genutzt. Obwohl die Bibliothek mehrere Möglichkeiten bereitstellt, um diese Aufgabe zu erfüllen, nutzen die Beispiele eine Vorgehensweise, bei der individuelle [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm)-Instanzen für "Common Data Service"-Entitätsinstanzen (Datensätze) erstellt werden.  Beispielsweise erstellt der folgende Code die Variable `contact1`, die eine "Common Data Service"-<xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" />-Instanz darstellt, und stellt dann Werte für ausgewählte Eigenschaften für den Typ bereit.  
+In den C#-Beispielen wird dieser Bibliothek vor allem zur Serialisierung von Daten zwischen .NET-Objekten und HTTP-Nachrichtentexten genutzt. Obwohl die Bibliothek mehrere Möglichkeiten bereitstellt, um diese Aufgabe zu erfüllen, nutzen die Beispiele eine Vorgehensweise, bei der individuelle [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm)-Instanzen für Common Data Service-Entitätsinstanzen (Datensätze) erstellt werden.  Beispielsweise erstellt der folgende Code die Variable `contact1`, die eine Instanz von Common Data Service <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> darstellt, und stellt dann Werte für ausgewählte Eigenschaften für den Typ bereit.  
   
 ```csharp  
   
@@ -139,7 +139,7 @@ throw new Exception(string.Format("Failed to retrieve contact for reason: {0}", 
   
 ### <a name="response-success-and-error-handling"></a>Erfolgreiche Antwort und Fehlerbehandlung
 
-Im Allgemeinen nutzen die Beispiele eine einfachen Methode zum Verarbeiten von HTTP-Antworten. Wenn die Anfrage erfolgreich ist, werden Informationen über den Vorgang der Regel per Konsole ausgegeben. Ob die Antwort eine JSON-Nutzlast oder nützliche Header enthält, werden diese Informationen nur bei Erfolg verarbeitet. Wenn letztlich eine "Common Data Service"-Entität erstellt wurde, wird die `entityUris`-Sammlung mit der URI dieser Ressource aktualisiert. Die `DeleteRequiredRecords`-Methode nutzt die Sammlung, um optional Daten, die durch das Beispiel erstellt wurden, auf Ihrem "Common Data Service"-Server zu löschen.  
+Im Allgemeinen nutzen die Beispiele eine einfachen Methode zum Verarbeiten von HTTP-Antworten. Wenn die Anfrage erfolgreich ist, werden Informationen über den Vorgang der Regel per Konsole ausgegeben. Ob die Antwort eine JSON-Nutzlast oder nützliche Header enthält, werden diese Informationen nur bei Erfolg verarbeitet. Wenn eine Common Data Service-Entität erstellt wurde, wird die `entityUris`-Sammlung mit der URI dieser Ressource aktualisiert. Die `DeleteRequiredRecords`-Methode nutzt die Sammlung, um optional vom Beispiel auf dem Common Data Service-Server erstellten Daten zu löschen.  
   
 Wenn die Anforderung fehlschlägt, gibt das Programm eine kontextbezogene Nachricht über den fehlgeschlagenen Vorgang aus und löst dann eine benutzerdefinierte Ausnahme des Typs `Exception` aus. Der Ausnahmehandler gibt mehr Informationen zur Ausnahme aus und dann wird die Kontrolle an einen `finally`-Block übergeben, der eine Bereinigungslogik enthält. Dies ist wieder ein Anruf von `DeleteRequiredRecords` Der folgende Code zeigt diesen Fehlerbehandlungsansatz einer POST-Anfrage zur Erstellung eines Datensatzes.  
   
@@ -160,7 +160,7 @@ throw new Exception(string.Format(" Operation Failed", response.Content));
   
 ```  
 
- [HttpStatusCode](https://msdn.microsoft.com/library/hh435235.aspx).NoContent entspricht einem HTTP-Statuscode 204 “No content” (Kein Inhalt). Hier zeigt der Statuscode, dass die POST-Anfrage erfolgreich war. Weitere Informationen finden Sie unter [Zusammenstellen von HTTP-Anforderungen und Fehlerbehandlung](https://msdn.microsoft.com/en-us/library/gg334391.aspx).  
+ [HttpStatusCode](https://msdn.microsoft.com/library/hh435235.aspx).NoContent entspricht einem HTTP-Statuscode 204 “No content” (Kein Inhalt). Hier zeigt der Statuscode, dass die POST-Anfrage erfolgreich war. Weitere Informationen finden Sie unter [Zusammenstellen von HTTP-Anforderungen und Fehlerbehandlung](https://msdn.microsoft.com/library/gg334391.aspx).  
   
 ### <a name="characteristics-and-methods"></a>Eigenschaften und Methoden
   
@@ -172,7 +172,7 @@ Die meisten Beispiele nutzen dieselben allgemeinen Architekturmuster mit den fol
    
 ### <a name="see-also"></a>Siehe auch  
 
-[Common Data Service-Web-API verwenden](overview.md)<br />
+[Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Web API Beispiele](web-api-samples.md)<br />
 [Web API Beispiele (Clientseitiges JavaScript)](web-api-samples-client-side-javascript.md)<br />
 [Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md)<br />

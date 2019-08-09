@@ -2,8 +2,8 @@
 title: Festlegen von Eigenschaften für modellgesteuerte Einheitliche Oberfläche-Apps in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie das Rastersteuerelement für Ihre App konfiguriert wird'
 keywords: ''
-ms.date: 06/06/2018
-ms.service: crm-online
+ms.date: 06/03/2019
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -74,7 +74,8 @@ Durch Hinzufügen des schreibgeschützten Rastersteuerelements zu Ihrer Steuerel
 
     ![Dynamisches Umbruchsverhalten bearbeiten](media/UnifiedInterface_ReadOnlyGrid_EditReflow.png "Dynamisches Umbruchsverhalten bearbeiten")
 
-    b. Wählen Sie den Rasterflusstyp aus dem Dropdwon **An statische Optionen binden** aus.
+    b. Wählen Sie den Rasterflusstyp aus dem Dropdwon **An statische Optionen binden** aus. 
+
     |Flusstyp|Beschreibung|
     |--------------|--------------------|
     |**Dynamischer Umbruch**|Ermöglicht dem Raster in einen Listenmodus gerendert zu werden, wenn nicht genügend Anzeigeplatz vorhanden ist.|

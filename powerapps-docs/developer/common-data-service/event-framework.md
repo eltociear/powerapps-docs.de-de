@@ -2,11 +2,11 @@
 title: ' Ereignisframework (Common Data Service) | Microsoft Docs'
 description: 'Beschreibt das Ereignisframework und Informationsentwickler sollten wissen, wenn sie damit arbeiten.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
@@ -16,23 +16,6 @@ search.app:
   - D365CE
 ---
 # <a name="event-framework"></a>Ereignisframework
-
-<!-- Re-write from
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-event-framework
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/event-execution-pipeline
-
-See notes at https://microsoft-my.sharepoint.com/:w:/p/jdaly/EfmTW7DQXNREuqj1s7tBtIIB4VZmvasZ1Nsbl4F5zlD1ZQ?e=FNlBmr 
-
-
-Make sure to call out the changes due to the legacy update messages. That information was moved.
-
-See 
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-plug-ins
-
-https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update#impact-of-this-change-on-workflows
-
-
--->
 
 Die Funktion zur Erweiterung des Standardverhaltens von Common Data Service hängt davon ab, dass erkannt wird, wann Ereignisse im Server auftreten. *Ereignisframework* bietet die Möglichkeit, benutzerdefinierte Codes zu erfassen, die in Antworten für bestimmte Ereignisse ausgeführt werden. 
 
@@ -50,7 +33,7 @@ Damit das Ereignisframework für die benutzerdefinierten Erweiterungen profitier
 
 ## <a name="available-events"></a>Folgende Ereignisse sind verfügbar
 
-Wie unter [Verwenden von Messages mit Organisationsservice](org-service/use-messages.md) beschrieben, basieren Datenenvorgänge in der Common Data Service-Plattform auf Messages, und jede Message hat einen Namen. Es gibt `Create``Retrieve``RetrieveMultiple``Update``Delete``Associate`, und `Disassociate` Nachrichten, die die Vorgänge der grundlegenden Daten enthalten, die mit Entitäten geschehen. Darüber hinaus spezialisierte Messages für komplexere Transformationsvorgänge. Benutzerdefinierte Aktionen fügen neue Messages hinzu.
+Wie beschrieben unter [Verwenden von Messages mit Organisationsservice](org-service/use-messages.md), Datenenvorgänge in der Common Data Service-Plattform basieren Sie auf Messages und jede Message hat einen Namen. Es gibt `Create``Retrieve``RetrieveMultiple``Update``Delete``Associate`, und `Disassociate` Nachrichten, die die Vorgänge der grundlegenden Daten enthalten, die mit Entitäten geschehen. Darüber hinaus spezialisierte Messages für komplexere Transformationsvorgänge. Benutzerdefinierte Aktionen fügen neue Messages hinzu.
 
 Wenn Sie Plug-In-Registrierungstool verwenden, um eine Erweiterung für eine bestimmte E-Mail-Nachricht zuzuordnen, registrieren Sie sie als *Schritt* Der Screenshot unten ist der Dialog **Registrieren neuer Schritt** verwendet, wenn er ein Plug-In  registriert.
 
@@ -62,7 +45,27 @@ Im Allgemeinen können Sie wie, eine Meldung für die meisten **Anforderungs*kla
 
 Daten über organisationsübergreifende Messages werden in [SDK-Message](reference/entities/sdkmessage.md) und im [SdkMessageFilter](reference/entities/sdkmessagefilter.md) gespeichert. Das Plug-In-Registrierungstool filtert diese Informationen, um nur gültige Nachrichten anzuzeigen.
 
-Um zu überprüfen, ob eine Kombination aus Nachricht und Entität die Ausführung von Plugins mit einer Datenbankabfrage unterstützt, verwenden Sie die erweiterte Suche oder ein Community-Tool (z. B. [FetchXML Builder](http://fxb.xrmtoolbox.com)), um die folgende fetchXML-Abfrage auszuführen. Wenn Sie die erweiterte Suche verwenden, müssen Sie die Abfrage interaktiv erstellen.
+Um zu überprüfen, ob eine Message- und Entitätskombination die Ausführung von Plug-Ins mithilfe einer Datenbankabfrage unterstützt, können Sie die folgende Web-API-Abfrage verwenden:
+
+```
+{{webapiurl}}sdkmessages?$select=name
+&$filter=isprivate eq false 
+and (name ne 'SetStateDynamicEntity' 
+and name ne 'RemoveRelated' 
+and name ne 'SetRelated' and 
+name ne 'Execute') 
+and sdkmessageid_sdkmessagefilter/any(s:s/iscustomprocessingstepallowed eq true 
+and s/isvisible eq true)
+&$expand=sdkmessageid_sdkmessagefilter($select=primaryobjecttypecode;
+$filter=iscustomprocessingstepallowed eq true and isvisible eq true)
+&$orderby=name
+```
+
+> [!TIP]
+> Sie können diese Daten mithilfe dieser Abfrage und der in diesem Blogbeitrag aufgeführten Anleitung in ein Excel-Arbeitsblatt exportieren: [Finden von Messages und Entitäten, die für Plug-Ins mithilfe von Common Data Service qualifiziert sind](https://powerapps.microsoft.com/en-us/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
+
+
+Sie können diese Informationen auch mithilfe des folgenden FetchXML abrufen. Der [FetchXML-Generator](http://fxb.xrmtoolbox.com) ist ein hilfreiches Tool, um diese Art von Abfrage auszuführen.
 
 ```xml
 <fetch>
@@ -81,7 +84,7 @@ Um zu überprüfen, ob eine Kombination aus Nachricht und Entität die Ausführu
         <value>SetStateDynamicEntity</value>
         <value>RemoveRelated</value>
         <value>SetRelated</value>
-       <value>Execute</value>
+          <value>Execute</value>
       </condition>
     </filter>
     <order attribute='name' />
@@ -90,7 +93,7 @@ Um zu überprüfen, ob eine Kombination aus Nachricht und Entität die Ausführu
 ```
 
 > [!CAUTION]
-> Die `Execute` Nachricht ist verfügbar, aber Sie sollten Erweiterungen in der Regel nicht registrieren, da diese von jedem Vorgang erstellt werden.
+> Die `Execute`-Message ist verfügbar, aber Sie sollten Erweiterungen nicht registrieren, da diese von jedem Vorgang erstellt werden.
 
 > [!NOTE]
 > In bestimmten Fällen können Plug-Ins und Workflows, die für das Update-Ereignis registriert sind, zweimal aufgerufen werden. Weitere Informationen: [Verhalten spezieller Vorgänge mithilfe Update](special-update-operation-behavior.md)
@@ -101,10 +104,10 @@ Wenn Sie einen Schritt mit dem Plug-In Registrierungstools registrieren, müssen
 
 |Name|Beschreibung|
 |--|--|
-|**PreValidation**<br />Phase: 10|[!INCLUDE [cc-prevalidation-description](../../includes/cc-prevalidation-description.md)]|
-|**PreOperation**<br />Phase: 20|[!INCLUDE [cc-preoperation-description](../../includes/cc-preoperation-description.md)]|
-|**MainOperation**<br />Phase: 30|Nur zur internen Verwendung.|
-|**PostOperation**<br />Phase: 40|[!INCLUDE [cc-postoperation-description](../../includes/cc-postoperation-description.md)]|
+|**PreValidation**|[!INCLUDE [cc-prevalidation-description](../../includes/cc-prevalidation-description.md)]|
+|**PreOperation**|[!INCLUDE [cc-preoperation-description](../../includes/cc-preoperation-description.md)]|
+|**MainOperation**|Nur zur internen Verwendung.|
+|**PostOperation**|[!INCLUDE [cc-postoperation-description](../../includes/cc-postoperation-description.md)]|
 
 Die Phasen, die Sie aktivieren können, hängt von der Erweiterung ab. Sie müssen nicht die gesamte Geschäftslogik innerhalb eines Einzelschritts anwenden. Sie können mehrere Schritte gelten für die Logik zu, dass eines Prozesses können, um den Vorgang fortzusetzen Phase kann in der **PreValidation** sein und die Logik, um Änderungen an den Nachrichteneigenschaften ausführen kann in der **PostOperation** auftreten.
 

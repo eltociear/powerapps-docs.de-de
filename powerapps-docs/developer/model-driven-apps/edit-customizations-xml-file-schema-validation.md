@@ -3,8 +3,7 @@ title: Bearbeiten der Anpassungs-XML-Datei mit Schemaüberprüfung (modellgestü
 description: 'Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die als Lösung exportiert wird. Bestimmte Teile der Datei customizations.xml können manuell bearbeitet werden. Informationen zum Schema helfen dabei, sicherzustellen, dass alle Änderungen, die Sie vornehmen, gültig sind.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -49,7 +48,7 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
   
 - VisualizationDataDescription.xsd  
   
-  Diese Dateien werden auch auf dem lokalen allgemeinen [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service-Server installiert: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
+  Diese Dateien sind ebenfalls auf dem lokalen [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)] Common Data Service-Server installiert, unter: `[Install Drive]\Program Files\Microsoft Dynamics CRM\Server\ApplicationFiles`  
   
 [!INCLUDE[cc_sdk_onpremises_note](../../includes/cc-sdk-onpremises-note.md)] CustomizationsSolution.xsd ist das Schema für die exportierte Lösung. Es enthält Verweise auf andere XSD-Dateien. Alle Dateien müssen sich im selben Ordner befinden.  
   
@@ -78,7 +77,7 @@ Die Datei customizations.xml ist in der komprimierten ZIP-Datei enthalten, die a
   
 ### <a name="see-also"></a>Siehe auch
 
-[Wann die Anpassungsdatei bearbeitet ist für Common Data Service](when-edit-customization-file.md)<br/> 
+[Informationen zum Bearbeitungszeitpunkt der Anpassungsdatei für Common Data Service](when-edit-customization-file.md)<br/> 
 [Menüband-Core-Schema](ribbon-core-schema.md)<br/>
 [Menübandtypenschema](ribbon-types-schema.md)<br/>
 [Menüband-WSS-Schema](ribbon-wss-schema.md)<br/>

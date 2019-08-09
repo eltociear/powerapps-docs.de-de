@@ -1,6 +1,6 @@
 ---
 title: Verwenden bearbeitbarer Raster in modellgestützten Apps | Microsoft Docs
-description: 'Bearbeitbares Raster ist ein neues benutzerdefiniertes Steuerelement in Dynamics 365 Customer Engagement, das umfangreiche Inline-Bearbeitungsfunktionen auf Internet- und mobilen Clienten (Dynamics 365 für Tablets und Dynamics 365 für Smartphones) einschließlich der Möglichkeit, Daten innerhalb der gleichen Rasters zu gruppieren, zu sortieren und zu filtern, um nicht zwischen Datensätzen oder Ansichten zu wechseln.'
+description: 'Bearbeitbarer Raster ist ein neues benutzerdefiniertes Steuerelemente in Dynamics 365 Customer Engagement das umfangreiche Inline-Bearbeitungsfunktionen auf Internet- und mobilen Clienten (Dynamics 365 for phones und Dynamics 365 for tablets) einschließlich der Möglichkeit, Daten innerhalb der gleichen Rasters zu gruppieren, zu sortieren und zu filtern, um nicht zwischen Datensätzen oder Ansichten zu wechseln.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -19,7 +19,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/use-editable-grids-dynamics-365 -->
 
-Bearbeitbare Raster ist ein benutzerdefiniertes Steuerelement, das umfangreiche Inline-Bearbeitungsfunktionen auf Internet- und mobilen Clienten (Dynamics 365 for phones und Dynamics 365 for tablets) einschließlich der Möglichkeit, Daten innerhalb der gleichen Rasters zu gruppieren, zu sortieren und zu filtern, um nicht zwischen Datensätzen oder Ansichten zu wechseln. Das bearbeitbare Unterrastersteuerelement wird im Hauptraster, in den Formularrastern und im Unterraster im Webclient und in Dashboards und im Formularraster auf dem mobilen Clients unterstützt. Obwohl das bearbeitbare Unterrastersteuerelement Bearbeitungsfunktion enthält, sind die schreibgeschützten Rastermetadaten und die Sicherheitsebenen-Einstellungen zentral. Bearbeitbare Raster unterstützen Unternehmensregeln und Formularskripts, damit Sie benutzerdefinierte Geschäftslogik für die Anforderungen Ihrer Organisation anwenden können.  
+Bearbeitbarer Raster ist ein benutzerdefiniertes Steuerelemente in das umfangreiche Inline-Bearbeitungsfunktionen auf Internet- und mobilen Clienten (Dynamics 365 for phones und Dynamics 365 for tablets) einschließlich der Möglichkeit, Daten innerhalb der gleichen Rasters zu gruppieren, zu sortieren und zu filtern, um nicht zwischen Datensätzen oder Ansichten zu wechseln. Das bearbeitbare Unterrastersteuerelement wird im Hauptraster, in den Formularrastern und im Unterraster im Webclient und in Dashboards und im Formularraster auf dem mobilen Clients unterstützt. Obwohl das bearbeitbare Unterrastersteuerelement Bearbeitungsfunktion enthält, sind die schreibgeschützten Rastermetadaten und die Sicherheitsebenen-Einstellungen zentral. Bearbeitbare Raster unterstützen Unternehmensregeln und Formularskripts, damit Sie benutzerdefinierte Geschäftslogik für die Anforderungen Ihrer Organisation anwenden können.  
 
 > [!NOTE] 
 > Wenn Sie Vorgängerformulare verwenden (Versionen vor Dynamics CRM 2016) und ein bearbeitbares Raster für ein Unterraster aktivieren, wird das bearbeitbare Unterraster nicht gerendert. Systemadministratoren können Vorgängerformulare in den Systemeinstellungen nach Bedarf deaktivieren. 
@@ -28,7 +28,7 @@ Bearbeitbare Raster ist ein benutzerdefiniertes Steuerelement, das umfangreiche 
 ## <a name="enable-editable-grids"></a>Bearbeitbare Raster aktivieren  
  Sie können bearbeitbare Entitätsebenenraster auf der Entitätsebene aktivieren, um den Hauptraster zu verwenden oder auf Formularebene schreibgeschützte Raster und Unterraster (zugeordnete Raster) über einen bearbeitbaren Raster auf dem Menüband zu ersetzen.  
   
- Sie können das Steuerelement für bearbeitbare Raster für eine Entität aktivieren, indem Sie das Anpassungstool in modellgestützten Apps verwenden (**Einstellungen** > **Anpassungen**  > **System anpassen** > **Entitäten** > *[Entity_Name]* > **Steuerelemente** Registerkarte).  
+ Sie können das Steuerelement für bearbeitbare Raster für eine Entität aktivieren, indem Sie das Anpassungstool in modellgestützten Apps verwenden (**Einstellungen** > **Anpassungen**  > **System anpassen** > **Entitäten** > *[Entity_Name]* > Registerkarte **Steuerelemente**).  
   
  Um den bearbeitbaren Raster für einen Raster zu aktivieren, öffnen Sie den Formular-Editor, doppelklicken auf den schreibgeschützten Raster, den Sie mit dem bearbeitbaren Raster ersetzen möchten und fügen Sie den bearbeitbaren Raster in der Registerkarte **Steuerelemente** hinzu oder aktivieren Sie ihn.  
   
@@ -66,7 +66,7 @@ Bearbeitbare Raster ist ein benutzerdefiniertes Steuerelement, das umfangreiche 
   
 - `CanEnableEditableGridWeb`: Anzeigenstatus (True oder False) oder ob bearbeitbare Raster für die Entität im Webclient unterstützt werden.  
   
-- `CanEnableEditableGridMobile`: Anzeigenstatus (True oder False) oder ob bearbeitbare Raster für die Entität im Webclient unterstützt werden. (Dynamics 365 for phones und Dynamics 365 for tablets).  
+- `CanEnableEditableGridMobile`: Anzeigenstatus (True oder False) oder ob bearbeitbare Raster für die Entität im Webclient unterstützt werden. Dynamics 365 for phones und Dynamics 365 for tablets).  
   
 ```csharp  
 using System;  
@@ -111,7 +111,7 @@ namespace Microsoft.Crm.Sdk.Samples
   
         // Specify which language code to use in the sample. If you are using a language  
         // other than US English, you will need to modify this value accordingly.  
-        // See http://msdn.microsoft.com/en-us/library/0h88fahh.aspx  
+        // See https://msdn.microsoft.com/library/0h88fahh.aspx  
         public const int _languageCode = 1033;  
   
         // Define the IDs/variables needed for this sample.  

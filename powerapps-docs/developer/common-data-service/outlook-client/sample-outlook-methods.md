@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Verwenden von Dynamics 365 for Outlook-Methoden (Common Data Service)| Microsoft Docs'
+title: 'Beispiel: Verwenden von Dynamics 365 for Outlook-Methoden (Common Data Service) | Microsoft Docs'
 description: 'Dieses Beispiel zeigt, wie die Methoden in der `Microsoft.Crm.Outlook.Sdk.dll`-Assembly verwendet werden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,13 +15,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="sample-use-dynamics-365-for-outlook-methods"></a>Beispiel: Verwenden von Dynamics 365 für Outlook-Methoden
+# <a name="sample-use-dynamics-365-for-outlook-methods"></a>Beispiel: Verwendung von Dynamics 365 for Outlook Methoden
 
-Dieser Beispielcode ist für Common Data Service bestimmt. Um das Beispiel herunterladen, verweisen Sie auf [Beispiel: Dynamics 365 for Outlook Methoden verwenden](https://msdn.microsoft.com/en-us/library/gg309513.aspx).
+Dieser Beispielcode ist für Common Data Service. Um das Beispiel herunterzuladen, sehen Sie sich [Beispiel: Verwendung von Dynamics 365 for Outlook-Methoden](https://msdn.microsoft.com/library/gg309513.aspx) an.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Eine Internetverbindung ist eine Voraussetzung, um das Beispielprojekt herunterzuladen und die NuGet-Pakete wiederherzustellen, die im Beispielprojekt verwendet werden.
+Um das Beispielprojekt herunterzuladen und die NuGet-Pakete wiederherzustellen, die im Beispielprojekt verwendet werden, ist eine Internetverbindung erforderlich.
   
 ## <a name="demonstrates"></a>Demonstriert  
  Dieses Beispiel zeigt, wie die Methoden in der `Microsoft.Crm.Outlook.Sdk.dll`-Assembly verwendet werden.  
@@ -85,7 +85,7 @@ if (outlookService.IsCrmClientLoaded)
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Erweitern von Dynamics 365 für Outlook](extend-dynamics-365-outlook.md)<br />
+[Erweitern von Dynamics 365 for Outlook](extend-dynamics-365-outlook.md)<br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService><br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService.GoOnline><br />
 <xref:Microsoft.Crm.Outlook.Sdk.CrmOutlookService.GoOffline>

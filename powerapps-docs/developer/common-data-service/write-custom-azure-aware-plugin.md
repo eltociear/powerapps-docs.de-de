@@ -1,10 +1,9 @@
 ---
-title: Schreiben Sie ein benutzerdefiniertes Azure-kompatibles Plug-In (Common Data Service) | Microsoft Docs
+title: Schreiben eines benutzerdefinierten Azure-Plug-Ins (Common Data Service) | Microsoft Docs
 description: 'Das folgende Beispiel zeigt, wie Plug-In-Code hinzugefügt werden kann, um den Azure-Dienstanbieter abzurufen und die Veröffentlichung des Ausführungskontexts auf dem Servicebus durch Aufrufen von IExecutionContext) zu initiieren.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-custom-azure-aware-plugin -->
 
-Das Schreiben eines Plug-Ins, das mit Azure funktioniert ähnelt dem Schreiben eines beliebigen anderen "Dynamics 365 Common Data Service"-Plug-Ins. Allerdings zusätzlich zum Aufrufen aller gewünschten Webdienstmethoden muss das Plug-In Code enthalten, um das Veröffentlichen des Ausführungskontexts im Azure Service Bus einzuleiten.  
+Das Schreiben eines Plug-Ins, das mit Azure funktioniert ähnelt dem Schreiben eines beliebigen anderen Dynamics 365 Common Data Service-Plug-Ins. Allerdings zusätzlich zum Aufrufen aller gewünschten Webdienstmethoden muss das Plug-In Code enthalten, um das Veröffentlichen des Ausführungskontexts im Azure Service Bus einzuleiten.  
   
 <a name="bkmk_design"></a>
 

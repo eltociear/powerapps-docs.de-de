@@ -1,10 +1,9 @@
 ---
 title: Datenanalyse mit Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
-description: 'Die Dashboard-Entitäten in Dynamics 365 Common Data Service ermöglichen es Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.'
+description: 'Die Dashboardentitäten in Dynamics 365 Common Data Service ermöglichen Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFRAMES oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/analyze-data-with-dashboards -->
 
-Die Dashboardentitäten in Common Data Service ermöglichen es Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFrames oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.  
+Die Dashboardentitäten in Common Data Service ermöglichen Ihnen, Daten aus verschiedenen Diagrammen, Rastern, IFRAMES oder Webressourcen gleichzeitig anzuzeigen. Dashboards erlauben Ihnen, verschiedene Kundeninformation zu vergleichen und zu analysieren, und sie geben Ihnen Datenmomentaufnahmen.  
   
 ## <a name="types-of-dashboards"></a>Dashboardtypen  
 Es stehen zwei Arten von Dashboards zur Verfügung: Dashboards im Besitz der Organisation und Dashboards im Besitz des Benutzers.  

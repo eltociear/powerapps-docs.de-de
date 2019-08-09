@@ -1,6 +1,6 @@
 ---
 title: 'Fügen Sie in Common Data Service Daten einer Entität hinzu, indem Sie Power Query verwenden | Microsoft Docs'
-description: 'Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle im Common Data Service hinzuzufügen.'
+description: 'Schrittweise Anweisungen für die Verwendung von Power Query, um Daten einer neuen oder vorhandenen Entität aus einer anderen Datenquelle in Common Data Service hinzuzufügen.'
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -16,7 +16,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Fügen Sie in Common Data Service Daten einer Entität hinzu, indem Sie Power Query verwenden
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Daten mithilfe von Power Query zu einer Entität in Common Data Service hinzufügen
 In dieser Vorgehensweise erstellen Sie eine Entität in [Common Data Service](data-platform-intro.md) und befüllen diese Entität mit Daten aus einem OData-Feed, indem Sie Power Query verwenden. Sie können dieselben Techniken verwenden, um Daten aus diesen Online- und lokalen Quellen zu integrieren, unter anderem:
 
 * SQL Server
@@ -80,10 +80,13 @@ Um diesem Thema zu folgen, müssen Sie zu einer [Umgebung](../canvas-apps/workin
 > [!WARNING]
 > Wenn Sie Power Query verwenden, um Daten einer vorhandenen Entität hinzuzufügen, werden alle Daten in dieser Entität überschrieben.
 
-Wenn Sie **In vorhandene Entität laden** auswählen, können Sie eine Entität angeben, der die Daten aus der Tabelle **Kunden** hinzugefügt werden. Sie können die Daten beispielsweise der Entität **Firma** hinzufügen, mit der Common Data Service versendet wird. In der **Quellspalte** können Sie genauer angeben, dass die Daten in der Spalte **ContactName** aus der Tabelle **Kunden** der Spalte**Name** in der **Firmen**-Entität hinzugefügt werden sollen.
+Wenn Sie **In vorhandene Entität laden** auswählen, können Sie eine Entität angeben, der die Daten aus der Tabelle **Kunden** hinzugefügt werden. Sie können die Daten beispielsweise der Entität **Firma** hinzufügen, mit der Common Data Service bereitgestellt wird. In der **Quellspalte** können Sie genauer angeben, dass die Daten in der Spalte **ContactName** aus der Tabelle **Kunden** der Spalte**Name** in der **Firmen**-Entität hinzugefügt werden sollen.
 
 ![Angeben des Namens der neuen Entität](./media/data-platform-cds-newentity-pq/existing-entity.png)
 
 Wir freuen über diese Funktion und sehen Ihrem Feedback entgegen. Bitte [senden Sie uns Ihre Vorschläge und Ihr Feedback](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1) zu dieser Funktion!
 
 Bei einer [Fehlermeldung zu Berechtigungen](data-platform-cds-newentity-troubleshooting-mashup.md) wenden Sie sich an Ihren Administrator.
+
+> [!WARNING]
+> Es gibt ein Limit von 500.000 Zeilen pro Ausführung und pro Projekt, die mithilfe dieses Features geladen werden können.

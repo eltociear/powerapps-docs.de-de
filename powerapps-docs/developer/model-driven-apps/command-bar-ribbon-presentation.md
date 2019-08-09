@@ -1,10 +1,9 @@
 ---
 title: Befehlsleisten- oder Menübandpräsentation (modellgesteuerte Apps) | Microsoft Docs
-description: 'Daten, die Befehle in Common Data Service definieren, können auf verschiedene Weisen dargestellt werden, abhängig vom Client und von den Unterschieden in der Behandlung einige Entitäten. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.'
+description: 'Daten, die Befehle in Common Data Service definieren, können abhängig vom Client und von den Unterschieden bezüglich dessen, wie einige Entitäten behandelt werden, auf verschiedene Weisen dargestellt werden. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/command-bar-ribbon-presentation -->
 
-Daten, die Befehle in Common Data Service definieren, können auf verschiedene Weisen dargestellt werden, abhängig vom Client und von den Unterschieden in der Behandlung einige Entitäten. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.
+Daten, die Befehle in Common Data Service definieren, können abhängig vom Client und von den Unterschieden bezüglich dessen, wie einige Entitäten behandelt werden, auf verschiedene Weisen dargestellt werden. Sie müssen diese Faktoren in Erwägung ziehen, wenn Sie Menüband-Befehle ändern oder neue definieren.
   
 <a name="BKMK_DifferentPresentations"></a>   
 ## <a name="different-presentations-of-commands"></a>Verschiedene Darstellungen von Befehlen  
@@ -61,10 +60,10 @@ Daten, die Befehle in Common Data Service definieren, können auf verschiedene W
  ![Unterrastermenüband für Artikelkommentare](media/customization-article-comments-subgrid-ribbon.PNG "Unterrastermenüband für Artikelkommentare in Dynamics 365")  
   
 <a name="BKMK_CRMForTablets"></a>   
-### <a name="dynamics-365-for-tablets"></a>Dynamics 365 for Tablets  
+### <a name="dynamics-365-for-tablets"></a>Dynamics 365 for tablets  
  Dynamics 365 for tablets stellt Befehle in einer für Touch-Umgebungen optimierten Weise dar. Befehle werden in der Befehlsleiste unten rechts im Bildschirm von rechts nach links angezeigt.  
   
- ![Kontoformularbefehle für Dynamics  365 für Tablets](media/customization-nobile-app-account-form-command.PNG "Kontoformularbefehle für Dynamics  365 für Tablets")  
+ ![Kontoformularbefehle für Dynamics 365 for tablets](media/customization-nobile-app-account-form-command.PNG "Kontoformularbefehle für Dynamics 365 for tablets")  
   
 > [!NOTE]
 >  Symbole, die für Befehle konfiguriert wurden, werden nicht angezeigt und Beschriftungen, die zu lang sind, werden abgeschnitten.  
@@ -79,7 +78,7 @@ Daten, die Befehle in Common Data Service definieren, können auf verschiedene W
 ## <a name="command-data"></a>Befehlsdaten  
  Trotz dieser sehr verschiedenen Darstellungen sind die Daten, die die Befehle für Entitäten definieren, einheitlich, unabhängig davon, wie die Befehle dargestellt werden. Sie enthalten Definitionen für Registerkarten und Gruppen mit Skalierung, doch die sichtbaren Bereiche dieser Container für Steuerelemente werden nur in der klassischen Benutzeroberfläche angezeigt.  
   
- Sowohl in der aktualisierten Benutzerumgebung als auch in Dynamics 365 für Tablets fungieren Registerkarten und Gruppen weiterhin als Container für Steuerelemente, aber es gibt keine visuelle Darstellung dieser Container und eine Skalierung wird nicht angewendet.  
+ Sowohl in der aktualisierten Benutzerumgebung als auch in Dynamics 365 for tablets fungieren Registerkarten und Gruppen weiterhin als Container für Steuerelemente, aber es gibt keine visuelle Darstellung dieser Container und eine Skalierung wird nicht angewendet.  
   
 <a name="BKMK_FilteringCommands"></a>   
 ## <a name="filtering-commands-based-on-presentation-and-client"></a>Filterungsbefehle basierend auf Darstellung und Client  
@@ -95,11 +94,11 @@ Daten, die Befehle in Common Data Service definieren, können auf verschiedene W
   
 - `Legacy` Klassische Benutzerumgebung  
   
-- `Modern`: Dynamics 365 für Tablets  
+- `Modern`: Dynamics 365 for tablets  
   
   Verwenden Sie dieses Element zum Definieren von Befehlen, um zu steuern, ob sie in den verschiedenen Darstellungen angezeigt werden.  
   
-  Außerdem ist bereits ein `<CrmClientTypeRule>`-Element vorhanden, aber das `Type`-Elementattribut kann nur zwischen `Web`- und `Outlook`-Clients unterscheiden. Diese Regel wertet den Dynamics 365 für Tablets-Client als auch den Webclient aus.  
+  Außerdem ist bereits ein `<CrmClientTypeRule>`-Element vorhanden, aber das `Type`-Elementattribut kann nur zwischen `Web`- und `Outlook`-Clients unterscheiden. Diese Regel wertet den Dynamics 365 for tablets-Client als Webclient aus.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   

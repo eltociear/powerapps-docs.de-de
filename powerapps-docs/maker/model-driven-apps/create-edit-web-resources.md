@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie Sie eine Webressouce erstellen oder bearbeiten'
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -38,7 +38,7 @@ Webressourcen sind virtuelle Dateien, die im System gespeichert werden. Jede Web
   
 Wenn Sie beispielsweise eine HTML-Seite als Webressource erstellen, die den Namen "new_myWebResource.htm" hat, könnten Sie diese Seite in einem Browser über eine URL wie die folgende öffnen:  
  
-`<base URL>/WebResources/new_myWebResource.htm   `
+`<base URL>/WebResources/new_myWebResource.htm`
   
 wo *\<Basis-URL>* der Teil der URL ist, den Sie verwenden, um Apps anzuzeigen, die mit `dynamics.com` enden. Da die Webressource Daten im System sind, können nur lizenzierte Benutzer Ihrer Organisation auf diese auf diese Art zugreifen. Normalerweise sind Webressourcen in Formularen enthalten und werden nicht direkt referernziert. Die häufigste Verwendung besteht in der Bereitstellung von JavaScript-Bibliotheken für Formularskripts.  
     
@@ -92,7 +92,7 @@ Der Texteditor in der Anwendung für Webressourcen sollte nur für die einfache 
 > Wenn der Inhalt einer HTML-Webressource nicht mithilfe des Texteditors erstellt wurde, verwenden Sie den Texteditor nicht zur Bearbeitung.  
 > Der Texteditor verwendet ein Steuerelement, das die HTML-Quelle so verändert, dass sie bearbeitet werden kann. Diese Änderungen können dazu führen, dass sich die Seite im Browser anders verhält, und komplexerer Code nicht mehr funktioniert. Das Öffnen und Speichern einer HTML-Webressource mit dem Texteditor, ohne Änderungen vorzunehmen, kann einige HTML-Webressourcen beschädigen.  Weitere Informationen: [Entwicklerdokumentation: Verwenden des Text-Editors für HTML Webressourcen](/dynamics365/customer-engagement/developer/webpage-html-web-resources#use-the-text-editor-for-html-web-resources).
   
-Es wird empfohlen, einen externen Editor für die Bearbeitung von Textdateien zu verwenden und diese lokal zu speichern, bevor sie über die Schaltfläche **Datei hochladen** hochgeladen werden. So können Sie eine Kopie der Webressource behalten, wenn Sie zu einer früheren Version zurückkehren müssen. Sie können einen einfachen Editor wie Editor verwenden. Es wird jedoch ein Texteditor mit erweiterter Funktionalität empfohlen. [Visual Studio Community](https://www.visualstudio.com/vs/community/) und [Visual Studio Code](https://code.visualstudio.com/) sind kostenlos und stellen leistungsfähige Funktionen für die Bearbeitung von Dateien bereit, die von textbasierten Webressourcen verwendet werden.  
+Es wird empfohlen, einen externen Editor für die Bearbeitung von Textdateien zu verwenden und diese lokal zu speichern, bevor sie über die Schaltfläche **Datei hochladen** hochgeladen werden. So können Sie eine Kopie der Webressource behalten, wenn Sie zu einer früheren Version zurückkehren müssen. Sie können einen einfachen Editor wie Editor verwenden. Es wird jedoch ein Texteditor mit erweiterter Funktionalität empfohlen. [Visual Studio Community](https://www.visualstudio.com/vs/community/) und [Visual Studio Code](https://code.visualstudio.com/) sind kostenlos und stellen leistungsfähige Funktionen für die Bearbeitung von textbasierten Dateien bereit, die von Webressourcen verwendet werden.  
 
 <a name="BKMK_CreateAndEditFormWebResources"></a>
  

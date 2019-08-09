@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit virtuellen Entitäten (Common Data Service) | MicrosoftDocs
-description: 'Virtuelle Entitäten ermöglichen Die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentieret werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung.'
+title: Erste Schritte mit virtuellen Entitäten (Common Data Service) | Microsoft Docs
+description: 'Virtuelle Entitäten ermöglichen die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentiert werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung.'
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: get-started-article
@@ -19,7 +19,7 @@ search.app:
 
 # <a name="get-started-with-virtual-entities"></a> Erste Schritte mit virtuellen Entitäten
 
-Virtuelle Entitäten ermöglichen Die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentieret werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung. Die ursprüngliche Implementierung dieser Funktion bietet nur schreibgeschützte Unterstützung dieser Entitäten und besitzt eine Reihe weiterer Einschränkungen, die im Abschnitt [Beschränkungen der virtuellen Entitäten](#limitations-of-virtual-entities) weiter unten beschrieben sind. Außer diesen Beschränkungen verhalten sich virtuelle Entitäten identisch wie andere benutzerdefinierte Entitäten. 
+Virtuelle Entitäten ermöglichen die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentiert werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung. Die ursprüngliche Implementierung dieser Funktion bietet nur schreibgeschützte Unterstützung dieser Entitäten und besitzt eine Reihe weiterer Einschränkungen, die im Abschnitt [Beschränkungen der virtuellen Entitäten](#limitations-of-virtual-entities) weiter unten beschrieben sind. Außer diesen Beschränkungen verhalten sich virtuelle Entitäten identisch wie andere benutzerdefinierte Entitäten. 
 
 Virtuelle Entitäten ersetzen frühere clientseitige und serverseitige Vorgehensweisen zur Integrierung externer Daten, die benutzerdefinierten Code erforderten und litten an zahlreichen Beschränkungen, einschließlich unvollkommener Integration, Datenverdopplung, umfangreiche Beanspruchung von Entwicklungsressourcen.  Außerdem vereinfacht für Administratoren und Systemanpasser die Verwendung virtueller Entitäten Verwaltung und Konfiguration.
 
@@ -33,9 +33,9 @@ Eine virtuelle Entität ist eine Definition einer Entität in den Common Data Se
 <!-- TODO:
 A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
 
-Der folgende Datenanbieter versendet mit Common Data Service.
+Die folgenden Datenanbieter werden mit Common Data Service geliefert:
 - Ein [OData v4](http://www.odata.org/documentation/) Anbieter ist mit dem Service enthalten und wird standardmäßig installiert.
-- Ein [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (füher *Microsoft Document DB*) Anbieter ist verfügbar von [AppSource](https://appsource.microsoft.com).
+- Ein [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (füher *Microsoft Document DB*)-Anbieter ist verfügbar von [AppSource](https://appsource.microsoft.com).
 
 Zusätzliche Anbieter werden von Microsoft, seinen Partnern oder anderen Drittanbietern bereitgestellt. Wenn ein Datenanbieter nicht für die externe Datenquelle gefunden werden, können Sie einen *benutzerdefinierten virtuellen Entitätsdatenanbieter* entwickeln, weitere Information, siehe [Virtuelle Entitätsdatenanbieter](custom-ve-data-providers.md).
 
@@ -53,17 +53,16 @@ In dieser Version gibt es einige Beschränkungen der virtuellen Entitäten, die 
 - Es muss möglich sein, die externen Daten als Common Data Service-Entität zu modellieren. Das bedeutet Folgendes:
     - Alle Entitäten in der externen Datenquelle müssen einen GUID-Primärschlüssel zugeordneten haben.  
     - Alle Entitätsattribute müssen als Common Data Service-Attribute dargestellt werden. Sie können einfache Typen verwenden, die Text, Zahlen, Optionsätze, Daten, Bilder und Suchen repräsentieren. 
-    - Sie müssen in der Lage sein, alle Entitätsbeziehungen in Common Data Service zu modellieren.
+    - Sie müssen in der Lage sein sollen, alle Entitätsbeziehungen in Common Data Service zu modellieren.
     - Ein Attribut für eine virtuelle Entität kann nicht Rollup oder berechnet werden.  Alle gewünschten Berechnungen müssen auf der externen Seite ausgeführt werden, möglichst im oder geleitet vom Datenanbieter.
+    - Obwohl Sie virtuelle Entitätsspalten als Suche in einem Raster oder anderen Benutzeroberflächenansichten hinzufügen können, können Sie nicht anhand dieser virtuelle Entitätssuchenspalte filtern oder sortieren.
 - Überwachung und Änderungsnachverfolgung wird nicht unterstützt.  Diese Felder können im externen Datenspeicher implementiert werden.
 - Entitäten können nicht für virtuelle Warteschlangen aktiviert werden.
 - Offlinezwischenspeichern von Werten wird für virtuelle Entitäten nicht unterstützt.
 - Eine virtuelle Entität kann nicht eine Aktivität repräsentieren und unterstützt nicht Geschäftsprozessflüsse.
 - Sobald erstellt, kann eine virtuelle Entität nicht geändert werden, um eine (nicht-virtuelle) Standard-Entität zu werden.  Das Umgekehrt auch der Fall: eine Standardentität kann nicht in eine virtuelle Entität konvertiert werden.
 
-<!-- TODO: Make bulleted list into table?  Make more complete by reviewing API modification tables. -->
-
-Weitere Informationen dazu, wie diese in Beschränkungen sich in der Common Data Service-API auswirken, finden Sie unter [API-Aspekte von virtuellen Entitäten](api-considerations-ve.md). 
+Weitere Informationen dazu, wie diese in Beschränkungen sich in der Common Data Service API auswirken, siehe [API-Aspekte von virtuellen Entitäten](api-considerations-ve.md). 
 
 ### <a name="see-also"></a>Siehe auch
 

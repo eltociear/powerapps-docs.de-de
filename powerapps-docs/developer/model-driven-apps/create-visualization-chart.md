@@ -3,8 +3,7 @@ title: Erstellen einer Visualisierung (Diagramm) (modellgesteuerte Apps) | Micro
 description: 'In diesem Thema wird gezeigt, wie Sie eine Diagrammvisualisierung und eine Webressourcenvisualisierung erstellen.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -21,8 +20,6 @@ search.app:
 ---
 
 # <a name="create-a-visualization-chart"></a>Erstellen einer Visualisierung (Diagramm)
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-visualization-chart -->
 
 Wenn Sie eine Visualisierung programmgesteuert erstellen möchten, müssen Sie einen Datensatz für die [SavedQueryVisualization Entity](../common-data-service/reference/entities/savedqueryvisualization.md)- oder [UserQueryVisualization Entity](../common-data-service/reference/entities/userqueryvisualization.md)-Entität erstellen, um ein Diagramm im Besitz der Organisation bzw. im Besitz des Benutzers zu erstellen. In diesem Thema wird gezeigt, wie Sie eine Diagrammvisualisierung und eine Webressourcenvisualisierung erstellen.  
   
@@ -51,7 +48,7 @@ Wenn Sie eine Visualisierung programmgesteuert erstellen möchten, müssen Sie e
 
  Mehrfachdiagramme ordnen mehrere Werte der (vertikalen) Reihenachse einem einzelnen Wert der (horizontalen) Kategorieachse zu. Der einzige Unterschied zu einem einfachen Seriendiagramm ist, dass in diesen Diagrammen mehrere `<measurecollection>`- und entsprechende `<series>`-Elemente vorhanden sind, die in den XML-Zeichenfolgen angegeben werden. Jedes `<measurecollection>`-Element enthält ein untergeordnetes Element mit der Bezeichnung `<measure>`, das einen Wert auf der (vertikalen) Reihenachse für denselben Wert der (horizontalen) Kategorieachse definiert. Weitere Informationen: [Diagramme verstehen: Zugrunde liegende Daten und Diagrammdarstellung](understand-charts-underlying-data-chart-representation.md).  
   
- Ein Beispiel-Mehrfachdiagramm und die entsprechenden Datenbeschreibungs- und Präsentationsbeschreibungs-XML-Zeichenfolgen finden Sie unter [TODO: Multi-Series Chart].<!--(sample-charts.md#MultiSeriesChart)-->.
+ Ein Beispiel für Mehrfachdiagramm und die entsprechenden Datenbeschreibungs- und Präsentationsbeschreibungs-XML-Zeichenfolgen finden Sie unter [Mehrfachseriendiagramm](sample-charts.md#multi-series-chart).
   
 <a name="CreateWRVisualization"></a>   
 

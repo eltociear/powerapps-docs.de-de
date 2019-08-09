@@ -14,6 +14,10 @@ ms.assetid: 9053eee8-2851-427d-88ae-4fc137ca0444
 
 # <a name="pickfileoptions"></a>PickFileOptions
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Eigenschaften
+
 ## <a name="accept"></a>Akzeptieren
 
 Auszuwählender Bilddateityp. Gültige Werte lauten "Audio ", "Video " oder "Bild".

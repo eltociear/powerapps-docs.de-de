@@ -1,10 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory (Common Data Service) | Microsoft Docs'
-description: 'In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine Anwendung bei Azure Active Directory registrieren, sodass diese eine Verbindung mit der "Common Data Service"-Umgebung herstellen kann, sich per OAuth Authentifizieren und auf Webdienste zugreifen kann.'
+description: 'In dieser exemplarischen Vorgehensweise wird beschrieben, wie eine Desktop-Client- oder Smartphone-Anwendung in Azure Active Directory registriert wird, damit sie eine Verbindung mit der Common Data Service-Umgebung herstellen, sich per OAuth authentifizieren und auf Webdienste zugreifen kann.'
 keywords: ''
 ms.date: 04/01/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -20,16 +19,16 @@ search.app:
   - D365CE
 ---
 
-# <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory
+# <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Exemplarische Vorgehensweise: Registrieren einer App mit Azure Active Directory
 
-In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine Anwendung bei Azure Active Directory registrieren, wodurch ein Benutzer mit einem PowerApps-Benutzerkonto eine Verbindung mit seiner "Common Data Service"-Umgebung von externen Client-Anwendungen aus mithilfe einer OAuth-Authentifizierung herstellen kann.
+In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine Anwendung mit Azure Active Directory registrieren, wodurch ein Benutzer mit einem PowerApps-Benutzerkonto eine Verbindung mit seiner Common Data Service-Umgebung von externen Client-Anwendungen aus mithilfe einer OAuth-Authentifizierung herstellen kann.
 
 > [!IMPORTANT]
-> PowerApps bietet Ihnen auch die Möglichkeit der Server-to-Server (S2S)-Authentifizierung, um eine Verbindung zur "Common Data Service"-Umgebung von externen Anwendungen und Diensten über das spezielle Anwendungsbenutzerkonto herzustellen. Die S2S-Authentifizierung ist die gängige Methode, mit der auf Microsoft AppSource registrierte Anwendungen auf die Daten ihrer Abonnenten zugreifen. Weitere Informationen finden Sie unter: [Webanwendungen mit der Server-zu-Server-(S2S)-Authentifizierung erstellen.](build-web-applications-server-server-s2s-authentication.md).
+> PowerApps bietet Ihnen auch die Möglichkeit der Server-to-Server (S2S)-Authentifizierung, um eine Verbindung zur Common Data Service-Umgebung von externen Anwendungen und Diensten über das spezielle Anwendungsbenutzerkonto herzustellen. Die S2S-Authentifizierung ist der normale Weg, über den bei Microsoft AppSource registrierte Apps auf die Daten der Abonnenten zugreifen. Weitere Informationen finden Sie unter: [Webanwendungen mit der Server-zu-Server-(S2S)-Authentifizierung erstellen.](build-web-applications-server-server-s2s-authentication.md).
 
-App-Registrierung in Azure Active Directory erfolgt normalerweise per ISVs, die externe Client-Anwendungen entwickeln möchten, um Daten in Common Data Service zu lesen und zu schreiben. Das Registrieren einer App in Azure Active Directory stellt Ihnen Werte für **Anwendungs-ID** und **Umleitungs-URI** bereit, die ISVs im Authentifizierungscode ihrer Client-Anwendung verwenden können. Wenn Endbenutzer die Anwendung des ISV zum *ersten Mal* verwenden, um eine Verbindung mit Ihrer Common Data Service-Instanz herzustellen, indem sie ihre Common Data Service-Anmeldeinformationen angeben, wird dem Endbenutzer ein Zustimmungsformular angezeigt. Nach Zustimmung zur Verwendung ihres Common Data Service-Kontos mit der Anwendung des ISV, können Endbenutzer eine Verbindung zur Common Data Service-Instanz von externen Anwendungen aus herstellen. Das Zustimmungsformular wird nach dem ersten Benutzer, der bereits der Verwendung der App des ISV zugestimmt hat, nicht erneut anderen Benutzern angezeigt. Die Apps, die in Azure Active Directory registriert sind, sind für mehrere Mandanten ausgelegt. Das bedeutet, dass andere Common Data Service-Benutzer von anderen Mandanten eine Verbindung mit ihrer Umgebung mithilfe der App des ISV herstellen können. 
+App-Registrierung in Azure Active Directory erfolgt normalerweise per ISVs, die externe Client-Anwendungen entwickeln möchten, um Daten in Common Data Service zu lesen und zu schreiben. Das Registrieren einer App in Azure Active Directory stellt Ihnen Werte für **Anwendungs-ID** und **Umleitungs-URI** bereit, die ISVs im Authentifizierungscode ihrer Client-Anwendung verwenden können. Wenn Endbenutzer die Anwendung des ISV *zum ersten Mal* verwenden, um eine Verbindung zu Ihrer Common Data Service-Umgebung herzustellen, indem sie ihre Common Data Service-Anmeldeinformationen angeben, wird dem Endbenutzer ein Zustimmungsformular angezeigt. Nach Zustimmung zur Verwendung ihres Common Data Service-Kontos mit der Anwendung des ISV, können Endbenutzer von einer externen Anwendung aus eine Verbindung zur Common Data Service-Umgebung herstellen. Das Zustimmungsformular wird nach dem ersten Benutzer, der bereits der Verwendung der App des ISV zugestimmt hat, nicht erneut anderen Benutzern angezeigt. Die Apps, die in Azure Active Directory registriert sind, sind für mehrere Mandanten ausgelegt. Das bedeutet, dass andere Common Data Service-Benutzer von anderen Mandanten eine Verbindung mit ihrer Umgebung mithilfe der App des ISV herstellen können. 
 
-App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzelnen Benutzer durchgeführt werden, der eine Client-Anwendung erstellt, um eine Verbindung zu Common Data Service herzustellen und dort Daten zu lesen/zu scheiben. Verwenden Sie die Werte **Anwendungs-ID** und **Umleitungs-URI** aus Ihrer registrierten App im Authentifizierungscode Ihrer Client-Anwendung, um eine Verbindung mit der Common Data Service-Umgebung von Ihrer Client-Anwendung aus herzustellen und die erforderlichen Vorgänge auszuführen. Beachten Sie, dass wenn die App im selben Mandanten wie Ihre Common Data Service-Umgebung registriert wird, Ihnen kein Zustimmungsformular angezeigt wird, wenn Sie eine Verbindung von Ihrer Client-Anwendung mit Ihrer Common Data Service-Umgebung herstellen.
+Die App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzelnen Benutzer durchgeführt werden, der eine Client-Anwendung erstellt, um eine Verbindung zu Common Data Service herzustellen und dort Daten zu lesen/zu scheiben. Verwenden Sie die Werte **Anwendungs-ID** und **Umleitungs-URI** aus Ihrer registrierten App im Authentifizierungscode Ihrer Client-Anwendung, um eine Verbindung mit der Common Data Service-Umgebung von Ihrer Client-Anwendung aus herzustellen und die erforderlichen Vorgänge auszuführen. Beachten Sie, dass wenn die App im selben Mandanten wie Ihre Common Data Service-Umgebung registriert wird, Ihnen kein Zustimmungsformular angezeigt wird, wenn Sie eine Verbindung von Ihrer Client-Anwendung mit Ihrer Common Data Service-Umgebung herstellen.
 
 ## <a name="prerequisites"></a>Voraussetzungen  
 -   Der Benutzer, der die Anwendung registriert, muss ein Benutzerkonto mit einer Systemadministrator-Sicherheitsrolle und die globale Administratorrolle für das Office 365-Abonnement haben.  
@@ -41,7 +40,7 @@ App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzelnen 
 1.  [Melden Sie sich an](http://manage.windowsazure.com) im Azure-Verwaltungsportal mithilfe eines Kontos mit Administratorberechtigungen. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten.<br><br> Sie können auch auf das Azure-Verwaltungsportal über das Office 365 [Admin Center](https://admin.microsoft.com/adminportal) zugreifen, indem Sie das Element **Admin Center** im linken Navigationsbereich erweitern und **Azure AD** auswählen.  
   
     > [!NOTE]
-    > Wenn Sie keinen Azure-Mandaten (Firma) haben oder wenn Sie einen haben, aber Ihr Office 365-Abonnement mit Common Data Service in Ihrem Azure-Abonnement nicht verfügbar ist, befolgen Sie die Anweisungen im Abschnitt [Azure Active Directory-Zugang für Ihre Entwicklerseite einrichten](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zu verbinden.<br><br> Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](http://azure.microsoft.com/pricing/details/active-directory/)  
+    > Falls Sie keinen Azure-Mandanten (Konto) haben oder darüber zwar verfügen, aber Ihr Office 365-Abonnement mit Common Data Service nicht in Ihrem Azure-Abonnement verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für die Entwickler-Website](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zuzuordnen.<br><br> Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 1. Folgen Sie im Azure-Verwaltungsportal den Schritten, wie sie im Abschnitt [Hinzufügen einer Anwendung](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application) im Azure Active Directory-Entwicklerhandbuch beschrieben werden, um eine App zu erstellen. 
   
@@ -60,11 +59,11 @@ App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzelnen 
     ![App-Berechtigung hinzufügen](media/Azure-add-app-permission.png "App-Berechtigung hinzufügen")
   
 1. Auf der Seite **API-Zugriff hinzufügen**:
-    - Wählen Sie **Eine API auswählen** > **Common Data Service** aus und klicken Sie auf **Auswählen**.
+    - Wählen Sie **Eine API auswählen** > **Common Data Service** aus und klicken Sie dann auf **Auswählen**.
 
       ![App-Berechtigung hinzufügen](media/Azure-add-api-access.png "App-Berechtigung hinzufügen")  
    
-    - Wählen Sie **Berechtigungen auswählen** > **Common Data Service** aus und klicken Sie auf **Auswählen**.
+    - Wählen Sie **Berechtigungen wählen** > **Common Data Service** aus und klicken Sie dann auf **Auswählen**.
   
       ![Delegierte Berechtigung hinzufügen](media/azure-add-permission.PNG "Delegierte Berechtigung hinzufügen")  
 
@@ -80,4 +79,4 @@ Wenn Ihre Anwendung Server-zu-Server-Verbindungen unterstützt, finden Sie Infor
   
 ### <a name="see-also"></a>Siehe auch  
  [Anwendungsregistrierung in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)    
- [Benutzerauthentifizierung mit Common Data Service-Webdiensten](authentication.md)
+ [Authentifizieren von Benutzern durch Common Data Service-Webdienste](authentication.md)

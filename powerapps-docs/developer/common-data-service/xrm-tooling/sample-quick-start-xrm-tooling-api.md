@@ -1,5 +1,5 @@
 ---
-title: 'Beispiel: Schnellstart für XRM Tooling API (Common Data Service) | Microsoft-Docs'
+title: 'Beispiel: Schnellstart für XRM Tooling API (Common Data Service) | Microsoft Docs'
 description: ''
 ms.custom: ''
 ms.date: 03/27/2019
@@ -23,9 +23,9 @@ search.app:
 ---
 # <a name="sample-quick-start-for-xrm-tooling-api"></a>Beispiel: Schnellstart für XRM Tooling API
 
-Das QuickStart-Beispiel ist ein verwaltetes .NET Framework-Codebeispiel, das zeigt, wie eine Verbindung zu einer Common Data Service-Instanz hergestellt wird, indem die XRM Tooling APIs verwendet werden, und wie grundlegende Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine Entität ausgeführt werden. Weitere Informationen zur XRM-Tooling finden Sie unter [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md).
+Das QuickStart-Beispiel ist ein verwaltetes .NET-Framework-Codebeispiel, das zeigt, wie eine Verbindung zu einer Common Data Service-Instanz hergestellt wird, indem die XRM Tooling APIs verwendet werden, und grundlegende Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine Entität ausgeführt werden. Weitere Informationen zur XRM-Tooling finden Sie unter [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md).
 
-Laden Sie das Beispiel: [Arbeiten mit der XRM Tooling-API](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/Quick%20start%20for%20XRM%20Tooling) herunter.
+Laden Sie das Beispiel: [Arbeiten mit der XRM Tooling-API](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/Quick%20start%20for%20XRM%20Tooling%20API) herunter.
 
 ## <a name="how-to-run-the-sample"></a>Wie das Beispiel ausgeführt wird
 
@@ -36,13 +36,13 @@ Laden Sie das Beispiel: [Arbeiten mit der XRM Tooling-API](https://github.com/Mi
 
 ## <a name="demonstrates"></a>Demonstriert
 
-- Der Beispielcode wird mithilfe der **WPF-Anwendung für CRM**-SDK-Vorlage erstellt, die ein allgemeines Anmeldungssteuerelement mit integrierter Unterstützung für Zwischenspeicherung und Wiederverwendung von Authentifizierungs- und Anmeldeinformationen bietet. Weitere Informationen zum allgemeinen Anmeldungssteuerelement und wie die SDK-Vorlage in Visual Studio verwendet wird, finden Sie in [Verwendung des allgemeinen XRM Tooling-Anmeldungssteuerelements](use-xrm-tooling-common-login-control-client-applications.md).  
-- Zum Einrichten einer Verbindung mit dem Common Data Service wird kein Hilfscode verwendet.  
+- Der Beispielcode wird mithilfe der **WPF-Anwendung für CRM**-SDK-Vorlage erstellt, die ein allgemeines Anmeldungssteuerelement mit integrierter Unterstützung für Zwischenspeicherung und Wiederverwendung von Authentifizierungs- und Anmeldeinformationen bietet. Weitere Informationen zum allgemeinen Anmeldungssteuerelement und wie die SDK-Vorlage in Visual Studioverwendet wird, finden Sie in [Verwendung des allgemeinen XRM Tooling-Anmeldungssteuerelements](use-xrm-tooling-common-login-control-client-applications.md).  
+- Zum Einrichten einer Verbindung mit Common Data Service wird kein Hilfscode verwendet.  
 - Nach der Verbindung mit Common Data Service führt das Beispiel grundlegende Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge an einer Firmenentität aus.  
-- Speichert Benutzeranmeldeinformationen in einer Konfigurationsdatei (`Default_QuickStartXRMToolingWPFClient.exe.config`) im Ordner `c:\Users\`*`<username>`*`\AppData\Roaming\Microsoft\QuickStartXRMToolingWPFClient`, wenn das Beispiel zum ersten Mal ausgeführt wird, und fordert danach den Benutzer auf, entweder die gespeicherten Anmeldeinformationen zu verwenden, oder in der Laufzeit neue anzugeben, um sich bei Common Data Service anzumelden.  
+- Speichert Benutzeranmeldeinformationen in einer Konfigurationsdatei (`Default_QuickStartXRMToolingWPFClient.exe.config`) im Ordner `c:\Users\`*`<username>`*`\AppData\Roaming\Microsoft\QuickStartXRMToolingWPFClient`, wenn das Beispiel zum ersten Mal ausgeführt wird, und fordert danach den Benutzer auf, entweder die gespeicherten Anmeldeinformationen zu verwenden oder in der Laufzeit neue anzugeben, um sich bei Common Data Service anzumelden.  
 - Generiert, wenn Probleme auftreten, die folgenden Protokolldateien, um die Problembehandlung zu unterstützen:  
 - Login_ErrorLog.log: Um Anmeldungsfehler zu melden. Diese Datei ist unter `C:\Users\`*`<username>`*`\AppData\Roaming\Microsoft\QuickStartXRMToolingWPFClient` verfügbar.  
-- QuickStartXRMToolingWPFClient.log: Um Betriebsfehler zu melden. Diese Datei ist am gleichen Ort verfügbar wie die ausführbare Datei, d. h. im Debuggen-Ordner Ihres Visual Studio-Projekts.  
+- QuickStartXRMToolingWPFClient.log: Um Betriebsfehler zu melden. Diese Datei ist am gleichen Ort verfügbar wie die ausführbare Datei, d. h. im Ordner "Debuggen" Ihres Visual Studio-Projekts.  
 
 ### <a name="see-also"></a>Siehe auch
 

@@ -18,11 +18,6 @@ Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mi
 > [!div class="mx-imgBorder"]
 > ![Kartenkomponente](../media/map-control.png "Kartenkomponente")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest
 
 ```xml
@@ -191,5 +186,5 @@ Stellen Sie sicher, dass Sie die `renderMap`-Funktion in der [updateView](../ref
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

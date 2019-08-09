@@ -14,6 +14,10 @@ ms.assetid: 0a11feb1-0b7d-4591-b7b3-8e45d4e58805
 
 # <a name="metadata"></a>Metadaten
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Eigenschaften
+
 ## <a name="displayname"></a>DisplayName
 
 **Typ**: `string`

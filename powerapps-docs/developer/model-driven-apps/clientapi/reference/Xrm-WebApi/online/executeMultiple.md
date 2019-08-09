@@ -18,9 +18,9 @@ search.app:
 [!INCLUDE[./includes/executeMultiple-description.md](./includes/executeMultiple-description.md)]
 
 > [!NOTE]
-> Diese Methode wird nur für den online-Modus unterstützt ([Xrm.WebApi.online](online.md)). 
+> Diese Methode wird nur für den online-Modus unterstützt ([Xrm.WebApi.online](../online.md)). 
 
-Wenn Sie mehrere Anforderungen in der Transaktion ausführen möchten, müssen Sie in ein Changeset als Parameter übergeben an diese Methode. [Changesets](../../../../common-data-service/webapi/execute-batch-operations-using-web-api.md#change-sets) sind eine Sammlung Vorgängen, die innerhalb derselben Transaktion ausgeführt werden. Sie können auch einzelne Anforderungen und Changesets zusammen als Parameter an diese Methode übergeben.
+Wenn Sie mehrere Anforderungen in der Transaktion ausführen möchten, müssen Sie in ein Changeset als Parameter übergeben an diese Methode. [Changesets](../../../../../common-data-service/webapi/execute-batch-operations-using-web-api.md#change-sets) sind eine Sammlung Vorgängen, die innerhalb derselben Transaktion ausgeführt werden. Sie können auch einzelne Anforderungen und Changesets zusammen als Parameter an diese Methode übergeben.
 
 > [!NOTE]
 > Sie können keine Lesevorgänge einschließen (abrufen, mehrere abrufen und Internet-API-Funktionen) als Bestandteil eines Changesets; dies ist gemäß den ODatas v4-Spezifikation.
@@ -106,5 +106,5 @@ Bei Erfolg wird ein Versprechen mit einem Array von Objekten zurückgegeben, die
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Xrm.WebApi](../xrm-webapi.md)
+[Xrm.WebApi](../../xrm-webapi.md)
 

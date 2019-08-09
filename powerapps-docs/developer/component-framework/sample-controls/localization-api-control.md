@@ -14,15 +14,10 @@ ms.author: nabuthuk
 
 Dieses Beispiel demonstriert, wie Lokalisierung für benutzerdefinierte Steuerelemente ausgeführt wird. In diesem Beispiel verwenden wir die [Erhöhungskomponente](increment-control.md), um den Text zu lokalisieren, der auf der Erhöhungsschaltfläche angezeigt wird, basierend auf der vom Benutzer ausgewählten Sprache. 
 
-Das PowerApps Komponentenframework nutzt das Konzept der Implementierung von Zeichenfolge (resx)-Webressourcen, das verwendet wird, um die lokalisierten Zeichenfolgen zu verwalten, die auf einer beliebigen Benutzeroberfläche angezeigt werden. Weitere Informationen: [String (Resx)-Webressourcen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/resx-web-resources). 
+Das PowerApps Komponentenframework nutzt das Konzept der Implementierung von Zeichenfolge (resx)-Webressourcen, das verwendet wird, um die lokalisierten Zeichenfolgen zu verwalten, die auf einer beliebigen Benutzeroberfläche angezeigt werden. Weitere Informationen: [String (Resx)-Webressourcen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources). 
 
 > [!div class="mx-imgBorder"]
 > ![Lokalisierung einer API-Komponente](../media/localization-api-control.png "Lokalisierung einer API-Komponente")
-
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="manifest"></a>Manifest 
 
@@ -451,5 +446,5 @@ Wenn diese Codezeile ausgeführt wird, identifiziert das PowerApps Komponentenfr
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

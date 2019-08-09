@@ -1,6 +1,6 @@
 ---
-title: Verbesserte Schnellstartfunktion (Common Data Service) | Microsoft Docs
-description: 'Erstellen Sie ein neues Projekt in Visual Studio, um eine Konsolenanwendung zu unterstützen, die Common Data Service-Web-API verwendet'
+title: Verbesserter Schnellstart (Common Data Service) | Microsoft Docs
+description: 'Erstellen eines neuen Projekts in Visual Studio, um eine Konsolenanwendung zu erstellen, die die Common Data Service-Web-API verwendet'
 ms.custom: ''
 ms.date: 02/02/2019
 ms.service: powerapps
@@ -185,7 +185,7 @@ Diese Helfer werden auch in der [SampleHelper.cs](https://github.com/Microsoft/P
     > [!NOTE]
     > Fügen Sie dies nicht innerhalb der Klasse `SampleHelpers` selbst hinzu.
 
-    Diese Klasse stellt sicher, dass das Zugriffstoken bei jeder Ausführung einer Aktion aktualisiert wird. Jeder Zugriffstoken verfällt nach etwa einer Stunde. Diese Klasse implementiert eine <xref:System.Net.Http.DelegatingHandler>, die mit dem Authentifizierungskontext der Azure Active Directory Authentication Library (ADAL) funktioniert, um die Methode `AquireToken` jedes Mal aufzurufen, wenn eine Operation ausgeführt wird, so dass Sie den Ablauf von Token nicht explizit verwalten müssen.
+    Diese Klasse stellt sicher, dass das Zugriffstoken bei jeder Ausführung einer Aktion aktualisiert wird. Jeder Zugriffstoken verfällt nach etwa einer Stunde. Diese Klasse implementiert eine <xref:System.Net.Http.DelegatingHandler>, die mit dem Authentifizierungskontext der Azure Active Directory Authentication Library (ADAL) funktioniert, um die Methode `AcquireToken` jedes Mal aufzurufen, wenn eine Operation ausgeführt wird, so dass Sie den Ablauf von Token nicht explizit verwalten müssen.
 
     ```csharp
     /// <summary>

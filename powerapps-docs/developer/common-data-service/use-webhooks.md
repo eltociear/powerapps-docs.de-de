@@ -1,5 +1,5 @@
 ---
-title: Webhooks zum Erstellen externer Handler für Serverereignisse verwenden (Common Data Service) | Microsoft Docs
+title: 'Verwenden von Webhooks, um externe Handler für Serverereignisse zu erstellen (Common Data Service) | Microsoft Docs'
 description: 'Sie können Daten zu Ereignissen senden, die auf dem Server für eine Webanwendung mit Webhooks auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhooks-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>Verwenden Sie Webhooks zum Erstellen externer Handler für Serverereignisse
 
-Mit Common Data Service können Sie mithilfe von Webhooks Daten zu Ereignissen senden, die auf dem Server bei einer Webanwendung auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhook-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.
+Mit Common Data Service können Sie Daten zu Ereignissen senden, die auf dem Server für eine Webanwendung mit Webhooks auftreten. Webhooks ist ein einfaches HTTP-Muster zur Verbindung von Web-APIs und -diensten mit einem Veröffentlichungs-/Abonnementmodell. Webhook-Absender benachrichtigen Empfänger über Ereignisse, indem sie Anfragen mit einigen Informationen zu den Ereignissen an Empfängerendpunkte senden.
 
 Mit Webhooks können Entwickler und ISVs Daten aus dem Customer Engagement in Ihren eigenen benutzerdefinierten Code integrieren, der von externen Diensten gehostet wird. Mit dem Webhook-Modell können Sie Ihren Endpunkt sichern, indem Sie einen Authentifizierungsheader oder Abfrage-Zeichenfolgenparameterschlüssel verwenden. Dies ist einfacher als das SAS-Authentifizierungsmodell, das Sie derzeit möglicherweise für die Azure Service Bus-Integration verwenden.
 
@@ -35,7 +35,7 @@ Beim Entscheiden zwischen dem Webhook-Modell und der Azure Service Bus-Integrati
 Die Anwendung von Webhooks gliedert sich in drei Teile:
 
 - Erstellen oder Konfigurieren eines Services zum Konsumieren von Webhook-Anforderungen.
-- Schritt zum Registrieren eines Webhooks im Common Data Service oder
+- Registrieren eines Webhook-Schritts im Common Data Service-Service oder
 - Aufrufen des Webhooks von einem Plug-In oder einer benutzerdefinierten Workflowaktivität. 
 
 ### <a name="start-by-registering-a-test-webhook"></a>Beginnen Sie mit dem Registrieren eines Test-Webhook
@@ -87,6 +87,9 @@ Andere Daten, die möglicherweise an Ihren Service übergeben wurden, finden Sie
 Der Text enthält die Zeichenfolge, die den JSON-Wert einer Instanz der <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext>-Klasse darstellt. Hierbei handelt es sich um dieselben Daten, die für Azure Service Bus-Integrationen übergeben werden. 
 
 Der Service, den Sie erstellen, muss diese Daten analysieren, um für Ihren Service die relevanten Informationen zu extrahieren, um dessen Funktion bereitzustellen. Die Art, wie Sie das Analysieren dieser Daten festlegen, hängt von Ihren Einstellungen und der verwendeten Technologie ab.
+
+> [!IMPORTANT]
+> Aufgrund bestimmten Service-Busoptimierungen wird jedoch nicht empfohlen, dass .NET-Entwickler einJSON formatierten Nachrichtenanforderungstext an ein <xref:Microsoft.Xrm.Sdk.RemoteExecutionContext> Objekt deserialisieren. Besser ist es [JObject](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) zu verwenden, um den Nachrichtentext zu analysieren.
 
 Im Folgenden finden Sie ein Beispiel serialisierter JSON-Daten, die für einen Schritt übergeben werden, der mit den folgenden Eigenschaften übergeben wird.
 
@@ -360,7 +363,7 @@ Wenn Ihr Webhook registriert ist, um asynchron ausgeführt zu werden, können Si
 
 [Schreiben eines Plug-Ins](write-plug-in.md)<br />
 [Registrieren eines Plug-Ins](register-plug-in.md)<br />
-[Asynchroner Dienst in Common Data Service](asynchronous-service.md)<br />
+[Asynchroner Service in Common Data Service](asynchronous-service.md)<br />
 [Beispiel: Benutzerdefiniertes Azure-fähiges Plug-In](/org-service/samples/azure-aware-custom-plugin.md)<br />
 [Beispiel: Azure-fähige benutzerdefinierte Workflowaktivität](org-service/samples/azure-aware-custom-workflow-activity.md)<br />
 [Azure-Funktionen](https://azure.microsoft.com/services/functions/)<br />

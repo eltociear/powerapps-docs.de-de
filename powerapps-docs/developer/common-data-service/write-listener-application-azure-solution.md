@@ -1,10 +1,9 @@
 ---
 title: Schreiben einer Listener-Anwendung für eine Microsoft Azure-Lösung (Common Data Service) | Microsoft Docs
-description: 'In dem Thema wird beschrieben, wie Sie eine Listener-Anwendung für eine Azure-Lösung schreiben, die "Dynamics 365 (online) Common Data Service"-Messages lesen und verarbeiten kann, die im Azure-Servicebus veröffentlicht werden.'
+description: 'In diesem Thema wird beschrieben, wie Sie eine Azure-Lösungs-Listener-Anwendung schreiben, die Dynamics 365 (online) Common Data Service-Messages lesen und verarbeiten kann, die für Azure Service Bus veröffentlicht werden.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,9 +21,7 @@ search.app:
 
 # <a name="write-a-listener-application-for-a-azure-solution"></a>Schreiben einer Listener-Anwendung für eine Azure-Lösung
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/write-listener-application-azure-solution -->
-
-In diesem Thema wird beschrieben, wie Sie eine Listener-Anwendung für eine Azure-Lösung schreiben, die "Dynamics 365 (online) Common Data Service"-Messages lesen und verarbeiten kann, die im Azure-Servicebus veröffentlicht werden. Sie sollten sich zunächst damit vertraut machen, wie Sie einen Azure Service Bus-Listener schreiben, bevor Sie sich den Besonderheiten eines Dynamics 365-Listeners zuwenden. Weitere Informationen bietet die [Dokumentation zu Azure Service Bus](https://azure.microsoft.com/en-us/documentation/services/service-bus/).  
+In diesem Thema wird beschrieben, wie Sie eine Azure-Lösungs-Listener-Anwendung schreiben, die Dynamics 365 (online) Common Data Service-Messages lesen und verarbeiten kann, die für Azure Service Bus veröffentlicht werden. Sie sollten sich zunächst damit vertraut machen, wie Sie einen Azure Service Bus-Listener schreiben, bevor Sie sich den Besonderheiten eines Dynamics 365-Listeners zuwenden. Weitere Informationen bietet die [Dokumentation zu Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/).  
   
 <a name="bkmk_writequeued"></a>
 
@@ -35,14 +32,14 @@ Eine Nachrichten-*Warteschlange* ist eine Sammlung von Nachrichten, die an einem
 > [!IMPORTANT]
 >  Wenn Sie einen Warteschlangenlistener schreiben, überprüfen Sie jede einzelne Nachrichtenkopfaktion, um zu bestimmen, ob die Meldung von Dynamics 365 stammt. Informationen dazu finden Sie unter [Filtermeldungen](write-listener-application-azure-solution.md#filter).  
   
-Mit [Empfangen](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.queueclient?redirectedfrom=MSDN&view=azure-dotnet#Microsoft_ServiceBus_Messaging_QueueClient_Receive) im Modus [ReceiveAndDelete](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) können Sie eine Nachricht destruktiv lesen. Dabei wird die Nachricht gelesen und aus der Warteschlange entfernt. Im Modus [PeekLock](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) können Sie eine Nachricht auch nicht destruktiv lesen. In diesem Fall wird die Nachricht zwar gelesen, bleibt jedoch in der Warteschlange verfügbar. Der in diesem SDK bereitgestellte Beispielcode des persistenten Warteschlangenlisteners führt einen destruktiven Lesevorgang durch. Weitere Informationen zum Lesen von Nachrichten in einer Warteschlange finden Sie unter [How to Receive Messages from a Queue (in englischer Sprache)](http://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/#how-to-receive-messages-from-a-queue).  
+Mit [Empfangen](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.queueclient?redirectedfrom=MSDN&view=azure-dotnet#Microsoft_ServiceBus_Messaging_QueueClient_Receive) im Modus [ReceiveAndDelete](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) können Sie eine Nachricht destruktiv lesen. Dabei wird die Nachricht gelesen und aus der Warteschlange entfernt. Im Modus [PeekLock](https://docs.microsoft.com/dotnet/api/microsoft.servicebus.messaging.receivemode?redirectedfrom=MSDN&view=azure-dotnet#microsoft_servicebus_messaging_receivemode) können Sie eine Nachricht auch nicht destruktiv lesen. In diesem Fall wird die Nachricht zwar gelesen, bleibt jedoch in der Warteschlange verfügbar. Der in diesem SDK bereitgestellte Beispielcode des persistenten Warteschlangenlisteners führt einen destruktiven Lesevorgang durch. Weitere Informationen zum Lesen von Nachrichten in einer Warteschlange finden Sie unter [How to Receive Messages from a Queue (in englischer Sprache)](https://azure.microsoft.com/documentation/articles/service-bus-dotnet-how-to-use-queues/#how-to-receive-messages-from-a-queue).  
   
 Ein *Thema* ähnelt einer Warteschlange, aber implementiert eine Veröffentlichungs-/Abonnementmodell. Mindestens ein Listener kann ein Thema abonnieren und Nachrichten aus seiner Warteschlange empfangen. Weitere Informationen: [Warteschlangen, Themen und Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 > [!IMPORTANT]
->  Um diese Warteschlangen oder Themen zu verwenden, müssen Sie Ihre Listener-Anwendungen mithilfe der [Azure-SDK](http://azure.microsoft.com/downloads/archive-net-downloads/)-Version 1.7 oder höher schreiben.  
+>  Um diese Warteschlangen oder Themen zu verwenden, müssen Sie Ihre Listener-Anwendungen mithilfe der [Azure-SDK](https://azure.microsoft.com/downloads/archive-net-downloads/)-Version 1.7 oder höher schreiben.  
   
-Die Verwendung von Warteschlangen und Themen in Ihrem Multisystem-Software-Entwurf kann zu einem Entkoppeln von Systemen führen. Wenn die Listener-Anwendung ggf. überhaupt nicht mehr verfügbar ist, findet die Nachrichtenzustellung aus Dynamics 365 dennoch statt. Die Listener-Anwendung kann mit der Verarbeitung der Warteschlangennachricht fortfahren, wenn sie wieder online ist. [!INCLUDEWeitere Informationen [Warteschlangen, Themen und Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
+Die Verwendung von Warteschlangen und Themen in Ihrem Multisystem-Software-Entwurf kann zu einem Entkoppeln von Systemen führen. Wenn die Listener-Anwendung ggf. überhaupt nicht mehr verfügbar ist, findet die Nachrichtenzustellung aus Dynamics 365 dennoch statt. Die Listener-Anwendung kann mit der Verarbeitung der Warteschlangennachricht fortfahren, wenn sie wieder online ist. Weitere Informationen: [Warteschlangen, Themen und Abonnements](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)  
   
 <a name="bkmk_writeoneway"></a>
 
@@ -91,7 +88,7 @@ Für den REST-Vertrag gibt die <xref:Microsoft.Xrm.Sdk.IWebHttpServiceEndpointPl
 
 ## <a name="filter-messages"></a>Nachrichten filtern
 
-Es gibt einen Eigenschaftenbehälter mit zusätzlichen Informationen, der zu jeder im Broker gespeicherten Nachricht [Eigenschaften](https://msdn.microsoft.com/library/windowsazure/microsoft.servicebus.messaging.brokeredmessage.properties.aspx)-Eigenschaft hinzugefügt wird, die von Dynamics 365 (online) und Dynamics 365 (online) gesendet wird. Der Eigenschaftenbehälter, der mit den Endpunkten von Warteschlangen, Weiterleitungen und Themenverträgen verfügbar ist, enthält die folgenden Informationen:  
+Es gibt einen Eigenschaftenbehälter mit zusätzlichen Informationen, der zu jeder Brokernachricht-[Eigenschaft](https://msdn.microsoft.com/library/windowsazure/microsoft.servicebus.messaging.brokeredmessage.properties.aspx), die von Dynamics 365 (online) und Dynamics 365 (online) gesendet wird, hinzugefügt wird. Der Eigenschaftenbehälter, der mit den Endpunkten von Warteschlangen, Weiterleitungen und Themenverträgen verfügbar ist, enthält die folgenden Informationen:  
   
 - Organisation-URI:  
   

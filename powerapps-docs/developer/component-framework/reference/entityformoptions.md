@@ -13,6 +13,10 @@ ms.assetid: 418871c0-59dc-4a7c-a8f9-9364a19f7662
 ---
 # <a name="entityformoptions"></a>EntityFormOptions
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Eigenschaften
+
 ## <a name="createfromentity-entityreference"></a>createFromEntity: EntityReference
 
 Gibt einen Datensatz an, der Standardwerte basierend auf dem zugeordneten Attributwert bereitstellt. Das Suchobjekt hat folgende Eigenschaften: Entitätstyp, ID und Name.

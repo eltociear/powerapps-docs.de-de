@@ -23,10 +23,6 @@ Wenn beispielsweise Ihre benutzerdefinierte Komponente eine lange Liste ist, dur
 > [!div class="mx-imgBorder"]
 > ![Steuerelementstatus-API](../media/control-state-api.png "Steuerelementstatus-API")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
 
 ## <a name="manifest"></a>Manifest
 
@@ -289,5 +285,5 @@ public destroy(): void
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

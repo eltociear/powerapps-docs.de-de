@@ -83,10 +83,10 @@ Diese Themen enthalten Informationen, die Sie zum Erstellen von Plug-Ins verwend
 - [Verarbeiten von Ausnahmen](handle-exceptions.md)
 - [Registrieren eines Plug-Ins](register-plug-in.md)
 - [Debuggen von Plug-Ins](debug-plug-in.md)
-- 
+ 
 Diese Themen enthalten weitere Informationen zum Schreiben oder Debugging ein Plug-In oder Analysieren der Leistung.
 
 - [Die Identität eines Benutzers annehmen](impersonate-a-user.md)
 - [Protokollierung und Ablaufverfolgung](logging-tracing.md)
 - [Analysieren der Leistung](analyze-performance.md)
-- [Zugriff auf externe Web-Ressourcen](access-web-services.md)]
+- [Zugriff auf externe Web-Ressourcen](access-web-services.md)

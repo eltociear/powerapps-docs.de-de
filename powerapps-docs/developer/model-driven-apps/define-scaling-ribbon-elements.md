@@ -3,8 +3,7 @@ title: Definieren der Skalierung für Menübandelemente (modellgesteuerte Apps) 
 description: Infos zum Definieren der Skalierung für Menübandelemente
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="define-scaling-for-ribbon-elements"></a>Definieren der Skalierung für Menübandelemente
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-scaling-ribbon-elements -->
 
 Für Anwendungsmenübänder und aktualisierte Entitätsformular-Menübänder gibt es keine Skalierung. Das Skalieren betrifft nur Formulare für Entitäten, die nicht aktualisiert wurden, sowie Listenmenübänder, die mithilfe von Dynamics 365 for Outlook angezeigt wurden.  
   

@@ -20,11 +20,6 @@ Das ausgewählte Bild wird innerhalb der Komponente gerendert. Auch wird die `Re
 > [!div class="mx-imgBorder"]
 > ![Bild-Upload-Komponente](../media/image-upload-control.png "Bild-Upload-Komponente")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest
 
 ```xml
@@ -388,5 +383,5 @@ Die `device.pickFile`-Methode öffnet ein Dialogfeld, um Dateien auf Ihrem Compu
 ### <a name="related-topics"></a>Verwandte Themen
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br/>
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)

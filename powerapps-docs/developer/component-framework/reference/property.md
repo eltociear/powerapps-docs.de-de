@@ -14,6 +14,10 @@ ms.assetid: a118f54f-be47-4f35-9ffb-7afa6c296631
 
 # <a name="property"></a>Eigenschaft
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
+## <a name="properties"></a>Eigenschaften
+
 ## <a name="error"></a>Fehler
 
 **Typ**: `boolean`

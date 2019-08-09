@@ -2,7 +2,7 @@
 title: Sicherheitsmodell (Common Data Service) | Microsoft Docs
 description: 'PowerApps bietet ein Sicherheitsmodell, mit dem die Datenintegrität geschützt und die Geheimhaltung von Daten gewährleistet wird. Außerdem wird damit ein effizienter Datenzugriff und eine effiziente Zusammenarbeit unterstützt.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -33,8 +33,5 @@ Kombinieren Sie rollenbasierte Sicherheit, datensatzbasierte Sicherheit und feld
 Als Entwickler sollten Sie wissen, dass Ihre Abfragen in dem Kontext eines Benutzers ausgeführt werden und nur die Datensätze zurückgeben, für die der Benutzer über Leseberechtigungen verfügt.
 Außerdem können Sie nur Vorgänge basierend auf Berechtigungen ausführen, die Ihrem Konto über die Sicherheitsrollen zugewiesen sind.
 
-Ausführliche Informationen zu Sicherheitskonzepten finden Sie unter [Sicherheitskonzepte](/dynamics365/customer-engagement/admin/security-concepts)
+Ausführliche Informationen finden Sie unter [Sicherheit in Common Data Service](/power-platform/admin/wp-security)
 
-### <a name="see-also"></a>Siehe auch
-
-[BusinessUnit-Entität](businessunit-entity.md)

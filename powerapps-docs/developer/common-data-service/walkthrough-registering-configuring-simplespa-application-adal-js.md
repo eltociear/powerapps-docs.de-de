@@ -1,10 +1,9 @@
 ---
-title: 'Exemplarische Vorgehensweise: Registrierung und Konfiguration von SimpleSPA-Anwendung mit adal.js (Common Data Service) | Microsoft Docs'
-description: Diese Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegenden Single-Page-Anwendung (SPA) für den Zugriff auf Daten in Dynamics 365 Customer Engagement mithilfe von adal.js und Cross-origin Resource Sharing (CORS).
+title: 'Exemplarische Vorgehensweise: SimpleSPA-Anwendung mit adal.js registrieren und konfigurieren (Common Data Service) | Microsoft Docs'
+description: Diese Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegenden SPA (Single Page Application) für den Zugriff auf Daten in Dynamics 365 Customer Engagement mithilfe von adal.js und Cross-origin Resource Sharing (CORS).
 keywords: ''
 ms.date: 02/12/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,11 +21,11 @@ search.app:
 
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>Exemplarische Vorgehensweise: SPA-Anwendung mit adal.js registrieren und konfigurieren
 
-Diese exemplarische Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegendsten Single-Page-Anwendung (SPA) für den Zugriff auf Daten in Common Data Service mithilfe von adal.js und Cross-origin Resource Sharing (CORS). Weitere Informationen: [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung mit Dynamics 365 (online) zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+Diese Vorgehensweise beschreibt den Prozess des Registrierens und Konfigurierens der grundlegenden SPA (Single Page Application) für den Zugriff auf Daten in Common Data Service mithilfe von adal.js und Cross-origin Resource Sharing (CORS). Weitere Informationen: [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung mit Dynamics 365 (online) zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md).
   
 ## <a name="prerequisites"></a>Voraussetzungen  
   
-- PowerApps von Common Data Service  
+- PowerApps – Common Data Service  
   
 - Sie müssen über ein Dynamics 365 (online)-Systembenutzerkonto mit einer Administratorrolle für Office 365 verfügen.  
   
@@ -46,7 +45,7 @@ Klicken Sie auf **Anmelden**. Sie werden zu Anmeldeseite umgeleitet und geben Ih
 
 Nachdem Sie Ihre Anmeldeinformationen eingegeben haben, werden sie wieder zur HTML-Seite umgeleitet. Dort finden Sie die Schaltflächen **Anmelden**, **Abmelden** und **Firmen abrufen**. Sie sehen außerdem eine Begrüßung mit Informationen zu Ihrem Benutzerkonto.  
 
-Klicken Sie auf die Schaltfläche **Firmen abrufen**, um 10 Firmendatensätze aus Ihrer Common Data Service-Organisation abzurufen. Die Schaltfläche **Firmen abrufen** ist wie im folgenden Screenshot dargestellt deaktiviert:  
+Klicken Sie auf die Schaltfläche **Firmen abrufen**, um 10 Firmendatensätze Ihrer Common Data Service-Organisation abzurufen. Die Schaltfläche **Firmen abrufen** ist wie im folgenden Screenshot dargestellt deaktiviert:  
   
 ![Die SimpleSPA-Seite](media/simple-spa.png "Die SimpleSPA-Seite")  
 
@@ -62,7 +61,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 
 ## <a name="create-a-web-application-project"></a>Erstellen eines Webanwendungsprojekts  
   
-1.  Erstellen Sie mit Visual Studio 2017 ein neues **ASP.NET-Webanwendung**-Projekt und nutzen Sie die Vorlage **Leer**. Sie können das Projekt beliebig benennen.  
+1.  Erstellen Sie mit Visual Studio 2017 ein neues **ASP.NET-Webanwendungs**-Projekt und nutzen Sie die Vorlage **Leer**. Sie können das Projekt beliebig benennen.  
   
     Möglicherweise können Sie auch frühere Versionen von Visual Studio verwenden. Für diese Schritte wird jedoch Visual Studio 2017 verwendet.  
   
@@ -179,7 +178,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
        retrievingAccountsMessage.textContent = "Retrieving 10 accounts from " + organizationURI + "/api/data/v9.1/accounts";  
        message.appendChild(retrievingAccountsMessage)  
   
-       // Function to perform operation is passed as a parameter to the aquireToken method  
+       // Function to perform operation is passed as a parameter to the acquireToken method  
        authContext.acquireToken(organizationURI, retrieveAccounts)  
   
       }  
@@ -290,11 +289,11 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
   
 1.  [Melden Sie sich an](https://portal.azure.com) im Azure-Verwaltungsportal mithilfe eines Kontos mit Administratorberechtigungen. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten. Sie können auch über das Microsoft 365 Administratoren-Center auf das Azure-Porta zugreifen, indem Sie das Element **ADMIN** im linken Navigationsbereich erweitern und **Azure AD** auswählen.  
   
-     Wenn Sie keinen Azure-Mandaten (Firma) haben oder wenn Sie einen haben, aber Ihr Office 365-Abonnement mit Common Data Service in Ihrem Azure-Abonnement nicht verfügbar ist, befolgen Sie die Anweisungen im Abschnitt [Azure Active Directory-Zugang für Ihre Entwicklerseite einrichten](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zu verbinden.  
+     Falls Sie keinen Azure-Mandanten (Konto) haben oder darüber zwar verfügen, aber Ihr Office 365-Abonnement mit Common Data Service nicht in Ihrem Azure-Abonnement verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für die Entwickler-Website](https://docs.microsoft.com/office/developer-program/office-365-developer-program), um die beiden Konten zuzuordnen.  
   
-     Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Mehr Informationen: [Active Directory Preisgestaltung Details](http://azure.microsoft.com/pricing/details/active-directory/).  
+     Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Mehr Informationen: [Active Directory Preisgestaltung Details](https://azure.microsoft.com/pricing/details/active-directory/).  
   
-2.  Klicken Sie auf **Azure Active Directory** in der linken Spalte der Seite. Möglicherweise müssen Sie in der linken Spalte scrollen, um das **Azure Active Directory**-Symbol und die Bezeichnung zu sehen.  
+2.  Klicken Sie in der linken Spalte der Seite auf **Azure Active Directory**. Möglicherweise müssen Sie in der linken Spalte einen Bildlauf durchführen, um das Symbol und die Beschriftung von **Azure Active Directory** zu sehen.  
   
 3.  Wählen Sie nun im sich öffnenden Fenster **Enterprise Applications** aus.
 
@@ -334,7 +333,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 
 11. Klicken Sie auf **Hinzufügen** und wählen Sie dann **Eine API auswählen**. Wählen Sie nun **Dynamics CRM Online** und klicken Sie am Ende der Seite auf **Auswählen**.
 
-![Wählen Sie Dynamics CRM Online unter Auswahl einer API.](media/register-spa-permission-dyncrm.PNG)
+![Wählen Sie Dynamics CRM Online unter „Auswahl einer API”.](media/register-spa-permission-dyncrm.PNG)
 
 12. Wählen Sie nun auf der Registerkarte **Ausgewählte Berechtigungen** alle **delegierten Berechtigungen** aus und klicken Sie am Ende der Seite auf **Auswählen**.
 
@@ -342,7 +341,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 
 13. Wählen Sie dann **Fertig**. Sie sehen eine Zeile für **Dynamics CRM Online** hinzugefügt.
 
-![Neue Zeile für Dynamics CRM Online wurde hinzugefügt.](media/register-spa-row-dyncrm.PNG)
+![Neue Zeile für Dynamics CRM Online wird hinzugefügt](media/register-spa-row-dyncrm.PNG)
 
 14. Schließen Sie nun die Registerkarte **Einstellungen**. Wählen Sie auf der Registerkarte der registrierten App die Option **Manifest**.
 
@@ -369,7 +368,7 @@ Schließlich können Sie auf die Schaltfläche **Abmelden** klicken, um sich abz
 1.  Stellen Sie den Browser so ein, dass er Microsoft Edge oder Google Chrome verwendet.  
   
     > [!NOTE]
-    > Internet Explorer funktioniert in diesem Fall nicht für das Debuggen.  
+    > Internet Explorer kann in diesem Fall nicht zum debuggen genutzt werden.  
   
 2.  Drücken Sie F5, um das Debuggen zu starten. Sie sollten das in [Ziel dieser exemplarischen Vorgehensweise](walkthrough-registering-configuring-simplespa-application-adal-js.md#bkmk_goal) beschriebene Verhalten erwarten.  
   
@@ -377,6 +376,6 @@ Wenn Sie nicht die erwarteten Ergebnisse erhalten, überprüfen Sie die Werte, d
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Client-Anwendungen](connect-cds.md)<br />
- [Tutorial: Registrieren Sie eine App bei Azure Active Directory](walkthrough-register-app-azure-active-directory.md) <br />
+ [Lernprogramm: Registrieren einer App mit Azure Active Directory](walkthrough-register-app-azure-active-directory.md) <br />
  [Erstellen von Webanwendungen mit Hilfe der Server zu Server(S2S)-Authentifizierung](build-web-applications-server-server-s2s-authentication.md)<br />
- [Verwenden von OAuth mit Cross-Origin Resource Sharing zum Verbinden einer Single Page-Anwendung mit Common Data Service](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
+ [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung mit Common Data Service zu verbinden](oauth-cross-origin-resource-sharing-connect-single-page-application.md)

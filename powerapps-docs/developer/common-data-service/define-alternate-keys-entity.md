@@ -1,8 +1,8 @@
 ---
-title: Arbeiten mit alternativen Schlüsseln (Common Data Service) | Microsoft Docs
+title: Arbeiten mit Alternativschlüsseln (Common Data Service) | Microsoft Docs
 description: 'Das Thema erläutert, wie Sie Alternativschlüssel für eine Entität erstellen. Sie können Alternativschlüssel programmgesteuert erstellen oder mithilfe der Anpassungstools.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="work-with-alternate-keys"></a>Arbeiten mit Alternativschlüsseln
 
-Alle Common Data Service-Datensätze haben eindeutige Bezeichner, die als GUIDs definiert sind. Diese sind der Primärschlüssel für jede Entität. Wenn Sie mit einem externen Datenspeicher integrieren müssen, können Sie möglicherweise eine Spalte zu externen Datenbanktabellen hinzufügen, sodass ein Verweis zum eindeutigen Bezeichner in Common Data Service vorhanden ist. Dies ermöglicht einen lokalen Verweis für einen Link zu dem Common Data Service-Datensatz. Manchmal können Sie jedoch die externe Datenbank nicht ändern. Mit Alternativschlüsseln können Sie jetzt ein Attribut in einer Common Data Service-Entität definieren, um einem eindeutigen Bezeichner (oder einer eindeutigen Kombination von Spalten), der vom externen Datenspeicher verwendet wird, zu entsprechen. Sie können diesen Alternativschlüssel anstelle des Primärschlüssels verwenden, um einen Datensatz in Common Data Service eindeutig zu identifizieren. Sie müssen in der Lage sein, zu definieren, welche Attribute eine eindeutige Identität für Ihre Datensätze darstellen. Nachdem Sie die Attribute ermittelt haben, die für die Entität eindeutig sind, können sie als Alternativschlüssel über die Anpassungs-Benutzeroberfläche oder im Code deklariert werden. Dieses Thema enthält Informationen zum Festlegen von Alternativschlüsseln im Datenmodell.  
+Alle Common Data Service-Datensätze besitzen eindeutige Bezeichner, die als GUIDs definiert werden. Diese sind der Primärschlüssel für jede Entität. Wenn Sie mit einem externen Datenspeicher integrieren müssen, können Sie möglicherweise eine Spalte zu externen Datenbanktabellen hinzufügen, sodass ein Verweis zum eindeutigen Bezeichner in Common Data Service vorhanden ist. Dies ermöglicht einen lokalen Verweis für einen Link zu dem Common Data Service-Datensatz. Manchmal können Sie jedoch die externe Datenbank nicht ändern. Mit Alternativschlüsseln können Sie jetzt ein Attribut in einer Common Data Service-Entität definieren, um einem eindeutigen Bezeichner (oder einer eindeutigen Kombination von Spalten), der vom externen Datenspeicher verwendet wird, zu entsprechen. Sie können diesen Alternativschlüssel anstelle des Primärschlüssels verwenden, um einen Datensatz in Common Data Service eindeutig zu identifizieren. Sie müssen in der Lage sein, zu definieren, welche Attribute eine eindeutige Identität für Ihre Datensätze darstellen. Nachdem Sie die Attribute ermittelt haben, die für die Entität eindeutig sind, können sie als Alternativschlüssel über die Anpassungs-Benutzeroberfläche oder im Code deklariert werden. Dieses Thema enthält Informationen zum Festlegen von Alternativschlüsseln im Datenmodell.  
 
 <a name="BKMK_Declare"></a>
 
@@ -39,6 +39,9 @@ Sie sollten folgende Einschränkungen berücksichtigen, wenn Alternativschlüsse
   | DecimalAttributeMetadata |   Dezimalzahl    |
   | IntegerAttributeMetadata |    Ganze Zahl     |
   | StringAttributeMetadata  | Einzelne Textzeile |
+  | DateTimeAttributeMetadata   |      Datum/Uhrzeit    |
+  | LookupAttributeMetadata     |       Suchfeld        |
+  | PicklistAttributeMetadata   |      Optionssatz       |
 
 
 - **Gültige Schlüsselgröße**  
@@ -51,7 +54,7 @@ Sie sollten folgende Einschränkungen berücksichtigen, wenn Alternativschlüsse
 
 - **Unicode-Zeichen im Schlüsselwert**
 
-  Wenn die Daten innerhalb eines Felds, das in einem Alternativschlüssel verwendet wird, eines der folgenden Zeichen enthält `<`,`>`,`*`,`%`,`&`,`:`,`\\` funktionieren Patarbeiten, und patch- oder upsert-Aktionen nicht.  Wenn Sie nur Eindeutigkeit benötigen, reicht dieser Ansatz aus, wenn Sie jedoch diese Schlüssel im Rahmen der Datenintegration benötigen, sollten Sie den Schlüssel besser in Feldern ohne Daten mit diesen Zeichen erstellen.
+  Wenn die Daten innerhalb eines Felds, das in einem Alternativschlüssel verwendet wird, eines der folgenden Zeichen enthält `<`,`>`,`*`,`%`,`&`,`:`,`\\` funktionieren Abruf- oder Patchaktionen nicht.  Wenn Sie nur Eindeutigkeit benötigen, reicht dieser Ansatz aus, wenn Sie jedoch diese Schlüssel im Rahmen der Datenintegration benötigen, sollten Sie den Schlüssel besser in Feldern ohne Daten mit diesen Zeichen erstellen.
 
 <a name="BKMK_crud"></a>   
 

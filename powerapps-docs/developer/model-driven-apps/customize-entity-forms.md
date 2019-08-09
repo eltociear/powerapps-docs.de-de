@@ -3,8 +3,7 @@ title: Entitätsformulare anpassen (modellgesteuerte Apps) | Microsoft Docs
 description: 'Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatensätze erstellen, anzeigen oder bearbeiten. Verwenden Sie den Formular-Designer in der Anpassungstools, um Entitätsformulare zu erstellen und zu bearbeiten. Dieses Thema enthält die erforderlichen Informationen, um programmgesteuert Formulare zu erstellen oder zu bearbeiten.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -56,10 +55,10 @@ Formulare bieten die Benutzeroberfläche (UI), mit der Benutzer Entitätsdatens�
 |     `Description`     |                `<Descriptions>`                 | `Description` ist eine Zeichenfolge und `<Descriptions>` enthält alle Bezeichnungen der lokalisierten Beschreibung des Formulars.<br /><br /> Die lokalisierten Etiketten können mithilfe von <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest> abgerufen werden. |
 | `FormActivationState` |             `<FormActivationState>`             |                                  Legt den Status des Formulars fest.<br /><br /> Nur Formulare des Typs "Haupt" können deaktiviert werden.<br /><br /> Gültige Werte:<br /><br /> -   0 : Inaktiv<br />-   1 : Aktiv                                  |
 |       `FormId`        |                   `<formid>`                    |                                                                                                     Eindeutiger Bezeichner des Formulars                                                                                                     |
-|  `FormPresentation`   |              `<FormPresentation>`               |                                     Legt fest, ob sich dieses Formular im aktualisierten UI-Layout in Common Data Service befindet.                                      |
+|  `FormPresentation`   |              `<FormPresentation>`               |                                     Gibt an, ob sich dieses Formular im aktualisierten UI-Layout in Common Data Service befindet.                                      |
 |       `FormXml`       |                    `<form>`                     |                                                                                                XML-Darstellung des Formularlayouts.                                                                                                 |
 |  `IntroducedVersion`  |              `<IntroducedVersion>`              |                                                                                          Version der Lösung, in der das Formular hinzugefügt wurde.                                                                                          |
-|     `IsAIRMerged`     |                       Nicht zutreffend                       |                                           Legt fest, ob dieses Formular mit dem aktualisierten UI-Layout in Common Data Service zusammengeführt wird.                                           |
+|     `IsAIRMerged`     |                       Nicht zutreffend                       |                                           Gibt an, ob dieses Formular mit dem aktualisierten UI-Layout in Common Data Service zusammengeführt wurde.                                           |
 |   `IsCustomizable`    |               `<IsCustomizable>`                |                            Informationen, mit denen angegeben wird, ob die Komponente angepasst werden kann.<br /><br /> Diese verwaltete Eigenschaft wird nur angewendet, wenn das Formular durch Importieren einer verwalteten Lösung erstellt wurde.                            |
 |      `IsDefault`      |                       Nicht zutreffend                       |                                                                          Informationen, die angeben, ob es sich bei Formular oder Dashboard um den Systemstandard handelt.                                                                          |
 |        `Name`         |               `<LocalizedNames>`                |       `Name` ist eine Zeichenfolge und `<LocalizedNames>` enthält alle Bezeichnungen des lokalisierten Namens des Formulars.<br /><br /> Die lokalisierten Etiketten können mithilfe von <xref:Microsoft.Crm.Sdk.Messages.RetrieveLocLabelsRequest> abgerufen werden.       |

@@ -2,9 +2,9 @@
 title: Erstellen oder bearbeiten von modellgesteuerten Schnellerstellungsformularen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten'
 ms.custom: ''
-ms.date: 01/25/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -108,6 +108,63 @@ Wenn Sie einem Schnellerfassungsformular ein zusammengesetztes Feld hinzufügen,
 4.  Wenn Sie fertig sind, wählen Sie **Speichern** aus.  
   
 5.  Wählen Sie **Veröffentlichen**, damit das geänderte Formular in der Anwendung angezeigt wird.  
+
+## <a name="allow-quick-create-property-form-behavior-for-activities"></a>Eigenschaftenformularverhalten "Schnellerfassung erlauben" für Aktivitäten
+Ab dem Update 9.1.0.2007 kann die Eigenschaft **Schnellerfassung erlauben** für alle Standardaktivitäten, außer wiederkehrenden Terminen, aktiviert oder deaktiviert werden. Mit dieser Eigenschaft können Sie das angezeigte Formular standardmäßig für die meisten Aktivitäten ändern. Standardmäßig wird die Eigenschaft **Schnellerfassung erlauben** aktiviert und das Schnellerfassungsformular ist das Formular, das in App-Bereichen und unterstützenden Aktivitätsentitäten angezeigt wird. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/allow-quick-create.png "Eigenschaft \"Schnellerfassung erlauben\" für Terminentität")
+
+
+### <a name="unified-interface-client-form-display-behavior"></a>Einheitliche Oberfläche-Clientformular – Anzeigeverhalten
+Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, wenn die Eigenschaft **Schnellerfassung erlauben** im Client der einheitlichen Oberfläche *aktiviert* ist.
+ 
+|Speicherort, an dem auf das Formular zugegriffen wird  |Angezeigtes Formular  |
+|---------|---------|
+|Zugeordnetes Raster für spezifische Entität  | Schnellerfassung      |
+|Untergeordnetes Raster der spezifischen Aktivität   |  Schnellerfassung     |
+|Aktivitäten (activitypointer)-Raster     | Schnellerfassung     |
+|Verknüpftes Aktivitäten (activitypointer)-Raster   | Schnellerfassung    |
+|Aktivitäten (activitypointer)-Unterraster  | Schnellerfassung    |
+|Globale Befehlsleiste + Schaltfläche<sup>1</sup>    | Schnellerfassung    |
+|Zeitachsenpinnwand   | Schnellerfassung    |
+|Aktivitäten (activitypointer)-Raster   | Hauptbereich   |
+|Raster der spezifischen Aktivität    | Hauptbereich   |
+
+<sup>1</sup>Aktivitäten werden auf den globalen Schaltflächen **Erstellen** oder **+ Neu** angezeigt, wenn die Eigenschaft **Schnellerfassung erlauben** aktiviert ist. In diesem Fall wird das Schnellerfassungsformular verwendet, wenn es vorhanden ist, anderenfalls das Hauptformular. Wenn **Schnellerfassung erlauben** deaktiviert ist, wird der Eintrag für die Entität nicht angezeigt.
+
+### <a name="classic-web-client-form-display-behavior"></a>Klassisches Webclientformular-Anzeigeverhalten
+
+Die folgende Tabelle gibt an, welches Formular standardmäßig angezeigt wird, wenn die Eigenschaft **Schnellerfassung erlauben** im klassischen Webclient *aktiviert* ist.
+
+|Speicherort, an dem auf das Formular zugegriffen wird  |Angezeigtes Formular  |
+|---------|---------|
+|Zugeordnetes Raster für spezifische Entität  | Schnellerfassung      |
+|Untergeordnetes Raster der spezifischen Aktivität   |  Schnellerfassung     |
+|Aktivitäten (activitypointer)-Raster     | Hauptbereich     |
+|Verknüpftes Aktivitäten (activitypointer)-Raster   | Hauptbereich    |
+|Aktivitäten (activitypointer)-Unterraster  | Hauptbereich    |
+|Globale Befehlsleiste + Schaltfläche    | Hauptbereich    |
+|Raster der spezifischen Aktivität   | Hauptbereich    |
+
+ #### <a name="classic-web-client-social-pane-behavior"></a>Social Media-Bereich des klassischen Webclients – Verhalten
+ 
+Der Social Media-Bereich ist ein Sonderfall, da er die Eigenschaft **Schnellerfassung erlauben** nicht verwendet. Er verwendet aber unterschiedliche Formulare für unterschiedliche Aktivitäten wie hier angegeben.
+
+
+|Aktivität  |Angezeigtes Formular  |
+|---------|---------|
+|Aufgabe     | Schnellerfassung    |
+|Telefonanruf   | Schnellerfassung     |
+|E-Mail   | Hauptbereich     |
+|Termin  | Hauptbereich     |
+|Benutzerdefinierte Aktivitäten     | Hauptbereich      |
+
+### <a name="solution-import-allow-quick-create-value-behavior"></a>Lösungsimport "Schnellerfassung zulassen"-Wertverhalten
+
+Wenn Sie eine Lösung aus Version 8.2 importieren, werden die folgenden Entitäten, unabhängig vom Wert der Eigenschaft **Schnellerfassung erlauben** in der Lösung , auf den Standardformular-Anzeigewert zurückgesetzt und das Hauptformular zeigt: Aufgabe, Anruf, E-Mail und Termin. In dieser Situation muss die Option **Schnellerfassung erlauben** für diese Aktivitätsentitäten zurück auf *aktiviert* nach dem Import gesetzt werden.
+ 
+Liegt eine Anpassung in einer Version 9.0-Lösung für Entitäten vor, bei denen **Schnellerfassung erlauben** aktiviert ist, ändert sich der Wert nach dem Import nicht.  Wenn Sie die Option **Schnellerfassung erlauben** aber für die Entitäten Aufgabe, Telefonanruf, E-Mail und Termin auf *deaktiviert* gesetzt haben, wird der Wert in "aktiviert" geändert. In dieser Situation muss die Option **Schnellerfassung erlauben** für diese Aktivitätsentitäten nach dem Import zurück auf "deaktiviert" gesetzt werden. 
   
-### <a name="next-steps"></a>Nächste Schritte  
+### <a name="see-also"></a>Siehe auch  
 [Übersicht zur Formular-Editor-Benutzeroberfläche](form-editor-user-interface-legacy.md)

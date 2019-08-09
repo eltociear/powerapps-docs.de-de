@@ -27,7 +27,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <th>Zertifizierungscheckliste</th>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Modelgestützte Apps</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Canvas-Apps</a> und <a href="https://docs.microsoft.com/flow/getting-started">Flows</a>, die eine Verbindung mit Common Data Service herstellen<br/><br/><strong>HINWEIS</strong>: Dynamics 365 for Customer Engagement Apps sind modellgestützte Apps.</td>
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Modellgesteuerte Apps</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Canvas-Apps</a> und <a href="https://docs.microsoft.com/flow/getting-started">Flows</a>, die eine Verbindung mit Common Data Service herstellen<br/><br/><strong>HINWEIS</strong>: Dynamics 365 for Customer Engagement Apps sind modellgestützte Apps.</td>
 <td>Plausibilitätsprüfung</td>
 <td><ul>
 <li>Überprüfen des App-Registrierungstyps: Kostenlos, Testversion oder Kontakt. Bei einer Registrierung als Kontakt muss der Herausgeber den Testlauf aktivieren.</li>
@@ -40,13 +40,13 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <td>Codeüberprüfung</td>
 <td>
 <ul>
-<li>Codeüberprüfung für Canvas-Apps wird über das <a href="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/accessibility-checker">Barrierefreiheitprüfungstool</a> in PowerApps ausgeführt, um Folgendes zu überprüfen:
+<li>Codeüberprüfung für Canvas-Apps wird über das <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">Barrierefreiheitprüfungstool</a> in PowerApps ausgeführt, um Folgendes zu überprüfen:
 <ul>
 <li>Statische Formelfehler und Warnungen: Wenn Probleme gefunden werden, wird das Zertifizierungsteam die Rückmeldung zur Behebung freigeben und die App wieder bei AppSource einreichen.</li>
 <li>Laufzeitfehler: Können auftreten, wenn die App im Ausführmodus zur Ansicht geöffnet wird. Alle gefundenen Probleme werden per E-Mail gemeldet.</li>
 <li>Barrierefreiheitsfehler und Warnungen: Alle Barrierefreiheitsfehler sollten gemäß der Solution Checker-Anleitung gelöst werden.</li>
 </ul></li>
-<li>Codeüberprüfung für die Common Data Service-Lösung wird über das <a href="https://experienceisv.microsoftcrmportals.com/precertification/#/">OnDemand-Codeanalyse (ODCA)</a>-Tool durchgeführt.</li>
+<li>Codeüberprüfung für die Common Data Service-Lösung wird über das <a href="https://experienceisv.microsoftcrmportals.com/precertification/#/">OnDemand-Codeanalyse(ODCA)</a>-Tool durchgeführt.</li>
 <li>Die vom ODCA gemeldet Probleme werden manuell auf für Korrektheit überprüft und falsch positive Ergebnisse werden auf niedrigen Schweregrad verringert.</li>
 <li>Der erstellte Bericht wird dem Herausgeber per E-Mail zugestellt.</li>
 </ul>
@@ -57,8 +57,8 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <td>
 <ul>
 <li>Die Lösung wird mithilfe vom <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a> in einem PowerApps Studio installiert. Installierte Canvas-Apps werden nach der Installation manuell in der Lösung und im App-Abschnitt gesucht. Es wird sichergestellt, dass die App im Bearbeitungs- und Ausführungsmodus geöffnet wird. Die Canvas-App wird manuell von PowerApps Studio gelöscht, um die erfolgreiche Deinstallation zu überprüfen</li>
-<li>Überprüfen Sie, ob die Canvas-App erfolgreich eine Verbindung über die vom Hersteller bereitgestellten Konnektoren herstellt. Beispielsweise Common Data Service oder eine beliebige andere Verbindung.</li>
-<li>Überprüfen Sie, om alle Common Data Service-Komponenten (Entitäten, Webressourcen, Plug-Ins und andere Komponenten) der Lösung zur Verfügung stehen.</li>
+<li>Überprüfen Sie, ob die Canvas-App erfolgreich eine Verbindung über die vom Hersteller bereitgestellten Konnektoren herstellt. Beispielsweise Common Data Service oder andere Verbindungen.</li>
+<li>Überprüfen Sie, ob alle Common Data Service-Komponenten (Entitäten, Webressourcen, Plug-Ins und andere Komponenten) der Lösung zur Verfügung stehen.</li>
 <li>Deinstallieren Sie die Lösung manuell und überprüfen Sie, ob alle Komponenten, die der verwalteten Lösung zugeordnet wurden, entfernt werden.</li>
 </ul>
 </td>
@@ -84,7 +84,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 </td>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Canvas Apps</a> und <a href="https://docs.microsoft.com/flow/getting-started">Flows</a>, die eine Verbindung mit Datenquellen <i>außer</i> Common Data Service herstellen
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Canvas-Apps</a> und <a href="https://docs.microsoft.com/flow/getting-started">Flows</a>, die eine Verbindung mit Datenquellen <i>außer</i> Common Data Service herstellen
 </td>
 <td>Plausibilitätsprüfung</td>
 <td><ul>
@@ -96,7 +96,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <tr>
 <td>Codeüberprüfung</td>
 <td><ul>
-<li>Das Gleiche, was zuvor für modelgestützte Apps, Canvas-Apps und Flows erklärt wurde, die eine Verbindung mit Common Data Service herstellen</li></ul>
+<li>Das Gleiche, was zuvor für modellgesteuerte Apps, Canvas-Apps und Flows erklärt wurde, die eine Verbindung mit Common Data Service herstellen</li></ul>
 </td>
 </tr>
 <tr>
@@ -112,13 +112,13 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <td>Funktionsüberprüfung</td>
 <td>
 <ul>
-<li>Das Gleiche, was zuvor für modelgestützte Apps, Canvas-Apps und Flows erklärt wurde, die eine Verbindung mit Common Data Service herstellen</li></ul></td>
+<li>Das Gleiche, was zuvor für modellgesteuerte Apps, Canvas-Apps und Flows erklärt wurde, die eine Verbindung mit Common Data Service herstellen</li></ul></td>
 </tr>
 <tr>
 <td>Sicherheitsüberprüfung</td>
 <td>
 <ul>
-<li>Das Gleiche, was zuvor für modelgestützte Apps, Canvas-Apps und Flows erklärt wurde, die eine Verbindung mit Common Data Service herstellen</li></ul>
+<li>Das Gleiche, was zuvor für modellgesteuerte Apps, Canvas-Apps und Flows erklärt wurde, die eine Verbindung mit Common Data Service herstellen</li></ul>
 </td>
 </tr>
 </tbody>

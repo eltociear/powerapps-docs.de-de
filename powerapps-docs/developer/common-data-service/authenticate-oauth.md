@@ -1,6 +1,6 @@
 ---
-title: OAuth mit Common Data Service verwenden (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können.'
+title: Verwendung von OAuth mit Common Data Service (Common Data Service) | Microsoft Docs
+description: 'Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -24,7 +24,7 @@ Client-Anwendungen müssen die Verwendung von OAuth für den Datenzugriff über 
 OAuth benötigt für die Authentifizierung einen Identitätsanbieter. Für Common Data Service ist der Identitätsanbieter Azure Active Directory (AAD). Um sich mit AAD über ein Microsoft-Arbeits- oder Schulkonto zu authentifizieren, verwenden Sie die Azure Active Directory Authentication Libraries (ADAL).
 
 > [!NOTE]
-> In diesem Thema werden allgemeine Konzepte für die Anbindung an Common Data Service mit OAuth mit den ADAL-Bibliotheken vorgestellt. Dieser Inhalt konzentriert sich darauf, wie ein Entwickler eine Verbindung mit Common Data Service herstellen kann, nicht aber auf die Funktionsweise von OAuth oder den ADAL-Bibliotheken. Vollständige Informationen zur Authentifizierung finden Sie in der Dokumentation zu Azure Active Directory. [Was ist Authentifizierung](/azure/active-directory/develop/authentication-scenarios) ist ein guter Ausgangspunkt.
+> In diesem Thema werden allgemeine Konzepte für die Anbindung an Common Data Service mit OAuth mit den ADAL-Bibliotheken vorgestellt. Dieser Inhalt konzentriert sich darauf, wie ein Entwickler eine Verbindung zu Common Data Service herstellen kann, nicht aber auf die Funktionsweise von OAuth oder den ADAL-Bibliotheken. Ausführliche Informationen zur Authentifizierung finden Sie in der Azure Active Directory-Dokumentation. [Was ist Authentifizierung](/azure/active-directory/develop/authentication-scenarios) ist ein guter Ausgangspunkt.
 >
 >Die von uns zur Verfügung gestellten Muster sind mit entsprechenden Registrierungswerten vorkonfiguriert, so dass Sie sie ohne Generierung einer eigenen App-Registrierung ausführen können. Wenn Sie eigene Apps veröffentlichen, müssen Sie eigene Registrierungswerte verwenden.
 
@@ -32,7 +32,7 @@ OAuth benötigt für die Authentifizierung einen Identitätsanbieter. Für Commo
 
 Wenn Sie sich über OAuth verbinden, müssen Sie zunächst eine Anwendung in Ihrem Azure AD-Mandant registrieren. Wie Sie Ihre App registrieren sollten, hängt von der Art der App ab, die Sie erstellen möchten.
 
-Beginnen Sie in allen Fällen mit den grundlegenden Schritten zur Registrierung einer App, die im AAD-Thema beschrieben ist: [Schnellstart: Registrieren Sie eine App mit dem Azure Active Directory v1.0-Endpunkt](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app). Common Data Service spezifische Anweisungen finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory> Erstellen einer Anwendungsregistrierung](walkthrough-register-app-azure-active-directory.md#create-an-application-registration).
+Beginnen Sie in allen Fällen mit den grundlegenden Schritten zur Registrierung einer App, die im AAD-Thema beschrieben ist: [Schnellstart: Registrieren einer App mit dem Azure Active Directory v1.0-Endpunkt](/azure/active-directory/develop/quickstart-v1-add-azure-ad-app). Für spezifische Common Data Service-Anweisungen siehe [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory > Erstellen einer Anwendungsregistrierung](walkthrough-register-app-azure-active-directory.md#create-an-application-registration).
 
 Die Entscheidungen, die in diesem Schritt treffen müssen, hängt größtenteils von der Wahl des Anwendungstyps ab.
 
@@ -46,11 +46,11 @@ Wenn Sie eine App bei Azure AD registrieren, ist eine der Entscheidungen, die Si
 |
 |einheitlich|EinTyp von [Client-Anwendung](/azure/active-directory/develop/developer-glossary#client-application), der nativ auf einem Gerät installiert wird. |
 
-Wenn Sie **Web App /API** auswählen, müssen Sie eine **Anmelde-URL** angeben, die die URL ist, unter der Azure AD die Authentifizierungsantwort sendet, einschließlich eines Token, wenn die Authentifizierung erfolgreich war. Während Sie eine App entwickeln, ist diese in der Regel auf `http://localhost/appname:[port]` gesetzt, so dass Sie Ihre App lokal entwickeln und debuggen können. Wenn Sie Ihre App veröffentlichen, müssen Sie diesen Wert auf die veröffentlichte URL der App ändern.
+Wenn Sie **Web-App / API** auswählen, müssen Sie eine **Anmelde-URL** angeben, die die URL ist, unter der Azure AD die Authentifizierungsantwort sendet, einschließlich eines Token, wenn die Authentifizierung erfolgreich war. Während Sie eine App entwickeln, ist diese in der Regel auf `http://localhost/appname:[port]` gesetzt, so dass Sie Ihre App lokal entwickeln und debuggen können. Wenn Sie Ihre App veröffentlichen, müssen Sie diesen Wert auf die veröffentlichte URL der App ändern.
 
 Wenn Sie **Native** wählen, müssen Sie eine Umleitungs-URI bereitstellen. Dies ist eine eindeutige Kennung, an die Azure AD den Benutzer-Agenten in einer OAuth 2.0-Anfrage weiterleitet. Dies ist normalerweise ein Wert, der so formatiert ist: `//app:<guid>`. 
 
-### <a name="giving-access-to-common-data-service"></a>Zugriff auf Common Data Service gewähren
+### <a name="giving-access-to-common-data-service"></a>Zugriff gewähren auf Common Data Service
 
 Wenn Ihre Anwendung ein Client ist, der es dem authentifizierten Benutzer ermöglicht, Operationen auszuführen, müssen Sie die Anwendung so konfigurieren, dass die Access Dynamics 365 als Berechtigung von Organisationsbenutzern vergeben wird.
 
@@ -75,7 +75,7 @@ Weitere Informationen: [Als App verbinden](#connect-as-an-app)
 
 ## <a name="use-adal-libraries-to-connect"></a>Verwenden Sie ADAL-Bibliotheken, um eine Verbindung herzustellen.
 
-Verwenden Sie eine der von Microsoft unterstützten Azure Active Directory Authentication Libraries (ADAL) Client-Bibliotheken. [Azure Active Directory Authentifizierungsbibliotheken > Von Microsoft unterstützte Client-Bibliotheken](/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries).
+Verwenden Sie eine der von Microsoft unterstützten Azure Active Directory Authentication Libraries (ADAL) Client-Bibliotheken. [Azure Active Directory Authentication Libraries > Von Microsoft unterstützte Client-Bibliotheken](/azure/active-directory/develop/active-directory-authentication-libraries#microsoft-supported-client-libraries).
 
 Diese Bibliotheken sind für verschiedene Plattformen verfügbar, wie in der folgenden Tabelle dargestellt:
 
@@ -276,18 +276,18 @@ Einige Anwendungen, die Sie erstellen werden, sind nicht dazu gedacht, von einem
 
 Während Sie diese Szenarien mit Anmeldeinformationen für einen normalen Benutzer erreichen könnten, müsste dieses Benutzerkonto eine kostenpflichtige Lizenz verwenden. Dies ist nicht die empfohlene Verfahrensweise.
 
-In diesen Fällen können Sie einen speziellen Anwendungsbenutzer erstellen, der an eine von Azure Active Directory registrierte Anwendung gebunden ist und entweder ein für die Anwendung konfiguriertes Schlüsselgeheimnis verwenden oder ein [X.509](https://www.itu.int/rec/T-REC-X.509/en)-Zertifikat hochladen. Ein weiterer Vorteil dieses Ansatzes ist, dass er keine kostenpflichtige Lizenz verbraucht.
+In diesen Fällen können Sie einen speziellen Anwendungsbenutzer erstellen, der an eine von Azure Active Directory registrierte Anwendung gebunden ist und entweder ein für die App konfiguriertes Schlüsselgeheimnis verwenden oder ein [X.509](https://www.itu.int/rec/T-REC-X.509/en)-Zertifikat hochladen. Ein weiterer Vorteil dieses Ansatzes ist, dass er keine kostenpflichtige Lizenz verbraucht.
 
 ### <a name="requirements-to-connect-as-an-app"></a>Anforderungen für die Verbindung als App
 
 Um sich als App zu verbinden, benötigen Sie:
  - Eine registrierte App
- - Ein an die registrierte App gebundener Common Data Service-Benutzer
+ - Einen Common Data Service-Benutzer, der an die registrierte App gebunden ist
  - Verbinden Sie sich entweder über das Anwendungsgeheimnis oder über einen Zertifikat-Fingerabdruck.
 
 #### <a name="register-your-app"></a>Registrieren Sie die App
 
-Wenn Sie eine App registrieren, befolgen Sie die meisten der Schritte, die unter [Exemplarische Vorgehensweise: Registrieren Sie eine App bei Azure Active Directory](walkthrough-register-app-azure-active-directory.md) beschrieben sind, mit den folgenden Ausnahmen:
+Wenn Sie eine App registrieren, befolgen Sie die meisten der Schritte, die unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory](walkthrough-register-app-azure-active-directory.md) beschrieben sind, mit den folgenden Ausnahmen:
 
  - Sie müssen die Berechtigung **Zugriff auf Dynamics 365 als Organisationsbenutzer** erteilen.
  
@@ -309,15 +309,16 @@ So fügen Sie ein Passwort hinzu:
 
   Die Spalte ganz rechts enthält den Schlüsselwert, nachdem Sie die Konfigurationsänderungen gespeichert haben. Achten Sie darauf, den Schlüssel für die Verwendung in Ihrem Client-Anwendungscode zu kopieren, da er nach dem Verlassen dieser Seite nicht mehr zugänglich ist.
 
-#### <a name="common-data-service-user-account-bound-to-the-registered-app"></a>An die registrierte App gebundenes Common Data Service-Benutzerkonto
+#### <a name="common-data-service-user-account-bound-to-the-registered-app"></a>Ein Common Data Service-Benutzerkonto, das an die registrierte App gebunden ist
 
-Das erste, was Sie tun müssen, ist, eine benutzerdefinierte Sicherheitsrolle zu erstellen, die definiert, welchen Zugriff und welche Berechtigungen dieses Konto innerhalb der Common Data Service-Organisation hat. Weitere Information finden Sie unter [Erstellen oder Konfigurieren einer benutzerdefinierten Sicherheitsrolle](https://docs.microsoft.com/power-platform/admin/database-security.md#create-or-configure-a-custom-security-role)
+
+Das erste, was Sie tun müssen, ist, eine benutzerdefinierte Sicherheitsrolle zu erstellen, die definiert, welchen Zugriff und welche Rechte dieses Konto innerhalb der Common Data Service-Organisationen hat. Weitere Information finden Sie unter [Erstellen oder Konfigurieren einer benutzerdefinierten Sicherheitsrolle](/power-platform/admin/database-security#create-or-configure-a-custom-security-role)
 
 Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie das Benutzerkonto erstellen, das sie verwenden wird.
 
 <!-- Almost exactly the same intructions below can be found in powerapps-docs\developer\common-data-service\use-multi-tenant-server-server-authentication.md -->
 
-#### <a name="manually-create-a-common-data-service-application-user"></a>Manuell einen Common Data Service-Anwendungsbenutzer erstellen  
+#### <a name="manually-create-a-common-data-service-application-user"></a>Erstellen Sie einen Common Data Service Anwendungsbenutzer  
 
  Die Vorgehensweise, um diesen Benutzer zu erstellen, unterscheidet sich vom Erstellen eines lizenzierten Benutzers. Verwenden Sie die folgenden Schritte:  
   
@@ -327,7 +328,7 @@ Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie 
   
 3. Klicken Sie auf **Neu**. Überprüfen Sie dann, ob Sie das Formular **Anwendungsbenutzer** verwenden.  
   
-    Wenn Sie die Felder **Anwendungs-ID**, die **Anwendung ID-URI** und das**Azure AD Objekt** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
+    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
   
    ![Auswählen eines Anwendungsbenutzersformulars](media/select-application-user-form.PNG "Auswählen eines Anwendungsbenutzersformulars")  
   
@@ -340,7 +341,7 @@ Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie 
    |**Vollständiger Name**|Der Name Ihrer Anwendung.|  
    |**Primäre E-Mail-Adresse**|Die E-Mail-Adresse des Benutzers.|  
   
-    Die Felder **Anwendung ID-URI** und **Azure AD Objekt-ID** sind gesperrt und können Sie keine Werte für diese Felder festlegen.  
+    Die Felder **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** sind gesperrt und können Sie keine Werte für diese Felder festlegen.  
   
     Wenn Sie diesen Benutzer erstellen, werden die Werte für diese Felder aus Azure AD basierend auf dem Wert der **Anwendungs-ID** abgerufen, wenn Sie den Benutzer speichern.  
   

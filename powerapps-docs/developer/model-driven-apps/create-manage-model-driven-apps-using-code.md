@@ -3,8 +3,7 @@ title: 'Erstellen, Verwalten und Veröffentlichen von modellgesteuerten Apps mit
 description: 'Erfahren Sie, wie Sie modellgesteuerte Apps mit Code in PowerApps erstellen, verwalten und veröffentlichen.'
 keywords: ''
 ms.date: 03/04/2019
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -76,7 +75,7 @@ Sie können Komponenten in einer App hinzufügen oder entfernen, wie Siteübersi
 
 Verwenden Sie die <xref:Microsoft.Dynamics.CRM.AddAppComponents>-Aktion oder die <xref:Microsoft.Crm.Sdk.Messages.AddAppComponentsRequest>-Meldung, um Komponenten der modellgesteuerten App hinzuzufügen. Für die Aktion müssen Sie Folgendes angeben:
 - **AppId**: ID der App, der Sie Komponenten hinzufügen möchten
-- **Komponenten** Eine Sammlung von Komponenten, die hinzugefügt werden sollen. Sie müssen die ID sowie den Entitätstyp der Komponente angeben, die Sie hinzufügen möchten. Eine Liste der Entitäten in der Common Data Service-Internet API finden Sie unter <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
+- **Komponenten** Eine Sammlung von Komponenten, die hinzugefügt werden sollen. Sie müssen die ID sowie den Entitätstyp der Komponente angeben, die Sie hinzufügen möchten. Eine Liste der Entitätstypen in Common Data Service-Web-API finden Sie unter <xref:Microsoft.Dynamics.CRM.EntityTypeIndex>.
 
 Die folgende Internet-API-Anforderung fügt der App eine Ansicht (savedquery) und ein Formular (systemform) hinzu:
 
@@ -128,7 +127,7 @@ Accept: application/json
 
 Das Validieren einer App umfasst das Überprüfen der Abhängigkeiten für die Komponenten, die Sie in der modellgesteuerten App hinzugefügt haben, um sicherzustellen, dass die App adäquat funktioniert. Dies ist das Gleiche wie **Überprüfen** im App-Designer. Weitere Informationen: [Überprüfen der App](../../maker/model-driven-apps/validate-app.md)
 
-Verwenden Sie die <xref:Microsoft.Dynamics.CRM.ValidateApp>-Funktionen oder die <xref:Microsoft.Crm.Sdk.Messages.ValidateAppRequest>-Meldung, um die App zu überprüfen. Die folgende Web-API-Anforderung zeigt, wie die modellgesteuerte App mit ID überprüft wird: dd621d4a-d898-e711-80e7-00155db763be:
+Verwenden Sie die <xref:Microsoft.Dynamics.CRM.ValidateApp>-Funktionen oder die <xref:Microsoft.Crm.Sdk.Messages.ValidateAppRequest>-Meldung, um die App zu überprüfen. Die folgende Web-API-Anforderung zeigt, wie die modellgesteuerte App mit der ID: dd621d4a-d898-e711-80e7-00155db763be überprüft wird:
 
 `GET [Organization URI]/api/data/v9.0/ValidateApp(AppModuleId=dd621d4a-d898-e711-80e7-00155db763be)`
 
@@ -191,7 +190,7 @@ OData-Version: 4.0
 
 Nachdem Sie erforderlichen Komponenten zu Ihrer modellgesteuerten App hinzugefügt bzw. sie überprüft haben, müssen Sie diese veröffentlichen, um sie Benutzern zur Verfügung zu stellen.
 
-Mithilfe der <xref:Microsoft.Dynamics.CRM.PublishXml>-Aktion, oder der <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest>-Mitteilung veröffentlichen Sie die modellgesteuerte App. Die Anforderung zeigt, wie die modellgesteuerte App mit ID veröffentlicht wird: dd621d4a-d898-e711-80e7-00155db763be:
+Mithilfe der <xref:Microsoft.Dynamics.CRM.PublishXml>-Aktion, oder der <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest>-Mitteilung veröffentlichen Sie die modellgesteuerte App. Die folgende Anforderung zeigt, wie die modellgesteuerte App mit der ID: dd621d4a-d898-e711-80e7-00155db763be veröffentlicht wird:
 
 ```http
 POST [Organization URI]/api/data/v9.0/PublishXml HTTP/1.1
@@ -225,8 +224,9 @@ Accept: application/json
 
 Um die Zuordnung einer Sicherheitsrolle aus einer modellgesteuerte App zu entfernen, verwenden Sie die DELETE-Anforderung mit derselben Navigationseigenschaft. Beispiel:
 
-`DELETE [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
-`
+```
+DELETE  [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)/appmoduleroles_association/$ref?$id=[Organization URI]/api/data/v9.0/roles(<roleId)
+```
 
 ## <a name="manage-your-model-driven-apps-and-its-components"></a>Verwalten Ihrer modellgesteuerten Apps und deren Komponenten
 
@@ -249,7 +249,7 @@ Um App-Komponenten für eine modellgesteuerte App abzurufen, verwenden Sie die <
 
 ### <a name="retrieve-security-roles-associated-with-published-model-driven-app"></a>Rufen Sie Sicherheitsrollen ab, die einer veröffentlichten modellgesteuerten App zugeordnet sind
 
-Um die Sicherheitsrollen abzurufen, die der modellgesteuerten App zugeordnet sind, können die `$expand` Systemabfrageoption mit der **appmoduleroles_association**-Navigationseigenschaft verwenden. Beispielsweise ist hier die Anforderung, alle Sicherheitsrollen anzuzeigen, die der modellgesteuerten App mit der ID zugeordnet sind: dd621d4a-d898-e711-80e7-00155db763be:
+Um die Sicherheitsrollen abzurufen, die der modellgesteuerten App zugeordnet sind, können die `$expand` Systemabfrageoption mit der **appmoduleroles_association**-Navigationseigenschaft verwenden. Beispielsweise ist hier die Anforderung, alle Sicherheitsrollen anzuzeigen, die der modellgesteuerten App mit der ID: dd621d4a-d898-e711-80e7-00155db763be zugeordnet sind:
 
 `GET [Organization URI]/api/data/v9.0/appmodules(dd621d4a-d898-e711-80e7-00155db763be)?$expand=appmoduleroles_association&$select=name,appmoduleroles_association`
 

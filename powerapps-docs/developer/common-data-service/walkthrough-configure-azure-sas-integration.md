@@ -1,10 +1,9 @@
 ---
-title: 'Exemplarische Vorgehensweise: Konfigurieren von Microsoft Azure (SAS) für die Integration für die Integration (Common Data Service) | Microsoft Docs'
-description: 'Die exemplarische Vorgehensweise führt Sie durch die Schritte zum Konfigurieren des Azure Service Bus-Austellers, -Bereichs und der -Regeln, damit eine Listener-Anwendung die "Common Data Service"-Messages lesen kann, die an den Azure Service Bus übermittelt werden.'
+title: 'Exemplarische Vorgehensweise: Konfigurieren von Microsoft Azure (SAS) für die Integration (Common Data Service) | Microsoft Docs'
+description: 'Die exemplarische Vorgehensweise führt Sie durch die Schritte zum Konfigurieren des Azure Service Bus-Austellers, -Bereichs und der -Regeln, damit eine Listener-Anwendung die Common Data Service-Messages lesen kann, die an den Azure Service Bus übermittelt werden.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -20,16 +19,16 @@ search.app:
   - D365CE
 ---
 
-# <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service"></a>Tutorial: Konfigurieren von Azure (SAS) für die Integration in Common Data Service
+# <a name="tutorial-configure-azure-sas-for-integration-with-common-data-service"></a>Lernprogramm: Konfigurieren von Azure (SAS) für die Integration in Common Data Service
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-configure-azure-sas-integration -->
 
-Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Konfigurieren des Azure Service Bus-Austellers, -Bereichs und der -Regeln, damit eine Listener-Anwendung die "Common Data Service"-Messages lesen kann, die an den Azure Service Bus übermittelt werden.  
+Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Konfigurieren des Azure Service Bus-Austellers, -Bereichs und der -Regeln, damit eine Listener-Anwendung die Common Data Service-Messages lesen kann, die an den Azure Service Bus übermittelt werden.  
   
 > [!NOTE]
->  Diese Vorgehensweise gilt für jede beliebige "Common Data Service"-Bereitstellung, wenn die SAS-Autorisierung für das Azure-Messaging verwendet wird. Weitere Informationen zur Azure Service Bus-Authentifizierung finden Sie unter: [Service Bus-Authentifizierung und -Autorisierung](https://azure.microsoft.com/en-us/documentation/articles/service-bus-authentication-and-authorization/).  
+>  Dieser Vorgehensweise gilt für eine beliebige Common Data Service-Bereitstellung, wenn die SAS-Autorisierung für das Azure-Messaging verwendet wird. Weitere Informationen zur Azure Service Bus-Authentifizierung finden Sie unter: [Service Bus-Authentifizierung und -Autorisierung](https://azure.microsoft.com/documentation/articles/service-bus-authentication-and-authorization/).  
 >   
-> Sie müssen das Plug-In-Registrierungstool verwenden. Informationen zum herunterladen des Plug-In-Registrierungstools erhalten Sie unter [Tools von NuGet herunterladen](download-tools-NuGet.md).
+> Sie müssen das Plug-In-Registrierungstool verwenden. Um das Plugin Registration Tool herunterzuladen, gehen sie zu [Tools herunterlae von NuGet](download-tools-NuGet.md).
   
 ## <a name="prerequisites"></a>Voraussetzungen  
   
@@ -48,7 +47,7 @@ Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Konfigurier
   
 ## <a name="create-a-service-endpoint"></a>Erstellt eines Dienstendpunkts
 
-Eine [ServiceEndpoint-Entität ](reference/entities/serviceendpoint.md) enthält Konfigurationsdaten, die für ein externes Messaging mit einem Azure Service Bus-Lösungsendpunkt erforderlich sind. Indem Sie das Plug-In-Registrierungstool verwenden, können Sie einfach eine Dienstendpunkt-Entität in einer Common Data Service-Organisation erstellen und den Aussteller, den Umfang und die Regeln für den Service Bus-Endpunkt konfigurieren. D:\GitHub\power-apps\powerapps-docs-pr\powerapps-docs\developer\common-data-service\reference\entities\serviceendpoint.md
+Eine [ServiceEndpoint-Entität ](reference/entities/serviceendpoint.md) enthält Konfigurationsdaten, die für ein externes Messaging mit einem Azure Service Bus-Lösungsendpunkt erforderlich sind. Indem Sie das Plug-In-Registrierungstool verwenden, können Sie einfach eine Dienstendpunkt-Entität in einer Common Data Service-Organisation erstellen und den Aussteller, den Umfang und die Regeln für den Service Bus-Endpunkt konfigurieren.
   
 ### <a name="register-a-service-endpoint"></a>Registrieren eines Dienstendpunkts  
   

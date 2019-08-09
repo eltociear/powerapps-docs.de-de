@@ -37,7 +37,7 @@ AdventureWorksCycleServiceContext context = new AdventureWorksCycleServiceContex
   
 Nachdem Sie das Kontextobjekt für den Organisationsdienst erstellt haben, können Sie damit beginnen, Entitäten nachzuverfolgen, zu erstellen, zu ändern oder zu löschen. 
   
-Der Organisationsdienstkontext muss jede Entität oder Beziehung nachverfolgen, die Sie an Common Data Service-Apps senden möchten. Sie könnten beispielsweise einen Datensatz mit einer LINQ-Abfrage abrufen und der Kontext würde diese Entität nachverfolgen, oder Sie können die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)> Methode verwenden, damit der Kontext mit der Nachverfolgung der Entität beginnt. Sie können mit den Daten in einer Client-Anwendung arbeiten und neue Entitäten oder verknüpfte Entitäten erstellen sowie vorhandene Entitäten bearbeiten, aber Sie müssen die `SaveChanges`-Methode für nachverfolgte Entitäten aufrufen, um Änderungen an den Common Data Service-Server zu übermitteln.  
+Der Organisationsdienstkontext muss jede Entität oder Beziehung nachverfolgen, die Sie an Common Data Service senden möchten. Sie könnten beispielsweise einen Datensatz mit einer LINQ-Abfrage abrufen und der Kontext würde diese Entität nachverfolgen, oder Sie können die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)> Methode verwenden, damit der Kontext mit der Nachverfolgung der Entität beginnt. Sie können mit den Daten in einer Client-Anwendung arbeiten und neue Entitäten oder verknüpfte Entitäten erstellen sowie vorhandene Entitäten bearbeiten, aber Sie müssen die `SaveChanges`-Methode für nachverfolgte Entitäten aufrufen, um Änderungen an Common Data Service zu übermitteln.  
   
 <a name="track_changes"></a>
 
@@ -85,7 +85,17 @@ if (pam != null)
     Task firstTask = pam.Contact_Tasks.FirstOrDefault();  
 }  
 ```  
+### <a name="use-the-addlink-method"></a>Verwendung der AddLink-Methode  
+ Sie können die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddLink(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship,Microsoft.Xrm.Sdk.Entity)> Methode verwenden, um Verbindungen herzustellen. Sie müssen die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> aufrufen, bevor der Server mit den neuen Linkinformationen aktualisiert wird.  
   
+ Die folgenden Codebeispiel zeigen, wie Sie eine Zuordnung zwischen einem Kontakt und einer Firma herstellen.  
+  
+```csharp  
+Relationship relationship = new Relationship("account_primary_contact");  
+context.AddLink(contact, relationship, account);  
+context.SaveChanges();  
+```  
+
 <a name="save_changes"></a>
 
 ## <a name="save-changes"></a>Änderungen speichern
@@ -106,8 +116,8 @@ Manchmal kann es erforderlich sein, Aktionen basierend auf Änderungen des <xref
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnBeginLinkTracking(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship,Microsoft.Xrm.Sdk.Entity)>|Aufgerufen nachdem ein Link an den `OrganizationServiceContext` angefügt wurde.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnEndEntityTracking(Microsoft.Xrm.Sdk.Entity)>|Aufgerufen nachdem eine Entität aus dem `OrganizationServiceContext` entfernt wurde.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnEndEntityTracking(Microsoft.Xrm.Sdk.Entity)>|Aufgerufen nachdem ein Link aus dem `OrganizationServiceContext` entfernt wurde.|  
-|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecuting(Microsoft.Xrm.Sdk.OrganizationRequest)>|Wird aufgerufen direkt bevor eine Abfrage an Common Data Service gesendet wird.|  
-|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecute(Microsoft.Xrm.Sdk.OrganizationRequest,Microsoft.Xrm.Sdk.OrganizationResponse)>|Wird aufgerufen direkt nachdem eine Abfrage an Common Data Service gesendet wurde, unabhängig davon, ob eine Ausnahme aufgetreten ist oder nicht.|  
+|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecuting(Microsoft.Xrm.Sdk.OrganizationRequest)>|Aufgerufen, direkt bevor eine Abfrage an Common Data Service gesendet wird.|  
+|<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnExecute(Microsoft.Xrm.Sdk.OrganizationRequest,Microsoft.Xrm.Sdk.OrganizationResponse)>|Aufgerufen direkt nachdem eine Abfrage an Common Data Service gesendet wurde, unabhängig davon, ob eine Ausnahme aufgetreten ist oder nicht.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnSavingChanges(Microsoft.Xrm.Sdk.Client.SaveChangesOptions)>|Aufgerufen bevor ein Vorgang nach einem vom Aufruf von `SaveChanges` auftritt.|  
 |<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.OnSaveChanges(Microsoft.Xrm.Sdk.SaveChangesResultCollection)>|Aufgerufen, wenn alle Vorgänge für einen Aufruf von `SaveChanges` abgeschlossen wurden, oder falls ein Fehler auftritt.|  
 
@@ -116,7 +126,7 @@ Manchmal kann es erforderlich sein, Aktionen basierend auf Änderungen des <xref
 
 ## <a name="data-operations"></a>Datenvorgänge
 
-Sie können Objekte im Organisationsservicekontext ändern, erstellen und löschen, und die an den Objekten vorgenommenen Änderungen werden von Common Data Service nachverfolgt. Wenn <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Methode aufgerufen wird, werden die Befehle, die die entsprechenden Einfüge-, Aktualisierungs- oder Löschanweisungen für Daten in Common Data Service ausführen von Common Data Service generiert und ausgeführt.  
+Sie können Objekte im Organisationsservicekontext ändern, erstellen und löschen, und die an den Objekten vorgenommenen Änderungen werden von Common Data Service nachverfolgt. Wenn <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Wenn die Common Data Service.-Methode aufgerufen wird, werden die Befehle, die die entsprechenden Einfüge-, Aktualisierungs- oder Löschanweisungen für Daten in Common Data Service ausgeführt.  
   
 Bei der Verwendung von Entitätsklassen mit früher Bindung verwenden Sie den Entitätsnamen und Attributschemanamen, um eine Entität oder ein Attribut anzugeben, die bzw. das verwendet werden soll. Attributschemanamen werden in <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata><xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.SchemaName> und <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName>definiert oder Sie können die Klassen- und Eigenschaftennamen verwenden, die in der Code-generierten Datei angezeigt werden. Das folgende Beispiel zeigt, wie Sie einen Wert dem E-Mail-Attribut einer neuen Kontaktinstanz zuweisen.  
   
@@ -155,13 +165,13 @@ orgContext.SaveChanges();
 
 Es gibt mehrere Punkte, die Sie im vorherigen Codebeispiel beachten sollten. Nachdem ein neuer Kontakt instanziiert wurde müssen Sie zunächst dieses Kontaktobjekt an die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.AddObject(Microsoft.Xrm.Sdk.Entity)>- Methode übergeben, damit der Kontext mit der Nachverfolgung des Objekts beginnen kann. Der zweite Punkt, den Sie beachten sollten, ist, dass das neue Objekt auf dem Server gespeichert wird, indem die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>- Methode.  
   
-Wenn Sie ein Ziel zum Kontext und vor der <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Methode wurde, der generiert Kontext eine ID für das neue Objekt bezeichnet. Eine Ausnahme, die `SaveChangesResults` enthält, wird über die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>-Methode ausgelöst, wenn Änderungen an Common Data Service fehlschlagen.  
+Wenn Sie ein Ziel zum Kontext und vor der <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Methode wurde, der generiert Kontext eine ID für das neue Objekt bezeichnet. Eine Ausnahme, die `SaveChangesResults` enthält, wird über die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>-Methode ausgelöst, wenn Aktualisierungen an den Common Data Service-Daten nicht erfolgreich sind.  
   
 <a name="update"></a>   
 
 ## <a name="update-an-entity-record"></a>Aktualisieren eines Entitätsdatensatzes  
 
-Common Data Service verfolgt Änderungen an Objekten, die an den Organisationsservicekontext angefügt sind. Um einen vorhandenen Entitätsdatensatz zu ändern, müssen Sie zunächst das Objekt zum Kontext hinzufügen. Um ein Objekt zum Kontext hinzufügen, müssen Sie zunächst den Entitätsdatensatz aus Common Data Service abrufen und dann das Objekt zum Kontext hinzufügen, indem Sie die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)>-Methode verwenden. Wenn das Objekt vom Kontext nachverfolgt wird, können Sie den Datensatz aktualisieren, indem Sie die Attribute der Entität festlegen.  
+Änderungen an Objekten, die an den Organisationsservicekontext angefügt sind, werden von Common Data Service nachverfolgt. Um einen vorhandenen Entitätsdatensatz zu ändern, müssen Sie zunächst das Objekt zum Kontext hinzufügen. Um ein Objekt zum Kontext hinzuzufügen, müssen Sie zunächst den Entitätsdatensatz aus Common Data Service abrufen und dann das Objekt zum Kontext hinzufügen, indem Sie die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.Attach(Microsoft.Xrm.Sdk.Entity)>-Methode verwenden. Wenn das Objekt vom Kontext nachverfolgt wird, können Sie den Datensatz aktualisieren, indem Sie die Attribute der Entität festlegen.  
   
 Das folgende Beispiel zeigt, wie ein Kontenattribut mithilfe von Klassen mit früher Bindung aktualisiert wird.  
   
@@ -181,7 +191,7 @@ Account.EMailAddress1 = null;
 
 ## <a name="delete-an-entity-record"></a>Löscht einen Entitätsdatensatz   
 
-Der Organisationsservicekontext muss das Objekt nachverfolgen, damit ein Entitätsdatensatz gelöscht werden kann. Nachdem das Objekt im Kontext verfügbar ist, können Sie die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.DeleteObject(Microsoft.Xrm.Sdk.Entity)>-Methode verwenden, um das Objekt im Kontext zum Löschen zu markieren. Beachten Sie, dass der Entitätsdatensatz in Common Data Service erst gelöscht wird, wenn die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges>-Methode aufgerufen wird. Methode aufgerufen wird.  
+Der Organisationsservicekontext muss das Objekt nachverfolgen, damit ein Entitätsdatensatz gelöscht werden kann. Nachdem das Objekt im Kontext verfügbar ist, können Sie die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.DeleteObject(Microsoft.Xrm.Sdk.Entity)>-Methode verwenden, um das Objekt im Kontext zum Löschen zu markieren. Beachten Sie, dass der Entitätsdatensatz in Common Data Service erst gelöscht wird, wenn die <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.SaveChanges> Methode aufgerufen wird.  
   
 ### <a name="see-also"></a>Siehe auch
 

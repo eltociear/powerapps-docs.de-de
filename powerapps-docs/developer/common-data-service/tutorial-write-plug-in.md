@@ -1,5 +1,5 @@
 ---
-title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Service) | MicrosoftDocs'
+title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Service) | Microsoft Docs'
 description: 'Dieses Lernprogramm ist das erste in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten.'
 ms.custom: ''
 ms.date: 02/23/2019
@@ -44,7 +44,7 @@ Erstellen Sie ein asynchrones Plug-In, das in der Erstellungsmeldung der Firmene
 - Visual Studio 2017
 - Kenntnisse der Programmiersprache Visual C#
 - Laden Sie das das Plug-in-Registrierungstool herunter.
-    - Informationen zum Herunterladen des Plug-In-Registrierungstools erhalten Sie unter [Tools von NuGet herunterladen](download-tools-nuget.md). Dieses Thema enthält Anweisungen zur Verwendung eines PowerShell-Skripts, um die aktuellen Tools von NuGet herunterzuladen.
+    - Informationen zum Herunterladen des Plug-In-Registrierungstools erhalten Sie unter: [Tools von NuGet herunterladen](download-tools-nuget.md). Dieses Thema enthält Anweisungen zur Verwendung eines PowerShell-Skripts, um die aktuellen Tools von NuGet herunterzuladen.
 
 ## <a name="create-a-plug-in-project"></a>Plug-In-Projekt erstellen
 
@@ -57,13 +57,13 @@ Sie müssen ein Plug-In in Visual Studio schreiben. Führen Sie diese Schritte a
     ![öffnen Sie eine neuen Klassenbibliothek (.NET Framework)-Projekt mit .NET Framework 4.6.2](media/tutorial-write-plug-in-create-visual-studio-project.png)
 
     Der Name, der für das Projekt verwendet wird, ist der Name der Assemblys. Dieses Lernprogramm verwendetet den Namen `BasicPlugin`.
-1. Klicken Sie im **Lösungsexplorer** mit der rechten Maustaste in das Projekt und wählen Sie **NuGet Pakete verwalten...** aus dem Kontextmenü aus.
+1. Klicken Sie im **Lösungsexplorer** mit der rechten Maustaste in das Projekt und wählen Sie **NuGet-Pakete verwalten...** aus. aus dem Kontextmenü aus.
 
-    ![NuGet-Package verwalten](media/tutorial-write-plug-in-manage-nuget-packages.png)
+    ![Verwalten von NuGet-Paketen](media/tutorial-write-plug-in-manage-nuget-packages.png)
 
 1. Wählen Sie **Durchsuchen** aus und suchen Sie nach `Microsoft.CrmSdk.CoreAssemblies` und installieren Sie die aktuelle Version.
 
-    ![Installieren Sie das Microsoft.CrmSdk.CoreAssemblies NuGet-Paket](media/tutorial-write-plug-in-install-microsoft.crmsdk.coreassemblies.png)
+    ![Installieren Sie das Microsoft.CrmSdk.CoreAssemblies-NuGet-Paket](media/tutorial-write-plug-in-install-microsoft.crmsdk.coreassemblies.png)
 
 1. Sie müssen **Ich stimme zu** im Dialogfeld **Lizenz-Abnahme** auswählen.
 1. Klicken Sie im **Lösungsexplorer** mit der rechten Maustaste auf die Datei `Class1.cs` und wählen Sie im Kontextmenü **Umbenennen** aus.
@@ -209,7 +209,7 @@ In Visual Studio drücken Sie **F6**, um die Assembly zu erstellen. Überprüfen
 1. Klicken Sie auf **OK**, um das Dialogfeld **Schlüssel mit starkem Namen erstellen** zu schließen.
 1. Überprüfen Sie in der Registerkarte **Build** der Projekteigenschaften, dass die **Konfiguration** auf **Debuggen** festgelegt ist.
 1. Drücken Sie **F6**, um das Plug-In erneut zu erstellen.
-1. Verwenden Sie den Windows-Explorer, um unter ` \bin\Debug\BasicPlugin.dll` nach dem erstellten Plug-In zu suchen.
+1. Verwenden Sie den Windows-Explorer, um unter `\bin\Debug\BasicPlugin.dll` nach dem erstellten Plug-In zu suchen.
 
 > [!NOTE]
 > Erstellen Sie die Assembly mit der Konfiguration **Debuggen**, weil Sie den Plug-In-Profiler verwenden, um es in einem späteren Lernprogramm zu debuggen.   Bevor Sie ein Plug-In mit Ihrer Lösung einschließen, sollten Sie es mit der Versionskonfiguration erstellen.
@@ -230,7 +230,7 @@ Zum Registrieren eines Plug-Ins benötigen Sie das Plug-In-Registrierungstool
 
     ![Dialog "Neue Assembly registrieren"](media/tutorial-write-plug-in-register-new-assembly-dialog.png)
 
-1. Vergewissern Sie sich für Office 365-Benutzer, dass der **Isolationsmodus** **Sandbox** und der **Speicherort** für die Assembly **Datenbank** ist.
+1. Vergewissern Sie sich für Office 365-Benutzer, dass der **Isolationsmodus** **Sandkasten** und der **Speicherort** für die Assembly **Datenbank** ist.
 
     > [!NOTE]
     > Weitere Optionen für **Isolationsmodus** und **Speicherort** gelten für lokale Dynamics 365-Bereitstellungen. Als Standort können Sie die Datenbank des D365-Servers, den lokalen Speicher (Festplatte) des Servers oder den Cache für die globale Assembly des Servers angeben. Weitere Informationen finden Sie unter [Plug-in-Speicher](/dynamics365/customer-engagement/developer/register-deploy-plugins#plug-in-storage).

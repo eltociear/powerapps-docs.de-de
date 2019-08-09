@@ -1,7 +1,7 @@
 ---
 title: retrieveRecord (Client-API-Referenz) in modellgestützten Apps | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: reference
 applies_to: Dynamics 365 (online)
 ms.assetid: d4e92999-3b79-4783-8cac-f656fc5f7fda
@@ -80,12 +80,12 @@ Bei Erfolg wird ein Versprechenmit einem JSON-Objekt zurückgegeben, mit den abg
 
 ### <a name="basic-retrieve"></a>Grundlegendes Abrufen 
 
-Ruft den Namen und den Umsatz eines Firmendatensatz ab, mit Datensatz-ID = 5531d753-95af-e711-a94e-000d3a11e605.
+Ruft den Namen und den Umsatz eines Firmendatensatzes mit der Datensatz-ID = 5531d753-95af-e711-a94e-000d3a11e605 ab.
 
 ```JavaScript
 Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$select=name,revenue").then(
     function success(result) {
-        console.log(`Retrieved values: Name: ${result.name}, Revenue: ${result.revenue}`);
+        console.log("Retrieved values: Name: " + result.name + ", Revenue: " + result.revenue);
         // perform operations on record retrieval
     },
     function (error) {
@@ -101,12 +101,13 @@ Im oben aufgeführten Beispiel enthält Folgendes auf der Konsole; Sie sehen ggf
 
 ### <a name="retrieve-related-entities-for-an-entity-instance-by-expanding-single-valued-navigation-properties"></a>Abrufen verknüpfter Entitäten für eine Entitätsinstanz durch Erweitern einwertiger Navigationseigenschaften
 
- Im folgenden Beispiel wird gezeigt, wie der Kontakt für einen Firmendatensatz mit datensatz-ID = a8a19cdd-88df-e311-b8e5-6c3be5a8b200 abgerufen wird. Für den in Verbindung stehenden Kontaktdatensatz rufen wir nur die Eigenschaften **contactid** und **fullname** ab.
+ Im folgenden Beispiel wird gezeigt, wie der Kontakt für einen Firmendatensatz mit der Datensatz-ID = a8a19cdd-88df-e311-b8e5-6c3be5a8b200 abgerufen wird. Für den in Verbindung stehenden Kontaktdatensatz rufen wir nur die Eigenschaften **contactid** und **fullname** ab.
 
 ```JavaScript
 Xrm.WebApi.retrieveRecord("account", "a8a19cdd-88df-e311-b8e5-6c3be5a8b200", "?$select=name&$expand=primarycontactid($select=contactid,fullname)").then(
     function success(result) {
-        console.log(`Retrieved values: Name: ${result.name}, Primary Contact ID: ${result.primarycontactid.contactid}, Primary Contact Name: ${result.primarycontactid.fullname}`);
+        console.log("Retrieved values: Name: " + result.name + ", Primary Contact ID: " + result.primarycontactid.contactid +
+                ", Primary Contact Name: " + result.primarycontactid.fullname);
         // perform operations on record retrieval
     },
     function (error) {

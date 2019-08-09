@@ -2,7 +2,7 @@
 title: Verwenden von Lösungen in PowerApps | MicrosoftDocs
 description: 'Hier erfahren Sie, wie Sie die Lösung nutzen, um Apps zu erstellen oder anzupassen'
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -12,10 +12,10 @@ applies_to:
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x
   - powerapps
-author: Mattp123
+author: caburk
 ms.assetid: 72bacfbb-96a3-4daa-88ff-11bdaaac9a3d
 caps.latest.revision: 57
-ms.author: matp
+ms.author: caburk
 manager: kvivek
 search.audienceType:
   - maker
@@ -93,16 +93,17 @@ In PowerApps können Sie den klassischen Projektmappen-Explorer anzeigen, indem 
 
 - Benutzerdefinierte Konnektoren sind nicht in einer Lösung verfügbar.
 - Canvas-Apps müssen nach dem Import einer Lösung geöffnet werden, um die Verbindungen zu aktualisieren.
-- Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung noch bearbeitet werden.
+- Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung noch bearbeitet, aber nicht wieder veröffentlicht werden.
 - Abhängigkeiten sind für Canvas-Apps nicht verfügbar.
 - Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. 
--   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank verwaltet.
+-   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank (Common Data Service) verwaltet.
 -   Common Data Service-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück. 
 -   In einer Lösung erstellte Canvas-Apps und Flows können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden.
 -   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt.
 - Über eine Schaltfläche ausgelöste Flows sind in Lösungen nicht verfügbar.
 - Über Canvas-App ausgelöste Flows sind in Lösungen nicht verfügbar.
 - Über Microsoft 365-Anwendungen wie SharePoint und Excel ausgelöste Flows sind nicht in Lösungen verfügbar.
+- Flows in Lösungen unterstützen keine delegierte Authentifizierung. Beispielsweise wird der Zugriff auf einen Flow nicht automatisch anhand des Zugriffs auf die SharePoint-Liste erteilt, aus der der Flow erstellt wurde.
 
  Ausführliche Informationen zum Anpassen einzelner Lösungskomponenten finden Sie in den folgenden Themen:  
   

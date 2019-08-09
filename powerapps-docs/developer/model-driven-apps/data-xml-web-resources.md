@@ -3,8 +3,7 @@ title: Daten (XML)-Webressourcen (modellgesteuerte Apps) | Microsoft Docs
 description: 'Infos zur Verwendung von Webressourcen von Daten (XML), um Daten sicher aufzurufen und zu speichern.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -22,7 +21,7 @@ search.app:
 
 # <a name="data-xml-web-resources"></a>Webressourcen von Daten (XML)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/data-xml-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/data-xml-web-resources -->
 
 Verwenden Sie Webressourcen von Daten (XML), um Daten sicher aufzurufen und zu speichern.  
   
@@ -39,7 +38,8 @@ Verwenden Sie Webressourcen von Daten (XML), um Daten sicher aufzurufen und zu s
 ### <a name="see-also"></a>Siehe auch  
  [Webressourcen](web-resources.md)   
  [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet (CSS)-Webressourcen](css-web-resources.md)   
+ [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
  [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
  [Verwenden von Bild (JPG, PNG, GIF, ICO)-Webressourcen](image-web-resources.md)   
- [Verwenden von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo--> [Verwenden von Stylesheet (XSL)-Webressourcen](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Verwenden von Silverlight (XAP)-Webressourcen](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Verwenden von Stylesheet (XSL)-Webressourcen](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->

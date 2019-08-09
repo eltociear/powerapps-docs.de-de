@@ -1,5 +1,5 @@
 ---
-title: Übersicht des PowerApps-Komponentenframeworks | MicrosoftDocs
+title: Was sind benutzerdefinierte Komponenten? | Microsoft Docs
 description: 'Verwenden Sie das PowerApps-Komponentenframework, um benutzerdefinierte Komponenten zu erstellen, um erweiterte Benutzererfahrung für Benutzer bereitzustellen, um Daten in Formularen, Ansichten und Dashboards anzuzeigen und zu bearbeiten.'
 manager: kvivek
 ms.date: 04/23/2019
@@ -9,18 +9,13 @@ ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 ---
 
-# <a name="what-are-custom-components"></a>Was sind benutzerdefinierte Komponenten
+# <a name="what-are-custom-components"></a>Was sind benutzerdefinierte Komponenten?
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Benutzerdefinierte Komponenten gehören zum Typ Lösungskomponente. Das bedeutet, dass sie in einer Lösung enthalten sein und in verschiedenen Umgebungen installiert werden können. Weitere Informationen: [Verpacken und Bereitstellen von Erweiterungen mithilfe von Lösungen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
+Benutzerdefinierte Komponenten gehören zum Typ Lösungskomponente. Das bedeutet, dass sie in einer Lösung enthalten sein und in verschiedenen Umgebungen installiert werden können. Weitere Informationen: [Verpacken und Bereitstellen von Erweiterungen mithilfe von Lösungen](https://docs.microsoft.com/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
 Sie fügen benutzerdefinierte Komponenten hinzu, indem Sie sie in einer Lösung einfügen und dann in das System importieren. Sobald sie im System sind, können Administrator- und Systemanpasser Formularfelder, Unterraster, Ansichten und Dashboard-Unterraster konfigurieren, um sie anstelle von Standardkomponenten zu verwenden.
-
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../includes/cc-preview-features-no-ms-support.md)]
 
 Benutzerdefinierte Komponenten bestehen aus drei Bestandteilen:
 

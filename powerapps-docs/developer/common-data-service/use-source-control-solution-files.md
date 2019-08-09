@@ -1,5 +1,5 @@
 ---
-title: Quellsteuerelement mit Lösungsdateien (Common Data Service) | Microsoft Docs
+title: Quellcodeverwaltung mit Lösungsdateien (Common Data Service) | Microsoft Docs
 description: 'Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem verwendet werden. Nachdem eine Lösungs-ZIP-Datei in einen Ordner extrahiert wurde, fügen Sie einfach die Dateien zu Ihrem Quellcodeverwaltungssystem hinzu. Diese Dateien können dann auf einem anderen Computer synchronisiert werden, wo sie in eine neue identische Lösungs-ZIP-Datei gepackt werden können.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -24,7 +24,7 @@ Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem v
  Wenn weitere Anpassungen und Änderungen für die Lösung erforderlich sind, sollten Entwickler vorhandene Komponenten mit bestehenden Methoden bearbeiten oder anpassen, sie erneut exportieren, um eine ZIP-Datei zu erstellen und die komprimierte Lösungsdatei in den gleichen Ordner zu extrahieren.  
   
 > [!IMPORTANT]
->  Außer in den in [Wann die Anpassungsdatei bearbeitet werden sollte](/model-driven-apps/when-edit-customization-file.md) beschriebenen Abschnitte wird das manuelle Bearbeiten extrahierter Komponentendateien und ZIP-Dateien nicht unterstützt.  
+>  Außer in den in [Wann die Anpassungsdatei bearbeitet werden sollte](../model-driven-apps/when-edit-customization-file.md) beschriebenen Abschnitte wird das manuelle Bearbeiten extrahierter Komponentendateien und ZIP-Dateien nicht unterstützt.  
   
  Wenn das SolutionPackager-Tool die Komponentendateien extrahiert, überschreibt es nicht die vorhandenen Komponentendateien mit demselben Namen, wenn der Inhalt der Dateien identisch ist. Darüber hinaus beachtet das Tool das Schreibschutzattribut der komponentendateien und gibt eine Warnung im Konsolenfenster aus, dass einige Dateien nicht überschrieben wurden. Dadurch kann der Benutzer den minimalen Dateiensatz aus der Quellcodeverwaltung auschecken, die sich geändert haben. Der Parameter `/clobber` kann verwendet werden, um die Dateien zu überschreiben und schreibgeschützte Dateien schreiben oder löschen zu lassen. Der Parameter `/allowWrite` kann verwendet werden, um zu bewerten, welche Auswirkungen ein Extrahierungsvorgang hat, ohne dass dabei Dateien geschrieben oder gelöscht werden. Die Verwendung des Parametes `/allowWrite` mit ausführlicher Protokollierung ist effektiv.  
   

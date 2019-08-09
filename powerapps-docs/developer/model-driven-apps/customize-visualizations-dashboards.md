@@ -3,8 +3,7 @@ title: Dashboards und Visualisierungen anpassen (modellgesteuerte Apps) Startsei
 description: 'Sie können Dashboards so konfigurieren, dass Sie Daten aus verschiedenen Bereichen von Dynamics 365, beispielsweise Vertrieb, Marketing und Service anzeigen können. Sie können sogar die in Visualisierungen und Dashboards angezeigten Daten entsprechend Ihren Unternehmensanforderungen anpassen, indem Sie Filter anwenden.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article

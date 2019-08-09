@@ -17,11 +17,6 @@ In diesem Beispiel wird beschrieben, wie Sie eine benutzerdefinierte Komponente 
 > [!div class="mx-imgBorder"]
 > ![IFRAME-Komponente](../media/iframe-control.png "IFRAME-Komponente")
 
-> [!IMPORTANT]
-> - PowerApps-Komponentenframework ist eine Vorschaufunktion.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
-
 ## <a name="manifest"></a>Manifest
 
 ```xml
@@ -97,7 +92,7 @@ private renderBingMapIFrame(): void
 private updateBingMapURL(latitude:number, longitude:number): void
 {
     // Bing Map API:
-    // https://msdn.microsoft.com/en-us/library/dn217138.aspx
+    // https://msdn.microsoft.com/library/dn217138.aspx
     // Provide bing map query string parameters to format and style map view
     let bingMapUrlPrefix = "https://www.bing.com/maps/embed?h=400&w=300&cp=";
     let bingMapUrlPostfix = "&lvl=12&typ=d&sty=o&src=SHELL&FORM=MBEDV8";
@@ -178,5 +173,5 @@ Die [updateView](../reference/control/updateview.md)-Methode wird aufgerufen, we
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [Schema-Referenz des PowerApps Komponenten-Frameworks](../manifest-schema-reference/index.md)<br />
-[PowerApps-Komponentenframework-API-Referenz](../index.md)<br />
+[PowerApps-Komponentenframework-API-Referenz](../reference/index.md)<br />
 [Übersicht über das PowerApps-Komponentenframework](../overview.md)

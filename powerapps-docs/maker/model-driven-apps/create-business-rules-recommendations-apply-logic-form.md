@@ -26,7 +26,7 @@ search.app:
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Erstellen von Geschäftsregeln und Empfehlungen zur Anwendung eines Modell-getriebenen App-Formulars
 
-Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können dann für Primäre- und Schnellerfassungsformularen angewendet werden, und sie können in den modellgesteuerten Apps, Dynamics 365 Customer Engagement Web-Apps, Dynamics 365 for tablets und Dynamics 365 for Outlook (online oder offline Modus) verwendet werden.
+Dieses Thema zeigt, wie Sie Geschäftsregeln und Empfehlungen erstellen, um Formularlogik in einer modellgesteuerten App anzuwenden, ohne JavaScript-Codes zu schreiben oder Plug-ins zu erstellen. Geschäftsregeln bieten eine einfache Schnittstelle, um sich schnell ändernden und häufig verwendeten Regeln zu implementieren und zu verwalten. Sie können auf Haupt- und Schnellerfassungsformulare angewendet werden, und sie funktionieren in modellgesteuerten Apps, Dynamics 365 Customer Engagement-Web-Apps, Dynamics 365 for tablets und Dynamics 365 for Outlook (Online- oder Offlinemodus).
 
 > [!NOTE]
 > Um eine Geschäftsregel für eine Entität zu definieren, damit diese für alle Formulare und Server angewendet wird, siehe [Geschäftsregel für eine Enität erstellen](/powerapps/maker/common-data-service/data-platform-create-business-rule).
@@ -150,7 +150,14 @@ Eine Geschäftsregel darf nicht ausgeführt werden, weil das in der Geschäftsre
      > [!div class="mx-imgBorder"] 
      > ![](media/account-name-on-form.png "Feld Firmaname auf Formular")
 
-## <a name="next-steps"></a>Nächste Schritte  
+## <a name="frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ)
+*Können Geschäftsregeln Felder in einem schreibgeschützten Formular entsperren?*
+- Ja, eine Geschäftsregel kann Felder entsperren und Aktionen in einem schreibgeschützten Formular bearbeiten.
+
+*Wie behandle ich Probleme bei einer Geschäftsregel, die nicht funktioniert?* 
+- Sehen Sie [Löst ihre Geschäftsregel kein Ereignis eines Formulars aus?](#is-your-business-rule-not-firing-for-a-form) in diesem Thema.
+
+## <a name="see-also"></a>Siehe auch  
  [Erstellen benutzerdefinierter Geschäftslogik durch Prozesse](guide-staff-through-common-tasks-processes.md)   
  [Erstellen eines Geschäftsprozessflusses](/flow/create-business-process-flow)   
 

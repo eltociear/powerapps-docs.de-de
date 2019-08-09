@@ -1,5 +1,5 @@
 ---
-title: Ermitteln Sie die URL für Ihre Organisation mit Web-API (Common Data Service)| Microsoft Docs
+title: Ermitteln Sie die URL für Ihre Organisation mithilfe der Web-API (Common Data Service) | Microsoft Docs
 description: 'Hier erfahren Sie, wie Sie Web-API verwenden können, um die zur Laufzeit die Organisationen zu erkunden, oder Instanzen, zu denen der angemeldete Benutzer gehört.'
 ms.custom: ''
 ms.date: 04/22/2019
@@ -35,7 +35,7 @@ Zusätzlich zu Ermittlungsdiensten für bestimmte Datencenter, die für den 2011
 > [!NOTE]
 > Es wird empfohlen, dass Benutzer vom bisherigen regionalen Suchdienst (`https://disco.crm.dynamics.com`) zum globalen Suchdienst (`https://globaldisco.crm.dynamics.com`) wechseln.
 > 
-> Für Benutzer von Dynamics 365 US Government ist der globale Suchdienst nur für die **GCC**-Benutzer verfügbar und die URL lautet `https://globaldisco.crm9.dynamics.com`. Weitere Informationen: [Dynamics 365 Government-URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
+> Für Dynamics 365 US Government-Benutzer ist der globale Suchdienst für **GCC**- und **GCC High**-Benutzer verfügbar, und die URL unterscheidet sich von der regulären globalen Suchdienst-URL. Weitere Informationen: [Dynamics 365 Government-URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
 
   
 ## <a name="information-provided-by-the-discovery-service"></a>Informationen, die vom Ermittlungsdienst bereitgestellt werden 
@@ -75,12 +75,12 @@ Ein Entitätssatz mit der Bezeichnung `Instances` wird zum Abrufen von Instanzin
   
 ### <a name="authentication"></a>Authentifizierung
 
-Common Data Service-Web-API-Instanzen des Suchdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens.
+Common Data Service-Web-API-Instanzen des Ermittlungsdiensts benötigen die Authentifizierung mit OAuth-Zugriffstokens.
 
 Wenn der Ermittlungsdienst für die OAuth-Authentifizierung konfiguriert ist, löst eine Anforderung, die an die Service-Web-API ohne einen Zugriffstoken gesendet wird, eine Trägerabfrage mit der Autorität des "allgemeinen" Endpunkts und der Ressourcenkennung des Service aus.
-### <a name="cors-support"></a>CORS-Support
+### <a name="cors-support"></a>Unterstützung von CORS
 
-Die Ermittlungsdienst-Web-API unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff, wie das für die Web-API zutrifft.  Für weitere Informationen zu CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)  
+Die Suchdienst-Web-API unterstützt den CORS-Standard für den ursprungsübergreifenden Zugriff, wie das für die Web-API zutrifft.  Für weitere Informationen zum CORS-Support siehe [Verwenden von OAuth mit Cross-Origin Resource Sharing, um eine Single Page-Anwendung zu verbinden](../oauth-cross-origin-resource-sharing-connect-single-page-application.md).  
   
 ### <a name="examples"></a>Beispiele  
   

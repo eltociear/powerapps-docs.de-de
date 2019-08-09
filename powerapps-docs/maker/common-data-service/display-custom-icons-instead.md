@@ -4,7 +4,7 @@ description: 'Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansic
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -104,7 +104,7 @@ search.app:
 > [!IMPORTANT]
 > Dieses Beispiel erfordert die Opportunity-Entität, die mit Dynamics 365 for Customer Engagement Apps verfügbar ist.
   
-```  
+```javascript
 function displayIconTooltip(rowData, userLCID) {      
     var str = JSON.parse(rowData);  
     var coldata = str.opportunityratingcode_Value;  

@@ -11,17 +11,11 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
 ---
-# <a name="updating-existing-custom-controls"></a>Aktualisieren vorhandener benutzerdefinierter Steuerelemente 
+# <a name="updating-existing-custom-components"></a>Aktualisieren vorhandener benutzerdefinierter Komponenten 
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Wenn Sie ein Teilnehmer an der privaten Vorschau von PowerApps Komponentenframework sind und bereits benutzerdefinierte Komponenten erstellt haben, müssen Sie einige kleinere Updates vornehmen, damit sie mit den neuen ALM-orientierten Projektstrukturen kompatibel sind. Um die neuen Erstellungstools von PowerApps Komponentenframework mit Ihrer vorhandenen benutzerdefinierten Komponentenquelle von PowerApps Komponentenframework zu verwenden, sind einige Änderungen erforderlich.
-
-> [!IMPORTANT]
-> - Microsoft PowerApps-CLI-Tools sind eine Vorversion und können sich von der kommerziell veröffentlichten Version unterscheiden.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
-> - Wenn Sie uns Feedback zur Software an Microsoft geben, erteilen Sie Microsoft, ohne Erhebung einer Gebührt, das Recht, Ihr Feedback in jeder Form und für jeden Zweck zu verwenden, zu teilen und kommerziell zu nutzen. 
-> - Microsoft bietet keinen Support für diese Vorschaufunktion. Der technische Support von Microsoft kann Ihnen bei Problemen und Fragen nicht helfen.
 
 ## <a name="creating-an-empty-project"></a>Erstellen eines leeren Projekts
 

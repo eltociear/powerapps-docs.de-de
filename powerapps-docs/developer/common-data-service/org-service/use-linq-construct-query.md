@@ -17,19 +17,19 @@ search.app:
 ---
 # <a name="use-linq-to-construct-a-query"></a>Verwenden von LINQ zum Erstellen einerAbfrage
 
-Der Abfrageanbieter ".NET Language-Integrated Query(LINQ)" in Common Data Service verwendet eine Standard-LINQ-Syntax. Der erste Schritt zum Erstellen einer LINQ-Abfrage besteht darin, die relevanten Entitätstypen und die Beziehungen zwischen diesen zu identifizieren. Sie können dann die Datenquelle und die anderen Abfrageparameter angeben.  
+Der Abfrageanbieter „.NET Language-Integrated Query(LINQ)” in Common Data Service verwendet eine Standard-LINQ-Syntax. Der erste Schritt zum Erstellen einer LINQ-Abfrage besteht darin, die relevanten Entitätstypen und die Beziehungen zwischen diesen zu identifizieren. Sie können dann die Datenquelle und die anderen Abfrageparameter angeben.  
 
  Die `from`-Klausel wird verwendet, um eine einzelne „Stamm“-Entität zurückzugeben. Der Abfragenanbieter kann nur Entitäten eines einzigen Entitätstyps zurückgeben. `orderby` und `select`-Klauseln müssen auf diese Stammentität verweisen. Mit `join`-Klauseln können Sie Entitäten einer Beziehung zur „Stamm“-Entität hinzuzufügen.  
 
 <a name="bkmk_operators"></a>   
 
 ## <a name="linq-operators"></a>LINQ-Operatoren  
- Alle LINQ-Abfrageausdrücke haben ein ähnliches Format. In der folgenden Tabelle sind die häufigsten Klauseln in einem LINQ-Abfrageausdruck aufgeführt, wenn der LINQ-Abfrageanbieter von Common Data Service verwendet wird.  
+ Alle LINQ-Abfrageausdrücke haben ein ähnliches Format. In der folgenden Tabelle sind die häufigsten Klauseln in einem LINQ-Abfrageausdruck aufgeführt, wenn der LINQ-Abfragenanbieter von Common Data Service verwendet wird.  
 
 ### <a name="from"></a>von  
  Wenn Sie den generierten Dienstkontext und ältere Bindung verwenden, verwenden Sie den Entitätssatz, wie z. B. `IQueryable` `AccountSet`, im generierten Kontext.  
 
- Wenn Sie keinen generierten Kontext verwenden, können Sie mit der `CreateQuery`-Methode im Servicekontext der Organisation auf Common Data Service-Entitäten zugreifen.  
+ Wenn Sie keinen generierten Kontext verwenden, können Sie mit der `CreateQuery`-Methode im Servicekontext der Organisation auf Common Data Service zugreifen.  
 
  Beispiel:  
 
@@ -120,7 +120,7 @@ select new Contact
 
 ## <a name="filter-multiple-entities"></a>Filtern mehrerer Entitäten  
 
- Sie können komplexe ".NET Language Integrated Query(LINQ)"-Abfragen in Common Data Service erstellen. Sie können mehrere `Join`-Klauseln mit Filterklauseln verwenden, um ein Ergebnis zu erhalten, das nach Attributen aus mehreren Entitäten gefiltert ist.  
+ Sie können .NET Language-Integrated Query (LINQ) zum Erstellen von komplexen Abfragen in Common Data Service verwenden. Sie können mehrere `Join`-Klauseln mit Filterklauseln verwenden, um ein Ergebnis zu erhalten, das nach Attributen aus mehreren Entitäten gefiltert ist.  
 
  Das folgende Beispiel zeigt, wie Sie eine LINQ-Abfrage erstellen, die mit zwei Entitäten arbeitet und das Ergebnis anhand von Werten aus den einzelnen Entitäten filtert.  
 
@@ -149,8 +149,8 @@ select new Contact
 }
  ```
 ### <a name="see-also"></a>Siehe auch  
- [Beispiel: Erstellen einer LINQ-Abfrage](/dynamics365/customer-engagement/developer/org-service/sample-create-linq-query.md)   
- [Beispiel: LINQ-Abfragenbeispiele](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries.md)   
- [Erstellen von Abfragen mit LINQ (.NET Language-integrierte Abfrage)](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query.md)   
- [Verwenden von spät gebundenen Entitätsklassen mit einer LINQ-Abfrage](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query.md)   
- [Blog: LINQPad 4 Driver für Dynamics CRM REST/Web API sind verfügbar auf CodePlex](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)
+ [Beispiel: Erstellen einer LINQ-Abfrage](/dynamics365/customer-engagement/developer/org-service/sample-create-linq-query)   
+ [Beispiel: LINQ-Abfragenbeispiele](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries)   
+ [Erstellen von Abfragen mit LINQ (.NET Language-integrierte Abfrage)](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query)   
+ [Verwenden von spät gebundenen Entitätsklassen mit einer LINQ-Abfrage](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query)   
+ [Blog: LINQPad 4 Driver für Dynamics CRM REST/Web-API sind verfügbar auf CodePlex](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)

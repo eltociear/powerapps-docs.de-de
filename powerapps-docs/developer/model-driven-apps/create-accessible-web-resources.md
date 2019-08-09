@@ -3,8 +3,7 @@ title: Erstellen von barrierefreien Webressourcen (modellgesteuerte Apps) | Micr
 description: 'Das Thema enthält allgemeine Anleitungen und Links zu weiteren Ressourcen, die Ihnen dabei helfen, Benutzeroberflächenelemente für Webressourcen zu entwerfen, die für Personen mit Behinderung barrierefrei sind.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -81,7 +80,7 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
   
 -   [Einführung in Web-Barrierefreiheit](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10))  
   
--   [Barrierefreiheit in Visual Studio und der ASP.NET](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
+-   [Barrierefreiheit in Visual Studio und ASP.NET](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
   
 -   [Silverlight-Barrierefreiheit für Entwickler](https://docs.microsoft.com/previous-versions/windows/)  
   

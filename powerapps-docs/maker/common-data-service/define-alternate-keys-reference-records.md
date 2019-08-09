@@ -1,8 +1,8 @@
 ---
-title: 'Definieren Sie Alternativschlüssel, um Datensätze mit Common Data Service zu verweisen | MicrosoftDocs'
-description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um Datensätze in Common Data Service zu verweisen'
+title: Alternative Schlüssel für Datensätze definieren mit Common Data Service | MicrosoftDocs
+description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um auf Datensätze in Common Data Service zu verweisen'
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -25,7 +25,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Definieren von Alternativschlüsseln für den Verweis auf Datensätze
 
-*Alternativschlüsseln* bieten eine genaue und effiziente Methode der Integration mit Daten aus externen Systemen. Wenn ein externes System die IDs des Globally Unique Identifier (GUID) nicht speichern, ist es von größter Wichtigkeit, dass die Datensätze im Common Data Service eindeutig identifiziert werden. 
+*Alternativschlüsseln* bieten eine genaue und effiziente Methode der Integration mit Daten aus externen Systemen. Wenn ein externes System die IDs des Globally Unique Identifier (GUID) nicht speichern, ist es von größter Wichtigkeit, dass die Datensätze in Common Data Service eindeutig identifiziert werden. 
 
 Ein Datenintegrationssystem verwendet Alternativschlüssel, um Datensätze mit einem oder mehreren Entitätsfeldwerten, die eine eindeutige Kombination darstellen, eindeutig zu identifizieren. Jeder Alternativschlüssel hat einen eindeutigen Namen. 
 
@@ -75,6 +75,9 @@ Nur diese Feldtypen können verwendet werden, um Alternativschlüssel zu erstell
  - Decimal
  - Ganze Zahl (Integer)
  - Einzelne Textzeile (String)
+ - Datum und Uhrzeit
+ - Suchfeld
+ - Optionssatz
 
 ### <a name="number-of-keys"></a>Anzahl der Schlüssel
 

@@ -1,10 +1,9 @@
 ---
 title: Aktionen bei Visualisierungen (Diagramme) (modellgetriebene Anwendungen) | Microsoft Docs
-description: Mithilfe der Common Data Service-Webdienste können Sie folgende Aktionen für die Visualisierungsentitäten ausführen.
+description: Mit Common Data Service-Webdiensten können Sie folgende Aktionen in den Visualisierungsentitäten ausführen.
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-visualizations-charts -->
 
-Mithilfe der Common Data Service können Sie folgende Aktionen für die Visualisierungsentitäten ausführen.  
+Mit Common Data Service-Webdiensten können Sie folgende Aktionen in den Visualisierungsentitäten ausführen.  
   
 ## <a name="actions-on-organization-owned-visualizations"></a>Aktionen für Visualisierungen im Besitz der Organisation  
  Um Aktionen für eine Visualisierung im Besitz der Organisation auszuführen (`SavedQueryVisualization`), müssen Sie über die Rolle "Systemadministrator" oder "Systemanpasser" verfügen. Sie können die folgenden Aktionen für eine Visualisierung im Besitz der Organisation ausführen:  

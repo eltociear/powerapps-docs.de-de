@@ -1,8 +1,8 @@
 ---
 title: Behandlung von Ausnahmen in Ihrem Code (Common Data Service) | Microsoft Docs
-description: 'In diesem Artikel werden die Ausnahmen erläutert, die von einem Dynamics 365 Customer Engagement-Webservice-Methodenaufruf zurückgegeben werden. Durch das Beispiel in diesem Artikel werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.'
+description: 'In diesem Artikel werden die Ausnahmen erläutert, die von einem Dynamics 365 Customer Engagement-Webdienst-Methodenaufruf zurückgegeben werden. Durch das Beispiel in diesem Artikel werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.'
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -17,13 +17,13 @@ search.app:
 ---
 # <a name="handle-exceptions-in-your-code"></a>Behandlung von Ausnahmen in Ihrem Code
 
-Es gibt mehrere Ausnahmen, die von einem Common Data Service Webdienst zurückgegeben werden können. Ihr Anwendungsentwurf muss diese Ausnahmen abfangen und geeignet behandeln. In SDK .NET-Assemblys verwenden alle Webdienstmethodenanrufe einen Kommunikationskanal zum Server auf Basis der Windows Communication Foundation-Technologie. In WCF-Begriffen werden heißen die vom Kanal zurückgegebenen Ausnahmen *Fehler*.  
+Es gibt mehrere Ausnahmen, die von einem Common Data Service Webdienstmethodenaufruf zurückgegeben werden können. Ihr Anwendungsentwurf muss diese Ausnahmen abfangen und geeignet behandeln. In SDK .NET-Assemblys verwenden alle Webdienstmethodenanrufe einen Kommunikationskanal zum Server auf Basis der Windows Communication Foundation-Technologie. In WCF-Begriffen werden heißen die vom Kanal zurückgegebenen Ausnahmen *Fehler*.  
 
 <a name="BKMK_Common"></a>   
 
 ## <a name="common-exceptions-and-faults"></a>Häufige Ausnahmen und Fehler  
 
- Der folgende Code ist in den meisten Common Data Service-Webdienstbeispielen verwendet. Es werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.  
+Der folgende Code ist in den meisten Common Data Service-Webdienstbeispielen verwendet. Es werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.  
   
 ```csharp
 catch (FaultException<Microsoft.Xrm.Sdk.OrganizationServiceFault> ex)
@@ -71,27 +71,23 @@ catch (System.Exception ex)
 > [!NOTE]
 >  Wenn Sie auf den Suchdienst-Webdienst zugreifen, sollte Ihr Code <xref:Microsoft.Xrm.Sdk.DiscoveryServiceFault> anstelle des Fehlers <xref:Microsoft.Xrm.Sdk.OrganizationServiceFault> abfangen, zuvor angezeigt wurde.  
   
- Neben zu diesen Fehlern und Ausnahmen muss Ihr Code die folgenden Ausnahmen behandeln:  
+Neben zu diesen Fehlern und Ausnahmen muss Ihr Code die folgenden Ausnahmen behandeln:  
   
--   [SecurityTokenValidationException](https://msdn.microsoft.com/library/system.identitymodel.tokens.securitytokenvalidationexception.aspx)  
+- [SecurityTokenValidationException](/dotnet/api/system.identitymodel.tokens.securitytokenvalidationexception)  
+- [ExpiredSecurityTokenException](/dotnet/api/system.servicemodel.security.expiredsecuritytokenexception)  
+- [SecurityAccessDeniedException](/dotnet/api/system.servicemodel.security.securityaccessdeniedexception)  
+- [MessageSecurityException](/dotnet/api/system.servicemodel.security.messagesecurityexception)  
+- [SecurityNegotiationException](/dotnet/api/system.servicemodel.security.securitynegotiationexception)  
   
--   [ExpiredSecurityTokenException](https://msdn.microsoft.com/library/system.servicemodel.security.expiredsecuritytokenexception.aspx)  
-  
--   [SecurityAccessDeniedException](https://msdn.microsoft.com/library/system.servicemodel.security.securityaccessdeniedexception.aspx)  
-  
--   [MessageSecurityException](https://msdn.microsoft.com/library/system.servicemodel.security.messagesecurityexception.aspx)  
-  
--   [SecurityNegotiationException](https://msdn.microsoft.com/library/system.servicemodel.security.securitynegotiationexception.aspx)  
-  
- Wenn Sie sich mit Common Data Service verbinden, wird eine `SecurityAccessDeniedException`-Ausnahme ausgelöst, wenn Sie ein gültiges Microsoft-Konto verwenden und Ihr Konto nicht einer Common Data Service-Organisation zugeordnet ist. Ein  `MessageSecurityException`  kann ausgelöst werden, wenn das  Microsoft-Konto nicht gültig ist, oder ein Authentifizierungsfehler vorlag.  
+Wenn Sie sich mit Common Data Service verbinden, wird eine `SecurityAccessDeniedException`-Ausnahme ausgelöst, wenn Sie ein gültiges Microsoft-Konto verwenden und Ihr Konto nicht einer Common Data Service-Organisation zugeordnet ist. Ein  `MessageSecurityException`  kann ausgelöst werden, wenn das  Microsoft-Konto nicht gültig ist, oder ein Authentifizierungsfehler vorlag.  
   
 <a name="BKMK_BusinessRuleErrors"></a>
 
 ## <a name="custom-errors-from-business-rules"></a>Benutzerdefinierte Fehler von Unternehmensregeln
  
- Mit Common Data Service können Anpasser Unternehmensregeln erstellen, die auf dem Server ausgewertet werden. Anpasser können Fehlermeldungen basierend auf den Anforderungen, die in der Geschäftsregel festgelegt wurden. Entwickler können darauf achten,  robuste Fehlerbehandlung in ihrem Code einzuschließen, um diese Ausnahmen abzufangen und zu behandeln.  
+Mit Common Data Service können Anpasser Geschäftsregeln erstellen, die auf dem Server ausgewertet werden. Anpasser können Fehlermeldungen basierend auf den Anforderungen, die in der Geschäftsregel festgelegt wurden. Entwickler können darauf achten,  robuste Fehlerbehandlung in ihrem Code einzuschließen, um diese Ausnahmen abzufangen und zu behandeln.  
   
- Das Folgende ist ein Beispiel für das Ablaufverfolgungsprotokoll, das erstellt wird, wenn einer dieser Fehler von einer Geschäftsregel namens **Name der entitätsweiten Geschäftsregel, die eine Fehler zurückgibt** und die Fehlermeldung **benutzerdefinierte Fehlermeldung**.  
+Das Folgende ist ein Beispiel für das Ablaufverfolgungsprotokoll, das erstellt wird, wenn einer dieser Fehler von einer Geschäftsregel namens **Name der entitätsweiten Geschäftsregel, die eine Fehler zurückgibt** und die Fehlermeldung **benutzerdefinierte Fehlermeldung**.  
   
 ```csharp
 Unhandled Exception: System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]: custom error messageDetail:   
@@ -123,15 +119,16 @@ Sync workflow 'Name of Entity Scope Business Rule returning Error' terminated wi
 </OrganizationServiceFault>  
 ```  
   
- Weitere Informationen [Erstellen und Bearbeiten von Geschäftsregeln](https://technet.microsoft.com/library/dn531086.aspx)  
+Weitere Informationen finden Sie unter [Erstellen einer Geschäftsregel für eine Entität](../../../maker/common-data-service/data-platform-create-business-rule.md)  
   
-<a name="BKMK_AdditionalInfo"></a>   
-## <a name="additional-information-about-exceptions"></a>Zusätzliche Informationen zu Ausnahmen  
- Falls eine nicht abgefangene Ausnahme ausgelöst wird, die vertrauliche Informationen enthält, für die der Benutzer nicht über die Berechtigung zum Anzeigen besitzt, werden die vertraulichen Informationen für den Benutzer ausgeblendet und eine Referenznummer wird bereitgestellt. Diese Referenznummer verweist auf den zugehörigen Serverereignisprotokolleintrag und Serverablaufverfolgungseintrag. Ein Systemadministrator kann die Einträge aufsuchen und weitere Informationen zu der Ausnahme finden.  
+<a name="BKMK_AdditionalInfo"></a>
+
+## <a name="additional-information-about-exceptions"></a>Zusätzliche Informationen zu Ausnahmen
+
+Falls eine nicht abgefangene Ausnahme ausgelöst wird, die vertrauliche Informationen enthält, für die der Benutzer nicht über die Berechtigung zum Anzeigen besitzt, werden die vertraulichen Informationen für den Benutzer ausgeblendet und eine Referenznummer wird bereitgestellt. Diese Referenznummer verweist auf den zugehörigen Serverereignisprotokolleintrag und Serverablaufverfolgungseintrag. Ein Systemadministrator kann die Einträge aufsuchen und weitere Informationen zu der Ausnahme finden.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Fehler- und Problembehandlung](/dynamics365/customer-engagement/developer/troubleshooting-error-handling)   
- [Problembehandlungs-Tipps](/dynamics365/customer-engagement/developer/troubleshooting-tips)   
+
  [Webdienst-Fehlercodes](web-service-error-codes.md)   
  [Behandlung von Ausnahmen in Plug-ins](../handle-exceptions.md)   
  [.NET Framework Developer Center](https://docs.microsoft.com/dotnet/framework/development-guide)

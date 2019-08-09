@@ -1,10 +1,9 @@
 ---
 title: Erstellen eines Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
-description: Organisationseigene Dashboards können mit dem Common Data Service-Web Services (SDK) oder durch Anpassen des Entitätsformulars im Common Data Service durch Bearbeiten der Datei customizations.xml erstellt werden.
+description: 'Sie können ein Dashboard im Besitz der Organisation erstellen, indem Sie die Common Data Service-Webdienste (SDK) verwenden oder das Entitätsformular in Common Data Service anpassen, indem Sie die customizations.xml-Datei bearbeiten.'
 keywords: ''
 ms.date: 10/31/2018
-ms.service:
-  - powerapps
+ms.service: powerapps
 ms.custom:
   - ''
 ms.topic: article
@@ -24,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
-Organisationseigene Dashboards können mit dem Common Data Service oder durch Anpassen des Entitätsformulars im Common Data Service durch Bearbeiten der Datei customizations.xml erstellt werden.  
+Sie können ein Dashboard im Besitz der Organisation erstellen, indem Sie das Common Data Service verwenden oder das Entitätsformular in Common Data Service anpassen, indem Sie die customizations.xml-Datei bearbeiten.  
   
 > [!NOTE]
 >  Einige Dashboards, die unter Verwendung von SDK oder durch Anpassung des Entitätsformulars erstellt wurden, werden vom Dashboard-Designer in der Webanwendung nicht unterstützt. Weitere Informationen finden Sie unter [Einschränkungen: Dashboards mithilfe des SDK oder durch Formularanpassung erstellen](#Limitations) unten in diesem Thema.  
@@ -152,7 +151,7 @@ _dashboardId = _serviceProxy.Create(dashboard);
   
 #### <a name="create-a-dashboard-by-customizing-an-entity-form"></a>Erstellen eines Dashboards durch Anpassen eines Entitätsformulars  
   
-1. Melden Sie sich beim Common Data Service an.  
+1. Melden Sie sich bei Common Data Service an.  
   
 2. Exportieren Sie eine Lösung. Informationen dazu finden Sie unter [Exportierung, Vorbereitung zum Bearbeiten und Importierung des Menübands](export-prepare-edit-import-ribbon.md).  
   

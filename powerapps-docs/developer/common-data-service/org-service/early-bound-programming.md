@@ -1,5 +1,5 @@
 ---
-title: Programmierung von späterer und früherer Bindung mithilfe des Organisationsservice (Common Data Service) | Microsoft Docs
+title: Programmierung mit später und früher Bindung mithilfe des Organisationsservices (Common Data Service) | Microsoft Docs
 description: 'Beschreibt die verschiedenen Programmierungsstile, die verfügbar sind, wenn .NET-SDK-Assemblys mit dem Organisationsservice  verwendet wird.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -80,7 +80,7 @@ Wenn Sie früh gebundene Entitätsklassen mithilfe des Codegenerierungstools gen
 - <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName>
 - <xref:Microsoft.Xrm.Sdk.Metadata.RelationshipMetadataBase>.<xref:Microsoft.Xrm.Sdk.Metadata.RelationshipMetadataBase.SchemaName>
 
-Sie Instanziieren einfach die Klasse und lassen IntelliSense in Visual Studio die Namen und Eigenschaften von Beziehungen angeben.
+Sie instanziieren einfach die Klasse und lassen IntelliSense in Visual Studio die Namen von Eigenschaften und Beziehungen angeben.
 
 Die Klassen, die für früh gebundene Programmierung erstellt wurden, können auch Definitionen für alle benutzerdefinierten Aktionen enthalten, die auch für die Umgebung definiert werden. Dies gibt Ihnen ein Paar Anforderungs- und Warteklassen für diese benutzerdefinierte Aktionen. Weitere Informationen: [Benutzerdefinierte Aktionen](../custom-actions.md).
 
@@ -136,7 +136,26 @@ Welchen Stil Sie wählen ist Ihnen überlassen. In der folgenden Tabelle werden 
 
 Da alle generierten Klassen von der <xref:Microsoft.Xrm.Sdk.Entity> Klasse erben, die mit spät gebundener Programmierung verwendet wird, können Sie sie für Entitäten, Attribute und Beziehungen verwenden, die nicht innerhalb der Klassen definiert werden.
 
-### <a name="example"></a>Beispiel
+### <a name="examples"></a>Beispiele
+
+Das folgende Beispiel zeigt eine Möglichkeit der Kombination von frühen und späten Bindungsmethoden mithilfe von <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext>.  
+  
+```csharp  
+// Create an organization service context object  
+AWCServiceContext context = new AWCServiceContext(_serviceProxy);  
+  
+// Instantiate an account object using the Entity class.  
+Entity testaccount = new Entity("account");  
+  
+// Set several attributes. For account, only the name is required.   
+testaccount["name"] = "Fourth Coffee";  
+testaccount["emailaddress1"] = "marshd@contoso.com";  
+  
+// Save the entity using the organization service context object.  
+context.AddToAccountSet(testaccount);  
+context.SaveChanges();  
+  
+```  
 
 Wenn ein benutzerdefiniertes Attribut nicht in der erstellen Klassen hinzugefügt wurde, können Sie es erneut verwenden.
 
@@ -152,6 +171,17 @@ var account = new Account();
 
 //Create the account
 Guid accountid = svc.Create(account);
+```
+
+#### <a name="assign-an-early-bound-instance-to-a-late-bound-instance"></a>Instanz der frühen Bindung einer Instanz der späten Bindung zuweisen  
+ Das folgende Beispiel zeigt, wie Sie eine Instanz der frühen Bindung einer Instanz der späten Bindung zuweisen.  
+  
+```csharp
+Entity incident = ((Entity)context.InputParameters[ParameterName.Target]).ToEntity<Incident>();  
+Task relatedEntity = new Task() { Id = this.TaskId };  
+  
+incident.RelatedEntities[new Relationship("Incident_Tasks")] =   
+new EntityCollection(new Entity[] { relatedEntity.ToEntity<Entity>() });  
 ```
 
 ### <a name="see-also"></a>Siehe auch

@@ -17,6 +17,8 @@ ms.assetid: b6119424-c0a4-4412-b25c-8239da6cbe36
 
 # <a name="css-element"></a>css-Element
 
+[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+
 [!INCLUDE [css-description](includes/css-description.md)]
 
 ## <a name="attributes"></a>Attribute

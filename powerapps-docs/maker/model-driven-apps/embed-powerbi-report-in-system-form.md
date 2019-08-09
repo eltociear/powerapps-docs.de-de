@@ -29,9 +29,9 @@ search.app:
 Sie können Power BI-Berichte in modellgestützten Apps von PowerApps verwenden, um umfangreiche Berichterstellung und Analyse in Ihre Systemformulare einzubringen damit Ihre Benutzer mehr erzielen. Dadurch erhalten Sie die Möglichkeit, Daten über Systeme hinweg freizugeben und bis hin zum Kontext eines einzelnen Datensatzes anzupassen.
  
 ## <a name="prerequisites"></a>Voraussetzungen
-Das Einbetten von Power BI-Inhalt ist eine optionale Funktion und auf allen Umgebung standardmäßig deaktiviert. Sie müssen sie aktivieren, bevor Sie Power BI-Inhalt einbetten können. Weitere Informationen: [Aktivieren von Power BI-Visualisierungen in der Organisation](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
+Das Einbetten von Power BI-Inhalt ist eine optionale Funktion und auf allen Umgebung standardmäßig deaktiviert. Sie müssen sie aktivieren, bevor Sie Power BI-Inhalt einbetten können. Weitere Informationen: [Aktivieren von Power BI-Visualisierungen in der Organisation](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
 
-Für diese Funktion muss eine Lösung exportiert, dann geändert werden, um den XML-Ausschnitt hinzuzufügen, und dann wieder zurück in die Umgebung importiert werden. Vergessen Sie nicht, die Änderungen nur über eine verwaltete Lösung in die Zielumgebung zu importieren. Siehe [Lösungen importieren, aktualisieren und exportieren](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) für Anleitungen zur Installation eines Updates für eine vorhandene verwaltete Lösung.
+Für diese Funktion muss eine Lösung exportiert, dann geändert werden, um den XML-Ausschnitt hinzuzufügen, und dann wieder zurück in die Umgebung importiert werden. Vergessen Sie nicht, die Änderungen nur über eine verwaltete Lösung in die Zielumgebung zu importieren. Siehe [Lösungen importieren, aktualisieren und exportieren](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) für Anleitungen zur Installation eines Updates für eine vorhandene verwaltete Lösung.
 
 ## <a name="embed-without-contextual-filtering"></a>Einbetten ohne kontextbezogene Filterung
 Sie können Ihr Power BI-Berichte und -Kacheln verwenden, indem Sie sie einfach einbetten, und Sie erhalten genau den gleichen Bericht. Hierzu werden sie nicht dem Kontext des aktuellen modellgestützten Formulars zugeführt, und daher erhalten Sie den gleichen Bericht oder die gleiche Kachel auf allen Datensätzen der Entität. Beispielsweise zeigt der folgende Bericht den geografischen Standort aller Firmen gleichzeitig an, und ist nützlich, um Zusammenfassungsinformationen anzuzeigen.
@@ -77,7 +77,7 @@ Sie können einen Abschnitt in Ihren Systemformularen einbetten, der Power BI-Be
 |                                       **TileUrl**                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Die URL des Power BI-Berichts oder der Kachel, den bzw. die Sie einbetten möchten. Stellen Sie sicher, dass Sie den richtigen Power BI-Instanznamen (ersetzen Sie msit.powerbi.com durch Ihren eigenen) und die richtige Berichts-ID (ersetzen Sie reportId=544c4162-6773-4944-900c-abfd075f6081 durch Ihre eigene) verwenden. Zum Beispiel: https://xyz.powerbi.com/reportEmbed?reportId=544c4162-6773-4944-900c-abfd075f6081.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 ## <a name="embed-with-contextual-filtering"></a>Einbetten mit kontextbezogener Filterung
-Sie können die Power BI-Berichte und Kacheln sinnvoller machen, indem Sie die kontextbezogenen Filter auf das aktuelle Modellgesteuerte Formular anwenden, damit der Bericht bzw. die Kachel anhand der Attribute des aktuellen Datensatzes gefiltert wird. Beispielsweise zeigt der folgende Bericht den geografischen Standort einer Firma durch Filterung des Power BI-Berichts mithilfe des Firmennamens. Damit können auf einem einzelnen Bericht kontextbezogene Informationen für alle Datensätze der Entität angezeigt werden.
+Sie können die Power BI-Berichte und -Kacheln sinnvoller machen, indem Sie die kontextbezogenen Filter auf das aktuelle modellgesteuerte Formular anwenden, damit der Bericht bzw. die Kachel anhand der Attribute des aktuellen Datensatzes gefiltert wird. Beispielsweise zeigt der folgende Bericht den geografischen Standort einer Firma durch Filterung des Power BI-Berichts mithilfe des Firmennamens. Damit können auf einem einzelnen Bericht kontextbezogene Informationen für alle Datensätze der Entität angezeigt werden.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-filtered.png "Embed-powerbi-report-in-system-form-filtered")
@@ -90,7 +90,7 @@ Die Filterung wird durchgeführt, indem ein `<PowerBIFilter>`-Element in den `<p
         <PowerBIGroupId>00000000-0000-0000-0000-000000000000</PowerBIGroupId>
         <PowerBIReportId>544c4162-6773-4944-900c-abfd075f6081</PowerBIReportId>
         <TileUrl>https://xyz.powerbi.com/reportEmbed?reportId=544c4162-6773-4944-900c-abfd075f6081</TileUrl>
-        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"</PowerBIFilter>
+        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"}}</PowerBIFilter>
     </parameters>
 </control>
 ```
@@ -140,14 +140,14 @@ Sie können auch komplexere Filterausdrücke erstellen, indem Sie sich Beispiele
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. Die Ansicht der Berichtsdaten, die in PowerApps angezeigt wird, ist dieselbe, wie die in Power BI, und die angezeigten Daten werden nicht durch Sicherheitsrollen und Berechtigungen von PowerApps beeinflusst. Daher werden sind die Daten im Wesentlichen identisch zu dem, was der Ersteller des Power BI-Datensatzes sehen würde. Um Einschränkungen zum Datenzugriff anzuwenden, die denen von PowerApps-Sicherheitsrollen und -Teams gleichen, verwenden Sie [Sicherheit auf Zeilenebene (RLS) bei Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-rls).
+5. Die Ansicht der Berichtsdaten, die in PowerApps angezeigt wird, ist dieselbe, wie die in Power BI, und die angezeigten Daten werden nicht durch Sicherheitsrollen und Berechtigungen von PowerApps beeinflusst. Daher werden sind die Daten im Wesentlichen identisch zu dem, was der Ersteller des Power BI-Datensatzes sehen würde. Um Einschränkungen zum Datenzugriff anzuwenden, die denen von PowerApps-Sicherheitsrollen und -Teams gleichen, verwenden Sie [Sicherheit auf Zeilenebene (RLS) bei Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
 6. Wenn das Formular den Power BI-Bericht nach dem Import der Lösung und der Veröffentlichung von Anpassungen nicht anzeigt, öffnen Sie ihn im modellgesteuerten Formular-Editor und speichern Sie ihn, damit das Formular-JSON erneut erstellt wird.
 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Einbetten eines Power BI-Dashboards in ein persönliches modellgesteuertes PowerApps-Dashboard](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Einbetten eines Power BI-Dashboards in ein persönliches modellgesteuertes PowerApps-Dashboard](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[Verwenden von Power BI mit Dynamics 365 for Customer Engagement](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi)
+[Verwenden von Power BI mit Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [Lösungen importieren, aktualisieren und exportieren](../common-data-service/import-update-export-solutions.md)
