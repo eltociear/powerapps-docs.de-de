@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
-ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
+ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224628"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69529806"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -92,18 +92,19 @@ In dieser Liste werden alle Dienste aufgeführt, mit denen PowerApps Studio komm
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Laufzeit der Connector/APIs |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: zum Abrufen von Benutzerinformationen (z.B. Profilfotos) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph: zum erhalten von Benutzerinformationen (z. b. Profilfoto) |
 | gallery.azure.com |https |Beispiel- und Vorlagen-Apps |
-| \*.azure-apim.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
-| \*.powerapps.com |https | Create.powerapps.com, make.powerapps.com, content.powerapps.com und web.powerapps.com |
-| \*.azureedge.net |https | Create.powerapps.com, make.powerapps.com, content.powerapps.com und web.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
-| \*.flow.microsoft.com | https | Create.powerapps.com, make.powerapps.com, content.powerapps.com und web.powerapps.com |
+| \*. Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
+| \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. BLOB.Core.Windows.net |https | Blob Storage |
+| \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetrie |
+| localhost | https | PowerApps Mobile
 
 > [!NOTE]
 > Wenn Sie ein VPN verwenden, muss dieses so konfiguriert sein, dass „localhost“ vom Tunneling für PowerApps Mobile ausgeschlossen wird.
 
-## <a name="size-limits"></a>Größenbeschränkungen
+## <a name="size-limits"></a>Größen Limits
 
-Sie erhalten Informationen zu größenbeschränkungen für Text, links, Bildern und Medien in [Datentypen](functions/data-types.md#text-hyperlink-image-and-media).
+Informationen zu Größenbeschränkungen für Text, Hyperlinks, Bilder und Medien finden Sie unter [Datentypen](functions/data-types.md#text-hyperlink-image-and-media).

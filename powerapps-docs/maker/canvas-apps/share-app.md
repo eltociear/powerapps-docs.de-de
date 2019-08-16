@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ecb3e7aa6db1100f33a3c80a0518166b035d2b32
-ms.sourcegitcommit: 988aa08353864f8177725262468c07abe75549f5
+ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
+ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961504"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530243"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
@@ -27,7 +27,7 @@ Nachdem Sie eine Canvas-App erstellt haben, die eine geschäftliche Anforderung 
 > [!IMPORTANT]
 > Damit eine freigegebene App erwartungsgemäß funktioniert, müssen Sie auch Berechtigungen für die Datenquelle oder die Quellen verwalten, auf denen die APP basiert, z. b. [Common Data Service](#common-data-service) oder [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
 
-## <a name="prerequisites"></a>Vorraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) und dann veröffentlichen.
 
@@ -139,7 +139,7 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
 1. Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen finden Sie unter: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen](/azure/active-directory/b2b/delegate-invitations)
     - Aktivieren der externen B2B-Zusammenarbeit ist standardmäßig aktiviert. Die Einstellungen können jedoch von einem Mandanten Administrator geändert werden.  Weitere Informationen zu Azure AD B2B finden Sie unter [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
 2. Zugriff auf ein Konto, das Gastbenutzer zu einem Azure AD-Mandanten hinzufügen kann. Administratoren und Benutzer mit der Rolle "Gast einladter" können einem Mandanten Gäste hinzufügen.   
-3. Eine powerapps-Lizenz muss dem Gastbenutzer im Mandanten zugewiesen werden, dem die freigegebene App zugeordnet ist. Vor der allgemeinen Verfügbarkeit des Gast Zugriffs auf eine Canvas-app muss Gästen mit einer powerapps-Lizenz in Ihrem Privat Mandanten keine Lizenz im Mandanten zugewiesen werden, die Sie als Gast haben.
+3. Eine powerapps-Lizenz muss dem Gastbenutzer im Mandanten zugewiesen werden, dem die freigegebene App zugeordnet ist. Obwohl es noch vor der allgemeinen Verfügbarkeit des Gast Zugriffs auf Canvas-apps noch nicht möglich war, muss Gästen mit einer powerapps-Lizenz in Ihrem Privat Mandanten keine Lizenz in dem Mandanten zugewiesen werden, der als Gastbenutzer angemeldet ist.
 
 ### <a name="steps-to-grant-guest-access"></a>Schritte zum Gewähren des Gast Zugriffs
 1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen finden Sie unter: [Schnellstart: Fügen Sie einen neuen Gastbenutzer in](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)Azure AD hinzu.
