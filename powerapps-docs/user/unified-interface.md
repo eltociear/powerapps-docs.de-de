@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 8/14/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 931efa2fcb2f30dcba7b1eef0118e734399e503e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
+ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61563135"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69030560"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Erweiterte Benutzeroberfläche mit der einheitlichen Oberfläche für Modell gesteuerte apps 
 
@@ -55,3 +55,7 @@ Der Geschäftsprozess Fluss wurde durch den Docking Mechanismus verbessert. Sie 
 
 ## <a name="accessibility"></a>Zugriff
 Mit der verbesserten Barrierefreiheits Funktion können Sie Bildschirm Sprachausgaben verwenden, um Bildschirminformationen in Audiodaten zu übersetzen und in einen braillereader zu drucken, damit mehr Benutzer die APP verwenden können. Weitere Informationen finden Sie unter [use a Screen Reader](screen-reader.md).
+
+##  <a name="unified-interface-community"></a>Einheitliche Schnittstellen Community
+
+Besuchen Sie die Communitywebsite der [Unified Interface](https://community.dynamics.com/365/unified-interface/) , um Hilfe bei der Planung und Ausführung eines reibungslosen Übergangs zu der vereinheitlichten Oberfläche zu erhalten und sich mit Experten und Peers in Blogs, Webinaren, Videos, Veranstaltungen usw. vertraut zu machen.
