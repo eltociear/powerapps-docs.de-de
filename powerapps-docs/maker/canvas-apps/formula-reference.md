@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/14/2018
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736222"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550345"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -47,11 +47,11 @@ Andere Elemente enthalten:
 
 **[And](functions/function-logicals.md)** : boolesche Logikfunktion AND.  Gibt **TRUE** zurück, wenn für alle Argumente **TRUE** gilt.  Sie können auch den [ **&&** -Operator](functions/operators.md) verwenden.
 
-**[App](functions/object-app.md)**  – bietet Informationen zu den aktuell ausgeführten app und die Kontrolle über das Verhalten der app.
+**[App](functions/object-app.md)** – stellt Informationen über die derzeit laufende App bereit und steuert das Verhalten der app.
 
 **[Asin](functions/function-trig.md)** : gibt den Arkussinus einer Zahl im Bogenmaß zurück.
 
-**[AsType](functions/function-astype-istype.md)**  – einen Datensatzverweis als einen bestimmten Entitätstyp behandelt.
+**[Astype](functions/function-astype-istype.md)** – behandelt einen Daten Satz Verweis als bestimmten Entitätstyp.
 
 **[Atan](functions/function-trig.md)** : gibt den Arkustangens einer Zahl im Bogenmaß zurück.
 
@@ -187,10 +187,10 @@ Andere Elemente enthalten:
 
 **[IsToday](functions/function-now-today-istoday.md)** : überprüft, ob ein Datums- oder Uhrzeitwert am heutigen Tag gilt.
 
-**[IsType](functions/function-astype-istype.md)**  – überprüft, ob ein Datensatzverweis auf einen bestimmten Entitätstyp bezieht.
+**[Istype](functions/function-astype-istype.md)** – überprüft, ob ein Daten Satz Verweis auf einen bestimmten Entitätstyp verweist.
 
-## <a name="j"></a>J
-**[JSON](functions/function-json.md)**  -generiert eine JSON-Text-Zeichenfolge für eine Tabelle, einen Datensatz oder einen Wert.
+## <a name="j"></a>ISTGH
+**[JSON](functions/function-json.md)** : generiert eine JSON-Text Zeichenfolge für eine Tabelle, einen Datensatz oder einen Wert.
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** : gibt den Sprach-Tag des aktuellen Benutzers zurück.
@@ -216,9 +216,9 @@ Andere Elemente enthalten:
 **[Lower](functions/function-lower-upper-proper.md)** : konvertiert Buchstaben in einer Textzeichenfolge in Kleinbuchstaben.
 
 ## <a name="m"></a>M
-**[Übereinstimmung](functions/function-ismatch.md)**  – extrahiert eine Teilzeichenfolge, die basierend auf einem Muster.  Reguläre Ausdrücke können verwendet werden.
+**[Match](functions/function-ismatch.md)** – extrahiert eine Teil Zeichenfolge auf der Grundlage eines Musters.  Reguläre Ausdrücke können verwendet werden.
 
-**[MatchAll](functions/function-ismatch.md)**  – mehrere Teilzeichenfolgen, die basierend auf einem Muster extrahiert.  Reguläre Ausdrücke können verwendet werden.
+**[MatchAll](functions/function-ismatch.md)** – extrahiert mehrere Teil Zeichenfolgen auf der Grundlage eines Musters.  Reguläre Ausdrücke können verwendet werden.
 
 **[Max](functions/function-aggregates.md)** : der Höchstwert eines Tabellenausdrucks oder eines Satzes von Argumenten.
 
@@ -268,7 +268,7 @@ Andere Elemente enthalten:
 
 **[Refresh](functions/function-refresh.md)** : aktualisiert die Datensätze einer Datenquelle.
 
-**[Im Zusammenhang](functions/function-relate-unrelate.md)**  – bezieht sich die Datensätze der zwei Entitäten über eine 1: n- oder m: n Beziehung.
+**[Relate](functions/function-relate-unrelate.md)** – Verknüpft Datensätze zweier Entitäten über eine 1: n-oder m:n-Beziehung.
 
 **[Remove](functions/function-remove-removeif.md)** : entfernt einen oder mehrere bestimmte Datensätze aus einer Datenquelle.
 
@@ -336,7 +336,7 @@ Andere Elemente enthalten:
 
 **[Tan](functions/function-trig.md)** : gibt den Tangens eines im Bogenmaß angegebenen Winkels zurück.
 
-**[Text](functions/function-text.md)**  : konvertiert einen beliebigen Wert und formatiert einen Zahl oder Datum/Uhrzeit-Wert in eine Zeichenfolge des Texts.
+**[Text](functions/function-text.md)** – konvertiert alle Werte und formatiert eine Zahl oder einen Datums-/Uhrzeitwert in eine Text Zeichenfolge.
 
 **[ThisItem](functions/operators.md#thisitem-operator)** : gibt in einem Katalog oder einem Formular die Daten für das aktuelle Element aus dem Container zurück.
 
@@ -355,7 +355,7 @@ Andere Elemente enthalten:
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** : entfernt eine Gruppierung.
 
-**[Verknüpfung mit](functions/function-relate-unrelate.md)**  – Unrelates Datensätze von zwei Entitäten aus einer 1: n- oder m: n Beziehung.
+**[Ohne](functions/function-relate-unrelate.md)** Beziehung zwischen –-Datensätzen zweier Entitäten aus einer 1: n-oder m:n-Beziehung.
 
 **[Update](functions/function-update-updateif.md)** : ersetzt einen Datensatz in einer Datenquelle.
 
@@ -367,7 +367,7 @@ Andere Elemente enthalten:
 
 **[User](functions/function-user.md)** : Gibt Informationen über den aktuellen Benutzer zurück.
 
-## <a name="v"></a>V
+## <a name="v"></a>B
 **[Validate](functions/function-validate.md)** : überprüft, ob der Wert einer einzelnen Spalte oder eines vollständigen Datensatzes für eine Datenquelle gültig ist.
 
 **[Value](functions/function-value.md)** : konvertiert eine Zeichenfolge in eine Zahl.
@@ -379,6 +379,8 @@ Andere Elemente enthalten:
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** : ruft den Wochentagteil eines Datums- oder Uhrzeitwerts ab.
 
-## <a name="y"></a>Y
+**[Mit](functions/function-with.md)** – berechnet Werte und führt Aktionen für einen einzelnen Datensatz aus, einschließlich Inline Datensätze benannter Werte.
+
+## <a name="y"></a>J
 **[Year](functions/function-datetime-parts.md)** : ruft den Jahresteil eines Datums- oder Uhrzeitwerts ab.  
 
