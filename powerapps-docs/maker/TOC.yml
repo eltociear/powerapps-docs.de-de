@@ -1009,7 +1009,7 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: Erstellen eines interaktiven Begleiters
           href: ./model-driven-apps/create-guided-help-learning-path.md
-    - name: Umstellen von Webclientanwendungen
+    - name: Übergang zur einheitlichen Benutzeroberfläche
       items:
         - name: Schnellstart zur Umstellung
           href: ./model-driven-apps/transition-web-app.md
