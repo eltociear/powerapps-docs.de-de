@@ -157,7 +157,7 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
     2. Wechseln Sie zu **apps**, wählen Sie eine Canvas-App aus, und wählen Sie dann in der Befehlsleiste **Freigabe**aus. 
     3. Geben Sie eine e-Mail-Adresse für einen Gastbenutzer von einem Azure AD Mandanten ein. Weitere Informationen finden Sie unter: [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > Für ![Gast freigeben] Für (media/share-app/guest_access_doc_2.png "Gast freigeben")
+          > Für ![Gast freigeben Für](media/share-app/guest_access_doc_2.png "Gast freigeben")
  
 Nachdem Sie eine APP für den Gast Zugriff freigegeben haben, können Gäste apps, die für Sie freigegeben wurden, über die im Rahmen der Freigabe gesendete e-Mail ermitteln und darauf zugreifen.
 
