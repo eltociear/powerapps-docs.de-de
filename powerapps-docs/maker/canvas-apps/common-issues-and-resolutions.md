@@ -1,42 +1,44 @@
 ---
 title: Häufige Probleme und Lösungen für PowerApps | Microsoft-Dokumentation
 description: Eine Liste häufiger Probleme und Lösungen für PowerApps.
-author: AFTOwen
+author: KumarVivek
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 11/09/2018
-ms.author: anneta
+ms.date: 08/21/2019
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c3b559be5f27c6ead9a4ea2f02027637c8aea8e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ef5da72c39d06d021765500fb5d1e55299dfb1cc
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551627"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896223"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 
 Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von PowerApps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
 
-## <a name="added-after-february-2018"></a>Änderungen nach Februar 2018
+1. **Anmelde Problem bei bestimmten mobilen Android-Geräten bei Verwendung des Authentifikators** (21. August, 2019)
 
-1. **Kamera-Problem auf Android-Mobilgeräte** (1. Januar 2019)
+    In bestimmten Geräten und Szenarien können bei der Verwendung von Authenticator Anmeldefehler auftreten. Dies ist darauf zurückzuführen, dass OEM diese Funktionalität einschränkt. Weitere Informationen zum Fehler und zu möglichen entschärfungen finden Sie [hier](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
 
-    Wenn die Kamera nicht angehalten, die auf Android-Geräten steuern, veröffentlichen Sie Ihre app erneut, und öffnen Sie sie erneut auf dem Gerät. Die Kamera-Steuerelement wurde als Reaktion auf eine Änderung in der Android-Betriebssystem aktualisiert, und Ihre app profitieren von der das Update, wenn Sie erneut veröffentlichen.
+1. **Kamera Problem auf mobilen Android-Geräten** (Jan. 1, 2019)
 
-1. **Durchführen eines Bildlaufs in flexible Höhe Galerien** (27. November 2018)
+    Wenn das Kamera Steuerelement nicht mehr auf einem Android-Gerät funktioniert, veröffentlichen Sie die APP erneut, und öffnen Sie Sie auf dem Gerät erneut. Das Kamera Steuerelement wurde als Reaktion auf eine Änderung im Android-Betriebssystem aktualisiert, und Ihre APP profitiert von der Aktualisierung, wenn Sie Sie erneut veröffentlichen.
 
-    Wenn Sie eine Einschränkung auftreten, wenn Sie mit dem Finger scrollen, heben Sie es aus, und starten Sie erneut einen Bildlauf durchführen.
+1. **Scrollen in flexiblen Galerien** (Nov. 27, 2018)
 
-1. **Zeichnen mit Maus oder Touch-Eingabe ist nicht in PowerApps für Windows smooth** (SEP dargestellt werden. 24, 2018)
+    Wenn beim Scrollen mit dem Finger eine Einschränkung angezeigt wird, heben Sie die Übertragung auf, und starten Sie den Bildlauf erneut.
 
-    Stift-Steuerelement muss nur teilweise Unterstützung für das Zeichnen mit Maus oder touch-Eingabe in der Windows-app. Striche möglicherweise zeitweilig. Zum reibungslosen zeichnen, verwenden eines Stiftes, oder führen Sie die app in einem Browser.
+1. Das **Zeichnen mit Maus-oder Finger Eingaben ist in powerapps für Windows nicht reibungslos** . 19.09.2014. 24, 2018)
+
+    Das Pen-Steuerelement verfügt nur über partielle Unterstützung für das Zeichnen mithilfe von Maus-oder Finger Eingaben in der Windows-App Striche können zeitweilig sein. Verwenden Sie für Smooth Drawing einen Stift, oder führen Sie die app in einem Browser aus.
 
 1. **Mehrere Medien-Steuerelemente in PowerApps Mobile** (2. August 2018)
 
@@ -51,7 +53,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. <a name="out-of-memory"></a>**Browser hat nicht genügend Arbeitsspeicher** (23. Juli 2018)
 
-    Wenn Sie bei der Verwendung von PowerApps nicht genügend Arbeitsspeicher ausführen, sollten Sie eine 64-Bit-Version von Chrome, Microsoft Edge oder Internet Explorer herunterladen.
+    Wenn bei der Verwendung von powerapps nicht genügend Arbeitsspeicher verfügbar ist, sollten Sie eine 64-Bit-Version von Chrome, Microsoft Edge oder Internet Explorer herunterladen.
 
 1. **Starten einer Website aus einer eingebetteten App** (10. Mai 2018)
 
@@ -72,8 +74,6 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 1. **Ändern des Layouts von SharePoint-Formularen** (7. März 2018)
 
     Wenn Sie in bestimmten Sprachen ein Formular in einer SharePoint-Liste anpassen und versuchen, das Layout vom Hochformat (Standard) in das Querformat zu ändern, werden in der App möglicherweise mehrere Fehler angezeigt (gelbe Dreiecke in Steuerelementen). Um diese Fehler zu beheben und das Layout mit Querformat zu erhalten, klicken Sie auf **Rückgängig**.
-
-## <a name="added-in-or-before-february-2018"></a>Änderungen im oder vor dem Februar 2018
 
 1. **Data Table-Steuerelement**
 
@@ -143,7 +143,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Wenn PowerApps aus Daten eine App generiert, wird das Feld zum Sortieren und Durchsuchen nicht automatisch konfiguriert**.
 
-   Um dieses Feld zu konfigurieren, bearbeiten Sie die **[Elemente](controls/properties-core.md)**-Formel für den Katalog, wie in den Abschnitten zum Filtern und Sortieren unter [Add a gallery (Hinzufügen eines Katalogs)](add-gallery.md) beschrieben.
+   Um dieses Feld zu konfigurieren, bearbeiten Sie die **[Elemente](controls/properties-core.md)** -Formel für den Katalog, wie in den Abschnitten zum Filtern und Sortieren unter [Add a gallery (Hinzufügen eines Katalogs)](add-gallery.md) beschrieben.
 
 1. **Bei Apps, die aus Daten erstellt werden, kann nur auf die ersten 500 Datensätze einer Datenquelle zugegriffen werden**.
 
@@ -167,7 +167,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Im [Formularsteuerelement](controls/control-form-detail.md), können Sie Daten nicht mithilfe einer benutzerdefinierten Karte ändern**.
 
-     Der bestehenden benutzerdefinierten Karte fehlt die **[Update](controls/control-card.md)**-Eigenschaft, die für das Zurückschreiben von Änderungen benötigt wird. Dieses Problem können Sie folgendermaßen umgehen:
+     Der bestehenden benutzerdefinierten Karte fehlt die **[Update](controls/control-card.md)** -Eigenschaft, die für das Zurückschreiben von Änderungen benötigt wird. Dieses Problem können Sie folgendermaßen umgehen:
 
     * Wählen Sie das Formularsteuerelement aus, und fügen Sie eine Karte mithilfe des rechten Bereichs basierend auf dem Feld ein, das mit der Karte angezeigt werden soll.  
     * Entsperren Sie die Karte, wie unter [Understand data cards (Grundlegendes zu Datenkarten)](working-with-cards.md#unlock-a-card) beschrieben.
