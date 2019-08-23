@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
+ms.date: 8/21/2019
 ms.author: matp
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 31bef01ef46fd0fe2ed7bae30e63d53c169812db
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
+ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321605"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69896206"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Ausführen einer App in einem Webbrowser
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Artikel erfahren Sie, wie Sie eine Canvas-App oder eine modellgesteuerte App über die [Dynamics 365-Startseite](https://home.dynamics.com) in einem Webbrowser ausführen.
@@ -38,23 +38,15 @@ Für diesen Schnellstart benötigen Sie Folgendes:
 Melden Sie sich unter [https://home.dynamics.com](https://home.dynamics.com) bei Dynamics 365 an.
 
 ## <a name="find-an-app-on-the-home-page"></a>Finden einer App auf der Startseite
-Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z.B. PowerApps) erstellt wurden. Klicken oder tippen Sie dafür auf **Filter**, und wählen Sie anschließend die Quelle aus.
+Die Startseite zeigt möglicherweise verschiedene Arten von Geschäfts-Apps an. Sie können nach einer bestimmten App suchen, indem Sie einen Teil des App-Namens in das Suchfeld eingeben. Sie können die Liste ebenfalls filtern, damit nur Apps angezeigt werden, die von einer bestimmten Quelle (z.B. PowerApps) erstellt wurden. Wählen Sie hierzu **Filter** aus, und wählen Sie dann die Quelle aus.
 
-Wenn Sie eine App erst vor Kurzem installiert haben, wird sie möglicherweise nicht sofort in der Liste der Apps angezeigt. Klicken oder tippen Sie auf **Sync**, um Ihre Apps anzuzeigen. Dieser Vorgang kann bis zu einer Minute dauern.
+Wenn Sie eine App erst vor Kurzem installiert haben, wird sie möglicherweise nicht sofort in der Liste der Apps angezeigt. Wählen Sie **Synchronisieren** aus, um alle Ihre apps anzuzeigen. Dieser Vorgang kann bis zu einer Minute dauern.
 
 ![](./media/run-app-browser/dynamics-365-home.png)
 
-## <a name="run-an-app-from-the-task-pane"></a>Ausführen einer App aus dem Aufgabenbereich
-Nachdem Sie eine App gefunden haben, können Sie sie für einen einfacheren Zugriff an den Aufgabenbereich anheften. Um eine App anzuheften, klicken oder tippen Sie auf die Auslassungspunkte (...) auf der App-Kachel. Klicken oder tippen Sie anschließend auf **Diese App anheften**.
-
-![](./media/run-app-browser/homepage-pin.png)
-
-Klicken oder tippen Sie zum Ausführen einer angehefteten App über den Aufgabenbereich in der oberen linken Ecke auf **Dynamics 365**, suchen Sie die App unter **Meine Apps**, und klicken oder tippen Sie anschließend darauf.
-
-![](./media/run-app-browser/taskpane.png)
 
 ## <a name="run-an-app-from-a-url"></a>Ausführen einer App über eine URL
-Sie können die URL einer App als Lesezeichen in Ihrem Browser speichern und diese ausführen, indem Sie auf das Lesezeichen klicken oder tippen. Sie können eine URL ebenfalls per E-Mail als Link versenden. Wenn ein anderer Benutzer eine App erstellt und diese per E-Mail für Sie freigibt, können Sie die App ausführen, indem Sie auf den Link klicken oder tippen. Wenn Sie eine App über eine URL ausführen, werden Sie möglicherweise dazu aufgefordert, sich mit Ihren Azure Active Directory-Anmeldeinformationen anzumelden.
+Sie können die URL einer App als Lesezeichen in Ihrem Browser speichern und diese ausführen, indem Sie auf das Lesezeichen klicken oder tippen. Sie können eine URL ebenfalls per E-Mail als Link versenden. Wenn eine APP von einer anderen Person in einer e-Mail erstellt und für Sie freigegeben wurde, können Sie die app ausführen, indem Sie den Link in der e-Mail auswählen. Wenn Sie eine App über eine URL ausführen, werden Sie möglicherweise dazu aufgefordert, sich mit Ihren Azure Active Directory-Anmeldeinformationen anzumelden.
 
 ![](./media/run-app-browser/web-login.png)
 
