@@ -1,39 +1,39 @@
 ---
-title: 'Vorschau: Canvas-apps in Ihre Anwendungen einbetten. | Microsoft-Dokumentation'
-description: Einbetten von Canvas-apps in Ihren Anwendungen mithilfe des neue einbettende SDK in PowerApps
+title: 'Vorschau: Einbinden von Canvas-apps in Ihre Anwendungen | Microsoft-Dokumentation'
+description: Einbetten von Canvas-apps in Ihre Anwendungen mit dem neuen Einbettungs-SDK in powerapps
 author: nkrb
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.author: nabuthuk
-ms.date: 05/07/2019
+ms.date: 08/23/2019
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9887cc64dd8187bd6f7f32756bc89fec4e6c8d44
-ms.sourcegitcommit: bfa128b2c35dfc11817690c3f556acae6e4bfb2f
+ms.openlocfilehash: 74bd5102703809883732fd498a587a31d669f4b2
+ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65237155"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000054"
 ---
-# <a name="preview-embed-canvas-apps-in-your-applications"></a>Vorschau: Canvas-apps in Ihre Anwendungen einbetten.
+# <a name="preview-embed-canvas-apps-in-your-applications"></a>Vorschau: Einbetten von Canvas-Apps in Ihre Anwendungen
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-PowerApps ist die hohe Produktivität der Entwickler, mit geringem Programmieraufwand Entwicklungsplattform, die ermöglicht der app-Ersteller und Anwender zum Erstellen von rich-Anwendungen. Durch Einbetten von Canvas-apps in Ihrer Anwendung, können Sie schnell und einfach Ihre Kunden in app-Entwickler umwandeln. Ihre neue app-Entwickler können Ihre Anwendungen von der Erstellung von einfachen benutzerdefinierter Formularen zum Hinzufügen von Funktionen umfassende Bildschirme und alles dazwischen erweitern. Sie können eine Verbindung mit Daten, Geschäftslogik, Workflows erstellen und orchestrieren alles in Ihrer Anwendung. Aktivieren Sie Ihren Kunden, die als app-Entwickler fungiert, können Ihre Anwendungen und Dienste schließlich überschreiten, die entscheidenden und passen perfekt in Ihrer Kunden Workflows somit noch wertvoll und unentbehrlich.
+Powerapps ist eine hohe Produktivität, eine Entwicklungsplattform mit geringem Code, die APP-Ersteller ermöglicht und allen Benutzern ermöglicht, umfangreiche Erfahrungen zu erstellen. Wenn Sie Canvas-apps in Ihre Anwendung einbetten, können Sie Ihre Kunden schnell und einfach in App-Ersteller umwandeln. Ihre neuen App-Entwickler können Ihre Anwendungen so erweitern, dass einfache benutzerdefinierte Formulare erstellt werden, um featureumfassende Bildschirme und alles dazwischen hinzuzufügen. Sie können eine Verbindung mit Daten herstellen, Geschäftslogik erstellen und Workflows innerhalb Ihrer Anwendung orchestrieren. Wenn Sie Ihren Kunden ermöglichen, als App-Hersteller zu fungieren, können Ihre Anwendungen und Dienste diese letzte Meile überschreiten und perfekt in die Workflows ihrer Kunden passen, sodass Sie noch wertvoller und wichtiger werden.
 
-Die neue Canvas-apps, die einbetten SDK Sie betten Sie können, canvas-apps in Ihren Anwendungen.
+Mit dem neuen Canvas-apps-Einbettungs-SDK können Sie Canvas-apps in Ihre Anwendungen einbetten. 
 
 > [!IMPORTANT]
-> - Dies ist ein Vorschaufeature.
+> - Dies ist ein Vorschau Feature.
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
 
-## <a name="using-the-canvas-apps-embedding-sdk-and-documentation"></a>Verwenden das Canvas-apps einbetten, SDK und die Dokumentation
+## <a name="using-the-canvas-apps-embedding-sdk-and-documentation"></a>Verwenden des Canvas-Apps zum Einbetten von SDK und Dokumentation
 
-Die neue Canvas-app einbetten SDK ist ein Vorschaufeature, die erfordert, dass Sie als Insider sich registrieren, bevor Sie ihn verwenden können. So registrieren Sie sich für die Funktion, und zeigen Sie die Dokumentation:
+Informationen zum herunterladen und Verwenden des Einbettungs-SDK für Canvas-apps finden Sie [hier](https://download.microsoft.com/download/e/6/0/e605470b-c6f4-461c-92e7-936091bf7e3c/CanvasApps-Embedding-SDK-PublicPreview.pdf).
 
-1. Join als Insider finden Sie unter <https://experience.dynamics.com/insider>.
-2. Suchen Sie das Programm: **Einbetten von SDK-Vorschau PowerApps**.
+
+

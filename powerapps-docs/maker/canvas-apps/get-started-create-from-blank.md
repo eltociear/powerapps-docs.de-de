@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
+ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555321"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000104"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
 
@@ -31,20 +30,20 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
 1. Kopieren Sie diese Daten, und fügen Sie sie in eine Excel-Datei ein.
 
-    | StartDay | StartTime | Volunteer | Backup |
+    | StartDay | StartTime | Volunteer | Mindestsicherung |
     | --- | --- | --- | --- |
-    | Saturday |10am-noon |Vasquez |Kumashiro |
+    | Samstag |10am-noon |Vasquez |Kumashiro |
     | Saturday |noon-2pm |Ice |Singhal |
-    | Saturday |2pm-4pm |Myk |Mueller |
-    | Sunday |10am-noon |Li |Adams |
-    | Sunday | noon-2pm |Singh |Morgan |
-    | Sunday | 2pm-4pm |Batye |Nguyen |
+    | Samstag |2pm-4pm |Myk |Mueller |
+    | Sonntag |10am-noon |Li |Adams |
+    | Sonntag | noon-2pm |Singh |Morgan |
+    | Sonntag | 2pm-4pm |Batye |Nguyen |
 
 2. Formatieren Sie diese Daten als Tabelle mit dem Namen **Schedule**, sodass die Informationen von PowerApps analysiert werden können.
 
     Weitere Informationen finden Sie unter [Formatieren einer Tabelle in Excel](how-to-excel-tips.md).
 
-3. Speichern Sie die Datei unter dem Namen **eventsignup.xls**, schließen Sie sie, und laden Sie sie dann in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) wie z.B. OneDrive hoch.
+3. Speichern Sie die Datei unter dem Namen **eventsignup. xlsx**, schließen Sie Sie, und laden Sie Sie dann in ein [cloudspeicherkonto](connections/cloud-storage-blob-connections.md)(z. b. onedrive) hoch.
 
 > [!IMPORTANT]
 > Sie können Ihre eigene Excel-Datei verwenden und dieses Tutorial nur für allgemeine Konzepte durchsehen. Die Daten in der Excel-Datei müssen jedoch als Tabelle formatiert sein. Weitere Informationen finden Sie unter [Formatieren einer Tabelle in Excel](how-to-excel-tips.md).
@@ -88,7 +87,7 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
 1. Wählen Sie auf der Registerkarte **Home** (Startseite) den Pfeil nach unten neben **Neuer Bildschirm** aus, um eine Liste der Bildschirmtypen zu öffnen, und wählen Sie dann **Liste** aus.
 
-    Es wird ein Bildschirm mit mehreren Standardsteuerelementen hinzugefügt, wie etwa einem Suchfeld und einem **[Katalog](controls/control-gallery.md)**-Steuerelement. Der Katalog deckt den gesamten Bildschirm unter dem Suchfeld ab.
+    Es wird ein Bildschirm mit mehreren Standardsteuerelementen hinzugefügt, wie etwa einem Suchfeld und einem **[Katalog](controls/control-gallery.md)** -Steuerelement. Der Katalog deckt den gesamten Bildschirm unter dem Suchfeld ab.
 
 1. Wählen Sie am oberen Rand des neuen Bildschirms das Steuerelement **[Bezeichnung](controls/control-text-box.md)** aus, und ersetzen Sie dann **[Titel]** durch **Datensätze anzeigen**.
 
@@ -112,17 +111,17 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     Die Formel stimmt mit diesem Beispiel überein:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -130,7 +129,7 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
 1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich neben der Bezeichnung **Felder** die Option **Bearbeiten** aus.
 
-1. Klicken Sie im Feld **Title2** auf **Volunteer**.
+1. Wählen Sie im Feld **Title2** die Option **freiwillig**aus, wählen Sie im Feld **Subtitle2** den Namen **StartDay**aus, und wählen Sie im Feld **Body1** den Namen **StartTime**aus.
 
 1. Schließen Sie den Bereich **Daten**, indem Sie in der oberen rechten Ecke das Symbol zum Schließen (X) auswählen.
 
@@ -197,7 +196,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der **ChangeScreen** angezeigt, wobei jedes Feld leer ist, damit der Benutzer einen Datensatz einfacher erstellen kann.
 
@@ -207,7 +206,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für den Pfeil auf die folgende Formel fest:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird in **ChangeScreen** jedes Feld mit den Daten für den ausgewählten Datensatz angezeigt, sodass der Benutzer den Datensatz leichter bearbeiten oder löschen kann.
 
@@ -219,7 +218,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen verworfen, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -229,7 +228,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Häkchen auf die folgende Formel fest:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen gespeichert, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -247,7 +246,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Papierkorbsymbol auf die folgende Formel fest:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der ausgewählte Datensatz aus der Datenquelle gelöscht, und der Anzeigebildschirm wird geöffnet.
 

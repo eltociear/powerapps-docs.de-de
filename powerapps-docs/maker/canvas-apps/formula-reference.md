@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
+ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550345"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008974"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -304,6 +304,8 @@ Andere Elemente enthalten:
 **[Select](functions/function-select.md)** : Simuliert eine Auswahlaktion für ein Steuerelement, sodass die Formel **OnSelect** ausgewertet wird
 
 **[Set](functions/function-set.md)** : legt den Wert einer globalen Variablen fest.
+
+**[SetFocus](functions/function-setfocus.md)** – verschiebt den Eingabefokus auf ein bestimmtes Steuerelement.
 
 **[ShowColumns](functions/function-table-shaping.md)** : gibt eine Tabelle zurück, die nur ausgewählte Spalten enthält.
 
