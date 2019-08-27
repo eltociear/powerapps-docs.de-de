@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/16/2019
 ms.locfileid: "69559244"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="with-function-in-powerapps"></a>With-Funktion in powerapps
 Berechnet Werte und führt Aktionen für einen einzelnen [Datensatz](../working-with-tables.md#records)aus, einschließlich Inline Datensätze benannter Werte.
@@ -39,19 +38,19 @@ Wenn das *Datensatz* -Argument für **mit** ein Fehler ist, wird dieser Fehler v
 ## <a name="syntax"></a>Syntax
 **Mit** ( *Datensatz*, *Formel* )
 
-* *Datensatz* – erforderlich. Der Datensatz, auf den die Aktion durchgeführt werden soll.  Verwenden Sie für Namen Werte die Inline Syntax.`{ name1: value1; name2: value2; ... }`
+* *Datensatz* – erforderlich. Der Datensatz, auf den die Aktion durchgeführt werden soll.  Verwenden Sie für Namen Werte die Inline Syntax.`{ name1: value1, name2: value2, ... }`
 * *Formel* – erforderlich.  Die für den *Datensatz*auszuwertende Formel.  Die Formel kann direkt als Daten Satz Bereich auf eines der Felder des *Datensatzes* verweisen.
 
 ## <a name="examples"></a>Beispiele
 
 ### <a name="simple-named-values"></a>Einfache benannte Werte
 
-```powerapps-comma
-With( { radius: 10; 
-        height: 15 };
+```powerapps-dot
+With( { radius: 10, 
+        height: 15 },
     Pi() * (radius*radius) * height
 )
-// Result: 4712,38898038 (as shown in a label control)
+// Result: 4712.38898038 (as shown in a label control)
 ```
 
 In diesem Beispiel wird ein Datensatz benannter Werte verwendet, um das Volume eines Zylinders zu berechnen.  **Mit** wird verwendet, um alle Eingabewerte zu erfassen, sodass Sie leicht von der Berechnung selbst getrennt werden.  
@@ -60,14 +59,14 @@ In diesem Beispiel wird ein Datensatz benannter Werte verwendet, um das Volume e
 
 ![](media/function-with/interest-calculator.gif)
 
-```powerapps-comma
-With( { AnnualRate: RateSlider/8/100;        // slider moves in 1/8th increments and convert to decimal
-        Amount: AmountSlider*10000;          // slider moves by 10;000 increment
-        Years: YearsSlider;                  // slider moves in single year increments; no adjustment required
-        AnnualPayments: 12 };                // number of payments per year
-      With( { r: AnnualRate/AnnualPayments;  // interest rate
-              P: Amount;                     // loan amount
-              n: Years*AnnualPayments };     // number of payments
+```powerapps-dot
+With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
+        Amount: AmountSlider*10000,          // slider moves by 10,000 increment
+        Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
+        AnnualPayments: 12 },                // number of payments per year
+      With( { r: AnnualRate/AnnualPayments,  // interest rate
+              P: Amount,                     // loan amount
+              n: Years*AnnualPayments },     // number of payments
             r*P / (1 - (1+r)^-n)             // standard interest calculation
       )
 )  
@@ -86,7 +85,7 @@ Im folgenden finden Sie ausführliche Anweisungen zum Erstellen dieser APP:
 3. Fügen Sie ein **Label** -Steuerelement rechts neben dem Schieberegler-Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel **rateslider/8&nbsp;& "%"** fest.
 3. Fügen Sie ein weiteres **Schieberegler** -Steuerelement hinzu, und nennen Sie es "".  Legen Sie die **Max** -Eigenschaft auf 60 fest.
 3. Fügen Sie links neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf **"Loan amount:"** fest. 
-3. Fügen Sie rechts neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel "//8 *** 10000** " fest.
+3. Fügen Sie rechts neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel **"//8 *10000** " fest.
 4. Fügen Sie ein weiteres **Slider** -Steuerelement hinzu, und nennen Sie es **yearsslider**  Legen Sie die **Max** -Eigenschaft auf 40 fest.
 3. Fügen Sie links neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf **"Anzahl von Jahren:"** fest. 
 3. Fügen Sie rechts neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel **yearsslider**fest.
@@ -95,12 +94,12 @@ Im folgenden finden Sie ausführliche Anweisungen zum Erstellen dieser APP:
 
 ### <a name="primary-key-returned-from-patch"></a>Vom Patch zurückgegebener Primärschlüssel
 
-```powerapps-comma
-With( Patch( Orders; Defaults( Orders ); { OrderStatus: "New" } );
-      ForAll( NewOrderDetails; 
-              Patch( OrderDetails; Defaults( OrderDetails ); 
-                     { Order: OrderID;          // from With's first argument; primary key of Patch result
-                       Quantity: Quantity;      // from ForAll's NewOrderDetails table
+```powerapps-dot
+With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
+      ForAll( NewOrderDetails, 
+              Patch( OrderDetails, Defaults( OrderDetails ), 
+                     { Order: OrderID,          // from With's first argument, primary key of Patch result
+                       Quantity: Quantity,      // from ForAll's NewOrderDetails table
                        ProductID: ProductID }   // from ForAll's NewOrderDetails table
               )
       )
@@ -111,12 +110,12 @@ In diesem Beispiel wird der **Order** -Tabelle in SQL Server ein Datensatz hinzu
 
 ### <a name="extracted-values-with-a-regular-expression"></a>Extrahierte Werte mit regulärem Ausdruck
 
-```powerapps-comma
+```powerapps-dot
 With( 
-    Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-    Time( Value( hours ); Value( minutes ); Value( seconds ) )
+    Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+    Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
-// Result: 2:01 AM (as shown in a label control; use the Text function to see the seconds)
+// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
 ```
 
 In diesem Beispiel werden die Stunden, Minuten und Sekunden aus dem Duration-Wert von ISO 8601 extrahiert und dann mithilfe dieser Teil Übereinstimmungen ein Datums-/Uhrzeitwert erstellt. 
