@@ -6,26 +6,26 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4dff9fa391fcecd19b3cc3195d8353e342ef46b8
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: c8d793fcfd2992a781f92d529002e22a34a9df5a
+ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69559244"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70130337"
 ---
 # <a name="with-function-in-powerapps"></a>With-Funktion in powerapps
 Berechnet Werte und führt Aktionen für einen einzelnen [Datensatz](../working-with-tables.md#records)aus, einschließlich Inline Datensätze benannter Werte.
 
 ## <a name="description"></a>Beschreibung
 
-Die **with** -Funktion wertet eine Formel für einen einzelnen Datensatz aus.  Die Formel kann einen Wert berechnen und/oder Aktionen wie das Ändern von Daten oder das Arbeiten mit einer Verbindung ausführen.  Verwenden Sie die [ **ForAll** -Funktion](function-with.md) , um eine Formel für alle Datensätze in einer Tabelle mit Datensätzen auszuwerten.
+Die **with** -Funktion wertet eine Formel für einen einzelnen Datensatz aus.  Die Formel kann einen Wert berechnen und/oder Aktionen wie das Ändern von Daten oder das Arbeiten mit einer Verbindung ausführen.  Verwenden Sie die [ **ForAll** -Funktion](function-forall.md) , um eine Formel für alle Datensätze in einer Tabelle mit Datensätzen auszuwerten.
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -57,7 +57,7 @@ In diesem Beispiel wird ein Datensatz benannter Werte verwendet, um das Volume e
 
 ### <a name="nested-with"></a>Mit
 
-![](media/function-with/interest-calculator.gif)
+![Interessen Rechner mit with-Funktion](media/function-with/interest-calculator.gif)
 
 ```powerapps-dot
 With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
@@ -74,7 +74,7 @@ With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments
 
 In diesem Beispiel wird mit Functions geschachtelt, um eine Berechnung **mit** zwei Ebenen für [monatliche Hypothekenzahlungen](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)zu erstellen.  Solange kein Konflikt vorliegt, sind alle äußeren **mit** benannten Werten im inneren **mit**verfügbar.
 
-Da die Schieberegler-Steuerelemente nur in Schritten von 1 verschoben werden können, werden die Schieberegler aufgeteilt oder multipliziert, um ein benutzerdefiniertes Inkrement effektiv zu erstellen.  Im Fall des Zinssatzes ist die **Max** -Eigenschaft des **ratesliders** auf **48**festgelegt, dividiert durch 8 für eine 1/8-Prozentpunkt-Inkrement und dividiert durch 100 in einen Wert von einem Prozentsatz in einen Dezimalwert, der den Bereich von 0,125% bis 6% abdeckt.  Im Fall des Darlehensbetrags ist die **Max** -Eigenschaft von "" für "" auf **60** und mit 10.000 multipliziert, wobei der Bereich 10.000 bis 600.000 abgedeckt wird.
+Da die Schieberegler-Steuerelemente nur in Schritten von 1 verschoben werden können, werden die Schieberegler aufgeteilt oder multipliziert, um ein benutzerdefiniertes Inkrement effektiv zu erstellen.  Im Fall des Zinssatzes ist die **Max** -Eigenschaft des **ratesliders** auf **48**festgelegt, dividiert durch 8 für einen 1/8 Prozentsatz Punkt Inkrement und dividiert durch 100, um von einem Prozentsatz in einen Dezimalwert zu konvertieren, der den Bereich von 0,125% bis 6% abdeckt.  Im Fall des Darlehensbetrags ist die **Max** -Eigenschaft von "" für "" auf **60** und mit 10.000 multipliziert, wobei der Bereich 10.000 bis 600.000 abgedeckt wird.
 
 Der **mit** wird automatisch neu berechnet, wenn die Schieberegler verschoben werden und die neue Kreditzahlung angezeigt wird.  Es werden keine Variablen verwendet, und es ist nicht erforderlich, die **OnChange** -Eigenschaft der Schieberegler-Steuerelemente zu verwenden.
 
@@ -85,7 +85,7 @@ Im folgenden finden Sie ausführliche Anweisungen zum Erstellen dieser APP:
 3. Fügen Sie ein **Label** -Steuerelement rechts neben dem Schieberegler-Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel **rateslider/8&nbsp;& "%"** fest.
 3. Fügen Sie ein weiteres **Schieberegler** -Steuerelement hinzu, und nennen Sie es "".  Legen Sie die **Max** -Eigenschaft auf 60 fest.
 3. Fügen Sie links neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf **"Loan amount:"** fest. 
-3. Fügen Sie rechts neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel **"//8 *10000** " fest.
+3. Fügen Sie rechts neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel "- **/8 * 10000**" fest.
 4. Fügen Sie ein weiteres **Slider** -Steuerelement hinzu, und nennen Sie es **yearsslider**  Legen Sie die **Max** -Eigenschaft auf 40 fest.
 3. Fügen Sie links neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf **"Anzahl von Jahren:"** fest. 
 3. Fügen Sie rechts neben diesem Schieberegler-Steuerelement ein **Label** -Steuerelement hinzu.  Legen Sie die **Text** -Eigenschaft auf die Formel **yearsslider**fest.
