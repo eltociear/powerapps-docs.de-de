@@ -10,12 +10,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11ec805a713743e2524651128b036ccaaade69e3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 05ac3d3705fc56b5714d6cb704d2d3cc3dc87124
+ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61542531"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70161294"
 ---
 # <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>Überprüfen einer Canvas-App in PowerApps auf Barrierefreiheit
 
@@ -60,7 +60,7 @@ Die Barrierefreiheitsüberprüfung klassifiziert jedes Problem auf Grundlage des
 
 ## <a name="types-of-issues"></a>Fehlertypen
 
-| Problemtitel                            | Schweregrad | Problembeschreibung  | Vorgehensweise zur Behebung | Warum eine Behebung notwendig ist|
+| Problemtitel                            | Zunehmen | Problembeschreibung  | Vorgehensweise zur Behebung | Warum eine Behebung notwendig ist|
 | ------------------------------         |:---------| -----| ------|------ |
 | **Barrierefreie Bezeichnung fehlt.**           | Fehler    | Wenn die Eigenschaft „accessible-label“ eines interaktiven Steuerelements keinen Text enthält. Ein interaktives Steuerelement kann grundsätzlich interaktiv sein, eine Schaltfläche sein oder über interaktive Eigenschaften verfügen. Sie haben z.B. die Eigenschaft **OnSelect** eines Bilds oder dessen **TabIndex**-Eigenschaft auf 0 oder höher festgelegt.  | Bearbeiten Sie die accessible-label-Eigenschaft, um das Element zu definieren. | Wenn in der accessible-label-Eigenschaft kein Text vorhanden ist, wissen Personen, die den Bildschirm nicht sehen können, nicht, was in Bildern und Steuerelementen dargestellt wird. |
 | **Fokus wird nicht angezeigt.**                | Fehler    | Wenn die **FocusBorderThickness** eines Steuerelements auf 0 festgelegt ist. Es wird empfohlen, auf einen deutlichen Farbkontrast zwischen dem Fokusrahmen und dem Steuerelement zu achten, damit es deutlich sichtbar ist. | Ändern Sie die Eigenschaft **FocusedBorderThickness** in einen Wert größer als 0.  | Wenn der Fokus nicht sichtbar ist, können Personen, die keine Maus verwenden, ihn nicht sehen, während sie mit der App interagieren.   |
@@ -70,7 +70,7 @@ Die Barrierefreiheitsüberprüfung klassifiziert jedes Problem auf Grundlage des
 | **Automatischen Start deaktivieren.**                 | Warnung  | Wenn die **Autostart**-Eigenschaft eines **Audio**- oder **Video**-Steuerelements auf **true** festgelegt ist. | Legen Sie die **Autostart**-Eigenschaft auf **false** fest. | Video- und Audiodateien, die automatisch wiedergegeben werden, können Benutzer ablenken. Lassen Sie Benutzer entscheiden, ob sie einen Clip abspielen möchten. |
 | **Namen des Bildschirms überarbeiten.**                 | Tipp      | Wenn ein Bildschirm über einen Standardnamen verfügt, der von Sprachausgaben vorgelesen wird, wenn Benutzer in der App navigieren. | Geben Sie dem Bildschirm einen Namen, der beschreibt, was auf dem Bildschirm angezeigt oder wofür er verwendet wird.| Personen, die blind oder sehbehindert sind oder eine Lese-/Rechtschreibschwäche besitzen, verlassen sich bei der Navigation auf die Bildschirmnamen und die Sprachausgabe. |
 | **Hinweistext für Zustand hinzufügen.**          | Tipp      |  Wenn ein Steuerelement zwar über einen Status verfügt (z.B. eine Umschaltfläche), für das aber die Wertbezeichnungen deaktiviert sind. | Legen Sie die Eigenschaft **ShowValue** des Steuerelements auf **true** fest, um den aktuellen Status anzuzeigen. | Benutzer erhalten keine Bestätigung ihrer Aktionen, wenn der Zustand des Steuerelements nicht angezeigt wird. |
-| **Reihenfolge der Bildschirmelemente überprüfen**| Tipp      | Wenn die Eigenschaft **TabIndex** größer als 1 ist. App-Entwickler können benutzerdefinierte Registerkartenreihenfolgen festlegen, indem Sie die **TabIndex**-Eigenschaft auf einen numerischen Wert wie 1, 2, 3 und 4 festlegen. Dieser Tipp erinnert Sie daran, die interaktive Reihenfolge für diesen Bildschirm zu überprüfen. Es hat sich bewährt, ein Design zu verwenden, in dem die **TabIndex**-Eigenschaft 0 ist.  | Stellen Sie sicher, dass die Bildschirmelemente in der Reihenfolge vorliegen, in der Sie sie durchlaufen möchten. | Wenn eine Sprachausgabe die Elemente einer App vorliest, sollten diese in der Reihenfolge dargestellt werden, in der ein Benutzer sie sehen würde und nicht in einer weniger intuitiven Reihenfolge.  |
+| **Reihenfolge der Bildschirmelemente überprüfen**| Tipp      | Wenn die **TabIndex** -Eigenschaft größer als 0 (null) ist. App-Ersteller können benutzerdefinierte Registerkarten Bestellungen festlegen, indem Sie die **TabIndex** -Eigenschaft auf einen Wert größer als 0 festlegen. es wird jedoch dringend davon abgeraten, da es schwierig ist, richtig zu werden | Legen Sie alle **TabIndex** -Eigenschaften auf 0 oder-1 fest, wenn dies möglich ist.  Verwenden Sie anstelle von **TabIndex**das **Erweiterte Gruppen** Steuerelement, um die Navigations Reihenfolge von der Standardeinstellung zu ändern.  Wenn Werte von **TabIndex** größer als 0 (null) verwendet werden müssen, stellen Sie sicher, dass die Bildschirmelemente der Reihenfolge entsprechen, in der Sie die Tab-Taste durchlaufen möchten. | Die Navigations Reihenfolge sollte die Reihenfolge spiegeln, in der Steuerelemente auf dem Bildschirm angezeigt werden. Dies ist die Standardeinstellung.  Wenn Manuelle Anpassungen vorgenommen werden, ist es schwierig, die richtige Reihenfolge beizubehalten, insbesondere wenn die Adressleiste des Browsers und andere Steuerelemente außerhalb der app vorhanden sind.  Dadurch kann die Verwendung einer Bildschirm Sprachausgabe sehr schwierig werden.  Wenn Sie von der Sprachausgabe gelesen werden, sollten die Steuerelemente in derselben Reihenfolge angezeigt werden, in der Sie auf dem Bildschirm angezeigt werden, und nicht in einer weniger intuitiven Reihenfolge.  |
 | **Andere Eingabemethode hinzufügen.**           | Tipp      | Wenn eine App ein **Stift**-Steuerelement enthält. Dieser Tipp erinnert Sie daran, eine separate Eingabemethode einzuschließen. | Fügen Sie zusätzlich zum **Stiftsteuerelement** ein **Texteingabesteuerelement** hinzu, um eine barrierefreie Lösung anzubieten. | Einige Benutzer können keinen Stift verwenden und benötigen eine weitere Möglichkeit zur Eingabe von Informationen (Beispiel: die Eingabe einer Unterschrift). |
 
 ## <a name="next-steps"></a>Nächste Schritte
