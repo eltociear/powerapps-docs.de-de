@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: bd4219a42b0674927370dfca1aa4ba681dd741bd
+ms.sourcegitcommit: e58a6d9c23445e6d00317ec990a8aa0c2650bf7f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61538550"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70201073"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -53,7 +52,7 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI-Bericht und die gestartete Instanz von PowerApps Studio verwenden eine gemeinsame Livedatenverbindung. Während beide Programme geöffnet sind, können Sie filtern oder Daten in Ihrem Bericht ändern. Sie werden dann feststellen, dass die aktualisierten Daten sofort in Ihrer App in PowerApps Studio angezeigt werden.
 
@@ -65,7 +64,7 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Bearbeiten eines Berichts](./media/powerapps-custom-visual/working-report.gif)
 
-    Wenn Sie Änderungen an einer App vornehmen müssen, öffnen Sie den Bericht im Bearbeitungsmodus, klicken oder tippen Sie im PowerApps-Visual auf **Weitere Optionen** (**...**), und klicken Sie dann auf **Bearbeiten**.
+    Wenn Sie Änderungen an einer App vornehmen müssen, öffnen Sie den Bericht im Bearbeitungsmodus, klicken oder tippen Sie im PowerApps-Visual auf **Weitere Optionen** ( **...** ), und klicken Sie dann auf **Bearbeiten**.
 
     ![Bearbeiten einer App](./media/powerapps-custom-visual/edit-app.png)
 
@@ -73,14 +72,15 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
 Das benutzerdefinierte PowerApps-Visual ist in der Vorschauversion verfügbar und hat folgende Einschränkungen:
 
-- Sie können keine Apps erstellen oder bearbeiten, wenn Sie das benutzerdefinierte PowerApps-Visual in Power BI Desktop, Internet Explorer oder Mozilla Firefox verwenden. Es wird empfohlen, den Bericht zuerst im Power BI-Dienst zu veröffentlichen. Verwenden Sie anschließend Microsoft Edge oder Google Chrome, um Apps zu erstellen und zu aktualisieren.
+- Das Erstellen, ändern und Anzeigen von apps bei Verwendung der benutzerdefinierten powerapps-Visualisierung wird nur in Microsoft Edge-und Google Chrome-Browsern unterstützt. Es wird empfohlen, den Bericht zuerst im Power BI-Dienst zu veröffentlichen. Verwenden Sie anschließend Microsoft Edge oder Google Chrome, um Apps zu erstellen und zu aktualisieren.
 - Wenn Sie die mit dem Visual verknüpften Datenfelder ändern, müssen Sie die App innerhalb des Power BI-Diensts bearbeiten, indem Sie auf die Auslassungspunkte (...) und dann auf **Bearbeiten** klicken. Andernfalls werden die Änderungen nicht in PowerApps übernommen, und die App weist unerwartetes Verhalten auf.
-- Das benutzerdefinierte PowerApps-Visual kann keine Aktualisierung des Power BI-Berichts oder der Power BI-Datenquelle auslösen. Wenn Sie Daten von der App in dieselbe Datenquelle schreiben, die auch der Bericht verwendet, werden diese Änderungen nicht sofort angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
+- Das benutzerdefinierte powerapps-Visual kann keine Aktualisierung von Power BI Berichten und Power BI Datenquellen innerhalb Power BI Desktop auslöst. Wenn Sie Daten aus der app in dieselbe Datenquelle wie den Bericht zurückschreiben, werden die Änderungen nicht sofort in Power BI Desktop angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
 - Das benutzerdefinierte PowerApps-Visual kann die Daten nicht filtern oder wieder an den Bericht senden.
 - Sie müssen die PowerApps-App getrennt von Ihrem Bericht freigeben. Weitere Informationen dazu finden Sie unter [sharing apps in PowerApps (Freigeben von Apps in PowerApps)](share-app.md).
-- Diese Technologien unterstützen keine benutzerdefinierten PowerApps-Visuals: Power BI-Berichtsserver, der mobilen app für Power BI und Internet Explorer.
+- Diese Technologien unterstützen die benutzerdefinierte powerapps-Visualisierung nicht: Power BI-Berichtsserver, die Mobile App für Power BI und Internet Explorer.
+- Wenn Sie die powerbiintegration. Refresh ()-Funktion verwenden, müssen Sie eine Quelle verwenden, die [directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * Befolgen Sie ein einfaches, [ausführliches Tutorial](embed-powerapps-powerbi.md).
-* Sehen Sie sich unsere [video](https://aka.ms/powerappscustomvisualvideo).
+* Sehen Sie sich unser [Video](https://aka.ms/powerappscustomvisualvideo)an.
