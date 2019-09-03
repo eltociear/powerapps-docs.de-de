@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/15/2018
+ms.reviewer: tapanm
+ms.date: 08/30/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bd4219a42b0674927370dfca1aa4ba681dd741bd
-ms.sourcegitcommit: e58a6d9c23445e6d00317ec990a8aa0c2650bf7f
+ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70201073"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213921"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -70,15 +70,30 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
 ## <a name="limitations-of-the-powerapps-custom-visual"></a>Einschränkungen des benutzerdefinierten PowerApps-Visuals
 
-Das benutzerdefinierte PowerApps-Visual ist in der Vorschauversion verfügbar und hat folgende Einschränkungen:
+Die folgenden Einschränkungen gelten für die benutzerdefinierte powerapps-Visualisierung:
 
-- Das Erstellen, ändern und Anzeigen von apps bei Verwendung der benutzerdefinierten powerapps-Visualisierung wird nur in Microsoft Edge-und Google Chrome-Browsern unterstützt. Es wird empfohlen, den Bericht zuerst im Power BI-Dienst zu veröffentlichen. Verwenden Sie anschließend Microsoft Edge oder Google Chrome, um Apps zu erstellen und zu aktualisieren.
 - Wenn Sie die mit dem Visual verknüpften Datenfelder ändern, müssen Sie die App innerhalb des Power BI-Diensts bearbeiten, indem Sie auf die Auslassungspunkte (...) und dann auf **Bearbeiten** klicken. Andernfalls werden die Änderungen nicht in PowerApps übernommen, und die App weist unerwartetes Verhalten auf.
 - Das benutzerdefinierte powerapps-Visual kann keine Aktualisierung von Power BI Berichten und Power BI Datenquellen innerhalb Power BI Desktop auslöst. Wenn Sie Daten aus der app in dieselbe Datenquelle wie den Bericht zurückschreiben, werden die Änderungen nicht sofort in Power BI Desktop angezeigt. Die Änderungen werden bei der nächsten geplanten Aktualisierung übernommen.
 - Das benutzerdefinierte PowerApps-Visual kann die Daten nicht filtern oder wieder an den Bericht senden.
 - Sie müssen die PowerApps-App getrennt von Ihrem Bericht freigeben. Weitere Informationen dazu finden Sie unter [sharing apps in PowerApps (Freigeben von Apps in PowerApps)](share-app.md).
-- Diese Technologien unterstützen die benutzerdefinierte powerapps-Visualisierung nicht: Power BI-Berichtsserver, die Mobile App für Power BI und Internet Explorer.
-- Wenn Sie die powerbiintegration. Refresh ()-Funktion verwenden, müssen Sie eine Quelle verwenden, die [directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden. 
+- Power BI-Berichtsserver und die Mobile App für Power BI unterstützen die benutzerdefinierte powerapps-Visualisierung nicht.
+- Wenn Sie die powerbiintegration. Refresh ()-Funktion verwenden, müssen Sie eine Quelle verwenden, die [directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden.
+
+> [!NOTE]
+> Es wird empfohlen, zuerst den Bericht auf dem Power BI-Dienst zu veröffentlichen und dann apps zu erstellen oder zu ändern.
+
+## <a name="browser-support"></a>Browser Unterstützung
+
+In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erstellen und Ändern von Aktionen der benutzerdefinierten powerapps-Visualisierung aufgeführt. Unterstützte Browser und Aktionen werden durch ein Häkchen &check; () identifiziert.
+
+|Browser|Ansicht|Stelle|Veränderung
+|-|-|-|-
+|Microsoft Edge|&check;|&check;|&check;
+|Internet Explorer 11|&check;
+|Google Chrome|&check;|&check;|&check;
+|SK|&check;
+|Mozilla Firefox
+|Alle anderen Browser
 
 ## <a name="next-steps"></a>Nächste Schritte
 
