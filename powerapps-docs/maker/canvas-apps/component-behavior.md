@@ -1,6 +1,6 @@
 ---
-title: Verhaltensformeln für Komponenten | Microsoft-Dokumentation
-description: Auslösen einer app, um eine oder mehrere Aufgaben auszuführen, wenn es sich bei eine komponentenbasierten-Aktion tritt auf, an.
+title: Verhaltens Formeln für Komponenten | Microsoft-Dokumentation
+description: Löst eine APP aus, um eine oder mehrere Tasks auszuführen, wenn eine komponentenbasierte Aktion auftritt.
 author: yifwang
 ms.service: powerapps
 ms.topic: article
@@ -10,28 +10,28 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7275395a4c21afaebc60e9635461afc08f5e84a0
-ms.sourcegitcommit: afe958805d8e1cfa4fdf02c7bceea947185f71f2
+ms.openlocfilehash: c8ec4edd835f12fb6fccf04ba0fb27f1e755cac0
+ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66420312"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70310063"
 ---
-# <a name="behavior-formulas-for-components"></a>Verhaltensformeln für Komponenten
+# <a name="behavior-formulas-for-components"></a>Verhaltens Formeln für Komponenten
 
 > [!IMPORTANT]
-> Diese Funktion ist noch experimentell und standardmäßig deaktiviert. Weitere Informationen finden Sie unter [experimentell und Vorschaufunktionen](working-with-experimental.md).
+> Diese Funktion ist in der Standardeinstellung immer noch experimentell und deaktiviert. Weitere Informationen finden Sie unter [experimentelle Features und Vorschau Features](working-with-experimental.md).
 
-Geben Sie eine oder mehrere [verhaltensformeln](working-with-formulas-in-depth.md) , die ausgeführt werden, wenn ein Ereignis wird, eine Änderung in Instanzen von Komponenten ausgelöst. Z. B. Festlegen einer Komponente **OnReset** Eigenschaftswerte in ein oder mehrere Formeln, die Initialisierung ausführen, Eingabe löschen und die kennwortzurücksetzung bei der **zurücksetzen** Funktion, die auf den Komponenteninstanzen ausgeführt wird.
+Geben Sie mindestens eine [Verhaltens Formel](working-with-formulas-in-depth.md) an, die ausgeführt wird, wenn ein Ereignis eine Änderung in Komponenten Instanzen auslöst. Legen Sie z. b. die **onreset** -Eigenschaft einer Komponente auf eine oder mehrere Formeln fest, die die Initialisierung durchführen, die Eingabe löschen und Werte zurücksetzen, wenn die **Reset** -Funktion auf den Komponenten Instanzen ausgeführt wird.
 
-## <a name="onreset"></a>OnReset ##
+## <a name="onreset"></a>OnReset
 
-Wählen Sie eine Komponente ausgewählt ist, **OnReset** in der Dropdown-Liste von Eigenschaften (auf der rechten Seite der Bearbeitungsleiste), und geben Sie dann auf einer oder mehreren Formeln.
-
-> [!div class="mx-imgBorder"]
-> ![OnReset-Beispiel](./media/component-behavior/example-onreset.png)
-
-So testen Sie **OnReset**, konfigurieren Sie ein Steuerelement zum Zurücksetzen der Komponente. Legen Sie z. B. die **OnSelect** -Eigenschaft einer Schaltfläche auf diese Formel: **Zurücksetzen**(*ComponentName*)
+Wenn eine Komponente ausgewählt ist, wählen Sie in der Dropdown Liste mit den Eigenschaften (auf der rechten Seite der Bearbeitungs Leiste) die Option **onreset** aus, und geben Sie dann eine oder mehrere Formeln ein.
 
 > [!div class="mx-imgBorder"]
-> ![Schaltfläche "Zurücksetzen"](./media/component-behavior/reset-button.png)
+> ![Onreset-Beispiel](./media/component-behavior/example-onreset.png)
+
+Zum Testen von **onreset**konfigurieren Sie ein-Steuerelement, um die Komponente zurückzusetzen. Legen Sie z. b. die **onselect** -Eigenschaft einer Schaltfläche auf diese Formel fest: **Zurücksetzen** (*Componentname*)
+
+> [!div class="mx-imgBorder"]
+> ![Schaltfläche Zurücksetzen](./media/component-behavior/reset-button.png)
