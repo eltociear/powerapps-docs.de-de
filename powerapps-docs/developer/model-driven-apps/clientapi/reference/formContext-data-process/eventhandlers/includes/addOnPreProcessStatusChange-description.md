@@ -1,0 +1,1 @@
+Fügt eine Funktion als Ereignishandler für das [OnPreProcessStatusChange](../../../events/onpreprocessstatuschange.md)-Ereignis hinzu, damit es **vor** Änderung des Geschäftsprozessflussstatus aufgerufen wird.

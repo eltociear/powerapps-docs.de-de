@@ -2,7 +2,7 @@
 title: Workflow-Erweiterungen (Common Data Service) | Microsoft Docs
 description: 'Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die CodeActivity-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.'
 ms.custom: ''
-ms.date: 06/20/2019
+ms.date: 07/16/2019
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="workflow-extensions"></a>Workflowerweiterungen
 
-Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen, die in Common Data Service verwendet werden. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die [CodeActivity](/dotnet/api/system.activities.codeactivity)-Klasse erweitert. Diese Erweiterungen werden häufig als Workflowassemblys oder Workflowaktivitäten bezeichnet.
+Sie können die Optionen erweitern, die innerhalb des Designers für Workflows zur Verfügung stehen, die in Common Data Service verwendet werden. Diese Erweiterungen werden hinzufügt, indem eine Assembly hinzufügt wird, die eine Klasse enthält, die die [CodeActivity](/dotnet/api/system.activities.codeactivity)-Klasse erweitert. Diese Erweiterungen werden allgemein als *Workflow-Assemblys* oder *Workflow-Aktivitäten* bezeichnet.
 
 Sie können diese benutzerdefinierten Erweiterungen innerhalb des Designers verwenden, der für Workflows, benutzerdefinierte Aktionen und Dialoge verwendet wird.
 
@@ -76,39 +76,19 @@ Weitere Informationen:
 
 ## <a name="technology-used"></a>Verwendete Technik
 
-Da Prozesse Windows Workflow Foundation verwenden, können Sie eine erstellte Assembly mithilfe der [.NET Framework-Aktivitätsbibliothek](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) speichern, die benutzerdefinierte Aktivitäten definiert, die innerhalb des Webanwendungs-Editors angezeigt werden und aufgerufen werden, wenn der Prozess ausgeführt wird.
+Sie können eine Assembly registrieren, die mit der [.NET Framework Activity Library](/dotnet/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library) erstellt wurde, die benutzerdefinierte Aktivitäten definiert, die im Webanwendungseditor erscheinen und beim Ausführen des Prozesses aufgerufen werden.
 
 Benutzerdefinierte Workflowaktivitäten erfordern das Erstellen einer .NET Framework-Assembly, die mindestens eine Klasse enthält, die aus der Zusammenfassung abgeleitet ist [CodeActivity-Klasse](/dotnet/api/system.activities.codeactivity?view=netframework-4.6.2). Diese Klasse stellt die [Execute(CodeActivityContext)-Methode](/dotnet/api/system.activities.codeactivity.execute?view=netframework-4.6.2) bereit, die von der Common Data Service-Plattform aufgerufen wird, wenn die Aktivität ausgeführt wird. Jede Klasse in Ihrer Assembly definiert eine bestimmte Aktivität.
 
-Workflowaktivitäten können auch Eingabe- und Ausgabeparameter definieren, die im Prozess-Designer sichtbar sind, und sie ermöglichen es einer Person, Daten an die Workflowaktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Eigenschaften für diese Parameter hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die Common Data Service verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
-
-## <a name="visual-studio-requirements"></a>Visual Studio-Anforderungen
-
-Um benutzerdefinierte Workflowaktivitäten zu erstellen, müssen Sie Visual Studio mit dem Workload **.NET-Desktopentwicklung** installieren sowie die einzelne Komponente **Windows Workflow Foundation**.
-
-Sie können die kostenlose Visual Studio 2017 Community-Edition oder die Professional- und Enterprise Editions verwenden.
-
-Zur Überprüfung der Installation oder um diese Komponente hinzuzufügen:
-
-1. Öffnen von Visual Studio 2017
-1. Wählen Sie **Extras** > **Tools und Funktionen abrufen…** . Dadurch wird das Visual Studio-Installationsprogramm geöffnet
-1. Stellen Sie auf der Registerkarte **Workloads** sicher, dass die Workload **.NET-Desktopentwicklung** ausgewählt ist.
-    ![Erforderliche Visual Studio-Workloads](media/visual-studio-workloads-workflow-extensions.png)
-1. Wählen Sie **Einzelne Komponenten** aus, und führen Sie einen Bildlauf nach unten zum Abschnitt **Entwicklungsaktivitäten** durch.
-    ![Erforderliche einzelne Komponenten von Visual Studio](media/visual-studio-individual-components-workflow-extensions.png)
-1. Wenn **Windows Workflow Foundation** nicht ausgewählt ist, wählen Sie es aus. Die Komponente **Windows Communication Foundation** wird ebenfalls einbezogen.
-1. Wenn Sie neue Workloads oder Komponenten hinzugefügt haben, klicken Sie auf **Ändern**, damit das Visual Studio-Installationsprogramm sie installieren kann. Andernfalls schließen Sie das Visual Studio-Installationsprogramm.
-
-Weitere Informationen: [Installieren von Visual Studio 2017](/visualstudio/install/install-visual-studio)
+Workflow-Aktivitäten sollten Ein- und Ausgabeparameter definieren, die im Prozessdesigner sichtbar sind und es jemandem ermöglichen, Daten in die Workflow-Aktivität zu übergeben und die verarbeitete Ausgabe zu erhalten. Wenn Sie die Klasse schreiben, fügen Sie Eigenschaften für diese Parameter hinzu und fügen zu ihnen Anmerkungen mit [.NET-Attributen](/dotnet/standard/attributes/index) hinzu, um die Metadaten bereitzustellen, die Common Data Service verwenden wird, um Ihre benutzerdefinierte Workflowaktivität mit sämtlichen Parametern im Designer verfügbar zu machen.
 
 ## <a name="create-a-custom-workflow-activity-assembly"></a>Erstellen einer benutzerdefinierten Workflowaktivitäts-Assembly
 
 Im Folgenden werden allgemeine Schritte angegeben, die verwendet werden, um eine benutzerdefinierte Workflowaktivität mithilfe von Visual Studio zu erstellen. Ein vollständiges Beispiel mit einer Schritt-für-Schritt-Anleitung finden Sie unter [Tutorial: Erstellen einer Workflowerweiterung ](tutorial-create-workflow-extension.md) Sie unter.
 
-1. Erstellen Sie ein Workflowaktivitäts-Bibliotheksprojekt mithilfe von .NET Framework 4.6.2 als Zielframework.
+1. Erstellen Sie ein Klassenbibliotheksprojekt mit .NET Framework 4.6.2 als Zielframework.
     > [!IMPORTANT]
     > Während die Assemblys, die spätere Versionen verwenden, im Allgemeinen funktionieren. Wenn sie eine Funktion verwenden, die nach 4.6.2 eingeführt wurde, tritt ein Fehler auf.
-1. Löschen Sie die Datei Activity1.xaml, die mit dem Projekt generiert wurde.
 1. Installieren Sie das [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)-NuGet-Paket.
 
     Dieses Paket umfasst das [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/)-Paket.
@@ -139,7 +119,7 @@ Im Folgenden werden allgemeine Schritte angegeben, die verwendet werden, um eine
 
 1. Signieren Sie Ihre Assembly
 1. Erstellen Sie Ihre Assembly.
-1. Registrieren Sie Ihre Assembly mithilfe des Plug-In-Registrierungstools, und legen Sie die Eigenschaften "Name" und "WorkflowActivityGroupName" fest, um den Text zu definieren, der im Dyn365CE-Prozessdesigner angezeigt wird.
+1. Registrieren Sie Ihr Assembly mit dem Plug-in-Registrierungstool und legen Sie die Eigenschaften `Name` und `WorkflowActivityGroupName` fest, um den Text zu definieren, der im Prozessdesigner sichtbar sein soll.
 
     Weitere Informationen: [Ihre Assembly registrieren](#register-your-assembly)
 
@@ -313,10 +293,10 @@ Für benutzerdefinierte Workflowaktivitäten müssen Sie die folgenden Eigenscha
 
 |Feld|Beschreibung|
 |--|--|
-|Beschreibung|Wird in der Benutzeroberfläche des Prozessdesigners nicht angezeigt, kann aber bei der Erstellung der Dokumentation von Daten aus der PluginType-Entität hilfreich sein, in der diese Informationen gespeichert werden.|
-|FriendlyName|Anzeigename des Benutzers für das Plug-In.|
-|Name|Der Name des dargestellten Menüs.|
-|WorkflowActivityGroupName|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service Prozess hinzugefügt wurde.|
+|`Description`|Wird in der Benutzeroberfläche des Prozessdesigners nicht angezeigt, kann aber bei der Erstellung der Dokumentation von Daten aus der PluginType-Entität hilfreich sein, in der diese Informationen gespeichert werden.|
+|`FriendlyName`|Anzeigename des Benutzers für das Plug-In.|
+|`Name`|Der Name des dargestellten Menüs.|
+|`WorkflowActivityGroupName`|Der Name des Untermenüs, das dem Hauptmenü im Common Data Service Prozess hinzugefügt wurde.|
 
 ![Beschreibende Eigenschaften festlegen](media/create-workflow-activity-set-properties.png)
 
@@ -413,7 +393,7 @@ Als wiederverwendbare Komponenten können Workflowerweiterungen zu beliebigen Wo
 > [!IMPORTANT]
 > Wenn Ihre Workflowerweiterung in einem synchronen Workflow oder in einer benutzerdefinierte Aktion verwendet wird, wirkt sie die Zeit für das Ausführen des Code direkt auf die Benutzererfahrung aus. Daher sollten Workflowerweiterungen nicht mehr als zwei Sekunden zum Abschließen erfordern, wenn sie synchron verwendet werden. Wenn Ihre Erweiterung mehr Zeit benötigt, sollten Sie dies dokumentieren und die Verwendung der Erweiterung in synchronen Workflows oder benutzerdefinierten Aktionen nicht empfehlen.
 
-Sie sollten außerdem darauf achten, dass jeder Fehler, der in einem synchronen Workflow oder einer benutzerdefinierten Aktion, die Teil der Transaktion ist, von der Workflowerweiterung zurückgegeben wird, dazu führt, dass für die gesamte Transaktion ein Rollback ausgeführt wird. Dies ist ein sehr kostspieliger Vorgang, der sich auf die Leistung auswirken kann.
+Sie sollten sich auch bewusst sein, dass in einem synchronen Workflow oder einer benutzerdefinierten Aktion, die an der Transaktion teilnimmt, jeder Fehler, der von Ihrer Workflow-Erweiterung verursacht wird, dazu führt, dass die gesamte Transaktion zurückgesetzt wird, was eine sehr teure Operation ist, die sich auf die Performance auswirken kann.
 
 Sie können den Wert in der Eigenschaft <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext.WorkflowMode> verwenden, um zu ermitteln, ob das Plug-In synchron ausgeführt wird.
 

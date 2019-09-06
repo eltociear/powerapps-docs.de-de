@@ -7,21 +7,22 @@ ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
+author: Nkrb
 ---
 
 # <a name="implement-components-using-typescript"></a>Implementieren von Komponenten mithilfe von TypeScript
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Dieses Lernprogramm führt Sie durch die Erstellung einer neuen benutzerdefinierten Komponente in TypeScript Die Beispielkomponente ist eine lineare Ausgabekomponente. Die lineare Ausgabekomponente ermöglicht es Benutzern, numerische Werte mit einem visuellen Schiebregler anstelle der direkten Tastatureingabe einzugeben. 
+Dieses Lernprogramm führt Sie durch die Erstellung einer neuen benutzerdefinierten Komponente in TypeScript. Die Beispielkomponente ist eine lineare Ausgabekomponente. Die lineare Ausgabekomponente ermöglicht es Benutzern, numerische Werte mit einem visuellen Schiebregler anstelle der direkten Tastatureingabe einzugeben. 
 
 ## <a name="creating-a-new-component-project"></a>Erstellen eines neuen Komponentenprojekts
 
 Wenn Sie ein neues Projekt erstellen möchten, führen Sie folgende Schritte aus:
 
 1. Öffnen Sie eine Entwicklereingabeaufforderung für das VS 2017-Fenster.
-2. Erstellen Sie einen neuen Ordner für das Projekt mit dem Befehl `mkdir LinearControl`.
-3. `cd` in das neue Verzeichnis und führen Sie den Befehl `cd LinearControl` aus 
+2. Erstellen Sie einen neuen Ordner für das Projekt mit dem Befehl `mkdir LinearComponent`.
+3. `cd` in das neue Verzeichnis und führen Sie den Befehl `cd LinearComponent` aus 
 4. Erstellen Sie das Komponentenprojekt mit dem Befehl `pac pcf init --namespace SampleNamespace --name TSLinearInputControl --template field` 
 5. Installieren Sie die Erstellungstools für das Projekt mit dem Befehl `npm install` 
 6. Öffnen Sie Ihr Projekt in einer Entwicklerumgebung Ihrer Wahl und beginnen Sie mit der Implementierung Ihrer benutzerdefinierten Komponente.
@@ -42,7 +43,7 @@ Eine benutzerdefinierte Komponente wird von den Informationen in der `ControlMan
     <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" /> 
     ```
 
-3. Das of-type-group-Attribut verweist eine Gruppe zulässiger Nummern. Fügen Sie das folgende Typ-Gruppe-Element als nebengeordnetes Element dem <property>-Element im Manifest hinzu. Die Typ-Gruppe gibt den Komponentenwert an und kann Ganz-, Währungs-, Gleitkomma oder Dezimalwerte enthalten.
+3. Das of-type-group-Attribut verweist eine Gruppe zulässiger Nummern. Fügen Sie das folgende Typ-Gruppe-Element als nebengeordnetes Element dem Eigenschaftenelement im Manifest hinzu. Die Typ-Gruppe gibt den Komponentenwert an und kann Ganz-, Währungs-, Gleitkomma oder Dezimalwerte enthalten.
 
     ```XML
     <type-group name="numbers"> 
@@ -54,10 +55,10 @@ Eine benutzerdefinierte Komponente wird von den Informationen in der `ControlMan
     ```
 
 4. Speichern Sie die Änderungen in der `ControlManifest.Input.xml`-Datei.
-5. Jetzt können Sie einen neuen Ordner innerhalb des LinearControl-Ordners erstellen und ihn als css erstellen.
-6. Erstellen Sie eine css-Datei, um [der benutzerdefinierten Komponente eine gewisse Optik zu verleihen](#adding-style-to-the-custom-component)
+5. Jetzt können Sie einen neuen Ordner innerhalb des `TSLinearInputControl`-Ordners erstellen und ihn mit **css** benennen.
+6. Erstellen Sie eine CSS-Datei, um [der benutzerdefinierten Komponente ein Format hinzuzufügen](#adding-style-to-the-custom-component)
 7. Erstellen Sie das Komponentenprojekt mit dem Befehl `npm run build`.
-8. Das Build generiert eine aktualisierte Typescript-Typdeklinationsdatei unter `TSLinearInputControl/generated folder`.  Die `ManifestTypes.d.ts`-Datei definiert die Eigenschaften, auf die Ihre Komponente zugreift, um Typescript-Quellcode zu erstellen.
+8. Das Build generiert eine aktualisierte Typescript-Typdeklinationsdatei unter `TSLinearInputControl/generated folder`.
 
 ## <a name="implementing-component-logic"></a>Implementieren von Komponentenlogik
 
@@ -67,6 +68,7 @@ Die Quelle für die benutzerdefinierte Komponente wird in der `index.ts`-Datei i
 2. Aktualisieren Sie die `TSLinearInputControl`-Klasse folgendermaßen
 
 ```TypeScript
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSLinearInputControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control 
   private _value: number;
@@ -155,20 +157,11 @@ export class TSLinearInputControl implements ComponentFramework.StandardControl<
 
 ## <a name="adding-style-to-the-custom-component"></a>Hinzufügen von Stil zur benutzerdefinierten Komponente
 
-Die `init`-Methode des linearen Ausgabesteuerelements erstellt ein Eingabeelement und legt das Klassenattribut auf `linearslider` fest. Der Stil für die `linearslider`-Klasse wird in einer separaten `css`-Datei definiert. Zusätzliche Komponentenressourcen wie `css`-Dateien können in die benutzerdefinierte Komponente eingeschlossen werden, um weitere Anpassungen zu unterstützen.
+Die `init`-Methode der linearen Eingabekomponente erstellt ein Eingabeelement und legt das Klassenattribut auf `linearslider` fest. Der Stil für die `linearslider`-Klasse wird in einer separaten `CSS`-Datei definiert. Zusätzliche Komponentenressourcen wie `CSS`-Dateien können in die benutzerdefinierte Komponente eingeschlossen werden, um weitere Anpassungen zu unterstützen.
 
-1. Bearbeiten Sie die `ControlManifest.Input.xml`-Datei, um eine zusätzliche `css`-Ressource im <resources>-Element einzuschließen.
- 
-    ```XML
-    <resources> 
-      <code path="index.ts" order="1"/> 
-      <css path="css/TS_LinearInputControl.css" order="1"/> 
-    </resources> 
-     ```
-
-2. Erstellen Sie einen neuen `css`-Unterordner im `TSLinearInputControl`-Ordner. 
-3. Erstellen Sie eine neue `TS_LinearInputControl.css`-Datei im `css`-Unterordner. 
-4. Fügen Sie der `TS_LinearInputControl.css`-Datei den folgenden Stilinhalt hinzu
+1. Erstellen Sie einen neuen `css`-Unterordner im `TSLinearInputControl`-Ordner. 
+2. Erstellen Sie eine neue `TS_LinearInputControl.css`-Datei im `css`-Unterordner. 
+3. Fügen Sie der `TS_LinearInputControl.css`-Datei den folgenden Stilinhalt hinzu
 
     ```CSS
     .SampleNamespace\.TSLinearInputControl input[type=range].linearslider {
@@ -239,16 +232,24 @@ Die `init`-Methode des linearen Ausgabesteuerelements erstellt ein Eingabeelemen
     }
     ```
 
-5. Speichern von `TS_LinearInputControl.css` 
-6. Erstellen Sie das Projekt mit dem Befehl  neu. 
+5. Speichern Sie die Datei `TS_LinearInputControl.css`.
+6. Bearbeiten Sie die `ControlManifest.Input.xml`-Datei, um die `CSS`-Ressourcendatei im Ressourcenelement einzuschließen.
+ 
+    ```XML
+    <resources> 
+      <code path="index.ts" order="1"/> 
+      <css path="css/TS_LinearInputControl.css" order="1"/> 
+    </resources> 
+     ```
+7. Erstellen Sie das Projekt mit dem Befehl  neu. 
    ```CLI
    npm run build
    ```
-7. Inspizieren Sie die Build-Ausgabe unter **./out/controls/TSLinearInputControl** und beachten Sie, dass die **TS_LinearInputControl.css**-Datei jetzt in den kompilierten Build-Artefakten enthalten ist. 
+8. Inspizieren Sie die Build-Ausgabe unter **./out/controls/TSLinearInputControl** und beachten Sie, dass die **TS_LinearInputControl.css**-Datei jetzt in den kompilierten Build-Artefakten enthalten ist. 
 
 ## <a name="debugging-your-custom-component"></a>Debuggen der benutzerdefinierten Komponente
 
-Sobald Sie Ihre benutzerdefinierte Komponentenlogik implementiert haben, führen Sie den folgenden Befehl aus, um den Debugging-Prozess zu starten 
+Sobald Sie Ihre benutzerdefinierte Komponentenlogik implementiert haben, führen Sie den folgenden Befehl aus, um den Debugging-Prozess zu starten. Weitere Informationen: [Debugging von benutzerdefinierten Komponenten](debugging-custom-controls.md)
 
 ```CLI
 npm start
@@ -262,11 +263,11 @@ Führen Sie die folgenden Schritte aus um eine [Lösungs](https://docs.microsoft
 2. Erstellen Sie mithilfe des Befehls ein neues Lösungsprojekt im **LinearComponent**-Ordner. 
  
     ```CLI
-     pac solution init --publisherName developer --customizationPrefix dev 
+     pac solution init --publisher-name developer --publisher-prefix dev 
     ```
 
    > [!NOTE]
-   > Die Werte für [publisherName](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher) und [cutomizationPrefix](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix) müssen in Ihrer Umgebung eindeutig sein.
+   > Die Werte für [publisher-name](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/publisher) und [publisher-prefix](https://docs.microsoft.com/powerapps/maker/common-data-service/change-solution-publisher-prefix) müssen in Ihrer Umgebung eindeutig sein.
  
 3. Sobald das neue Lösungsprojekt erstellt ist, müssen Sie den Speicherort verweisen, an dem sich die erstellte Komponente befindet. Sie können den Verweis mit dem Befehl  hinzufügen.
 
@@ -274,7 +275,7 @@ Führen Sie die folgenden Schritte aus um eine [Lösungs](https://docs.microsoft
      pac solution add-reference --path c:\users\LinearComponent
     ```
 
-4. Um eine ZIP-Datei aus Ihrem Lösungsprojekt zu erstellen, müssen Sie `cd` im Lösungsprojektverzeichnis hinzufügen und das Projekt mithilfe des Befehls erstellen. 
+4. Um eine ZIP-Datei aus Ihrem Lösungsprojekt zu erstellen, müssen Sie `cd` im Lösungsprojektverzeichnis hinzufügen und das Projekt erstellen mithilfe des Befehls 
 
     ```CLI
      msbuild /t:restore
@@ -297,7 +298,7 @@ Führen Sie die folgenden Schritte aus um eine [Lösungs](https://docs.microsoft
 
 ## <a name="adding-custom-components-to-a-field-or-an-entity"></a>Hinzufügen von benutzerdefinierten Komponenten zu einem Feld oder einer Entität
 
-Um eine benutzerdefinierte Komponente wie die Datensatz-Komponente oder eine einfach Tabellenkomponente zu einem Raster oder einer Ansicht hinzuzufügen, führen Sie die im Thema [Hinzufügen von Komponenten zu Feldern und Entitäten](add-custom-controls-to-a-field-or-entity.md) erwähnten Schritte aus.
+Um eine benutzerdefinierte Komponente wie eine Datensatz-Komponente oder eine einfache Tabellenkomponente zu einem Raster oder einer Ansicht hinzuzufügen, führen Sie die im Thema [Hinzufügen von Komponenten zu Feldern und Entitäten](add-custom-controls-to-a-field-or-entity.md) erwähnten Schritte aus.
 
 ### <a name="see-also"></a>Siehe auch
 

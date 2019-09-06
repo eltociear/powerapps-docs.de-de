@@ -1,5 +1,5 @@
 ---
-title: Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service | MicrosoftDocs
+title: XRM-Tooling zur Ausführung von Aktionen in Common Data Service verwenden | MicrosoftDocs
 description: 'Ein Objekt der CrmServiceClient-Klasse kann verwendet werden, um Operationen mit Daten in Dynamics 365 zu erstellen, abzurufen, zu aktualisieren und zu löschen'
 ms.custom: ''
 ms.date: 03/20/2019
@@ -14,6 +14,7 @@ ms.assetid: 72e9238d-e0fb-453b-b1ab-3a15ffb19838
 caps.latest.revision: 13
 ms.author: nabuthuk
 manager: kvivek
+author: Nkrb
 search.audienceType:
   - developer
 search.app:

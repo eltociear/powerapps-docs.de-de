@@ -3,7 +3,7 @@ title: Deaktivieren des automatischen Speicherns in einer modellgesteuerten App 
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -55,7 +55,7 @@ Die automatische Speicherung hilft App-Benutzern, sich auf ihre Arbeit zu konzen
  Wenn Sie die automatische Speicherung für bestimmte Entitätsformulare deaktivieren möchten, können Sie dem `OnSave`-Ereignis in einer Entität Code hinzufügen.  
   
 > [!NOTE]
->  Die automatische Speicherung wird für das Formular deaktiviert, die Daten werden aber weiterhin gespeichert, wenn Sie die ![Schaltfläche "Automatisches Speichern"](media/auto-save-icon.png "Schaltfläche \"Automatisches Speichern\"") in der rechten unteren Ecke auswählen. Wenn Sie versuchen, von einem Formular wegzunavigieren oder ein Formular zu schließen, in dem Daten geändert wurden, werden Sie aufgefordert, die Änderungen zu speichern, bevor Sie dies tun können.  
+>  Die automatische Speicherung wird für das Formular deaktiviert, die Daten werden aber weiterhin gespeichert, wenn Sie die ![Schaltfläche „Automatisches Speichern“](media/auto-save-icon.png "Schaltfläche „Automatisches Speichern“") rechts unten auswählen. Wenn Sie versuchen, von einem Formular wegzunavigieren oder ein Formular zu schließen, in dem Daten geändert wurden, werden Sie aufgefordert, die Änderungen zu speichern, bevor Sie dies tun können.  
   
 1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 

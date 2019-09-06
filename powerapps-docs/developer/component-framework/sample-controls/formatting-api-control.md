@@ -3,6 +3,7 @@ title: Formatieren der API-Komponente | Microsoft Docs
 description: null
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

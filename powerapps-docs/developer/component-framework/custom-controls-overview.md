@@ -7,6 +7,7 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
+author: Nkrb
 ---
 
 # <a name="what-are-custom-components"></a>Was sind benutzerdefinierte Komponenten?
@@ -63,7 +64,7 @@ controlObj.init(context,notifyOutputChanged,state,container);
 |---|---|
 |Kontext| Enthält alle Informationen darüber, wie die Komponente konfiguriert ist und über alle Parameter, die in der Komponente zusammen mit den [Framework-APIs](reference/index.md) verwendet werden können. Zum Beispiel kann `context.parameters.["property name from manifest"]` verwendet werden, um auf die Eingabeeigenschaft zuzugreifen.|
 |notifyOutputChanged |Funktion, die das Framework warnt, dass die Komponente über neue Ausgaben verfügt, die asynchron abgerufen werden können.|
-|state|Enthält Komponentendaten vom Laden der vorherigen Seite in der aktuellen Sitzung, wenn das Steuerelement sie zuvor explizit mit `setControlState API` gespeichert hat.|
+|state|Enthält Komponentendaten vom Laden der vorherigen Seite in der aktuellen Sitzung, wenn die Komponente sie zuvor explizit mit `setControlState API` gespeichert hat.|
 |Container|Ein HTML-div-Element, an das Sie die HTML-Elemente für die Benutzeroberfläche anhängen, die Ihre Umgebung definiert. Um die Werte in der Benutzeroberfläche anzuzeigen, müssen Sie die Daten aus `context.parameters.controlValue object` abrufen.|
 
 ### <a name="user-changes-data"></a>Benutzer ändert Daten

@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal | MicrosoftDocs
 ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/13/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -13,6 +13,7 @@ applies_to:
   - PowerApps
 ms.author: matp
 manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -21,11 +22,11 @@ search.app:
 ---
 # <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal
 
-Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Felder vom Common Data Service zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsfelder mit dem Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
-- [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)
+- [Felder für Common Data Service mit dem Projektmappen-Explorer von PowerApps erstellen und bearbeiten](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Ansichtsfelder
 
@@ -52,7 +53,7 @@ Es sind nur drei Feldeigenschaften verfügbar:
  |Eigenschaft|Beschreibung|
  |--|--|
  |**Anzeigename**|Der Text für das Feld auf der Benutzeroberfläche, der angezeigt werden soll.|
- |**Name**|Der eindeutige Name Ihrer Umgebung. Ein Name wird für Sie basierend auf dem Anzeigenamen generiert, die Sie eingegeben haben, aber Sie können ihn ändern, bevor Sie ihn speichern. Sobald ein Feld erstellt wurde, kann der Name nicht geändert werden, da er unter Umständen auf die Anwendungen oder Code verweist. Der Name hat folgendes Anpassungspräfix für das **Common Data Service-Standardherausgeber**-Elemente verwendet.|
+ |**Name**|Der eindeutige Name Ihrer Umgebung. Ein Name wird für Sie basierend auf dem Anzeigenamen generiert, die Sie eingegeben haben, aber Sie können ihn ändern, bevor Sie ihn speichern. Sobald ein Feld erstellt wurde, kann der Name nicht geändert werden, da er unter Umständen auf die Anwendungen oder Code verweist. Der Name hat folgendes Anpassungspräfix für den **Common Data Service Standardherausgeber** verwendet.|
  |**Datentyp**|Steuert, wie Werte gespeichert werden sowie wie sie in einigen Anwendungen formatiert werden. Sobald ein Feld gespeichert ist, können Sie den Datentyp nicht ändern, abgesehen von der Konvertierung von Feldern mit automatischer Nummerierung.|
 
 Sie können auch weitere Optionen abhängig von der Auswahl von **Datentyp** festlegen.
@@ -88,7 +89,7 @@ Diese Felder speichern Daten als Zahlen aber enthalten andere Darstellungs- und 
 |Datentyp|Beschreibung|
 |--|--|
 |**Ganze Zahl**|Ein Zahlenwert dargestellt in einem Textfeld.|
-|**Dauer**|Ein Zahlenwert dargestellt als Dropdownliste, die Zeitintervalle enthält. Ein Benutzer kann einen Wert in der Liste auswählen oder einen ganzzahligen Wert eingeben, der die Anzahl von Minuten darstellt.|
+|**Dauer**|Ein Zahlenwert dargestellt als Dropdownliste, die Zeitintervalle enthält. Ein Benutzer kann einen Wert in der Liste auswählen oder einen ganzzahligen Wert eingeben, der die Anzahl von Minuten darstellt. Die Dauer muss im folgenden Format eingegeben werden: "x Minuten", "x Stunden" oder "x Tage". Stunden und Tagen können auch mit Dezimalstellen eingegeben werden, z. B. "x,x Stunden" oder "x,x Tage". Die Werte müssen in Minuten eingegeben werden. Unterminütige Werte werden auf die nächste Minute gerundet.|
 |**Zeitzone**|Ein Zahlenwert dargestellt als Dropdownliste, die Zeitzonen enthält.|
 |**Sprache**|Ein Zahlenwert als Dropdownliste, die eine Liste von Sprachen enthält, die für die Organisation aktiviert sind. Wenn keine anderen Sprachen aktiviert sind, ist die einzige Option die Ausgangssprache. Der gespeicherte Wert ist der Locale Identifier (LCID)-Wert für die Sprache.|
 
@@ -171,7 +172,7 @@ Weitere Informationen: [Definieren der Rollupfelder für die Gesamtwerte](define
 
 ## <a name="number-field-options"></a>Nummernfeldoptionen
 
-Jeder Typ Zahlenfeld hat absolute minimale und maximale Werte. Sie können einen entsprechenden **Minimalen Wert** und **Maximalen Wert** in diesen absoluten Werte festlegen. Wählen Sie diese Möglichkeit aus, um Common Data Service die Werte für die Daten prüfen zu lassen, die Sie im Feld speichern möchten.
+Jeder Typ Zahlenfeld hat absolute minimale und maximale Werte. Sie können einen entsprechenden **Minimalen Wert** und **Maximalen Wert** in diesen absoluten Werte festlegen. Tun Sie dies, um Common Data Service die Werte für die Daten prüfen zu lassen, die Sie im Feld speichern möchten.
 
 Für **Gleitkommazahl** und **Dezimalzahl** Datentypen können Sie einige **Dezimalstellen** angeben.
 
@@ -226,7 +227,7 @@ Alle Felder, die direkte Texteingabe ermöglichen, haben einen IME-Modus. Der Ei
 
 ### <a name="see-also"></a>Siehe auch  
 [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)<br />
-[Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungs-Explorer](create-edit-field-solution-explorer.md)<br />
+[Felder für Common Data Service mit dem Projektmappen-Explorer von PowerApps erstellen und bearbeiten](create-edit-field-solution-explorer.md)<br />
 [Feldtypen und Felddatentypen](types-of-fields.md)<br />
 [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
 [Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />

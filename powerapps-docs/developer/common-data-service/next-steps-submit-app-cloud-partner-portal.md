@@ -1,8 +1,8 @@
 ---
-title: 'Nächste Schritte: Senden der App an das Cloud-Partners-Portal (Common Data Service) | Microsoft Docs'
-description: 'Lernen Sie, wie Sie eine App an das Cloud-Partners-Portal senden, damit sie in der AppSource aufgeführt wird.'
+title: 'Nächste Schritte: Senden der App im Partner Center (Common Data Service) | Microsoft Docs'
+description: 'Erfahren Sie, wie Sie eine App im Cloud-Partnerportal senden, damit sie auf AppSource aufgeführt wird.'
 ms.custom: ''
-ms.date: 02/25/2019
+ms.date: 07/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -15,20 +15,18 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="next-steps-submit-your-app-on-cloud-partner-portal"></a>Nächste Schritte: Senden Sie die App auf dem Cloud-Partners-Portal
+# <a name="next-steps-submit-your-app-on-partner-center"></a>Nächste Schritte: Senden der App im Partner Center
 
 Die App ist zur Übermitteln bereit, nachdem diese Schritte 1-5 abgeschlossen haben. 
 
-Wenn Sie Zugriff auf das [Cloud-Partners-Portal](https://cloudpartner.azure.com) haben, basierend auf den von Ihnen in [Schritt 1](fill-app-submission-form-appsource.md) übermittelten Informationen, fahren Sie fort mit [Erstellen eines Angebots](https://cloudpartner.azure.com/#new/microsoft-crm/form/offerSettings) auf dem Cloud Partner Portal, um die App zu senden. 
+Wenn der Zugriff auf [Partner Center](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) abgeschlossen wurde, fahren Sie fort mit [Erstellen eines Angebots](https://docs.microsoft.com/azure/marketplace/partner-center-portal/offer-creation-checklist) im Partner Center, um die App zu senden.
 
-Alle Apps, die auf AppSource aufgeführt werden, müssen einen Zertifizierungsprozess abschließen. Informationen zu den Überprüfungen, die im Zertifizierungsprozess vorgenommen werden, finden Sie unter [Anhang: App-Zertifizierungscheckliste](appendix-app-certification-checklist.md)
-
-Ausführliche Informationen zum Senden eine App für Dynamics 365 Customer Engagement ist im Cloud-Partners-Portal verfügbar [Dokumentation](https://cloudpartner.azure.com/#documentation/crm-create-offer). Die Portaldokumentation ist nur für Benutzer des autorisierten Cloud-Partners-Portals verfügbar.
+Alle Apps, die auf AppSource aufgeführt werden, müssen einen Zertifizierungsprozess abschließen. Informationen zu den Überprüfungen, die im Zertifizierungsprozess vorgenommen werden, finden Sie unter [Anhang: App-Zertifizierungscheckliste](appendix-app-certification-checklist.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erste Schritte beim Cloud-Partners-Portal](https://cloudpartner.azure.com/#documentation/getting-started-with-the-cloud-partner-portal)
+[Übersicht über das Commercial Marketplace-Portal im Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-overview)  
 
-[Veröffentlichen Sie die App für AppSource](publish-app-appsource.md)
+[App auf AppSource veröffentlichen](publish-app-appsource.md)
 
 [Microsoft AppSource](https://appsource.microsoft.com)

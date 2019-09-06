@@ -2,7 +2,7 @@
 title: Protokollierung und Verfolgung (Common Data Service) | Microsoft Docs
 description: 'Verwenden Sie das Trace-Protokoll, um Informationen zur Ausführung von Plug-Ins zu speichern, um das Plug-In-Debugging zu unterstützen.'
 ms.custom: ''
-ms.date: 05/05/2019
+ms.date: 07/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -79,6 +79,8 @@ Entwickeln Sie anschließend das Plug-In oder die benutzerdefinierte Workflowakt
 ## <a name="additional-information-about-the-tracing-service"></a>Zusätzliche Informationen über den Tracing-Dienst
 
 Die<xref:Microsoft.Xrm.Sdk.ITracingService> verarbeitet stapelweise die Informationen, die dafür über die **Ablaufverfolgungs** -Methode bereitgestellt werden. Die Informationen werden in einen neuen [PluginTraceLog](reference/entities/plugintracelog.md)-Datensatz geschrieben, wenn benutzerdefinierter Code erfolgreich zum Abschluss ausgeführt oder eine Ausnahme ausgelöst wurde.  
+
+Jeder Trace-Aufruf wird als neue Zeile im Attribut [PluginTraceLog](reference/entities/plugintracelog.md) [MessageBlock](reference/entities/plugintracelog.md#BKMK_MessageBlock) protokolliert. Es kann nur Text mit einer Größe von 10 KB erstellt werden. Ältere Trace-Zeilen werden entfernt, um diesen Grenzwert einzuhalten, sodass nur die neuesten Zeilen gespeichert werden.
   
 [PluginTraceLog](reference/entities/plugintracelog.md)-Datensätze haben eine begrenzte Gültigkeitsdauer. Ein Massenlöschungs-Hintergrundauftrag wird einmal täglich ausgeführt, um Datensätze zu löschen, die älter als 24 Stunden seit der Erstellung sind. 
 

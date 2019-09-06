@@ -1,0 +1,1 @@
+Fügt eine Funktion als Ereignishandler für das [AddOnPreStageChange](../addonprestagechange.md)-Ereignis hinzu, damit es **vor** Änderung der Geschäftsprozessfluss-Phase aufgerufen wird.

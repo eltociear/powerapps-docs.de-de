@@ -3,6 +3,7 @@ title: Aktualisieren Sie vorhandene benutzerdefinierte Komponenten mit PowerApps
 description: Aktualisieren von Komponenten mit PowerApps Komponentenframework-Tooling
 keywords: 'PowerApps Komponentenframework, Benutzerdefinierte Komponente, Komponentenframework'
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

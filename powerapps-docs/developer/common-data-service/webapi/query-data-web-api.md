@@ -1,8 +1,8 @@
 ---
-title: Abfragen von Daten mit der Web-API (Common Data Service) | Microsoft Docs
-description: 'Informieren Sie sich über die verschiedenen Methoden zum Abfragen mit der Common Data Service-Daten mit der Common Data Servce-Web-API und verschiedenen Systemabfrageoptionen, die in diesen Abfragen angewandt werden können.'
+title: Datenabfrage mit Web-API (Common Data Service)| Microsoft Docs
+description: 'Informieren Sie sich über die verschiedenen Methoden, Common Data Service-Daten mit Common Data Service-Web-API und verschiedenen System-Abfrageoptionen abzufragen, die in diesen Abfragen angewendet werden können'
 ms.custom: ''
-ms.date: 02/06/2019
+ms.date: 07/23/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -34,7 +34,7 @@ Wenn Sie Daten für einen Entitätssatz abrufen möchten, verwenden Sie eine `GE
  **Anforderung**
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name&$top=3 HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$top=3 HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -49,7 +49,7 @@ Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0  
   
 {  
-   "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name)",
+   "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name)",
    "value":[  
       {  
          "@odata.etag":"W/\"501097\"",
@@ -79,10 +79,25 @@ OData-Version: 4.0
   
 > [!NOTE]
 >  Abfragen für Modellentitäten werden nicht begrenzt oder in einer Seite ausgegeben. Mehr Informationen: [Metadatenabfrage mit Web-API](query-metadata-web-api.md).  
+
+<a name="bkmk_limitResults"></a>
+
+### <a name="use-top-query-option"></a>`$top`-Abfrageoption verwenden
+
+Sie können die Anzahl der zurückgegebenen Ergebnisse einschränken, indem Sie die Systemabfrageoption `$top`, verwenden. Im folgenden Beispiel werden nur die ersten drei Firmenentitäten zurückgegeben.  
   
+```http 
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue&$top=3  
+```  
+  
+> [!NOTE]
+>  Durch Einschränken der Ergebnisse mit `$top` wird die Anwendung der `odata.maxpagesize`-Einstellung verhindert. Sie können die `odata.maxpagesize`-Einstellung oder `$top` verwenden, aber nicht beide gleichzeitig. Weitere Informationen zu `odata.maxpagesize` finden Sie unter [Geben Sie die Anzahl der getätigten Entitäten an, die in eine Seite zurückgegeben werden](query-data-web-api.md#bkmk_specifyNumber).  
+>   
+>  Sie sollten außerdem nicht `$top` mit `$count` verwenden.  
+
 <a name="bkmk_specifyNumber"></a>
 
-## <a name="specify-the-number-of-entities-to-return-in-a-page"></a>Geben Sie die Anzahl der in einer Seite zurückzugebenden Entitäten an
+### <a name="specify-the-number-of-entities-to-return-in-a-page"></a>Geben Sie die Anzahl der in einer Seite zurückzugebenden Entitäten an
 
 Verwenden Sie den `odata.maxpagesize`-Einstellungswert, um die Anzahl der Entitäten, die in der Antwort zurückgegeben werden, anzufordern.  
   
@@ -94,7 +109,7 @@ Verwenden Sie den `odata.maxpagesize`-Einstellungswert, um die Anzahl der Entit�
  **Anforderung**
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -111,7 +126,7 @@ Content-Length: 402
 Preference-Applied: odata.maxpagesize=3  
   
 {  
-   "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name)",
+   "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name)",
    "value":[  
       {  
          "@odata.etag":"W/\"437194\"",
@@ -129,7 +144,7 @@ Preference-Applied: odata.maxpagesize=3
          "accountid":"8151925c-cde2-e411-80db-00155d2a68cb"
       }
    ],
-   "@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts?$select=name&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253caccountid%2520last%253d%2522%257b8151925C-CDE2-E411-80DB-00155D2A68CB%257d%2522%2520first%253d%2522%257b7D51925C-CDE2-E411-80DB-00155D2A68CB%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20/%3E"
+   "@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts?$select=name&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253caccountid%2520last%253d%2522%257b8151925C-CDE2-E411-80DB-00155D2A68CB%257d%2522%2520first%253d%2522%257b7D51925C-CDE2-E411-80DB-00155D2A68CB%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20/%3E"
 }
   
 ```  
@@ -146,7 +161,7 @@ Preference-Applied: odata.maxpagesize=3
  Jede der Systemabfrageoptionen, die Sie zur URI für den Entitätssatz anfügen, wird mithilfe der Syntax für Abfragezeichenfolgen hinzugefügt. Die erste wird nach [?] angefügt und die nachfolgenden Abfrageoptionen werden mithilfe von [&] getrennt. Alle Abfrageoptionen unterscheiden zwischen Groß-/Kleinschreibung, wie im folgenden Beispiel angezeigt.  
   
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue&$top=3&$filter=revenue gt 100000  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue&$top=3&$filter=revenue gt 100000  
 ```  
   
 <a name="bkmk_requestProperties"></a>
@@ -156,7 +171,7 @@ GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue&$top=3&$filte
  Verwenden Sie die `$select`-Systemabfrageoption, um die zurückgegebenen Eigenschaften zu begrenzen, wie im folgenden Beispiel angezeigt.  
   
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue  
 ```  
   
 > [!IMPORTANT]
@@ -214,16 +229,212 @@ Die Web API unterstützt diese Standardfunktionen der OData-Zeichenkettenabfrage
 > [!NOTE]
 >  Dies ist eine Teilmenge von [11.2.5.1.2 Integrierte Abfragefunktionen](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` und andere String-Funktionen werden nicht in der Web-API unterstützt.  
   
-### <a name="common-data-service-web-api-query-functions"></a>Common Data Service-Web-API-Abfragefunktionen
+### <a name="common-data-service-web-api-query-functions"></a>Common Data ServiceWeb API Abfragefunktionen
  
 Common Data Service enthält einige spezielle Funktionen, die Parameter akzeptieren, Boolesche Werte zurückgeben und als Filterkriterium in einer Abfrage verwendet werden können. Eine Liste dieser Funktionen finden Sie unter <xref:Microsoft.Dynamics.CRM.QueryFunctionIndex>. Im Folgenden finden Sie ein Beispiel für die Suche von <xref href="Microsoft.Dynamics.CRM.Between?text=Between Function" /> nach Firmen mit einer Mitarbeiterzahl zwischen 5 und 2000.  
   
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,numberofemployees&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,numberofemployees&$filter=Microsoft.Dynamics.CRM.Between(PropertyName='numberofemployees',PropertyValues=["5","2000"])  
 ```  
   
-Weitere Informationen: [Verfassen einer Abfrage mit Funktionen](use-web-api-functions.md#bkmk_composeQueryWithFunctions).  
+Weitere Informationen: [Verfassen einer Abfrage mit Funktionen](use-web-api-functions.md#bkmk_composeQueryWithFunctions). 
+
+<a name="bkmk_LambdaOperators"></a>
+
+### <a name="use-lambda-operators"></a>Verwenden von Lambda-Operatoren
+
+Die Web-API ermöglicht Ihnen, zwei Lambda-Operatoren zu verwenden, nämlich `any` und `all`, um einen booleschen Ausdruck für eine Sammlung auszuwerten.
+
+<a name ="bkmk_anyoperator"></a>
+
+### <a name="any-operator"></a>`any`-Operator
+
+Der `any`-Operator gibt `true` zurück, wenn der übernommene boolesche Ausdruck für ein Mitglied der Sammlung `true` ist; andernfalls gibt er `false` zurück. Der `any`-Operator ohne Argument gibt `true` zurück, wenn die Sammlung nicht leer ist.
+
+**Beispiel**
+
+Das folgende Beispiel veranschaulicht, wie Sie alle Firmenentitätsdatensätze, die mindestens eine E-Mail mit „sometext“ im Betreff enthalten, abrufen können.
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Account_Emails/any(o:contains(o/subject,'sometext')) HTTP/1.1
+Prefer: odata.include-annotations="*"
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0 
+```
+<a name ="bkmk_alloperator"></a>
+
+### <a name="all-operator"></a>`all`-Operator
+
+Der `all`-Operator gibt `true` zurück, wenn der übernommene boolesche Ausdruck für alle Mitglieder der Sammlung `true` ist; andernfalls gibt er `false` zurück.
+
+**Beispiel**
+
+Das folgende Beispiel veranschaulicht, wie Sie alle Firmenentitätsdatensätze, bei denen alle zugeordneten Aufgaben geschlossen sind, abrufen können.
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Account_Tasks/all(o:o/statecode eq 1) HTTP/1.1
+Prefer: odata.include-annotations="*"
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0 
+```
+
+Das folgende Beispiel veranschaulicht, wie Sie alle Firmenentitätsdatensätze, die mindestens eine E-Mail mit „sometext“ im Betreff enthalten und deren statecode aktiv ist, abrufen können.
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=Account_Emails/any(o:contains(o/subject,'sometext') and o/statecode eq 0) HTTP/1.1
+Prefer: odata.include-annotations="*"
+Accept: application/json
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+``` 
+
+Das folgende Beispiel zeigt Ihnen, wie Sie außerdem eine geschachtelte Abfrage mit `any`- und `all`-Operatoren erstellen können.
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=(contact_customer_accounts/any(c:c/jobtitle eq 'jobtitle' and c/opportunity_customer_contacts/any(o:o/description ne 'N/A'))) and endswith(name,'{0}') HTTP/1.1
+Prefer: odata.include-annotations="*"
+Accept: application/json
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+```
+
+### <a name="filter-parent-records-based-on-values-of-child-records"></a>Filtern von übergeordneten Datensätzen auf Grundlage der Werte von untergeordneten Datensätzen
+
+Das folgende Beispiel veranschaulicht, wie Sie den [/any-Operator](#bkmk_anyoperator) verwenden können, um alle Firmendatensätze abzurufen, die Folgendes aufweisen:
+
+- Jedes verknüpfte Budget der Verkaufschancendatensätze größer oder gleich 500 und
+- die Verkaufschancendatensätze haben keine Beschreibung oder
+- die Beschreibung der Verkaufschancendatensätze enthält den Begriff „*good*“.
+
+**Anforderung**
+
+```http
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=not opportunity_customer_accounts/any(o:o/description eq null and o/budgetamount le 300 or contains(o/description, 'bad')) and opportunity_customer_accounts/any() and endswith(name,'{0}') HTTP/1.1
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0 
+```
+
+> [!NOTE]
+> Sie können keinen `NOT`Operator mit einer benutzerdefinierten Funktion wie der [Microsoft.Dynamics.CRM.EqualUserId](/dynamics365/customer-engagement/web-api/equaluserid)-Funktion verwenden. So ist beispielsweise die Abfrage unten keine gültige Abfrage.
+>
+> ```http
+> GET [Organization URI]/api/data/v9.1/accounts?$filter=NOT Microsoft.Dynamics.CRM.EqualUserId(Name='Contoso')
+> ```
+
+<a name="BKMK_FilterNavProperties"></a>
+
+### <a name="filter-records-based-on-single-valued-navigation-property"></a>Filterung von Datensätzen auf Grundlage einer einzelbewerteten Navigationseigenschaft
+
+Navigationseigenschaften ermöglichen den Zugriff auf Daten zur aktuellen Entität. *Einzelwertige* Navigationseigenschaften entsprechen Suchattributen, die viel-zu-ein-Beziehungen unterstützen und eine Referenz auf eine andere Entität einstellen dürfen. Weitere Informationen: [Navigationseigenschaften](web-api-types-operations.md#bkmk_navprops).  
   
+Sie können Ihre Entitätssatzdatensätze auf Grundlage einwertiger Navigationseigenschaftswerte filtern. Zum Beispiel können Sie untergeordnete Firmen für die angegebene Firma abrufen.  
+  
+Beispiel:  
+  
+-   **Abrufen aller passenden Firmen für eine angegebene Kontaktkennung**  
+  
+**Anforderung** 
+ 
+```http 
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=primarycontactid/contactid%20eq%20a0dbf27c-8efb-e511-80d2-00155db07c77 HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```  
+  
+**Antwort**  
+
+```http 
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+  
+{  
+"@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name)",
+"value":[  
+        {  
+            "@odata.etag":"W/\"513479\"",
+            "name":"Adventure Works (sample)",
+            "accountid":"3adbf27c-8efb-e511-80d2-00155db07c77"
+        },
+        {  
+            "@odata.etag":"W/\"514057\"",
+            "name":"Blue Yonder Airlines (sample)",
+            "accountid":"3edbf27c-8efb-e511-80d2-00155db07c77"
+        }
+    ]
+}  
+```  
+
+-   **Rufen Sie untergeordnete Konten für die angegebene Konto-ID ab**  
+  
+**Anforderung**  
+
+```http 
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=parentaccountid/accountid%20eq%203adbf27c-8efb-e511-80d2-00155db07c77  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```  
+  
+**Antwort**  
+
+```http 
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+  
+{  
+"@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name)",
+"value":[  
+        {  
+            "@odata.etag":"W/\"514058\"",
+            "name":"Sample Child Account 1",
+            "accountid":"915e89f5-29fc-e511-80d2-00155db07c77"
+        },
+        {  
+            "@odata.etag":"W/\"514061\"",
+            "name":"Sample Child Account 2",
+            "accountid":"03312500-2afc-e511-80d2-00155db07c77"
+        }
+    ]
+}   
+```
+
+### <a name="filter-results-based-on-values-of-collection-valued-navigation-properties"></a>Filtern von Ergebnissen basierend auf Werten von sammlungsbewerteten Navigationseigenschaften
+
+> [!NOTE]
+> Es ist möglich, mit `$filter` innerhalb von `$expand` Ergebnisse nach Bezugsdatensätzen in einem Abrufvorgang zu filtern. Sie können eine durch Semikolon getrennte Liste von Systemabfrageoptionen verwenden, die in Klammern hinter dem Namen der collection-valued navigation property eingeschlossen ist. Die in `$expand` unterstützten Abfrageoptionen sind `$select`, `$filter`, `$top` und `$orderby`. Mehr Informationen: [Optionen zur Anwendung auf erweiterte Entitäten.](retrieve-entity-using-web-api.md#options-to-apply-to-expanded-entities)
+
+Die beiden Optionen zum Filtern von Ergebnissen basierend auf Werten von Navigationseigenschaften mit Collection-Werten sind:
+
+1. **Eine Abfrage mit Lambda-Operatoren erstellen**
+
+Mit Lambda-Operatoren können Sie Filter auf Werte von Sammlungseigenschaften für eine Link-Entität anwenden. Das folgende Beispiel ruft die Datensätze des Entitätstyps `systemuser` ab, die mit den Entitätstypen `team` und `teammembership` verknüpft sind, d. h. es ruft die Datensätze `systemuser` ab, die gleichzeitig Administratoren eines Teams namens „CITTEST“ sind.
+
+```http
+GET [Organization URI]/api/data/v9.1/systemusers?$teammembership_association/any(t:t/name eq 'CITTEST')&$select=fullname,businessunitid,title,address1_telephone1,positioned,systemuserid&$oderby= fullname
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```
+Weitere Informationen: [Lambda-Operatoren verwenden](#bkmk_LambdaOperators).
+
+2. **Lesen Sie über Sie die Ergebnisse nach, indem Sie einzelne Entitäten auf Grundlage der Werte in der Sammlung mit mehreren Vorgänge filtern**
+
+Um die gleichen Ergebnisse wie im obigen Beispiel zu erhalten, können Sie Datensätze von zwei Entitätstypen abrufen und dann iterativ die Werte in der Sammlung einer Entität mit dem Wert in der anderen Entität abgleichen und so Entitäten basierend auf den Werten in der Sammlung filtern.
+
+Folgen Sie den Schritten im folgenden Beispiel, um zu verstehen, wie wir Ergebnisse mit der Iterationsmethode filtern können:
+
+1. Erhalten Sie eine eindeutige Liste der <xref href="Microsoft.Dynamics.CRM.team" />._administratorid_value Werte.
+      - `GET [OrganizationURI]/api/data/v9.1/teams?$select=_administratorid_value&$filter=_administrator_value ne null`
+      - Schleife dann durch die zurückgegebenen Werte, um Duplikate zu entfernen und eine eindeutige Liste zu erhalten. d.h. Erstellen Sie ein neues Array, durchlaufen Sie die Abfrageergebnisse für jede Prüfung, um zu sehen, ob sie sich bereits im neuen Array befinden, wenn nicht, fügen Sie sie hinzu. Dies sollte Ihnen eine Liste von verschiedenen `systemuserid`-Werten liefern.
+      - Die Art und Weise, wie Sie dies in JavaScript vs. C# tun würden, wäre anders, aber im Wesentlichen sollten Sie in der Lage sein, die gleichen Ergebnisse zu erzielen.
+2. Abfrage <xref href="Microsoft.Dynamics.CRM.systemuser" /> mit <xref href="Microsoft.Dynamics.CRM.ContainValues?text=ContainValues Query Function" /> zum Vergleich der `systemuserid`-Werte mit der in Schritt 1 gesammelten Liste.
+
 <a name="bkmk_order"></a>
  
 ## <a name="order-results"></a>Reihenfolge von Ergebnissen
@@ -231,7 +442,7 @@ Weitere Informationen: [Verfassen einer Abfrage mit Funktionen](use-web-api-func
  Geben Sie die Reihenfolge an, in der Elemente unter Verwendung Systemabfrageoption `$orderby` zurückgegeben werden. Verwenden Sie das `asc`- oder `desc`-Suffix, um eine jeweils aufsteigende oder absteigende Reihenfolge anzugeben. Die Standardeinstellung ist aufsteigend, wenn das Suffix nicht angewendet wird. Das folgende Beispiel zeigt das Abrufen der Namens- und Umsatzeigenschaften von Firmen, sortiert nach aufsteigendem Umsatz und absteigendem Namen.  
   
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue,&$orderby=revenue asc,name desc&$filter=revenue ne null  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=revenue asc,name desc&$filter=revenue ne null  
 ```  
 <a name="bkmk_AggregateGroup"></a>
 
@@ -249,7 +460,7 @@ Wenn Sie `$apply` verwenden, können Sie Ihre Daten dynamisch sammeln und gruppi
 |Datum und Uhrzeit für zuletzt erstellten Datensatz|`$apply=aggregate(createdon with max as lastCreate)`|
 |Datum und Uhrzeit für zuerst erstellten Datensatz|`$apply=aggregate(createdon with min as firstCreate)`|
 
-Die Aggregatfunktionen werden auf eine Sammlung von 50.000 Datensätzen beschränkt.  Weitere Informationen zur Nutzung der Aggregatfunktionalität mit Common Data Service finden Sie hier: [Verwenden Sie FetchXML, um eine Abfrage zu erstellen](../use-fetchxml-construct-query.md).
+Die Aggregatfunktionen werden auf eine Sammlung von 50.000 Datensätzen beschränkt.  Weitere Information zur Verwendung der Aggregatfunktion mit Common Data Service finden Sie hier: [Verwenden von FetchXML zum Erstellen einer Abfrage](../use-fetchxml-construct-query.md).
 
 Weitere Details zur OData-Datenaggregation finden Sie hier: [OData Erweiterung für Datenaggregation Version 4.0.](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)  Beachten Sie, dass Dynamics 365 for Customer Engagement Apps nur eine Teilmenge dieser Aggregatmethoden unterstützt.
 
@@ -263,32 +474,17 @@ Weitere Details zur OData-Datenaggregation finden Sie hier: [OData Erweiterung f
  Ohne Parameteraliasse:
 
 ```http  
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue,&$orderby=revenue asc,name desc&$filter=revenue ne null  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=revenue asc,name desc&$filter=revenue ne null  
 ```  
   
  Mit Parameteraliassen:
 
 ```http  
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue,&$orderby=@p1 asc,@p2 desc&$filter=@p1 ne @p3&@p1=revenue&@p2=name  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue,&$orderby=@p1 asc,@p2 desc&$filter=@p1 ne @p3&@p1=revenue&@p2=name  
 ```  
   
  Sie können auch Parameteraliase verwenden, wenn Sie Funktionen verwenden. Weitere Informationen: [Verwenden von Web-API-Funktionen](use-web-api-functions.md)  
-  
-<a name="bkmk_limitResults"></a>
- 
-## <a name="limit-results"></a>Ergebnisse eingrenzen
-
- Sie können die Anzahl der zurückgegebenen Ergebnisse einschränken, indem Sie die Systemabfrageoption `$top`, verwenden. Im folgenden Beispiel werden nur die ersten drei Firmenentitäten zurückgegeben.  
-  
-```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue&$top=3  
-```  
-  
-> [!NOTE]
->  Durch Einschränken der Ergebnisse mit `$top` wird die Anwendung der `odata.maxpagesize`-Einstellung verhindert. Sie können die `odata.maxpagesize`-Einstellung oder `$top` verwenden, aber nicht beide gleichzeitig. Weitere Informationen zu `odata.maxpagesize` finden Sie unter [Geben Sie die Anzahl der getätigten Entitäten an, die in eine Seite zurückgegeben werden](query-data-web-api.md#bkmk_specifyNumber).  
->   
->  Sie sollten außerdem nicht `$top` mit `$count` verwenden.  
-  
+    
 <a name="bkmk_retrieveCount"></a>
  
 ## <a name="retrieve-a-count-of-entities"></a>Abrufen einer Anzahl von Entitäten
@@ -308,7 +504,7 @@ GET [Organization URI]/api/data/v9.0/accounts?$select=name,revenue&$top=3
  **Anforderung**
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name&$filter=contains(name,'sample')&$count=true HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name&$filter=contains(name,'sample')&$count=true HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -324,7 +520,7 @@ OData-Version: 4.0
 Preference-Applied: odata.maxpagesize=3  
   
 {  
-   "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name)",
+   "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name)",
    "@odata.count":10,
    "value":[  
       {  
@@ -343,7 +539,7 @@ Preference-Applied: odata.maxpagesize=3
          "accountid":"695eaf89-f083-e511-80d3-00155d2a68d3"
       }
    ],
-   "@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts?$select=name&$filter=contains(name,'sample')&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253caccountid%2520last%253d%2522%257b695EAF89-F083-E511-80D3-00155D2A68D3%257d%2522%2520first%253d%2522%257b655EAF89-F083-E511-80D3-00155D2A68D3%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E"
+   "@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts?$select=name&$filter=contains(name,'sample')&$skiptoken=%3Ccookie%20pagenumber=%222%22%20pagingcookie=%22%253ccookie%2520page%253d%25221%2522%253e%253caccountid%2520last%253d%2522%257b695EAF89-F083-E511-80D3-00155D2A68D3%257d%2522%2520first%253d%2522%257b655EAF89-F083-E511-80D3-00155D2A68D3%257d%2522%2520%252f%253e%253c%252fcookie%253e%22%20istracking=%22False%22%20/%3E"
 }
 
   
@@ -354,7 +550,7 @@ Preference-Applied: odata.maxpagesize=3
  **Anforderung**  
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts/$count HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts/$count HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -383,7 +579,7 @@ OData-Version: 4.0
  **Anforderung**
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name,donotpostalmail,accountratingcode,numberofemployees,revenue&$top=1 HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name,donotpostalmail,accountratingcode,numberofemployees,revenue&$top=1 HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -398,7 +594,7 @@ OData-Version: 4.0
 Preference-Applied: odata.include-annotations="OData.Community.Display.V1.FormattedValue"  
   
 {  
-   "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name,donotpostalmail,accountratingcode,numberofemployees,revenue)",
+   "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name,donotpostalmail,accountratingcode,numberofemployees,revenue)",
    "value":[  
       {  
          "@odata.etag":"W/\"502170\"",
@@ -416,9 +612,14 @@ Preference-Applied: odata.include-annotations="OData.Community.Display.V1.Format
       }
    ]
 }
-   
 ```  
-  
+
+<a name="bkmk_retrieverelatedentities"></a>
+
+## <a name="retrieve-related-entities-with-query"></a>Abrufen von verknüpften Entitäten mit einer Abfrage
+
+Verwenden Sie die `$expand`-Systemabfrageoption in den Navigationseigenschaften, um zu steuern, welche Daten von den verbundenen Entitäten zurückgegeben werden. Weitere Informationen: [Abrufen von verknüpften Entitäten mit einer Abfrage](retrieve-related-entities-query.md).
+
 <a name="bkmk_lookupProperty"></a>
 
 ## <a name="retrieve-data-about-lookup-properties"></a>Abrufen von Daten zu Sucheigenschaften
@@ -437,7 +638,7 @@ Preference-Applied: odata.include-annotations="OData.Community.Display.V1.Format
  **Anforderung**  
 
 ```http 
-GET [Organization URI]/api/data/v9.0/incidents(39dd0b31-ed8b-e511-80d2-00155d2a68d4)?$select=title,_customerid_value&$expand=customerid_contact($select=fullname) HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/incidents(39dd0b31-ed8b-e511-80d2-00155d2a68d4)?$select=title,_customerid_value&$expand=customerid_contact($select=fullname) HTTP/1.1  
 Accept: application/json  
 Content-Type: application/json; charset=utf-8  
 OData-MaxVersion: 4.0  
@@ -454,7 +655,7 @@ OData-Version: 4.0
 Preference-Applied: odata.include-annotations="*"  
   
 {  
-    "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#incidents(title,_customerid_value,customerid_contact(fullname))/$entity",
+    "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#incidents(title,_customerid_value,customerid_contact(fullname))/$entity",
     "@odata.etag":"W/\"504696\"",
     "_customerid_value@Microsoft.Dynamics.CRM.associatednavigationproperty":"customerid_contact",
     "_customerid_value@Microsoft.Dynamics.CRM.lookuplogicalname":"contact",
@@ -469,90 +670,9 @@ Preference-Applied: odata.include-annotations="*"
 } 
 ```  
   
-<a name="BKMK_FilterNavProperties"></a>
-
-## <a name="filter-records-based-on-single-valued-navigation-property"></a>Filterung von Datensätzen auf Grundlage einer einzelbewerteten Navigationseigenschaft
-
-Navigationseigenschaften ermöglichen den Zugriff auf Daten zur aktuellen Entität. *Einzelwertige* Navigationseigenschaften entsprechen Suchattributen, die viel-zu-ein-Beziehungen unterstützen und eine Referenz auf eine andere Entität einstellen dürfen. Weitere Informationen: [Navigationseigenschaften](web-api-types-operations.md#bkmk_navprops)  
-  
-Sie können Ihre Entitätssatzdatensätze auf Grundlage einwertiger Navigationseigenschaftswerte filtern. Zum Beispiel können Sie untergeordnete Firmen für die angegebene Firma abrufen. Sie können nur den primären Attributswert der Entität verwenden, die von einer eintwertigen navigationseigenschaft verweisen wurde, um Datensätze zu filtern.  
-  
-Beispiel:  
-  
--   **Abrufen aller passenden Firmen für eine angegebene Kontaktkennung**  
-  
-**Anforderung** 
- 
-```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name&$filter=primarycontactid/contactid%20eq%20a0dbf27c-8efb-e511-80d2-00155db07c77 HTTP/1.1  
-Accept: application/json  
-OData-MaxVersion: 4.0  
-OData-Version: 4.0  
-```  
-  
-**Antwort**  
-
-```http 
-HTTP/1.1 200 OK  
-Content-Type: application/json; odata.metadata=minimal  
-OData-Version: 4.0  
-  
-{  
-"@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name)",
-"value":[  
-        {  
-            "@odata.etag":"W/\"513479\"",
-            "name":"Adventure Works (sample)",
-            "accountid":"3adbf27c-8efb-e511-80d2-00155db07c77"
-        },
-        {  
-            "@odata.etag":"W/\"514057\"",
-            "name":"Blue Yonder Airlines (sample)",
-            "accountid":"3edbf27c-8efb-e511-80d2-00155db07c77"
-        }
-    ]
-}  
-```  
-
--   **Rufen Sie untergeordnete Konten für die angegebene Konto-ID ab**  
-  
-**Anforderung**  
-
-```http 
-GET [Organization URI]/api/data/v9.0/accounts?$select=name&$filter=parentaccountid/accountid%20eq%203adbf27c-8efb-e511-80d2-00155db07c77  
-Accept: application/json  
-OData-MaxVersion: 4.0  
-OData-Version: 4.0  
-```  
-  
-**Antwort**  
-
-```http 
-HTTP/1.1 200 OK  
-Content-Type: application/json; odata.metadata=minimal  
-OData-Version: 4.0  
-  
-{  
-"@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name)",
-"value":[  
-        {  
-            "@odata.etag":"W/\"514058\"",
-            "name":"Sample Child Account 1",
-            "accountid":"915e89f5-29fc-e511-80d2-00155db07c77"
-        },
-        {  
-            "@odata.etag":"W/\"514061\"",
-            "name":"Sample Child Account 2",
-            "accountid":"03312500-2afc-e511-80d2-00155db07c77"
-        }
-    ]
-}   
-```  
-  
 <a name="bkmk_expandRelated"></a>
 
 ## <a name="retrieve-related-entities-by-expanding-navigation-properties"></a>Abrufen verwandter Entitäten durch Erweitern der Navigationseigenschaften
-
  
 <a bkmk="bkmk_retrieverelatedentityexpandcollectionnavprop"></a>
 
@@ -565,7 +685,7 @@ Im folgenden Beispiel werden die Aufgaben zurückgegeben, die den Ersten 5 Firme
 **Anforderung**
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$top=5&$select=name&$expand=Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$top=5&$select=name&$expand=Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -579,7 +699,7 @@ Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0  
   
 {  
-   "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name,Account_Tasks,Account_Tasks(subject,scheduledstart))",
+   "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name,Account_Tasks,Account_Tasks(subject,scheduledstart))",
    "value":[  
       {  
          "@odata.etag":"W/\"513475\"",
@@ -588,7 +708,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(36dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(36dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       },
       {  
          "@odata.etag":"W/\"513477\"",
@@ -597,7 +717,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(38dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(38dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       },
       {  
          "@odata.etag":"W/\"514074\"",
@@ -606,7 +726,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(3adbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3adbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       },
       {  
          "@odata.etag":"W/\"513481\"",
@@ -615,7 +735,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(3cdbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3cdbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       },
       {  
          "@odata.etag":"W/\"514057\"",
@@ -624,7 +744,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(3edbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3edbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
           }
        ]
     }
@@ -642,7 +762,7 @@ In diesem Beispiel rufen wir den Kontakt und die Aufgaben ab, die den ersten 3 F
 **Anforderung**
 
 ```http 
-GET [Organization URI]/api/data/v9.0/accounts?$top=3&$select=name&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$top=3&$select=name&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -656,7 +776,7 @@ Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0  
   
 {  
-   "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,Account_Tasks,primarycontactid(contactid,fullname),Account_Tasks(subject,scheduledstart))",
+   "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name,primarycontactid,Account_Tasks,primarycontactid(contactid,fullname),Account_Tasks(subject,scheduledstart))",
    "value":[  
       {  
          "@odata.etag":"W/\"550614\"",
@@ -669,7 +789,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(5b9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5b9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
       },
       {  
          "@odata.etag":"W/\"550615\"",
@@ -682,7 +802,7 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(5d9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5d9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
       },
       {  
          "@odata.etag":"W/\"550616\"",
@@ -695,61 +815,19 @@ OData-Version: 4.0
          "Account_Tasks":[  
 
          ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.0/accounts(5f9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5f9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
       }
    ]
 }
   
-```
+```  
+<a name="BKMK_changetracking"></a>
 
-## <a name="filter-results-based-on-values-of-collection-valued-navigation-properties"></a>Filtern von Ergebnissen basierend auf Werten von sammlungsbewerteten Navigationseigenschaften
+## <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
 
-Sie können OData `$filter` nicht verwenden, um die zurückgegebenen Entitätsdatensätze anhand von Kriterien zu begrenzen, die auf sammelbewertete Navigationseigenschaften in einem einzigen Vorgang angewendet werden.
+Mit der Änderungsnachverfolgungsfunktion können die Daten effizient synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden. Änderungen, die in den Entitäten vorgenommen werden, können mithilfe von Web-API-Anforderungen nachverfolgt werden, indem `odata.track-changes` als Einstellungskopfzeile hinzugefügt wird. Die Einstellungskopfzeile `odata.track-changes` fordert an, dass ein Deltalink zurückgegeben wird, der später verwendet werden kann, um Entitätsänderungen abzurufen.
 
-> [!NOTE]
-> Es ist möglich, mit `$filter` innerhalb von `$expand` Ergebnisse nach Bezugsdatensätzen in einem Abrufvorgang zu filtern. Sie können eine durch Semikolon getrennte Liste von Systemabfrageoptionen verwenden, die in Klammern hinter dem Namen der collection-valued navigation property eingeschlossen ist. Die in `$expand` unterstützten Abfrageoptionen sind `$select`, `$filter`, `$top` und `$orderby`. Mehr Informationen: [Optionen zur Anwendung auf erweiterte Entitäten.](retrieve-entity-using-web-api.md#options-to-apply-to-expanded-entities)
-
-Die beiden Optionen zum Filtern von Ergebnissen basierend auf Werten von Navigationseigenschaften mit Collection-Werten sind:
-
-1. **Konstruieren Sie eine Abfrage mit FetchXML.**
-
-Im Allgemeinen sollte die Verwendung von FetchXML eine Leistungssteigerung bieten, da der Filter auf eine Serverseite in einem einzelnen Vorgang angewendet werden kann. Das Beispiel unten zeigt, wie Filterwerte auf Sammlungseigenschaften für eine LinkEntität angewendet werden.
-
-Das folgende Beispiel ruft die Datensätze des Entitätstyps `systemuser` ab, die mit den Entitätstypen `team` und `teammembership` verknüpft sind, d.h. es ruft die Datensätze `systemuser` ab, die gleichzeitig Administratoren eines Teams sind.
-
-```xml
-<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
-  <entity name="systemuser">
-    <attribute name="fullname" />
-    <attribute name="businessunitid" />
-    <attribute name="title" />
-    <attribute name="address1_telephone1" />
-    <attribute name="positionid" />
-    <attribute name="systemuserid" />
-    <order attribute="fullname" descending="false" />
-    <link-entity name="teammembership" from="systemuserid" to="systemuserid" visible="false" intersect="true">
-      <link-entity name="team" from="teamid" to="teamid" alias="ab">
-        <filter type="and">
-          <condition attribute="administratorid" operator="eq-userid" />
-        </filter>
-      </link-entity>
-    </link-entity>
-  </entity>
-</fetch>
-```
-Mehr Informationen: [Erstellen Sie Abfragen mit FetchXML](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml).
-
-2. **Lesen Sie über Sie die Ergebnisse nach, indem Sie einzelne Entitäten auf Grundlage der Werte in der Sammlung mit mehreren Vorgänge filtern**
-
-Um die gleichen Ergebnisse wie im obigen Beispiel von FetchXML zu erhalten, können Sie Datensätze von zwei Entitätstypen abrufen und dann iterativ die Werte in der Collection einer Entität mit dem Wert in der anderen Entität abgleichen und so Entitäten basierend auf den Werten in der Collection filtern.
-
-Folgen Sie den Schritten im folgenden Beispiel, um zu verstehen, wie wir Ergebnisse mit der Iterationsmethode filtern können:
-
-1. Erhalten Sie eine eindeutige Liste der <xref href="Microsoft.Dynamics.CRM.team" />._administratorid_value Werte.
-      - `GET [OrganizationURI]/api/data/v9.0/teams?$select=_administratorid_value&$filter=_administrator_value ne null`
-      - Schleife dann durch die zurückgegebenen Werte, um Duplikate zu entfernen und eine eindeutige Liste zu erhalten. d.h. Erstellen Sie ein neues Array, durchlaufen Sie die Abfrageergebnisse für jede Prüfung, um zu sehen, ob sie sich bereits im neuen Array befinden, wenn nicht, fügen Sie sie hinzu. Dies sollte Ihnen eine Liste von verschiedenen `systemuserid`-Werten liefern.
-      - Die Art und Weise, wie Sie dies in JavaScript vs. C# tun würden, wäre anders, aber im Wesentlichen sollten Sie in der Lage sein, die gleichen Ergebnisse zu erzielen.
-2. Abfrage <xref href="Microsoft.Dynamics.CRM.systemuser" /> mit <xref href="Microsoft.Dynamics.CRM.ContainValues?text=ContainValues Query Function" /> zum Vergleich der `systemuserid`-Werte mit der in Schritt 1 gesammelten Liste.  
+Weitere Informationen: [Verwenden der Änderungsnachverfolgung zum Synchronisieren von Daten mit externen Systemen](../use-change-tracking-synchronize-data-external-systems.md).
 
 ### <a name="see-also"></a>Siehe auch
 

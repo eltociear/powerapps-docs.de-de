@@ -3,11 +3,11 @@ title: Erstellen von automatischen Nummerierungsattributen (Common Data Service)
 description: 'Erfahren Sie über das Erstellen des automatischen Nummerierungsattributs in derselben Weise, wie Sie ein Zeichenfolgenattribut mithilfe der StringAttributeMetadata-Klasse erstellen, außer Verwendung der neuen AutoNumberFormat-Eigenschaft. Verwenden Sie die AutoNumberFormat-Eigenschaft, um ein Muster zu definieren, das Sequenznummern und zufällige Zeichenfolgen beim Zusammenstellen der Platzhalter enthält und die Länge und den Typ der generierten Werte bestimmt.'
 keywords: Automatische Nummerierungsattribute
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 07/24/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: MicroSri
+author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:

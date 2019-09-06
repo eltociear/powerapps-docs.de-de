@@ -1,7 +1,7 @@
 ---
 title: Richtlinien zum Arbeiten mit eingebetteten Canvas-Apps | MicrosoftDocs
 ms.custom: ''
-ms.date: 06/25/2019
+ms.date: 07/24/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -45,14 +45,14 @@ Dieses Thema enthält Richtlinien für die Arbeit mit eingebetteten Canvas-Apps 
 - Wenn Sie ein modellgestütztes Formular mit einer eingebetteten Canvas-App anzeigen und Ihnen wird eine Fehlermeldung angezeigt, die lautet: "Anscheinend haben Sie keinen Zugriff auf diese App. Bitten Sie den Besitzer, sie mit Ihnen zu teilen", stellen Sie sicher, dass der Autor die eingebettete Canvas-App mit Ihnen geteilt hat. Weitere Informationen: [Teilen einer eingebetteten Canvas-App](share-embedded-canvas-app.md).
 
 ## <a name="enable-an-embedded-canvas-app"></a>Aktivieren einer eingebetteten Canvas-App
-1. Wählen Sie das Feld- oder Unterraster-Steuerelement aus, das so angepasst ist, dass es als eingebettete Canvas-App angezeigt wird.
-2. Im Dialogfeld **Feldeigenschaften** (oder **Eigenschaften festlegen** für Unterraster) wählen Sie die Registerkarte **Steuerelemente** aus.
+1. Wählen Sie das Feld aus, das so angepasst ist, dass es als eingebettete Canvas-App angezeigt wird.
+2. Wählen Sie im Dialogfeld **Feldeigenschaften** die **Steuerelemente**-Registerkarte aus.
 3. Wählen Sie in der Liste der Steuerelemente die Option **Canvas-App** und wählen Sie dann die Option **Web** aus.
 4. Wählen Sie **OK** aus.
 
 ## <a name="disable-an-embedded-canvas-app"></a>Deaktivieren einer eingebetteten Canvas-App
-1. Wählen Sie das Feld- oder Unterraster-Steuerelement aus, das so angepasst ist, dass es als eingebettete Canvas-App angezeigt wird.
-2. Im Dialogfeld **Feldeigenschaften** (oder **Eigenschaften festlegen** für Unterraster) wählen Sie die Registerkarte **Steuerelemente** aus.
+1. Wählen Sie das Feld aus, das so angepasst ist, dass es als eingebettete Canvas-App angezeigt wird.
+2. Wählen Sie im Dialogfeld **Feldeigenschaften** die **Steuerelemente**-Registerkarte aus.
 3. Wählen Sie in der Liste der Steuerelemente das Standardsteuerelement und dann die Option **Web**.
 4. Wählen Sie **OK** aus.
 

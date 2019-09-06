@@ -3,6 +3,7 @@ title: DataSet-Element | Microsoft Docs
 description: null
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
@@ -28,6 +29,7 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 |`description-key`|Wird im Anpassungsbildschirm als lokalisierte Zeichenfolge verwendet, die die Beschreibung der Eigenschaft beschreibt.|`string`|Optional|
 |`display-name-key`|Wird in den Anpassungsbildschirmen als lokalisierte Zeichenfolge verwendet, die den Namen der Eigenschaft beschreibt.|`string`|Ja|
 |`name`|Name des Rasters.|`string`|Ja|
+|`cds-data-set-options`|Zeigt die Commandbar, den ViewSelector und die QuickFindSearch an, wenn auf „true“ gesetzt |`boolean`|Ja|
 
 ## <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -38,7 +40,7 @@ ms.assetid: 9ffe8930-b290-4252-98d4-a1195b00205f
 ## <a name="example"></a>Beispiel
 
 ```xml
- <data-set name="dataSetGrid" display-name-key="DataSetGridProperty">
+ <data-set name="dataSetGrid" display-name-key="DataSetGridProperty" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayQuickFindSearch:true">
  </data-set>
 ```
 

@@ -33,14 +33,7 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 > [!NOTE]
 >  Als ISV, der eine App erstellt, die Sie verteilen werden, müssen Sie Lösungen verwenden. Weitere Informationen zum Verwenden von Lösungen finden Sie unter [Entwicklerhandbuch: Einführung in Lösungen](/powerapps/developer/common-data-service/introduction-solutions).  
   
- Wenn Sie daran interessiert sind, PowerApps-Anwendungen für den organisatorischen Einsatz zu erstellen oder Dynamics 365 for Customer Engagement-Anwendungen anzupassen, erfahren Sie hier, was Sie über Lösungen wissen müssen:  
-  
--   Das Erstellen von Lösungen ist optional. Sie können Anwendungen direkt in Ihrer PowerApps-Umgebung erstellen oder anpassen, ohne jemals eine Lösung zu erstellen.  
-  
--   Wenn Sie die PowerApps Umgebung direkt anpassen, ohne eine Lösung zu erstellen, arbeiten Sie mit einer speziellen Lösung namens **Standardlösung von Common Data Service**. Diese Lösung enthält alle Anpassungen, die Sie in der PowerApps-Umgebung erstellen.  
-  
--   Es gibt eine andere spezielle Lösung, die **Standardlösung** genannt wird. Diese Lösung enthält alle Komponenten in Ihrem System, egal, ob sie von Ihnen oder einem anderen Benutzer erstellt wurde. Sie können die **Standardlösung** exportieren, um ein Backup der Anpassungen, die Sie in Ihrer Organisation definiert haben, zu erstellen. Dies ist eine bewährte Methode, um Ihre Änderungen für den schlimmsten Fall zu sichern.  
-  
+
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>Komponenten  
  Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Nachfolgend finden Sie eine Liste von Komponenten, die Sie in einer Lösung anzeigen können:  

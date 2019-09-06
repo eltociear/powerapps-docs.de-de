@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 06/25/2019
+ms.date: 07/09/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -32,7 +32,7 @@ Lösungsprüfer abeiten mit nicht verwalteten Lösungen, die von einer Umgebung 
 > - Der Lösungsprüfer funktioniert nicht für Lösungen, die JavaScript mit ECMAScript 6 (2015 ) oder höhere Versionen enthalten. Wenn JavaScript mit einer dieser Versionen erkannt wird, wird ein JS001 Syntax-Problem für die Webressource berichtet.
 
 ## <a name="enable-the-solution-checker"></a>Aktivieren des Lösungsprüfer
-Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Sie die PowerApps-Prüferlösung installieren. Beachten Sie, dass Sie sie nicht finden können, indem Sie Microsoft AppSource durchsuchen oder darin stöbern. Zur Installation führen Sie die folgenden Schritte aus:  
+Der Solution Checker ist standardmäßig in jeder Common Data Service-Umgebung aktiviert. Ein Menüpunkt **Solution Checker** ist verfügbar, wenn Sie eine nicht verwaltete Lösung im Bereich **Lösungen** von PowerApps auswählen. Wenn die Option **Ausführen** im Menü **Solution Checker** nicht verfügbar ist, können Sie sie aktivieren, indem Sie die PowerApps-Checker-Lösung installieren. Zur Installation führen Sie die folgenden Schritte aus:   
 
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und wählen Sie die Common Data Service-Umgebung aus, in der Sie den Lösungsprüfer aktivieren möchten. 
 2. Wählen Sie im linken Navigationsbereich die Option **Lösungen** aus.
@@ -43,12 +43,9 @@ Der Lösungsprüfer wird im Lösungsbereich von PowerApps verfügbar, nachdem Si
 
 4. Wählen Sie **Kostenlose Testversion** auf der AppSource-Seite. 
 
-
-<!--from editor: Should it be "solution checker" rather than "checker solution" in the following step?
-
-5. If you agree, accept the terms and conditions and select the environment to install the PowerApps checker solution. 
-6. When the installation is complete, refresh the **Solution** list on the PowerApps site to verify that the solution checker is available.  
-7. To check a solution, [Run the solution checker](#run-the-solution-checker).
+5. Wenn Sie zustimmen, nehmen Sie die Bedingungen und wählen Sie die Organisationen aus, um die PowerApps-Prüferlösung zu installieren. 
+6. Wenn die Installation abgeschlossen ist, aktualisieren Sie die Liste **Lösung** auf der PowerApps-Seite, um sicherzustellen, dass der Solution Checker verfügbar ist.  
+7. Wenn Sie eine Lösung prüfen [Führen Sie den aus Lösungsprüfer aus](#run-the-solution-checker).
 
 
 <!-- ### Components created with the PowerApps checker
@@ -106,10 +103,19 @@ Wenn Sie den Lösungsprüfer in Ihrer Umgebung installieren, steht die **Lösung
 
 
 ## <a name="review-the-solution-checker-report"></a>Wiederholen Sie den Lösungsprüferbericht
-Wenn eine Lösungsprüfung abgeschlossen wurde, wird der Analysebericht über den Webbrowser als Download verfügbar. Der Bericht steht im [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] Format und enthält einige Visualisierungen und Spalten, die Ihnen dabei helfen, die Auswirkungen, die den Typ und der Ort ein Problem feststellen, das in der Lösung erkannt wird. Ein Link zu detaillierten Anweisungen, wie das Problem auch bereitgestellt wird. 
+Wenn eine Lösungsprüfung abgeschlossen ist, können Sie den Analysebericht im Portal anzeigen oder den Bericht über Ihren Webbrowser herunterladen. Im Portal haben Sie die Möglichkeit, die Ergebnisse nach **Ausgabe**, **Standort** oder nach **Schweregrad** zu filtern und zu gruppieren und detaillierte Informationen zu den in Ihrer Lösung gefundenen Problemen anzuzeigen. 
 
 1. Wählen Sie im Navigationsbereich **Lösungen** aus.
-2. Neben der nicht verwalteten Lösung, in der Sie den Lösungsprüferbericht herunterladen möchten, wählen Sie **...** zeigen auf **Lösungsprüfer** und dann auf **Downloadletztergebnisse**  
+2. Wählen Sie neben der nicht verwalteten Lösung, für die Sie den Bericht über den Solution Checker anzeigen möchten, **...**, zeigen Sie auf **Solution Checker**, und wählen Sie dann **Ergebnisse anzeigen**.  
+3. Wählen Sie ein Problem aus, um die Details und Anleitungen zur Lösung anzuzeigen.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/solution-checker-viewresults.png "Solution Checker-Ergebnisse")
+
+Die Ergebnisse der Lösungsprüfung stehen auch zum Download bereit. Der Download-Bericht ist im Format [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] und enthält mehrere Visualisierungen und Spalten, die Ihnen helfen, die Auswirkungen, den Typ und die Position jedes in Ihrer Lösung erkannten Problems zu identifizieren. Ein Link zu detaillierten Anweisungen, wie das Problem auch bereitgestellt wird. 
+
+1. Wählen Sie im Navigationsbereich **Lösungen** aus.
+2. Wählen Sie neben der nicht verwalteten Lösung, für die Sie den Bericht über den Solution Checker herunterladen möchten, **...**, zeigen Sie auf **Solution Checker**, und wählen Sie dann **Ergebnisse herunterladen**.  
 3. Die Lösungsprüferzip-Datei wird heruntergeladen in den Ordner, der über dem Webbrowser angegeben ist.
 
 Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
@@ -168,10 +174,6 @@ Hier finden Sie eine Zusammenfassung einer Spalte im Bericht.
 | Webressourcen  | [web-use-strict-mode](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | Verwenden Sie den strengem Modus, wenn möglich.  | 
 | Webressourcen  | [web-use-strict-equality-operators](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Verwenden Sie strenge Gleichheitsoperatoren.  | 
 | Webressourcen  | [web-avoid-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | Verwenden Sie nicht die Funktion „eval” oder deren funktionale Entsprechungen.  | 
-
-## <a name="limitations"></a>Einschränkungen
-
-Der Lösungsprüfer kann zu diesem Zeitpunkt nicht automatisiert werden. Sie müssen ihn über https://web.powerapps.com ausführen. Weitere Informationen: [Ausführen des Lösungsprüfers](#run-the-solution-checker)
 
 
 ### <a name="see-also"></a>Siehe auch

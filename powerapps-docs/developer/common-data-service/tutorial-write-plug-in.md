@@ -46,6 +46,8 @@ Erstellen Sie ein asynchrones Plug-In, das in der Erstellungsmeldung der Firmene
 - Laden Sie das das Plug-in-Registrierungstool herunter.
     - Informationen zum Herunterladen des Plug-In-Registrierungstools erhalten Sie unter: [Tools von NuGet herunterladen](download-tools-nuget.md). Dieses Thema enthält Anweisungen zur Verwendung eines PowerShell-Skripts, um die aktuellen Tools von NuGet herunterzuladen.
 
+<a name="BKMK_create"></a>
+
 ## <a name="create-a-plug-in-project"></a>Plug-In-Projekt erstellen
 
 Sie müssen ein Plug-In in Visual Studio schreiben. Führen Sie diese Schritte aus, um ein grundlegendes Plug-In zu schreiben. Alternativ finden Sie hier die kompletten Plug-in-Lösungsdateien: [Beispiel: Erstellen Sie ein Basis-Plugin](org-service/samples/basic-followup-plugin.md).
@@ -213,6 +215,8 @@ In Visual Studio drücken Sie **F6**, um die Assembly zu erstellen. Überprüfen
 
 > [!NOTE]
 > Erstellen Sie die Assembly mit der Konfiguration **Debuggen**, weil Sie den Plug-In-Profiler verwenden, um es in einem späteren Lernprogramm zu debuggen.   Bevor Sie ein Plug-In mit Ihrer Lösung einschließen, sollten Sie es mit der Versionskonfiguration erstellen.
+
+<a name="BKMK_register"></a>
 
 ## <a name="register-plug-in"></a>Plug-In registrieren
 

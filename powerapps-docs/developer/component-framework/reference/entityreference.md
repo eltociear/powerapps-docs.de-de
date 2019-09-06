@@ -4,6 +4,7 @@ description: null
 keywords: null
 ms.author: nabuthuk
 manager: kvivek
+author: nkrb
 ms.date: 04/23/2019
 ms.service: powerapps
 ms.suite: ''
@@ -20,17 +21,23 @@ ms.assetid: ad8659f7-f566-43db-bed1-c8484c114a59
 
 ## <a name="properties"></a>Eigenschaften
 
-## <a name="entitytype"></a>entityType
+## <a name="etn"></a>etn
 
-Der logische Entitätsname. Schreibgeschützt.
+Der Entitätstypname. Schreibgeschützt.
 
 **Typ**: `string`
 
-## <a name="id"></a>ID
+## <a name="id"></a>id
 
 Die Datensatz-ID. Schreibgeschützt.
 
-**Typ**: `string`
+**Typ**: `object`
+
+Das `id`-Objekt hat die folgende Eigenschaft:
+
+|Name|Typ|Beschreibung|
+|--|--|--|
+|`guid`|`string`|00000000-0000-0000-0000-000000000000|
 
 ## <a name="name"></a>Name
 

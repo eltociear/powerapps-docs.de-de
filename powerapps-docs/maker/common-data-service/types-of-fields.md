@@ -1,5 +1,5 @@
 ---
-title: Felddatentypen im Common Data Service | MicrosoftDocs
+title: Felddatentypen in Common Data Service | MicrosoftDocs
 description: 'Lernen Sie die verschiedenen Felddatentypen, die für Ihre Anwendung zur Verfügung stehen, kennen.'
 keywords: ''
 ms.date: 06/27/2018
@@ -58,8 +58,8 @@ Die Namen der Typen hängen vom verwendeten Designer ab. [PowerApps-Portal](http
 |**Ganze Zahl**|**Ganze Zahl**<br />*Kein*-Format|`IntegerType`|
 
 Weitere Beschreibungen für jeden Typ, den Sie hinzufügen oder bearbeiten können, finden Sie im Thema des entsprechenden Designers:
- - [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Portal: Felddatentypen](create-edit-field-portal.md#field-data-types)
- - [Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps-Lösungsexplorer: Felddatentypen](create-edit-field-solution-explorer.md#field-data-types)
+ - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem PowerApps-Portal: Felddatentypen](create-edit-field-portal.md#field-data-types)
+ - [Erstellen und bearbeiten Sie Felder für Common Data Service mit dem PowerApps Lösungs-Explorer: Felddatentypen](create-edit-field-solution-explorer.md#field-data-types)
 
 Weitere Informationen darüber, wie Felddatentypen in der API definiert werden, finden Sie unter [Attributmetadaten](/powerapps/developer/common-data-service/entity-attribute-metadata)
 
@@ -145,7 +145,7 @@ Sie sollten jedoch wissen, dass sich nicht jede Suche so verhält. Es gibt, wie 
 |-----------------|-----------------|  
 |**Einfach**|Erlaubt eine einzelne Referenz zu einer bestimmten Entität. Alle benutzerdefinierten Suchen haben diesen Typ.|  
 |**Kunde**|Erlaubt eine einzelne Referenz zu einem Konto- oder einem Kontaktdatensatz.|  
-|**Besitzer**|Erlaubt eine einzelne Referenz zu einem Team- oder einem Benutzerdatensatz. Alle team- oder benutzereigenen Entitäten verfügen darüber.|  
+|**Besitzer**|Erlaubt eine einzelne Referenz zu einem Team- oder einem Benutzerdatensatz. Alle team- oder benutzereigenen Entitäten verfügen darüber. Mehr Informationen: [Hinzufügen der Team-Entität als Lookup-Option in Ihrer App](../model-driven-apps/team-entity-lookup.md).|  
 |**PartyList**|Erlaubt mehrere Referenzen zu mehreren Entitäten. Diese Suchen finden sich in der E-Mail-Entität in den Feldern **An** und **Cc**. Sie werden auch in den Entitäten Telefon und Termin verwendet.|  
 |**Betreff**|Erlaubt eine einzelne Referenz zu mehreren Entitäten. Diese Suchen finden sich in dem in Aktivitäten verwendeten relevanten Feld.|  
 
@@ -177,4 +177,4 @@ Wenn ein Bild hochgeladen wird, wird es auf eine maximale Größe von 144 x 144 
 
 Weitere Informationen für Entwickler, die mit Bilddaten arbeiten:
 - [Entitätsmetadaten > Entitätsbilder](/powerapps/developer/common-data-service/entity-metadata#entity-images)
-- [Dynamics 365 Customer Engagement Developer Guide:Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)
+- [Dynamics 365 Customer Engagement Entwicklerhandbuch: Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)

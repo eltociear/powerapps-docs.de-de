@@ -101,7 +101,29 @@ Wenn Sie feststellen, dass die Werte in der `InputParameters`-Sammlung eine Bedi
 
 ## <a name="outputparameters"></a>OutputParameters
 
-Die `OutputParameters` stellen den Wert der <xref:Microsoft.Xrm.Sdk.OrganizationResponse>.<xref:Microsoft.Xrm.Sdk.OrganizationResponse.Results>- Eigenschaft dar, die den Rückgabewert des Vorgangs darstellt. Die `OutputParameters` werden nicht vor der Datenbanktransaktion aufgefüllt. Somit sind sie erst für Plug-Ins verfügbar, die in der **PostOperation**-Phase registriert werden. Wenn Sie die Werte ändern möchten, die von dem Vorgang zurückgegeben wurden, können Sie sie in den `OutputParameters` ändern.
+Die `OutputParameters` stellen den Wert der <xref:Microsoft.Xrm.Sdk.OrganizationResponse>.<xref:Microsoft.Xrm.Sdk.OrganizationResponse.Results>- Eigenschaft dar, die den Rückgabewert des Vorgangs darstellt. Jede der von <xref:Microsoft.Xrm.Sdk.OrganizationResponse> abgeleiteten Nachrichtenantwortklassen enthält spezifische Eigenschaften. Um auf diese Eigenschaften zuzugreifen, müssen Sie den Schlüsselwert verwenden, der *normalerweise* dem Namen der Eigenschaften in der Antwortklasse entspricht. Dies ist jedoch nicht immer der Fall. Die folgende Tabelle listet die Eigenschaften der Nachrichtenantwortklasse auf, deren Schlüssel sich vom Namen der Eigenschaften unterscheiden.
+
+|Antwortklasse  |Eigenschaft  |Schlüsselwert  |
+|---------|---------|---------|
+|<xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailResponse>|<xref:Microsoft.Crm.Sdk.Messages.BackgroundSendEmailResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.CloneContractResponse>|<xref:Microsoft.Crm.Sdk.Messages.CloneContractResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.CloneMobileOfflineProfileResponse>|<xref:Microsoft.Crm.Sdk.Messages.CloneMobileOfflineProfileResponse.CloneMobileOfflineProfile>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.CloneProductResponse>|<xref:Microsoft.Crm.Sdk.Messages.CloneProductResponse.ClonedProduct>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.ConvertSalesOrderToInvoiceResponse>|<xref:Microsoft.Crm.Sdk.Messages.ConvertSalesOrderToInvoiceResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleTranslationResponse>|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleTranslationResponse.CreateKnowledgeArticleTranslation>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleVersionResponse>|<xref:Microsoft.Crm.Sdk.Messages.CreateKnowledgeArticleVersionResponse.CreateKnowledgeArticleVersion>|`EntityReference`|
+|<xref:Microsoft.Crm.Sdk.Messages.GenerateQuoteFromOpportunityResponse>|<xref:Microsoft.Crm.Sdk.Messages.GenerateQuoteFromOpportunityResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.GetDefaultPriceLevelResponse>|<xref:Microsoft.Crm.Sdk.Messages.GetDefaultPriceLevelResponse.PriceLevels>|`BusinessEntityCollection`|
+|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveResponse>|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleResponse>|<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrievePersonalWallResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrievePersonalWallResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveRecordWallResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveRecordWallResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedResponse.Entity>|`BusinessEntity`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedMultipleResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUnpublishedMultipleResponse.EntityCollection>|`BusinessEntityCollection`|
+|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUserQueuesResponse>|<xref:Microsoft.Crm.Sdk.Messages.RetrieveUserQueuesResponse.EntityCollection>|`BusinessEntityCollection`|
+
+
+Die `OutputParameters` werden nicht vor der Datenbanktransaktion aufgefüllt. Somit sind sie erst für Plug-Ins verfügbar, die in der **PostOperation**-Phase registriert werden. Wenn Sie die Werte ändern möchten, die von dem Vorgang zurückgegeben wurden, können Sie sie in den `OutputParameters` ändern.
 
 ## <a name="shared-variables"></a>Freigegebene Variablen
 

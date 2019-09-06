@@ -54,7 +54,7 @@ Wenn Sie **Native** wählen, müssen Sie eine Umleitungs-URI bereitstellen. Dies
 
 Wenn Ihre Anwendung ein Client ist, der es dem authentifizierten Benutzer ermöglicht, Operationen auszuführen, müssen Sie die Anwendung so konfigurieren, dass die Access Dynamics 365 als Berechtigung von Organisationsbenutzern vergeben wird.
 
-Konkrete Schritte hierzu finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory > Berechtigungen anwenden](walkthrough-register-app-azure-active-directory.md#apply-permissions).
+Konkrete Schritte hierzu finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory > Berechtigungen anwenden](walkthrough-register-app-azure-active-directory.md).
 
 <!-- TODO Verify this -->
  Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.

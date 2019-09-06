@@ -32,9 +32,7 @@ Plug-Ins und benutzerdefinierte Workflow-Assemblys sollten .NET Framework 4.6.2 
 > [!TIP]
 > Wenn Sie .NET Framework 4.6.2 auf dem Entwicklungscomputer installieren, müssen Sie unbedingt das Entwicklerpaket installieren, und nicht nur die Laufzeit. Dadurch kann das 4.6.2-Framework im Dialogfeld **Neues Projekt** von Visual Studio und im Zielframework-Dropdownmenü der Projekteigenschaften ausgewählt werden.  
 
-Sie können eine Visual Studio Community-Edition zu Entwicklungszwecken verwenden. 
-
-[comment]: <> (Die Verwendung von Erweiterungen wird in der Express-Edition aber nicht unterstützt, sodass Sie keine nützlichen Erweiterungen in der Version von Visual Studio installieren können)
+Sie können eine Visual Studio Community-Edition zu Entwicklungszwecken verwenden. Die Verwendung von Erweiterungen wird in der Express-Edition aber nicht unterstützt, sodass Sie keine nützlichen Erweiterungen in der Version von Visual Studio installieren können.
 
 Weitere Information: [Unterstützung für .NET Framework-Versionen](/dynamics365/customer-engagement/developer/supported-extensions#SupportNET)
 

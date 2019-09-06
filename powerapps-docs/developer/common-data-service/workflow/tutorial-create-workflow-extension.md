@@ -2,7 +2,7 @@
 title: 'Lernprogramm: Erstellen von Workflow-Erweiterungen (Common Data Service) | Microsoft Docs'
 description: 'In diesem Lernprogramm wird der Prozess gezeigt, um den Workflowdesigner zu erweitern, um benutzerdefinierte Aktivitäten und Logik unter Verwendung einer Workflow-Assembly hinzufügen'
 ms.custom: ''
-ms.date: 06/04/2019
+ms.date: 07/16/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -21,7 +21,7 @@ In diesem Lernprogramm wird der Prozess gezeigt, um den Workflowdesigner zu erwe
 
 In diesem Lernprogramm wird ein sehr einfaches Beispiel verwendet, den Fokus auf die Anforderungen und den Prozess zu konzentrieren, um:
 
-- Ein Visual Studio-Aktivitätsbibliotheksprojekt zu erstellen
+- Erstellen eines Visual Studio Klassenbibliotheksprojektes
 - Eine CodeActivity-Klasse hinzufügen
 - Ein- und Ausgabeparameter definieren
 - Fügen Sie Ihre Geschäftslogik hinzu
@@ -32,7 +32,6 @@ In diesem Lernprogramm wird ein sehr einfaches Beispiel verwendet, den Fokus auf
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Sie müssen Windows Workflow Foundation als einzelne Komponente in Visual Studio 2017 integrieren.  Weitere Informationen: [Visual Studio-Anforderungen](workflow-extensions.md#visual-studio-requirements)
 - Eine Common Data Service-Instanz und Administratorrechte
 - Verstehen, wie Workflows konfiguriert werden. Weitere Informationen: [Klassische Common Data Service-Workflows](/flow/workflow-processes)
 - Eine modellgesteuerte App, die es Ihnen ermöglicht, Firmen zu bearbeiten.
@@ -69,46 +68,56 @@ Im zweiten Schritt weist die Aktion **Datensatz aktualisieren** die Ausgabe des 
 
 ![Aktualisieren Sie des Kreditlimits](media/tutorial-create-workflow-activity-step2.png)
 
-## <a name="create-a-visual-studio-activity-library-project"></a>Ein Visual Studio-Aktivitätsbibliotheksprojekt zu erstellen
+## <a name="create-a-visual-studio-class-library-project"></a>Erstellen eines Visual Studio Klassenbibliotheksprojektes
 
 Dies Projekt erstellt eine einfache Workflow-Assembly, die einen Dezimalwert um 10 erhöht.
 
 1. Starten Sie Visual Studio.
 1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
-1. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **Visual C#** und wählen Sie **Workflow** und dann **Aktivitätsbibliothek** aus.
-1. Geben Sie einen Namen und einen Speicherort für die Lösung ein, und klicken Sie dann auf **OK**.
+1. Suchen Sie nach *Klassenbibliothek* und wählen Sie **Klassenbibliothek (.NET Framework)**.
+
+    ![Suche nach Klassenbibliothek (.NET Framework)](media/create-new-class-library-project.png)
+
+1. Klicken Sie auf **Weiter**.
+1. Geben Sie einen Namen und einen Ort für die Lösung an.
+
+    ![Konfigurieren Sie Ihren neuen Projektdialog in Visual Studio 2019.](media/configure-your-new-project.png)
 
     > [!NOTE]
-    > Wählen Sie einen Lösungsnamen aus, der für das Projekt sinnvoll ist. In diesem Beispiel verwenden wir `SampleWorkflowActivity`.
+    > Wählen Sie einen Projektnamen, der für Ihr Projekt sinnvoll ist. In diesem Beispiel verwenden wir `SampleWorkflowActivity`.
 
-    ![Workflowaktivitätsprojekt erstellen](media/tutorial-create-workflow-activity-create-workflow-activity-project.png)
-
-1. Navigieren Sie zum Menü **Projekt** und wählen Sie **Eigenschaften** aus. Geben Sie auf der Registerkarte **Anwendung** als Zielframework **.NET Framework 4.6.2** an.
+1. Klicken Sie auf **Erstellen**.
+1. Klicken Sie im **Lösungs-Explorer** mit der rechten Maustaste auf das Projekt und wählen Sie **Eigenschaften**. Überprüfen Sie auf der Registerkarte **Anwendung**, ob **.NET Framework 4.6.2** als Zielframework eingestellt ist.
 
     ![Projekteigenschaften festlegen](media/tutorial-create-workflow-activity-workflow-project.png)
 
-1. Löschen Sie die `Activity1.xaml`-Datei im Projekt.
-1. Klicken Sie im Lösungsexplorer mit der rechten Maustaste in das Projekt und wählen Sie **NuGet-Pakete verwalten...** aus. .
+1. Klicken Sie im **Lösungs-Explorer** mit der rechten Maustaste auf das Projekt und wählen Sie **Verwalten von NuGet Paketen ...** .
 
     ![NuGet-Package verwalten](media/tutorial-create-workflow-activity-manage-nuget-packages.png)
 
 1. Suchen Sie nach dem [Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)-NuGet-Paket und installieren Sie es.
 
+    ![Microsoft.CrmSdk.Workflow Workflow Workflow NuGet-Paket installieren](media/select-install-microsoft.crmsdk.workflow-nuget-package.png)
+
     > [!NOTE]
     > Stellen Sie sicher, dass das Paket, das Sie installieren im Besitz von [crmsdk](https://www.nuget.org/profiles/crmsdk) ist. Dieses Paket enthält `Microsoft.Xrm.Workflow.dll`, einer Abhängigkeit des [Microsoft.CrmSdk.CoreAssemblies](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/)-Pakets, sodass die erforderliche `Microsoft.Xrm.Sdk.dll`-Assembly auch enthalten ist. 
 
-1. Sie müssen auf **Ich stimme zu** im Dialogfeld "Lizenz-Abnahme" klicken.
+1. Sie müssen auf **Ich akzeptiere** im Dialog **Lizenz annehmen** klicken.
 
     ![Lizenzvertrag akzeptieren](media/tutorial-create-workflow-activity-license-acceptance.png)
 
-## <a name="add-a-codeactivity-class"></a>Eine CodeActivity-Klasse hinzufügen
+## <a name="rename-the-class-file"></a>Umbenennen der Klassendatei
 
-1. Fügen Sie eine Klassendatei (.cs) zum Projekt hinzu. Klicken Sie im **Lösungsexplorer** mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Klasse**. Geben Sie im Dialogfeld **Neues Element hinzufügen** einen Namen für die Klasse ein, und klicken Sie dann auf **Hinzufügen**.
+1. Klicken Sie im **Lösungs-Explorer** mit der rechten Maustaste auf die Standard Class1.cs-Datei und wählen Sie **Umbenennen**.
+
+    ![Umbenennen der Class1.cs-Datei](media/rename-class1-file.png)
 
     > [!NOTE]
     > Wählen Sie einen Klassennamen aus, der für die Aktivität sinnvoll ist. In diesem Beispiel nennen wir die Klasse `IncrementByTen`.
 
-    ![Hinzufügen einer Klasse](media/tutorial-create-workflow-activity-add-class.png)
+1. Wählen Sie **Ja** im Dialogfenster, das Sie fragt, ob Sie die Klasse ebenfalls umbenennen möchten.
+
+    ![Wählen Sie Ja, um die Klasse ebenfalls umzubenennen.](media/rename-file-dialog.png)
 
 1. Öffnen Sie die Datei "IncrementByTen.cs", und fügen Sie die folgenden Verwendungsanweisungen hinzu:
 
@@ -181,11 +190,15 @@ Fügen Sie innerhalb der Ausführungsmethode Logik hinzu, um die Logik anwenden,
 
 ## <a name="sign-and-build-the-assembly"></a>Die Assembly signieren und erstellen
 
-1. Signieren Sie die Assembly. Wählen Sie in den Projekteigenschaften unter der Registerkarte **Signierung** die Option **Assembly signieren** aus und geben Sie einen Schlüsseldateinamen an. Die benutzerdefinierten Workflowaktivitäts- (und Plug-In)-Assemblys müssen signiert sein. Sie müssen im Rahmen dieses Lernprogramms kein Kennwort festlegen. In diesem Beispiel haben wir eine neue Schlüsseldatei namens `SampleWorkflowActivity.snk` erstellt
+1. Die benutzerdefinierten Workflowaktivitäts- (und Plug-In)-Assemblys müssen signiert sein. Wählen Sie in den Projekteigenschaften unter der Registerkarte **Signieren** **Assemby signieren**. Wählen Sie unter **Starker Name für Schlüsseldatei wählen** Sie die Option **&lt;Neu...&gt;**.
+    Sie müssen im Rahmen dieses Lernprogramms kein Kennwort festlegen. In diesem Beispiel haben wir eine neue Schlüsseldatei namens `SampleWorkflowActivity.snk` erstellt
 
     ![Assembly signieren](media/tutorial-create-workflow-activity-sign-assembly.png)
 
 1. Erstellen Sie die Lösung im Debugmodus und überprüfen Sie, dass sich die `SampleWorkflowActivity.dll`-Assembly im Ordner `/bin/Debug` befindet.
+
+> [!NOTE]
+> Bei der Entwicklung einer Assembly ist es in Ordnung, die **Debug** Build-Konfiguration zu verwenden. Wenn Sie Ihre Assembly auf einem Produktionsserver oder in einer Lösung bereitstellen, sollten Sie die Build-Konfiguration **Release** verwenden.
 
 ## <a name="register-your-assembly"></a>Registrieren Ihrer Assembly
 
@@ -231,17 +244,17 @@ Benutzerdefinierte Workflowaktivitätsassemblys werden mithilfe des Plug-In-Regi
 
     ![Speichern der Workflowaktivitätseigenschaften](media/tutorial-create-workflow-activity-set-workflow-activity-properties.png)
 
-    > [!NOTE]
-    > Diese Werte werden in der nicht verwalteten Lösung nicht angezeigt, wenn Sie Ihre Workflowaktivität testen. Wenn Sie allerdings eine verwaltete Lösung exportieren, die diese Workflowaktivität enthält, werden diese Werte im Prozessdesigner angezeigt.
-
 ## <a name="test-your-assembly"></a>Testen Sie Ihre Assembly
 
 Sie können Ihre neue Workflowaktivität testen, indem Sie einen Prozess erstellen, der sie verwendet. Führen Sie diese Schritte aus, um den Workflowprozess zu erstellen, der im obigen Abschnitt [Ziel](#goal) beschrieben wird:
 
-1. Öffnen Sie [PowerApps](http://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
-1. Wechseln Sie im Entwurfsmodus von **Canvas** zu **modellgesteuert**.
+1. Öffnen Sie [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 1. Wählen Sie **Lösungen** aus.
-1. Öffnen Sie die **Common Data Service-Standardlösung**.
+1. Öffnen Sie die Lösung **CDS Default Publisher**.
+1. Erweitern Sie im Menü die Option **...** und wählen Sie **Wechsel zu klassisch**.
+    
+    ![Wechseln Sie zur klassischen Benutzeroberfläche](media/switch-to-classic-solution-ui.png)
+
 1. Wählen Sie **Prozesse** in der Liste **Komponenten** aus.
 1. Wählen Sie **Neu** aus, und geben Sie im Dialogfeld **Prozess erstellen** Folgendes ein:
 
@@ -268,14 +281,11 @@ Sie können Ihre neue Workflowaktivität testen, indem Sie einen Prozess erstell
     ![Konfiguration eines Testworkflows](media/tutorial-create-workflow-activity-configuration-test-workflow.png)
 
     > [!NOTE]
-    > Den Umfang auf "Organisation" festzulegen erstellt einen bedarfsgesteuerten Workflow, der von allen Benutzern in der Organisation angewendet werden kann.
+    > Das Festlegen von **Bereich** auf **Organisation** erzeugt einen Workflow, der von jedem in der Organisation angewendet werden kann.
 
 1. Fügen Sie den folgenden **Schritt** hinzu:
 
     ![Fügen Sie den Schritt "SampleWorkflowActivity.IncrementByTen" hinzu](media/tutorial-create-workflow-activity-use-sample-step.png)
-
-    > [!NOTE]
-    > Wie bereits erwähnt, werden die benutzerdefinierten Werte, die Sie in [Registrieren der Assembly](#register-your-assembly) festlegen, nicht im Designer angewendet, bis die Workflowaktivität als Teil einer verwalteten Lösung importiert wurde.
 
 1. Legen Sie den Schritt **Beschreibung** auf **Erhöhten Firmen-Kreditlimit abrufen** fest, und klicken Sie auf **Eigenschaften festlegen**.
 1. Legen Sie den Wert der Eigenschaft **Dezimaleingabe** auf mit dem Standardwert 0 das Kreditlimit der Firma fest.
@@ -316,15 +326,13 @@ Sie können Ihre neue Workflowaktivität testen, indem Sie einen Prozess erstell
 
 Um eine benutzerdefinierte Workflowaktivität in einer Lösung zu verteilen, müssen Sie die registrierte Assembly, die sie enthält, einer nicht verwalteten Lösung hinzufügen.
 
-1. Öffnen Sie die nicht verwaltete Lösung, der Sie die Assembly mit dem Lösungsexplorer hinzufügen möchten.
-1. Wählen Sie **Plug-In-Assemblys** in der Liste die Komponenten aus.
-1. Klicken Sie in der Befehlsleiste auf **Vorhandene hinzufügen**.
+1. Öffnen Sie die nicht verwaltete Lösung, der Sie dem Assembly hinzufügen möchten, mit [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Wählen Sie **Bestehendes hinzufügen** > **Weitere** > **Plugin-Assembly**.
 
-    ![vorhandene hinzufügen auswählen](media/tutorial-create-workflow-activity-add-existing-solution-component.png)
+    ![Vorhandenes Plugin-Assembly hinzufügen](media/add-existing-plugin-assembly.png)
 
-1. Wählen Sie im Dialogfeld **Lösungskomponenten auswählen** die SampleWorkflowActivity aus, die Sie erstellt haben, und klicken Sie auf **OK**.
-
-    ![SampleWorkflowActivity hinzufügen](media/tutorial-create-workflow-activity-add-solution-component.png)
+1. Suchen Sie nach dem Plugin-Assembly mit dem Namen - in diesem Fall 'SampleWorkflowActivity'.
+1. Wählen Sie das Plugin-Assembly aus und wählen Sie **Hinzufügen**.
 
 ### <a name="see-also"></a>Siehe auch
 

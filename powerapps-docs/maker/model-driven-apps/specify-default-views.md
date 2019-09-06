@@ -1,10 +1,10 @@
 ---
 title: Festlegen einer modellgesteuerten App-Standardansicht in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie eine standardmäßige Ansicht angegeben wird'
+description: Informationen zum Angeben einer Standardansicht
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

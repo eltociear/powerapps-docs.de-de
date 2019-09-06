@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 4: Erstellen eines AppSource-Paket für die App (Common Data Service) | Microsoft Docs'
+title: 'Schritt 4: Erstellen eines AppSource-Pakets für die App (Common Data Service) | Microsoft Docs'
 description: 'Lernen Sie, wie Sie eine AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -15,14 +15,14 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="step-4-create-an-appsource-package-for-your-app"></a>Schritt 4: Erstellen eines AppSource-Paket für die App
+# <a name="step-4-create-an-appsource-package-for-your-app"></a>Schritt 4: Erstellen eines AppSource-Pakets für die App
 
 Sie müssen ein AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demodatendateien zusammen mit anderen erforderlichen Dateien zu integrieren. Ein AppSource-Paket besteht aus den folgenden Dateien:
 
 |Datei|Beschreibung|
 |--|--|
 |Paketdatei|Eine Paketdatei wird vom Package Deployer Tool verwendet, um Ihre Lösungen und Demokonfigurationsdaten in mehreren Sprachen bereitzustellen.|
-|[Inhaltstypen].xml|Datei, die MIME-Typinformationen zur Dateityperweiterungen im AppSource Paket bereitstellt. Diese sind normalerweise .dll, .xml, .exe, und .config Dateitypen, aber Sie können fast jeden Dateityp hinzufügen, der von Windows unterstützt wird.|
+|[Content_Types].xml|Datei, die MIME-Typinformationen zur Dateityperweiterungen im AppSource-Paket bereitstellt. Diese sind normalerweise .dll, .xml, .exe, und .config Dateitypen, aber Sie können fast jeden Dateityp hinzufügen, der von Windows unterstützt wird.|
 |Symboldatei|Eine Bilddatei für das Appsource Paketsymbol; Größe sollte Pixel 32x32 sein. Gültige Bildformate sind PNG und JPG.|
 |HTML-Datei|Datei, die die Lizenzbedingungen enthält.|
 |input.xml|Dateien, der die Anlagen in Ihrem AppSource-Paket beschreibt.|
@@ -32,7 +32,7 @@ Sie müssen ein AppSource-Paket (ZIP-Datei) erstellen, um die Lösungs- und Demo
 
 Ein Paket können Sie in mehrere Dateien bündeln und bereitstellen, die gleichzeitig mit der App verknüpft sind. 
 
-1. Erstellt ein Dynamics 365 Paket , um die Lösungs- und Konfigurationsdatendateien zu integrieren, die Sie erstellt haben in [Schritt 2: Erstellen einer verwalteten Lösung für Ihre App](create-solution-app-appsource.md) Ein benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket auf der Common Data Service-Instanz bereitgestellt wird. Ausführliche Informationen zum Verwenden einer Vorlage zum Erstellen eines Pakets, finden Sie unter [Erstellen von Paketen für Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
+1. Erstellt ein Dynamics 365 Paket , um die Lösungs- und Konfigurationsdatendateien zu integrieren, die Sie erstellt haben in [Schritt 2: Erstellen einer verwalteten Lösung für Ihre App](create-solution-app-appsource.md) Ein benutzerdefinierter Code, der ausgeführt werden kann, bevor, während oder nachdem das Paket auf der Common Data Service-Instanz bereitgestellt wird. Ausführliche Informationen zum Erstellen einer Paketdatei finden Sie unter [Erstellen von Paketen für Dynamics 365 Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer).
 
     Nachdem Sie ein Paket erstellt haben, besteht das Paket aus folgenden Ereignisse:
 
@@ -40,7 +40,7 @@ Ein Paket können Sie in mehrere Dateien bündeln und bereitstellen, die gleichz
   
     - **\<PackageName>.dll**: Die Assembly enthält den benutzerdefinierten Code für das Paket. Beispiel: **SamplePackage.dll**.
 
-2. Dann erstellen Sie eine **[Content_Types].xml**-Datei, die MIME-Typ-Informationen zur Dateityperweiterungen bereitstellt, die in Ihrem Paket enthalten sind. Dies ist getrennt von jener, die wieder im AppSource-Paket enthalten ist. Hier erhalten Sie Beispielinhalte einer Content_Types].xml Datei mit den aufgelisteten Dateitypen:
+2. Dann erstellen Sie eine **[Content_Types].xml**-Datei, die MIME-Typ-Informationen zu Dateityperweiterungen bereitstellt, die in Ihrem Paket enthalten sind. Dies ist getrennt von jener, die wieder im AppSource-Paket enthalten ist. Hier erhalten Sie Beispielinhalte einer Content_Types].xml Datei mit den aufgelisteten Dateitypen:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -62,7 +62,7 @@ Ein Paket können Sie in mehrere Dateien bündeln und bereitstellen, die gleichz
 3. Komprimieren (ZIP) Sie die folgenden Dateien in einer Datei mit dem Namen *package.zip*:
    - Paketordner (ISVs Sie PkgFolder)
    - Paket DLL (SamplePackage.dll)
-   - [Inhaltstypen].xml
+   - [Content_Types].xml
 
      Damit diese Dateien komprimiert werden können, navigieren Sie zum Ordner, in dem die Dateien vorhanden sind, wählen sie alle, machen Sie einen Klick mit der rechten Maustaste und wählen Sie **Senden an** > **Komprimierter (gezippter) Ordner**.
 
@@ -70,9 +70,9 @@ Ein Paket können Sie in mehrere Dateien bündeln und bereitstellen, die gleichz
 
 4. Benennen Sie die ZIP-Datei in **package.zip** um.
 
-## <a name="create-contenttypesxml"></a>[Inhaltstypen].xml erstellen
+## <a name="create-content_typesxml"></a>[Content_Types].xml erstellen
 
-Sie können **[Content_Types.xml]** wieder verwenden, die Sie im vorherigen Abschnitt mit Schritt 2 erstellt haben.
+Sie können die **[Content_Types].xml** wieder verwenden, die Sie im vorherigen Abschnitt mit Schritt 2 erstellt haben.
 
 ## <a name="create-an-icon-for-your-appsource-package"></a>Erstellen eines Symbols für das AppSource-Paket
 
@@ -115,18 +115,17 @@ Hier finden Sie eine Beschreibung der Elemente in der Datei **input.xml**.
 |ProviderName|Name des Lösungsanbieters. Wenn Sie ein Team als Microsoft werden, geben Sie **Microsoft** an.|
 |PackageFile|Name des Pakets (.zip-Datei) für das Package Deployer Tool. Dies sollte die Paketassembly, den Paketordner mit Ihren App-Anlagen und die Content_Types.xml-Datei enthalten. Die package.zip-Datei wird unter dem Abschnitt [Erstellen einer Paketdatei](#create-a-package-file) erstellt.|
 |SolutionAnchorName|Name der Lösungs ZIP Datei im Paket, die für den Anzeigenamen und die Beschreibung der Lösungsanlagen verwendet wird.|
-|SolutionAnchorName|Name der Lösungs ZIP Datei im Paket, die für den Anzeigenamen und die Beschreibung der Lösungsanlagen verwendet wird.|
 |StartDate|Datum, an dem die App für AppSource verfügbar ist. Das Datumsformat ist TT/MM/JJJJ.|
 |Enddatum|Datum, an dem die App für AppSource nicht mehr verfügbar ist. Das Datumsformat ist TT/MM/JJJJ.|
 |SupportedCountries|Dies ist eine durch Trennzeichen getrennte Liste mit Ländern oder Regionen, in denen die App verfügbar sein soll. Zurzeit werden folgende Länder unterstützt: AE,AL,AM,AO,AR,AT,AU,AZ,BA,BB,BD,BE,BG,BH,BM,BN,BO,BR,BY,CA,CH,CI,CL,CM,CO,CR,CV,CW,CY,CZ,DE,DK,DO,DZ,EC,EE,EG,ES,FI,FR,GB,GE,GH,GR,GT,HK,HN,HR,HU,ID,IE,IL,IN,IQ,IS,IT,JM,JO,JP,KE,KG,KN,KR,KW,KY,KZ,LB,LK,LT,LU,LV,LY,MA,MC,MD,ME,MK,MN,MO,MT,MU,MX,MY,NG,NI,NL,NO,NZ,OM,PA,PE,PH,PK,PL,PR,PS,PT,PY,QA,RO,RS,RU,RW,SA,SE,SG,SI,SK,SN,SV,TH,TM,TN,TR,TT,TW,UA,US,UY,UZ,VE,VI,VN,ZA,ZW|
 |LearnMoreLink|URL zur Seite mit ausführlichen Informationen für dieses Paket.|
 |Gebietsschema|Eine Instanz dieses Knotens für jede Sprache, die Sie in der bevorzugten Lösung der Benutzeroberfläche sichern möchten. Dieser Knoten enthält die folgenden untergeordneten Elemente:<br/>- **PackageLocale.Code**: Die LCID der Sprache für den Knoten. Beispiel: US-Englisch ist 1033<br/>- **PackageLocale.IsDefault**: Gibt die Standardsprache an. Diese wird als Ausweichsprache genutzt, wenn die Sprache, die vom Kunden ausgewählt wurde, nicht verfügbar ist.<br/>- **Logo**: Wählen Sie ein Logo für Ihre App. Größe des Bilds muss 32x32 sein. Gültige Bildformate sind PNG und JPG.<br/>- **Bedingungen**: Name der HTML-Datei, die Lizenzbedingungen für alle Sprachen enthält.|
 
-## <a name="add-the-items-to-an-appsource-package"></a>Fügen Sie einen AppSource-Paket die Elemente hinzu
+## <a name="add-the-items-to-an-appsource-package"></a>Einem AppSource-Paket die Elemente hinzufügen
 
 Letzter Schritt besteht darin, alle Komponenten hinzufügen, die Sie zuvor nach einer komprimierten Datei (ZIP) einzeln erstellen, die Ihr App-Quellpaket sein wird.
 
-1. Navigieren Sie zum Ordner, der die Paketdatei [Content_Types].xml enthält, Lizenzbedingungsdatei (HTML), wählen Sie alle Datenbanken aus, klicken Sie mit der rechten Maustaste und dann auf **So senden** > .**Komprimierter (gezippter) Ordner**.
+1. Navigieren Sie zum Ordner, der die Paketdatei, [Content_Types].xml, das Symbol und die Lizenzbedingungsdatei (HTML) enthält, wählen Sie alle Datenbanken aus, klicken Sie mit der rechten Maustaste und wählen Sie dann den Ordner **Senden an** > **ZIP-komprimierten Ordner** aus.
 
     ![AppSource-Paket](media/appsource-package.png)
 

@@ -3,6 +3,7 @@ title: Erhalten von Tools für das PowerApps component framework | MicrosoftDocs
 description: 'Rufen Sie die Microsoft PowerApps CLI ab, um benutzerdefinierte Komponenten mithilfe des PowerApps component framework zu erstellen, zu debuggen und bereitzustellen.'
 keywords: 'PowerApps-Komponentframework-Tooling, Benutzerdefinierte Komponenten, Komponentenframework'
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 06/18/2019
 ms.service: powerapps

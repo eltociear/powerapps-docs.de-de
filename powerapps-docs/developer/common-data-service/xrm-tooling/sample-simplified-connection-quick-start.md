@@ -1,9 +1,9 @@
 ---
 title: 'Beispiel: Schnellstart für vereinfachte Verbindung (Entwicklerhandbuch für Common Data Service) | MicrosoftDocs'
-description: 'In diesem Beispiel wird gezeigt, wie Sie eine Verbindung mit den Common Data Service-Webdiensten mithilfe von CrmServiceClient herstellen und einfache Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine Entität ausführen. '
+description: 'In diesem Beispiel wird gezeigt, wie Sie eine Verbindung mit den Common Data Service-Webdiensten mithilfe der CrmServiceClient-Klasse herstellen und einfache Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine Entität ausführen. '
 ms.custom: null
 ms.date: 03/27/2019
-ms.reviewer: null
+author: Nkrb
 ms.service: crm-online
 ms.suite: null
 ms.tgt_pltfrm: null
@@ -22,17 +22,17 @@ search.app:
 ---
 # <a name="sample-simplified-connection-quick-start-using-common-data-service"></a>Beispiel: Erste Schritte für einfacheres Herstellen von Verbindungen mithilfe von Common Data Service
 
-In diesem Beispiel wird gezeigt, wie Sie eine Verbindung mit den Common Data Service-Webdiensten mithilfe von <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> herstellen und einfache Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine Entität ausführen. Weitere Informationen zu <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> finden Sie unter [Verwenden von CrmServiceClient-Konstruktoren, um Verbindung zu Common Data Service zu erhalten](use-crmserviceclient-constructors-connect.md).
+In diesem Beispiel wird gezeigt, wie Sie eine Verbindung mit den Common Data Service-Webdiensten mithilfe der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse herstellen und einfache Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine Entität ausführen. Weitere Informationen zu <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> finden Sie unter [Verwenden von CrmServiceClient-Konstruktoren zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md).
 
 ## <a name="requirements"></a>Anforderungen
 
 Der vollständige Beispielcode befindet sich hier [Beispiel: Schnellstart für Common Data Service](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/QuickStartCS) 
 
-Sie müssen die bereitgestellte `app.config`-Datei mit den Verbindungsinformationen für die Common Data Service-Instanz ändern, bevor Sie das Beispiel ausführen. 
+Sie müssen die Datei `app.config` mit den Verbindungsinformationen für die Common Data Service-Instanz ändern, bevor Sie das Beispiel ausführen. 
 
 ## <a name="demonstrates"></a>Demonstriert
 
-Dieses Beispiel authentifiziert den Benutzer bei den Common Data Service-Webdiensten durch Anwendung von <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> und -Methoden. Nachdem ein Verweis auf den Organisationswebdienst abgerufen wurde, führt das Beispiel einfache Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine `account`-Entität aus. Das Beispiel behandelt zudem allgemeine Ausnahmen. Zum Einrichten einer Verbindung mit dem Organisationswebdienst wird kein Hilfscode verwendet.  
+Dieses Beispiel authentifiziert den Benutzer bei den Common Data Service-Webdiensten durch Anwendung der <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Klasse und -Methoden. Nachdem ein Verweis auf den Organisationswebdienst abgerufen wurde, führt das Beispiel einfache Erstellungs-, Aktualisierungs-, Abruf- und Löschvorgänge für eine `account`-Entität aus. Das Beispiel behandelt zudem allgemeine Ausnahmen. Zum Einrichten einer Verbindung mit dem Organisationswebdienst wird kein Hilfscode verwendet.  
 
 Außerdem unterstützt dieses Beispiel `OAuth`-Authentifizierung und erweiterte Verbindungsdiagnose. Weitere Informationen zur Verwendung der Diagnose, siehe [Konfigurieren der Nachverfolgung für XRM Tooling](configure-tracing-xrm-tooling.md).
 
@@ -231,5 +231,5 @@ namespace PowerApps.Samples
 
 ### <a name="see-also"></a>Siehe auch
 
-[Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service](use-connection-strings-xrm-tooling-connect.md)<br />
+[Verwenden von Verbindungszeichenfolgen im XRM-Tooling zur Herstellung einer Verbindung mit Common Data Service](use-connection-strings-xrm-tooling-connect.md)<br />
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />

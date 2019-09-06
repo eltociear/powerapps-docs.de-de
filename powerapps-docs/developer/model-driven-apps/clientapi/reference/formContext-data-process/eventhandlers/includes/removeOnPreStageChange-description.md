@@ -1,0 +1,1 @@
+Entfernt einen Ereignishandler aus dem [OnPreStageChange](../../../events/onprestagechange.md)-Ereignis.

@@ -3,6 +3,7 @@ title: Hinzufügen von benutzerdefinierten Komponenten zu einem Feld oder einer 
 description: Prozess zum Importieren von benutzerdefinierten Komponenten
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
@@ -33,9 +34,9 @@ Das Ausführen der Schritte in dieser Prozedur ändert die Standardbezeichnung u
 
    - **Web**. Damit die benutzerdefinierte Komponente von jedem Webbrowser verfügbar ist, wählen Sie die Web-Option neben der Komponente aus. Beachten Sie, dass das Festlegen der Web-Option das Rendern der Komponente in Webbrowsern auf PCs, Macs und Mobilgeräten umfasst.
 
-   - **Telefon**. Damit die benutzerdefinierte Komponente auf Telefonen verfügbar wird, auf denen Dynamics 365 for phones ausgeführt wird, wählen Sie die Option "Telefon" neben der Komponente aus.
+   - **Telefon**. Um die benutzerdefinierte Komponente auf allen Smartphones bereitzustellen, auf denen Dynamics 365 for phones ausgeführt wird, wählen Sie die Option „Telefon“ neben der Komponente aus.
 
-   - **Tablet**. Damit die benutzerdefinierte Komponente auf Tablet-Geräten verfügbar wird, auf denen Dynamics 365 for tablets ausgeführt wird, wählen Sie die Option "Tablet" neben der Komponente aus.
+   - **Tablet**. Um die benutzerdefinierte Komponente auf allen Tablets bereitzustellen, auf denen Dynamics 365 for tablets ausgeführt wird, wählen Sie die Option „Tablet“ neben der Komponente aus.
 7. Wählen Sie das Bleistiftsymbol neben **Min**, **Max** und **Schritt** aus, legen Sie die Eigenschaftsoption fest und wählen Sie dann **OK** aus.  
   
    - **Min.**. Legen Sie den minimalen gültigen Wert fest. Sie können einen statischen Wert binden, den Sie eingeben oder den Wert an ein vorhandenes Feld binden. In diesem Beispiel ist **An statischen Wert binden** **Währung** und der minimale Wert, der eingegeben werden kann, ist *Null*.  

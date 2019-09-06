@@ -1,6 +1,6 @@
 ---
-title: 'Schritt 5: Speichern Sie Ihr AppSource-Paket in Azure Storage und generieren Sie eine URL mit SAS-Schlüssel (Common Data Service) | Microsoft Docs'
-description: 'Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und eine Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.'
+title: 'Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel (Common Data Service) | Microsoft Docs'
+description: 'Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und einen Schlüssel für die Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -15,15 +15,15 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS  Schlüssel.
+# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel
 
-Microsoft Azure Storage ist ein Microsoft-verwalteter Cloud Service, der Daten bereitstellt, die extrem verfügbar, sicher, robust, skalierbar und redundant sind. Weitere Informationen: [Einführung in Microsoft Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+Microsoft Azure Storage ist ein von Microsoft verwalteter Cloud Service, der Speicher bereitstellt, der extrem verfügbar, sicher, robust, skalierbar und redundant ist. Weitere Informationen: [Einführung in Microsoft Azure-Speicher](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
-Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und eine Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.
+Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und einen Schlüssel für die Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.
 
 ## <a name="before-you-upload-your-package"></a>Bevor Sie das Paket hochladen
 
-Herunterladen und installieren Sie den Microsoft Azure Storage Explorer von [http://storageexplorer.com](http://storageexplorer.com).
+Laden Sie den Microsoft Azure Storage Explorer von [http://storageexplorer.com](http://storageexplorer.com) herunter und installieren Sie ihn.
 
 Mit Azure Storage Explorer können Sie problemlos die Inhalte des Storage-Kontos verwalten.
 
@@ -52,13 +52,13 @@ Um das Paket in den Azure Blob Storage hochzuladen:
 
 7. Starten Sie Azure Storage Explorer auf dem Computer und stellen Sie eine Verbindung mit Ihrem Azure Speicherkonto her, indem Sie sich mit dem selben Konto anmelden, das Sie beim Erstellen des Azure Speicherkontos verwendeten.
 
-8. Im Azure Storage Explorer wählen Sie den neu erstellten Container, und dann **Hochladen** > **Dateien hochladen**, um das App-Quellpaket hochzuladen, das Sie in [ erstellt haben. Schritt 4: Erstellen eines AppSource-Pakets für Ihre App](create-package-app-appsource.md). 
+8. Im Azure Storage Explorer wählen Sie den neu erstellten Container, und dann **Hochladen** > **Dateien hochladen** aus, um das App-Quellpaket hochzuladen, das Sie in [Schritt 4: Erstellen eines AppSource-Pakets für Ihre App](create-package-app-appsource.md) erstellt haben. 
 
    ![](media/appsource-storageaccount-pic5.png)
 
 9. Navigieren Sie zur AppSource-Paketdatei auf dem Computer, und wählen Sie sie zum Hochladen aus.
 
-10. Klicken Sie auf die hochgeladene AppSource-Paketdatei mit einem Rechtsklick und wählen Sie **Signatur freigegebener Zugriff** aus.
+10. Klicken Sie auf die hochgeladene AppSource-Paketdatei mit einem Rechtsklick und wählen Sie **Signatur für den gemeinsamen Zugriff abrufen** aus.
 
     ![](media/appsource-storageaccount-pic6.png)
 
@@ -72,4 +72,4 @@ Um das Paket in den Azure Blob Storage hochzuladen:
 
 
 > [!div class="nextstepaction"]
-> [Nächste Schritte: Senden Sie die App auf dem Cloud-Partners-Portal](next-steps-submit-app-cloud-partner-portal.md)
+> [Nächste Schritte: Senden der App im Partner Center](next-steps-submit-app-cloud-partner-portal.md)

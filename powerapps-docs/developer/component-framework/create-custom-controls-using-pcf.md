@@ -3,6 +3,7 @@ title: Erstellen und Entwickeln einer benutzerdefinierten Komponente | Microsoft
 description: Starten der Erstellung einer Komponente mit PowerApps-Komponentenframework-Tooling
 keywords: 'PowerApps-Komponentframework-Tooling, Benutzerdefinierte Komponenten, Komponentenframework'
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 06/20/2019
 ms.service: powerapps
@@ -38,7 +39,7 @@ Für den Anfang öffnen Sie eine neue Entwicklereingabeaufforderung für VS 2017
 
 ## <a name="build-your-component"></a>Entwickeln Ihrer Komponente
 
-Um Ihre Komponente zu erstellen, können Sie den Ordner in Visual Studio Code öffnen und den Befehl (Strg-Umschalt-B) verwenden. Dann wählen Sie Ihre Build-Optionen aus. Alternativ können Sie Ihr Steuerelement schnell mit dem `npm run build`-Befehl in Ihrem Entwicklereingabeaufforderung für VS 2017-Fenster erstellen.
+Um Ihre Komponente zu erstellen, können Sie den Ordner in Visual Studio Code öffnen und den Befehl (Strg-Umschalt-B) verwenden. Dann wählen Sie Ihre Build-Optionen aus. Alternativ können Sie Ihre Komponente schnell mit dem `npm run build`-Befehl in Ihrem Entwicklereingabeaufforderung für VS 2017-Fenster erstellen.
 
 > [!TIP]
 > Zum Debuggen Ihrer Komponente während oder nach dem Buildvorgang siehe [Debuggen einer benutzerdefinierten Komponente](debugging-custom-controls.md).

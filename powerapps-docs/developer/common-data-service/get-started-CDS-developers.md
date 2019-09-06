@@ -1,11 +1,11 @@
 ---
-title: 'Entwickler: Erste Schritte mit Common Data Service | MicrosoftDocs'
+title: 'Entwickler: Erste Schritte mit Common Data Service | Microsoft Docs'
 description: 'Erfahren Sie, wie Entwickler Wert mithilfe des Common Data Service in PowerApps hinzufügen können.'
 suite: powerapps
 author: JimDaly
-manager: annbe
+manager: ryjones
 ms.service: powerapps
-ms.date: 03/27/2019
+ms.date: 08/05/2019
 ms.author: jdaly
 ms.reviewer: kvivek
 search.audienceType:
@@ -57,9 +57,9 @@ Ein gutes Verständnis der Metadaten im System hilft dabei zu verstehen, wie die
 Wenn Sie die Aktivität zu den Erweiterungen verteilen, die Sier erstellen oder Anpassungen, die davon abhängen, müssen Sie die Lösungen verstehen. Die Lösungen, die von einer Person erstellt wurden, sind verhältnismäßig einfach, und erfodern keine Fähigkeiten eines Entwicklers. Aber ein Team von Entwicklern, mit Lösungen und Verwendungs-Anwendungin der Lebenszyklus-Verwaltungsprinzipien produktiv zum Verwenden eines entwickelteren Methode. Weitere Informationen:
 
  - [Einführung in Lösungen](introduction-solutions.md)
- - [SolutionPackager ToolSolutionPackager tool](compress-extract-solution-file-solutionpackager.md)
- - [Package Deployer tool](./package-deployer/create-packages-package-deployer.md)
- - [Veröffentlichen Sie die App für AppSource](publish-app-appsource.md)
+ - [SolutionPackager-Tool](compress-extract-solution-file-solutionpackager.md)
+ - [Package Deployer-Tool](./package-deployer/create-packages-package-deployer.md)
+ - [App auf AppSource veröffentlichen](publish-app-appsource.md)
 
 ## <a name="create-client-applications-and-authentication"></a>Erstellen von Clientanwendungen und Authentifizierung
 

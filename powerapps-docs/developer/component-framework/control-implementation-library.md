@@ -3,6 +3,7 @@ title: Komponentenimplementierungsbibliothek | Microsoft Docs
 description: Erstellen Sie benutzerdefinierte Komponenten mit JavaScript oder TypeScript
 keywords: null
 ms.author: nabuthuk
+author: Nkrb
 manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps

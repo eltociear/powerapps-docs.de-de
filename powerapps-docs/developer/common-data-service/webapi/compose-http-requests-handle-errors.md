@@ -35,7 +35,7 @@ Um auf die Web-API zuzugreifen, müssen Sie eine URL mithilfe von Teilen der fol
 |--|--|
 |Protokoll| `https://`|
 |Umgebungsname|Der eindeutige Name, der für Ihre Umgebung gilt. Wenn Ihr Firmennamen *Contoso* ist, kann er `contoso` sein.|
-|Region|Ihre Umgebung ist in der Regel in einem Rechenzentrum in Ihrer Nähe verfügbar.<br />Nordamerika: `crm`<br />Südamerika: `crm2`<br />Kanada: `crm3`<br />Europa, Naher Osten und Afrika (EMEA): `crm4`<br />Asien-Pazifik (APAC): `crm5`<br />Ozeanien: `crm6`<br />Japan: `crm7`<br />Indien: `crm8`<br />Nordamerika 2: `crm9`<br />Vereinigtes Königreich: `crm11`<br />Die Werte werden im Laufe der Zeit hinzugefügt, wenn neue Rechenzentrumregionen geöffnet werden.|
+|Region|Ihre Umgebung ist in der Regel in einem Rechenzentrum in Ihrer Nähe verfügbar.<br />Nordamerika: `crm`<br />Südamerika: `crm2`<br />Kanada: `crm3`<br />Europa, Naher Osten und Afrika (EMEA): `crm4`<br />Asien-Pazifik (APAC): `crm5`<br />Ozeanien: `crm6`<br />Japan: `crm7`<br />Indien: `crm8`<br />Nordamerika 2: `crm9`<br />Vereinigtes Königreich: `crm11`<br />Frankreich: `crm12`<br />Die Werte werden im Laufe der Zeit hinzugefügt, wenn neue Rechenzentrumregionen geöffnet werden.|
 |Basis-URL|`dynamics.com.`|
 |Web-API-Pfad|Der Pfad zur Web-API ist `/api/data/`.|
 |Version|   Die Version wird auf folgende Weise ausgedrückt: `v[Major_version].[Minor_version][PatchVersion]/`. Die gültige Version für diese Freigabe ist `v9.0`.|
@@ -117,7 +117,7 @@ Sie können zusätzliche Kopfzeilen verwenden, um bestimmte Möglichkeiten zu ak
 
 ## <a name="identify-status-codes"></a>Ermitteln von Statuscodes
 
- Egal, ob eine HTTP-Anforderung erfolgreich ist oder fehlschlägt, die Antwort umfasst einen Statuscode. Die Statuscodes, die von der Common Data Service-Web-API zurückgegeben werden, umfassen Folgendes.  
+ Egal, ob eine HTTP-Anforderung erfolgreich ist oder fehlschlägt, die Antwort umfasst einen Statuscode. Die Statuscodes, die durch Common Data Service Web API zurückgegeben werden umfassen Folgendes.  
   
 |Code|Beschreibung|Typ|  
 |----------|-----------------|----------|  

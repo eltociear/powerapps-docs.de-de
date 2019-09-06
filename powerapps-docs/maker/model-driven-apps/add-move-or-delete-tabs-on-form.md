@@ -104,5 +104,6 @@ Um Registerkarten zu einem Formular hinzuzufügen, verwenden Sie den Bereich **L
 [Ergänzen, Verschieben oder Löschen von Feldern in einem Formular mithilfe des Formulardesigners](add-move-or-delete-fields-on-form.md)  
 [Hinzufügen, Verschieben oder Löschen von Abschnitten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-sections-on-form.md)  
 [Im Formulardesigner verfügbare Eigenschaften](form-designer-properties.md)  
+[Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)  
 [Verwenden der Strukturansicht im Formulardesigner](using-tree-view-on-form.md)  
-[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md) 
+[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)

@@ -76,7 +76,7 @@ Dashboards für interaktive Funktionen können ein zentraler Arbeitsbereich für
  > ![Layouts Streamdetail-Dashboard.](media/interactive-dashboards-single-stream-layout.png "Layouts Streamdetail-Dashboard.")  
   
 <a name="BKMK_Enable"></a>   
-## <a name="configure-fiter-fields-and-security-roles-for-the-interactive-dashboards"></a>Konfigurieren von Filterfeldern und Sicherheitsrollen für die interaktiven Dashboards  
+## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>Konfigurieren von Filterfeldern und Sicherheitsrollen für die interaktiven Dashboards  
  Wenn Sie interaktive Dashboards konfigurieren, sollten Sie zunächst Entitäten, Felder und Sicherheitsrollen aktivieren, damit interaktive Dashboards für sie konfiguriert werden können. Hinweis: Diese interaktiven Dashboards werden für alle Entitäten und benutzerdefinierten Entitäten standardmäßig aktiviert. 
   
 ### <a name="configure-filter-fields"></a>Konfigurieren von Filterfeldern  

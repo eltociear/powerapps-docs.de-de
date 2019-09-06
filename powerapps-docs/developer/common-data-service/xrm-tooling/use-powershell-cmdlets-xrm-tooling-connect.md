@@ -1,6 +1,6 @@
 ---
-title: Verwenden von PowerShell-cmdlets für XRM-Tooling zum Verbinden mit Common Data Service (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tooling wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer zugreifen kann'
+title: 'Verwenden der PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit Common Data Service (Common Data Service) herzustellen | Microsoft Docs'
+description: 'Erfahren Sie, wie Sie Powershell-Cmdlets für XRM-Tools wie Get-CrmConnection und Get-CrmOrganizations verwenden, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat.'
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -21,9 +21,9 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden von PowerShell-Cmdlets für XRM-Tooling zum Verbinden mit Common Data Service
+# <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden Sie PowerShell-Cmdlets für XRM-Tools, um eine Verbindung mit Common Data Service herzustellen.
 
-XRM-Tooling stellt die folgenden **Windows PowerShell-Cmdlets** bereit, die Sie verwenden können, um eine Verbindung mit Common Data Service herzustellen und Organisationen abzurufen, auf die der aktuelle Benutzer Zugriff hat: `Get-CrmConnection` und `Get-CrmOrganizations`.  
+XRM-Tooling stellt Ihnen die folgenden **Windows PowerShell** Cmdlets zur Verfügung, mit denen Sie eine Verbindung zu Common Data Service herstellen und Organisationen abrufen können, auf die der aktuelle Benutzer Zugriff hat: `Get-CrmConnection` und `Get-CrmOrganizations`.  
 
 > [!NOTE]
 > [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Verwenden Sie PowerShell-Cmdlets für XRM-Tooling, um die Verbindung mit Customer Engagement herzustellen](/dynamics365/customer-engagement/developer/xrm-tooling/use-powershell-cmdlets-xrm-tooling-connect)
@@ -38,72 +38,36 @@ XRM-Tooling stellt die folgenden **Windows PowerShell-Cmdlets** bereit, die Sie 
   
 <a name="register"></a>   
 
-## <a name="register-the-cmdlets"></a>Registrieren des Cmdlets  
+## <a name="acquire-the-microsoftxrmtoolingcrmconnectorpowershell-cmdlet"></a>Rufen Sie das Cmdlet Microsoft.Xrm.Tooling.CrmConnector.PowerShell ab. 
 
- Bevor Sie die **PowerShell**-Cmdlets verwenden können, müssen Sie sie registrieren. Die **PowerShell**-Cmdlets für XRM-Tooling sind [hier](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell) als NuGet-Paket verfügbar. So laden Sie cmdlets herunter und registrieren sie
+Bevor Sie das Cmdlet **Microsoft.Xrm.Tooling.CrmConnector.PowerShell** verwenden können, müssen Sie es installieren. Das Cmdlet XRM-Tooling PowerShell ist in der PowerShell Gallery [hier](https://www.powershellgallery.com/packages/Microsoft.Xrm.Tooling.CrmConnector.PowerShell) verfügbar. So laden Sie das Cmdlet herunter und installieren es
   
-1. Öffnen Sie Notizblock und kopieren Sie das folgende Skript
+Öffnen Sie PowerShell oder PowerShell ISE im Admin-Modus und führen Sie den folgenden Befehl aus:
 
-    ```powershell
-    @PowerShell.exe -ExecutionPolicy RemoteSigned -Command "Invoke-Expression -Command ((Get-Content -Path '%~f0' | Select-Object -Skip 2) -join [environment]::NewLine)"
-    @exit /b %Errorlevel%
-    $currentFolder = Get-Location
-    cd $currentFolder
-    $sourceNugetExe = "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe"
-    $targetNugetExe = ".\nuget.exe"
-    Remove-Item .\Tools -Force -Recurse -ErrorAction Ignore
-    Invoke-WebRequest $sourceNugetExe -OutFile $targetNugetExe
-    Set-Alias nuget $targetNugetExe -Scope Global -Verbose
+   ```powershell
+  Install-Module -Name Microsoft.Xrm.Tooling.CrmConnector.PowerShell
+   ```  
+Wenn Sie das Modul in der Vergangenheit installiert haben, können Sie es mit dem folgenden Befehl aktualisieren:
 
-    ##
-    ##Specify the NuGet package source
-    ##
-    $nugetPackageSource = "https://api.nuget.org/v3/index.json"
+   ```powershell
+  Update-Module -Name Microsoft.Xrm.Tooling.CrmConnector.PowerShell
+   ```
+    
+Sie sind nun bereit, das Cmdlet **Microsoft.Xrm.Tooling.CrmConnector.PowerShell** zu verwenden. Um die von Ihnen registrierten Funktionen aufzulisten, führen Sie den folgenden Befehl im PowerShell-Fenster aus:  
+  
+   ```powershell
+  Get-Help “Crm”  
+   ```  
 
-    ##
-    ##Download XRM Tooling PowerShell cmdlets
-    ##
-    ./nuget install -source $nugetPackageSource Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell -O .\Tools
-    md .\Tools\XRMToolingPowerShell
-    $cmdletFolder = Get-ChildItem ./Tools | Where-Object {$_.Name -match 'Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell.'}
-    move .\Tools\$cmdletFolder\tools\*.* .\Tools\XRMToolingPowerShell
-    Remove-Item .\Tools\$cmdletFolder -Force -Recurse
 
-    ##
-    ##Remove NuGet.exe
-    ##
-    Remove-Item nuget.exe
-  
-1. Save the notepad file as batch file on your computer: **GetTools.bat**.
-1. Navigate to the folder where you saved the file, for example `C:\SDK`, and double-click the **GetTools.bat** file to run the script. This will create a `Tools\XRMToolingPowerShell` folder in the same location as your **GetTools.bat** file. The `Tools\XRMToolingPowerShell` folder contains the `RegisterXRMTooling.ps1` script to register the cmdlets, and other associated files.
-1. Start **PowerShell** on your computer with elevated privileges (run as administrator).  
-  
-1. At the prompt, change your directory to the folder that contains the **PowerShell** script for registering the cmdlets. For example,  
-  
-    ```powershell  
-    cd c:\SDK\Tools\XRMToolingPowerShell  
-    ```  
-  
-1. Führen Sie das `RegisterXRMTooling.ps1`-Skript aus, um die XRM-Tooling-**PowerShell**-Cmdlets zu registrieren. Geben Sie den folgenden Befehl ein, und drücken Sie die **EINGABETASTE**:  
-  
-    ```powershell
-    .\RegisterXRMTooling.ps1  
-    ```
-  
- Sie können jetzt diese **PowerShell**-Cmdlets verwenden. Um die Cmdlets aufzulisten, die Sie registriert haben, führen Sie den folgenden Befehl im PowerShell-Fenster aus  
-  
-```powershell
-Get-Help “Crm”  
-```  
-  
 <a name="RetrieveOrgs"></a>   
 
-## <a name="use-the-cmdlet-to-retrieve-organizations-from-common-data-service"></a>Verwenden Sie das Cmdlet, um Organisationen vom Common Data Service abzurufen  
+## <a name="use-the-cmdlet-to-retrieve-organizations-from-common-data-service"></a>Verwenden Sie das Cmdlet, um Organisationen von Common Data Service abzurufen  
 
 Verwenden Sie das `Get-CrmOrganizations`-Cmdlet, um Organisationen abzurufen, auf die Sie Zugriff haben.  
   
 
-1.  Stellen Sie die Anmeldeinformationen bereit, um eine Verbindung mit der Common Data Service-Instanz herzustellen. Bei Ausführung des folgenden Befehls werden Sie aufgefordert, Ihren Benutzernamen und Ihr Kennwort einzugeben, um eine Verbindung mit der Common Data Service-Instanz herzustellen, und sie wird in der `$Cred`-Variable gespeichert.  
+1.  Stellen Sie Ihre Anmeldeinformationen bereit, um eine Verbindung mit Ihrer Common Data Service-Instanz herzustellen. Bei Ausführung des folgenden Befehls werden Sie aufgefordert, Ihren Benutzernamen und Ihr Kennwort einzugeben, um eine Verbindung mit der Common Data Service-Instanz herzustellen, und sie wird in der Datei `$Cred` gespeichert.  
 
   
     ```powershell  
@@ -111,7 +75,7 @@ Verwenden Sie das `Get-CrmOrganizations`-Cmdlet, um Organisationen abzurufen, au
     ```  
 2. Verwenden Sie den folgenden Befehl, um die Organisationen abzurufen, und speichern Sie die Informationen in der Variable `$CRMOrgs`
 
-    - Wenn Sie eine Verbindung mit einer Common Data Service-Instanz herstellen:  
+    - Wenn Sie sich mit einer Common Data Service-Instanz verbinden:  
   
         ```powershell  
         $CRMOrgs = Get-CrmOrganizations -Credential $Cred -DeploymentRegion NorthAmerica –OnlineType Office365  
@@ -137,30 +101,30 @@ Verwenden Sie das `Get-CrmOrganizations`-Cmdlet, um Organisationen abzurufen, au
   
 <a name="ConnecttoCRM"></a>
    
-## <a name="use-the-cmdlet-to-connect-to-common-data-service"></a>Verwenden des Cmdlet zur Herstellung einer Verbindung mit Common Data Service  
+## <a name="use-the-cmdlet-to-connect-to-common-data-service"></a>Verwenden des Cmdlets, um eine Verbindung mit Common Data Service herzustellen  
 
-Verwenden Sie das Cmdlet `Get-CrmConnection` zur Herstellung einer Verbindung mit einer Common Data Service-Instanz. Mit dem Cmdlet können Sie entweder das allgemeine Anmeldungssteuerelement von XRM-Tooling verwenden, um die Anmeldeinformationen anzugeben und eine Verbindung mit Common Data Service herzustellen oder um die Anmeldeinformationen als Inline-Parameter anzugeben. Weitere Informationen: [Verwenden des allgemeinen XRM-Tooling-Anmeldungssteuerelements](use-xrm-tooling-common-login-control-client-applications.md)
+Verwenden Sie das Cmdlet `Get-CrmConnection`, um eine Verbindung mit einer Common Data Service-Instanz herzustellen Mit dem Cmdlet können Sie entweder das allgemeine Anmeldungssteuerelement von XRM-Tooling verwenden, um die Anmeldeinformationen anzugeben und eine Verbindung mit Common Data Service herzustellen oder um die Anmeldeinformationen als Inline-Parameter anzugeben. Weitere Informationen: [Verwenden des allgemeinen XRM-Tooling-Anmeldungssteuerelements](use-xrm-tooling-common-login-control-client-applications.md)
 
 > [!IMPORTANT]
-> Vor der Nutzung des `Get-CrmConnection` cmdlets, stellen Sie sicher, dass Sie den folgenden Befehl verwenden, um mithilfe von TLS 1.2 by PowerShell mit der Common Data Service-Instanz eine Verbindung herzustellen<br/>
+> Bevor Sie das Cmdlet `Get-CrmConnection` verwenden, stellen Sie sicher, dass Sie den folgenden Befehl verwenden, um die Verwendung von TLS 1.2 durch PowerShell zur Verbindung mit Ihrer Instanz Common Data Service zu erzwingen.<br/>
 > `[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12`<br/>
-> Weitere Informationen zu TLS 1.2-Anforderung für Common Data Service-Verbindung [Blogbeitrag: Künftige Updates für Common Data Service-Verbindungssicherheit](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)   
+> Weitere Informationen über die TLS 1.2-Anforderung für Common Data Service Verbindung [Blog Post: Updates zur Common Data Service Verbindungssicherheit ](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)   
   
 ### <a name="connect-to-common-data-service-by-using-the-common-login-control"></a>Mit dem allgemeinen Anmeldungssteuerelement eine Verbindung mit Common Data Service herstellen  
   
-1.  Wenn Sie das allgemeine Anmeldungssteuerelement verwenden möchten, um die Anmeldeinformationen bei der Herstellung einer Verbindung mit der Common Data Service-Instanz bereitzustellen, verwenden Sie den folgenden Befehl. Die Informationen werden in der `$CRMConn`-Variablen gespeichert, damit Sie sie später verwenden können.  
+1.  Wenn Sie das allgemeine Anmeldungssteuerelement verwenden möchten, um die Anmeldeinformationen bei der Herstellung einer Verbindung mit Common Data Service bereitzustellen, verwenden Sie den folgenden Befehl. Die Informationen werden in der `$CRMConn`-Variablen gespeichert, damit Sie sie später verwenden können.  
   
     ```powershell  
     $CRMConn = Get-CrmConnection -InteractiveMode  
     ```  
   
-2. Das Dialogfeld **Anmeldesteuerelement** wird angezeigt. Stellen Sie die Anmeldeinformationen bereit, um eine Verbindung mit der Common Data Service-Instanz herzustellen und klicken Sie auf **Anmelden**.    
+2. Das Dialogfeld **Anmeldesteuerelement** wird angezeigt. Stellen Sie die Anmeldeinformationen bereit, um eine Verbindung mit der Common Data Service-Instanz herzustellen, und klicken Sie auf **Anmelden**.    
   
-### <a name="connect-to-common-data-service-by-specifying-credentials-inline"></a>Stellen Sie eine Verbindung mit Common Data Service her, indem Sie inline Anmeldeinformationen angeben.  
+### <a name="connect-to-common-data-service-by-specifying-credentials-inline"></a>Stellen Sie eine Verbindung mit Common Data Service her, indem Sie die Anmeldeinformationen inline angeben.  
   
-1.  Verwenden Sie die folgenden Befehle, um eine Verbindung mit Common Data Service herzustellen. Beachten Sie, dass diese befehle die `$Cred`-Variable verwenden, um die Anmeldeinformationen beim Abrufen der Organisationen zu speichern. Die Verbindungsinformationen werden in der `$CRMConn`-Variablen gespeichert:
+1.  Um eine Verbindung mit Common Data Service herzustellen, verwenden Sie die folgenden Befehle. Beachten Sie, dass diese befehle die `$Cred`-Variable verwenden, um die Anmeldeinformationen beim Abrufen der Organisationen zu speichern. Die Verbindungsinformationen werden in der `$CRMConn`-Variablen gespeichert:
 
-     - Wenn Sie eine Verbindung mit einer Common Data Service-Instanz herstellen
+     - Wenn Sie sich mit einer Common Data Service-Instanz verbinden, gehen Sie wie folgt vor
 
         ```powershell  
         $CRMConn = Get-CrmConnection -Credential $Cred -DeploymentRegion <Deployment region name> –OnlineType Office365 –OrganizationName <OrgName>  
@@ -178,11 +142,11 @@ Verwenden Sie das Cmdlet `Get-CrmConnection` zur Herstellung einer Verbindung mi
        ```  
 
        > [!div class="mx-imgBorder"]
-       > ![Common Data Service-Verbindungsinformationen und -status](../media/xrm-tooling-powershell-2.png "Common Data Service-Verbindungsinformationen und -status") 
+       > ![Common Data Service Verbindungsinformationen und Status](../media/xrm-tooling-powershell-2.png "Common Data Service Verbindungsinformationen und Status") 
 
   
 ### <a name="see-also"></a>Siehe auch
   
-[Verwenden der XRM-Tooling-API zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden der XRM Tooling API, um eine Verbindung zu Common Data Service herzustellen](use-crmserviceclient-constructors-connect.md)<br />
 [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md)<br />
 [Blog: PowerShell-Modul für die Ausführung von Datenvorgängen und die Bearbeitung der Benutzer- und Systemeinstellungen in Common Data Service](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)

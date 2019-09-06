@@ -46,4 +46,5 @@ Sie können Knoten in der Strukturansicht erweitern oder reduzieren, um die Elem
 [Hinzufügen, Verschieben oder Löschen von Abschnitten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-sections-on-form.md)  
 [Hinzufügen, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-tabs-on-form.md)  
 [Im Formulardesigner verfügbare Eigenschaften](form-designer-properties.md)  
+[Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)   
 [Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)

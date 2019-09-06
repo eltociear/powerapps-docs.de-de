@@ -6,7 +6,8 @@ manager: kvivek
 ms.date: 04/23/2019
 ms.service: powerapps
 ms.topic: article
-ms.author: nkrb
+ms.author: nabuthuk
+author: nkrb
 ---
 
 # <a name="implementing-an-image-upload-component"></a>Implementieren einer Bild-Upload-Komponente
@@ -33,6 +34,9 @@ Das ausgewählte Bild wird innerhalb der Komponente gerendert. Auch wird die `Re
       <img path="img/default.png" />
       <resx path="strings/TSImageUploadControl.1033.resx" version="1.0.0" />
     </resources>
+    <feature-usage>
+<uses-feature name="Device.pickFile" required="true" />
+</feature-usage>
   </control>
 </manifest>
 ```
