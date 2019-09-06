@@ -911,6 +911,8 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: Deaktivieren des automatischen Speicherns in einem Formular
                       href: ./model-driven-apps/manage-auto-save.md
+                    - name: Hinzufügen einer Registerkarte für SharePoint-Dokumente
+                      href: ./model-driven-apps/add-documents-tab-entity-main-form.md
             - name: Einbetten einer Canvas-App in einem modellgesteuerten Formular
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
