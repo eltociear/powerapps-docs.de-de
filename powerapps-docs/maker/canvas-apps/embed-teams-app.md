@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/29/2019
+ms.date: 09/09/2019
 ms.author: jimholtz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca3430d6b639b7a4c3980f5bbb0ba202220f6d9e
-ms.sourcegitcommit: 935470edc7441b76533cc937e6f32229bfd6f11f
+ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
+ms.sourcegitcommit: 86ed3ad487f31721155758aa9d87134bb10f8437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70117788"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842234"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Einbetten einer powerapps-app in Teams 
 
@@ -58,7 +58,7 @@ Suchen Sie die GUID ihrer PowerApp, die Sie in einem späteren Schritt verwenden
 
 Sie können diese Schritte überspringen, wenn APP Studio bereits installiert ist. 
 
-1. Wählen Sie in Teams links unten im Menü Teams die Option **apps** aus (![](./media/embed-teams-app/apps-icon.png "Symbol")"Apps"-Symbol).
+1. Wählen Sie in Teams links unten im Menü Teams die Option **apps** aus (Symbol!["Apps"](./media/embed-teams-app/apps-icon.png "")-Symbol).
 
 2. Suchen Sie im Suchfeld nach "App Studio", und wählen Sie es aus.
 
@@ -107,7 +107,7 @@ Sie können diese Schritte überspringen, wenn APP Studio bereits installiert is
    | **Entwicklerinformationen**    |     |
    | Name    | Erforderlich. Der Anzeige Name für das Unternehmen oder den Entwickler.     |
    | Website    | Erforderlich. Die https://-URL zur Website für Ihre APP über powerapps.com. Wenn eine Person Ihre APP installiert, wird die Seite "About Your App" angezeigt. Er sollte mit der Webversion Ihrer APP auf powerapps.com verknüpft werden.   |
-   | **App-URLs**    | Diese Links werden zusammen mit der Website -URL auf der Seite "Info" angezeigt.     |
+   | **App-URLs**    | Diese Links werden zusammen mit der Website-URL **auf der Seite** "Info" angezeigt.     |
    | Datenschutzbestimmungen    | Erforderlich. Die https://-URL zur Datenschutzrichtlinie des Entwicklers. [Beispiel](https://go.microsoft.com/fwlink/p/?LinkID=698505).   |
    | Nutzungsbedingungen    | Erforderlich. Die https://-URL für die Nutzungsbedingungen des Entwicklers.  [Beispiel](https://go.microsoft.com/fwlink/p/?LinkID=698507).  |
    | **BR**    |     |
@@ -129,7 +129,7 @@ Weitere Informationen finden Sie unter [Manifest-Editor](https://docs.microsoft.
    > [!div class="mx-imgBorder"] 
    > ![Team Registerkarte hinzufügen](./media/embed-teams-app/team-tab-add.png "Team Registerkarte hinzufügen")
 
-7. Fügen Sie die Konfigurations-URL Ihrer APP im Eingabefeld "Konfigurations-URL" unter Verwendung des folgenden Formats hinzu:`https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<PowerApp ID>`
+7. Fügen Sie die Konfigurations-URL Ihrer APP im Eingabefeld "Konfigurations-URL" unter Verwendung des folgenden Formats hinzu:`https://apps.powerapps.com/teams/settings/<PowerApp ID>`
 
    Ersetzen `<PowerApp ID>` Sie durch die zuvor aufgezeichnete APP-ID-GUID.
 
