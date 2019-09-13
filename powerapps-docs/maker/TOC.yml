@@ -1155,8 +1155,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: Erstellen benutzerdefinierter Entitäten mit Komponenten
           href: ./common-data-service/create-custom-entity.md
-        - name: Hinzufügen von Daten zu einer Entität mithilfe von Power Query
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
         - name: Entitäten und Metadaten
           href: ./common-data-service/create-edit-metadata.md
         - name: Typen von Entitäten
@@ -1305,6 +1303,17 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: Veröffentlichen von Änderungen
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+    - name: Arbeit mit Dataflows
+      href: ./common-data-service/self-service-data-prep-with-dataflows.md
+      items:
+        - name: Erstellen und Verwenden von Dataflows
+          href: ./common-data-service/create-and-use-dataflows.md
+        - name: Hinzufügen von Daten zu einer Entität mithilfe von Power Query
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: Verbinden von Azure Data Lake für Dataflowspeicher
+          href: ./common-data-service/connect-azure-data-lake-storage-for-dataflow.md
+        - name: Verwenden eines lokalen Datengateways
+          href: ./common-data-service/using-dataflows-with-on-premises-data.md
     - name: Lizenzanforderungen für Entitäten
       href: ./common-data-service/data-platform-entity-licenses.md
       items:
