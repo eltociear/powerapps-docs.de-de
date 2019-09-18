@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/01/2015
+ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86d36af00d3c5aa825b01ed873150f94738a952c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2db3d31936329444746620e91e3414be914087d2
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546579"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038188"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Collect-, Clear- und ClearCollect-Funktionen in PowerApps
 
@@ -31,9 +30,9 @@ Erstellt und löscht [Sammlungen](../working-with-data-sources.md#collections) u
 
 Die **Collect**-Funktion fügt Datensätze zu einer Datenquelle hinzu. Die hinzuzufügenden Elemente können sein:
 
-- Ein einzelner Wert: Der Wert befindet sich der **[Wert](function-value.md)** Feld einen neuen Datensatz.  Alle anderen Eigenschaften bleiben [leer](function-isblank-isempty.md).
-- Ein Datensatz: Jede benannte Eigenschaft wird in die entsprechende Eigenschaft eines neuen Datensatzes eingefügt.  Alle anderen Eigenschaften bleiben leer.
-- Ein [Tabelle](../working-with-tables.md): Jeder Datensatz der Tabelle wird als separater Datensatz der Datenquelle wie oben beschrieben hinzugefügt. Die Tabelle wird nicht als geschachtelte Tabelle zu einen Datensatz hinzugefügt. Umschließen Sie zu diesem Zweck zuerst die Tabelle in einem Datensatz.
+- Ein einzelner Wert: Der Wert wird im **[Wertfeld](function-value.md)** eines neuen Datensatzes abgelegt.  Alle anderen Eigenschaften bleiben [leer](function-isblank-isempty.md).
+- A-Datensatz: Jede benannte Eigenschaft wird in der entsprechenden Eigenschaft eines neuen Datensatzes platziert.  Alle anderen Eigenschaften bleiben leer.
+- Eine [Tabelle](../working-with-tables.md): Jeder Datensatz der Tabelle wird wie oben beschrieben als separater Datensatz der Datenquelle hinzugefügt. Die Tabelle wird nicht als geschachtelte Tabelle zu einen Datensatz hinzugefügt. Umschließen Sie zu diesem Zweck zuerst die Tabelle in einem Datensatz.
 
 Bei Verwendung mit einer Sammlung werden bei Bedarf zusätzliche [Spalten](../working-with-tables.md#columns) erstellt. Die Spalten für andere Datenquellen werden von der Datenquelle vordefiniert, und neue Spalten können nicht hinzugefügt werden.  
 
@@ -41,7 +40,7 @@ Wenn die Datenquelle nicht bereits vorhanden ist, wird eine Sammlung erstellt.
 
 Sammlungen werden manchmal verwendet, um globale Variablen zu halten oder eine temporäre Kopie einer Datenquelle zu erstellen. PowerApps basiert auf Formeln, die automatisch neu berechnet werden, während der Benutzer mit einer App interagiert. Sammlungen haben diesen Vorteil nicht und ihre Verwendung kann das Erstellen und Verstehen Ihrer App erschweren. Lesen Sie vor dem Verwenden einer Sammlung auf diese Weise [Working with Variables (Mit Variablen arbeiten)](../working-with-variables.md).
 
-Sie können auch die **[Patch](function-patch.md)**-Funktion für die Erstellung von Datensätzen in einer Datenquelle verwenden.
+Sie können auch die **[Patch](function-patch.md)** -Funktion für die Erstellung von Datensätzen in einer Datenquelle verwenden.
 
 **Collect** gibt die geänderte Datenquelle als Tabelle zurück.  **Collect** kann nur in einer [behavior formula (Verhaltensformel)](../working-with-formulas-in-depth.md) verwendet werden.
 
@@ -49,9 +48,9 @@ Sie können auch die **[Patch](function-patch.md)**-Funktion für die Erstellung
 
 Die **Clear**-Funktion löscht alle Datensätze einer Sammlung.  Die Spalten der Sammlung bleiben erhalten.
 
-Beachten Sie, dass **Clear** nur bei Sammlungen und nicht bei anderen Datenquellen angewendet wird.  Für diesen Zweck können Sie **[RemoveIf](function-remove-removeif.md)( *DataSource*; TRUE)** verwenden.  Seien Sie vorsichtig, da dies alle Datensätze aus dem Speicher der Datenquelle entfernt und Auswirkungen auf andere Benutzer haben kann.
+Beachten Sie, dass **Clear** nur bei Sammlungen und nicht bei anderen Datenquellen angewendet wird.  Für diesen Zweck können Sie **[RemoveIf](function-remove-removeif.md)( *DataSource*, TRUE)** verwenden.  Seien Sie vorsichtig, da dies alle Datensätze aus dem Speicher der Datenquelle entfernt und Auswirkungen auf andere Benutzer haben kann.
 
-Sie können die **[Remove](function-remove-removeif.md)**-Funktion verwenden, um Datensätze gezielt zu entfernen.
+Sie können die **[Remove](function-remove-removeif.md)** -Funktion verwenden, um Datensätze gezielt zu entfernen.
 
 **Clear** hat keinen Rückgabewert.  Es kann nur in einer Verhaltensformel verwendet werden.
 
@@ -63,19 +62,19 @@ Die **ClearCollect**-Funktion löscht alle Datensätze aus einer Sammlung und f�
 
 ## <a name="syntax"></a>Syntax
 
-**Collect**( *Datenquelle*; *Element*; ... )
+**Collect**( *Datenquelle*, *Element*, ... )
 
 * *Datenquelle*: Erforderlich. Die Datenquelle, in die Sie Daten hinzufügen möchten.  Wenn nicht bereits vorhanden, wird eine neue Sammlung erstellt.
-* *Element(e)*: Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
+* *Element(e)* : Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
 
 **Clear**( *Auflistung* )
 
 * *Auflistung*: Erforderlich. Die Sammlung, die Sie löschen möchten.
 
-**ClearCollect**( *Auflistung*; *Element*; ... )
+**ClearCollect**( *Auflistung*, *Element*, ... )
 
 * *Auflistung*: Erforderlich. Die Sammlung, die Sie löschen und zu der Sie dann Daten hinzufügen möchten.
-* *Element(e)*: Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
+* *Element(e)* : Erforderlich.  Eine oder mehrere Datensätze oder Tabellen, die der Datenquelle hinzugefügt werden sollen.  
 
 ## <a name="examples"></a>Beispiele
 
@@ -83,12 +82,23 @@ Die **ClearCollect**-Funktion löscht alle Datensätze aus einer Sammlung und f�
 
 In diesen Beispielen löschen und fügen Sie Daten zu einer Sammlung mit dem Namen **IceCream** hinzu. Die Datenquelle beginnt mit dem folgenden Inhalt:
 
-![Beispieldatenquelle](media/function-clear-collect-clearcollect/icecream.png)
+![Beispiel Datenquelle](media/function-clear-collect-clearcollect/icecream.png)
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Löscht alle Daten aus der Sammlung **IceCream**, und fügt anschließend einen Datensatz hinzu, der eine Menge von Erdbeereis enthält. |<style> IMG {Max-Width: none} </style> ![Tabelle mit einem Datensatz](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
-| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt zwei Datensätze zur Sammlung **IceCream** hinzu, die eine Menge von Pistazien- und Orangeneis enthält. |![Tabelle mit zwei Datensätzen](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
-| **Clear( IceCream )** |Entfernt alle Datensätze aus der Sammlung **IceCream**. |![Leere Tabelle](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Die Datenquelle **IceCream** wurde auch geändert. |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Löscht alle Daten aus der Sammlung **IceCream**, und fügt anschließend einen Datensatz hinzu, der eine Menge von Erdbeereis enthält. |<style>IMG {max-width: None}</style> ![Tabelle mit einem Datensatz](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Fügt der **icecream** -Auflistung zwei Datensätze hinzu, die eine Menge von Pistazie und orangefarbener Eiscreme enthalten. |![Tabelle mit zwei Datensätzen](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Clear( IceCream )** |Entfernt alle Datensätze aus der Sammlung **IceCream**. |![Leere Tabelle](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
 
-Schrittweise Anweisungen zum Erstellen einer Sammlung, finden Sie unter [erstellen und Aktualisieren einer Sammlung](../create-update-collection.md).
+Schritt-für-Schritt-Beispiele zum Erstellen einer Sammlung finden Sie unter [Erstellen und Aktualisieren einer Sammlung](../create-update-collection.md).
+
+### <a name="records-and-tables"></a>Datensätze und Tabellen
+
+In diesen Beispielen wird untersucht, wie Datensatz-und Tabellen Argumente **erfasst** und **clearcollect** behandelt werden.
+
+| Formel | Beschreibung | Ergebnis |
+| --- | --- | --- |
+| **Clearcollect (icecream, {&nbsp;Flavor:&nbsp;"Chocolate",&nbsp;Menge:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanilla",&nbsp;Menge:&nbsp;200 &nbsp;}  )** | Löschen Sie alle Daten, und fügen Sie dann der **icecream** -Auflistung zwei Datensätze hinzu, die eine Menge von Schoko-und Vanille-Eis enthalten.  Die hinzu zufügenden Datensätze werden als einzelne Argumente der Funktion bereitgestellt.| ![Der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream.png) <br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Clearcollect (icecream, Tabelle ({&nbsp;Flavor:&nbsp;"Chocolate",&nbsp;Menge:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanille",&nbsp;Menge:&nbsp; 200&nbsp;}))** | Identisch mit dem vorherigen Beispiel, mit dem Unterschied, dass die Datensätze in einer Tabelle kombiniert und durch ein einzelnes Argument übermittelt werden. Der Inhalt der Tabelle wird nach Datensatz extrahiert, bevor Sie der **icecream** -Auflistung hinzugefügt wird. | ![Der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+| **Clearcollect (icecream,<br>{&nbsp;myfavoriten: Table ({&nbsp;Flavor:&nbsp;"chocoalte",&nbsp;Menge:&nbsp;100&nbsp;}, {&nbsp;Flavor:&nbsp;"Vanille",&nbsp;Menge:&nbsp;200&nbsp; } ) } )** | Identisch mit dem vorherigen Beispiel, mit der Ausnahme, dass die Tabelle in einem Datensatz umschließt ist.  Die Datensätze der Tabelle werden nicht extrahiert, und stattdessen wird die gesamte Tabelle als untergeordnete Tabelle des Datensatzes hinzugefügt. | ![Der Sammlung hinzugefügte Schoko-und Vanille Datensätze](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>Die **icecream** -Auflistung wurde ebenfalls geändert. |
+

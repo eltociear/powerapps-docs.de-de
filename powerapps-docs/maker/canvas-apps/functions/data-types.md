@@ -1,5 +1,5 @@
 ---
-title: -Datentypen | Microsoft-Dokumentation
+title: Datentypen | Microsoft-Dokumentation
 description: Datentypen in Canvas-apps
 author: gregli-msft
 manager: kvivek
@@ -13,206 +13,207 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85567e120754d4f82e13bd7d7dac9fa0f7c80cbd
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 10c5ff9eaa709ab950fa3c3f0efce4f859a71dbc
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456762"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71037986"
 ---
 # <a name="data-types-in-canvas-apps"></a>Datentypen in Canvas-apps
 
-Informationen, Durchlaufen einer app in kleinen, diskrete Werte sehr ähnlich wie die Zellen einer Kalkulationstabelle aufweisen. Z. B. Daten in eine **Geburtstag** Feld und einem **Anniversary** Feld würden beide passieren als eine **Datum** -Wert, der das Jahr, Monat und den Tag enthält. Die app weiß, wie diese Werte zu formatieren, schränken Sie die Eingabe mit den jeweils geeigneten und weisen Werte mit einer Datenbank. Geburtstage unterscheiden sich von Geburtstage an Personen, aber das System behandelt diese auf genau die gleiche Weise. In diesem Fall **Datum** ist ein Beispiel für eine [Datentyp](https://en.wikipedia.org/wiki/Data_type).
+Informationen fließen durch eine app in kleinen, diskreten Werten, ähnlich wie die Zellen einer Tabelle. Beispielsweise würden Daten in einem **Geburts** Feld und einem **Anniversary** -Feld als **Datums** Wert durchlaufen, der das Jahr, den Monat und den Tag einschließt. Die APP weiß, wie diese Werte formatiert werden, die Eingabe auf die für die einzelnen geeigneten Elemente beschränken und die Werte für eine Datenbank freigeben. Geburtstage unterscheiden sich von Jubiläen bis hin zu Personen, aber das System verarbeitet sie genau auf die gleiche Weise. In diesem Fall ist **Date** ein Beispiel für einen- [Datentyp](https://en.wikipedia.org/wiki/Data_type).
 
-Dieser Artikel enthält Details für die Datentypen, die canvas-Unterstützung für apps. Wenn eine app mit einer externen Datenquelle verbunden ist, wird jeder Datentyp in dieser Quelle in einen Datentyp für Canvas-apps zugeordnet.
+Dieser Artikel enthält Details zu den Datentypen, die von Canvas-Apps unterstützt werden. Wenn eine APP eine Verbindung mit einer externen Datenquelle herstellt, wird jeder Datentyp in dieser Quelle einem Datentyp für Canvas-apps zugeordnet.
 
 | Datentyp | Beschreibung | Beispiele |
 |-----------|-------------|---------|
-| **Boolean** | Ein *"true"* oder *"false"* Wert.  Kann verwendet werden, direkt in **Wenn**, **Filter** und andere Funktionen ohne einen Vergleich.  | *TRUE* |
-| **Farbe** | Eine Farbe-Spezifikation, einschließlich der alpha-Kanal. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255; 128; 0; 0,5 )** |
-| **Währung** | Ein Währungswert, der in einer Gleitkommazahl gespeichert sind. Currency-Werte sind identisch mit der Number-Werte mit Currency-Formatierungsoptionen.  | **123**<br>**4.56** |
-| **Datum** | Ein Datum ohne Zeit, in der Zeitzone des Benutzers von der app. | **Datum (2019, 5, 16)** |
-| **DateTime** | Ein Datum mit Zeit, in der Zeitzone des Benutzers von der app. | **DateTimeValue( "May 16, 2019 1:23:09 PM" )** |
-| **GUID** | Ein [Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )** |
-| **Hyperlink** | Eine Textzeichenfolge, die einen Link enthält. | **„http://powerapps.microsoft.com“** |
-| **Bild** | Ein [Universal Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) Textzeichenfolge, die ein Bild im JPEG, PNG, SVG, .gif oder andere allgemeine Web-Bildformat. | **MyImage** als app-Ressource hinzugefügt<br>**„https://northwindtraders.com/logo.jpg“**<br>**"appres://blobmanager/7b12ffa2..."** |
-| **Medien** | Eine URI-Text-Zeichenfolge, ein video oder audio-Aufzeichnung. | **MyVideo** als app-Ressource hinzugefügt<br>**„https://northwindtraders.com/intro.mp4“**<br>**"appres://blobmanager/3ba411c..."** |
-| **Anzahl** | Eine Gleitkommazahl. | **123**<br>**-4.567**<br>**8.903e121** |
-| **Optionssatz** | Eine Auswahl aus einer Reihe von Optionen, die durch eine Reihe gesichert. Dieser Datentyp kombiniert eine Bezeichnung lokalisierbaren Text mit einem numerischen Wert an. Die Bezeichnung wird in der app angezeigt, und der numerische Wert gespeichert und für Vergleiche verwendet. | **ThisItem.OrderStatus** |
-| **Record** | Ein Datensatz von Datenwerten. Dieser zusammengesetzten Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **{Unternehmen: "Nordwind"<br>Mitarbeiter: 35; <br>gemeinnützige Organisationen: false}** |
-| **Datensatz-Referenz** | Ein Verweis auf einen Datensatz in einer Entität. Solche Verweise werden häufig mit polymorphen Suchvorgänge verwendet. Weitere Informationen finden Sie unter: [Arbeiten mit Verweise](../working-with-references.md).| **First(Accounts).Owner** |
-| **Tabelle** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für die Felder mit den gleichen Datentypen und Weggelassene Felder werden als behandelt *leere*. Dieser zusammengesetzten Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **Tabelle ({FirstName: "Sidney";<br>"LastName": "Higa"}; <br>{FirstName: "Nancy"<br>"LastName": "Anderson" } )**
-| **Text** | Eine Unicode-Text-Zeichenfolge. | **"Hello, World"** |
-| **Zeit** | Eine Uhrzeit ohne ein Datum in der Zeitzone des Benutzers von der app. | **Zeit ("11", "23", "45")** |
-| **Zwei-option** | Eine Auswahl aus einem Satz von zwei Optionen, die durch einen booleschen Wert gesichert werden soll. Dieser Datentyp kombiniert eine Bezeichnung lokalisierbaren Text mit einem booleschen Wert. Die Bezeichnung wird in der app angezeigt, und der boolesche Wert gespeichert und für Vergleiche verwendet. | **ThisItem.Taxable** |
+| **Boolean** | Ein *true* -oder *false* -Wert.  Kann direkt in **if**-, **Filter** -und anderen Funktionen ohne einen-Vergleich verwendet werden.  | *true* |
+| **Farbe** | Eine Farb Angabe, einschließlich eines Alphakanals. | **Color.Red**<br>**ColorValue ("#102030")**<br>**RGBA (255, 128, 0, 0,5)** |
+| **Währung** | Ein Währungswert, der in einer Gleit Komma Zahl gespeichert wird. Währungswerte entsprechen den Zahlenwerten mit Währungs Formatierungsoptionen.  | **123**<br>**4,56** |
+| **Datum** | Ein Datum ohne Uhrzeit in der Zeitzone des App-Benutzers. | **Datum (2019, 5, 16)** |
+| **DateTime** | Ein Datum mit einer Uhrzeit in der Zeitzone des App-Benutzers. | **DateTimeValue ("Mai 16, 2019 1:23:09 Uhr")** |
+| **GUID** | Ein [Global eindeutiger Bezeichner](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID ()**<br>**GUID ("123e4567-e89b-12d3-A456-426655440000")** |
+| **Hyperlinks** | Eine Text Zeichenfolge, die einen Link enthält. | **„http://powerapps.microsoft.com“** |
+| **Image** | Eine URI-Text Zeichenfolge [(Universal Resource Identifier)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) für ein Bild im JPEG-, PNG-, SVG-, GIF-oder anderen gängigen Webbild Format. | **MyImage** als App-Ressource hinzugefügt<br>**„https://northwindtraders.com/logo.jpg“**<br>**"appres://blobmanager/7b12ffa2..."** |
+| **Medien** | Eine URI-Text Zeichenfolge für eine Video-oder Audioaufzeichnung. | **MyVideo** als App-Ressource hinzugefügt<br>**„https://northwindtraders.com/intro.mp4“**<br>**"appres://blobmanager/3ba411c..."** |
+| **Einigen** | Eine Gleit Komma Zahl. | **123**<br>**-4,567**<br>**8.903e121** |
+| **Options Satz** | Eine Auswahl aus einer Reihe von Optionen, die durch eine Zahl unterstützt werden. Dieser Datentyp kombiniert eine lokalisierbare Text Bezeichnung mit einem numerischen Wert. Die Bezeichnung wird in der App angezeigt, und der numerische Wert wird gespeichert und für Vergleiche verwendet. | **Thisitem. OrderStatus** |
+| **Aufnahme** | Ein Datensatz von Datenwerten. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **Geschäfts "Northwind Traders",<br>Personal: 35, <br>nicht Gewinn: false}** |
+| **Daten Satz Verweis** | Ein Verweis auf einen Datensatz in einer Entität. Solche Verweise werden häufig bei polymorphen Such Vorgängen verwendet. Weitere Informationen finden Sie unter: [Arbeiten mit verweisen](../working-with-references.md).| **Zuerst (Konten). Eigentor** |
+| **Table** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für Ihre Felder mit denselben Datentypen aufweisen, und ausgelassene Felder werden als *leer*behandelt. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **Tabelle ({FirstName: "Sidney",<br>LastName: "Higa"}, <br>{FirstName: "Nancy",<br>LastName: "Anderson"})**
+| **Text** | Eine Unicode-Text Zeichenfolge. | **"Hello, World"** |
+| **Uhrzeit** | Eine Uhrzeit ohne Datum in der Zeitzone des App-Benutzers. | **Zeit (11, 23, 45)** |
+| **Zwei Optionen** | Eine Auswahl aus einer Reihe von zwei Optionen, die von einem booleschen Wert unterstützt werden. Dieser Datentyp kombiniert eine lokalisierbare Text Bezeichnung mit einem booleschen Wert. Die Bezeichnung wird in der App angezeigt, und der boolesche Wert wird gespeichert und für Vergleiche verwendet. | **Thisitem. steuerlich** |
 
-Viele dieser Datentypen sind vergleichbar und besitzen die gleiche zugrunde liegende Darstellung, wie z. B. eine **Hyperlink** Feld als behandelt **Text**.  Die zusätzliche Datentypen bieten bessere Standardeinstellung in Formularen und andere Steuerelemente auftritt.
+Viele dieser Datentypen sind ähnlich und haben dieselbe zugrunde liegende Darstellung, z. b. ein **Hyperlink** -Feld, das als **Text**behandelt wird.  Die zusätzlichen Datentypen bieten eine bessere Standard Erfahrung in Formularen und anderen Steuerelementen.
 
 ## <a name="blank"></a>Blank
 
-Alle Datentypen haben einen Wert von *leere* (das heißt, kein Wert). Der Begriff "Null" wird häufig in Datenbanken für dieses Konzept verwendet.  
+Alle Datentypen können den Wert *blank* aufweisen (d. h. kein Wert). Der Begriff "Null" wird häufig in Datenbanken für dieses Konzept verwendet.  
 
-Verwenden der **leere** -Funktion mit der **festgelegt** oder **Patch** Funktion, um eine Variable festlegen oder das Feld *leere*. Z. B. **Set (X; Blank())** Werte in der globalen Variablen entfernt **x**.  
+Verwenden Sie die **leere** Funktion mit der **set** -oder **Patch** -Funktion, um eine Variable oder ein Feld auf " *blank*" festzulegen. Beispielsweise entfernt **Set (x, Blank ())** alle Werte in der globalen Variablen **x**.  
 
-Test für eine *leere* Wert mithilfe der [ **"isblank"** ](function-isblank-isempty.md) Funktion. Ersetzen Sie dies möglich *leer* Werte mit nicht -*leer* Werte mithilfe der [ **Coalesce** ](function-isblank-isempty.md) Funktion.
+Testen Sie den Wert mit der [**isblank**](function-isblank-isempty.md) -Funktion auf einen *leeren* Wert. Ersetzen Sie mögliche *leere* Werte durch nicht*leere* Werte mithilfe der [**COALESCE**](function-isblank-isempty.md) -Funktion.
 
-Da alle Datentypen unterstützt *leere*, **booleschen** und **zwei Option** Datentypen effektiv haben drei mögliche Werte.
+Da alle Datentypen *leer*unterstützen, verfügen die **booleschen** und **zwei Options** Datentypen über drei mögliche Werte.
 
-## <a name="text-hyperlink-image-and-media"></a>Text, links, Images und Medien
+## <a name="text-hyperlink-image-and-media"></a>Text, Hyperlink, Bild und Medien
 
-Alle vier dieser Datentypen basieren auf einer [Unicode](https://en.wikipedia.org/wiki/Unicode) Textzeichenfolge.
+Alle vier dieser Datentypen basieren auf einer [Unicode](https://en.wikipedia.org/wiki/Unicode) -Text Zeichenfolge.
 
-### <a name="image-and-media-resources"></a>Image und Medienressourcen
+### <a name="image-and-media-resources"></a>Bild-und Medienressourcen
 
-Durch die **Datei** Menü, Video- und Audiodateien Bilddateien können app-Ressourcen hinzugefügt. Der Name der importierten Datei wird der Ressourcenname in der app. In dieser Abbildung, die das Logo für Northwind Traders, mit dem Namen **Nwindlogo**, eine app hinzugefügt wurde:
+Über das Menü **Datei** können Sie Bild-, Video-und Audiodateien als App-Ressourcen hinzufügen. Der Name der importierten Datei wird zum Ressourcennamen in der app. In dieser Grafik wurde das Northwind Traders-Logo mit dem Namen **nwindlogo**zu einer app hinzugefügt:
 
 ![](media/data-types/nwind-resource.png)
 
-Um diese Ressource in einer app zu verwenden, geben sie in der **Image** Eigenschaft eine [ **Image** ](../controls/control-image.md) Steuerelement:
+Wenn Sie diese Ressource in einer App verwenden möchten, geben Sie Sie in der **Image** -Eigenschaft eines [**Image**](../controls/control-image.md) -Steuer Elements an:
 
 ![](media/data-types/nwind-image.png)
 
 ### <a name="uris-for-images-and-other-media"></a>URIs für Bilder und andere Medien
 
-Sie können tiefer ein wenig in diesem letzten Beispiel durch Festlegen der **Text** Eigenschaft eine [ **Bezeichnung** ](../controls/control-text-box.md) die Steuerung an **Nwindlogo**. Die Bezeichnung zeigt eine Textzeichenfolge an:
+Wenn Sie die **Text** -Eigenschaft eines [**Label**](../controls/control-text-box.md) -Steuer Elements auf **nwindlogo**festgelegt haben, können Sie sich näher mit dem letzten Beispiel befassen. Die Bezeichnung zeigt eine Text Zeichenfolge an:
 
 ![](media/data-types/nwind-text.png)
 
-Canvas-apps verweisen auf die jedes Image oder eine andere Mediadatei, in der Cloud oder als app-Ressource hinzugefügt werden, indem eine URI-Text-Zeichenfolge.
+Canvas-Apps verweisen auf jedes Bild oder jede andere Mediendatei, ob Sie in der Cloud oder als App-Ressource durch eine URI-Text Zeichenfolge hinzugefügt wird.
 
-Z. B. die **Image** Eigenschaft eines Bildsteuerelements akzeptiert nicht nur app-Ressourcen, sondern auch Links zu Bildern im Web, wie z. B. "https://northwindtraders.com/logo.jpg". Die Eigenschaft akzeptiert auch Inlinebilder, mit denen die [Daten-URI-Schema](https://en.wikipedia.org/wiki/Data_URI_scheme), wie in diesem Beispiel:
+Beispielsweise akzeptiert die **Image** -Eigenschaft eines Image-Steuer Elements nicht nur App-Ressourcen, sondern auch Links zu Bildern im Web, z https://northwindtraders.com/logo.jpg. b. "". Die-Eigenschaft akzeptiert auch Inline Bilder, die das [Daten-URI-Schema](https://en.wikipedia.org/wiki/Data_URI_scheme)verwenden, wie in diesem Beispiel:
 
-```powerapps-comma
+```powerapps-dot
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
-Dieser URI wird eine erweiterten Version zwei Lila Diamanten angezeigt:
+Dieser URI zeigt eine hochskalierte Version von zwei lila Diamanten an:
 
 ![](media/data-types/double-diamonds.png)
 
-Können Sie anzeigen, das neueste Image erfasst werden, eine [ **Kamera** ](../controls/control-camera.md) steuern, wenn Sie festlegen, die **Image** Eigenschaft eines Bildsteuerelements zu der **Foto** die Eigenschaft von der Kamera-Steuerelement. Die app enthält das Bild im Arbeitsspeicher, und die **Foto** Eigenschaft von der Kamera-Steuerelement gibt einen URI-Verweis auf das Bild zurück. Sie können z. B. dauern, ein Bild und der Kamera **Foto** Eigenschaft zurückgeben könnte **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** .
+Sie können das neueste Bild, das in einem [**Kamera**](../controls/control-camera.md) Steuerelement aufgezeichnet wurde, anzeigen, wenn Sie die **Image** -Eigenschaft eines Bild-Steuer Elements auf die **Photo** -Eigenschaft des Kamera-Steuer Elements festlegen. Die app enthält das Bild im Speicher, und die **Photo** -Eigenschaft des Kamera Steuer Elements gibt einen URI-Verweis auf das Bild zurück. Sie können z. b. ein Bild sehen, und die **Photo** -Eigenschaft der Kamera kann **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** zurückgeben.
 
-Sie verwenden einen URI zum Verweisen auf ein Bild oder eine andere Media-Datei, die in einer Datenbank gespeichert. Auf diese Weise die app nicht die eigentlichen Daten abzurufen, bis sie tatsächlich benötigt wird. Beispielsweise kann ein Anhang in einer Common Data Service-Entität zurückgeben **"Appres://datasources/Contacts/table/..."** Sie können dieses Image durch Festlegen von anzeigen, wie im Beispiel Kamera der **Image** Eigenschaft eines Bildsteuerelements auf diesen Verweis, der die binären Daten abgerufen.
+Sie verwenden einen URI, um auf ein Bild oder eine andere Mediendatei zu verweisen, die in einer Datenbank gespeichert ist. Auf diese Weise Ruft die APP die tatsächlichen Daten erst ab, wenn Sie tatsächlich benötigt wird. Beispielsweise kann eine Anlage in einer Common Data Service Entität **"appres://DataSources/Contacts/Table/..."** zurückgeben. Wie im Beispiel für die Kamera können Sie dieses Bild anzeigen, indem Sie die **Image** -Eigenschaft eines Image-Steuer Elements auf diesen Verweis festlegen, der die Binärdaten abruft.
 
-Wenn Sie einen Media-Datentyp, z. B. ein Bild, mit einer Datenbank speichern, sendet die app an das tatsächliche Bild oder die Media-Daten, nicht den URI-Verweis.
+Wenn Sie einen Medien Datentyp, z. b. ein Bild, in einer Datenbank speichern, sendet die APP das eigentliche Image oder die tatsächlichen Mediendaten, nicht den URI-Verweis.
 
-### <a name="size-limits"></a>Größenbeschränkungen
+### <a name="size-limits"></a>Größen Limits
 
-Als Zeichenfolgen und URIs haben diese Datentypen nicht beschränkt auf ihre Länge auf.
+Als Text Zeichenfolgen und URIs haben diese Datentypen keinen voreingestellten Grenzwert für Ihre Länge.
 
-Die binären Daten, die diese Daten auch Verweistypen können Größe nicht beschränkt. Z. B. ein Bild, die über das kamerasteuerelement, das nun als Bezug genommen wird erfasst **"Appres: / / /..."** können als große und hohe Auflösung sein, wie die Kamera des Geräts in dessen bewältigen kann. Die Auflösung, Framerate und andere Attribute von Mediendateien werden nicht durch den Datentyp beschränkt, aber bestimmte Steuerelemente zum Wiedergeben und Aufzeichnen von Medien möglicherweise ihre eigenen Einschränkungen.
+Die Binärdaten, auf die diese Datentypen verweisen, haben auch keine Voreinstellung für die Größe. Beispielsweise kann ein Bild, das über das Kamera Steuerelement aufgezeichnet wird, das nun als **"appres://..."** bezeichnet wird, so groß und hoch aufgelöst sein, wie es die Kamera des Geräts erreichen kann. Die Auflösung, die Framerate und andere Attribute von Mediendateien sind nicht durch den-Datentyp eingeschränkt, aber bestimmte Steuerelemente für die Wiedergabe und Erfassung von Medien können über eigene Einschränkungen verfügen.
 
-Die Menge an verfügbarem Arbeitsspeicher in der app jedoch unterliegen alle Datengrößen. Browser, die in der Regel auf einem Desktopcomputer ausführen unterstützen mehr als 100 MB Daten. Die Menge des verfügbaren Speichers auf einem Gerät wie einem Smartphone möglicherweise jedoch viel niedriger, in der Regel im Bereich von 30 bis 70 MB. Um zu bestimmen, ob Ihre app innerhalb dieser Grenzwerte ausgeführt wird, testen Sie allgemeine Szenarien auf allen Geräten, die auf denen sie ausgeführt werden soll.
+Allerdings unterliegen alle Datengrößen der Menge an verfügbarem Arbeitsspeicher in der app. Browser, die auf einem Desktop Computer ausgeführt werden, unterstützen in der Regel mehr als 100 Megabyte an Daten. Die Menge des verfügbaren Arbeitsspeichers auf einem Gerät, z. b. ein Telefon, kann jedoch weitaus niedriger sein, in der Regel im Bereich von 30-70 Megabyte. Testen Sie gängige Szenarien auf allen Geräten, auf denen die app ausgeführt werden soll, um zu bestimmen, ob Ihre APP innerhalb dieser Grenzwerte ausgeführt wird.
 
-Als bewährte Methode enthalten Sie Daten im Arbeitsspeicher nur so lange nach Bedarf. Hochladen von Bildern in einer Datenbank schnell wie möglich; Laden Sie Bilder, nur, wenn die app Benutzer sie anfordert.
+Es wird empfohlen, Daten im Arbeitsspeicher nur so lange wie nötig aufzunehmen. Hochladen von Bildern in eine Datenbank, sobald Sie dies möglich sind. Laden Sie Images nur herunter, wenn Sie vom Benutzer der APP angefordert werden.
 
-## <a name="number-and-currency"></a>Zahl und Währung
+## <a name="number-and-currency"></a>Anzahl und Währung
 
-**Anzahl** und **Währung** -Datentypen verwenden die [IEEE 754-Gleitkommazahl mit doppelter Genauigkeit mit der Norm](https://en.wikipedia.org/wiki/IEEE_754). Dieser Standard bietet einen sehr großen Bereich von Zahlen, in dem Sie arbeiten, von –1.79769 x 10<sup>308</sup> 1.79769 x 10<sup>308</sup>. Der kleinste Wert, der dargestellt werden kann, ist 5 x 10<sup>–324</sup>.
+Die Datentypen " **Number** " und " **Currency** " verwenden den [IEEE 754-Gleit Komma Wert mit doppelter Genauigkeit](https://en.wikipedia.org/wiki/IEEE_754). Dieser Standard bietet einen sehr großen Bereich von Zahlen, der von – 1,79769 x 10<sup>308</sup> bis 1,79769 x 10<sup>308</sup>verwendet werden kann. Der kleinste Wert, der dargestellt werden kann, ist 5 x 10<sup>– 324</sup>.
 
-Canvas-apps können nicht genau darstellen ganze Zahlen (oder ganze Zahlen) zwischen –9,007,199,254,740,991 (– (2<sup>53</sup> – 1)) und 9,007,199,254,740,991 (2<sup>53</sup> – 1) (inklusiv) enthalten. Dieser Bereich ist größer als die 32-Bit-(oder 4-Byte-) ein Integer-Datentypen, die Datenbanken häufig verwenden. Allerdings können nicht Canvas-apps auf 64-Bit-(oder 8-Byte) ein Integer-Datentypen darstellen. Sie möchten die Zahl in einem Textfeld speichern oder verwenden eine berechnete Spalte, um eine Kopie der Zahl in einem Textfeld zu erstellen, damit er in zugeordnet ist eine **Text** -Datentyp in der Canvas-app. Auf diese Weise können Sie halten, anzuzeigen, und geben Sie diese Werte als auch verglichen, um zu ermitteln, ob sie gleich sind; Sie allerdings können keine numerische Berechnungen werden in dieser Form ausführen.
+Canvas-Apps können ganze Zahlen (oder ganze Zahlen) genau zwischen – 9.007.199.254.740.991 (– (2<sup>53</sup> – 1)) und 9.007.199.254.740.991 (2<sup>53</sup> – 1), einschließlich, darstellen. Dieser Bereich ist größer als 32 die ganzzahligen Datentypen (oder 4 Byte), die von Datenbanken häufig verwendet werden. Canvas-Apps können jedoch keine ganzzahligen Datentypen mit einer Größe von 64 Bit (oder 8 Byte) darstellen. Möglicherweise möchten Sie die Zahl in einem Textfeld speichern oder eine berechnete Spalte verwenden, um eine Kopie der Zahl in einem Textfeld zu erstellen, damit Sie in der Canvas-APP einem **Text** Datentyp zugeordnet wird. Auf diese Weise können Sie diese Werte halten, anzeigen und eingeben sowie vergleichen, um zu bestimmen, ob Sie gleich sind. in diesem Formular können Sie jedoch keine numerischen Berechnungen ausführen.
 
-Gleitkommaarithmetik sind Näherungswerte. damit unerwartete Ergebnisse mit der viele dokumentierten Beispiele manchmal zuweisen können. Sie erwarten wahrscheinlich die Formel **55 / 100 * 100** genau 55 zurückgegeben und **(55 / 100 * 100): 55** genau 0 (null) zurückgegeben. Die zweite Formel dagegen die 7.1054 x 10<sup>– 15</sup>, dies ist sehr klein, aber nicht gleich NULL ist. Diesen kleinen Unterschied nicht normalerweise dazu führen, dass ein Problem, und die app wird es sofort, wenn das Ergebnis angezeigt. Jedoch können geringfügige Unterschiede, die Verbundauthentifizierung in nachfolgenden Berechnungen und angezeigt werden, um die falsche Antwort zu geben.
+Gleit Komma Arithmetik ist ungefähre Werte, daher kann es manchmal zu unerwarteten Ergebnissen mit vielen dokumentierten Beispielen führen. Sie erwarten möglicherweise, dass die Formel **55/100 * 100** genau 55 und **(55/100 * 100)-55** zurückgibt, um genau 0 (null) zurückzugeben. Die zweite Formel gibt jedoch 7,1054 x 10<sup>– 15</sup>zurück, die sehr klein, aber nicht 0 (null) ist. Dieser kleine Unterschied verursacht in der Regel kein Problem, und die APP rundet Sie auf, wenn das Ergebnis angezeigt wird. Kleine Unterschiede können jedoch in nachfolgenden Berechnungen zusammengesetzt werden und scheinen die falsche Antwort zu erhalten.
 
-Datenbanksysteme häufig Währungen gespeichert und Berechnungen mithilfe von decimal Mathematik, die einen kleineren Bereich jedoch mehr Kontrolle über die Genauigkeit bietet. In der Standardeinstellung canvas-apps-Zuordnung Währungen in Gleitkommazahlen-Punktwerte; aus diesem Grund kann das Ergebnis von Berechnungen unterscheiden, die in einem systemeigenen decimal-Datentyp durchgeführt werden. Wenn diese Art von Diskrepanzen Probleme verursachen, sollten Sie für die Arbeit mit diesen Werten als **Text**genau, wie Sie mit großen ganzen Zahlen, die weiter oben in diesem Abschnitt beschrieben.
+Datenbanksysteme speichern häufig Währungen und führen Berechnungen mithilfe der Dezimalzahl aus, die einen kleineren Bereich bietet, aber eine bessere Kontrolle über die Genauigkeit bietet. Standardmäßig ordnen Canvas-apps Währungen in und aus Gleit Komma Werten zu. Daher kann sich das Ergebnis von Berechnungen unterscheiden, die in einem nativen Decimal-Datentyp durchgeführt werden. Wenn diese Art von Abweichung Probleme verursacht, können Sie mit diesen Werten als **Text**arbeiten, so wie Sie es auch mit großen Ganzzahlen tun können, die weiter oben in diesem Abschnitt beschrieben wurden.
 
-## <a name="date-time-and-datetime"></a>Date, Time und DateTime
+## <a name="date-time-and-datetime"></a>Datum, Uhrzeit und DateTime
 
 ### <a name="time-zones"></a>Zeitzonen
 
-Datum/Uhrzeit-Werte fallen in den folgenden Kategorien:
+Datums-/Uhrzeitwerte fallen in die folgenden Kategorien:
 
-- **Benutzer lokale**: Diese Werte werden gespeichert, [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), aber die Zeitzone des Benutzers, der die app wirkt sich auf die app diese Werte veranschaulicht, wie und wie diese von der app-Benutzer angibt. Beispielsweise wird angezeigt, der gleiche Zeitpunkt anders zu einem Benutzer in Kanada als mit einem Benutzer in Japan.
-- **Unabhängig von Zeitzone**: Die app zeigt die Werte die gleiche Weise aus, und der app-Benutzer gibt sie die gleiche Weise, unabhängig von Zeitzone. Der gleiche Zeitpunkt wird die gleiche Weise zu einem Benutzer in Kanada angezeigt, wie mit einem Benutzer in Japan. App-Autoren, die ihre apps zur Ausführung in verschiedenen Zeitzonen erwarten, dass keine verwenden diese Werte auf, weil sie insgesamt einfacher sind.
+- **Lokaler Benutzer**: Diese Werte werden in [UTC (koordinierte Weltzeit)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)gespeichert, aber die Zeitzone der App-Benutzer wirkt sich darauf aus, wie diese Werte von der App angezeigt werden und wie der App-Benutzer Sie angibt. Ein Beispiel: der gleiche Zeitpunkt wird für einen Benutzer in Kanada anders als für einen Benutzer in Japan angezeigt.
+- **Zeit Zonen unabhängig**: Diese Werte werden von der APP auf dieselbe Weise angezeigt, und der App-Benutzer gibt Sie unabhängig von der Zeitzone auf dieselbe Weise an. Der gleiche Zeitpunkt wird für einen Benutzer in Kanada genauso wie für einen Benutzer in Japan angezeigt. App-Autoren, die nicht erwarten, dass Ihre apps in anderen Zeitzonen ausgeführt werden, verwenden diese Werte, da Sie einfacher sind.
 
-Diese Tabelle zeigt einige Beispiele:
+Diese Tabelle enthält einige Beispiele:
 
-| Datum/Uhrzeit-Typ | In der Datenbank gespeicherten Wert | Wert angezeigt, und 7 Stunden westlicher Richtung gemessen wird UTC eingegeben | Wert angezeigt, und 4 Stunden östlich UTC eingegeben |
+| Datums-/Uhrzeittyp | In der Datenbank gespeicherter Wert | Angezeigter Wert und 7 Stunden, Westen von UTC | Angezeigter Wert und 4 Stunden Ost UTC |
 |--------------------------|------------------------------|------------------------------|
-| **Lokaler Benutzer** | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Samstag,&nbsp;möglicherweise&nbsp;18,&nbsp;2019<br>21:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>8:00 UHR |
-| **Unabhängig von Zeitzone** | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | 
+| **Lokaler Benutzer** | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR | Samstag,&nbsp;18&nbsp;. Mai&nbsp;, 2019<br>9:00 UHR | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>8:00 UHR |
+| **Zeit Zonen unabhängig** | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR | 
 
-Für **Benutzer lokale** Datumsangaben und Uhrzeiten, Canvas-apps die Zeitzone des Browsers oder des Geräts verwenden, sondern modellgesteuerte apps des Benutzers festlegen in Common Data Service. Diese Einstellungen in der Regel übereinstimmen, aber die Ergebnisse variieren, wenn diese Einstellungen unterschiedlich sein.
+Für **lokale** Datums-/Uhrzeitangaben von Benutzern verwenden Canvas-Apps die Zeitzone des Browsers oder Geräts, aber Modell gesteuerte Apps verwenden die Einstellung des Benutzers in Common Data Service. Diese Einstellungen entsprechen in der Regel, aber die Ergebnisse unterscheiden sich, wenn sich diese Einstellungen unterscheiden
 
-### <a name="numeric-equivalents"></a>Numerischen Entsprechungen
+Verwenden Sie die Funktionen " [**DateAdd**](function-dateadd-datediff.md) " und " [**TimeZoneInformation**](function-dateadd-datediff.md) ", um die lokale Zeit in UTC und wieder zurück zu konvertieren.  Weitere Informationen zu diesen Funktionen finden Sie in den Beispielen am Ende der Dokumentation.
 
-Canvas-apps enthalten, und berechnen Sie alle Datum/Uhrzeit-Werte, gibt an, ob **Benutzer lokale** oder **unabhängig von Zeitzone** in UTC angegeben. Die app übersetzt, die Werte entsprechend der Zeitzone der app-Benutzer, wenn sie angezeigt, und bei der Angabe durch den app-Benutzer.
+### <a name="numeric-equivalents"></a>Numerische Entsprechungen
 
-Wenn eine Canvas-app liest eine **unabhängig von Zeitzone** Wert aus einer Datenquelle oder Schreibvorgänge, die solche Werte mit einer Datenquelle, die app automatisch angepasst den Wert wird, der für die Zeitzone des Benutzers von der app zu kompensieren. Die app wird den Wert als UTC-Wert, und alle anderen Datum/Uhrzeit-Werte in der app konsistent behandelt. Aufgrund dieser Kompensierung der ursprünglichen **unabhängig von Zeitzone** Wert angezeigt wird, wenn die app den UTC-Wert für die Zeitzone des Benutzers, der die app passt.
+Canvas-apps behalten und berechnen alle Datums-/Uhrzeitwerte, unabhängig davon, ob **Benutzer lokal** oder Zeitzone in UTC **unabhängig** sind. Die APP übersetzt die Werte auf der Grundlage der Zeitzone des App-Benutzers, wenn diese angezeigt werden und der App-Benutzer Sie angibt.
 
-Sie können dieses Verhalten besser verfolgen, mit der [ **Wert** ](function-value.md) Funktion Zugriff auf den zugrunde liegenden numerischen Wert für Datum/Uhrzeit-Wert. Diese Funktion gibt den Datum/Uhrzeit-Wert als die Anzahl der Millisekunden seit dem 1. Januar 1970 00:00:00.000 UTC.
+Wenn eine Canvas-APP einen **Zeit Zonen unabhängigen** Wert aus einer Datenquelle liest oder einen solchen Wert in eine Datenquelle schreibt, passt die APP den Wert automatisch an, um die Zeitzone des Benutzers der APP auszugleichen. Die APP behandelt den Wert dann als UTC-Wert, der mit allen anderen Datums-/Uhrzeitwerten in der APP konsistent ist. Aufgrund dieser Kompensierung wird der ursprüngliche **Zeit Zonen unabhängige** Wert angezeigt, wenn die APP den UTC-Wert für die Zeitzone der App-Benutzer anpasst.
 
-Da alle Datums-/Uhrzeitwert in UTC, zu der Formel gespeichert wird **Wert (Datum (1970, 1, 1))** NULL in den meisten Teilen der Welt nicht zurückgegeben werden, da die **Datum** Funktion gibt ein Datum in UTC zurück. Beispielsweise würde die Formel zurück 28,800,000 in einer anderen Zeitzone, die Offsets von UTC von acht Stunden. Diese Zahl gibt die Anzahl der Millisekunden in acht Stunden.
+Sie können dieses Verhalten genauer beobachten, indem Sie die [**value**](function-value.md) -Funktion verwenden, um auf den zugrunde liegenden numerischen Wert für einen Datums-/Uhrzeitwert zuzugreifen. Diese Funktion gibt den Datums-/Uhrzeitwert als die Anzahl der Millisekunden seit dem 1. Januar 1970 00:00:00.000 UTC zurück.
 
-Zurück zu unserem Beispiel von oben:
+Da jeder Datums-/Uhrzeitwert in UTC gespeichert wird, gibt der Formel **Wert (Date (1970, 1, 1))** in den meisten Teilen der Welt keine NULL zurück, da die **Date** -Funktion ein Datum in UTC zurückgibt. Beispielsweise würde die Formel 28,8 Millionen in einer Zeitzone zurückgeben, die von UTC um acht Stunden abweicht. Diese Zahl gibt die Anzahl der Millisekunden in 8 Stunden wieder.
 
-| Datum/Uhrzeit-Typ | In der Datenbank gespeicherten Wert | Wert angezeigt, und 7 Stunden westlicher Richtung gemessen wird UTC eingegeben | **Wert** -Funktion zurückgegeben wird |
+Zurückkehren zum obigen Beispiel:
+
+| Datums-/Uhrzeittyp | In der Datenbank gespeicherter Wert | Angezeigter Wert und 7 Stunden, Westen von UTC | Rückgabe **Wert** Funktion |
 |--------------------------|------------------------------|------------------------------|
-| **Lokaler Benutzer** | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Samstag,&nbsp;möglicherweise&nbsp;18,&nbsp;2019<br>21:00 UHR | 1,558,238,400,000<br> (Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR UTC) |
-| **Unabhängig von Zeitzone** | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR | Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>4:00 UHR |1,558,263,600,000<br> (Sonntag,&nbsp;möglicherweise&nbsp;19&nbsp;2019<br>11:00 UHR UTC) |
+| **Lokaler Benutzer** | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR | Samstag,&nbsp;18&nbsp;. Mai&nbsp;, 2019<br>9:00 UHR | 1\.558.238.400.000<br> (Sonntag,&nbsp;19&nbsp;. Mai&nbsp;2019<br>4:00 UHR UTC) |
+| **Zeit Zonen unabhängig** | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR | Sonntag,&nbsp;19&nbsp;.Mai2019&nbsp;<br>4:00 UHR |1\.558.263.600.000<br> (Sonntag,&nbsp;19&nbsp;. Mai&nbsp;2019<br>11:00 UHR UTC) |
 
-### <a name="converting-unix-times"></a>Konvertieren von Uhrzeiten von Unix
+### <a name="converting-unix-times"></a>Wechseln von UNIX-Zeiten
 
-UNIX-Zeiten geben die Anzahl der Sekunden seit dem 1. Januar 1970 um 00:00:00 UTC. Da das Canvas-apps Millisekunden statt Sekunden verwenden möchten, können Sie zwischen den beiden durch Multiplikation oder Division durch 1000 konvertieren.
+UNIX-Zeiten entsprechen der Anzahl der Sekunden seit dem 1. Januar 1970 00:00:00 UTC. Da Canvas-apps Millisekunden anstelle von Sekunden verwenden, können Sie zwischen den beiden konvertieren, indem Sie die Multiplikation oder Division durch 1.000 durchführen.
 
-Unix-Zeit zeigt z. B. 9. September 2001, 01:46:40 UTC, als 1.000.000.000. Zum Anzeigen, die Datum/Uhrzeit-Wert in einer Canvas-app, Multiplizieren Sie diese Zahl mit 1000 in Millisekunden zu konvertieren und dann verwenden, in einem [ **Text** ](function-text.md) Funktion. Die Formel **Text (1000000000 * 1000, DateTimeFormat.UTC)** gibt die Zeichenfolge **2001-09-09T01:46:40.000Z**.
+Die UNIX-Zeit zeigt z. b. den 9. September 2001 und 01:46:40 UTC als 1 Milliarde an. Um den Datums-/Uhrzeitwert in einer Canvas-App anzuzeigen, Multiplizieren Sie diese Zahl mit 1.000, um Sie in Millisekunden zu konvertieren, und verwenden Sie Sie dann in einer [**Text**](function-text.md) Funktion. Der Formel **Text (1 Milliarde * 1000, DateTimeFormat. UTC)** gibt die Zeichenfolge **2001-09-09t01:46:40.000 z**zurück.
 
-Diese Funktion jedoch zurückgibt **Samstag, 8. September 2001 18:46:40** bei Verwendung der **DateTimeFormat.LongDateTime24** Format in einer anderen Zeitzone, der-7 Stunden von der koordinierten Weltzeit (7 Stunden westlicher Richtung gemessen wird UTC) versetzt ist. Dieses Ergebnis zeigt die **"DateTime"** Wert anhand der lokalen Zeitzone richtig.
+Diese Funktion gibt jedoch **Samstag, dem 8. September, 2001 18:46:40** zurück, wenn Sie das Format **DateTimeFormat. LongDateTime24** in einer Zeitzone verwenden, die-7 Stunden von UTC abweicht (7 Stunden West UTC). Das Ergebnis zeigt den **DateTime** -Wert ordnungsgemäß basierend auf der lokalen Zeitzone.
 
-Um eine Unix-Zeit zu konvertieren, unterteilen Sie das Ergebnis von **Wert** mit 1000:
-<br>**"RoundDown" (Wert ("unixtime") / 1000, 0)**
+Um in eine Unix-Zeit zu konvertieren, teilen Sie das Ergebnis von **Wert** durch 1.000:
+<br>**ROUNDDOWN (Wert (Unixtime)/1000, 0)**
 
-Bei Bedarf die Unix-Zeit in einer **Datum** Wert für weitere Berechnungen oder in PowerApps anzuzeigen, verwenden Sie diese Formel:
-<br>**DateAdd( Date( 1970;1;1 ); UnixTime; Seconds )**
+Wenn Sie die UNIX-Zeit in einem **Datums** Wert zur weiteren Berechnung oder Anzeige innerhalb von powerapps benötigen, verwenden Sie die folgende Formel:
+<br>**DateAdd (Datum (1970, 1, 1), Unixtime, Sekunden)**
 
 ### <a name="sql-server"></a>SQL Server
 
-SQL Server verfügt über [ **"DateTime"** , **Datetime2**, und andere Datum/Uhrzeit-Datentypen](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) , die nicht mit einen Zeitzonenoffset einschließen und nicht der Zeitzone angeben wie. Canvas-apps wird vorausgesetzt, diese Werte werden in UTC gespeichert und behandelt sie als **Benutzer lokale**. Wenn die Werte Zeitzone unabhängig sein sollen, für die UTC-Übersetzungen korrigieren, mithilfe der [ **"timeZoneOffset"** ](function-dateadd-datediff.md#converting-to-utc) Funktion.
+SQL Server verfügt über [ **DateTime**-, **datetime2**-und andere Datums-/Uhrzeit-Datentypen](https://docs.microsoft.com/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-2017) , die keinen Zeit Zonen Offset enthalten und nicht angeben, in welcher Zeitzone Sie sich befinden. Canvas-apps gehen davon aus, dass diese Werte in UTC gespeichert und als **Benutzer lokal**behandelt werden. Wenn die Werte Zeit Zonen unabhängig sein sollen, korrigieren Sie die UTC-Übersetzungen mithilfe der [**TimezoneOffset**](function-dateadd-datediff.md#converting-to-utc) -Funktion.
 
-Canvas-apps verwenden Sie die enthaltene Zeitzonen-Informationen in **Datetimeoffset** Felder beim Konvertieren eines Werts mit Ihrer Darstellung in der app interne UTC. Verwenden Sie die apps immer UTC Zeitzone (null Offset der Zeitzone) Wenn sie Daten schreiben.
+Canvas-Apps verwenden die enthaltenen Zeitzoneninformationen in **DateTimeOffset** -Feldern, wenn ein Wert in die interne UTC-Darstellung der APP umgerechnet wird. Die apps verwenden immer UTC als Zeitzone (null Zeit Zonen Offset), wenn Sie Daten schreiben.
 
-Canvas-apps lesen und Schreiben von Werten der der [ **Zeit** ](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) -Datentyp in der SQL Server als Textzeichenfolgen in die [Zeitformat ISO 8601](https://en.wikipedia.org/wiki/ISO_8601#Durations). Beispielsweise müssen Sie dieses Zeichenfolgenformat zu analysieren und verwenden Sie die [ **Zeit** ](function-date-time.md) Funktion, die Textzeichenfolge zu konvertieren **"PT2H1M39S"** auf eine **Zeit** Wert:
+Canvas-apps lesen und schreiben Werte des [**time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) -Datentyps in SQL Server als Text Zeichenfolgen im [ISO 8601-Duration-Format](https://en.wikipedia.org/wiki/ISO_8601#Durations). Beispielsweise müssen Sie dieses Zeichen folgen Format analysieren und die [**time**](function-date-time.md) -Funktion verwenden, um die Text Zeichenfolge **"PT2H1M39S"** **in einen Uhrzeitwert** zu konvertieren:
 
-```powerapps-comma
+```powerapps-dot
 First(
     ForAll(
-        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-        Time( Value( hours ); Value( minutes ); Value( seconds ) )
+        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+        Time( Value( hours ), Value( minutes ), Value( seconds ) )
     )
 ).Value
 ```
 
-### <a name="mixing-date-and-time-information"></a>Das Kombinieren von Datums-und Uhrzeitinformationen
+### <a name="mixing-date-and-time-information"></a>Kombinieren von Datums-und Uhrzeit Informationen
 
-**Datum**, **Zeit**, und **"DateTime"** unterschiedliche Namen besitzen, aber sie enthalten die gleiche Informationen zu Datums- und Uhrzeitangaben. 
+**Date**, **time**und **DateTime** haben unterschiedliche Namen, aber alle enthalten dieselben Informationen zu Datums-und Uhrzeitangaben. 
 
-Ein **Datum** Wert kann enthalten Informationen, die in der Regel ist Mitternacht. Ein **Zeit** Wert kann Datumsinformationen, in der Regel ausführen am 1. Januar 1970. Common Data Service speichert auch Informationen mit einer **nur Date** Feld wird jedoch nur die Datumsinformationen in der Standardeinstellung. Auf ähnliche Weise zu Canvas-apps manchmal zwischen dieser Datentypen, die Standardformate zu ermitteln und Steuerelementen unterscheiden.
+Ein **Datums** Wert kann Zeit Informationen enthalten, d. h. in der Regel Mitternacht. Ein **Uhrzeitwert** kann Datumsinformationen enthalten, die in der Regel am 1. Januar 1970 liegen. Common Data Service speichert auch Zeit Informationen mit einem reinen **Datums** Feld, zeigt jedoch standardmäßig nur die Datumsinformationen an. Ebenso unterscheiden Canvas-apps manchmal zwischen diesen Datentypen, um Standardformate und-Steuerelemente zu bestimmen.
 
-Addieren und Subtrahieren von Datums-und Uhrzeitwerte direkt wird nicht empfohlen, da die Zeitzone und andere Konvertierungen verwirrende Ergebnissen führen können. Verwenden Sie entweder die **Wert** -Funktion zum Konvertieren von Datums-/Uhrzeitwerten in Millisekunden zuerst und der app-Benutzer-Zeitzone berücksichtigt, oder Verwenden der [ **DateAdd** ](function-dateadd-datediff.md) und [ **DateDiff** ](function-dateadd-datediff.md) Funktionen hinzufügen oder Entfernen von einem der folgenden Werte.
+Die direkte Addition und Subtraktion von Datums-und Uhrzeitwerten ist nicht empfehlenswert, da Zeit Zonen und andere Konvertierungen zu verwirrenden Ergebnissen führen können. Verwenden Sie die **value** -Funktion, um Datums-/Uhrzeitwerte zuerst in Millisekunden zu konvertieren und die Zeitzone des App-Benutzers zu berücksichtigen, oder verwenden Sie die Funktionen [**DateAdd**](function-dateadd-datediff.md) und [**DateDiff**](function-dateadd-datediff.md) , um einen dieser Werte hinzuzufügen oder zu subtrahieren.
 
 ## <a name="option-sets-and-two-options"></a>Optionssätze und zwei Optionen
 
-Optionssätze und Datentypen der beiden-Option stellen eine zwei oder mehr Optionen für app-Benutzer auswählen. Z. B. eine **Bestellstatus** Optionssatz kann die Auswahlmöglichkeiten **neu**, **Shipped**, **fakturiert**, und **geschlossen** . Der Datentyp der beiden-Option bietet nur zwei Auswahlmöglichkeiten gibt.
+Optionssätze und Datentypen mit zwei Optionen bieten eine Auswahl von zwei oder mehr Optionen für einen App-Benutzer. Beispielsweise kann ein Options Satz für den **Bestell Status** die Optionen " **neu**", " **ausgeliefert**", " **abgerechnet**" und " **geschlossen**" enthalten. Der Datentyp Two-Option bietet nur zwei Optionen.
 
-Beide dieser Datentypen zeigen ihre Bezeichnungen in einer Text-Zeichenfolge. "Zeigt", wenn Sie ein Label-Steuerelement eine der Bestellstatus Optionen, z. B. wenn des Steuerelements **Text** -Eigenschaftensatz auf eine Formel, die auf diese Option festgelegt. Option Bezeichnungen können für app-Benutzer an verschiedenen Speicherorten lokalisiert werden.
+Beide Datentypen zeigen ihre Bezeichnungen in einem Text Zeichenfolgen-Kontext an. Beispielsweise wird in einem Label-Steuerelement eine der Order-Status-Optionen angezeigt, wenn die **Text** -Eigenschaft des Steuer Elements auf eine Formel festgelegt ist, die auf diesen Options Satz verweist. Options Bezeichnungen können für App-Benutzer an unterschiedlichen Standorten lokalisiert werden.
 
-Wenn app-Benutzer eine Option auswählt, und die Änderung speichert, überträgt die app die Daten in der Datenbank, die diese Daten in einer Darstellung, die unabhängig von Sprache ist, speichert. Eine Option in einen Optionssatz übertragen und als Zahl gespeichert, und eine Option in einem zwei-Option Datentyp übertragen und gespeichert, die als boolescher Wert.
+Wenn ein App-Benutzer eine Option auswählt und diese Änderung speichert, überträgt die APP die Daten an die Datenbank, in der die Daten in einer von der Sprache unabhängigen Darstellung gespeichert werden. Eine Option in einem Options Satz wird als Zahl übertragen und gespeichert, und eine Option in einem Datentyp mit zwei Optionen wird als boolescher Wert übertragen und gespeichert.
 
-Die Bezeichnungen werden nur zu Anzeigezwecken. Direkte Vergleiche mit den Bezeichnungen können nicht ausgeführt werden, da sie für eine Sprache spezifisch sind. Stattdessen enthält jede Optionssatz eine Enumeration, die mit der zugrunde liegende Anzahl oder ein boolescher Wert. Beispielsweise können Sie keine diese Formel:
+Die Bezeichnungen dienen nur zu Anzeige Zwecken. Sie können keine direkten Vergleiche mit den Bezeichnungen durchführen, da Sie für eine Sprache spezifisch sind. Stattdessen hat jeder Options Satz eine Enumeration, die mit der zugrunde liegenden Zahl oder dem booleschen Wert arbeitet. Beispielsweise können Sie diese Formel nicht verwenden:
 
-`If( ThisItem.OrderStatus = "Active"; ...`
+`If( ThisItem.OrderStatus = "Active", ...`
 
-Sie können jedoch diese Formel:
+Aber Sie können diese Formel verwenden:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
-Für globale Optionssätze (freigeben, welche Entitäten), den Namen der Optionssatz Enumeration entspricht der Name des Satzes globale Option. Für lokale Optionssätze (die eine Entität zugeordnet sind), der Name kann den Namen der Entität enthalten. Dadurch werden Konflikte vermieden, wenn mehrere Entitäten Optionssätze verfügen, die den gleichen Namen haben. Z. B. die **Konten** Entität eine **"orderstatus"** -Option festgelegt werden soll, und der Name möglicherweise **"orderstatus" (Konten)** . Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, damit Sie ihn in einfache Anführungszeichen umgeben müssen, wenn Sie in einer Formel darauf verweisen.
+Bei globalen Options Sätzen (bei denen die Entitäten gemeinsam genutzt werden) entspricht der Name der Options Satz-Enumeration dem Namen der globalen Options Menge. Für lokale Optionssätze (die auf eine Entität bezogen sind) kann der Name den Namen der Entität enthalten. Dieses Verhalten vermeidet Konflikte, wenn mehrere Entitäten über Optionssätze verfügen, die denselben Namen aufweisen. Beispielsweise kann für die Entität " **Accounts** " eine Option " **OrderStatus** " festgelegt werden, und der Name kann " **OrderStatus (Accounts)** " lauten. Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, sodass Sie ihn in einfache Anführungszeichen einschließen müssen, wenn Sie ihn in einer Formel referenzieren.
 
-Darüber hinaus können Werte von zwei-Option auch als boolesche Werte sich Verhalten. Z. B. einen zwei-Option-Wert, der mit dem Namen **TaxStatus** möglicherweise die Bezeichnungen **steuerbaren** und **Non-steuerbare**, entsprechen die *"true"* und *"false"* bzw. Um zu veranschaulichen, können Sie diese Formel:
+Außerdem können sich zwei Optionswerte auch als boolesche Werte Verhalten. Beispielsweise kann für einen zwei-Options-Wert mit dem Namen " **taxstatus** " die Bezeichnung "Tax **" und "** **Non-** Tax" lauten, die " *true* " bzw. " *false* " Um dies zu veranschaulichen, können Sie die folgende Formel verwenden:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
 
-Sie können auch die folgenden gleichwertigen Formel verwenden:
+Sie können auch diese äquivalente Formel verwenden:
 
-`If( ThisItem.Taxable; ...`
+`If( ThisItem.Taxable, ...`

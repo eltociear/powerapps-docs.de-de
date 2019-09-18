@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta anneta
-ms.date: 08/28/2017
+ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b8f8dc0d354dd17fedd16524fed0f358b70839d4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: fd331d5dd8503b072785573dc9400b8e2b581cb3
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519316"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038220"
 ---
 # <a name="split-function-in-powerapps"></a>Split-Funktion in PowerApps
 Teilt eine Textzeichenfolge in eine Tabelle von Teilzeichenfolgen auf.
@@ -29,25 +28,43 @@ Die **Split**-Funktion teilt eine Textzeichenfolge in eine Tabelle von Teilzeich
 
 Zum Aufteilen der Textzeichenfolge wird ein Trennzeichen verwendet.  Bei dem Trennzeichen kann es sich um 0 (null), ein oder mehr Zeichen handeln, die als Ganzes in der Textzeichenfolge verglichen werden.  Bei Verwendung einer Zeichenfolge der Länge 0 (null) bzw. einer *leeren* Zeichenfolge wird jedes Zeichen einzeln herausgetrennt.  Die verglichenen Trennzeichen werden nicht im Ergebnis zurückgegeben.  Wenn kein übereinstimmendes Trennzeichen gefunden wird, wird die gesamte Textzeichenfolge als einzelnes Ergebnis zurückgegeben.
 
-Mit der **[Concat](function-concatenate.md)**-Funktion können Sie die Zeichenfolgen wieder zusammenfügen (ohne die Trennzeichen). Verwenden Sie die **[MatchAll](function-ismatch.md)** Funktion zum Extrahieren von Teilen einer Zeichenfolge mithilfe eines regulären Ausdrucks die (in einigen Fällen) Sie, zum Aufteilen einer Zeichenfolge verwenden können. 
+Verwenden Sie die **[Concat](function-concatenate.md)** -Funktion, um die Zeichenfolge ohne Trennzeichen erneut zu kombinieren. 
+ 
+Verwenden Sie die **[MatchAll](function-ismatch.md)** -Funktion, um eine Zeichenfolge mit einem regulären Ausdruck aufzuteilen.
+
+In den Beispielen wird gezeigt, wie **Split** mit den **[ersten](function-first-last.md)** und **[letzten](function-first-last.md)** Funktionen verwendet werden kann, um eine einzelne Zeichenfolge mit Trennzeichen zu extrahieren.  Die **[Match](function-ismatch.md)** -Funktion ist oft eine präzisere und leistungsfähigere Wahl für diejenigen, die mit regulären Ausdrücken vertraut sind.
 
 ## <a name="syntax"></a>Syntax
-**Split**( *Text*; *Trennzeichen* )
+**Split**( *Text*, *Trennzeichen* )
 
 * *Text*: erforderlich.  Der aufzuteilende Text.
 * *Trennzeichen*: erforderlich.  Das beim Aufteilen der Zeichenfolge zu verwendende Trennzeichen.  Dieses kann 0 (null), ein oder mehr Zeichen umfassen.
 
 ## <a name="examples"></a>Beispiele
 
+### <a name="basic-usage"></a>Grundlegende Nutzung
+
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Split( "Apples,&nbsp;Oranges,&nbsp;Bananas"; "," )** |Teilt die unterschiedlichen Früchte anhand des Kommatrennzeichens auf.  Die Aufteilung erfolgt nur auf Grundlage des Kommas ohne Berücksichtigung des Leerzeichens hinter ihm, sodass vor „&nbsp;Orangen“ und „&nbsp;Bananen“ ein Leerzeichen steht. |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
-| **TrimEnds( Split( "Apples,&nbsp;Oranges,&nbsp;Bananas"; "," ) )** |Wie im vorherigen Beispiel, jedoch wird in diesem Fall das Leerzeichen durch die [ **TrimEnds**-Funktion](function-trim.md) entfernt, die auf die durch die **Split**-Funktion erzeugte Tabelle mit einer einzelnen Spalte angewendet wird. Wir hätten auch das Trennzeichen **„,&nbsp;“** verwenden können, in dem das Trennzeichen nach dem Komma enthalten ist. Bei Verwendung dieses Trennzeichens treten jedoch Probleme auf, wenn kein Leerzeichen oder zwei Leerzeichen vorhanden sind. |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
-| **Split( "08/28/17"; "/" )** |Teilt das Datum auf, wobei als Trennzeichen ein Schrägstrich verwendet wird. |<style> img { max-width: none; } </style> ![](media/function-split/date.png) |
-| **Split( "Hello,&nbsp;World"; "," )** |Teilt die Wörter auf, wobei als Trennzeichen ein Komma verwendet wird.  Das zweite Ergebnis beginnt mit einem Leerzeichen, da dies das direkt auf das Komma folgende Zeichen war. |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
-| **Split( "Hello,&nbsp;World"; "o" )** |Teilt die Zeichenfolge auf, wobei als Trennzeichen das Zeichen „o“ verwendet wird. |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
-| **Split( "Hello,&nbsp;World"; "l" )** |Teilt die Zeichenfolge auf, wobei als Trennzeichen das Zeichen „l“ verwendet wird. Da sich zwischen den beiden Buchstaben **l** in **Hello** keine Zeichen befanden, wurde ein *leerer* Wert zurückgegeben. |<style> img { max-width: none; } </style> ![](media/function-split/l.png) |
-| **Split( "Hello,&nbsp;World"; "ll" )** |Teilt die Zeichenfolge auf, wobei als Trennzeichen das doppelte Zeichen „ll“ verwendet wird. |<style> img { max-width: none; } </style> ![](media/function-split/ll.png) |
-| **Split( "Hello,&nbsp;World"; "%" )** |Teilt die Zeichenfolge auf, wobei als Trennzeichen das Prozentzeichen verwendet wird. Da dieses Trennzeichen nicht in der Zeichenfolge enthalten ist, wird die gesamte Zeichenfolge als ein Ergebnis zurückgegeben. |<style> img { max-width: none; } </style> ![](media/function-split/percent.png) |
-| **Split( "Hello,&nbsp;World"; "" )** |Teilt die Zeichenfolge auf, wobei als Trennzeichen eine leere Zeichenfolge (0 Zeichen) verwendet wird. Dadurch wird die Zeichenfolge in jedes einzelne Zeichen aufgeteilt. |<style> img { max-width: none; } </style> ![](media/function-split/none.png) |
+| `Split( "Apples, Oranges, Bananas", "," )` |Teilt die unterschiedlichen Früchte anhand des Kommatrennzeichens auf.  Die Aufteilung erfolgt nur auf Grundlage des Kommas ohne Berücksichtigung des Leerzeichens hinter ihm, sodass vor „&nbsp;Orangen“ und „&nbsp;Bananen“ ein Leerzeichen steht. |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
+| `TrimEnds( Split( "Apples, Oranges, Bananas", "," ) )` |Wie im vorherigen Beispiel, jedoch wird in diesem Fall das Leerzeichen durch die [ **TrimEnds**-Funktion](function-trim.md) entfernt, die auf die durch die **Split**-Funktion erzeugte Tabelle mit einer einzelnen Spalte angewendet wird. Wir hätten auch das Trennzeichen **„,&nbsp;“** verwenden können, in dem das Trennzeichen nach dem Komma enthalten ist. Bei Verwendung dieses Trennzeichens treten jedoch Probleme auf, wenn kein Leerzeichen oder zwei Leerzeichen vorhanden sind. |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
+| `Split( "08/28/17", "/" )` |Teilt das Datum auf, wobei als Trennzeichen ein Schrägstrich verwendet wird. |<style> img { max-width: none; } </style> ![](media/function-split/date.png) |
+
+### <a name="different-delimiters"></a>Unterschiedliche Trennzeichen
+
+| Formel | Beschreibung | Ergebnis |
+| --- | --- | --- |
+| `Split( "Hello, World", "," )` |Teilt die Wörter auf, wobei als Trennzeichen ein Komma verwendet wird.  Das zweite Ergebnis beginnt mit einem Leerzeichen, da dies das direkt auf das Komma folgende Zeichen war. |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
+| `Split( "Hello, World", "o" )` |Teilt die Zeichenfolge auf, wobei als Trennzeichen das Zeichen „o“ verwendet wird. |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
+| `Split( "Hello, World", "l" )` |Teilt die Zeichenfolge auf, wobei als Trennzeichen das Zeichen „l“ verwendet wird. Da sich zwischen den beiden Buchstaben **l** in **Hello** keine Zeichen befanden, wurde ein *leerer* Wert zurückgegeben. |<style> img { max-width: none; } </style> ![](media/function-split/l.png) |
+| `Split( "Hello, World", "ll" )` |Teilt die Zeichenfolge auf, wobei als Trennzeichen das doppelte Zeichen „ll“ verwendet wird. |<style> img { max-width: none; } </style> ![](media/function-split/ll.png) |
+| `Split( "Hello, World", "%" )` |Teilt die Zeichenfolge auf, wobei als Trennzeichen das Prozentzeichen verwendet wird. Da dieses Trennzeichen nicht in der Zeichenfolge enthalten ist, wird die gesamte Zeichenfolge als ein Ergebnis zurückgegeben. |<style> img { max-width: none; } </style> ![](media/function-split/percent.png) |
+| `Split( "Hello, World", "" )` |Teilt die Zeichenfolge auf, wobei als Trennzeichen eine leere Zeichenfolge (0 Zeichen) verwendet wird. Dadurch wird die Zeichenfolge in jedes einzelne Zeichen aufgeteilt. |<style> img { max-width: none; } </style> ![](media/function-split/none.png) |
+
+### <a name="substring-extraction"></a>Substring-Extraktion
+
+| Formel | Beschreibung | Ergebnis |
+| --- | --- | --- |
+| `First( Split( Last( Split( "Bob Jones <bob.jones@contoso.com>", "<" ) ).Result, ">" ) ).Result` | Teilt die Zeichenfolge auf Grundlage eines öffnenden Trenn Zeichens (<) auf und extrahiert die Zeichenfolge rechts vom Trennzeichen mit der **letzten**.  Die Formel teilt dann das Ergebnis basierend auf dem schließenden Trennzeichen (>) und extrahiert die Zeichenfolge auf der linken Seite des Trenn Zeichens mit der **rechten**Seite. | "bob.jones@contoso.com" |
+| `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>.+)>" ).email` | Führt die gleiche Trennzeichen basierte Extraktion wie im letzten Beispiel aus, verwendet jedoch stattdessen die **Match** -Funktion und einen regulären Ausdruck. | "bob.jones@contoso.com" |
 
