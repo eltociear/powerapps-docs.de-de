@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bfe5b35ebfddfe17cbf3898cc6f68f1a91d0b5e0
-ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.openlocfilehash: 4a86f508950ad890ecaa4d3d5678e3e6f6e415dc
+ms.sourcegitcommit: 544af91dd596f2f6b6c4b9e1d08c16f43e2a7711
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530243"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71119022"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
@@ -136,16 +136,18 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
 > Gästen darf nur die **Benutzer** Rolle und nicht die **Mitbesitzer** Rolle für apps zugewiesen werden, die für Sie freigegeben wurden.
 
 ### <a name="prerequisites"></a>Voraussetzungen
-1. Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen finden Sie unter: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen](/azure/active-directory/b2b/delegate-invitations)
+- Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen finden Sie unter: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen](/azure/active-directory/b2b/delegate-invitations)
     - Aktivieren der externen B2B-Zusammenarbeit ist standardmäßig aktiviert. Die Einstellungen können jedoch von einem Mandanten Administrator geändert werden.  Weitere Informationen zu Azure AD B2B finden Sie unter [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
-2. Zugriff auf ein Konto, das Gastbenutzer zu einem Azure AD-Mandanten hinzufügen kann. Administratoren und Benutzer mit der Rolle "Gast einladter" können einem Mandanten Gäste hinzufügen.   
-3. Eine powerapps-Lizenz muss dem Gastbenutzer im Mandanten zugewiesen werden, dem die freigegebene App zugeordnet ist. Obwohl es noch vor der allgemeinen Verfügbarkeit des Gast Zugriffs auf Canvas-apps noch nicht möglich war, muss Gästen mit einer powerapps-Lizenz in Ihrem Privat Mandanten keine Lizenz in dem Mandanten zugewiesen werden, der als Gastbenutzer angemeldet ist.
+- Zugriff auf ein Konto, das Gastbenutzer zu einem Azure AD-Mandanten hinzufügen kann. Administratoren und Benutzer mit der Rolle "Gast einladter" können einem Mandanten Gäste hinzufügen.   
+- Der Gastbenutzer muss über einen der folgenden Mandanten eine powerapps-Lizenz zugewiesen haben:
+    - Der Mandant, der die freigegebene App gehostet.
+    - Der privat Mandant des Gast Benutzers.
 
 ### <a name="steps-to-grant-guest-access"></a>Schritte zum Gewähren des Gast Zugriffs
 1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen finden Sie unter: [Schnellstart: Fügen Sie einen neuen Gastbenutzer in](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)Azure AD hinzu.
     > [!div class="mx-imgBorder"] 
     > ![Gast in Azure AD hinzufügen](media/share-app/guest_access_doc_1.png "Gast in Azure AD hinzufügen")
-2. Weisen Sie dem Gastbenutzer eine Lizenz zu. 
+2. Wenn der Gastbenutzer nicht bereits über eine Lizenz in seinem privat Mandanten verfügt, weisen Sie dem Gastbenutzer eine Lizenz zu.
    - Informationen zum Zuweisen von Gastbenutzern aus admin.Microsoft.com finden Sie unter [Zuweisen von Lizenzen zu einem Benutzer](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
    - Informationen zum Zuweisen von Gastbenutzern aus Portal.Azure.com finden Sie unter [zuweisen oder Entfernen von Lizenzen](/azure/active-directory/fundamentals/license-users-groups).
  
@@ -199,7 +201,6 @@ Wie bei nicht-Gästen müssen auch die zugrunde liegenden Datenquellen, auf die 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>Welche Lizenz muss meinem Gast zugewiesen werden, damit Sie eine APP ausführen können, die für Sie freigegeben ist?
 Die gleiche Lizenz, die für nicht-Gäste zum Ausführen einer APP erforderlich ist. Wenn die APP beispielsweise keine Premium-Verbindungsdienste verwendet, genügt eine powerapps P1-Lizenz, um dem Gast zugewiesen zu werden.  
 
-Vor der allgemeinen Verfügbarkeit des Canvas-App-Gast Zugriffs müssen Gäste mit einer powerapps-Lizenz in Ihrem Privat Mandanten keine Lizenz in dem Mandanten zugewiesen werden, der als Gastbenutzer angemeldet ist.
 
 |                                 | Angepasste SharePoint-Form | Eigenständige Canvas-App mit nicht-Premium-Connectors | Eigenständige Canvas-App mit Premium-Connectors | Modell gestützte App |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
@@ -210,8 +211,6 @@ Vor der allgemeinen Verfügbarkeit des Canvas-App-Gast Zugriffs müssen Gäste m
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Wie wird in powerapps Mobile für einen Gast Apps für seinen Heim Mandanten angezeigt?
 Alle Benutzer, die auf eine Canvas-App auf Ihrem mobilen Gerät zugegriffen haben und die in einem Azure AD Mandanten veröffentlicht werden, der nicht Ihr Privat Mandant ist, müssen sich von powerapps abmelden und sich bei powerapps Mobile wieder anmelden.  
-
-Vor der allgemeinen Verfügbarkeit des Canvas-App-Gast Zugriffs ermöglicht die Auswahl einer Organisation dem Benutzer das Ändern des Azure AD Mandanten, bei dem Sie angemeldet sind, ohne explizit von der App abgemeldet zu werden.  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Muss ein Gast die Azure AD Guest-Einladung annehmen, bevor er eine APP für den Gast freigibt?
 Nein. Wenn ein Gast eine APP startet, die für ihn freigegeben wurde, bevor er eine Gast Einladung annimmt, wird der Gast aufgefordert, die Einladung im Rahmen der Anmelde Erfahrung beim Starten der APP zu akzeptieren.  
@@ -282,7 +281,7 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Inoreader                                         | Nein                                                                     |
 | Intercom                                          | Nein                                                                     |
 | JotForm                                           | Nein                                                                     |
-| kintone                                           | Nein                                                                     |
+| Kintone                                           | Nein                                                                     |
 | Zuzugreifen                                          | Nein                                                                     |
 | Marketing-inhaltshub                             | Nein                                                                     |
 | Mittel                                            | Nein                                                                     |
