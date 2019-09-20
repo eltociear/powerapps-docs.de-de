@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d230d38c8393540bc78fd003ecb167f1f3978b97
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564311"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150236"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Verwalten von Canvas-App-Verbindungen in PowerApps
 Stellen Sie in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) eine Verbindung mit einer oder mehreren Datenquellen her, löschen Sie eine Verbindung, oder aktualisieren Sie ihre Anmeldeinformationen.
@@ -43,9 +43,9 @@ Die meisten Apps in PowerApps nutzen externe Informationen, die als **Datenquell
 
 Der verbreitetste Typ von Datenquelle ist die Tabelle, aus der Informationen abgerufen und in der Informationen gespeichert werden können. Über Verbindungen mit Datenquellen können Sie Daten in Microsoft Excel-Arbeitsmappen, SharePoint-Listen, SQL-Tabellen und vielen anderen Formaten lesen und schreiben; diese können in Clouddiensten wie OneDrive for Business, DropBox, SQL Server usw. gespeichert sein.
 
-Es gibt andere Arten von Datenquellen, die keine Tabellen sind, z.B. E-Mails, Kalender, Twitter und Benachrichtigungen (demnächst verfügbar).
+Es gibt andere Arten von Datenquellen, bei denen es sich nicht um Tabellen handelt, z. b. e-Mail, Kalender, Twitter und Benachrichtigungen.
 
-Mithilfe von **[Katalog](controls/control-gallery.md)**-, **[Formular anzeigen](controls/control-form-detail.md)**- und **[Formular bearbeiten](controls/control-form-detail.md)**-Steuerelementen können Sie auf einfache Weise eine App erstellen, die Daten aus einer Datenquelle liest und schreibt. Lesen Sie für den Einstieg den Artikel [Grundlegendes zu Datenformularen](working-with-forms.md).
+Mithilfe von **[Katalog](controls/control-gallery.md)** -, **[Formular anzeigen](controls/control-form-detail.md)** - und **[Formular bearbeiten](controls/control-form-detail.md)** -Steuerelementen können Sie auf einfache Weise eine App erstellen, die Daten aus einer Datenquelle liest und schreibt. Lesen Sie für den Einstieg den Artikel [Grundlegendes zu Datenformularen](working-with-forms.md).
 
 Zusätzlich zum Erstellen und Verwalten von Verbindungen in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie auch Verbindungen erstellen, wenn Sie die folgenden Aufgaben ausführen:
 
@@ -86,4 +86,5 @@ Suchen Sie in der Liste der Verbindungen nach der zu aktualisierenden oder zu l�
 
 * Klicken oder tippen Sie zum Aktualisieren der Anmeldeinformationen auf das Schlüsselsymbol, und geben Sie dann Anmeldeinformationen für die betreffende Verbindung an.
 * Um die Verbindung zu löschen, klicken oder tippen Sie auf das Papierkorbsymbol.
+* Klicken oder tippen Sie auf das Informationssymbol, um die Verbindungsdetails anzuzeigen.
 
