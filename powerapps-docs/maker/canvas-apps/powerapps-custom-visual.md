@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/30/2019
+ms.date: 09/23/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213921"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256132"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -53,7 +52,7 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI-Bericht und die gestartete Instanz von PowerApps Studio verwenden eine gemeinsame Livedatenverbindung. Während beide Programme geöffnet sind, können Sie filtern oder Daten in Ihrem Bericht ändern. Sie werden dann feststellen, dass die aktualisierten Daten sofort in Ihrer App in PowerApps Studio angezeigt werden.
 
@@ -79,6 +78,7 @@ Die folgenden Einschränkungen gelten für die benutzerdefinierte powerapps-Visu
 - Sie müssen die PowerApps-App getrennt von Ihrem Bericht freigeben. Weitere Informationen dazu finden Sie unter [sharing apps in PowerApps (Freigeben von Apps in PowerApps)](share-app.md).
 - Power BI-Berichtsserver und die Mobile App für Power BI unterstützen die benutzerdefinierte powerapps-Visualisierung nicht.
 - Wenn Sie die powerbiintegration. Refresh ()-Funktion verwenden, müssen Sie eine Quelle verwenden, die [directquery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) unterstützt, und die Datenverbindung muss mithilfe der directquery-Methode erstellt werden.
+- Powerapps in Power BI Desktop stellen Daten für die PowerApps Studio bereit, wenn Sie Apps erstellen, aber nicht während der Bearbeitung. Verwenden Sie Power BI Web, um beim Bearbeiten von apps eine Vorschau der Daten anzuzeigen.
 
 > [!NOTE]
 > Es wird empfohlen, zuerst den Bericht auf dem Power BI-Dienst zu veröffentlichen und dann apps zu erstellen oder zu ändern.
@@ -87,7 +87,7 @@ Die folgenden Einschränkungen gelten für die benutzerdefinierte powerapps-Visu
 
 In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erstellen und Ändern von Aktionen der benutzerdefinierten powerapps-Visualisierung aufgeführt. Unterstützte Browser und Aktionen werden durch ein Häkchen &check; () identifiziert.
 
-|Browser|Ansicht|Stelle|Veränderung
+|Browser|Anschauung|Stelle|Veränderung
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
@@ -95,6 +95,18 @@ In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erste
 |SK|&check;
 |Mozilla Firefox
 |Alle anderen Browser
+
+## <a name="accessibility-support"></a>Barrierefreiheits Unterstützung
+
+Führen Sie die folgenden Schritte aus, um die powerapps-Visualisierung mithilfe der Tastatur zu navigieren:
+
+1. Fokus Auswahl im Power BI Bericht für die gewünschte powerapps-Visualisierung.
+2. Verwenden Sie die **Tab** -Taste auf der Tastatur, bis die Visualisierung hervorgehoben ist.
+3. Verwenden Sie die Tastenkombination **Strg + Rechts** auf der Tastatur, um das visuelle Element einzugeben.
+3. Verwenden Sie die **Tab** -Taste auf der Tastatur, bis die gewünschte Komponente des visuellen Elements ausgewählt ist.
+
+Weitere Informationen finden Sie unter: [Dokumentation zur Power BI-Barrierefreiheit]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

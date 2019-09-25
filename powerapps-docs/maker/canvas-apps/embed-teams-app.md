@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
-ms.sourcegitcommit: 86ed3ad487f31721155758aa9d87134bb10f8437
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70842234"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Einbetten einer powerapps-app in Teams 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ff359b80dd7129ec91f987a367c1635143d8e5e
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213850"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256107"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die apps, die Sie erstellen, sind oftmals besonders nützlich, wenn Sie verfügbar sind, wo die Benutzer ihre Arbeit erledigen. Wenn Sie Canvas-apps in einen iframe einbetten, können Sie diese apps in Websites und andere Dienste integrieren, wie z. b. Power BI oder SharePoint.
@@ -46,7 +46,7 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 >
 > Vorheriges Format:
 > 
-> https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/ AppID
+> HTTPS\://Web.powerapps.com/Webplayer/iframeapp? Source = IFRAME & AppID =/Providers/Microsoft.PowerApps/Apps/[AppID]
 
 Sie brauchen nichts weiter zu tun, als die [AppID] im URI durch die ID Ihrer App zu ersetzen (einschließlich von „[' & ']“). Wir zeigen Ihnen in Kürze, wie Sie an diesen Wert gelangen, aber zunächst folgt hier die Auflistung aller im URI verfügbaren Parameter:
 
