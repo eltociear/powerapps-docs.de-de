@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79b6088a9b75a7ac4b41263a73d8ead58520f4dd
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: ab91653f26bc9ca177cc5841e7dbc158b13d7696
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896159"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705302"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>Wie kann ich Apps finden und ausführen?
 
@@ -31,7 +31,7 @@ Mit [Canvas-Apps](/powerapps/maker/canvas-apps/getting-started) können Sie die 
 
 Da Canvas-Apps im Prinzip alles sein können, gibt es nicht viel Dokumentation, die nach dem Erstellen einer App bei der Benutzung hilft. Wenden Sie sich an Ihren App-Ersteller oder an den PowerApps-Administrator, wenn Sie bei einer Canvas-App Hilfe benötigen.
 
-[Modellgesteuerte Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) verwenden die [Einheitliche Oberfläche](unified-interface.md), die ein reaktionsschnelles und zugängliches Design bietet. Sie können die App in einem Webbrowser oder auf gängigen mobilen Geräten ausführen. Die App enthält mehrere Komponenten wie Dashboards, Formulare, Ansichten, Diagramme und Geschäftsprozesse, die zu einer einfachen Benutzung der App beitragen. Modellgesteuerte Apps werden im Microsoft Dynamics 365 Customer Engagement-Framework erstellt und modelliert. Deshalb ähnelt die Benutzererfahrung der von Dynamics 365 Customer Engagement-[Apps](/dynamics365/customer-engagement/basics/business-apps-dynamics-365).
+[Modellgesteuerte Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) verwenden die [Einheitliche Oberfläche](unified-interface.md), die ein reaktionsschnelles und zugängliches Design bietet. Sie können die App in einem Webbrowser oder auf gängigen mobilen Geräten ausführen. Die App enthält mehrere Komponenten wie Dashboards, Formulare, Ansichten, Diagramme und Geschäftsprozesse, die zu einer einfachen Benutzung der App beitragen.
 
 Dieser Abschnitt enthält Informationen, wie Sie Canvas-Apps und modellgesteuerte Apps von verschiedenen Orten aus suchen und ausführen. Zudem bietet er Informationen zum Navigieren und Arbeiten in einer modellgesteuerten App: [Use model-driven apps (Verwenden modellgesteuerter Apps)](use-model-driven-apps.md).
 
