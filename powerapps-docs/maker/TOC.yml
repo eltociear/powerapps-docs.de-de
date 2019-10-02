@@ -992,6 +992,15 @@
           href: ./model-driven-apps/create-themes-organization-branding.md
         - name: Hinzufügen der Berichterstellung zu Ihrer App
           href: ./model-driven-apps/add-reporting-to-app.md
+          items:
+            - name: Überlegungen zum Bericht
+              href: ./model-driven-apps/reporting-considerations.md
+            - name: RDL-Sandbox
+              href: ./model-driven-apps/rdl-sandboxing.md
+            - name: Verwenden von Power BI
+              href: ./model-driven-apps/use-power-bi.md
+            - name: Anpassen von Power BI-Inhaltspaketen
+              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: Überprüfen und veröffentlichen einer App
       href: ./model-driven-apps/validate-app.md
     - name: Eine App freigeben

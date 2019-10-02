@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
-ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
+ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
+ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313323"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71709223"
 ---
 <div id="main"
    class="v2">
@@ -150,7 +150,7 @@ ms.locfileid: "68313323"
                   </ul>
                </li>
                <li>
-                  <a href="#user"><strong>Ich bin App-Benutzer</strong></a>
+                  <a href="#user"><strong>Informationen für App-Benutzer</strong></a>
                   <ul id="user"
                      class="cardsF">
                      <li>
@@ -210,7 +210,7 @@ ms.locfileid: "68313323"
                   </ul>
                </li>
                <li>
-                  <a href="#maker"><strong>Ich bin App-Ersteller</strong></a>
+                  <a href="#maker"><strong>Informationen für App-Ersteller</strong></a>
                   <ul id="maker"
                      class="cardsF">
                      <li>
@@ -329,7 +329,7 @@ ms.locfileid: "68313323"
                   </ul>
                </li>
                <li>
-                  <a href="#admin"><strong>Ich bin Administrator</strong></a>
+                  <a href="#admin"><strong>Informationen für Administratoren</strong></a>
                   <ul id="admin"
                      class="cardsF">
                      <li>
@@ -353,7 +353,7 @@ ms.locfileid: "68313323"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">Verwalten der Power-Plattform</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Hilfe und Support</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Abonnieren von Updates für April 2019</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Abonnieren der Freigabewelle 2 für 2019</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Einstellungen verwalten</a></p>
                                  </div>
                               </div>
@@ -422,7 +422,7 @@ ms.locfileid: "68313323"
                   </ul>
                </li>
                <li>
-                  <a href="#developer"><strong>Ich bin Entwickler</strong></a>
+                  <a href="#developer"><strong>Informationen für Entwickler</strong></a>
                   <ul id="developer"
                      class="cardsF">
                      <li>
