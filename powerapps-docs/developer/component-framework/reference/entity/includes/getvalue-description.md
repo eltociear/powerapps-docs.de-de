@@ -1,1 +1,0 @@
-Ruft den Wert des angegebenen Spaltennamens ab.
