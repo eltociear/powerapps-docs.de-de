@@ -1,7 +1,7 @@
 ---
 title: Testen Ihrer Canvas-App durch Kunden auf AppSource | Microsoft-Dokumentation
 description: Verwenden Sie AppSource, um eine Canvas-App mit Kunden zu teilen und Leads für Ihr Unternehmen zu generieren.
-author: linhtranms
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1e9ac3428a9621da360fd1cc5f1c376d52352d1b
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550442"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705333"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Testen Ihrer Canvas-App durch Kunden auf AppSource
 
@@ -42,8 +41,8 @@ Das Erstellen einer App für eine Test Drive-Projektmappe unterscheidet sich nic
 
 PowerApps unterstützt von Haus aus das Erstellen von Apps mit eingebetteten Daten, sodass Sie lediglich Beispieldaten benötigen, die Ihre App verwenden kann. Diese Daten sollten in einer Excel-Datei in Form einer oder mehrerer Tabellen vorliegen. Sie ziehen die Daten dann in PowerApps aus den Excel-Tabellen in die App und arbeiten dort mit ihnen statt mit einer externen Verbindung. Der aus drei Schritten bestehende Prozess unten zeigt Ihnen, wie Daten in die App importiert und darin verwendet werden.
 
-### <a name="step-1-import-data-into-the-app"></a>Schritt 1: Importieren von Daten in der app
-Angenommen Sie, Sie haben eine Excel-Datei mit zwei Tabellen: **SiteInspector** und **SitePhotos**.
+### <a name="step-1-import-data-into-the-app"></a>Schritt 1: Importieren von Daten in die APP
+Angenommen, Sie verfügen über eine Excel-Datei mit zwei Tabellen: **Siteinspector** und **sitephotos**.
 
 ![Zu importierende Excel-Tabellen](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -55,14 +54,14 @@ Die Tabellen sind jetzt als Datenquellen in Ihrer App verfügbar.
 
 ![Excel-Tabellen als importierte Datenquellen](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Schritt 2: Behandlung von Szenarien mit schreibgeschützten und Lese-/ Schreibzugriff
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Schritt 2: Behandeln von schreibgeschützten und Lese-/Schreib-Szenarien
 Die importierten Daten sind *statisch* und daher schreibgeschützt. Wenn Ihre App schreibgeschützt ist (sie dem Benutzer also Daten nur anzeigt), verweisen Sie direkt in der App auf die Tabellen. Wenn Sie beispielsweise auf das Feld **Title** in der Tabelle **SiteInspector** zugreifen möchten, verwenden Sie **SiteInspector.Title** in Ihrer Formel.
 
 Wenn für Ihre Daten Lese-/Schreibzugriff besteht, ziehen Sie die Daten aus den einzelnen Tabellen zuerst in eine *Sammlung*, die eine Tabellendatenstruktur in PowerApps darstellt. Arbeiten Sie dann mit der Sammlung anstelle der Tabelle. So ziehen Sie Daten aus den Tabellen **SiteInspector** und **SitePhotos** in die Sammlungen **SiteInspectorCollect** und **SitePhotosCollect**:
 
-```powerapps-comma
-ClearCollect( SiteInspectorCollect; SiteInspector );; 
-ClearCollect( SitePhotosCollect; SitePhotos )
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 Die Formel leert beide Sammlungen und sammelt anschließend die Daten aus den einzelnen Tabellen in der entsprechenden Sammlung:
@@ -73,17 +72,17 @@ Die Formel leert beide Sammlungen und sammelt anschließend die Daten aus den ei
 
 Wenn Sie jetzt auf das Feld **Title** zugreifen möchten, verwenden Sie in Ihrer Formel **SiteInspectorCollect.Title**.
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>Schritt 3: Hinzufügen, aktualisieren und Löschen von Daten in Ihrer app
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>Schritt 3: Hinzufügen, aktualisieren und Löschen von Daten in Ihrer APP
 Sie haben gesehen, wie Daten direkt und aus einer Sammlung gelesen werden; jetzt möchten wir Ihnen zeigen, wie Sie Daten in einer Sammlung hinzufügen, aktualisieren und löschen:
 
 **Um einer Sammlung eine Zeile hinzuzufügen**, verwenden Sie [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-comma
-Collect( SiteInspectorCollect;
+```powerapps-dot
+Collect( SiteInspectorCollect,
     {
-        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
-        Title: TitleText.Text;
-        SubTitle: SubTitleText.Text;
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
         Description: DescriptionText.Text
     }
 )
@@ -91,12 +90,12 @@ Collect( SiteInspectorCollect;
 
 **Um eine Zeile in einer Sammlung zu aktualisieren** , verwenden Sie [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-comma
-UpdateIf( SiteInspectorCollect;
-    ID = record.ID;
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
     {
-        Title: TitleEditText.Text;
-        SubTitle: SubTitleEditText.Text;
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
         Description: DescriptionEditText.Text
     }
 )
@@ -104,8 +103,8 @@ UpdateIf( SiteInspectorCollect;
 
 **Um eine Zeile aus einer Sammlung zu löschen**, verwenden Sie [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-comma
-RemoveIf( SiteInspectorCollect; ID = record.ID )
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]
