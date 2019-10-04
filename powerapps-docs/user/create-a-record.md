@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a45b19ef45c729d02d1fff418ca4a9103fe5725a
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208201"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924439"
 ---
 # <a name="create-a-new-record"></a>Neuen Datensatz erstellen
 
@@ -60,4 +60,5 @@ Mit dem Befehl **Neuen Datensatz erstellen** oder **Schnellerfassung** ist die E
     > [!div class="mx-imgBorder"] 
     > ![Neue Schaltfläche erstellen](media/newrecord3.png "Neue Schaltfläche erstellen")
 
-    
+    > [!NOTE]
+    > Wenn Sie nicht gespeicherte Änderungen vorgenommen haben und versuchen, zu einem anderen Datensatz oder Formular zu wechseln, wird das Dialogfeld **nicht gespeicherte Änderungen** angezeigt. Wenn Sie **Speichern und Fortfahren**auswählen, wird versucht, die Informationen zu speichern und die gewünschte Seite zu öffnen. Wenn Sie sich für das Speichern und Fortfahren entscheiden und ein Fehler in einem Feld vorliegt, wird das Dialogfeld geschlossen, und Sie bleiben auf der Seite, um den Fehler zu beheben, bevor Sie navigieren können.

@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/03/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e563c1b17e7ef7628efcf51be2a312d3083bf187
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61530845"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924521"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Einfache Navigation in einer modellgesteuerten App 
 
@@ -77,7 +77,7 @@ Im Referenzbereich können Sie Aufgaben erledigen, ohne die Bildschirmansicht ve
 
 Es gibt drei Arten von Benachrichtigungen, die auf einem Formular angezeigt werden: Informationen, Warnungen und Fehler. Benachrichtigungen werden immer ganz oben auf dem Formular angezeigt (direkt über der Kopfzeile).
 
-Die nachfolgend beschriebenen Benachrichtigungen sind ab Version 9.1.9.3010 verfügbar.
+Wenn Sie die Fehler Benachrichtigung auswählen, gelangen Sie zum Feld im Formular, in dem der Fehler aufgetreten ist.
 
 ![Beispielbenachrichtigung](media/notifications.png "Beispielbenachrichtigung")
 
@@ -88,6 +88,10 @@ Wenn nur eine Benachrichtigung vorhanden ist, wird nur eine Zeile angezeigt.
 Wenn mehrere Benachrichtigungen vorhanden sind, wird die Anzahl der Benachrichtigungen angezeigt. Klicken Sie auf das Chevron, um die einzelnen Meldung anzuzeigen.
 
 ![Beispiel mehrerer Benachrichtigungen](media/multiple_notification.png "Beispiel mehrerer Benachrichtigungen")
+
+## <a name="grids"></a>Vorantreiben
+
+Raster in der vereinheitlichten Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Raster haben auch verbesserte Filteroptionen, die das Speichern des letzten Filters und die Sortierreihenfolge einschließen. Eine ausführliche Liste der Verbesserungen finden Sie in diesem Blogbeitrag unter [Erweiterte Funktionalität in Unified Interface Grid](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids).
 
 
 

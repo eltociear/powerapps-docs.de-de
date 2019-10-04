@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 8/02/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f061078b4401ee1ea2db9a2e7e6a4443bd053b6
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783687"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924565"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Fügen Sie **Aktivitäten** der Pinnwand **Zeitachse** hinzu, um den Überblick über Ihre gesamte Kommunikation mit einem Kunden oder Kontakt zu behalten. Sie können z.B. Notizen erstellen, Beiträge und eine Aufgabe hinzufügen, E-Mails senden, Details zu Telefonaten hinzufügen oder Termine ausmachen. Das System versieht jede Aktivität automatisch mit einem Zeitstempel und zeigt an, wer sie angelegt hat. Sie und andere Mitglieder Ihres Teams können durch die Aktivitäten scrollen, um den Verlauf der Zusammenarbeit mit einem Kunden einzusehen. 
 
@@ -101,13 +100,13 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
 
 
     > [!NOTE]
-    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > **e-Mail-** Registerkarte, und wählen Sie dann **e-Mail als Konversation auf der Zeita** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](set-personal-options.md).
+    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > -Registerkarte "**e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
 
    > [!div class="mx-imgBorder"]
-   > ![Persönliche Optionen festlegen](media/emailsettings1.png "Persönliche Optionen festlegen")
+   > ![Persönliche]Optionen festlegen legen Sie(media/emailsettings1.png "Persönliche Optionen fest") .
    
     > [!div class="mx-imgBorder"]
-    > ![Persönliche e-Mail-Optionen festlegen](media/emailsettings2.png "Persönliche e-Mail-Optionen festlegen")
+    > ![Persönliche Optionen](media/emailsettings2.png "für") e-Mail-persönliche e-Mail-Optionen festlegen
 
   
 ## <a name="add-an-appointment"></a>Hinzufügen eines Termins  

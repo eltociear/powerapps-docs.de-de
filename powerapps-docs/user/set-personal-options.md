@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 08/01/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,23 +15,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11d9318ac06e264b6b917c81358d060d97864eb8
-ms.sourcegitcommit: 4e4f7945c3f24faf9bb8a856a5f3892cbfd113be
+ms.openlocfilehash: 15ce5ff81abdbf6e2d1170b90ee974265050cc51
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783556"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924399"
 ---
 # <a name="set-personal-options"></a>Festlegen persönlicher Optionen
 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 
 Ändern Sie die Anzeigeeinstellungen in einer APP entsprechend Ihren Vorlieben. Beispielsweise können Sie die Seite auswählen, die angezeigt werden soll, sobald Sie sich bei der App anmelden. Sie können auch viele andere Optionen wie Sprache, Währung und Zeitzone personalisieren.  
     
 ## <a name="to-set-personal-options"></a>So legen Sie persönliche Optionen fest  
   
-1.  Klicken Sie in der oberen rechten Ecke des Bildschirms auf die Schaltfläche **mit den Schalt** Flächen ![Optionen für powerapps](media/options-button.png "Optionen für powerapps") .  
+1.  Klicken Sie in der oberen rechten Ecke des Bildschirms auf die **Schaltfläche mit den Schalt** Flächen ![Optionen für powerapps]-(media/options-button.png "Optionen für powerapps") .  
   
 2.  Wählen Sie **Personalisierungs Einstellungen**aus.  
   

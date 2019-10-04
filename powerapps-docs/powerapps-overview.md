@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 86a92e1e1723eba0f4d8f1b747a30df93314ca65
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: 34b2d24771feb246d234c0ce3bd1fc655e571296
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213826"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705275"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
@@ -49,7 +49,7 @@ PowerApps-Administratoren haben folgende Möglichkeiten:
 
 - Über das **PowerApps Admin Center** ([admin.powerapps.com](https://admin.powerapps.com)) können Umgebungen, Benutzer, Rollen und DLP-Richtlinien erstellt und verwaltet werden. 
 
-- Über das **Admin Center für die Power-Plattform** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) können Umgebungen verwaltet, Selbsthilfe-Empfehlungen in Echtzeit und Unterstützung für Dynamics 365 Customer Engagement-Apps, PowerApps und Microsoft Flow abgerufen sowie Common Data Service-Analysen angezeigt werden. 
+- **Power Platform Admin Center** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) zum Verwalten von Umgebungen, zum erhalten von echtzeitempfehlungen und zur Unterstützung von powerapps und Microsoft Flow sowie zum Anzeigen von Common Data Service Analytics. 
 
 Weitere Informationen finden Sie unter: [Verwalten von PowerApps](/power-platform/admin/admin-guide)
 

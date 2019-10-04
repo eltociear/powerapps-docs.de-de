@@ -15,24 +15,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: be255d4208b2926867ef0e4dec291d3435f64443
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208186"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705311"
 ---
-#  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Erweiterte Benutzeroberfläche mit der einheitlichen Oberfläche für Modell gesteuerte apps 
+# <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Erweiterte Benutzeroberfläche mit der einheitlichen Oberfläche für Modell gesteuerte apps 
 
 Die einheitliche Schnittstelle für Modell gesteuerte Apps bietet eine konsistente und barrierefreie Benutzeroberfläche auf allen Geräten – ob auf einem Desktop, Laptop, Tablet oder Smartphone. Die apps werden skaliert, indem die Komponenten auf dem Bildschirm wieder geleitet werden. Das reaktionsfähige Design passt sich je nach Bildschirmgröße an Ihre Umgebung an. je mehr verfügbarer Speicherplatz vorhanden ist, desto mehr Informationen können angezeigt werden.
 
 > [!div class="mx-imgBorder"]
 > ![Vereinheitlichte Schnittstelle an Bildschirm] anpassen (media/Reflow.png "Vereinheitlichte Schnittstelle an Bildschirm") anpassen
 
-
-
 > [!NOTE]
-> Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [ankündigen der Zeitachse zum Verschieben in eine einheitliche Schnittstelle](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
+> Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [Blog: Ankündigung der Zeitachse, die zu Unified Interface @ no__t-0 verschoben werden soll. Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
 
 ## <a name="navigation"></a>Navig
 
@@ -61,6 +59,11 @@ Der Geschäftsprozess Fluss wurde durch den Docking Mechanismus verbessert. Sie 
 ## <a name="accessibility"></a>Barrierefreiheit
 Mit der verbesserten Barrierefreiheits Funktion können Sie Bildschirm Sprachausgaben verwenden, um Bildschirminformationen in Audiodaten zu übersetzen und in einen braillereader zu drucken, damit mehr Benutzer die APP verwenden können. Weitere Informationen finden Sie unter [use a Screen Reader](screen-reader.md).
 
-##  <a name="unified-interface-community"></a>Einheitliche Schnittstellen Community
+## <a name="create-a-unified-interface-app"></a>Erstellen einer Unified Interface-App
+Wenn Sie über die Anforderungen verfügen, ihre eigene Benutzeroberfläche auf Unified Interface zu erstellen, können Sie mithilfe des App-Designers eine Modell gesteuerte app erstellen. Weitere Informationen finden Sie [unter Übersicht über das Entwickeln von Modell gesteuerten apps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview).
+
+![Erstellen einer neuen Unified Interface-App](media/uci-model-driven-app.png "Erstellen einer neuen Unified Interface-App")
+
+## <a name="unified-interface-community"></a>Einheitliche Schnittstellen Community
 
 Besuchen Sie die [Communitywebsite der Unified Interface](https://community.dynamics.com/365/unified-interface/) , um Hilfe bei der Planung und Ausführung eines reibungslosen Übergangs zu der vereinheitlichten Oberfläche zu erhalten und sich mit Experten und Peers in Blogs, Webinaren, Videos, Veranstaltungen usw. vertraut zu machen.
