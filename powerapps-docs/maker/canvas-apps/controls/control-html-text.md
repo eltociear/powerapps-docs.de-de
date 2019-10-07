@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5706b2c1b21c0135cc60678b6cf3f882df6fa56c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544221"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986626"
 ---
 # <a name="html-text-control-in-powerapps"></a>HTML-Textsteuerelement in PowerApps
 Ein Feld, in dem Text angezeigt wird und in dem HTML-Tags in Textformatierungen konvertiert werden.
@@ -41,11 +40,11 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-**[DisabledFill](properties-color-border.md)**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledFill](properties-color-border.md)** : Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -55,17 +54,17 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**[PaddingBottom](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
+**[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
-**[PaddingLeft](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
+**[PaddingLeft](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
-**[PaddingRight](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
+**[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
 
 **[Size](properties-text.md)** – Der Schriftgrad des Texts, der in einem Steuerelement angezeigt wird.
 
-**[QuickInfo](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -76,10 +75,10 @@ In einem Steuerelement für **HTML-Text** werden nicht nur Klartext und Zahlen a
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Find**( *FindString*; *WithinString* )](../functions/function-find.md)
+[**Find**( *FindString*, *WithinString* )](../functions/function-find.md)
 
 ## <a name="example"></a>Beispiel
-1. Fügen Sie ein **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, geben Sie ihm den Namen **Quelle**, und geben Sie als Wert für die **[Text](properties-core.md)**-Eigenschaft diese Zeichenfolge ein:
+1. Fügen Sie ein **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, geben Sie ihm den Namen **Quelle**, und geben Sie als Wert für die **[Text](properties-core.md)** -Eigenschaft diese Zeichenfolge ein:
 
 „\<p> Uns ist eine besonders \&nbsp; \&quot; weitreichende \&quot; Globalisierung und Lokalisierung gelungen.\<p>“
 
@@ -88,7 +87,7 @@ Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfig
 1. Fügen Sie ein **HTML-Text**-Steuerelement hinzu, und legen Sie die **HtmlText**-Eigenschaft auf diesen Wert fest:<br>
    **Source.Text**
    
-     Das **HTML-Text**-Steuerelement zeigt denselben Text wie das **[Label](control-text-box.md)**-Steuerelement (Bezeichnung) an. Allerdings werden Tags in die entsprechenden Zeichen umgewandelt.
+     Das **HTML-Text**-Steuerelement zeigt denselben Text wie das **[Label](control-text-box.md)** -Steuerelement (Bezeichnung) an. Allerdings werden Tags in die entsprechenden Zeichen umgewandelt.
 
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
@@ -103,4 +102,4 @@ Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **HtmlText** muss vorhanden sein.
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
-* **HtmlText** sollte keine interaktiven Elemente wie `<button>`, `<a>` oder `<input>` enthalten. Das **[TabIndex](properties-accessibility.md)**-System in PowerApps ignoriert Elemente in **HtmlText**.
+* **HtmlText** sollte keine interaktiven Elemente wie `<button>`, `<a>` oder `<input>` enthalten. Das **[TabIndex](properties-accessibility.md)** -System in PowerApps ignoriert Elemente in **HtmlText**.

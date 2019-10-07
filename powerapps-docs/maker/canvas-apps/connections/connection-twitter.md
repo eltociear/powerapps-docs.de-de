@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/12/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23a61dd1300fab71bed4d8c72b861c3c38a1cdea
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 476285021e6a65a32c2e16e4ff95c74be9da933a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557478"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987219"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Herstellen einer Verbindung mit Twitter aus PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -53,11 +52,11 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 1. Wählen Sie im Menü **Einfügen** die Option **Katalog** aus, und fügen Sie einen der **Mit Text**-Kataloge hinzu.
 2. So zeigen Sie Timelines an  
 
-   * Um die Timeline des aktuellen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf die folgenden Formeln fest:
+   * Um die Timeline des aktuellen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgenden Formeln fest:
 
        `Twitter.HomeTimeline().TweetText`  
        `Twitter.HomeTimeline({maxResults:3}).TweetText`  
-   * Um die Timeline eines anderen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf die folgende Formel fest:  
+   * Um die Timeline eines anderen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgende Formel fest:  
 
        `Twitter.UserTimeline( *TwitterHandle* ).TweetText`
 
@@ -66,7 +65,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        Im Katalog-Steuerelement werden automatisch die Tweets des eingegebenen Twitter-Benutzernamens angezeigt.
 
@@ -82,11 +81,11 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 ### <a name="show-followers"></a>Anzeigen von Followern
 1. So zeigen Sie mit einem **Mit Text**-Katalog Follower an  
 
-   * Um die Follower des aktuellen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf die folgende Formel fest:  
+   * Um die Follower des aktuellen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgende Formel fest:  
 
        `Twitter.MyFollowers()`  
        `Twitter.MyFollowers({maxResults:3})`
-   * Um die Follower eines anderen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf die folgende Formel fest:  
+   * Um die Follower eines anderen Benutzers anzuzeigen, legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgende Formel fest:  
 
        `Twitter.Followers( *TwitterHandle* )`
 
@@ -95,7 +94,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement wird automatisch angezeigt, wer dem eingegebenen Twitter-Benutzernamen folgt.
 
@@ -111,11 +110,11 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 ### <a name="show-followed-users"></a>Anzeigen der Benutzer, denen gefolgt wird
 1. So zeigen Sie mit einem **Mit Text**-Katalog an, welchen Benutzern gefolgt wird  
 
-   * Um anzuzeigen, welchen Benutzern der aktuelle Benutzer folgt, legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf die folgende Formel fest:  
+   * Um anzuzeigen, welchen Benutzern der aktuelle Benutzer folgt, legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgende Formel fest:  
 
        `Twitter.MyFollowing()`  
        `Twitter.MyFollowing({maxResults:3})`
-   * Um die Benutzer anzuzeigen, ein anderer Benutzer folgt, legen Sie die **[Elemente](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgende Formel:
+   * Um anzuzeigen, welchen Benutzern ein anderer Benutzer folgt, legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf die folgende Formel fest:
 
        `Twitter.Following( *TwitterHandle* )`
 
@@ -124,7 +123,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement werden automatisch die anderen Benutzernamen angezeigt, denen Sie folgen.
 
@@ -134,7 +133,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
     Im Katalog werden nun die Werte der ausgewählten Eigenschaften angezeigt.
 
 ### <a name="show-information-about-a-user"></a>Anzeigen von Informationen zu einem Benutzer
-Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](../controls/properties-core.md)**-Eigenschaft auf eine der folgenden Formeln fest:  
+Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **[Text](../controls/properties-core.md)** -Eigenschaft auf eine der folgenden Formeln fest:  
 
 * `twitter.User( *TwitterHandle* ).Description`
 * `twitter.User( *TwitterHandle* ).FullName`
@@ -150,7 +149,7 @@ Geben Sie einen Twitter-Benutzernamen in doppelten Anführungszeichen oder einen
 Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benutzernamen einzugeben, so wie in den anderen Abschnitten dieses Themas.
 
 ### <a name="search-tweets"></a>Suchen von Tweets
-1. Legen Sie bei einem **Mit Text**-Katalog die **[Items](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
+1. Legen Sie bei einem **Mit Text**-Katalog die **[Items](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
 
     `Twitter.SearchTweet( *SearchTerm* ).TweetText`
 
@@ -161,8 +160,8 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
     > [!TIP]
    > Mit „maxResults“ werden die ersten fünf Ergebnisse angezeigt:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})` fest.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` fest.
 
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 3. Wählen Sie **TweetText** in der ersten Liste, **TweetedBy** in der zweiten Liste und **CreatedAt** in der dritten Liste aus.
@@ -171,7 +170,7 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
 
 ### <a name="send-a-tweet"></a>Senden eines Tweets
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu, und benennen Sie es in **MyTweet** um.
-2. Fügen Sie eine Schaltfläche hinzu, und legen Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
+2. Fügen Sie eine Schaltfläche hinzu, und legen Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
     `Twitter.Tweet({tweetText: MyTweet.Text})`
 3. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-twitter/preview.png)). Geben Sie Text in **MyTweet** ein, und wählen Sie dann die Schaltfläche aus, um den eingegebenen Text zu twittern.
 4. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
@@ -193,7 +192,7 @@ Diese Verbindung umfasst die folgenden Funktionen:
 | [OnNewTweet](connection-twitter.md#onnewtweet) |Löst einen Workflow aus, wenn ein neuer Tweet gesendet wird, der mit Ihrer Suchabfrage übereinstimmt |
 
 ### <a name="usertimeline"></a>UserTimeline
-Timeline des Benutzers abrufen: Ruft eine Sammlung der letzten Tweets ab, die vom angegebenen Benutzer gesendet wurden
+Benutzer Zeitachse anzeigen: Ruft eine Sammlung der letzten Tweets ab, die vom angegebenen Benutzer gesendet wurden
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -214,7 +213,7 @@ Timeline des Benutzers abrufen: Ruft eine Sammlung der letzten Tweets ab, die vo
 | MediaUrls |Array |Nein | |
 
 ### <a name="hometimeline"></a>HomeTimeline
-Eigene Timeline abrufen: Ruft die letzten Tweets und Re-Tweets von mir und meinen Followern ab
+Start Zeitachse erhalten: Ruft die letzten Tweets und Re-Tweets von mir und meinen Followern ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -240,7 +239,7 @@ Tweet suchen: Ruft eine Sammlung von relevanten Tweets ab, die mit einer angegeb
 
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
-| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: http://www.twitter.com/search)) |
+| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: http://www.twitter.com/search) ) |
 | maxResults |Ganze Zahl |Nein |Maximale Anzahl von abzurufenden Tweets, z.B. {maxResults:5} |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
@@ -300,7 +299,7 @@ Meine Follower abrufen: Ruft die Benutzer ab, die mir folgen
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="following"></a>Following
-Gefolge abrufen: Ruft die Benutzer, denen der angegebene Benutzer folgt
+Holen Sie sich Folgendes: Ruft die Benutzer, denen der angegebene Benutzer folgt
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -323,7 +322,7 @@ Gefolge abrufen: Ruft die Benutzer, denen der angegebene Benutzer folgt
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="myfollowing"></a>MyFollowing
-Mein gefolge abrufen: Ruft die Benutzer ab, denen ich folge
+Holen Sie sich Folgendes: Ruft die Benutzer ab, denen ich folge
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -345,7 +344,7 @@ Mein gefolge abrufen: Ruft die Benutzer ab, denen ich folge
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="user"></a>User
-Benutzer abrufen: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzername, Beschreibung, Anzahl der folgenden Benutzer usw.)
+Benutzer erhalten: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzername, Beschreibung, Anzahl der folgenden Benutzer usw.)
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -367,7 +366,7 @@ Benutzer abrufen: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzerna
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="tweet"></a>Tweet
-Senden Sie neuen Tweet: Tweet
+Neuen Tweet veröffentlichen: Tweet
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -389,7 +388,7 @@ Wenn ein neuer Tweet angezeigt wird: Löst einen Workflow aus, wenn ein neuer Tw
 
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
-| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: http://www.twitter.com/search)) |
+| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: http://www.twitter.com/search) ) |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
 

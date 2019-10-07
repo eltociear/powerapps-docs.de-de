@@ -6,25 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/11/2017
 ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a1bffa509f382c2f706c2163d89c5788f8607ec7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61547826"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993050"
 ---
 # <a name="use-the-entity-form-control"></a>Verwenden des Steuerelements „Formularentität“
 Erstellen Sie Apps schneller, indem Sie das Steuerelement **Formularentität** verwenden, mit dem Sie umfangreiche Formulare für eine Common Data Service-Entität hinzufügen können.
 
-Eine Einführung in die **Formularentität** steuern, finden Sie unter folgendem Blogbeitrag: [Neue entitätsformularsteuerelement (experimentelles Feature) für Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
+Eine Einführung in das Steuerelement **Formular Entität** finden Sie in diesem Blogbeitrag: [Neues Entitäts Formular-Steuerelement (experimentelles Feature) für Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
 
 > [!IMPORTANT]
 > Beachten Sie, dass es sich bei dem Steuerelement **Formularentität** wie im Blogbeitrag beschrieben um eine experimentelle Funktion handelt, und seien Sie zunächst vorsichtig, wenn Sie das Steuerelement **Formularentität** in Produktions-Apps verwenden.
@@ -46,15 +45,15 @@ Hier sind die wichtigsten Eigenschaften des Steuerelements **Formularentität**.
 **Item**: Gibt den Datensatz in der Datenquelle an, den das Steuerelement **Formularentität** anzeigen soll. Diese Eigenschaft wird nur verwendet, wenn **Pattern** auf **FormPattern.Details** festgelegt ist.
 
 **Selected**: Ruft den Datensatz ab, der gerade ausgewählt ist.  
-Beispiel: Wenn die **Formularentität** Steuerelement zeigt eine Liste mit Verkaufsauftrag-Datensätzen, die **ausgewählte** Eigenschaft erhalten Sie den Datensatz, der gerade ausgewählt ist. Sie können auch auf ein Feld in einem Datensatz zugreifen. (Geben Sie z.B. für den Wert des **Account**-Felds (Konto) des ausgewählten Datensatzes **Selected.Account** an.)
+Beispiel: Wenn das Steuerelement **Formular Entität** eine Liste von Sales-Order-Datensätzen anzeigt, gibt die **ausgewählte** Eigenschaft den aktuell ausgewählten Datensatz aus. Sie können auch auf ein Feld in einem Datensatz zugreifen. (Geben Sie z.B. für den Wert des **Account**-Felds (Konto) des ausgewählten Datensatzes **Selected.Account** an.)
 
 **SelectableFields**: Gibt an, welche Felder als Links angezeigt werden sollen. Legen Sie den Wert dieser Eigenschaft mithilfe der folgenden Syntax fest:  
-**{Field1Name : true; Field2Name : true}**  
-Beispiel: Wenn Sie möchten die **SalesOrderId** und **Konto** Felder als Links in einem Formular angezeigt werden die **SelectableFields** -Eigenschaft dieses Formulars auf diesen Wert:  
-**{SalesOrderId : true; Account : true}**
+**{Field1Name : true, Field2Name : true}**  
+Beispiel: Wenn Sie möchten, dass die Felder **SalesOrderID** und **Account** als Links in einem Formular angezeigt werden, legen Sie die **selectablefields** -Eigenschaft dieses Formulars auf diesen Wert fest:  
+**{SalesOrderId : true, Account : true}**
 
 **SelectedField**: Bestimmt, welches Feld angeklickt oder angetippt wurde. Dies gilt nur für die Felder, die als **SelectableFields** angegeben werden.  
-Beispiel: Setzen Sie die **SelectableFields** Eigenschaft, um **{SalesOrderId: "true"; "Konto: true}** und der Benutzer klickt oder tippt der **Konto** Feld  **SelectedField.Account** wird festgelegt auf "true".
+Beispiel: Wenn Sie die **selectablefields** -Eigenschaft auf **{SalesOrderID: true, Account: true}** festlegen und der Benutzer auf das **Account** -Feld klickt oder tippt, wird **selectedField. Account** auf true festgelegt.
 
 **OnFieldSelect**: Gibt an, wie eine App reagiert, wenn der Benutzer auf ein Feld klickt oder tippt. Dies gilt nur für die Felder, die als **SelectableFields** angegeben werden.
 
@@ -191,7 +190,7 @@ Die **SelectableFields**-Eigenschaft von **SalesOrderListForm** legt **SalesOrde
 
 Dies wurde automatisch eingerichtet, als wir den Bereich für die Anpassung von Formularen verwendet haben, um das **SalesOrderId**-Feld für die Navigation zu **SalesOrderDetailsScreen** einzurichten. Aus diesem Grund werden die Werte im **SalesOrderId**-Feld als Links angezeigt.
 
-Die **OnFieldSelect** Eigenschaft der **SalesOrderListForm** nastaven NA hodnotu ein [ **Wenn** ](functions/function-if.md) -Funktion, die bestimmt, ob der Benutzer klickt oder tippt der **SalesOrderID** Feld: **SalesOrderListForm.SelectedField.SalesOrderId = true**.  
+Die **onfieldselect** -Eigenschaft von **salesorderlistform** wird auf eine [**if**](functions/function-if.md) -Funktion festgelegt, die bestimmt, ob der Benutzer auf das Feld **Sales Order ID** klickt oder tippt: **Salesorderlistform. selectedField. SalesOrderID = true**.  
 
 Wenn die Funktion als TRUE ausgewertet wird, öffnet sich **SalesOrderDetailsScreen** mit der zuvor verwendeten Kontextvariablen **NavigationContext**.  
 

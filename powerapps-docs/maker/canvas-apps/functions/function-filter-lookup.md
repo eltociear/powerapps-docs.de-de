@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 02/05/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 1412cdd79531f70a1c029d7657940200823e5ba0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320995"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992869"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Filter-, Search- und LookUp-Funktionen in PowerApps
 Sucht nach einem oder mehreren [Datensätzen](../working-with-tables.md#records) in einer [Tabelle](../working-with-tables.md).
@@ -29,7 +28,7 @@ Die **Filter**-Funktion sucht Datensätze in einer Tabelle, die eine Formel erf�
 
 Die **LookUp**-Funktion sucht den ersten Datensatz in einer Tabelle, der eine Formel erfüllt.  Verwenden Sie **LookUp**, um einen einzelnen Datensatz zu suchen, der mindestens ein Kriterium erfüllt.
 
-Bei beiden wird die Formel für jeden Datensatz der Tabelle ausgewertet.  Datensätze, die *TRUE* ausgeben, sind im Ergebnis enthalten.  Neben den normalen [Operatoren](operators.md) der Formel können Sie die **[in](operators.md#in-and-exactin-operators)**- und **[exactin](operators.md#in-and-exactin-operators)**-Operatoren für Übereinstimmungen mit Teilzeichenfolgen verwenden.
+Bei beiden wird die Formel für jeden Datensatz der Tabelle ausgewertet.  Datensätze, die *TRUE* ausgeben, sind im Ergebnis enthalten.  Neben den normalen [Operatoren](operators.md) der Formel können Sie die **[in](operators.md#in-and-exactin-operators)** - und **[exactin](operators.md#in-and-exactin-operators)** -Operatoren für Übereinstimmungen mit Teilzeichenfolgen verwenden.
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -42,12 +41,12 @@ Wie Zeichenfolgen und Zahlen sind auch [Tabellen](../working-with-tables.md) in 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
 ## <a name="syntax"></a>Syntax
-**Filter**( *Tabelle*; *Formel1* [; *Formel2*; ... ] )
+**Filter**( *Tabelle*, *Formel1* [, *Formel2*, ... ] )
 
 * *Tabelle* (erforderlich): die zu suchende Tabelle.
-* *Formel(n)* (erforderlich): Formel, anhand derer die einzelnen Datensätze in der Tabelle ausgewertet werden. Diese Funktion gibt alle Datensätze zurück, die zu **WAHR** ausgewertet werden. Sie können auf Spalten innerhalb der Tabelle verweisen. Wenn Sie mehr als eine Formel angeben, werden die Ergebnisse aller Formeln mit einer **[And](function-logicals.md)**-Funktion kombiniert.
+* *Formel(n)* (erforderlich): Formel, anhand derer die einzelnen Datensätze in der Tabelle ausgewertet werden. Diese Funktion gibt alle Datensätze zurück, die zu **WAHR** ausgewertet werden. Sie können auf Spalten innerhalb der Tabelle verweisen. Wenn Sie mehr als eine Formel angeben, werden die Ergebnisse aller Formeln mit einer **[And](function-logicals.md)** -Funktion kombiniert.
 
-**Search**( *Tabelle*; *Suchzeichenfolge*; *Spalte1* [; *Spalte2*; ... ] )
+**Search**( *Tabelle*, *Suchzeichenfolge*, *Spalte1* [, *Spalte2*, ... ] )
 
 * *Tabelle* (erforderlich): die zu suchende Tabelle.
 * *Suchzeichenfolge* (erforderlich): Zeichenfolge, nach der gesucht werden soll. Bei *leer* oder einer leeren Zeichenfolge werden alle Datensätze zurückgegeben.
@@ -56,7 +55,7 @@ Wie Zeichenfolgen und Zahlen sind auch [Tabellen](../working-with-tables.md) in 
 > [!NOTE]
 > Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
 
-**LookUp**( *Tabelle*; *Formel* [; *Reduzierformel* ] )
+**LookUp**( *Tabelle*, *Formel* [, *Reduzierformel* ] )
 
 * *Tabelle* (erforderlich): die zu suchende Tabelle. Auf der Benutzeroberfläche wird die Syntax oberhalb des Funktionsfelds als *Quelle* angezeigt.
 * *Formel* (erforderlich):
@@ -70,16 +69,16 @@ Die folgenden Beispiele verwenden die **IceCream**-[Datenquelle](../working-with
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Filter( IceCream; OnOrder > 0 )** |Gibt Datensätze zurück, bei denen **OnOrder** größer als 0 ist. |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
-| **Filter( IceCream; Quantity + OnOrder > 225 )** |Gibt Datensätze zurück, bei denen die Summe der Spalten **Quantity** und **OnOrder** größer als 225 ist. |![](media/function-filter-lookup/icecream-overstock.png) |
-| **Filter( IceCream; "chocolate" in Lower( Flavor ) )** |Gibt Datensätze zurück, bei denen das Wort „chocolate“ im **Flavor**-Namen auftaucht. Die Groß-/Kleinschreibung wird hierbei nicht berücksichtigt. |![](media/function-filter-lookup/icecream-chocolate.png) |
-| **Filter( IceCream; Quantity < 10  && OnOrder < 20 )** |Gibt Datensätze zurück, bei denen **Quantity** kleiner als 10 und **OnOrder** kleiner als 20 ist.  Keine Datensätze entsprechen diesen Kriterien, sodass eine leere Tabelle zurückgegeben wird. |![](media/function-filter-lookup/icecream-empty.png) |
-| **Search( IceCream; "choc"; "Flavor" )** |Gibt Datensätze zurück, bei denen die Zeichenfolge „choc“ im **Flavor**-Namen auftaucht. Die Groß-/Kleinschreibung wird hierbei nicht berücksichtigt. |![](media/function-filter-lookup/icecream-chocolate.png) |
-| **Search( IceCream; ""; "Flavor" )** |Da der Suchbegriff leer ist, werden alle Datensätze zurückgegeben. |![](media/function-filter-lookup/icecream.png) |
-| **LookUp( IceCream; Flavor = "Chocolate"; Quantity )** |Sucht einen Datensatz, bei dem **Flavor** „chocolate“ entspricht. Hierzu gibt es einen passenden Datensatz.  Für den ersten gefundenen Datensatz wird die **Quantity** dieses Datensatzes zurückgegeben. |100 |
-| **LookUp( IceCream; Quantity > 150; Quantity + OnOrder )** |Sucht einen Datensatz mit **Quantity** größer als 100, von denen es mehrere gibt.  Für den ersten gefundenen Datensatz, welcher „Vanilla“-**Flavor** ist, wird die Summe der Spalten **Quantity** und **OnOrder** zurückgegeben. |250 |
-| **LookUp( IceCream; Flavor = "Pistachio"; OnOrder )** |Sucht einen Datensatz, bei dem **Flavor** „Pistachio“ entspricht. Hierzu gibt es keinen passenden Datensatz.  Deswegen gibt **LookUp** *blank* zurück. |*blank* |
-| **LookUp( IceCream; Flavor = "Vanilla" )** |Sucht einen Datensatz, bei dem **Flavor** „Vanilla“ entspricht. Hierzu gibt es einen passenden Datensatz.  Da keine Reduzierformel angegeben wurde, wird der gesamte Datensatz zurückgegeben. |{Geschmacksrichtung: "Einfaches", Menge: 200, OnOrder: 75 } |
+| **Filter( IceCream, OnOrder > 0 )** |Gibt Datensätze zurück, bei denen **OnOrder** größer als 0 ist. |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
+| **Filter( IceCream, Quantity + OnOrder > 225 )** |Gibt Datensätze zurück, bei denen die Summe der Spalten **Quantity** und **OnOrder** größer als 225 ist. |![](media/function-filter-lookup/icecream-overstock.png) |
+| **Filter( IceCream, "chocolate" in Lower( Flavor ) )** |Gibt Datensätze zurück, bei denen das Wort „chocolate“ im **Flavor**-Namen auftaucht. Die Groß-/Kleinschreibung wird hierbei nicht berücksichtigt. |![](media/function-filter-lookup/icecream-chocolate.png) |
+| **Filter( IceCream, Quantity < 10  && OnOrder < 20 )** |Gibt Datensätze zurück, bei denen **Quantity** kleiner als 10 und **OnOrder** kleiner als 20 ist.  Keine Datensätze entsprechen diesen Kriterien, sodass eine leere Tabelle zurückgegeben wird. |![](media/function-filter-lookup/icecream-empty.png) |
+| **Search( IceCream, "choc", "Flavor" )** |Gibt Datensätze zurück, bei denen die Zeichenfolge „choc“ im **Flavor**-Namen auftaucht. Die Groß-/Kleinschreibung wird hierbei nicht berücksichtigt. |![](media/function-filter-lookup/icecream-chocolate.png) |
+| **Search( IceCream, "", "Flavor" )** |Da der Suchbegriff leer ist, werden alle Datensätze zurückgegeben. |![](media/function-filter-lookup/icecream.png) |
+| **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |Sucht einen Datensatz, bei dem **Flavor** „chocolate“ entspricht. Hierzu gibt es einen passenden Datensatz.  Für den ersten gefundenen Datensatz wird die **Quantity** dieses Datensatzes zurückgegeben. |100 |
+| **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |Sucht einen Datensatz mit **Quantity** größer als 100, von denen es mehrere gibt.  Für den ersten gefundenen Datensatz, welcher „Vanilla“-**Flavor** ist, wird die Summe der Spalten **Quantity** und **OnOrder** zurückgegeben. |250 |
+| **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |Sucht einen Datensatz, bei dem **Flavor** „Pistachio“ entspricht. Hierzu gibt es keinen passenden Datensatz.  Deswegen gibt **LookUp** *blank* zurück. |*blank* |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |Sucht einen Datensatz, bei dem **Flavor** „Vanilla“ entspricht. Hierzu gibt es einen passenden Datensatz.  Da keine Reduzierformel angegeben wurde, wird der gesamte Datensatz zurückgegeben. |Tee "Vanille", Menge: 200, onorder: 75} |
 
 ### <a name="search-user-experience"></a>Benutzererfahrung beim Durchsuchen
 In vielen Apps können Sie ein oder mehrere Zeichen in ein Suchfeld eingeben, um eine gefilterte Liste mit Datensätzen aus einem großen Datenbestand zu erzeugen. Bei der Eingabe zeigt die Liste nur die Datensätze, die den Suchkriterien entsprechen.
@@ -88,9 +87,9 @@ Die nachfolgenden Beispiele zeigen Ergebnisse der Suche in einer Liste namens **
 
 ![](media/function-filter-lookup/customers.png)
 
-Erstellen Sie ein **[Button](../controls/control-button.md)**-Steuerelement, und legen Sie dessen **OnSelect**-Eigenschaft auf folgende Formel fest, um diese Datenquelle als Sammlung zu erstellen:
+Erstellen Sie ein **[Button](../controls/control-button.md)** -Steuerelement, und legen Sie dessen **OnSelect**-Eigenschaft auf folgende Formel fest, um diese Datenquelle als Sammlung zu erstellen:
 
-**ClearCollect (Customers-Tabelle ({Name: "Fred Garcia"; Unternehmen: "Northwind Traders"} {Name: "Cole Miller"; Unternehmen: "Contoso"} {Name: "Glenda Johnson"; Unternehmen: "Contoso"} {Name: "Mike Collins"; Unternehmen: "Adventure Works"}; {Name: "Colleen Jones" Unternehmen: "Adventure Works" } ) )**
+**clearcollect (Customers, Table ({Name: "Fred Garcia", Unternehmen: "Northwind Traders"}, {Name: "Cole Miller", Unternehmen: "", {Name: "Glenda Johnson", Unternehmen: "", {Name: "Mike Collins", Unternehmen: "Adventure Works"}, {Name: "Colleen Jones", Company: "Adventure Works"}))**
 
 Sie können wie in diesem Beispiel eine Datensatzliste in einem [**Katalogsteuerelement**](../controls/control-gallery.md) am unteren Rand des Bildschirms anzeigen. Fügen Sie im oberen Bereich des Bildschirms ein [**Texteingabe**](../controls/control-text-input.md)-Steuerelement mit dem Namen **SearchInput** ein, sodass Benutzer angeben können, welche Datensätze für sie relevant sind.
 
@@ -104,15 +103,15 @@ Legen Sie die Eigenschaft **Items** des Katalogsteuerelements auf eine der folge
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Filter( Customers; StartsWith( Name; SearchInput.Text ) )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in der die Suchzeichenfolge am Anfang der Spalte **Name** vorkommt. Bei diesem Test wird die Groß-/Kleinschreibung nicht beachtet. Wenn der Benutzer **co** in das Suchfeld eingibt, zeigt der Katalog **Colleen Jones** und **Cole Miller** an. **Mike Collins** wird nicht im Katalog angezeigt, weil die Spalte **Name** dieses Datensatzes nicht mit der Suchzeichenfolge beginnt. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
-| **Filter( Customers; SearchInput.Text in Name )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in der die Suchzeichenfolge am Anfang der Spalte **Name** vorkommt. Bei diesem Test wird die Groß-/Kleinschreibung nicht beachtet. Wenn der Benutzer **co** in das Suchfeld eingibt, zeigt der Katalog **Colleen Jones**, **Cole Miller** und **Mike Collins** an, da die Suchzeichenfolge an einer beliebigen Stelle in der Spalte **Name** dieser Datensätze vorkommt. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
-| **Search( Customers; SearchInput.Text; "Name" )** |Die **Search**-Funktion wird so ähnlich wie der **in**-Operator verwendet und sucht nach einer Übereinstimmung in der Spalte **Name** in jedem Datensatz. Beachten Sie, dass Sie den Spaltennamen in doppelte Anführungszeichen setzen müssen. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
+| **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in der die Suchzeichenfolge am Anfang der Spalte **Name** vorkommt. Bei diesem Test wird die Groß-/Kleinschreibung nicht beachtet. Wenn der Benutzer **co** in das Suchfeld eingibt, zeigt der Katalog **Colleen Jones** und **Cole Miller** an. **Mike Collins** wird nicht im Katalog angezeigt, weil die Spalte **Name** dieses Datensatzes nicht mit der Suchzeichenfolge beginnt. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
+| **Filter( Customers, SearchInput.Text in Name )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in der die Suchzeichenfolge am Anfang der Spalte **Name** vorkommt. Bei diesem Test wird die Groß-/Kleinschreibung nicht beachtet. Wenn der Benutzer **co** in das Suchfeld eingibt, zeigt der Katalog **Colleen Jones**, **Cole Miller** und **Mike Collins** an, da die Suchzeichenfolge an einer beliebigen Stelle in der Spalte **Name** dieser Datensätze vorkommt. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
+| **Search( Customers, SearchInput.Text, "Name" )** |Die **Search**-Funktion wird so ähnlich wie der **in**-Operator verwendet und sucht nach einer Übereinstimmung in der Spalte **Name** in jedem Datensatz. Beachten Sie, dass Sie den Spaltennamen in doppelte Anführungszeichen setzen müssen. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
 
 Sie können Ihre Suche auch so ausweiten, dass sie die Spalte **Company** sowie die Spalte **Name** enthält:
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Filter( Customers; StartsWith( Name; SearchInput.Text ) &#124;;&#124;; StartsWith( Company; SearchInput.Text ) )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in denen entweder die Spalte **Name** oder die Spalte **Company** mit der Suchzeichenfolge beginnt (z.B. **co**).  Der [**&#124;&#124;**-Operator](operators.md) ist *TRUE*, wenn eine **StartsWith**-Funktion *TRUE* ist. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
-| **Filter( Customers; SearchInput.Text in Name &#124;;&#124;; SearchInput.Text in Company )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in denen entweder die Spalte **Name** oder die Spalte **Company** die Suchzeichenfolge (z.B. **co**) an beliebiger Stelle enthält. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
-| **Search( Customers; SearchInput.Text; "Name"; "Company" )** |Die **Search**-Funktion wird so ähnlich wie der **in**-Operator verwendet und durchsucht die **Customers**-Datenquelle nach Datensätzen, in denen entweder die **Name**-Spalte oder die **Company**-Spalte die Suchzeichenfolge (z.B. **co**) an beliebiger Stelle enthält. Die **Search**-Funktion ist einfacher zu lesen und zu schreiben als die **Filter**-Funktion, wenn Sie mehrere Spalten und mehrere **in**-Operatoren angeben möchten. Beachten Sie, dass Sie die Spaltennamen in doppelte Anführungszeichen setzen müssen. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
+| **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in denen entweder die Spalte **Name** oder die Spalte **Company** mit der Suchzeichenfolge beginnt (z.B. **co**).  Der [ **&#124;&#124;** -Operator](operators.md) ist *TRUE*, wenn eine **StartsWith**-Funktion *TRUE* ist. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
+| **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |Filtert die **Customers**-Datenquelle nach Datensätzen, in denen entweder die Spalte **Name** oder die Spalte **Company** die Suchzeichenfolge (z.B. **co**) an beliebiger Stelle enthält. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
+| **Search( Customers, SearchInput.Text, "Name", "Company" )** |Die **Search**-Funktion wird so ähnlich wie der **in**-Operator verwendet und durchsucht die **Customers**-Datenquelle nach Datensätzen, in denen entweder die **Name**-Spalte oder die **Company**-Spalte die Suchzeichenfolge (z.B. **co**) an beliebiger Stelle enthält. Die **Search**-Funktion ist einfacher zu lesen und zu schreiben als die **Filter**-Funktion, wenn Sie mehrere Spalten und mehrere **in**-Operatoren angeben möchten. Beachten Sie, dass Sie die Spaltennamen in doppelte Anführungszeichen setzen müssen. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 

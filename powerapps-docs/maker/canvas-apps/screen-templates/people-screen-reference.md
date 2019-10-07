@@ -1,147 +1,146 @@
 ---
-title: Personen-Screen-vorlagenreferenz | Microsoft-Dokumentation
-description: Erläuterungen zu Details der Funktionsweise von den Personen Bildschirmvorlage für Canvas-apps in PowerApps
+title: Benutzer-Bildschirm Vorlagen Referenz | Microsoft-Dokumentation
+description: Details zur Funktionsweise der Vorlage "Personen Bildschirm" für Canvas-apps in powerapps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 1/2/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09b92a1e2bc87ac6f4e2ec651aa67a845e0f07b1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 0a1626583300e6fe696415a91de68ff08596f081
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540689"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989385"
 ---
-# <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Referenzinformationen zu den Personen Bildschirmvorlage für Canvas-apps
+# <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Referenzinformationen zur Benutzer Bildschirm Vorlage für Canvas-apps
 
-Für Canvas-apps in PowerApps zu verstehen, wie jede bedeutende Kontrolle in der Vorlage Personen-Bildschirm auf die standardmäßige Gesamtfunktionalität des Bildschirms beiträgt. Tieferer Einblick in diese enthält die verhaltensformeln und die Werte anderer Eigenschaften, die bestimmen, wie die Steuerelemente auf Benutzereingaben reagieren. Eine allgemeine Diskussion über die Standardfunktionalität des Bildschirms, finden Sie unter den [Personen-Übersicht über](people-screen-overview.md).
+Für Canvas-apps in powerapps können Sie verstehen, wie die einzelnen wichtigen Steuerelemente in der Vorlage für Personen auf dem Bildschirm zur gesamten Standardfunktionalität des Bildschirms beitragen. Dieser ausführliche Einblick zeigt Verhaltens Formeln und die Werte anderer Eigenschaften, die bestimmen, wie die Steuerelemente auf Benutzereingaben reagieren. Eine ausführliche Erläuterung der Standardfunktionalität dieses Bildschirms finden Sie in der [Übersicht über](people-screen-overview.md)die Benutzer.
 
-In diesem Thema werden einige wichtige steuermöglichkeiten und erläutert die Ausdrücke oder Formeln, die die verschiedenen Eigenschaften (z. B. **Elemente** und **OnSelect**) dieser Steuerelemente festgelegt werden:
+In diesem Thema werden einige bedeutende Steuerelemente hervorgehoben und die Ausdrücke oder Formeln erläutert, mit denen verschiedene Eigenschaften (z. b. **Elemente** und **onselect**) dieser Steuerelemente festgelegt werden:
 
 * [Textsuchfeld](#text-search-box)
-* [Benutzer-durchsuchbaren Katalog](#user-browse-gallery) (+ untergeordnete Steuerelemente)
-* [Personen hinzugefügt Katalog](#people-added-gallery) (+ untergeordnete Steuerelemente)
+* Katalog zum [Durchsuchen von Benutzern](#user-browse-gallery) (+ untergeordnete Steuerelemente)
+* [Hinzugefügte Galerie](#people-added-gallery) (+ untergeordnete Steuerelemente)
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und Steuerelementen wie [Erstellen einer app in PowerApps](../data-platform-create-app-scratch.md).
+Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Textsuchfeld
 
-![TextSearchBox-Steuerelement](media/people-screen/people-search-box.png)
+![Textsearchbox-Steuerelement](media/people-screen/people-search-box.png)
 
-Einige andere Steuerelemente interagieren oder eine Abhängigkeit für das Textfeld für die Suche:
+Einige andere Steuerelemente interagieren oder haben eine Abhängigkeit vom Textfeld für die Text Suche:
 
-* Wenn ein Benutzer beginnt, geben einen beliebigen Text ein, **UserBrowseGallery** sichtbar wird.
-* Wenn ein Benutzer eine Person in auswählt **UserBrowseGallery**, den Inhalt der Suche werden zurückgesetzt.
+* Wenn ein Benutzer mit der Eingabe von Text beginnt, wird **userbrowsegallery** sichtbar.
+* Wenn ein Benutzer eine Person innerhalb von **userbrowsegallery**auswählt, wird der Such Inhalt zurückgesetzt.
 
-## <a name="user-browse-gallery"></a>Katalog durchsuchen-Benutzer
+## <a name="user-browse-gallery"></a>Katalog zum Durchsuchen von Benutzern
 
-![UserBrowseGallery-Steuerelement](media/people-screen/people-browse-gall.png)
+![Userbrowsegallery-Steuerelement](media/people-screen/people-browse-gall.png)
 
-* Eigenschaft: **Elemente**<br>
-    Wert: Die Logik, um Benutzer zu suchen, wenn der Benutzer mit der Eingabe beginnt:
+* Property **Punkte**<br>
+    Wert Logik zum Suchen von Benutzern, wenn der Benutzer mit der Eingabe beginnt:
     
-    ```powerapps-comma
-    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
+    ```powerapps-dot
+    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ); 
+                searchTerm: Trim( TextSearchBox.Text ), 
                 top: 15
             }
         )
     )
     ```
     
-Die Elemente dieser Katalog vom Suchergebnisse aus aufgefüllt werden die [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) Vorgang. Der Vorgang nimmt den Text in `Trim(TextSearchBox)` als seine Suche Begriff und gibt die ersten 15 Ergebnisse basierend auf, dass die Suche. **TextSearchBox** umschlossen ist eine `Trim()` funktionieren, weil eine Benutzersuche auf Speicherplätzen ungültig ist.
+Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 365. searchuser](https://docs.microsoft.com/connectors/office365users/#searchuser) aufgefüllt. Der-Vorgang nimmt den Text in `Trim(TextSearchBox)` als Suchbegriff und gibt die 15 besten Ergebnisse basierend auf dieser Suche zurück. **Textsearchbox** ist in einer `Trim()`-Funktion umschließt, weil eine Benutzersuche in Leerzeichen ungültig ist.
 
-Die `Office365Users.SearchUser` Vorgang innerhalb einer `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` funktionieren, da Sie nur müssen, um den Vorgang aufzurufen, wenn das Suchfeld eingegebenen Text enthält. Dies verbessert die Leistung.
+Der `Office365Users.SearchUser`-Vorgang wird in einer `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`-Funktion umschließt, da Sie den Vorgang nur dann aufzurufen müssen, wenn das Suchfeld einen vom Benutzer eingegebenen Text enthält. Dadurch wird die Leistung verbessert.
 
-### <a name="userbrowsegallery-title-control"></a>UserBrowseGallery Titel des Steuerelements
+### <a name="userbrowsegallery-title-control"></a>Userbrowsegallery-Titel Steuerelement
 
-![UserBrowseGallery Titel des Steuerelements](media/people-screen/people-browse-gall-title.png)
+![Userbrowsegallery-Titel Steuerelement](media/people-screen/people-browse-gall-title.png)
 
-* Eigenschaft: **Text**<br>Wert: `ThisItem.DisplayName`
+* Property **Text**<br>Wert: `ThisItem.DisplayName`
 
-  Zeigt den Namen der Person Anzeige aus ihrer Office 365-Profil an.
+  Zeigt den anzeigen amen der Person aus Ihrem Office 365-Profil an.
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: Code, um den Benutzer zu einer Sammlung auf app-Ebene hinzuzufügen, und wählen Sie dann den Benutzer:
+* Property **OnSelect**<br>
+    Wert Code zum Hinzufügen des Benutzers zu einer Sammlung auf App-Ebene, und wählen Sie dann den Benutzer aus:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
-Dieses Steuerelement auswählen, führt drei Aufgaben gleichzeitig:
+Wenn Sie dieses Steuerelement auswählen, werden gleichzeitig drei Dinge
 
-   * Legt die  **\_SelectedUser** -Variable auf das ausgewählte Element.
-   * Setzt den gesuchten Begriff in **TextSearchBox**.
-   * Fügt das ausgewählte Element auf der **MyPeople** -Auflistung, die eine Auflistung aller Personen der app-Benutzer wurde ausgewählt.
+   * Legt die Variable **\_selecteduser** auf das ausgewählte Element fest.
+   * Setzt den Suchbegriff in **textsearchbox**zurück.
+   * Fügt das ausgewählte Element der **mypeople** -Auflistung hinzu, einer Auflistung aller Personen, die der App-Benutzer ausgewählt hat.
 
-### <a name="userbrowsegallery-profileimage-control"></a>UserBrowseGallery ProfileImage-Steuerelement
+### <a name="userbrowsegallery-profileimage-control"></a>Userbrowsegallery ProfileImage-Steuerelement
 
-![UserBrowseGallery ProfileImage-Steuerelement](media/people-screen/people-browse-gall-image.png)
+![Userbrowsegallery ProfileImage-Steuerelement](media/people-screen/people-browse-gall-image.png)
 
-* Eigenschaft: **Bild**<br>
-    Wert: Die Logik zum Abrufen eines Benutzers das Profilfoto.
+* Property **Bild**<br>
+    Wert Logik zum Abrufen des Profil Fotos eines Benutzers.
 
-    ```powerapps-comma
+    ```powerapps-dot
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
 
-Die **Image** Steuerelement abruft Bild des Benutzers mit der [Office365Users.UserPhoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-) Vorgang. Allerdings wird geprüft, ob zuvor zwei Dinge:
+Das **Image** -Steuerelement ruft das Image des Benutzers mit dem [Office365Users. userphoto](https://docs.microsoft.com/connectors/office365users/#get-user-photo--v1-) -Vorgang ab. Vor diesem Vorgang werden jedoch zwei Dinge überprüft:
   
-   * Gibt an, ob das ID-Feld leer oder nicht leer ist. Dies verhindert, dass die **Image** Steuerelement versucht, ein benutzerfoto abgerufen werden soll, bis die Galerie mit Suchergebnissen aufgefüllt wurde.
-   * Gibt an, ob der Benutzer ein Foto hat (mit der [Office365Users.UserPhotoMetadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata) Vorgang). Dies verhindert, dass die `Office365Users.UserPhoto` Datensuche in eine Ausnahme zurückgegeben, wenn der Benutzer nicht über ein Profilbild verfügt.
+   * Gibt an, ob das ID-Feld leer oder nicht leer ist. Dadurch wird verhindert, dass das **Image** -Steuerelement versucht, ein Benutzer Foto abzurufen, bevor der Katalog mit den Suchergebnissen aufgefüllt wurde.
+   * Gibt an, ob der Benutzer ein Foto hat (mit dem [Office365Users. userphotometadata](https://docs.microsoft.com/connectors/office365users/#get-user-photo-metadata) -Vorgang). Dadurch wird verhindert, dass die `Office365Users.UserPhoto`-Suche eine Ausnahme zurückgibt, wenn der Benutzer kein Profilbild hat.
 
-Beachten Sie, dass, wenn ein Bild abgerufen wird nicht die **Image** -Steuerelement leer ist und die **IconUser** -Steuerelement sichtbar ist, stattdessen ist.
+Beachten Sie, dass das **Bild** Steuerelement leer ist, wenn ein Bild nicht abgerufen wird, und stattdessen das **iconuser** -Steuerelement sichtbar ist.
 
-## <a name="people-added-gallery"></a>Katalog Personen hinzugefügt
+## <a name="people-added-gallery"></a>Von Benutzern hinzugefügte Galerie
 
-![PeopleAddedGallery-Steuerelement](media/people-screen/people-people-gall.png)
+![People addecodgallery-Steuerelement](media/people-screen/people-people-gall.png)
 
-* Eigenschaft: **Elemente**<br>
+* Property **Punkte**<br>
     Wert: `MyPeople`
 
-Dies ist die Sammlung von Personen, die dazu hinzugefügt oder initialisiert die **UserBrowseGallery Titel** Steuerelement.
+Dabei handelt es sich um die Auflistung von Personen, die initialisiert oder hinzugefügt werden, indem das Steuerelement **userbrowsegallery** ausgewählt wird.
 
-### <a name="peopleaddedgallery-title-control"></a>PeopleAddedGallery Titel des Steuerelements
+### <a name="peopleaddedgallery-title-control"></a>People addecodgallery-Titel Steuerelement
 
-![PeopleAddedGallery Titel des Steuerelements](media/people-screen/people-people-gall-title.png)
+![People addecodgallery-Titel Steuerelement](media/people-screen/people-people-gall-title.png)
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: `Set( _selectedUser; ThisItem )`
+* Property **OnSelect**<br>
+    Wert: `Set( _selectedUser, ThisItem )`
 
-Legt die **_selectedUser** -Variable auf das Element im ausgewählten **EmailPeopleGallery**.
+Legt die **_selectedUser** -Variable auf das in **emailpeoplegallery**ausgewählte Element fest.
 
-### <a name="peopleaddedgallery-iconremove-control"></a>PeopleAddedGallery IconRemove-Steuerelement
+### <a name="peopleaddedgallery-iconremove-control"></a>People addecodgallery-iconremove-Steuerelement
 
-![PeopleAddedGallery IconRemove-Steuerelement](media/people-screen/people-people-gall-delete.png)
+![People addecodgallery-iconremove-Steuerelement](media/people-screen/people-people-gall-delete.png)
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+* Property **OnSelect**<br>
+    Wert: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
-Sucht nach den Datensatz in die **MyPeople** Sammlung, in denen **"userPrincipalName"** entspricht der **"userPrincipalName"** ausgewählte Element, und klicken Sie dann entfernt, die von Aufzeichnen der Auflistung.
+Sucht den Datensatz in der **mypeople** -Auflistung, wobei " **userPrincipalName** " mit dem " **userPrincipalName** " des ausgewählten Elements übereinstimmt, und entfernt diesen Datensatz dann aus der Sammlung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [Weitere Informationen zu diesem Bildschirm](./people-screen-overview.md).
-* [Erfahren Sie mehr über das Office 365 Outlook-Connector](../connections/connection-office365-outlook.md).
-* [Erfahren Sie mehr über das Office 365-Benutzer-Connector](../connections/connection-office365-users.md).
+* [Erfahren Sie mehr über den Outlook-Connector von Office 365](../connections/connection-office365-outlook.md).
+* [Erfahren Sie mehr über den Connector für Office 365-Benutzer](../connections/connection-office365-users.md).

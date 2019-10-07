@@ -1,25 +1,24 @@
 ---
 title: Erstellen einer Canvas-App anhand von Excel-Daten | Microsoft-Dokumentation
 description: In diesem Tutorial erstellen Sie eine Canvas-App mit zwei Bildschirmen, damit Benutzer Datensätze erstellen, bearbeiten und löschen können.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/26/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
-ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
+ms.openlocfilehash: d0a7a164210fcfd9593455f825092417bd31a692
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000104"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983650"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Erstellen einer Canvas-App anhand von Excel-Daten
 
@@ -33,12 +32,12 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     | StartDay | StartTime | Volunteer | Mindestsicherung |
     | --- | --- | --- | --- |
-    | Samstag |10am-noon |Vasquez |Kumashiro |
+    | Saturday |10am-noon |Vasquez |Kumashiro |
     | Saturday |noon-2pm |Ice |Singhal |
-    | Samstag |2pm-4pm |Myk |Mueller |
-    | Sonntag |10am-noon |Li |Adams |
-    | Sonntag | noon-2pm |Singh |Morgan |
-    | Sonntag | 2pm-4pm |Batye |Nguyen |
+    | Saturday |2pm-4pm |Myk |Mueller |
+    | Sunday |10am-noon |Li |Adams |
+    | Sunday | noon-2pm |Singh |Morgan |
+    | Sunday | 2pm-4pm |Batye |Nguyen |
 
 2. Formatieren Sie diese Daten als Tabelle mit dem Namen **Schedule**, sodass die Informationen von PowerApps analysiert werden können.
 
@@ -112,17 +111,17 @@ Damit Sie die Schritte in diesem Tutorial genau ausführen können, erstellen Si
 
     Die Formel stimmt mit diesem Beispiel überein:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -197,7 +196,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der **ChangeScreen** angezeigt, wobei jedes Feld leer ist, damit der Benutzer einen Datensatz einfacher erstellen kann.
 
@@ -207,7 +206,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für den Pfeil auf die folgende Formel fest:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird in **ChangeScreen** jedes Feld mit den Daten für den ausgewählten Datensatz angezeigt, sodass der Benutzer den Datensatz leichter bearbeiten oder löschen kann.
 
@@ -219,7 +218,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für dieses Symbol auf die folgende Formel fest:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen verworfen, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -229,7 +228,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Häkchen auf die folgende Formel fest:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, werden alle Änderungen gespeichert, die er in diesem Bildschirm vorgenommen hat, und der Anzeigebildschirm wird geöffnet.
 
@@ -247,7 +246,7 @@ Weitere Informationen zu diesen und anderen Funktionen finden Sie unter [formula
 
 1. Legen Sie die Eigenschaft **OnSelect** für das Papierkorbsymbol auf die folgende Formel fest:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Wenn der Benutzer dieses Symbol auswählt, wird der ausgewählte Datensatz aus der Datenquelle gelöscht, und der Anzeigebildschirm wird geöffnet.
 

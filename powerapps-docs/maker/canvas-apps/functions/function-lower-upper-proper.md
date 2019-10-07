@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72e1bd234a9cbccc24cf35723ee10bacd175b278
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563802"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984554"
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>Lower-, Upper- und Proper-Funktionen in PowerApps
 Konvertiert Buchstaben in einer Textzeichenfolge in alle Kleinbuchstaben, Großbuchstaben oder den richtigen Fall.
@@ -63,12 +62,12 @@ Jede Formel gibt eine einspaltige Tabelle zurück, die die konvertierten Zeichen
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Konvertiert den ersten Kleinbuchstaben jedes Worts in Großbuchstaben und Großbuchstaben in Kleinbuchstaben. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert alle Kleinbuchstaben in Großbuchstaben. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Konvertiert den ersten Kleinbuchstaben jedes Worts in Großbuchstaben und Großbuchstaben in Kleinbuchstaben. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
-1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement hinzu, und benennen Sie es **Source**.
+1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)** -Steuerelement hinzu, und benennen Sie es **Source**.
 2. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](../controls/properties-core.md)** auf diese Funktion fest:<br>**Proper(Source.Text)**
 3. Drücken Sie F5, und geben Sie anschließend **WE ARE THE BEST!** (WIR SIND DIE BESTEN!) ein. in das Feld **Quelle** ein.<br>Die Bezeichnung zeigt **We Are The Best!** (WIR SIND DIE BESTEN!).
 

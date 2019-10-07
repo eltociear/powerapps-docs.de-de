@@ -1,28 +1,28 @@
 ---
 title: Grundlegendes zu lokalen Datengateways für Canvas-Apps | Microsoft-Dokumentation
 description: Referenzinformationen zu lokalen Datengateways, einschl. Installation in PowerApps und Problembehandlung
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 095496aba49f722d439960a25242153b9daea382
-ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
+ms.openlocfilehash: 4ac1df1d6a2901345436b899e3c7088f746eb2aa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70310050"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983339"
 ---
 # <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>Grundlegendes zu lokalen Datengateways für Canvas-Apps
 ## <a name="installation-and-configuration"></a>Installation und Konfiguration
-**Erforderliche Komponenten**
+**Voraussetzungen**
 
 Minimum:
 
@@ -91,14 +91,16 @@ Sie können überprüfen, ob Ihre Firewall oder Ihr Proxy möglicherweise Verbin
 
 Die Ergebnisse sollten diesem Beispiel ähneln. Wenn **TcpTestSucceeded** nicht **TRUE** ist, werden Sie möglicherweise durch eine Firewall blockiert.
 
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
+```
+ComputerName           : watchdog.servicebus.windows.net
+RemoteAddress          : 70.37.104.240
+RemotePort             : 5672
+InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+SourceAddress          : 10.120.60.105
+PingSucceeded          : False
+PingReplyDetails (RTT) : 0 ms
+TcpTestSucceeded       : True
+```
 
 Wenn Sie einen vollständigen Test durchführen möchten, ersetzen Sie die Werte für **ComputerName** und **Port** durch die Werte, die unter **Konfigurieren von Ports** weiter unten in diesem Thema aufgeführt werden.
 
@@ -231,7 +233,7 @@ Wenn ein Benutzer mit einem Element interagiert, das mit einer lokalen Datenquel
 #### <a name="update-to-the-latest-version"></a>Aktualisieren auf die neueste Version
 Viele Probleme können auftreten, wenn die Gatewayversion veraltet ist.  Es wird allgemein empfohlen, die neueste Version zu verwenden.  Wenn Sie das Gateway einen Monat oder länger nicht aktualisiert haben, empfiehlt es sich, die neueste Version des Gateways zu installieren und zu sehen, ob das Problem erneut auftritt.
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fehler: Fehler beim Hinzufügen des Benutzers zur Gruppe.  (-2147463168   PBIEgwService   Leistungsprotokollbenutzer   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Zeit Fehler beim Hinzufügen des Benutzers zur Gruppe.  (-2147463168   PBIEgwService   Leistungsprotokollbenutzer   )
 Dieser Fehler wird möglicherweise angezeigt, wenn Sie versuchen, das Gateway auf einem Domänencontroller zu installieren, da dies nicht unterstützt wird. Sie müssen das Gateway auf einem Computer bereitstellen, der kein Domänencontroller ist.
 
 ## <a name="tools"></a>Tools

@@ -1,126 +1,125 @@
 ---
 title: App-Objekt | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen, für das App-Objekt in PowerApps
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für das App-Objekt in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 232accd1050fb84816e86ea95069b8c8778f6586
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451608"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983501"
 ---
-# <a name="app-object-in-powerapps"></a>App-Objekt, in PowerApps
+# <a name="app-object-in-powerapps"></a>App-Objekt in powerapps
 
-Enthält Informationen über die aktuell ausgeführte app und die Kontrolle über das Verhalten der app.
+Stellt Informationen über die derzeit laufende App bereit und steuert das Verhalten der app.
 
 ## <a name="description"></a>Beschreibung
 
-Wie Sie ein Steuerelement, das **App** -Objekt bietet Eigenschaften, die identifizieren, welcher Bildschirm angezeigt wird, die der Benutzer aufgefordert, Änderungen zu speichern, damit sie nicht verloren gehen. Jede app hat eine **App** Objekt.
+Wie ein-Steuerelement stellt das **App** -Objekteigenschaften bereit, mit denen der Bildschirm angezeigt wird, der den Benutzer auffordert, Änderungen zu speichern, damit Sie nicht verloren gehen. Jede APP verfügt über ein **App** -Objekt.
 
-Sie können Formeln für einige Eigenschaften der Schreiben der **App** Objekt. Am oberen Rand der **Strukturansicht** wählen Sie im Bereich der **App** Objekt wie alle anderen steuern oder würden Bildschirm. Zeigen Sie an und bearbeiten Sie eine der Eigenschaften des Objekts durch Auswahl aus der Dropdown-Liste auf der linken Seite der Bearbeitungsleiste.
+Sie können Formeln für einige Eigenschaften des **App** -Objekts schreiben. Wählen Sie oben im Struktur **Ansichts** Bereich das **App** -Objekt wie jedes andere Steuerelement oder Bildschirm aus. Sie können eine der Eigenschaften des Objekts anzeigen und bearbeiten, indem Sie Sie in der Dropdown Liste links neben der Bearbeitungs Leiste auswählen.
 
 > [!div class="mx-imgBorder"]
-> ![Das App-Objekt in der Strukturansicht anzuzeigen](media/object-app/appobject.png)
+> ![Das App-Objekt im Struktur Ansichts Bereich @ no__t-1
 
-## <a name="activescreen-property"></a>ActiveScreen-Eigenschaft
+## <a name="activescreen-property"></a>Activescreen (Eigenschaft)
 
-Die **ActiveScreen** identifiziert den Bildschirm, der angezeigt wird.
+Die **activescreen** -Eigenschaft identifiziert den Bildschirm, der angezeigt wird.
 
-Diese Eigenschaft gibt ein Bildschirmobjekt, die Sie verwenden können, verweisen auf Bildschirmeigenschaften oder vergleichen mit einem anderen Bildschirm, um zu bestimmen, welcher Bildschirm angezeigt wird. Sie können auch den Ausdruck **App.ActiveScreen.Name** um den Namen des Bildschirms abzurufen, die angezeigt wird.
+Diese Eigenschaft gibt ein Bildschirm Objekt zurück, das Sie verwenden können, um auf Eigenschaften des Bildschirms zu verweisen oder mit einem anderen Bildschirm zu vergleichen, um zu bestimmen, welcher Bildschirm angezeigt wird Sie können auch den Ausdruck **app.ActiveScreen.Name** verwenden, um den Namen des Bildschirms abzurufen, der angezeigt wird.
 
-Verwenden der **[wieder](function-navigate.md)** oder **[Navigate](function-navigate.md)** Funktion, um den Bildschirm zu ändern, die angezeigt wird.
+Verwenden Sie die Funktion **[Back](function-navigate.md)** oder **[Navigate](function-navigate.md)** , um den Bildschirm zu ändern, der angezeigt wird.
 
 ## <a name="onstart-property"></a>OnStart-Eigenschaft
 
-Die **OnStart** Eigenschaft ausgeführt wird, wenn der Benutzer die app startet. App-Entwickler verwenden diese Eigenschaft normalerweise zum Ausführen dieser Aufgaben:
+Die **OnStart** -Eigenschaft wird ausgeführt, wenn der Benutzer die APP startet. App-Ersteller verwenden diese Eigenschaft häufig, um die folgenden Aufgaben auszuführen:
 
-- Abrufen und Zwischenspeichern von Daten in Sammlungen mithilfe der **[sammeln](function-clear-collect-clearcollect.md)** Funktion.
-- Einrichten der globalen Variablen mithilfe der **[festgelegt](function-set.md)** Funktion.
-- Navigieren Sie zu einer ersten Bildschirm mit der **[Navigate](function-navigate.md)** Funktion.
+- Abrufen und Zwischenspeichern von Daten in Sammlungen mithilfe der **[Collect](function-clear-collect-clearcollect.md)** -Funktion.
+- Richten Sie globale Variablen mit der **[Set](function-set.md)** -Funktion ein.
+- Navigieren Sie mit der **[Navigate](function-navigate.md)** -Funktion zu einem ersten Bildschirm.
 
-Diese Formel wird ausgewertet, bevor der erste Bildschirm angezeigt wird. Kein Bildschirm geladen wird, damit Sie Kontextvariablen mit festlegen, können die **["updatecontext"](function-updatecontext.md)** Funktion. Sie können aber auch Kontextvariablen mit übergeben die **Navigate** Funktion.
+Diese Formel wird ausgewertet, bevor der erste Bildschirm angezeigt wird. Es wurde kein Bildschirm geladen, sodass Sie keine Kontext Variablen mit der Funktion **[updatecontext](function-updatecontext.md)** festlegen können. Sie können jedoch Kontext Variablen mit der **Navigate** -Funktion übergeben.
 
-Nach dem Ändern der **OnStart** -Eigenschaft, testen, indem Sie mit dem Mauszeiger auf die **App** -Objekt in der **Strukturansicht** Bereich, Sie auf die Auslassungspunkte (...), der angezeigt wird, und wählen dann **Ausführen OnStart**. Im Gegensatz zu, wenn die app zum ersten Mal geladen wird werden vorhandene Auflistungen und Variablen bereits festgelegt. Für den Einstieg leere Sammlungen, verwenden Sie die **[ClearCollect](function-clear-collect-clearcollect.md)** -Funktion anstelle von der **sammeln** Funktion.
+Nachdem Sie die **OnStart** -Eigenschaft geändert haben, testen Sie Sie, indem Sie im Struktur **Ansichts** Bereich auf das **App** -Objekt zeigen, **und wählen Sie**dann die Schaltfläche mit den Auslassungs Punkten (...) aus, die angezeigt wird. Wenn die APP zum ersten Mal geladen wird, werden bereits vorhandene Sammlungen und Variablen festgelegt. Verwenden Sie die **[clearcollect](function-clear-collect-clearcollect.md)** -Funktion anstelle der **Collect** -Funktion, um mit leeren Auflistungen zu beginnen.
 
 > [!div class="mx-imgBorder"]
-> ![App-Menü für arbeitselementverknüpfung in OnStart ausführen](media/object-app/appobject-runonstart.png)
+> ![app-Item-Kontextmenü für Run OnStart @ no__t-1
 
-## <a name="confirmexit-properties"></a>ConfirmExit-Eigenschaften
+## <a name="confirmexit-properties"></a>Confirmexit-Eigenschaften
 
-Niemand möchte, dass nicht gespeicherte Änderungen verloren gehen. Verwenden der **ConfirmExit** und **ConfirmExitMessage** Eigenschaften, die den Benutzer zu warnen, bevor sie Ihre app zu schließen.
-
-> [!NOTE]
-> **ConfirmExit** funktioniert nicht in apps, die in, z. B. eingebettet sind Power BI und SharePoint.
+Niemand möchte nicht gespeicherte Änderungen verlieren. Verwenden Sie die Eigenschaften **confirmexit** und **confirmexitmessage** , um den Benutzer vor dem Schließen Ihrer APP zu warnen.
 
 > [!NOTE]
-> Derzeit können diese Eigenschaften nur der erste Bildschirm Steuerelemente verweisen, wenn die **verzögerte Laden** Vorschaufeature aktiviert ist (es wird standardmäßig für neue apps ist). Wenn Verweise vorgenommen werden, wird PowerApps Studio keinen Fehler angezeigt, aber nicht die resultierende veröffentlichte app in PowerApps Mobile oder in einem Browser geöffnet. Wir arbeiten aktiv daran, diese Einschränkung aufzuheben. In der Zwischenzeit können Sie deaktivieren **verzögerte Laden** in **Datei** > **Anwendungseinstellungen** > **Erweiterte Einstellungen**(unter **Vorschaufeatures**).
+> **Confirmexit** funktioniert nicht in apps, die in eingebettet sind, z. b. Power BI und SharePoint.
 
-### <a name="confirmexit"></a>ConfirmExit
+> [!NOTE]
+> Diese Eigenschaften können derzeit nur auf Steuerelemente auf dem ersten Bildschirm verweisen, wenn die Vorschau Funktion für **Verzögertes Laden** aktiviert ist (Dies ist standardmäßig für neue apps der Fall). Wenn Verweise erstellt werden, zeigt PowerApps Studio keinen Fehler an, aber die resultierende veröffentlichte APP wird nicht in powerapps Mobile oder einem Browser geöffnet. Wir arbeiten aktiv daran, diese Einschränkung aufzuheben. In der Zwischenzeit können Sie das **verzögerte Laden** in **Datei** > -**App-Einstellungen** > **Erweiterte Einstellungen** (unter **Vorschau Features**) deaktivieren.
 
-**ConfirmExit** ist eine boolesche Eigenschaft, wenn *"true"* , geöffnet wird, wird ein Bestätigungsdialogfeld die app geschlossen wird. Diese Eigenschaft ist standardmäßig *"false"* , und kein Dialogfeld angezeigt wird.
+### <a name="confirmexit"></a>Confirmexit
 
-Verwenden Sie diese Eigenschaft, um ein Bestätigungsdialogfeld angezeigt wird, wenn der Benutzer Änderungen vorgenommen hat, aber nicht werden gespeichert. Verwenden Sie eine Formel, die Variablen überprüfen und steuern die Eigenschaften kann (z. B. die **Unsaved** Eigenschaft der [ **Bearbeitungsformular** ](../controls/control-form-detail.md) Steuerelement).
+**Confirmexit** ist eine boolesche Eigenschaft, die bei *true*ein Bestätigungs Dialogfeld öffnet, bevor die app geschlossen wird. Standardmäßig ist diese Eigenschaft *false*, und es wird kein Dialogfeld angezeigt.
 
-Das Dialogfeld zur Bestätigung wird angezeigt, in einer Situation, in denen Daten wie in diesen Beispielen verloren gehen könnten:
+Verwenden Sie diese Eigenschaft, um ein Bestätigungs Dialogfeld anzuzeigen, wenn der Benutzer Änderungen vorgenommen, aber nicht gespeichert hat. Verwenden Sie eine Formel, die Variablen und Steuerelement Eigenschaften überprüfen kann (z. b. die **nicht gespeicherte** Eigenschaft des [**Bearbeitungs Formular**](../controls/control-form-detail.md) -Steuer Elements).
 
-- Ausführen der [ **beenden** ](function-exit.md) Funktion.
+Das Bestätigungs Dialogfeld wird in jeder Situation angezeigt, in der Daten verloren gehen können, wie in den folgenden Beispielen:
+
+- Ausführen der [**Exit**](function-exit.md) -Funktion.
 - Wenn die app in einem Browser ausgeführt wird:
-  - Schließen den Browser oder die Registerkarte "Browser" in der die app ausgeführt wird.
-  - Wählen im Browser auf die Schaltfläche "zurück".
-- Wenn die app in PowerApps Mobile (iOS oder Android) ausgeführt wird:
-  - Ausführen der [ **starten** ](function-param.md) Funktion.<br>Die **starten** Funktion nicht das Dialogfeld in einem Browser auslösen, da eine andere Registerkarte öffnet, damit Daten nicht verloren geht.
-  - Wischen, um in eine andere app in PowerApps Mobile zu wechseln.
-  - Auswählen der Schaltfläche "zurück", auf einem Android-Gerät.
+  - Schließen des Browsers oder der Browser Registerkarte, in der die app ausgeführt wird.
+  - Die Schaltfläche "zurück" des Browsers wird ausgewählt.
+- Wenn die app in powerapps Mobile (IOS oder Android) ausgeführt wird:
+  - Die [**Launch**](function-param.md) -Funktion wird ausgeführt.<br>Die **Launch** -Funktion löst das Dialogfeld in einem Browser nicht aus, da eine andere Registerkarte geöffnet wird, sodass keine Daten verloren gehen.
+  - Wischen Sie, um zu einer anderen app in powerapps Mobile zu wechseln.
+  - Auswählen der Schaltfläche "zurück" auf einem Android-Gerät.
 
-Die genaue Darstellung der im Dialogfeld zum bestätigen kann übergreifend für Geräte und PowerApps-Versionen variieren.
+Das genaue Erscheinungsbild des Bestätigungs Dialogfelds kann von Geräten und Versionen von powerapps abweichen.
 
-Das Dialogfeld zur Bestätigung wird in PowerApps Studio angezeigt.
+Das Bestätigungs Dialogfeld wird nicht in PowerApps Studio angezeigt.
 
-### <a name="confirmexitmessage"></a>ConfirmExitMessage
+### <a name="confirmexitmessage"></a>Confirmexitmessage
 
-Standardmäßig zeigt das Dialogfeld zur Bestätigung eine generische Meldung, z. B. **"Möglicherweise Ihre ungespeicherten Änderungen."** in der Sprache des Benutzers.
+Standardmäßig zeigt das Bestätigungs Dialogfeld eine generische Meldung an, z **. b. "möglicherweise sind nicht gespeicherte Änderungen vorhanden".** in der Sprache des Benutzers.
 
-Verwendung **ConfirmExitMessage** , geben Sie eine benutzerdefinierte Meldung in das Dialogfeld zur Bestätigung. Wenn diese Eigenschaft *leere*, der Standardwert verwendet wird. Benutzerdefinierte Meldungen werden abgeschnitten, sofern nötig, um in das Dialogfeld zur Bestätigung passen, wird, der die Nachricht in ein paar Zeilen höchstens.
+Verwenden Sie **confirmexitmessage** , um im Bestätigungs Dialogfeld eine benutzerdefinierte Meldung bereitzustellen. Wenn diese Eigenschaft *leer*ist, wird der Standardwert verwendet. Benutzerdefinierte Nachrichten werden nach Bedarf gekürzt, damit Sie in das Bestätigungs Dialogfeld passen. behalten Sie die Nachricht also höchstens ein paar Zeilen.
 
-In einem Browser möglicherweise das Dialogfeld zur Bestätigung über dem Browser mit eine generische Meldung angezeigt.
+In einem Browser wird das Bestätigungs Dialogfeld möglicherweise mit einer generischen Meldung aus dem Browser angezeigt.
 
 ### <a name="example"></a>Beispiel
 
-1. Erstellen Sie eine app, die zwei Formularsteuerelemente, enthält **AccountForm** und **ContactForm**.
+1. Erstellen Sie eine APP, die zwei Formular Steuerelemente enthält: **accountform** und **contactform**.
 
-1. Legen Sie die **App** des Objekts **ConfirmExit** Eigenschaft auf den folgenden Ausdruck:
+1. Legen Sie die **confirmexit** -Eigenschaft des **App** -Objekts auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
-    Dieses Dialogfeld wird angezeigt, wenn der Benutzer Daten in einer der Formen geändert und anschließend wird versucht, die app zu schließen, ohne die Änderungen zu speichern.
+    Dieses Dialogfeld wird angezeigt, wenn der Benutzerdaten in einem der beiden Formulare ändert und dann versucht, die APP zu schließen, ohne diese Änderungen zu speichern.
 
     > [!div class="mx-imgBorder"]
-    > ![Generische Bestätigungsdialogfeld](media/object-app/confirm-native.png)
+    > Dialogfeld ' generische ![-Bestätigung ' @ no__t-1
 
-1. Legen Sie die **App** des Objekts **ConfirmExitMessage** -Eigenschaft auf diese Formel:
+1. Legen Sie die **confirmexitmessage** -Eigenschaft des **App** -Objekts auf diese Formel fest:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```
 
-    Dieses Dialogfeld wird angezeigt, wenn der Benutzer Daten in das Formular ändert und anschließend wird versucht, die app zu schließen, ohne die Änderungen zu speichern.
+    Dieses Dialogfeld wird angezeigt, wenn der Benutzer die Daten im Kontoformular ändert und dann versucht, die APP zu schließen, ohne diese Änderungen zu speichern.
 
     > [!div class="mx-imgBorder"]
-    > ![Dialogfeld zum Bestätigen der Formular-spezifische](media/object-app/confirm-native-custom.png)
+    > ![formular spezifisches Bestätigungs Dialogfeld @ no__t-1

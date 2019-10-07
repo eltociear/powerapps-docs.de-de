@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/11/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 74584e5855c6c72c619b4baefc2652f9ccc68997
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed31bd165eb2289819800b6f2e01121c2681ae9e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520609"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984082"
 ---
 # <a name="select-function-in-powerapps"></a>Funktion „Select“ in PowerApps
 Simuliert eine Auswahlaktion für ein Steuerelement, sodass die Formel **OnSelect** ausgewertet wird.
@@ -50,7 +49,7 @@ Verwenden Sie **Select** nur in [Verhaltensformeln](../working-with-formulas-in-
 
 #### <a name="basic-usage"></a>Grundlegende Nutzung
 
-1. Fügen Sie ein **[Schaltflächen](../controls/control-button.md)**-Steuerelement hinzu, und benennen Sie es in **Button1** um, wenn es nicht bereits so heißt.
+1. Fügen Sie ein **[Schaltflächen](../controls/control-button.md)** -Steuerelement hinzu, und benennen Sie es in **Button1** um, wenn es nicht bereits so heißt.
 
 1. Legen Sie die Eigenschaft **OnSelect** von **Button1** auf die folgende Formel fest:
 
@@ -84,7 +83,7 @@ Verwenden Sie **Select** nur in [Verhaltensformeln](../working-with-formulas-in-
 
 5. Legen Sie die Eigenschaft **OnSelect** des Bildsteuerelements auf die folgende Formel fest:
 
-    **Notify( "Image Selected"; Success )**
+    **Notify( "Image Selected", Success )**
 
 6. Während Sie die ALT-TASTE gedrückt halten, klicken oder tippen Sie auf die verschiedenen Elemente des Katalogs.
 

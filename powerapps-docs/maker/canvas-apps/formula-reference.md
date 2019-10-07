@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008974"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992920"
 ---
 # <a name="formula-reference-for-powerapps"></a>Referenz zu Formeln für PowerApps
 Formeln kombinieren viele Elemente miteinander.  Im Folgenden sind aufgeführt:
@@ -268,7 +268,7 @@ Andere Elemente enthalten:
 
 **[Refresh](functions/function-refresh.md)** : aktualisiert die Datensätze einer Datenquelle.
 
-**[Relate](functions/function-relate-unrelate.md)** – Verknüpft Datensätze zweier Entitäten über eine 1: n-oder m:n-Beziehung.
+**[– Verknüpft](functions/function-relate-unrelate.md)** Datensätze zweier Entitäten über eine 1: n-oder m:n-Beziehung.
 
 **[Remove](functions/function-remove-removeif.md)** : entfernt einen oder mehrere bestimmte Datensätze aus einer Datenquelle.
 
@@ -369,7 +369,7 @@ Andere Elemente enthalten:
 
 **[User](functions/function-user.md)** : Gibt Informationen über den aktuellen Benutzer zurück.
 
-## <a name="v"></a>B
+## <a name="v"></a>V
 **[Validate](functions/function-validate.md)** : überprüft, ob der Wert einer einzelnen Spalte oder eines vollständigen Datensatzes für eine Datenquelle gültig ist.
 
 **[Value](functions/function-value.md)** : konvertiert eine Zeichenfolge in eine Zahl.
@@ -383,6 +383,6 @@ Andere Elemente enthalten:
 
 **[Mit](functions/function-with.md)** – berechnet Werte und führt Aktionen für einen einzelnen Datensatz aus, einschließlich Inline Datensätze benannter Werte.
 
-## <a name="y"></a>J
+## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** : ruft den Jahresteil eines Datums- oder Uhrzeitwerts ab.  
 

@@ -1,24 +1,24 @@
 ---
 title: Erste Anmeldung | Microsoft-Dokumentation
 description: Die neue Anlaufstelle für App-Entwickler
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 08/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 735894f8e28d25777aa7f66146f5782da2ab2f3e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: dd50652f0021079b4b9d4d23568ba148a8ce6a5b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553453"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989994"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
 
@@ -42,7 +42,7 @@ Um optimale Ergebnisse zu erzielen, stellen Sie zunächst sicher, dass die Start
 
 ## <a name="choose-an-environment"></a>Auswählen einer Umgebung
 
-Ob Sie eine app, einen Flow, einer Datenverbindung oder einer Entität in gängigen erstellen, ist Data Service, was Sie in PowerApps erledigen ein Großteil in einer bestimmten Umgebung enthalten. Umgebungen sorgen für Abgrenzungen zwischen verschiedenen Arbeitsbereichen. Eine Organisation kann beispielsweise über getrennte Umgebungen für verschiedene Abteilungen verfügen. Viele Organisationen verwenden Umgebungen, um Apps, die sich noch in der Entwicklung befinden, von Apps zu trennen, die für die allgemeine Verwendung bereit sind. Sie können möglicherweise auf mehrere Umgebungen zugreifen oder nur auf eine. Wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie möglicherweise selbst Umgebungen erstellen.
+Unabhängig davon, ob Sie eine APP, einen Flow, eine Datenverbindung oder eine Entität in Common Data Service erstellen, sind viele Funktionen in powerapps in einer bestimmten Umgebung enthalten. Umgebungen sorgen für Abgrenzungen zwischen verschiedenen Arbeitsbereichen. Eine Organisation kann beispielsweise über getrennte Umgebungen für verschiedene Abteilungen verfügen. Viele Organisationen verwenden Umgebungen, um Apps, die sich noch in der Entwicklung befinden, von Apps zu trennen, die für die allgemeine Verwendung bereit sind. Sie können möglicherweise auf mehrere Umgebungen zugreifen oder nur auf eine. Wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie möglicherweise selbst Umgebungen erstellen.
 
 Um zu überprüfen, in welcher Umgebung Sie sich befinden, suchen Sie das Umschaltfeld für Umgebungen im Headerbereich.
 
@@ -60,9 +60,9 @@ Weitere Informationen finden Sie unter [Übersicht zu Umgebungen](../../administ
 In PowerApps können Sie die folgenden Arten von Apps erstellen und ausführen:
 
 - **Canvas-Apps** unterstützen das Entwerfen einer benutzerdefinierten Benutzeroberfläche und die Herstellung einer Verbindung mit Daten aus einer Vielzahl von Quellen.
-- **Modellgesteuerte apps** haben Sie eine standard-Benutzeroberfläche und eine Verbindung mit Daten nur im Common Data Service. Sie können jedoch einfacher andere Elemente wie Ansichten, Dashboards und verschiedene Arten von Geschäftslogik erstellen.
+- **Modell gesteuerte apps** verfügen über eine Standardbenutzer Oberfläche und stellen nur in Common Data Service eine Verbindung mit Daten her. Sie können jedoch einfacher andere Elemente wie Ansichten, Dashboards und verschiedene Arten von Geschäftslogik erstellen.
 
-Wenn Sie eine Umgebung, die über eine Common Data Service-Datenbank verfügt auswählen, können Sie erstellen, Canvas oder modellgesteuerte apps aus der gleichen **Startseite** Seite.
+Wenn Sie eine Umgebung mit einer Common Data Service-Datenbank auswählen, können Sie Canvas-oder Modell gesteuerte apps von der gleichen **Start** Seite aus erstellen.
 
 ## <a name="play-or-edit-an-app"></a>Wiedergeben oder Bearbeiten einer App
 
@@ -120,6 +120,6 @@ Mit den Optionen im Header und der linken Navigationsleiste können Sie nicht nu
 
 Erweitern Sie die Funktionalität Ihrer Apps, indem Sie folgende Aufgaben ausführen:
 
-- Verwalten von Entitäten, Optionssätze und Datenintegration in [Common Data Service](../common-data-service/data-platform-intro.md).
+- Verwalten von Entitäten, Options Sätzen und Datenintegration in [Common Data Service](../common-data-service/data-platform-intro.md).
 - Konfigurieren Sie Geschäftslogik in [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
 - Erstellen, packen und verwalten Sie [Lösungen](../../developer/common-data-service/introduction-solutions.md).

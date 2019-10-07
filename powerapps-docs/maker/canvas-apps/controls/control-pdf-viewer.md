@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 66813cf8c31fad82eeb25fd515acad4a5ea1f756
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9fdd7f25a729fa71111e1fd5d82e04b7cea874f3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548798"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986415"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PDF-Viewer-Steuerelement in PowerApps (experimentell)
 Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
@@ -26,18 +26,18 @@ Ein experimentelles Steuerelement, das den Inhalt einer PDF-Datei anzeigt.
 ## <a name="description"></a>Beschreibung
 Zeigen Sie Text, Grafiken und anderen Inhalt in einer PDF-Datei an, indem Sie diese Art von Steuerelement hinzufügen und seine **Document**-Eigenschaft auf die URL der Datei festlegen, die Sie anzeigen möchten. Verwenden Sie dabei doppelte Anführungszeichen.
 
-## <a name="limitations"></a>Einschränkungen
-1. Die Sicherheitsarchitektur PowerApps erfordert der PDF-Viewer nur HTTPS-Links, und nicht HTTP unterstützen.  
+## <a name="limitations"></a>Einschränken
+1. Die Sicherheitsarchitektur von powerapps erfordert, dass der PDF-Viewer nur HTTPS-Links, nicht aber http unterstützt.  
 
-2. Die **Dokument** Eigenschaft muss direkt in die PDF-Datei verknüpfen. Serverumleitungen oder HTML-Ansichten des Dokuments werden nicht unterstützt.
+2. Die **Document** -Eigenschaft muss direkt mit der PDF-Datei verknüpft werden. Server Umleitungen oder HTML-Ansichten des Dokuments werden nicht unterstützt.
 
-3. Der Server, der das Dokument hostet, muss keine Authentifizierung erforderlich ist.
+3. Der Server, der das Dokument hostet, darf keine Authentifizierung erfordern.
 
-4. Sie können möglicherweise kein PDF-Dokument in Ihrer app anzeigen, wenn das Dokument auf einem Server befindet, die über restriktive Cross-Origin Resource sharing (CORS)-Einstellungen verfügt. Um dieses Problem zu beheben, muss der Server, der PDF-Dokumente hostet, Cross-Origin-Anfragen auf powerapps.com zulassen.
+4. Möglicherweise sind Sie nicht in der Lage, ein PDF-Dokument in Ihrer APP anzuzeigen, wenn sich das Dokument auf einem Server befindet, der restriktive cors-Einstellungen (Cross-Origin Resource Sharing) aufweist. Um dieses Problem zu beheben, muss der Server, der PDF-Dokumente hostet, Ursprungs übergreifende Anforderungen von powerapps.com zulassen.
 
-App-Benutzer können diese Einschränkungen umgehen, indem PDF-Dokumente öffnen, in einem externen Browser, wie Sie dazu aufgefordert werden, wenn das Steuerelement ein Dokument nicht öffnen kann. Diese Option ist auch im Systemmenü für alle externen Dokumente verfügbar.
+App-Benutzer können diese Einschränkungen umgehen, indem Sie PDF-Dokumente in einem externen Browser öffnen, wie Sie dazu aufgefordert werden, wenn das Steuerelement ein Dokument nicht öffnen kann. Diese Option ist auch im Systemmenü für alle externen Dokumente verfügbar.
 
-App-Entwickler können diese Einschränkungen umgehen, durch Einschließen von PDF-Dokumente als Medienressourcen in der app. Auf diese Weise kann für das PDF-Viewer-Steuerelement immer das Dokument anzeigen.
+App-Ersteller können diese Einschränkungen umgehen, indem Sie PDF-Dokumente als Medienressourcen in die APP einschließen. Auf diese Weise kann das PDF-Viewer-Steuerelement das Dokument immer anzeigen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **Document**: gibt die, in doppelten Anführungszeichen gesetzte, URL der PDF-Datei an.
@@ -55,9 +55,9 @@ App-Entwickler können diese Einschränkungen umgehen, durch Einschließen von P
 
 **CurrentPage**: gibt die Anzahl der Seiten in einer PDF-Datei an, die tatsächlich angezeigt wird.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[DisabledBorderColor](properties-color-border.md)**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**[DisabledBorderColor](properties-color-border.md)** : Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
@@ -75,13 +75,13 @@ App-Entwickler können diese Einschränkungen umgehen, durch Einschließen von P
 
 **OnStateChange**: gibt an, wie eine App reagiert, wenn sich der Zustand des Steuerelements ändert.
 
-**[PaddingBottom](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
+**[PaddingBottom](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem unteren Rand des Steuerelements.
 
-**[PaddingLeft](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
+**[PaddingLeft](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem linken Rand des Steuerelements.
 
-**[PaddingRight](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
+**[PaddingRight](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem rechten Rand des Steuerelements.
 
-**[PaddingTop](properties-size-location.md)**: Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
+**[PaddingTop](properties-size-location.md)** : Der Abstand zwischen dem Text eines Steuerelements und dem oberen Rand des Steuerelements.
 
 **Page**: gibt die Nummer der Seite an, die Sie anzeigen möchten.
 
@@ -91,7 +91,7 @@ App-Entwickler können diese Einschränkungen umgehen, durch Einschließen von P
 
 **ShowControls**: Gibt beispielsweise an, ob für einen Audio- oder Videoplayer eine Schaltfläche für die Wiedergabe und ein Lautstärkeregler und für ein Stift-Steuerelement Symbole zum Zeichnen oder Löschen angezeigt werden.
 
-**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -109,9 +109,9 @@ Fügen Sie ein Steuerelement des Typs **PDF-Viewer** hinzu, und legen Sie seine 
 
   **„https://blog.mozilla.org/security/files/2015/05/HTTPS-FAQ.pdf“**
 
-    The control shows the PDF file.
+Das Steuerelement zeigt die PDF-Datei.
 
-    Don't know how to [add and configure a control](../add-configure-controls.md)?
+Möchten Sie wissen, wie Sie ein [Steuerelement hinzufügen und konfigurieren](../add-configure-controls.md)?
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 

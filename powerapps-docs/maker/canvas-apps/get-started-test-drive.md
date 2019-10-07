@@ -1,24 +1,24 @@
 ---
 title: Erstellen einer Canvas-App aus einer Vorlage | Microsoft-Dokumentation
 description: Ausführliche Anleitung zum automatischen Erstellen einer Canvas-App auf Grundlage einer PowerApps-Vorlage
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/19/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea5912a043dc00fa197a2070c11610c358c3201d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b0199e39c4e0220358e107905bdf62308147e67d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61553686"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983301"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Erstellen einer Canvas-App aus einer Vorlage in PowerApps
 

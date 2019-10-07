@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2f17dd975a5b8320f4b67688ab986c4e8cc98514
-ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.openlocfilehash: 528dc54fe18971ff8971b4d0d7e87c3bf3c5367a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66225139"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986021"
 ---
 # <a name="color-and-border-properties-in-powerapps"></a>Farb- und Rahmeneigenschaften in PowerApps
 
@@ -27,27 +26,27 @@ ms.PowerAppsDecimalTransform: true
 
 Konfigurieren Sie den Stil eines Steuerelements in Abhängigkeit davon, wie der Benutzer damit interagiert.
 
-Sie können die Farben in vielerlei Hinsicht angeben:
+Sie können Farben in vielerlei Hinsicht angeben:
 
-- [**Farbe** ](../functions/function-colors.md) Enumeration: Geben Sie Namen für die Farben von cascading Stylesheets, wie in diesen Beispielen:
+- [**Farbenumeration**](../functions/function-colors.md) : Geben Sie die Farbnamen aus Cascading Stylesheets an, wie in den folgenden Beispielen:
 
   - **Color.Red**
   - **Color.Indigo**
 
-- [**ColorValue** ](../functions/function-colors.md) Funktion: Geben Sie Textzeichenfolgen z. B. Farbnamen von cascading Stylesheets und Code Hex-Schreibweise (**#**), wie in diesen Beispielen:
+- [**ColorValue**](../functions/function-colors.md) -Funktion: Geben Sie Text Zeichenfolgen wie z. b. Farbnamen aus Cascading Stylesheets und Hex-Code Notation ( **#** ) an, wie in den folgenden Beispielen:
 
-  - **ColorValue( "AliceBlue" )**
+  - **ColorValue ("AliceBlue")**
   - **ColorValue( "#ff00ff" )**
 
-- [**ColorFade** ](../functions/function-colors.md) Funktion: Angeben, wie ausgeblendeten eine Farbe, von vollständig schwarz (-100 %) vollständig (100 %), wie im folgenden Beispiel in Weiß:
+- [**Colorfade**](../functions/function-colors.md) -Funktion: Geben Sie an, wie eine Farbe ausgeblendet ist, von vollständig schwarz (-100%). vollständig weiß (100%), wie in diesem Beispiel:
 
-  - **ColorFade( Color.Red; 50% )**
+  - **Colorfade (Color. Red, 50%)**
 
-- [**RGBA** ](../functions/function-colors.md) Funktion: Geben Sie die Komponenten roten, grünen und blauen einer Farbe von 0 bis 255, und geben Sie einen alpha-Kanal zwischen 0 % (vollständig transparent) auf 100 % (vollständig deckend), wie im folgenden Beispiel:
+- [**RGBA**](../functions/function-colors.md) -Funktion: Geben Sie die roten, grünen und blauen Komponenten einer Farbe zwischen 0 und 255 an, und geben Sie einen Alphakanal zwischen 0% (vollständig transparent) und 100% (vollständig deckend) an, wie in diesem Beispiel:
 
-  - **RGBA( 255; 0; 255; 25% )**
+  - **RGBA (255, 0, 255, 25%)**
 
-Color-Eigenschaften können auch andere Farbe-Eigenschaften verweisen. Z. B. **Label.PressedColor** kann festgelegt werden, auf die Formel **Label1.Color**automatisch eine Änderung einer Eigenschaft in einem anderen cascading.
+Farbeigenschaften können auch auf andere Farbeigenschaften verweisen. Beispielsweise kann **Label. pressedcolor** auf die Formel **Label1. Color**festgelegt werden, wobei eine Änderung von einer Eigenschaft in eine andere automatisch kaskadiert wird.
 
 ## <a name="normal"></a>Normal
 
@@ -55,23 +54,23 @@ Diese Eigenschaften gelten normalerweise, wenn der Benutzer nicht mit dem Steuer
 
 **BorderColor**: Die Farbe des Rahmens eines Steuerelements.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Kamera](control-camera.md)**, **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Anzeigeformular](control-form-detail.md)**, **[Dropdown](control-drop-down.md)**, **[Bearbeitungsformular](control-form-detail.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[HTML-Text](control-html-text.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Stifteingabe](control-pen-input.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Audio](control-audio-video.md)** , **[Schaltfläche](control-button.md)** , **[Kamera](control-camera.md)** , **[Karte](control-card.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Anzeigeformular](control-form-detail.md)** , **[Dropdown](control-drop-down.md)** , **[Bearbeitungsformular](control-form-detail.md)** , **[Export](control-export-import.md)** , **[Katalog](control-gallery.md)** , **[HTML-Text](control-html-text.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Stifteingabe](control-pen-input.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Bewertung](control-rating.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** , **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)** .
 
 **BorderStyle**: Legt fest, ob der Rahmen eines Steuerelements **Solid** (Durchgehend), **Dashed** (Gestrichelt), **Dotted** (Gepunktet) oder **None** (Keiner) ist.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Kamera](control-camera.md)**, **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Anzeigeformular](control-form-detail.md)**, **[Dropdown](control-drop-down.md)**, **[Bearbeitungsformular](control-form-detail.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[HTML-Text](control-html-text.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Stifteingabe](control-pen-input.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Audio](control-audio-video.md)** , **[Schaltfläche](control-button.md)** , **[Kamera](control-camera.md)** , **[Karte](control-card.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Anzeigeformular](control-form-detail.md)** , **[Dropdown](control-drop-down.md)** , **[Bearbeitungsformular](control-form-detail.md)** , **[Export](control-export-import.md)** , **[Katalog](control-gallery.md)** , **[HTML-Text](control-html-text.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Stifteingabe](control-pen-input.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Bewertung](control-rating.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** , **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)** .
 
 **BorderThickness**: Die Linienstärke des Rahmens eines Steuerelements.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Kamera](control-camera.md)**, **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Anzeigeformular](control-form-detail.md)**, **[Dropdown](control-drop-down.md)**, **[Bearbeitungsformular](control-form-detail.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[HTML-Text](control-html-text.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Stifteingabe](control-pen-input.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Audio](control-audio-video.md)** , **[Schaltfläche](control-button.md)** , **[Kamera](control-camera.md)** , **[Karte](control-card.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Anzeigeformular](control-form-detail.md)** , **[Dropdown](control-drop-down.md)** , **[Bearbeitungsformular](control-form-detail.md)** , **[Export](control-export-import.md)** , **[Katalog](control-gallery.md)** , **[HTML-Text](control-html-text.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Stifteingabe](control-pen-input.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Bewertung](control-rating.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** , **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)** .
 
 **Color**: Die Farbe des Texts in einem Steuerelement.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[HTML-Text](control-html-text.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Stifteingabe](control-pen-input.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Stifteingabe](control-pen-input.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
 **Fill**: Die Hintergrundfarbe eines Steuerelements.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Karte](control-card.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Anzeigeformular](control-form-detail.md)**, **[Dropdown](control-drop-down.md)**, **[Bearbeitungsformular](control-form-detail.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[HTML-Text](control-html-text.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Stifteingabe](control-pen-input.md)**, **[Optionsfeld](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Bildschirm](control-screen.md)**, **[Form](control-shapes-icons.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Audio](control-audio-video.md)** , **[Schaltfläche](control-button.md)** , **[Karte](control-card.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Anzeigeformular](control-form-detail.md)** , **[Dropdown](control-drop-down.md)** , **[Bearbeitungsformular](control-form-detail.md)** , **[Export](control-export-import.md)** , **[Katalog](control-gallery.md)** , **[HTML-Text](control-html-text.md)** , **[Symbol](control-shapes-icons.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Stifteingabe](control-pen-input.md)** , **[Optionsfeld](control-radio.md)** , **[Bewertung](control-rating.md)** , **[Bildschirm](control-screen.md)** , **[Form](control-shapes-icons.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** , **[Umschalten](control-toggle.md)** und **[Video](control-audio-video.md)** .
 
 ## <a name="focused"></a>Fokus
 
@@ -81,23 +80,23 @@ Diese Eigenschaften sind wirksam, wenn das Steuerelement der Fokus ist.
 
 **FocusedBorderThickness**: die Stärke des Rahmen eines Steuerelements, wenn es den Fokus hat.
 
-- Diese Eigenschaften gelten für die Steuerelemente **[Bild hinzufügen](control-add-picture.md)**, **[Anlagen](control-attachments.md)**, **[Audio](control-audio-video.md)**, **[Schaltfläche](control-button.md)**, **[Kamera](control-camera.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Kombinationsfeld](control-combo-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Katalog](control-gallery.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Radio](control-radio.md)**, **[Bewertung](control-rating.md)**, **[Form](control-shapes-icons.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)**, **[Schalter](control-toggle.md)** und **[Video](control-audio-video.md)**.
+- Diese Eigenschaften gelten für die Steuerelemente **[Bild hinzufügen](control-add-picture.md)** , **[Anlagen](control-attachments.md)** , **[Audio](control-audio-video.md)** , **[Schaltfläche](control-button.md)** , **[Kamera](control-camera.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Kombinationsfeld](control-combo-box.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Katalog](control-gallery.md)** , **[Symbol](control-shapes-icons.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Radio](control-radio.md)** , **[Bewertung](control-rating.md)** , **[Form](control-shapes-icons.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** , **[Schalter](control-toggle.md)** und **[Video](control-audio-video.md)** .
 
 ## <a name="disabled"></a>Deaktiviert
 
-Diese Eigenschaften sind wirksam, wenn das Steuerelement deaktiviert ist.  Ein Steuerelement kann deaktiviert werden, indem die **[Disabled](properties-core.md)**-Eigenschaft auf *true* festgelegt wird.
+Diese Eigenschaften sind wirksam, wenn das Steuerelement deaktiviert ist.  Ein Steuerelement kann deaktiviert werden, indem die **[Disabled](properties-core.md)** -Eigenschaft auf *true* festgelegt wird.
 
-**DisabledBorderColor**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)**-Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
+**DisabledBorderColor**: Die Farbe des Steuerelementrahmens, wenn die **[DisplayMode](properties-core.md)** -Eigenschaft des Steuerelements auf **Disabled** (Deaktiviert) festgelegt ist.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[HTML-Text](control-html-text.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Optionsfeld](control-radio.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)** und **[Umschalten](control-toggle.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Optionsfeld](control-radio.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** und **[Umschalten](control-toggle.md)** .
 
-**DisabledColor**: Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**DisabledColor**: Die Farbe des Texts in einem Steuerelement, wenn seine **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
-**DisabledFill**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)**-Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
+**DisabledFill**: Die Hintergrundfarbe eines Steuerelements, wenn dessen **[DisplayMode](properties-core.md)** -Eigenschaft auf **Disabled** (Deaktiviert) festgelegt ist.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Datumsauswahl](control-date-picker.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[HTML-Text](control-html-text.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Datumsauswahl](control-date-picker.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
 ## <a name="hover"></a>Daraufzeigen
 
@@ -105,15 +104,15 @@ Diese Eigenschaften sind wirksam, wenn der Benutzer mit der Maus auf das Steuere
 
 **HoverBorderColor**: Die Rahmenfarbe eines Steuerelements, wenn der Benutzer den Mauszeiger auf das Steuerelement bewegt.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[HTML-Text](control-html-text.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)** und **[Umschalten](control-toggle.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[HTML-Text](control-html-text.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** und **[Umschalten](control-toggle.md)** .
 
 **HoverColor**: Die Farbe des Texts in einem Steuerelement, wenn der Benutzer mit der Maus darauf zeigt.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
 **HoverFill**: Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer mit der Maus darauf zeigt.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Optionsfeld](control-radio.md)**, **[Form](control-shapes-icons.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Symbol](control-shapes-icons.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Optionsfeld](control-radio.md)** , **[Form](control-shapes-icons.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
 ## <a name="pressed"></a>Gedrückt
 
@@ -121,15 +120,15 @@ Diese Eigenschaften sind wirksam, wenn eine Schaltfläche oder ein Bildsteuerele
 
 **PressedBorderColor**: Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Säulendiagramm](control-column-line-chart.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Symbol](control-shapes-icons.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Liniendiagramm](control-column-line-chart.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[PDF-Viewer](control-pdf-viewer.md)**, **[Kreisdiagramm](control-pie-chart.md)**, **[Form](control-shapes-icons.md)**, **[Schieberegler](control-slider.md)**, **[Texteingabe](control-text-input.md)**, **[Timer](control-timer.md)** und **[Umschalten](control-toggle.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Säulendiagramm](control-column-line-chart.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Symbol](control-shapes-icons.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Liniendiagramm](control-column-line-chart.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[PDF-Viewer](control-pdf-viewer.md)** , **[Kreisdiagramm](control-pie-chart.md)** , **[Form](control-shapes-icons.md)** , **[Schieberegler](control-slider.md)** , **[Texteingabe](control-text-input.md)** , **[Timer](control-timer.md)** und **[Umschalten](control-toggle.md)** .
 
 **PressedColor**: Die Farbe des Texts in einem Steuerelement, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
 **PressedFill**: Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)**, **[Schaltfläche](control-button.md)**, **[Kontrollkästchen](control-check-box.md)**, **[Dropdown](control-drop-down.md)**, **[Export](control-export-import.md)**, **[Bild](control-image.md)**, **[Import](control-export-import.md)**, **[Bezeichnung](control-text-box.md)**, **[Listenfeld](control-list-box.md)**, **[Mikrofon](control-microphone.md)**, **[Optionsfeld](control-radio.md)**, **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Bild hinzufügen](control-add-picture.md)** , **[Schaltfläche](control-button.md)** , **[Kontrollkästchen](control-check-box.md)** , **[Dropdown](control-drop-down.md)** , **[Export](control-export-import.md)** , **[Bild](control-image.md)** , **[Import](control-export-import.md)** , **[Bezeichnung](control-text-box.md)** , **[Listenfeld](control-list-box.md)** , **[Mikrofon](control-microphone.md)** , **[Optionsfeld](control-radio.md)** , **[Texteingabe](control-text-input.md)** und **[Timer](control-timer.md)** .
 
 ## <a name="selection"></a>Auswahl
 
@@ -137,8 +136,8 @@ Diese Eigenschaften sind wirksam, wenn der Benutzer ein Element in einem Steuere
 
 **SelectionColor**: Die Textfarbe des ausgewählten Elements oder der Elemente in einer Liste oder die Farbe des Auswahltools in einem Stift-Steuerelement.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Dropdown](control-drop-down.md)**, **[Listenfeld](control-list-box.md)** und **[Stifteingabe](control-pen-input.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Dropdown](control-drop-down.md)** , **[Listenfeld](control-list-box.md)** und **[Stifteingabe](control-pen-input.md)** .
 
 **SelectionFill**: Die Hintergrundfarbe des ausgewählten Elements oder der Elemente in einer Liste oder eines ausgewählten Bereichs eines Stift-Steuerelements.
 
-- Gilt für Steuerelemente des folgenden Typs: **[Dropdown](control-drop-down.md)** und **[Listenfeld](control-list-box.md)**.
+- Gilt für Steuerelemente des folgenden Typs: **[Dropdown](control-drop-down.md)** und **[Listenfeld](control-list-box.md)** .

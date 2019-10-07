@@ -7,19 +7,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/20/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5abda1f3c208567ad9e1e2888647d20b07949be
-ms.sourcegitcommit: 8bad6bff1b3397b21654df4a9357dd0180fbcfe6
+ms.openlocfilehash: b56fcf1b0ee14bf9a39b4c0ad54d4e707d635f37
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65046036"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994750"
 ---
 # <a name="understand-experimental-and-preview-features-in-powerapps"></a>Informationen zu Vorschaufeatures und experimentellen Features
 
@@ -33,9 +33,9 @@ Größere Features durchlaufen mehrere Phasen, um Verbesserungen und Auswirkunge
 
 Features durchlaufen drei verschiedene Phasen, bevor sie offizieller Bestandteil des Produkts werden:
 
-1. **Experimentelle**:  Diese Funktion ist noch In Bearbeitung. Verlassen Sie sich nicht auf dieses Feature. Es kann sein, dass es sich noch deutlich verändert.
-1. **Vorschau**:  Dieses Feature ist fast fertig und stabil ist. Sie können mit der Migration vorhandener Apps beginnen.
-1. **Geliefert**:  Dieses Feature wird durchgeführt. Das Feature ist für alle Apps aktiviert, und Sie können es nicht deaktivieren.
+1. **Experimentell**:  Diese Funktion wird zurzeit ausgeführt. Verlassen Sie sich nicht auf dieses Feature. Es kann sein, dass es sich noch deutlich verändert.
+1. **Vorschau**:  Diese Funktion ist fast abgeschlossen und stabil. Sie können mit der Migration vorhandener Apps beginnen.
+1. **Ausgeliefert**:  Diese Funktion ist abgeschlossen. Das Feature ist für alle Apps aktiviert, und Sie können es nicht deaktivieren.
 
 Mit jeder Phase steigt die Zahl an Benutzern des Features, sodass wir überprüfen können, ob Bedarf für dieses Feature besteht und ob es in den frühen Phasen noch Nebeneffekte gibt.
 
@@ -45,7 +45,7 @@ Wie lange befindet sich ein Feature in einer der oben genannten Phasen? Das kann
 
 Anhand dieser Tabelle können Sie entscheiden, wann es für Sie am sinnvollsten ist, mit der Verwendung von Features zu beginnen: 
 
-| Phase | Wann sollte ich es verwenden? | Ist es zuverlässig? | Ist es standardmäßig für neue Apps aktiviert? | 
+| Phase | Wann sollte ich Sie verwenden? | Ist es zuverlässig? | Ist es standardmäßig für neue Apps aktiviert? | 
 |----|----|----|-----|------|
 | **Experimentell** | Wenn Sie ein Early Adopter sind, ein Feature nützlich für Sie sein könnte, oder Sie beim Testen des Features helfen möchten | Nein.  Experimentelle Features können sich noch deutlich verändern oder im Laufe der Zeit wieder vollständig verschwinden. | Nein. Sie müssen sich explizit für das Feature entscheiden.  |  
 | **Vorschau** | Neue Apps beinhalten dieses Feature automatisch.  Sie können das Feature in vorhandenen Apps aktivieren und testen, da es irgendwann auch für vorhandene Apps aktiviert wird. | Ja. Dieses Feature soll ein permanenter Bestandteil des Produkts werden.  | Ja. Sie sollten es deaktivieren, wenn ein Problem auftritt.  Melden Sie uns diese Probleme, denn genau aus diesem Grund befindet sich das Feature noch in der Vorschauphase. | 
@@ -53,7 +53,7 @@ Anhand dieser Tabelle können Sie entscheiden, wann es für Sie am sinnvollsten 
 
 Am Ende der Vorschauphase wird ein Feature möglicherweise für alle Apps aktiviert, und dann befindet es sich in der **abschließenden Überprüfung**.  Durch diese Änderungen haben auch die Letzten die Möglichkeit, das Feature auszuprobieren, während es noch deaktiviert werden kann. Zeitnahe Rückmeldung ist in dieser Phase essentiell, da das Feature in der nächsten Phase ausgeliefert wird und nicht mehr deaktiviert werden kann.
 
-In der endgültige Übergang **Shipped**, können wir den Vorschau-Switch in apps, die für die das Feature bereits aktiviert ist, und die Funktion dauerhaft auf wandelt entfernen. Diese Änderung gilt für die meisten apps, da das Feature auf standardmäßig wurden vor diesem Zeitpunkt. Für apps, in dem das Feature deaktiviert ist, werden der Vorschau-Schalter für Sie zu aktivieren, mit der Funktion zu testen, und deaktivieren Sie in der gleichen Sitzung von PowerApps Studio. Jedoch wenn Sie die app speichern, wenn der Schalter aktiviert ist, wird nicht es verfügbar, wenn die app erneut geladen wird, damit Sie das Feature wieder deaktivieren, können nicht. An diesem Punkt können Sie [der app auf eine frühere Version wiederherstellen](restore-an-app.md) auf die app in einen Zustand zu versetzen, bevor die Funktion aktiviert wurde.
+Im letzten Übergang zu " **ausgeliefert**" entfernen wir ggf. den Preview-Switch in apps, für die das Feature bereits aktiviert ist, und schalten die Funktion effektiv dauerhaft ein. Diese Änderung gilt für die meisten apps, da die Funktion vor diesem Zeitpunkt standardmäßig aktiviert ist. Für apps, bei denen die Funktion ausgeschaltet ist, steht Ihnen der Preview-Switch weiterhin zur Verfügung, mit dem Sie die Funktion aktivieren, testen und in derselben Sitzung PowerApps Studio deaktivieren können. Wenn Sie die APP jedoch speichern, wenn der Schalter aktiviert ist, ist Sie nicht verfügbar, wenn die APP neu geladen wird, sodass Sie die Funktion nicht mehr deaktivieren können. An diesem Punkt können Sie [die APP auf eine vorherige Version](restore-an-app.md) zurücksetzen, um die APP wieder in einen Zustand zu versetzen, bevor die Funktion aktiviert wurde.
 
 ## <a name="documentation"></a>Dokumentation
 

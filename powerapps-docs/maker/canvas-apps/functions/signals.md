@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/29/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d375adeb8a20dfe2d9629a9c34944a8dcd80a8e7
-ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
+ms.openlocfilehash: a06217470482eccdf368279eaabcd297bbf73ce5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66451439"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983364"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-powerapps"></a>Die Signale „Acceleration“, „App“, „Compass“, „Connection“ und „Location“
 
@@ -26,12 +26,12 @@ Gibt Informationen zur App-Umgebung zurück, z.B. den Standort des Benutzers und
 
 ## <a name="description-and-syntax"></a>Beschreibung und Syntax
 
-Signale sind Werte, die sich ändern können, zu einem beliebigen Zeitpunkt, unabhängig von der, wie der Benutzer mit der app interagiert werden kann. Formeln, die automatisch auf Signalen basieren neu berechnen, wie diese Werte zu ändern.
+Signale sind Werte, die jederzeit geändert werden können, unabhängig davon, wie der Benutzer mit der APP interagieren kann. Formeln, die auf Signalen basieren, werden automatisch neu berechnet, wenn sich diese Werte ändern.
 
-Signale zurück, in der Regel eine [Datensatz](../working-with-tables.md#records) Informationen. Sie können diese Informationen als Datensatz verwenden und speichern oder einzelne Eigenschaften mithilfe des **.** - [Operators](operators.md) extrahieren.
+Signale geben in der Regel einen [Datensatz](../working-with-tables.md#records) von Informationen zurück. Sie können diese Informationen als Datensatz verwenden und speichern oder einzelne Eigenschaften mithilfe des **.** - [Operators](operators.md) extrahieren.
 
 > [!NOTE]
-> Die **Acceleration** und **Compass** Funktionen geben genaue Werte in einen nativen Spieler wie z. B. unter iOS oder Android zurück, aber diese Funktionen geben einen Nullwert zurück beim Erstellen oder eine app im Browser zu ändern.
+> Die Funktionen **Acceleration** und **Compass** geben genaue Werte in einem systemeigenen Player wie z. b. unter IOS oder Android zurück, aber diese Funktionen geben beim Erstellen oder Ändern einer APP im Browser NULL-Werte zurück.
 
 ### <a name="acceleration"></a>Acceleration
 
@@ -45,13 +45,13 @@ Das Signal **Acceleration** gibt die Beschleunigung des Geräts dreidimensional 
 
 ### <a name="app"></a>App
 
-Unter anderem den **App** Objekt enthält ein Signal, der angibt, welcher Bildschirm angezeigt wird.
+Neben anderen Eigenschaften enthält das **App** -Objekt ein Signal, das angibt, welcher Bildschirm angezeigt wird.
 
 | Eigenschaft | Beschreibung |
 | --- | --- |
-| **App.ActiveScreen** |Bildschirm, der angezeigt wird. Gibt ein Bildschirmobjekt, die Sie verwenden können, verweisen auf Bildschirmeigenschaften oder vergleichen mit einem anderen Bildschirm, um zu bestimmen, welcher Bildschirm angezeigt wird. Können Sie die **[wieder](function-navigate.md)** oder **[Navigate](function-navigate.md)** Funktion, um den Bildschirm zu ändern, die angezeigt wird. |
+| **App.ActiveScreen** |Bildschirm, der angezeigt wird. Gibt ein Bildschirm Objekt zurück, mit dem Sie auf Eigenschaften des Bildschirms verweisen oder mit einem anderen Bildschirm vergleichen können, um zu bestimmen, welcher Bildschirm angezeigt wird. Mit der **[Back](function-navigate.md)** -oder **[Navigate](function-navigate.md)** -Funktion können Sie den Bildschirm ändern, der angezeigt wird. |
 
-Weitere Informationen finden Sie unter: [**App** Objekt](object-app.md) Dokumentation.
+Weitere Informationen finden Sie unter: Dokumentation zu [ **App** -Objekten](object-app.md) .
 
 ### <a name="compass"></a>Compass
 Das Signal **Compass** gibt die Kompassausrichtung des oberen Bildschirmrands zurück. Die Ausrichtung basiert auf dem elektromagnetischen Norden.
@@ -82,18 +82,18 @@ Wenn sich der Standort ändert, werden Abhängigkeiten vom Standort kontinuierli
 | **Location.Longitude** |Gibt eine Zahl zwischen 0 und 180 zurück, die den Längengrad westwärts von Greenwich, England in Grad angibt. |
 
 ## <a name="examples"></a>Beispiele
-In einem Feld Baseball löst ein Pitcher aus des pitchers ein Smartphone, einem Catcher auf der Home Plate an. Das Telefon fliegt flach über dem Boden, der obere Bildschirmrand zeigt auf den Catcher, und der Pitcher fügt kein Drehmoment hinzu. In diesem Moment hat das Telefon getakteten Mobilfunknetzdienst, jedoch kein WLAN. Die **PlayBall**-Bildschirm wird angezeigt.   
+In einem Baseball-Feld löst ein Pitcher ein Telefon aus dem Muter des Pitcher an einen Fänger an der Hausplatte aus. Das Telefon fliegt flach über dem Boden, der obere Bildschirmrand zeigt auf den Catcher, und der Pitcher fügt kein Drehmoment hinzu. In diesem Moment hat das Telefon getakteten Mobilfunknetzdienst, jedoch kein WLAN. Die **PlayBall**-Bildschirm wird angezeigt.   
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Location.Latitude** |Gibt den Breitengrad der aktuellen Position zurück. Das Feld befindet sich an den Koordinaten 47.591 N, 122.333 w. |47.591<br><br>Der Breitengrad wird fortlaufend geändert, während sich der Ball vom Pitcher zum Catcher bewegt. |
+| **Location.Latitude** |Gibt den Breitengrad der aktuellen Position zurück. Das Feld befindet sich in den Kartenkoordinaten 47,591 N, 122,333 W. |47.591<br><br>Der Breitengrad wird fortlaufend geändert, während sich der Ball vom Pitcher zum Catcher bewegt. |
 | **Location.Longitude** |Gibt den Längengrad der aktuellen Position zurück |122.333<br><br>Der Längengrad wird fortlaufend geändert, während sich der Ball vom Pitcher zum Catcher bewegt. |
 | **Location** |Gibt den Längen- und Breitengrad des aktuellen Standorts in einem Datensatz zurück |{&nbsp;Breitengrad:&nbsp;47.591, Längengrad:&nbsp;122.333&nbsp;} |
-| **Compass.Heading** |Gibt die Kompassausrichtung des oberen Bildschirmrands zurück Dieses Feld liegt die Home Platte aus des pitchers ungefähr Südwesten. |230.25 |
+| **Compass.Heading** |Gibt die Kompassausrichtung des oberen Bildschirmrands zurück In diesem Feld befindet sich die Hausplatte ungefähr Südwest von der Spitze des Pitcher. |230.25 |
 | **Acceleration.X** |Gibt die Beschleunigung des Geräts von linkem zu rechtem Rand an. Der Pitcher wirft das Gerät in Bezug auf den oberen Bildschirmrand geradeaus, sodass das Gerät nicht von Seite zu Seite beschleunigt. |0 |
 | **Acceleration.Y** |Gibt die Beschleunigung des Geräts zwischen Vorder- und Rückseite an. Der Pitcher beschleunigt das Gerät anfänglich durch den Wurf erheblich, von 0 auf 90 Meilen pro Stunde (132 Fuß pro Sekunde) innerhalb einer halben Sekunde. Einmal in der Luft beschleunigt das Telefon, wenn die Luftreibung außen vor gelassen wird, nicht weiter. Das Gerät wird verlangsamt, wenn der Catcher es fängt, und wird angehalten. |8.2, während der Pitcher das Geräts wirft<br><br>0, während sich das Gerät in der Luft befindet<br><br>-8.2, während der Catcher das Gerät fängt |
 | **Acceleration.Z** |Gibt die Beschleunigung des Geräts vom oberen zum unteren Rand an. Das Telefon unterliegt in der Luft den Auswirkungen der Schwerkraft. |0, bevor der Pitcher das Geräts wirft<br><br>1, während sich das Gerät in der Luft befindet<br><br>0, nachdem der Catcher das Gerät gefangen hat |
-| **Acceleration** |Gibt die Beschleunigung als Datensatz zurück |{ X: 0, Y: 264, Z: {0} als der Pitcher das Gerät löst. |
+| **Acceleration** |Gibt die Beschleunigung als Datensatz zurück |STUBEN 0, Y: 264, Z: 0}, da der Pitcher das Gerät auslöst. |
 | **Connection.Connected** |Gibt einen booleschen Wert zurück, der angibt, ob das Gerät mit einem Netzwerk verbunden ist |**TRUE** |
 | **Connection.Metered** |Gibt einen booleschen Wert zurück, der angibt, ob die Verbindung getaktet ist |**TRUE** |
 | **App.ActiveScreen = PlayBall** |Gibt einen booleschen Wert zurück, der angibt, ob **PlayBall** angezeigt wird. |**TRUE** |

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6d1b1083fcc7e865fa7c9cfe3f8966e20ed86a5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: dbbff1f85ccc104a1a0f88c6b9670c45c0528592
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670873"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993480"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Kombinationsfeld-Steuerelement in PowerApps
 Ein Steuerelement, das es Benutzern ermöglicht, unter Optionen eine Auswahl zu treffen.  Unterstützt die Suche und Mehrfachauswahl.
@@ -36,7 +36,7 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Items](properties-core.md)** – Die Quelle der Daten, aus der Elemente ausgewählt werden können.
 
-**DefaultSelectedItems** – die ursprünglich ausgewählten Elemente aus, bevor der Benutzer mit dem Steuerelement interagiert.
+**Defaultselecteditems** – die ersten ausgewählten Elemente, bevor der Benutzer mit dem Steuerelement interagiert.
 
 **SelectedItems** – Die Liste der aufgrund der Benutzerinteraktion ausgewählten Elemente.
 
@@ -47,7 +47,7 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 **SearchFields**: Die Datenfelder der Datenquelle, die durchsucht werden, wenn Benutzer Text eingeben.  Um mehrere Felder zu durchsuchen, legen Sie Folgendes fest: ComboBox1.SearchFields = ["MyFirstColumn", "MySecondColumn"]
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben
 
 **[BorderColor](properties-color-border.md)** – Die Farbe des Rahmens eines Steuerelements.
 
@@ -57,11 +57,11 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 
 **DisplayFields** – Die Liste der Felder, die für jedes von der Suche zurückgegebene Element angezeigt werden.  Diese Eigenschaft lässt sich am einfachsten im Bereich „Daten“ der Optionsregisterkarte „Eigenschaften“ konfigurieren.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -73,7 +73,7 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -84,19 +84,19 @@ Wenn Sie ein **Kombinationsfeld** als Personenauswahl verwenden möchten, wähle
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="example"></a>Beispiel
-1. Auf der **einfügen** Registerkarte Öffnen der **Steuerelemente** Menü, und wählen Sie dann **Kombinationsfeld**.  
+1. Öffnen Sie auf der Registerkarte **Einfügen** das Menü Steuer **Elemente** , und wählen Sie dann Kombinations **Feld**aus.  
 
-1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, und Öffnen der **Vybrat zdroj DAT** Liste (neben **Elemente**), und klicken Sie dann hinzufügen, oder wählen Sie eine Datenquelle.
+1. Öffnen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich die Liste **Datenquelle auswählen** (neben **Elemente**), und fügen Sie dann eine Datenquelle hinzu, oder wählen Sie Sie aus.
 
-1. Wählen Sie auf der gleichen Registerkarte **bearbeiten** (neben **Felder**).
+1. Wählen Sie auf der gleichen Registerkarte **Bearbeiten** (neben **Felder**) aus.
 
-1. In der **Daten** , öffnen Sie im Bereich der **primärer Text** aus, und wählen Sie die Spalte, die in angezeigt werden sollen. die **Kombinationsfeld** Steuerelement.
+1. Öffnen Sie im Bereich **Daten** die **primäre Textliste** , und wählen Sie dann die Spalte aus, die Sie im Kombinations **Feld** -Steuerelement anzeigen möchten.
 
-1. Wählen Sie den Pfeil nach unten zu öffnen, während Sie die Alt-Taste gedrückt halten, die **Kombinationsfeld** Steuerelement.
+1. Wählen Sie bei gedrückter Alt-Taste den Pfeil nach unten aus, um das Kombinations **Feld** -Steuerelement zu öffnen.
 
-    Das Steuerelement zeigt die Daten aus der Spalte, die Sie in der Datenquelle angegeben, dass Sie angegeben haben.
+    Das-Steuerelement zeigt die Daten aus der Spalte an, die Sie in der von Ihnen angegebenen Datenquelle angegeben haben.
     
-1. (optional) Um den ersten Datensatz in der Standardeinstellung anzuzeigen, legen die **DefaultSelectedItems** Eigenschaft auf den folgenden Ausdruck ein, und Ersetzen Sie dabei *DataSource* mit dem Namen der Datenquelle:
+1. optionale Um den ersten Datensatz standardmäßig anzuzeigen, legen Sie die **defaultselecteditems** -Eigenschaft auf diesen Ausdruck fest, und ersetzen Sie dabei *DataSource* durch den Namen Ihrer Datenquelle:
 
     `First(DataSource)`
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/23/2018
 ms.author: tahoon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 586c82804380846ef400f020c4ce55c07262730f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549971"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987784"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Barrierefreiheit und Farben für Canvas-Apps in PowerApps
 In einer App sollten nur Farben verwendet werden, die für barrierefreien Zugriff für farbenblinde und sehbehinderte Benutzer geeignet sind. Alle PowerApps-Designs sind standardmäßig barrierefrei. Beachten Sie diese Richtlinien, wenn Sie die in einer App verwendeten Farben ändern, um weiterhin Barrierefreiheit sicherzustellen. Online stehen mehrere Tools zur Verfügung, die Sie beim Bestimmen von Farbkontrasten unterstützen können.
@@ -36,7 +36,7 @@ Praktisch müssen alle interaktiven Steuerelemente einen ausreichenden Farbkontr
 ## <a name="minimum-contrast-for-non-text"></a>Minimaler Kontrast bei Nichttextinhalten
 
 > [!NOTE]
-> Die Kontrastanforderungen im Standard [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) gelten nur für Text. Um die Barrierefreiheit zu steigern, beachten Sie die kommenden [WCAG 2.1-Kontrastrichtlinien](https://www.w3.org/TR/WCAG21/#non-text-contrast) für wichtige Benutzeroberflächenkomponenten wie Symbolschaltflächen. Ein minimales Verhältnis von 3:1 wird für diese Komponenten empfohlen. In diesem Abschnitt beschriebenen Richtlinien sind **optional** für WCAG 2.0-Kompatibilität.
+> Die Kontrastanforderungen im Standard [WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) gelten nur für Text. Um die Barrierefreiheit zu steigern, beachten Sie die kommenden [WCAG 2.1-Kontrastrichtlinien](https://www.w3.org/TR/WCAG21/#non-text-contrast) für wichtige Benutzeroberflächenkomponenten wie Symbolschaltflächen. Ein minimales Verhältnis von 3:1 wird für diese Komponenten empfohlen. Die in diesem Abschnitt beschriebenen Richtlinien sind **optional** für die WCAG 2,0-Konformität.
 
 ### <a name="user-interface-components"></a>Benutzeroberflächenkomponenten
 Alle interaktiven Steuerelemente müssen einen ausreichenden Farbkontrast aufweisen zwischen:
@@ -55,7 +55,7 @@ Wenn kein Rahmen vorhanden ist, sollte der Farbkontrast ausreichend sein zwische
 * **[HoverFill](controls/properties-color-border.md)** und der Farbe außerhalb des Steuerelements
 
 ### <a name="graphical-objects"></a>Grafikobjekte
-Wenn ein Bild wichtige Informationen vermittelt, achten Sie besonders auf etwaige Kontrastprobleme. Dies gilt für Steuerelemente, in denen ein Bild angezeigt werden können: **[Audio](controls/control-audio-video.md)** ,  **[Image](controls/control-image.md)** ,  **[Mikrofon](controls/control-microphone.md)** , und **[Video](controls/control-audio-video.md)** .
+Wenn ein Bild wichtige Informationen vermittelt, achten Sie besonders auf etwaige Kontrastprobleme. Dies gilt für Steuerelemente, in denen ein Bild angezeigt werden kann: **[Audiodatei](controls/control-audio-video.md)** , **[Bild](controls/control-image.md)** , **[Mikrofon](controls/control-microphone.md)** und **[Video](controls/control-audio-video.md)** .
 
 Überprüfen Sie Videoinhalte auf Kontrastprobleme. Stellen Sie alternativ oder darüber hinaus [Untertitel](controls/control-audio-video.md) bereit, die das Video beschreiben.
 

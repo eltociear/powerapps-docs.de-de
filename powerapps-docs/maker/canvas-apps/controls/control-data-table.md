@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: jasongre
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb7c2ac88c24197d014ebdc1b2b6a50e4802e0bf
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319374"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993809"
 ---
 # <a name="data-table-control-in-powerapps"></a>Datentabellen-Steuerelement in PowerApps
 Dient zum Anzeigen eines Satzes von Daten im Tabellenformat.
@@ -60,7 +59,7 @@ Das **Datentabellen**-Steuerelement wurde am 5. Mai 2017 in PowerApps eingeführ
 
 ## <a name="other-properties"></a>Weitere Eigenschaften
 * [**BorderColor**](properties-color-border.md): die Farbe des Rahmens des **Datentabellen**-Steuerelements.
-* [**BorderStyle**](properties-color-border.md): der Stil des Rahmen des **Datentabellen**-Steuerelements. Die verfügbaren Optionen sind **Solid (Gefüllt)**, **Dashed (Gestrichelt)**, **Dotted (Gepunktet)** und **None (Ohne)**.
+* [**BorderStyle**](properties-color-border.md): der Stil des Rahmen des **Datentabellen**-Steuerelements. Die verfügbaren Optionen sind **Solid (Gefüllt)** , **Dashed (Gestrichelt)** , **Dotted (Gepunktet)** und **None (Ohne)** .
 * [**BorderThickness**](properties-color-border.md): die Stärke des Rahmens des **Datentabellen**-Steuerelements.
 * [**Color**](properties-color-border.md): die Standardtextfarbe für alle Datenzeilen.
 * [**Fill**](properties-color-border.md): die Standardhintergrundfarbe für alle Datenzeilen.
@@ -84,8 +83,8 @@ Das **Datentabellen**-Steuerelement wurde am 5. Mai 2017 in PowerApps eingeführ
 * [**Y**](properties-size-location.md): der Abstand zwischen dem oberen Rand des **Datentabellen**-Steuerelements und dem oberen Rand seines übergeordneten Containers (oder dem oberen Bildschirmrand, wenn es keinen übergeordneten Container gibt).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-* [**Filter(Datenquelle; Formel)**](../functions/function-filter-lookup.md)(*Datenquelle*, *Formel*)
-* [**Search(Datenquelle; Suchzeichenfolge; Spalte)**](../functions/function-filter-lookup.md)(*Datenquelle*, *Suchzeichenfolge*, *Spalte*)
+* [**Filter(Datenquelle, Formel)** ](../functions/function-filter-lookup.md)(*Datenquelle*, *Formel*)
+* [**Search(Datenquelle, Suchzeichenfolge, Spalte)** ](../functions/function-filter-lookup.md)(*Datenquelle*, *Suchzeichenfolge*, *Spalte*)
 
 ## <a name="examples"></a>Beispiele
 ### <a name="basic-usage"></a>Grundlegende Nutzung
@@ -122,7 +121,7 @@ Das **Datentabellen**-Steuerelement wurde am 5. Mai 2017 in PowerApps eingeführ
 
 ### <a name="restyle-the-header-for-the-data-table-control"></a>Neuformatieren der Überschriften des „Datentabellen“-Steuerelements
 1. Klicken oder tippen Sie bei ausgewähltem **Datentabellen**-Steuerelement im rechten Bereich auf die Registerkarte **Erweitert**.
-2. Klicken oder tippen Sie auf das Feld für die Eigenschaft **HeadingFill**, und ändern Sie dann den Wert in **RGBA(62;96;170;1)**.
+2. Klicken oder tippen Sie auf das Feld für die Eigenschaft **HeadingFill**, und ändern Sie dann den Wert in **RGBA(62,96,170,1)** .
 3. Klicken oder tippen Sie auf das Feld für die Eigenschaft **HeadingColor**, und ändern Sie dann den Wert in **White**.
 4. Klicken oder tippen Sie auf das Feld für **HeadingSize**, und ändern Sie dann den Wert in **14**.
    

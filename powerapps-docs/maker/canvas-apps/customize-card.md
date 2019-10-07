@@ -1,26 +1,26 @@
 ---
-title: Anpassen einer Karte in einer Canvas-app | Microsoft-Dokumentation
-description: Ändern des Standardsteuerelements, das in einer Karte in einem Details-angezeigt wird oder Edit-Formular in einer Canvas-app
-author: AFTOwen
+title: Anpassen einer Karte in einer Canvas-App | Microsoft-Dokumentation
+description: Ändern des Standard Steuer Elements, das auf einer Karte in einem Detail-oder Bearbeitungs Formular in einer Canvas-App angezeigt wird
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/18/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5bcf1515f72bdce0872f91c64b5ac4fe5028ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559801"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985915"
 ---
-# <a name="customize-a-card-in-a-canvas-app"></a>Anpassen einer Karte in einer Canvas-app
+# <a name="customize-a-card-in-a-canvas-app"></a>Anpassen einer Karte in einer Canvas-App
 
 Führen Sie eine grundlegende Anpassung (ohne Entsperren einer Karte) durch, indem Sie beispielsweise das Steuerelement ändern. Erweiterte Anpassung (mit Aufheben der Sperre einer Karte), indem Sie z.B. ein Steuerelement hinzufügen, das für diese Karte standardmäßig nicht verfügbar ist.
 
@@ -29,7 +29,7 @@ Eine Übersicht finden Sie unter [Grundlegendes zu Datenkarten](working-with-car
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - Grundlegende Informationen zum [Hinzufügen und Konfigurieren von Steuerelementen](add-configure-controls.md).
-- Sie können in diesem Thema zur allgemeinen Information verwenden oder folgen sie Schritt für Schritt Durcharbeiten der Verfahren in den folgenden Themen:
+- Sie können dieses Thema nur auf allgemeine Konzepte überprüfen, oder Sie können es Schritt für Schritt befolgen, wenn Sie die Verfahren in den folgenden Themen ausführen:
 
     1. [Generate an app (Generieren einer App)](data-platform-create-app.md)
     1. [Customize its gallery (Anpassen des Katalogs)](customize-layout-sharepoint.md)
@@ -37,45 +37,45 @@ Eine Übersicht finden Sie unter [Grundlegendes zu Datenkarten](working-with-car
 
 ## <a name="customize-a-locked-card"></a>Anpassen einer gesperrten Karte
 
-Ersetzen Sie in diesem Verfahren eine **[Texteingabe-](controls/control-text-input.md)** steuern Sie mit einem **[Schieberegler] (Steuerelemente/Steuerelement-slider.md** Steuerelement ohne die Karte zu entsperren.
+In diesem Verfahren ersetzen Sie ein **[Text Eingabe-](controls/control-text-input.md)** Steuerelement durch einen **[Schieberegler] (Steuerelemente/Steuerelement-Schieberegler. MD-** Steuerelement, ohne die Karte zu entsperren.
 
-1. Wählen Sie in der app, die Sie generiert und angepasst, **EditForm1** im linken Navigationsbereich, und klicken Sie anschließend **Bearbeitungsfelder** auf die **Eigenschaften** Registerkarte im rechten Bereich.
+1. Wählen Sie in der APP, die Sie generiert und angepasst haben, in der linken Navigationsleiste **EditForm1** aus, und klicken Sie dann auf der Registerkarte **Eigenschaften** des rechten Bereichs auf **Felder bearbeiten** .
 
-1. Wählen Sie in der Liste der Felder, die den Pfeil nach unten **Number of Employees**, und öffnen Sie dann die Liste unter **Steuerelementtyp**.
+1. Wählen Sie in der Liste der Felder den Pfeil nach unten für **Anzahl von Mitarbeitern**aus, und öffnen Sie dann die Liste unter **Steuerungstyp**.
 
     > [!div class="mx-imgBorder"]
-    > ![Dropdown-Liste von Optionen für eine zahlenkarte](./media/customize-card/card-selector.png)
+    > ![dropdown Liste mit Optionen für eine zahlenkarte @ no__t-1
 
-1. Wählen Sie **Schieberegler bearbeiten**.
+1. Wählen Sie **Schieberegler bearbeiten**aus.
 
     Der Bildschirm spiegelt die vorgenommene Änderung wider.
 
     > [!div class="mx-imgBorder"]
-    > ![EditForm1 mit Schieberegler-Steuerelement](./media/customize-card/add-slider.png)
+    > ![editform1 mit Schieberegler-Steuerelement @ no__t-1
 
 ## <a name="unlock-and-customize-a-card"></a>Entsperren und Anpassen einer Karte
 
-In diesem Verfahren entsperren Sie eine Karte und aktualisieren Sie die **Max** Eigenschaft der **Schieberegler** -Steuerelement, das Sie gerade hinzugefügt haben.
+In diesem Verfahren entsperren Sie eine Karte und aktualisieren die Eigenschaft **Max** des **Schieberegler** -Steuer Elements, das Sie soeben hinzugefügt haben.
 
-1. In **EditForm1**, wählen die **Schieberegler** steuern, der **Number of Employees** Karte.
-
-    > [!div class="mx-imgBorder"]
-    > ![Wählen Sie den Schieberegler](./media/customize-card/select-slider.png)
-
-1. Auf der **erweitert** Registerkarte im rechten Bereich, wählen Sie das Schlosssymbol, um die Karte zu entsperren.
+1. Wählen Sie in **EditForm1**das **Schieberegler** -Steuerelement auf der Karte **Anzahl von Mitarbeitern** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Karte zu entsperren](./media/customize-card/lock-icon.png)
+    > ![wählen Sie den Schieberegler @ no__t-1 aus.
 
-1. Legen Sie die **Max** Eigenschaft der **Schieberegler** Steuerelement auf 10.000.
-
-    > [!div class="mx-imgBorder"]
-    > ![Max-Eigenschaft auf der Registerkarte "Erweitert"](./media/customize-card/max-property.png)
-
-    Die **Schieberegler** Steuerelement zeigt einen genaueren Wert.
+1. Wählen Sie im rechten Bereich auf der Registerkarte **erweitert** das Sperrsymbol aus, um die Karte zu entsperren.
 
     > [!div class="mx-imgBorder"]
-    > ![Schieberegler liegen im Bereich: 0-10,000](./media/customize-card/final-slider.png)
+    > ![unlock Karte @ no__t-1
+
+1. Legen Sie die Eigenschaft **Max** des **Schieberegler** -Steuer Elements auf 10.000 fest.
+
+    > [!div class="mx-imgBorder"]
+    > ![max-Eigenschaft auf der Registerkarte "Erweitert" @ no__t-1
+
+    Das **Schieberegler** -Steuerelement zeigt einen genaueren Wert an.
+
+    > [!div class="mx-imgBorder"]
+    > Bereich für ![slider: 0-10000 @ no__t-0
 
 ## <a name="next-steps"></a>Nächste Schritte
 

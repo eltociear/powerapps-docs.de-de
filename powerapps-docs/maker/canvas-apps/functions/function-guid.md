@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563113"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992688"
 ---
 # <a name="guid-function-in-powerapps"></a>Funktion „GUID“ in PowerApps
 Konvertiert eine GUID-Zeichenfolge ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier), global eindeutiger Bezeichner) in einen GUID-Wert oder erstellt einen neuen GUID-Wert.
@@ -36,7 +35,7 @@ Wenn Sie kein Argument angeben, erstellt diese Funktion eine neue GUID.
 
 Um einen GUID-Wert in eine Zeichenfolge zu konvertieren, verwenden Sie ihn einfach in einem Zeichenfolgenkontext. Der GUID-Wert wird in eine hexadezimale Darstellungszeichenfolge mit Bindestrichen und Kleinbuchstaben konvertiert. 
 
-Wenn Sie eine neue GUID zu generieren, verwendet diese Funktion Pseudozufallszahlen, erstellen Sie eine Version 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID. Beim Konvertieren einer Zeichenfolge in eine GUID, unterstützt diese Funktion eine GUID-Version durch das Akzeptieren einer beliebigen Zeichenfolge 32 Hexadezimalziffern an.
+Beim Erstellen einer neuen GUID verwendet diese Funktion Pseudozufallszahlen, um eine Version 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) -GUID zu erstellen. Wenn eine Zeichenfolge in eine GUID umgerechnet wird, unterstützt diese Funktion jede GUID-Version, indem Sie eine beliebige Zeichenfolge mit hexadezimalen Ziffern von 32 akzeptiert
 
 ## <a name="volatile-functions"></a>Veränderliche Funktionen
 **GUID** ist eine veränderliche Funktion, wenn sie ohne Argument verwendet wird. Die Funktion gibt bei jeder Auswertung einen anderen Wert zurück.  
@@ -70,7 +69,7 @@ Sie können die GUID-Zeichenfolge auch ohne Bindestriche angeben. Diese Formel g
 
 Um in diesem Kontext das Feld **Status** eines neuen Datenbankdatensatzes auf einen bekannten Wert festzulegen, verwenden Sie Folgendes:
 
-* **Patch( Products; Default( Products ); { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* Patch für **(Produkte, Standard (Produkte), {Status: GUID ("F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4")})**
 
 Sie werden die GUIDs vermutlich für Ihre Benutzer nicht sichtbar machen, aber GUIDs können Ihnen beim Debuggen Ihrer App helfen. Um den Wert des **Status**-Felds in dem Datensatz anzuzeigen, den Sie im vorherigen Beispiel erstellt haben, legen Sie die **Text**-Eigenschaft eines **Label**-Steuerelements auf diese Formel fest:
 
@@ -80,13 +79,13 @@ Das **Label**-Steuerelement zeigt **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4** an.
 
 #### <a name="create-a-table-of-guids"></a>Erstellen einer Tabelle mit GUIDs
 
-1. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** eines **[Button](../controls/control-button.md)**-Steuerelements auf die folgende Formel fest:
+1. Legen Sie die Eigenschaft **[OnSelect](../controls/properties-core.md)** eines **[Button](../controls/control-button.md)** -Steuerelements auf die folgende Formel fest:
 
-    **ClearCollect( NewGUIDs; ForAll( [ 1; 2; 3; 4; 5 ]; GUID() ) )**
+    **ClearCollect( NewGUIDs, ForAll( [ 1, 2, 3, 4, 5 ], GUID() ) )**
 
     Diese Formel erstellt eine Tabelle mit einer Spalte, die fünfmal durchlaufen wird. Das Ergebnis sind fünf GUIDs.
 
-1. Fügen Sie ein **[Data table](../controls/control-data-table.md)**-Steuerelement hinzu, legen Sie deren **Items**-Eigenschaft auf **NewGUIDs** fest, und zeigen Sie das Feld **Value** an.
+1. Fügen Sie ein **[Data table](../controls/control-data-table.md)** -Steuerelement hinzu, legen Sie deren **Items**-Eigenschaft auf **NewGUIDs** fest, und zeigen Sie das Feld **Value** an.
 
 1. Klicken oder tippen Sie auf die Schaltfläche, während Sie die ALT-TASTE gedrückt halten.
 
@@ -100,4 +99,4 @@ Das **Label**-Steuerelement zeigt **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4** an.
 
 Um eine einzelne GUID anstelle einer Tabelle zu generieren, verwenden Sie diese Formel:
 
-**Set( NewGUID; GUID() )**
+**Set( NewGUID, GUID() )**

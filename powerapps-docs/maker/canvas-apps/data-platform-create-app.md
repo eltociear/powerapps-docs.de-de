@@ -1,34 +1,34 @@
 ---
-title: Generieren Sie eine Canvas-app über Common Data Service | Microsoft-Dokumentation
-description: Generieren Sie in PowerApps automatisch eine Canvas-app, um Daten in Common Data Service verwalten
-author: AFTOwen
+title: Erstellen einer Canvas-App aus Common Data Service | Microsoft-Dokumentation
+description: In powerapps generieren Sie automatisch eine Canvas-App zum Verwalten von Daten in Common Data Service
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7e06c24d4d83b0e176782b705d6a77e956b6043b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f9dedc515ee130a950c1dc12793751d43aa3804f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549684"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993080"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generieren Sie eine Canvas-app über Common Data Service in PowerApps
+# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Generieren einer Canvas-App aus Common Data Service in powerapps
 
-Generieren Sie in PowerApps automatisch eine Canvas-app, die basierend auf einer Liste von beispielkonten in [Common Data Service](../common-data-service/data-platform-intro.md). In dieser App können Sie alle Konten durchsuchen, Details zu einem einzelnen Konto anzeigen und ein Konto erstellen, aktualisieren oder löschen.
+In powerapps generieren Sie automatisch eine Canvas-App basierend auf einer Liste von Beispiel Konten in [Common Data Service](../common-data-service/data-platform-intro.md). In dieser App können Sie alle Konten durchsuchen, Details zu einem einzelnen Konto anzeigen und ein Konto erstellen, aktualisieren oder löschen.
 
 Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuerst kostenlos](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um diesem Schnellstart folgen zu können, müssen Sie zum zugewiesen werden die [Umgebungsersteller](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) Sicherheitsrolle, und Sie müssen [zu einer Umgebung wechseln](working-with-environments.md) bei dem eine Datenbank in Common Data Service erstellt wurde, enthält Daten, und ermöglicht die Aktualisierung. Wenn keine Umgebung dieser Art vorhanden ist, und Sie über Administratorrechte verfügen, können Sie [eine Umgebung erstellen](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment), die diese Anforderungen erfüllt.
+Um diesen Schnellstart folgen zu können, müssen Sie der Sicherheitsrolle [Umgebungs Ersteller](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) zugewiesen sein, und Sie müssen [zu einer Umgebung wechseln](working-with-environments.md) , in der eine Datenbank in Common Data Service erstellt wurde, Daten enthält und Updates zulässt. Wenn keine Umgebung dieser Art vorhanden ist, und Sie über Administratorrechte verfügen, können Sie [eine Umgebung erstellen](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment), die diese Anforderungen erfüllt.
 
 ## <a name="generate-an-app"></a>Eine App generieren
 
@@ -64,7 +64,7 @@ Sie sollten möglicherweise Änderungen vornehmen, bevor Sie diese App verwenden
 1. Wählen Sie am linken Rand **Speichern** und dann in der unteren linken Ecke **Speichern** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
-In dieser schnellstartanleitung haben Sie eine app zum Verwalten von Beispieldaten zu Konten in Common Data Service erstellt. Passen Sie im nächsten Schritt den Katalog und andere Elemente des Standardbildschirms zum Durchsuchen Ihren Bedürfnissen an.
+In dieser Schnellstartanleitung haben Sie eine APP zum Verwalten von Beispiel Daten zu Konten in Common Data Service erstellt. Passen Sie im nächsten Schritt den Katalog und andere Elemente des Standardbildschirms zum Durchsuchen Ihren Bedürfnissen an.
 
 > [!div class="nextstepaction"]
 > [Katalog anpassen](customize-layout-sharepoint.md)

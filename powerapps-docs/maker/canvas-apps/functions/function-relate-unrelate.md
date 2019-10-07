@@ -1,342 +1,341 @@
 ---
-title: Beziehen und Verknüpfung mit Funktionen | Microsoft-Dokumentation
-description: Referenzinformationen Sie, einschließlich Syntax und Beispielen, für die Relate und Verknüpfung mit Funktionen in PowerApps
+title: Beziehung zwischen Funktionen und Funktionen | Microsoft-Dokumentation
+description: Referenzinformationen, einschließlich Syntax und Beispielen, für die Funktionen "Beziehung" und "ohne Beziehung" in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/22/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d8ba0cef60b268caafb57e18ae80a522905ba45b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61527204"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992748"
 ---
-# <a name="relate-and-unrelate-functions-in-powerapps"></a>Beziehen Sie und Verknüpfung mit Funktionen in PowerApps
+# <a name="relate-and-unrelate-functions-in-powerapps"></a>Verknüpfen von Funktionen in powerapps
 
-Beziehen Sie und Verknüpfung mit Datensätzen von zwei Entitäten über eine 1: n- oder m: n Beziehung.
+Verknüpfen von Datensätzen zweier Entitäten mithilfe einer 1: n-oder m:n-Beziehung.
 
 ## <a name="description"></a>Beschreibung
 
-Die **Relate** -Funktion verknüpft den zwei Datensätzen über eine 1: n- oder m: n Beziehung in Common Data Service. Die **Unrelate** Funktion kehrt den Prozesses um, und entfernt den Link.
+Die Funktion " **Verknüpfen** " verknüpft zwei Datensätze über eine 1: n-oder m:n-Beziehung in Common Data Service. Die Funktion " **ohne Beziehung** " kehrt den Prozess um und entfernt den Link.
 
-Für 1: n Beziehungen hat die viele Entität ein Fremdschlüsselfeld, verweist auf einen Datensatz, der eine Entität. **Im Zusammenhang** setzt dieses Feld auf einen bestimmten Datensatz, der eine Entität zeigen während **Unrelate** setzt dieses Feld auf *leere*. Wenn das Feld bereits festgelegt ist **Relate** wird aufgerufen, wird der vorhandene Link zugunsten von neuen Link verloren gehen. Sie können dieses Feld auch festlegen, mit der [ **Patch** ](function-patch.md) Funktion oder ein **[Bearbeitungsformular](../controls/control-form-detail.md)** Steuerelement; verwenden Sie nicht benötigen die **Relate**  Funktion.
+Für 1: n-Beziehungen verfügt die viele Entität über ein Fremdschlüssel Feld, das auf einen Datensatz der eine Entität verweist. In **Beziehung** setzen legt dieses Feld so fest, dass es auf einen bestimmten Datensatz der einzelnen Entität verweist, ohne die **Beziehung** zu setzen legt dieses Feld auf *leer*fest. Wenn das Feld bereits festgelegt ist, wenn die **Beziehung** aufgerufen wird, geht der vorhandene Link zugunsten des neuen Links verloren. Sie können dieses Feld auch mit der [**Patch**](function-patch.md) -Funktion oder einem **[Bearbeitungs Formular](../controls/control-form-detail.md)** -Steuerelement festlegen. Sie müssen die Funktion "in **Beziehung** " nicht verwenden.
 
-Für m: n Beziehungen behält das System, das die Datensätze verknüpft eine ausgeblendete Jointabelle. Diese Jointabelle kann nicht direkt zugegriffen werden; Lesen Sie nur über eine 1: n Projektion und festgelegt werden kann die **Relate** und **Unrelate** Funktionen. Keine verknüpften Entität hat einen Fremdschlüssel.
+Bei m:n-Beziehungen behält das System, das die Datensätze verknüpft, eine verborgene jointabelle bei. Sie können nicht direkt auf diese jointabelle zugreifen. Sie kann nur über eine 1: n-Projektion gelesen und über die Funktionen "in **Beziehung** " und " **ohne Beziehung** " festgelegt werden. Keine der verknüpften Entitäten verfügt über einen Fremdschlüssel.
 
-Die Daten für die Entität, die Sie im ersten Argument angeben, werden entsprechend die Änderung aktualisiert werden, aber die Daten für die Entität, die Sie im zweiten Argument angeben, wird nicht. Dass die Daten manuell sein müssen aktualisiert werden, mit der **[aktualisieren](function-refresh.md)** Funktion, um das Ergebnis des Vorgangs anzuzeigen.
+Die Daten für die Entität, die Sie im ersten Argument angeben, werden aktualisiert, um die Änderung widerzuspiegeln, aber die Daten für die Entität, die Sie im zweiten Argument angeben, werden nicht angezeigt. Diese Daten müssen manuell mit der **[Refresh](function-refresh.md)** -Funktion aktualisiert werden, um das Ergebnis des Vorgangs anzuzeigen.
 
-Diese Funktionen nicht erstellen oder Löschen eines Datensatzes. Klicken sie nur verknüpfen oder Verknüpfung mit zwei Datensätze, die bereits vorhanden.
+Diese Funktionen erstellen oder löschen einen Datensatz nie. Es werden nur zwei bereits vorhandene Datensätze miteinander verknüpft bzw. nicht miteinander verknüpft.
 
-Sie können diese Funktionen nur in [verhaltensformeln](../working-with-formulas-in-depth.md).
+Diese Funktionen können nur in [Verhaltens Formeln](../working-with-formulas-in-depth.md)verwendet werden.
 
 > [!NOTE]
-> Diese Funktionen sind Teil der eine Funktion der Vorschauversion, und ihr Verhalten ist nur verfügbar, wenn die **relationale Daten, Optionssätze und weitere neue Features für CDS** aktiviert ist. Dies ist eine Einstellung auf app-Ebene, die standardmäßig für neue apps aktiviert ist. Um dieses Feature-Switch zu suchen, öffnen Sie die **Datei** , wählen Sie im Menü **Anwendungseinstellungen**, und wählen Sie dann **Erweiterte Einstellungen**. Wir sind sehr an Ihrem Feedback interessiert und würden uns freuen, wenn Sie uns in den [PowerApps-Communityforen](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To) Ihre Meinung mitteilen würden.
+> Diese Funktionen sind Teil eines Vorschau Features, und ihr Verhalten ist nur verfügbar, wenn die **relationalen Daten, Optionssätze und andere neue Features für CDs** aktiviert sind. Dies ist eine Einstellung auf App-Ebene, die für neue apps standardmäßig aktiviert ist. Um diese Funktion zu finden, öffnen Sie das Menü **Datei** , wählen Sie **App-Einstellungen**und dann **Erweiterte Einstellungen**aus. Wir sind sehr an Ihrem Feedback interessiert und würden uns freuen, wenn Sie uns in den [PowerApps-Communityforen](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To) Ihre Meinung mitteilen würden.
 
 ## <a name="syntax"></a>Syntax
 
-**Relate**( *Entity1RelatedTable*; *Entity2Record* )
+**Beziehung**( *Entity1RelatedTable*, *Entity2Record* )
 
-* *Entity1RelatedTable* : erforderlich. Einen Datensatz der *' Entity1 '* , die Tabelle der *Entity2* Datensätze, die über eine 1: n- oder m: n Beziehung verknüpft.
-* *Entity2Record* : erforderlich. Die *Entity2* Datensatz der Beziehung hinzu.
+* *Entity1RelatedTable* : erforderlich. Für einen Datensatz von *Entity1*wird die Tabelle der *Entity2* -Datensätze über eine 1: n-oder m:n-Beziehung bezogen.
+* *Entity2Record* : erforderlich. Der *Entity2* -Datensatz, der der Beziehung hinzugefügt werden soll.
 
-**Verknüpfung mit**( *Entity1RelatedTable*; *Entity2Record* )
+**Ohne Beziehung**( *Entity1RelatedTable*, *Entity2Record* )
 
-* *Entity1RelatedTable* : erforderlich. Einen Datensatz der *' Entity1 '* , die Tabelle der *Entity2* Datensätze, die über eine 1: n- oder m: n Beziehung verknüpft.
-* *Entity2Record* : erforderlich. Die *Entity2* Datensatz aus der Beziehung zu entfernen.
+* *Entity1RelatedTable* : erforderlich. Für einen Datensatz von *Entity1*wird die Tabelle der *Entity2* -Datensätze über eine 1: n-oder m:n-Beziehung bezogen.
+* *Entity2Record* : erforderlich. Der *Entity2* -Datensatz, der aus der Beziehung entfernt werden soll.
 
 ## <a name="examples"></a>Beispiele
 
-Erwägen Sie eine **Produkte** Entität mit dem die folgenden Beziehungen, wie in der [PowerApps-Portal-Entity-Viewer](../../common-data-service/create-edit-entities-portal.md):
+Betrachten Sie eine **Products** -Entität mit den folgenden Beziehungen, wie im [Entity Viewer des powerapps-Portals](../../common-data-service/create-edit-entities-portal.md)gezeigt:
 
-| Anzeigename der Beziehung | Verknüpfte Entität | Beziehungstyp |
+| Beziehungs Anzeige Name | Verwandte Entität | Beziehungstyp |
 | --- | --- |
-| Produkt-Reservierung | Reservierung | 1: n |
-| Produkt &harr; wenden Sie sich an | Kontakt | M: n |
+| Produkt Reservierung | Buchung | 1: n |
+| Product &harr;-Kontakt | Kontakt | M:n-Zahl |
 
-**Produkte** und **Reservierungen** beziehen sich über eine 1: N-Beziehung.  Verbinden Sie den ersten Datensatz der **Reservierungen** Entität mit den ersten Datensatz der **Produkte** Entität:
+**Produkte** und **Reservierungen** sind über eine 1: n-Beziehung verknüpft.  So verknüpfen Sie den ersten Datensatz der **Reservations** -Entität mit dem ersten Datensatz der **Products** -Entität:
 
-`Relate( First( Products ).Reservations; First( Reservations ) )`
-
-So entfernen Sie die Beziehung zwischen diesen Datensätzen:
-
-`Unrelate( First( Products ).Reservations; First( Reservations ) )`
-
-Zu keinem Zeitpunkt haben wir erstellen oder entfernen "oder" einen Datensatz, der nur die Beziehung zwischen den Datensätzen wurde geändert.
-
-**Produkte** und **Kontakte** beziehen sich durch eine m: N-Beziehung.  Verbinden Sie den ersten Datensatz der **Kontakte** Entität mit den ersten Datensatz der **Produkte** Entität:
-
-`Relate( First( Products ).Contacts; First( Contacts ) )`
-
-Als m: N Beziehungen sind symmetrisch, es könnte auch dies getan haben in die entgegengesetzte Richtung:
-
-`Relate( First( Contacts ).Products; First( Products ) )`
+`Relate( First( Products ).Reservations, First( Reservations ) )`
 
 So entfernen Sie die Beziehung zwischen diesen Datensätzen:
 
-`Unrelate( First( Products ).Contacts; First( Contacts ) )`
+`Unrelate( First( Products ).Reservations, First( Reservations ) )`
 
-oder:
+Wir haben zu keinem Zeitpunkt erstellt oder entfernt oder einen Datensatz erstellt, nur die Beziehung zwischen Datensätzen wurde geändert.
 
-`Unrelate( First( Contacts ).Products; First( Products ) )`
+**Produkte** und **Kontakte** sind über eine m:n-Beziehung verknüpft.  So verknüpfen Sie den ersten Datensatz der **Contacts** -Entität mit dem ersten Datensatz der **Products** -Entität:
 
-Die exemplarische Vorgehensweise, folgt, wird genau diese Vorgänge für diese Entitäten, die mit einer app mit **Katalog** und **Kombinationsfeld** Steuerelementen zum Auswählen der betroffenen Datensätze.
+`Relate( First( Products ).Contacts, First( Contacts ) )`
 
-Diese Beispiele richten sich nach den Beispieldaten, die in Ihrer Umgebung installiert wird. Entweder [erstellen eine testumgebung, einschließlich Beispieldaten](../../model-driven-apps/overview-model-driven-samples.md#get-sample-apps) oder [Hinzufügen von Beispieldaten zu einer vorhandenen Umgebung](../../model-driven-apps/overview-model-driven-samples.md#install-or-uninstall-sample-data).
+Da m:n-Beziehungen symmetrisch sind, können wir dies auch in umgekehrter Richtung durchgeführt haben:
+
+`Relate( First( Contacts ).Products, First( Products ) )`
+
+So entfernen Sie die Beziehung zwischen diesen Datensätzen:
+
+`Unrelate( First( Products ).Contacts, First( Contacts ) )`
+
+noch
+
+`Unrelate( First( Contacts ).Products, First( Products ) )`
+
+Die nachfolgende Exemplarische Vorgehensweise führt genau diese Vorgänge für diese Entitäten mithilfe einer APP mit **Katalog-und** Kombinations **Feld** -Steuerelementen für die Auswahl der beteiligten Datensätze aus.
+
+Diese Beispiele hängen von den in Ihrer Umgebung installierten Beispiel Daten ab. Erstellen Sie entweder [eine Testumgebung mit Beispiel Daten](../../model-driven-apps/overview-model-driven-samples.md#get-sample-apps) [, oder fügen Sie einer vorhandenen Umgebung Beispiel Daten hinzu](../../model-driven-apps/overview-model-driven-samples.md#install-or-uninstall-sample-data).
 
 ### <a name="one-to-many"></a>1: n
 
-#### <a name="relate-function"></a>**Im Zusammenhang** Funktion
+#### <a name="relate-function"></a>Funktion **Verknüpfen**
 
-Erstellen Sie zunächst eine einfache app, um anzuzeigen, und weisen Sie die Reservierungen, die mit einem Produkt zugeordnet sind.
+Zuerst erstellen Sie eine einfache APP, um die Reservierungen anzuzeigen und neu zuzuweisen, die einem Produkt zugeordnet sind.
 
-1. Erstellen Sie eine [Tablet-app mit leerer App](../data-platform-create-app-scratch.md).
+1. Erstellen Sie eine [Tablet-APP von einem leeren](../data-platform-create-app-scratch.md).
 
 1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
-1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **Common Data Service** > **Produkte**  >  **Verbinden**.  
+1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **Common Data Service** > **Produkte** > **Connect**aus.  
 
-    Die Products-Entität stammt die Beispieldaten oben geladen.
+    Die Products-Entität ist Teil der oben geladenen Beispiel Daten.
 
-     ![Fügen Sie der Products-Entität als eine Datenquelle hinzu.](media/function-relate-unrelate/products-connect.png)
+     ![Hinzufügen der Products-Entität als Datenquelle](media/function-relate-unrelate/products-connect.png)
 
-1. Auf der **einfügen** hinzu ein Leerzeichen vertikal **[Katalog](../controls/control-gallery.md)** Steuerelement.
+1. Fügen Sie auf der Registerkarte **Einfügen** ein leeres **[vertikales](../controls/control-gallery.md)** Katalog-Steuerelement hinzu.
 
-1. Stellen Sie sicher, dass das Steuerelement, das Sie gerade hinzugefügt haben, mit dem Namen wird **Gallery1**, und klicken Sie dann verschieben, und passen Sie es die linke Seite des Bildschirms zu füllen.
+1. Stellen Sie sicher, dass das soeben hinzugefügte Steuerelement den Namen **Gallery1**hat, und verschieben Sie es dann, und ändern Sie die Größe, um die linke Seite des Bildschirms auszufüllen.
 
-1. Auf der **Eigenschaften** Registerkarte **Gallery1**des **Elemente** Eigenschaft **Produkte** und die zugehörige **Layout** auf **Gruppenbild und der**.
+1. Legen Sie auf der Registerkarte **Eigenschaften** die **Eigenschaft Items** von **Gallery1**auf **Products** und das **Layout** auf **Image und Title**fest.
 
-    ![Konfigurieren von ProductsGallery](media/function-relate-unrelate/products-gallery.png)
+    ![Konfigurieren von producout Gallery](media/function-relate-unrelate/products-gallery.png)
 
-1. In **Gallery1**, sicher, dass die **Bezeichnung** -Steuerelement heißt **Title1**, und legen Sie dann die **Text** Eigenschaft  **ThisItem.Name**.
+1. Stellen Sie in **Gallery1**sicher, dass das **Label** -Steuerelement den Namen **Title1**hat, und legen Sie dessen **Text** -Eigenschaft auf **ThisItem.Name**fest.
 
-    ![Konfigurieren Sie die Bezeichnung in Gallery1](media/function-relate-unrelate/products-title.png)
+    ![Konfigurieren der Bezeichnung in Gallery1](media/function-relate-unrelate/products-title.png)
 
-1. Wählen Sie den Bildschirm, um zu vermeiden, das das nächste Element einfügen **Gallery1**.  Hinzufügen einer zweiten Leerzeichen vertikal **Katalog** steuern, und stellen Sie sicher, dass sie den Namen **Gallery2**.
+1. Wählen Sie den Bildschirm aus, um das Einfügen des nächsten Elements in **Gallery1**zu vermeiden.  Fügen Sie ein zweites leeres **vertikales** Katalog Steuerelement hinzu, und stellen Sie sicher, dass es den Namen **Wenn gallery2**
 
-    **Gallery2** zeigt die Reservierungen für den der Benutzer im wählt Produkt **Gallery1**.
+    **Wenn gallery2** zeigt die Reservierungen für jedes Produkt an, das der Benutzer in **Gallery1**auswählt.
 
-1. Verschiebe und verkleinere **Gallery2** zum Ausfüllen der oberen rechten Quadranten des Bildschirms.
+1. Verschieben Sie die **Wenn gallery2** , und ändern Sie die Größe, um den oberen rechten Quadranten des Bildschirms auszufüllen.
 
-1. (optional) Fügen Sie den blauen **Bezeichnung** Steuerelement oben **Gallery2**, wie in die folgenden Abbildung dargestellt.
+1. optionale Fügen Sie das Steuerelement blaue **Bezeichnung** oberhalb von **Wenn gallery2**hinzu, wie in der nächsten Grafik dargestellt.
 
-1. Legen Sie in der Bearbeitungsleiste die **Elemente** Eigenschaft **Gallery2** zu **Gallery1.Selected.Reservations**.
+1. Legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft von **Wenn gallery2** auf **Gallery1. Selected. Reservations**fest.
 
-    ![Konfigurieren Sie Gallery2-Elemente](media/function-relate-unrelate/reservations-gallery.png)
+    ![Wenn gallery2 Elemente konfigurieren](media/function-relate-unrelate/reservations-gallery.png)
 
-1. Legen Sie im Eigenschaftenbereich **Gallery2**des **Layout** zu **Titel**.
+1. Legen Sie im Eigenschaften Bereich für das **Layout** von **Wenn gallery2**den Wert **Title**fest.
 
-    ![Gallery2 Layout konfigurieren](media/function-relate-unrelate/reservations-gallery-right.png)
+    ![Konfigurieren des wenn gallery2-Layouts](media/function-relate-unrelate/reservations-gallery-right.png)
 
-1. In **Gallery2**, Hinzufügen einer **[Kombinationsfeld](../controls/control-combo-box.md)** steuern, stellen Sie sicher, dass sie den Namen **ComboBox1**, und klicken Sie dann Verschiebe und verkleinere sie, um die Blockierung zu vermeiden der Bei anderen Steuerelementen in **Gallery2**.
+1. Fügen Sie in **Wenn gallery2**ein Kombinations **[Feld](../controls/control-combo-box.md)** -Steuerelement hinzu, stellen Sie sicher, dass es **ComboBox1**lautet, und verschieben Sie es dann, und ändern Sie die Größe, um die Blockierung der anderen Steuerelemente in **Wenn gallery2**
 
-1. Auf der **Eigenschaften** Registerkarte **ComboBox1**des **Elemente** Eigenschaft **Produkte**.
+1. Legen Sie auf der Registerkarte **Eigenschaften** die **Eigenschaft Items** von **ComboBox1**auf **Products**fest.
 
-    ![Festlegen der Items-Eigenschaft auf Produkte](media/function-relate-unrelate/reservations-combo-right.png)
+    ![Items-Eigenschaft auf Produkte festlegen](media/function-relate-unrelate/reservations-combo-right.png)
 
-1. Scrollen Sie in der **Eigenschaften** Registerkarte, und legen Sie **ComboBox1**des **Mehrfachauswahl zulassen** Eigenschaft **aus**.
+1. Führen Sie auf der Registerkarte **Eigenschaften** einen Bildlauf nach unten **durch, und legen Sie die**Option **Mehrfachauswahl zulassen** für **ComboBox1**
 
-    ![Ermöglichen die Mehrfachauswahl auf Off](media/function-relate-unrelate/reservations-singleselect-right.png)
+    ![Legen Sie Mehrfachauswahl zulassen auf aus fest.](media/function-relate-unrelate/reservations-singleselect-right.png)
 
-1. Legen Sie in der Bearbeitungsleiste **ComboBox1**des **DefaultSelectedItems** Eigenschaft **ThisItem. "Produkt reserviert"** .
+1. Legen Sie in der Bearbeitungs Leiste die **defaultselecteditems** -Eigenschaft von **ComboBox1**auf **thisitem. ' Product Reservierung '** fest.
 
-    ![Legen Sie DefaultSelectedItems für ReserveCombo](media/function-relate-unrelate/reservations-combo.png)
+    ![Legen Sie defaultselecteditems für reservecombo fest.](media/function-relate-unrelate/reservations-combo.png)
 
-1. In **Gallery2**legen **NextArrow2**des **OnSelect** -Eigenschaft auf diese Formel:
+1. Legen Sie in **Wenn gallery2**die **onselect** -Eigenschaft von **NextArrow2**auf diese Formel fest:
 
-    ```powerapps-comma
-    Relate( ComboBox1.Selected.Reservations; ThisItem )
+    ```powerapps-dot
+    Relate( ComboBox1.Selected.Reservations, ThisItem )
     ```
 
-    Wenn der Benutzer dieses Symbol auswählt, ändert sich die aktuelle Reservierung für das Produkt, die der Benutzer im ausgewählt **ComboBox1**.
+    Wenn der Benutzer dieses Symbol auswählt, ändert sich die aktuelle Reservierung in das Produkt, das der Benutzer in **ComboBox1**ausgewählt hat.
 
     ![Konfigurieren von NextArrow2](media/function-relate-unrelate/reservations-relate.png)
 
-1. Drücken Sie F5, um die app im Vorschaumodus zu testen.
+1. Drücken Sie F5, um die APP im Vorschaumodus zu testen.
 
-Mit dieser app kann Benutzer eine Reservierung ein Produkt in eine andere verschieben. Der Benutzer kann für eine Reservierung auf ein Produkt, in ein anderes Produkt auswählen **ComboBox1** und wählen Sie dann **NextArrow2** so ändern Sie diese Reservierung.
+Mit dieser APP kann der Benutzer eine Reservierung von einem Produkt in ein anderes verschieben. Bei einer Reservierung für ein Produkt kann der Benutzer in **ComboBox1** ein anderes Produkt auswählen und dann **NextArrow2** auswählen, um die Reservierung zu ändern.
 
-![Veranschaulichen der Relate-Funktion in 1: n app](media/function-relate-unrelate/reservations-reassign.gif)
+![Veranschaulichen der Funktion "Beziehung" in einer 1: n-App](media/function-relate-unrelate/reservations-reassign.gif)
 
-#### <a name="unrelate-function"></a>**Verknüpfung mit** Funktion
+#### <a name="unrelate-function"></a>Funktion **ohne Beziehung**
 
-An diesem Punkt können Sie die Beziehung zwischen den Datensätzen in eine andere verschieben, aber Sie können die Beziehung nicht vollständig entfernen. Sie können die **Unrelate** Funktion, um einen Datensatz für die Reservierung von einem Produkt zu trennen.
+An diesem Punkt können Sie die Beziehung von einem Datensatz in einen anderen verschieben, aber Sie können die Beziehung nicht vollständig entfernen. Sie können die Funktion " **ohne Beziehung** " verwenden, um einen Reservierungsdaten Satz von einem beliebigen Produkt zu trennen.
 
 1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
-1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **Common Data Service** > **Reservierungen**  >  **Verbinden**.
+1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **Common Data Service** > **Reservierungen** > **Connect**aus.
 
-1. In **Gallery2**legen die **OnSelect** Formel zum **NextArrow2** auf diese Formel:
+1. Legen Sie in **Wenn gallery2**die **onselect** -Formel für **NextArrow2** auf diese Formel fest:
 
-    ```powerapps-comma
-    If( IsBlank( ComboBox1.Selected );
-        Unrelate( Gallery1.Selected.Reservations; ThisItem );
-        Relate( ComboBox1.Selected.Reservations; ThisItem )
-    );;
+    ```powerapps-dot
+    If( IsBlank( ComboBox1.Selected ),
+        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
+        Relate( ComboBox1.Selected.Reservations, ThisItem )
+    );
     Refresh( Reservations )
     ```
-    ![Richtige Symbol "konfigurieren"](media/function-relate-unrelate/reservations-relate-unrelate.png)
+    ![Symbol "rechts konfigurieren"](media/function-relate-unrelate/reservations-relate-unrelate.png)
 
-1. Kopie **Gallery2** in die Zwischenablage, und drücken STRG + C.
+1. Kopieren Sie **Wenn gallery2** in die Zwischenablage, indem Sie Sie auswählen und dann STRG + C drücken.
 
-1. Fügen Sie ein Duplikat eines **Gallery2** auf den gleichen Bildschirm durch Drücken von STRG + V, und verschieben Sie sie an der unteren rechten Quadranten des Bildschirms.
+1. Fügen Sie ein Duplikat von **Wenn gallery2** in denselben Bildschirm ein, indem Sie STRG + V drücken, und verschieben Sie es dann an den unteren Rand des Bildschirms.
 
-1. (optional) Wenn Sie eine Bezeichnung, die oben genannten hinzugefügt **Gallery2**, wiederholen Sie die vorherigen beiden Schritte für diese Bezeichnung.
+1. optionale Wenn Sie eine Bezeichnung oberhalb von **Wenn gallery2**hinzugefügt haben, wiederholen Sie die vorherigen beiden Schritte für diese Bezeichnung.
 
-1. Stellen Sie sicher, dass das Duplikat der **Gallery2** heißt **Gallery2_1**, und legen Sie dann die **Elemente** -Eigenschaft auf diese Formel:
+1. Stellen Sie sicher, dass das Duplikat von **Wenn gallery2** den Namen **Gallery2_1**hat, und legen Sie dann dessen **Items** -Eigenschaft auf diese Formel fest:
 
-    ```powerapps-comma
-    Filter( Reservations; IsBlank( 'Product Reservation' ) )
+    ```powerapps-dot
+    Filter( Reservations, IsBlank( 'Product Reservation' ) )
     ```
 
-    Es wird eine delegierungswarnung, aber es nicht relevant, mit der geringeren Menge an Daten in diesem Beispiel.
+    Es wird eine Delegierungs Warnung angezeigt, aber Sie ist nicht mit der kleinen Datenmenge in diesem Beispiel zu tun.
 
-    ![Festlegen der Items-Eigenschaft des Gallery2_1](media/function-relate-unrelate/reservations-lost.png)
+    ![Legen Sie die Items-Eigenschaft von Gallery2_1 fest.](media/function-relate-unrelate/reservations-lost.png)
 
-Mit diesen Änderungen, können Benutzer die Auswahl im Löschen **ComboBox1** für einen Kontakt, wenn diese Person ein Produkt reserviert noch nicht. Kontakte, die ein Produkt reserviert haben, die in angezeigt **Gallery2_1** , in denen Benutzer können jeden Kontakt zu einem Produkt zuweisen.
+Mit diesen Änderungen können Benutzer die Auswahl in **ComboBox1** für einen Kontakt löschen, wenn diese Person kein Produkt reserviert hat. Kontakte, die kein Produkt reserviert haben, werden in **Gallery2_1** angezeigt, wo Benutzer jeden Kontakt einem Produkt zuweisen können.
 
-   ![Veranschaulichen Sie der Relate und Verknüpfung mit Funktionen in 1: n app](media/function-relate-unrelate/reservations-lostandfound.gif)
+   ![Veranschaulichen der Beziehung zwischen Funktionen und deren Verknüpfung in der 1: n-App](media/function-relate-unrelate/reservations-lostandfound.gif)
 
-### <a name="many-to-many"></a>M: n
+### <a name="many-to-many"></a>M:n-Zahl
 
-#### <a name="create-a-many-to-many-relationship"></a>Erstellen einer m: n Beziehung
+#### <a name="create-a-many-to-many-relationship"></a>Erstellen einer m:n-Beziehung
 
-Die Beispieldaten keine m: n Beziehung enthalten, aber Sie erstellen ein zwischen der Products-Entität und der Kontakt-Entität. Benutzer können mehrere Kontakte und jeden Kontakt zu mehr als ein Produkt jedes Produkt in Beziehung stehen.
+Die Beispiel Daten enthalten keine m:n-Beziehung, aber Sie erstellen eine Beziehung zwischen der Entität "Products" und der Entität "Contacts". Benutzer können jedes Produkt mit mehr als einem Kontakt und jedem Kontakt zu mehr als einem Produkt verknüpfen.
 
-1. Von [auf dieser Seite](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)Option **Daten** im linken Navigationsbereich, und klicken Sie anschließend **Entitäten**.
+1. Wählen Sie auf [dieser Seite](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)die Option **Daten** in der linken Navigationsleiste aus, und wählen Sie dann **Entitäten**aus.
 
-    ![Öffnen der Liste mit Entitäten](media/function-relate-unrelate/entity-list.png)
+    ![Liste der Entitäten öffnen](media/function-relate-unrelate/entity-list.png)
 
-1. Ändern Sie den Entity-Filter, um alle Entitäten enthalten.
+1. Ändern Sie den Entitäts Filter, sodass er alle Entitäten einschließt.
 
-    Beispiel-Entitäten werden nicht standardmäßig angezeigt.
+    Standardmäßig werden Beispiel Entitäten nicht angezeigt.
 
-    ![Entität Filter entfernen](media/function-relate-unrelate/entity-all.png)
+    ![Entfernen des Entitäts Filters](media/function-relate-unrelate/entity-all.png)
 
-1. Führen Sie einen Bildlauf nach unten, öffnen Sie die **Produkt** Entität, und wählen **Beziehungen**.
+1. Scrollen Sie nach unten, öffnen Sie die **Product** -Entität, und wählen Sie **Beziehungen**.
 
-    ![Registerkarte "Beziehungen" für die Product-Entität](media/function-relate-unrelate/entity-relationships.png)
+    ![Beziehungs Registerkarte für die Product-Entität](media/function-relate-unrelate/entity-relationships.png)
 
-1. Wählen Sie **Beziehung hinzufügen** > **m: n**.
+1. Wählen Sie **Beziehung hinzufügen**@no__t **-1**m:n-.
 
-    ![M: n Beziehung hinzufügen](media/function-relate-unrelate/entity-manytomany.png)
+    ![M:n-Beziehung hinzufügen](media/function-relate-unrelate/entity-manytomany.png)
 
-1. Wählen Sie die **wenden Sie sich an** Entität für die Beziehung.
+1. Wählen Sie die Entität **Contact** für die Beziehung aus.
 
-    ![Wählen Sie die Entität "Contact"](media/function-relate-unrelate/entity-contact.png)
+    ![Auswählen der Entität "Contact"](media/function-relate-unrelate/entity-contact.png)
 
-1. Wählen Sie **Fertig** > **Entität speichern**.
+1. Wählen Sie **done** > **Entität speichern**aus.
 
     ![Liste der Beziehungen für die Products-Entität](media/function-relate-unrelate/entity-done.png)
 
-#### <a name="relate-and-unrelate-contacts-with-one-or-more-products"></a>Beziehen Sie und Verknüpfung mit Kontakte mit einem oder mehreren Produkten
+#### <a name="relate-and-unrelate-contacts-with-one-or-more-products"></a>Beziehung zwischen Kontakten und einem oder mehreren Produkten
 
-Erstellen Sie eine andere app, das diesem ähnelt, die, das Sie zuvor in diesem Thema erstellt haben, aber die neue app bietet eine m: n Beziehung. Alle Kontakte werden mehrere Produkte anstelle nur eines reservieren.
+Sie erstellen eine andere APP, die dem zuvor in diesem Thema erstellten ähnelt, aber die neue App bietet eine m:n-Beziehung. Jeder Kontakt kann mehrere Produkte reservieren, anstatt nur einen zu verwenden.
 
-1. Erstellen Sie in einer leeren app für Tablets **Gallery1** als die [obenstehend](#one-to-many) in diesem Thema wird beschrieben.
+1. Erstellen Sie in einer leeren App für Tablets **Gallery1** wie das [erste Verfahren](#one-to-many) in diesem Thema beschrieben.
 
-1. Fügen Sie einen anderen Leerzeichen vertikal **Katalog** steuern, stellen Sie sicher, dass sie den Namen **Gallery2**, und klicken Sie dann in der oberen rechten Ecke des Bildschirms zu verschieben.
+1. Fügen Sie ein weiteres **leeres vertikales** Katalog-Steuerelement hinzu, stellen Sie sicher, dass es **Wenn gallery2**ist, und verschieben Sie es in die obere rechte Ecke des Bildschirms.
 
-    Weiter unten in diesem Thema fügen Sie eine **Kombinationsfeld** festlegen, unter **Gallery2**.
+    Später in diesem Thema fügen Sie unter **Wenn gallery2**ein Kombinations **Feld** -Steuerelement hinzu.
 
-1. Legen Sie in der Bearbeitungsleiste **Gallery2**des **Elemente** Eigenschaft **Gallery1.Selected.Contacts**.
+1. Legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft von **Wenn gallery2**auf **Gallery1. Selected. Contacts**fest.
 
-    ![Konfigurieren von ContactsGallery](media/function-relate-unrelate/contacts-gallery.png)
+    ![Konfigurieren von contacout Gallery](media/function-relate-unrelate/contacts-gallery.png)
 
-1. Auf der **Eigenschaften** Registerkarte **Layout** zu **Gruppenbild und der**.
+1. Legen Sie auf der Registerkarte **Eigenschaften** **Layout** auf **Bild und Titel**fest.
 
-    ![Konfigurieren von ContactsGallery](media/function-relate-unrelate/contacts-gallery-right.png)
+    ![Konfigurieren von contacout Gallery](media/function-relate-unrelate/contacts-gallery-right.png)
 
-1. In **Gallery2**, sicher, dass die **Bezeichnung** -Steuerelement heißt **Title2**, und legen Sie dann die **Text** Eigenschaft  **ThisItem. 'Full Name'** .
+1. Stellen Sie in **Wenn gallery2**sicher, dass das **Label** -Steuerelement den Namen **Title2**hat, und legen Sie dessen **Text** -Eigenschaft auf **thisitem. ' Full Name '** fest.
 
-    In diesem Steuerelement wird kein Text angezeigt, bis Sie dieses Verfahren abzuschließen, und weisen Sie einen Kontakt zu einem Produkt.
+    In diesem Steuerelement wird erst dann Text angezeigt, wenn Sie dieses Verfahren abgeschlossen und einen Kontakt zu einem Produkt zugewiesen haben.
 
-    ![Wenden Sie sich an Namen anzeigen](media/function-relate-unrelate/contacts-title.png)
+    ![Kontaktnamen anzeigen](media/function-relate-unrelate/contacts-title.png)
 
-1. Löschen Sie **NextArrow2**, fügen Sie eine **Abbrechen** Symbol, und stellen Sie sicher, dass sie den Namen **icon1**.
+1. Löschen Sie **NextArrow2**, fügen Sie ein **Abbruch** Symbol ein, und stellen Sie sicher, dass der Name **icon1**lautet.
 
-1. Legen Sie die **Abbrechen** Symbols **OnSelect** -Eigenschaft auf diese Formel: 
+1. Legen **Sie die onselect** -Eigenschaft des **Cancel** -Symbols auf die folgende Formel fest: 
 
-    ```powerapps-comma
-    Unrelate( Gallery1.Selected.Contacts; ThisItem )
+    ```powerapps-dot
+    Unrelate( Gallery1.Selected.Contacts, ThisItem )
     ```
 
     ![Symbol "Abbrechen" Konfigurieren](media/function-relate-unrelate/contacts-unrelate.png)
 
 1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
-1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **Common Data Service** > **Kontakte**  >  **Verbinden**.
+1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **Common Data Service** > **Kontakte** > **Connect**aus.
 
-1. Unter **Gallery2**, Hinzufügen einer **Kombinationsfeld** steuern, stellen Sie sicher, dass sie den Namen **ComboBox1**, und legen Sie dann die **Elemente** Eigenschaft **Kontakte**.
+1. Fügen Sie unter **Wenn gallery2**ein Kombinations **Feld** -Steuerelement hinzu, stellen Sie sicher, dass es den Namen **ComboBox1**hat, und legen Sie dann die Eigenschaft **Items** auf **Contacts**fest.
 
-    ![Konfigurieren Sie die Eigenschaft des Kombinationsfeld Elemente](media/function-relate-unrelate/contacts-combo.png)
+    ![Konfigurieren der Eigenschaft "Kombinations Feld Items"](media/function-relate-unrelate/contacts-combo.png)
 
-1. Auf der **Eigenschaften** Registerkarte **Mehrfachauswahl zulassen** zu **aus**.
+1. Legen Sie auf der Registerkarte **Eigenschaften** die Option **Mehrfachauswahl zulassen** auf **aus**fest.
 
-    ![Konfigurieren Sie das Kombinationsfeld "Layout"-Eigenschaft](media/function-relate-unrelate/contacts-combo-right.png)
+    ![Konfigurieren der Eigenschaft "Kombinations Feld Layout"](media/function-relate-unrelate/contacts-combo-right.png)
 
-1. Fügen Sie eine **hinzufügen** Symbol, und legen Sie dessen **OnSelect** -Eigenschaft auf diese Formel: 
+1. **Fügen Sie ein Add** -Symbol ein, und legen Sie dessen **onselect** -Eigenschaft auf diese Formel fest: 
 
-    ```powerapps-comma
-    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
+    ```powerapps-dot
+    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
     ```
 
-    ![Symbol zum Hinzufügen von konfigurieren](media/function-relate-unrelate/contacts-relate.png)
+    ![Symbol "Add" Konfigurieren](media/function-relate-unrelate/contacts-relate.png)
 
-Mit dieser app können Benutzer jetzt kostenlos beziehen und Verknüpfung mit der eine Gruppe von Kontakten für jedes Produkt.
+Mit dieser APP können Benutzer eine Gruppe von Kontakten nun frei in Beziehung setzen und die Beziehung zu den einzelnen Produkten in Beziehung setzen.
 
-- Um einen Kontakt zu einem Produkt hinzuzufügen, wählen Sie den Kontakt im Kombinationsfeld am unteren Rand des Bildschirms, und wählen Sie dann die **hinzufügen** Symbol.
-- Um einen Kontakt aus einem Produkt zu entfernen, wählen die **Abbrechen** Symbol für diesen Kontakt.
+- Wenn Sie einem Produkt einen Kontakt hinzufügen möchten, wählen Sie den Kontakt im Kombinations Feld unten auf dem Bildschirm aus, und wählen Sie dann das Symbol **Hinzufügen** aus.
+- Um einen Kontakt von einem Produkt zu entfernen, wählen Sie das Symbol **Abbrechen** für diesen Kontakt aus.
 
-    Im Gegensatz zur 1-n-ermöglicht eine m: n Beziehung, mehrere Produkte ein Kontakt zugeordnet werden soll.
+    Anders als bei 1: n können Benutzer mit einer m:n-Beziehung denselben Kontakt mehreren Produkten zuordnen.
 
-![Veranschaulichen Sie der Relate und Verknüpfung mit Funktionen in m: n app](media/function-relate-unrelate/contacts-relate-unrelate.gif)
+![Veranschaulichen der Beziehung zwischen Funktionen und deren Verknüpfung in einer m:n-App](media/function-relate-unrelate/contacts-relate-unrelate.gif)
 
-#### <a name="in-reverse-relate-and-unrelate-products-with-multiple-contacts"></a>In umgekehrter Reihenfolge: beziehen und Verknüpfung mit Produkten mit mehreren Kontakten
+#### <a name="in-reverse-relate-and-unrelate-products-with-multiple-contacts"></a>In umgekehrter Reihenfolge: in Beziehung zwischen Produkten und mehreren Kontakten
 
-M: n Beziehungen sind symmetrisch. Sie können das Beispiel, um einen Kontakt Produkte hinzu, und dann zwischen den beiden Bildschirmen angezeigt, wie die Beziehung aus jeder Richtung wird kippen erweitern.
+M:n-Beziehungen sind symmetrisch. Sie können das Beispiel erweitern, um einem kontaktprodukte hinzuzufügen und dann zwischen den beiden Bildschirmen zu wechseln, um anzuzeigen, wie die Beziehung von beiden Richtungen aus angezeigt wird.
 
-1. Legen Sie die **OnVisible** Eigenschaft **Screen1** zu **aktualisieren (Produkte)** .
+1. Legen Sie die **onvisible** -Eigenschaft von **Screen1** auf **Refresh (Products)** fest.
 
-    Wenn Sie eine 1: n- oder m: n Beziehung, nur die Daten der Entität des ersten Arguments aktualisieren die **Relate** oder **Unrelate** Aufruf aktualisiert wird. Die zweite muss aktualisiert werden, manuell, wenn Sie zwischen den Bildschirmen der app spiegeln möchten.
+    Wenn Sie eine 1: n-oder m:n-Beziehung aktualisieren, werden nur die Daten der ersten Argument Entität **des Beziehungs-oder** aufrufenden Aufrufes aktualisiert. Die zweite muss manuell aktualisiert werden, wenn Sie zwischen den Bildschirmen dieser App wechseln möchten.
 
-    ![Visible-Eigenschaft wird auf die Funktion "Refresh" festgelegt.](media/function-relate-unrelate/contacts-refresh.png)
+    ![Festlegen der onvisible-Eigenschaft auf die Refresh-Funktion](media/function-relate-unrelate/contacts-refresh.png)
 
 1. Doppelte **Screen1**.
 
-    Das Duplikat den Namen **Screen1_1** und bilden die Grundlage für die Beziehungen aus der Contacts-Seite ansehen.
+    Das Duplikat erhält den Namen **Screen1_1** und bildet die Grundlage für die Betrachtung der Beziehungen von der Seite Kontakte.
 
     ![Duplizieren eines Bildschirms](media/function-relate-unrelate/contacts-duplicate.png)
 
-1. Um die reverse-Ansicht zu erstellen, ändern Sie diese Formeln, die Steuerelemente der **Screen1_1**:
+1. Um die umgekehrte Ansicht zu erstellen, ändern Sie diese Formeln in den Steuerelementen von **Screen1_1**:
 
-    - Screen1_1.OnVisible = `Refresh( Contacts )`
-    - Gallery1_1.Items = `Contacts`
-    - Title1_1.Text = `ThisItem.'Full Name'`
-    - Label1_1.Text = `"Selected Contact Products"`
-    - Gallery2_1.Items = `Gallery1_1.Selected.Products`
-    - Title2_1.Text = `ThisItem.Name`
-    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
-    - ComboBox1_1.Items = `Products`
-    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
+    - Screen1_1. onvisible = `Refresh( Contacts )`
+    - Gallery1_1. Items = `Contacts`
+    - Title1_1. Text = `ThisItem.'Full Name'`
+    - Label1_1. Text = `"Selected Contact Products"`
+    - Gallery2_1. Items = `Gallery1_1.Selected.Products`
+    - Title2_1. Text = `ThisItem.Name`
+    - Icon1_1. onselect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
+    - ComboBox1_1. Items = `Products`
+    - Icon2_1. onselect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
-    Das Ergebnis ähnelt dem vorherigen Bildschirm sieht jedoch wird die Beziehung zwischen der **Kontakte** Seite.
+    Das Ergebnis ähnelt dem vorherigen Bildschirm, wird jedoch in der Beziehung von der **Kontakt** Seite angezeigt.
 
-    ![Anzeigen von m: n Beziehung mit Kontakten ab](media/function-relate-unrelate/reverse-screen.png)
+    ![N:n-Beziehung beginnend mit Kontakten anzeigen](media/function-relate-unrelate/reverse-screen.png)
 
-1. Einfügen einer **Pfeile Drehfeld** Symbol, und legen seine **OnSelect** Eigenschaft, um **navigieren (Screen1, None)** .  Führen Sie auf das gleiche **Screen1** mit der Formel **Navigate (Screen1_1, None)** .
+1. Fügen Sie ein **Pfeil nach unten** ein, und legen **Sie dessen onselect** -Eigenschaft auf **Navigate (Screen1, None)** fest.  Gehen Sie auf **Screen1** mit der Formel **Navigation (Screen1_1, None)** .
 
-    ![Fügen Sie die Navigation zwischen Bildschirmen](media/function-relate-unrelate/reverse-navigate.png)
+    ![Navigation zwischen Bildschirmen hinzufügen](media/function-relate-unrelate/reverse-navigate.png)
 
-Mit diesem Bildschirm "Neu" können Benutzer einen Kontakt zu einem Produkt hinzufügen und bringen Sie in einen Überblick über die Kontakte und finden Sie unter dem zugehörigen Produkt. Beziehungen sind symmetrisch und freigegebenen zwischen den beiden Bildschirmen.
+Mit diesem neuen Bildschirm können Benutzer einen Kontakt zu einem Produkt hinzufügen und dann zu einer Ansicht von Kontakten wechseln und das zugehörige Produktanzeigen. Die Beziehungen sind symmetrisch und werden von den beiden Bildschirmen gemeinsam genutzt.
 
-![Zeigen Sie m: n Beziehung von beiden Seiten](media/function-relate-unrelate/contacts-reverse.gif)
+![Veranschaulichen der n:n-Beziehung von beiden Seiten](media/function-relate-unrelate/contacts-reverse.gif)

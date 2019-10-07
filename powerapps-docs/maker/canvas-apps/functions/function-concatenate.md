@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 889f612f3da208d4edfccc43a579ced07933b40d
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216049"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992889"
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funktionen „Concat“ und „Concatenate“ in PowerApps
 
@@ -27,96 +26,96 @@ Verketten einzelne Zeichenfolgen von Text und Zeichenfolgen in [Tabellen](../wor
 
 ## <a name="description"></a>Beschreibung
 
-Die **Concatenate**-Funktion verkettet eine Mischung aus einzelnen Zeichenfolgen und eine einspaltige Tabelle von Zeichenfolgen. Wenn Sie diese Funktion mit einzelnen Zeichenfolgen verwenden, ist äquivalent zur Verwendung der **&** [Operator](operators.md).
+Die **Concatenate**-Funktion verkettet eine Mischung aus einzelnen Zeichenfolgen und eine einspaltige Tabelle von Zeichenfolgen. Wenn Sie diese Funktion mit einzelnen Zeichen folgen verwenden, entspricht dies der Verwendung des **&-** [Operators](operators.md).
 
 Die **Concat**-Funktion verkettet das Ergebnis einer Formel, das in allen [Datensätzen](../working-with-tables.md#records) einer Tabelle angewendet wird, was zu einer einzelnen Zeichenfolge führt. Verwenden Sie diese Funktion, um die Zeichenfolgen einer Tabelle zusammenzufassen, wie es die **[Sum](function-aggregates.md)** -Funktion bei Zahlen macht.
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Verwenden der [ **Split** ](function-split.md) oder [ **MatchAll** ](function-ismatch.md) Funktion zum Aufteilen einer Zeichenfolge in eine Tabelle von Teilzeichenfolgen.
+Verwenden Sie die [**Split**](function-split.md) -oder [**MatchAll**](function-ismatch.md) -Funktion, um eine Zeichenfolge in eine Tabelle von Teil Zeichenfolgen aufzuteilen.
 
 ## <a name="syntax"></a>Syntax
 
-**Concat**( *Tabelle*; *Formel* )
+**Concat**( *Tabelle*, *Formel* )
 
 - *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 - *Formel* (erforderlich):  Die auf alle Datensätze der Tabelle anzuwendende Formel.
 
-**Concatenate**( *Zeichenfolge1* [; *Zeichenfolge2*; ...] )
+**Concatenate**( *Zeichenfolge1* [, *Zeichenfolge2*, ...] )
 
 - *Zeichenfolge(n)* : Erforderlich.  Mischung aus einzelnen Zeichenfolgen oder eine einspaltige Tabelle von Zeichenfolgen.
 
 ## <a name="examples"></a>Beispiele
 
-In die Beispielen in diesem Abschnitt verwenden Sie diese globale Variablen:
+In den Beispielen in diesem Abschnitt werden diese globalen Variablen verwendet:
 
 - **FirstName** = "Jane"
-- **"LastName"** = "Doe"
-- **Produkte** = ![Tabelle mit zwei Spalten und vier Zeilen](media/function-concatenate/products.png)
+- **LastName** = "Doe"
+- **Products** =  @ no__t-2table mit zwei Spalten und vier Zeilen @ no__t-3
 
-Um diese globalen Variablen in einer app zu erstellen, fügen Sie eine [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel:
+Wenn Sie diese globalen Variablen in einer APP erstellen möchten, fügen Sie ein [**Button**](../controls/control-button.md) -Steuerelement ein, und legen **Sie dessen onselect** -Eigenschaft auf diese Formel fest:
 
-```powerapps-comma
-Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
-Set( Products;
+```powerapps-dot
+Set( FirstName, "Jane" ); Set( LastName, "Doe" );
+Set( Products,
     Table(
-        { Name: "Violin"; Type: "String" };
-        { Name: "Cello"; Type: "String" };
-        { Name: "Trumpet"; Type: "Wind" }
+        { Name: "Violin", Type: "String" },
+        { Name: "Cello", Type: "String" },
+        { Name: "Trumpet", Type: "Wind" }
     )
 )
 ```
 
-Wählen Sie die Schaltfläche (indem Sie darauf klicken, während Sie die Alt-Taste gedrückt halten).
+Wählen Sie die Schaltfläche aus (indem Sie darauf klicken, während Sie die Alt-Taste gedrückt halten).
 
-### <a name="concatenate-function-and-the--operator"></a>Concatenate-Funktion und den &-Operator
+### <a name="concatenate-function-and-the--operator"></a>Concatenate-Funktion und der &-Operator
 
-Legen Sie für diese Beispiele die **Text** Eigenschaft eine [ **Bezeichnung** ](../controls/control-text-box.md) Steuerelement auf eine Formel aus der ersten Spalte der folgenden Tabelle.
-
-| Formel | Beschreibung | Ergebnis |
-|---------|-------------|--------|
-| **Verketten (&nbsp;"LastName",&nbsp;",&nbsp;",&nbsp;FirstName&nbsp;)** | Der Wert in verkettet **"LastName"** , die Zeichenfolge **","** (ein Komma gefolgt von einem Leerzeichen), und der Wert im **FirstName**. | "Doe, der&nbsp;Jane" |
-| **"LastName"&nbsp;&&nbsp;",&nbsp;"&nbsp;&&nbsp;FirstName** | Wie im vorherigen Beispiel, außer Sie verwenden die **&** Operator anstelle der Funktion. | "Doe, der&nbsp;Jane" |
-| **Verketten (&nbsp;FirstName,&nbsp;"&nbsp;",&nbsp;"LastName"&nbsp;)** | Der Wert in verkettet **FirstName**, die Zeichenfolge **""** (ein einzelnes Leerzeichen), und der Wert in **"LastName"** . | "Jane&nbsp;Doe" |
-| **FirstName&nbsp;&&nbsp;"&nbsp;"&nbsp;&&nbsp;"LastName"** | Im vorherigen Beispiel identisch mit der **&** Operator anstelle der Funktion. | "Jane&nbsp;Doe" |
-
-### <a name="concatenate-with-a-single-column-table"></a>Verketten Sie mit einer einspaltigen Tabelle
-
-In diesem Beispiel fügen Sie eine leere, vertikale [ **Katalog** ](../controls/control-gallery.md) steuern, legen Sie dessen **Elemente** Eigenschaft, um die Formel in der folgenden Tabelle, und fügen Sie dann in der Katalogvorlage eine Bezeichnung hinzu.
+Legen Sie für diese Beispiele die **Text** -Eigenschaft eines [**Label**](../controls/control-text-box.md) -Steuer Elements auf eine Formel aus der ersten Spalte der nächsten Tabelle fest.
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Concatenate( "Name:&nbsp;";&nbsp;Products.Name; ",&nbsp;Type:&nbsp;";&nbsp;Products.Type )** | Für jeden Datensatz in die **Produkte** Tabelle, die Zeichenfolge verkettet **"Name:"** , den Namen des Produkts, die Zeichenfolge **", Typ:"** und den Typ des Produkts.  | ![Tabelle von Produkten](media/function-concatenate/single-column.png) |
+| **Concatenate (&nbsp;lastname, &nbsp; ", &nbsp;", &nbsp;firstname @ no__t-5)** | Verkettet den Wert in **LastName**, die Zeichenfolge **","** (ein Komma, gefolgt von einem Leerzeichen) und den Wert in **FirstName**. | "Doe, &nbsp;jane" |
+| **LastName @ no__t-1 @ no__t-2 @ no__t-3 ", &nbsp;" &nbsp; @ no__t-6 @ no__t-7firstname** | Identisch mit dem vorherigen Beispiel, mit der Ausnahme, dass der **&-** Operator anstelle der-Funktion verwendet wird. | "Doe, &nbsp;jane" |
+| **Concatenate (&nbsp;firstname, &nbsp; "&nbsp;", &nbsp;lastname @ no__t-5)** | Verkettet den Wert in **FirstName**, die Zeichenfolge **""** (ein einzelnes Leerzeichen) und den Wert in " **LastName**". | "Jane @ no__t-0doe" |
+| **FirstName @ no__t-1 @ no__t-2 @ no__t-3 "&nbsp;" &nbsp; @ no__t-6 @ no__t-7lastname** | Identisch mit dem vorherigen Beispiel mit dem **&-** Operator anstelle der-Funktion. | "Jane @ no__t-0doe" |
+
+### <a name="concatenate-with-a-single-column-table"></a>Verketten mit einer einspaltigen Tabelle
+
+Fügen Sie in diesem Beispiel ein leeres [ **, vertikales**](../controls/control-gallery.md) Katalog-Steuerelement hinzu, legen Sie dessen **Items** -Eigenschaft auf die Formel in der nächsten Tabelle fest, und fügen Sie dann eine Bezeichnung in der Katalog Vorlage hinzu.
+
+| Formel | Beschreibung | Ergebnis |
+|---------|-------------|--------|
+| **Concatenate ("Name: &nbsp;", &nbsp;Products.Name, ", &nbsp;type: &nbsp;", &nbsp;products. Type)** | Verkettet für jeden Datensatz in der **Products** -Tabelle die Zeichenfolge **"Name:"** , den Namen des Produkts, die Zeichenfolge **", Type:"** und den Typ des Produkts.  | ![Tabelle mit Produkten](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat-Funktion
 
-Legen Sie für diese Beispiele die **Text** -Eigenschaft einer Bezeichnung auf eine Formel aus der ersten Spalte der folgenden Tabelle.
+Legen Sie für diese Beispiele die **Text** -Eigenschaft einer Bezeichnung auf eine Formel aus der ersten Spalte der nächsten Tabelle fest.
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Concat( Products; Name & ", " )** | Wertet den Ausdruck **Name der & ","** für jeden Datensatz der **Produkte** und die Ergebnisse in eine einzelne Zeichenfolge verkettet.  | "Violine,&nbsp;Cello,&nbsp;Trumpet,&nbsp;" |
-| **Concat( Filter(&nbsp;Products;&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;); Name & ", " )** | Wertet die Formel **Name der & ","** für jeden Datensatz der **Produkte** , die den Filter entspricht **Typ = "String"** , und die Ergebnisse in einer Zeichenfolge verkettet.   | "Violine,&nbsp;Cello,&nbsp;" |
+| **Concat (Products, Name & ",")** | Wertet den Ausdrucks **Namen & ","** für jeden Datensatz von **Produkten** aus und verkettet die Ergebnisse zu einer einzelnen Text Zeichenfolge.  | "Violine, &nbsp;cello, &nbsp;trompete, &nbsp;" |
+| **Concat (Filter (&nbsp;products, &nbsp;type @ no__t-3 @ no__t-4 @ no__t-5 "String" &nbsp;), Name & ",")** | Wertet den Formel **Namen & ","** für jeden Datensatz von **Produkten** aus, der dem **Filtertyp = "String"** entspricht, und verkettet die Ergebnisse zu einer einzelnen Text Zeichenfolge.   | "Violine, &nbsp;cello, &nbsp;" |
 
-### <a name="trimming-the-end"></a>Verkürzen des Endes
+### <a name="trimming-the-end"></a>Kürzen des Endes
 
-Die letzten beiden Beispiele enthalten zusätzliche "," am Ende des Resultsets. Fügt die Funktion, ein Komma und ein Leerzeichen, die **Namen** Wert, der jeder Datensatz in der Tabelle, einschließlich des letzten Datensatzes.
+Die beiden letzten Beispiele enthalten am Ende des Ergebnisses ein zusätzliches ",". Die-Funktion fügt ein Komma und ein Leerzeichen an den **namens** Wert jedes Datensatzes in der Tabelle an, einschließlich des letzten Datensatzes.
 
-In einigen Fällen sind diese zusätzlichen Zeichen zulässig. Z. B. einen ersten Trennzeichen nicht angezeigt, wenn Sie das Ergebnis in eine Bezeichnung angezeigt. Wenn Sie diese zusätzlichen Zeichen entfernen möchten, verwenden Sie die [ **Links** ](function-left-mid-right.md) oder [ **Übereinstimmung** ](function-ismatch.md) Funktion.
+In einigen Fällen sind diese zusätzlichen Zeichen nicht von Bedeutung. Beispielsweise wird ein einzelnes Leerzeichen nicht angezeigt, wenn Sie das Ergebnis in einer Bezeichnung anzeigen. Wenn Sie diese zusätzlichen Zeichen entfernen möchten, verwenden Sie die [**left**](function-left-mid-right.md) -oder [**Match**](function-ismatch.md) -Funktion.
 
-Legen Sie für diese Beispiele die **Text** -Eigenschaft einer Bezeichnung auf eine Formel aus der ersten Spalte der folgenden Tabelle.
-
-| Formel | Beschreibung | Ergebnis |
-|---------|-------------|--------|
-| **Links ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;), Len (&nbsp;"concat" (&nbsp;Produkte&nbsp;Namen&nbsp; & &nbsp;",&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2)** | Gibt das Ergebnis des **"concat"** aber entfernt die letzten beiden Zeichen, die das überflüssige Trennzeichen zu bilden. | "Violine,&nbsp;Cello,&nbsp;Trumpet" |
-| **Übereinstimmung ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;), "^ (?&lt; Trim&gt;. *),&nbsp;$") .trim** | Gibt die Zeichen des **"concat"** vom Anfang der Zeichenfolge (^) am Ende ($), aber nicht die unerwünschte Komma und Leerzeichen am Ende enthält. | "Violine,&nbsp;Cello,&nbsp;Trumpet" |
-
-### <a name="split-and-matchall"></a>Teilen und MatchAll
-
-Wenn Sie verwendet **"concat"** mit einem Trennzeichen, können Sie den Vorgang umkehren, aus der **Split** und **MatchAll** Funktionen.
-
-Diese Beispiele hinzufügen, einen Katalog leer, vertikalen, legen Sie seine **Elemente** -Eigenschaft auf eine Formel in der folgenden Tabelle, und fügen Sie dann in der Katalogvorlage eine Bezeichnung hinzu.
+Legen Sie für diese Beispiele die **Text** -Eigenschaft einer Bezeichnung auf eine Formel aus der ersten Spalte der nächsten Tabelle fest.
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Split ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;), ",")** | Teilt die Zeichenfolge mit dem Trennzeichen **","** . Damit die letzte Zeile in das Ergebnis eine leere Zeichenfolge ist, endet die Zeichenfolge durch ein Komma und Leerzeichen.  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll ("concat" (&nbsp;Produkte&nbsp;Namen&nbsp;&&nbsp;",&nbsp;"&nbsp;); "[^ \s,]+"). FullMatch** | Teilt die Zeichenfolge anhand der Zeichen, die Leerzeichen oder Kommas sind. Diese Formel wird entfernt, die zusätzliches Komma und Leerzeichen am Ende der Zeichenfolge. | ![Table](media/function-concatenate/matchall.png)
+| **Left (Concat (&nbsp;products, &nbsp;name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), Len (&nbsp;concat (&nbsp;products, 0name @ no__t-11 @ no__t-12 @ no__t-13 ", 4" 5) 6) 7 @ no__t-18 @ no__t-192)** | Gibt das Ergebnis von **Concat** zurück, entfernt jedoch die letzten zwei Zeichen, die das überflüssige Trennzeichen bilden. | "Violine, &nbsp;cello, &nbsp;trompete" |
+| **Match (Concat (&nbsp;products, &nbsp;name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), "^ (? &lt;trim @ no__t-9. *), @no__t-$10"). Trim** | Gibt die Zeichen von **Concat** vom Anfang der Text Zeichenfolge (^) bis zum Ende ($) zurück, enthält jedoch nicht das unerwünschte Komma und den Leerraum am Ende. | "Violine, &nbsp;cello, &nbsp;trompete" |
+
+### <a name="split-and-matchall"></a>Split und MatchAll
+
+Wenn Sie **Concat** mit einem Trennzeichen verwendet haben, können Sie den Vorgang umkehren, indem Sie die **Split** -Funktion und die **MatchAll** -Funktion kombinieren.
+
+Fügen Sie für diese Beispiele einen leeren, vertikalen Katalog hinzu, legen Sie dessen **Items** -Eigenschaft auf eine Formel in der nächsten Tabelle fest, und fügen Sie dann eine Bezeichnung in der Katalog Vorlage hinzu.
+
+| Formel | Beschreibung | Ergebnis |
+|---------|-------------|--------|
+| **Split (Concat (&nbsp;products, &nbsp;name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), ",")** | Teilt die Text Zeichenfolge mit dem Trennzeichen **","** . Die Zeichenfolge endet mit einem Komma und einem Leerzeichen, daher ist die letzte Zeile im Ergebnis eine leere Zeichenfolge.  | ![Table](media/function-concatenate/split.png) |
+| **MatchAll (Concat (&nbsp;products, &nbsp;name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), "[^ \s,] +"). Vollständiger Treffer** | Teilt die Text Zeichenfolge basierend auf Zeichen, die keine Leerzeichen oder Kommas sind. Mit dieser Formel werden das zusätzliche Komma und der Leerraum am Ende der Zeichenfolge entfernt. | ![Table](media/function-concatenate/matchall.png)

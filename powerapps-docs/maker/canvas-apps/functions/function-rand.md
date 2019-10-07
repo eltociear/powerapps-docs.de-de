@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/09/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abb64d57e53f292dc42cb44ef2b1c9f35bbad944
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: e04a4e4e00d1f35f36b7e5d68cfb32d83b19b86b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61564012"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992536"
 ---
 # <a name="rand-function-in-powerapps"></a>Funktion „Rand“ in PowerApps
 Gibt eine pseudozufällige Zahl zurück.
@@ -44,7 +43,7 @@ Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth
 ## <a name="examples"></a>Beispiele
 
 #### <a name="display-a-different-random-number-as-user-input-changes"></a>Anzeigen einer anderen Zufallszahl, da sich die Benutzereingabe geändert hat
-1. Fügen Sie ein **[Schieberegler](../controls/control-slider.md)**-Steuerelement hinzu, und benennen Sie es in **Slider1** um, wenn es nicht bereits so heißt.
+1. Fügen Sie ein **[Schieberegler](../controls/control-slider.md)** -Steuerelement hinzu, und benennen Sie es in **Slider1** um, wenn es nicht bereits so heißt.
 
 1. Fügen Sie ein **[Bezeichnungssteuerelement](../controls/control-text-box.md)** hinzu, und legen Sie dessen **Text**-Eigenschaft auf diese Formel fest:
 
@@ -61,9 +60,9 @@ Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth
     ![Vier Bildschirme, die eine Bezeichnung mit vier verschiedenen zufälligen Dezimalwerten für jede der vier Schiebereglereinstellungen anzeigen: 70,899, 84,667, 90,134 und 99,690](media/function-rand/rand-slider-results.png)
 
 #### <a name="create-a-table-of-random-numbers"></a>Erstellen einer Tabelle mit Zufallszahlen
-1. Fügen Sie ein **[Button](../controls/control-button.md)**-Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:
+1. Fügen Sie ein **[Button](../controls/control-button.md)** -Steuerelement (Schaltfläche) hinzu, und legen Sie seine **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
+    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 
     Diese Formel erstellt eine Tabelle mit einer Spalte, mit der eine fünfmalige Iteration ausgeführt wird. Das Ergebnis sind fünf Zufallszahlen.
 
@@ -81,4 +80,4 @@ Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth
 
     ![Die gleiche Anzeige mit einer Tabelle mit fünf neuen Dezimalwerten: 0,414, 0,128, 0,860, 0,303 und 0,568](media/function-rand/rand-collection-2.png)
 
-Um eine einzelne Zufallszahl statt einer Tabelle zu generieren, verwenden Sie **Set( RandomNumber; Rand() )**.
+Um eine einzelne Zufallszahl statt einer Tabelle zu generieren, verwenden Sie **Set( RandomNumber, Rand() )** .

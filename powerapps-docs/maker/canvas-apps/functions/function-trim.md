@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/09/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5997df0d6e2a6a2d6732d10cefa146f4ba6e33dc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548437"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71991917"
 ---
 # <a name="trim-and-trimends-functions-in-powerapps"></a>Trim- und TrimEnds-Funktionen in PowerApps
 Entfernt zusätzliche Leerzeichen aus einer Textzeichenfolge.
@@ -54,7 +53,7 @@ Die folgenden Beispiele verwenden eine einspaltige-Sammlung mit dem Namen **Spac
 ![](media/function-trim/input-strings.png)
 
 Legen Sie die Eigenschaft **OnSelect** eines Steuerelements **[Schaltfläche](../controls/control-button.md)** auf diese Formel fest, öffnen Sie den Vorschaumodus, und klicken oder tippen Sie anschließend auf die Schaltfläche, um eine Sammlung zu erstellen:
-<br>**ClearCollect( Spaces; [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;"; "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill"; "Already&nbsp;trimmed"; "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;"; "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
+<br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
@@ -62,5 +61,5 @@ Legen Sie die Eigenschaft **OnSelect** eines Steuerelements **[Schaltfläche](..
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |Entfernt alle Leerzeichen am Anfang und Ende einer Zeichenfolge in der Sammlung **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |
 
 > [!NOTE]
-> Zusätzliche Leerzeichen werden nicht angezeigt, wenn Sie eine Sammlung anzeigen, indem Sie im Menü **File** auf **Sammlungen** klicken oder tippen. Verwenden Sie die **[Len](function-len.md)**-Funktion, um die Länge der Zeichenfolge zu überprüfen.
+> Zusätzliche Leerzeichen werden nicht angezeigt, wenn Sie eine Sammlung anzeigen, indem Sie im Menü **File** auf **Sammlungen** klicken oder tippen. Verwenden Sie die **[Len](function-len.md)** -Funktion, um die Länge der Zeichenfolge zu überprüfen.
 

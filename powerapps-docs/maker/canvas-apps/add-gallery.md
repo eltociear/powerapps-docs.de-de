@@ -6,24 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/28/2017
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f45948bc16f036669a09ed2c566c60440d24a797
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61528029"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987566"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
 
-Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem Sie Ihrer Canvas-App ein **[Katalog](controls/control-gallery.md)**-Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)**-Steuerelement entsprechen.
+Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem Sie Ihrer Canvas-App ein **[Katalog](controls/control-gallery.md)** -Steuerelement hinzufügen. In diesem Thema wird Excel als Datenquelle verwendet. Filtern Sie die Liste, indem Sie das **Katalog**-Steuerelement so konfigurieren, dass nur die Elemente angezeigt werden, die dem Filterkriterium in einem **[Texteingabe](controls/control-text-input.md)** -Steuerelement entsprechen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -34,7 +33,7 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
 
     2. Laden Sie die Excel-Datei in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch, z.B. in OneDrive for Business.
 
-- Öffnen Sie eine leere app:
+- Öffnen Sie eine leere App:
     1. [Melden Sie sich bei PowerApps an](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
@@ -47,21 +46,21 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
 
 ## <a name="add-a-gallery-to-a-blank-screen"></a>Hinzufügen eines Katalogs zu einem leeren Bildschirm
 
-1. Auf der **einfügen** Registerkarte **Katalog**, und wählen Sie dann **vertikale**.
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option Katalog aus, und **Wählen Sie dann** **vertikal**aus.
 
     ![Vertikalen Katalog hinzufügen](./media/add-gallery/gallery-dropdown.png)
 
-1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, und Öffnen der **Elemente** aus, und wählen Sie dann **Flooring Estimates**.
+1. Öffnen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich die Liste **Elemente** , und wählen Sie dann **Boden Schätzungen**aus.
 
-    ![Flooring estimates](./media/add-gallery/select-layout.png)
+    ![Schätzwerte](./media/add-gallery/select-layout.png)
 
-1. (optional) In der **Layout** wählen eine andere Option.
+1. optionale Wählen Sie in der Liste **Layout** eine andere Option aus.
 
 ## <a name="add-a-gallery-in-a-screen"></a>Hinzufügen eines Katalogs in einem Bildschirm
 
-1. Auf der **Startseite** Registerkarte **neuer Bildschirm** > **listenbildschirm**.
+1. Wählen Sie auf der Registerkarte **Startseite** die Option **neuer Bildschirm** > **Listenbildschirm**aus.
 
-    Einen Bildschirm mit einer **Katalog** -Steuerelement und andere Steuerelemente, wie etwa eine Suchleiste angezeigt wird.
+    Ein Bildschirm mit einem Katalog **-Steuerelement** und anderen Steuerelementen, z. b. einer Suchleiste, wird angezeigt.
 
 1. Legen Sie die **Items**-Eigenschaft des Katalogs auf `FlooringEstimates` fest.
 
@@ -70,17 +69,17 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
     ![Anzeigen von Daten](./media/add-gallery/show-data-default.png)
 
 ## <a name="add-a-control-to-the-gallery-control"></a>Hinzufügen eines Steuerelements zum Katalog-Steuerelement
-Bevor Sie andere Anpassungen vornehmen, sicher, dass das Layout für Ihre **Katalog** Steuerelement am ehesten entspricht, was Sie möchten. Von dort aus können Sie weiter anpassen der **Katalog** Vorlage, die bestimmt, wie alle Daten in die **Katalog** -Steuerelement angezeigt wird.
+Bevor Sie weitere Anpassungen vornehmen, sollten Sie sicherstellen, dass das Layout **für das Katalog-Steuerelement** am ehesten den gewünschten Anforderungen entspricht. Von dort aus können Sie die **Katalog Vorlage weiter** ändern, mit der bestimmt wird, wie alle Daten im Katalog **-Steuerelement** angezeigt werden.
 
-1. Wählen Sie die Vorlage durch Klicken oder tippen am unteren Rand der **Katalog** Steuerelement auswählen und dann auf das Stiftsymbol in der oberen linken Ecke.
+1. Wählen Sie die Vorlage aus, indem Sie am unteren Rand des Katalog-Steuer Elements klicken oder tippen und dann **in der oberen** linken Ecke das Stift Symbol auswählen.
 
     ![Bearbeiten der Katalogvorlage](./media/add-gallery/edit-item.png)
 
-2. Fügen Sie bei ausgewählter Vorlage ein **[Label](controls/control-text-box.md)**-Steuerelement (Bezeichnung) hinzu, verschieben Sie es, und ändern Sie seine Größe, sodass es sich nicht mit anderen Steuerelementen in der Vorlage überschneidet.
+2. Fügen Sie bei ausgewählter Vorlage ein **[Label](controls/control-text-box.md)** -Steuerelement (Bezeichnung) hinzu, verschieben Sie es, und ändern Sie seine Größe, sodass es sich nicht mit anderen Steuerelementen in der Vorlage überschneidet.
 
     ![Bezeichnung hinzufügen](./media/add-gallery/add-text-box.png)
 
-3. Wählen Sie den Katalog, und wählen Sie dann **bearbeiten** neben **Felder** auf die **Eigenschaften** Registerkarte im rechten Bereich.
+3. Wählen Sie den Katalog aus, und wählen Sie dann im rechten **Bereich** auf der Registerkarte **Eigenschaften** die Option **Bearbeiten** aus.
 
 4. Wählen Sie die soeben in diesem Verfahren hinzugefügte Bezeichnung aus, und öffnen Sie die hervorgehobene Liste im Bereich **Daten**.
 
@@ -92,27 +91,27 @@ Bevor Sie andere Anpassungen vornehmen, sicher, dass das Layout für Ihre **Kata
 
     ![Endgültiger Katalog](./media/add-gallery/final-gallery.png)
 
-## <a name="filter-and-sort-a-gallery"></a>Filtern und Sortieren von einem Katalog
-Die **[Items](controls/properties-core.md)**-Eigenschaft eines **Katalog**-Steuerelements bestimmt, welche Elemente angezeigt werden. In diesem Verfahren konfigurieren Sie diese Eigenschaft, sodass es bestimmt auch, welche Datensätze basierend auf Filterkriterien, und in welcher Reihenfolge angezeigt werden.
+## <a name="filter-and-sort-a-gallery"></a>Filtern und Sortieren eines Katalogs
+Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steuerelements bestimmt, welche Elemente angezeigt werden. In diesem Verfahren konfigurieren Sie diese Eigenschaft so, dass Sie auch bestimmt, welche Datensätze basierend auf Filterkriterien und in welcher Reihenfolge angezeigt werden.
 
-![Symbol "Suche Box" und "Sortieren"](./media/add-gallery/text-search-box.png)
+![Suchfeld und Sortier Symbol](./media/add-gallery/text-search-box.png)
 
-1. Legen Sie die **[Items](controls/properties-core.md)**-Eigenschaft des **Katalog**-Steuerelements auf diese Formel fest:
+1. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des **Katalog**-Steuerelements auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -120,27 +119,27 @@ Die **[Items](controls/properties-core.md)**-Eigenschaft eines **Katalog**-Steue
 
     Weitere Informationen zu den Funktionen in dieser Formel finden Sie unter [formula reference (Formelreferenz)](formula-reference.md).
 
-1. Doppelklicken Sie auf das Suchfeld ein, und klicken Sie dann geben Sie einen Produktnamen ganz oder teilweise.
+1. Doppelklicken Sie auf das Suchfeld, und geben Sie dann Part oder all einen Produktnamen ein.
 
-    Nur die Elemente, die das Filterkriterium erfüllen angezeigt werden.
+    Es werden nur die Elemente angezeigt, die das Filter Kriterium erfüllen.
 
-1. Während Sie die Alt-Taste drücken, das Sortiersymbol einmal oder mehrmals auf um die Sortierreihenfolge zu wechseln.
+1. Wählen Sie beim Drücken der Alt-Taste das Sortier Symbol einmal oder mehrmals aus, um die Sortierreihenfolge zu ändern.
 
-    Die Datensätze Umschalten zwischen aufsteigender und absteigender alphabetischer Reihenfolge basierend auf den Namen des Produkts.
+    Die Datensätze werden auf der Grundlage des Produkt namens zwischen aufsteigender und absteigender alphabetischer Reihenfolge gewechselt.
 
 ## <a name="highlight-the-selected-item"></a>Hervorheben des ausgewählten Elements
-Legen Sie die **Katalog** des Steuerelements **TemplateFill** Eigenschaft, um eine Formel, die wie in diesem Beispiel, aber Sie können verschiedene Farben geben, wenn Sie möchten:
+Legen Sie die **templatefill** -Eigenschaft des Katalog-Steuer Elements auf eine Formel fest **, die diesem** Beispiel ähnelt, aber Sie können bei Bedarf andere Farben angeben:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Ändern der Standardauswahl
-Legen Sie die **Default**-Eigenschaft des **Katalog**-Steuerelements auf den Datensatz fest, der standardmäßig ausgewählt sein soll. Sie können beispielsweise angeben, das fünfte Element in der **FlooringEstimates** Datenquelle:
+Legen Sie die **Default**-Eigenschaft des **Katalog**-Steuerelements auf den Datensatz fest, der standardmäßig ausgewählt sein soll. Sie können z. b. das fünfte Element in der Datenquelle **flooringestimates** angeben:
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 In diesem Beispiel geben Sie das erste Element in der Kategorie **Hardwood** der Datenquelle **FlooringEstimates** an:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zum Arbeiten mit [Formularen](working-with-forms.md) und [Formeln](working-with-formulas.md).

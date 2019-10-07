@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2016
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 10a6178c63495b929eb6e5885ded9394b31a11ef
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b89f23ac1dec941fcc2f5d7bd03f927c08691f77
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545937"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994059"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
 PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
@@ -57,7 +57,7 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
 
 ## <a name="using-the-excel-data-in-your-app"></a>Verwenden von Excel-Daten in der App
 1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Katalog** aus, und wählen Sie anschließend ein Katalogsteuerelement **Mit Text** aus.
-2. Legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft des Katalogs auf Ihre Excel-Tabelle fest. Wenn die Excel-Tabelle beispielsweise **Table1** heißt, legen Sie sie auf „Table1“ fest:  
+2. Legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft des Katalogs auf Ihre Excel-Tabelle fest. Wenn die Excel-Tabelle beispielsweise **Table1** heißt, legen Sie sie auf „Table1“ fest:  
    
     ![Items-Eigenschaft](./media/cloud-storage-blob-connections/itemsproperty.png)  
    

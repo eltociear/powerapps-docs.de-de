@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d856ccd086a919e206175c25eee19f435325fb8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 33a119e1e023ed8a28bdabe9ac5caba0723476df
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551286"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985310"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Funktion „DataSourceInfo“ in PowerApps
 Stellt Informationen über eine [Datenquelle](../working-with-data-sources.md) bereit
@@ -27,7 +26,7 @@ Stellt Informationen über eine [Datenquelle](../working-with-data-sources.md) b
 ## <a name="overview"></a>Übersicht
 Datenquellen können eine Fülle von Informationen bereitstellen, um die Benutzerfreundlichkeit zu optimieren.
 
-Sie können Informationen auf [Spaltenebene](../working-with-tables.md#columns) verwenden, um Benutzereingaben zu prüfen und dem Benutzer vor dem Verwenden der **[Patch](function-patch.md)**-Funktion sofort Feedback zu geben. Die **[Validate](function-validate.md)**-Funktion verwendet die gleichen Informationen.
+Sie können Informationen auf [Spaltenebene](../working-with-tables.md#columns) verwenden, um Benutzereingaben zu prüfen und dem Benutzer vor dem Verwenden der **[Patch](function-patch.md)** -Funktion sofort Feedback zu geben. Die **[Validate](function-validate.md)** -Funktion verwendet die gleichen Informationen.
 
 Sie können Informationen auf Datenquellenebene z.B. verwenden, um die Schaltflächen **Bearbeiten** und **Neu** für Benutzer zu deaktivieren oder auszublenden, die keine Berechtigungen haben, [Datensätze](../working-with-tables.md#records) zu bearbeiten und zu erstellen.
 
@@ -45,7 +44,7 @@ Sie können **DataSourceInfo** verwenden, um Informationen über eine bestimmte 
 | **DataSourceInfo.MinValue** |Number |Niedrigster numerischer Wert, den eine Spalte enthalten kann. Gilt nur für Spalten, die Zahlen enthalten. Wenn ein Minimum nicht festgelegt ist, wird *blank* zurückgegeben. |
 | **DataSourceInfo.Required** |Boolescher Wert |Ist ein Wert für diese Spalte erforderlich? Wenn nicht von der Datenquelle festgelegt, wird **FALSE** zurückgegeben. |
 
-Das dritte Argument ist der Name einer Spalte als Zeichenfolge.  Beispielsweise würde die Spalte **Phone** (Telefon) in der Sammlung **People** (Personen) würde als **"Phone"**, inklusive der doppelten Anführungszeichen, übergeben werden.
+Das dritte Argument ist der Name einer Spalte als Zeichenfolge.  Beispielsweise würde die Spalte **Phone** (Telefon) in der Sammlung **People** (Personen) würde als **"Phone"** , inklusive der doppelten Anführungszeichen, übergeben werden.
 
 ### <a name="data-source-information"></a>Datenquelleninformationen
 Sie können **DataSourceInfo** auch dazu verwenden, Informationen über die Datenquelle als Ganzes abzurufen:  
@@ -59,11 +58,11 @@ Sie können **DataSourceInfo** auch dazu verwenden, Informationen über die Date
 | **DataSourceInfo.ReadPermission** |Boolescher Wert |Verfügt der aktuelle Benutzer über die Berechtigung zum Lesen von Datensätzen in dieser Datenquelle? Wenn nicht von der Datenquelle festgelegt, wird **TRUE** zurückgegeben. |
 
 ## <a name="syntax"></a>Syntax
-**DataSourceInfo**( *Datenquelle*; *Information*; *Spaltenname* )
+**DataSourceInfo**( *Datenquelle*, *Information*, *Spaltenname* )
 
 * *Datenquelle*: Erforderlich. Die zu verwendende Datenquelle.
 * *Information*: Erforderlich. Der Typ von Information, den Sie abrufen möchten.
-* *Spaltenname*: Optional. Bei Informationen auf Spaltenebene der Spaltenname als Zeichenfolge. Die Spalte **Phone** würde als **"Phone"**, inklusive der doppelten Anführungszeichen, übergeben werden. Für Informationen auf Datenbankebene kann das *Spaltenname*-Argument nicht verwendet werden.
+* *Spaltenname*: Optional. Bei Informationen auf Spaltenebene der Spaltenname als Zeichenfolge. Die Spalte **Phone** würde als **"Phone"** , inklusive der doppelten Anführungszeichen, übergeben werden. Für Informationen auf Datenbankebene kann das *Spaltenname*-Argument nicht verwendet werden.
   
     > [!NOTE]
   > Bei Excel- oder SharePoint-Datenquellen, die Spaltennamen mit Leerzeichen enthalten, geben Sie jedes Leerzeichen als **"\_x0020\_"** an. **"Name der Spalte"** wird z.B. als **"Name_x0020_der_x0020_Spalte"** angegeben.
@@ -84,14 +83,14 @@ Die Datenquelle hat zudem diese Informationen bereitgestellt:
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.DisplayName;&nbsp;"Quantity"&nbsp;)** |Gibt den Anzeigenamen für die Spalte **Quantity** der Datenquelle **IceCream** zurück |"Quantity on Hand" (Lagerbestand) |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MaxLength;&nbsp;"Flavor"&nbsp;)** |Gibt die maximale Länge der Zeichenfolge für die Spalte **Flavor** der Datenquelle **IceCream** zurück. |30 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.Required;&nbsp;"Flavor"&nbsp;)** |Ist die Spalte **Flavor** der Datenquelle **IceCream** erforderlich? |**TRUE** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.Required;&nbsp;"Quantity"&nbsp;)** |Ist die Spalte **Quantity** der Datenquelle **IceCream** erforderlich? |**FALSE** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MaxValue;&nbsp;"Quantity"&nbsp;)** |Gibt den höchsten numerischen Wert für die Spalte **Quantity** der Datenquelle **IceCream** zurück |100 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MinValue;&nbsp;"Quantity"&nbsp;)** |Gibt den niedrigsten numerischen Wert für die Spalte **Quantity** der Datenquelle **IceCream** zurück |0 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.ReadPermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** lesen? |**TRUE** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.EditPermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** bearbeiten? |**TRUE** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.CreatePermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** erstellen? |**FALSE** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.DeletePermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** löschen? |**FALSE** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;"Quantity"&nbsp;)** |Gibt den Anzeigenamen für die Spalte **Quantity** der Datenquelle **IceCream** zurück |"Quantity on Hand" (Lagerbestand) |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;"Flavor"&nbsp;)** |Gibt die maximale Länge der Zeichenfolge für die Spalte **Flavor** der Datenquelle **IceCream** zurück. |30 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Flavor"&nbsp;)** |Ist die Spalte **Flavor** der Datenquelle **IceCream** erforderlich? |**TRUE** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Quantity"&nbsp;)** |Ist die Spalte **Quantity** der Datenquelle **IceCream** erforderlich? |**FALSE** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxValue,&nbsp;"Quantity"&nbsp;)** |Gibt den höchsten numerischen Wert für die Spalte **Quantity** der Datenquelle **IceCream** zurück |100 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MinValue,&nbsp;"Quantity"&nbsp;)** |Gibt den niedrigsten numerischen Wert für die Spalte **Quantity** der Datenquelle **IceCream** zurück |0 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.ReadPermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** lesen? |**TRUE** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.EditPermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** bearbeiten? |**TRUE** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.CreatePermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** erstellen? |**FALSE** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DeletePermission)** |Kann der aktuelle Benutzer Datensätze in der Datenquelle **IceCream** löschen? |**FALSE** |
 

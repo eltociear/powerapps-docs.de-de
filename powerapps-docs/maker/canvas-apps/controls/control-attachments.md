@@ -8,31 +8,31 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 04/23/2018
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d24094bfbc596c232e7455ef3d8b8dcdfc5be5c
-ms.sourcegitcommit: 9b2648a9066fe5d3b27b3d893daacba9b18eb75e
+ms.openlocfilehash: bc46f2a01e76741ccb046f382b0dd2829d23b368
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65609364"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987019"
 ---
 # <a name="attachments-control-in-powerapps"></a>Attachments-Steuerelement in PowerApps
-Ein Steuerelement, mit der Benutzer zum Herunterladen von Dateien auf ihr Gerät als auch hochladen und Löschen von Dateien von einer SharePoint-Liste oder einer Common Data Service-Entität.
+Ein Steuerelement, mit dem Benutzer Dateien auf Ihr Gerät herunterladen sowie Dateien aus einer SharePoint-Liste oder einer Common Data Service Entität hochladen und löschen können.
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Einschränken
 Für das Steuerelement für Anlagen gelten folgende Einschränkungen:
-1. Anlagen werden mit SharePoint-Listen und Entitäten im Common Data Service unterstützt.
+1. Anlagen werden mit SharePoint-Listen und Common Data Service Entitäten unterstützt.
 
-1. Hochladen, und Löschen von Funktionen arbeiten nur in einem Formular. Das Steuerelement für Anlagen wird deaktiviert angezeigt bei im Bearbeitungsmodus und nicht in einem Formular. Um hinzugefügte und gelöschte Dateien zu speichern, muss der app-Benutzer das Formular zu speichern. Aufgrund dieser Einschränkung können die Dateianlage-Steuerelement ist nicht verfügbar in der **einfügen** Registerkarte wird jedoch im Formular erscheint, wenn das Formularfeld Anlage in ein Format SharePoint oder Common Data Service aktiviert ist.
+1. Die Funktionalität zum Hochladen und Löschen funktioniert nur in einem Formular. Das Anlage Steuerelement wird im Bearbeitungsmodus und nicht in einem Formular deaktiviert angezeigt. Um Datei Ergänzungen und-Löschungen zu speichern, muss der App-Benutzer das Formular speichern. Aufgrund dieser Einschränkung ist das Anlagen Steuerelement auf der Registerkarte " **Einfügen** " nicht verfügbar, wird jedoch im Formular angezeigt, wenn das Feld "Anlage Formular" in einem SharePoint-oder Common Data Service Formular aktiviert ist.
 
-1. Sie können Dateien nur dann, wenn sie 10 MB sind oder kleineren hochladen.  
+1. Dateien können nur dann hochgeladen werden, wenn Sie 10 MB oder weniger groß sind.  
 
 ## <a name="description"></a>Beschreibung
-Ein **Anlagen** gesteuert, die Sie öffnen, hinzufügen und Löschen von Dateien von einer SharePoint-Liste oder einer Common Data Service-Entität.
+Mit einem **Anlagen** -Steuerelement können Sie Dateien aus einer SharePoint-Liste oder einer Common Data Service Entität öffnen, hinzufügen und löschen.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 **[Items](properties-core.md)** – Die Quelle mit Beschreibungen der Dateien, die heruntergeladen werden können.
@@ -48,7 +48,7 @@ Ein **Anlagen** gesteuert, die Sie öffnen, hinzufügen und Löschen von Dateien
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf eine Anlage klickt.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte den Zweck dieser Anlagen beschreiben.
 
 **AddAttachmentText** – Der Beschriftungstext des Links, mit dem eine neue Anlage hinzugefügt wird.
 
@@ -58,11 +58,11 @@ Ein **Anlagen** gesteuert, die Sie öffnen, hinzufügen und Löschen von Dateien
 
 **[BorderThickness](properties-color-border.md)** – Die Stärke des Rahmens eines Steuerelements.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement das Hinzufügen und Löschen von Dateien zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -70,7 +70,7 @@ Ein **Anlagen** gesteuert, die Sie öffnen, hinzufügen und Löschen von Dateien
 
 **NoAttachmentsText** – Hinweistext, der für den Benutzer, der angezeigt wird, wenn keine Anlagen vorhanden sind.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 

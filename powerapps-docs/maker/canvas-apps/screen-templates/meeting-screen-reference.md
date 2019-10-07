@@ -1,659 +1,658 @@
 ---
-title: Referenz für die Besprechung Bildschirmvorlage für Canvas-apps | Microsoft-Dokumentation
-description: Erläuterungen zu Details der Funktionsweise von der Besprechung Bildschirmvorlage für Canvas-apps in PowerApps
+title: Referenz für die Besprechungs Bildschirm Vorlage für Canvas-apps | Microsoft-Dokumentation
+description: Details zur Funktionsweise der Besprechungs Bildschirm Vorlage für Canvas-apps in powerapps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/03/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a7559f84b43d3c0372dea71d49c35461ba9d4e57
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c62c3de56534201a81e9f4d453796ebd9b3a0366
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61539520"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989572"
 ---
-# <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>Referenzinformationen zu der Besprechung Bildschirmvorlage für Canvas-apps
+# <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>Referenzinformationen zur Besprechungs Bildschirm Vorlage für Canvas-apps
 
-Für Canvas-apps in PowerApps zu verstehen, wie jede bedeutende Kontrolle in der Besprechung-Screen-Vorlage, die standardmäßige Gesamtfunktionalität des Bildschirms beiträgt. Tieferer Einblick in diese stellt die verhaltensformeln und die Werte anderer Eigenschaften, die bestimmen, wie die Steuerelemente auf Benutzereingaben reagieren. Eine allgemeine Diskussion über die Standardfunktionalität des Bildschirms, finden Sie unter den [Meeting-Übersicht über](meeting-screen-overview.md).
+Für Canvas-apps in powerapps können Sie verstehen, wie die einzelnen wichtigen Steuerelemente in der Vorlage für den Besprechungs Bildschirm zur gesamten Standardfunktionalität des Bildschirms beitragen. Dieser ausführliche Einblick zeigt die Verhaltens Formeln und die Werte anderer Eigenschaften, die bestimmen, wie die Steuerelemente auf Benutzereingaben reagieren. Eine allgemeine Erörterung der Standardfunktionalität dieses Bildschirms finden Sie in der [Übersicht über den Besprechungs Bildschirm](meeting-screen-overview.md).
 
-In diesem Thema werden einige wichtige steuermöglichkeiten und erläutert die Ausdrücke oder Formeln, die die verschiedenen Eigenschaften (z. B. **Elemente** und **OnSelect**) dieser Steuerelemente festgelegt werden:
+In diesem Thema werden einige bedeutende Steuerelemente hervorgehoben und die Ausdrücke oder Formeln erläutert, mit denen verschiedene Eigenschaften (z. b. **Elemente** und **onselect**) dieser Steuerelemente festgelegt werden:
 
-* [Laden Sie die Registerkarte (LblInviteTab)](#invite-tab)
-* [Registerkarte "Zeitplan" (LblScheduleTab)](#schedule-tab)
+* [Registerkarte "einladen" (lblinvitetab)](#invite-tab)
+* [Registerkarte "Zeitplan" (lblscheduletab)](#schedule-tab)
 * [Textsuchfeld](#text-search-box)
-* [Symbol (AddIcon) "hinzufügen"](#add-icon)
-* [Personen durchsuchen den Katalog](#people-browse-gallery) (+ untergeordnete Steuerelemente)
-* [Besprechung Personen Katalog](#meeting-people-gallery) (+ untergeordnete Steuerelemente)
-* [Besprechung Datumsauswahl (MeetingDateSelect)](#meeting-date-picker)
-* [Besprechung Dauer Dropdown-Liste (MeetingDurationSelect)](#meeting-duration-drop-down)
-* [Besprechungstermine suchen Katalog](#find-meeting-times-gallery) (+ untergeordnete Steuerelemente)
-* [Raum Katalog durchsuchen](#room-browse-gallery) (+ untergeordnete Steuerelemente)
-* [Back-Chevron (RoomsBackNav)](#back-chevron) (möglicherweise nicht sichtbar, wenn Mandanten Räume enthält keine)
+* [Symbol "hinzufügen" (addicon)](#add-icon)
+* Benutzer [Durchsuchen Gallery](#people-browse-gallery) (+ untergeordnete Steuerelemente)
+* [Meeting People Gallery](#meeting-people-gallery) (+ untergeordnete Steuerelemente)
+* [Besprechungs Datumsauswahl (meetingdateselect)](#meeting-date-picker)
+* [Dropdown Liste für Besprechungs Dauer (meetingdurationselect)](#meeting-duration-drop-down)
+* [Suche nach Besprechungszeiten Gallery](#find-meeting-times-gallery) (+ untergeordnete Steuerelemente)
+* Katalog mit [Raum suchen](#room-browse-gallery) (+ untergeordnete Steuerelemente)
+* [Zurück Chevron (roomsbacknav)](#back-chevron) (möglicherweise nicht sichtbar, wenn der Mandant keine Räume Listen hat)
 * [Symbol "Senden"](#send-icon)
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und Steuerelementen wie [Erstellen einer app in PowerApps](../data-platform-create-app-scratch.md).
+Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen Steuerelementen [beim Erstellen einer APP in powerapps](../data-platform-create-app-scratch.md).
 
-## <a name="invite-tab"></a>Laden Sie die Registerkarte "
+## <a name="invite-tab"></a>Registerkarte einladen
 
-   ![LblInviteTab-Steuerelement](media/meeting-screen/meeting-invite-text.png)
+   ![Lblinvitetab-Steuerelement](media/meeting-screen/meeting-invite-text.png)
 
-* Eigenschaft: **Farbe**<br>
-    Wert: `If( _showDetails; LblRecipientCount.Color; RectQuickActionBar.Fill )`
+* Property **Farbe**<br>
+    Wert: `If( _showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
-    **_showDetails** ist eine Variable verwendet, um zu bestimmen, ob die **LblInviteTab** Steuerelement oder das **LblScheduleTab** Steuerelement ausgewählt ist. Wenn der Wert des **_showDetails** ist **"true"**, **LblScheduleTab** ausgewählt ist, wenn der Wert ist **"false"**, **LblInviteTab**  ausgewählt ist. Das bedeutet, dass bei den Wert der **_showDetails** ist **"true"** (auf dieser Registerkarte *ist nicht* ausgewählte), die Farbe der entspricht **LblRecipientCount**. Andernfalls entspricht es den Fill-Wert, der **RectQuickActionBar**.
+    **_showDetails** ist eine Variable, mit der bestimmt wird, ob das **lblinvitetab** -Steuerelement oder das **lblscheduletab** -Steuerelement ausgewählt ist. Wenn der Wert von **_showDetails** auf **true**festgelegt ist, wird **lblscheduletab** ausgewählt. Wenn der Wert **false**ist, wird **lblinvitetab** ausgewählt. Dies bedeutet Folgendes: Wenn der Wert von _showDetails **true** ist (diese Registerkarte ist *nicht* ausgewählt), entspricht die Registerkarten Farbe der **lblrecepentcount**. Andernfalls entspricht Sie dem Füllwert von **rectquickaktionbar**.
 
-* Eigenschaft: **OnSelect**<br> 
-    Wert: `Set( _showDetails; false )`
+* Property **OnSelect**<br> 
+    Wert: `Set( _showDetails, false )`
 
-    Legt die **_showDetails** Variable **"false"**, das bedeutet, dass den Inhalt der Registerkarte "einladen" sichtbar sind, und die Inhalte von der **Zeitplan** Registerkarte ausgeblendet werden.
+    Legt die **_showDetails** -Variable auf " **false**" fest. Dies bedeutet, dass der Inhalt der Registerkarte "einladen" sichtbar ist und der Inhalt der Registerkarte " **Zeitplan** " ausgeblendet ist.
 
-## <a name="schedule-tab"></a>Registerkarte "Zeitplan"
+## <a name="schedule-tab"></a>Registerkarte Zeitplan
 
-   ![LblInviteTab-Steuerelement](media/meeting-screen/meeting-schedule-text.png)
+   ![Lblinvitetab-Steuerelement](media/meeting-screen/meeting-schedule-text.png)
 
-* Eigenschaft: **Farbe**<br>
-    Wert: `If( !_showDetails; LblRecipientCount.Color; RectQuickActionBar.Fill )`
+* Property **Farbe**<br>
+    Wert: `If( !_showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
-    **_showDetails** ist eine Variable verwendet, um zu bestimmen, ob die **LblInviteTab** Steuerelement oder das **LblScheduleTab** Steuerelement ausgewählt ist. Ist dies "true" **LblScheduleTab** ausgewählt ist; Wenn "false" **LblInviteTab** ist. Dies bedeutet, dass bei **_showDetails** ist "true" (auf dieser Registerkarte *ist* ausgewählte), die Farbe Registerkarte entspricht dem Füllwert **RectQuickActionBar**. Andernfalls entspricht es den Farbwert der **LblRecipientCount**.
+    **_showDetails** ist eine Variable, mit der bestimmt wird, ob das **lblinvitetab** -Steuerelement oder das **lblscheduletab** -Steuerelement ausgewählt ist. Wenn der Wert true ist, wird **lblscheduletab** ausgewählt. false gibt an, dass **lblinvitetab** ist. Dies bedeutet Folgendes: Wenn **_showDetails** true ist (diese Registerkarte *ist* ausgewählt), entspricht die Registerkarten Farbe dem Füllwert von **rectquickaktionbar**. Andernfalls entspricht Sie dem Farbwert **lblrecepentcount**.
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: `Set( _showDetails; true )`
+* Property **OnSelect**<br>
+    Wert: `Set( _showDetails, true )`
 
-    Legt die **_showDetails** Variable **"true"**, d. h. den Inhalt der Registerkarte "Zeitplan" sichtbar sind und den Inhalt der Registerkarte "einladen" ausgeblendet sind.
+    Legt die **_showDetails** -Variable auf **true**fest. Dies bedeutet, dass der Inhalt der Registerkarte "Zeitplan" sichtbar ist und der Inhalt der Registerkarte "einladen" ausgeblendet ist.
 
 ## <a name="text-search-box"></a>Textsuchfeld
 
-   ![TextSearchBox-Steuerelement](media/meeting-screen/meeting-search-box.png)
+   ![Textsearchbox-Steuerelement](media/meeting-screen/meeting-search-box.png)
 
 <!--Include description of text search box control?-->
 
-Mehrere andere Steuerelemente auf dem Bildschirm haben eine Abhängigkeit von diesem Dienst:
+Mehrere andere Steuerelemente auf dem Bildschirm haben eine Abhängigkeit von dieser:
 
-* Wenn ein Benutzer beginnt, geben einen beliebigen Text ein, **PeopleBrowseGallery** sichtbar wird.
-* Wenn ein Benutzer eine gültige e-Mail-Adresse eingibt **AddIcon** sichtbar wird.
-* Wenn ein Benutzer eine Person in auswählt **PeopleBrowseGallery** die Search-Inhalte werden zurückgesetzt.
+* Wenn ein Benutzer mit der Eingabe von Text beginnt, wird **peoplebrowsegallery** sichtbar.
+* Wenn ein Benutzer eine gültige e-Mail-Adresse eingibt, wird **addicon** sichtbar.
+* Wenn ein Benutzer eine Person in **peoplebrowsegallery** auswählt, werden die Such Inhalte zurückgesetzt.
 
 ## <a name="add-icon"></a>Symbol „Hinzufügen“
 
-   ![AddIcon-Steuerelement](media/email-screen/email-add-icon.png)
+   ![Addicon-Steuerelement](media/email-screen/email-add-icon.png)
 
-Dieses Steuerelement ermöglicht Benutzer hinzufügen, die nicht in ihrer Organisation zur Teilnehmerliste der Besprechung, die erstellt vorhanden sind.
+Dieses Steuerelement ermöglicht Benutzern das Hinzufügen von Personen, die nicht in Ihrer Organisation vorhanden sind, zur Teilnehmer Liste für das zusammengesetzte Meeting.
 
-* Eigenschaft: **Visible**<br>
-    Wert: Drei logischen überprüft, dass alle ergeben muss **"true"** für das Steuerelement sichtbar sein:
+* Property **Barem**<br>
+    Wert Drei logische Überprüfungen, die alle als **true** ausgewertet werden müssen, damit das Steuerelement sichtbar ist:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
 
-  Zeile für Zeile diesen Codeblock wird angegeben, dass die **AddIcon** -Steuerelement sichtbar ist nur möglich, wenn:
+  Zeilenweise bedeutet dieser Codeblock, dass das **addicon** -Steuerelement nur dann sichtbar ist, wenn Folgendes gilt:
 
-  * Die **TextSearchBox** Text enthält.
-  * Der Text im **TextSearchBox** ist eine gültige e-Mail-Adresse.
-  * Der Text im **TextSearchBox** nicht bereits vorhanden ist, der **MyPeople** Auflistung.
+  * **Textsearchbox** enthält Text.
+  * Der Text in **textsearchbox** ist eine gültige e-Mail-Adresse.
+  * Der Text in **textsearchbox** ist in der **mypeople** -Auflistung nicht bereits vorhanden.
 
-* Eigenschaft: **OnSelect**<br> 
-    Wert: Ein **sammeln** Anweisung, um den Benutzer an die Teilnehmer hinzufügen aufzulisten, eine andere verfügbare Termine von Besprechungen und mehrere Variablen schaltet aktualisieren:
+* Property **OnSelect**<br> 
+    Wert Eine **Collect** -Anweisung zum Hinzufügen des Benutzers zur Liste der Teilnehmer, eine weitere zum Aktualisieren verfügbarer Besprechungszeiten und verschiedene Variablen Schalter:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _showMeetingTimes; false );
-        UpdateContext( { _loadMeetingTimes: true } );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false );
-        ClearCollect( MeetingTimes; 
+        Reset( TextSearchBox ),
+        Set( _showMeetingTimes, false ),
+        UpdateContext( { _loadMeetingTimes: true } ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false ),
+        ClearCollect( MeetingTimes, 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     { 
-                        RequiredAttendees: Concat(MyPeople; UserPrincipalName & ";")
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC );
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                        MaxCandidates: 15; 
-                        MinimumAttendeePercentage:1; 
-                        IsOrganizerOptional: false; 
+                        RequiredAttendees: Concat(MyPeople, UserPrincipalName & ";")
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ),
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                        MaxCandidates: 15, 
+                        MinimumAttendeePercentage:1, 
+                        IsOrganizerOptional: false, 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions;
-                "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                "EndTime"; MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, 
+                "EndTime", MeetingTimeSlot.End.DateTime
             )
         )
-    );;
-    UpdateContext( { _loadingMeetingTimes: false } );;
-    Set( _showMeetingTimes; true )
+    );
+    UpdateContext( { _loadingMeetingTimes: false } );
+    Set( _showMeetingTimes, true )
     ```
 
-  Auswählen dieses Steuerelements fügt die gültige e-Mail-Adresse (nur sichtbar, wenn in eine gültige e-Mail-Adresse eingegeben wird **TextSearchBox**) auf die **MyPeople** Auflistung (diese Sammlung ist die Teilnehmerliste) und dann aktualisiert den verfügbaren Besprechungstermine mit den neuen Benutzereintrag an.
+  Wenn Sie dieses Steuerelement auswählen, wird die gültige e-Mail-Adresse (nur sichtbar, wenn eine gültige e-Mail-Adresse in **textsearchbox**eingegeben wurde) zur **mypeople** -Sammlung hinzugefügt (diese Sammlung ist die Liste der Teilnehmer) und dann die verfügbaren Besprechungszeiten mit der neuen Benutzereintrag.
 
-  Auf niedriger Ebene, diesen Codeblock:
-  1. Erfasst die e-Mail-Adresse in der **MyPeople** -Auflistung, sammeln die e-Mail-Adresse in der **"DisplayName"**, **"userPrincipalName"**, und **-e-Mails**  Felder.
-  1. Setzt den Inhalt der **TextSearchBox** Steuerelement.
-  1. Legt die **_showMeetingTimes** Variable **"false"**. Diese Variable steuert die Sichtbarkeit der **FindMeetingTimesGallery**, zeigt geöffnete Zeiten für die ausgewählten Teilnehmer zu erfüllen.
-  1. Legt die **_loadMeetingTimes** auf **"true"**. Mit dieser Variable wird einen Zustand, laden, der Schaltet die Sichtbarkeit der Zustand der Steuerelemente wie Laden **_LblTimesEmptyState** für den Benutzer an, wenn die Daten geladen wird.
-  1. Legt **_selectedMeetingTime** zu **Blank()**. **_selectedMeetingTime** ist der ausgewählte Datensatz aus der **FindMeetingTimesGallery** Steuerelement. Es ist hier ausgeblendet, da das Hinzufügen von einem anderen Teilnehmer, die die vorherige Definition von bedeuten könnten **_selectedMeetingTime** ist nicht für diesen Teilnehmer verfügbar sein.
-  1. Legt **_selectedRoom** zu **Blank()**. **_selectedRoom** ist die ausgewählte Platz **RoomBrowseGallery**. Die Verfügbarkeit der Platz hängen vom Wert der **_selectedMeetingTime**. Mit diesem Wert ausgeblendet die **_selectedRoom** Wert ist nicht mehr gültig ist, damit es ausgeblendet werden muss.
-  1. Legt **_roomListSelected** zu **"false"**. Diese Zeile möglicherweise nicht für alle Benutzer gilt. In Office, gruppieren Sie Ihre Räume von anderen "Raumlisten." Wenn Sie Raumlisten verfügen, berücksichtigt dieser Bildschirm, sodass Sie Sie zuerst auf Raumliste bevor Sie Sie ein Zimmer aus in dieser Liste auswählen. Der Wert des **_roomListSelected** wird bestimmt, ob ein Benutzer (in einem Mandanten mit nur Raumlisten) werden Räume in Raumliste oder den Satz von Raumlisten angezeigt werden. Es wird festgelegt, um **"false"** Benutzer zwingen, eine neue Raumliste erneut auswählen.
-  1. Verwendet die [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) Vorgang, um zu bestimmen, und erfassen die verfügbaren Besprechungstermine für Teilnehmer. Dieser Vorgang wird übergeben:
-      * Die **"userPrincipalName"** der einzelnen ausgewählten Benutzer in der *RequiredAttendees* Parameter.
-      * **MeetingDurationSelect**. Selected.Minutes in die *MeetingDuration* Parameter.
-      * MeetingDateSelect.SelectedDate + 8 Stunden in der *starten* Parameter. Acht Stunden wird hinzugefügt, da standardmäßig die vollständige(s) Datum/Zeit für das Kalender-Steuerelement 12:00 Uhr des ausgewählten Datums ist. Wahrscheinlich möchten Sie Verfügbarkeit innerhalb der normalen Geschäftszeiten abzurufen. Eine Startzeit für die normale Arbeit wäre 8:00 Uhr.
-      * **MeetingDateSelect**. "SelectedDate" + 10 Stunden in der *End* Parameter. 17 Stunden wird hinzugefügt, da 12:00 Uhr und 17 = 17:00 Uhr. Eine normale Arbeit Endzeit wäre 17:00 Uhr.
-      * *15* in die *MaxCandidates* Parameter. Dies bedeutet, dass der Vorgang nur die ersten 15 verfügbaren Zeiten für das ausgewählte Datum zurückgibt. Dies ist sinnvoll, da nur 16 30-Minuten-Blöcke in einen Arbeitstag von 8 Stunden vorhanden sind und eine 30-minütigen Besprechung ist mindestens eine kann auf diesem Bildschirm festgelegt.
-      * *1* in die *MinimumAttendeePercentage* Parameter. Im Wesentlichen wird der Zeitpunkt, wenn keine Teilnehmer verfügbar sind, abgerufen.
-      * **"false"** in die *IsOrganizerOptional* Parameter. Der app-Benutzer ist kein optionale Teilnehmer dieser Besprechung.
-      * "Work" in der *ActivityDomain* Parameter. Dies bedeutet, dass Sie die Zeiten, die abgerufen werden nur in eine normale Arbeitszeit Zeitraum.
-  1. Die **ClearCollect** Funktion fügt außerdem zwei Spalten: "StartTime" und "EndTime". Dies vereinfacht die zurückgegebenen Daten. 
-  Das Feld mit den verfügbaren Anfangs- und Endzeiten der **MeetingTimeSlot** Feld. Dieses Feld ist, einen Datensatz mit den Beginn und Ende-Datensätze, die wiederum selbst enthalten die **"DateTime"** und **TimeZone** Werte von ihren jeweiligen Vorschlag. Hinzufügen von nicht versucht wird, um diese Schachtelung von Datensätzen abzurufen, die Spalten "StartTime" und "EndTime" aus, die **MeetingTimes** Auflistung bietet die **starten > "DateTime"** und **End > "DateTime"** Werte auf die Oberfläche des der Auflistung.
-  1. Wenn diese Funktionen alle abgeschlossen haben, die **_loadingMeetingTimes** auf festgelegt ist **"false"**, entfernen den Zustand beim Laden und **_showMeetingTimes** nastaven NA hodnotu **"true"** mit **FindMeetingTimesGallery**.
+  Dieser Codeblock auf niedriger Ebene:
+  1. Sammelt die e-Mail-Adresse in der **mypeople** -Auflistung und sammelt die e-Mail-Adresse in den Feldern **Display Name**, **userPrincipalName**und **Mail** .
+  1. Setzt den Inhalt des **textsearchbox** -Steuer Elements zurück.
+  1. Legt die **_showMeetingTimes** -Variable auf **false**fest. Diese Variable steuert die Sichtbarkeit von **findmeetingtimesgallery**, die Öffnungszeiten anzeigt, die die ausgewählten Teilnehmer erfüllen.
+  1. Legt die **_loadMeetingTimes** -Kontext Variable auf **true**fest. Diese Variable legt einen Ladezustand fest, der die Sichtbarkeit des Ladens von Zustands Steuerelementen wie **_LblTimesEmptyState** schaltet, um dem Benutzer mitzuteilen, dass die Daten geladen werden.
+  1. Legt **_selectedMeetingTime** auf **blank ()** fest. **_selectedMeetingTime** ist der ausgewählte Datensatz aus dem **findmeetingtimesgallery** -Steuerelement. Diese wird hier angezeigt, da das Hinzufügen eines anderen Teilnehmers möglicherweise bedeutet, dass die vorherige Definition von **_selectedMeetingTime** für diesen Teilnehmer nicht verfügbar ist.
+  1. Legt **_selectedRoom** auf **blank ()** fest. **_selectedRoom** ist der ausgewählte Raum Daten Satz aus " **roombrowsegallery**". Die Verfügbarkeit des Raums wird anhand des Werts von **_selectedMeetingTime**bestimmt. Wenn dieser Wert leer ist, ist der **_selectedRoom** -Wert nicht mehr gültig und muss daher leer sein.
+  1. Legt **_roomListSelected** auf **false**fest. Diese Zeile gilt möglicherweise nicht für alle. In Office können Sie Ihre Räume nach verschiedenen "Raum Listen" gruppieren. Wenn Sie über Raum Listen verfügen, werden Sie von diesem Bildschirm berücksichtigt, sodass Sie zuerst eine Raum Liste auswählen können, bevor Sie in dieser Liste einen Raum auswählen. Der Wert von **_roomListSelected** bestimmt, ob ein Benutzer (nur in einem Mandanten mit Raum Listen) Räume in einer Raum Liste oder in der Liste der Raum Listen anzeigen wird. Der Wert ist auf " **false** " festgelegt, um Benutzer zu zwingen, eine neue Raum Liste erneut auszuwählen.
+  1. Verwendet den [Office 365. findmeetingtimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) -Vorgang, um die verfügbaren Besprechungszeiten für die Teilnehmer zu ermitteln und zu erfassen. Dieser Vorgang übergibt Folgendes:
+      * Der **userPrincipalName** der einzelnen ausgewählten Benutzer in den Requirements *dattendees* -Parameter.
+      * " **Meetingdurationselect**". Ausgewählt. Minuten in den Parameter " *meetingduration* ".
+      * "Meetingdateselect. SelectedDate + 8 Stunden" im *Start* Parameter. Es werden acht Stunden hinzugefügt, da das vollständige Datum/die Uhrzeit für das Kalender Steuerelement standardmäßig 12:00 Uhr des ausgewählten Datums ist. Wahrscheinlich möchten Sie die Verfügbarkeit innerhalb der normalen Arbeitszeit abrufen. Eine normale Startzeit für die Arbeit beträgt 8:00 Uhr.
+      * **Meetingdateselect**. SelectedDate + 17 Stunden in den *End* -Parameter. 17 Stunden werden hinzugefügt, da 12:00 Uhr + 17 = 5:00 Uhr. Die Endzeit der normalen Arbeit beträgt 5:00 Uhr.
+      * *15* in den *maxcandidate* -Parameter. Dies bedeutet, dass der Vorgang nur die ersten 15 verfügbaren Zeiten für das ausgewählte Datum zurückgibt. Dies ist sinnvoll, da es nur 16 30-minütige Blöcke an einem 8-Stunden-Arbeitstag gibt und ein 30-minütiges Meeting in diesem Bildschirm festgelegt werden kann.
+      * *1* in den *minimumattendeeprozent* -Parameter. Im Grunde wird die Besprechungszeit abgerufen, es sei denn, es sind keine Teilnehmer verfügbar.
+      * **false** in den *isorganizeroptionalen* -Parameter. Der App-Benutzer ist kein Optionaler Teilnehmer für diese Besprechung.
+      * "Arbeiten" im Parameter " *activitydomain* ". Dies bedeutet, dass die abgerufenen Zeiten nur solche innerhalb eines normalen Arbeits Zeitraums sind.
+  1. Die **clearcollect** -Funktion fügt auch zwei Spalten hinzu: "StartTime" und "EndTime". Dadurch werden die zurückgegebenen Daten vereinfacht. 
+  Das Feld, das die verfügbaren Start-und Endzeiten enthält, ist das Feld " **meetingtimeslot** ". Bei diesem Feld handelt es sich um einen Datensatz, der die Start-und Enddaten Sätze enthält, die den **DateTime** -Wert und den **TimeZone** -Wert des jeweiligen Vorschlags enthalten. Anstatt zu versuchen, diese Schachtelung von Datensätzen abzurufen, werden die Spalten "StartTime" und "EndTime" in der Auflistung " **meetingtimes** " mit den Werten **Start > DateTime** und **End > DateTime** auf der Oberfläche der Auflistung angezeigt.
+  1. Sobald diese Funktionen abgeschlossen sind, wird die **_loadingMeetingTimes** -Variable auf **false**festgelegt, und der Ladezustand wird entfernt, und **_showMeetingTimes** wird auf **true**festgelegt, um **findmeetingtimesgallery**anzuzeigen.
 
-## <a name="people-browse-gallery"></a>Personen durchsuchen den Katalog
+## <a name="people-browse-gallery"></a>Benutzer durchsuchen Gallery
 
-   ![PeopleBrowseGallery-Steuerelement](media/meeting-screen/meeting-browse-gall.png)
+   ![People browsegallery-Steuerelement](media/meeting-screen/meeting-browse-gall.png)
 
-* Eigenschaft: **Elemente**<br>
-    Wert: 
-    ```powerapps-comma
-    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text); top: 15 } )
+* Property **Punkte**<br>
+    Wert 
+    ```powerapps-dot
+    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text), top: 15 } )
     )
     ```
 
-Die Elemente dieser Katalog vom Suchergebnisse aus aufgefüllt werden die [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) Vorgang. Der Vorgang nimmt den Text in `Trim(**TextSearchBox**)` als seine Suche Begriff und gibt die ersten 15 Ergebnisse basierend auf, dass die Suche.
+Die Elemente dieser Galerie werden durch Suchergebnisse aus dem Vorgang [Office 365. searchuser](https://docs.microsoft.com/connectors/office365users/#searchuser) aufgefüllt. Der-Vorgang nimmt den Text in `Trim(**TextSearchBox**)` als Suchbegriff und gibt die 15 besten Ergebnisse basierend auf dieser Suche zurück.
   
-**TextSearchBox** umschlossen ist eine **Trim** funktionieren, da eine Benutzersuche auf Speicherplätzen ungültig ist. Die `Office365Users.SearchUser` Vorgang innerhalb einer `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` funktionieren, da das Abrufen von Suchergebnissen, bevor ein Benutzer durchsucht hat ein Abfall der Leistung ist.
+**Textsearchbox** ist in einer **Trim** -Funktion umschließt, da eine Benutzersuche nach Leerzeichen nicht gültig ist. Der `Office365Users.SearchUser`-Vorgang ist in einer `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`-Funktion umschließt, da das Abrufen von Suchergebnissen vor dem Durchsuchen eines Benutzers eine Leistungs Verschwendung ist.
 
-### <a name="people-browse-gallery-title"></a>Katalog-Titel für Personen durchsuchen
+### <a name="people-browse-gallery-title"></a>Benutzer durchsuchen Galerie Titel
 
-   ![PeopleBrowseGallery Titel des Steuerelements](media/meeting-screen/meeting-browse-gall-title.png)
+   ![People browsegallery-Titel Steuerelement](media/meeting-screen/meeting-browse-gall-title.png)
 
-* Eigenschaft: **Text**<br>
+* Property **Text**<br>
     Wert: `ThisItem.DisplayName`
 
-    Zeigt den Namen der Person Anzeige aus ihrer Office 365-Profil an.
+    Zeigt den anzeigen amen der Person aus Ihrem Office 365-Profil an.
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: Ein **sammeln** Anweisung, um den Benutzer an die Teilnehmer hinzufügen aufzulisten, eine andere verfügbare Termine von Besprechungen und mehrere Variablen schaltet aktualisieren:
+* Property **OnSelect**<br>
+    Wert Eine **Collect** -Anweisung zum Hinzufügen des Benutzers zur Liste der Teilnehmer, eine weitere zum Aktualisieren verfügbarer Besprechungszeiten und verschiedene Variablen Schalter:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _selectedUser; ThisItem );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem );; 
+        Reset( TextSearchBox ),
+        Set( _selectedUser, ThisItem ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem ); 
             Concurrent(
-                Set( _showMeetingTimes; false );
-                UpdateContext( { _loadMeetingTimes: true } );
-                Set( _selectedMeetingTime; Blank() );
-                Set( _selectedRoom; Blank() );
-                Set( _roomListSelected; false );
-                ClearCollect( MeetingTimes; 
+                Set( _showMeetingTimes, false ),
+                UpdateContext( { _loadMeetingTimes: true } ),
+                Set( _selectedMeetingTime, Blank() ),
+                Set( _selectedRoom, Blank() ),
+                Set( _roomListSelected, false ),
+                ClearCollect( MeetingTimes, 
                     AddColumns(
                         'Office365'.FindMeetingTimes(
                             {
-                                RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" );
-                                MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                                Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC );
-                                End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                                MaxCandidates: 15; 
-                                MinimumAttendeePercentage: 1; 
-                                IsOrganizerOptional: false; 
+                                RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ),
+                                MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                                Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ),
+                                End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                                MaxCandidates: 15, 
+                                MinimumAttendeePercentage: 1, 
+                                IsOrganizerOptional: false, 
                                 ActivityDomain: "Work"
                             }
-                        ).MeetingTimeSuggestions;
-                        "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                        "EndTime"; MeetingTimeSlot.End.DateTime
+                        ).MeetingTimeSuggestions,
+                        "StartTime", MeetingTimeSlot.Start.DateTime, 
+                        "EndTime", MeetingTimeSlot.End.DateTime
                     )
                 )
-            );;
-            UpdateContext( { _loadingMeetingTimes: false } );;
-            Set( _showMeetingTimes; true )
+            );
+            UpdateContext( { _loadingMeetingTimes: false } );
+            Set( _showMeetingTimes, true )
         )
     )
     ```
 
-    Auf einer hohen Ebene auswählen dieses Steuerelements die Person sind, fügt die **MyPeople** Sammlung (die app Speicher von der Teilnehmerliste), und aktualisiert den verfügbaren Besprechungstermine basierend auf den neuen Benutzer hinzufügen.
+    Auf hoher Ebene wird durch Auswählen dieses Steuer Elements die Person der **mypeople** -Auflistung (der Speicher der APP der Teilnehmer Liste) hinzugefügt, und die verfügbaren Besprechungszeiten werden basierend auf der neuen Benutzer Addition aktualisiert.
 
-    Auswählen dieses Steuerelements ist sehr ähnlich ist, auf die Auswahl der **AddIcon** Steuerelement, das einzige besteht darin, dass die `Set(_selectedUser; ThisItem)` -Anweisung und die Ausführungsreihenfolge der Vorgänge. Daher nicht hier so tief. Lesen Sie eine umfassendere Erläuterung, über die [AddIcon-Steuerelement](#add-icon) Abschnitt.
+    Das Auswählen dieses Steuer Elements ähnelt dem Auswählen des **addicon** -Steuer Elements. der einzige Unterschied besteht darin, dass die `Set(_selectedUser, ThisItem)`-Anweisung und die Ausführungsreihenfolge der Vorgänge. Daher wird diese Erörterung nicht so tief sein. Eine ausführlichere Erläuterung finden Sie im Abschnitt zur [addicon-Steuerung](#add-icon) .
 
-    Setzt auswählen dieses Steuerelements **TextSearchBox**. Klicken Sie dann, wenn die Auswahl nicht in der **MyPeople** Auflistung, die das Steuerelement:
-    1. Legt die **_loadMeetingTimes** Zustand **"true"** und **_showMeetingTimes** Zustand **"false"**, Leerzeichen die **_ SelectedMeetingTime** und **_selectedRoom** Variablen und aktualisiert die **MeetingTimes** Sammlung mit die neue Erweiterung von der **MyPeople** Auflistung. 
-    1. Legt diese fest der **_loadMeetingTimes** Zustand **"false"**, und legt **_showMeetingTimes** zu **"true"**. Wenn die Auswahl bereits in der **MyPeople** Sammlung wird nur der Inhalt des zurückgesetzt **TextSearchBox**.
+    Wenn Sie dieses Steuerelement auswählen, wird **textsearchbox**zurückgesetzt. Wenn sich die Auswahl nicht in der **mypeople** -Auflistung befindet, gilt Folgendes:
+    1. Legt den **_loadMeetingTimes** -Zustand auf **true** und den **_showMeetingTimes** -Status auf **false**fest, gibt die **_selectedMeetingTime** -und **_selectedRoom** -Variablen aus und aktualisiert die **meetingtimes** . Sammlung mit der neuen Addition der **mypeople** -Auflistung. 
+    1. Legt den **_loadMeetingTimes** -Zustand auf **false**fest und legt **_showMeetingTimes** auf **true**fest. Wenn die Auswahl bereits in der **mypeople** -Sammlung vorhanden ist, wird nur der Inhalt von **textsearchbox**zurückgesetzt.
 
-## <a name="meeting-people-gallery"></a>Meeting-Personen-Katalog
+## <a name="meeting-people-gallery"></a>Meeting People Gallery
 
-   ![MeetingPeopleGallery-Steuerelement](media/meeting-screen/meeting-people-gall.png)
+   ![Meetingpeoplegallery-Steuerelement](media/meeting-screen/meeting-people-gall.png)
 
-* Eigenschaft: **Elemente**<br>
+* Property **Punkte**<br>
     Wert: `MyPeople`
 
-    Die **MyPeople** -Auflistung enthält die Leute dazu hinzugefügt oder initialisiert die **PeopleBrowseGallery Titel** Steuerelement.
+    Die Sammlung " **mypeople** " ist die Auflistung von Personen, die initialisiert oder hinzugefügt werden, indem das Steuerelement " **People browsegallery Title** " ausgewählt wird.
 
-* Eigenschaft: **Höhe**<br>
-    Wert: Die Logik zum Katalog aus, um eine maximale Höhe von 350 erreichen können:
+* Property **Flugh**<br>
+    Wert Logik, mit der der Katalog auf eine maximale Höhe von 350 vergrößert werden kann:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
-        76 * RoundUp( CountRows( MeetingPeopleGallery.AllItems ) / 2; 0 );
+        76 * RoundUp( CountRows( MeetingPeopleGallery.AllItems ) / 2, 0 ),
         350
     )
     ```
 
   
-   Die Anzahl der Elemente im Katalog auf die maximale Höhe von 350 passt die Höhe der dieser Katalog an. Die Formel akzeptiert 76 als die Höhe einer einzelnen Zeile des **MeetingPeopleGallery**, klicken Sie dann die Anzahl von Zeilen multipliziert. Die **WrapCount** -Eigenschaft ist auf 2 festgelegt, sodass die Anzahl der Zeilen mit "true" ist `RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2; 0)`.
+   Die Höhe dieses Katalogs entspricht der Anzahl der Elemente im Katalog und der maximalen Höhe von 350. Die Formel nimmt 76 als Höhe einer einzelnen Zeile von " **meetingpeoplegallery**" an und multipliziert Sie mit der Anzahl der Zeilen. Die **wrapcount** -Eigenschaft ist auf 2 festgelegt, sodass die Anzahl der true-Zeilen `RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2, 0)` ist.
 
-* Eigenschaft: **ShowScrollbar**<br>
+* Property **ShowScrollbar**<br>
     Wert: `MeetingPeopleGallery.Height >= 350`
 
-    Wenn die maximale Höhe des Katalogs (350) erreicht wird, ist die Bildlaufleiste sichtbar.
+    Wenn die maximale Höhe des Katalogs erreicht wird (350), wird die Scrollleiste angezeigt.
 
-### <a name="meeting-people-gallery-title"></a>Besprechung Personen Katalog Titel
+### <a name="meeting-people-gallery-title"></a>Besprechungs Titel für Besprechungs Personen
 
-   ![MeetingPeopleGallery Titel des Steuerelements](media/meeting-screen/meeting-people-gall-title.png)
+   ![Meetingpeoplegallery-Titel Steuerelement](media/meeting-screen/meeting-people-gall-title.png)
 
-* Eigenschaft: **OnSelect**<br>
+* Property **OnSelect**<br>
     
-    Wert: `Set(_selectedUser; ThisItem)`
+    Wert: `Set(_selectedUser, ThisItem)`
     
-    Legt die **_selectedUser** -Variable auf das Element im ausgewählten **MeetingPeopleGallery**.
+    Legt die **_selectedUser** -Variable auf das Element fest, das in " **meetingpeoplegallery**" ausgewählt ist.
 
-### <a name="meeting-people-gallery-iconremove"></a>Besprechung Personen Katalog iconRemove
+### <a name="meeting-people-gallery-iconremove"></a>Meeting People Gallery iconremove
 
-   ![MeetingPeopleGallery IconRemove-Steuerelement](media/meeting-screen/meeting-people-gall-delete.png)
+   ![Meetingpeoplegallery-iconremove-Steuerelement](media/meeting-screen/meeting-people-gall-delete.png)
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: Ein **entfernen** Anweisung, um den Benutzer aus der Teilnehmerliste Entfernen einer **sammeln** Anweisung, um die verfügbaren Termine von Besprechungen und mehrere Variablen schaltet aktualisieren:
+* Property **OnSelect**<br>
+    Wert Eine **Remove** -Anweisung zum Entfernen des Benutzers aus der Teilnehmerliste, einer **Collect** -Anweisung zum Aktualisieren der verfügbaren Besprechungszeiten und mehrerer variablenschalter:
 
-    ```powerapps-comma
-    Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) );;
+    ```powerapps-dot
+    Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) );
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _showMeetingTimes; false );
-        UpdateContext( { _loadMeetingTimes: true } );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false );
-        ClearCollect( MeetingTimes; 
+        Reset( TextSearchBox ),
+        Set( _showMeetingTimes, false ),
+        UpdateContext( { _loadMeetingTimes: true } ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false ),
+        ClearCollect( MeetingTimes, 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     {
-                        RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ); 
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC ); 
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                        MaxCandidates: 15; 
-                        MinimumAttendeePercentage: 1; 
-                        IsOrganizerOptional: false; 
+                        RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ), 
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ), 
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                        MaxCandidates: 15, 
+                        MinimumAttendeePercentage: 1, 
+                        IsOrganizerOptional: false, 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions;
-                "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                "EndTime"; MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, 
+                "EndTime", MeetingTimeSlot.End.DateTime
             )
         )
-    );;
-    UpdateContext( { _loadingMeetingTimes: false } );;
-    Set( _showMeetingTimes; true )
+    );
+    UpdateContext( { _loadingMeetingTimes: false } );
+    Set( _showMeetingTimes, true )
     ```
 
-  Im Allgemeinen entfernt die Person, die aus der Teilnehmerliste und aktualisiert den verfügbaren Besprechungstermine basierend auf das Entfernen dieser Person auswählen dieses Steuerelements.
+  Auf hoher Ebene entfernt die Auswahl dieses Steuer Elements die Person aus der Liste der Teilnehmer und aktualisiert die verfügbaren Besprechungszeiten basierend auf dem Entfernen dieser Person.
 
-  Nach der ersten Zeile des obigen Codes werden soll, Auswählen dieses Steuerelements ist fast identisch mit wählen die **AddIcon** Steuerelement. Daher wird hier nicht so tief sein. Eine umfassendere Erläuterung, lesen die [AddIcon-Steuerelement Abschnitt](#add-icon).
+  Nach der ersten Zeile des vorangehenden Codes ist das Auswählen dieses Steuer Elements fast identisch mit der Auswahl des **addicon** -Steuer Elements. Daher wird diese Erörterung nicht so tief sein. Eine ausführlichere Erläuterung finden Sie im [Abschnitt zur addicon-Steuerung](#add-icon).
 
-  In der ersten Zeile des Codes, das ausgewählte Element entfernt wird, aus der **MyPeople** Auflistung. Klicken Sie dann den Code:
-  1. Setzt **TextSearchBox**, und klicken Sie dann entfernt die Auswahl aus den **MyPeople** Auflistung. 
-  1. Legt die **_loadMeetingTimes** Zustand **"true"** und **_showMeetingTimes** Zustand **"false"**, Leerzeichen die **_ SelectedMeetingTime** und **_selectedRoom** Variablen und aktualisiert die **MeetingTimes** Sammlung mit die neue Erweiterung von der **MyPeople** Auflistung. 
-  1. Legt diese fest der **_loadMeetingTimes** Zustand **"false"**, und legt **_showMeetingTimes** zu **"true"**.
+  In der ersten Codezeile wird das ausgewählte Element aus der **mypeople** -Sammlung entfernt. Der Code dann:
+  1. Setzt **textsearchbox**zurück und entfernt dann die Auswahl aus der **mypeople** -Auflistung. 
+  1. Legt den **_loadMeetingTimes** -Zustand auf **true** und den **_showMeetingTimes** -Status auf **false**fest, gibt die **_selectedMeetingTime** -und **_selectedRoom** -Variablen aus und aktualisiert die **meetingtimes** . Sammlung mit der neuen Addition der **mypeople** -Auflistung. 
+  1. Legt den **_loadMeetingTimes** -Zustand auf **false**fest und legt **_showMeetingTimes** auf **true**fest.
 
-## <a name="meeting-date-picker"></a>Besprechung Datumsauswahl
+## <a name="meeting-date-picker"></a>Besprechungs Datumsauswahl
 
-   ![MeetingDateSelect-Steuerelement](media/meeting-screen/meeting-datepicker.png)
+   ![Meetingdateselect-Steuerelement](media/meeting-screen/meeting-datepicker.png)
 
-* Eigenschaft: **DisplayMode**<br>
-    Wert: `If( IsEmpty(MyPeople); DisplayMode.Disabled; DisplayMode.Edit )`
+* Property **Display Mode**<br>
+    Wert: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    Ein Datum für eine Besprechung kann nicht ausgewählt werden, bis mindestens ein Teilnehmer hinzugefügt wurde die **MyPeople** Auflistung.
+    Ein Datum für eine Besprechung kann erst ausgewählt werden, nachdem mindestens ein Teilnehmer zur **mypeople** -Sammlung hinzugefügt wurde.
 
-* Eigenschaft: **OnChange**<br>
+* Property **OnChange**<br>
     Wert: `Select( MeetingDateSelect )`
 
-    Ändern das ausgewählte Datum löst den Code in die **OnSelect** -Eigenschaft dieses Steuerelements ausgeführt.
+    Wenn das ausgewählte Datum geändert wird, wird der Code in der **onselect** -Eigenschaft dieses Steuer Elements ausgeführt.
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: Ein **sammeln** Anweisung, um die verfügbaren Termine von Besprechungen und mehrere Variablen schaltet aktualisieren:
+* Property **OnSelect**<br>
+    Wert Eine **Collect** -Anweisung zum Aktualisieren der verfügbaren Besprechungszeiten und mehrerer variablenschalter:
   
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _showMeetingTimes; false );
-        UpdateContext( { _loadingMeetingTimes: true } );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false );
-        ClearCollect( MeetingTimes; 
+        Reset( TextSearchBox ),
+        Set( _showMeetingTimes, false ),
+        UpdateContext( { _loadingMeetingTimes: true } ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false ),
+        ClearCollect( MeetingTimes, 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     {
-                        RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ); 
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC ); 
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                        MaxCandidates: 15; 
-                        MinimumAttendeePercentage: 1; 
-                        IsOrganizerOptional: false; 
+                        RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ), 
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ), 
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                        MaxCandidates: 15, 
+                        MinimumAttendeePercentage: 1, 
+                        IsOrganizerOptional: false, 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions;
-                "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                "EndTime"; MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, 
+                "EndTime", MeetingTimeSlot.End.DateTime
             )
         )
-    );;
-    UpdateContext( { _loadingMeetingTimes: false } );;
-    Set( _showMeetingTimes; true )
+    );
+    UpdateContext( { _loadingMeetingTimes: false } );
+    Set( _showMeetingTimes, true )
     ```
 
-  Beim Auswählen dieses Steuerelements auf einer hohen Ebene aktualisiert die verfügbaren Besprechungstermine. Es ist hilfreich, da es sich bei, wenn ein Benutzer das Datum ändert, die verfügbaren Besprechungstermine aktualisiert, sodass die Teilnehmer Verfügbarkeit für diesen Tag entsprechen müssen.
+  Wenn Sie dieses Steuerelement auswählen, werden die verfügbaren Besprechungszeiten auf hoher Ebene aktualisiert. Dies ist hilfreich, da die verfügbaren Besprechungszeiten, wenn ein Benutzer das Datum ändert, aktualisiert werden müssen, um die Verfügbarkeit der Teilnehmer für diesen Tag widerzuspiegeln.
 
-  Mit Ausnahme der ersten **sammeln** -Anweisung, dies ist identisch mit der **OnSelect** Funktionalität der **AddIcon** Steuerelement. Daher wird hier nicht so tief sein. Lesen Sie eine umfassendere Erläuterung, über die [AddIcon-Steuerelement](#add-icon) Abschnitt.
+  Mit Ausnahme der Initial **Collect** -Anweisung ist dies identisch mit der **onselect** -Funktionalität des **addicon** -Steuer Elements. Daher wird diese Erörterung nicht so tief sein. Eine ausführlichere Erläuterung finden Sie im Abschnitt zur [addicon-Steuerung](#add-icon) .
 
-  Setzt auswählen dieses Steuerelements **TextSearchBox**. Klicken Sie dann diese: 
-  1. Legt die **_loadMeetingTimes** Zustand **"true"** und **_showMeetingTimes** Zustand **"false"**, Leerzeichen die **_ SelectedMeetingTime** und **_selectedRoom** Variablen und aktualisiert die **MeetingTimes** Auflistung mit der Auswahl des neuen Datums. 
-  1. Legt diese fest der **_loadMeetingTimes** Zustand **"false"**, und legt **_showMeetingTimes** zu **"true"**.
+  Wenn Sie dieses Steuerelement auswählen, wird **textsearchbox**zurückgesetzt. Dann: 
+  1. Legt den **_loadMeetingTimes** -Zustand auf **true** und den **_showMeetingTimes** -Status auf **false**fest, gibt die **_selectedMeetingTime** -und **_selectedRoom** -Variablen aus und aktualisiert die **meetingtimes** . Sammlung mit der neuen Datumsauswahl. 
+  1. Legt den **_loadMeetingTimes** -Zustand auf **false**fest und legt **_showMeetingTimes** auf **true**fest.
 
-## <a name="meeting-duration-drop-down"></a>Besprechungsdauer Dropdown-Liste
+## <a name="meeting-duration-drop-down"></a>Dropdown für Besprechungs Dauer
 
-   ![MeetingDateSelect-Steuerelement](media/meeting-screen/meeting-timepicker.png)
+   ![Meetingdateselect-Steuerelement](media/meeting-screen/meeting-timepicker.png)
 
-* Eigenschaft: **DisplayMode**<br>
-    Wert: `If( IsEmpty(MyPeople); DisplayMode.Disabled; DisplayMode.Edit )`
+* Property **Display Mode**<br>
+    Wert: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    Eine Dauer für eine Besprechung kann nicht ausgewählt werden, bis mindestens ein Teilnehmer hinzugefügt wurde die **MyPeople** Auflistung.
+    Eine Dauer für eine Besprechung kann erst ausgewählt werden, nachdem mindestens ein Teilnehmer zur **mypeople** -Sammlung hinzugefügt wurde.
 
-* Eigenschaft: **OnChange**<br>
+* Property **OnChange**<br>
     Wert: `Select(MeetingDateSelect1)`
 
-    Ändern den ausgewählten Zeitraum wird ausgelöst, den Code in die **OnSelect** Eigenschaft der **MeetingDateSelect** Steuerelement ausgeführt.
+    Wenn Sie die ausgewählte Dauer ändern, wird der Code in der **onselect** -Eigenschaft des Steuer Elements " **meetingdateselect** " ausgeführt.
 
-## <a name="find-meeting-times-gallery"></a>Besprechungstermine suchen Katalog
+## <a name="find-meeting-times-gallery"></a>Besprechungszeiten-Katalog suchen
 
-   ![FindMeetingTimesGallery-Steuerelement](media/meeting-screen/meeting-time-gall.png)
+   ![Findmeetingtimesgallery-Steuerelement](media/meeting-screen/meeting-time-gall.png)
 
-* Eigenschaft: **Elemente**<br>
+* Property **Punkte**<br>
     Wert: `MeetingTimes`
 
-    Die Auflistung von möglichen Besprechungstermine abgerufen wird, aus der [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) Vorgang.
+    Die Auflistung möglicher Besprechungszeiten, die vom [Office 365. findmeetingtimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) -Vorgang abgerufen werden.
 
-* Eigenschaft: **Visible**<br>
+* Property **Barem**<br>
     Wert: `_showMeetingTimes && _showDetails && !IsEmpty( MyPeople )`
 
-    Der Katalog sichtbar ist nur, wenn **_showMeetingTimes** nastaven NA hodnotu **"true"**, der Benutzer ausgewählt hat die **LblScheduleTab** -Steuerelement, und es ist mindestens ein Teilnehmer, die hinzugefügt der erreicht.
+    Der Katalog ist nur sichtbar, wenn **_showMeetingTimes** auf **true**festgelegt ist, der Benutzer das **lblscheduletab** -Steuerelement ausgewählt hat und mindestens ein Teilnehmer zur Besprechung hinzugefügt wurde.
 
-### <a name="find-meeting-times-gallery-title"></a>Besprechungstermine suchen Katalog Titel
+### <a name="find-meeting-times-gallery-title"></a>Besprechungszeit Galerie Titel suchen
 
-   ![FindMeetingTimesGallery Titel des Steuerelements](media/meeting-screen/meeting-time-gall-title.png)
+   ![Findmeetingtimesgallery-Titel Steuerelement](media/meeting-screen/meeting-time-gall-title.png)
 
-* Eigenschaft: **Text**<br>
-    Wert: Eine Konvertierung der Startzeit, die in Ortszeit des Benutzers angezeigt werden:
+* Property **Text**<br>
+    Wert Eine Konvertierung der Startzeit, die in der Ortszeit des Benutzers angezeigt werden soll:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Text(
         DateAdd(
-            DateTimeValue( ThisItem.StartTime );
-            - TimeZoneOffset(); 
+            DateTimeValue( ThisItem.StartTime ),
+            - TimeZoneOffset(), 
             Minutes
-        );
+        ),
         DateTimeFormat.ShortTime
     )
     ```
 
-  Der abgerufene Wert von **"StartTime"** wird im UTC-Format. Um [konvertieren aus UTC in die Ortszeit](../functions/function-dateadd-datediff.md#converting-from-utc), **DateAdd** -Funktion angewendet wird.
-  Die [Funktion "Text"](../functions/function-text.md#datetime) einen Datum/Uhrzeit als erstes Argument, und Formate, die sie basierend auf dem zweiten Argument akzeptiert. Sie übergeben die Ortszeit Konvertierung **ThisItem.StartTime**, und zeigen Sie sie als **DateTimeFormat.ShortTime**.
+  Der abgerufene Wert von **StartTime** liegt im UTC-Format vor. Zum [Konvertieren von UTC in eine lokale Zeit](../functions/function-dateadd-datediff.md#converting-from-utc)wird die **DateAdd** -Funktion angewendet.
+  Die [Text-Funktion](../functions/function-text.md#datetime) nimmt ein Datum/eine Uhrzeit als erstes Argument an und formatiert Sie basierend auf dem zweiten Argument. Sie übergeben die lokale Zeit Konvertierung von **thisitem. StartTime**und zeigen Sie als **DateTimeFormat. Shorttime**an.
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: Mehrere **sammeln** Anweisungen zum Sammeln von Besprechungsräumen und ihre vorgeschlagenen Verfügbarkeit als auch mehrere Variablen schaltet:
+* Property **OnSelect**<br>
+    Wert Mehrere **Collect** -Anweisungen, um Besprechungsräume und deren empfohlene Verfügbarkeit sowie mehrere variablenschalter zu erfassen:
 
-    ```powerapps-comma
-    Set( _selectedMeetingTime; ThisItem );;
-    UpdateContext( { _loadingRooms: true } );;
-    If( IsEmpty( RoomsLists );
-        ClearCollect( RoomsLists; 'Office365'.GetRoomLists().value) );;
-    If( CountRows( RoomsLists ) <= 1;
-        Set( _noRoomLists; true );;
-        ClearCollect( AllRooms; 'Office365'.GetRooms().value );;
-        Set( _allRoomsConcat; Concat( FirstN( AllRooms; 20 ); Address & ";" ) );;
-        ClearCollect( RoomTimeSuggestions; 
+    ```powerapps-dot
+    Set( _selectedMeetingTime, ThisItem );
+    UpdateContext( { _loadingRooms: true } );
+    If( IsEmpty( RoomsLists ),
+        ClearCollect( RoomsLists, 'Office365'.GetRoomLists().value) );
+    If( CountRows( RoomsLists ) <= 1,
+        Set( _noRoomLists, true );
+        ClearCollect( AllRooms, 'Office365'.GetRooms().value );
+        Set( _allRoomsConcat, Concat( FirstN( AllRooms, 20 ), Address & ";" ) );
+        ClearCollect( RoomTimeSuggestions, 
             'Office365'.FindMeetingTimes(
                 {
-                    RequiredAttendees: _allRoomsConcat; 
-                    MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                    Start: _selectedMeetingTime.StartTime & "Z"; 
-                    End: _selectedMeetingTime.EndTime & "Z"; 
-                    MinimumAttendeePercentage: "1";
-                    IsOrganizerOptional: "false"; 
+                    RequiredAttendees: _allRoomsConcat, 
+                    MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                    Start: _selectedMeetingTime.StartTime & "Z", 
+                    End: _selectedMeetingTime.EndTime & "Z", 
+                    MinimumAttendeePercentage: "1",
+                    IsOrganizerOptional: "false", 
                     ActivityDomain: "Unrestricted"
                 }
             ).MeetingTimeSuggestions
-        );;
-        ClearCollect( AvailableRooms; 
+        );
+        ClearCollect( AvailableRooms, 
             AddColumns(
                 AddColumns(
                     Filter( 
-                        First( RoomTimeSuggestions ).AttendeeAvailability;
+                        First( RoomTimeSuggestions ).AttendeeAvailability,
                         Availability="Free"
-                    ); 
-                    "Address"; Attendee.EmailAddress.Address
-                ); 
-                "Name"; LookUp( AllRooms; Address = Attendee.EmailAddress.Address ).Name 
-            )
-        );;
-        ClearCollect( AvailableRoomsOptimal; 
-            DropColumns(
-                DropColumns( AvailableRooms; "Availability" ); 
-                "Attendee" 
+                    ), 
+                    "Address", Attendee.EmailAddress.Address
+                ), 
+                "Name", LookUp( AllRooms, Address = Attendee.EmailAddress.Address ).Name 
             )
         );
-        Set( _roomListSelected; false) 
-    );;
+        ClearCollect( AvailableRoomsOptimal, 
+            DropColumns(
+                DropColumns( AvailableRooms, "Availability" ), 
+                "Attendee" 
+            )
+        ),
+        Set( _roomListSelected, false) 
+    );
     UpdateContext( {_loadingRooms: false} )
     ```
 
-  Auf einer hohen Ebene diesen Codeblock Überwachungsdaten verfügbaren Räume für Benutzer, die nicht den Räumen Listen, basierend auf dem ausgewählten Datum/Uhrzeit für die Besprechung. Andernfalls ruft einfach die Räume Listen ab.
+  Auf hoher Ebene sammelt dieser Codeblock verfügbare Räume für Benutzer, die keine Räume Listen haben, basierend auf dem ausgewählten Datum und der ausgewählten Uhrzeit für die Besprechung. Andernfalls werden einfach die Räume Listen abgerufen.
 
-  Auf niedriger Ebene, diesen Codeblock:
-  1. Legt **_selectedMeetingTime** für das ausgewählte Element. Dies wird zum Ermitteln, welche Räume während dieser Zeit verfügbar sind.
-  1. Legt das Laden Statusvariable **_loadingRooms** zu **"true"**, Aktivieren der geladenen Status.
-  1. Wenn die **RoomsLists** Auflistung ist leer, es den Mandanten des Benutzers Räume werden abgerufen, und speichert sie in der **RoomsLists** Auflistung.
-  1. Wenn der Benutzer keine Raumliste oder eine Raumliste verfügt:
-      1. Die **NoRoomLists** Variable nastaven NA hodnotu **"true"**, und diese Variable wird verwendet, um zu bestimmen, die in der angezeigten Elemente der **RoomBrowseGallery** Steuerelement.
-      1. Die `Office365.GetRooms()` Vorgang wird verwendet, um die ersten 100 Räume in ihrem Mandanten abrufen. Diese befinden sich in der **AllRooms** Auflistung.
-      1. Die **_allRoomsConcat** Variable wird festgelegt, um die ersten 20 e-Mail-Adressen der Räume in eine durch Semikolons getrennte Zeichenfolge der **AllRooms** Auflistung. Grund hierfür ist die [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) ist auf der Suche nach den verfügbaren Zeiten von 20 Person-Objekten in einem einzigen Vorgang.
-      1. Die **RoomTimeSuggestions** Auflistung verwendet die [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) zum Abrufen der Verfügbarkeit von der ersten 20 Räume in die **AllRooms** anhand für den Time-Werten aus der **_selectedMeetingTime** Variable. Beachten Sie, dass die `& "Z"` wird verwendet, um ordnungsgemäß zu formatieren der **"DateTime"** Wert.
-      1. Die **AvailableRooms** Sammlung wird erstellt. Ist dies einfach der **RoomTimeSuggestions** Auflistung der Teilnehmer-Verfügbarkeit mit zwei zusätzliche Spalten hinzugefügt: "Address" und "Name". "Address" ist die e-Mail-Adresse des Raums, und "Name" ist der Name des Raums.
-      1. Anschließend wird die **AvailableRoomsOptimal** Sammlung wird erstellt. Dies ist die **AvailableRooms** Auflistung mit den Spalten "Verfügbarkeit" und "Teilnehmer" entfernt. Dies entspricht der Schemas von **AvailableRoomsOptimal** und **AllRooms**. Dies ermöglicht Ihnen die Verwendung der beiden Auflistungen in der **Elemente** Eigenschaft der **RoomBrowseGallery**.
-      1. **_roomListSelected** nastaven NA hodnotu **"false"**.
-  1. Der Ladezustand **_loadingRooms**, nastaven NA hodnotu **"false"** sobald alles beendet wurde.
+  Dieser Codeblock auf niedriger Ebene:
+  1. Legt **_selectedMeetingTime** auf das ausgewählte Element fest. Hiermit wird festgestellt, welche Räume während dieser Zeit verfügbar sind.
+  1. Legt die Ladezustands Variable **_loadingRooms** auf **true**fest und schaltet den Ladezustand ein.
+  1. Wenn die **roomslists** -Auflistung leer ist, ruft Sie die Zimmer Listen des Benutzers ab und speichert Sie in der Sammlung " **roomslists** ".
+  1. Wenn der Benutzer nicht über eine Raum Liste oder eine Raum Liste verfügt:
+      1. Die Variable **noroomlists** ist auf **true**festgelegt, und diese Variable wird verwendet, um die im **roombrowsegallery** -Steuerelement angezeigten Elemente zu bestimmen.
+      1. Der `Office365.GetRooms()`-Vorgang wird verwendet, um die ersten 100-Räume in Ihrem Mandanten abzurufen. Diese werden in der **allräume** -Auflistung gespeichert.
+      1. Die **_allRoomsConcat** -Variable wird auf eine durch Semikolons getrennte Zeichenfolge der ersten 20 e-Mail-Adressen der Räume in der **allrooms** -Auflistung festgelegt. Dies liegt daran, dass [Office 365. findmeetingtimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) auf die Suche nach den verfügbaren Zeiten von 20 Personen Objekten in einem einzelnen Vorgang beschränkt ist.
+      1. Die **roomtimesuggestions** -Auflistung verwendet [Office 365. findmeetingtimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) , um die Verfügbarkeit der ersten 20 Räume in der **allroom** -Auflistung basierend auf den Zeitwerten aus der **_selectedMeetingTime** -Variablen abzurufen. Beachten Sie, dass die `& "Z"` verwendet wird, um den **DateTime** -Wert ordnungsgemäß zu formatieren.
+      1. Die **availablerooms** -Sammlung wird erstellt. Dabei handelt es sich einfach um die **roomtimesuggestions** -Auflistung der Teilnehmer-Verfügbarkeit mit zwei zusätzlichen Spalten, die ihr hinzugefügt werden: "Address" und "Name". "Address" ist die e-Mail-Adresse des Raums, und "Name" ist der Name des Raums.
+      1. Anschließend wird die **availableroomsoptimal** -Auflistung erstellt. Dies ist nur die **availablerooms** -Sammlung, in der die Spalten "Availability" und "Attendee" entfernt wurden. Dies entspricht den Schemas von **availableroomsoptimal** und **allrooms**. Dies ermöglicht es Ihnen, beide Auflistungen in der **Items** -Eigenschaft von **roombrowsegallery**zu verwenden.
+      1. **_roomListSelected** ist auf **false**festgelegt.
+  1. Der Ladezustand " **_loadingRooms**" wird auf " **false** " festgelegt, sobald die Ausführung der anderen Person abgeschlossen ist.
 
-## <a name="room-browse-gallery"></a>Raum durchsuchbaren Katalog
+## <a name="room-browse-gallery"></a>Katalog mit Raum suchen
 
-   ![RoomBrowseGallery-Steuerelement](media/meeting-screen/meeting-rooms-gall.png)
+   ![Roombrowsegallery-Steuerelement](media/meeting-screen/meeting-rooms-gall.png)
 
-* Eigenschaft: **Elemente**<br>
-    Wert: Legen Sie logisch identische Schemas, je nachdem, ob der Benutzer Raumliste ausgewählt hat oder Räume Listen in ihrem Mandanten hat zwei internen Auflistungen:
+* Property **Punkte**<br>
+    Wert Wird logisch auf zwei interne Auflistungen identischer Schemas festgelegt, je nachdem, ob der Benutzer eine Raum Liste ausgewählt hat oder in seinem Mandanten über Räume Listen verfügt:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Search(
-        If( _roomListSelected || _noRoomLists; AvailableRoomsOptimal; RoomsLists );
-        Trim(TextMeetingLocation1.Text); 
-        "Name"; 
+        If( _roomListSelected || _noRoomLists, AvailableRoomsOptimal, RoomsLists ),
+        Trim(TextMeetingLocation1.Text), 
+        "Name", 
         "Address"
     )
     ```
 
-  Dieser Katalog zeigt die **AvailableRoomsOptimal** Auflistung Wenn **_roomListSelected** oder **_noRoomLists** ist **"true"**. Andernfalls zeigt er die **RoomsLists** Auflistung. Dies kann erfolgen, da das Schema dieser Auflistungen sind identisch.
+  In dieser Galerie wird die **availableroomsoptimal** -Auflistung angezeigt, wenn **_roomListSelected** oder **_noRoomLists** den Wert **true**aufweist. Andernfalls wird die Sammlung " **roomslists** " angezeigt. Dies ist möglich, da das Schema dieser Auflistungen identisch ist.
 
-* Eigenschaft: **Visible**<br>
+* Property **Barem**<br>
     Wert: ```_showDetails && !IsBlank( _selectedMeetingTime ) && !_loadingRooms```
 
-    Der Katalog ist nur sichtbar, wenn die drei vorherigen Anweisungen ausgewertet **"true"**.
+    Der Katalog ist nur sichtbar, wenn die drei vorangehenden Anweisungen als **true**ausgewertet werden.
 
-### <a name="roombrowsegallery-title"></a>RoomBrowseGallery Titel
+### <a name="roombrowsegallery-title"></a>Roombrowsegallery-Titel
 
-   ![RoomBrowseGallery Titel des Steuerelements](media/meeting-screen/meeting-rooms-gall-title.png)
+   ![Roombrowsegallery-Titel Steuerelement](media/meeting-screen/meeting-rooms-gall-title.png)
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: Eine Reihe von logisch gebundenen **sammeln** und **festgelegt** Anweisungen, die möglicherweise oder nicht ausgelöst werden können, je nachdem, ob der Benutzer Raumlisten oder Teamräume angezeigt wird:
+* Property **OnSelect**<br>
+    Wert Ein Satz logisch gebundener **Collect** -und **set** -Anweisungen, die abhängig davon, ob der Benutzerraum Listen oder Räume zeigt, möglicherweise ausgelöst werden.
 
-    ```powerapps-comma
-    UpdateContext( { _loadingRooms: true } );;
-    If( !_roomListSelected && !noRoomLists;
-        Set( _roomListSelected; true );;
-        Set( _selectedRoomList; ThisItem.Name );;
-        ClearCollect( AllRooms; 'Office365'.GetRoomsInRoomList( ThisItem.Address ).value );;
-        Set( _allRoomsConcat; Concat( FirstN( AllRooms; 20 ); Address & ";" ) );;
-        ClearCollect( RoomTimeSuggestions; 
+    ```powerapps-dot
+    UpdateContext( { _loadingRooms: true } );
+    If( !_roomListSelected && !noRoomLists,
+        Set( _roomListSelected, true );
+        Set( _selectedRoomList, ThisItem.Name );
+        ClearCollect( AllRooms, 'Office365'.GetRoomsInRoomList( ThisItem.Address ).value );
+        Set( _allRoomsConcat, Concat( FirstN( AllRooms, 20 ), Address & ";" ) );
+        ClearCollect( RoomTimeSuggestions, 
             'Office365'.FindMeetingTimes(
                 {
-                    RequiredAttendees: _allRoomsConcat; 
-                    MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: _selectedMeetingTime.StartTime & "Z"; 
-                    End: _selectedMeetingTime.EndTime & "Z"; 
-                    MinimumAttendeePercentage: "1";
-                    IsOrganizerOptional: "false"; 
+                    RequiredAttendees: _allRoomsConcat, 
+                    MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: _selectedMeetingTime.StartTime & "Z", 
+                    End: _selectedMeetingTime.EndTime & "Z", 
+                    MinimumAttendeePercentage: "1",
+                    IsOrganizerOptional: "false", 
                     ActivityDomain: "Unrestricted"
                 }
             ).MeetingTimeSuggestions
-        );;
-        ClearCollect( AvailableRooms; 
+        );
+        ClearCollect( AvailableRooms, 
             AddColumns(
                 AddColumns(
                     Filter(
-                        First( RoomTimeSuggestions ).AttendeeAvailability; 
+                        First( RoomTimeSuggestions ).AttendeeAvailability, 
                         Availability = "Free"
-                    );
-                    "Address"; Attendee.EmailAddress.Address 
-                ); 
-                "Name"; LookUp( AllRooms; Address = Attendee.EmailAddress.Address ).Name
+                    ),
+                    "Address", Attendee.EmailAddress.Address 
+                ), 
+                "Name", LookUp( AllRooms, Address = Attendee.EmailAddress.Address ).Name
             )
-        );;
-        ClearCollect( AvailableRoomsOptimal; 
-            DropColumns(
-                DropColumns( AvailableRooms; "Availability" )
-            ); 
-            "Attendee" )
         );
-        Set( _selectedRoom; ThisItem )
-    );;
+        ClearCollect( AvailableRoomsOptimal, 
+            DropColumns(
+                DropColumns( AvailableRooms, "Availability" )
+            ), 
+            "Attendee" )
+        ),
+        Set( _selectedRoom, ThisItem )
+    );
     UpdateContext( {_loadingRooms: false} )
     ```
 
-  Die Aktionen, die auftreten, wenn dieses Steuerelement ausgewählt ist, hängen davon ab, ob ein Benutzer eine Gruppe von Raumlisten oder einen Satz von Räumen derzeit angezeigt wird. Ruft ab der Räume, die zum ausgewählten Zeitpunkt in der Liste ausgewählten Platz verfügbar sind, ist dies die ehemalige, wählen Sie dann auf dieses Steuerelement. Wenn sie die zweite ist, legt auswählen dieses Steuerelements die **_selectedRoom** Variable für das ausgewählte Element. Die vorhergehende Anweisung ähnelt stark der **wählen** -Anweisung für [ **FindMeetingTimesGallery Titel**](#find-meeting-times-gallery).
+  Welche Aktionen ausgeführt werden, wenn dieses Steuerelement ausgewählt wird, hängt davon ab, ob ein Benutzer gerade einen Satz von Raum Listen oder einen Satz von Räumen anzeigen soll. Wenn es sich um das erste Element handelt, werden bei Auswahl dieses Steuer Elements die Räume, die zum ausgewählten Zeitpunkt verfügbar sind, aus der Liste ausgewählter Räume abgerufen. Wenn das Steuerelement dieses Steuerelement ist, wird die **_selectedRoom** -Variable auf das ausgewählte Element festgelegt. Die vorherige Anweisung ähnelt der **Select** -Anweisung für den [**findmeetingtimesgallery-Titel**](#find-meeting-times-gallery).
 
-  Auf niedriger Ebene, der zuvor angeführten Codeblock:
-  1. Aktiviert die geladenen Status für den Räumen durch Festlegen von **_loadingRooms** zu **"true"**.
-  1. Überprüft, um zu ermitteln, ob eine Raumliste ausgewählt wurde und wenn der Mandant besitzt aufgeführt. Wenn dies der Fall ist:
-      1. Legt fest **_roomListSelected** zu **"true"** und legt **_selectedRoomList** für das ausgewählte Element.
-      1. Die **_allRoomsConcat** Variable wird festgelegt, um die ersten 20 e-Mail-Adressen der Räume in eine durch Semikolons getrennte Zeichenfolge der **AllRooms** Auflistung. Grund hierfür ist die [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) Vorgang bis zur Suche nach den verfügbaren Zeiten von 20 Person-Objekten in einem einzigen Vorgang beschränkt ist.
-      1. Die **RoomTimeSuggestions** Auflistung verwendet die [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) Vorgang zum Abrufen von der Verfügbarkeit von der ersten 20 Räume in die **AllRooms** Sammlung basierend auf den Time-Werten aus der **_selectedMeetingTime** Variable. Beachten Sie, dass `& "Z"` wird verwendet, um ordnungsgemäß zu formatieren der **"DateTime"** Wert.
-      1. Die **AvailableRooms** Sammlung wird erstellt. Ist dies einfach der **RoomTimeSuggestions** Auflistung der Teilnehmer-Verfügbarkeit mit zwei zusätzliche Spalten hinzugefügt: "Address" und "Name". "Address" ist die e-Mail-Adresse des Raums, und "Name" ist der Name des Raums.
-      1. Anschließend wird die **AvailableRoomsOptimal** Sammlung wird erstellt. Dies ist die **AvailableRooms** Auflistung mit den Spalten "Verfügbarkeit" und "Teilnehmer" entfernt. Dies entspricht der Schemas von **AvailableRoomsOptimal** und **AllRooms**. Dies ermöglicht Ihnen die Verwendung der beiden Auflistungen in der **Elemente** Eigenschaft **RoomBrowseGallery**.
-      1. **_roomListSelected** nastaven NA hodnotu **"false"**.
-  1. Der Ladezustand **_loadingRooms**, nastaven NA hodnotu **"false"** sobald alles beendet wurde.
+  Der vorangehende Codeblock auf niedriger Ebene:
+  1. Schaltet den Ladezustand für die Räume ein, indem **_loadingRooms** auf **true**festgelegt wird.
+  1. Prüft, ob eine Raum Liste ausgewählt wurde und ob der Mandant über Raum Listen verfügt. Wenn ja:
+      1. Legt **_roomListSelected** auf **true** fest und legt **_selectedRoomList** auf das ausgewählte Element fest.
+      1. Die **_allRoomsConcat** -Variable wird auf eine durch Semikolons getrennte Zeichenfolge der ersten 20 e-Mail-Adressen der Räume in der **allrooms** -Auflistung festgelegt. Dies liegt daran, dass der [Office 365. findmeetingtimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) -Vorgang auf die Suche nach den verfügbaren Zeiten von 20 Personen Objekten in einem einzelnen Vorgang beschränkt ist.
+      1. Die **roomtimesuggestions** -Auflistung verwendet den [Office 365. findmeetingtimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) -Vorgang, um die Verfügbarkeit der ersten 20 Räume in der **allroom** -Auflistung basierend auf den Zeitwerten aus dem **_selectedMeetingTime** -Wert abzurufen. veränder. Beachten Sie, dass `& "Z"` verwendet wird, um den **DateTime** -Wert ordnungsgemäß zu formatieren.
+      1. Die **availablerooms** -Sammlung wird erstellt. Dabei handelt es sich einfach um die **roomtimesuggestions** -Auflistung der Teilnehmer-Verfügbarkeit mit zwei zusätzlichen Spalten, die ihr hinzugefügt werden: "Address" und "Name". "Address" ist die e-Mail-Adresse des Raums, und "Name" ist der Name des Raums.
+      1. Anschließend wird die **availableroomsoptimal** -Auflistung erstellt. Dies ist nur die **availablerooms** -Sammlung, in der die Spalten "Availability" und "Attendee" entfernt wurden. Dies entspricht den Schemas von **availableroomsoptimal** und **allrooms**. Dies ermöglicht es Ihnen, beide Auflistungen in der **Items** -Eigenschaft von **roombrowsegallery**zu verwenden.
+      1. **_roomListSelected** ist auf **false**festgelegt.
+  1. Der Ladezustand " **_loadingRooms**" wird auf " **false** " festgelegt, sobald die Ausführung der anderen Person abgeschlossen ist.
 
-## <a name="back-chevron"></a>Chevron sichern
+## <a name="back-chevron"></a>Zurück Chevron
 
-   ![RoomsBackNav-Steuerelement](media/meeting-screen/meeting-back.png)
+   ![Roomsbacknav-Steuerelement](media/meeting-screen/meeting-back.png)
 
-* Eigenschaft: **Visible**<br>
+* Property **Barem**<br>
     Wert: `_roomListSelected && _showDetails`
 
-    Dieses Steuerelement ist nur sichtbar, wenn beide Raumliste ausgewählt wurde und die **Zeitplan** Registerkarte ausgewählt ist.
+    Dieses Steuerelement ist nur sichtbar, wenn eine Raum Liste ausgewählt und die Registerkarte **Zeitplan** ausgewählt ist.
 
-* Eigenschaft: **OnSelect**<br>
-    Wert: `Set( _roomListSelected; false )`
+* Property **OnSelect**<br>
+    Wert: `Set( _roomListSelected, false )`
 
-    Wenn **_roomListSelected** nastaven NA hodnotu **"false"**, ändert der **RoomBrowseGallery** Steuerelement zum Anzeigen von Elementen aus der **RoomsLists** Auflistung.
+    Wenn **_roomListSelected** auf **false**festgelegt ist, wird das Element **roombrowsegallery** geändert, sodass Elemente aus der **Auflistung roomslists** angezeigt werden.
 
 ## <a name="send-icon"></a>Symbol "Senden"
 
-   ![IconSendItem-Steuerelement](media/meeting-screen/meeting-send-icon.png)
+   ![Iconsenditem-Steuerelement](media/meeting-screen/meeting-send-icon.png)
 
-* Eigenschaft: **DisplayMode**<br>
-    Wert: Die Logik zum erzwingen, dass Benutzer bestimmte Meeting-Details eingeben, bevor Sie das Symbol bearbeitet werden kann.
+* Property **Display Mode**<br>
+    Wert Logik zum erzwingen, dass Benutzer bestimmte Besprechungs Details eingeben, bevor das Symbol bearbeitet werden konnte.
     
-    ```powerapps-comma
+    ```powerapps-dot
     If( Len( Trim( TextMeetingSubject1.Text ) ) > 0
-        && !IsEmpty( MyPeople ) && !IsBlank( _selectedMeetingTime );
-        DisplayMode.Edit; DisplayMode.Disabled
+        && !IsEmpty( MyPeople ) && !IsBlank( _selectedMeetingTime ),
+        DisplayMode.Edit, DisplayMode.Disabled
     )
     ```
-  Das Symbol ist auswählbar, nur dann, wenn dem Thema der Besprechung ausgefüllt wird, mindestens ein Teilnehmer der Besprechung ist und Zeitpunkt ausgewählt wurde. Andernfalls wird es deaktiviert.
+  Das Symbol ist nur wählbar, wenn der Besprechungs Betreff ausgefüllt ist, mindestens ein Teilnehmer für die Besprechung vorhanden und eine Besprechungszeit ausgewählt wurde. Andernfalls ist sie deaktiviert.
 
-* Eigenschaft: **OnSelect**<br>
+* Property **OnSelect**<br>
 
-    Wert: Wenn Sie die Besprechung-Einladung an Ihre ausgewählten Teilnehmer senden, und löschen alle Eingabefelder Code:
+    Wert Code zum Senden der Besprechungs Einladung an Ihre ausgewählten Teilnehmer und zum Löschen aller Eingabefelder:
 
-    ```powerapps-comma
-    Set( _myCalendarName; LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name );;
-    Set( _myScheduledMeeting; 
-        'Office365'.V2CalendarPostItem( _myCalendarName;
-            TextMeetingSubject1.Text; 
-            Text(DateAdd(DateTimeValue( _selectedMeetingTime.StartTime); -TimeZoneOffset(); Minutes) );
-            Text(DateAdd(DateTimeValue( _selectedMeetingTime.EndTime); -TimeZoneOffset(); Minutes) );
+    ```powerapps-dot
+    Set( _myCalendarName, LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name );
+    Set( _myScheduledMeeting, 
+        'Office365'.V2CalendarPostItem( _myCalendarName,
+            TextMeetingSubject1.Text, 
+            Text(DateAdd(DateTimeValue( _selectedMeetingTime.StartTime), -TimeZoneOffset(), Minutes) ),
+            Text(DateAdd(DateTimeValue( _selectedMeetingTime.EndTime), -TimeZoneOffset(), Minutes) ),
             {
-                RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ) & _selectedRoom.Address; 
-                Body: TextMeetingMessage1.Text; 
-                Location: _selectedRoom.Name; 
-                Importance: "Normal"; 
-                ShowAs: "Busy"; 
+                RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ) & _selectedRoom.Address, 
+                Body: TextMeetingMessage1.Text, 
+                Location: _selectedRoom.Name, 
+                Importance: "Normal", 
+                ShowAs: "Busy", 
                 ResponseRequested: true
             }
         )
-    );;
+    );
     Concurrent(
-        Reset( TextMeetingLocation1 );
-        Reset( TextMeetingSubject1 );
-        Reset( TextMeetingMessage1 );
-        Clear( MyPeople );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoomList; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false )
+        Reset( TextMeetingLocation1 ),
+        Reset( TextMeetingSubject1 ),
+        Reset( TextMeetingMessage1 ),
+        Clear( MyPeople ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoomList, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false )
     )
     ```
   
-  Auf niedriger Ebene, diesen Codeblock:
-  1. Legt **_myCalendarName** auf den Kalender in der [Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars) Vorgang mit einem **"DisplayName"** von "Kalender".
-  1. Zeitpläne die Besprechung mit der Eingabe Werte aus der Auswahl der verschiedenen Benutzer vorgenommen werden, während der Bildschirm mit der [Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) Vorgang.
-  1. Setzt alle Felder und Variablen, die zum Erstellen der Besprechung verwendet.
+  Dieser Codeblock auf niedriger Ebene:
+  1. Legt **_myCalendarName** auf den Kalender im [Office 365. calendargettables ()](https://docs.microsoft.com/connectors/office365/#get-calendars) -Vorgang mit dem **Display Name** "Calendar" fest.
+  1. Plant die Besprechung mit allen Eingabe Werten aus den verschiedenen Auswahlen, die der Benutzer im Bildschirm mithilfe des [Office 365. V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) -Vorgangs getroffen hat.
+  1. Setzt alle Eingabefelder und Variablen zurück, die zum Erstellen der Besprechung verwendet werden.
 
 > [!NOTE]
-> Je nach Region die von Ihnen gewünschten Kalender Anzeigenamen "Kalender". möglicherweise nicht Wechseln Sie zu Outlook finden Sie unter der Titel des Kalenders, und nehmen Sie die entsprechende Änderung in der app.
+> Abhängig von Ihrer Region hat der gewünschte Kalender möglicherweise keinen anzeigen Amen "Calendar". Wechseln Sie zu Outlook, um zu sehen, was der Titel Ihres Kalenders ist, und nehmen Sie die entsprechende Änderung in der APP vor.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [Weitere Informationen zu diesem Bildschirm](./meeting-screen-overview.md)
-* [Erfahren Sie mehr über das Office 365 Outlook-Connector in PowerApps](../connections/connection-office365-outlook.md)
-* [Erfahren Sie mehr über das Office 365-Benutzer-Connector in PowerApps](../connections/connection-office365-users.md)
+* [Weitere Informationen zum Office 365 Outlook-Connector in powerapps](../connections/connection-office365-outlook.md)
+* [Weitere Informationen zum Office 365-Benutzer-Connector in powerapps](../connections/connection-office365-users.md)

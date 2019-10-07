@@ -6,26 +6,26 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 12/07/2018
 ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5439399a22b47fcf4195cf878208e0e0bd4e0764
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1e5c90fcc6e4f8d4c8e1d73eadc9a31fdbfe48ef
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61532109"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988299"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Starten eines Flows in einer Canvas-App
 
 Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe ausführt, wenn ein Ereignis in einer Canvas-App auftritt. Sie können zum Beispiel eine Schaltfläche so konfigurieren, dass bei Auswahl durch den Benutzer ein Element in einer SharePoint-Liste erstellt wird, eine E-Mail oder eine Besprechungsanfrage gesendet wird, eine Datei der Cloud hinzugefügt wird oder all dies ausgeführt wird. Sie können jedes Steuerelement in der App für das Starten des Flows konfigurieren, der auch weiterhin ausgeführt wird, wenn Sie PowerApps schließen.
 
 > [!NOTE]
-> Wenn ein Benutzer einen Flow aus einer App ausgeführt wird, muss dieser Benutzer über die Berechtigung für die Aufgaben, die in den Datenfluss angegeben werden. Andernfalls schlägt der Flow fehl.
+> Wenn ein Benutzer einen Flow aus einer APP heraus ausführt, muss dieser Benutzer über die Berechtigung zum Ausführen der im Flow angegebenen Tasks verfügen. Andernfalls schlägt der Flow fehl.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -36,23 +36,23 @@ Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe
 
 1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
-1. Wählen Sie in der linken Navigationsleiste auf **Geschäftslogik**, und wählen Sie dann **Flows**.
+1. Wählen Sie in der linken Navigationsleiste **Geschäftslogik**aus, und wählen Sie dann **Flows**aus.
 
-1. In der oberen linken Ecke des der **Meine Flows** Seite **neu**, und wählen Sie dann **ohne Vorlage neu erstellen**.
+1. Wählen Sie in der linken oberen Ecke der Seite " **meine Flows** " die Option **neu**aus, und wählen Sie dann ohne Vorlage **erstellen aus**.
 
     ![Option, um einen Flow ohne Vorlage zu erstellen](./media/using-logic-flows/create-from-blank.png)
 
-1. Wählen Sie im unteren Bereich des daraufhin angezeigten Dialogfeld **Hunderte von Verbindungen und Trigger Durchsuchen**.
+1. Wählen Sie am unteren Rand der Seite, die angezeigt wird, die Option **Hunderte von Verbindungen und Triggern durchsuchen**aus.
 
-1. Geben Sie in das Suchfeld **PowerApps**, und wählen Sie dann die **PowerApps** Symbol.
+1. Geben Sie im Suchfeld **powerapps**ein, und wählen Sie dann das **powerapps** -Symbol aus.
 
-    ![Erstellen eines Triggers für PowerApps](./media/using-logic-flows/set-trigger.png)
+    ![Erstellen eines powerapps-Auslösers](./media/using-logic-flows/set-trigger.png)
     
-1. Wählen Sie auf der nächsten Seite das Symbol "PowerApps" erneut aus, und wählen Sie dann **neuer Schritt**.
+1. Wählen Sie auf der nächsten Seite das powerapps-Symbol erneut aus, und wählen Sie dann **neuer Schritt**aus.
 
-1. Klicken Sie im Feld **Connectors und Trigger Durchsuchen**, geben Sie eine Aktion für den Flow ein, wie im folgenden Beispiel:
+1. Geben Sie im Feld mit den **Connectors und Aktionen suchen**eine Aktion für den Flow an, wie in diesem Beispiel:
 
-   1. Typ **SharePoint** in das Feld ein, und wählen Sie dann **Element erstellen** in der Liste unter **Aktionen**.
+   1. Geben Sie in das Feld **SharePoint** ein, und wählen Sie dann in der Liste unter **Aktionen**die Option **Element erstellen** aus.
 
        ![Option zum Erstellen eines SharePoint-Elements](./media/using-logic-flows/create-sharepoint-item.png)
 
@@ -63,22 +63,22 @@ Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe
        > [!NOTE]
        > Fügen Sie den Namen der Liste nicht an die URL an.
 
-   1. In der **Listenname** geben die Liste, die Sie verwenden möchten.
+   1. Geben Sie im Feld **Listen Name** die Liste an, die Sie verwenden möchten.
    
-       ![Geben Sie die Liste](./media/using-logic-flows/list-fields.png)
+       ![Liste angeben](./media/using-logic-flows/list-fields.png)
 
-   1. Wählen Sie das Eingabefeld für ein Feld in der Liste (z. B. **Titel**) Option **Weitere Informationen finden Sie** im Bereich von dynamischem Inhalt, und wählen Sie dann **in PowerApps Fragen**. 
+   1. Wählen Sie das Eingabefeld für ein Feld in der Liste (z. b. **Titel**) aus, wählen Sie im Bereich dynamischer Inhalt die Option **Weitere** anzeigen aus, und wählen Sie dann **in powerapps Fragen**aus. 
 
        ![Hinzufügen von „In PowerApps fragen“ zum Feld „Titel“](./media/using-logic-flows/ask-in-powerapps.png)
 
-1. (optional) Geben Sie einen oder mehrere zusätzliche Schritte, wie das Senden von e-Mail zur Genehmigung an eine Adresse, die Sie angeben, oder Erstellen eines zugehörigen Eintrags in einer anderen Datenquelle.
+1. optionale Geben Sie einen oder mehrere zusätzliche Schritte an, z. b. das Senden einer Genehmigungs-e-Mail an eine von Ihnen angegebene Adresse oder die Erstellung eines verknüpften Eintrags in einer anderen
 
-1. In der Nähe der oberen linken Ecke, geben Sie einen Namen für den Flow ein, und wählen Sie dann **speichern** in der Nähe der oberen rechten Ecke.
+1. Geben oder fügen Sie in der Nähe der oberen linken Ecke einen Namen für den Flow ein, und klicken Sie dann in der Nähe der oberen rechten Ecke auf **Speichern** .
 
 ## <a name="add-a-flow-to-an-app"></a>Hinzufügen eines Flows zu einer App
-1. Wählen Sie in der linken Navigationsleiste auf **erstellen**.
+1. Klicken Sie in der linken Navigationsleiste auf **Erstellen**.
 
-1. Zeigen Sie auf die **Canvas-app mit leerer App** Kachel, und wählen Sie dann **diese App**.
+1. Zeigen Sie auf die **Canvas-APP von einer leeren** Kachel, und wählen Sie dann **diese APP erstellen**aus.
 
 1. Fügen Sie ein **[Texteingabe](controls/control-text-input.md)** -Steuerelement hinzu, und nennen Sie es **RecordTitle**.
 
@@ -100,8 +100,8 @@ Mit Microsoft Flow können Sie eine Logik erstellen, die mindestens eine Aufgabe
     ![OnSelect-Eigenschaft, die den Flow enthält](./media/using-logic-flows/onselect-with-flow.png)
 
 ## <a name="test-the-flow"></a>Testen des Flows
-1. Doppelklicken Sie auf die **Texteingabe** zu steuern, und geben oder fügen Sie Text ein.
+1. Doppelklicken Sie auf das **Text Eingabe** -Steuerelement, und geben Sie Text ein, oder fügen Sie ihn ein.
 
-1. Während Sie die Alt-Taste gedrückt halten, wählen Sie die **[Schaltfläche](controls/control-button.md)** Steuerelement.
+1. Wenn Sie die Alt-Taste gedrückt halten, wählen Sie das **[Schalt](controls/control-button.md)** Flächen-Steuerelement.
 
-    Ein SharePoint-Element wird in der Liste erstellt, die Sie mit dem angegebenen Text, den Sie als Titel angegeben werden. Wenn die Liste bei Ausführung des Flows geöffnet war, müssen Sie ggf. Ihr Browserfenster aktualisieren, um die Änderungen anzuzeigen.
+    Ein SharePoint-Element wird in der Liste erstellt, die Sie mit dem Text angegeben haben, den Sie als Titel angegeben haben. Wenn die Liste bei Ausführung des Flows geöffnet war, müssen Sie ggf. Ihr Browserfenster aktualisieren, um die Änderungen anzuzeigen.

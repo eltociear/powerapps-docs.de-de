@@ -1,27 +1,26 @@
 ---
 title: Tutorial – Anpassen eines Katalogs in einer generierten App | Microsoft-Dokumentation
 description: In diesem Tutorial passen Sie die Daten an, die in der Galerie und anderen Elementen einer App angezeigt werden, die in PowerApps automatisch generiert wurde.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: tutorial
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561255"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986056"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Tutorial: Anpassen eines Katalogs in PowerApps
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Lehrbuch Anpassen eines Katalogs in powerapps
 
 Im Rahmen dieses Tutorials passen Sie eine Liste von Datensätzen an, die Katalog genannt wird, und nehmen andere Änderungen in einer App vor, die in Microsoft PowerApps automatisch generiert wurde. Benutzer können auch dann Daten in der App verwalten, wenn Sie diese Änderungen nicht vornehmen, jedoch ist die App einfacher zu verwenden, wenn Sie sie den Anforderungen Ihres Unternehmens anpassen.
 
@@ -48,13 +47,13 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-[Generieren einer app](data-platform-create-app.md) aus der **Konten** Entität von Common Data Service.
+[Generieren Sie eine APP](data-platform-create-app.md) aus der Entität **Accounts** Common Data Service.
 
 ## <a name="open-the-generated-app"></a>Öffnen einer generierten App
 
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
-1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol (**...** ) für sie und dann **Bearbeiten** aus.
+1. Suchen Sie die App, die Sie generiert haben, und wählen Sie das Auslassungssymbol ( **...** ) für sie und dann **Bearbeiten** aus.
 
     ![App zur Bearbeitung öffnen](./media/customize-layout-sharepoint/open-app.png)
 
@@ -68,15 +67,15 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
     ![Katalog auswählen](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, öffnen Sie die Liste der Optionen unter **Layout**, und wählen Sie dann die Option, die nur einen Titel anzeigt.
+1. Öffnen Sie im rechten Bereich auf der Registerkarte **Eigenschaften** die Liste der Optionen unter **Layout**, und wählen Sie dann die Option aus, die nur einen Titel anzeigt.
 
     ![Layout auswählen, das nur von Titeln ausgeht](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Neben **Felder**Option **bearbeiten**, und wählen Sie dann auf den Abwärtspfeil für das Feld "Titel" ein.
+1. Wählen Sie neben **Felder**die Option **Bearbeiten**aus, und klicken Sie dann auf den Pfeil nach unten für das Feld Titel.
 
     Der Name dieses Steuerelements endet in einer Zahl, z.B. **Titel1**, die Zahl unterscheidet sich jedoch basierend auf anderen Aktionen, die Sie möglicherweise ausgeführt haben.
 
-1. Wählen Sie in der Liste der Optionen, **Kontoname**, und schließen Sie dann die **Daten** Bereich.
+1. Wählen Sie in der Liste der Optionen **Kontoname**aus, und schließen Sie dann den Bereich **Daten** .
 
     Der Katalog zeigt den Namen jedes Kontos an.
 
@@ -96,7 +95,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 1. Kopieren Sie diese Formel, und fügen Sie sie in die Bearbeitungsleiste ein.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Mit Verwendung dieser Formel stellen Sie Folgendes sicher:
 
@@ -143,7 +142,7 @@ Wenn die Geräte Ihrer Benutzer weder über Touchscreens noch Mausräder verfüg
 
     ![Katalog auswählen](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. Festlegen des Katalogs **scrollleiste anzeigen** Eigenschaft **"true"**.
+1. Legen Sie die **Bild Lauf Leiste** -Eigenschaft der Galerie auf **true**fest.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

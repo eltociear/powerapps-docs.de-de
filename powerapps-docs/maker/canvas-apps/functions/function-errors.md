@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551125"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992792"
 ---
 # <a name="errors-function-in-powerapps"></a>Funktion „Errors“ in PowerApps
 Enthält Fehlerinformationen zu vorherigen Änderungen an einer [Datenquelle](../working-with-data-sources.md).
@@ -27,9 +26,9 @@ Enthält Fehlerinformationen zu vorherigen Änderungen an einer [Datenquelle](..
 ## <a name="overview"></a>Übersicht
 Es kann zu Fehlern kommen, wenn der [Datensatz](../working-with-tables.md#records) einer Quelle geändert wird.  Dafür gibt viele Ursachen, wie z.B. einen Netzwerkausfall, unzureichende Berechtigungen oder Bearbeitungskonflikte.  
 
-Die **[Patch](function-patch.md)**-Funktion und andere Datenfunktionen geben Fehler nicht direkt zurück. Stattdessen geben sie das Ergebnis des Vorgangs zurück. Nachdem eine Datenfunktion ausgeführt wurde, können Sie mithilfe der **Errors**-Funktion die Details der Fehler abrufen.  Suchen Sie über die **[IsEmpty]**-Funktion in der Formel **IsEmpty ( Errors (...))**  nach Fehlern.
+Die **[Patch](function-patch.md)** -Funktion und andere Datenfunktionen geben Fehler nicht direkt zurück. Stattdessen geben sie das Ergebnis des Vorgangs zurück. Nachdem eine Datenfunktion ausgeführt wurde, können Sie mithilfe der **Errors**-Funktion die Details der Fehler abrufen.  Suchen Sie über die **[IsEmpty]** -Funktion in der Formel **IsEmpty ( Errors (...))**  nach Fehlern.
 
-Sie können einige Fehler im Vorfeld vermeiden, wenn Sie die **[Validate](function-validate.md)** und die **[DataSourceInfo](function-datasourceinfo.md)**-Funktionen nutzen.  Weitere Informationen dazu, wie Sie mit Fehler umgehen oder sie vermeiden können, finden Sie unter [Working with data sources (Arbeiten mit Datenquellen)](../working-with-data-sources.md).
+Sie können einige Fehler im Vorfeld vermeiden, wenn Sie die **[Validate](function-validate.md)** und die **[DataSourceInfo](function-datasourceinfo.md)** -Funktionen nutzen.  Weitere Informationen dazu, wie Sie mit Fehler umgehen oder sie vermeiden können, finden Sie unter [Working with data sources (Arbeiten mit Datenquellen)](../working-with-data-sources.md).
 
 ## <a name="description"></a>Beschreibung
 Die **Errors**-Funktion gibt eine [Tabelle](../working-with-tables.md) von Fehlern mit den folgenden [Spalten](../working-with-tables.md#columns) zurück:
@@ -41,7 +40,7 @@ Die **Errors**-Funktion gibt eine [Tabelle](../working-with-tables.md) von Fehle
 
 | ErrorKind | Beschreibung |
 | --- | --- |
-| ErrorKind.Conflict |Am selben Datensatz wurde eine andere Änderung vorgenommen, die zu einem Änderungskonflikt geführt hat.  Verwenden Sie die **[Refresh](function-refresh.md)**-Funktion, um den Datensatz zu laden, und wiederholen Sie die Änderung. |
+| ErrorKind.Conflict |Am selben Datensatz wurde eine andere Änderung vorgenommen, die zu einem Änderungskonflikt geführt hat.  Verwenden Sie die **[Refresh](function-refresh.md)** -Funktion, um den Datensatz zu laden, und wiederholen Sie die Änderung. |
 | ErrorKind.ConstraintViolation |Mindestens eine Einschränkung wurde verletzt. |
 | ErrorKind.CreatePermission |Es wurde versucht, einen Datensatz zu erstellen, und der aktuelle Benutzer verfügt nicht über die Berechtigung zum Erstellen von Datensätzen. |
 | ErrorKind.DeletePermission |Es wurde versucht, einen Datensatz zu löschen, und der aktuelle Benutzer verfügt nicht über die Berechtigung zum Löschen von Datensätzen. |
@@ -59,10 +58,10 @@ Fehler können für die gesamte Datenquelle oder nur für eine ausgewählte Zeil
 
 **[Patch](function-patch.md)** oder eine andere Datenfunktion können einen Wert *blank* zurückgeben, wenn z.B. ein Datensatz nicht erstellt werden konnte. Sie können den Wert *Blank* an **Errors** übergeben, und es werden entsprechende Fehlerinformationen in diesen Fällen zurückgeben.  Bei einer späteren Verwendung der Datenfunktionen auf der gleichen Datenquelle werden diese Fehlerinformationen gelöscht.
 
-Wenn keine Fehler vorliegen, ist die Tabelle, die **Errors** zurückgibt, [leer](function-isblank-isempty.md) und kann mit der **[IsEmpty](function-isblank-isempty.md)**-Funktion getestet werden.
+Wenn keine Fehler vorliegen, ist die Tabelle, die **Errors** zurückgibt, [leer](function-isblank-isempty.md) und kann mit der **[IsEmpty](function-isblank-isempty.md)** -Funktion getestet werden.
 
 ## <a name="syntax"></a>Syntax
-**Errors**( *DataSource* [; *Record* ] )
+**Errors**( *DataSource* [, *Record* ] )
 
 * *DataSource*: erforderlich. Die Datenquelle, für die Fehler zurückgegeben werden sollen.
 * *Record*: optional.  Ein bestimmter Datensatz, für den Fehler zurückgegeben werden sollen. Wenn Sie dieses Argument nicht angeben, gibt die Funktion für die gesamte Datenquelle Fehler zurück.
@@ -75,33 +74,33 @@ In diesem Beispiel arbeiten wir mit der Datenquelle **IceCream**:
 
 Über die App lädt ein Benutzer den Schokoladendatensatz in ein Dateneingabeformular und ändert anschließend den Wert für **Quantity** auf 90.  Der Datensatz, mit dem gearbeitet wird, befindet sich in der [Kontextvariablen](../working-with-variables.md#use-a-context-variable) **EditRecord**:
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream; Flavor = "Chocolate" ) ) } )**
+* **updatecontext ({EditRecord: First (Filter (icecream, Flavor = "Chocolate"))})**
 
-Für diese Änderung in der Datenquelle wird die **[Patch](function-patch.md)**-Funktion verwendet:
+Für diese Änderung in der Datenquelle wird die **[Patch](function-patch.md)** -Funktion verwendet:
 
-* **Patch( IceCream; EditRecord; Gallery.Updates )**
+* **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-wo **Gallery.Updates** ergibt **{Quantity: 90}**, da nur die **Menge** -Eigenschaft geändert wurde.
+Where **Gallery. Updates** ergibt **{Menge: 90}** , da nur die Eigenschaft " **Menge** " geändert wurde.
 
-Leider hat eine andere Person kurz vor dem Aufrufen der **[Patch](function-patch.md)**-Funktion den Wert für **Quantity** für Schokolade auf 80 geändert.  PowerApps erkennt dies und verhindert einen Änderungskonflikt.  Sie können dies anhand der folgenden Formel überprüfen:
+Leider hat eine andere Person kurz vor dem Aufrufen der **[Patch](function-patch.md)** -Funktion den Wert für **Quantity** für Schokolade auf 80 geändert.  PowerApps erkennt dies und verhindert einen Änderungskonflikt.  Sie können dies anhand der folgenden Formel überprüfen:
 
-* **IsEmpty( Errors( IceCream; EditRecord ) )**
+* **IsEmpty( Errors( IceCream, EditRecord ) )**
 
 Diese gibt **FALSE** zurück, da die **Errors**-Funktion die folgende Tabelle zurückgegeben hat:
 
 | Datensatz | Spalte | Nachricht | Fehler |
 | --- | --- | --- | --- |
-| {Geschmacksrichtung: "Schokolade", Menge: 100 } |*blank* |„Another user has modified the record that you're trying to modify. (Ein anderer Benutzer hat den Datensatz geändert, den Sie gerade ändern möchten.“) Please reload the record and try again.“ (Laden Sie den Datensatz neu, und versuchen Sie es erneut.) |ErrorKind.Conflict |
+| Tee "Chocolate", Menge: 100} |*blank* |„Another user has modified the record that you're trying to modify. (Ein anderer Benutzer hat den Datensatz geändert, den Sie gerade ändern möchten.“) Please reload the record and try again.“ (Laden Sie den Datensatz neu, und versuchen Sie es erneut.) |ErrorKind.Conflict |
 
 Sie können eine Bezeichnung auf dem Formular platzieren, um dem Benutzer diesen Fehler anzeigen.
 
-* Um den Fehler anzuzeigen, legen Sie die Bezeichnung der  **[Text](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:<br>
-  **Label.Text = First(Errors( IceCream; EditRecord )).Message**
+* Um den Fehler anzuzeigen, legen Sie die Bezeichnung der  **[Text](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
+  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 Sie können auch eine **Reload**-Schaltfläche zum erneuten Laden im Formular hinzufügen, damit der Benutzer den Konflikt effizient beheben kann.
 
-* Um die Schaltfläche nur dann anzuzeigen, wenn ein Konflikt aufgetreten ist, legen Sie die **[Visible](../controls/properties-core.md)**-Eigenschaft der Schaltfläche auf diese Formel fest:<br>
-    **!IsEmpty( Lookup( Errors( IceCream; EditRecord ); Error = ErrorKind.Conflict ) )**
-* Sie können die Änderung rückgängig machen, für die der Benutzer die Schaltfläche auswählt, indem Sie die **[OnSelect](../controls/properties-core.md)**-Eigenschaft auf diese Formel festlegen:<br>
-    **ReloadButton.OnSelect = Revert( IceCream; EditRecord )**
+* Um die Schaltfläche nur dann anzuzeigen, wenn ein Konflikt aufgetreten ist, legen Sie die **[Visible](../controls/properties-core.md)** -Eigenschaft der Schaltfläche auf diese Formel fest:<br>
+    **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
+* Sie können die Änderung rückgängig machen, für die der Benutzer die Schaltfläche auswählt, indem Sie die **[OnSelect](../controls/properties-core.md)** -Eigenschaft auf diese Formel festlegen:<br>
+    **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 

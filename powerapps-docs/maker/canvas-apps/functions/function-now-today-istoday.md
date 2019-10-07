@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/09/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 748f76835e9a66281f4723b88ed7249a7a07e091
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: bc3f882a25c5a0588e2be1eac4668c53ebc91e64
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544158"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992574"
 ---
 # <a name="now-today-and-istoday-functions-in-powerapps"></a>Die Funktionen „Now“, „Today“ und „IsToday“ in PowerApps
 Gibt das aktuelle Datum und die Uhrzeit zurück und prüft, ob ein Datum/Uhrzeit-Wert heute ist
@@ -42,7 +41,7 @@ Wird eine veränderliche Funktion in einer Datenflussformel verwendet, gibt sie 
 
 Ein Bezeichnungssteuerlement mit **Label1.Text = Now()** ändert sich nicht, solange die App aktiv ist.  Neue Werte werden nur beim Schließen und erneuten Öffnen der App generiert.
 
-Die Funktion wird neu ausgewertet, wenn sie Teil einer Formel ist, in der sich etwas anderes geändert hat.  Wenn in das Beispiel z.B. ein Schieberegler-Steuerelement mit **Label1.Text = DateAdd( Now(); Slider1.Value; Minutes )** aufgenommen wird, wird die aktuelle Uhrzeit jedes Mal abgerufen, wenn sich der Wert des Schieberegler-Steuerelements ändert und der Eigenschaftentext der Bezeichnung neu ausgewertet wird.
+Die Funktion wird neu ausgewertet, wenn sie Teil einer Formel ist, in der sich etwas anderes geändert hat.  Wenn in das Beispiel z.B. ein Schieberegler-Steuerelement mit **Label1.Text = DateAdd( Now(), Slider1.Value, Minutes )** aufgenommen wird, wird die aktuelle Uhrzeit jedes Mal abgerufen, wenn sich der Wert des Schieberegler-Steuerelements ändert und der Eigenschaftentext der Bezeichnung neu ausgewertet wird.
 
 Bei der Verwendung in einer [Verhaltensformel](../working-with-formulas-in-depth.md) werden veränderliche Funktionen immer zusammen mit der Verhaltensformel ausgewertet.  Ein Beispiel finden Sie weiter unten.
 
@@ -60,24 +59,24 @@ Für die Beispiele in diesem Abschnitt ist die aktuelle Uhrzeit **3:59 Uhr** am 
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Text( Now(); "mm/dd/yyyy hh:mm:ss" )** |Ruft das aktuelle Datum und die Uhrzeit ab und zeigt sie als Zeichenfolge an |„02/12/2015 03:59:00“ |
-| **Text( Today(); "mm/dd/yyyy hh:mm:ss" )** |Ruft nur das aktuelle Datum ab, sodass der Zeitanteil auf Mitternacht festgelegt bleibt, und zeigt dieses als Zeichenfolge an |„02/12/2015 00:00:00“ |
+| **Text( Now(), "mm/dd/yyyy hh:mm:ss" )** |Ruft das aktuelle Datum und die Uhrzeit ab und zeigt sie als Zeichenfolge an |„02/12/2015 03:59:00“ |
+| **Text( Today(), "mm/dd/yyyy hh:mm:ss" )** |Ruft nur das aktuelle Datum ab, sodass der Zeitanteil auf Mitternacht festgelegt bleibt, und zeigt dieses als Zeichenfolge an |„02/12/2015 00:00:00“ |
 | **IsToday( Now() )** |Prüft, ob das aktuelle Datum und die Uhrzeit zwischen Mitternacht heute und Mitternacht morgen liegen |**TRUE** |
 | **IsToday( Today() )** |Prüft, ob das aktuelle Datum zwischen Mitternacht heute und Mitternacht morgen liegt |**TRUE** |
-| **Text( DateAdd( Now(); 12 ); "mm/dd/yyyy hh:mm:ss" )** |Ruft das aktuelle Datum und die Uhrzeit ab, fügt dem aktuellen Datum 12 Tage hinzu und zeigt es als Zeichenfolge an |„02/24/2015 03:59:00“ |
-| **Text( DateAdd( Today(); 12 ); "mm/dd/yyyy hh:mm:ss" )** |Ruft das aktuelle Datum ab, das Ergebnis 12 Tage hinzugefügt, und zeigt ihn als Zeichenfolge |„02/24/2015 00:00:00“ |
-| **IsToday( DateAdd( Now(); 12 ) )** |Prüft, ob das aktuelle Datum und die Uhrzeit plus 12 Tage zwischen Mitternacht heute und Mitternacht morgen liegen |**FALSE** |
-| **IsToday( DateAdd( Today(); 12 ) )** |Prüft, ob das aktuelle Datum plus 12 Tage zwischen Mitternacht heute und Mitternacht morgen liegt |**FALSE** |
+| **Text( DateAdd( Now(), 12 ), "mm/dd/yyyy hh:mm:ss" )** |Ruft das aktuelle Datum und die Uhrzeit ab, fügt dem aktuellen Datum 12 Tage hinzu und zeigt es als Zeichenfolge an |„02/24/2015 03:59:00“ |
+| **Text( DateAdd( Today(), 12 ), "mm/dd/yyyy hh:mm:ss" )** |Ruft das aktuelle Datum ab, das Ergebnis 12 Tage hinzugefügt, und zeigt ihn als Zeichenfolge |„02/24/2015 00:00:00“ |
+| **IsToday( DateAdd( Now(), 12 ) )** |Prüft, ob das aktuelle Datum und die Uhrzeit plus 12 Tage zwischen Mitternacht heute und Mitternacht morgen liegen |**FALSE** |
+| **IsToday( DateAdd( Today(), 12 ) )** |Prüft, ob das aktuelle Datum plus 12 Tage zwischen Mitternacht heute und Mitternacht morgen liegt |**FALSE** |
 
 #### <a name="display-a-clock-that-updates-in-real-time"></a>Anzeigen einer Uhr, die sich in Echtzeit aktualisiert
 
-1. Fügen Sie ein **[Timer](../controls/control-timer.md)**-Steuerelement hinzu, und legen Sie dessen Eigenschaft **Dauer** auf **1000** und die Eigenschaft **Wiederholen** auf **TRUE** fest.
+1. Fügen Sie ein **[Timer](../controls/control-timer.md)** -Steuerelement hinzu, und legen Sie dessen Eigenschaft **Dauer** auf **1000** und die Eigenschaft **Wiederholen** auf **TRUE** fest.
 
     Der Timer wird eine Sekunde lang ausgeführt, beginnt automatisch von Neuem und setzt dieses Muster fort. 
 
 1. Legen Sie die Eigenschaft **OnTimerEnd** des Steuerelements auf diese Formel fest:
 
-    **Set( CurrentTime; Now() )**
+    **Set( CurrentTime, Now() )**
 
     Jedes Mal, wenn der Timer (nach einer Sekunde) neu startet, legt diese Formel die globale Variable **CurrentTime** auf den aktuellen Wert der **Now**-Funktion fest.
 
@@ -85,9 +84,9 @@ Für die Beispiele in diesem Abschnitt ist die aktuelle Uhrzeit **3:59 Uhr** am 
 
 1. Fügen Sie ein **[Bezeichnungssteuerelement](../controls/control-text-box.md)** hinzu, und legen Sie dessen **Text**-Eigenschaft auf diese Formel fest:
 
-    **Text( CurrentTime; LongTime24 )**
+    **Text( CurrentTime, LongTime24 )**
 
-    Formatieren Sie das Datum und die Uhrzeit mithilfe der **[Text](function-text.md)**-Funktion nach Bedarf, oder legen Sie diese Eigenschaft einfach auf **CurrentTime** fest. Es werden dann nur noch Minuten und keine Sekunden mehr angezeigt.
+    Formatieren Sie das Datum und die Uhrzeit mithilfe der **[Text](function-text.md)** -Funktion nach Bedarf, oder legen Sie diese Eigenschaft einfach auf **CurrentTime** fest. Es werden dann nur noch Minuten und keine Sekunden mehr angezeigt.
 
     ![Anzeige mit einem Bezeichnungssteuerelement, dessen Eigenschaft „Text“ auf „Text( CurrentTime, LongTime24)“ festgelegt ist](media/function-now-today-istoday/now-use-currenttime.png)
 
@@ -101,8 +100,8 @@ Für die Beispiele in diesem Abschnitt ist die aktuelle Uhrzeit **3:59 Uhr** am 
 
     Der Timer ist nicht sichtbar und startet automatisch.
 
-1. Legen Sie die **[OnStart](../controls/control-screen.md)**-Eigenschaft des Bildschirms fest, damit die Variable **CurrentTime** wie in diesem Beispiel über einen gültigen Wert verfügt:
+1. Legen Sie die **[OnStart](../controls/control-screen.md)** -Eigenschaft des Bildschirms fest, damit die Variable **CurrentTime** wie in diesem Beispiel über einen gültigen Wert verfügt:
 
-    **Set(CurrentTime; Now())**
+    **Set(CurrentTime, Now())**
 
     Sobald die App gestartet wird (bevor der Timer eine ganze Sekunde lang ausgeführt wird), wird die Bezeichnung angezeigt.

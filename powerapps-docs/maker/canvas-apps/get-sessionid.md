@@ -1,24 +1,24 @@
 ---
 title: Abrufen einer Sitzungs-ID oder einer Canvas-App-ID | Microsoft-Dokumentation
 description: Schritte zum Abrufen einer Sitzungs-ID oder einer Canvas-App-ID für die Problembehandlung in PowerApps
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/18/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 67cfe4ac6c53797e6a18a68d3fbcf29b088f3da8
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61554028"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990196"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>Abrufen einer Sitzungs-ID oder einer Canvas-App-ID
 Wenn mit einer Canvas-App, die in PowerApps erstellt wurde, ein Problem auftritt, können Sie Microsoft helfen, das Problem wesentlich effizienter zu beheben. Stellen Sie hierzu eine Sitzungs-ID, eine App-ID oder beides für das jeweilige Problem bereit.

@@ -1,24 +1,24 @@
 ---
 title: Generieren einer Canvas-App aus Excel | Microsoft-Dokumentation
 description: Verwenden von PowerApps zum automatischen Generieren einer Canvas-App mithilfe einer Excel-Datei, die in einem Cloudspeicherkonto gespeichert ist
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/14/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab85f09ebf88c30b35c963242895cd74ca6a966
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 576e61e6e4ea1aad317fdec8f49f76bfcd1e0b6a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555047"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990263"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Generieren einer Canvas-App aus Excel in PowerApps
 
@@ -67,49 +67,49 @@ Laden Sie die Datei [Flooring Estimates](https://az787822.vo.msecnd.net/document
 
 1. Filtern Sie die Liste, indem Sie Zeichen in das Suchfeld eingeben und einfügen.
 
-    Beispielsweise geben oder fügen Sie **Honig** dem einzigen Eintrag für die angezeigt wird, dass die Zeichenfolge im Namen des Produkts, Kategorie oder Übersicht angezeigt wird.
+    Geben Sie z. b. **Honey** ein, oder fügen Sie ihn ein, um den einzigen Datensatz anzuzeigen, für den diese Zeichenfolge im Produktnamen, der Kategorie oder der Übersicht angezeigt wird.
 
-    ![Filterbeispiel](./media/get-started-create-from-data/filter-example.png)
+    ![Filter Beispiel](./media/get-started-create-from-data/filter-example.png)
 
-1. Fügen Sie einen Eintrag hinzu:
+1. Einen Datensatz hinzufügen:
 
-    1. Wählen Sie das Pluszeichen.
+    1. Wählen Sie das Plus Symbol aus.
 
         ![Pluszeichen](./media/get-started-create-from-data/plus-icon.png)
 
-    1. Fügen Sie beliebige Daten, die Sie möchten, und wählen Sie dann auf das Häkchen, um die Änderungen zu speichern.
+    1. Fügen Sie beliebige Daten hinzu, und klicken Sie dann auf das Häkchensymbol, um die Änderungen zu speichern.
 
         ![Symbol "Speichern"](./media/get-started-create-from-data/save-icon.png)
 
-1. Bearbeiten eines Datensatzes:
+1. Einen Datensatz bearbeiten:
 
-    1. Wählen Sie den Pfeil für den Datensatz, den Sie bearbeiten möchten.
+    1. Wählen Sie den Pfeil für den Datensatz aus, den Sie bearbeiten möchten.
 
         ![Pfeil „Weiter“](./media/get-started-create-from-data/next-arrow.png)
 
-    1. Wählen Sie das Stiftsymbol.
+    1. Wählen Sie das Stift Symbol aus.
 
         ![Stiftsymbol](./media/get-started-create-from-data/pencil-icon.png)
 
-    1. Aktualisieren Sie ein oder mehrere Felder aus, und wählen Sie dann auf das Häkchen, um die Änderungen zu speichern.
+    1. Aktualisieren Sie mindestens ein Feld, und klicken Sie dann auf das Häkchensymbol, um die Änderungen zu speichern.
 
         ![Symbol "Speichern"](./media/get-started-create-from-data/save-icon.png)
 
-        Wählen Sie alternativ das Symbol "Abbrechen", um Ihre Änderungen zu verwerfen.
+        Wählen Sie alternativ das Symbol Abbrechen aus, um die Änderungen zu verwerfen.
 
-1. Löschen Sie Datensatz:
+1. Löschen eines Datensatzes:
 
-    1. Wählen Sie den weiter-Pfeil für den Datensatz, den Sie löschen möchten.
+    1. Wählen Sie den nächsten Pfeil für den Datensatz aus, den Sie löschen möchten.
 
         ![Pfeil „Weiter“](./media/get-started-create-from-data/next-arrow.png)
 
-    1. Wählen Sie das Papierkorbsymbol.
+    1. Wählen Sie das Papierkorb Symbol aus.
 
         ![Papierkorbsymbol](./media/get-started-create-from-data/trash-icon.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Passen Sie den Standardbildschirm zum Durchsuchen an Ihre Anforderungen an. Sie können z. B. sortieren und Filtern Sie die Liste nach Produktname nur, nicht auf Kategorie oder Übersicht.
+Passen Sie den Standardbildschirm zum Durchsuchen an Ihre Anforderungen an. Beispielsweise können Sie die Liste nur nach Produktnamen sortieren und Filtern, nicht nach Kategorie oder Übersicht.
 
 > [!div class="nextstepaction"]
 > [Anpassen des Standardbildschirms zum Durchsuchen](customize-layout-sharepoint.md)

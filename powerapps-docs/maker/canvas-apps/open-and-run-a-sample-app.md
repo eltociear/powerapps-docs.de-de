@@ -1,26 +1,26 @@
 ---
 title: Verwenden einer Beispiel-App | Microsoft-Dokumentation
 description: Ausführliche Anleitungen zum Erstellen einer Canvas-App auf Grundlage eines Beispiels in PowerApps
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
-ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
+ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65546870"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989703"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Erstellen Sie eine Canvas-app aus einem Beispiel in PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Erstellen einer Canvas-App aus einem Beispiel in powerapps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.
 
 Jedes Beispiel stellt ein reales Szenario dar, verwendet jedoch fiktive Daten. Sie benötigen ein Cloudspeicherkonto wie Dropbox, Google Drive oder OneDrive, um diese Daten zu speichern.
@@ -64,7 +64,7 @@ Wenn Sie über keine Lizenz für PowerApps verfügen, können Sie sich [kostenlo
 1. Klicken oder tippen Sie am linken Rand auf **Speichern**. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-In diesem Schnellstart haben Sie eine eigene App erstellt, die auf einem Beispiel basiert, das fiktive Daten verwendet, die in Ihrem Cloudkonto gespeichert sind. Weitere Informationen, die lernen, wie Sie eine app erstellen können Sie eine app basierend auf Daten aus anderen Quellen wie Common Data Service, SharePoint oder Excel automatisch generieren.
+In diesem Schnellstart haben Sie eine eigene App erstellt, die auf einem Beispiel basiert, das fiktive Daten verwendet, die in Ihrem Cloudkonto gespeichert sind. Wenn Sie mehr erfahren möchten, wie Sie eine APP erstellen, können Sie auch automatisch eine APP auf der Grundlage von Daten in anderen Quellen generieren, z. b. Common Data Service, SharePoint oder Excel.
 
 > [!div class="nextstepaction"]
 > [Generate an app (Generieren einer App)](data-platform-create-app.md)

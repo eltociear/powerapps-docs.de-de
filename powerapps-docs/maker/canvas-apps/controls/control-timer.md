@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5d20e2324f2efb4f866ed4fc183f289733c10a41
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 00863f00768a0c4eec95ecec778c2da219fd08d3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560465"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986182"
 ---
 # <a name="timer-control-in-powerapps"></a>Timer-Steuerelement in PowerApps
 Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse Zeit verstrichen ist.
@@ -28,7 +27,7 @@ Ein Steuerelement, das bestimmen kann, wie Ihre App reagiert, wenn eine gewisse 
 Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder andere Eigenschaften eines Steuerelements ändern, nachdem eine bestimmte Zeit verstrichen ist.
 
 > [!NOTE]
-> Führen in PowerApps Studio Zeitgeber nur im Vorschaumodus.
+> In PowerApps Studio werden Timer nur im Vorschaumodus ausgeführt.
 
 
 ## <a name="key-properties"></a>Haupteigenschaften
@@ -69,7 +68,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)**  – die Schriftbreite des Texts in einem Steuerelement: **Fett**, **Semibold**, **Normal**, oder **heller**.
+**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -126,7 +125,7 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie die Eigenschaft **Duration** für den Timer auf **10000** und seine Eigenschaften **Repeat** und **Autostart** auf **TRUE** fest.
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:
-   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Anzahl verbleibender Sekunden: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-round.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
@@ -139,37 +138,37 @@ Timer können, z.B. bestimmen, wie lange ein Steuerelement angezeigt wird, oder 
 2. Legen Sie für diese Eigenschaften des Timers Folgendes fest: **Dauer** = **5000**, **Wiederholen** = **TRUE** und **[Text](properties-core.md)** = **Toggle animation** (Umschalter-Animation).
 3. (optional) Erhöhen Sie die Lesbarkeit des Timers durch Festlegen seiner Eigenschaft **[Height](properties-size-location.md)** auf **160**, seiner Eigenschaft **[Width](properties-size-location.md)** auf **600**, und seiner Eigenschaft **[Size](properties-text.md)** auf **60**.
 4. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf **Welcome!** fest und legen Sie dessen Eigenschaft **[Color](properties-color-border.md)** auf diese Formel fest:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Benötigen Sie weitere Informationen zur **[ColorFade](../functions/function-colors.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
 5. Klicken Sie auf die Timer-Schaltfläche, um die Animation zu starten oder zu beenden. Der Text in der Bezeichnung wird weiß, kehrt zur vollständigen Intensität zurück und wiederholt den Prozess.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
-Dieselben Richtlinien wie für die **[Schaltfläche](control-button.md)** Steuerelement gelten für die **Timer** steuern, wenn der Benutzer mit ihr interagieren können.
+Die gleichen Richtlinien für das **[Schalt](control-button.md)** Flächen-Steuerelement gelten für das **Timer** -Steuerelement, wenn Benutzer damit interagieren können.
 
-### <a name="background-timers"></a>Hintergrund-Timer
-Hintergrund-Zeitgeber automatisch ausgeführt und sind ausgeblendet. Verwenden sie eine untergeordnete Rolle, wobei die verstrichene Zeit von geringem Interesse an den Benutzer. Sie können z. B. einmal pro Minute Daten zu aktualisieren oder eine Meldung nur für einen bestimmten Zeitraum anzeigen.
+### <a name="background-timers"></a>Hintergrundtimer
+Hintergrundtimer werden automatisch ausgeführt und sind ausgeblendet. Verwenden Sie Sie in einer unterstützenden Rolle, bei der die verstrichene Zeit für den Benutzer von geringem Interesse ist. Beispielsweise können Sie Daten jede Minute aktualisieren oder eine Benachrichtigungs Meldung nur für einen bestimmten Zeitraum anzeigen.
 
-Hintergrund-Timer müssen ihre **[Visible](properties-core.md)** Eigenschaft auf False festgelegt, damit sie von allen Benutzern ausgeblendet sind.
+Für Hintergrundtimer sollte die **[Visible](properties-core.md)** -Eigenschaft auf false festgelegt sein, damit Sie für alle Benutzer ausgeblendet werden.
 
-### <a name="timing-considerations"></a>Timing-Überlegungen
-Wenn eine **Timer** führt automatisch, überlegen Sie, ob es sich bei Benutzer haben ausreichend Zeit zum Lesen und reagieren bleibt. Tastatur und Bildschirm-Reader-Benutzern möglicherweise mehr Zeit, um auf ein zeitlich festgelegtes Ereignis zu reagieren.
+### <a name="timing-considerations"></a>Aspekte der zeitlichen Steuerung
+Wenn ein **Timer** automatisch ausgeführt wird, sollten Sie überprüfen, ob die Benutzer genug Zeit zum Lesen und Verwenden von Inhalt haben. Tastatur-und Bildschirm Lese Benutzer benötigen möglicherweise mehr Zeit, um auf ein Zeit gesteuerter Ereignis zu reagieren.
 
-Eine der folgenden Vorgehensweisen ist ausreichend:
-* Ermöglicht Benutzern die zeitlich begrenzte Ereignis abzubrechen.
-* Ermöglicht Benutzern das Zeitlimit anzupassen, bevor sie beginnt.
-* Warnen Sie 20 Sekunden vor Ablauf des Zeitlimits und bieten Sie eine einfache Möglichkeit, um den Grenzwert zu erweitern.
+Diese Strategien sind ausreichend:
+* Erlauben Sie Benutzern, das Zeitgesteuerte Ereignis abzubrechen.
+* Ermöglicht Benutzern das Anpassen des Zeitlimits vor Beginn.
+* Warnen Sie 20 Sekunden, bevor das Zeitlimit abläuft, und stellen Sie eine einfache Möglichkeit zum Erweitern des Limits bereit.
 
 Einige Szenarios sind von diesen Anforderungen ausgenommen. Weitere Informationen finden Sie in der englischsprachigen [WCAG 2.0-Richtlinie für Zeitlimits](https://www.w3.org/TR/WCAG20/#time-limits).
 
 ### <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
-* Wenn Sie Änderungen auf dem aktuellen Bildschirm von ein Timer ausgelöst wird, verwenden Sie eine [dynamischen Bereichs](../accessible-apps-live-regions.md) Sprachausgabe Benutzern mitteilen, was sich geändert.
+* Wenn ein Timer Änderungen auf dem aktuellen Bildschirm auslöst, verwenden Sie einen aktiven [Bereich](../accessible-apps-live-regions.md) , um den Benutzern von Benutzern mitzuteilen, was sich geändert hat.
 
     > [!NOTE]
-    > Wenn der Zeitgeber sichtbar ist und ausgeführt wird, wird die verstrichene Zeit alle fünf Sekunden die Sprachausgabe.
+    > Wenn der Timer sichtbar ist und ausgeführt wird, kündigen die Sprachausgabe alle fünf Sekunden die verstrichene Zeit an.
 
-* Verwenden Sie nicht die **[Text](properties-core.md)** Eigenschaft eines Steuerelements für zeitkritische und wichtige Informationen. Wird nicht die Sprachausgabe Änderungen  **[Text](properties-core.md)** .
+* Verwenden Sie die **[Text](properties-core.md)** -Eigenschaft eines-Steuer Elements nicht für Zeit empfindliche und wichtige Informationen. Bildschirm Ausgaben geben keine Änderungen an **[Text](properties-core.md)** an.
 * Für interaktive Timer:
     * Die **[Text](properties-core.md)** -Eigenschaft muss vorhanden sein.
-    * Erwägen Sie eine **[Bezeichnung](control-text-box.md)** -Steuerelement an die verstrichene Zeit. Mithilfe des **[Text](properties-core.md)** Eigenschaft, um den Benutzer anweisen, starten oder Beenden des Zeitgebers.
+    * Fügen Sie ein **[Label](control-text-box.md)** -Steuerelement hinzu, um die verstrichene Zeit anzuzeigen Verwenden Sie die **[Text](properties-core.md)** -Eigenschaft des Timers, um den Benutzer anzuweisen, den Timer zu starten oder anzuhalten.

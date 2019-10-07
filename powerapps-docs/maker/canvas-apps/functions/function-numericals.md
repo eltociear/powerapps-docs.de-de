@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95406bff477a4d84a6125225ffc1e158ffb8c19a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544072"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984421"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Funktionen „Abs“, „Exp“, „Ln“, „Power“ und „Sqrt“ in PowerApps
 Berechnen Absolutwerte, natürliche Logarithmen, Quadratwurzeln und die Ergebnisse der Potenzierung von *e* oder einer beliebigen Zahl zur angegebenen Potenz.
@@ -31,7 +30,7 @@ Die Funktion **Exp** gibt *e* zur Potenz ihres Arguments erhoben zurück.  Die t
 
 Die Funktion **Ln** gibt den natürlichen Logarithmus (zur Basis *e*) ihres Arguments zurück.
 
-Die Funktion **Power** gibt eine zu einer Potenz erhobene Zahl zurück.  Sie ist mit der Verwendung des [**^**-Operators](operators.md) gleichbedeutend.
+Die Funktion **Power** gibt eine zu einer Potenz erhobene Zahl zurück.  Sie ist mit der Verwendung des [ **^** -Operators](operators.md) gleichbedeutend.
 
 Die Funktion **Sqrt** gibt die Zahl zurück, die mit sich selbst multipliziert gleich ihrem Argument ist.
 
@@ -44,7 +43,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 
 * *Number*: erforderlich. Zahl, die verarbeitet wird.
 
-**Power**( *Basis*; *Exponent* )
+**Power**( *Basis*, *Exponent* )
 
 * *Basis*: erforderlich. Zu potenzierende Basiszahl.
 * *Exponent*: erforderlich. Der Exponent, zu dem die Basiszahl potenziert wird.
@@ -61,7 +60,7 @@ Wenn ein Argument zu einem nicht definierten Wert führen würde, ist das Ergebn
 | **Abs( -55 )** |Gibt die Zahl ohne das negative Vorzeichen zurück. |55 |
 | **Exp( 2 )** |Gibt die 2. Potenz von *e* zurück, also *e* \* *e*. |7,389056... |
 | **Ln( 100 )** |Gibt den natürlichen Logarithmus (zur Basis *e*) der Zahl 100 zurück. |4,605170... |
-| **Power( 5;; 3 )** |Gibt die 3. Potenz von 5 zurück, also 5 \* 5 \* 5. |125 |
+| **Power( 5; 3 )** |Gibt die 3. Potenz von 5 zurück, also 5 \* 5 \* 5. |125 |
 | **Sqrt( 9 )** |Gibt die Zahl zurück, die mit sich selbst multipliziert 9 ergibt. |3 |
 
 ### <a name="single-column-table"></a>Einspaltige Tabelle
@@ -77,8 +76,8 @@ Die Beispiele in diesem Abschnitt verwenden eine [Datenquelle](../working-with-d
 | **Sqrt(&nbsp;Werttabelle&nbsp;)** |Gibt die Quadratwurzel der einzelnen Zahlen in der Tabelle zurück. |![](media/function-numericals/values-sqrt.png) |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
-1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)**-Steuerelement hinzu, und benennen Sie es **Source**.
-2. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](../controls/properties-core.md)**-Eigenschaft auf diese Formel fest:
+1. Fügen Sie ein **[Texteingabe](../controls/control-text-input.md)** -Steuerelement hinzu, und benennen Sie es **Source**.
+2. Fügen Sie ein **Label**-Steuerelement (Bezeichnung) hinzu, und legen Sie dessen **[Text](../controls/properties-core.md)** -Eigenschaft auf diese Formel fest:
    <br>
    **Sqrt( Wert( Quelle.Text ) )**
 3. Geben Sie eine Zahl in **Quelle** ein, und überprüfen Sie, ob das **Label**-Steuerelement (Bezeichnung) die Quadratwurzel der eingegebenen Zahl anzeigt.

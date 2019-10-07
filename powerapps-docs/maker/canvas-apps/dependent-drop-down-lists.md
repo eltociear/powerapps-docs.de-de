@@ -1,212 +1,211 @@
 ---
-title: Erstellen Sie eine abhängige Dropdown-Liste in einer Canvas-app | Microsoft-Dokumentation
-description: Erstellen Sie eine Dropdown-Liste, die filtert, eine andere Dropdown-Liste in einer Canvas-app in PowerApps.
+title: Erstellen einer abhängigen Dropdown Liste in einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen Sie in powerapps eine Dropdown Liste, die eine andere Dropdown Liste in einer Canvas-App filtert.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/04/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550792"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985752"
 ---
-# <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdownlisten in einer Canvas-app
+# <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Erstellen von abhängigen Dropdown Listen in einer Canvas-App
 
-Wenn Sie abhängige (oder cascading) Dropdown-Listen erstellen, wählen Benutzer eine Option in einer Liste, um Filteroptionen in einer anderen Liste. Viele Organisationen erstellen abhängige enthält Informationen zum Ausfüllen von Formularen effizienter. Z. B. Benutzer können auswählen, ein Land oder Region, um eine Liste von Orten zu filtern, oder Benutzer können wählen Sie eine Kategorie aus, um nur die Codes in dieser Kategorie anzuzeigen.
+Wenn Sie abhängige (oder kaskadierende) Dropdown Listen erstellen, wählen Benutzer eine Option in einer Liste aus, um die Optionen in einer anderen Liste zu filtern. Viele Organisationen erstellen abhängige Listen, damit Benutzer Formulare effizienter ausfüllen können. Beispielsweise können Benutzer ein Land oder eine Region zum Filtern einer Liste von Städten auswählen, oder Benutzer können eine Kategorie auswählen, um nur die Codes in dieser Kategorie anzuzeigen.
 
-Als bewährte Methode erstellen Sie eine Datenquelle für die Werte in der "Übergeordnet" und "Child" Listen (z. B. Länder/Regionen und Städten), die von der Datenquelle getrennt, mit denen Benutzer über die app aktualisiert. Wenn Sie diesen Ansatz verwenden, können Sie die derselben übergeordneten und untergeordneten Daten in mehr als eine app, und Sie können die Daten aktualisieren, ohne erneute Veröffentlichung der app oder apps, die sie verwenden. Erreichen Sie das gleiche Ergebnis mithilfe einer Sammlung oder eine statische Daten, aber es wird nicht empfohlen für Unternehmensszenarios.
+Es wird empfohlen, eine Datenquelle für die Werte in den Listen "Parent" und "Child" (z. b. Länder/Regionen und Städte) zu erstellen, die von der Datenquelle getrennt sind, die Benutzer mithilfe der APP aktualisieren. Wenn Sie diesen Ansatz verwenden, können Sie die gleichen über-und untergeordneten Daten in mehr als einer App verwenden, und Sie können diese Daten aktualisieren, ohne die APP oder die apps erneut zu veröffentlichen, die Sie verwenden. Sie können das gleiche Ergebnis mithilfe einer Sammlung oder statischer Daten erreichen, dies wird jedoch für Unternehmens Szenarios nicht empfohlen.
 
-Speichern Sie für das Szenario in diesem Thema Mitarbeiter senden Probleme, die eine **Incidents** Liste durch ein Formular. Mitarbeiter geben Sie nicht nur den Speicherort des Speichers auf dem der Fehler aufgetreten ist, sondern auch die Abteilung in diesen Speicherort. Nicht alle Speicherorte haben die gleichen Abteilungen, sodass eine **Speicherorte** Liste wird sichergestellt, dass die Mitarbeiter eine Abteilung für einen Standort angeben können, das diese Abteilung keine.
+Für das in diesem Thema **Vorkomm** Ende Szenario senden Mitarbeiter über ein Formular Probleme an eine Vorfall Liste. Mitarbeiter geben nicht nur den Speicherort des Speicher Orts an, an dem der Incident aufgetreten ist, sondern auch die Abteilung innerhalb des Standorts. Nicht alle Standorte verfügen über dieselben Abteilungen. Daher stellt die Liste der **Standorte** sicher, dass Mitarbeiter keine Abteilung für einen Standort angeben können, der nicht über diese Abteilung verfügt.
 
-In diesem Thema wird eine Microsoft SharePoint-Listen als Datenquellen verwendet, aber alle tabellarischen Datenquellen in gleicher Weise.
+In diesem Thema werden Microsoft SharePoint-Listen als Datenquellen verwendet, aber alle tabellarischen Datenquellen funktionieren auf dieselbe Weise.
 
 ## <a name="create-data-sources"></a>Erstellen von Datenquellen
 
-Ein **Speicherorte** Liste enthält die Abteilungen an jedem Standort.
+In der Liste der Speicher **Orte** werden die Abteilungen an jedem Standort angezeigt.
 
 | Location | Department |
 |----------------|------------------|
-| Eganville      | Bakery           |
-| Eganville      | Deli             |
-| Eganville      | Zu erzeugen          |
-| Renfrew        | Bakery           |
-| Renfrew        | Deli             |
-| Renfrew        | Zu erzeugen          |
+| Eganville      | Bäckereien           |
+| Eganville      | Schalter             |
+| Eganville      | Produktion          |
+| Renfrew        | Bäckereien           |
+| Renfrew        | Schalter             |
+| Renfrew        | Produktion          |
 | Renfrew        | Apotheken         |
-| Renfrew        | Blumen           |
-| Pembroke       | Bakery           |
-| Pembroke       | Deli             |
-| Pembroke       | Zu erzeugen          |
-| Pembroke       | Blumen           |
+| Renfrew        | Miger           |
+| "Pembroke"       | Bäckereien           |
+| "Pembroke"       | Schalter             |
+| "Pembroke"       | Produktion          |
+| "Pembroke"       | Miger           |
 
-Ein **Incidents** Liste zeigt Kontaktinformationen und Informationen über jeden Vorfall. Erstellen Sie die Spalte "Date" als eine **Datum** Spalte, aber erstellen Sie die anderen Spalten als **Textzeile** Spalten, die Konfiguration vereinfachen und zu vermeiden [Delegierung](./delegation-overview.md) Warnungen im Microsoft PowerApps.
+In **einer Vorfall** Liste werden Kontaktinformationen und Informationen zu den einzelnen Vorfällen angezeigt. Erstellen Sie die Datums Spalte als **Datums** Spalte, erstellen Sie aber die anderen Spalten als **einzelne Zeile mit Text** Spalten, um die Konfiguration zu vereinfachen und [Delegierungs](./delegation-overview.md) Warnungen in Microsoft PowerApps zu vermeiden.
 
 | Vorname | Nachname | Telefonnummer     | Location | Department | Beschreibung       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
-| Tonya       | Cortez   | (206) 555 - 1022 | Eganville      | Zu erzeugen    | Ich hatte ein Problem mit...   | 2/12/2019 |
-| Moses     | Laflamme     | (425) 555 - 1044 | Renfrew        | Blumen     | Ein Problem habe... | 2/13/2019 |
+| Tonya       | Cortez   | (206) 555-1022 | Eganville      | Produktion    | Ich hatte ein Problem mit...   | 2/12/2019 |
+| Moses     | Laflamme     | (425) 555-1044 | Renfrew        | Miger     | Es ist ein Problem aufgetreten... | 2/13/2019 |
 
-Standardmäßig gehören benutzerdefinierte SharePoint-Listen ein **Titel** Spalte an, dass Sie nicht umbenennen oder entfernen, und sie muss Daten enthalten, bevor Sie ein Element in der Liste speichern können. Die Spalte so konfigurieren, dass er nicht, dass Daten erfordert:
+Standardmäßig enthalten benutzerdefinierte SharePoint-Listen eine **Titel** Spalte, die Sie nicht umbenennen oder entfernen können, und Sie muss Daten enthalten, bevor Sie ein Element in der Liste speichern können. So konfigurieren Sie die Spalte so, dass keine Daten erforderlich sind:
 
-1. Wählen Sie das Zahnradsymbol in der Nähe der oberen rechten Ecke, und wählen Sie dann **Listeneinstellungen**.
-1. Auf der **Einstellungen** Seite **Titel** in der Liste der Spalten.
-1. Klicken Sie unter **diese Spalte muss Informationen enthalten**Option **keine**.
+1. Wählen Sie in der Nähe der oberen rechten Ecke das Zahnrad Symbol aus, und wählen Sie dann **Einstellungen auflisten**aus.
+1. Wählen Sie auf der Seite **Einstellungen** in der Liste der Spalten **Titel** aus.
+1. Wählen Sie unter **erfordert, dass diese Spalte Informationen enthält die**Option **Nein**aus.
 
-Nach dieser Änderung können Sie ignorieren die **Titel** Spalte, oder Sie können [entfernen](https://support.office.com/article/edit-a-list-column-in-sharepoint-online-77130c2e-76d1-4f80-af8b-4c6f47b264b8) aus der Standardansicht, wenn mindestens eine weitere Spalte angezeigt wird.
+Nachdem Sie diese Änderung vorgenommen haben, können Sie die Spalte **Titel** ignorieren, oder Sie können Sie aus der Standardansicht [Entfernen](https://support.office.com/article/edit-a-list-column-in-sharepoint-online-77130c2e-76d1-4f80-af8b-4c6f47b264b8) , wenn mindestens eine andere Spalte angezeigt wird.
 
-## <a name="open-the-form"></a>Öffnen Sie das Formular
+## <a name="open-the-form"></a>Formular öffnen
 
-1. Öffnen der **Incidents** aus, und wählen Sie dann **PowerApps** > **Anpassen von Formularen**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Öffnen Sie die Liste der Vorfälle, und wählen Sie dann PowerApps > Anpassen von Formularen. ](./media/dependent-drop-down-lists/open-form.png "Öffnen Sie die Liste der Vorfälle, und wählen Sie dann PowerApps > Anpassen von Formularen.")
-
-    Eine Browserregisterkarte mit das Standardformular in PowerApps Studio wird geöffnet.
-
-1. (optional) In der **Felder** Bereich, zeigen Sie auf die **Titel** Feld, wählen Sie die Auslassungspunkte (...), die angezeigt wird, und wählen Sie dann **entfernen**.
-
-    Wenn Sie geschlossen haben die **Felder** Bereich können Sie es öffnen erneut durch Auswahl **SharePointForm1** in der linken Navigationsleiste klicken und dann **Bearbeitungsfelder** auf die **Eigenschaften** Registerkarte im rechten Bereich.
-
-1. (optional) Wiederholen Sie den vorherigen Schritt zum Entfernen der **Anlagen** Feld aus dem Formular.
-
-    Das Formular wird mit nur die Felder, die Sie hinzugefügt haben.
+1. Öffnen Sie die Liste **Vorfälle** , und wählen Sie dann **powerapps** > **Formulare anpassen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Ohne die Felder für Titel und Anlagen bilden](./media/dependent-drop-down-lists/default-form.png)
+    > ![Öffnen Sie die Liste Vorfälle, und wählen Sie dann powerapps > Formular anpassen aus.](./media/dependent-drop-down-lists/open-form.png "Öffnen Sie die Liste Vorfälle, und wählen Sie dann powerapps > Formular anpassen aus.")
 
-## <a name="replace-the-controls"></a>Ersetzen Sie die Steuerelemente
+    Eine Browser Registerkarte wird mit dem Standardformular in PowerApps Studio geöffnet.
 
-1. In der **Felder** Bereich, wählen Sie den Pfeil neben **Speicherort**.
+1. optionale Zeigen Sie im Bereich **Felder** auf das Feld **Titel** , wählen Sie die Schaltfläche mit den Auslassungs Punkten (...) aus, die angezeigt wird, und wählen Sie dann **Entfernen**aus.
 
-    Wenn Sie geschlossen haben die **Felder** Bereich können Sie es öffnen erneut durch Auswahl **SharePointForm1** in der linken Navigationsleiste klicken und dann **Bearbeitungsfelder** auf die **Eigenschaften** Registerkarte im rechten Bereich.
+    Wenn Sie den **Bereich Felder** geschlossen haben, können Sie ihn erneut öffnen, indem Sie in der linken Navigationsleiste **SharePointForm1** auswählen und dann im rechten Bereich auf der Registerkarte **Eigenschaften** die Option **Felder bearbeiten** auswählen.
 
-1. Öffnen der **Steuerelementtyp** aus, und wählen Sie dann **zulässige Werte**.
+1. optionale Wiederholen Sie den vorherigen Schritt, um das Feld **Anlagen** aus dem Formular zu entfernen.
 
-    > [!div class="mx-imgBorder"]
-    > ![Zulässige Werte](./media/dependent-drop-down-lists/change-control.png)
-
-    Die Eingabeelemente ändert sich in einem **Dropdown** Steuerelement.
-
-1. Wiederholen Sie diese Schritte für die **Abteilung** Karte.
-
-## <a name="add-the-locations-list"></a>Fügen Sie der Liste der Speicherorte
-
-1. Wählen Sie **Ansicht** > **Datenquellen** > **Datenquelle hinzufügen**.
-
-1. Wählen oder erstellen Sie eine SharePoint-Verbindung und geben Sie dann auf die Website, enthält die **Speicherorte** Liste.
-
-1. Wählen Sie das Kontrollkästchen für die Liste, und wählen Sie dann **Connect**.
+    Das Formular wird nur mit den hinzugefügten Feldern angezeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![Bereich "Daten"](./media/dependent-drop-down-lists/select-list.png)
+    > ![formular ohne Titel und Anhänge Felder @ no__t-1
 
-    Die Liste der Verbindungen zeigt die **Incidents** Liste, auf dem die Form basiert, und die **Speicherorte** Liste, die Standorte und Abteilungen in der Form identifiziert wird.
+## <a name="replace-the-controls"></a>Ersetzen der Steuerelemente
 
-    > [!div class="mx-imgBorder"]
-    > ![SharePoint-Datenquellen](./media/dependent-drop-down-lists/data-sources.png)
+1. Wählen Sie im **Bereich Felder** den Pfeil neben **Speicherort**aus.
 
-## <a name="unlock-the-cards"></a>Entsperren von Karten
+    Wenn Sie den **Bereich Felder** geschlossen haben, können Sie ihn erneut öffnen, indem Sie in der linken Navigationsleiste **SharePointForm1** auswählen und dann im rechten Bereich auf der Registerkarte **Eigenschaften** die Option **Felder bearbeiten** auswählen.
 
-1. Wählen Sie die **Speicherort** Karte, wählen die **erweitert** im rechten Bereich die Registerkarte, und wählen Sie dann **Unlock so ändern Sie Eigenschaften**.
-
-1. Wiederholen Sie den vorherigen Schritt für die **Abteilung** Karte.
-
-## <a name="rename-the-controls"></a>Benennen Sie die Steuerelemente
-
-Wenn Sie die Steuerelemente umbenennen, können Sie sie leichter identifizieren und die Beispiele sind leichter zu verstehen. Um weiteren bewährten Methoden zu ermitteln, überprüfen Sie die [Codierung Standards und Leitlinien Whitepaper](https://aka.ms/powerappscanvasguidelines).
-
-1. In der **Speicherort** Karte, wählen die **Dropdown** Steuerelement.
-
-1. Benennen Sie das ausgewählte Steuerelement im oberen Bereich im rechten Bereich durch eingeben oder einfügen **DdLocation**.
+1. Öffnen Sie die Liste **Typ des Steuer** Elements, und wählen Sie dann **zulässige Werte**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Umbenennen eines Steuerelements](./media/dependent-drop-down-lists/rename-control.png)
+    > ![zulässige Werte @ no__t-1
 
-1. Wiederholen Sie die vorherigen beiden Schritte in der **Abteilung** -Karte, um das Umbenennen der **Dropdown** die Steuerung an **DdDepartment**.
+    Der Eingabe Mechanismus ändert sich in ein **Dropdown** -Steuerelement.
 
-## <a name="configure-the-locations"></a>Konfigurieren Sie die Speicherorte
+1. Wiederholen Sie diese Schritte für die **Abteilungs** Karte.
 
-1. Legen Sie die **Elemente** Eigenschaft **Ddlocation** auf diese Formel:
+## <a name="add-the-locations-list"></a>Liste der Speicherorte hinzufügen
 
-    `Distinct(Locations; Location)`
+1. Wählen Sie  > **Datenquellen** **anzeigen** > **Datenquelle hinzufügen**aus.
 
-1. (optional) Während Sie die Alt-Taste gedrückt halten, öffnen Sie **DdLocation**, und vergewissern Sie sich, dass die Liste mit allen drei Speicherorten enthält.
+1. Wählen Sie eine SharePoint-Verbindung aus, oder erstellen Sie eine SharePoint-Verbindung, und geben Sie **dann die Website mit der Liste**
 
-## <a name="configure-the-departments"></a>Konfigurieren Sie die Abteilungen
+1. Aktivieren Sie das Kontrollkästchen für diese Liste, und wählen Sie dann **verbinden**aus.
 
-1. Wählen Sie **DdDepartment**, und klicken Sie auf die **Eigenschaften** im rechten Bereich auf der Registerkarte **abhängig.**
+    > [!div class="mx-imgBorder"]
+    > ![data Pane @ no__t-1
 
-1. Klicken Sie unter **übergeordnete Steuerelement**, sicher, dass **DdLocation** angezeigt wird, in der oberen Liste und **Ergebnis** in der unteren Liste angezeigt wird.
+    In der Liste der Verbindungen wird die Liste der **Vorfälle** angezeigt, auf denen das Formular basiert, und die Liste der Speicher **Orte** , in der Standorte und Abteilungen im Formular identifiziert werden.
+
+    > [!div class="mx-imgBorder"]
+    > ![sharepoint-Datenquellen @ no__t-1
+
+## <a name="unlock-the-cards"></a>Entsperren der Karten
+
+1. Wählen Sie die Karte **Speicherort** aus, wählen Sie im rechten Bereich die Registerkarte **erweitert** aus, und klicken Sie dann **auf entsperren, um die Eigenschaften zu ändern**.
+
+1. Wiederholen Sie den vorherigen Schritt für die **Abteilungs** Karte.
+
+## <a name="rename-the-controls"></a>Umbenennen der Steuerelemente
+
+Wenn Sie die Steuerelemente umbenennen, können Sie Sie leichter identifizieren, und die Beispiele sind einfacher zu befolgen. Weitere bewährte Methoden finden Sie im [Whitepaper Codierungs Standards und Richtlinien](https://aka.ms/powerappscanvasguidelines).
+
+1. Wählen Sie auf der Karte **Speicherort** das **Dropdown** -Steuerelement aus.
+
+1. Benennen Sie das ausgewählte Steuerelement im oberen Bereich des rechten Bereichs um, indem Sie **ddlocation**eingeben oder einfügen.
+
+    > [!div class="mx-imgBorder"]
+    > ![umbenennen eines Steuer Elements @ no__t-1
+
+1. Wiederholen Sie die vorherigen beiden Schritte auf der **Abteilungs** Karte, um das **Dropdown** -Steuerelement in **dddepartment**umzubenennen.
+
+## <a name="configure-the-locations"></a>Konfigurieren der Standorte
+
+1. Legen Sie die **Items** -Eigenschaft von **ddlocation** auf diese Formel fest:
+
+    `Distinct(Locations, Location)`
+
+1. optionale Wenn Sie die Alt-Taste gedrückt halten, öffnen Sie **ddlocation**, und vergewissern Sie sich, dass die drei Standorte in der Liste angezeigt werden.
+
+## <a name="configure-the-departments"></a>Konfigurieren der Abteilungen
+
+1. Wählen Sie **dddepartment**aus, und wählen Sie dann auf der Registerkarte **Eigenschaften** im rechten Bereich die Option abhängig von aus **.**
+
+1. Stellen Sie sicher, dass **ddlocation** unter über **geordnetes Steuer**Element in der oberen Liste angezeigt wird und das **Ergebnis** in der unteren Liste angezeigt wird.
 
     > [!NOTE]
-    > Wenn Sie nicht auf eine Zeichenfolge, sondern auf die tatsächliche ID der Zeile der Daten entsprechen möchten, wählen Sie **ID** anstelle von **Ergebnis**.
+    > Wenn Sie nicht mit einer Zeichenfolge, sondern mit der tatsächlichen ID der Daten Zeile vergleichen möchten, wählen Sie **ID** anstelle von **Ergebnis**aus.
 
-1. Klicken Sie unter **übereinstimmende Feld**Option **Speicherorte** wählen Sie in der oberen Liste **Speicherort** in der unteren Liste, und wählen Sie dann **übernehmen**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Hängt von link](./media/dependent-drop-down-lists/depends-on.png)
-
-    Die **Elemente** Eigenschaft **DdDepartment** wird auf diese Formel festgelegt:
-
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
-
-    Diese Formel filtert die Elemente im **DdDepartment** basierend auf der Auswahl des Benutzers in **DdLocation**. Eine solche Konfiguration wird sichergestellt, dass die Liste "untergeordnete" Abteilungen die Daten für den Speicherort der "übergeordneten" als widerspiegelt das **Speicherorte** Liste in SharePoint gibt.
-
-1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, öffnen Sie die Liste neben **Wert**, und wählen Sie dann **Abteilung**.
-
-    Dieser Schritt wird den Anzeigetext auf Optionen für die aus der **Abteilung** Spalte die **Speicherorte** Liste in SharePoint.
+1. Wählen Sie unter **übereinstimmendes Feld** **Standorte** in der oberen Liste aus, wählen Sie in der unteren Liste **Speicherort** aus, und klicken Sie dann auf über **nehmen.**
 
     > [!div class="mx-imgBorder"]
-    > ![Wert für die Abteilung](./media/dependent-drop-down-lists/dept-value.png)
+    > ![hängt von Link @ no__t-1 ab.
 
-## <a name="test-the-form"></a>Testen Sie das Formular
+    Die **Items** -Eigenschaft von **dddepartment** ist auf diese Formel festgelegt:
 
-Während es sich bei gedrückter Alt-Taste, öffnen Sie die Liste der Speicherorte, wählen Sie eine, öffnen Sie die Liste von Abteilungen, und wählen Sie dann eine.
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
-Die Listen der Standorte und Abteilungen spiegelt wider, die Informationen in den **Speicherorte** Liste in SharePoint.
+    Diese Formel filtert die Elemente in **dddepartment** basierend darauf, was der Benutzer in **ddlocation**auswählt. Durch eine solche Konfiguration wird sichergestellt, dass die "untergeordnete" Liste der Abteilungen die Daten für den "übergeordneten" Speicherort widerspiegelt, wie die Speicher **Orte** Liste in SharePoint angibt.
+
+1. Öffnen Sie im rechten Bereich auf der Registerkarte **Eigenschaften** die Liste neben **Wert**, und wählen Sie dann **Abteilung**aus.
+
+    In diesem Schritt wird der Anzeige Text auf die Optionen in der Spalte **Department** der Liste **Standorte** in SharePoint festgelegt.
+
+    > [!div class="mx-imgBorder"]
+    > Wert für ![department @ no__t-1
+
+## <a name="test-the-form"></a>Testen des Formulars
+
+Wenn Sie die Alt-Taste gedrückt halten, öffnen Sie die Liste der Standorte, wählen Sie eine aus, öffnen Sie die Liste der Abteilungen, und wählen Sie dann eine aus.
+
+Die Listen der Standorte und Abteilungen widerspiegeln die Informationen in **der Liste der Speicherorte in** SharePoint.
 
 > [!div class="mx-imgBorder"]
-> ![Öffnen Sie die Liste der Standorte, ändern Sie die Auswahl von Renfrew in Pembroke und öffnen Sie dann die Liste von Abteilungen](./media/dependent-drop-down-lists/dropdowns.gif)
+> ![öffnen Sie die Liste der Speicherorte, ändern Sie die Auswahl von "Renfrew" in "Pembroke", und öffnen Sie dann die Liste der Abteilungen @ no__t-1.
 
-## <a name="save-and-open-the-form-optional"></a>Speichern Sie und öffnen Sie das Formular (optional)
+## <a name="save-and-open-the-form-optional"></a>Speichern und Öffnen des Formulars (optional)
 
-1. Öffnen der **Datei** Menü, und wählen Sie dann **speichern** > **in SharePoint veröffentlichen** > **Veröffentlichen in SharePoint**.
+1. Öffnen Sie das Menü **Datei** , und wählen Sie dann **Speichern** > **Veröffentlichen in SharePoint** > **Veröffentlichen in SharePoint**aus.
 
 1. Klicken Sie in der oberen linken Ecke auf den Zurück-Pfeil, und klicken Sie dann auf **Zurück zu SharePoint**.
 
 1. Klicken Sie auf der Befehlsleiste auf **Neu**, um Ihr angepasstes Formular zu öffnen.
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>HÄUFIG GESTELLTE FRAGEN
 
-**Keine Daten angezeigt: die Quellen sind alle leer oder die falschen Daten.**
-Bestätigen Sie, ob Sie das richtige Feld für das Steuerelement in einer der folgenden Methoden anzeigen:
+**Es können keine Daten angezeigt werden: die Quellen sind leer oder weisen falsche Daten auf.**
+Überprüfen Sie auf eine der folgenden Arten, ob das richtige Feld für das Steuerelement angezeigt wird:
 
-- Wählen Sie eine Dropdown-Liste, und wählen Sie dann die **Wert** -Eigenschaft in der **Eigenschaften** Registerkarte im rechten Bereich.
-
-    > [!div class="mx-imgBorder"]
-    > ![Dropdown-Änderung](./media/dependent-drop-down-lists/drop-down-display-field.png)
-
-- Wählen Sie ein Kombinationsfeld, und stellen Sie sicher, dass der primäre Text das Feld, das Sie anzeigen möchten.
+- Wählen Sie eine Dropdown Liste aus, und wählen Sie dann im rechten Bereich auf der Registerkarte **Eigenschaften** die Eigenschaft **Wert** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Kombinationsfeld ändern](./media/dependent-drop-down-lists/combo-box-display-field.png)
+    > Dropdown ![-Änderung @ no__t-1
 
-**Meine untergeordnetes Dropdown-Liste enthält doppelte Elemente.**
-Dieses Symptom ist wahrscheinlich aufgrund einer **LookUp** Spalte in SharePoint oder eine **Auswahlmöglichkeiten** -Funktion in PowerApps. Um die Duplizierung zu entfernen, umschließen einer **Distinct** Funktion, um die ordnungsgemäße zurückgegebenen Daten. Weitere Informationen finden Sie unter: [DISTINCT-Funktion](functions/function-distinct.md).
+- Wählen Sie ein Kombinations Feld aus, und vergewissern Sie sich, dass der primäre Text das Feld ist, das Sie anzeigen möchten.
+
+    > [!div class="mx-imgBorder"]
+    > Kombinations Feld "![-Änderung" @ no__t-1
+
+**Die Dropdown Liste "mein untergeordnetes Element" enthält doppelte Elemente.**
+Dieses Symptom ist wahrscheinlich darauf zurückzuführen, dass eine **Such** Spalte in SharePoint oder eine **Auswahl** Funktion in powerapps verwendet wird. Um die Duplizierung zu entfernen, umschließen Sie eine **eindeutige** Funktion um die ordnungsgemäß zurückgegebenen Daten. Weitere Informationen finden Sie unter: Unter [schiedliche Funktion](functions/function-distinct.md).
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
-Diese Konfiguration ist verfügbar auf **Dropdown** -Steuerelemente, als auch **im Kombinationsfeld** und **Listenfeld** Steuerelemente, mit denen eine Auswahl zu einem Zeitpunkt. Sie können keine der **Abhängigkeiten** die Konfiguration dieser Steuerelemente, wenn sie die Mehrfachauswahl zulässig. Dieser Ansatz wird nicht empfohlen, für die Arbeit mit Optionssätze in Common Data Service.
+Diese Konfiguration ist für **Dropdown** -Steuerelemente sowie für Kombinations **Feld** -und **Listenfeld** -Steuerelemente verfügbar, die jeweils eine Auswahl ermöglichen. Wenn Sie mehrere Auswahlmöglichkeiten zulassen, können **Sie die von** der Konfiguration abhängige Konfiguration nicht verwenden. Diese Vorgehensweise wird nicht zum Arbeiten mit Options Sätzen in Common Data Service empfohlen.
 
-Die **Abhängigkeiten** Konfiguration unterstützt keine statischen Daten oder Auflistungen. Um abhängige Dropdownlisten mit diesen Quellen konfigurieren zu können, müssen bearbeiten Sie den Ausdruck direkt in der Bearbeitungsleiste. Darüber hinaus PowerApps unterstützt nicht die Verwendung von zwei Choice Felder ohne eine entsprechende Tabelle von Daten in SharePoint, und es wird keine definieren **übereinstimmende Feld** mit dieser Benutzeroberfläche.
+Die **Abhängigkeit** von der Konfiguration unterstützt keine statischen Daten oder Auflistungen. Um abhängige Dropdown Listen mit diesen Quellen zu konfigurieren, bearbeiten Sie den Ausdruck direkt in der Bearbeitungs Leiste. Außerdem unterstützt powerapps nicht die Verwendung von zwei Auswahl Feldern in SharePoint ohne übereinstimmende Datentabelle, und Sie können kein **entsprechendes Feld** in dieser Benutzeroberfläche definieren.

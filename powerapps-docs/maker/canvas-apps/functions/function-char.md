@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/01/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b598cc863ec01bcb2a66a9510cb48ec5203e679
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 099afb1e89d1551c6c6b969c3ae3688a3cdec777
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559661"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992953"
 ---
 # <a name="char-function-in-powerapps"></a>Funktion „Char“ in PowerApps
 
@@ -27,7 +26,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="description"></a>Beschreibung
 
-Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entsprechende ASCII-Zeichen.
+Die **char** -Funktion übersetzt eine Zahl in eine Zeichenfolge mit dem entsprechenden ASCII-Zeichen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -39,51 +38,51 @@ Die **Char** Funktion übersetzt eine Zahl in eine Zeichenfolge durch das entspr
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Char( 65 )** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |"A" |
-| **Char( 105 )** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |"i" |
+| **Char( 65 )** |Gibt das Zeichen zurück, das ASCII-Code 65 entspricht |EIN |
+| **Char( 105 )** |Gibt das Zeichen zurück, das ASCII-Code 105 entspricht |Ich |
 | **Char( 35 )** |Gibt das Zeichen zurück, das ASCII-Code 35 entspricht |"#" |
 
-### <a name="display-a-character-map"></a>Zeigt eine zeichenzuordnung
+### <a name="display-a-character-map"></a>Zeichen Zuordnung anzeigen
 
-1. Auf einem leeren Bildschirm in eine Tablet-app hinzufügen eine [ **Katalog** ](../controls/control-gallery.md) steuern Sie mit einer **leere horizontale** Layout, und legen Sie diese Eigenschaften:
+1. Fügen Sie [**auf einem leeren**](../controls/control-gallery.md) Bildschirm in einer Tablet-App ein Katalog-Steuerelement mit einem **leeren horizontalen** Layout hinzu, und legen Sie dann die folgenden Eigenschaften fest:
 
-    - **Elemente**: `[0;1;2;3;4;5;6;7]`
-    - **Width**: 800
+    - **Elemente**: `[0,1,2,3,4,5,6,7]`
+    - **Breite**: 800
     - **Höhe**: 500
-    - **TemplateSize**: 100
-    - **TemplatePadding**: 0
+    - **Templatesize**: 100
+    - **Templatepadditions**: 0
 
-1. Fügen Sie diesen Katalog, eine **Katalog** steuern Sie mit einer **leere vertikale** Layout, und legen Sie diese Eigenschaften:
+1. Fügen Sie in diesem Katalog ein Katalog **-Steuerelement mit einem** **leeren vertikalen** Layout hinzu, und legen Sie dann die folgenden Eigenschaften fest:
 
-    - **Elemente**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
-    - **Width**: 100
+    - **Elemente**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
+    - **Breite**: 100
     - **Höhe**: 500
-    - **TemplateSize**: 30
-    - **TemplatePadding**: 0
+    - **Templatesize**: 30
+    - **Templatepadditions**: 0
 
-    Der Wert des der **Elemente** Eigenschaft multipliziert, 16 x die Nummer der Spalte, die von der Spalte Wert der bereitgestellten der **Elemente** Eigenschaft aus dem ersten Katalog (0 bis 7 in `ThisItem.Value`). Die Formel fügt dann das Ergebnis auf eine der Nummern der Zeilen aus dem Katalog der zweiten (0 bis 15 im Datensatz zu begrenzen, die die [ **ForAll** ](function-forall.md) -Funktion).
+    Der Wert der **Items** -Eigenschaft multipliziert 16 mit der Spaltennummer, die von der Value-Spalte der **Items** -Eigenschaft aus der ersten Galerie (0-7 in `ThisItem.Value`) bereitgestellt wird. Die Formel fügt dann das Ergebnis einer der Zeilennummern aus dem zweiten Katalog hinzu (0-15 im Daten Satz Bereich, den die [**ForAll**](function-forall.md) -Funktion bereitstellt).
 
-1. Der zweite (vertikal) Katalog, fügen Sie eine **Bezeichnung** steuern, und legen Sie diese Eigenschaften:
+1. Fügen Sie in der zweiten (vertikalen) Galerie ein **Label** -Steuerelement hinzu, und legen Sie die folgenden Eigenschaften fest:
 
     - **Text**: `ThisItem.Value`
-    - **Width**: 50
+    - **Breite**: 50
 
-1. Der zweite (vertikal) Katalog, fügen Sie einen anderen **Bezeichnung** steuern, und legen Sie diese Eigenschaften:
+1. Fügen Sie in der zweiten (vertikalen) Galerie ein weiteres **Label** -Steuerelement hinzu, und legen Sie die folgenden Eigenschaften fest:
 
     - **Text**: `Char( ThisItem.Value )`
-    - **Width**: 50
+    - **Breite**: 50
     - **X**: 50
 
-Sie haben ein Diagramm mit den ersten 128 ASCII-Zeichen erstellt. Zeichen, die angezeigt werden, wie ein kleines Quadrat nicht gedruckt werden kann.
+Sie haben ein Diagramm mit den ersten 128 ASCII-Zeichen erstellt. Zeichen, die als kleines Quadrat angezeigt werden, können nicht gedruckt werden.
 
-![Zuerst 128 ASCII-Zeichen](media/function-char/chart-lower.png)
+![Erste 128 ASCII-Zeichen](media/function-char/chart-lower.png)
 
-Um die erweiterten ASCII-Zeichen anzuzeigen, legen die **Elemente** -Eigenschaft des zweiten Katalogs auf diese Formel, die jeder Zeichenwert 128 hinzufügt:
+Um die erweiterten ASCII-Zeichen anzuzeigen, legen Sie die **Items** -Eigenschaft des zweiten Katalogs auf diese Formel fest. Dadurch wird jedem Zeichen Wert 128 Hinzugefügt:
 
-`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![Erweiterte ASCII-Zeichen](media/function-char/chart-higher.png)
 
-Um die Zeichen in einer anderen Schriftart anzuzeigen, legen die **Schriftart** -Eigenschaft der zweiten Bezeichnung auf einen Wert wie z. B. **"Tanzen Script"**.
+Wenn Sie die Zeichen in einer anderen Schriftart anzeigen möchten, legen Sie die Eigenschaft **Schriftart** der zweiten Bezeichnung auf einen Wert wie z. b. **"tanzendes Skript"** fest.
 
-![Tanzen Skript](media/function-char/chart-higher-dancing-script.png)
+![Tanz Skript](media/function-char/chart-higher-dancing-script.png)

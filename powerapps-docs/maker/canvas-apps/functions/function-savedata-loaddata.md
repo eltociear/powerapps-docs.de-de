@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/31/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3fb23fec6f6885a55b054889b90fed0c5efafd5e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: e716de7a3551e2195d3f3459540a6f68acb4fd51
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61520488"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992287"
 ---
 # <a name="savedata-and-loaddata-functions-in-powerapps"></a>Funktionen SaveData und LoadData in PowerApps
 Speichert eine [Sammlung](../working-with-data-sources.md#collections) und lädt diese erneut.
@@ -29,18 +28,18 @@ Die Funktion **SaveData** speichert eine Sammlung für die spätere Verwendung u
 
 Die Funktion **LoadData** lädt eine Sammlung über den Namen, über den diese zuvor mit **SaveData** gespeichert wurde, erneut. Sie können diese Funktion nicht dazu verwenden, eine Sammlung aus einer anderen Quelle zu laden.  
 
-Mit diesen Funktionen können beim Start der app-Leistung verbessern, indem das Zwischenspeichern von Daten in die **[App.OnStart](../controls/control-screen.md#additional-properties)** Formel auf die Willkommensseite, und klicken Sie dann den lokalen Cache bei nachfolgenden Ausführungen erneut laden. Sie können diese Funktionen auch verwenden, um hinzuzufügen [einfache Offlinefunktionen](../offline-apps.md) zu Ihrer app.
+Verwenden Sie diese Funktionen, um die Leistung beim APP-Start zu verbessern, indem Sie Daten in der **[app. OnStart](../controls/control-screen.md#additional-properties)** -Formel bei einer ersten Ausführung zwischenspeichern und dann bei nachfolgenden Ausführungen den lokalen Cache erneut laden. Sie können diese Funktionen auch verwenden, um Ihrer APP [einfache Offline Funktionen](../offline-apps.md) hinzuzufügen.
 
-Sie können nicht diese Funktionen in einem Browser, wenn die app in PowerApps Studio erstellen oder beim Ausführen der app in der webplayer verwenden. Um Ihre app zu testen, führen Sie es in PowerApps Mobile auf einem iPhone oder Android-Gerät aus.
+Diese Funktionen können nicht in einem Browser verwendet werden, entweder beim Erstellen der app in PowerApps Studio oder beim Ausführen der APP im Web Player. Um Ihre APP zu testen, führen Sie Sie in powerapps Mobile auf einem iPhone-oder Android-Gerät aus.
 
-Diese Funktionen werden durch die Größe des verfügbaren app-Speichers begrenzt, da sie in einer in-Memory-Sammlung ausgeführt werden. Verfügbare Arbeitsspeicher kann variieren, je nach Gerät und Betriebssystem, Arbeitsspeicher, den den PowerApps-Player verwendet und die Komplexität der app im Hinblick auf Bildschirme und Steuerelemente. Wenn Sie länger als einige Megabyte an Daten speichern, testen Sie Ihre app mit erwarteten Szenarien auf den Geräten, die auf denen Sie die Ausführung die Anwendung erwarten. Sie erwarten, in der Regel zwischen 30 und 70 MB an verfügbarem Arbeitsspeicher haben.  
+Diese Funktionen sind durch die Menge des verfügbaren APP-Speichers beschränkt, da Sie für eine Auflistung im Arbeitsspeicher ausgeführt werden. Der verfügbare Arbeitsspeicher kann je nach Gerät und Betriebssystem, dem vom powerapps-Player verwendeten Arbeitsspeicher und der Komplexität der app in Bezug auf Bildschirme und Steuerelemente variieren. Wenn Sie mehr als ein paar Megabyte Daten speichern, testen Sie Ihre APP mit den erwarteten Szenarien auf den Geräten, auf denen die app ausgeführt werden soll. Sie sollten im Allgemeinen zwischen 30 und 70 Megabyte verfügbarem Arbeitsspeicher erwarten.  
 
-**LoadData** erstellt die Sammlung nicht; die Funktion füllt nur eine vorhandene Sammlung aus. Zunächst müssen Sie die Sammlung mit den richtigen [Spalten](../working-with-tables.md#columns) erstellen, indem Sie **[Collect](function-clear-collect-clearcollect.md)** verwenden. Die geladenen Daten werden an die Auflistung angefügt werden; Verwenden Sie die **[löschen](function-clear-collect-clearcollect.md)** zuerst ausgeführt werden, wenn Sie mit einer leeren Auflistung starten möchten.
+**LoadData** erstellt die Sammlung nicht; die Funktion füllt nur eine vorhandene Sammlung aus. Zunächst müssen Sie die Sammlung mit den richtigen [Spalten](../working-with-tables.md#columns) erstellen, indem Sie **[Collect](function-clear-collect-clearcollect.md)** verwenden. Die geladenen Daten werden an die Sammlung angefügt. Verwenden Sie zuerst die **[Clear](function-clear-collect-clearcollect.md)** -Funktion, wenn Sie mit einer leeren Auflistung beginnen möchten.
 
 Speicher wird verschlüsselt und befindet sich an einem privaten Speicherort auf dem lokalen Gerät, isoliert von anderen Benutzern und anderen Apps.
 
 ## <a name="syntax"></a>Syntax
-**SaveData**( *Sammlung*; *Name* )<br>**LoadData**( *Sammlung*; *Name* [; *NichtVorhandeneDateiIgnorieren* ])
+**SaveData**( *Sammlung*, *Name* )<br>**LoadData**( *Sammlung*, *Name* [, *NichtVorhandeneDateiIgnorieren* ])
 
 * *Sammlung*: Erforderlich.  Die zu speichernde oder zu ladende Sammlung.
 * *Name*: Erforderlich.  Der Name des Speichers. Sie müssen den gleichen Namen verwenden und den gleichen Satz von Daten laden. Der Namespace wird nicht für andere Apps oder Benutzer freigegeben.
@@ -50,6 +49,6 @@ Speicher wird verschlüsselt und befindet sich an einem privaten Speicherort auf
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **If(Connection.Connected; ClearCollect(LocalTweets; Twitter.SearchTweet("PowerApps"; {maxResults: 100}));LoadData(LocalTweets; "Tweets"; true))** |Wenn das Gerät verbunden ist, laden Sie die LocalTweets-Sammlung vom Twitter-Dienst; laden Sie andernfalls die Sammlung aus dem lokalen Dateicache. |Der Inhalt wird wiedergegeben, gleich, ob das Gerät online oder offline ist. |
-| **SaveData(LocalTweets; "Tweets")** |Speichern Sie die LocalTweets-Sammlung als lokalen Dateicache auf dem Gerät. |Die Daten werden lokal gespeichert, sodass **LoadData** sie in eine Sammlung laden kann. |
+| **if (Connection. Connected, clearcollect (localtweets, Twitter. searchtweet ("powerapps", {maxResults: 100})), LoadData (localtweets, "tweets", true))** |Wenn das Gerät verbunden ist, laden Sie die LocalTweets-Sammlung vom Twitter-Dienst; laden Sie andernfalls die Sammlung aus dem lokalen Dateicache. |Der Inhalt wird wiedergegeben, gleich, ob das Gerät online oder offline ist. |
+| **SaveData(LocalTweets, "Tweets")** |Speichern Sie die LocalTweets-Sammlung als lokalen Dateicache auf dem Gerät. |Die Daten werden lokal gespeichert, sodass **LoadData** sie in eine Sammlung laden kann. |
 

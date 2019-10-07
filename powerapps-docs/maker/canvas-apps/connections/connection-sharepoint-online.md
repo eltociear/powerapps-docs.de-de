@@ -1,188 +1,188 @@
 ---
 title: Übersicht über die SharePoint-Verbindung | Microsoft-Dokumentation
-description: Für SharePoint finden Sie unter den verfügbaren Funktionen, Antworten und Beispiele.
+description: Weitere Informationen finden Sie in den verfügbaren Funktionen, Antworten und Beispielen für SharePoint.
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65ce3b7736b55f3734d6da7d945965ed791a3ce4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549202"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993971"
 ---
-# <a name="connect-to-sharepoint-from-a-canvas-app"></a>Verbinden Sie mit SharePoint aus einer Canvas-app
+# <a name="connect-to-sharepoint-from-a-canvas-app"></a>Herstellen einer Verbindung mit SharePoint über eine Canvas-App
 
 ![SharePoint](./media/connection-sharepoint-online/sharepointicon.png)
 
-Verbinden mit einer SharePoint-Website, um eine app aus einer benutzerdefinierten Liste automatisch zu generieren, oder erstellen Sie eine Verbindung aus, bevor Sie das Hinzufügen von Daten zu einer vorhandenen app oder eine app von Grund auf neu erstellen.
+Stellen Sie eine Verbindung mit einer SharePoint-Website her, um eine APP automatisch aus einer benutzerdefinierten Liste zu generieren, oder erstellen Sie eine Verbindung, bevor Sie einer vorhandenen APP Daten hinzufügen oder eine APP von Grund auf neu erstellen
 
-Je nachdem, wo Ihre Daten befinden können Sie eine oder beide der folgenden Ansätze ausführen:
+Abhängig davon, wo sich Ihre Daten befinden, können Sie einen oder beide der folgenden Ansätze verwenden:
 
-- Zeigen Sie Daten aus einer benutzerdefinierten Liste in einer SharePoint Online-Website oder einem lokalen Standort.
-- Anzeigen von Bildern und Wiedergabe von Video- oder audio-Dateien in einer Bibliothek (nur SharePoint-Online).
+- Anzeigen von Daten aus einer benutzerdefinierten Liste auf einer SharePoint Online-Website oder an einem lokalen Standort.
+- Anzeigen von Bildern und Abspielen von Video-oder Audiodateien in einer Bibliothek (nur SharePoint Online).
 
 ## <a name="generate-an-app"></a>Eine App generieren
 
-Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können PowerApps [eine app mit drei Bildschirmen automatisch für Sie generieren](../app-from-sharepoint.md). Benutzer können die Liste auf dem ersten Bildschirm durchsuchen, Details zum Anzeigen eines Elements im zweiten Bildschirm, und erstellen oder aktualisieren Elemente im dritten Bildschirm.
+Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Sie powerapps [automatisch eine APP mit drei Bildschirmen generieren](../app-from-sharepoint.md). Benutzer können die Liste auf dem ersten Bildschirm durchsuchen, Details zu einem Element im zweiten Bildschirm anzeigen und Elemente auf dem dritten Bildschirm erstellen oder aktualisieren.
 
 > [!NOTE]
-> Wenn die SharePoint-Liste enthält eine **Wahl**, **Lookup**, oder **Person oder Gruppe** Spalte finden Sie unter [Anzeigen von Daten in einem Katalog](connection-sharepoint-online.md#show-list-columns-in-a-gallery) weiter unten in diesem Thema.
+> Wenn die SharePoint-Liste eine Spalte " **Choice**", " **Lookup**" oder " **Person" oder "Group** " enthält, finden Sie weitere Informationen unter Anzeigen von [Daten in einem](connection-sharepoint-online.md#show-list-columns-in-a-gallery) Katalog weiter unten
 
 ## <a name="create-a-connection"></a>Verbindung erstellen
 
-1. [Melden Sie sich bei PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)Option **Daten** > **Verbindungen** im linken Navigationsbereich, und klicken Sie anschließend **neue Verbindung** in der Nähe der linke obere Ecke.
+1. [Melden Sie sich bei powerapps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten** > -**Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie Daten aus > Verbindungen in der linken Navigationsleiste, und wählen Sie dann neue Verbindung in der Nähe der oberen linken Ecke.](./media/connection-sharepoint-online/new-connection.png)
+    > ![wählen Sie in der linken Navigationsleiste Daten > Verbindungen aus, und wählen Sie dann in der oberen linken Ecke neue Verbindung aus. ](./media/connection-sharepoint-online/new-connection.png)
 
-1. Geben Sie in das Suchfeld in der Nähe der oberen rechten Ecke, oder fügen Sie **SharePoint**, und wählen Sie dann **SharePoint**.
+1. Geben oder fügen Sie im Suchfeld in der Nähe der oberen rechten Ecke **SharePoint**ein, und wählen Sie dann **SharePoint**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Klicken Sie in das Suchfeld in der Nähe der oberen rechten Ecke Geben Sie oder fügen Sie die SharePoint, und wählen Sie dann auf SharePoint.](./media/connection-sharepoint-online/select-sharepoint.png)
+    > Geben Sie im Suchfeld in der Nähe der oberen rechten Ecke ![ein, oder fügen Sie SharePoint ein, und wählen Sie dann SharePoint. ](./media/connection-sharepoint-online/select-sharepoint.png) aus.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-    - Wählen Sie zum Verbinden mit SharePoint Online **direkt verbinden (Clouddienste)** Option **erstellen**, und geben Sie Anmeldeinformationen (sofern es sich um eine Aufforderung zur Bestätigung).
+    - Wählen Sie zum Herstellen einer Verbindung mit SharePoint Online **direkt verbinden (Clouddienste)** und dann **Erstellen**aus, und geben Sie dann Anmelde Informationen ein (falls Sie dazu aufgefordert werden).
 
         > [!div class="mx-imgBorder"]
-        > ![Wählen Sie zum Verbinden mit SharePoint Online direkt verbinden (Clouddienste)](./media/connection-sharepoint-online/select-online.png)
+        > ![um eine Verbindung mit SharePoint Online herzustellen, wählen Sie direkte Verbindung (Clouddienste) ](./media/connection-sharepoint-online/select-online.png) aus.
 
-        Die Verbindung wird hergestellt, und Sie können zum Hinzufügen eines zu einer vorhandenen app oder eine app von Grund auf neu erstellen.
+        Die Verbindung wird hergestellt, und Sie können einer vorhandenen APP Daten hinzufügen oder eine APP von Grund auf neu erstellen.
 
-    - Wählen Sie zum Verbinden mit einem lokalen Standort **Herstellen einer Verbindung mit einem lokalen datengateway**.
+    - Wählen Sie zum Herstellen einer Verbindung mit einem lokalen Standort **mithilfe des lokalen Daten Gateways verbinden aus**.
 
         > [!div class="mx-imgBorder"]
-        > ![Wählen Sie zum Verbinden mit einem lokalen Standort ** Herstellen einer Verbindung mit lokalen Datengateways)](./media/connection-sharepoint-online/select-onprem.png)
+        > ![um eine Verbindung mit dem lokalen Standort herzustellen, wählen Sie * * Verbindung mit lokalem Daten Gateway herstellen) ](./media/connection-sharepoint-online/select-onprem.png) aus.
 
         Geben Sie **Windows** als Authentifizierungstyp an, und geben Sie dann Ihre Anmeldeinformationen ein. (Wenn Ihre Anmeldeinformationen einen Domänennamen enthalten, geben Sie sie folgendermaßen an: *Domäne\Alias*.)
 
         > [!div class="mx-imgBorder"]
-        > ![Geben Sie die Anmeldeinformationen](./media/connection-sharepoint-online/specify-creds.png)
+        > ![anmelde Informationen angeben @ no__t-1
 
-        Klicken Sie unter **wählen Sie ein Gateway**, wählen Sie das Gateway, das Sie verwenden möchten, und wählen Sie dann **erstellen**.
+        Wählen Sie unter **Gateway auswählen**das Gateway aus, das Sie verwenden möchten, und wählen Sie dann **Erstellen**aus.
 
         > [!NOTE]
-        > Wenn Sie ein lokales datengateway installiert haben, nicht [installieren Sie eine](../gateway-reference.md), und wählen Sie dann auf das Symbol, um die Liste der Gateways zu aktualisieren.
+        > Wenn Sie kein lokales Daten Gateway installiert haben, [Installieren Sie eines](../gateway-reference.md), und klicken Sie dann auf das Symbol, um die Liste der Gateways zu aktualisieren.
 
         > [!div class="mx-imgBorder"]
-        > ![Gateway auswählen](./media/connection-sharepoint-online/choose-gateway.png)
+        > ![choose Gateway @ no__t-1
 
-        Die Verbindung wird hergestellt, und Sie können zum Hinzufügen eines zu einer vorhandenen app oder eine app von Grund auf neu erstellen.
+        Die Verbindung wird hergestellt, und Sie können einer vorhandenen APP Daten hinzufügen oder eine APP von Grund auf neu erstellen.
 
-## <a name="add-data-to-an-existing-app"></a>Hinzufügen von Daten zu einer vorhandenen app
+## <a name="add-data-to-an-existing-app"></a>Hinzufügen von Daten zu einer vorhandenen APP
 
-1. In PowerApps Studio, öffnen Sie die app, die Sie aktualisieren möchten, wählen Sie die **Ansicht** Registerkarte, und wählen Sie dann **Datenquellen**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Auf der Registerkarte "Ansicht", und wählen Sie dann die Datenquellen](./media/connection-sharepoint-online/view-data-sources.png)
-
-1. In der **Daten** wählen Sie im Bereich **Datenquelle hinzufügen** > **SharePoint**.
-
-1. Klicken Sie unter **Herstellen einer Verbindung mit einer SharePoint-Website**, wählen Sie einen Eintrag in der **zuletzt geöffnete Websites** Liste (oder geben oder fügen Sie die URL für die Website, die Sie verwenden möchten), und wählen Sie dann **Connect**.
+1. Öffnen Sie in PowerApps Studio die APP, die Sie aktualisieren möchten, wählen Sie die Registerkarte **Ansicht** aus, und wählen Sie dann **Datenquellen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Website auswählen](./media/connection-sharepoint-online/select-sp-site.png)
+    > ![auf der Registerkarte Ansicht, und wählen Sie dann Datenquellen @ no__t-1 aus.
 
-1. Klicken Sie unter **wählen Sie eine Liste**, wählen Sie das Kontrollkästchen für **Dokumente** oder eine oder mehrere Listen, die Sie verwenden möchten, und wählen Sie dann **Connect**:
+1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **SharePoint**aus.
 
-    > [!div class="mx-imgBorder"]
-    > ![Klicken Sie unter Wählen Sie eine Liste Wählen Sie das Kontrollkästchen für Dokumente oder eine oder mehrere Listen, die Sie verwenden möchten, und wählen Sie dann auf Verbinden](./media/connection-sharepoint-online/select-sp-tables.png)
-
-    Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen. Wenn der Name der Liste, die Sie verwenden möchten, angezeigt wird, scrollen Sie nach unten, und geben Sie den Namen der Liste in das Feld **Geben Sie benutzerdefinierte Tabellennamen**.
+1. Wählen Sie unter **Verbindung mit einer SharePoint-Website herstellen**einen Eintrag in der Liste **Letzte Sites** aus (oder geben Sie die URL für die Website ein, die Sie verwenden möchten), und klicken Sie dann auf **verbinden**.
 
     > [!div class="mx-imgBorder"]
-    > ![Geben Sie den Namen der Liste in das Feld Geben Sie einen Namen für die benutzerdefinierte Liste ein.](./media/connection-sharepoint-online/custom-list.png)
+    > ![select Site @ no__t-1
 
-    Die Datenquelle oder Datenquellen werden Ihrer app hinzugefügt.
+1. Aktivieren Sie unter **Liste auswählen**das Kontrollkästchen für **Dokumente** oder eine oder mehrere Listen, die Sie verwenden möchten, und klicken Sie dann auf **verbinden**:
 
-## <a name="build-your-own-app-from-scratch"></a>Ihre eigene app von Grund auf neu erstellen
+    > [!div class="mx-imgBorder"]
+    > ![wählen Sie unter Liste auswählen das Kontrollkästchen für Dokumente oder eine oder mehrere Listen aus, die Sie verwenden möchten, und klicken Sie dann auf Verbinden @ no__t-1.
 
-Gelten die Konzepte in [erstellen Sie eine app von Grund auf Neu](../get-started-create-from-blank.md) in SharePoint anstelle von Excel.
+    Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen. Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, Scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld ein, das den Namen der **benutzerdefinierten Tabelle**enthält.
 
-## <a name="show-list-columns-in-a-gallery"></a>Anzeigen der von Listenspalten in einem Katalog
+    > [!div class="mx-imgBorder"]
+    > ![geben Sie den Namen der Liste in das Feld ein, in dem ein benutzerdefinierter Listen Name eingegeben werden soll. ](./media/connection-sharepoint-online/custom-list.png)
 
-Wenn die benutzerdefinierte Liste alle Typen von Spalten enthält, zeigen Sie die Daten in eine **Katalog** Steuerelement mithilfe der Bearbeitungsleiste zum Festlegen der **Text** Eigenschaft einer oder mehreren **Bezeichnung** Steuerelemente in diesem Katalog:
+    Die Datenquellen oder Quellen werden ihrer app hinzugefügt.
 
-- Für eine **Wahl** oder **Lookup** Spalte geben **ThisItem.** _ColumnName_**. Wert** Daten in dieser Spalte angezeigt.
+## <a name="build-your-own-app-from-scratch"></a>Erstellen Sie Ihre eigene APP von Grund auf neu
+
+Wenden Sie die Konzepte in [Erstellen einer APP von Grund](../get-started-create-from-blank.md) auf auf SharePoint anstelle von Excel an.
+
+## <a name="show-list-columns-in-a-gallery"></a>Anzeigen von Listen Spalten in einem Katalog
+
+Wenn die benutzerdefinierte **Liste einen dieser** Spaltentypen enthält, zeigen Sie diese Daten in einem Katalog-Steuerelement an, indem Sie die Bearbeitungs Leiste verwenden, um die **Text** -Eigenschaft eines oder mehrerer Label-Steuerelemente in diesem **Katalog** festzulegen:
+
+- Geben **Sie** für eine Spalte vom Typ " **Choice** " oder "Suche" **thisitem an.** _ColumnName_ **. Der Wert** , mit dem Daten in dieser Spalte angezeigt werden.
 
     Geben Sie z.B. **ThisItem.Standort.Value** an, wenn Sie eine **Auswahl**-Spalte mit dem Namen **Standort** haben. Geben Sie **ThisItem.PostalCode.Value** für eine **Nachschlage**-Spalte namens **PostalCode** ein.
 
-- Für eine **Person oder Gruppe** Spalte geben **ThisItem.** _ColumnName_**. "DisplayName"** um den Anzeigenamen des Benutzers oder der Gruppe anzuzeigen.
+- Geben Sie für eine **Person oder eine Gruppen** Spalte **thisitem an.** _ColumnName_ **. Display Name** , um den anzeigen amen des Benutzers oder der Gruppe anzuzeigen.
 
     Geben Sie z.B. **ThisItem.Manager.DisplayName** an, um die Anzeigenamen aus einer **Person oder Gruppe**-Spalte mit dem Namen **Manager** anzuzeigen.
 
-    Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine vollständige Liste der Optionen anzuzeigen, geben **ThisItem.** _ColumnName_**.** (einschließlich des nachgestellten Punkts).
+    Sie können auch andere Informationen zu Benutzern anzeigen, z.B. E-Mail-Adressen oder Positionsbeschreibungen. Um eine komplette Liste der Optionen anzuzeigen, geben Sie **thisitem an.** _ColumnName_ **.** (einschließlich des nachfolgenden Zeitraums).
 
     > [!NOTE]
-    > Für eine **CreatedBy** Spalte geben **ThisItem.Author.DisplayName** die Anzeigenamen von Benutzern angezeigt, die Elemente in der Liste erstellt haben. Für eine **ModifiedBy**-Spalte geben Sie **ThisItem.Editor.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste geändert haben.
+    > Geben Sie für eine Spalte vom Typ " **kreatedby** " **thisitem. Author. Display Name** an, um die anzeigen Amen von Benutzern anzuzeigen, die Elemente in der Liste erstellt haben. Für eine **ModifiedBy**-Spalte geben Sie **ThisItem.Editor.DisplayName** ein, um die Anzeigenamen von Benutzern anzuzeigen, die die Elemente in der Liste geändert haben.
 
-- Für eine **verwaltete Metadaten** Spalte geben **ThisItem.** _ColumnName_**. Bezeichnung** Daten in dieser Spalte angezeigt.
+- Für eine **verwaltete Metadatenspalte** geben Sie **thisitem an.** _ColumnName_ **. Bezeichnung** zum Anzeigen von Daten in dieser Spalte.
 
     Geben Sie z.B. **ThisItem.Sprachen.Label** ein, wenn Sie mit einer **Verwaltete Metadaten**-Spalte mit dem Namen **Sprachen** arbeiten.
 
 ## <a name="show-data-from-a-library"></a>Anzeigen von Daten aus einer Bibliothek
 
-Wenn Sie mehrere Bilder in einer SharePoint-Bibliothek verfügen, können Sie Hinzufügen einer **Dropdown** Steuern für Ihre app, sodass Benutzer, welches Bild angeben können angezeigt. Sie können auch gelten dieselben Prinzipien für andere Steuerelemente, z. B. **Katalog** Steuerelemente und andere Arten von Daten, z. B. Videos.
+Wenn Sie mehrere Images in einer SharePoint-Bibliothek haben, können Sie der APP ein **Dropdown** -Steuerelement hinzufügen, damit Benutzer angeben können, welches Bild angezeigt werden soll. Sie können dieselben Prinzipien auch auf andere Steuerelemente anwenden, z. b. auf Katalog **Steuerelemente und** andere Datentypen, z. b. Videos.
 
-1. Wenn Sie nicht bereits geschehen, [erstellen Sie eine Verbindung](#create-a-connection), und klicken Sie dann [Hinzufügen von Daten zu einer vorhandenen app](#add-data-to-an-existing-app).
+1. Wenn Sie dies noch nicht getan haben, [Erstellen Sie eine Verbindung](#create-a-connection), und fügen Sie dann [Daten zu einer vorhandenen APP hinzu](#add-data-to-an-existing-app).
 
-1. Hinzufügen einer **Dropdown** steuern, und nennen Sie sie **ImageList**.
+1. Fügen Sie ein **Dropdown** -Steuerelement hinzu, und benennen Sie es **ImageList**.
 
-1. Legen Sie die **Elemente** Eigenschaft **ImageList** zu **Dokumente**.
+1. Legen Sie die **Items** -Eigenschaft von **ImageList** auf **Documents**fest.
 
-1. Auf der **Eigenschaften** Registerkarte im rechten Bereich, und Öffnen der **Wert** aus, und wählen Sie dann **Namen**.
+1. Öffnen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich die Liste **Wert** , und wählen Sie dann **Name**aus.
 
-    Die Dateinamen der Bilder in der Bibliothek angezeigt, **ImageList**.
+    Die Dateinamen der Bilder in Ihrer Bibliothek werden in der **ImageList**angezeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![Liste der images](./media/connection-sharepoint-online/dropdown-items.png)
+    > ![list of Images @ no__t-1
 
-1. Hinzufügen einer **Image** steuern, und legen dessen **Image** Eigenschaft auf den folgenden Ausdruck:
+1. Fügen Sie ein **Bild** Steuerelement hinzu, und legen Sie dessen **Image** -Eigenschaft auf diesen Ausdruck fest:
 
     `ImageList.Selected.'Link to item'`
 
-1. Drücken Sie F5, und wählen Sie dann auf einen anderen Wert im **ImageList**.
+1. Drücken Sie F5, und wählen Sie dann in **ImageList**einen anderen Wert aus.
 
-    Das Bild, das Sie angegeben haben, wird angezeigt.
+    Das von Ihnen angegebene Bild wird angezeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![Beispielbild](./media/connection-sharepoint-online/golden-honey.png)
+    > ![sample Image @ no__t-1
 
-Sie können [eine Beispiel-app herunterladen](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) veranschaulicht, dass einen komplexeren Ansatz zum Anzeigen von Daten aus einer SharePoint-Bibliothek.
+Sie können [eine Beispiel-app herunterladen](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) , die einen komplexeren Ansatz zum Darstellen von Daten aus einer SharePoint-Bibliothek veranschaulicht.
 
-1. Nachdem Sie die app heruntergeladen haben, öffnen Sie [PowerApps Studio](https://us.create.powerapps.com/studio/#)Option **öffnen** im linken Navigationsbereich, und klicken Sie anschließend **Durchsuchen**.
-1. In der **öffnen** Dialogfeld Suchen und öffnen Sie die Datei, die Sie heruntergeladen haben, und klicken Sie dann eine SharePoint-Bibliothek als Datenquelle hinzufügen, durch die ersten beiden Schritte in diesem Thema.
+1. Nachdem Sie die App heruntergeladen haben, öffnen Sie [PowerApps Studio](https://us.create.powerapps.com/studio/#), wählen Sie in der linken Navigationsleiste **Öffnen** aus, und klicken Sie dann auf **Durchsuchen**.
+1. Suchen und öffnen Sie im Dialogfeld **Öffnen** die heruntergeladene Datei, und fügen Sie dann eine SharePoint-Bibliothek als Datenquelle hinzu, indem Sie die ersten beiden Verfahren in diesem Thema befolgen.
 
 > [!NOTE]
-> Standardmäßig zeigt diese app [Delegierung Warnungen](../delegation-overview.md), aber Sie können diese ignorieren, wenn Ihre Bibliothek mit weniger als 500 Elemente enthält.
+> Standardmäßig zeigt diese APP [Delegierungs Warnungen](../delegation-overview.md)an, Sie können Sie jedoch ignorieren, wenn Ihre Bibliothek weniger als 500 Elemente enthält.
 
-In dieser app einem Bildschirm zeigt die Liste in der unteren linken Ecke alle Dateien in der Bibliothek.
+In dieser One-screen-App werden in der Liste in der unteren linken Ecke alle Dateien in der Bibliothek angezeigt.
 
-- Sie können für eine Datei suchen, indem eingeben oder Einfügen eines oder mehrere Zeichen in das Suchfeld im oberen Bereich.
-- Wenn Ihre Bibliothek Ordner enthält, können Sie die Liste der Dateien filtern, wählen Sie ein Symbol "Filter" in der Liste der Ordner direkt unter der Titelleiste.
+- Sie können nach einer Datei suchen, indem Sie ein oder mehrere Zeichen in das Suchfeld oben eingeben oder einfügen.
+- Wenn die Bibliothek Ordner enthält, können Sie die Liste der Dateien filtern, indem Sie in der Liste der Ordner direkt unter der Titelleiste ein Filter Symbol auswählen.
 
-Wenn Sie die Datei, die Sie möchten gefunden, wählen Sie ihn auf diesen in der **Video**, **Image**, oder **Audio** -Steuerelement entlang der rechten Seite.
+Wenn Sie die gewünschte Datei finden, wählen Sie diese aus, um Sie im **Video**-, **Bild**-oder **Audiosteuerelement** auf der rechten Seite anzuzeigen.
 
 > [!div class="mx-imgBorder"]
-> ![Beispielbild](./media/connection-sharepoint-online/library-app.png)
+> ![sample Image @ no__t-1
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-### <a name="lists"></a>Listen
+### <a name="lists"></a>Aufli
 
-PowerApps erhalten Spaltennamen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode ersetzt **"\_X0020\_"**. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+Powerapps kann Spaltennamen lesen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_x0020 @ no__t-2"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
-Nicht alle Typen von Spalten werden unterstützt, und nicht alle Spaltentypen unterstützen alle Typen von Karten.
+Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten unterstützen alle Kartentypen.
 
 | Spaltentyp | Support | Standardkarten |
 | --- | --- | --- |
@@ -206,10 +206,10 @@ Nicht alle Typen von Spalten werden unterstützt, und nicht alle Spaltentypen un
 
 ### <a name="libraries"></a>Bibliotheken
 
-- Sie können keine Dateien von PowerApps in einer Bibliothek hochladen.
-- PDF-Dateien aus einer Bibliothek kann nicht in einem PDF-Viewer-Steuerelement angezeigt werden.
-- PowerApps Mobile unterstützt nicht die **herunterladen** Funktion.
-- Wenn Ihre Benutzer die app in PowerApps Mobile oder Windows 10-app ausgeführt werden, verwenden Sie die **starten** Funktion, um die Bibliotheksinhalte in einem Katalog anzeigen.
+- Dateien aus powerapps können nicht in eine Bibliothek hochgeladen werden.
+- PDF-Dateien können nicht aus einer Bibliothek in einem PDF-Viewer-Steuerelement angezeigt werden.
+- Powerapps Mobile unterstützt die **Download** -Funktion nicht.
+- Wenn Ihre Benutzer die app in powerapps Mobile oder der Windows 10-app ausführen, verwenden Sie die **Launch** -Funktion, um Bibliotheksinhalte in einem Katalog anzuzeigen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

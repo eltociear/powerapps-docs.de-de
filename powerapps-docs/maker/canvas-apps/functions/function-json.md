@@ -1,137 +1,136 @@
 ---
 title: JSON-Funktion | Microsoft-Dokumentation
-description: Referenzinformationen einschließlich Syntax und Beispielen für die JSON-Funktion in PowerApps
+description: Referenzinformationen, einschließlich Syntax, für die JSON-Funktion in powerapps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/02/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 74e10a5b073e16ba9f35139441c94e9911446a0f
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736397"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992625"
 ---
-# <a name="json-function-in-powerapps"></a>JSON-Funktion in PowerApps
+# <a name="json-function-in-powerapps"></a>JSON-Funktion in powerapps
 
-Generiert eine JSON-Text-Zeichenfolge für eine Tabelle, einen Datensatz oder einen Wert an.
+Generiert eine JSON-Text Zeichenfolge für eine Tabelle, einen Datensatz oder einen Wert.
 
 ## <a name="description"></a>Beschreibung
 
-Die **JSON** Funktion gibt die JavaScript Object Notation (JSON)-Darstellung einer Datenstruktur als Text, damit es zum Speichern oder übertragen über ein Netzwerk geeignet ist. [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) und [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) beschreiben Sie das Format, das häufig von JavaScript und anderen Programmiersprachen verwendet wird.
+Die **JSON** -Funktion gibt die JavaScript Object Notation (JSON)-Darstellung einer Datenstruktur als Text zurück, damit Sie für die Speicherung oder Übertragung über ein Netzwerk geeignet ist. [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) und [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) beschreiben das Format, das häufig von JavaScript und anderen Programmiersprachen verwendet wird.
 
-Canvas-apps unterstützen die [Datentypen](data-types.md) , die diese Tabelle enthält, mit den Details für ihre Textdarstellung:
+Canvas-apps unterstützen die [Datentypen](data-types.md) , die in dieser Tabelle aufgeführt sind, mit Details zur Textdarstellung:
 
-| Datentyp | Beschreibung | Ergebnis-Beispiel |
+| Datentyp | Beschreibung | Ergebnis Beispiel |
 |-----------|-------------|---------|
-| **Boolean** | *"true"* oder *"false"* . | `true` |
-| **Farbe** | Eine Zeichenfolge, die die 8-stellige hexadezimale Darstellung für die Farbe enthält. Diese Darstellung hat das Format #*Rrggbbaa*, wobei *rr* ist die Rotkomponente, *Gg* ist Grün, *bb* ist Blau und *aa* ist der alpha-Kanal. Für den Alphakanal **00** ist vollständig transparent, und **ff** vollständig deckend ist. Sie können die Zeichenfolge, die übergeben die [ **ColorValue** ](function-colors.md) Funktion.  | `"#102030ff"` |
-| **Währung** | Zahl, die die entsprechenden Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Wissenschaftliche Schreibweise wird verwendet, wenn erforderlich. | `1,345` |
-| **Datum** | Zeichenfolge, das Datum im ISO 8601 enthält **jjjj-mm-tt** Format. | `"2019-03-31"` |
-| **DateTime** | Zeichenfolge, die von einem ISO 8601-Datum/Uhrzeit enthält. Datum/Uhrzeit-Werte sind in UTC, als der Ende "Z" steht.  | `"2019-03-31T22:32:06.822Z"`  |
+| **Booleschen** | *true* oder *false*. | `true` |
+| **Farbe** | Eine Zeichenfolge, die die 8-stellige hexadezimale Darstellung der Farbe enthält. Diese Darstellung hat das Format #*RRGGBBAA*, wobei *RR* die rote Komponente, *GG* ist grün, *BB* ist blau und *AA* der Alphakanal. Für den Alphakanal ist **00** vollständig transparent, und **FF** ist vollständig transparent. Sie können die Zeichenfolge an die [**ColorValue**](function-colors.md) -Funktion übergeben.  | `"#102030ff"` |
+| **Währung** | Eine Zahl, die das entsprechende Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Bei Bedarf wird die wissenschaftliche Schreibweise verwendet. | `1.345` |
+| **Datum** | Eine Zeichenfolge, die das Datum im Format ISO 8601 **yyyy-mm-dd** enthält. | `"2019-03-31"` |
+| **DateTime** | Eine Zeichenfolge, die ein Datum/eine Uhrzeit für ISO 8601 enthält. Datums-/Uhrzeitwerte werden in UTC angegeben, wie das Ende "Z" anzeigt.  | `"2019-03-31T22:32:06.822Z"`  |
 | **GUID** | Eine Zeichenfolge, die den GUID-Wert enthält. Buchstaben sind Kleinbuchstaben. | `"751b58ac-380e-4a04-a925-9f375995cc40"`
-| **Abbildung Medien** | Wenn **IncludeBinaryData** angegeben ist, wird von Mediendateien in einer Zeichenfolge codiert werden. Web-Verweise, die die Verwendung des http: oder Https: URL-Schema werden nicht geändert werden. Verweise auf binäre Daten im Arbeitsspeicher mit codiert sind die ["Daten:*Mimetype*; base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) Format. In-Memory-Daten enthält Images, die Benutzer mithilfe der Erfassen der [ **Kamera** ](../controls/control-camera.md) -Steuerelement und alle anderen Verweise mit der Appres: und -Blob: URL-Schemas.| `"data:image/jpeg;base64,/9j/4AA..."` |
-| **Anzahl** | Zahl, die die entsprechenden Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Wissenschaftliche Schreibweise wird verwendet, wenn erforderlich. | `1,345` |
-| **Option&nbsp;set** | Numerischer Wert der Option festgelegt, nicht die Bezeichnung, die für die Anzeige verwendet wird. Der numerische Wert wird verwendet, da es sich um sprachunabhängig ist.  | `1001` |
-| **Zeit** | Zeichenfolge mit einer ISO-8601 *ss.fff* Format.  | `"23:12:49.000"` |
-| **Record** | Durch Trennzeichen getrennte Liste, zwischen **{** und **}** , Felder und ihre Werte. Diese Notation ähnelt, die für Datensätze in der Canvas-apps, aber der Name ist immer in doppelte Anführungszeichen ein. Dieses Format unterstützt keine Datensätze, die für die n: 1 Beziehungen basieren.  | `{ "First Name": "Fred"; "Age": 21 }` |
-| **Tabelle** | Durch Trennzeichen getrennte Liste, zwischen **[** und **]** , der Datensätze. Dieses Format unterstützt keine Tabellen, die für die 1: n Beziehungen basieren.  | `[ { "First Name": "Fred"; "Age": 21 }; { "First Name": "Jean"; "Age": 20 } ]` |
-| **Two&nbsp;option** | Boolescher Wert, der zwei-Option *"true"* oder *"false"* , nicht die Bezeichnung, die für die Anzeige verwendet wird. Der boolesche Wert wird verwendet, da es sich um sprachunabhängig ist. | `false` |
-| **Hyperlink, Text** | Eine Zeichenfolge in doppelte Anführungszeichen ein. Die Funktion eingebettete doppelte Anführungszeichen mit einem umgekehrten Schrägstrich mit Escapezeichen zu versehen, ersetzt der neue Zeilen mit "\n" und andere standard-JavaScript-Ersetzungen macht. | `"This is a string."` |
+| **Bild, Medien** | Wenn **includebinarydata** angegeben ist, werden Mediendateien in einer Zeichenfolge codiert. Webverweise, die http: oder HTTPS verwenden: Das URL-Schema wird nicht geändert. Verweise auf Binärdaten im Arbeitsspeicher werden mit dem Format ["Data:*MimeType*; Base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) codiert. In-Memory-Daten enthalten Bilder, die Benutzer mithilfe des [**Kamera**](../controls/control-camera.md) -Steuer Elements und anderer Verweise mit dem appres: und BLOB erfassen: URL-Schemas.| `"data:image/jpeg;base64,/9j/4AA..."` |
+| **Einigen** | Eine Zahl, die das entsprechende Dezimaltrennzeichen für die Sprache des Benutzers verwendet. Bei Bedarf wird die wissenschaftliche Schreibweise verwendet. | `1.345` |
+| **Option @ no__t-1Set** | Numerischer Wert des Options Satzes, nicht der Bezeichnung, die für die Anzeige verwendet wird. Der numerische Wert wird verwendet, da er sprachunabhängig ist.  | `1001` |
+| **Zeit** | Eine Zeichenfolge, die ein ISO 8601 *hh: mm: SS. fff* -Format enthält.  | `"23:12:49.000"` |
+| **Aufnahme** | Durch Trennzeichen getrennte Liste, zwischen **{** und **}** , von Feldern und deren Werten. Diese Notation ähnelt der für Datensätze in Canvas-apps, aber der Name ist immer zwischen doppelten Anführungszeichen. Dieses Format unterstützt keine Datensätze, die auf n:1-Beziehungen basieren.  | `{ "First Name": "Fred", "Age": 21 }` |
+| **Glaub** | Durch Trennzeichen getrennte Liste zwischen **[** und **]** von Datensätzen. Dieses Format unterstützt keine Tabellen, die auf 1: n-Beziehungen basieren.  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
+| **Two @ no__t-1option** | Der boolesche Wert der beiden Option *true* oder *false*, nicht die Bezeichnung, die für die Anzeige verwendet wird. Der boolesche Wert wird verwendet, da er sprachunabhängig ist. | `false` |
+| **Hyperlink, Text** | Zeichenfolge zwischen doppelten Anführungszeichen. Die Funktion schützt eingebettete doppelte Anführungszeichen mit einem umgekehrten Schrägstrich, ersetzt neue Zeilen durch "\n" und führt andere standardmäßige JavaScript-Ersetzungen durch. | `"This is a string."` |
 
-Geben Sie den optionalen *Format* Argument, um zu steuern, wie lesbare Ergebnis und wie nicht unterstützt und binären Datentypen behandelt werden. In der Standardeinstellung die Ausgabe ist so kompakt wie möglich, ohne unnötige Leerzeichen oder Zeilenumbrüche, und nicht unterstützten Datentypen und binäre Daten sind nicht zulässig. Sie können mehrere Formate kombinieren, bei der Angabe der **&** Operator.
+Geben Sie das optionale *Format* Argument an, um zu steuern, wie lesbar das Ergebnis ist und wie nicht unterstützte und binäre Datentypen behandelt werden. Standardmäßig ist die Ausgabe so kompakt wie möglich ohne unnötige Leerzeichen oder Zeilenumbrüche, und nicht unterstützte Datentypen und binäre Daten sind nicht zulässig. Sie können mehrere Formate kombinieren, wenn Sie den **&-** Operator angeben.
 
-| JSONFormat-Enumeration | Beschreibung |
+| Jsonformat-Enumeration | Beschreibung |
 |-----------------|-------------|
-| **Komprimieren** | Standard.  Die Ausgabe ist so kompakt wie möglich ohne zusätzliche Leerzeichen oder Zeilenumbrüche. |
-| **IndentFour** | Um die Lesbarkeit zu verbessern, wird die Ausgabe enthält eine neue Zeile für jede Spalte und die Schachtelungsebene und vier Leerzeichen verwendet, für die einzelnen Einzugsebenen. |
-| **IncludeBinaryData** | Das Ergebnis enthält das Bild, video und Audio Clips Spalten. Dieses Format kann erheblich vergrößern Sie das Ergebnis des und beeinträchtigt die Leistung Ihrer app. |
-| **IgnoreBinaryData** | Das Ergebnis enthält keine Bild, video oder Audio Clips Spalten. Wenn Sie keines von beiden angeben **IncludeBinaryData** noch **IgnoreBinaryData**, die Funktion erzeugt einen Fehler aus, wenn es sich um binäre Daten trifft. |
-| **IgnoreUnsupportedTypes** | Nicht unterstützte Datentypen sind zulässig, aber das Ergebnis nicht enthalten sind. Standardmäßig werden von nicht unterstützten Datentypen einen Fehler erzeugen. |
+| **Theit** | Standard.  Die Ausgabe ist so kompakt wie möglich ohne hinzugefügte Leerzeichen oder Zeilenumbrüche. |
+| **Einzug** | Um die Lesbarkeit zu verbessern, enthält die Ausgabe einen Zeilen Wechsel für jede Spalte und Schachtelungs Ebene und verwendet vier Leerzeichen für jede Einzugs Ebene. |
+| **Includebinarydata** | Das Ergebnis enthält Bild-, Video-und Audioclip-Spalten. Dieses Format kann die Größe des Ergebnisses drastisch erhöhen und die Leistung Ihrer APP beeinträchtigen. |
+| **Ignorebinarydata** | Das Ergebnis enthält keine Bild-, Video-oder Audioclip-Spalten. Wenn Sie weder **includebinarydata** noch **ignorebinarydata**angeben, erzeugt die Funktion einen Fehler, wenn Binärdaten gefunden werden. |
+| **Ignoreunsupportedtypes** | Nicht unterstützte Datentypen sind zulässig, das Ergebnis enthält Sie jedoch nicht. Standardmäßig wird von nicht unterstützten Datentypen ein Fehler erzeugt. |
 
-Verwenden der [ **ShowColumns** und **DropColumns** ](function-table-shaping.md) Funktionen steuern, welche Daten das Ergebnis enthält und nicht unterstützten Datentypen zu löschen.
+Verwenden Sie die Funktionen [ **showcolumns** und **dropcolumns** ](function-table-shaping.md) , um zu steuern, welche Daten das Ergebnis enthält, und um nicht unterstützte Datentypen zu entfernen.
 
-Da **JSON** kann Arbeitsspeicher- und Compute-intensiv ist, können Sie diese Funktion nur in [-Verhalten funktioniert](../working-with-formulas-in-depth.md). Sie können das Ergebnis von erfassen **JSON** in einer [Variable](../working-with-variables.md), die Sie dann im Datenfluss verwenden können.
+Da **JSON** sowohl Arbeitsspeicher als auch Rechen intensiv sein kann, können Sie diese Funktion nur in [Verhaltens Funktionen](../working-with-formulas-in-depth.md)verwenden. Sie können das Ergebnis aus **JSON** in einer [Variablen](../working-with-variables.md)erfassen, die Sie dann im Datenfluss verwenden können.
 
-Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, enthält das Ergebnis den logischen Name. Anzeigenamen entsprechend die Sprache der app-Benutzer und können daher für die Übertragung von Daten in einen gemeinsamen Dienst nicht geeignet.
+Wenn eine Spalte sowohl einen anzeigen Amen als auch einen logischen Namen aufweist, enthält das Ergebnis den logischen Namen. Anzeigen Amen spiegeln die Sprache des App-Benutzers wider und sind daher für die Datenübertragung an einen gemeinsamen Dienst ungeeignet.
 
 ## <a name="syntax"></a>Syntax
 
-**JSON**( *DataStructure* [; *Format* ])
+**JSON**( *datastructure* [, *Format* ])
 
-* *DataStructure* : erforderlich. Die Datenstruktur in JSON konvertieren.  Tabellen, Datensätze und primitive Werte werden unterstützt und beliebig geschachtelt an.
-* *Format* : Optional.  **JSONFormat** Enum-Wert. Der Standardwert ist **Compact**, die keine Zeilenumbrüche oder Leerzeichen hinzufügen und blockiert die Binärdaten und nicht unterstützte Spalten.
+* *Datastructure* – erforderlich. Die Datenstruktur, die in JSON konvertiert werden soll.  Tabellen, Datensätze und primitive Werte werden beliebig unterstützt.
+* *Format* : optional.  Der **jsonformat** -Enumerationswert. Der Standardwert ist **Compact**. Dadurch werden keine Zeilenumbrüche oder Leerzeichen hinzugefügt, und binäre Daten und nicht unterstützte Spalten werden blockiert.
 
 ## <a name="examples"></a>Beispiele
 
 ### <a name="hierarchical-data"></a>Hierarchische Daten
 
-1. Fügen Sie eine [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel.
+1. Fügen Sie ein [**Button**](../controls/control-button.md) -Steuerelement ein, und legen **Sie dessen onselect** -Eigenschaft auf diese Formel fest.
 
-    ```powerapps-comma
-    ClearCollect( CityPopulations;
-        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
-        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
-        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
-        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
-        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
-        { City: "Munich";    Country: "Germany";        Population: 1494000 }
-    );;
-    ClearCollect( CitiesByCountry; GroupBy( CityPopulations; "Country"; "Cities" ) )
+    ```powerapps-dot
+    ClearCollect( CityPopulations,
+        { City: "London",    Country: "United Kingdom", Population: 8615000 },
+        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
+        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
+        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
+        { City: "Munich",    Country: "Germany",        Population: 1494000 }
+    );
+    ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )
     ```
 
 1. Wählen Sie die Schaltfläche, während Sie die Alt-Taste gedrückt halten.
 
-    Die **CitiesByCountry** Sammlung wird erstellt, mit dieser Datenstruktur, das Sie durch Auswahl anzeigen können **Sammlungen** auf die **Datei** Menü auswählen und dann auf den Namen des der Auflistung.
+    Die Sammlung " **citiesbycountry** " wird mit dieser Datenstruktur erstellt, die Sie anzeigen können, indem Sie im Menü " **Datei** " die Option **Sammlungen** auswählen und dann den Namen der Sammlung auswählen.
 
     > [!div class="mx-imgBorder"]
-    > ![CitiesByCountry-Auflistung](media/function-json/cities-grouped.png)
+    > ![citiesbycountry-Auflistung @ no__t-1
 
-    Sie können diese Sammlung auch anzeigen, dazu **Datei** > **Anwendungseinstellungen** > **Erweiterte Einstellungen**  >   **Aktivieren Sie die Bearbeitungsleiste Ergebnisansicht**, wählen Sie in der Bearbeitungsleiste den Namen der Sammlung, und wählen Sie dann auf den Pfeil nach unten neben dem Namen der Sammlung unter der Bearbeitungsleiste angezeigt.
+    Sie können diese Auflistung auch anzeigen, indem Sie **Datei** > **App-Einstellungen** > **Erweiterte Einstellungen** >  Aktivieren der Formel leisten-**Ergebnis Ansicht**auswählen, den Namen der Sammlung in der Bearbeitungs Leiste auswählen und dann das nach-unten-Pfeil neben dem Namen der Sammlung in der Bearbeitungs Leiste.
 
     > [!div class="mx-imgBorder"]
-    > ![Die Auflistung in der Bearbeitungsleiste-Ergebnisansicht](media/function-json/cities-grouped-resultview.png)
+    > ![collection in der Ergebnis Ansicht der Formel Leiste @ no__t-1
 
-1. Einfügen einer weiteren Schaltfläche, und legen Sie dessen **OnSelect** -Eigenschaft auf diese Formel:
+1. Fügen Sie eine weitere Schaltfläche ein, und legen **Sie die onselect** -Eigenschaft auf diese Formel fest
 
-    ```powerapps-comma
-    Set( CitiesByCountryJSON; JSON( CitiesByCountry ) )
+    ```powerapps-dot
+    Set( CitiesByCountryJSON, JSON( CitiesByCountry ) )
     ```
 
-    Diese Formel wird die globale Variable **CitiesByCountryJSON** die JSON-Darstellung für **CitiesByCountry**.
+    Diese Formel legt die globale Variable " **citiesbycountryjson** " auf die JSON-Darstellung für " **citiesbycountry**" fest.
 
 1. Wählen Sie die Schaltfläche, während Sie die Alt-Taste gedrückt halten.
 
-1. Fügen Sie eine [ **Bezeichnung** ](../controls/control-text-box.md) steuern, und legen dessen **Text** Eigenschaft, um diese Variable.
+1. Fügen Sie ein [**Label**](../controls/control-text-box.md) -Steuerelement ein, und legen Sie dessen Eigenschaft **Text** auf diese Variable fest.
 
-    ```powerapps-comma
+    ```powerapps-dot
     CitiesByCountryJSON
     ```
 
-    Die Bezeichnung zeigt dieses Ergebnis, alle in einer einzelnen Zeile ohne Leerzeichen, für die Übertragung über ein Netzwerk geeignet ist:
+    Die Bezeichnung zeigt dieses Ergebnis an, und zwar in einer einzelnen Zeile ohne Leerzeichen, die für die Übertragung über ein Netzwerk geeignet ist:
 
     ```json
     [{"Cities":[{"City":"London","Population":8615000}],"Country":"United Kingdom"},{"Cities":[{"City":"Berlin","Population":3562000},{"City":"Hamburg","Population":1760000},{"City":"Munich","Population":1494000}],"Country":"Germany"},{"Cities":[{"City":"Madrid","Population":3165000},{"City":"Barcelona","Population":1602000}],"Country":"Spain"}]
     ```
 
-1. Ändern Sie die zweite Schaltfläche Formel ein, um die Ausgabe besser lesbar zu machen.
+1. Ändern Sie die Formel der zweiten Schaltfläche, um die Ausgabe lesbarer zu machen.
 
-    ```powerapps-comma
-    Set( CitiesByCountryJSON; JSON(CitiesByCountry; JSONFormat.IndentFour ))
+    ```powerapps-dot
+    Set( CitiesByCountryJSON, JSON(CitiesByCountry, JSONFormat.IndentFour ))
     ```
 
 1. Wählen Sie die zweite Schaltfläche, während Sie die Alt-Taste gedrückt halten.
 
-    Die Bezeichnung zeigt das Ergebnis besser lesbarere.
+    Die Bezeichnung zeigt das besser lesbare Ergebnis.
 
     ```json
     [
@@ -177,29 +176,29 @@ Wenn eine Spalte einen Anzeigenamen ein, und einen logischen Namen aufweist, ent
     ]
     ```
 
-### <a name="images-and-media-in-base64"></a>Bildern und Medien in base64
+### <a name="images-and-media-in-base64"></a>Bilder und Medien in Base64
 
-1. Hinzufügen einer [ **Image** ](../controls/control-image.md) Steuerelement.
+1. Fügen Sie ein [**Bild**](../controls/control-image.md) Steuerelement hinzu.
 
-    Dieses Steuerelement wird **SampleImage** mit.
+    Dieses Steuerelement bringt **sampleImage** damit ein.
 
-1. Hinzufügen einer [ **Schaltfläche** ](../controls/control-button.md) steuern, und legen dessen **OnSelect** -Eigenschaft auf diese Formel.
+1. Fügen Sie ein [**Button**](../controls/control-button.md) -Steuerelement hinzu, und legen Sie dessen **onselect** -Eigenschaft auf diese Formel fest.
 
-    ```powerapps-comma
-    Set( ImageJSON; JSON( SampleImage; JSONFormat.IncludeBinaryData ) )
+    ```powerapps-dot
+    Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )
     ```
 
 1. Wählen Sie die Schaltfläche, während Sie die Alt-Taste gedrückt halten.
 
-1. Fügen Sie eine Bezeichnung hinzu, und legen dessen **Text** Eigenschaft, um diese Variable.
+1. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren **Text** -Eigenschaft auf diese Variable fest.
 
-    ```powerapps-comma
+    ```powerapps-dot
     ImageJSON
     ```
 
-1. Die Größe des Steuerelements, und reduzieren Sie den Schriftgrad aus, nach Bedarf, um die meisten der das Ergebnis anzuzeigen.
+1. Ändern Sie die Größe des Steuer Elements, und reduzieren Sie den Schrift Grad nach Bedarf, um den größten Teil des Ergebnisses anzuzeigen.
 
-    Die Bezeichnung zeigt der Zeichenfolge, die die **JSON** Funktion erfasst.
+    Die Bezeichnung zeigt die Text Zeichenfolge, die die **JSON** -Funktion aufgezeichnet hat.
 
     ```json
     "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI3MHB4IiBoZWlnaHQ9IjI3MHB4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNzAgMjcwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCgk8ZyBjbGFzcz0ic3QwIj4NCgkJPHJlY3QgeT0iMC43IiBmaWxsPSIjRTlFOUU5IiB3aWR0aD0iMjY5IiBoZWlnaHQ9IjI2OS4zIi8+DQoJCTxwb2x5Z29uIGZpbGw9IiNDQkNCQ0EiIHBvaW50cz0iMjc3LjksMTg3LjEgMjQ1LDE0My40IDE4OC42LDIwMi44IDc1LDgwLjUgLTQuMSwxNjUuMyAtNC4xLDI3MiAyNzcuOSwyNzIiLz4NCgkJPGVsbGlwc2UgZmlsbD0iI0NCQ0JDQSIgY3g9IjIwMi40IiBjeT0iODQuMSIgcng9IjI0LjQiIHJ5PSIyNC4zIi8+DQoJPC9nPg0KPC9zdmc+"

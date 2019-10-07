@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/07/2016
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9f7f0184f70643417154f229c1e957ea6218b34
-ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
+ms.openlocfilehash: da6c30cc824f5bb6cf1f661d332831223c37d5b8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150260"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993885"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Herstellen einer Verbindung mit Office 365-Benutzer aus PowerApps
 ![Office 365-Benutzer](./media/connection-office365-users/office365icon.png)

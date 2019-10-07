@@ -6,25 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/07/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
-ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
+ms.openlocfilehash: f258beee317fcdad46d71b504f9c8a3046bb3641
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316758"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993367"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Power BI-Kachel-Steuerelement in PowerApps
 
 Ein Steuerelement, das eine [Power BI](https://powerbi.microsoft.com)-Kachel in einer App anzeigt.
 
-Sie haben noch kein Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
+Sie haben keine Power BI? [Registrieren Sie sich](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
 ## <a name="description"></a>Beschreibung
 
@@ -34,27 +34,27 @@ Profitieren Sie von Ihrer vorhandenen Datenanalyse und -berichterstellung, indem
 
 Wenn Sie eine App freigeben, die Power BI-Inhalt enthält, müssen Sie nicht nur die App selbst sondern auch das [Dashboard](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports) freigeben, aus dem die Kachel stammt. Andernfalls wird der Power BI-Inhalt auch nicht für Benutzer, die die App öffnen, angezeigt. Apps, die Power BI-Inhalt enthalten, berücksichtigen die Berechtigungen für diesen Inhalt.
 
-## <a name="performance"></a>Leistung
+## <a name="performance"></a>Leistungs
 
 Es wird nicht empfohlen, mehr als drei Power BI-Kacheln zur gleichen Zeit in einer App zu laden. Sie können den Ladungsvorgang von Kacheln und auch das Entladen steuern, indem Sie die Eigenschaft **LoadPowerBIContent** festlegen.
 
-## <a name="pass-a-parameter"></a>Weitergeben eines Parameters
+## <a name="pass-a-parameter"></a>Übergeben eines Parameters
 
-Übergeben Sie einen einzelnen Parameter aus der app, können Sie die Ergebnisse filtern, die in einer Power BI-Kachel angezeigt werden. Allerdings werden nur Zeichenfolgenwerte und den Equals-Operator unterstützt, und der Filter funktionieren möglicherweise nicht, wenn der Tabellenname oder den Namen der Spalte mit Leerzeichen enthält.
+Durch die Übergabe eines einzelnen Parameters aus der App können Sie die Ergebnisse filtern, die in einer Power BI Kachel angezeigt werden. Allerdings werden nur Zeichen folgen Werte und der Gleichheits Operator unterstützt, und der Filter funktioniert möglicherweise nicht, wenn der Tabellenname oder der Spaltenname Leerzeichen enthält.
 
-Um einen einzelnen Filter-Wert übergeben wird, ändern Sie den Wert des der **TileURL** -Eigenschaft, die diese Syntax folgt:
+Um einen einzelnen Filter Wert zu übergeben, ändern Sie den Wert der **tileurl** -Eigenschaft, die dieser Syntax folgt:
 
 ```
 "https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
 ```
 
-Fügen Sie auf den Wert der diese Syntax:
+Fügen Sie diese Syntax an diesen Wert an:
 
 ```
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-Der Parameter wird einen Wert in das Dataset des Berichts gefiltert und stammt, in dem die Kachel.
+Mit dem-Parameter wird ein Wert im DataSet des Berichts gefiltert, von dem die Kachel stammt.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 

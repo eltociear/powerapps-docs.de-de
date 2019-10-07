@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca4fbaf18d7fa993a28f5cbb70f317b4ef5d42fd
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 81220ab8df16dcea74dbdc9db48e692e379e1b4d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61563668"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992615"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Die Funktionen „Left“, „Mid“ und „Right“ in PowerApps
 Extrahiert die linken, mittleren oder rechten Teil einer Textzeichenfolge
@@ -33,20 +32,20 @@ Die Funktionen **Left**, **Mid** und **Right** geben einen Teil einer Zeichenfol
 
 Wenn Sie eine einzelne Zeichenfolge als Argument angeben, gibt die Funktion den Teil der Zeichenfolge zurück, den Sie angefordert haben. Wenn Sie eine einspaltige [Tabelle](../working-with-tables.md) mit einer Zeichenfolge angeben, gibt die Funktion eine einspaltige Tabelle aus den Teilen der Zeichenfolge zurück, die Sie angefordert haben. Mehrspaltige Tabellen können, wenn angegeben, in einspaltige Tabellen umgeformt werden, wie unter [Arbeiten mit Tabellen](../working-with-tables.md) beschrieben.
 
-Ist die Anfangsposition negativ oder hinter dem Ende des Strings, gibt die **Mid**-Funktion eine *leere* Zeichenfolge zurück.  Mithilfe der **[Len](function-len.md)**-Funktion kann die Länge einer Zeichenfolge überprüft werden. Wenn mehr Zeichen angefordert werden als die Zeichenfolge enthält, gibt die Funktion so viele Zeichen wie möglich zurück.
+Ist die Anfangsposition negativ oder hinter dem Ende des Strings, gibt die **Mid**-Funktion eine *leere* Zeichenfolge zurück.  Mithilfe der **[Len](function-len.md)** -Funktion kann die Länge einer Zeichenfolge überprüft werden. Wenn mehr Zeichen angefordert werden als die Zeichenfolge enthält, gibt die Funktion so viele Zeichen wie möglich zurück.
 
 ## <a name="syntax"></a>Syntax
-**Left**( *Zeichenfolge*; *AnzahlDerZeichen* )<br>**Mid**( *Zeichenfolge*; *Anfangsposition*; *AnzahlDerZeichen* )<br>**Right**( *Zeichenfolge*; *AnzahlDerZeichen* )
+**Left**( *Zeichenfolge*, *AnzahlDerZeichen* )<br>**Mid**( *Zeichenfolge*, *Anfangsposition*, *AnzahlDerZeichen* )<br>**Right**( *Zeichenfolge*, *AnzahlDerZeichen* )
 
 * *Zeichenfolge*: erforderlich. Die Zeichenfolge, aus der das Ergebnis extrahiert werden soll
 * *Anfangsposition*: erforderlich (nur bei **Mid**).  Die Anfangsposition.  Das erste Zeichen von der Zeichenfolge befindet sich an Position 1.
-* *Anzahlderzeichen* : erforderlich (**Links** und **rechts** nur).  Die Anzahl der zu zurückzugebenden Zeichen  Wenn für die nicht angegeben. die **Mid** -Funktion, die Funktion gibt den Abschnitt ab der Startposition bis zum Ende der Zeichenfolge.
+* *Anzahlungzeichen* : erforderlich (nur**Links** und **Rechts** ).  Die Anzahl der zu zurückzugebenden Zeichen  Wenn der Wert für die **Mid** -Funktion weggelassen wird, gibt die-Funktion den Teil von der Anfangsposition bis zum Ende der Zeichenfolge zurück.
 
-**Left**( *einspaltigeTabelle*; *AnzahlDerZeichen* )<br>**Mid**( *einspaltigeTabelle*; *Anfangsposition*; *AnzahlDerZeichen* )<br>**Right**( *einspaltigeTabelle*; *AnzahlDerZeichen* )
+**Left**( *einspaltigeTabelle*, *AnzahlDerZeichen* )<br>**Mid**( *einspaltigeTabelle*, *Anfangsposition*, *AnzahlDerZeichen* )<br>**Right**( *einspaltigeTabelle*, *AnzahlDerZeichen* )
 
 * *EinspaltigeTabelle*: erforderlich. Eine einspaltige Tabelle aus Zeichenfolgen, aus denen die Ergebnisse extrahiert werden sollen
 * *Anfangsposition*: erforderlich (nur bei **Mid**).  Die Anfangsposition.  Das erste Zeichen von der Zeichenfolge befindet sich an Position 1.
-* *Anzahlderzeichen* : erforderlich (**Links** und **rechts** nur).  Die Anzahl der zu zurückzugebenden Zeichen  Wenn für die nicht angegeben. die **Mid** -Funktion, die Funktion gibt den Abschnitt ab der Startposition bis zum Ende der Zeichenfolge.
+* *Anzahlungzeichen* : erforderlich (nur**Links** und **Rechts** ).  Die Anzahl der zu zurückzugebenden Zeichen  Wenn der Wert für die **Mid** -Funktion weggelassen wird, gibt die-Funktion den Teil von der Anfangsposition bis zum Ende der Zeichenfolge zurück.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="single-string"></a>Einzelne Zeichenfolge
@@ -54,10 +53,10 @@ In den Beispielen in diesem Abschnitt wird ein Texteingabe-Steuerelement als [Da
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Left( Author.Text; 5 )** |Extrahiert bis zu fünf Zeichen vom Anfang der Zeichenfolge |„E. E.“ |
-| **Mid( Author.Text; 7; 4 )** |Extrahiert ab dem siebten Zeichen bis zu vier Zeichen aus der Zeichenfolge |„Cumm“ |
-| **Mid( Author.Text; 7 )** |Extrahiert alle Zeichen, beginnend mit dem siebten Zeichen aus der Zeichenfolge. |"Cummings" |
-| **Right( Author.Text; 5 )** |Extrahiert bis zu fünf Zeichen aus dem Ende der Zeichenfolge |„mings“ |
+| **Left( Author.Text, 5 )** |Extrahiert bis zu fünf Zeichen vom Anfang der Zeichenfolge |„E. E.“ |
+| **Mid( Author.Text, 7, 4 )** |Extrahiert ab dem siebten Zeichen bis zu vier Zeichen aus der Zeichenfolge |„Cumm“ |
+| **Mid (Author. Text, 7)** |Extrahiert alle Zeichen, beginnend mit dem siebten Zeichen, aus der Zeichenfolge. |"Cummings" |
+| **Right( Author.Text, 5 )** |Extrahiert bis zu fünf Zeichen aus dem Ende der Zeichenfolge |„mings“ |
 
 ### <a name="single-column-table"></a>Einspaltige Tabelle
 In jedem Beispiel in diesem Abschnitt werden Zeichenfolgen aus der **Adress**[spalte](../working-with-tables.md#columns) dieser Datenquelle namens **People** (Personen) extrahiert, und es wird eine einspaltige Tabelle mit den Ergebnissen zurückgegeben:
@@ -66,15 +65,15 @@ In jedem Beispiel in diesem Abschnitt werden Zeichenfolgen aus der **Adress**[sp
 
 | Formel | Beschreibung | Ergebnis |
 | --- | --- | --- |
-| **Left( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 8 )** |Extrahiert die ersten acht Zeichen einer Zeichenfolge |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
-| **Mid( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 5; 7 )** |Extrahiert ab dem fünften Zeichen die mittleren sieben Zeichen einer Zeichenfolge |![](media/function-left-mid-right/people-table-mid.png) |
-| **Right( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 7 )** |Extrahiert die letzten sieben Zeichen einer Zeichenfolge |![](media/function-left-mid-right/people-table-right.png) |
+| **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** |Extrahiert die ersten acht Zeichen einer Zeichenfolge |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
+| **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** |Extrahiert ab dem fünften Zeichen die mittleren sieben Zeichen einer Zeichenfolge |![](media/function-left-mid-right/people-table-mid.png) |
+| **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )** |Extrahiert die letzten sieben Zeichen einer Zeichenfolge |![](media/function-left-mid-right/people-table-right.png) |
 
 ### <a name="step-by-step-example"></a>Schritt-für-Schritt-Beispiel
 1. Importieren oder erstellen Sie eine [Sammlung](../working-with-data-sources.md#collections) namens **Inventory** (Inventar), und zeigen Sie sie in einem Katalog an. Dies wird im ersten Verfahren unter [Anzeigen von Bildern und Text in einem Katalog](../show-images-text-gallery-sort-filter.md) beschrieben.
-2. Legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft der unteren Beschriftung im Katalog auf diese Funktion fest:
+2. Legen Sie die **[Text](../controls/properties-core.md)** -Eigenschaft der unteren Beschriftung im Katalog auf diese Funktion fest:
    
-    **Right(ThisItem.ProductName; 3)**
+    **Right(ThisItem.ProductName, 3)**
    
     Die Bezeichnung zeigt die letzten drei Zeichen eines jeden Produktnamens an.
 

@@ -1,24 +1,24 @@
 ---
 title: Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements | Microsoft-Dokumentation
 description: Hier erhalten Sie schrittweise Anweisungen, anhand derer Sie Canvas-App-Steuerelemente direkt, über die Symbolleiste, auf der Registerkarte „Eigenschaften“ oder in der Bearbeitungsleiste hinzufügen und konfigurieren können.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/25/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3311433b3950bcf48dc6c7b7969da501e542952c
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 9d16e4c7b8d15611b06644520c0ee39417fd3ee0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670904"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994705"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements in PowerApps
 
@@ -26,126 +26,126 @@ Fügen Sie Ihrer Canvas-App vielfältige Benutzeroberflächenelemente hinzu, und
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-1. Wenn Sie noch nicht über eine PowerApps-Lizenz verfügen [registrieren](../signup-for-powerapps.md), und klicken Sie dann [Anmeldung](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
-1. Klicken Sie unter **eigene App**, zeigen Sie auf **Canvas-app mit leerer App**, und wählen Sie dann **diese App**.
-1. Wenn Sie aufgefordert werden, die Einführung anzuschauen, wählen Sie **Weiter** mit wichtigen Bereichen der PowerApps Schnittstelle vertraut machen (oder wählen Sie **überspringen**).
+1. Wenn Sie noch nicht über eine powerapps-Lizenz verfügen, [registrieren](../signup-for-powerapps.md)Sie sich, und melden Sie sich dann [an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Zeigen Sie unter **eigene APP erstellen**mit der Maus auf die **Canvas-App**, und klicken Sie dann auf **diese APP erstellen**.
+1. Wenn Sie aufgefordert werden, die Einführungstour durchzubringen, wählen Sie **weiter** aus, um sich mit wichtigen Bereichen der powerapps-Schnittstelle vertraut zu machen (oder wählen Sie über **springen**).
 
-    Sie können die Tour immer später erstellen, indem Sie auf das Fragezeichen-Symbol in der Nähe der oberen rechten Ecke des Bildschirms, und wählen Sie dann **Einführungstour**.
+    Sie können die Tour später jederzeit durchführen, indem Sie das Fragezeichen-Symbol in der Nähe der oberen rechten Ecke des Bildschirms auswählen und dann **die Einführungstour durchführen**.
 
-## <a name="add-and-select-a-control"></a>Fügen Sie hinzu, und wählen Sie ein Steuerelement
+## <a name="add-and-select-a-control"></a>Hinzufügen und Auswählen eines Steuer Elements
 
-Auf der **einfügen** Registerkarte, führen Sie einen der folgenden Schritte aus:
+Führen Sie auf der Registerkarte **Einfügen** einen der folgenden Schritte aus:
 
-- Wählen Sie **Bezeichnung** oder **Schaltfläche** einen dieser Typen von Steuerelementen hinzufügen.
-- Wählen Sie eine Kategorie von Steuerelementen, und wählen Sie dann auf den Typ des Steuerelements, die Sie hinzufügen möchten.
+- Wählen Sie **Bezeichnung** oder **Schaltfläche** aus, um einen dieser Steuerelement Typen hinzuzufügen.
+- Wählen Sie eine Kategorie von Steuerelementen aus, und wählen Sie dann den Typ des Steuer Elements aus, das Sie hinzufügen möchten.
 
-Wählen Sie z. B. **neuer Bildschirm**, und wählen Sie dann **leere** auf einen leeren Bildschirm Ihrer app hinzufügen. (Die Bildschirme sind eine Art von Steuerelement, das weitere Typen von Steuerelementen enthalten kann.)
+Wählen Sie beispielsweise **neuer Bildschirm**aus, und klicken Sie dann auf **leer** , um der APP einen leeren Bildschirm hinzuzufügen. (Bildschirme sind ein Typ von Steuerelementen, die andere Steuerelement Typen enthalten können.)
 
-![Bildschirm "hinzufügen"](./media/add-configure-controls/add-screen.png)
+![Bildschirm hinzufügen](./media/add-configure-controls/add-screen.png)
 
-Den Namen des neuen Bildschirms **Screen2** und wird im linken Navigationsbereich angezeigt. Diesem Bereich werden eine hierarchische Liste der Steuerelemente in Ihrer app, sodass Sie problemlos ermitteln können, und wählen Sie jedes Steuerelement.
+Der neue Bildschirm heißt **Screen2** und wird im linken Navigationsbereich angezeigt. In diesem Bereich wird eine hierarchische Liste der Steuerelemente in ihrer App angezeigt, sodass Sie jedes Steuerelement problemlos suchen und auswählen können.
 
 ![Screen2 in Liste](./media/add-configure-controls/list-screen2.png)
 
-Wählen Sie zur Veranschaulichung der Funktionsweise dieser Liste, **Bezeichnung** auf die **einfügen** Registerkarte. Das neue Steuerelement wird unter **Screen2** in der hierarchischen Liste.
+Um zu veranschaulichen, wie diese Liste funktioniert, wählen Sie auf der Registerkarte **Einfügen** die Option **Bezeichnung** . Das neue Steuerelement wird in der hierarchischen Liste unter **Screen2** angezeigt.
 
 ![Screen2 in Liste](./media/add-configure-controls/add-label.png)
 
-Auf dem Bildschirm umschließt ein Feld mit sechs Handles die Bezeichnung in der Standardeinstellung an. Diese Art von Feld umgeben ist, welches Steuerelement ausgewählt ist. Wenn Sie den Bildschirm durch Klicken oder tippen es (jedoch außerhalb der Bezeichnung) auswählen, wird das Feld aus der Bezeichnung ausgeblendet. Bezeichnung auszuwählen erneut, Sie klicken oder tippen Sie in der sie können, oder Sie klicken oder tippen Sie auf den Namen in der hierarchischen Liste der Steuerelemente können.
+Im Bildschirm umgibt ein Feld mit sechs Handles standardmäßig die Bezeichnung. Dieser Typ von Box umgibt, welches Steuerelement ausgewählt ist. Wenn Sie den Bildschirm auswählen, indem Sie darauf klicken oder tippen (aber außerhalb der Bezeichnung), wird das Feld von der Bezeichnung nicht mehr angezeigt. Um die Bezeichnung erneut auszuwählen, klicken oder tippen Sie darauf, oder klicken oder tippen Sie in der hierarchischen Liste der Steuerelemente auf Ihren Namen.
 
 > [!IMPORTANT]
-> Sie müssen immer ein Steuerelement auswählen, bevor Sie sie konfigurieren können.
+> Sie müssen immer ein Steuerelement auswählen, bevor Sie es konfigurieren können.
 
-## <a name="rename-a-control"></a>Umbenennen eines Steuerelements
+## <a name="rename-a-control"></a>Umbenennen eines Steuer Elements
 
-Wählen Sie in der hierarchischen Liste der Steuerelemente, zeigen Sie auf das Steuerelement, das Sie umbenennen möchten, die angezeigt wird, und wählen Sie dann Schaltfläche mit den Auslassungspunkten **umbenennen**. Sie können dann einen eindeutigen, einprägsamen Namen auf, die Erstellung Ihrer app leichter eingeben.
+Zeigen Sie in der hierarchischen Liste der Steuerelemente auf das Steuerelement, das Sie umbenennen möchten, wählen Sie die Schaltfläche mit den Auslassungs Punkten, und wählen Sie dann **Umbenennen**aus. Sie können dann einen eindeutigen, einprägsamen Namen eingeben, um das Erstellen Ihrer APP zu vereinfachen.
 
 ![Umbenennen des Steuerelements](./media/add-configure-controls/rename-control.png)
 
-## <a name="delete-a-control"></a>Löschen eines Steuerelements
+## <a name="delete-a-control"></a>Löschen eines Steuer Elements
 
-Wählen Sie in der hierarchischen Liste der Steuerelemente, die das Steuerelement, das Sie löschen möchten, zeigen Sie auf die Schaltfläche, die angezeigt wird, und wählen Sie dann **löschen**. Um ein Steuerelement zu löschen, die nicht von einem Bildschirm ist, können Sie auch das Steuerelement auf der Canvas auswählen, und drücken Sie dann die ENTF-Taste.
+Zeigen Sie in der hierarchischen Liste der Steuerelemente auf das Steuerelement, das Sie löschen möchten, wählen Sie die Schaltfläche mit den Auslassungs Zeichen aus, und wählen Sie dann **Löschen**aus. Zum Löschen eines Steuer Elements, das kein Bildschirm ist, können Sie auch das-Steuerelement im Zeichenbereich auswählen und dann die ENTF-Taste drücken.
 
-![Steuerelement löschen](./media/add-configure-controls/delete-control.png)
+![DELETE-Steuerelement](./media/add-configure-controls/delete-control.png)
 
 ## <a name="reorder-screens"></a>Bildschirme neu anordnen
 
-Zeigen Sie in der hierarchischen Liste von Steuerelementen, die einen Bildschirm, den Sie verwenden möchten, nach oben oder unten, wählen Sie die Schaltfläche mit den Auslassungspunkten, das angezeigt wird, und wählen Sie dann **nach oben verschieben** oder **nach unten verschieben**.
+Zeigen Sie in der hierarchischen Liste der Steuerelemente auf einen Bildschirm, den Sie nach oben oder unten verschieben möchten, wählen Sie die Schaltfläche mit den Auslassungs Zeichen aus, und klicken Sie dann **auf nach oben** oder **nach unten**.
 
-![Neuanordnen von Bildschirm](./media/add-configure-controls/reorder-screen.png)
+![Bildschirm neu anordnen](./media/add-configure-controls/reorder-screen.png)
 
 > [!NOTE]
-> Wenn die app geöffnet wird, wird der Bildschirm am oberen Rand der hierarchischen Liste der Steuerelemente in der Regel zuerst angezeigt. Aber Sie können einen anderen Bildschirm angeben, durch Festlegen der **[OnStart](controls/control-screen.md)** Eigenschaft, um eine Formel mit den **[Navigate](functions/function-navigate.md)** Funktion.
+> Wenn die APP geöffnet wird, wird der Bildschirm am oberen Rand der hierarchischen Liste der Steuerelemente in der Regel zuerst angezeigt. Sie können jedoch einen anderen Bildschirm angeben, indem Sie die **[OnStart](controls/control-screen.md)** -Eigenschaft auf eine Formel festlegen, die die **[Navigate](functions/function-navigate.md)** -Funktion enthält.
 
-## <a name="move-and-resize-a-control"></a>Verschieben und die Größe eines Steuerelements
+## <a name="move-and-resize-a-control"></a>Verschieben und Ändern der Größe eines Steuer Elements
 
-Um ein Steuerelement verschieben möchten, wählen Sie aus, zeigen Sie auf seinen Mittelpunkt, damit der Pfeil mit vier Spitzen wird angezeigt, und ziehen Sie das Steuerelement dann an einen anderen Speicherort.
+Um ein Steuerelement zu verschieben, wählen Sie es aus, zeigen Sie mit der Maus darauf, dass der Pfeil mit vier Spitzen angezeigt wird, und ziehen Sie das Steuerelement dann an eine andere Position.
 
 ![Steuerelement verschieben](./media/add-configure-controls/move-control.png)
 
-Klicken Sie zum Ändern der Größe eines Steuerelements wählen Sie aus, zeigen Sie auf beliebiges Handle, das im Auswahlfeld, damit der Pfeil mit zwei Spitzen angezeigt wird, und ziehen Sie dann auf das Handle.
+Wenn Sie die Größe eines Steuer Elements ändern möchten, wählen Sie es aus, zeigen Sie auf ein beliebiges Handle im Feldauswahl, sodass der zweistufige Pfeil angezeigt wird, und ziehen Sie dann das handle.
 
 ![Steuerelement verschieben](./media/add-configure-controls/resize-control.png)
 
 > [!NOTE]
-> Wie weiter unten in diesem Thema wird beschrieben, Sie können auch verschieben und die Größe eines Steuerelements durch eine beliebige Kombination von Ändern seiner  **[X](controls/properties-size-location.md)**,  **[Y](controls/properties-size-location.md)**,  **[Höhe](controls/properties-size-location.md)**, und **[Breite](controls/properties-size-location.md)** Eigenschaften in der Bearbeitungsleiste angezeigt.
+> Wie in diesem Thema später beschrieben wird, können Sie auch ein Steuerelement verschieben und die Größe ändern, indem Sie eine beliebige Kombination der Eigenschaften **[X](controls/properties-size-location.md)** , **[Y](controls/properties-size-location.md)** , **[height](controls/properties-size-location.md)** und **[Width](controls/properties-size-location.md)** in der Bearbeitungs Leiste ändern.
 
-## <a name="change-the-text-of-a-label-or-a-button"></a>Ändern des Texts einer Bezeichnung oder eine Schaltfläche
+## <a name="change-the-text-of-a-label-or-a-button"></a>Ändern des Texts einer Bezeichnung oder einer Schaltfläche
 
-Wählen Sie eine Bezeichnung oder eine Schaltfläche, doppelklicken Sie auf den Text, der im Steuerelement angezeigt wird, und geben Sie dann den gewünschten Text.
+Wählen Sie eine Bezeichnung oder eine Schaltfläche aus, doppelklicken Sie auf den Text, der im Steuerelement angezeigt wird, und geben Sie dann den gewünschten Text ein.
 
-![Ändern Sie text](./media/add-configure-controls/change-text.png)
+![Text ändern](./media/add-configure-controls/change-text.png)
 
 > [!NOTE]
-> Wie weiter unten in diesem Thema wird beschrieben, können Sie diesen Text auch ändern, indem Sie ändern die **[Text](controls/properties-core.md)** -Eigenschaft in der Bearbeitungsleiste angezeigt.
+> Wie in diesem Thema später beschrieben wird, können Sie diesen Text auch ändern, indem Sie seine Text-Eigenschaft in der **[Bearbeitungs](controls/properties-core.md)** Leiste ändern.
 
 ## <a name="configure-a-control-from-the-toolbar"></a>Konfigurieren eines Steuerelements über die Symbolleiste
 
 Durch Konfigurieren eines Steuerelements über die Symbolleiste können Sie eine größere Anzahl von Optionen als beim direkten Konfigurieren eines Steuerelements angeben.
 
-Sie können z. B. eine Bezeichnung auswählen, wählen Sie die **Startseite** Registerkarte, und ändern Sie die Schriftart des Texts in der Bezeichnung.
+Sie können z. b. eine Bezeichnung auswählen, die Registerkarte **Home** auswählen und dann die Schriftart des Texts in der Bezeichnung ändern.
 
 ![Schriftart ändern](./media/add-configure-controls/change-font.png)
 
 ## <a name="configure-a-control-from-the-properties-tab"></a>Konfigurieren eines Steuerelements auf der Registerkarte „Eigenschaften“
 
-Mithilfe der **Eigenschaften** Registerkarte können Sie eine größere Anzahl von Optionen als durch Konfigurieren eines Steuerelements auf der Symbolleiste Sie können angeben.
+Mithilfe der Registerkarte **Eigenschaften** können Sie eine größere Anzahl von Optionen angeben, als Sie durch Konfigurieren eines Steuer Elements über die Symbolleiste erreichen können.
 
-Z. B. Sie können ein Steuerelement auswählen und dann ein- oder ausblenden, indem Sie ändern die **Visible** Eigenschaft.
+Beispielsweise können Sie ein Steuerelement auswählen und es dann ein-oder ausblenden, indem Sie dessen **sichtbare** Eigenschaft ändern.
 
-![Sichtbarkeit einstellen](./media/add-configure-controls/set-visibility.png)
+![Sichtbarkeit festlegen](./media/add-configure-controls/set-visibility.png)
 
 ## <a name="configure-a-control-in-the-formula-bar"></a>Konfigurieren eines Steuerelements in der Bearbeitungsleiste
 
-Anstatt ein Steuerelement zu konfigurieren, direkt, über die Symbolleiste oder in der **Eigenschaften** Registerkarte können Sie ein Steuerelement konfigurieren, indem Sie eine Eigenschaft in der Eigenschaftenliste auswählen und anschließend einen Wert in der Bearbeitungsleiste angeben. Mit dieser Vorgehensweise können Sie Eigenschaften nach ihrer alphabetischen Reihenfolge durchsuchen, und Sie können mehr Werttypen angeben.
+Anstatt ein Steuerelement direkt auf der Symbolleiste oder auf der Registerkarte **Eigenschaften** zu konfigurieren, können Sie ein Steuerelement konfigurieren, indem Sie eine Eigenschaft in der Eigenschaften Liste auswählen und dann einen Wert in der Bearbeitungs Leiste angeben. Mit dieser Vorgehensweise können Sie Eigenschaften nach ihrer alphabetischen Reihenfolge durchsuchen, und Sie können mehr Werttypen angeben.
 
-Sie können z. B. eine Bezeichnung auswählen und konfigurieren sie Sie anschließend auf folgende Weise:
+Sie können z. b. eine Bezeichnung auswählen und Sie dann auf folgende Weise konfigurieren:
 
-- Verschieben Sie ihn dazu **X** oder **Y** in der Liste der Eigenschaften und anschließend eine andere Anzahl in der Bearbeitungsleiste angeben.
+- Verschieben Sie Sie, indem Sie in der Liste Eigenschaften die Option **X** oder **Y** auswählen und dann eine andere Zahl in der Bearbeitungs Leiste angeben.
 
-    ![Legen Sie X-Eigenschaft](./media/add-configure-controls/x-property.png)
+    ![X-Eigenschaft festlegen](./media/add-configure-controls/x-property.png)
 
-- Ändern Sie die Größe durch Auswahl **Höhe** oder **Breite** in der Liste der Eigenschaften und anschließend eine andere Anzahl in der Bearbeitungsleiste angeben.
+- Ändern Sie die Größe, indem Sie in der Liste Eigenschaften die Option **Höhe** oder **Breite** auswählen und dann in der Bearbeitungs Leiste eine andere Nummer angeben.
 
-    ![Legen Sie die Height-Eigenschaft](./media/add-configure-controls/height-property.png)
+    ![Height-Eigenschaft festlegen](./media/add-configure-controls/height-property.png)
 
-- Ändern Sie den Text durch auswählen **Text** in der Liste der Eigenschaften und anschließend eine beliebige Kombination von eine Literalzeichenfolge, einen Ausdruck oder eine Formel in der Bearbeitungsleiste angeben.
+- Ändern Sie den Text, indem Sie in der Liste Eigenschaften die Option **Text** auswählen und dann eine beliebige Kombination einer Literalzeichenfolge, eines Ausdrucks oder einer Formel in der Bearbeitungs Leiste angeben.
 
-    - Ein Zeichenfolgenliteral in Anführungszeichen eingeschlossen ist, und es wird angezeigt, genau, wie Sie es eingeben. **"Hello, World"** ist eine Literalzeichenfolge.
+    - Eine Literalzeichenfolge wird in Anführungszeichen eingeschlossen und bei der Typisierungs Anzeige genau angezeigt. **"Hello, World"** ist eine Literalzeichenfolge.
 
-        ![Legen Sie die Text-Eigenschaft auf ein Zeichenfolgenliteral](./media/add-configure-controls/literal-string.png)
+        ![Festlegen der Text-Eigenschaft auf eine Literalzeichenfolge](./media/add-configure-controls/literal-string.png)
 
-    - Ein Ausdruck keine enthält eine Funktion und basiert häufig auf eine Eigenschaft eines anderen Steuerelements. **Screen1.Height** ist ein Ausdruck, der die Höhe des zeigt **Screen1**.
+    - Ein Ausdruck enthält keine Funktion und basiert häufig auf einer Eigenschaft eines anderen Steuer Elements. **Screen1. Height** ist ein Ausdruck, der die Höhe von **Screen1**anzeigt.
 
-        ![Text-Eigenschaft auf einen Ausdruck festgelegt.](./media/add-configure-controls/expression.png)
+        ![Festlegen der Text-Eigenschaft auf einen Ausdruck](./media/add-configure-controls/expression.png)
 
-    - Eine Formel enthält eine oder mehrere Funktionen. Die **jetzt** Funktion gibt das aktuelle Datum und die Uhrzeit zurück, in der lokalen Zeitzone und die **Text** Funktion die Werte wie z. B. Datumsangaben, Uhrzeiten und Währungen formatiert.
+    - Eine Formel umfasst eine oder mehrere Funktionen. Die **Now** -Funktion gibt das aktuelle Datum und die aktuelle Uhrzeit in der lokalen Zeitzone zurück, und die **Text** Funktion formatiert Werte wie Datumsangaben, Uhrzeiten und Währungen.
 
-        ![Text-Eigenschaft auf eine Formel festgelegt.](./media/add-configure-controls/formula.png)
+        ![Festlegen der Text-Eigenschaft auf eine Formel](./media/add-configure-controls/formula.png)
 
-        Formeln sind in der Regel wesentlich komplexer als in diesem Beispiel, sodass sie Daten aktualisieren, Sortieren Sie sie, Filtern und andere Vorgänge ausführen. Weitere Informationen finden Sie unter den [Formelreferenz](formula-reference.md).
+        Formeln sind in der Regel viel komplexer als in diesem Beispiel, sodass Sie Daten aktualisieren, sortieren, Filtern und andere Vorgänge ausführen können. Weitere Informationen finden Sie in der [Formel Referenz](formula-reference.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Finden Sie schrittweise Anleitungen zum Konfigurieren von allgemeinen Steuerelementen wie z. B. [Bildschirme](add-screen-context-variables.md), [listet](add-list-box-drop-down-list-radio-button.md), [Galerien](add-gallery.md), [Forms](add-form.md), und [Diagramme](use-line-pie-bar-chart.md).
-- Finden Sie Referenzinformationen zu allen Typen von Steuerelementen in der [steuern Verweis](reference-properties.md).
+- Hier finden Sie Schritt-für-Schritt-Anleitungen zum Konfigurieren allgemeiner Steuerelemente, wie z. b. [Bildschirme](add-screen-context-variables.md), [Listen](add-list-box-drop-down-list-radio-button.md), [Galerien](add-gallery.md), [Formulare](add-form.md)und [Diagramme](use-line-pie-bar-chart.md).
+- Hier finden Sie Referenzinformationen zu den einzelnen Steuerelement Typen in der [Steuerelement Referenz](reference-properties.md).

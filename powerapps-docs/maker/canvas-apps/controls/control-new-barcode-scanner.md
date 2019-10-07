@@ -1,6 +1,6 @@
 ---
-title: 'Barcodescanner Steuerelement: Referenz | Microsoft-Dokumentation'
-description: Informationen, einschließlich Eigenschaften und Beispiele, über das Barcodescanner Steuerelement
+title: 'Barcode-Scanner-Steuerelement: Referenz | Microsoft-Dokumentation'
+description: Informationen, einschließlich Eigenschaften und Beispielen, über das Barcode Scanner-Steuerelement
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,27 +8,27 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 11/25/2018
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 56d8ca116b4b683d7096ef08f550dfa11c32d3c6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517332"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986449"
 ---
-# <a name="barcode-scanner-control-for-canvas-apps"></a>Barcodescanner Steuerelement für Canvas-apps
+# <a name="barcode-scanner-control-for-canvas-apps"></a>Barcode-Scanner-Steuerelement für Canvas-apps
 
-Scans-Barcodes, QR-Codes und Datenmatrix Codes auf einem Android- oder iOS-Gerät. In einem Webbrowser unterstützt nicht.
+Scannt Barcodes, QR-Codes und datenmatrixcodes auf einem Android-oder IOS-Gerät. Wird in einem Webbrowser nicht unterstützt.
 
 ## <a name="description"></a>Beschreibung
 
-Das Steuerelement wird geöffnet, einen native Scanner auf einem Android- oder iOS-Gerät. Der Scanner erkennt automatisch, einen Barcode, einen QR-Code oder eine Datenmatrix Code in der Ansicht. Das Steuerelement unterstützt nicht die Überprüfung in einem Webbrowser.
+Das-Steuerelement öffnet einen nativen Scanner auf einem Android-oder IOS-Gerät. Der Scanner erkennt automatisch einen Barcode, einen QR-Code oder einen Datenmatrix Code, wenn er in der Ansicht angezeigt wird. Das-Steuerelement unterstützt das Scannen in einem Webbrowser nicht.
 
-Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Barcodes:
+Das-Steuerelement unterstützt QR-Codes, datenmatrixcodes und diese Arten von Barcodes:
 
 - UPC A
 - UPC E
@@ -41,11 +41,11 @@ Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Ba
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
-**Wert** – Ausgabe der Eigenschaft, die den Textwert des Codes enthält, die zuletzt überprüft wurde.
+**Value** – Output-Eigenschaft, die den Textwert des zuletzt überprüften Codes enthält.
 
-**Text** -Text, auf die Schaltfläche angezeigt wird, die die Überprüfung aktiviert.
+**TextText** , der auf der Schaltfläche angezeigt wird, mit der der Scanner aktiviert wird.
 
-**OnScan** : wie eine app reagiert, wenn Sie ein Barcode erfolgreich überprüft wird.
+**Onscan** – gibt an, wie eine APP reagiert, wenn ein Barcode erfolgreich gescannt wird.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
@@ -57,28 +57,28 @@ Das Steuerelement unterstützt QR-Codes Datenmatrix Codes und diese Arten von Ba
 
 **[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
-**FlashlightEnabled** –, ob die Taschenlampe automatisch aktiviert ist, wenn die Überprüfung geöffnet wird.
+**Flash lightenabled** : gibt an, ob die Taschenlampe beim Öffnen des Scanners automatisch aktiviert wird.
 
-**[Höhe](properties-size-location.md)**  – die Höhe der Schaltfläche, die die Überprüfung aktiviert.
+**[Height](properties-size-location.md)** – die Höhe der Schaltfläche, mit der der Scanner aktiviert wird.
 
-**PreferFrontCamera** –, ob die vordere Kamera, sofern verfügbar, für die Überprüfung verwendet wird.
+**Preferfrontcamera** : gibt an, ob die Frontkamera, sofern verfügbar, für die Überprüfung verwendet wird.
 
 **[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
-**Typ** – der Typ des Codes, der bei der Überprüfung gefunden wurden, die zuletzt erfolgreich ausgeführt.
+**Type** : der Typ des Codes, der in der zuletzt erfolgreichen Überprüfung erkannt wurde.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
-**[Breite](properties-size-location.md)**  – die Breite der Schaltfläche, die die Überprüfung aktiviert.
+**[Width](properties-size-location.md)** – die Breite der Schaltfläche, mit der der Scanner aktiviert wird.
 
 **[X](properties-size-location.md)** – Der Abstand zwischen dem linken Rand eines Steuerelements und dem linken Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
-Dieselben Richtlinien wie für die **[Schaltfläche](control-button.md)** Steuerelement gelten für die **Barcode-Scanner** steuern, da es sich um eine Schaltfläche handelt, die die Überprüfung wird gestartet.
+Die gleichen Richtlinien für das **[Schalt](control-button.md)** Flächen-Steuerelement gelten für das **Barcode Scanner** -Steuerelement, da es sich um eine Schaltfläche handelt, die den Scan
 
-### <a name="visual-alternatives"></a>Visuellen alternativen
-* Der Barcodescanner ist eine Schaltfläche, die das Überprüfungsergebnis nicht angezeigt wird. Sollten Sie erwägen, die das Überprüfungsergebnis mit einem **[Bezeichnung](control-text-box.md)** Steuerelement. Legen Sie die Bezeichnung des **[Text](properties-core.md)** Eigenschaft des Barcodescanners **Wert** Eigenschaft. Legen Sie die Bezeichnung des **[Live](properties-accessibility.md)** Eigenschaft **Polite** , damit Benutzer der Sprachausgabe über Änderungen benachrichtigt werden. Diese Änderung wird den gescannten Wert für jedermann, unabhängig von visual Möglichkeit zugänglich.
+### <a name="visual-alternatives"></a>Visuelle Alternativen
+* Der Barcode Scanner ist eine Schaltfläche, die das Scanergebnis nicht anzeigt. Es wird empfohlen, das Scanergebnis mit einem **[Label](control-text-box.md)** -Steuerelement anzuzeigen. Legen Sie die **[Text](properties-core.md)** -Eigenschaft der Bezeichnung auf die **value** -Eigenschaft des Barcode Scanners fest. Legen Sie die **[Live](properties-accessibility.md)** -Eigenschaft der Bezeichnung auf " **höflich** " fest, damit Benutzer mit Bildschirm Lesevorgängen über Änderungen benachrichtigt werden. Diese Änderung bewirkt, dass der überprüfte Wert unabhängig von der visuellen Funktion für alle zugänglich ist.
 
-* Benutzer, die mit visual und motor behinderungen möglicherweise nicht auf die Kamera zeigen Sie auf einen Barcode bevorzugen. Erwägen Sie eine andere Form der Eingabe, z. B. eine **[Texteingabe](control-text-input.md)** -Steuerelement, für den Benutzer zur Eingabe von Barcodes.
+* Benutzer mit visuellen und Motor Behinderungen bevorzugen die Kamera möglicherweise nicht auf einen Barcode. Fügen Sie ggf. eine weitere Form der Eingabe hinzu, z. b. ein **[Text Eingabe](control-text-input.md)** -Steuerelement, damit Benutzer Barcodes eingeben können

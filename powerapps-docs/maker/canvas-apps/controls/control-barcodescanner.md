@@ -1,6 +1,6 @@
 ---
-title: 'Web-Barcodescanner Steuerelement: Referenz | Microsoft-Dokumentation'
-description: Informationen, einschließlich Eigenschaften und Beispiele, über das Barcodescanner Steuerelement
+title: 'Steuerelement für das Barcode-Scanner: Referenz | Microsoft-Dokumentation'
+description: Informationen, einschließlich Eigenschaften und Beispielen, über das Barcode Scanner-Steuerelement
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -8,26 +8,25 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 787fa34bdfcabf6103fefd82f66e976b680544e2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544589"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986998"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Web Barcodescanner Steuerelement in PowerApps (experimentell)
+# <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Steuerelement "Barcode-Scanner" (experimentell) in powerapps
 
-Das ältere Barcodescanner Steuerelement, das ist veraltet, jedoch für die Überprüfung des Codes in einem Webbrowser nützlich sein.
+Das ältere Barcode-Scan-Steuerelement, das veraltet ist, aber möglicherweise für das Scannen von Codes in einem Webbrowser nützlich ist.
 
 ## <a name="description"></a>Beschreibung
 
-Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Barcodes auf allen Geräten überprüfen können. Das Steuerelement ist aufgrund einer schlechten Leistung und die Mobile veraltet **[Barcode-Scanner](control-new-barcode-scanner.md)** -Steuerelement ersetzt dieses Steuerelement.
+Das Steuerelement zeigt den Kamera Feed in der APP an, sodass Benutzer Barcodes auf allen Geräten überprüfen können. Das Steuerelement ist aufgrund schlechter Leistung veraltet, und das Steuerelement für die Steuerung mobiler **[Barcode](control-new-barcode-scanner.md)** ersetzt dieses Steuerelement.
 
 ## <a name="key-properties"></a>Haupteigenschaften
 
@@ -67,7 +66,7 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
 
@@ -77,11 +76,11 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
-1. Hinzufügen einer **Bezeichnung** steuern, und legen Sie dessen Ausgabe des Barcodescanners **Text** Eigenschaft.
+1. Fügen Sie ein **Label** -Steuerelement hinzu, und legen Sie dessen Ausgabe auf die **Text** -Eigenschaft des Barcode Scanners fest.
 
-1. Scannen eines Barcodes des Typs unter Gruppe **BarcodeType** Eigenschaft.
+1. Scannen Sie einen Barcode des unter " **Barcodetype** "-Eigenschaft festgelegten Typs.
 
-    Die Bezeichnung wird den gescannten Barcode angezeigt.
+    In der Bezeichnung wird der gescannte Barcode angezeigt.
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 
@@ -94,4 +93,4 @@ Das Steuerelement zeigt, dass die Kamera in der app-feed, damit Benutzer die Bar
 * **[AccessibleLabel](properties-accessibility.md)** muss vorhanden sein.
 
     > [!NOTE]
-  > Die Sprachausgabe wird, wenn ein neuer Barcode gefunden wurde. Der Wert wird nicht angekündigt werden. Solange der Barcode angezeigt wird, erinnert Sprachausgabe den Benutzer alle fünf Sekunden, die immer noch denselben Barcode identifiziert wird.
+  > Bildschirm Sprachausgaben werden ankündigen, wenn ein neuer Barcode gefunden wurde. Der Wert wird nicht angekündigt. Solange der Barcode in der Ansicht angezeigt wird, erinnern die Sprachausgabe den Benutzer alle fünf Sekunden darauf, dass derselbe Barcode immer noch identifiziert wird.

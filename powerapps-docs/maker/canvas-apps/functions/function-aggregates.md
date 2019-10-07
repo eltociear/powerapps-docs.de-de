@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bae3c031864e94c803086c4cd349679995d766cc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9c11c8e689254de1551bd35661d2768407cf4d6f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546617"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985548"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Funktionen „Average“, „Max“, „Min“, „StdevP“, „Sum“ und „VarP“ in PowerApps
 Aggregatfunktionen, die eine Menge von Zahlen zusammengefassten
@@ -44,29 +43,29 @@ Sie können die Werte für diese Funktionen angeben als:
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Diese Funktionen verarbeiten nur numerische Werte. Andere Typen von Werten wie Zeichenfolgen oder Datensätze werden ignoriert. Verwenden Sie die  **[Value](function-value.md)**-Funktion zum Konvertieren einer Zeichenfolge in eine Zahl.
+Diese Funktionen verarbeiten nur numerische Werte. Andere Typen von Werten wie Zeichenfolgen oder Datensätze werden ignoriert. Verwenden Sie die  **[Value](function-value.md)** -Funktion zum Konvertieren einer Zeichenfolge in eine Zahl.
 
 Die Funktionen **Average**, **Max**, **Min** und **Sum** können delegiert werden, wenn sie mit einer [Datenquelle verwendet werden, die Delegierung für diese Funktionen unterstützt](../delegation-list.md).  **StdevP** und **VarP** können jedoch für keine Datenquellen delegiert werden.  Wenn Delegierung nicht unterstützt wird, wird nur der erste Teil der Datenquelle abgerufen, und anschließend wird die Funktion lokal angewendet.  Das Ergebnis ist dann ggf. kein umfassendes Ergebnis.  Bei der Erstellung wird eine Delegierungswarnung angezeigt, um Sie an diese Einschränkung zu erinnern und die Umstellung auf delegierbare Alternativen vorzuschlagen, soweit dies möglich ist. Weitere Informationen finden Sie unter [Grundlagen der Delegierung](../delegation-overview.md).
 
 ## <a name="syntax"></a>Syntax
-**Average**( *NumericalFormula1*; [ *NumericalFormula2*; ... ] )<br>**Max**( *NumericalFormula1*; [ *NumericalFormula2*; ... ] )<br>**Min**( *NumericalFormula1*; [ *NumericalFormula2*; ... ] )<br>**Sum**( *NumericalFormula1*; [ *NumericalFormula2*; ... ] )<br>**StdevP**( *NumericalFormula1*; [ *NumericalFormula2*; ... ] )<br>**VarP**( *NumericalFormula1*; [ *NumericalFormula2*; ... ] )
+**Average**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Max**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Min**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Sum**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**StdevP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**VarP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )
 
-* *NumericalFormula(s)*: erforderlich.  Die zu verarbeitenden numerischen Werte.
+* *NumericalFormula(s)* : erforderlich.  Die zu verarbeitenden numerischen Werte.
 
-**Average**( *Table*; *NumericalFormula* )<br>**Max**( *Table*; *NumericalFormula* )<br>**Min**( *Table*; *NumericalFormula* )<br>**Sum**( *Table*; *NumericalFormula* )<br>**StdevP**( *Table*; *NumericalFormula* )<br>**VarP**( *Table*; *NumericalFormula* )
+**Average**( *Table*, *NumericalFormula* )<br>**Max**( *Table*, *NumericalFormula* )<br>**Min**( *Table*, *NumericalFormula* )<br>**Sum**( *Table*, *NumericalFormula* )<br>**StdevP**( *Table*, *NumericalFormula* )<br>**VarP**( *Table*, *NumericalFormula* )
 
 * *Tabelle* (erforderlich):  Die zu verarbeitende Tabelle.
 * *NumericalFormula*: erforderlich. Die für jeden Datensatz auszuwertende Formel. Das Ergebnis dieser Formel wird für die Aggregation verwendet. Sie können die Spalten der Tabelle in der Formel verwenden.
 
 ## <a name="examples"></a>Beispiele
 ### <a name="step-by-step"></a>Schritt für Schritt
-Sie haben eine [Datenquelle](../working-with-data-sources.md) mit dem Namen **Sales**, die eine Spalte**CostPerUnit** mit den Kosten pro Einheit und eine Spalte **UnitsSold** mit den verkauften Einheiten enthält, und Sie legen die **[Text](../controls/properties-core.md)**-Eigenschaft einer Bezeichnung auf diese Funktion fest:<br>
-**Sum(Sales; CostPerUnit * UnitsSold)**
+Sie haben eine [Datenquelle](../working-with-data-sources.md) mit dem Namen **Sales**, die eine Spalte**CostPerUnit** mit den Kosten pro Einheit und eine Spalte **UnitsSold** mit den verkauften Einheiten enthält, und Sie legen die **[Text](../controls/properties-core.md)** -Eigenschaft einer Bezeichnung auf diese Funktion fest:<br>
+**Sum(Sales, CostPerUnit * UnitsSold)**
 
 Die Bezeichnung zeigt den Gesamtumsatz an, der sich aus der Multiplikation der Werte in diesen Spalten für jeden Datensatz ergibt. Anschließend werden die Ergebnisse aller Datensätze addiert:<br>![Berechnen des Gesamtumsatzes von verkauften Einheiten und der Kosten pro Einheit](./media/function-aggregates/total-sales.png)
 
-Hier ein anderes Beispiel: Sie verfügen über mehrere Schieberegler mit dem Namen **Slider1**, **Slider2** und **Slider3** und eine Bezeichnung mit der **[Text](../controls/properties-core.md)**-Eigenschaft, die auf diese Formel festgelegt ist:<br>
-**Sum(Slider1.Value; Slider2.Value; Slider3.Value)**
+Hier ein anderes Beispiel: Sie verfügen über mehrere Schieberegler mit dem Namen **Slider1**, **Slider2** und **Slider3** und eine Bezeichnung mit der **[Text](../controls/properties-core.md)** -Eigenschaft, die auf diese Formel festgelegt ist:<br>
+**Sum(Slider1.Value, Slider2.Value, Slider3.Value)**
 
 Die Bezeichnung zeigt die Summe aller Werte an, die für die Schieberegler festgelegt wurden.
 

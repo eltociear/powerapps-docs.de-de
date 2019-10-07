@@ -8,23 +8,23 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ac87e794341fe79a6e4f949893b64462c384f83
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: aab2b0bb7b236fe8cc6d7f18beb7a5c8ea8246ae
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544635"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993849"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Audio- und Video-Steuerelemente in PowerApps
 Ein Steuerelement, das eine Audiodatei, eine Videodatei oder Videos auf YouTube abspielt.
 
 ## <a name="description"></a>Beschreibung
-In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzeichnung aus einem **[Mikrofon](control-microphone.md)**-Steuerelement oder die Audiospur aus einer Videodatei abgespielt werden.
+In einem **Audio**-Steuerelement kann ein Audioclip aus einer Datei, eine Aufzeichnung aus einem **[Mikrofon](control-microphone.md)** -Steuerelement oder die Audiospur aus einer Videodatei abgespielt werden.
 
 Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder Azure Media Services ab.  Auf Wunsch können auch Untertitel angezeigt werden.
 
@@ -36,7 +36,7 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 **ShowControls** – Gibt an, ob ein Audio- oder Videoplayer, z.B. eine Schaltfläche für Wiedergabe und ein Lautstärkeregler, und ein Stift-Steuerelement angezeigt wird, z.B. Symbole zum Zeichnen oder Löschen.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
-**[AccessibleLabel](properties-accessibility.md)**: Bezeichnung für Sprachausgaben Sollte dem Titel des Videos oder der Audiodatei entsprechen.
+**[AccessibleLabel](properties-accessibility.md)** : Bezeichnung für Sprachausgaben Sollte dem Titel des Videos oder der Audiodatei entsprechen.
 
 **AutoPause**: Gibt an, ob ein Audio- oder Videoclip automatisch angehalten wird, wenn der Benutzer zu einem anderen Bildschirm navigiert.
 
@@ -50,13 +50,13 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 
 **ClosedCaptionsUrl** – Steuerelement nur für Videos.  URL der Datei mit den Untertiteln für Hörgeschädigte im WebVTT-Format.  Video- und Untertitel-URL müssen HTTPS-URLs sein. Auf dem Server, auf dem die Video- und Untertiteldateien gehostet werden, muss CORS aktiviert sein.
 
-**[DisplayMode](properties-core.md)**: Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
+**[DisplayMode](properties-core.md)** : Legt fest, ob das Steuerelement Benutzereingaben zulässt (**Edit**, Bearbeiten), ob nur Daten angezeigt werden (**View**, Anzeigen) oder ob das Steuerelement deaktiviert ist (**Disabled**, Deaktiviert).
 
 **[Fill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements.
 
-**[FocusedBorderColor](properties-color-border.md)**: die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderColor](properties-color-border.md)** : die Rahmenfarbe eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
-**[FocusedBorderThickness](properties-color-border.md)**: die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
+**[FocusedBorderThickness](properties-color-border.md)** : die Rahmendicke eines Steuerelements, wenn das Steuerelement der Fokus ist.
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -80,9 +80,9 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
 
 **Time** – Die aktuelle Position eines Mediensteuerelements.
 
-**[TabIndex](properties-accessibility.md)**: Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
+**[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)**: Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -127,8 +127,8 @@ Ein **Video**-Steuerelement spielt ein Video aus einer Datei, von YouTube oder A
   *  Für YouTube-Videos können Sie dazu von YouTube bereitgestellte Tools verwenden.
   *  Für andere Videos können Sie Untertitel im WebVTT Format erstellen und hochladen und **ClosedCaptionsUrl** auf den URL-Speicherort festlegen. Es gibt jedoch einige Einschränkungen. Die Server, die die Videos und Untertitel hosten, müssen CORS-fähig sein und diese über das HTTPS-Protokoll übertragen. Untertitel funktionieren außerdem nicht in Internet Explorer.
 * Sie können auch ein Audio- oder Videotranskript mithilfe einer der folgenden Methoden bereitstellen:
-  1. Platzieren Sie den Text in einer **[Bezeichnung](control-text-box.md)**, und positionieren Sie ihn neben dem Multimedia-Player. Erstellen Sie optional eine **[Schaltfläche](control-button.md)**, um die Textanzeige umzuschalten.
-  2. Platzieren Sie den Text in einem anderen Bildschirm. Erstellen Sie eine **[Schaltfläche](control-button.md)**, die auf diesen Bildschirm weiterleitet, und positionieren Sie die Schaltfläche neben dem Multimedia-Player.
+  1. Platzieren Sie den Text in einer **[Bezeichnung](control-text-box.md)** , und positionieren Sie ihn neben dem Multimedia-Player. Erstellen Sie optional eine **[Schaltfläche](control-button.md)** , um die Textanzeige umzuschalten.
+  2. Platzieren Sie den Text in einem anderen Bildschirm. Erstellen Sie eine **[Schaltfläche](control-button.md)** , die auf diesen Bildschirm weiterleitet, und positionieren Sie die Schaltfläche neben dem Multimedia-Player.
   3. Wenn die Beschreibung kurz ist, kann sie in **[AccessibleLabel](properties-accessibility.md)** eingegeben werden.
 
 ### <a name="color-contrast"></a>Farbkontrast

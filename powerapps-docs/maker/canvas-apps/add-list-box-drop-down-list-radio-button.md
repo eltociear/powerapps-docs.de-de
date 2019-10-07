@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/24/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 293c850c5af980a480a56cb9fb3b8c7866950580
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 211a5be4a97780a440bf151157576a5ab56933a5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555868"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987497"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>Hinzufügen eines Listenfelds, einer Dropdownliste oder eines Optionsfelds zu einer Canvas-App
 
@@ -37,7 +36,7 @@ Dieses Thema bezieht sich zwar auf Listenfelder und Optionsfelder, die Prinzipie
 
 1. Fügen Sie ein Steuerelement vom Typ **Listenfeld** mit der Bezeichnung **MyListBox** hinzu, und legen Sie seine **Items**-Eigenschaft auf folgenden Ausdruck fest:
 
-    ```["circle";"triangle";"rectangle"]```  <br/>
+    ```["circle","triangle","rectangle"]```  <br/>
 
     Der Designer sieht nun etwa wie folgt aus:
 
@@ -51,13 +50,13 @@ Dieses Thema bezieht sich zwar auf Listenfelder und Optionsfelder, die Prinzipie
 
     ![][6]  
 
-6. Legen Sie die **[Visible](controls/properties-core.md)**-Eigenschaft der folgenden Formen auf die genannten Funktionen fest:  
+6. Legen Sie die **[Visible](controls/properties-core.md)** -Eigenschaft der folgenden Formen auf die genannten Funktionen fest:  
 
    | Form | Wert für Visible-Funktion |
    | --- | --- |
-   | circle |```If("circle" in MyListBox.SelectedItems.Value; true)``` |
-   | triangle |```If("triangle" in MyListBox.SelectedItems.Value; true)``` |
-   | rectangle |```If("rectangle" in MyListBox.SelectedItems.Value; true)``` |
+   | circle |```If("circle" in MyListBox.SelectedItems.Value, true)``` |
+   | triangle |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
+   | rectangle |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
 
 7. Wählen Sie bei gedrückter ALT-Taste eine oder mehrere Formen unter **MyListBox** aus.
 
@@ -72,8 +71,8 @@ In diesen Schritten haben Sie mithilfe eines Ausdrucks eine Liste von Elementen 
 
     ![][10]  
 
-3. Benennen Sie das **Radio**-Steuerelement in **Choices** um, und legen Sie seine **[Items](controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
-   ```["red";"green";"blue"]```  <br/>
+3. Benennen Sie das **Radio**-Steuerelement in **Choices** um, und legen Sie seine **[Items](controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
+   ```["red","green","blue"]```  <br/>
 
     ![][12]  
 
@@ -81,8 +80,8 @@ In diesen Schritten haben Sie mithilfe eines Ausdrucks eine Liste von Elementen 
 
 4. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** aus, und wählen Sie anschließend den Kreis aus.
 
-5. Legen Sie die **[Fill](controls/properties-color-border.md)**-Eigenschaft des Kreises auf die folgende Funktion fest:  
-   ```If(Choices.Selected.Value = "red"; Red; Choices.Selected.Value = "green"; Green; Choices.Selected.Value = "blue"; Blue)```  
+5. Legen Sie die **[Fill](controls/properties-color-border.md)** -Eigenschaft des Kreises auf die folgende Funktion fest:  
+   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     In dieser Formel ändert der Kreis je nach ausgewähltem Optionsfeld seine Farbe.
 

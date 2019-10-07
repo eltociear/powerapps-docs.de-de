@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/03/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549925"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994278"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>Erstellen barrierefreier Canvas-Apps in PowerApps
 Eine barrierefreie Canvas-App kann von Benutzern mit Sehschwäche, Gehörschädigung und anderen Beeinträchtigungen erfolgreich verwendet werden.  Die nachfolgenden Richtlinien sind nicht nur für viele Behörden und Organisationen verpflichtend, sie erhöhen zudem die Verwendbarkeit für alle Benutzer, unabhängig von ihren Fähigkeiten.
 
-Verwenden Sie die **[Barrierefreiheitsprüfung](accessibility-checker.md)**, um mögliche Probleme Ihrer App bei der Barrierefreiheit zu überprüfen. 
+Verwenden Sie die **[Barrierefreiheitsprüfung](accessibility-checker.md)** , um mögliche Probleme Ihrer App bei der Barrierefreiheit zu überprüfen. 
 
 ## <a name="layout-and-color"></a>Layout und Farben
 Ein allgemeingültiger und unkomplizierter Entwurf sorgt für eine einfachere Bedienbarkeit der Apps für alle Benutzer.  Wenn Sie Apps stark anpassen, beachten Sie die folgenden Vorschläge.  PowerApps-Designs sind standardmäßig barrierefrei.
@@ -38,16 +38,16 @@ Ein allgemeingültiger und unkomplizierter Entwurf sorgt für eine einfachere Be
 Stellen Sie beim Testen der Barrierefreiheit Ihrer App sicher, dass die App auch über die Tastatur und in den Bedienungshilfemodi von iOS und Android verwendet werden kann und dass die Navigation mit aktivierter Sprachausgabe erfolgreich durchführbar ist.
 
 Stellen Sie bei der Tastaturnavigation (mit und ohne Sprachausgabe) sicher, dass bei Verwendung der TAB-TASTE zum Durchlaufen der Eingabefelder eine logische Abfolge eingehalten wird, indem Sie die Eigenschaft **[TabIndex](controls/properties-accessibility.md)** der einzelnen Steuerelemente festlegen:
-- Symbol "Bezeichnung", "Image", Shape-Steuerelement – Wenn sie interaktive Elemente (z.B. Schaltflächen) darstellen legen Sie TabIndex auf 0; Wenn sie dekorative Elemente oder Text sind, können Sie TabIndex auf-1 festgelegt.
+- Label-, Image-, Symbol-und Shape-Steuerelemente: Wenn Sie interaktive Elemente darstellen (d.h. Schaltflächen), legen Sie TabIndex auf 0 fest. Wenn es sich um dekorative Elemente oder Text handelt, legen Sie TabIndex auf-1 fest.
 - Vermeiden Sie das Festlegen von TabIndex auf einen höheren Wert als null.
 
 ## <a name="screen-reader-support"></a>Unterstützung der Sprachausgabe
 Die folgenden Softwarekombinationen zeigen die unterstützten Empfehlungen für die Nutzung von PowerApps mit Sprachausgabe:
 
-- **Windows**: Microsoft Edge / Sprachausgabe
-- **macOS**: Safari / VoiceOver
-- **Android**: PowerApps-app / Talkback
-- **iOS**: PowerApps-app / VoiceOver
+- **Windows**: Microsoft Edge/Sprachausgabe
+- **macOS**: Safari/VoiceOver
+- **Android**: Powerapps-App/-Talkback
+- **IOS**: Powerapps-App/VoiceOver
 
 Um für die Sprachausgabe ein zufriedenstellendes Ergebnis sicherzustellen, wird Folgendes empfohlen:
 
@@ -58,7 +58,7 @@ Um für die Sprachausgabe ein zufriedenstellendes Ergebnis sicherzustellen, wird
 
 
 ## <a name="multimedia"></a>Multimedia
-Stellen Sie sicher, dass alle Videos mit Untertiteln versehen und Abschriften aller Audioaufnahmen für den Benutzer verfügbar sind.  **Video** -Steuerelement unterstützt Untertitel im WebVTT-Format über die **ClosedCaptionsUrl** Eigenschaft.
+Stellen Sie sicher, dass alle Videos mit Untertiteln versehen und Abschriften aller Audioaufnahmen für den Benutzer verfügbar sind.  Das **Video** Steuerelement unterstützt Untertitel im webvtt-Format über die **closedcaptionsurl** -Eigenschaft.
 
 Beachten Sie, dass der **Timer** bei aktivierter Sprachausgabe nicht den Schaltflächentext, sondern die verstrichene Zeit angibt.  Die Ankündigungen können auch dann nicht deaktiviert werden, wenn der Timer durch niedrige Deckkraft ausgeblendet wurde.
 

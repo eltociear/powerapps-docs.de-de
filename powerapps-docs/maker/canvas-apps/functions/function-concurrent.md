@@ -6,32 +6,31 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/26/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551431"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985515"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Concurrent-Funktion in PowerApps
 Wertet mehrere Formeln gleichzeitig aus.
 
 ## <a name="description"></a>Beschreibung
-Die **Concurrent**-Funktion wertet mehrere Formeln gleichzeitig aus. In der Regel ausgewertet mehrere Formeln durch Verkettung werden zusammen mit den [ **;** ](operators.md) -Operator, der jeweils nacheinander in der Reihenfolge ausgewertet wird. Wenn die App gleichzeitig Vorgänge ausführt, warten Benutzer nicht mehr so lange auf das gleiche Ergebnis.
+Die **Concurrent**-Funktion wertet mehrere Formeln gleichzeitig aus. Normalerweise werden mehrere Formeln ausgewertet, indem Sie mit dem Operator [ **;** ](operators.md) verkettet werden, der nacheinander nacheinander ausgewertet wird. Wenn die App gleichzeitig Vorgänge ausführt, warten Benutzer nicht mehr so lange auf das gleiche Ergebnis.
 
 Verwenden Sie **Concurrent** in der Eigenschaft [**OnStart**](../controls/control-screen.md) Ihrer App, um die Leistung zu verbessern, wenn die App Daten lädt. Wenn Datenaufrufe bis zum Abschluss der vorherigen Aufrufe nicht gestartet wurden, muss die App auf die Summe aller Anforderungszeiten warten. Wenn die Datenaufrufe zur selben Zeit beginnen, muss die App nur auf die längste Anforderungszeit warten. Webbrowser verbessern oft die Leistung durch Ausführen gleichzeitiger Datenvorgänge.
 
-Sie können die Reihenfolge, in der Formeln in der **Concurrent**-Funktion beginnen, nicht vorhersagen oder die Evaluierung beenden. Formeln innerhalb der **Concurrent**-Funktion sollten keine Abhängigkeiten von anderen Formeln innerhalb der gleichen **Concurrent**-Funktion enthalten. PowerApps gibt einen Fehler aus, sollte dies doch passieren. Sie können problemlos Abhängigkeiten von Formeln von innerhalb der **Concurrent**-Funktion außerhalb der Funktion verwenden, da diese abgeschlossen werden, bevor die **Concurrent**-Funktion startet. Formeln nach der **gleichzeitige** Funktion kann Abhängigkeiten von Formeln in sicher annehmen: sie müssen alle abgeschlossen ist, bevor die **gleichzeitige** Funktion abgeschlossen ist, und fährt mit der nächsten Formel in einer Kette (Wenn Sie Verwenden Sie die **;** Operator). Achten Sie auf subtile Reihenfolgenabhängigkeiten, wenn Sie Funktionen oder Dienstmethoden aufrufen, die Nebeneffekte haben.
+Sie können die Reihenfolge, in der Formeln in der **Concurrent**-Funktion beginnen, nicht vorhersagen oder die Evaluierung beenden. Formeln innerhalb der **Concurrent**-Funktion sollten keine Abhängigkeiten von anderen Formeln innerhalb der gleichen **Concurrent**-Funktion enthalten. PowerApps gibt einen Fehler aus, sollte dies doch passieren. Sie können problemlos Abhängigkeiten von Formeln von innerhalb der **Concurrent**-Funktion außerhalb der Funktion verwenden, da diese abgeschlossen werden, bevor die **Concurrent**-Funktion startet. Formeln nach der **gleichzeitigen** Funktion können sichere Abhängigkeiten von Formeln in annehmen: Sie werden vollständig abgeschlossen, bevor die **gleichzeitige** Funktion abgeschlossen wird, und bis zur nächsten Formel in einer Kette (bei Verwendung des Operators **;** ). Achten Sie auf subtile Reihenfolgenabhängigkeiten, wenn Sie Funktionen oder Dienstmethoden aufrufen, die Nebeneffekte haben.
 
-Sie können Formeln, die zusammen mit Verketten der **;** Operator in einem Argument für **gleichzeitige**. Beispielsweise wertet **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** **Set( a; 1 );; Set( b; a+1 )** gleichzeitig mit **Set( x; 2 );; Set( y; x+2 )** aus. In diesem Fall sehen die Abhängigkeiten in den Formeln gut aus: **a** wird vor **b** festgelegt und **x** vor **y**.
+Sie können Formeln in Verbindung mit dem Operator **;** innerhalb eines Arguments zu **gleichzeitigen**verketten. Beispielsweise wertet **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** **Set( a, 1 ); Set( b, a+1 )** gleichzeitig mit **Set( x, 2 ); Set( y, x+2 )** aus. In diesem Fall sehen die Abhängigkeiten in den Formeln gut aus: **a** wird vor **b** festgelegt und **x** vor **y**.
 
 Je nach Gerät oder Browser, auf bzw. in dem die App ausgeführt wird, können nur eine Handvoll Formeln tatsächlich gleichzeitig ausgewertet werden. **Concurrent** verwendet die verfügbaren Funktionen und wird nicht beendet, bevor nicht alle Formeln ausgewertet wurden.
 
@@ -40,27 +39,27 @@ Wenn Sie die **Fehlerverwaltung auf Formelebene** (in den erweiterten Einstellun
 Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Syntax
-**Concurrent**( *Formel1*; *Formel2* [; ...] )
+**Concurrent**( *Formel1*, *Formel2* [, ...] )
 
-* *Formel(n)*: Erforderlich Formeln, die gleichzeitig ausgewertet werden sollen. Sie müssen mindestens zwei Formeln angeben.
+* *Formel(n)* : Erforderlich Formeln, die gleichzeitig ausgewertet werden sollen. Sie müssen mindestens zwei Formeln angeben.
 
 ## <a name="examples"></a>Beispiele
 
 #### <a name="loading-data-faster"></a>Schnelleres Laden von Daten
 
-1. Erstellen Sie eine app, und fügen Sie vier Datenquellen aus Common Data Service, SQL Server oder SharePoint hinzu. 
+1. Erstellen Sie eine APP, und fügen Sie vier Datenquellen aus Common Data Service, SQL Server oder SharePoint hinzu. 
 
     In diesem Beispiel werden vier Tabellen aus der [Adventure Works-Beispieldatenbank unter SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) verwendet. Nachdem die Datenbank erstellt wurde, stellen Sie eine Verbindung von PowerApps damit her, und verwenden Sie dazu den vollqualifizierten Servernamen (z.B. „srvname.database.windows.net“):
 
     ![Verbinden mit der Adventure Works-Datenbank in Azure](media/function-concurrent/connect-database.png)
 
-2. Fügen Sie ein **[Schaltflächen](../controls/control-button.md)**-Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
+2. Fügen Sie ein **[Schaltflächen](../controls/control-button.md)** -Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
 
-    ```powerapps-comma
-    ClearCollect( Product; '[SalesLT].[Product]' );;
-    ClearCollect( Customer; '[SalesLT].[Customer]' );;
-    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
-    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. Aktivieren Sie in [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) oder [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) die Entwicklertools, um den Netzwerkdatenverkehr zu überwachen, während Ihre App ausgeführt wird.
@@ -77,14 +76,14 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
     PowerApps speichert Daten zwischen, deshalb führt das Klicken auf die Schaltfläche nicht unbedingt zu vier neuen Anforderungen. Jedes Mal, wenn Sie die Leistung testen möchten, müssen Sie die App schließen und erneut öffnen. Wenn die Einschränkung aktiviert ist, sollten Sie diese deaktivieren, bis Sie für einen weiteren Test bereit sind.
 
-1. Fügen Sie ein zweites **[Schaltflächen](../controls/control-button.md)**-Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
+1. Fügen Sie ein zweites **[Schaltflächen](../controls/control-button.md)** -Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent( 
-        ClearCollect( Product; '[SalesLT].[Product]' ); 
-        ClearCollect( Customer; '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
-        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -112,19 +111,19 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
 3. Fügen Sie ein **Schaltflächen**-Steuerelement hinzu, und legen Sie seine **OnSelect**-Eigenschaft auf folgende Formel fest:
 
-    ```powerapps-comma
-    Set( StartTime; Value( Now() ) );;
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
     Concurrent(
-        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
-            Set( FRTransTime; Value( Now() ) );
-        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
-            Set( DETransTime; Value( Now() ) )
-    );;
-    Collect( Results;
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
         { 
-            Input: TextInput1.Text;
-            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
-            German: DETrans; GermanTime: DETransTime - StartTime; 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
             FrenchFaster: FRTransTime < DETransTime
         }
     )
@@ -132,7 +131,7 @@ Verwenden Sie **Concurrent** nur in [Verhaltensformeln](../working-with-formulas
 
 4. Fügen Sie ein Steuerelements des Typs [**Datentabelle**](../controls/control-data-table.md) hinzu, und legen Sie seine **Items**-Eigenschaft auf **Results** (Ergebnisse) fest.
 
-1. Auf der **Eigenschaften** im rechten Bereich auf der Registerkarte **Felder bearbeiten** zum Öffnen der **Felder** Bereich.
+1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten **Bereich Felder bearbeiten** aus, um den **Bereich Felder** zu öffnen.
 
 1. Aktivieren Sie in der Feldliste das Kontrollkästchen für jedes Feld, sodass alle in der Datentabelle angezeigt werden.
 

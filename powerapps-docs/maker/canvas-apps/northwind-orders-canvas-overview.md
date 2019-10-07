@@ -1,101 +1,101 @@
 ---
-title: Übersicht über das Canvas-app für Northwind Traders | Microsoft-Dokumentation
+title: Übersicht über die Canvas-App für Northwind Traders | Microsoft-Dokumentation
 description: ''
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/17/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2f28b07f53646e6fbf5afc0b1510bd37e3262b8
-ms.sourcegitcommit: e85072f7a80da308c4caabe20adbf2509588ca57
+ms.openlocfilehash: 48966659ca12ada12448543492731fff8431fbde
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66761049"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995816"
 ---
-# <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Übersicht über das Canvas-app für Northwind Traders
+# <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Übersicht über die Canvas-App für Northwind Traders
 
-Erfahren Sie mehr über das Canvas-app für die Verwaltung von relationalen Daten in der Northwind Traders-Datenbank, die Sie [in Ihrer Umgebung installierten](northwind-install.md). Befolgen Sie dann die schrittweise Anweisungen in der nachfolgenden Themen zum Erstellen dieser app von Grund auf neu, und gewinnen praktische Erfahrung mit relationalen Daten.
+Erfahren Sie mehr über die Canvas-App zum Verwalten von relationalen Daten in der Northwind Traders-Datenbank, die Sie [in Ihrer Umgebung installiert](northwind-install.md)haben. Befolgen Sie dann die Schritt-für-Schritt-Anweisungen in den nachfolgenden Themen, um diese APP von Grund auf neu zu erstellen. Dadurch erhalten Sie praktische Erfahrungen mit relationalen Daten.
 
-In diesem Thema zu ermitteln:
+In diesem Thema finden Sie Folgendes:
 
-- Wie app-Benutzer zeigt und relationale Daten in der app verwaltet.
-- Welche Arten von Daten der app steuern.
-- Wie Beziehungen zwischen diesen Typen von Daten erstellt wurden.
+- Gibt an, wie ein App-Benutzer relationale Daten in der APP anzeigt und verwaltet.
+- Welche Datentypen die App steuern.
+- Gibt an, wie Beziehungen zwischen diesen Datentypen erstellt wurden.
 
-In einem Bildschirm der app-Benutzer anzeigen, aktualisieren, erstellen und Löschen von Aufträgen.
-
-> [!div class="mx-imgBorder"]
-> ![Vollständige Canvas-app](media/northwind-orders-canvas-part1/orders-finished.png)
-
-## <a name="explore-the-user-interface"></a>Untersuchen der Benutzeroberfläche
-
-### <a name="order-gallery"></a>Order-Katalog
-
-Am linken Rand der app zeigt ein Katalog eine Liste der Aufträge, z. B. die Bestellnummer, den Status, den Namen des Kunden und die Gesamtkosten für die Reihenfolge an. Der Benutzer kann einen Bildlauf in der Liste finden eine Bestellung, und klicken Sie dann weitere Informationen dazu anzeigen, die Reihenfolge der Pfeil. Weitere Informationen finden Sie unter: [Erstellen des Katalogs Reihenfolge](northwind-orders-canvas-part1.md).
-
-### <a name="summary-form"></a>Übersichtsformular
-
-In der oberen rechten Ecke sind eine Form die Reihenfolge, in der Benutzer im Katalog Reihenfolge ausgewählt zusammengefasst. Die Zusammenfassung enthält viele der gleichen Informationen wie diesem Katalog verfügt, aber die Zusammenfassung zeigt auch die Datumsangaben, wenn die Bestellung erstellt und bezahlt, sowie den Namen und das Bild des Mitarbeiters, der die Reihenfolge verwaltet wurde. Der Benutzer kann Ändern der Daten in das Formular, diese Änderungen speichern, diese stornieren oder löschen Sie die Bestellung durch ein Symbol neben dem rechten Rand der Titelleiste auswählen. Weitere Informationen finden Sie unter: [Erstellen Sie die Zusammenfassung Formular](northwind-orders-canvas-part2.md).
-
-### <a name="detail-gallery"></a>Detail-Katalog
-
-In der unteren rechten Ecke zeigt einen anderen Katalog Informationen über die Produkte, die die ausgewählte Bestellung enthält und in welchen Mengen. Jedes Element in dieser Katalog wird als ein auftragsdetailbereich bezeichnet. Der app-Benutzer kann hinzufügen und löschen ein Element in diesem Katalog mithilfe der Steuerelemente in und darunter. Weitere Informationen finden Sie unter: [Erstellen des Detail-Katalogs](northwind-orders-canvas-part3.md).
+Auf einem einzelnen Bildschirm kann der App-Benutzer Aufträge anzeigen, aktualisieren, erstellen und löschen.
 
 > [!div class="mx-imgBorder"]
-> ![Definition der Bildschirmbereiche](media/northwind-orders-canvas-part1/orders-parts.png)
+> ![complete Canvas-App @ no__t-1
 
-## <a name="explore-the-data-sources"></a>Untersuchen Sie die Datenquellen
+## <a name="explore-the-user-interface"></a>Erkunden Sie die Benutzeroberfläche
 
-Um diese app zu erstellen, zeigen Ihnen, Daten aus fünf Entitäten und eine Option festgelegt werden. In der Tat zeigen die meisten Bereiche des diese app Daten aus mehreren Entitäten. Die Order-Katalog enthält z. B. folgende Informationen:
+### <a name="order-gallery"></a>Order Gallery
 
-- Die Bestellnummer ist ein Feld in der **Bestellungen** Entität.
-- Der Status ist ein anderes Feld in der **Bestellungen** Entität, die eine Option aus der **Status der Bestellung** Optionssatz.
-- Der Namen des Kunden ist ein Feld in der **Kunden** Entität.
-- Die Gesamtkosten wird berechnet, basierend auf Daten in die **Bestelldetails** Entität.
+Am linken Rand der APP wird in einem Katalog eine Liste der Bestellungen angezeigt, einschließlich der Bestellnummer, des Status, des Namens des Kunden und der Gesamtkosten der Bestellung. Der Benutzer kann einen Bildlauf durch die Liste durchführen, um nach einer Bestellung zu suchen und dann weitere Informationen anzuzeigen, indem er den Pfeil der Bestellung auswählt. Weitere Informationen finden Sie unter: [Erstellen Sie die Order Gallery](northwind-orders-canvas-part1.md).
 
-Die Zusammenfassung enthält einige der Informationen, wie die Liste der Bestellungen, aber es enthält auch den Namen und das Bild des Mitarbeiters, der die Reihenfolge verwaltet. Dass die Informationen abgerufen werden, aus Feldern in der **Mitarbeiter** Entität. Zeigt die Details-Katalog die Datensätze in der **Order Details** Entität und jedes Produkt in die Details sind in einem Datensatz in die **Bestellprodukte** Entität.
+### <a name="summary-form"></a>Zusammenfassungs Formular
 
-## <a name="explore-the-relationships"></a>Die Beziehungen untersuchen
+In der oberen rechten Ecke fasst ein Formular die Reihenfolge zusammen, die der Benutzer in der Order Gallery ausgewählt hat. Die Zusammenfassung enthält viele der gleichen Informationen wie der Katalog, aber in der Zusammenfassung werden auch die Datumsangaben, zu denen die Bestellung erstellt und bezahlt wurde, sowie der Name und das Bild des Mitarbeiters angezeigt, der die Bestellung verwaltet hat. Der Benutzer kann die Daten im Formular ändern, diese Änderungen speichern, Abbrechen oder den Auftrag löschen, indem er am rechten Rand der Titelleiste ein Symbol auswählt. Weitere Informationen finden Sie unter: [Erstellen Sie das Zusammenfassungs Formular](northwind-orders-canvas-part2.md).
 
-Sie können Daten aus verschiedenen Quellen (z. B. Entitäten) im selben Katalog oder Formular anzeigen, da die Entitäten, Beziehungen verfügen, die für Sie, in der Datenbank erstellt wurden.
+### <a name="detail-gallery"></a>Detail Galerie
 
-### <a name="many-to-one-relationships"></a>N: 1 Beziehungen
+In der unteren rechten Ecke werden in einer anderen Galerie Informationen zu den Produkten, die in der ausgewählten Bestellung enthalten sind, und in den Mengen angezeigt. Jedes Element in diesem Katalog wird als Bestelldetails bezeichnet. Der App-Benutzer kann alle Elemente in diesem Katalog mithilfe von Steuerelementen in und darunter hinzufügen und löschen. Weitere Informationen finden Sie unter: [Erstellen Sie die Detail Galerie](northwind-orders-canvas-part3.md).
 
-Informationen zu den Kunden und der Mitarbeiter für jeden Auftrag befindet sich z. B. in der **Kunden** und **Mitarbeiter** Entitäten. Aus diesem Grund die **Bestellungen** Entität n: 1 Beziehungen mit diesen Entitäten verfügt, da es viele Bestellungen gibt, von denen jeder durch nur einen Kunden platziert und von nur einem Mitarbeiter verwaltet werden kann.
+> [!div class="mx-imgBorder"]
+> ![definition von Bildschirm Bereichen @ no__t-1
 
-Jede Reihenfolge verfügt auch über, eine oder mehrere Positionen, die die Produkte darstellen, die den Auftrag enthält sowie deren Anzahl. Jedes Zeilenelement ist ein Datensatz in die **Bestelldetails** -Entität, die Ruft Informationen zu jedem Produkt aus der **Bestellprodukte** Entität. Jede Detail-identifiziert nur ein Produkt, aber jedes Produkt in mehreren Details angezeigt werden kann. Aus diesem Grund die **Bestelldetails** Entität verfügt über eine n: 1 Beziehung mit der **Bestellprodukte** Entität.
+## <a name="explore-the-data-sources"></a>Untersuchen der Datenquellen
 
-### <a name="one-to-many-relationships"></a>1: n Beziehungen
+Zum Erstellen dieser APP zeigen Sie Daten aus fünf Entitäten und einen Options Satz an. Tatsächlich zeigen die meisten Bereiche dieser APP Daten aus mehreren Entitäten an. Die Bestell Galerie enthält z. b. folgende Informationen:
 
-Jeder Auftrag kann mehrere Positionen enthalten, aber jedes Zeilenelement bezieht sich nur eine Bestellung. Aus diesem Grund die **Bestellungen** Entität verfügt über eine 1: n Beziehung mit der **Bestelldetails** Entität.
+- Die Bestellnummer ist ein Feld in der Entität **Orders** .
+- Der Status ist ein anderes Feld in der Entität " **Orders** ", eine Option aus der Option " **Auftragsstatus** ".
+- Der Kunden Name ist ein Feld in der **Customers** -Entität.
+- Die Gesamtkosten werden basierend auf den Daten in der Entität **Order Details** berechnet.
 
-### <a name="dot-notation-for-relationships"></a>Punktierte Schreibweise für Beziehungen 
+Die Zusammenfassung enthält einige der gleichen Informationen wie die Liste der Bestellungen, enthält jedoch auch den Namen und das Bild des Mitarbeiters, der die Bestellung verwaltet hat. Diese Informationen werden aus Feldern **in der Employee** -Entität abgerufen. Die Detail Galerie zeigt Datensätze in der Entität **Order Details** an, und jedes Produkt in diesen Details ist ein Datensatz in der Entität **Order Products** .
 
-Um Daten basierend auf einer Beziehung zwischen Entitäten anzuzeigen, können Sie den Punktselektor-Eigenschaft, die über eine Beziehung von einer Entität zum andern.  Beispielsweise jeder Datensatz in die **Bestellungen** Entität zieht Informationen aus der **Kunden** Entität, damit die Order-Katalog den Namen der Kunden anzeigen kann. In diesem Katalog, konfigurieren Sie dieses Verhalten durch Festlegen der **Text** -Eigenschaft einer Bezeichnung auf den folgenden Ausdruck:<br>`ThisItem.Customer.Company`
+## <a name="explore-the-relationships"></a>Untersuchen der Beziehungen
 
-**ThisItem** gibt einen Datensatz in die **Bestellungen** Entität und ruft Informationen aus der **Kunden** Entität über den Kunden, die Bestellung aufgegeben hat. In diesem Fall gibt den Ausdruck an, dass der Name des Kunden Unternehmen angezeigt wird. Jedoch der gesamte Datensatz für den Kunden per Pull abgerufen wird, damit Sie ganz einfach anzeigen können, z. B. eine e-Mail-Adresse für diesen Kunden stattdessen.
+Sie können Daten aus verschiedenen Quellen (z. b. Entitäten) im gleichen Katalog oder Formular anzeigen, da diese Entitäten Beziehungen aufweisen, die für Sie in der Datenbank erstellt wurden.
 
-Ein weiteres Beispiel aus einer Entität in eine andere durchlaufen können Sie angeben, dass ein Katalog Datensätze in einer Entität, die basierend auf einem Datensatz, den der Benutzer, die in einen anderen Katalog ausgewählt und das ist in einer anderen Entität, anzeigen soll. Um die Auftragsdetails anzuzeigen, legen Sie die Details des Katalogs **Elemente** Eigenschaft auf den folgenden Ausdruck:<br>`Gallery1.Selected.'Order Details'`
+### <a name="many-to-one-relationships"></a>N:1-Beziehungen
 
-In diesem Fall **Gallery1.Selected** gibt einen Datensatz in die **Bestellungen** Entität wie **ThisItem** wurde im vorherigen Beispiel. Dieser Ausdruck jedoch abrufen nicht nur einen Datensatz, wie der vorherige Ausdruck. Stattdessen bezieht es eine ganze Tabelle von Datensätzen, die die Namen und pro Einheit Kosten der einzelnen Produkte angezeigt (wie dargestellt in der **Bestellprodukte** Entität) und die Menge (wie dargestellt in der **Bestelldetails** Entität).
+Beispielsweise befinden sich Informationen zum Kunden und zum Mitarbeiter für die einzelnen Bestellungen in den Entitäten **Customers** und **Employees** . Daher verfügt die Entität **Orders** über eine n:1-Beziehung zu diesen Entitäten, da viele Aufträge vorhanden sind, die jeweils nur von einem Kunden platziert und nur von einem Mitarbeiter verwaltet werden können.
 
-## <a name="do-it-yourself"></a>Es selbst tun.
+Jede Bestellung verfügt auch über ein oder mehrere Zeilen Elemente, die die in der Bestellung enthaltenen Produkte und ihre Mengen darstellen. Jedes Zeilen Element ist ein Datensatz in der Entität " **Order Details** ", der Informationen zu jedem Produkt aus der Entität " **Order Products** " abruft. Jedes Detail identifiziert nur ein Produkt, aber jedes Produkt kann in mehreren Details angezeigt werden. Daher verfügt die Entität **Order Details** über eine n:1-Beziehung zu der Entität **Order Products** .
 
-Sie können schrittweise Anleitungen zum Erstellen von Northwind Orders-Canvas-app folgen.  Die Anweisungen sind in drei Teile unterteilt:
+### <a name="one-to-many-relationships"></a>1: n-Beziehungen
 
-1. [Erstellen eines Katalogs Reihenfolge](northwind-orders-canvas-part1.md).
-1. [Erstellen Sie eine Zusammenfassung Formular](northwind-orders-canvas-part2.md).
-1. [Erstellen Sie einen Katalog Detail](northwind-orders-canvas-part3.md).
+Jede Bestellung kann mehrere Zeilen Elemente enthalten, aber jedes Zeilen Element bezieht sich nur auf eine Bestellung. Daher verfügt die Entität " **Orders** " über eine 1: n-Beziehung mit der Entität " **Order Details** ".
 
-Wenn Sie fortfahren möchten, enthält die Projektmappe eine Ausgangspunkt-app für die einzelnen Teile an.  Suchen Sie in der Liste der apps nach **Northwind Orders (Canvas) – Teil 1 beginnen** und so weiter.
+### <a name="dot-notation-for-relationships"></a>Punkt Notation für Beziehungen 
+
+Zum Anzeigen von Daten auf der Grundlage einer Beziehung zwischen Entitäten können Sie mithilfe der Punkt Eigenschaften Auswahl eine Beziehung zwischen einer Entität und einer anderen Entität durchlaufen.  Beispielsweise ruft jeder Datensatz in der **Orders** -Entität Informationen aus der **Customers** -Entität ab, sodass der Order Gallery die Kundennamen anzeigen kann. In diesem Katalog konfigurieren Sie dieses Verhalten, indem Sie die **Text** -Eigenschaft einer Bezeichnung auf diesen Ausdruck festlegen:<br>`ThisItem.Customer.Company`
+
+**Thisitem** gibt einen Datensatz in der **Orders** -Entität an und ruft Informationen von der **Customers** -Entität über den Kunden ab, der die Bestellung aufgegeben hat. In diesem Fall gibt der Ausdruck an, dass der Unternehmens Name des Kunden angezeigt wird. Allerdings wird der gesamte Datensatz für diesen Kunden abgerufen, sodass Sie so einfach eine e-Mail-Adresse für diesen Kunden anzeigen können.
+
+Als weiteres Beispiel für das Durchlaufen von einer Entität zu einem anderen können Sie angeben, dass ein Katalogdaten Sätze in einer Entität basierend auf einem Datensatz anzeigen soll, den der Benutzer in einem anderen Katalog ausgewählt hat und der sich in einer anderen Entität befindet. Um die Bestelldetails anzuzeigen, legen Sie die **Items** -Eigenschaft des Detail Katalogs auf den folgenden Ausdruck fest:<br>`Gallery1.Selected.'Order Details'`
+
+In diesem Fall gibt **Gallery1. Selected** einen Datensatz in der Entität **Orders** an, genau wie **thisitem** im vorherigen Beispiel. Mit diesem Ausdruck wird jedoch nicht nur ein Datensatz abgerufen, wie der vorherige Ausdruck bereits getan hat. Stattdessen wird eine gesamte Tabelle mit Datensätzen abgerufen, um den Namen und die Kosten pro Einheit für jedes Produkt (wie in der Entität **Order Products** ) und die Menge (wie in der **Order Details** -Entität dargestellt) anzuzeigen.
+
+## <a name="do-it-yourself"></a>Selbst ausführen
+
+Befolgen Sie die Schritt-für-Schritt-Anweisungen, um die Canvas-app "Northwind Orders" zu erstellen.  Die Anweisungen sind in drei Teile unterteilt:
+
+1. [Erstellen Sie eine Order Gallery](northwind-orders-canvas-part1.md).
+1. [Erstellen Sie ein Zusammenfassungs Formular](northwind-orders-canvas-part2.md).
+1. [Erstellen Sie eine Detail Galerie](northwind-orders-canvas-part3.md).
+
+Wenn Sie fortfahren möchten, enthält die Lösung eine Startpunkt-App für jeden Teil.  Suchen Sie in der Liste der apps nach **Northwind Orders (Canvas)-BEGIN Part 1** usw.
 
 > [!div class="nextstepaction"]
-> [Fortsetzen Sie, indem Sie den Order-Katalog erstellen](northwind-orders-canvas-part1.md)
+> [Fortfahren durch Erstellen der Order Gallery](northwind-orders-canvas-part1.md)

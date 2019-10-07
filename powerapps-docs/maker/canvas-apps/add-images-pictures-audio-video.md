@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/12/2017
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d5d8b8ebaa2a1d044a09a402a87998980e34f461
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: b544b03fbe181265599bab520eddc2a2a646c477
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320468"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994667"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 
@@ -49,7 +48,7 @@ Zum Hochladen können Sie eine beliebige Art von Mediendatei auswählen (z.B. Bi
 
     ![Auswählen des Medientyps][8]
 
-6. Wenn Sie ein Bild-Steuerelement hinzugefügt haben, legen Sie dessen **[Image](controls/properties-visual.md)**-Eigenschaft auf die hinzugefügte Datei fest:  
+6. Wenn Sie ein Bild-Steuerelement hinzugefügt haben, legen Sie dessen **[Image](controls/properties-visual.md)** -Eigenschaft auf die hinzugefügte Datei fest:  
 
     ![Festlegen der Image-Eigenschaft](./media/add-images-pictures-audio-video/imageproperty.png)
 
@@ -159,7 +158,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
 8. Fügen Sie auf der Registerkarte **Einfügen** ein **Schaltflächen**-Steuerelement hinzu, und legen Sie dessen **OnSelect**-Eigenschaft auf diese Formel fest:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die **Image**-Eigenschaft des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
 

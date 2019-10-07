@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/08/2017
 ms.author: kaagar
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a32dd9f483682ba462aae1d3bd9d257d3204b8f5
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 22dfcb085c2de4aabd849e0a1fedc8a231f0e55f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670447"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987369"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>Senden einer Pushbenachrichtigung in PowerApps
 Pushbenachrichtigungen werden bei mobilen Apps für Kunden- und Business-Szenarien in erster Linie verwendet, um mit den App-Benutzern zu kommunizieren und ihnen zu helfen, wichtige Aufgaben zu priorisieren. In PowerApps können Sie Benachrichtigungen über den Connector „PowerApps-Benachrichtigung“ senden. Sie können native Pushbenachrichtigungen an eine beliebige App senden, die Sie in PowerApps erstellen. In Zukunft sollen weitere Benachrichtigungstypen hinzukommen.
@@ -81,13 +80,13 @@ Sie können eine Pushbenachrichtigung aus einer App an eine andere App oder an d
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>Laden einer bestimmten Seite und eines bestimmten Kontexts, wenn ein Benutzer auf die Benachrichtigung tippt
 ### <a name="pass-parameters"></a>Übergeben von Parametern
-Die Pushbenachrichtigung kann bestimmte Parameter an die App übergeben. Verwenden Sie z.B. zum Lesen des **CaseID**-Werts *Param("CaseID")*. Um diesen Parameter schnell zu ermitteln, fügen Sie der App ein **Label**-Steuerelement hinzu. Legen Sie die **Text**-Eigenschaft dieses Steuerelements auf **Param("CaseID")** fest. Wenn der Benutzer die App über die Liste **Alle Apps** öffnet, ist der Wert leer. Wenn der Benutzer die App von einem anderen Speicherort auf dem Gerät öffnet, wird der Wert mit dem **CaseID**-Wert aufgefüllt.
+Die Pushbenachrichtigung kann bestimmte Parameter an die App übergeben. Verwenden Sie z.B. zum Lesen des **CaseID**-Werts *Param("CaseID")* . Um diesen Parameter schnell zu ermitteln, fügen Sie der App ein **Label**-Steuerelement hinzu. Legen Sie die **Text**-Eigenschaft dieses Steuerelements auf **Param("CaseID")** fest. Wenn der Benutzer die App über die Liste **Alle Apps** öffnet, ist der Wert leer. Wenn der Benutzer die App von einem anderen Speicherort auf dem Gerät öffnet, wird der Wert mit dem **CaseID**-Wert aufgefüllt.
 
 ### <a name="set-the-start-page"></a>Festlegen der Startseite
 Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details** (Falldetails) geöffnet wird:
 
 1. Fügen Sie ein **Timer**-Steuerelement hinzu, und legen Sie seine **OnTimerEnd**-Eigenschaft auf diese Formel fest:
-   <br>**Navigate(EditCase; ScreenTransition.None)**
+   <br>**Navigate(EditCase, ScreenTransition.None)**
 2. (Optional) Blenden Sie das **Timer**-Steuerelement aus, indem Sie die **Visible**-Eigenschaft auf **false** festlegen.
 3. Legen Sie die **OnVisible**-Eigenschaft des Bildschirms auf **Timer.Start()** fest.
 
@@ -103,7 +102,7 @@ Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details**
 | --- | --- |
 | SendPushNotification |Sendet eine Pushbenachrichtigung an die App, die in den Verbindungseinstellungen für die Benachrichtigung angegeben wurde. |
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
 | Name | Typ | Beschreibung |
 | --- | --- | --- |
@@ -115,10 +114,10 @@ Sie können festlegen, dass beim Öffnen der App z.B. die Seite **Case details**
 ### <a name="sample-formulas"></a>Beispielformeln
 Senden einer einfachen Benachrichtigung
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b"; "72f988bf-86f1-41af-91ab-2d7cd011db47"];
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
         message: "A new case was assigned to you."
     }
 )
@@ -126,12 +125,12 @@ PowerAppsNotification.SendPushNotification(
 
 Senden einer Benachrichtigung, die eine App öffnet und bestimmte Parameter übergibt
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["email1@contoso.com"; "email2@contoso.com"];
-        message: "message in the notif toast";
-        params: Table({key:"notificationKey"; value:"The value for notificationKey"});
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
         openApp: true
     }
 )

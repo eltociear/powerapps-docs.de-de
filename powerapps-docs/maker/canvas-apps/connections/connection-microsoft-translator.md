@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545611"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994030"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Herstellen einer Verbindung mit Microsoft Translator aus PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -53,12 +52,12 @@ In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstel
 
     ![Umbenennen](./media/connection-microsoft-translator/renametosource.png)
 2. Fügen Sie eine **Dropdown**-Liste hinzu (Menü **Einfügen** > **Steuerelemente**), benennen Sie sie in **TargetLang** um, und verschieben Sie sie unter **Source**.
-3. Legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft von **TargetLang** auf die folgende Formel fest:  
+3. Legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft von **TargetLang** auf die folgende Formel fest:  
 
     `MicrosoftTranslator.Languages()`
-4. Fügen Sie eine Bezeichnung hinzu, verschieben Sie es unter **TargetLang**, und legen Sie seine **[Text](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
+4. Fügen Sie eine Bezeichnung hinzu, verschieben Sie es unter **TargetLang**, und legen Sie seine **[Text](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Geben Sie Text in **Source** ein, und wählen Sie unter **TargetLang** eine Sprache aus. In der Bezeichnung wird der eingegebene Text in der ausgewählten Sprache angezeigt:  
 
     ![Übersetzen von Text aus dem Englischen ins Spanische](./media/connection-microsoft-translator/translate-text.png)
@@ -66,13 +65,13 @@ In diesem Thema wird gezeigt, wie Sie die Microsoft Translator-Verbindung erstel
 ### <a name="speak-translated-text"></a>Sprechen von übersetztem Text
 Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen Abschnitt aus, um Text zu übersetzen. In den folgenden Schritten werden die gleichen Steuerelemente verwendet.
 
-1. Legen Sie die **[Items](../controls/properties-core.md)**-Eigenschaft der Dropdownliste **TargetLang** auf die folgende Formel fest:  
+1. Legen Sie die **[Items](../controls/properties-core.md)** -Eigenschaft der Dropdownliste **TargetLang** auf die folgende Formel fest:  
 
     `MicrosoftTranslator.SpeechLanguages()`
 2. Benennen Sie die zweite Bezeichnung (nicht das Feld **Source**) in **Target** um.
 3. Fügen Sie ein **Audio**-Steuerelement hinzu (Menü **Einfügen** > **Medien**), und legen Sie seine **Media**-Eigenschaft auf die folgende Formel fest:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Drücken Sie F5, oder wählen Sie die Vorschauschaltfläche aus (![](./media/connection-microsoft-translator/preview.png)). Geben Sie Text in **Source** ein, wählen Sie eine Sprache in **TargetLang** aus, und wählen Sie dann die Wiedergabeschaltfläche im Audio-Steuerelement aus.
 
     Die App spielt eine Audioversion des eingegebenen Texts in der ausgewählten Sprache ab.
@@ -81,7 +80,7 @@ Wenn Sie dies nicht bereits getan haben, führen Sie die Schritte im vorherigen 
 ### <a name="detect-the-source-language"></a>Erkennen der Ausgangssprache
 In den folgenden Schritten werden die gleichen Texteingabe-Steuerelemente (**Source**) und Text (**Target**) verwendet. Sie können auch neue Steuerelemente erstellen, in diesem Fall müssen Sie nur die Namen in der Formel aktualisieren.
 
-1. Wählen Sie das Text-Steuerelement **Target** aus, und legen Sie die **[Text](../controls/properties-core.md)**-Eigenschaft auf die folgende Formel fest:  
+1. Wählen Sie das Text-Steuerelement **Target** aus, und legen Sie die **[Text](../controls/properties-core.md)** -Eigenschaft auf die folgende Formel fest:  
 
     `MicrosoftTranslator.Detect(Source.Text).Name`
 2. Geben Sie Text in **Source** ein.
@@ -100,7 +99,7 @@ Diese Verbindung umfasst die folgenden Funktionen:
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format |
 
 ### <a name="languages"></a>Sprachen
-Sprachen abrufen: Ruft alle von Microsoft Translator unterstützten Sprachen ab
+Sprachen erhalten: Ruft alle von Microsoft Translator unterstützten Sprachen ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 Keine
@@ -128,7 +127,7 @@ Text übersetzen: Übersetzt Text mit Microsoft Translator aus einer angegebenen
 Keine
 
 ### <a name="detect"></a>Detect
-Erkennen Sie Sprache: Erkennt die Ausgangssprache eines angegebenen Texts
+Sprache erkennen: Erkennt die Ausgangssprache eines angegebenen Texts
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -144,7 +143,7 @@ Erkennen Sie Sprache: Erkennt die Ausgangssprache eines angegebenen Texts
 | Name |Zeichenfolge |Nein | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-Sprachen für Sprachausgabe abrufen: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
+Sprach Sprachen erhalten: Ruft die verfügbaren Sprachen für die Sprachsynthese ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 Keine
@@ -157,7 +156,7 @@ Keine
 | Name |Zeichenfolge |Nein | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-Text in Sprache: Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format
+Text-zu-Sprache: Konvertiert einen angegebenen Text in Sprache als Audiostream im Wave-Format
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 

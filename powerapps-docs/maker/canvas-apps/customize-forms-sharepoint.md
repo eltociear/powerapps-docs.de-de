@@ -1,24 +1,24 @@
 ---
 title: Anpassen eines Formulars in einer Canvas-App | Microsoft-Dokumentation
 description: Geben Sie in PowerApps an, welche Daten in einem Canvas-App-Formular in welcher Reihenfolge und in welchen Steuerelementen angezeigt werden sollen.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/17/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1a6465a00f135489d594bad75b8a25942e05dd25
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 67e7e0074259731bb1d3c50474e8020e3f4fcf1b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560682"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993194"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Anpassen eines Canvas-App-Formulars in PowerApps
 
@@ -26,7 +26,7 @@ Passen Sie in einer Canvas-App ein **Anzeigeformular**-Steuerelement und ein **B
 
 Jedes Formular umfasst eine oder mehrere Karten, die jeweils Daten aus einer bestimmten Spalte in der Datenquelle anzeigen. Wenn Sie die in diesem Artikel beschriebenen Schritte ausführen, können Sie angeben, welche Karten in einem Formular angezeigt werden, und Karten innerhalb eines Formulars nach oben oder unten verschieben.
 
-Wenn Sie mit der Canvas-Pps nicht vertraut sind, finden Sie unter [Was sind Canvas-apps?](getting-started.md).
+Wenn Sie mit Canvas-PPS nicht vertraut sind, finden Sie weitere Informationen unter [Was sind Canvas-apps?](getting-started.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -34,92 +34,92 @@ Wenn Sie mit der Canvas-Pps nicht vertraut sind, finden Sie unter [Was sind Canv
 
 ## <a name="show-and-hide-cards"></a>Karten ein- und ausblenden
 
-1. Melden Sie sich beim [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und öffnen Sie dann die app, die Sie generiert und angepasst.
+1. Melden Sie sich bei [powerapps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, und öffnen Sie die APP, die Sie generiert und angepasst haben.
 
-1. Geben Sie in der linken Navigationsleiste, oder fügen Sie **D** in die Suchleiste ein, um die Liste der Elemente zu filtern, und wählen Sie dann **DetailForm1**.
+1. Geben oder fügen Sie in der linken Navigationsleiste in der Suchleiste **D** ein, um die Liste der Elemente zu filtern, und wählen Sie dann **DetailForm1**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Detailbildschirm auswählen](./media/customize-forms-sharepoint/select-detailform.png)
+    > ![select-Detailbildschirm @ no__t-1
 
 1. Wählen Sie auf der Registerkarte **Eigenschaften** im rechten Bereich die Option **Felder bearbeiten** aus, um den Bereich **Felder** zu öffnen.
 
     > [!div class="mx-imgBorder"]
-    > ![Bereich "Open Felder"](./media/customize-forms-sharepoint/edit-fields.png)
+    > ![open Fields Pane @ no__t-1
 
-1. Blenden Sie ein Feld, z. B. **Beschreibung**, indem Sie mit dem Mauszeiger auf ihn, Sie auf die Auslassungspunkte (...), der angezeigt wird, und wählen dann **entfernen**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Liste der Felder](./media/customize-forms-sharepoint/hide-fields.png)
-
-1. Zeigen Sie dazu ein Feld **Feld hinzufügen**, eingeben oder Einfügen von in das Suchfeld, Kontrollkästchens des Felds, und wählen Sie dann die ersten paar Buchstaben, der den Namen des Felds **hinzufügen**.
+1. Blenden Sie ein Feld, z. b. eine **Beschreibung**, aus, indem Sie darauf zeigen, und wählen Sie die Auslassungs Punkte (...) aus, die angezeigt werden, und dann **Entfernen**
 
     > [!div class="mx-imgBorder"]
-    > ![Liste der Felder](./media/customize-forms-sharepoint/show-field.png)
+    > ![list of Fields @ no__t-1
+
+1. Wenn Sie ein Feld auswählen, wählen **Sie Feld hinzufügen**aus, geben Sie die ersten Buchstaben des Feld namens in das Suchfeld ein, aktivieren Sie das Kontrollkästchen des Felds, und wählen **Sie dann hinzufügen**aus.
+
+    > [!div class="mx-imgBorder"]
+    > ![list of Fields @ no__t-1
 
 ## <a name="reorder-the-cards"></a>Karten anordnen
 
-1. In der **Felder** ziehen Sie die **Kontoname** Feld an den Anfang der Liste der Felder.
+1. Ziehen Sie im Bereich **Felder** das Feld **Kontoname** an den oberen Rand der Liste der Felder.
 
-    Die Karten in **DetailForm1** entsprechend die Änderung.
+    Die Karten in **DetailForm1** spiegeln die Änderung wider.
 
     > [!div class="mx-imgBorder"]
-    > ![Karten neu angeordnet](./media/customize-forms-sharepoint/reordered-card.png)
+    > ![reordercards @ no__t-1
 
-1. (optional) Ordnen Sie die anderen Karten in der folgenden Reihenfolge neu an:
+1. optionale Ordnen Sie die anderen Karten in diese Sequenz an:
 
     - Kontoname
     - Anzahl der Mitarbeiter
     - Jahresumsatz
-    - Telefon
+    - Haupttelefon
     - Adresse 1: Straße 1
     - Adresse 1: Straße 2
     - Adresse 1: Stadt
-    - Adresse 1: Postleitzahl
+    - Adresse 1: Zip/Postleitzahl
 
-1. Geben Sie in der linken Navigationsleiste, oder fügen Sie **Ed** in die Suche, und klicken Sie anschließend **EditForm1** um es auszuwählen.
+1. Geben oder fügen Sie in der linken Navigationsleiste in der Suchleiste " **Ed** " ein, und wählen Sie dann **EditForm1** aus, um es auszuwählen.
 
 1. Wiederholen Sie die Schritte dieser und der vorherigen Prozedur, damit die Felder in **EditForm1** denen in **DetailForm1** gleichen.
 
 ## <a name="run-the-app"></a>Ausführen der App
 
-1. Geben Sie in der linken Navigationsleiste, oder fügen Sie **Br** in die Suche, und klicken Sie anschließend **BrowseScreen1** um es auszuwählen.
+1. Geben oder fügen Sie in der linken Navigationsleiste **Br** in die Suchleiste ein, und wählen Sie dann **BrowseScreen1** aus, um es auszuwählen.
 
 1. Öffnen Sie den Vorschaumodus durch Drücken von F5 (oder durch Auswählen des Symbols **Preview** in der Nähe der oberen rechten Ecke).
 
     > [!div class="mx-imgBorder"]
-    > ![Symbol "Vorschau"](./media/customize-forms-sharepoint/open-preview.png)
+    > ![preview-Symbol @ no__t-1
 
-1. Wählen Sie in der oberen rechten Ecke das Plussymbol zum Hinzufügen eines Eintrags in **EditScreen1**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Datensatz hinzufügen](./media/customize-forms-sharepoint/add-record.png)
-
-1. Fügen Sie beliebige Daten werden soll, und wählen Sie dann das Häkchen in der oberen rechten Ecke die Änderungen zu speichern und zum zurückkehren **BrowseScreen1**.
+1. Klicken Sie in der oberen rechten Ecke auf das Pluszeichen, um einen Datensatz in **EditScreen1**hinzuzufügen.
 
     > [!div class="mx-imgBorder"]
-    > ![Datensatz speichern](./media/customize-forms-sharepoint/save-record.png)
+    > ![add Datensatz @ no__t-1
 
-1. Wählen Sie den Pfeil aus, für das Element, das Sie gerade erstellt haben, um angezeigt zu diesem Element in details **DetailScreen1**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Pfeil nach rechts](./media/customize-forms-sharepoint/right-arrow.png)
-
-1. Wählen Sie in der oberen rechten Ecke das Symbol "Bearbeiten" zum Aktualisieren des Datensatzes in **EditScreen1**.
+1. Fügen Sie beliebige Daten hinzu, und wählen Sie dann das Häkchensymbol in der oberen rechten Ecke aus, um die Änderungen zu speichern und zu **BrowseScreen1**zurückzukehren.
 
     > [!div class="mx-imgBorder"]
-    > ![Datensatz bearbeiten](./media/customize-forms-sharepoint/edit-record.png)
+    > ![save-Datensatz @ no__t-1
 
-1. Ändern Sie die Informationen in einem oder mehreren Feldern, und wählen Sie dann das Häkchen in der oberen rechten Ecke die Änderungen zu speichern und zum zurückkehren **DetailScreen1**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Speichern von Änderungen](./media/customize-forms-sharepoint/save-record.png)
-
-1. Wählen Sie in der Nähe der oberen rechten Ecke das Papierkorb-Symbol, die den Datensatz zu löschen, die Sie gerade aktualisiert und um zurückzugeben **BrowseScreen1**.
+1. Wählen Sie den Pfeil für das soeben erstellte Element aus, um Details zu diesem Element in **DetailScreen1**anzuzeigen.
 
     > [!div class="mx-imgBorder"]
-    > ![Datensatz löschen](./media/customize-forms-sharepoint/delete-record.png)
+    > ![right Pfeil @ no__t-1
 
-1. Schließen Sie den Vorschaumodus durch Drücken von Esc (oder durch Auswahl des schließsymbols in der Nähe der oberen linken Ecke).
+1. Wählen Sie in der oberen rechten Ecke das Bearbeitungs Symbol aus, um den Datensatz in **EditScreen1**zu aktualisieren.
+
+    > [!div class="mx-imgBorder"]
+    > ![edit-Datensatz @ no__t-1
+
+1. Ändern Sie die Informationen in einem oder mehreren Feldern, und aktivieren Sie dann das Häkchen in der oberen rechten Ecke, um die Änderungen zu speichern und zu **DetailScreen1**zurückzukehren.
+
+    > [!div class="mx-imgBorder"]
+    > ![save Changes @ no__t-1
+
+1. Wählen Sie in der Nähe der oberen rechten Ecke das Papierkorb Symbol aus, um den soeben aktualisierten Datensatz zu löschen und zu **BrowseScreen1**zurückzukehren.
+
+    > [!div class="mx-imgBorder"]
+    > ![delete-Datensatz @ no__t-1
+
+1. Schließen Sie den Vorschaumodus durch Drücken der ESC-Taste (oder durch Auswählen des Schließ Symbols in der Nähe der oberen linken Ecke).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
