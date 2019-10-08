@@ -47,6 +47,10 @@
               items:
                 - name: FAQ zu Aktivitäten
                   href: ../user/faq-for-timeline-and-activity.md
+            - name: Verwenden des Nachschlagefelds für einen Datensatz
+              href: ../user/lookup-field.md
+            - name: Anzeigen einer Profilkarte
+              href: ../user/profile-cards.md
             - name: Zuweisen oder Freigeben von Datensätzen
               href: ../user/assign-or-share-records.md
             - name: Freigeben von Datensätzen mit Access Team
@@ -59,6 +63,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
         - name: Durchsuchen von Datensätzen
           items:
+            - name: Vergleichen der Suche mit den Suchoptionen
+              href: ../user/search-and-find.md
             - name: Suchen nach Datensätzen
               href: ../user/search-records.md
             - name: Verwenden der erweiterten Suche
