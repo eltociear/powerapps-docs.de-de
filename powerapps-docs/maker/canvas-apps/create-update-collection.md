@@ -1,29 +1,28 @@
 ---
-title: Erstellen und Aktualisieren einer Sammlung in eine Canvas-app | Microsoft-Dokumentation
-description: Erstellen einer Sammlung in eine Canvas-app, um die Auflistung Elemente hinzuzufügen und eine oder alle Elemente daraus entfernen.
-author: aftowen
+title: Erstellen und Aktualisieren einer Sammlung in einer Canvas-App | Microsoft-Dokumentation
+description: Erstellen Sie eine Sammlung in einer Canvas-APP, fügen Sie der Auflistung Elemente hinzu, und entfernen Sie ein oder alle Elemente daraus.
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/28/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6089063e2478c95bb5bfbc5926608d85552cea40
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 375c4f19ed7715eed662c8456c539d5590c9f1ec
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561619"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993214"
 ---
-# <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in eine Canvas-app
+# <a name="create-and-update-a-collection-in-a-canvas-app"></a>Erstellen und Aktualisieren einer Sammlung in einer Canvas-App
 
-Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, können in Ihrer app. Eine Sammlung ist eine Gruppe von ähnlichen Elementen, z. B. Produkte in einer Produktliste. Weitere Informationen zu verschiedenen Typen von Variablen, z. B. Sammlungen: [Grundlegendes zu Canvas-Apps-Variablen](working-with-variables.md).
+Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer in ihrer App verwalten können. Eine Sammlung ist eine Gruppe von ähnlichen Elementen, z. b. Produkte in einer Produktliste. Weitere Informationen zu verschiedenen Typen von Variablen wie z. b. Sammlungen: Grundlegendes zu [Canvas-App-Variablen](working-with-variables.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -31,107 +30,107 @@ Verwenden Sie eine Sammlung zum Speichern von Daten, die Benutzer zu verwalten, 
 - Erstellen Sie eine App, oder öffnen Sie eine vorhandene App in PowerApps.
 - Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
-## <a name="create-a-multicolumn-collection"></a>Erstellen Sie eine Sammlung für mehrere Spalten
+## <a name="create-a-multicolumn-collection"></a>Erstellen einer Sammlung mit mehreren Spalten
 
-1. Fügen Sie in PowerApps Studio, eine **Texteingabe** Steuerelement.
+1. Fügen Sie in PowerApps Studio ein **Text Eingabe** -Steuerelement hinzu.
 
-    ![Fügen Sie ein Texteingabe-Steuerelement](./media/create-update-collection/add-textbox.png)
+    ![Einfügen eines Text Eingabe-Steuer Elements](./media/create-update-collection/add-textbox.png)
 
-1. Benennen Sie das Steuerelement, indem Sie auf die Auslassungspunkte im linken Navigationsbereich, auswählen von **umbenennen**, und geben dann **ProductName**.
+1. Benennen Sie das Steuerelement um, indem Sie im linken Navigationsbereich die Auslassungs Punkte auswählen, **Umbenennen**auswählen und dann **ProductName**eingeben.
 
-    ![Umbenennen eines Steuerelements](./media/create-update-collection/rename-textbox.png)
+    ![Umbenennen eines Steuer Elements](./media/create-update-collection/rename-textbox.png)
 
-1. Hinzufügen einer **Dropdown** Steuerelement.
+1. Fügen Sie ein **Dropdown** -Steuerelement hinzu.
 
-    ![Dropdown-Liste hinzufügen](./media/create-update-collection/add-dropdown.png)
+    ![Dropdown Liste hinzufügen](./media/create-update-collection/add-dropdown.png)
 
-1. Benennen Sie die **Dropdown** Steuerelement **Farben**, und stellen Sie sicher, dass die **Elemente** -Eigenschaft in der Liste ausgewählt ist.
+1. Benennen Sie die **Farben**des **Dropdown** -Steuer Elements um, und stellen Sie sicher, dass die **Items** -Eigenschaft in der Eigenschaften Liste ausgewählt ist.
 
     ![Items-Eigenschaft](./media/create-update-collection/items-property.png)
 
-1. Ersetzen Sie in der Bearbeitungsleiste **DropDownSample** mit dem folgenden Ausdruck:
+1. Ersetzen Sie in der Bearbeitungs Leiste **dropdownsample** durch diesen Ausdruck:
 
-    `["Red";"Green";"Blue"]`
+    `["Red","Green","Blue"]`
 
-1. Hinzufügen einer **Schaltfläche** steuern, legen Sie seine **Text** Eigenschaft **"Hinzufügen"**, und legen Sie seine **OnSelect** -Eigenschaft auf diese Formel:
+1. Fügen Sie ein **Schalt** Flächen-Steuerelement hinzu, legen Sie dessen **Text** -Eigenschaft auf **"Add"** fest, und legen **Sie die onselect** -Eigenschaft auf diese Formel
 
-    ```powerapps-comma
+    ```powerapps-dot
     Collect(
-        ProductList;
+        ProductList,
         {
-            Product: ProductName.Text;
+            Product: ProductName.Text,
             Color: Colors.Selected.Value
         }
     )
     ```
 
-1. Drücken Sie F5, geben Sie Text in **ProductName**, wählen Sie eine Option in **Farben**, und wählen Sie dann **hinzufügen**.
+1. Drücken Sie F5, geben Sie Text in **ProductName**ein, wählen Sie eine Option in **Farben**aus, und klicken Sie dann auf **Hinzufügen**.
 
-    ![Vorschau der app](./media/create-update-collection/preview-add.png)
+    ![Vorschau der APP](./media/create-update-collection/preview-add.png)
 
-1. Wiederholen Sie den vorherigen Schritt mindestens zwei weitere Male aus, und drücken Sie Esc.
+1. Wiederholen Sie den vorherigen Schritt mindestens zwei weitere Male, und drücken Sie dann ESC.
 
-1. Auf der **Datei** , wählen Sie im Menü **Sammlungen** der Sammlung angezeigt, die Sie erstellt.
+1. Wählen Sie im Menü **Datei** die Option **Sammlungen** aus, um die von Ihnen erstellte Sammlung anzuzeigen.
 
-    ![Auflistung anzeigen](./media/create-update-collection/show-collection.png)
+    ![Sammlung anzeigen](./media/create-update-collection/show-collection.png)
 
-## <a name="show-a-collection"></a>Anzeigen einer Auflistung
+## <a name="show-a-collection"></a>Sammlung anzeigen
 
-1. Hinzufügen eine vertikalen **Katalog** Steuerelement.
+1. Hinzufügen eines **vertikalen Katalog** -Steuer Elements.
 
     ![Hinzufügen eines vertikalen Katalogs](./media/create-update-collection/add-gallery.png)
 
-1. Festlegen des Katalogs **Elemente** Eigenschaft **ProductList**.
+1. Legen Sie die **Items** -Eigenschaft des Katalogs auf **productList**fest.
 
-1. In der **Daten** Bereich legen Sie das Feld Untertitel **Farbe**, und legen Sie auf das Feld "Titel" **Produkt**.
+1. Legen Sie im **Daten** Bereich das Feld Untertitel auf **Color**fest, und legen Sie das Feld Title auf **Product**fest.
 
-    ![Festlegen Sie der Items-Eigenschaft des Katalogs, und ändern Sie die Felder, die es zeigt](./media/create-update-collection/configure-gallery.png)
+    ![Legen Sie die Items-Eigenschaft des Katalogs fest, und ändern Sie die angezeigten Felder.](./media/create-update-collection/configure-gallery.png)
 
-1. Schließen der **Daten** , wählen Sie den Katalog, und legen Sie dann die **Layout** Feld **Titel und Untertitel**.
+1. Schließen Sie den Bereich **Daten** , wählen Sie den Katalog aus, und legen Sie dann das **layoutfeld** auf **Titel und Untertitel**fest.
 
-    ![Festlegen Sie der Items-Eigenschaft des Katalogs, und ändern Sie die Felder, die es zeigt](./media/create-update-collection/change-layout.png)
+    ![Legen Sie die Items-Eigenschaft des Katalogs fest, und ändern Sie die angezeigten Felder.](./media/create-update-collection/change-layout.png)
 
-    Ihr Bildschirm sieht etwa wie in diesem Beispiel aus:
+    Ihr Bildschirm ähnelt dem folgenden Beispiel:
 
-    ![Vom ersten Bildschirm wird](./media/create-update-collection/screen-example1.png)
+    ![Beispiel des ersten Bildschirms](./media/create-update-collection/screen-example1.png)
 
-## <a name="remove-one-or-all-items"></a>Entfernen Sie eine oder alle Elemente
+## <a name="remove-one-or-all-items"></a>Entfernen eines oder aller Elemente
 
-1. Wählen Sie die Katalogvorlage durch Klicken oder tippen im unteren Bereich des Katalogs, und klicken oder tippen bearbeiten-Symbol in der Nähe der oberen linken Ecke.
+1. Wählen Sie die Katalog Vorlage aus, indem Sie am unteren Rand des Katalogs klicken oder tippen und dann auf das Stift Symbol in der Nähe der oberen linken Ecke klicken oder tippen.
 
-    ![Wählen Sie Katalog: Vorlage](./media/create-update-collection/select-template.png)
+    ![Katalog Vorlage auswählen](./media/create-update-collection/select-template.png)
 
-1. Hinzufügen einer **Papierkorb** Symbol, um die Katalogvorlage.
+1. Fügen Sie der Katalog Vorlage ein **Papierkorb** Symbol hinzu.
 
-    ![Papierkorbsymbol "hinzufügen"](./media/create-update-collection/trash-icon.png)
+    ![Papierkorb Symbol hinzufügen](./media/create-update-collection/trash-icon.png)
 
-1. Legen Sie des Symbol " **OnSelect** -Eigenschaft auf diese Formel:
+1. Legen **Sie die onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    `Remove(ProductList; ThisItem)`
+    `Remove(ProductList, ThisItem)`
 
-1. Fügen Sie außerhalb des Katalogs, eine Schaltfläche hinzu, legen Sie seine **Text** Eigenschaft, um **"Clear"**, und legen Sie seine **OnSelect** -Eigenschaft auf diese Formel:
+1. Fügen Sie außerhalb des Katalogs eine Schaltfläche hinzu, legen Sie die **Text** -Eigenschaft auf **"Clear"** fest, und legen **Sie die onselect** -Eigenschaft auf diese Formel fest:
 
     `Clear(ProductList)`
 
-1. Während Sie die Alt-Taste gedrückt halten, wählen Sie die **Papierkorb** Symbol für ein Element, das Element aus der Sammlung entfernen, oder wählen Sie die **löschen** Schaltfläche, um alle Elemente aus der Auflistung entfernt.
+1. Wenn Sie die Alt-Taste gedrückt halten, wählen Sie das **Papierkorb** Symbol für ein Element aus, um das Element aus der Auflistung zu entfernen, oder klicken Sie auf die Schaltfläche **Löschen** , um alle Elemente aus der Sammlung zu entfernen
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>Einfügen einer SharePoint-Liste in eine Sammlung
 
 1. [Herstellen einer Verbindung mit einer SharePoint-Liste](connections/connection-sharepoint-online.md#create-a-connection)
 
-1. Fügen Sie eine Schaltfläche hinzu, und legen Sie die folgende Funktion für die **[OnSelect](controls/properties-core.md)**-Eigenschaft fest, ersetzen Sie hierbei *ListName* durch den Namen der SharePoint-Liste:<br>
+1. Fügen Sie eine Schaltfläche hinzu, und legen Sie die folgende Funktion für die **[OnSelect](controls/properties-core.md)** -Eigenschaft fest, ersetzen Sie hierbei *ListName* durch den Namen der SharePoint-Liste:<br>
 
-    `Collect(MySPCollection; ListName)`
+    `Collect(MySPCollection, ListName)`
 
     Diese Funktion erstellt eine Sammlung namens **MySPCollection**, die die gleichen Daten wie Ihre SharePoint-Liste enthält.
 
 1. Halten Sie die ALT-TASTE gedrückt, und wählen Sie die Schaltfläche aus.
 
-1. (optional) Um die Auflistung der Vorschau anzeigen, die Sie erstellt haben, wählen Sie **Sammlungen** auf die **Datei** Menü.
+1. optionale Um eine Vorschau der erstellten Sammlung anzuzeigen, wählen Sie im Menü **Datei** die Option **Sammlungen** aus.
 
-Informationen dazu, wie Sie Daten aus einer SharePoint-Liste (z. B. Datumsangaben, Optionen und Personen) in einem Katalog anzeigen: [Anzeigen der von Listenspalten in einem Katalog](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Informationen zum Anzeigen der Daten in einem Formular (mit Dropdownliste, Datumsauswahl und Personenauswahl): [Bearbeiten von Form und Display Form-Steuerelemente](controls/control-form-detail.md).
+Informationen zum Anzeigen von Daten aus einer SharePoint-Liste (z. b. Datumsangaben, Auswahlmöglichkeiten und Personen) in einem Katalog: [Listen Spalten in einem Katalog anzeigen](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Weitere Informationen zum Anzeigen von Daten in einem Formular (mit Dropdown Listen, Datums-und Personen adressierern): [Formular-und Anzeige Formular-Steuerelemente bearbeiten](controls/control-form-detail.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Überprüfen Sie die [Referenzthema](functions/function-clear-collect-clearcollect.md) für die **sammeln** Funktion.
-- Informationen zum Strukturieren von Daten in einer Auflistung mithilfe der [AddColumns "," DropColumns "," RenameColumns "und" ShowColumns](functions/function-table-shaping.md) Funktionen.
+- Lesen Sie das [Referenz Thema](functions/function-clear-collect-clearcollect.md) für die **Collect** -Funktion.
+- Erfahren Sie, wie Sie Daten in einer Auflistung mithilfe der Funktionen " [AddColumns", "dropcolumns", "renamecolumns" und "showcolumns](functions/function-table-shaping.md) " strukturieren.
