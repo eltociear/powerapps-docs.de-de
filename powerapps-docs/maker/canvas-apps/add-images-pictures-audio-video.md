@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71994667"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Verwenden von Multimediadateien in PowerApps
 
@@ -158,7 +159,7 @@ In diesem Szenario erfahren Sie, wie Sie Stiftzeichnungen in Ihre Datenquelle (O
 
 8. Fügen Sie auf der Registerkarte **Einfügen** ein **Schaltflächen**-Steuerelement hinzu, und legen Sie dessen **OnSelect**-Eigenschaft auf diese Formel fest:
 
-    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
+    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
 
 9. Fügen Sie ein **Bildkatalog**-Steuerelement hinzu (Registerkarte **Einfügen** > **Katalog**), und legen Sie dessen **Items**-Eigenschaft auf `Drawings` fest. Die **Image**-Eigenschaft des Katalog-Steuerelements wird automatisch auf `ThisItem.Image` festgelegt.
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71993050"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-the-entity-form-control"></a>Verwenden des Steuerelements „Formularentität“
 Erstellen Sie Apps schneller, indem Sie das Steuerelement **Formularentität** verwenden, mit dem Sie umfangreiche Formulare für eine Common Data Service-Entität hinzufügen können.
@@ -48,12 +49,12 @@ Hier sind die wichtigsten Eigenschaften des Steuerelements **Formularentität**.
 Beispiel: Wenn das Steuerelement **Formular Entität** eine Liste von Sales-Order-Datensätzen anzeigt, gibt die **ausgewählte** Eigenschaft den aktuell ausgewählten Datensatz aus. Sie können auch auf ein Feld in einem Datensatz zugreifen. (Geben Sie z.B. für den Wert des **Account**-Felds (Konto) des ausgewählten Datensatzes **Selected.Account** an.)
 
 **SelectableFields**: Gibt an, welche Felder als Links angezeigt werden sollen. Legen Sie den Wert dieser Eigenschaft mithilfe der folgenden Syntax fest:  
-**{Field1Name : true, Field2Name : true}**  
+**{Field1Name : true; Field2Name : true}**  
 Beispiel: Wenn Sie möchten, dass die Felder **SalesOrderID** und **Account** als Links in einem Formular angezeigt werden, legen Sie die **selectablefields** -Eigenschaft dieses Formulars auf diesen Wert fest:  
-**{SalesOrderId : true, Account : true}**
+**{SalesOrderId : true; Account : true}**
 
 **SelectedField**: Bestimmt, welches Feld angeklickt oder angetippt wurde. Dies gilt nur für die Felder, die als **SelectableFields** angegeben werden.  
-Beispiel: Wenn Sie die **selectablefields** -Eigenschaft auf **{SalesOrderID: true, Account: true}** festlegen und der Benutzer auf das **Account** -Feld klickt oder tippt, wird **selectedField. Account** auf true festgelegt.
+Beispiel: Wenn Sie die **selectablefields** -Eigenschaft auf **{SalesOrderID: true; Account: true}** festlegen und der Benutzer auf das **Account** -Feld klickt oder tippt, wird **selectedField. Account** auf true festgelegt.
 
 **OnFieldSelect**: Gibt an, wie eine App reagiert, wenn der Benutzer auf ein Feld klickt oder tippt. Dies gilt nur für die Felder, die als **SelectableFields** angegeben werden.
 

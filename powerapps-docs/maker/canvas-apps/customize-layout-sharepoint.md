@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71986056"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Lehrbuch Anpassen eines Katalogs in powerapps
 
@@ -95,7 +96,7 @@ Wenn Sie noch nicht bei PowerApps registriert sind, [registrieren Sie sich zuers
 
 1. Kopieren Sie diese Formel, und fügen Sie sie in die Bearbeitungsleiste ein.
 
-    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
+    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
 
     Mit Verwendung dieser Formel stellen Sie Folgendes sicher:
 

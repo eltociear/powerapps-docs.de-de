@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71986669"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Katalog-Steuerelement in Canvas-apps
 
@@ -92,7 +93,7 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Beispiele
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71984082"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="select-function-in-powerapps"></a>Funktion „Select“ in PowerApps
 Simuliert eine Auswahlaktion für ein Steuerelement, sodass die Formel **OnSelect** ausgewertet wird.
@@ -83,7 +84,7 @@ Verwenden Sie **Select** nur in [Verhaltensformeln](../working-with-formulas-in-
 
 5. Legen Sie die Eigenschaft **OnSelect** des Bildsteuerelements auf die folgende Formel fest:
 
-    **Notify( "Image Selected", Success )**
+    **Notify( "Image Selected"; Success )**
 
 6. Während Sie die ALT-TASTE gedrückt halten, klicken oder tippen Sie auf die verschiedenen Elemente des Katalogs.
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71986571"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="list-box-control-in-powerapps"></a>Listenfeld-Steuerelement in PowerApps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
@@ -125,11 +126,11 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Listenfeld**-Steuerungselement hinzu, nennen Sie es **CategoryList**, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf folgende Formel fest:<br>
-   **["Carpet","Hardwood","Tile"]**
+   **["Carpet";"Hardwood";"Tile"]**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
@@ -137,9 +138,9 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 2. Fügen Sie drei **[Dropdown](control-drop-down.md)** -Steuerelemente hinzu, verschieben Sie sie unter **CategoryList**, und nennen Sie diese **CarpetList**, **HardwoodList** und **TileList**.
 3. Legen Sie die **[Items](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
    
-   * CarpetList: **["Caserta Stone Beige", "Ageless Beauty Clay", "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige"; "Ageless Beauty Clay"; "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
      
      ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/flooring-names.png)
 4. Legen Sie die **[Visible](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
