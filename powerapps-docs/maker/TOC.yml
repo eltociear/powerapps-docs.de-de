@@ -1050,7 +1050,7 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Für Entwickler
       href: ../developer/model-driven-apps/overview.md
-- name: Portals (Vorschau)
+- name: Portale
   items:
     - name: Was ist PowerApps Portals?
       href: ./portals/overview.md
@@ -1058,9 +1058,9 @@
       items:
         - name: Portalvorlagen
           href: ./portals/portal-templates.md
-        - name: Erstellen eines Portals
+        - name: Erstellen eines Starterportals
           href: ./portals/create-portal.md
-        - name: Erstellen eines Dynamics 365-Portals
+        - name: Erstellen eines Portals mit einer Dynamics 365-Umgebung
           href: ./portals/create-dynamics-portal.md
         - name: Anatomie des Portal-Designers
           href: ./portals/portal-designer-anatomy.md
@@ -1072,10 +1072,10 @@
           href: ./portals/compose-page.md
         - name: Arbeiten mit Vorlagen
           href: ./portals/work-with-templates.md
+        - name: Bearbeiten von CSS
+          href: ./portals/edit-css.md
     - name: Verwalten vorhandener Portale
       href: ./portals/manage-existing-portals.md
-    - name: Konfigurieren von Websiteeinstellungen
-      href: ./portals/configure-site-settings.md
     - name: Erweiterte Portalverwaltung
       items:
         - name: Übersicht
@@ -1108,9 +1108,17 @@
           href: ./portals/admin/update-portal-domain.md
         - name: Löschen des serverseitigen Caches
           href: ./portals/admin/clear-server-side-cache.md
-        - name: Migrieren der Dynamics 365-Portalkonfiguration
+        - name: Migrieren der Portalkonfiguration
           href: ./portals/admin/migrate-portal-configuration.md
-    - name: Erweiterte Portalanpassungen
+        - name: Informationen zum Lebenszyklus des Portals
+          href: ./portals/admin/portal-lifecycle.md
+    - name: Erweiterte Portalkonfiguration
+      items:
+        - name: Übersicht
+          href: ./portals/configure/configure-portal.md
+        - name: Konfigurieren von Websiteeinstellungen
+          href: ./portals/configure/configure-site-settings.md
+    - name: Erweiterte Portalanpassung
       items:
         - name: Arbeiten mit Liquid-Vorlagen
           items:
@@ -1156,6 +1164,18 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: OAuth 2.0-Flow zur impliziten Gewährung
           href: ./portals/oauth-implicit-grant-flow.md
+    - name: Dokumentspeicher in Portalen
+      items:
+        - name: Konfigurieren von Hinweisen
+          href: ./portals/configure-notes.md
+        - name: Azure Storage
+          items:
+            - name: Aktivieren von Azure Storage
+              href: ./portals/enable-azure-storage.md
+            - name: Hinzufügen einer Azure Storage-Webressource zu einem Formular
+              href: ./portals/add-web-resource.md
+        - name: Verwalten von SharePoint-Dokumenten
+          href: ./portals/manage-sharepoint-documents.md
     - name: Bekannte Probleme
       href: ./portals/known-issues.md
     - name: Häufig gestellte Fragen zu PowerApps-Portals
@@ -1304,7 +1324,7 @@
           href: ./common-data-service/navigate-specific-solution.md
         - name: Erstellen einer Lösung
           href: ./common-data-service/create-solution.md
-        - name: Anzeigen von Lösungsebenen
+        - name: 'Anzeigen von Lösungsebenen '
           href: ./common-data-service/solution-layers.md
         - name: Anzeigen des Lösungsverlauf
           href: ./common-data-service/solution-history.md
