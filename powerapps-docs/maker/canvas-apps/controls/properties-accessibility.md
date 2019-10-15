@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/26/2017
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e1baf96ab96dc6fe783fccdf243c0ae4ba6d0c1d
-ms.sourcegitcommit: b4df7d781cda50dfe2f6609f1cc4d2b531428b3c
+ms.openlocfilehash: 2c11e05c93d5a505408948178bf3efbd31f2dbf7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70161255"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986167"
 ---
 # <a name="accessibility-properties-for-canvas-apps"></a>Barrierefreiheits Eigenschaften für Canvas-apps
 
@@ -58,7 +58,7 @@ Verwenden Sie das [ **Erweiterte Gruppen** Steuer](https://powerapps.microsoft.c
 
 ![Animation, die ein erweitertes Gruppen Steuerelement anzeigt, wodurch die Navigation innerhalb einer Gruppe vor dem Verschieben fortgesetzt wird](media/properties-accessibility/enhanced-group.gif)
 
-Auf ähnliche Weise wird beim Durchlaufen von Containern wie [**Form**](control-form-detail.md)- und [**Gallery**](control-gallery.md)-Steuerelementen mit der TAB-Taste durch alle Elemente des Containers navigiert, bevor mit dem nächsten Steuerelement außerhalb des Containers fortgefahren wird.  
+Ebenso werden durch das Durchsuchen von Containern  wie [**Formular**](control-form-detail.md) -und [**Katalog**](control-gallery.md) Steuerelementen alle Elemente des Containers durchlaufen, bevor das nächste Steuerelement außerhalb des Containers fortgesetzt wird.  
 
 Steuerelemente, die den **Visible** -Eigenschafts Wert *false* oder den **DisplayMode** -Eigenschafts Wert **deaktiviert** haben, sind nicht in der Navigation enthalten.  
 
