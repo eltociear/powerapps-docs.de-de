@@ -30,7 +30,7 @@ Die einheitliche Schnittstelle für Modell gesteuerte Apps bietet eine konsisten
 > ![Vereinheitlichte Schnittstelle an Bildschirm] anpassen (media/Reflow.png "Vereinheitlichte Schnittstelle an Bildschirm") anpassen
 
 > [!NOTE]
-> Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [Blog: Ankündigung der Zeitachse, die zu Unified Interface @ no__t-0 verschoben werden soll. Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
+> Der Legacy-WebClient ist veraltet, und die Kunden müssen vor dem 1. Oktober 2020 zu Unified Interface übergehen. Weitere Informationen finden Sie unter [Blog: Ankündigung der Zeitachse, die zu Unified Interface verschoben werden soll](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Weitere Informationen zum Übergang finden Sie unter [Schnellstart für](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app)den Übergang.
 
 ## <a name="navigation"></a>Navig
 
