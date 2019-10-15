@@ -1,165 +1,165 @@
 ---
-title: Installieren von Northwind Trader-Datenbank und apps | Microsoft-Dokumentation
-description: Installieren Sie die Northwind-Datenbank und die apps in einer Umgebung mit relationale Konzepten vertraut zu machen.
+title: Installieren von Northwind Traders-Datenbank und-Apps | Microsoft-Dokumentation
+description: Installieren Sie die Northwind-Datenbank und die apps in einer Umgebung, um die relationalen Konzepte zu erforschen.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 351f9fd4fe369b3073a9edfb0158883140f50693
-ms.sourcegitcommit: e85072f7a80da308c4caabe20adbf2509588ca57
+ms.openlocfilehash: 3a2c3b468c7ccc09c49221c65113e66b562f5ed1
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66761026"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990861"
 ---
-# <a name="install-northwind-traders-database-and-apps"></a>Installieren von Northwind Trader-Datenbank und apps
+# <a name="install-northwind-traders-database-and-apps"></a>Installieren von Northwind Traders-Datenbank und-Apps
 
-Anhand der Schritte in [dieser Reihe von Themen](northwind-orders-canvas-part1.md), Konzepte zu relationalen Daten können Sie ermitteln, wie Sie in einer Beispieldatenbank in Common Data Service implementiert. Sie können auch untersuchen, Business-Beispiel-apps, beide canvas und modellgesteuerte, für die Verwaltung von Daten und Sammeln Sie praktische Erfahrungen, indem Sie eine solche Anwendung zu erstellen. Dieser erste Thema wird erläutert, wie die Datenbank Northwind Traders in Ihrer Umgebung installieren, und erhalten Zugriff auf die Beispiel-apps, die Sie öffnen können, für die Bearbeitung, um anzuzeigen, wie diese erstellt wurden.
+Wenn Sie die Schritte in [dieser Reihe von Themen](northwind-orders-canvas-part1.md)ausführen, können Sie Konzepte von relationalen Daten ermitteln, die in Common Data Service in einer Beispieldatenbank implementiert werden. Sie können auch Beispiel-Business-Apps durchsuchen, sowohl Canvas als auch Modell gesteuert, um die Daten zu verwalten und praktische Funktionen zu erzielen, indem Sie eine solche APP erstellen. In diesem ersten Thema wird erläutert, wie Sie die Datenbank Northwind Traders in ihrer eigenen Umgebung installieren und Zugriff auf die Beispiel-apps erhalten, die Sie für die Bearbeitung öffnen können, um die Art der Erstellung anzuzeigen.
 
-Northwind Traders ist eine fiktive Organisation, die Bestellungen, Produkte, Kunden, Lieferanten und viele andere Aspekte von einem kleinen Unternehmen verwaltet. Dieses Beispiel mit den ersten Versionen von Microsoft Access angezeigt und ist weiterhin verfügbar, wie eine Vorlage für den Zugriff.
+Northwind Traders ist eine fiktive Organisation, die Aufträge, Produkte, Kunden, Lieferanten und viele andere Aspekte eines kleinen Unternehmens verwaltet. Dieses Beispiel wurde mit den ersten Versionen von Microsoft Access angezeigt und ist weiterhin als Zugriffs Vorlage verfügbar.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Eine PowerApps-Lizenz, die von Common Data Service unterstützt. Sie können [verwenden Sie eine kostenlose Testversion](../signup-for-powerapps.md) für 30 Tage.
-- Eine Umgebung mit einer Common Data Service-Datenbank. Sie können [Erstellen einer solchen Umgebung](https://docs.microsoft.com/power-platform/admin/create-environment) Wenn Sie die entsprechenden Berechtigungen verfügen.
+- Eine powerapps-Lizenz, die Common Data Service unterstützt. Sie können [eine kostenlose Testversion](../signup-for-powerapps.md) für 30 Tage verwenden.
+- Eine Umgebung mit einer Common Data Service Datenbank. Sie können [eine solche Umgebung erstellen](https://docs.microsoft.com/power-platform/admin/create-environment) , wenn Sie über die entsprechenden Berechtigungen verfügen.
 
-## <a name="download-the-solution"></a>Laden Sie die Lösung
+## <a name="download-the-solution"></a>Herunterladen der Lösung
 
 > [!div class="nextstepaction"]
-> [Laden Sie die Projektmappendatei für Northwind Traders](https://pwrappssamples.blob.core.windows.net/samples/NorthwindTraders_1_0_0_6.zip)
+> [Herunterladen der Projektmappen-Datei für Northwind Traders](https://pwrappssamples.blob.core.windows.net/samples/NorthwindTraders_1_0_0_6.zip)
 
-Dies [Lösung](../../developer/common-data-service/introduction-solutions.md) -Datei (.zip) enthält die Definitionen von Entitäten, Optionssätze und Geschäftsprozesse, im Zeichenbereich und modellgesteuerten apps; und alle anderen Elemente, die zusammen verwendet werden.
+Diese [Projektmappendatei](../../developer/common-data-service/introduction-solutions.md) (ZIP-Datei) enthält die Definitionen von Entitäten, Options Sätzen und Geschäftsprozessen. der Canvas und Modell gesteuerte apps und alle anderen Elemente, die zusammen verwendet werden.
 
-## <a name="install-the-solution"></a>Installieren Sie die Projektmappe
+## <a name="install-the-solution"></a>Installieren der Lösung
 
-1. Melden Sie sich beim [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und stellen Sie sicher, dass Sie in einer Umgebung arbeiten, die eine Common Data Service-Datenbank enthält.
+1. Melden Sie sich bei [powerapps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, und stellen Sie sicher, dass Sie in einer Umgebung arbeiten, die eine Common Data Service-Datenbank enthält.
 
-1. Wählen Sie im linken Navigationsbereich **Lösungen**, und wählen Sie dann **Import** auf der Symbolleiste am oberen Rand des Bildschirms:
-
-    > [!div class="mx-imgBorder"]
-    > ![Lösungen anzeigen und Importieren einer Projektmappe Einstiegspunkt](media/northwind-install/solution-import.png)
-
-1. In der **Lösungspaket wählen** Seite **Durchsuchen**.
+1. Klicken Sie im linken Navigationsbereich auf Projektmappen **, und wählen Sie dann**in der Symbolleiste oben auf dem Bildschirm **importieren** aus:
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie Lösungspaket-Seite aus, bevor das Paket ausgewählt ist](media/northwind-install/select-solution2.png)
+    > ![projektmappenansicht und Import-Solution Entry Point @ no__t-1
 
-1. Suchen Sie die Datei, die Sie heruntergeladen haben, und wählen Sie dann **öffnen**.
-
-    Wenn Sie einen anderen Speicherort ausgewählt haben, wird die Datei im Ordner "Downloads" sein.
-
-1. Wenn Sie die richtige Datei haben (die Versionsnummer kann davon abweichen), wählen Sie **Weiter**:
+1. Wählen Sie auf der Seite **Lösungspaket auswählen** die Option **Durchsuchen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Wählen Sie Seite für Pakete für Projektmappe aus, nach dem Paket ausgewählt ist](media/northwind-install/confirm-solution2.png)
+    > ![seite Projektmappenpaket auswählen, bevor Package ausgewählt ist @ no__t-1
 
-1. In der **Lösungsinformationen** Seite **Weiter** Wenn der Name der Projektmappe und dem Verleger richtig sind.
+1. Suchen Sie die heruntergeladene Datei, und wählen Sie dann **Öffnen**aus.
 
-    > [!div class="mx-imgBorder"]
-    > ![Seite "Lösung Informationen"](media/northwind-install/confirm-publisher.png)
+    Die Datei befindet sich in Ihrem Downloadordner, es sei denn, Sie haben einen anderen Speicherort ausgewählt.
 
-1. In der **Importoptionen** Seite **Import** auf SDK-Nachrichtenverarbeitung, vergewissern Sie sich die für dieses Beispiel müssen:
-
-    > [!div class="mx-imgBorder"]
-    > ![Importieren Sie die Seite "Optionen"](media/northwind-install/confirm-sdk.png)
-
-    Eine andere Seite wird angezeigt, und es wird der Fortschritt während der Installation der Lösung für den nächsten Minuten:
+1. Wenn Sie über die richtige Datei verfügen (die Versionsnummer kann variieren), klicken Sie auf **weiter**:
 
     > [!div class="mx-imgBorder"]
-    > ![Statusanzeige](media/northwind-install/solution-progress.png)
+    > ![seite Projektmappenpaket auswählen, nachdem das Paket ausgewählt wurde @ no__t-1
 
-    Wenn die Installation abgeschlossen ist, zeigt die ursprüngliche Seite das Ergebnis an:
+1. Wählen Sie auf der Seite projektmappeninformationen die Option **weiter** aus, wenn der Name der Projekt Mappe und der Verleger korrekt sind.
 
     > [!div class="mx-imgBorder"]
-    > ![Importieren die Seite "Lösung"](media/northwind-install/solution-success.png)
+    > Seite "![projektmappeninformationen" @ no__t-1
+
+1. Wählen Sie auf der Seite **Importoptionen die Option** **importieren** aus, um die für das Beispiel erforderliche SDK-Nachrichtenverarbeitung zu bestätigen:
+
+    > [!div class="mx-imgBorder"]
+    > Seite "![import Options" @ no__t-1
+
+    Eine andere Seite wird angezeigt und zeigt den Fortschritt bei der Installation der Projekt Mappe in den nächsten Minuten:
+
+    > [!div class="mx-imgBorder"]
+    > ![fortschritts Leiste @ no__t-1
+
+    Wenn die Installation abgeschlossen ist, wird auf der ursprünglichen Seite das Ergebnis angezeigt:
+
+    > [!div class="mx-imgBorder"]
+    > ![projektmappenseite wird importiert @ no__t-1
 
 1. Klicken Sie auf **Schließen**.
 
-## <a name="load-the-sample-data"></a>Laden der Beispieldaten
+## <a name="load-the-sample-data"></a>Laden der Beispiel Daten
 
-1. Wählen Sie **Apps**, und wählen Sie dann **Northwind Beispieldaten**.
+1. Wählen Sie **apps**aus, und wählen Sie dann **Northwind-Beispiel Daten**aus.
 
-    Warten Sie einige Minuten, wenn die Northwind-apps nicht angezeigt werden unmittelbar nach der Installation der Lösung:
-
-    > [!div class="mx-imgBorder"]
-    > ![Northwind-Datenbank in der Liste der apps](media/northwind-install/sample-data-app.png)
-
-1. Wenn die app die Berechtigung für die Interaktion mit Common Data Service verlangt wird, wählen Sie **zulassen**:
+    Warten Sie einige Minuten, wenn die Northwind-apps nicht unmittelbar nach der Installation der Lösung angezeigt werden:
 
     > [!div class="mx-imgBorder"]
-    > ![Stimmen Sie im Dialogfeld für Common Data Service](media/northwind-install/sample-data-permission.png)
+    > ![northwind-Datenbank in der Liste der apps @ no__t-1
 
-1. Wählen Sie nach die app geladen und zeigt an, dass die Beispiel-Entitäten keine Datensätze enthalten, **Laden von Daten** um Entitäten aufzufüllen:
-
-    > [!div class="mx-imgBorder"]
-    > ![Laden Sie die Schaltfläche "Daten" im Sample Data Manager](media/northwind-install/sample-data-load.png)
-
-    Wie die app die Daten lädt, März Punkte auf dem oberen Rand der app, und die Anzahl der Datensätze erhöht.
-
-    Entitäten in einer bestimmten Reihenfolge geladen, sodass die Beziehungen zwischen den Datensätzen hergestellt werden können. Z. B. die **Bestelldetails** Entität verfügt über eine n: 1 Beziehung mit der **Bestellungen** und **Bestellprodukte** Entitäten, die zuerst geladen werden.
-
-    Sie können den Prozess jederzeit abbrechen, indem Sie die Auswahl **Abbrechen**, und Sie können die Daten zu einem beliebigen Zeitpunkt entfernen, indem Sie die Auswahl **entfernen Daten**:
+1. Wenn die APP die Berechtigung zum interagieren mit Common Data Service anfordert, wählen Sie **zulassen**:
 
     > [!div class="mx-imgBorder"]
-    > ![Sample Data Manager, wie die Daten geladen werden](media/northwind-install/sample-data-progress.png)
+    > Dialogfeld "![consent" für Common Data Service @ no__t-1
 
-    Wenn die Daten vollständig geladen ist, die letzte Zeile (**viele-zu-viele-Beziehungen**) zeigt **Fertig**, und die **Laden von Daten** und **entfernen Daten** Schaltflächen werden erneut aktiviert werden:
+1. Nachdem die App geladen und angezeigt wird, dass die Beispiel Entitäten keine Datensätze enthalten, wählen Sie **Daten laden** , um die Entitäten aufzufüllen:
 
     > [!div class="mx-imgBorder"]
-    > ![Beispiel-Daten-Manager nach dem Laden von Daten](media/northwind-install/sample-data-complete.png)
+    > Schaltfläche "![load Data" in Sample Data Manager @ no__t-1
+
+    Wenn die APP die Daten lädt, werden die Punkte über den oberen Rand der APP und die Anzahl der Datensätze vergrößert.
+
+    Entitäten werden in einer bestimmten Reihenfolge geladen, damit Beziehungen zwischen Datensätzen hergestellt werden können. Beispielsweise verfügt die Entität **Order Details** über eine n:1-Beziehung zu den Entitäten **Orders** und **Order Products** , die zuerst geladen werden.
+
+    Sie können den Prozess jederzeit abbrechen, indem Sie " **Abbrechen**" auswählen, und Sie können die Daten jederzeit entfernen, indem Sie **Daten entfernen**auswählen:
+
+    > [!div class="mx-imgBorder"]
+    > ![sample Data Manager beim Laden von Daten @ no__t-1
+
+    Wenn das Laden der Daten abgeschlossen ist, wird die letzte Zeile (m:n-Beziehungen) als **abgeschlossen**angezeigt, und die Schaltflächen **Daten laden** und **Daten entfernen** werden erneut aktiviert:
+
+    > [!div class="mx-imgBorder"]
+    > ![sample Data Manager, nachdem die Daten geladen wurden @ no__t-1
 
 ## <a name="sample-apps"></a>Beispiel-Apps
 
 Die Northwind-Lösung umfasst diese apps für die Interaktion mit diesen Daten:
 
-- Northwind Orders (Canvas)
-- Northwind Orders (modellgesteuerte)
+- Northwind-Bestellungen (Canvas)
+- Northwind-Bestellungen (Modell gesteuert)
 
-Sie öffnen diese apps auf die gleiche Weise, dass Sie die app im vorherigen Verfahren geöffnet.
+Sie öffnen diese apps auf die gleiche Weise, wie Sie die app in der vorherigen Prozedur geöffnet haben.
 
 ### <a name="canvas"></a>Zeichenbereich
 
-Dieser Bildschirm app bietet eine einfache Master / Detail-Ansicht der **Bestellungen** Entität können Sie anzeigen und bearbeiten eine Übersicht über die Reihenfolge und jedes Zeilenelement für eine Bestellung. Eine Liste der Aufträge, die am linken Rand angezeigt wird, und Sie können einen Pfeil auswählen, in der Liste aus, um eine Zusammenfassung und die zugehörigen Detailinformationen anzuzeigen. Weitere Informationen finden Sie unter: [Übersicht über das Canvas-app für Northwind Traders](northwind-orders-canvas-overview.md).
+Diese Einzel Bildschirm-App bietet eine einfache Master-Detail-Ansicht der **Orders** -Entität, in der Sie eine Zusammenfassung der Reihenfolge und der einzelnen Zeilen Elemente für eine Bestellung anzeigen und bearbeiten können. Eine Liste der Bestellungen wird am linken Rand angezeigt, und Sie können einen Pfeil in der Liste auswählen, um eine Zusammenfassung und die Details dieser Bestellung anzuzeigen. Weitere Informationen finden Sie unter: [Übersicht über die Canvas-App für Northwind Traders](northwind-orders-canvas-overview.md).
 
 > [!div class="mx-imgBorder"]
-> ![Liste der Bestellungen und Details in Northwind canvas-app](media/northwind-install/orders-canvas.png)
+> ![liste der Bestellungen und Details in der Northwind Canvas-App @ no__t-1
 
 ### <a name="model-driven"></a>Modellgesteuert
 
-Diese app greift auf dieselben Daten (in der **Bestellungen** Entität) wie die Canvas-app. Zeigen Sie in der Liste der Bestellungen Weitere Informationen zu einer Bestellung durch Auswählen der Anzahl:
+Diese APP arbeitet mit denselben Daten (in der Entität **Orders** ) als Canvas-app. Zeigen Sie in der Liste der Bestellungen Weitere Informationen zu einem Auftrag an, indem Sie die zugehörige Nummer auswählen:
 
 > [!div class="mx-imgBorder"]
-> ![Liste der Bestellungen in Northwind modellgesteuerten app](media/northwind-install/orders-model.png)
+> ![liste der Bestellungen in der Modell gesteuerten Northwind-App @ no__t-1
 
-Auf einem separaten Formular wird eine Zusammenfassung des Auftrags angezeigt:
-
-> [!div class="mx-imgBorder"]
-> ![die Auftragsdetails in modellgesteuerten app](media/northwind-install/orders-model-2.png)
-
-Wenn Sie im Formular nach unten scrollen, wird die gleiche Zeile Elemente wie die Canvas-app:
+Eine Zusammenfassung der Reihenfolge wird in einer separaten Form angezeigt:
 
 > [!div class="mx-imgBorder"]
-> ![Weitere Auftragsdetails im modellgesteuerten app](media/northwind-install/orders-model-3.png)
+> Details zur ![order in der Modell gesteuerten App @ no__t-1
 
-## <a name="do-it-yourself"></a>Es selbst tun.
+Wenn Sie einen Bildlauf nach unten durchführen, werden die gleichen Zeilen Elemente wie in der Canvas-App angezeigt:
 
-Sie können schrittweise Anleitungen zum Erstellen von Canvas-app, die weiter oben in diesem Thema folgen.  Die Anweisungen sind in drei Teile unterteilt:
+> [!div class="mx-imgBorder"]
+> ![weitere Bestelldetails in der Modell gesteuerten App @ no__t-1
 
-1. [Erstellen eines Katalogs Reihenfolge](northwind-orders-canvas-part1.md).
-1. [Erstellen Sie eine Zusammenfassung Formular](northwind-orders-canvas-part2.md).
-1. [Erstellen Sie einen Katalog Detail](northwind-orders-canvas-part3.md).
+## <a name="do-it-yourself"></a>Selbst ausführen
 
-Wenn Sie fortfahren möchten, enthält die Projektmappe eine Ausgangspunkt-app für die einzelnen Teile an.  Suchen Sie in der Liste der apps nach **Northwind Orders (Canvas) – Teil 1 beginnen** und so weiter.
+Eine Schritt-für-Schritt-Anleitung zum Erstellen der Canvas-APP, die weiter oben in diesem Thema gezeigt wird, finden Sie unter.  Die Anweisungen sind in drei Teile unterteilt:
 
-Dies [Überblick über die app](northwind-orders-canvas-overview.md) wird erläutert, die Benutzer-Schnittstelle, Datenquellen und wie Beziehungen verwendet werden.
+1. [Erstellen Sie eine Order Gallery](northwind-orders-canvas-part1.md).
+1. [Erstellen Sie ein Zusammenfassungs Formular](northwind-orders-canvas-part2.md).
+1. [Erstellen Sie eine Detail Galerie](northwind-orders-canvas-part3.md).
+
+Wenn Sie fortfahren möchten, enthält die Lösung eine Startpunkt-App für jeden Teil.  Suchen Sie in der Liste der apps nach **Northwind Orders (Canvas)-BEGIN Part 1** usw.
+
+[In dieser Übersicht über die APP](northwind-orders-canvas-overview.md) werden die Benutzeroberfläche, Datenquellen und die Verwendung von Beziehungen erläutert.
 
 > [!div class="nextstepaction"]
-> [Lesen Sie die Übersicht](northwind-orders-canvas-overview.md)
+> [Beginnen Sie mit dem Lesen der Übersicht.](northwind-orders-canvas-overview.md)
