@@ -52,7 +52,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 1. Geben Sie die Benutzer oder Sicherheitsgruppen in Azure Active Directory, mit denen Sie die APP freigeben möchten, nach Namen oder Aliasnamen an.
 
     - Um ihrer gesamten Organisation das Ausführen der APP zu gestatten (ohne Sie zu ändern oder freizugeben), geben Sie im Freigabe Bereich **alle** ein.
-    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt; @ no__t-2 >** ). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
+    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt; @ no__t-2 >**). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
 
     ![Angeben von Benutzern und Mitbesitzern](./media/share-app/share-everyone.png)
 
@@ -144,7 +144,7 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
     - Der privat Mandant des Gast Benutzers.
 
 ### <a name="steps-to-grant-guest-access"></a>Schritte zum Gewähren des Gast Zugriffs
-1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen finden Sie unter: [Schnellstart: Fügen Sie einen neuen Gastbenutzer in Azure AD @ no__t-0 hinzu.
+1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen finden Sie unter: [Schnellstart: Fügen Sie einen neuen Gastbenutzer in Azure AD hinzu](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
     > ![Gast hinzufügen Azure AD](media/share-app/guest_access_doc_1.png "Hinzufügen von Gästen in Azure AD")
 2. Wenn der Gastbenutzer nicht bereits über eine Lizenz in seinem privat Mandanten verfügt, weisen Sie dem Gastbenutzer eine Lizenz zu.
