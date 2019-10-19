@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/4/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: e201e098ec8dc86a641a33ef851ed8627975a538
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: e9d046c49a2a91aaf5c65094d446ae09f41572f9
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61552327"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969088"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>Verfolgen des Fortschritts mit Dashboards und Diagrammen
 
@@ -34,14 +34,14 @@ Dashboards nehmen eine Sammlung von App-Daten auf und bieten Einblicke, um KPI (
 -  Zum Auswählen eines Standard Dashboards zeigen Sie das gewünschte Dashboard an, und wählen Sie dann oben auf dem Bildschirm **als Standard festlegen** aus.
 
    > [!div class="mx-imgBorder"]
-   > ![Dashboard hinzufügen oder ändern](media/add_dashboard.png "Dashboard hinzufügen oder ändern") 
+   > Dashboard(media/add_dashboard.png "Hinzufügen") oder ändern Dashboard ![Hinzufügen oder]ändern 
 
 ## <a name="create-a-new-dashboard"></a>Erstellen eines neuen Dashboards
 
 1. Klicken Sie zum Erstellen eines neuen Dashboards auf **Dynamics 365-Dashboard erstellen**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Neues Dashboard hinzufügen](media/new_dashboard.png "Neues Dashboard hinzufügen")
+   > ![Hinzufügen eines neuen Dashboards](media/new_dashboard.png "Hinzufügen eines neuen Dashboards")
    
 2. Wählen Sie ein Dashboard-Layout und dann **Erstellen**aus.  
 
@@ -67,11 +67,11 @@ Diagramme bieten Ihnen einen schnellen Überblick über die Nachverfolgung ihrer
 
 -   Zeigen Sie mit der Maus auf das Diagramm, um eine QuickInfo mit schnellen Informationen zu diesem Bereich des Diagramms anzuzeigen.
 -   Klicken Sie auf den Bereich eines Diagramms, um eine Rasteransicht mit weiteren Details zu den Daten im Diagramm anzuzeigen.
--   Um ein Diagramm zu erweitern, wählen **Sie die Schalt**Fläche Diagramm erweitern Diagramm![Ansicht](media/expandviewbutton.png " erweitern Diagramm Ansicht") erweitern aus.
--   Wählen Sie ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") aus, und wählen Sie dann eine Aktion aus, um Datensätze im Diagramm anzuzeigen oder das Diagramm zu aktualisieren: **Aktualisieren** oder **Anzeigen von Datensätzen**.
+-   Um ein Diagramm zu erweitern, wählen **Sie die Schaltfläche Diagramm erweitern**Diagramm![Ansicht]erweitern Diagramm(media/expandviewbutton.png "Ansicht") erweitern aus.
+-   Um Datensätze im Diagramm anzuzeigen oder das Diagramm zu aktualisieren, klicken Sie auf ![Weitere Befehle](media/MoreButton.png "Weitere Befehle") , und wählen Sie dann eine Aktion aus: **Aktualisieren** oder **Datensätze anzeigen**.
      
      > [!div class="mx-imgBorder"]
-     > ![Ansicht der Diagramme in powerapps](media/ViewOfCharts.png "Ansicht der Diagramme in powerapps")  
+     > ![Ansicht der Diagramme in der powerapps]-(media/ViewOfCharts.png "Ansicht der Diagramme in powerapps")  
        
 
 **Ändern der Diagramm Ansicht**
@@ -83,8 +83,8 @@ Wählen Sie z. b. "alle Verkaufschancen" aus, und wählen Sie dann eine andere A
 > [!div class="mx-imgBorder"]
 > ![Ändern einer Diagramm Ansicht in powerapps](media/ChangeChartView.png "Ändern einer Diagramm Ansicht in powerapps")
 
-
-
+## <a name="known-issues"></a>Bekannte Probleme  
+Im Diagramm-Designer wird das Hinzufügen von Order by für bestimmte berechnete Felder nicht unterstützt und führt zu einem Fehler.  Die berechneten Felder, die dies bewirken, verwenden ein anderes berechnetes Feld, ein verknüpftes Entitäts Feld oder ein lokales Feld in der Entität.
 
 
 

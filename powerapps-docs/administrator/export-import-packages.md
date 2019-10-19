@@ -1,4 +1,5 @@
 ---
+redirect_url: https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-export-dsr
 title: Exportieren und Importieren von Ressourcen | Microsoft-Dokumentation
 description: Erfahren Sie, wie Sie Ressourcen in PowerApps exportieren und importieren.
 author: nimakms
@@ -14,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: ce01bf68e892b60fa1401ee9366d9d1d0acaecaf
+ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61528617"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72560956"
 ---
 # <a name="export-and-import-resources"></a>Ressourcen exportieren und importieren
 Wenn Sie mehrere Umgebungen erstellt haben, um die Entwicklung Ihrer Datenbank und Apps zu unterstützen , müssen Sie Änderungen von einer Umgebung in die andere Umgebung verschieben. Sie können **Ressourcen exportieren** und **Ressourcen importieren** verwenden, um Ressourcen zwischen Umgebungen zu verschieben.

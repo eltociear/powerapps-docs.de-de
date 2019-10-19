@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 41ec7aed42a950e5adf0b87783fc568dbe9d02af
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 162e914a6753e9fd95a8ec57857c280469308a68
+ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61581192"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72517334"
 ---
-Ist die Einbettung der Power BI-Kacheln und ‑Dashboards aktiviert und ein Benutzer nimmt eine derartige Einbettung vor, wird für die Authentifizierung beim Power BI-Dienst mit einer impliziten Genehmigung das [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)]-Autorisierungstoken für [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] verwendet. Damit wird Endbenutzern eine Oberfläche für einmaliges Anmelden bereitgestellt.  
+Durch Aktivieren der Einbettung von Power BI Kacheln und Dashboards, wenn ein Benutzer eine Power BI Kachel oder ein Dashboard einbettet, wird das [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] Autorisierungs Token dieses Benutzers für Common Data Service für die Authentifizierung mit dem Power BI-Dienst mit einer impliziten Gewährung verwendet, was eine nahtlose " einmaliges Anmelden (Single-Sign-on, SSO) für den Endbenutzer.  
   
  Ein Administrator kann die Einbettung von Power BI-Kacheln und ‑Dashboards jederzeit deaktivieren, um die Verwendung des [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Autorisierungstokens für die Authentifizierung beim Power BI-Dienst zu verhindern. Damit wird bewirkt, dass keine der vorhandenen Kacheln oder Dashboards für den Endbenutzer gerendert werden.  
   

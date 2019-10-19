@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
-ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
+ms.openlocfilehash: a53aaf84530935e525f1177d85f74e125711fc40
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71924521"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969191"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Einfache Navigation in einer modellgesteuerten App 
 
@@ -75,7 +75,7 @@ Im Referenzbereich können Sie Aufgaben erledigen, ohne die Bildschirmansicht ve
 
 ## <a name="notifications"></a>Benachrichtigungen 
 
-Es gibt drei Arten von Benachrichtigungen, die auf einem Formular angezeigt werden: Informationen, Warnungen und Fehler. Benachrichtigungen werden immer ganz oben auf dem Formular angezeigt (direkt über der Kopfzeile).
+Es gibt drei Arten von Benachrichtigungen, die auf einem Formular angezeigt werden: Information, Warnung und Fehler. Benachrichtigungen werden immer ganz oben auf dem Formular angezeigt (direkt über der Kopfzeile).
 
 Wenn Sie die Fehler Benachrichtigung auswählen, gelangen Sie zum Feld im Formular, in dem der Fehler aufgetreten ist.
 
@@ -91,7 +91,36 @@ Wenn mehrere Benachrichtigungen vorhanden sind, wird die Anzahl der Benachrichti
 
 ## <a name="grids"></a>Vorantreiben
 
-Raster in der vereinheitlichten Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Raster haben auch verbesserte Filteroptionen, die das Speichern des letzten Filters und die Sortierreihenfolge einschließen. Eine ausführliche Liste der Verbesserungen finden Sie in diesem Blogbeitrag unter [Erweiterte Funktionalität in Unified Interface Grid](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids).
+Raster in der vereinheitlichten Oberfläche wurden verbessert, um die Datenmenge zu erhöhen, die auf dem Bildschirm angezeigt werden kann. Raster haben auch verbesserte Filteroptionen, die das Speichern des letzten Filters und die Sortierreihenfolge einschließen. 
 
+Wenn Raster Bereich Daten abruft, wird ein Lade Indikator angezeigt, der Sie darüber informiert, dass das System am Abrufen von Daten arbeitet.
+
+Die Haupt Raster Seite speichert den Filter, den Sortiervorgang und den Seiten Zustand, wenn Sie hin und her navigieren. Dies umfasst Schnellsuche, Spalten Filterung, Seitenzahl und mehr. Die Navigation außerhalb der Seite wird mit dem ursprünglichen Zustand geöffnet.
+
+
+   > [!div class="mx-imgBorder"]
+   > ![Raster]speichert Zustands(media/grid-remember-state-on-back-navigate.gif "Raster merken Zustand")
+
+
+Die Sprung Leiste verwendet das erste sortierte Feld. Wenn keine Sortier Änderung vorgenommen wurde, verwendet die Sprung Leiste das primäre Feld. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Raster]speichert Zustands(media/jumpbar-filter-on-sorted-column.gif "Raster merken Zustand")
+   
+
+Sie können das Feld **Aktivitätstyp** Filtern und mehrere Filtertypen auswählen. Außerdem können verwandte Entitäts Felder wie "Owner", "Status" und "Reason" gefiltert werden.
+
+   > [!div class="mx-imgBorder"]
+   > ![Raster](media/grid-activity-type-column-filter.gif "Filter zum") Filtern von Rastern
+   
+Wenn Sie das Hierarchie Symbol auswählen, wird das Hierarchie Formular angezeigt.
+
+   > [!div class="mx-imgBorder"]
+   > Hier ![Archie Symbol](media/grid-row-hierarchy-icon.png "Hierarchie Symbol")
+   
+Sie können auch primäre Felder und Nachschlage Felder in einer neuen Registerkarte oder in einem neuen Fenster öffnen.
+
+   > [!div class="mx-imgBorder"]
+   > ![In neuem Fenster öffnen](media/newtab.png "[in neuem Fenster öffnen")
 
 
