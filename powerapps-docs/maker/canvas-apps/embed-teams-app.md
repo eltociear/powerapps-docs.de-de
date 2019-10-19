@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.sourcegitcommit: a560630f5ee83629a7236ae774fc0c8195b95efa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "70842234"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Einbetten einer powerapps-app in Teams 
 
-Sie können powerapps freigeben, die Sie erstellt haben, indem Sie Sie direkt in Microsoft Teams einbetten. Wenn Sie fertig sind, können **+** Benutzer auswählen, dass Sie Ihre APP zu einem **ihrer** teamchannels oder Konversationen im Team hinzufügen möchten, in dem Sie sich befinden. Die APP wird als Kachel für das **Team unter Registerkarten**angezeigt. 
+Sie können powerapps freigeben, die Sie erstellt haben, indem Sie Sie direkt in Microsoft Teams einbetten. Wenn Sie fertig sind, können Benutzer **+** auswählen, um Ihre APP zu einem **ihrer** teamchannels oder Konversationen in dem Team hinzuzufügen, in dem Sie sich befinden. Die APP wird als Kachel für das **Team unter Registerkarten**angezeigt. 
 
 Ein Administrator kann die APP hochladen, sodass er für **alle** Teams in Ihrem Mandanten im **Abschnitt alle Registerkarten**angezeigt wird. Weitere Informationen finden Sie [unter Freigeben einer APP in Microsoft Teams](https://docs.microsoft.com/en-us/power-platform/admin/embed-app-teams).
 
@@ -38,10 +38,10 @@ Ein Administrator kann die APP hochladen, sodass er für **alle** Teams in Ihrem
 
 Suchen Sie die GUID ihrer PowerApp, die Sie in einem späteren Schritt verwenden möchten, und notieren Sie Sie.
 
-1. Melden Sie sich [https://web.powerapps.com](https://web.powerapps.com)bei an, und wählen Sie dann im Menü **apps** aus.
+1. Melden Sie sich bei [https://web.powerapps.com](https://web.powerapps.com)an, und wählen Sie dann im Menü **apps** aus.
 
    > [!div class="mx-imgBorder"] 
-   > ![Liste der apps anzeigen](./media/embed-teams-app/file-apps2.png "Liste der apps anzeigen")
+   > ![Liste der apps anzeigen](./media/embed-teams-app/file-apps2.png "Anzeigen der App-Liste")
 
 2. Wählen Sie **Weitere Befehle** (...) für die APP aus, die Sie in Teams freigeben möchten, und wählen Sie dann **Details**aus.
 
@@ -58,7 +58,7 @@ Suchen Sie die GUID ihrer PowerApp, die Sie in einem späteren Schritt verwenden
 
 Sie können diese Schritte überspringen, wenn APP Studio bereits installiert ist. 
 
-1. Wählen Sie in Teams links unten im Menü Teams die Option **apps** aus (Symbol!["Apps"](./media/embed-teams-app/apps-icon.png "")-Symbol).
+1. Wählen Sie in Teams links unten im Menü Teams (![Symbol "Apps](./media/embed-teams-app/apps-icon.png "Symbol "Apps"")") die Option **apps** aus.
 
 2. Suchen Sie im Suchfeld nach "App Studio", und wählen Sie es aus.
 
@@ -85,7 +85,7 @@ Sie können diese Schritte überspringen, wenn APP Studio bereits installiert is
 2. Wählen Sie die Registerkarte **Manifest-Editor** aus, und wählen Sie dann unter Willkommen die Option **neue APP erstellen** aus.
 
    > [!div class="mx-imgBorder"] 
-   > ![Neue APP erstellen](./media/embed-teams-app/create-new-app.png "Neue APP erstellen")
+   > ![Neue APP erstellen](./media/embed-teams-app/create-new-app.png "Neue Rolle erstellen")
 
 3. Geben Sie auf der Seite "App- **Details** " Informationen zu Ihrer APP ein.  Für die APP-ID-GUID sollten Sie die oben aufgezeichnete APP-ID-GUID ihrer PowerApp verwenden.  Dadurch wird das Duplizieren von Teams-Apps für eine bestimmte PowerApp vermieden.
  
@@ -129,9 +129,9 @@ Weitere Informationen finden Sie unter [Manifest-Editor](https://docs.microsoft.
    > [!div class="mx-imgBorder"] 
    > ![Team Registerkarte hinzufügen](./media/embed-teams-app/team-tab-add.png "Team Registerkarte hinzufügen")
 
-7. Fügen Sie die Konfigurations-URL Ihrer APP im Eingabefeld "Konfigurations-URL" unter Verwendung des folgenden Formats hinzu:`https://apps.powerapps.com/teams/settings/<PowerApp ID>`
+7. Fügen Sie die Konfigurations-URL Ihrer APP im Eingabefeld "Konfigurations-URL" unter Verwendung des folgenden Formats hinzu: `https://apps.powerapps.com/teams/settings/<PowerApp ID>`
 
-   Ersetzen `<PowerApp ID>` Sie durch die zuvor aufgezeichnete APP-ID-GUID.
+   Ersetzen Sie `<PowerApp ID>` durch die zuvor aufgezeichnete APP-ID-GUID.
 
    Wählen Sie den [Bereich](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview#tab-scope) aus, in dem Ihre APP angezeigt werden soll. Stellen Sie sicher, dass **Update Konfiguration** aktiviert ist, und wählen Sie dann **Speichern**aus.
 
@@ -155,13 +155,13 @@ Weitere Informationen finden Sie unter [Manifest-Editor](https://docs.microsoft.
 11. Wenn Sie eine Instanz dieser APP sofort einem Kanal hinzufügen möchten, wählen Sie den Kanal aus, in dem Sie die APP verwenden möchten, und wählen Sie **Einrichten**aus.
 
     > [!div class="mx-imgBorder"] 
-    > ![Wählen Sie einrichten] aus. (./media/embed-teams-app/app-now-available.png "Wählen Sie einrichten") aus.
+    > ![Wählen Sie einrichten aus.](./media/embed-teams-app/app-now-available.png "Wählen Sie einrichten aus.")
 
 12. Wählen Sie **Speichern**.
 
 ## <a name="add-the-app-as-a-tab"></a>Hinzufügen der App als Registerkarte
 
-Um die APP als Registerkarte zu einem Kanal oder einer Konversation hinzu **+** zufügen, wählen Sie aus, und wählen Sie dann unter den **Registerkarten für das Team** Ihre APP aus. 
+Wenn Sie die APP als Registerkarte zu einem Kanal oder einer Konversation hinzufügen möchten, wählen Sie **+** aus, und wählen Sie dann unter **Registerkarten für das Team** Ihre APP aus 
 
 > [!div class="mx-imgBorder"] 
 > ![App als Registerkarte hinzufügen](./media/embed-teams-app/add-app-as-tab.png "App als Registerkarte hinzufügen")
