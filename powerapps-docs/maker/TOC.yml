@@ -61,6 +61,8 @@
               href: ../user/deactivate-activate-account-contact.md
             - name: Verfolgen des Fortschritts mit Dashboards und Diagrammen
               href: ../user/track-your-progress-with-dashboard-and-charts.md
+            - name: Hinzufügen von Power BI-Dashboards
+              href: ../user/add-powerbi-dashboards.md
         - name: Durchsuchen von Datensätzen
           items:
             - name: Vergleichen der Suche mit den Suchoptionen
@@ -1324,7 +1326,7 @@
           href: ./common-data-service/navigate-specific-solution.md
         - name: Erstellen einer Lösung
           href: ./common-data-service/create-solution.md
-        - name: 'Anzeigen von Lösungsebenen '
+        - name: Anzeigen von Lösungsebenen
           href: ./common-data-service/solution-layers.md
         - name: Anzeigen des Lösungsverlauf
           href: ./common-data-service/solution-history.md
