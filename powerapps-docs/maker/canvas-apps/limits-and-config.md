@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
+ms.sourcegitcommit: 60a7dc7855d482b63719d121dbe5353e304d67f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969270"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72393142"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -30,6 +30,9 @@ In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser so
 | iOS 9.3 oder höher |iOS 10 oder höher mit mindestens 2 GB RAM |
 | Android 5 oder höher |Android 7 oder höher mit mindestens 4 GB RAM |
 | Windows 8.1 oder höher (nur PC) |Windows 10 Fall Creators Update mit mindestens 8 GB RAM|
+
+> [!NOTE]
+> Wir unterstützen derzeit keine neuen Features auf der Windows-Plattform für die powerapps-app. Features wie die verbesserte Common Data Service Option und der Gast Zugriff sind auf dieser Plattform nicht verfügbar. Wir empfehlen die Verwendung eines webplayers unter Windows, um den vollständigen Satz von Funktionen zu nutzen. In Zukunft werden Updates der powerapps-App für Windows-Plattform angekündigt.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Unterstützte Browser für das Ausführen von Canvas-Apps
 
@@ -94,11 +97,11 @@ In dieser Liste werden alle Dienste aufgeführt, mit denen PowerApps Studio komm
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph: zum erhalten von Benutzerinformationen (z. b. Profilfoto) |
 | gallery.azure.com |https |Beispiel- und Vorlagen-Apps |
-| \*.Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
-| \*.powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
-| \*.azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
-| \*.BLOB.Core.Windows.net |https | Blob Storage |
-| \*.Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
+| \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. BLOB.Core.Windows.net |https | Blob Storage |
+| \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
 | vortex.data.microsoft.com |https |Telemetrie |
 | localhost | https | PowerApps Mobile
 
@@ -111,7 +114,7 @@ Informationen zu Größenbeschränkungen für Text, Hyperlinks, Bilder und Medie
 
 ## <a name="powerapps-per-app-plan"></a>Powerapps pro App-Plan
 
-Mit powerapps pro App-Plan können einzelne Benutzer 2 Anwendungen im einzelnen Portal für ein bestimmtes Geschäftsszenario ausführen, das auf den vollständigen Funktionen von powerapps basiert. Dieser Plan bietet Benutzern eine einfache Möglichkeit, mit der Plattform zu beginnen, bevor Sie eine breitere Akzeptanz erzielen.
+Mit powerapps pro App-Plan können einzelne Benutzer 2 Anwendungen in einem einzelnen Portal für ein bestimmtes Geschäftsszenario ausführen, das auf den vollständigen Funktionen von powerapps basiert. Dieser Plan bietet Benutzern eine einfache Möglichkeit, mit der Plattform zu beginnen, bevor Sie eine breitere Akzeptanz erzielen.
 
 Nachdem ein Administrator einer Umgebung powerapps pro App-Plan zugewiesen hat, werden Sie standardmäßig Benutzern zugewiesen, wenn die APP für Sie freigegeben wird.
 
@@ -128,8 +131,8 @@ Die UMSCHALT Fläche **automatisch zuweisen pro App** wird in der app-Einstellun
 
 ### <a name="app-settings"></a>App-Einstellungen
 
-Canvas- ![App-Einstellungen](./media/limits-and-config/app_settings.png "Canvas-App-Einstellungen")
+![Canvas-App-Einstellungen](./media/limits-and-config/app_settings.png "Canvas-App-Einstellungen")
 
 ### <a name="pass-assignment"></a>Pass Zuweisung
 
-![Canvas-App-Einstellungen Pass]Zuweisung(./media/limits-and-config/app_settings_pass_assignment.png "Canvas App Settings Pass Zuweisung")
+![Pass Zuweisung der Canvas-App-Einstellungen](./media/limits-and-config/app_settings_pass_assignment.png "Pass Zuweisung der Canvas-App-Einstellungen")
