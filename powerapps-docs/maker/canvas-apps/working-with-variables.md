@@ -14,16 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 036de37aa2593254d6ae665f8546fe4038dd922d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71994836"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-canvas-app-variables-in-powerapps"></a>Grundlegendes zu Canvas-App-Variablen in PowerApps
 
-Wenn Sie ein anderes Programmier Tool verwendet haben, z. b. Visual Basic oder JavaScript, stellen Sie möglicherweise Folgendes in Frage: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Anstatt beim Erstellen einer Canvas-App eine Variable zu erreichen, Fragen Sie sich Folgendes: **Was würde ich in Excel tun?**
+Wenn Sie eine anderes Programmiertool verwenden, wie z.B. Visual Basic oder JavaScript, fragen Sie sich möglicherweise: **Wo sind die Variablen?** PowerApps ist etwas anders und erfordert einen anderen Ansatz. Statt auf eine Variable zurückzugreifen, wenn Sie eine Canvas-App erstellen, sollten Sie sich die Frage stellen: **Wie würde ich in Excel verfahren?**
 
 In anderen Tools haben Sie möglicherweise eine explizite Berechnung ausgeführt und das Ergebnis in einer Variablen gespeichert. Allerdings berechnen sowohl PowerApps als auch Excel automatisch Formeln neu, sobald die Eingabedaten geändert werden, sodass Sie üblicherweise keine Variablen erstellen oder aktualisieren müssen. Wenn Sie diesen Ansatz wann immer möglich verwenden, können Sie Ihre App leichter erstellen, verstehen und warten.
 
@@ -59,7 +58,7 @@ Die Formel für **Label1** wurde automatisch neu berechnet und zeigt den neuen W
 
 In PowerApps können Sie Formeln nicht nur verwenden, um den primären Wert eines Steuerelements zu bestimmen, sondern auch, um Eigenschaften, wie z.B. das Format, zu bestimmen. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animation der bedingten Formatierung](media/working-with-variables/recalc-color.gif)
 
@@ -85,7 +84,7 @@ Passen Sie Ihren einfachen Addierer an, sodass er sich wie eine traditionelle Re
 
 | Ausgestellten | Beschreibung |
 |----|----|
-| <style>IMG {max-width: None}</style> ![app mit einem Text Eingabe-Steuerelement, einer Bezeichnung und zwei Schaltflächen @ no__t-2 | Wenn die APP gestartet wird, wird die laufende Summe auf 0 (null).<br><br>Der rote Punkt stellt den Finger des Benutzers im Texteingabefeld dar, in dem der Benutzer **77**eingibt. |
+| <style>IMG {max-width: None}</style> ![App mit einem Text Eingabe-Steuerelement, einer Bezeichnung und zwei Schaltflächen ](media/working-with-variables/button-changes-state-1.png) | Wenn die APP gestartet wird, wird die laufende Summe auf 0 (null).<br><br>Der rote Punkt stellt den Finger des Benutzers im Texteingabefeld dar, in dem der Benutzer **77**eingibt. |
 | ![Das Text Eingabe-Steuerelement enthält 77, und die Schaltfläche hinzufügen wird gedrückt.](media/working-with-variables/button-changes-state-2.png) | Der Benutzer wählt die Schaltfläche **Hinzufügen** aus. |
 | ![Der Gesamtwert ist 77, und ein weiterer 77 wird hinzugefügt.](media/working-with-variables/button-changes-state-3.png) | 77 wird der laufenden Summe hinzugefügt.<br><br>Der Benutzer wählt erneut die Schaltfläche **Hinzufügen** aus. |
 | ![Die Summe beträgt 154, bevor Sie gelöscht wird.](media/working-with-variables/button-changes-state-4.png) | 77 wird wieder zur laufenden Summe hinzugefügt. Dies ergibt 154.<br><br>Der Benutzer wählt die Schaltfläche **Löschen** aus. |
@@ -105,7 +104,7 @@ Sie benötigen eine Variable, die die laufende Summe enthält, um unseren hinzuf
 
 Funktionsweise von globalen Variablen:
 
-* Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)** -Funktion fest.  Durch **Set( MyVar; 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
+* Sie legen den Wert der globalen Variablen mit der **[Set](functions/function-set.md)** -Funktion fest.  Durch **Set( MyVar, 1 )** wird die globale Variable **MyVar** auf den Wert **1** festgelegt.
 * Sie verwenden die globale Variable, indem Sie mit der **Set**-Funktion auf den verwendeten Namen verweisen.  In diesem Fall gibt **MyVar** den Wert **1** zurück.
 * Globale Variablen können beliebige Werte enthalten, z.B. Zeichenfolgen, Zahlen, Datensätze und [Tabellen](working-with-tables.md).
 
@@ -119,7 +118,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer globalen Variablen neu:
 
     **Set (runningTotal, runningTotal + TextInput1)**
 
-    Durch das bloße vorhanden sein dieser Formel wird **runningTotal** als globale Variable festgelegt, die eine Zahl aufgrund des **+-** Operators enthält. Sie können auf " **runningTotal** " in der APP verweisen. Jedes Mal, wenn der Benutzer diese APP öffnet, hat **runningTotal** den Anfangswert *blank*.
+    Durch das bloße vorhanden sein dieser Formel wird **runningTotal** als globale Variable festgelegt, die eine Zahl aufgrund des **+** Operators enthält. Sie können auf " **runningTotal** " in der APP verweisen. Jedes Mal, wenn der Benutzer diese APP öffnet, hat **runningTotal** den Anfangswert *blank*.
 
     Wenn ein Benutzer zum ersten Mal die Schaltfläche **Hinzufügen** und **[set](functions/function-set.md)** Runs auswählt, wird **runningTotal** auf den Wert **runningTotal + TextInput1**festgelegt.
 
@@ -127,7 +126,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer globalen Variablen neu:
 
 4. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
 
-    **Set( RunningTotal; 0 )**
+    **Set( RunningTotal, 0 )**
 
     ![Die onselect-Eigenschaft der Clear-Schaltfläche ist auf Set-Funktion festgelegt.](media/working-with-variables/global-variable-2.png)
 
@@ -181,11 +180,11 @@ Wenn der Benutzer die APP öffnet, haben alle Variablen den Anfangswert *blank*.
 
 Sie verwenden den Variablennamen, um den Wert zu lesen. Beispielsweise können Sie eine Variable mit der folgenden Formel definieren:
 
-`Set( Radius; 12 )`
+`Set( Radius, 12 )`
 
 Anschließend können Sie einfach **RADIUS** überall verwenden, wo Sie eine Zahl verwenden können, und es wird durch **12**ersetzt:
 
-`Pi() * Power( Radius; 2 )`
+`Pi() * Power( Radius, 2 )`
 
 Wenn Sie eine Kontext Variable mit dem gleichen Namen wie eine globale Variable oder eine Auflistung versehen, hat die Kontext Variable Vorrang. Sie können jedoch weiterhin auf die globale Variable oder Auflistung verweisen, wenn Sie den [disambiguations-Operator](functions/operators.md#disambiguation-operator) **@ [RADIUS]** verwenden.
 
@@ -196,7 +195,7 @@ Im Folgenden wird erläutert, wie die Rechenmaschine mit einer Kontextvariablen 
 Funktionsweise von Kontextvariablen:
 
 * Mithilfe der **[updatecontext](functions/function-updatecontext.md)** -Funktion oder der **[Navigate](functions/function-navigate.md)** -Funktion erstellen und legen Sie Kontext Variablen implizit fest. Wenn die APP gestartet wird, ist der Anfangswert aller Kontext Variablen *leer*.
-* Sie aktualisieren Kontext Variablen mit Datensätzen. In anderen Programmiertools verwenden Sie häufig „=“ für Zuweisungen, wie z.B. in „x = 1“. Verwenden Sie für Kontext Variablen **{x: 1}** . Wenn Sie eine Kontext Variable verwenden, verwenden Sie Ihren Namen direkt ohne die Datensatz-Syntax.
+* Sie aktualisieren Kontext Variablen mit Datensätzen. In anderen Programmiertools verwenden Sie häufig „=“ für Zuweisungen, wie z.B. in „x = 1“. Verwenden Sie stattdessen für Kontextvariablen **{ x: 1 }** . Wenn Sie eine Kontext Variable verwenden, verwenden Sie Ihren Namen direkt ohne die Datensatz-Syntax.
 * Sie können auch eine Kontext Variable festlegen, wenn Sie mit der **[Navigate](functions/function-navigate.md)** -Funktion einen Bildschirm anzeigen. Wenn Sie sich einen Bildschirm als eine Art von Prozedur oder Unterroutine vorstellen, ähnelt diese Vorgehensweise der Parameter Übergabe in anderen Programmier Tools.
 * Mit Ausnahme von **[Navigate](functions/function-navigate.md)** sind Kontextvariablen auf den Kontext eines einzelnen Bildschirms beschränkt, wo sie ihren Namen erhalten. Außerhalb dieses Kontexts können Sie sie weder verwenden noch festlegen.
 * Kontextvariablen können jeden Wert enthalten, z.B. Zeichenfolgen, Zahlen, Datensätze und [Tabellen](working-with-tables.md).
@@ -209,9 +208,9 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 3. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
 
-    **updatecontext ({runningTotal: RunningTotal + TextInput1})**
+    **Updatecontext ({runningTotal: runningTotal + TextInput1})**
 
-    Durch das bloße vorhanden sein dieser Formel wird **runningTotal** als Kontext Variable festgelegt, die eine Zahl aufgrund des **+-** Operators enthält. Auf diesem Bildschirm können Sie auf **runningTotal** verweisen. Jedes Mal, wenn der Benutzer diese APP öffnet, hat **runningTotal** den Anfangswert *blank*.
+    Durch das bloße vorhanden sein dieser Formel wird **runningTotal** als Kontext Variable festgelegt, die eine Zahl aufgrund des **+** Operators enthält. Auf diesem Bildschirm können Sie auf **runningTotal** verweisen. Jedes Mal, wenn der Benutzer diese APP öffnet, hat **runningTotal** den Anfangswert *blank*.
 
     Wenn der Benutzer die Schaltfläche **Hinzufügen** und **[updatecontext](functions/function-updatecontext.md)** zum ersten Mal auswählt, wird **runningTotal** auf den Wert **runningTotal + TextInput1**festgelegt.
 
@@ -219,9 +218,9 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 4. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft der **Clear**-Schaltfläche auf folgende Formel fest, um die laufende Summe auf **0** festzulegen:
 
-    **updatecontext ({runningTotal: 0})**
+    **UpdateContext( { RunningTotal: 0 } )**
 
-    Erneut wird **[updatecontext](functions/function-updatecontext.md)** mit der Formel **updatecontext ({runningTotal: 0})** .
+    Hier wird **[UpdateContext](functions/function-updatecontext.md)** erneut mit der Formel **UpdateContext( { RunningTotal: 0 } )** verwendet.
 
     ![Onselect-Eigenschaft der Schaltfläche "Löschen"](media/working-with-variables/context-variable-2.png)
 
@@ -237,7 +236,7 @@ Erstellen Sie Ihren hinzufügenden Computer mithilfe einer Kontextvariablen neu:
 
 7. Sie können den Wert einer Kontextvariablen beim Wechsel zu einem Bildschirm festlegen. Dies ist hilfreich, wenn Sie den „Kontext“ bzw. die „Parameter“ von einem Bildschirm an einen anderen übergeben möchten. Um diese Technik zu veranschaulichen, fügen Sie einen Bildschirm ein, fügen Sie eine Schaltfläche ein, und legen **Sie die onselect** -Eigenschaft auf diese Formel fest
 
-    **Navigate( Screen1; None; { RunningTotal: -1000 } )**
+    **Navigate( Screen1, None, { RunningTotal: -1000 } )**
 
     ![Onselect-Eigenschaft einer Schaltfläche](media/working-with-variables/context-variable-5.png)
 
@@ -271,7 +270,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 3. Legen Sie die **[OnSelect](controls/properties-core.md)** -Eigenschaft einer **Add**-Schaltfläche auf folgende Formel fest, um die laufende Summe zu aktualisieren, wenn ein Benutzer die Schaltfläche auswählt:
 
-    **Collect( PaperTape; TextInput1.Text )**
+    **Collect( PaperTape, TextInput1.Text )**
 
     Das bloße vorhanden sein dieser Formel richtet **Taschen Bänder** als Sammlung ein, die eine einspaltige Tabelle mit Text Zeichenfolgen enthält. Sie können auf **Taschen Bänder** an beliebiger Stelle in dieser APP verweisen. Wenn ein Benutzer diese APP öffnet, ist das **Taschen Band** eine leere Tabelle.
 
@@ -287,7 +286,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 5. Fügen Sie eine Bezeichnung hinzu, um die laufende Summe anzuzeigen, und legen Sie ihre **[Text](controls/properties-core.md)** -Eigenschaft auf folgende Formel fest:
 
-    **Sum( PaperTape; Value )**
+    **Sum( PaperTape, Value )**
 
     ![Text-Eigenschaft der Bezeichnung](media/working-with-variables/papertape-3.png)
 
@@ -311,7 +310,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 10. Fügen Sie zum Speichern und Abrufen der Auflistung zwei zusätzliche Schaltflächen-Steuerelemente hinzu, und legen Sie deren **Text** -Eigenschaften auf **Laden** und **Speichern**fest. Legen **Sie die onselect** -Eigenschaft der Schaltfläche " **Laden** " auf diese Formel fest:
 
-     **Clear( PaperTape );; LoadData( PaperTape; "StoredPaperTape"; true )**
+     **Clear( PaperTape ); LoadData( PaperTape, "StoredPaperTape", true )**
 
      Sie müssen zuerst die Auflistung löschen, da **LoadData** die gespeicherten Werte an das Ende der Auflistung anfügt.
 
@@ -319,7 +318,7 @@ Erstellen Sie Ihre Rechenmaschine mithilfe einer Sammlung neu:
 
 11. Legen **Sie die onselect** -Eigenschaft der Schaltfläche **Speichern** auf diese Formel fest:
 
-     **SaveData( PaperTape; "StoredPaperTape" )**
+     **SaveData( PaperTape, "StoredPaperTape" )**
 
      ![Onselect *-Eigenschaft der Schaltfläche "Speichern"](media/working-with-variables/papertape-6.png)
 

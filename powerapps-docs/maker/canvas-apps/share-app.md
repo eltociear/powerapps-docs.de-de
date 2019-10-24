@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995607"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
@@ -52,7 +52,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 1. Geben Sie die Benutzer oder Sicherheitsgruppen in Azure Active Directory, mit denen Sie die APP freigeben möchten, nach Namen oder Aliasnamen an.
 
     - Um ihrer gesamten Organisation das Ausführen der APP zu gestatten (ohne Sie zu ändern oder freizugeben), geben Sie im Freigabe Bereich **alle** ein.
-    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt; @ no__t-2 >**). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
+    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt; jane.doe@contoso.com** ). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
 
     ![Angeben von Benutzern und Mitbesitzern](./media/share-app/share-everyone.png)
 
@@ -71,7 +71,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
     Beispielsweise kann Ihre APP eine Verbindung mit einer Entität in einer Common Data Service Datenbank herstellen. Wenn Sie eine solche APP freigeben, werden Sie im Freigabe Bereich aufgefordert, die Sicherheit für diese Entität zu verwalten.
 
     > [!div class="mx-imgBorder"]
-    > ![zuweisen einer Sicherheitsrolle @ no__t-1
+    > ![Assign einer Sicherheitsrolle ](media/share-app/cds-assign-security-role.png)
 
     Weitere Informationen zum Verwalten der Sicherheit für eine Entität finden Sie weiter unten in diesem Thema unter [Verwalten von Entitäts Berechtigungen](share-app.md#manage-entity-permissions) .
 
@@ -118,7 +118,7 @@ Sie müssen über **System Administrator** Berechtigungen für eine Common Data 
 
 1. Wählen Sie in Common Data Service die Rolle oder Rollen aus, die Sie dem Benutzer oder der Sicherheitsgruppe in Azure AD zuweisen möchten, mit der Sie die APP freigeben möchten.
      > [!div class="mx-imgBorder"] 
-     > Sicherheits(media/share-app/cds-assign-security-role-list.png "Rollenliste") der ![Sicherheitsrollen Liste]
+     > ![Sicherheitsrollen Liste](media/share-app/cds-assign-security-role-list.png "Sicherheitsrollen Liste")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (vorherige Version)
 
@@ -136,7 +136,7 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
 > Gästen darf nur die **Benutzer** Rolle und nicht die **Mitbesitzer** Rolle für apps zugewiesen werden, die für Sie freigegeben wurden.
 
 ### <a name="prerequisites"></a>Voraussetzungen
-- Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen finden Sie unter: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen](/azure/active-directory/b2b/delegate-invitations)
+- Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen dürfen](/azure/active-directory/b2b/delegate-invitations)
     - Aktivieren der externen B2B-Zusammenarbeit ist standardmäßig aktiviert. Die Einstellungen können jedoch von einem Mandanten Administrator geändert werden.  Weitere Informationen zu Azure AD B2B finden Sie unter [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
 - Zugriff auf ein Konto, das Gastbenutzer zu einem Azure AD-Mandanten hinzufügen kann. Administratoren und Benutzer mit der Rolle "Gast einladter" können einem Mandanten Gäste hinzufügen.   
 - Der Gastbenutzer muss über einen der folgenden Mandanten eine powerapps-Lizenz zugewiesen haben:
@@ -144,9 +144,9 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
     - Der privat Mandant des Gast Benutzers.
 
 ### <a name="steps-to-grant-guest-access"></a>Schritte zum Gewähren des Gast Zugriffs
-1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen finden Sie unter: [Schnellstart: Fügen Sie einen neuen Gastbenutzer in Azure AD hinzu](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen: [Schnellstart: Hinzufügen eines neuen Gast Benutzers in Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
-    > ![Gast hinzufügen Azure AD](media/share-app/guest_access_doc_1.png "Hinzufügen von Gästen in Azure AD")
+    > ![Gast in Azure AD hinzufügen](media/share-app/guest_access_doc_1.png "Gast in Azure AD hinzufügen")
 2. Wenn der Gastbenutzer nicht bereits über eine Lizenz in seinem privat Mandanten verfügt, weisen Sie dem Gastbenutzer eine Lizenz zu.
    - Informationen zum Zuweisen von Gastbenutzern aus admin.Microsoft.com finden Sie unter [Zuweisen von Lizenzen zu einem Benutzer](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
    - Informationen zum Zuweisen von Gastbenutzern aus Portal.Azure.com finden Sie unter [zuweisen oder Entfernen von Lizenzen](/azure/active-directory/fundamentals/license-users-groups).
@@ -157,21 +157,21 @@ Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Man
 3. Freigeben der Canvas-app. 
     1. Melden Sie sich bei https://make.powerapps.com an.  
     2. Wechseln Sie zu **apps**, wählen Sie eine Canvas-App aus, und wählen Sie dann in der Befehlsleiste **Freigabe**aus. 
-    3. Geben Sie eine e-Mail-Adresse für einen Gastbenutzer von einem Azure AD Mandanten ein. Weitere Informationen finden Sie unter: [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
+    3. Geben Sie eine e-Mail-Adresse für einen Gastbenutzer von einem Azure AD Mandanten ein. Weitere Informationen: [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![Freigabe]für Gast(media/share-app/guest_access_doc_2.png "Freigabe mit Gast")
+          > ![Für Gast freigeben](media/share-app/guest_access_doc_2.png "Für Gast freigeben")
  
 Nachdem Sie eine APP für den Gast Zugriff freigegeben haben, können Gäste apps, die für Sie freigegeben wurden, über die im Rahmen der Freigabe gesendete e-Mail ermitteln und darauf zugreifen.
 
 > [!div class="mx-imgBorder"]  
-> ![Gäste erhalten App-Freigabe]-e-Mail-(media/share-app/guest_access_doc_4.png "Gast") -e-Mails
+> ![Gast-e-Mails für e-Mail erhalten](media/share-app/guest_access_doc_4.png "Gast-e-Mails für e-Mail erhalten")
 
 ### <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>Worin besteht der Unterschied zwischen dem Canvas-App-Gast Zugriff und den powerapps-Portalen? 
-Canvas-apps ermöglichen das Erstellen einer APP, die auf das Digitalisieren von Geschäftsprozessen zugeschnitten ist, ohne Code in einer herkömmlichen C#Programmiersprache wie zu schreiben. Der Gast Zugriff für Canvas-Apps ermöglicht Teams von Personen, die aus verschiedenen Organisationen bestehen, die an einem gemeinsamen Geschäftsprozess teilnehmen, um auf die gleichen App-Ressourcen zuzugreifen, die in eine Vielzahl von Microsoft-und Drittanbieter Quellen integriert werden können. Weitere Informationen finden Sie unter: [Übersicht über Canvas-App-Connectors für powerapps](/powerapps/maker/canvas-apps/connections-list).
+Canvas-apps ermöglichen das Erstellen einer APP, die auf das Digitalisieren von Geschäftsprozessen zugeschnitten ist, ohne Code in einer herkömmlichen C#Programmiersprache wie zu schreiben. Der Gast Zugriff für Canvas-Apps ermöglicht Teams von Personen, die aus verschiedenen Organisationen bestehen, die an einem gemeinsamen Geschäftsprozess teilnehmen, um auf die gleichen App-Ressourcen zuzugreifen, die in eine Vielzahl von Microsoft-und Drittanbieter Quellen integriert werden können. Weitere Informationen finden Sie [unter Übersicht über Canvas-App-Connectors für powerapps](/powerapps/maker/canvas-apps/connections-list).
 
-[Powerapps-Portale](/powerapps/maker/portals/overview) bieten die Möglichkeit, schnelle, reaktionsschnelle Websites zu erstellen, die externen Benutzern die Interaktion mit den in Common Data Service gespeicherten Daten ermöglichen. Dadurch können Organisationen Websites erstellen, die entweder anonym oder über den Anmelde Anbieter Ihrer Wahl (z. b. LinkedIn, Microsoft-Konto oder andere kommerzielle Anmelde Anbieter) für Benutzer außerhalb Ihrer Organisation freigegeben werden können. 
+[Powerapps-Portale](/powerapps/maker/portals/overview)  provide die Möglichkeit, schnelle, reaktionsschnelle Websites zu erstellen, mit denen externe Benutzer mit den in Common Data Service gespeicherten Daten interagieren können. Dadurch können Organisationen Websites erstellen, die entweder anonym oder über den Anmelde Anbieter Ihrer Wahl (z. b. LinkedIn, Microsoft-Konto oder andere kommerzielle Anmelde Anbieter) für Benutzer außerhalb Ihrer Organisation freigegeben werden können. 
 
 In der folgenden Tabelle werden einige grundlegende Unterschiede zwischen powerapps-Portalen und Canvas-apps erläutert.  
 
@@ -188,12 +188,12 @@ Ja. Jeder Benutzer, der auf eine SharePoint-Liste mit einem angepassten Formular
 Ja. Der Zugriff auf eigenständige Canvas-apps erfordert jedoch eine powerapps-Lizenz einschließlich eingebetteter apps. Wenn Sie eine Canvas-app in SharePoint über das Microsoft PowerApps Einbettungs Steuerelement einbetten, geben Sie die APP-ID ein. Geben Sie hierzu die APP-ID in das Feld **App-Weblink oder-ID** ein. 
 
 > [!div class="mx-imgBorder"]  
-> ![Einbinden der Canvas-app in SharePoint für Gäste](media/share-app/guest_access_doc_5.PNG "Einbettung der Canvas-app in SharePoint für Gäste")
+> ![Einbinden der Canvas-app in SharePoint für Gäste](media/share-app/guest_access_doc_5.PNG "Einbinden der Canvas-app in SharePoint für Gäste")
 
-Wenn Sie eine Canvas-app in SharePoint über das IFRAME-HTML-Tag einbetten, verweisen Sie mit der vollständigen Web-URL auf die app. Um die URL zu finden, wechseln Sie zu http://make.powerapps.com, wählen Sie eine APP aus, und wählen Sie die Registerkarte **Details** aus, und die URL wird unter **Weblink**angezeigt.
+Wenn Sie eine Canvas-app in SharePoint über das IFRAME-HTML-Tag einbetten, verweisen Sie mit der vollständigen Web-URL auf die app. Wenn Sie die URL suchen möchten, klicken Sie auf http://make.powerapps.com, wählen Sie eine APP aus, und wählen Sie die Registerkarte **Details** aus, und die URL wird unter **Weblink**angezeigt.
 
 > [!div class="mx-imgBorder"]  
-> Details der Canvas- ![App Details](media/share-app/guest_access_doc_6.PNG "Canvas-App")
+> ![Details der Canvas-App](media/share-app/guest_access_doc_6.PNG "Details der Canvas-App")
 
 #### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>Wie kommt es zu den Gast-apps, die für Sie freigegeben sind, aber keine Verbindungen erstellt werden?
 Wie bei nicht-Gästen müssen auch die zugrunde liegenden Datenquellen, auf die die APP zugreift, für den Gast zugänglich gemacht werden.
@@ -222,7 +222,7 @@ Verbindungen für eine APP werden immer im Kontext des Azure AD Mandanten herges
 Nein, Azure AD Gäste können Microsoft Graph nicht Abfragen, um Informationen für einen Mandanten abzurufen, bei dem es sich um einen Gast handelt.
 
 #### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>Welche InTune-Richtlinien gelten für Gäste, die meine powerapps verwenden?
-InTune wendet nur Richtlinien des Privat Mandanten eines Benutzers an. Wenn Alice@Contoso.com beispielsweise eine APP mit Vikram@Fabrikam.com freigibt, wendet InTune unabhängig von den ausgeführten powerapps weiterhin fabrikam.com-Richtlinien auf virkam-Geräten an.
+InTune wendet nur Richtlinien des Privat Mandanten eines Benutzers an. Wenn Alice@Contoso.com beispielsweise eine APP mit Vikram@Fabrikam.com gemeinsam nutzt, wendet InTune unabhängig von den ausgeführten powerapps weiterhin fabrikam.com-Richtlinien auf virkam-Geräten an.
 
 #### <a name="what-connectors-support-guest-access"></a>Welche Connectors unterstützen den Gast Zugriff?
 Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unterstützen den Gast Zugriff. In der folgenden Tabelle werden alle Connectors aufgelistet, die Azure AD Authentifizierung durchführen und welche Connectors derzeit den Gast Zugriff unterstützen. Viele dieser Updates werden aktualisiert, was zu allgemeiner Verfügbarkeit führt.

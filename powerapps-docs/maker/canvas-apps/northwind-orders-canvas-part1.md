@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71991363"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Erstellen einer Order Gallery in einer Canvas-App
 
@@ -30,7 +29,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 1. [Erstellen Sie eine Detail Galerie](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> ![definition von Bildschirm Bereichen @ no__t-1
+> ![Definition von Bildschirm Bereichen ](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -42,17 +41,17 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 1. [Melden Sie sich bei powerapps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und erstellen Sie dann eine leere Tablet-app.
 
     > [!div class="mx-imgBorder"]
-    > ![canvas-App aus leerer Kachel @ no__t-1
+    > ![Canvas App aus einer leeren Kachel ](media/northwind-orders-canvas-part1/start-01.png)
 
 1. Benennen Sie Ihre APP, und wählen Sie dann **Erstellen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![canvas-App aus einem leeren Dialogfeld @ no__t-1
+    > ![Canvas APP von einem leeren Dialogfeld ](media/northwind-orders-canvas-part1/start-02.png)
 
     PowerApps Studio wird geöffnet, damit Sie Ihrer APP Datenquellen und Steuerelemente hinzufügen können:
 
     > [!div class="mx-imgBorder"]
-    > ![powerapps Studio @ no__t-1
+    > ![PowerApps Studio ](media/northwind-orders-canvas-part1/start-03.png)
 
 1. Aktivieren Sie eine [experimentelle Funktion](working-with-experimental.md) , um das Ergebnis einer Formel direkt in der Bearbeitungs Leiste anzuzeigen.
 
@@ -60,7 +59,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
     1. Scrollen Sie zum Ende der Liste mit den Features, und aktivieren Sie dann die **Ergebnis Ansicht der Formel Leiste aktivieren**:
 
         > [!div class="mx-imgBorder"]
-        > ![liste der experimentellen Features @ no__t-1
+        > ![List von experimentellen Features ](media/northwind-orders-canvas-part1/start-04.png)
 
 1. Klicken Sie in der oberen linken Ecke auf den rückwärts Pfeil, um zum leeren Zeichenbereich zurückzukehren.
 
@@ -69,29 +68,29 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 1. Wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen**aus, und wählen Sie dann im Bereich **Daten** die Option **Datenquelle hinzufügen** aus:
 
     > [!div class="mx-imgBorder"]
-    > ![select-Sicht, Datenquellen, Datenquelle hinzufügen @ no__t-1
+    > ![Select Ansicht, Datenquellen, Datenquelle hinzufügen ](media/northwind-orders-canvas-part1/datasource-01.png)
 
 1. Wählen Sie **Common Data Service**aus.
 
     Wenn **Common Data Service** nicht in der Liste der Verbindungen angezeigt wird, wählen Sie **neue Verbindung**aus, und fügen Sie Sie hinzu.
 
     > [!div class="mx-imgBorder"]
-    > ![liste der Verbindungen @ no__t-1
+    > ![List von Verbindungen ](media/northwind-orders-canvas-part1/datasource-02.png)
 
 1. Geben Sie unter **Entität auswählen**den **Befehl Orders**ein, aktivieren Sie das Kontrollkästchen **Orders** , und wählen Sie dann **verbinden**aus:
 
     > [!div class="mx-imgBorder"]
-    > ![list of Entities @ no__t-1
+    > ![List von Entitäten ](media/northwind-orders-canvas-part1/datasource-03.png)
 
     Sie haben die Datenquelle **Orders** ihrer app hinzugefügt:
 
     > [!div class="mx-imgBorder"]
-    > ![data Pane @ no__t-1
+    > ![Data Bereich ](media/northwind-orders-canvas-part1/datasource-04.png)
 
     Die **Orders** -Entität enthält viele Felder verschiedener Typen:
 
     > [!div class="mx-imgBorder"]
-    > ![liste der Felder in der Orders-Entität @ no__t-1
+    > ![List der Felder in der Entität "Orders" ](media/northwind-orders-canvas-part1/datasource-05.png)
 
     Jedes Feld verfügt über einen **anzeigen Amen** und einen **Namen**, der manchmal als logischer Name bezeichnet wird. Beide Namen verweisen auf dasselbe. Im Allgemeinen verwenden Sie den anzeigen Amen, wenn Sie eine APP erstellen, aber einige Fälle erfordern den eher kryptischen **Namen**, wie in einer Prozedur beschrieben.
 
@@ -99,31 +98,31 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 ## <a name="create-the-order-gallery"></a>Erstellen der Order Gallery
 
-1. **Wählen Sie**auf der Registerkarte **Einfügen** die Option Katalog  > **leer** , [**um ein Katalog**](controls/control-gallery.md) -Steuerelement hinzuzufügen, in dem die Bestellungen angezeigt werden.
+1. **Wählen Sie** auf der Registerkarte **Einfügen** die Option Katalog  > **leerer vertikal** aus, [**um ein Katalog**](controls/control-gallery.md) -Steuerelement hinzuzufügen, das die Aufträge anzeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![insert, Gallery, Blank vertikal @ no__t-1
+    > ![Insert, Katalog, leerer vertikaler ](media/northwind-orders-canvas-part1/orders-01.png)
 
 1. Legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft des Katalogs auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     Die [**Sortier**](functions/function-sort.md) Funktion ordnet die Liste so an, dass die neueste Bestellung (mit der höchsten Bestellnummer) zuerst angezeigt wird.
 
     > [!div class="mx-imgBorder"]
-    > ![set Items-Eigenschaft des Katalogs @ no__t-1
+    > ![Set Items-Eigenschaft des Katalogs ](media/northwind-orders-canvas-part1/orders-02.png)
 
 1. Öffnen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands die **Layoutliste** :
 
     > [!div class="mx-imgBorder"]
-    > ![liste der Layoutoptionen @ no__t-1
+    > ![List von Layoutoptionen ](media/northwind-orders-canvas-part1/orders-03.png)
 
 1. Wählen Sie in der Liste der Optionen **Titel und Untertitel**aus:
 
     > [!div class="mx-imgBorder"]
-    > ![select a Layout @ no__t-1
+    > ![Select eines Layouts ](media/northwind-orders-canvas-part1/orders-04.png)
 
     In der Vorlage des Katalogs werden zwei [**Label**](controls/control-text-box.md) -Steuerelemente hinzugefügt. Standardmäßig zeigen diese Steuerelemente zwei Spalten der **Orders** -Entität an, die Sie als nächstes ändern werden. Die Vorlage des Katalogs wird für jeden Datensatz in der Entität vertikal repliziert.
 
@@ -133,28 +132,28 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
     > [!div class="mx-imgBorder"]
-    > Text Eigenschaft des ![set-Titels @ no__t-1
+    > die Text-Eigenschaft der ![Set Titel Bezeichnung ](media/northwind-orders-canvas-part1/orders-06.png)
 
     Die Bestellnummer wird oben in jedem Galerie Element angezeigt. In der Galerie Vorlage gewährt **thisitem** Zugriff auf alle Felder in der Entität **Order** .
 
 1. Wählen Sie im Bereich **Daten** die Option **Subtitle1** (oder wählen Sie in der Vorlage des Katalogs die untere Bezeichnung aus):
 
     > [!div class="mx-imgBorder"]
-    > ![select-Untertitel Bezeichnung @ no__t-1
+    > ![Select Bezeichnung für Untertitel ](media/northwind-orders-canvas-part1/orders-07.png)
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
     > [!div class="mx-imgBorder"]
-    > die Text-Eigenschaft des ![set-Untertitels @ no__t-1
+    > die Text-Eigenschaft ![Set Untertitel Bezeichnung ](media/northwind-orders-canvas-part1/orders-08.png)
 
     Nachdem Sie diese Formel eingegeben haben, kann ein roter Wellenlinien Fehler für einen Moment angezeigt werden. Der Fehler sollte eindeutig sein, wenn Sie etwas außerhalb der Bearbeitungs Leiste auswählen und dann den Cursor an die Bearbeitungs Leiste zurückgeben. Wenn der Fehler weiterhin auftritt oder kein Wert angezeigt wird, klicken Sie auf die Registerkarte **Ansicht** , wählen Sie **Datenquellen**aus, und aktualisieren Sie dann die Entität **Orders** , indem Sie die Auslassungs Punkte (...) rechts neben dem Namen der Datenquelle auswählen.
 
@@ -163,7 +162,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
     Sie können alle Beziehungen der **Orders** -Entität zu anderen Entitäten, einschließlich der **Customer** -Entität, anzeigen:
 
     > [!div class="mx-imgBorder"]
-    > ![liste der Beziehungen @ no__t-1
+    > ![List von Beziehungen ](media/northwind-orders-canvas-part1/orders-09.png)
 
 1. Schließen Sie den Bereich **Daten** , indem Sie in der oberen rechten Ecke das Symbol zum Schließen (x) auswählen.
 
@@ -174,36 +173,36 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 1. Reduzieren Sie in der Vorlage des Katalogs die Breite der ersten Bezeichnung **Title1**:
 
     > [!div class="mx-imgBorder"]
-    > ![title1 in der Vorlage des Katalogs @ no__t-1
+    > ![Title1 in der Galerie Vorlage ](media/northwind-orders-canvas-part1/status-01.png)
 
 1. Wiederholen Sie den vorherigen Schritt mit der zweiten Bezeichnung **Subtitle1**:
 
     > [!div class="mx-imgBorder"]
-    > ![subtitle1 in der Vorlage des Katalogs @ no__t-1
+    > ![Subtitle1 in der Galerie Vorlage ](media/northwind-orders-canvas-part1/status-02.png)
 
 1. Wählen Sie mit ausgewählter Katalog Vorlage (oder einem Steuerelement in der Vorlage) auf der Registerkarte **Einfügen** die Option **Bezeichnung** aus:
 
     > [!div class="mx-imgBorder"]
-    > ![bezeichnung @ no__t-1 hinzufügen
+    > ![Add eine Bezeichnung ](media/northwind-orders-canvas-part1/status-03.png)
 
 1. Verschieben Sie die neue Bezeichnung rechts neben der Bezeichnung **Title1** :
 
     > [!div class="mx-imgBorder"]
-    > ![verschieben und Ändern der Größe einer Bezeichnung @ no__t-1
+    > ![Move und Ändern der Größe einer Bezeichnung ](media/northwind-orders-canvas-part1/status-04.png)
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Text-Eigenschaft @ no__t-1 fest.
+    > ![Set die Text-Eigenschaft ](media/northwind-orders-canvas-part1/status-05.png)
 
     In der Entität **Orders** enthält das Feld **Bestellstatus** einen Wert aus der Option **Auftrags** Status. Ein Options Satz ähnelt einer Enumeration in anderen Programmier Tools. Jeder Satz von Optionen wird in der Datenbank definiert, sodass Benutzer nur die Optionen angeben können, die in der Gruppe vorliegen. Die Option **Auftrags Status** ist auch global und nicht lokal, sodass Sie Sie in anderen Entitäten verwenden können:
 
     > [!div class="mx-imgBorder"]
-    > ![orders Status Options Satz @ no__t-1
+    > ![Orders Status-Option festgelegt ](media/northwind-orders-canvas-part1/status-06.png)
 
     Jede Option in einem Satz weist einen Namen auf, der angezeigt wird, wenn Sie ihn in einer Bezeichnung anzeigen. Diese Namen können lokalisiert werden, und die APP erkennt dieselbe Option, unabhängig davon, ob ein englischsprachiger Benutzer **Apple**auswählt, ein französischer Benutzer die **Pomme**auswählt oder ein spanischer Benutzer **Manzana**auswählt. Aus diesem Grund ist es nicht möglich, eine Formel zu erstellen, die eine hart codierte Zeichenfolge für eine Option stützt, wie in diesem Thema später veranschaulicht wird.
 
@@ -212,21 +211,21 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 1. Vergrößern Sie auf der Registerkarte **Home** den Schrift Grad der Status Bezeichnung auf 20 Punkte, und richten Sie den Text rechtsbündig aus:
 
     > [!div class="mx-imgBorder"]
-    > ![ändern der Schriftart Größe und Ausrichtung @ no__t-1
+    > ![Change Schriftart Größe und Ausrichtung ](media/northwind-orders-canvas-part1/status-07.png)
 
 1. Legen Sie in der Bearbeitungs Leiste die **Color** -Eigenschaft der Status Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Color-Eigenschaft der Status Bezeichnung @ no__t-1 fest.
+    > ![Set die Color-Eigenschaft der Status Bezeichnung ](media/northwind-orders-canvas-part1/status-08.png)
 
     Powerapps hindert Sie daran, eine Formel zu erstellen, die für jede Option in einer Menge eine hart codierte Zeichenfolge zurückgibt, da solche Formeln zu unpassenden Ergebnissen führen können, wenn die Optionsnamen lokalisiert werden. Stattdessen bestimmt die **Switch** -Funktion die Farbe basierend auf der Zeichenfolge, die in der Bezeichnung basierend auf den Einstellungen des Benutzers angezeigt wird.
 
@@ -237,44 +236,44 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 1. Wählen Sie das erste Element im Katalog aus, bei dem es sich um die Vorlage des Katalogs handelt:
 
     > [!div class="mx-imgBorder"]
-    > ![select The Gallery Template @ no__t-1
+    > ![Select der Galerie Vorlage ](media/northwind-orders-canvas-part1/aggregate-01.png)
 
 1. Wählen Sie auf der Registerkarte **Einfügen** die **Bezeichnung Bezeichnung** , um eine weitere Bezeichnung hinzuzufügen:
 
     > [!div class="mx-imgBorder"]
-    > ![bezeichnung @ no__t-1 hinzufügen
+    > ![Add eine Bezeichnung ](media/northwind-orders-canvas-part1/aggregate-02.png)
 
 1. Verschieben Sie die neue Bezeichnung, sodass Sie unter der Status Bezeichnung angezeigt wird:
 
     > [!div class="mx-imgBorder"]
-    > ![größe ändern und die neue Bezeichnung @ no__t-1 verschieben
+    > ![Resize und verschieben Sie die neue Bezeichnung ](media/northwind-orders-canvas-part1/aggregate-03.png)
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > Formel für ![zum Berechnen der Gesamtkosten der Bestellung @ no__t-1
+    > ![Formula zum Berechnen der Gesamtkosten der Bestellung ](media/northwind-orders-canvas-part1/aggregate-04.png)
 
     In dieser Formel fügt die [**Sum**](functions/function-aggregates.md) -Funktion die Datensätze in der **Order Details** -Entität hinzu, die mit jedem Datensatz in der **Order** -Entität über eine 1: n-Beziehung verknüpft sind. Diese Zeilen Elemente bilden jede Bestellung, und Sie verwenden die gleiche 1: n-Beziehung, um die Zeilen Elemente im unteren rechten Bereich des Bildschirms anzuzeigen und zu bearbeiten.
 
     Diese Formel zeigt eine blaue Unterstreichung und eine [Delegierungs Warnung](delegation-overview.md) an, da Common Data Service die Delegierung komplexer Aggregatfunktionen (z. b. die Summe einer Multiplikation) nicht unterstützt. Diese Informationen können ignoriert werden, da in diesem Beispiel keine Reihenfolge mehr als 500 Zeilen Elemente enthalten. Wenn dies für eine andere APP erforderlich ist, können Sie diesen Grenzwert in den **App-Einstellungen**erhöhen.
 
-    Die [**Text**](functions/function-text.md) -Funktion in dieser Formel fügt ein Währungssymbol hinzu und formatiert das Ergebnis mit Tausenden und Dezimaltrennzeichen. Wie bereits geschrieben, enthält die Formel das Sprachtag für die USA. Englisch ( **[$-en-US]** ) und ein Dollarsymbol ( **$** ). Wenn Sie das Sprachtag entfernen, wird es basierend auf den Spracheinstellungen durch eins ersetzt, und in der Bezeichnung werden die entsprechenden Formate für dieses Tag angezeigt. Wenn Sie das Dollarsymbol verlassen, wird in der Bezeichnung basierend auf den Einstellungen des Benutzers das entsprechende Währungssymbol angezeigt. Sie können jedoch erzwingen, dass ein anderes Symbol angezeigt wird, indem Sie das Dollarsymbol durch das gewünschte Dollarsymbol ersetzen.
+    Die [**Text**](functions/function-text.md) -Funktion in dieser Formel fügt ein Währungssymbol hinzu und formatiert das Ergebnis mit Tausenden und Dezimaltrennzeichen. Wie bereits geschrieben, enthält die Formel das Sprachtag für US-Englisch ( **[$-en-US]** ) und ein Dollarsymbol ( **$** ). Wenn Sie das Sprachtag entfernen, wird es basierend auf den Spracheinstellungen durch eins ersetzt, und in der Bezeichnung werden die entsprechenden Formate für dieses Tag angezeigt. Wenn Sie das Dollarsymbol verlassen, wird in der Bezeichnung basierend auf den Einstellungen des Benutzers das entsprechende Währungssymbol angezeigt. Sie können jedoch erzwingen, dass ein anderes Symbol angezeigt wird, indem Sie das Dollarsymbol durch das gewünschte Dollarsymbol ersetzen.
 
 1. Ändern Sie auf der Registerkarte **Home** den Schrift Grad der neuesten Bezeichnung in 20 Punkte, und richten Sie den Text rechtsbündig aus:
 
     > [!div class="mx-imgBorder"]
-    > ![ändern Sie den Schrift Grad und die Ausrichtung einer Bezeichnung @ no__t-1.
+    > ![Change Schriftart Größe und Ausrichtung einer Bezeichnung ](media/northwind-orders-canvas-part1/aggregate-05.png)
 
 1. Verschieben Sie den Katalog an den linken Rand des Bildschirms, und verringern Sie die Breite des Katalogs, um Speicherplatz zu schließen.
 
 1. Vergrößern Sie die Höhe des Katalogs, sodass diese fast so groß wie der Bildschirm ist, aber lassen Sie für eine Titelleiste, die Sie am Anfang des nächsten Themas hinzufügen, einen kleinen Raum, den Sie hinzufügen:
 
     > [!div class="mx-imgBorder"]
-    > ![verschieben und Ändern der Größe des Katalogs @ no__t-1
+    > ![Move, und ändern Sie die Größe des Katalogs ](media/northwind-orders-canvas-part1/aggregate-06.png)
 
 ## <a name="summary"></a>FAS
 
@@ -283,8 +282,8 @@ Zur Wiederholung haben Sie begonnen, eine Canvas-App mit einem Bildschirm zu ers
 - Ein Ausdruck, mit dem die Bestellnummer angezeigt wird: `"Orders " & ThisItem.OrderNumber`
 - Ein Feld in einer n:1-Beziehung: `ThisItem.Customer.Company`
 - Eine Bezeichnung, die den Namen einer Option in einer Menge anzeigt: `ThisItem.'Order Status'`
-- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Nächstes Thema
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 48966659ca12ada12448543492731fff8431fbde
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995816"
 ---
 # <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Übersicht über die Canvas-App für Northwind Traders
@@ -33,24 +33,24 @@ In diesem Thema finden Sie Folgendes:
 Auf einem einzelnen Bildschirm kann der App-Benutzer Aufträge anzeigen, aktualisieren, erstellen und löschen.
 
 > [!div class="mx-imgBorder"]
-> ![complete Canvas-App @ no__t-1
+> ![Complete Canvas-App ](media/northwind-orders-canvas-part1/orders-finished.png)
 
 ## <a name="explore-the-user-interface"></a>Erkunden Sie die Benutzeroberfläche
 
 ### <a name="order-gallery"></a>Order Gallery
 
-Am linken Rand der APP wird in einem Katalog eine Liste der Bestellungen angezeigt, einschließlich der Bestellnummer, des Status, des Namens des Kunden und der Gesamtkosten der Bestellung. Der Benutzer kann einen Bildlauf durch die Liste durchführen, um nach einer Bestellung zu suchen und dann weitere Informationen anzuzeigen, indem er den Pfeil der Bestellung auswählt. Weitere Informationen finden Sie unter: [Erstellen Sie die Order Gallery](northwind-orders-canvas-part1.md).
+Am linken Rand der APP wird in einem Katalog eine Liste der Bestellungen angezeigt, einschließlich der Bestellnummer, des Status, des Namens des Kunden und der Gesamtkosten der Bestellung. Der Benutzer kann einen Bildlauf durch die Liste durchführen, um nach einer Bestellung zu suchen und dann weitere Informationen anzuzeigen, indem er den Pfeil der Bestellung auswählt. Weitere Informationen finden Sie [unter Erstellen der Order Gallery](northwind-orders-canvas-part1.md).
 
 ### <a name="summary-form"></a>Zusammenfassungs Formular
 
-In der oberen rechten Ecke fasst ein Formular die Reihenfolge zusammen, die der Benutzer in der Order Gallery ausgewählt hat. Die Zusammenfassung enthält viele der gleichen Informationen wie der Katalog, aber in der Zusammenfassung werden auch die Datumsangaben, zu denen die Bestellung erstellt und bezahlt wurde, sowie der Name und das Bild des Mitarbeiters angezeigt, der die Bestellung verwaltet hat. Der Benutzer kann die Daten im Formular ändern, diese Änderungen speichern, Abbrechen oder den Auftrag löschen, indem er am rechten Rand der Titelleiste ein Symbol auswählt. Weitere Informationen finden Sie unter: [Erstellen Sie das Zusammenfassungs Formular](northwind-orders-canvas-part2.md).
+In der oberen rechten Ecke fasst ein Formular die Reihenfolge zusammen, die der Benutzer in der Order Gallery ausgewählt hat. Die Zusammenfassung enthält viele der gleichen Informationen wie der Katalog, aber in der Zusammenfassung werden auch die Datumsangaben, zu denen die Bestellung erstellt und bezahlt wurde, sowie der Name und das Bild des Mitarbeiters angezeigt, der die Bestellung verwaltet hat. Der Benutzer kann die Daten im Formular ändern, diese Änderungen speichern, Abbrechen oder den Auftrag löschen, indem er am rechten Rand der Titelleiste ein Symbol auswählt. Weitere Informationen finden Sie [unter Erstellen des Zusammenfassungs Formulars](northwind-orders-canvas-part2.md).
 
 ### <a name="detail-gallery"></a>Detail Galerie
 
-In der unteren rechten Ecke werden in einer anderen Galerie Informationen zu den Produkten, die in der ausgewählten Bestellung enthalten sind, und in den Mengen angezeigt. Jedes Element in diesem Katalog wird als Bestelldetails bezeichnet. Der App-Benutzer kann alle Elemente in diesem Katalog mithilfe von Steuerelementen in und darunter hinzufügen und löschen. Weitere Informationen finden Sie unter: [Erstellen Sie die Detail Galerie](northwind-orders-canvas-part3.md).
+In der unteren rechten Ecke werden in einer anderen Galerie Informationen zu den Produkten, die in der ausgewählten Bestellung enthalten sind, und in den Mengen angezeigt. Jedes Element in diesem Katalog wird als Bestelldetails bezeichnet. Der App-Benutzer kann alle Elemente in diesem Katalog mithilfe von Steuerelementen in und darunter hinzufügen und löschen. Weitere Informationen finden Sie [unter Erstellen des Detail](northwind-orders-canvas-part3.md)Katalogs.
 
 > [!div class="mx-imgBorder"]
-> ![definition von Bildschirm Bereichen @ no__t-1
+> ![Definition von Bildschirm Bereichen ](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="explore-the-data-sources"></a>Untersuchen der Datenquellen
 
