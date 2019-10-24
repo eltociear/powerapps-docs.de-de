@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71993005"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>Astype-und istype-Funktionen in Canvas-apps
 
@@ -49,31 +48,31 @@ Die **astype** -Funktion behandelt einen Daten Satz Verweis als bestimmten Entit
 
 Verwenden Sie diese Funktionen, um zuerst den Entitätstyp eines Datensatzes zu testen und ihn dann als Datensatz dieses Typs zu behandeln, sodass die Felder verfügbar sind:
 
-```powerapps-comma
-If( IsType( First( Accounts ).Owner; Users );
-    AsType( First( Accounts ).Owner; Users ).'Full Name';
-    AsType( First( Accounts ).Owner; Teams ).'Team Name'
+```powerapps-dot
+If( IsType( First( Accounts ).Owner, Users ),
+    AsType( First( Accounts ).Owner, Users ).'Full Name',
+    AsType( First( Accounts ).Owner, Teams ).'Team Name'
 )
 ```
 
 Diese Funktionen sind nur erforderlich, wenn Sie auf die Felder eines Daten Satz Verweises zugreifen. Beispielsweise können Sie Daten Satz Verweise in der [**Filter**](function-filter-lookup.md) -Funktion ohne **istype** oder **astype**verwenden:
 
-```powerapps-comma
-Filter( Accounts; Owner = First( Users ) )
+```powerapps-dot
+Filter( Accounts, Owner = First( Users ) )
 ```
 
 Auf ähnliche Weise können Sie Daten Satz Verweise mit der [**Patch**](function-patch.md) -Funktion verwenden:
 
-```powerapps-comma
-Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
+```powerapps-dot
+Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
 Wenn Sie [**in einem Daten**](../controls/control-gallery.md) Satz Kontext verwendet werden, z. b. in einem Katalog-oder [**Bearbeitungs Formular**](../controls/control-form-detail.md) -Steuerelement, müssen Sie möglicherweise den [globalen Operator](operators.md#disambiguation-operator) für die Mehrdeutigkeit verwenden, um auf den Entitätstyp zu verweisen. Diese Formel könnte beispielsweise für einen Katalog wirksam werden, der eine Liste von Kontakten anzeigt, bei der der **Firmen Name** eine **Kunden** Suche ist:
 
-```powerapps-comma
-If( IsType( ThisItem.'Company Name'; [@Accounts] );
-    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+```powerapps-dot
+If( IsType( ThisItem.'Company Name', [@Accounts] ),
+    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
 )
 ```
 
@@ -83,12 +82,12 @@ Wenn der Daten Satz Verweis *leer*ist, gibt **istype** false zurück, und **asty
 
 ## <a name="syntax"></a>Syntax
 
-**Astype**( *recordreferenzierung*; *EntityType* )
+**Astype**( *recordreferenzierung*, *EntityType* )
 
 - *Recordreferenzierung* : erforderlich. Ein Daten Satz Verweis, häufig ein Nachschlage Feld, das auf einen Datensatz in einer von mehreren Entitäten verweisen kann.
 - *EntityType* : erforderlich. Die spezifische Entität, für die getestet werden soll.
 
-**Istype**( *recordreferenzierung*; *EntityType* )
+**Istype**( *recordreferenzierung*, *EntityType* )
 
 - *Recordreferenzierung* : erforderlich. Ein Daten Satz Verweis, häufig ein Nachschlage Feld, das auf einen Datensatz in einer von mehreren Entitäten verweisen kann.
 - *EntityType* : erforderlich. Die spezifische Entität, in die der Datensatz umgewandelt werden soll.
@@ -101,48 +100,48 @@ Informationen [zu Daten Satz verweisen und polymorphe Such](../working-with-refe
 
 1. Wählen Sie auf der Registerkarte **Ansicht** die Option **Datenquellen**aus, und fügen Sie dann die Entitäten **Contacts** und **Accounts** als Datenquellen hinzu.
     > [!div class="mx-imgBorder"]
-    > ![leere App mit zwei Datenquellen: Konten und Kontakte @ no__t-1
+    > ![Blank App mit zwei Datenquellen: Konten und Kontakte ](media/function-astype-istype/contacts-add-datasources.png)
 
 1. Fügen Sie ein Katalog **-Steuerelement mit einer** **leeren vertikalen** Ausrichtung ein.
 
     > [!div class="mx-imgBorder"]
-    > ![fügen Sie ein Katalog-Steuerelement mit einem leeren vertikalen Layout @ no__t-1 ein.
+    > ![Insert ein Katalog-Steuerelement mit einem leeren vertikalen Layout ](media/function-astype-istype/contacts-customer-gallery.png)
 
 1. Legen Sie auf der Registerkarte **Eigenschaften** in der Nähe der rechten Seite des Bildschirms die **Items** -Eigenschaft des Katalogs auf **Contacts**fest.
 
     > [!div class="mx-imgBorder"]
-    > ![set items to contacts im Eigenschaften Bereich @ no__t-1
+    > ![Set Elemente im Bereich "Eigenschaften" auf Kontakte ](media/function-astype-istype/contacts-customer-datasource.png)
 
 1. Legen Sie das Layout des Katalogs auf **Titel und Untertitel**fest.
 
     > [!div class="mx-imgBorder"]
-    > ![öffnen Sie die Layoutauswahl im Bereich "Eigenschaften" @ no__t-1.
+    > ![Open Sie die Layoutauswahl im Eigenschaften Bereich ](media/function-astype-istype/contacts-customer-layout.png)
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie Layout auf Titel und Untertitel @ no__t-1 fest.
+    > ![Set Layout für Titel und Untertitel ](media/function-astype-istype/contacts-customer-flyout.png)
 
 1. Öffnen Sie im Bereich **Daten** die Liste **Title1** , und wählen Sie dann **Vollständiger Name**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![set Titel Wert @ no__t-1
+    > ![Set Titel Wert ](media/function-astype-istype/contacts-customer-title.png)
 
 1. Wählen Sie das **Subtitle1** Label-Steuerelement aus.
 
     > [!div class="mx-imgBorder"]
-    > ![set-Untertitel Wert @ no__t-1
+    > ![Set Untertitel Wert ](media/function-astype-istype/contacts-customer-subtitle.png)
 
 1. Legen Sie die **Text** -Eigenschaft von **Subtitle1** auf diese Formel fest:
 
-    ```powerapps-comma
-    If( IsBlank( ThisItem.'Company Name' ); "--";
-        IsType( ThisItem.'Company Name'; [@Accounts] );
-            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+    ```powerapps-dot
+    If( IsBlank( ThisItem.'Company Name' ), "--",
+        IsType( ThisItem.'Company Name', [@Accounts] ),
+            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > der Bildschirm "![" ist nun vollständig und zeigt die im Katalog gemischten Konten und Kontakte an no__t-1.
+    > ![Screen ist nun fertiggestellt und zeigt im Katalog gemischte Konten und Kontakte an ](media/function-astype-istype/contacts-customer-complete.png)
 
     Der Untertitel im Katalog zeigt die folgenden Werte:
     - "--", wenn der **Name des Unternehmens** *leer*ist.

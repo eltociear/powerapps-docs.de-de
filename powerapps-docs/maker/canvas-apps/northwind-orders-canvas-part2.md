@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995859"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Erstellen eines Zusammenfassungs Formulars in einer Canvas-App
 
@@ -30,7 +29,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen eines Zusammenfa
 3. [Erstellen Sie eine Detail Galerie](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> ![definition von Bildschirm Bereichen @ no__t-1
+> ![Definition von Bildschirm Bereichen ](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -45,26 +44,26 @@ Erstellen Sie am oberen Rand der App eine Titelleiste, in der die Aktions Schalt
 1. Wählen Sie im Struktur **Ansichts** Bereich die Option **Screen1** aus, um sicherzustellen, dass Sie der Order Gallery nicht versehentlich ein Steuerelement hinzufügen:
 
     > [!div class="mx-imgBorder"]
-    > ![select Screen1 im Struktur Ansichts Bereich @ no__t-1
+    > ![Select Screen1 im Struktur Ansichts Bereich ](media/northwind-orders-canvas-part2/titlebar-01.png)
 
 1. Wählen Sie auf der Registerkarte **Einfügen** die **Bezeichnung Bezeichnung** aus, um das Steuerelement [**Bezeichnung**](controls/control-text-box.md) einzufügen:
 
     > [!div class="mx-imgBorder"]
-    > ![insert a Label @ no__t-1
+    > ![Insert eine Bezeichnung ](media/northwind-orders-canvas-part2/titlebar-02.png)
 
     Die neue Bezeichnung sollte nur einmal oberhalb der Galerie angezeigt werden. Wenn Sie in jedem Element des Katalogs angezeigt wird, löschen Sie die erste Instanz der Bezeichnung. Stellen Sie sicher, dass der Bildschirm ausgewählt ist (wie im vorherigen Schritt beschrieben), und fügen Sie dann die Bezeichnung erneut ein.
 
 1. Verschieben Sie die neue Bezeichnung, und ändern Sie Sie so, dass Sie sich über den oberen Bildschirmrand erstreckt:
 
     > [!div class="mx-imgBorder"]
-    > ![move und die Größe der Bezeichnung @ no__t-1
+    > ![Move und ändern Sie die Größe der Bezeichnung ](media/northwind-orders-canvas-part2/titlebar-03.png)
 
 1. Doppelklicken Sie auf den Text der Bezeichnung, und geben Sie dann **Northwind Orders**ein.
 
     Ändern Sie alternativ die Text-Eigenschaft in der **Bearbeitungs** Leiste, um das gleiche Ergebnis zu erzielen:
 
     > [!div class="mx-imgBorder"]
-    > ![ändern Sie den Text in der Titelleiste @ no__t-1.
+    > ![Change den Text in der Titelleiste ](media/northwind-orders-canvas-part2/titlebar-04.png)
 
 1. Formatieren Sie die Bezeichnung auf der Registerkarte **Start** :
     - Vergrößern Sie den Schrift Grad auf 24 Punkte.
@@ -74,7 +73,7 @@ Erstellen Sie am oberen Rand der App eine Titelleiste, in der die Aktions Schalt
     - Fügen Sie dem Hintergrund eine dunkelblaue Füllung hinzu.
 
     > [!div class="mx-imgBorder"]
-    > ![formatierungs Optionen auf der Registerkarte Home @ no__t-1
+    > ![Formatting Optionen auf der Registerkarte Home ](media/northwind-orders-canvas-part2/titlebar-05.png)
 
 ## <a name="add-an-edit-form-control"></a>Bearbeitungs Formular-Steuerelement hinzufügen
 
@@ -83,26 +82,26 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
 1. Fügen Sie auf der Registerkarte **Einfügen** ein [**Formular bearbeiten**](controls/control-form-detail.md) -Steuerelement ein:
 
     > [!div class="mx-imgBorder"]
-    > ![fügen Sie ein Bearbeitungs Formular-Steuerelement @ no__t-1 ein.
+    > ![Add ein Formular bearbeiten-Steuerelement ](media/northwind-orders-canvas-part2/form-01.png)
 
     Standardmäßig wird das Formular in der oberen linken Ecke angezeigt, in dem andere Steuerelemente das Auffinden erschweren können:
 
     > [!div class="mx-imgBorder"]
-    > ![edit Formular-Steuerelement am Standard Speicherort @ no__t-1
+    > ![Edit Formular-Steuerelement am Standard Speicherort ](media/northwind-orders-canvas-part2/form-02.png)
 
 1. Verschieben Sie das Formular, und ändern Sie die Größe so, dass es die obere rechte Ecke des Bildschirms in der Titelleiste abdeckt:
 
     > [!div class="mx-imgBorder"]
-    > ![verschieben und Ändern der Größe des Bearbeitungs Formular-Steuer Elements @ no__t-1
+    > ![Move und ändern Sie die Größe des Bearbeitungs Formular-Steuer Elements ](media/northwind-orders-canvas-part2/form-03.png)
 
 1. Legen Sie in der Bearbeitungs Leiste die **DataSource** -Eigenschaft des Formulars auf diesen Wert fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Orders
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die DataSource-Eigenschaft des Bearbeitungs Formular-Steuer Elements @ no__t-1 fest.
+    > ![Set Sie die DataSource-Eigenschaft des Bearbeitungs Formular-Steuer Elements ](media/northwind-orders-canvas-part2/form-04.png)
 
     Sie können die gleiche Eigenschaft auf der Registerkarte " **Eigenschaften** " in der Nähe des rechten Rands festlegen. bei diesem Ansatz werden jedoch Felder hinzugefügt, die Sie dem Formular nicht benötigen. Wenn Sie die Bearbeitungs Leiste verwenden, bleibt das Formular leer.
 
@@ -111,12 +110,12 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
 1. Wählen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands **Felder bearbeiten** aus, um den **Bereich Felder** zu öffnen:
 
     > [!div class="mx-imgBorder"]
-    > ![öffnen Sie den Bereich "Felder" @ no__t-1.
+    > ![Open Bereich "Felder" ](media/northwind-orders-canvas-part2/form-05.png)
 
 1. Wählen Sie im Bereich **Felder** die Option **Feld hinzufügen**aus, und aktivieren Sie dann die Kontrollkästchen für die Felder **Customer** und **Employee** .
 
     > [!div class="mx-imgBorder"]
-    > ![fügen Sie die Felder Customer und Employee dem Bearbeitungs Formular-Steuerelement @ no__t-1 hinzu.
+    > ![Add die Felder Customer und Employee auf das Bearbeitungs Formular-Steuerelement ](media/northwind-orders-canvas-part2/form-06.png)
 
 1. Scrollen Sie nach unten, bis diese Felder angezeigt werden, und aktivieren Sie dann die entsprechenden Kontrollkästchen:
 
@@ -127,19 +126,19 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
     - **Kostenpflichtiges Datum**
 
     > [!div class="mx-imgBorder"]
-    > ![fügen fünf weitere Felder zum Bearbeitungs Formular-Steuerelement @ no__t-1 hinzu.
+    > ![Add fünf weitere Felder zum Bearbeitungs Formular-Steuerelement ](media/northwind-orders-canvas-part2/form-07.png)
 
 1. Wählen Sie unten im **Bereich "Felder** " die Option **Hinzufügen**aus, und schließen Sie dann den **Bereich Felder** .
 
     Das Formular zeigt sieben Felder an:
 
     > [!div class="mx-imgBorder"]
-    > ![edit Formular-Steuerelement zeigt sieben Felder @ no__t-1 an.
+    > ![Edit Formular-Steuerelement zeigt sieben Felder an ](media/northwind-orders-canvas-part2/form-08.png)
 
     > [!NOTE]
     > Wenn ein Feld ein rotes Fehler Symbol anzeigt, ist möglicherweise ein Problem aufgetreten, als Daten aus der Quelle abgerufen wurden. Aktualisieren Sie die Daten, um den Fehler zu beheben:
     >
-    > 1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
+    > 1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
     > 1. Wählen Sie im Bereich **Daten** die Option **Datenquellen**aus.
     > 1. Wählen Sie neben **Orders**(...) die Auslassungs Punkte (...) aus, wählen Sie **Aktualisieren**aus, und schließen Sie dann den Bereich **Daten** .
     >
@@ -150,7 +149,7 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
     Durch diesen Schritt wird die Flexibilität beim Anordnen der Felder erhöht:
 
     > [!div class="mx-imgBorder"]
-    > ![änderung und dann Anzahl der Spalten im Bearbeitungs Formular-Steuerelement @ no__t-1
+    > ![Change dann die Anzahl der Spalten im Bearbeitungs Formular-Steuerelement ](media/northwind-orders-canvas-part2/form-08b.png)
 
     Viele UI-Entwürfe basieren auf 12-spaltigen Layouts, da Sie Zeilen von 1, 2, 3, 4, 6 und 12 Steuerelementen gleichmäßig abdecken können. In diesem Thema erstellen Sie Zeilen, die 1, 2 oder 4 Steuerelemente enthalten.
 
@@ -158,15 +157,15 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
 
     - Erste Zeile: **Bestellnummer**, **Bestell Status**, **Bestelldatum**und **kostenpflichtiges Datum**
     - Zweite Zeile: **Kunde** und **Mitarbeiter**
-    - Dritte Zeile: **Anmerkungen**
+    - Dritte Zeile: **Notizen**
 
     > [!NOTE]
     > Möglicherweise ist es einfacher, die Datenkarten für **Notizen**, **Kunden**und **Mitarbeiter** zu erweitern, bevor Sie Sie anordnen.
 
     > [!div class="mx-imgBorder"]
-    > Felder zum Verschieben und Ändern der Größe ![@ no__t-1
+    > ![Move und Ändern der Größe der Felder ](media/northwind-orders-canvas-part2/form-rearrange.gif)
 
-    Weitere Informationen zum Anordnen von Feldern in einem Formular: Grundlegendes [zum Layout von Daten Formularen für Canvas-apps](working-with-form-layout.md)
+    Weitere Informationen zum Anordnen von Feldern in einem Formular finden Sie Untergrund Legendes [zum Layout von Daten Formularen für Canvas-apps](working-with-form-layout.md).
 
 ## <a name="hide-time-controls"></a>Zeit Steuerelemente ausblenden
 
@@ -179,36 +178,36 @@ In diesem Beispiel benötigen Sie die Zeit Teile der Datumsfelder nicht, da dies
 1. Wenn Sie die UMSCHALTTASTE gedrückt halten, wählen Sie die Steuerelemente Stunde, Minute und Doppelpunkt Trennzeichen in der Datenkarte **Order Date** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![wählen Sie die Zeit Steuerelemente in Order Date Card @ no__t-1 aus.
+    > ![Select die Zeit Steuerelemente in der Karte Order Date ](media/northwind-orders-canvas-part2/form-09.png)
 
 1. Legen Sie die **Visible** -Eigenschaft der Steuerelemente auf **false**fest.
 
     Alle ausgewählten Steuerelemente werden nicht mehr im folgenden Format angezeigt:
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Visible-Eigenschaft auf false fest. ](media/northwind-orders-canvas-part2/form-10.png)
+    > ![Set Visible-Eigenschaft auf false. ](media/northwind-orders-canvas-part2/form-10.png)
 
 1. Ändern Sie die Größe des Steuer Elements für die [**Datums**](controls/control-date-picker.md) Auswahl, um das Abschlussdatum anzuzeigen:
 
     > [!div class="mx-imgBorder"]
-    > ![größen Änderung des Datumsauswahl-Steuer Elements @ no__t-1
+    > ![Resize das Steuerelement für die Datumsauswahl ](media/northwind-orders-canvas-part2/form-11.png)
 
     Als nächstes wiederholen Sie die letzten Schritte für das Feld **bezahlte Datums** Angaben.
 
 1. Wählen Sie im Struktur **Ansichts** Bereich die Zeit Steuerelemente in der Datenkarte " **Paid Date** " aus:
 
     > [!div class="mx-imgBorder"]
-    > ![select Time Control in Paid Date Card @ no__t-1
+    > ![Select Zeitsteuerung in kostenpflichtigen Datums Karten ](media/northwind-orders-canvas-part2/form-12.png)
 
 1. Legen Sie die **Visible** -Eigenschaft der ausgewählten Steuerelemente auf **false**fest:
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Visible-Eigenschaft auf false fest. ](media/northwind-orders-canvas-part2/form-13.png)
+    > ![Set Visible-Eigenschaft auf false. ](media/northwind-orders-canvas-part2/form-13.png)
 
 1. Ändern Sie die Größe der Datumsauswahl in der Karte mit dem **bezahlten Datum** :
 
     > [!div class="mx-imgBorder"]
-    > ![größen Änderung des Datumsauswahl-Steuer Elements @ no__t-1
+    > ![Resize das Steuerelement für die Datumsauswahl ](media/northwind-orders-canvas-part2/form-14.png)
 
 ## <a name="connect-the-order-gallery"></a>Verbinden der Order Gallery
 
@@ -216,17 +215,17 @@ In diesem Beispiel benötigen Sie die Zeit Teile der Datumsfelder nicht, da dies
 
 1. Legen Sie die **Item** -Eigenschaft des Zusammenfassungs Formulars auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![set Item-Eigenschaft des Formulars @ no__t-1
+    > ![Set Item-Eigenschaft des Formulars ](media/northwind-orders-canvas-part2/form-15.png)
 
     Das Formular zeigt eine Zusammenfassung der Reihenfolge an, in der der App-Benutzer in der Liste ausgewählt wird.
 
     > [!div class="mx-imgBorder"]
-    > ![wählen Sie eine Reihenfolge in der Liste aus, um Ihre Übersicht im Format @ no__t-1 anzuzeigen.
+    > ![Select eine Reihenfolge in der Liste aus, um die Übersicht in der Form anzuzeigen ](media/northwind-orders-canvas-part2/form-select.gif)
 
 ## <a name="replace-a-data-card"></a>Ersetzen einer Datenkarte
 
@@ -235,29 +234,29 @@ Die **Bestellnummer ist ein Bezeichner** , der Common Data Service automatisch z
 1. Wählen Sie das Formular aus, wählen Sie auf der Registerkarte **Eigenschaften** in der Nähe des rechten Rands die Option **Felder bearbeiten** , und wählen Sie dann das Feld **Bestellnummer**
 
     > [!div class="mx-imgBorder"]
-    > ![wählen Sie das Feld Order Number @ no__t-1 aus.
+    > ![Select das Feld Bestellnummer ](media/northwind-orders-canvas-part2/alt-01.png)
 
 1. Öffnen Sie die Liste der **Steuerelement Typen** :
 
     > [!div class="mx-imgBorder"]
-    > ![öffnen Sie den * *-Steuer ungstyp * * List @ no__t-1.
+    > ![Open die Liste * * Steuerelement Typen * * ](media/northwind-orders-canvas-part2/alt-02.png)
 
 1. Wählen Sie die Karte **Text Daten anzeigen** aus:
 
     > [!div class="mx-imgBorder"]
-    > ![wählen Sie den * * Ansichts Text * * Datenkarte @ no__t-1 aus.
+    > ![Select Sie die * * View Text * *-Datenkarte ](media/northwind-orders-canvas-part2/alt-02b.png)
 
 1. Schließen Sie den **Bereich Felder** .
 
     Der Benutzer kann die Bestellnummer nicht mehr ändern:
 
     > [!div class="mx-imgBorder"]
-    > ![order number ist schreibgeschützt @ no__t-1
+    > ![Order Nummer ist schreibgeschützt ](media/northwind-orders-canvas-part2/alt-03.png)
 
 1. Ändern Sie auf der Registerkarte **Home** den Schrift Grad der Bestellnummer in 20 Punkte, damit das Feld leichter zu finden ist:
 
     > [!div class="mx-imgBorder"]
-    > ![ändern Sie den Schrift Grad der Bestellnummer @ no__t-1.
+    > ![Change die Schriftgröße der Bestellnummer ](media/northwind-orders-canvas-part2/alt-04.png)
 
 ## <a name="use-a-many-to-one-relationship"></a>Verwenden einer n:1-Beziehung
 
@@ -266,191 +265,191 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 1. Wählen Sie die Datenkarte **Employee** :
 
     > [!div class="mx-imgBorder"]
-    > ![select The Employee Data Card @ no__t-1
+    > ![Select Sie die Datenkarte "Employee" ](media/northwind-orders-canvas-part2/employee-01.png)
 
 1. Entsperren Sie die Datenkarte auf der Registerkarte " **erweitert** " in der Nähe des rechten Rands, damit Sie Formeln bearbeiten können, die zuvor schreibgeschützt waren:
 
     > [!div class="mx-imgBorder"]
-    > ![entsperren der Employee Data Card @ no__t-1
+    > ![Unlock Sie die Datenkarte "Employee" ](media/northwind-orders-canvas-part2/employee-02.png)
 
 1. Verringern Sie die Breite des Kombinations Felds in der Datenkarte, um Platz für das Mitarbeiter Bild zu schaffen:
 
     > [!div class="mx-imgBorder"]
-    > ![größe des Kombinations Feld-Steuer Elements @ no__t-1
+    > ![Resize Sie das Kombinations Feld-Steuerelement ](media/northwind-orders-canvas-part2/employee-03b.png)
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Medien** > **Bild**aus:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Medien**  > **Abbild**aus:
 
     > [!div class="mx-imgBorder"]
-    > ![insert a Image @ no__t-1
+    > ![Insert eines Bilds ](media/northwind-orders-canvas-part2/employee-04.png)
 
     In der Datenkarte wird ein Bild angezeigt, das zu einer Anpassung erweitert wird:
 
     > [!div class="mx-imgBorder"]
-    > ![EMPLOYEE-Datenkarte mit Image-Steuerelement @ no__t-1
+    > ![Employee Datenkarte mit Abbild-Steuerelement ](media/northwind-orders-canvas-part2/employee-05.png)
 
 1. Ändern Sie die Größe des Bilds, und verschieben Sie es rechts neben dem Kombinations Feld:
 
     > [!div class="mx-imgBorder"]
-    > ![verschieben und Ändern der Größe des Image-Steuer Elements @ no__t-1
+    > ![Move und ändern Sie die Größe des Image-Steuer Elements ](media/northwind-orders-canvas-part2/employee-06.png)
 
 1. Legen Sie die **Image** -Eigenschaft des Bilds auf diese Formel fest, und ersetzen Sie ggf. die Zahl am Ende von datacardvalue:
 
-    ```powerapps-comma
+    ```powerapps-dot
     DataCardValue7.Selected.Picture
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Image-Eigenschaft des Bilds @ no__t-1 fest.
+    > ![Set die Image-Eigenschaft des Bilds ](media/northwind-orders-canvas-part2/employee-07.png)
 
     Das Bild des ausgewählten Mitarbeiters wird angezeigt.
 
 1. Wenn Sie die Alt-Taste gedrückt halten, wählen Sie einen anderen Mitarbeiter im Kombinations Feld aus, um zu bestätigen, dass das Bild ebenfalls geändert wird.
 
     > [!div class="mx-imgBorder"]
-    > ![wählen Sie einen Mitarbeiter aus, um das Bild dieses Mitarbeiters anzuzeigen @ no__t-1
+    > ![Select Sie einen Mitarbeiter, um die Bilder dieses Mitarbeiters anzuzeigen ](media/northwind-orders-canvas-part2/employee-select.gif)
 
 ## <a name="add-a-save-icon"></a>Symbol "Speichern" hinzufügen
 
-1. Wählen Sie im Struktur **Ansichts** Bereich die Option **Screen1**aus, und klicken Sie dann auf  > -**Symbole** **Einfügen** > **überprüfen**:
+1. Wählen Sie im Struktur **Ansichts** Bereich die Option **Screen1**aus, und klicken Sie dann auf  > **Symbole** **Einfügen**  > **überprüfen**:
 
     > [!div class="mx-imgBorder"]
-    > ![insert-Häkchen Symbol @ no__t-1
+    > Symbol für ![Insert Häkchen ](media/northwind-orders-canvas-part2/save-01.png)
 
     Das [**Häkchensymbol**](controls/control-shapes-icons.md) wird standardmäßig in der oberen linken Ecke angezeigt, sodass das Symbol durch andere Steuerelemente schwer zu finden ist:
 
     > [!div class="mx-imgBorder"]
-    > ![symbol am Standard Speicherort @ no__t-1
+    > Standard Speicherort ![Icon ](media/northwind-orders-canvas-part2/save-02.png)
 
 1. Ändern Sie auf der Registerkarte **Start** die **Color** -Eigenschaft des Symbols in weiß, ändern Sie die Größe des Symbols, und verschieben Sie es am rechten Rand der Titelleiste:
 
     > [!div class="mx-imgBorder"]
-    > ![konfigurieren Sie Farbe, Größe und Speicherort des Speicher Symbols @ no__t-1.
+    > ![Configure Farbe, Größe und Speicherort des Symbol "Speichern" ](media/northwind-orders-canvas-part2/save-03.png)
 
 1. Vergewissern Sie sich im Struktur **Ansichts** Bereich, dass der Name des Formulars **Form1**lautet, und legen Sie dann die **onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SubmitForm( Form1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die onselect-Eigenschaft des Save-Symbols @ no__t-1 fest.
+    > ![Set die onselect-Eigenschaft des Save-Symbols ](media/northwind-orders-canvas-part2/save-04.png)
 
     Wenn der Benutzer das Symbol auswählt, sammelt die [**SubmitForm**](functions/function-form.md) -Funktion alle geänderten Werte im Formular und übermittelt Sie an die Datenquelle. Punkte werden am oberen Bildschirmrand angezeigt, während die Daten übermittelt werden, und der Order Gallery spiegelt die Änderungen nach dem Abschluss des Vorgangs wider.
 
 1. Legen Sie die **Display Mode** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Display Mode-Eigenschaft des Symbols @ no__t-1 fest.
+    > ![Set die Display Mode-Eigenschaft des Symbols ](media/northwind-orders-canvas-part2/save-05.png)
 
     Wenn alle Änderungen im Formular gespeichert wurden, wird das Symbol deaktiviert und in der **disabledcolor**angezeigt, die Sie als nächstes festlegen.
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Symbols auf diesen Wert fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die disabledcolor-Eigenschaft des Symbols @ no__t-1 fest.
+    > ![Set die disabledcolor-Eigenschaft des Symbols ](media/northwind-orders-canvas-part2/save-06.png)
 
     Der Benutzer kann die Änderungen in einer Bestellung speichern, indem er das Häkchensymbol aktiviert, das dann deaktiviert und abgedimmt wird, bis der Benutzer eine weitere Änderung vornimmt:
 
     > [!div class="mx-imgBorder"]
-    > ![save Changes @ no__t-1
+    > ![saving Änderungen ](media/northwind-orders-canvas-part2/save-submit.gif)
 
 ## <a name="add-a-cancel-icon"></a>Symbol "Abbrechen" hinzufügen
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Abbrechen**aus:
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole**  > **Abbrechen**aus:
 
     > [!div class="mx-imgBorder"]
-    > ![add Cancel Icon @ no__t-1
+    > ![Add Cancel-Symbol ](media/northwind-orders-canvas-part2/save-07.png)
 
     Das Symbol wird standardmäßig in der oberen linken Ecke angezeigt, wo andere Steuerelemente das Symbol möglicherweise schwer zu finden machen:
 
     > [!div class="mx-imgBorder"]
-    > ![cancel-Symbol am Standard Speicherort @ no__t-1
+    > ![Cancel Symbol am Standard Speicherort ](media/northwind-orders-canvas-part2/save-08.png)
 
 1. Ändern Sie auf der Registerkarte **Startseite** die **Color** -Eigenschaft des Symbols in weiß, ändern Sie die Größe des Symbols, und verschieben Sie es links neben das Häkchensymbol:
 
     > [!div class="mx-imgBorder"]
-    > ![ändern Sie die Farbe, die Größe und den Speicherort des Cancel-Symbols @ no__t-1.
+    > ![Change Farbe, Größe und Position des Abbrechen-Symbols ](media/northwind-orders-canvas-part2/save-09.png)
 
 1. Legen **Sie die onselect** -Eigenschaft des Cancel-Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ResetForm( Form1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die onselect-Eigenschaft des Cancel-Symbols @ no__t-1 fest.
+    > ![Set die onselect-Eigenschaft des Cancel-Symbols ](media/northwind-orders-canvas-part2/save-10.png)
 
     Die [**resetform-Funktion verwirft**](functions/function-form.md) alle Änderungen im Formular, die den ursprünglichen Zustand zurückgeben.
 
 1. Legen Sie die **Display Mode** -Eigenschaft des Cancel-Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Display Mode-Eigenschaft des Cancel-Symbols @ no__t-1 fest.
+    > ![Set die Display Mode-Eigenschaft des Cancel-Symbols ](media/northwind-orders-canvas-part2/save-11.png)
 
     Diese Formel unterscheidet sich geringfügig von der eines für das Häkchensymbol. Das Symbol Abbrechen ist deaktiviert, wenn alle Änderungen gespeichert wurden oder sich das Formular im **neuen** Modus befindet, den Sie als nächstes aktivieren. In diesem Fall **verwirft resetform** den neuen Datensatz.
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Cancel-Symbols auf diesen Wert fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die disabledcolor-Eigenschaft des Cancel-Symbols @ no__t-1 fest.
+    > ![Set die disabledcolor-Eigenschaft des Cancel-Symbols ](media/northwind-orders-canvas-part2/save-12.png)
 
     Der Benutzer kann Änderungen an einer Bestellung abbrechen, und die Symbole zum Überprüfen und Abbrechen werden deaktiviert und abgeraten, wenn alle Änderungen gespeichert wurden:
 
     > [!div class="mx-imgBorder"]
-    > ![speichern und Abbrechen von Änderungen @ no__t-1
+    > ![Saving und Abbrechen von Änderungen ](media/northwind-orders-canvas-part2/save-cancel.gif)
 
 ## <a name="add-an-add-icon"></a>Hinzufügen eines Symbols
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Hinzufügen**aus.
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole**  > **Hinzufügen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![insert a Add Icon @ no__t-1
+    > ![Insert Sie ein Symbol hinzufügen ](media/northwind-orders-canvas-part2/save-13.png)
 
     Das Symbol " **Hinzufügen** " wird standardmäßig in der oberen linken Ecke angezeigt, sodass es bei anderen Steuerelementen möglicherweise schwierig zu finden ist:
 
     > [!div class="mx-imgBorder"]
-    > ![standard Speicherort des Add-Symbols @ no__t-1
+    > ![Default Speicherort des Symbol "hinzufügen" ](media/northwind-orders-canvas-part2/save-14.png)
 
 1. Legen Sie auf der Registerkarte **Start** die **Color** -Eigenschaft des Symbols hinzufügen auf weiß fest, ändern Sie die Größe des Symbols, und verschieben Sie es links neben das Symbol Abbrechen:
 
     > [!div class="mx-imgBorder"]
-    > ![ändern Sie die Farbe, die Größe und den Speicherort des Add-Symbols @ no__t-1.
+    > ![Change Farbe, Größe und Position des Add-Symbols ](media/northwind-orders-canvas-part2/save-15.png)
 
 1. Legen Sie die **onselect** -Eigenschaft des Add-Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     NewForm( Form1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die onselect-Eigenschaft des Add-Symbols @ no__t-1 fest.
+    > ![Set die onselect-Eigenschaft des Symbols hinzufügen ](media/northwind-orders-canvas-part2/save-15b.png)
 
     Die [**NewForm**](functions/function-form.md) -Funktion zeigt einen leeren Datensatz im Formular an.  
 
 1. Legen Sie die **Display Mode** -Eigenschaft des Add-Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Display Mode-Eigenschaft des Add-Symbols @ no__t-1 fest.
+    > ![Set die Display Mode-Eigenschaft des Symbols hinzufügen ](media/northwind-orders-canvas-part2/save-16.png)
 
     Die Formel deaktiviert das Symbol "hinzufügen" unter folgenden Bedingungen:
 
@@ -459,86 +458,86 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Add-Symbols auf diesen Wert fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die disabledcolor-Eigenschaft des Add-Symbols @ no__t-1 fest.
+    > ![Set die disabledcolor-Eigenschaft des Symbols hinzufügen ](media/northwind-orders-canvas-part2/save-17.png)
 
     Der Benutzer kann eine Bestellung erstellen, wenn er keine Änderungen vornimmt, oder alle vorgenommenen Änderungen speichern oder Abbrechen. (Wenn der Benutzer dieses Symbol auswählt, kann er es erst wieder auswählen, wenn eine oder mehrere Änderungen vorgenommen und diese Änderungen gespeichert oder abgebrochen werden):
 
     > [!div class="mx-imgBorder"]
-    > ![create a Order @ no__t-1
+    > ![Create eine Bestellung ](media/northwind-orders-canvas-part2/save-new.gif)
 
 > [!NOTE]
 > Wenn Sie eine Bestellung erstellen und speichern, müssen Sie möglicherweise im Order Gallery einen Bildlauf nach unten durchführen, um die neue Bestellung anzuzeigen. Es hat keinen Gesamtpreis, da Sie noch keine Bestelldetails hinzugefügt haben.
 
 ## <a name="add-a-trash-icon"></a>Hinzufügen eines Papierkorb Symbols
 
-1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole** > **Papierkorb**aus.
+1. Wählen Sie auf der Registerkarte **Einfügen** die Option **Symbole**  > **Papierkorb**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![insert a Papierkorb Symbol @ no__t-1
+    > ![Insert ein Papierkorb Symbol ](media/northwind-orders-canvas-part2/save-18.png)
 
     Standardmäßig wird das **Papierkorb** Symbol in der oberen linken Ecke angezeigt, in dem andere Steuerelemente das Auffinden erschweren können:
 
     > [!div class="mx-imgBorder"]
-    > ![standard Speicherort des Papierkorb Symbols @ no__t-1
+    > ![Default Speicherort des Papierkorb Symbols ](media/northwind-orders-canvas-part2/save-19.png)
 
 1. Ändern Sie auf der Registerkarte **Startseite** die **Color** -Eigenschaft des Papierkorb Symbols in weiß, ändern Sie die Größe des Symbols, und verschieben Sie es links neben das Symbol "hinzufügen":
 
     > [!div class="mx-imgBorder"]
-    > ![ändern Sie die Farbe, die Größe und den Speicherort des Papierkorb Symbols @ no__t-1.
+    > ![Change Farbe, Größe und Speicherort des Papierkorb Symbols ](media/northwind-orders-canvas-part2/save-20.png)
 
 1. Legen **Sie die onselect** -Eigenschaft des Papierkorb Symbols auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Remove( Orders; Gallery1.Selected )
+    ```powerapps-dot
+    Remove( Orders, Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die onselect-Eigenschaft des Papierkorb Symbols @ no__t-1 fest.
+    > ![Set die onselect-Eigenschaft des Papierkorb Symbols ](media/northwind-orders-canvas-part2/save-21.png)
 
     Die [**Remove**](functions/function-remove-removeif.md) -Funktion entfernt einen Datensatz aus einer Datenquelle. In dieser Formel entfernt die Funktion den Datensatz, der in der Order Gallery ausgewählt ist. Das Papierkorb Symbol wird in der Nähe des Zusammenfassungs Formulars (nicht der Order Gallery) angezeigt, weil das Formular weitere Details zum Datensatz anzeigt, sodass der Benutzer den Datensatz leichter identifizieren kann, den die Formel löscht.
 
 1. Legen Sie die **Display Mode** -Eigenschaft für das Papierkorb Symbol auf diese Formel fest:
 
-    ```powerapps-comma
-    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die Display Mode-Eigenschaft des Papierkorb Symbols @ no__t-1 fest.
+    > ![Set die Display Mode-Eigenschaft des Papierkorb Symbols ](media/northwind-orders-canvas-part2/save-22.png)
 
     Mit dieser Formel wird das Papierkorb Symbol deaktiviert, wenn der Benutzer einen Datensatz erstellt. Bis der Benutzer den Datensatz speichert, hat die **Remove** -Funktion keinen zu löschenden Datensatz.
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Papierkorb Symbols auf diesen Wert fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![legen Sie die disabledcolor-Eigenschaft des Papierkorb Symbols @ no__t-1 fest.
+    > ![Set die disabledcolor-Eigenschaft des Papierkorb Symbols ](media/northwind-orders-canvas-part2/save-23.png)
 
     Der Benutzer kann eine Bestellung löschen.
 
     > [!div class="mx-imgBorder"]
-    > ![löschen von Aufträgen @ no__t-1
+    > ![Deleting Bestellungen ](media/northwind-orders-canvas-part2/save-delete.gif)
 
 ## <a name="summary"></a>FAS
 
 Zur Wiederholung haben Sie ein Formular hinzugefügt, in dem der Benutzer eine Zusammenfassung der einzelnen Reihenfolge anzeigen und bearbeiten kann, und Sie haben die folgenden Elemente verwendet:
 
-- Ein Formular, das Daten aus der Entität **Orders** anzeigt: **Form1. DataSource =** `Orders`
-- Eine Verbindung zwischen dem Formular und dem Order Gallery: **Form1. Item =** `Gallery1.Selected`
+- Ein Formular, das Daten aus der **Orders** -Entität anzeigt: **Form1. DataSource =** `Orders`
+- Eine Verbindung zwischen dem Formular und der Order Gallery: **Form1. Item =** `Gallery1.Selected`
 - Ein alternatives Steuerelement für das Feld " **Order Number** ": **Text anzeigen**
 - Eine n:1-Beziehung, um das Bild des Mitarbeiters in der **Employee** Data Card anzuzeigen: `DataCardValue1.Selected.Picture`
 - Ein Symbol zum Speichern von Änderungen in einer Bestellung: `SubmitForm( Form1 )`
-- Ein Symbol zum Abbrechen von Änderungen in einer Bestellung: `ResetForm( Form1 )`
+- Ein Symbol zum Abbrechen von Änderungen an einer Bestellung: `ResetForm( Form1 )`
 - Ein Symbol zum Erstellen einer Bestellung: `NewForm( Form1 )`
-- Ein Symbol zum Löschen einer Bestellung: `Remove( Orders; Gallery1.Selected )`
+- Ein Symbol zum Löschen einer Bestellung: `Remove( Orders, Gallery1.Selected )`
 
 ## <a name="next-step"></a>Nächster Schritt
 

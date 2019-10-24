@@ -12,10 +12,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71705047"
 ---
 # <a name="behavior-formulas-for-components"></a>Verhaltens Formeln für Komponenten
@@ -30,21 +30,21 @@ Geben Sie mindestens eine [Verhaltens Formel](working-with-formulas-in-depth.md)
 Wählen Sie bei ausgewähltem Komponenten Master in der Dropdown Liste mit den Eigenschaften (auf der linken Seite der Bearbeitungs Leiste) die Option **onreset** aus, und geben Sie dann eine oder mehrere Formeln ein.
 
 > [!div class="mx-imgBorder"]
-> Beispiel für ![onreset @ no__t-1
+> ![OnReset Beispiel ](./media/component-behavior/example-onreset.png)
 
 Zum Testen von **onreset**konfigurieren Sie ein-Steuerelement, um die Komponente zurückzusetzen. Legen Sie z. b. die **onselect** -Eigenschaft einer Schaltfläche auf diese Formel fest: **Reset**(*componentname*).
 
 ### <a name="example---reset-timer"></a>Beispiel: Zurücksetzen des Timers
 
 > [!div class="mx-imgBorder"]
-> Beispiel für ![onreset @ no__t-1
+> ![OnReset Beispiel ](./media/component-behavior/Resettimer.gif)
 
-In dieser Zeitauswahl Komponente werden zwei Variablen verwendet, um die Uhrzeit _selectedHour und _selectedMinute anzuzeigen. Wenn die Auswahl zurückgesetzt wird, sollten diese Variablen auf einen Standardwert zurückgesetzt werden, z. h. 12: 12.  Die onreset-Eigenschaft für die Komponente hat die folgende Formel: **Set (_selectedHour, 12); Set (_selectedMinute, 12)**
+In dieser Zeitauswahl Komponente werden zwei Variablen verwendet, um die Uhrzeit _selectedHour und _selectedMinute anzuzeigen. Wenn die Auswahl zurückgesetzt wird, sollten diese Variablen auf einen Standardwert zurückgesetzt werden, beispielsweise 12:12.  Die onreset-Eigenschaft für die Komponente weist die folgende Formel auf: **Set (_selectedHour, 12); Set (_selectedMinute, 12)**
 
 Wechseln Sie zum Zurücksetzen des zurück Setzens zu einem Bildschirm, und fügen Sie eine Instanz der Komponente ein. Fügen Sie eine Schaltfläche hinzu, und konfigurieren Sie onselect der Schaltfläche, sodass **Reset (TimerComponent_instance)** aufgerufen wird, um onreset aufzurufen
 
 > [!div class="mx-imgBorder"]
-> Schaltfläche "![reset" @ no__t-1
+> ![Reset Schaltfläche ](./media/component-behavior/reset-button.png)
 
 ## <a name="update-onreset-using-custom-property"></a>Aktualisieren von onreset mithilfe der benutzerdefinierten Eigenschaft
 
@@ -55,7 +55,7 @@ Neben dem Zurücksetzen einer Komponenteninstanz von außerhalb der-Komponente g
 ### <a name="example"></a>Beispiel
 
 > [!div class="mx-imgBorder"]
-> Beispiel für ![onreset @ no__t-1
+> ![OnReset Beispiel ](./media/component-behavior/updateordernumber2.gif)
 
 Dies ist ein Beispiel für das Überprüfen von Bestellnummern und das Aktualisieren der Zahlen. Die numerische Komponente "nach oben" und "nach unten" wird verwendet, um die Anzahl der Bestellungen zu erhöhen Wenn Sie den Katalog auf der linken Seite auswählen, wird die Standard Anzahl der numerischen und Downstreamkomponenten zurückgesetzt, um die Bestellnummer des ausgewählten Tools anzuzeigen. "**Onreset bei Wertänderungen**zurücksetzen" ermöglicht es, den Standardwert zurückzusetzen, wenn die Eingabe geändert wird. 
 
