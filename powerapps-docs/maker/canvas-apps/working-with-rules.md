@@ -7,23 +7,24 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/10/2017
+ms.date: 10/23/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 52a28f73a0a9dae0e410714102f1bc78fe706fab
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
+ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994725"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72822116"
 ---
-# <a name="create-a-rule-in-powerapps"></a>Erstellen einer Regel in PowerApps
-Erstellen Sie Regeln, damit eine App automatisch auf Grundlage der von Ihnen angegebenen Kriterien geändert wird. Beispielsweise können Listenelemente je nach ihrem Status in Rot, Gelb oder Grün angezeigt werden, oder eine Genehmigungsschaltfläche kann nur für bestimmte Benutzer (z.B. Manager) angezeigt werden.
+# <a name="create-a-rule-in-canvas-apps"></a>Erstellen einer Regel in Canvas-apps
+Erstellen Sie Regeln, damit eine App automatisch auf Grundlage der von Ihnen angegebenen Kriterien geändert wird. Beispielsweise können Listenelemente je nach ihrem Status in Rot, Gelb oder Grün angezeigt werden, oder eine Genehmigungsschaltfläche kann nur für bestimmte Benutzer (z.B. Manager) angezeigt werden. Sie können vielen verschiedenen Steuerelementen Regeln hinzufügen. In diesem Thema fügen Sie eine Regel hinzu, um die Textfarbe eines **Label**-Steuerelements (Bezeichnung) zu ändern, wenn der Wert eines **Slider**-Steuerelements (Schieberegler) größer als 70 ist.
 
-Sie können vielen verschiedenen Steuerelementen Regeln hinzufügen. In diesem Thema fügen Sie eine Regel hinzu, um die Textfarbe eines **Label**-Steuerelements (Bezeichnung) zu ändern, wenn der Wert eines **Slider**-Steuerelements (Schieberegler) größer als 70 ist.
+> [!IMPORTANT]
+> Ab dem 14. Oktober 2019 ist das Regel Feature in Canvas-apps veraltet. Weitere Informationen finden Sie unter: [Blog: Feature für Canvas-Regeln](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
 
 ## <a name="add-a-rule"></a>Regel hinzufügen
 1. Wählen Sie ein Steuerelement aus (oder fügen Sie ein Steuerelement hinzu, und lassen sie es ausgewählt).
