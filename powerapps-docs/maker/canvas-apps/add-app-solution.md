@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71987703"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Erstellen einer Canvas-App aus einer Projekt Mappe
@@ -42,24 +42,24 @@ Sie können dieses Verfahren überspringen, wenn Sie bereits über eine Projekt 
 1. Wählen Sie in der linken Navigationsleiste **Lösungen**aus.
 
     > [!div class="mx-imgBorder"]
-    > Projektmappen- ![Option in der linken Navigationsleiste in der linken](./media/add-app-solution/left-nav.png "") Navigationsleiste
+    > ![Lösungs Option in der linken Navigationsleiste](./media/add-app-solution/left-nav.png "Lösungs Option in der linken Navigationsleiste")
 
 1. Wählen Sie im Banner unter der Titelleiste die Option **neue**Projekt Mappe aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Option "neue Lösung" in der "Banner](./media/add-app-solution/banner-new-solution.png "New-Solution\"-Option im Banner")
+    > ![New-Solution-Option im Banner](./media/add-app-solution/banner-new-solution.png "New-Solution-Option im Banner")
 
 1. Geben Sie im angezeigten Fenster einen anzeigen Amen, einen Herausgeber und eine Version für die Projekt Mappe an.
 
     > [!div class="mx-imgBorder"]
-    > ![Optionen für neue Lösungs](./media/add-app-solution/configure-new-solution.png "Optionen für eine neue") Projekt Mappe
+    > ![Optionen für eine neue Projekt Mappe](./media/add-app-solution/configure-new-solution.png "Optionen für eine neue Projekt Mappe")
 
     Ein Name (ohne Leerzeichen) wird automatisch auf der Grundlage des von Ihnen angegebenen anzeigen Amens generiert, aber Sie können den generierten Namen bei Bedarf anpassen. Sie können den Standard Herausgeber für Ihre Umgebung und **1,0** für die Version angeben, wenn in diesen Bereichen keine speziellen Anforderungen vorliegen.
 
 1. Wählen Sie in der Nähe der oberen linken Ecke **Speichern und schließen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Speichern einer neuen Lösung](./media/add-app-solution/save-new-solution.png "Speichern einer neuen") Projekt Mappe
+    > ![Speichern einer neuen Projekt Mappe](./media/add-app-solution/save-new-solution.png "Speichern einer neuen Projekt Mappe")
 
 ## <a name="create-a-canvas-app-in-a-solution"></a>Erstellen einer Canvas-app in einer Projekt Mappe
 
@@ -72,14 +72,14 @@ Sie können eine leere Canvas-APP innerhalb einer Projekt Mappe erstellen. Sie k
 1. Wählen Sie in der linken Navigationsleiste **Lösungen**aus.
 
     > [!div class="mx-imgBorder"]
-    > Projektmappen- ![Option in der linken Navigationsleiste in der linken](./media/add-app-solution/left-nav.png "") Navigationsleiste
+    > ![Lösungs Option in der linken Navigationsleiste](./media/add-app-solution/left-nav.png "Lösungs Option in der linken Navigationsleiste")
 
 1. Wählen Sie in der Liste der Lösungen die Lösung aus, in der Sie eine Canvas-app erstellen möchten.
 
-1. Wählen Sie im Banner unter der Titelleiste die Option **New** > **App** > **Canvas App**aus, und wählen Sie dann den Formular Faktor (Telefon oder Tablet) der APP aus, die Sie erstellen möchten.
+1. Wählen Sie im Banner unter der Titelleiste die Option **neu** > **App** - > **Canvas-App**aus, und wählen Sie dann den Formular Faktor (Telefon oder Tablet) der APP aus, die Sie erstellen möchten.
 
     > [!div class="mx-imgBorder"]
-    > ![Optionen zum Erstellen einer APP in einer Lösungs](./media/add-app-solution/new-option.png "Option zum Erstellen einer APP in einer") Projekt Mappe
+    > ![Optionen zum Erstellen einer APP in einer Projekt Mappe](./media/add-app-solution/new-option.png "Optionen zum Erstellen einer APP in einer Projekt Mappe")
 
     PowerApps Studio wird mit einem leeren Zeichenbereich in einer anderen Browser Registerkarte geöffnet.
 
@@ -88,7 +88,7 @@ Sie können eine leere Canvas-APP innerhalb einer Projekt Mappe erstellen. Sie k
 1. Wählen Sie auf der Registerkarte Browser, auf der Sie die Projekt Mappe ausgewählt haben, die Option **abgeschlossen** aus, um die Liste mit den Komponenten in der
 
     > [!div class="mx-imgBorder"]
-    > ![](./media/add-app-solution/done-button.png "Schaltfläche") "Done" Done
+    > ![Schaltfläche ""](./media/add-app-solution/done-button.png "Schaltfläche „Fertig“")
 
     Die neue APP wird in der Liste der Komponenten für diese Lösung angezeigt. Wenn Sie Änderungen an Ihrer APP speichern, werden Sie in der Version angezeigt, die sich in der Projekt Mappe befindet.
 
@@ -103,21 +103,21 @@ Wenn Sie eine APP mit einer Projekt Mappe verknüpfen möchten, müssen sich bei
 1. Wählen Sie in der linken Navigationsleiste **Lösungen**aus.
 
     > [!div class="mx-imgBorder"]
-    > Projektmappen- ![Option in der linken Navigationsleiste in der linken](./media/add-app-solution/left-nav.png "") Navigationsleiste
+    > ![Lösungs Option in der linken Navigationsleiste](./media/add-app-solution/left-nav.png "Lösungs Option in der linken Navigationsleiste")
 
 1. Wählen Sie in der Liste der Lösungen die Lösung aus, mit der Sie eine APP verknüpfen möchten.
 
-1. Wählen Sie im Banner unter der Titelleiste die Option vorhandenes  > -**App** > -**Canvas-App** **Hinzufügen**aus.
+1. Wählen Sie im Banner unter der Titelleiste vorhandene > **App** > Canvas- **App** **Hinzufügen** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Banner Optionen zum Verknüpfen vorhandener App]-(./media/add-app-solution/add-existing.png "Banner Optionen zum Verknüpfen einer vorhandenen APP")
+    > ![Banner Optionen zum Verknüpfen einer vorhandenen APP](./media/add-app-solution/add-existing.png "Banner Optionen zum Verknüpfen einer vorhandenen APP")
 
     Eine Liste von Canvas-apps, die in einer Projekt Mappe in dieser Umgebung erstellt wurden, wird angezeigt.
 
 1. Wählen Sie in der Liste der apps die APP aus, die Sie mit der Projekt Mappe verknüpfen möchten, und klicken Sie dann auf **Hinzufügen**.
 
     > [!div class="mx-imgBorder"]
-    > Schaltfläche !["hinzufügen](./media/add-app-solution/add-button.png "") "
+    > ![Schaltfläche Hinzufügen](./media/add-app-solution/add-button.png "Hinzufügen einer Schaltfläche")
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
