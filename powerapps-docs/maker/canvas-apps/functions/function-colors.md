@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/23/2019
 ms.locfileid: "71994855"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Color-Enumeration und ColorFade-, ColorValue- und RGBA-Funktionen in PowerApps
 
@@ -62,12 +63,12 @@ Wenn Sie einen farbenumerationswert angeben oder eine **ColorValue** -Formel mit
 
 - *CSSColor*: Erforderlich.  Name einer Cascading Stylesheet-Definition (CSS). Sie können einen Namen (z. b. **OliveDrab**) oder einen Hexadezimalwert angeben, z. b. **#6b8e23** oder **#7fffd420**. Hexadezimale Werte können entweder die Form "#*RRGGBB* " oder "#*RRGGBBAA*" haben.
 
-**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
+**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
 
 - *Red*, *Green*, *Blue*: Erforderlich.  Farbkomponenten Werte, die zwischen 0 (keine Sättigung) und 255 (vollständige Sättigung) liegen.
 - *Alpha*: Erforderlich.  Alpha Komponente, die zwischen 0 (vollständig transparent) und 1 (vollständig nicht transparent) liegt. Sie können auch einen Prozentsatz, 0 % bis 100 %, verwenden.
 
-**ColorFade**( *Color*, *FadeAmount* )
+**ColorFade**( *Color*; *FadeAmount* )
 
 - *Color*: Erforderlich.  Ein Farbwert wie z.B. **Color.Red** oder die Ausgabe von **ColorValue** oder **RGBA**.
 - *FadeAmount*: Erforderlich.  Eine Zahl zwischen -1 und 1. -1 markiert eine Farbe vollständig in schwarz, 0 wirkt sich nicht auf die Farbe aus, und 1 lässt eine Farbe vollständig in weiß aus. Sie können auch einen Prozentsatz zwischen-100% und 100% verwenden.
