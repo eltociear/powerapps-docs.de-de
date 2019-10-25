@@ -58,7 +58,7 @@ Suchen Sie die GUID ihrer PowerApp, die Sie in einem späteren Schritt verwenden
 
 Sie können diese Schritte überspringen, wenn APP Studio bereits installiert ist. 
 
-1. Wählen Sie in Teams links unten im Menü Teams (![Symbol "Apps](./media/embed-teams-app/apps-icon.png "Symbol "Apps"")") die Option **apps** aus.
+1. Wählen Sie in Teams links unten im Menü Teams ![Symbol Apps](./media/embed-teams-app/apps-icon.png "Symbol Apps") die Option **apps** aus.
 
 2. Suchen Sie im Suchfeld nach "App Studio", und wählen Sie es aus.
 
