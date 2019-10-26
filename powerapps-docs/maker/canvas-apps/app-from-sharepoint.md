@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/09/2018
+ms.date: 10/24/2018
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: af06a3707073498df65f782fc634c1e93b1760c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 101c77b7bdd84e2d2ed31febc441e54944eb9fa3
+ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994075"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72902448"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Generieren einer Canvas-App in PowerApps aus einer SharePoint-Liste
 
@@ -62,7 +62,7 @@ Das Grundprinzip beim Erstellen einer App ändert sich nicht, auch wenn Sie eine
 
 1. Klicken Sie unter **Liste auswählen** erst auf **SimpleApp** und dann auf **Verbinden**.
 
-    Nach wenigen Minuten wird Ihre App auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Elemente anzeigt wird, die Sie in Ihrer Liste erstellt haben. Wenn Ihre Liste auch Daten in anderen Spalten als nur der Spalte **Titel** enthält, zeigt die App diese Daten an. Im oberen Bereich des Bildschirms werden in einer Titelleiste Symbole zum Aktualisieren und Sortieren der Liste sowie zum Erstellen eines Elements in einer Liste angezeigt. Unterhalb der Titelleiste können Sie über ein Suchfeld die Liste basierend auf dem Text filtern, den Sie darin eingeben bzw. einfügen. 
+    Nach wenigen Minuten wird Ihre App auf dem Bildschirm zum Durchsuchen geöffnet, auf dem eine Liste der Elemente anzeigt wird, die Sie in Ihrer Liste erstellt haben. Wenn Ihre Liste auch Daten in anderen Spalten als nur der Spalte **Titel** enthält, zeigt die App diese Daten an. Im oberen Bereich des Bildschirms werden in einer Titelleiste Symbole zum Aktualisieren und Sortieren der Liste sowie zum Erstellen eines Elements in einer Liste angezeigt. Unter der Titelleiste ermöglicht ein Suchfeld das Filtern der Liste basierend auf dem Text, den Sie in das Suchfeld eingeben bzw. einfügen. 
 
     ![Bildschirm zum Durchsuchen](./media/app-from-sharepoint/browse-screen.png)
 
@@ -94,6 +94,9 @@ Wenn Sie eine App über die SharePoint Online-Befehlszeile aus einer benutzerdef
     - Um die Ansicht aus SharePoint zu entfernen, klicken Sie auf **Diese Ansicht entfernen**.
 
         Um die App aus PowerApps zu entfernen, [löschen Sie die App](delete-app.md).
+
+> [!NOTE]
+> Apps, die aus der SharePoint-Liste erstellt wurden, werden zurzeit nicht in powerapps Mobile angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 In diesem Thema haben Sie eine App erstellt, mit der Daten in einer SharePoint-Liste verwaltet werden können. Generieren Sie als Nächstes eine App über eine komplexere Liste, und passen Sie diese App anschließend angefangen bei dem Bildschirm zum Durchsuchen an Ihre Bedürfnisse an.

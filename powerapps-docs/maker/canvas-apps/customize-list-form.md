@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/04/2019
+ms.date: 10/24/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60d4fb21bc2f298b1dd2ce37c3e25f5355e881cb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d50d9933eaaa79011a623bc643f4eda23ba8d745
+ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993139"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72902416"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Anpassen eines SharePoint-Listenformulars mit PowerApps
 
@@ -27,7 +27,8 @@ Sie können das Formular für eine SharePoint-Liste leicht anpassen, wenn Sie Po
 Für die in diesem Artikel beschriebenen Schritte benötigen Sie eine einfache Liste, um nachvollziehen zu können, wie die Anpassung funktioniert. Anschließend können Sie diese Konzepte auf Ihre eigene Liste anwenden.
 
 > [!NOTE]
-> Wenn die Option **Formulare anpassen** nicht verfügbar ist oder nicht ordnungsgemäß für Ihre Liste ausgeführt wird, enthält diese möglicherweise Datentypen, die [von PowerApps nicht unterstützt werden](connections/connection-sharepoint-online.md#known-issues). Sie können Ihr Formular nicht in eine andere Liste oder [Umgebung](working-with-environments.md) verschieben.
+> - Wenn die Option **Formulare anpassen** nicht verfügbar ist oder nicht ordnungsgemäß für Ihre Liste ausgeführt wird, enthält diese möglicherweise Datentypen, die [von PowerApps nicht unterstützt werden](connections/connection-sharepoint-online.md#known-issues). Sie können Ihr Formular nicht in eine andere Liste oder [Umgebung](working-with-environments.md) verschieben. 
+> - Benutzerdefinierte Formulare für Listen werden nur in generischen Listen unterstützt. Unterstützung für generische Dokument Bibliotheken wird in Kürze verfügbar sein. Benutzerdefinierte Listen-und Bibliotheks Vorlagen werden zurzeit nicht unterstützt. einschließlich, aber nicht beschränkt auf Listen wie Ankündigungen, Kontakte und Aufgaben.
 
 ## <a name="create-a-list"></a>Liste erstellen
 
@@ -39,7 +40,7 @@ Erstellen Sie auf einer SharePoint-Website eine Liste, und fügen Sie diese Spal
 - **Color** (Auswahl)
 
 > [!div class="mx-imgBorder"]
-> ![wählen Sie Website Inhalte > neue > Liste aus, geben Sie den Namen der Liste ein, und klicken Sie auf erstellen. Wählen Sie für jede Spalte Spalte hinzufügen aus, geben Sie den Listentyp an (Yes/No, Currency, Date, Choice), geben Sie den Listennamen an (Details, Price, Availability, Color), und wählen Sie Save. ](./media/customize-list-form/create-list.gif) aus.
+> ![wählen Sie Website Inhalte > neue > Liste aus, geben Sie den Namen der Liste ein, und klicken Sie auf erstellen. Wählen Sie für jede Spalte Spalte hinzufügen aus, geben Sie den Auflistungstyp an (Ja/Nein, Währung, Datum, Auswahl), geben Sie den Listennamen an (Details, Preis, Verfügbarkeit, Farbe), und wählen Sie speichern aus.](./media/customize-list-form/create-list.gif)
 
 ## <a name="open-the-form"></a>Formular öffnen
 
@@ -50,7 +51,7 @@ Erstellen Sie auf einer SharePoint-Website eine Liste, und fügen Sie diese Spal
 1. Falls das Dialogfeld **Willkommen bei PowerApps Studio** geöffnet wird, wählen Sie **Überspringen** aus.
 
 > [!div class="mx-imgBorder"]
-> Klicken Sie ![in der Befehlsleiste auf powerapps, und wählen Sie dann Formular anpassen aus. PowerApps Studio wird auf der gleichen Registerkarte im Browser geöffnet. Wenn das Dialogfeld Willkommen bei PowerApps Studio geöffnet wird, wählen Sie überspringen. ](./media/customize-list-form/create-form.gif) aus.
+> Klicken Sie ![in der Befehlsleiste auf powerapps, und wählen Sie dann Formular anpassen aus. PowerApps Studio wird auf der gleichen Browser Registerkarte geöffnet. Wenn das Dialogfeld Willkommen bei PowerApps Studio geöffnet wird, wählen Sie überspringen aus.](./media/customize-list-form/create-form.gif)
 
 ## <a name="move-and-remove-a-field"></a>Verschieben und Entfernen eines Felds
 
@@ -63,7 +64,7 @@ Erstellen Sie auf einer SharePoint-Website eine Liste, und fügen Sie diese Spal
     Das angegebene Feld verschwindet im Formular.
 
 > [!div class="mx-imgBorder"]
-> ![ziehen Sie das Feld "Availability" an den unteren Rand der Liste der Felder. Zeigen Sie auf das Feld Anlagen, wählen Sie die Schaltfläche mit den Auslassungs Punkten (...) aus, die angezeigt wird, und wählen Sie dann entfernen aus @no__t.
+> ![ziehen Sie das Feld "Availability" an den unteren Rand der Liste der Felder. Zeigen Sie auf das Feld Anlagen, wählen Sie die Auslassungs Punkte (...) aus, die angezeigt werden, und wählen Sie dann entfernen aus.](./media/customize-list-form/move-remove-fields.gif)
 
 ## <a name="set-conditional-formatting"></a>Festlegen bedingter Formatierung
 
@@ -80,7 +81,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
     Die drei von Ihnen konfigurierten Felder werden angezeigt und wieder ausgeblendet.
 
 > [!div class="mx-imgBorder"]
-> ![in der linken Navigationsleiste, notieren Sie sich die Zahl, die am Ende von datacardvalue angezeigt wird. Legen Sie die Eigenschaft Sichtbarkeit der Farben, der Verfügbarkeit und der Preiskarten auf diese Formel fest. Halten Sie die Alt-Taste gedrückt, und wählen Sie das Detail Steuerelement mehrmals aus. ](./media/customize-list-form/conditional-format.gif)
+> Beachten Sie ![in der linken Navigationsleiste die Zahl, die am Ende von datacardvalue angezeigt wird. Legen Sie die Eigenschaft Sichtbarkeit der Farben, der Verfügbarkeit und der Preiskarten auf diese Formel fest. Halten Sie die Alt-Taste gedrückt, und wählen Sie das Detail Steuerelement mehrmals aus.](./media/customize-list-form/conditional-format.gif)
 
 ## <a name="save-and-publish-the-form"></a>Speichern und Veröffentlichen des Formulars
 
@@ -89,7 +90,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 1. Klicken Sie in der oberen linken Ecke auf den Zurück-Pfeil, und klicken Sie dann auf **Zurück zu SharePoint**.
 
 > [!div class="mx-imgBorder"]
-> Öffnen Sie ![Das Menü Datei, wählen Sie speichern aus, und wählen Sie dann zweimal in SharePoint veröffentlichen aus. Wählen Sie in der oberen linken Ecke den rückwärts Pfeil aus, und klicken Sie dann auf zurück zu SharePoint. ](./media/customize-list-form/save-form.gif)
+> ![öffnen Sie das Menü Datei, wählen Sie speichern aus, und wählen Sie dann zweimal in SharePoint veröffentlichen aus. Wählen Sie in der oberen linken Ecke den rückwärts Pfeil aus, und wählen Sie dann zurück zu SharePoint aus.](./media/customize-list-form/save-form.gif)
 
 ## <a name="further-customize-your-form"></a>Weiteres Anpassen des Formulars
 
@@ -101,7 +102,7 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
     - [Passen](working-with-cards.md) Sie mindestens eine Karte an (ändern Sie z. b. den Anzeige Text oder das Eingabe Steuerelement einer Karte).
     - Erstellen Sie ein [Nachschlagefeld](sharepoint-lookup-fields.md).
 
-    Weitere Informationen finden Sie unter: Grundlegendes zur [Integration von SharePoint-Formularen](sharepoint-form-integration.md).
+    Weitere Informationen finden Sie unter [verstehen der Integration von SharePoint-Formularen](sharepoint-form-integration.md).
 
 ## <a name="use-the-default-form"></a>Verwenden des Standardformulars
 
@@ -133,39 +134,39 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
 
 ### <a name="forms-vs-apps"></a>Vergleich: Formulare und Apps
 
-**Q1** Wie unterscheidet sich ein angepasstes Formular von einer eigenständigen APP, die ich aus SharePoint oder powerapps erstelle?
+**F:** Wie unterscheidet sich ein benutzerdefiniertes Formular von einer eigenständigen App, die ich in SharePoint oder PowerApps erstelle?
 
-**EIN** Wenn Sie das Formular für eine SharePoint-Liste anpassen, wird das Formular nicht als app in PowerApps Studio oder powerapps Mobile angezeigt. Sie können das Formular nur über die Liste öffnen, für die es erstellt wurde.
+**A:** Wenn Sie das Formular für eine SharePoint-Liste anpassen, wird das Formular nicht als App in PowerApps Studio oder PowerApps Mobile angezeigt. Sie können das Formular nur über die Liste öffnen, für die es erstellt wurde.
 
-**Q1** Wann sollte ich ein Formular anpassen, um Daten in einer SharePoint-Liste zu verwalten, und wann sollte ich eine eigenständige app erstellen?
+**F:** Wann sollte ich ein Formular zum Verwalten von Daten in einer SharePoint-Liste anpassen, und wann sollte ich eine eigenständige App erstellen?
 
-**EIN** Passen Sie ein Formular an, wenn Sie möchten, dass Ihre Benutzerdaten verwalten, ohne SharePoint zu belassen (z. b. in einem Desktop Browser). Erstellen Sie eine App, wenn Sie möchten, dass Benutzer Daten außerhalb von SharePoint verwalten (z.B. auf einem mobilen Gerät).
+**A:** Passen Sie ein Formular an, wenn Sie möchten, dass Benutzer Daten in SharePoint verwalten (z.B. in einem Desktopbrowser). Erstellen Sie eine App, wenn Sie möchten, dass Benutzer Daten außerhalb von SharePoint verwalten (z.B. auf einem mobilen Gerät).
 
-**Q1** Kann ich ein Formular anpassen und eine APP für dieselbe Liste erstellen?
+**F:** Kann ich ein Formular anpassen und für dieselbe Liste eine App erstellen?
 
-**EIN** Ja.
+**A:** Ja.
 
-**Q1** Kann ich eine Liste anpassen und eine APP mit denselben Features erstellen?
+**F:** Kann ich eine Liste anpassen und eine App mit den gleichen Features erstellen?
 
-**EIN** Ja.
+**A:** Ja.
 
-**Q1** Kann ich ein Formular in einer anderen Umgebung als der Standardumgebung in meiner Organisation anpassen?
+**F:** Kann ich ein Formular in einer anderen Umgebung als der Standardumgebung meiner Organisation anpassen?
 
-**EIN** Nein.
+**A:** Nein.
 
 ### <a name="manage-your-custom-form"></a>Verwalten des benutzerdefinierten Formulars
 
-**Q1** Wie kann ich mein Formular problemlos für andere freigeben?
+**F:** Wie kann ich mein Formular unkompliziert mit anderen teilen?
 
-**EIN** Öffnen Sie das Formular, wählen Sie **Link kopieren**aus, und senden Sie dann den Link an jeden, der das Formular verwenden möchten.
+**A:** Öffnen Sie das Formular, wählen Sie **Link kopieren**aus, und senden Sie dann den Link an jeden, der das Formular verwenden möchten.
 
-**Q1** Kann ich mein Formular aktualisieren, ohne die Änderungen für andere sichtbar zu machen?
+**F:** Kann ich ein Formular aktualisieren, ohne dass die Änderungen für andere Personen angezeigt werden?
 
-**EIN** Ja. Sie können das Formular so oft ändern und speichern, wie Sie möchten. Die Änderungen werden jedoch erst für andere Benutzer sichtbar, wenn Sie zweimal auf **In SharePoint veröffentlichen** klicken.
+**A:** Ja. Sie können das Formular so oft ändern und speichern, wie Sie möchten. Die Änderungen werden jedoch erst für andere Benutzer sichtbar, wenn Sie zweimal auf **In SharePoint veröffentlichen** klicken.
 
-**Q1** Kann ich auf eine frühere Version zurückgreifen, wenn ich ein Listen Formular anpasse und einen Fehler mache?
+**F:** Kann ich eine frühere Version wiederherstellen, wenn mir beim Anpassen eines Listenformulars ein Fehler unterläuft?
 
-**EIN** Ja.
+**A:** Ja.
 
 1. Öffnen Sie Ihre Liste, klicken Sie auf der Befehlsleiste auf **PowerApps**, und wählen Sie dann **Customize forms** (Formulare anpassen) aus.
 
@@ -181,31 +182,31 @@ Sie können die Felder **Price**, **Availability** und **Colors** so konfigurier
     > [!NOTE]
     > Wenn Sie eine Fehlermeldung erhalten, die besagt, dass die Wiederherstellung fehlgeschlagen ist, weil das Formular von einem anderen Benutzer gesperrt ist, warten Sie, bis der Benutzer das Formular entsperrt, und versuchen Sie es dann erneut
 
-**Q1** Kann ich mein Formular aus einer Liste in eine andere verschieben?
+**F:** Kann ich mein Formular aus einer Liste in eine andere verschieben?
 
-**EIN** Nein.
+**A:** Nein.
 
 ### <a name="administer-your-custom-form"></a>Verwalten des benutzerdefinierten Formulars
 
-**Q1** Gewusst wie mein Formular freigeben?
+**F:** Wie gebe ich mein Formular frei?
 
-**EIN** Sie müssen das Formular nicht freigeben – das Formular erbt Berechtigungen von der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-form), damit es von anderen Benutzern verwendet werden kann.
+**A:** Sie müssen das Formular nicht freigeben – das Formular erbt Berechtigungen von der SharePoint-Liste. Wenn Sie es angepasst haben, [veröffentlichen Sie es einfach wieder in SharePoint](customize-list-form.md#save-and-publish-the-form), damit es von anderen Benutzern verwendet werden kann.
 
-**Q1** Wer kann Formulare anpassen?
+**F:** Wer kann Formulare anpassen?
 
-**EIN** Jeder Benutzer mit SharePoint-Berechtigungen zum Verwalten, entwerfen oder Bearbeiten der zugeordneten Liste.
+**A:** Jeder Benutzer mit SharePoint-Berechtigungen zum Verwalten, Entwerfen oder Bearbeiten der zugehörigen Liste.
 
-**Q1** Benötige ich eine powerapps-Lizenz, um benutzerdefinierte Listen Formulare zu erstellen oder zu verwenden?
+**F:** Benötige ich eine PowerApps-Lizenz, um benutzerdefinierte Listenformulare zu erstellen und zu verwenden?
 
-**EIN** Sie benötigen einen [Office 365-Plan, der powerapps enthält](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
+**A:** Sie benötigen [einen Office 365-Plan, der PowerApps beinhaltet](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
 
-**Q1** Was geschieht, wenn Gastbenutzer auf eine Liste mit benutzerdefiniertem Formular zugreifen?
+**F:** Was geschieht, wenn Gastbenutzer auf eine Liste zuzugreifen, die ein benutzerdefiniertes Formular aufweist?
 
-**EIN** Gastbenutzer erhalten eine Fehlermeldung, wenn Sie versuchen, auf ein Listen Formular zuzugreifen, das mit powerapps angepasst wurde.
+**A:** Gastbenutzer erhalten eine Fehlermeldung, wenn sie versuchen, auf ein Listenformular zuzugreifen, das mit PowerApps angepasst wurde.
 
-**Q1** Wie erhalte ich als Administrator eine Liste aller angepassten Formulare in meiner Organisation?
+**F:** Wie erhalte ich als Administrator eine Liste aller benutzerdefinierten Formulare in meiner Organisation?
 
-**EIN** Wenn Sie ein Mandanten Administrator für powerapps sind oder Sie über Umgebungs Administrator Berechtigungen für die powerapps-Standardumgebung Ihrer Organisation verfügen, gehen Sie wie folgt vor:
+**A:** Wenn Sie ein Mandantenadministrator für PowerApps sind oder über Umgebungsadministratorberechtigungen für die PowerApps-Standardumgebung Ihrer Organisation verfügen, gehen Sie wie folgt vor:
 
 1. Wählen Sie im [PowerApps Admin Center](https://admin.powerapps.com) in der Liste der Umgebungen die Standardumgebung für Ihre Organisation aus.
 
