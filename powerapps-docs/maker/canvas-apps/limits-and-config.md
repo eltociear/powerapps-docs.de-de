@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1daf6ea280710043572a0685da6daeda78f9f620
-ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
+ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72902428"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025101"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -117,7 +117,7 @@ Informationen zu Größenbeschränkungen für Text, Hyperlinks, Bilder und Medie
 
 Mit powerapps pro App-Plan können einzelne Benutzer 2 Anwendungen in einem einzelnen Portal für ein bestimmtes Geschäftsszenario ausführen, das auf den vollständigen Funktionen von powerapps basiert. Dieser Plan bietet Benutzern eine einfache Möglichkeit, mit der Plattform zu beginnen, bevor Sie eine breitere Akzeptanz erzielen.
 
-Nachdem ein Administrator einer Umgebung powerapps pro App-Plan zugewiesen hat, werden Sie standardmäßig Benutzern zugewiesen, wenn die APP für Sie freigegeben wird.
+Nachdem ein Administrator einer Umgebung powerapps pro App-Plan zugewiesen hat, werden Sie standardmäßig Benutzern zugewiesen, wenn die APP für Sie freigegeben wird. [Hier](https://docs.microsoft.com/power-platform/admin/capacity-add-on)können Sie sehen, wie ein Administrator die Zuordnung pro App-Plan durch hat.
 
 Führen Sie die folgenden Schritte aus, um die Zuweisung von App-Plänen für Benutzer zu deaktivieren, wenn eine APP für Sie freigegeben wird:
 

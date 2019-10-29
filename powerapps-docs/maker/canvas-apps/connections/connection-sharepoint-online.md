@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71993971"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Herstellen einer Verbindung mit SharePoint über eine Canvas-App
@@ -43,31 +43,31 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
 1. [Melden Sie sich bei powerapps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten**  > **Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Select Sie Daten > Verbindungen in der linken Navigationsleiste ein, und wählen Sie dann in der oberen linken Ecke neue Verbindung aus. ](./media/connection-sharepoint-online/new-connection.png)
+    > Wählen Sie ![Daten > Verbindungen in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke neue Verbindung aus.](./media/connection-sharepoint-online/new-connection.png)
 
 1. Geben oder fügen Sie im Suchfeld in der Nähe der oberen rechten Ecke **SharePoint**ein, und wählen Sie dann **SharePoint**aus.
 
     > [!div class="mx-imgBorder"]
-    > Geben Sie im Suchfeld in der Nähe der oberen rechten Ecke SharePoint ein, oder fügen Sie es ein, und wählen Sie dann SharePoint aus. ![In ](./media/connection-sharepoint-online/select-sharepoint.png)
+    > Geben Sie im Suchfeld in der Nähe der oberen rechten Ecke SharePoint ein, oder fügen Sie es ein, und wählen Sie dann SharePoint aus. ![](./media/connection-sharepoint-online/select-sharepoint.png)
 
 1. Führen Sie einen der folgenden Schritte aus:
 
     - Wählen Sie zum Herstellen einer Verbindung mit SharePoint Online **direkt verbinden (Clouddienste)** und dann **Erstellen**aus, und geben Sie dann Anmelde Informationen ein (falls Sie dazu aufgefordert werden).
 
         > [!div class="mx-imgBorder"]
-        > ![To eine Verbindung mit SharePoint Online herzustellen, wählen Sie direkte Verbindung (Clouddienste) aus ](./media/connection-sharepoint-online/select-online.png)
+        > ![eine Verbindung mit SharePoint Online herzustellen, wählen Sie direkte Verbindung (Clouddienste) aus](./media/connection-sharepoint-online/select-online.png)
 
         Die Verbindung wird hergestellt, und Sie können einer vorhandenen APP Daten hinzufügen oder eine APP von Grund auf neu erstellen.
 
     - Wählen Sie zum Herstellen einer Verbindung mit einem lokalen Standort **mithilfe des lokalen Daten Gateways verbinden aus**.
 
         > [!div class="mx-imgBorder"]
-        > ![To eine Verbindung mit dem lokalen Standort herstellen, wählen Sie * * Verbindung mit lokalem Daten Gateway herstellen) aus ](./media/connection-sharepoint-online/select-onprem.png)
+        > Wählen Sie zum Herstellen einer Verbindung mit dem lokalen Standort "* * Verbindung mit lokalem Daten Gateway herstellen" aus](./media/connection-sharepoint-online/select-onprem.png) ![
 
         Geben Sie **Windows** als Authentifizierungstyp an, und geben Sie dann Ihre Anmeldeinformationen ein. (Wenn Ihre Anmeldeinformationen einen Domänennamen enthalten, geben Sie sie folgendermaßen an: *Domäne\Alias*.)
 
         > [!div class="mx-imgBorder"]
-        > ![Specify Anmelde Informationen ](./media/connection-sharepoint-online/specify-creds.png)
+        > ![Anmelde Informationen angeben](./media/connection-sharepoint-online/specify-creds.png)
 
         Wählen Sie unter **Gateway auswählen**das Gateway aus, das Sie verwenden möchten, und wählen Sie dann **Erstellen**aus.
 
@@ -75,7 +75,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
         > Wenn Sie kein lokales Daten Gateway installiert haben, [Installieren Sie eines](../gateway-reference.md), und klicken Sie dann auf das Symbol, um die Liste der Gateways zu aktualisieren.
 
         > [!div class="mx-imgBorder"]
-        > ![Choose Gateway ](./media/connection-sharepoint-online/choose-gateway.png)
+        > ![Gateway auswählen](./media/connection-sharepoint-online/choose-gateway.png)
 
         Die Verbindung wird hergestellt, und Sie können einer vorhandenen APP Daten hinzufügen oder eine APP von Grund auf neu erstellen.
 
@@ -84,24 +84,24 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
 1. Öffnen Sie in PowerApps Studio die APP, die Sie aktualisieren möchten, wählen Sie die Registerkarte **Ansicht** aus, und wählen Sie dann **Datenquellen**aus.
 
     > [!div class="mx-imgBorder"]
-    > ![On Sie die Registerkarte Ansicht, und wählen Sie dann Datenquellen aus ](./media/connection-sharepoint-online/view-data-sources.png)
+    > ![auf der Registerkarte Ansicht, und wählen Sie dann Datenquellen aus](./media/connection-sharepoint-online/view-data-sources.png)
 
 1. Wählen Sie im Bereich **Daten** die Option Datenquelle  > **SharePoint** **Hinzufügen** aus.
 
 1. Wählen Sie unter **Verbindung mit einer SharePoint-Website herstellen**einen Eintrag in der Liste **Letzte Sites** aus (oder geben Sie die URL für die Website ein, die Sie verwenden möchten), und klicken Sie dann auf **verbinden**.
 
     > [!div class="mx-imgBorder"]
-    > ![Select Standort ](./media/connection-sharepoint-online/select-sp-site.png)
+    > Wählen Sie ![Site](./media/connection-sharepoint-online/select-sp-site.png)
 
 1. Aktivieren Sie unter **Liste auswählen**das Kontrollkästchen für **Dokumente** oder eine oder mehrere Listen, die Sie verwenden möchten, und klicken Sie dann auf **verbinden**:
 
     > [!div class="mx-imgBorder"]
-    > Wählen Sie ![Under eine Liste aus, aktivieren Sie das Kontrollkästchen für Dokumente oder eine oder mehrere Listen, die Sie verwenden möchten, und klicken Sie dann auf Verbinden ](./media/connection-sharepoint-online/select-sp-tables.png)
+    > Wählen Sie ![unter Liste auswählen das Kontrollkästchen für Dokumente oder eine oder mehrere Listen aus, die Sie verwenden möchten, und wählen Sie dann verbinden](./media/connection-sharepoint-online/select-sp-tables.png)
 
     Nicht alle Typen von Listen werden standardmäßig angezeigt. PowerApps unterstützt benutzerdefinierte Liste, aber keine vorlagenbasierten Listen. Wenn der Name der Liste, die Sie verwenden möchten, nicht angezeigt wird, Scrollen Sie nach unten, und geben Sie dann den Namen der Liste in das Feld ein, das den Namen der **benutzerdefinierten Tabelle**enthält.
 
     > [!div class="mx-imgBorder"]
-    > ![Type den Namen der Liste im Feld, das den Namen der benutzerdefinierten Liste enthält. ](./media/connection-sharepoint-online/custom-list.png)
+    > ![geben Sie den Namen der Liste in das Feld ein, in dem Sie einen benutzerdefinierten Listennamen eingeben.](./media/connection-sharepoint-online/custom-list.png)
 
     Die Datenquellen oder Quellen werden ihrer app hinzugefügt.
 
@@ -145,7 +145,7 @@ Wenn Sie mehrere Images in einer SharePoint-Bibliothek haben, können Sie der AP
     Die Dateinamen der Bilder in Ihrer Bibliothek werden in der **ImageList**angezeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![List von Bildern ](./media/connection-sharepoint-online/dropdown-items.png)
+    > ![Liste der Images](./media/connection-sharepoint-online/dropdown-items.png)
 
 1. Fügen Sie ein **Bild** Steuerelement hinzu, und legen Sie dessen **Image** -Eigenschaft auf diesen Ausdruck fest:
 
@@ -156,7 +156,7 @@ Wenn Sie mehrere Images in einer SharePoint-Bibliothek haben, können Sie der AP
     Das von Ihnen angegebene Bild wird angezeigt.
 
     > [!div class="mx-imgBorder"]
-    > ![Sample Bild ](./media/connection-sharepoint-online/golden-honey.png)
+    > ![Beispiel Bild](./media/connection-sharepoint-online/golden-honey.png)
 
 Sie können [eine Beispiel-app herunterladen](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp) , die einen komplexeren Ansatz zum Darstellen von Daten aus einer SharePoint-Bibliothek veranschaulicht.
 
@@ -174,13 +174,13 @@ In dieser One-screen-App werden in der Liste in der unteren linken Ecke alle Dat
 Wenn Sie die gewünschte Datei finden, wählen Sie diese aus, um Sie im **Video**-, **Bild**-oder **Audiosteuerelement** auf der rechten Seite anzuzeigen.
 
 > [!div class="mx-imgBorder"]
-> ![Sample Bild ](./media/connection-sharepoint-online/library-app.png)
+> ![Beispiel Bild](./media/connection-sharepoint-online/library-app.png)
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
 ### <a name="lists"></a>Aufli
 
-Powerapps kann Spaltennamen lesen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_x0020 \_"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
+Powerapps kann Spaltennamen lesen, die Leerzeichen enthalten, aber die Leerzeichen werden durch den hexadezimalen Escapecode **"\_x0020\_"** ersetzt. **"Name der Spalte"** in SharePoint wird beispielsweise in PowerApps bei Anzeige im Datenlayout oder Verwendung in einer Formel als **"Name_x0020_der_x0020_Spalte"** angezeigt.
 
 Nicht alle Spaltentypen werden unterstützt, und nicht alle Typen von Spalten unterstützen alle Kartentypen.
 

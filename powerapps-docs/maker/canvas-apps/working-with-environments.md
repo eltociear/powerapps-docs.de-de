@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71705239"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Arbeiten mit Umgebungen und Microsoft PowerApps
@@ -31,12 +31,12 @@ Mit PowerApps können Sie in verschiedenen Umgebungen arbeiten und einfach zwisc
 Wenn Sie sich registrieren und sich zuerst bei powerapps anmelden, wird es in einer Standardumgebung geöffnet, die Sie in der oberen rechten Ecke der Seite identifizieren können.
 
 > [!div class="mx-imgBorder"]
-> ![Default Umgebung ](./media/working-with-environments/env-dropdown.png)
+> ![Standardumgebung](./media/working-with-environments/env-dropdown.png)
 
 Jeder in Ihrer Organisation kann auf die Standardumgebung zugreifen. Sie können apps in dieser Umgebung erstellen und ihre Apps für andere Benutzer freigeben. Möglicherweise haben Sie auch Zugriff auf andere Umgebungen, unabhängig davon, ob [Sie Sie erstellen](../../administrator/environments-administration.md) oder andere. Sie können Umgebungen umschalten, indem Sie die Liste Umgebung in der oberen rechten Ecke öffnen und dann eine andere Umgebung auswählen. Dieses Beispiel zeigt den Wechsel von **Microsoft** zu **myownenv**.
 
 > [!div class="mx-imgBorder"]
-> ![Switch Umgebung ](./media/working-with-environments/switch-environment.png)
+> ![switchumgebung](./media/working-with-environments/switch-environment.png)
 
 Nachdem Sie Umgebungen gewechselt haben, werden in der neuen Umgebung alle apps angezeigt, auf die Sie in dieser Umgebung zugreifen können.
 

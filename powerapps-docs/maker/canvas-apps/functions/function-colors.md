@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4af851160ea8a2add22add9f79dcc181a734e715
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71994855"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>Color-Enumeration und ColorFade-, ColorValue- und RGBA-Funktionen in PowerApps
 
@@ -44,12 +43,12 @@ Die **ColorFade**-Funktion gibt eine hellere bzw. dunklere Version einer Farbe z
 In einer Canvas-App können Sie Steuerelemente vor einem anderen Ebenen und die Transparenz eines Steuer Elements für alle dahinter liegenden Steuerelemente festlegen. Folglich werden Farben durch die Ebenen Blend. Dieses Diagramm zeigt z. b., wie die drei primären Farben mit einer Alpha-Einstellung von 50% gemischt werden:
 
 > [!div class="mx-imgBorder"]
-> ![Three Primärfarben mit einer Alpha Einstellung von 50% ](media/function-colors/alpha-primary.png)
+> ![drei Primärfarben mit einer Alpha Einstellung von 50%](media/function-colors/alpha-primary.png)
 
 Sie können Bilder auch in Dateiformaten mischen, die Alphakanäle unterstützen. Beispielsweise können Sie keine JPEG-Dateien mischen, aber Sie können auch. png-Dateien mischen. Die nächste Grafik zeigt die gleichen roten, grünen und blauen Farben aus dem vorherigen Beispiel, aber die rote Farbe wird als Wellenlinie (anstelle eines Kreises) in einer PNG-Datei mit einem 50% Alpha-Kanal angezeigt:
 
 > [!div class="mx-imgBorder"]
-> ![Red Wellenlinie mit einer Alpha-Einstellung von 50% vor blauen und grünen Kreisen ](media/function-colors/alpha-image.png)
+> ![rote Wellenlinie mit einer Alpha-Einstellung von 50% vor blauen und grünen Kreisen](media/function-colors/alpha-image.png)
 
 Wenn Sie einen farbenumerationswert angeben oder eine **ColorValue** -Formel mit einem Farbnamen oder einem 6-stelligen Hexadezimalwert erstellen, ist die Alpha Einstellung 100%, was vollständig deckend ist.
 
@@ -63,12 +62,12 @@ Wenn Sie einen farbenumerationswert angeben oder eine **ColorValue** -Formel mit
 
 - *CSSColor*: Erforderlich.  Name einer Cascading Stylesheet-Definition (CSS). Sie können einen Namen (z. b. **OliveDrab**) oder einen Hexadezimalwert angeben, z. b. **#6b8e23** oder **#7fffd420**. Hexadezimale Werte können entweder die Form "#*RRGGBB* " oder "#*RRGGBBAA*" haben.
 
-**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
+**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 - *Red*, *Green*, *Blue*: Erforderlich.  Farbkomponenten Werte, die zwischen 0 (keine Sättigung) und 255 (vollständige Sättigung) liegen.
 - *Alpha*: Erforderlich.  Alpha Komponente, die zwischen 0 (vollständig transparent) und 1 (vollständig nicht transparent) liegt. Sie können auch einen Prozentsatz, 0 % bis 100 %, verwenden.
 
-**ColorFade**( *Color*; *FadeAmount* )
+**ColorFade**( *Color*, *FadeAmount* )
 
 - *Color*: Erforderlich.  Ein Farbwert wie z.B. **Color.Red** oder die Ausgabe von **ColorValue** oder **RGBA**.
 - *FadeAmount*: Erforderlich.  Eine Zahl zwischen -1 und 1. -1 markiert eine Farbe vollständig in schwarz, 0 wirkt sich nicht auf die Farbe aus, und 1 lässt eine Farbe vollständig in weiß aus. Sie können auch einen Prozentsatz zwischen-100% und 100% verwenden.

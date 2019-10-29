@@ -8,16 +8,24 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: cd57cce824c4071de12e7dc96407018dde57c2d7
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 669bf03d7869d6fd625288a65a305a3a458cfde4
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346829"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025753"
 ---
 # <a name="implement-components-using-typescript"></a>Implementieren von Komponenten mithilfe von typescript
 
-Dieses Tutorial führt Sie durch den Prozess der Erstellung einer neuen Code Komponente in typescript. Die Beispiel Komponente ist eine lineare Eingabe Komponente, die es Benutzern ermöglicht, numerische Werte mithilfe eines visuellen Schiebereglers einzugeben, statt die Werte in das Feld einzugeben. 
+Dieses Thema führt Sie durch die Erstellung einer neuen Code Komponente in typescript mithilfe der powerapps-CLI. In diesem Tutorial erstellen wir eine lineare Beispielcode Komponente, mit der Benutzer die numerischen Werte mithilfe eines visuellen Schiebereglers ändern können, anstatt die Werte in das Feld einzugeben. 
+
+Die Elemente, die zum Erstellen von Code Komponenten erforderlich sind, lauten wie folgt:
+
+1. [Erstellen eines neuen Komponenten Projekts](#creating-a-new-component-project)
+2. [Implementieren des Manifests](#implementing-manifest)
+3. [Implementieren von Komponenten Logik mithilfe von typescript](#implementing-component-logic)
+4. [Hinzufügen von Stil zu den Code Komponenten](#adding-style-to-the-code-component)
+5. [Verpacken von Code Komponenten](#packaging-your-code-components)
 
 ## <a name="creating-a-new-component-project"></a>Erstellen eines neuen Komponenten Projekts
 
@@ -29,26 +37,28 @@ So erstellen Sie ein neues Projekt:
     mkdir LinearComponent
     ```
 
-1. Wechseln Sie mit dem Befehl `cd LinearComponent` in das neue Verzeichnis. 
+1. Wechseln Sie mithilfe des Befehls `cd LinearComponent`in den Ordner Component. 
    
-1. Führen Sie den folgenden Befehl aus, um ein neues Komponenten Projekt zu erstellen, das Basisparameter übergibt.
+1. Erstellen Sie ein neues Komponenten Projekt, indem Sie mithilfe des-Befehls grundlegende Parameter übergeben.
 
    ```CLI
     pac pcf init --namespace SampleNamespace --name TSLinearInputComponent --template field
     ``` 
 
 1. Installieren Sie die projektbuildtools mithilfe des Befehls `npm install`. 
-2. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_PCF_Component>` in einer Entwicklerumgebung Ihrer Wahl, und beginnen Sie mit der Entwicklung von Code Komponenten. Die schnellste Möglichkeit zum Einstieg besteht darin, dass Sie `code .` über die Eingabeaufforderung ausführen, sobald Sie sich im `C:\Users\<your name>\Documents\<My_PCF_Component>` Verzeichnis befinden. Dieser Befehl öffnet das Komponenten Projekt in Visual Studio Code.
+1. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_code_Component>` in einer Entwicklerumgebung Ihrer Wahl, und beginnen Sie mit der Entwicklung von Code Komponenten. Die schnellste Möglichkeit zum Einstieg besteht darin, dass Sie `code .` über die Eingabeaufforderung ausführen, sobald Sie sich im `C:\Users\<your name>\Documents\<My_code_Component>` Verzeichnis befinden. Dieser Befehl öffnet das Komponenten Projekt in Visual Studio Code.
 
 ## <a name="implementing-manifest"></a>Implementieren des Manifests
 
-Manifest ist eine XML-Datei, die die Metadaten der Code Komponente enthält. Außerdem wird das Verhalten der Code Komponente definiert. In diesem Lernprogramm wird diese Manifest-Datei unter dem `<Your component Name>` Unterordner erstellt. Wenn Sie die `ControlManifest.Input.xml` Datei in Visual Studio Code öffnen, werden Sie feststellen, dass die Manifest-Datei mit einigen Eigenschaften vordefiniert ist. Nehmen Sie Änderungen an der vordefinierten Manifest-Datei vor, wie hier gezeigt:
+Manifest ist eine XML-Datei, die die Metadaten der Code Komponente enthält. Außerdem wird das Verhalten der Code Komponente definiert. In diesem Lernprogramm wird diese Manifest-Datei unter dem `<Your component Name>` Unterordner erstellt. Wenn Sie die `ControlManifest.Input.xml` Datei in Visual Studio Code öffnen, werden Sie feststellen, dass die Manifest-Datei mit einigen Eigenschaften vordefiniert ist. Weitere Informationen: [Manifest](manifest-schema-reference/manifest.md).
+
+Nehmen Sie Änderungen an der vordefinierten Manifest-Datei vor, wie hier gezeigt:
 
 1. Der [Steuer](manifest-schema-reference/control.md) Knoten definiert den Namespace, die Version und den anzeigen amen der Code Komponente. Definieren Sie nun jede Eigenschaft des [Steuer](manifest-schema-reference/control.md) Element Knotens, wie hier gezeigt:
 
    - **Namespace**: der Namespace der Code Komponente. 
    - **Konstruktor**: Konstruktor der Code Komponente.
-   - **Version**: Version der Komponente. Wenn Sie die Komponente aktualisieren, müssen Sie die Version aktualisieren, um die Änderungen in der Laufzeit anzuzeigen.
+   - **Version**: Version der Komponente. Wenn Sie die Komponente aktualisieren, müssen Sie die Version aktualisieren, um die aktuellen Änderungen in der Laufzeit anzuzeigen.
    - **Display-Name-Key**: Name der Code Komponente, die auf der Benutzeroberfläche angezeigt wird.
    - **Description-Name-Key**: Beschreibung der Code Komponente, die auf der Benutzeroberfläche angezeigt wird.
    - **Control-Type**: der Code Komponententyp. Es werden nur *Standardtyp* von Code Komponenten unterstützt.
@@ -59,7 +69,7 @@ Manifest ist eine XML-Datei, die die Metadaten der Code Komponente enthält. Au�
       <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
      ```
 
-2. Der [Eigenschafts](manifest-schema-reference/property.md) Knoten definiert die Eigenschaften der Code Komponente wie das Definieren des Datentyps des Felds. Der Eigenschafts Knoten wird als untergeordnetes Element unter dem Steuerelement angegeben. Definieren Sie den [Eigenschafts](manifest-schema-reference/property.md) Knoten, wie hier gezeigt:
+2. Der [Eigenschafts](manifest-schema-reference/property.md) Knoten definiert die Eigenschaften der Code Komponente wie das Definieren des Datentyps des Felds. Der Eigenschafts Knoten wird als untergeordnetes Element unter dem `control`-Element angegeben. Definieren Sie den [Eigenschafts](manifest-schema-reference/property.md) Knoten, wie hier gezeigt:
 
    - **Name**: Name der Eigenschaft.
    - **Display-Name-Key**: Anzeige Name der Eigenschaft, die auf der Benutzeroberfläche angezeigt wird.
@@ -71,7 +81,7 @@ Manifest ist eine XML-Datei, die die Metadaten der Code Komponente enthält. Au�
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
-3. Der Knoten [Ressourcen](manifest-schema-reference/resources.md) definiert die Visualisierung der Code Komponente. Sie enthält alle Ressourcen, die die Code Komponente bilden. Der [Code](manifest-schema-reference/code.md) wird als untergeordnetes Element unter dem Resources-Element angegeben. Definieren Sie die [Ressourcen](manifest-schema-reference/resources.md) wie hier gezeigt:
+3. Der Knoten [Ressourcen](manifest-schema-reference/resources.md) definiert die Visualisierung der Code Komponente. Sie enthält alle Ressourcen, die die Visualisierung und Formatierung der Code Komponente erstellen. Der [Code](manifest-schema-reference/code.md) wird als untergeordnetes Element unter dem Resources-Element angegeben. Definieren Sie die [Ressourcen](manifest-schema-reference/resources.md) wie hier gezeigt:
 
    - **Code**: bezieht sich auf den Pfad, in dem sich alle Ressourcen Dateien befinden.
  
@@ -329,7 +339,7 @@ npm start
 
 ## <a name="packaging-your-code-components"></a>Verpacken der Code Komponenten
 
-Führen Sie zum Erstellen und [Importieren einer](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) Projektmappendatei die folgenden Schritte aus:
+Führen Sie zum Erstellen und [Importieren einer](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) Projektmappendatei die folgenden Schritte aus:
 
 1. Erstellen Sie im Ordner **linearcomponent** eine **neue Ordner Projekt** Mappe, und navigieren Sie zum Ordner. 
 2. Erstellen Sie mit dem folgenden Befehl ein neues Projektmappenprojekt im Ordner **linearcomponent** :
@@ -366,7 +376,7 @@ Führen Sie zum Erstellen und [Importieren einer](https://docs.microsoft.com/dyn
     > - Aktivieren Sie unter **Code Tools**die Option **nuget-Ziele & Buildaufgaben**.
 
 6. Die generierte ZIP-Datei der Projekt Mappe befindet sich im Ordner "`Solution\bin\debug`".
-7. [Importieren Sie die Lösung manuell in Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) mithilfe des Webportals, sobald die ZIP-Datei bereit ist, oder sehen Sie sich die Abschnitte [Authentifizieren bei Ihrer Organisation](import-custom-controls.md#authenticating-to-your-organization) und [Bereitstellung](import-custom-controls.md#deploying-code-components) an, um Sie mithilfe von CLI-Befehlen von powerapps
+7. [Importieren Sie die Lösung manuell in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) mithilfe des Webportals, sobald die ZIP-Datei bereit ist, oder sehen Sie sich die Abschnitte [Authentifizieren bei Ihrer Organisation](import-custom-controls.md#authenticating-to-your-organization) und [Bereitstellung](import-custom-controls.md#deploying-code-components) an, um Sie mithilfe von CLI-Befehlen von powerapps
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Hinzufügen von Code Komponenten in Modell gesteuerten apps
 

@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 3042202fd1790d117c2a503bd6e69eaaea15c08a
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 4bb581e06102ac351b3202d30fa8d418951fa291
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346806"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025687"
 ---
 # <a name="package-a-code-component"></a>Packen einer Code Komponente
 
@@ -22,7 +22,7 @@ In diesem Thema wird beschrieben, wie Code Komponenten in Common Data Service im
 
 So erstellen und importieren Sie eine Projektmappendatei:
 
-1. Erstellen Sie einen neuen Ordner, und nennen Sie ihn " **Solution** " (oder einen beliebigen Namen Ihrer Wahl) mithilfe des Befehls `mkdir Solutions`. Navigieren Sie mithilfe des Befehls `cd Solutions` in das Verzeichnis.
+1. Erstellen Sie im Ordner "Sample Component" einen neuen Ordner, und nennen Sie ihn " **Solution** " (oder einen beliebigen Namen Ihrer Wahl) mithilfe des Befehls `mkdir Solutions`. Navigieren Sie mithilfe des Befehls `cd Solutions` in das Verzeichnis.
 
 2. Erstellen Sie ein neues Projektmappenprojekt mit dem Befehl `pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>`. Das Projektmappenprojekt wird zum Bündeln der Code Komponente in eine ZIP-Datei der Projekt Mappe verwendet, die zum Importieren in Common Data Service verwendet wird.
 
@@ -45,7 +45,7 @@ So erstellen und importieren Sie eine Projektmappendatei:
     > - Wenn beim Ausführen des `msbuild`-Befehls für die Projekt Mappe ein Fehler auftritt, der auf einen *mehrdeutigen Projektnamen* trifft, stellen Sie sicher, dass der Projektmappenname und der Projektname nicht identisch sind.
 
 4. Die generierten Projektmappendateien befinden sich im Ordner "`\bin\debug\`", nachdem der Buildvorgang erfolgreich war.
-5. [Importieren Sie die Lösung manuell in Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) mithilfe des Webportals, oder lesen Sie die Abschnitte [Authentifizieren bei Ihrer Organisation](#authenticating-to-your-organization) und [Bereitstellung](#deploying-code-components) , um Sie mithilfe von CLI-Befehlen von powerapps zu importieren.
+5. [Importieren Sie die Lösung manuell in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) mithilfe des Webportals, oder lesen Sie die Abschnitte [Authentifizieren bei Ihrer Organisation](#authenticating-to-your-organization) und [Bereitstellung](#deploying-code-components) , um Sie mithilfe von CLI-Befehlen von powerapps zu importieren.
 
 ## <a name="authenticating-to-your-organization"></a>Authentifizieren bei Ihrer Organisation
 

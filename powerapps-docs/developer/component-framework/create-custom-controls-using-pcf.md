@@ -11,32 +11,33 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 286458da2ed7b7b94f92b86355bf8785161ef778
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347013"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025771"
 ---
 # <a name="create-and-build-a-code-component"></a>Erstellen und Erstellen einer Code Komponente
 
-In diesem Thema wird erläutert, wie Code Komponenten mithilfe der powerapps-CLI erstellt und bereitgestellt werden. Stellen Sie sicher, dass Sie [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI)installiert haben.
+In diesem Thema wird veranschaulicht, wie Code Komponenten mithilfe der powerapps-CLI erstellt und bereitgestellt werden. Stellen Sie sicher, dass Sie [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI)installiert haben.
 
 ## <a name="create-a-new-component"></a>Neue Komponente erstellen
 
 Öffnen Sie zunächst **Developer-Eingabeaufforderung für vs 2017** nach der Installation der powerapps-CLI.
 
-1. Erstellen Sie im Developer-Eingabeaufforderung für Visual Studio 2017 einen neuen Ordner auf dem lokalen Computer – z. b. *c:\Users\YOUR name\Documents\My_PCF_Component* . verwenden Sie dazu den Befehl `mkdir <Specify the folder name>`.
+1. Erstellen Sie im Developer-Eingabeaufforderung für Visual Studio 2017 auf dem lokalen Computer einen neuen Ordner, z. b. *c:\Users\YOUR name\Documents\My_code_Component* . verwenden Sie dazu den Befehl `mkdir <Specify the folder name>`.
 2. Wechseln Sie mithilfe des Befehls `cd <specify your new folder path>` zum neu erstellten Ordner.
-3. Führen Sie den folgenden Befehl aus, um ein neues Komponenten Projekt zu erstellen, indem Sie einige grundlegende Parameter übergeben:
+3. Erstellen Sie ein neues Komponenten Projekt, indem Sie mit dem Befehl einige grundlegende Parameter übergeben:
 
-    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
+    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
  
    > [!NOTE]
-   > Die powerapps-CLI unterstützt derzeit zwei Arten von Komponenten: **Feld** und **DataSet**.  Für Canvas-apps wird nur der **Feldtyp** für diese experimentelle Vorschau unterstützt.
+   > Die powerapps-CLI unterstützt derzeit zwei Arten von Komponenten: **Feld** und **DataSet** für Modell gesteuerte apps.  Für Canvas-apps wird nur der **Feldtyp** für diese experimentelle Vorschau unterstützt.
 
 4. Um alle erforderlichen Projekt Abhängigkeiten abzurufen, führen Sie den Befehl `npm install` aus.
-5. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_PCF_Component>` in einer beliebigen Entwicklerumgebung Ihrer Wahl, und beginnen Sie mit der Entwicklung von Code Komponenten. Die schnellste Methode für den Einstieg besteht darin, dass Sie `code .` über die Eingabeaufforderung ausführen, sobald Sie sich im `C:\Users\<your name>\Documents\<My_PCF_Component>` Verzeichnis befinden. Dieser Befehl öffnet das Komponenten Projekt in Visual Studio Code.
+5. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_code_Component>` in einer beliebigen Entwicklerumgebung Ihrer Wahl, und beginnen Sie mit der Entwicklung von Code Komponenten. Die schnellste Methode für den Einstieg besteht darin, dass Sie `code .` über die Eingabeaufforderung ausführen, sobald Sie sich im `C:\Users\<your name>\Documents\<My_code_Component>` Verzeichnis befinden. Dieser Befehl öffnet das Komponenten Projekt in Visual Studio Code.
+6. Implementieren Sie die erforderlichen Artefakte für die Komponente wie das Manifest, die Komponenten Logik und das Formatieren, und erstellen Sie dann das Komponenten Projekt. Weitere Informationen: [Implementieren der Beispiel Komponente](implementing-controls-using-typescript.md)
 
 ## <a name="build-your-component"></a>Erstellen der Komponente
 

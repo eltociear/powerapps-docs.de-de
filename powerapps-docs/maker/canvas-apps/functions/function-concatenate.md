@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71992889"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Funktionen „Concat“ und „Concatenate“ in PowerApps
 
@@ -37,12 +36,12 @@ Verwenden Sie die [**Split**](function-split.md) -oder [**MatchAll**](function-i
 
 ## <a name="syntax"></a>Syntax
 
-**Concat**( *Tabelle*; *Formel* )
+**Concat**( *Tabelle*, *Formel* )
 
 - *Table*: erforderlich.  Die zu verarbeitende Tabelle.
 - *Formula*: Erforderlich.  Die auf alle Datensätze der Tabelle anzuwendende Formel.
 
-**Concatenate**( *Zeichenfolge1* [; *Zeichenfolge2*; ...] )
+**Concatenate**( *Zeichenfolge1* [, *Zeichenfolge2*, ...] )
 
 - *Zeichenfolge(n)* : Erforderlich.  Mischung aus einzelnen Zeichenfolgen oder eine einspaltige Tabelle von Zeichenfolgen.
 
@@ -52,17 +51,17 @@ In den Beispielen in diesem Abschnitt werden diese globalen Variablen verwendet:
 
 - **FirstName** = "Jane"
 - **LastName** = "Doe"
-- **Produkte**  =  mit zwei Spalten und vier Zeilen ![Table ](media/function-concatenate/products.png)
+- **Produkte** = ![Tabelle mit zwei Spalten und vier Zeilen](media/function-concatenate/products.png)
 
 Wenn Sie diese globalen Variablen in einer APP erstellen möchten, fügen Sie ein [**Button**](../controls/control-button.md) -Steuerelement ein, und legen **Sie dessen onselect** -Eigenschaft auf diese Formel fest:
 
-```powerapps-comma
-Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
-Set( Products;
+```powerapps-dot
+Set( FirstName, "Jane" ); Set( LastName, "Doe" );
+Set( Products,
     Table(
-        { Name: "Violin"; Type: "String" };
-        { Name: "Cello"; Type: "String" };
-        { Name: "Trumpet"; Type: "Wind" }
+        { Name: "Violin", Type: "String" },
+        { Name: "Cello", Type: "String" },
+        { Name: "Trumpet", Type: "Wind" }
     )
 )
 ```
@@ -107,8 +106,8 @@ Legen Sie für diese Beispiele die **Text** -Eigenschaft einer Bezeichnung auf e
 
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
-| **Left (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp;), Len (&nbsp;Concat (&nbsp;Products, 0Name 1 2 3 ", 4" 5) 6) 7 @no__ t_18 92)** | Gibt das Ergebnis von **Concat** zurück, entfernt jedoch die letzten zwei Zeichen, die das überflüssige Trennzeichen bilden. | "Violine, &nbsp;Cello &nbsp;Trumpet" |
-| **Match (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp;) "," ^ (? &lt;trim &gt;. *), 0 $ "). Trim** | Gibt die Zeichen von **Concat** vom Anfang der Text Zeichenfolge (^) bis zum Ende ($) zurück, enthält jedoch nicht das unerwünschte Komma und den Leerraum am Ende. | "Violine, &nbsp;Cello &nbsp;Trumpet" |
+| **Left (Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), Len (&nbsp;Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;" ,&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2)** | Gibt das Ergebnis von **Concat** zurück, entfernt jedoch die letzten zwei Zeichen, die das überflüssige Trennzeichen bilden. | "Violine, &nbsp;Cello &nbsp;Trumpet" |
+| **Match (Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;) "," ^ (?&lt;Trim&gt;. *),&nbsp;$ "). Trim** | Gibt die Zeichen von **Concat** vom Anfang der Text Zeichenfolge (^) bis zum Ende ($) zurück, enthält jedoch nicht das unerwünschte Komma und den Leerraum am Ende. | "Violine, &nbsp;Cello &nbsp;Trumpet" |
 
 ### <a name="split-and-matchall"></a>Split und MatchAll
 
@@ -119,4 +118,4 @@ Fügen Sie für diese Beispiele einen leeren, vertikalen Katalog hinzu, legen Si
 | Formel | Beschreibung | Ergebnis |
 |---------|-------------|--------|
 | **Split (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp;) ",", ")** | Teilt die Text Zeichenfolge mit dem Trennzeichen **","** . Die Zeichenfolge endet mit einem Komma und einem Leerzeichen, daher ist die letzte Zeile im Ergebnis eine leere Zeichenfolge.  | ![Tabelle](media/function-concatenate/split.png) |
-| **MatchAll (Concat (&nbsp;Products; &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp;) "," [^ \s;] + "). Vollständiger Treffer** | Teilt die Text Zeichenfolge basierend auf Zeichen, die keine Leerzeichen oder Kommas sind. Mit dieser Formel werden das zusätzliche Komma und der Leerraum am Ende der Zeichenfolge entfernt. | ![Tabelle](media/function-concatenate/matchall.png)
+| **MatchAll (Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "[^ \s,] +"). Vollständiger Treffer** | Teilt die Text Zeichenfolge basierend auf Zeichen, die keine Leerzeichen oder Kommas sind. Mit dieser Formel werden das zusätzliche Komma und der Leerraum am Ende der Zeichenfolge entfernt. | ![Tabelle](media/function-concatenate/matchall.png)

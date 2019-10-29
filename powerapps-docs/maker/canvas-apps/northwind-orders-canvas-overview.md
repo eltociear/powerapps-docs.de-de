@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 48966659ca12ada12448543492731fff8431fbde
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71995816"
 ---
 # <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Übersicht über die Canvas-App für Northwind Traders
@@ -33,7 +33,7 @@ In diesem Thema finden Sie Folgendes:
 Auf einem einzelnen Bildschirm kann der App-Benutzer Aufträge anzeigen, aktualisieren, erstellen und löschen.
 
 > [!div class="mx-imgBorder"]
-> ![Complete Canvas-App ](media/northwind-orders-canvas-part1/orders-finished.png)
+> ![komplette Canvas-App](media/northwind-orders-canvas-part1/orders-finished.png)
 
 ## <a name="explore-the-user-interface"></a>Erkunden Sie die Benutzeroberfläche
 
@@ -50,7 +50,7 @@ In der oberen rechten Ecke fasst ein Formular die Reihenfolge zusammen, die der 
 In der unteren rechten Ecke werden in einer anderen Galerie Informationen zu den Produkten, die in der ausgewählten Bestellung enthalten sind, und in den Mengen angezeigt. Jedes Element in diesem Katalog wird als Bestelldetails bezeichnet. Der App-Benutzer kann alle Elemente in diesem Katalog mithilfe von Steuerelementen in und darunter hinzufügen und löschen. Weitere Informationen finden Sie [unter Erstellen des Detail](northwind-orders-canvas-part3.md)Katalogs.
 
 > [!div class="mx-imgBorder"]
-> ![Definition von Bildschirm Bereichen ](media/northwind-orders-canvas-part1/orders-parts.png)
+> ![Definition der Bildschirmbereiche](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="explore-the-data-sources"></a>Untersuchen der Datenquellen
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71995607"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025921"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
@@ -71,7 +71,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
     Beispielsweise kann Ihre APP eine Verbindung mit einer Entität in einer Common Data Service Datenbank herstellen. Wenn Sie eine solche APP freigeben, werden Sie im Freigabe Bereich aufgefordert, die Sicherheit für diese Entität zu verwalten.
 
     > [!div class="mx-imgBorder"]
-    > ![Assign einer Sicherheitsrolle ](media/share-app/cds-assign-security-role.png)
+    > ![Zuweisen einer Sicherheitsrolle](media/share-app/cds-assign-security-role.png)
 
     Weitere Informationen zum Verwalten der Sicherheit für eine Entität finden Sie weiter unten in diesem Thema unter [Verwalten von Entitäts Berechtigungen](share-app.md#manage-entity-permissions) .
 
@@ -201,13 +201,13 @@ Wie bei nicht-Gästen müssen auch die zugrunde liegenden Datenquellen, auf die 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>Welche Lizenz muss meinem Gast zugewiesen werden, damit Sie eine APP ausführen können, die für Sie freigegeben ist?
 Die gleiche Lizenz, die für nicht-Gäste zum Ausführen einer APP erforderlich ist. Wenn die APP beispielsweise keine Premium-Verbindungsdienste verwendet, genügt eine powerapps P1-Lizenz, um dem Gast zugewiesen zu werden.  
 
-
 |                                 | Angepasste SharePoint-Form | Eigenständige Canvas-App mit nicht-Premium-Connectors | Eigenständige Canvas-App mit Premium-Connectors | Modell gestützte App |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
 | SharePoint-Benutzer (keine PA-Lizenz) | x                          |                                                    |                                                |                  |
 | In powerapps enthaltene e/As    | x                          |                                                    |                                                |                  |
-| Powerapps-Plan 1                | x                          | x                                                  |                                                |                  |
-| Powerapps Plan2                 | x                          | x                                                  | x                                              | x                |
+| Powerapps pro App-Plan          | x                          | x                                                  | x                                              | x                |
+| Powerapps-Tarif "pro Benutzer"         | x                          | x                                                  | x                                              | x                |
+
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Wie wird in powerapps Mobile für einen Gast Apps für seinen Heim Mandanten angezeigt?
 Alle Benutzer, die auf eine Canvas-App auf Ihrem mobilen Gerät zugegriffen haben und die in einem Azure AD Mandanten veröffentlicht werden, der nicht Ihr Privat Mandant ist, müssen sich von powerapps abmelden und sich bei powerapps Mobile wieder anmelden.  
