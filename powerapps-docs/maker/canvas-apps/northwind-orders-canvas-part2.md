@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "71995859"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Erstellen eines Zusammenfassungs Formulars in einer Canvas-App
 
@@ -96,7 +97,7 @@ In diesem Abschnitt fügen Sie Steuerelemente hinzu, um eine Zusammenfassung ein
 
 1. Legen Sie in der Bearbeitungs Leiste die **DataSource** -Eigenschaft des Formulars auf diesen Wert fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Orders
     ```
 
@@ -215,7 +216,7 @@ In diesem Beispiel benötigen Sie die Zeit Teile der Datumsfelder nicht, da dies
 
 1. Legen Sie die **Item** -Eigenschaft des Zusammenfassungs Formulars auf diesen Ausdruck fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected
     ```
 
@@ -294,7 +295,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **Image** -Eigenschaft des Bilds auf diese Formel fest, und ersetzen Sie ggf. die Zahl am Ende von datacardvalue:
 
-    ```powerapps-dot
+    ```powerapps-comma
     DataCardValue7.Selected.Picture
     ```
 
@@ -327,7 +328,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Vergewissern Sie sich im Struktur **Ansichts** Bereich, dass der Name des Formulars **Form1**lautet, und legen Sie dann die **onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SubmitForm( Form1 )
     ```
 
@@ -338,8 +339,8 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **Display Mode** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
-    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -349,7 +350,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Symbols auf diesen Wert fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -380,7 +381,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen **Sie die onselect** -Eigenschaft des Cancel-Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ResetForm( Form1 )
     ```
 
@@ -391,8 +392,8 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **Display Mode** -Eigenschaft des Cancel-Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -402,7 +403,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Cancel-Symbols auf diesen Wert fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -433,7 +434,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **onselect** -Eigenschaft des Add-Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     NewForm( Form1 )
     ```
 
@@ -444,8 +445,8 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **Display Mode** -Eigenschaft des Add-Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -458,7 +459,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Add-Symbols auf diesen Wert fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -492,8 +493,8 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen **Sie die onselect** -Eigenschaft des Papierkorb Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Remove( Orders, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Orders; Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -503,8 +504,8 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **Display Mode** -Eigenschaft für das Papierkorb Symbol auf diese Formel fest:
 
-    ```powerapps-dot
-    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -514,7 +515,7 @@ Die Entität " **Orders** " hat eine n:1-Beziehung mit der Entität " **Employee
 
 1. Legen Sie die **disabledcolor** -Eigenschaft des Papierkorb Symbols auf diesen Wert fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -537,7 +538,7 @@ Zur Wiederholung haben Sie ein Formular hinzugefügt, in dem der Benutzer eine Z
 - Ein Symbol zum Speichern von Änderungen in einer Bestellung: `SubmitForm( Form1 )`
 - Ein Symbol zum Abbrechen von Änderungen an einer Bestellung: `ResetForm( Form1 )`
 - Ein Symbol zum Erstellen einer Bestellung: `NewForm( Form1 )`
-- Ein Symbol zum Löschen einer Bestellung: `Remove( Orders, Gallery1.Selected )`
+- Ein Symbol zum Löschen einer Bestellung: `Remove( Orders; Gallery1.Selected )`
 
 ## <a name="next-step"></a>Nächster Schritt
 
