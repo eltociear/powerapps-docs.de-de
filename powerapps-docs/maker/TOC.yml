@@ -32,6 +32,8 @@
           items:
             - name: Anzeigen des Profils
               href: ../user/view-your-user-profile.md
+            - name: Finden Ihres Administrators oder Supportmitarbeiters
+              href: ../user/find-admin.md
             - name: Festlegen persönlicher Optionen
               href: ../user/set-personal-options.md
             - name: Verwenden einer Sprachausgabe
@@ -85,6 +87,8 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Exportieren in eine Excel-PivotTable
               href: ../user/export-excel-pivottable.md
+            - name: Zusammenführen doppelter Datensätze
+              href: ../user/merge-duplicate-records.md
         - name: Berichte
           items:
             - name: Arbeiten mit Berichten
