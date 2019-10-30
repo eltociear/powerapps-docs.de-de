@@ -1,30 +1,30 @@
 ---
 title: Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps | Microsoft-Dokumentation
 description: Exemplarische Vorgehensweise zum Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
-author: yijw2017
+author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/08/2018
-ms.author: yijw
+ms.date: 10/29/2019
+ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bca1fb3760727278e42676c9f0a5ec501f9002e0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
+ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985787"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73063388"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
 
 Ausführliche Anleitung zum Installieren und Konfigurieren der Beispiel-App „Expense Report“ [Hier](https://aka.ms/previewmyexpenses) können Sie auch eine Vorschau der Beispiel-App anzeigen.
 
-Geschätzte Dauer: **10–15 Minuten**
+Geschätzte Dauer: **10–15 Minuten**.
 
 > [!TIP]
 > Sehen Sie sich [in diesem Video](https://youtu.be/kJXZPILfbwU) eine Demonstration zur Verwendung der Beispiel-App „Expense Report“ an. 
@@ -304,7 +304,7 @@ In dieser Liste werden die Positionen (Line Items) gespeichert, die jedem Ausgab
 
 ### <a name="lineitems-list"></a>Liste „Positionen“
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
 1. Wählen Sie im Bereich **Daten** die Option **SharePoint** aus.
 1. Wählen Sie in der Liste **Zuletzt geöffnete Websites** die SharePoint-Website aus, auf der Sie die Liste „LineItems“ erstellt haben.
 

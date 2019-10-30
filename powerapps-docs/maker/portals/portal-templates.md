@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 8914bdf9415299651285b452cb1587dad03ce55d
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: e9f4c65d5b2929a1f2cc51d0d3a9d29152307752
+ms.sourcegitcommit: 133c51f10fc4fe6cd105c2a6af83fc15634143d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977655"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068749"
 ---
 # <a name="portal-templates"></a>Portalvorlagen
 
@@ -39,7 +39,7 @@ Wenn Sie eine Umgebung auswählen, die Modell gesteuerte apps in Dynamics 365 (D
 - **Partnerportal**: ein Partnerportal ermöglicht allen Organisationen mit Wiederverkäufern, Verteilern, Lieferanten oder Partnern den Echtzeitzugriff auf jede Phase von gemeinsamen Aktivitäten.
 
     > [!NOTE]
-    > Die Anbieter "Field Service" und "Project Service" müssen in ihrer Dynamics 365-Organisation installiert werden, um die entsprechenden Optionen zu aktivieren Weitere Informationen finden Sie unter [integrieren von Project Service Automation](https://docs.microsoft.com/en-us/dynamics365/portals/integrate-project-service-automation) und [Integration Field Service](https://docs.microsoft.com/en-us/dynamics365/portals/integrate-field-service).
+    > Die Anbieter "Field Service" und "Project Service" müssen in ihrer Dynamics 365-Organisation installiert werden, um die entsprechenden Optionen zu aktivieren Weitere Informationen finden Sie unter [integrieren von Project Service Automation](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) und [Integration Field Service](https://docs.microsoft.com/dynamics365/portals/integrate-field-service).
 
 - **Personal Self-Service-Portal**: ein Mitarbeiter-Self-Service-Portal erstellt effiziente und gut informierte Mitarbeiter durch die Optimierung allgemeiner Aufgaben und die Unterstellung der einzelnen Mitarbeiter mit einer definierbaren Wissensquelle.
 - **Communityportal**: ein Community-Portal nutzt Peer-to-Peer-Interaktionen zwischen Kunden und Experten, um den Katalog mit verfügbaren Kenntnissen aus Knowledge Base-Artikeln, Foren und Blogs zu erweitern und Feedback zu senden. Kommentare und Bewertungen
