@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 2a1696437f434063b4297df220f1cb406bc993f8
+ms.sourcegitcommit: 98f6ce1531e69e2aae1000eda7548434d77cafe0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025101"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142614"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -27,8 +27,8 @@ In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser so
 
 | **Mindestens erforderlich** | **Empfohlen** |
 | --- | --- |
-| iOS 9.3 oder höher |iOS 10 oder höher mit mindestens 2 GB RAM |
-| Android 5 oder höher |Android 7 oder höher mit mindestens 4 GB RAM |
+| IOS 12 oder höher |IOS 12 oder höher|
+| Android 7 oder höher |Android 7 oder höher |
 | Windows 8.1 oder höher (nur PC) |Windows 10 Fall Creators Update mit mindestens 8 GB RAM|
 
 > [!NOTE]

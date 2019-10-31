@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/09/18
+ms.date: 01/09/2018
 ms.author: stepsic
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d41807bedf85c151c8e115456b9fb3e23756629d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9dc1fa02737b49261dc76a06e208cea578e80dea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537988"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182609"
 ---
 # <a name="create-a-flow-to-manage-project-approvals"></a>Erstellen eines Flows zum Verwalten von Projektgenehmigungen
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "61537988"
 
 In dieser Aufgabe erstellen wir einen Flow für das Genehmigen von Projekten. Microsoft Flow ist in SharePoint integriert, daher ist es einfach, einen Flow direkt aus einer Liste zu erstellen. Der Flow, den wir erstellen, wird ausgelöst, wenn der Liste **Project Requests** (Projektanforderungen) ein Element hinzugefügt wird. Der Flow sendet eine E-Mail an den Projektgenehmiger, der die Anforderung direkt in der E-Mail genehmigt oder ablehnt. Anschließend sendet der Flow eine Genehmigungs- oder Ablehnungs-E-Mail an den Projektanforderer und aktualisiert die SharePoint-Listen entsprechend.
 
-## <a name="step-1-configure-the-flow-template"></a>Schritt 1: Konfigurieren der flowvorlage
+## <a name="step-1-configure-the-flow-template"></a>Schritt 1: Konfigurieren der Flowvorlage
 1. Klicken oder tippen Sie in der Liste **Project Requests** (Projektanforderungen) auf **Flow** und dann auf **Flow erstellen**.
    
     ![Erstellen eines Flows](./media/sharepoint-scenario-approval-flow/03-01-01-create-flow.png)
@@ -44,11 +44,11 @@ In dieser Aufgabe erstellen wir einen Flow für das Genehmigen von Projekten. Mi
    
     ![Genehmigungs-E-Mail-Kontakt](./media/sharepoint-scenario-approval-flow/03-01-05-approval-email.png)
    
-    Das nächste Feld im Flow reagiert auf die Entscheidung für des projektgenehmigers und leitet den Flow an eine von zwei *Branches*: **Wenn dies der Fall** oder **ohne**.
+    Das nächste Feld im Flow beantwortet die Entscheidung des Projektgenehmigers und leitet den Flow an eine von zwei *Verzweigungen* weiter: **Wenn ja** oder **Wenn nein**.
    
     ![Genehmigungsbedingung](./media/sharepoint-scenario-approval-flow/03-01-06-condition.png)
 
-## <a name="step-2-create-actions-for-approve--yes"></a>Schritt 2: Erstellen von Aktionen für genehmigen = Ja
+## <a name="step-2-create-actions-for-approve--yes"></a>Schritt 2: Erstellen von Aktionen für Genehmigen = ja
 Standardmäßig wird mit dieser Verzweigung eine Genehmigungs-E-Mail an den Anforderer gesendet. Wir aktualisieren zudem die Liste **Project Requests** (Projektanforderungen) und fügen der Liste **Project Details** (Projektdetails) ein Element hinzu, da das Projekt genehmigt wurde.
 
 1. Klicken oder tippen Sie in der Verzweigung **Wenn ja** auf **Inform item creator of approval** (Elementersteller über Genehmigung informieren) und dann auf **Bearbeiten**, um die Standardoptionen für die an den Anforderer gesendete E-Mail anzuzeigen.
@@ -96,7 +96,7 @@ Standardmäßig wird mit dieser Verzweigung eine Genehmigungs-E-Mail an den Anfo
     
     ![Erstellen von Element abgeschlossen](./media/sharepoint-scenario-approval-flow/03-01-11-yes-create-complete.png)
 
-## <a name="step-3-review-action-for-approve--no"></a>Schritt 3: Überprüfen Sie die Aktion für genehmigen = Nein
+## <a name="step-3-review-action-for-approve--no"></a>Schritt 3: Überprüfen der Aktion für Genehmigen = nein
 Standardmäßig wird mit dieser Verzweigung eine Ablehnungs-E-Mail an den Anforderer gesendet. Wir aktualisieren zudem die Liste **Project Requests** (Projektanforderungen). Da das Projekt nicht fortgesetzt wird, fügen wir der Liste **Project Details** (Projektdetails) kein Element hinzu.
 
 1. Klicken oder tippen Sie in der Verzweigung **Wenn nein** auf **Inform item creator of rejection** (Elementersteller über Ablehnung informieren) und dann auf **Bearbeiten**, um die Standardoptionen für die an den Anforderer gesendete E-Mail anzuzeigen.
@@ -133,7 +133,7 @@ Standardmäßig wird mit dieser Verzweigung eine Ablehnungs-E-Mail an den Anford
    
     ![Schaltfläche „Fertig“](./media/sharepoint-scenario-approval-flow/03-01-15a-done-button.png)
 
-## <a name="step-4-run-the-approval-flow"></a>Schritt 4: Ausführen des genehmigungsflows
+## <a name="step-4-run-the-approval-flow"></a>Schritt 4: Ausführen des Genehmigungsflows
 1. Klicken Sie in der Liste **Project Requests** (Projektanforderungen) auf **QuickEdit**, und fügen Sie das folgende Element hinzu:
    
    * **Title** = "New monitor for Megan" (Neuer Monitor für Megan)
