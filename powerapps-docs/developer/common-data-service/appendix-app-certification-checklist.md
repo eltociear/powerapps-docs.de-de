@@ -1,5 +1,5 @@
 ---
-title: 'Anhang: App-Zertifizierungscheckliste (PowerApps) | Microsoft Docs'
+title: 'Anhang: App-Zertifizierungscheckliste (PowerApps) | Microsoft-Dokumentation'
 description: 'Die App-Zertifizierungscheckliste bietet Ihnen Informationen zu den Prüfungen, die Ihre modellgestützten Apps, Canvas-Apps und Flows vor der Veröffentlichung auf AppSource durchlaufen müssen.'
 ms.custom: ''
 ms.date: 03/20/2019
@@ -27,7 +27,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <th>Zertifizierungscheckliste</th>
 </tr>
 <tr>
-<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Modellgesteuerte Apps</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Canvas-Apps</a> und <a href="https://docs.microsoft.com/flow/getting-started">Flows</a>, die eine Verbindung mit Common Data Service herstellen<br/><br/><strong>HINWEIS</strong>: Dynamics 365 for Customer Engagement Apps sind modellgestützte Apps.</td>
+<td rowspan=5><a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">Modellgesteuerte Apps</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">Canvas-Apps</a> und <a href="https://docs.microsoft.com/flow/getting-started">Flows</a>, die eine Verbindung mit Common Data Service herstellen<br/></td>
 <td>Plausibilitätsprüfung</td>
 <td><ul>
 <li>Überprüfen des App-Registrierungstyps: Kostenlos, Testversion oder Kontakt. Bei einer Registrierung als Kontakt muss der Herausgeber den Testlauf aktivieren.</li>
@@ -40,7 +40,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <td>Codeüberprüfung</td>
 <td>
 <ul>
-<li>Codeüberprüfung für Canvas-Apps wird über das <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">Barrierefreiheitprüfungstool</a> in PowerApps ausgeführt, um Folgendes zu überprüfen:
+<li>Die Codeüberprüfung für Canvas-Apps wird über das <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">Barrierefreiheitprüfungstool</a> in PowerApps ausgeführt, um Folgendes zu überprüfen:
 <ul>
 <li>Statische Formelfehler und Warnungen: Wenn Probleme gefunden werden, wird das Zertifizierungsteam die Rückmeldung zur Behebung freigeben und die App wieder bei AppSource einreichen.</li>
 <li>Laufzeitfehler: Können auftreten, wenn die App im Ausführmodus zur Ansicht geöffnet wird. Alle gefundenen Probleme werden per E-Mail gemeldet.</li>
@@ -56,7 +56,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <td>Bereitstellungsüberprüfung</td>
 <td>
 <ul>
-<li>Die Lösung wird mithilfe vom <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a> in einem PowerApps Studio installiert. Installierte Canvas-Apps werden nach der Installation manuell in der Lösung und im App-Abschnitt gesucht. Es wird sichergestellt, dass die App im Bearbeitungs- und Ausführungsmodus geöffnet wird. Die Canvas-App wird manuell von PowerApps Studio gelöscht, um die erfolgreiche Deinstallation zu überprüfen</li>
+<li>Die Lösung wird mithilfe vom <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a> in einem PowerApps Studio installiert. Installierte Canvas-Apps werden nach der Installation manuell in der Lösung und im App-Abschnitt gesucht. Es wird sichergestellt, dass die App im Bearbeitungs- und Ausführungsmodus geöffnet wird. Die Canvas-App wird manuell von PowerApps Studio gelöscht, um die erfolgreiche Deinstallation zu überprüfen.</li>
 <li>Überprüfen Sie, ob die Canvas-App erfolgreich eine Verbindung über die vom Hersteller bereitgestellten Konnektoren herstellt. Beispielsweise Common Data Service oder andere Verbindungen.</li>
 <li>Überprüfen Sie, ob alle Common Data Service-Komponenten (Entitäten, Webressourcen, Plug-Ins und andere Komponenten) der Lösung zur Verfügung stehen.</li>
 <li>Deinstallieren Sie die Lösung manuell und überprüfen Sie, ob alle Komponenten, die der verwalteten Lösung zugeordnet wurden, entfernt werden.</li>
@@ -103,7 +103,7 @@ Die folgende Checkliste bietet eine Liste der Überprüfungen, die von Microsoft
 <td>Bereitstellungsüberprüfung</td>
 <td>
 <ul>
-<li>Canvas-App werden manuell auf einen PowerApps Studio mit der Import App-Funktion installiert. Installierte Canvas-Apps werden nach der Installation manuell im App-Abschnitt gesucht. Es wird sichergestellt, dass die App im Bearbeitungs- und Ausführungsmodus geöffnet wird. Die Canvas-App wird manuell von PowerApps Studio gelöscht, um die erfolgreiche Deinstallation zu überprüfen.</li>
+<li>Canvas-Apps werden manuell auf einem PowerApps Studio mit der Import App-Funktion installiert. Installierte Canvas-Apps werden nach der Installation manuell im App-Abschnitt gesucht. Es wird sichergestellt, dass die App im Bearbeitungs- und Ausführungsmodus geöffnet wird. Die Canvas-App wird manuell von PowerApps Studio gelöscht, um die erfolgreiche Deinstallation zu überprüfen.</li>
 <li>Überprüfen Sie, ob die Canvas-App erfolgreich eine Verbindung mit den vom Hersteller bereitgestellten Konnektoren herstellt.</li>
 </ul>
 </td>

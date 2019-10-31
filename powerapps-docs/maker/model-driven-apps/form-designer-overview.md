@@ -1,7 +1,7 @@
 ---
 title: Übersicht über den modellgestützten Formulardesigner | MicrosoftDocs
 ms.custom: ''
-ms.date: 01/07/2019
+ms.date: 08/26/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,32 +23,34 @@ search.app:
   - D365CE
 ---
 # <a name="overview-of-the-model-driven-form-designer"></a>Übersicht über den modellgestützten Formulardesigner
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 Der neue modellgestützte Formular-Designer bietet eine moderne WYSIWYG-Authoring-Umgebung, wenn Sie mit modellgestützten Formularen arbeiten. Sie enthält einige Verbesserungen, die im klassischen modellgestützten Formular-Designer nicht verfügbar sind. 
 
-> [!NOTE]
-> Diese Funktion befindet sich derzeit in der Vorschau. <br />
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)] <br /><br />
-
-Der Designer zeigt eine Echtzeit-WYSIWYG-Vorschau (nur Einheitliche Oberfläche), während Sie ein Formular erstellen. Änderungen am Formular werden sofort in der Vorschau angezeigt, so dass Sie genau sehen können, wie das Formular für die Benutzer bei der Veröffentlichung aussehen wird. 
-
-Das Erledigen gängiger Aufgaben, wie z.B. das Einstellen von Eigenschaften, ist mit einem immer verfügbaren Eigenschaftenbereich einfacher und schneller. Auch sind **Speichern** und **Veröffentlichen** eine einzige Aktion, die die Aufgaben rationalisiert.
+Der Designer zeigt eine Echtzeit-WYSIWYG-Vorschau (nur Einheitliche Oberfläche), während Sie ein Formular erstellen. Änderungen am Formular werden sofort in der Vorschau angezeigt, so dass Sie genau sehen können, wie das Formular für die Benutzer bei der Veröffentlichung aussehen wird. Ein immer verfügbarer Eigenschaftsbereich macht die gemeinsame Aufgabe, die Eigenschaften schnell und einfach zu aktualisieren. Aktualisierungen von Eigenschaften werden auch sofort in der Formularvorschau angezeigt. Der Feldbereich mit Such- und Filtermöglichkeiten hilft den Herstellern, Felder schnell zu finden und dem Formular hinzuzufügen. Der Komponentenbereich macht es einfach, Komponenten zu entdecken und zu verwenden und bietet dem Endbenutzer ein umfassendes Erlebnis. Die Baumansicht hilft, die Hierarchie der Felder und Komponenten des Formulars zu visualisieren und ein bestimmtes Feld oder eine bestimmte Komponente auf dem Formular schnell zu finden und auszuwählen.
 
 Die Formular-Designer-Schnittstelle hat die folgenden vier Bereiche: 
 - Befehlsleiste - Zeigt verfügbare Aktionen wie **Speichern**, **Veröffentlichen**, **Rückgängigmachen** und **Wiederherstellen** an. 
-- Bereiche - Zeigt Bereiche mit bestimmten Funktionen an, z. B. einen **Feld**-Bereich, mit dem Sie Felder zu einem Formular hinzufügen können. 
+- Fenster - Zeigt Fenster mit bestimmten Funktionen an.
+  - **Felder** Bereich, um Felder zu einem Formular hinzuzufügen.
+  - **Komponenten** Bereich, um Komponenten zu einem Formular hinzuzufügen.
+  - **Baumansicht**, um die Hierarchie der Komponenten auf dem Formular zu sehen und diese auszuwählen.
 - Formularvorschau - Zeigt eine Echtzeit-Vorschau des Formulars an, wie es dem Endbenutzer bei der Veröffentlichung angezeigt wird. 
 - Eigenschaftenbereich – Zeigt die Eigenschaften des ausgewählten Elements an und ermöglicht es Ihnen, Änderungen vorzunehmen.
+- Größenumschaltung - Ändert die Größe der Formularvorschau, so dass Sie sehen können, wie das Formular auf verschiedenen Bildschirmgrößen angezeigt wird.
+- Zoom-Schieberegler - Vergrößert oder verkleinert die Formularvorschau und hilft Ihnen, einen genaueren Blick darauf zu werfen.
+- An Breite anpassen - Schnelle Aktion, um die Formularvorschau an die verfügbare Breite anzupassen.
 
-   ![Formular-Designer Darstellung](media/form-designer.png)
+> [!div class="mx-imgBorder"] 
+> ![](media/FormDesignerOverview.png "Formular-Designer Darstellung")
 
 ## <a name="see-also"></a>Siehe auch
-[Erstellen oder Bearbeiten von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  
-[Ergänzen, Verschieben oder Löschen von Feldern in einem Formular mithilfe des Formulardesigners](add-move-or-delete-fields-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Abschnitten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-sections-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-tabs-on-form.md)  
-[Im Formulardesigner verfügbare Eigenschaften](form-designer-properties.md)  
-[Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)    
+[Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular](add-move-or-delete-fields-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Komponenten in einem Formular](add-move-configure-or-delete-components-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Abschnitten in einem Formular](add-move-or-delete-sections-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular](add-move-or-delete-tabs-on-form.md)  
+[Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)  
+[Hinzufügen und Konfigurieren einer Unterraster-Komponente in einem Formular](form-designer-add-configure-subgrid.md)  
+[Hinzufügen und Konfigurieren einer Schnellansichts-Komponente in einem Formular](form-designer-add-configure-quickview.md)  
+[Konfigurieren einer Suchkomponente in einem Formular](form-designer-add-configure-lookup.md)  
 [Verwenden der Strukturansicht im Formulardesigner](using-tree-view-on-form.md)  
-[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)
+[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)  

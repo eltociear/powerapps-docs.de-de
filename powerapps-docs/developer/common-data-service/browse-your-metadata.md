@@ -1,6 +1,6 @@
 ---
-title: Durchsuchen der Metadaten für Ihre Organisation (Common Data Service)| Microsoft Docs
-description: 'Sie können den Entitätsmetadaten-Browser verwenden, um Entitäten und ihre Eigenschaften in Dynamics 365 Customer Engagement anzuzeigen. Der Entitätsmetadaten-Browser ist eine verwaltete Lösung, die Sie in Ihrer Organisation herunterladen und installieren können.'
+title: Durchsuchen der Metadaten für Ihre Organisation (Common Data Service) | Microsoft-Dokumentation
+description: 'Sie können den Entitätsmetadaten-Browser verwenden, um Entitäten und ihre Eigenschaften in Common Data Service anzuzeigen. Der Entitätsmetadaten-Browser ist eine verwaltete Lösung, die Sie in Ihrer Organisation herunterladen und installieren können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -27,7 +27,7 @@ Sie können den Entitätsmetadaten-Browser verwenden, um Entitäten und ihre Eig
 Nach dem Download der Lösung müssen Sie sie installieren. Weitere Informationen dazu, wie eine verwaltete Lösungen installiert wird, finden Sie unter [Importieren, aktualisieren und exportieren von Lösungen](/dynamics365/customer-engagement/developer/customize/import-update-export-solutions)  
 
 ## <a name="open-as-an-app"></a>Öffnet eine App
-Common Data Service wird als eine App konfiguriert. Nachdem Sie die **Entitätsmetadaten-Browser**-Lösung installiert haben, suchen Sie die **Metadaten-Tools**-App und öffnen Sie sie. **Entitäten** ist die Standardansicht. Im Navigationsbereich **Tools** können Sie **Entitätsmetadaten** auswählen, um einzelne Entitäten zu überprüfen.
+Common Data Service wird als App konfiguriert. Nachdem Sie die **Entitätsmetadaten-Browser**-Lösung installiert haben, suchen Sie die **Metadaten-Tools**-App und öffnen Sie sie. **Entitäten** ist die Standardansicht. Im Navigationsbereich **Tools** können Sie **Entitätsmetadaten** auswählen, um einzelne Entitäten zu überprüfen.
 
 ## <a name="open-from-the-solution-configuration-page"></a>Öffnen aus der Lösungskonfigurationsseite
 Bei früheren Versionen müssen Sie die folgenden Schritte verwenden, diese funktionieren aber auch für die aktuelle Version.  
@@ -80,13 +80,13 @@ Die folgenden Aktionen können Sie für eine einzelne Entität ausführen:
 
 ## <a name="community-tools"></a>Community-Tools
 
-**Metdaten-Browser** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
+**Metadaten-Browser** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von Common Data Service und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).
+> Die Communitytools sind kein Produkt von Common Data Service. Es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>Siehe auch
 
- [Entwickler-Tools für Common Data Service](developer-tools.md)<br />
+ [Entwicklertools für Common Data Service](developer-tools.md)<br />
  [Anpassen von Entitätsmetadaten](customize-entity-metadata.md)<br />
  

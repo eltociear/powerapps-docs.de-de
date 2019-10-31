@@ -6,10 +6,6 @@ ms.date: 05/19/2019
 ms.service: powerapps
 ms.custom: null
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
-  - Dynamics 365 for Customer Engagement Version 9.x
-  - powerapps
 ms.assetid: null
 author: Mattp123
 ms.author: matp
@@ -39,7 +35,7 @@ Sie können Informationen zu Lösungsvorgängen im Bereich **Lösungen** einer m
      > ![](media/solution-history-sitemap.png "Lösungsverlaufs-Bereich")
 
      > [!NOTE]
-     > Um über eine modellgesteuerte App mit einheitlicher PowerApps-Benutzeroberfläche zum Bereich **Einstellungen** zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen** aus. 
+     > Um zum Bereich **Einstellungen** aus einer PowerApps vereinheitlichten, schnittstellenmodellgesteuerten Anwendung zu gelangen, wählen Sie **Einstellungen** ![Einstellungen](../model-driven-apps/media/powerapps-gear.png) in der App-Symbolleiste und dann **Erweiterte Einstellungen**. 
 
 2. Standardmäßig wird die Ansicht **Benutzerdefinierter Lösungsverlauf** angezeigt. Die folgenden Ansichten sind im Bereich **Lösungsverlauf** verfügbar. 
 - **Alle Lösungsverläufe**. Zeigt die Lösungshistorie für das interne System und benutzerdefinierte Lösungen. 

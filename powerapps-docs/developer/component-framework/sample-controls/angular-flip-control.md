@@ -1,6 +1,6 @@
 ---
-title: " Komponente kippen | Microsoft-Dokumentation"
-description: Implementieren einer Flip-Komponente mithilfe von Angular js
+title: ' Dateikomponente | Microsoft Docs'
+description: Implementieren einer Kippkomponente mit Angular JS
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340665"
 ---
-# <a name="implementing-flip-component"></a>Implementieren der Flip-Komponente
 
-In diesem Beispiel wird gezeigt, wie Bibliotheken von Drittanbietern zum Erstellen von Komponenten im powerapps-Komponenten Framework verwendet werden.  Die Flip Sample-Komponente wird auf der Grundlage von Angular. js, Angular-UI, Angular-animieren, Angular-Sanitisierung, Bootstrap implementiert. Der Code zeigt möglicherweise nicht die bewährten Methoden für die erwähnten Bibliotheken von Drittanbietern an.
+# <a name="implementing-flip-component"></a>Implementieren einer Kippkomponente
+
+In diesem Beispiel wird gezeigt, wie Sie Drittanbieterbibliotheken verwenden, um Komponenten im PowerApps component framework zu erstellen.  Die Kipp-Beispielkomponente wird auf Grundlage von angular.js, angular-ui, angular-animate, angular-sanitize, bootstrap implementiert. Dieser Code deckt möglicherweise nicht die bewährten Methoden für die erwähnten Drittanbieterbibliotheken ab.
 
 > [!div class="mx-imgBorder"]
-> ![Winkel kippen](../media/angular-flip.png "Winkel kippen kippen")
+> ![Angular-Kippen](../media/angular-flip.png "Angular-Kippen")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,14 +38,14 @@ Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau)
 
 ## <a name="overview"></a>Übersicht
 
-Dieses Beispiel enthält Beispiele zum Hinzufügen von Abhängigkeiten für Bibliotheken von Drittanbietern, die die Durchführung von Daten Bindungen zwischen dem powerapps-Komponenten Framework, dem Komponentenmodell und dem inneren Datenmodell eines Drittanbieters in bidirektionalen Informationen zeigen.
+Dieses Beispiel enthält Beispiele dafür, wie Sie Abhängigkeiten für Drittanbieterbibliotheken hinzufügen können, und demonstriert damit, wie Sie Datenbindung zwischen PowerApps component framework, Komponentenmodell und innerem Datenmodell von Drittanbietern in zwei Richtungen ausführen können.
 
-Das Flip Component-Beispiel besteht aus einer Bezeichnung und einer Schaltfläche. Wenn Sie auf die Schaltfläche klicken, wird der Text in der Bezeichnung gewechselt.
+Das Kippkomponentenbeispiel besteht aus einer Beschriftung und einer Schaltfläche. Wenn Sie auf die Schaltfläche klicken, wird der Text in der Beschriftung umgeschaltet.
 
-- Wenn die Komponente geladen wird, zeigt die Bezeichnung den Text basierend auf dem Bindungs Attribut Wert an. Die `context.parameters.[property_name].attributes` enthält die zugeordneten Metadaten.
-- Für twooptions-Felder enthält `context.parameters.[property_name].Options` die Option "true" und "false". 
-- Wenn Sie auf die Schaltfläche "Kippen" klicken, wird der Wert mit der " **notifyoutputevents** "-Methode aktualisiert, die [getoutputs](../reference/control/getoutputs.md) -Methode wird asynchron aufgerufen und fließt an das powerapps-Komponenten Framework. 
-- Clientapi aktualisiert den Wert des Bindungs Attributs, und der aktualisierte Wert fließt zur Komponenten Bezeichnung. Sie können auch `ClientAPI` verwenden, um einen Attribut Wert zu aktualisieren, um die [UpdateView](../reference/control/updateview.md) -Methode des Steuer Elements zu initiieren. Die Komponente aktualisiert dann das Drittanbieter Modell, und die Bezeichnung wird aktualisiert.
+- Wenn die Komponente geladen wird, zeigt die Bezeichnung den Text auf Grundlage des Bindungsattributwert an. `context.parameters.[property_name].attributes` enthält die zugeordneten Metadaten.
+- Für TwoOptions-Felder enthält `context.parameters.[property_name].Options` eine wahre und falsche Wertoption. 
+- Wenn Sie auf die Flip-Schaltfläche klicken, aktualisiert die Bezeichnung den Wert mit der **notifyOutputEvents**-Methode, die [getOutputs](../reference/control/getoutputs.md)-Methode wird asynchron aufgerufen und geht in das PowerApps component framework ein. 
+- ClientAPI aktualisiert den Bindungsattributwert und die aktualisierten Werte gehen in die Komponentenbeschriftung ein. Sie können auch `ClientAPI` verwenden, um einen zu Attributwert zu aktualisieren, um die [updateView](../reference/control/updateview.md)-Methode des Steuerelements auszulösen. Die Komponente aktualisiert dann das Drittanbietermodell und die Beschriftung wird aktualisiert.
 
 
 ## <a name="code"></a>Code
@@ -360,6 +355,6 @@ fieldset[disabled].btn-primary:hover {
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)<br />
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br />
-[Übersicht über das powerapps-Komponenten Framework](../overview.md)
+[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)<br />
+[PowerApps component framework-API-Referenz](../reference/index.md)<br />
+[Übersicht über das PowerApps component framework](../overview.md)

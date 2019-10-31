@@ -1,6 +1,6 @@
 ---
-title: Azure-fähige benutzerdefinierte Workflowaktivität (Common Data Service) | Microsoft Docs
-description: Dieses Beispiel erhält den Datenkontext aus dem aktuellen Dynamics 365 Customer Engagement -Prozess und veröffentlicht ihn im Azure Service Bus.
+title: Azure-fähige benutzerdefinierte Workflowaktivität (Common Data Service) | Microsoft-Dokumentation
+description: Dieses Beispiel erhält den Datenkontext aus dem aktuellen Common Data Service-Vorgang und veröffentlicht diesen im Azure Service Bus.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -23,11 +23,11 @@ Dieses Beispiel erhält den Datenkontext aus dem aktuellen Prozess und veröffen
 
 ## <a name="requirements"></a>Anforderungen
 
-Sie müssen Common Data Service für die Verbindung mit Azure konfigurieren, bevor Sie sich anmelden und diese benutzerdefinierte Workflowaktivität ausführen. Weitere Informationen: [Microsoft Azure Integration mit Common Data Service konfigurieren](../../configure-azure-integration.md).
+Sie müssen Common Data Service für die Verbindung mit Azure konfigurieren, bevor Sie sich anmelden und diese benutzerdefinierte Beispiel-Workflowaktivität ausführen. Weitere Informationen: [Konfigurieren der Microsoft Azure-Integration mit Common Data Service](../../configure-azure-integration.md).
 
 Beachten Sie das erforderliche `Input id`-Argument im Code. Wenn Sie diese Aktivität zu einem Workflow hinzufügen, müssen Sie die GUID eines Azure-Dienstendpunkts angeben.
 
-Wenn Sie diese benutzerdefinierte Workflowaktivität bei Common Data Service registrieren, müssen Sie es in der Sandbox (mit teilweiser Vertrauenswürdigkeit) registrieren.
+Wenn Sie diese benutzerdefinierte Workflowaktivität bei Common Data Service registrieren, müssen Sie es im Sandkasten (mit teilweiser Vertrauenswürdigkeit) registrieren.
 
 ## <a name="how-to-run-samples"></a>Ausführen von Beispielen
 

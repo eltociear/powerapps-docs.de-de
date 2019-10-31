@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Virtual Entity Walkthrough mit dem OData Data Provider in Common Data Service | MicrosoftDocs
+title: Walkthrough zu virtuellen Entitäten mit dem OData Data Provider in Common Data Service | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie den Datenanbieter ODatas v4-Clients mit der virtuellen Entität verwenden'
 ms.custom: ''
 ms.date: 06/04/2018
@@ -26,7 +26,7 @@ search.app:
 
 # <a name="virtual-entity-walkthrough-using-the-odata-v4-data-provider"></a>Virtuelle exemplarische Vorgehensweise mit dem OData-Datenanbieter
 
-Stellen Sie sich vor, Sie möchten auf Ticketinformationen aus einer externen Datenquelle innerhalb Ihrer modellgetriebenen Anwendung oder dem Servicebereich von Dynamics 365 for Customer Engagement zugreifen. In dieser einfachen exemplarischen Vorgehensweise modelliere Sie eine virtuelle Entität mit den Feldern, die zu externem Schema zugeordnet sind, das Ticketdaten zur Laufzeit von einem OData-Webdienst wird.
+Stellen Sie sich vor, Sie möchten innerhalb Ihrer modellgetriebenen App auf Ticketinformationen aus einer externen Datenquelle zugreifen. In dieser einfachen exemplarischen Vorgehensweise modelliere Sie eine virtuelle Entität mit den Feldern, die zu externem Schema zugeordnet sind, das Ticketdaten zur Laufzeit von einem OData-Webdienst wird.
 
 ## <a name="data-source-details"></a>Datenquellendetails
 
@@ -152,7 +152,7 @@ Klicken Sie im linken Navigationsbereich der Seite **Entität: Ticket** auf **Fe
     ![Alle Anpassungen veröffentlichen](media/publishall.png)
 1. Schließen Sie das Projektmappen-Explorer-Fenster, nachdem alle Anpassungen veröffentlicht wurden.
 
-## <a name="view-the-virtual-entity-in-action-with-dynamics-365-customer-engagement"></a>Anzeigen der virtuelle Entität in Aktion mit Dynamics 365 Customer Engagement
+## <a name="view-the-virtual-entity-in-action-with-dynamics-365"></a>Sehen Sie die virtuelle Entität in Aktion mit Dynamics 365.
 
 1. Gehen Sie zu **Service** > **Erweiterungen** > **Tickets**.
     

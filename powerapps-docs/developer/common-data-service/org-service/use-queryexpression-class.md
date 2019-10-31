@@ -1,6 +1,6 @@
 ---
-title: Verwenden der QueryExpression-Klasse (Common Data Service) | Microsoft Docs
-description: 'In Dynamics 365 (online) Customer Engagement können Sie die QueryExpression-Klasse verwenden, um komplexe Abfragen für die Verwendung mit der IOrganizationService.QueryBase)-Methode oder der RetrieveMultipleRequest-Nachricht zu erstellen'
+title: Verwenden der Klasse QueryExpression (Common Data Service) | Microsoft Docs
+description: 'Verwenden Sie die Klasse QueryExpression, um komplexe Abfragen für die Verwendung mit der Methode IOrganizationService.QueryBase oder der Nachricht RetrieveMultipleRequest zu erstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="use-the-queryexpression-class"></a>Verwenden der QueryExpression-Klasse
 
-In Common Data Service können Sie die <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Klasse verwenden, um komplexe Abfragen zu erstellen, die Sie hierfür verwenden können: <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> Methode die <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> Meldung verwenden. Sie können Abfrageparameter für <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>, einrichten, indem Sie die Klassen <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>,i <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> und <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> verwenden.  
+In Common Data Service können Sie mit der Klasse <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> komplexe Abfragen für die Verwendung mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>. <xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> erstellen. Methode die <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> Meldung verwenden. Sie können Abfrageparameter für <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>, einrichten, indem Sie die Klassen <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>,i <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> und <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> verwenden.  
   
  Die <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>-Klasse ermöglicht Ihnen, komplexe Abfragen zu erstellen. Die Klasse <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> ist eine einfache Möglichkeit, um nach Entitäten zu suchen, bei denen Attribute mit angegebenen Werten übereinstimmen.  
   

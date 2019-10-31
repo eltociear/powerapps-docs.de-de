@@ -1,9 +1,9 @@
 ---
-title: Öffnen Sie den modellgesteuerten App-Formular-Editor in PowerApps | MicrosoftDocs
+title: Öffnen des modellgetriebenen App-Formulareditors unter PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -28,7 +28,7 @@ Im Formular-Editor können Sie Formulare entwerfen, indem Sie Komponenten wie Ab
  
 Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, etwa Webressourcen, verwenden die Namen der Komponenten das Anpassungspräfix des Lösungsherausgebers für die Standardlösung, und diese Komponenten werden nur in der Standardlösung eingeschlossen. Wenn neue Lösungskomponenten in einer bestimmten nicht verwalteten Lösung eingeschlossen werden sollen, sollten Sie den Formulareditor über diese nicht verwaltete Lösung öffnen.  
 
-## <a name="access-the-form-editor-from-the-powerapps-site"></a>Zugriff auf den Formular-Editor über die PowerApps-Seite
+## <a name="access-the-form-editor-from-the-powerapps-site"></a>Rufen Sie den Formular-Editor von der Seite PowerApps aus auf.
 
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. 
 
@@ -55,9 +55,9 @@ Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, e
   
 4.  Wählen Sie den **Formular-Editor** aus.  
 
-## <a name="access-the-form-editor-from-within-dynamics-365-customer-engagement"></a>Greifen Sie über Dynamics 365 Customer Engagement auf den Formular-Editor zu.
+## <a name="access-the-form-editor-from-within-app"></a>Zugriff auf den Formular-Editor aus der App heraus
   
- Sie können auf den Formulareditor in Dynamics 365 Customer Engagement über die Befehlsleiste oder das Menüband zugreifen, abhängig von der Entität. Bei beiden Möglichkeiten öffnen Sie das Formular im Kontext der Standardlösung. 
+ Sie können auf den Fomulareditor über die Befehlsleiste oder das Menüband zugreifen, abhängig von der Entität. Bei beiden Möglichkeiten öffnen Sie das Formular im Kontext der Standardlösung. 
 
 ## <a name="access-the-form-editor-for-an-unmanaged-solution"></a>Zugriff auf den Formulareditor für eine nicht verwaltete Lösung  
   

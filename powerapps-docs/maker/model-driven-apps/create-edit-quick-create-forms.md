@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder bearbeiten von modellgesteuerten Schnellerstellungsformularen in PowerApps | MicrosoftDocs
+title: Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten'
 ms.custom: ''
 ms.date: 05/14/2019
@@ -29,7 +29,7 @@ In diesem Thema erstellen und bearbeiten Sie ein Schnellerfassungsformular.
 
  Mit Schnellerfassungsformularen kann Ihre App einen optimierten Dateneingabekomfort mit vollständiger Unterstützung für durch Formularskripts und Geschäftsregeln definierte Logik. In einer modellgesteuerten PowerApps-App werden Schnellerstellungsformulare angezeigt, wenn Sie die Schaltfläche **Erstellen** in der Navigationsleiste auswählen oder wenn Sie **+ Neu** auswählen, wenn Sie einen neuen Datensatz aus einer Suche oder einem Unterraster erstellen.
   
- Die mobilen Dynamics 365 Customer Engagement-Apps verwenden Schnellerfassungsformulare zum Erstellen neuer Datensätze. Wenn für eine Entität bereits ein Schnellerstellungsformular konfiguriert ist, verwenden die mobilen Apps dieses Formular. Wenn eine Entität kein konfiguriertes Schnellerstellungsformular hat, generiert PowerApps ein Schnellerfassungsformular für das Erstellen von Datensätzen in mobilen Apps anhand der Hauptformulardefinition.  
+ Die mobilen Apps in Dynamics 365 verwenden Schnellerstellungsformulare zum Erstellen neuer Datensätze. Wenn für eine Entität bereits ein Schnellerstellungsformular konfiguriert ist, verwenden die mobilen Apps dieses Formular. Wenn eine Entität kein konfiguriertes Schnellerstellungsformular hat, generiert PowerApps ein Schnellerfassungsformular für das Erstellen von Datensätzen in mobilen Apps anhand der Hauptformulardefinition.  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>Entitäten mit Schnellerfassungsformularen  

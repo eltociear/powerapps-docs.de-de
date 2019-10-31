@@ -1,24 +1,19 @@
 ---
-title: Rendering der der aktuellen Seite in einem Portal zugeordneten Entitäts Liste | MicrosoftDocs
-description: Beispielcode zum Rendering der Entitäts Liste, die der aktuellen Seite in einem Portal zugeordnet ist.
+title: 'Rendern der Entitätsliste, die der aktuellen Seite in einem Portal zugeordnet ist | MicrosoftDocs'
+description: 'Beispielcode zum Rendern der Entitätsliste, die der aktuellen Seite in einem Portal zugeordnet ist.'
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974872"
+ms.reviewer: null
 ---
-# <a name="render-the-entity-list-associated-with-the-current-page"></a>Rendering der der aktuellen Seite zugeordneten Entitäts Liste
 
-Dient zum Rendering der der aktuellen Seite zugeordneten Entitäts Liste als paginierte sortierbare Tabelle. Verwendet [entityList](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [powerapps Common Data Service Entitäts Tags](portals-entity-tags.md), [Seite](liquid-objects.md#page)und [Anforderungs](liquid-objects.md#request) Parameter und umfasst Such-und mehrfach Ansichts Auswahl.  
+# <a name="render-the-entity-list-associated-with-the-current-page"></a>Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist
+
+Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist, als sortierbare Tabelle mit Seitennummerierung. Verwendet [entitylist](liquid-objects.md#entitylist), [entitylist](liquid-objects.md#entityview), [PowerApps Common Data Service Entity-Tags](portals-entity-tags.md), [Site](liquid-objects.md#page) und [Query](liquid-objects.md#request) Parameter, einschließlich Suche und Auswahl mehrerer Ansichten.  
 
 ```xml
 {% entitylist id:page.adx_entitylist.id %}
@@ -242,7 +237,7 @@ Dient zum Rendering der der aktuellen Seite zugeordneten Entitäts Liste als pag
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Vorlage für eine Webvorlagen Seite](create-custom-template.md)  
-[Erstellen einer benutzerdefinierten Seitenvorlage zum Rendering eines RSS-Feeds](render-rss-custom-page-template.md)  
-[Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md)  
-[Rendering von bis zu drei Ebenen der Seiten Hierarchie mithilfe der Hybriden Navigation](hybrid-navigation-render-page-hierachy.md)
+[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Webseiten-Seitenvorlage](create-custom-template.md)  
+[Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed](render-rss-custom-page-template.md)  
+[Rendern einer Websitekopfzeile und primären Navigationsleiste](render-site-header-primary-navigation.md)  
+[Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation](hybrid-navigation-render-page-hierachy.md)

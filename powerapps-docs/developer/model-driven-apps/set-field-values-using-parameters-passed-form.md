@@ -17,7 +17,7 @@ search.app:
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/set-field-values-using-parameters-passed-form -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/set-field-values-using-parameters-passed-form -->
 
 Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, indem Sie Attributwerte in der URL angeben, die verwendet wird, um das Formular zu öffnen. Standardmäßig werden diese Werte im Formular festgelegt, können jedoch von Benutzern geändert werden, bevor sie den Datensatz speichern.  
   
@@ -44,6 +44,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 - Für Datum-Zeit-Felder verwenden Sie den Textwert des Datums.  
   
 <a name="BKMK_ExampleSetValueStringFields"></a>   
+
 ## <a name="example-set-the-value-for-string-fields"></a>Beispiel: Festlegen des Werts für Zeichenfolgenfelder  
  Im folgenden Beispiel wird der Wert für das Feld **Name** eines neuen Firmendatensatzes als "Neue Firma" festgelegt.  
   
@@ -54,6 +55,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 ```  
   
 <a name="BKMK_SetLookupFieldValues"></a>   
+
 ## <a name="set-values-for-lookup-fields"></a>Werte für Suchfelder festlegen  
  Die folgende Tabelle beschreibt fünf Typen von Suchfeldern. Weitere Beispiele zum Verwenden von Suchfeldern finden Sie unter [Beispiel: Den Wert für Suchfelder festlegen](set-field-values-using-parameters-passed-form.md#BKMK_setValueLookupfields) und [Beispiel: Verwenden von Xrm.Navigation.openForm, um ein neues Fenster zu öffnen](set-field-values-using-parameters-passed-form.md#BKMK_ExampleXrmNavigationOpentForm).  
   
@@ -76,16 +78,17 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 -   Sie können die Werte für Partylist oder für Bezug-Suchen nicht festlegen.  
   
 <a name="BKMK_setValueLookupfields"></a>   
+
 ## <a name="example-set-the-value-for-lookup-fields"></a>Beispiel: Festlegen des Werts für Suchfelder  
  Um Werte für Suchfelder festzulegen, verwenden Sie den Datenwert, den Namenswert, und geben Sie nur bei Kunden- oder Besitzersuchen den Typwert für das jeweilige Feld an. Im folgenden Beispiel wird das Besitzerfeld auf einen Benutzer mit dem Namen "Mark Folkerts" festgelegt.  
   
- Der uncodierte Wert für den Parameter `extraqs` lautet "**ownerid**={B8C6E040-656E-DF11-B414-00155DB1891A}&**owneridname**=Mark Folkerts&**owneridtype**=systemuser".  
+ Der uncodierte Wert für den `extraqs` Parameter lautet "**ownerid**={B8C6E040-656E-DF11-B414-00155DB1891A}&**owneridname** = Mark Folkerts&**owneridtype**=systemuser”.  
   
 ```  
 /main.aspx?etn=lead&pagetype=entityrecord&extraqs=ownerid%3D%7bB8C6E040-656E-DF11-B414-00155DB1891A%7d%26owneridname%3DMark%20Folkerts%26owneridtype%3Dsystemuser  
 ```  
   
- Im folgenden Beispiel wird das Feld für den primären Kontakt auf “Yvonne McKay (Beispiel)” festgelegt. Der nicht-kodierte Wert für den `extraqs`-Parameter ist “**primarycontactid**={43b58571-eefa-e311-80c1-00155d2a68c4}&**primarycontactidname**=Yvonne McKay (sample)”.  
+ Im folgenden Beispiel wird das Feld für den primären Kontakt auf “Yvonne McKay (Beispiel)” festgelegt. Der nicht-kodierte Wert für den `extraqs` Parameter ist “**primarycontactid**={43b58571-eefa-e311-80c1-00155d2a68c4}&**primarycontactidname**=Yvonne McKay (sample)”.  
   
 ```  
 /main.aspx?etn=account&pagetype=entityrecord&extraqs=primarycontactid%3D%7B43b58571-eefa-e311-80c1-00155d2a68c4%7D%26primarycontactidname%3DYvonne%20McKay%20(sample)  
@@ -95,6 +98,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 >  Für eine einfache Suche wie diese müssen Sie keinen Typwert festlegen.  
   
 <a name="BKMK_SetValueDateFields"></a>   
+
 ## <a name="example-set-the-value-for-date-fields"></a>Beispiel: Festlegen des Werts für Datumsfelder  
  Im folgenden Beispiel wird für das Feld **Vorauss. Abschlussdatum** für eine neue Verkaufschance auf den 31. Januar 2011 festgelegt. Der unkodierte Wert für den `extraqs`-Parameter ist “estimatedclosedate=01/31/11”.  
   
@@ -103,6 +107,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 ```  
   
 <a name="BKMK_SampleSEtValueOptionSetFields"></a>   
+
 ## <a name="example-set-the-value-for-option-set-fields"></a>Beispiel: Festlegen des Werts für Optionssatzfelder  
  Um den Wert für ein Feld **Optionssatz** festzulegen, legen Sie den Ganzzahlwert für die Option fest. Im folgenden Beispiel wird der Feldwert **Rolle** in einem neuen Kontaktdatensatz auf "Entscheidungsträger" festgelegt.  
   
@@ -112,7 +117,8 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
 /main.aspx?etn=contact&extraqs=accountrolecode%3D1&pagetype=entityrecord  
 ``` 
 
-<a name="BKMK_SampleSEtValueMultiSelectOptionSetFields"></a>   
+<a name="BKMK_SampleSEtValueMultiSelectOptionSetFields"></a> 
+  
 ## <a name="example-set-the-value-for-multi-select-option-set-fields"></a>Beispiel: Legen Sie den Wert von MultiSelect-Optionssatzfeldern fest
 
 Um den Wert von **MultiSelect-Optionssatzfeldern** festzulegen, geben Sie für die Optionen in der URL zum Öffnen des Formulars ganzzahlige Werte an. Um beispielsweise die Optionen für das Feld **Hobbys** festzulegen, ist der unkodierte Wert für den Parameter "extraqs" “hobbies=[1,3,4]”.   
@@ -122,10 +128,11 @@ Um den Wert von **MultiSelect-Optionssatzfeldern** festzulegen, geben Sie für d
 ``` 
   
 <a name="BKMK_ExampleXrmNavigationOpentForm"></a>   
+
 ## <a name="example-use-xrmnavigationopenform-to-open-a-new-window"></a>Beispiel: Verwendung von Xrm.Navigation.openForm, um ein neues Fenster zu öffnen.  
  Das folgende Beispiel legt Standardwerte für verschiedene Felder fest und veranschaulicht, wie die `Xrm.Navigation`.[openForm](clientapi/reference/Xrm-Navigation/openForm.md)-Funktion verwendet wird. Es entspricht dem früheren Beispiel, das die Methode `window.open` verwendet hat.  
   
-```javascript  
+```Javascript  
 function OpenNewContact() {  
  var parameters = {};  
  //Set the Parent Customer field value to “Contoso”.  
@@ -155,10 +162,11 @@ function OpenNewContact() {
 ```  
   
 <a name="BKMK_ExampleWindowOpen"></a>   
+
 ## <a name="example-use-windowopen-to-open-a-new-window"></a>Beispiel: Verwenden von window.open zum Öffnen eines neuen Fensters  
  Das folgende Beispiel legt Standardwerte für verschiedene Felder fest und veranschaulicht, wie [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx) verwendet wird, um den Wert des Parameters `extraqs` zu codieren. Wenn Sie die Methode [window.open](https://msdn.microsoft.com/library/ms536651\(VS.85\).aspx) verwenden, können Sie die Funktionen des Fensters steuern, das geöffnet wird.  
   
-```jscript  
+```Javascript  
 function OpenNewContact() {  
     //Set the Parent Customer field value to “Contoso”.  
     var extraqs = "parentcustomerid={F01F3F6D-896E-DF11-B414-00155DB1891A}";  
@@ -179,6 +187,7 @@ function OpenNewContact() {
 ```  
   
 ### <a name="see-also"></a>Siehe auch  
+
  [Öffnen von Formularen und Ansichten mit einer URL](open-forms-views-dialogs-reports-url.md)   
  [openForm](clientapi/reference/Xrm-Navigation/openForm.md)  
  [Ein Formular konfigurieren, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren.](configure-form-accept-custom-querystring-parameters.md)

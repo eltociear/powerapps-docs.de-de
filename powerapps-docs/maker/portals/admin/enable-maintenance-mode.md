@@ -1,72 +1,69 @@
 ---
-title: Aktivieren des Wartungsmodus für ein Portal | MicrosoftDocs
-description: Erfahren Sie, wie Sie den Wartungsmodus mit Ihrem Portal aktivieren.
+title: Wartungsmodus für ein Portal aktivieren | MicrosoftDocs
+description: 'Erfahren Sie, wie Sie den Wartungsmodus bei Ihrem Portal aktivieren.'
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976068"
+ms.reviewer: null
 ---
+
 # <a name="maintenance-mode-for-a-portal"></a>Wartungsmodus für ein Portal
 
-Es kann vorkommen, dass Ihre Website eine geplante Wartung ist oder aufgrund eines temporären Ausfalls ausfällt. Wenn ein Kunde während der Wartung auf die Website zugreift, kann es zu unvorhersehbarem Verhalten und zeitweiliger Nichtverfügbarkeit kommen. 
+[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Als Administrator des Portals können Sie das Portal so konfigurieren, dass es bei jedem Eintreten einer Wartungs Aktivität eine korrekte Nachricht für Kunden anzeigt (z. b. "Projektmappenpakete werden aktualisiert"). Sie können diese Funktion nutzen, indem Sie den Wartungsmodus in Ihrem Portal aktivieren. Wenn der Wartungsmodus aktiviert ist, wird eine Meldung angezeigt, und die Kunden sind daran eingeschränkt, Webseiten außer der `<portal URL>/_services/about` Seite zu durchsuchen.
+Es gibt möglicherweise Zeiten, zu denen Ihre Website planmäßig gewartet wird oder aufgrund eines vorübergehenden Ausfalls nicht erreichbar ist. Wenn ein Kunde bei einer Wartung auf die Website zugreift kann es zu unvorhersehbarem Verhalten und periodischer Nichtverfügbarkeit kommen. 
+
+Als Portaladministrator können Sie das Portal konfigurieren, um Kunden eine korrekte Nachricht anzuzeigen, wenn eine Wartungsaktivität ausgeführt wird (z. B. wenn Lösungspakete aktualisiert werden). Sie können diese Fähigkeit nutzen, indem Sie den Wartungsmodus auf Ihrem Portal aktivieren. Wenn der Wartungsmodus aktiviert wird, wird eine Nachricht angezeigt und die Kunden werden vom Durchsuchen sämtlicher Webseiten außer der `<portal URL>/_services/about` Seite abgehalten.
 
 > [!div class=mx-imgBorder]
-> Standardmäßige wartungsmodusseite ![(Standard)](../media/default-maint-page.png "")
+> ![Standardseite des Wartungsmodus](../media/default-maint-page.png "Standardseite des Wartungsmodus")
 
-## <a name="enable-maintenance-mode"></a>Aktivieren des Wartungsmodus
+## <a name="enable-maintenance-mode"></a>Wartungsmodus aktivieren
 
-Sie können den Wartungsmodus in Ihrem Portal aktivieren, um eine konsistente Nachricht bereitzustellen, anstatt unvorhersehbares Verhalten zu behandeln, wenn Ihre Website eine geplante Wartung durchläuft. Dadurch erhalten Sie eine bessere Leistung für Ihre Portalbenutzer.
+Sie können den Wartungsmodus auf Ihrem Portal aktivieren, um eine einheitliche Nachricht bereitzustellen, anstatt sich mit unvorhersehbarem Verhalten auseinanderzusetzen, wenn die Website planmäßig gewartet wird. Dies bietet Ihren Portalbenutzern ein besseres Erlebnis.
 
-1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-3. Wechseln Sie zu den **Portal Aktionen** > aktivieren Sie den **Wartungsmodus**.
+3. Wechseln Sie zu **Portalaktionen** > **Wartungsmodus aktivieren**.
 
     > [!div class=mx-imgBorder]
-    > ![Aktivieren des Wartungsmodus]Aktivieren des(../media/enable-maint-mode-button.png "Wartungsmodus")
+    > ![Aktivieren des Wartungsmodus](../media/enable-maint-mode-button.png "Aktivieren des Wartungsmodus")
 
 4. Geben Sie im Fenster **Wartungsmodus aktivieren** die folgenden Werte ein:
-    - **Wählen Sie die zu verwendende Seite aus, wenn der Wartungsmodus aktiviert ist**: Wählen Sie einen der folgenden Werte aus:
+    - **Wählen Sie die bei aktiviertem Wartungsmodus zu verwendende Seite aus**: Wählen Sie einen der folgenden Werte aus:
 
         - **Standardseite**: Wählen Sie diesen Wert aus, wenn die Standardseite angezeigt werden soll, wenn der Wartungsmodus aktiviert ist. Diese Option ist standardmäßig ausgewählt.
 
-        - **Benutzerdefinierte Seite**: Wählen Sie diesen Wert aus, wenn eine benutzerdefinierte HTML-Seite angezeigt werden soll, wenn der Wartungsmodus aktiviert ist.
+        - **Angepasste Seite**: Wählen Sie diesen Wert aus, wenn eine HTML-Seite angezeigt werden soll, wenn der Wartungsmodus aktiviert ist.
 
-    - **URL der benutzerdefinierten Seite**: Dieses Feld ist nur aktiviert, wenn Sie die Option zum Anzeigen einer benutzerdefinierten HTML-Seite auswählen. Sie müssen sicherstellen, dass die von Ihnen bereitgestellte Seiten-URL öffentlich zugänglich ist. Wenn die angegebene HTML-Seite nicht erreicht werden kann, wird die Standardseite mit einer Anmerkung für die Administratoren angezeigt.
+    - **Benutzerdefinierte Seiten-URL**: Dieses Feld wird aktiviert, wenn Sie die Option auswählen, um eine benutzerdefinierte HTML-Seite anzuzeigen. Sie müssen sicherstellen, dass Seiten-URL, die Sie bereitstellen, öffentlich zugänglich ist. Wenn die angegebene HTML-Seite nicht erreicht werden kann, wird die Standardseite mit einem Hinweis an den Administrator angezeigt.
 
-5. Wählen Sie **aktivieren**aus. Während der Wartungsmodus aktiviert wird, wird das Portal neu gestartet und ist für einige Minuten nicht verfügbar. 
-
-    > [!div class=mx-imgBorder]
-    > ![Aktivieren von Wartungsmoduseinstellungen](../media/enable-maint-mode.png "Aktivieren von Wartungsmodus")
-
-## <a name="configure-or-disable-maintenance-mode"></a>Konfigurieren oder Deaktivieren des Wartungsmodus
-
-Nachdem Sie den Wartungsmodus für Ihr Portal aktiviert haben, können Sie die Wartungsmoduseinstellungen aktualisieren und eine andere Seite auswählen.
-
-Sie können auch den Wartungsmodus in Ihrem Portal deaktivieren, wenn die geplante Wartung Ihrer Website beendet ist. Ihre Portalbenutzer können jetzt wie gewohnt auf alle Webseiten zugreifen und darauf zugreifen.
-
-1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
-
-2. Wechseln Sie zu den **Portal Aktionen** > **konfigurieren oder deaktivieren Sie den Wartungsmodus**.
+5. Wählen Sie **Aktivieren** aus. Bei aktiviertem Wartungsmodus wird das Portal neu gestartet, und es ist für einige Minuten nicht verfügbar. 
 
     > [!div class=mx-imgBorder]
-    > ![Konfigurieren]des Wartungsmodus(../media/configure-maint-mode-button.png "Konfigurieren des Wartungsmodus")
+    > ![Aktivieren der Wartungsmodus-Einstellungen](../media/enable-maint-mode.png "Aktivieren der Wartungsmodus-Einstellungen")
 
-3. Ändern Sie die Einstellungen nach Bedarf, und wählen Sie **Aktualisieren**aus. Sie können z. b. die Standardseite anzeigen, wenn Sie ausgewählt haben, dass die benutzerdefinierte Seite zuvor angezeigt werden soll.
+## <a name="configure-or-disable-maintenance-mode"></a>Wartungsmodus konfigurieren oder deaktivieren
 
-4. Wählen Sie **Deaktivieren**aus, um den Wartungsmodus zu deaktivieren. Während der Wartungsmodus aktualisiert oder deaktiviert wird, wird das Portal neu gestartet und ist für einige Minuten nicht verfügbar.
+Nachdem Sie den Wartungsmodus für Ihr Portal aktiviert haben, können Sie die Wartungsmodus-Einstellungen aktualisieren und eine andere Seite auswählen.
+
+Sie können außerdem auswählen, dass der Wartungsmodus auf Ihrem Portal deaktiviert wird, wenn die geplante Wartung Ihrer Website abgeschlossen ist. Ihre Portalbenutzer können nun auf alle Webseiten wie gewohnt zugreifen und sie durchsuchen.
+
+1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+
+2. Wechseln Sie zu **Portalaktionen** > **Konfigurieren oder Deaktivieren des Wartungsmodus**.
 
     > [!div class=mx-imgBorder]
-    > ![Aktualisieren von Wartungsmoduseinstellungen](../media/configure-maint-mode.png "Aktualisieren von Wartungsmodus")
+    > ![Wartungsmodus konfigurieren](../media/configure-maint-mode-button.png "Wartungsmodus konfigurieren")
+
+3. Ändern Sie die Einstellungen nach Bedarf, und wählen Sie **Aktualisieren** aus. Beispielsweise wählen Sie ggf. aus, die Standardseite anzuzeigen, falls Sie zuvor ausgewählt haben, die benutzerdefinierte Seite anzuzeigen.
+
+4. Wählen Sie **Deaktivieren** aus, um den Wartungsmodus zu deaktivieren. Bei aktualisiertem oder deaktiviertem Wartungsmodus wird das Portal neu gestartet, und es ist für einige Minuten nicht verfügbar.
+
+    > [!div class=mx-imgBorder]
+    > ![Aktualisieren der Wartungsmodus-Einstellungen](../media/configure-maint-mode.png "Aktualisieren der Wartungsmodus-Einstellungen")
 

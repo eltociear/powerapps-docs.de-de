@@ -1,5 +1,5 @@
 ---
-title: SLAs für Entitäten übernehmen (Common Data Service) | Microsoft Docs
+title: SLAs für Entitäten übernehmen (Common Data Service) | Microsoft-Dokumentation
 description: 'Erfahren Sie über das Übernehmen von SLAs für die benutzerdefinierten Entitäten, wenn Sie die Entitäten zum Übernehmen von Vereinbarungen zum Servicelevel (SLAs) aktivieren. Also können Sie auch SLA-KPIs erstellen.'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -57,7 +57,7 @@ Vereinbarungen zum Service Level (SLAs) in Common Data Service helfen Ihnen fest
    
 ## <a name="apply-slas-to-entity-records"></a>Anwenden von SLAs auf Entitätsdatensätze  
 
- Unter Verwendung des Common Data Service-Webclients können Sie SLAs für eine SLA-fähige Entität erstellen und ein SLA als Standard für die Entität festlegen, sodass diese automatisch auf alle neuen Entitätsdatensätze angewendet wird.  
+ Unter Verwendung des Common Data Service-Webclients können Sie SLAs für eine SLA-aktivierte Entität erstellen und ein SLA als Standard für die Entität festlegen, sodass diese automatisch auf alle neuen Entitätsdatensätze angewendet wird.  
   
  Wenn Sie jedoch manuell SLAs auf Entitätsdatensätze basierend auf benutzerdefinierten Geschäftsanforderungen anwenden möchten, können Sie den Entitätsdatensatz programmgesteuert so aktualisieren, dass er den `SLAId`-Attributwert auf den gewünschten aktiven SLA-Datensatz setzt.  
   
@@ -65,12 +65,11 @@ Vereinbarungen zum Service Level (SLAs) in Common Data Service helfen Ihnen fest
 
 ## <a name="limitations-to-applying-slas-in-dynamics-365-online"></a>Beschränkungen beim Anwenden von SLAs in Dynamics 365 (online)  
 
- Im Common Data Service gelten pro Common Data Service-Instanz (Organisation) die folgenden Einschränkungen für die SLA:  
+ In Common Data Service gelten die folgenden Beschränkungen für SLAs per Common Data Service-Instanz (Organisation):  
   
 -   Sie können ein Maximum von 7 Entitäten haben, die aktive SLAs haben. Es kommt zu einem Fehler beim Aktivieren einer SLA, wenn die Begrenzung überschritten wird.  
   
 -   Sie können ein Maximum von 5 SLA KPIs pro Entität für aktive SLAs haben. Es kommt zu einem Fehler beim Aktivieren einer SLA, wenn die Begrenzung überschritten wird. Diese Beschränkung gilt nicht für die `Incident`-Entität.  
   
 ### <a name="see-also"></a>Siehe auch  
- [Serviceentitäten in Customer Engagement](/dynamics365/customer-engagement/developer/service-entities)   
  [Erweiterte Vereinbarungen zum Service Level (SLAs)](/dynamics365/customer-engagement/admin/enhanced-service-level-agreements)

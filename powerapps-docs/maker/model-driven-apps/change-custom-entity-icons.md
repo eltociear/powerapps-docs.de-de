@@ -1,5 +1,5 @@
 ---
-title: Ändern der Modell-angetriebenen App der benutzerdefinierten Entität-Symbole in PowerApps | MicrosoftDocs
+title: Ändern der benutzerdefinierten Entitätssymbole der modellgesteuerten App in PowerApps | Microsoft-Dokumentation
 definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
@@ -63,7 +63,7 @@ Sie müssen Lösungs-Explorer verwenden, um Entitätssymbole festzulegen.
   
 ## <a name="community-tools"></a>Community-Tools
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** ist ein Tool, das die XrmToolbox-Community für Dynamics 365 Customer Engagement entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools für Common Data Service](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools) für Community entwickelte Tools.
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** ist ein Werkzeug, das die XrmToolBox-Community für PowerApps entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools für Common Data Service](/powerapps/developer/common-data-service/developer-tools) für von der Community entwickelte Tools.
 
 > [!NOTE]
 > Die Communitytools sind kein Produkt von Microsoft und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).

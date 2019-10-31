@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: b7a1800453eeb3b183fec0bbe2155d990e4b21ad
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71059677"
----
 
-Bei Verwendung mit einer Datenquelle können diese Funktionen nicht delegiert werden. Nur der erste Teil der Datenquelle wird abgerufen, und anschließend wird die Funktion angewendet.  Das Ergebnis ist dann ggf. kein umfassendes Ergebnis.  Bei der Erstellung wird eine Warnung angezeigt, um Sie an diese Einschränkung zu erinnern und die Umstellung auf delegierbare Alternativen vorzuschlagen, soweit dies möglich ist. Weitere Informationen finden Sie unter [Grundlagen der Delegierung](../maker/canvas-apps/delegation-overview.md).
+Diese Funktionen können bei Verwendung einer Datenquelle nicht delegiert werden. Nur der erste Teil der Datenquelle wird abgerufen, bevor die Funktion angewendet wird.  Das Ergebnis stellt möglicherweise nicht alles dar.  Bei Erstellungszeit erinnert eine Warnung an diese Einschränkung und schlägt den Wechsel zu delegierbaren Alternativen vor, sofern diese bestehen. Weitere Informationen finden Sie unter [Überblick über Delegation](../maker/canvas-apps/delegation-overview.md).
 

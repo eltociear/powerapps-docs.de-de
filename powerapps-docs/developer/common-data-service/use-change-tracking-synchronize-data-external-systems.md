@@ -1,6 +1,6 @@
 ---
 title: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung (Common Data Service) | Microsoft Docs
-description: 'Mit der neuen Änderungsnachverfolgungsfunktion in Dynamics 365 Customer Engagement können die Daten effizient synchronisiert werden, indem festgestellt wird, welche Daten geändert wurden, nachdem die Daten ursprünglich extrahiert oder zuletzt synchronisiert wurden.'
+description: 'Die Änderungsverfolgungsfunktion bietet eine Möglichkeit, die Daten effizient zu synchronisieren, indem sie erkennt, welche Daten sich seit der ersten Extraktion der Daten oder der letzten Synchronisierung geändert haben.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''

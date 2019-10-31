@@ -1,6 +1,6 @@
 ---
 title: Behandlung von Ausnahmen in Ihrem Code (Common Data Service) | Microsoft Docs
-description: 'In diesem Artikel werden die Ausnahmen erläutert, die von einem Dynamics 365 Customer Engagement-Webdienst-Methodenaufruf zurückgegeben werden. Durch das Beispiel in diesem Artikel werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.'
+description: 'In diesem Artikel werden die Ausnahmen erläutert, die von einem Common Data Service-Webdienst-Methodenaufruf zurückgegeben werden. Durch das Beispiel in diesem Artikel werden die allgemeinen Fehler und Ausnahmen hervorgehoben, die Ihr Anwendungsentwurf behandeln sollte.'
 ms.custom: ''
 ms.date: 06/17/2019
 ms.reviewer: ''

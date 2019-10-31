@@ -12,7 +12,8 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -49,11 +50,11 @@ Da Verbindungsrollen *Lösungsbewusst* sind, d.h. sie können einer Lösung hinz
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 
-Die meisten Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen, werden in der *internen* **Standardlösung** definiert (nicht zu verwechseln mit **Common Data Services Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen.
+Die meisten Verbindungsrollen, die Sie im Bereich **Einstellungen** sehen, werden in der *internen* **Standardlösung** definiert (nicht zu verwechseln mit der **Common Data Services-Standardlösung**). Diese interne **Standardlösung** enthält alle Anpassungen im System. Um die **Standardlösung** anzuzeigen, wählen Sie **Alle Lösungen - intern** anzeigen.
 
 ## <a name="add-connection-roles-to-a-solution"></a>Verbindungsrollen einer Lösung hinzufügen
 
-Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Services  Standardlösung** oder einer anderen Lösung, in der Sie Arbeit erstellt haben, können Sie den Befehl **Bestehendes Hinzufügen** auswählen, um eine Standardverbindungsrolle in die Lösung zu integrieren.
+Im Allgemeinen wird jedoch nicht empfohlen, Komponenten in der internen **Standardlösung** zu bearbeiten. In der **Common Data Service-Standardlösung** oder einer anderen Lösung, in der Sie Arbeit erstellt haben, können Sie den Befehl **Bestehendes hinzufügen** auswählen, um eine Standardverbindungsrolle in die Lösung zu integrieren.
 
 ![Bestehende Verbindungsrolle hinzufügen](media/add-existing-connection-role.png)
 
@@ -125,7 +126,7 @@ Wird mehr als einer übereinstimmende Verbindungsrolle konfiguriert, stellen die
 ### <a name="see-also"></a>Siehe auch
 <!-- This is in the basics guide. It needs to be migrated -->
 [Erstellen von Verbindungen zum Festlegen von Beziehungen zwischen Datensätzen](/dynamics365/customer-engagement/basics/create-connections-view-relationships-between-records)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)<br />
+[Erstellen und Bearbeiten globaler Optionssätze für Common Data Service (Auswahllisten)](create-edit-global-option-sets.md)<br />
 [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
 
 

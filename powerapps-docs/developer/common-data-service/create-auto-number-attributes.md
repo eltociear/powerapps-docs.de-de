@@ -118,6 +118,8 @@ HTTP/1.1 204 No Content
 OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/EntityDefinitions(402fa40f-287c-e511-80d2-00155d2a68d2)/Attributes(f01bef16-287c-e511-80d2-00155d2a68d2)
 ```
+> [!NOTE]
+>Werte der automatischen Nummerierung werden von der Datenbank beim Starten des Datensatzes vorab ausgewählt. Wenn ein Datensatz gestartet, dann aber storniert wird, wird die zugewiesene Zahl nicht verwendet. Wenn während dieser Zeit ein weiterer Datensatz mit der folgenden sequenziellen Zahl fertiggestellt wird, können Lücken in der automatischen Nummerierung von Datensätzen auftreten.
 
 ## <a name="autonumberformat-options"></a>AutoNumberFormat-Optionen
 

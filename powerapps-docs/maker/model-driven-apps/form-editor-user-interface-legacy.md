@@ -1,7 +1,6 @@
 ---
-title: Übersicht der Benutzeroberfläche des Formulareditors in der modellgesteuerten App für PowerApps | MicrosoftDocs
-description: 'Lernen Sie die Benutzeroberfläche des Formular-Editors kennen, um Formulare in PowerApps zu bearbeiten'
-keywords: 'Formular: Hauptformular, Einheitliche Oberfläche Apps; Dynamics 365 for customer engagement'
+title: Übersicht über die modellgetriebene Benutzeroberfläche des App-Formular-Editors für PowerApps | MicrosoftDocs
+description: Kenntnis der Benutzeroberfläche des Formular-Editors zum Bearbeiten von Formularen in PowerApps.
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -137,8 +136,8 @@ Die Registerkarte Einfügen zeigt die Befehle in der folgenden Tabelle an:
 ||**IFRAME**|Sie können einen IFRAME einem Formular hinzufügen, um Inhalt von einer anderen Website in einem Formular zu integrieren.| 
 ||**Zeitplanung**|Hinzufügen eines Zeitplansteuerelement im Formular. Dieses Steuerelement zeigt den Zeitplan an Aktivitäten, die mit der Entität auf einem Formular zu tun haben.|  
 ||**Navigationslink**|Mithilfe dieser Option können Sie den Link in eine Formularnavigation einfügen.|  
-||**Zeitgeber**|Hinzufügen eines Zeitgebersteuerelements zum Formular "Anfrage" zum Nachverfolgen von Zeit anhand eines SLA. Weitere Informationen: [Hinzufügen eines Zeitgeber-Steuerelements](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customer-service/add-timer-control-case-form-track-time-against-sla)|
-||**Suche in der Wissensdatenbank**|Fügen Sie ein Suchsteuerelement ein, mit dem Benutzer nach Wissensartikeln suchen können. Weitere Informationen:  [Suchsteuerelement für die Wissensdatenbank](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customer-service/add-knowledge-base-search-control-forms).|  
+||**Zeitgeber**|Hinzufügen eines Zeitgebersteuerelements zum Formular "Anfrage" zum Nachverfolgen von Zeit anhand eines SLA. Weitere Informationen: [Hinzufügen eines Zeitgeber-Steuerelements](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/add-timer-control-case-form-track-time-against-sla)|
+||**Suche in der Wissensdatenbank**|Fügen Sie ein Suchsteuerelement ein, mit dem Benutzer nach Wissensartikeln suchen können. Weitere Informationen:  [Suchsteuerelement für die Wissensdatenbank](https://docs.microsoft.com/dynamics365/customer-engagement/customer-service/add-knowledge-base-search-control-forms).|  
 ||**Beziehungsassistent**|Mithilfe dieser Option können Sie ein Beziehungsassistent-Steuerelement in das Formular einfügen.|
 
 >[!Note] 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps Lösungs-Explorer | MicrosoftDocs
+title: Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -12,18 +12,19 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mit PowerApps Lösungs-Explorer
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers
 
-Lösungs-Explorer bietet eine Möglichkeit, um Felder für Common Data Service zu erstellen und zu bearbeiten.
+Der Projektmappen-Explorer bietet eine Möglichkeit, um Felder für Common Data Service zu erstellen und zu bearbeiten.
 
-[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können mithilfe des Lösungs-Explorers nur festgelegt werden. <br />Weitere Informationen: 
+Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
 - [Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal](create-edit-field-portal.md)
   

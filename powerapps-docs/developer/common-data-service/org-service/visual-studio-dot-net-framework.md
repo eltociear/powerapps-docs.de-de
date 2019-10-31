@@ -27,7 +27,7 @@ Plug-Ins und benutzerdefinierte Workflow-Assemblys sollten .NET Framework 4.6.2 
 > Sie sollten alle benutzerdefinierten Client-Anwendungen mit Microsoft .NET Framework 4.6.2 oder höher erstellen.
 > Nur Anwendungen, die die Sicherheit auf Transportebene (TLS) 1.2 oder höher verwenden, dürfen mit Common Data Service verbunden werden. TLS 1.2 ist nicht das Standardprotokoll, das von .NET Framework 4.5.2 verwendet wird, aber es ist in .NET Framework 4.6.2. 
 > 
-> Weitere Informationen: [Blogbeitrag: Kommende Updates zu Dynamics 365 Customer Engagement-Verbindungssicherheit](https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/)
+> Mehr Informationen: <https://<blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/>
 > 
 > [!TIP]
 > Wenn Sie .NET Framework 4.6.2 auf dem Entwicklungscomputer installieren, müssen Sie unbedingt das Entwicklerpaket installieren, und nicht nur die Laufzeit. Dadurch kann das 4.6.2-Framework im Dialogfeld **Neues Projekt** von Visual Studio und im Zielframework-Dropdownmenü der Projekteigenschaften ausgewählt werden.  

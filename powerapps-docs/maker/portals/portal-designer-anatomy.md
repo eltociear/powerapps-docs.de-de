@@ -1,32 +1,29 @@
 ---
-title: Portal, powerapps Portale Studio Anatomie | Microsoft-Dokumentation
-description: Erfahren Sie mehr über die Anatomie von powerapps Portale Studio.
+title: Anatomie des Portal-Designers | Microsoft Docs
+description: Erfahren Sie mehr über die Anatomie des Portal-Designers.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 110a7d0193f2982a91c68ec45aeef6be8edeae2f
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977678"
+ms.reviewer: null
 ---
-# <a name="powerapps-portals-studio-anatomy"></a>Powerapps-Portale Studio-Anatomie
 
-Sie können powerapps-Portale Studio zum Erstellen und Anpassen Ihrer Website verwenden. Sie enthält verschiedene Optionen zum Hinzufügen und Konfigurieren von Webseiten, Komponenten, Formularen und Listen. Die Anatomie von powerapps Portale Studio lautet wie folgt:
+# <a name="portal-designer-anatomy"></a>Anatomie des Portal-Designers
 
-![Powerapps-Portale Studio Anatomie](media/maker-anatomy.png "powerapps Portale Studio Anatomie")  
+[!include[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-| **Anmerkung** | **Name**        | **Description** (Beschreibung)                                                                              |
+Sie können den Portaldesigner verwenden, um Ihre Website zu erstellen und anzupassen. Es enthält verschiedene Optionen zum Hinzufügen und Konfigurieren von Webseiten, Komponenten, Formularen und Listen. Die Anatomie des Portal-Designers ist wie folgt:
+
+![Portaldesigner Anatomie](media/maker-anatomy.png "Portaldesigner Anatomie")  
+
+| **Annotation** | **Name**        | **Beschreibung**                                                                              |
 |----------------|-----------------|----------------------------------------------------------------------------------------------|
-| 1              | Befehlsleiste     | Ermöglicht es Ihnen, eine Webseite zu erstellen, eine Komponente zu löschen und die Website zu durchsuchen, die Sie erstellen.  |
-| 2              | Toolbelt        | Ermöglicht Folgendes:<ul><li>Anzeigen und Verwalten von Webseiten</li><li>Komponenten hinzufügen</li><li>Vorlagen bearbeiten</li></ul>  |
-| 3              | Zeichenbereich          | Enthält Komponenten, die eine Webseite erstellen.                                                    |
-| 4              | Fußzeile          | Zeigt den Status der automatischen Speicherung an und ermöglicht das Öffnen des Quell Code-Editors.                         |
-| 5              | Eigenschaften Bereich | Zeigt die Eigenschaften der Webseite und der ausgewählten Komponenten an und ermöglicht Ihnen, Sie nach Bedarf zu bearbeiten. |
+| 1              | Befehlsleiste     | Ermöglicht es Ihnen, eine Webseite zu erstellen, eine Komponente zu löschen und die von Ihnen erstellte Webseite zu durchsuchen.  |
+| 2              | Werkzeuge        | Ermöglicht es Ihnen:<ul><li>Anzeigen und Verwalten von Webseiten</li><li>Komponenten hinzufügen</li><li>Vorlagen bearbeiten</li></ul>  |
+| 3              | Canvas          | Enthält Komponenten, die eine Webseite erstellen.                                                    |
+| 4              | Fußzeile          | Zeigt den Status der automatischen Speicherung an und ermöglicht es Ihnen, den Quellcode-Editor zu öffnen.                         |
+| 5              | Eigenschaftenbereich | Zeigt die Eigenschaften der Webseite und ausgewählter Komponenten an und ermöglicht es Ihnen, diese bei Bedarf zu bearbeiten. |
 

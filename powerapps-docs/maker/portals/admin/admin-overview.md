@@ -1,38 +1,35 @@
 ---
-title: Übersicht über das powerapps-Portal Admin Center | MicrosoftDocs
-description: Informationen zum powerapps-Portal Admin Center.
+title: Übersicht über das Admin Center für PowerApps-Portale | Microsoft-Dokumentation
+description: Informationen zum Admin Center für PowerApps-Portale
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 2775c113af0e528ee7a5f0ad29c53858276c3f43
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977425"
+ms.reviewer: null
 ---
-# <a name="powerapps-portals-admin-center"></a>Powerapps-Portale Admin Center
 
-Das Admin Center für die powerapps-Portale ermöglicht das Ausführen erweiterter administrativer Aktionen in Portalen. Das Admin Center ist verfügbar, wenn ein Portal erfolgreich bereitgestellt wurde.
+# <a name="powerapps-portals-admin-center"></a>Admin Center für PowerApps-Portale
 
-So öffnen Sie Admin Center:
+[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Wechseln Sie auf der powerapps-Startseite zum Abschnitt **zuletzt verwendete apps** , und suchen Sie Ihr Portal.
+Das Admin Center für PowerApps-Portale ermöglicht die Durchführung erweiterter administrativer Vorgänge auf Portalen. Das Admin Center ist verfügbar, wenn ein Portal ordnungsgemäß bereitgestellt wird.
 
-    > [!div class=mx-imgBorder]
-    > ![](../media/recent-apps.png "Zuletzt verwendete") apps  
+So öffnen Sie das Admin Center:
 
-2. Wählen Sie **Weitere Befehle (...)**  > **Einstellungen**aus.
+1. Wechseln Sie zum Abschnitt **Kürzlich verwendete Apps** auf der PowerApps-Homepage, und suchen Sie Ihr Portal.
 
     > [!div class=mx-imgBorder]
-    > ![Portal Einstellungen], Option "(../media/portal-settings-option.png "Portal Einstellungen") "
+    > ![Kürzlich verwendete Apps](../media/recent-apps.png "Kürzlich verwendete Apps")  
 
-3. Wählen Sie im Bereich " **Portal Einstellungen** " die Option **Verwaltung**aus.
+2. Wählen Sie **Weitere Befehle (...)** > **Einstellungen** aus.
 
     > [!div class=mx-imgBorder]
-    > Bereich " ![Portal]Einstellungen" Portalbereich "(../media/portal-settings-admin.png "Einstellungen") "  
+    > ![Option für Portaleinstellungen](../media/portal-settings-option.png "Option für Portaleinstellungen")
+
+3. Wählen Sie unter **Portaleinstellungen** die Option **Administration** aus.
+
+    > [!div class=mx-imgBorder]
+    > ![Bereich für Portaleinstellungen](../media/portal-settings-admin.png "Bereich für Portaleinstellungen")  

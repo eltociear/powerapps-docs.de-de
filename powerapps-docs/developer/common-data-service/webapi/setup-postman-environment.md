@@ -1,6 +1,6 @@
 ---
-title: Einrichten einer Postman-Umgebung (Common Data Service for Apps)| MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Postman-Umgebung einrichten und konfigurieren, die mit Common Data Service-Umgebungen (online und lokal) verbunden ist.'
+title: Einrichten einer Postman-Umgebung (Common Data Service für Apps)| MicrosoftDocs
+description: 'Erfahren Sie, wie Sie eine Postman-Umgebung einrichten und konfigurieren, die mit Common Data Service Umgebungen verbunden ist.'
 ms.custom: null
 ms.date: 04/09/2019
 ms.reviewer: null
@@ -8,8 +8,6 @@ ms.service: powerapps
 ms.suite: null
 ms.tgt_pltfrm: null
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
 ms.assetid: 955BA444-A53D-4843-9429-833B1636E2B4
 caps.latest.revision: 7
 author: susikka
@@ -23,29 +21,26 @@ search.app:
 
 # <a name="set-up-a-postman-environment"></a>Einrichten einer Postman-Umgebung
 
-Mit Postman können Sie eine Verbindung mit Ihrer Common Data Service-Instanz herstellen, Web-API-Anfragen erstellen, versenden und Antworten anzeigen. Die Verwaltung der Authentifizierung ist ein Teil, den viele Nutzer schwierig finden. Verwenden Sie diese Informationen, um eine Postman-Umgebung sowohl für Ihre Common Data Service-Umgebungen zu konfigurieren.
+Sie können Postman verwenden, um sich mit Ihrer Common Data Service-Instanz zu verbinden und Web-API-Anfragen zu erstellen, zu senden und Antworten anzuzeigen. Die Verwaltung der Authentifizierung ist ein Teil, den viele Nutzer schwierig finden. Dieses Thema beschreibt, wie Sie eine Postman-Umgebung so konfigurieren, dass sie für Ihre Common Data Service-Umgebungen funktioniert.
 
 Sie können eine Postman-Umgebung verwenden, um einen Satz von Variablen zu speichern, die Sie für die Verbindung verwenden werden. Auf diese Werte kann innerhalb von Postman mit dieser Syntax zugegriffen werden: `{{name}}`. Weitere Informationen zu Postman-Variablen finden Sie unter [Postman-Dokumentation > Variablen](https://www.getpostman.com/docs/v6/postman/environments_and_globals/variables).
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Einrichten einer Postman-Umgebung (Customer Engagement)](/dynamics365/customer-engagement/developer/webapi/setup-postman-environment)
-
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* Nutzen Sie eine PowerApps Common Data Service-Umgebung, mit der Sie eine Verbindung herstellen können. 
+* Haben Sie eine PowerApps Common Data Service Umgebung, mit der Sie sich verbinden können. 
 * Downloaden und installieren Sie die [Postman Desktop Anwendung](https://www.getpostman.com/apps).
 
 <a name="bkmk_connectcds"></a> 
 
-## <a name="connect-with-your-common-data-service-environment"></a>Stellen Sie eine Verbindung mit Ihrer Common Data Service-Umgebung her
+## <a name="connect-with-your-common-data-service-environment"></a>Verbinden Sie sich mit Ihrer Common Data Service-Umgebung.
 
-Diese Umgebung verwendet eine Client ID für eine Anwendung, die für alle Common Data Service-Umgebungen registriert ist. 
+Diese Umgebung verwendet eine Client-ID für eine Anwendung, die für alle Common Data Service-Umgebungen registriert ist. 
  
-Sie können die Werte `clientid` und `callback` aus diesen Anweisungen verwenden.  Wenn Sie eigene Anwendung erstellen, sollten Sie eine eigene Azure Active Directory (Azure AD)-Anwendung registrieren.
+Sie können die Werte `clientid` und `callback` aus diesen Anweisungen verwenden.  Wenn Sie jedoch eine eigene Anwendung erstellen, sollten Sie eine eigene Azure Active Directory (Azure AD) Anwendung registrieren.
  
-Um Ihre eigenen Azure AD-Anwendungen zu registrieren, müssen Sie die unter [Exemplarische Vorgehensweise: Registrieren einer Common Data Service-App bei Azure Active Directory](../walkthrough-register-app-azure-active-directory.md) beschriebene Schritte ausführen.
+Um Ihre eigene Azure AD-Anwendung zu registrieren, lesen Sie die unter [Walkthrough: Registrieren Sie eine Common Data Service App mit Azure Active Directory](../walkthrough-register-app-azure-active-directory.md).
 
-Verwenden Sie diese Schritte, um eine Postman-Umgebung zu erstellen, mit der Sie sich mit Ihrer Common Data Service-Instanz verbinden können.
+Verwenden Sie diese Schritte, um eine Postman-Umgebung zu erstellen, mit der Sie sich mit Ihrer Common Data Service-Instanz verbinden können:
 
 1. Starten Sie die Postman-Desktop-Anwendung.
 1. Klicken Sie auf das Symbol **Umgebungsoptionen** in der rechten oberen Ecke. 
@@ -65,7 +60,7 @@ Verwenden Sie diese Schritte, um eine Postman-Umgebung zu erstellen, mit der Sie
     |`authurl`|`https://login.microsoftonline.com/common/oauth2/authorize?resource={{url}}`|
 
     ![Erstellen Sie eine neue Postman-Umgebung für die Verbindung mit der Online-Instanz](media/postman-add-online-env.png "Erstellen Sie eine neue Postman-Umgebung für die Verbindung mit der Online-Instanz")<br>
-1. Ersetzen Sie den Platzhalterwert der Instanz-URL durch die URL Ihrer Common Data Service-Instanz und wählen Sie **Hinzufügen** aus, um die Umgebung zu speichern.
+1. Ersetzen Sie den Wert des Platzhalters für die Instanz-URL durch die URL Ihrer Common Data Service-Instanz und wählen Sie **Hinzufügen**, um die Umgebung zu speichern.
 
 1. Schließen Sie den Dialog **Umgebungen verwalten**.  
 
@@ -88,7 +83,7 @@ Um eine Verbindung über **OAuth 2.0** herzustellen, benötigen Sie ein Zugriffs
     > Wenn Sie Umgebungen in Postman für mehrere Common Data Service-Instanzen mit unterschiedlichen Benutzerdaten konfigurieren, müssen Sie möglicherweise die von Postman zwischengespeicherten Cookies löschen. Klicken Sie auf den Link **Cookies**, der sich unter dem Button **Senden** befindet und entfernen Sie die gespeicherten Cookies aus dem Dialog **Cookies verwalten**.<br>![Cookies löschen](media/postman-cookies.png "Cookies löschen")<br>
     > Einige dieser Cookies sind sehr langlebig. Sie können einige davon in Gruppen löschen, andere müssen jedoch einzeln gelöscht werden.   Möglicherweise müssen Sie dies zweimal tun, um sicherzustellen, dass keine Cookies verbleiben.
 
-1. Wählen Sie **Token anfordern** aus. Wenn Sie dies tun, erscheint eine Azure Active Directory Anmeldeseite. Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.
+1. Wählen Sie **Token anfordern** aus. Dabei erscheint eine Azure Active Directory Anmeldeseite. Geben Sie Ihren Benutzernamen und Ihr Kennwort ein.
 1. Nachdem das Token generiert wurde, scrollen Sie nach unten und klicken Sie auf **Token verwenden**. Dadurch wird der Dialog **Zugriffstokens verwalten** geschlossen. 
 1. Nachdem Sie ein Token hinzugefügt haben, können Sie auswählen, welches Token für Anforderungen angewendet werden soll. Klicken Sie auf die Dropdown-Liste **Verfügbare Token** und wählen Sie das soeben erstellte Token aus. Der Autorisierungs-Header wird der Web-API-Anforderung hinzugefügt.
 
@@ -96,7 +91,7 @@ Siehe [Test Ihrer Verbindung](#test-your-connection) für Schritte zur Überprü
 
 ## <a name="test-your-connection"></a>Testen Ihrer Verbindung
 
-Erstellen Sie eine neue Web-API-Anforderung, um die Verbindung mit Ihrer Common Data Service-Instanz zu testen. Verwenden des <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI function" />Formular-Assistenten:
+Erstellen Sie eine neue Web-API-Anfrage, um die Verbindung mit Ihrer Common Data Service-Instanz zu testen. Verwenden des <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI function" />Formular-Assistenten:
 1. Wählen Sie `GET` als HTTP-Methode und fügen Sie `{{webapiurl}}WhoAmI` im Editierbereich hinzu.
   ![WhoAmI Funktionsanforderung](media/postman-whoami-request.png "WhoAmI Funktionsanforderung")
 2. Klicken Sie auf **Senden**, um diese Anfrage zu senden.
@@ -105,4 +100,4 @@ Erstellen Sie eine neue Web-API-Anforderung, um die Verbindung mit Ihrer Common 
 ## <a name="see-also"></a>Siehe auch
 
 [Verwenden von Postman, um Operationen durchzuführen](use-postman-perform-operations.md)<br>
-[Exemplarische Vorgehensweise: Registrieren einer Common Data Service-App bei Azure Active Directory](../walkthrough-register-app-azure-active-directory.md)
+[Walkthrough: Registrieren Sie eine Common Data Service App bei Azure Active Directory](../walkthrough-register-app-azure-active-directory.md)

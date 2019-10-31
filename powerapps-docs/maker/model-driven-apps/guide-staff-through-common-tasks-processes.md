@@ -45,7 +45,7 @@ Weitere Informationen zum Festlegen der Unternehmensregeln für ein Formular in 
 
 ## <a name="flows"></a>Flows  
   
-Microsoft Flow umfasst einige Prozesstypen, die jeweils für einen anderen Zweck bestimmt sind:  
+Microsoft Flow umfasst mehrere Arten von Prozessen, die jeweils für einen anderen Zweck entwickelt wurden:  
 
 -   Automatisierte Flows Erstellen eines Flows, der eine oder mehrere Aufgaben automatisch ausführt, nachdem er durch ein Ereignis ausgelöst wurde. Weitere Informationen: [Erstellen eines Flows](/flow/get-started-logic-flow)
     
@@ -55,7 +55,7 @@ Microsoft Flow umfasst einige Prozesstypen, die jeweils für einen anderen Zweck
   
 -   Geschäftsprozessflows.  Stellen Sie sicher, dass die Mitarbeiter die Daten konsistent eingeben und jedes Mal, wenn sie in einer App arbeiten, die gleichen Schritte ausführen, indem sie einen Geschäftsprozessflow anlegen. Weitere Informationen: [Übersicht über Geschäftsprozessflüsse](/flow/business-process-flows-overview)
 
--   Workflow und Aktionen. Dynamics 365 Customer Engagement Anpasser ist möglicherweise mit dem klassischen Common Data Service-Prozesse vertraut, welches Workflows und Aktionen sind. Weitere Informationen: [Verwendung von Workflowprozessen](/flow/workflow-processes) und [Aktionsübersicht](/flow/actions)
+-   Workflow und Aktionen. Dynamics 365-Customizer können mit den klassischen Common Data Service-Prozessen, d.h. Workflows und Aktionen, vertraut sein. Weitere Informationen: [Verwendung von Workflowprozessen](/flow/workflow-processes) und [Aktionsübersicht](/flow/actions)
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -63,4 +63,4 @@ Microsoft Flow umfasst einige Prozesstypen, die jeweils für einen anderen Zweck
 
 ### <a name="see-also"></a>Siehe auch
 
-[Beantragen Sie Geschäftslogik mit Common Data Service](../common-data-service/cds-processes.md)
+[Business-Logik mit Common Data Service anwenden](../common-data-service/cds-processes.md)

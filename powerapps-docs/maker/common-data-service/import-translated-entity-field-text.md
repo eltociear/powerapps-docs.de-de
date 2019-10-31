@@ -1,10 +1,10 @@
 ---
-title: Übersetzten Entitäts- und Feldtext mit PowerApps importieren | MicrosoftDocs
+title: Importieren übersetzter Entitäten und Feldtexte mit PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie übersetzter Entitäts- und Feldtext importiert wird'
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -30,7 +30,7 @@ Wenn Sie Text für Entitäten oder Felder, z. B. Feldbeschriftungen oder Werte 
  Nach der Übersetzung müssen Sie die übersetzten Textzeichenfolgen in Ihre Umgebung importieren, bevor Benutzer die Änderungen nutzen können.  
   
 > [!IMPORTANT]
-> - Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die Datei [Content_Types].xml im Stammverzeichnis enthalten ist.  
+> - Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die [Content_Types].xml im Stammverzeichnis enthalten ist.  
 > - Sie können keinen übersetzten Text mit mehr als 500 Zeichen importieren. Wenn Elemente in Ihrer Übersetzung eine Länge von 500 Zeichen überschreiten, tritt beim Importvorgang ein Fehler auf. Überprüfen Sie bei Auftreten eines Importfehlers die Zeile in der Datei, durch die der Fehler verursacht wurde, verringern Sie die Zeichenanzahl, und führen Sie einen erneuten Importvorgang aus. Beachten Sie ebenfalls, dass Sie nach dem Importieren des übersetzten Texts die Anpassungen erneut veröffentlichen müssen.  
   
 1. Öffnen Sie den [Lösungs-Explorer](../model-driven-apps/advanced-navigation.md#solution-explorer).  
@@ -45,7 +45,7 @@ Wenn Sie Text für Entitäten oder Felder, z. B. Feldbeschriftungen oder Werte 
 
 ## <a name="community-tools"></a>Community-Tools
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) ist ein Tool, das XrmToolBox-Community für Dynamics 365 Customer Engagement entwickelte. Verwenden Sie den einfachen Übersetzer, um Übersetzungen mit kontextbezogenen Informationen zu exportieren und zu importieren. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) ist ein Tool, das die XrmToolBox-Community für PowerApps entwickelt hat. Verwenden Sie den einfachen Übersetzer, um Übersetzungen mit kontextbezogenen Informationen zu exportieren und zu importieren. 
 
 > [!NOTE]
 > Die Community-Tools werden von Microsoft nicht unterstützt. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).

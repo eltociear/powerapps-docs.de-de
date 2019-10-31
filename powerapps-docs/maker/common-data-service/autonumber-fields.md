@@ -33,6 +33,9 @@ Wenn Sie ein Feld mit automatischer Nummerierung erstellen möchten, führen Sie
 
 Sie können die Funktion zur automatischen Nummerierung ggf. auch auf einem vorhandenen Textfeld aktivieren, indem Sie in das Feld öffnen und **Automatische Nummerierung**aus den **Datentyp**-Dropdownlistenfeld auswählen. Dem entsprechend kann die Funktion zur automatischen Nummerierung jederzeit deaktiviert werden, indem Sie das Feld öffnen und eine andere Option in der **Datentyp**-Dropdownlistenfunktion auswählen.
 
+> [!NOTE]
+>Werte der automatischen Nummerierung werden von der Datenbank beim Starten des Datensatzes vorab ausgewählt. Wenn ein Datensatz gestartet, dann aber storniert wird, wird die zugewiesene Zahl nicht verwendet. Wenn während dieser Zeit ein weiterer Datensatz mit der folgenden sequenziellen Zahl fertiggestellt wird, können Lücken in der automatischen Nummerierung von Datensätzen auftreten.
+
 ## <a name="autonumber-types"></a>Typen der automatischen Nummerierung
 
 Um die Erstellung von Feldern mit automatischer Nummerierung zu vereinfachen, gibt es einige vordefinierte Typen der automatischen Nummerierung, mit denen die häufigsten Szenarien abgedeckt werden. 
@@ -61,7 +64,7 @@ Der Startwert eines Felds für automatisierte Nummerierung ist die Startzahl, di
 
 ## <a name="create-an-autonumber-field"></a>Erstellen eines Felds mit automatisierter Nummerierung
   
-1.  Melden Sie sich beim [PowerApps-Portal an](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Melden Sie sich beim [PowerAppsPortal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
   
 2.  Erweitern Sie im linken Bereich **Daten** und wählen Sie **Entitäten** aus.
   

@@ -2,7 +2,7 @@
 title: Arbeiten mit Lösungen in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Lösungen verteilt werden'
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 09/30/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -26,7 +26,7 @@ search.app:
    
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
-  In PowerApps werden Lösungen genutzt, um Apps und Komponenten von einer Umgebung in eine andere zu transportieren oder um einen Satz von Anpassungen für vorhandene Apps zu übernehmen. Eine Lösung kann mindestens eine App sowie andere Komponenten, wie Entitäten, Optionssätze usw. enthalten. Sie können eine Lösung aus [AppSource](https://appsource.microsoft.com/) oder durch einen unabhängigen Softwarehersteller (ISV) erhalten.
+  In PowerApps werden Lösungen genutzt, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder eine Reihe von Anpassungen auf bestehende Anwendungen anzuwenden. Eine Lösung kann eine oder mehrere Anwendungen sowie andere Komponenten wie Sitemaps, Entitäten, Prozesse, Webressourcen, Optionssets und mehr enthalten.  Eine Lösung erhalten Sie bei [AppSource](https://appsource.microsoft.com/) oder bei einem unabhängigen Softwareanbieter (ISV).
   
 Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
   
@@ -81,7 +81,9 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 -   Plug-In-Assembly  
   
 -   Prozess  
-  
+
+-   (Bericht)  
+
 -   SDK-Nachrichtenverarbeitungsschritt  
   
 -   Sicherheitsrolle  
@@ -102,9 +104,9 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
   
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
 ### <a name="managed-and-unmanaged-solutions"></a>Verwaltete und nicht verwaltete Lösungen  
- Es gibt **verwaltete** und **nicht verwaltete** Lösungen. Eine **verwaltete** Lösung kann nicht geändert werden und kann nach dem Import deinstalliert werden. Dadurch werden alle Komponenten der Lösung entfernt.  
+ Es gibt **verwaltete** und **nicht verwaltete** Lösungen. Eine **verwaltete** Lösung kann nicht geändert werden und kann nach dem Import deinstalliert werden. Alle Komponenten dieser Lösung werden durch die Deinstallation der Lösung gelöscht.  
   
- Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Umgebung hinzu. Sie können die Komponenten nicht entfernen, indem Sie die Lösung deinstallieren.  
+ Wenn Sie eine **nicht verwaltete** Lösung importieren, fügen Sie alle Komponenten dieser Lösung der Umgebung hinzu. Sie können die Komponenten nicht löschen, indem Sie die Lösung deinstallieren.  
   
  Wenn Sie eine **nicht verwaltete** Lösung importieren, die bereits von Ihnen angepasste Komponenten enthält, werden Ihre Anpassungen von den Anpassungen in der importierten nicht verwalteten Lösung überschrieben. Sie können dies nicht rückgängig machen.  
   
@@ -112,8 +114,6 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 >  Installieren Sie eine nicht verwaltete Lösung nur, wenn Sie alle Komponenten Ihrer Umgebung hinzufügen wollen und alle vorhandenen Anpassungen überschrieben werden sollen.  
   
  Selbst wenn Sie Ihre Apps oder Anpassungen nicht verteilen wollen, sollten Sie eine nicht verwaltete Lösung so erstellen und verwenden, dass sie über eine separate Ansicht verfügt, die nur die Teile der Anwendung enthält, die Sie angepasst haben. Wenn Sie irgend etwas anpassen, fügen Sie es einfach der nicht verwalteten Lösung hinzu, die Sie erstellt haben.  
-  
- Sie können Ihre **Standardlösung** nur als nicht verwaltete Lösung exportieren.  
   
  Zur Erstellung einer **verwalteten** Lösung wählen Sie die Option **Als verwaltet** aus, wenn Sie die Lösung exportieren. Wenn Sie eine verwaltete Lösung erstellen, können Sie sie nicht wieder in die Umgebung importieren, die Sie für die Erstellung verwendet haben. Sie können sie nur in eine andere Umgebung importieren werden.  
   

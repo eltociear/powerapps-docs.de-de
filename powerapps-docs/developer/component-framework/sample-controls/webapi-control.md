@@ -1,6 +1,6 @@
 ---
-title: " Web-API-Komponente | Microsoft-Dokumentation"
-description: Implementieren der Web-API-Komponente
+title: ' Web-API-Komponente | Microsoft Docs'
+description: Implementieren einer Web-API-Komponente
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 4e893466a5a7404926942b4e297cdc4ecb1affef
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340159"
 ---
-# <a name="implementing-web-api-component"></a>Implementieren der Web-API-Komponente
+# <a name="implementing-web-api-component"></a>Implementieren einer Web-API-Komponente
 
-Die Web-API-Komponente ist für die Ausführung von Aktionen zum Erstellen, abrufen, aktualisieren und löschen konzipiert. Die Komponente rendert vier Schaltflächen, auf die Sie klicken können, um verschiedene Web-API-Aktionen aufzurufen. Das Ergebnis des Web-API-Aufrufes wird am Ende der Code Komponente in ein HTML-div-Element eingefügt.  
+Die Web-API-Komponente wurde entworfen, um Aktionen auszuführen, zu erstellen, abzurufen, zu aktualisieren und zu löschen. Die Komponente rendert vier Schalflächen, die angeklickt werden können, um verschiedene Web-API-Aktionen aufzurufen. Das Ergebnis des Web-API-Aufrufs wird in ein HTML-Div-Element am unteren Rand der Codekomponente injiziert.  
 
 > [!div class="mx-imgBorder"]
-> ![](../media/web-api-control.png "Web-") API-Komponente Web-API-Komponente
+> ![Web-API-Komponente](../media/web-api-control.png "Web-API-Komponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps
+Modellgestützte Apps
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
  ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -50,10 +44,10 @@ Modellgesteuerte Apps
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSWebAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Name of entity to use for example Web API calls performed by this control
   private static _entityName: string = "account";
@@ -70,14 +64,14 @@ export class TSWebAPI
   private static _currencyAttributeNameFriendlyName: string = "annual revenue";
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
-  // references to button elements rendered by example custom control
+  // References to button elements rendered by example custom control
   private _createEntity1Button: HTMLButtonElement;
   private _createEntity2Button: HTMLButtonElement;
   private _createEntity3Button: HTMLButtonElement;
   private _deleteRecordButton: HTMLButtonElement;
   private _fetchXmlRefreshButton: HTMLButtonElement;
   private _oDataRefreshButton: HTMLButtonElement;
-  // references to div elements rendered by the example custom control
+  // References to div elements rendered by the example custom control
   private _odataStatusContainerDiv: HTMLDivElement;
   private _resultContainerDiv: HTMLDivElement;
   /**
@@ -290,7 +284,7 @@ export class TSWebAPI
     var thisRef = this;
     // Invoke the Web API to creat the new record
     this._context.webAPI.createRecord(TSWebAPI._entityName, data).then(
-      function(response: ComponentFramework.Entityreference) {
+      function(response: ComponentFramework.EntityReference) {
         // Callback method for successful creation of new record
         // Get the ID of the new record created
         let id: string = response.id;
@@ -330,14 +324,14 @@ export class TSWebAPI
     lookUpPromise.then(
       // Callback method - invoked after user has selected an item from the lookup dialog
       // Data parameter is the item selected in the lookup dialog
-      (data: ComponentFramework.Entityreference[]) => {
+      (data: ComponentFramework.EntityReference[]) => {
         if (data && data[0]) {
           // Get the ID and entityType of the record selected by the lookup
           let id: string = data[0].id;
           let entityType: string = data[0].entityType!;
           // Invoke the deleteRecord method of the WebAPI to delete the selected record
           this._context.webAPI.deleteRecord(entityType, id).then(
-            function(response: ComponentFramework.Entityreference) {
+            function(response: ComponentFramework.EntityReference) {
               // Record was deleted successfully
               let responseId: string = response.id;
               let responseEntityType: string = response.entityType!;
@@ -614,9 +608,9 @@ export class TSWebAPI
 }
 ```
 
-Standardmäßig ist die Komponente im Beispiel so konfiguriert, dass Sie die Erstellungs-, Abruf-, Aktualisierungs-und Aktualisierungs Aktionen für die `Account` Entität ausführt und die Felder Name und Umsatz in den Web-API-Beispielen festgelegt.
+Standardmäßig wird die im Beispiel Komponente so konfiguriert, dass Aktionen "Erstellen", "Abrufen", "Aktualisieren" für die `Account`-Entität durchgeführt und der die Felder "Name" und "Umsatz" in den Web-API-Beispielen festgelegt werden.
 
-Um die Standardkonfiguration in eine beliebige Entität oder ein beliebiges Feld zu ändern, aktualisieren Sie die unten aufgeführten Konfigurationswerte.  
+Um die Standardkonfiguration zu einer beliebigen Entität oder einen Feld zu ändern, aktualisieren Sie die Konfigurationswerte wie dargestellt.  
 
  ```TypeScript
   private static _entityName:string = "account";  
@@ -625,20 +619,20 @@ Um die Standardkonfiguration in eine beliebige Entität oder ein beliebiges Feld
   private static _currencyAttributeName: string = "revenue";  
  ```
 
-Die `createRecord`-Methode rendert drei Schaltflächen, die es Ihnen ermöglichen, einen Kontodaten Satz zu erstellen, bei dem das Umsatz Feld auf verschiedene Werte (100, 200, 300) festgelegt ist.
+Die `createRecord`-Methode rendert drei Schaltflächen, mit denen Sie einen Firmendatensatz erstellen können, bei dem das Umsatzfeld auf verschiedene Werte (100, 200, 300) festgelegt werden kann.
 
-Wenn Sie auf eine der Schaltflächen erstellen klicken, überprüft der `onClick` Ereignishandler der Schaltfläche den Wert der Schaltfläche, auf die geklickt wurde, und erstellt mithilfe der Web-API-Aktion einen Kontodaten Satz, wobei das Umsatz Feld auf den Wert der Schaltfläche festgelegt ist. Das Namensfeld des Kontodaten Satzes wird auf `Web API code component (Sample)` festgelegt, wobei eine zufällige `int` an das Ende der Zeichenfolge angefügt wird. Die Rückruf Methode des Web-API-Aufrufs fügt das Ergebnis des Web-API-Aufrufs (Erfolg oder Fehler) in das Ergebnis div des benutzerdefinierten Steuer Elements ein.  
+Wenn Sie auf eine der Erstellen-Schaltflächen klicken, prüft der `onClick`-Ereignishandler der Schaltfläche den Wert der geklickten Schaltfläche und verwendet die Web-API-Aktion, um einen Firmendatensatz zu erstellen, bei dem das Umsatzfeld auf den Wert der Schaltfläche festgelegt ist. Der Namensfeld des Firmendatensatzes wird auf `Web API code component (Sample)` festgelegt und ein zufälliges `int`-Element wird dem Ende der Zeichenfolge angehängt. Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
  
-Die `deleteRecord`-Methode rendert eine Schaltfläche, die ein Such Dialogfeld öffnet, wenn geklickt wird. Im Such Dialogfeld können Sie den Kontodaten Satz auswählen, den Sie löschen möchten. Nachdem ein Kontodaten Satz aus dem Such Dialogfeld ausgewählt wurde, wird er an den `deleteRecord` zum Löschen des Datensatzes aus der Datenbank übermittelt. Die Rückruf Methode des Web-API-Aufrufs fügt das Ergebnis des Web-API-Aufrufs (Erfolg oder Fehler) in das Ergebnis div des benutzerdefinierten Steuer Elements ein.  
+Die `deleteRecord`-Methode rendert eine Schaltfläche, mit der bei Aufurf ein Suchdialog geöffnet wird. Mit dem Suchdialog können Sie den Firmendatensatz auswählen, den Sie löschen möchten. Sobald ein Firmendatensatz aus dem Suchdialog ausgewählt wurde, wird er an `deleteRecord` übergeben, damit der Datensatz aus der Datenbank gelöscht wird. Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
 
-Die fetchxml-`retrieveMultiple`-Methode rendert eine Schaltfläche in der Code Komponente. `onClick` dieser Schaltfläche wird fetchxml generiert und an die `retrieveMultiple`-Funktion übermittelt, um den Durchschnittswert des Umsatz Felds für alle Kontodaten Sätze zu berechnen. Die Rückruf Methode des Web-API-Aufrufs fügt das Ergebnis des Web-API-Aufrufs (Erfolg oder Fehler) in das Ergebnis div des benutzerdefinierten Steuer Elements ein.  
+Die Methode FetchXML `retrieveMultiple` rendert eine Schaltfläche in der Codekomponente. Bei `onClick` auf diese Schaltfläche wird FetchXML generiert und an die `retrieveMultiple`-Funktion übergeben, um den Durchschnittswert des Umsatzfelds für alle Firmendatensätze zu berechnen. Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
 
-Die odata-`retrieveMultiple`-Methode rendert eine Schaltfläche in der Code Komponente. `onClick` dieser Schaltfläche wird die odata-Zeichenfolge generiert und an die `retrieveMultiple`-Funktion übermittelt, um alle Kontodaten Sätze mit einem Namensfeld abzurufen, das wie "Code Component Web API (Sample)" lautet. Dies gilt für alle Kontodaten Sätze, die in diesem Code Komponenten Beispiel erstellt wurden.  
+Die OData `retrieveMultiple`-Methode stellt eine Schaltfläche in der Codekomponente dar. `onClick` dieser Schaltfläche wird eine OData-Zeichenkette erzeugt und an die Funktion `retrieveMultiple` übergeben, um alle Kontendatensätze mit einem Namensfeld abzurufen, das wie die "Codekomponente Web API (Sample)" aussieht, was für alle Kontendatensätze gilt, die von diesem Codekomponentenbeispiel erstellt wurden.  
 
-Bei einem erfolgreichen Abruf der Datensätze verfügt die Code Komponente über Logik, um zu zählen, wie viele Kontodaten Sätze das Umsatz Feld auf 100, 200 oder 300 festgelegt haben, und zeigt diese Anzahl in einem odata-Status Container DIV in der Code Komponente an.  Die Rückruf Methode des Web-API-Aufrufs fügt das Ergebnis des Web-API-Aufrufs (Erfolg oder Fehler) in das Ergebnis div des benutzerdefinierten Steuer Elements ein.  
+Nach erfolgreichem Abruf der Datensätze hat die Codekomponente die Logik, um zu zählen, wie viele Kontensätze das Erlösfeld auf 100, 200 oder 300 gesetzt haben, und diese Zählung in einen Odata-Statuscontainer div auf der Codekomponente anzuzeigen.  Die Rückrufmethode des Web-API-Aufrufs bringt das Ergebnis des Web-API-Aufrufs in das Ergebnis-div (Erfolg oder Fehler) des benutzerdefinierten Steuerelements ein.  
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)

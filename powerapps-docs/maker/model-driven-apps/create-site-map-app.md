@@ -1,9 +1,9 @@
 ---
-title: Erstellen einer Siteübersicht für eine modellgesteuerte App in PowerApps | MicrosoftDocs
+title: Erstellen einer modellgetriebenen App-Site Map für eine App in PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Sie eine Siteübersicht für Ihre App erstellen'
 keywords: ''
 ms.date: 05/29/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -151,7 +151,7 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
   
     - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung, geben die Beschreibung für die Gruppe ein und wählen dann die Schaltfläche **Hinzufügen** ![Schaltfläche Hinzufügen im Siteübersichtsdesigner](media/add-icon-sitemap-designer.png "Schaltfläche Hinzufügen im Siteübersichtsdesigner"). Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
   
-    - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu erstellen, der die Gruppe darstellt.  
+    - **URL**: Geben Sie die URL ein, um den Dynamics 365 for Outlook-Ordner zu rendern, der die Gruppe darstellt.  
   
     - **Als Profil festlegen**: Aktivieren Sie dieses Kontrollkästchen, um anzugeben, ob diese Gruppe ein benutzerselektiertes Profil für den Arbeitsbereich darstellt. Die Gruppe, die als benutzerselektiertes Profil festgelegt ist, wird als Optionen in Ihren persönlichen Optionen angezeigt. Dies gilt nur für Gruppen im Bereich **Arbeitsbereich**.  
   
@@ -194,11 +194,11 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
   
     - **Weitere Beschreibungen**: Wenn Ihre Organisation mehrere Sprachen verwendet, wählen Sie eine Sprache für die Beschreibung, geben die Beschreibung für den Unterbereich ein und wählen **Hinzufügen**. Sie können für beliebig viele Sprachen Beschreibungen für Ihre Organisation erstellen, bearbeiten oder löschen. Sie können jedoch nur eine Beschreibung pro Sprache nutzen.  
   
-    - **SKUs**: Wählen Sie die Versionen von Dynamics 365 Customer Engagement aus, die diesen Unterbereich anzeigen.  
+    - **SKUs**: Wählen Sie die Versionen von Dynamics 365 aus, die diesen Teilbereich anzeigen.  
   
     - **Client**: Wählen Sie den Typ des Clients aus, für den dieser Unterbereich angezeigt wird.  
   
-    - **Outlook-Verknüpfung**: Wählen Sie das Symbol aus, das in Dynamics 365 for Outlook angezeigt werden soll.  
+    - **Outlook-Verknüpfung**: Wählen Sie das in Dynamics 365 for Outlook anzuzeigende Symbol aus.  
   
     - **Offlineverfügbarkeit**: Aktivieren Sie das Kontrollkästchen, um diesen Unterbereich für Benutzer zur Verfügung zu stellen, wenn diese in Dynamics 365 for Outlook offline sind.  
   
@@ -228,9 +228,9 @@ Sie können diese Rechte auf der Registerkarte **Anpassung** einer Sicherheitsro
  
 |Siteübersichten|Unterstützte Clients|  
 |---------------|-----------------------|  
-|Neue Apps| Einheitlicher Oberfläche und Dynamics 365 Customer Engagement-Web-App |  
-|Siteübersicht für benutzerdefinierte Dynamics 365-Apps | Dynamics 365 Customer Engagement-Web-App und Dynamics 365 for Outlook |  
-|Standard-Unternehmens-Apps (Sales, Sales Hub, Customer Service, Customer Service Hub, Field Service, Project Service Automation)| Dynamics 365 Customer Engagement-Web-App und Einheitliche Oberfläche|  
+|Neue Apps| Einheitliche Oberfläche |  
+|Siteübersicht für benutzerdefinierte Dynamics 365-Apps | Legacy Web-Applikation und Dynamics 365 for Outlook. |  
+|Modelgesteuerte Anwendungen (Sales, Vertriebs-Hub, Customer Service, Kundenservice-Hub, Field Service, Project Service Automation)| Legacy Web-App und die einheitliche Benutzeroberfläche|  
  
   
 ### <a name="next-steps"></a>Nächste Schritte  

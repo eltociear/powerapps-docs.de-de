@@ -2,7 +2,7 @@
 title: Problembehandlungs-Plug-Ins (Common Data Service für Apps) | Microsoft Docs
 description: 'Enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.'
 ms.custom: ''
-ms.date: 04/26/2019
+ms.date: 09/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -19,12 +19,20 @@ search.app:
 
 Dieses Thema enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.
 
-## <a name="error-there-is-no-active-transaction"></a>Fehler: Es gibt keine aktive Transaktion. 
+## <a name="transaction-errors"></a>Transaktionsfehler
+
+Es gibt zwei häufige Arten von Fehlern im Zusammenhang mit Transaktionen: 
+
+Fehlercode: `-2146893812`<br />
+Fehlermeldung: `ISV code reduced the open transaction count. Custom plug-ins should not catch exceptions from OrganizationService calls and continue processing.`
 
 Fehlercode: `-2147220911`<br />
 Fehlermeldung: `There is no active transaction. This error is usually caused by custom plug-ins that ignore errors from service calls and continue processing.`
 
-Es kann schwierig sein, den Fehler zu beheben, da die Ursache im Code einer anderen Person liegen kann. Um die Nachricht zu verstehen, müssen Sie bedenken, dass bei einem Fehler der Datenoperation im Synchronen Plug-In jedes Mal die Transaktion für die gesamten Operation beendet wird.
+> [!NOTE]
+> Der oberste Fehler wurde zuletzt hinzugefügt. Sie sollte sofort und im Zusammenhang mit dem Plugin, das das Problem enthält, auftreten. Der untere Fehler kann immer noch unter verschiedenen Umständen auftreten, typischerweise mit benutzerdefinierten Workflow-Aktivitäten. Es kann an Problemen in einem anderen Plugin liegen.
+
+Um die Nachricht zu verstehen, müssen Sie bedenken, dass bei einem Fehler der Datenoperation im Synchronen Plug-In jedes Mal die Transaktion für die gesamten Operation beendet wird.
 
 Mehr Informationen: [Skalierbares Anpassungsdesign in Common Data Service](scalable-customization-design/overview.md)
 

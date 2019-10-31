@@ -64,9 +64,7 @@ Das zugrundeliegende Problem beim Unterstützen von starken Typen wurde behoben,
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-Wir sind dabei, Änderungen freizugeben, die die Verwendung von Reflektion in benutzerdefinierten Workflowaktivitäten ermöglichen. In der Sandboxumgebung, wo dieser Code ausgeführt wird, müssen alle Aufrufe mit der [Type.GetType-Methode](/dotnet/api/system.type.gettype) jedoch den vollständig qualifizierten Namen der Assembly verwenden. Dieser Code ist dann nicht nur überflüssig, sondern verwendet nicht den vollständig qualifizierten Namen und löst daher einen Fehler aus.
-
-Derzeit ist die Reflektion nicht zulässig. Dieser Code verweist auf eine interne Assembly, die in einer weißen Liste hinzugefügt wurde, damit interner Code darauf reflektieren konnte. Daher löst er derzeit keinen Fehler aus. Wenn aber allgemeine Einschränkungen in der Zukunft aufgehoben werden, kann er Probleme bei Workflowaktivitäten verursachen.
+Derzeit ist die Reflektion nicht zulässig. Dieser Code verweist auf eine interne Assembly, die in eine Whitelist aufgenommen wurde, so dass der interne Code darüber nachdenken kann. Daher löst er derzeit keinen Fehler aus. Wenn aber allgemeine Einschränkungen in der Zukunft aufgehoben werden, kann er Probleme bei Workflowaktivitäten verursachen.
 
 Um umfassendere Funktionen in benutzerdefinierten Workflowaktivitäten bieten zu können, ohne Probleme bei der Geschäftslogik der Benutzer zu verursachen, müssen alle ihre Codebasis überprüfen und Verweise wie diesen entfernen.
 

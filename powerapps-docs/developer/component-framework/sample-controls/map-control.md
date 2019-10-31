@@ -1,6 +1,6 @@
 ---
-title: " Map-Komponente | Microsoft-Dokumentation"
-description: Implementieren einer Karten Komponente mithilfe von Angular js
+title: ' Kartenkomponente | Microsoft Docs'
+description: Implementieren einer Kartenkomponente mit Angular JS
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,20 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f4b8702ef39688bdfc5f3ce9a51bf5c8c6e0ff20
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72341332"
 ---
-# <a name="implementing-map-component"></a>Implementieren der Karten Komponente
 
-Diese Beispiel Komponente ändert die Benutzeroberflächen Interaktion mit Adressfeldern im Formular. Zusammen mit den Textwerten der Adresse bietet diese Komponente die Möglichkeit, eine bestimmte Adresse auf einer Karte visuell zu identifizieren, ohne zu einer anderen Registerkarte oder einem anderen Bildschirm zu navigieren. 
+# <a name="implementing-map-component"></a>Implementieren einer Kartenkomponente
+
+Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mit Adressfeldern im Formular. In Kombination mit den Textwerten der Adresse stellt diese Komponente die Möglichkeit bereit, eine bestimmte Adresse visuell auf einer Karte zu identifizieren, ohne zu einer anderen Registerkarte oder einen anderen Bildschirm zu navigieren. 
 
 > [!div class="mx-imgBorder"]
-> ![Komponenten]Zuordnungs(../media/map-control.png "Komponente") zuordnen
+> ![Kartenkomponente](../media/map-control.png "Kartenkomponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -51,7 +46,7 @@ export class TSMapControl
   private _iFrameElement: HTMLIFrameElement;
   // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
-  // reference to ComponentFramework Context object
+  // Reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // API Key used to activate and embed the maps automatically
   // NOTE: You can follow the documentation at https://developers.google.com/maps/documentation/embed/get-api-key to generate your own API Key
@@ -147,15 +142,15 @@ export class TSMapControl
 }
 ```
 
-In der Manifest-Datei haben wir die Eigenschaft vom Typ `Single line of Text` definiert. Wir verwenden diese, um Sie an das Adressfeld im Formular zu binden.  
+In der Manifestdatei haben wir die Eigenschaft von Typ `Single line of Text` definiert. Anhand dieser Definition binden wir das Adressfeld im Formular.  
 
 > [!NOTE]
-> Sie können jede der Karten-APIs verwenden, die auf dem Markt verfügbar sind. In diesem Beispiel zeigen wir, wie Sie dies mit der Google Map-API durchführen. Für den Zugriff auf die Google Map-API müssen Sie einen API-Schlüssel für die Komponente erstellen. Befolgen Sie die Anweisungen (https://developers.google.com/maps/documentation/embed/get-api-key, um eines zu generieren).
+> Sie können beliebige Karten-APIs, die im Markt verfügbar sind.Im vorliegenden Beispiel zeigen wir, wie es mit der Map-API Google gemacht wird. Sie müssen einen API-Schlüssel für die Komponente erstellen, um auf Google Map-API zuzugreifen.Folgen Sie den Anweisungen(https://developers.google.com/maps/documentation/embed/get-api-key, um einen zu generieren.
 
-Erstellen Sie einen Variablennamen `MAPS_API_KEY`, auf den im Kontext der-Komponente zugegriffen werden kann.
-Mit der Google Map-API können Sie nur die Zuordnungen innerhalb eines `IFRAME` Rendering. Daher müssen Sie ein `IFRAME` Element erstellen, das die Zuordnung mit der von uns generierten URL Rendering. Standardmäßig wird die Zuordnung als ausgeblendet festgelegt und nur angezeigt, wenn der Adress Wert im Formular vorhanden ist.
+Erstellen Sie den Variablennamen `MAPS_API_KEY`, auf den im Rahmen der Komponente zugegriffen werden kann.
+Google Map-API ermöglicht es Ihnen, die Karten in `IFRAME` zu rendern. Demnach müssen Sie ein `IFRAME`-Element erstellen, das die Zuordnung mithilfe der von uns generierten URL rendert. Standardmäßig legen wir fest, dass die Karte ausgeblendet und nur angezeigt wird, wenn die Adresswerte im Formular vorhanden sind.
 
-`buildMapUrl` und `renderMap` (Sie können Sie sogar in einem zusammenführen) nimmt die Adress Zeichenfolge an und bettet Sie in die Karten-URL ein, indem Sie die Adress Zeichenfolge codiert und dann das src-Element des IFRAME-Elements auf die URL festlegt. Außerdem wird die **notifyoutputchanged** -Methode aufgerufen, um sicherzustellen, dass die Komponente benachrichtigt wird, dass sich das Rendering geändert hat. 
+`buildMapUrl` und `renderMap` (Sie können auch zusammengefügt werden) übernehmen die Adressenzeichenfolge und betten sie auf die Karten-URL, indem die Adresszeichenfolge verschlüsselt und dann das SRC-Element des IFRAME-Elements je auf die URL festgelegt wird. Außerdem rufen Sie die **notifyOutputChanged**-Methoden auf, um die Komponente zu benachrichtigen, dass das Rendering verändert wurde. 
  
 ```TypeScript
  public renderMap(mapUrl: string) {
@@ -169,10 +164,10 @@ Mit der Google Map-API können Sie nur die Zuordnungen innerhalb eines `IFRAME` 
   }
 ```
 
-Stellen Sie sicher, dass Sie die `renderMap`-Funktion innerhalb der [UpdateView](../reference/control/updateview.md) -Funktion aufrufen, um sicherzustellen, dass das Steuerelement bei jedem Aktualisieren der Ansicht aktualisiert wird 
+Stellen Sie sicher, dass Sie die `renderMap`-Funktion in der [updateView](../reference/control/updateview.md)-Funktion aufrufen, um sicherzustellen, dass das Steuerelement jedes Mal aktualisiert wird, wenn die Ansicht aktualisiert wird. 
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)

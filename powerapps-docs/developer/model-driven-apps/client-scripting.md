@@ -1,6 +1,6 @@
 ---
 title: Anwenden von Geschäftslogik mit Client-Skripting in modellgesteuerten Anwendungen mit JavaScript | Microsoft Docs
-description: 'Erfahren Sie, wie Entwickler JavaScript in clientseitigen Skripts verwenden können, um angepasste Geschäftslogik in modellgesteuerten Apps und Dynamics 365 for Customer Engagement-Apps anzuwenden'
+description: 'Erfahren Sie, wie Entwickler JavaScript in clientseitigen Skripten verwenden können, um benutzerdefinierte Geschäftslogik in modellgesteuerten Apps anzuwenden.'
 services: ''
 suite: powerapps
 author: KumarVivek
@@ -20,7 +20,7 @@ search.app:
 Clientseitiges Skripting mit JavaScript ist eine der Möglichkeiten, benutzerdefinierte Geschäftsprozesslogik zum Anzeigen der Daten in einem Formular in einer modellgesteuerten App anzuwenden.
 
 > [!IMPORTANT]
-> Alle Client-Skripting-Konzepte und -APIs, die in dieser Dokumentation erläutert werden, gelten auch für Dynamics 365 for Customer Engagement-Apps, da Customer Engagement-Apps tatsächlich modellgesteuerte Apps sind, die auf der Common Data Service erstellt werden.
+> Alle Client-Skripting-Konzepte und APIs, die in dieser Dokumentation erläutert werden, gelten auch für Benutzer von Dynamics 365 Customer Engagement (on-premises).
 
 Client-Skripting sollte jedoch nicht die erste Wahl zum Anwenden der benutzerdefinierten Geschäftsprozesslogik in modellgesteuerten App-Formularen sein. *Geschäftsregeln* bieten jemandem, der kein JavaScript kennt und kein Entwickler ist, die Möglichkeit, Geschäftsprozesslogik in einem Formular anzuwenden. Weitere Informationen: [Erstellen von Geschäftsregeln zur Anwendung der Logik](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form). Den Geschäftsregeldesigner finden Sie im Bereich **Common Data Service** unter [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Wenn Sie eine Entität anzeigen, suchen Sie nach der Registerkarte **Geschäftsregeln**.
 
@@ -55,5 +55,5 @@ Modellgesteuerte Anwendungen bieten Ihnen eine Vielzahl von **Client-APIs** zur 
 
 [Webressourcen für modellgesteuerte Apps](web-resources.md)<br/>
 [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)<br/>
-[Entwicklerhandbuch zu Dynamics 365 for Customer Engagement-Apps](/dynamics365/customer-engagement/developer/developer-guide)
+
 

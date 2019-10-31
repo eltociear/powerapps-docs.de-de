@@ -25,8 +25,7 @@ Sie können diese benutzerdefinierten Erweiterungen innerhalb des Designers verw
 > Wenn immer möglich, sollten Sie zunächst erwägen, eine von mehreren deklarativen Optionen zur Definition der Geschäftslogik anzuwenden. Weitere Informationen: [Anwenden von Geschäftslogik in Common Data Service](../../../maker/common-data-service/cds-processes.md)
 > 
 > Verwenden Sie Workflowerweiterungen, wenn ein deklarativer Prozess nicht Ihre Bedingung erfüllt.
-> 
-> Dieser Inhalt ist für Common Data Service-Workflow-Assemblys und gilt auch für Dynamics 365 for Customer Engagement-Apps (online). Optionen für lokale Bereitstellungen von Dynamics 365 for Customer Engagement-Apps sind hier beschrieben: [Lokale Optionen](/dynamics365/customer-engagement/developer/custom-workflow-activities-workflow-assemblies#on-premises-options).
+
 
 ## <a name="when-to-create-a-workflow-extension"></a>Wann eine Workflowerweiterung zu erstellen ist
 
@@ -56,7 +55,7 @@ Sie können die Aktivität **Aktion durchführen** verwenden, um sämtliche benu
 |AddToQueue|AddUserToRecordTeam|RemoveUserFromRecordTeam|
 |SetProcess|SetWordTemplate||
 
-Wenn Sie Dynamics 365 Customer Engagement Sales oder Service-Lösungen haben, können Sie andere Befehlsaktionen, je nach Lösung, finden:
+Wenn Sie über Dynamics 365 Sales- oder Service-Lösungen verfügen, können Sie je nach Lösung andere Befehlsaktionen finden:
 
 ||||
 |--|--|--|

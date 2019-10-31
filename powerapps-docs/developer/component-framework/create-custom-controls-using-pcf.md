@@ -1,7 +1,7 @@
 ---
-title: Erstellen und Erstellen einer Code Komponente | Microsoft-Dokumentation
-description: Beginnen Sie mit dem Erstellen einer Komponente mithilfe der Tools von powerapps Component Framework.
-keywords: Powerapps-Komponenten Framework, Code Komponenten, Komponenten Framework
+title: Erstellen und Entwickeln einer Code-Komponente | Microsoft Docs
+description: Starten der Erstellung einer Komponente mit PowerApps Component Framework-Tooling
+keywords: 'PowerApps Component Framework, Code-Komponenten, Komponentenframework'
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,67 +11,61 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025771"
 ---
-# <a name="create-and-build-a-code-component"></a>Erstellen und Erstellen einer Code Komponente
 
-In diesem Thema wird veranschaulicht, wie Code Komponenten mithilfe der powerapps-CLI erstellt und bereitgestellt werden. Stellen Sie sicher, dass Sie [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI)installiert haben.
+# <a name="create-and-build-a-code-component"></a>Erstellen und Entwickeln einer Code-Komponente
 
-## <a name="create-a-new-component"></a>Neue Komponente erstellen
+Dieses Thema zeigt, wie Sie Code-Komponenten mithilfe von PowerApps CLI erstellen und bereitstellen. Stellen Sie sicher, dass [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI) installiert ist.
 
-Öffnen Sie zunächst **Developer-Eingabeaufforderung für vs 2017** nach der Installation der powerapps-CLI.
+## <a name="create-a-new-component"></a>Erstellen einer neuen Komponente
 
-1. Erstellen Sie im Developer-Eingabeaufforderung für Visual Studio 2017 auf dem lokalen Computer einen neuen Ordner, z. b. *c:\Users\YOUR name\Documents\My_code_Component* . verwenden Sie dazu den Befehl `mkdir <Specify the folder name>`.
-2. Wechseln Sie mithilfe des Befehls `cd <specify your new folder path>` zum neu erstellten Ordner.
-3. Erstellen Sie ein neues Komponenten Projekt, indem Sie mit dem Befehl einige grundlegende Parameter übergeben:
+Für den Anfang öffnen Sie eine neue **Entwicklereingabeaufforderung für VS 2017** nach der Installation von PowerApps CLI.
 
-    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
+1. In der Entwicklereingabeaufforderung für VS 2017 erstellen Sie einen neuen Ordner auf Ihrem lokalen Computer, z. B. *C:\Benutzer\Ihr Name\Dokumente\Meine_PCF_Komponente*, mithilfe des Befehls `mkdir <Specify the folder name>`.
+2. Wechseln Sie mit dem Befehl `cd <specify your new folder path>` zum neu erstellen Ordner.
+3. Führen Sie den Befehl unten aus, um ein neues Komponentenprojekt zu erstellen, indem Sie einige Basisparameter übergeben:
+
+    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
  
    > [!NOTE]
-   > Die powerapps-CLI unterstützt derzeit zwei Arten von Komponenten: **Feld** und **DataSet** für Modell gesteuerte apps.  Für Canvas-apps wird nur der **Feldtyp** für diese experimentelle Vorschau unterstützt.
+   > Derzeit unterstützt PowerApps CLI zwei Arten von Komponenten: **Feld** und **DataSet**.  Für Canvas-Apps wird nur der Typ **Feld** für diese experimentelle Vorschau unterstützt.
 
-4. Um alle erforderlichen Projekt Abhängigkeiten abzurufen, führen Sie den Befehl `npm install` aus.
-5. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_code_Component>` in einer beliebigen Entwicklerumgebung Ihrer Wahl, und beginnen Sie mit der Entwicklung von Code Komponenten. Die schnellste Methode für den Einstieg besteht darin, dass Sie `code .` über die Eingabeaufforderung ausführen, sobald Sie sich im `C:\Users\<your name>\Documents\<My_code_Component>` Verzeichnis befinden. Dieser Befehl öffnet das Komponenten Projekt in Visual Studio Code.
-6. Implementieren Sie die erforderlichen Artefakte für die Komponente wie das Manifest, die Komponenten Logik und das Formatieren, und erstellen Sie dann das Komponenten Projekt. Weitere Informationen: [Implementieren der Beispiel Komponente](implementing-controls-using-typescript.md)
+4. Um alle erforderlichen Projektabhängigkeiten abzurufen, führen Sie den Befehl `npm install` aus.
+5. Öffnen Sie Ihren Projektordner `C:\Users\<your name>\Documents\<My_PCF_Component>` in einer Entwicklerumgebung Ihrer Wahl und beginnen Sie mit der Entwicklung Ihrer Code-Komponente. Die schnellste Möglichkeit, zu starten, besteht darin, `code .` über die Eingabeaufforderung auszuführen, sobald Sie sich im Verzeichnis `C:\Users\<your name>\Documents\<My_PCF_Component>` befinden. Durch diesen Befehl wird das Komponentenprojekt in Visual Studio Code geöffnet.
 
-## <a name="build-your-component"></a>Erstellen der Komponente
+## <a name="build-your-component"></a>Entwickeln Ihrer Komponente
 
-Um das Komponenten Projekt zu erstellen, öffnen Sie den Projektordner, der `package.json` in Visual Studio Code enthält, und verwenden Sie den Befehl (STRG + UMSCHALT + B), und wählen Sie dann die Buildoptionen aus. Alternativ können Sie die Komponente mithilfe des Befehls `npm run build` im Fenster Developer-Eingabeaufforderung für Visual Studio 2017 schnell erstellen.
+Um das Komponentenprojekt zu erstellen, öffnen Sie den Projektordner, der `package.json` in Visual Studio Code enthält, und verwenden Sie den Befehl (Strg-Umschalt-B). Dann wählen Sie Ihre Build-Optionen aus. Alternativ können Sie die Komponente auch schnell mit dem `npm run build`-Befehl in der Entwicklereingabeaufforderung für das VS 2017-Fenster erstellen.
 
 > [!TIP]
-> Informationen zum Debuggen der Komponente während oder nach dem Buildvorgang finden Sie unter [Debuggen einer Code Komponente](debugging-custom-controls.md).
+> Zum Debuggen der Komponente während oder nach dem Buildvorgang siehe [Debuggen einer Code-Komponente](debugging-custom-controls.md).
 
-Nachdem Sie die Komponenten Logik in typescript implementiert haben, müssen Sie alle Code Komponenten Elemente in einer Projektmappendatei bündeln, damit Sie die Lösung in Common Data Service importieren können. Weitere Informationen: [Verpacken einer Code Komponente](import-custom-controls.md)
+Nach dem Implementieren der Komponentenlogik in TypeScript müssen Sie alle Codekomponentenelemente in einer Lösungsdatei bündeln, damit Sie die Lösung in Common Data Service importieren können. Weitere Informationen: [Bündeln einer Code-Komponente](import-custom-controls.md).
 
-## <a name="known-configuration-issues-and-workarounds"></a>Bekannte Konfigurationsprobleme und Problem Umgehungen
+## <a name="known-configuration-issues-and-workarounds"></a>Bekannte Konfigurationsprobleme und Behebungen
 
-**MSBuild-Fehler MSB4036:**
+**Msbuild-Fehler MSB4036:**
 
-1. Der Name der Aufgabe in der Projektdatei ist mit dem Namen der Aufgaben Klasse identisch.
-2. Die Task-Klasse ist öffentlich und implementiert die Microsoft. Build. Framework. ITask-Schnittstelle.
-3. Der Task wurde mit *\<UsingTask >* in der Projektdatei oder in den *. Tasks-Dateien, die sich im Pfad Verzeichnis befinden, ordnungsgemäß deklariert.
+1. Der Name der Aufgabe in der Projektdatei gleicht dem Namen der Aufgabenklasse.
+2. Die Aufgabenklasse ist öffentlich und implementiert die Microsoft.Build.Framework.ITask-Schnittstelle.
+3. Die Aufgabe ist mit *\<UsingTask>* korrekt in der Projektdatei in den *.tasks-Dateien im Pfadverzeichnis deklariert.
 
-**Lösungs**
+**Lösung:**
 
-1. Öffnen Sie Visual Studio-Installer. 
-1. Wählen Sie für Visual Studio 2017 die Option **ändern**aus. 
-1. Wählen Sie **einzelne Komponenten**aus.
-1. Aktivieren Sie unter Code Tools die Option **nuget-Ziele & Buildaufgaben**.
+1. Öffnen Sie das Visual Studio-Installationsprogramm. 
+1. Wählen Sie für VS 2017 **Ändern** aus. 
+1. Klicken Sie auf „Einzelne Komponenten“.
+1. Überprüfen Sie unter „Code-Tools“ die Option **NuGet-Ziele und Build-Aufgaben**.
 
-**Verleger Präfix**
+**Herausgeberpräfix**
 
-Wenn eine Komponente mit einer powerapps-CLI-ToolsVersion kleiner als 0.4.3 erstellt wird, tritt ein Fehler auf, wenn Sie versuchen, die Projektmappendatei erneut in Common Data Service zu importieren. Der Fehler wird ausgelöst, weil der neu importierte Komponenten Name nun mit dem Herausgeber Präfix versehen wird, um seine Eindeutigkeit sicherzustellen und Konflikte zu vermeiden.
+Wenn eine Komponente mithilfe der PowerApps CLI-Toolversion unter 0.4.3 erstellt wird, wird Ihnen eine Fehlermeldung angezeigt, wenn Sie versuchen, eine Lösungsdatei wieder in Common Data Service zu importieren. Dieser Fehler wird ausgegeben, weil dem Namen der neu importierten Komponente jetzt das Herausgeberpräfix angehängt wird, um sicherzustellen, dass dieser eindeutig ist, und um Konflikte zu vermeiden.
 
-Problem **Umgehung**:
+**Problemumgehung**:
 
-- Löschen Sie die Projekt Mappe mit der relevanten Komponente aus Common Data Service. Wenn die Komponente bereits in einem Formular oder Raster konfiguriert ist, muss Sie zuerst entfernt werden, da die Komponenten Lösung eine Abhängigkeit von der Konfiguration aufweist.  
-- Importieren Sie die neue Projekt Mappe mit Updates für die-Komponente, die mit der neuesten CLI-Version erstellt wurde.
-- Neu importierte Komponenten können jetzt in Formularen oder Raster konfiguriert werden.  
+- Löschen Sie die Lösung, die die relevante Komponente aus Common Data Service enthält. Wenn die Komponente bereits in einem Formular oder einem Raster konfiguriert ist, muss sie dort zuerst entfernt werden, da die Komponentenlösung in einer Abhängigkeit zur Konfiguration stand.  
+- Importieren Sie die neue Lösung mit Updates an der Komponente, die durch die aktuelle CLI-Version erstellt wurden.
+- Neu importierte Komponenten können jetzt in Formularen oder Rastern konfiguriert werden.  
 
 
 <!--2. When the components are created with the publisher prefix in mixed or upper case using the new CLI tooling version, it throws an error while importing the solution. This happens because the updated tooling version (0.4.3 and newer) now enforces the platform standard for lower case publisher prefix.
@@ -83,9 +77,9 @@ Problem **Umgehung**:
 
 ### <a name="see-also"></a>Siehe auch
 
-[Code Komponenten Debuggen](debugging-custom-controls.md)<br/>
-[Packen einer Code Komponente](import-custom-controls.md)<br/>
-[Hinzufügen von Code Komponenten zu einem Feld oder einer Entität](add-custom-controls-to-a-field-or-entity.md)<br/>
-[Aktualisieren vorhandener Code Komponenten](updating-existing-controls.md)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](reference/index.md)<br/>
-[Übersicht über das powerapps-Komponenten Framework](overview.md)
+[Debuggen von Code-Komponenten](debugging-custom-controls.md)<br/>
+[Bündeln einer Code-Komponente](import-custom-controls.md)<br/>
+[Hinzufügen von Code-Komponenten zu einem Feld oder einer Entität](add-custom-controls-to-a-field-or-entity.md)<br/>
+[Aktualisieren vorhandener Code-Komponenten](updating-existing-controls.md)<br/>
+[PowerApps component framework-API-Referenz](reference/index.md)<br/>
+[Übersicht über das PowerApps component framework](overview.md)

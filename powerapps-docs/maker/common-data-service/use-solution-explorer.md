@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Lösungen in PowerApps | MicrosoftDocs
+title: Lösungen in PowerApps verwenden | MicrosoftDocs
 description: 'Hier erfahren Sie, wie Sie die Lösung nutzen, um Apps zu erstellen oder anzupassen'
 ms.custom: ''
 ms.date: 06/17/2019
@@ -23,15 +23,15 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-solutions-in-powerapps"></a>Verwenden von Lösungen in PowerApps
+# <a name="use-solutions-in-powerapps"></a>Lösungen in PowerApps verwenden
 
- In PowerApps können Sie eine Liste mit Lösungen anzeigen, indem Sie in der linken Navigation die Option **Lösungen** wählen. Sie können dann eine Lösung wählen, um alle ihrer Komponenten anzuzeigen. 
+ Innerhalb von PowerApps können Sie eine Liste von Lösungen einsehen, indem Sie **Lösungen** in der linken Navigation auswählen. Sie können dann eine Lösung wählen, um alle ihrer Komponenten anzuzeigen. 
  
 > [!div class="mx-imgBorder"]  
 > ![Demolösung mit allen Komponenten](media/solution-all-items-list.PNG "Demolösung mit allen Komponenten")  
  
 > [!NOTE]
->  Die Lösungserfahrung ist nur online und für Umgebungen ab Version 9.1.0.267 und höher verfügbar. Um Ihre Version zu prüfen, gehen Sie zu ...[PowerApps-Administratorcenter](https://admin.powerapps.com/)> **Umgebungen** > wählen Sie Ihre Umgebung > Registerkarte **Details**. Bei Umgebungen in früheren Versionen wird die Lösung bei Auswahl in der klassischen Umgebung geöffnet.  
+>  Die Lösungserfahrung ist nur online und für Umgebungen ab Version 9.1.0.267 und höher verfügbar. Um Ihre Version zu überprüfen, gehen Sie bitte zu ...[PowerApps Admin-Center](https://admin.powerapps.com/)> **Umgebungen** > wählen Sie Ihre Umgebung > **Details** Registerkarte. Für Umgebungen mit früheren Versionen öffnet die Auswahl einer Lösung diese im klassischen Sinne.  
  
  Sie können alle Komponenten einer Lösung durchsuchen, indem Sie durch die Elemente scrollen. Wenn mehr als 100 Elemente in der Liste vorhanden sind, können Sie die Option **Die nächsten 100 Elemente laden** wählen, um mehr anzuzeigen. 
  
@@ -75,7 +75,7 @@ search.app:
 > [!div class="mx-imgBorder"]  
 > ![Vorhandene Komponente einer Lösung hinzufügen](media/solution-add-existing-component.PNG "Vorhandene Komponente einer Lösung hinzufügen")  
   
- Bei verwalteten Lösungen sind nur bestimmte Befehle verfügbar, und Sie sehen die unten angezeigte Message. Sie müssen die Komponente in der Lösung namens **Standardlösung** suchen und versuchen, sie dort zu bearbeiten, oder sie einer anderen von Ihnen erstellten nicht verwalteten Lösung hinzuzufügen. Möglicherweise kann die Komponente nicht angepasst werden. Weitere Informationen: [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)
+ Bei verwalteten Lösungen sind nur bestimmte Befehle verfügbar, und Sie sehen die unten angezeigte Message. Sie müssen es zu einer anderen nicht verwalteten Lösung hinzufügen, die Sie erstellt haben, um die Komponente anzupassen. Möglicherweise kann die Komponente nicht angepasst werden. Weitere Informationen: [Verwaltete Eigenschaften](solutions-overview.md#managed-properties)
 
 > [!div class="mx-imgBorder"]  
 > ![Verwaltete Lösung](media/managed-solution.PNG "Verwaltete Lösung")  
@@ -87,22 +87,23 @@ search.app:
 
 ## <a name="classic-solution-explorer"></a>Klassischer Projektmappen-Explorer
 
-In PowerApps können Sie den klassischen Projektmappen-Explorer anzeigen, indem Sie im linken Navigationsbereich **Lösungen** und dann **In klassischen Modus wechseln** in der Befehlsleiste wählen. Der klassische Projektmappen-Explorer ist derjenige, der zuvor über den Bereich **Einstellungen > Erweiterte Anpassungen** in PowerApps verfügbar war. Falls Sie Dynamics 365 for Customer Engagement-Benutzer sind, verwenden Sie den klassischen Projektmappen-Explorer für die Arbeit mit Lösungen.  
+In PowerApps können Sie den klassischen Lösungsexplorer anzeigen, indem Sie im linken Navigationsbereich **Lösungen** auswählen und dann **Zum Klassiker wechseln** in der Befehlsleiste wählen. Der klassische Lösungsexplorer ist derjenige, der zuvor über den Bereich **Einstellungen > Erweiterte Anpassungen** in PowerApps verfügbar war. 
 
 ## <a name="known-limitations"></a>Bekannte Einschränkungen
 
 - Benutzerdefinierte Konnektoren sind nicht in einer Lösung verfügbar.
-- Canvas-Apps müssen nach dem Import einer Lösung geöffnet werden, um die Verbindungen zu aktualisieren.
+- Canvas-Apps müssen nach dem Import einer Lösung abgespielt werden, um die Verbindungen zu autorisieren.
 - Wenn eine Canvas-App in eine verwalteten Lösung gepackt wurde, kann sie in der Zielumgebung noch bearbeitet, aber nicht wieder veröffentlicht werden.
-- Abhängigkeiten sind für Canvas-Apps nicht verfügbar.
 - Durch das Löschen einer verwalteten Lösung wird kein Rollback auf eine andere Version der Canvas-App ausgeführt. 
--   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Common Data Service-Datenbank (Common Data Service) verwaltet.
+-   Der Zugriff auf Canvas-Apps (CRUD und Sicherheit) wird vollständig in PowerApps und nicht in der Datenbank Common Data Service (Common Data Service) verwaltet.
 -   Common Data Service-APIs zum Aufrufen von Canvas-Apps werden blockiert und geben nichts mehr zurück. 
--   In einer Lösung erstellte Canvas-Apps und Flows können als Miteigentümer einer AAD-Sicherheitsgruppe nicht geteilt werden.
+-   Canvas-Anwendungen, die aus einer Lösung erstellt wurden, können nicht als Miteigentümer einer AAD Security Group freigegeben werden.
 -   Canvas-Apps werden nicht im klassischen Projektmappen-Explorer angezeigt.
+- Aus Lösungen erstellte Abläufe werden in der Liste "Team Flows" nicht angezeigt.
 - Über eine Schaltfläche ausgelöste Flows sind in Lösungen nicht verfügbar.
 - Über Canvas-App ausgelöste Flows sind in Lösungen nicht verfügbar.
-- Über Microsoft 365-Anwendungen wie SharePoint und Excel ausgelöste Flows sind nicht in Lösungen verfügbar.
+- Aus Microsoft 365-Anwendungen wie Excel ausgelöste Flows sind in Lösungen nicht verfügbar.
+- Flows, die mit SharePoint verbunden sind, sind in Lösungen nicht verfügbar.
 - Flows in Lösungen unterstützen keine delegierte Authentifizierung. Beispielsweise wird der Zugriff auf einen Flow nicht automatisch anhand des Zugriffs auf die SharePoint-Liste erteilt, aus der der Flow erstellt wurde.
 
  Ausführliche Informationen zum Anpassen einzelner Lösungskomponenten finden Sie in den folgenden Themen:  

@@ -1,6 +1,6 @@
 ---
-title: " Iframe-Komponente | Microsoft-Dokumentation"
-description: Implementieren der iframe-Komponente
+title: ' IFRAME-Komponente | Microsoft Docs'
+description: Implementieren einer IFRAME-Komponente
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,25 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d10b03c478f238df02ee7e1309c0e39e758ce4c9
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340458"
 ---
 # <a name="implementing-a-iframe-component"></a>Implementieren einer IFRAME-Komponente
 
-In diesem Beispiel wird beschrieben, wie eine Code Komponente an verschiedene Felder im Formular gebunden und der Wert dieser Felder als Eingabe Eigenschaften für die Komponente verwendet wird.  
+Dieses Beispiel beschreibt, wie man eine Codekomponente an verschiedene Felder auf dem Formular bindet und den Wert dieser Felder als Eingabeeigenschaften für die Komponente verwendet.  
 
 > [!div class="mx-imgBorder"]
-> Iframe- ![Komponente]((../media/iframe-control.png "iframe") -Komponente)
+> ![IFRAME-Komponente](../media/iframe-control.png "IFRAME-Komponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
+Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
 
-## <a name="manifest"></a>Kundiger
+## <a name="manifest"></a>Manifest
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -49,9 +43,9 @@ Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau)
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSIFrameControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // reference to Bing Map IFrame HTMLElement
+  // Reference to Bing Map IFrame HTMLElement
   private _bingMapIFrame: HTMLElement;
-  // reference to the control container HTMLDivElement
+  // Reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   // Flag if control view has been rendered
@@ -147,12 +141,12 @@ export class TSIFrameControl
 ```
 
 > [!NOTE]
-> Das powerapps-Komponenten Framework unterstützt noch keine Verbund Felder, sodass Sie diese Komponente nicht an die Standardwerte für breiten-und Längengrade binden können. Sie müssen die Code Komponente an ein anderes Gleit Komma Feld binden.
+> Das PowerApps component framework unterstützt noch keine zusammengesetzten Felder, so dass Sie diese Komponente nicht an die Out-of-the-Box-Adressfelder Breitengrad und Längengrad binden können. Sie müssen die Codekomponente an ein anderes Gleitkomma-Feld binden.
 
-Diese Beispiel Komponente rendert eine `IFRAME` die `Bing Maps URL` anzeigt. Die Komponente ist an zwei Gleit Komma Felder in dem Formular gebunden, die als Parameter an die Komponente weitergegeben und in den `IFRAME URL` eingefügt werden, um die Übersicht über die Längen-und Längengrade der bereitgestellten Eingaben zu aktualisieren.  
+In dieser Beispielkomponente wird `IFRAME` gerendert, das `Bing Maps URL` anzeigt. Die Komponente ist an zwei Gleitkommafelder im Formular gebunden, die als Parameter an die Komponente übergeben und in `IFRAME URL` eingebracht werden, um Bing Map mit dem Längengrad und Breitendrad der bereitgestellten Eingabe zu aktualisieren.  
 
-Aktualisieren Sie die `Manifest` Datei so, dass Sie die Bindung an zwei zusätzliche Felder im Formular einschließt.  
-Diese Änderung informiert das powerapps-Komponenten Framework, dass diese gebundenen Felder während der Initialisierung an die Komponente und immer dann, wenn einer der Werte aktualisiert wird, an die Komponente übermittelt werden müssen.
+Aktualisieren Sie die `Manifest`-Datei, um Bindung an zwei zusätzliche Felder im Formular einzuschließen.  
+Diese Änderung teilt dem PowerApps component framework mit, dass diese gebundenen Felder bei der Initialisierung und bei jeder Aktualisierung eines der Werte an die Komponente übergeben werden müssen.
   
 ```xml
 
@@ -160,9 +154,9 @@ Diese Änderung informiert das powerapps-Komponenten Framework, dass diese gebun
 <property name="longitudeValue" display-name-key="Bing_Maps_Longitude_Value" description-key="longitude" of-type="FP" usage="bound" required="true" />  
 ```
 
-Möglicherweise sind zusätzliche gebundene Eigenschaften erforderlich. Dies wird während der Komponenten Konfiguration erzwungen, wenn die Komponente an das Formular gebunden wird. Dies kann konfiguriert werden, indem das `required`-Attribut des Eigenschafts Knotens im Komponenten Manifest festgelegt wird. Legen Sie den Wert auf false fest, wenn Sie nicht möchten, dass die Komponenten Eigenschaft an ein Feld gebunden ist. 
+Möglicherweise gelten zusätzliche gebundene Eigenschaften oder nicht. Dadurch wird bei der Komponentenkonfiguration erzwungen, wenn die Komponente an das Formular gebunden wird. Dies kann konfiguriert werden, indem das Attribut `required` des Eigenschaftenknotens im Komponentenmanifest festgelegt wird. Legen Sie den Wert auf "falsch" fest, wenn Sie die Komponenteneigenschaft nicht an ein Feld gebunden werden soll. 
  
-`ControlFramework.d.ts` müssen aktualisiert werden, um `IInputs`-Schnittstelle zwei Felder hinzuzufügen. Dies ist das Format, das das powerapps-Komponenten Framework die Feldwerte übergibt. Wenn Sie diese Werte der `IInputs`-Schnittstelle hinzufügen, kann die typescript-Datei auf die Werte verweisen und erfolgreich kompiliert werden.  
+`ControlFramework.d.ts` muss aktualisiert werden, um der `IInputs`-Schnittstelle zwei Felder hinzuzufügen. Dies ist das Format, in dem das PowerApps component framework die Feldwerte übergibt. Das Hinzufügen dieser Werte zur `IInputs`-Schnittstelle ermöglicht es Ihrer TypeScript-Datei, die Werte zu verweisen und erfolgreich zu kompilieren.  
 
 ```TypeScript
     export interface IInputs 
@@ -171,13 +165,13 @@ Möglicherweise sind zusätzliche gebundene Eigenschaften erforderlich. Dies wir
     }  
  ```
 
-Das anfängliche Rendering generiert ein `IFRAME`-Element und fügt es an den Steuerelement Container an. Diese `IFRAME` wird verwendet, um die Bildschirm- **Karte**anzuzeigen. Die URL des `IFRAME` ist auf einen `Bing Map URL` festgelegt und schließt die gebundenen Felder ("latitudevalue" und "-Wert") in die URL ein, um die Karte an der angegebenen Position zu zentrieren. 
+Das ursprüngliche Rendering generiert ein `IFRAME`-Element und hängt es dem Steuerelement-Container an. Dieses `IFRAME` wird häufig verwendet, um **Bing Map** anzuzeigen. Die URL von `IFRAME` wird auf eine `Bing Map URL` festgelegt,und enthält die gebundenen Felder (latitudeValue und longitudeValue) in der URL, um die Karte am angegebenen Standort zu zentrieren. 
 
-Die [UpdateView](../reference/control/updateview.md) -Methode wird immer dann aufgerufen, wenn eines dieser Felder im Formular aktualisiert wird. Diese Methode aktualisiert die URL des **Karten** -Iframes von dumaps so, dass die neuen breiten-und Längengrad Werte an die Komponente übermittelt werden. Um diese Komponente zur Laufzeit anzuzeigen, binden Sie die Komponente wie jede andere Code Komponente an ein Feld im Formular.
+Die [updateView](../reference/control/updateview.md)-Methode wird aufgerufen, wenn eine dieser Felder im Formular aktualisiert wird. Diese Methode aktualisiert die URL des **Bing Map**-IFRAMEs, um die neuen Breiten- und Längengradwerte zu verwenden, die der Komponente übergeben werden. Um diese Komponente zur Laufzeit anzuzeigen, binden Sie die Komponente wie jede andere Codekomponente an ein Feld im Formular.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)<br />
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br />
-[Übersicht über das powerapps-Komponenten Framework](../overview.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)<br />
+[PowerApps component framework-API-Referenz](../reference/index.md)<br />
+[Übersicht über das PowerApps component framework](../overview.md)

@@ -25,9 +25,7 @@ search.app:
 
 XRM-Tooling stellt Ihnen die folgenden **Windows PowerShell** Cmdlets zur Verfügung, mit denen Sie eine Verbindung zu Common Data Service herstellen und Organisationen abrufen können, auf die der aktuelle Benutzer Zugriff hat: `Get-CrmConnection` und `Get-CrmOrganizations`.  
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Verwenden Sie PowerShell-Cmdlets für XRM-Tooling, um die Verbindung mit Customer Engagement herzustellen](/dynamics365/customer-engagement/developer/xrm-tooling/use-powershell-cmdlets-xrm-tooling-connect)
-  
+ 
 <a name="Prereq"></a>   
 
 ## <a name="prerequisites"></a>Voraussetzungen  

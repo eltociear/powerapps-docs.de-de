@@ -1,5 +1,5 @@
 ---
-title: Hierarchische Daten mit PowerApps abfragen und visualisieren | MicrosoftDocs
+title: Abfrage und Visualisierung hierarchischer Daten mit PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie hierarchische verknüpfte Daten abgefragt und visualisiert werden'
 ms.custom: ''
 ms.date: 06/20/2018
@@ -37,7 +37,7 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
 <a name="BKMK_Querydata"></a>   
 ## <a name="query-hierarchical-data"></a>Abfragen von hierarchischen Daten  
- Mit Common Data Service werden hierarchische Datenstrukturen durch auf sich selbst verweisende Beziehungen der verknüpften Datensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
+ Mit Common Data Service werden hierarchische Datenstrukturen durch selbstreferenzierende Beziehungen der Bezugsdatensätze unterstützt. In der Vergangenheit mussten Sie die verknüpften Datensätze iterativ abfragen, um hierarchische Daten anzuzeigen. Jetzt können Sie verknüpften Daten in einem Schritt als Hierarchie abfragen. Sie können nach Entitätsdatensätzen abfragen, indem Sie die **Unter** und **Nicht Unter**-Logik verwenden. Die hierarchischen Operatoren **Unter** und **Nicht unter** werden in der erweiterten Suche und im Workfloweditor verfügbar gemacht. Weitere Informationen zum Verwenden dieser Operatoren finden Sie unter [Konfigurieren von Workflowschritten](/flow/configure-workflow-steps). Weitere Information zur erweiterten Suche finden Sie unter [Erstellen, Bearbeiten oder Speichern einer erweiterten Suche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search).  
   
  Die folgenden Beispiele illustrieren verschiedene Szenarien für das Abfragen von Hierarchien:  
   
@@ -86,7 +86,7 @@ Für einige Entitäten, wie Firmen und Benutzer, werden die Visualisierungen sta
   
 > [!TIP]
 >  Wenn eine Entität für eine Hierarchie aktiviert werden kann:  
->  Erweitern Sie im Projektmappen-Explorer die Entität, die Sie verwenden möchten. Die Entitätskomponente namens **Hierarchieeinstellungen** wird angezeigt. Die Entitäten, die nicht für eine Hierarchie aktiviert werden können, verfügen nicht über diese Komponente. Ausgenommen ist die Dynamics 365 Customer Engagement-Vertriebsgebietsentität. Obwohl **Hierarchieeinstellungen** für die Vertriebsgebietsentität angezeigt wird, kann die Entität nicht für eine Hierarchie aktiviert werden.  
+>  Erweitern Sie im Projektmappen-Explorer die Entität, die Sie verwenden möchten. Die Entitätskomponente namens **Hierarchieeinstellungen** wird angezeigt. Die Entitäten, die nicht für eine Hierarchie aktiviert werden können, haben diese Komponente nicht, mit Ausnahme der Entität Dynamics 365 Sales Territory. Obwohl **Hierarchieeinstellungen** für die Vertriebsgebietsentität angezeigt wird, kann die Entität nicht für eine Hierarchie aktiviert werden.  
   
  Was Sie beachten müssen, wenn Sie Visualisierungen erstellen:  
   

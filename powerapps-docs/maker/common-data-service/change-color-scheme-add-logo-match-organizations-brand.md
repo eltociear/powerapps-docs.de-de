@@ -3,7 +3,7 @@ title: 'Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend 
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="create-a-theme"></a>Erstellen eines Designs
 
-Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen im nicht benutzerdefinierten System vornehmen. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, indem Sie ein Unternehmenslogo hinzufügen und einen entitätsspezifischen Farbton zur Verfügung stellen. Ein Design wird erstellt, indem die Anpassungstools in der Benutzeroberfläche verwendet werden, ohne dass ein Entwickler hierfür Code schreiben muss. Sie können Designs, die in Ihrer Organisation verwendet werden, erstellen, ändern oder löschen. Die Designanpassung wird in Webformularen in  Dynamics 365 for Outlook unterstützt. Sie können mehrere Designs definieren, jedoch kann nur eins als das Standarddesign festgelegt und veröffentlicht werden.  
+Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen im nicht benutzerdefinierten System vornehmen. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, indem Sie ein Unternehmenslogo hinzufügen und einen entitätsspezifischen Farbton zur Verfügung stellen. Ein Design wird erstellt, indem die Anpassungstools in der Benutzeroberfläche verwendet werden, ohne dass ein Entwickler hierfür Code schreiben muss. Sie können Designs, die in Ihrer Organisation verwendet werden, erstellen, ändern oder löschen. Die Designanpassung wird in Webformularen in Dynamics 365 for Outlook unterstützt. Sie können mehrere Designs definieren, jedoch kann nur eins als das Standarddesign festgelegt und veröffentlicht werden.  
   
 <a name="UseThemes"></a>   
 ## <a name="use-themes-to-enhance-the-user-interface-and-create-your-product-branding"></a>Verwenden von Designs, um die Benutzeroberfläche zu optimieren und ein Produktbranding zu erstellen  
@@ -119,7 +119,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
 ### <a name="theme-contrast"></a>Designkontrast  
  Es wird die folgende Methode zur Bereitstellung von Kontrastfarben empfohlen:  
   
--   Wählen Sie die kontrastierenden Farben sorgfältig aus. Der Common Data Service für Apps mit  Standarddesign  hat die richtigen Kontrastverhältnisse, um optimale Benutzerfreundlichkeit sicherzustellen. Verwenden Sie ähnliche Verhältnisse für die neuen Designs.  
+-   Wählen Sie die kontrastierenden Farben sorgfältig aus. Das Standarddesign von Common Data Service hat die richtigen Kontrastverhältnisse, um optimale Benutzerfreundlichkeit sicherzustellen. Verwenden Sie ähnliche Verhältnisse für die neuen Designs.  
   
 -   Für den kontrastreichen Modus können Sie die standardmäßige Farbeneinstellungen verwenden.  
   
@@ -146,5 +146,5 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
   
 ## <a name="see-also"></a>Siehe auch  
          
- [Video: Designs in Dynamics 365 Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Abfragen und Bearbeiten eines Organisationsdesigns](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Video: Designs](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Abfragen und Bearbeiten eines Organisationsdesigns](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

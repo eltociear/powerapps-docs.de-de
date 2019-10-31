@@ -1,12 +1,7 @@
 ---
-title: Konfigurieren von Ereignishandlern für Modell-angetriebene Hauptformulare in PowerApps | MicrosoftDocs
-description: Grundlegendes zum Konfigurieren von Ereignishandlern in Dynamics 365 for Customer Engagement
-Keywords: Hauptformular; Ereignishandler konfigurieren; Dynamics 365
+title: Konfigurieren von Ereignishandlern für modellgesteuerte App-Hauptformulare in PowerApps | MicrosoftDocs
+description: Konfiguration von Ereignishandlern
 author: Mattp123
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018

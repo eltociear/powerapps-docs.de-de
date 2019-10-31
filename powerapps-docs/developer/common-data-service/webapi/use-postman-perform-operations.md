@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden von Postman , um Vorgänge mit der Web-API durchzuführen (Common Data Service for Apps)| MicrosoftDocs'
+title: 'Verwenden von Postman, um Operationen mit der Web API durchzuführen (Common Data Service für Apps)| MicrosoftDocs'
 description: 'Erfahren Sie, wie Sie Web-API-Anfragen mit Postman erstellen und versenden.'
 ms.custom: null
 ms.date: 03/22/2019
@@ -8,8 +8,6 @@ ms.service: powerapps
 ms.suite: null
 ms.tgt_pltfrm: null
 ms.topic: article
-applies_to:
-  - Dynamics 365 for Customer Engagement (online)
 ms.assetid: AB50128B-D8E3-47A3-A0F8-9594EF6B7022
 caps.latest.revision: 7
 author: susikka

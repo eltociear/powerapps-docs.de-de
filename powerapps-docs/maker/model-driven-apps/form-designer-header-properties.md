@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Kopfzeileneigenschaften im Formulardesigner | MicrosoftDocs
 ms.custom: ''
-ms.date: 08/02/2019
+ms.date: 09/30/2019
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -24,134 +24,144 @@ search.app:
 ---
 
 # <a name="configure-header-properties-in-the-form-designer"></a>Konfigurieren von Kopfzeileneigenschaften im Formulardesigner
-Entwickler können die Dichte modellgesteuerter App-Formularkopfzeilen steuern, um die Anforderungen von Benutzern zu erfüllen, die ein Formular verwenden.
 
-## <a name="high-density-header"></a>Kopfzeile mit hoher Dichte
-Formularkopfzeilen mit hoher Dichte stellen sicher, dass wichtige Informationen immer für die Benutzer sichtbar sind. Bei Verwendung einer Kopfzeile mit hoher Dichte werden Datensatztitel niemals abgeschnitten. Sogar lange Datensatztitel werden mit mehreren Zeilen angezeigt. Entsprechend stellen Kopfzeilen mit hoher Dichte ebenfalls sicher, dass vier Feldwerte direkt in der Kopfzeile sichtbar sind und nicht abgeschnitten oder ausgeblendet werden.  
+Hersteller können die Dichte der modellgetriebenen App-Formularheader steuern, um die Bedürfnisse aller Benutzer des Formulars zu erfüllen.
 
-Um sicherzustellen, dass wichtige Informationen immer angezeigt werden, zeigt das Framework schreibgeschützten Feldwerte an und Benutzer können die anzeigten Feldwerte in der Kopfzeile nicht direkt bearbeiten. Visualisierungen wie benutzerdefinierte Steuerelemente oder Webressourcen sind auch nicht zulässig.
+> [!NOTE]
+> Diese Funktion ist nur in Umgebungen verfügbar, die sich für die frühe Vorschau auf die Funktionen der Release Wave 2 2019 entscheiden. Mehr Informationen: [Frühzeitiges Opt-in zu Release Wave 2 2019](https://docs.microsoft.com/power-platform/admin/preview-october-2019-updates) 
 
-Wenn ein Formular keine Kopfzeilendichte angibt oder wenn ein neues Formular erstellt wird, wird vom Framework standardmäßig eine Kopfzeile mit hoher Dichte verwendet.
+## <a name="high-density-header"></a>Kopf mit hoher Dichte
+
+Der hochdichte Kopf stellt sicher, dass die wichtigsten Informationen für den Benutzer jederzeit sichtbar sind. Mit dem Kopf mit hoher Dichte wird der Datensatz-Titel nie abgeschnitten. Sogar lange Datensatztitel werden mit mehreren Zeilen angezeigt. Ebenso stellt der High-Density-Kopf sicher, dass bis zu vier Feldwerte direkt im Kopf sichtbar sind und nie abgeschnitten oder versteckt werden.  
+
+Um sicherzustellen, dass wichtige Informationen immer angezeigt werden, zeigt das Framework schreibgeschützten Feldwerte an und Benutzer können die anzeigten Feldwerte in der Kopfzeile nicht direkt bearbeiten. Visualisierungen wie benutzerdefinierte Komponenten oder Web-Ressourcen sind ebenfalls nicht erlaubt.
+
+Wenn ein Formular keine Kopfdichte angibt oder wenn ein neues Formular erstellt wird, verwendet das Framework standardmäßig den Kopf mit hoher Dichte.
 
 > [!div class="mx-imgBorder"] 
-> ![Kopfzeile mit hoher Dichte](media/form-header-high-density.png "Kopfzeile mit hoher Dichte")
+> ![Hochdichter Kopf](media/form-header-high-density.png "Hochdichter Kopf")
     
 ## <a name="low-density-header"></a>Kopfzeile mit niedriger Dichte
-Formularkopfzeilen mit niedriger Dichte ermöglichen Benutzern, die Feldwerte direkt in der Kopfzeile zu bearbeiten. Visualisierungen wie benutzerdefinierte Steuerelemente oder Webressourcen sind auch zulässig.  
+Formularkopfzeilen mit niedriger Dichte ermöglichen Benutzern, die Feldwerte direkt in der Kopfzeile zu bearbeiten. Es ermöglicht auch Visualisierungen wie kundenspezifische Komponenten und Web-Ressourcen.  
   
-Allerdings werden als Folge häufig wichtige Informationen abgeschnitten oder sind nicht wirklich sichtbar. Kopfzeilen mit niedriger Dichte schneiden den Datensatztitel sowie die Feldwerte ab, die in der Kopfzeile angezeigt werden. Häufig sind nur ein oder zwei Felder direkt in der Kopfzeile und im Restüberlauf sichtbar und werden in einem Flyout angezeigt, das einen zusätzlichen Klick erfordert.
+Allerdings werden als Folge häufig wichtige Informationen abgeschnitten oder sind nicht wirklich sichtbar. Die Kopfzeile mit niedriger Dichte kürzt den Datensatz-Titel sowie die im Kopf angezeigten Feldwerte. Häufig sind nur ein oder zwei Felder direkt in der Kopfzeile und im Restüberlauf sichtbar und werden in einem Flyout angezeigt, das einen zusätzlichen Klick erfordert.
 
 > [!div class="mx-imgBorder"] 
-> ![Kopfzeile mit niedriger Dichte](media/form-header-low-density.png "Kopfzeile mit niedriger Dichte")
+> ![Niedrigdichter Kopf](media/form-header-low-density.png "Niedrigdichter Kopf")
 
 ### <a name="configuring-header-density"></a>Konfigurieren von Kopfzeilendichte
 
-Um die Kopfzeilendichte eines modellgesteuerten Formular zu konfigurieren, führen Sie die folgenden Schritte aus.
+Um die Kopfdichte eines modellgetriebenen Formulars zu konfigurieren, gehen Sie wie folgt vor:
 1.  Öffnen Sie den Formulardesigner, [um ein Formular zu erstellen oder zu bearbeiten](create-and-edit-forms.md).
 2.  Wählen Sie die Formularkopfzeile aus, indem Sie die Kopfzeile in der Formularvorschau auswählen oder mithilfe der [Strukturansicht](using-tree-view-on-form.md).
-3.  Im Eigenschaftenbereich wählen Sie **Hohe Dichte**, um die Formularkopfzeile mit hoher Dichte zu verwenden, oder löschen Sie die Auswahl, um eine Formularkopfzeile mit niedriger Dichte zu verwenden.
+3.  Wählen Sie im Eigenschaftsfenster **Hohe Dichte**, um einen Formularkopf mit hoher Dichte zu verwenden, oder löschen Sie ihn, um einen Formularkopf mit niedriger Dichte zu verwenden.
 4.  Wählen Sie in der Befehlsleiste **Speichern** aus, um das Formular zu speichern, oder wählen Sie **Veröffentlichen** aus, wenn Sie die Änderungen speichern und für Benutzer sichtbar anzeigen möchten.
 
 > [!NOTE]
 > Verwenden Sie den neuen Formulardesigner. Der klassische Formulardesigner bietet keine Möglichkeit, die Kopfzeilendichte zu konfigurieren.
 
 ## <a name="header-flyout"></a>Kopfzeilenflyout
-Das Kopfzeilenflyout wird angezeigt, wenn Benutzer das Chevron in der Formularkopfzeile auswählen. Benutzer können die Eingabefeldwerte bearbeiten. Zudem zeigt es Visualisierungen wie benutzerdefinierte Steuerelemente oder Webressourcen an, die Teil der Formularkopfzeile sind.
+Das Kopfzeilenflyout wird angezeigt, wenn Benutzer das Chevron in der Formularkopfzeile auswählen. Es ermöglicht dem Benutzer die Bearbeitung von Feldwerten und zeigt auch Visualisierungen wie benutzerdefinierte Komponenten oder Webressourcen an, die Teil des Formularkopfs sind.
 
 Die Verhaltensweisen des Kopfzeilenflyouts ändert sich abhängig von der Kopfzeilendichtekonfiguration.
 
-### <a name="high-density-header-flyout"></a>Kopfzeilenflyout mit hoher Dichte
-Bei einer Formularkopfzeile mit hoher Dichte zeigt das Kopfzeilenflyout alle Kopfzeilenfelder einschließlich der vier Felder an, die direkt in der Kopfzeile angezeigt werden. Das Framework werden standardmäßig das Kopfzeilenflyout, wenn eine Kopfzeile mit hoher Dichte verwendet wird. Entwickler können die Sichtbarkeit des Kopfzeilenflyouts mit einer Kopfzeile mit hoher Dichte steuern.
+### <a name="high-density-header-flyout"></a>Flyout für Kopfzeilen mit hoher Dichte
+Bei einem hochdichten Formularkopf zeigt der Kopfflyout alle Kopffelder einschließlich der vier Felder, die direkt im Kopf angezeigt werden. Das Framework zeigt standardmäßig den Kopf Flyout an, wenn ein Kopf mit hoher Dichte verwendet wird. Hersteller können die Sichtbarkeit des Kopf-Flyouts mit einem Kopf mit hoher Dichte steuern.
 
 > [!div class="mx-imgBorder"] 
-> ![Kopfzeilenflyout mit Kopfzeile mit hoher Dichte](media/form-header-flyout-high-density.png "Kopfzeilenflyout mit Kopfzeile mit hoher Dichte")
+> ![Kopf Flyout mit hochdichtem Kopf](media/form-header-flyout-high-density.png "Kopf Flyout mit hochdichtem Kopf")
 
-### <a name="low-density-header-flyout"></a>Kopfzeilenflyout mit niedriger Dichte
-Bei einer Formularkopfzeile mit niedriger Dichte zeigt das Kopfzeilenflyout nur Überlauffelder an, z. B. Felder, die das Formular basierend auf der Breite des Formulars nicht direkt in der Kopfzeile anzeigen kann. Das Kopfzeilenflyout wird zudem automatisch basierend auf der Anzahl von Feldern in der Kopfzeile und der Breite des Formulars angezeigt oder ausgeblendet. Entwickler können die Sichtbarkeit des Kopfzeilenflyouts mit einer Kopfzeile mit niedriger Dichte nicht steuern.
+### <a name="low-density-header-flyout"></a>Flyout des Kopfs mit niedriger Dichte
+Bei einem Formularkopf mit niedriger Dichte zeigt der Kopf Flyout nur Überlauffelder an, wie beispielsweise Felder, die das Formular aufgrund der Breite des Formulars nicht direkt im Kopf anzeigen kann. Das Kopfzeilenflyout wird zudem automatisch basierend auf der Anzahl von Feldern in der Kopfzeile und der Breite des Formulars angezeigt oder ausgeblendet. Hersteller können die Sichtbarkeit des Kopf-Flyouts bei Verwendung eines Kopfs mit niedriger Dichte nicht kontrollieren.
 
 > [!div class="mx-imgBorder"] 
-> ![Kopfzeilenflyout mit Kopfzeile mit niedriger Dichte](media/form-header-flyout-low-density.png "Kopfzeilenflyout mit Kopfzeile mit niedriger Dichte")
+> ![Kopf Flyout mit niedrigdichtem Kopf](media/form-header-flyout-low-density.png "Kopf Flyout mit niedrigdichtem Kopf")
 
 ### <a name="show-or-hide-the-header-flyout"></a>Anzeigen oder Ausblenden des Kopfzeilenflyouts
-Wenn Sie das Kopfzeilenflyout für ein modellgesteuertes Formular ein- oder ausblenden möchten, führen Sie die folgenden Schritte aus.
+Um den Kopf-Flyout für ein modellgetriebenes Formular ein- oder auszublenden, führen Sie diese Schritte aus:
 
 1.  Öffnen Sie den Formulardesigner, [um ein Formular zu erstellen oder zu bearbeiten](create-and-edit-forms.md).
 2.  Wählen Sie die Formularkopfzeile in der Formularvorschau aus oder verwenden Sie die [Strukturansicht](using-tree-view-on-form.md), um sie auszuwählen.
-3.  Im Eigenschaftenbereich wählen Sie **Hohe Dichte** aus, um die Formularkopfzeile mit hoher Dichte zu verwenden. 
+3.  Wählen Sie im Eigenschaftsfenster **Hohe Dichte**, um den Formularkopf mit hoher Dichte zu verwenden. 
 4.  Im Eigenschaftenbereich wählen Sie **Kopfzeilenflyout anzeigen** aus, um das Kopfzeilenflyout anzuzeigen, oder löschen Sie die Auswahl, um das Kopfzeilenflyout auszublenden.
 5.  Wählen Sie in der Befehlsleiste **Speichern** aus, um das Formular zu speichern, oder wählen Sie **Veröffentlichen** aus, wenn Sie die Änderungen speichern und für Benutzer sichtbar anzeigen möchten.
 
 > [!NOTE]
-> - Verwenden Sie den neuen Formulardesigner, der klassische Formulardesigner bietet keine Möglichkeit, das Kopfzeilenflyout ein- oder auszublenden.   
-> - Die Sichtbarkeit des Kopfzeilenflyouts kann nur gesteuert werden, wenn Sie eine Formularkopfzeile mit hoher Dichte verwenden. Bei Verwendung einer Kopfzeile mit niedriger Dichte wird das Kopfzeilenflyout zudem automatisch basierend auf der Anzahl von Feldern in der Kopfzeile und der Breite des Formulars angezeigt oder ausgeblendet.
+> - Verwenden Sie den neuen Formulardesigner. Der klassische Formular-Designer bietet keine Möglichkeit, den Kopf-Flyout ein- oder auszublenden.   
+> - Die Sichtbarkeit des Kopf-Flyouts kann nur bei Verwendung eines hochdichten Formularkopfs gesteuert werden. Bei Verwendung von Kopfn mit niedriger Dichte wird der Kopf-Flyout abhängig von der Anzahl der Felder im Kopf und der Breite des Formulars automatisch ein- oder ausgeblendet.
+> - Ein Bild für eine Entität wird in der Kopfzeile nur dann angezeigt, wenn das Attribut **Primary Imagine** für die Entität definiert ist und die Formulareigenschaft **Bild im Formular anzeigen** aktiviert ist. Mehr Informationen: [Bildfelder](../common-data-service/types-of-fields.md#image-fields). <br />
+    Entwickler können ein Bild für eine Entität angeben, indem sie das Attribut [EntityMetadata.PrimaryImageAttribute](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.primaryimageattribute?view=dynamics-general-ce-9) verwenden. 
+
 
 ## <a name="form-designer-messages-related-to-form-headers"></a>Formulardesigner-Meldungen in Verbindung mit Formularkopfzeilen
-Wenn Sie Formulare mit dem neuen oder klassischen Formulardesigner bearbeiten, werden mehrere Meldungen in Verbindung mit Formularkopfzeilen . Unten können Sie die Details jeder Meldung finden und den Grund für die Meldung.
+Wenn Sie Formulare mit dem neuen oder klassischen Formulardesigner bearbeiten, werden möglicherweise Nachrichten angezeigt, die sich auf Formularköpfe beziehen. Unten finden Sie Details zu jeder Nachricht und warum Sie sie sehen.
 
 ### <a name="weve-upgraded-your-form-to-show-a-high-density-header-that-displays-more-data-you-can-edit-this-setting-in-the-properties-of-the-header"></a>Wir haben Ihr Formular aktualisiert, sodass eine Kopfzeile mit hoher Dichte angezeigt wird, die mehr Daten enthält. Sie können diese Einstellung in den Eigenschaften der Kopfzeile bearbeiten. 
-Diese Meldung wird im Formulardesigner angezeigt, wenn ein Entwickler ein neues Hauptformular (über die Aktion „Speichern als“) erstellt oder bearbeitet, das nicht bereit für die Kopfzeilendichte konfiguriert wurde.  
+Diese Meldung wird im Formulardesigner angezeigt, wenn ein Ersteller ein neues Hauptformular erstellt (auch über die Aktion Speichern unter) oder ein Hauptformular bearbeitet, das zuvor nicht für die Kopfdichte konfiguriert wurde.  
   
-Das Framework verwendet standardmäßig eine Kopfzeile mit hoher Dichte und diese Meldung informiert Entwickler über dieses Verhalten. Entwickler können den Frameworkstandard jederzeit überschreiben, indem Sie die Formularkopfzeilendichte manuell konfigurieren, wie weiter oben erläutert.
+Das Framework ist standardmäßig auf hochdichte Kopf voreingestellt, und diese Nachricht hilft den Erstellern, sich dieses Verhaltens bewusst zu werden. Entwickler können den Frameworkstandard jederzeit überschreiben, indem Sie die Formularkopfzeilendichte manuell konfigurieren, wie weiter oben erläutert.
 
 ### <a name="this-form-isnt-using-high-density-header-access-the-setting-in-the-header-properties-high-density-header-helps-display-more-data"></a>In diesem Formular wird keine Kopfzeile mit hoher Dichte verwendet. Greifen Sie auf die Einstellung in den Kopfzeileneigenschaften zu. Bei Kopfzeilen mit hoher Dichte können mehr Daten angezeigt werden. 
-Diese Nachricht wird im Formulardesigner angezeigt, wenn ein Entwickler ein Hauptformular zum Bearbeiten öffnet, das so konfiguriert ist, dass eine Kopfzeile mit niedriger Dichte verwendet wird.      
-  
-Diese Meldung unterstützt das Bewusstsein über Kopfzeilen mit hoher Dichte und ihre Vorteile.
+Diese Meldung wird im Formulardesigner angezeigt, wenn ein Hersteller ein Hauptformular zur Bearbeitung öffnet, das für die Verwendung von Kopfn mit niedriger Dichte konfiguriert ist. 
+
+Die Botschaft hilft, das Bewusstsein für den hochdichten Kopf und seine Vorteile zu schärfen.
 
 ### <a name="field-moved-to-header-flyout-the-header-supports-displaying-up-to-four-read-only-field-values-the-field-field-display-name-will-now-only-be-available-from-the-flyout"></a>Feld wurde in das Kopfzeilenflyout verschoben: Die Kopzeile unterstützt die Anzeige von maximal vier schreibgeschützten Feldwerten. Das Feld *[Feldanzeigename]* ist jetzt nur im Flyout verfügbar.
-Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte mit sichtbarem Kopfzeilenflyout verwendet.  
+Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte verwendet, wobei der Kopfflyout sichtbar ist.  
   
-Kopfzeilen mit hoher Dichte zeigen schreibgeschützte Werte für die ersten vier Felder in der Kopfzeile an. Wenn Entwickler ein Feld in der Kopfzeile in den ersten vier Positionen hinzufügen, wird ein vorhandenes Feld, das direkt in der Kopfzeile angezeigt wurde, erweitert und ist nur im Kopfzeilenflyout sichtbar.      
-  
-Diese Meldung informiert den Entwickler über die Änderung und bestätigt, ob die Aktion fortgesetzt werden soll.
+Die Kopfzeile mit hoher Dichte zeigt schreibgeschützte Werte der ersten vier Felder in der Kopfzeile an. Wenn Entwickler ein Feld in der Kopfzeile in den ersten vier Positionen hinzufügen, wird ein vorhandenes Feld, das direkt in der Kopfzeile angezeigt wurde, erweitert und ist nur im Kopfzeilenflyout sichtbar.      
+
+Die Meldung informiert den Ersteller über die Änderung und bestätigt, ob mit der Aktion fortgefahren werden soll.
 
 ### <a name="header-field-limit-exceeded-the-header-supports-displaying-up-to-four-read-only-field-values-remove-unused-fields-to-add-more"></a>Der Grenzwert für Kopfzeilenfelder wurde überschritten: Die Kopzeile unterstützt die Anzeige von maximal vier schreibgeschützten Feldwerten. Entfernen Sie nicht verwendete Felder, um weitere hinzuzufügen. 
-Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte mit ausgeblendetem Kopfzeilenflyout verwendet.  
+Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte verwendet, bei der der Kopfflyout ausgeblendet ist.  
   
-Kopfzeilen mit hoher Dichte zeigen schreibgeschützte Werte für bis zu vier Feldern in der Kopfzeile an. Da das Kopfzeilenflyout ausgeblendet ist, können Benutzer keine zusätzlichen Felder sehen.  
-  
-Diese Nachricht informiert den Entwickler darüber, dass bereits vier Felder in der Kopfzeile enthalten sind, und verhindert das Hinzufügen von zusätzlichen Felder in der Kopfzeile, die Benutzer nicht anzeigen können.
+Die Kopfzeile mit hoher Dichte zeigt schreibgeschützte Werte von bis zu vier Feldern in der Kopfzeile an. Da der Kopf Flyout ausgeblendet ist, können die Benutzer die zusätzlichen Felder nicht sehen.  
+
+Die Nachricht informiert den Hersteller, dass es bereits vier Felder im Kopf gibt und verhindert, dass zusätzliche Felder im Kopf hinzugefügt werden, die der Benutzer nicht sehen kann.
 
 ### <a name="header-does-not-display-custom-components-the-header-supports-displaying-up-to-four-read-only-field-values-remove-the-custom-component-from-the-field-before-adding-it-to-the-header"></a>In der Kopfzeile werden keine benutzerdefinierten Komponenten angezeigt: Die Kopzeile unterstützt die Anzeige von maximal vier schreibgeschützten Feldwerten. Entfernen Sie die benutzerdefinierte Komponente aus dem Feld, bevor Sie sie in der Kopfzeile hinzufügen.  
-Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte mit ausgeblendetem Kopfzeilenflyout verwendet.  
+Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte verwendet, bei der der Kopfflyout ausgeblendet ist.  
   
-Kopfzeilen mit hoher Dichte zeigen schreibgeschützte Werte von Feldern in der Kopfzeile an. Da das Kopfzeilenflyout ausgeblendet ist, können Benutzer keine benutzerdefinierten Komponenten sehen, die den Feldern in der Kopfzeile zugeordnet werden.  
-  
-Diese Nachricht informiert den Entwickler darüber, dass versucht wird, ein Feld mit einer zugeordneten benutzerdefinierte Komponente zur Kopfzeile hinzufügen, und dass er die benutzerdefinierte Komponente entfernen muss, bevor er das Feld der Kopfzeile hinzufügt. Dies ist darauf zurückzuführen, dass es Benutzern nicht möglich sind, die benutzerdefinierte Komponente in der Kopfzeile zu sehen.
+Die Kopfzeile mit hoher Dichte zeigt schreibgeschützte Werte von Feldern in der Kopfzeile an. Da der Kopf-Flyout ausgeblendet ist, können Benutzer keine benutzerdefinierten Komponenten sehen, die mit den Feldern im Kopf verknüpft sind.  
+
+Die Nachricht informiert den Hersteller darüber, dass er versucht, ein Feld mit einer zugehörigen benutzerdefinierten Komponente in den Kopf aufzunehmen, und er muss die benutzerdefinierte Komponente entfernen, bevor er das Feld in den Kopf einfügt. Dies ist darauf zurückzuführen, dass es Benutzern nicht möglich sind, die benutzerdefinierte Komponente in der Kopfzeile zu sehen.
 
 ### <a name="header-displays-read-only-field-values-the-header-supports-displaying-up-to-four-read-only-field-values-to-provide-editability-to-the-user-add-the-field-to-a-section-in-the-form"></a>In der Kopzeile werden schreibgeschützte Feldwerte angezeigt: Die Kopzeile unterstützt die Anzeige von maximal vier schreibgeschützten Feldwerten. Um dem Benutzer Bearbeitbarkeit zu bieten, fügen Sie das Feld einem Abschnitt im Formular hinzu.  
 Diese Meldung wird im Formulardesigner angezeigt, wenn ein Formular eine Kopfzeile mit hoher Dichte mit ausgeblendetem Kopfzeilenflyout verwendet.  
   
-Kopfzeilen mit hoher Dichte zeigen schreibgeschützte Werte von Feldern in der Kopfzeile an. Da das Kopfzeilenflyout ausgeblendet ist, können Benutzer keine Feldwerte bearbeiten.  
+Die Kopfzeile mit hoher Dichte zeigt schreibgeschützte Werte von Feldern in der Kopfzeile an. Da der Kopf-Flyout ausgeblendet ist, können Benutzer die Feldwerte nicht bearbeiten.  
   
-Diese Meldung informiert den Entwickler, dass alle Felder, die der Kopfzeile hinzugefügt werden, schreibgeschützt sind und dass alle Felder, die Benutzer bearbeiten sollen, auch einem Abschnitt im Formular hinzugefügt werden sollen.
+Die Nachricht informiert den Hersteller darüber, dass alle Felder, die dem Kopf hinzugefügt werden, schreibgeschützt sind und dass alle Felder, die der Benutzer bearbeiten soll, ebenfalls einem Abschnitt im Formular hinzugefügt werden sollten.
 
 ### <a name="header-field-values-are-not-editable-moving-a-field-from-the-body-to-the-header-will-display-as-a-read-only-value-to-maintain-editability-copy-the-field-to-the-header"></a>Kopfzeilenfeldwerte werden nicht bearbeitet: Wenn ein Feld aus dem Hauptteil in die Kopfzeile verschoben wird, wird es als schreibgeschützter Wert angezeigt. Um die Bearbeitkeit beizubehalten, kopieren Sie das Feld in die Kopfzeile.  
-Diese Meldung wird im Formulardesigner angezeigt nur für Formulare angezeigt, die eine Kopfzeile mit hoher Dichte mit ausgeblendetem Kopfzeilenflyout verwenden.  
+Diese Meldung wird im Formulardesigner nur bei Formularen mit High-Density-Kopf angezeigt, bei denen der Kopf-Flyout ausgeblendet ist.  
   
-Kopfzeilen mit hoher Dichte zeigen schreibgeschützte Werte von Feldern in der Kopfzeile an. Da das Kopfzeilenflyout ausgeblendet ist, können Benutzer keine Feldwerte bearbeiten.  
-  
-Diese Meldung informiert den Entwickler darüber, dass versucht wird, ein Feld aus dem Formularhauptteil in die Formularkopfzeile zu verschieben. Hierdurch wird das Feld zu einem schreibgeschützten Feld. Der Entwickler kann entscheiden, ob er das Feld in die Kopfzeile verschiebt oder der Kopfzeile eine Kopie des Felds hinzufügt. Durch das Verschieben des Felds in die Kopfzeile ist das Feld in der ursprünglichen Position im Formularhauptteil für Benutzer nicht mehr zur Bearbeitung verfügbar. Wenn Kopie des Felds der Kopfzeile hinzugefügt wird, bleibt das Feld in der ursprünglichen Position unverändert, sodass sichergestellt wird, dass Benutzer es im Formularhauptteil weiterhin bearbeiten können.
+Die Kopfzeile mit hoher Dichte zeigt schreibgeschützte Werte von Feldern in der Kopfzeile an. Da der Kopf-Flyout ausgeblendet ist, können Benutzer die Feldwerte nicht bearbeiten.  
+
+Die Nachricht informiert den Ersteller darüber, dass er versucht, ein Feld aus dem Formularkörper in den Formularkopf zu verschieben. Hierdurch wird das Feld zu einem schreibgeschützten Feld. Der Entwickler kann entscheiden, ob er das Feld in die Kopfzeile verschiebt oder der Kopfzeile eine Kopie des Felds hinzufügt. Durch das Verschieben des Felds in die Kopfzeile ist das Feld in der ursprünglichen Position im Formularhauptteil für Benutzer nicht mehr zur Bearbeitung verfügbar. Wenn Sie eine Kopie des Feldes in die Kopfzeile einfügen, bleibt das Feld an der ursprünglichen Position, so dass die Benutzer es weiterhin im Formular bearbeiten können.
 
 ### <a name="form-headers-now-default-to-high-density-to-display-more-data-use-the-new-form-designer-to-edit-header-density"></a>Formularkopfzeilen werden jetzt standardmäßig hohe Dichte, um mehr Daten anzuzeigen. Verwenden Sie den neuen Formulardesigner, um die Kopfzeilendichte zu bearbeiten.  
-Diese Nachricht wird im klassischen Formulardesigner angezeigt, wenn ein Entwickler ein Hauptformular zum Bearbeiten öffnet, das so konfiguriert ist, dass eine Kopfzeile mit niedriger Dichte verwendet wird.  
-  
-Diese Meldung steigert das Bewusstsein über die Kopfzeile mit hoher Dichte und ihre Vorteile und darüber, dass Entwickler den neuen Formulardesigner verwenden sollen, um Kopfzeilendichte zu konfigurieren.  
+Diese Nachricht wird im klassischen Formulardesigner angezeigt, wenn ein Entwickler ein Hauptformular zum Bearbeiten öffnet, das so konfiguriert ist, dass eine Kopfzeile mit niedriger Dichte verwendet wird. 
+
+Die Botschaft trägt dazu bei, das Bewusstsein für den High-Density-Kopf und seine Vorteile zu schärfen, und dass Hersteller den neuen Formulardesigner verwenden sollten, um die Kopfdichte zu konfigurieren.  
 
 ### <a name="this-form-is-using-high-density-header-for-the-best-authoring-experience-with-this-form-use-the-new-form-designer"></a>Dieses Formular verwendet eine Kopfzeile mit hoher Dichte. Verwenden Sie den neuen Formulardesigner, um eine optimale Erstellung mit diesem Formular zu gewährleisten. 
- Diese Meldung wird im klassischen Formulardesigner angezeigt, wenn ein Entwickler ein Hauptformular zum Bearbeiten öffnet, das so konfiguriert ist, dass eine Kopfzeile mit hoher Dichte verwendet wird.  
+Diese Meldung wird im klassischen Formulardesigner angezeigt, wenn ein Ersteller ein Hauptformular zur Bearbeitung öffnet und konfiguriert ist, um einen Kopf mit hoher Dichte zu verwenden.  
   
-Der klassische Formulardesigner bietet keine WYSIWYG-Authoring-Umgebung. Außerdem erkennt er nicht die Auswirkungen von Änderungen, die Entwickler an der Formularkopfzeile vornehmen, und gibt keine entsprechenden Warnungen aus. Wenn Sie beispielsweise ein Formular bearbeiten, das Kopfzeilen mit hoher Dichte mit ausgeblendetem Kopfzeilenflyout verwendet, verhindert der klassische Formulardesigner nicht, dass Entwickler mehr als vier Felder zur Kopfzeile hinzufügen, obwohl diese Felder den Benutzern nicht zur Verfügung stehen.  
+Der klassische Formulardesigner bietet keine WYSIWYG-Authoring-Umgebung. Außerdem erkennt er nicht die Auswirkungen von Änderungen, die Entwickler an der Formularkopfzeile vornehmen, und gibt keine entsprechenden Warnungen aus. Wenn Sie beispielsweise ein Formular bearbeiten, das eine Kopfzeile mit hoher Dichte und ausgeblendetem Kopfflyout verwendet, wird der klassische Formulardesigner die Ersteller nicht daran hindern, mehr als vier Felder zur Kopfzeile hinzuzufügen, obwohl dieses Feld für die Benutzer nicht verfügbar sein wird.  
   
-Diese Meldung informiert den Entwickler, dass er beim Bearbeiten eines Formulars, das eine Kopfzeile mit hoher Dichte verwendet, den neuen Formulardesigner verwenden soll. Dies stellt sicher, dass der Entwickler die Auswirkungen der Änderungen auf die Formularkopfzeile berücksichtigt.
+Die Nachricht informiert den Ersteller darüber, dass er bei der Bearbeitung eines Formulars, das einen Kopf mit hoher Dichte verwendet, den neuen Formulardesigner verwenden sollte. Dies stellt sicher, dass der Entwickler die Auswirkungen der Änderungen auf die Formularkopfzeile berücksichtigt.
 
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über den modellgestützten Formulardesigner](form-designer-overview.md)  
-[Erstellen oder Bearbeiten von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  
-[Ergänzen, Verschieben oder Löschen von Feldern in einem Formular mithilfe des Formulardesigners](add-move-or-delete-fields-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Abschnitten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-sections-on-form.md)  
-[Hinzufügen, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners](add-move-or-delete-tabs-on-form.md)  
-[Im Formulardesigner verfügbare Eigenschaften](form-designer-properties.md)  
-[Konfigurieren von Kopfzeileneigenschaften im Formulardesigner](form-designer-header-properties.md)  
+[Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Feldern in einem Formular](add-move-or-delete-fields-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Komponenten in einem Formular](add-move-configure-or-delete-components-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Abschnitten in einem Formular](add-move-or-delete-sections-on-form.md)  
+[Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular](add-move-or-delete-tabs-on-form.md)  
+[Hinzufügen und Konfigurieren einer Unterraster-Komponente in einem Formular](form-designer-add-configure-subgrid.md)  
+[Hinzufügen und Konfigurieren einer Schnellansichts-Komponente in einem Formular](form-designer-add-configure-quickview.md)  
+[Konfigurieren einer Suchkomponente in einem Formular](form-designer-add-configure-lookup.md)  
 [Verwenden der Strukturansicht im Formulardesigner](using-tree-view-on-form.md)  
-[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)
+[Erstellen und Bearbeiten von Feldern](../common-data-service/create-edit-field-portal.md)  

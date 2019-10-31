@@ -13,7 +13,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/12/2018
+ms.date: 8/21/2019
 ms.author: jowells
 search.audienceType:
   - developer
@@ -31,7 +31,7 @@ search.app:
 
 ## <a name="symptoms"></a>Symptome
 
-Wenn ein Plug-in externe Web-Anfragen stellt und versucht, `KeepAlive` auf einer geschlossenen Verbindung zu verwenden, kann das Plug-in die Web-Anfrage letztendlich nicht ausführen. Wenn das Plug-in jedoch registriert ist:
+Wenn ein Plug-in externe Web-Anfragen stellt und versucht, `KeepAlive` auf einer geschlossenen Verbindung zu verwenden, kann das Plug-in die Web-Anfrage letztendlich nicht ausführen. Wenn das Plug-in registriert ist:
 
 - Synchron können die Benutzer Folgendes erleben:
 

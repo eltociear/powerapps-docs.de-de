@@ -1,32 +1,27 @@
 ---
-title: Verwenden von Iterations Tags für ein Portal | MicrosoftDocs
-description: Weitere Informationen zu Iterations Tags, die im Portal verfügbar sind
+title: Iterationskennzeichen für ein Portal verwenden | MicrosoftDocs
+description: Lesen Sie mehr zu den verschiedenen verfügbaren Vorlage-Tags in einem Portal
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 600ddb0ac6e016acf057e592ac638b4e07ddf8ba
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976505"
+ms.reviewer: null
 ---
+
 # <a name="iteration-tags"></a>Iterationstags
 
-Iterations Tags werden verwendet, um einen Codeblock wiederholt auszuführen oder zu rendern.
+Iterationstags werden zur wiederholten Ausführung/Rederung eines Codeblocks genutzt.
 
-## <a name="for"></a>damit
+## <a name="for"></a>für  (möglicherweise in englischer Sprache)
 
-Führt einen Codeblock wiederholt aus. Es wird am häufigsten verwendet, um die Elemente in einem Array oder Wörterbuch zu durchlaufen.
+Führt ein Codeblock wiederholt aus. Wir häufig genutzt, um Elemente in einem Array oder Dictionary durchzulaufen.
 
-Im for-tagblock ist das [Schleife-Objekt](liquid-objects.md#forloop) verfügbar.  
+Innerhalb des Tagblocks ist die [forloop](liquid-objects.md#forloop) verfügbar.  
 
-**Ordnung**
+**Code**
 
 ```
 {% for child_page in page.children %}
@@ -36,7 +31,7 @@ Im for-tagblock ist das [Schleife-Objekt](liquid-objects.md#forloop) verfügbar.
 {% endfor %}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <a href=/parent/child1/>Child 1</a>
@@ -46,15 +41,15 @@ Im for-tagblock ist das [Schleife-Objekt](liquid-objects.md#forloop) verfügbar.
 <a href=/parent/child3/>Child 3</a>
 ```
 
-### <a name="parameters"></a>Metern
+### <a name="parameters"></a>Parameter
 
-Diese Parameter von for können allein oder in Kombination verwendet werden.
+Diese Parameter von „for” können allein oder in Kombination verwendet werden.
 
-**ans**
+**limit**
 
-Beendet die Schleife nach einer angegebenen Anzahl von Elementen.
+Beendet die Schleife nach der Anzahl der Elemente.
 
-**Ordnung**
+**Code**
 
 ```
 {% for child_page in page.children limit:2 %}
@@ -64,7 +59,7 @@ Beendet die Schleife nach einer angegebenen Anzahl von Elementen.
 {% endfor %}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <a href=/parent/child1/>Child 1</a>
@@ -72,11 +67,11 @@ Beendet die Schleife nach einer angegebenen Anzahl von Elementen.
 <a href=/parent/child2/>Child 2</a>
 ```
 
-**kompensieren**
+**offset**
 
-Startet die Schleife am angegebenen Index.
+Startet die Schleife am gegebenen Index.
 
-**Ordnung**
+**Code**
 
 ```
 {% for child_page in page.children offset:1 %}
@@ -86,7 +81,7 @@ Startet die Schleife am angegebenen Index.
 {% endfor %}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <a href=/parent/child2/>Child 2</a>
@@ -94,11 +89,11 @@ Startet die Schleife am angegebenen Index.
 <a href=/parent/child3/>Child 3</a>
 ```
 
-**Bereich**
+**range**
 
-Definiert einen Bereich von Zahlen, der durchlaufen werden soll.
+Definiert einen Nummernbereich für die Schleife.
 
-**Ordnung**
+**Code**
 
 ```
 {% assign n = 4 %}
@@ -116,7 +111,7 @@ Definiert einen Bereich von Zahlen, der durchlaufen werden soll.
 {% endfor }}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 2 3 4
@@ -124,11 +119,11 @@ Definiert einen Bereich von Zahlen, der durchlaufen werden soll.
 10 11 12 14
 ```
 
-**gestellt**
+**reversed**
 
-Iteriert die Schleife in umgekehrter Reihenfolge, beginnend mit dem letzten Element.
+Läuft Schleife in umgekehrter Reihenfolge durch.
 
-**Ordnung**
+**Code**
 
 ```
 {% for child_page in page.children reversed %}
@@ -138,7 +133,7 @@ Iteriert die Schleife in umgekehrter Reihenfolge, beginnend mit dem letzten Elem
 {% endfor %}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <a href=/parent/child3/>Child 3</a>
@@ -148,11 +143,11 @@ Iteriert die Schleife in umgekehrter Reihenfolge, beginnend mit dem letzten Elem
 <a href=/parent/child1/>Child 1</a>
 ```
 
-## <a name="cycle"></a>Zyklus
+## <a name="cycle"></a>cycle
 
-Durchläuft eine Gruppe von Zeichen folgen und gibt diese in der Reihenfolge aus, in der Sie als Parameter übermittelt wurden. Jeder Zeit Kreis wird aufgerufen, die nächste als Parameter übergebene Zeichenfolge wird ausgegeben.
+Läuft eine Gruppe von Zeichenfolgen durch und gibt sie in der Reihenfolge aus, in der Sie als Parameter übergeben werden. Bei jedem Aufruf von cycle wird die nächste Zeichenfolge zurückgeben.
 
-**Ordnung**
+**Code**
 
 ```
 {% for item in items %}
@@ -162,7 +157,7 @@ Durchläuft eine Gruppe von Zeichen folgen und gibt diese in der Reihenfolge aus
 {% end %}
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <div class=red> Item one </div>
@@ -176,13 +171,13 @@ Durchläuft eine Gruppe von Zeichen folgen und gibt diese in der Reihenfolge aus
 <div class=green> Item five</div>
 ```
 
-## <a name="tablerow"></a>TableRow
+## <a name="tablerow"></a>tablerow
 
-Generiert eine HTML-Tabelle. Muss in eine öffnende &lt;Tabelle umschlossen werden&gt; und schließt &lt;/Table&gt; HTML-Tags.
+Generiert eine HTML-Tabelle. Muss in öffnende &lt;table&gt;- und schließende &lt;/table&gt;-HTML-Tags eingebunden werden.
 
-Innerhalb des TableRow-tagblocks ist [tablerowloop](liquid-objects.md#tablerowloop) verfügbar.  
+Innerhalb des tablerow-Tagblocks ist [tablerowloop](liquid-objects.md#tablerowloop) verfügbar.  
 
-**Ordnung**
+**Code**
 
 ```
 <table>
@@ -196,7 +191,7 @@ Innerhalb des TableRow-tagblocks ist [tablerowloop](liquid-objects.md#tablerowlo
 </table>
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <table>
@@ -232,11 +227,11 @@ Child Page 4
 </table>
 ```
 
-### <a name="parameters"></a>Metern
+### <a name="parameters"></a>Parameter
 
-Diese Parameter von tablerowcan können allein oder in Kombination verwendet werden.
+Diese Parameter von „tablerow” können allein oder in Kombination verwendet werden.
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <table>
@@ -276,7 +271,7 @@ Child Page 4
 </table>
 ```
 
-**Ordnung**
+**Code**
 
 ```
 <table>
@@ -290,15 +285,15 @@ Child Page 4
 </table>
 ```
 
-Bestimmt, wie viele Zeilen die generierte Tabelle enthalten sollte.
+Legt fest, wie viele Zeilen die Tabelle haben soll.
 
 **cols**
 
-**ans**
+**limit**
 
-Beendet die Schleife nach einer angegebenen Anzahl von Elementen.
+Beendet die Schleife nach der Anzahl der Elemente.
 
-**Ordnung**
+**Code**
 
 ```
 <table>
@@ -312,7 +307,7 @@ Beendet die Schleife nach einer angegebenen Anzahl von Elementen.
 </table>
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <table>
@@ -338,9 +333,9 @@ Child Page 2
 offset
 ```
 
-Startet die Schleife am angegebenen Index.
+Startet die Schleife am gegebenen Index.
 
-**Ordnung**
+**Code**
 
 ```
 <table>
@@ -354,7 +349,7 @@ Startet die Schleife am angegebenen Index.
 </table>
 ```
 
-**Ausgeben**
+**Ausgabe**
 
 ```
 <table>
@@ -378,11 +373,11 @@ Child Page 4
 </table>
 ```
 
-**Bereich**
+**range**
 
-Definiert einen Bereich von Zahlen, der durchlaufen werden soll.
+Definiert einen Nummernbereich für die Schleife.
 
-**Ordnung**
+**Code**
 
 ```
 <table>
@@ -398,7 +393,7 @@ Definiert einen Bereich von Zahlen, der durchlaufen werden soll.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Ablauf Steuerungs Tags](control-flow-tags.md)
-[Variablen Tags](variable-tags.md)
-[Vorlagen Tags](template-tags.md)
-[powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md)
+[Control flow tags](control-flow-tags.md)
+[Variable tags](variable-tags.md)
+[Template tags](template-tags.md)
+[PowerApps common data service Entität Tags](portals-entity-tags.md)

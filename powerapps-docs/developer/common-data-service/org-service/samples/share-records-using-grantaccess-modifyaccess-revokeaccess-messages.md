@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel: Freigeben von Datensätzen mithilfe von GrantAccess, ModifyAccess und RevokeAccess (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie ein Datensatz mithilfe der GrantAccess-, ModifyAccess- und RevokeAcces-Message freigegeben wird.'
+title: 'Beispiel: Teilen von Datensätzen mit GrantAccess, ModifyAccess und RevokeAccess (Common Data Service) | Microsoft Docs'
+description: 'Dieses Beispiel zeigt, wie Sie einen Datensatz mit Hilfe von Berechtigung freigeben, ändern und widerrufen können.'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -32,7 +32,7 @@ Dieses Beispiel zeigt, wie ein Datensatz mit den nachfolgenden Meldungen geteilt
 
 Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GrantModifyRevokeAccess) herunterladen.
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die erforderlichen Benutzer manuell in **Office 365**, um das Beispiel ohne Fehler auszuführen. Für dieses Beispiel erstellen Sie 2 Benutzerprofile **wie unten dargestellt**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Legen Sie die erforderlichen Benutzer manuell in **Office 365** an, um das Beispiel fehlerfrei auszuführen. Für dieses Beispiel erstellen Sie 2 Benutzerprofile **wie unten dargestellt**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 
 **Vorname**: Dan<br/>
 **Nachname**: Wilson<br/>

@@ -26,7 +26,7 @@ search.app:
    
 # <a name="use-excel-and-word-templates"></a>Verwenden von Excel- und Word-Vorlagen
 
-Sie können Vorlagen in einer Vielzahl von Methoden verwenden, um Ihre Arbeit zu beschleunigen und die Konsistenz zu verbessern. Mit Excel-Vorlagen können Sie Ihre benutzerdefinierte Analyse ganz einfach erstellen und mit anderen in Ihrem Unternehmen teilen. Sie können Word-Vorlagen verwenden, um standardisierte Dokumente zu erstellen, die automatisch mit Customer Engagement-App-Daten ausgefüllt werden.
+Sie können Vorlagen in einer Vielzahl von Methoden verwenden, um Ihre Arbeit zu beschleunigen und die Konsistenz zu verbessern. Mit Excel-Vorlagen können Sie Ihre benutzerdefinierte Analyse ganz einfach erstellen und mit anderen in Ihrem Unternehmen teilen. Mit Word-Vorlagen können Sie standardisierte Dokumente erstellen, die automatisch mit Common Data Service Daten gefüllt werden.
 
 ## <a name="enable-and-work-with-excel-and-word-templates"></a>Aktivieren und Verwenden von Excel- und Word-Vorlagen
 
@@ -51,7 +51,7 @@ Sie können Vorlagen in einer Vielzahl von Methoden verwenden, um Ihre Arbeit zu
    > [!div class="mx-imgBorder"] 
    > ![](media/document-templates.png "Dokumentvorlagen") 
 
-Informationen zur Verwendung von Vorlagen finden Sie in der folgenden Customer Engagement-Dokumentation:
+Informationen zur Verwendung von Vorlagen finden Sie in der folgenden Dokumentation:
 
 - Word-Vorlagen: [Erstellen von standardisierten Dokumenten mit Word-Vorlage](https://docs.microsoft.com/dynamics365/customer-engagement/admin/using-word-templates-dynamics-365)
 - Excel-Vorlagen: [Analysieren und Teilen von Daten mit Excel-Vorlagen](https://docs.microsoft.com/dynamics365/customer-engagement/admin/analyze-your-data-with-excel-templates)

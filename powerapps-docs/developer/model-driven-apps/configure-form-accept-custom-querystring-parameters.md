@@ -23,7 +23,7 @@ search.app:
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/configure-form-accept-custom-querystring-parameters -->
 
-Werte an eine Webseite mithilfe von Abfragenzeichenfolgen zu übergeben, stellt ein Sicherheitsrisiko dar. Modellgesteuerte Apps arbeitet nach der bewährten Verfahrensweise, bei der alle in einer Abfragenzeichenkette übergebenen Parameter mit einer Liste der erwarteten Parameternamen und Datentypen verglichen werden.  
+Werte an eine Webseite mithilfe von Abfragenzeichenfolgen zu übergeben, stellt ein Sicherheitsrisiko dar. Modellgesteuerte Apps arbeiten nach der bewährten Verfahrensweise, bei der alle in einer Abfragenzeichenkette übergebenen Parameter mit einer Liste der erwarteten Parameternamen und Datentypen verglichen werden.  
   
  Standardmäßig werden von modellgesteuerten Apps bestimmte Abfragezeichenfolgenparameter erlaubt, die an ein Formular übergeben werden. Verwenden Sie diese Parameter, um Standardwerte festzulegen, wenn Sie in der Anwendung einen neuen Datensatz erstellen. Jeder Parameter muss eine Standardnamenskonvention verwenden, die einen Verweis auf den logischen Namen des Attributs enthält. Weitere Informationen finden Sie unter [Legen Feldwerte unter Verwendung der Parameter festgelegt, die an ein Formular übergeben wurden](set-field-values-using-parameters-passed-form.md).  
   

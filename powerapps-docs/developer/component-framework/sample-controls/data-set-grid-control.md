@@ -1,7 +1,7 @@
 ---
-title: DataSet-Raster Komponente | Microsoft-Dokumentation
-description: ''
-keywords: ''
+title: DataSet-Rasterkomponente | Microsoft Docs
+description: null
+keywords: null
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,25 +11,20 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: ca13ef7758bb21853f9c1411c641bd1ae88115b6
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340504"
 ---
-# <a name="implementing-data-set-component"></a>Implementieren von Daten Satz Komponenten
 
-Diese Beispiel Komponente zeigt, wie Sie die Benutzerinteraktion mit dem Dataset ändern können. Beispielsweise wird nur das Raster der Startseite auf einer Entitäts Homepage als Tabelle angezeigt. Sie können die Code Komponente erstellen, mit der die Daten gemäß ihrer Wahl angezeigt werden können. In diesem Beispiel werden die Datensätze als Kacheln anstelle des regulären tabellarischen Rasters angezeigt.
+# <a name="implementing-data-set-component"></a>Implementieren der Daten-Set-Komponente
+
+Diese Beispielkomponente zeigt, wie Sie die Benutzerfreundlichkeit beim Interagieren mit dem Dataset ändern. Zum Beispiel wird nur das Homepageraster auf einer Entitätshomepage als Tabelle angezeigt. Sie können Ihre Codekomponente erstellen, die die Daten nach Ihren Wünschen anzeigen kann. Dieses Beispiel veranschaulicht die Datensätze als Kacheln anstelle des regulären tabellarischen Rasters an.
 
 > [!div class="mx-imgBorder"]
-> ![](../media/data-set-grid.png "Raster") Komponente DataSet-Datenblatt Komponente DataSet
+> ![Dataset-Rasterkomponente](../media/data-set-grid.png "Dataset-Rasterkomponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps
+Modellgestützte Apps
 
-## <a name="manifest"></a>Kundiger 
+## <a name="manifest"></a>Manifest 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -241,12 +236,12 @@ export class TSDataSetGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityreference = this.contextObj.parameters.dataSetGrid.records[
+      let entityReference = this.contextObj.parameters.dataSetGrid.records[
         rowRecordId
-      ].getNamedreference();
+      ].getNamedReference();
       let entityFormOptions = {
-        entityName: entityreference.name,
-        entityId: entityreference.id
+        entityName: entityReference.name,
+        entityId: entityReference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -424,24 +419,24 @@ export class TSDataSetGrid
 </root>
 ```
 
-In diesem Beispiel ist der Eingabeparameter in der Komponenten Manifest-Datei mit dem Dataset definiert. Dies ist die Eingabe Eigenschaft, die an die Komponente gebunden wird.  
+In diesem Beispiel führen wir den Eingabeparameter in der Komponentenmanifestdatei mit dem festgelegten Daten-Satz-Tag definiert. Dies ist die Eingabeeigenschaft, die an die Komponete gebunden wird.  
  
-Diese Komponente verfügt über zwei wichtige Container, die auf dem Haupt-div-Element hinzugefügt werden, das auf dem div-Element hinzugefügt wird, das an die-Komponente  Der erste Container enthält die Kacheln, die die Daten des Datensatzes aus der Sicht anzeigen, und der zweite Container ist für die `Load More button`, die anzeigt, wann Datensätze vorhanden sind, die mehr Bereich benötigen, der in eine Seite passen kann. 
+Diese Komponente hat zwei wichtige Container, die dem Haupt-div hinzugefügt werden, der dem div hinzugefügt wird, der an die Komponente übergeben wird. Der erste Container enthält die Kacheln, die in die Datensatzdaten aus der Ansicht anzeigen, und der zweite Container ist für das `Load More button`-Element, das zeigt, wenn Datensätze vorhanden sind, die mehr Fläche benötigen, die in auf eine Seite passt. 
  
-Beide Container werden immer dann generiert und aktualisiert, wenn die [UpdateView](../reference/control/updateview.md) -Methode aufgerufen wird. Für den ersten Container generieren wir die Kacheln auf der Grundlage der Informationen in den Spalten und der Anzahl der Datensätze. Dadurch wird sichergestellt, dass wir eine Kachel für jeden Datensatz zusammen mit den dazugehörigen Informationen anzeigen.  
+Beide Container werden erstellt und aktualisiert, wenn die [updateView](../reference/control/updateview.md)-Methode aufgerufen wird. Für den ersten Container generieren wir die Kacheln anhand der Informationen in den Spalten und der Anzahl der Datensätze. Das stellt sicher, dass wir eine Kachel für jeden Datensatz zusammen mit den Informationen darauf anzeigen.  
  
-Wenn eine nachfolgende Seite für die Datensätze vorhanden ist, wird die Schaltfläche Weitere laden angezeigt, d. h. der zweite Container ist sichtbar und wird ausgeblendet, wenn das Resultset keine weiteren Seiten enthält.  
+Wenn eine Folgeseite für Datensätze vorhanden ist, wird die Schaltfläche "Mehr laden" angezeigt. Der zweite Container ist also sichtbar und ausgeblendet, wenn keine Seiten mehr im Ergebnissatz vorhanden sind.  
  
-Wenn Sie auf die Schaltfläche "Weitere laden" klicken, wird die nächste Seite mit Datensätzen geladen und an das vorhandene Resultset angehängt, und die Logik zum Ausblenden oder Anzeigen der Schaltfläche bleibt unverändert, wie im Code gezeigt. Dies wird von der ***onloadmorebuttonclick*** -Methode übernommen, die an die Schaltfläche gebunden ist.
+Wenn Sie auf die Schalfläche "Mehr laden" klicken, wird die nächste Seite der Datensätze geladen und an den vorhandenen Ergebnissatz angehängt, und die Logik zum Ausblenden oder Anzeigen der Schaltfläche wie zuvor, wie im Code angezeigt wird.Darum kümmert sich die ***onLoadMoreButtonClick***-Methode, die an die Schaltfläche gebunden ist.
  
-Die Funktion " ***deggleloadmorebuttondie erforderliche*** Funktion" übernimmt die Eingabe als DataSet und prüft, ob das Dataset eine nächste Seite hat, und ob die Schaltfläche ausgeblendet oder sichtbar ist und die Schaltfläche ausgeblendet oder anzeigt.  
+Die Funktion ***toggleLoadMoreButtonWhenNeeded*** übernimmt die Eingabe als das Dataset und prüft, ob das Dataset über eine nächste Seite verfügt und ob die Schaltfläche angezeigt oder ausgeblendet wird und die entsprechend ein- oder ausgeblendet wird.  
  
-Die ***onrowclick*** -Funktion fügt den Kontext des Datensatzes mit dem GUID-Wert an und ruft die [OpenForm](../reference/navigation/openform.md) -Methode der `NavigationAPI` auf, um den entsprechenden Datensatz zu öffnen. Diese Methode ist an jede Kachel gebunden, die als Teil der Methode " ***kreategridbody*** " generiert wird.
+Die Funktion ***onRowClick*** fügt den Kontext des Datensatzes mithilfe des GUID-Werts an und ruft die [openForm](../reference/navigation/openform.md)-Methode von `NavigationAPI`, um den entsprechenden Datensatz zu öffnen. Diese Methode wird an jede Kachel gebunden, die als Bestandteil der ***createGridBody***-Methode generiert wird.
  
-Die ***getsortedcolumnsonview*** -Methode gibt die Liste der Spalten basierend auf der definierten Reihenfolge in der Sicht zurück.
+Die ***getSortedColumnsOnView***-Methode gibt die Liste der Spalten anhand der definierten Reihenfolge der Ansicht zurück.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)

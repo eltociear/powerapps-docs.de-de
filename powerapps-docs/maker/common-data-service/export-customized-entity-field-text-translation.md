@@ -1,10 +1,10 @@
 ---
-title: Angepasste Entität und Feldtext für Übersetzung mit PowerApps exportieren | MicrosoftDocs
+title: Exportieren benutzerdefinierter Entitäten und Feldtexte zur Übersetzung mit PowerApps | MicrosoftDocs
 description: 'Erfahren Sie, wie Entität und Feldtext zur Übersetzung exportiert werden'
 ms.custom: ''
 ms.date: 06/19/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -36,7 +36,7 @@ Wenn Sie benutzerdefinierten Entitäts- und Feldtext erstellt haben, möchten Si
 
 ## <a name="community-tools"></a>Community-Tools
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) ist ein Tool, das XrmToolBox-Community für Dynamics 365 Customer Engagement entwickelte. Verwenden Sie den einfachen Übersetzer, um Übersetzungen mit kontextbezogenen Informationen zu exportieren und zu importieren. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) ist ein Tool, das die XrmToolBox-Community für PowerApps entwickelt hat. Verwenden Sie den einfachen Übersetzer, um Übersetzungen mit kontextbezogenen Informationen zu exportieren und zu importieren. 
 
 > [!NOTE]
 > Die Community-Tools werden von Microsoft nicht unterstützt. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com).

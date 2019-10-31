@@ -4,7 +4,7 @@ description: Eine Liste der Steuerelemente die für die Verwendung mit Dynamics 
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -136,7 +136,7 @@ search.app:
  Der Radial-Knopf bietet Benutzern Wege zur Dateneingabe durch das Verschieben des Knopfs. Er wird auf dem Bildschirm als Kreis angezeigt. Das Radialknopf-Steuerelement ermöglicht nur die Eingabe und Anzeige ganzer Zahlen. Verwenden Sie dieses Steuerelement für alle numerische Felder oder Geldfelder. Sie können Touch verwenden, um den Wert zu ändern, oder Sie können einfach das Tastenfeld verwenden, um auf die Zahl zu fokussieren und sie zu bearbeiten.  
   
 > [!NOTE]
->  Diese Steuerelemente werden auf Android 4.2- und 4.3-Geräten nicht unterstützt. Es wirkt sich auf die Bildlauferfahrung in diesen Versionen aus.  
+>  Dieses Steuerelement wird auf Android 4.2- und 4.3-Geräten nicht unterstützt. Es wirkt sich auf die Bildlauferfahrung in diesen Versionen aus.  
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
@@ -149,7 +149,7 @@ search.app:
  Verwenden Sie das Websitevorschausteuerelement, um ein URL-Feld ein zuordnen und eine Vorschau der Website anzuzeigen.  
   
 > [!IMPORTANT]
->  Mit der Aktivierung dieses Steuerelements stimmen Sie zu, Ihren Benutzern bestimmte identifizierbare Geräteinformationen mit einem externen System freizugeben. Die Daten, die aus externen Systemen in ein PowerApps-App- oder Dynamics 365 Customer Engagement importiert werden, unterliegen unseren Datenschutzbestimmungen unter [Microsoft-Datenschutz und -Cookies](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Mit der Aktivierung dieses Steuerelements stimmen Sie zu, Ihren Benutzern bestimmte identifizierbare Geräteinformationen mit einem externen System freizugeben. Die Daten, die aus externen Systemen in eine PowerApps-App oder in Dynamics 365-Apps wie z. B. Dynamics 365 Sales oder Dynamics 365 Customer Service importiert werden, unterliegen unseren Datenschutzbestimmungen unter [Microsoft-Datenschutz und Cookies](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Datenschutzhinweise](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   
@@ -246,7 +246,7 @@ search.app:
  Der Bogen-Knopf stellt eine Möglichkeit zur Verfügung, damit Benutzer Daten eingeben, indem sie den Regler verschieben, er wird auf dem Bildschirm als Bogen angezeigt. Der Bogen-Knopf bietet nur Eingabe und Anzeige ganzer Zahlen. Verwenden Sie dieses Steuerelement für alle numerische Felder oder Geldfelder. Sie können Touch verwenden, um den Wert zu ändern, oder Sie können einfach das Tastenfeld verwenden, um auf die Zahl zu fokussieren und sie zu bearbeiten.  
   
 > [!NOTE]
-> Diese Steuerelemente werden auf Android 4.2- und 4.3-Geräten nicht unterstützt. Es wirkt sich auf die Bildlauferfahrung in diesen Versionen aus.  
+> Dieses Steuerelement wird auf Android 4.2- und 4.3-Geräten nicht unterstützt. Es wirkt sich auf die Bildlauferfahrung in diesen Versionen aus.  
   
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  

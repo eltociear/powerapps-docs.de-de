@@ -2,7 +2,7 @@
 title: 'Einheitliche Benutzeroberfläche: Playbook | MicrosoftDocs'
 description: 'Erfahren Sie, wie Sie den Übergang vom Legacy-Webclient zur einheitlichen Benutzeroberfläche planen und durchführen können.'
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/29/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -40,4 +40,6 @@ Zusammenfassend lässt sich sagen, dass Ihnen die Playbook-Dokumente zur einheit
 |[Einheitliche Benutzeroberfläche: Playbook - Übersicht](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/dynamics365unifiedinterfaceplaybook.pdf)      |   PDF      |
 |[Kapitel 1: Einleitung](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch1-initiate.pptx)     |  PowerPoint       |
 |[Kapitel 2: Erforschen](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch-2-explore.pptx)     |  PowerPoint       |
+| [Kapitel 3: Übergang](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch3-transition.pptx)|  PowerPoint     |
+| [Kapitel 4: Optimierung](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 

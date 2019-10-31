@@ -1,26 +1,21 @@
 ---
-title: Verwenden von Ablauf Steuerungs Tags für ein Portal | MicrosoftDocs
-description: Erfahren Sie mehr über Ablauf Steuerungs Tags, die im Portal verfügbar sind.
+title: Verwenden von Ablaufsteuerungs-Tags für ein Portal | MicrosoftDocs
+description: Lesen Sie mehr zu den Ablaufsteuerungs-Tags im Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975102"
+ms.reviewer: null
 ---
+
 # <a name="control-flow-tags"></a>Ablaufsteuerungstags
 
-Ablauf Steuerungs Tags bestimmen, welcher Codeblock ausgeführt werden soll und welcher Inhalt basierend auf den angegebenen Bedingungen gerendert werden soll. Bedingungen werden mithilfe der verfügbaren [Liquid-Operatoren](liquid-operators.md)oder nur basierend auf [der Wahrheit oder der Falschheit eines bestimmten Werts](liquid-conditional-operators.md)erstellt.  
+Ablaufsteuerungstags bestimmen, welcher Codeblock ausgeführt werden sollte und welcher Inhalt dargestellt werden sollte auf der Grundlage bestimmter Bedingungen. Bedingungen werden mithilfe des verfügbaren [Flüssige Operatoren](liquid-operators.md) oder ausschließlich basierend auf [dem Fakt der Wahrheit oder Unwahrheit eines Werts](liquid-conditional-operators.md) basiert.  
 
-## <a name="if"></a>Sei
+## <a name="if"></a>if
 
 Führt einen Codeblock aus, wenn eine bestimmte Bedingung erfüllt ist.
 
@@ -32,9 +27,9 @@ Hello, Dave.
 {% endif %}
 ```
 
-## <a name="unless"></a>anderes
+## <a name="unless"></a>unless
 
-Wie bei, mit der Ausnahme, dass ein Codeblock ausgeführt wird, wenn eine bestimmte Bedingung**nicht** erfüllt wird.
+Wie „if”, nur dass ein Codeblock ausgeführt wird, wenn eine bestimmte Bedingung **nicht** erfüllt ist.
 
 ```
 {% unless page.title == 'Home' %}
@@ -44,9 +39,9 @@ This is not the Home page.
 {% endunless %}
 ```
 
-## <a name="elsifelse"></a>elsif/Else
+## <a name="elsifelse"></a>elsif/else
 
-Fügt einer if-oder-Block-Sperre weitere Bedingungen hinzu.
+Fügt mehrere Bedingungen zu einem if- oder unless-Block hinzu.
 
 ```
 {% if user.fullname == 'Dave Bowman' %}
@@ -64,9 +59,9 @@ Hello, stranger.
 {% endif %}
 ```
 
-## <a name="casewhen"></a>Groß-/Kleinschreibung
+## <a name="casewhen"></a>case/when
 
-Eine Switch-Anweisung, mit der eine Variable mit unterschiedlichen Werten verglichen und für jeden Wert ein anderer Codeblock ausgeführt wird.
+Eine switch-Anweisung, um eine Variable mit verschiedenen Werten zu vergleichen und einen anderen Codeblock für jeden Wert auszuführen.
 
 ```
 {% case user.fullname %}
@@ -88,7 +83,7 @@ Hello, stranger.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Iterations Tags](iteration-tags.md)<br>
-[Variablen Tags](variable-tags.md)<br>
-[Vorlagen Tags](template-tags.md)<br>
-[Powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md)
+[Iterationstags](iteration-tags.md)<br>
+[Variable Tags](variable-tags.md)<br>
+[Vorlagentags](template-tags.md)<br>
+[PowerApps Common Data Service-Entitäts-Tags](portals-entity-tags.md)

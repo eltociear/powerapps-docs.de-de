@@ -1,26 +1,23 @@
 ---
-title: Unterstützte Webbrowser für powerapps-Portale Studio | Microsoft-Dokumentation
-description: Hier finden Sie Informationen zu unterstützten Webbrowsern für powerapps-Portale Studio.
+title: Unterstützte Webbrowser für Portal Designer | Microsoft Docs
+description: Erfahren Sie mehr über die unterstützten Webbrowser für Portal Designer.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: c84761492052b46f5b9509da072c34169dfde620
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977448"
+ms.reviewer: null
 ---
-# <a name="supported-web-browsers-for-powerapps-portals-studio"></a>Unterstützte Webbrowser für powerapps-Portale Studio
 
-Die unterstützten Browser für powerapps-Portale Studio sind unten aufgeführt.
+# <a name="supported-web-browsers-for-portal-designer"></a>Unterstützte Webbrowser für Portal Designer
+
+[!include[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Die unterstützten Browser für den Portal Designer sind unten aufgeführt.
 
 | **Browser**                     | **Betriebssystem**           |
 |---------------------------------|--------------------------------|
-| Google Chrome (aktuelle Version)<br>(empfohlen)                    | <ul><li>Windows 7 SP1, 8.1 und 10</li><li>macOS</li></ul>      |
+| Google Chrome (neueste Version)<br>(empfohlen)                    | <ul><li>Windows 7 SP1, 8.1 und 10</li><li>macOS</li></ul>      |
 | Microsoft Edge (neueste Version)<br> (empfohlen)                    | Windows 10                     |

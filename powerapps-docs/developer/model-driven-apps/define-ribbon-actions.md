@@ -34,14 +34,15 @@ Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuereleme
   
      Sie haben mehrere Möglichkeiten, Parameter an eine URL mithilfe des Menübands zu übergeben. Weitere Informationen: [Übergeben von Parametern an eineURL mithilfe des Menübands](pass-parameters-url-by-using-ribbon.md)  
   
-### <a name="passing-parameters-to-ribbon-actions"></a>Übergeben von Parametern an Menübandaktionen  
+## <a name="passing-parameters-to-ribbon-actions"></a>Übergeben von Parametern an Menübandaktionen  
+
  Verwenden Sie die folgenden Elemente ein, um Daten zu definieren, die an die benutzerdefinierte Aktion übergeben werden sollen:  
   
  `<BoolParameter>`  
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Weitere Informationen: [Übermitteln von -Daten von einer Seite als Parameter an Menüband-Aktionen](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)<!-- TODO need to update the relevant link from the powerapps repo>
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] Mehr Informationen: [Daten von einer Seite als Parameter an Ribbon Actions übergeben](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo -->
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]
@@ -56,7 +57,9 @@ Definieren Sie die Aktionen, die durch Befehlsleisten- oder Menübandsteuereleme
   
  Die Parameter, die an `<JavaScriptFunction>` übergeben werden, benötigen keinen Namen, aber sie müssen in folgender Reihenfolge eingeschlossen werden, die von der Funktion erwartet wird, und müssen vom richtigen Datentyp sein.  
   
-### <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch  
+
  [Passen Sie Befehle und das Menüband an](customize-commands-ribbon.md)   
  [Definieren von Menüband-Anzeigeregeln](define-ribbon-display-rules.md)   
- [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo-->
+ [Daten von einer Seite als Parameter an Menüband-Aktionen übermitteln](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  
+<!-- TODO need to update the relevant link from the powerapps repo-->

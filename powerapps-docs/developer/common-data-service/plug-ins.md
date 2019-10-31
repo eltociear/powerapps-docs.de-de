@@ -31,9 +31,6 @@ Die Klassen im Assembly, die für einen Schritt registriert werden können, müs
 
 Plug-Ins können so konfiguriert werden, dass sie synchron oder asynchron ausgeführt werden. Ein synchrones Plug-In bewirkt, dass der Vorgang wartet, bis der Code im Plug-In ausgeführt wurde. Dies wirkt sich auf die wahrgenommene Leistung des Systems aus. Die Vorgänge in einem asynchronen Plug-In werden in einer Warteschlange platziert und ausgeführt, nachdem der Vorgang abgeschlossen wurde, sodass der Vorgang mit minimaler Unterbrechung ausgeführt werden kann.
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](./includes/cc-d365ce-note-section.md)] [Weitere Informationen zum Erweitern von Geschäftsprozessen (Customer Engagement)](/dynamics365/customer-engagement/developer/write-plugin-extend-business-processes)
-
 ## <a name="when-to-use-plug-ins"></a>Verwenden von Plug-Ins
 
 Personen vergleichen häufig Workflows und Plug-Ins als Auswahlmöglichkeiten für die Anwendung benutzerdefinierter Geschäftslogik. Die Funktionen vonWorkflows und Plug-Ins überschneiden sich signifikant. Plug-Ins können alle Funktionen ausführen, die Workflows ausführen, das Gegenteil trifft aber nicht zu. Dies bedeutet jedoch nicht, dass Sie Plug-Ins für alles verwenden sollten, was mit einem Workflow ausgeführt werden kann. Es stehen weitere Funktionen zum Erfüllen von Anforderungen zur Verfüguing, ohne Plug-Ins zu verwenden. 

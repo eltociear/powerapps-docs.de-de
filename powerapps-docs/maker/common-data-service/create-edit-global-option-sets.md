@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bearbeiten globaler Optionssätze (Auswahllisten) – Übersicht für Common Data Service | MicrosoftDocs
+title: Erstellen und Bearbeiten einer Übersicht über globale Optionssätze (Auswahllisten) für Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
@@ -14,7 +14,8 @@ applies_to:
 ms.assetid: f06b8941-8dca-4601-b965-341cfb6fc3b2
 caps.latest.revision: 11
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -37,7 +38,7 @@ Sie können zwei Designer verwenden, um globale Optionssätze zu erstellen oder 
 |Designer| Beschreibung|
 |--|--|
 |[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.<br />Weitere Informationen: [Ein Optionssatz erstellen](custom-picklists.md) |
-|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Projekt-Explorer](create-edit-global-option-sets-solution-explorer.md) |
+|Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen. <br />Weitere Informationen: [Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
 > Sie können globale Optionssätze in Ihrer Umgebung auch wie folgt erstellen:
@@ -58,7 +59,7 @@ Sie können das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&
 ## <a name="see-also"></a>Siehe auch
 
 [Einen Optionssatz erstellen](custom-picklists.md)<br />
-[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mit Lösungs-Explorer](create-edit-global-option-sets-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mithilfe des Projektmappen-Explorers](create-edit-global-option-sets-solution-explorer.md)<br />
 [Entwicklerdokumentation: Globale Optionssätze anpassen](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets).
   
 

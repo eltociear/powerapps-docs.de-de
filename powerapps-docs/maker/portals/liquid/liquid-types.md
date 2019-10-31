@@ -1,28 +1,23 @@
 ---
-title: Verwenden von Liquid-Typen für ein Portal | MicrosoftDocs
-description: Erfahren Sie mehr über die verfügbaren Liquid-Typen in einem Portal.
+title: Verwendung von Liquid-Typen für ein Portal | MicrosoftDocs
+description: Lesen Sie mehr zu den verfügbaren Liquid-Typen in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974941"
+ms.reviewer: null
 ---
+
 # <a name="available-liquid-types"></a>Verfügbare Liquid-Typen
 
-Liquid-Objekte können einen von sieben Grundtypen zurückgeben: **String**, **Number**, **Boolean**, **Array**, **Dictionary**, **DateTime**oder **null**. Flüssige Variablen können mithilfe der **assign** -oder **Capture** -Tags initialisiert werden.
+Liquid-Objekte können sieben grundlegende Typen zurückgeben: **String**, **Number**, **Boolean**, **Array**, **Dictionary**, **DateTime**, or **Null**. Liquid-Variablen können durch Verwendung der Tags **assign** oder **capture** initialisiert werden.
 
 ## <a name="string"></a>Zeichenfolge
 
-Eine Zeichenfolge wird deklariert, indem Text in einfache oder doppelte Anführungszeichen eingeschlossen wird.
+Eine Zeichenfolge wird deklariert, indem ein Text in einfache oder doppelte Anführungszeichen eingeschlossen wird.
 
 ```
 {% assign string_a = Hello World! %}
@@ -30,15 +25,15 @@ Eine Zeichenfolge wird deklariert, indem Text in einfache oder doppelte Anführu
 {% assign string_b = 'Single quotes work too.' %}
 ```
 
-Die Anzahl von Zeichen in einer Zeichenfolge mit der Size-Eigenschaft erhalten.
+Rufen Sie die Anzahl der Zeichen in einer Zeichenfolge mit der size-Eigenschaft ab.
 
 ```
 {{ string_a.size }} <!-- Output: 12 -->
 ```
 
-## <a name="number"></a>Number
+## <a name="number"></a>Zahl
 
-Zahlen können ganze Zahlen oder Gleit Komma Zahlen sein.
+Zahlen können ganze Zahlen oder Gleitkommazahlen sein.
 
 ```
 {% assign pi = 3.14 %}
@@ -50,9 +45,9 @@ This page has a long title.
 {% endif %}
 ```
 
-## <a name="boolean"></a>Boolescher Wert
+## <a name="boolean"></a>Boolean
 
-Ein boolescher Wert ist entweder true oder false.
+Boolesche Werte sind entweder true oder false.
 
 ```
 {% assign x = true %}
@@ -68,7 +63,7 @@ This will be rendered, because x is true.
 
 ## <a name="array"></a>Array
 
-Ein Array enthält eine Liste der Werte eines beliebigen Typs. Sie können auf ein angegebenes Element mit (null basierter) Index zugreifen, indem Sie \[ \]verwenden, diese mithilfe des **für-Tags**durchlaufen und die Anzahl der Elemente im Array mithilfe der Size-Eigenschaft abrufen.
+Arrays führen eine Liste mit Werten eines beliebigen Typs aus. Sie können mit \[ \] auf ein bestimmtes Element im nullbasierten Index zugreifen, den Index über den **for tag** durchlaufen und über die size-Eigenschaft die Anzahl der Elemente im Array abfragen.
 
 ```
 {% for view in entitylist.views %}
@@ -86,9 +81,9 @@ This entity list has {{ entitylist.views.size }} views.
 {% endif %}
 ```
 
-## <a name="dictionary"></a>Buch
+## <a name="dictionary"></a>Dictionary
 
-Wörterbücher enthalten eine Auflistung von Werten, auf die über einen Zeichen folgen Schlüssel zugegriffen werden kann. Sie können mit \[ \]auf ein bestimmtes Element über einen Zeichen folgen Schlüssel zugreifen, ihn mit dem **for-Tag**durchlaufen und die Anzahl der Elemente im Wörterbuch mithilfe der Size-Eigenschaft abrufen.
+Wörterbücher geben eine Sammlung von Werten an, auf die mit einem Zeichenfolgenschlüssel zugegriffen werden kann. Sie können mit \[ \] auf ein bestimmtes Element im Zeichenfolgenschlüssel zugreifen, den Index über den **for tag** durchlaufen und über die size-Eigenschaft die Anzahl der Elemente im Wörterbuch abfragen.
 
 ```
 {{ request.params[ID] }}
@@ -102,15 +97,15 @@ The request parameters collection contains some items.
 
 ## <a name="datetime"></a>DateTime
 
-Ein DateTime-Objekt stellt ein bestimmtes Datum und eine bestimmte Uhrzeit dar.
+DateTime-Objekte stellen ein bestimmtes Datum und eine bestimmte Uhrzeit dar.
 
 ```
 {{ page.modifiedon | date: 'f' }}
 ```
 
-## <a name="null"></a>Normal
+## <a name="null"></a>Null
 
-NULL stellt einen leeren oder nicht vorhandenen Wert dar. Alle Ausgaben, die versuchen, einen NULL-Wert zurückzugeben, werden nichts gereinigen. In Bedingungen wird er als falsch behandelt.
+Null stellt einen leeren oder nicht vorhandene Wert dar. Alle Ausgaben, die versuchen, einen Nullwert zurückzugeben, rendern nichts. Er wird in Bedingungen als "false" behandelt.
 
 ```
 {% if request.params[ID] %}
@@ -122,9 +117,9 @@ This will render if the ID request parameter is NOT null.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Speichern von Quell Inhalten mithilfe von Webvorlagen](store-content-web-templates.md)  
-[Grundlegendes zu Liquid](liquid-operators.md)  
-[Conditional](liquid-conditional-operators.md)  
+[Speichern von Inhalten mit Webvorlagen](store-content-web-templates.md)  
+[Lernen Sie Liquid-Operatoren kennen](liquid-operators.md)  
+[Bedingt](liquid-conditional-operators.md)  
 [Liquid-Objekte](liquid-objects.md)  
 [Liquid-Tags](liquid-tags.md)  
 [Liquid-Filter](liquid-filters.md)  

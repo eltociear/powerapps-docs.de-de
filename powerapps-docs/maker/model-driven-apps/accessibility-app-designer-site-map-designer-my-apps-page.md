@@ -1,6 +1,6 @@
 ---
-title: 'Grundlegendes zur Barrierefreiheit im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps | Microsoft Docs'
-description: 'Informationen zu Barrierefreiheit in modellgesteuerten Apps mit App-Designer, Siteübersicht-Designer und auf der Meine Apps-Seite in PowerApps'
+title: 'Grundlegendes zur Barrierefreiheit im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps | Microsoft-Dokumentation'
+description: 'Informationen zur Barrierefreiheit in modellgesteuerten Apps mit App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite in PowerApps'
 keywords: 'App-Designer, Siteübersicht-Designer; meine Apps; Dynamics 365'
 author: Mattp123
 ms.author: matp
@@ -19,14 +19,14 @@ search.app:
   - D365CE
 ---
 
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Barrierefreiheit im PowerApps-App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite
+# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Barrierefreiheit in PowerApps, im App-Designer, Siteübersichtsdesigner und auf der Meine Apps-Seite
 
 Microsoft legt großen Wert darauf, dass die Produkte und Dienste von Microsoft für jeden möglichst einfach zu handhaben sind. Weitere Informationen: [Microsoft-Barrierefreiheit](http://www.microsoft.com/enable/default.aspx)  
  
 In diesem Thema wird die Barrierefreiheit beschrieben, die in modellgesteuerten Apps verfügbar ist.  
   
 ## <a name="keyboard-shortcuts"></a>Tastenkombinationen  
-PowerApps bietet Tastenkombinationen, um die Arbeit für Benutzer mit eingeschränkter Bewegungsfreiheit und Behinderungen zu erleichtern.  
+In PowerApps wird mit Tastenkombinationen eine Hilfestellung geboten, um die Arbeit für Benutzer mit eingeschränkter Bewegungsfreiheit und Behinderungen zu erleichtern.  
   
 |Meine Apps-Seite|||  
 |------------------|-|-|  
@@ -106,4 +106,4 @@ PowerApps bietet Tastenkombinationen, um die Arbeit für Benutzer mit eingeschr�
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von Tastaturkürzeln in Dynamics 365 Customer Engagement-Anwendungen](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Verwenden von Tastenkombinationen in PowerApps](/powerapps/user/keyboard-shortcuts)

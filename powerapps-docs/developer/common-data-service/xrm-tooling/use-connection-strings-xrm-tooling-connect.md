@@ -1,6 +1,6 @@
 ---
-title: Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service (Common Data Service) | Microsoft Docs
-description: XRM-Tooling ermöglicht Ihnen die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen
+title: 'Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung zu Common Data Service (Common Data Service)| Microsoft Docs herzustellen.'
+description: 'XRM-Tools ermöglichen es Ihnen, sich mit Ihrer Common Data Service-Umgebung zu verbinden, indem Sie Verbindungszeichenfolgen verwenden.'
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -21,12 +21,10 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden von Verbindungszeichenfolgen in XRM-Tooling zum Verbinden mit Common Data Service
+# <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung mit Common Data Service herzustellen.
 
-Mit Common Data Service ermöglicht Ihnen XRM-Tooling die Verbindung mit Ihrer Common Data Service-Umgebung durch Verwendung von Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in **SQL Server** verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, Common Data Service-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht hartcodiert in der Anwendung, um eine Verbindung mit Ihrer Common Data Service-Umgebung herzustellen.  
+Mit Common Data Service ermöglicht XRM-Tooling die Verbindung zu Ihrer Common Data Service-Umgebung über Verbindungszeichenfolgen. Dies ähnelt dem Konzept von Verbindungszeichenfolgen, das in **SQL Server** verwendet wird. Verbindungszeichenfolgen erhalten native Unterstützung in Konfigurationsdateien inklusive der Möglichkeit der Verschlüsselung der Konfigurationsabschnitte für maximale Sicherheit. Dies ermöglicht es Ihnen, Common Data Service-Verbindungen zur Bereitstellungszeit zu konfigurieren und nicht harten Code in Ihrer Anwendung, um eine Verbindung zu Ihrer Common Data Service-Umgebung herzustellen.  
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-topic](../includes/cc-d365ce-note-topic.md)] [Verwenden von Verbindungszeichenfolgen zum Herstellen einer Verbindung zu Customer Engagement](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect)
 
 <a name="Create"></a> 
 
@@ -55,7 +53,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 > [!NOTE]
 > Sie müssen die folgende `using`-Direktive in Ihrem Code verwenden, um auf den `System.Configuration`-Namespace verweisen, um auf die Verbindungszeichenfolge in Ihrem Code zuzugreifen: `using System.Configuration;`  
   
- Nachdem Sie ein <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Objekt erstellt haben, können Sie das Objekt verwenden, um Aktionen in Common Data Service auszuführen. Weitere Informationen: [Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)  
+ Nachdem Sie ein <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>-Objekt erstellt haben, können Sie mit diesem Objekt Aktionen in Common Data Service durchführen. Mehr Informationen: [Verwenden Sie XRM-Tools, um Aktionen in Common Data Service auszuführen](use-xrm-tooling-execute-actions.md)  
   
 <a name="Parameters"></a>
 
@@ -65,28 +63,28 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
   
 |Parametername|Beschreibung|  
 |--------------------|-----------------|  
-|`ServiceUri`, `Service Uri`, `Url` oder `Server`|Gibt die Basis-URL zur Common Data Service-Umgebung an. Die URL kann das http- oder https-Protokoll verwenden, und der Port ist optional. Standardmäßig wird der Port 80 für das http-Protokoll und 443 für das https-Protokoll verwendet. Die Server-URL ist normalerweise im Format `https://`*`<organization-name>`*`.crm.dynamics.com`<br /><br /> Der Organisationsname muss angegeben werden.|  
+|`ServiceUri`, `Service Uri`, `Url` oder `Server`|Gibt die URL zur Umgebung Common Data Service an. Die URL kann das http- oder https-Protokoll verwenden, und der Port ist optional. Standardmäßig wird der Port 80 für das http-Protokoll und 443 für das https-Protokoll verwendet. Die Server-URL ist normalerweise im Format `https://`*`<organization-name>`*`.crm.dynamics.com`<br /><br /> Der Organisationsname muss angegeben werden.|  
 |`Domain`|Gibt die Domäne an, die Anmeldeinformationen von Benutzern überprüft.|  
 |`UserName`, `User Name`, `UserId` oder `User Id`|Gibt die Benutzerkennung an, die den Anmeldeinformationen zugeordnet ist.|  
 |`Password`|Gibt das Kennwort für den Benutzernamen, das den Anmeldeinformationen zugeordnet ist.|  
 |`HomeRealmUri` oder `Home Realm Uri`|Gibt den Startbereichs-URL an.|  
-|`AuthenticationType` oder `AuthType`|Gibt den Authentifizierungstyp an, um eine Verbindung mit der Common Data Service-Umgebung herzustellen. Gültige Werte sind: `AD`, `IFD` (AD FS) aktiviert, `OAuth` oder `Office365`.<br /><br /> -   `AD` und `IFD` sind nur für lokale Common Data Service-Umgebungen zulässig.<br />-   `OAuth` ist für Common Data Service und lokale Umgebungen zulässig.<br />-   `Office365` ist nur für Common Data Service-Umgebungen zulässig.|  
+|`AuthenticationType` oder `AuthType`|Gibt den Authentifizierungstyp an, mit dem die Verbindung zur Common Data Service-Umgebung hergestellt werden soll. Gültige Werte sind: `AD`, `IFD` (AD FS) aktiviert, `OAuth` oder `Office365`.<br /><br /> -   `AD` und `IFD` sind nur für lokale Common Data Service Umgebungen zulässig.<br />-   `OAuth` ist für Common Data Service und lokale Umgebungen zulässig.<br />-   `Office365` ist nur für Common Data Service Umgebungen erlaubt.|  
 |`RequireNewInstance`|Definiert, ob die vorhandene Verbindung wieder verwendet wird, wenn  Sie aufgerufen wird, solange die Verbindung noch aktiv ist. Standardwert ist `false`, der angibt, dass die bestehende Verbindung wiederverwendet wird. Wenn auf `true` festgelegt, wird das System gezwungen, eine eindeutige Verbindung herzustellen.|  
-|`ClientId`, `AppId` oder `ApplicationId`|Gibt die `ClientID` an, die zugewiesen wird, wenn Sie Ihre Anwendung in Azure Active Directory oder in Active Directory Federation Services (AD FS) registriert haben.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
-|`RedirectUri` oder `ReplyUrl`|Gibt die Umleitungs-URI der Anwendung an, die Sie in Azure Active Directory oder in Active Directory Federation Services (AD FS) registriert haben.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
+|`ClientId`, `AppId` oder `ApplicationId`|Gibt die `ClientID` an, die bei der Registrierung Ihrer Anwendung in Azure Active Directory oder Active Directory Federation Services (AD FS) zugewiesen wurde.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
+|`RedirectUri` oder `ReplyUrl`|Gibt die Redirect-URI der Anwendung an, die Sie in Azure Active Directory oder Active Directory Federation Services (AD FS) registriert haben.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
 |`TokenCacheStorePath`|Gibt den vollständigen Pfad zum Speicherort an, an dem der Benutzertoken gespeichert werden soll. Der laufende Prozess muss über Zugriff auf den angegebenen Pfad verfügen. Es ist die Prozesszuständigkeit, diesen Pfad festzulegen und zu konfigurieren.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
 |`LoginPrompt`|Gibt an, ob der Benutzer zur Eingabe der Anmeldeinformationen aufgefordert wird, wenn die Anmeldeinformationen nicht angegeben wurden. Gültige Werte sind:<br /><br /> -   `Always`: Fordert immer den Benutzer auf, Anmeldeinformationen anzugeben.<br />-   `Auto`: Ermöglicht dem Benutzer, in der Anmeldungssteuerelement-Benutzeroberfläche auszuwählen, ob die Eingabeaufforderung angezeigt wird oder nicht.<br />-   `Never`: Fordert den Benutzer nicht auf, Anmeldeinformationen anzugeben. Wenn für die Verwendung einer Verbindungsmethode keine Benutzeroberfläche bereitgestellt wird, müssen Sie diesen Wert verwenden.<br /><br /> Dieser Parameter gilt nur, wenn `OAuth` als Authentifizierungstyp angegeben ist.|  
 |`StoreName` oder `CertificateStoreName`|Definiert den Speichernamen, unter dem das Zertifikat für den Fingerabdruck gefunden wird. Wenn festgelegt, ist der Fingerabdruck erforderlich.|
 |`Thumbprint` oder `CertThumbprint`| Definiert den Fingerabdruck des Zertifikats, der während einer S2S-Verbindung verwendet wird. Wenn festgelegt, ist die AppID erforderlich und die Benutzer-ID und das Kennwort werden ignoriert.|
-|`SkipDiscovery`|Gibt an, ob Instanz-Erkennung aufgerufen wird, um die Verbindungs-URI für eine bestimmte Instanz zu bestimmen. Ab NuGet-Version Microsoft.CrmSdk.XrmTooling.CoreAssembly 9.0.2.7, Standard = true. Standard der ältere Versionen ist false. <br/> Hinweis: Wenn Sie true  festlegen, ist es wichtig, dass der Benutzer den entsprechenden und präzisen URI für die Zielinstanz zur Verfügung hat.|
+|`SkipDiscovery`|Gibt an, ob Instanz-Erkennung aufgerufen wird, um die Verbindungs-URI für eine bestimmte Instanz zu bestimmen. Ab NuGet Release Microsoft.CrmSdk.XrmTooling.CoreAssembly Version 9.0.2.7, default = true. Standard der ältere Versionen ist false. <br/> Hinweis: Wenn Sie true  festlegen, ist es wichtig, dass der Benutzer den entsprechenden und präzisen URI für die Zielinstanz zur Verfügung hat.|
 
 <a name="Examples"></a>
 
 ## <a name="connection-string-examples"></a>Beispiele für Verbindungszeichenfolgen
  
-Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für die Verbindung mit Online-Bereitstellungen und Authentifizierungsszenarien verwenden können. Die Verbindungszeichenfolgenbeispiele on-premises und IFD-Bereitstellungsinstanzen ist nun in der Customer Engagement-Dokumentation unter folgendem Link verfügbar: [Verwenden Sie Zeichenfolgen in XRM-Tooling, um eine Verbindung mit Customer Engagement herzustellen](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
+Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für die Verbindung mit Online-Bereitstellungen und Authentifizierungsszenarien verwenden können. Die Beispiele für Verbindungszeichenfolgen für lokale und IFD-Deployment-Instanzen sind nun in der Dokumentation Dynamics 365 Customer Engagement (on-premises) unter: [Verwenden Sie Verbindungszeichenfolgen in XRM-Tools, um eine Verbindung herzustellen](/dynamics365/customer-engagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect). 
 
-### <a name="named-account-using-office-365"></a>Benanntes Konto unter Verwendung von Office 365  
+### <a name="named-account-using-office-365"></a>Benanntes Konto mit Office 365.  
   
 ```xml
 <add name="MyCDSServer" 
@@ -97,7 +95,7 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
   Url=https://contoso.crm.dynamics.com"/>  
 ```  
   
-### <a name="oauth-using-named-account-in-office-365-with-ux-to-prompt-for-authentication"></a>OAuth unter Verwendung des benannten Kontos in Office 365 mit UX zur Abfrage der Authentifizierungsbestätigung  
+### <a name="oauth-using-named-account-in-office-365-with-ux-to-prompt-for-authentication"></a>OAuth mit benanntem Konto in Office 365 mit UX zur Abfrage der Authentifizierung  
   
 ```xml
 <add name="MyCDSServer"
@@ -135,6 +133,6 @@ Die folgenden Beispiele veranschaulichen, wie Sie Verbindungszeichenfolgen für 
 ### <a name="see-also"></a>Siehe auch
 
 [Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools](build-windows-client-applications-xrm-tools.md)<br />
-[Verwenden von CrmServiceClient-Konstruktoren zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Verwenden von XRM-Tooling zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)<br />
+[Verwenden Sie CrmServiceClient Konstruktoren, um sich mit Common Data Service zu verbinden.](use-crmserviceclient-constructors-connect.md)<br />
+[Verwenden Sie XRM-Tools, um Aktionen in Common Data Service auszuführen](use-xrm-tooling-execute-actions.md)<br />
 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient>

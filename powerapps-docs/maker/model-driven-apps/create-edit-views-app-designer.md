@@ -30,7 +30,7 @@ search.app:
 
 In diesem Thema führen Sie mehrere Aufgaben aus, die erforderlich sind, um mit Ansichten zu arbeiten, z. B. Erstellen einer öffentliche Ansicht, Hinzufügen einer vorhandene Ansicht zu einer App und Ändern von Spalten, Filtern und der Sortierreihenfolge für eine Ansicht.
 
-In PowerApps-Ansichten definieren Sie, wie Datensätze für eine bestimmten Entität angezeigt werden. Mit einer Ansicht wird Folgendes definiert:
+In PowerApps definieren Ansichten, wie Datensätze für eine bestimmten Entität angezeigt werden. Mit einer Ansicht wird Folgendes definiert:
 -  Die anzuzeigenden Spalten (Attribute)
 -  Die Breite der Spalten
 -  Wie die Datensätze standardmäßig sortiert werden
@@ -43,7 +43,7 @@ In PowerApps-Ansichten definieren Sie, wie Datensätze für eine bestimmten Enti
 
 Weitere Informationen: [Grundlegendes zu Ansichten](create-edit-views.md)
 
-## <a name="create-a-public-view-in-powerapps"></a>Erstellen oder Bearbeiten einer öffentlichen Ansicht in PowerApps
+## <a name="create-a-public-view-in-powerapps"></a>Erstellen einer öffentlichen Ansicht in PowerApps
 Als App-Entwickler können Sie öffentliche Ansichten mithilfe von PowerApps erstellen und bearbeiten.
 1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
@@ -79,7 +79,7 @@ Die folgenden Abschnitte beschreiben, wie Sie Ansichten im App-Designer erstelle
 ### <a name="open-and-add-a-view-in-the-app-designer"></a>Öffnen und Hinzufügen einer Ansicht im App-Designer
 
 Im Folgenden wird erläutert, wie Sie eine Ansicht im App-Designer öffnen und hinzufügen.
-1. Wählen Sie in PowerApps **Apps** aus dem linken Navigationsbereich, wählen Sie **...** neben der gewünschten App und dann **Edit**. 
+1. Wählen Sie in PowerApps die Option **Apps** aus dem linken Navigationsbereich **...** neben der gewünschten App und dann **Bearbeiten** aus. 
 
 2. Wählen Sie im App-Designer im Abschnitt **Entitätsansicht** die Option **Ansichten** aus.
 
@@ -176,9 +176,9 @@ Wenn Sie eine öffentliche oder Systemansicht bearbeiten, müssen Sie Ihre Ände
 
 
 ## <a name="community-tools"></a>Community-Tools
-**Ansichts-Layout-Replikator** und **Ansicht-Designer** sind die Tools, die von der XrmToolbox-Community für Dynamics 365 Customer Engagement entwickelt wurden.
+**Ansichts-Layout-Replikator** und **Ansicht-Designer** sind die Tools, die von der XrmToolbox-Community für PowerApps-Apps entwickelt wurden.
 
-Weitere Informationen: [Entwicklertools](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
+Weitere Informationen: [Entwicklertools](/powerapps/developer/common-data-service/developer-tools).
 
 > [!NOTE]
 > Diese Tools werden von XrmToolBox bereitgestellt und werden nicht von Microsoft unterstützt. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com/). 

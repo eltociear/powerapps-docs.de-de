@@ -1,10 +1,10 @@
 ---
-title: Designüberlegungen für modellgesteuerte App-Hauptformulare mit PowerApps | MicrosoftDocs
+title: Designüberlegungen für modellgetriebene App-Hauptformulare mit PowerApps | MicrosoftDocs
 description: 'Hier erfahren Sie, wie Sie Hauptformulare entwickeln'
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -27,7 +27,7 @@ search.app:
 
 Hauptformulare sind die Hauptbenutzerschnittstelle, auf der Personen Daten anzeigen und damit interagieren. Hauptformulare bieten die größte Auswahl an Optionen und sind für modellgetriebene Anwendungen verfügbar, mit Ausnahme von Dynamics 365 for phones.  
   
- Zu den wichtigsten Designzielen der Hauptformulare gehört, dass sie einmal entworfen und überall bereitgestellt werden. Das gleiche Hauptformular, das Sie für eine modellgetriebene Anwendung oder die Dynamics 365 Customer Engagement-Webanwendung entwerfen, wird auch in Dynamics 365 for Outlook und Dynamics 365 for tablets verwendet. Der Vorteil für dieses Ansatzes ist, dass Sie Änderungen nicht in drei verschiedenen Formularen integrieren müssen. Allerdings gibt es beim Entwickeln dieser Formulare einige wichtige Faktoren zu berücksichtigen.  
+ Zu den wichtigsten Designzielen der Hauptformulare gehört, dass sie einmal entworfen und überall bereitgestellt werden. Das gleiche Hauptformular, das Sie für eine modellgetriebene App entwerfen, wird auch in Dynamics 365 for Outlook und Dynamics 365 für Tablets verwendet. Der Vorteil für dieses Ansatzes ist, dass Sie Änderungen nicht in drei verschiedenen Formularen integrieren müssen. Allerdings gibt es beim Entwickeln dieser Formulare einige wichtige Faktoren zu berücksichtigen.  
   
 <a name="BKMK_CustomFormsForGroups"></a>   
 
@@ -52,7 +52,7 @@ Hauptformulare sind die Hauptbenutzerschnittstelle, auf der Personen Daten anzei
   
 -   Wenn Sie über nicht unterstützte Skripts haben, die mit DOM-Elementen interagieren, die in der Webanwendung vorhanden sind, werden diese nicht in Dynamics 365 for tablets-Formularen funktionieren, da die gleichen DOM-Elemente nicht verfügbar sind.  
   
-- Dynamics 365 for Outlook Reading Pane Formulare erlauben kein Scripting. Die Sichtbarkeit von Formularelementen hängt von den Standardeinstellungen ab und kann nicht zur Laufzeit mithilfe von Skripts geändert werden.  
+- Dynamics 365 for Outlook-Lesebereichsformulare erlauben kein Skripting. Die Sichtbarkeit von Formularelementen hängt von den Standardeinstellungen ab und kann nicht zur Laufzeit mithilfe von Skripts geändert werden.  
   
 <a name="BKMK_FormPerformance"></a>   
 ## <a name="form-performance"></a>Formularleistung  

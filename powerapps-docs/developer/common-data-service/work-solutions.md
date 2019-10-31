@@ -39,8 +39,8 @@ In diesem Thema werden die bestimmten Programmieraufgaben dargestellt, die in [B
   
   Das folgende Bespiel definiert zunächst einen Herausgeber und prüft dann aufgrund des eindeutigen Namens, ob dieser Herausgeber bereits vorhanden ist. Falls er bereits vorhanden ist, wurde möglicherweise das Anpassungspräfix geändert, dieses Beispiel versucht also, das aktuelle Anpassungspräfix zu erfassen. Die `PublisherId` wird ebenfalls erfasst, so dass der Herausgeberdatensatz gelöscht werden kann. Wenn der Herausgeber nicht gefunden wird, wird ein neuer Herausgeber mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>-Methode erstellt. <xref:Microsoft.Xrm.Sdk.IOrganizationService.Create*> Methode 
 
-  ```csharp
-  //Define a new publisher
+ ```csharp
+//Define a new publisher
 Publisher _crmSdkPublisher = new Publisher
 {
     UniqueName = "sdksamples",
@@ -50,7 +50,6 @@ Publisher _crmSdkPublisher = new Publisher
     EMailAddress = "someone@microsoft.com",
     Description = "This publisher was created with samples from the Microsoft Dynamics CRM SDK"
 };
-
 //Does publisher already exist?
 QueryExpression querySDKSamplePublisher = new QueryExpression
 {
@@ -62,7 +61,6 @@ QueryExpression querySDKSamplePublisher = new QueryExpression
 querySDKSamplePublisher.Criteria.AddCondition("uniquename", ConditionOperator.Equal, _crmSdkPublisher.UniqueName);
 EntityCollection querySDKSamplePublisherResults = _serviceProxy.RetrieveMultiple(querySDKSamplePublisher);
 Publisher SDKSamplePublisherResults = null;
-
 //If it already exists, use it
 if (querySDKSamplePublisherResults.Entities.Count > 0)
 {
@@ -77,12 +75,14 @@ if (SDKSamplePublisherResults == null)
     Console.WriteLine(String.Format("Created publisher: {0}.", _crmSdkPublisher.FriendlyName));
     _customizationPrefix = _crmSdkPublisher.CustomizationPrefix;
 }
-  ``` 
+``` 
   
-<a name="BKMK_RetrieveDefaultPublisher"></a>   
+<a name="BKMK_RetrieveDefaultPublisher"></a>
+   
 ## <a name="retrieve-the-default-publisher"></a>Abrufen des Standardherausgebers  
- Dieses Beispiel zeigt, wie der Standardherausgeber abgerufen wird. Der Standardherausgeber hat einen konstanten GUID-Wert: `d21aab71-79e7-11dd-8874-00188b01e34f`.  
-  
+
+Dieses Beispiel zeigt, wie man den Standard-Publisher abruft. Der Standardherausgeber hat einen konstanten GUID-Wert: `d21aab71-79e7-11dd-8874-00188b01e34f`.  
+
 ```csharp
 // Retrieve the Default Publisher
 
@@ -120,7 +120,7 @@ Console.WriteLine("Retrieved the {0}.", DefaultPublisherReference.Name);
   
   Dieses Beispiel überprüft anhand des eindeutigen Namens, ob die Lösung in der Organisation bereits vorhanden ist. Wenn dies nicht der Fall ist, wird sie erstellt. Der `SolutionId`-Wert wird erfasst, so dass die Lösung gelöscht werden kann.  
   
-  ```csharp
+ ```csharp
   // Create a Solution
 //Define a solution
 Solution solution = new Solution
@@ -155,11 +155,13 @@ if (SampleSolutionResults == null)
 }
   ```
   
-<a name="BKMK_RetrieveASolution"></a>   
-## <a name="retrieve-a-solution"></a>Abrufen einer Lösung  
- Um eine bestimmte Lösung abzurufen, können Sie den `UniqueName` der Lösung verwenden. Jede Organisation hat eine Standardlösung mit einem konstanten GUID-Wert: `FD140AAF-4DF4-11DD-BD17-0019B9312238`.  
+<a name="BKMK_RetrieveASolution"></a> 
   
- Dieses Beispiel zeigt, wie Daten für eine Lösung mit dem eindeutigen Namen "samplesolution" abgerufen werden. Eine Lösung mit diesem Namen wird unter [Erstellen einer Lösung](work-solutions.md#BKMK_CreateASolution) erstellt.  
+## <a name="retrieve-a-solution"></a>Abrufen einer Lösung  
+
+Um eine bestimmte Lösung abzurufen, können Sie den `UniqueName` der Lösung verwenden. Jede Organisation hat eine Standardlösung mit einem konstanten GUID-Wert: `FD140AAF-4DF4-11DD-BD17-0019B9312238`.  
+  
+Dieses Beispiel zeigt, wie Daten für eine Lösung mit dem eindeutigen Namen "samplesolution" abgerufen werden. Eine Lösung mit diesem Namen wird unter [Erstellen einer Lösung](work-solutions.md#BKMK_CreateASolution) erstellt.  
   
  ```csharp
  // Retrieve a solution
@@ -175,9 +177,11 @@ querySampleSolution.Criteria.AddCondition("uniquename", ConditionOperator.Equal,
 Solution SampleSolution = (Solution)_serviceProxy.RetrieveMultiple(querySampleSolution).Entities[0];
  ``` 
   
-<a name="BKMK_AddANewSolutionComponent"></a>   
-## <a name="add-a-new-solution-component"></a>Hinzufügen einer neuen Lösungskomponente  
- Dieses Beispiel zeigt, wie eine Lösungskomponente erstellt wird, die mit einer bestimmten Lösung verbunden ist. Wenn Sie die Lösungskomponente nicht mit einer bestimmten Lösung verbinden, wenn sie erstellt wird, wird sie nur der Standardlösung hinzugefügt, und Sie müssen sie manuell einer Lösung hinzufügen, wobei Sie den Code verwenden, der in [Eine vorhandene Lösungskomponente](work-solutions.md#BKMK_AddExistingSolutionComponent) enthalten ist.  
+<a name="BKMK_AddANewSolutionComponent"></a> 
+  
+## <a name="add-a-new-solution-component"></a>Hinzufügen einer neuen Lösungskomponente 
+ 
+Dieses Beispiel zeigt, wie eine Lösungskomponente erstellt wird, die mit einer bestimmten Lösung verbunden ist. Wenn Sie die Lösungskomponente nicht mit einer bestimmten Lösung verbinden, wenn sie erstellt wird, wird sie nur der Standardlösung hinzugefügt, und Sie müssen sie manuell einer Lösung hinzufügen, wobei Sie den Code verwenden, der in [Eine vorhandene Lösungskomponente](work-solutions.md#BKMK_AddExistingSolutionComponent) enthalten ist.  
   
  Dieser Code erstellt einen neuen globalen Optionssatz und fügt ihn der Lösung mit dem eindeutigen Namen `_primarySolutionName` hinzu.  
   
@@ -203,11 +207,13 @@ createOptionSetRequest.SolutionUniqueName = _primarySolutionName;
 _serviceProxy.Execute(createOptionSetRequest);
  ```  
   
-<a name="BKMK_AddExistingSolutionComponent"></a>   
+<a name="BKMK_AddExistingSolutionComponent"></a>  
+ 
 ## <a name="add-an-existing-solution-component"></a>Hinzufügen einer vorhandenen Lösungskomponente  
- Dieses Beispiel zeigt, wie einer Lösungskomponente eine vorhandene Lösung hinzugefügt wird.  
+
+Dieses Beispiel zeigt, wie einer Lösungskomponente eine vorhandene Lösung hinzugefügt wird.  
   
- Der folgende Code verwendet die <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> zum Hinzufügen der `Account`-Entität als  Lösungskomponente zu einer nicht verwalteten Lösung.  
+Der folgende Code verwendet die <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> zum Hinzufügen der `Account`-Entität als  Lösungskomponente zu einer nicht verwalteten Lösung.  
   
  ```csharp
  // Add an existing Solution Component
@@ -226,9 +232,11 @@ AddSolutionComponentRequest addReq = new AddSolutionComponentRequest()
 _serviceProxy.Execute(addReq);
 ``` 
   
-<a name="BKMK_RemoveSolutionComponent"></a>   
+<a name="BKMK_RemoveSolutionComponent"></a>  
+ 
 ## <a name="remove-a-solution-component"></a>Entfernen einer Lösungskomponente  
- Dieses Beispiel zeigt, wie eine Lösungskomponente von einer nicht verwalteten Lösung entfernt wird. Der folgende Code verwendet die <xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest> zum Entfernen einer Entitätslösungskomponente von einer nicht verwalteten Lösung. `solution.UniqueName` verweist auf die Lösung, die in [Erstellen einer Lösung](work-solutions.md#BKMK_CreateASolution) erstellt wird.  
+
+Dieses Beispiel zeigt, wie eine Lösungskomponente von einer nicht verwalteten Lösung entfernt wird. Der folgende Code verwendet die <xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest> zum Entfernen einer Entitätslösungskomponente von einer nicht verwalteten Lösung. `solution.UniqueName` verweist auf die Lösung, die in [Erstellen einer Lösung](work-solutions.md#BKMK_CreateASolution) erstellt wird.  
   
  ```csharp
  // Remove a Solution Component
@@ -248,9 +256,11 @@ RemoveSolutionComponentRequest removeReq = new RemoveSolutionComponentRequest()
 _serviceProxy.Execute(removeReq);
 ```
   
-<a name="BKMK_ExportPackageSolution"></a>   
+<a name="BKMK_ExportPackageSolution"></a>
+   
 ## <a name="export-or-package-a-solution"></a>Exportieren oder Packen einer Lösung  
- Dieses Beispiel zeigt, wie eine nicht verwaltete Lösung exportiert oder eine verwaltete Lösung gepackt wird. Der Code verwendet <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>, um eine komprimierte Datei zu exportieren, die eine nicht verwalte Lösung repräsentiert. Die Option zur Erstellung einer verwalteten Lösung wird mit der <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest.Managed>-Eigenschaft festgelegt. In diesem Beispiel wird eine Datei mit dem Namen samplesolution.zip im `c:\temp\`-Ordner gespeichert.  
+
+Dieses Beispiel zeigt, wie eine nicht verwaltete Lösung exportiert oder eine verwaltete Lösung gepackt wird. Der Code verwendet <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>, um eine komprimierte Datei zu exportieren, die eine nicht verwalte Lösung repräsentiert. Die Option zur Erstellung einer verwalteten Lösung wird mit der <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest.Managed>-Eigenschaft festgelegt. Dieses Beispiel speichert eine Datei namens *samplesolution.zip* im Ordner `c:\temp\`.  
   
 ```csharp
 // Export or package a solution
@@ -269,13 +279,15 @@ File.WriteAllBytes(outputDir + filename, exportXml);
 Console.WriteLine("Solution exported to {0}.", outputDir + filename);
 ``` 
 
-<a name="BKMK_InstallUpgradeSolution"></a>   
+<a name="BKMK_InstallUpgradeSolution"></a>  
+ 
 ## <a name="install-or-upgrade-a-solution"></a>Installieren oder Aktualisieren einer Lösung  
- Dieses Beispiel veranschaulicht, wie Sie mithilfe der Meldung <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> eine Lösung installieren oder aktualisieren.  
+
+Dieses Beispiel veranschaulicht, wie Sie mithilfe der Meldung <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> eine Lösung installieren oder aktualisieren.  
   
- Mit der `ImportJob`-Entität können Sie Daten zum Erfolg des Imports erfassen.  
+Mit der `ImportJob`-Entität können Sie Daten zum Erfolg des Imports erfassen.  
   
- Das folgende Beispiel zeigt, wie Sie eine Lösung importieren, ohne den Erfolg nachzuverfolgen.  
+Das folgende Beispiel zeigt, wie Sie eine Lösung importieren, ohne den Erfolg nachzuverfolgen.  
   
  ```csharp
  // Install or Upgrade a Solution                  
@@ -293,6 +305,7 @@ Console.WriteLine("Imported Solution from {0}", ManagedSolutionLocation);
  ```  
   
 ### <a name="tracking-import-success"></a>Nachverfolgen des Importerfolgs
+
  Wenn Sie eine <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest.ImportJobId> für die  `ImportSolutionRequest` angegeben haben, können Sie diesen Wert verwenden, um `ImportJob` nach dem Status des Imports abzufragen.  
   
  Die `ImportJobId` kann auch für den Download einer Importprotokolldatei mit der <xref:Microsoft.Crm.Sdk.Messages.RetrieveFormattedImportJobResultsRequest>-Meldung verwendet werden.  
@@ -350,7 +363,7 @@ foreach (System.Xml.XmlNode node in optionSets)
 }
 ```   
   
- Der Inhalt der Eigenschaft `Data` eine Zeichenfolge, die eine XML-Datei repräsentiert. Im Folgenden finden Sie ein Beispiel, das mithilfe des Codes in diesem Beispiel erfasst wurde. Diese verwaltete Lösung enthielt einen einzelnen globalen Optionssatz mit dem Namen `sample_tempsampleglobaloptionsetname`.  
+Der Inhalt der Eigenschaft `Data` eine Zeichenfolge, die eine XML-Datei repräsentiert. Im Folgenden finden Sie ein Beispiel, das mithilfe des Codes in diesem Beispiel erfasst wurde. Diese verwaltete Lösung enthielt einen einzelnen globalen Optionssatz mit dem Namen `sample_tempsampleglobaloptionsetname`.  
   
 ```xml  
 <importexportxml start="634224017519682730"  

@@ -1,6 +1,6 @@
 ---
-title: Nutzen der Common Data Service-Web-API (Common Data Service) | Microsoft Docs
-description: 'Die Common Data Service-Web-API implementiert OData v4 und bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräten verwendet werden kann.'
+title: Verwenden der Common Data Service Web API (Common Data Service)| Microsoft Docs
+description: 'Die Common Data Service Web-API implementiert OData v4 und bietet eine Entwicklungserfahrung, die in einer Vielzahl von Programmiersprachen, Plattformen und Geräten verwendet werden kann.'
 ms.custom: ''
 ms.date: 04/22/2019
 ms.service: powerapps
@@ -21,15 +21,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="use-the-common-data-service-web-api"></a>Common Data Service-Web-API verwenden
+# <a name="use-the-common-data-service-web-api"></a>Verwenden der Common Data Service-Web-API
 
-Die Web-API ist eine der beiden Webdienste, die Sie verwenden können, um mit Daten und Metadaten in Common Data Service arbeiten zu können. Der andere ist der [Organisationsservice](../org-service/overview.md).
+Die Web API ist einer von zwei Webservices, mit denen Sie mit Daten und Metadaten in Common Data Service arbeiten können. Der andere ist der [Organisationsservice](../org-service/overview.md).
 
-Die Common Data Service-Web-API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräten verwendet werden kann. Die Web-API implementiert OData (Open Data Protocol), Version 4.0, ein OASIS-Standard zum Erstellen und Nutzen von RESTful APIs über umfassende Datenquellen. Weitere Informationen zu diesem Protokoll finden Sie unter [http://www.odata.org/](http://www.odata.org/). Details zu diesem Standard finden Sie unter [https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0). 
+Die Common Data Service Web API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräten genutzt werden kann. Die Web-API implementiert OData (Open Data Protocol), Version 4.0, ein OASIS-Standard zum Erstellen und Nutzen von RESTful APIs über umfassende Datenquellen. Weitere Informationen zu diesem Protokoll finden Sie unter [http://www.odata.org/](http://www.odata.org/). Details zu diesem Standard finden Sie unter [https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0). 
 
-> [!NOTE]
-> [!INCLUDE[cc-d365ce-note-section](../includes/cc-d365ce-note-section.md)] [Dynamics 365 for Customer Engagement-Web-API verwenden](/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api).
-  
+
 Da die Web-API auf offenen Standards basiert, stellen wir keine Assemblys für eine bestimmte Entwicklererfahrung bereit. Sie können HTTP-Anforderungen für bestimmte Vorgänge erstellen oder Bibliotheken von Drittanbietern verwenden, um Klassen für beliebige Sprachen oder Plattformen zu erstellen. Eine Liste der Bibliotheken, die OData-Version 4.0 unterstützen, finden Sie unter [http://www.odata.org/libraries/](http://www.odata.org/libraries/).  
 
 ## <a name="web-api-and-the-organization-service"></a>Web-API und Organisationsservice

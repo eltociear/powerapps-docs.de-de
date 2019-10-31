@@ -24,9 +24,6 @@ search.app:
 
 Um Web API zu verwenden, müssen Sie Informationen zu dem suchen, was für Sie zur Nutzung verfügbar ist. Der Dienst beschreibt sich über Service- und Metadatendokumente, auf die Sie zugreifen können. Dieses Thema enthält wichtige Konzepte und beschreibt, wie Sie die von Ihnen benötigten Informationen mithilfe von Dokumentationen finden, die aus Service- und Metadatendokumenten sowie der Dokumentation der Systementitätstypen, Funktionen und Aktionen erstellt werden. 
 
-> [!NOTE]
-> Informationen in diesem Thema gelten auch für Benutzer von Dynamics 365 for Customer Engagement-Apps (online und on-premises).
-  
 <a name="bkmk_terminology"></a>
   
 ## <a name="terminology"></a>Terminologie 
@@ -378,4 +375,4 @@ Ein normale überschneidene Entität hat nur die folgenden vier grundlegenden Ei
 [Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Authentifizieren von Common Data Service mit der Web-API](authenticate-web-api.md)<br />
 [Vorgänge mithilfe der Web-API ausführen](perform-operations-web-api.md)<br/>
-[Entwicklerhandbuch zu Dynamics 365 for Customer Engagement-Apps](/dynamics365/customer-engagement/developer/developer-guide)
+

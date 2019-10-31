@@ -1,27 +1,22 @@
 ---
-title: Rendering einer Website Kopfzeile und der primären Navigationsleiste in einem Portal | MicrosoftDocs
-description: Anweisungen und Beispielcode zum Rendering einer Website Kopfzeile und der primären Navigationsleiste in einem Portal.
+title: Darstellung eines Website-Kopfs und einer primären Navigationsleiste in einem Portal | MicrosoftDocs
+description: 'Anweisungen und Beispielcode, eine Websitekopfzeile und eine primäre Navigationsleiste auf einem Portal zu rendern.'
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 3cfd5ced4da80cae70b4f51d81e30b0d909a81c3
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974435"
+ms.reviewer: null
 ---
-# <a name="render-a-website-header-and-primary-navigation-bar"></a>Rendering einer Website Kopfzeile und der primären Navigationsleiste
 
-Sie können eine Website Kopfzeile und eine primäre Navigationsleiste mithilfe von Portale-Einstellungen, Code Ausschnitten, Weblinks und sitemarkers darstellen. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Speichern von Quell Inhalten mithilfe von Webvorlagen](store-content-web-templates.md)  
+# <a name="render-a-website-header-and-primary-navigation-bar"></a>Eine Websitekopfzeile und die primäre Navigationsleiste rendern.
+
+Eine Websitekopfzeile und die primäre Navigationsleiste mithilfe von Portaleinstellungen, Ausschnitten, Weblinks und Seitenmarkierungen rendern. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Quellinhalt mithilfe von Webvorlagen speichern](store-content-web-templates.md)  
 
 > [!Note]
-> Das Beispiel in diesem Thema funktioniert nur ordnungsgemäß, wenn die Zwischenspeicherung von Cross-Request-Headern für die Anwendung deaktiviert ist. Sie ist standardmäßig in Version 7.0.0019 und höher aktiviert. Sie kann deaktiviert werden, indem Sie eine Website Einstellung mit dem Namen "Header/OutputCache/aktiviert" erstellen und deren Wert auf "false" festlegen.
+> Das Beispiel in diesem Thema wird nur ordnungsgemäß funktionieren, wenn das Caching für Cross-Request-Kopfzeilen für Ihre Anwendung deaktiviert ist. Sie in ab 7.0.0019 standardmäßig aktiviert. Sie kann durch das Erstellen einer Website-Einstellung namens „Header/OutputCache/Enabled” und der Einstellung ihres Werts auf „false” deaktivert werden.
 
 
 ```xml
@@ -195,8 +190,8 @@ Sie können eine Website Kopfzeile und eine primäre Navigationsleiste mithilfe 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Vorlage für eine Webvorlagen Seite](create-custom-template.md)  
-[Erstellen einer benutzerdefinierten Seitenvorlage zum Rendering eines RSS-Feeds](render-rss-custom-page-template.md)  
-[Rendering der der aktuellen Seite zugeordneten Entitäts Liste](render-entity-list-current-page.md)  
-[Rendering von bis zu drei Ebenen der Seiten Hierarchie mithilfe der Hybriden Navigation](hybrid-navigation-render-page-hierachy.md)  
+[Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Webseiten-Seitenvorlage](create-custom-template.md)  
+[Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed](render-rss-custom-page-template.md)  
+[Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist](render-entity-list-current-page.md)  
+[Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation](hybrid-navigation-render-page-hierachy.md)  
 

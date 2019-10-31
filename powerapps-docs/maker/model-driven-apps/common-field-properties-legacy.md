@@ -1,6 +1,6 @@
 ---
-title: Modellgesteuerte App mit allgemeiner eldeigenschaft in PowerApps | MicrosoftDocs
-description: Grundlegendes zu allgemeinen Feldeigenschaften für Hauptformular in Dynamics 365 for Customer Engagement
+title: Allgemeine Feldeigenschaften für modellgesteuerte Apps in PowerApps | Microsoft-Dokumentation
+description: Verstehen der allgemeinen Feldeigenschaften für Hauptformulare
 Keywords: Hauptformular; Allgemeine Feldeigenschaften; Dynamics 365
 author: Mattp123
 ms.author: matp

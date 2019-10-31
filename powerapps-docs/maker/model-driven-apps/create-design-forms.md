@@ -3,7 +3,7 @@ title: Erstellen und entwerfen von Modell-angetriebenen App-Formularen | Microso
 ms.custom: ''
 ms.date: 12/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -15,6 +15,7 @@ ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
+author: Mattp123
 tags:
   - Links to topic not migrated
 search.audienceType:
@@ -33,7 +34,7 @@ Wenn Sie eine verwaltete Lösung anzeigen, können Sie keine neuen Formulare fü
 
 <a name="BKMK_TypesOfForms"></a> 
 ## <a name="type-of-forms"></a>Typ der Formulare
-Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Formulartypen in PowerApps](types-forms.md).  
+Es gibt mehrere unterschiedliche Arten von Formularen und jeder Typ verfügt über eine Funktion oder Verwendung. Weitere Informationen: [Typen von Formularen in PowerApps](types-forms.md).  
 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
@@ -48,7 +49,7 @@ Es gibt immer noch mehrere Entitäten (klassische Entitäten), die die Darstellu
 |Rabatt|Rabattliste|Dokumentort|E-Mail-Anlage|Folgen|  
 |Ziel|Zielmetrik|Importquelldatei|Rechnung (Produkt)|Auftrag (Produkt)|  
 |Preisliste|Warteschlangenelement|Angebot (Produkt)|Rollupfeld|Rollupabfrage|  
-|Gespeicherte Sicht|Dienst|Serviceaktivität|SharePoint-Website|Standort|  
+|Gespeicherte Ansicht|Service|Serviceaktivität|SharePoint-Website|Standort|  
 |Gebiet|Einheit|Einheitengruppe|||  
   
 ## <a name="form-display-faq"></a>Formularanzeige FAQ
