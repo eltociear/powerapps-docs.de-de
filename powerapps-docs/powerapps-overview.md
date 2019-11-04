@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 23eb64171c1f339b423bdf56b53b186d2c9e14b5
-ms.sourcegitcommit: 073d8534d7ff0093370ee17a1b9b63c10c7f050c
+ms.openlocfilehash: 625629826d2fb0d39c0569b2a757fbfc46118acc
+ms.sourcegitcommit: 133c51f10fc4fe6cd105c2a6af83fc15634143d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72041301"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068776"
 ---
 # <a name="what-is-powerapps"></a>Was ist PowerApps?
 
@@ -33,7 +33,7 @@ Weitere Informationen finden Sie auf dem [YouTube-Kanal von PowerApps](https://w
 
 Mithilfe von powerapps können Sie drei Arten von apps erstellen: **Canvas**, **Modell gesteuert**und **Portal**. Weitere Informationen finden Sie unter Übersicht über das [Erstellen von apps in powerapps](maker/index.md).
 
-Wenn Sie eine App erstellen möchten, beginnen Sie auf der Seite [web.powerapps.com](https://web.powerapps.com).
+Um eine APP zu erstellen, beginnen Sie mit [make.powerapps.com](https://make.powerapps.com).
 
 - Mit dem App-Designer **PowerApps Studio** können Sie Canvas-Apps erstellen. Das Erstellen von Apps mit dem App-Designer ist vergleichbar mit dem Erstellen einer Foliengruppe in Microsoft PowerPoint. Weitere Informationen: [Generieren einer App aus Daten](/powerapps/maker/canvas-apps/data-platform-create-app)  
 

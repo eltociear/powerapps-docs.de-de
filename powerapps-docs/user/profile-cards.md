@@ -16,10 +16,10 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 67441e506ba2715a9994f6b81cd08426e37e0fc8
-ms.sourcegitcommit: 7c46e7ce889e2f1c5352ed2e705b0bb8968f2a89
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71950908"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>Anzeigen der Profil Karte für einen Kontakt oder Benutzer
@@ -41,7 +41,7 @@ Sie können die Details des Kontakts Inline anzeigen, einschließlich des Kontak
 4. Um weitere Details anzuzeigen, wählen Sie **mehr anzeigen** aus, um das Profil des Kontakts zu erweitern.
  
     > [!div class="mx-imgBorder"] 
-    > ![Erweitern Sie Kontakt Profil Karte](media/profile1.png "Details erweitern Sie Kontakt Profil Karte Details") .
+    > ![Details zur Kontakt Profil Karte erweitern](media/profile1.png "Details zur Kontakt Profil Karte erweitern")
    
  ## <a name="view-a-users-profile"></a>Anzeigen des Profils eines Benutzers
  
@@ -51,7 +51,7 @@ Sie können die Details des Kontakts Inline anzeigen, einschließlich des Kontak
 4.  Um weitere Details wie e-Mails und freigegebene Dateien für den Benutzer anzuzeigen, wählen Sie **mehr anzeigen** aus, um das Profil des Kontakts zu erweitern.
  
     > [!div class="mx-imgBorder"] 
-    > ![Erweitern von Benutzerprofil-Karten](media/profile2.png "Details erweitern von Benutzerprofil-Kartendetails")
+    > ![Benutzerprofil-Karten Detail erweitern](media/profile2.png "Benutzerprofil-Kartendetails erweitern")
 
 
  ## <a name="faqs"></a>Obigen
