@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 9cff6054c9c238aeceaff63b5f178f5db3b16727
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71705239"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542328"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Arbeiten mit Umgebungen und Microsoft PowerApps
 Mit PowerApps können Sie in verschiedenen Umgebungen arbeiten und einfach zwischen ihnen wechseln. Eine Übersicht der Umgebungen finden Sie unter [Umgebungsübersicht](../../administrator/environments-overview.md), wo detailliert erläutert wird, warum Sie Umgebungen verwenden und wie Sie sie erstellen und verwalten können. In diesem Artikel werden die folgenden Themen zu Umgebungen behandelt:
@@ -45,13 +45,13 @@ Sie können Apps in einer Umgebung erstellen, die Sie erstellt haben oder in ein
 
 So erstellen Sie eine app in der richtigen Umgebung:
 
-1. [Melden Sie sich bei PowerApps an](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. [Melden Sie sich bei PowerApps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. Wie im vorherigen Abschnitt beschrieben, wählen Sie die Umgebung aus, in der Sie Ihre APP erstellen möchten.
 
 1. Wählen Sie am linken Rand **apps** aus, und klicken Sie dann auf **app erstellen**.
 
 ## <a name="view-apps-in-the-right-environment"></a>Anzeigen von Apps in der richtigen Umgebung
-Die Liste, die unter anderem Apps und Verbindungen enthält, wird unabhängig davon, ob Sie unter [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder in PowerApps Studio arbeiten, nach der Umgebung gefiltert, die im Dropdownmenü ausgewählt wurde. Wenn die gesuchten apps nicht angezeigt werden, überprüfen Sie immer, ob die richtige Umgebung ausgewählt ist.
+Die Liste, die unter anderem Apps und Verbindungen enthält, wird unabhängig davon, ob Sie unter [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder in PowerApps Studio arbeiten, nach der Umgebung gefiltert, die im Dropdownmenü ausgewählt wurde. Wenn die gesuchten apps nicht angezeigt werden, überprüfen Sie immer, ob die richtige Umgebung ausgewählt ist.
 
 Weitere Informationen zu Umgebungen finden Sie in [dieser Übersicht](../../administrator/environments-overview.md).

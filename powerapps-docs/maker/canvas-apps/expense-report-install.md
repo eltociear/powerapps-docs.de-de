@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063388"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540223"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Installieren und Konfigurieren des Beispiels „Expense Report“ für Canvas-Apps in PowerApps
 
@@ -204,13 +204,13 @@ In dieser Liste werden die Positionen (Line Items) gespeichert, die jedem Ausgab
 
 1. Navigieren Sie in einem Webbrowser zu folgendem Link:
 
-    [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
+    [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
 2. Laden Sie das PowerApps-Beispielpaket „Expense Report“ herunter, und speichern Sie es auf Ihrem Computer.
 
 ## <a name="create-connections"></a>Erstellen von Verbindungen
 
-1.  Navigieren Sie in einem Webbrowser zu [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Navigieren Sie in einem Webbrowser zu [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 3.  Wählen Sie im Menü auf der linken Seite **Verbindungen** aus.
 
@@ -239,7 +239,7 @@ In dieser Liste werden die Positionen (Line Items) gespeichert, die jedem Ausgab
 
 ## <a name="import-the-app"></a>Importieren der App
 
-1. Navigieren Sie in einem Webbrowser zu https://web.powerapps.com.
+1. Navigieren Sie in einem Webbrowser zu https://make.powerapps.com.
 1. Melden Sie sich mit denselben Anmeldeinformationen an, die Sie bei der Registrierung verwendet haben.
 1. Klicken Sie in der linken Navigationsleiste auf **Apps** und anschließend auf **Paket importieren (Vorschau)** .
 

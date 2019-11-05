@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0199e39c4e0220358e107905bdf62308147e67d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e127aa75d0d99a80fab5532efd555eb00b7262de
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983301"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537012"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Erstellen einer Canvas-App aus einer Vorlage in PowerApps
 
@@ -26,11 +26,11 @@ Erstellen Sie eine Canvas-App automatisch aus einer Vorlage für ein bestimmtes 
 
 Sie benötigen ein Cloudspeicherkonto (z.B. Dropbox, OneDrive oder Google Drive), um die Beispieldaten von Vorlagen zu speichern und eine App aus einer Vorlage zu erstellen.
 
-Wenn Sie nicht eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Erstellen einer App
 
-1. Melden Sie sich bei [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 1. Zeigen Sie unter **Eigene App erstellen** auf **Mit Daten beginnen**, und klicken oder tippen Sie dann auf **Diese App erstellen**.
 

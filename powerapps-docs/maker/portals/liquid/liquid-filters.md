@@ -1,40 +1,45 @@
 ---
-title: Liquid-Filter für ein Portal verwenden | MicrosoftDocs
-description: Lesen Sie mehr zu den verfügbaren Liquid-Filtern in einem Portal.
+title: Verwenden von Liquid-Filtern für ein Portal | MicrosoftDocs
+description: Erfahren Sie mehr über die verfügbaren Liquid-Filter in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 996b31766641376e9a01cbefc876f3eb2b7aabc7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543237"
 ---
-
 # <a name="available-liquid-filters"></a>Verfügbare Liquid-Filter
 
-Liquid-Filter dienen zur Änderung der Ausgabe von Zeichenfolgen, Zahlen, Variablen und Objekten. Sie werden vom Wert getrennt, für den sie von einem a | übernommen werden.
+Liquid-Filter werden verwendet, um die Ausgabe von Zeichen folgen, Zahlen, Variablen und Objekten zu ändern. Sie sind von dem Wert getrennt, auf den Sie angewendet werden.
 
 `{{ 'hal 9000' | upcase }} <!-- Output: HAL 9000 -->`
 
-Einige Filter akzeptieren Parameter. Filter können auch kombiniert werden und werden von links nach rechts angewendet.
+Einige Filter akzeptieren Parameter. Filter können auch kombiniert werden und werden in der Reihenfolge von links nach rechts angewendet.
 
 ```
 {{ 2 | times: 2 | minus: 1 }} <!-- Output: 3 -->
 
 {{ "Hello, " | append: user.firstname }} <!-- Output: Hello, Dave -->
 ```
-Der unten stehende Abschnitt beschreibt verschiedene Filter. 
+Im folgenden Abschnitt werden verschiedene Filter beschrieben. 
 
-## <a name="array-filters"></a>Arrayfilter
+## <a name="array-filters"></a>Array Filter
 
-Arrayfilter werden zur Arbeit mit [Arrays](liquid-types.md#array) verwendet.  
+Array Filter werden verwendet, um mit [Arrays](liquid-types.md#array)zu arbeiten.  
 
-### <a name="batch"></a>batch
+### <a name="batch"></a>Batches
 
-Teilt ein Array auf mehrere Arrays mit gegebenen Größe auf.
+Dividiert ein Array in mehrere Arrays einer angegebenen Größe.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign batches = entityview.records | batch: 2 %}
@@ -54,7 +59,7 @@ Teilt ein Array auf mehrere Arrays mit gegebenen Größe auf.
 {% endfor %}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 <ul>
@@ -74,13 +79,13 @@ Teilt ein Array auf mehrere Arrays mit gegebenen Größe auf.
 </ul>
 ```
 
-### <a name="concat"></a>concat
+### <a name="concat"></a>Concat
 
-Verkettet zwei Arrays in ein einzelnes Array.
+Verkettet zwei Arrays zu einem einzelnen neuen Array.
 
-Bei einem Element als Parameter gibt concat ein neues Array zurück, das aus dem ursprünglichen Array besteht, bei dem das angegebene Element das letzte Element ist.
+Wenn ein einzelnes Element als Parameter angegeben wird, gibt Concat ein neues Array zurück, das aus dem ursprünglichen Array besteht, wobei das angegebene Element als letztes Element angegeben ist.
 
-**Code**
+**Ordnung**
 
 ```
 Group #1: {{ group1 | join: ', ' }}
@@ -92,7 +97,7 @@ Group #1 + Group #2: {{ group1 | concat: group2 | join: ', ' }}
 Group #1 + Leslie: {{ group1 | concat: 'Leslie' | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Group #1: John, Pete, Hannah
@@ -104,11 +109,11 @@ Group #1 + Group #2: John, Pete, Hannah, Joan, Bill
 Group #1 + Leslie: John, Pete, Hannah, Leslie
 ```
 
-### <a name="except"></a>except
+### <a name="except"></a>davon
 
-Wählt alle Objekte in einem Array aus, bei denen ein gegebenes Attribut nicht einen bestimmten Wert enthält. (Gegenteil von **where**.)
+Wählen Sie alle Objekte in einem Array aus, bei denen ein bestimmtes Attribut nicht über einen angegebenen Wert verfügt. (Dies ist die Umkehrung von**Where**.)
 
-**Code**
+**Ordnung**
 
 ```
 {% assign redmond = entityview.records | except: 'address1_city', 'Redmond' %}
@@ -120,19 +125,19 @@ Wählt alle Objekte in einem Array aus, bei denen ein gegebenes Attribut nicht e
 {% endfor %}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Jack Robinson
 ```
 
-### <a name="first"></a>erste
+### <a name="first"></a>Erstes
 
 Gibt das erste Element eines Arrays zurück.
 
-„erste“ kann auch mit einer speziellen Punktnotation verwendet werden. In diesem Fall muss es innerhalb eines Tags verwendet werden.
+zuerst kann auch mit einer speziellen Punkt Notation verwendet werden, in Fällen, in denen Sie innerhalb eines Tags verwendet werden muss.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -146,7 +151,7 @@ The first word is This.
 {% endif %}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 This
@@ -156,9 +161,9 @@ The first word is This.
 
 ### <a name="group_by"></a>group_by
 
-Gruppieren der Elemente in einem Array nach einen bestimmten Attribut.
+Gruppieren Sie die Elemente in einem Array nach einem angegebenen Attribut.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign groups = entityview.records | group_by: 'address1_city' %}
@@ -176,7 +181,7 @@ Gruppieren der Elemente in einem Array nach einen bestimmten Attribut.
 {% endfor %}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Redmond:
@@ -192,11 +197,11 @@ New York:
 Jack Robinson
 ```
 
-### <a name="join"></a>join
+### <a name="join"></a>Join
 
-Verbindet die Elemente eines Arrays mit einem als Parameter übergebenen Zeichen. Das Ergebnis ist eine einzelne Zeichenfolge.
+Fügt die Elemente eines Arrays mit dem Zeichen an, das als-Parameter übergeben wird. Das Ergebnis ist eine einzelne Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -204,19 +209,19 @@ Verbindet die Elemente eines Arrays mit einem als Parameter übergebenen Zeichen
 {{ words | join: ,  }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 This, is, a, run, of, text
 ```
 
-### <a name="last"></a>letzte
+### <a name="last"></a>letzten
 
 Gibt das letzte Element eines Arrays zurück.
 
-„letzte“ kann auch mit einer speziellen Punktnotation verwendet werden. In diesem Fall muss es innerhalb eines Tags verwendet werden.
+Last kann auch mit einer speziellen Punkt Notation verwendet werden, in Fällen, in denen Sie innerhalb eines Tags verwendet werden muss.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a run of text | split:   -%}
@@ -230,7 +235,7 @@ The last word is text.
 {% endif -%}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 text
@@ -238,13 +243,13 @@ text
 The last word is text.
 ```
 
-### <a name="order_by"></a>order\_by
+### <a name="order_by"></a>Bestell\_nach
 
-Gibt die Elemente eines Arrays sortiert nach einem Attribut zurück.
+Gibt die Elemente eines Arrays zurück, geordnet nach einem angegebenen Attribut der Elemente des Arrays.
 
-Optional können Sie als zweiten Parameter „desc“ angeben, um die Elemente in absteigender Reihenfolge zu sortieren.
+Optional können Sie als zweiten Parameter als zweiten Parameter angeben, um die Elemente in absteigender Reihenfolge und nicht aufsteigend zu sortieren.
 
-**Code**
+**Ordnung**
 
 ```
 {{ entityview.records | order_by: 'fullname' | join: ', ' }}
@@ -252,7 +257,7 @@ Optional können Sie als zweiten Parameter „desc“ angeben, um die Elemente i
 {{ entityview.records | order_by: 'fullname', 'desc' | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Dave Thomas, Jack Robinson, Jake Johnson, John Smith
@@ -260,11 +265,11 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="random"></a>random
+### <a name="random"></a>erfolgen
 
-Gibt ein einzelnes zufällig ausgewähltes Element im Array zurück.
+Gibt ein einzelnes nach dem Zufallsprinzip ausgewähltes Element aus dem Array zurück.
 
-**Code**
+**Ordnung**
 
 ```
 {{ group1 | join: ', ' }}
@@ -272,7 +277,7 @@ Gibt ein einzelnes zufällig ausgewähltes Element im Array zurück.
 {{ group1 | random }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 John, Pete, Hannah
@@ -280,27 +285,27 @@ John, Pete, Hannah
 Pete
 ```
 
-### <a name="select"></a>select
+### <a name="select"></a>Auswahl
 
-Wählt den Wert eines bestimmten Attributs in einem Array aus und gibt diesen zurück.
+Wählt den Wert eines angegebenen Attributs für jedes Element in einem Array aus und gibt diese Werte als Array zurück.
 
-**Code**
+**Ordnung**
 
 ```
 {{ entityview.records | select: 'address1_city' | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Redmond, New York
 ```
 
-### <a name="shuffle"></a>shuffle
+### <a name="shuffle"></a>Gedicht
 
-Gibt einen neuen Array zurück, in dem die Elemente in zufälliger Reihenfolge vorhanden sind.
+Wird auf ein Array angewendet und gibt ein neues Array mit denselben Elementen in zufällisierter Reihenfolge zurück.
 
-**Code**
+**Ordnung**
 
 ```
 {{ group1 | join: ', ' }}
@@ -308,7 +313,7 @@ Gibt einen neuen Array zurück, in dem die Elemente in zufälliger Reihenfolge v
 {{ group1 | shuffle | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 John, Pete, Hannah
@@ -316,13 +321,13 @@ John, Pete, Hannah
 Hannah, John, Pete
 ```
 
-### <a name="size"></a>size
+### <a name="size"></a>Größe
 
-Gibt die Anzahl der Elemente in einem "Array" zurück.
+Gibt die Anzahl der Elemente in einem Array zurück.
 
-„size“ kann auch mit einer speziellen Punktnotation verwendet werden. In diesem Fall muss es innerhalb eines Tags verwendet werden.
+die Größe kann auch mit einer speziellen Punkt Notation verwendet werden, in Fällen, in denen Sie innerhalb eines Tags verwendet werden muss.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a run of text | split:   -%}
@@ -336,7 +341,7 @@ The text contains 6 words.
 {% endif -%}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 6
@@ -346,9 +351,9 @@ The text contains 6 words.
 
 ### <a name="skip"></a>skip
 
-Überspringt eine bestimmte Anzahl von Elementen in einem "Array" und gibt den Rest zurück.
+Überspringt eine angegebene Anzahl von Elementen in einem Array und gibt den Rest zurück.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a run of text | split:   %}
@@ -356,37 +361,37 @@ The text contains 6 words.
 {{ words | skip: 3 | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 run, of, text
 ```
 
-### <a name="take"></a>take
+### <a name="take"></a>Rechnung
 
-Nimmt eine bestimmte Anzahl der Elemente im Array und gibt diese zurück.
+Nimmt eine angegebene Anzahl von Elementen aus dem Array und gibt die Elemente zurück, die entnommen wurden.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a run of text | split:   %}
 
 {{ words | take: 3 | join: ', ' }}
 ```
-**Ausgabe**
+**Ausgeben**
 
 ```
 
 This, is, a
 ```
 
-### <a name="then_by"></a>dann\_bei
+### <a name="then_by"></a>dann\_
 
-Fügt einem bereits über **order\_by** sortierten Array eine weitere Sortierung hinzu.
+Fügt einem Array, das bereits nach der**Reihenfolge\_** geordnet ist, zusätzliche Reihenfolge hinzu.
 
-Optional können Sie als zweiten Parameter „desc“ angeben, um die Elemente in absteigender Reihenfolge zu sortieren.
+Optional können Sie als zweiten Parameter als zweiten Parameter angeben, um die Elemente in absteigender Reihenfolge und nicht aufsteigend zu sortieren.
 
-**Code**
+**Ordnung**
 
 ```
 {{ entityview.records | order_by: 'address1_city' | then_by: 'fullname' | join: ', ' }}
@@ -394,7 +399,7 @@ Optional können Sie als zweiten Parameter „desc“ angeben, um die Elemente i
 {{ entityview.records | order_by: 'address1_city' | then_by: 'fullname', 'desc' | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Dave Thomas, Jack Robinson, Jake Johnson, John Smith
@@ -402,11 +407,11 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="where"></a>Dabei gilt Folgendes:
+### <a name="where"></a>Was
 
-Wählt alle Objekte in einem Array aus, bei denen ein gegebenes Attribut einen bestimmten Wert enthält.
+Wählen Sie alle Objekte in einem Array aus, bei denen ein bestimmtes Attribut über einen angegebenen Wert verfügt.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign redmond = entityview.records | where: 'address1_city', 'Redmond' %}
@@ -418,7 +423,7 @@ Wählt alle Objekte in einem Array aus, bei denen ein gegebenes Attribut einen b
 {% endfor %}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 John Smith
@@ -431,17 +436,17 @@ Jake Johnson
 
 ## <a name="date-filters"></a>Datumsfilter
 
-Datumsfilter können für die Datumsarithmetik verwendet werden, oder um DateTime-Werte in unterschiedliche Formate zu konvertieren.
+Datumsfilter können für Datums Arithmetik oder zum Konvertieren von DateTime-Werten in verschiedene Formate verwendet werden.
 
 ### <a name="date"></a>Datum
 
-Formatiert einen DateTime-Wert mithilfe einer .NET-Formatzeichenfolge.
+Formatiert einen DateTime-Wert mithilfe einer .NET-Format Zeichenfolge.
 
-[Standardformatzeichenfolgen für Datum und Uhrzeiten](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)  
+[Standard Format Zeichenfolgen für Datum und Uhrzeit](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings)  
 
-[Standardformatzeichenfolgen für Datum und Uhrzeiten](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)  
+[Benutzerdefinierte Format Zeichenfolgen für Datum und Uhrzeit](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)  
 
-**Code**
+**Ordnung**
 
 ```
 {{ now | date: 'g' }}
@@ -449,7 +454,7 @@ Formatiert einen DateTime-Wert mithilfe einer .NET-Formatzeichenfolge.
 {{ now | date: 'MMMM dd, yyyy' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20 AM
@@ -457,11 +462,11 @@ Formatiert einen DateTime-Wert mithilfe einer .NET-Formatzeichenfolge.
 May 07, 2018
 ```
 
-### <a name="date_add_days"></a>datum\_hinzufügen\_Tag
+### <a name="date_add_days"></a>Datums\_\_Tage hinzufügen
 
-Fügt die angegebene Anzahl von ganzen und teilweisen Tagen aus dem DateTime-Wert hinzu. Der Parameter kann positiv oder negativ sein.
+Fügt dem DateTime-Wert die angegebene Anzahl von ganzen Tagen und Bruchteilen von Tagen hinzu. Der-Parameter kann positiv oder negativ sein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ now }}
@@ -471,7 +476,7 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Tagen aus dem DateTime-Wer
 {{ now | date_add_days: -2.5 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20:46 AM
@@ -481,11 +486,11 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Tagen aus dem DateTime-Wer
 5/4/2018 7:20:46 PM
 ```
 
-### <a name="date_add_hours"></a>Daten\_hinzufügen\_Stunden
+### <a name="date_add_hours"></a>\_Stunden\_hinzufügen
 
-Fügt die angegebene Anzahl von ganzen und teilweisen Stunden aus dem DateTime-Wert hinzu. Der Parameter kann positiv oder negativ sein.
+Fügt dem DateTime-Wert die angegebene Anzahl von ganzen Stunden und Bruchteilen von Stunden hinzu. Der-Parameter kann positiv oder negativ sein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ now }}
@@ -495,7 +500,7 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Stunden aus dem DateTime-W
 {{ now | date_add_hours: -2.5 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20:46 AM
@@ -505,11 +510,11 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Stunden aus dem DateTime-W
 5/7/2018 4:50:46 AM
 ```
 
-### <a name="date_add_minutes"></a>Datum\_hinzufügen\_Minuten
+### <a name="date_add_minutes"></a>\_\_Minuten hinzufügen
 
-Fügt die angegebene Anzahl von ganzen und teilweisen Minuten aus dem DateTime-Wert hinzu. Der Parameter kann positiv oder negativ sein.
+Fügt dem DateTime-Wert die angegebene Anzahl von ganzen Minuten und Bruchteilen von Minuten hinzu. Der-Parameter kann positiv oder negativ sein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ now }}
@@ -520,7 +525,7 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Minuten aus dem DateTime-W
 ```
 
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20:46 AM
@@ -530,11 +535,11 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Minuten aus dem DateTime-W
 5/7/2018 7:18:16 AM
 ```
 
-### <a name="date_add_months"></a>date\_add\_months
+### <a name="date_add_months"></a>\_\_Monate hinzufügen
 
-Fügt die angegebene Anzahl von ganzen und teilweisen Monaten aus dem DateTime-Wert hinzu. Der Parameter kann positiv oder negativ sein.
+Fügt dem DateTime-Wert die angegebene Anzahl ganzer Monate hinzu. Der-Parameter kann positiv oder negativ sein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ now }}
@@ -544,7 +549,7 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Monaten aus dem DateTime-W
 {{ now | date_add_months: -2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20:46 AM
@@ -554,11 +559,11 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Monaten aus dem DateTime-W
 3/7/2018 7:20:46 AM
 ```
 
-### <a name="date_add_seconds"></a>date\_add\_seconds
+### <a name="date_add_seconds"></a>\_\_Sekunden hinzufügen
 
-Fügt die angegebene Anzahl von ganzen und teilweisen Sekunden aus dem DateTime-Wert hinzu. Der Parameter kann positiv oder negativ sein.
+Fügt dem DateTime-Wert die angegebene Anzahl von ganzen Sekunden und Bruchteilen von Sekunden hinzu. Der-Parameter kann positiv oder negativ sein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ now }}
@@ -568,7 +573,7 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Sekunden aus dem DateTime-
 {{ now | date_add_seconds: -1.25 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20:46 AM
@@ -578,11 +583,11 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Sekunden aus dem DateTime-
 5/7/2018 7:20:45 AM
 ```
 
-### <a name="date_add_years"></a>date\_add\_years
+### <a name="date_add_years"></a>\_Hinzufügen von\_Jahren
 
-Fügt die angegebene Anzahl von ganzen und teilweisen Jahren aus dem DateTime-Wert hinzu. Der Parameter kann positiv oder negativ sein.
+Fügt dem DateTime-Wert die angegebene Anzahl ganzer Jahre hinzu. Der-Parameter kann positiv oder negativ sein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ now }}
@@ -592,7 +597,7 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Jahren aus dem DateTime-We
 {{ now | date_add_years: -2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5/7/2018 7:20:46 AM
@@ -602,66 +607,66 @@ Fügt die angegebene Anzahl von ganzen und teilweisen Jahren aus dem DateTime-We
 5/7/2016 7:20:46 AM
 ```
 
-### <a name="date_to_iso8601"></a>date\_to\_iso8601
+### <a name="date_to_iso8601"></a>Datums\_\_ISO8601
 
-Formatiert einen DateTime-Wert, gemäß dem [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) Standards. Sinnvoll beim Erstellen von [*Atom-Feeds*](http://tools.ietf.org/html/rfc4287) oder einem HTML5 &lt;time&gt;-Element.  
+Formatiert einen DateTime-Wert gemäß dem [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) -Standard. Nützlich, wenn [*Atom-Feeds*](https://tools.ietf.org/html/rfc4287)oder das HTML5-&lt;Time&gt;-Element erstellt werden.  
 
-**Code**
+**Ordnung**
 
 ```
 {{ now | date_to_iso8601 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 2018-05-07T07:20:46Z
 ```
 
-### <a name="date_to_rfc822"></a>date\_to\_rfc822
+### <a name="date_to_rfc822"></a>Datums\_\_RFC822
 
-Formatiert einen DateTime-Wert, gemäß dem [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) Standards. Sinnvoll beim Erstellen von [*RSS-Feeds*](http://cyber.law.harvard.edu/rss/rss.html).  
+Formatiert einen DateTime-Wert gemäß dem [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) -Standard. Nützlich beim Erstellen von [*RSS-Feeds*](https://cyber.law.harvard.edu/rss/rss.html).  
 
-**Code**
+**Ordnung**
 
 ```
 {{ now | date_to_rfc822 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Mon, 07 May 2018 07:20:46 Z
 ```
 
 
-## <a name="entity-list-filters"></a>Entitäts-Listenfilter
+## <a name="entity-list-filters"></a>Filter für Entitäts Listen
 
-Entitäts-Listenfilter werden verwendet, um mit bestimmten [entitylist](liquid-objects.md#entitylist)-Attributwerten zu arbeiten und Ansichten von Entitätslisten zu erstellen.  
+Mithilfe von Entitäts Listen Filtern werden bestimmte [entityList](liquid-objects.md#entitylist) -Attributwerte verwendet und Entitäts Listen Sichten erstellt.  
 
-### <a name="current_sort"></a>current\_sort
+### <a name="current_sort"></a>aktuelle\_Sortierung
 
-Gibt bei angegebenen Sortierausdruck die aktuelle Sortierreihenfolge für ein bestimmtes Attribut zurück.
+Gibt bei Angabe eines Sortier Ausdrucks die aktuelle Sortierreihenfolge für ein bestimmtes Attribut zurück.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'name ASC, createdon DESC' | current_sort: 'createdon' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 DESC
 ```
 
-### <a name="metafilters"></a>metafilters
+### <a name="metafilters"></a>MetaFilter
 
-Analysiert einen [entitylis](liquid-objects.md#entitylist)t filter\_definition-JSON-Wert in Filteroptions-Gruppenobjekte.  
+Analysiert einen [entityList](liquid-objects.md#entitylist) -Filter\_JSON-Definitions Wert in Filteroption Group-Objekte.  
 
-„metafilters“ kann optional mit einer aktuellen Attributfilterabfrage und aktueller [entitylist](liquid-objects.md#entitylist) bereitgestellt werden, wodurch die zurückgegebenen Filterobjekte entweder als ausgewählt oder als nicht ausgewählt gekennzeichnet werden können.
+MetaFilter können optional mit einer aktuellen Attribut Filter Abfrage und der aktuellen [entityList](liquid-objects.md#entitylist)bereitgestellt werden, sodass die zurückgegebenen Filter Objekte entweder als ausgewählt oder nicht ausgewählt gekennzeichnet werden können.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign filters = entitylist | metafilters: params.mf, entityview %}
@@ -716,11 +721,11 @@ Analysiert einen [entitylis](liquid-objects.md#entitylist)t filter\_definition-J
 {% endif %}
 ```
 
-### <a name="reverse_sort"></a>reverse\_sort
+### <a name="reverse_sort"></a>\_Sortierung umkehren
 
-Kehrt eine angegebene Sortierreihenfolge um.
+Gibt bei einer Sortierrichtung die umgekehrte Sortierreihenfolge zurück.
 
-**Code**
+**Ordnung**
 
 ```
 <!-- Sort direction is not case-sensitive -->
@@ -730,7 +735,7 @@ Kehrt eine angegebene Sortierreihenfolge um.
 {{ 'desc' | reverse_sort }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 DESC
@@ -741,17 +746,17 @@ ASC
 
 ## <a name="math-filters"></a>Mathematische Filter
 
-Mathematische Filter ermöglichen mathematische Vorgänge für[Zahlen](liquid-types.md#number) .  
+Mathematische Filter ermöglichen es Ihnen, mathematische Vorgänge für [Zahlen](liquid-types.md#number)auszuführen.  
 
-Mathematische Filter können wie alle Filter verkettet werden und werden von links nach rechts angewendet.
+Wie bei allen Filtern können mathematische Filter verkettet werden und werden in der Reihenfolge von links nach rechts angewendet.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 10 | times: 2 | minus: 5 | divided_by: 3 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5
@@ -759,9 +764,9 @@ Mathematische Filter können wie alle Filter verkettet werden und werden von lin
 
 ### <a name="ceil"></a>ceil
 
-Rundet einen Wert auf die nächste Ganzzahl auf.
+Rundet einen Wert auf die nächste ganze Zahl.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 4.6 | ceil }}
@@ -769,7 +774,7 @@ Rundet einen Wert auf die nächste Ganzzahl auf.
 {{ 4.3 | ceil }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5
@@ -777,11 +782,11 @@ Rundet einen Wert auf die nächste Ganzzahl auf.
 5
 ```
 
-### <a name="divided_by"></a>divided\_by
+### <a name="divided_by"></a>dividiert durch\_
 
 Dividiert eine Zahl durch eine andere Zahl.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 10 | divided_by: 2 }}
@@ -791,7 +796,7 @@ Dividiert eine Zahl durch eine andere Zahl.
 {{ 10.0 | divided_by: 3 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5
@@ -801,11 +806,11 @@ Dividiert eine Zahl durch eine andere Zahl.
 3.333333
 ```
 
-### <a name="floor"></a>floor
+### <a name="floor"></a>Steh
 
-Rundet einen Wert auf die nächste Ganzzahl ab.
+Rundet einen Wert auf die nächste ganze Zahl ab.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 4.6 | floor }}
@@ -813,7 +818,7 @@ Rundet einen Wert auf die nächste Ganzzahl ab.
 {{ 4.3 | floor }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 4
@@ -821,11 +826,11 @@ Rundet einen Wert auf die nächste Ganzzahl ab.
 4
 ```
 
-### <a name="minus"></a>minus
+### <a name="minus"></a>Kurs
 
 Subtrahiert eine Zahl von einer anderen Zahl.
 
-**Code**
+**Ordnung**
 
 ```
 <!-- entityview.page = 11 -->
@@ -837,7 +842,7 @@ Subtrahiert eine Zahl von einer anderen Zahl.
 {{ 10.1 | minus: 1 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 10
@@ -847,27 +852,27 @@ Subtrahiert eine Zahl von einer anderen Zahl.
 9.1
 ```
 
-### <a name="modulo"></a>modulo
+### <a name="modulo"></a>Modulo
 
 Dividiert eine Zahl durch eine andere Zahl und gibt den Rest zurück.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 12 | modulo: 5 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 2
 ```
 
-### <a name="plus"></a>plus
+### <a name="plus"></a>Plus
 
-Fügt eine Zahl zu einer anderen Zahl hinzu.
+Fügt einer anderen Zahl eine Zahl hinzu.
 
-**Code**
+**Ordnung**
 
 ```
 <!-- entityview.page = 11 -->
@@ -879,7 +884,7 @@ Fügt eine Zahl zu einer anderen Zahl hinzu.
 {{ 10.1 | plus: 1 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 12
@@ -889,11 +894,11 @@ Fügt eine Zahl zu einer anderen Zahl hinzu.
 11.1
 ```
 
-### <a name="round"></a>round
+### <a name="round"></a>umgekehrt
 
-Rundet einen Wert auf die nächste ganze Zahl oder angegebene Anzahl von Dezimalstellen.
+Rundet einen Wert auf die nächste ganze Zahl oder die angegebene Anzahl von Dezimalstellen.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 4.6 | round }}
@@ -903,7 +908,7 @@ Rundet einen Wert auf die nächste ganze Zahl oder angegebene Anzahl von Dezimal
 {{ 4.5612 | round: 2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 5
@@ -913,11 +918,11 @@ Rundet einen Wert auf die nächste ganze Zahl oder angegebene Anzahl von Dezimal
 4.56
 ```
 
-### <a name="times"></a>times
+### <a name="times"></a>Vielfaches
 
-Multipliziert eine Zahl durch eine andere Zahl.
+Multipliziert eine Zahl mit einer anderen Zahl.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 10 | times: 2 }}
@@ -927,7 +932,7 @@ Multipliziert eine Zahl durch eine andere Zahl.
 {{ 10.1 | times: 2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 20
@@ -938,37 +943,37 @@ Multipliziert eine Zahl durch eine andere Zahl.
 ```
 
 
-## <a name="string-filters"></a>String-Filter
+## <a name="string-filters"></a>Zeichen folgen Filter
 
-String-Filter bearbeiten [Strings](liquid-types.md#string).  
+Zeichen folgen Filter [Bearbeiten Zeichen](liquid-types.md#string)folgen.  
 
-### <a name="append"></a>anfügen
+### <a name="append"></a>Anfügen
 
 Fügt eine Zeichenfolge an das Ende einer anderen Zeichenfolge an.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'filename' | append: '.js' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 filename.js
 ```
 
-### <a name="capitalize"></a>**capitalize**
+### <a name="capitalize"></a>**profitieren**
 
-schreibt das erste Wort einer Zeichenfolge groß.
+schreibt das erste Wort in eine Zeichenfolge ein.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'capitalize me' | capitalize }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Capitalize Me
@@ -978,39 +983,39 @@ Capitalize Me
 
 Konvertiert eine Zeichenfolge in Kleinbuchstaben.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'MIxed Case TExt' | downcase }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 mixed case text
 ```
 
-### <a name="escape"></a>**escape**
+### <a name="escape"></a>**Weg**
 
-HTML-maskiert eine Zeichenfolge.
+HTML: Escapezeichen für eine Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {{ '<p>test</p>' | escape }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 &lt;p&gt;test&lt;/p&gt;
 ```
 
-### <a name="newline_to_br"></a>**newline\_to\_br**
+### <a name="newline_to_br"></a>**Zeilen\_zu\_BR**
 
-Fügt einen &lt;br /&gt;-Zeilenumbruch-HTML-Tag an jedem Zeilenumbruch in einer Zeichenfolge ein.
+Fügt bei jedem Zeilenumbruch in einer Zeichenfolge ein &lt;BR/&gt; Zeilenumbruch-HTML-Tag ein.
 
-**Code**
+**Ordnung**
 
 ```
 {% capture text %}
@@ -1026,7 +1031,7 @@ C
 {{ text | newline_to_br }}
 ```
 
-**Output**
+**Ausgeben**
 
 ```
 A<br />
@@ -1036,91 +1041,91 @@ B<br />
 C<br />
 ```
 
-### <a name="prepend"></a>**prepend**
+### <a name="prepend"></a>**voranstellen**
 
-Stellt eine Zeichenfolge an den Anfang einer anderen Zeichenfolge.
+Fügt eine Zeichenfolge am Anfang einer anderen Zeichenfolge voran.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'Jane Johnson' | prepend: 'Dr. ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Dr. Jane Johnson
 ```
 
-### <a name="remove"></a>**remove**
+### <a name="remove"></a>**aufgeh**
 
-Entfernt alle Vorkommen einer Teilzeichenfolge aus der Zeichenfolge.
+Entfernt alle Vorkommen einer Teil Zeichenfolge aus einer Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | remove: 'Dave' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Hello, . How are you, ?
 ```
 
-### <a name="remove_first"></a>**remove\_first**
+### <a name="remove_first"></a>**\_zuerst entfernen**
 
-Entfernt alle ersten Vorkommen einer Teilzeichenfolge aus der Zeichenfolge.
+Entfernt das erste Vorkommen einer Teil Zeichenfolge aus einer Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | remove_first: 'Dave' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Hello, . How are you, Dave?
 ```
 
-### <a name="replace"></a>**replace**
+### <a name="replace"></a>**Stelle**
 
-Entfernt alle Vorkommen einer Zeichenfolge, die eine Teilzeichenfolge enthalten.
+Ersetzt alle Vorkommen einer Zeichenfolge durch eine Teil Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | replace: 'Dave', 'John' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Hello, John. How are you, John?
 ```
 
-### <a name="replace_first"></a>**replace\_first**
+### <a name="replace_first"></a>**zuerst\_ersetzen**
 
-Ersetzt das erste Vorkommen einer Zeichenfolge, die eine Teilzeichenfolge enthalten.
+Ersetzt das erste Vorkommen einer Zeichenfolge durch eine Teil Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'Hello, Dave. How are you, Dave?' | replace_first: 'Dave', 'John' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Hello, John. How are you, Dave?
 ```
 
-### <a name="split"></a>**split**
+### <a name="split"></a>**getrennt**
 
-Der split-Filter nimmt eine Teilzeichenfolge als Parameter entgegen. Die Teilzeichenfolge wird wie ein Trennzeichen verwendet werden, um eine Zeichenfolge in einen Array zu unterteilen.
+Der Split-Filter nimmt eine Teil Zeichenfolge als Parameter an. Die Teil Zeichenfolge wird als Trennzeichen verwendet, um eine Zeichenfolge in ein Array aufzuteilen.
 
-**Code**
+**Ordnung**
 
 ```
 {% assign words = This is a demo of the split filter | split: ' ' %}
@@ -1136,7 +1141,7 @@ Last word: {{ words.last }}
 All words: {{ words | join: ', ' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 First word: This
@@ -1150,27 +1155,27 @@ Last word: filter
 All words: This, is, a, demo, of, the, split, filter
 ```
 
-### <a name="strip_html"></a>**strip\_html**
+### <a name="strip_html"></a>**\_HTML entfernen**
 
-Entfernt alle HTML-Tags einer Zeichenfolge.
+Entfernt alle HTML-Tags aus einer Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 <p>Hello</p>
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Hello
 ```
 
-### <a name="strip_newlines"></a>**strip\_newlines**
+### <a name="strip_newlines"></a>**\_Zeilen Streifen entfernen**
 
-Entfernt alle Zeilenumbrüche einer Zeichenfolge.
+Entfernt alle Zeilenumbrüche von einer Zeichenfolge.
 
-**Code**
+**Ordnung**
 
 ```
 {% capture text %}
@@ -1186,57 +1191,57 @@ C
 {{ text | strip_newlines }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 ABC
 ```
 
-### <a name="text_to_html"></a>**text\_to\_html**
+### <a name="text_to_html"></a>**\_HTML-\_Text**
 
-Formatiert eine Nur-Text-Zeichenfolge als HTML. Jeder Text wird als HTML codiert, Textblöcke, die durch eine Leerzeile getrennt sind, werden in Paragraph &lt;p&gt; -Tags eingebettet, einzelne Zeilenumbrüche werden durch &lt;br&gt; ersetzt und URLs werden in Hyperlinks konvertiert.
+Formatiert eine einfache Text Zeichenfolge als einfaches HTML. Der gesamte Text wird HTML-codiert, Textblöcke, die durch eine leere Zeile getrennt sind, werden in Absatz &lt;p&gt; Tags umschließt, einzelne Zeilenumbrüche werden durch &lt;BR-&gt;ersetzt, und URLs werden in Hyperlinks konvertiert.
 
-**Code**
+**Ordnung**
 
 ```
 {{ note.notetext | text_to_html }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
-<p>This is the first paragraph of notetext. It contains a URL: <a href="http://example.com/" rel="nofollow">http://example.com</a></p>
+<p>This is the first paragraph of notetext. It contains a URL: <a href="https://example.com/" rel="nofollow">https://example.com</a></p>
 
 <p>This is a second paragraph.</p>
 ```
 
-### <a name="truncate"></a>**truncate**
+### <a name="truncate"></a>**TRUNCATE**
 
-Verkürzt eine Zeichenfolge auf eine angegebene Anzahl von Zeichen. Auslassungspunkte (...) werden der Zeichenfolge angefügt und sind in der Zeichenzählung enthalten.
+Verkürzt eine Zeichenfolge auf eine angegebene Anzahl von Zeichen. Eine Ellipse (...) wird an die Zeichenfolge angefügt und ist in der Zeichen Anzahl enthalten.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'This is a long run of text.' | truncate: 10 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 This is...
 ```
 
-### <a name="truncate_words"></a>**truncate\_words**
+### <a name="truncate_words"></a>**\_Wörter Abschneiden**
 
-Verkürzt eine Zeichenfolge auf eine angegebene Anzahl von Wörtern. Auslassungspunkte (...) werden an die verkürzte Zeichenfolge angefügt.
+Verkürzt eine Zeichenfolge auf eine angegebene Anzahl von Wörtern. An die abgeschnittene Zeichenfolge wird eine Ellipse (...) angehängt.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'This is a long run of text.' | truncate_words: 3 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 This is a...
@@ -1244,47 +1249,47 @@ This is a...
 
 ### <a name="upcase"></a>**upcase**
 
-Konvertiert eine Zeichenfolge in Großbuchstaben.
+Konvertiert eine Zeichenfolge in einen Großbuchstaben.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'MIxed Case TExt' | upcase }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 MIXED CASE TEXT
 ```
 
-### <a name="url_escape"></a>**url\_escape**
+### <a name="url_escape"></a>**URL\_Escapezeichen**
 
-URI-maskiert eine Zeichenfolge zur Einbindung in eine URL.
+URI: Escapezeichen für eine Zeichenfolge, um Sie in eine URL einzubeziehen.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 'This & that//' | url_escape }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 This+%26+that%2F%2F
 ```
 
-### <a name="xml_escape"></a>**xml\_escape**
+### <a name="xml_escape"></a>**XML-\_Escape**
 
-XML-maskiert eine Zeichenfolge zur Einbindung in eine XML-Ausgabe.
+XML: Escapezeichen für eine Zeichenfolge, um Sie in die XML-Ausgabe einzubeziehen
 
-**Code**
+**Ordnung**
 
 ```
 {{ '<p>test</p>' | xml_escape }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 &lt;p&gt;test&lt;/p&gt;
@@ -1293,15 +1298,15 @@ XML-maskiert eine Zeichenfolge zur Einbindung in eine XML-Ausgabe.
 
 ## <a name="type-filters"></a>Typfilter
 
-Mit Typfiltern können Sie den Werte von einem Typ in andere Typen konvertieren.
+Mit typfiltern können Sie Werte eines Typs in andere Typen konvertieren.
 
-### <a name="boolean"></a>**boolean**
+### <a name="boolean"></a>**booleschen**
 
-Versucht, einen Zeichenfolgenwert in einen Booleschen Wert zu konvertieren. Wenn der Wert ist bereits ein Boolescher Wert ist, bleibt er unverändert. Falls der Wert nicht in einen booleschen Wert konvertiert werden kann, wird Null zurückgegeben.
+Versucht, einen Zeichen folgen Wert in einen booleschen Wert zu konvertieren. Wenn der Wert bereits ein boolescher Wert ist, wird er unverändert zurückgegeben. Wenn der Wert nicht in einen booleschen Wert konvertiert werden kann, wird NULL zurückgegeben.
 
-Diese Filter nimmt auch "on", "enabled" oder "yes" als True und "off", "disabled" und "no" als False an.
+Dieser Filter akzeptiert auch on, aktiviert oder yes als true, Off, deaktiviert und Nein als false.
 
-**Code**
+**Ordnung**
 
 ```
 {{ true | boolean }}
@@ -1313,7 +1318,7 @@ Diese Filter nimmt auch "on", "enabled" oder "yes" als True und "off", "disabled
 {{ settings['something/enabled'] | boolean | default: false }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 true
@@ -1325,11 +1330,11 @@ true
 false
 ```
 
-### <a name="decimal"></a>**decimal**
+### <a name="decimal"></a>**mierte**
 
-Versucht, einen Zeichenfolgenwert in eine Dezimalzahl zu konvertieren. Wenn der Wert ist bereits eine Dezimalzahl ist, bleibt er unverändert. Falls der Wert nicht in eine Dezimalzahl konvertiert werden kann, wird Null zurückgegeben.
+Versucht, einen Zeichen folgen Wert in eine Dezimalzahl zu konvertieren. Wenn der Wert bereits eine Dezimalzahl ist, wird er unverändert zurückgegeben. Wenn der Wert nicht in eine Dezimalzahl konvertiert werden kann, wird NULL zurückgegeben.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 10.1 | decimal }}
@@ -1339,7 +1344,7 @@ Versucht, einen Zeichenfolgenwert in eine Dezimalzahl zu konvertieren. Wenn der 
 {{ 'text' | decimal | default: 3.14 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 10.1
@@ -1349,11 +1354,11 @@ Versucht, einen Zeichenfolgenwert in eine Dezimalzahl zu konvertieren. Wenn der 
 3.14
 ```
 
-### <a name="integer"></a>**integer**
+### <a name="integer"></a>**Zah**
 
-Versucht, einen Zeichenfolgenwert in eine Ganzzahl zu konvertieren. Wenn der Wert ist bereits eine Ganzzahl ist, bleibt er unverändert. Falls der Wert nicht in eine Ganzzahl konvertiert werden kann, wird Null zurückgegeben.
+Versucht, einen Zeichen folgen Wert in eine ganze Zahl zu konvertieren. Wenn der Wert bereits eine ganze Zahl ist, wird er unverändert zurückgegeben. Wenn der Wert nicht in eine ganze Zahl konvertiert werden kann, wird NULL zurückgegeben.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 10 | integer }}
@@ -1365,7 +1370,7 @@ Versucht, einen Zeichenfolgenwert in eine Ganzzahl zu konvertieren. Wenn der Wer
 {{ 'text' | integer | default: 2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 10
@@ -1376,83 +1381,83 @@ Versucht, einen Zeichenfolgenwert in eine Ganzzahl zu konvertieren. Wenn der Wer
 2
 ```
 
-### <a name="string"></a>**string**
+### <a name="string"></a>**Schnür**
 
-Versucht, einen Zeichenfolgenwert in eine Zeichenfolgendarstellung zu konvertieren. Wenn der Wert ist bereits eine Zeichenfolge ist, bleibt er unverändert. Wenn der Wert Null ist, wird Null zurückgegeben.
+Versucht, einen Wert in seine Zeichen folgen Darstellung zu konvertieren. Wenn der Wert bereits eine Zeichenfolge ist, wird er unverändert zurückgegeben. Wenn der Wert NULL ist, wird NULL zurückgegeben.
 
 
 
 ## <a name="url-filters"></a>URL-Filter
 
-URL-Filter ermöglichen Ihnen, Teile von URLs zu erstellen bzw. zu extrahieren.
+Mit URL-Filtern können Sie Teile von URLs erstellen oder extrahieren.
 
-### <a name="add_query"></a>**add\_query**
+### <a name="add_query"></a>**\_Abfrage hinzufügen**
 
-Fügt einer URL einen Abfragezeichenfolgenparameter an. Wenn der Parameter bereits in der URL vorhanden ist, wird der Parameterwert aktualisiert.
+Fügt einen Abfrage Zeichenfolgen-Parameter an eine URL an. Wenn der Parameter bereits in der URL vorhanden ist, wird der Parameterwert aktualisiert.
 
-Wenn der Filter für eine vollständige absolute URL angewendet wird, ist eine aktualisierte absolute URL das Ergebnis. Wenn er für einen Pfad angewendet wird, ist ein aktualisierter Pfad das Ergebnis.
+Wenn dieser Filter auf eine vollständige absolute URL angewendet wird, ist das Ergebnis eine aktualisierte absolute URL. Wenn Sie auf einen Pfad angewendet wird, ist das Ergebnis ein aktualisierter Pfad.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?page=1' | add_query: 'foo', 'bar' }}
+{{ 'https://example.com/path?page=1' | add_query: 'foo', 'bar' }}
 
 {{ '/path?page=1' | add_query: 'page', 2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
-http://example.com/path?page=1&foo=bar
+https://example.com/path?page=1&foo=bar
 
 /path?page=2
 ```
 
-### <a name="base"></a>**base**
+### <a name="base"></a>**sock**
 
-Ruft die Basis-URL einer bestimmten URL ab.
+Ruft die Basis-URL einer gegebenen URL ab.
 
-**Code**
-
-```
-{{ 'http://example.com/path?foo=bar&page=2' | base }}
-```
-
-**Ausgabe**
+**Ordnung**
 
 ```
-http://example.com
+{{ 'https://example.com/path?foo=bar&page=2' | base }}
 ```
 
-### <a name="host"></a>**host**
+**Ausgeben**
+
+```
+https://example.com
+```
+
+### <a name="host"></a>**Host**
 
 Ruft den Hostteil einer URL ab.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | host }}
+{{ 'https://example.com/path?foo=bar&page=2' | host }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 example.com
 ```
 
-### <a name="path"></a>**path**
+### <a name="path"></a>**ADS**
 
 Ruft den Pfadteil einer URL ab.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | path }}
+{{ 'https://example.com/path?foo=bar&page=2' | path }}
 
 {{ '/path?foo=bar&page=2' | path }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 /path
@@ -1460,19 +1465,19 @@ Ruft den Pfadteil einer URL ab.
 /path
 ```
 
-### <a name="path_and_query"></a>**path\_and\_query**
+### <a name="path_and_query"></a>**Pfad\_und\_Abfrage**
 
-Ruft den Pfad- und Abfrageteil einer URL ab.
+Ruft den Pfad und den Abfrage Teil einer URL ab.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | path_and_query }}
+{{ 'https://example.com/path?foo=bar&page=2' | path_and_query }}
 
 {{ '/path?foo=bar&page=2' | path_and_query }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 /path?foo=bar&page=2
@@ -1480,21 +1485,21 @@ Ruft den Pfad- und Abfrageteil einer URL ab.
 /path?foo=bar&page=2
 ```
 
-### <a name="port"></a>**port**
+### <a name="port"></a>**Port**
 
 Ruft die Portnummer einer URL ab.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | port }}
+{{ 'https://example.com/path?foo=bar&page=2' | port }}
 
 {{ 'https://example.com/path?foo=bar&page=2' | port }}
 
 {{ 'https://example.com:9000/path?foo=bar&page=2' | port }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 80
@@ -1504,41 +1509,41 @@ Ruft die Portnummer einer URL ab.
 9000
 ```
 
-### <a name="remove_query"></a>**remove\_query**
+### <a name="remove_query"></a>**\_Abfrage entfernen**
 
-Entfernt einen Abfragezeichenfolgenparameter von einer URL. Wenn der Parameter nicht in der URL vorhanden ist, wird die URL unverändert zurückgegeben.
+Entfernt einen Abfrage Zeichen folgen Parameter aus einer URL. Wenn der-Parameter nicht in der URL vorhanden ist, wird die URL unverändert zurückgegeben.
 
-Wenn der Filter für eine vollständige absolute URL angewendet wird, ist eine aktualisierte absolute URL das Ergebnis. Wenn er für einen Pfad angewendet wird, ist ein aktualisierter Pfad das Ergebnis.
+Wenn dieser Filter auf eine vollständige absolute URL angewendet wird, ist das Ergebnis eine aktualisierte absolute URL. Wenn Sie auf einen Pfad angewendet wird, ist das Ergebnis ein aktualisierter Pfad.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?page=1' | remove_query: 'page' }}
+{{ 'https://example.com/path?page=1' | remove_query: 'page' }}
 
 {{ '/path?page=1' | remove_query: 'page' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
-http://example.com/path
+https://example.com/path
 
 /path
 ```
 
-### <a name="scheme"></a>**scheme**
+### <a name="scheme"></a>**Schrift**
 
-Ruft den Schemateil einer URL ab.
+Ruft den Schema Teil einer URL ab.
 
-**Code**
+**Ordnung**
 
 ```
-{{ 'http://example.com/path?foo=bar&page=2' | scheme }}
+{{ 'https://example.com/path?foo=bar&page=2' | scheme }}
 
 {{ 'https://example.com/path?foo=bar&page=2' | scheme }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 http
@@ -1551,17 +1556,17 @@ https
 
 Diese Filter bieten nützliche allgemeine Funktionen.
 
-### <a name="default"></a>**default**
+### <a name="default"></a>**vorgegebene**
 
-Gibt einen Standardwert für alle Variablen ohne zugewiesenen Wert zurück (also Null).
+Gibt einen Standardwert für jede Variable ohne zugewiesenen Wert zurück (d. h. null).
 
-**Code**
+**Ordnung**
 
 ```
 {{ snippets[Header] | default: 'My Website' }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 <!-- If a snippet with the name Header returns null -->
@@ -1569,13 +1574,13 @@ Gibt einen Standardwert für alle Variablen ohne zugewiesenen Wert zurück (also
 My Website
 ```
 
-### <a name="file_size"></a>**file\_size**
+### <a name="file_size"></a>**Datei\_Größe**
 
-Gilt für einen Zahlenwert, der für eine Reihe von Bytes steht und eine formatierte Dateigröße mit einer Einheit einer entsprechenden Skala zurückgibt.
+Wird auf einen Zahlenwert angewendet, der eine Anzahl von Bytes darstellt, gibt eine formatierte Dateigröße mit einer angemessenen Skalierungs Einheit zurück.
 
-Optional kann ein Genauigkeitsparameter übergeben werden, um die Anzahl der Dezimalstellen im Resultat zu steuern. Die Standardeinstellung ist 1.
+Optional kann ein Precision-Parameter übergeben werden, um die Anzahl der Dezimalstellen im Ergebnis zu steuern. Die Standardgenauigkeit beträgt 1.
 
-**Code**
+**Ordnung**
 
 ```
 {{ 10000000 | file_size }}
@@ -1585,7 +1590,7 @@ Optional kann ein Genauigkeitsparameter übergeben werden, um die Anzahl der Dez
 {{ entity.notes.first.filesize | file_size: 2 }}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 9.5 MB
@@ -1595,11 +1600,11 @@ Optional kann ein Genauigkeitsparameter übergeben werden, um die Anzahl der Dez
 207.14 KB
 ```
 
-### <a name="has_role"></a>**has\_role**
+### <a name="has_role"></a>**hat\_Rolle**
 
-Angewendet für einen [Benutzer](liquid-objects.md#user) wird True zurückgegeben, wenn der Benutzer zur angegebenen Rolle gehört. Gibt „false“ zurück, wenn nicht.  
+Wird auf einen [Benutzer](liquid-objects.md#user)angewendet und gibt true zurück, wenn der Benutzer zur angegebenen Rolle gehört. Gibt false zurück, wenn nicht.  
 
-**Code**
+**Ordnung**
 
 ```
 {% assign is_admin = user | has_role: 'Administrators' %}
@@ -1611,14 +1616,14 @@ User is an administrator.
 {% endif %}
 ```
 
-### <a name="liquid"></a>**liquid**
+### <a name="liquid"></a>**flüssi**
 
-Bezeichnet einen String als flexiblen Code. Dieser Code hat Zugriff auf den aktuellen flexiblen Ausführungskontext (Variablen., usw.).
+Rendert eine Zeichenfolge als Liquid-Code. Dieser Code hat Zugriff auf den aktuellen Liquid-Ausführungs Kontext (Variablen usw.).
 
 > [!Note] 
-> Diese Filter sollte mit Vorsicht verwendet werden und sollte nur für Werte angewendet werden, die unter dem exklusiven Steuerelement der Autoren der Portalinhalte oder anderen Nutzern liegen, die Liquid-Codes schreiben können.
+> Dieser Filter sollte mit Bedacht verwendet werden und sollte in der Regel nur auf Werte angewendet werden, die der ausschließlichen Kontrolle der Autoren von Portal Inhalten oder anderen Benutzern unterliegen, die für das Schreiben von Liquid-Code vertrauenswürdig sind.
 
-**Code**
+**Ordnung**
 
 ```
 {{ page.adx_copy | liquid }}
@@ -1626,8 +1631,8 @@ Bezeichnet einen String als flexiblen Code. Dieser Code hat Zugriff auf den aktu
 
 ### <a name="see-also"></a>Siehe auch
 
-[Speichern von Inhalten mit Webvorlagen](store-content-web-templates.md)  
-[Grundlegendes zu Liquid-Operatoren](liquid-operators.md) 
+[Speichern von Quell Inhalten mithilfe von Webvorlagen](store-content-web-templates.md)  
+[Verstehen von Liquid-Operatoren](liquid-operators.md) 
 [Liquid-Typen](liquid-types.md)  
 [Liquid-Objekte](liquid-objects.md)  
 [Liquid-Tags](liquid-tags.md)  

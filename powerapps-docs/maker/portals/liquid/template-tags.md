@@ -1,69 +1,74 @@
 ---
-title: Vorlagen-Tags für ein Portal verwenden | MicrosoftDocs
-description: Lesen Sie mehr zu den verschiedenen verfügbaren Vorlage-Tags in einem Portal
+title: Verwenden von Vorlagen Tags für ein Portal | MicrosoftDocs
+description: Weitere Informationen zu Vorlagen Tags, die im Portal verfügbar sind
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543289"
 ---
-
 # <a name="template-tags"></a>Vorlagentags
 
-Vorlagentags steuern die Ausgabe einer Vorlage auf verschiedene Arten und ermöglichen die Kombinationen mehrerer Vorlagen in einer einzigen Ausgabe.
+Vorlagen Tags steuern die Ausgabe einer Vorlage auf verschiedene Weise und ermöglichen die Kombination mehrerer Vorlagen zu einer einzigen Ausgabe.
 
-## <a name="include"></a>einschließlich
+## <a name="include"></a>darunter
 
-Integriert die Contents einer Vorlage in eine andere nach Name. In PowerApps Portalen ist die Quelle dieser anderen Vorlage in der Regel eine [Webvorlage](store-content-web-templates.md). Dadurch können die gängigen Vorlagenfragmenten an mehreren Orten wieder verwendet werden.  
+Schließt den Inhalt einer Vorlage in eine andere Vorlage nach Namen ein. In den powerapps-Portalen ist die Quelle dieser anderen Vorlage in der Regel eine [Webvorlage](store-content-web-templates.md). Dies ermöglicht die Wiederverwendung von allgemeinen Vorlagen Fragmenten an mehreren Stellen.  
 
-Wenn eine Vorlage in einer anderen enthalten ist, hat die integrierte Vorlage Zugang zu Variablen, die in der übergeordneten Vorlage definiert sind.
+Wenn eine Vorlage in eine andere Vorlage eingeschlossen wird, hat die enthaltene Vorlage Zugriff auf alle Variablen, die in der übergeordneten Vorlage definiert sind.
 
 `{% include 'My Template' %}`
 
-Es ist ebenfalls möglich, eine beliebige Zahl von benannten Parametern im Tag einzuschließen. Diese werden dann als Variablen in der integrierten Vorlage definiert.
+Es ist auch möglich, eine beliebige Anzahl benannter Parameter an das include-Tag zu übergeben. Diese werden dann in der enthaltenen Vorlage als Variablen definiert.
 
 `{% include 'My Template' a:x, b:y %}`
 
-## <a name="block"></a>Block
+## <a name="block"></a>Baustein
 
-Wird in Verbindung mit „extends” verwendet, um den Vorlagen-Vererbungsstatus bereitzustellen. Siehe „extends” zur Verwendung.
+Wird in Verbindung mit erweitert verwendet, um Vorlagen Vererbung bereitzustellen. Weitere Informationen finden Sie unter Erweiterungen.
 
-## <a name="extends"></a>erweitern
+## <a name="extends"></a>Erweitern
 
-Wird in Verbindung mit dem „block”-Tag verwendet, stellt die Vorlagenvererbung bereit. Dadurch können mehrere Vorlagen ein freigegebenes Layout verwenden, während spezifische Bereiche des übergeordneten Layouts überschrieben werden.
+Wird in Verbindung mit dem Blocktag verwendet und stellt Vorlagen Vererbung bereit. Dies ermöglicht es mehreren Vorlagen, ein frei gegebenes Layout zu verwenden, während bestimmte Bereiche des übergeordneten Layouts außer Kraft gesetzt werden.
 
-In PowerApps Portalen bezieht sich der Name der übergeordneten Vorlage, der dem Tag zugewiesen wird, im Allgemeinen auf den Namen einer [Webvorlage](store-content-web-templates.md).  
+In powerapps-Portalen bezieht sich der Name der übergeordneten Vorlage, die für das-Tag bereitgestellt wird, im Allgemeinen auf den Namen einer [Webvorlage](store-content-web-templates.md).  
 
-Wenn „extends” verwendet wird, muss es der erste Inhalt in der Vorlage sein und kann nur von einem oder mehreren „block”-Tags gefolgt werden.
+Wenn erweitert wird, muss es der erste Inhalt in der Vorlage sein, und nur ein oder mehrere Block Tags können befolgt werden.
 
-Wenn ein in der übergeordneten Vorlage definierter Block nicht überschrieben wird, wird der Inhalt in der übergeordneten Vorlage (sofern vorhanden) gerendert.
+Wenn ein Block, der in der übergeordneten Vorlage definiert ist, nicht überschrieben wird, wird sein Inhalt in der übergeordneten Vorlage (sofern vorhanden) gerendert.
 
-## <a name="comment"></a>Kommentar
+## <a name="comment"></a>comment
 
-Ermöglicht es Ihnen, ungerenderte Codes in einer Liquid-Vorlage zu belassen. Der Content innerhalb des Blocks wird nicht gerendert und der Liquid-Code darin wird nicht ausgeführt.
+Ermöglicht es Ihnen, nicht gerenderten Code in einer Liquid-Vorlage zu belassen. Jeglicher Inhalt innerhalb des Blocks wird nicht gerendert, und jeder flüssige Code in wird nicht ausgeführt.
 
-**Code**
+**Ordnung**
 
 `Hello{% comment %}, {{ user.fullname }}{% endcomment %}. My name is Charles.`
 
-**Ausgabe**
+**Ausgeben**
 
 `Hello. My name is Charles.`
 
-## <a name="raw"></a>unformatiert
+## <a name="raw"></a>Stoffes
 
-Ermöglicht die Ausgabe des Liquid-Codes auf einer Seite, ohne dass Sie analysiert und ausgeführt werden muss.
+Ermöglicht die Ausgabe von Liquid-Code auf einer Seite, ohne dass Sie analysiert und ausgeführt werden muss.
 
-**Ausgabe**
+**Ausgeben**
 
 `Hello, {{ user.fullname }}. My name is Charles.`
 
 ### <a name="see-also"></a>Siehe auch
 
-[Ablaufsteuerungstags](control-flow-tags.md)<br>
-[Iterationstags](iteration-tags.md)<br>
-[Variable Tags](variable-tags.md)<br>
-[PowerApps Common Data Service-Entitäts-Tags](portals-entity-tags.md)
+[Ablauf Steuerungs Tags](control-flow-tags.md)<br>
+[Iterations Tags](iteration-tags.md)<br>
+[Variablen Tags](variable-tags.md)<br>
+[Powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md)

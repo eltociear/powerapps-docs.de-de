@@ -1,76 +1,79 @@
 ---
-title: Portalfehlerprotokolle anzeigen und in Azure Blob Storage speichern | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie Portalfehlerprotokolle anzeigen und sie in Ihrem Azure Blob Storage-Konto speichern.'
+title: Anzeigen von Portal-Fehlerprotokollen und speichern in Azure BLOB Storage | MicrosoftDocs
+description: Erfahren Sie, wie Sie Portal Fehlerprotokolle anzeigen und in Ihrem Azure BLOB Storage-Konto speichern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 7989c15b0c5c4cf50d4b55f518244758afc067e1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542921"
 ---
+# <a name="view-portal-error-logs"></a>Anzeigen von Fehlerprotokollen für ein Portal
 
-# <a name="view-portal-error-logs"></a>Portalfehlerprotokolle anzeigen
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
-Als Portaladministrator oder -entwickler können Sie mit PowerApps Portalen eine Website für Ihre Kunden erstellen. Eine allgemeine Aufgabe für einen Entwickler besteht darin, Probleme zu debuggen, während das Portal entwickelt wird. Zur Unterstützung beim Debuggen, können Sie auf detaillierte Fehlerprotokolle für jegliche Probleme auf Ihrem Portal zugreifen. Es gibt mehrere Möglichkeiten, wie Sie Fehlerprotokolle für Ihre Portale abrufen können.
+Als Portaladministrator oder Entwickler können Sie powerapps-Portale verwenden, um eine Website für Ihre Kunden zu erstellen. Eine häufige Aufgabe für einen Entwickler besteht darin, Probleme während der Entwicklung des Portals zu debuggen. Zur Unterstützung des Debuggens können Sie auf detaillierte Fehlerprotokolle zugreifen, wenn Sie Probleme in Ihrem Portal haben. Es gibt mehrere Möglichkeiten, Fehlerprotokolle für ihre Portale zu erhalten.
 
 ## <a name="custom-error"></a>Benutzerdefinierter Fehler
 
-Wenn irgendeine serverseitige Ausnahme in Ihrem Portal auftritt, wird standardmäßig eine benutzerdefinierte Seite mit einer benutzerfreundlichen Fehlermeldung angezeigt. Um die Fehlermeldung zu konfigurieren, finden Sie hier Informationen: [Eine benutzerdefinierte Fehlermeldung anzeigen](#display-a-custom-error-message).
+Wenn eine serverseitige Ausnahme in Ihrem Portal auftritt, wird standardmäßig eine angepasste Fehlerseite mit einer benutzerfreundlichen Fehlermeldung angezeigt. Informationen zum Konfigurieren der Fehlermeldung finden Sie unter [Anzeigen einer benutzerdefinierten Fehlermeldung](#display-a-custom-error-message).
 
-Es ist jedoch besser, die detaillierte Fehlerseite von ASP.NET für Debugzwecke anzuzeigen, auch bekannt als „Gelber Bildschirm des Todes” (Yellow Screen of Death = YSOD). Die ausführliche Fehlerseite hilft Ihnen dabei, den vollständigen Stapel von Serverfehlern abzurufen.
+Es ist jedoch besser, die ausführliche Fehlerseite ASP.net zu Debuggingzwecken auch als gelber Screen of Death (Ysod) bekannt anzuzeigen. Auf der Seite mit den detaillierten Fehlern können Sie den vollständigen Stapel von Server Fehlern erhalten.
 
 > [!div class=mx-imgBorder]
 > ![Gelber Bildschirm des Todes](../media/ysod.png "Gelber Bildschirm des Todes")
 
-Um den YSOD zu aktivieren, müssen Sie auf Ihrem Portal [benutzerdefinierte Fehler deaktivieren](#disable-custom-error).
+Um Ysod zu aktivieren, müssen Sie [benutzerdefinierte Fehler](#disable-custom-error) in Ihrem Portal deaktivieren.
 
 > [!NOTE]
-> Es ist ratsam, benutzerdefinierte Fehler nur zu deaktivieren, wenn Sie sich in der Entwicklungsphase befinden und benutzerdefinierte Fehler zu aktivieren, sobald sie live schalten.
+> Es empfiehlt sich, benutzerdefinierte Fehler nur zu deaktivieren, wenn Sie sich in der Entwicklungsphase befinden, und benutzerdefinierte Fehler nach dem Live Vorgang zu aktivieren.
 
-Weitere Informationen zu benutzerdefiniertem Fehler: [Eine benutzerdefinierte Fehlerseite anzeigen](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-cs)
+Weitere Informationen zu benutzerdefiniertem Fehler: [Anzeigen einer benutzerdefinierten Fehlerseite](https://docs.microsoft.com/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/displaying-a-custom-error-page-cs)
 
 ### <a name="disable-custom-error"></a>Benutzerdefinierten Fehler deaktivieren
 
-Sie können benutzerdefinierte Fehler für Portale deaktivieren, um die detaillierte Ausnahmemeldung anzuzeigen, wenn irgendeine serverseitige Ausnahme in Ihrem Portal auftritt.
+Sie können benutzerdefinierte Fehler in Portalen deaktivieren, um die ausführliche Ausnahme Meldung anzuzeigen, wenn eine serverseitige Ausnahme in Ihrem Portal auftritt.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
 
-2. Wechseln Sie zu **Portalaktionen** > **Benutzerdefinierte Fehler deaktivieren**.
+2. Wechseln Sie zu den **Portal Aktionen** , > **benutzerdefinierte Fehler zu deaktivieren**.
 
    > [!div class=mx-imgBorder]
    > ![Benutzerdefinierten Fehler deaktivieren](../media/disable-custom-errors.png "Benutzerdefinierten Fehler deaktivieren")
 
-3. Wählen Sie in der Bestätigungsmeldung **Deaktivieren** aus. Während benutzerdefinierte Fehler deaktiviert werden, startet das Portal neu und wird nicht verfügbar sein. Eine Meldung wird angezeigt, wenn benutzerdefinierte Fehler deaktiviert werden.
+3. Wählen Sie in der Bestätigungsmeldung die Option **Deaktivieren** aus. Während benutzerdefinierte Fehler deaktiviert werden, wird das Portal neu gestartet und ist nicht verfügbar. Eine Meldung wird angezeigt, wenn benutzerdefinierte Fehler deaktiviert werden.
 
 ### <a name="enable-custom-error"></a>Benutzerdefinierten Fehler aktivieren
 
-Sie können benutzerdefinierte Fehler auf Portalen aktivieren, um eine professional aussehende Seite anstatt des YSOD anzuzeigen. Diese Seite bietet aussagekräftige Informationen, wenn eine Ausnahme in der Anwendung auftritt.
+Sie können benutzerdefinierte Fehler in Portalen aktivieren, um anstelle von Ysod eine professionell aussehende Seite anzuzeigen. Diese Seite enthält sinnvolle Informationen, wenn in der Anwendung eine Ausnahme auftritt.
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
 
-2. Wechseln Sie zu **Portalaktionen** > **Benutzerdefinierte Fehler aktivieren**.
+2. Wechseln Sie zu den **Portal Aktionen** , > **benutzerdefinierte Fehler zu aktivieren**.
 
    > [!div class=mx-imgBorder]
    > ![Benutzerdefinierten Fehler aktivieren](../media/enable-custom-errors.png "Benutzerdefinierten Fehler aktivieren")
 
-3. Wählen Sie in der Bestätigungsmeldung **Aktivieren** aus. Während benutzerdefinierte Fehler aktiviert werden, startet das Portal neu und wird nicht verfügbar sein. Eine Meldung wird angezeigt, wenn benutzerdefinierte Fehler aktiviert werden.
+3. Wählen Sie in der Bestätigungsmeldung die Option **aktivieren** aus. Wenn benutzerdefinierte Fehler aktiviert sind, wird das Portal neu gestartet und ist nicht verfügbar. Eine Meldung wird angezeigt, wenn benutzerdefinierte Fehler aktiviert sind.
 
 > [!NOTE]
-> - Wenn Sie die Instanz ändern, mit der Ihr Portal verbunden ist, wird die Einstellung für benutzerdefinierte Fehler auf aktiviert gesetzt. Sie müssen die benutzerdefinierten Fehler nach Bedarf erneut deaktivieren.
-> - Sie dürfen benutzerdefinierte Fehler nicht aktivieren oder deaktivieren, wenn die Instanz, mit der Ihr Portal verbunden ist, geändert wird; andernfalls erscheint eine Fehlermeldung.
+> - Wenn Sie die Instanz ändern, mit der das Portal verbunden ist, wird die Einstellung benutzerdefinierte Fehler auf Aktiviert festgelegt. Wenn erforderlich, müssen Sie die benutzerdefinierten Fehler erneut deaktivieren.
+> - Sie dürfen benutzerdefinierte Fehler nicht aktivieren oder deaktivieren, wenn die Instanz, mit der das Portal verbunden ist, geändert wird. Andernfalls wird eine Fehlermeldung angezeigt.
 
-### <a name="display-a-custom-error-message"></a>Eine benutzerdefinierte Fehlermeldung anzeigen
+### <a name="display-a-custom-error-message"></a>Anzeigen einer benutzerdefinierten Fehlermeldung
 
-Sie können das Portal so konfigurieren, dass ein professionell aussehender benutzerdefinierter Fehler anstelle eines generischen Fehlers angezeigt wird.
+Sie können Ihr Portal so konfigurieren, dass ein benutzerdefinierter Fehler anstelle eines generischen Fehlers angezeigt wird.
 
-Um einen benutzerdefinierten Fehler zu definieren, verwenden Sie den Inhaltsausschnitt `Portal Generic Error`. Der in diesem Ausschnitt definierte Inhalt wird auf der Fehlerseite angezeigt. Dieser Inhaltsausschnitt ist nicht vorkonfiguriert verfügbar, und Sie müssen ihn erstellen. Der Inhaltsausschnitt **Typ** kann **Text** oder **HTML** sein. Wenn Sie den Inhaltsausschnitt erstellen oder bearbeiten, siehe [Anpassen von Inhalt mit Inhaltsausschnitten](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/customize-content-snippets).
+Um einen benutzerdefinierten Fehler zu definieren, verwenden Sie den Inhalts Ausschnitt `Portal Generic Error`. Der Inhalt, der in diesem Ausschnitt definiert ist, wird auf der Fehlerseite angezeigt. Dieser Inhalts Ausschnitt ist standardmäßig nicht verfügbar und muss erstellt werden. Der **Inhaltstyp** für den Inhalt kann **Text** oder **HTML**sein. Informationen zum Erstellen oder Bearbeiten des Inhalts Ausschnitts finden Sie unter [Anpassen von Inhalten mithilfe von Inhalts Ausschnitten](../configure/customize-content-snippets.md).
 
 > [!NOTE]
-> Wenn Liquid-Code im Inhaltsausschnitt geschrieben wird, wird er übersprungen und nicht gerendert.
+> Wenn Liquid-Code im Inhalts Ausschnitt geschrieben wird, wird er übersprungen und nicht gerendert.
 
 Wenn Sie benutzerdefinierte Fehler aktivieren, wird die Meldung in der folgenden Struktur auf der Fehlerseite angezeigt:
 
@@ -79,36 +82,36 @@ Wenn Sie benutzerdefinierte Fehler aktivieren, wird die Meldung in der folgenden
 <Date and time>
 <Portal ID>
 
-Im Anschluss finden Sie ein Beispiel einer benutzerdefinierten Fehlermeldung, mithilfe eines Inhaltsausschnitts vom Typ HTML:
+Im folgenden finden Sie ein Beispiel für eine benutzerdefinierte Fehlermeldung, bei der ein Inhalts Ausschnitt des Typs HTML verwendet wird:
 
-Dies ist ein benutzerdefinierter, bitte übermitteln Sie ein Supportticket mit dem Bildschirmfoto des Fehlers, indem Sie hier klicken
+Dies ist ein benutzerdefinierter Fehler. Bitte melden Sie ein Support Ticket mit Screenshot des Fehlers, indem Sie hier klicken.
 
 > [!div class=mx-imgBorder]
 > ![Benutzerdefinierte Fehlermeldung](../media/custom-error-message.png "Benutzerdefinierte Fehlermeldung")
 
 > [!NOTE]
-> Wenn vom Portal kein Inhaltsausschnitt abgerufen werden kann, da es keine Verbindung mit Common Data Service herstellen kann, oder wenn der Ausschnitt nicht in Common Data Service verfügbar ist, wird eine Fehlermeldung angezeigt.
+> Wenn das Portal einen Inhalts Ausschnitt nicht abrufen kann, weil keine Verbindung mit Common Data Service hergestellt werden kann oder wenn der Code Ausschnitt in Common Data Service nicht verfügbar ist, wird eine Fehlermeldung angezeigt.
 
-## <a name="access-portal-error-logs"></a>Auf Portalfehlerprotokolle zugreifen
+## <a name="access-portal-error-logs"></a>Zugriffs Portal-Fehlerprotokolle
 
-Nachdem Sie das Portal entwickelt und veröffentlicht haben, müssen Sie immer noch dazu in der Lage sein, auf Portalprotokolle zuzugreifen, um Probleme zu debuggen, die von Ihrem Kunden gemeldet werden. Um auf die Protokolle zuzugreifen, können Sie Ihr Portal so konfigurieren, dass alle Anwendungsfehler an ein Azure Blob Storage-Konto, das Sie besitzen, übermittelt werden. Indem Sie auf Portalfehlerprotokolle zugreifen, können Sie auf Kundenanfragen effiziente reagieren, da Sie Details des Problems haben. Um Portalfehlerprotokolle in Ihr Azure Blob Storage abzurufen, müssen Sie die Diagnoseprotokollierung vom Portal Admin Center aktivieren.
+Nachdem Sie das Portal entwickelt und veröffentlicht haben, müssen Sie weiterhin in der Lage sein, auf Portal Protokolle zuzugreifen, um von ihren Kunden gemeldete Probleme zu debuggen. Für den Zugriff auf die Protokolle können Sie das Portal so konfigurieren, dass alle Anwendungsfehler an ein Azure BLOB Storage-Konto gesendet werden, das Sie besitzen. Durch den Zugriff auf Portal-Fehlerprotokolle können Sie effizient auf Kunden Abfragen reagieren, da Sie Details zum Problem haben. Um Portal Fehlerprotokolle in Azure BLOB Storage zu erhalten, müssen Sie die Diagnoseprotokollierung über das powerapps-Portal Admin Center aktivieren.
 
 > [!NOTE]
-> Wenn Sie die Dynamics 365-Instanz ändern, mit der Ihr Portal verbunden ist, ist die Diagnoseprotokollierung deaktiviert. Sie müssen die Diagnoseprotokollieren erneut aktivieren.
+> Wenn Sie die Common Data Service Instanz ändern, mit der Ihr Portal verbunden ist, ist die Diagnoseprotokollierung deaktiviert. Sie müssen die Diagnoseprotokollierung erneut aktivieren.
 
-### <a name="enable-diagnostic-logging"></a>Diagnoseprotokollierung aktivieren
+### <a name="enable-diagnostic-logging"></a>Aktivieren der Diagnoseprotokollierung
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
 
-2. Wechseln Sie zu **Portalaktionen** > **Diagnoseprotokollierung aktivieren**.
+2. Wechseln Sie zu den **Portal Aktionen** > aktivieren Sie die **Diagnoseprotokollierung**.
 
    > [!div class=mx-imgBorder]
-   > ![Diagnoseprotokollierung aktivieren](../media/enable-diagnostic-logging.png "Diagnoseprotokollierung aktivieren")
+   > ![Aktivieren der Diagnoseprotokollierung](../media/enable-diagnostic-logging.png "Aktivieren der Diagnoseprotokollierung")
 
 3. Geben Sie im Fenster **Diagnoseprotokollierung aktivieren** die folgenden Werte ein:
 
-   - **Verbindungszeichenfolge des Azure Blob Storage-Diensts**: URL des Azure Blob Storage-Diensts, um die Portalfehlerprotokolle zu speichern. Die maximale Länge der URL beträgt 2048 Zeichen. Wenn die URL länger als 2048 Zeichen ist, wird eine Fehlermeldung angezeigt. Weitere Informationen zur Verbindungszeichenfolge: [Azure Storage-Verbindungszeichenfolgen konfigurieren](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
-   - **Beibehaltungsdauer auswählen**: Die Dauer, während der Portalfehlerprotokolle im BLOB-Speicher aufbewahrt werden. Die Fehlerprotokolle werden nach der ausgewählten Dauer gelöscht. Sie können einen der folgenden Werte auswählen:
+   - **Verbindungs Zeichenfolge Azure BLOB Storage Dienstanbieter**: URL des Azure BLOB Storage Dienstanbieter zum Speichern der Portal Fehlerprotokolle. Die maximale Länge der URL beträgt 2048 Zeichen. Wenn die URL länger als 2048 Zeichen ist, wird eine Fehlermeldung angezeigt. Weitere Informationen zur Verbindungs Zeichenfolge: [Konfigurieren von Azure Storage Verbindungs](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string) Zeichenfolgen
+   - **Wählen Sie Beibehaltungs Dauer**: Dauer für die Beibehaltung der Portal Fehlerprotokolle im BLOB-Speicher aus. Die Fehlerprotokolle werden nach der ausgewählten Dauer gelöscht. Sie können einen der folgenden Werte auswählen:
      - 1 Tag
      - 7 Tage
      - 30 Tage
@@ -117,35 +120,35 @@ Nachdem Sie das Portal entwickelt und veröffentlicht haben, müssen Sie immer n
      - 180 Tage
      - Immer
 
-   Standardmäßig beträgt die Beibehaltungsdauer 30 Tage.
+   Standardmäßig beträgt die Beibehaltungs Dauer 30 Tage.
   
    > [!div class=mx-imgBorder]
-   > ![Fenster „Diagnoseprotokollierung aktivieren”](../media/enable-diagnostic-logging-window.png "Fenster „Diagnoseprotokollierung aktivieren”")
+   > ![Fenster zum Aktivieren der Diagnoseprotokollierung](../media/enable-diagnostic-logging-window.png "Fenster zum Aktivieren der Diagnoseprotokollierung")
 
 4. Klicken Sie auf **Konfigurieren**.
 
-Sobald die Diagnoseprotokollierung konfiguriert ist, wird ein neuer Blobcontainer für **Telemetrieprotokolle** in Ihrem Azure Storage-Konto erstellt, und die Protokolle werden in die Blobdateien geschrieben, die im Container gespeichert werden. Im folgenden Bildschirmfoto wird der **Telemetrieprotokolle**-Blobcontainer im Azure Storage Explorer angezeigt:
+Nachdem die Diagnoseprotokollierung konfiguriert wurde, wird ein neuer BlobContainer für die **telemetrieprotokolle** in Ihrem Azure Storage-Konto erstellt, und die Protokolle werden in die BLOB-Dateien geschrieben, die im Container gespeichert sind. Der folgende Screenshot zeigt den BlobContainer für **telemetrieprotokolle** in Azure Storage-Explorer:
 
 > [!div class=mx-imgBorder]
-> ![Azure Blog Storage-Konto](../media/azure-blob-storage.png "Azure Blog Storage-Konto")
+> ![Azure-BLOB-Speicherkonto](../media/azure-blob-storage.png "Azure-BLOB-Speicherkonto")
 
-Wenn die Diagnoseprotokollierung erfolgreich aktiviert ist, wird die folgende Aktion verfügbar:
-- **Diagnoseprotokollierungskonfiguration aktivieren**: Ermöglicht es Ihnen, die Diagnoseprotokollierungskonfiguration für das Portal zu aktualisieren oder zu entfernen.
-- **Diagnoseprotokollierung deaktivieren**: Ermöglicht es Ihnen, die Diagnoseprotokollierungskonfiguration für das Portal zu deaktivieren.
+Wenn die Diagnoseprotokollierung erfolgreich aktiviert wurde, wird die folgende Aktion verfügbar:
+- **Aktualisieren der Konfiguration der Diagnoseprotokollierung**: Hiermit können Sie die Konfiguration der Diagnoseprotokollierung für das Portal aktualisieren oder entfernen.
+- **Deaktivieren der Diagnoseprotokollierung**: Hiermit können Sie die Konfiguration der Diagnoseprotokollierung für das Portal deaktivieren.
  
-### <a name="update-diagnostic-logging"></a>Diagnoseprotokollierung aktualisieren
+### <a name="update-diagnostic-logging"></a>Aktualisieren der Diagnoseprotokollierung
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
 
-2. Wechseln Sie zu **Portalaktionen** > **Diagnoseprotokollierungskonfiguration aktualisieren**.
+2. Wechseln Sie zu den **Portal Aktionen** > aktualisieren Sie die **Diagnose Protokollierungs Konfiguration**.
 
    > [!div class=mx-imgBorder]
-   > ![Diagnoseprotokollierungskonfiguration aktualisieren](../media/update-diagnostic-logging.png "Diagnoseprotokollierungskonfiguration aktualisieren")
+   > ![Aktualisieren der Konfiguration der Diagnoseprotokollierung](../media/update-diagnostic-logging.png "Aktualisieren der Konfiguration der Diagnoseprotokollierung")
 
-3. Geben Sie im Fenster „Diagnoseprotokollierungskonfiguration aktualisieren” die folgenden Werte ein:
-   - **Möchten Sie die Verbindungszeichenfolge des Azure Blob Storage-Diensts aktualisieren?**: Ermöglicht es Ihnen anzugeben, ob die Verbindungszeichenfolge des Azure Blob Storage-Diensts aktualisiert werden soll. Standardmäßig ist sie ausgewählt.
-   - **Verbindungszeichenfolge des Azure Blob Storage-Diensts**: URL des Azure Blob Storage-Diensts, um die Portalfehlerprotokolle zu speichern. Die maximale Länge der URL kann 2048 Zeichen betragen. Wenn die URL länger als 2048 Zeichen ist, wird eine Fehlermeldung angezeigt. Dieses Feld wird nur angezeigt, wenn das Kontrollkästchen **Möchten Sie die Verbindungszeichenfolge des Azure Blob Storage-Diensts aktualisieren?** aktiviert ist. Weitere Informationen zur Verbindungszeichenfolge: [Azure Storage-Verbindungszeichenfolgen konfigurieren](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
-   - **Beibehaltungsdauer auswählen**: Die Dauer, während der Portalfehlerprotokolle im BLOB-Speicher aufbewahrt werden. Die Fehlerprotokolle werden nach der ausgewählten Dauer gelöscht. Sie können einen der folgenden Werte auswählen:
+3. Geben Sie im Konfigurationsfenster für die Diagnoseprotokollierung aktualisieren die folgenden Werte ein:
+   - **Möchten Sie die Verbindungs Zeichenfolge des Azure BLOB Storage Dienstanbieter aktualisieren?** : Hiermit können Sie angeben, ob die Verbindungs Zeichenfolge des Azure BLOB Storage Dienstanbieter aktualisiert werden soll. Standardmäßig ist diese Option ausgewählt.
+   - **Verbindungs Zeichenfolge Azure BLOB Storage Dienstanbieter**: URL des Azure BLOB Storage Dienstanbieter zum Speichern der Portal Fehlerprotokolle. Die maximale Länge der URL kann 2048 Zeichen umfassen. Wenn die URL länger als 2048 Zeichen ist, wird eine Fehlermeldung angezeigt. Dieses Feld wird nur angezeigt, wenn das Kontrollkästchen möchten **Sie die Verbindungs Zeichenfolge des Azure BLOB Storage Dienstanbieter aktualisieren?** aktiviert ist. Weitere Informationen zur Verbindungs Zeichenfolge: [Konfigurieren von Azure Storage Verbindungs](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string) Zeichenfolgen
+   - **Wählen Sie Beibehaltungs Dauer**: Dauer für die Beibehaltung der Portal Fehlerprotokolle im BLOB-Speicher aus. Die Fehlerprotokolle werden nach der ausgewählten Dauer gelöscht. Sie können einen der folgenden Werte auswählen:
      - 1 Tag
      - 7 Tage
      - 30 Tage
@@ -154,38 +157,38 @@ Wenn die Diagnoseprotokollierung erfolgreich aktiviert ist, wird die folgende Ak
      - 180 Tage
      - Immer
 
-   Standardmäßig beträgt die Beibehaltungsdauer 30 Tage.
+   Standardmäßig beträgt die Beibehaltungs Dauer 30 Tage.
 
    > [!div class=mx-imgBorder]
-   > ![Fenster „Diagnoseprotokollierungskonfiguration aktualisieren”](../media/update-diagnostic-logging-window.png "Fenster „Diagnoseprotokollierungskonfiguration aktualisieren”")
+   > ![Konfigurationsfenster für die Diagnoseprotokollierung aktualisieren](../media/update-diagnostic-logging-window.png "Konfigurationsfenster für die Diagnoseprotokollierung aktualisieren")
 
 4. Klicken Sie auf **Aktualisieren**.
 
-### <a name="disable-diagnostic-logging"></a>Diagnoseprotokollierung deaktivieren
+### <a name="disable-diagnostic-logging"></a>Deaktivieren der Diagnoseprotokollierung
 
-1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
+1. Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
 
-2. Wechseln Sie zu **Portalaktionen** > **Diagnoseprotokollierung deaktivieren**.
+2. Wechseln Sie zu den **Portal Aktionen** > deaktivieren Sie die **Diagnoseprotokollierung**.
 
    > [!div class=mx-imgBorder]
-   > ![Diagnoseprotokollierung deaktivieren](../media/disable-diagnostic-logging.png "Diagnoseprotokollierung deaktivieren")
+   > ![Deaktivieren der Diagnoseprotokollierung](../media/disable-diagnostic-logging.png "Deaktivieren der Diagnoseprotokollierung")
 
-3. Klicken Sie in der Bestätigungsmeldung auf **Deaktivieren**.
+3. Klicken Sie in der Bestätigungsmeldung auf **Deaktivieren** .
 
-## <a name="display-plugin-error"></a>Plugin-Fehler anzeigen
+## <a name="display-plugin-error"></a>Anzeige des Plug-ins
 
-Ein weiteres Szenario, das häufig bei der Entwicklung eines Portale auftritt, ist ein Fehler, der durch benutzerdefinierte Plugins und Geschäftslogik in Ihrer Dynamics 365-Organisation verursacht wird. Auf diese Fehler kann im allgemeinen durch [Benutzerdefinierte Fehler deaktivieren](#disable-custom-error) oder [Diagnoseprotokollierung aktivieren](#enable-diagnostic-logging) zugegriffen werden. In einigen Fällen ist es jedoch schneller, diese Fehler direkt im Portal anzuzeigen, um das Problem schneller zu diagnostizieren. Dazu können Sie Ihr Portal so konfigurieren, dass benutzerdefinierte Plugin-Fehler auf Ihrem Portalbildschirm angezeigt werden.
+Ein anderes Szenario, das häufig bei der Entwicklung eines Portals auftritt, ist ein Fehler, der von benutzerdefinierten Plug-ins und Geschäftslogik generiert wird, die in ihrer Common Data Service Umgebung geschrieben Auf diese Fehler kann im Allgemeinen durch [Deaktivieren von benutzerdefinierten Fehlern](#disable-custom-error) oder [Aktivieren der Diagnoseprotokollierung](#enable-diagnostic-logging)zugegriffen werden. In einigen Fällen ist es jedoch schneller, diese Fehler direkt im Portal anzuzeigen, um das Problem schneller zu diagnostizieren. Zu diesem Zweck können Sie das Portal so konfigurieren, dass benutzerdefinierte Plug-in-Fehler von Common Data Service auf dem Portal Bildschirm angezeigt werden.
 
-Um benutzerdefinierte Plug-In-Fehler anzuzeigen, erstellen Sie die Website-Einstellung `Site/EnableCustomPluginError`, und legen sie deren Wert auf „True” fest. Die benutzerdefinierten Plug-In-Fehler werden im Bildschirm statt eines generischen Fehlers angezeigt. Der Fehler wird nur als Nachrichtenteil des Plug-In-Fehlers angezeigt und nicht als vollständige Stapelüberwachung angezeigt.
+Erstellen Sie zum Anzeigen von benutzerdefinierten Plug-in-Fehlern die Website Einstellung `Site/EnableCustomPluginError` und legen Sie Ihren Wert auf true fest. Die benutzerdefinierten Plug-in-Fehler werden auf dem Bildschirm anstelle eines generischen Fehlers angezeigt. Der Fehler zeigt nur den Nachrichten Teil des Plug-in-Fehlers und nicht die komplette Stapel Überwachung an.
 
-Im Anschluss folgen die Bildschirme, in denen benutzerdefinierte Plug-In-Fehler angezeigt werden: 
-- Entitätsliste 
-    - Abruf von Datensätzen 
-- Entitätsformular 
+Es folgen die Bildschirme, in denen benutzerdefinierte Plug-in-Fehler auftreten 
+- Entitäts Liste 
+    - Abrufen von Datensätzen 
+- Entitäts Formular 
     - Abrufen 
-    - Erstellen/Aktualisieren usw. 
-- Webformulare 
+    - Erstellen/aktualisieren usw. 
+- Web Forms 
     - Abrufen 
-    - Erstellen/Aktualisieren usw.
+    - Erstellen/aktualisieren usw.
 
-Wenn die Website-Einstellung nicht vorhanden ist, wird sie standardmäßig als falsch behandelt und Plug-In-Fehler werden nicht gerendert.
+Wenn die Standort Einstellung nicht vorhanden ist, wird Sie standardmäßig als falsch behandelt, und Plug-in-Fehler werden nicht angezeigt.

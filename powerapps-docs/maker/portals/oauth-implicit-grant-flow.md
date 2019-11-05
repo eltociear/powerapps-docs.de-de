@@ -1,137 +1,142 @@
 ---
-title: 'Verwenden von OAuth 2.0, um den Flow mit IHrem Portal zu gewährleisten| MicrosoftDocs'
-description: 'Erfahren Sie, wie Sie clientseitige Aufrufe an externe APIs durchführen und diese mit Hilfe von OAuth implizitem Grant Flow in den Dynamics 365 Portalen sichern können.'
+title: Verwenden des impliziten OAuth 2,0-Zuweisungs Flusses innerhalb Ihres Portals | MicrosoftDocs
+description: Erfahren Sie, wie Sie Client seitige Aufrufe externer APIs durchführen und diese mithilfe des impliziten OAuth-Berechtigungs Flusses im Portal sichern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 38a1ac18a5c978c7b39d6dee85afcb9adf334534
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542426"
 ---
+# <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Verwenden des impliziten OAuth 2,0-Zuweisungs Flusses innerhalb Ihres Portals 
 
-# <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Verwenden des Flows zur implizierten OAuth 2.0-Genehmigung innerhalb des Portals 
+Diese Funktion ermöglicht es einem Kunden, Client seitige Aufrufe externer APIs vorzunehmen und diese mithilfe des impliziten OAuth-Berechtigungs Flusses zu sichern. Es bietet einen Endpunkt zum Abrufen sicherer Zugriffs Token, die Benutzer Identitätsinformationen enthalten, die von externen APIs für die Autorisierung nach dem impliziten OAuth 2,0-Grant-Flow verwendet werden. Die Identitätsinformationen eines angemeldeten Benutzers werden auf sichere Weise an die externen AJAX-Aufrufe übermittelt. Dies hilft Entwicklern nicht nur, den Authentifizierungs Kontext zu übergeben, sondern auch Benutzern zu helfen, ihre APIs mithilfe dieses Mechanismus zu schützen.
 
-Mit dieser Funktion können Kunden clientseitige Aufrufe von externen APIs durchführen und sichern, indem sie den Flow zur implizierten OAuth-Genehmigung verwenden. Er bietet einen Endpunkt, um sichere Zugriffstoken zu erhalten, die die Benutzeridentitätsinformationen enthalten, die von externen APIs für die Autorisierung gemäß des Flows zur implizierten OAuth 2.0-Genehmigung verwendet werden müssen. Die Identitätsinformationen eines angemeldeten Benutzers werden in eine sichere Weise an externe AJAX-Aufrufe übergeben. Dieses Vorgehen hilft nicht nur Entwicklern, den Authentifizierungskontext zu übergeben, sondern hilft auch Benutzern, ihre APIs mit dieser Funktion zu sichern.
+Der implizite OAuth 2,0-Zuweisungs Fluss unterstützt Endpunkte, die ein Client zum Abrufen eines ID-Tokens abrufen kann. Zu diesem Zweck werden zwei Endpunkte verwendet: [autorisieren](#authorize-endpoint-details) und [Token](#token-endpoint-details).
 
-Der Flows zur implizierten OAuth 2.0-Genehmigung unterstützt Endpunkte, die ein Client aufrufen kann, um ein ID-Token abzurufen. Zwei Endpunkte werden zu diesem Zweck verwendet: [authorize](#authorize-endpoint-details) und [token](#token-endpoint-details).
+## <a name="authorize-endpoint-details"></a>Endpunkt Details autorisieren 
 
-## <a name="authorize-endpoint-details"></a>Details zum authorize-Endpunkt 
-
-Die URL für den authorize-Endpunkt: `<portal_url>/_services/auth/authorize`. Der authorize-Endpunkt unterstützt die folgenden Parameter:
+Die URL für Autorisierungs Endpunkt lautet: `<portal_url>/_services/auth/authorize`. Der Autorisierungs Endpunkt unterstützt die folgenden Parameter:
 
 | Parameter   | Erforderlich? | Beschreibung                             |
 |---------------|-----------|---------------------------------------|
-| client_id      | Ja       | Eine Zeichenfolge, die bei einem Aufruf des authorize-Endpunkts übergeben wird. Sie müssen sicherstellen, dass die Client-ID [beim Portal registriert ist](#register-client-id-for-implicit-grant-flow). Andernfalls wird ein Fehler angezeigt. Die Client-ID wird in den Berechtigungen des Token als `aud` und im Parameter als `appid` hinzugefügt und kann von Clients verwendet werden, um zu überprüfen, ob das Token für ihre App zurückgesendet wird.<br>Die maximale Länge beträgt 36 Zeichen. Nur alphanumerische Zeichen und Bindestriche werden unterstützt. |
-| redirect_uri      | Ja       | URL des Portals, auf dem Authentifizierungsantworten gesendet und empfangen werden können. Sie muss für die jeweilige `client_id` registriert werden, die im Aufruf verwendet wird, und sollte genau denselben registrierten Wert haben.            |
-| state       | Nein        | Ein in der Anforderung enthaltener Wert, der auch in der Tokenantwort zurückgegeben wird. Dies kann eine Zeichenfolge jeden Inhalts sein, den Sie verwenden möchten. Normalerweise wird ein nach dem Zufallsprinzip generierter eindeutiger Wert verwendet, um Cross-Site Request Forgery-Angriffe zu vermeiden.<br>Die maximale Länge beträgt 20 Zeichen.              |
-| nonce   | Nein        | Ein Zeichenfolgenwert, der vom Client gesendet werden, der im resultierenden ID-Token als Berechtigung enthalten ist. Der Client kann dann diesen Wert überprüfen, um Token-Replay-Angriffe zu verringern. Die maximale Länge beträgt 20 Zeichen.      |
-| response_type         | Nein        | Dieser Parameter unterstützt nur `token` als Wert. Dies ermöglicht der App, sofort ein Zugriffstoken vom authorize-Endpunkt zu erhalten, ohne eine zweiten Anforderung an den authorize-Endpunkt zu senden.                               |
+| client_id      | Ja       | Eine Zeichenfolge, die beim Ausführen eines Aufrufes an den Autorisierungs Endpunkt übermittelt wird. Sie müssen sicherstellen, dass die Client-ID im [Portal registriert](#register-client-id-for-implicit-grant-flow)ist. Andernfalls wird ein Fehler angezeigt. Die Client-ID wird in Ansprüchen im Token als `aud` und `appid` Parameter hinzugefügt und kann von Clients verwendet werden, um zu überprüfen, ob das zurückgegebene Token für Ihre APP verwendet wird.<br>Die maximale Länge beträgt 36 Zeichen. Nur alphanumerische Zeichen und Bindestriche werden unterstützt. |
+| redirect_uri      | Ja       | Die URL des Portals, an die Authentifizierungs Antworten gesendet und empfangen werden können. Sie muss für die jeweilige `client_id` registriert werden, die im-Befehl verwendet wird, und sollte genau dem Wert entsprechen, der registriert ist.            |
+| Land       | Nein        | Ein in der Anforderung enthaltener Wert, der auch in der tokenantwort zurückgegeben wird. Dabei kann es sich um eine Zeichenfolge von Inhalten handeln, die Sie verwenden möchten. Normalerweise wird ein zufällig generierter eindeutiger Wert verwendet, um Website übergreifende Anforderungs Fälschungs Angriffe zu verhindern.<br>Die maximale Länge beträgt 20 Zeichen.              |
+| Nonce   | Nein        | Ein Zeichen folgen Wert, der vom Client gesendet wird, der im resultierenden ID-Token als Anspruch enthalten ist. Der Client kann diesen Wert dann überprüfen, um Token-Replay-Angriffe zu verringern. Die maximale Länge beträgt 20 Zeichen.      |
+| response_type         | Nein        | Dieser Parameter unterstützt nur `token` als Wert. Dadurch kann Ihre APP sofort ein Zugriffs Token vom Autorisierungs Endpunkt empfangen, ohne dass eine zweite Anforderung an den Autorisierungs Endpunkt gesendet werden muss.                               |
 |||
 
 ### <a name="successful-response"></a>Erfolgreiche Antwort
 
-Der authorize-Endpunkt gibt die folgenden Werte in der Antwort-URL als Fragment zurück:
+Der Autorisierungs Endpunkt gibt die folgenden Werte in der Antwort-URL als Fragment zurück:
 
-- **token**: Wird als JSON-Web-Token (JWT) zurückgegeben, das durch den privaten Schlüssel des Portals digital signiert ist.
-- **state**: Wenn ein state-Parameter in der Anforderung enthalten ist, sollte derselbe Wert in der Antwort enthalten sein. Die App sollte sicherstellen, dass die Statuswerte in der Anforderung und in der Antwort identisch sind.
-- **expires_in**: Die Zeit, während der das Zugriffstoken gültig ist (in Sekunden).
+- **Token**: das Token wird als JSON Web Token (JWT) zurückgegeben, das vom privaten Schlüssel des Portals digital signiert wurde.
+- **State**: Wenn ein Status Parameter in der Anforderung enthalten ist, sollte der gleiche Wert in der Antwort angezeigt werden. Die APP sollte überprüfen, ob die Statuswerte in der Anforderung und in der Antwort identisch sind.
+- **expires_in**: die Zeitspanne, für die das Zugriffs Token gültig ist (in Sekunden).
 
-Beispielsweise sieht eine erfolgreiche Reaktion wie folgt aus:
+Eine erfolgreiche Antwort sieht z. b. wie folgt aus:
 
 ```
 GET https://aadb2cplayground.azurewebsites.net/#token=eyJ0eXAiOiJKV1QiLCJhbGciOI1NisIng1dCI6Ik5HVEZ2ZEstZnl0aEV1Q&expires_in=3599&state=arbitrary_data_you_sent_earlier
 ```
 
-### <a name="error-response"></a>Fehlerantwort
+### <a name="error-response"></a>Fehler Antwort
 
-Der Fehler im authorize-Endpunkt wird als JSON-Dokument mit folgenden Werten zurückgegeben:
+Der Fehler im Autorisierungs Endpunkt wird als JSON-Dokument mit den folgenden Werten zurückgegeben:
 
-- **Fehler-ID**: Eindeutiger Bezeichner des Fehlers.
-- **Fehlermeldung**: Eine spezifische Fehlermeldung, die Ihnen helfen kann, die Ursache des Authentifizierungsfehlers zu identifizieren.
-- **Korrelations-ID**: Eine GUID, die für Debugzwecke verwendet wird. Wenn Sie die Diagnoseprotokollierung aktiviert haben, ist in den Serverfehlerfehlerprotokollen die Korrelations-ID vorhanden.
-- **Zeitstempel**: Datum und Uhrzeit der Fehlergenerierung.
+- **Fehler-ID**: eindeutiger Bezeichner des Fehlers.
+- **Fehlermeldung**: eine spezifische Fehlermeldung, mit der Sie die Grundursache eines Authentifizierungsfehlers identifizieren können.
+- **Korrelations-ID**: eine GUID, die zu Debugzwecken verwendet wird. Wenn Sie die Diagnoseprotokollierung aktiviert haben, ist die Korrelations-ID in den Server Fehlerprotokollen enthalten.
+- **Timestamp**: Datum und Uhrzeit, zu der der Fehler generiert wird.
 
-Die Fehlermeldung wird in der Standardsparche des angemeldeten Benutzers angezeigt. Wenn der Benutzer nicht angemeldet ist, wird die Anmeldeseite angezeigt, damit der Benutzer sich anmelden kann. Beispielsweise sieht eine Fehlerantwort wie folgt aus:
+Die Fehlermeldung wird in der Standardsprache des angemeldeten Benutzers angezeigt. Wenn der Benutzer nicht angemeldet ist, wird die Anmeldeseite angezeigt, damit sich der Benutzer anmelden kann. Eine Fehler Antwort sieht z. b. wie folgt aus:
 
 ```
 {"ErrorId": "PortalSTS0001", "ErrorMessage": "Client Id provided in the request is not a valid client Id registered for this portal. Please check the parameter and try again.", "Timestamp": "4/5/2019 10:02:11 AM", "CorrelationId": "7464eb01-71ab-44bc-93a1-f221479be847" }
 ```
 
-## <a name="token-endpoint-details"></a>Tokenendpunktdetails
+## <a name="token-endpoint-details"></a>Details zum tokenendpunkt
 
-Sie können ein Token auch abrufen, indem Sie eine Anforderung an den Endpunkt `/token` vornehmen. Er unterscheidet sich vom Autorisierungsendpunkt wie folgt: Der Autorisierungsendpunkt verarbeitet die Tokenlogik in einer separaten Seite (redirect_uri), während der Tokenendpunkt die Tokenlogik auf derselben Seite verarbeitet. Die URL für den Tokenendpunkt: `<portal_url>/_services/auth/token`. Der Tokenendpunkt unterstützt die folgenden Parameter:
+Sie können auch ein Token erhalten, indem Sie eine Anforderung an den `/token`-Endpunkt senden. Dies unterscheidet sich vom Autorisierungs Endpunkt in der Art und Weise, wie der Autorisierungs Endpunkt die tokenlogik auf einer separaten Seite (redirect_uri) behandelt, während der tokenendpunkt die tokenlogik auf derselben Seite verarbeitet. Die URL für den tokenendpunkt lautet: `<portal_url>/_services/auth/token`. Der tokenendpunkt unterstützt die folgenden Parameter:
 
 | Parameter   | Erforderlich? | Beschreibung                             |
 |---------------|-----------|---------------------------------------|
-| client_id      | Nein       | Eine Zeichenfolge, die bei einem Aufruf des authorize-Endpunkts übergeben wird. Sie müssen sicherstellen, dass die Client-ID [beim Portal registriert ist](#register-client-id-for-implicit-grant-flow). Andernfalls wird ein Fehler angezeigt. Die Client-ID wird in den Berechtigungen des Token als `aud` und im Parameter als `appid` hinzugefügt und kann von Clients verwendet werden, um zu überprüfen, ob das Token für ihre App zurückgesendet wird.<br>Die maximale Länge beträgt 36 Zeichen. Nur alphanumerische Zeichen und Bindestriche werden unterstützt. |
-| redirect_uri      | Nein       | URL des Portals, auf dem Authentifizierungsantworten gesendet und empfangen werden können. Sie muss für die jeweilige `client_id` registriert werden, die im Aufruf verwendet wird, und sollte genau denselben registrierten Wert haben.            |
-| state       | Nein        | Ein in der Anforderung enthaltener Wert, der auch in der Tokenantwort zurückgegeben wird. Dies kann eine Zeichenfolge jeden Inhalts sein, den Sie verwenden möchten. Normalerweise wird ein nach dem Zufallsprinzip generierter eindeutiger Wert verwendet, um Cross-Site Request Forgery-Angriffe zu vermeiden.<br>Die maximale Länge beträgt 20 Zeichen.              |
-| nonce   | Nein        | Ein Zeichenfolgenwert, der vom Client gesendet werden, der im resultierenden ID-Token als Berechtigung enthalten ist. Der Client kann dann diesen Wert überprüfen, um Token-Replay-Angriffe zu verringern. Die maximale Länge beträgt 20 Zeichen.      |
-| response_type         | Nein        | Dieser Parameter unterstützt nur `token` als Wert. Dies ermöglicht der App, sofort ein Zugriffstoken vom authorize-Endpunkt zu erhalten, ohne eine zweiten Anforderung an den authorize-Endpunkt zu senden.                               |
+| client_id      | Nein       | Eine Zeichenfolge, die beim Ausführen eines Aufrufes an den Autorisierungs Endpunkt übermittelt wird. Sie müssen sicherstellen, dass die Client-ID im [Portal registriert](#register-client-id-for-implicit-grant-flow)ist. Andernfalls wird ein Fehler angezeigt. Die Client-ID wird in Ansprüchen im Token als `aud` und `appid` Parameter hinzugefügt und kann von Clients verwendet werden, um zu überprüfen, ob das zurückgegebene Token für Ihre APP verwendet wird.<br>Die maximale Länge beträgt 36 Zeichen. Nur alphanumerische Zeichen und Bindestriche werden unterstützt. |
+| redirect_uri      | Nein       | Die URL des Portals, an die Authentifizierungs Antworten gesendet und empfangen werden können. Sie muss für die jeweilige `client_id` registriert werden, die im-Befehl verwendet wird, und sollte genau dem Wert entsprechen, der registriert ist.            |
+| Land       | Nein        | Ein in der Anforderung enthaltener Wert, der auch in der tokenantwort zurückgegeben wird. Dabei kann es sich um eine Zeichenfolge von Inhalten handeln, die Sie verwenden möchten. Normalerweise wird ein zufällig generierter eindeutiger Wert verwendet, um Website übergreifende Anforderungs Fälschungs Angriffe zu verhindern.<br>Die maximale Länge beträgt 20 Zeichen.              |
+| Nonce   | Nein        | Ein Zeichen folgen Wert, der vom Client gesendet wird, der im resultierenden ID-Token als Anspruch enthalten ist. Der Client kann diesen Wert dann überprüfen, um Token-Replay-Angriffe zu verringern. Die maximale Länge beträgt 20 Zeichen.      |
+| response_type         | Nein        | Dieser Parameter unterstützt nur `token` als Wert. Dadurch kann Ihre APP sofort ein Zugriffs Token vom Autorisierungs Endpunkt empfangen, ohne dass eine zweite Anforderung an den Autorisierungs Endpunkt gesendet werden muss.                               |
 |||
 
 > [!NOTE]
-> Auch wenn die Parameter `client_id`, `redirect_uri`, `state` und `nonce` optional sind, wird empfohlen, sie zu verwenden, um sicherzustellen, dass Ihre Integrationen sicher sind.
+> Obwohl `client_id`-, `redirect_uri`-, `state`-und `nonce`-Parameter optional sind, empfiehlt es sich, diese zu verwenden, um sicherzustellen, dass Ihre Integrationen sicher sind.
 
 ### <a name="successful-response"></a>Erfolgreiche Antwort
 
-Der Tokenendpunkt gibt „state“ und „expires_in“ als Antwortheader und das Token im Formulartextkörper zurück.
+Der tokenendpunkt gibt State und expires_in als Antwortheader und Token im Formular Text zurück.
 
-### <a name="error-response"></a>Fehlerantwort
+### <a name="error-response"></a>Fehler Antwort
 
-Der Fehler im Tokenendpunkt wird als JSON-Dokument mit folgenden Werten zurückgegeben:
+Der Fehler in einem tokenendpunkt wird als JSON-Dokument mit den folgenden Werten zurückgegeben:
 
-- **Fehler-ID**: Eindeutiger Bezeichner des Fehlers.
-- **Fehlermeldung**: Eine spezifische Fehlermeldung, die Ihnen helfen kann, die Ursache des Authentifizierungsfehlers zu identifizieren.
-- **Korrelations-ID**: Eine GUID, die für Debugzwecke verwendet wird. Wenn Sie die Diagnoseprotokollierung aktiviert haben, ist in den Serverfehlerfehlerprotokollen die Korrelations-ID vorhanden.
-- **Zeitstempel**: Datum und Uhrzeit der Fehlergenerierung.
+- **Fehler-ID**: eindeutiger Bezeichner des Fehlers.
+- **Fehlermeldung**: eine spezifische Fehlermeldung, mit der Sie die Grundursache eines Authentifizierungsfehlers identifizieren können.
+- **Korrelations-ID**: eine GUID, die zu Debugzwecken verwendet wird. Wenn Sie die Diagnoseprotokollierung aktiviert haben, ist die Korrelations-ID in den Server Fehlerprotokollen enthalten.
+- **Timestamp**: Datum und Uhrzeit, zu der der Fehler generiert wird.
 
-Die Fehlermeldung wird in der Standardsparche des angemeldeten Benutzers angezeigt. Wenn der Benutzer nicht angemeldet ist, wird die Anmeldeseite angezeigt, damit der Benutzer sich anmelden kann. Beispielsweise sieht eine Fehlerantwort wie folgt aus:
+Die Fehlermeldung wird in der Standardsprache des angemeldeten Benutzers angezeigt. Wenn der Benutzer nicht angemeldet ist, wird eine Anmeldeseite angezeigt, auf der sich der Benutzer anmelden kann. Eine Fehler Antwort sieht z. b. wie folgt aus:
 
 ```
 {"ErrorId": "PortalSTS0001", "ErrorMessage": "Client Id provided in the request is not a valid client Id registered for this portal. Please check the parameter and try again.", "Timestamp": "4/5/2019 10:02:11 AM", "CorrelationId": "7464eb01-71ab-44bc-93a1-f221479be847" }
 ```
 
-## <a name="validate-id-token"></a>Überprüfen des ID-Tokens
+## <a name="validate-id-token"></a>ID-Token überprüfen
 
-Nur ein ID-Token abzurufen reicht für die Benutzerauthentifizierung nicht aus. Sie müssen die Signatur des Tokens auch überprüfen und die Berechtigungen im Token basierend auf den Anforderungen der App verifizieren. Der öffentliche Tokenendpunkt bietet den öffentlichen Schlüssel des Portals, mit dem die Signatur des Tokens überprüft werden kann, die vom Portal bereitgestellt wird. Die URL für den öffentlichen Tokenendpunkt: `<portal_url>/_services/auth/publickey`.
+Das Herstellen eines ID-Tokens reicht nicht aus, um den Benutzer zu authentifizieren. Außerdem müssen Sie die Signatur des Tokens überprüfen und die Ansprüche im Token basierend auf den Anforderungen Ihrer APP überprüfen. Der öffentliche Token-Endpunkt stellt den öffentlichen Schlüssel des Portals bereit, der zum Überprüfen der Signatur des Tokens verwendet werden kann, das vom Portal bereitgestellt wird. Die URL für den öffentlichen Token-Endpunkt lautet: `<portal_url>/_services/auth/publickey`.
 
-## <a name="turn-implicit-grant-flow-on-or-off"></a>Flow zur implizierten Genehmigung aktivieren oder deaktivieren
+## <a name="turn-implicit-grant-flow-on-or-off"></a>Aktivieren oder Deaktivieren des impliziten Zuweisungs Flusses
 
-Standardmäßig wird der Flow zur implizierten Genehmigung aktiviert. Wenn Sie den Flow zur implizierten Genehmigung deaktivieren möchten, müssen Sie den Wert der Siteeinstellung **Connector/ImplicitGrantFlowEnabled** auf **False** setzen.
+Standardmäßig ist der implizite Zuweisungs Fluss aktiviert. Wenn Sie den impliziten Zuweisungs Fluss deaktivieren möchten, legen Sie den Wert der Site Einstellung **Connector/implicitgrantflowenabled** auf **false**fest.
 
-Wenn diese Site-Einstellung im Portal nicht verfügbar ist, müssen Sie [eine neue Site-Einstellung](configure-site-settings.md#manage-portal-site-settings) mit dem entsprechenden Wert erstellen.
+Wenn diese Standort Einstellung in Ihrem Portal nicht verfügbar ist, müssen Sie [eine neue Website Einstellung](configure/configure-site-settings.md#manage-portal-site-settings) mit dem entsprechenden Wert erstellen.
 
 ## <a name="configure-token-validity"></a>Tokengültigkeit konfigurieren
 
-Standardmäßig ist das Token für 15 Minuten gültig. Wenn die Gültigkeit des Tokens ändern möchten, müssen Sie den Wert der Site-Einstellung **ImplicitGrantFlow/TokenExpirationTime** auf den gewünschten Wert festlegen. Der Wert muss in Sekunden angegeben werden. Der maximale Wert 1 kann Stunde sein, und der minimale Wert muss 1 Minute sein. Wenn ein falscher Wert angegeben wird (z. B. alphanumerische Zeichen), wird der Standardwert 15 verwendet. Wenn Sie einen Wert über dem maximalen Wert oder unter dem minimalen Wert angeben, wird das Maximum bzw. der minimale Wert standardmäßig verwendet.
+Standardmäßig ist das Token 15 Minuten gültig. Wenn Sie die Gültigkeit des Tokens ändern möchten, legen Sie den Wert der Website Einstellung **implicitgrantflow/tokenexpirationtime** auf den erforderlichen Wert fest. Der Wert muss in Sekunden angegeben werden. Der Maximalwert kann eine Stunde betragen, und der minimale Wert muss 1 Minute betragen. Wenn ein falscher Wert angegeben wird (z. b. alphanumerische Zeichen), wird der Standardwert von 15 Minuten verwendet. Wenn Sie einen Wert angeben, der größer ist als der Maximalwert oder kleiner als der minimale Wert, werden standardmäßig die maximal-und Mindestwerte verwendet.
 
-Wenn Sie beispielsweise die Tokengültigkeit auf 30 Minuten festlegen, legen Sie den Wert der Siteeinstellung **ImplicitGrantFlow/TokenExpirationTime** auf **1800** fest. Um die Tokengültigkeit auf 1 Stunde festzulegen, legen Sie den Wert der Siteeinstellung **ImplicitGrantFlow/TokenExpirationTime** auf **3600** fest.
+Legen Sie z. b. für die Gültigkeitsdauer des Tokens einen Wert von 30 Minuten fest, und legen Sie den Wert der Website Einstellung **implicitgrantflow/tokenexpirationtime** auf **1800**fest. Um die Gültigkeitsdauer des Tokens auf 1 Stunde festzulegen, legen Sie den Wert der Website Einstellung **implicitgrantflow/tokenexpirationtime** auf **3600**fest.
 
-## <a name="register-client-id-for-implicit-grant-flow"></a>Client-ID für Flow zur implizierten Genehmigung registrieren
+## <a name="register-client-id-for-implicit-grant-flow"></a>Registrieren der Client-ID für den impliziten Zuweisungs Fluss
 
-Sie müssen die Client-ID mit dem Portal registrieren, für das dieser Flow zugelassen ist. Wenn Sie eine Client-ID registrieren möchen, müssen Sie die folgenden Siteeinstellungen erstellen:
+Sie müssen die Client-ID bei dem Portal registrieren, für das dieser Flow zulässig ist. Sie müssen die folgenden Standorteinstellungen erstellen, um eine Client-ID zu registrieren:
 
-|Website-Einstellung|Value|
+|Standort Einstellung|Value|
 |------|------|
-|ImplicitGrantFlow/RegisteredClientId|Die gültigen Client-ID-Werte, die für dieses Portal zulässig sind. Die Werte muss durch ein Semikolon getrennt werden und können alphanumerische Zeichen und Bindestriche enthalten. Die maximale Länge beträgt 36 Zeichen.|
-|ImplicitGrantFlow/{ClientId}/RedirectUri|Die gültigen URIs, die für eine bestimmte Client-ID zulässig sind. Die Werte müssen durch ein Semikolon getrennt werden. Die bereitgestellte URL muss eine gültige Webseite des Portals sein.|
+|Implicitgrantflow/registeredclientid|Die gültigen Client-ID-Werte, die für dieses Portal zulässig sind. Die Werte müssen durch ein Semikolon getrennt werden und können alphanumerische Zeichen und Bindestriche enthalten. Die maximale Länge beträgt 36 Zeichen.|
+|Implicitgrantflow/{ClientID}/redirecturi|Die gültigen Umleitungs-URIs, die für eine bestimmte Client-ID zulässig sind. Die Werte müssen durch ein Semikolon getrennt werden. Die angegebene URL muss eine gültige Webseite des Portals sein.|
 |||
 
 ## <a name="sample-code"></a>Beispielcode
 
-Sie können den folgenden Beispielcode verwenden, um mit der Verwendung von OAuth 2.0 Implicit Grant with Dynamics 365 Portale APIs zu beginnen.
+Verwenden Sie den folgenden Beispielcode für die ersten Schritte bei der Verwendung der impliziten OAuth 2,0-Gewährung mit powerapps-Portale-APIs.
 
-### <a name="use-portal-oauth-token-with-an-external-web-api"></a>Verwenden Sie das Portal-OAuth-Token für externe Web API
+### <a name="use-portal-oauth-token-with-an-external-web-api"></a>Verwenden des OAuth-Portal Tokens mit einer externen Web-API
 
-Dieses Beispiel ist ein ASP.NET basiertes Projekt und dient zur Validierung des von Dynamics 365 Portale ausgegebenen ID-Tokens. Das vollständige Beispiel finden Sie hier: [Verwenden Sie Portal-OAuth-Token für externe Web API](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
+Bei diesem Beispiel handelt es sich um ein ASP.NET basiertes Projekt, das zum Überprüfen des von powerapps-Portalen ausgestellten ID-Tokens verwendet wird. Das komplette Beispiel finden Sie hier: [Verwenden des OAuth-Portal Tokens mit einer externen Web-API](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
 
-### <a name="authorize-endpoint-sample"></a>Endpunkt-Muster autorisieren
+### <a name="authorize-endpoint-sample"></a>Beispiel für Autorisierungs Endpunkt
 
-Dieses Beispiel veranschaulicht, wie Endpunktrücksendungen das ID-Token als Fragment in der URL zurückgibt. Es deckt auch die Statusprüfung, die in der impliziten Erteilung unterstützt wird. Das Beispiel finden Sie hier:[Autorisieren Sie Endpunktbeispiel](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/AuthorizeEndpoint.js).
+Dieses Beispiel zeigt, wie der Autorisierungs Endpunkt das ID-Token als Fragment in der umgeleiteten URL zurückgibt. Außerdem wird die in impliziter Gewährung unterstützte Zustands Überprüfung behandelt. Das Beispiel finden Sie hier: [Beispiel für Autorisieren eines Endpunkts](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/AuthorizeEndpoint.js).
 
-### <a name="token-endpoint-sample"></a>Token-Endpunktbeispiele
+### <a name="token-endpoint-sample"></a>Beispiel für tokenendpunkt
 
-Dieses Beispiel zeigt, wie Sie die Funktion getAuthenticationToken verwenden können, um ein ID-Token über den Token-Endpunkt in Dynamics 365 Portale zu holen. Das Beispiel finden Sie hier: [Token-Endpunktbeispiel](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).
+Dieses Beispiel zeigt, wie Sie die getauthenticationtoken-Funktion verwenden können, um ein ID-Token mithilfe des tokenendpunkts in powerapps-Portalen abzurufen. Das Beispiel finden Sie hier: [Beispiel für tokenendpunkt](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).

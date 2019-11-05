@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ef5da72c39d06d021765500fb5d1e55299dfb1cc
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 2c093adb4b63b5374de118d8d7dbb3421e352f46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896223"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541071"
 ---
 # <a name="common-issues-and-resolutions-for-powerapps"></a>Häufige Probleme und Lösungen für PowerApps
 
 Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von PowerApps auftreten können. Nach Möglichkeit werden Problemumgehungen bereitgestellt.
 
-1. **Anmelde Problem bei bestimmten mobilen Android-Geräten bei Verwendung des Authentifikators** (21. August, 2019)
+1. **Anmelde Problem auf bestimmten mobilen Android-Geräten bei Verwendung des Authentifikators** (21. August 2019)
 
     In bestimmten Geräten und Szenarien können bei der Verwendung von Authenticator Anmeldefehler auftreten. Dies ist darauf zurückzuführen, dass OEM diese Funktionalität einschränkt. Weitere Informationen zum Fehler und zu möglichen entschärfungen finden Sie [hier](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING).    
 
@@ -36,7 +36,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
     Wenn beim Scrollen mit dem Finger eine Einschränkung angezeigt wird, heben Sie die Übertragung auf, und starten Sie den Bildlauf erneut.
 
-1. Das **Zeichnen mit Maus-oder Finger Eingaben ist in powerapps für Windows nicht reibungslos** . 19.09.2014. 24, 2018)
+1. Das **Zeichnen mit Maus-oder Finger Eingaben ist in powerapps für Windows nicht glatt** (Sep. 24, 2018).
 
     Das Pen-Steuerelement verfügt nur über partielle Unterstützung für das Zeichnen mithilfe von Maus-oder Finger Eingaben in der Windows-App Striche können zeitweilig sein. Verwenden Sie für Smooth Drawing einen Stift, oder führen Sie die app in einem Browser aus.
 
@@ -57,7 +57,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Starten einer Website aus einer eingebetteten App** (10. Mai 2018)
 
-    Internet Explorer und Microsoft Edge blockieren möglicherweise den Aufruf einer URL oder Website, die sich im geschützten Modus oder in einer niedrigeren Sicherheitszone als die Website befindet, in der die App geladen wurde. Um dieses Problem zu lösen, [ändern Sie die Sicherheits- und Datenschutzeinstellungen](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings) für Ihren Browser.
+    Internet Explorer und Microsoft Edge blockieren möglicherweise den Aufruf einer URL oder Website, die sich im geschützten Modus oder in einer niedrigeren Sicherheitszone als die Website befindet, in der die App geladen wurde. Um dieses Problem zu lösen, [ändern Sie die Sicherheits- und Datenschutzeinstellungen](https://support.microsoft.com/help/17479/windows-internet-explorer-11-change-security-privacy-settings) für Ihren Browser.
 
 1. **Kombinationsfeld-Steuerelemente in Katalogen** (3. Mai 2018)
 
@@ -65,7 +65,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Verwenden eines benutzerdefinierten Bilds als App-Symbol** (11. April 2018)
 
-    In PowerApps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [PowerApps Studio für Web](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in PowerApps Studio für Windows enthalten ist und die Hintergrundfarbe anpassen.
+    In PowerApps Studio für Windows Version 3.18043 können Sie kein benutzerdefiniertes Bild zur Verwendung als App-Symbol hochladen. Wenn Sie dieses Problem umgehen wollen, verwenden Sie [PowerApps Studio für Web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), um ein benutzerdefiniertes Bild hochzuladen. Stattdessen können Sie auch eins der Symbole verwenden, das in PowerApps Studio für Windows enthalten ist und die Hintergrundfarbe anpassen.
 
 1. **Kopieren und Einfügen von Anzeigen über mehrere Apps hinweg** (4. April 2018)
 
@@ -101,7 +101,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
 1. **Ausführen einer App unter Windows 8.1**
 
-    Wenn Sie [dieses Update für Windows 8.1](https://technet.microsoft.com/library/security/ms16-118) installieren, können Sie Apps, die Sie in PowerApps Studio öffnen, nicht unter diesem Betriebssystem ausführen. Sie können Apps jedoch weiterhin ausführen, die Sie in [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder mithilfe von PowerApps Mobile öffnen.
+    Wenn Sie [dieses Update für Windows 8.1](https://technet.microsoft.com/library/security/ms16-118) installieren, können Sie Apps, die Sie in PowerApps Studio öffnen, nicht unter diesem Betriebssystem ausführen. Sie können Apps jedoch weiterhin ausführen, die Sie in [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder mithilfe von PowerApps Mobile öffnen.
 
 1. **Spaltennamen mit Leerzeichen**
 
@@ -157,7 +157,7 @@ Dieser Artikel listet einige häufige Probleme auf, die bei der Verwendung von P
 
      Weitere Informationen finden Sie unter [SharePoint Online](connections/connection-sharepoint-online.md#known-issues).
 
-1. **Die gemeinsame Erstellung wird nicht unterstützt. Bitte immer nur ein Autor zur gleichen Zeit**.
+1. Die **gemeinsamen Erstellung wird nicht unterstützt. Einen Autor gleichzeitig, bitte**.
 
      Wenn mehr als eine Person zur gleichen Zeit die gleiche App bearbeitet, kann eine App beschädigt oder die Änderungen von Anderen überschrieben werden. Schließen Sie die App, bevor sie von einer anderen Person bearbeitet wird.
 

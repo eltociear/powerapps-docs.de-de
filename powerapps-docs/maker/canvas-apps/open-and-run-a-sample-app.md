@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989703"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541560"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Erstellen einer Canvas-App aus einem Beispiel in powerapps
 In diesem Schnellstart erstellen Sie eine Canvas-App aus einem Beispiel. Dadurch können Sie die verschiedenen Möglichkeiten entdecken, diese zu gestalten und Konzepte entdecken, die Sie anwenden können, wenn Sie eigene Canvas-Apps entwickeln.
 
 Jedes Beispiel stellt ein reales Szenario dar, verwendet jedoch fiktive Daten. Sie benötigen ein Cloudspeicherkonto wie Dropbox, Google Drive oder OneDrive, um diese Daten zu speichern.
 
-Wenn Sie über keine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
+Wenn Sie nicht über eine Lizenz für PowerApps verfügen, können Sie sich [kostenlos registrieren](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Öffnen von Beispiel-Apps
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 1. Zeigen Sie in der Liste der Beispiel-Apps mit der Maus auf eine Beispiel-App (z.B. **Cost Estimator**).
 

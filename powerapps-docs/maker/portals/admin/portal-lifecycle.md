@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c2ee82be5526cce41451c8a703971c0f97d32ea0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977310"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542947"
 ---
 # <a name="about-portal-lifecycle"></a>Informationen zum Lebenszyklus des Portals
 
@@ -30,7 +30,7 @@ Das erste Portal kann in einer Umgebung in einem Mandanten erstellt werden. Wenn
 
 Ein Portal wird immer als testportal erstellt. Wenn Sie über die erforderlichen Lizenzen verfügen, können Sie Sie über das powerapps-Portal Admin Center in die Produktion konvertieren. Informationen zum Konvertieren eines Test Portals in die Produktion finden Sie unter [Konvertieren eines Test Portals in eine Produktions](#convert-a-trial-portal-to-production)Umgebung.
 
-Zum Konvertieren eines Test Portals in die Produktion muss die Umgebung über erforderliche Add-ons für externe Benutzer oder eine Lizenz für interne Benutzer verfügen. Weitere Informationen zur Lizenzierung finden Sie unter Häufig gestellte Fragen zu [powerapps und Microsoft Flow Lizenzierung](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq) und [powerapps-Portale-Lizenzierung](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
+Zum Konvertieren eines Test Portals in die Produktion muss die Umgebung über erforderliche Add-ons für externe Benutzer oder eine Lizenz für interne Benutzer verfügen. Weitere Informationen zur Lizenzierung finden Sie unter Häufig gestellte Fragen zu [powerapps und Microsoft Flow Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) und [powerapps-Portale-Lizenzierung](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
 
 ### <a name="suspended-portal"></a>Angehaltene Portal
 
@@ -54,12 +54,12 @@ Sie können ein testportal in die Produktion konvertieren, indem Sie die Benachr
 Wenn Sie das [powerapps-Portal Admin Center](admin-overview.md) öffnen und zur Registerkarte " [Portal Details](portal-details.md) " navigieren, wird die Benachrichtigung über den Ablauf der Testversion unter dem Feld " **Typ** " angezeigt.
 
 > [!div class=mx-imgBorder]
-> ![Test Benachrichtigung auf der Registerkarte "Portal Details]" auf der Registerkarte "(../media/admin-center-convert-notif.png "Portal Details") "
+> ![Test Benachrichtigung auf der Registerkarte "Portal Details"](../media/admin-center-convert-notif.png "Test Benachrichtigung auf der Registerkarte "Portal Details"")
 
 Auf anderen Seiten im Admin Center wird die Benachrichtigung oben auf der Seite angezeigt.
 
 > [!div class=mx-imgBorder]
-> ![Test Benachrichtigung zu anderen Registerkarten](../media/admin-center-convert-notif-all.png "Benachrichtigung auf anderen Register") Karten
+> ![Test Benachrichtigung auf anderen Registerkarten](../media/admin-center-convert-notif-all.png "Test Benachrichtigung auf anderen Registerkarten")
 
 So konvertieren Sie Ihr testportal in die Produktion:
 
@@ -68,4 +68,4 @@ So konvertieren Sie Ihr testportal in die Produktion:
 2.  Wählen Sie **bestätigen**aus.
 
     > [!div class=mx-imgBorder]
-    > ![Bestätigung der Test]Version für die Produktion(../media/trial-to-prod-confirm.png "bis zur Produktion")
+    > ![Bestätigung der Testversion in der Produktion](../media/trial-to-prod-confirm.png "Bestätigung der Testversion in der Produktion")

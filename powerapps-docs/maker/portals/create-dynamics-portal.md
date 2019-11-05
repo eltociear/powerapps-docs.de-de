@@ -1,32 +1,40 @@
 ---
-title: Erstellen eines Dynamics 365-Portals in PowerApps | Microsoft Docs
-description: Anleitung zum Erstellen eines Dynamics 365-Portals in PowerApps.
+title: Erstellen eines Portals in einer Umgebung, die Modell gesteuerte apps in Dynamics 365 enthält | Microsoft-Dokumentation
+description: Anweisungen zum Erstellen eines Portals in einer Umgebung, die Modell gesteuerte apps in Dynamics 365 enthält.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 09/16/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 50459f3fcd9ebe8894196f934c1b1d2275c490c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542635"
 ---
+# <a name="create-a-portal-in-an-environment-containing-model-driven-apps-in-dynamics-365"></a>Erstellen eines Portals in einer Umgebung, die Modell gesteuerte apps in Dynamics 365 enthält
 
+Wenn Sie eine Umgebung auswählen, die Modell gesteuerte apps in Dynamics 365 (z. b. Dynamics 365 Sales und Dynamics 365 Customer Service) enthält, können Sie die in [Portal Vorlagen](portal-templates.md)erwähnten Portale erstellen.
 
-# <a name="create-dynamics-365-portals"></a>Erstellen eines Dynamics 365-Portals
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com) an.
 
-Wenn Sie eine Umgebung auswählen, die modellgesteuerte Apps in Dynamics 365 enthalten, können Sie die in [Portalvorlagen](portal-templates.md) aufgeführten Portale erstellen.
-
-1.  Melden Sie sich bei [PowerApps](http://web.powerapps.com) an.
-
-2.  Wählen Sie im linken Bereich **Erstellen** aus und geben Sie **Portal** in das Feld **Suchenvorlagen** ein, um alle Dynamics 365-Portalvorlagen anzuzeigen.
+2.  Wählen Sie im linken Bereich **Erstellen** aus, und geben Sie im Feld **Vorlagen suchen** das **Portal** ein, um alle Dynamics 365-Portal Vorlagen anzuzeigen.
 
     > [!div class=mx-imgBorder]
-    > ![Dynamics 365-Portalvorlagen](media/dynamics-portals.png "Dynamics 365-Portalvorlagen")  
+    > ![Dynamics 365-Portal Vorlagen](media/dynamics-portals.png "Dynamics 365-Portal Vorlagen")  
 
-3.  Wählen Sie die erforderliche Portalvorlage aus.
+3.  Wählen Sie die erforderliche Portal Vorlage aus.
 
-4.  Geben Sie im Fenster "Portal erstellen" einen Namen für das Portal und die Adresse für die Website ein, und wählen Sie eine Sprache aus der Dropdownliste aus. Wählen Sie **Erstellen** aus, wenn Sie fertig sind. Der Erstellungsprozess ist der gleiche wie im Abschnitt [Erstellen eines Common Data Service-Starterportal](create-portal.md) beschrieben.
+4.  Geben Sie im Fenster "Portal erstellen" einen Namen für das Portal und die Adresse für die Website ein, und wählen Sie eine Sprache aus der Dropdown Liste aus. Wenn Sie fertig sind, wählen Sie **Erstellen**aus. Der Erstellungs Prozess ist identisch mit der Beschreibung im Abschnitt [Erstellen eines Common Data Service Starter-Portals](create-portal.md) .
 
 > [!NOTE]
-> Um die Portalerstellung in einem Mandanten zu deaktivieren, siehe [Portalerstellung in einem Mandanten deaktivieren](create-portal.md#disable-portal-creation-in-a-tenant).
+> - Wenn Sie ein älteres Portal-Add-on erworben haben und ein Portal mithilfe des Add-Ins bereitstellen möchten, müssen Sie auf der Seite **Dynamics 365-Verwaltungs Center** navigieren. Weitere Informationen finden Sie [unter Bereitstellen eines Portals mit dem älteren Portal-Add-on](provision-portal-add-on.md) .
+> - Wenn Sie ein Portal mithilfe des älteren Portal-Add-ins bereitgestellt haben, können Sie es dennoch über [make.powerapps.com](https://make.powerapps.com)anpassen und verwalten.
+> - Die Bereitstellungs Portale von [make.powerapps.com](https://make.powerapps.com) verbrauchen nicht die älteren Portal-Add-ons. Außerdem sind diese Portale nicht auf der Registerkarte **Anwendungen** auf der Seite **Dynamics 365-Verwaltungs Center** aufgeführt.
+> - Ein Common Data Service Starter-Portal kann nicht auf der Seite **Dynamics 365 Administration Center** erstellt werden.
+> - Informationen zum Deaktivieren der Portal Erstellung in einem Mandanten finden Sie unter [Deaktivieren der Portal Erstellung in einem](create-portal.md#disable-portal-creation-in-a-tenant)Mandanten.
 

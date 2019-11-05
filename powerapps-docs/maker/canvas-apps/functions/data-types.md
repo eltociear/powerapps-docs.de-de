@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 592399e6b5a95d27e5c0afe48541d04d444528bb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3147308c52439f250f8f65a81d91d99f30ae1481
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985563"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540298"
 ---
 # <a name="data-types-in-canvas-apps"></a>Datentypen in Canvas-apps
 
@@ -35,14 +34,14 @@ Dieser Artikel enthält Details zu den Datentypen, die von Canvas-Apps unterstü
 | **Datum** | Ein Datum ohne Uhrzeit in der Zeitzone des App-Benutzers. | **Datum (2019, 5, 16)** |
 | **DateTime** | Ein Datum mit einer Uhrzeit in der Zeitzone des App-Benutzers. | **DateTimeValue ("Mai 16, 2019 1:23:09 Uhr")** |
 | **GUID** | Ein [Global eindeutiger Bezeichner](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID ()**<br>**GUID ("123e4567-e89b-12d3-A456-426655440000")** |
-| **Hyperlinks** | Eine Text Zeichenfolge, die einen Link enthält. | **„http://powerapps.microsoft.com“** |
+| **Hyperlinks** | Eine Text Zeichenfolge, die einen Link enthält. | **„https://powerapps.microsoft.com“** |
 | **Bild** | Eine URI-Text Zeichenfolge [(Universal Resource Identifier)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) für ein Bild im JPEG-, PNG-, SVG-, GIF-oder anderen gängigen Webbild Format. | **MyImage** als App-Ressource hinzugefügt<br>**„https://northwindtraders.com/logo.jpg“**<br>**"appres://blobmanager/7b12ffa2..."** |
 | **Medien** | Eine URI-Text Zeichenfolge für eine Video-oder Audioaufzeichnung. | **MyVideo** als App-Ressource hinzugefügt<br>**„https://northwindtraders.com/intro.mp4“**<br>**"appres://blobmanager/3ba411c..."** |
 | **Einigen** | Eine Gleit Komma Zahl. | **123**<br>**-4,567**<br>**8.903e121** |
 | **Options Satz** | Eine Auswahl aus einer Reihe von Optionen, die durch eine Zahl unterstützt werden. Dieser Datentyp kombiniert eine lokalisierbare Text Bezeichnung mit einem numerischen Wert. Die Bezeichnung wird in der App angezeigt, und der numerische Wert wird gespeichert und für Vergleiche verwendet. | **Thisitem. OrderStatus** |
-| **Aufnahme** | Ein Datensatz von Datenwerten. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **{Unternehmen: "Northwind Traders"; <br>personal: 35; <br>non Profit: false}** |
-| **Daten Satz Verweis** | Ein Verweis auf einen Datensatz in einer Entität. Solche Verweise werden häufig bei polymorphen Such Vorgängen verwendet. Weitere Informationen finden Sie unter: [Arbeiten mit verweisen](../working-with-references.md).| **Zuerst (Konten). Eigentor** |
-| **Glaub** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für Ihre Felder mit denselben Datentypen aufweisen, und ausgelassene Felder werden als *leer*behandelt. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie unter: [Arbeiten mit Tabellen](../working-with-tables.md). | **table ({FirstName: "Sidney"; <br>lastname: "Higa"}; <br> {FirstName: "Nancy"; <br>lastname: "Anderson"})**
+| **Aufnahme** | Ein Datensatz von Datenwerten. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie [unter Arbeiten mit Tabellen](../working-with-tables.md). | **{Company: "Northwind Traders",<br>Personal: 35, <br>Non Profit: false}** |
+| **Daten Satz Verweis** | Ein Verweis auf einen Datensatz in einer Entität. Solche Verweise werden häufig bei polymorphen Such Vorgängen verwendet. Weitere Informationen finden Sie [unter Arbeiten mit verweisen](../working-with-references.md).| **Zuerst (Konten). Eigentor** |
+| **Glaub** | Eine Tabelle mit Datensätzen.  Alle Datensätze müssen die gleichen Namen für Ihre Felder mit denselben Datentypen aufweisen, und ausgelassene Felder werden als *leer*behandelt. Dieser Verbund Datentyp enthält Instanzen anderer Datentypen, die in diesem Thema aufgeführt sind. Weitere Informationen finden Sie [unter Arbeiten mit Tabellen](../working-with-tables.md). | **Table ({FirstName: "Sidney",<br>LastName: "Higa"}, <br>{FirstName: "Nancy",<br>LastName: "Anderson"})**
 | **Text** | Eine Unicode-Text Zeichenfolge. | **"Hello, World"** |
 | **Zeit** | Eine Uhrzeit ohne Datum in der Zeitzone des App-Benutzers. | **Zeit (11, 23, 45)** |
 | **Zwei Optionen** | Eine Auswahl aus einer Reihe von zwei Optionen, die von einem booleschen Wert unterstützt werden. Dieser Datentyp kombiniert eine lokalisierbare Text Bezeichnung mit einem booleschen Wert. Die Bezeichnung wird in der App angezeigt, und der boolesche Wert wird gespeichert und für Vergleiche verwendet. | **Thisitem. steuerlich** |
@@ -81,9 +80,9 @@ Wenn Sie die **Text** -Eigenschaft eines [**Label**](../controls/control-text-bo
 
 Canvas-Apps verweisen auf jedes Bild oder jede andere Mediendatei, ob Sie in der Cloud oder als App-Ressource durch eine URI-Text Zeichenfolge hinzugefügt wird.
 
-Beispielsweise akzeptiert die **Image** -Eigenschaft eines Image-Steuer Elements nicht nur App-Ressourcen, sondern auch Links zu Bildern im Web, z "https://northwindtraders.com/logo.jpg" . b. . Die-Eigenschaft akzeptiert auch Inline Bilder, die das [Daten-URI-Schema](https://en.wikipedia.org/wiki/Data_URI_scheme)verwenden, wie in diesem Beispiel:
+Beispielsweise akzeptiert die **Image** -Eigenschaft eines Image-Steuer Elements nicht nur App-Ressourcen, sondern auch Links zu Bildern im Web, z. b. "https://northwindtraders.com/logo.jpg". Die-Eigenschaft akzeptiert auch Inline Bilder, die das [Daten-URI-Schema](https://en.wikipedia.org/wiki/Data_URI_scheme)verwenden, wie in diesem Beispiel:
 
-```powerapps-comma
+```powerapps-dot
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -93,7 +92,7 @@ Dieser URI zeigt eine hochskalierte Version von zwei lila Diamanten an:
 
 Sie können das neueste Bild, das in einem [**Kamera**](../controls/control-camera.md) Steuerelement aufgezeichnet wurde, anzeigen, wenn Sie die **Image** -Eigenschaft eines Bild-Steuer Elements auf die **Photo** -Eigenschaft des Kamera-Steuer Elements festlegen. Die app enthält das Bild im Speicher, und die **Photo** -Eigenschaft des Kamera Steuer Elements gibt einen URI-Verweis auf das Bild zurück. Sie können z. b. ein Bild sehen, und die **Photo** -Eigenschaft der Kamera kann **"appres://blobmanager/7b12ffa2ea4547e5b3812cb1c7b0a2a0/1"** zurückgeben.
 
-Sie verwenden einen URI, um auf ein Bild oder eine andere Mediendatei zu verweisen, die in einer Datenbank gespeichert ist. Auf diese Weise Ruft die APP die tatsächlichen Daten erst ab, wenn Sie tatsächlich benötigt wird. Beispielsweise kann eine Anlage in einer Common Data Service Entität **"appres://DataSources/Contacts/Table/..."** zurückgeben. Wie im Beispiel für die Kamera können Sie dieses Bild anzeigen, indem Sie die **Image** -Eigenschaft eines Image-Steuer Elements auf diesen Verweis festlegen, der die Binärdaten abruft.
+Sie verwenden einen URI, um auf ein Bild oder eine andere Mediendatei zu verweisen, die in einer Datenbank gespeichert ist. Auf diese Weise Ruft die APP die tatsächlichen Daten erst ab, wenn Sie tatsächlich benötigt wird. Beispielsweise könnte eine Anlage in einer Common Data Service Entität **"appres://DataSources/Contacts/Table/..."** zurückgeben, wie im Kamera Beispiel, Sie können dieses Bild anzeigen, indem Sie die **Image** -Eigenschaft eines Image-Steuer Elements auf diesen Verweis festlegen. Ruft die Binärdaten ab.
 
 Wenn Sie einen Medien Datentyp, z. b. ein Bild, in einer Datenbank speichern, sendet die APP das eigentliche Image oder die tatsächlichen Mediendaten, nicht den URI-Verweis.
 
@@ -123,15 +122,15 @@ Datenbanksysteme speichern häufig Währungen und führen Berechnungen mithilfe 
 
 Datums-/Uhrzeitwerte fallen in die folgenden Kategorien:
 
-- **Lokaler Benutzer**: Diese Werte werden in [UTC (koordinierte Weltzeit)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)gespeichert, aber die Zeitzone der App-Benutzer wirkt sich darauf aus, wie diese Werte von der App angezeigt werden und wie der App-Benutzer Sie angibt. Ein Beispiel: der gleiche Zeitpunkt wird für einen Benutzer in Kanada anders als für einen Benutzer in Japan angezeigt.
-- **Zeit Zonen unabhängig**: Diese Werte werden von der APP auf dieselbe Weise angezeigt, und der App-Benutzer gibt Sie unabhängig von der Zeitzone auf dieselbe Weise an. Der gleiche Zeitpunkt wird für einen Benutzer in Kanada genauso wie für einen Benutzer in Japan angezeigt. App-Autoren, die nicht erwarten, dass Ihre apps in anderen Zeitzonen ausgeführt werden, verwenden diese Werte, da Sie einfacher sind.
+- **Lokaler Benutzer**: diese Werte werden in [UTC (koordinierte Weltzeit)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)gespeichert, aber die Zeitzone der App-Benutzer wirkt sich darauf aus, wie diese Werte von der App angezeigt werden und wie der App-Benutzer Sie angibt. Ein Beispiel: der gleiche Zeitpunkt wird für einen Benutzer in Kanada anders als für einen Benutzer in Japan angezeigt.
+- **Zeit Zonen unabhängig**: die APP zeigt diese Werte auf dieselbe Weise an, und der App-Benutzer gibt Sie unabhängig von der Zeitzone auf dieselbe Weise an. Der gleiche Zeitpunkt wird für einen Benutzer in Kanada genauso wie für einen Benutzer in Japan angezeigt. App-Autoren, die nicht erwarten, dass Ihre apps in anderen Zeitzonen ausgeführt werden, verwenden diese Werte, da Sie einfacher sind.
 
 Diese Tabelle enthält einige Beispiele:
 
 | Datums-/Uhrzeittyp | In der Datenbank gespeicherter Wert | Angezeigter Wert und 7 Stunden, Westen von UTC | Angezeigter Wert und 4 Stunden Ost UTC |
 |--------------------------|------------------------------|------------------------------|
-| **Lokaler Benutzer** | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR | Samstag, &nbsp;mai @ no__t-118, &nbsp;2019<br>9:00 UHR | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>8:00 UHR |
-| **Zeit Zonen unabhängig** | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR | 
+| **Lokaler Benutzer** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Samstag,&nbsp;&nbsp;18. Mai,&nbsp;2019<br>9:00 Uhr | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>8:00 Uhr |
+| **Zeit Zonen unabhängig** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | 
 
 Für **lokale** Datums-/Uhrzeitangaben von Benutzern verwenden Canvas-Apps die Zeitzone des Browsers oder Geräts, aber Modell gesteuerte Apps verwenden die Einstellung des Benutzers in Common Data Service. Diese Einstellungen entsprechen in der Regel, aber die Ergebnisse unterscheiden sich, wenn sich diese Einstellungen unterscheiden
 
@@ -151,8 +150,8 @@ Zurückkehren zum obigen Beispiel:
 
 | Datums-/Uhrzeittyp | In der Datenbank gespeicherter Wert | Angezeigter Wert und 7 Stunden, Westen von UTC | Rückgabe **Wert** Funktion |
 |--------------------------|------------------------------|------------------------------|
-| **Lokaler Benutzer** | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR | Samstag, &nbsp;mai @ no__t-118, &nbsp;2019<br>9:00 UHR | 1\.558.238.400.000<br> (Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR UTC) |
-| **Zeit Zonen unabhängig** | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR | Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>4:00 UHR |1\.558.263.600.000<br> (Sonntag, &nbsp;mai @ no__t-119, &nbsp;2019<br>11:00 UHR UTC) |
+| **Lokaler Benutzer** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Samstag,&nbsp;&nbsp;18. Mai,&nbsp;2019<br>9:00 Uhr | 1\.558.238.400.000<br> (Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr UTC) |
+| **Zeit Zonen unabhängig** | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr | Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>4:00 Uhr |1\.558.263.600.000<br> (Sonntag,&nbsp;&nbsp;19,&nbsp;2019<br>11:00 Uhr UTC) |
 
 ### <a name="converting-unix-times"></a>Wechseln von UNIX-Zeiten
 
@@ -176,11 +175,11 @@ Canvas-Apps verwenden die enthaltenen Zeitzoneninformationen in **DateTimeOffset
 
 Canvas-apps lesen und schreiben Werte des [**time**](https://docs.microsoft.com/sql/t-sql/data-types/time-transact-sql) -Datentyps in SQL Server als Text Zeichenfolgen im [ISO 8601-Duration-Format](https://en.wikipedia.org/wiki/ISO_8601#Durations). Beispielsweise müssen Sie dieses Zeichen folgen Format analysieren und die [**time**](function-date-time.md) -Funktion verwenden, um die Text Zeichenfolge **"PT2H1M39S"** **in einen Uhrzeitwert** zu konvertieren:
 
-```powerapps-comma
+```powerapps-dot
 First(
     ForAll(
-        MatchAll( "PT2H1M39S"; "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-        Time( Value( hours ); Value( minutes ); Value( seconds ) )
+        MatchAll( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+        Time( Value( hours ), Value( minutes ), Value( seconds ) )
     )
 ).Value
 ```
@@ -203,18 +202,18 @@ Wenn ein App-Benutzer eine Option auswählt und diese Änderung speichert, über
 
 Die Bezeichnungen dienen nur zu Anzeige Zwecken. Sie können keine direkten Vergleiche mit den Bezeichnungen durchführen, da Sie für eine Sprache spezifisch sind. Stattdessen hat jeder Options Satz eine Enumeration, die mit der zugrunde liegenden Zahl oder dem booleschen Wert arbeitet. Beispielsweise können Sie diese Formel nicht verwenden:
 
-`If( ThisItem.OrderStatus = "Active"; ...`
+`If( ThisItem.OrderStatus = "Active", ...`
 
 Aber Sie können diese Formel verwenden:
 
-`If( ThisItem.OrderStatus = OrderStatus.Active; ...`
+`If( ThisItem.OrderStatus = OrderStatus.Active, ...`
 
 Bei globalen Options Sätzen (bei denen die Entitäten gemeinsam genutzt werden) entspricht der Name der Options Satz-Enumeration dem Namen der globalen Options Menge. Für lokale Optionssätze (die auf eine Entität bezogen sind) kann der Name den Namen der Entität enthalten. Dieses Verhalten vermeidet Konflikte, wenn mehrere Entitäten über Optionssätze verfügen, die denselben Namen aufweisen. Beispielsweise kann für die Entität " **Accounts** " eine Option " **OrderStatus** " festgelegt werden, und der Name kann " **OrderStatus (Accounts)** " lauten. Dieser Name enthält ein oder mehrere Leerzeichen und Klammern, sodass Sie ihn in einfache Anführungszeichen einschließen müssen, wenn Sie ihn in einer Formel referenzieren.
 
 Außerdem können sich zwei Optionswerte auch als boolesche Werte Verhalten. Beispielsweise kann für einen zwei-Options-Wert mit dem Namen " **taxstatus** " die Bezeichnung "Tax **" und "** **Non-** Tax" lauten, die " *true* " bzw. " *false* " Um dies zu veranschaulichen, können Sie die folgende Formel verwenden:
 
-`If( ThisItem.Taxable = TaxStatus.Taxable; ...`
+`If( ThisItem.Taxable = TaxStatus.Taxable, ...`
 
 Sie können auch diese äquivalente Formel verwenden:
 
-`If( ThisItem.Taxable; ...`
+`If( ThisItem.Taxable, ...`

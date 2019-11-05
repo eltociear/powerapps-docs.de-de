@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b7b718564ec62d9a7fa2ca78d52727831635c1c
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224949"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541407"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Verknüpfen von SharePoint-Listen mithilfe von Nachschlagefeldern in PowerApps
 
@@ -96,7 +96,7 @@ Dieser Schritt erfolgt zuerst, damit beim Hinzufügen von Daten zur Liste **Asse
 ## <a name="create-an-app-from-the-assets-list"></a>Erstellen einer Apps aus der Assetliste
 Sie verwenden diese App, um Daten zur Liste **Assets** hinzuzufügen.
 
-1. [In PowerApps Studio anmelden](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wenn Sie in PowerApps einsteigen möchten, [können Sie sich kostenlos mit Ihrer Unternehmens-E-Mail-Adresse registrieren](https://powerapps.microsoft.com).
+1. [In PowerApps Studio anmelden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wenn Sie in PowerApps einsteigen möchten, [können Sie sich kostenlos mit Ihrer Unternehmens-E-Mail-Adresse registrieren](https://powerapps.microsoft.com).
 
 2. Klicken oder tippen Sie im Menü **Datei** auf der linken Seite auf **Neu**, und klicken oder tippen Sie dann auf **SharePoint**.
 
@@ -116,7 +116,7 @@ Sie können die App jetzt ausführen und sich ansehen, wie der Bildschirm zur De
 
 1. Drücken Sie F5, oder wählen Sie die Vorschau (![](./media/sharepoint-lookup-fields/preview.png)) aus.
 
-2. Klicken oder tippen Sie oben rechts auf das Symbol **+**, um einen Eintrag hinzuzufügen.
+2. Klicken oder tippen Sie oben rechts auf das Symbol **+** , um einen Eintrag hinzuzufügen.
 
 3. Geben Sie einen **Titel** für das Asset ein.
 
@@ -132,7 +132,7 @@ Sie können die App jetzt ausführen und sich ansehen, wie der Bildschirm zur De
 
 7. (Optional) Wiederholen Sie diesen Vorgang, um der Liste weitere Elemente hinzuzufügen.
 
-8. Drücken Sie die ESC-Taste, um zum Standardarbeitsbereich zurückzukehren.
+8. Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren.
 
 ## <a name="for-more-information"></a>Weitere Informationen
 * [Neue Unterstützung für Suchvorgänge und eine neue Beispiel-App](https://powerapps.microsoft.com/blog/support-for-lookups/)

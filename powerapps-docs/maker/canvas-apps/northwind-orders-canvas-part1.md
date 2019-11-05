@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 03411202ecc9c4c04713f7eb9cf6286809109684
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991363"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541534"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Erstellen einer Order Gallery in einer Canvas-App
 
@@ -39,7 +38,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 ## <a name="create-a-blank-app"></a>Erstellen einer leeren App
 
-1. [Melden Sie sich bei powerapps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und erstellen Sie dann eine leere Tablet-app.
+1. [Melden Sie sich bei powerapps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und erstellen Sie dann eine leere Tablet-app.
 
     > [!div class="mx-imgBorder"]
     > ![Canvas-App aus einer leeren Kachel](media/northwind-orders-canvas-part1/start-01.png)
@@ -106,8 +105,8 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Items** -Eigenschaft des Katalogs auf die folgende Formel fest:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     Die [**Sortier**](functions/function-sort.md) Funktion ordnet die Liste so an, dass die neueste Bestellung (mit der höchsten Bestellnummer) zuerst angezeigt wird.
@@ -133,7 +132,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -149,7 +148,7 @@ Befolgen Sie die Schritt-für-Schritt-Anleitungen zum Erstellen einer Order Gall
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der Bezeichnung auf den folgenden Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
@@ -193,7 +192,7 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
@@ -216,12 +215,12 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie in der Bearbeitungs Leiste die **Color** -Eigenschaft der Status Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
@@ -251,8 +250,8 @@ In diesem Verfahren fügen Sie Speicherplatz im Katalog für eine Bezeichnung hi
 
 1. Legen Sie in der Bearbeitungs Leiste die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -283,8 +282,8 @@ Zur Wiederholung haben Sie begonnen, eine Canvas-App mit einem Bildschirm zu ers
 - Ein Ausdruck, mit dem die Bestellnummer angezeigt wird: `"Orders " & ThisItem.OrderNumber`
 - Ein Feld in einer n:1-Beziehung: `ThisItem.Customer.Company`
 - Eine Bezeichnung, die den Namen einer Option in einer Menge anzeigt: `ThisItem.'Order Status'`
-- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Eine Bezeichnung, die das Format ändert, je nachdem, welche Option in einer Menge die Bezeichnung anzeigt: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Eine komplexe Aggregatfunktion über eine 1: n-Beziehung: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Nächstes Thema
 

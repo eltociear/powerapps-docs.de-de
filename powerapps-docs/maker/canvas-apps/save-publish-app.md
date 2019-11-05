@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19d793b879d42e9446cc8ad366bc08879162185d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 61e14f5116be7dbcd44fec38b96e9546baa7cddf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995759"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541546"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Speichern und Veröffentlichen einer Canvas-App in PowerApps
 Wenn Sie Änderungen an einer Canvas-App speichern, veröffentlichen Sie diese automatisch nur für sich selbst und andere Benutzer, die über Berechtigungen zum Bearbeiten der App verfügen. Wenn Sie die Änderungen abgeschlossen haben, müssen Sie sie explizit veröffentlichen, um sie allen Benutzern zur Verfügung zu stellen, für die die App freigegeben ist.
@@ -39,7 +39,7 @@ Die App kann auch automatisch alle 2 Minuten von PowerApps gespeichert werden. W
 
 ![Einstellung „Automatisch speichern“](./media/save-publish-app/autosave.png)
 
-## <a name="publish-an-app"></a>Veröffentlichen einer App
+## <a name="publish-an-app"></a>Veröffentlichen einer Anwendung
 1. Klicken oder tippen Sie in PowerApps Studio im Menü **Datei** (auf der linken Seite) auf **Speichern** und dann auf **Diese Version veröffentlichen**.
 
     ![Veröffentlichen einer App](./media/save-publish-app/publish-app.png)
@@ -51,7 +51,7 @@ Die App kann auch automatisch alle 2 Minuten von PowerApps gespeichert werden. W
    > Wenn Sie eine Canvas-App veröffentlichen, wird für Ihre App ein Upgrade auf die aktuelle PowerApps-Version durchgeführt, sodass Sie von den aktuellen Features und Leistungsverbesserungen profitieren können, die hinzugefügt wurden, seitdem Sie das letzte Mal eine Veröffentlichung vorgenommen haben. Wenn Sie seit mehreren Monaten kein Update veröffentlicht haben, werden Sie jetzt beim Veröffentlichen vermutlich eine deutliche Leistungsverbesserung bemerken.
 
 ## <a name="identify-the-live-version"></a>Bestimmen der Liveversion
-Klicken oder tippen Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im Menü **Datei** (auf der linken Seite) auf **Apps**, dann auf das Symbol „Details“ einer App und schließlich auf die Registerkarte **Versionen**.
+Klicken oder tippen Sie auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) im Menü **Datei** (auf der linken Seite) auf **Apps**, dann auf das Symbol „Details“ einer App und schließlich auf die Registerkarte **Versionen**.
 
 Die **Liveversion** wird für alle Benutzer veröffentlicht, für die die App freigegeben ist. Die neueste Version einer App ist nur für diejenigen verfügbar, die über Berechtigungen zum Bearbeiten der App verfügen.
 

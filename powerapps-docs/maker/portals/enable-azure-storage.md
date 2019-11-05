@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c9201f02074920b65fdf904c5dbe81826114f4c6
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975470"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542558"
 ---
 # <a name="enable-azure-storage"></a>Aktivieren von Azure Storage
 
 Mit Azure Storage Integration für Portale können Sie die größere Dateispeicher Funktion von Azure nutzen, indem Sie die gleiche Schnittstelle verwenden und die gleiche Benutzeroberfläche wie bei Standarddatei Anlagen bereitstellen. Diese Funktion wird für Webdateien, Entitäts Formulare und Web Forms unterstützt.
 
-Sie müssen ein Speicherkonto mit **Resource Manager** als Bereitstellungs Modell erstellen. [!include[More information](../../includes/proc-more-information.md)] [Erstellen Sie ein Azure-Speicherkonto](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account).
+Sie müssen ein Speicherkonto mit **Resource Manager** als Bereitstellungs Modell erstellen. [!include[More information](../../includes/proc-more-information.md)] [Erstellen Sie ein Azure-Speicherkonto](https://docs.microsoft.com/azure/storage/storage-create-storage-account#create-a-storage-account).
 
 Nachdem das Speicherkonto ausgeführt wurde, benötigen Portale bestimmte globale Einstellungen, die der Anwendung mitteilen, wie Sie Ihr Speicherkonto suchen. Wechseln Sie in der Portal Verwaltungs-APP zu **Einstellungen** > **neu**, und fügen Sie eine neue Einstellung mit dem Namen **FileStorage/cloudstorageaccount**hinzu.
 
@@ -35,13 +35,13 @@ Um den Wert für FileStorage/cloudstorageaccount zu suchen, müssen Sie eine Ver
 
 3. Wählen Sie **Zugriffsschlüssel**aus.
 
-    Suchen ![Sie den Wert für die Verbindungs Zeichenfolge aus Ihrem Azure-Portal](media/key-azure-storage.png "Suchen Sie den Wert für die Verbindungs Zeichenfolge aus Azure-Portal Ihrem")
+    ![Wert für Verbindungs Zeichenfolge aus Ihrem Azure-Portal suchen](media/key-azure-storage.png "Suchen Sie den Wert für die Verbindungs Zeichenfolge aus Ihrem Azure-Portal")
 
 4. Suchen Sie im Ergebnisbereich das Feld mit der Bezeichnung **Verbindungs Zeichenfolge**. Wählen Sie das **Kopier** Symbol neben dem Feld aus, für das Sie den Wert kopieren müssen, und fügen Sie diesen Wert in die neue Einstellung ein:
 
-    ![Primärer]Verbindungs Zeichen folgen Wert der(media/primary-connection-string-azure-storage.png "primären Verbindungs Zeichenfolge")
+    ![Wert der primären Verbindungs Zeichenfolge](media/primary-connection-string-azure-storage.png "Wert der primären Verbindungs Zeichenfolge")
 
-    ![Portal Einstellung für das cloudspeicherkonto]-(media/portal-site-setting-cloud-storage-account.png "Portal für Ihr cloudspeicherkonto")
+    ![Portal Einstellung für das cloudspeicherkonto](media/portal-site-setting-cloud-storage-account.png "Portal Einstellung für Ihr cloudspeicherkonto")
 
 ## <a name="specify-the-storage-container"></a>Geben Sie den Speicher Container an.
 
@@ -49,7 +49,7 @@ Wenn Sie nicht bereits über einen Azure-BLOB-Container in Ihrem Speicherkonto v
 
 Wechseln Sie in der [Portal Verwaltungs-App](configure/configure-portal.md)zu **Einstellungen** > **neu**, und fügen Sie eine neue Einstellung mit dem Namen **FileStorage/cloudstoragecontainername**hinzu. verwenden Sie dazu den Namen Ihres Containers als Wert.
 
-![Portal Einstellung für die Einstellung des Cloud Storage-Container](media/portal-site-setting-cloud-storage-container.png "Portals für Ihren cloudspeichercontainer")
+![Portal Einstellung für den Cloud-Speicher Container](media/portal-site-setting-cloud-storage-container.png "Portal Einstellung für Ihren cloudspeichercontainer")
 
 ## <a name="add-cors-rule"></a>Cors-Regel hinzufügen
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86a479080fe259012b70aecea614f2eef518656b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2160855d1b5ce67a4c11f5e227eb4d889d927d08
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988917"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542349"
 ---
 # <a name="share-canvas-app-resources-in-powerapps"></a>Freigeben von Canvas-App-Ressourcen in PowerApps
 
@@ -42,14 +42,14 @@ Sie können auch Verbindungen, benutzerdefinierte Connectors und ein lokales Dat
 
 Einige Typen von Verbindungen, z. B. SQL Server, werden automatisch freigegeben. Andere erfordern jedoch, dass Benutzer eigene Verbindungen mit der Datenquelle oder den Datenquellen in der App erstellen.
 
-Auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie bestimmen, ob eine Verbindung automatisch freigegeben wird, und Sie können Freigabeberechtigungen aktualisieren. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie anschließend auf **Verbindungen**. Wenn die Registerkarte **Freigabe** angezeigt wird, wird die Verbindung automatisch freigegeben.
+Auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie bestimmen, ob eine Verbindung automatisch freigegeben wird, und Sie können Freigabeberechtigungen aktualisieren. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie anschließend auf **Verbindungen**. Wenn die Registerkarte **Freigabe** angezeigt wird, wird die Verbindung automatisch freigegeben.
 
   ![Registerkarte „Freigeben“ auf der Seite für Verbindungsdetails](./media/share-app-resources/shared-connections.png)
 
 ## <a name="on-premises-data-gateways"></a>Lokale Datengateways
 Wenn Sie eine App erstellen und freigeben, die Daten aus einer lokalen Quelle enthält, werden das [lokale Datengateway](gateway-management.md) selbst und bestimmte Typen von Verbindungen mit diesem Gateway automatisch freigegeben. Sie können jede Verbindung, die nicht automatisch freigegeben wird, manuell freigeben (wie im vorherigen Abschnitt gezeigt) oder die Benutzer durch die App auffordern lassen, eigene Verbindungen zu erstellen. So zeigen Sie die Verbindung(en) an, mit denen ein Gateway konfiguriert wurde:
 
-1. Öffnen Sie [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie dann auf **Gateways**.
+1. Öffnen Sie [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, und klicken oder tippen Sie dann auf **Gateways**.
 2. Klicken oder tippen Sie auf ein Gateway, und klicken oder tippen Sie dann auf die Registerkarte **Verbindungen**.
 
 > [!NOTE]
@@ -61,7 +61,7 @@ Wenn Sie eine App erstellen und freigeben, die Daten aus einer lokalen Quelle en
 ## <a name="custom-connectors"></a>Benutzerdefinierte Connectors
 Wenn Sie eine App freigeben, die einen benutzerdefinierten Connector verwendet, wird sie automatisch freigegeben, die Benutzer müssen jedoch eigene Verbindungen mit der App erstellen.
 
-Auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie Berechtigungen für einen benutzerdefinierten Connector anzeigen und aktualisieren. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, klicken oder tippen Sie auf **Verbindungen**, und klicken oder tippen Sie dann auf **Neue Verbindung** (in der rechten oberen Ecke). Klicken oder tippen Sie auf **Custom** (Benutzerdefiniert), und klicken oder tippen Sie dann auf einen benutzerdefinierten Connector, um Details zu ihr anzuzeigen.
+Auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) können Sie Berechtigungen für einen benutzerdefinierten Connector anzeigen und aktualisieren. Klicken oder tippen Sie in der linken Navigationsleiste auf **Verwalten**, klicken oder tippen Sie auf **Verbindungen**, und klicken oder tippen Sie dann auf **Neue Verbindung** (in der rechten oberen Ecke). Klicken oder tippen Sie auf **Custom** (Benutzerdefiniert), und klicken oder tippen Sie dann auf einen benutzerdefinierten Connector, um Details zu ihr anzuzeigen.
 
 ## <a name="excel-workbooks"></a>Excel-Arbeitsmappen
 Wenn eine freigegebene App Daten verwendet, auf die nicht alle Benutzer Zugriff haben (z. B. eine Excel-Arbeitsmappe in einem Cloudspeicherkonto), [geben Sie die Daten frei](share-app-data.md).

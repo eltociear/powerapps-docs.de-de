@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7865b2123f0d179d5d132cca838684f0c83cfd31
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994797"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541609"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>Erste Schritte mit Canvas-App-Formeln in PowerApps
 
@@ -36,7 +35,7 @@ Dieses Thema bietet nur eine Übersicht über das Arbeiten mit Formeln. Weitere 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
+* [Registrieren Sie sich](../signup-for-powerapps.md) für PowerApps, und [melden Sie sich an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), indem Sie dieselben Anmeldeinformationen bereitstellen, die Sie bei der Registrierung angegeben haben.
 * Erfahren Sie, wie Sie [ein Steuerelement](add-configure-controls.md) in PowerApps konfigurieren.
 
 ## <a name="show-a-simple-value"></a>Anzeigen eines einfachen Werts
@@ -52,8 +51,8 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
 
     Diese Leiste besteht aus zwei Teilen:
 
-   * *Eigenschaften Liste*:  Jedes Steuerelement und jeder Bildschirm verfügt über eine [Reihe von Eigenschaften](reference-properties.md).  Verwenden Sie diese Liste, um eine bestimmte Eigenschaft auszuwählen.  
-   * *Formel*:  Die Formel, die für diese Eigenschaft berechnet werden soll, besteht aus [Werten, Operatoren und Funktionen](formula-reference.md).
+   * *Eigenschaftenliste:* Jedes Steuerelement und jeder Bildschirm verfügt über eine [Reihe von Eigenschaften](reference-properties.md).  Verwenden Sie diese Liste, um eine bestimmte Eigenschaft auszuwählen.  
+   * *Formel:* Die für diese Eigenschaft zu berechnende Formel besteht aus [Werten, Operatoren und Funktionen](formula-reference.md).
 
      In der Bearbeitungsleiste können Sie Eigenschaften des ausgewählten Steuerelements oder, wenn keine Steuerelemente ausgewählt sind, auch die des Screens anzeigen und bearbeiten.  Der Name des ausgewählten Steuerelements wird auf der Registerkarte **Content** (Inhalt) angezeigt:
 
@@ -71,11 +70,11 @@ In Excel können Sie eine bestimmte Dateneinheit eingeben, z.B. die Zahl **42** 
 
     Die Bezeichnung gibt den neuen Wert wieder, während Sie ihn eingeben.  Möglicherweise wird auf dem Screen gelbe Ausrufezeichen angezeigt, während Sie etwas eingeben. Diese Symbole weisen auf Fehler hin, verschwinden allerdings, sobald Sie einen gültigen Wert eingegeben haben. Eine Zeichenfolge, die nicht in doppelten Anführungszeichen eingeschlossen ist, ist z.B. kein gültiger Wert.
 
-    In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30; 12)** . In PowerApps erreichen Sie denselben Effekt, indem Sie die Eigenschaft **Text** eines Steuerelements, z.B. einer Bezeichnung, auf **42** oder **Sum(30; 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
+    In Excel können Sie eine Zahl wie **42** anzeigen, indem Sie sie in eine Zelle eingeben oder indem Sie eine Formel verwenden, die zu dieser Zahl auflöst, wie z.B. **=SUM(30, 12)** . In PowerApps erreichen Sie denselben Effekt, indem Sie die Eigenschaft **Text** eines Steuerelements, z.B. einer Bezeichnung, auf **42** oder **Sum(30, 12)** festlegen. Die Zelle und die Bezeichnung zeigen daraufhin immer diese Zahl an, unabhängig von jeglichen Änderungen am Arbeitsblatt oder an der App.
 
     > [!NOTE]
    > In PowerApps werden Formeln weder ein Gleichheitszeichen noch ein Pluszeichen vorangestellt, wie es z.B. in Excel gebräuchlich ist. Die Bearbeitungsleiste behandelt standardmäßig jede Eingabe wie eine Formel. Formeln werden ebenso wenig in doppelte Anführungszeichen (") gesetzt, die Sie zuvor zum Angeben einer Textzeichenfolge verwendet haben.
-5. Ersetzen Sie in der **[Text](controls/properties-core.md)** -Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1; 2; 3)** .
+5. Ersetzen Sie in der **[Text](controls/properties-core.md)** -Eigenschaft der Bezeichnung die Zeichenfolge **"Hello World"** durch **Sum(1, 2, 3)** .
 
     ![Die Eingabe der partiellen Funktion „Sum(1, 2, 3“ ohne eine schließende Klammer gibt Fehler zurück.](./media/working-with-formulas/label-sum-partial.png)
 
@@ -101,7 +100,7 @@ Unabhängig davon, welche Zahlen Sie in die Texteingabe-Steuerelemente eingeben,
 
 In Excel können Formeln für bedingte Formatierung verwendet werden, um beispielsweise negative Werte in rot anzuzeigen. In PowerApps können Sie Formeln nicht nur verwenden, um den primären Wert eines Steuerelements zu bestimmen, sondern auch, um Eigenschaften, wie z.B. das Format, zu bestimmen. Im nächsten Beispiel zeigt eine Formel für die **[Color](controls/properties-color-border.md)** -Eigenschaft der Bezeichnung automatisch negative Werte Rot an. Die **[If](functions/function-if.md)** -Funktion ist Ihnen wahrscheinlich aus Excel vertraut:
 
-`If( Value(Label1.Text) < 0; Red; Black )`
+`If( Value(Label1.Text) < 0, Red, Black )`
 
 ![Animation der bedingten Formatierung](media/working-with-variables/recalc-color.gif)
 
@@ -120,7 +119,7 @@ Sie können Ihre App mit Formeln konfigurieren, damit Benutzer die Darstellung o
     Sie können die Eigenschaft **Max** angeben, indem Sie sie in der Registerkarte **Content** oder in der Eigenschaftenliste auswählen:
 
     ![Ändern des maximalen Werts für jeden einzelnen Schieberegler](./media/working-with-formulas/three-sliders-max.png)
-4. Wählen Sie den Screen aus, indem Sie neben die Steuerelemente klicken, und legen Sie Eigenschaft **[Fill](controls/properties-color-border.md)** (Füllen) des Screens auf folgende Formel fest:<br>**RGBA( Slider1.Value; Slider2.Value; Slider3.Value; 1 )**
+4. Wählen Sie den Screen aus, indem Sie neben die Steuerelemente klicken, und legen Sie Eigenschaft **[Fill](controls/properties-color-border.md)** (Füllen) des Screens auf folgende Formel fest:<br>**RGBA( Slider1.Value, Slider2.Value, Slider3.Value, 1 )**
 
     Wie bereits beschrieben können Sie mithilfe von **.** auf die Eigenschaften von Steuerelementen zugreifen Operator  **Slider1.Value** bezieht sich auf die **[Value](controls/properties-core.md)** -Eigenschaft (Wert) des Schiebereglers, die angibt, wo der Benutzer den Schieberegler hinsichtlich den **Min**- und **Max**-Werten platziert hat. Jedes Steuerelement wird beim Eingeben sowohl auf dem Screen als auch in der Bearbeitungsleiste farblich hervorgehoben:
 

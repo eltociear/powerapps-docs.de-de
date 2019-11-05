@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ece59cff6ae75206a473ddc27f2e657201e0f436
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977172"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542851"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Konfigurieren von Notizen für Entity Forms und Web Forms in Portalen
 
 Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verwalteten Formularen im Portal ganz einfach&mdash;fügen Sie das Notizen-Steuerelement einfach über den Formular- [Designer](../model-driven-apps/create-design-forms.md) zu den App-Formularen für Modell Laufwerke hinzu, und Sie sind fertig. Sie können das Verhalten des Notes-Steuer Elements mithilfe von Metadaten konfigurieren.
 
 > [!Note]                                                           
-> Explizite [Entitäts Berechtigungen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions) sind erforderlich, damit Notizen im Portal angezeigt werden. Zum Lesen und bearbeiten müssen Lese-und Schreibberechtigungen erteilt werden. Zum erstellen müssen zwei Berechtigungen vorhanden sein: eine Berechtigung mit den Berechtigungen "Create" und "append" muss für die Note-Entität (Anmerkung) erteilt werden. die zweite Berechtigung muss dem Entitätstyp zugewiesen werden, an den der Hinweis mit der gewährten Berechtigung Anhängen angefügt wird. Das Kontrollkästchen **Entitäts Berechtigungen aktivieren** muss im entsprechenden Entitäts Formular-oder Webformular Schritt ausgewählt werden, damit die Entitäts Berechtigungen wirksam werden.
+> Explizite [Entitäts Berechtigungen](configure/assign-entity-permissions.md) sind erforderlich, damit Notizen im Portal angezeigt werden. Zum Lesen und bearbeiten müssen Lese-und Schreibberechtigungen erteilt werden. Zum erstellen müssen zwei Berechtigungen vorhanden sein: eine Berechtigung mit den Berechtigungen "Create" und "append" muss für die Note-Entität (Anmerkung) erteilt werden. die zweite Berechtigung muss dem Entitätstyp zugewiesen werden, an den der Hinweis mit der gewährten Berechtigung Anhängen angefügt wird. Das Kontrollkästchen **Entitäts Berechtigungen aktivieren** muss im entsprechenden Entitäts Formular-oder Webformular Schritt ausgewählt werden, damit die Entitäts Berechtigungen wirksam werden.
 
 ## <a name="notes-configuration-for-entity-forms"></a>Hinweise zur Konfiguration von Entitäts Formularen
 
@@ -34,7 +34,7 @@ Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verw
 7. Füllen Sie die Felder aus, indem Sie die entsprechenden Werte eingeben. [!include[](../../includes/proc-more-information.md)] [Attribute](#attributes), [Dialog Optionen erstellen](#create-dialog-options), [Dialogfeld Optionen bearbeiten](#edit-dialog-options)und [Dialogfeld Optionen löschen](#delete-dialog-options)
 8. Speichert das Formular.
 
-    Hinzufügen der merkhinmerkungen ![für Entitäts Formulare](media/add-note-configuration.png "Hinzufügen von Notizen zur Konfiguration")  
+    ![Hinweise zur Konfiguration von Entitäts Formularen hinzufügen](media/add-note-configuration.png "Hinweise zur Konfiguration von Entitäts Formularen hinzufügen")  
 
     Nachdem Sie die Konfiguration hinzugefügt haben, wird das Notiz Steuerelement mithilfe der im Portal aktivierten geeigneten Optionen gerendert.
 
@@ -62,7 +62,7 @@ Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verw
 | Fehlermeldung         | Überschreibt die Meldung, die angezeigt wird, wenn ein Fehler auftritt, wenn versucht wird, die Liste der Notizen zu laden.                                                                     |
 | Meldung "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn der Benutzer nicht über ausreichende Berechtigungen zum Anzeigen der Liste der Notizen verfügt.                                                    |
 | Leere Nachricht         | Überschreibt die Meldung, die angezeigt wird, wenn die aktuelle Entität keine Notizen hat, die angezeigt werden können.                                                              |
-| Auflisten von Aufträgen           | Ermöglicht es Ihnen, die Reihenfolge festzulegen, in der Notizen angezeigt werden. Mit der Einstellung Bestellungen auflisten können Sie Folgendes festlegen: <ul><li>Attribute: der logische Name der Spalte, nach der sortiert werden soll.</li><li>Alias: der Alias für das Attribut in der Abfrage.</li><li>Direction: aufsteigend (aufsteigend zum größten oder ersten bis letzten) oder absteigend (die größte zu kleinste oder letzte zum ersten).</li></ul> ![Attribute für Listen Bestellungen]festlegen(media/set-attributes-list-orders.png "Attribute für Listen Bestellungen festlegen") zum Hinzufügen einer Sortier Regel wählen Sie "Spalte" (4) aus, und geben Sie die Details ein. Listen Bestellungen werden von oben nach oben in der Liste mit der höchsten Priorität verarbeitet.|
+| Auflisten von Aufträgen           | Ermöglicht es Ihnen, die Reihenfolge festzulegen, in der Notizen angezeigt werden. Mit der Einstellung Bestellungen auflisten können Sie Folgendes festlegen: <ul><li>Attribute: der logische Name der Spalte, nach der sortiert werden soll.</li><li>Alias: der Alias für das Attribut in der Abfrage.</li><li>Direction: aufsteigend (aufsteigend zum größten oder ersten bis letzten) oder absteigend (die größte zu kleinste oder letzte zum ersten).</li></ul> ![Attribute für Listen Bestellungen festlegen](media/set-attributes-list-orders.png "Set-Attribute für Listen Bestellungen ") Wählen Sie zum Hinzufügen einer Sortier Regel "Spalte" (4) aus, und geben Sie die Details ein. Listen Bestellungen werden von oben nach oben in der Liste mit der höchsten Priorität verarbeitet.|
 ||
 
 
@@ -147,13 +147,13 @@ Sie müssen den Datensätzen wie folgt die entsprechende Entitäts Berechtigung 
 - Lese-, Schreib-, Erstellungs-, Anfüge-und Anfügen an Berechtigungen für die Activity-Entität **(activitypointer)** mit dem Bereich als **Global**. Diese Entitäts Berechtigung muss einer webrolle für den Benutzer zugeordnet werden.
 - Lesen, schreiben, erstellen, Anfügen und Anfügen an Berechtigungen für die Entität, für die das Notizen-Steuerelement aktiviert ist. Der Bereich sollte auf **Global**festgelegt werden. Diese Entitäts Berechtigung muss einer webrolle für den Benutzer zugeordnet werden.
 
-    ![Entitäts Berechtigungen]hinzufügen(media/entity-permission.png "Entitäts Berechtigungen hinzu") fügen
+    ![Entitäts Berechtigungen hinzufügen](media/entity-permission.png "Entitäts Berechtigungen hinzufügen")
 
-    ![Hinzufügen von Webrollen zu einer Entitäts Berechtigung](media/entity-permission-web-roles.png "Hinzufügen von Webrollen zu Entitäts")
+    ![Hinzufügen von Webrollen zu einer Entitäts Berechtigung](media/entity-permission-web-roles.png "Hinzufügen von Webrollen zu einer Entitäts Berechtigung")
 
 Wenn Sie ein benutzerdefiniertes Formular erstellt und diesem den Abschnitt Notizen hinzugefügt haben, achten Sie darauf, dass Sie **Notizen** als Standard Registerkarte auswählen, die Sie sichtbar machen möchten.
 
-![Hinweise in benutzerdefinierten Formular](media/notes-activities-tab.png "Notizen in einem benutzerdefinierten Formular")
+![Hinweise in einem benutzerdefinierten Formular](media/notes-activities-tab.png "Hinweise in einem benutzerdefinierten Formular")
 
 ## <a name="notes-configuration-for-web-forms"></a>Hinweise zur Konfiguration für Web Forms
 

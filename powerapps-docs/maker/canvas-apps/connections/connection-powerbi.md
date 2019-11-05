@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5efcc877de7a16524c57121a91488189d4058437
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987152"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540431"
 ---
 # <a name="connect-to-power-bi-from-powerapps"></a>Herstellen einer Verbindung mit Power BI aus PowerApps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
@@ -28,7 +28,7 @@ Power BI ist eine Suite von Business Analytics-Tools zum Analysieren von Daten u
 In diesem Thema wird gezeigt, wie Sie die Power BI-Verbindung in einer App verwenden, und die verfügbaren Funktionen werden aufgelistet.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-* [Registrieren](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+* [Registrieren](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 * Die Power BI-[Verbindung](https://powerapps.microsoft.com/tutorials/add-manage-connections/) hinzufügen
 * Eine App aus einer [Vorlage](https://powerapps.microsoft.com/tutorials/get-started-test-drive/), aus [Daten](https://powerapps.microsoft.com/tutorials/get-started-create-from-data/) oder [von Grund auf neu](https://powerapps.microsoft.com/tutorials/get-started-create-from-blank/) erstellen
 
@@ -44,7 +44,7 @@ Der Katalog wird mit der Liste der Warnungen aktualisiert. Für jede Warnung erh
 ### <a name="view-the-status-of-an-alert"></a>Anzeigen des Status einer Warnung
 Um den Status der Warnung anzuzeigen, rufen Sie die CheckAlertStatus-Funktion mit der Warnungs-ID auf, die Sie im obigen Schritt erhalten haben.
 
-Die Warnungs-ID kann entweder als Literalzeichenfolge (z. B. „1234“) oder als Verweis auf einen durch den Aufruf von GetAlerts() aufgefüllten Katalogabschnitt (z. B. Gallery1.Selected.alertId) übergeben werden.
+Die Warnungs-ID kann entweder als Literalzeichenfolge (z. b. "1234") oder als Verweis auf einen mit dem getalerts ()-Befehl gefüllten Katalog Abschnitt übergeben werden (z. b. Gallery1. Selected. AlertID).
 
 Um den Vorgang fortzusetzen, fügen Sie eine Bezeichnung hinzu, und legen Sie dessen [Text](../controls/properties-core.md)-Eigenschaft auf eine der folgenden Formeln fest:
 

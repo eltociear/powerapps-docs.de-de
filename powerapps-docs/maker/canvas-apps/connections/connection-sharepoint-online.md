@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71993971"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540356"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Herstellen einer Verbindung mit SharePoint über eine Canvas-App
 
@@ -40,7 +40,7 @@ Wenn Sie Daten in einer benutzerdefinierten Liste verwalten möchten, können Si
 
 ## <a name="create-a-connection"></a>Verbindung erstellen
 
-1. [Melden Sie sich bei powerapps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten**  > **Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
+1. [Melden Sie sich bei powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, wählen Sie **Daten**  > **Verbindungen** in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke **neue Verbindung** aus.
 
     > [!div class="mx-imgBorder"]
     > Wählen Sie ![Daten > Verbindungen in der linken Navigationsleiste aus, und wählen Sie dann in der oberen linken Ecke neue Verbindung aus.](./media/connection-sharepoint-online/new-connection.png)

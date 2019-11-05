@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afc0e231fbc645b0fd1c597ae2776b7b90d28c1b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f1f8e2edd92d36ce4c3a2b08b5ae9d2481c339ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993122"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540244"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Löschen einer Canvas-App aus PowerApps
 In diesem Artikel wird gezeigt, wie Sie eine Canvas-App aus Ihrem PowerApps-Konto und aus Konten von anderen Benutzern löschen, für die die App freigegeben wurde.
 
 ## <a name="delete-an-app-from-your-account"></a>Löschen einer App aus Ihrem Konto
-1. Öffnen Sie [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und wählen Sie dann im linken Struktur **Ansichts** Bereich **apps** aus.
+1. Öffnen Sie [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und wählen Sie dann im linken Struktur **Ansichts** Bereich **apps** aus.
    
     ![](./media/delete-app/file-apps.png)
 2. (optional) Filtern Sie in der oberen linken Ecke die Liste der Apps, um nur die Apps anzuzeigen, die Sie besitzen oder zu denen Sie beitragen.

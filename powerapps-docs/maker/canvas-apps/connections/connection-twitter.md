@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 476285021e6a65a32c2e16e4ff95c74be9da933a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987219"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541013"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Herstellen einer Verbindung mit Twitter aus PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -66,7 +65,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        Im Katalog-Steuerelement werden automatisch die Tweets des eingegebenen Twitter-Benutzernamens angezeigt.
 
@@ -95,7 +94,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement wird automatisch angezeigt, wer dem eingegebenen Twitter-Benutzernamen folgt.
 
@@ -124,7 +123,7 @@ Die Verbindung mit Twitter wurde erstellt und Ihrer App hinzugefügt. Sie kann j
 
        Legen Sie im Katalog-Steuerelement die Items-Eigenschaft auf die folgende Formel fest:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        Im Katalog-Steuerelement werden automatisch die anderen Benutzernamen angezeigt, denen Sie folgen.
 
@@ -161,8 +160,8 @@ Sie können ein auch Texteingabe-Steuerelement verwenden, um einen Twitter-Benut
     > [!TIP]
    > Mit „maxResults“ werden die ersten fünf Ergebnisse angezeigt:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})` fest.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Legen Sie die **Items**-Eigenschaft des Katalogs auf `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})` fest.
 
     Wenn der Katalog ausgewählt ist, werden im rechten Bereich Optionen für diesen Katalog angezeigt.
 3. Wählen Sie **TweetText** in der ersten Liste, **TweetedBy** in der zweiten Liste und **CreatedAt** in der dritten Liste aus.
@@ -193,7 +192,7 @@ Diese Verbindung umfasst die folgenden Funktionen:
 | [OnNewTweet](connection-twitter.md#onnewtweet) |Löst einen Workflow aus, wenn ein neuer Tweet gesendet wird, der mit Ihrer Suchabfrage übereinstimmt |
 
 ### <a name="usertimeline"></a>UserTimeline
-Benutzer Zeitachse anzeigen: Ruft eine Sammlung der letzten Tweets ab, die vom angegebenen Benutzer gesendet wurden
+Timeline des Benutzers abrufen: Ruft eine Sammlung der letzten Tweets ab, die vom angegebenen Benutzer gesendet wurden
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -214,7 +213,7 @@ Benutzer Zeitachse anzeigen: Ruft eine Sammlung der letzten Tweets ab, die vom a
 | MediaUrls |Array |Nein | |
 
 ### <a name="hometimeline"></a>HomeTimeline
-Start Zeitachse erhalten: Ruft die letzten Tweets und Re-Tweets von mir und meinen Followern ab
+Home-Timeline: Ruft die letzten Tweets und Re-Tweets von mir und meinen Followern ab
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -240,7 +239,7 @@ Tweet suchen: Ruft eine Sammlung von relevanten Tweets ab, die mit einer angegeb
 
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
-| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: http://www.twitter.com/search) ) |
+| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: https://www.twitter.com/search) ) |
 | maxResults |Ganze Zahl |Nein |Maximale Anzahl von abzurufenden Tweets, z.B. {maxResults:5} |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
@@ -269,7 +268,7 @@ Follower abrufen: Ruft die Benutzer ab, die dem angegebenen Benutzer folgen
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | FullName |Zeichenfolge |Ja | |
-| Location |Zeichenfolge |Ja | |
+| Ort |Zeichenfolge |Ja | |
 | Id |Ganze Zahl |Nein | |
 | UserName |Zeichenfolge |Ja | |
 | FollowersCount |Ganze Zahl |Nein | |
@@ -291,7 +290,7 @@ Meine Follower abrufen: Ruft die Benutzer ab, die mir folgen
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | FullName |Zeichenfolge |Ja | |
-| Location |Zeichenfolge |Ja | |
+| Ort |Zeichenfolge |Ja | |
 | Id |Ganze Zahl |Nein | |
 | UserName |Zeichenfolge |Ja | |
 | FollowersCount |Ganze Zahl |Nein | |
@@ -300,7 +299,7 @@ Meine Follower abrufen: Ruft die Benutzer ab, die mir folgen
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="following"></a>Following
-Holen Sie sich Folgendes: Ruft die Benutzer, denen der angegebene Benutzer folgt
+Gefolgte Benutzer abrufen: Ruft die Benutzer ab, denen der angegebene Benutzer folgt
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -314,7 +313,7 @@ Holen Sie sich Folgendes: Ruft die Benutzer, denen der angegebene Benutzer folgt
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | FullName |Zeichenfolge |Ja | |
-| Location |Zeichenfolge |Ja | |
+| Ort |Zeichenfolge |Ja | |
 | Id |Ganze Zahl |Nein | |
 | UserName |Zeichenfolge |Ja | |
 | FollowersCount |Ganze Zahl |Nein | |
@@ -323,7 +322,7 @@ Holen Sie sich Folgendes: Ruft die Benutzer, denen der angegebene Benutzer folgt
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="myfollowing"></a>MyFollowing
-Holen Sie sich Folgendes: Ruft die Benutzer ab, denen ich folge
+Meine gefolgten Benutzer: Ruft die Benutzer ab, denen ich folge
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -336,7 +335,7 @@ Holen Sie sich Folgendes: Ruft die Benutzer ab, denen ich folge
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | FullName |Zeichenfolge |Ja | |
-| Location |Zeichenfolge |Ja | |
+| Ort |Zeichenfolge |Ja | |
 | Id |Ganze Zahl |Nein | |
 | UserName |Zeichenfolge |Ja | |
 | FollowersCount |Ganze Zahl |Nein | |
@@ -344,8 +343,8 @@ Holen Sie sich Folgendes: Ruft die Benutzer ab, denen ich folge
 | StatusesCount |Ganze Zahl |Nein | |
 | FriendsCount |Ganze Zahl |Nein | |
 
-### <a name="user"></a>User
-Benutzer erhalten: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzername, Beschreibung, Anzahl der folgenden Benutzer usw.)
+### <a name="user"></a>Benutzer
+Benutzer abrufen: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzername, Beschreibung, Anzahl der Follower usw.)
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -358,7 +357,7 @@ Benutzer erhalten: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzern
 | Eigenschaftsname | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
 | FullName |Zeichenfolge |Ja | |
-| Location |Zeichenfolge |Ja | |
+| Ort |Zeichenfolge |Ja | |
 | Id |Ganze Zahl |Nein | |
 | UserName |Zeichenfolge |Ja | |
 | FollowersCount |Ganze Zahl |Nein | |
@@ -367,7 +366,7 @@ Benutzer erhalten: Ruft Details zum angegebenen Benutzer ab (Beispiel: Benutzern
 | FriendsCount |Ganze Zahl |Nein | |
 
 ### <a name="tweet"></a>Tweet
-Neuen Tweet veröffentlichen: Tweet
+Neuen Tweet senden: Tweet
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
@@ -383,13 +382,13 @@ Neuen Tweet veröffentlichen: Tweet
 | TweetId |Zeichenfolge |Ja | |
 
 ### <a name="onnewtweet"></a>OnNewTweet
-Wenn ein neuer Tweet angezeigt wird: Löst einen Workflow aus, wenn ein neuer Tweet gesendet wird, der mit Ihrer Suchabfrage übereinstimmt
+Wenn ein neuer Tweet eingeht: Löst einen Workflow aus, wenn ein neuer Tweet gesendet wird, der mit Ihrer Suchabfrage übereinstimmt
 
 #### <a name="input-properties"></a>Eingabeeigenschaften
 
 | Name | Datentyp | Erforderlich | Beschreibung |
 | --- | --- | --- | --- |
-| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: http://www.twitter.com/search) ) |
+| searchQuery |Zeichenfolge |ja |Abfragetext (Sie können alle von Twitter unterstützten Abfrageoperatoren verwenden: https://www.twitter.com/search) ) |
 
 #### <a name="output-properties"></a>Ausgabeeigenschaften
 

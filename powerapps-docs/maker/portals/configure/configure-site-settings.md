@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 339a8b221474bd9d98ed8e425f730bab1dbb1e0a
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978322"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542729"
 ---
 # <a name="configure-site-settings-for-portals"></a>Konfigurieren von Website Einstellungen für Portale
 
@@ -64,10 +64,10 @@ Sie können die folgenden Arten von Standorteinstellungen verwalten:
 |Suchen/aktivieren|Fall|Ein boolescher Wert, der angibt, ob die Suche aktiviert ist.|
 |suchen/filtern|Inhalt: adx_webpage; Ereignisse: adx_event, adx_eventschedule;<br>Blogs: adx_blog, adx_blogpost, adx_blogpostcomment;<br>Foren: adx_communityforum, adx_communityforumthread, adx_communityforumpost;<br>Ideen: adx_ideaforum, adx_idea, adx_ideacomment;<br>Probleme: adx_issueforum, adx_issue, adx_issuecomment; Helpdesk: Incident|Eine Auflistung von Filteroptionen für den logischen Such Namen. Wenn Sie hier einen Wert definieren, werden der Site weiten Suche Dropdown Filteroptionen hinzugefügt. Dieser Wert sollte in Form von Name-Wert-Paaren vorliegen, wobei Name und Wert durch einen Doppelpunkt getrennt sind, und Paare, die durch ein Semikolon voneinander getrennt sind.<br>Beispiel: "Foren: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Blogs: adx_blog, adx_blogpost, adx_blogpostcomment ".|
 |Search/indexqueryname|Portal Suche|Der Name der von der Portal Suchabfrage verwendeten Systemansicht. Standard: Portal Suche|
-|Suchen/Abfragen|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0,1-_logicalname: adx_communityforumthread ~ 0.9|Überschreiben Sie die Abfrage für die Suche nach Websites, um zusätzliche Gewichtungen und Filter anzuwenden. @Query ist der von einem Benutzer eingegebene Abfragetext. Lucene-Abfrage Syntax Referenz: [http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
+|Suchen/Abfragen|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0,1-_logicalname: adx_communityforumthread ~ 0.9|Überschreiben Sie die Abfrage für die Suche nach Websites, um zusätzliche Gewichtungen und Filter anzuwenden. @Query ist der von einem Benutzer eingegebene Abfragetext. Lucene-Abfrage Syntax Referenz: [https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
 |Suchen/Wort Stamm Erkennung|Englisch|Die Sprache, die vom Wort Stamm Algorithmus der Portal Suche verwendet wird. Standard: Englisch|
 |Customersupport/displayalluseractivitiesontimeline|Alarm| |
-|Authentication/[Protokoll]/[Anbieter]/AllowContactMappingWithEmail| |Ermöglicht die automatische Zuordnung zu einem Kontaktdaten Satz basierend auf der e-Mail. Klicken Sie [hier](https://docs.microsoft.com/en-us/dynamics365/portals/azure-ad-b2c#allow-auto-association-to-a-contact-record-based-on-email), um weitere Informationen zu erhalten.|
+|Authentication/[Protokoll]/[Anbieter]/AllowContactMappingWithEmail| |Ermöglicht die automatische Zuordnung zu einem Kontaktdaten Satz basierend auf der e-Mail. Klicken Sie [hier](azure-ad-b2c.md#allow-auto-association-to-a-contact-record-based-on-email), um weitere Informationen zu erhalten.|
 |||
 
 Website Einstellungen für verschiedene Portal Features finden Sie unter:
@@ -79,10 +79,9 @@ Website Einstellungen für verschiedene Portal Features finden Sie unter:
 - [WS-Verbund](configure-ws-federation-settings.md)
 - [SAML 2,0](configure-saml2-settings.md)
 - [Identitäts Anbieter zu Azure AD B2C migrieren](migrate-identity-providers.md)
-- [In Datei Anlagen Inhalt suchen](https://docs.microsoft.com/dynamics365/customer-engagement/portals/search-file-attachment)
-- [Verhalten und Format des Felds "Datum und Uhrzeit"](https://docs.microsoft.com/dynamics365/customer-engagement/portals/behavior-format-date-time-field)
-- [Geolozierung hinzufügen](https://docs.microsoft.com/dynamics365/customer-engagement/portals/add-geolocation)
-- [Felddienst integrieren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/integrate-field-service)
+- [In Datei Anlagen Inhalt suchen](search-file-attachment.md)
+- [Verhalten und Format des Felds "Datum und Uhrzeit"](behavior-format-date-time-field.md)
+- [Geolozierung hinzufügen](add-geolocation.md)
 - [Implementieren allgemeiner Datenschutzbestimmungen](https://docs.microsoft.com/dynamics365/customer-engagement/portals/implement-gdpr)
 - [Zwischenspeichern von Kopf-und Fußzeilen Ausgabe aktivieren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/enable-header-footer-output-caching)
 

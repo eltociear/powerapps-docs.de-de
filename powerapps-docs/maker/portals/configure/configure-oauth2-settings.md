@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 25a26e6298fa3257f3db6d04ffd2937e8e71d3a1
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978529"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542822"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>Konfigurieren von OAuth2-Anbieter Einstellungen für Portale
 
@@ -31,7 +31,7 @@ Folgende Anbieter werden unterstützt:
 
 ## <a name="create-oauth-applications"></a>Erstellen von OAuth-Anwendungen
 
-Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-Wert erfordern, geben Sie in der Regel <http://portal.contoso.com/or> http://portal.contoso.com/signin-\ [Anbieter\], abhängig davon, wie der Anbieter die Umleitung des Umleitungs-URIs ausführt (bei manchen Anbietern muss der vollständige URL-Pfad zusammen mit der Domänen Name). Ersetzen Sie anstelle des \[Anbieters\] im Umleitungs-URI den Namen des Anbieters.
+Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-Wert erfordern, geben Sie in der Regel <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [Anbieter\], abhängig davon, wie der Anbieter die Umleitung des Umleitungs-URIs ausführt (bei manchen Anbietern muss der vollständige URL-Pfad zusammen mit der Domänen Name). Ersetzen Sie anstelle des \[Anbieters\] im Umleitungs-URI den Namen des Anbieters.
 
 ### <a name="google"></a>Google
 
@@ -46,8 +46,8 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
     - Wählen Sie**Speichern**aus.
 5. Wechseln Sie zu**APIs &** Authentifizierung &gt;**Anmelde** Informationen, und erstellen Sie eine neue Client-ID.
    - Anwendungstyp:**Webanwendung**
-   - Autorisierte [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] Ursprünge: http://portal.contoso.com
-   - Autorisierte Umleitungs-URIs: http://portal.contoso.com/signin-google 
+   - Autorisierte [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] Ursprünge: https://portal.contoso.com
+   - Autorisierte Umleitungs-URIs: https://portal.contoso.com/signin-google 
    - Wählen Sie **Client-ID erstellen**aus.
 
 ### <a name="facebook-app-settings"></a>Facebook-App-Einstellungen
@@ -64,7 +64,7 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
     - App-Domänen (optional): Portal.contoso.com 
     - Kontakt-e-Mail: *&lt;e-Mail-Adresse Ihrer Wahl&gt;* 
     - Klicken Sie auf **Plattform hinzufügen**, und wählen Sie dann **Website**aus. 
-    - Website-URL: http://portal.contoso.com/ oder http://portal.contoso.com/signin-facebook
+    - Website-URL: https://portal.contoso.com/ oder https://portal.contoso.com/signin-facebook
 
 6. Wählen Sie **Änderungen speichern**aus.
 7. Wechseln Sie zu **Status &** Registerkarte &gt; **Status** .
@@ -75,7 +75,7 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
 1. [Entwickler Center für[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]-Konto](https://account.live.com/developers/applications/index) öffnen  
 2. Wählen Sie **Anwendung erstellen** aus, und geben Sie einen **Anwendungsnamen**an.
 3. Wählen Sie **akzeptieren** aus, um die Nutzungsbedingungen zu akzeptieren.
-4. Wechseln Sie zu **Einstellungen** &gt;**API-Einstellungen**, und legen Sie dann die Umleitungs-URL als http://portal.contoso.com/signin-microsoft 
+4. Wechseln Sie zu **Einstellungen** &gt;**API-Einstellungen**, und legen Sie dann die Umleitungs-URL als https://portal.contoso.com/signin-microsoft 
 
 ### <a name="twitter-apps-settings"></a>Twitter-App-Einstellungen
 
@@ -83,8 +83,8 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
 2. Wählen Sie **neue APP erstellen**aus.
 
     - Geben Sie einen **Namen** und eine **Beschreibung** für Ihre APP an.
-    - Legen Sie die Website-URL als http://portal.contoso.com fest.
-    - Legen Sie die Rückruf-URL als http://portal.contoso.com oder http://portal.contoso.com/signin-twitter fest.
+    - Legen Sie die Website-URL als https://portal.contoso.com fest.
+    - Legen Sie die Rückruf-URL als https://portal.contoso.com oder https://portal.contoso.com/signin-twitter fest.
 
 3. Wählen Sie **Ihre Twitter-Anwendung erstellen**aus.
 
@@ -94,9 +94,9 @@ Wenn ein OAuth-Anbieter App-Einstellungen verwendet, die einen Umleitungs-URI-We
 2. Wählen Sie **neue Anwendung hinzufügen**aus.
 
     - Geben Sie einen **Anwendungsnamen**, eine **Beschreibung**usw. an.
-    - Legen Sie Website-URL als http://portal.contoso.com fest.
+    - Legen Sie Website-URL als https://portal.contoso.com fest.
     - OAuth-Benutzervereinbarung/Standardbereich festlegen: r\_basicprofie und r\_EmailAddress
-    - OAuth 2,0-Umleitungs-URL festlegen: http://portal.contoso.com/signin-linkedin.
+    - OAuth 2,0-Umleitungs-URL festlegen: https://portal.contoso.com/signin-linkedin.
 
 3. Wählen Sie **Anwendung hinzufügen**aus.
 

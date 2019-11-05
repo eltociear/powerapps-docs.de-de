@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a104638ad365ae58a1c3b8c5fbd0c7fef5b2b792
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8b352cb4a30c090d01b2ec1b34fa8ba119265204
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990173"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541266"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Was sind Canvas-Apps in PowerApps?
 Entwerfen und erstellen Sie eine branchenspezifische Canvas-App in Microsoft PowerApps, ohne Code in einer traditionellen Programmiersprache wie C# schreiben zu müssen. Entwerfen Sie die App, indem Sie Elemente auf eine Canvas ziehen und dort platzieren wie beim Erstellen einer Folie in PowerPoint. Erstellen Sie Ausdrücke wie in Excel zum Angeben von Logik und für die Arbeit mit Daten. Erstellen Sie Apps, die Geschäftsdaten aus einer [großen Auswahl an Microsoft- und Drittanbieterquellen](connections-list.md) integrieren. Teilen Sie Ihre App, sodass Benutzer sie in einem Browser oder auf einem mobilen Gerät ausführen können, und betten Sie sie ein, damit Benutzer sie in SharePoint, Power BI oder Teams ausführen können.
@@ -33,7 +33,7 @@ Generieren Sie zunächst automatisch eine App aus einer der folgenden Quellen (u
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-[Melden Sie sich in PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie auf **Mit Daten beginnen**, oder wählen Sie eine Beispiel-App wie **Service Desk** oder **Budget Tracker** aus.
+[Melden Sie sich in PowerApps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie auf **Mit Daten beginnen**, oder wählen Sie eine Beispiel-App wie **Service Desk** oder **Budget Tracker** aus.
 
 ![PowerApps-Site](./media/getting-started/create-page-samples.png)
 
@@ -58,5 +58,5 @@ Führen Sie Ihre eigenen Apps – und alle Apps, die für Sie freigegeben wurden
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Für eine kostenlose Lizenz registrieren](../signup-for-powerapps.md)
-- [Bei PowerApps anmelden](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [Bei PowerApps anmelden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [Eine Beispiel-App öffnen](open-and-run-a-sample-app.md)

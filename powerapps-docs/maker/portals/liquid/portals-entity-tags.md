@@ -1,54 +1,59 @@
 ---
-title: Verwenden von PowerApps Common Data Service Entity-Tags für ein Portal | MicrosoftDocs
-description: Erfahren Sie mehr über die im Portal verfügbaren PowerApps Common Data Service Entity-Tags.
+title: Verwenden von powerapps-Common Data Service Entitäts Tags für ein Portal | MicrosoftDocs
+description: Erfahren Sie mehr über powerapps Common Data Service im Portal verfügbaren Entitäts Tags.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: b6efc3e176602d366315b9b54b66593005051e55
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543264"
 ---
+# <a name="powerapps-common-data-service-entity-tags"></a>Powerapps-Common Data Service Entitäts Tags
 
-# <a name="powerapps-common-data-service-entity-tags"></a>PowerApps Common Data Service Entity-Tags
+Powerapps-Entitätstag werden zum Laden und Anzeigen von powerapps-Daten oder zum Verwenden anderer powerapps-Portale-Framework-Dienste verwendet. Diese Tags sind powerapps-spezifische Erweiterungen der Liquid-Sprache.
 
-PowerApps Entity-Tags werden zum Laden und Anzeigen von PowerApps-Daten oder zur Nutzung anderer PowerApps Portale verwendet. Diese Tags sind PowerApps-spezifische Erweiterungen der Liquid-Sprache.
+## <a name="chart"></a>Fluss
 
-## <a name="chart"></a>Diagramm
-
-Hinzufügen eines PowerApps-Diagramms zu einer Webseite Sie können das Diagramm im Feld Kopie auf einer Webseite oder im Feld Quelle auf einer Webvorlage hinzufügen. Schritte zum Hinzufügen eines PowerApps-Diagramms zu einer Webseite finden Sie unter [Diagramm zu einer Webseite in Portal](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/add-chart) hinzufügen.
+Fügt einer Webseite ein powerapps-Diagramm hinzu. Das diagrammtag kann im Feld "Kopieren" auf einer Webseite oder im Quellfeld einer Webvorlage hinzugefügt werden. Schritte zum Hinzufügen eines powerapps-Diagramms zu einer Webseite finden Sie unter [Hinzufügen eines Diagramms zu einer Webseite im Portal](../configure/add-chart.md).
 
 ```
 {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
 ```
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-Es gibt zwei Parameter, die mit dem Diagrammtag bereitgestellt werden müssen: Diagramm-ID und viewid.
+Es gibt zwei Parameter, die mit dem diagrammtag bereitgestellt werden können: Diagramm-ID und viewId.
 
 **Diagramm-ID**
 
-Visualisierungs-ID des Diagramms. Sie können dieses abrufen, indem Sie das Diagramm exportieren.
+Die Visualisierungs-ID des Diagramms. Dies können Sie erreichen, indem Sie das Diagramm exportieren.
 
-**viewid**
+**viewId**
 
-ID der Entität, wenn sie im Ansichts-Editor geöffnet wird. 
+ID der Entität, wenn Sie im Ansichts-Editor geöffnet ist. 
 
-## <a name="powerbi"></a>PowerBI
+## <a name="powerbi"></a>powerbi
 
-Fügt die Power BI-Dashboards und Berichte innerhalb von Seiten hinzu. Der Tag kann im Feld **Copy** auf einer Webseite oder im Feld **Source** auf einer Webvorlage hinzugefügt werden. Weitere Informationen zum Hinzufügen eines Power BI-Berichts oder Dashboards zu einer Webseite im Portal finden Sie unter [Hinzufügen eines Power BI-Berichts oder Dashboards zu einer Webseite im Portal](../admin/add-powerbi-report.md).
+Fügt die Power BI Dashboards und Berichte innerhalb von Seiten hinzu. Das-Tag kann im Feld " **Kopieren** " auf einer Webseite oder im **Quellfeld** einer Webvorlage hinzugefügt werden. Schritte zum Hinzufügen eines Power BI Berichts oder eines Dashboards zu einer Webseite im Portal finden [Sie unter Hinzufügen eines Power BI Berichts oder Dashboards zu einer Webseite im Portal](../admin/add-powerbi-report.md).
 
 > [!NOTE]
-> Damit das Tag funktioniert, [aktivieren Sie die Power BI-Integration](../admin/set-up-power-bi-integration.md) aus dem Portal Administrationscenter. Wenn die Power BI-Integration nicht aktiviert ist, wird das Dashboard oder der Bericht nicht angezeigt.
+> Damit das-Tag funktioniert, müssen Sie [Power BI Integration](../admin/set-up-power-bi-integration.md) über das powerapps-Portal Admin Center aktivieren. Wenn die Power BI Integration nicht aktiviert ist, werden Dashboard oder Bericht nicht angezeigt.
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
 Das powerbi-Tag akzeptiert die folgenden Parameter:
 
-**path**
+**ADS**
 
-Pfad des Power BI-Berichts oder des Dashboards. Wenn der Power BI-Bericht oder Dashboard sicher ist, müssen Sie den Authentifizierungstyp angeben.
+Der Pfad des Power BI Berichts oder Dashboards. Wenn der Power BI Bericht oder das Dashboard sicher ist, müssen Sie den Authentifizierungstyp angeben.
 
 ```
 {% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
@@ -56,50 +61,50 @@ Pfad des Power BI-Berichts oder des Dashboards. Wenn der Power BI-Bericht oder D
 
 **authentication_type**
 
-Typ der Authentifizierung, die für den Power BI-Bericht oder Dashboard erforderlich ist. Gültige Werte für diesen Parameter sind:
+Der für den Power BI Bericht oder das Dashboard erforderliche Authentifizierungstyp. Gültige Werte für diesen Parameter sind:
 
-- **Anonym**: Ermöglicht Ihnen einzubetten und zu Web-Power BI-Berichten zu veröffentlichen. Der Standardauthentifizierungstyp ist "Anonym".
+- **Anonym**: Hiermit können Sie veröffentlichen in Web-Power BI-Berichte einbetten. Der Standard Authentifizierungstyp ist anonym.
 
-- **AAD**: Ermöglicht Ihnen, sichere Power BI-Berichte oder Dashboards für authentifizierte Power BI Azure Active Directory-Benutzer freizugeben.
+- **Aad**: Hiermit können Sie sichere Power BI Berichte oder Dashboards freigeben, um Azure Active Directory authentifizierten Benutzern Power BI.
 
-- **powerbiembedded**: Ermöglicht Ihnen, sichere Power BI-Berichte oder Dashboards externen Benutzern freizugeben, die keine Power BI-Lizenz oder authentifiziertes Azure Active Directory-Setup haben. Informationen zum Power BI Embedded-Dienstsetup finden Sie unter [Aktivieren von Power BI Embedded-Dienst](../admin/set-up-power-bi-integration.md#enable-power-bi-embedded-service). 
+- **powerbiembedded**: ermöglicht Ihnen das Freigeben der sicheren Power BI-Berichte oder-Dashboards für externe Benutzer, die nicht über Power BI Lizenz oder Azure Active Directory-Authentifizierungs Einrichtung verfügen. Weitere Informationen zum Einrichten des Power BI Embedded Dienstanbieter finden Sie unter [aktivieren Power BI Embedded Dienstanbieter](../admin/set-up-power-bi-integration.md#enable-power-bi-embedded-service). 
 
-Wenn Sie den sicheren Power BI-Bericht oder das Dashboard hinzufügen, stellen Sie sicher, dass er mit den Diensten von Dynamics 365 Portale Azure Active Directory oder Power BI Embedded geteilt wird. 
+Stellen Sie beim Hinzufügen des Berichts oder Dashboards Secure Power BI sicher, dass es für Portal Azure Active Directory oder Power BI Embedded Dienste freigegeben ist. 
 
 > [!NOTE]
-> Bei Werten für den `authentication_type`-Parameter wird die Groß-/Kleinschreibung nicht beachtet.
+> Bei den Werten für den `authentication_type`-Parameter wird die Groß-/Kleinschreibung
 
 ```
 {% powerbi authentication_type:"AAD" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
-Sie können den Bericht für eine oder mehrere Werte auch filtern. Die Syntax, um einen Bericht zu filtern ist:
+Sie können den Bericht auch nach einem oder mehreren Werten filtern. Die Syntax zum Filtern eines Berichts lautet wie folgt:
 
-URL?filter=**Tabelle**/**Feld** eq '**Wert**'
+URL? Filter =**Table**/**Field** EQ '**value**'
 
-Wenn Sie beispielsweise den Bericht filtern möchten, sehen Sie die Daten für den Kontakt Bert Hair. Die müssen die URL mit den folgenden Schritte ausführen:
+Angenommen, Sie möchten den Bericht filtern, um Daten für einen Kontakt mit dem Namen "Bert Hair" anzuzeigen. Sie müssen die URL mit folgendem anfügen:
 
-?filter=Executives/Executive eq 'Bert Hair'
+? Filter = Führungskräfte/Executive EQ ' Bert Hair '
 
-Der vollständige Code ist:
+Der gesamte Code lautet wie folgt:
 
 ```
 {% powerbi authentication_type:"AAD" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01?filter=Executives/Executive eq 'Bert Hair'" %}
 ```
 
-Weitere Informationen zum Filtern von Berichten: [Filtern eines Berichts mithilfe der Abfragezeichenfolgenparameter in der URL](https://docs.microsoft.com/en-us/power-bi/service-url-filters)
+Weitere Informationen zum Filtern eines Berichts: [Filtern eines Berichts mithilfe von Abfrage Zeichenfolgen-Parametern in der URL](https://docs.microsoft.com/power-bi/service-url-filters)
 
 > [!NOTE]
-> Die Filterung Anonymer Bericht wird nicht unterstützt. 
+> Der anonyme Bericht unterstützt das Filtern nicht. 
 
-Sie können auch einen Pfad erstellen, indem Sie die `capture `-Variable verwenden:
+Sie können auch einen dynamischen Pfad erstellen, indem Sie die Variable `capture ` Liquid wie folgt verwenden:
 
 ```
 {% capture pbi_path %}https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01?filter=Executives/Executive eq '{{user.id}}'{% endcapture %}
 {% powerbi authentication_type:"AAD" path:pbi_path %}
 ```
 
-Weitere Informationen zu flüssigen Variablen [Variable Tags](variable-tags.md)
+Weitere Informationen zur Liquid-Variablen: [Variablen Tags](variable-tags.md)
 
 **tileid**
 
@@ -111,30 +116,30 @@ Zeigt die angegebene Kachel des Dashboards an. Sie müssen die ID der Kachel ang
 
 **Rollen**
 
-Dem Power BI-Bericht zugewiesene Rollen. Dieser Parameter funktioniert nur, wenn der Parameter **authentication_type** auf **powerbiembedded** festgelegt ist.
+Rollen, die dem Power BI Bericht zugewiesen sind. Dieser Parameter funktioniert nur, wenn der **authentication_type** -Parameter auf **powerbiembedded**festgelegt ist.
 
-Wenn Sie Rollen in Power BI definiert haben und sie Berichten zugewiesen haben, müssen Sie die entsprechenden Rollen im Liquid-Tag **powerbi** angeben. Rollen ermöglichen es Ihnen, die Daten zu filtern, die in einem Bericht angezeigt werden sollen. Sie können mehreren Rollen angeben, die durch ein Komma voneinander getrennt sind. Weitere Informationen zum Definieren von Rollen in Power BI finden Sie unter [Sicherheit auf Zeilenebene (RLS) mit Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-rls).
+Wenn Sie in Power BI Rollen definiert und diesen Berichten zugewiesen haben, müssen Sie die entsprechenden Rollen im **powerbi** Liquid-Tag angeben. Mit Rollen können Sie die Daten filtern, die in einem Bericht angezeigt werden sollen. Sie können mehrere Rollen durch Kommas getrennt angeben. Weitere Informationen zum Definieren von Rollen in Power BI finden Sie unter [Sicherheit auf Zeilenebene (Row-Level Security, RLS) mit Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
 
 ```
 {% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000000/ReportSection2" roles:"Region_East,Region_West" %}
 ```
 
-Wenn Sie einem Power BI-Bericht keine Rolle zugewiesen haben und den Parameter **Rollen** nicht im Liquid-Tag angegeben haben oder keine Rolle im Parameter angegeben haben, wird ein Fehler angezeigt.
+Wenn Sie einem Power BI Bericht eine Rolle zugewiesen haben und den **Rollen** Parameter nicht im Liquid-Tag angegeben haben oder keine Rolle im Parameter angegeben haben, wird ein Fehler angezeigt.
 
 > [!TIP]
-> Wenn Sie die Webrollen verwenden möchten, die in Ihrem Portal als Power BI-Rollen definiert sind, können Sie eine Variable definieren und ihr Webrollen zuweisen. Sie können dann die definierte Variable im Liquid-Tag verwenden.
+> Wenn Sie die im Portal definierten Webrollen als Power BI Rollen verwenden möchten, können Sie eine Variable definieren und Ihr Webrollen zuweisen. Sie können dann die definierte Variable im Liquid-Tag verwenden.
 >
-> Nehmen wir einmal an, Sie haben zwei Webrollen als Region_Ost und Region_West in Ihrem Portal definiert. Sie können diese mithilfe des Codes verknüpfen: `{% assign webroles = user.roles | join: ", " %}`
+> Nehmen wir an, Sie haben zwei Webrollen als Region_East und Region_West in Ihrem Portal definiert. Sie können Sie mit dem folgenden Code verknüpfen: `{% assign webroles = user.roles | join: ", " %}`
 >
-> Im obigen Codeausschnitt ist `webroles` eine Variable ist und die Webrollen Region_Ost und Region_West werden darin gespeichert.
+> Im obigen Code Ausschnitt ist `webroles` eine Variable, und die Region_East-und Region_West-Webrollen werden darin gespeichert.
 >
-> Verwenden Sie die Variable `webroles` folgendermaßen im Liquid-Tag:
+> Verwenden Sie die `webroles` Variable wie folgt im Liquid-Tag:
 >
 > `{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000000/ReportSection2" roles:webroles%}`
 
-## <a name="editable"></a>editable
+## <a name="editable"></a>bearbeitet
 
-Rendert ein bestimmtes PowerApps Portale CMS-Objekt als im Portal editierbar für Benutzer mit Berechtigung zur Inhaltsbearbeitung für dieses Objekt. Bearbeitbare Objekte umfassen [Seite](liquid-objects.md#page), [Ausschnitte](liquid-objects.md#snippets) und [Weblinks](liquid-objects.md#weblinks).  
+Rendert ein angegebenes powerapps-Portale-CMS-Objekt als bearbeitbar im Portal für Benutzer mit Inhalts Bearbeitungs Berechtigung für dieses Objekt. Bearbeitbare Objekte sind z. b. [Seiten](liquid-objects.md#page)-, Code [Ausschnitte](liquid-objects.md#snippets)und [Weblinks](liquid-objects.md#weblinks).  
 
 ```
 {% editable page 'adx_copy' type: 'html', title: 'Page Copy', escape: false, liquid: true %}
@@ -168,45 +173,45 @@ certain classes on the containing element, as demonstrated here.
 {% endif %}
 ```
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-Der erste Parameter für „editable” ist das bearbeitbare Objekt. Beispielsweise kann dies ein Weblinksatz, Ausschnitte oder die aktuelle Seite sein. Der zweite optionale Parameter ist zur Angabe eines Attributnamens oder Schlüssels innerhalb dieses Objekts, das gerendert und bearbeitet werden soll. Dies kann z. B. der Name eines Entitätsattributs oder ein Ausschnittsname sein.
+Der erste für bearbeitet bereitgestellte Parameter ist das bearbeitbare Objekt. Dies kann z. b. eine weblinkmenge, Code Ausschnitte oder die aktuelle Seite sein. Der optionale zweite Parameter besteht darin, einen Attributnamen oder-Schlüssel in diesem Objekt anzugeben, der gerendert und bearbeitet werden soll. Dies kann z. b. der Name eines Entitäts Attributs oder ein Ausschnitt Name sein.
 
-Nach diesen ersten Parametern unterstützt der Tag einige optionale benannte Parameter.
+Nach diesen anfänglichen Parametern unterstützt das-Tag eine Reihe optionaler benannter Parameter.
 
-**class**
+**klassi**
 
-Gibt einen „class”-Attributwert für ein Stammelement an, das von diesem Tag gerendert wird.
+Gibt einen Klassen Attribut Wert für das Stamm Element an, das von diesem Tag gerendert wird.
 
-**default**
+**vorgegebene**
 
-Ein Standardwert, der gerendert werden soll für den Fall, dass das bearbeitbare Element keinen Wert enthält.
+Ein Standardwert, der gerendert werden soll, wenn das bearbeitbare Element keinen Wert besitzt.
 
-**escape**
+**Weg**
 
-Ein Boolescher Wert, der angibt, ob ein Wert, der von diesem Tag gerendert wird, HTML-codiert ist. Dies ist standardmäßig „false”.
+Ein boolescher Wert, der angibt, ob ein von diesem Tag gerenderter Wert HTML-codiert wird. Der Standardwert ist false.
 
-**liquid**
+**flüssi**
 
-Ein Boolescher Wert, der angibt, ob ein Liquid-Vorlagencode, der im Textwert gefunden und von diesem Tag gerendert wird, verarbeitet wird. Dies ist standardmäßig „true”.
+Ein boolescher Wert, der angibt, ob ein beliebiger Liquid-Vorlagen Code, der in dem von diesem Tag dargestellten Textwert gefunden wird, verarbeitet wird. Dies ist standardmäßig der Fall.
 
-**tag**
+**Tag**
 
-Der Name der Container-HTML-Tags, die von diese Tag gerendert werden. Dieses Tag rendert standardmäßig „div”-Elemente. Es wird allgemein empfohlen, dass Sie zwischen „div” oder „span” als Wert für diesen Parameter auswählen.
+Der Name der Container-HTML-Tags, die von diesem Tag gerendert werden. Dieses Tag wird DIV-Elemente standardmäßig Rendering. Im Allgemeinen wird empfohlen, zwischen div oder span als Wert für diesen Parameter auszuwählen.
 
-**title**
+**Tel**
 
-Gibt eine Beschriftung für dieses bearbeitbare Element innerhalb der Inhaltsbearbeitungsschnittstelle an. Wenn "Keine" angegeben ist, wird automatisch eine Anzeigebeschriftung generiert.
+Gibt eine Bezeichnung für dieses bearbeitbare Element innerhalb der Inhalts Bearbeitungs Schnittstelle an. Wenn kein Wert angegeben wird, wird automatisch eine benutzerfreundliche Bezeichnung generiert.
 
-**type**
+**Sorte**
 
-Ein Zeichenfolgenwert, der den Typ der darzustellenden Bearbeitungsschnittstelle für bearbeitbare Textwerte angibt. Gültige Werte für diesen Parameter sind „html” oder „text”. „html” ist der Standard.
+Ein Zeichen folgen Wert, der den Typ der Bearbeitungs Schnittstelle angibt, der für bearbeitbare Textwerte angezeigt werden soll. Gültige Werte für diesen Parameter sind HTML oder Text. HTML ist die Standardeinstellung.
 
-## <a name="entitylist"></a>entitylist
+## <a name="entitylist"></a>entityList
 
-Lädt eine bestimmte Liste mit Entitäten, nach Name oder ID. Auf die Eigenschaften der Entitätsliste kann dann mithilfe einer [entitylist](liquid-objects.md#entitylist) zugegriffen werden, die innerhalb des Tagblocks verfügbar ist. Zum Rendern der tatsächlichen Ergebnisdatensätze der Entitätsliste verwenden Sie den Tag [entityview](#entityview) im Block.  
+Lädt eine angegebene Entitäts Liste anhand des Namens oder der ID. Auf die Eigenschaften der Entitäts Liste kann dann mithilfe eines [entityList-Objekts](liquid-objects.md#entitylist) zugegriffen werden, das im tagblock verfügbar ist. Um die tatsächlichen Ergebnisdaten Sätze der Entitäts Liste zu erzeugen, verwenden Sie das [entityview](#entityview) -Tag innerhalb des-Blocks.  
 
-Wenn die Liste mit Entitäten erfolgreich geladen wird, wird der Inhalt im Block gerendert. Wenn die Liste mit Entitäten nicht gefunden wird, wird der Inhalt im Block nicht gerendert.
+Wenn die Entitäts Liste erfolgreich geladen wird, wird der Inhalt innerhalb des Blocks gerendert. Wenn die Entitäts Liste nicht gefunden wird, wird der Block Inhalt nicht gerendert.
 
 ```
 {% entitylist name:My Entity List %}
@@ -215,7 +220,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 {% endentitylist %}
 ```
-Standardmäßig erhält das „entitylist”-Objekt den Variablennamen „entitylist”. Optional kann ein anderer Variablenname angegeben werden.
+Standardmäßig erhält das entityList-Objekt den Variablennamen "entityList". Optional kann ein anderer Variablenname angegeben werden.
 
 ```
 {% entitylist my_list = name:My Entity List %}
@@ -225,13 +230,13 @@ Loaded entity list {{ my_list.adx_name }}.
 {% endentitylist %}
 ```
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-Geben Sie **nur eins** von „id”, „name” oder „key” an, um die zu ladende Entitätsliste auszuwählen.
+Geben Sie **nur eine** ID, einen Namen oder einen Schlüssel an, um die zu ladende Entitäts Liste auszuwählen.
 
-**id**
+**Name**
 
-Lädt eine Entitätsliste nach [GUID-ID](http://en.wikipedia.org/wiki/Globally_unique_identifier). „id” muss eine Zeichenfolge sein, die als GUID analysiert werden kann.  
+Lädt eine Entitäts Liste nach [GUID](https://en.wikipedia.org/wiki/Globally_unique_identifier) -ID. die ID muss eine Zeichenfolge sein, die als GUID analysiert werden kann.  
 
 ```
 {% entitylist id:936DA01F-9ABD-4d9d-80C7-02AF85C822A8 %}
@@ -241,7 +246,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 {% endentitylist %}
 ```
 
-Im Allgemeinen werden literale GUID-Zeichenfolgen nicht verwendet. Stattdessen wird „id” mit einer GUID-Eigenschaft einer anderen Variable angegeben.
+Im Allgemeinen werden literalguid-Zeichen folgen nicht verwendet. Stattdessen wird die ID mithilfe einer GUID-Eigenschaft einer anderen Variablen angegeben.
 
 ```
 {% entitylist id:page.adx_entitylist.id %}
@@ -251,9 +256,9 @@ Loaded entity list {{ entitylist.adx_name }}.
 {% endentitylist %}
 ```
 
-**name**
+**Benennen**
 
-Lädt eine Entitätsliste nach Namen.
+Lädt eine Entitäts Liste anhand des Namens.
 
 ```
 {% entitylist name:My Entity List %}
@@ -263,9 +268,9 @@ Loaded entity list {{ entitylist.adx_name }}.
 {% endentitylist %}
 ```
 
-**key**
+**wichtigen**
 
-Lädt eine Entitätsliste nach ID **oder** Namen. Wenn der bereitgestellte Schlüsselwert als eine [GUID](http://en.wikipedia.org/wiki/Globally_unique_identifier) analysiert werden kann, wird die Entitätsliste von der ID geladen. Andernfalls wird sie nach Namen geladen.
+Lädt eine Entitäts Liste nach ID **oder** Name. Wenn der angegebene Schlüsselwert als [GUID](https://en.wikipedia.org/wiki/Globally_unique_identifier)analysiert werden kann, wird die Entitäts Liste nach ID geladen. Andernfalls wird Sie nach dem Namen geladen.
 
 ```
 <!-- key_variable can hold an ID or name -->
@@ -277,9 +282,9 @@ Loaded entity list {{ entitylist.adx_name }}.
 {% endentitylist %}
 ```
 
-**language\_code**
+**sprach\_Code**
 
-Ein ganzzahliger PowerApps-Sprachcode, um die lokalisierten Bezeichnungen der Entitätsliste, die geladen werden sollen, auszuwählen. Ohne Angabe von language\_code wird die Standardsprache der PowerApps-Verbindung der Portal-Anwendung verwendet.
+Ein ganzzahliger powerapps-Sprachcode zum Auswählen der zu ladenden lokalisierten Bezeichnungen für die Entitäts Liste. Wenn keine sprach\_Code bereitgestellt wird, wird die Standardsprache der powerapps-Verbindung der Portal Anwendung verwendet.
 
 ```
 {% entitylist name:"My Entity List", language_code:1033 %}
@@ -291,9 +296,9 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 ## <a name="entityview"></a>entityview
 
-Lädt eine bestimmte PowerApps-Ansicht, nach Name oder ID. Auf die Eigenschaften der Ansicht ߝ Ansichtsspaltenmetadaten, paginierte Ergebnisdatensätze, usw. kann dann mithilfe einer [entityview](liquid-objects.md#entityview) zugegriffen werden, die im Tag-Block verfügbar sein wird.  
+Lädt eine angegebene powerapps-Ansicht anhand des Namens oder der ID. Der Zugriff auf die Eigenschaften der Sicht ߝ Spalten Metadaten, paginierte Ergebnisdaten Sätze usw. kann dann mithilfe eines [entityview-Objekts](liquid-objects.md#entityview) erfolgen, das im tagblock verfügbar ist.  
 
-Wenn die Ansicht erfolgreich geladen wird, wird der Inhalt im Block gerendert. Wenn die Ansicht nicht gefunden wird, wird der Inhalt im Block nicht gerendert.
+Wenn die Ansicht erfolgreich geladen wird, wird der Inhalt innerhalb des Blocks gerendert. Wenn die Sicht nicht gefunden wird, wird der Block Inhalt nicht gerendert.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -303,7 +308,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-Standardmäßig erhält das „entityview”-Objekt den Variablennamen „entityview”. Optional kann ein anderer Variablenname angegeben werden.
+Standardmäßig erhält das entityview-Objekt den Variablennamen entityview. Optional kann ein anderer Variablenname angegeben werden.
 
 ```
 {% entityview my_view = logical_name:'contact', name:"Active Contacts" %}
@@ -313,7 +318,7 @@ Loaded entity view with {{ my_view.total_records }} total records.
 {% endentityview %}
 ```
 
-Wenn „entityview” innerhalb eines „entitylist”-Blocks geschachtelt ist, erbt es seine Standardkonfiguration (Ergebnisseitengröße, Filteroptionen, usw.) von der Entitätsliste. Werden keine „id”- oder „name”-Parameter der „entityview” bereitgestellt, wird die Standardansicht aus der einschließenden „entitylist” geladen.
+Wenn entityview in einem entityList-Block geschachtelt ist, erbt es die Standardkonfiguration (Ergebnisseiten Größe, Filteroptionen usw.) aus der Entitäts Liste. Wenn entityview keine View ID-oder Name-Parameter bereitgestellt werden, wird die Standardansicht aus der einschließenden entityList geladen.
 
 ```
 {% entitylist id:page.adx_entitylist.id %}
@@ -327,13 +332,13 @@ Loaded default view of the entity list associated with the current page, with {{
 {% endentitylist %}
 ```
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-Stellen Sie **entweder** „id” **oder** „logical\_name” mit dem Namen zum Auswählen der PowerApps-Ansicht bereit, die geladen werden soll. Wenn keine der Optionen bereitgestellt wurde und das entityview-Tag in einem entitylist-Tag geschachtelt ist, wird die Standardansicht der einschließenden entitylist geladen.
+Geben Sie **entweder** ID **oder** logischer\_Name mit Name an, um die zu ladende powerapps-Ansicht auszuwählen. Wenn keines von beiden bereitgestellt wird und das entityview-Tag innerhalb eines entityList-Tags geschachtelt ist, wird die Standardansicht der einschließenden entityList geladen.
 
-**id**
+**Name**
 
-„id” muss eine Zeichenfolge sein, die als GUID analysiert werden kann.
+die ID muss eine Zeichenfolge sein, die als GUID analysiert werden kann.
 
 ```
 {% entityview id:936DA01F-9ABD-4d9d-80C7-02AF85C822A8 %}
@@ -343,7 +348,7 @@ Loaded entity view {{ entityview.name }}.
 {% endentityview %}
 ```
 
-Im Allgemeinen werden literale GUID-Zeichenfolgen nicht verwendet. Stattdessen wird „id” mit einer GUID-Eigenschaft einer anderen Variable angegeben.
+Im Allgemeinen werden literalguid-Zeichen folgen nicht verwendet. Stattdessen wird die ID mithilfe einer GUID-Eigenschaft einer anderen Variablen angegeben.
 
 ```
 {% entityview id:request.params.view %}
@@ -353,21 +358,9 @@ Loaded entity view {{ entityview.name }} using view query string request paramet
 {% endentityview %}
 ```
 
-**logical\_name**
+**logischer\_Name**
 
-Der logische Name der PowerApps-Entität der zu ladenden Ansicht. Muss in Verbindung mit „name” verwendet werden.
-
-```
-{% entityview logical_name:'contact', name:"Active Contacts" %}
-
-Loaded entity view with {{ entityview.total_records }} total records.
-
-{% endentityview %}
-```
-
-**name**
-
-Der PowerApps-Name der zu ladenden Ansicht. Muss in Verbindung mit „logical\_name” verwendet werden.
+Der logische Name der powerapps-Entität der zu ladenden Ansicht. Muss in Kombination mit Name verwendet werden.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -377,9 +370,21 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-**filter**
+**Benennen**
 
-Gibt an, ob die Ansichtsergebnisse nach Benutzer oder Firma gefiltert werden. Muss den Zeichenfolgenwert "Benutzer" oder "Firma" enthalten.
+Der powerapps-Name der Ansicht, die geladen werden soll. Muss in Kombination mit logischem\_Name verwendet werden.
+
+```
+{% entityview logical_name:'contact', name:"Active Contacts" %}
+
+Loaded entity view with {{ entityview.total_records }} total records.
+
+{% endentityview %}
+```
+
+**Filter**
+
+Gibt an, ob die Ansichts Ergebnisse nach Benutzer oder Konto gefiltert werden sollen. Muss den Zeichen folgen Wert "User" oder "Account" aufweisen.
 
 ```
 {% entityview id:request.params.view, filter:'user' %}
@@ -389,7 +394,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request).  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter basierend auf einer [Anforderung](liquid-objects.md#request)festzulegen.  
 
 ```
 {% entityview id:request.params.view, filter:request.params.filter %}
@@ -399,9 +404,9 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-**metafilter**
+**MetaFilter**
 
-Gibt den Entitätslisten-Metadatenfilterausdruck an, nach dem die Ansichtsergebnisse gefiltert werden sollen. Dieser Parameter ist nur gültig, wenn „entityview” in Verbindung mit „entitylist” verwendet wird. In den meisten Fällen wird dieser Parameter anhand einer [request](liquid-objects.md#request) festgelegt.  
+Gibt den metadatenfilterausdruck der Entitäts Liste an, nach dem die Sicht Ergebnisse gefiltert werden Dieser Parameter ist nur gültig, wenn "entityview" in Kombination mit "entityList" verwendet wird. In den meisten Fällen wird dieser Parameter auf der Grundlage einer [Anforderung](liquid-objects.md#request)festgelegt.  
 
 ```
 {% entitylist id:page.adx_entitylist.id %}
@@ -415,9 +420,9 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentitylist %}
 ```
 
-**order**
+**Reihenfolge**
 
-Gibt einen Sortierausdruck für die Sortierung von Ansichtsergebnissen an. Ein Sortierausdruck kann mindestens einen logischen Namen des Entitätsattributs enthalten, gefolgt von der Sortierreihenfolge ASC oder DESC.
+Gibt einen Sortierungs Ausdruck zum Sortieren von Ansichts Ergebnissen an. Ein Sortierungs Ausdruck kann ein oder mehrere logische Namen von Entitäts Attributen enthalten, gefolgt von der Sortierreihenfolge "ASC" oder "Debug".
 
 ```
 {% entityview id:request.params.view, order:'name ASC, createdon DESC' %}
@@ -427,7 +432,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request).  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter basierend auf einer [Anforderung](liquid-objects.md#request)festzulegen.  
 
 ```
 {% entityview id:request.params.view, order:request.params.order %}
@@ -437,11 +442,11 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-**page**
+**s**
 
-Gibt die zu ladende Ansichtsergebnisseite an. Wird dieser Parameter nicht angegeben, wird die erste Seite der Ergebnisse geladen.
+Gibt die zu ladende Ansichts Ergebnisseite an. Wenn dieser Parameter nicht angegeben wird, wird die erste Seite der Ergebnisse geladen.
 
-Diesem Parameter muss entweder ein ganzzahliger Wert übergeben werden oder eine Zeichenfolge, die als Ganzzahl analysiert werden kann. Wenn ein Wert für diesen Parameter bereitgestellt wird, der Wert aber Null ist oder anderweitig nicht als Ganzzahl analysiert werden kann, wird die erste Seite der Ergebnisse geladen.
+Diesem Parameter muss entweder ein ganzzahliger Wert oder eine Zeichenfolge übergeben werden, die als Ganzzahl analysiert werden kann. Wenn für diesen Parameter ein Wert angegeben wird, der Wert jedoch NULL ist oder andernfalls nicht als ganze Zahl analysiert werden kann, wird die erste Seite der Ergebnisse geladen.
 
 ```
 {% entityview id:request.params.view, page:2 %}
@@ -451,7 +456,7 @@ Loaded page {{ entityview.page }} of entity view with {{ entityview.total_record
 {% endentityview %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request).  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter basierend auf einer [Anforderung](liquid-objects.md#request)festzulegen.  
 
 ```
 {% entityview id:request.params.view, page:request.params.page %}
@@ -461,11 +466,11 @@ Loaded page {{ entityview.page }} of entity view with {{ entityview.total_record
 {% endentityview %}
 ```
 
-**page\_size**
+**Seiten\_Größe**
 
-Gibt die Anzahl der Ergebnisse an, die für die aktuelle Ergebnisseite zu laden ist. Wenn kein Wert für diesen Parameter bereitgestellt wird und „entityview” in einem [entitylist](#entitylist)-Block verwendet wird, wird die Entitätslisten-Seitengröße verwendet. Wird diese nicht in einem „entitylist”-Block verwendet, wird als Standardwert 10 verwendet.
+Gibt die Anzahl der zu ladenden Ergebnisse für die aktuelle Ergebnisseite an. Wenn für diesen Parameter kein Wert angegeben wird und entityview innerhalb eines [entityList](#entitylist) -Blocks verwendet wird, wird die Seitengröße der Entitäts Liste verwendet. Wenn nicht innerhalb eines entityList-Blocks, wird der Standardwert 10 verwendet.
 
-Diesem Parameter muss entweder ein ganzzahliger Wert übergeben werden oder eine Zeichenfolge, die als Ganzzahl analysiert werden kann. Wenn ein Wert für diesen Parameter bereitgestellt wird, der Wert aber Null ist oder anderweitig nicht als Ganzzahl analysiert werden kann, wird die Standardseitengröße verwendet.
+Diesem Parameter muss entweder ein ganzzahliger Wert oder eine Zeichenfolge übergeben werden, die als Ganzzahl analysiert werden kann. Wenn für diesen Parameter ein Wert angegeben wird, der Wert jedoch NULL ist oder andernfalls nicht als Ganzzahl analysiert werden kann, wird die Standardseiten Größe verwendet.
 
 ```
 {% entityview id:request.params.view, page_size:20 %}
@@ -475,7 +480,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request).  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter basierend auf einer [Anforderung](liquid-objects.md#request)festzulegen.  
 
 ```
 {% entityview id:request.params.view, page_size:request.params.pagesize %}
@@ -485,9 +490,9 @@ Loaded entity view with {{ entityview.total_records }} total records.
 {% endentityview %}
 ```
 
-**search**
+**Such**
 
-Gibt einen Suchausdruck an, nach dem die Ansichtsergebnisse gefiltert werden. Einfache Stichwortsuchausdrücke filtern, ob Attribute mit dem Schlüsselwort beginnen. Platzhalter \* können auch im Ausdruck eingeschlossen werden.
+Gibt einen Such Ausdruck an, nach dem die Sicht Ergebnisse gefiltert werden sollen. Einfache Schlüsselwort Such Ausdrücke Filtern nach, ob Attribute mit dem-Schlüsselwort beginnen. Platzhalter \* können auch in den Ausdruck eingeschlossen werden.
 
 ```
 {% entityview id:request.params.view, search:'John\*' %}
@@ -497,7 +502,7 @@ Loaded entity view with {{ entityview.total_records }} total matching records.
 {% endentityview %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request), sodass der Suchfilter anhand der Benutzereingabe festgelegt werden kann.  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter auf Grundlage einer [Anforderung](liquid-objects.md#request)festzulegen, damit der Suchfilter basierend auf der Benutzereingabe festgelegt werden kann.  
 ```
 {% entityview id:request.params.view, search:request.params.search %}
 
@@ -506,11 +511,11 @@ Loaded entity view with {{ entityview.total_records }} total matching records.
 {% endentityview %}
 ```
 
-**enable\_entity\_permissions**
+**\_Entitäts\_Berechtigungen aktivieren**
 
-Gibt an, ob die Entitätsberechtigungsfilterung für Ansichtsergebnisse angewendet wird. Dieser Parameter ist standardmäßig auf „false” festgelegt. Wird „entityview” in einem „entitylist”-Block verwendet, wird der Wert dieses Parameters von der Entitätslistenkonfiguration geerbt.
+Gibt an, ob das Filtern von Entitäts Berechtigungen auf Sicht Ergebnisse angewendet wird. Dieser Parameter ist standardmäßig auf false festgelegt. Wenn entityview innerhalb eines entityList-Blocks verwendet wird, wird der Wert dieses Parameters von der Konfiguration der Entitäts Liste geerbt.
 
-Diesem Parameter muss entweder ein [boolean](liquid-types.md#boolean) Wert übergeben werden oder eine Zeichenfolge, die als boolescher Wert ("true", "false") analysiert werden kann. Wenn ein Wert für diesen Parameter bereitgestellt wird, der Wert aber Null ist oder anderweitig nicht als boolescher Wert analysiert werden kann, wird „false” als Standard verwendet.  
+Diesem Parameter muss entweder ein [boolescher](liquid-types.md#boolean) Wert oder eine Zeichenfolge übergeben werden, die als boolescher Wert (true, false) analysiert werden kann. Wenn für diesen Parameter ein Wert angegeben wird, der Wert jedoch NULL ist oder andernfalls nicht als boolescher Wert analysiert werden kann, wird der Standardwert false verwendet.  
 
 ```
 {% entityview id:request.params.view, enable_entity_permissions:true %}
@@ -520,11 +525,11 @@ Loaded entity view with {{ entityview.total_records }} total records to which th
 {% endentityview %}
 ```
 
-**language\_code**
+**sprach\_Code**
 
-Ein ganzzahliger PowerApps-Sprachcode, um die zu ladenden lokalisierten Bezeichnungen der Entitätsansicht (Spaltenüberschriftsbezeichnungen, usw.) auszuwählen. Ohne Angabe von language\_code wird die Standardsprache der PowerApps-Verbindung der Portal-Anwendung verwendet.
+Ein ganzzahliger powerapps-Sprachcode zum Auswählen der zu ladenden lokalisierten Bezeichnungen (Spaltenheader Bezeichnungen usw.). Wenn keine sprach\_Code bereitgestellt wird, wird die Standardsprache der powerapps-Verbindung der Portal Anwendung verwendet.
 
-Wenn „entityview” innerhalb eines „entitylist”-Blocks verwendet wird, erbt „entityview” die Sprachcodekonfiguration von „entitylist”.
+Wenn entityview innerhalb eines entityList-Blocks verwendet wird, erbt entityview seine Sprachcode Konfiguration von entityList.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts", language_code:1033 %}
@@ -534,9 +539,9 @@ Loaded entity view {{ entityview.name }}.
 {% endentitylist %}
 ```
 
-## <a name="searchindex"></a>searchindex
+## <a name="searchindex"></a>SearchIndex
 
-Führt eine Abfrage für den Portalsuchindex aus. Auf die passenden Ergebnisse kann dann mithilfe eines [searchindex](liquid-objects.md#searchindex) zugegriffen werden, der innerhalb des Tag-Blocks verfügbar ist.  
+Führt eine Abfrage für den Portal Suchindex aus. Auf die übereinstimmenden Ergebnisse kann dann mithilfe eines [SearchIndex](liquid-objects.md#searchindex) zugegriffen werden, der im tagblock verfügbar ist.  
 
 ```
 {% searchindex query: 'support', page: params.page, page_size: 10 %}
@@ -570,7 +575,7 @@ Führt eine Abfrage für den Portalsuchindex aus. Auf die passenden Ergebnisse k
 {% endsearchindex %}
 ```
 
-Standardmäßig erhält das Suchindex-Objekt den Variablennamen „searchindex”. Optional kann ein anderer Variablenname angegeben werden.
+Standardmäßig erhält das Suchindex-Objekt den Variablennamen SearchIndex. Optional kann ein anderer Variablenname angegeben werden.
 
 ```
 {% searchindex liquid_search = query: 'support', page: params.page, page_size: 10 %}
@@ -584,13 +589,13 @@ Standardmäßig erhält das Suchindex-Objekt den Variablennamen „searchindex�
 {% endsearchindex %}
 ```
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-Das „searchindex”-Tag akzeptiert die folgenden Parameter.
+Das SearchIndex-Tag akzeptiert die folgenden Parameter.
 
-**query**
+**Such**
 
-Die Abfrage für Ergebnisübereinstimmungen. Dieser Parameter soll den vom Benutzer angegebenen Teil der Indexabfrage (sofern zutreffend) annehmen.
+Die Abfrage, die zum Abgleichen der Ergebnisse verwendet wird. Dieser Parameter soll den vom Benutzer angegebenen Teil der Index Abfrage akzeptieren (sofern vorhanden).
 
 ```
 {% searchindex query: 'support' %}
@@ -600,7 +605,7 @@ Die Abfrage für Ergebnisübereinstimmungen. Dieser Parameter soll den vom Benut
 {% endsearchindex %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request).  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter basierend auf einer [Anforderung](liquid-objects.md#request)festzulegen.  
 
 ```
 {% searchindex query: request.params.query %}
@@ -610,11 +615,11 @@ Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer 
 {% endsearchindex %}
 ```
 
-Dieser Parameter unterstützt die [Lucene-Abfrageanalysesyntax](http://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
+Dieser Parameter unterstützt [die Lucene-Abfrage Parser-Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).
 
-**filter**
+**Filter**
 
-Eine zusätzliche Abfrage für Ergebnisübereinstimmungen. Dieser Parameter soll einen vom Entwickler angegebenen Filter für Ergebnisse annehmen (bei Bedarf).
+Eine zusätzliche Abfrage, mit der Ergebnisse abgeglichen werden. Dieser Parameter soll einen vom Entwickler angegebenen Filter für Ergebnisse akzeptieren, wenn gewünscht.
 
 ```
 {% searchindex query: request.params.query, filter: '+statecode:0' %}
@@ -624,14 +629,14 @@ Eine zusätzliche Abfrage für Ergebnisübereinstimmungen. Dieser Parameter soll
 {% endsearchindex %}
 ```
 
-Dieser Parameter unterstützt die [Lucene-Abfrageanalysesyntax](http://lucene.apache.org/core/2_9_4/queryparsersyntax.html).  
+Dieser Parameter unterstützt [die Lucene-Abfrage Parser-Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html).  
 
 > [!Note]     
-> Der Unterschied zwischen „filter” und „query” ist, dass, während beide die Lucene-Abfrageanalysesyntax akzeptieren, „query” mehr Spielraum für die Analyse dieser Syntax gewährt ߝ, da erwartet wird, dass sich die meisten Endbenutzer sich dieser Syntax nicht bewusst sind. Wenn also die Analyse von „query” gemäß dieser Syntax fehlschlägt, wird die gesamte Abfrage umgangen und als Abfragetext übermittelt. „filter” wird dagegen strikt analysiert und im Falle einer ungültigen Syntax einen Fehler zurückgeben.
+> Der Unterschied zwischen Filter und Abfrage besteht darin, dass die Abfrage für die Lucene-Abfrage parsersyntax von der Abfrage eher so bestimmt werden soll, wie diese Syntax analysiert wird ߝ da erwartet wird, dass die meisten Endbenutzer diese Syntax nicht kennen. Wenn also die Abfrage nach dieser Syntax fehlschlägt, wird die gesamte Abfrage mit Escapezeichen versehen und als Abfragetext übermittelt. Filter hingegen werden strikt analysiert und geben bei ungültiger Syntax einen Fehler zurück.
 
-**logical\_names**
+**logische\_Namen**
 
-Die logischen Namen der PowerApps-Entität, auf die die passenden Ergebnisse beschränkt werden, als durch Trennzeichen getrennte Zeichenfolge. Wenn sie nicht angegeben werden, werden alle entsprechenden Entitäten zurückgegeben.
+Die logischen Namen der powerapps-Entität, auf die die übereinstimmenden Ergebnisse eingeschränkt werden, als durch Trennzeichen getrennte Zeichenfolge. Wenn keine Angabe erfolgt, werden alle übereinstimmenden Entitäten zurückgegeben.
 
 ```
 {% searchindex query: request.params.query, logical_names: 'kbarticle,incident' %}
@@ -640,9 +645,9 @@ Die logischen Namen der PowerApps-Entität, auf die die passenden Ergebnisse bes
 >
 {% endsearchindex %}
 ```
-**page**
+**s**
 
-Die Suchergebnisseite, die zurückgegeben werden soll. Wenn sie nicht angegeben wird, wird die erste Seite (1) zurückgegeben.
+Die Suchergebnisseite, die zurückgegeben werden soll. Wenn nicht angegeben, wird die erste Seite (1) zurückgegeben.
 
 ```
 {% searchindex query: request.params.query, page: 2 %}
@@ -652,7 +657,7 @@ Die Suchergebnisseite, die zurückgegeben werden soll. Wenn sie nicht angegeben 
 {% endsearchindex %}
 ```
 
-Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer [request](liquid-objects.md#request).  
+Ein häufiger Anwendungsfall besteht darin, diesen Parameter basierend auf einer [Anforderung](liquid-objects.md#request)festzulegen.  
 
 ```
 {% searchindex query: request.params.query, page: request.params.page %}
@@ -662,9 +667,9 @@ Ein allgemeiner Anwendungsfall ist das Festlegen dieses Parameters anhand einer 
 {% endsearchindex %}
 ```
 
-**page\_size**
+**Seiten\_Größe**
 
-Die Größe der Ergebnisseite, die zurückgegeben werden soll. Wenn sie nicht angegeben wird, wird die Standardgröße 10 verwendet.
+Die Größe der Ergebnisseite, die zurückgegeben werden soll. Wenn keine Angabe erfolgt, wird eine Standardgröße von 10 verwendet.
 
 ```
 {% searchindex query: request.params.query, page_size: 20 %}
@@ -676,37 +681,37 @@ Die Größe der Ergebnisseite, die zurückgegeben werden soll. Wenn sie nicht an
 
 ## <a name="entityform"></a>entityform
 
-Vollständiges Rendern einer PowerApps-konfigurierten Entitätsform, nach Name oder ID.  
+Rendert eine von powerapps konfigurierte Entitäts Formulare vollständig nach Name oder ID.  
 
 > [!Note]
-> Das „entityform”-Tag ist nur für die Verwendung in Inhalten verfügbar, die in einer <em>[web template](store-content-web-templates.md)–</em>basierten Seitenvorlage gerendert werden. Wenn Sie versuchen, das Tag in einer Rewrite-basierten Seitenvorlage zu verwenden, wird kein Render-Vorgang ausgeführt. Sie können nur ein einziges „entityform”- oder „webform”-Tag pro Seite rendern. „entityform”- oder „webform”-Tags nach dem ersten werden nicht gerendert.       
+> Das entityform-Tag ist nur für die Verwendung in Inhalt verfügbar, der in einer  <em>[Webvorlage](store-content-web-templates.md)–</em>basierten Seitenvorlage gerendert wird. Wenn Sie versuchen, das-Tag in einer Umschreib basierten Seitenvorlage zu verwenden, wird nichts angezeigt. Sie können nur ein einzelnes entityform-oder Webform-Tag pro Seite Rendering. entityform-oder Webform-Tags nach dem ersten werden nicht gerendert.       
 
 `{% entityform name: 'My Entity Form' %}`
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-**name**
+**Benennen**
 
-Der Name des zu ladenden Entitätsformulars.
+Der Name des Entitäts Formulars, das Sie laden möchten.
 
 `{% entityform name:My Entity Form %}`
 
-### <a name="webform"></a>**webform**
+### <a name="webform"></a>**Webform**
 
-Rendert vollständig ein PowerApps-konfiguriertes Webformular, nach Name oder ID. Das „webform”-Tag ist nur für die Verwendung in Inhalten verfügbar, die in einer [web template](store-content-web-templates.md)–basierten Seitenvorlage gerendert werden. Wenn Sie versuchen, das Tag in einer Rewrite-basierten Seitenvorlage zu verwenden, wird kein Render-Vorgang ausgeführt. Sie können nur ein einziges „entityform”- oder „webform”-Tag pro Seite rendern. „entityform”- oder „webform”-Tags nach dem ersten werden nicht gerendert.                
+Rendert ein mit powerapps konfiguriertes Webformular vollständig nach Name oder ID. Das Webform-Tag ist nur für die Verwendung in Inhalt verfügbar, der in einer [Webvorlagen](store-content-web-templates.md) basierten Seitenvorlage gerendert wird. Wenn Sie versuchen, das-Tag in einer Umschreib basierten Seitenvorlage zu verwenden, wird nichts angezeigt. Sie können nur ein einzelnes entityform-oder Webform-Tag pro Seite Rendering. entityform-oder Webform-Tags nach dem ersten werden nicht gerendert.                
 `{% webform name: 'My Web Form' %}`
 
-### <a name="parameters"></a>Parameter
+### <a name="parameters"></a>Metern
 
-**name**
+**Benennen**
 
-Der Name des zu ladenden Webformulars.
+Der Name des Webformulars, das Sie laden möchten.
 
 `{% webform name:My Web Form %}`
 
 ### <a name="see-also"></a>Siehe auch
 
-[Ablaufsteuerungstags](control-flow-tags.md)<br>
-[Iterationstags](iteration-tags.md)<br>
-[Variable Tags](variable-tags.md)<br>
-[Vorlagentags](template-tags.md)
+[Ablauf Steuerungs Tags](control-flow-tags.md)<br>
+[Iterations Tags](iteration-tags.md)<br>
+[Variablen Tags](variable-tags.md)<br>
+[Vorlagen Tags](template-tags.md)

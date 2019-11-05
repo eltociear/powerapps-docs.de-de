@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d16e4c7b8d15611b06644520c0ee39417fd3ee0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 29fcc240bdf0dbe926acb702c26d535fb4536c16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994705"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537113"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Hinzufügen und Konfigurieren eines Canvas-App-Steuerelements in PowerApps
 
@@ -26,7 +26,7 @@ Fügen Sie Ihrer Canvas-App vielfältige Benutzeroberflächenelemente hinzu, und
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-1. Wenn Sie noch nicht über eine powerapps-Lizenz verfügen, [registrieren](../signup-for-powerapps.md)Sie sich, und melden Sie sich dann [an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Wenn Sie noch nicht über eine powerapps-Lizenz verfügen, [registrieren](../signup-for-powerapps.md)Sie sich, und melden Sie sich dann [an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. Zeigen Sie unter **eigene APP erstellen**mit der Maus auf die **Canvas-App**, und klicken Sie dann auf **diese APP erstellen**.
 1. Wenn Sie aufgefordert werden, die Einführungstour durchzubringen, wählen Sie **weiter** aus, um sich mit wichtigen Bereichen der powerapps-Schnittstelle vertraut zu machen (oder wählen Sie über **springen**).
 

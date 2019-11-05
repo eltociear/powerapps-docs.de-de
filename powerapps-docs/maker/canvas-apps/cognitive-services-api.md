@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Cognitive Services in PowerApps | Microsoft-Dokumentation
-description: Erstellen Sie eine weitere grundlegende Canvas-app, die den Azure Cognitive Services Text Analytics-API verwendet, um Text zu analysieren.
+description: Erstellen Sie eine einfache Canvas-APP, die die Azure Cognitive Services-Textanalyse-API verwendet, um Text zu analysieren.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee3f7684ed1636cf2445945d1d01507733c18625
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: a998ca743fe693645adaabbd32d4d3110c12068a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224937"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540858"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Verwenden von Cognitive Services in PowerApps
-In diesem Artikel erfahren Sie, wie Sie eine weitere grundlegende Canvas-app zu erstellen, verwendet der [Azure Cognitive Services-Textanalyse-API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
+In diesem Artikel erfahren Sie, wie Sie eine einfache Canvas-app erstellen, die den [Azure-Cognitive Services Textanalyse-API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) verwendet, um Text zu analysieren. Es wird veranschaulicht, wie die Textanalyse-API eingerichtet und mit dem [Textanalyse-Connector](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/) verbunden wird. Anschließend wird beschrieben, wie eine Canvas-App erstellt wird, die die API aufruft.
 
 > [!NOTE]
 > Wenn Sie mit dem Erstellen von Apps in PowerApps nicht vertraut sind, empfehlen wir Ihnen, [App von Grund auf neu erstellen](get-started-create-from-blank.md) durchzulesen, bevor Sie in diesen Artikel einsteigen.
 
 ## <a name="introduction-to-azure-cognitive-services"></a>Einführung in Azure Cognitive Services
-Azure Cognitive Services sind ein Satz von APIs, SDKs und Diensten zur Verfügung, um Ihre Anwendungen intelligenter, ansprechender und besser ermittelbar. Mit diesen Diensten können Sie in Ihren Anwendungen auf einfache Weise intelligente Funktionen hinzufügen – z.B. Stimmungs- und Videoerkennung; Gesichtserkennung, Erkennung von Sprach- und Sehvermögen sowie Verständnis von Spracheingaben und Sprachen.
+Bei Azure-Cognitive Services handelt es sich um eine Reihe von APIs, sdert und Diensten, die verfügbar sind, damit Ihre Anwendungen intelligenter, ansprechender und auffindbar werden. Mit diesen Diensten können Sie in Ihren Anwendungen auf einfache Weise intelligente Funktionen hinzufügen – z.B. Stimmungs- und Videoerkennung; Gesichtserkennung, Erkennung von Sprach- und Sehvermögen sowie Verständnis von Spracheingaben und Sprachen.
 
 Wir legen in diesem Artikel bei der Arbeit mit der Textanalyse-API den Schwerpunkt auf das „Sprachverständnis“. Anhand dieser API können Sie Stimmung, Schlüsselbegriffe, Themen und Sprache in Ihren Texten erkennen. Schauen wir uns zunächst eine Demo der API an; dabei müssen wir uns für eine Vorschauversion registrieren.
 
@@ -41,14 +40,14 @@ Für die API ist eine Online-Demo verfügbar: Sie können sich mit ihrer Funktio
    
     ![Demo zur Textanalyse-API](./media/cognitive-services-api/text-analytics-demo.png)
 
-3. Auf der Seite werden auf der Registerkarte **Analyzed text** (Analysierter Text) formatierte Ergebnisse und auf der Registerkarte **JSON** die JSON-Antwort angezeigt. [JSON](http://json.org/) ist eine Möglichkeit der Darstellung von Daten – in diesem Fall der von der Textanalyse-API zurückgegebenen Daten.
+3. Die Seite zeigt formatierte Ergebnisse auf der analysierten Registerkarte " **Text** " an, und die JSON-Antwort auf der **JSON** -Registerkarte "Tab. [JSON](https://json.org/) " ist eine Möglichkeit, Daten darzustellen, in diesem Fall Daten, die vom Textanalyse-API zurückgegeben werden.
 
 ## <a name="sign-up-for-the-text-analytics-api"></a>Registrieren für die Textanalyse-API
 Die API ist als kostenlose Vorschauversion erhältlich und mit einem Azure-Abonnement verbunden. Sie verwalten die API über das Azure-Portal.
 
 1. Wenn Sie über kein Azure-Abonnement verfügen, [registrieren Sie sich für ein kostenloses Abonnement](https://azure.microsoft.com/free/).
 
-2. In [auf dieser Seite](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics), geben Sie die Informationen für die Textanalyse-API, wie in dieser Abbildung dargestellt. Wählen Sie den Tarif **F0** (kostenlos).
+2. Geben Sie auf [dieser Seite](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)Informationen für die Textanalyse-API ein, wie in diesem Bild gezeigt. Wählen Sie den Tarif **F0** (kostenlos).
    
     ![Erstellen der Textanalyse-API](./media/cognitive-services-api/azure-create.png)
 
@@ -72,7 +71,7 @@ Nun ist die Textanalyse-API einsatzbereit, und Sie können eine Verbindung mit d
 ### <a name="create-the-app-and-add-a-connection"></a>Erstellen der App und Hinzufügen einer Verbindung
 Zunächst erstellen Sie eine leere Smartphone-App und fügen eine Verbindung mit dem **Textanalyse**-Connector hinzu. Wenn Sie zu diesen Aufgaben weitere Informationen benötigen, lesen Sie die Artikel [App von Grund auf neu erstellen](get-started-create-from-blank.md) und [Verwalten der Verbindungen in PowerApps](add-manage-connections.md).
 
-1. Wählen Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Mit leerer App starten** > ![Symbol für Telefon-App](./media/cognitive-services-api/icon-phone-app.png) (Telefon) > **Diese App erstellen** aus.
+1. Wählen Sie auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) die Option **Mit leerer App starten** > ![Symbol für Telefon-App](./media/cognitive-services-api/icon-phone-app.png) (Telefon) > **Diese App erstellen** aus.
 
     ![Mit leerer App starten](./media/cognitive-services-api/start-from-blank.png)
 
@@ -128,34 +127,34 @@ Nun verfügen Sie über eine App, die ganz ordentlich aussieht, damit können ab
 
 Vor diesem Hintergrund fügen wir nun die Formel für die **OnSelect**-Eigenschaft der Schaltfläche hinzu. Hier liegt nun die ganze Zauberei.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1; 
+                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrases(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentiment(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -173,7 +172,7 @@ Hier geht einiges vor sich, gehen wir also etwas näher darauf ein:
 
   * In **DetectLanguage()** ist **numberOfLanguagesToDetect** als 1 hartcodiert, Sie könnten diesen Parameter aber auch entsprechend einer bestimmten Logik in der App übergeben.
 
-  * In **KeyPhrases()** und **DetectSentiment()** , **Sprache** ist hartcodiert, wie "En", aber Sie diesen Parameter, die anhand der Logik in der app übergeben werden können. Sie könnten beispielsweise zuerst die Sprache erkennen und anschließend diesen Parameter entsprechend dem von **DetectLanguage()** zurückgegebenen Wert festlegen.
+  * In **Keyphrasen ()** und **detectsentiment ()** ist **Sprache** hart codiert als "en", aber Sie können diesen Parameter auf der Grundlage einiger Logik in der APP übergeben. Sie könnten beispielsweise zuerst die Sprache erkennen und anschließend diesen Parameter entsprechend dem von **DetectLanguage()** zurückgegebenen Wert festlegen.
 
 * Für jeden getätigten Aufruf fügen wir die Ergebnisse der entsprechenden Sammlung hinzu:
 
@@ -190,7 +189,7 @@ Zum Anzeigen der Ergebnisse der API-Aufrufe verweisen Sie auf die entsprechende 
    
     Die **First()** -Funktion gibt den ersten (und in diesem Fall einzigen) Eintrag in **languageCollect** zurück, und die App zeigt **name** (das einzige Feld) für den Eintrag an.
 
-2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Legen Sie die **Text**-Eigenschaft der Stimmungsbezeichnung auf folgenden Wert fest: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
    
     Diese Formel verwendet ebenfalls die **First()** -Funktion, ruft den **Value** (0-1) aus dem ersten und einzigen Eintrag ab und formatiert ihn anschließend als Prozentsatz.
 

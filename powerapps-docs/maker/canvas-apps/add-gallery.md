@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987566"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540925"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Anzeigen einer Liste mit Elementen in PowerApps
 
@@ -35,7 +34,7 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
     2. Laden Sie die Excel-Datei in ein [Cloudspeicherkonto](connections/cloud-storage-blob-connections.md) hoch, z.B. in OneDrive for Business.
 
 - Öffnen Sie eine leere App:
-    1. [Melden Sie sich bei PowerApps an](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    1. [Melden Sie sich bei PowerApps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     1. Wählen Sie unter **Eigene App erstellen** die Option **Canvas-App ohne Vorlage** aus.
 
@@ -59,7 +58,7 @@ Sie können eine Liste von Elementen aus beliebigen Datenquellen anzeigen, indem
 
 ## <a name="add-a-gallery-in-a-screen"></a>Hinzufügen eines Katalogs in einem Bildschirm
 
-1. Wählen Sie auf der Registerkarte **Startseite** die Option **neuer Bildschirm** > **Listenbildschirm**aus.
+1. Wählen Sie auf der Registerkarte **Startseite** die Option **neuer Bildschirm** > **Liste**aus.
 
     Ein Bildschirm mit einem Katalog **-Steuerelement** und anderen Steuerelementen, z. b. einer Suchleiste, wird angezeigt.
 
@@ -99,20 +98,20 @@ Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steu
 
 1. Legen Sie die **[Items](controls/properties-core.md)** -Eigenschaft des **Katalog**-Steuerelements auf diese Formel fest:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ Die **[Items](controls/properties-core.md)** -Eigenschaft eines **Katalog**-Steu
 ## <a name="highlight-the-selected-item"></a>Hervorheben des ausgewählten Elements
 Legen Sie die **templatefill** -Eigenschaft des Katalog-Steuer Elements auf eine Formel fest **, die diesem** Beispiel ähnelt, aber Sie können bei Bedarf andere Farben angeben:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Ändern der Standardauswahl
 Legen Sie die **Default**-Eigenschaft des **Katalog**-Steuerelements auf den Datensatz fest, der standardmäßig ausgewählt sein soll. Sie können z. b. das fünfte Element in der Datenquelle **flooringestimates** angeben:
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 In diesem Beispiel geben Sie das erste Element in der Kategorie **Hardwood** der Datenquelle **FlooringEstimates** an:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Nächste Schritte
 Informationen zum Arbeiten mit [Formularen](working-with-forms.md) und [Formeln](working-with-formulas.md).

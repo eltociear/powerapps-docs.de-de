@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ab51a2b1a309921e32949a806adb4a7bf3273ccf
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974688"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543328"
 ---
 # <a name="manage-sharepoint-documents"></a>Verwalten von SharePoint-Dokumenten
 
@@ -38,7 +38,7 @@ Zum Arbeiten mit den Dokument Verwaltungsfunktionen von [!INCLUDE[pn-sharepoint-
 
 ## <a name="step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365"></a>Schritt 1: Aktivieren der Funktionalität der Dokument Verwaltung in Modell gesteuerten apps in Dynamics 365
 
-Sie müssen die Funktionalität der Dokument Verwaltung in Modell gesteuerten apps in Dynamics 365 mithilfe der serverbasierten [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Integration aktivieren. Bei der serverbasierten [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Integration können Modell gesteuerte apps in Dynamics 365 und [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] eine Server-zu-Server-Verbindung ausführen. Der Standard [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Site-Datensatz wird vom Portal verwendet. Informationen zum Aktivieren der Dokument Verwaltungs Funktionalität in Modell gesteuerten apps in Dynamics 365 finden Sie [unter Einrichten von Modell gesteuerten apps in Dynamics 365 für die Verwendung von SharePoint Online](https://docs.microsoft.com/en-us/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
+Sie müssen die Funktionalität der Dokument Verwaltung in Modell gesteuerten apps in Dynamics 365 mithilfe der serverbasierten [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Integration aktivieren. Bei der serverbasierten [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Integration können Modell gesteuerte apps in Dynamics 365 und [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] eine Server-zu-Server-Verbindung ausführen. Der Standard [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Site-Datensatz wird vom Portal verwendet. Informationen zum Aktivieren der Dokument Verwaltungs Funktionalität in Modell gesteuerten apps in Dynamics 365 finden Sie [unter Einrichten von Modell gesteuerten apps in Dynamics 365 für die Verwendung von SharePoint Online](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
 
 ## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>Schritt 2: Einrichten der SharePoint-Integration über das powerapps-Portal Admin Center
 
@@ -76,7 +76,7 @@ Wenn Sie Ihre Zustimmung nicht angeben:
 
 
 ## <a name="step-3-enable-document-management-for-entities"></a>Schritt 3: Aktivieren der Dokument Verwaltung für Entitäten
-Sie müssen die Dokument Verwaltung für Entitäten aktivieren, um Dokumente zu speichern, die auf Entitäts Datensätze in [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Informationen zum Aktivieren der Dokument Verwaltung für Entitäten finden Sie unter [Aktivieren der SharePoint-Dokument Verwaltung für bestimmte Entitäten](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities).
+Sie müssen die Dokument Verwaltung für Entitäten aktivieren, um Dokumente zu speichern, die auf Entitäts Datensätze in [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] Informationen zum Aktivieren der Dokument Verwaltung für Entitäten finden Sie unter [Aktivieren der SharePoint-Dokument Verwaltung für bestimmte Entitäten](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities).
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>Schritt 4: Konfigurieren des entsprechenden Formulars zum Anzeigen von Dokumenten
 
@@ -150,12 +150,12 @@ Das folgende Beispiel veranschaulicht die Konfiguration mithilfe der Case-Entit�
         c. Öffnen Sie den **Web –-Bearbeitungs Fall** im Formular-Editor.
 
          > [!div class=mx-imgBorder]
-         > ![Webbearbeitungs Fall]Formular(media/web-edit-case-form.png "Web-Bearbeitungs Fall Formular")
+         > ![Webbearbeitungs Fall-Formular](media/web-edit-case-form.png "Webbearbeitungs Fall-Formular")
     
         d. Wählen Sie das Feld **erstellt für** im Formular aus, und wählen Sie auf der Registerkarte **Einfügen** die Option **unter Raster**aus.
 
          > [!div class=mx-imgBorder]
-         > ![Hinzufügen eines untergeordneten Rasters zum Web-Edit-Fall-Formular](media/add-sub-grid.png "Hinzufügen eines untergeordneten Rasters zum Web-Bearbeitungs Fall Formular")
+         > ![Hinzufügen eines untergeordneten Rasters zum webbearbeitungs Fall-Formular](media/add-sub-grid.png "Hinzufügen eines untergeordneten Rasters zum webbearbeitungs Fall-Formular")
     
         e. Legen Sie im Dialogfeld **Eigenschaften festlegen** die folgenden Eigenschaften fest, und wählen Sie **OK**aus:
 
@@ -168,7 +168,7 @@ Das folgende Beispiel veranschaulicht die Konfiguration mithilfe der Case-Entit�
          - **Standardansicht**: aktive Dokument Speicherorte
 
          > [!div class=mx-imgBorder]
-         > Subgrid- ![Eigenschaften]((media/sub-grid-properties.png "Subgrid") -Eigenschaften)
+         > ![Subgrid-Eigenschaften](media/sub-grid-properties.png "Subgrid-Eigenschaften")
 
         c. Wählen Sie im Formular-Editor die Option **Speichern** aus, und wählen Sie dann **veröffentlichen**aus.
 
@@ -218,17 +218,17 @@ Das folgende Beispiel veranschaulicht die Konfiguration mithilfe der Case-Entit�
     - **Berechtigungen**: lesen, erstellen, anfügen, schreiben, löschen
 
       > [!div class=mx-imgBorder]
-      > Customer Service-Entitäts ![Berechtigung](media/customer-service-entity-permission.png "Customer Service-Entitäts Berechtigung")
+      > ![Customer Service-Entitäts Berechtigung](media/customer-service-entity-permission.png "Customer Service-Entitäts Berechtigung")
   
    4. Melden Sie sich beim Portal an, um sicherzustellen, dass die Dokument Verwaltung für die Fall Entität aktiviert ist
 
       a. Wechseln Sie zur Seite **Support** .
 
       > [!div class=mx-imgBorder]
-      > ![Portal Support]Seite(media/portal-support-page.png "Portal Supportseite")
+      > ![Portal-Supportseite](media/portal-support-page.png "Portal-Supportseite")
 
       b. Klicken Sie in der Liste auf einen vorhandenen Fall Daten Satz. Wechseln Sie auf der Seite zum Abschnitt **Fall Dokumente** , und sehen Sie sich die hinzugefügte Dokument Liste an.
 
       > [!div class=mx-imgBorder]
-      > (media/case-document.png "Fall Dokument") für ![Fall Dokument]
+      > ![Fall Dokument](media/case-document.png "Fall Dokument")
 

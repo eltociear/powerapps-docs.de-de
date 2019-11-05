@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2fd03b1a54b54c1abe1d6c30270861b6fc9b8054
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b6f977154a350c6ca4b0b630cb4a4050e6d015c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989351"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541492"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Übersicht über die e-Mail-Bildschirm Vorlage für Canvas-apps
 
@@ -43,7 +42,7 @@ Vertrautheit mit dem Hinzufügen und Konfigurieren von Bildschirmen und anderen 
 
 So fügen Sie einen e-Mail-Bildschirm aus der Vorlage hinzu
 
-1. [Melden](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
+1. [Melden](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Sie sich bei powerapps an, und erstellen Sie eine APP, oder öffnen Sie eine vorhandene app in PowerApps Studio.
 
     In diesem Thema wird eine Phone-App gezeigt, aber die gleichen Konzepte gelten auch für eine Tablet-app.
 
@@ -83,14 +82,14 @@ Dadurch können Benutzer ein einzelnes Bild mit Ihrer e-Mail als Anlage senden.
     `TextEmailMessage1.Y + TextEmailMessage1.Height + 20`
     
 1. Legen Sie mit dem eingefügten **addmediawithimage** -Steuerelement die Höhe auf weniger als 210 fest.
-1. Wählen Sie in der Steuerelement Strukturansicht **addmediawithimage** >  **...**  > **neu anordnen** > **Senden an zurück**.
+1. Wählen Sie in der Ansicht Steuerelement Struktur die Option **addmediawithimage** aus, >  **...**  > **neu anordnen** > **an zurücksenden**.
    Dadurch wird verhindert, dass das Steuerelement vor dem **People browsegallery** -Steuerelement liegt.
 1. Ändern Sie die **height** -Eigenschaft von **emailpeoplegallery** in diese Formel:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
         304
     )
     ```
@@ -103,35 +102,35 @@ Dadurch können Benutzer ein einzelnes Bild mit Ihrer e-Mail als Anlage senden.
     
 1. Ändern **Sie die onselect** -Eigenschaft des **iconmail** -Steuer Elements in diese Formel:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
-    If( IsBlank( UploadedImage1 );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+    If( IsBlank( UploadedImage1 ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             { Importance: "Normal" }
-        );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+        ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             {
-                Importance: "Normal";
+                Importance: "Normal",
                 Attachments: Table(
                     {
-                        Name: "Image.jpg"; 
+                        Name: "Image.jpg", 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );;
-    Reset( TextEmailSubject1 );;
-    Reset( TextEmailMessage1 );;
-    Reset( AddMediaButton1 );;
+    );
+    Reset( TextEmailSubject1 );
+    Reset( TextEmailMessage1 );
+    Reset( AddMediaButton1 );
     Clear( MyPeople )
     ```
     
-    Diese Formel überprüft ein hochgeladenes Bild. Wenn keine vorhanden ist, wird derselbe `Office365.SendEmail`-Vorgang wie zuvor verwendet. Wenn ein Bild vorhanden ist, wird es in der Tabelle Anhänge als Anlage hinzugefügt.
+    Diese Formel überprüft ein hochgeladenes Bild. Wenn keine vorhanden ist, wird derselbe `Office365.SendEmail` Vorgang wie zuvor verwendet. Wenn ein Bild vorhanden ist, wird es in der Tabelle Anhänge als Anlage hinzugefügt.
     Nach dem Senden der e-Mail wird ein **zusätzlicher** Zurücksetzungs Vorgang für **addmediabutton** durchgeführt, um das hochgeladene Image zu entfernen.
 > [!NOTE]
 > Wenn Sie einer e-Mail mehr als eine Anlage hinzufügen möchten, fügen Sie der Tabelle Anhänge Datensätze hinzu.
@@ -142,13 +141,13 @@ In diesem Bildschirm wird der [Office365Users. searchuser](https://docs.microsof
 
 1. Wählen Sie im **People browsegallery** -Steuerelement eine zu ändernde Bezeichnung aus (oder fügen Sie Sie ein, und lassen Sie Sie ausgewählt).
 
-1. Ersetzen Sie bei ausgewählter Text-Eigenschaft in der **Bearbeitungs** Leiste den Inhalt durch `ThisItem.`.
+1. Ersetzen Sie bei ausgewählter Text-Eigenschaft in der **Bearbeitungs** Leiste den Inhalt durch `ThisItem.`
 
     IntelliSense zeigt eine Liste von Feldern an, die Sie auswählen können.
 
 1. Wählen Sie das gewünschte Feld aus.
 
-    Die **Text** -Eigenschaft wird auf `ThisItem.{FieldSelection}` aktualisiert.
+    Die **Text** Eigenschaft wird `ThisItem.{FieldSelection}`aktualisiert.
 
 ## <a name="integrate-the-screen-into-an-app"></a>Integrieren des Bildschirms in eine APP
 

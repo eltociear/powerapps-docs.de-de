@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b89f23ac1dec941fcc2f5d7bd03f927c08691f77
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 41536592493a2f17b187829fb778d2a6ca94134a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994059"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540758"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Herstellen einer Verbindung mit Cloudspeicher aus PowerApps
 PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser Verbindungen können Sie eine Excel-Datei speichern und die darin enthaltenen Informationen in Ihrer gesamten App nutzen. Hierzu zählen folgende Verbindungen:  
@@ -37,7 +37,7 @@ PowerApps bietet mehrere Cloudspeicherverbindungen. Bei Verwendung einer dieser 
   4. Speichern Sie die Änderungen.
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>Verbindung mit der Cloudspeicherverbindung herstellen
-1. Erweitern Sie auf [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Knoten **Verwalten**, und wählen Sie **Verbindungen** aus:  
+1. Erweitern Sie auf [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) den Knoten **Verwalten**, und wählen Sie **Verbindungen** aus:  
    
     ![Auswählen der Verbindungen](./media/cloud-storage-blob-connections/connections.png)
 2. Wählen Sie **Neue Verbindung** aus, und wählen Sie Ihre Cloudspeicherverbindung aus. Wählen Sie beispielsweise **OneDrive** aus.

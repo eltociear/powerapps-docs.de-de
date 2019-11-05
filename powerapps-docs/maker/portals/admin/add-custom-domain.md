@@ -6,17 +6,17 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/21/2019
+ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2e8cd720f4ad5d1ff285a6414e99f4322b60b7b0
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978506"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543110"
 ---
-# <a name="add-a-custom-domain-name"></a>Hinzufügen eines benutzerdefinierten Domänen Namens
+# <a name="add-a-custom-domain-name"></a>Hinzufügen eines benutzerdefinierten Domänennamens
 
 Eine benutzerdefinierte Domäne kann Ihren Kunden dabei helfen, Ihre Support Ressourcen leichter zu finden und Ihre Marke zu verbessern. Einem Portal kann nur ein benutzerdefinierter Domänen Name hinzugefügt werden. Nachdem Sie Ihr Portal bereitgestellt und ihren Domänen Namen erworben haben, benötigen Sie ein SSL-Zertifikat, um einen benutzerdefinierten Hostnamen einzurichten. Sie können das erworbene SSL-Zertifikat für Ihre Domäne verwenden, um Ihr Portal mithilfe eines Assistenten mit einer benutzerdefinierten Domäne zu verknüpfen.
 
@@ -51,6 +51,6 @@ Eine benutzerdefinierte Domäne kann Ihren Kunden dabei helfen, Ihre Support Res
 7. Wählen Sie **Fertig** stellen aus, um den Assistenten zu schließen.
 
     > [!Note]
-    > Wenn Sie den vorhandenen benutzerdefinierten Domänen Namen ändern möchten, müssen Sie ein neues SSL-Zertifikat hochladen und die Schritte im Assistenten wie [hier](#link-your-portal-to-a-custom-domain)beschrieben ausführen.
+    > Wenn Sie den vorhandenen benutzerdefinierten Domänen Namen ändern möchten, müssen Sie ein neues SSL-Zertifikat hochladen und die in diesem Abschnitt beschriebenen Schritte ausführen.
     
 

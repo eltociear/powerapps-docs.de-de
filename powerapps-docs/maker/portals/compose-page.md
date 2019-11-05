@@ -1,348 +1,351 @@
 ---
-title: Erstellen von Webseiten | Microsoft Docs
-description: Anweisungen zum Erstellen von Webseiten im Portal.
+title: Erstellen von Webseiten | Microsoft-Dokumentation
+description: Anweisungen zum Verfassen von Webseiten im Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 09/16/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542911"
 ---
+# <a name="compose-a-page"></a>Zusammenstellen einer Seite
 
-# <a name="compose-a-page"></a>Erstellen einer Seite
-
-[!include[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
-Wenn Sie die erforderlichen Webseiten hinzugefügt und ihre Hierarchie in der Siteübersicht verwaltet haben, können Sie verschiedene Komponenten hinzufügen. Mit dem WYSIWYG-Editor können Sie die erforderlichen Komponenten ganz leicht auf dem Canvas hinzuzufügen und bearbeiten. Die folgenden Komponenten können Sie auf dem Canvas hinzufügen und bearbeiten:
+Nach dem Hinzufügen der erforderlichen Webseiten und der Verwaltung Ihrer Hierarchie in der Sitemap können Sie verschiedene Komponenten hinzufügen. Mit dem WYSIWYG-Editor können Sie die erforderlichen Komponenten auf der Canvas problemlos hinzufügen und bearbeiten. Sie können die folgenden Komponenten auf der Canvas hinzufügen und bearbeiten:
 
 - Abschnitte
-    - Einspaltiger Abschnitt
-    - Zweispaltiger Abschnitt
-    - Dreispaltiger Abschnitt
-- Portalkomponenten
+    - Ein Spalten Abschnitt
+    - Abschnitt mit zwei Spalten
+    - Abschnitt mit drei Spalten
+- Portal Komponenten
     - Text
     - Bild
     - IFrame
     - Formular
-    - Liste
+    - List
     - Breadcrumb
 
 > [!NOTE]
-> Wenn Sie das Portal mithilfe des Portaldesigners anpassen, würden die Websitebenutzer eine Auswirkung auf die Leistung feststellen. Wir empfehlen daher, die Änderungen nicht während der Hauptnutzungszeiten auf einem Liveportal durchzuführen. 
+> Wenn Sie Ihr Portal mithilfe von powerapps Portale Studio anpassen, bemerken die Benutzer der Website eine Beeinträchtigung der Leistung. Es wird empfohlen, dass Sie die Änderungen in einem Live Portal außerhalb der Spitzenzeiten durchführen. 
 
-## <a name="use-the-wysiwyg-editor"></a>Verwenden des WYSIWYG-Editors
+## <a name="use-the-wysiwyg-editor"></a>Verwenden des WYSIWYG-editors
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
     > [!NOTE]
-    > Die bearbeitbaren Elemente werden durch eine Grenze voneinander abgetrennt.
+    > Die bearbeitbaren Elemente werden durch eine Grenze abgegrenzt.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie die hinzuzufügende Komponente aus.
+5.  Wählen Sie die Komponente aus, die hinzugefügt werden soll.
 
     > [!div class=mx-imgBorder]
     > ![Komponentenbereich](media/components-pane.png "Komponentenbereich")  
 
-    Die ausgewählte Komponente wird innerhalb des bearbeitbaren Elements dem Canvas hinzugefügt.
+    Die ausgewählte Komponente wird der Canvas im bearbeitbaren Element hinzugefügt.
 
-6.  Zum Löschen einer Komponente wählen Sie die Komponente auf dem Canvas aus. Dann wählen Sie **Löschen** in der Befehlsleiste oben auf der Seite aus.
+6.  Um eine Komponente zu löschen, wählen Sie die Komponente im Zeichenbereich aus, und wählen Sie dann in der Befehlsleiste am oberen Rand der Seite die Option **Löschen** aus.
 
     > [!div class=mx-imgBorder]
-    > ![Komponente "Löschen"](media/delete-component.png "Komponente \"Löschen\"")  
+    > ![Komponente löschen](media/delete-component.png "Komponente löschen")  
 
 ## <a name="add-sections"></a>Abschnitte hinzufügen
 
-Mit Abschnitten können Sie eine Struktur für die Seite definieren und Portalkomponenten entsprechend anordnen. Nachdem Sie Abschnitte zur Seite hinzugefügt haben, können Sie Portalkomponenten in den Abschnitten gemäß der Anforderung hinzufügen.
+In den Abschnitten können Sie eine Struktur für die Seite definieren und Portal Komponenten entsprechend anordnen. Wenn Sie der Seite Abschnitte hinzufügen, können Sie in den Abschnitten nach Bedarf Portal Komponenten hinzufügen.
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.
 
-2.  Wählen Sie die Seite aus, für die ein Abschnitt hinzugefügt werden soll.
+2.  Wählen Sie die Seite aus, für die Sie einen Abschnitt hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.
 
-5.  Wählen Sie unter **Abschnittslayout** den Abschnittstyp aus, der eingefügt werden soll.
+5.  Wählen Sie unter **Abschnitts Layout**den Typ aus, der eingefügt werden soll.
 
-6.  Geben Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms die folgenden Informationen ein oder wählen Sie sie aus:
+6.  Geben Sie im Eigenschaften Bereich auf der rechten Seite des Bildschirms die folgenden Informationen ein, oder wählen Sie Sie aus:
 
-    - **Mindesthöhe**: Geben Sie die Mindesthöhe des Abschnitts ein. Wenn Sie eine Komponente hinzufügen, die mehr Raum als die angegebene Höhe benötigt, wird der Abschnitt erweitert, damit die Komponente genügend Platz hat. Standardmäßig beträgt die Mindesthöhe 100 px. Sie können die Höhe auch in Punkten (pt) und in Prozent (%) angeben.
+    - **Min height**: Geben Sie die Mindesthöhe des Abschnitts ein. Wenn Sie eine Komponente hinzufügen, die mehr Platz als die angegebene Höhe einnimmt, wird der Abschnitt erweitert, um die Komponente aufzunehmen. Standardmäßig beträgt die Mindesthöhe 100 px. Sie können auch die Höhe in Punkte (PT) und in Prozent (%) eingeben.
 
         > [!div class=mx-imgBorder]
         > ![Ausrichtung im Abschnitt](media/section-props-height.png "Ausrichtung im Abschnitt")  
 
-    - **Ausrichtung**: Wählen Sie aus, ob die Komponente im Abschnitt links, mittig oder rechts ausgerichtet sein muss.
+    - **Ausrichtung**: Wählen Sie aus, ob die Komponente im Abschnitt Links, zentriert oder rechtsbündig ausgerichtet werden muss.
 
         > [!div class=mx-imgBorder]
         > ![Ausrichtung im Abschnitt](media/section-props-align.png "Ausrichtung im Abschnitt")  
 
-    - **Hintergrund**: Wählen Sie aus, ob Sie eine Farbe oder ein Bild als Abschnittshintergrund haben möchten.
+    - **Background**: Wählen Sie diese Option aus, wenn die Farbe oder ein Bild als Abschnitts Hintergrund aussehen soll.
 
-        - **Ausfüllen**: Wählen Sie eine Farbe für den Hintergrund aus.
+        - **Fill**: Wählen Sie eine Farbe für den Hintergrund aus.
 
             > [!div class=mx-imgBorder]
             > ![Füllfarbe im Abschnitt](media/section-props-fill.png "Füllfarbe im Abschnitt")  
 
-        - **Bild**: Wählen Sie ein Bild aus der Liste aus. Wenn Sie ein neues Bild hochladen möchten, wählen Sie **Bild hochladen** aus.
+        - **Image**: Wählen Sie ein Bild aus der Liste aus. Wenn Sie ein neues Bild hochladen möchten, wählen Sie **Bild hochladen**aus.
 
             > [!div class=mx-imgBorder]
-            > ![Hinzufügen eines Bilds im Abschnitt](media/section-props-image.png "Hinzufügen eines Bilds im Abschnitt")  
+            > ![Bild im Abschnitt hinzufügen](media/section-props-image.png "Bild im Abschnitt hinzufügen")  
 
-7.  Fügen Sie die erforderliche Portalkomponente im Abschnitt hinzu.
+7.  Fügen Sie im Abschnitt die erforderliche Portal Komponente hinzu.
 
 
-## <a name="add-portal-components"></a>Hinzufügen von Portalkomponenten
+## <a name="add-portal-components"></a>Hinzufügen von Portal Komponenten
 
-Sie können die folgenden Komponenten auf einer Webseite hinzufügen.
+Sie können die folgenden Komponenten auf einer Webseite hinzufügen:
 
 - [Text](#add-text-box)
 - [Bild](#add-image)
 - [IFrame](#add-iframe)
 - [Formular](#add-form)
-- [Liste](#add-list)
+- [List](#add-list)
 - [Breadcrumb](#add-breadcrumb)
 
 
-### <a name="add-text-box"></a>Hinzufügen eines Textfelds
+### <a name="add-text-box"></a>Hinzufügen des Textfelds
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie unter **Portalkomponenten** die Option **Text**.
+5.  Wählen Sie unter " **Portal Komponenten**" die Option **Text**aus.
 
 6.  Geben Sie den erforderlichen Text in das Textfeld ein.
 
-7.  Wenn Sie den Text formatieren möchten, wählen Sie den Text aus, um die Formatoptionen anzuzeigen. Ändern Sie Schriftgröße und -stil nach Bedarf.
+7.  Um den Text zu formatieren, wählen Sie den Text aus, um die Formatierungsoptionen anzuzeigen. Ändern Sie den Schrift Grad und den Stil nach Bedarf.
 
     > [!div class=mx-imgBorder]
-    > ![Textkomponente](media/text-component.png "Textkomponente")  
+    > ![Textkomponente](media/text-component.png "Text Komponente")  
 
-8. Wählen Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms die folgenden Informationen aus:
+8. Wählen Sie im Bereich Eigenschaften auf der rechten Seite des Bildschirms die folgenden Informationen aus:
 
-    - **Ausrichtung**: Wählen Sie aus, ob der Text links, mittig oder rechts ausgerichtet sein muss.
+    - **Ausrichtung**: Wählen Sie aus, ob der Text Links, zentriert oder rechtsbündig ausgerichtet werden muss.
 
-    - **Schriftfarbe**: Wählen Sie eine Farbe für den Text aus.
+    - **Schriftart Farbe**: Wählen Sie eine Farbe für den Text aus.
 
         > [!div class=mx-imgBorder]
-        > ![Auswählen der Textausrichtung und -farbe](media/text-props.png "Auswählen der Textausrichtung und -farbe")  
+        > ![Textausrichtung und-Farbe auswählen](media/text-props.png "Textausrichtung und-Farbe auswählen")  
  
 
-### <a name="add-image"></a>Hinzufügen eines Bilds
+### <a name="add-image"></a>Bild hinzufügen
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie unter **Portalkomponenten** die Option **Bild**. Der Bildplatzhalter wird dem Canvas hinzugefügt.
+5.  Wählen Sie unter " **Portal Komponenten**" die Option **Bild**aus. Der Bild Platzhalter wird der Canvas hinzugefügt.
 
-6.  Geben Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms die folgenden Informationen ein:
+6.  Geben Sie im Eigenschaften Bereich auf der rechten Seite des Bildschirms die folgenden Informationen ein:
 
-    - **Bild**: Wählen Sie diese Option aus, wenn Sie ein vorhandenes Bild auswählen oder ein neues Bild hochladen möchten. Wenn Sie ein zuvor hochgeladenes Bild auswählen möchten, wählen Sie das Bild aus der Liste **Bild auswählen** aus. Um ein neues Bild hochzuladen, wählen Sie **Bild hochladen** aus. Alle hochgeladenen Bilder sind in der Bildbibliothek enthalten, die über die Liste **Bild auswählen** erneut ausgewählt werden kann.
+    - **Image**: Wählen Sie diese Option aus, wenn Sie ein vorhandenes Bild auswählen oder ein neues hochladen möchten. Wenn Sie ein zuvor hochgeladenes Image auswählen möchten, wählen Sie ein Bild aus der Liste **Image auswählen** aus. Wählen Sie zum Hochladen eines neuen Bilds **Bild hochladen**aus. Alle hochgeladenen Bilder sind in der Bildbibliothek enthalten, die in der Liste **Image auswählen** erneut ausgewählt werden kann.
 
         > [!div class=mx-imgBorder]
         > ![Bildeigenschaften](media/image-props.png "Bildeigenschaften")  
 
         > [!NOTE]
-        > - Sie können nur Bilder des Typs PNG, SVG, JPG und JPEG mit einer maximalen Größe von 5 MB hochladen.
-        > - Hochgeladene Bilder müssen einen einzigartigen Namen besitzen. Sie müssen den Namen des Bilds ändern, um es wieder hochzuladen.
+        > - Sie können nur die Bilder des Typs PNG, SVG, JPG und JPEG mit der maximalen Größe von 5 MB hochladen.
+        > - Ein Bild mit dem gleichen Namen kann nicht hochgeladen werden. Sie müssen den Namen des Images ändern, um es erneut hochladen zu können.
 
-    - **Externe URL**: Wählen Sie diese Option aus, wenn Sie ein Bild von einer externen URL hochladen möchten. Geben Sie die URL im Feld **Externe URL** ein. Nur gesicherte Links werden akzeptiert – d. h. https:// ist erforderlich. Wenn Sie Bilder in Ihrem Content Delivery Network gespeichert haben, können Sie den Link in diesem Feld angeben.
+    - **Externe URL**: Wählen Sie diese Option aus, wenn Sie ein Bild aus einer externen URL hochladen möchten. Geben Sie die URL in das Feld **externe URL** ein. Nur gesicherte Verknüpfungen werden akzeptiert, d. –. https://ist obligatorisch. Wenn Sie Bilder in Ihrem Content Delivery Network gespeichert haben, können Sie den Link in diesem Feld angeben.
 
         > [!div class=mx-imgBorder]
-        > ![Externe URL für Bild](media/image-ext-url.png "Externe URL für Bild")  
+        > ![Externe Bild-URL](media/image-ext-url.png "Externe Bild-URL")  
 
     -   **Formatierungsoptionen**
 
-        - **Breite**: Geben Sie die Breite des Bilds ein.
+        - **Width**: Geben Sie die Breite des Bilds ein.
 
-        - **Höhe**: Geben Sie die Höhe des Bilds ein.
+        - **Height**: Geben Sie die Höhe des Bilds ein.
 
     > [!NOTE]
-    > Sie können auch das Bild auf der Canvas auswählen und die Ziehpunkte ziehen, um seine Größe zu ändern.
+    > Sie können auch das Bild auf der Canvas auswählen und die Zieh Punkte ziehen, um die Größe zu ändern.
 
-### <a name="add-iframe"></a>Hinzufügen eines IFrames
+### <a name="add-iframe"></a>Iframe hinzufügen
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie unter **Portalkomponenten** die Option **IFrame**. Der IFrame-Platzhalter wird dem Canvas hinzugefügt.
+5.  Wählen Sie unter **Portal Komponenten**die Option **iframe**aus. Der iframe-Platzhalter wird der Canvas hinzugefügt.
 
-6.  Geben Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms die folgenden Informationen ein:
+6.  Geben Sie im Eigenschaften Bereich auf der rechten Seite des Bildschirms die folgenden Informationen ein:
 
-    - **Breite**: Geben Sie die Breite des IFrames ein.
+    - **Width**: gibt die Breite des iframes an.
 
-    - **Höhe**: Geben Sie die Höhe des IFrames ein.
+    - **Height**: gibt die Höhe des iframes an.
 
-    - **Link**: Geben Sie die URL der Website ein, die im IFrame angezeigt werden soll. Nur gesicherte Links werden akzeptiert – d. h. https:// ist erforderlich. Standardmäßig ist <https://www.bing.com> als Wert verfügbar.
+    - **Link**: Geben Sie die URL der Website ein, die im iframe angezeigt werden soll. Nur gesicherte Verknüpfungen werden akzeptiert, d. –. https://ist obligatorisch. Standardmäßig ist <https://www.bing.com> als Wert verfügbar.
 
         > [!div class=mx-imgBorder]
-        > ![IFrame-Eigenschaften](media/iframe-props.png "IFrame-Eigenschaften")  
+        > ![iframe-Eigenschaften](media/iframe-props.png "Iframe-Eigenschaften")  
 
     > [!NOTE]
-    > Sie können auch den IFrame auf der Canvas auswählen und die Ziehpunkte ziehen, um seine Größe zu ändern.
+    > Sie können auch den IFRAME auf der Canvas auswählen und die Zieh Punkte ziehen, um die Größe zu ändern.
 
-### <a name="add-form"></a>Hinzufügen eines Formulars
+### <a name="add-form"></a>Formular hinzufügen
 
-Ein Formular ist eine datengestützte Konfiguration, mit der Sie ein Formular hinzuzufügen können, um Daten in einem Portal zu sammeln, ohne dass ein Entwickler hierfür das Formular auf der Portaloberfläche darstellen muß. [Formulare werden in Common Data Service erstellt](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/form-designer-overview) und Sie können sie für Webseiten im Portal oder zusammen mit Listen verwenden, um vollständige Webanwendungen zu erstellen.  
+Das Formular ist eine datengesteuerte Konfiguration, mit der Sie ein Formular zum Sammeln von Daten im Portal hinzufügen, ohne dass ein Entwickler das Formular im Portal verwenden muss. [Formulare werden in Common Data Service erstellt](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-overview) , und Sie können Sie in Webseiten im Portal oder in Verbindung mit Listen verwenden, um umfassende Webanwendungen zu erstellen.  
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie unter **Portalkomponenten** die Option **Formular**.
+5.  Wählen Sie unter " **Portal Komponenten**" die Option **Formular**aus.
 
-6.  Wählen Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms eine der folgenden Optionen aus:
+6.  Wählen Sie im Bereich Eigenschaften auf der rechten Seite des Bildschirms eine der folgenden Optionen aus:
 
     - **Neu erstellen**: Erstellen Sie ein neues Formular.
     - **Vorhandene verwenden**: Verwenden Sie ein vorhandenes Formular.
 
-7. Geben Sie Informationen ein oder treffen Sie eine Auswahl für folgende Optionen:
+7. Geben Sie Informationen ein, oder treffen Sie eine Auswahl für Folgendes:
 
-    - **Name**: Der Name des Formulars.
+    - **Name**: der Name des Formulars.
 
-    - **Entität**: Der Name der Entität, aus der das Formular geladen wird.
+    - **Entity**: der Name der Entität, von der das Formular geladen wird.
 
-    - **Formularlayout**: Der Name des Formulars in der Zielentität in Common Data Service, die gerendert wird.
+    - **Formularlayout**: der Name des Formulars in der Ziel Entität in Common Data Service, das gerendert werden soll.
 
     - **Modus**: Wählen Sie eine der folgenden Optionen aus:
 
-        - **Einfügen**: Gibt an, dass das Formular nach der Übermittlung einen neuen Datensatz einfügen soll.
+        - **Insert**: gibt an, dass das Formular beim Einreichen einen neuen Datensatz einfügen soll.
 
-        - **Bearbeiten**: Gibt an, dass das Formular einen vorhandenen Datensatz bearbeiten soll.
+        - **Edit**: gibt an, dass das Formular einen vorhandenen Datensatz bearbeiten soll.
 
-        - **Schreibgeschützt**: Gibt an, dass das Formular ein nicht bearbeitbares Formular eines vorhandenen Datensatzes anzeigen soll.
+        - **Read Only**: gibt an, dass im Formular das nicht bearbeitbare Formular eines vorhandenen Datensatzes angezeigt werden soll.
 
         > [!NOTE]
-        > Die Standardoption für die Modi **Bearbeiten** und **Schreibgeschützt** ist als Name für Abfragezeichenfolgeparameter festgelegt und wird in der URL als ID weitergegeben. Wenn Sie diese Werte ändern möchten, müssen Sie die Portalverwaltungs-App öffnen und die Formulareigenschaften aktualisieren.
+        > Die Standardoption für **den Modus "** **Bearbeiten** " und "schreibgeschützt" wird als Parameter Name der Abfrage Zeichenfolge festgelegt. Um diese Werte zu ändern, müssen Sie die Portal Verwaltungs-APP öffnen und die Formular Eigenschaften aktualisieren.
 
     - **Bei Erfolg**: Wählen Sie eine der folgenden Optionen aus:
 
-        - **Erfolgsmeldung anzeigen**: Erfordert, dass bei erfolgreicher Übermittlung des Formulars eine Meldung für den Benutzer angezeigt wird. Sie können auch **Formular bei Erfolg ausblenden** auswählen, um das Formular nach erfolgreicher Übermittlung auszublenden.
+        - **Erfolgsmeldung anzeigen**: erfordert eine Meldung, die dem Benutzer bei erfolgreicher Übermittlung des Formulars angezeigt wird. Sie können bei **Erfolg auch Formular ausblenden** auswählen, um das Formular nach erfolgreicher Übermittlung auszublenden.
 
-        - **Umleiten zu Webseite**: Dabei wird der Benutzer auf die ausgewählte Webseite im Portal weitergeleitet. Sie müssen eine Webseite aus der Liste **Umleiten zu Webseite** auswählen.
+        - **An Webseite umleiten**: leitet den Benutzer an die ausgewählte Webseite im Portal um. Sie müssen eine Webseite aus der Liste **an Webseite umleiten** auswählen.
 
-        - **Umleitung zu URL**: Dabei wird der Benutzer zur angegebenen URL umgeleitet. Sie müssen eine URL in das Feld **Umleitung zu URL** eingeben.
+        - **An URL umleiten**: leitet den Benutzer zur angegebenen URL um. Sie müssen eine URL in das Feld **Umleitung an URL** eingeben.
 
-    - **Captcha für anonyme Benutzer anzeigen**: Zeigt anonymen Benutzern ein Captcha an.
+    - **CAPTCHA für anonyme Benutzer anzeigen**: zeigt CAPTCHA für anonyme Benutzer an.
 
-    - **Captcha für authentifizierte Benutzer anzeigen**: Zeigt authentifizierten Benutzern ein Captcha an.
+    - **CAPTCHA für authentifizierte Benutzer anzeigen**: zeigt CAPTCHA für authentifizierte Benutzer an.
 
-    - **Entitätsberechtigungen aktivieren**: Entitätsberechtigungen, die für das Formular berücksichtigt werden sollen. Dies ist standardmäßig nicht ausgewählt. Wenn diese Option ausgewählt ist, sind explizite Berechtigungen für jeden Benutzer erforderlich, der auf das Formular zugreifen möchte. Weitere Informationen: [Entitätsberechtigung](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions)
+    - **Entitäts Berechtigungen aktivieren**: Entitäts Berechtigungen, die für das Formular berücksichtigt werden sollen. Standardmäßig ist diese Option nicht ausgewählt. Wenn diese Option ausgewählt ist, sind explizite Berechtigungen für jeden Benutzer erforderlich, um auf das Formular zuzugreifen. Weitere Informationen: [Entitäts Berechtigung](configure/assign-entity-permissions.md)
 
         > [!div class=mx-imgBorder]
-        > ![Formulareigenschaften](media/form-props.png "Formulareigenschaften")
+        > ![Formular Eigenschaften](media/form-props.png "Formular Eigenschaften")
 
-### <a name="add-list"></a>Hinzufügen einer Liste
+### <a name="add-list"></a>Liste hinzufügen
 
-Eine Liste ist eine datengestützte Konfiguration, die Ihnen die Möglichkeit gibt, eine Webseite hinzuzufügen, die eine Liste von Einträgen rendert, ohne dass ein Entwickler das Raster im Portal bearbeiten muss. Bei Listen werden [Common Data Service-Ansichten](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/create-and-edit-views) verwendet, um Datensätze im Portal anzuzeigen.  
+Die Liste ist eine datengesteuerte Konfiguration, mit der Sie eine Webseite hinzufügen, die eine Liste von Datensätzen Renderer, ohne dass ein Entwickler das Raster im Portal anzeigen muss. Listen verwenden [Common Data Service Ansichten](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-and-edit-views) zum Anzeigen von Datensätzen im Portal.  
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie unter **Portalkomponenten** die Option **Liste**.
+5.  Wählen Sie unter " **Portal Komponenten**" die Option **Liste**aus.
 
-6.  Wählen Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms eine der folgenden Optionen aus:
+6.  Wählen Sie im Bereich Eigenschaften auf der rechten Seite des Bildschirms eine der folgenden Optionen aus:
 
     - **Neu erstellen**: Erstellen Sie eine neue Liste.
-    - **Vorhandene verwenden**: Verwenden Sie eine vorhandene Liste.
+    - **Vorhandene verwenden**: vorhandene Liste verwenden.
 
-7.  Geben Sie Informationen ein oder treffen Sie eine Auswahl für folgende Optionen:
+7.  Geben Sie Informationen ein, oder treffen Sie eine Auswahl für Folgendes:
 
-    - **Name**: Der Name der Liste.
+    - **Name**: Name der Liste.
 
-    - **Entität**: Der Name der Entität, aus der die Ansichten geladen werden.
+    - **Entity**: der Name der Entität, von der die Sichten geladen werden.
 
-    - **Ansichten**: Die Liste der Ansichten der Zielentität, die gerendert werden soll. Sie können mehrere Ansichten auswählen, um Datensätze in der Liste anzuzeigen. Das zuerst ausgewählte Ansicht wird zur Standardansicht.
+    - **Sichten**: die Liste der Sichten der Ziel Entität, die gerendert werden soll. Sie können mehrere Ansichten auswählen, um Datensätze in der Liste anzuzeigen. Die erste ausgewählte Ansicht ist die Standardansicht.
 
-    - **Neuen Datensatz erstellen**: Damit können Benutzer einen neuen Datensatz erstellen. Wählen Sie eine Webseite aus, die ein Formular enthält, um einen neuen Datensatz zu erstellen.
+    - **Neuen Datensatz erstellen**: ermöglicht es einem Benutzer, einen Datensatz zu erstellen. Wählen Sie eine Webseite aus, die ein Formular zum Erstellen eines neuen Datensatzes enthält.
 
-    - **Details anzeigen**: Damit können Benutzer sich Details ansehen. Wählen Sie eine Webseite aus, die ein Formular enthält, um Details anzuzeigen.
+    - **Details anzeigen**: ermöglicht Benutzern das Anzeigen von Details. Wählen Sie eine Webseite aus, die ein Formular zum Anzeigen von Details enthält.
 
-    - **Datensatz bearbeiten**: Damit können Benutzer einen Datensatz bearbeiten. Wählen Sie eine Webseite aus, die ein Formular enthält, um den Datensatz zu bearbeiten.
+    - **Datensatz bearbeiten**: ermöglicht es einem Benutzer, einen Datensatz zu bearbeiten. Wählen Sie eine Webseite aus, die ein Formular zum Bearbeiten des Datensatzes enthält.
 
-    - **Datensatz löschen**: Damit können Benutzer einen Datensatz löschen.
+    - **Datensatz löschen**: ermöglicht einem Benutzer das Löschen eines Datensatzes.
 
-    - **Leere Listenmeldung**: Meldung, die angezeigt wird, wenn keine Datensätze vorhanden sind, die angezeigt werden können.
+    - **Leere Listen Meldung**: die Meldung, die angezeigt werden soll, wenn keine Datensätze angezeigt werden sollen.
 
-    - **Anzahl der Datensätze pro Seite**: Ein ganzzahliger Wert, um die Anzahl der Datensätze anzugeben, die auf einer Seite angezeigt werden.
+    - **Anzahl der Datensätze pro Seite**: ein ganzzahliger Wert, der die Anzahl der Datensätze angibt, die auf einer Seite angezeigt werden sollen.
 
-    - **Suche in der Entitätsliste aktivieren**: Damit können Benutzer in der Liste nach Datensätzen suchen.
+    - **Suche in Entitäts Liste aktivieren**: ermöglicht einem Benutzer das Durchsuchen von Datensätzen in der Liste.
 
-    - **Entitätsberechtigungen aktivieren**: Entitätsberechtigungen, die für die Liste berücksichtigt werden sollen. Dies ist standardmäßig nicht ausgewählt. Wenn diese Option ausgewählt ist, sind explizite Berechtigungen für jeden Benutzer erforderlich, der auf das Formular zugreifen möchte. Weitere Informationen: [Entitätsberechtigung](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/assign-entity-permissions)  
+    - **Entitäts Berechtigungen aktivieren**: Entitäts Berechtigungen, die für die Liste berücksichtigt werden sollen. Standardmäßig ist diese Option nicht ausgewählt. Wenn diese Option ausgewählt ist, sind explizite Berechtigungen für jeden Benutzer erforderlich, um auf das Formular zuzugreifen. Weitere Informationen: [Entitäts Berechtigung](configure/assign-entity-permissions.md)  
 
     > [!div class=mx-imgBorder]
-    > ![Listeneigenschaften](media/list-props.png "Listeneigenschaften")
+    > ![Listen Eigenschaften](media/list-props.png "Listen Eigenschaften")
 
-### <a name="add-breadcrumb"></a>Hinzufügen eines Breadcrumbs
+### <a name="add-breadcrumb"></a>Breadcrumb hinzufügen
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie die Seite aus, auf der Sie die Komponente hinzufügen möchten.
+2.  Wählen Sie die Seite aus, der Sie die Komponente hinzufügen möchten.
 
-3.  Wählen Sie ein bearbeitbares Element auf dem Canvas aus.
+3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie **Komponenten** ![Komponentensymbol](media/components-icon.png "Komponentensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
 
-5.  Wählen Sie unter **Portalkomponenten** die Option **Breadcrumb**.
+5.  Wählen Sie unter " **Portal Komponenten**" **Breadcrumb**aus.
 
 ## <a name="add-a-custom-menu"></a>Hinzufügen eines benutzerdefinierten Menüs
 
-Standardmäßig wird das Menü auf der Website automatisch anhand der Hierarchie der Webseiten erstellt. Dies wird als **Standardmenü** bezeichnet. Wenn Sie ein benutzerdefiniertes Menü erstellen möchten, müssen Sie den Weblinksatz in der Portalverwaltungs-App erstellen. Weitere Informationen: [Verwalten von Weblinks](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/manage-web-links)
+Standardmäßig wird das Menü auf der Website basierend auf der Hierarchie der Webseiten automatisch erstellt. Sie wird als **Standard** Menü bezeichnet. Zum Erstellen eines benutzerdefinierten Menüs müssen Sie den Weblink erstellen, der in der Portal Verwaltungs-App festgelegt ist. Weitere Informationen finden Sie unter [Verwalten von Weblinks](configure/manage-web-links.md) .
 
-Nachdem Sie den Weblinksatz erstellt haben:
+Nachdem Sie den weblinksatz erstellt haben:
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im Portaldesigner zu öffnen.
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.
 
-2.  Wählen Sie die Header-Komponente aus. 
+2.  Wählen Sie die Header Komponente aus. 
 
-3.  Wählen Sie in den Eigenschaften auf der rechten Seite des Bildschirms den Weblinksatz aus der Liste **Navigationsmenü** aus.
+3.  Wählen Sie in den Eigenschaften auf der rechten Seite des Bildschirms den Namen des weblinksets in der Liste **Navigationsmenü** aus.
 
     > [!div class=mx-imgBorder]
     > ![Navigationsmenü](media/navigation-menu.png "Navigationsmenü")
 
 ## <a name="use-code-editor"></a>Verwenden des Code-Editors
 
-Um die Quelle einer Komponente aus dem Canvas anzuzeigen, wählen Sie die Komponente und dann das Symbol für den Quellcode-Editor **&lt;/&gt;** in der Fußzeile aus.
+Um die Quelle einer Komponente im Zeichenbereich anzuzeigen, wählen Sie die Komponente aus, und wählen Sie dann das Symbol Quell Code-Editor aus, **&lt;/&gt;** in der Fußzeile aus.
 
 > [!div class=mx-imgBorder]
-> ![Symbol für den Code-Editor](media/code-editor-icon.png "Symbol für den Code-Editor")  
+> ![Symbol für Code-Editor](media/code-editor-icon.png "Symbol für Code-Editor")  
 
-Der Quellcode wird im Bereich **Code-Editor** am unteren Bildschirmrand angezeigt. Die Änderungen, die Sie zuvor vorgenommen haben, werden im Quellcode aktualisiert. Wenn Sie Änderungen vornehmen möchten, aktualisieren Sie den Quellcode und wählen Sie **Speichern** aus. Die Änderungen werden im Canvas berücksichtigt.
+Der Quellcode wird im Bereich Code- **Editor** unten auf dem Bildschirm angezeigt. Die Änderungen, die Sie zuvor vorgenommen haben, werden im Quellcode aktualisiert. Aktualisieren Sie den Quellcode, und wählen Sie **Speichern**aus, um Änderungen vorzunehmen. Die Änderungen werden im Zeichenbereich widergespiegelt.
 
 > [!div class=mx-imgBorder]
 > ![Code-Editor](media/code-editor.png "Code-Editor") 
 
 > [!NOTE]
-> Sie können im Quellcode-Editor Liquid-Tags für die erweiterte Konfiguration hinzufügen. Weitere Informationen: [Arbeiten mit Liquid-Vorlagen](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/custom-templates-dynamic-content)
+> Sie können auch Liquid-Tags im Quellcode-Editor für die erweiterte Konfiguration hinzufügen. Weitere Informationen finden Sie [unter Arbeiten mit Liquid-Vorlagen](liquid/liquid-overview.md) .
 
 

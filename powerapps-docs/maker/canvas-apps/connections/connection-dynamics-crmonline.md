@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c061d43a766bfdcd0a560c5959756f79751a7f2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 48605d97a8b311f806ff3556474d9bc5f32260e1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61547271"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541082"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Herstellen einer Verbindung mit Dynamics 365 aus PowerApps
 In PowerApps können Sie schnell und mit nur wenig oder überhaupt keinem Code mobile Apps generieren, anpassen, freigeben und ausführen. Mithilfe des Dynamics 365-Connectors können Sie nützliche mobile Apps erstellen, die Sie in nur wenigen Minuten für Ihre Organisation freigeben können.
@@ -30,7 +29,7 @@ Durch Ausführen der in diesem Artikel beschriebenen Schritte erstellen Sie eine
 Zum Durcharbeiten dieses Lernprogramms benötigen Sie ein Microsoft Office 365-Konto mit einem Dynamics 365-Abonnement.
 
 ## <a name="create-a-connection"></a>Verbindung erstellen
-1. [Melden Sie sich bei PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. [Melden Sie sich bei PowerApps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Klicken Sie in der linken Navigationsleiste auf **Verbindungen**.
    
     ![Option „Verbindungen“ im Menü „Datei“](./media/connection-dynamics-crmonline/file-connections.png)
@@ -48,7 +47,7 @@ Zum Durcharbeiten dieses Lernprogramms benötigen Sie ein Microsoft Office 365-K
     Eine Verbindung wird erstellt.
 
 ## <a name="generate-an-app-automatically"></a>Eine App automatisch generieren
-1. [Melden Sie sich bei PowerApps an](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie anschließend in der unteren linken Ecke auf **Neue App**.
+1. [Melden Sie sich bei PowerApps an](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und klicken Sie anschließend in der unteren linken Ecke auf **Neue App**.
    
     ![Neue App](./media/connection-dynamics-crmonline/new-app.png)
 2. Klicken Sie unter **Mit eigenen Daten beginnen** in der Kachel **Dynamics 365** auf **Telefonlayout**.
@@ -82,7 +81,7 @@ In diesem Verfahren konfigurieren Sie **BrowseScreen1** so, dass für die einzel
     ![Auswählen des Layouts](./media/connection-dynamics-crmonline/select-layout.png)
 4. Kopieren Sie diese Formel, und fügen Sie sie bei ausgewähltem Katalog in der Bearbeitungsleiste (rechts neben der Schaltfläche **fx**) ein:
    
-    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
+    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
 5. Legen Sie im rechten Bereich die obere Dropdownliste auf **firstname** und die mittlere Dropdownliste auf **lastname** fest.
    
     ![Auswählen von Body1](./media/connection-dynamics-crmonline/firstname-lastname.png)

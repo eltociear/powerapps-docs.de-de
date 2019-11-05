@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a1696437f434063b4297df220f1cb406bc993f8
-ms.sourcegitcommit: 98f6ce1531e69e2aae1000eda7548434d77cafe0
+ms.openlocfilehash: 69d29136f5184ed50be6380ee1a91847d4506d6a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73142614"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541191"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Systemanforderungen, Einschränkungen und Konfigurationswerte für Canvas-Apps
 In diesem Artikel werden Anforderungen für Geräteplattformen und Webbrowser sowie Einschränkungen und Konfigurationswerte für PowerApps behandelt.
@@ -98,10 +98,10 @@ In dieser Liste werden alle Dienste aufgeführt, mit denen PowerApps Studio komm
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph: zum erhalten von Benutzerinformationen (z. b. Profilfoto) |
 | gallery.azure.com |https |Beispiel- und Vorlagen-Apps |
 | \*. Azure-APIM.net |https |API-Hubs: Verschiedene Unterdomänen für jedes Gebietsschema |
-| \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
-| \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. powerapps.com |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
+| \*. azureedge.net |https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | \*. BLOB.Core.Windows.net |https | Blob Storage |
-| \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Web.powerapps.com |
+| \*. Flow.Microsoft.com | https | Create.powerapps.com, make.powerapps.com, Content.powerapps.com und Make.powerapps.com |
 | *. Dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Telemetrie |
 | localhost | https | PowerApps Mobile

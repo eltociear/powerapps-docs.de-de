@@ -9,14 +9,14 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: aead447bbab7f6e5758cdea0a9c6be5c0e8f41e2
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978391"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542840"
 ---
-# <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C Anbieter Einstellungen für Portale
+# <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C-Anbietereinstellungen für Portale
 
 mit [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) werden Office 365-und Dynamics 365-Dienste für die Mitarbeiter-oder interne Authentifizierung ermöglicht. [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C ist eine Erweiterung für dieses Authentifizierungs Modell, das die Anmeldung externer Kunden über lokale Anmelde Informationen und den Verbund mit verschiedenen allgemeinen Identitäts Anbietern ermöglicht.
 
@@ -497,7 +497,7 @@ Wenn ein neuer Kunde, der nicht in Common Data Service vorhanden ist, bereitgest
 
 **Format**: attribute1 = claim1, attribute2 = claim2, attribute3 = claim3
 
-Beispiel: FirstName =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+Beispiel: FirstName =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
 > Stellen Sie sicher, dass Sie die e-Mail-Adresse der primären e-Mail (EmailAddress1) des Kontakts zuordnen. Wenn Sie dem Kontaktdaten Satz sekundäre e-Mail (EmailAddress2) oder Alternative e-Mail-Adresse (EmailAddress3) hinzugefügt und der e-Mail zugeordnet haben, werden dem Kontakt keine Identitätsinformationen hinzugefügt, und ein neuer wird mit der für die Registrierung verwendeten e-Mail-Adresse erstellt. die primäre e-Mail-Adresse (EmailAddress1).
@@ -512,7 +512,7 @@ Die Daten in Common Data Service und im Identitäts Anbieter sind nicht direkt v
 
 **Format**: attribute1 = claim1, attribute2 = claim2, attribute3 = claim3
 
-Beispiel: FirstName =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+Beispiel: FirstName =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
 Der Anspruchs Name ist das Feld Anspruchstyp, das neben dem-Attribut in den Anwendungs Ansprüchen der Anmelde Richtlinien aufgeführt ist.
 

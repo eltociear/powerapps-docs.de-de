@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: 99594d99aa0ab1ae4971f3ec2eb1987bb7dcfbcc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256107"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539024"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Integrieren von Canvas-Apps in Websites und andere Dienste
 Die apps, die Sie erstellen, sind oftmals besonders nützlich, wenn Sie verfügbar sind, wo die Benutzer ihre Arbeit erledigen. Wenn Sie Canvas-apps in einen iframe einbetten, können Sie diese apps in Websites und andere Dienste integrieren, wie z. b. Power BI oder SharePoint.
@@ -32,7 +32,7 @@ Berücksichtigen Sie die folgenden Einschränkungen:
 - Nur PowerApps-Benutzer im gleichen Mandanten haben Zugriff auf die eingebettete App.
 - Wenn Sie mit Internet Explorer 11 auf PowerApps zugreifen möchten, müssen Sie die Kompatibilitätsansicht deaktivieren.
 
-Sie können Canvas-apps auch ohne Verwendung eines Iframes in SharePoint Online integrieren. Weitere Informationen finden Sie unter: [Verwenden Sie das powerapps-Webpart](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+Sie können Canvas-apps auch ohne Verwendung eines Iframes in SharePoint Online integrieren. Weitere Informationen: [verwenden Sie das powerapps-Webpart](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Festlegen von URI-Parametern für Ihre App
 Wenn Sie über eine einzubettende App verfügen, besteht der erste Schritt im Festlegen von Parametern für den URI (Uniform Resource Identifier), um dem iframe mitzuteilen, wo sich die App befindet. Der URI liegt in der folgenden Form vor:
@@ -42,11 +42,11 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
 > [!IMPORTANT]
-> Seit August 2019 hat sich das URI-Format von https://web.powerapps.com/webplayer in https://apps.powerapps.com/play geändert. Aktualisieren Sie alle eingebetteten iFrames, damit das neue URI-Format verwendet wird. Verweise auf das vorherige Format werden an den neuen URI umgeleitet, um die Kompatibilität zu gewährleisten.
+> Seit August 2019 hat sich das URI-Format von https://make.powerapps.com/webplayer in https://apps.powerapps.com/play geändert. Aktualisieren Sie alle eingebetteten iFrames, damit das neue URI-Format verwendet wird. Verweise auf das vorherige Format werden an den neuen URI umgeleitet, um die Kompatibilität zu gewährleisten.
 >
 > Vorheriges Format:
 > 
-> HTTPS\://Web.powerapps.com/Webplayer/iframeapp? Source = IFRAME & AppID =/Providers/Microsoft.PowerApps/Apps/[AppID]
+> HTTPS\://make.powerapps.com/Webplayer/iframeapp? Source = IFRAME & AppID =/Providers/Microsoft.PowerApps/Apps/[AppID]
 
 Sie brauchen nichts weiter zu tun, als die [AppID] im URI durch die ID Ihrer App zu ersetzen (einschließlich von „[' & ']“). Wir zeigen Ihnen in Kürze, wie Sie an diesen Wert gelangen, aber zunächst folgt hier die Auflistung aller im URI verfügbaren Parameter:
 

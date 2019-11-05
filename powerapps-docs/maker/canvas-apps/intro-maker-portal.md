@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd50652f0021079b4b9d4d23568ba148a8ce6a5b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f4babe6356ab0be34b6b08a3d158462b58cbb0cd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989994"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541235"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
 
-Wenn Sie sich bei [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
+Wenn Sie sich bei [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) anmelden, bietet Ihnen die Website eine Vielzahl von Optionen zum Erstellen eigener Apps, zum Öffnen von Apps, die Sie selbst oder andere Benutzer erstellt haben, und zum Ausführen von Aufgaben rund um Apps. Einige dieser Funktionen sind ganz einfach, z.B. die Ermittlung der Lizenzen, über die Sie Zugriff erhalten. Andere sind komplexer, beispielsweise die Erstellung von benutzerdefinierten Verbindungen mit bestimmten Datenquellen.
 
 Sie können in drei allgemeinen Bereichen aus verschiedenen Optionen auswählen:
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c78057118a1546c781ea813552650045ab357321
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025921"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541357"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
@@ -37,7 +37,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
 ## <a name="share-an-app"></a>Eine App freigeben
 
-1. [Melden Sie sich bei PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
+1. [Melden Sie sich bei PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und wählen Sie dann am linken Bildschirmrand **Apps** aus.
 
     ![Anzeigen der App-Liste](./media/share-app/file-apps.png)
 
@@ -79,7 +79,7 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
 1. Wählen Sie am unteren Rand des Bereichs Freigabe die Option **Freigeben**aus.
 
-    Alle Benutzer, für die Sie die APP freigegeben haben, können Sie in powerapps Mobile auf einem mobilen Gerät oder in appsource auf [Dynamics 365](https://home.dynamics.com) in einem Browser ausführen. Mitbesitzer können die app in [powerapps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)bearbeiten und freigeben.
+    Alle Benutzer, für die Sie die APP freigegeben haben, können Sie in powerapps Mobile auf einem mobilen Gerät oder in appsource auf [Dynamics 365](https://home.dynamics.com) in einem Browser ausführen. Mitbesitzer können die app in [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)bearbeiten und freigeben.
 
     Wenn Sie eine e-Mail-Einladung gesendet haben, kann jede Person, für die Sie die APP freigegeben haben, Sie ausführen, indem Sie einen Link in der Einladung
 
@@ -125,11 +125,7 @@ Sie müssen über **System Administrator** Berechtigungen für eine Common Data 
 Wenn Sie eine APP freigeben, die auf einer älteren Version von Common Data Service basiert, müssen Sie die Lauf Zeit Berechtigung separat für den Dienst freigeben. Wenn Sie nicht über die entsprechende Berechtigung verfügen, finden Sie weitere Informationen unter Administrator der Umgebung.
 
 ## <a name="share-with-guests"></a>Mit Gästen teilen
-
-> [!IMPORTANT]
-> - Die Features der Vorschauversion sind nicht für Produktionszwecke gedacht und funktionieren möglicherweise nur eingeschränkt. Diese Features sind vor dem offiziellen Release verfügbar, damit Kunden einen frühzeitigen Zugriff erhalten und Feedback geben können. 
-> - Vorschau Features werden durch Microsoft-Support nur eingeschränkt unterstützt und sind möglicherweise nur in ausgewählten geografischen Gebieten verfügbar. 
-
+ 
 Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Mandanten freigegeben werden. Dadurch können externe Geschäftspartner, Auftragnehmer und Drittanbieter zum Ausführen der Canvas-apps Ihres Unternehmens eingeladen werden. 
 
 > [!NOTE]
@@ -190,7 +186,7 @@ Ja. Der Zugriff auf eigenständige Canvas-apps erfordert jedoch eine powerapps-L
 > [!div class="mx-imgBorder"]  
 > ![Einbinden der Canvas-app in SharePoint für Gäste](media/share-app/guest_access_doc_5.PNG "Einbinden der Canvas-app in SharePoint für Gäste")
 
-Wenn Sie eine Canvas-app in SharePoint über das IFRAME-HTML-Tag einbetten, verweisen Sie mit der vollständigen Web-URL auf die app. Wenn Sie die URL suchen möchten, klicken Sie auf http://make.powerapps.com, wählen Sie eine APP aus, und wählen Sie die Registerkarte **Details** aus, und die URL wird unter **Weblink**angezeigt.
+Wenn Sie eine Canvas-app in SharePoint über das IFRAME-HTML-Tag einbetten, verweisen Sie mit der vollständigen Web-URL auf die app. Wenn Sie die URL suchen möchten, klicken Sie auf https://make.powerapps.com, wählen Sie eine APP aus, und wählen Sie die Registerkarte **Details** aus, und die URL wird unter **Weblink**angezeigt.
 
 > [!div class="mx-imgBorder"]  
 > ![Details der Canvas-App](media/share-app/guest_access_doc_6.PNG "Details der Canvas-App")
@@ -199,7 +195,7 @@ Wenn Sie eine Canvas-app in SharePoint über das IFRAME-HTML-Tag einbetten, verw
 Wie bei nicht-Gästen müssen auch die zugrunde liegenden Datenquellen, auf die die APP zugreift, für den Gast zugänglich gemacht werden.
 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>Welche Lizenz muss meinem Gast zugewiesen werden, damit Sie eine APP ausführen können, die für Sie freigegeben ist?
-Die gleiche Lizenz, die für nicht-Gäste zum Ausführen einer APP erforderlich ist. Wenn die APP beispielsweise keine Premium-Verbindungsdienste verwendet, genügt eine powerapps P1-Lizenz, um dem Gast zugewiesen zu werden.  
+Die gleiche Lizenz, die für nicht-Gäste zum Ausführen einer APP erforderlich ist. Wenn die APP beispielsweise Premium-Verbindungsdienste verwendet, muss dem Gast eine powerapps-App pro App-Plan oder ein powerapps-Plan vom Typ "pro Benutzer" zugewiesen werden.  
 
 |                                 | Angepasste SharePoint-Form | Eigenständige Canvas-App mit nicht-Premium-Connectors | Eigenständige Canvas-App mit Premium-Connectors | Modell gestützte App |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|

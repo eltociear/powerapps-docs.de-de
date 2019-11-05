@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ed1053c758f97234ad94a09832683ff00ef17744
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977563"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543124"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Hinzufügen einer Azure Storage-Webressource zu einem Formular
 
@@ -27,7 +27,7 @@ Damit Anlagen von einem bestimmten Formular in Azure Storage hochgeladen werden 
 
 Wenn eine Datei (z. b. Anhänge. zip) über das Portal in Azure Storage hochgeladen wird, wird Sie durch einen Hinweis auf eine Entität und einen Platzhalter für die Anlage dargestellt.
 
-![Anlage auf einem Formular](media/notes-attachment-lead-form.png "Platzhalter für die Anlage auf einem Formular")
+![Anlage in einem Formular](media/notes-attachment-lead-form.png "Platzhalter für die Anlage in einem Formular")
 
 Beachten Sie, dass die Anlagen Datei jetzt "Attachment. zip. txt" heißt. Standardmäßig ist Common Data Service kein Konzept für eine Azure-Datei, sodass diese Datei "plachalter. txt" stattdessen in Common Data Service gespeichert wird. Der Azure Storage Kontext der Platzhalter Datei zeigt Details zur Datei an.
 ```
@@ -57,7 +57,7 @@ Um die in Azure gespeicherte Datei anzuzeigen und mit ihr zu interagieren, müss
 
 8. Speichern Sie das Formular, und veröffentlichen Sie dann die Änderungen.
 
-   ![Webressource]hinzufügen(media/add-web-resource.png "Webressource hinzufügen")
+   ![Webressource hinzufügen](media/add-web-resource.png "Webressource hinzufügen")
 
 Das neue Steuerelement wird nun auf der Seite gerendert, sodass Sie Ihre Anlagen in Azure Storage verwalten können.
 
@@ -80,11 +80,11 @@ Wenn die angefügte Datei ein Bild ist, zeigt das Steuerelement das Bild als Min
 > [!Note]
 > Die Miniaturansicht ist auf Bilder mit einer Größe von weniger als 1 MB beschränkt.
 
-![Hinweise](media/notes-thumbnail.png "zur Miniaturansicht") für Miniaturansichten
+![Merkbild Ansicht](media/notes-thumbnail.png "Merkbild Ansicht")
 
 ## <a name="cors-protocol-support"></a>Cors-Protokoll Unterstützung
 
-Das [cors-Protokoll (Cross-Origin Resource Sharing)](http://www.w3.org/TR/cors/) besteht aus einem Satz von Headern, der angibt, ob eine Antwort mit einer anderen Domäne gemeinsam genutzt werden kann.
+Das [cors-Protokoll (Cross-Origin Resource Sharing)](https://www.w3.org/TR/cors/) besteht aus einem Satz von Headern, der angibt, ob eine Antwort mit einer anderen Domäne gemeinsam genutzt werden kann.
 Zum Konfigurieren von cors werden die folgenden Site Einstellungen verwendet:
 
 |                 Name                  |                                                                            Beschreibung                                                                            |

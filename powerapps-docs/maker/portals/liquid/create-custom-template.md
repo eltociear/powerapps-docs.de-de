@@ -1,31 +1,36 @@
 ---
-title: Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Webseiten-Seitenvolage für ein Portal | MicrosoftDocs
-description: 'Anweisungen, eine benutzerdefinierte Seitenvorlage mithilfe von flüssigen Operatoren zu erstellen.'
+title: Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid und einer Vorlage für eine Webvorlagen Seite für ein Portal | MicrosoftDocs
+description: Anweisungen zum Erstellen einer benutzerdefinierten Seitenvorlage mithilfe von Liquid-Operatoren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 8fe2d6f6496c609a9811ddb4ca28c3df47d8e04d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542459"
 ---
+# <a name="create-a-custom-page-template"></a>Erstellen einer benutzerdefinierten Seitenvorlage
 
-# <a name="create-a-custom-page-template"></a>Eine benutzerdefinierte Seitenvorlage erstellen
+In diesem Beispiel erstellen wir eine benutzerdefinierte Seitenvorlage mithilfe von Liquid und einer Seitenvorlage, die auf einer Webvorlage basiert. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Quell Inhalt mithilfe von Webvorlagen speichern](store-content-web-templates.md). Unser Ziel ist es, eine einfache zweispaltige Vorlage zu erstellen, die einen [Weblink](../configure/manage-web-links.md) als linksseitige Navigation mit dem Seiten Inhalt auf der rechten Seite verwendet. 
 
-In diesem Beispiel erstellen wir eine benutzerdefinierte Seitenvorlage mithilfe von Liquid und einer Seitenvorlage, die auf einer Webvorlage basiert. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Speichern Sie Quellinhalt mithilfe von Webvorlagen](store-content-web-templates.md). Unser Ziel ist es, eine einfache Vorlage mit zwei Spalten zu erstellen, die einen [Weblink](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/manage-web-links) verwenden, der auf der linken Seite angezeigt und auf die Seiteninhalte auf der rechten Seite verweist. 
+## <a name="step-1-create-a-web-template-and-write-the-liquid-template-code"></a>Schritt 1: Erstellen einer Webvorlage und Schreiben des Liquid-Vorlagen Codes
 
-## <a name="step-1-create-a-web-template-and-write-the-liquid-template-code"></a>Schritt 1: Erstellen einer Webvorlage und Schreiben des Liquid-Vorlagencodes
-
-Zunächst erstellen wir unsere Webvorlage und schreiben unseren Liquid-Vorlagencode. Wir können wohl einige allgemeine Elemente dieser Vorlage in zukünftigen Vorlagen wieder verwenden. Also erstellen wir eine allgemeine Grundvorlage, die wir dann mit unserer bestimmten Vorlage erweitern. Unser Grundvorlage liefert die Breadcrumb-Links und unsere Titel/Kopfseite und definiert auch unser einspaltiges Layout:
+Zuerst erstellen wir unsere Webvorlage und schreiben den Liquid-Vorlagen Code. Wir werden wahrscheinlich einige allgemeine Elemente dieser Vorlage in zukünftigen Vorlagen wieder verwenden. Daher erstellen wir eine gemeinsame Basisvorlage, die wir dann mit unserer spezifischen Vorlage erweitern. Unsere Basisvorlage stellt Breadcrumb-Links und den Seitentitel/-Header bereit und definiert das einspaltige Layout:
 
 > [!div class=mx-imgBorder]
-![Einspaltiges-Webvorlagenlayout](../media/web-template-two-column-layout.png "Einspaltiges-Webvorlagenlayout")
+![Webvorlage ein Spalten Layout](../media/web-template-two-column-layout.png "Webvorlage ein Spalten Layout")
 
 > [!TIP]
-> Informieren Sie sich über Vorlagenvererbung mithilfe des Blocks und erweiterter Tags: [Vorlagentags](template-tags.md#extends)
+> Erfahren Sie mehr über die Vorlagen Vererbung mithilfe der Block-und Erweiterungs Tags: [Vorlagen Tags](template-tags.md#extends)
 
-### <a name="two-column-layout-web-template"></a>Zwei-Spalten-Layout (Webvorlage)
+### <a name="two-column-layout-web-template"></a>Zweispaltige Layouts (Webvorlage)
 
 ```xml
 <div class=container>
@@ -53,17 +58,17 @@ Zunächst erstellen wir unsere Webvorlage und schreiben unseren Liquid-Vorlagenc
 </div>
 ```
 
-## <a name="step-2-create-a-new-web-template-that-extends-our-base-layout-template"></a>Schritt 2: Erstellen einer neuen Webvorlage, die die Basislayoutvorlage erweitert
+## <a name="step-2-create-a-new-web-template-that-extends-our-base-layout-template"></a>Schritt 2: Erstellen einer neuen Webvorlage, mit der unsere basislayoutvorlage erweitert wird
 
-Verwenden Sie die Navigations-Weblinks, die der aktuellen Seite für unsere Navigationslinks zugeordnet sind, um eine neue Webvorlage zu erstellen, die unsere Basis-Layoutvorlage erweitert.
+Verwenden Sie die Navigationslinks, die der aktuellen Seite zugeordnet sind, für unsere Navigationslinks, um eine neue Webvorlage zu erstellen, mit der unsere basislayoutvorlage erweitert wird.
 
 > [!div class=mx-imgBorder]
-![Web-Links der Webvorlage im linken Navigations-Layout](../media/web-template-weblinks-left-navigation-layout.png "Web-Links der Webvorlage im linken Navigations-Layout")  
+![Web-Vorlagen Weblinks Links Navigations Layout](../media/web-template-weblinks-left-navigation-layout.png "Web-Vorlagen Weblinks Links Navigations Layout")  
 
 > [!TIP]
-> Machen Sie sich mit dem Laden von Web-Links mithilfe des Objekts [weblinks](liquid-objects.md#weblinks) vertraut.
+> Machen Sie sich mit dem Laden von weblinksets mit dem [Weblinks](liquid-objects.md#weblinks) -Objekt vertraut.
 
-### <a name="weblinks-left-navigation-web-template"></a>Weblinks linke Navigation (Webvorlage)
+### <a name="weblinks-left-navigation-web-template"></a>Links Navigation in Weblinks (Webvorlage)
 
 ```xml
 {% extends 'Two Column Layout' %}
@@ -91,24 +96,24 @@ Verwenden Sie die Navigations-Weblinks, die der aktuellen Seite für unsere Navi
 {% endblock %}
 ```
 
-## <a name="step-3-create-a-new-page-template-based-on-the-web-template"></a>Schritt 3: Erstellen einer neue Seitenvorlage basierend auf der Webvorlage
+## <a name="step-3-create-a-new-page-template-based-on-the-web-template"></a>Schritt 3: Erstellen einer neuen Seitenvorlage basierend auf der Webvorlage
 
-In diesem Schritt erstellen wir eine neue Seitenvorlage, die auf einer Webvorlage basiert, die wir im vorherigen Schritt erstellt haben.
-
-> [!div class=mx-imgBorder]
-![Web-Links der Seitenvorlage im linken Navigations-Layout](../media/page-template-weblinks-left-navigation-layout.png "Web-Links der Seitenvorlage im linken Navigations-Layout")  
-
-## <a name="step-4-create-a-web-page-to-display-content"></a>Schritt 4: Erstellen einer Webseite zum Anzeigen von Inhalt
-
-Jetzt müssen wir nur noch eine Webvorlage erstellen, die unsere Seitenvorlage verwendet und eine dazugehörige Weblink-Gruppe hat und wir verfügen über das Ergebnis.
+In diesem Schritt erstellen wir eine neue Seitenvorlage, die auf der im vorherigen Schritt erstellten Webvorlage basiert.
 
 > [!div class=mx-imgBorder]
-![Webseite mit linker Navigation](../media/web-page-left-navigation.png "Webseite mit linker Navigation")  
+![Seitenvorlage Weblinks Links Navigations Layout](../media/page-template-weblinks-left-navigation-layout.png "Seitenvorlage Weblinks Links Navigations Layout")  
+
+## <a name="step-4-create-a-web-page-to-display-content"></a>Schritt 4: Erstellen einer Webseite zum Anzeigen von Inhalten
+
+Nun müssen Sie nur noch eine Webseite erstellen, die unsere Seitenvorlage verwendet, und es ist ein verknüpften Weblink festgelegt, und wir haben unser Ergebnis.
+
+> [!div class=mx-imgBorder]
+![Webseite mit Links Navigation](../media/web-page-left-navigation.png "Webseite mit Links Navigation")  
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen einer benutzerdefinierte Seitenvorlage zum Rendern eines RSS-Feed](render-rss-custom-page-template.md)  
-[Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist](render-entity-list-current-page.md)  
-[Rendern einer Websitekopfzeile und primären Navigationsleiste](render-site-header-primary-navigation.md)  
-[Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation](hybrid-navigation-render-page-hierachy.md)  
+[Erstellen einer benutzerdefinierten Seitenvorlage zum Rendering eines RSS-Feeds](render-rss-custom-page-template.md)  
+[Rendering der der aktuellen Seite zugeordneten Entitäts Liste](render-entity-list-current-page.md)  
+[Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md)  
+[Rendering von bis zu drei Ebenen der Seiten Hierarchie mithilfe der Hybriden Navigation](hybrid-navigation-render-page-hierachy.md)  
 

@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 12e85a0233ca596fa5daf09a05b111564c2a7a24
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: b285ce6e3a93efb72ed867149ce0740f7ee96579
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72977954"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542759"
 ---
-# <a name="configure-portal-authentication"></a>Konfigurieren der Portal Authentifizierung
+# <a name="configure-portal-authentication"></a>Konfigurieren der Authentifizierung für ein Portal
 
 In einer Portal Anwendung wird ein authentifizierter Portalbenutzer entweder einem Kontakt oder einem Systembenutzer zugeordnet. Die Standard Portal Konfiguration ist Kontakt basiert. Zum Anmelden muss für einen Kontakt die entsprechenden Webauthentifizierungs Informationen konfiguriert sein. Portal Benutzer müssen Webrollen zugewiesen werden, um Berechtigungen über nicht authentifizierte Benutzer zu erhalten. Um Berechtigungen für eine webrolle zu konfigurieren, konfigurieren Sie den Webseiten Zugriff und die Zugriffs Steuerungs Regeln für die Website.
 
-Die neueste Portal Authentifizierung ermöglicht es Portal Benutzern, sich mit Ihrer Wahl eines lokalen Kontos oder eines externen Kontos, das auf [ASP.net Identity](http://www.asp.net/identity)basiert, anzumelden.   
+Die neueste Portal Authentifizierung ermöglicht es Portal Benutzern, sich mit Ihrer Wahl eines lokalen Kontos oder eines externen Kontos, das auf [ASP.net Identity](https://www.asp.net/identity)basiert, anzumelden.   
 
 - **Lokale Authentifizierung**: bei der allgemeinen Formular basierten Authentifizierung werden die Kontaktdaten Sätze einer Common Data Service Umgebung für die Authentifizierung verwendet. Um benutzerdefinierte Authentifizierungsfunktionen zu erstellen, können Entwickler benutzerdefinierte Anmelde Seiten und Tools mit der ASP.net Identity-API erstellen.
 - **Externe Authentifizierung**: die externe Authentifizierung wird von der ASP.net Identity-API bereitgestellt. In diesem Fall werden Konto Anmelde Informationen und Kenn Wort Verwaltung von einem Drittanbieter-Identitäts Anbieter verarbeitet. Dies schließt OpenID-basierte Anbieter ein, z. b. Yahoo! und Google-und OAuth 2,0-basierte Anbieter wie Twitter, Facebook und [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]. Benutzer melden sich beim Portal an, indem Sie eine externe Identität für die Registrierung beim Portal auswählen. Nach der Registrierung hat eine externe Identität Zugriff auf dieselben Features wie ein lokales Konto. 

@@ -1,26 +1,31 @@
 ---
-title: Liquid-Objekte für ein Portal verwenden | MicrosoftDocs
-description: Lesen Sie mehr zu den verfügbaren Liquid-Objekten in einem Portal.
+title: Verwenden von Liquid-Objekten für ein Portal | MicrosoftDocs
+description: Erfahren Sie mehr über die verfügbaren Liquid-Objekte in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 857c65097800420662aafe825f61333037b4e31c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543162"
 ---
-
 # <a name="available-liquid-objects"></a>Verfügbare Liquid-Objekte
 
-Liquid-Objekte enthalten Attribute für die Ausgabe von dynamischem Inhalten auf einer Seite. Beispielsweise hat das Seiten-Objekt ein Attribut namens Titel, mit dem der Titel der aktuellen Seite ausgegeben werden kann.
+Liquid-Objekte enthalten Attribute, um dynamischen Inhalt auf der Seite auszugeben. Das Page-Objekt hat z. b. ein Attribut mit dem Namen "Title", das zum Ausgeben des Titels der aktuellen Seite verwendet werden kann.
 
-Um auf ein Objektattribut anhand des Namens zuzugreifen, verwenden Sie einen Punkt . Um ein Objektattribut in einer Vorlage zu rendern, setzen Sie es zwischen {{ und }}.
+Wenn Sie über den Namen auf ein Objekt Attribut zugreifen möchten, verwenden Sie einen Punkt. Um das Attribut eines Objekts in einer Vorlage zu erstellen, müssen Sie es in {{und}} einschließen.
 
 ```
 {{ page.title }}
 ```
-Auf Attribute eines Objekts kann auch mithilfe eines Zeichenfolgennamens und mit \[\] zugegriffen werden. Dies ist hilfreich in Fällen, in denen das gewünschte Attribut dynamisch ermittelt wird, oder in denen der Attributname Zeichen, Leerzeichen, Sonderzeichen usw. enthält, die bei Verwendung der .-Syntax ungültig wären.
+Auf die Attribute eines Objekts kann auch über einen Zeichen folgen Namen und \[\]zugegriffen werden. Dies ist hilfreich in Fällen, in denen das gewünschte Attribut dynamisch bestimmt wird, oder wenn der Attribut Name Zeichen, Leerzeichen, Sonderzeichen usw. enthält, die bei Verwendung des ungültig sind. Syntax.
 
 ```
 {{ page[title] }}
@@ -30,30 +35,30 @@ Auf Attribute eines Objekts kann auch mithilfe eines Zeichenfolgennamens und mit
 {{ object[attribute_name] }}
 ```
 
-Auf die folgenden Objekte kann an beliebiger Stelle, in einer beliebigen Vorlage zugegriffen werden.
+Die folgenden Objekte können in einer beliebigen Vorlage verwendet und überall dort verwendet werden.
 
 
 |   Objekt    |                                                                                                                                                                                          Beschreibung                                                                                                                                                                                           |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  Entitäten   |                                                                                                 Ermöglicht das Laden einer beliebigen PowerApps-Entität nach ID. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [entities](#entities)                                                                                                 |
-|     now     |                                          Ein Datums-/Uhrzeitobjekt, das auf die aktuelle UTC-Zeit verweist, zum Zeitpunkt des Renderns der Vorlage.<br>**Hinweis**: Dieser Wert wird in der Portal-Web-App zwischengespeichert und nicht jedes Mal aktualisiert. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Datumsfilter](liquid-filters.md#date-filters)                                          |
-|    Seite     | Verweist auf die aktuelle Portalanforderungsseite. Das Objekt page bietet Zugriff auf Dinge wie die Breadcrumbs für die aktuelle Seite, den Titel oder die URL der aktuellen Seite und alle anderen Attribute oder verbundenen Entität des zugrunde liegenden PowerApps-Datensatzes. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Seite](#page) |
-|   Parameter    |                                                                                                                             Eine bequeme Verknüpfung für request.params. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Anforderung](#request)                                                                                                                              |
-|   Anfrage   |                                                                                                                        Enthält Informationen zum aktuellen HTTP-Request. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Anforderung](#request)                                                                                                                        |
-|  Einstellungen   |                                                                                                            Ermöglicht das Laden einer beliebigen [Website-Einstellung](../configure-site-settings.md) nach Namen. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Einstellungen](#settings)                                                                                                            |
-|   Siteübersicht   |                                                                                                                               Ermöglicht Zugriff auf die Portalsiteübersicht. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Sitemap](#sitemap)                                                                                                                                |
-| Websitemarkierungen |                                                                                                                        Ermöglicht das Laden einer beliebigen Websitemarkierung nach Namen. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Sitemarkers](#sitemarkers)                                                                                                                        |
-|  Ausschnitte   |                                                                                                         Ermöglicht das Laden von [Inhaltsausschnitten](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/customize-content-snippets) nach Namen. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Ausschnitte](#snippets)                                                                                                         |
-|    Benutzer     |                             Verweist auf den aktuellen Portalbenutzer und ermöglicht Zugriff auf alle Attribute des zugrunde liegenden PowerApps-Kontaktdatensatzes. Wenn kein Benutzer angemeldet ist, ist diese Variable [Null](liquid-types.md#null). [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Benutzer](#user)                              |
-|  Weblinks   |                                                                                                                        Ermöglicht das Laden eines beliebigen Weblinksatzes nach Namen oder ID. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Weblinks](#weblinks)                                                                                                                        |
-|   Website   |                                                      Verweist auf den Portal-Websitedatensaz und ermöglicht Zugriff auf alle Attribute des PowerApps Website-(adx\_website)-Datensatzes für das Portal. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Website](#website)                                                       |
+|  Kleinstunternehmen   |                                                                                                 Ermöglicht das Laden beliebiger powerapps-Entitäten nach ID. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Entitäten](#entities)                                                                                                 |
+|     gerade     |                                          Ein Datums-/Uhrzeit-Objekt, das sich auf die aktuelle UTC-Zeit zum Zeitpunkt der Vorlagen Darstellung bezieht.<br>**Hinweis**: dieser Wert wird von der Portal-Web-App zwischengespeichert und nicht jedes Mal aktualisiert. Filter für [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Datum](liquid-filters.md#date-filters)                                          |
+|    s     | Verweist auf die aktuelle Portal Anforderungsseite. Das Page-Objekt ermöglicht den Zugriff auf Elemente wie den Brotkrümel für die aktuelle Seite, den Titel oder die URL der aktuellen Seite sowie alle anderen Attribute oder zugehörigen Entitäten des zugrunde liegenden powerapps-Datensatzes. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Seite](#page) |
+|   params    |                                                                                                                             Eine bequeme Verknüpfung für "Request. para". [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Anforderung](#request)                                                                                                                              |
+|   Anforderung   |                                                                                                                        Enthält Informationen über die aktuelle HTTP-Anforderung. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Anforderung](#request)                                                                                                                        |
+|  Einstellungen   |                                                                                                            Ermöglicht das Laden beliebiger [Website Einstellungen](../configure/configure-site-settings.md) nach Namen. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Einstellungen](#settings)                                                                                                            |
+|   tex   |                                                                                                                               Ermöglicht den Zugriff auf die Portal Site Übersicht. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)]- [Sitemap](#sitemap)                                                                                                                                |
+| sitemarkers |                                                                                                                        Ermöglicht das Laden beliebiger Site Marker nach Namen. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [sitemarkers](#sitemarkers)                                                                                                                        |
+|  p   |                                                                                                         Ermöglicht das Laden beliebiger [Inhalts](../configure/customize-content-snippets.md) Ausschnitte anhand des Namens. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Ausschnitte](#snippets)                                                                                                         |
+|    Bedienungs     |                             Bezieht sich auf den aktuellen Portalbenutzer, der den Zugriff auf alle Attribute des zugrunde liegenden powerapps-Kontaktdaten Satzes ermöglicht. Wenn kein Benutzer angemeldet ist, ist diese Variable [null](liquid-types.md#null). [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Benutzer](#user)                              |
+|  Weblinks   |                                                                                                                        Ermöglicht das Laden beliebiger Weblinks, die anhand des Namens oder der ID festgelegt sind. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Weblinks](#weblinks)                                                                                                                        |
+|   Website   |                                                      Bezieht sich auf den Daten Satz der Portal Website und ermöglicht den Zugriff auf alle Attribute des Datensatzes der powerapps-Website (ADX\_-Website) für das Portal. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)]- [Website](#website)                                                       |
 
-## <a name="ads"></a>Anzeigen
+## <a name="ads"></a>Teams
 
 
-Bietet die Möglichkeit, auf eine Anzeige zuzugreifen und sie zu rendern.
+Bietet die Möglichkeit, auf eine Werbe-und Rendering zuzugreifen.
 
-Das Objekt das ermöglicht die Auswahl einer bestimmten Anzeige oder Anzeigenplatzierung:
+Das ADS-Objekt ermöglicht es Ihnen, eine bestimmte AD-oder Ad-Platzierung auszuwählen:
 
 ```
 <div>
@@ -71,60 +76,60 @@ Das Objekt das ermöglicht die Auswahl einer bestimmten Anzeige oder Anzeigenpla
 </div>
 ```
 
-### <a name="ads-attributes"></a>Anzeigenattribute
+### <a name="ads-attributes"></a>ADS-Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| placements        | Gibt das adplacements-Objekt zurück.    |
-| \[Anzeigenname oder -ID\] | Sie können auf jede beliebige Anzeige über ihre Namens- oder ID-Eigenschaften zugreifen. <br> `{% assign ad = ads[Ad Name] %}`<br>`{% assign ad = ads["da8b8a92-2ee6-476f-8a21-782b047ff460"] %}`  |
+| Vermittlung        | Gibt das adplacement-Objekt zurück.    |
+| \[Ad-Name oder-ID\] | Sie können mit den Eigenschaften "Name" oder "ID" auf eine beliebige Werbung zugreifen. <br> `{% assign ad = ads[Ad Name] %}`<br>`{% assign ad = ads["da8b8a92-2ee6-476f-8a21-782b047ff460"] %}`  |
 
 
-### <a name="ad-placements-attributes"></a>Attribute von Anzeigenplatzierungen
+### <a name="ad-placements-attributes"></a>AD-Platzierungs Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| \[Anzeigenplatzierungsname oder -ID\] | Sie können auf jede beliebige Anzeigenplatzierung über ihre Namens- oder ID-Eigenschaften zugreifen.<br>`{% assign placement = ads.placements[Placement Name or Id] %}`<br>`{% assign placement = ads.placements[2423d713-abb3-44c3-8a7d-c445e16fccad] %}`  |
+| Name oder ID der \[Ad-Platzierung\] | Sie können mit den Eigenschaften "Name" oder "ID" auf jede beliebige adplacement zugreifen.<br>`{% assign placement = ads.placements[Placement Name or Id] %}`<br>`{% assign placement = ads.placements[2423d713-abb3-44c3-8a7d-c445e16fccad] %}`  |
 
-### <a name="ad-placement-attributes"></a>Attribute von Anzeigenplatzierungen
+### <a name="ad-placement-attributes"></a>AD-Platzierungs Attribute
 
-Eine ad placement ist ein Entitätsobjekt mit allen gleichen Attributen, zusätzlich zu den unten aufgeführten.
+Eine Ad-Platzierung ist ein Entitäts Objekt mit den gleichen Attributen, zusätzlich zu den unten aufgeführten Attributen.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Anzeigen            | Gibt die Sammlung von Anzeigenobjekten zurück, die mit der Platzierung verbunden sind.  [Iterationtags](iteration-tags.md) und [Arrayfilter](liquid-filters.md#array-filters) werden möglicherweise mit dieser Sammlung verwendet.  |  
-| Name           | Gibt das Feld "Name" für die Anzeigenplatzierung zurück.                                                                |
-| placement\_url | Die URL, mit der die Anzeigenplatzierung abgerufen werden kann, die vollständig über eine Vorlage gerendert wird.                         |
-| random\_url    | Die URL, mit der eine willkürliche Anzeige aus der Platzierung abgerufen werden kann, die vollständig über eine Vorlage gerendert wird.           |
+| Teams            | Gibt die Auflistung der AD-Objekte zurück, die der Platzierung zugeordnet sind.  [Iterations Tags](iteration-tags.md) und [Array Filter](liquid-filters.md#array-filters) können mit dieser Auflistung verwendet werden.  |  
+| Name           | Gibt das Namensfeld für die Ad-Platzierung zurück.                                                                |
+| Platzierung\_URL | Die URL, die zum Abrufen der von einer Vorlage vollständig gerenderten Ad-Platzierung verwendet werden kann.                         |
+| Random\_URL    | Die URL, die verwendet werden kann, um eine zufällige Werbung von der Platzierung abzurufen, die vollständig von einer Vorlage gerendert wird.           |
 
-### <a name="ad-attributes"></a>Anzeigenattribute
+### <a name="ad-attributes"></a>AD-Attribute
 
 > [!Note]
-> Ein ad ist ein Entitätsobjekt mit allen gleichen Attributen, zusätzlich zu den unten aufgeführten.
+> Ein AD ist ein Entitäts Objekt, das zusätzlich zu den unten aufgeführten Attributen über dieselben Attribute verfügt.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| ad\_url |  Die URL, mit der die Anzeig abgerufen werden kann, die vollständig über eine Vorlage gerendert wird.   |
-| Kopieren| Gibt das Feld "Kopie" für die Anzeige zurück.|
-| image| Gibt das Bildobjekt für die Anzeige zurück (sofern vorhanden).|
-| Name| Gibt das Feld "Name" für die Anzeige zurück.|
-| open\_in\_new\_window | Gibt "true" zurück, wenn die URL, die von redirect\_url angegeben ist, in einem neuen Fenster geöffnet werden soll. |
-| redirect\_url| Die URL, an die der Benutzer verwiesen wird auf, indem er auf die Anzeige klickt.|
+| AD\_-URL |  Die URL, die verwendet werden kann, um den vollständig von einer Vorlage gerenderten AD abzurufen.   |
+| Skopie| Gibt das Feld "Kopieren" für die Werbeanzeige zurück.|
+| Klang| Gibt das Image-Objekt (sofern vorhanden) für das AD zurück.|
+| Name| Gibt das Namensfeld für die AD-Auflistung zurück.|
+| \_in\_Fenster "neues\_" öffnen | Gibt true zurück, wenn die durch Redirect\_URL angegebene URL in einem neuen Fenster geöffnet werden soll. |
+| Umleiten\_URL| Die URL, an die der Benutzer weitergeleitet wird, indem er die Anzeige auswählt.|
 
-### <a name="ad-image-attributes"></a>Anzeigenbildattribute
+### <a name="ad-image-attributes"></a>AD-Image Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| alternate\_text | Gibt den Text zurück der im alt-Attribut des Tags angezeigt werden soll. |
-| height          | Gibt die Höhe für das Bild in Pixeln zurück                             |
-| URL             | Gibt die URL-Quelle für das Bild zurück.                                  |
-| width           | Gibt die Breite für das Bild in Pixeln zurück                              |
+| alternativer\_Text | Gibt den Text zurück, der im alt-Attribut des Tags angezeigt werden soll. |
+| height          | Gibt die Höhe des Bilds in Pixel zurück.                             |
+| Urne             | Gibt die URL-Quelle für das Bild zurück.                                  |
+| width           | Gibt die Breite des Bilds in Pixel zurück.                              |
 
 
-## <a name="blogs"></a>Blogs
+## <a name="blogs"></a>gt
 
-Stellt die Möglichkeit zur Verfügung, Blogs und Blog-Beiträge aufzurufen und zu rendern.
+Bietet die Möglichkeit, auf Blogs und Blog Beiträge zuzugreifen und diese zu erstellen.
 
-Das Objekt blogs ermöglicht die Auswahl eines bestimmten Blogs oder Blog-Beitrags.
+Das Blogs-Objekt ermöglicht Ihnen die Auswahl eines bestimmten Blogs oder Blogbeitrags.
 
 ```
 {% assign posts = blogs.posts | paginate: 0,4 %}
@@ -194,16 +199,16 @@ Das Objekt blogs ermöglicht die Auswahl eines bestimmten Blogs oder Blog-Beitra
 </div>
 ```
 
-### <a name="blogs-object"></a>blogs-Objekt
+### <a name="blogs-object"></a>Blogs-Objekt
 
-Das Blogs-Objekt ermöglicht Ihnen den Zugriff auf spezielle Blogs im Portal oder auf alle Blog-Aritkel im Portal (unabhängig vom Blog).
+Mit dem Blogs-Objekt können Sie auf einen bestimmten Blog im Portal zugreifen oder auf alle Blogbeiträge im Portal zugreifen (unabhängig vom Blog).
 
-In der folgenden Tabelle werden die Attribute zum blogs-Objekt beschrieben.
+In der folgenden Tabelle werden die Attribute erläutert, die dem Blogs-Objekt zugeordnet sind.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Beiträge               | Gibt ein blogposts-Objekt zurück, das alle Blog-Beiträge im Portal enthält.     |
-| \[Blogname oder -ID\] | Sie können auf jeden Blog über dessen Namens- oder ID-Eigenschaften zugreifen.                   
+| Beiträge               | Gibt ein Blogposts-Objekt zurück, das alle Blogbeiträge im Portal enthält.     |
+| \[Blog Name oder ID\] | Sie können über die Eigenschaften Name oder ID auf einen beliebigen Blog zugreifen.                   
 
 ```
 {% assign blog = blogs[Blog Name] %}                             
@@ -211,50 +216,50 @@ In der folgenden Tabelle werden die Attribute zum blogs-Objekt beschrieben.
 {% assign blog = blogs[da8b8a92-2ee6-476f-8a21-782b047ff460] %}  |
 ```
 
-### <a name="blog-object"></a>blog-Objekt
+### <a name="blog-object"></a>Blog Objekt
 
-Das Blog-Objekt ermöglicht Ihnen die Arbeit mit einem einzelnen Blog, wobei Sie auf die Beiträge für dieses Blog zugreifen können.
+Mit dem Blog-Objekt können Sie mit einem einzelnen Blog arbeiten, sodass Sie auf die Beiträge für diesen Blog zugreifen können.
 
-In der folgenden Tabelle werden die Attribute zum Blog-Objekt beschrieben.
+In der folgenden Tabelle werden verschiedene Attribute erläutert, die dem Blog Objekt zugeordnet sind.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| posts | Gibt ein blogposts-Objekt zurück, das alle Blog-Beiträge enthält. |
+| Beiträge | Gibt ein Blogposts-Objekt zurück, das alle Blogbeiträge für den Blog enthält. |
 | Name  | Der Name des Blogs.                                              |
-| title | Der Titel des Blogs                                             |
-| URL   | Die URL des Blogs.                                               |
+| Tel | Der Titel des Blogs.                                             |
+| Urne   | Die URL des Blogs.                                               |
 
-### <a name="blogposts-object"></a>blogposts-Objekt
+### <a name="blogposts-object"></a>Blogposts-Objekt
 
-Das Blogposts-Objekt ermöglicht Ihnen, auf eine Sammlung von blogpost-Objekten zuzugreifen. Sie können auch die Blog-Beiträge sortieren und eine Paginierung mithilfe von Liquid-Filtern umsetzen:
+Das Blogposts-Objekt ermöglicht den Zugriff auf eine Auflistung von Blog Post-Objekten. Sie können die Blogbeiträge anordnen und die Paginierung zusätzlich zur Verwendung von Liquid-Filtern erreichen:
 
-{% assign blogposts = blogs.posts | order\_by “adx\_name”, “desc” | paginate: 0,4 | all %} Hinweis: blogs.post ist euch eine Möglichkeit, um all Blogbeiträge abzurufen blogs.posts from\_index: 0 | take: 2 ist auch möglich
+{% Assign Blogposts = Blogs. Posts | Order\_by "ADX\_Name", "Besc" | paginate: 0,0 | alle%} Beachten Sie, dass Blogs. Posts. all auch eine gültige Methode ist, um alle Blogbeiträge Blogs. Posts zu erhalten. aus\_Index: 0 | Take: 2 ist ebenfalls möglich.
 
-In der folgenden Tabelle werden die Attribute zum blogposts-Objekt beschrieben.
+In der folgenden Tabelle werden verschiedene Attribute erläutert, die dem Blog Posts-Objekt zugeordnet sind.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Alle | Gibt alle blogposts-Objekte in der Sammlung zurück. |
+| Allen | Gibt alle Blogbeitrag-Objekte in der Auflistung zurück. |
 
-### <a name="blogpost-object"></a>blogpost-Objekt
+### <a name="blogpost-object"></a>Blogbeitrag-Objekt
 
-Verweist auf einen einzelnen Blog-Beitrag.
+Bezieht sich auf einen einzelnen Blogbeitrag.
 
-In der folgenden Tabelle werden die Attribute zum blogpost-Objekt beschrieben.
+In der folgenden Tabelle werden verschiedene Attribute erläutert, die dem Blogbeitrag-Objekt zugeordnet sind.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| URL            | Die URL des Beitrags.                                                                |
-| content        | Gibt das Feld "Content" für den Beitrag zurück.                                             |
-| content        | Gibt das Feld "Content" für den Beitrag zurück.                                             |
-| author         | Gibt den Autor für den Beitrag zurück (ein Kontakt-Entität-Objekt).          |
-| title          | Der Titel des Beitrags.                                                              |
-| comment\_count | Gibt als ganzzahligen Wert die Anzahl an Kommentaren für den Beitrag zurück. |
-| publish\_date  | Das Datum, an dem der Beitrag veröffentlicht wurde.                                           |
+| Urne            | Die URL des Beitrags.                                                                |
+| Inhaltliche        | Gibt das Inhaltsfeld für den Beitrag zurück.                                             |
+| Inhaltliche        | Gibt das Inhaltsfeld für den Beitrag zurück.                                             |
+| Schrift         | Gibt den authorf für den Post-Dienst zurück (bei dem es sich um ein Kontakt Entitäts Objekt handelt.          |
+| Tel          | Der Titel des Beitrags.                                                              |
+| Kommentar\_Anzahl | Gibt den ganzzahligen Wert der Anzahl der für einen gegebenen Beitrag vorhandenen Kommentare zurück. |
+| Veröffentlichungs\_Datum  | Das Datum, an dem der Beitrag veröffentlicht wurde.                                           |
 
-## <a name="entities"></a>Entitäten
+## <a name="entities"></a>Kleinstunternehmen
 
-Ermöglicht das Laden einer beliebigen PowerApps-Entität nach ID. Wenn die Entität vorhanden ist, wird ein Entitätsobjekt zurückgegeben. Wird eine Entität mit der angegebenen ID nicht gefunden, wird [Null](liquid-types.md#null)  zurückgegeben.  
+Ermöglicht das Laden beliebiger powerapps-Entitäten nach ID. Wenn die Entität vorhanden ist, wird ein Entitäts Objekt zurückgegeben. Wenn keine Entität mit der angegebenen ID gefunden wird, wird [null](liquid-types.md#null) zurückgegeben.  
 
 ```
 {% assign account = entities.account['936DA01F-9ABD-4d9d-80C7-02AF85C822A8'] %}
@@ -276,236 +281,236 @@ Ermöglicht das Laden einer beliebigen PowerApps-Entität nach ID. Wenn die Enti
 {% endif %}
 ```
 
-### <a name="entity"></a>Entity
+### <a name="entity"></a>Organisation
 
-Ein Entitätsobjekt bietet Zugriff auf die Attribute eines PowerApps-Entitätsdatensatzes.
+Ein Entitäts Objekt ermöglicht den Zugriff auf die Attribute eines powerapps-Entitäts Datensatzes.
 
 
-|             Attribut              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|             Versehen              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 Kennung                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Die GUID-ID einer Entität als Zeichenfolge. Beispielsweise 936DA01F-9ABD-4d9d-80C7-02AF85C822A8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|           logical\_name            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Der PowerApps logische Name der Entität.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|               Notizen                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Lädt alle Notizen (Anmerkungen), die der Entität zugeordnet sind von der ältesten zur neuesten (createdon). Notizen werden als Notizenobjekte zurückgegeben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|            Berechtigungen             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Lädt Entitätsberechtigungsassertions-Ergebnisse für die Entität. Ergebnisse werden als Berechtigungsobjekt zurückgegeben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                URL                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Liefert den URL-Pfad PowerApps des Content Management Systems Portale für die Entität. Wenn die Entität in der aktuellen Website keine gültige URL hat, wird Null zurückgegeben. Im Allgemeinen wird nur einen Wert für bestimmte Entitätstypen zurückgegeben, die in das Portal-CMS integriert wurden, solange Sie den URL-Anbieter in Ihrer Anwendung angepasst haben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| \[Attribut- oder Beziehungsname\] | Sie können auf ein beliebiges Attribut der PowerApps-Entität nach logischem Namen zugreifen. `{{ entity.createdon }}{% assign attribute_name = 'name' %}{{ entity[attribute_name] }}` <br>Die Werte der meisten Entitätsattribute werden direkt zu [Liquid-Typen](liquid-types.md) zugeordnet: Felder mit zwei Optionsmöglichkeiten werden booleschen Werten zugeordnet, Textfelder werden Zeichenfolgen zugeordnet, nummerische Felder/Währungsfelder werden Zahlen zugeordnet und Datum/Uhrzeit-Felder werden Datum-Objekten zugeordnet. Einige Attributtypen werden jedoch als Objekte zurückgegeben:<ul><li>Suchfelder (Entitätsreferenz) werden als Entitätsreferenzobjekte zurückgegeben.</li><li>Optionssatz-/Auswahllistenfelder werden als Optionssatzwertobjekte zurückgegeben.</li><li>Sie können beliebigen verknüpfte Entitäten über den Beziehungsschemanamen laden.</li>`{{ page.adx_webpage_entitylist.adx_name }}`Wenn eine Beziehung reflexiv ist (d.h. auf sich selbst verweist), wird ein Reflexivbeziehungsobjekt zurückgegeben. (Andernfalls wäre das Ergebnis mehrdeutig.)`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**Hinweis**: Das Laden großer Mengen von verknüpfte Entitäten oder der Zugriff auf viele Beziehungen in einer einzigen Vorlage können negative Auswirkungen auf die Renderleistung der Vorlage haben. Vermeiden Sie das Laden verknüpfte Entitäten für jeden Artikel in einem Array innerhalb einer Schleife. Wenn möglich, verwenden Sie [PowerApps common data service Entitäts-Tags](portals-entity-tags.md), um Sammlungen von Entitäten zu laden. |
+|                 Id                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Die GUID-ID der Entität als Zeichenfolge. Beispiel: 936da01f -9abd-4d9d-80c7-02af85c822a8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|           logischer\_Name            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Der logische powerapps-Name der Entität.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|               Hinweise                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Lädt alle Notizen (Anmerkungen), die der Entität zugeordnet sind, von der ältesten zum aktuellen (aufheftungs-). Notizen werden als Notiz Objekte zurückgegeben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|            Griff             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Lädt Ergebnisse von Entitäts Berechtigungs Assertionen für die Entität. Die Ergebnisse werden als Berechtigungs Objekt zurückgegeben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                Urne                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Gibt den URL-Pfad des Inhalts Verwaltungssystems des powerapps-Portals für die Entität zurück. Wenn die Entität keine gültige URL in der aktuellen Website hat, gibt NULL zurück. Im Allgemeinen wird nur ein Wert für bestimmte Entitäts Typen zurückgegeben, die in das Portal-CMS integriert wurden, es sei denn, Sie haben den URL-Anbieter in Ihrer Anwendung angepasst.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| \[Attribut-oder Beziehungs Name\] | Sie können auf ein beliebiges Attribut der powerapps-Entität mit logischem Namen zugreifen. `{{ entity.createdon }}{% assign attribute_name = 'name' %}{{ entity[attribute_name] }}` <br>Die Werte der meisten Entitäts Attribute sind direkt den [Liquid-Typen](liquid-types.md)zugeordnet: zwei Options Felder werden booleschen Werten, Textfeldern zu Zeichen folgen, numerischen/Währungs Feldern zu zahlen, Datums-/Uhrzeitfelder und Datums Objekten zugeordnet. Einige Attributtypen werden jedoch als Objekte zurückgegeben:<ul><li>Suchfelder (Entitäts Verweis) werden als Entitäts Verweis Objekte zurückgegeben.</li><li>Options Satz-/picklist-Felder werden als Options Satz Wert-Objekte zurückgegeben.</li><li>Sie können auch alle zugehörigen Entitäten nach beziehungsschema Namen laden.</li>`{{ page.adx_webpage_entitylist.adx_name }}`in dem Fall, dass eine Beziehung reflexiv (d. h. selbstreferenziell) ist, wird ein reflexives Beziehungs Objekt zurückgegeben. (Andernfalls wäre das Ergebnis mehrdeutig.)`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**Hinweis**: das Laden einer großen Anzahl von verknüpften Entitäten oder das Zugreifen auf eine große Anzahl von Beziehungen in einer einzelnen Vorlage kann sich negativ auf die Leistung von Vorlagen Rendering auswirken. Vermeiden Sie das Laden von verknüpften Entitäten für jedes Element in einem Array innerhalb einer Schleife. Verwenden Sie nach Möglichkeit [powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md) , um Auflistungen von Entitäten zu laden. |
 
-### <a name="entity-reference"></a>Entitätsreferenz
+### <a name="entity-reference"></a>Entitäts Verweis
 
-Suchattributwerte werden mit den folgenden Attribute als Entitätsreferenzobjekte zurückgegeben.
+Such Attributwerte werden als Entitäts Verweis Objekte mit den folgenden Attributen zurückgegeben.
 
 
-|   Attribut   |                                                Beschreibung                                                |
+|   Versehen   |                                                Beschreibung                                                |
 |---------------|-----------------------------------------------------------------------------------------------------------|
-|      Kennung       | Die GUID-ID einer Referenzentität als Zeichenfolge. <br> Beispielsweise 936DA01F-9ABD-4d9d-80C7-02AF85C822A8 |
-| logical\_name |  Der logische PowerApps-Name der referenzierten Entität.   |
-|     Name      |                           Das Attribut "Primärer Name" der referenzierten Entität.                            |
+|      Id       | Die GUID-ID der Entität, auf die verwiesen wird, als Zeichenfolge. <br> Beispiel: 936da01f -9abd-4d9d-80c7-02af85c822a8 |
+| logischer\_Name |  Der logische powerapps-Name der Entität, auf die verwiesen wird.   |
+|     Name      |                           Das primäre Namensattribut der Entität, auf die verwiesen wird.                            |
 
-### <a name="note"></a>Notiz
+### <a name="note"></a>Note
 
-Eine Notiz ist ein Entitätsobjekt, das Zugriff auf die Attribute und Beziehungen eines Anmerkungs-Datensatzes bereitstellt. Neben allen Attributen eines Entitätsobjektes hat es die folgende zusätzlichen Attribute.
+Ein Hinweis ist ein Entitäts Objekt, das den Zugriff auf die Attribute und Beziehungen eines Anmerkung-Datensatzes ermöglicht. Zusätzlich zu allen Attributen eines Entitäts Objekts weist ein Hinweis die folgenden zusätzlichen Attribute auf.
 
 
-|  Attribut   |                                                                                                                                                                                                                                  Beschreibung                                                                                                                                                                                                                                  |
+|  Versehen   |                                                                                                                                                                                                                                  Beschreibung                                                                                                                                                                                                                                  |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| documentbody | Lädt das documentbody Attribut des Notiz-Anmerkung-Datensatzes als Base-64-codierte Zeichenfolge. Da der Inhalt dieses Attributs möglicherweise umfangreich sein kann, wird er nicht mit dem Rest der Notizenattribute geladen, sondern nur bei Bedarf. <br> **Hinweis**: Die Nutzung des documentbody-Attributs kann negative Auswirkungen auf die Renderleistung der Vorlage haben und sollte mit Vorsicht ausgeführt werden.<br>Verwenden Sie stattdessen das URL-Attribut, um wenn möglich eine Verknüpfung zu einer Notizenanlage bereitzustellen. |
-|     URL      |                                                                                                                                   Gibt den URL-Pfad für den integrierten Portal-Notizanhang-Handler zurück. Wenn der Benutzer über die Berechtigung verfügt, und die Notiz einen Dateianhang hat, lädt die Anforderung dieser URL den Notizendateianhang herunter.                                                                                                                                    |
+| documentbody | Lädt das documentbody-Attribut des Notiz Satzes der Notiz Notiz als Base64-codierte Zeichenfolge. Da der Inhalt dieses Attributs möglicherweise groß ist, wird er nicht mit dem Rest der Note-Attribute geladen, sondern nur bei Bedarf geladen. <br> **Hinweis**: die Verwendung des documentbody-Attributs kann sich negativ auf die Leistung der Vorlagen Rendering auswirken und sollte mit Bedacht durchgeführt werden.<br>Verwenden Sie das URL-Attribut, um einen Link zur Hinweis Anlage anzugeben, sofern dies möglich ist. |
+|     Urne      |                                                                                                                                   Gibt den URL-Pfad für den integrierten Anlage Handler der Portal Anmerkung zurück. Wenn der Benutzer über die Berechtigung verfügt und der Hinweis über eine angefügte Datei verfügt, wird durch eine Anforderung an diese URL die Anlage der Hinweis Datei heruntergeladen.                                                                                                                                    |
 
 >[!Note]
 > [Zusätzliche Filter](liquid-filters.md#additional-filters)                     
 
-### <a name="option-set-value"></a>Optionssatzwert
+### <a name="option-set-value"></a>Options Satz Wert
 
-Optionssatz-/Auswahllisten-Attributwerte werden mit den folgenden Attribute als Entitätsreferenzobjekte zurückgegeben.
+Options Satz-/picklist-Attributwerte werden als Entitäts Verweis Objekte mit den folgenden Attributen zurückgegeben.
 
-| Attribut | Beschreibung                                                     |
+| Versehen | Beschreibung                                                     |
 |-----------|-----------------------------------------------------------------|
-| Bezeichnung     | Die lokalisierte Beschriftung des Optionssatz-/Auswahllistenattributwerts. Beispiele, Aktiv|
-| Wert     | Der Integer-Wert des Optionssatz-/Auswahllistenattributwerts. Zum Beispiel 0                                                           |
+| Bezeichnung     | Die lokalisierte Bezeichnung des Options Satz-/picklist-Attribut Werts. Beispielsweise "aktiv"|
+| Value     | Der ganzzahlige Wert des Options Satz-/picklist-Attribut Werts. Beispiel: 0                                                           |
 
-### <a name="entity-permissions"></a>Entitätsberechtigungen
+### <a name="entity-permissions"></a>Entitäts Berechtigungen
 
-Das Entitätsberechtigungsobjekt bietet Zugriff auf zusammengefasste Berechtigungsassertionsergebnisse für eine Entität.
+Das Entitäts Berechtigungs Objekt ermöglicht den Zugriff auf aggregierte Berechtigungs assertionsergebnisse für eine Entität.
 
-| Attribut       | Beschreibung                                                                                                                                                                                                              |
+| Versehen       | Beschreibung                                                                                                                                                                                                              |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| can\_append     | Gibt „True“ zurück, wenn der aktuelle Benutzer die Berechtigung zum Anfügen von Datensätzen an Beziehungen dieses Datensatzes hat. Andernfalls wird „False“ ausgegeben.                                                                                              |
-| can\_append\_to | Gibt „True“ zurück, wenn der aktuelle Benutzer die Berechtigung zum Anfügen dieses Datensatzes an eine Beziehung einer anderen Entität hat. Andernfalls wird „False“ ausgegeben.                                                                                      |
-| can\_create     | Gibt „True“ zurück, wenn der aktuelle Benutzer die Berechtigung zum Erstellen neuer Datensätze dieses Entitätstyps hat. Andernfalls wird „False“ ausgegeben.                                                                                                      |
-| can\_delete     | Gibt „True“ zurück, wenn der aktuelle Benutzer die Berechtigung zum Löschen dieses Datensatzes hat. Andernfalls wird „False“ ausgegeben.                                                                                                                          |
-| can\_read       | Gibt „True“ zurück, wenn der aktuelle Benutzer die Berechtigung zum Lesen dieses Datensatzes hat. Andernfalls wird „False“ ausgegeben.                                                                                                                            |
-| can\_write      | Gibt „True“ zurück, wenn der aktuelle Benutzer die Berechtigung zum Aktualisieren dieses Datensatzes hat. Andernfalls wird „False“ ausgegeben.                                                                                                                          |
-| rules\_exist    | Gibt „True“ zurück, wenn die Berechtigungsergebnisse dieses Objekts auf explizit definierten Berechtigungsregeln basieren. Gibt „False“ zurück, wenn die Standardergebnisse nicht auf explizit definierten Berechtigungen basieren. |
+| kann\_angefügt werden     | Gibt true zurück, wenn der aktuelle Benutzer über die Berechtigung zum Anfügen von Datensätzen an die Beziehungen dieses Datensatzes verfügt. Gibt andernfalls false zurück.                                                                                              |
+| \_kann\_angefügt werden an | Gibt "true" zurück, wenn der aktuelle Benutzer über die Berechtigung zum Anfügen dieses Datensatzes an eine Beziehung einer anderen Entität verfügt. Gibt andernfalls false zurück.                                                                                      |
+| kann\_erstellt werden.     | Gibt "true" zurück, wenn der aktuelle Benutzer über die Berechtigung zum Erstellen neuer Datensätze dieses Entitäts Typs verfügt. Gibt andernfalls false zurück.                                                                                                      |
+| kann\_gelöscht werden.     | Gibt true zurück, wenn der aktuelle Benutzer über die Berechtigung zum Löschen dieses Datensatzes verfügt. Gibt andernfalls false zurück.                                                                                                                          |
+| Lese\_möglich       | Gibt true zurück, wenn der aktuelle Benutzer über die Berechtigung zum Lesen dieses Datensatzes verfügt. Gibt andernfalls false zurück.                                                                                                                            |
+| kann\_schreiben      | Gibt true zurück, wenn der aktuelle Benutzer über die Berechtigung zum Aktualisieren dieses Datensatzes verfügt. Gibt andernfalls false zurück.                                                                                                                          |
+| Regeln\_vorhanden    | Gibt true zurück, wenn die von diesem-Objekt dargestellten Berechtigungs Ergebnisse das Ergebnis von explizit definierten Berechtigungs Regeln sind. Gibt false zurück, wenn es sich um die Standard Ergebnisse handelt, wenn explizit definierte Berechtigungen fehlen. |
 
 ### <a name="reflexive-relationship"></a>Reflexive Beziehung
 
-Der Versuch reflexive (d.h. auf sich selbst verweisend) Beziehungen oder Entitäten zu laden gibt Objekte mit den folgenden Attributen zurück.
+Versuche, reflexive (d. h. selbstreferenzielle) Beziehungen für Entitäten zu laden, werden als Objekte mit den folgenden Attributen zurückgegeben.
 
-| Attribut     | Beschreibung                                                                                                   |
+| Versehen     | Beschreibung                                                                                                   |
 |---------------|---------------------------------------------------------------------------------------------------------------|
-| is\_reflexive | Gibt „True“ zurück. Kann verwendet werden, um zu testen, ob ein Objekt, das über eine Beziehungen zurückgegeben wird, ist Reflexivbeziehungsobjekt ist. |
-| referenced    | Gibt ein Array referenzierter Entitäten für die jeweilige Beziehung zurück.                                           |
-| referencing   | Gibt eine referenzierende Entität für die jeweilige Beziehung zurück. Gibt Null zurück, wenn keine verweisende Entität vorhanden ist. Bei einer n: n-Beziehung wird ein Array aus referenzierenden Entitäten zurückgegeben.                          
+| ist\_reflexiv | Gibt true zurück. Kann verwendet werden, um zu testen, ob ein Objekt, das von einer Beziehung zurückgegeben wurde, ein reflexives Beziehungs Objekt ist. |
+| verwiesen wird    | Gibt ein Array von Entitäten zurück, auf die verwiesen wird.                                           |
+| verweisen   | Gibt eine verweisende Entität für die angegebene Beziehung zurück. Gibt NULL zurück, wenn keine verweisende Entität vorhanden ist. Wenn die Beziehung m:n (n:n) ist, wird ein Array von verweisenden Entitäten zurückgegeben.                          
 
-## <a name="entitylist"></a>entitylist
+## <a name="entitylist"></a>entityList
 
-Das entitylist-Objekt wird innerhalb der [PowerApps Common Data Service Entity Tags](portals-entity-tags.md) verwendet. Es bietet Zugriff auf alle Attribute einer bestimmten Liste mit Entitäten.  
+Das entityList-Objekt wird innerhalb der [powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md)verwendet. Sie ermöglicht den Zugriff auf alle Attribute einer bestimmten Entitäts Liste.  
 
 > [!Note]                                                       
-> [Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist](render-entity-list-current-page.md)
+> [Rendering der der aktuellen Seite zugeordneten Entitäts Liste](render-entity-list-current-page.md)
 
 ### <a name="attributes"></a>Attribute
 
 > [!Note]
-> [Entitäten](#entities)
+> [Kleinstunternehmen](#entities)
 
-|               Attribut               |                                                                                                                            Beschreibung                                                                                                                            |
+|               Versehen               |                                                                                                                            Beschreibung                                                                                                                            |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            create\_enabled            |                                                                                Gibt „True“ zurück, wenn das Erstellen neuer Datensätze für die Liste mit Entitäten konfiguriert ist. Andernfalls wird „False“ ausgegeben.                                                                                |
-|              create\_url              |                                                                                          Gibt den konfigurierten URL-Pfad für einen Erstellungslink/-schaltfläche für die Liste mit Entitäten zurück.                                                                                          |
-|            detail\_enabled            |                                                                         Gibt „True“ zurück, wenn eine Detailansicht für einzelne Datensätze für die Liste mit Entitäten konfiguriert ist. Andernfalls wird „False“ ausgegeben.                                                                          |
-|         detail\_id\_parameter         |               Gibt den Abfragezeichenfolgen-Parameternamen zurück, der für die Datensatz-ID verwendet werden soll, wenn eine Datensatzdetailansichts-URL erstellt wird. Siehe [URL-Filter](liquid-filters.md#url-filters) für Details zur Verwendung von Liquid-Filtern zur URL-Erstellung. Beispiel: id                |
-|             detail\_label             |                                                                                     Gibt die konfigurierte lokalisierte Beschriftung für Detailansichtslinks/-schaltflächen für die Liste mit Entitäten zurück.                                                                                     |
-|              detail\_url              |                                                                                       Gibt den konfigurierten URL-Pfad für Detailansichtslinks/-schaltflächen für die Liste mit Entitäten zurück.                                                                                        |
-|           empty\_list\_text           |                                                                                Gibt den konfigurierten lokalisierten Text zurück, der angezeigt werden soll, wenn die Entitätslistenansicht keine Ergebnisse zurückgibt.                                                                                |
-|      enable\_entity\_permissions      |                                                                               Gibt „True“ zurück, wenn die Entitätsberechtigungsfilterung für diese Liste mit Entitäten aktiviert ist. Andernfalls wird „False“ ausgegeben.                                                                               |
-|         entity\_logical\_name         |                                                 Gibt den logischen PowerApps-Entitätsnamen für Datensätze zurück, die von dieser Liste mit Entitäten angezeigt werden sollen. Beispiel: contact                                                 |
-|   filter\_account\_attribute\_name    |                                            Gibt den logischen Attributsnamen für die Suche in Firmen zum Filtern von Ergebnisdatensätzen nach der übergeordneten Firma des aktuellen Portal-Benutzers zurück. Zum Beispiel: accountid                                            |
-|         filter\_apply\_label          |                                                            Gibt die konfigurierte lokalisierte Beschriftung zurück, die für den Link/die Schaltfläche verwendet werden soll, der/die einen erweiterten Attributfilter für die Entitätslistenergebnisse anwendet.                                                            |
-|          filter\_definition           |                      Gibt die JSON-Attributfilterdefinition für die Liste mit Entitäten zurück. Siehe [Entitäts-Listenfilter](liquid-filters.md#entity-list-filters) für Details zum Verwenden des metafilters-Liquid-Filters zur Verarbeitung dieser Definition.                       |
-|            filter\_enabled            |                                                                               Gibt „True“ zurück, wenn die erweiterte Attributfilterung für die Liste mit Entitäten aktiviert ist. Andernfalls wird „False“ ausgegeben.                                                                               |
-| filter\_portal\_user\_attribute\_name |                                                 Gibt den logischen Attributsnamen für die Suche an Kontakten zum Filtern von Ergebnisdatensätzen nach dem Kontakt des aktuellen Portal-Benutzers zurück. Beispiel: contactid                                                  |
-|   filter\_website\_attribute\_name    |                                              Gibt den logischen Attributsnamen für die Suche an adx\_website zum Filtern von Ergebnisdatensätzen nach der Website des aktuellen Portals zurück. Beispiel: adx\_websiteid                                              |
-|            language\_code             |                                               Gibt den ganzzahligen PowerApps-CRM-Sprachcode zurück, der verwendet wird, um alle lokalisierten Bezeichnungen für diese Liste mit Entitäten auszuwählen.                                                |
-|              page\_size               |                                                                                                   Gibt die Größe der konfigurierten Ergebnisseite für die Liste mit Entitäten zurück.                                                                                                    |
-|          primary\_key\_name           |                                                                                  Gibt den logischen Primärschlüsselattributnamen für Datensätze zurück, die von dieser Liste mit Entitäten angezeigt werden sollen.                                                                                  |
-|            search\_enabled            |                                                                                         Gibt „True“ zurück, wenn die Suche für diese Liste mit Entitäten aktiviert ist. Andernfalls wird „False“ ausgegeben.                                                                                          |
-|          search\_placeholder          |                                                                                        Gibt den konfigurierten lokalisierten Text für den Entitätslisten-Suchfeldplatzhalter zurück.                                                                                        |
-|            search\_tooltip            |                                                                                             Gibt den konfigurierten lokalisierten Text für die Entitätslistensuch-QuickInfo zurück.                                                                                             |
-|                 Ansichten                 |                                                                                           Gibt die verfügbaren Ansichten für die Entitätsliste als Entitätslisten-Ansichtsobjekte zurück.                                                                                           |
-|      \[Logischer Attributname\]       | Sie können ein beliebiges Attribut der Entitätsliste (adx\_Entitätsliste)PowerApps-Datensatzes der Liste nach logischem Namen aufrufen, genau wie bei [Entitäts](liquid-objects.md#entity) objekten. Beispielsweise {{ entitylist.adx\_name }} |
+|            Erstellen\_aktiviert            |                                                                                Gibt true zurück, wenn die Erstellung neuer Datensätze für die Entitäts Liste konfiguriert ist. Gibt andernfalls false zurück.                                                                                |
+|              \_-URL erstellen              |                                                                                          Gibt den konfigurierten URL-Pfad für eine Erstellungs Verknüpfung/-Schaltfläche für die Entitäts Liste zurück.                                                                                          |
+|            Detail\_aktiviert            |                                                                         Gibt true zurück, wenn eine Detailansicht für einzelne Datensätze für die Entitäts Liste konfiguriert ist. Gibt andernfalls false zurück.                                                                          |
+|         Details\_ID\_Parameter         |               Gibt den Namen der Abfrage Zeichenfolgen-Parameter zurück, die für die Datensatz-ID beim Erstellen einer Datensatz-Detailansicht verwendet werden soll Weitere Informationen zur Verwendung von Liquid-Filtern zum Erstellen von URLs finden Sie unter [URL-Filter](liquid-filters.md#url-filters) . Beispiel: ID                |
+|             Detail\_Bezeichnung             |                                                                                     Gibt die konfigurierte lokalisierte Bezeichnung für Verknüpfungen/Schaltflächen der Detailansicht für die Entitäts Liste zurück.                                                                                     |
+|              Details\_URL              |                                                                                       Gibt den konfigurierten URL-Pfad für eine Detailansicht Links/Schaltflächen für die Entitäts Liste zurück.                                                                                        |
+|           leere\_Liste\_Text           |                                                                                Gibt den konfigurierten lokalisierten Text zurück, der angezeigt wird, wenn die Entitäts Listenansicht keine Ergebnisse zurückgibt.                                                                                |
+|      \_Entitäts\_Berechtigungen aktivieren      |                                                                               Gibt true zurück, wenn das Filtern von Entitäts Berechtigungen für diese Entitäts Liste aktiviert ist. Gibt andernfalls false zurück.                                                                               |
+|         Entitäts\_logischer\_Name         |                                                 Gibt den logischen powerapps-Entitäts Namen für Datensätze zurück, die von dieser Entitäts Liste angezeigt werden sollen. Wenden Sie sich beispielsweise an                                                 |
+|   \_Konto\_Attribut\_Name Filtern    |                                            Gibt den logischen Attributnamen für die Suche nach dem Konto zurück, das zum Filtern von Ergebnisdatensätzen nach dem übergeordneten Konto des aktuellen Portal Benutzers verwendet wird. Beispiel: AccountId                                            |
+|         Filter\_\_Bezeichnung anwenden          |                                                            Gibt die konfigurierte lokalisierte Bezeichnung zurück, die für die Verknüpfung/Schaltfläche verwendet werden soll, die einen erweiterten Attribut Filter auf die Ergebnisse der Entitäts Liste anwendet.                                                            |
+|          Filter\_Definition           |                      Gibt die JSON-Attribut Filter Definition für die Entitäts Liste zurück. Ausführliche Informationen zur Verwendung des Liquid-Filters für MetaFilter zum Verarbeiten dieser Definition finden Sie unter [Filter für Entitäts Listen](liquid-filters.md#entity-list-filters) .                       |
+|            Filter\_aktiviert            |                                                                               Gibt true zurück, wenn die erweiterte Attribut Filterung für die Entitäts Liste aktiviert ist. Gibt andernfalls false zurück.                                                                               |
+| Filter\_-Portal\_Benutzer\_Attribut\_Name |                                                 Gibt den logischen Attributnamen für die Suche an, die zum Filtern von Ergebnisdatensätzen nach dem Kontakt des aktuellen Portal Benutzers verwendet wird. Beispielsweise ContactID                                                  |
+|   Filter\_Website\_Attribut\_Name    |                                              Gibt den logischen Attributnamen für die Suche an AdX\_-Website zurück, die zum Filtern von Ergebnisdatensätzen auf der aktuellen Portal Website verwendet wird. Beispiel: ADX\_WebsiteID                                              |
+|            sprach\_Code             |                                               Gibt den Code der ganzzahligen powerapps-Sprache zurück, der verwendet wird, um alle lokalisierten Bezeichnungen für diese Entitäts Liste auszuwählen.                                                |
+|              Seiten\_Größe               |                                                                                                   Gibt die konfigurierte Ergebnisseiten Größe für die Entitäts Liste zurück.                                                                                                    |
+|          Name des primär\_Schlüssels\_           |                                                                                  Gibt den logischen Namen des Primärschlüssel Attributs für Datensätze zurück, die von dieser Entitäts Liste angezeigt werden sollen.                                                                                  |
+|            Such\_aktiviert            |                                                                                         Gibt true zurück, wenn die Suche für diese Entitäts Liste aktiviert ist. Gibt andernfalls false zurück.                                                                                          |
+|          \_Platzhalter suchen          |                                                                                        Gibt den konfigurierten lokalisierten Text für den Platzhalter für den Suchbereich der Entitäts Liste zurück                                                                                        |
+|            \_QuickInfo suchen            |                                                                                             Gibt den konfigurierten lokalisierten Text für die QuickInfo der Entitäts Listen Suche zurück.                                                                                             |
+|                 Ansichten                 |                                                                                           Gibt die verfügbaren Sichten für die Entitäts Liste als Objekte der Entitäts Listenansicht zurück.                                                                                           |
+|      logischer Name des \[Attributs\]       | Sie können auf ein beliebiges Attribut des powerapps-Datensatzes der Entitäts Liste (ADX\_entityList) mithilfe des logischen namens zugreifen, und zwar auf dieselbe Weise wie ein [Entitäts](liquid-objects.md#entity) Objekt. Beispiel: {{entityList. ADX\_Name}} |
 
-### <a name="entity-list-view-attributes"></a>Entitätslisten-Ansichtsattribute
+### <a name="entity-list-view-attributes"></a>Attribute der Entitäts Listenansicht
 
-|          Attribut          |                                                                                     Beschreibung                                                                                     |
+|          Versehen          |                                                                                     Beschreibung                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           columns           |                                                         Gibt die Spalten der Ansicht als Entitätslisten-Ansichtsspaltenobjekte zurück.                                                         |
-|    entity\_logical\_name    |               Gibt den logischen PowerApps-Entitätsnamen für die Datensätze zurück, die in der Ansicht enthalten sind. Beispiel: contact                |
-|             Kennung              |                                                                          Gibt die GUID-ID der Ansicht zurück.                                                                           |
-|       language\_code        | Gibt den ganzzahligen PowerApps-Sprachcode zurück, der verwendet wird, um alle lokalisierten Bezeichnungen (Spaltenüberschriften usw.) für die Ansicht auszuwählen. |
-|            Name             |                                          Gibt den PowerApps-Anzeigenamen der Ansicht zurück.                                          |
-| primary\_key\_logical\_name |        Gibt den logischen PowerApps-Entitäts-Primärschlüsselnamen für die Datensätze zurück, die in der Ansicht enthalten sind. Beispiel: contactid         |
-|      sort\_expression       |                                               Gibt den Standardsortierausdruck für die Ansicht zurück. Beispielsweise nameASC, createdon DESC                                               |
+|           Spalten           |                                                         Gibt die Spalten der Sicht als Spalten Objekte der Entitäts Listenansicht zurück.                                                         |
+|    Entitäts\_logischer\_Name    |               Gibt den logischen Namen der powerapps-Entität für die in der Sicht enthaltenen Datensätze zurück. Wenden Sie sich beispielsweise an                |
+|             Id              |                                                                          Gibt die GUID-ID der Sicht zurück.                                                                           |
+|       sprach\_Code        | Gibt den Code der ganzzahligen powerapps-Sprache zurück, der verwendet wird, um alle lokalisierten Bezeichnungen (Spaltenüberschriften usw.) für die Sicht auszuwählen. |
+|            Name             |                                          Gibt den powerapps-anzeigen amen der Ansicht zurück.                                          |
+| primärer\_Schlüssel\_logischer\_Name |        Gibt den logischen Namen des powerapps-Entitäts Primärschlüssels für die in der Sicht enthaltenen Datensätze zurück. Beispielsweise ContactID         |
+|      \_Ausdruck sortieren       |                                               Gibt den Standard Sortier Ausdruck für die Ansicht zurück. Nennen Sie z. b. "ASC", "kreatedon".                                               |
 
-### <a name="entity-list-view-column-attributes"></a>Entitätslisten-Ansichtsspaltenattribute
+### <a name="entity-list-view-column-attributes"></a>Spalten Attribute der Entitäts Listenansicht
 
-|    Attribut     |                                                                                    Beschreibung                                                                                    |
+|    Versehen     |                                                                                    Beschreibung                                                                                    |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| attribute\_type  | Gibt den PowerApps-Attributtypnamen als Zeichenfolge für die Spalte zurück. Beispielsweise Lookup, Picklist, String, Boolean, DateTime |
-|  logical\_name   |                       Gibt den logischen PowerApps-Attributnamen für die Spalte zurück. Beispielsweise createdon                       |
-|       Name       |                      Gibt den lokalisierten PowerApps-Anzeigenamen für die Spalte zurück. Beispielsweise Created On                       |
-| sort\_ascending  |                                      Gibt eine Sortierausdruckszeichenfolge für die Sortierung der Spalte in aufsteigender Reihenfolge zurück. Beispielsweise createdon ASC                                       |
-| sort\_descending |                                     Gibt eine Sortierausdruckszeichenfolge für die Sortierung der Spalte in absteigender Reihenfolge zurück. Beispielsweise createdon DESC                                      |
-|  sort\_disabled  |                                                   Gibt „True“ zurück, wenn die Sortierung für die Spalte deaktiviert ist. Andernfalls wird „False“ ausgegeben.                                                    |
-|  sort\_enabled   |                                                    Gibt „True“ zurück, wenn die Sortierung für die Spalte aktiviert ist. Andernfalls wird „False“ ausgegeben.                                                    |
-|      width       |                                                              Gibt die konfigurierte Breite für die Spalte in Pixeln zurück.                                                              |
+| Attribut\_Typs  | Gibt den powerapps-Attributtyp Namen für die Spalte als Zeichenfolge zurück. Beispiel: Lookup, picklist, String, Boolean, DateTime |
+|  logischer\_Name   |                       Gibt den logischen Namen des powerapps-Attributs für die Spalte zurück. Beispiel: "".                       |
+|       Name       |                      Gibt den lokalisierten powerapps-anzeigen Amen für die Spalte zurück. Beispielsweise erstellt am                       |
+| \_aufsteigend sortieren  |                                      Gibt eine Sortier Ausdrucks Zeichenfolge zum Sortieren der Spalte in aufsteigender Reihenfolge zurück. Beispielsweise:                                       |
+| \_absteigend sortieren |                                     Gibt eine Sortier Ausdrucks Zeichenfolge zum Sortieren der Spalte in absteigender Reihenfolge zurück. Beispiel: "kreatedon"                                      |
+|  Sortierung\_deaktiviert  |                                                   Gibt true zurück, wenn die Sortierung für die Spalte deaktiviert ist. Gibt andernfalls false zurück.                                                    |
+|  Sortierung\_aktiviert   |                                                    Gibt true zurück, wenn die Sortierung für die Spalte aktiviert ist. Gibt andernfalls false zurück.                                                    |
+|      width       |                                                              Gibt die konfigurierte Breite für die Spalte in Pixel zurück.                                                              |
 
 ## <a name="entityview"></a>entityview
 
-Das entityview-Objekt wird innerhalb des entityview-Tags verwendet und bietet Zugriff auf die Metadaten für die Ansicht sowie die Anzeigeergebnisdatensätze.
+Das entityview-Objekt wird innerhalb des entityview-Tags verwendet und ermöglicht den Zugriff auf die Metadaten für die Sicht, zusätzlich zum Anzeigen von Ergebnisdatensätzen.
 
 ### <a name="attributes"></a>Attribute
 
-|          Attribut          |                                                                               Beschreibung                                                                                |
+|          Versehen          |                                                                               Beschreibung                                                                                |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           columns           |                         Gibt die Spalten in der Ansicht als [entitylist-Ansichtsspaltenobjekte](liquid-objects.md#entity-list-view-column-attributes) zurück.                          |
-| entity\_permission\_denied  | Gibt „True“ zurück, wenn der Zugriff auf die Ansichtsergebnisse aufgrund unzureichender Entitäts-Berechtigungen für den aktuellen Benutzer verweigert wurde. Gibt „False“ zurück, wenn der Lesezugriff auf Ansichtsergebnisse erteilt wurde. |
-|    entity\_logical\_name    |                   Der logische Name der PowerApps-Entität der Ansichtsergebnisdatensätze. Beispiel: contact                   |
-|         first\_page         |                 Die Seitenzahl der ersten Seite der Ansichtsergebnisse. Das ist 1, es sei denn, es wurden keine Ergebnisse zurückgegeben. In diesem Fall ist es Null.                  |
-|             Kennung              |                            Die GUID-ID der PowerApps-Ansicht, die diese entityview definiert.                             |
-|       language\_code        |             Der Sprachcode für Ganzzahlen von PowerApps, der verwendet wird, um lokalisierte Bezeichnungen für die aktuelle Ansicht zu laden.              |
-|         last\_page          |                                 Die Seitenzahl der letzten Seite der Ansichtsergebnisse. Wenn keine Ergebnisse zurückgegeben wurden, ist dies Null.                                  |
-|            Name             |              Der Name der PowerApps-Ansicht, die diese entityview definiert, beispielsweise Active Contacts               |
-|         next\_page          |                                Die Seitenzahl der nächsten Seite der Ansichtsergebnisse. Ist keine nächste Seite mit Ergebnissen vorhanden, ist dies Null.                                 |
-|            Seite             |                                                           Die Seitenzahl der aktuellen Seite der Ansichtsergebnisse.                                                           |
-|            pages            |                                          Gibt ein Array von Seitenzahlen zurück, die alle Ergebnisseiten der aktuellen Ansicht enthalten.                                          |
-|         page\_size          |                                                      Die Anzahl an Ergebnissen, die pro Seite für die aktuelle Ansicht zurückgegeben werden.                                                       |
-|       previous\_page        |                              Die Seitenzahl der nächsten Seite der Ansichtsergebnisse. Ist keine vorherige Seite mit Ergebnissen vorhanden, ist dies Null.                               |
-| primary\_key\_logical\_name |  Der logische PowerApps-Name des Primärschlüsselattributs der Ergebnisentität für diese Ansicht. Beispiel: contactid   |
-|           Datensätze           |                                                   Die aktuelle Seite der Ergebnisdatensätze für die Ansicht als Entitätsobjekte.                                                    |
-|      sort\_expression       |                                             Der Standardsortierausdruck für die Ansicht. Beispielsweise nameASC, createdon DESC.                                              |
-|        total\_pages         |                                                              Die Gesamtanzahl an Ergebnisseiten für die Ansicht.                                                              |
-|       total\_records        |                                                       Die Gesamtanzahl an Ergebnissen für die Ansicht (über alle Seiten).                                                       |
+|           Spalten           |                         Gibt die Spalten in der Sicht als [Entitäts Sicht-Spalten Objekte](liquid-objects.md#entity-list-view-column-attributes)zurück.                          |
+| Berechtigung für Entitäts\_\_verweigert  | Gibt "true" zurück, wenn der Zugriff zum Anzeigen von Ergebnissen aufgrund unzureichender Entitäts Berechtigungen für den aktuellen Benutzer verweigert wurde. Gibt false zurück, wenn der Lesezugriff zum Anzeigen der Ergebnisse gewährt wurde. |
+|    Entitäts\_logischer\_Name    |                   Der logische Name der powerapps-Entität der Ergebnisdaten Sätze der Sicht. Wenden Sie sich beispielsweise an                   |
+|         erste\_Seite         |                 Die Seitenzahl der ersten Seite der Sicht Ergebnisse. Dies ist 1, es sei denn, es wurden keine Ergebnisse zurückgegeben. in diesem Fall ist der Wert NULL.                  |
+|             Id              |                            Die GUID-ID der powerapps-Ansicht, die diese entityview definiert.                             |
+|       sprach\_Code        |             Der Code der ganzzahligen powerapps-Sprache, mit dem lokalisierte Bezeichnungen für die aktuelle Ansicht geladen werden.              |
+|         Letzte\_Seite          |                                 Die Seitenzahl der letzten Seite der Sicht Ergebnisse. Wenn keine Ergebnisse zurückgegeben wurden, ist dies NULL.                                  |
+|            Benennen             |              Der Name der powerapps-Ansicht, die diese entityview definiert, z. b. aktive Kontakte.               |
+|         nächste\_Seite          |                                Die Seitenzahl der nächsten Seite der Sicht Ergebnisse. Wenn keine nächste Seite mit Ergebnissen vorhanden ist, ist dies NULL.                                 |
+|            s             |                                                           Die Seitenzahl der aktuellen Seite der Sicht Ergebnisse.                                                           |
+|            Seiten            |                                          Gibt ein Array von Seitenzahlen zurück, das alle Seiten der Ergebnisse für die aktuelle Ansicht enthält.                                          |
+|         Seiten\_Größe          |                                                      Die Anzahl der für die aktuelle Ansicht pro Seite zurückgegebenen Ergebnisse.                                                       |
+|       vorherige\_Seite        |                              Die Seitenzahl der nächsten Seite der Sicht Ergebnisse. Wenn keine vorherige Seite mit Ergebnissen vorhanden ist, ist diese NULL.                               |
+| primärer\_Schlüssel\_logischer\_Name |  Der logische powerapps-Name des Primary Key-Attributs der Ergebnis Entität für diese Sicht. Beispielsweise ContactID.   |
+|           Best           |                                                   Die aktuelle Seite der Ergebnisdaten Sätze für die Sicht als Entitäts Objekte.                                                    |
+|      \_Ausdruck sortieren       |                                             Der Standard Sortier Ausdruck für die Ansicht. Beispiel: nameasc, kreatedon Entsc.                                              |
+|        Gesamt\_Seiten         |                                                              Die Gesamtanzahl der Ergebnisseiten für die Sicht.                                                              |
+|       Gesamtanzahl\_Datensätze        |                                                       Die Gesamtanzahl der Ergebnisse für die Ansicht (auf allen Seiten).                                                       |
 
-## <a name="events"></a>ereignisse
+## <a name="events"></a>Fall
 
-Bietet die Möglichkeit, auf Ereignisse zuzugreifen und sie zu rendern. Das events-Objekt ermöglicht die Auswahl eines bestimmten Ereignisses oder alle Ereignisse.
+Bietet die Möglichkeit, auf Ereignisse zuzugreifen und Sie zu Rendering. Mit dem Events-Objekt können Sie ein bestimmtes Ereignis oder alle Ereignisse auswählen.
 
-### <a name="events-object"></a>events-Objekt
+### <a name="events-object"></a>Events-Objekt
 
-Das events-Objekt ermöglicht Ihnen den Zugriff auf spezielle Ereignisse im Portal oder auf alle Ereignisse im Portal (unabhängig vom Ereignis).
+Das Ereignis Objekt ermöglicht Ihnen den Zugriff auf ein bestimmtes Ereignis im Portal oder auf das Zugreifen auf alle Ereignisse im Portal (unabhängig vom Ereignis).
 
-Das events-Objekt hat die folgenden Attribute:
+Das Ereignis Objekt weist die folgenden Attribute auf:
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-|occurences |Gibt ein eventoccurancess-Objekt zurück, das alle Ereignisse im Portal enthält. |
-|[event name or id] |Sie können auf jedes Ereignis über dessen Namens- oder ID-Eigenschaften zugreifen.<br>{% assign event = events[&quot;Event Name&quot;] %}<br>{% assign event = events[&quot;da8b8a92-2ee6-476f-8a21-782b047ff460&quot;] %} |
+|vorkommen |Gibt ein eventeventancessobject-Objekt zurück, das alle Ereignis vorkommen im Portal enthält. |
+|[Ereignis Name oder ID] |Sie können auf jedes beliebige Ereignis über dessen Name oder ID-Eigenschaften zugreifen.<br>{% Assign Event = Ereignisse [&quot;Ereignis Name&quot;]%}<br>{% Assign Event = Ereignisse [&quot;da8b8a92-2ee6-476f-8a21-782b047ff460&quot;]%} |
 
-### <a name="event-object"></a>event-Objekt
+### <a name="event-object"></a>Ereignis Objekt
 
-Das event-Objekt ermöglicht Ihnen die Arbeit an einem einzelnen Ereignis, wobei Sie auf die Zeitpläne und Vorkommen für dieses Ereignis zugreifen können.
+Das Ereignis Objekt ermöglicht Ihnen das Arbeiten mit einem einzelnen Ereignis, sodass Sie auf die Zeitpläne und Vorkommen für dieses Ereignis zugreifen können.
 
-Das event-Objekt hat die folgenden Attribute:
+Das Ereignis Objekt hat die folgenden Attribute:
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Vorkommen | Gibt ein eventoccurrences-Objekt zurück, das alle Vorkommen für das Ereignis enthält. |
-| Name       | Der Name des Ereignisses.                                                     |
-| URL        | Die URL des Ereignisses.                                                      |
+| Alltag | Gibt ein eventocaccesscesobject-Objekt zurück, das alle Vorkommen für das Ereignis enthält. |
+| Benennen       | Der Name des Ereignisses.                                                     |
+| Urne        | Die URL des Ereignisses.                                                      |
 
-### <a name="eventoccurences-object"></a>eventoccurences-Objekt
+### <a name="eventoccurences-object"></a>eventvorkommen-Objekt
 
-Das eventoccurrences -Objekt ermöglicht Ihnen, auf eine Sammlung von Ereignis-Instanz-Objekten zuzugreifen. Sie können die Ereignisvorkommen sortieren und einen Datumsbereich angeben, sodass eine Paginierung erreicht wird und Liquid-Filtern verwendet werden können,
+Mit dem eventvorkommen-Objekt können Sie auf eine Auflistung von Ereignissen für Ereignis vorkommen zugreifen. Sie können die Ereignis vorkommen anordnen und einen Datumsbereich für die abzurufenden vorkommen angeben. Außerdem können Sie die Paginierung mithilfe von Liquid-Filtern erreichen.
 
 ```
 {% assign occurances = event.occurrences.from[today].to[advance_date] %}
 ```
 
-beachten Sie, dass
+Beachten Sie, dass
 
 ```
 {% assign occurances = event.occurrences.min[today].max[advance_date] %}
 ```
 
-auch möglich ist.
+ist ebenfalls möglich.
 
-Nachfolgende Attribute sind dem eventoccurrences-Objekt zugeordnet
+Die folgenden Attribute sind dem eventvorkommen-Objekt zugeordnet.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Alle | Gibt alle eventoccurance-Objekte in der Sammlung zurück. |
+| Allen | Gibt alle eventvorkommen-Objekte in der Auflistung zurück. |
 
-### <a name="eventoccurence-object"></a>eventoccurence-Objekt
+### <a name="eventoccurence-object"></a>eventvorkommen-Objekt
 
-Stellt ein einzelnes Ereignisvorkommen dar. Die zugeordnete Attribute:
+Stellt das Vorkommen eines einzelnen Ereignisses dar. Die zugeordneten Attribute sind unten angegeben:
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| URL                 | Die URL des Vorkommens.    |
-| is\_all\_day\_event | Betriff das Ereignis einen ganzen Arbeitstag?     |
-| start\_time         | Die Startzeit für das Ereignis. |
-| end\_time           | Die Endzeit für das Ereignis.   |
+| Urne                 | Die URL des Auftretens.    |
+| \_alle\_Tag\_Ereignis | Handelt es sich um ein alltägige Ereignis?     |
+| Start\_Zeit         | Die Startzeit für das Ereignis. |
+| Endzeit\_           | Die Endzeit für das Ereignis.   |
 
 
-## <a name="forloop"></a>forloop
+## <a name="forloop"></a>Schleife
 
-Enthält Eigenschaften, die mit einem [für](iteration-tags.md#for)  Loop-Block nützlich sind.  
+Enthält Eigenschaften, die in einem [for](iteration-tags.md#for) -Schleifen Block nützlich sind.  
 
 > [!Note]
-> forloop kann nur innerhalb einer [für ](iteration-tags.md#for)-Tags verwendet werden.
+> Schleife kann nur innerhalb eines [for](iteration-tags.md#for) -Tags verwendet werden.
 
-**Code**
+**Ordnung**
 
 ```
 {% for child in page.children %}
@@ -523,7 +528,7 @@ This is child page number {{ forloop.index }}.
 {% endfor %}
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 This is the first child page!
@@ -535,22 +540,22 @@ This is child page number 3.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| erste   | Gibt „True“ zurück, wenn es sich um den ersten Schleifendurchlauf handelt. Gibt „False“ zurück, wenn es sich nicht um den ersten Schleifendurchlauf handelt.       |
-| index   | Die Position des aktuellen Elements in der Sammlung (das ersten Element hat die Position 1).                   |
-| index0  | Die Position des aktuellen Elements in der Sammlung (das ersten Element hat die Position 0).                   |
-| Letzter    | Gibt „True“ zurück, wenn es sich um den letzten Schleifendurchlauf handelt. Gibt „False“ zurück, wenn es sich nicht um den letzten Schleifendurchlauf handelt.         |
-| length  | Gibt die Anzahl der Durchlaufe der Schleife zurück ߝ Die Anzahl der Elemente in der Sammlung, die durchlaufen werden. |
-| rindex  | Anzahl der Elemente, die noch in der Schleife verbleiben (Länge - Index), wobei 1 der Index des letzten Elements ist.              |
-| rindex0 | Anzahl der Elemente, die noch in der Schleife verbleiben (Länge - Index), wobei 0 der Index des letzten Elements ist.              |
+| Erstes   | Gibt true zurück, wenn es sich um die erste Iterations Schleife handelt. Gibt false zurück, wenn es sich nicht um die erste Iterations Datei handelt.       |
+| Sin   | Die Position des aktuellen Elements in der Auflistung, wobei das erste Element die Position 1 hat.                   |
+| index0  | Die Position des aktuellen Elements in der Auflistung, wobei das erste Element die Position 0 hat.                   |
+| Last    | Gibt true zurück, wenn es sich um die letzte Iterations Schleife handelt. Gibt false zurück, wenn es sich nicht um die letzte Iterations Vorgang handelt.         |
+| Füll  | Gibt die Anzahl der Iterationen für die Schleife zurück ߝ die Anzahl der Elemente in der Auflistung, die durchlaufen wird. |
+| rindex  | Anzahl der Elemente, die in der Schleife verbleiben (Längen Index), wobei 1 der Index des letzten Elements ist.              |
+| rindex0 | Anzahl der Elemente, die in der Schleife verbleiben (Längen Index), wobei 0 der Index des letzten Elements ist.              |
 
 
-## <a name="forums"></a>forums
+## <a name="forums"></a>Fan
 
-Stellt die Möglichkeit zur Verfügung, Foren und Forenthreads aufzurufen und zu rendern. Beachten Sie, dass die Möglichkeit, Liquid zu verwenden, um Forumsdaten zu rendern, sich auf Beiträge erstreckt. Um aber eine neue Thread-Nachricht zu erstellen, müssen Sie eine ASP.NET-Internetformular-Seitenvorlage mit besagter integrierter Funktion verwenden (z. B. standardmäßige Forenthread- und Forenbeitrags-Seitenvorlagen).
+Bietet die Möglichkeit, auf Foren und Forenthreads zuzugreifen und diese zu Rendering. Beachten Sie, dass die Möglichkeit zur Verwendung von Liquid zum renderingforendaten in Beiträgen erweitert wird. um jedoch einen neuen Post-oder Thread zu erstellen, müssen Sie eine ASP.net Web Forms-Seitenvorlage mit der in integrierten Funktionalität (z. b. dem Standard Forums Thread und den Vorlagen-Post Page Vorlagen) verwenden.
 
-Das forums-Objekt ermöglicht Ihnen, ein Forum oder Forenthreads auszuwählen:
+Das Forums Objekt ermöglicht Ihnen die Auswahl eines Forums oder Forenthreads:
 
 ```
 <div class=content-panel panel panel-default>
@@ -598,108 +603,108 @@ Das forums-Objekt ermöglicht Ihnen, ein Forum oder Forenthreads auszuwählen:
 </div>
 ```
 
-### <a name="forums-object"></a>forums-Objekt
+### <a name="forums-object"></a>Forums Objekt
 
-Das forums-Objekt ermöglicht Ihnen den Zugriff auf spezielle Foren im Portal oder auf alle Forenthreads im Portal (unabhängig vom Forum).
+Das Forums Objekt ermöglicht Ihnen den Zugriff auf ein bestimmtes Forum im Portal oder auf das Zugreifen auf alle Forenthreads im Portal (unabhängig vom Forum).
 
-Das forum-Objekt ermöglicht Ihnen die Arbeit an einem einzelnen Forum, wobei Sie auf die Threads für dieses Forum zugreifen können.
+Das Forums Objekt ermöglicht Ihnen das Arbeiten mit einem einzelnen Forum, das Ihnen den Zugriff auf die Threads für dieses Forum ermöglicht.
 
-Das forumthreads-Objekt ermöglicht Ihnen, auf eine Sammlung von forumthread-Objekten zuzugreifen. Sie können auch die Forenthreads sortieren und eine Paginierung erzielen mithilfe von Liquid-Filtern.
+Das Forumthreads-Objekt ermöglicht den Zugriff auf eine Auflistung von Forumthread-Objekten. Mithilfe von Liquid-filtern können Sie die Forenthreads sortieren und auch Paginierung erzielen.
 
 ```
 {% assign threads = forum.threads | order_by adx_name, desc | paginate: 0,4 | all %}
 ```
 
-Ein einzelner Forenthread
+Ein einzelner Forums Thread
 
-Das forumposts-Objekt ermöglicht Ihnen, auf eine Sammlung von forumposts-Objekten zuzugreifen.
+Das forumposts-Objekt ermöglicht den Zugriff auf eine Auflistung von Forumpost-Objekten.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| threads              | Gibt ein forumthreads-Objekt zurück, das alle forumthreads-Objekte im Portal enthält.             |
-| Alle                  | Gibt alle forum-Objekte im Portal zurück. Beachten Sie, dass website.forums auch eine Entsprechung ist.    |
-| thread\_count        | Gibt den ganzzahligen Wert der Anzahl an Threads der gesamten Website zurück. |
-| post\_count          | Gibt den ganzzahligen Wert der Gesamtanzahl der Beiträge im Portal zurück.                       |
-| \[Forumname oder -ID\] | Sie können auf jedes Forum über dessen Namens- oder ID-Eigenschaften zugreifen. <br>`{% assign forum = forums[Forum Name] %}<br>{% assign forum = forums[da8b8a92-2ee6-476f-8a21-782b047ff460] %} 
+| Threads              | Gibt ein Forumthreads-Objekt zurück, das alle Forumthread-Objekte im Portal enthält.             |
+| Allen                  | Gibt alle Forums Objekte im Portal zurück. Beachten Sie, dass Website. Forums gleichwertig ist.    |
+| Thread\_Anzahl        | Gibt den ganzzahligen Wert für die Anzahl der Threads zurück, die auf der gesamten Website vorhanden sind. |
+| Anzahl nach\_          | Gibt den ganzzahligen Wert der Gesamtanzahl von Beiträgen im Portal zurück.                       |
+| Name oder ID des \[Forums\] | Sie können mit den Eigenschaften "Name" oder "ID" auf jedes Forum zugreifen. <br>"{% Assign Forum = Foren [Forums Name]%}<br>{% Assign Forum = Foren [da8b8a92-2ee6-476f-8a21-782b047ff460]%} 
 
-### <a name="forum-object"></a>forum-Objekt
+### <a name="forum-object"></a>Forums Objekt
 
 ### <a name="attributes"></a>Attribute
 
 > [!Note]
-> [entities](#entities)
+> [Kleinstunternehmen](#entities)
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| threads       | Gibt ein forumthreads-Objekt zurück, das alle Forenthreads für das Forum enthält.               |
+| Threads       | Gibt ein Forumthreads-Objekt zurück, das alle Forenthreads für das Forum enthält.               |
 | Name          | Der Name des Forums.                                                                  |
-| thread\_count | Gibt den ganzzahligen Wert der Anzahl an Threads im Forum zurück.      |
-| post\_count   | Gibt den ganzzahligen Wert der Anzahl an Beiträgen im gesamten Forum zurück. |
+| Thread\_Anzahl | Gibt den ganzzahligen Wert für die Anzahl der Threads zurück, die im Forum vorhanden sind.      |
+| Anzahl nach\_   | Gibt den ganzzahligen Wert der Anzahl von Beiträgen im gesamten Forum zurück. |
 
-### <a name="forumthreads-object"></a>forumthreads-Objekt
+### <a name="forumthreads-object"></a>Forumthreads-Objekt
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Alle | Gibt alle forumthread-Objekte in der Sammlung zurück. |
+| Allen | Gibt alle Forenthread-Objekte in der Auflistung zurück. |
 
-### <a name="forumthread-object"></a>forumthread-Objekt
+### <a name="forumthread-object"></a>forumschlag Thread-Objekt
 
 ### <a name="attributes"></a>Attribute
 
 > [!Note]
-> [Entitäten](#entities)
+> [Kleinstunternehmen](#entities)
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| posts        | Gibt ein forumposts-Objekt zurück, das alle Forenbeiträge für den Thread enthält.            |
-| author       | Gibt den Autor für den Thread zurück (ein Kontakt-Entität-Objekt).      |
-| latest\_post | Gibt den aktuellen Beitrag im Thread zurück.                                            |
-| first\_post  | Gibt den ersten Beitrag im Thread zurück.                                             |
-| post\_count  | Gibt den ganzzahligen Wert der Anzahl an Beiträgen im Thread zurück. |
-| is\_answered | Wurde der Thread beantwortet oder nicht?                                                    |
-| is\_sticky   | Ist der Thread ein angehefteter Thread?                                                    |
+| Beiträge        | Gibt ein forumposts-Objekt zurück, das alle Forenbeiträge für den Thread enthält.            |
+| Schrift       | Gibt den Autor für den Thread zurück (bei dem es sich einfach um ein Contact-Entitäts Objekt handelt).      |
+| Letztes\_Beitrag | Gibt den letzten Beitrag im Thread zurück.                                            |
+| erste\_Post  | Gibt den ersten Beitrag im Thread zurück.                                             |
+| Anzahl nach\_  | Gibt den ganzzahligen Wert der Anzahl von Beiträgen im Thread zurück. |
+| wird\_beantwortet | Wurde der Thread beantwortet oder nicht?                                                    |
+| ist\_Kurznotiz   | Ist der Thread ein Kurznotiz Thread?                                                    |
 
 ### <a name="forumposts-object"></a>forumposts-Objekt
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Alle | Gibt alle forumthread-Objekte in der Sammlung zurück. |
+| Allen | Gibt alle Forenthread-Objekte in der Auflistung zurück. |
 
-Ein einzelner Forenbeitrag
+Ein einzelner Forumsbeitrag
 
 ### <a name="attributes"></a>Attribute
 
 > [!Note] 
-> [Entitäten](#entities)
+> [Kleinstunternehmen](#entities)
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| author     | Gibt den Autor für den Beitrag zurück (ein einfaches Kontakt-Entität-Objekt). |
-| content    | Der Textinhalt des Beitrags.                                                   |
-| is\_answer | Ist dieser Beitrag eine Antwort zum Thread?                                      |
+| Schrift     | Gibt den Autor für den Beitrag zurück (bei dem es sich einfach um ein Contact-Entitäts Objekt handelt). |
+| Inhaltliche    | Der Inhalt des Beitrags.                                                   |
+| ist\_Antwort | Hat dies eine Antwort an den Thread gepostet?                                      |
 
 
-## <a name="knowledge"></a>knowledge
+## <a name="knowledge"></a>Kenntnissen
 
-Bietet Zugriff auf PowerApps knowledgearticle und Kategorieentitätsdatensätze, um Artikel und Kategorien in einem Portal zu rendern.
+Bietet Zugriff auf powerapps-Entitäts Datensätze "knowledgearticle" und "Category" zum Rendering von Artikeln und Kategorien in einem Portal.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|Artikel|Gibt ein Artikelobjekt zurück, das Artikelobjekte für die knowledgearticle-Entitätsdatensätze enthält, die im Portal verfügbar sind.|
-|categories|Gibt ein Kategorieobjekt zurück, das Kategorieobjekte für die Kategorieentitätsdatensätze enthält, die im Portal verfügbar sind.|
+|Gegenstände|Gibt ein Artikel Objekt zurück, das Artikel Objekte für die im Portal verfügbaren knowledgearticle-Entitäts Datensätze enthält.|
+|Klassen|Gibt ein categories-Objekt mit kategorieobjekten für die kategorieentitäts Datensätze zurück, die im Portal|
 |||
 
-### <a name="articles-object"></a>articles-Objekt
+### <a name="articles-object"></a>Articles-Objekt
 
-Mit dem Objekt articles können Sie auf eine Sammlung von article-Objekten zugreifen. Sie können die Artikel sortieren und paginieren sowie Liquid-Filter verwenden.
+Das Artikel Objekt ermöglicht den Zugriff auf eine Sammlung von Artikel Objekten. Sie können die Artikel Sortieren und die Paginierung auch durch Verwendung von Liquid-Filtern erreichen.
 
 ```
 {% assign count = count | default: 3 %}
@@ -719,16 +724,16 @@ Mit dem Objekt articles können Sie auf eine Sammlung von article-Objekten zugre
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|popular |Gibt eine Sammlung von Artikelobjekten zurück, die die meisten Aufrufe enthalten. `{% assign popular_articles = knowledge.articles.popular %}` |
-|recent |Gibt eine Sammlung von Artikelobjekten zurück, die das Datum der letzten Änderung enthalten. `{% assign recent_articles = knowledge.articles.recent %}` |
-|Oben |Gibt eine Sammlung von Artikelobjekten zurück, die die höchsten Bewertungen enthalten. `{% assign top_articles = knowledge.articles.top  %}` |
+|Beliebtheit |Gibt eine Auflistung von Artikel Objekten zurück, die die meisten Ansichten enthalten. `{% assign popular_articles = knowledge.articles.popular %}` |
+|jüngste |Gibt eine Auflistung von Artikel Objekten zurück, die das Datum der letzten Änderung enthalten. `{% assign recent_articles = knowledge.articles.recent %}` |
+|top |Gibt eine Auflistung von Artikel Objekten zurück, die die höchste Bewertung enthält. `{% assign top_articles = knowledge.articles.top  %}` |
 | | |
 
 ### <a name="filters"></a>Filter
 
-Die folgenden Filter können optionale Parameter für Seitengröße und Sprache akzeptieren. Der erste Parameter ist die Zahl der Datensätze, die abgerufen werden sollen. Die Standardseitengröße ist 5. Der zweite Parameter ist der Code einer Sprache, um Artikel für eine bestimmte Sprache abzurufen. Die Filter können mit anderen [Liquid-Filtern](liquid-filters.md) kombiniert werden.
+Die folgenden Filter können optionale Parameter für die Seitengröße und Sprache akzeptieren. Der erste Parameter ist die Anzahl der abzurufenden Datensätze. Die Standardseiten Größe ist 5. Der zweite Parameter ist der Code einer Sprache zum Abrufen von Artikeln für eine bestimmte Sprache. Filter können mit anderen [flüssigen Filtern](liquid-filters.md)kombiniert werden.
 
 ```
 {% assign page_size = 5 %}
@@ -736,16 +741,16 @@ Die folgenden Filter können optionale Parameter für Seitengröße und Sprache 
 {% assign recent_articles = knowledge.articles | recent: page_size, language_code %}
 ```
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|popular |Gibt eine Sammlung von Artikelobjekten zurück, die die meisten Aufrufe enthalten. `{% assign popular_articles = knowledge.articles \| popular: 10, en-US %}` |
-|recent |Gibt eine Sammlung von Artikelobjekten zurück, die das Datum der letzten Änderung enthalten. `{% assign recent_articles = knowledge.articles \| recent: 5 %}` |
-|Oben |Gibt eine Sammlung von Artikelobjekten zurück, die die höchsten Bewertungen enthalten. `{% assign top_articles = knowledge.articles \| top: 3, en-US %}` |
+|Beliebtheit |Gibt eine Auflistung von Artikel Objekten zurück, die die meisten Ansichten enthalten. `{% assign popular_articles = knowledge.articles \| popular: 10, en-US %}` |
+|jüngste |Gibt eine Auflistung von Artikel Objekten zurück, die das Datum der letzten Änderung enthalten. `{% assign recent_articles = knowledge.articles \| recent: 5 %}` |
+|top |Gibt eine Auflistung von Artikel Objekten zurück, die die höchste Bewertung enthält. `{% assign top_articles = knowledge.articles \| top: 3, en-US %}` |
 | | |
 
-### <a name="categories-object"></a>categories-Objekt
+### <a name="categories-object"></a>Categories-Objekt
 
-Das categories-Objekt ermöglicht Ihnen, auf eine Sammlung von Kategorieobjekten zuzugreifen. Sie können die Kategorien sortieren und paginieren sowie Liquid-Filter verwenden.
+Das categories-Objekt ermöglicht den Zugriff auf eine Auflistung von kategorieobjekten. Sie können die Kategorien sortieren und die Paginierung auch durch Verwendung von Liquid-Filtern erreichen.
 
 ```
 {% assign category_url = sitemarkers['Category'].url %}
@@ -764,69 +769,69 @@ Das categories-Objekt ermöglicht Ihnen, auf eine Sammlung von Kategorieobjekten
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|recent |Gibt eine Sammlung von Kategorieobjekten zurück, die das Datum der letzten Änderung enthalten. |
-|top_level |Gibt eine Sammlung von Kategorieobjekten zurück, die keine übergeordnete Kategorie besitzen. |
+|jüngste |Gibt eine Auflistung von kategorieobjekten zurück, die das Datum der letzten Änderung enthalten. |
+|top_level |Gibt eine Auflistung von kategorieobjekten zurück, die keine übergeordnete Kategorie haben. |
 |||
 
 ### <a name="filters"></a>Filter
 
-Die folgenden Filter können einen optionalen Parameter für die Seitengröße akzeptieren. Die Standardseitengröße ist 5. Die Filter können mit anderen [Liquid-Filtern](liquid-filters.md) kombiniert werden.
+Die folgenden Filter können einen optionalen Parameter annehmen, der die Seitengröße angibt. Die Standardseiten Größe ist 5. Filter können mit anderen [flüssigen Filtern](liquid-filters.md)kombiniert werden.
 
 ```
 {% assign page_size = 5 %}
 {% assign recent_categories = knowledge.categories | recent: page_size %}
 ```
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|recent |Gibt eine Sammlung von Kategorieobjekten zurück, die das Datum der letzten Änderung enthalten. Sie können Parameter `{% assign recent_categories = knowledge.categories \| recent: 10 %}` angeben |
-|top_level |Gibt eine Sammlung von Kategorieobjekten zurück, die keine übergeordnete Kategorie besitzen. `{% assign root_categories = knowledge.categories \| top_level %}` |
+|jüngste |Gibt eine Auflistung von kategorieobjekten zurück, die das Datum der letzten Änderung enthalten. Sie können Parameter angeben `{% assign recent_categories = knowledge.categories \| recent: 10 %}` |
+|top_level |Gibt eine Auflistung von kategorieobjekten zurück, die keine übergeordnete Kategorie haben. `{% assign root_categories = knowledge.categories \| top_level %}` |
 |||
 
-### <a name="article-object"></a>article-Objekt
+### <a name="article-object"></a>Artikel Objekt
 
-Mit dem Artikelobjekt können Sie mit einem einzelnen knowledgearticle arbeiten, um Details dieses Artikels im Portal anzuzeigen.
+Das Artikel Objekt ermöglicht Ihnen das Arbeiten mit einem einzelnen knowledgearticle, um Details zu diesem Artikel im Portal anzuzeigen.
 
 ### <a name="attributes"></a>Attribute
 
-article ist ein [entity](#entity)-Objekt mit den gleichen Attributen zusätzlich zu den unten aufgelisteten.
+der Artikel ist ein [Entitäts](#entity) Objekt mit den gleichen Attributen, zusätzlich zu den unten aufgeführten Attributen.
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|article_public_number| Die öffentliche Artikelnummer des Artikels.|
-|comment_count| Der ganzzahlige Wert für die Anzahl der Kommentare für einen bestimmten Artikel.|
-|content|Der Inhalt des Artikels.|
-|current_user_can_comment|Gibt einen booleschen Wert zurück, der angibt, ob der aktuelle Benutzer dem Artikel Kommentare hinzufügen kann.|
-|is_rating_enabled|Gibt einen booleschen Wert zurück, der angibt, ob für einen Artikel Bewertungen aktiviert sind.|
-|keywords|Die Schlüsselwörter für den Artikel.|
-|Name|Ein alternativer Alias für den Titel des Artikels.|
-|rating|Der Dezimalbewertungswert für den Artikel.|
-|title|Der Titel des Artikels.|
-|view_count|Der ganzzahlige Wert für die Häufigkeit, mit der der Artikel angezeigt wurde.|
+|article_public_number| Der öffentliche Artikelnummer des Artikels.|
+|comment_count| Der ganzzahlige Wert der Anzahl der Kommentare, die für einen bestimmten Artikel vorhanden sind.|
+|Inhaltliche|Der Inhalt des Artikels.|
+|current_user_can_comment|Gibt einen booleschen Wert zurück, der angibt, ob der aktuelle Benutzerkommentare zum Artikel hinzufügen kann.|
+|is_rating_enabled|Gibt einen booleschen Wert zurück, der angibt, ob die Bewertung für einen Artikel aktiviert ist.|
+|Keywords|Die Schlüsselwörter für den Artikel.|
+|Benennen|Ein alternativer Alias für den Titel des Artikels.|
+|Leistung|Der Dezimal Bewertungs Wert für den Artikel.|
+|Tel|Der Titel des Artikels.|
+|view_count|Der ganzzahlige Wert der Häufigkeit, mit der der Artikel angezeigt wurde.|
 |||
 
-### <a name="category-object"></a>category-Objekt
+### <a name="category-object"></a>Category-Objekt
 
-Mit dem Kategorieobjekt können Sie mit einer einzelnen category arbeiten, um Details im Portal anzuzeigen.
+Mit dem Kategorieobjekt können Sie mit einer einzelnen Kategorie arbeiten, um die Details im Portal anzuzeigen.
 
 ### <a name="attributes"></a>Attribute
 
-category ist ein [entity](#entity)-Objekt mit den gleichen Attributen zusätzlich zu den unten aufgelisteten.
+Category ist neben den unten aufgeführten [Entitäts](#entity) Objekten mit allen Attributen identisch.
 
-|Attribut|Beschreibung|
+|Versehen|Beschreibung|
 |---|---|
-|categorynumber|Die Kategorienummer der Kategorie.|
-|Name|Ein alternativer Alias für den Titel der Kategorie.|
-|title|Der Titel der Kategorie.|
+|CategoryNumber|Die Kategorienummer der Kategorie.|
+|Benennen|Ein alternativer Alias für den Titel der Kategorie.|
+|Tel|Der Titel der Kategorie.|
 |||
 
-## <a name="page"></a>Seite
+## <a name="page"></a>s
 
-Verweist auf die aktuelle Portalanforderungsseite. Dieses Objekt kombiniert die Attribute der [Siteübersicht](#sitemap) und der aktuellen Anfrage [Entitäten](#entities) (in der Regel eine Webseite).  
+Verweist auf die aktuelle Portal Anforderungsseite. Dieses Objekt kombiniert die Attribute der [Sitemap](#sitemap) und der aktuellen Anforderungs [Entitäten](#entities) (in der Regel eine Webseite).  
 
-Das Objekt page bietet Zugriff auf Dinge wie die Breadcrumbs für die aktuelle Seite, den Titel oder die URL der aktuellen Seite und alle anderen Attribute oder verbundenen Entität des zugrunde liegenden PowerApps-Datensatzes.
+Das Page-Objekt ermöglicht den Zugriff auf Elemente wie den Brotkrümel für die aktuelle Seite, den Titel oder die URL der aktuellen Seite sowie alle anderen Attribute oder zugehörigen Entitäten des zugrunde liegenden powerapps-Datensatzes.
 
 ```
 <ul class=breadcrumb>
@@ -870,25 +875,25 @@ Das Objekt page bietet Zugriff auf Dinge wie die Breadcrumbs für die aktuelle S
 <!-- Page {{ page.id }} was last modified on {{ page.modifiedon }}. -->
 ```
 
-### <a name="page-attributes"></a>Seitenattribute
+### <a name="page-attributes"></a>Seiten Attribute
 
 > [!Note]  
-> [Entitäten](#entities)
+> [Kleinstunternehmen](#entities)
 
-|             Attribut              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|             Versehen              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            breadcrumbs             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Gibt die Breadcrumb-Siteübersichtsknotenobjekte für die Seite zurück, beginnend ab dem Knotenpunkt für die Siteübersicht und endent bei übergeordnet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|              children              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Gibt die untergeordneten Siteübersichtsknotenobjekte der Seite zurück                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|               parent               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Gibt den übergeordneten Siteübersichtsknoten der Seite zurück. Wenn die Seite die Homepage ist, ist das übergeordnete Element Null.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|               title                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Der Titel der Seite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|                URL                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Die URL der Seite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| \[Attribut- oder Beziehungsname\] | Sie können auf ein beliebiges Attribut des der Seite zugrundeliegenden PowerApps-Datensatzes nach logischem Namen zugreifen.<br>`{{ page.createdon }}`<br>`{% assign attribute_name = 'name' %}`<br>`{{ page[attribute_name] }}`<br>Die Werte der meisten Entitätsattribute werden direkt zu [Liquid-Typen](liquid-types.md) zugeordnet: Felder mit zwei Optionsmöglichkeiten werden booleschen Werten zugeordnet, Textfelder werden Zeichenfolgen zugeordnet, nummerische Felder/Währungsfelder werden Zahlen zugeordnet und Datum/Uhrzeit-Felder werden Datum-Objekten zugeordnet. Einige Attributtypen werden jedoch als Objekte zurückgegeben:<ul><li>Suchfelder (Entitätsreferenz) werden als [Entitätsreferenzobjekte](#entity-reference) zurückgegeben.</li><li>Optionssatz-/Auswahllistenfelder werden als [Optionssatzwertobjekte ](#option-set-value)zurückgegeben.</li> Sie können beliebigen verknüpfte Entitäten über den Beziehungsschemanamen laden. <br> `{{ page.adx_webpage_entitylist.adx_name }}`<br>Wenn eine Beziehung reflexiv ist (z. B. auf sich selbst verweist), wird ein [Entitäten-Objekt ](#entities)zurückgegeben. (Andernfalls wäre das Ergebnis mehrdeutig.)`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**Hinweis**: Das Laden großer Mengen von verknüpfte Entitäten oder der Zugriff auf viele Beziehungen in einer einzigen Vorlage können negative Auswirkungen auf die Renderleistung der Vorlage haben. Vermeiden Sie das Laden verknüpfte Entitäten für jeden Artikel in einem Array innerhalb einer Schleife. Wenn möglich, bevorzugen Sie die Verwendung der [PowerApps Common Data Service Entity Tags](portals-entity-tags.md), um Sammlungen von Entitäten zu laden. |
+|            Breadcrumbs             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Gibt die Breadcrumb-Site Übersichts Knoten Objekte für die Seite zurück, beginnend mit dem Stamm Knoten der Site Übersicht und endende bei übergeordnetem Element.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|              Kind              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Gibt die untergeordneten Site Map-Knoten Objekte der Seite zurück.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|               übergeordneten               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Gibt den übergeordneten Site Übersichts Knoten der Seite zurück. Wenn die Seite die Startseite ist, wird das übergeordnete Element NULL sein.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|               Tel                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Der Titel der Seite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                Urne                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Die URL der Seite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| \[Attribut-oder Beziehungs Name\] | Sie können auf jedes Attribut des zugrunde liegenden powerapps-Datensatzes der Seite über den logischen Namen zugreifen.<br>`{{ page.createdon }}`<br>`{% assign attribute_name = 'name' %}`<br>`{{ page[attribute_name] }}`<br>Die Werte der meisten Entitäts Attribute sind direkt den [Liquid-Typen](liquid-types.md)zugeordnet: zwei Options Felder werden booleschen Werten, Textfeldern zu Zeichen folgen, numerischen/Währungs Feldern zu zahlen, Datums-/Uhrzeitfelder und Datums Objekten zugeordnet. Einige Attributtypen werden jedoch als Objekte zurückgegeben:<ul><li>Suchfelder (Entitäts Verweis) werden als [Entitäts Verweis Objekte](#entity-reference)zurückgegeben.</li><li>Options Satz-/picklist-Felder werden als [options Satz Wert-Objekte](#option-set-value)zurückgegeben.</li> Sie können auch alle zugehörigen Entitäten nach beziehungsschema Namen laden. <br> `{{ page.adx_webpage_entitylist.adx_name }}`<br>Wenn eine Beziehung reflexiv (d. h. selbstreferenziell) ist, wird ein [Entitäts](#entities) Objekt zurückgegeben. (Andernfalls wäre das Ergebnis mehrdeutig.)`{{ page.adx_webpage_webpage.referencing.adx_name }}` <br>**Hinweis**: das Laden einer großen Anzahl von verknüpften Entitäten oder das Zugreifen auf eine große Anzahl von Beziehungen in einer einzelnen Vorlage kann sich negativ auf die Leistung von Vorlagen Rendering auswirken. Vermeiden Sie das Laden von verknüpften Entitäten für jedes Element in einem Array innerhalb einer Schleife. Verwenden Sie nach Möglichkeit die Verwendung der [powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md) , um Auflistungen von Entitäten zu laden. |
 
-## <a name="polls"></a>Umfragen
+## <a name="polls"></a>Pokal
 
-Bietet die Möglichkeit, auf eine Umfrage zuzugreifen und sie zu rendern.
+Bietet die Möglichkeit, auf einen Abruf zuzugreifen und ihn zu erzeugen.
 
-Das polls-Objekt ermöglicht die Auswahl einer bestimmten Umfrage oder Umfragenplatzierung:
+Mit dem "Umfragen"-Objekt können Sie eine bestimmte Abruf-oder Abruf Platzierung auswählen:
 
 ```
 <div>
@@ -914,64 +919,64 @@ Das polls-Objekt ermöglicht die Auswahl einer bestimmten Umfrage oder Umfragenp
 </div>
 ```
 
-### <a name="polls-attributes"></a>Umfrageattribute
+### <a name="polls-attributes"></a>Ruft Attribute ab.
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| placements          | Gibt das Umfrageplatzierungs-Objekt zurück.                                      |
-| \[Umfragenname oder -ID\] | Sie können auf jede beliebige Umfrage über ihre Namens- oder ID-Eigenschaften zugreifen. `{% assign poll = polls[Poll Name] %}`<br>`{% assign poll = polls["41827a5c-33de-49b8-a0c7-439e6a02eb98"] %}`  |
+| Vermittlung          | Gibt das pollplacement-Objekt zurück.                                      |
+| \[Abrufen des Namens oder der ID\] | Sie können mit den Eigenschaften Name oder ID auf alle Abfragen zugreifen. `{% assign poll = polls[Poll Name] %}`<br>`{% assign poll = polls["41827a5c-33de-49b8-a0c7-439e6a02eb98"] %}`  |
 
-### <a name="poll-placements-attributes"></a>Attribute von Umfragenplatzierungen
+### <a name="poll-placements-attributes"></a>Platzierungs Attribute abrufen
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| \[Umfragenplatzierungsname oder -ID\] | Sie können auf jede beliebige Umfragenplatzierung über ihre Namens- oder ID-Eigenschaften zugreifen.`{% assign placement = polls.placements[Placement Name or Id] %}`<br>`{% assign placement = polls.placements[7677c5d4-406e-4b6c-907c-916ac17dba0f] %} `|
+| der Name oder die ID der \[Abruf Platzierung\] | Sie können auf eine beliebige Abruf Platzierung mit ihren Namen-oder ID-Eigenschaften zugreifen.`{% assign placement = polls.placements[Placement Name or Id] %}`<br>`{% assign placement = polls.placements[7677c5d4-406e-4b6c-907c-916ac17dba0f] %} `|
 
-### <a name="poll-placement-attributes"></a>Attribute von Umfragenplatzierungen
+### <a name="poll-placement-attributes"></a>Platzierungs Attribute abrufen
 
 > [!Note] 
-> [entities](#entities)                                       
+> [Kleinstunternehmen](#entities)                                       
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Name           | Gibt das Feld "Name" für die Umfragenplatzierung zurück.                            
-| placement\_url | Die URL, mit der die Umfragenplatzierung abgerufen werden kann, die vollständig über eine Vorlage gerendert wird.                       |
-| Umfragen          | Gibt die Sammlung von Umfrageobjekten zurück, die mit der Platzierung verbunden sind. [Iterationtags](iteration-tags.md) und [Arrayfilter](liquid-filters.md#array-filters) werden möglicherweise mit dieser Sammlung verwendet.  |  
-| random\_url    | Die URL, mit der eine willkürliche Umfrage aus der Platzierung abgerufen werden kann, die vollständig über eine Vorlage gerendert wird.         |
-| submit\_url    | Die URL, an die eine abgeschlossene Umfrage gesendet wird.                                                             |
+| Name           | Gibt das Namensfeld für die Abruf Platzierung zurück.                            
+| Platzierung\_URL | Die URL, die zum Abrufen der von einer Vorlage vollständig gerenderten Abruf Platzierung verwendet werden kann.                       |
+| Pokal          | Gibt die Auflistung der der Platzierung zugeordneten Abruf Objekte zurück. [Iterations Tags](iteration-tags.md) und [Array Filter](liquid-filters.md#array-filters) können mit dieser Auflistung verwendet werden.  |  
+| Random\_URL    | Die URL, die verwendet werden kann, um einen zufälligen Abruf von der Platzierung abzurufen, die vollständig von einer Vorlage gerendert wird.         |
+| Senden\_URL    | Die URL, an die ein abgeschlossener Abruf übermittelt wird.                                                             |
 
-### <a name="poll-attributes"></a>Umfrageattribute
+### <a name="poll-attributes"></a>Abruf Attribute
 
 > [!Note] 
-> [Entitäten](#entities)                                          
+> [Kleinstunternehmen](#entities)                                          
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| has\_user\_voted       | Gibt "True" zurück, wenn der aktuelle Benutzer (angemeldet oder anonym) bereits an dieser Umfrage teilgenommen hat.         |
-| Name                   | Gibt das Feld "Name" für die Umfrage zurück.                                                              |
-| Optionen                | Gibt die Sammlung von Umfrageoptionsobjekten zurück, die mit der Umfrage verbunden sind. [Iterationstags](iteration-tags.md) und [Entitäten](#entities) können mit dieser Sammlung verwendet werden.  |  
-| poll\_url              | Die URL, mit der die Umfrage abgerufen werden kann, die vollständig über eine Vorlage gerendert wird.                       |
-| -Frage               | Gibt das Feld "Frage" für die Umfrage zurück.                                                          |
-| submit\_button\_label  | Gibt eine Zeichenfolge an, die verwendet werden kann, um die Schaltflächen-Beschriftung für die Übermittlung zu überschreiben.               |
-| submit\_url            | Die URL, an die eine abgeschlossene Umfrage gesendet wird.                                                   |
-| user\_selected\_option | Gibt das Objekt Umfrageoption zurück, das vom Benutzer ausgewählt wurde (falls er bereits gewählt hat.)                  |
-| votes                  | Gibt die Anzahl der getätigten Stimmen zurück, die für die Umfrage tabelliert wurden.                                |
+| hat\_Benutzer\_abgestimmt       | Gibt true zurück, wenn der aktuelle (angemeldete oder anonyme) Benutzer bereits in dieser Umfrage zugestimmt hat.         |
+| Name                   | Gibt das Namensfeld für die Abfrage zurück.                                                              |
+| Optionen                | Gibt die Auflistung von Abruf Options Objekten zurück, die der Abfrage zugeordnet sind. [Iterations Tags](iteration-tags.md) und- [Entitäten](#entities) können mit dieser Sammlung verwendet werden.  |  
+| \_-URL abrufen              | Die URL, mit der der Abruf vollständig von einer Vorlage gerendert werden kann.                       |
+| betreffenden               | Gibt das Fragefeld für die Abfrage zurück.                                                          |
+| \_Schaltfläche\_Bezeichnung übermitteln  | Gibt eine Zeichenfolge zurück, die verwendet werden kann, um die Bezeichnung für das Senden einer Schaltfläche für den Abruf zu               |
+| Senden\_URL            | Die URL, an die ein abgeschlossener Abruf übermittelt wird.                                                   |
+| Benutzer\_\_Option ausgewählt | Gibt das vom Benutzer ausgewählte polloption-Objekt zurück (wenn Sie bereits gewählt haben).                  |
+| Abgabe                  | Gibt die Anzahl der Stimmen zurück, die für die Abfrage in der Tabelle angezeigt wurden.                                |
 
-### <a name="poll-option-attributes"></a>Umfrageoptionsattribute
+### <a name="poll-option-attributes"></a>Abruf Options Attribute
 
 >[!Note]
-> [Entitäten](#entities)                                         
+> [Kleinstunternehmen](#entities)                                         
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| answer     | Gibt das Feld "Antwort" für die Umfrage zurück. |
-| percentage | Gibt den Prozentsatz der Stimmen in der Umfrage für die entsprechende Option als Dezimalstelle zwischen 0 und 100 zurück. |
-| votes      | Gibt die Anzahl der getätigten Stimmen zurück, die für die Umfrage tabelliert wurden.                              |
+| Te     | Gibt das Antwortfeld für die Abfrage zurück. |
+| aler | Gibt den Prozentsatz der Stimmen in der Abfrage für die Option als Dezimalzahl zwischen 0 und 100 zurück. |
+| Abgabe      | Gibt die Anzahl der Stimmen zurück, die für die Option in Tabellenform angezeigt wurden.                              |
 
 
-## <a name="request"></a>Anfrage
+## <a name="request"></a>Anforderung
 
-Enthält Informationen zum aktuellen HTTP-Request.
+Enthält Informationen über die aktuelle HTTP-Anforderung.
 
 ```
 {% assign id = request.params['id'] %}
@@ -980,22 +985,22 @@ Enthält Informationen zum aktuellen HTTP-Request.
 ```
 
 > [!Note]
-> Sie können URLs in Liquid mithilfe von URL-Filtern dynamisch erstellen. 
+> Sie können URLs dynamisch in Liquid erstellen, indem Sie URL-Filter verwenden. 
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| params           | Benannte Parameterwerte für die aktuelle Anforderung. params ist eine Kombination aus URL-Abfragezeichenfolgenparametern, Formular-Post-Parametern und Cookies.  |
-| Pfad             | Der Pfad der aktuellen Anforderungs-URL. <br> /profile/|
-| path\_and\_query | Der Pfad und die Abfrage der aktuellen Anforderungs-URL.<br> /profile/?foo=1&bar=something|
-| query            | Der Abfragepfad der aktuellen Anforderungs-URL. <br> ?foo=1&bar=something |
-| URL              | Der vollständige Pfad der aktuellen Anforderungs-URL.<br>  http://www.example.com/profile/?foo=1&bar=something  |
+| params           | Benannte Parameterwerte für die aktuelle Anforderung. Parameter sind eine Kombination aus URL-Abfrage Zeichenfolgen-Parametern, Formular Bereitstellungs Parametern und Cookies.  |
+| ADS             | Der Pfad der aktuellen Anforderungs-URL. <br> /profile|
+| Pfad\_und\_Abfrage | Der Pfad und die Abfrage der aktuellen Anforderungs-URL.<br> /Profile/? foo = 1 & Leiste = etwas|
+| query            | Der Abfrage Teil der aktuellen Anforderungs-URL. <br> ? foo = 1 & Leiste = etwas |
+| Urne              | Die vollständige URL der aktuellen Anforderung.<br>  https://www.example.com/profile/?foo=1&bar=something  |
 
 
-## <a name="searchindex"></a>searchindex
+## <a name="searchindex"></a>SearchIndex
 
-Das Suchindex-Objekt wird innerhalb der [PowerApps Common Data Service Entity Tags](portals-entity-tags.md) verwendet und ermöglicht den Zugriff auf die Ergebnisse einer Abfrage.  
+Das SearchIndex-Objekt wird innerhalb der [powerapps Common Data Service-Entitäts Tags](portals-entity-tags.md)verwendet und ermöglicht den Zugriff auf die Ergebnisse einer Abfrage.  
 
 ```
 {% searchindex query: 'support', page: params.page, page_size: 10 %}
@@ -1031,32 +1036,32 @@ Das Suchindex-Objekt wird innerhalb der [PowerApps Common Data Service Entity Ta
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| approximate\_total\_hits | Gibt eine ungefähre Gesamtanzahl der Treffer zurück, welche mit der Indexabfrage übereinstimmen. Aufgrund der Funktionsweise des Suchindex im Hinblick auf die Sicherheitsfilterung und andere Entwurfsfaktoren ist diese Zahl eine Schätzung und entspricht möglicherweise nicht der genauen Anzahl der Ergebnisse, die dem aktuellen Benutzer in einigen Situationen zur Verfügung stehen.  |
-| Seite                     | Gibt die Seitenzahl der aktuellen Abfrage zurück.                                                                                                                                                                                                           |
-| page\_size               | Gibt die maximale Seitengröße der aktuellen Abfrage zurück. Wenn Sie die tatsächliche Anzahl der für die aktuelle Seite zurückgegebenen Ergebnisse möchten (denn dies ist möglicherweise weniger als die angegebene maximale Seitengröße), müssen Sie results.size verwenden.                                                                                           |
-| Ergebnisse                  | Gibt die Abfrageergebnisseite als Suchenindex-Ergebnisobjekte zurück.                                                                                                                                                                                          |
+| ungefähre\_Gesamt\_Treffer | Gibt eine ungefähre Anzahl von Treffern zurück, die mit der Index Abfrage übereinstimmen. Beachten Sie, dass diese Zahl aufgrund der Art und Weise, wie der Suchindex in Bezug auf die Sicherheits Filterung und andere Entwurfs Faktoren funktioniert, nur eine Näherung darstellt und möglicherweise nicht genau mit der Gesamtzahl der Ergebnisse übereinstimmt, die dem aktuellen Benutzer in einigen Situationen zur Verfügung stehen.  |
+| s                     | Gibt die Seitenzahl der aktuellen Abfrage zurück.                                                                                                                                                                                                           |
+| Seiten\_Größe               | Gibt die maximale Seitengröße der aktuellen Abfrage zurück. Wenn die tatsächliche Anzahl der Ergebnisse für die aktuelle Seite zurückgegeben werden soll (da dies möglicherweise kleiner als die angegebene maximale Seitengröße ist), verwenden Sie "results. Size".                                                                                           |
+| Folgen                  | Gibt die Abfrageergebnis Seite als Such Index Ergebnis-Objekte zurück.                                                                                                                                                                                          |
 
-### <a name="search-index-results"></a>Suchindexergebnisse
+### <a name="search-index-results"></a>Such Index Ergebnisse
 
-|   Attribut   |                                                                                                                                                Beschreibung                                                                                                                                                 |
+|   Versehen   |                                                                                                                                                Beschreibung                                                                                                                                                 |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Entität     |                                                                                                                            Die zugrunde liegenden [Entitäten](#entities) für das Ergebnis.                                                                                                                            |
-|   fragment    | Ein relevantes kurzes Textfragment für das Ergebnis mit Begriffen, die der angegebenen Abfrage entsprechen und mit dem &lt;em&gt;-HTML-Tag markiert sind. Beachten Sie, dass bestimmte Typen von Abfragen keine markierten Fragmente unterstützen, beispielsweise Fuzzyabfragen (~) und Platzhalterabfragen (\*). Diese Eigenschaft ist in diesen Fällen null. |
-|      Kennung       |                                                             Die PowerApps-Entitäts-ID des zugrunde liegenden Datensatzes für das Ergebnis als Zeichenfolge. Beispielsweise 936DA01F-9ABD-4d9d-80C7-02AF85C822A8                                                              |
-| logical\_name |                                                                           Der logische Name der PowerApps-Entität des zugrunde liegenden Datensatzes für das Ergebnis. Beispiel: adx\_webpage                                                                           |
-|    Anzahl     |                                                            Die Nummer des Ergebnisse auf allen Ergebnisseiten, beginnend bei 1. Für das erste Ergebnis der zweiten Ergebnisseite bei einer Seitengröße von 10 wäre dieser Wert 11.                                                             |
-|     score     |                                                                                                 Die Lucene-Punktzahl des Ergebnisses als Gleitkommawert. Ergebnisse werden nach diesem Wert geordnet zurückgegeben.                                                                                                 |
-|     title     |                                                                                                                                          Der Titel des Ergebnisses.                                                                                                                                          |
-|      URL      |                                                            Die URL für das Ergebnis. Dies ist eigentlich&mdash;aber nicht notwendigerweise&mdash;eher ein absoluter Pfad für die aktuelle Anwendung, statt eine vollständige URL. Beispiel: /articles/article1/                                                             |
+|    Organisation     |                                                                                                                            Die zugrunde liegenden [Entitäten](#entities) für das Ergebnis.                                                                                                                            |
+|   Bruch    | Ein relevantes kurzes Textfragment für das Ergebnis, wobei die mit der angegebenen Abfrage übereinstimmenden Begriffe mithilfe des &lt;EM&gt; HTML-Tags hervorgehoben werden. Beachten Sie, dass bestimmte Abfrage Typen keine markierten Fragmente unterstützen, wie z. b. fuzzyabfragen (~) und Platzhalter Abfragen (\*). Diese Eigenschaft ist in diesen Fällen NULL. |
+|      Id       |                                                             Die powerapps-Entitäts-ID des zugrunde liegenden Datensatzes für das Ergebnis als Zeichenfolge. Beispiel: 936da01f -9abd-4d9d-80c7-02af85c822a8                                                              |
+| logischer\_Name |                                                                           Der logische Name der powerapps-Entität des zugrunde liegenden Datensatzes für das Ergebnis. Beispiel: ADX\_Webseite                                                                           |
+|    Zahl     |                                                            Die Anzahl der Ergebnisse auf allen Ergebnisseiten, beginnend bei 1. Beispielsweise ist der Wert für das erste Ergebnis der zweiten Seite der Ergebnisse mit der Seitengröße 10 11.                                                             |
+|     Endergebnis     |                                                                                                 Das Lucene-Ergebnis des Ergebnisses, als Gleit Komma Wert. Die Ergebnisse werden nach diesem Wert geordnet zurückgegeben.                                                                                                 |
+|     Tel     |                                                                                                                                          Der Titel des Ergebnisses.                                                                                                                                          |
+|      Urne      |                                                            Die URL für das Ergebnis. Dies wird in der Regel&mdash;, aber nicht notwendigerweise&mdash;als absoluter Pfad für die aktuelle Anwendung, sondern nicht als vollständige URL. Beispiel:/Articles/Article1/                                                             |
 
 ## <a name="settings"></a>Einstellungen
 
-Ermöglicht das Laden einer beliebigen [Website-Einstellung](../configure-site-settings.md) nach Namen. Wird eine Einstellung mit dem angegebenen Namen gefunden, wird [Null](liquid-types.md#null) zurückgegeben.  
+Ermöglicht das Laden beliebiger [Website Einstellungen](../configure/configure-site-settings.md) nach Namen. Wenn keine Einstellung mit dem angegebenen Namen gefunden wird, wird [null](liquid-types.md#null) zurückgegeben.  
 
 > [!Note]
-> Einstellungen werden als [Zeichenfolgen](liquid-types.md#string) zurückgegeben, aber Sie können [Type-Filter](liquid-filters.md#type-filters) verwenden, um sie in andere Typen zu konvertieren.
+> Einstellungen [werden als Zeichen](liquid-types.md#string)folgen zurückgegeben, Sie können jedoch [Typfilter](liquid-filters.md#type-filters) verwenden, um Sie in andere Typen zu konvertieren.
 
 ```
 {{ settings[My Setting] }}
@@ -1079,12 +1084,12 @@ Page size is greater than 10.
 ```
 
 > [!Note]
-> [Rendern einer Websitekopfzeile und primären Navigationsleiste](render-site-header-primary-navigation.md)
+> [Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md)
 
 
-## <a name="sitemap"></a>Siteübersicht
+## <a name="sitemap"></a>tex
 
-Ermöglicht Zugriff auf die Portalsiteübersicht.
+Ermöglicht den Zugriff auf die Portal Site Übersicht.
 
 ```
 <h1>{{ sitemap.root.title }}</h1>
@@ -1122,31 +1127,31 @@ It's also possible to load a site map node by URL path:
 {% endif %}
 ```
 
-### <a name="site-map-attributes"></a>Siteübersichtsattribute
+### <a name="site-map-attributes"></a>Site Übersichts Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Aktuell | Gibt das Siteübersichtsknotenobjekt für die aktuelle Seite zurück.                    |
-| Stamm    | Gibt das Siteübersichtsknotenobjekt für die Startseite der Website zurück. |
+| Strömung | Gibt das Site Map-Knoten Objekt für die aktuelle Seite zurück.                    |
+| Fasst    | Gibt das Site Map-Knoten Objekt für die Stamm Seite (Homepage) der Website zurück. |
 
-### <a name="site-map-node-attributes"></a>Siteübersichtsknotenattribute
+### <a name="site-map-node-attributes"></a>Attribute des Site Übersichts Knotens
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |-------|-------|
-| Breadcrumbs           | Gibt die Breadcrumb-Siteübersichtsknotenobjekte für den Knoten zurück, beginnend ab dem Knotenpunkt für die Siteübersicht und endend bei dem übergeordneten. |
-| Kinder              | Gibt die Siteübersichtsknotenobjekte des untergeordneten Knotens zurück.                                                                  |
-| Beschreibung           | Die Beschreibung/der Inhalt des Knotens. (Dieses Feld enthält möglicherweise HTML.)                                          |
-| Entität                | Gibt die zugrunde liegenden [Entitäten](#entities) des Knotens zurück. Wenn der Konten keine zugrunde liegende Entität aufweist, ist dieser Wert Null.                                                         |
-| is\_sitemap\_ancestor | Gibt „True“ zurück, wenn der Siteübersichtsknoten ein Vorgänger des aktuellen Knoten ist, andernfalls „False“.                                                                                                         |
-| is\_sitemap\_current  | Gibt „True“ zurück, wenn der Siteübersichtsknoten der aktuelle Knoten ist, andernfalls „False“.                                                                                                         |
-| Übergeordnetes Element                | Gibt das übergeordneten Siteübersichtsknoten des Knotens zurück. Wenn der Konten der Stammknoten ist, ist das übergeordnete Element Null.                                                                     |
-| Position                 | Der Titel des Knotens.                                                                                                |
-| URL                   | Die URL des Knotens.                                                                                                  |
+| Breadcrumbs           | Gibt die Breadcrumb-Site Übersichts Knoten-Objekte für den Knoten zurück, beginnend mit dem Stamm Knoten der Site Übersicht und endende bei übergeordnetem Element. |
+| Kind              | Gibt die untergeordneten Site Map-Knoten Objekte des Knotens zurück.                                                                  |
+| Beschreibung           | Der Beschreibungs-/Zusammenfassungs Inhalt für den Knoten. (Dieses Feld kann HTML enthalten.)                                          |
+| Organisation                | Gibt die zugrunde liegenden [Entitäten](#entities) des Knotens zurück. Wenn der Knoten nicht über eine zugrunde liegende Entität verfügt, ist dieser Wert NULL.                                                         |
+| ist\_Sitemap\_Vorgänger | Gibt true zurück, wenn der Sitemap-Knoten ein Vorgänger des aktuellen Knotens ist, andernfalls false.                                                                                                         |
+| ist\_Sitemap\_aktuell  | Gibt true zurück, wenn der Sitemap-Knoten der aktuelle Knoten ist, andernfalls false.                                                                                                         |
+| übergeordneten                | Gibt den übergeordneten Site Übersichts Knoten des Knotens zurück. Wenn der Knoten der Stamm Knoten ist, ist das übergeordnete Element NULL.                                                                     |
+| Title                 | Der Titel des Knotens.                                                                                                |
+| Urne                   | Die URL des Knotens.                                                                                                  |
 
 
-## <a name="sitemarkers"></a>Websitemarkierungen
+## <a name="sitemarkers"></a>sitemarkers
 
-Ermöglicht das Laden einer beliebigen Websitemarkierung nach Namen. Wenn die Websitemarkierung vorhanden ist, wird ein Websitemarkierungsobjekt zurückgegeben. Wird eine Einstellung mit dem angegebenen Namen gefunden, wird [Null](liquid-types.md#null) zurückgegeben.  
+Ermöglicht das Laden beliebiger Site Marker nach Namen. Wenn sitemarker vorhanden ist, wird ein sitemarker-Objekt zurückgegeben. Wenn kein sitemarker mit dem angegebenen Namen gefunden wird, wird [null](liquid-types.md#null) zurückgegeben.  
 
 ```
 {{ sitemarkers[Login].url }}
@@ -1165,18 +1170,18 @@ Site marker My Site Marker does not exist.
 ```
 
 > [!Note]
-> [Rendern einer Websitekopfzeile und primären Navigationsleiste](render-site-header-primary-navigation.md)  
+> [Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md)  
 
-### <a name="sitemarker-attributes"></a>Websitemarkierungsattribute
+### <a name="sitemarker-attributes"></a>Sitemarker-Attribute
 
-|         Attribut          |                                                                                    Beschreibung                                                                                    |
+|         Versehen          |                                                                                    Beschreibung                                                                                    |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            URL             |                                                                         Die URL des Websitemarkierungsziels.                                                                         |
-| \[Logischer Attributname\] | Sie können auf ein beliebiges Attribut des PowerApps-Datensatzes des Websitemarkierungsziels nach logischem Namen zugreifen. Beispielsweise {{ sitemarker.adx\_name }} |
+|            Urne             |                                                                         Die URL des sitemarker-Ziels.                                                                         |
+| logischer Name des \[Attributs\] | Sie können auf jedes Attribut des sitemarker-Ziels powerapps-Datensatzes mit logischem Namen zugreifen. Beispiel: {{sitemarker. ADX\_Name}} |
 
-## <a name="snippets"></a>Ausschnitte
+## <a name="snippets"></a>p
 
-Ermöglicht das Laden von Inhaltsausschnitten nach Namen. Wird kein Ausschnitt mit dem angegebenen Namen gefunden, wird [Null](liquid-types.md#null) zurückgegeben.  
+Ermöglicht das Laden beliebiger Inhalts Ausschnitte nach Namen. Wenn kein Code Ausschnitt mit dem angegebenen Namen gefunden wird, wird [null](liquid-types.md#null) zurückgegeben.  
 
 ```
 {{ snippets[Header] }}
@@ -1197,34 +1202,34 @@ No footer snippet was found.
 
 ## <a name="tablerowloop"></a>tablerowloop
 
-Enthält Eigenschaften, die in einem [Iterationstags](iteration-tags.md)-Loop-Block nützlich sind.  
+Enthält Eigenschaften, die in einem Schleifen Block für [iterations Tags](iteration-tags.md) nützlich sind.  
 
 > [!Note] 
-> tablerowloop kann nur innerhalb eines [Iterationstag-Tags](iteration-tags.md) Tag verwendet werden.
+> tablerowloop kann nur innerhalb eines [iterationtagtags](iteration-tags.md) verwendet werden.
 
 ### <a name="attributes"></a>Attribute
 
-|Attribut   |Beschreibung   |
+|Versehen   |Beschreibung   |
 |---|---|
-| Col        | Gibt den Index der aktuellen Zeile wieder, beginnend bei 1.                                                       |
-| col0       | Gibt den Index der aktuellen Zeile wieder, beginnend bei 0.                                                       |
-| col\_first | Gibt „True“ wieder, wenn die aktuelle Spalte die erste Spalte in einer Zeile ist und gibt „False“ wieder, wenn nicht.               |
-| col\_last  | Gibt „True“ wieder, wenn die aktuelle Spalte die letzte Spalte in einer Zeile ist und gibt „False“ wieder, wenn nicht.                |
-| Erster      | Gibt „True“ zurück, wenn es sich um den ersten Schleifendurchlauf handelt. Gibt „False“ zurück, wenn es sich nicht um den ersten Schleifendurchlauf handelt.       |
-| Index      | Die Position des aktuellen Elements in der Sammlung (das ersten Element hat die Position 1).                   |
-| index0     | Die Position des aktuellen Elements in der Sammlung (das ersten Element hat die Position 0).                   |
-| Letzter       | Gibt „True“ zurück, wenn es sich um den letzten Schleifendurchlauf handelt. Gibt „False“ zurück, wenn es sich nicht um den letzten Schleifendurchlauf handelt.         |
-| Länge     | Gibt die Anzahl der Durchlaufe der Schleife zurück ߝ Die Anzahl der Elemente in der Sammlung, die durchlaufen werden. |
-| Rindex     | Anzahl der Elemente, die noch in der Schleife verbleiben (Länge - Index), wobei 1 der Index des letzten Elements ist.              |
-| rindex0    | Anzahl der Elemente, die noch in der Schleife verbleiben (Länge - Index), wobei 0 der Index des letzten Elements ist.              |
+| Col        | Gibt den Index der aktuellen Zeile zurück, beginnend bei 1.                                                       |
+| col0       | Gibt den Index der aktuellen Zeile zurück, beginnend bei 0.                                                       |
+| zuerst\_Spalten | Gibt true zurück, wenn die aktuelle Spalte die erste Spalte in einer Zeile ist, andernfalls false.               |
+| Letzte Spalten\_  | Gibt true zurück, wenn es sich bei der aktuellen Spalte um die letzte Spalte in einer Zeile handelt, andernfalls false.                |
+| First      | Gibt true zurück, wenn es sich um die erste Iterations Schleife handelt. Gibt false zurück, wenn es sich nicht um die erste Iterations Datei handelt.       |
+| Sin      | Die Position des aktuellen Elements in der Auflistung, wobei das erste Element die Position 1 hat.                   |
+| index0     | Die Position des aktuellen Elements in der Auflistung, wobei das erste Element die Position 0 hat.                   |
+| Last       | Gibt true zurück, wenn es sich um die letzte Iterations Schleife handelt. Gibt false zurück, wenn es sich nicht um die letzte Iterations Vorgang handelt.         |
+| Füll     | Gibt die Anzahl der Iterationen für die Schleife zurück ߝ die Anzahl der Elemente in der Auflistung, die durchlaufen wird. |
+| rindex     | Anzahl der Elemente, die in der Schleife verbleiben (Längen Index), wobei 1 der Index des letzten Elements ist.              |
+| rindex0    | Anzahl der Elemente, die in der Schleife verbleiben (Längen Index), wobei 0 der Index des letzten Elements ist.              |
 
 
 
-## <a name="user"></a>Benutzer
+## <a name="user"></a>Bedienungs
 
-Verweist auf den aktuellen Portalbenutzer und ermöglicht Zugriff auf alle Attribute des zugrunde liegenden PowerApps-Kontaktdatensatzes. Wenn kein Benutzer angemeldet ist, ist diese Variable [Null](liquid-types.md#null).  
+Bezieht sich auf den aktuellen Portalbenutzer, der den Zugriff auf alle Attribute des zugrunde liegenden powerapps-Kontaktdaten Satzes ermöglicht. Wenn kein Benutzer angemeldet ist, ist diese Variable [null](liquid-types.md#null).  
 
-Benutzer ist ein [Entität](#entity)-Objekt.  
+der Benutzer ist ein [Entitäts](#entity) Objekt.  
 
 ```
 {% if user %}
@@ -1240,20 +1245,20 @@ Hello, anonymous user!
 
 ### <a name="attributes"></a>Attribute
 
-Neben der Verfügbarkeit aller Attribute von[ Entitäten](#entity) Objekt, hat der Benutzer folgende Attribute.
+Zusätzlich zu allen Attributen eines [Entitäts](#entity) Objekts verfügt der Benutzer über die folgenden Attribute.
 
 
-|    Attribut     |                                                                                                                                                                                     Beschreibung                                                                                                                                                                                     |
+|    Versehen     |                                                                                                                                                                                     Beschreibung                                                                                                                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      Rollen       |                                                      Gibt die Rollen, denen der Benutzer angehört, als [" Array "](liquid-types.md#array) wieder.<br>`{% if user.roles contains 'Administrators' %} User is an administrator. {% endif %}`<br>**Hinweis**: Sie können den `has_role` Filter auch nutzen, um einzelne Rollen Mitgliedschaften zu testen.                                                       |
-| basic_badges_url | Gibt die Service-URL zurück, um die Ausweise eines Benutzers abzurufen.<br>Um Ausweise für Benutzer zu rendern, müssen Sie ein Tag für die Attribute "Datenausweis" und" Daten-URI" enthalten. Wenn Sie die Ausweise des Benutzers rendern:<br>`<div data-badge data-uri='{{user.basic_badges_url }}'></div>`<br>Wenn Sie die Ausweise eines Benutzers nach ID rendern (variable Benutzer-ID):<br>\`<div data-badge data-uri='{{user.basic_badges_url |
+|      Rollen       |                                                      Gibt die Rollen zurück, zu denen der Benutzer gehört, als [Array](liquid-types.md#array).<br>`{% if user.roles contains 'Administrators' %} User is an administrator. {% endif %}`<br>**Hinweis**: Sie können auch den `has_role` Filter verwenden, um die einzelnen Rollen Mitgliedschaften zu testen.                                                       |
+| basic_badges_url | Gibt die Dienst-URL zum Abrufen der Ausweise eines Benutzers zurück.<br>Zum Rendering von Badge für einen Benutzer müssen Sie ein Tag mit den Attributen "Data-Badge" und "Data-URI" einschließen. So Rendering Sie die Kennzeichen des aktuellen Benutzers:<br>`<div data-badge data-uri='{{user.basic_badges_url }}'></div>`<br>So erstellen Sie die Ausweise eines Benutzers anhand der ID (Variable UserID)<br>\`< div Data-Badge Data-URI = ' {{User. basic_badges_url |
 |                  |                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ## <a name="weblinks"></a>Weblinks
 
-Ermöglicht das Laden eines beliebigen Weblinks nach Namen oder ID.  
+Ermöglicht das Laden von Weblinks nach Name oder ID.  
 
-Wenn der Weblinksatz vorhanden ist, wird ein [Weblinksatz-Objekt](#web-link-set-attributes) zurückgegeben. Wird kein Weblinksatz mit dem angegebenen Namen oder der ID gefunden, wird [Null](liquid-types.md#null) zurückgegeben.
+Wenn die weblinkmenge vorhanden ist, wird ein [weblinkset-Objekt](#web-link-set-attributes) zurückgegeben. Wenn eine weblinkmenge mit dem angegebenen Namen oder der ID nicht gefunden wird, wird [null](liquid-types.md#null) zurückgegeben.
 
 
 ```
@@ -1297,66 +1302,66 @@ Wenn der Weblinksatz vorhanden ist, wird ein [Weblinksatz-Objekt](#web-link-set-
 ```
 
 > [!Note]
-> [Rendern einer Websitekopfzeile und der primäre Navigationsleiste](render-site-header-primary-navigation.md) |  
+> [Eine Website Kopfzeile und eine primäre Navigationsleiste](render-site-header-primary-navigation.md) |  
 
-### <a name="web-link-set-attributes"></a>Weblinksatz-Attribute
+### <a name="web-link-set-attributes"></a>Attribute für weblinksätze
 
 > [!Note]
-> Ein Weblink-Set ist ein [Entitäts](#entity)-Objekt mit den gleichen Attributen zusätzlich zu den unten aufgelisteten.                                         
+> Eine weblinkgruppe ist ein [Entitäts](#entity) Objekt mit den gleichen Attributen, zusätzlich zu den unten aufgeführten Attributen.                                         
 
-|         Attribut          |                                                                                 Beschreibung                                                                                  |
+|         Versehen          |                                                                                 Beschreibung                                                                                  |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            Kopieren            |                                                                      Der HTML-Text des Weblinksatzes.                                                                      |
-|            Name            |                                                                        Der Name des Weblinksatzes.                                                                         |
-|           Position            |                                                                        Der Titel des Weblinksatzes.                                                                        |
-|          Weblinks          |                                                       Das Array der Weblinkobjekte, die dem Weblinksatz zugeordnet sind.                                                        |
-| \[Logischer Attributname\] | Sie können auf ein beliebiges Attribut des PowerApps-Datensatzes des Weblinksatzes nach logischem Namen zugreifen. Beispielsweise {{ weblinkset.createdon }} |
+|            Skopie            |                                                                      Die HTML-Kopie der weblinkgruppe.                                                                      |
+|            Name            |                                                                        Der Name der weblinkgruppe.                                                                         |
+|           Title            |                                                                        Der Titel der weblinkmenge.                                                                        |
+|          Weblinks          |                                                       Das Array von Weblink-Objekten, die mit der weblinkmenge verknüpft sind.                                                        |
+| logischer Name des \[Attributs\] | Sie können auf jedes Attribut des Weblink Satzes powerapps-Datensatz mit logischem Namen zugreifen. Beispiel: {{weblinkset. kreatedon}} |
 
-### <a name="web-link-attributes"></a>Weblinkattribute
+### <a name="web-link-attributes"></a>Weblink Attribute
 
 > [!Note]
-> Ein Weblink-Set ist ein [Entitäts](#entity)-Objekt mit den gleichen Attributen zusätzlich zu den unten aufgelisteten.
+> Ein Weblink ist ein [Entitäts](#entity) Objekt mit den gleichen Attributen, zusätzlich zu den unten aufgeführten Attributen.
 
-|          Attribut          |                                                                              Beschreibung                                                                              |
+|          Versehen          |                                                                              Beschreibung                                                                              |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Beschreibung         |                                                                 Die HTML-Beschreibung des Weblinks.                                                                 |
-|    display\_image\_only     |                              Das boolesche Attribut gibt an, ob der Weblink lediglich als Bild und ohne Linktext angezeigt werden soll.                               |
-| display\_page\_child\_links |            Das boolesche Attribut gibt an, ob der Weblink Links zu untergeordneten [*Siteübersicht*](#sitemap)-Seiten der verlinkten Seite als Sublinks anzeigen soll.             |
-|            Bild            |                                     Das Weblink-Bildobjekt für diesen Link. Dieses Attribut ist null, falls kein Bild vorhanden ist.                                      |
-|        is\_external         |                 Das boolesche Attribut gibt an, ob die Ziel-URL des Weblinks auf eine externe Website verweist(und nicht zu einer internen Portalseite).                  |
-|    is\_sitemap\_ancestor    |                                Gibt „True“ zurück, wenn die URL des Weblinks auf einen Vorgänger des aktuellen Siteübersichtsknoten verweist, andernfalls „False“.                                 |
-|    is\_sitemap\_current     |                                        Gibt „True“ zurück, wenn die URL des Weblinks auf den aktuellen Siteübersichtsknoten verweist, andernfalls „False“.                                        |
+|    nur\_Bild anzeigen\_     |                              Ein boolesches Attribut, das angibt, ob der Weblink nur als Bild ohne Linktext angezeigt werden soll.                               |
+| anzeigen\_Seite\_untergeordneten\_Links |            Boolesches Attribut, das angibt, ob der Weblink Links zu den untergeordneten [*Sitemap*](#sitemap) -Seiten der verknüpften Seite als untergeordnete Links anzeigen soll.             |
+|            Bild            |                                     Das Weblink Bild-Objekt für diesen Link. Dieses Attribut ist NULL, wenn kein Bild vorhanden ist.                                      |
+|        ist\_extern         |                 Ein boolesches Attribut, das angibt, ob die Ziel-URL des Weblinks eine externe Site ist (statt einer internen Portalseite).                  |
+|    ist\_Sitemap\_Vorgänger    |                                Gibt true zurück, wenn die Weblink-URL auf einen Vorgänger des aktuellen Sitemap-Knotens verweist; andernfalls false.                                 |
+|    ist\_Sitemap\_aktuell     |                                        Gibt true zurück, wenn die Weblink-URL auf den aktuellen Sitemap-Knoten verweist; andernfalls false.                                        |
 |            Name             |                                                                    Der Name/Titel des Weblinks.                                                                    |
-|          Nofollow           |                                         Das boolesche Attribut gibt an, ob der Weblink als rel="nofollow"gekennzeichnet werden soll.                                         |
-|    open\_in\_new\_window    |                             Das boolesche Attributgibt an, ob der Weblink in einem neuen Browserfenster/in einer neuen Registerkarte geöffnet werden soll, sobald er angeklickt wird.                             |
+|          Nofollow           |                                         Boolesches Attribut, das angibt, ob der Weblink als rel = nofollow gekennzeichnet werden soll.                                         |
+|    \_in\_Fenster "neues\_" öffnen    |                             Boolesches Attribut, das angibt, ob der Weblink bei ausgewählter Option in einem neuen Browserfenster bzw. einer neuen Registerkarte geöffnet werden soll.                             |
 |           QuickInfo           |                                                                    QuickInfo-Text für den Weblink.                                                                     |
-|             URL             |                                                                       Die URL des Weblinks.                                                                        |
-|          Weblinks           |                                                   Das Array der untergeordneten Weblinkobjekte, die dem Weblink zugeordnet sind.                                                   |
-| \[Logischer Attributname\]  | Sie können auf ein beliebiges Attribut des PowerApps-Datensatzes des Weblinks nach logischem Namen zugreifen. Beispielsweise {{ weblink.createdon }} |
+|             Urne             |                                                                       Die URL des Weblinks.                                                                        |
+|          Weblinks           |                                                   Das Array von untergeordneten Weblink-Objekten, die mit dem Weblink verknüpft sind.                                                   |
+| logischer Name des \[Attributs\]  | Sie können auf jedes Attribut des Weblink-powerapps-Datensatzes mit logischem Namen zugreifen. Beispiel: {{Weblink. kreatedon}} |
 
-### <a name="web-link-image-attributes"></a>Weblink-Bildattribute
+### <a name="web-link-image-attributes"></a>Weblink Bildattribute
 
-| alternate\_text | Alternativer Text für das Bild.                                                                                       |
+| alternativer\_Text | Alternativer Text für das Bild.                                                                                       |
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
-| Höhe          | Ganze Zahl, die die angegebene Höhe des Bildes enthält. Wenn kein Wert für die Höhe bereitgestellt wurde, ist dieses Attribut null. |
-| URL             | Geben Sie die URL des Bildes ein.                                                                                               |
-| Breite           | Ganze Zahl, die die angegebene Breite des Bildes enthält. Wenn kein Wert für die Breite bereitgestellt wurde, ist dieses Attribut null.   |
+| Höhe          | Eine ganze Zahl, die die angegebene Höhe des Bilds enthält. Wenn kein Height-Wert angegeben wurde, ist dieses Attribut NULL. |
+| Urne             | Die URL des Bilds.                                                                                               |
+| Breite           | Eine ganze Zahl, die die angegebene Breite des Bilds enthält. Wenn kein Breitenwert angegeben wurde, ist dieses Attribut NULL.   |
 
 
 ## <a name="website"></a>Website
 
-Verweist auf die Portal-Website und ermöglicht Zugriff auf alle Attribute des PowerApps-Websitedatensatz (adx\_website) für das Portal.  
+Bezieht sich auf die Portal Website, die den Zugriff auf alle Attribute des Datensatzes der powerapps-Website (ADX\_-Website) für das Portal ermöglicht.  
 
 > [!Note]
-> Website ist ein [Entität](#entity)-Objekt, mit all den gleichen Attributen.
+> Website ist ein [Entitäts](#entity) Objekt mit den gleichen Attributen.
 
-**Code**
+**Ordnung**
 
 ```
 {{ website.adx_name }} ({{ website.id }})
 ```
 
-**Ausgabe**
+**Ausgeben**
 
 ```
 Community Portal (936DA01F-9ABD-4d9d-80C7-02AF85C822A8)
