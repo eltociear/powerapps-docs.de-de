@@ -1,25 +1,24 @@
 ---
 title: 'Steuerelement für Bewertungen: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Steuerelement für Bewertungen
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 774b5294f9d03564caa658a04aff0f682a7bb43f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993345"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649921"
 ---
 # <a name="rating-control-in-powerapps"></a>Steuerelement für Bewertungen in PowerApps
 Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen Anzahl, die Sie festlegen, angeben können.
@@ -28,7 +27,7 @@ Ein Steuerelement, mit dem Benutzer einen Wert zwischen 1 und einer maximalen An
 Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefallen hat, indem er eine bestimmte Anzahl von Sternen auswählt.
 
 ## <a name="key-properties"></a>Haupteigenschaften
-**[Default](properties-core.md)** : Der Anfangswert eines Steuerelements, bevor er vom Benutzer geändert wird.
+**[Default](properties-core.md)** – Der Anfangswert eines Steuerelements, bevor es vom Benutzer geändert wird.
 
 **Max**: Der maximale Wert, auf den der Benutzer einen Schieberegler oder eine Bewertung festlegen kann.
 
@@ -51,7 +50,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
-**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -59,13 +58,13 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 
 **ReadOnly**: Gibt an, ob ein Benutzer den Wert eines Schiebereglers oder eines Bewertung-Steuerelements ändern kann.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **ShowValue**: Gibt an, ob ein Wert des Schiebereglers oder der Bewertung angezeigt wird, wenn der Benutzer diesen Wert ändert oder auf das Steuerelement zeigt.
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -76,7 +75,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Average**( *Value1*; *Value2;* ... )](../functions/function-aggregates.md)
+[**Average**( *Value1*, *Value2,* ... )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein Steuerelement **Rating** hinzu, und nennen Sie es **Quantitative**.
@@ -84,7 +83,7 @@ Mit diesem Steuerelement kann der Benutzer z.B. angeben, wie gut ihm etwas gefal
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein Steuerelement **[Text input](control-text-input.md)** hinzu, nennen Sie es **Qualitative**, und verschieben Sie es unter das Steuerelement **Rating**.
 3. Legen Sie die Eigenschaft **[Default](properties-core.md)** des Steuerelements **[Text input](control-text-input.md)** auf **""** fest, und legen Sie sein **HintText** auf diese Formel fest:
-   <br>**If(Quantitative.Value > 3; „Was hat Ihnen besonders gefallen?“; „Wie können wir es besser machen?“)**
+   <br>**If(Quantitative.Value > 3, „Was hat Ihnen besonders gefallen?“, „Wie können wir es besser machen?“)**
    
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 4. Drücken Sie F5, und klicken oder tippen Sie anschließend auf entweder vier oder fünf Sterne im Steuerelement **Rating** (Bewertung).
@@ -111,7 +110,7 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
 * Wenn es zu viele Sterne gibt, sollten Sie ein anderes Steuerelement verwenden. Die Navigation mit der Tastatur kann mühsam sein, und bei einem Touchscreen ist es kompliziert, eine genaue Auswahl zu treffen.
 
     > [!NOTE]

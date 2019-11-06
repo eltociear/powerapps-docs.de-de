@@ -1,25 +1,24 @@
 ---
 title: 'Shape-Steuerelemente und Symbole für Steuerelemente: Referenz | Microsoft-Dokumentation'
 description: Informationen einschließlich Eigenschaften und Beispielen für Shape-Steuerelemente und Symbole für Steuerelemente
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986335"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649735"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Shape-Steuerelemente und Symbole für Steuerelemente in PowerApps
 Grafiken, deren Eigenschaften wie Aussehen und Verhalten Sie konfigurieren können
@@ -69,7 +68,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*, *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Beispiel
 
@@ -81,7 +80,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. Fügen Sie in **Source** ein **Shape**-Steuerelement hinzu, und legen Sie seine **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Drücken Sie F5, und wählen Sie dann das **Shape** -Steuerelement aus.
 
@@ -89,7 +88,7 @@ Diese Steuerelemente umfassen Pfeile, geometrische Formen, Aktionssymbole und Sy
 
 1. (optional) Drücken Sie die ESC-TASTE, um zum Standardarbeitsbereich zurückzukehren, fügen Sie ein **Shape**-Steuerelement zu **Target** hinzu, und legen Sie die **[OnSelect](properties-core.md)** -Eigenschaft des **Shape**-Steuerelements auf diese Formel fest:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 

@@ -1,25 +1,24 @@
 ---
 title: 'Listenfeld-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, zum Listenfeld-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4b12bb62011e24e2dfdb12d9d355432aa2bcadb6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d211af5c34874a0ea0afe80af91c2f65495a7a60
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986571"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650499"
 ---
 # <a name="list-box-control-in-powerapps"></a>Listenfeld-Steuerelement in PowerApps
 Eine Liste, in der der Benutzer ein oder mehrere Elemente auswählen kann
@@ -63,7 +62,7 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[Font](properties-text.md)** – Der Name der Schriftfamilie des angezeigten Texts.
 
-**[FontWeight](properties-text.md)** – die Gewichtung des Texts in einem-Steuerelement: **Fett**, **halb Fett**, **Normal**oder **heller**.
+**[FontWeight](properties-text.md)** – Die Schriftbreite des Texts in einem Steuerelement: **Bold** (Fett), **Semibold** (Halbfett), **Normal** oder **Lighter** (Heller).
 
 **[Height](properties-size-location.md)** – Die Entfernung zwischen dem oberen und unteren Rand eines Steuerelements.
 
@@ -79,7 +78,7 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[LineHeight](properties-text.md)** : Der Abstand zwischen Elementen, z.B. Textzeilen oder Elementen in einer Liste.
 
-**[OnChange](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
+**[OnChange](properties-core.md)** : Gibt an, wie die App reagiert, wenn der Benutzer den Wert eines Steuerelements ändert (z.B. per Schieberegler).
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
@@ -97,7 +96,7 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[PressedFill](properties-color-border.md)** – Die Hintergrundfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
-**[Reset](properties-core.md)** – Legt fest, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
+**[Reset](properties-core.md)** : Gibt an, ob ein Steuerelement auf seinen Standardwert zurückgesetzt wird.
 
 **SelectedText (veraltet)** – ein Zeichen folgen Wert, der das ausgewählte Element darstellt.
 
@@ -113,7 +112,7 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Underline](properties-text.md)** – Legt fest, ob der in einem Steuerelement angezeigte Text unterstrichen ist.
 
@@ -126,11 +125,11 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Distinct**( *DataSource*; *ColumnName* )](../functions/function-distinct.md)
+[**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>Beispiel
 1. Fügen Sie ein **Listenfeld**-Steuerungselement hinzu, nennen Sie es **CategoryList**, und legen Sie seine **[Items](properties-core.md)** -Eigenschaft auf folgende Formel fest:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
    
@@ -138,16 +137,16 @@ Wenn Sie einen Katalog, eine Liste oder ein Diagramm hinzufügen, zeigt die Eige
 2. Fügen Sie drei **[Dropdown](control-drop-down.md)** -Steuerelemente hinzu, verschieben Sie sie unter **CategoryList**, und nennen Sie diese **CarpetList**, **HardwoodList** und **TileList**.
 3. Legen Sie die **[Items](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
    
-   * CarpetList: **["Caserta Stone Beige"; "Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige", "Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Bezeichnungen der Bodenbeläge in Dropdownlisten](./media/control-list-box/flooring-names.png)
 4. Legen Sie die **[Visible](properties-core.md)** -Eigenschaft jedes **[Dropdown](control-drop-down.md)** -Steuerelements auf einen der folgenden Werte fest:
    
-   * Carpetlist: **If ("Teppich" in CategoryList. SelectedItems. Value, true)**
-   * Hardwoodlist: **If ("Hardwood" in CategoryList. SelectedItems. Value, true)**
-   * TileList: **If ("Tile" in CategoryList. SelectedItems. Value, true)**
+   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 5. Drücken Sie F5, und wählen Sie ein oder mehrere Elemente in **CategoryList** aus.
@@ -173,7 +172,7 @@ Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessi
 
 ### <a name="keyboard-support"></a>Tastaturunterstützung
 * **[TabIndex](properties-accessibility.md)** muss gleich 0 (null) oder größer sein, damit Tastaturbenutzer dorthin navigieren können.
-* Fokusindikatoren müssen deutlich sichtbar sein. **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Ihnen dabei helfen.
+* Fokusindikatoren müssen deutlich sichtbar sein. Mithilfe von **[FocusedBorderColor](properties-color-border.md)** und **[FocusedBorderThickness](properties-color-border.md)** können Sie dies archivieren.
 
     > [!NOTE]
   > Über die TAB-TASTE können Sie zum **Listenfeld** navigieren oder dieses schließen. Über die Pfeiltasten können Sie durch die Inhalte des **Listenfelds** navigieren.
