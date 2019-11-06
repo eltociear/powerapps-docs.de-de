@@ -1,25 +1,24 @@
 ---
 title: 'Stifteingabe-Steuerelement: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispiele, über das Stifteingabe-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1600f765e40849b47cb41b29c5d4c3fab86b4caf
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4da95086c99c03fdd56214a0d2fb637beaa6243c
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993397"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650360"
 ---
 # <a name="pen-input-control-in-powerapps"></a>Stifteingabe-Steuerelement in PowerApps
 Ein Steuerelement, mit dem der Benutzer Bereiche eines Bildes zeichnen, löschen oder markieren kann.
@@ -72,7 +71,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Collect**( *CollectionName*; *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
+[**Collect**( *CollectionName*, *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
 
 ## <a name="example"></a>Beispiel
 ### <a name="create-a-set-of-images"></a>Erstellen Sie einen Satz von Bildern
@@ -81,7 +80,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie ein Steuerelement **[Button](control-button.md)** hinzu, verschieben Sie es unter **MyDoodles**, und legen Sie die Eigenschaft **[Text](properties-core.md)** des Steuerelements **[Button](control-button.md)** so fest, dass **Add** angezeigt wird.
 3. Legen Sie die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Button](control-button.md)** auf die folgende Formel fest:<br>
-   **Collect(Doodles; {Sketch:MyDoodles.Image})**
+   **Collect(Doodles, {Sketch:MyDoodles.Image})**
 4. Fügen Sie ein Steuerelement **Image gallery** hinzu, verschieben Sie es unter das Steuerelement **[Button](control-button.md)** , und verkleinern Sie die Breite des **Image gallery**, bis drei Elemente angezeigt werden.
 5. Legen Sie die Eigenschaft **[Items](properties-core.md)** des Steuerelements **Image gallery** auf **Doodles** fest, und drücken Sie anschließend F5.
 6. Zeichnen Sie ein Bild in **MyDoodles**, und klicken oder tippen Sie anschließend auf das Steuerelement **[Button](control-button.md)** .
@@ -89,7 +88,7 @@ Benutzer können dieses Steuerelement wie ein Whiteboard verwenden. Sie können 
     Das Bild, das Sie gezeichnet haben, wird im Steuerelement **Image gallery** angezeigt.
 7. (optional) Klicken oder tippen Sie im Steuerelement **Pen input** auf das Symbol, um das gezeichnete Bild zu löschen, zeichnen Sie ein anderes Bild, und klicken oder tippen Sie auf das Steuerelement **[Button](control-button.md)** .
 8. Legen Sie im Steuerelement **Image gallery** die Eigenschaft **[OnSelect](properties-core.md)** des Steuerelements **[Image](control-image.md)** auf diese Formel fest:<br>
-   **Remove(Doodles; ThisItem)**
+   **Remove(Doodles, ThisItem)**
 9. Entfernen Sie eine Zeichnung, indem Sie auf das Steuerelement **Image gallery** klicken oder tippen.
 
 Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Funktion, um Ihre Zeichnungen lokal zu speichern, oder die **[Patch](../functions/function-patch.md)** -Funktion zur Speicherung in einer Datenquelle.
@@ -97,7 +96,7 @@ Verwenden Sie die **[SaveData](../functions/function-savedata-loaddata.md)** -Fu
 
 ## <a name="accessibility-guidelines"></a>Richtlinien für Barrierefreiheit
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[BorderColor](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn es einen Rahmen gibt
 * **[Fill](properties-color-border.md)** und die Farbe außerhalb des Steuerelements, wenn es keinen Rahmen gibt
 

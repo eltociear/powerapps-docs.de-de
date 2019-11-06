@@ -1,25 +1,24 @@
 ---
 title: 'Steuerelement für das Barcode-Scanner: Referenz | Microsoft-Dokumentation'
 description: Informationen, einschließlich Eigenschaften und Beispielen, über das Barcode Scanner-Steuerelement
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e80f34917bba942f85e141c382cf3b1caa5e6d44
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986998"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650749"
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Steuerelement "Barcode-Scanner" (experimentell) in powerapps
 
@@ -55,7 +54,7 @@ Das Steuerelement zeigt den Kamera Feed in der APP an, sodass Benutzer Barcodes 
 
 **Text**: Barcodewert, der vom Scanner zuletzt erkannt wurde.
 
-**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -67,7 +66,7 @@ Das Steuerelement zeigt den Kamera Feed in der APP an, sodass Benutzer Barcodes 
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
 
