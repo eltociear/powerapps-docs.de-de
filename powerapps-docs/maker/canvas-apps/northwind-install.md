@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a2c3b468c7ccc09c49221c65113e66b562f5ed1
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71990861"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541334"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Installieren von Northwind Traders-Datenbank und-Apps
 
@@ -36,11 +36,11 @@ Northwind Traders ist eine fiktive Organisation, die Aufträge, Produkte, Kunden
 > [!div class="nextstepaction"]
 > [Herunterladen der Projektmappen-Datei für Northwind Traders](https://pwrappssamples.blob.core.windows.net/samples/NorthwindTraders_1_0_0_6.zip)
 
-Diese [Projektmappendatei](../../developer/common-data-service/introduction-solutions.md) (ZIP-Datei) enthält die Definitionen von Entitäten, Options Sätzen und Geschäftsprozessen. der Canvas und Modell gesteuerte apps und alle anderen Elemente, die zusammen verwendet werden.
+Diese [](../../developer/common-data-service/introduction-solutions.md) Projektmappendatei (ZIP-Datei) enthält die Definitionen von Entitäten, Options Sätzen und Geschäftsprozessen. der Canvas und Modell gesteuerte apps und alle anderen Elemente, die zusammen verwendet werden.
 
 ## <a name="install-the-solution"></a>Installieren der Lösung
 
-1. Melden Sie sich bei [powerapps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, und stellen Sie sicher, dass Sie in einer Umgebung arbeiten, die eine Common Data Service-Datenbank enthält.
+1. Melden Sie sich bei [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an, und stellen Sie sicher, dass Sie in einer Umgebung arbeiten, die eine Common Data Service-Datenbank enthält.
 
 1. Klicken Sie im linken Navigationsbereich auf Projektmappen **, und wählen Sie dann**in der Symbolleiste oben auf dem Bildschirm **importieren** aus:
 

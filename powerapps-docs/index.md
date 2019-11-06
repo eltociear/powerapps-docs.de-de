@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
-ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
+ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
+ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71709223"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566966"
 ---
 <div id="main"
    class="v2">
@@ -89,7 +89,7 @@ ms.locfileid: "71709223"
                               </a>
                            </li>
                            <li>
-                              <a href="https://powerapps.microsoft.com/en-us/blog/">
+                              <a href="https://powerapps.microsoft.com/blog/">
                                  <div class="cardSize">
                                     <div class="cardPadding">
                                        <div class="card">
@@ -288,7 +288,7 @@ ms.locfileid: "71709223"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Portale</h3>
+                                    <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Was ist PowerApps Portals?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Erstellen eines Portals</a></p>
@@ -319,7 +319,7 @@ ms.locfileid: "71709223"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Anwenden von Geschäftslogik</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Lösungen</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Sicherheit im Common Data Service</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Erstellen von Power BI-Berichten aus Common Data Service-Daten</a></p>
                                  </div>
                               </div>
@@ -608,7 +608,7 @@ ms.locfileid: "71709223"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Verwenden der PowerApps-Überprüfung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV-App-Verwaltung und -Überwachung</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Veröffentlichen einer App in AppSource</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Whitepaper: Lösungen zur Verwendung von ALM</a></p>
                                  </div>
                               </div>
                            </div>

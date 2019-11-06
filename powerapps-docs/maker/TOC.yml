@@ -1054,13 +1054,15 @@
           href: ./model-driven-apps/unified-interface-playbook.md
         - name: Ansatz für eine Umstellung auf eine einheitliche Oberfläche
           href: ./model-driven-apps/approaching-unified-interface.md
+        - name: 'Checkliste: Übergang zur einheitlichen Benutzeroberfläche'
+          href: ./model-driven-apps/checklist-transition-unified-interface.md
     - name: Barrierefreiheit im PowerApps-App-Designer
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Anpassen der Dynamics 365-App für Outlook
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Für Entwickler
       href: ../developer/model-driven-apps/overview.md
-- name: Portale
+- name: Portals
   items:
     - name: Was ist PowerApps Portals?
       href: ./portals/overview.md
@@ -1072,7 +1074,9 @@
           href: ./portals/create-portal.md
         - name: Erstellen eines Portals mit einer Dynamics 365-Umgebung
           href: ./portals/create-dynamics-portal.md
-        - name: Anatomie des Portal-Designers
+        - name: Bereitstellen eines Portals mit dem älteren Portal-Add-On
+          href: ./portals/provision-portal-add-on.md
+        - name: PowerApps Portals Studio – Aufbau
           href: ./portals/portal-designer-anatomy.md
         - name: Unterstützte Webbrowser für den Portal-Designer
           href: ./portals/supported-browser.md
@@ -1118,7 +1122,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: Einrichten einer IP-Adresseinschränkung
           href: ./portals/admin/ip-address-restrict.md
-        - name: Aktualisieren der PowerApps Portals-Domäne
+        - name: Update für die PowerApps Portals-Domäne
           href: ./portals/admin/update-portal-domain.md
         - name: Löschen des serverseitigen Caches
           href: ./portals/admin/clear-server-side-cache.md
@@ -1150,6 +1154,58 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Migrieren von Identitätsanbietern zu Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
+        - name: Search
+          items:
+            - name: Informationen zur Suche
+              href: ./portals/configure/search.md
+            - name: Verbessern der Suche mithilfe der Facettensuche
+              href: ./portals/configure/improve-portal-search-faceted-search.md
+            - name: Suchen in Dateianhängen
+              href: ./portals/configure/search-file-attachment.md
+        - name: Aktivieren der Unterstützung mehrerer Sprachen
+          href: ./portals/configure/enable-multiple-language-support.md
+        - name: Erstellen und verwalten von Webdateien
+          href: ./portals/configure/web-files.md
+        - name: Verwalten von Weblinks
+          href: ./portals/configure/manage-web-links.md
+        - name: Erstellen und Verwalten von Seitenvorlagen
+          href: ./portals/configure/page-templates.md
+        - name: Verwalten von Codeausschnitten mit Inhalt
+          href: ./portals/configure/customize-content-snippets.md
+        - name: Erstellen einer Umleitungs-URL
+          href: ./portals/configure/add-redirect-url.md
+        - name: Verwenden von Verknüpfungen zum Platzieren von untergeordneten Knoten
+          href: ./portals/configure/place-child-nodes.md
+        - name: Verhalten und Format des Datums- und Uhrzeitfelds
+          href: ./portals/configure/behavior-format-date-time-field.md
+        - name: Hinzufügen eines Diagramms zu einer Webseite im Portal
+          href: ./portals/configure/add-chart.md
+        - name: Arbeiten mit Entitätsformularen
+          href: ./portals/configure/entity-forms.md
+        - name: Arbeiten mit Entitätslisten
+          href: ./portals/configure/entity-lists.md
+        - name: Arbeiten mit Webformularen
+          items:
+            - name: Definieren von Eigenschaften von Webformularen
+              href: ./portals/configure/web-form-properties.md
+            - name: Schritte für Webformulare
+              items:
+                - name: Definieren von Schritten für Webformulare
+                  href: ./portals/configure/web-form-steps.md
+                - name: Definieren eines Schritttyps für Ladeformular und Laderegisterkarte
+                  href: ./portals/configure/load-form-step.md
+                - name: Hinzufügen eines Schritttyps für die Umleitung
+                  href: ./portals/configure/add-redirect-step.md
+                - name: Hinzufügen eines bedingten Schritttyps
+                  href: ./portals/configure/add-conditional-step.md
+                - name: Hinzufügen von benutzerdefiniertem JavaScript
+                  href: ./portals/configure/add-custom-javascript.md
+            - name: Konfigurieren von Metadaten für ein Webformular
+              href: ./portals/configure/configure-web-form-metadata.md
+            - name: Konfigurieren eines Unterrasters für ein Webformular
+              href: ./portals/configure/configure-web-form-subgrid.md
+            - name: Hinzufügen von Geolocation
+              href: ./portals/configure/add-geolocation.md
     - name: Erweiterte Portalanpassung
       items:
         - name: Arbeiten mit Liquid-Vorlagen
@@ -1196,6 +1252,20 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: OAuth 2.0-Flow zur impliziten Gewährung
           href: ./portals/oauth-implicit-grant-flow.md
+    - name: Benutzerverwaltung und Sicherheit im Portal
+      items:
+        - name: Konfigurieren von Kontakten
+          href: ./portals/configure/configure-contacts.md
+        - name: Einladen von Kontakten
+          href: ./portals/configure/invite-contacts.md
+        - name: Erstellen von Webrollen
+          href: ./portals/configure/create-web-roles.md
+        - name: Zuweisen von Entitätsberechtigungen
+          href: ./portals/configure/assign-entity-permissions.md
+        - name: Steuern des Webseitenzugriffs
+          href: ./portals/configure/webpage-access-control.md
+        - name: Erstellen von Berechtigungen für den Websitezugriff
+          href: ./portals/configure/website-access-permission.md
     - name: Dokumentspeicher in Portalen
       items:
         - name: Konfigurieren von Hinweisen
@@ -1210,7 +1280,7 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: Bekannte Probleme
       href: ./portals/known-issues.md
-    - name: Häufig gestellte Fragen zu PowerApps-Portals
+    - name: Häufig gestellte Fragen zu PowerApps Portals
       href: ./portals/faq.md
 - name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
