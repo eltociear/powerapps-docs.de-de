@@ -1,6 +1,7 @@
-- name: 'Erste Schritte: Was ist PowerApps?'
-  href: ../powerapps-overview.md
+- name: Erste Schritte
   items:
+    - name: Was ist PowerApps?
+      href: ../powerapps-overview.md
     - name: Für 30-Tage-Testversion registrieren
       href: signup-for-powerapps.md
     - name: Für Communityplan registrieren
@@ -23,13 +24,15 @@
     - name: Aus AppSource
       href: ../user/app-source.md
     - name: Verwenden modellgesteuerter Apps
-      href: ../user/use-model-driven-apps.md
       items:
+        - name: Übersicht
+          href: ../user/use-model-driven-apps.md
         - name: Einheitliche Oberfläche
           href: ../user/unified-interface.md
         - name: Navigation und Grundlagen
-          href: ../user/navigation.md
           items:
+            - name: Übersicht
+              href: ../user/navigation.md
             - name: Anzeigen des Profils
               href: ../user/view-your-user-profile.md
             - name: Finden Ihres Administrators oder Supportmitarbeiters
@@ -814,8 +817,9 @@
         - name: Einbetten von Canvas-Apps in Ihre Anwendungen
           href: ./canvas-apps/embedding-sdk.md
 - name: Modellgesteuerte Apps
-  href: ./model-driven-apps/model-driven-app-overview.md
   items:
+    - name: Was sind modellgesteuerte Apps?
+      href: ./model-driven-apps/model-driven-app-overview.md
     - name: Beispiel-Apps erkunden
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: Ihre erste App erstellen
@@ -1289,11 +1293,13 @@
     - name: Häufig gestellte Fragen zu PowerApps Portals
       href: ./portals/faq.md
 - name: Common Data Service
-  href: ./common-data-service/data-platform-intro.md
   items:
+    - name: Was ist Common Data Service?
+      href: ./common-data-service/data-platform-intro.md
     - name: Arbeiten mit Entitäten
-      href: ./common-data-service/entity-overview.md
       items:
+        - name: Entitätenübersicht
+          href: ./common-data-service/entity-overview.md
         - name: Erstellen einer Entität
           href: ./common-data-service/data-platform-create-entity.md
         - name: Erstellen benutzerdefinierter Entitäten mit Komponenten
