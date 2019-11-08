@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ba051395e99dc6f2079d033c10a727a2e95da67
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924565"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609901"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Hinzufügen einer Termin-, E-Mail-, Telefonanruf-, Notiz- oder Aufgabenaktivität zur Zeitachse 
 
@@ -100,7 +100,7 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
 
 
     > [!NOTE]
-    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > Registerkarte " **e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/en-us/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
+    > Um e-Mails in einer Konversations Ansicht aufzulisten, wechseln Sie zu **Einstellungen** > **Personalisierungs Einstellungen** > Registerkarte " **e-Mail** ", und wählen Sie dann **e-Mail als Konversation auf der Zeitachse anzeigen** Weitere Informationen zu persönlichen Einstellungen finden Sie unter [Set Personal Options](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options). Nach der Aktivierung können Sie ein beliebiges Formular öffnen, das über eine Zeitachse verfügt, und Ihre e-Mail-Nachrichten werden in Konversations Threads mit der neuesten e-Mail gruppiert.
 
    > [!div class="mx-imgBorder"]
    > ![Persönliche Optionen festlegen](media/emailsettings1.png "Festlegen persönlicher Optionen")
@@ -112,6 +112,9 @@ Um eine E-Mail-Aktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst d
 ## <a name="add-an-appointment"></a>Hinzufügen eines Termins  
 
 Um eine Terminaktivität zu einem Datensatz hinzuzufügen, müssen Sie zuerst den Datensatz speichern, dem Sie die Aktivität hinzufügen.  
+
+> [!NOTE]
+> Wiederkehrende Termine werden in der Dynamics 365-App für Outlook, der Dynamics 365 for Phones-APP und beim Ausführen des Webclients für Modell gesteuerte apps auf dem Webbrowser des Mobiltelefons nicht unterstützt.
   
 1. Öffnen Sie den Datensatz, dem die Aktivität hinzugefügt werden soll. Öffnen Sie z.B. einen Kontaktdatensatz.
   

@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f5d2fc5d493dd46eb6e0bed2bc8d7af754cff0dd
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: dc170445349e2c3b2bcca02b855914f7644bd685
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213859"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543355"
 ---
 # <a name="whats-new-in-powerapps"></a>Neuerungen bei PowerApps
 
@@ -34,7 +34,7 @@ In diesem Thema erfahren Sie, wo Sie Informationen zu kürzlich veröffentlichte
 
 Informationen zu neuen Funktionen, Fehlerbehebungen und Verbesserungen, die in den letzten Wochen veröffentlicht wurden, finden Sie unter [Released versions for Microsoft PowerApps (Veröffentliche Versionen von Microsoft PowerApps)](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps).
 
-Informationen zum Durchsuchen der wöchentlichen Versionshinweise finden Sie in diesem [Blogbeitrag](https://powerapps.microsoft.com/en-us/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/).
+Informationen zum Durchsuchen der wöchentlichen Versionshinweise finden Sie in diesem [Blogbeitrag](https://powerapps.microsoft.com/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/).
 
 > [!NOTE]
 > Versionen werden über mehrere Tage eingeführt. Neue oder aktualisierte Funktionen werden möglicherweise nicht sofort angezeigt.

@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67441e506ba2715a9994f6b81cd08426e37e0fc8
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 276c7d3cbf95947306fab768da8af3c4c66b33e0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71950908"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543371"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>Anzeigen der Profil Karte für einen Kontakt oder Benutzer
 
-Verwenden Sie die Profil Karte, um schnell Informationen zu einem Kontakt oder Benutzer zu erhalten. Wenn Sie ein Kontakt-oder Benutzer Feld in Modell gesteuerten apps in Dynamics 365 (z. b. Dynamics 365 Sales und Dynamics 365 Customer Service) auswählen, finden Sie entsprechende Informationen auf der zugehörigen Profil Karte. Weitere Informationen zu Profil Karten finden Sie unter [Profil Karten in Office 365](https://support.office.com/en-us/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+Verwenden Sie die Profil Karte, um schnell Informationen zu einem Kontakt oder Benutzer zu erhalten. Wenn Sie ein Kontakt-oder Benutzer Feld in Modell gesteuerten apps in Dynamics 365 (z. b. Dynamics 365 Sales und Dynamics 365 Customer Service) auswählen, finden Sie entsprechende Informationen auf der zugehörigen Profil Karte. Weitere Informationen zu Profil Karten finden Sie unter [Profil Karten in Office 365](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 > [!NOTE]
->  - Die Profil Karte ist für die **Kontakt** -und **Benutzer** Entität verfügbar. Weitere Informationen finden Sie unter [Aktivieren der Profil Karte (für Administratoren)](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-profile-card).
+>  - Die Profil Karte ist für die **Kontakt** -und **Benutzer** Entität verfügbar. Weitere Informationen finden Sie unter [Aktivieren der Profil Karte (für Administratoren)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-profile-card).
 >  - Die Profil Karte in Common Data Service wird nicht angezeigt, wenn die Multi-Factor Authentication für den Office-Delta Dienst in Azure Active Directory aktiviert ist.
 
 ## <a name="view-a-contacts-profile"></a>Anzeigen des Profils eines Kontakts
@@ -62,7 +62,7 @@ Profil Karten sind in Kontakt-und Benutzerdaten Sätzen zu sehen. Sie können Si
 ### <a name="where-is-information-shown-in-the-profile-card-coming-from"></a>Wo werden die Informationen angezeigt, die in der Profil Karte angezeigt werden?
 Die Informationen, die auf der Karte Kontakt Profil angezeigt werden, werden von Common Data Service abgerufen (und nicht von Microsoft Exchange). Dies bedeutet, dass die Kontaktinformationen von Dynamics 365 stammen.
 
-Die Informationen, die auf der Benutzerprofil Karte angezeigt werden, werden aus Office 365 (Azure Active Directory) abgerufen. Weitere Informationen finden Sie unter [Profil Karten in Office 365 (Administrator Abschnitt)](https://support.office.com/en-us/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+Die Informationen, die auf der Benutzerprofil Karte angezeigt werden, werden aus Office 365 (Azure Active Directory) abgerufen. Weitere Informationen finden Sie unter [Profil Karten in Office 365 (Administrator Abschnitt)](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 ### <a name="how-can-i-customize-the-fields-shown-on-the-profile-card"></a>Wie kann ich die Felder anpassen, die auf der Profil Karte angezeigt werden?
 Die Liste der Felder, die auf der Profil Karte angezeigt werden, ist zurzeit nicht für die Anpassung geöffnet.

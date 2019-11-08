@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 11/06/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e2f267e0dd0b61324da381a3f7f7e13677b997ee
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c37e6e9e2b540dcad2c166a4ebf9d71d3b503978
+ms.sourcegitcommit: 10b2798d8f4acd01da15412a2e9fc872d1212d7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73026081"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73728413"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Verwenden des Nachschlagefelds für einen Datensatz
 
@@ -61,6 +61,9 @@ Wenn Sie nach einer Suche suchen möchten, wählen Sie das Symbol für die Suche
  
 ## <a name="most-recently-used-record-type-images"></a>Zuletzt verwendete Abbild Daten Satz Typen
 Die Liste der zuletzt verwendeten Datensätze zeigt ein Bild, das Sie bei der Unterscheidung zwischen Daten Satz Typen unterstützt.
+
+>[!NOTE] 
+>Aktuelle Datensätze werden nicht nach dem Suchbegriff oder der ausgewählten Ansicht gefiltert.
 
   > [!div class="mx-imgBorder"]
   > ![Suchfelder zeigt Bild an](media/Lookup_03-MRU_Entity_Images_56[1].png "Suchfelder zeigt Bild an")  

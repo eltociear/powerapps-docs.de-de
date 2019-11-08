@@ -14,17 +14,17 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 1f1f0901f5ba641dfc4e183164d55225d3aeb05c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61526449"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537068"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Anzeigen von Analyseberichten für Ihre App
 Haben Sie eine App erstellt und in Ihrer Organisation bereitgestellt?  Möchten Sie wissen, wie viele Ihrer Kollegen die App täglich verwenden?
 
-Jetzt gibt es den ersten PowerApps-Analysebericht, der über [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verfügbar ist: der **App-Nutzungsbericht**.
+Einführung in den ersten powerapps-Analysebericht, der jetzt über [make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)verfügbar ist. der **App-Verwendungs Bericht**.
 
 Mit dem App-Nutzungsbericht können Sie verfolgen, wie viele Benutzer Ihre App in den letzten 30 Tagen verwendet haben, aufgeschlüsselt nach Tag, Geräteplattform und Standort.
 
@@ -36,7 +36,7 @@ Alle Berichte sind für alle Benutzer mit der Berechtigung „Kann bearbeiten“
 ## <a name="where-do-i-find-my-apps-reports"></a>Wo finde ich die Berichte für meine App?
 Sie können die Berichte für Ihre App mit den folgenden Schritten anzeigen:
 
-1. Öffnen Sie [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Wechseln Sie zu [make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Wählen Sie in der linken Navigationsleiste **Apps** aus.
    
     ![Linke Navigationsleiste](./media/app-analytics/left-nav.png)

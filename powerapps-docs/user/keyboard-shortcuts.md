@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c539fe1cf51ad057fbf1e0bf2a7a618611fd7e4c
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: dc8e73353500610f578c1dc66cd6318150facb00
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61543372"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543195"
 ---
 # <a name="use-keyboard-shortcuts-in-powerapps"></a>Verwenden von Tastenkombinationen in powerapps
 
@@ -34,30 +34,30 @@ Tastenkombinationen bieten Ihnen eine alternative Möglichkeit, häufige Aufgabe
 <!--does the N/A mean not available? If so, why include them? -->
 
 
-|Aufgabe  | Einheitliche Oberfläche |
+|Task  | Einheitliche Oberfläche |
 |---------|---------|
 |Vervollständigen Sie den Befehl für die aktive Option oder die Schaltfläche.|  EINGABETASTE|
 |Abbrechen eines Befehls oder Schließen einer ausgewählten Liste oder eines ausgewählten Dialog Felds| ESC-TASTE|
 |Sicher| STRG + S |
-|Speichern und schließen| N/V|
+|Speichern und schließen| nicht zutreffend|
 |Bearbeitung abbrechen und schließen (schließen) |ESC-TASTE|
-|Löschen des Datensatzes (wenn sich Formulare im Bearbeitungsmodus befinden)| N/V|
-|Speichern und anschließendes Öffnen eines neuen Formulars (speichern und neu) (wenn sich Formulare im Bearbeitungsmodus befinden)| N/V|
+|Löschen des Datensatzes (wenn sich Formulare im Bearbeitungsmodus befinden)| nicht zutreffend|
+|Speichern und anschließendes Öffnen eines neuen Formulars (speichern und neu) (wenn sich Formulare im Bearbeitungsmodus befinden)| nicht zutreffend|
 |Öffnen Sie das Nachschlage Menü mit den zuletzt verwendeten Elementen in alphabetischer Reihenfolge.| Pfeil nach unten|
 |Dropdown Liste für Suche öffnen| EINGABETASTE|
 |Schließen der Dropdown Liste "Suche"|ESC-TASTE|
 |Öffnet einen Datensatz, der in der Suche mit Formularen im Bearbeitungsmodus gefunden wurde.| EINGABETASTE|
-|Hinzufügen eines Artikels zu einer e-Mail| N/V|
-|E-Mail-Vorlage anwenden (beim Bearbeiten einer e-Mail-Nachricht)| N/V|
+|Hinzufügen eines Artikels zu einer e-Mail| nicht zutreffend|
+|E-Mail-Vorlage anwenden (beim Bearbeiten einer e-Mail-Nachricht)| nicht zutreffend|
 
 ## <a name="form-navigation-shortcuts"></a>Formular Navigations Verknüpfungen
 
-|Aufgabe | Einheitliche Oberfläche |
+|Task | Einheitliche Oberfläche |
 |---------|---------|
 |Wechseln Sie zur nächsten Option, Optionsgruppe oder Feld.|Registerkarte|
 |Wechseln zur vorherigen Option, Optionsgruppe oder Feld| UMSCHALT + TAB |
 |Wechseln zwischen Optionen in einer geöffneten Liste oder zwischen Optionen in einer Gruppe von Optionen|Pfeiltasten|
-|Zur Befehlsleiste wechseln| N/V |
+|Zur Befehlsleiste wechseln| nicht zutreffend |
 |Zum Abschnitt "Landmark" einer Seite wechseln| STRG +\[ |
 
 
@@ -67,9 +67,9 @@ Tastenkombinationen bieten Ihnen eine alternative Möglichkeit, häufige Aufgabe
 ## <a name="editable-grids-views"></a>Bearbeitbare Raster (Sichten)
 Wenn Ihr Administrator editierbare Raster (Ansichten) aktiviert hat, können Sie Daten direkt in einem Raster (Ansicht) bearbeiten. In der folgenden Tabelle sind die Tastenkombinationen aufgeführt:
 
-|Aufgabe  | Einheitliche Oberfläche|
+|Task  | Einheitliche Oberfläche|
 |---------|---------|
-|Wenn sich der Fokus auf einem Spaltenheader befindet, Sortieren Sie nach Spalte. | Eingabetaste |
+|Wenn sich der Fokus auf einem Spaltenheader befindet, Sortieren Sie nach Spalte. | EINGABETASTE |
 |Wenn sich der Fokus auf einem Spaltenheader befindet, öffnen Sie das Dialogfeld "Filter" | LEERTASTE|
 |Wenn sich der Fokus auf den Zellen befindet, wechseln Sie zum nächsten Feld. |  Taste mit dem Pfeil nach rechts (→)  | 
 |Wenn sich der Fokus auf den Zellen befindet, wechseln Sie zum vorherigen Feld.   |  Taste für nach-links-Taste|
@@ -77,7 +77,7 @@ Wenn Ihr Administrator editierbare Raster (Ansichten) aktiviert hat, können Sie
 |Wenn sich der Fokus auf der Spalten Kopfzeile befindet, wechseln Sie zur vorherigen Spaltenüberschrift.  |  UMSCHALT + TAB |
 |In die Zelle oben verschieben | Taste mit dem Pfeil nach oben |
 |In die Zelle unten verschieben|  Pfeil nach unten (↓) **oder** EINGABETASTE, wenn sich die Zelle nicht im Bearbeitungsmodus befindet |
-|Wechseln Sie in den Bearbeitungsmodus für Text-, Zahlen-und einfache Felder, wenn sich der Fokus auf einem Feld befindet.  |  Geben Sie den Wert direkt ein, um den vorhandenen Wert **oder** die Leertaste zu überschreiben, um den vorhandenen Wert **oder F2 zu** ändern und den vorhandenen Wert auszuwählen.  |
+|Wechseln Sie in den Bearbeitungsmodus für Text-, Zahlen-und einfache Felder, wenn sich der Fokus auf einem Feld befindet.  |  Geben Sie den Wert direkt ein, um den vorhandenen Wert **oder** die Leertaste zu überschreiben, um den **vorhandenen Wert oder F2 zu** ändern und den vorhandenen Wert auszuwählen.  |
 |Wechseln Sie in den Bearbeitungsmodus für Datums-und Uhrzeit Felder.| Geben Sie den Wert direkt **oder** F4 oder alt + ↓ ein, um die Datums-/Uhrzeitauswahl anzuzeigen. |
 |Wechseln Sie in den Bearbeitungsmodus für Dropdown Felder (Suche, Options Satz).|Leertaste zum Öffnen der Liste|
 |Wechseln Sie in den Bearbeitungsmodus für zwei Options Felder.| Leertaste zum Wechseln zwischen den beiden Optionen **oder** F4 **bzw** . alt + ↓, um die Liste zu öffnen.|
@@ -95,7 +95,7 @@ Wenn Ihr Administrator editierbare Raster (Ansichten) aktiviert hat, können Sie
 ## <a name="interactive-dashboard-shortcuts"></a>Interaktive dashboardverknüpfungen
 Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortierung und schnelle Aktionen. 
 
-|Aufgabe             |Einheitliche Oberfläche  |
+|Task             |Einheitliche Oberfläche  |
 |---------|---------|
 |Dashboard-Element aktivieren (mit der linken Maustaste simulieren)| Eingabe **oder** Leertaste |
 |Zum nächsten Element wechseln  | Registerkarte | 
@@ -110,7 +110,7 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 
 ### <a name="global-filter-shortcuts"></a>Globale Filter Verknüpfungen
 
-|Aufgabe             |Einheitliche Oberfläche  |
+|Task             |Einheitliche Oberfläche  |
 |---------|---------|
 |Öffnen eines Menüs | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
 |Aktivieren einer Schaltfläche | Eingabe **oder** Leertaste |
@@ -120,14 +120,14 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 |Schließen eines Strukturansicht-Steuer Elements | Left-Pfeiltaste |
 |Zum nächsten Struktur Ansichts Knoten wechseln | Nach-oben-Taste (-Taste) |
 |Zum vorherigen Struktur Ansichts Knoten wechseln | Down (↓) Pfeiltaste |
-|Zum ersten Struktur Ansichts Knoten wechseln | Privat |
+|Zum ersten Struktur Ansichts Knoten wechseln | Traum |
 |Zum letzten Struktur Ansichts Knoten wechseln | Schließlich |
 |Ausführen der Standardaktion für den Struktur Ansichts Knoten | EINGABETASTE |
-|Entfernen eines Filters | Löschen |
+|Entfernen eines Filters | Lösch |
 
 ### <a name="dashboard-stream-control-shortcuts"></a>Dashboard
 
-|Aufgabe             |Einheitliche Oberfläche  |
+|Task             |Einheitliche Oberfläche  |
 |---------|---------|
 |Wechseln zum ersten Befehl in der Befehlsleiste des aktiven dashboardstreams | STRG + ALT + Q | 
 |Zum nächsten Element wechseln | Registerkarte |
@@ -136,7 +136,7 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 |Aktivieren Sie die Schaltfläche **nach Feld Sortieren** , und öffnen Sie Flyout. | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
 |Zum nächsten Element wechseln | Down (↓) Pfeiltaste |
 |Zum vorherigen Element wechseln | Nach-oben-Taste (-Taste) |
-|Zum ersten Element wechseln | Privat |
+|Zum ersten Element wechseln | Traum |
 |Zum letzten Element wechseln | Schließlich |
 |Zum nächsten Stream wechseln | STRG + F6 |
 |Zum vorherigen Stream verschieben | STRG + UMSCHALT + F6 |
@@ -147,12 +147,12 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 
 ### <a name="chart-shortcuts"></a>Diagramm Verknüpfungen
 
-|Aufgabe             |Einheitliche Oberfläche  |
+|Task             |Einheitliche Oberfläche  |
 |---------|---------|
 |Wechseln zum ersten Element in einem Diagramm | Registerkarte |
 |Zum nächsten Datenpunkt wechseln | Right (→) Pfeiltaste **oder** nach unten (↓) Pfeiltaste|
 |Zum vorherigen Datenpunkt verschieben | Left-Pfeiltaste **oder** nach-oben-Taste (-Taste)|
-|Zum ersten Datenpunkt verschieben | Privat |
+|Zum ersten Datenpunkt verschieben | Traum |
 |Zum letzten Datenpunkt wechseln | Schließlich |
 |Wechseln zur Schaltfläche " **Weitere** anzeigen" in einem tagdiagramm | Registerkarte |
 |Wechseln von der Schaltfläche " **Weitere** anzeigen" zu den Tags in einem tagdiagramm | UMSCHALT + TAB |
@@ -160,13 +160,13 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 
 ### <a name="date-time-control-shortcuts"></a>Zeit Steuerungs Verknüpfungen für Datum/Uhrzeit
 
-|Aufgabe             |Einheitliche Oberfläche  |
+|Task             |Einheitliche Oberfläche  |
 |---------|---------|
 |Öffnen Sie das Flyout für die Datumsauswahl. | EINGABETASTE **oder** Leertaste **oder** nach unten (↓) Pfeiltaste |
 |Aktivieren Sie die Option, und schließen Sie das Flyout. | Eingabe **oder** Leertaste |
 |Zum nächsten Element wechseln | Down (↓) Pfeiltaste |
 |Zum vorherigen Element wechseln | Nach-oben-Taste (-Taste) |
-|Zum ersten Element wechseln | Privat |
+|Zum ersten Element wechseln | Traum |
 |Zum letzten Element wechseln | Schließlich |
 |Schließen Sie das Flyout für die Datumsauswahl. | Weg |
 |Zum nächsten Element wechseln | Registerkarte |
@@ -176,7 +176,7 @@ Interaktive Dashboards ermöglichen neue Funktionen, wie z. b. Filterung, Sortie
 
 ### <a name="search-results-shortcuts"></a>Suchergebnis Verknüpfungen
 
-|Aufgabe             |Einheitliche Oberfläche  |
+|Task             |Einheitliche Oberfläche  |
 |---------|---------|
 |Zum nächsten Suchergebnis wechseln | Nach-oben-Taste (-Taste) |
 |Zum vorherigen Suchergebnis wechseln | Down (↓) Pfeiltaste |
@@ -203,6 +203,6 @@ Wenn Sie in einem Datensatz sind – z. b. ein Lead – werden in diesem Abschni
   > [!NOTE]
   > Der Prozess Name ist ein Symbol am unteren Rand der Seite, nicht am oberen Rand.
 
-- **Tastenkombinationen in Windows**: Wenn Sie das Windows-Betriebssystem verwenden, wählen Sie den folgenden Link aus, und wählen Sie die Versionsnummer in der Dropdown Liste aus. Sie können alle Tastenkombinationen anzeigen, die für eine Windows-Umgebung gelten. Siehe [Windows-Tastenkombinationen](https://support.microsoft.com/en-us/help/12445/windows-keyboard-shortcuts). 
-- **Tastenkombinationen im Mac**: Wenn Sie ein Mac-Betriebssystem verwenden, klicken Sie auf den folgenden Link, um alle Verknüpfungen anzuzeigen, die für eine Mac-Umgebung gelten. Siehe [Mac-Tastenkombinationen](https://support.apple.com/en-us/HT201236).
+- **Tastenkombinationen in Windows**: Wenn Sie das Windows-Betriebssystem verwenden, wählen Sie den folgenden Link aus, und wählen Sie die Versionsnummer in der Dropdown Liste aus. Sie können alle Tastenkombinationen anzeigen, die für eine Windows-Umgebung gelten. Siehe [Windows-Tastenkombinationen](https://support.microsoft.com/help/12445/windows-keyboard-shortcuts). 
+- **Tastenkombinationen in Mac**: Wenn Sie ein Mac-Betriebssystem verwenden, klicken Sie auf den folgenden Link, um alle Verknüpfungen anzuzeigen, die für eine Mac-Umgebung gelten. Siehe [Mac-Tastenkombinationen](https://support.apple.com/HT201236).
 

@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 10/31/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,16 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5a14662d25a7c2dda79f2399b863b959f9f70cc5
-ms.sourcegitcommit: 79ac9decef3d5aab40fbf3bc95f8f4ba03f9b3df
+ms.openlocfilehash: c0811645429c9f1e7570ceeaf316a5217e440ae4
+ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "72959322"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73609883"
 ---
 # <a name="merge-duplicate-records"></a>Zusammenführen doppelter Datensätze 
 
-Doppelte Datensätze können in Ihre Daten importiert werden, wenn Sie oder andere Daten manuell eingeben oder Datenmassen importieren. Mit Common Data Service können Sie mögliche Duplikate adressieren, indem Sie eine Duplikaterkennung für Konten und Kontakte bereitstellen. Ihr Administrator kann auch doppelte Erkennungsregeln für andere Situationen einrichten.  
+Doppelte Datensätze können in Ihre Daten importiert werden, wenn Sie oder andere Daten manuell eingeben oder Datenmassen importieren. Mit Common Data Service können Sie mögliche Duplikate adressieren, indem Sie eine Duplikaterkennung für aktive Datensätze wie Konten und Kontakte bereitstellen. Wenn Sie einen Datensatz zusammenführen, werden alle zugehörigen oder untergeordneten Datensätze ebenfalls zusammengeführt. Ihr Administrator kann auch doppelte Erkennungsregeln für andere Situationen einrichten.  
   
 Angenommen, Sie geben einen Kontaktdaten Satz, Jim Glynn, und eine Mobiltelefonnummer ein.  Die Regel für die doppelte Erkennung ermittelt, dass Sie bereits über einen ähnlichen Datensatz verfügen, und zeigt dieses Dialogfeld an.  
   

@@ -15,17 +15,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f951167f56ffd3d211182a89a21d54916ee6b6e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 729d852227b31a6a162fdf94644d1e08c1a401ee
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61531902"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543433"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Ausführen einer Canvas-App auf einem mobilen Gerät
 Wenn Sie eine App erstellen oder jemand eine App für Sie freigibt, können Sie diese App unter Windows, iOS, Android oder in einem Webbrowser ausführen. In diesem Thema erfahren Sie, wie Sie eine Canvas-App auf einem mobilen Gerät ausführen können. Apps, die auf mobilen Geräten ausgeführt werden, können auch die Funktionen des Geräts nutzen, z.B. Ortungsdienste und die Kamera.
 
-Wenn Sie noch nicht für PowerApps angemeldet sind, [melden Sie sich kostenlos an](https://web.powerapps.com/signup?redirect=marketing&email=), bevor Sie mit diesem Verfahren beginnen, und laden Sie dann PowerApps aus dem [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder über [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) auf ein iPhone, iPad oder Android-Gerät mit einem [unterstützten Betriebssystem](../maker/canvas-apps/limits-and-config.md) herunter. Überprüfen Sie außerdem, ob Sie Zugriff auf eine Canvas-App haben, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
+Wenn Sie noch nicht für PowerApps angemeldet sind, [melden Sie sich kostenlos an](https://make.powerapps.com/signup?redirect=marketing&email=), bevor Sie mit diesem Verfahren beginnen, und laden Sie dann PowerApps aus dem [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) oder über [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) auf ein iPhone, iPad oder Android-Gerät mit einem [unterstützten Betriebssystem](../maker/canvas-apps/limits-and-config.md) herunter. Überprüfen Sie außerdem, ob Sie Zugriff auf eine Canvas-App haben, die Sie erstellt haben oder die eine andere Person erstellt und für Sie freigegeben hat.
 
 ## <a name="open-powerapps-and-sign-in"></a>Öffnen von PowerApps und Anmelden
 Öffnen Sie PowerApps auf Ihrem mobilen Gerät, und melden Sie sich mit Ihren Azure Active Directory-Anmeldeinformationen an.
@@ -41,13 +41,13 @@ Wenn auf Ihrem mobilen Gerät die Microsoft Authenticator-App installiert ist, m
 
 Die folgenden Filter sind verfügbar:
 
-* **Alle apps**: Zeigt alle apps an, auf die Sie Zugriff haben, einschließlich von Ihnen erstellte apps und apps, die andere für Sie freigegeben haben.
+* **Alle Apps:** Es werden alle Apps angezeigt, auf die Sie Zugriff haben, einschließlich von Ihnen erstellte Apps und Apps, die andere für Sie freigegeben haben.
 
-* **Meine apps**: Zeigt apps an, die Sie mindestens einmal ausgeführt haben.
+* **Meine Apps:** Es werden alle Apps angezeigt, die Sie mindestens einmal ausgeführt haben.
 
-* **Beispiel-apps**: Zeigt Beispiel-apps von Microsoft an, die echte Anwendungsszenarien mit fiktiven Daten veranschaulichen, damit Sie die Entwurfs Möglichkeiten erkunden können.
+* **Beispiel-Apps:** Es werden Beispiel-Apps angezeigt, die von Microsoft bereitgestellt wurden, um echte Anwendungsszenarios mit fiktiven Daten vorzustellen und Sie beim Entdecken von Entwurfsmöglichkeiten zu unterstützen.
 
-* **Favoriten**: Zeigt apps an, die Sie durch Tippen auf die Auslassungs Punkte (...) auf der APP-Kachel markiert haben, und tippen Sie dann auf **Favorit**. Wenn Sie eine App aus der Liste entfernen möchten, tippen Sie erst auf die Auslassungspunkte (...) auf der App-Kachel und anschließend auf **Aus Favoriten entfernen**.
+* **Favoriten:** Zeigt alle Apps an, die Sie durch Tippen auf die Auslassungspunkte (...) und dann auf **Als Favorit markieren** markiert haben. Wenn Sie eine App aus der Liste entfernen möchten, tippen Sie erst auf die Auslassungspunkte (...) auf der App-Kachel und anschließend auf **Aus Favoriten entfernen**.
 
     ![Als Favorit markieren](./media/run-app-client/favorite.png)
 
@@ -57,7 +57,7 @@ Nachdem Sie Ihre Apps gefiltert haben, können Sie die gefilterte Liste entweder
 
 Wenn Sie den Namen der App kennen, die Sie ausführen möchten, können Sie erst im oberen Bereich von PowerApps auf das Suchsymbol tippen und anschließend den Anfang des App-Namens in das Suchfeld eingeben.
 
-![Suchen](./media/run-app-client/search.png)
+![Search](./media/run-app-client/search.png)
 
 Wenn Sie Ihre Apps gefiltert haben, wird die gefilterte Liste durchsucht.
 
@@ -69,9 +69,9 @@ Wenn Sie PowerApps zum ersten Mal verwenden, veranschaulicht eine Anzeige die Wi
 ![Starten einer App](./media/run-app-client/run-client-app.png)
 
 ## <a name="give-consent"></a>Erteilen der Zustimmung
-Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal dazu aufgefordert.
+Wenn eine App eine Verbindung mit einer Datenquelle oder die Berechtigung zur Nutzung von Funktionen des Geräts (z.B. Kamera oder Ortungsdienste) erfordert, müssen Sie Ihre Zustimmung erteilen, bevor Sie die App verwenden können. Normalerweise werden Sie nur beim ersten Mal aufgefordert.
 
-![Verbindung](./media/run-app-client/app-connection.png)
+![Connection](./media/run-app-client/app-connection.png)
 
 ## <a name="pin-an-app-to-the-home-screen"></a>Anheften einer App an den Startbildschirm
 Sie können eine App an den Startbildschirm Ihres Geräts anheften, um schneller darauf zugreifen zu können. Tippen Sie erst auf der App-Kachel auf die Auslassungspunkte (...), dann auf **An Startseite anheften**, und folgen Sie den Anweisungen, die daraufhin angezeigt werden.
