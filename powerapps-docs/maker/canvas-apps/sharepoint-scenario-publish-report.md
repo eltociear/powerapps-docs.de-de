@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4bb09a9aefd3db1981727642d766f308ad9d0ede
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319344"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900302"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Veröffentlichen des Power BI-Projektberichts und Erstellen eines Dashboards
 > [!NOTE]
-> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von PowerApps, Microsoft Flow und Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
+> Dieser Artikel ist Teil einer Reihe von Tutorials zur Verwendung von powerapps, der Energie Automatisierung und der Power BI mit SharePoint Online. Lesen Sie unbedingt die [Einführung zur Reihe](sharepoint-scenario-intro.md) durch, um sich einen allgemeinen Überblick zu verschaffen und auf die zugehörigen Downloads zuzugreifen.
 
 In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI-Dienst. Anschließend wird auf der Grundlage des Berichts ein Dashboard erstellt. Ein Bericht enthält häufig eine große Anzahl von Visualisierungen, und im Dashboard wird lediglich eine Teilmenge davon verwendet. In diesem Fall werden dem Dashboard alle vier Visualisierungen hinzugefügt.
 
-## <a name="step-1-publish-the-dataset-and-report"></a>Schritt 1: Veröffentlichen Sie das Dataset und den Bericht
+## <a name="step-1-publish-the-dataset-and-report"></a>Schritt 1: Veröffentlichen des Datasets und des Berichts
 1. Klicken oder tippen Sie in Power BI Desktop auf der Registerkarte **Start** auf **Veröffentlichen**.
    
     ![Veröffentlichen des Datasets und des Berichts](./media/sharepoint-scenario-publish-report/06-01-01-publish.png)
@@ -42,11 +42,11 @@ In dieser Aufgabe veröffentlichen wir unser Dataset und den Bericht im Power BI
 5. Klicken oder tippen Sie nach abgeschlossener Veröffentlichung auf **„project-analysis.pbx“ in Power BI öffnen**.
    
     ![Erfolgreiche Veröffentlichung](./media/sharepoint-scenario-publish-report/06-01-05-open-report.png)
-6. Der Power BI-Dienst lädt den Bericht in einem Browser. Wenn der linke Navigationsbereich nicht angezeigt wird, klicken oder tippen Sie auf das Menü oben links **(a)**, um ihn einzublenden.
+6. Der Power BI-Dienst lädt den Bericht in einem Browser. Wenn der linke Navigationsbereich nicht angezeigt wird, klicken oder tippen Sie auf das Menü oben links **(a)** , um ihn einzublenden.
    
     ![Bericht im Power BI-Dienst](./media/sharepoint-scenario-publish-report/06-01-06-service-report.png)
    
-    Sie stellen fest, dass von Power BI Desktop beim Veröffentlichen ein Dataset **(d)** und einen Bericht **(c)** hochgeladen wurde. Sie erstellen Dashboards im Dienst, nicht Power BI Desktop, und in diesem Arbeitsbereich sind noch keine Dashboards vorhanden **(b)**. Wir werden in Kürze eines erstellen.
+    Sie stellen fest, dass von Power BI Desktop beim Veröffentlichen ein Dataset **(d)** und einen Bericht **(c)** hochgeladen wurde. Sie erstellen Dashboards im Dienst, nicht Power BI Desktop, und in diesem Arbeitsbereich sind noch keine Dashboards vorhanden **(b)** . Wir werden in Kürze eines erstellen.
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>Schritt 2: Konfigurieren von Anmeldeinformationen für die Aktualisierung
 1. Klicken oder tippen Sie im Dienst in der rechten oberen Ecke auf das ![Zahnradsymbol](./media/sharepoint-scenario-publish-report/icon-gear.png), und klicken oder tippen Sie anschließend auf **Einstellungen**.

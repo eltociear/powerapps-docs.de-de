@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 206a28c15b4bb23d46acb0a707bda5072a43cced
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7beb08afe2e7a6fa68f5017ff70f95f5dcee75f8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540150"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899827"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>Benutzerdefinierte Connectors für Canvas-Apps
 
-Mit [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) und [PowerApps](https://powerapps.microsoft.com) können Sie Workflows und Canvas-Apps erstellen – ganz ohne Code zu schreiben. Zur Vereinfachung der Integration von Daten und Geschäftsprozessen unterstützen diese Dienste [mehr als 180 Connectors](https://docs.microsoft.com/connectors/) für Microsoft-Dienste und -Produkte sowie für andere Dienste wie GitHub, Salesforce und Twitter.
+Ohne den Code zu [schreiben, können](https://flow.microsoft.com)Sie Workflows und Canvas-apps mit [Azure Logic apps](https://azure.microsoft.com/services/logic-apps), [powerapps und powerapps](https://powerapps.microsoft.com)erstellen. Zur Vereinfachung der Integration von Daten und Geschäftsprozessen unterstützen diese Dienste [mehr als 180 Connectors](https://docs.microsoft.com/connectors/) für Microsoft-Dienste und -Produkte sowie für andere Dienste wie GitHub, Salesforce und Twitter.
 
 In bestimmten Fällen müssen Sie jedoch APIs, Dienste und Systeme aufrufen, für die es keine vorgefertigten Connectors gibt. Für die Unterstützung maßgeschneiderter Szenarios können Sie *benutzerdefinierte Connectors* mit eigenen Triggern und Aktionen erstellen. Auf der Dokumentationswebsite zu Connectors finden Sie eine umfassende Sammlung von Tutorials zu Connectors für Einsteiger und Fortgeschrittene. Es wird empfohlen, mit der [Übersicht über benutzerdefinierte Connectors](https://docs.microsoft.com/connectors/custom-connectors/) zu beginnen, sie können jedoch auch direkt eines der folgenden Themen zu einem bestimmten Bereich auswählen:
 

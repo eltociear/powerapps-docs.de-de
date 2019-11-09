@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a5b9ddb2006a53796f782db3c620fa592f2a5aed
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 505ddf8bee3108b91ef8e4ca4683ce5fe44172e8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994868"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899272"
 ---
 # <a name="transform-your-infopath-form-to-powerapps"></a>Transformieren des InfoPath-Formulars in ein PowerApps-Formular
 
@@ -41,7 +40,7 @@ Haben Sie schon mal versucht, eine App zu erstellen und sie dann für iOS- oder 
 Mit PowerApps können Sie die Leistungsfähigkeit der mobilen Geräte der Benutzer für sich nutzen. Über Ihre App haben Sie Zugriff auf die Beschleunigung, die Kamera, den Kompass, die Verbindungsinformationen und die Positionssignale. Bei der Erstellung von Apps eröffnet ihnen dies eine ganze Welt von Möglichkeiten. Und auch die Touchfunktionalität läuft in PowerApps ganz automatisch, d.h. Sie müssen bei der App-Erstellung nichts zusätzlich programmieren.
 
 **Vorkonfigurierte Features**  
-Mit InfoPath arbeiten Sie in der Regel mit Daten aus einer einzigen Quelle. Schwierig wurde es allerdings, wenn Sie eine andere Quelle (z.B. eine SharePoint-Liste in einer anderen Websitesammlung) aktualisieren oder eine Verbindung mit externen Diensten herstellen wollten. Konzepte wie „CodeBehind“ haben Ihnen den Schlaf geraubt. PowerApps ist so konzipiert, dass Sie mit mehreren Datenquellen und Dienstverbindungen in einer App arbeiten können. Derzeit unterstützen [mehr als 200 Connectors](connections-list.md#all-standard-connectors) eine Kombination aus lokalen und cloudbasierten Daten, z.B. Microsoft Office 365- und Azure-Dienste wie Microsoft Flow und Dynamics 365. Sie können auch Verbindungen mit einer Vielzahl von Drittanbieterdiensten herstellen, beispielsweise Dropbox, Google, Salesforce, Slack sowie weiteren gängigen Zielen.
+Mit InfoPath arbeiten Sie in der Regel mit Daten aus einer einzigen Quelle. Schwierig wurde es allerdings, wenn Sie eine andere Quelle (z.B. eine SharePoint-Liste in einer anderen Websitesammlung) aktualisieren oder eine Verbindung mit externen Diensten herstellen wollten. Konzepte wie „CodeBehind“ haben Ihnen den Schlaf geraubt. PowerApps ist so konzipiert, dass Sie mit mehreren Datenquellen und Dienstverbindungen in einer App arbeiten können. Derzeit unterstützen [mehr als 200 Connectors](connections-list.md#all-standard-connectors) eine Kombination aus lokalen und clouddaten, einschließlich Microsoft Office 365 und Azure-Diensten wie z. b. Strom Automatisierung und Dynamics 365. Sie können auch Verbindungen mit einer Vielzahl von Drittanbieterdiensten herstellen, beispielsweise Dropbox, Google, Salesforce, Slack sowie weiteren gängigen Zielen.
 
 Jetzt können Sie Lösungen entwickeln, die sich an Benutzeranforderungen anpassen lassen und nicht von dem Speicherort der ursprünglichen Daten abhängen.
 
@@ -63,7 +62,7 @@ Mit PowerApps können Sie nun Ihre Listenformulare als native Funktionalität an
 
 ![SharePoint-Integration](./media/transform-infopath/sharepoint-integration.png)
 
-Ein weiteres wichtiges Feature von PowerApps ist die Möglichkeit, eine Verbindung zu einer anderen SharePoint-Websitesammlung oder einer anderen Umgebung aus dem gleichen Formular herzustellen. Möchten Sie beispielsweise ein Formular erstellen, das Daten aus Ihrer SharePoint Online-Umgebung und lokalen SharePoint-Umgebung gleichzeitig anzeigt und aktualisiert? Kein Problem. Installieren Sie das [lokale Datengateway](gateway-management.md), und innerhalb weniger Minuten können Sie PowerApps, Power BI, Microsoft Flow und Azure Logic Apps mit Ihren lokalen Daten verbinden. Es sind keine Änderungen an Firewallregeln erforderlich. Sie können sogar noch einen Schritt weitergehen, in dem Sie diese App mit Microsoft Flow verbinden.
+Ein weiteres wichtiges Feature von PowerApps ist die Möglichkeit, eine Verbindung zu einer anderen SharePoint-Websitesammlung oder einer anderen Umgebung aus dem gleichen Formular herzustellen. Möchten Sie beispielsweise ein Formular erstellen, das Daten aus Ihrer SharePoint Online-Umgebung und lokalen SharePoint-Umgebung gleichzeitig anzeigt und aktualisiert? Kein Problem. Wenn Sie das [lokale Daten Gateway](gateway-management.md)installieren, werden Sie innerhalb weniger Minuten ausgeführt, sodass Sie powerapps, Power BI, Energie automatisiert und Azure Logic apps mit Ihren lokalen Daten verbinden können. Es sind keine Änderungen an Firewallregeln erforderlich. Sie können einen Schritt weiter gehen, indem Sie diese APP mit der Energie Automatisierung verbinden.
 
 ## <a name="a-standalone-sharepoint-app"></a>Eine eigenständige SharePoint-App
 
@@ -94,29 +93,29 @@ Scrollen Sie im rechten Bereich zu der **Display Mode** -Eigenschaft, damit Sie 
 
 In diesem Beispiel verwenden Sie eine **If**-Formel:
 
-```If(ThisItem.Color = "Blue"; DisplayMode.View; DisplayMode.Edit)```
+```If(ThisItem.Color = "Blue", DisplayMode.View, DisplayMode.Edit)```
 
 Diese Formel besagt Folgendes: Wenn das **Color**-Feld des aktuellen Elements auf **Blue** festgelegt ist, ist das **Animal**-Feld schreibgeschützt. Andernfalls kann das Feld bearbeitet werden.
 
 Um die Karte auszublenden, anstatt sie als schreibgeschützt festzulegen, fügen Sie eine ähnliche Funktion in die **Visible**-Eigenschaft direkt oberhalb von **DisplayMode** ein.
 
-Sie können beispielsweise auch eine Genehmigungsschaltfläche verwenden, die nur angezeigt wird, wenn die E-Mail-Adresse des Benutzers der E-Mail-Adresse der genehmigenden Person entspricht. Deuteten Verwenden Sie den **Benutzer (). E-Mail** für den Zugriff auf die e-Mail-Adresse des aktuellen Benutzers.) Sie können also die E-Mail-Adresse der genehmigenden Person in **YourDataCard** speichern und dann die **Visible**-Eigenschaft der Schaltfläche auf diese Formel festlegen:
+Sie können beispielsweise auch eine Genehmigungsschaltfläche verwenden, die nur angezeigt wird, wenn die E-Mail-Adresse des Benutzers der E-Mail-Adresse der genehmigenden Person entspricht. (Hinweis: Verwenden Sie den **Benutzer (). E-Mail** für den Zugriff auf die e-Mail-Adresse des aktuellen Benutzers.) Daher können Sie die e-Mail-Adresse der genehmigende Person in **yourdatacard** speichern und dann die **Visible** -Eigenschaft der Schaltfläche auf diese Formel festlegen:
 
-```If( YourDataCard.Text = User().Email; true; false )```
+```If( YourDataCard.Text = User().Email, true, false )```
 
 **Bedingte Formatierung**  
 In ähnlicher Weise wie oben, wo Sie das Feld ausgeblendet haben, können Sie den Benutzern auch visuelles Feedback geben. Möglicherweise möchten Sie Text in Rot markieren, wenn der eingegebene Wert außerhalb des zulässigen Bereichs liegt, oder den Text und die Farbe der Uploadschaltfläche ändern, nachdem der Benutzer eine Datei hochgeladen hat. Beides können Sie in Eigenschaften wie **Color** oder **Visible** mithilfe einer Funktion umsetzen, z.B. **If**.
 
 Sie könnten z.B. die **If**-Funktion zusammen mit der [IsMatch](functions/function-ismatch.md)-Funktion verwenden, um die Textfarbe des E-Mail-Felds in Rot zu ändern, wenn der Benutzer keine korrekt formatierte E-Mail-Adresse in das Eingabefeld eingibt. In diesem Fall legen Sie den **Color**-Wert von **TextInput1** (das Feld, in dem der Benutzer eine E-Mail-Adresse eingibt) auf die folgende Formel fest:
 
-```If( IsMatch(TextInput1.Text; Email); Black; Red )```
+```If( IsMatch(TextInput1.Text, Email), Black, Red )```
 
 **IsMatch** bietet eine Vielzahl von vordefinierten Mustern (wie E-Mail-Adressen) und die Möglichkeit, eigene Muster zu erstellen. Weitere Informationen zur bedingten Formatierung finden Sie in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Conditional-Formatting-and-Popups/m-p/84962).
 
 **Implementieren der rollenbasierten Sicherheit**  
 Die erste Funktion, die Sie ins Auge fassen sollten, lautet [DataSourceInfo](functions/function-datasourceinfo.md). Die Informationen, die Sie von der Datenquelle erhalten, variieren, aber häufig können Sie diese Formel verwenden, um zu prüfen, ob der Benutzer Zugriff auf die Daten hat (ersetzen Sie *YourDataSource* durch den Namen Ihrer Datenquelle):
 
-```DataSourceInfo( YourDataSource; DataSourceInfo.EditPermission )```
+```DataSourceInfo( YourDataSource, DataSourceInfo.EditPermission )```
 
 So können Sie ein Formular oder eine Schaltfläche nur dann einblenden, wenn der Benutzer über Schreibzugriff verfügt. Die vollständige Liste der Informationen, die Sie in der Funktion abfragen können, finden Sie in der Dokumentation zu [DataSourceInfo](functions/function-datasourceinfo.md).
 
@@ -125,21 +124,21 @@ Wenn Sie Active Directory-Gruppen verwenden möchten, um den Zugriff auf Schaltf
 **Senden einer E-Mail aus Ihrer App**  
 Sie können auf unterschiedliche Weise E-Mail-Nachrichten aus PowerApps senden. Der einfachste Weg ist der Office 365 Outlook-Connector. Mit diesem Connector können Sie eine Nachricht von Ihrer Adresse aus Ihrer App heraus versenden. Sie können auch E-Mail-Nachrichten und andere Aufgaben erhalten, die mit Ihrem Postfach interagieren. Informationen zum Senden von E-Mails finden Sie in dieser [Dokumentation](connections/connection-office365-outlook.md) und in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/Send-an-email-from-PowerApps/m-p/74349).
 
-Sie können komplexere Nachrichten (z.B. im Rahmen eines SharePoint-Genehmigungsworkflows) senden, indem Sie Microsoft Flow verwenden und Ihre App mit dem Flow verbinden, den Sie erstellen. Sobald Ihre App mit Microsoft Flow verbunden ist, können Sie die umfassende Leistung einer Workflow-Engine nutzen, die – wie PowerApps – über sehr gute Verbindungen zu externen Daten und Diensten verfügt. Weitere Informationen zur Verbindung zwischen PowerApps und Microsoft Flow finden Sie in dieser [Dokumentation](using-logic-flows.md).
+Sie können komplexere Nachrichten (z. b. als Teil eines SharePoint-Genehmigungs Workflows) senden, indem Sie die Strom Automatisierung verwenden und eine Verbindung zwischen Ihrer APP und dem von Ihnen erstellten Flow herstellen. Nachdem Sie Ihre APP mit der Energie Automatisierung verbunden haben, haben Sie die volle Leistungsfähigkeit eines Workflow Moduls geöffnet, das wie powerapps sehr gut mit externen Daten und Diensten verbunden ist. Weitere Informationen zum Verbinden von powerapps und der Energie Automatisierung finden Sie in dieser [Dokumentation](using-logic-flows.md).
 
 Wenn Sie die gesuchte E-Mail-Option noch nicht gefunden haben, können Sie auch die PowerApps-Connectors für Benchmark Email, Gmail, MailChimp, Outlook.com, SendGrid oder SMTP nutzen. Das ist das Schöne an PowerApps: Konnektivität.
 
 **Workflows**  
-Es ist schwer, über Geschäftsanwendungen und Geschäftslogik zu sprechen, ohne eine Workflow-Engine zu erwähnen. Die gute Nachricht ist, dass das PowerApps-Team das Rad nicht neu erfunden hat, um Ihnen noch eine Workflowengine zur Verfügung zu stellen. Stattdessen wird Ihnen ein stabiler Connector zum Microsoft Flow-Dienst geboten. Sie können Prozesse und Aufgaben für mehr als [200 verschiedene Dienste](https://flow.microsoft.com/connectors/) automatisieren, indem Sie die benutzerfreundliche Workflow-Engine nutzen. Weitere Informationen zur Verbindung zwischen PowerApps und Microsoft Flow finden Sie in dieser [Dokumentation](using-logic-flows.md).
+Es ist schwer, über Geschäftsanwendungen und Geschäftslogik zu sprechen, ohne eine Workflow-Engine zu erwähnen. Die gute Nachricht ist, dass das PowerApps-Team das Rad nicht neu erfunden hat, um Ihnen noch eine Workflowengine zur Verfügung zu stellen. Stattdessen bieten Sie einen robusten Connector für den Energie automatisierten Dienst. Sie können Prozesse und Aufgaben für mehr als [200 verschiedene Dienste](https://flow.microsoft.com/connectors/) automatisieren, indem Sie die benutzerfreundliche Workflow-Engine nutzen. Weitere Informationen zum Verbinden von powerapps und der Energie Automatisierung finden Sie in dieser [Dokumentation](using-logic-flows.md).
 
 **Variablen mit PowerApps**  
 Beim Erstellen von Lösungen wird selbstverständlich davon ausgegangen, dass Variablen dazugehören. PowerApps bietet verschiedene Arten von Variablen. Nutzen Sie diese aber nur, wenn es wirklich notwendig ist. Anstatt darüber nachzudenken, Daten abzurufen, sie in einer Variablen zu speichern und dann auf die Variable zu verweisen, müssen Sie nur noch direkt auf diese Daten verweisen. Sie werden dieses Modell besser verstehen, wenn Sie es mit Excel vergleichen. In Excel ist die Summe keine Variable, sondern das Ergebnis der Addition anderer Felder. Wenn Sie diesen Wert also an anderer Stelle auf dem Blatt verwenden möchten, geben Sie die Zelle an, in der Sie die Summe berechnet haben. In der [Dokumentation](working-with-variables.md) finden Sie hierzu eine gute Erklärung. Seien Sie offen für einen anderen Denkprozess.
 
-Wenn Sie dennoch Variablen benötigen (was in vielen Fällen vorkommt), erfahren Sie nun, welche unterschiedlichen Möglichkeiten Sie haben. Denken Sie daran, dass Sie mit PowerApps keine Variablen definieren müssen. Verwenden Sie einfach eine Funktion, um einen Namen und einen zu speichernden Wert festzulegen, und Ihre Variable wird erstellt. Sie können die von Ihnen erstellten Variablen anzeigen, indem Sie auf der Registerkarte **Ansicht** die Option **Variablen** auswählen. Variablen befinden sich im Arbeitsspeicher, und ihre Werte gehen beim Schließen der App verloren. Sie können folgende Arten von Variablen erstellen:
+Wenn Sie dennoch Variablen benötigen (was in vielen Fällen vorkommt), erfahren Sie nun, welche unterschiedlichen Möglichkeiten Sie haben. Denken Sie daran, dass Sie mit PowerApps keine Variablen definieren müssen. Verwenden Sie einfach eine Funktion, um einen Namen und einen zu speichernden Wert festzulegen, und Ihre Variable wird erstellt. Sie können die von Ihnen erstellten Variablen anzeigen, indem Sie auf der Registerkarte **Ansicht** die Option **Variablen** auswählen. Variablen werden im Arbeitsspeicher gespeichert, und ihre Werte gehen verloren, wenn Sie die APP schließen. Sie können folgende Arten von Variablen erstellen:
 
 - Globale Variablen sind das, woran Sie zuerst denken. Geben Sie mit der [Set](functions/function-set.md)-Funktion einen Wert für eine globale Variable an, und machen Sie den Wert in der gesamten App verfügbar:
 
-    ```Set( YourVariable; YourValue )```
+    ```Set( YourVariable, YourValue )```
 
     Dann können Sie in der gesamten App namentlich auf *YourVariable* verweisen.
 
@@ -158,13 +157,13 @@ Hierarchische Dropdownlisten sind sehr praktisch, da Sie z.B. die Auswahl in ein
 
 In diesem Beispiel können Sie eine Dropdownliste namens **ddSelectType** hinzufügen und die **Items**-Eigenschaft der Liste auf folgende Formel festlegen:
 
-```Distinct( Impacts; Title )```
+```Distinct( Impacts, Title )```
 
 Die Dropdownliste würde nur die folgenden Elemente anzeigen: Cost, Program Impact und Schedule. Dann können Sie eine zweite Dropdownliste hinzufügen und deren **Items**-Eigenschaft auf die folgende Formel festlegen:
 
-```Filter( Impacts; ddSelectType.Selected.Value in SCategory )```
+```Filter( Impacts, ddSelectType.Selected.Value in SCategory )```
 
-So einfach erhalten Sie überlappende Dropdownmenüs. Weitere Informationen finden Sie in diesem Beitrag im powerapps-Team [Share Point: Kaskadierende Dropdown Listen in 4 einfachen Schritten! ](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
+So einfach erhalten Sie überlappende Dropdownmenüs. Weitere Informationen finden Sie in diesem Beitrag des PowerApps-Teams [SharePoint: Cascading Dropdowns in 4 Easy Steps!](https://powerusers.microsoft.com/t5/PowerApps-Community-Blog/SharePoint-Cascading-Dropdowns-in-4-Easy-Steps/ba-p/16248) (SharePoint: Hierarchische Dropdownlisten in vier einfachen Schritten) oder in diesem [Communityvideo](https://powerusers.microsoft.com/t5/Video-Webinar-Gallery/PowerApps-Cascading-Dropdown/m-p/92813). Keine Sorge: Sie können diese Aufgaben genauso einfach ohne SharePoint ausführen.
 
 **Erstellen Sie keine einzelne Super-App**  
 Mit PowerApps können Sie eine App aus einer anderen App aufrufen. Anstatt also ein InfoPath-Massenformular zu erstellen, das praktisch nur mit Kaugummi zusammenhält, können Sie eine Gruppe von Apps erstellen, die sich gegenseitig aufrufen und sogar Daten weitergeben. Auf diese Weise wird die Entwicklung erheblich vereinfacht.

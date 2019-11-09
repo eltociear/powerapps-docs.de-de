@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4babe6356ab0be34b6b08a3d158462b58cbb0cd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 06dad46643a3de8b8727d890865c9b6f847a825f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541235"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899224"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Erste Anmeldung bei PowerApps
 
@@ -121,5 +121,5 @@ Mit den Optionen im Header und der linken Navigationsleiste können Sie nicht nu
 Erweitern Sie die Funktionalität Ihrer Apps, indem Sie folgende Aufgaben ausführen:
 
 - Verwalten von Entitäten, Options Sätzen und Datenintegration in [Common Data Service](../common-data-service/data-platform-intro.md).
-- Konfigurieren Sie Geschäftslogik in [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
+- Konfigurieren Sie die Geschäftslogik in der [Energie Automatisierung](https://docs.microsoft.com/flow/getting-started).
 - Erstellen, packen und verwalten Sie [Lösungen](../../developer/common-data-service/introduction-solutions.md).
