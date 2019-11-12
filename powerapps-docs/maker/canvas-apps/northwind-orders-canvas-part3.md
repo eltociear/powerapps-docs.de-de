@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/07/2019
 ms.locfileid: "73741378"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Erstellen einer Detail Galerie in einer Canvas-App
 
@@ -71,7 +72,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Items** -Eigenschaft der Detail Galerie auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.'Order Details'
     ```
 
@@ -103,7 +104,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.'Product Name'
     ```
 
@@ -141,7 +142,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Image** -Eigenschaft des Bilds auf diese Formel fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.Picture
     ```
 
@@ -161,7 +162,7 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diesen Ausdruck fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Quantity
     ```
 
@@ -179,8 +180,8 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-dot
-    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Wenn Sie das Sprachtag (**[$-en-US]**) nicht einschließen, wird es basierend auf Ihrer Sprache und Region für Sie hinzugefügt. Wenn Sie ein anderes Sprachtag verwenden, sollten Sie die **$** direkt hinter der schließenden eckigen Klammer (**]**) entfernen und dann Ihr eigenes Währungssymbol an dieser Position hinzufügen.
@@ -197,8 +198,8 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-dot
-    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Wenn Sie das Sprachtag (**[$-en-US]**) nicht einschließen, wird es auf Grundlage ihrer Sprache und Region für Sie hinzugefügt. Wenn das Tag anders ist, sollten Sie anstelle der **$** direkt nach der schließenden eckigen Klammer (**]**) Ihr eigenes Währungssymbol verwenden.
@@ -273,8 +274,8 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-dot
-    Sum( Gallery1.Selected.'Order Details', Quantity )
+    ```powerapps-comma
+    Sum( Gallery1.Selected.'Order Details'; Quantity )
     ```
 
     Diese Formel zeigt eine Delegierungs Warnung an, Sie können Sie jedoch ignorieren, da keine einzelne Bestellung mehr als 500 Produkte enthalten wird.
@@ -288,8 +289,8 @@ Bevor Sie mit diesem Thema beginnen, müssen Sie die-Datenbank wie zuvor in dies
 
 1. Legen Sie die **Text** -Eigenschaft der Kopie auf diese Formel fest:
 
-    ```powerapps-dot
-    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     Diese Formel zeigt eine Delegierungs Warnung an, Sie können Sie jedoch ignorieren, da keine einzelne Bestellung mehr als 500 Produkte enthalten wird.
@@ -381,7 +382,7 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Legen Sie für die **Image** -Eigenschaft des Bilds Folgendes fest:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ComboBox1.Selected.Picture
     ```
 
@@ -430,8 +431,8 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Ändern Sie die Größe, und verschieben Sie die Bezeichnung auf die Rechte Seite des Texteingabe-Steuer Elements, und legen Sie die **Text** -Eigenschaft der Bezeichnung auf diese Formel fest:
 
-    ```powerapps-dot
-    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -451,8 +452,8 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Legen Sie die **Text** -Eigenschaft der neuen Bezeichnung auf diese Formel fest:
 
-    ```powerapps-dot
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -481,18 +482,18 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Ändern Sie die Größe, und verschieben Sie dieses Symbol an den rechten Rand des hellblauen Bereichs, und legen Sie dann die **onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Patch( 'Order Details',
-        Defaults('Order Details'),
+    ```powerapps-comma
+    Patch( 'Order Details';
+        Defaults('Order Details');
         {
-            Order: Gallery1.Selected,
-            Product: ComboBox1.Selected,
-            Quantity: Value(TextInput1.Text),
+            Order: Gallery1.Selected;
+            Product: ComboBox1.Selected;
+            Quantity: Value(TextInput1.Text);
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );
-    Refresh( Orders );
-    Reset( ComboBox1 );
+    );;
+    Refresh( Orders );;
+    Reset( ComboBox1 );;
     Reset( TextInput1 )
     ```
 
@@ -545,8 +546,8 @@ In einem beliebigen Katalog können Sie Daten anzeigen, aber Sie können Sie nic
 
 1. Ändern Sie die Größe, und verschieben Sie das Papierkorb Symbol auf die Rechte Seite der Detail Galerie Vorlage, und legen **Sie die onselect** -Eigenschaft des Symbols auf die folgende Formel fest:
 
-    ```powerapps-dot
-    Remove( 'Order Details', ThisItem ); Refresh( Orders )
+    ```powerapps-comma
+    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -571,7 +572,7 @@ Zur Wiederholung haben Sie einen weiteren Katalog hinzugefügt, um Bestelldetail
 - Eine n:1-Beziehung zwischen der Entität " **Order Details** " und der Entität " **Order Products** ": `ThisItem.Product.'Product Name'` und `ThisItem.Product.Picture`
 - Die **Auswahl** Funktion, um eine Liste der Produkte zu erhalten: `Choices( 'Order Details'.Product' )`
 - Die **ausgewählte** Eigenschaft eines Kombinations Felds als kompletter n:1-Datensatz: `ComboBox1.Selected.Picture` und `ComboBox1.Selected.'List Price'`
-- Die **Patch** -Funktion zum Erstellen eines **Auftrags Details-Daten** Satzes: `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
-- Die **Remove** -Funktion zum Löschen eines **Order Details-Daten** Satzes: `Remove( 'Order Details', ThisItem )`
+- Die **Patch** -Funktion zum Erstellen eines **Auftrags Details-Daten** Satzes: `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
+- Die **Remove** -Funktion zum Löschen eines **Order Details-Daten** Satzes: `Remove( 'Order Details'; ThisItem )`
 
 Diese Themenreihe war eine kurze exemplarische Vorgehensweise zur Verwendung von Common Data Service Beziehungen und Options Sätzen in einer Canvas-APP zu Schulungszwecken. Bevor Sie eine APP für die Produktion freigeben, sollten Sie die Feld Validierung, die Fehlerbehandlung und viele andere Faktoren berücksichtigen.

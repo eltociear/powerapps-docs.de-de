@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73650749"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Steuerelement "Barcode-Scanner" (experimentell) in powerapps
 
@@ -66,7 +67,7 @@ Das Steuerelement zeigt den Kamera Feed in der APP an, sodass Benutzer Barcodes 
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73649891"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="text-input-control-in-powerapps"></a>Texteingabe-Steuerelement in PowerApps
 Ein Feld, in das der Benutzer Text, Zahlen und andere Daten eingeben kann
@@ -143,7 +144,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
    
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 2. Fügen Sie eine Schaltfläche hinzu, legen Sie ihre **[Text](properties-core.md)** -Eigenschaft auf **Add** (Hinzufügen) und ihre **[OnSelect](properties-core.md)** -Eigenschaft auf diese Formel fest:<br>
-   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
+   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
    
     Benötigen Sie weitere Informationen zur **[Collect](../functions/function-clear-collect-clearcollect.md)** -Funktion oder zu [anderen Funktionen](../formula-reference.md)?
 3. Fügen Sie einen Textkatalog im Hochformat hinzu, legen sie seine **[Items](properties-core.md)** -Eigenschaft auf **Names** und seine **[Text](properties-core.md)** -Eigenschaft von **Subtitle1** auf **ThisItem.FirstName** fest.
@@ -156,7 +157,7 @@ Der Benutzer kann Daten angeben, indem er Text in ein Texteingabe-Steuerelement 
 1. Fügen Sie ein Texteingabe-Steuerelement hinzu, nennen Sie es **inputPassword**, und legen Sie seine **Mode**-Eigenschaft auf **Password** fest.
 
 1. Fügen Sie eine Bezeichnung hinzu, und legen Sie deren Eigenschaft **[Text](properties-core.md)** auf diese Funktion fest:<br>
-   **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
+   **If(inputPassword.Text = "P@ssw0rd"; "Access granted"; "Access denied")**
 
     Benötigen Sie weitere Informationen zur **[If](../functions/function-if.md)** -Funktion oder [anderen Funktionen](../formula-reference.md)?
 
