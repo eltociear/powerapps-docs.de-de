@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73537107"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Verknüpfen von Funktionen in powerapps
 
@@ -44,12 +43,12 @@ Diese Funktionen können nur in [Verhaltens Formeln](../working-with-formulas-in
 
 ## <a name="syntax"></a>Syntax
 
-**Beziehung**( *Entity1RelatedTable*; *Entity2Record* )
+**Beziehung**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* : erforderlich. Für einen Datensatz von *Entity1*wird die Tabelle der *Entity2* -Datensätze über eine 1: n-oder m:n-Beziehung bezogen.
 * *Entity2Record* : erforderlich. Der *Entity2* -Datensatz, der der Beziehung hinzugefügt werden soll.
 
-**Ohne Beziehung**( *Entity1RelatedTable*; *Entity2Record* )
+**Ohne Beziehung**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* : erforderlich. Für einen Datensatz von *Entity1*wird die Tabelle der *Entity2* -Datensätze über eine 1: n-oder m:n-Beziehung bezogen.
 * *Entity2Record* : erforderlich. Der *Entity2* -Datensatz, der aus der Beziehung entfernt werden soll.
@@ -65,29 +64,29 @@ Betrachten Sie eine **Products** -Entität mit den folgenden Beziehungen, wie im
 
 **Produkte** und **Reservierungen** sind über eine 1: n-Beziehung verknüpft.  So verknüpfen Sie den ersten Datensatz der **Reservations** -Entität mit dem ersten Datensatz der **Products** -Entität:
 
-`Relate( First( Products ).Reservations; First( Reservations ) )`
+`Relate( First( Products ).Reservations, First( Reservations ) )`
 
 So entfernen Sie die Beziehung zwischen diesen Datensätzen:
 
-`Unrelate( First( Products ).Reservations; First( Reservations ) )`
+`Unrelate( First( Products ).Reservations, First( Reservations ) )`
 
 Wir haben zu keinem Zeitpunkt erstellt oder entfernt oder einen Datensatz erstellt, nur die Beziehung zwischen Datensätzen wurde geändert.
 
 **Produkte** und **Kontakte** sind über eine m:n-Beziehung verknüpft.  So verknüpfen Sie den ersten Datensatz der **Contacts** -Entität mit dem ersten Datensatz der **Products** -Entität:
 
-`Relate( First( Products ).Contacts; First( Contacts ) )`
+`Relate( First( Products ).Contacts, First( Contacts ) )`
 
 Da m:n-Beziehungen symmetrisch sind, können wir dies auch in umgekehrter Richtung durchgeführt haben:
 
-`Relate( First( Contacts ).Products; First( Products ) )`
+`Relate( First( Contacts ).Products, First( Products ) )`
 
 So entfernen Sie die Beziehung zwischen diesen Datensätzen:
 
-`Unrelate( First( Products ).Contacts; First( Contacts ) )`
+`Unrelate( First( Products ).Contacts, First( Contacts ) )`
 
 noch
 
-`Unrelate( First( Contacts ).Products; First( Products ) )`
+`Unrelate( First( Contacts ).Products, First( Products ) )`
 
 Die nachfolgende Exemplarische Vorgehensweise führt genau diese Vorgänge für diese Entitäten mithilfe einer APP mit **Katalog-und** Kombinations **Feld** -Steuerelementen für die Auswahl der beteiligten Datensätze aus.
 
@@ -101,7 +100,7 @@ Zuerst erstellen Sie eine einfache APP, um die Reservierungen anzuzeigen und neu
 
 1. Erstellen Sie eine [Tablet-APP von einem leeren](../data-platform-create-app-scratch.md).
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
 1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **Common Data Service** > **Produkte** > **Connect**aus.  
 
@@ -153,8 +152,8 @@ Zuerst erstellen Sie eine einfache APP, um die Reservierungen anzuzeigen und neu
 
 1. Legen Sie in **Wenn gallery2**die **onselect** -Eigenschaft von **NextArrow2**auf diese Formel fest:
 
-    ```powerapps-comma
-    Relate( ComboBox1.Selected.Reservations; ThisItem )
+    ```powerapps-dot
+    Relate( ComboBox1.Selected.Reservations, ThisItem )
     ```
 
     Wenn der Benutzer dieses Symbol auswählt, ändert sich die aktuelle Reservierung in das Produkt, das der Benutzer in **ComboBox1**ausgewählt hat.
@@ -171,17 +170,17 @@ Mit dieser APP kann der Benutzer eine Reservierung von einem Produkt in ein ande
 
 An diesem Punkt können Sie die Beziehung von einem Datensatz in einen anderen verschieben, aber Sie können die Beziehung nicht vollständig entfernen. Sie können die Funktion " **ohne Beziehung** " verwenden, um einen Reservierungsdaten Satz von einem beliebigen Produkt zu trennen.
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
 1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **Common Data Service** > **Reservierungen** > **Connect**aus.
 
 1. Legen Sie in **Wenn gallery2**die **onselect** -Formel für **NextArrow2** auf diese Formel fest:
 
-    ```powerapps-comma
-    If( IsBlank( ComboBox1.Selected );
-        Unrelate( Gallery1.Selected.Reservations; ThisItem );
-        Relate( ComboBox1.Selected.Reservations; ThisItem )
-    );;
+    ```powerapps-dot
+    If( IsBlank( ComboBox1.Selected ),
+        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
+        Relate( ComboBox1.Selected.Reservations, ThisItem )
+    );
     Refresh( Reservations )
     ```
     ![Symbol "rechts konfigurieren"](media/function-relate-unrelate/reservations-relate-unrelate.png)
@@ -192,17 +191,17 @@ An diesem Punkt können Sie die Beziehung von einem Datensatz in einen anderen v
 
 1. optionale Wenn Sie eine Bezeichnung oberhalb von **Wenn gallery2**hinzugefügt haben, wiederholen Sie die vorherigen beiden Schritte für diese Bezeichnung.
 
-1. Stellen Sie sicher, dass das Duplikat von **Wenn gallery2** den Namen **Gallery2_1**hat, und legen Sie dann dessen **Items** -Eigenschaft auf diese Formel fest:
+1. Stellen Sie sicher, dass das Duplikat von **Wenn gallery2** **Gallery2_1**ist, und legen Sie dann die Eigenschaft **Items** auf diese Formel fest:
 
-    ```powerapps-comma
-    Filter( Reservations; IsBlank( 'Product Reservation' ) )
+    ```powerapps-dot
+    Filter( Reservations, IsBlank( 'Product Reservation' ) )
     ```
 
     Es wird eine Delegierungs Warnung angezeigt, aber Sie ist nicht mit der kleinen Datenmenge in diesem Beispiel zu tun.
 
-    ![Legen Sie die Items-Eigenschaft von Gallery2_1 fest.](media/function-relate-unrelate/reservations-lost.png)
+    ![Legen Sie die Items-Eigenschaft Gallery2_1](media/function-relate-unrelate/reservations-lost.png)
 
-Mit diesen Änderungen können Benutzer die Auswahl in **ComboBox1** für einen Kontakt löschen, wenn diese Person kein Produkt reserviert hat. Kontakte, die kein Produkt reserviert haben, werden in **Gallery2_1** angezeigt, wo Benutzer jeden Kontakt einem Produkt zuweisen können.
+Mit diesen Änderungen können Benutzer die Auswahl in **ComboBox1** für einen Kontakt löschen, wenn diese Person kein Produkt reserviert hat. Kontakte, die kein Produkt reserviert haben, werden in **Gallery2_1** angezeigt, in denen Benutzer jeden Kontakt einem Produkt zuweisen können.
 
    ![Veranschaulichen der Beziehung zwischen Funktionen und deren Verknüpfung in der 1: n-App](media/function-relate-unrelate/reservations-lostandfound.gif)
 
@@ -266,13 +265,13 @@ Sie erstellen eine andere APP, die dem zuvor in diesem Thema erstellten ähnelt,
 
 1. Legen **Sie die onselect** -Eigenschaft des **Cancel** -Symbols auf die folgende Formel fest: 
 
-    ```powerapps-comma
-    Unrelate( Gallery1.Selected.Contacts; ThisItem )
+    ```powerapps-dot
+    Unrelate( Gallery1.Selected.Contacts, ThisItem )
     ```
 
     ![Symbol "Abbrechen" Konfigurieren](media/function-relate-unrelate/contacts-unrelate.png)
 
-1. Klicken Sie auf der Registerkarte **Ansicht** auf die Option **Datenquellen**.
+1. Klicken Sie auf der Registerkarte **Ansicht** auf **Datenquellen**.
 
 1. Wählen Sie im Bereich **Daten** die Option **Datenquelle hinzufügen** > **Common Data Service** > **Kontakte** > **Connect**aus.
 
@@ -286,8 +285,8 @@ Sie erstellen eine andere APP, die dem zuvor in diesem Thema erstellten ähnelt,
 
 1. **Fügen Sie ein Add** -Symbol ein, und legen Sie dessen **onselect** -Eigenschaft auf diese Formel fest: 
 
-    ```powerapps-comma
-    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
+    ```powerapps-dot
+    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
     ```
 
     ![Symbol "Add" Konfigurieren](media/function-relate-unrelate/contacts-relate.png)
@@ -313,11 +312,11 @@ M:n-Beziehungen sind symmetrisch. Sie können das Beispiel erweitern, um einem k
 
 1. Doppelte **Screen1**.
 
-    Das Duplikat erhält den Namen **Screen1_1** und bildet die Grundlage für die Betrachtung der Beziehungen von der Seite Kontakte.
+    Das Duplikat wird **Screen1_1** benannt und bildet die Grundlage für die Betrachtung der Beziehungen auf der Seite "Kontakte".
 
     ![Duplizieren eines Bildschirms](media/function-relate-unrelate/contacts-duplicate.png)
 
-1. Um die umgekehrte Ansicht zu erstellen, ändern Sie diese Formeln in den Steuerelementen von **Screen1_1**:
+1. Um die umgekehrte Ansicht zu erstellen, ändern Sie diese Formeln in den Steuerelementen **Screen1_1**:
 
     - Screen1_1. onvisible = `Refresh( Contacts )`
     - Gallery1_1. Items = `Contacts`
@@ -325,15 +324,15 @@ M:n-Beziehungen sind symmetrisch. Sie können das Beispiel erweitern, um einem k
     - Label1_1. Text = `"Selected Contact Products"`
     - Gallery2_1. Items = `Gallery1_1.Selected.Products`
     - Title2_1. Text = `ThisItem.Name`
-    - Icon1_1. onselect = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
+    - Icon1_1. onselect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
     - ComboBox1_1. Items = `Products`
-    - Icon2_1. onselect = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
+    - Icon2_1. onselect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
     Das Ergebnis ähnelt dem vorherigen Bildschirm, wird jedoch in der Beziehung von der **Kontakt** Seite angezeigt.
 
     ![N:n-Beziehung beginnend mit Kontakten anzeigen](media/function-relate-unrelate/reverse-screen.png)
 
-1. Fügen Sie ein **Pfeil nach unten** ein, und legen **Sie dessen onselect** -Eigenschaft auf **Navigate (Screen1, None)** fest.  Gehen Sie auf **Screen1** mit der Formel **Navigation (Screen1_1, None)** .
+1. Fügen Sie ein **Pfeil nach unten** ein, und legen **Sie dessen onselect** -Eigenschaft auf **Navigate (Screen1, None)** fest.  Gehen Sie auf **Screen1** mit der Formel **Navigation (Screen1_1, keine)** .
 
     ![Navigation zwischen Bildschirmen hinzufügen](media/function-relate-unrelate/reverse-navigate.png)
 

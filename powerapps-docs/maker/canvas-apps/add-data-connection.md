@@ -27,7 +27,7 @@ Fügen Sie in PowerApps einer vorhandenen Canvas-App oder einer von Grund auf ne
 Ihr [nächster Schritt](#next-steps) nach diesem Artikel besteht darin, Daten aus dieser Datenquelle in der App anzuzeigen und zu verwalten; siehe folgende Beispiele:
 
 * Verbinden mit OneDrive und Verwalten von Daten in einer Excel-Arbeitsmappe in Ihrer App.
-* Verbinden mit Twilio und Senden einer SMS-Nachricht von Ihrer App.
+* Verbinden mit Twilio und senden einer SMS-Nachricht von Ihrer App.
 * Stellen Sie eine Verbindung mit Common Data Service her, und aktualisieren Sie eine Entität von Ihrer APP.
 * Herstellen einer Verbindung mit SQL Server und Aktualisieren einer Tabelle aus Ihrer App.
 
