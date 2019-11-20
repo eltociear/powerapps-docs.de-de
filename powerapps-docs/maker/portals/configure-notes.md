@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542851"
@@ -62,7 +62,7 @@ Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verw
 | Fehlermeldung         | Überschreibt die Meldung, die angezeigt wird, wenn ein Fehler auftritt, wenn versucht wird, die Liste der Notizen zu laden.                                                                     |
 | Meldung "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn der Benutzer nicht über ausreichende Berechtigungen zum Anzeigen der Liste der Notizen verfügt.                                                    |
 | Leere Nachricht         | Überschreibt die Meldung, die angezeigt wird, wenn die aktuelle Entität keine Notizen hat, die angezeigt werden können.                                                              |
-| Auflisten von Aufträgen           | Ermöglicht es Ihnen, die Reihenfolge festzulegen, in der Notizen angezeigt werden. Mit der Einstellung Bestellungen auflisten können Sie Folgendes festlegen: <ul><li>Attribute: der logische Name der Spalte, nach der sortiert werden soll.</li><li>Alias: der Alias für das Attribut in der Abfrage.</li><li>Direction: aufsteigend (aufsteigend zum größten oder ersten bis letzten) oder absteigend (die größte zu kleinste oder letzte zum ersten).</li></ul> ![Attribute für Listen Bestellungen festlegen](media/set-attributes-list-orders.png "Set-Attribute für Listen Bestellungen ") Wählen Sie zum Hinzufügen einer Sortier Regel "Spalte" (4) aus, und geben Sie die Details ein. Listen Bestellungen werden von oben nach oben in der Liste mit der höchsten Priorität verarbeitet.|
+| Auflisten von Aufträgen           | Ermöglicht es Ihnen, die Reihenfolge festzulegen, in der Notizen angezeigt werden. Mit der Einstellung Bestellungen auflisten können Sie Folgendes festlegen: <ul><li>Attribute: der logische Name der Spalte, nach der sortiert werden soll.</li><li>Alias: der Alias für das Attribut in der Abfrage.</li><li>Orientierung Aufsteigend (aufsteigend zum größten oder ersten bis letzten) oder absteigend (von der größten zur kleinsten bzw. letzten bis zum ersten).</li></ul> ![Attribute für Listen Bestellungen festlegen](media/set-attributes-list-orders.png "Set-Attribute für Listen Bestellungen ") Wählen Sie zum Hinzufügen einer Sortier Regel "Spalte" (4) aus, und geben Sie die Details ein. Listen Bestellungen werden von oben nach oben in der Liste mit der höchsten Priorität verarbeitet.|
 ||
 
 
@@ -140,7 +140,7 @@ Ebenso wie bei Unterverzeichnissen ist das Hinzufügen von Notizen zu Ihren verw
 | CSS-Klasse der Schaltfläche Schließen   | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Schaltfläche Schließen (Abbrechen) des Dialog Felds angewendet werden.                                                      |
 |||
 
-### <a name="assign-entity-permissions"></a>Zuweisen von Entitäts Berechtigungen
+### <a name="assign-entity-permissions"></a>Zuweisen von Entitätsberechtigungen
 
 Sie müssen den Datensätzen wie folgt die entsprechende Entitäts Berechtigung erstellen und zuweisen. andernfalls werden die Schaltflächen **Hinzufügen**, **Bearbeiten**und **Löschen** für den Hinweis ausgeblendet:
 
