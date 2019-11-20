@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa86d8027775bc74178699a18371fc9e2cef2917
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 2fdf5577f907e2beb7ead5eef3c4d7b06aeaa9c5
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741308"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177857"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Freigeben einer Canvas-App in PowerApps
 
 Nachdem Sie eine Canvas-App erstellt haben, die eine geschäftliche Anforderung behandelt, geben Sie an, welche Benutzer in Ihrer Organisation die App ausführen dürfen und welche sie ändern oder sogar erneut freigeben dürfen. Geben Sie jeden Benutzer anhand seines Namens an, oder geben Sie eine Sicherheitsgruppe in Azure Active Directory an. Wenn jeder von Ihrer App profitieren würde, geben Sie an, dass Ihre gesamte Organisation diese ausführen darf.
 
 > [!IMPORTANT]
-> Damit eine freigegebene App erwartungsgemäß funktioniert, müssen Sie auch Berechtigungen für die Datenquelle oder die Quellen verwalten, auf denen die APP basiert, z. b. [Common Data Service](#common-data-service) oder [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
+> For a shared app to function as you expect, you must also manage permissions for the data source or sources on which the app is based, such as [Common Data Service](#common-data-service) or [Excel](share-app-data.md). Sie müssen möglicherweise auch [andere Ressourcen freigeben](share-app-resources.md), von denen die App abhängt, z.B. Flows, Gateways oder Verbindungen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -41,206 +41,206 @@ Um eine App freizugeben, müssen Sie sie in der Cloud speichern (nicht lokal) un
 
     ![Anzeigen der App-Liste](./media/share-app/file-apps.png)
 
-1. Wählen Sie die APP aus, die Sie freigeben möchten, indem Sie das zugehörige Symbol auswählen.
+1. Select the app that you want to share by selecting its icon.
 
-    ![App auswählen](./media/share-app/select-app.png)
+    ![Select an app](./media/share-app/select-app.png)
 
-1. Wählen Sie im Banner die Option **Freigeben**aus.
+1. In the banner, select **Share**.
 
     ![Geöffneter Bildschirm „Freigeben“](./media/share-app/banner-share.png)
 
-1. Geben Sie die Benutzer oder Sicherheitsgruppen in Azure Active Directory, mit denen Sie die APP freigeben möchten, nach Namen oder Aliasnamen an.
+1. Specify by name or alias the users or security groups in Azure Active Directory with which you want to share the app.
 
-    - Um ihrer gesamten Organisation das Ausführen der APP zu gestatten (ohne Sie zu ändern oder freizugeben), geben Sie im Freigabe Bereich **alle** ein.
-    - Wenn die Elemente durch Semikolons voneinander getrennt sind, können Sie eine APP mit einer Liste von Aliasen, anzeigen Amen oder einer Kombination aus diesen Teilen (z. b. **Jane Doe &lt; jane.doe@contoso.com**). Wenn mehr als eine Person denselben Namen, aber unterschiedliche Aliase hat, wird die erste gefundene Person zur Liste hinzugefügt. Eine QuickInfo wird angezeigt, wenn ein Name oder Alias bereits über eine Berechtigung verfügt oder nicht aufgelöst werden kann. 
+    - To allow your entire organization to run the app (but not modify or share it), type **Everyone** in the sharing panel.
+    - You can share an app with a list of aliases, friendly names, or a combination of those (for example, **Jane Doe &lt;jane.doe@contoso.com** ) if the items are separated by semi-colons. If more than one person has the same name but different aliases, the first person found will be added to the list. A tooltip appears if a name or alias already has permission or can't be resolved. 
 
-    ![Angeben von Benutzern und Mitbesitzern](./media/share-app/share-everyone.png)
-
-    > [!NOTE]
-    > Sie können eine APP nicht für eine Verteiler Gruppe in Ihrer Organisation oder für einen Benutzer oder eine Gruppe außerhalb Ihrer Organisation freigeben.
-
-1. Wenn Sie zulassen möchten, dass Sie die APP freigeben, um Sie zu bearbeiten und freizugeben (zusätzlich zur Ausführung), aktivieren Sie das Kontrollkästchen **Mitbesitzer** .
-
-    Sie können einer Sicherheitsgruppe keine **Co-Owner-** Berechtigung erteilen, wenn Sie [die APP innerhalb einer Lösung erstellt](add-app-solution.md)haben.
+    ![Specify users and co-owners](./media/share-app/share-everyone.png)
 
     > [!NOTE]
-    > Unabhängig von den Berechtigungen können zwei Personen eine APP nicht gleichzeitig bearbeiten. Wenn eine Person die APP für die Bearbeitung öffnet, kann Sie von anderen Personen ausgeführt, aber nicht bearbeitet werden.
+    > You can't share an app with a distribution group in your organization or with a group outside your organization.
 
-1. Wenn Ihre APP eine Verbindung mit Daten herstellt, für die Benutzer Zugriffsberechtigungen benötigen, geben Sie Sie an.
+1. If you want to allow those with whom you're sharing the app to edit and share it (in addition to running it), select the **Co-owner** check box.
 
-    Beispielsweise kann Ihre APP eine Verbindung mit einer Entität in einer Common Data Service Datenbank herstellen. Wenn Sie eine solche APP freigeben, werden Sie im Freigabe Bereich aufgefordert, die Sicherheit für diese Entität zu verwalten.
+    You can't grant **Co-owner** permission to a security group if you [created the app from within a solution](add-app-solution.md).
+
+    > [!NOTE]
+    > Regardless of permissions, no two people can edit an app at the same time. If one person opens the app for editing, other people can run it but not edit it.
+
+1. If your app connects to data for which users need access permissions, specify them.
+
+    For example, your app might connect to an entity in a Common Data Service database. When you share such an app, the sharing panel prompts you to manage security for that entity.
 
     > [!div class="mx-imgBorder"]
-    > ![Zuweisen einer Sicherheitsrolle](media/share-app/cds-assign-security-role.png)
+    > ![Assign a security role](media/share-app/cds-assign-security-role.png)
 
-    Weitere Informationen zum Verwalten der Sicherheit für eine Entität finden Sie weiter unten in diesem Thema unter [Verwalten von Entitäts Berechtigungen](share-app.md#manage-entity-permissions) .
+    For more information about managing security for an entity, see [Manage entity permissions](share-app.md#manage-entity-permissions) later in this topic.
 
-1. Wenn Sie Benutzern helfen möchten, Ihre APP zu finden, aktivieren Sie das Kontrollkästchen **e-Mail an neue Benutzer senden** .
+1. If you want to help people find your app, select the **Send an email invitation to new users** check box.
 
-1. Wählen Sie am unteren Rand des Bereichs Freigabe die Option **Freigeben**aus.
+1. At the bottom of the share panel, select **Share**.
 
-    Alle Benutzer, für die Sie die APP freigegeben haben, können Sie in powerapps Mobile auf einem mobilen Gerät oder in appsource auf [Dynamics 365](https://home.dynamics.com) in einem Browser ausführen. Mitbesitzer können die app in [powerapps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)bearbeiten und freigeben.
+    Everyone with whom you shared the app can run it in PowerApps Mobile on a mobile device or in AppSource on [Dynamics 365](https://home.dynamics.com) in a browser. Co-owners can edit and share the app in [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    Wenn Sie eine e-Mail-Einladung gesendet haben, kann jede Person, für die Sie die APP freigegeben haben, Sie ausführen, indem Sie einen Link in der Einladung
+    If you sent an email invitation, everyone with whom you shared the app can run it by selecting a link in the invitation.
 
-    - Wenn ein Benutzer den Link auf einem mobilen Gerät auswählt, wird die app in powerapps Mobile geöffnet.
-    - Wenn ein Benutzer den Link auf einem Desktop Computer auswählt, wird die app in einem Browser geöffnet.
+    - If a user selects the link on a mobile device, the app opens in PowerApps Mobile.
+    - If a user selects the link on a desktop computer, the app opens in a browser.
 
-    Mitbesitzer, die eine Einladung erhalten, erhalten einen weiteren Link, der die APP zum Bearbeiten in PowerApps Studio öffnet.
+    Co-owners who receive an invitation get another link that opens the app for editing in PowerApps Studio.
 
-Sie können die Berechtigungen für einen Benutzer oder eine Sicherheitsgruppe ändern, indem Sie den Namen auswählen und dann einen der folgenden Schritte ausführen:
+You can change permissions for a user or a security group by selecting their name and then performing either of these steps:
 
-- Deaktivieren Sie das Kontrollkästchen **Mitbesitzer** , um den Mitbesitzern das Ausführen der APP zu gestatten, diese aber nicht mehr zu bearbeiten oder freizugeben.
-- Wählen Sie das Symbol entfernen (x) aus, um die Freigabe der APP für diesen Benutzer bzw. diese Gruppe zu verhindern.
+- To allow co-owners to run the app but no longer edit or share it, clear the **Co-owner** check box.
+- To stop sharing the app with that user or group, select the Remove (x) icon.
 
 ## <a name="security-group-considerations"></a>Überlegungen zu Sicherheitsgruppen
 
 - Wenn Sie eine App für eine Sicherheitsgruppe, bestehende Mitglieder dieser Gruppe und jeden freigeben, der dieser Gruppe beitritt, verfügen alle über die von Ihnen angegebenen Berechtigungen für diese Gruppe. Jeder, der die Gruppe verlässt, verliert diese Berechtigung, es sei denn, die Person gehört noch zu einer anderen Gruppe, die über Zugriff verfügt, oder Sie verleihen der Person die Berechtigung als Einzelperson.
 
-- Jedes Mitglied einer Sicherheitsgruppe besitzt dieselbe Berechtigung für eine App wie die Gruppe. Sie können allerdings für ein Mitglied oder mehrere Mitglieder dieser Gruppe tiefgreifendere Berechtigungen angeben, um diesen Personen besseren Zugriff zu gewähren. Beispielsweise können Sie der Sicherheitsgruppe eine Berechtigung zum Ausführen einer APP erteilen. Sie können jedoch auch den Benutzer B, der dieser Gruppe angehört, die **Mitbesitzer** Berechtigung erteilen. Jedes Mitglied der Sicherheitsgruppe kann die App ausführen, aber nur Benutzer B kann diese bearbeiten. Wenn Sie der Sicherheitsgruppe eine **Mitbesitzer** -Berechtigung erteilen und die Benutzer B Berechtigung zum Ausführen der APP besteht, kann der Benutzer die APP trotzdem bearbeiten.
+- Jedes Mitglied einer Sicherheitsgruppe besitzt dieselbe Berechtigung für eine App wie die Gruppe. Sie können allerdings für ein Mitglied oder mehrere Mitglieder dieser Gruppe tiefgreifendere Berechtigungen angeben, um diesen Personen besseren Zugriff zu gewähren. For example, you can give Security Group A permission to run an app, but you can also give User B, who belongs to that group, **Co-owner** permission. Jedes Mitglied der Sicherheitsgruppe kann die App ausführen, aber nur Benutzer B kann diese bearbeiten. If you give Security Group A **Co-owner** permission and User B permission to run the app, that user can still edit the app.
 
 ## <a name="manage-entity-permissions"></a>Verwalten von Entitätsberechtigungen
 
 ### <a name="common-data-service"></a>Common Data Service
 
-Wenn Sie eine App basierend auf Common Data Service erstellen, müssen Sie auch sicherstellen, dass die Benutzer, für die Sie die APP freigeben, über die entsprechenden Berechtigungen für die Entitäten oder Entitäten verfügen, von denen die APP abhängig ist. Insbesondere müssen diese Benutzer zu einer Sicherheitsrolle gehören, die Aufgaben wie das Erstellen, lesen, schreiben und löschen relevanter Datensätze ausführen kann. In vielen Fällen empfiehlt es sich, eine oder mehrere benutzerdefinierte Sicherheitsrollen mit den genauen Berechtigungen zu erstellen, die Benutzer zum Ausführen der APP benötigen. Anschließend können Sie jedem Benutzer eine Rolle zuweisen.
+If you create an app based on Common Data Service, you must also ensure that the users with whom you share the app have the appropriate permissions for the entity or entities on which the app relies. Specifically, those users must belong to a security role that can perform tasks such as creating, reading, writing, and deleting relevant records. In many cases, you'll want to create one or more custom security roles with the exact permissions that users need to run the app. You can then assign a role to each user as appropriate.
 
 > [!NOTE]
-> Zum Zeitpunkt der Erstellung dieses Artikels können Sie einzelnen Benutzern und Sicherheitsgruppen in Azure Active Directory, aber nicht in Office-Gruppen Sicherheitsrollen zuweisen.
+> As of this writing, you can assign security roles to individual users and security groups in Azure Active Directory but not to Office groups.
 
 #### <a name="prerequisite"></a>Voraussetzung
 
-Sie müssen über **System Administrator** Berechtigungen für eine Common Data Service Datenbank verfügen, um eine Rolle zuweisen zu können.
+To assign a role, you must have **System administrator** permissions for a Common Data Service database.
 
-#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Zuweisen einer Sicherheitsgruppe in Azure AD zu einer Rolle
+#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Assign a security group in Azure AD to a role
 
-1. Wählen Sie im Bereich Freigabe unter **Daten Berechtigungen**die Option **Sicherheitsrolle zuweisen** aus.
+1. In the sharing panel, select **Assign a security role** under **Data permissions**.
 
-1. Wählen Sie in Common Data Service die Rolle oder Rollen aus, die Sie dem Benutzer oder der Sicherheitsgruppe in Azure AD zuweisen möchten, mit der Sie die APP freigeben möchten.
+1. Select the role or roles in Common Data Service that you want to assign to the user or the security group in Azure AD with which you want to share the app.
      > [!div class="mx-imgBorder"] 
-     > ![Sicherheitsrollen Liste](media/share-app/cds-assign-security-role-list.png "Sicherheitsrollen Liste")
+     > ![Security role list](media/share-app/cds-assign-security-role-list.png "Security role list")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (vorherige Version)
 
-Wenn Sie eine APP freigeben, die auf einer älteren Version von Common Data Service basiert, müssen Sie die Lauf Zeit Berechtigung separat für den Dienst freigeben. Wenn Sie nicht über die entsprechende Berechtigung verfügen, finden Sie weitere Informationen unter Administrator der Umgebung.
+When you share an app that's based on an older version of Common Data Service, you must share the runtime permission to the service separately. If you don’t have permission to do this, see your environment administrator.
 
-## <a name="share-with-guests"></a>Mit Gästen teilen
+## <a name="share-with-guests"></a>Share with guests
  
-Powerapps-Canvas-Apps können für Gastbenutzer eines Azure Active Directory Mandanten freigegeben werden. Dadurch können externe Geschäftspartner, Auftragnehmer und Drittanbieter zum Ausführen der Canvas-apps Ihres Unternehmens eingeladen werden. 
+PowerApps canvas apps can be shared with guest users of an Azure Active Directory tenant. This enables inviting external business partners, contractors, and third parties to run your company’s canvas apps. 
 
 > [!NOTE]
-> Gästen darf nur die **Benutzer** Rolle und nicht die **Mitbesitzer** Rolle für apps zugewiesen werden, die für Sie freigegeben wurden.
+> Guests may only be assigned the **User** role, and not the **Co-owner** role, for apps shared with them.
 
 ### <a name="prerequisites"></a>Voraussetzungen
-- Aktivieren Sie in Azure Active Directory (Azure AD) die externe B2B-Zusammenarbeit für den Mandanten. Weitere Informationen: [Aktivieren der externen B2B-Zusammenarbeit und Verwalten von Gästen, die Gäste einladen dürfen](/azure/active-directory/b2b/delegate-invitations)
-    - Aktivieren der externen B2B-Zusammenarbeit ist standardmäßig aktiviert. Die Einstellungen können jedoch von einem Mandanten Administrator geändert werden.  Weitere Informationen zu Azure AD B2B finden Sie unter [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
-- Zugriff auf ein Konto, das Gastbenutzer zu einem Azure AD-Mandanten hinzufügen kann. Administratoren und Benutzer mit der Rolle "Gast einladter" können einem Mandanten Gäste hinzufügen.   
-- Der Gastbenutzer muss über einen der folgenden Mandanten eine powerapps-Lizenz zugewiesen haben:
-    - Der Mandant, der die freigegebene App gehostet.
-    - Der privat Mandant des Gast Benutzers.
+- In Azure Active Directory (Azure AD), enable B2B external collaboration for the tenant. More information: [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/b2b/delegate-invitations)
+    - Enable B2B external collaboration is on by default. However, the settings can be changed by a tenant admin.  For more information about Azure AD B2B, see [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
+- Access to an account that can add guest users to an Azure AD tenant. Admins and users with the Guest Inviter role can add guests to a tenant.   
+- The guest user must have a license with Power Apps use rights that matches the capability of the app assigned through one of the following tenants:
+    - The tenant hosting the app being shared.
+    - The home tenant of the guest user.
 
-### <a name="steps-to-grant-guest-access"></a>Schritte zum Gewähren des Gast Zugriffs
-1. Wählen Sie **neuer Gastbenutzer** aus, um Gastbenutzer in Azure AD hinzuzufügen. Weitere Informationen: [Schnellstart: Hinzufügen eines neuen Gast Benutzers in Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+### <a name="steps-to-grant-guest-access"></a>Steps to grant guest access
+1. Select **New guest user** to add guest users in Azure AD. More information: [Quickstart: Add a new guest user in Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
-    > ![Gast in Azure AD hinzufügen](media/share-app/guest_access_doc_1.png "Gast in Azure AD hinzufügen")
-2. Wenn der Gastbenutzer nicht bereits über eine Lizenz in seinem privat Mandanten verfügt, weisen Sie dem Gastbenutzer eine Lizenz zu.
-   - Informationen zum Zuweisen von Gastbenutzern aus admin.Microsoft.com finden Sie unter [Zuweisen von Lizenzen zu einem Benutzer](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
-   - Informationen zum Zuweisen von Gastbenutzern aus Portal.Azure.com finden Sie unter [zuweisen oder Entfernen von Lizenzen](/azure/active-directory/fundamentals/license-users-groups).
+    > ![Add guest in Azure AD](media/share-app/guest_access_doc_1.png "Add guest in Azure AD")
+2. If the guest user doesn't already have a license in their home tenant, assign a license to the guest user.
+   - To assign guest users from admin.microsoft.com, see [Assign licenses to one user](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+   - To assign guest users from portal.azure.com, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).
  
    > [!IMPORTANT]
-   > Möglicherweise müssen Sie die Microsoft 365 Admin Center-Vorschau deaktivieren, um einem Gast eine Lizenz zuzuweisen. 
+   > You may need to disable the Microsoft 365 admin center preview to assign a license to a guest. 
 
-3. Freigeben der Canvas-app. 
-    1. Melden Sie sich bei https://make.powerapps.com an.  
-    2. Wechseln Sie zu **apps**, wählen Sie eine Canvas-App aus, und wählen Sie dann in der Befehlsleiste **Freigabe**aus. 
-    3. Geben Sie eine e-Mail-Adresse für einen Gastbenutzer von einem Azure AD Mandanten ein. Weitere Informationen: [Was ist der Gastbenutzer Zugriff in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
+3. Share the canvas app. 
+    1. Sign in to https://make.powerapps.com  
+    2. Go to **Apps**, select a canvas app, and then on the command bar select **Share**. 
+    3. Enter an email address for a guest user from an Azure AD tenant. More information: [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![Für Gast freigeben](media/share-app/guest_access_doc_2.png "Für Gast freigeben")
+          > ![Share with guest](media/share-app/guest_access_doc_2.png "Share with guest")
  
-Nachdem Sie eine APP für den Gast Zugriff freigegeben haben, können Gäste apps, die für Sie freigegeben wurden, über die im Rahmen der Freigabe gesendete e-Mail ermitteln und darauf zugreifen.
+After you share an app for guest access, guests can discover and access apps shared with them from the email sent to them as part of sharing.
 
 > [!div class="mx-imgBorder"]  
-> ![Gast-e-Mails für e-Mail erhalten](media/share-app/guest_access_doc_4.png "Gast-e-Mails für e-Mail erhalten")
+> ![Guests receive app share email](media/share-app/guest_access_doc_4.png "Guests receive app share email")
 
 ### <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>Worin besteht der Unterschied zwischen dem Canvas-App-Gast Zugriff und den powerapps-Portalen? 
-Canvas-apps ermöglichen das Erstellen einer APP, die auf das Digitalisieren von Geschäftsprozessen zugeschnitten ist, ohne Code in einer herkömmlichen C#Programmiersprache wie zu schreiben. Der Gast Zugriff für Canvas-Apps ermöglicht Teams von Personen, die aus verschiedenen Organisationen bestehen, die an einem gemeinsamen Geschäftsprozess teilnehmen, um auf die gleichen App-Ressourcen zuzugreifen, die in eine Vielzahl von Microsoft-und Drittanbieter Quellen integriert werden können. Weitere Informationen finden Sie [unter Übersicht über Canvas-App-Connectors für powerapps](/powerapps/maker/canvas-apps/connections-list).
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>What’s the difference between canvas app guest access and PowerApps Portals? 
+Canvas apps enable building an app, tailored to digitizing a business processes, without writing code in a traditional programming language such as C#. Guest access for canvas apps enables teams of individuals made up of different organizations participating in a common business process to access the same app resources that may be integrated with a wide variety of Microsoft and third-party sources. More information: [Overview of canvas-app connectors for PowerApps](/powerapps/maker/canvas-apps/connections-list).
 
-[Powerapps-Portale](/powerapps/maker/portals/overview)  provide die Möglichkeit, schnelle, reaktionsschnelle Websites zu erstellen, mit denen externe Benutzer mit den in Common Data Service gespeicherten Daten interagieren können. Dadurch können Organisationen Websites erstellen, die entweder anonym oder über den Anmelde Anbieter Ihrer Wahl (z. b. LinkedIn, Microsoft-Konto oder andere kommerzielle Anmelde Anbieter) für Benutzer außerhalb Ihrer Organisation freigegeben werden können. 
+[PowerApps Portals](/powerapps/maker/portals/overview) provide the ability to build low-code, responsive websites that allow external users to interact with the data stored in Common Data Service. It allows organizations to create websites that can be shared with users external to their organization either anonymously or through the login provider of their choice, such as LinkedIn, Microsoft Account, or other commercial login providers. 
 
-In der folgenden Tabelle werden einige grundlegende Unterschiede zwischen powerapps-Portalen und Canvas-apps erläutert.  
+The following table outlines a few core capability differences between PowerApps Portals and canvas apps.  
 
-| | Benutzeroberfläche | Authentifizierung | Barrierefreie Datenquellen |
+| | Benutzeroberfläche | Authentifizierung | Accessible data sources |
 |------|--------|----------|-------------------|
-| Powerapps-Portale | Nur Browser | Ermöglicht anonymen und authentifizierten Zugriff | Common Data Service |
-| Canvas-Apps | Browser und Mobile Apps | Erfordert die Authentifizierung über Azure AD | Alle ~ 150 out-of-Box-Connectors und alle benutzerdefinierten Connectors  |
+| PowerApps Portals | Browser only experience | Allows anonymous and authenticated access | Common Data Service |
+| Canvas-Apps | Browser and mobile apps | Requires authentication via Azure AD | Any ~150 out-of-box connectors and any custom connector  |
 ||
 
-#### <a name="can-guests-access-customized-forms-in-sharepoint"></a>Können Gäste auf angepasste Formulare in SharePoint zugreifen?
-Ja. Jeder Benutzer, der auf eine SharePoint-Liste mit einem angepassten Formular zugreifen kann, kann Elemente in der Liste mit dem Formular ohne powerapps-Lizenz erstellen und bearbeiten.
+#### <a name="can-guests-access-customized-forms-in-sharepoint"></a>Can guests access customized forms in SharePoint?
+Ja. Any user that can access a SharePoint list with a customized form can create and edit items in the list, using the form, without any Power Apps license.
 
-#### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>Können Gäste auf in SharePoint eingebettete apps zugreifen? 
-Ja. Der Zugriff auf eigenständige Canvas-apps erfordert jedoch eine powerapps-Lizenz einschließlich eingebetteter apps. Wenn Sie eine Canvas-app in SharePoint über das Microsoft PowerApps Einbettungs Steuerelement einbetten, geben Sie die APP-ID ein. Geben Sie hierzu die APP-ID in das Feld **App-Weblink oder-ID** ein. 
-
-> [!div class="mx-imgBorder"]  
-> ![Einbinden der Canvas-app in SharePoint für Gäste](media/share-app/guest_access_doc_5.PNG "Einbinden der Canvas-app in SharePoint für Gäste")
-
-Wenn Sie eine Canvas-app in SharePoint über das IFRAME-HTML-Tag einbetten, verweisen Sie mit der vollständigen Web-URL auf die app. Wenn Sie die URL suchen möchten, klicken Sie auf https://make.powerapps.com, wählen Sie eine APP aus, und wählen Sie die Registerkarte **Details** aus, und die URL wird unter **Weblink**angezeigt.
+#### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>Can guests access apps embedded in SharePoint? 
+Ja. Though, access to canvas standalone apps require a license with Power Apps use rights that matches the capability of the app, including apps that are embedded. When embedding a canvas app in SharePoint via the Microsoft PowerApps embed control, enter the app id. To do this, enter the app ID in the **App web link or ID** box. 
 
 > [!div class="mx-imgBorder"]  
-> ![Details der Canvas-App](media/share-app/guest_access_doc_6.PNG "Details der Canvas-App")
+> ![Embed canvas app in SharePoint for guests](media/share-app/guest_access_doc_5.PNG "Embed canvas app in SharePoint for guests")
 
-#### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>Wie kommt es zu den Gast-apps, die für Sie freigegeben sind, aber keine Verbindungen erstellt werden?
-Wie bei nicht-Gästen müssen auch die zugrunde liegenden Datenquellen, auf die die APP zugreift, für den Gast zugänglich gemacht werden.
+When embedding a canvas app in SharePoint via the iFrame HTML tag, reference the app using the full web URL. To find the URL, go to https://make.powerapps.com, select an app, select the **Details** tab, and the URL is displayed under **Web link**.
 
-#### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>Welche Lizenz muss meinem Gast zugewiesen werden, damit Sie eine APP ausführen können, die für Sie freigegeben ist?
-Die gleiche Lizenz, die für nicht-Gäste zum Ausführen einer APP erforderlich ist. Wenn die APP beispielsweise Premium-Verbindungsdienste verwendet, muss dem Gast eine powerapps-App pro App-Plan oder ein powerapps-Plan vom Typ "pro Benutzer" zugewiesen werden.  
+> [!div class="mx-imgBorder"]  
+> ![Canvas app details](media/share-app/guest_access_doc_6.PNG "Canvas app details")
 
-|                                 | Angepasste SharePoint-Form | Eigenständige Canvas-App mit nicht-Premium-Connectors | Eigenständige Canvas-App mit Premium-Connectors | Modell gestützte App |
+#### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>How come guests can launch the app shared with them but connections fail to be created?
+As with non-guests, the underlying data source(s) accessed by the app must also be made accessible to the guest.
+
+#### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>What license must be assigned to my guest so they can run an app shared with them?
+The same license that’s required for non-guests to run an app. For instance, if the app uses premium connecters then a PowerApps Per App Plan or a PowerApps Per User Plan must be assigned to the guest.  
+
+|                                 | SharePoint customized form | Standalone canvas app using non-premium connectors | Standalone canvas app using premium connectors | Model driven app |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
-| SharePoint-Benutzer (keine PA-Lizenz) | x                          |                                                    |                                                |                  |
-| In powerapps enthaltene e/As    | x                          | x                                                  |                                                |                  |
-| Powerapps pro App-Plan          | x                          | x                                                  | x                                              | x                |
-| Powerapps-Tarif "pro Benutzer"         | x                          | x                                                  | x                                              | x                |
+| SharePoint user (no PA license) | x                          |                                                    |                                                |                  |
+| Power Apps Included w/ Office    | x                          | x                                                  |                                                |                  |
+| Power Apps Per App Plan          | x                          | x                                                  | x                                              | x                |
+| Power Apps Per User Plan         | x                          | x                                                  | x                                              | x                |
 
 
-#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Wie wird in powerapps Mobile für einen Gast Apps für seinen Heim Mandanten angezeigt?
-Alle Benutzer, die auf eine Canvas-App auf Ihrem mobilen Gerät zugegriffen haben und die in einem Azure AD Mandanten veröffentlicht werden, der nicht Ihr Privat Mandant ist, müssen sich von powerapps abmelden und sich bei powerapps Mobile wieder anmelden.  
+#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>In PowerApps Mobile, how does a guest see apps for their home tenant?
+Any user that has accessed an canvas app, on their mobile device, that’s published in an Azure AD tenant that isn’t their home tenant must sign-out of PowerApps and sign back in to PowerApps Mobile.  
 
-#### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Muss ein Gast die Azure AD Guest-Einladung annehmen, bevor er eine APP für den Gast freigibt?
-Nein. Wenn ein Gast eine APP startet, die für ihn freigegeben wurde, bevor er eine Gast Einladung annimmt, wird der Gast aufgefordert, die Einladung im Rahmen der Anmelde Erfahrung beim Starten der APP zu akzeptieren.  
+#### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Must a guest accept the Azure AD guest invitation prior to sharing an app with the guest?
+Nein. If a guest launches an app shared with them prior to accepting a guest invitation the guest will be prompted to accept the invitation as part of the sign-in experience while launching the app.  
 
-#### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>Welche Azure AD Mandanten sind Verbindungen für einen in erstellten Gastbenutzer?
-Verbindungen für eine APP werden immer im Kontext des Azure AD Mandanten hergestellt, dem die APP zugeordnet ist. Wenn z. b. eine APP im Mandanten von "Configuration Manager" erstellt wird, werden Verbindungen für interne und Gastbenutzer von "Configuration Manager" im Kontext des Mandanten von "Configuration Manager" hergestellt.
+#### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>What Azure AD tenant are connections for a guest user created in?
+Connections for an app are always made in the context of the Azure AD tenant the app is associated. For instance, if an app is created in the Contoso tenant then connections made for Contoso internal and guest users are made in the context of the Contoso tenant.
 
-#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>Können Gäste Microsoft Graph über den Microsoft Security Graph-Connector oder einen benutzerdefinierten Connector mithilfe von Microsoft Graph-APIs verwenden?
-Nein, Azure AD Gäste können Microsoft Graph nicht Abfragen, um Informationen für einen Mandanten abzurufen, bei dem es sich um einen Gast handelt.
+#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>Can guests use Microsoft Graph via Microsoft Security Graph connector or a custom connector using Microsoft Graph APIs?
+No, Azure AD guests can't query Microsoft Graph to retrieve information for a tenant in which they’re a guest.
 
-#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>Welche InTune-Richtlinien gelten für Gäste, die meine powerapps verwenden?
-InTune wendet nur Richtlinien des Privat Mandanten eines Benutzers an. Wenn Alice@Contoso.com beispielsweise eine APP mit Vikram@Fabrikam.com gemeinsam nutzt, wendet InTune unabhängig von den ausgeführten powerapps weiterhin fabrikam.com-Richtlinien auf virkam-Geräten an.
+#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>What InTune policies apply to guests using my PowerApps?
+InTune only applies policies of a user’s home tenant. For instance, if Alice@Contoso.com shares an app with Vikram@Fabrikam.com, InTune continues to apply Fabrikam.com policies on Virkam’s device regardless of the PowerApps he runs.
 
-#### <a name="what-connectors-support-guest-access"></a>Welche Connectors unterstützen den Gast Zugriff?
-Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unterstützen den Gast Zugriff. In der folgenden Tabelle werden alle Connectors aufgelistet, die Azure AD Authentifizierung durchführen und welche Connectors derzeit den Gast Zugriff unterstützen. Viele dieser Updates werden aktualisiert, was zu allgemeiner Verfügbarkeit führt.
+#### <a name="what-connectors-support-guest-access"></a>What connectors support guest access?
+All connectors that do not perform Azure AD authentication of any type supports guest access. The following table enumerates all connectors that perform Azure AD authentication and which connectors currently support guest access. Many of these will be updated leading up to general availability.
 
-| **Stecker**                                     | **Unterstützt Gast Zugriff**                                              |
+| **Connector**                                     | **Supports guest access**                                              |
 |---------------------------------------------------|------------------------------------------------------------------------|
 | 10to8 Appointment Scheduling                      | Nein                                                                     |
 | Adobe Creative Cloud                              | Nein                                                                     |
 | Adobe Sign                                        | Nein                                                                     |
 | Asana                                             | Nein                                                                     |
-| Atbot-Administrator                                       | Nein                                                                     |
-| Atbot-Logik                                       | Nein                                                                     |
+| AtBot Admin                                       | Nein                                                                     |
+| AtBot Logic                                       | Nein                                                                     |
 | Azure AD                                          | Ja                                                                    |
 | Azure Automation                                  | Ja                                                                    |
-| Azure-Container Instanz                          | Ja                                                                    |
+| Azure Container Instance                          | Ja                                                                    |
 | Azure Data Factory                                | Ja                                                                    |
 | Azure Data Lake                                   | Ja                                                                    |
-| Azure devops                                      | Nein                                                                     |
+| Azure DevOps                                      | Nein                                                                     |
 | Azure Event Grid                                  | Nein                                                                     |
-| Azure-IOT Central                                 | Ja                                                                    |
+| Azure IoT Central                                 | Ja                                                                    |
 | Azure Key Vault                                   | Nein                                                                     |
-| Azure-Kusto                                       | Ja                                                                    |
+| Azure Kusto                                       | Ja                                                                    |
 | Azure Log Analytics                               | Ja                                                                    |
 | Azure Resource Manager                            | Ja                                                                    |
 | Basecamp 2                                        | Nein                                                                     |
@@ -249,24 +249,24 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | bttn                                              | Nein                                                                     |
 | Buffer                                            | Nein                                                                     |
 | Business Central                                  | Nein                                                                     |
-| Candidatezip                                      | Nein                                                                     |
+| CandidateZip                                      | Nein                                                                     |
 | Capsule CRM                                       | Nein                                                                     |
-| Cloud-PKI-Verwaltung                              | Nein                                                                     |
+| Cloud PKI Management                              | Nein                                                                     |
 | Cognito Forms                                     | Nein                                                                     |
 | Common Data Service                               | Nein                                                                     |
 | Common Data Service (Legacy)                      | Nein                                                                     |
-| D & B-Optimierer                                     | Nein                                                                     |
+| D&B Optimizer                                     | Nein                                                                     |
 | Derdack SIGNL4                                    | Nein                                                                     |
 | Disqus                                            | Nein                                                                     |
-| Dokument Zusammenführung                                    | Nein                                                                     |
+| Document Merge                                    | Nein                                                                     |
 | Dynamics 365                                      | Nein                                                                     |
-| Dynamics 365 AI für Vertrieb                         | Ja                                                                    |
-| Dynamics 365 for FIN & OPS                        | Nein                                                                     |
-| Enadoc My Workspace                                            | Nein                                                                     |
+| Dynamics 365 AI for Sales                         | Ja                                                                    |
+| Dynamics 365 for Fin & Ops                        | Nein                                                                     |
+| Enadoc                                            | Nein                                                                     |
 | Eventbrite                                        | Nein                                                                     |
 | Excel Online (Business)                           | Nein                                                                     |
-| Excel Online (onedrive)                           | Nein                                                                     |
-| Ablauf Erinnerung                               | Nein                                                                     |
+| Excel Online (OneDrive)                           | Nein                                                                     |
+| Expiration Reminder                               | Nein                                                                     |
 | FreshBooks                                        | Nein                                                                     |
 | GoToMeeting                                       | Nein                                                                     |
 | GoToTraining                                      | Nein                                                                     |
@@ -278,18 +278,18 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Intercom                                          | Nein                                                                     |
 | JotForm                                           | Nein                                                                     |
 | kintone                                           | Nein                                                                     |
-| Zuzugreifen                                          | Nein                                                                     |
-| Marketing-inhaltshub                             | Nein                                                                     |
+| LinkedIn                                          | Nein                                                                     |
+| Marketing Content Hub                             | Nein                                                                     |
 | Mittel                                            | Nein                                                                     |
 | Metatask                                          | Nein                                                                     |
 | Microsoft Forms                                   | Nein                                                                     |
-| Microsoft Forms pro                               | Nein                                                                     |
-| Microsoft Graph Sicherheit                          | Nein                                                                     |
-| Microsoft kaizala                                 | Nein                                                                     |
-| Synchronisierung von Microsoft-Schuldaten                        | Nein                                                                     |
+| Microsoft Forms Pro                               | Nein                                                                     |
+| Microsoft Graph Security                          | Nein                                                                     |
+| Microsoft Kaizala                                 | Nein                                                                     |
+| Microsoft School Data Sync                        | Nein                                                                     |
 | Microsoft StaffHub                                | Nein                                                                     |
 | Microsoft Teams                                   | Ja                                                                    |
-| Microsoft to-do (Business)                        | Nein                                                                     |
+| Microsoft To-Do (Business)                        | Nein                                                                     |
 | Muhimbi PDF                                       | Nein                                                                     |
 | NetDocuments                                      | Nein                                                                     |
 | Office 365-Gruppen                                 | Ja                                                                    |
@@ -304,13 +304,13 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Outlook.com                                       | Nein                                                                     |
 | Paylocity                                         | Nein                                                                     |
 | Planner                                           | Nein                                                                     |
-| Plumsail-Formulare                                    | Nein                                                                     |
+| Plumsail Forms                                    | Nein                                                                     |
 | Power BI                                          | Ja                                                                    |
 | Project Online                                    | Nein                                                                     |
-| ProjectWise-Design Integration                    | Nein                                                                     |
-| ProjectWise-Freigabe                                 | Nein                                                                     |
+| ProjectWise Design Integration                    | Nein                                                                     |
+| Projectwise Share                                 | Nein                                                                     |
 | SharePoint                                        | Ja                                                                    |
-| Signnow                                           | Nein                                                                     |
+| SignNow                                           | Nein                                                                     |
 | Skype for Business Online                         | Nein                                                                     |
 | Soft1                                             | Nein                                                                     |
 | Stormboard                                        | Nein                                                                     |
@@ -319,6 +319,6 @@ Alle Connectors, die keine Azure AD Authentifizierung eines Typs ausführen, unt
 | Toodledo                                          | Nein                                                                     |
 | Typeform                                          | Nein                                                                     |
 | Vimeo                                             | Nein                                                                     |
-| WebEx-Teams                                       | Nein                                                                     |
+| Webex Teams                                       | Nein                                                                     |
 | Windows Defender Advanced Threat Protection (ATP) | Nein                                                                     |
 | Word Online (Business)                            | Nein                                                                     |

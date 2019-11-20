@@ -1140,6 +1140,8 @@
           href: ./portals/admin/migrate-portal-configuration.md
         - name: Informationen zum Lebenszyklus des Portals
           href: ./portals/admin/portal-lifecycle.md
+        - name: Upgrade für ein Portal
+          href: ./portals/admin/upgrade-portal.md
     - name: Erweiterte Portalkonfiguration
       items:
         - name: Übersicht
@@ -1188,12 +1190,22 @@
           href: ./portals/configure/place-child-nodes.md
         - name: Verhalten und Format des Datums- und Uhrzeitfelds
           href: ./portals/configure/behavior-format-date-time-field.md
+        - name: Anzeigen von E-Mail-Datensätzen in der Portalzeitskala
+          href: ./portals/configure/view-email-in-timeline.md
+        - name: Bewerten einer Webseite
+          href: ./portals/configure/rate-webpage.md
+        - name: Aktivieren der Zwischenspeicherung von Kopf- und Fußzeilenausgaben in einem Portal
+          href: ./portals/configure/enable-header-footer-output-caching.md
         - name: Hinzufügen eines Diagramms zu einer Webseite im Portal
           href: ./portals/configure/add-chart.md
         - name: Arbeiten mit Entitätsformularen
           href: ./portals/configure/entity-forms.md
         - name: Arbeiten mit Entitätslisten
           href: ./portals/configure/entity-lists.md
+        - name: Verwalten von Websites
+          href: ./portals/configure/websites.md
+        - name: Erstellen und Verwalten von Websitebindungen
+          href: ./portals/configure/website-bindings.md
         - name: Arbeiten mit Webformularen
           items:
             - name: Definieren von Eigenschaften von Webformularen
@@ -1216,6 +1228,8 @@
               href: ./portals/configure/configure-web-form-subgrid.md
             - name: Hinzufügen von Geolocation
               href: ./portals/configure/add-geolocation.md
+        - name: Implementieren der DSGVO in Portalen
+          href: ./portals/configure/implement-gdpr.md
     - name: Erweiterte Portalanpassung
       items:
         - name: Arbeiten mit Liquid-Vorlagen
@@ -1262,6 +1276,8 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: OAuth 2.0-Flow zur impliziten Gewährung
           href: ./portals/oauth-implicit-grant-flow.md
+        - name: Verwalten von Webseiten
+          href: ./portals/configure/web-page.md
     - name: Benutzerverwaltung und Sicherheit im Portal
       items:
         - name: Konfigurieren von Kontakten
@@ -1446,6 +1462,8 @@
           href: ./common-data-service/solution-history.md
         - name: Verwenden der Lösungsprüfung
           href: ./common-data-service/use-powerapps-checker.md
+        - name: 'Häufige Probleme und Lösungen: Lösungsüberprüfung'
+          href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Verwenden von segmentierten Lösungen
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
         - name: Ändern des Präfix für den Lösungsherausgeber
