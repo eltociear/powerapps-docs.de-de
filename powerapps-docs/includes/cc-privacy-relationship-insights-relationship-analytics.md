@@ -10,7 +10,7 @@ Durch die Aktivierung der Beziehungsanalyse, einer Funktion von „Eingebettete 
   
  **[!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)]**  
   
- [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], ein Dienst, der in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] ausgeführt wird, speichert [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Daten, einschließlich personenbezogener Informationen zu Kunden, zur Berechnung des Ausstoßes für die Beziehungsanalysefunktion. Die Vorschau von [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] unterliegt diesen [Ergänzenden Nutzungsbedingungen für Vorschaufeatures](http://go.microsoft.com/fwlink/p/?LinkId=511446).  
+ [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], ein Dienst, der in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] ausgeführt wird, speichert [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Daten, einschließlich personenbezogener Informationen zu Kunden, zur Berechnung des Ausstoßes für die Beziehungsanalysefunktion. Die Vorschau von [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] unterliegt diesen [ergänzenden Nutzungsbedingungen für Vorschaufunktionen](https://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
  [Weitere Informationen zur Vorschau von Customer Insights](https://azure.microsoft.com/services/customer-insights/).  
   

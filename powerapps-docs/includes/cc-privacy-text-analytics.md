@@ -1,51 +1,43 @@
----
-ms.openlocfilehash: 80997689e9d4ebca8eb4809cc3e94dab549482b5
-ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67224729"
----
-Durch Aktivierung des Textanalysefeatures aktivieren Sie abhängige Features in [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], die die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Cognitive Services-Textanalyse-API für erweiterte Einblicke nutzen. Diese abhängigen Features sind:  
+Durch Aktivierung der Textanalyse-Funktion aktivieren Sie auch abhängige Funktonen in [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], die die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Cognitive Services Textanalyse-API verwenden, um erweiterte Erkenntnisse zu bieten. Dabei handelt es sich um die folgenden abhängigen Funktionen:  
   
--   Wissensdatenbankvorschläge  
+-   Wissensvorschläge  
   
 -   Anfragethemenanalyse  
   
 -   Vorschläge für ähnliche Anfragen  
   
- Ein Administrator kann das Textanalysefeature unter **Einstellungen** > **Verwaltung** > **Systemeinstellungen** >  Registerkarte **Vorschau** in der [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)]-Organisation aktivieren.  
+ Ein Administrator kann die Textanalyse-Funktion unter **Einstellungen** > **Verwaltung** > **Systemeinstellungen** > **Registerkarte Vorschau** in der [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)]-Organisation aktivieren.  
   
- Wenn Sie auf Textanalysen basierende Wissensdatenbankvorschläge in [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] einrichten, werden durch Aktivieren des Textanalysefeatures die Anfrage und die Daten von deren verknüpften Entitäten an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API gesendet, um Schlüsselwörter/Ausdrücke zu extrahieren. Mit der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API werden keine Daten gespeichert. Nur konfigurierte Felder in der Wissensartikelkonfiguration werden an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API gesendet, um die Begriffe zu extrahieren. Der Administrator oder Anpasser hat die Option zum Deaktivieren der Wissensartikelkonfiguration, um [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API-Aufrufe zu beenden. Zudem kann der Anpasser auf Textanalysen basierende Vorschläge unterbinden, indem er in der Konfiguration des Entitätsformulars für Anfragen wieder auf feldbasierte Vorschläge umstellt.  
+ Wenn Sie die Textanalyse-Funktion aktivieren und einen textanalysebasierten Wissensvorschlag in [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] erstellen, werden die Anfrage und die zugehörigen Daten der Entitäten zum Extrahieren von Schlüsselworten/Phrasen an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API übertragen. Mit der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API werden keine Daten gespeichert. Nur konfigurierte Felder in der Wissensartikel-Konfiguration werden zum Extrahieren von Bedingungen an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API gesendet. Administrator oder Systemanpasser können die Wissensartikel-Konfiguration deaktivieren, damit API-Aufrufe an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API verhindert werden. Darüber hinaus kann der Systemanpasser die Verwendung textanalysebasierter Vorschläge deaktivieren, indem er in der Anfrageentitätsformular-Konfiguration zurück zu feldbasierten Vorschlägen wechselt.  
   
- Wenn Sie die Anfragethemenanalyse in [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] einrichten, werden durch Aktivieren des Textanalysefeatures die Anfrage und die Daten von deren verknüpften Entitäten an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API gesendet, um Themen zu bestimmen. Mit der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API werden keine Daten gespeichert. Nur konfigurierte Felder in der Themenmodellkonfiguration werden an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API gesendet, um die Themen zu extrahieren. Der Administrator oder Anpasser hat die Option zum Deaktivieren des Themenmodells, um [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API-Aufrufe zu beenden.  
+ Wenn Sie die Textanalyse-Funktion aktivieren und eine Anfragethemenanalyse in [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] erstellen, werden die Anfrage und die zugehörigen Daten der Entitäten zur Themenbestimmung an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API übertragen. Mit der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API werden keine Daten gespeichert. Nur konfigurierte Felder in der Themenmodell-Konfiguration werden zur Extrahierung von Themen an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API gesendet. Administrator oder Systemanpasser können das Themenmodell deaktivieren, damit API-Aufrufe an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API verhindert werden.  
   
- Wenn Sie Vorschläge für ähnliche Anfragen in [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] einrichten und die Option für die erweiterte Textanalyse in der Ähnlichkeitsregel aktiviert ist, werden durch Aktivieren des Textanalysefeatures die Anfrage und die Daten von deren verknüpften Entitäten an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API gesendet, um Schlüsselwörter und Ausdrücke zu extrahieren. Nur in der Ähnlichkeitsregel konfigurierte Textfelder werden an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API gesendet. Mit der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API werden keine Daten gespeichert. Der Administrator oder Anpasser hat die Option zum Deaktivieren der Ähnlichkeitsregel, um [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API-Aufrufe zu beenden.  
+ Wenn Sie die Textanalyse-Funktion aktivieren, die Option „erweiterte Textanalyse” in der Ähnlichkeitsregel aktiviert haben und Vorschläge für ähnliche Anfragen in [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] erstellen, werden die Anfrage und die zugehörigen Daten der Entitäten zum Extrahieren von Schlüsselworten/Wortgruppen an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API übertragen. Nur in der Ähnlichkeitsregel konfigurierte Textfelder werden an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API gesendet. Mit der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API werden keine Daten gespeichert. Administrator oder Systemanpasser können die Ähnlichkeitsregel deaktivieren, damit API-Aufrufe an die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API verhindert werden.  
   
- Die im Rahmen der auf Textanalysen basierenden Features verfügbaren [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Komponenten und -Dienste werden in den folgenden Abschnitten ausführlich dargestellt.  
+ [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Komponenten und ‑Dienste in Verbindung mit textanalysebasierten Funktionen werden in den folgenden Abschnitten ausführlich dargestellt.  
   
  [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
- [Azure-API-App](https://azure.microsoft.com/services/app-service/api/)  
+ [Azure API-App](https://azure.microsoft.com/services/app-service/api/)  
   
- Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-API-App löst die Webaufträge aus, die Daten aus der [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Organisation lesen und Daten für Themenanalysen an die Textanalyse-API senden. Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-API-App verwendet einen Webauftrag für die eigentliche Datenverarbeitung im Hintergrund zum Schreiben der Datenausgabe in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage. Die Daten werden vorübergehend in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage gespeichert. Nach der Themenbestimmung werden die Daten schließlich aus [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Storage gelöscht.  
+ Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] API-App löst die Webaufträge aus, die Daten aus der [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Organisation lesen und Daten zur Themenanalyse an die Textanalyse-API senden. Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] API-App verwendet einen Webauftrag, um die tatsächliche Datenverarbeitung im Hintergrund auszuführen und die Datenausgabe in den [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-BLOB-Speicher zu schreiben. Die Daten werden vorübergehend im [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-BLOB-Speicher gespeichert. Nachdem die Themenbestimmungen abgeschlossen ist, werden die Daten aus dem [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Speicher gelöscht.  
   
- [Azure Scheduler](https://azure.microsoft.com/services/storage/)  
+ [Azure Planer](https://azure.microsoft.com/services/storage/)  
   
- [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Scheduler wird verwendet, um einen Webauftrag nach einem Zeitplan auszulösen, um die Themenanalyse durchzuführen. Nur der Zeitplan für die Erstellung eines Themenmodells wird für den Scheduler freigegeben.  
+ [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Der Planer wird zum Auslösen eines Webauftrags nach einem Zeitplan verwendet, um eine Themenanalyse auszuführen. Nur der Erstellungszeitplan für das Themenmodell wird für den Planer freigegeben.  
   
  [Azure-Tabelle](https://azure.microsoft.com/services/storage/)  
   
- [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Tabelle wird für den Austausch der Modellversion und des Organisationskontexts zwischen der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-API-App und dem Webauftrag verwendet.  
+ Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Tabelle wird für die Übermittlung von Modellversion und Organisationskontext zwischen der [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] API-App und einem Webauftrag verwendet.  
   
- [Azure Blob Storage](https://azure.microsoft.com/services/storage/)  
+ [Azure Blob-Speicher](https://azure.microsoft.com/services/storage/)  
   
- Webaufträge speichern Daten vorübergehend in [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob Storage und löschen sie, sobald die Logik-App-Pipeline die Ausführung abgeschlossen hat.  
+ Webaufträge speichern Daten vorübergehend im [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Blob-Speicher und löschen sie, nachdem die Logik-App-Pipeline das Ausführen abgeschlossen hat.  
   
- [Azure-Textanalyse-API](https://www.microsoft.com/cognitive-services/en-us/text-analytics-api)  
+ [Azure Textanalyse-API](https://www.microsoft.com/cognitive-services/text-analytics-api)  
   
- Die [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]-Textanalyse-API erhält jedes Mal Daten auf Grundlage der Felder, die in aktiven Feldern für die Suche in Wissensdatenbankartikeln oder der Themenmodellkonfiguration oder der Ähnlichkeitsregelkonfiguration konfiguriert sind. Beispielsweise werden die Entitätsfelder für Anfragen, z.B. Titel und Beschreibung, sowie das Beschreibungsfeld in zugehörigen Hinweisen und Aktivitäten in der Konfiguration des Felds für die Suche in Wissensdatenbankartikeln konfiguriert.  
+ An das [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Textanalyse-API werden Daten auf Basis von Feldern gesendet, die in aktiven Wissensdatenbanksuche-Feldern oder der Themenmodell- oder der Ähnlichkeitsregel-Konfiguration konfiguriert werden. Beispielsweise werden Anfrageentitätsfelder (z. B. Titel und Beschreibung) und das Beschreibungsfeld in verknüpften Notizen und Aktivitäten in der Feldkonfiguration für die Suche in Wissensdatenbankartikeln konfiguriert.  
   
- [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Relevanzsuche  
+ [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] Relevanzsuche  
   
- Sie können die Relevanzsuche verwenden, wenn sie von einem Administrator aktiviert wurde, um ähnliche Datensätze für Anfragen zu finden. Mit den Feldern für Textübereinstimmungen und genaue Übereinstimmungen, die in der Ähnlichkeitsregel verwendet werden, wird die Relevanzsuche-API aufgerufen. Details der Datenverarbeitung finden Sie in den technischen Inhalten für die [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]-Relevanzsuche.
+ Wenn die Relevanzsuche von einem Administrator aktiviert wurde, können Sie damit ähnliche Datensätze von Anfragen suchen. Die in der Ähnlichkeitsregel verwendeten Felder für Textübereinstimmungen und exakte Übereinstimmungen werden zum Aufrufen der Relevanzsuche-API verwendet. Informationen zur Datenverarbeitung finden Sie in den technischen Angaben für die [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] Relevanzsuche.

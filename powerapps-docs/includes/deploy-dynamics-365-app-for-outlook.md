@@ -1,27 +1,33 @@
 ---
 title: Dynamics 365 App for Outlook bereitstellen | MicrosoftDocs
 ms.custom: ''
-ms.date: '2017-04-20'
+ms.date: 2017-04-20
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 09736e14-e744-48ca-a755-1b05bb55340e
 caps.latest.revision: 39
 author: jimholtz
 ms.author: jimholtz
 manager: brycho
+ms.openlocfilehash: 2df69eb2823726116ca08e893acf384afffdd957
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754121"
 ---
 # <a name="deploy-dynamics-365-app-for-outlook"></a>Dynamics 365 App for Outlook bereitstellen
-Benutzer können [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] verwenden, um die Leistungsfähigkeit von [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] beim Verwenden von [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] auf dem Desktopcomputer, im Internet oder dem Tablet zu erhöhen. Zeigen Sie also beispielsweise Informationen zu E-Mail- oder Terminempfängern an oder verknüpfen Sie eine [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]-E-Mail oder -Termin mit einem [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] - Datensatz, wie z.B. einer Verkaufschance, einer Firma oder einer Anfrage. Weitere Informationen zum Funktionsumfang von [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] finden Sie im [Dynamics 365 App for Outlook-Benutzerhandbuch](http://go.microsoft.com/fwlink/p/?LinkID=613099).  
+Benutzer können [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] verwenden, um die Leistungsfähigkeit von [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] beim Verwenden von [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] auf dem Desktopcomputer, im Internet oder dem Tablet zu erhöhen. Zeigen Sie also beispielsweise Informationen zu E-Mail- oder Terminempfängern an oder verknüpfen Sie eine [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)]-E-Mail oder -Termin mit einem [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] - Datensatz, wie z.B. einer Verkaufschance, einer Firma oder einer Anfrage. Weitere Informationen zum Funktionsumfang von [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] finden Sie im [Dynamics 365 App for Outlook-Benutzerhandbuch](https://go.microsoft.com/fwlink/p/?LinkID=613099).  
   
 > [!IMPORTANT]
->  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] ist nicht identisch mit [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. Ab [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)]ist [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] zusammen mit [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] die bevorzugte Art, [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] mit   [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] zu integrieren. **Beachten Sie, dass das Nachverfolgen von Aktivitäten nicht unterstützt wird, wenn [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] und [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] zusammen vom gleichen Benutzer verwendet wird.** Weitere Informationen zum [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]-Add-In finden Sie im [Dynamics 365 for Outlook-Benutzerhandbuch](http://go.microsoft.com/fwlink/p/?LinkID=524751).  
+>  [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] ist nicht identisch mit [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. Ab [!INCLUDE[pn_crm_8_2_0_both](../includes/pn-crm-8-2-0-both.md)]ist [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-crm-app-for-outlook.md)] zusammen mit [!INCLUDE[cc_server_side_synch](../includes/cc-server-side-synch.md)] die bevorzugte Art, [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)] mit   [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] zu integrieren. **Beachten Sie, dass das Nachverfolgen von Aktivitäten nicht unterstützt wird, wenn [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] und [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] zusammen vom gleichen Benutzer verwendet wird.** Weitere Informationen zum [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]-Add-In finden Sie im [Dynamics 365 for Outlook-Benutzerhandbuch](https://go.microsoft.com/fwlink/p/?LinkID=524751).  
 >   
->  [Delegierter Benutzer](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540) kann [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] nicht verwenden, um E-Mails nachzuverfolgen. Es wird empfohlen, [Nachverfolgung auf Ordnerebene oder automatische Nachverfolgung](https://www.microsoft.com/en-us/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx) zu verwenden für delegierte Benutzer.  
+>  [Delegierter Benutzer](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-9684B670-7588-4EEA-8717-9E5799047540) kann [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] nicht verwenden, um E-Mails nachzuverfolgen. Es wird empfohlen, [Nachverfolgung auf Ordnerebene oder automatische Nachverfolgung](https://www.microsoft.com/dynamics/crm-customer-center/overview-of-tracking-records-in-dynamics-365-for-outlook.aspx) zu verwenden für delegierte Benutzer.  
   
 <a name="BKMK_Compare"></a>   
 ## <a name="comparing-dynamics-365-app-for-outlook-with-dynamics-365-for-outlook"></a>Vergleich zwischen Dynamics 365 App for Outlook und Dynamics 365 for Outlook  
@@ -157,7 +163,7 @@ Benutzer können [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-
 ### <a name="supported-clients-per-feature"></a>Unterstützte Clients pro Funktion  
  Die [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] unterstützt Funktion abhängig vom Client, den Sie verwenden. In der folgenden Tabelle wird zusammengefasst, welche Features für die einzelnen Clients und Konfigurationen von [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] und [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] unterstützt werden.  
   
- ![Für die einzelnen Dynamics 365 App for Outlook-Funktionen unterstützte Clients](media/clients-supported-for-each-dynamics-365-app-for-outlook-feature.png "Für die einzelnen Dynamics 365 App for Outlook-Funktionen unterstützte Clients")  
+ ![Unterstützte Clients für die einzelnen Dynamics 365 App for Outlook-Funktionen](media/clients-supported-for-each-dynamics-365-app-for-outlook-feature.png "Unterstützte Clients für die einzelnen Dynamics 365 App for Outlook-Funktionen")  
   
  (1)  [!INCLUDE[pn_outlook_web_app](../includes/pn-outlook-web-app.md)] unterstützt [!INCLUDE[pn_IE_10](../includes/pn-ie-10.md)], [!INCLUDE[pn_ie_11](../includes/pn-ie-11.md)], [!INCLUDE[pn_microsoft_edge](../includes/pn-microsoft-edge.md)], [!INCLUDE[tn_Safari](../includes/tn-safari.md)] 9, [!INCLUDE[tn_Safari](../includes/tn-safari.md)] 10, [!INCLUDE[tn_Firefox](../includes/tn-firefox.md)] und [!INCLUDE[tn_chrome](../includes/tn-chrome.md)].  
   
@@ -226,12 +232,12 @@ Benutzer können [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-
   
 #### <a name="to-have-users-install-the-app-themselves"></a>So ermöglichen Sie Benutzern, die App selbst zu installieren  
   
-1.  Klicken Sie auf die Schaltfläche **Einstellungen** ![Schaltfläche Einstellungen](media/mp-ua-r16-settings.png "Schaltfläche Einstellungen") und klicken Sie dann **Apps für Dynamics 365**.  
+1.  Klicken Sie auf die Schaltfläche **Einstellungen** ![Schaltfläche „Einstellungen“](media/mp-ua-r16-settings.png "Schaltfläche „Einstellungen“"), und klicken Sie dann auf **Apps für Dynamics 365**.  
   
 2.  Im Bildschirm **Apps für Dynamics 365** unter **[!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]** klicken Benutzer auf **App zu [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] hinzufügen**.  
   
 > [!NOTE]
->  Benutzer können auch das Add-In deaktivieren und selbst entfernen. Weitere Informationen finden Sie im [Dynamics 365 App for Outlook-Benutzerhandbuch](http://go.microsoft.com/fwlink/p/?LinkID=613099).  
+>  Benutzer können auch das Add-In deaktivieren und selbst entfernen. Weitere Informationen finden Sie im [Dynamics 365 App for Outlook-Benutzerhandbuch](https://go.microsoft.com/fwlink/p/?LinkID=613099).  
   
 <a name="BKMK_DeployOnprem"></a>   
 ## <a name="to-deploy-to-dynamics-365-on-premises-users"></a>So stellen Sie für lokale Benutzer von Dynamics 365 bereit  
@@ -246,13 +252,13 @@ Benutzer können [!INCLUDE[pn_ms_dyn_crm_app_for_outlook](../includes/pn-ms-dyn-
  Wenn Sie bzw. Benutzer Probleme beim Installation von [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] haben, kann es sein, dass das [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] Postfach mit einer anderen [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] Organisation verknüpft ist. Ein [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]-Postfach (E-Mail-Adresse) kann Aufgaben, Termine und Kontakte nur mit einer Organisation synchronisieren, und einen Benutzer, der zu dieser Organisation gehört, kann Aufgaben, Termine und Kontakte nur mit einem [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]-Postfach synchronisieren.  Sie können die Einstellungen überschrieben, die in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] gespeichert werden soll, wenn der primäre synchronisierende Organisation ändern möchten. Weitere Informationen finden Sie in diesem [Wissensdatenbankartikel.](https://support.microsoft.com/en-gb/help/3211627/incomingemailrejected-error-when-attempting-to-install-dynamics-365-app-for-outlook)  
   
 <a name="BKMK_Explore"></a>   
-## <a name="explore-the-users-guide-and-train-your-users"></a>Erkunden Sie das Benutzerhandbuch und schulen Sie die Benutzer  
- Weitere Informationen zur Verwendung von [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] finden Sie im [Dynamics 365 App for Outlook-Benutzerhandbuch](http://go.microsoft.com/fwlink/p/?LinkID=613099).  
+## <a name="explore-the-users-guide-and-train-your-users"></a>Lesen Sie das Benutzerhandbuch und schulen Sie die Benutzer  
+ Weitere Informationen zur Verwendung von [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)] finden Sie im [Dynamics 365 App for Outlook-Benutzerhandbuch](https://go.microsoft.com/fwlink/p/?LinkID=613099).  
   
- ![Seite des Dynamics 365 App for Outlook-Benutzerhandbuchs](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Seite des Dynamics 365 App for Outlook-Benutzerhandbuchs")  
+ ![Dynamics 365 App for Outlook-Benutzerhandbuchseite](media/dynamics-365-app-for-outlook-user-s-guide-page.png "Dynamics 365 App for Outlook-Benutzerhandbuchseite")  
   
 ## <a name="see-also"></a>Siehe auch  
- [Dynamics 365 App for Outlook-Benutzerhandbuch](http://go.microsoft.com/fwlink/p/?LinkID=613099)   
+ [Dynamics 365 App for Outlook-Benutzerhandbuch](https://go.microsoft.com/fwlink/p/?LinkID=613099)   
  [Weitere Informationen zu unterstützten Clients finden Sie in diesem Blog: Dynamics 365 App for Outlook Support Matrix](https://blogs.msdn.microsoft.com/crm/2016/12/13/dynamics-365-app-for-outlook-support-matrix/)   
  [Serverseitige Synchronisierung von E-Mails, Terminen, Kontakten und Aufgaben einrichten](../Topic/Set%20up%20server-side%20synchronization%20of%20email,%20appointments,%20contacts,%20and%20tasks.md)   
  [Fügen Sie Benutzer, Lizenzen und Sicherheitsrollen hinzu](https://msdn.microsoft.com/23612155-f92d-4871-a109-186419d5c19d)   

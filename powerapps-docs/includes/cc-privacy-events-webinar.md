@@ -1,19 +1,11 @@
----
-ms.openlocfilehash: fa4a17c2a3131f49f8a702388bdb405661855c10
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61550017"
----
-Wenn Sie die Bedingungen für eine Ereignisverwaltung akzeptieren, wird die Webinarintegrationsfunktion aktiviert. Die Webinarintegrationsfunktion arbeitet mit einem Partner-Webinaranbieter zusammen, um ein Ereignis oder eine Sitzung als Webinar auszuführen. Für jeden Dienst eines Webinaranbieters müssen Sie über ein Konto des Anbieters verfügen. Der einzige Dienst eines Partner-Webinaranbieters, der derzeit standardmäßig angeboten wird, ist ON24. Wenn Sie die Funktion der Webinarintegration verwenden, werden Daten, die für die Bereitstellung und Ausführung des Webinars erforderlich sind, unter [!INCLUDE[pn-azure-service-fabric](../includes/pn-azure-service-fabric.md)] verarbeitet und gespeichert und dann an ON24 gesendet. Zu diesen Daten zählen Registrierungsdaten der Webinarteilnehmer, wie Namen, E-Mail-Adressen und Firmennamen. Außerdem sendet ON24 Metriken zum Webinar wie die Anzeigedauer des Webinars über [!INCLUDE[pn-azure-service-fabric](../includes/pn-azure-service-fabric.md)] an [!INCLUDE[pn-microsoftcrm](../includes/pn-microsoftcrm.md)].
+Wenn Sie die Bedingungen für eine Ereignisverwaltung akzeptieren, wird die Webinarintegrationsfunktion aktiviert. Die Webinarintegrationsfunktion arbeitet mit einem Partner-Webinaranbieter zusammen, um ein Ereignis oder eine Sitzung als Webinar auszuführen. Für jeden Dienst eines Webinaranbieters müssen Sie über ein Konto des Anbieters verfügen. Der einzige Dienst eines Partner-Webinaranbieters, der derzeit standardmäßig angeboten wird, ist ON24. Wenn Sie die Funktion der Webinarintegration verwenden, werden Daten, die für die Bereitstellung und Ausführung des Webinars erforderlich sind, unter [!INCLUDE[pn-azure-service-fabric](../includes/pn-azure-service-fabric.md)] verarbeitet und gespeichert und dann an ON24 gesendet. Die Daten werden in die Registrierungsdaten der Webinarteilnehmer, wie deren Namen, E-Mail-Adressen und Firmennamen, eingefügt Außerdem sendet ON24 Metriken zum Webinar wie die Anzeigedauer des Webinars über [!INCLUDE[pn-azure-service-fabric](../includes/pn-azure-service-fabric.md)] an [!INCLUDE[pn-microsoftcrm](../includes/pn-microsoftcrm.md)].
 
 Sie müssen die Webinarfunktion nicht aktivieren, um den Rest der Ereignismanagementlösung verwenden zu können. Ein Administrator kann die Webinarintegrationsfunktion deaktivieren, indem er die Anmeldedaten in der Webinarkonfiguration entfernt.
 
-Folgende [!INCLUDE[pn-windows-azure](../includes/pn-windows-azure.md)]-Komponenten und -Dienste werden von der Funktion für die Webinarintegration verwendet:
+Folgende [!INCLUDE[pn-windows-azure](../includes/pn-windows-azure.md)]-Komponenten und -Services werden von der Funktion für die Webniarintegration verwendet:
 
 - [!INCLUDE[pn_azure_key_vault](../includes/pn_azure_key_vault.md)] ([!INCLUDE[proc-more-information](../includes/proc-more-information.md)] [Was ist Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis))
-  - Stellt Schlüssel für die Verschlüsselung/Entschlüsselung des ON24-Konto-Anmeldedaten des Benutzers bereit
+  - Stellt Schlüssel für die Verschlüsselung/Entschlüsselung der ON24-Konto-Anmeldedaten des Benutzers bereit
 - [!INCLUDE[pn-azure-service-fabric](../includes/pn-azure-service-fabric.md)] ([!INCLUDE[proc-more-information](../includes/proc-more-information.md)] [Übersicht über Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview))
-  - Verarbeitet und sendet Registrierungsdaten und Anmeldedaten für das Webinarkonto an ON24
-  - Ruft Metriken für das Webinar von On24 in [!INCLUDE[pn-microsoftcrm](../includes/pn-microsoftcrm.md)] ab; speichert die Anmeldedaten für das ON24-Konto des Kunden (benutzerdefinierte Verschlüsselung)
+  - Verarbeitet und sendet Registrierungsdaten und Konto-Anmeldedaten für das Webinarkonto an ON24
+  - Ruft Metriken für das Webinar von On24 in [!INCLUDE[pn-microsoftcrm](../includes/pn-microsoftcrm.md)] ab - Speichert die Anmeldedaten für das ON24-Konto des Kunden (benutzerdefinierte Verschlüsselung)

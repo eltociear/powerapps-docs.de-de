@@ -1,1 +1,1 @@
-Das Plug-in Registration Tool finden Sie unter[Tools von NuGet herunterladen](../developer/common-data-service/download-tools-nuget.md).
+Das Plugin Registration Tool finden Sie unter [Tools von NuGet herunterladen](../developer/common-data-service/download-tools-nuget.md).
