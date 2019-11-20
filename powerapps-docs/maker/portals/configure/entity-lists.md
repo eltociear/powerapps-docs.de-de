@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 1ab175f69fdcf292185fd96cb176045dccc3a70b
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73552840"
@@ -293,7 +293,7 @@ Diese Seite kann eine vollständig angepasste Seitenvorlage sein, die möglicher
 
 Wichtig zu beachten ist, dass jeder Datensatz, der im Raster aufgelistet ist, einen Hyperlink zur Detailseite enthält und dass der Link einen benannten Abfrage Zeichen folgen Parameter mit der ID des Datensatzes enthält. Der Name des Abfrage Zeichen folgen Parameters hängt vom Parameternamen der ID-Abfrage Zeichenfolge ab, der in der Entitäts Liste angegeben ist. Beachten Sie abschließend, dass die Ziel Detail Webseite auch den Namen dieses Abfrage Zeichenfolgen-Parameters beachten muss, um die ID des Datensatzes zu erhalten, der zum Abfragen und Laden der Daten benötigt wird.
 
-![Seite "Details anzeigen" hinzufügen](../media/add-view-details-page.png "Seite "Details anzeigen" hinzufügen")  
+![Seite "Details anzeigen" hinzufügen](../media/add-view-details-page.png "Seite Details anzeigen hinzufügen")  
 
 **Anzeigen von Details mithilfe eines Entitäts Formulars**
 

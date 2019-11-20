@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542911"
@@ -46,7 +46,7 @@ Nach dem Hinzufügen der erforderlichen Webseiten und der Verwaltung Ihrer Hiera
     > [!NOTE]
     > Die bearbeitbaren Elemente werden durch eine Grenze abgegrenzt.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie die Komponente aus, die hinzugefügt werden soll.
 
@@ -70,7 +70,7 @@ In den Abschnitten können Sie eine Struktur für die Seite definieren und Porta
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.
 
 5.  Wählen Sie unter **Abschnitts Layout**den Typ aus, der eingefügt werden soll.
 
@@ -121,7 +121,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen:
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie unter " **Portal Komponenten**" die Option **Text**aus.
 
@@ -150,7 +150,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen:
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie unter " **Portal Komponenten**" die Option **Bild**aus. Der Bild Platzhalter wird der Canvas hinzugefügt.
 
@@ -187,7 +187,7 @@ Sie können die folgenden Komponenten auf einer Webseite hinzufügen:
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie unter **Portal Komponenten**die Option **iframe**aus. Der iframe-Platzhalter wird der Canvas hinzugefügt.
 
@@ -215,7 +215,7 @@ Das Formular ist eine datengesteuerte Konfiguration, mit der Sie ein Formular zu
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie unter " **Portal Komponenten**" die Option **Formular**aus.
 
@@ -270,7 +270,7 @@ Die Liste ist eine datengesteuerte Konfiguration, mit der Sie eine Webseite hinz
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie unter " **Portal Komponenten**" die Option **Liste**aus.
 
@@ -314,7 +314,7 @@ Die Liste ist eine datengesteuerte Konfiguration, mit der Sie eine Webseite hinz
 
 3.  Wählen Sie ein Editier bares Element im Zeichenbereich aus.
 
-4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol "Komponenten"") aus.  
+4.  Wählen Sie auf der linken Seite des Bildschirms im toolbelt das Symbol **Komponenten** ![Komponenten](media/components-icon.png "Symbol Komponenten") aus.  
 
 5.  Wählen Sie unter " **Portal Komponenten**" **Breadcrumb**aus.
 
