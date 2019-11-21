@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/23/2019
+ms.date: 11/20/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54d8ac3d347c0f60f82fdd73949eb2fd8545519c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 422cbc151b6ee5c4adfd295800bf9747519132cf
+ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541472"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74262113"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Benutzerdefinierte PowerApps-Visuals für Power BI
 
@@ -53,7 +52,7 @@ Im Folgenden werden die erforderlichen Schritte für das Verwenden des benutzerd
 
     ![Benutzerdefinierte Formel](./media/powerapps-custom-visual/custom-formula.png)
 
-    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
+    Diese Formel verknüpft Power BI-Daten mit der benutzerdefinierten Datenquelle: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`.
 
    Der Power BI-Bericht und die gestartete Instanz von PowerApps Studio verwenden eine gemeinsame Livedatenverbindung. Während beide Programme geöffnet sind, können Sie filtern oder Daten in Ihrem Bericht ändern. Sie werden dann feststellen, dass die aktualisierten Daten sofort in Ihrer App in PowerApps Studio angezeigt werden.
 
@@ -93,9 +92,11 @@ In der folgenden Tabelle sind die Browserunterstützung für das anzeigen, erste
 |Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
 |Google Chrome|&check;|&check;|&check;
-|SK|&check;
+|Safari-\*|&check;
 |Mozilla Firefox
 |Alle anderen Browser
+
+\* in Safari müssen Sie die standortübergreifende Überwachung aktivieren (**Einstellungen** > **Datenschutz**und Deaktivieren der **standortübergreifenden Überwachung**), um das benutzerdefinierte powerapps-Visual anzuzeigen.
 
 ## <a name="accessibility-support"></a>Barrierefreiheits Unterstützung
 
