@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Nachschlage Felds für einen Datensatz | MicrosoftDocs
+title: Use the lookup field on a record | MicrosoftDocs
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -14,95 +14,100 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c37e6e9e2b540dcad2c166a4ebf9d71d3b503978
-ms.sourcegitcommit: 10b2798d8f4acd01da15412a2e9fc872d1212d7c
+ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73728413"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177847"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Verwenden des Nachschlagefelds für einen Datensatz
 
-Die Suche unterstützt Sie bei der Auswahl von Datensätzen aus einer verknüpften Entität. Wenn Sie eine verknüpfte Entität auswählen und Suchkriterien eingeben (z. b. einen Namen oder eine e-Mail-Adresse), beginnt die Suche automatisch mit der Auflösung des partiellen Texts und zeigt alle entsprechenden Datensätze Wenn keine Datensätze angezeigt werden, nachdem Sie den vollständigen Text Ihres Such Kriteriums eingegeben haben, wird eine Meldung angezeigt, die besagt, dass keine Datensätze vorhanden sind.
+Lookup helps you to choose records from a related entity. When you select a related entity and enter search criteria, such as a name or email address, lookup automatically begins to resolve the partial text and displays any matching records. If no records are displayed after you have typed the full text of your search criteria, a message is displayed specifying that there are no records.
 
-Beispielsweise können Sie nach dem Namen **Adrian dumitrascu**suchen. Wenn Sie **AD**eingeben, werden mögliche übereinstimmende Datensätze automatisch aufgefüllt und angezeigt.
+For example, you might search for the name **Adrian Dumitrascu**. When you type **ad**, possible matching records are automatically populated and displayed.
 
   > [!div class="mx-imgBorder"]
-  > ![Füllt automatisch übereinstimmende Datensätze auf](media/automatically-populate-matching-records.png "Füllt automatisch übereinstimmende Datensätze auf")
+  > ![Automatically populates matching records](media/automatically-populate-matching-records.png "Automatically populates matching records")
   
 >[!NOTE] 
->Ein Administrator kann die Kriterien definieren, die von der Suche zum Auflösen von partiellem Suchtext verwendet werden.
+>An administrator can define the criteria that lookup uses for resolving partial search text.
 
-Sie können auch einen neuen Datensatz erstellen, indem Sie die Schaltfläche **neu** auswählen. Sie müssen über ausreichende Berechtigungen verfügen, um die **neue** Schaltfläche anzuzeigen und einen Datensatz zu erstellen. Wenn Sie das Suchfeld auswählen, werden die fünf zuletzt verwendeten Datensätze zusammen mit fünf bevorzugten Datensätzen angezeigt. Welche Datensätze angezeigt werden, hängt von Ihrem Ansichts Verlauf und den Favoriten ab, die Sie angeheftet haben. 
+Also, you can create a new record by selecting the **New** button. You must have sufficient permissions to view the **New** button and create a record. When you select the lookup field, the five most recently used records are displayed along with five favorite records. Which records are displayed depends on your view history and the favorites you’ve pinned. 
 
-Wenn Sie z. b. nur über drei Datensätze in ihrem Verlauf verfügen, werden diese drei in der Suche angezeigt, zusammen mit sieben ihrer bevorzugten Datensätze. Wenn Sie keine Favoriten angeheftet haben, werden nur die zuletzt angezeigten Datensätze angezeigt.
+For example, if you have only three records in your history, lookup will display those three, along with seven of your favorite records. If you have not pinned any favorites, only the most recently viewed records will be displayed.
 
-## <a name="types-of-lookups"></a>Typen von Such Vorgängen
+## <a name="types-of-lookups"></a>Types of lookups
 
-Suchvorgänge werden wie folgt klassifiziert: 
+Lookups are classified into the following: 
 
-- **Einfache Suche:** Wählen Sie einen einzelnen Datensatz in einem Feld aus einer einzelnen Entität aus. 
+- **Simple lookup:** Select a single record in a field from a single entity. 
 
-- **Partylist-Type-Felder:** Verwenden Sie, um mehrere Datensätze aus mehreren Entitäten in einer Suche auszuwählen. Verwenden Sie die Felder Partylist-Type, um mehrere Datensätze auszuwählen. Auf diese Weise können Sie jeden Datensatz hinzufügen, indem Sie eine neue Suche mehrmals durchführen. Jedes Mal, wenn Sie einen Datensatz auswählen, können Sie eine neue Suche nach einem anderen Datensatz durchführen.
+- **PartyList-type fields:** Use to select multiple records from multiple entities in a lookup. Use partylist-type fields to select multiple records. This allows you to add each record by performing a new search, multiple times. Every time you select a record, you will be able to perform a new search for another record.
   
-- **Felder vom Typ "betrifft":** Verwenden Sie, um einen einzelnen Datensatz aus mehreren Entitäten in einer Suche auszuwählen. 
+- **Regarding-type fields:** Use to select a single record from multiple entities in a lookup. 
 
-## <a name="search-in-a-lookup-field"></a>Suchen in einem Nachschlage Feld 
-Wenn Sie nach einer Suche suchen möchten, wählen Sie das Textfeld aus, und geben Sie die Suchkriterien ein. Wenn die aktuellen Datensätze für Ihre Suche aktiviert sind, werden die aktuellen Datensätze angezeigt, wenn Sie das Textfeld auswählen.
-
-  > [!div class="mx-imgBorder"]
-  > ![Such Feld durchsuchen](media/MRU.png "Such Feld durchsuchen")  
-
-## <a name="browse-in-a-lookup-field"></a>Suchen in einem Nachschlage Feld
-Wenn Sie nach einer Suche suchen möchten, wählen Sie das Symbol für die Suche (Lupen) aus. Eine vollständige Liste der Elemente wird in der Dropdown Liste angezeigt.
+## <a name="search-in-a-lookup-field"></a>Search in a lookup field 
+To search a lookup, select the textbox and type your search criteria. If recent records are enabled for your lookup, your recent records will be displayed when you select the textbox.
 
   > [!div class="mx-imgBorder"]
-  > ![Suchen eines Nachschlage Felds](media/MRU_1.png "Suchen eines Nachschlage Felds")  
+  > ![Browse a lookup field](media/MRU.png "Browse a lookup field")  
+  
+>[!NOTE]   
+> The default search result for lookup search is, begins with. This means results include records that begin with a specific word. For example, if you want to search for **Alpine Ski House**, type **alp** in the search box; if you type **ski**, the record will not show up in the search result.
+>
+> For a wildcard search use asterisks: For example, type *ski or *ski.
+
+## <a name="browse-in-a-lookup-field"></a>Browse in a lookup field
+To browse a lookup, select the lookup icon (magnifying glass). A full list of items will be shown in the dropdown.
+
+  > [!div class="mx-imgBorder"]
+  > ![Search a lookup field](media/MRU_1.png "Search a lookup field")  
  
-## <a name="most-recently-used-record-type-images"></a>Zuletzt verwendete Abbild Daten Satz Typen
-Die Liste der zuletzt verwendeten Datensätze zeigt ein Bild, das Sie bei der Unterscheidung zwischen Daten Satz Typen unterstützt.
+## <a name="most-recently-used-record-type-images"></a>Most recently used record type images
+The most recently used list of records shows an image to help distinguish between record types.
 
 >[!NOTE] 
->Aktuelle Datensätze werden nicht nach dem Suchbegriff oder der ausgewählten Ansicht gefiltert.
+>Recent records are not filtered by search term or selected view.
 
   > [!div class="mx-imgBorder"]
-  > ![Suchfelder zeigt Bild an](media/Lookup_03-MRU_Entity_Images_56[1].png "Suchfelder zeigt Bild an")  
+  > ![Lookup fields shows image](media/Lookup_03-MRU_Entity_Images_56[1].png "Lookup fields shows image")  
   
-## <a name="record-type-selection-list"></a>Auswahlliste für Daten Satz Typen  
-Wenn Ergebnisse mehrere Daten Satz Typen umfassen, sehen Sie, wie viele Typen von Datensätzen vorhanden sind, und wählen Sie Sie aus der Liste aus.
+## <a name="record-type-selection-list"></a>Record type selection list  
+When results span multiple record types, you can see how many types of records there are and select them from the list.
 
   > [!div class="mx-imgBorder"]
-  > ![Sehen Sie, wie viele Datensätze](media/Lookup_04-MultipleEntityTypes[1].gif "Sehen Sie, wie viele Datensätze")  
+  > ![See how many records](media/Lookup_04-MultipleEntityTypes[1].gif "See how many records")  
   
-## <a name="create-a-new-record-if-you-dont-find-an-existing-record"></a>Neuen Datensatz erstellen, wenn kein vorhandener Datensatz gefunden wird
+## <a name="create-a-new-record-if-you-dont-find-an-existing-record"></a>Create a new record if you don’t find an existing record
 
-Wenn Sie keinen Datensatz finden, wählen Sie im Suchbereich **neu** aus, um einen neuen Datensatz zu erstellen.
+If you do not find a record, select **New** in the lookup area to create a new record.
 
 
-### <a name="replace-an-existing-record-from-a-lookup-field"></a>Ersetzen eines vorhandenen Datensatzes aus einem Nachschlage Feld
+### <a name="replace-an-existing-record-from-a-lookup-field"></a>Replace an existing record from a lookup field
 
-Sie können einen vorhandenen Datensatz ersetzen, indem Sie einfache und in Bezug stehende Suchvorgänge verwenden. Suchen Sie nach einem Datensatz. Wählen Sie dann den Datensatz aus, und ersetzen Sie ihn durch einen neuen Datensatz.
+You can replace an existing record while using simple and regarding-type lookups. Search for a record. Then select the record, and replace it with a new record.
 
-### <a name="change-a-view-in-a-lookup-field"></a>Ändern einer Ansicht in einem Nachschlage Feld 
+### <a name="change-a-view-in-a-lookup-field"></a>Change a view in a lookup field 
 
-Durch die Auswahl von **Ansicht ändern** können Sie Folgendes bestimmen:
- - Wie Sie Datensätze anzeigen möchten, z. b. Kontakte, die **eingehalten werden**, **Kontaktansicht**oder **aktive Kontakte**.
- - Was Sie in den Datensätzen anzeigen möchten, z. b. Name, e-Mail-Adresse oder Telefonnummer. Wenn Sie z. b. nur die Kontakte anzeigen möchten, die Sie befolgen, wählen Sie Ansicht \> **Kontakte** **ändern** aus. Nur die folgenden Kontakte werden angezeigt, wie hier dargestellt. 
+Selecting **Change View** lets you determine:
+ - How you want to view records such as **Contacts Being Followed**, **Contacts Lookup View**, or **Active Contacts**.
+ - What you want to view in the records, such as name, email, or telephone number. For example, if you want to view only the contacts that you follow, select **Change View** \> **Contacts being followed**. Only the contacts that you are following will be displayed, as illustrated here. 
 
-    ![Kontakt Typen für die Änderungs Ansicht](media/change-view.png "Kontakt Typen für die Änderungs Ansicht")
+    ![Change view contacts types](media/change-view.png "Change view contacts types")
 
 >[!IMPORTANT] 
->Die Option zum **Ändern der Ansicht** ist nicht sichtbar, wenn der Administrator die Option nicht für die Anzeige in ihren Ansichten konfiguriert hat.
+>The **Change View** option will not be visible if your administrator hasn't configured the option to appear in your views.
 
-### <a name="choose-from-multiple-records"></a>Aus mehreren Datensätzen auswählen
+### <a name="choose-from-multiple-records"></a>Choose from multiple records
 
-Wenn bei der Suche mehr Datensätze in einem Feld enthalten sind, als in den verfügbaren Anzeigebereich passen, wird der Anzeigebereich reduziert – d. h., die Datensätze, die in den Anzeigebereich passen, werden neben der Anzahl der Datensätze angezeigt, die nicht angezeigt werden. Wählen Sie die Zahl aus, um alle Datensätze anzuzeigen. Die folgenden Abbildungen zeigen den Unterschied zwischen reduzierten und nicht reduzierten Feldern.
+When lookup has more records in a field than can fit in the available display area, the display area is collapsed—that is, the records that do fit the display area are shown next to the number of records that are not shown. To view all records, select the number. The following images show the difference between collapsed and non-collapsed fields.
 
-**Prallte**
+**Collapsed:**
 
-![Reduzierter Anzeigebereich für mehrfach Suche](media/collapsed-multi-lookup-display-area.png "Reduzierter Anzeigebereich für mehrfach Suche")
+![Collapsed multi-lookup display area](media/collapsed-multi-lookup-display-area.png "Collapsed multi-lookup display area")
 
 
-**Nicht reduziert:**
+**Non-collapsed:**
 
-![Nicht reduzierter Anzeigebereich für mehrfach Suche](media/non-collapsed-multi-lookup-display-area.png "Nicht reduzierter Anzeigebereich für mehrfach Suche")
+![Non-collapsed multi-lookup display area](media/non-collapsed-multi-lookup-display-area.png "Non-collapsed multi-lookup display area")
