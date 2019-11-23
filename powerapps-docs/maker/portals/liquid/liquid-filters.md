@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 996b31766641376e9a01cbefc876f3eb2b7aabc7
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73543237"
@@ -131,7 +131,7 @@ Wählen Sie alle Objekte in einem Array aus, bei denen ein bestimmtes Attribut n
 Jack Robinson
 ```
 
-### <a name="first"></a>Erstes
+### <a name="first"></a>erstes
 
 Gibt das erste Element eines Arrays zurück.
 

@@ -44,14 +44,14 @@ In diesem Verfahren ersetzen Sie ein **[Text Eingabe-](controls/control-text-inp
 1. Wählen Sie in der Liste der Felder den Pfeil nach unten für **Anzahl von Mitarbeitern**aus, und öffnen Sie dann die Liste unter **Steuerungstyp**.
 
     > [!div class="mx-imgBorder"]
-    > ![dropdown Liste mit Optionen für eine zahlenkarte @ no__t-1
+    > ![Dropdown Liste mit Optionen für eine zahlenkarte](./media/customize-card/card-selector.png)
 
 1. Wählen Sie **Schieberegler bearbeiten**aus.
 
     Der Bildschirm spiegelt die vorgenommene Änderung wider.
 
     > [!div class="mx-imgBorder"]
-    > ![editform1 mit Schieberegler-Steuerelement @ no__t-1
+    > ![EditForm1 mit Schieberegler-Steuerelement](./media/customize-card/add-slider.png)
 
 ## <a name="unlock-and-customize-a-card"></a>Entsperren und Anpassen einer Karte
 
@@ -60,22 +60,22 @@ In diesem Verfahren entsperren Sie eine Karte und aktualisieren die Eigenschaft 
 1. Wählen Sie in **EditForm1**das **Schieberegler** -Steuerelement auf der Karte **Anzahl von Mitarbeitern** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![wählen Sie den Schieberegler @ no__t-1 aus.
+    > ![den Schieberegler auswählen](./media/customize-card/select-slider.png)
 
 1. Wählen Sie im rechten Bereich auf der Registerkarte **erweitert** das Sperrsymbol aus, um die Karte zu entsperren.
 
     > [!div class="mx-imgBorder"]
-    > ![unlock Karte @ no__t-1
+    > ![Entsperren der Karte](./media/customize-card/lock-icon.png)
 
 1. Legen Sie die Eigenschaft **Max** des **Schieberegler** -Steuer Elements auf 10.000 fest.
 
     > [!div class="mx-imgBorder"]
-    > ![max-Eigenschaft auf der Registerkarte "Erweitert" @ no__t-1
+    > ![Max-Eigenschaft auf der Registerkarte "Erweitert"](./media/customize-card/max-property.png)
 
     Das **Schieberegler** -Steuerelement zeigt einen genaueren Wert an.
 
     > [!div class="mx-imgBorder"]
-    > Bereich für ![slider: 0-10000 @ no__t-0
+    > ![Schieberegler-Bereich: 0-10000](./media/customize-card/final-slider.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

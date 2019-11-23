@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542742"
@@ -64,7 +64,7 @@ Wählen Sie mit dem [!include[](../../../includes/pn-adfs-short.md)] Verwaltungs
    > - Index: n/v (0)                                              
    > - URL: **https://portal.contoso.com/signin-saml2**
 
-8. Konfigurieren von Identitäten: Geben Sie https://portal.contoso.com/ an, klicken Sie auf **Hinzufügen**, und wählen Sie dann **weiter**
+8. Konfigurieren von Identitäten: Geben Sie https://portal.contoso.com/an, klicken Sie auf **Hinzufügen**, und wählen Sie dann **weiter**
    Gegebenenfalls können Sie weitere Identitäten für jedes zusätzliche Portal der vertrauenden Seite hinzufügen. Benutzer können sich über alle verfügbaren Identitäten hinweg authentifizieren.
 9. Wählen Sie Ausstellungs Autorisierungs Regeln aus: Wählen Sie **allen Benutzern Zugriff auf diese vertrauende Seite gestatten**aus, und klicken Sie dann auf **weiter**.
 10. Bereit zum Hinzufügen der Vertrauensstellung: Klicken Sie auf **weiter**
@@ -217,11 +217,11 @@ Der vorherige Abschnitt, der [!include[](../../../includes/pn-adfs-short.md)] be
 1.  Wählen Sie im Menü**Anwendungen** des Verzeichnisses die Option **Hinzufügen**aus.
 2.  Wählen Sie eine von meinem Unternehmen **entwickelte Anwendung hinzufügen**aus.
 3.  Geben Sie einen benutzerdefinierten Namen für die Anwendung an, und wählen Sie dann den Typ **Webanwendung und/oder Web-API**aus.
-4.  Geben Sie für die **Anmelde-URL** und den**App-ID-URI**die URL des Portals für beide Felder https://portal.contoso.com/ an.
+4.  Geben Sie für die **Anmelde-URL** und den**App-ID-URI**die URL des Portals für beide Felder https://portal.contoso.com/an.
     Dies entspricht dem **Service providerrealm** (wtrealm)-Website Einstellungs Wert.
 5. An diesem Punkt wird eine neue Anwendung erstellt. Wechseln Sie im Menü zum Abschnitt **Konfigurieren** .
 
-    Aktualisieren Sie im Abschnitt " **Single Sign-on** " den ersten **Antwort-URL** -Eintrag, um einen Pfad in der URL https://portal.contoso.com/signin-azure-ad einzuschließen.
+    Aktualisieren Sie im Abschnitt " **Single Sign-on** " den ersten **Antwort-URL** -Eintrag, um einen Pfad in der URL https://portal.contoso.com/signin-azure-adeinzuschließen.
 
     Dies entspricht dem Wert der Website Einstellung **assertionconsumerserviceurl** (wreply).
 
@@ -241,7 +241,7 @@ Dies entspricht dem **MetadataAddress** -Website Einstellungs Wert.
 
 ## <a name="shibboleth-identity-provider-3"></a>Shibboleth-Identitäts Anbieter 3
 
-Verwenden Sie die folgenden Richtlinien, um den [Shibboleth-Identitäts Anbieter](https://wiki.shibboleth.net/confluence/display/IDP30/Home) ordnungsgemäß als IDP-Dienst zu konfigurieren. Im folgenden wird davon ausgegangen, dass der IDP auf dem Domänen https://idp.contoso.com gehostet wird.  
+Verwenden Sie die folgenden Richtlinien, um den [Shibboleth-Identitäts Anbieter](https://wiki.shibboleth.net/confluence/display/IDP30/Home) ordnungsgemäß als IDP-Dienst zu konfigurieren. Im folgenden wird davon ausgegangen, dass der IDP auf dem Domänen https://idp.contoso.comgehostet wird.  
 
 Die Verbund Metadaten-URL ist https://idp.contoso.com/idp/shibboleth
 

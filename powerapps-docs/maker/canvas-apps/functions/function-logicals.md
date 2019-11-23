@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992555"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Die Funktionen „And“, „Or“ und „Not“ in PowerApps
 
@@ -45,8 +44,8 @@ Diese Funktionen arbeiten mit logischen Werten. Sie können Ihnen nicht direkt e
 
 ## <a name="syntax"></a>Syntax
 
-**And**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
-**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**And**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**( *LogicalFormula* )
 
 - *LogicalFormula(s)* : erforderlich.  Logische Formeln, die bewertet und verarbeitet werden sollen
@@ -63,8 +62,8 @@ In den Beispielen in diesem Abschnitt werden diese globalen Variablen verwendet:
 
 Wenn Sie diese globalen Variablen in einer APP erstellen möchten, fügen Sie ein [**Button**](../controls/control-button.md) -Steuerelement ein, und legen **Sie dessen onselect** -Eigenschaft auf diese Formel fest:
 
-```powerapps-comma
-Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
+```powerapps-dot
+Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
 Wählen Sie die Schaltfläche aus (indem Sie darauf klicken, während Sie die Alt-Taste gedrückt halten), und legen Sie dann die **Text** -Eigenschaft eines [**Label**](../controls/control-text-box.md) -Steuer Elements auf eine Formel in der ersten Spalte der nächsten Tabelle fest.
@@ -80,6 +79,6 @@ Wählen Sie die Schaltfläche aus (indem Sie darauf klicken, während Sie die Al
 | **Nicht (a)** | Testet den **Wert von.** Das-Argument ist *false*, sodass die-Funktion das Gegenteil-Ergebnis zurückgibt. | *TRUE* |
 | **Keine** | Identisch mit dem vorherigen Beispiel mit Visual Basic Notation. | *TRUE* |
 | **! ein** | Identisch mit dem vorherigen Beispiel mithilfe der JavaScript-Notation. | *TRUE* |
-| **Len (&nbsp;S @ no__t-2) &nbsp; @ no__t-4 @ no__t-520 und @ no__t-6not @ no__t-7isblank (&nbsp;S @ no__t-9)** | Testet, ob die Länge von **s** kleiner als 20 ist und ob es sich nicht um einen **leeren** Wert handelt. Die Länge ist kleiner als 20, und der Wert ist nicht leer. Daher ist das Ergebnis " *true*". | *TRUE* |
-| **Or (&nbsp;len (&nbsp;S @ no__t-3) &nbsp; @ no__t-5 @ no__t-610, x @ no__t-7 @ no__t-8 @ no__t-9100, y @ no__t-10 @ no__t-11 @ no__t-12100 @ no__t-13)** | Testet, ob die Länge von **s** kleiner als 10 ist, ob **x** kleiner als 100 ist und ob **y** kleiner als 100 ist. Das erste und dritte Argument sind false, das zweite Argument ist jedoch true. Daher gibt die Funktion *true*zurück. | *TRUE* |
-| **Nicht isblank (&nbsp;S @ no__t-2)** | Testet, ob s *leer*ist, und gibt *false*zurück. Gibt **nicht** das Gegenteil dieses Ergebnisses zurück, was *true*ist. | *TRUE* |
+| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 und&nbsp;nicht&nbsp;isblank (&nbsp;s&nbsp;)** | Testet, ob die Länge von **s** kleiner als 20 ist und ob es sich nicht um einen **leeren** Wert handelt. Die Länge ist kleiner als 20, und der Wert ist nicht leer. Daher ist das Ergebnis " *true*". | *TRUE* |
+| **Or (&nbsp;len (&nbsp;s&nbsp;)&nbsp;<&nbsp;10, x&nbsp;<&nbsp;100, y&nbsp;<&nbsp;100&nbsp;)** | Testet, ob die Länge von **s** kleiner als 10 ist, ob **x** kleiner als 100 ist und ob **y** kleiner als 100 ist. Das erste und dritte Argument sind false, das zweite Argument ist jedoch true. Daher gibt die Funktion *true*zurück. | *TRUE* |
+| **Nicht isblank (&nbsp;s&nbsp;)** | Testet, ob s *leer*ist, und gibt *false*zurück. Gibt **nicht** das Gegenteil dieses Ergebnisses zurück, was *true*ist. | *TRUE* |
