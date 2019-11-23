@@ -12,7 +12,7 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.openlocfilehash: 86074f61ffd9c19b3f532c150355dffe006fdc2b
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72344552"

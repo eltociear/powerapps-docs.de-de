@@ -1,5 +1,5 @@
 ---
-title: ' Tabellenkomponente | Microsoft Docs'
+title: " Tabellenkomponente | Microsoft-Dokumentation"
 description: Implementieren einer Tabellenkomponente
 ms.custom: ''
 manager: kvivek
@@ -8,20 +8,25 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72340090"
 ---
+# <a name="implementing-table-component"></a>Implementieren der Tabellenkomponente
 
-# <a name="implementing-table-component"></a>Implementieren einer Tabellenkomponente
-
-Diese Beispielkomponente rendert eine Tabelle mit zwei Spalten. Die linke Spalte enthält den Namen der API-Methode oder -Eigenschaft und die rechte Spalte enthält den Wert, der von der API zurückgegeben wird. Sie können diese Komponente auf verschiedenen Gerätetypen öffnen oder Ihre Sprache oder Benutzereinstellungen ändern, um zu sehen, dass die Werte in der Tabelle ordnungsgemäß geändert werden.
+Diese Beispiel Komponente rendert eine Tabelle mit zwei Spalten. Die linke Spalte zeigt den Namen der API-Methode oder-Eigenschaft an, und die Rechte Spalte zeigt den Wert an, der von der API zurückgegeben wird. Sie können diese Komponente auf den verschiedenen Gerätetypen öffnen oder Ihre Sprach-oder Benutzereinstellungen ändern, um die ordnungsgemäße Anpassung der Werte in der Tabelle anzuzeigen.
 
 > [!div class="mx-imgBorder"]
-> ![Tabellenkomponente](../media/table-control.png "Tabellenkomponente")
+> ![Tabellen]Komponenten-(../media/table-control.png "Tabellenkomponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgestützte Apps
+Modellgesteuerte Apps
 
-## <a name="manifest"></a>Manifest
+## <a name="manifest"></a>Kundiger
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,19 +48,19 @@ export class TSTableControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag to track if control is in full screen mode or not
   private _isFullScreen: boolean;
-  // Reference to HTMLTableElement rendered by control
+  // reference to HTMLTableElement rendered by control
   private _tableElement: HTMLTableElement;
-  // Reference to 'Set Full Screen' HTMLButtonElement
+  // reference to 'Set Full Screen' HTMLButtonElement
   private _setFullScreenButton: HTMLButtonElement;
-  // Reference to 'Lookup Objects' HTMLButtonElement
+  // reference to 'Lookup Objects' HTMLButtonElement
   private _lookupObjectsButton: HTMLButtonElement;
-  // Reference to 'Lookup Result Div' HTMLDivElement
+  // reference to 'Lookup Result Div' HTMLDivElement
   // Used to display information about the item selected by the lookup
   private _lookupObjectsResultDiv: HTMLDivElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
@@ -426,18 +431,18 @@ export class TSTableControl
 }
 ```
 
-Dieses Beispiel enthält Beispiele zur Verwendung von Methoden aus `IClient, IUserSettings, IUtility, IFormatting interfaces`.
+Dieses Beispiel enthält Beispiele für die Verwendung von Methoden aus der `IClient, IUserSettings, IUtility, IFormatting interfaces`.
 
-Diese Komponente demonstriert außerdem die zwei Dienstprogrammfunktionen `setFullScreen` und `lookupObjects`. Diese Funktionen werden durch Anklicken der Schaltfläche aufgerufen, die als Teil der Codekomponente dargestellt wird. Die `setFullScreen`-Schaltfläche schaltet die Komponente in oder aus dem Vollbildmodus. Die `lookupObjects`-Schaltfläche öffnet einen Suchdialog und bringt dann den ausgewählten Datensatz als Text in div ein.
+Diese Komponente stellt auch zwei Dienstprogramm Funktionen (`setFullScreen` und `lookupObjects` dar. Diese Funktionen werden durch Klicken auf die Schaltfläche aufgerufen, die als Teil der Code Komponente gerendert wird. Die Schaltfläche `setFullScreen` schaltet die Komponente ein und aus dem Vollbildmodus. Mit der Schaltfläche "`lookupObjects`" wird ein Such Dialogfeld geöffnet und der ausgewählte Datensatz als Text in div eingefügt.
 
-In diesem Beispiel rendern wir eine HTML-Schaltfläche und fügen die Schaltfläche einen JavaScript-`onClick`-Ereignishandler `onLookupObjectsButtonClick` hinzu. Beim Klicken auf diese Schaltfläche rufen wir die `context.utils.lookupObjects()`-Methode auf und übergeben sie als einen Parameter an ein Array von Entitätsnamen. 
+In diesem Beispiel wird eine HTML-Schaltfläche und ein JavaScript-`onClick` Ereignishandler `onLookupObjectsButtonClick` an die Schaltfläche angehängt. Beim Klicken auf diese Schaltfläche rufen wir `context.utils.lookupObjects()` Methode auf und übergeben als Parameter ein Array von Entitäts Namen. 
 
-Diese Methode gibt ein JavaScript-Promise-Objekt zurück, das den Abschluss oder den Fehler des Anrufs im Suchdialog angezeigt. Wenn das Promise erfolgreich aufgelöst wird, wird das Suchobjekt, das der Benutzer ausgewählt hat, als Parameter in die Rückrufmethode übergeben und kann als data.id, data.name, data.entityType verwiesen werden.
+Diese Methode gibt ein JavaScript Promise-Objekt zurück, das den Abschluss oder das Fehlschlagen des Aufrufens des Such Dialogfelds darstellt. Wenn die Zusicherung erfolgreich aufgelöst wird, wird das Nachschlage Objekt, das der Benutzer ausgewählt hat, als Parameter an die Rückruf Methode übergeben, und es kann als Data.ID, Data.Name, Data. EntityType verwiesen werden.
 
-Die Callback-Methode injiziert diese Informationen als HTML in ein Div, das auf der Codekomponente gerendert wird, um dem Benutzer die ausgewählten Ergebnisse zu präsentieren. Wenn das Promise abgelehnt wird, wird die Fehler-Rückrufmethode ausgelöst, wo Ihre Komponente das Fehlerszenario entsprechend behandeln kann.
+Die Rückruf Methode fügt diese Informationen als HTML in ein div-Element ein, das in der Code Komponente gerendert wird, um die ausgewählten Ergebnisse dem Benutzer zu präsentieren. Wenn die Zusage abgelehnt wird, wird die Fehler Rückruf Methode aufgerufen, in der die Komponente das Fehlerszenario entsprechend behandeln kann.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
+[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)

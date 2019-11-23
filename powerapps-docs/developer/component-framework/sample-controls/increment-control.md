@@ -1,6 +1,6 @@
 ---
-title: ' Erhöhungskomponente | Microsoft Docs'
-description: Implementieren einer Erhöhungskomponente
+title: " Inkrement-Komponente | Microsoft-Dokumentation"
+description: Implementieren einer Inkrement-Komponente
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,22 +8,27 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 0b26e8a7b12aef9801413b5290e361a99413918f
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72340182"
 ---
+# <a name="implementing-increment-component"></a>Implementieren der Inkrement-Komponente
 
-# <a name="implementing-increment-component"></a>Implementieren einer Erhöhungskomponente
+Diese Beispiel Komponente zeigt, wie Daten mit dem powerapps-Komponenten Framework und der Fehlerbehandlung gebunden werden. Diese Komponente wird als Textfeld mit einer `Increment`-Schaltfläche in der Laufzeit gerendert. Das Textfeld zeigt den aktuellen Wert an, und die `Increment` Schaltfläche ist klickbar. Wenn Sie auf die Schaltfläche klicken, wird der Wert im Textfeld um 1 angehoben. Der Inkrement-Wert kann auf eine beliebige gewünschte Zahl geändert werden.
 
-Diese Beispielkomponente zeigt, wie man Daten mit dem PowerApps component framework und der Fehlerbehandlung bindet. Diese Komponente wird zur Laufzeit als Textfeld mit einer `Increment`-Schaltfläche gerendert. Das Textfeld zeigt den aktuellen Wert und die `Increment`-Schaltfläche kann angeklickt werden. Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der Wert der Erhöhung kann zu einem beliebigen Zahl geändert werden.
-
-Wenn Sie diese Komponente implementieren möchten, müssen Sie als erstes die [Manifest](../manifest-schema-reference/manifest.md)-Datei definieren und dann die benutzerdefinierte Logik in TypeScript implementieren.
+Zum Implementieren dieser Komponente müssen Sie zuerst die Manifestressource definieren und dann in typescript [die Benutzer](../manifest-schema-reference/manifest.md) definierte Logik implementieren.
 
 > [!div class="mx-imgBorder"]
-> ![Erhöhungskomponente](../media/increment-control.png "Erhöhungskomponente")
+> Komponenten(../media/increment-control.png "Inkrement-Komponente") ![Inkrement]
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps und Canvas-Apps (experimentelle Vorschau) 
+Modell gesteuerte apps und Canvas-Apps (experimentelle Vorschau) 
 
-## <a name="manifest"></a>Manifest
+## <a name="manifest"></a>Kundiger
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -59,7 +64,7 @@ export class TSIncrementControl
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -242,15 +247,15 @@ export class TSIncrementControl
 </root>
 ```
 
-Wenn Sie auf die Schaltfläche klicken, wird der Wert innerhalb des Textfelds um 1 erhöht. Der aktualisierte Wert fließt über die `notifyOutputChanged`-Methode zum PowerApps component framework.
+Wenn Sie auf die Schaltfläche klicken, wird der Wert im Textfeld um 1 angehoben. Der aktualisierte Wert wird über `notifyOutputChanged` Methode an das powerapps-Komponenten Framework weitergeleitet.
 
 > [!NOTE]
-> Sie können den Erhöhungswert ändern, wenn Sie die Komponente für das Feld im Formular konfigurieren.
+> Sie können den Inkrementwert ändern, wenn Sie die Komponente für das Feld im Formular konfigurieren.
 
-Bearbeiten Sie den Wert im Textfeld, und wenn es sich um eine gültige Ganzzahl handelt, dann aktualisiert es den Wert auf PowerApps component framework. Sie können kontinuierlich auf die `Increment`-Schaltfläche klicken und sie aktualisieren. Wenn es eine ungültige Ganzzahl ist, wird eine Fehlermeldung angezeigt.
+Bearbeiten Sie den Wert im Textfeld, und wenn es sich um eine gültige ganze Zahl handelt, wird der Wert in das powerapps-Komponenten Framework aktualisiert. Sie können auf die Schaltfläche `Increment` fortlaufend klicken und die Schaltfläche Aktualisieren. Wenn es sich um eine ungültige ganze Zahl handelt, wird eine Fehlermeldung ausgegeben.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
+[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)

@@ -9,7 +9,7 @@ manager: kvivek
 ms.date: 10/01/2019
 ms.openlocfilehash: 195a6b56ee440cebfdc46c3aa3bb3fc2b5ce3101
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72345449"

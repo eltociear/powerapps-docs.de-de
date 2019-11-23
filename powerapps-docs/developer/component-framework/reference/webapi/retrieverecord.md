@@ -13,7 +13,7 @@ ms.topic: article
 ms.assetid: dddeecc9-5067-420d-8bd7-4c914218e969
 ms.openlocfilehash: 9c77bf9975bd1f1f115df9385061c008975cc184
 ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/12/2019
 ms.locfileid: "72341700"
