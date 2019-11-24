@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73650521"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Katalog-Steuerelement in Canvas-apps
 
@@ -39,9 +38,9 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 **[Default:](properties-core.md)** Das Element oder der Datensatz aus der Datenquelle, das bzw. der beim Starten der App im Katalog ausgewählt werden soll.
 
-**[Items](properties-core.md)** : Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
+**[Items](properties-core.md)** – Die Quelle der Daten, die in einem Steuerelement angezeigt werden, z.B. ein Katalog, eine Liste oder ein Diagramm.
 
-**Selected** – Das ausgewählte Element.
+**Selected**: Das ausgewählte Element.
 
 ## <a name="additional-properties"></a>Zusätzliche Eigenschaften
 
@@ -93,7 +92,7 @@ Wenn ein Benutzer einen Bildlauf zum **flexiblen Height** Gallery-Steuerelement 
 
 ## <a name="related-functions"></a>Verwandte Funktionen
 
-[**Filter**( *DataSource*; *Formula* )](../functions/function-filter-lookup.md)
+[**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Beispiele
 

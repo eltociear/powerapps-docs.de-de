@@ -63,7 +63,7 @@ Das-Steuerelement unterstützt QR-Codes, datenmatrixcodes und diese Arten von Ba
 
 **Preferfrontcamera** : gibt an, ob die Frontkamera, sofern verfügbar, für die Überprüfung verwendet wird.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **Type** : der Typ des Codes, der in der zuletzt erfolgreichen Überprüfung erkannt wurde.
 

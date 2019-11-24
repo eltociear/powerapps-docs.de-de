@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73650426"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="microphone-control-in-powerapps"></a>Mikrofon-Steuerelement in PowerApps
 Ein Steuerelement, über das App-Benutzer mit ihren Geräten Ton aufnehmen können.
@@ -73,7 +72,7 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 
 **[OnSelect](properties-core.md)** – Legt fest, wie die App reagiert, wenn der Benutzer auf ein Steuerelement tippt oder klickt.
 
-**OnStart**: gibt an, wie die App reagiert, wenn der Benutzer eine Aufzeichnung mit einem Steuerelement-Mikrofon beginnt.
+**OnStart**: Gibt an, wie die App reagiert, wenn der Benutzer die Aufnahme per Mikrofon-Steuerelement startet.
 
 **[PressedBorderColor](properties-color-border.md)** – Die Rahmenfarbe eines Steuerelements, wenn der Benutzer auf das Steuerelement tippt oder klickt.
 
@@ -85,7 +84,7 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 
 **[TabIndex](properties-accessibility.md)** : Navigationsreihenfolge der Tastatur in Bezug auf andere Steuerelemente.
 
-**[QuickInfo](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
+**[Tooltip](properties-core.md)** : Erklärender Text, der angezeigt wird, wenn der Benutzer auf ein Steuerelement zeigt.
 
 **[Visible](properties-core.md)** – Legt fest, ob ein Steuerelement angezeigt wird oder ausgeblendet ist.
 
@@ -96,12 +95,12 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 **[Y](properties-size-location.md)** – Der Abstand zwischen dem oberen Rand eines Steuerelements und dem oberen Rand des übergeordneten Containers (bzw. des Bildschirms, wenn kein übergeordneter Container vorhanden ist).
 
 ## <a name="related-functions"></a>Verwandte Funktionen
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Beispiel
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Hinzufügen von Tönen zu einem benutzerdefinierten Katalog-Steuerelement
 1. Fügen Sie ein **Mikrofon** hinzu, nennen Sie es **MyMic**, und legen Sie seine **OnStop**-Eigenschaft auf folgende Formel fest:<br>
-   **Collect(MySounds; MyMic.Audio)**
+   **Collect(MySounds, MyMic.Audio)**
 
     Möchten Sie wissen, wie Sie [ein Steuerelement hinzufügen, benennen und konfigurieren](../add-configure-controls.md)?
 
@@ -111,7 +110,7 @@ Audiodaten werden unter Android im Format 3gp, unter iOS im Format AAC und in We
 4. Drücken Sie F5, klicken oder tippen Sie auf **MyMic**, um mit der Aufzeichnung zu beginnen, und klicken oder tippen Sie anschließend erneut, um die Aufzeichnung zu beenden.
 5. Klicken oder tippen Sie im Steuerelement des Typs **benutzerdefinierter Katalog** auf die Schaltfläche zur Wiedergabe im **[Audio](control-audio-video.md)** -Steuerelement, um Ihre Aufzeichnung wiederzugeben.
 6. Fügen Sie eine beliebig große Anzahl von Aufzeichnungen ein, und kehren Sie anschließend durch Drücken von ESC in den Standardarbeitsbereich zurück.
-7. (optional) Fügen Sie in der Vorlage für das Steuerelement des Typs **benutzerdefinierter Katalog** ein **[Schaltflächen](control-button.md)** -Steuerelement ein, und legen Sie seine  **[OnSelect](properties-core.md)** -Eigenschaft auf **Remove(MySounds; ThisItem)** fest. Drücken Sie anschließend F5, und entfernen Sie eine Aufzeichnung durch Klicken oder Tippen auf das entsprechende **Schaltflächen**-Steuerelement.
+7. (optional) Fügen Sie in der Vorlage für das Steuerelement des Typs **benutzerdefinierter Katalog** ein **[Schaltflächen](control-button.md)** -Steuerelement ein, und legen Sie seine  **[OnSelect](properties-core.md)** -Eigenschaft auf **Remove(MySounds, ThisItem)** fest. Drücken Sie anschließend F5, und entfernen Sie eine Aufzeichnung durch Klicken oder Tippen auf das entsprechende **Schaltflächen**-Steuerelement.
 
 Verwenden Sie die  **[SaveData](../functions/function-savedata-loaddata.md)** -Funktion, um die Aufzeichnungen lokal zu speichern, oder die  **[Patch](../functions/function-patch.md)** -Funktion, um eine Datenquelle zu aktualisieren.
 
@@ -123,7 +122,7 @@ Es gelten dieselben Richtlinien wie für **[Schaltflächen](control-button.md)**
 * Sie sollten eine alternative Eingabemöglichkeit für Benutzer hinzufügen, die eine Sprachbehinderung haben oder nicht über ein Mikrofon verfügen. Z.B. eine **[Texteingabe](control-text-input.md)** , über die Benutzer Text eingeben können
 
 ### <a name="color-contrast"></a>Farbkontrast
-Zwischen den folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
+Zwischen folgenden Eigenschaften muss es einen ausreichenden Farbkontrast geben:
 * **[Bild](properties-visual.md)** und ggf. die Schaltfläche „Text“ und das Symbol
 
 Dies ist ein Zusatz zu den [Standardanforderungen für Farbkontraste](../accessible-apps-color.md).
