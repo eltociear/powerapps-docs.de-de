@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Entität mit Web-API (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie eine POST-Anforderung erstellen, um Daten zu senden, um eine Entität auf Common Data Service mithilfe der Web-API zu erstellen'
+title: Erstellen eines Entitätsdatensatzes mit der Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie eine POST-Anforderung erstellen, um Daten zu senden, um einen Entitätsdatensatz auf Common Data Service mithilfe der Web-API zu erstellen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 64561c0b655e02a7537af4268b2a92b7a1677f9a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748362"
 ---
+# <a name="create-an-entity-record-using-the-web-api"></a>Abrufen eines Entitätsdatensatzes mit der Web-API
 
-# <a name="create-an-entity-using-the-web-api"></a>Erstellen einer Entität mithilfe des Web-API
-
-Nutzen Sie eine POST-Anfrage, um eine Daten zum Erstellen einer Entität zu senden. Sie können mehrere verknüpfte Entitäten in einem einzelnen Vorgang erstellten, indem Sie die "tiefe Einfügung" nutzen. Sie müssen auch damit vertraut sein, wie Sie Werte festlegen, um eine neue Entität mit vorhandenen Entitäten mithilfe der @odata.bind-Anmerkung zuzuordnen.  
+Nutzen Sie eine POST-Anfrage, um eine Daten zum Erstellen einer Entität zu senden. Sie können mehrere verknüpfte Entitätsdatensätze in einem einzelnen Vorgang erstellten, indem Sie die 'tiefe Einfügung' nutzen. Sie müssen auch damit vertraut sein, wie Sie Werte festlegen, um einen neuen Entitätsdatensatz mit vorhandenen Entitäten mithilfe der @odata.bind-Anmerkung zuzuordnen.  
 
 > [!NOTE]
 > Informationen dazu, wie Sie Entitätsmetadaten mit der Internet-API erstellen und aktualisieren, siehe [Erstellen und Aktualisieren von Entitätsdefinitionen mithilfe der Internet-API](create-update-entity-definitions-using-web-api.md).
@@ -33,7 +38,7 @@ Nutzen Sie eine POST-Anfrage, um eine Daten zum Erstellen einer Entität zu send
 
 ## <a name="basic-create"></a>Grundlegende Erstellung
 
- In diesem Beispiel wird eine neue Firmenentität erstellt. Der `OData-EntityId`-Antwortheader enthält die URI der erstellten Entität.
+ In diesem Beispiel wird ein neuer Kontoentitätsdatensatz erstellt. Der `OData-EntityId`-Antwortheader enthält die URI der erstellten Entität.
 
  **Anforderung**
 
@@ -65,11 +70,11 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(7eb682f1-ca75-e511-80d
 
 ```
 
-Zum Erstellen einer neuen Entität müssen Sie die passenden Eigenschaftennamen und -arten ermitteln. Für alle Systementitäten und Attribute können Sie diese Informationen im Thema für diese Entität unter [Über die Entitätsreferenz](../reference/about-entity-reference.md) finden. Informationen zu benutzerdefinierten Entitäten oder Attributen finden Sie in der Definition der Entität im [CSDL $metadata document](web-api-types-operations.md#csdl-metadata-document). Weitere Informationen:[Entitätstypen](web-api-types-operations.md#entity-types)
+Zum Erstellen eines neuen Entitätsdatensatzes müssen Sie die passenden Eigenschaftennamen und -arten ermitteln. Für alle Systementitäten und Attribute können Sie diese Informationen im Thema für diese Entität unter [Über die Entitätsreferenz](../reference/about-entity-reference.md) finden. Informationen zu benutzerdefinierten Entitäten oder Attributen finden Sie in der Definition der Entität im [CSDL $metadata document](web-api-types-operations.md#csdl-metadata-document). Weitere Informationen:[Entitätstypen](web-api-types-operations.md#entity-types)
 
 <a name="bkmk_CreateRelated"></a>
 
-## <a name="create-related-entities-in-one-operation"></a>Erstellen verknüpfter Entitäten in einem Vorgang
+## <a name="create-related-entity-records-in-one-operation"></a>Erstellen verknüpfter Entitätsdatensätze in einem Vorgang
 
  Sie können die Entitäten, die miteinander verknüpft werden, indem Sie sie als Navigationseigenschaftenwerte definieren. Dies ist bekannt als *tiefe Einfügung*.
 
@@ -125,7 +130,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(3c6e4b5f-86f6-e411-80d
 
 <a name="bkmk_associateOnCreate"></a>
 
-## <a name="associate-entities-on-create"></a>Entitäten bei Erstellung zuordnen
+## <a name="associate-entity-records-on-create"></a>Entitätsdatensätze bei Erstellung zuordnen
 
  Um neue Entitäten vorhandene Entitäten zuzuordnen wenn diese erstellt werden, müssen Sie den Wert für Einzelwert-Navigationseigenschaften über die `@odata.bind`-Notation festlegen.
 
@@ -172,11 +177,11 @@ Sehen Sie auch [Erkennen von doppelten Daten mithilfe der Web-API](manage-duplic
 
 <a name="bkmk_initializefrom"></a>
 
-## <a name="create-a-new-entity-from-another-entity"></a>Erstellen einer neuen Entität aus einer anderen Entität
+## <a name="create-a-new-entity-record-from-another-entity"></a>Erstellen eines neuen Entitätsdatensatzes aus einer anderen Entität
 
 Verwenden Sie `InitializeFrom function`, um einen neuen Datensatz im Rahmen eines vorhandenen Datensatzes zu erstellen, wobei eine Zuordnung zwischen den Entitäten vorhanden ist, zu denen die Datensätze gehören. 
 
-Im folgenden Beispiel wird gezeigt, wie Sie einen Firmendatensatz mithilfe der Attributwerte eines vorhandenen Datensatzes einen Firmenentität einem `accountid`-Wert gleich c65127ed-2097-e711-80eb-00155db75426 erstellen.
+Im folgenden Beispiel wird gezeigt, wie Sie einen Kontodatensatz mithilfe der Attributwerte eines vorhandenen Datensatzes einen Kontoentität mit `accountid`-Wert gleich c65127ed-2097-e711-80eb-00155db75426 erstellen.
 
 **Anforderung**
 
@@ -207,7 +212,7 @@ Die Antwort, die von InitializeFrom-Anforderung empfangen wird, besteht aus zuge
 
 > [!NOTE]
 > Um zu bestimmen, dass zwei Entitäten zugeordnet werden können, können Sie diese Abfrage verwenden:  
-GET [Organisations-URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
+GET [Organization URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
 
 Andere Attributwerte können für den neuen Datensatz auch festgelegt und/oder geändert werden, indem Sie sie im JSON-Anforderungstext, wie im Beispiel gezeigt, hinzufügen.
 

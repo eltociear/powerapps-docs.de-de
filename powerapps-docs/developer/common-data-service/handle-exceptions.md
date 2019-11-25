@@ -1,6 +1,6 @@
 ---
 title: Behandlung von Ausnahmen in einem Plug-In (Common Data Service) | Microsoft Docs
-description: 'Verstehen Sie das Systemverhalten, wenn ein Plug-in eine Ausnahme an den Aufrufer zurückgibt.'
+description: Verstehen Sie das Systemverhalten, wenn ein Plug-in eine Ausnahme an den Aufrufer zurückgibt.
 ms.custom: ''
 ms.date: 09/20/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 95850e967347040618f7b445df7bd802bb5e33bb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748285"
 ---
 # <a name="handle-exceptions-in-plug-ins"></a>Behandlung von Ausnahmen in Plug-ins
 

@@ -1,6 +1,6 @@
 ---
-title: Nutzen von XRM-Tooling zum Abrufen von Daten (Common Data Service) | Microsoft Docs
-description: 'Verwenden der CrmServiceClient-Klasse, um Daten aus Common Data Service abzurufen'
+title: Verwendung von XRM-Tools zum Abrufen von Daten (Common Data Service) | Microsoft-Dokumentation
+description: Verwenden der CrmServiceClient-Klasse, um Daten aus Common Data Service abzurufen
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 2afc057e-8f70-4bea-bad4-d01e18ed92fd
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7625f914327742f3c86fef6810b5082a47845904
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748322"
 ---
 # <a name="use-xrm-tooling-to-retrieve-data"></a>XRM-Tools verwenden, um Daten abzurufen
 
@@ -98,5 +104,5 @@ else
 ### <a name="see-also"></a>Siehe auch  
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Verwenden von XRM-Tooling zur Herstellung einer Verbindung mit Common Data Service](use-crmserviceclient-constructors-connect.md)<br />
-[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)
+[Verwenden von XRM-Tools, um eine Verbindung zu Common Data Service herzustellen](use-crmserviceclient-constructors-connect.md)<br />
+[Use XRM Tooling API to execute actions in Common Data Service](use-xrm-tooling-execute-actions.md)

@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 4a27a5364a4ae12fecc3a72dbb52115e415dcdb8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708173"
 ---
-
 # <a name="understand-liquid-operators"></a>Lernen Sie Liquid-Operatoren kennen
 
 Liquid hat Zugriff auf alle allgemeinen logischen und Vergleichsoperatoren. Diese können in Tags verwendet werden, z. B. **falls** und **sofern**.

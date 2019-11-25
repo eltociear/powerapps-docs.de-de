@@ -1,6 +1,6 @@
 ---
 title: Timeout einstellen bei externen Aufrufen in einem Plugin | MicrosoftDocs
-description: 'Begrenzen Sie den Zeitraum, in dem externe Aufrufe eine Antwort innerhalb von Plugins erwarten.'
+description: Begrenzen Sie den Zeitraum, in dem externe Aufrufe eine Antwort innerhalb von Plugins erwarten.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 08/19/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b4ed3550e8a2dee0dc3ae447b7fca6c6702150d9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748239"
 ---
 # <a name="set-timeout-when-making-external-calls-in-a-plug-in"></a>Timeout einstellen bei externen Anrufen in einem Plug-in
 

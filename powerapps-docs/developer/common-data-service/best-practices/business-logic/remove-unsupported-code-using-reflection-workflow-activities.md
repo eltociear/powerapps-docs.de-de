@@ -1,6 +1,6 @@
 ---
-title: 'Entfernen von nicht unterstütztem Code, der Reflektion in benutzerdefinierten Workflowaktivitäten verwendet | MicrosoftDocs'
-description: 'Sie müssen den Codeausschnitt, der in diesem Thema beschrieben wird, entfernen, wenn Sie ihn in benutzerdefinierten Workflowaktivitäten finden'
+title: Entfernen von nicht unterstütztem Code, der Reflektion in benutzerdefinierten Workflowaktivitäten verwendet | MicrosoftDocs
+description: Sie müssen den Codeausschnitt, der in diesem Thema beschrieben wird, entfernen, wenn Sie ihn in benutzerdefinierten Workflowaktivitäten finden
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -13,13 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 18/15/2019
+ms.date: 08/15/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1cfd0c9c0ac9b2a5ce5f71f1035a7d6c2f84be2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748243"
 ---
 # <a name="remove-unsupported-code-that-uses-reflection-in-custom-workflow-activities"></a>Entfernen von nicht unterstütztem Code, der Reflektion in benutzerdefinierten Workflowaktivitäten verwendet
 

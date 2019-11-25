@@ -1,6 +1,6 @@
 ---
 title: Web-API-Funktionen verwenden (Common Data Service)| Microsoft Docs
-description: 'Funktionen sind wiederverwendbare Operationen, die mit einer GET-Anforderung verwendet werden, um Daten von Common Data Service abzurufen.'
+description: Funktionen sind wiederverwendbare Operationen, die mit einer GET-Anforderung verwendet werden, um Daten von Common Data Service abzurufen.
 ms.custom: ''
 ms.date: 09/05/2019
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: c6de9c12-e8e3-4ed5-a6ed-18ade572065f
 caps.latest.revision: 45
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 46d9db977c1db3dcd336ed6eda0f30228468a529
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748346"
 ---
 # <a name="use-web-api-functions"></a>Nutzen von Web-API-Funktionen
 

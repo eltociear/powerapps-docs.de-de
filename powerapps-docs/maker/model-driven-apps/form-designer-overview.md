@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 96cae5273855fd6458a501aa0757da12ba8e1701
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701661"
 ---
 # <a name="overview-of-the-model-driven-form-designer"></a>Übersicht über den modellgestützten Formulardesigner
 Der neue modellgestützte Formular-Designer bietet eine moderne WYSIWYG-Authoring-Umgebung, wenn Sie mit modellgestützten Formularen arbeiten. Sie enthält einige Verbesserungen, die im klassischen modellgestützten Formular-Designer nicht verfügbar sind. 
@@ -40,7 +46,7 @@ Die Formular-Designer-Schnittstelle hat die folgenden vier Bereiche:
 - An Breite anpassen - Schnelle Aktion, um die Formularvorschau an die verfügbare Breite anzupassen.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerOverview.png "Formular-Designer Darstellung")
+> ![](media/FormDesignerOverview.png "Form designer layout")
 
 ## <a name="see-also"></a>Siehe auch
 [Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem Formulardesigner](create-and-edit-forms.md)  

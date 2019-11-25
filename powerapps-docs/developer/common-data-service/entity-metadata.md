@@ -1,6 +1,6 @@
 ---
 title: Entitätmetadaten| Microsoft Docs
-description: Erfahren Sie mehr zur Nutzung von Entität-Metadaten im Common Data Service
+description: Weitere Informationen über die Verwendung von Attributmetadaten in Common Data Service.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7c6845a68f5f076b668f3604fe899991827077f2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748293"
 ---
 <!-- 
 Was Mike Carter
@@ -30,7 +36,7 @@ Overlap with content in https://docs.microsoft.com/dynamics365/customer-engageme
 -->
 # <a name="entity-metadata"></a>Entitätsmetadaten
 
-Jede Entität enthält die Funktion, strukturierte Daten zu speichern. Für Entwickler entsprechen Entitäten den Klassen, die Sie beim Arbeiten mit Daten im Common Data Service verwenden.
+Jede Entität enthält die Funktion, strukturierte Daten zu speichern. Für Entwickler entsprechen Entitäten den Klassen, die Sie beim Arbeiten mit Daten in Common Data Service verwenden.
 
 ## <a name="entity-names"></a>Entitätsnamen
 Jede Entitäten hat einen eindeutig definierten Namen, wenn es erstellt wird, Dieser Name ist auf verschiedene Weise dargestellt:
@@ -55,7 +61,7 @@ Jedes Entität weist auch drei Eigenschaften auf, die lokalisierte Werte anzeige
 |`DisplayCollectionName`|Eine mehrzahlige Version des Anzeigenamens. z. B. Konto|
 |`Description`|Ein kurzer SAtz, der die Entität beschreibt, z.B. *Ein Geschäft, das einen Kunden oder einen potenziellen Kunden darstellt. Das Unternehmen, mit dem Geschäftstransaktionen abgerechnet werden.*|
 
-Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Entität in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Informationen zum Hinzufügen oder Bearbeiten von lokalisierten Werten finden Sie unter [Common Data Service-Anpassungshandbuch: Übersetzen angepasster Entitäts- und Feldtexte in andere Sprachen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
+Dies sind die Lokalisierungswerte, die verwendet werden, um sich auf die Entität in einer App zu beziehen. Diese Werte können jederzeit geändert werden. Um die lokalisierten Werte hinzuzufügen oder zu bearbeiten gehen Sie zu [Common Data Service-Anpassungs-Handbuch:  Angepassten Entitäts- und Feldtext in andere Sprachen übersetzen](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation).
 
 
 ## <a name="primary-key"></a>Primärschlüssel
@@ -90,8 +96,8 @@ Jede Entität, die Entitätsbilder werden, bestehen aus drei unterstützenden At
 |`EntityImageId`|`UniqueIdentifierType`|Der eindeutige Bezeichner des Bilds|
 
 Weitere Informationen: 
-- [Common Data Service-Entwicklungshandbuch – Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)
-- [Common Data Service-Entwicklerhandbuchbeispiel: Anpassen und Abrufen von Entitäts- und Attribut-Zuordnungen](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
+- [Common Data Service Entwicklerhandbuch-Bildattribute](/dynamics365/customer-engagement/developer/image-attributes)
+- [Common Data Service Entwicklerhandbuchbeispiel: Festlegen und Abrufen von Entitätsbildern](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 
 > [!NOTE]
 > Dies ist anders als das Symbol, das für eine Entität in Modell-angetriebenen Apps angezeigt wird. Die `IconVectorName`-Eigenschaft enthält den Namen der SVG-Webressource, die dieses festlegt.
@@ -156,8 +162,8 @@ Beispielsweise `PostComment`, `PostLike`und `PostRole` sind alle untergeordneten
 Jede Alternativschlüsseldefinition hat eine oder mehrere Attribute in Kombination, mit der eine Entitätsinstanz eindeutig identifiziert wird. Alternativschlüssel werden in der Regel nur für die Integration mit externen Systemen angewendet. Sie können Alternativschlüssel definieren, um einen Datensatz eindeutig zu identifizieren. Dies ist dann von Nutzen, wenn Sie Daten in ein einzelnes System integrieren, das nicht den Schlüssel des GUID- Bezeichnerwert unterstützt. Sie können einen einzelnen Feldwert oder einer Kombination von Feldwerten definieren, um eine Entität eindeutig zu identifizieren. Einen Alternativschlüssel hinzufügen, wird eine Eindeutigkeitseinschränkung für diese Attribute. Es ist nicht möglich, einen anderen Entitätsdatensatz zu erstellen oder zu aktualisieren, um die gleichen Werte zu haben.
 
 Weitere Informationen: 
- - [Common Data Service-Anpassungsleitfaden: Alternativschlüssel definieren, um auf Common Data Service-Datensätze zu verweisen](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
- - [Definieren Sie Alternativschlüssel für eine Entität und Entwicklerhandbuch: Synchronisieren von Common Data Service-Daten mit externen Systemen](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
+ - [Common Data Service Anpassungsleitfaden: Alternative Schlüssel zum Verweisen auf Common Data Service Datensätze definieren](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
+ - [Definieren Sie Alternativschlüssel für eine Entität oder ein Entwicklerhandbuch: Synchronisieren von Common Data Service-Daten mit externen Systemen](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
 
 ## <a name="entity-states"></a>Entitätsstatus
 

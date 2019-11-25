@@ -1,6 +1,6 @@
 ---
 title: Implementierung aller Arten von Abfragen bei der Ergebnisfilterung mit PreOperation RetrieveMultiple | MicrosoftDocs
-description: 'Für beste Leistung und konsistente Ergebnisse für alle Anwendungen müssen Sie die Filterung für alle Arten von Abfragen implementieren, die mit Plugins verwendet werden können, die für die Phase PreOperation von RetrieveMultiple registriert sind.'
+description: Für beste Leistung und konsistente Ergebnisse für alle Anwendungen müssen Sie die Filterung für alle Arten von Abfragen implementieren, die mit Plugins verwendet werden können, die für die Phase PreOperation von RetrieveMultiple registriert sind.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 09/23/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3dbe53cb136b4f73429b6c1e5cb57377a0445e6b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748249"
 ---
 # <a name="implement-all-types-of-queries-when-filtering-results-using-preoperation-retrievemultiple"></a>Implementierung aller Arten von Abfragen bei der Ergebnisfilterung mit PreOperation RetrieveMultiple
 

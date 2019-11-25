@@ -1,6 +1,6 @@
 ---
-title: 'Öffnen von Formularen, Ansichten und Dashboards im mobilen Dynamics 365-Client mit einer URL (modellgestützte Apps) | Microsoft Docs'
-description: 'Verwenden Sie den Anwendungshandler für mobile Dynamics 365-Clients, um direkt mit Dynamics 365-Formularen, -ansichten und -Dashboards aus externen Anwendungen zu verknüpfen. So wird bei einem Klick auf eine externen Anwendung das Zielelement in Dynamics 365 für Smartphones oder Dynamics 365 für Tablets geöffnet.'
+title: Öffnen von Formularen, Ansichten und Dashboards im mobilen Dynamics 365-Client mit einer URL (modellgestützte Apps) | Microsoft Docs
+description: Verwenden Sie den Anwendungshandler für mobile Dynamics 365-Clients, um direkt mit Dynamics 365-Formularen, -ansichten und -Dashboards aus externen Anwendungen zu verknüpfen. So wird bei einem Klick auf eine externen Anwendung das Zielelement in Dynamics 365 für Smartphones oder Dynamics 365 für Tablets geöffnet.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0c4e3c0fe4188b3b9f2d95cb479a23f6e54c193b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748271"
 ---
 # <a name="open-forms-views-and-dashboards-in-mobile-client-with-a-url"></a>Öffnen von Formularen, Ansichten und Dashboards im mobilen Client mit einer URL
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/open-forms-views-dashboards-mobile-client-url
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/open-forms-views-dashboards-mobile-client-url
 
 At this point I understand this mobile client is still branded as 'Dynamics 365'
  -->

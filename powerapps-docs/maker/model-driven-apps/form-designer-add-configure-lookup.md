@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8ba09c46a46d0a4d40891419e1f6eb787f75f096
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703905"
 ---
-
 # <a name="configure-a-lookup-component-on-a-form"></a>Konfigurieren einer Lookup-Komponente auf einem Formular  
 Ein Lookup-Feld kann verwendet werden, um auf einen Datensatz in einer anderen Entität zu verweisen. Eine Lookup-Komponente wird automatisch verwendet, wenn ein Lookup-Feld zu einem Formular hinzugefügt wird. Hersteller können eine Lookup-Komponente mit Hilfe des Formular-Designers konfigurieren.
 

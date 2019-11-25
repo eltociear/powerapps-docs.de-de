@@ -1,24 +1,27 @@
 ---
 title: Aktionen für Dashboards (modellgesteuerte Anwendungen) | Microsoft Docs
-description: 'Erfahren Sie, wie die Aktionen wie Erstellen, Abrufen, Aktualisieren oder Löschen für Dashboards im Besitz der Organisation und im Besitz des Benutzers auszuführen.'
+description: Erfahren Sie, wie die Aktionen wie Erstellen, Abrufen, Aktualisieren oder Löschen für Dashboards im Besitz der Organisation und im Besitz des Benutzers auszuführen.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 339eb79d-5dec-885b-496f-bfa26e9cae08
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 712e3e89477071f8f0ca2de5af84c5219de74c4f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748307"
 ---
-
 # <a name="actions-on-dashboards"></a>Aktionen für Dashboards
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/actions-dashboards -->

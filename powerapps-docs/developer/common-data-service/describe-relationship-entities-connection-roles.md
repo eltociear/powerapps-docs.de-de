@@ -1,5 +1,5 @@
 ---
-title: Beschreiben Sie eine Beziehung zwischen Entitäten mit Verbindungsrollen (Common Data Service) | Microsoft Docs
+title: Beschreiben einer Beziehung zwischen Entitäten mit Verbindungsrollen (Common Data Service) | Microsoft-Dokumentation
 description: Beschreibung einer Beziehung zwischen Entitäten unter Verwendung von Verbindungsrollen und Verbindungsrollenkategorien.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 07bd45625e0947ed7123f891aa9b33aac214869d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748230"
 ---
 # <a name="describe-a-relationship-between-entities-with-connection-roles"></a>Beschreiben einer Beziehung zwischen Entitäten mit Verbindungsrollen
 

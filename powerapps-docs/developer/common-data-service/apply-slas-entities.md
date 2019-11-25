@@ -1,6 +1,6 @@
 ---
 title: SLAs für Entitäten übernehmen (Common Data Service) | Microsoft-Dokumentation
-description: 'Erfahren Sie über das Übernehmen von SLAs für die benutzerdefinierten Entitäten, wenn Sie die Entitäten zum Übernehmen von Vereinbarungen zum Servicelevel (SLAs) aktivieren. Also können Sie auch SLA-KPIs erstellen.'
+description: Erfahren Sie über das Übernehmen von SLAs für die benutzerdefinierten Entitäten, wenn Sie die Entitäten zum Übernehmen von Vereinbarungen zum Servicelevel (SLAs) aktivieren. Also können Sie auch SLA-KPIs erstellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bd66d104ec87b2a6f8e07cb476603f82cca2c023
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748256"
 ---
 # <a name="apply-slas-to-entities"></a>SLAs für Entitäten übernehmen
 

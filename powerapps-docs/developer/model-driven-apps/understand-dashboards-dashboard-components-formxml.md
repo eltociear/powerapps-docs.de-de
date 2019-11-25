@@ -1,6 +1,6 @@
 ---
 title: 'Grundlegendes zu Dashboards: Dashboardkomponenten und FormXML (modellgestützte Apps) | Microsoft Docs'
-description: 'Dashboards sind eine der unterschiedlichen Arten von Formularen in modellgestützten Apps. Sie können das Attribut SystemForm.Typ oder UserForm.Type verwenden, um zu ermitteln, ob das Formular ein Dashboard ist.'
+description: Dashboards sind eine der unterschiedlichen Arten von Formularen in modellgestützten Apps. Sie können das Attribut SystemForm.Typ oder UserForm.Type verwenden, um zu ermitteln, ob das Formular ein Dashboard ist.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b01f06fa23f14c4868d4a81af941d73682e4c158
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748370"
 ---
 # <a name="understand-dashboards-dashboard-components-and-formxml"></a>Grundlegendes zu Dashboards: Dashboardkomponenten und FormXML
 

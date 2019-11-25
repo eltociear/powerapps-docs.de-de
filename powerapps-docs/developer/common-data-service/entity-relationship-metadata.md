@@ -1,6 +1,6 @@
 ---
 title: Entitätsbeziehungsmetadaten | Microsoft Docs
-description: Erfahren Sie mehr über die Entitätsbeziehungsmetadaten im Common Data Service
+description: Weitere Informationen über die Entitätsbeziehungsmetadaten, die in Common Data Service verwendet werden.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6d0f5aee398d83227f365ac5bb73ccea8068ed4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748290"
 ---
-
 # <a name="entity-relationship-metadata"></a>Entitätsbeziehung von Metadaten
 
 Wenn Sie sich den Lösungsexplorer oder die drei Beziehungssammlungen in er `EntityMetadata` ansehen, denken Sie vielleicht, dass es drei Arten von Entitätsbeziehungen gibt. Tatsächlich sind es nur zwei, wie in der nachfolgenden Tabelle gezeigt wird.
@@ -50,7 +55,7 @@ Mit Modell-angetriebenen Apps ermöglicht es eine Umgebung, die Sie aktivieren, 
 
 Entwickler können diese neue Typen von Abfragen anhand der Hierarchie mit `Under` und `Not Under` Operatoren aktivieren.
 
-Weitere Informationen: [Common Data Service-Entwicklerhandbuch: Hierarchisch verknüpfte Daten abfragen und visualisieren](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
+Weitere Informationen: [Common Data Service Entwicklerhandbuch: Hierarchisch verknüpfte Daten abfragen und visualisieren](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data).
 
 ### <a name="see-also"></a>Siehe auch
 

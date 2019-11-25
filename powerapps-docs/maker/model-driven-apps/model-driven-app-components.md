@@ -1,22 +1,28 @@
 ---
-title: Modellgesteuerte Anwendungskomponenten in PowerApps verstehen | MicrosoftDocs
-description: 'Verschiedene Komponenten einer modellgesteuerten Anwendung wie Daten, Benutzeroberfläche, Logik und Visualisierung verstehen.'
-Keywords: 'Felder, Attribute, modellgestützte App'
+title: Grundlegendes zu Komponenten modellgestützter Apps in PowerApps | Microsoft-Dokumentation
+description: Verschiedene Komponenten einer modellgesteuerten Anwendung wie Daten, Benutzeroberfläche, Logik und Visualisierung verstehen.
+Keywords: Felder, Attribute, modellgestützte App
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 10/17/2019
 ms.service: powerapps
 ms.topic: article
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711781"
 ---
 # <a name="understand-model-driven-app-components"></a>Grundlegendes zu Komponenten modellgestützter Apps
 Eine gut gestaltete modellgesteuerte Anwendung besteht aus mehreren Komponenten, die Sie mit Hilfe des Designers auswählen, um das Aussehen und die Funktionalität der fertigen App zu gestalten. Die Komponenten und Komponenteneigenschaften, aus denen Designer eine App zusammensetzen, werden zu Metadaten. 
@@ -24,14 +30,14 @@ Eine gut gestaltete modellgesteuerte Anwendung besteht aus mehreren Komponenten,
 Um zu verstehen, wie sich jede dieser Komponenten auf das App-Design bezieht, werden sie hier in die Kategorien *Daten*, *UI*, *Logik* und *Visualisierung* unterteilt. 
 
 ## <a name="data"></a>Daten
-Diese Komponenten bestimmen, auf welchen Daten die App basiert.
+Diese Komponenten bestimmen, auf welchen Daten die App basiert und welcher Designer verwendet wird, um die Komponente zu erstellen oder zu bearbeiten.
 
 
 |Komponente  |Beschreibung  |Designer  |
 |---------|---------|---------|
 |Entität     |Ein Element mit Eigenschaften, die Sie nachverfolgen, wie z. B. Kontakte oder Firma. Viele Standard-Entitäten sind verfügbar. Sie können eine Nicht-System-Standard-Entität (Produktions-Entität) anpassen oder eine benutzerdefinierte Entität von Grund auf neu erstellen.     | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer        |
-|Feld     | Eine Eigenschaft, die einer Entität zugeordnet ist. Ein Feld wird durch einen Datentyp definiert, der die Art der Daten bestimmt, die eingegeben oder ausgewählt werden können. Dazu zählen Text, Nummer, Datum und Uhrzeit, Währung oder Suchen (erstellt eine Beziehung zu einer anderen Entität.) Felder werden typischerweise in Formularen, Ansichten und Suchen verwendet.        | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer   |
 |Beziehung     | Entitätsbeziehungen legen fest, wie Entitäten miteinander verknüpft werden können. Es gibt 1:N (eins-zu-viele), N:1 (viele-zu-eins) und N:N (viele-zu-viele) Arten von Beziehungen. Wenn Sie beispielsweise ein Suchfeld zu einer Entität hinzufügen, wird eine neue 1:N-Beziehung zwischen den beiden Entitäten erstellt und Sie können dieses Suchfeld in ein Formular einfügen.   | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer        |
+|Feld     | Eine Eigenschaft, die einer Entität zugeordnet ist. Ein Feld wird durch einen Datentyp definiert, der die Art der Daten bestimmt, die eingegeben oder ausgewählt werden können. Dazu zählen Text, Nummer, Datum und Uhrzeit, Währung oder Suchen (erstellt eine Beziehung zu einer anderen Entität.) Felder werden typischerweise in Formularen, Ansichten und Suchen verwendet.        | [!INCLUDE [powerapps](../../includes/powerapps.md)] Entitäts-Designer   |
 |Optionssatzfeld     | Dies ist ein spezieller Feldtyp, der dem Benutzer eine Reihe von vordefinierten Optionen bietet. Jede Option hat einen Zahlenwert und eine Beschriftung. Bei Hinzufügung zu einem Formular enthält dieses Feld ein Steuerelement für Benutzer zur Auswahl einer Option.  Es gibt zwei Arten von Optionssätzen: Optionssätze, bei denen der Benutzer nur eine Option auswählen kann, und Multi-Select-Optionssätze, die mehr als eine Auswahl erlauben.  | [!INCLUDE [powerapps](../../includes/powerapps.md)] Optionssatz-Designer     |
 
 Weitere Informationen: [Definieren Sie Daten für die modellgesteuerte App](define-data-model-driven-app.md) 
@@ -62,7 +68,11 @@ Bestimmt die Geschäftsprozesse, Regeln und die Automatisierung der Anwendung. [
 
 ![Workflow-, Aktions- und Geschäftsprozessfluss-Designer](media/model-driven-app-overview/designer-mash.png)
 
-Weitere Informationen: [Geschäftslogik in Ihrer modellgesteuerten App anwenden](guide-staff-through-common-tasks-processes.md)
+Weitere Informationen: [Geschäftslogik in Ihrer modellgesteuerten App anwenden](guide-staff-through-common-tasks-processes.md) 
+
+### <a name="additional-options-for-adding-custom-business-logic"></a>Zusatzoptionen zum Hinzufügen der benutzerdefinierten Geschäftslogik
+[Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen](../../developer/common-data-service/plug-ins.md) <br />
+[Workflowerweiterungen](../../developer/common-data-service/workflow/workflow-extensions.md)
 
 ## <a name="visualizations"></a>Visualisierungen
 Legt fest, welcher Typ von Datenvisualisierung und Berichten der App zur Verfügung steht.
@@ -72,7 +82,7 @@ Legt fest, welcher Typ von Datenvisualisierung und Berichten der App zur Verfüg
 |---------|---------|---------|
 |Diagramm     | Eine einzelne grafische Visualisierung, die innerhalb einer Ansicht, auf einem Formular oder in einem Dashboard angezeigt werden kann.        | Diagramm-Designer        |
 |Informationsleiste     | Dient als Auswahl einer oder mehrerer grafischer Visualisierungen, die einen Überblick über verwertbare Geschäftsdaten gibt.        | Dashboard-Designer        |
-|Eingebettete Power BI     | Fügen Sie eingebettete Power BI-Kacheln und Dashboards zu Ihrer App hinzu. Power BI ist ein Cloud-basierter Service, der Einblicke in die Business Intelligence bietet.        |  Kombination aus Diagramm Designer, Dashboard Designer und Power BI       |
+|Power BI-Einbettung     | Fügen Sie eingebettete Power BI-Kacheln und -Dashboards zu Ihrer App hinzu. Power BI ist ein Cloud-basierter Service, der Einblicke in die Business Intelligence bietet.        |  Kombination aus Diagramm-Designer, Dashboard-Designer und Power BI       |
 
 ![Beispiel-Dashboard](media/model-driven-app-overview/dashboard-designer.png)
 

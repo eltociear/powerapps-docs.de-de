@@ -8,27 +8,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a2ebe769fdff6ebeeebd82824fffecae5ff00e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700341"
 ---
-
 # <a name="properties-available-in-the-form-designer"></a>Im Formulardesigner verfügbare Eigenschaften
 
 Im rechten Bereich des modellgetriebenen Formular-Designers können Sie im Eigenschaftsbereich die Eigenschaften eines beliebigen Elements, das in der Vorschau oder in der Baumansicht ausgewählt wurde, schnell anzeigen und aktualisieren. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/form-designer-property-pane.png "Formulardesigner-Eigenschaftenbereich")
+> ![](media/form-designer-property-pane.png "Form designer property pane")
 
 ## <a name="form-properties"></a>Formulareigenschaften
 

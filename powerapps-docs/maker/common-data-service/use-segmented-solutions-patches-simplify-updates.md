@@ -1,6 +1,6 @@
 ---
-title: 'Verwenden Sie segmentierte Lösungen und Patches, um Lösungsupdates mit PowerApps zu vereinfachen | MicrosoftDocs'
-description: 'Hier erfahren Sie, wie Sie Workflowaufträge nutzen, um Ihre Lösungen zu aktualisieren'
+title: Verwenden Sie segmentierte Lösungen und Patches, um Lösungsupdates mit PowerApps zu vereinfachen | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie Workflowaufträge nutzen, um Ihre Lösungen zu aktualisieren
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5c05f683-e1bd-4885-be23-b6973128773f
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703113"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>Verwenden von segmentierten Lösungen und Patches zum Exportieren ausgewählter Entitätsressourcen
 
@@ -78,7 +84,7 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Wählen Sie dann die Lösungskomponenten aus.  
   
- ![Wählen Sie die Lösungskomponente aus.](media/solution-segmentation-select-components-admin.png "Wählen Sie die Lösungskomponente aus.")  
+ ![Wählen Sie die Lösungskomponenten aus.](media/solution-segmentation-select-components-admin.png "Wählen Sie die Lösungskomponenten aus.")  
   
  Folgen Sie dem Assistenten. Wählen Sie in Schritt 1 in alphabetischer Reihenfolge die Anlagen für die erste Entität, der `Account`-Entität, wie hier gezeigt, aus.  
   
@@ -99,7 +105,7 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
  Daher enthält die segmentierte Lösung, die erstellt wird, drei Entitäten, nämlich `Account`, `Case` und `Contact`. Jede Entität enthält ausschließlich Anlagen, die ausgewählt waren.  
   
  > [!div class="mx-imgBorder"] 
- > ![Lösungen mit Entitäten.](media/solution-segmentation-solution-entities-admin.png "Lösungen mit Entitäten.")  
+ > ![Lösung mit Entitäten.](media/solution-segmentation-solution-entities-admin.png "Lösung mit Entitäten.")  
   
 ## <a name="create-a-solution-patch"></a>Einen Lösungspatch erstellen  
  Ein Patch enthält Änderungen an der übergeordneten Lösung, wie beispielsweise das Hinzufügen oder Bearbeiten von Komponenten und Anlagen. Sie müssen die Komponenten des übergeordneten Elements nicht einfügen, es sei denn, Sie planen, Sie zu bearbeiten.  
@@ -121,7 +127,7 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Im Dialogfeld **Zu patchender Klon** sehen Sie, dass die Versionsnummer für den Patch auf der Versionsnummer der übergeordneten Lösung basiert, aber die Buildnummer wird um eins erhöht. Jeder darauffolgende Patch hat eine höhere Build- oder Revisionsnummer als der vorhergehende Patch.  
   
- ![Verwenden Sie das "Zu patchender Klon"-Dialogfeld.](media/solution-segmentation-clone-patch-dialog-admin.png "Verwenden Sie das \"Zu patchender Klon\"-Dialogfeld.")  
+ ![Verwenden Sie das „Zu patchender Klon“-Dialogfeld.](media/solution-segmentation-clone-patch-dialog-admin.png "Verwenden Sie das „Zu patchender Klon“-Dialogfeld.")  
   
  Im folgenden Screenshot wird die Basislösung **SegmentedSolutionExample**, Version **1.0.1.0** und der Patch **SegmentedSolutionExample_Patch**, Version **1.0.2.0**, angezeigt.  
   
@@ -143,7 +149,7 @@ Um genauere Kontrolle darüber zu erlangen, welche Elemente in Patches und Lösu
   
  Beim Fortfahren mit diesem Beispiel sehen Sie das Dialogfeld **In Lösung klonen**, das die neue Lösungsversionsnummer anzeigt.  
   
- ![Verwenden Sie das Dialogfeld "In Lösung klonen".](media/solution-segmentation-clone-solution-dialog-admin.png "Verwenden Sie das Dialogfeld \"In Lösung klonen\".")  
+ ![Verwenden Sie das Dialogfeld „In Lösung klonen“.](media/solution-segmentation-clone-solution-dialog-admin.png "Verwenden Sie das Dialogfeld „In Lösung klonen“.")  
   
  Nach dem Klonen enthält die neue Lösungsversion drei ursprüngliche Entitäten (`Account`, `Case` und `Contact`) und die benutzerdefinierte Entität mit der Bezeichnung `Book`, die dem Patch hinzugefügt wurde. Jede Entität enthält ausschließlich Anlagen, die im Beispiel hinzugefügt wurden.  
   

@@ -1,16 +1,21 @@
 ---
-title: Verwendung von Liquid-Typen für ein Portal | MicrosoftDocs
+title: Verwenden von Liquid-Typen für ein Portal | MicrosoftDocs
 description: Lesen Sie mehr zu den verfügbaren Liquid-Typen in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708085"
 ---
-
 # <a name="available-liquid-types"></a>Verfügbare Liquid-Typen
 
 Liquid-Objekte können sieben grundlegende Typen zurückgeben: **String**, **Number**, **Boolean**, **Array**, **Dictionary**, **DateTime**, or **Null**. Liquid-Variablen können durch Verwendung der Tags **assign** oder **capture** initialisiert werden.

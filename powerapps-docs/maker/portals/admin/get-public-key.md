@@ -1,19 +1,22 @@
 ---
-title: Öffentlichen Schlüssel eines Portale herunterladen | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie einen öffentlichen Schlüssel von einem Portal herunterladen.'
+title: Öffentlicher Schlüssel des Downloads eines Portals | MicrosoftDocs
+description: Erfahren Sie, wie Sie einen öffentlichen Schlüssel von einem Portal herunterladen.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 09/16/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 39e909acb325bd870f73e16a72da78b4bec07c79
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709845"
 ---
-
 # <a name="download-public-key-of-portal"></a>Den öffentlichen Schlüssel des Portals herunterladen
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Der öffentliche Schlüssel eines Portale wird verwendet, um den Live Assist für modellgetriebene Anwendungen in Dynamics 365 zu konfigurieren, um mit authentifizierten Besuchern für ein Portal zu arbeiten. [Live Assist](https://www.cafex.com/en/products/live-assist-dynamics-365/), by CafeX, stellt eine Chat-Lösung bereit, über die Benutzer Live-Chat-Unterstützung in ihrem Portal erhalten. Weitere Informationen dazu, wie Sie den Schlüssel öffentliche verwenden, um auf einem der Chat Portale zu arbeiten [Authentifizierte Besucher im Dynamics Kunden-Portal](https://www.liveassistfor365.com/en/support/authenticated-visitors-in-the-dynamics-customer-portal/)
 

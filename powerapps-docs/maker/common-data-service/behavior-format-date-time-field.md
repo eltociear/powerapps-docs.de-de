@@ -8,23 +8,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 73d691c7-344e-4c96-8979-c661c290bf81
 caps.latest.revision: 47
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbb327956558e57713040ec8ab1a26d3af78c6c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711825"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>Funktionsweise und Format des Datums- und Uhrzeitfelds
 
-Im Common Data Service wird der Datums- und Uhrzeitdatentyp in vielen Standardentitätsfeldern verwendet. Je nachdem, was das Feld darstellt, können Sie viele andere Feldverhalten auswählen: **Ortszeit Benutzer**, **Nur Datum** oder **zeitzonenunabhängig**.  
+In Common Data Service wird der Datum und Uhrzeit-Datentyp in vielen Standardentitätsfeldern verwendet. Je nachdem, was das Feld darstellt, können Sie viele andere Feldverhalten auswählen: **Ortszeit Benutzer**, **Nur Datum** oder **zeitzonenunabhängig**.  
   
 <a name="Behavior"></a>   
 
@@ -40,7 +46,7 @@ Die folgende Tabelle enthält Informationen zum Verhalten und Format des Datums-
 
 ## <a name="change-user-local-behavior"></a>Ortszeit Benutzerverhalten ändern:
 
-Sofern der Herausgeber einer verwalteten Lösung dies verhindert, können Sie das Verhalten von vorhandene benutzerdefinierte Datumsfelder von **Ortszeit Benutzer** **Nur Datum** oder **Zeitzonenunabhängig** ändern. Dies ist eine einmalige Änderung.
+Sofern der Herausgeber einer verwalteten Lösung dies verhindert, können Sie das Verhalten eines vorhandenen benutzerdefinierten Datumsfeldes von **Ortszeit Benutzer** zu **Nur Datum** oder **Zeitzonenunabhängig** ändern. Dies ist eine einmalige Änderung.
 
 Das Ändern des Feldverhaltens wirkt sich auf die Feldwerte aus, die hinzugefügt oder geändert werden, nachdem das Feldverhalten geändert wurde. Die vorhandenen Werte des Felds bleiben in der Datenbank im UTC-Zeitzonenformat. Um das Verhalten der vorhandenen Feldwerte von UTC in "Nur Datum" zu ändern, benötigen Sie unter Umständen Unterstützung eines Entwicklers, der dies programmgesteuert bearbeitet. Weitere Information: [Konvertieren des Verhaltens von Datums- und Uhrzeitwerten in der Datenbank](/dynamics365/customer-engagement/developer/behavior-format-date-time-attribute#convert-behavior-of-existing-date-and-time-values-in-the-database). 
 

@@ -1,6 +1,6 @@
 ---
-title: 'Komplexe Entitäten, die PowerApps Plan 2 Lizenzen erfordern | Microsoft Docs'
-description: 'Eine Liste der komplexen Entitäten in Common Data Service, die eine Lizenz für PowerApps Plan 2 benötigen.'
+title: Komplexe Entitäten, die PowerApps Plan 2 Lizenzen erfordern | Microsoft Docs
+description: Eine Liste der komplexen Entitäten in Common Data Service, die eine Lizenz für PowerApps Plan 2 benötigen.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.topic: reference
 ms.date: 09/26/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706633"
 ---
-
 # <a name="complex-entities-and-licensing"></a>Komplexe Entitäten und Lizenzierung
 
 > [!IMPORTANT]

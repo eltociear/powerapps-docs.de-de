@@ -1,4 +1,4 @@
-Sie können einen Client für eine bestimmten Common Data Service-Umgebung erstellen und dem Benutzer nicht die Möglichkeit geben, die Umgebung auszuwählen, zu der er eine Verbindung herstellen möchte. Nur Benutzer dieser Umgebung können den Client dann nutzen.
+Sie können einen Client zu einer bestimmten Common Data Service-Umgebung erstellen und dem Benutzer nicht die Möglichkeit geben, die Umgebung auszuwählen, zu der er eine Verbindung herstellen möchte. Nur Benutzer dieser Umgebung können den Client dann nutzen.
 
 Sollen die Benutzer dieses Clients dann eine Verbindung zu einer beliebigen Common Data Service-Umgebung herstellen dürfen, auf die sie Zugriff haben, könnten Sie sie auffordern, die URL der Umgebung einzugeben. Dies ist allerdings nicht zu empfehlen. Jeder Benutzer kann Zugang zu mehreren Common Data Service-Umgebungen haben. Es ist aber gut möglich, dass die Benutzer die URL der Umgebung weder kennen noch sich daran erinnern. Die Eingabe einer URL zu verlangen, ist daher langfristig mit Verärgerung verbunden. 
 

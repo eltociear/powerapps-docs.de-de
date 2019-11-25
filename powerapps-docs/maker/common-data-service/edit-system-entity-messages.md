@@ -1,6 +1,6 @@
 ---
-title: Bearbeiten von Systementitätsnachrichten mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Systementitätsnachrichten bearbeitet werden'
+title: Bearbeiten von Systementitätsnachrichten mit PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Systementitätsnachrichten bearbeitet werden
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ccbd8de-8d6f-4058-87f7-15463667cfc6
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f90f2fc6f3a4eb0707eda9d9ce73acfc422ed5d9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705401"
 ---
 # <a name="edit-system-entity-messages"></a>Bearbeiten von Systementitätenmeldungen
 
-Der standardmäßige Anzeigename einiger Systementitäten wird in den Text- und Fehlermeldungen der Benutzeroberfläche im Common Data Service verwendet. Wenn Sie den Anzeigenamen ändern, sollten Sie auch alle Meldungen ändern, die den Standard-Anzeigenamen verwenden. Wenn Sie zum Beispiel den Anzeigenamen von *Firma* zu *Unternehmen* ändern, könnten Sie immer noch eine Fehlermeldung mit dem alten Namen sehen.  
+Der Standard-Anzeigename von einigen Systementitäten wird in UI-Text- und Fehlermeldungen in Common Data Service verwendet. Wenn Sie den Anzeigenamen ändern, sollten Sie auch alle Meldungen ändern, die den Standard-Anzeigenamen verwenden. Wenn Sie zum Beispiel den Anzeigenamen von *Firma* zu *Unternehmen* ändern, könnten Sie immer noch eine Fehlermeldung mit dem alten Namen sehen.  
 
-Sie können Systemmeldungen nicht über das PowerApps-Portal bearbeiten, Sie müssen den Lösungs-Explorer verwenden.
+Sie können Systemmeldungen nicht über das PowerApps-Portal bearbeiten; Sie müssen den Lösungs-Explorer verwenden.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 

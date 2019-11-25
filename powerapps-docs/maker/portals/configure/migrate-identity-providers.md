@@ -1,6 +1,6 @@
 ---
-title: Migrieren von Identitäts Anbietern zu Azure AD B2C | MicrosoftDocs
-description: Erfahren Sie, wie Sie Identitäts Anbieter zu Azure AD B2C migrieren.
+title: Identitätsanbieter nach Azure AD B2C migrieren | MicrosoftDocs
+description: Identitätsanbieter nach Azure AD B2C migrieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -10,77 +10,77 @@ ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: a57398d08e190140a3383aef29825f4c08e90363
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978299"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708877"
 ---
-# <a name="migrate-identity-providers-to-azure-ad-b2c"></a>Identitäts Anbieter zu Azure AD B2C migrieren
+# <a name="migrate-identity-providers-to-azure-ad-b2c"></a>Identitätsanbieter nach Azure AD B2C migrieren
 
-Das Portal unterstützt ein konfigurierbares Sicherheitssystem, mit dem unsere Kunden mehrere Authentifizierungssysteme unterstützen können. Das Portal enthält neben dem Verbund mit externen Identitäts Anbietern auch eigene lokale Anmelde Informationen, indem Standardprotokolle wie z. b. oidc, SAML und WS-Federation verwendet werden. Es wird empfohlen, nur Azure AD B2C Identitäts Anbieter für die Authentifizierung zu verwenden und andere Identitäts Anbieter als veraltet zu kennzeichnen. 
+Das Portal unterstützt ein konfigurierbares Sicherheitssystem, mit dem unsere Kunden mehrere Authentifizierungssysteme unterstützen können. Das Portal enthält seine eigenen lokalen Anmeldeinformationen und stellt darüber hinaus auch einen Verbund mit externen Identitätsanbietern mithilfe von Standardprotokollen her, wie OIDC, SAML und WS-Verbund. Zukünftig wird empfohlen, dass Sie nur den Identitätsanbieter Azure AD B2C für die Authentifizierung verwenden und dass Sie andere Identitätsanbieter als veraltet einstufen. 
 
-## <a name="marking-an-identity-provider-as-deprecate"></a>Markieren eines Identitäts Anbieters als veraltet
+## <a name="marking-an-identity-provider-as-deprecate"></a>Einen Identitätsanbeiter als veraltet markieren
 
-Sie können Ihr Portal so konfigurieren, dass andere Identitäts Anbieter als veraltet markiert werden, und Benutzer können zu Azure AD B2C Identitäts Anbieter migrieren. 
+Sie können Ihr Portal so konfigurieren, dass andere Identitätsanbieter als veraltet markiert werden und es Benutzern ermöglicht wird, zum Identitätsanbeiter Azure AD B2C zu migrieren. 
 
-Die folgenden Site Einstellungen werden verwendet, um die Veraltung von Identitäts Anbietern zu steuern:
+Die folgenden Website-Einstellungen werden verwendet, um die Markierung von Identitätsanbietern als veraltet zu steuern:
 
 | Name  | Beschreibung  |
 |--------|--------|
-| Authentifizierung/Registrierung/loczuordnung deprecated | Ein true-oder false-Wert. Wenn diese Einstellung auf "true" festgelegt ist, wird das lokale Konto als veraltet markiert. Der Benutzer des Portals muss zu einem nicht veralteten Konto migrieren. Standardmäßig ist der Wert auf false festgelegt. |
-| Authentication/[Protokoll]/[Anbieter]/deprecated  | Ein true-oder false-Wert. Wenn diese Einstellung auf "true" festgelegt ist, wird das jeweilige Konto als veraltet markiert. Der Benutzer des Portals muss zu einem nicht veralteten Konto migrieren. Standardmäßig ist der Wert auf false festgelegt. |
+| Authentication/Registration/LocalLoginDeprecated | Ein Wert „wahr” oder „falsch”. Bei Festlegung auf wahr wird das lokale Konto als veraltet markiert. Der Portalbenutzer wird dazu aufgefordert, zu einem nicht veralteten Konto zu migrieren. Standardmäßig ist dies auf "false" gesetzt. |
+| Authentication/[protocol]/[provider]/Deprecated  | Ein Wert „wahr” oder „falsch”. Bei Festlegung auf wahr wird das spezifische Konto als veraltet markiert. Der Portalbenutzer wird dazu aufgefordert, zu einem nicht veralteten Konto zu migrieren. Standardmäßig ist dies auf "false" gesetzt. |
 |||
 
-Wenn ein Portalbenutzer versucht, sich anzumelden, und Sie mindestens einen Identitäts Anbieter als veraltet markiert haben, wird das veraltete Konto auf der Seite angezeigt. Im folgenden Beispiel wird ein Microsoft-Konto als veraltet markiert.
+Wenn ein Portalbenutzer versucht, sich anzumelden und Sie mindestens einen Identitätsanbieter als veraltet gekennzeichnet haben, wird das veraltete Konto auf der Seite angezeigt. Im folgenden Beispiel wird ein Microsoft-Konto als veraltet markiert.
 
-![Beispiel für ein veraltet Konto](../media/gdpr-deprecate-account.png "Beispiel für ein veraltet Konto")
+![Beispiel von veraltetem Konto](../media/gdpr-deprecate-account.png "Beispiel von veraltetem Konto")
 
-Der Text auf dem Bildschirm für den Legacy Authentifizierungs Anbieter kann mithilfe des folgenden Inhalts Ausschnitts geändert werden:
+Der Text im Bildschirm für den Vorgängerauthentifizierungsanbieter kann geändert werden, indem Sie den folgenden Inhaltsausschnitt verwenden:
 
 | Name                                               | Typ | Value                         |
 |----------------------------------------------------|------|-------------------------------|
-| Konto/SignIn/signinexternaldepre-edformüberschrift | Text | Mit einem Legacy Konto anmelden |
+| Account/Signin/SignInExternalDeprecatedFormHeading | Text | Mit einem früheren Konto anmelden |
 |||
 
 > [!NOTE]
-> Die veralteten Identitäts Anbieter werden nicht angezeigt, wenn ein Benutzer eine Einladung für ein Portal registriert oder einlöst.
+> Die veralteten Identitätsanbieter werden nicht angezeigt, wenn ein Benutzer sich registriert oder eine Einladung für ein Portal einlöst.
 
-## <a name="migrating-a-deprecated-identity-provider-to-a-new-identity-provider"></a>Migrieren eines veralteten Identitäts Anbieters zu einem neuen Identitäts Anbieter
+## <a name="migrating-a-deprecated-identity-provider-to-a-new-identity-provider"></a>Einen veralteten Identitätsanbieter zu einem neuen Identitätsanbieter migrieren
 
-Wenn sich ein Benutzer im Portal mit einem veralteten Identitäts Anbieter anmeldet, zeigt der Bildschirm für die Konto Migration eine Meldung an, dass Sie sich mit einem nicht als veraltet markierten Identitäts Anbieter anmelden kann. Wenn sich der Benutzer mit dem nicht veralteten Identitäts Anbieter anmeldet, wird das Benutzerkonto dem neuen Anbieter zugeordnet.
+Wenn sich ein Portalbenutzer mit einem veralteten Identitätsanbieter anmeldet, wird vom Migrationsbildschirm eine Meldung angezeigt, sich mit einem nicht veralteten Identitätsanbieter anzumelden. Wenn sich der Benutzer mit dem nicht-veralteten Identitätsanbieter anmeldet, wird das Benutzerkonto dem neuen Anbieter zugeordnet.
 
-![Beispiel für die Konto Migration](../media/gdpr-account-migration.png "Beispiel für die Konto Migration")
+![Kontomigrationsbeispiel](../media/gdpr-account-migration.png "Kontomigrationsbeispiel")
 
-Die Meldung auf dem Bildschirm für die Konto Migration kann mithilfe der folgenden Inhalts Ausschnitte geändert werden:
+Die Meldung auf dem Bildschirm für die Kontomigration kann mithilfe der folgenden Inhaltsausschnitte geändert werden:
 
 | Name                                         | Typ | Value                                                                                                                                                                                                                |
 |----------------------------------------------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Konto/Konvertierung/PageTitle                 | Text | Konto Migration                                                                                                                                                                                                    |
-| Konto/Konvertierung/Seiten Kopie                  | HTML | Sie haben sich mit einem Konto angemeldet, das nicht mehr unterstützt wird. Um dieses Portal weiterhin verwenden zu können, müssen Sie zu einem anderen Konto migrieren. Wählen Sie die Schaltfläche unten aus, um sich mit einem neuen oder vorhandenen unterstützten Konto anzumelden. |
-| Konto/Konvertierung/signinexternalformüber Schrift | Text | Melden Sie sich mit einem unterstützten Konto an.                                                                                                                                                                                     |
+| Account/Conversion/PageTitle                 | Text | Kontomigration                                                                                                                                                                                                    |
+| Account/Conversion/PageCopy                  | HTML | Sie haben sich mit einem Konto angemeldet, das nicht mehr unterstützt wird. Um das Portal weiterhin benutzen zu können, müssen Sie zu einem anderen Konto migrieren. Wählen Sie die Schaltfläche unten aus, um sich mit einem neuen oder vorhandenen unterstützten Konto anzumelden. |
+| Account/Conversion/SignInExternalFormHeading | Text | Melden Sie sich mit einem unterstützten Konto an.                                                                                                                                                                                     |
 |||
 
-Im Portal können mehrere Identitäten einem einzelnen Kontaktdaten Satz zugeordnet werden. Wenn mehrere Anbieter veraltet sind, muss ein Portalbenutzer den Nutzungsbedingungen mehrmals zustimmen. Wenn ein Benutzer sich mit einem veralteten Identitäts Anbieter anmeldet, wird der Konto Migrationsprozess für jeden veralteten Anbieter initiiert, und der Kontaktdaten Satz wird nach der Konto Migration dem nicht veralteten Anbieter zugeordnet.
+Das Portal lässt zu, dass mehrere Identitäten einem einzigen Kontaktdatensatz zugeordnet werden. Wenn mehrere Anbieter veraltet sind, muss ein Portalbenutzer den Geschäftsbedingungen mehrere Male zustimmen. Immer wenn sich ein Benutzer mit einem veralteten Identitätsanbieter anmeldet, wird der Kontomigrationsprozess für jeden veralteten Anbieter initiiert und der Kontaktdatensatz wird nach der Kontomigration dem nicht veralteten Anbieter zugeordnet.
 
-Beispiel: das Portal unterstützt Microsoft-Konto (MSA), Google und Facebook als Identitäts Anbieter für die Authentifizierung. Wenn Sie Google und Facebook als veraltete Anbieter markieren und ein Portalbenutzer nur Google und Facebook als Identitäts Anbieter für die Authentifizierung verwendet, erhält der Benutzer die Konto Migrations Nachricht, wenn er versucht, sich mit einem dieser beiden Anbieter anzumelden. Wenn sich der Benutzer mit MSA anmeldet, wird MSA dem Kontaktdaten Satz des Benutzers hinzugefügt. Der Benutzer verfügt jetzt nur über MSA als den unterstützten Authentifizierungs Identitäts Anbieter.
+Beispiel: Dieses Portal unterstützt Microsoft-Konto (MSA), Google und Facebook als Identitätsanbieter für die Authentifizierung. Wenn Sie Google und Facebook als veraltete Anbieter markieren und ein Portalbenutzer nur Google und Facebook als Identitätsanbieter für die Authentifizierung hat, erhält der Benutzer die Kontomigrationsmeldung, wenn er versucht, sich unter Verwendung eines der beiden Anbieter anzumelden. Wenn der Benutzer sich mithilfe von MSA anmeldet, wird MSA zum Kontaktdatensatz des Benutzers hinzugefügt. Der Benutzer hat jetzt nur MSA als unterstützten Authentifizierungsidentitätsanbieter.
 
-Wenn ein Portalbenutzer einen neuen Identitäts Anbieter auswählt und die Identität bereits einem anderen Kontaktdaten Satz zugeordnet ist, wird eine Fehlermeldung angezeigt. Sie können die Fehlermeldung mithilfe der folgenden Inhalts Ausschnitte konfigurieren:
+Wenn ein Portalbenutzer einen neuen Identitätsanbieter auswählt und die Identität bereits einem anderen Kontaktdatensatz zugeordnet ist, wird eine Fehlermeldung angezeigt. Sie können die Fehlermeldung mithilfe der folgenden Inhaltsausschnitte konfigurieren:
 
 | Name                                                     | Typ | Value                                                                                                                               |
 |----------------------------------------------------------|------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Konto/SignIn/accountkonversionidentityusederrorüber Schrift | Text | Konto Konvertierungs Fehler                                                                                                            |
-| Konto/SignIn/accountkonversionidentityusederrortext    | HTML | Dieses Konto ist bereits vorhanden. Schließen Sie den Browser, starten Sie den Prozess neu, und wählen Sie auf der Seite Konto Migration ein anderes Konto aus. |
+| Account/Signin/AccountConversionIdentityUsedErrorHeading | Text | Fehler bei der Kontokonvertierung                                                                                                            |
+| Account/Signin/AccountConversionIdentityUsedErrorText    | HTML | Dieses Konto ist bereits vorhanden. Schließen Sie Ihren Browser, starten Sie den Prozess erneut, und wählen Sie ein anderes Konto auf der Seite „Kontomigration” aus. |
 |||
 
-## <a name="disabling-local-login"></a>Der lokale Anmelde Name wird deaktiviert.
+## <a name="disabling-local-login"></a>Lokale Anmeldung deaktivieren
 
-Sie können ein Portal so konfigurieren, dass die lokale Anmeldung mithilfe der `Authentication/Registration/LocalLoginDeprecated` Site Einstellung deaktiviert wird. Wenn jemand versucht, sich mit lokalen Anmelde Informationen anzumelden, wird der Bildschirm für die Konto Migration zusammen mit der Anweisung angezeigt, sich mit einem nicht veralteten Identitäts Anbieter anzumelden. Wenn das Konto migriert wird, werden die lokalen Anmelde Informationen für den Benutzer deaktiviert.
+Sie können ein Portal so konfigurieren, dass die lokal Anmeldung deaktiviert wird, indem Sie die Website-Einstellung `Authentication/Registration/LocalLoginDeprecated` verwenden. Wenn jemand versucht, sich mithilfe von lokalen Anmeldeinformationen anzumelden, wird der Kontomigrationsbildschirm zusammen mit der Anweisung angezeigt, sich mit einem nicht veralteten Identitätsanbieter anzumelden. Wenn das Firma migriert wird, werden lokale Anmeldeinformationen für den Benutzer deaktiviert.
 
 > [!NOTE]
-> Wenn Sie die lokale Anmeldung als veraltet markieren, kann der Benutzer sich nicht für ein neues Konto registrieren.
+> Wenn Sie die lokale Anmeldung als veraltet markieren, kann sich der Benutzer nicht für ein neues Konto registrieren.
 
-Das folgende Feld wird im Kontaktdaten Satz des Portals hinzugefügt, um anzugeben, ob der lokale Anmelde Name für einen Benutzer deaktiviert ist:
-- **Lokale Anmeldung deaktiviert**: gibt an, dass sich der Kontakt mit dem lokalen Konto nicht mehr beim Portal anmelden kann. Standardmäßig ist die Einstellung auf " **Nein**" festgelegt. Dieses Feld ist auf " **Ja** " festgelegt, wenn das Konto eines Benutzers zu einem nicht veralteten Identitäts Anbieter migriert wird und die lokale Anmeldung deaktiviert ist.
+Das folgende Feld wird im Portal-Kontaktdatensatz hinzugefügt, um anzugeben, ob die lokale Anmeldung für einen Benutzer deaktiviert ist:
+- **Lokale Anmeldung deaktiviert**: Gibt an, dass sich der Kontakt nicht mehr mit dem lokalen Konto im Portal anmelden kann. Standardmäßig ist dies auf **Nein** festgelegt. Dieses Feld wird auf **Ja** festgelegt, wenn das Konto eines Benutzers zu einem nicht veralteten Identitätsanbieter migriert ist und die lokale Anmeldung deaktiviert ist.
 
     ![Lokale Anmeldung deaktiviert](../media/local-login-disabled.png "Lokale Anmeldung deaktiviert")

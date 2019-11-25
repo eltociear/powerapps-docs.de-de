@@ -1,6 +1,6 @@
 ---
 title: Analyse aufrufen | Microsoft Docs
-description: 'Erfahren Sie, wie Sie eine POST-Anforderung mithilfe der PowerApps-Überprüfungs-Web-API erstellen können, um den Analyseanforderungsauftrag zu initiieren.'
+description: Erfahren Sie, wie Sie eine POST-Anforderung mithilfe der PowerApps-Überprüfungs-Web-API erstellen können, um den Analyseanforderungsauftrag zu initiieren.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: a2c771f4-7eb6-4445-af2d-f775619ac3e8
 caps.latest.revision: 21
 author: mhuguet
@@ -16,12 +16,17 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dad4a5ad069287ad84ff0cbf237dbdb243b82076
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748232"
 ---
-
 # <a name="invoke-analysis"></a>Analyse aufrufen
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]

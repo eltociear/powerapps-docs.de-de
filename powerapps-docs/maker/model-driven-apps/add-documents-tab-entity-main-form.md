@@ -1,24 +1,30 @@
 ---
-title: Hinzufügen der Registerkarte "Dokumente" zum Hauptformular für eine Entität | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie die Registerkarte "Dokumente" zum Hauptformular für eine Entität hinzufügen.'
-s.custom: null
+title: Hinzufügen der Registerkarte „Dokumente” zum Hauptformular für eine Entität | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie die Registerkarte „Dokumente” zum Hauptformular für eine Entität hinzufügen.
+s.custom: ''
 ms.date: 09/05/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702805"
 ---
-# <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Hinzufügen der Registerkarte "SharePoint-Dokumente" zum Hauptformular für eine Entität
+# <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Hinzufügen der Registerkarte „SharePoint-Dokumente” zum Hauptformular für eine Entität
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Wenn Sie eine Registerkarte zu einem Hauptformular für eine Entität zum Anzeigen von SharePoint-Dokumenten hinzufügen, können Benutzer die Integrationsfeatures von SharePoint finden und verwenden, die in einer modellgesteuerten App verfügbar sind. 
@@ -28,9 +34,9 @@ Wenn Sie eine Registerkarte zu einem Hauptformular für eine Entität zum Anzeig
 > [!IMPORTANT]
 > Sie müssen die Dokumentenverwaltung aktivieren, um dieses Feature nutzen zu können. Weitere Informationen: [Ihre Dokumente mit SharePoint verwalten](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)
 
-## <a name="add-the-documents-tab-in-the-formxml"></a>Hinzufügen der Registerkarte "Dokumente" im FormXML 
+## <a name="add-the-documents-tab-in-the-formxml"></a>Hinzufügen der Registerkarte „Dokumente” im FormXML 
 1.  Erstellen Sie eine neue Lösung. Melden Sie sich bei PowerApps an, wechseln Sie zu **Lösungen**, wählen Sie die Option **Neue Lösung**, und geben Sie dann die erforderlichen und optionalen Informationen ein. Weitere Informationen: [Erstellen einer Lösung](../common-data-service/create-solution.md)
-2. Fügen Sie die Entität zu der Lösung hinzu, in der Sie die Registerkarte "Dokumente" auf dem Hauptformular hinzufügen möchten. Alle standardmäßigen und benutzerdefinierten Entitäten werden unterstützt. Weitere Informationen: [Hinzufügen einer vorhandenen Komponente zu einer Lösung](/powerapps/maker/common-data-service/use-solution-explorer#add-an-existing-component-to-a-solution)
+2. Fügen Sie die Entität zu der Lösung hinzu, in der Sie die Registerkarte „Dokumente” auf dem Hauptformular hinzufügen möchten. Alle standardmäßigen und benutzerdefinierten Entitäten werden unterstützt. Weitere Informationen: [Hinzufügen einer vorhandenen Komponente zu einer Lösung](/powerapps/maker/common-data-service/use-solution-explorer#add-an-existing-component-to-a-solution)
 3. Schließen Sie das Formular für die Entität in der Lösung ein, z. B. das Hauptformular für die Konto-Entität. Wählen Sie neben der Entität die Option **...** und dann **Bearbeiten** aus. Wählen Sie die Registerkarte **Formulare** aus. Wenn das gewünschte Formular fehlt, fügen sie es hinzu.   
 
 4. Fügen Sie eine einspaltige Registerkarte zum Hauptformular hinzu. Wählen Sie dazu im Formulardesigner einen Bereich im Formularcanvas aus, wählen Sie **Komponente hinzufügen** und dann **Registerkarte mit 1 Spalte** aus.  
@@ -45,7 +51,7 @@ Wenn Sie eine Registerkarte zu einem Hauptformular für eine Entität zum Anzeig
 11. Führen Sie einen Bildlauf zum Element control id="*Feldname*" durch, z. B. **control id="Adresse1_Ort"**, und ersetzen Sie das gesamte Element durch das [XML-Beispiel](#xml-sample-for-adding-the-documents-tab-to-a-form) in diesem Thema. 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/form-xml.png "Einfügemarke für XML-Beispiel")
+    > ![](media/form-xml.png "XML sample insertion point")
 
 12. Nehmen Sie diese Änderungen am XML-Beispiel vor. 
     

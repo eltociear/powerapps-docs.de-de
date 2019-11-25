@@ -1,21 +1,24 @@
 ---
-title: Ändern der Basis-URL eines Portals | Microsoft-Dokumentation
-description: 'Erfahren Sie, wie Sie die Basis-URL des Portals ändern.'
+title: Ändern der Basis-URL eines Portals | MicrosoftDocs
+description: Erfahren Sie, wie Sie die Basis-URL des Portals ändern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709977"
 ---
-
 # <a name="change-the-base-url-of-a-portal"></a>Ändern Sie die Basis-URL dieses Portals
 
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
-Sie können die Basis-URL des Portals ändern, nachdem sie bereitgestellt ist. Wenn Sie `contosocommunity.microsoftcrmportals.com` als Basis-URL auswählen, wenn sie das Portal bereitstellen, können Sie es später ändern zu`contosocommunityportal.microsoftcrmportals.com`, um die Anforderungen zu erfüllen.
+Sie können die Basis-URL des Portals ändern, nachdem sie bereitgestellt ist. Wenn Sie `contosocommunity.microsoftcrmportals.com` als Basis-URL auswählen, wenn sie das Portal bereitstellen, können Sie es später ändern zu `contosocommunityportal.microsoftcrmportals.com`, um die Anforderungen zu erfüllen.
 
 > [!NOTE]
 > Nachdem Sie die Basis-URL des Portals ändern, ist die ältere URL nicht mehr verfügbar und wird für andere Kunden nur Nutzung auf deren Portalen frei.
@@ -25,7 +28,7 @@ Sie können die Basis-URL des Portals ändern, nachdem sie bereitgestellt ist. W
 2.  Öffnen Sie **Portalaktionen** > **Basis URL ändern**. 
 
     > [!div class=mx-imgBorder]
-    > ![Basis URL eines Portals ändern](../media/change-base-url-action.png "Basis URL eines Portals ändern")
+    > ![Die Basis-URL eines Portals ändern](../media/change-base-url-action.png "Die Basis-URL eines Portals ändern")
 
 3.  Im Änderungsbasis-URL-Fenster geben Sie die neue Basis-URL für das Portal ein.
 

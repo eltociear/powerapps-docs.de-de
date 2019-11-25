@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Transformationszuordnungen für den Import (Common Data Service) | Microsoft Docs
+title: Hinzufügen von Transformationszuordnungen für den Import (Common Data Service) | Microsoft-Dokumentation
 description: Transformationszuordnung aktiviert optionale Änderung von Quelldaten vor dem Import.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ec4a7ec143559fc3c64987764ee996b6e3d5cc4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748263"
 ---
 # <a name="add-transformation-mappings-for-import"></a>Hinzufügen von Transformationszuordnungen für den Import
 
@@ -133,7 +139,7 @@ Verwenden Sie Transformationszuordnungen, um Daten zu ändern, bevor Sie sie Imp
 |Wert|Ersatzwert (gleich dem zugewiesenen Wert)|  
   
 > [!NOTE]
->  Datumstransformationen können nur für ordnungsgemäß formatierte Datumswerte verwendet werden. Informationen zum Formatieren von Daten finden Sie in der Hilfe zu Common Data Service-Apps.  
+>  Datumstransformationen können nur für ordnungsgemäß formatierte Datumswerte verwendet werden. Informationen zum Formatieren von Daten finden Sie in der Hilfe zu Common Data Service.  
   
 <a name="BKMK_AddToDate"></a>   
 ## <a name="add-to-date"></a>Hinzufügen zum Datum  

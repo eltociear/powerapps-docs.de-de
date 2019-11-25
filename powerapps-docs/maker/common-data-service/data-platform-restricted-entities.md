@@ -1,6 +1,6 @@
 ---
-title: "Eingeschränkte Entitäten, die Dynamics\_365-Lizenzen benötigen | Microsoft Docs"
-description: 'Eine Liste der eingeschränkten Entitäten in Common Data Service, die Dynamics 365-Lizenzen benötigen.'
+title: Eingeschränkte Entitäten, die Dynamics 365-Lizenzen benötigen | Microsoft Docs
+description: Eine Liste der eingeschränkten Entitäten in Common Data Service, die Dynamics 365-Lizenzen benötigen.
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.topic: reference
 ms.date: 05/01/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cd722c29bfc850cb1b55c296b4e377e14678b3ad
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703509"
 ---
-
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Eingeschränkte Entitäten, die Dynamics 365-Lizenzen benötigen
 
 > [!IMPORTANT]

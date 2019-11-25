@@ -1,6 +1,6 @@
 ---
 title: Keine doppelte Registrierung von Plug-in-Schritten | MicrosoftDocs
-description: 'Die Registrierung eines doppelten Plug-in-Schrittes bewirkt, dass das Plug-in bei derselben Nachricht/Ereignis mehrmals ausgelöst wird.'
+description: Die Registrierung eines doppelten Plug-in-Schrittes bewirkt, dass das Plug-in bei derselben Nachricht/Ereignis mehrmals ausgelöst wird.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 84da790ddb69dbbfc01f3a7a4a44fff39bcf183d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748248"
 ---
 # <a name="do-not-duplicate-plug-in-step-registration"></a>Keine Registrierung von Plug-in-Schritten duplizieren
 

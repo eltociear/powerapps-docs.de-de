@@ -1,5 +1,5 @@
 ---
-title: 'Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners | Microsoft-Dokumentation'
+title: Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular mithilfe des Formulardesigners | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 985b876adda527eec2a1cc240c25f571d66b01fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700385"
 ---
-
 # <a name="add-configure-move-or-delete-tabs-on-a-form"></a>Hinzufügen, Konfigurieren, Verschieben oder Löschen von Registerkarten in einem Formular  
 Ergänzen, verschieben oder löschen Sie Registerkarten in einem Formular mithilfe des Formulardesigners.
 
@@ -30,7 +35,7 @@ Ergänzen, verschieben oder löschen Sie Registerkarten in einem Formular mithil
 Um Registerkarten zu einem Formular hinzuzufügen, verwenden Sie den Bereich **Komponenten**.  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsLayout.png "Layoutkomponenten")
+> ![](media/FormDesignerComponentsLayout.png "Layout components")
    
   > [!NOTE]
   >  Registerkarten können nur in Hauptformularen hinzugefügt werden. Weitere Informationen: [Formulartypen](types-forms.md)

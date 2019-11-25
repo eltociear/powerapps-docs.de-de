@@ -1,6 +1,6 @@
 ---
 title: Deaktivierte Anpassungen entfernen | MicrosoftDocs
-description: 'Deaktivierte oder deaktivierte Anpassungen sollten aus einer Lösung entfernt werden, um das Lösungsmanagement zu verbessern und das Risiko der Verwendung oder Verwaltung einer veralteten Komponente zu verringern.'
+description: Deaktivierte oder deaktivierte Anpassungen sollten aus einer Lösung entfernt werden, um das Lösungsmanagement zu verbessern und das Risiko der Verwendung oder Verwaltung einer veralteten Komponente zu verringern.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e14e4603b7d912e0a55cbb76848adebac417bdbd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748303"
 ---
 # <a name="remove-deactivated-or-disabled-customizations"></a>Deaktivierte Anpassungen entfernen
 

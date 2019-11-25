@@ -1,16 +1,21 @@
 ---
-title: 'Verwenden der Hybrid-Navigation, um die Seitenhierarchie für ein Portal darzustellen | MicrosoftDocs'
+title: Verwenden der Hybrid-Navigation zum Rendern der Seitenhierarchie für ein Portal | MicrosoftDocs
 description: Anleitungen zum Verwenden von Hybrid-Navigation zum Rendern der Seitenhierarchie für ein Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708349"
 ---
-
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Rendern von bis zu drei Ebenen der Seitenhierarchie mithilfe der hybriden Navigation
 
 Dieses Beispiel rendert eine hybride Navigation auf Basis der Portalsiteübersicht, die bis zu drei Ebenen der Seitenhierarchie rendert. Die Regeln für diese Komponente sind:

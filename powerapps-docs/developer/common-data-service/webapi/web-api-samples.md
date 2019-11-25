@@ -1,6 +1,6 @@
 ---
-title: Beispiele für Web-API-Datenvorgänge (Common Data Service) | Microsoft Docs
-description: 'Das "Common Data Service"-SDK bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. Sie finden hier die C#- und JavaScript-Implementierungen grundlegender Operationen, Abfragedaten, bedingter Operationen sowie Beispiele für Funktionen und Aktionen'
+title: Beispiele für Web-API-Datenvorgänge (Common Data Service) | Microsoft-Dokumentation
+description: Das Common Data Service SDK bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. Sie finden hier die C#- und JavaScript-Implementierungen grundlegender Operationen, Abfragedaten, bedingter Operationen sowie Beispiele für Funktionen und Aktionen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: cdcb02f5-3baa-4fb7-8fb3-6fe53c2d4271
 caps.latest.revision: 11
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a8f977c9969283702834c45e9c9aeee9a6459fd4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748343"
 ---
 # <a name="web-api-data-operations-samples"></a>Beispiele für Web-API-Datenvorgänge
 
-Sie können die "Common Data Service"-Web-API mit einer Vielzahl von Programmiersprachen oder - bibliotheken verwenden. Dieser Leitfaden bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. In diesem Thema sind Beispiele enthalten, die für jede Gruppe verfügbar sind und zeigen, wie diese Vorgänge mithilfe verschiedener Sprachen oder Verwendungen ausgeführt werden.
+Sie können die Common Data Service Web API mit einer Vielzahl von Programmiersprachen oder - bibliotheken ermöglichen. Dieser Leitfaden bietet eine Matrix von Beispielen, die zeigen, wie die Web-API auf mehrere unterschiedliche Arten verwendet wird. In diesem Thema sind Beispiele enthalten, die für jede Gruppe verfügbar sind und zeigen, wie diese Vorgänge mithilfe verschiedener Sprachen oder Verwendungen ausgeführt werden.
 
 <!-- TODO:
 > [!NOTE]
@@ -30,7 +36,7 @@ Sie können die "Common Data Service"-Web-API mit einer Vielzahl von Programmier
   
 ## <a name="web-api-sample-matrix"></a>Web API Beispielmatrix
 
-Die folgende Tabelle beschreibt die "Common Data Service"-Web-API-Beispiele und die sprachspezifischen Implementierungen.  
+Die folgende Tabelle beschreibt Common Data Service-Web-API-Beispiele und die sprachspezifischen Implementierungen.  
   
 |Sprachunabhängige Beschreibung|C# Implementierung|Clientseitiges JavaScript-Implementierung|  
 |-----------------------------------|------------------------|--------------------------------------------|  
@@ -65,7 +71,7 @@ Die folgende Tabelle enthält Themen, die standardsprachliche oder bibliothekssp
   
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service-Web-API verwenden](overview.md)<br />
+[Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Beispiel grundlegender Web-API-Operationen](web-api-basic-operations-sample.md)<br />
 [Web API-Abfragedatenbeispiel](web-api-query-data-sample.md)<br />
 [Beispiel bedingter Web-API-Operationen](web-api-conditional-operations-sample.md)<br />

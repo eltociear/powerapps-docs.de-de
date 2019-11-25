@@ -1,47 +1,50 @@
 ---
-title: Ein Portal mit einer Dynamics 365-Onlineorganisation verbinden | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie ein Portal mit einer Dynamics 365-Onlineorganisation verbinden und wie Sie den Authentifizierungsschlüssel erneuern.'
+title: Ein Portal mit einer Common Data Service-Umgebung verbinden | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein Portal mit einer Common Data Service-Umgebung verbinden und wie Sie den Authentifizierungsschlüssel erneuern.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 31632f4de1834855c696baa1b4b651ed777c8abd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709713"
 ---
+# <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>Ein Portal mit einer Common Data Service-Umgebung verbinden
 
-# <a name="connect-to-a-dynamics-365-online-organization-using-a-portal"></a>Eine Dynamics 365-Onlineorganisation mithilfe eines Portals verbinden
+Ein Portal stellt eine Verbindung mit einer Common Data Service-Umgebung mit Hilfe einer Azure Active Directory-Anwendung her. Die Anwendung wird im gleichen Mandanten erstellt, in dem das Portal bereitgestellt wird. Die Anwendung wird bei der Common Data Service-Umgebung während des Portalbereitstellungsprozesses registriert.
 
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
+![Ein Portal mit der Common Data Service-Umgebung verbinden](../media/connect-with-dynamics.png "Ein Portal mit der Common Data Service-Umgebung verbinden")
 
-Ein Portal verbindet sich über eine Azure Active Directory-Anwendung mit einer Dynamics 365-Online-Organisation. Die Anwendung wird im gleichen Mandanten erstellt, in dem das Portal bereitgestellt wird. Die Anwendung wird während des Portalbereitstellungsprozesses bei der Organisation Dynamics 365 registriert.
+Jedem Portal ist eine separate Azure Active Directory-Anwendung zugeordnet, ungeachtet dessen, ob es mit derselben Common Data Service-Umgebung verbunden ist. Der standardmäßige Azure Active Directory-Authentifizierungsanbieter, der für ein Portal erstellt ist, verwendet dieselbe Azure Active Directory-Anwendung, um das Portal zu authentifizieren. Die Autorisierung wird durch Webrollen erzwungen, die dem Benutzer zugewiesen werden, der auf das Portal zugreift.
 
-![Ein Portal mit der Dynamics 365-Organisation verbinden](../media/connect-with-dynamics.png "Ein Portal mit der Dynamics 365-Organisation verbinden")
-
-Jedem Portal ist eine separate Azure Active Directory-Anwendung zugeordnet, unabhängig davon, ob es mit derselben Dynamics 365-Organisation verbunden ist oder nicht. Der standardmäßige Azure Active Directory-Authentifizierungsanbieter, der für ein Portal erstellt ist, verwendet dieselbe Azure Active Directory-Anwendung, um das Portal zu authentifizieren. Die Autorisierung wird durch Webrollen erzwungen, die dem Benutzer zugewiesen werden, der auf das Portal zugreift.
-
-Sie können die zugeordneten Portalanwendung in Azure Active Directory sehen. Der Name dieser Anwendung wird Microsoft CRM-Portale sein, und die Portal-ID befindet sich im Feld **App-ID-URI** in der Azure Active Directory-Anwendung. Die Person, die das Portal bereitstellt, besitzt diese Anwendung. Sie dürfen diese Anwendung nicht löschen oder ändern. Anderenfalls zerstören Sie möglicherweise die Portalfunktionen. Sie müssen der Anwendungsbesitzer sein, um ein Portal aus dem Portal Admin Center zu verwalten.
+Sie können die zugeordneten Portalanwendung in Azure Active Directory sehen. Der Name dieser Anwendung wird Microsoft CRM-Portale sein, und die Portal-ID befindet sich im Feld **App-ID-URI** in der Azure Active Directory-Anwendung. Die Person, die das Portal bereitstellt, besitzt diese Anwendung. Sie dürfen diese Anwendung nicht löschen oder ändern. Anderenfalls zerstören Sie möglicherweise die Portalfunktionen. Sie müssen der Anwendungsbesitzer sein, um ein Portal aus dem Admin-Center für PowerApps-Portale zu verwalten.
 
 ## <a name="authentication-key"></a>Authentifizierungsschlüssel
 
-Damit sich ein Portal mit Dynamics 365 über eine Azure Active Directory-Anwendung verbinden kann, ist ein Authentifizierungsschlüssel erforderlich, der mit der Azure Active Directory-Anwendung verbunden ist. Dieser Schlüssel wird generiert, wenn Sie ein Portal bereitstellen und der öffentliche Teil dieses Schlüssels automatisch zur Azure Active Directory-Anwendung hochgeladen wird.
+Damit ein Portal eine Verbindung mit Common Data Service unter Verwendung einer Azure Active Directory-Anwendung herstellt, benötigt es einen Authentifizierungsschlüssel, der mit der Azure Active Directory-Anwendung verbunden ist. Dieser Schlüssel wird generiert, wenn Sie ein Portal bereitstellen und der öffentliche Teil dieses Schlüssels automatisch zur Azure Active Directory-Anwendung hochgeladen wird.
 
 > [!IMPORTANT]
-> Der Authentifizierungsschlüssel läuft in zwei Jahren ab. Es muss alle zwei Jahre erneuert werden, um sicherzustellen, dass Ihr Portal weiterhin mit der Dynamics 365-Organisation verbunden ist. Wenn Sie den Schlüssel nicht aktualisieren, funktioniert das Portal nicht mehr.  
+> Der Authentifizierungsschlüssel läuft in zwei Jahren ab. Er muss alle zwei Jahre erneuert werden, um sicherzustellen, dass Ihr Portal weiterhin eine Verbindung mit Ihrer Common Data Service-Umgebung herstellt. Wenn Sie den Schlüssel nicht aktualisieren, funktioniert das Portal nicht mehr.  
 
 ### <a name="authentication-key-details"></a>Schlüsseldetails zur Authentifizierung
 
-Die Details eines Authentifizierungsschlüssels werden im Portal Admin Center und im Portal angezeigt.
+Die Details eines Authentifizierungsschlüssels werden im Admin-Center und Portal für PowerApps-Portale angezeigt.
 
-**Portal Admin Center**
+**Admin-Center für PowerApps-Portale**
 
 1. Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
 2. Wählen Sie **Portalauthentifizierungsschlüssel verwalten** aus. Der Authentifizierungsschlüssel wird zusammen mit seinem Ablaufdatum und Fingerabdruck angezeigt.
 
    > [!div class=mx-imgBorder]
-   > ![Authentifizierungsschlüsseldetails in Portal Admin Center](../media/manage-auth-key.png "Authentifizierungsschlüsseldetails in Portal Admin Center")
+   > ![Authentifizierungsschlüsseldetails im PowerApps-Portal-Administratorcenter](../media/manage-auth-key.png "Authentifizierungsschlüsseldetails im PowerApps-Portal-Administratorcenter")
 
 **Portal**
 
@@ -57,11 +60,11 @@ Die Details eines Authentifizierungsschlüssels werden im Portal Admin Center un
 
 ### <a name="authentication-key-expiration-notification"></a>Benachrichtigung über den Ablauf des Authentifizierungsschlüssels
 
-Bevor der Authentifizierungsschlüssel abläuft, werden Sie per E-Mails, Portal Admin Center und Portal benachrichtigt.
+Bevor der Authentifizierungsschlüssel abläuft, werden Sie per E-Mails, Admin-Center der PowerApps-Portale und Portal benachrichtigt.
 
 **Email**
 
-E-Mail wird an Personen gesendet, die sich für die E-Mail-Benachrichtigung für die Organisation angemeldet haben, die mit ihrem Portal verbunden ist. Weitere Informationen über die Anmeldung für die E-Mail-Benachrichtigung: [Verwalten von E-Mail-Benachrichtigungen an Administratoren](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-email-notifications)
+E-Mail wird an Personen gesendet, die sich für die E-Mail-Benachrichtigung für die Organisation angemeldet haben, die mit ihrem Portal verbunden ist. Weitere Informationen über die Anmeldung für die E-Mail-Benachrichtigung: [Verwalten von E-Mail-Benachrichtigungen an Administratoren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-email-notifications)
 
 E-Mail-Benachrichtigungen werden in den nachfolgenden Intervallen gesendet: 
 - 90 Tage 
@@ -85,12 +88,12 @@ Außerdem werden Sie benachrichtigt, nachdem der Schlüssel abgelaufen ist, und 
 > - Intervalle werden in UTC ab dem Schlüsselablaufdatum berechnet.
 > - Die E-Mail kann nicht zu genau den oben aufgelisteten Intervallen garantiert werden. Eine E-Mail-Benachrichtigung kann sich verzögern oder verpasst werden. Stellen Sie sicher, dass Sie auch online das Schlüsselablaufdatum überprüfen.
 
-**Portal Admin Center**
+**Admin-Center für PowerApps-Portale**
 
 Eine Nachricht über das Schlüsselablaufdatum wird oben auf der Seite angezeigt.
 
 > [!div class=mx-imgBorder]
-> ![Authentifizierungsschlüsselbenachrichtigung in Portal Admin Center](../media/portal-admin-center-auth-notif.png "Authentifizierungsschlüsselbenachrichtigung in Portal Admin Center")
+> ![Authentifizierungsschlüsselbenachrichtigung im PowerApps-Portal-Administratorcenter](../media/portal-admin-center-auth-notif.png "Authentifizierungsschlüsselbenachrichtigung im PowerApps-Portal-Administratorcenter")
 
 **Portal**
 
@@ -104,7 +107,7 @@ Wenn Sie zur URL <portal_path>/_services/about navigieren, wird eine Benachricht
 
 ## <a name="renew-portal-authentication-key"></a>Portalauthentifizierungsschlüssel erneuern
 
-Sie müssen den Schlüssel alle zwei Jahre erneuern, um sicherzustellen, dass Ihr Portal eine Verbindung zu Dynamics 365 herstellen kann.
+Sie müssen den Schlüssel alle zwei Jahre erneuern, um sicherzustellen, dass Ihr Portal eine Verbindung mit Ihrer Common Data Service-Umgebung herstellen kann.
 
 > [!NOTE]
 > Um den Schlüssel zu erneuern, müssen Sie über Berechtigungen zur Verwaltung Ihres Portale verfügen.

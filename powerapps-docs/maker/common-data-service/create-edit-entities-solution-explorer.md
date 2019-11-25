@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer  | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Entität mithilfe des Lösungsexplorers erstellen'
+description: Erfahren Sie, wie Sie eine Entität mithilfe des Lösungsexplorers erstellen
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707293"
 ---
-
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer
 
-Sie können keine Entität mithilfe des PowerApps-Portals für die meisten allgemeinen Situationen einfach erstellen, jedoch nicht alle Funktionen werden dort implementiert. Falls Sie diese Bedingungen erfüllen müssen, die in [Entitäten in Common Data Service erstellen und bearbeiten](create-edit-entities.md) beschrieben sind, können Sie sie ausführen, indem Sie mithilfe des Lösungs-Explorers Entitäten erstellen oder bearbeiten.
+Sie können Entität mithilfe des PowerApps-Portals für die meisten allgemeinen Situationen einfach erstellen, jedoch nicht alle Funktionen werden dort implementiert. Falls Sie die Bedingungen erfüllen müssen, die in [Entitäten erstellen und bearbeiten Common Data Service](create-edit-entities.md) beschrieben sind, können Sie sie ausführen, indem Sie mithilfe des Lösungs-Explorers Entitäten erstellen oder bearbeiten.
 
 ## <a name="open-solution-explorer"></a>Öffnen Sie den Lösungs-Explorer
 
@@ -174,7 +179,7 @@ Folgende Optionen sind standardmäßig festgelegt und können nicht mehr geände
  - **Notizen (enthält Anlagen)**
  - **Verbindungen**
  - **Warteschlangen**
- - **Offlinefunktion für Dynamics 365 für Outlook**
+ - **Offlinefunktionen für Dynamics 365 for Outlook**
 
 Folgende Optionen können nicht festgelegt werden:
 
@@ -197,6 +202,6 @@ Einige Optionen werden nur verwendet, falls eine virtuelle Entität erstellt wir
 Mehr Informationen: [Erstellen und Bearbeiten von virtuellen Entitäten, die Daten aus einer externen Datenquelle enthalten](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>Siehe auch
-[Erstellen und bearbeiten Sie Entitäten in Common Data Service](create-edit-entities.md)<br />
-[Lernprogramm: Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Entitäten erstellen und bearbeiten in Common Data Service](create-edit-entities.md)<br />
+[Tutorial: Erstellen Sie eine benutzerdefinierte Entität, die Komponenten in PowerApps enthält](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Erstellen einer Lösung](create-solution.md)

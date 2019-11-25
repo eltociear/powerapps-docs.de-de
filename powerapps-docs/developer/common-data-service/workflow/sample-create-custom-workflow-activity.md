@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel: Erstellen einer benutzerdefinierten Workflow-Aktivität (Common Data Service) | MicrosoftDocs'
-description: 'Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Workflowaktivität schreiben, die eine neue Firma sowie eine Aufgabe für die Firma erstellen kann. Dieses Beispiel verwendet frühere Bindungen.'
+title: 'Beispiel: Eine benutzerdefinierte Workflowaktivität erstellen (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Workflowaktivität schreiben, die eine neue Firma sowie eine Aufgabe für die Firma erstellen kann. Dieses Beispiel verwendet frühere Bindungen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 6d498e86-8702-43ed-bf76-96d1b4246dfd
 caps.latest.revision: 26
 author: JimDaly
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f903726480068d0d5796ee51a9f442093d472290
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748336"
 ---
 # <a name="sample-create-a-custom-workflow-activity"></a>Beispiel: Eine benutzerdefinierte Workflowaktivität erstellen
 

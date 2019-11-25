@@ -1,6 +1,6 @@
 ---
-title: Abrufen von Metadaten über den Namen oder die MetadataId (Common Data Service) | Microsoft Docs
-description: 'Common Data Service verwendet eine durch Metadaten gesteuerte Architektur, um die Flexibilität bereitzustellen, benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute zu erstellen.'
+title: Abrufen von Metadaten über den Namen oder die MetadataId (Common Data Service) | Microsoft-Dokumentation
+description: Common Data Service verwendet eine durch Metadaten gesteuerte Architektur, um die Flexibilität bereitzustellen, benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute zu erstellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 80bcdd8e-7c4f-4fd5-8708-00345f5d0408
 caps.latest.revision: 8
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f56f825b426843b5e3c1ad9747ac060d84100ae0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748349"
 ---
 # <a name="retrieve-metadata-by-name-or-metadataid"></a>Abrufen von Metadaten über den Namen oder die MetadataId
 
@@ -294,7 +300,7 @@ OData-Version: 4.0
   
 ### <a name="see-also"></a>Siehe auch
 
-[Nutzen der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
+[Verwenden der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
 [Metadaten mit Web-API abfragen](query-metadata-web-api.md)<br />
 [Erstellen und Aktualisieren von Entitätsdefinitionen mit der Web-API](create-update-entity-definitions-using-web-api.md)<br /> 
 [Erstellen und Aktualisieren von Entitätsbeziehungen mit der Web-API](create-update-entity-relationships-using-web-api.md)

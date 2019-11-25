@@ -1,6 +1,6 @@
 ---
 title: 'Entwickler: Erste Schritte mit Common Data Service | Microsoft Docs'
-description: 'Erfahren Sie, wie Entwickler Wert mithilfe des Common Data Service in PowerApps hinzufügen können.'
+description: Erfahren Sie, wie Entwickler Wert mithilfe des Common Data Service in PowerApps hinzufügen können.
 suite: powerapps
 author: JimDaly
 manager: ryjones
@@ -9,12 +9,17 @@ ms.date: 08/05/2019
 ms.author: jdaly
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cfb5472981aab82f9f4909d71b45135e02ca9c33
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748286"
 ---
-
 # <a name="developers-get-started-with-common-data-service"></a>Entwickler: Erste Schritte mit Common Data Service
 
 Wo zu beginnen hängt vom Problem ab, das Sie lösen möchten. Es enthält ein großes Angebot an Informationen bezüglich Funktionen und es ist unwahrscheinlich, dass alle verwendet werden. Der folgende Abschnitt umfasst mehrere Schlüsselschlüsselbereiche, um zu beginnen.

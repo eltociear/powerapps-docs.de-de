@@ -1,16 +1,21 @@
 ---
-title: Verwenden von Liquid-Operatoren für ein Portal | MicrosoftDocs
+title: Verwenden von bedingten Liquid-Operatoren für ein Portal | MicrosoftDocs
 description: Lesen Sie mehr zu den verfügbaren bedingten Liquid-Operatoren in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: def132ebc0f8ef93121b10b221479a2452a1d4fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708261"
 ---
-
 # <a name="available-liquid-conditional-operators"></a>Verfügbare bedingte Liquid-Operatoren
 
 Wenn sie in den Bedingungsanweisungen (**if**, **unless**) verwendet werden, werden einige Liquid-Werte als "true" und andere als "false" angesehen.

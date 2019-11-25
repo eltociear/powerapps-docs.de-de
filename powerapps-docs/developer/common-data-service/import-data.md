@@ -1,6 +1,6 @@
 ---
-title: Datenimport (Common Data Service) | Microsoft Docs
-description: 'Wenn Sie Daten in Common Data Service importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe des Datenimports können Sie Daten aus verschiedenen Kundenbeziehungssystemen und Datenquellen in Common Data Service hochladen.'
+title: Daten importieren (Common Data Service) | Microsoft-Dokumentation
+description: Wenn Sie Daten in Common Data Service importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe von Datenimport können Sie Daten aus verschiedenen CRM-Systemen und Datenquellen in Common Data Service hochladen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 562072c6d63b0abfeaa6c9f44f9cccfc5fdc960c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748281"
 ---
 # <a name="import-data"></a>Daten importieren
 
@@ -48,9 +54,9 @@ https://docs.microsoft.com/dynamics365/customer-engagement/web-api/importmapping
 Or should the core general content simply include both?
 
 -->
-Wenn Sie Daten in Common Data Service importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe des Datenimports können Sie Daten aus verschiedenen Kundenbeziehungssystemen und Datenquellen in Common Data Service hochladen. Sie können Daten in Standard- und benutzerdefinierte Attribute der meisten Geschäfts- und benutzerdefinierten Entitäten importieren. Sie können auch zugehörige Daten, wie etwa Notizen und Anlagen, hinzufügen.  
+Wenn Sie Daten in Common Data Service importieren möchten, können Sie die *Datenimport*-Funktion verwenden. Mithilfe von Datenimport können Sie Daten aus verschiedenen CRM-Systemen und Datenquellen in Common Data Service hochladen. Sie können Daten in Standard- und benutzerdefinierte Attribute der meisten Geschäfts- und benutzerdefinierten Entitäten importieren. Sie können auch zugehörige Daten, wie etwa Notizen und Anlagen, hinzufügen.  
   
-Common Data Service umfasst ein Webanwendungstool, das Datenimport-Assistent heißt. Sie können dieses Tool verwenden, um Datensätze aus einer oder mehr Dateien mit durch Komma getrennten Werten (.csv), XML-Kalkulationstabellen 2003 (.xml) oder aus Textdateien zu importieren.  
+Common Data Service beinhaltet ein Webanwendungstool mit dem Namen Datenimport-Assistent. Sie können dieses Tool verwenden, um Datensätze aus einer oder mehr Dateien mit durch Komma getrennten Werten (.csv), XML-Kalkulationstabellen 2003 (.xml) oder aus Textdateien zu importieren.  
   
  Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu Common Data Service.  
   
@@ -68,7 +74,7 @@ Common Data Service umfasst ein Webanwendungstool, das Datenimport-Assistent hei
   
 - Fügen Sie `LookupMap`XML-Tags in der Datenzuordnung hinzu, um anzugeben, dass die Datensuche initiiert und in einer Quelldatei ausgeführt wird, die bei dem Import verwendet wird.  
   
-- Fügen Sie benutzerdefinierte `OwnerMetadata`-XML-Tags in der Datenzuordnung hinzu, sodass die Benutzerdatensätze in der Quelldatei den Datensätzen des Benutzers (Systembenutzer) in Common Data Service entsprechen.  
+- Fügen Sie benutzerdefinierte `OwnerMetadata`XML-Tags in der Datenzuordnung hinzu, sodass die Benutzerdatensätze in der Quelldatei den Datensätzen des Benutzers (Systembenutzer) in Common Data Service entsprechen.  
   
 - Verwenden Sie optionale Überprüfungen.  
   

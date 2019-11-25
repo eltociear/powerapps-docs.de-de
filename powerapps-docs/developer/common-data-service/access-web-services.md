@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf externe Webservices (Common Data Service) | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie über ein benutzerdefiniertes Plug-in oder eine Workflow-Aktivität auf einen Webservice zugreifen können.'
+description: Erfahren Sie, wie Sie über ein benutzerdefiniertes Plug-in oder eine Workflow-Aktivität auf einen Webservice zugreifen können.
 ms.custom: ''
 ms.date: 8/19/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b236ba63a4e82f5969c5496af58a5aa015b89a1b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748265"
 ---
 # <a name="access-external-web-services"></a>Zugriff auf externe Webservices
 

@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei Power Query | Microsoft Docs
-description: 'Beheben Sie das Problem mit Power Query, oder indem Sie in Common Data Service eine benutzerdefinierte Entität erstellen.'
+description: Beheben Sie Probleme mit Power Query, um eine benutzerdefinierte Entität in Common Data Service zu erstellen.
 author: mllopis
 manager: kfile
 ms.service: powerapps
@@ -9,20 +9,25 @@ ms.topic: conceptual
 ms.date: 05/16/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5679d82d6ec53d579567a778043ac9542099a20e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706677"
 ---
-
 # <a name="troubleshoot-power-query"></a>Probleme mit Power Query beheben
 Wenn Sie Power Query for Excel verwenden, um eine benutzerdefinierte Entität zu erstellen, die Daten aus externen Quellen enthält, wird möglicherweise dieser Fehler angezeigt:
 
 >"Ihr Azure Active Directory-Administrator hat eine Richtlinie festgelegt, die verhindert, dass Sie diese Funktionen verwenden. Wenden Sie sich an Ihren Administrator, der Berechtigungen für diese Funktionalität in Ihrem Auftrag gewähren kann."
 
-Dieser Fehler wird angezeigt, wenn Power Query nicht in PowerApps oder Common Data Service auf die Daten der Organisation zugreifen kann. Diese Situation entsteht unter zwei Umständen:
+Dieser Fehler wird angezeigt, wenn Power Query nicht auf die Daten der Organisation in PowerApps oder Common Data Service zugreifen kann. Diese Situation entsteht unter zwei Umständen:
 
-* Ein Azure Active Directory (Azure AD)-Mandantenadministrator hat die Möglichkeit der Benutzer nicht zugelassen, Apps zuzustimmen, die in ihrem Namen auf Unternehmensdaten zugreifen.
+* Ein Azure Active Directory (Azure AD)-Mandantenadministrator hat die Möglichkeit der Benutzer Apps zuzustimmen, die in deren Namen auf Unternehmensdaten zugreifen, nicht zugelassen.
 * Verwenden eines nicht verwalteten Active Directory-Mandanten. Ein nicht verwalteter Mandanten ist ein Verzeichnis ohne einen globalen Administrator, der erstellt wurde, um ein Self-Service-Verpflichtungsangebot abzuschließen. Um dieses Szenario zu beheben, müssen Benutzer zunächst in eine verwaltetes Mandat konvertieren und dann eine von zwei Lösungen für dieses Problem befolgen. Die Lösungen finden Sie im nächsten Abschnitt.
 
 Um dieses Problem zu beheben, muss der Azure Active Directory-Administrator eine der Vorgehensweisen befolgen, die weiter unten in diesem Artikel präsentiert werden.
@@ -39,7 +44,7 @@ Alternativ kann der Mandantenadministrator Power Query zulassen, ohne mandantenw
 1. Installieren Sie [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps).
 2. Führen Sie die folgenden PowerShell-Befehle aus:
    * Login-AzureRmAccount (und melden Sie sich als Mandantenadministrator an)
-   * New-AzureRmADServicePrincipal - ApplicationId f3b07414-6bf4-46e6-b63f-56941f3f4128
+   * Neu-AzureRmADServicePrincipal - ApplicationId f3b07414-6bf4-46e6-b63f-56941f3f4128
 
 Der Vorteil bei dieser Methode (im Gegensatz zur mandantenweiten Lösung) ist, dass diese Lösung gezielt ist. Er stellt nur das **Power Query**-Dienstprinzipal bereit, aber es werden keine anderen Berechtigungsänderungen am Mandanten vorgenommen.
 
@@ -55,7 +60,7 @@ In PowerApps greifen Sie auf den Abfrage-Editor zu, indem Sie folgende Schritte 
 
 ## <a name="delete-personal-data"></a>Personendaten löschen
 
-Die meisten Daten werden innerhalb von 30 Tagen automatisch gelöscht. Für Daten und Metadaten zu Mashups, müssen Benutzer alle ihre Mashups über PowerApps entfernen. Alle zugeordneten Daten und Metadaten werden innerhalb von 30 Tagen entfernt.
+Die meisten Daten werden innerhalb von 30 Tagen automatisch gelöscht. Für Daten und Metadaten zu Mashups müssen Benutzer alle ihre Mashups über PowerApps entfernen. Alle zugeordneten Daten und Metadaten werden innerhalb von 30 Tagen entfernt.
 
 So entfernen Sie Mashups aus Power Apps:
 1. Entfernen Sie den Data Integrator-Projekte, die aus der Registerkarte "namesake" entfernt werden können.

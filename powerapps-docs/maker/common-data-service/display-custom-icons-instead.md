@@ -1,6 +1,6 @@
 ---
 title: Anzeige benutzerdefinierter Symbole neben Werten in Listenansichten mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansicht angezeigt werden'
+description: Erfahren Sie, wie benutzerdefinierte Symbolgrafiken in einer Ansicht angezeigt werden
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: af866aed-2586-4b6f-bb1c-3519baae3645
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705489"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>Benutzerdefinierte Symbole zusammen mit Werten in Listenansichten anzeigen
 
@@ -30,7 +36,7 @@ search.app:
  PowerApps-Umgebungsadministratoren und Customizer können einer Ansicht Grafiken hinzufügen und die Logik festlegen, mit der eine Grafik basierend auf dem Spaltenwert per JavaScript ausgewählt wird. Mit dieser Funktion können Sie Listenansichten anpassen, die Symbole neben Text- oder Zahlenwerten anzeigen. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/icon-in-opportunity-view.png "Ansicht alle Verkaufschancen mit der Bewertungsspalte mit Symbolanzeige und Textwert")
+> ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
 > [!NOTE]
 >  Rastersymbole werden nur der Weboberfläche angezeigt. Sie werden nicht in [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] oder in der mobilen App angezeigt.  

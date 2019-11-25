@@ -1,6 +1,6 @@
 ---
-title: Feldsicherheitsentitäten (Common Data Service) | Microsoft Docs
-description: 'Infos zum Verwenden von Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt.'
+title: Feldsicherheitsentitäten (Common Data Service) | Microsoft-Dokumentation
+description: Infos zum Verwenden von Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7c149a31766878bf50b6c846e587de01bb36667b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748288"
 ---
 # <a name="field-security-entities"></a>Feldsicherheitsentitäten
 
-Sie verwenden Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt. Der Umfang der Sicherheit auf Feldebene ist global, was bedeutet, dass sie für alle Datensätze innerhalb der Organisationen gilt, unabhängig von der Hierarchieebene der Unternehmenseinheit, zu der der Datensatz oder Benutzer gehört. Die Feldsicherheit funktioniert in allen Common Data Service-Clients, auch im Webclient, in Dynamics 365 for Outlook und in Dynamics. Sie gilt für alle Komponenten, also für die Common Data Service-Webdienste, Berichte, Suche, Offlinekomponente, gefilterte Ansichten, Überwachung und Duplikaterkennung. Für diese Version kann die Feldsicherheit sowohl für benutzerdefinierten Felder als auch viele vordefinierte (OOB)- Felder angewendet werden.  
+Sie verwenden Feldsicherheitsentitäten, um Sicherheit auf Feldebene anzuwenden, was den Feldzugriff auf angegebene Benutzer und Teams beschränkt. Der Umfang der Sicherheit auf Feldebene ist global, was bedeutet, dass sie für alle Datensätze innerhalb der Organisationen gilt, unabhängig von der Hierarchieebene der Unternehmenseinheit, zu der der Datensatz oder Benutzer gehört. Die Feldsicherheit gilt für alle Common Data Service-Clients, also auch für den Webclient, für Dynamics 365 for Outlook und für Dynamics. Sie gilt für alle Komponenten, also für Common Data Service-Webdienste, Berichte, Suchen, Offlinekomponenten, gefilterte Ansichten, Überwachung und Duplikaterkennung. Für diese Version kann die Feldsicherheit sowohl für benutzerdefinierten Felder als auch viele vordefinierte (OOB)- Felder angewendet werden.  
   
  Weitere Informationen, wie gesicherte Felder das Verhalten von Methoden ändern, siehe [Wie Feldsicherheit verwendet werden kann, um Zugriff auf Feldwerte in Dynamics 365 zu steuern](/dynamics365/customer-engagement/developer/security-dev/use-field-security-control-access-field-values).  
   

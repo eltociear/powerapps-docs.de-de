@@ -1,19 +1,22 @@
 ---
 title: Kundenprobleme mit einem Portal identifizieren und beheben | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie Kundenprobleme mit einem Portal identifizieren und beheben können.'
+description: Erfahren Sie, wie Sie Kundenprobleme mit einem Portal identifizieren und beheben können.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: b361efd6a1f44485e9b7337e3e5b3a29c1a826d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709625"
 ---
-
 # <a name="portal-checker"></a>Portalprüfer
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Der Portal-Checker ist ein Self-Service-Diagnosewerkzeug, das von Portaladministratoren verwendet werden kann, um häufige Probleme in ihrem Portal zu identifizieren. Der Portalprüfer hilft Ihnen, Probleme mit Ihrem Portal zu identifizieren, indem er sich verschiedene Konfigurationsparameter ansieht und Vorschläge zur Behebung gibt.
 
@@ -38,7 +41,7 @@ Bei Bedarf können Sie die Diagnoseprüfungen erneut durchführen, wodurch die E
 > [!NOTE]
 > Wenn das Portal deaktiviert oder die IP-Adressfilterung aktiviert ist, werden bestimmte Diagnoseprüfungen auf Ihrem Portal nicht durchgeführt.
 
-Eine Liste der häufigsten Probleme, die vom Portalprüfer-Tool diagnostiziert wurden, finden Sie unter [Allgemeine Probleme im Portal, die vom Portalprüfer diagnostiziert wurden, und deren bewährte Verfahren](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/portal-faq).
+Eine Liste der häufigsten Probleme, die vom Portalprüfer-Tool diagnostiziert wurden, finden Sie unter [Allgemeine Probleme im Portal, die vom Portalprüfer diagnostiziert wurden, und deren bewährte Verfahren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/portal-faq).
 
 Um den Portal-Checker auszuführen:
 
@@ -47,7 +50,7 @@ Um den Portal-Checker auszuführen:
 2.  Gehen Sie zu **Portalprüfung ausführen**.
 
     > [!div class=mx-imgBorder]
-    > ![Portal-Checker ausführen](../media/run-diagnostics.png "Portal-Checker ausführen")
+    > ![Portalprüfung ausführen](../media/run-diagnostics.png "Portalprüfung ausführen")
 
 3.  **Portalprüfung ausführen** auswählen. Die Diagnosesitzung wird gestartet und sammelt Daten über die Kundenprobleme. Die Ergebnisse werden im Abschnitt **Diagnoseergebnisse** angezeigt.
 

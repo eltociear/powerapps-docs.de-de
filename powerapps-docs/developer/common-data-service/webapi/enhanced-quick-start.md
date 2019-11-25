@@ -1,6 +1,6 @@
 ---
 title: Verbesserter Schnellstart (Common Data Service) | Microsoft Docs
-description: 'Erstellen eines neuen Projekts in Visual Studio, um eine Konsolenanwendung zu erstellen, die die Common Data Service-Web-API verwendet'
+description: Erstellen eines neuen Projekts in Visual Studio, um eine Konsolenanwendung zu erstellen, die die Common Data Service-Web-API verwendet
 ms.custom: ''
 ms.date: 02/02/2019
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 08377156-32c7-492a-8e66-50a47a330dc6
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa12284b6ca3eeca25ba01d52e4132319586eea4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748358"
 ---
 # <a name="enhanced-quick-start"></a>Verbesserte Schnellstartfunktion
 
@@ -35,7 +41,7 @@ Um dies zu ermöglichen, sind drei Schritte erforderlich:
 
 1. [Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen](#add-reference-to-systemconfiguration-to-the-visual-studio-project)
 1. [Bearbeiten der Anwendungskonfigurationsdatei](#edit-the-application-configuration-file)
-1. [Hinzufügen mit Anweisung zur Program.cs](#add-using-statement-to-programcs)
+1. [Hinzufügen von Using-Direktiven zu Program.cs](#add-using-directive-to-programcs)
 
 
 ### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Referenz auf System.Configuration zum Visual Studio-Projekt hinzufügen
@@ -76,9 +82,9 @@ Dadurch entsteht eine Verbindungszeichenfolge, die namentlich referenziert werde
 
 Bearbeiten Sie die Werte für die Verbindungszeichenfolge `Url`, `Username` und `Password` in der `connectionString` so, dass sie mit dem übereinstimmen, was Sie für die Verbindung zu Ihrer Common Data Service-Umgebung benötigen.
 
-### <a name="add-using-statement-to-programcs"></a>Hinzufügen mit Anweisung zur Program.cs
+### <a name="add-using-directive-to-programcs"></a>Hinzufügen von Using-Direktiven zu Program.cs
 
-Fügen Sie dies oben in Ihrer Program.cs-Datei mit der Anweisung hinzu:
+Fügen Sie diese Using-Direktive oben in Ihrer Program.cs-Datei hinzu:
 
 ```csharp
 using System.Configuration;
@@ -96,7 +102,7 @@ Diese Helfer werden auch in der [SampleHelper.cs](https://github.com/Microsoft/P
     > [!NOTE]
     > Der Name der Klasse bestimmt, wie Sie auf diese Hilfseigenschaften und Methoden innerhalb Ihrer `Program.cs` verweisen. Die restlichen Anweisungen erwarten, dass Sie es `SampleHelpers` genannt haben, also denken Sie daran, wenn Sie es anders benannt haben.
 
-1. Fügen Sie die folgenden `using`-Statements hinzu:
+1. Die folgenden `using`-Direktiven hinzufügen:
 
     ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -274,10 +280,10 @@ Dies ist weniger Code und Sie haben eine Fehlerbehandlung und die Möglichkeit h
 
 Drücken Sie F5, um das Programm auszuführen. Genau wie das [Schnellstartbeispiel](quick-start-console-app-csharp.md) sollte die Ausgabe so aussehen:
 
-    ```
-    Your UserId is 969effb0-98ae-478c-b547-53a2968c2e75
-    Press any key to exit.
-    ```
+```
+Your UserId is 969effb0-98ae-478c-b547-53a2968c2e75
+Press any key to exit.
+```
 
 ## <a name="create-re-usable-methods"></a>Erstellen von wiederverwendbaren Methoden
 
@@ -343,7 +349,7 @@ Führen Sie in Ihrem Visual Studio-Projekt die folgenden Schritte aus:
 
     Auf diese Weise ist die Klasse `Program` in der Datei `ProgramMethods.cs` nur eine Erweiterung der ursprünglichen Klasse `Program` in der Datei `Program.cs`. 
 
-1. Fügen Sie die folgenden Anweisungen mit Hilfe von Anweisungen an den Anfang der Datei `ProgramMethods.cs` ein.
+1. Fügen Sie die folgenden Using-Direktiven am Anfang der Datei `ProgramMethods.cs` ein.
 
     ```csharp
     using Newtonsoft.Json.Linq;
@@ -419,7 +425,7 @@ Führen Sie in Ihrem Visual Studio-Projekt die folgenden Schritte aus:
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn Sie Probleme beim Ausführen dieser Samples haben, können Sie alle PowerApps-Beispiele aus dem GitHub-Repository unter [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) herunterladen.
+Wenn Sie Probleme beim Ausführen dieser Beispiele haben, können Sie alle PowerApps-Beispiele aus dem GitHub-Repository unter [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) herunterladen.
 
 Dieses Beispiel basiert auf der [SimpleWebApi](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/SimpleWebApi) im Ordner `PowerApps-Samples-master\PowerApps-Samples-master\cds\webapi\C#\SimpleWebApi`.
 

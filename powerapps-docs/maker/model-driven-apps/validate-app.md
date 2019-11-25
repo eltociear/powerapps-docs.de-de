@@ -1,31 +1,36 @@
 ---
 title: Überprüfen und Veröffentlichen Sie ein modellgetriebenes App mithilfe des Anwendungs-Designers | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine modellgetriebene App überprüfen und veröffentlichen'
+description: Erfahren Sie, wie Sie eine modellgetriebene App überprüfen und veröffentlichen
 keywords: ''
 ms.date: 06/08/2018
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5a9ec120-9ddc-4d92-b48c-0fee8c57d3c3
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 10
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710285"
 ---
-
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>Überprüfen und Veröffentlichen einer modellgesteuerten App mithilfe des App-Designers
 
 Validieren Sie eine App, indem Sie die Ressourcenabhängigkeiten prüfen, die für die Funktion der App obligatorisch sind, jedoch noch nicht zur App hinzugefügt wurden. Nach erfolgreicher Überprüfung veröffentlichen Sie die App. 
@@ -48,16 +53,16 @@ Wenn Sie die App überprüfen, zeigt Ihnen die App-Designer-Canvas Details zu de
   
      Auf der Registerkarte wird eine Liste der erforderlichen Komponenten angezeigt.  
   
-     ![Die Registerkarte "Erforderlich" zeigt eine Liste der fehlenden Komponenten der App an](media/app-designer-required-components-tab.png "Die Registerkarte \"Erforderlich\" zeigt eine Liste der fehlenden Komponenten der App an")  
+     ![Die Registerkarte "Erforderlich" zeigt eine Liste der fehlenden Komponenten der App an](media/app-designer-required-components-tab.png "Die Registerkarte "Erforderlich" zeigt eine Liste der fehlenden Komponenten der App an")  
   
 3.  Wählen Sie die Ressourcen aus, die Sie hinzufügen möchten, und wählen Sie dann **Abhängigkeiten hinzufügen** aus. Wenn Sie eine erforderliche Ressource hinzufügen, erhöht sich die Anzahl auf der Kachel, zu der Sie die Anlage hinzugefügt haben.  
   
     > [!NOTE]
     >  Ist eine allgemeine Anlage für verschiedene App-Komponenten erforderlich, beispielsweise ein Formular, das für ein Dashboard und eine Entität erforderlich ist, und Sie fügen die Anlage nur zum Dashboard-Abhängigkeitsbaum hinzu, dann wird die Abhängigkeitsanzahl nur für die Dashboardkachel aber nicht für die Entitätskachel reduziert. Jedoch wird die Abhängigkeit für beide verwendet.  
     >   
-    >  Wählen Sie **Aktuelle Abhängigkeiten abrufen** aus ![Schaltfläche für Abrufen der aktuellen Abhängigkeiten im App-Designer](media/app-designer-get-latest-dependencies.png "Schaltfläche für Abrufen der aktuellen Abhängigkeiten im App-Designer"), oder wählen Sie erneut **Überprüfen** aus, um den neuesten Satz an Abhängigkeiten abzurufen. Sie können diese Schaltflächen erst anzeigen, nachdem Sie Ihre App gespeichert haben.  
+    >  Wählen Sie **Aktuelle Abhängigkeiten abrufen** ![Schaltfläche zum Abrufen der aktuellen Abhängigkeiten im App-Designer](media/app-designer-get-latest-dependencies.png "Rufen Sie die aktuelle Abhängigkeitsschaltfläche im Anwendungs-Designer ab") oder erneut **Überprüfen** aus, um den neuesten Satz an Abhängigkeiten abzurufen. Sie können diese Schaltflächen erst anzeigen, nachdem Sie Ihre App gespeichert haben.  
   
-     Wählen Sie **Abhängigkeiten ausblenden** aus, wenn Sie die vorgeschlagenen erforderlichen Komponenten nicht hinzufügen möchten. Nicht gelöste Warnungen werden erneut angezeigt, wenn Sie die App im App-Designer öffnen und **Überprüfen** oder die Schaltfläche für **Aktuelle Abhängigkeiten abrufen** ![Schaltfläche für Abrufen der aktuellen Abhängigkeiten im App-Designer](media/app-designer-get-latest-dependencies.png "Schaltfläche für Abrufen der aktuellen Abhängigkeiten im App-Designer") auswählen.  
+     Wählen Sie **Abhängigkeiten ausblenden** aus, wenn Sie die vorgeschlagenen erforderlichen Komponenten nicht hinzufügen möchten. Nicht gelöste Warnungen werden erneut angezeigt, wenn Sie die App im App-Designer öffnen und **Überprüfen** oder **Aktuelle Abhängigkeiten abrufen** ![Schaltfläche zum Abrufen der aktuellen Abhängigkeiten im App-Designer](media/app-designer-get-latest-dependencies.png "Rufen Sie die aktuelle Abhängigkeitsschaltfläche im Anwendungs-Designer ab") auswählen.  
   
     > [!NOTE]
     >  Wenn Sie jetzt Abhängigkeiten ausblenden und die App später exportieren möchten, werden diese Abhängigkeiten erneut angezeigt.  
@@ -75,6 +80,6 @@ Veröffentlichen Sie eine App, um sie Benutzern zur Verfügung zu stellen.
 > - Sie können eine App nicht veröffentlicht, wenn Sie sie noch nicht gespeichert haben.  
 
 ## <a name="next-steps"></a>Nächste Schritte  
-[Gemeinsame Nutzung einer modellgesteuerten Anwendung mit PowerApps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
+[Gemeinsame Nutzung einer modellgesteuerten App mit PowerApps](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
  [Ausführen einer modellgesteuerten App auf einem mobilen Gerät](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  

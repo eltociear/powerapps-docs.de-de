@@ -1,31 +1,36 @@
 ---
-title: Festlegen von Eigenschaften für modellgesteuerte Einheitliche Oberfläche-Apps in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie das Rastersteuerelement für Ihre App konfiguriert wird'
+title: Festlegen von Eigenschaften für modellgesteuerte Einheitliche Oberfläche-Apps in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie das Rastersteuerelement für Ihre App konfiguriert wird
 keywords: ''
 ms.date: 06/03/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ecea4a7-0d18-4ccd-9609-3a62179e9e1b
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 0
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: efca6e540a962295553222805052fda2c9a8ddf6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710901"
 ---
-
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Festlegen von Eigenschaften für modellgesteuerte Einheitliche Oberfläche-Apps
 
 Das „Einheitliche Oberfläche”-Framework verwendet dynamische Webdesignprinzipien, um bei jeder Bildschirmgröße oder -ausrichtung die bestmögliche Ansicht und Interaktion zu bieten. Mit modellgesteuerten Apps, die das Einheitliche Oberlfäche-Framework verwenden, ist das Raster-(Ansichts-)-Steuerelement dynamisch. Wenn die Größe des Containers abnimmt – beispielsweise bei Smartphones und kleineren Viewports – wird das Raster in eine Liste umgewandelt. 
@@ -43,7 +48,7 @@ Durch Hinzufügen des schreibgeschützten Rastersteuerelements zu Ihrer Steuerel
 1. Öffnen Sie den [Lösungs-Explorer](advanced-navigation.md#solution-explorer).
 2. Erweitern Sie **Entitäten** im Navigationsbereich, wählen Sie die entsprechende Entität (beispielsweise **Firma** oder **Kontakt**) aus, und wählen Sie dann auf der Registerkarte **Steuerelemente** die Option **Steuerelement hinzufügen** aus.
 
-    ![Steuerelement hinzufügen öffnen](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "Steuerelement hinzufügen öffnen")
+    ![„Steuerelement hinzufügen“ öffnen](media/UnifiedInterface_ReadOnlyGrid_AddControl.png "„Steuerelement hinzufügen“ öffnen")
 
 3. Wählen Sie in der Liste der Steuerlemente **Schreibgeschütztes Raster** aus, und wählen Sie dann **Hinzufügen** aus.
 
@@ -82,7 +87,7 @@ Durch Hinzufügen des schreibgeschützten Rastersteuerelements zu Ihrer Steuerel
     |**Nur Raster**|Schränkt das Umbrechen des Rasterns in eine Liste auch dann ein, wenn nicht genügend Anzeigeplatz vorhanden ist.|
     |**Nur Liste**|Wird nur als Liste angezeigt, auch wenn ausreichend Platz zur Anzeige als Raster vorhanden ist.|
     
-     ![Dynamisches Umbruchsverhalten-Eigenschaften](media/UnifiedInterface_ReadOnlyGrid_ReflowProperties.png "Dynamisches Umbruchsverhalten-Eigenschaften")
+     ![Dynamisches Umbruchsverhalten – Eigenschaften](media/UnifiedInterface_ReadOnlyGrid_ReflowProperties.png "Dynamisches Umbruchsverhalten – Eigenschaften")
 
     c. Wählen Sie **OK**.
 
@@ -94,4 +99,4 @@ Durch Hinzufügen des schreibgeschützten Rastersteuerelements zu Ihrer Steuerel
 Sie können ein benutzerdefiniertes Symbol anstelle eines Werts in der Liste anzeigen und die Logik zum Auswählen dieser basierend auf den Werten einer Spalte mit JavaScript erstellen. Weitere Informationen zu bedingten Bildern finden Sie unter [Benutzerdefinierte Symbole anstelle von Werten in Listenansichten anzeigen](../common-data-service/display-custom-icons-instead.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Erstellen oder Bearbeiten einer Ansicht](create-edit-views.md)
+[Ansicht erstellen oder bearbeiten](create-edit-views.md)

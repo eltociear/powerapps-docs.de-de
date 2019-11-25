@@ -1,6 +1,6 @@
 ---
-title: Die Identität eines anderen Benutzers annehmen (Common Data Service) | Microsoft Docs
-description: 'Der Identitätswechsel wird verwendet, um die Geschäftslogik im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen.'
+title: Annehmen der Identität eines anderen Benutzers (Common Data Service) | Microsoft-Dokumentation
+description: Mit Hilfe eines Identitätswechsels können Sie die Geschäftslogik im Auftrag eines anderen Common Data Service-Benutzers ausführen, um eine gewünschte Funktion oder einen Service mit der entsprechenden rollen- und objektbasierten Sicherheit dieses imitierten Benutzers bereitzustellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0701f48caa7b45d49cd85c6d8c97ff6568e4813e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748282"
 ---
 # <a name="impersonate-another-user"></a>Annehmen der Identität eines anderen Benutzers
 
-Der Identitätswechsel wird verwendet, um die Geschäftslogik im Auftrag eines anderen Common Data Service auszuführen, um eine gewünschte Funktion oder einen Service mithilfe der entsprechenden rollen- und objektbasierten Sicherheit dieses Benutzers auszuführen. 
+Mit Hilfe eines Identitätswechsels können Sie die Geschäftslogik im Auftrag eines anderen Common Data Service-Benutzers ausführen, um eine gewünschte Funktion oder einen Service mit der entsprechenden rollen- und objektbasierten Sicherheit dieses imitierten Benutzers bereitzustellen. 
 
 Dies ist erforderlich, da die Common Data Service-Webdienste von verschiedenen Clients und Services im Auftrag eines Common Data Service-Benutzers aufgerufen werden können.
 
@@ -40,7 +46,7 @@ In anderen Worten der *Identitätenübernehmer* kann *nur dann etwas tun, wenn* 
 
 ## <a name="impersonation-with-server-to-server-authentication"></a>Identitätenwechsel mit Server-zu-Server-Authentifizierung
 
-Wenn Sie eine Webclient-Anwendung erstellen, die ein Benutzerkonto erfordert, das im Auftrag eines abonnierten Benutzers reagieren kann, können Sie die spezielle *Anwendungsbenutzer*-Firma nutzen, sodass Sie sich nicht mehr um zahlende Common Data Service-Benutzerlizenz kümmern müssen.
+Wenn Sie eine Webclient-Anwendung erstellen, die ein Benutzerkonto erfordert, das im Auftrag eines abonnierten Benutzers reagieren kann, können Sie das spezielle *Anwendungsbenutzer*-Konto nutzen, sodass Sie keine bezahlte Common Data Service-Benutzerlizenz verwenden müssen.
 
 Weitere Informationen finden Sie unter: [Webanwendungen mit der Server-zu-Server-(S2S)-Authentifizierung erstellen.](build-web-applications-server-server-s2s-authentication.md).
 

@@ -1,6 +1,6 @@
 ---
 title: InvalidPluginExecutionExceptionException in Plugins und Workflow-Aktivitäten verwenden | MicrosoftDocs
-description: 'Verwenden Sie InvalidPluginExecutionExceptionException, wenn Sie im Rahmen einer Plug-in- oder Workflow-Aktivität Fehler melden.'
+description: Verwenden Sie InvalidPluginExecutionExceptionException, wenn Sie im Rahmen einer Plug-in- oder Workflow-Aktivität Fehler melden.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c4ccc11cf09c00a2430e736d6e8ab6f532dee8e6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748240"
 ---
 # <a name="use-invalidpluginexecutionexception-in-plug-ins-and-workflow-activities"></a>InvalidPluginExecutionExceptionException in Plugins und Workflow-Aktivitäten verwenden
 

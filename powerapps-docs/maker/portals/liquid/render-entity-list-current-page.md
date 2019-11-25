@@ -1,16 +1,21 @@
 ---
-title: 'Rendern der Entitätsliste, die der aktuellen Seite in einem Portal zugeordnet ist | MicrosoftDocs'
-description: 'Beispielcode zum Rendern der Entitätsliste, die der aktuellen Seite in einem Portal zugeordnet ist.'
+title: Darstellen der Entitätsliste, die der aktuellen Seite in einem Portal zugeordnet ist | MicrosoftDocs
+description: Beispielcode zum Rendern der Entitätsliste, die der aktuellen Seite in einem Portal zugeordnet ist.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707953"
 ---
-
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist
 
 Rendern der Entitätsliste, die der aktuellen Seite zugeordnet ist, als sortierbare Tabelle mit Seitennummerierung. Verwendet [entitylist](liquid-objects.md#entitylist), [entitylist](liquid-objects.md#entityview), [PowerApps Common Data Service Entity-Tags](portals-entity-tags.md), [Site](liquid-objects.md#page) und [Query](liquid-objects.md#request) Parameter, einschließlich Suche und Auswahl mehrerer Ansichten.  

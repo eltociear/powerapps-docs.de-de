@@ -1,6 +1,6 @@
 ---
-title: 'Importieren, Aktualisieren und Exportieren von Lösungen | MicrosoftDocs'
-description: 'Erfahren Sie, wie Sie eine Lösung in PowerApps importieren, aktualisieren und exportieren.'
+title: Importieren, Aktualisieren und Exportieren von Lösungen | MicrosoftDocs
+description: Erfahren Sie, wie Sie eine Lösung in PowerApps importieren, aktualisieren und exportieren.
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 56363ea3-ea76-4311-9b7a-b71675e446fb
 caps.latest.revision: 57
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701573"
 ---
 # <a name="import-update-and-export-solutions"></a>Lösungen importieren, aktualisieren und exportieren 
 
@@ -32,7 +38,7 @@ search.app:
 2.  Wählen Sie in der Lösungsliste die Option **Import** aus.  
 
     > [!div class="mx-imgBorder"]  
-    > ![Lösung importieren](media/solution-import.png "Lösung importieren") 
+    > ![Importieren einer Lösung](media/solution-import.png "Importieren einer Lösung") 
   
 3.  Navigieren Sie im Dialogfeld **Lösung importieren** , wählen Sie Schritt **Lösungspaket auswählen** und **wählen die Datei**, gehen Sie zur komprimierten Datei (ZIP- oder CAB-Datei), die die Lösung enthält, die Sie importieren möchten. 
   

@@ -1,6 +1,6 @@
 ---
-title: Die Identität eines Benutzers annehmen (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie Plugin-Code schreiben, um im Namen eines bestimmten Benutzers zu handeln.'
+title: Die Identität eines Benutzers annehmen (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Plugin-Code schreiben, um im Namen eines bestimmten Benutzers zu handeln.
 ms.custom: ''
 ms.date: 1/24/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 27022b8ffb76128e70ef2985059f6dc7dea504ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748284"
 ---
 # <a name="impersonate-a-user"></a>Die Identität eines Benutzers annehmen
 

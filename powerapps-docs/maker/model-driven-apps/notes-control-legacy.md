@@ -1,30 +1,36 @@
 ---
-title: Einrichten des Hinweis-Steuerelements in modellgesteuerten Apps für den Zugriff auf Informationen über Beiträge in PowerApps | MicrosoftDocs
+title: Einrichten des Hinweis-Steuerelements in modellgesteuerten Apps für den Zugriff auf Informationen über Beiträge in PowerApps | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: f10cdf1c-3540-439c-a171-27a10e72da45
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bb60588e34e66fc1a0222d18e90d50af672bcc69
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711693"
 ---
 # <a name="set-up-the-model-driven-app-notes-control-to-access-information-about-posts"></a>Einrichten des Hinweis-Steuerelements in modellgesteuerten Apps für den Zugriff auf Informationen über Beiträge
 
- In PowerApps-Formularen für bestimmte Systementitäten mit [Aktualisierte Formulare](main-form-presentations.md#updated-forms) stellt das Hinweissteuerelement die Möglichkeit zur Verfügung, auf Informationen zu **Beiträgen**, **Aktivitäten** und **Hinweisen** zuzugreifen. Bei benutzerdefinierten Entitäten, bei denen Sie Notizen und Aktivitäten aktiviert haben, sehen Sie nur **Notizen** und **Aktivitäten**. Um **Beiträge** einzuschließen, müssen Sie sie für die benutzerdefinierte Entität aktivieren.  
+ In PowerApps-Formularen für bestimmte Systemeinheiten, die die [Updated forms](main-form-presentations.md#updated-forms) verwenden, bietet das Notes-Control die Möglichkeit, auf Informationen über **Posts**, **Aktivitäten** und **Notes** zuzugreifen. Bei benutzerdefinierten Entitäten, bei denen Sie Notizen und Aktivitäten aktiviert haben, sehen Sie nur **Notizen** und **Aktivitäten**. Um **Beiträge** einzuschließen, müssen Sie sie für die benutzerdefinierte Entität aktivieren.  
   
 ## <a name="enable-posts-for-a-custom-entity"></a>Nachrichten für eine benutzerdefinierte Entität aktivieren  
   

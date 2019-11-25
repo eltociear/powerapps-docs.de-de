@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 53971f95f73824773477cf00660a7593e7d501b1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748372"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>Erste Schritte mit modellgesteuerter App-Anpassung durch Code
 
@@ -28,26 +34,26 @@ Anpassungen, die mit anderen Methoden als den hier beschriebenen Methoden vorgen
 Die Themen, die technischen Artikeln veröffentlicht wurden auf Microsoft-Websites wie dieser, werden unterstützt, sind jedoch möglicherweise nicht erweiterungsfähig.
 
 
-## <a name="customizations-using-powerapps-portal"></a>Anpassungen mithilfe des PowerApps-Portals
+## <a name="customizations-using-powerapps-portal"></a>Anpassungen über das Portal PowerApps vornehmen
 
 Es gibt eine Reihe von Tools, die in modellgesteuerten Apps enthalten sind und die Sie für die Anpassung verwenden können. Die Anpassungen, die mithilfe von modellgesteuerten Apps Tools und Webanwendungen vorgenommen werden, werden vollständig unterstützt und sind vollständig aktualisierbar.
 
 Die folgenden Anpassungsmethoden können verwendet werden, um vollständig unterstützte Anpassungen zu erstellen:
 
-- Anpassungen im PowerApps-Portal oder im Lösungsexplorer. Weitere Informationen finden Sie unter [Übersicht über das Erstellen von modellgesteuerten Apps](../../maker/model-driven-apps/model-driven-app-overview.md)
+- Anpassung im Portal PowerApps oder im Solution Explorer. Weitere Informationen finden Sie unter [Übersicht über das Erstellen von modellgesteuerten Apps](../../maker/model-driven-apps/model-driven-app-overview.md)
 
 - Einstellungen in der Webanwendung. Weitere Informationen finden Sie unter [modellgesteuerte Apps verwalten](/dynamics365/customer-engagement/admin/admin-guide)
 
 - Reporting Services. Weitere Informationen finden Sie unter [Berichte und Analysen-Handbuch für modellgestützte Apps](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365).
 
 > [!NOTE]
-> Die Verhaltensweisen von modellgestützte Apps hängen von den Anpassungen ab, die dem Common Data Service zugeordnet sind. Weitere Informationen: [Unterstützte Anpassungen für Common Data Service](../common-data-service/supported-customizations.md)
-> *Vollständig unterstützt* bedeutet, dass der Entwicklersupport Unterstützung für Anpassungen bereitstellen kann und dass der Anwendungssupport Kunden bei der Ausführung solcher Änderungen helfen kann.
+> Die Verhaltensweisen von modellgestützten Apps hängen von den Anpassungen ab, die für den zugeordneten Common Data Service übernommen werden. Weitere Informationen: [Unterstützte Anpassungen für Common Data Service](../common-data-service/supported-customizations.md)
+> *Vollständig unterstützt* bedeutet, dass der Developer Support Unterstützung für Anpassungen bereitstellen kann und dass der Anwendungssupport Kunden bei der Ausführung solcher Änderungen helfen kann.
 
 
 ## <a name="customizations-applied-using-code"></a>Mit Code angewendete Anpassungen
 
-Die Dokumentation auf dieser Website für Entwickler, technischen Artikel, der Beispielcode, der auf dieser Website veröffentlicht wird und die Informationen, die vom Common Data Service-Developer Support Team freigegeben wurden, sind in den Bereich der Anpassungen enthalten, die mithilfe von Code angewendet werden. Die bestimmten Aktionen und Ebenen der Supportfähigkeit und Aktualisierbarkeit werden weiter unten in diesem Thema beschrieben.
+Die Dokumentation auf dieser Website für Entwickler, die technischen Artikel und der Beispielcode, der auf dieser Website veröffentlicht wird und die Informationen, die vom Common Data Service Developer Support Team veröffentlicht wurden, sind in dem Bereich der Anpassungen enthalten, die mit Hilfe von Code angewendet werden. Die bestimmten Aktionen und Ebenen der Supportfähigkeit und Aktualisierbarkeit werden weiter unten in diesem Thema beschrieben.
 
 ### <a name="client-side-javascript"></a>Clientseitiges JavaScript
 
@@ -69,7 +75,7 @@ Die Verwendung von `RibbonDiffXml` zum Hinzufügen, Entfernen oder Ausblenden vo
 
 ## <a name="unsupported-customizations"></a>Nicht unterstützte Anpassungen
 
-Änderungen an modellgestützten Apps, die ohne die Verwendung der Methoden, die in dieser Dokumentation beschrieben sind oder PowerApps-Portal-Tools vorgenommen werden, werden nicht unterstützt und werden während Updates oder Upgrades von modellgestützten Apps nicht beibehalten. Alles, was nicht in dieser Dokumentation und den unterstützenden Dokumenten dokumentiert wird, wird nicht unterstützt. Außerdem könnten nicht unterstützte Änderungen Probleme verursachen, wenn Sie durch das Hinzufügen von Hotfixes oder Service Packs aktualisieren oder modellgestützte Apps aktualisieren.
+Änderungen an modellgestützten Apps, die ohne die Verwendung der in dieser Dokumentation beschriebenen Methoden oder PowerApps-Portal-Tools vorgenommen werden, werden nicht unterstützt und werden während Updates oder Upgrades von modellgestützten Apps nicht beibehalten. Alles, was nicht in dieser Dokumentation und den unterstützenden Dokumenten dokumentiert wird, wird nicht unterstützt. Außerdem könnten nicht unterstützte Änderungen Probleme verursachen, wenn Sie durch das Hinzufügen von Hotfixes oder Service Packs aktualisieren oder modellgestützte Apps aktualisieren.
 
 Im Folgenden finden Sie eine Liste nicht unterstützter Aktionstypen, nach denen häufig gefragt wird: 
 

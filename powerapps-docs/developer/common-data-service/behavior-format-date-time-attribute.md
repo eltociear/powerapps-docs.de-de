@@ -1,6 +1,6 @@
 ---
 title: Verhalten und Format des Datums- und Uhrzeitattributs (Common Data Service) | Microsoft-Dokumentation
-description: 'Die Klasse "DateTimeAttributeMetadata" wird verwendet, um die Attribute des Typs DateTime im Common Data Service zu definieren und zu verwalten.'
+description: Die Klasse "DateTimeAttributeMetadata" wird verwendet, um die Attribute des Typs DateTime im Common Data Service zu definieren und zu verwalten.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a2f2fbbf8b541945d665cf9203c9f9112cdea1a4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748252"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-attribute"></a>Verhalten und Format des Datums- und Uhrzeitattributs
 

@@ -1,6 +1,6 @@
 ---
-title: Abhängigkeitsnachverfolgung für Lösungskomponenten (Common Data Service) | Microsoft Docs
-description: 'Mithilfe der Komponentenabhängigkeiten kann sichergestellt werden, dass Sie beim Verwenden von Lösungen über eine zuverlässige Umgebung verfügen. Diese können in der Anwendung angezeigt werden, indem Sie auf "Abhängigkeiten anzeigen" klicken'
+title: Abhängigkeitsnachverfolgung für Lösungskomponenten (Common Data Service) | Microsoft-Dokumentation
+description: Mithilfe der Komponentenabhängigkeiten kann sichergestellt werden, dass Sie beim Verwenden von Lösungen über eine zuverlässige Umgebung verfügen. Diese können in der Anwendung angezeigt werden, indem Sie auf "Abhängigkeiten anzeigen" klicken
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bf8e53658fce9599cb0f0415f130fb5afd5e7e01
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748236"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>Abhängigkeitsnachverfolgung für Lösungskomponenten
 
@@ -170,7 +176,7 @@ Lösungen bestehen aus Lösungskomponenten. Sie können den Bereich **Lösungen*
  Datenentsprechung zu Dateien, die in der Webentwicklung verwendet werden. Webressourcen bieten clientseitige Komponenten, die verwendet werden, um benutzerdefinierte Benutzeroberflächenelemente bereitzustellen. Webressourcen weisen möglicherweise veröffentlichte Abhängigkeiten von Entitätsformularen, Menübändern und SiteMap auf. Wenn die `$webresource:`-Direktive verwendet wird, um diese Zuordnungen in einem Menüband oder SiteMap festzulegen, wird eine veröffentlichte Abhängigkeit erstellt. Weitere Informationen finden Sie unter [$webresource-Direktive](/dynamics365/customer-engagement/developer/web-resources#BKMK_WebResourceDirective).  
   
 > [!NOTE]
->  Webressourcen sind möglicherweise von anderen Webressourcen abhängig, je nach den vorhandenen relativen Links. Z. B. verwendet eine HTML-Webressource möglicherweise eine CSS- oder Skript-Webressource. Eine Silverlight-Webressource, die außerhalb eines Entitätsformulars oder Diagramms angezeigt wird, muss über eine HTML-Webressource verfügen muss, auf der sie gehostet ist. Diese Abhängigkeiten werden nicht als Lösungsabhängigkeiten überwacht.  
+>  Webressourcen sind möglicherweise von anderen Webressourcen abhängig, je nach den vorhandenen relativen Links. Z. B. verwendet eine HTML-Webressource möglicherweise eine CSS oder Skript-Webressource. Eine Silverlight-Webressource, die außerhalb eines Entitätsformulars oder Diagramms angezeigt wird, muss über eine HTML-Webressource verfügen muss, auf der sie gehostet ist. Diese Abhängigkeiten werden nicht als Lösungsabhängigkeiten überwacht.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Packen und Verteilen von Erweiterungen mithilfe von Dynamics 365-Lösungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   

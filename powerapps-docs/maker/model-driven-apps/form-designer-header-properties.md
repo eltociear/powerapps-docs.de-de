@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0724ccf7c44240fd3d3fd80fb69b6d91a80d1ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705753"
 ---
-
 # <a name="configure-header-properties-in-the-form-designer"></a>Konfigurieren von Kopfzeileneigenschaften im Formulardesigner
 
 Hersteller können die Dichte der modellgetriebenen App-Formularheader steuern, um die Bedürfnisse aller Benutzer des Formulars zu erfüllen.
@@ -39,7 +44,7 @@ Um sicherzustellen, dass wichtige Informationen immer angezeigt werden, zeigt da
 Wenn ein Formular keine Kopfdichte angibt oder wenn ein neues Formular erstellt wird, verwendet das Framework standardmäßig den Kopf mit hoher Dichte.
 
 > [!div class="mx-imgBorder"] 
-> ![Hochdichter Kopf](media/form-header-high-density.png "Hochdichter Kopf")
+> ![Formularkopf mit hoher Dichte](media/form-header-high-density.png "Formularkopf mit hoher Dichte")
     
 ## <a name="low-density-header"></a>Kopfzeile mit niedriger Dichte
 Formularkopfzeilen mit niedriger Dichte ermöglichen Benutzern, die Feldwerte direkt in der Kopfzeile zu bearbeiten. Es ermöglicht auch Visualisierungen wie kundenspezifische Komponenten und Web-Ressourcen.  
@@ -47,7 +52,7 @@ Formularkopfzeilen mit niedriger Dichte ermöglichen Benutzern, die Feldwerte di
 Allerdings werden als Folge häufig wichtige Informationen abgeschnitten oder sind nicht wirklich sichtbar. Die Kopfzeile mit niedriger Dichte kürzt den Datensatz-Titel sowie die im Kopf angezeigten Feldwerte. Häufig sind nur ein oder zwei Felder direkt in der Kopfzeile und im Restüberlauf sichtbar und werden in einem Flyout angezeigt, das einen zusätzlichen Klick erfordert.
 
 > [!div class="mx-imgBorder"] 
-> ![Niedrigdichter Kopf](media/form-header-low-density.png "Niedrigdichter Kopf")
+> ![Formularkopf mit niedriger Dichte](media/form-header-low-density.png "Formularkopf mit niedriger Dichte")
 
 ### <a name="configuring-header-density"></a>Konfigurieren von Kopfzeilendichte
 
@@ -69,13 +74,13 @@ Die Verhaltensweisen des Kopfzeilenflyouts ändert sich abhängig von der Kopfze
 Bei einem hochdichten Formularkopf zeigt der Kopfflyout alle Kopffelder einschließlich der vier Felder, die direkt im Kopf angezeigt werden. Das Framework zeigt standardmäßig den Kopf Flyout an, wenn ein Kopf mit hoher Dichte verwendet wird. Hersteller können die Sichtbarkeit des Kopf-Flyouts mit einem Kopf mit hoher Dichte steuern.
 
 > [!div class="mx-imgBorder"] 
-> ![Kopf Flyout mit hochdichtem Kopf](media/form-header-flyout-high-density.png "Kopf Flyout mit hochdichtem Kopf")
+> ![Header-Flyout mit Kopfzeile mit hoher Dichte](media/form-header-flyout-high-density.png "Header-Flyout mit Kopfzeile mit hoher Dichte")
 
 ### <a name="low-density-header-flyout"></a>Flyout des Kopfs mit niedriger Dichte
 Bei einem Formularkopf mit niedriger Dichte zeigt der Kopf Flyout nur Überlauffelder an, wie beispielsweise Felder, die das Formular aufgrund der Breite des Formulars nicht direkt im Kopf anzeigen kann. Das Kopfzeilenflyout wird zudem automatisch basierend auf der Anzahl von Feldern in der Kopfzeile und der Breite des Formulars angezeigt oder ausgeblendet. Hersteller können die Sichtbarkeit des Kopf-Flyouts bei Verwendung eines Kopfs mit niedriger Dichte nicht kontrollieren.
 
 > [!div class="mx-imgBorder"] 
-> ![Kopf Flyout mit niedrigdichtem Kopf](media/form-header-flyout-low-density.png "Kopf Flyout mit niedrigdichtem Kopf")
+> ![Header-Flyout mit Kopfzeile mit niedriger Dichte](media/form-header-flyout-low-density.png "Header-Flyout mit Kopfzeile mit niedriger Dichte")
 
 ### <a name="show-or-hide-the-header-flyout"></a>Anzeigen oder Ausblenden des Kopfzeilenflyouts
 Um den Kopf-Flyout für ein modellgetriebenes Formular ein- oder auszublenden, führen Sie diese Schritte aus:

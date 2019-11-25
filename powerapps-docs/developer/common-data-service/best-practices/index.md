@@ -1,5 +1,5 @@
 ---
-title: 'Entwickler: Bewährte Methoden und Leitlinien für den Common Data Service | Microsoft Docs'
+title: 'Entwickler: Bewährte Methoden und Leitlinien für den Common Data Service | Microsoft-Dokumentation'
 description: Bewährte Methoden und Anleitungen für Entwickler des Common Data Service in PowerApps.
 services: ''
 suite: powerapps
@@ -16,26 +16,31 @@ ms.workload: na
 ms.date: 01/07/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 95c31b72e07747f77877dd9ff664827c6d63a16b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748238"
 ---
-
-# <a name="best-practices-and-guidance-for-the-common-data-service"></a>Bewährte Methoden und Leitlinien für den Common Data Service
+# <a name="best-practices-and-guidance-for-the-common-data-service"></a>Bewährte Methoden sowie Anweisungen zum Common Data Service
 
 Der Common Data Service ist ein erweiterbares Framework, das es Entwicklern ermöglicht, hochgradig individuelle und maßgeschneiderte Erfahrungen zu erstellen. Bei der Anpassung, Erweiterung oder Integration mit dem Common Data Service sollte sich ein Entwickler über die etablierten Richtlinien und bewährten Methoden im Klaren sein. 
 
 In diesem Abschnitt erfahren Sie mehr über die von uns identifizierten Probleme, ihre Auswirkungen und verstehen die Leitlinien zu ihrer Lösung. Wir werden die Hintergründe erklären, warum die Dinge auf eine bestimmte Weise geschehen sollten und mögliche Probleme in der Zukunft vermeiden. Dies kann der Benutzerfreundlichkeit, der Supportfähigkeit und der Leistung Ihrer Umgebung zugute kommen. Die Anleitungsdokumentation unterstützt die vorhandenen Informationen innerhalb der Entwickler- und Administrationsleitfäden.
 
-# <a name="targeted-customization-types"></a>Betroffene Anpassungsarten
+## <a name="targeted-customization-types"></a>Betroffene Anpassungsarten
 Die Dokumentation richtet sich an die folgenden Anpassungsarten:
 
 - Benutzerdefinierte Workflow-Aktivitäten und Plug-Ins
 - Arbeiten mit Common Data Service-Daten
 - Integrationen zur Erweiterung des Common Data Service
 
-# <a name="sections"></a>Abschnitte
+## <a name="sections"></a>Abschnitte
 Jeder Leitartikel enthält die meisten oder alle der folgenden Abschnitte:
 
 - Titel - Beschreibung des Leitfadens
@@ -47,7 +52,7 @@ Jeder Leitartikel enthält die meisten oder alle der folgenden Abschnitte:
 - Zusatzinformationen - unterstützende Details für eine umfangreichere Ansicht
 - Siehe auch - Referenzen, um mehr über etwas zu erfahren, das im Artikel erwähnt wird.
 
-# <a name="categories"></a>Kategorien
+## <a name="categories"></a>Kategorien
 Jeder Leitartikel wird in eine oder mehrere der folgenden Kategorien eingeteilt:
 
 - Verwendung - unsachgemäße Verwendung einer bestimmten API, eines bestimmten Musters oder einer bestimmten Konfiguration.

@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710417"
 ---
-
 # <a name="using-the-tree-view-in-the-form-designer"></a>Verwenden der Strukturansicht im Formulardesigner
 Der Bereich **Baumansicht** zeigt eine visuelle Hierarchie der Komponenten auf dem Formular. Die Symbole in der Baumansicht helfen Ihnen, die Art des Feldes oder der Komponente schnell zu identifizieren. 
 
@@ -31,7 +36,7 @@ Sie können auch die Baumansicht verwenden, um Felder und Komponenten auszuwähl
 Sie können Knoten in der Strukturansicht erweitern oder reduzieren, um die Elemente innerhalb eines Knotens anzuzeigen oder auszublenden. Wenn Sie ein Element in einer Strukturansicht auswählen, wird es in der Formularvorschau markiert, und der Eigenschaftenbereich zeigt die Eigenschaften für das Element an. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerTreeView.png "Strukturansicht")
+> ![](media/FormDesignerTreeView.png "Tree view")
 
 ### <a name="open-the-tree-view"></a>Strukturansicht öffnen 
 1. Öffnen Sie den Formulardesigner, um ein Formular zu erstellen oder zu bearbeiten. 

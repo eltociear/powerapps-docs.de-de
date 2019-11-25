@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Aktualisieren Sie Entitätsbeziehungen mithilfe von Web-API (Common Data Service) | Microsoft Docs
-description: 'Informationen zum Erstellen und Aktualisieren einer Entität, mit der Common Data Service eine metadatengestützte Architektur verwendet, um die Flexibilität zu bieten, mit der benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute erstellt werden können.'
+title: Erstellen und Aktualisieren von Entitätsbeziehungen mit der Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Informationen zum Erstellen und Aktualisieren einer Entität Common Data Service, die eine metadatengestützte Architektur verwendet, um die Flexibilität zu bieten, mit der benutzerdefinierte Entitäten und zusätzliche Systementitätsattribute erstellt werden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 923538e2-15fe-4718-8eae-d939c5d200cd
 caps.latest.revision: 15
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90479dca5ecd6fcb230847533ed98533fda2e876
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748360"
 ---
 # <a name="create-and-update-entity-relationships-using-the-web-api"></a>Erstellen und Aktualisieren von Entitätsbeziehungen mit der Web-API
 
@@ -241,7 +247,7 @@ Wenn Sie eine Beziehung mit der Web-API löschen möchten, können Sie die HTTP 
 
 <!-- TODO:
 [Customize entity relationship metadata](../customize-entity-relationship-metadata.md)<br /> -->
-[Nutzen der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
+[Verwenden der Web-API mit Common Data Service-Metadaten](use-web-api-metadata.md)<br />
 [Metadatenabfrage mit Web-API](query-metadata-web-api.md)<br />
 [Abrufen von Metadaten über den Namen oder die MetadataId](retrieve-metadata-name-metadataid.md)<br />
 [Entitäten und Attribute modellieren mit Internet-API](create-update-entity-definitions-using-web-api.md)
