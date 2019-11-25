@@ -32,7 +32,7 @@ So öffnen Sie eine Vorlage im Code-Editor:
 
 1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
 
-2.  Wählen Sie im Symbol Bereich auf der linken Seite des Bildschirms **Vorlagen** ![Vorlagen Symbol](media/templates-icon.png "Symbol "Vorlagen"") aus. Die verfügbaren Vorlagen werden angezeigt.  
+2.  Wählen Sie im Symbol Bereich auf der linken Seite des Bildschirms **Vorlagen** ![Vorlagen Symbol](media/templates-icon.png "Symbol Vorlagen") aus. Die verfügbaren Vorlagen werden angezeigt.  
 
     > [!div class=mx-imgBorder]
     > ![Vorlagen Bereich](media/templates-pane.png "Vorlagen Bereich")  

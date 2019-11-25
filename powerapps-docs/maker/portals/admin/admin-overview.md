@@ -30,12 +30,12 @@ Das Admin Center für die powerapps-Portale ermöglicht das Ausführen erweitert
 2. Wählen Sie **Weitere Befehle (...)**  > **Einstellungen**aus.
 
     > [!div class=mx-imgBorder]
-    > ![Option "Portal Einstellungen"](../media/portal-settings-option.png "Option "Portal Einstellungen"")
+    > ![Option Portal Einstellungen](../media/portal-settings-option.png "Option Portal Einstellungen")
 
 3. Wählen Sie im Bereich " **Portal Einstellungen** " die Option **Verwaltung**aus.
 
     > [!div class=mx-imgBorder]
-    > ![Bereich "Portal Einstellungen"](../media/portal-settings-admin.png "Bereich "Portal Einstellungen"")
+    > ![Bereich Portal Einstellungen](../media/portal-settings-admin.png "Bereich Portal Einstellungen")
 
 ## <a name="add-yourself-as-an-owner-of-the-azure-ad-application"></a>Fügen Sie sich als Besitzer der Azure AD Anwendung hinzu.
 
@@ -46,7 +46,7 @@ Wenn Sie kein globaler Administrator sind und versuchen, ein Portal zu verwalten
 2. Kopieren Sie den Wert aus dem Feld **Anwendungs-ID** .
 
     > [!div class=mx-imgBorder]
-    > ![Registerkarte "Portals"](../media/portal-details-admin.png "Registerkarte "Portals"")
+    > ![Registerkarte Portals](../media/portal-details-admin.png "Registerkarte Portals")
 
 3. Wechseln Sie zu Azure AD, die Ihrem Mandanten zugeordnet ist. [!include[](../../../includes/proc-more-information.md)] [übernehmen Sie ein nicht verwaltetes Verzeichnis als Administrator in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-o365-subscription)
 
