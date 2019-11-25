@@ -1,22 +1,27 @@
 ---
 title: Erste Schritte mit virtuellen Entitäten (Common Data Service) | Microsoft Docs
-description: 'Virtuelle Entitäten ermöglichen die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentiert werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung.'
+description: Virtuelle Entitäten ermöglichen die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentiert werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung.
 ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 14c5fbbc-98db-4e49-b245-2c84c1cd11cd
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d64aa3a4802917f0ed03dec5c22cafaffcd5ce5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753702"
 ---
-
 # <a name="get-started-with-virtual-entities"></a> Erste Schritte mit virtuellen Entitäten
 
 Virtuelle Entitäten ermöglichen die Integration von Daten, die sich auf externen Systemen befinden, indem nahtlos diese Entitäten in Common Data Service repräsentiert werden, ohne Replikation von Daten und oft ohne benutzerdefinierte Codierung. Die ursprüngliche Implementierung dieser Funktion bietet nur schreibgeschützte Unterstützung dieser Entitäten und besitzt eine Reihe weiterer Einschränkungen, die im Abschnitt [Beschränkungen der virtuellen Entitäten](#limitations-of-virtual-entities) weiter unten beschrieben sind. Außer diesen Beschränkungen verhalten sich virtuelle Entitäten identisch wie andere benutzerdefinierte Entitäten. 
@@ -34,7 +39,7 @@ Eine virtuelle Entität ist eine Definition einer Entität in den Common Data Se
 A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
 
 Die folgenden Datenanbieter werden mit Common Data Service geliefert:
-- Ein [OData v4](http://www.odata.org/documentation/) Anbieter ist mit dem Service enthalten und wird standardmäßig installiert.
+- Ein [OData v4](https://www.odata.org/documentation/) Anbieter ist mit dem Service enthalten und wird standardmäßig installiert.
 - Ein [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (füher *Microsoft Document DB*)-Anbieter ist verfügbar von [AppSource](https://appsource.microsoft.com).
 
 Zusätzliche Anbieter werden von Microsoft, seinen Partnern oder anderen Drittanbietern bereitgestellt. Wenn ein Datenanbieter nicht für die externe Datenquelle gefunden werden, können Sie einen *benutzerdefinierten virtuellen Entitätsdatenanbieter* entwickeln, weitere Information, siehe [Virtuelle Entitätsdatenanbieter](custom-ve-data-providers.md).

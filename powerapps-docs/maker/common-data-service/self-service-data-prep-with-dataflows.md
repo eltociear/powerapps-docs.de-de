@@ -1,6 +1,6 @@
 ---
 title: Self-Service Datenvorbereitung mit Dataflows in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie die Dataflows in PowerApps zur Aufbereitung Ihrer Daten verwenden können.'
+description: Erfahren Sie, wie Sie die Dataflows in PowerApps zur Aufbereitung Ihrer Daten verwenden können.
 ms.custom: ''
 ms.date: 08/05/2019
 ms.reviewer: ''
@@ -9,23 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32fb0c402fce458f728b44c63e337fe07b36fd76
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754649"
 ---
-
-
 <!--note from editor: I think "dataflows" should be lowercase based on this entry in the Microsoft style guide (scroll down to find dataflows): https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=42299 -->
 
 
@@ -59,7 +63,7 @@ Der vorherige Abschnitt lieferte Hintergrundinformationen zur Dataflow-Technolog
 > Sie müssen einen kostenpflichtigen PowerApps-Plan haben, um Dataflows zu verwenden, aber Sie werden nicht separat für die Verwendung von Dataflows berechnet. 
 
 ### <a name="load-data-to-common-data-service"></a>Daten auf Common Data Service laden
-Dataflows können verwendet werden, um Entitäten in den [Common Data Service](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro) zu füllen, die dann in PowerApps Anwendungen verwendet werden. Mit wenigen Klicks können Sie Daten aus Online- und lokalen Datenquellen integrieren.
+Dataflows können verwendet werden, um Entitäten in den [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) zu füllen, die dann in PowerApps Anwendungen verwendet werden. Mit wenigen Klicks können Sie Daten aus Online- und lokalen Datenquellen integrieren.
 
 <!--from editor: In the last sentence above, should it change to "...on-premises data sources." ? -->
 
@@ -70,7 +74,7 @@ Für Unternehmen, die das Common Data Model erweitern und darauf aufbauen wollen
 ### <a name="extend-your-capabilities-with-azure-data-and-ai-services"></a>Erweitern Sie Ihre Fähigkeiten mit Azure Data und AI Services.
 Die Power Platform-Dataflows können so konfiguriert werden, dass sie Dataflow-Daten im Azure Data Lake Storage-Gen2-Konto Ihres Unternehmens speichern. Wenn eine Umgebung mit dem Data Lake Ihres Unternehmens verbunden ist, können Datenwissenschaftler und Entwickler leistungsstarke Azure-Produkte wie Azure Machine Learning, Azure Databricks, Azure Data Factory und mehr nutzen.
 
-Weitere Informationen über die Azure Data Lake Storage Gen2- und Dataflowintegration, einschließlich der Erstellung von Dataflows, die sich im Azure Data Lake Ihrer Organisation befinden, finden Sie unter [Dataflows und Azure Data Lake-Integration (Vorschau)](/power-bi/service-dataflows-azure-data-lake-integration).
+Weitere Informationen über die Azure Data Lake Storage Gen2- und Dataflowintegration, einschließlich der Erstellung von Dataflows, die sich im Azure Data Lake Ihrer Organisation befinden, finden Sie unter [Azure Data Lake Storage Gen2 für Datenflussspeicher verbinden](connect-azure-data-lake-storage-for-dataflow.md).
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-powerapps"></a>Zusammenfassung der Self-Service Datenvorbereitung für Big Data in PowerApps.
 Es gibt mehrere Szenarien und Beispiele, in denen Dataflows es Ihnen ermöglichen, eine bessere Kontrolle - und schnellere Einblicke - über Ihre Geschäftsdaten zu erhalten. Andere Personen in Ihrem Unternehmen können Dataflows entweder über Common Data Service, den Power Platform Dataflow-Konnektor in Power BI oder über den direkten Zugriff auf den Ordner **Common Data Service** von Dataflow im Azure Data Lake Storage Gen2-Konto Ihres Unternehmens nutzen. Unter Verwendung eines durch das Common Data Model definierten Standard-Datenmodells (Schema) können Geschäftsanwendungen vom Schema einer Entität abhängen und von der Art und Weise, wie die Daten erstellt wurden oder von welcher Datenquelle abstrahiert werden. Wenn ein Dataflow einen geplanten Lauf beendet, sind die Daten bereit für die Modellierung und Erstellung von Apps, Flows oder BI-Insights in sehr kurzer Zeit (was früher Monate oder länger gedauert hat).

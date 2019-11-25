@@ -1,6 +1,6 @@
 ---
-title: 'Erstellen von Bezeichnungen, die mehrere Sprachen unterstützen (Common Data Service) | Microsoft Docs'
-description: 'Infos zum Anpassen von Etiketten, um mehrere Sprachen zu unterstützen.'
+title: Anpassen von Etiketten, um mehrere Sprachen zu unterstützen (Common Data Service) | Microsoft-Dokumentation
+description: Infos zum Anpassen von Etiketten, um mehrere Sprachen zu unterstützen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759dcce9d209a904a1c8f0705414eccb88216e26
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752998"
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>Anpassen von Etiketten, um mehrere Sprachen zu unterstützen
 
@@ -28,7 +34,7 @@ Wenn Sie Anpassungen in Common Data Service erstellen, können Sie mehrere Sprac
 |<xref:Microsoft.Xrm.Sdk.Label> Klasse|<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" />|
 |<xref:Microsoft.Xrm.Sdk.LocalizedLabel> Klasse|<xref href="Microsoft.Dynamics.CRM.LocalizedLabel?text=LocalizedLabel ComplexType" />|
 
- Etiketten sind lokalisierte Zeichenfolgen, die Benutzern in den Client-Anwendungen angezeigt werden. Sie werden implementiert durch Verwendung der `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> oder <xref:Microsoft.Xrm.Sdk.Label>-Klasse), die Sprachpakete unterstützt. Zeichenfolgen, die den Benutzern angezeigt werden, wie etwa Anzeigenamen von Entitäten oder Optionen in einem Optionssatz, können in mehreren Sprachen gespeichert werden. Benutzer können die Sprache auswählen, in der Formulare und Ansichten in Common Data Service-Apps angezeigt werden.  
+ Etiketten sind lokalisierte Zeichenfolgen, die Benutzern in den Client-Anwendungen angezeigt werden. Sie werden implementiert durch Verwendung der `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> oder <xref:Microsoft.Xrm.Sdk.Label>-Klasse), die Sprachpakete unterstützt. Zeichenfolgen, die den Benutzern angezeigt werden, wie etwa Anzeigenamen von Entitäten oder Optionen in einem Optionssatz, können in mehreren Sprachen gespeichert werden. Benutzer können die Sprache auswählen, in der Formulare und Ansichten in Common Data Service angezeigt werden.  
 
  Die folgende Tabelle enthält alle Metadaten, die die `Label` verwenden.  
 
@@ -75,10 +81,10 @@ Wenn Sie Anpassungen in Common Data Service erstellen, können Sie mehrere Sprac
 
  Der exportierte Text wird als komprimierte Datei gespeichert, die ein CrmTranslations.xml enthält, das Sie mit Office Excel öffnen können. Sie können diese Datei an einen Sprachexperten, an eine Übersetzungsagentur oder an ein Lokalisierungsunternehmen senden.  
 
- Weitere Informationen finden Sie in den [Office 2003-XML-Referenzschemata](http://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9).  
+ Weitere Informationen finden Sie in den [Office 2003-XML-Referenzschemata](https://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9).  
 
 ### <a name="import-translated-text"></a>Importieren von übersetztem Text  
- Wenn Sie den angepassten Text für Entitäten oder Attribute exportiert und anschließend übersetzt haben, können Sie die übersetzten Textzeichenfolgen mit der `ImportTranslation`-Nachricht (<xref href="Microsoft.Dynamics.CRM.ImportTranslation?text=ImportTranslation Action" /> oder <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>-Klasse) in die Webanwendung importieren. Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die [Content_Types].xml.file im Stammverzeichnis enthalten ist, genauso wie sie exportiert wurden.  
+ Wenn Sie den angepassten Text für Entitäten oder Attribute exportiert und anschließend übersetzt haben, können Sie die übersetzten Textzeichenfolgen mit der `ImportTranslation`-Nachricht (<xref href="Microsoft.Dynamics.CRM.ImportTranslation?text=ImportTranslation Action" /> oder <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest>-Klasse) in die Webanwendung importieren. Die Datei, die Sie importieren, muss eine komprimierte Datei sein, in der die CrmTranslations.xml und die [Content_Types].xml Datei im Stammverzeichnis enthalten ist, genauso wie sie exportiert wurden.  
 
  Nach dem Importieren der fertig gestellten Übersetzungen wird benutzerdefinierter Text für Benutzer angezeigt, die in den Sprachen arbeiten, in die der Text übersetzt wurde.  
 

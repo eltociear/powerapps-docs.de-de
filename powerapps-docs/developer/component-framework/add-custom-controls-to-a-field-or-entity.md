@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Codekomponenten zu einem Feld oder einer Entität | Microsoft-Dokumentation
 description: Prozess zum Importieren von Codekomponenten
-keywords: null
+keywords: ''
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -10,19 +10,24 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
+ms.openlocfilehash: 63ecdde21328219b70af04b9b65edbb3073f3025
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748487"
 ---
-
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>Hinzufügen von Codekomponenten zu einem Feld oder einer Entität in modellgesteuerten Apps
 
 Mit Codekomponenten können Sie Felder transformieren, die üblicherweise Text in Visualisierungen enthalten. Sie können mit Codekomponenten auch Datasets, z. B. eine Ansicht, transformieren, um es in einem visuelleren Rendering als einer Datensatzliste darzustellen. Codekomponenten können in Formularen, Dashboards, Ansichten und Homepagerastern als Visualisierungen erscheinen. 
 
 
    > [!div class="mx-imgBorder"] 
-   > ![Benutzerdefiniertes Schiebereglersteuerelement](../../maker/model-driven-apps/media/slider-control.PNG "Schiebereglersteuerelement für ein Feld")
+   > ![Benutzerdefiniertes Schieberegler-Steuerelement](../../maker/model-driven-apps/media/slider-control.PNG "Schieberegler-Steuerelement für ein Feld")
 
 ## <a name="add-a-code-component-to-a-field"></a>Hinzufügen einer Codekomponente zu einem Feld
 
-Durch Ausführen der Schritte in diesem Verfahren werden die Standardbezeichnung und das Textfeld im Feld **Budgetbetrag** in die Schiebreglercodekomponente in der Entität "Geschäftschance" geändert. Sie können ähnliche Schritte verwenden, um ein vorhandenes Feld durch eine Codekomponente zu ersetzen oder eine Codekomponente für ein benutzerdefiniertes Feld zu konfigurieren.
+Durch Ausführen der Schritte in diesem Verfahren werden die Standardbezeichnung und das Textfeld im Feld **Budgetbetrag** in die Schieberegler-Codekomponente in der Entität „Geschäftschance” geändert. Sie können ähnliche Schritte verwenden, um ein vorhandenes Feld durch eine Codekomponente zu ersetzen oder eine Codekomponente für ein benutzerdefiniertes Feld zu konfigurieren.
 
 1. Öffnen Sie den Projektmappen-Explorer.
 
@@ -32,10 +37,10 @@ Durch Ausführen der Schritte in diesem Verfahren werden die Standardbezeichnung
 
 4. Klicken Sie auf der Seite **Feldeigenschaften** auf die Registerkarte **Steuerelemente**, und klicken Sie dann auf **Steuerelement hinzufügen**.
 
-5. Wählen Sie auf der Seite "Steuerelement hinzufügen" die Komponente aus, die Sie möchten, z. B. die **Linearer Schiebregler**-Komponente, und wählen Sie dann **Hinzufügen** aus.
+5. Wählen Sie auf der Seite „Steuerelement hinzufügen” die Komponente aus, die Sie möchten, z. B. die **Linearer Schiebregler**-Komponente, und wählen Sie dann **Hinzufügen** aus.
 
    > [!div class="mx-imgBorder"] 
-   > ![Lineares Schiebereglersteuerelement hinzufügen](../../maker/model-driven-apps/media/add-slider.PNG "Lineares Schiebereglersteuerelement hinzufügen")
+   > ![Lineares Schieberegler-Steuerelement hinzufügen](../../maker/model-driven-apps/media/add-slider.PNG "Lineares Schieberegler-Steuerelement hinzufügen")
 
 6. Wählen Sie den Client aus, auf dem die Komponente erscheinen soll.
 
@@ -46,12 +51,12 @@ Durch Ausführen der Schritte in diesem Verfahren werden die Standardbezeichnung
    - **Tablet**. Damit die Codekomponente auf Tablet-Geräten verfügbar wird, auf denen Dynamics 365 für Tablets ausgeführt wird, wählen Sie die Option "Tablet" neben der Komponente aus.
 
    > [!div class="mx-imgBorder"] 
-   > ![Auswählen der Clients-Apps zum Ansehen des benutzerdefinierten Steuerelements](../../maker/model-driven-apps/media/choose-client.png "Auswählen der Clients-Apps zum Ansehen des benutzerdefinierten Steuerelements") 
+   > ![Wählen Sie die Client-Apps, um das benutzerdefinierte Steuerelement anzuzeigen](../../maker/model-driven-apps/media/choose-client.png "Wählen Sie die Client-Apps aus, um das benutzerdefinierte Steuerelement anzuzeigen") 
 
 7. Wählen Sie das Bleistiftsymbol neben **Min**, **Max** und **Schritt** aus, legen Sie die Eigenschaftsoption fest und wählen Sie dann **OK** aus.  
    
    > [!div class="mx-imgBorder"] 
-   > ![Eigenschaften des benutzerdefinierten Steuerelements hinzufügen](../../maker/model-driven-apps/media/ccf-add-properties.png "Eigenschaften des benutzerdefinierten Steuerelements hinzufügen")
+   > ![Hinzufügen von benutzerdefinierten Steuerelementeigenschaften](../../maker/model-driven-apps/media/ccf-add-properties.png "Hinzufügen von benutzerdefinierten Steuerelementeigenschaften")
 
    - **Min.**. Legen Sie den minimalen gültigen Wert fest. Sie können einen statischen Wert binden, den Sie eingeben oder den Wert an ein vorhandenes Feld binden. In diesem Beispiel ist **An statischen Wert binden** **Währung** und der minimale Wert, der eingegeben werden kann, ist *Null*.  
   
@@ -87,10 +92,10 @@ Um eine Codekomponente wie die Datensatz-Komponente oder eine einfache Tabellenk
  Öffnen Sie einen Datensatz, der das Feld mit der Codekomponente enthält, z. B. das Geschäftschance-Feld aus dem vorherigen Beispiel, und schauen Sie, wie das Feld sich geändert hat. Das Feld wird jetzt als Schiebreglerkomponente statt als Textfeld gerendert.  
 
 > [!div class="mx-imgBorder"] 
-> ![Schiebereglersteuerelement auf dem Formular gerendert](../../maker/model-driven-apps/media/slider-control.PNG "Schiebereglersteuerelement auf dem Formular gerendert")  
+> ![Schieberegler-Steuerelement auf Formular angezeigt](../../maker/model-driven-apps/media/slider-control.PNG "Schieberegler-Steuerelement auf Formular angezeigt")  
 
 ### <a name="see-also"></a>Siehe auch
 
 [Implementieren von Komponenten in TypeScript](implementing-controls-using-typescript.md)<br/>
-[PowerApps component framework-API-Referenz](reference/index.md)<br/>
+[PowerApps component framework API-Referenz](reference/index.md)<br/>
 [Übersicht über das PowerApps component framework](overview.md)

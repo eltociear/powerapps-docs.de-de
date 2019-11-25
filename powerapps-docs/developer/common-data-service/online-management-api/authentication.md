@@ -1,6 +1,6 @@
 ---
 title: Authentifizieren zur Verwendung der Online-Verwaltungs-API für Common Data Service | Microsoft-Dokumentation
-description: 'Enthält Informationen zum Authentifizieren bei der Online-Verwaltungs-API, um umgebungsbezogene Vorgänge auszuführen.'
+description: Enthält Informationen zum Authentifizieren bei der Online-Verwaltungs-API, um umgebungsbezogene Vorgänge auszuführen.
 ms.date: 11/27/2017
 ms.service: crm-online
 ms.topic: conceptual
@@ -9,13 +9,19 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 7243f2fccc8356ecac5eedba2b740bc39df1913a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752938"
 ---
 # <a name="authenticate-to-use-the-online-management-api"></a>Authentifizieren Sie sich, um die Online Management API zu verwenden
 
-Online Management API unterstützt OAuths 2.0-Protokoll für die Authentifizierung. Verwenden Sie [Azure Active Directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis) für die Authentifitzieung, indem Sie ein gültiges OAuth 2.0-Zugriffstoken erhalten, und übergeben Sie es mithilfe des **Authorisierung**-Headers in Ihren Anforderungen an Online Management API.
+Online Management API unterstützt OAuths 2.0-Protokoll für die Authentifizierung. Verwenden Sie [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) für die Authentifitzieung, indem Sie ein gültiges OAuth 2.0-Zugriffstoken erhalten, und übergeben Sie es mithilfe des **Authorisierung**-Headers in Ihren Anforderungen an Online Management API.
 
 Die empfohlene Authentifizierungs-API für die Verwendung mit der [Azure Active Directory Authentifizierungs-Bibliothek (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries), die für eine Vielzahl von Plattformen und Programmiersprachen verfügbar ist. 
 

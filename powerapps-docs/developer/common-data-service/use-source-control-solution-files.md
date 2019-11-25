@@ -1,6 +1,6 @@
 ---
 title: Quellcodeverwaltung mit Lösungsdateien (Common Data Service) | Microsoft Docs
-description: 'Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem verwendet werden. Nachdem eine Lösungs-ZIP-Datei in einen Ordner extrahiert wurde, fügen Sie einfach die Dateien zu Ihrem Quellcodeverwaltungssystem hinzu. Diese Dateien können dann auf einem anderen Computer synchronisiert werden, wo sie in eine neue identische Lösungs-ZIP-Datei gepackt werden können.'
+description: Das SolutionPackager-Tool kann für jedes beliebige Quellcodeverwaltungssystem verwendet werden. Nachdem eine Lösungs-ZIP-Datei in einen Ordner extrahiert wurde, fügen Sie einfach die Dateien zu Ihrem Quellcodeverwaltungssystem hinzu. Diese Dateien können dann auf einem anderen Computer synchronisiert werden, wo sie in eine neue identische Lösungs-ZIP-Datei gepackt werden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 77e938315461948c5dc5507f68be290560e728d2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748508"
 ---
 # <a name="source-control-with-solution-files"></a>Quellcodeverwaltung mit Lösungsdateien
 

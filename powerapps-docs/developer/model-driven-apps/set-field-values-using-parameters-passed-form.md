@@ -1,6 +1,6 @@
 ---
-title: 'Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden (modelgestützte Apps) | Microsoft Docs'
-description: 'Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, indem Sie Attributwerte in der URL angeben, die verwendet wird, um das Formular zu öffnen.'
+title: Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden (modelgestützte Apps) | Microsoft Docs
+description: Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, indem Sie Attributwerte in der URL angeben, die verwendet wird, um das Formular zu öffnen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0bcb58ceab5c0fd711bbe7316b93ce2b8c036e8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748373"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden
 
@@ -121,7 +127,7 @@ Sie können Standardwerte für benutzererstellte neue Datensätze festlegen, ind
   
 ## <a name="example-set-the-value-for-multi-select-option-set-fields"></a>Beispiel: Legen Sie den Wert von MultiSelect-Optionssatzfeldern fest
 
-Um den Wert von **MultiSelect-Optionssatzfeldern** festzulegen, geben Sie für die Optionen in der URL zum Öffnen des Formulars ganzzahlige Werte an. Um beispielsweise die Optionen für das Feld **Hobbys** festzulegen, ist der unkodierte Wert für den Parameter "extraqs" “hobbies=[1,3,4]”.   
+Um den Wert von **MultiSelect-Optionssatzfeldern** festzulegen, geben Sie für die Optionen in der URL zum Öffnen des Formulars ganzzahlige Werte an. Beispielsweise die Optionen **Hobbys** für das Feld festlegen, ist der unkodierte Wert für den Parameter extraqs "hobbies= [1,3,4]".   
 
 ```  
 /main.aspx?etn=contact&extraqs=hobbies%3D%5B1%2C3%2C4%5D&pagetype=entityrecord   

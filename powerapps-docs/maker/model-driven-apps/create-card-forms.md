@@ -1,46 +1,52 @@
 ---
-title: Erstellen eines Kartenformulars mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie Kartenformulare in PowerApps erstellen und verwenden'
+title: Erstellen eines Kartenformulars mit PowerApps | Microsoft-Dokumentation
+description: Weitere Informationen, wie Kartenformulare in PowerApps erstellt und verwendet werden
 keywords: ''
 ms.date: 03/05/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d9adcde6d35b0f2d336bf86b8e4e26bcec1edec2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752410"
 ---
 # <a name="create-a-card-form"></a>Erstellen eines Kartenformulars
 Kartenformulare werden in Ansichten für Apps der einheitlichen Oberfläche verwendet. Kartenformulare sind so konzipiert, dass sie Informationen kompakt anzeigen, sodass sie für Mobilgeräte geeignet sind. Beispielsweise definiert das Standardkartenformular für die Ansicht "Meine aktiven Firmen" die Informationen, die für jeden Firmendatensatz angezeigt werden. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/account-cardform-for-myactiveaccounts-view.png "Firmenkartenformular für die Ansicht \"Meine aktiven Firmen\"")
+> ![](media/account-cardform-for-myactiveaccounts-view.png "Account card form for my active accounts view")
 
 Obwohl Kartenformulare auf die gleiche Weise wie andere Formulartypen erstellt und bearbeitet werden können, werden Kartenformulare den Apps anders hinzugefügt. Statt ein Formular als App-Komponente hinzuzufügen, werden benutzerdefinierte Kartenformulare den Ansichten mit dem Steuerelement **Schreibgeschütztes Raster** hinzugefügt. 
 
 ## <a name="create-a-card-form"></a>Erstellen eines Kartenformulars
-1. Um ein Kartenformular zu erstellen, melden Sie sich in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Um ein Kartenformular zu erstellen, melden Sie sich in [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)an. 
 2. Erweitern Sie **Daten**, wählen Sie **Entitäten** und dann die gewünschte Entität aus und wählen Sie die dann die Registerkarte **Formulare** aus.
 3. Wählen Sie auf der Symbolleiste **Formular hinzufügen** aus und klicken Sie auf **Kartenformular**. Sie können auch einen vorhandenen **Formulartyp** öffnen, bei dem es sich um ein Formular **Karte** handelt, um es zu bearbeiten.
 4. Fügen Sie die gewünschten Felder hinzu. Wir empfehlen Ihnen, die Anzahl der Felder zu beschränken, damit das Formular auf kleinen Bildschirmen gut angezeigt wird. 
 5. Wählen Sie **Speichern** und dann **Veröffentlichen** aus. 
 
 ## <a name="add-a-card-form-to-a-view"></a>Hinzufügen eines Kartenformulars zu einer Ansicht 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 2. Erweitern Sie **Daten**, wählen Sie gewünschten Entitäten und dann die Registerkarte **Ansichten** aus.
 3. Wählen Sie die gewünschten Ansicht aus, wählen Sie auf der Symbolleiste **In klassischen Modus wechseln** aus.
 4. Wählen Sie **Benutzerdefinierte Steuerelemente** im Bereich **Allgemeine Aufgaben** aus.

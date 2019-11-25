@@ -1,6 +1,6 @@
 ---
 title: Erstellen eigener Aktionen (Common Data Service) | Microsoft Docs
-description: 'Aktionen sind benutzerdefinierte Meldungen, die bei der Erweiterung der Funktionalität von Common Data Service helfen. Erfahren Sie, wie Sie Ihrer eigene geschäftlichen Aktionen erstellen'
+description: Aktionen sind benutzerdefinierte Meldungen, die bei der Erweiterung der Funktionalität von Common Data Service helfen. Erfahren Sie, wie Sie Ihrer eigene geschäftlichen Aktionen erstellen
 ms.custom: ''
 ms.date: 09/20/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a06bb80c1281df457f963db534311b2e2062d3e1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748423"
 ---
 # <a name="create-your-own-actions"></a>Erstellen Ihrer eigenen Aktionen
 

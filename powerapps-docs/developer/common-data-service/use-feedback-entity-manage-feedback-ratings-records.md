@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Feedbackentität zum Verwalten von Feedback und Bewertungen für Datensätze (Common Data Service) | Microsoft Docs
-description: 'In diesem Thema wird die Feedbackentität behandelt, mit der Feedback und Bewertungen für Datensätze abgerufen werden.'
+title: Verwenden der Feedbackentität zum Verwalten von Feedback und Bewertungen für Datensätze (Common Data Service) | Microsoft-Dokumentation
+description: In diesem Thema wird die Feedbackentität behandelt, mit der Feedback und Bewertungen für Datensätze abgerufen werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f52a5b5200a498f2374be8547fa4d563c4486e2a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753762"
 ---
 # <a name="use-the-feedback-entity-to-manage-feedback-and-ratings-for-records"></a>Verwenden der Feedbackentität zum Verwalten von Feedback und Bewertungen für Datensätze
 
@@ -30,7 +36,7 @@ Verbessern Sie Ihre Produkte und Services, indem Sie Benutzern ermöglichen, Fee
   Sobald Sie eine Entität für Feedback und Bewertung aktiviert haben, können Sie sie nicht deaktivieren. Nachdem Sie eine Entität für Feedback aktiviert haben, wird eine entsprechende Beziehung zwischen der Entität und der `Feedback`-Entität hergestellt.  
   
 > [!NOTE]
->  Sie können die Anpassungstools in Common Data Service benutzen, um Feedback und Bewertung für System- und benutzerdefinierte Entitäten zu aktivieren. Weitere Informationen: [Eine Entität für Feedback aktivieren](http://go.microsoft.com/fwlink/p/?LinkId=785436)  
+>  Sie können die Anpassungstools in Common Data Service benutzen, um Feedback und Bewertung für System- und benutzerdefinierte Entitäten zu aktivieren. Weitere Informationen: [Eine Entität für Feedback aktivieren](https://go.microsoft.com/fwlink/p/?LinkId=785436)  
   
  Die `Feedback`-Entität speichert die folgenden Informationen:  
   

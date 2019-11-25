@@ -10,12 +10,17 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 69736094b6c15d8731ec61f614da3085bed14924
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748437"
 ---
-
 # <a name="tutorial-and-faq"></a>Lernprogramm und FAQ
 
 
@@ -52,10 +57,10 @@ Die praktische Übungseinheit bietet ein Lernprogramm mit schrittweisen Anweisun
 
 **Wie viel kosten die PowerApps build tools?**
 
-*Die PowerApps build tools sind kostenlos erhältlich. Es ist jedoch ein gültiges Azure DevOps-Abonnement erforderlich, um die  build tools zu nutzen. Weitere Informationen sind [hier](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) verfügbar.*
+*Die PowerApps build tools sind kostenlos erhältlich. Es ist jedoch ein gültiges Azure DevOps-Abonnement erforderlich, um die  build tools zu nutzen. Weitere Informationen sind [hier](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) verfügbar.*
 
 **Ich kann die Erweiterung anzeigen, aber warum ist keine Option verfügbar, um sie zu installieren?**
 
-*Wenn die Option zur **Installation** (siehe Screenshot unten) nicht angezeigt wird, haben Sie wahrscheinlich nicht die erforderlichen Rechte in Ihrer Azure DevOps-Organisation. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/en-us/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*Wenn die Option zur **Installation** (siehe Screenshot unten) nicht angezeigt wird, haben Sie wahrscheinlich nicht die erforderlichen Rechte in Ihrer Azure DevOps-Organisation. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
 ![Buildaufgabenbildschirm](media/build-tasks.png)

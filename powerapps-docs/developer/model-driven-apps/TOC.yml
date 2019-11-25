@@ -1,10 +1,10 @@
-- name: Modellgesteuerte Apps
+- name: Modellgestützte Apps
   href: ../../maker/model-driven-apps/model-driven-app-overview.md
 - name: Entwicklerübersicht
   href: overview.md
 - name: Erste Schritte
   href: supported-customizations.md
-- name: Entwerfen einer App-Benutzeroberfläche mithilfe von Code
+- name: Entwerfen einer App-Schnittstelle mit Hilfe von Code
   items:
     - name: Anpassen von Entitätsformularen
       href: customize-entity-forms.md
@@ -13,22 +13,22 @@
           href: use-iframe-and-web-resource-controls-on-a-form.md
     - name: Anpassen von Entitätsansichten
       href: customize-entity-views.md
-    - name: 'Öffnen von Formularen, Ansichten, Dialogfeldern und Berichten über eine URL'
+    - name: 'Öffnen von Formularen, Ansichten, Dialogen und Berichten mit einer URL'
       href: open-forms-views-dialogs-reports-url.md
       items:
         - name: 'Festlegen von Feldwerten mithilfe von Parametern, die an ein Formular übergeben werden'
           href: set-field-values-using-parameters-passed-form.md
-        - name: Konfigurieren eines Formulars zur Verwendung von Abfragezeichenfolgen-Parametern
+        - name: 'Ein Formular konfigurieren, um benutzerdefinierte Abfragezeichenfolgenparameter zu akzeptieren.'
           href: configure-form-accept-custom-querystring-parameters.md
-    - name: 'Öffnen von Formularen, Ansichten und Dashboards auf einem mobilen Dynamics 365-Client über eine URL'
+    - name: 'Öffnen von Formularen, Ansichten und Dashboards im mobilen Dynamics 365-Client mit einer URL'
       href: open-forms-views-dashboards-mobile-client-url.md
-    - name: Verwenden von bearbeitbaren Rastern
+    - name: Bearbeitbare Raster verwenden
       href: use-editable-grids.md
     - name: Abfragen und Bearbeiten eines Organisationsdesigns
       href: query-and-edit-an-organization-theme.md
-    - name: Erstellen benutzerdefinierter Komponenten mithilfe des PowerApps-Komponentenframeworks
+    - name: Erstellen von benutzerdefinierten Komponenten mit dem PowerApps component framework
       href: /powerapps/developer/component-framework/overview
-- name: Anwenden von Datenvisualisierungen mithilfe von Code
+- name: Anwenden der Datenvisualisierung mit Hilfe von Code
   href: customize-visualizations-dashboards.md
   items:
     - name: Analysieren von Daten mit Dashboards
@@ -40,24 +40,24 @@
           href: actions-dashboards.md
         - name: Erstellen eines Dashboards
           href: create-dashboard.md
-    - name: Anzeigen von Daten mit Diagrammvisualisierungen
+    - name: Daten mit Visualisierungen (Diagramme) anzeigen
       href: view-data-with-visualizations-charts.md
       items:
-        - name: 'Grundlegendes zu Diagrammen: Diagrammdarstellung und zugrunde liegende Daten'
+        - name: 'Diagramme verstehen: Zugrunde liegende Daten und Diagrammdarstellung'
           href: understand-charts-underlying-data-chart-representation.md
-        - name: Aktionen für Diagrammvisualisierungen
+        - name: Aktionen für Visualisierungen (Diagramme)
           href: actions-visualizations-charts.md
-        - name: Erstellen einer Diagrammvisualisierung
+        - name: Erstellen einer Visualisierung (Diagramm)
           href: create-visualization-chart.md
-- name: Anwenden von Geschäftslogik durch Erstellen von Clientskripts
+- name: Geschäftslogik mit Hilfe von Client-Skripting anwenden
   href: client-scripting.md
   items:
-    - name: Ereignisse in Formularen und Rastern
+    - name: Ereignisse in Formularen und in Rastern
       href: clientapi/events-forms-grids.md
-    - name: Grundlegendes zum Client-API-Objektmodell
+    - name: Grundlegendes zum Client API-Objektmodell
       href: clientapi/understand-clientapi-object-model.md
       items:
-        - name: Ausführungskontext
+        - name: Context-Ausführungen
           href: clientapi/clientapi-execution-context.md
         - name: Formularkontext
           href: clientapi/clientapi-form-context.md
@@ -65,9 +65,9 @@
           href: clientapi/clientapi-grid-context.md
         - name: Xrm-Objekt
           href: clientapi/clientapi-xrm.md
-    - name: 'Exemplarische Vorgehensweise: Erstellen des ersten Clientskripts'
+    - name: 'Exemplarische Vorgehensweise: Schreiben des ersten Clientskripts'
       href: clientapi/walkthrough-write-your-first-client-script.md
-    - name: Debuggen von JavaScript-Code für modellgesteuerte Apps
+    - name: Debuggen Sie Ihren JavaScript-Code für modellgetriebene Anwendungen
       href: clientapi/debug-JavaScript-code.md
     - name: Client-API-Referenz
       href: clientapi/reference.md
@@ -75,19 +75,19 @@
         - name: Clientseitige Ereignisse
           href: clientapi/reference/events.md
           items:
-            - name: OnChange-Ereignis für Attribut
+            - name: Attribut OnChange-Ereignis
               href: clientapi/reference/events/attribute-onchange.md
-            - name: OnLoad-Ereignis für Formular
+            - name: Formular OnLoad-Ereignis
               href: clientapi/reference/events/form-onload.md
-            - name: OnSave-Ereignis für Formular
+            - name: Formular OnSave-Ereignis
               href: clientapi/reference/events/form-onsave.md
-            - name: OnLoad-Ereignis für Formulardaten
+            - name: Formulardaten OnLoad-Ereignis
               href: clientapi/reference/events/form-data-onload.md
-            - name: OnChange-Ereignis für Raster
+            - name: Raster OnChange-Ereignis
               href: clientapi/reference/events/grid-onchange.md
-            - name: OnRecordSelect-Ereignis für Raster
+            - name: Raster OnRecordSelect-Ereignis
               href: clientapi/reference/events/grid-onrecordselect.md
-            - name: OnSave-Ereignis für Raster
+            - name: Raster OnSave-Ereignis
               href: clientapi/reference/events/grid-onsave.md
             - name: OnProcessStatusChange-Ereignis
               href: clientapi/reference/events/onprocessstatuschange.md
@@ -105,7 +105,7 @@
               href: clientapi/reference/events/postsearch.md
             - name: PreSearch-Ereignis
               href: clientapi/reference/events/presearch.md
-            - name: OnLoad-Ereignis für Unterraster
+            - name: Unterraster-OnLoad-Ereignis
               href: clientapi/reference/events/subgrid-onload.md
             - name: TabStateChange-Ereignis
               href: clientapi/reference/events/tabstatechange.md
@@ -118,9 +118,9 @@
               href: clientapi/reference/collections/get.md
             - name: getLength
               href: clientapi/reference/collections/getLength.md
-        - name: GetGlobalContext-Funktion und ClientGlobalContext.js.aspx
+        - name: GetGlobalContext Funktion und ClientGlobalContext.js.aspx
           href: clientapi/reference/GetGlobalContext-ClientGlobalContext.js.aspx.md
-        - name: Ausführungskontext
+        - name: Context-Ausführungen
           href: clientapi/reference/execution-context.md
           items:
             - name: getDepth
@@ -135,7 +135,7 @@
               href: clientapi/reference/executioncontext/getSharedVariable.md
             - name: setSharedVariable
               href: clientapi/reference/executioncontext/setSharedVariable.md
-        - name: Argumente für Speicherereignisse
+        - name: Ereignis-Argumente speichern
           href: clientapi/reference/save-event-arguments.md
           items:
             - name: getSaveMode
@@ -151,7 +151,7 @@
               href: clientapi/reference/composite-attributes.md
             - name: addOnChange
               href: clientapi/reference/attributes/addOnChange.md
-            - name: Controls-Sammlung
+            - name: Sammlungssteuerelemente
               href: clientapi/reference/attributes/controls-collection.md
             - name: fireOnChange
               href: clientapi/reference/attributes/fireOnChange.md
@@ -270,7 +270,7 @@
               href: clientapi/reference/controls/getVisible.md
             - name: openSearchResult
               href: clientapi/reference/controls/openSearchResult.md
-            - name: refresh
+            - name: Aktualisieren
               href: clientapi/reference/controls/refresh.md
             - name: removeOnPostSearch
               href: clientapi/reference/controls/removeOnPostSearch.md
@@ -313,11 +313,11 @@
               href: clientapi/reference/formContext-data/getIsDirty.md
             - name: isValid
               href: clientapi/reference/formContext-data/isValid.md
-            - name: refresh
+            - name: Aktualisieren
               href: clientapi/reference/formContext-data/refresh.md
             - name: removeOnLoad
               href: clientapi/reference/formContext-data/removeOnLoad.md
-            - name: save
+            - name: speichern
               href: clientapi/reference/formContext-data/save.md
         - name: formContext.data.entity
           href: clientapi/reference/formContext-data-entity.md
@@ -340,7 +340,7 @@
               href: clientapi/reference/formContext-data-entity/isvalid.md
             - name: removeOnSave
               href: clientapi/reference/formContext-data-entity/removeOnSave.md
-            - name: save
+            - name: speichern
               href: clientapi/reference/formContext-data-entity/save.md
         - name: formContext.data.process
           href: clientapi/reference/formContext-data-process.md
@@ -359,7 +359,7 @@
                   href: clientapi/reference/formContext-data-process/eventhandlers/removeOnStageChange.md
                 - name: removeOnStageSelected
                   href: clientapi/reference/formContext-data-process/eventhandlers/removeOnStageSelected.md
-            - name: Methoden für aktive Prozesse
+            - name: ActiveProcess-Methoden
               items:
                 - name: getActiveProcess
                   href: clientapi/reference/formContext-data-process/activeprocess/getActiveProcess.md
@@ -393,7 +393,7 @@
                   href: clientapi/reference/formcontext-data-process/instance/getStatus.md
                 - name: setStatus
                   href: clientapi/reference/formcontext-data-process/instance/setStatus.md
-            - name: Methoden für aktive Phase
+            - name: Aktive Phasenmethoden
               items:
                 - name: getActiveStage
                   href: clientapi/reference/formContext-data-process/activestage/getActiveStage.md
@@ -403,7 +403,7 @@
               href: clientapi/reference/formContext-data-process/activepath/getActivePath.md
             - name: getSelectedStage
               href: clientapi/reference/formContext-data-process/getSelectedStage.md
-            - name: Methoden für Phasen
+            - name: Phasenmethoden
               items:
                 - name: getCategory
                   href: clientapi/reference/formContext-data-process/stage/getCategory.md
@@ -419,7 +419,7 @@
                   href: clientapi/reference/formContext-data-process/stage/getStatus.md
                 - name: getSteps
                   href: clientapi/reference/formContext-data-process/stage/getSteps.md
-            - name: Methoden für Schritte
+            - name: Schrittmethoden
               items:
                 - name: getAttribute
                   href: clientapi/reference/formContext-data-process/step/getAttribute.md
@@ -444,7 +444,7 @@
               href: clientapi/reference/formcontext-ui/addOnLoad.md
             - name: clearFormNotification
               href: clientapi/reference/formcontext-ui/clearFormNotification.md
-            - name: schließen
+            - name: Schließen
               href: clientapi/reference/formcontext-ui/close.md
             - name: getFormType
               href: clientapi/reference/formcontext-ui/getFormType.md
@@ -516,7 +516,7 @@
               href: clientapi/reference/formcontext-ui-quickForms/getVisible.md
             - name: isLoaded
               href: clientapi/reference/formcontext-ui-quickForms/isLoaded.md
-            - name: refresh
+            - name: Aktualisieren
               href: clientapi/reference/formcontext-ui-quickForms/refresh.md
             - name: setDisabled
               href: clientapi/reference/formcontext-ui-quickForms/setDisabled.md
@@ -592,13 +592,13 @@
                   href: clientapi/reference/grids/gridcontrol/getViewSelector.md
                 - name: openRelatedGrid
                   href: clientapi/reference/grids/gridcontrol/openRelatedGrid.md
-                - name: refresh
+                - name: Aktualisieren
                   href: clientapi/reference/grids/gridcontrol/refresh.md
                 - name: refreshRibbon
                   href: clientapi/reference/grids/gridcontrol/refreshRibbon.md
                 - name: removeOnLoad
                   href: clientapi/reference/grids/gridcontrol/removeOnLoad.md
-            - name: Grid
+            - name: Raster
               href: clientapi/reference/grids/grid.md
               items:
                 - name: getRows
@@ -659,11 +659,11 @@
         - name: Xrm.Encoding
           href: clientapi/reference/xrm-encoding.md
           items:
-            - name: htmlAttributeEncode
+            - name: xmlAttributeEncode
               href: clientapi/reference/xrm-encoding/htmlAttributeEncode.md
             - name: htmlDecode
               href: clientapi/reference/xrm-encoding/htmlDecode.md
-            - name: htmlEncode
+            - name: xmlEncode
               href: clientapi/reference/xrm-encoding/htmlEncode.md
             - name: xmlAttributeEncode
               href: clientapi/reference/xrm-encoding/xmlAttributeEncode.md
@@ -709,7 +709,7 @@
                   href: clientapi/reference/xrm-utility/getGlobalContext/organizationSettings.md
                 - name: userSettings
                   href: clientapi/reference/xrm-utility/getGlobalContext/userSettings.md
-                - name: getAdvancedConfigSetting
+                - name: GetAdvancedConfigSetting
                   href: clientapi/reference/xrm-utility/getGlobalContext/getAdvancedConfigSetting.md
                 - name: getClientUrl
                   href: clientapi/reference/xrm-utility/getGlobalContext/getClientUrl.md
@@ -762,70 +762,70 @@
               href: clientapi/reference/xrm-webapi/online/executeMultiple.md
     - name: Bewährte Methoden
       href: best-practices/business-logic/index.md
-- name: Anpassen von Befehlen und Menübändern
+- name: Befehle und Menüband anpassen
   href: customize-commands-ribbon.md
   items:
     - name: Verfügbare Menübänder
       href: ribbons-available.md
-    - name: Darstellung als Befehlsleiste oder Menüband
+    - name: Darstellen von Befehlsleisten und Menübändern
       href: command-bar-ribbon-presentation.md
-    - name: 'Exportieren, Vorbereiten zum Bearbeiten und Importieren des Menübands'
+    - name: 'Exportieren, Vorbereitung der Bearbeitung und Importieren des Menübands'
       href: export-prepare-edit-import-ribbon.md
     - name: Exportieren von Menübanddefinitionen
       href: export-ribbon-definitions.md
-    - name: Verwenden von lokalisierten Bezeichnungen in Menübändern
+    - name: Verwenden lokalisierten Bezeichnungen in Menübändern
       href: use-localized-labels-ribbons.md
-    - name: Definieren von Menübandbefehlen
+    - name: Menübandbefehle definieren
       href: define-ribbon-commands.md
-    - name: Definieren von Regeln zum Aktivieren eines Menübands
+    - name: Definieren von Menüband-Aktivierungsregeln
       href: define-ribbon-enable-rules.md
-    - name: Definieren von Anzeigeregeln für ein Menüband
+    - name: Definieren von Menüband-Anzeigeregeln
       href: define-ribbon-display-rules.md
     - name: Definieren von Menübandaktionen
       href: define-ribbon-actions.md
-    - name: Übergeben von Daten einer Seite als Parameter für Menübandaktionen
+    - name: Übergeben von Daten von einer Seite als Parameter an Menüband-Aktionen
       href: pass-data-page-parameter-ribbon-actions.md
-    - name: Definieren von benutzerdefinierten Aktionen zum Ändern eines Menübands
+    - name: Festlegen benutzerdefinierter Aktionen zur Änderung des Menübands
       href: define-custom-actions-modify-ribbon.md
-    - name: Definieren des Skalierungsverhaltens für Menübandelemente
+    - name: Definieren der Skalierung für Menübandelemente
       href: define-scaling-ribbon-elements.md
-    - name: Definieren von Anzeigeregeln für Menübandregisterkarten
+    - name: Definieren von Menüband-Registerkartenanzeigenregeln
       href: define-ribbon-tab-display-rules.md
-    - name: Übergeben von Parametern an eine URL mithilfe des Menübands
+    - name: Parameter mit dem Menüband an eine URL übergeben
       href: pass-parameters-url-by-using-ribbon.md
 - name: Webressourcen in modellgesteuerten Apps
   href: web-resources.md
   items:
-    - name: Verwenden von Webressourcen
+    - name: Webressourcen verwenden
       href: use-web-resources.md
-    - name: Webseiten-Webressourcen (HTML)
+    - name: Webressourcen der Webseite (HTML)
       href: webpage-html-web-resources.md
       items:
         - name: Erstellen von barrierefreien Webressourcen
           href: create-accessible-web-resources.md
-    - name: Skriptwebressourcen (JScript)
+    - name: Webressourcen für Skripts (JScript)
       href: script-jscript-web-resources.md
       items:
-        - name: Entwickeln von Skriptwebressourcen mit AutoResponder in Fiddler
+        - name: Skript-Webressourcenentwicklung unter Verwendung von Fiddler-AutoResponder
           href: streamline-javascript-development-fiddler-autoresponder.md
-    - name: CSS-Webressourcen
+    - name: CSS Webressourcen
       href: css-web-resources.md
     - name: Bildwebressourcen
       href: image-web-resources.md
-    - name: Datenwebressourcen (XML)
+    - name: Webressourcen von Daten (XML)
       href: data-xml-web-resources.md
-    - name: RESX-Webressourcen
+    - name: RESX Webressourcen
       href: resx-web-resources.md
-    - name: Stylesheet-Webressourcen (XSL)
+    - name: XSL-Webressourcen (Stylesheet)
       href: stylesheet-xsl-web-resources.md
-    - name: Webressourcenabhängigkeiten
+    - name: Abhängigkeiten von Webressourcen
       href: web-resource-dependencies.md
-- name: 'Erstellen, Verwalten und Veröffentlichen einer App mithilfe von Code'
+- name: 'Erstellen, Verwalten und Veröffentlichen von Apps mithilfe von Code'
   href: create-manage-model-driven-apps-using-code.md
 - name: Bearbeiten der Anpassungsdatei
   href: when-edit-customization-file.md
   items:
-    - name: Bearbeiten der XML-Anpassungsdatei und Schemavalidierung
+    - name: Bearbeiten der XML-Datei für Anpassungen mit Schemaüberprüfung
       href: edit-customizations-xml-file-schema-validation.md
     - name: Veröffentlichen von Anpassungen
       href: publish-customizations.md
@@ -835,37 +835,37 @@
   items:
     - name: Exportieren von Menübanddefinitionen
       href: sample-export-ribbon-definitions.md
-    - name: Übergeben von mehreren Werten an eine Webressource mithilfe des data-Parameters
+    - name: Mehrere Werte über den Datenparameter an eine Webressource übergeben
       href: sample-pass-multiple-values-web-resource-through-data-parameter.md
     - name: Importieren von Dateien als Webressourcen
       href: sample-import-files-web-resources.md
     - name: Beispieldiagramme
       href: sample-charts.md
-    - name: Beispieldashboards
+    - name: Beispiel-Dashboards
       href: sample-dashboards.md
 - name: Ressourcen
   items:
-    - name: Entwicklungstools
+    - name: Entwickler-Tools
       href: developer-tools.md
     - name: Testtools
       href: testing-tools-client.md
 - name: Referenz
   items:
-    - name: Erstellen von Clientskripts
+    - name: Client-Skripterstellung
       href: clientapi/reference.md
-    - name: Referenz zur XML-Anpassungsdatei
+    - name: Anpassungs-XML-Verweis
       href: customization-xml-reference.md
-    - name: Menübandschemas
+    - name: Menüband-Schemas
       items:
-        - name: Schema für Menüband-Kernteil
+        - name: Menüband-Core-Schema
           href: ribbon-core-schema.md
-        - name: Schema für Menübandtypen
+        - name: Menübandtypenschema
           href: ribbon-types-schema.md
-        - name: Schema für WSS-Menübandtyp
+        - name: Menüband-WSS-Schema
           href: ribbon-wss-schema.md
-    - name: XML-Schema für Formulare
+    - name: Formular-XML-Schema
       href: form-xml-schema.md
-    - name: Schema für Veröffentlichungsanforderung
+    - name: Veröffentlichen des Anforderungsschemas
       href: publish-request-schema.md
-    - name: Schema für Visualisierungsdatenbeschreibungen
+    - name: Visualisierungsdaten-Beschreibungsschema
       href: visualization-data-description-schema.md

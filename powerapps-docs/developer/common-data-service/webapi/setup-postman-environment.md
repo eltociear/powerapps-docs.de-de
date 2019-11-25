@@ -1,12 +1,12 @@
 ---
 title: Einrichten einer Postman-Umgebung (Common Data Service für Apps)| MicrosoftDocs
-description: 'Erfahren Sie, wie Sie eine Postman-Umgebung einrichten und konfigurieren, die mit Common Data Service Umgebungen verbunden ist.'
-ms.custom: null
+description: Erfahren Sie, wie Sie eine Postman-Umgebung einrichten und konfigurieren, die mit Common Data Service Umgebungen verbunden ist.
+ms.custom: ''
 ms.date: 04/09/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: powerapps
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 955BA444-A53D-4843-9429-833B1636E2B4
 caps.latest.revision: 7
@@ -14,11 +14,16 @@ author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 4ce6e11f599eedd6b44c4fbf7271760ecb3cd9c2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748602"
 ---
-
 # <a name="set-up-a-postman-environment"></a>Einrichten einer Postman-Umgebung
 
 Sie können Postman verwenden, um sich mit Ihrer Common Data Service-Instanz zu verbinden und Web-API-Anfragen zu erstellen, zu senden und Antworten anzuzeigen. Die Verwaltung der Authentifizierung ist ein Teil, den viele Nutzer schwierig finden. Dieses Thema beschreibt, wie Sie eine Postman-Umgebung so konfigurieren, dass sie für Ihre Common Data Service-Umgebungen funktioniert.
@@ -46,7 +51,7 @@ Verwenden Sie diese Schritte, um eine Postman-Umgebung zu erstellen, mit der Sie
 1. Klicken Sie auf das Symbol **Umgebungsoptionen** in der rechten oberen Ecke. 
 1. In der sich öffnenden Dialogbox **Umgebungen verwalten** klicken Sie auf **Hinzufügen**, um eine neue Umgebung hinzuzufügen.
   
-  ![Klicken Sie auf die Schaltfläche Hinzufügen, um eine neue Postman-Umgebung hinzuzufügen](media/postman-manage-env.png "Klicken Sie auf die Schaltfläche Hinzufügen, um eine neue Postman-Umgebung hinzuzufügen").<br>
+  ![Klicken Sie auf die Schaltfläche „Hinzufügen“, um eine neue Postman-Umgebung hinzuzufügen](media/postman-manage-env.png "Klicken Sie auf die Schaltfläche „Hinzufügen“, um eine neue Postman-Umgebung hinzuzufügen")<br>
   
 1. Geben Sie in dem Dialogfeld, das geöffnet wird, einen Namen für die Umgebung ein. Fügen Sie dann den folgenden Schlüssel/Wert-Paare im Editierbereich hinzu.<br>
 
@@ -93,7 +98,7 @@ Siehe [Test Ihrer Verbindung](#test-your-connection) für Schritte zur Überprü
 
 Erstellen Sie eine neue Web-API-Anfrage, um die Verbindung mit Ihrer Common Data Service-Instanz zu testen. Verwenden des <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI function" />Formular-Assistenten:
 1. Wählen Sie `GET` als HTTP-Methode und fügen Sie `{{webapiurl}}WhoAmI` im Editierbereich hinzu.
-  ![WhoAmI Funktionsanforderung](media/postman-whoami-request.png "WhoAmI Funktionsanforderung")
+  ![WhoAmI-Funktionsanforderung](media/postman-whoami-request.png "WWhoAmI-Funktionsanforderung)
 2. Klicken Sie auf **Senden**, um diese Anfrage zu senden.
 3. Wenn Ihre Anfrage erfolgreich ist, sollten Sie die Daten der <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> sehen, die von <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> zurückgegeben wird.
 

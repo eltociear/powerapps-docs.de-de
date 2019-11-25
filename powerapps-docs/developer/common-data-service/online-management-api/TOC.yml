@@ -1,0 +1,15 @@
+- name: Common Data Service-Entwicklerübersicht
+  href: ../overview.md
+- name: Online-Verwaltungs-API
+  href: overview.md
+- name: Erste Schritte mitOnline Management API
+  href: get-started-online-management-api.md
+- name: 'Authentifizieren Sie sich, um die Online Management API zu verwenden'
+  href: authentication.md
+  items:
+    - name: 'Beispiel: Authentifizierungshilfe für die Online Management API'
+      href: sample-authentication-helper.md
+- name: 'Vorgänge, die von Online Management API unterstützt werden'
+  href: operations-supported.md
+- name: 'Schnellstart-Beispiel: Abrufen von Umgebungen vom Mandanten'
+  href: sample-quick-start.md

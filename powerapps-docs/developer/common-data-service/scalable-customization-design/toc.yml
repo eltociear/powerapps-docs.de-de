@@ -1,6 +1,6 @@
-- name: Anwenden von Geschäftslogik mithilfe von Code
+- name: < Geschäftslogik mit Code anwenden
   href: ../apply-business-logic-with-code.md
-- name: Entwurf skalierbarer Anpassungen
+- name: Skalierbarer Anpassungsentwurf
   href: overview.md
   items:
     - name: Datenbanktransaktionen

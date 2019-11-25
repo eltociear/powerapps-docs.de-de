@@ -1,6 +1,6 @@
 ---
 title: Webseite (HTML) Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Dieses Thema befasst sich damit, wie HTML-Webressourcen implementiert werden sowie ihre Funktionen und Einschränkungen'
+description: Dieses Thema befasst sich damit, wie HTML-Webressourcen implementiert werden sowie ihre Funktionen und Einschränkungen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754547"
 ---
 # <a name="webpage-html-web-resources"></a>Webressourcen der Webseite (HTML)
 
@@ -44,7 +50,7 @@ Da eine HTML-Webressource einfach nur zum Browser des Benutzers gestreamt wird, 
  Eine komplexere HTML-Seite, die Skripte benötigt, um die Inhalte der Seite zu rendern, beginnt beispielsweise wie das folgende Beispiel.
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
  <title></title>
@@ -80,11 +86,11 @@ Da der HTML-Code in Webressourcen mithilfe des Texteditors geändert werden kann
 
  Sie können einen Satz zugehöriger Dateien außerhalb von modellgesteuerten Apps erstellen, die irgendeinen der Webressourcendateitypen verwenden. Wenn Sie darauf achten, immer relative Pfade zu verwenden und jede Webressource mit einer einheitlichen Namenskonvention zu importieren, die die Ordnerstruktur Ihrer Website widerspiegelt, werden Sie feststellen, dass die HTML-Webressource Links zu verwandten CSS-, XML-, JScript-, Bild- und Silverlight-Dateien unterhält, die als Webressourcen importiert wurden.  
 
- Beispiel: Sie erstellen ein Webanwendungsprojekt, das die folgende [Ordnerr]/Dateistruktur verwendet:  
+ Beispiel: Sie erstellen ein Webanwendungsprojekt, das die folgende [Ordner]/Dateistruktur verwendet:  
 
 -   page.htm
 
--   [Stilarten]
+-   [Formatvorlagen]
 
     -   style.css
   

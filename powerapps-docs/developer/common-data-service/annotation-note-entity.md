@@ -1,6 +1,6 @@
 ---
-title: Anmerkungs- (Notiz)-Entität (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie über die Anmerkungsentität, um einem Datensatz in der Datenbank zusätzliche Informationen anzufügen. Die Anmerkungsentität stellt eine Anmerkung dar und enthält den Anmerkungstext mit Daten darüber, wer die Anmerkung erstellt und geändert hat, und ob eine Anmerkung zur Datei angefügt ist.'
+title: Anmerkung (Notiz)-Entität (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie über die Anmerkungsentität, um einem Datensatz in der Datenbank zusätzliche Informationen anzufügen. Die Anmerkungsentität stellt eine Anmerkung dar und enthält den Anmerkungstext mit Daten darüber, wer die Anmerkung erstellt und geändert hat, und ob eine Anmerkung zur Datei angefügt ist.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9b065d6fc88ecd0662034f6fa95667679d667922
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748440"
 ---
 # <a name="annotation-note-entity"></a>Die Entität Anmerkung (Hinweis)
 

@@ -1,6 +1,6 @@
 ---
-title: Verwalten vorhandener Portale in powerapps | Microsoft-Dokumentation
-description: Anweisungen zum Verwalten eines Portals in powerapps.
+title: Verwaltung bestehender Portale in PowerApps | Microsoft Docs
+description: Anleitung zur Verwaltung eines Portale in PowerApps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,103 +11,103 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541910"
+ms.locfileid: "2756958"
 ---
-# <a name="manage-existing-portals-in-powerapps"></a>Verwalten vorhandener Portale in powerapps
+# <a name="manage-existing-portals-in-powerapps"></a>Verwaltung bestehender Portale in PowerApps.
 
-Nachdem Sie ein Portal erstellt haben, wird es auf der powerapps-Startseite im Abschnitt **zuletzt verwendete apps** angezeigt.
+Sobald Sie ein Portal erstellt haben, ist es unter dem Abschnitt **Aktuelle Anwendungen** auf der Startseite PowerApps sichtbar.
 
 > [!div class=mx-imgBorder]
-> ![zuletzt verwendete apps](media/recent-apps.png "Zuletzt verwendete apps")  
+> ![neueste Apps](media/recent-apps.png "Neueste Apps")  
 
-Zum Verwalten einer APP wählen Sie **Weitere Befehle** ( **...** ) für das Portal aus, und wählen Sie im Kontextmenü eine Aktion aus.
+Um eine App zu verwalten, wählen Sie **Weitere Befehle** (**...**) für das Portal und wählen Sie eine Aktion aus dem Kontextmenü.
 
 > [!div class=mx-imgBorder]
 > ![Portal-App-Optionen](media/portal-app-options.png "Portal-App-Optionen")  
 
 ## <a name="edit"></a>Bearbeiten
 
-Öffnet die [powerapps-Portale Studio](portal-designer-anatomy.md) , um den Inhalt und die Komponenten des Portals zu bearbeiten.  
+Öffnet das [PowerApps-Portalstudio](portal-designer-anatomy.md), um die Inhalte und Komponenten des Portals zu bearbeiten.  
 
 > [!div class=mx-imgBorder]
-> ![Portal Hersteller](media/portal-maker.png "Portal Hersteller")  
+> ![Portalersteller](media/portal-maker.png "Portalersteller")  
 
-## <a name="browse"></a>Sen
+## <a name="browse"></a>Durchsuchen
 
-Öffnet das Portal zum Durchsuchen der Website. Auf diese Weise können Sie das Portal sehen, wie es Ihren Kunden entspricht.
+Öffnet das Portal, um die Website zu durchsuchen. Dies hilft Ihnen, das Portal so zu sehen, wie es für Ihre Kunden aussieht.
 
 > [!div class=mx-imgBorder]
-> ![Portal Website](media/portal-website.png "Portal Website")  
+> ![Portalwebsite](media/portal-website.png "Portalwebsite")  
 
-Alternativ dazu können Sie auch das Portal öffnen, um die Website zu durchsuchen, indem Sie in [powerapps Portale Studio](portal-designer-anatomy.md) **Website durchsuchen** auswählen, um die Änderungen anzuzeigen, die Sie an der Website vorgenommen haben. Die Website wird auf einer neuen Registerkarte mit der URL der Website geöffnet.
+Alternativ können Sie auch das Portal öffnen, um die Website zu durchsuchen, indem Sie **Website durchsuchen** im [PowerApps-Portalstudio](portal-designer-anatomy.md) auswählen, um die Änderungen anzuzeigen, die Sie an der Website vorgenommen haben. Die Website wird in einem neuen Tab mit der URL der Website geöffnet.
 
 ## <a name="share"></a>Freigeben
 
-Geben Sie Ihr Portal für interne oder externe Benutzer frei. Führen Sie die im Bereich **Freigeben dieses Portals** beschriebenen Schritte aus.
+Teilen Sie Ihr Portal mit internen oder externen Benutzern. Befolgen Sie die im Bereich **Freigeben dieses Portale** genannten Schritte.
 
 > [!div class=mx-imgBorder]
-> ![Freigeben des Portals](media/share-portal.png "Freigeben des Portals")  
+> ![Portal teilen](media/share-portal.png "Portal teilen")  
 
-### <a name="share-with-internal-users"></a>Freigeben mit internen Benutzern
+### <a name="share-with-internal-users"></a>Teilen mit internen Benutzern
 
-Um das Portal für interne Benutzer freizugeben, müssen Sie zunächst eine Sicherheitsrolle erstellen und dann der Sicherheitsrolle Benutzer zuweisen, damit Sie das Portal verwenden können.
+Um das Portal für interne Benutzer freizugeben, müssen Sie zunächst eine Sicherheitsrolle anlegen und dann Benutzer der Sicherheitsrolle zuordnen, damit sie das Portal nutzen können.
 
 > [!NOTE]
-> Wenn Sie als Benutzer in Common Data Service nicht über die entsprechenden Berechtigungen für Portal Entitäten verfügen, werden möglicherweise Fehler angezeigt, z. b. "Sie haben keinen Zugriff, um Lösungen in dieser Umgebung anzuzeigen." oder "Sie haben keinen Zugriff auf die Website anzeigen". Es wird empfohlen, dass Sie sich in der entsprechenden Common Data Service Datenbank in einer System Administrator-Sicherheitsrolle befinden.
+> Wenn Sie als Benutzer unter Common Data Service keine entsprechenden Berechtigungen für Portalentitäten haben, werden Sie möglicherweise Fehler wie "Sie haben keinen Zugriff, um Lösungen in dieser Umgebung anzuzeigen" sehen. oder "Sie haben keinen Zugriff auf die Website in dieser Umgebung". Es wird empfohlen, dass Sie in der entsprechenden Common Data Service-Datenbank über die Systemadministrator-Sicherheitsrolle verfügen.
 
 #### <a name="step-1-create-a-security-role"></a>Schritt 1: Erstellen einer Sicherheitsrolle
 
-1.  Wählen Sie im Bereich **dieses Portal freigeben** unter **Sicherheitsrolle erstellen**die Option **Sicherheitsrollen**aus. Eine Liste aller konfigurierten Sicherheitsrollen wird angezeigt.
+1.  Wählen Sie im Bereich **Dieses Portal teilen** unter **Eine Sicherheitsrolle erstellen** **Sicherheitsrollen**. Eine Liste aller konfigurierten Sicherheitsrollen wird angezeigt.
 
-2.  Wählen Sie auf der Symbolleiste Aktionen die Option **neu**aus.
+2.  Wählen Sie auf der Aktionssymbolleiste **Neu** aus.
 
-3.  Geben Sie im Fenster **neue Sicherheitsrolle** den Rollennamen ein.
+3.  Geben Sie im Fenster **Neue Sicherheitsrolle** den Rollennamen ein.
 
-4.  Legen Sie die Berechtigungen für alle im Portal verwendeten Entitäten fest.
+4.  Legen Sie die Berechtigungen für alle in Ihrem Portal verwendeten Objekte fest.
 
-5.  Wenn Sie die Konfiguration der Sicherheitsrolle abgeschlossen haben, klicken Sie auf der Symbolleiste auf **Speichern und schließen**.
+5.  Wenn Sie die Konfiguration der Sicherheitsrolle abgeschlossen haben, wählen Sie in der Symbolleiste **Speichern und Schließen**.
 
-Informationen zu Sicherheitsrollen und Berechtigungen finden Sie unter [Sicherheitsrollen und-Berechtigungen](https://docs.microsoft.com/power-platform/admin/security-roles-privileges).
+Informationen zu Sicherheitsrollen und -privilegien finden Sie unter [Sicherheitsrollen und -privilegien](https://docs.microsoft.com/power-platform/admin/security-roles-privileges).
 
-#### <a name="step-2-assign-users-to-the-security-role"></a>Schritt 2: Zuweisen von Benutzern zur Sicherheitsrolle
+#### <a name="step-2-assign-users-to-the-security-role"></a>Schritt 2: Benutzer der Sicherheitsrolle zuordnen
 
-1.  Wählen Sie im Bereich **dieses Portal freigeben** unter **Benutzer der Sicherheitsrolle zuweisen die**Option **Benutzer**aus. Eine Liste aller Benutzer wird angezeigt.
+1.  Wählen Sie im Bereich **Dieses Portal teilen** unter **Benutzer der Sicherheitsrolle zuweisen** **Benutzer**. Sie erhalten eine Liste aller Benutzer.
 
-2.  Wählen Sie den Benutzer aus, dem Sie eine Sicherheitsrolle zuweisen möchten.
+2.  Wählen Sie den Benutzer aus, dem Sie eine Sicherheitsrolle zuordnen möchten.
 
-3.  Klicken Sie auf **Rollen verwalten**.
+3.  Wählen Sie **Rollen verwalten** aus.
 
     > [!NOTE]
-    > Wenn die Schaltfläche **Rollen verwalten** in der Befehlsleiste nicht angezeigt wird, müssen Sie den Client ändern, indem Sie in der URL forceuci auf 0 festlegen. Beispiel: https://&lt;org\_URL&gt;/Main.aspx? PageType = entityList & ETN = systemuser & forceuci = 0
+    > Wenn Sie die Schaltfläche **Rollen verwalten** in der Befehlsleiste nicht sehen können, müssen Sie den Client ändern, indem Sie forceUCI in der URL auf 0 setzen. Zum Beispiel https://&lt;org\_url&gt;/main.aspx?pagetype=entitylist&etn=systemuser&forceUCI=0
 
-4.  Wählen Sie im Dialogfeld **Benutzer Rollen verwalten** die Sicherheitsrolle aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **OK**.
+4.  Wählen Sie im Dialogfenster **Benutzerrollen verwalten** die zuvor erstellte Sicherheitsrolle aus und wählen Sie dann **OK**.
 
-### <a name="share-with-external-users"></a>Freigabe für externe Benutzer
+### <a name="share-with-external-users"></a>Teilen mit externen Benutzern
 
-Ihr Portal sollte anonym arbeiten und für externe Benutzer zugänglich sein. Wenn Sie erweiterte Funktionen für die Verwaltung von Rollen und Berechtigungen für externe Benutzer testen möchten, finden Sie weitere [Informationen unter Konfigurieren eines Kontakts für die Verwendung in einem Portal](configure/configure-contacts.md), [einladen von Kontakten zu Ihren Portalen](configure/invite-contacts.md), [Erstellen von Webrollen für Portale](configure/create-web-roles.md), [Zuweisen von Entitäts Berechtigungen. ](configure/assign-entity-permissions.md).  
+Ihr Portal sollte anonym arbeiten und für die externen Benutzer zugänglich sein. Wenn Sie erweiterte Funktionen zur Verwaltung von Rollen und Berechtigungen für externe Benutzer ausprobieren möchten, siehe [Konfiguration eines Kontakts für die Verwendung in einem Portal](configure/configure-contacts.md), [Kontakte zu Ihren Portalen einladen](configure/invite-contacts.md), [Webrollen für Portale erstellen](configure/create-web-roles.md), [Entitätsberechtigungen zuweisen](configure/assign-entity-permissions.md).  
 
 ## <a name="settings"></a>Einstellungen
 
-Zeigt die Portal Einstellungen an und ermöglicht es Ihnen, den Namen des Portals zu ändern. Sie können auch erweiterte Aktionen ausführen, wie z. b. das Verwalten des Portals über das powerapps-Portal Admin Center und das Arbeiten mit Website Einstellungen. Einstellungen enthält Links zu den powerapps-Portalen Admin Center und Site Einstellungen. Weitere Informationen finden Sie unter [Erweiterte Portal Verwaltung](admin/admin-overview.md) und [Konfigurieren von Site Einstellungen](configure/configure-site-settings.md).  
+Zeigt die Portaleinstellungen an und ermöglicht es Ihnen, den Namen des Portale zu ändern. Sie können auch erweiterte Aktionen durchführen, wie z. B. die Verwaltung des Portals über das PowerApps-Portal-Administratorcenter und die Arbeit mit den Site-Einstellungen. Einstellungen bietet Links zum PowerApps Portale Admin-Center und zu den Seiteneinstellungen. Mehr Informationen: [Erweiterte Portalverwaltung](admin/admin-overview.md) und [Konfigurieren von Websiteeinstellungen](configure/configure-site-settings.md).  
 
 > [!div class=mx-imgBorder]
-> ![Portal Einstellungen](media/portal-settings.png "Portal Einstellungen")  
+> ![Portaleinstellungen](media/portal-settings.png "Portaleinstellungen")  
 
-## <a name="delete"></a>Lösch
+## <a name="delete"></a>Löschen
 
-Löscht das Portal und die gehosteten Ressourcen. Wenn Sie ein Portal löschen, ist die zugehörige URL nicht mehr verfügbar. Das Löschen eines Portals wirkt sich nicht auf Portal Konfigurationen oder Lösungen aus, die in Ihrer Umgebung vorhanden sind, und Sie bleiben unverändert.
-Sie müssen die Portal Konfigurationen manuell löschen, um die Portal Konfigurationen vollständig aus Ihrer Umgebung zu entfernen. Verwenden Sie hierzu die Portal Verwaltungs-APP, und löschen Sie den entsprechenden Website Daten Satz für das Portal.
+Löscht das Portal und die bereitgestellten Ressourcen. Wenn Sie ein Portal löschen, wird seine URL unzugänglich. Das Löschen eines Portale hat keinen Einfluss auf die in Ihrer Umgebung vorhandenen Portalkonfigurationen oder Lösungen, und sie bleiben wie sie sind.
+Sie müssen die Portalkonfigurationen manuell löschen, um Portalkonfigurationen vollständig aus Ihrer Umgebung zu entfernen. Verwenden Sie dazu die Anwendung Portal Management und löschen Sie den entsprechenden Website-Datensatz für das Portal.
 
 > [!NOTE]
-> Wenn Sie nicht über ausreichende Berechtigungen zum Löschen eines Portals verfügen, wird ein Fehler angezeigt. Zum Löschen eines Portals müssen Sie über die Rolle "System Administrator" verfügen. Außerdem müssen Sie der Besitzer der Portal Anwendung in Azure Active Directory sein. Der Benutzer, der das Portal erstellt, ist standardmäßig der Besitzer und kann ein Portal löschen. Informationen dazu, wie Sie sich selbst als Besitzer hinzufügen, finden Sie unter [Hinzufügen als Besitzer der Azure AD Anwendung](admin/admin-overview.md#add-yourself-as-an-owner-of-the-azure-ad-application).
+> Wenn Sie nicht über ausreichende Berechtigungen zum Löschen eines Portale verfügen, wird ein Fehler angezeigt. Sie müssen über die Systemadministrator-Rolle verfügen, um ein Portal zu löschen. Außerdem müssen Sie der Eigentümer der Portalanwendung in Azure Active Directory sein. Der Benutzer, der das Portal anlegt, ist standardmäßig der Eigentümer und kann ein Portal löschen. Informationen zum Hinzufügen von sich selbst als Eigentümer finden Sie unter [Sich selbst als Eigentümer der Anwendung Azure AD hinzufügen](admin/admin-overview.md#add-yourself-as-an-owner-of-the-azure-ad-application).
 
 ## <a name="details"></a>Details
 
-Zeigt Details wie den Besitzer des Portals, das Datum und die Uhrzeit der Erstellung und die letzte Änderung und die URL des Portals an.
+Zeigt Details wie den Eigentümer des Portale, Datum und Uhrzeit der Erstellung und letzten Änderung sowie die URL des Portale an.
 
 > [!div class=mx-imgBorder]
-> ![Details zum Portal](media/portal-details.png "Informationen zu einem Portal")  
+> ![Portal-Details](media/portal-details.png "Portal-Details")  
 

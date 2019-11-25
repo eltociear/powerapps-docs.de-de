@@ -1,19 +1,25 @@
 ---
-title: 'Verwenden einer linken äußeren Verknüpfung in QueryExpression für Abfragen nach Datensätzen, die &quot;nicht in&quot; sind (Common Data Service) | Microsoft Docs'
-description: 'Erfahren Sie, wie eine linke äußere Verknüpfung mithilfe der QueryExpression-Klasse verwendet wird, um eine Abfrage auszuführen, die die Verknüpfungstabelle filtert, und eine Abfrage zu erstellen, die Datensätze des Typs &quot;nicht in&quot; in einer Gruppe findet'
+title: Verwenden einer linken äußeren Verknüpfung in QueryExpression für Abfragen nach Datensätzen, die &quot;nicht in&quot; sind (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie eine linke äußere Verknüpfung mithilfe der QueryExpression-Klasse verwendet wird, um eine Abfrage auszuführen, die die Verknüpfungstabelle filtert, und eine Abfrage zu erstellen, die Datensätze des Typs &quot;nicht in&quot; in einer Gruppe findet
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 009621e7e749255d64eae851629e5d7f0bd61e79
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748686"
 ---
 # <a name="use-a-left-outer-join-in-queryexpression-to-query-for-records-not-in"></a>Verwenden einer linken äußeren Verknüpfung in QueryExpression für Abfragen nach Datensätzen, die „nicht in“ sind.
 

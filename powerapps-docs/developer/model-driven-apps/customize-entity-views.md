@@ -4,21 +4,24 @@ description: Informationen zur Anpassung der Entitätsansichten.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: da2a9b57-fcd2-38c5-c670-63acf1767efa
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 26070652e0cafe91731384a75ae66334288eef9e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748758"
 ---
-
 # <a name="customize-entity-views"></a>Anpassen von Entitätsansichten
 
 Entitätsansichten sind spezielle gespeicherte Abfragen, die Daten mithilfe eines spezifischen Filters abrufen. Sie enthalten auch Informationen dazu, wie die Daten in der Ansicht in der Anwendung angezeigt werden sollen. Entitätsansichten sind `SavedQuery`-Datensätze, die Sie programmgesteuert erstellen können. Sie können sie auch als XML definieren und mit einer nicht verwalteten Lösung importieren.  
@@ -263,7 +266,7 @@ System.String layoutXml =
   
  Sie werden wahrscheinlich benutzerdefinierte Symbole für einen Optionssatztyp von Attributen hinzufügen, da die vordefinierten Optionen begrenzt sind. Stellen Sie sicher, dass Sie den ganzzahligen Wert der Optionen anstelle der Beschriftung verwenden, um zu verhindern, dass der Code aufgrund der Änderung in der lokalisierten Beschriftungszeichenfolge unterbrochen wird. In der JavaScript-Funktion geben Sie einfach den Namen einer Bildwebressource an, die Sie als Symbol für einen Wert im Attribut verwenden möchten. Das Bild sollte von der Größe der Pixel 16x16 betragen; größere Bilder werden automatisch auf die Größe von 16x16 Pixel heruntergeschraubt.  
   
- Der folgende Beispielcode zeigt Symbole und Tooltiptexte auf Basis von drei Werten an (1: Hot, 2: Warm, 3: Cold) im Attribut `opportunityratingcode (Rating)` (Bewertung) an. Der Beispielcode zeigt auch, wie ein lokalisiertes Tooltip angezeigt wird. Damit dieses Beispiel funktioniert, müssen Sie drei Image-Webressourcen mit jeweils 16x16 Bildern (![Heiß Bewertungsschaltfläche](media/dynamics365hotgridicon.png "Heiß Bewertungsschaltfläche"), ![Warm Bewertungsschaltfläche](media/dynamics365warmgridicon.png "Warm Bewertungsschaltfläche")und ![Kalt Bewertungsschaltfläche](media/dynamics365coldgridicon.png "Kalt Bewertungsschaltfläche")) in Ihrer Instanz mit den folgenden Namen erstellen: `new_Hot`, `new_Warm` und `new_Cold`.  
+ Der folgende Beispielcode zeigt Symbole und Tooltiptexte auf Basis von drei Werten an (1: Hot, 2: Warm, 3: Cold) im Attribut `opportunityratingcode (Rating)` (Bewertung) an. Der Beispielcode zeigt auch, wie ein lokalisiertes Tooltip angezeigt wird. Damit dieses Beispiel funktioniert, müssen Sie drei Image-Webressourcen mit jeweils 16x16 Bildern (![Bewertungsschaltfläche Heiß](media/dynamics365hotgridicon.png "Bewertungsschaltfläche Heiß"), ![Bewertungssymbol Warm](media/dynamics365warmgridicon.png "Bewertungssymbol Warm") und ![Bewertungsschaltfläche Kalt](media/dynamics365coldgridicon.png "Bewertungsschaltfläche Kalt")) in Ihrer Instanz mit den folgenden Namen erstellen: `new_Hot`, `new_Warm`, und `new_Cold`.  
   
 ```javascript 
 function displayIconTooltip(rowData, userLCID) {      
@@ -317,7 +320,7 @@ function displayIconTooltip(rowData, userLCID) {
   
  Dies kann dazu führen, dass die Werte in der `Rating` Spalte mit entsprechenden Symbolen dargestellt werden, abhängig vom Wert und von Symbol Quickinfotext, wenn Sie über die Symbole fahren.  
   
- ![Benutzerdefinierte Symbole; die angezeigt werden für eine Spalte in einer Ansicht](media/customiconsinviews.png "Benutzerdefinierte Symbole; die angezeigt werden für eine Spalte in einer Ansicht")  
+ ![Benutzerdefinierte Symbole werden für eine Spalte in einer Ansicht angezeigt](media/customiconsinviews.png "Benutzerdefinierte Symbole werden für eine Spalte in einer Ansicht angezeigt")  
   
 <a name="BKMK_SetAsDefault"></a>   
 ## <a name="set-as-default"></a>Als Standard festlegen  

@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Abfragen der Arbeitszeit von mehreren Benutzern (Common Data Service) | Microsoft Docs'
-description: 'In diesem Beispiel wird gezeigt, wie die Arbeitszeit von mehrere Benutzern abgefragt wird'
+title: 'Beispiel: Abfragen der Arbeitszeit von mehreren Benutzern (Common Data Service) | Microsoft-Dokumentation'
+description: In diesem Beispiel wird gezeigt, wie die Arbeitszeit von mehrere Benutzern abgefragt wird
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c9c6b691312f9ed46a236e65d6b18b0bfc4f6894
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748732"
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>Beispiel: Abfragen der Arbeitszeit von mehreren Benutzern
 
@@ -21,7 +27,7 @@ search.app:
 
 Dieses Beispiel zeigt, wie Sie die Arbeitszeit von mehreren Benutzern mithilfe der Message [QueryMultipleSchedulesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9) abrufen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23) herunterladen.
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System vorhanden sind. Erstellen Sie den erforderlichen Benutzer manuell **wie dargestellt** unten in **Office 365**, bevor Sie sich das Beispiel ausführen. Ersetzen Sie `yourorg` durch den `OrgName` Ihrer Organisation.
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System vorhanden sind. Erstellen Sie den erforderlichen Benutzer manuell **wie besehen** (siehe unten) in **Office 365**, bevor Sie das Beispiel ausführen. Ersetzen Sie `yourorg` durch den `OrgName` Ihrer Organisation.
 
 **Vorname**: Kevin<br/>
 **Nachname**: Cook<br/>
@@ -43,7 +49,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="setup"></a>Einrichten
 
 1. Prüft auf aktuelle Version der Organisation.
-2. Ruft die Informationen des aktuellen Benutzers sowie des Benutzers ab, den Sie manuell in **Office 365** erstellt haben.
+2. Ruft die Informationen des aktuellen Benutzers sowie des Benutzers ab, den Sie manuell in **Office 365** erstellt haben.
 
 ### <a name="demonstrate"></a>Demonstrieren
 

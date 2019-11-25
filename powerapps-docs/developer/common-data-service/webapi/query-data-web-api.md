@@ -1,6 +1,6 @@
 ---
 title: Datenabfrage mit Web-API (Common Data Service)| Microsoft Docs
-description: 'Informieren Sie sich über die verschiedenen Methoden, Common Data Service-Daten mit Common Data Service-Web-API und verschiedenen System-Abfrageoptionen abzufragen, die in diesen Abfragen angewendet werden können'
+description: Informieren Sie sich über die verschiedenen Methoden, Common Data Service-Daten mit Common Data Service-Web-API und verschiedenen System-Abfrageoptionen abzufragen, die in diesen Abfragen angewendet werden können
 ms.custom: ''
 ms.date: 09/10/2019
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 61b958e6f08757154dba415ec59ca6f12e80fb5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753690"
 ---
 # <a name="query-data-using-the-web-api"></a>Datenabfrage mit Web-API
 
@@ -215,7 +221,7 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 |`( )`|Rangfolgengruppierung|`(contains(name,'sample') or contains(name,'test')) and revenue gt 5000`|  
   
 > [!NOTE]
->  Dies ist eine Teilmenge von [11.2.5.1.1 Integrierte Filtervorgänge](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). Arithmetische Operatoren und der Vergleich hat Operator werden von der Web-API nicht unterstützt.  
+>  Dies ist eine Teilmenge von [11.2.5.1.1 Integrierte Filtervorgänge](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). Arithmetische Operatoren und der Vergleich hat Operator werden von der Web-API nicht unterstützt.  
   
 <a name="bkmk_buildInQueryFunctions"></a>
 
@@ -230,7 +236,7 @@ Die Web API unterstützt diese Standardfunktionen der OData-Zeichenkettenabfrage
 |`startswith`|`$filter=startswith(name,'a')`|  
   
 > [!NOTE]
->  Dies ist eine Teilmenge von [11.2.5.1.2 Integrierte Abfragefunktionen](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` und andere String-Funktionen werden nicht in der Web-API unterstützt.  
+>  Dies ist eine Teilmenge von [11.2.5.1.2 Integrierte Abfragefunktionen](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html). `Date`, `Math`, `Type`, `Geo` und andere String-Funktionen werden nicht in der Web-API unterstützt.  
   
 ### <a name="common-data-service-web-api-query-functions"></a>Common Data ServiceWeb API Abfragefunktionen
  
@@ -478,7 +484,7 @@ Wenn Sie `$apply` verwenden, können Sie Ihre Daten dynamisch sammeln und gruppi
 
 Die Aggregatfunktionen werden auf eine Sammlung von 50.000 Datensätzen beschränkt.  Weitere Information zur Verwendung der Aggregatfunktion mit Common Data Service finden Sie hier: [Verwenden von FetchXML zum Erstellen einer Abfrage](../use-fetchxml-construct-query.md).
 
-Weitere Details zur OData-Datenaggregation finden Sie hier: [OData Erweiterung für Datenaggregation Version 4.0.](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)  Beachten Sie, dass Common Data Service nur eine Teilmenge dieser Aggregatmethoden unterstützt.
+Weitere Details zur OData-Datenaggregation finden Sie hier: [OData Erweiterung für Datenaggregation Version 4.0.](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)  Beachten Sie, dass Common Data Service nur eine Teilmenge dieser Aggregatmethoden unterstützt.
 
 
 <a name="bkmk_useParameterAliases"></a>

@@ -1,31 +1,36 @@
 ---
 title: Erstellen und Bearbeiten von öffentlichen Ansichten oder Systemansichten für modellgesteuerte Apps mit PowerApps | MicrosoftDocs
-description: 'Erfahren Sie jetzt, wie Ansichten mithilfe des App-Designers erstellt oder bearbeitet werden'
+description: Erfahren Sie jetzt, wie Ansichten mithilfe des App-Designers erstellt oder bearbeitet werden
 keywords: ''
 ms.date: 11/27/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 666ab3f3-abda-468c-b248-3a0b410286b0
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 1
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753888"
 ---
-
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>Erstellen und Bearbeiten von öffentlichen Ansichten oder Systemansichten für modellgesteuerte Apps
 
 In diesem Thema führen Sie mehrere Aufgaben aus, die erforderlich sind, um mit Ansichten zu arbeiten, z. B. Erstellen einer öffentliche Ansicht, Hinzufügen einer vorhandene Ansicht zu einer App und Ändern von Spalten, Filtern und der Sortierreihenfolge für eine Ansicht.
@@ -45,7 +50,7 @@ Weitere Informationen: [Grundlegendes zu Ansichten](create-edit-views.md)
 
 ## <a name="create-a-public-view-in-powerapps"></a>Erstellen einer öffentlichen Ansicht in PowerApps
 Als App-Entwickler können Sie öffentliche Ansichten mithilfe von PowerApps erstellen und bearbeiten.
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 
     > [!IMPORTANT]
@@ -85,7 +90,7 @@ Im Folgenden wird erläutert, wie Sie eine Ansicht im App-Designer öffnen und h
 
     In diesem Beispiel haben wir **Ansichten** der Entität **Firma** ausgewählt.
 
-    ![App-Designer-Ansicht](media/ViewAppDesigner_AccountAppDesignerView.png "App-Designer-Ansicht der Firmenentität")
+    ![App-Designer-Ansicht](media/ViewAppDesigner_AccountAppDesignerView.png "App-Designer-Ansicht der Entität Konto")
 
 3. Wenn eine Ansicht hinzugefügt werden soll, wählen Sie sie unter Verwendung von Ansichtstypen wie „Öffentlich, „Erweiterte Suche“, „Zugeordnet“ und „Suche“ aus. Die Ansicht wird der Liste **Ansichten** automatisch hinzugefügt.
 
@@ -113,13 +118,13 @@ Wenn Sie Attribute hinzufügen, ziehen Sie sie an eine Position unter den vorhan
 Sie können Filterkriterien festlegen, sodass nur eine Teilmenge der Datensätze in einer Ansicht angezeigt wird. Wenn ein Benutzer die Ansicht öffnet, werden nur Datensätze angezeigt, die den definierten Filterkriterien entsprechen. Sie können Felder der primären und der verknüpften Entitäten auswählen, nach denen gefiltert werden soll.
 1. Im App-Designer erweitern Sie den Abschnitt **Filterkriterien**.
    
-    ![Festlegen von Filterkriterien](media/ViewAppDesigner_FilterCriteria.png "Festlegen von Filterkriterien") 
+    ![Filterkriterien einstellen](media/ViewAppDesigner_FilterCriteria.png "Filterkriterien einstellen") 
 
 2. Wählen Sie **Filter hinzufügen** aus.
 3. Wählen Sie ein Attribut aus der Dropdownliste der ersten Spalte aus. 
 4. Wählen Sie einen Operator aus der Dropdownliste der zweiten Spalte aus.
 
-    ![Festlegen eines Operators für Filterkriterien](media/ViewAppDesigner_FilterCriteriaOption.png "Festlegen eines Operators für Filterkriterien")
+    ![Filterkriterienoperator einstellen](media/ViewAppDesigner_FilterCriteriaOption.png "Filterkriterienoperator einstellen")
 
 5. Geben Sie einen Wert für den Filter in der dritten Spalte ein.
 
@@ -137,9 +142,9 @@ Weitere Informationen: [Erstellen und Bearbeiten von Beziehungen zwischen Entit�
 Sie können der Ansicht mehrere Filter hinzufügen, wenn Sie Datensätze filtern möchten, indem Sie mehr als ein Feld verwenden. 
 
 1. Wählen Sie die zu gruppierenden Filter aus.
-    ![Festlegen von Gruppenfiltern](media/ViewAppDesigner_GroupFilter.png "Festlegen von Gruppenfiltern")
+    ![Gruppenfiltern einstellen](media/ViewAppDesigner_GroupFilter.png "SeGruppenfiltern einstellen
 2. Wählen Sie „Gruppieren Und“ oder „Gruppieren Oder“ aus, um die Filter zu gruppieren.
-    ![Gruppieren der Filterauswahl](media/ViewAppDesigner_GroupFilterSelection.png "Auswählen eines Gruppenfilters") Bei Auswahl von **Gruppieren Und** werden in der Ansicht nur Datensätze angezeigt, die beiden Kriterien entsprechen. Wenn Sie **Gruppieren Oder** auswählen, werden Datensätze, die eines der Filterkriterien erfüllen, angezeigt. Um beispielsweise nur Datensätze mit hoher oder normaler Priorität und dem Status „Aktiv“ anzuzeigen, wählen Sie **Gruppieren Und** aus.
+    ![Gruppenfilterauswahl](media/ViewAppDesigner_GroupFilterSelection.png "SeGruppenfilter auswählen Bei der Auswahl von **Gruppieren Und** werden in der Ansicht nur Datensätze angezeigt, die beiden Kriterien entsprechen. Wenn Sie **Gruppieren Oder** auswählen, werden Datensätze, die eines der Filterkriterien erfüllen, angezeigt. Um beispielsweise nur Datensätze mit hoher oder normaler Priorität und dem Status „Aktiv“ anzuzeigen, wählen Sie **Gruppieren Und** aus.
 
 Sie können Filter aus einer Gruppe entfernen, indem Sie die Gruppe auswählen und dann **Gruppierung aufheben** auswählen. 
 
@@ -167,7 +172,7 @@ Geben Sie eine Webressource des Skriptstyps an, die mit einer Spalte in der Ansi
 ### <a name="edit-a-public-or-system-view-in-app-designer"></a>Bearbeiten einer öffentlichen- oder einer Systemansicht im Anwendungs-Designer
 Sie können die Darstellung einer öffentlichen oder Systemansicht ändern, indem Spalten hinzugefügt, konfiguriert oder entfernt werden.
 1. Wählen Sie in der Liste **Ansichten** für eine Entität den Dropdownpfeil **Verweisliste anzeigen** ![Dropdown](media/DownArrow.png "Dropdownpfeil") aus.
-    ![Bearbeiten einer Ansicht](media/ViewAppDesigner_EditView.png "Bearbeiten einer öffentlichen Ansicht oder Systemansicht")
+    ![Ansicht bearbeiten](media/ViewAppDesigner_EditView.png "EdBearbeiten einer öffentlichen Ansicht oder Systemansicht
 2. Wählen Sie neben der zu bearbeitenden Ansicht die Option **Ansicht-Designer öffnen** ![Ansicht-Designer öffnen](media/dynamics365-open-designer.png "Ansicht-Designer öffnen") aus. 
 
     Die Ansicht wird im Ansicht-Designer geöffnet. 

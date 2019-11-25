@@ -1,19 +1,25 @@
 ---
-title: Rufen Sie eine Entität mithilfe des Organisationsservices ab (Common Data Service) | Microsoft Docs
-description: 'Beschreibt die Optionen, die verfügbar sind, wenn Sie einen Datensatz programmgesteuert abrufen'
+title: Abrufen einer Entität mit dem Organisationsdienst (Common Data Service) | Microsoft-Dokumentation
+description: Beschreibt die Optionen, die verfügbar sind, wenn Sie einen Datensatz programmgesteuert abrufen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cc24acb017ebf8ffacd69df6cb237fe2a24f34eb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748545"
 ---
 # <a name="retrieve-an-entity-using-the-organization-service"></a>Abrufen einer Entität mithilfe des Organisationsdienstes
 
@@ -26,14 +32,14 @@ Sie haben einige, um die Daten zu definieren, die zurückgegeben werden, wenn Si
 
 
 > [!IMPORTANT]
-> Wenn Sie Entitätsdatensätze abrufen, sollten Sie die Attributwerte abrufen, die Sie benötigen, um bestimmte Attribute mithilfe von <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> Klassenkonstruktor zu nutzen. Obwohl <xref:Microsoft.Xrm.Sdk.Query.ColumnSet>-Klassenkonstruktor eine Überladung bietet, die einem Booleschen Parameter`allColumns` annimmt, sollten Sie dies im Produktionscode nicht verwenden. Weitere Informationen: [Rufen Sie nicht alle Spalten einer Entität zur Abfrage von APIs ab](/dynamics365/customer-engagement/guidance/data/retrieve-specific-columns-entity-via-query-apis)
+> Wenn Sie Entitätsdatensätze abrufen, sollten Sie die Attributwerte abrufen, die Sie benötigen, um bestimmte Attribute mithilfe von <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> Klassenkonstruktor zu nutzen. Obwohl <xref:Microsoft.Xrm.Sdk.Query.ColumnSet>-Klassenkonstruktor eine Überladung bietet, die einem Booleschen Parameter `allColumns` annimmt, sollten Sie dies im Produktionscode nicht verwenden. Weitere Informationen: [Rufen Sie nicht alle Spalten einer Entität zur Abfrage von APIs ab](/dynamics365/customer-engagement/guidance/data/retrieve-specific-columns-entity-via-query-apis)
 
 Wenn Sie verknüpfte Entitäten zurückgebenmüssen, können Sie eine Abfrage mit Ihre abgerufenen Anforderung definieren, die die verknüpften Datensätze zurückgeben.
 
 
 ## <a name="basic-retrieve"></a>Grundlegende Abfragen
 
-Sie können einzelne Datensätze mithilfe von <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> abrufen Methode bzw. indem Sie die Eigenschaft <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.Target>-Klasse<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> auf einen Bezugsdatensatz festlegen und verwenden<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> Methode.
+Sie können einzelne Datensätze mithilfe von <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> abrufen Methode bzw. indem Sie die Eigenschaft <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.Target> der Klasse <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> auf einen Bezugsdatensatz festlegen und verwenden <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> Methode.
 
 Dies wird im folgenden Beispiel verdeutlicht <xref:Microsoft.Xrm.Sdk.IOrganizationService><xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> Methode.
 
@@ -42,7 +48,7 @@ Entity entity = svc.Retrieve("account", accountid, new ColumnSet("name"));
 Console.WriteLine("account name: {0}", entity["name"]);
 ```
 
-Dieses Beispiel zeigt Nutzung der <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> und<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> Klasse mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> Methode.
+Dieses Beispiel zeigt Nutzung der Klassen <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> und <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> Methode.
 
 ```csharp
 RetrieveRequest request = new RetrieveRequest()
@@ -56,7 +62,7 @@ Console.WriteLine("account name: {0}", entity["name"]);
 ```
 
 > [!NOTE]
-> Meistens verwenden Sie die <xref:Microsoft.Xrm.Sdk.IOrganizationService> <xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*>  Methode.
+> Meistens verwenden Sie die <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> Methode.
 >
 > Verwenden Sie die <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> mit der <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*>-Methode. Methode für spezielle Umstände, wie unten beschrieben. 
 > Weitere Informationen: 
@@ -66,11 +72,11 @@ Console.WriteLine("account name: {0}", entity["name"]);
 
 ## <a name="retrieve-with-related-records"></a>Abrufen von verknüpften Datensätzen aus
 
-Wenn Sie einen einzelnen Datensatz anzeigen, können Sie auch eine Abfrage darin aufnehmen, um verknüpfte Datensätze einzuschließen, indem Sie die angezeigten <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.RelatedEntitiesQuery> Eigenschaften von <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> festlegen.
+Wenn Sie einen einzelnen Datensatz anzeigen, können Sie auch eine Abfrage darin aufnehmen, um verknüpfte Datensätze einzuschließen, indem Sie die <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.RelatedEntitiesQuery> Eigenschaften von <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> festlegen.
 
 Sie können auch eine Abfrage mit der der Klassen definieren, die von erfolgt <xref:Microsoft.Xrm.Sdk.Query.QueryBase> und sie einer bestimmten Entitätsbeziehung zuordnen. Fügen Sie eine Sammlungvon Abfragen und Beziehungen der <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.RelatedEntitiesQuery>-Eigenschaft mithilfe einer <xref:Microsoft.Xrm.Sdk.RelationshipQueryCollection> hinzu.
 
-Das folgende Beispiel enthält `task` und `contact`Datensätze, die sich auf den Entitätsdatensatz `account` beziehen, der abgerufen wird.
+Das folgende Beispiel enthält `task` und `contact` Datensätze, die sich auf den Entitätsdatensatz `account` beziehen, der abgerufen wird.
 
 ```csharp
 
@@ -128,9 +134,9 @@ Weitere Informationen: [Abfdragedaten mit dem Organisationsdienst](entity-operat
 
 ## <a name="retrieve-with-an-alternate-key"></a>Abruf mit einem Alternativschlüssel
 
-Wenn Sie eine Entität konfiguriert haben, um einen Alternativschlüssel zu verwenden, können Sie diesen Alternativschlüssel verwenden, um einen zu<xref:Microsoft.Xrm.Sdk.EntityReference> definieren und diesen Wert als <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> den <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.Target> zu verabschieden. -Eigenschaft verfügbar.
+Wenn Sie eine Entität konfiguriert haben, um einen Alternativschlüssel zu verwenden, können Sie diesen Alternativschlüssel verwenden, um einen zu <xref:Microsoft.Xrm.Sdk.EntityReference> definieren und diesen Wert als <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest>.<xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest.Target> zu verabschieden. -Eigenschaft verfügbar.
 
-Wenn Sie zum Beispiel das Attribut `account``accountnumber`definieren, um ein Alternativschlüssel zu erhalten, können Sie ein Konto mithilfe des Werts dieses Attributs abrufen.
+Wenn Sie zum Beispiel das Attribut `account` `accountnumber` definieren, um ein Alternativschlüssel zu erhalten, können Sie ein Konto mithilfe des Werts dieses Attributs abrufen.
 
 
 ```csharp
@@ -168,7 +174,7 @@ Console.WriteLine(entity["name"]);
 
 ## <a name="access-formatted-values"></a>Zugriff formatierte Werte
 
-Die Methode, um formattierte Werte in einem Abrufensvorgang abzurufen ist gleich, wie wenn Sie auf die Ergebnisse in einer Abfrage zugreifen. Weitere Informationen:[Zugriff auf formattierte Werte](entity-operations-query-data.md#access-formatted-values)
+Die Methode, um formattierte Werte in einem Abrufensvorgang abzurufen ist gleich, wie wenn Sie auf die Ergebnisse in einer Abfrage zugreifen. Weitere Informationen: [Zugriff auf formatierte Werte](entity-operations-query-data.md#access-formatted-values)
 
 <!-- TODO Move the information about accessing formatted values here, where the topic is shorter rather than the query topic which is longer -->
 

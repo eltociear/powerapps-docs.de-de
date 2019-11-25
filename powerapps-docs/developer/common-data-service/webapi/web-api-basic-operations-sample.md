@@ -1,6 +1,6 @@
 ---
-title: Beispiel zu grundlegenden Web-API-Vorgängen (Common Data Service)| Microsoft Docs
-description: 'Diese Beispiele veranschaulichen, wie Sie CRUD-Operationen (Erstellen, Abrufen, Aktualisieren und Löschen) mithilfe der Web-API ausführen. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.'
+title: Beispiel grundlegender Web-API-Operationen (Common Data Service) | Microsoft-Dokumentation
+description: Diese Beispiele veranschaulichen, wie Sie CRUD-Operationen (Erstellen, Abrufen, Aktualisieren und Löschen) mithilfe der Web-API ausführen. Diese werden mithilfe clientseitigen JavaScripts und C# implementiert.
 ms.custom: ''
 ms.date: 03/22/2019
 ms.service: powerapps
@@ -8,22 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: f006f88c-74cb-4fde-90e5-e1faf2051673
 caps.latest.revision: 25
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bfcb86abc016ffa0fee9dd52385815f88983de66
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753650"
 ---
 # <a name="web-api-basic-operations-sample"></a>Beispiel grundlegender Web-API-Operationen
 
-Diese Gruppe von Beispielen veranschaulicht, wie Sie einfache CRUD-Vorgänge (Erstellen, Abrufen, Aktualisieren und Löschen) und assoziative Vorgänge mithilfe der Common Data Service-Web-API ausführen.  
+Diese Gruppe von Beispielen veranschaulicht, wie Sie einfach CRUD (Erstellen, abrufen, aktualisieren und löschen) und vereinigende Vorgänge mithilfe von Common Data Service Web API ausführen.  
   
 -   [Beispiel grundlegender Web-API-Operationen (C#)](samples/basic-operations-csharp.md)  
   
@@ -33,7 +39,7 @@ Diese Gruppe von Beispielen veranschaulicht, wie Sie einfache CRUD-Vorgänge (Er
  
 ## <a name="demonstrates"></a>Demonstriert  
 
-Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält Common Data Service-Web-API-Datenabfragen, Vorgänge, die in den entsprechenden Themenabschnitten detailliert behandelt werden.  
+Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält Common Data ServiceWeb-API-Datenabfragen, Vorgänge, die in den entsprechenden Themenabschnitten detailliert behandelt werden.  
   
 |Abschnitt Code .|Zugeordnete konzeptuelle Themen|  
 |------------------|----------------------------------|  
@@ -44,20 +50,20 @@ Dieses Beispiel wird in die folgenden Hauptabschnitte unterteilt und enthält Co
 |[Abschnitt 5: Löschungsentitäten (Beispielbereinigung)](#bkmk_section5)|[Grundlegende Löschung](update-delete-entities-using-web-api.md#bkmk_delete)|  
   
 > [!NOTE]
->  Der Kürze halber sind entsprechende HTTP-Kopfzeilen weggelassen worden. Die URLs der Datensätze unterscheiden sich infolge der Grundorganisationsadresse und der ID des Datensatzes, der durch Ihren "Common Data Service"-Server zugewiesen wird.  
+>  Der Kürze halber sind entsprechende HTTP-Kopfzeilen weggelassen worden. Die URIs der Datensätze unterscheiden sich bei der Grundorganisationsadresse und der ID des Datensatzes, der Ihnen durch Ihrem Common Data Service Server zugewiesen wird.  
   
 <a name="bkmk_section1"></a>
    
 ## <a name="section-1-basic-create-and-update-operations"></a>Abschnitt 1: Grundlegendes Erstellen und Aktualisieren von Vorgängen 
  
-Dieser Abschnitt erstellt einen einzelnen Kontakt und führt dann eine Reihe von Updates nach dieser Instanz aus. Beachten Sie, dass der Antwortheader [OData-EntityId](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793637) die URL für den neu erstellte Datensatz (Entitätsinstanz) enthält, der parenthetisch die eindeutige ID für den Datensatz enthält.  
+Dieser Abschnitt erstellt einen einzelnen Kontakt und führt dann eine Reihe von Updates nach dieser Instanz aus. Beachten Sie, dass der Antwortheader [OData-EntityId](https://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793637) die URL für den neu erstellte Datensatz (Entitätsinstanz) enthält, der parenthetisch die eindeutige ID für den Datensatz enthält.  
   
 1.  Erstellen Sie einen neuen Kontakt namens Peter Cambel.  
   
  **Anforderung** 
   
 ```http
-POST http://[Organization URI]/api/data/v9.0/contacts HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/contacts HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -72,7 +78,7 @@ OData-Version: 4.0
 ```http  
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-OData-EntityId: http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)  
+OData-EntityId: https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)  
 ```  
   
 **Konsolenausgabe**  
@@ -88,7 +94,7 @@ Die Eigenschaften, die für jeden Attributtyp verfügbar sind, werden im Metadat
  **Anforderung** 
   
 ```http  
-PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+PATCH https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -125,7 +131,7 @@ Contact 'Peter Cambel' updated with job title and annual income.
  **Anforderung** 
   
 ```http  
-GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,annualincome,jobtitle,description HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,annualincome,jobtitle,description HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -138,7 +144,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0  
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,annualincome,jobtitle,description)/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,annualincome,jobtitle,description)/$entity",  
    "@odata.etag":"W/\"628883\"",  
    "fullname":"Peter Cambel",  
    "annualincome":80000.0000,  
@@ -166,7 +172,7 @@ Contact 'Peter Cambel' retrieved:
 **Anforderung** 
   
 ```http
-PATCH http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+PATCH https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -200,7 +206,7 @@ Contact 'Peter Cambel' updated:
 **Anforderung** 
   
 ```http  
-PUT http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
+PUT https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -226,7 +232,7 @@ Contact 'Peter Cambel' phone number updated.
 **Anforderung** 
   
 ```http  
-GET http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1 HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -239,7 +245,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0  
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(60f77a42-5f0e-e611-80e0-00155da84c03)/telephone1",  
    "value":"555-0105"  
 }    
 ```  
@@ -255,7 +261,7 @@ Contact's telephone# is: 555-0105.
 **Anforderung** 
   
 ```http    
-POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
 OData-Version: 4.0  
 Content-Type: application/json; charset=utf-8  
 Prefer: return=representation  
@@ -276,7 +282,7 @@ Prefer: return=representation
  Preference-Applied: return=representation  
  OData-Version: 4.0  
  {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
  }    
  ```  
   
@@ -286,7 +292,7 @@ Prefer: return=representation
  Contact 'Peter_Alt Cambel' created:  
         Annual income: 80000  
         Job title: Junior Developer  
- Contact URI: http://[Organization URI]/api/data/v9.0/contacts(199250b7-6cbe-e611-80f7-00155da84c08)  
+ Contact URI: https://[Organization URI]/api/data/v9.0/contacts(199250b7-6cbe-e611-80f7-00155da84c08)  
  ```  
   
 8.  Diesen gleichen Kontakt updaten und auch die Instanzinformation im gleichen Vorgang zurückgeben. Diese Funktion wird durch die `Prefer: return=representation` Kopfzeile aktiviert.
@@ -294,7 +300,7 @@ Prefer: return=representation
  **Anforderung** 
   
  ```http    
- POST http://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
+ POST https://[Organization URI]/api/data/v9.0/contacts?$select=fullname,annualincome,jobtitle,contactid HTTP/1.1  
  OData-Version: 4.0  
  Content-Type: application/json; charset=utf-8  
  Prefer: return=representation  
@@ -315,7 +321,7 @@ Prefer: return=representation
  Preference-Applied: return=representation  
  OData-Version: 4.0  
  {  
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts/$entity","@odata.etag":"W/\"758870\"","_transactioncurrencyid_value":"0d4ed62e-95f7-e511-80d1-00155da84c03","annualincome":80000.0000,"contactid":"199250b7-6cbe-e611-80f7-00155da84c08","jobtitle":"Junior Developer","fullname":"Peter_Alt Cambel"  
  }    
  ```  
   
@@ -338,14 +344,14 @@ Dieser Abschnitt erstellt eine neue Firmeninstanz namens `Contoso, Ltd.` und ver
 **Anforderung** 
   
 ```http  
-POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 {  
   "name": "Contoso Inc",  
   "telephone1": "555-5555",  
-  "primarycontactid@odata.bind": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
+  "primarycontactid@odata.bind": "https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
 }    
 ```  
   
@@ -354,7 +360,7 @@ OData-Version: 4.0
 ```http    
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)    
+OData-EntityId: https://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)    
 ```  
   
 **Konsolenausgabe**  
@@ -368,7 +374,7 @@ Account 'Contoso Inc' created.
 **Anforderung** 
   
 ```http    
-GET http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0   
 ```  
@@ -380,7 +386,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0  
 {   
-       "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
+       "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
        "@odata.etag":"W/\"628886\"",  
        "name":"Contoso Inc",  
        "accountid":"65f77a42-5f0e-e611-80e0-00155da84c03",  
@@ -416,7 +422,7 @@ Dieser Abschnitt erstellt eine Firma, einen primären Kontakt und einen Reihe vo
  **Anforderung** 
   
  ```http    
- POST http://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
+ POST https://[Organization URI]/api/data/v9.0/accounts HTTP/1.1  
  Content-Type: application/json  
  OData-MaxVersion: 4.0  
  OData-Version: 4.0  
@@ -453,7 +459,7 @@ Dieser Abschnitt erstellt eine Firma, einen primären Kontakt und einen Reihe vo
 ```http    
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)    
+OData-EntityId: https://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)    
 ```  
   
 **Konsolenausgabe**  
@@ -467,7 +473,7 @@ Account 'Fourth Coffee' created.
 **Anforderung** 
   
 ```http    
-GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=primarycontactid($select=fullname,jobtitle,annualincome) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -480,7 +486,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0   
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(fullname,jobtitle,annualincome))/$entity",  
    "@odata.etag":"W/\"628902\"",  
    "name":"Fourth Coffee",  
    "accountid":"6af77a42-5f0e-e611-80e0-00155da84c03",  
@@ -508,7 +514,7 @@ Account 'Fourth Coffee' has primary contact 'Susie Curtis':
 **Anforderung** 
   
 ```http    
-GET http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,&$expand=Contact_Tasks($select=subject,description,scheduledstart,scheduledend) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03)?$select=fullname,&$expand=Contact_Tasks($select=subject,description,scheduledstart,scheduledend) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -521,7 +527,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0   
 {   
-    "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,Contact_Tasks,Contact_Tasks(subject,description,scheduledstart,scheduledend))/$entity",  
+    "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,Contact_Tasks,Contact_Tasks(subject,description,scheduledstart,scheduledend))/$entity",  
     "@odata.etag":"W/\"628892\"",  
     "fullname":"Susie Curtis",  
     "contactid":"6bf77a42-5f0e-e611-80e0-00155da84c03",  
@@ -585,12 +591,12 @@ In diesem Abschnitt wird gezeigt, wie vorhandene Entitätsinstanzen zugeordnet w
 **Anforderung** 
   
 ```http    
-POST http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 {  
-  "@odata.id": "http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
+  "@odata.id": "https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03)"  
 }    
 ```  
   
@@ -611,7 +617,7 @@ Contact 'Peter Cambel' associated to account 'Fourth Coffee'.
 **Anforderung** 
   
 ```http    
-GET http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts?$select=fullname,jobtitle HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts?$select=fullname,jobtitle HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -624,7 +630,7 @@ OData-Version: 4.0
     Content-Type: application/json; odata.metadata=minimal  
     OData-Version: 4.0   
     {  
-      "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle)","value":[  
+      "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#contacts(fullname,jobtitle)","value":[  
         {  
           "@odata.etag":"W/\"632481\"","fullname":"Peter Cambel","jobtitle":"Senior Developer","contactid":"00b6e0e2-b010-e611-80e1-00155da84c03"  
         }  
@@ -644,7 +650,7 @@ OData-Version: 4.0
  **Anforderung** 
   
 ```http    
-DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref?$id=http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03)/contact_customer_accounts/$ref?$id=https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -667,7 +673,7 @@ Contact 'Peter Cambel' dissociated from account 'Fourth Coffee'.
 **Anforderung** 
   
 ```http    
-POST http://[Organization URI]/api/data/v9.0/competitors HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/competitors HTTP/1.1  
     Content-Type: application/json  
     OData-MaxVersion: 4.0  
     OData-Version: 4.0  
@@ -682,7 +688,7 @@ POST http://[Organization URI]/api/data/v9.0/competitors HTTP/1.1
 ```http    
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-OData-EntityId: http://[Organization URI]/api/data/v9.0/accounts(77f77a42-5f0e-e611-80e0-00155da84c03)    
+OData-EntityId: https://[Organization URI]/api/data/v9.0/accounts(77f77a42-5f0e-e611-80e0-00155da84c03)    
 ```  
   
 **Konsolenausgabe**  
@@ -696,7 +702,7 @@ Competitor 'Adventure Works' created.
 **Anforderung** 
   
 ```http    
-POST http://[Organization URI]/api/data/v9.0/opportunities HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/opportunities HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -711,7 +717,7 @@ OData-Version: 4.0
 ```http    
 HTTP/1.1 204 No Content  
 OData-Version: 4.0  
-OData-EntityId: http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)    
+OData-EntityId: https://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)    
 ```  
   
 **Konsolenausgabe**  
@@ -725,12 +731,12 @@ Opportunity 'River rafting adventure' created.
 **Anforderung** 
   
 ```http    
-POST http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref HTTP/1.1  
+POST https://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 {  
-  "@odata.id": "http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)"  
+  "@odata.id": "https://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)"  
 }    
 ```  
   
@@ -751,7 +757,7 @@ Opportunity 'River rafting adventure' associated with competitor 'Adventure Work
  **Anforderung** 
   
 ```http    
-GET http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=opportunitycompetitors_association($select=name,description) HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03)?$select=name,&$expand=opportunitycompetitors_association($select=name,description) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -762,7 +768,7 @@ OData-Version: 4.0
 ```http    
 HTTP/1.1 200 OK  
 {   
-   "@odata.context":"http://[Organization URI]/api/data/v9.0/$metadata#competitors(name,opportunitycompetitors_association,opportunitycompetitors_association(name,description))/$entity",  
+   "@odata.context":"https://[Organization URI]/api/data/v9.0/$metadata#competitors(name,opportunitycompetitors_association,opportunitycompetitors_association(name,description))/$entity",  
    "@odata.etag":"W/\"628913\"",  
    "name":"Adventure Works",  
    "competitorid":"77f77a42-5f0e-e611-80e0-00155da84c03",  
@@ -790,7 +796,7 @@ Competitor 'Adventure Works' has the following opportunities:
 **Anforderung** 
   
 ```http    
-DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref?$id=http://[Token-CRM-Org-Name]/Contoso/api/data/v8.1/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03)/opportunitycompetitors_association/$ref?$id=https://[Token-CRM-Org-Name]/Contoso/api/data/v8.1/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -820,7 +826,7 @@ This section demonstrates how to delete entity instances. The corresponding mess
 **Anforderung** 
   
 ```http
-DELETE http://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/contacts(60f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 Content-Type: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0    
@@ -837,25 +843,25 @@ HTTP/1.1 204 No Content
 **Anforderung** 
   
 ```http    
-DELETE http://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/accounts(65f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 . . .  
   
-DELETE http://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/accounts(6af77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 . . .  
   
-DELETE http://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/contacts(6bf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 . . .  
   
-DELETE http://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/competitors(77f77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 . . .  
   
-DELETE http://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
+DELETE https://[Organization URI]/api/data/v9.0/opportunities(7cf77a42-5f0e-e611-80e0-00155da84c03) HTTP/1.1  
 . . .    
 ```  
   
 ### <a name="see-also"></a>Siehe auch  
 
-[Common Data Service-Web-API verwenden](overview.md)<br />
+[Verwenden der Common Data Service-Web-API](overview.md)<br />
 [Erstellen einer Entität mithilfe des Web-API](create-entity-web-api.md)<br />
 [Abrufen einer Entität mithilfe des Web-API](retrieve-entity-using-web-api.md)<br />
 [Entitäten aktualisieren und löschen mithilfe der Web API](update-delete-entities-using-web-api.md)<br />

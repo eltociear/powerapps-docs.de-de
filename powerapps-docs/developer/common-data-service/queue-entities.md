@@ -1,6 +1,6 @@
 ---
-title: Warteschlagen-Entitäten (Common Data Service) | Microsoft Docs
-description: 'Mithilfe von Warteschlangen in PowerApps können Sie den Fortschritt Ihrer Arbeit organisieren, priorisieren und überwachen.'
+title: Warteschlangenentitäten (Common Data Service) | Microsoft-Dokumentation
+description: Warteschlangen in PowerApps sind wichtig, um den Fortschritt Ihrer Arbeit organisieren, priorisieren und überwachen zu können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6452dd50cb54e1c7c3aa5a57b9d7751ba9f13af7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748661"
 ---
 # <a name="queue-entities"></a>Warteschlangenentitäten
 
@@ -72,7 +78,7 @@ Für Warteschlangen gelten die folgenden Informationen:
 ## <a name="enable-entities-for-queues"></a>Aktivieren von Entitäten für Warteschlangen  
  Um eine anpassbare Entität (`EntityMetadata.IsCustomizable = true`) für Warteschlangen zu aktivieren, verwenden Sie die Meldung <xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest>, um das Attribut <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsValidForQueue> auf `true` festzulegen. Die Warteschlangenentität und die Warteschlangenelemententität sind anpassbare Entitäten, trotzdem können sie für Warteschlangen nicht aktiviert werden.  
   
- Die folgende Liste enthält die warteschlangenfähigen Entitäten in Common Data Service:  
+ Die folgende Liste enthält standardmäßige für die Verwendung in Warteschlangen aktivierte Entitäten in Common Data Service:  
   
 -   Termin  
   
@@ -80,9 +86,9 @@ Für Warteschlangen gelten die folgenden Informationen:
   
 -   CampaignResponse  
   
--   E-Mail  
+-   Per E-Mail senden  
   
--   Fax  
+-   Faxnummer  
   
 -   Vorfall  
   

@@ -1,24 +1,27 @@
 ---
 title: Passen Sie Befehle und Menüband an (modellgesteuerte Apps) | Microsoft Docs
-description: 'Befehle werden in Common Data Service in unterschiedlicher Weise abhängig von der Entität und dem Client angezeigt. An den meisten Stellen in der Webanwendung wird eine Befehlsleiste anstelle eines Menübands angezeigt. Dynamics 365 for tablets verwendet auch Daten, die als Menübänder definiert sind, um zu steuern, welche Befehle auf einer für Toucheingabe optimierten Befehlsleiste verfügbar sind.'
+description: Befehle werden in Common Data Service in unterschiedlicher Weise abhängig von der Entität und dem Client angezeigt. An den meisten Stellen in der Webanwendung wird eine Befehlsleiste anstelle eines Menübands angezeigt. Dynamics 365 für Tablets verwendet auch Daten, die als Menübänder definiert sind, um zu steuern, welche Befehle auf einer für Toucheingabe optimierten Befehlsleiste verfügbar sind.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 926364b0-ede6-00e9-39d4-5aae5e00be0b
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 508ea8788f0fbaf9823721958229c3ed3cd21d55
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754583"
 ---
-
 # <a name="customize-commands-and-the-ribbon"></a>Passen Sie Befehle und das Menüband an
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
@@ -36,11 +39,11 @@ search.app:
   
  Das SDK beschreibt den Vorgang zum Bearbeiten des Menübands durch direkte Bearbeitung der Datei customization.xml. Einige Benutzer haben Ribbon-Editoren erstellt, die eine Benutzeroberfläche bieten, die das Bearbeiten des Menübands vereinfacht. Gegenwärtig sind die folgenden Projekte u. a auf Codeplex verfügbar:  
   
-- [Menüband-Workbench](http://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
+- [Menüband-Workbench](https://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
   
-- [MS CRM 2011: Pragma-Toolkit: Menüband, Siteübersichtseditor](http://pragmatoolkit.codeplex.com/)  
+- [MS CRM 2011: Pragma-Toolkit: Menüband, Siteübersichtseditor](https://pragmatoolkit.codeplex.com/)  
   
-- [Visueller Ribbon-Editor für CRM 2011](http://crmvisualribbonedit.codeplex.com/)  
+- [Visueller Ribbon-Editor für CRM 2011](https://crmvisualribbonedit.codeplex.com/)  
   
   Um Support oder Hilfe für die Verwendung der Software zu erhalten, setzen Sie sich mit dem Programmherausgeber in Verbindung.  
   

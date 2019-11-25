@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Erkennen von Mehrfachduplikat-Datensätzen (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie mehrere doppelte Datensätze für einen angegebenen Entitätstyp erkannt und protokolliert werden können.'
+title: 'Beispiel: Erkennen von mehreren doppelten Datensätzen (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel veranschaulicht, wie mehrere doppelte Datensätze für einen angegebenen Entitätstyp erkannt und protokolliert werden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0d9d5ae89e3e54224bc72fb32e951661c439133
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748375"
 ---
 # <a name="sample-detect-multiple-duplicate-records"></a>Beispiel: Erkennen von mehreren doppelten Datensätzen
 
@@ -36,7 +42,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Prüft auf aktuelle Version der Organisation.
 1. Die `CreateRequiredRecords`-Klasse erstellt einige Duplikatentitätsdatensätze für dieses Beispiel.
 1. Die `DuplicateRule`-Methode erstellt eine Duplikaterkennungsregel.
-1. Die `DuplicateRuleCondition`-Methode erstellt eine -Regelbedingung zum Erkennen von Duplikatsdatensätzen.
+1. Die `DuplicateRuleCondition`-Methode erstellt eine Regelbedingung zum Erkennen von Duplikatsdatensätzen.
 1. Die `PublishDuplicateRuleRequest`-Methode veröffentlicht die Duplikaterkennungsregel.
 1. Die `PublishDuplicateRuleRequest` wird zurückgegeben, bevor die Veröffentlichung abgeschlossen ist, daher rufen wir den Zustand des asynchronen Auftrags so lange ab, bis er `Completed` ist.
 

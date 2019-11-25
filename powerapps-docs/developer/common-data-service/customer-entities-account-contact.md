@@ -1,6 +1,6 @@
 ---
-title: 'Kundenentitäten (Firma, Kontakt) (Common Data Service) | Microsoft Docs'
-description: 'Die Entitäten Firma und Kontakt in Dynamics 365 werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine Kundenadressenentität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.'
+title: Kundenentitäten (Firma, Kontakt) (Common Data Service) | Microsoft-Dokumentation
+description: Die Entitäten Firma und Kontakt in Dynamics 365 werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine Kundenadressenentität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48a9f4e8a18fcf6db639e2a17c21779fa8de90c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748422"
 ---
 # <a name="customer-entities-account-contact"></a>Kundenentitäten (Firma, Kontakt)
 
@@ -26,11 +32,11 @@ Refactor so that the links to entity reference are in the body, not just in the 
 Add some h2 sections so it is skimmable
  -->
 
-Die Entitäten *Firma* und *Kontakt* in Common Data Service werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine *Kundenadressen*entität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.  
+Die Entitäten *Firma* und *Kontakt* in Common Data Service werden für das Identifizieren und Verwalten von Kunden, für den Verkauf von Produkten und Services und für die Bereitstellung eines hervorragenden Kundenservice benötigt. Eine *Kundenadressen* Entität wird verwendet, um die Adresse und Lieferinformationen für einen Kunden zu speichern.  
   
 ## <a name="account-entity"></a>Firmenentität
  
-Die Firmenentität ist eine der Entitäten in Common Data Service, denen die meisten anderen Entitäten angefügt oder untergeordnet werden. In Common Data Service steht eine Firma für ein Unternehmen, mit dem die Unternehmenseinheit eine Geschäftsbeziehung unterhält. Informationen, die zu einer Firma erfasst werden, sind alle relevanten Kontaktinformationen, Unternehmensinformationen, Kategorien, Beziehungstypen und Adresseinformationen. Weitere Informationen, die verwendet werden können, sind die folgenden Elemente:  
+Die der Firmenentität ist eine der Entitäten in Common Data Service, denen die meisten anderen Entitäten angefügt oder untergeordnet werden. In Common Data Service steht eine Firma für ein Unternehmen, mit dem die Unternehmenseinheit eine Geschäftsbeziehung unterhält. Informationen, die zu einer Firma erfasst werden, sind alle relevanten Kontaktinformationen, Unternehmensinformationen, Kategorien, Beziehungstypen und Adresseinformationen. Weitere Informationen, die verwendet werden können, sind die folgenden Elemente:  
   
 - Eine Firma kann fast jeder anderen Entität übergeordnet sein. Hierzu zählt auch eine andere Firma.  
   

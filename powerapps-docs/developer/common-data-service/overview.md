@@ -1,6 +1,6 @@
 ---
 title: Common Data Service Entwicklerhandbuch | Microsoft Docs
-description: 'Erfahren Sie, wie Entwickler mit Common Data Service Mehrwert schaffen können.'
+description: Erfahren Sie, wie Entwickler mit Common Data Service Mehrwert schaffen können.
 author: JimDaly
 manager: annbe
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.date: 03/27/2019
 ms.author: jdaly
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41eb896c56809d1ceb289e86ee427f7a1b9f18db
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748668"
 ---
-
 # <a name="common-data-service-developer-guide"></a>Common Data Service Entwicklerhandbuch
 
 PowerApps bietet Anwendern, Unternehmen, unabhängigen Softwareanbietern (ISVs) und Systemintegratoren (SIs) eine leistungsstarke Plattform für den Aufbau von Branchenanwendungen. **Common Data Service** ist die zugrunde liegende Datenplattform für PowerApps, die die Kernfunktionalitäten wie serverseitige Logik (Plugins und Workflows), Geschäftsprozessabläufe, ein hoch entwickeltes Sicherheitsmodell und eine erweiterbare Plattform für Entwickler zum Erstellen von Anwendungen enthält. 

@@ -1,11 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory (Common Data Service) | Microsoft Docs'
-description: 'In dieser exemplarischen Vorgehensweise wird beschrieben, wie eine Desktop-Client- oder Smartphone-Anwendung in Azure Active Directory registriert wird, damit sie eine Verbindung mit der Common Data Service-Umgebung herstellen, sich per OAuth authentifizieren und auf Webdienste zugreifen kann.'
+description: In dieser exemplarischen Vorgehensweise wird beschrieben, wie eine Desktop-Client- oder Smartphone-Anwendung in Azure Active Directory registriert wird, damit sie eine Verbindung mit der Common Data Service-Umgebung herstellen, sich per OAuth authentifizieren und auf Webdienste zugreifen kann.
 keywords: ''
 ms.date: 04/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 86c4a8a8-7401-6d75-7979-3b04b506eb0c
 author: paulliew
@@ -13,15 +11,20 @@ ms.author: jdaly
 manager: ryjones
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 79773316bd5ff4e6d2652e7dfae53add0a782dc3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748619"
 ---
-
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>Exemplarische Vorgehensweise: Registrieren einer App mit Azure Active Directory
 
-In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine Anwendung mit Azure Active Directory registrieren, wodurch ein Benutzer mit einem PowerApps-Benutzerkonto eine Verbindung mit seiner Common Data Service-Umgebung von externen Client-Anwendungen aus mithilfe einer OAuth-Authentifizierung herstellen kann.
+In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine Anwendung mit Azure Active Directory registrieren, wodurch ein Benutzer mit einem PowerApps-Benutzerkonto eine Verbindung mit seiner Common Data Service-Umgebung von externen Client-Anwendungen aus mit Hilfe einer OAuth-Authentifizierung herstellen kann.
 
 > [!IMPORTANT]
 > PowerApps bietet Ihnen auch die Möglichkeit der Server-to-Server (S2S)-Authentifizierung, um eine Verbindung zur Common Data Service-Umgebung von externen Anwendungen und Diensten über das spezielle Anwendungsbenutzerkonto herzustellen. Die S2S-Authentifizierung ist der normale Weg, über den bei Microsoft AppSource registrierte Apps auf die Daten der Abonnenten zugreifen. Weitere Informationen finden Sie unter: [Webanwendungen mit der Server-zu-Server-(S2S)-Authentifizierung erstellen.](build-web-applications-server-server-s2s-authentication.md).
@@ -41,11 +44,11 @@ Die App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzel
 1. Melden Sie sich beim [Azure-Portal](https://go.microsoft.com/fwlink/?linkid=2083908) mit einem Konto mit Administratorrechten an. Sie müssen ein Konto im gleichen Office 365-Abonnement (Mandant) verwenden, in dem Sie auch die App registrieren möchten. Sie können das Azure-Portal auch über die Schaltfläche Office 365 [Admin Center](https://admin.microsoft.com/adminportal) aufrufen, indem Sie das Element **Admin Center** im linken Navigationsbereich erweitern und **Azure Active Directory** auswählen.  
   
    > [!NOTE]
-   > Wenn Sie keinen Azure-Mandaten (Konto) haben oder wenn Sie einen haben, aber Ihr Office365-Abonnement mit Common Data Service in Ihrem Azure-Abonnement nicht verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für Ihre Entwicklerseite](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment), um die beiden Konten zu verbinden.<br><br> Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](http://azure.microsoft.com/pricing/details/active-directory/)  
+   > Wenn Sie keinen Azure-Mandaten (Konto) haben oder wenn Sie einen haben, aber Ihr Office365-Abonnement mit Common Data Service in Ihrem Azure-Abonnement nicht verfügbar ist, folgen Sie den Anweisungen im Thema [Einrichten des Azure Active Directory-Zugriffs für Ihre Entwicklerseite](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment), um die beiden Konten zu verbinden.<br><br> Wenn Sie kein Konto haben, können Sie sich für eines anmelden, indem Sie eine Kreditkarte verwenden. Allerdings ist das Konto kostenlos für die Anwendungsregistrierung, und Ihre Kreditkarte wird nicht belastet, wenn Sie nur den Vorgehensweisen folgen, die in diesem Thema genannt werden, um mindestens eine App zu registrieren. Weitere Informationen: [Active Directory-Preisberechnungsdetails](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 2. Wählen Sie im Azure-Portal im linken Bereich **Azure Active Directory** und wählen Sie **App-Registrierungen** und klicken Sie auf **Neue Registrierung**.
     
-    ![Azure App Registrierung](media/azure-app-registrations-page.png "Azure App Registrierung")  
+    ![Azure-App-Registrierung](media/azure-app-registrations-page.png "Azure-App-Registrierung")  
 
 3. Geben Sie unter **Registrieren einer Anmeldeseite** die Registrierungsinformationen Ihrer Anmeldung ein:
    - Geben Sie im Abschnitt **Name** einen aussagekräftigen Anwendungsnamen ein, der den Benutzern angezeigt wird.
@@ -53,15 +56,15 @@ Die App-Registrierung kann auch von einem Anwendungsentwickler oder einem einzel
    - Legen Sie die **Redirect URI** fest.
    - Klicken Sie auf **Registrieren**, um die Anwendung zu erstellen.
 
-      ![Neue App-Registrierungsseite](media/new-app-registration-page.png "Neue App-Registrierungsseite")
+      ![Seite „Neue App-Registrierung“](media/new-app-registration-page.png "Seite „Neue App-Registrierung“")
 
 5. Bewegen Sie auf der Seite App-**Übersicht** den Mauszeiger über den Wert **Anwendungs-ID (Client)** und wählen Sie das Symbol **In die Zwischenablage kopieren**, um den Wert zu kopieren, da Sie dies gegebenenfalls im Authentifizierungscode Ihrer Anwendung oder in der app.config-Datei angeben müssen.
 
     ![Anwendungs-ID kopieren](media/app-registration-overview-page.png "Anwendungs-ID kopieren")
   
-5. Wählen Sie die Registerkarte **Manifest**, setzen Sie im Manifest Editor die Eigenschaft *allowPublicClient** auf **true** und klicken Sie auf **Speichern**.
+5. Wählen Sie die Registerkarte **Manifest**, setzen Sie im Manifest Editor die Eigenschaft **allowPublicClient** auf **true** und klicken Sie auf **Speichern**.
    
-    ![App Registrierung Manifest](media/app-registration-manifest-page.png "App Registrierung Manifest")
+    ![App-Registrierungsmanifest](media/app-registration-manifest-page.png "App-Registrierungsmanifest")
 
 6. Wählen Sie die Registerkarte **API-Berechtigungen**, klicken Sie auf **Eine Berechtigung hinzufügen**. 
 

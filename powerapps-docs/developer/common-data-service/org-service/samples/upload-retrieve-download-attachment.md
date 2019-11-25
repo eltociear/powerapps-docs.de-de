@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie Sie eine Anlage hochladen, abrufen und herunterladen.'
+title: 'Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel veranschaulicht, wie Sie eine Anlage hochladen, abrufen und herunterladen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 51496631551d87b269030a07ed482584b3c93ece
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748706"
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>Beispiel: Hochladen, Abrufen und Herunterladen einer Anlage
 

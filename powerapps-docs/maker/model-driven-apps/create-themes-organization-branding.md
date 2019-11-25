@@ -1,5 +1,5 @@
 ---
-title: 'Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend der Marke Ihrer Organisation  | MicrosoftDocs'
+title: Ändern Sie das Farbschema oder fügen Sie ein Logo hinzu, entsprechend der Marke Ihrer Organisation  | MicrosoftDocs
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
@@ -13,10 +13,16 @@ caps.latest.revision: 17
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1aae7d51b22939f84478ad0537ef9285daf7631
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753812"
 ---
 # <a name="create-a-theme"></a>Erstellen eines Designs
 
@@ -68,7 +74,7 @@ Sie können ein angepasstes Erscheinungsbild (ein Design) für Ihre App erstelle
 ## <a name="copy-and-alter-the-existing-theme"></a>Kopieren und Ändern des vorhandenen Designs  
  Der einfachste und schnellste Weg, ein neues Design zu erstellen, ist, ein vorhandenes Design zu klonen und zu ändern, es dann zu speichern, eine Vorschau anzuzeigen und es zu veröffentlichen. 
  
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 2.  Wählen Sie **Modellgesteuert** (unten links) aus. 
 
@@ -88,7 +94,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
  Im folgenden Screenshot wird die neue Navigationsfarbe angezeigt.  
  
  > [!div class="mx-imgBorder"] 
- > ![Leicht grüne Designfarben](media/theme-gentle-green.png "Leicht grüne Designfarben")  
+ > ![Leichte grüne Designfarben](media/theme-gentle-green.png "Leichte grüne Designfarben")  
   
  Im folgenden Screenshot wird das Firmaenentitätsraster mit der neuen Hervorhebungsfarbe angezeigt.  
  
@@ -107,7 +113,7 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
   
  Im folgenden Screenshot werden die Schaltflächen der Befehlsleiste für die Vorschau und die Veröffentlichung angezeigt.  
   
- ![Verwenden Sie die Vorschauschaltflächen, um den Vorschaumodus zu aktivieren/verlassen](media/themes-preview-buttons.PNG "Verwenden Sie die Vorschauschaltflächen, um den Vorschaumodus zu aktivieren/verlassen")  
+ ![Vorschauschaltflächen zum Aufrufen/Verlassen des Vorschaumodus verwenden](media/themes-preview-buttons.PNG "Vorschauschaltflächen zum Aufrufen/Verlassen des Vorschaumodus verwenden")  
   
 <a name="BestPracticies"></a>   
 ## <a name="best-practices"></a>Bewährte Methoden  
@@ -143,5 +149,5 @@ Der folgende Screenshot enthält einen Teil des standardmäßige Designsetup.
   
 ## <a name="see-also"></a>Siehe auch  
          
- [Video: Designs](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Abfragen und Bearbeiten eines Organisationsdesigns](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Video: Designs](https://go.microsoft.com/fwlink/p/?LinkId=529568) [Abfragen und Bearbeiten eines Organisationsdesigns](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Exchange-Nachverfolgung auf Ordnerebene (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie die Regeln für die Exchange-Nachverfolgung auf Ordnerebene zu konfigurieren.'
+title: Regeln für die Exchange-Nachverfolgung auf Ordnerebene konfigurieren (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie die Regeln für die Exchange-Nachverfolgung auf Ordnerebene zu konfigurieren.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 09b7d273968f2d37b45ca5210924546a8bee6cd9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748574"
 ---
 # <a name="configure-exchange-folder-level-tracking-rules"></a>Konfigurieren der Regeln für die Nachverfolgung auf Ordnerebene
 
-Konfigurieren Sie Nachverfolgung auf Ordnerebene, um einen Microsoft Exchange Posteingangsordner einem Datensatz des Common Data Service zuzuordnen, so dass alle E-Mails im Microsoft Exchange-Ordner automatisch mit dem zugeordneten Datensatz in Common Data Service verglichen werden. Nachverfolgung von E-Mails auf Ordnerebene funktioniert nur, wenn Folgendes zutrifft:  
+Konfigurieren Sie Regeln für die Nachverfolgung auf Ordnerebene, um einen Microsoft Exchange-Posteingangsorder einem Common Data Service-Datensatz zuzuordnen, damit alle E-Mails im Microsoft Exchange-Ordner automatisch für den zugeordneten Datensatz in Common Data Service nachverfolgt werden. Nachverfolgung von E-Mails auf Ordnerebene funktioniert nur, wenn Folgendes zutrifft:  
 
 - Die Nachverfolgungsfunktion auf Ordnerebene für Ihre Common Data Service-Instanz ist aktiviert. Sie können Nachverfolgung auf Ordnerebene aktivieren, indem Sie den Webclient oder Dynamics 365 for Outlook verwenden. Weitere Informationen: [Nachverfolgung auf Ordnerebene konfigurieren](/dynamics365/customer-engagement/admin/configure-outlook-exchange-folder-level-tracking)  
 
@@ -58,7 +64,7 @@ Console.WriteLine("Created folder-level tracking rule for '{0}'.\n", _mailboxNam
 
  Sie können ein Maximum von 25 Nachverfolgungsregeln auf Ordnerebene pro Postfach erstellen. Die Ordner-ID des Microsoft Exchange-Ordners kann zum Zeitpunkt des Erstellens der Zuordnung mithilfe des SDK nicht überprüft werden. Sobald Sie jedoch eine Zuordnungsregel erstellen und wenn die Ordner-ID ungültig ist, wird Sie in der Benutzeroberfläche in Common Data Service angezeigt, um anzugeben, dass die Zuordnung ungültig ist.  
 
- Alle manuellen Änderungen am Bezugs-Objekt in den nachverfolgten Aktivitätsdatensätzen, die in Common Data Service infolge der Nachverfolgungsregel auf Ordnerebene erstellt werden, werden bei der nächsten serverseitigen Synchronisierung überschrieben. Wenn Sie beispielsweise eine Zuordnung zwischen dem Ordner `Adventure Works` und der Firma `Adventure Works` erstellt haben, werden alle E-Mails im `Adventure Works`-Microsoft Exchange-Ordner als Aktivitäten in Common Data Service nachverfolgt, wobei der Bezug auf den Firmendatensatz `Adventure Works` festgelegt wird. Wenn Sie den Bezug einiger Aktivtäten in einen anderen Datensatz ändern, wird er automatisch bei der nächsten serverseitigen Synchronisierung überschrieben.  
+ Alle manuellen Änderungen am Bezugs-Objekt in den nachverfolgten Aktivitätsdatensätzen, die in Common Data Service infolge der Nachverfolgungsregel auf Ordnerebene erstellt werden, werden bei der nächsten serverseitigen Synchronisierung überschrieben. Wenn Sie beispielsweise eine Zuordnung zwischen dem `Adventure Works`-Ordner und dem `Adventure Works`-Konto erstellt haben, werden alle E-Mails im `Adventure Works`Microsoft Exchange-Ordner als Aktivitäten in Common Data Service nachverfolgt, wobei der Bezug auf den `Adventure Works`-Kontodatensatz festgelegt wird. Wenn Sie den Bezug einiger Aktivtäten in einen anderen Datensatz ändern, wird er automatisch bei der nächsten serverseitigen Synchronisierung überschrieben.  
 
 <a name="Retrieve"></a>   
 

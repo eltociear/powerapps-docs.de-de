@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen (Common Data Service) | Microsoft Docs
-description: 'Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.'
+description: Ein Plug-In ist eine .NET-Assembly, die Sie zum Common Data Service hochladen können. Klassen innerhalb der Assemblys können für bestimmte Ereignisse (Schritte) innerhalb des Ereignisframeworks registriert werden. Der Code innerhalb der Klasse bietet Ihnen eine Möglichkeit, auf das Ereignis zu reagieren, sodass Sie das Standardverhalten der Plattform erweitern oder ändern können.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: phecke
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 110a530c25c7f7e502c26da18bf2f473d53b6673
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748665"
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>Verwenden von Plug-Ins zur Erweiterung von Geschäftsprozessen
 

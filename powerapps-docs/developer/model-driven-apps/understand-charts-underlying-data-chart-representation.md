@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a1e3e41e35d3d4a20e0234269ba66e2ec26942da
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754555"
 ---
 # <a name="understand-charts-underlying-data-and-chart-representation"></a>Diagramme verstehen: Zugrunde liegende Daten und Diagrammdarstellung
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/understand-charts-underlying-data-chart-representation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/understand-charts-underlying-data-chart-representation -->
 
 Diagramme zeigen Daten visuell durch Zuordnen von Textwerten auf Achsen: horizontal (X) und vertikal (Y). Die x-Achse wird als *Kategorieachse* bezeichnet und die y-Achse wird als *Reihenachse* bezeichnet. Die Kategorieachse kann numerische und nicht-numerischen Werte anzeigen, während die Reihenachse nur numerische Werte anzeigt.  
   
@@ -89,7 +95,7 @@ Diagramme zeigen Daten visuell durch Zuordnen von Textwerten auf Achsen: horizon
  Weitere Beispieldatenbeschreibung-XML-Zeichenfolgen finden Sie unter [Beispieldiagramme](sample-charts.md).  
   
 ## <a name="use-the-presentation-description-xml-string-to-specify-data-representation"></a>Verwenden Sie die Präsentationsbeschreibungs-XML-Zeichenfolge, um die Datenrepräsentation festzulegen.  
- Die Präsentationsbeschreibungs-XML-Zeichenfolge enthält Informationen zur Darstellung des Diagramms, wie Diagrammfarbe, Diagrammtitel und Diagrammtyp (Balken, Spalte, Zeile usw.). Es gibt keine Schemadefinition für diese XML-Zeichenfolge. XML ist jedoch eine Serialisierung der [Diagramm](https://msdn.microsoft.com/library/system.web.ui.datavisualization.charting.chart.aspx)-Klasse in Microsoft Chart Controls. Weitere Informationen: [Chart Controls](http://go.microsoft.com/fwlink/p/?LinkId=128301)  
+ Die Präsentationsbeschreibungs-XML-Zeichenfolge enthält Informationen zur Darstellung des Diagramms, wie Diagrammfarbe, Diagrammtitel und Diagrammtyp (Balken, Spalte, Zeile usw.). Es gibt keine Schemadefinition für diese XML-Zeichenfolge. XML ist jedoch eine Serialisierung der [Diagramm](https://msdn.microsoft.com/library/system.web.ui.datavisualization.charting.chart.aspx)-Klasse in Microsoft Chart Controls. Weitere Informationen: [Chart Controls](https://go.microsoft.com/fwlink/p/?LinkId=128301)  
   
  Sie können die Präsentationsbeschreibungs-XML-Zeichenfolge angeben, wenn Sie ein Diagramm mit dem `SavedQueryVisualization.PresentationDescription`- oder `UserQueryVisualization.PresentationDescription`-Attribut für das im Besitz der Organisation bzw. im Besitz des Benutzers befindliche Diagramm erstellen.  
   

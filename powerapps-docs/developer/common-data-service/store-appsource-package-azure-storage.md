@@ -1,6 +1,6 @@
 ---
 title: 'Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel (Common Data Service) | Microsoft Docs'
-description: 'Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und einen Schlüssel für die Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.'
+description: Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSource-Paketdatei in einem Microsoft Azure-Blobspeicherkonto speichern und einen Schlüssel für die Signatur für den gemeinsamen Zugriff (SAS) verwenden, um die Paketdatei freizugeben. Ihre Paketdatei wird von Ihrem Azure Storage Standort für die Zertifizierung und anschließend für die AppSource-Testversionen abgerufen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2924e93ed341293b79dada0023c36854df83583
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753774"
 ---
 # <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>Schritt 5: Speichern Sie das AppSource-Paket in Azure Storage und generieren Sie eine URL mit dem SAS-Schlüssel
 
@@ -23,7 +29,7 @@ Um die Sicherheit Ihrer Dateien zu wahren, müssen alle App-Entwickler die AppSo
 
 ## <a name="before-you-upload-your-package"></a>Bevor Sie das Paket hochladen
 
-Laden Sie den Microsoft Azure Storage Explorer von [http://storageexplorer.com](http://storageexplorer.com) herunter und installieren Sie ihn.
+Laden Sie den Microsoft Azure Storage Explorer von [https://storageexplorer.com](https://storageexplorer.com) herunter und installieren Sie ihn.
 
 Mit Azure Storage Explorer können Sie problemlos die Inhalte des Storage-Kontos verwalten.
 

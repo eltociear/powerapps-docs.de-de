@@ -1,11 +1,11 @@
-- name: Erweitern des Outlook-Clients
+- name: Outlook-Client erweitern
   href: extend-dynamics-365-outlook.md
   items:
     - name: Offline- und Outlook-Filter und -Vorlagen
       href: offline-outlook-filters-templates.md
-    - name: 'Beispiel: Erstellen und Abrufen von Outlook-Filtern'
+    - name: 'Beispiel: Outlook-Filter erstellen und abrufen'
       href: sample-create-retrieve-outlook-filters.md
-    - name: 'Beispiel: Verwenden von Dynamics 365 für Outlook-Methoden'
+    - name: 'Beispiel: Verwendung von Dynamics 365 for Outlook Methoden'
       href: sample-outlook-methods.md
-    - name: Offlineverwendung von Webdiensten
+    - name: Offline-Verwendung von Webdiensten
       href: offline-use-services.md

@@ -10,12 +10,17 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a9109faf5d8ae45aa2a0bdecfb0d25037742dd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748692"
 ---
-
 # <a name="test-for-a-null-value"></a>Test auf einen Nullwert
 
 Die folgenden Codebeispiel zeigt den Test auf einen Nullwert mit den Klassen <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> und <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>.  

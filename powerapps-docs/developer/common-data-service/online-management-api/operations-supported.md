@@ -1,6 +1,6 @@
 ---
 title: Von der Online Management API für Common Data Service unterstützte Vorgänge | MicrosoftDocs
-description: 'Enthält Informationen über die Vorgänge, die Sie mit der Online Management API zur Verwaltung Ihrer Common Data Service-Umgebungen durchführen können.'
+description: Enthält Informationen über die Vorgänge, die Sie mit der Online Management API zur Verwaltung Ihrer Common Data Service-Umgebungen durchführen können.
 ms.date: 09/30/2019
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: bffbd8d01f4f6e25b7d78addd0b8284d627bcdc8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748555"
 ---
 # <a name="operations-supported-by-online-management-api"></a>Vorgänge, die von Online Management API unterstützt werden 
 

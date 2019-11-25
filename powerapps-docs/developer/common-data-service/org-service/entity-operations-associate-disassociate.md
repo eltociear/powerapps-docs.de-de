@@ -1,25 +1,31 @@
 ---
-title: Entitäten verknüpfen und trennen mithilfe des Organisationsservices (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie mithilfe des Organisations-Service Entitäten zuordnen und trennen'
+title: Entitäten zuordnen und ihre Zuordnung aufheben mithilfe des Organisationsdienstes (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie mithilfe des Organisations-Service Entitäten zuordnen und trennen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 05a61e984f06bf5b2d6f93637799ce97951fa592
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748401"
 ---
 # <a name="associate-and-disassociate-entities-using-the-organization-service"></a>Entitäten mithilfe des Organisations-Service zuordnen oder trennen
 
-Entitätsdatensätze werden miteinander mit Suchattributen für die verknüpfte Entität zugeordnet. Die einfachste Methode, zwei Entitätsdatensätze in einer 1: n-Beziehung zuzuordenen ist es,  <xref:Microsoft.Xrm.Sdk.EntityReference> zu verwenden, um den Wert eines Suchattributs für die verknüpfte Entität festzulegen.
+Entitätsdatensätze werden miteinander mit Suchattributen für die verknüpfte Entität zugeordnet. Die einfachste Methode, zwei Entitätsdatensätze in einer 1: n-Beziehung zuzuordnen ist es, <xref:Microsoft.Xrm.Sdk.EntityReference> zu verwenden, um den Wert eines Suchattributs für die verknüpfte Entität festzulegen.
 
-Die einfachste Methode, zwei Entitätsdatensätze in einer 1: n-Beziehung zu trennen ist es,  eine 1:n-Beziehung zu verwenden, um den Wert eines Suchattributs auf Null festzulegen.
+Die einfachste Methode, zwei Entitätsdatensätze in einer 1: n-Beziehung zu trennen ist es, eine 1:n-Beziehung zu verwenden, um den Wert eines Suchattributs auf Null festzulegen.
 
 Beziehungen mit einer n: n-Beziehung hängen auch von Suchattributen auf *Entität überschneidet* ab, die die n: n-Beziehung unterstützt. Diese Beziehungen definieren sich am Vorhandensein von Entitätsdatensätzen in dieser überschneidenden Entität. Wenn Sie mit der überschneidendem Entität direkt interagieren können, ist es viel einfacher, die API dafür zu verwenden.
 

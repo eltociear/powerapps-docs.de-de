@@ -1,6 +1,6 @@
 ---
 title: 'Schnellstartbeispiel: Abrufen von Common Data Service-Umgebungen über die Online Management API| MicrosoftDocs'
-description: 'Das C#-Beispiel zeigt, wie Sie sich gegenüber der Online Management API authentifizieren und dann alle Common Data Service-Umgebungen von Ihrem Office 365-Mandant abrufen können.'
+description: Das C#-Beispiel zeigt, wie Sie sich gegenüber der Online Management API authentifizieren und dann alle Common Data Service-Umgebungen von Ihrem Office 365-Mandant abrufen können.
 ms.date: 10/01/2019
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 8b900ff8a1d4eae9664289cdcb96e53a453579ad
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748554"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>Schnellstartbeispiel: Abrufen von Common Data Service-Umgebungen über die Online Management API 
 

@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Sicherheitsentitäten für eine Entität aktivieren (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Feldsicherheit für eine Entität aktivieren (Common Data Service) Microsoft-Dokumentation'
 description: Dieses Beispiel zeigt die Aktivierung der Feldsicherheit für eine Entität
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6121c32e74c0c302fe9370a67f960eee2d498033
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748748"
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>Beispiel: Aktivierung der Feldsicherheit für eine Entität
 
@@ -21,7 +27,7 @@ search.app:
 
 Dieses Beispiel zeigt die Aktivierung der Feldsicherheit für eine Entität.  Sie können das Beispiel herunterladen von [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/FieldSecurity). 
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die erforderlichen Benutzer manuell in **Office 365**, um das Beispiel ohne Fehler auszuführen. Erstellen Sie für dieses Beispiel ein Benutzerprofil **wie** unten gezeigt. 
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Legen Sie die erforderlichen Benutzer manuell in **Office 365** an, um das Beispiel fehlerfrei auszuführen. Erstellen Sie für dieses Beispiel ein Benutzerprofil **wie** unten gezeigt. 
 
 **Vorname**: Samantha<br/>
 **Nachname**: Smith<br/>
@@ -39,7 +45,7 @@ Um das oben beschriebene Beispiel zu simulieren, geht das Beispiel wie folgt vor
 ### <a name="setup"></a>Einrichten
 
 1. Prüft auf aktuelle Version der Organisation.
-2. Ruft den Benutzer ab, die Sie manuell **Office 365** erstellt haben.
+2. Ruft den Benutzer ab, den Sie manuell **Office 365** erstellt haben.
 3. Rufen Sie die Sicherheitsrolle ab, die erforderlich ist, um dem Benutzer zuzuweisen. 
 4. Rufen Sie die Standardunternehmenseinheit ab, die benötigt wird, um das Team zu erstellen.
 5. Instanziieren Sie einen Teamentitätsdatensatz und legen Sie die Eigenschaftswerte fest. 

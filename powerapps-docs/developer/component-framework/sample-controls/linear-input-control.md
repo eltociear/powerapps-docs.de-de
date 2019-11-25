@@ -1,5 +1,5 @@
 ---
-title: ' Lineare Eingabekomponente | Microsoft Docs'
+title: " Lineare Eingabekomponente | Microsoft Docs"
 description: Implementieren der linearen Eingabekomponente
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748783"
 ---
-
 # <a name="implementing-linear-input-component"></a>Implementieren der linearen Eingabekomponente
 
 Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mit numerischen Typen im Formular. Anstatt die Zahlen einzugeben, stellt die lineare Eingangskomponente einen linearen Schieberegler zur Verfügung, mit dem der Wert des Attributs auf dem Formular eingestellt werden kann.  
@@ -17,7 +22,7 @@ Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mi
 Um diese Komponente zu implementieren, müssen Sie zunächst die Datei [Manifest](../manifest-schema-reference/manifest.md) definieren, und sie implementieren die benutzerdefinierte Logik in TypeScript.
 
 > [!div class="mx-imgBorder"]
-> ![Lineares Eingangselement](../media/linear-input-control.png "Lineares Eingangselement")
+> ![Lineare Eingabekomponente](../media/linear-input-control.png "Lineare Eingabekomponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
@@ -58,10 +63,10 @@ export class TSLinearInputControl
   private labelElement: HTMLLabelElement;
   // input element that is used to create the range slider
   private inputElement: HTMLInputElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;
@@ -266,4 +271,4 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): 
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

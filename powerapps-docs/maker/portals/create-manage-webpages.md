@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Verwalten von Webseiten | Microsoft-Dokumentation
-description: Anweisungen zum Erstellen und Verwalten von Webseiten im Portal.
+title: Erstellen und Verwalten von Webseiten | MicrosoftDocs
+description: Anweisungen zum Erstellen und Verwalten von Webseiten in einem Portal.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,92 +11,92 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 26bb1186710bbf0bc3fd40765459638245f3b027
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542593"
+ms.locfileid: "2756304"
 ---
 # <a name="create-and-manage-webpages"></a>Erstellen und Verwalten von Webseiten
 
-Eine Webseite ist ein Dokument, das durch eine eindeutige URL auf einer Website identifiziert wird. Es ist eines der Kern Objekte der Website und erstellt eine Hierarchie der Website über übergeordnete und untergeordnete Beziehungen zu anderen Webseiten.
+Eine Website ist ein Dokument, das über eine eindeutige URL in einer Website identifiziert wird. Sie ist eines der Kernobjekte der Website und bildet durch übergeordnete und untergeordnete Beziehungen zu anderen Webseiten eine Hierarchie der Website.
 
 > [!NOTE]
-> Wenn Sie Ihr Portal mithilfe von powerapps Portale Studio anpassen, bemerken die Benutzer der Website eine Beeinträchtigung der Leistung. Es wird empfohlen, dass Sie die Änderungen in einem Live Portal außerhalb der Spitzenzeiten durchführen.
+> Wenn Sie Ihr Portal mithilfe des PowerApps-Portalstudios anpassen, würden die Websitebenutzer eine Auswirkung auf die Leistung feststellen. Wir empfehlen daher, die Änderungen nicht während der Hauptnutzungszeiten auf einem Liveportal durchzuführen.
 
-## <a name="create-webpage"></a>Webseite erstellen
+## <a name="create-webpage"></a>Erstellen einer Webseite
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
 
-2.  Wählen Sie in der Befehlsleiste **neue Seite** aus, und wählen Sie entweder eine Seite aus **Layouts** oder **fixierten Layouts**aus.
+2.  In der Befehlsleiste wählen Sie **Neue Seite** und entweder eine Seite aus **Layouts** oder **Feste Layouts** aus.
 
     > [!div class=mx-imgBorder]
-    > ![neue Webseite erstellen](media/create-webpage.png "Neue Webseite erstellen")
+    > ![Neue Webseite erstellen](media/create-webpage.png "Neue Webseite erstellen")
 
     > [!NOTE]
-    > - Das Erstellen einer Seite mithilfe von **Layouts** bietet Ihnen die Flexibilität, die gesamte Seite zu bearbeiten. **Festgelegte Layouts** enthalten die Seitenvorlagen, die im Rahmen der Portal Bereitstellung installiert werden, sowie die benutzerdefinierten Seitenvorlagen, die mithilfe der [Portal Verwaltungs-App](configure/configure-portal.md)erstellt wurden.
-    > - Für die Seiten, die mithilfe der **Layouts** -Option erstellt werden sollen, wird eine neue Vorlage für die Vorlagen Seite " **Standardvorlage** " installiert.
+    > - Das Erstellen einer Seite mit **Layouts** gibt Ihnen die Flexibilität, die gesamte Seite zu bearbeiten. **Feste Layouts** enthält die Seitenvorlagen, die im Rahmen der Portalbereitstellung und benutzerdefinierten Seiten der Vorlagen mithilfe der [Portalverwaltungs-App](configure/configure-portal.md) installiert werden.
+    > - Für die Seiten, die mithilfe der Option **Layouts** erstellt werden, ist eine neue **Standardstudiovorlage**-Seitenvorlage installiert.
 
-3.  Geben Sie im Eigenschaften Bereich auf der rechten Seite des Bildschirms die folgenden Informationen ein:
+3.  Geben Sie im Eigenschaftenbereich auf der rechten Seite des Bildschirms die folgenden Informationen ein:
 
-    - **Name**: der Name der Seite. Dieser Wert wird auch als Titel der Seite verwendet.
+    - **Name**: Der Name der Seite. Dieser Wert wird auch als Titel der Seite verwendet.
 
-    - **Partielle URL**: das URL-Pfad Segment, das verwendet wird, um die Portal-URL dieser Seite zu erstellen.
+    - **Teil-URL**: Das URL-Pfadsegment, das zur Erstellung der Portal-URL dieser Seite verwendet wird.
 
-    - **Vorlage**: Seitenvorlage, die zum Rendering dieser Seite im Portal verwendet wird. Falls erforderlich, können Sie eine andere Vorlage in der Liste auswählen.
+    - **Vorlage**: Die Seitenvorlage, die zum Rendern dieser Seite im Portal verwendet wird. Bei Bedarf kann eine andere Vorlage aus der Liste ausgewählt werden.
 
         > [!div class=mx-imgBorder]
-        > ![Webseiten Eigenschaften](media/webpage-props.png "Webseiten Eigenschaften")
+        > ![Webseiteneigenschaften](media/webpage-props.png "Webseiteneigenschaften")
 
-Die von Ihnen erstellten Webseiten werden hinzugefügt, und ihre Hierarchie wird im **Seiten** Bereich angezeigt. Um den **Seiten** Bereich anzuzeigen, wählen Sie im toolbelt auf der linken Seite des Bildschirms **Seiten** ![Seiten Symbol](media/pages-icon.png "Seiten Symbol") aus.  
+Die von Ihnen erstellten Webseiten werden hinzugefügt und ihre Hierarchie wird im Bereich **Seiten** angezeigt. Um den Bereich **Seiten** anzuzeigen, wählen Sie **Seiten** ![Seitensymbol](media/pages-icon.png "Seitensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
 
-Nehmen wir an, Sie haben einige Webseiten für Ihr Portal erstellt. Die Seiten Hierarchie sieht wie folgt aus:
+Gehen wir davon aus, Sie haben einige Webseiten für Ihr Portal erstellt. Die Seitenhierarchie sieht wie folgt aus:
 
 > [!div class=mx-imgBorder]
 > ![Seitenbereich](media/pages-pane.png "Seitenbereich")  
 
-Das primäre Menü auf der Website wird automatisch basierend auf der Hierarchie der Webseiten erstellt. Sie wird als **Standard** Menü bezeichnet. Sie können auch ein benutzerdefiniertes Menü erstellen, das auf der Website angezeigt wird. Weitere Informationen: [Hinzufügen eines benutzerdefinierten Menüs](compose-page.md#add-a-custom-menu)
+Das primäre Menü auf der Website wird automatisch anhand der Hierarchie der Webseiten erstellt. Dies wird als **Standardmenü** bezeichnet. Sie können auch ein benutzerdefiniertes Menü erstellen, das auf der Website angezeigt wird. Weitere Informationen: [Hinzufügen eines benutzerdefinierten Menüs](compose-page.md#add-a-custom-menu)
 
 > [!div class=mx-imgBorder]
-> ![Website Navigation](media/website-navigation.png "Website Navigation")
+> ![Website-Navigation](media/website-navigation.png "Website-Navigation")
 
-Wenn Sie mit einem Portal arbeiten, das in einer Umgebung erstellt wurde, die Modell gesteuerte apps in Dynamics 365 enthält, und Sie möchten, dass das Menü mit der Seiten Hierarchie identisch ist, müssen Sie **Standard** in der **Navigationsmenü** Liste auswählen.
+Wenn Sie mit einem Portal arbeiten, das in einer Umgebung, die modelgesteuerte Apps in Dynamics 365 enthält, erstellt wurde und das Menü mit der Seitenhierarchie übereinstimmen soll, müssen Sie **Standard** aus der Liste **Navigationsmenü** auswählen.
 
 > [!div class=mx-imgBorder]
 > ![Standard-Navigationsmenü](media/navigation-menu-default.png "Standard-Navigationsmenü")
 
-## <a name="manage-webpage"></a>Webseite verwalten
+## <a name="manage-webpage"></a>Verwalten der Webseite
 
-1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit) , um es in powerapps Portals Studio zu öffnen.  
+1.  [Bearbeiten Sie das Portal](manage-existing-portals.md#edit), um es im PowerApps-Portalstudio zu öffnen.  
 
-2.  Wählen Sie im toolbelt auf der linken Seite des Bildschirms **Seiten** ![Seiten Symbol](media/pages-icon.png "Seiten Symbol") aus.  
+2.  Wählen Sie **Seiten** ![Seitensymbol](media/pages-icon.png "Seitensymbol") aus dem Funktionsangebot auf der linken Seite des Bildschirms aus.  
 
-3.  Zeigen Sie auf die Seite, die Sie verwalten möchten, und wählen Sie **die Schaltfläche** mit den Auslassungs Punkten (...) für die zu verwaltende Webseite aus. Abwechselnd. Sie können mit der rechten Maustaste auf die Seite klicken, die Sie verwalten möchten.
+3.  Bewegen Sie den Mauszeiger über die Seite, die Sie verwalten möchten, und wählen Sie die Schaltfläche mit den **Auslassungspunkten** (…) für die Webseite aus, die Sie verwalten möchten. Abwechselnd können Sie mit der rechten Maustaste auf die entsprechende Seite klicken, die Sie verwalten möchten.
 
-4.  Wählen Sie im Kontextmenü die erforderliche Aktion aus:
+4.  Wählen Sie im Kontextmenü die erforderlichen Aktion aus:
 
-    - **Im Standardmenü ausblenden**: Blendet die Seite aus, die im Menü "Sitemap über Default" angezeigt wird.
+    - **Im Standardmenü ausblenden**: Blenden Sie die Seite aus, sodass sie über das Standardmenü nicht in der Siteübersicht angezeigt wird.
 
-    - **In Standardmenü anzeigen**: zeigt die Seite im Menü "Sitemap über Standard" an.
+    - **Im Standardmenü anzeigen**: Sie können die Seite über das Standardmenü in der Siteübersicht anzeigen.
 
-    - **Hinzufügen einer**untergeordneten Seite: Fügen Sie der ausgewählten Seite eine untergeordnete Seite hinzu. Die untergeordnete Seite erbt die Seitenvorlage der übergeordneten Seite.
+    - **Untergeordnete Seite hinzufügen**: Sie können der ausgewählten Seite eine untergeordneten Seite hinzufügen. Die untergeordnete Seite übernimmt die Seitenvorlage ihrer übergeordneten Seite.
 
-    - **Als Startseite festlegen**: Legen Sie die Seite als Startseite fest. Die URL der neuen Startseite wird auf das Stammverzeichnis der Website festgelegt, und die URL der alten Seite wird entsprechend aktualisiert.
+    - **Als Homepage festlegen**: Sie können die Seite damit als Homepage festlegen. Die URL der neuen Homepage wird auf dem Stamm der Website festgelegt und die URL der alten Seite entsprechend aktualisiert.
 
-    - Nach **oben**: verschiebt die Seite in der Hierarchie nach oben.
+    - **Nach oben**: Damit können Sie die Seite in der Hierarchie nach oben verschieben.
 
-    - **Nach unten**: verschiebt die Seite in der Hierarchie nach unten.
+    - **Nach unten**: Damit können Sie die Seite in der Hierarchie nach unten verschieben.
 
         > [!NOTE]
-        > Das Verschieben einer Seite nach oben oder unten wird zwischen den Seiten auf derselben Ebene unterstützt.
+        > Das Verschieben einer Seite nach oben oder unten wird bei Seiten auf derselben Ebene unterstützt.
 
-    - **Unterseite**höher stufen: verringern Sie den Einzug, und legen Sie die untergeordnete Seite auf der Ebene der vorherigen Seite in der Hierarchie ab.
+    - **Unterseite hochstufen**: Verringern Sie den Einzug und legen Sie die untergeordnete Seite auf die Ebene der vorherigen Seite in der Hierarchie.
 
-    - **Unterseite erstellen**: Vergrößern Sie den Einzug, und machen Sie die Seite zu einer untergeordneten Seite der vorherigen Seite in der Hierarchie.
+    - **Unterseite erstellen**: Erhöhen Sie den Einzug und machen Sie die Seite zu einer untergeordneten Seite der vorherigen Seite in der Hierarchie.
 
-    - **Löschen**: Löscht die Seite.
+    - **Löschen**: Löschen Sie die Seite.
 
         > [!div class=mx-imgBorder]
-        > ![Webseiten verwalten (Optionen)](media/webpage-manage-options.png "Webseiten verwalten (Optionen)")  
+        > ![Webseite verwalten Optionen](media/webpage-manage-options.png "Webseite verwalten Optionen")  
 
 
 

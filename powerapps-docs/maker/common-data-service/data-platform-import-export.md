@@ -1,6 +1,6 @@
 ---
-title: Importieren oder Exportieren von Daten vom Common Data Service
-description: 'Führen Sie einen Massenimporti und -export von Daten aus Excel oder CSV-Dateien in Entitäten in Common Data Service durch, indem Sie die Funktion "Daten aus Excel abrufen" verwenden'
+title: Daten aus Common Data Service importieren oder exportieren
+description: Führen Sie einen Massenimport und -export von Daten aus Excel oder CSV-Dateien nach Entitäten in Common Data Service durch, indem Sie die Funktion Daten aus Excel abrufen und Daten exportieren verwenden
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -8,14 +8,20 @@ ms.component: cds
 ms.date: 05/14/2018
 ms.author: sabinn
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8aad3e440e93becd4741223f1450dd8e3b34921a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755573"
 ---
-# <a name="import-or-export-data-from-common-data-service"></a>Importieren oder Exportieren von Daten vom Common Data Service
+# <a name="import-or-export-data-from-common-data-service"></a>Daten aus Common Data Service importieren oder exportieren
 
-Um einen Massenimport und -export von Daten aus Microsoft Excel oder CSV-Dateien durchzuführen, verwenden Sie die Funktionen "Daten aus Excel-Datei abrufen" und "Daten exportieren" für aktualisierte Common Data Service-Umgebungen.
+Um einen Massenimport und -export von Daten aus Microsoft Excel oder CSV-Dateien durchzuführen, verwenden Sie die Funktionen Daten aus Excel-Datei abrufen und Daten exportieren für aktualisierte Common Data Service-Umgebungen.
 
 Es gibt zwei Möglichkeiten, um Dateien aus Excel oder aus CSV-Dateien in Entitäten zu importieren.
 
@@ -34,7 +40,7 @@ Jede Entität besitzt Pflichtfelder, die in der Eingabedatei vorhanden sein müs
     - Kopieren Sie Daten aus den CSV-Datei in Excel oder die Vorlage, die Sie soeben erstellt haben.
 
 1. Importieren Sie die Datei.  
-    a. Auf [powerapps.com](https://web.powerapps.com/), erweitern Sie den Abschnitt **Daten**. Wählen Sie im linken Navigationsbereich die Option **Entitäten** aus.  
+    a. Auf [powerapps.com](https://make.powerapps.com/), erweitern Sie den Abschnitt **Daten**. Wählen Sie im linken Navigationsbereich die Option **Entitäten** aus.  
     b. Wählen Sie die Entität aus, in die Sie die Daten importieren möchten.  
     c. Wählen Sie die Auslassungspunkte oder das obere Menü aus. Wählen Sie **Daten abrufen** aus: Wählen Sie **Daten aus Excel abrufen** aus.  
 
@@ -92,7 +98,7 @@ Wenn Sie Zuordnungsfehler erhalten, nachdem Sie Ihre Datei hochladen, wählen Si
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Stellen Sie die Eindeutigkeit sicher, wenn Sie Daten aus Excel oder CSV in eine Entität importieren
 
-Common Data Service-Entitäten verwenden einen Primärschlüssel, um Datensätze in einer Common Data Service-Tabelle eindeutig zu identifizieren. Der Primärschlüssel für eine Common Data Service-Entität ist ein GUID (globally unique identifier). Es bietet die Standardgrundlage für Datensatzidentifikation. Datenvorgänge, wie das Importieren von Daten in Common Data Service-Entitäten, zeigen den Standardprimärschlüssel an.
+Common Data Service Entitäten verwenden einen Primärschlüssel, um Datensätze in einer Common Data Service-Entitätstabelle eindeutig zu identifizieren. Der Primärschlüssel für eine Common Data Service-Entität ist ein GUID (globally unique identifier). Es bietet die Standardgrundlage für Datensatzidentifikation. Datenvorgänge, wie das Importieren von Daten nach Common Data Service-Entitäten, zeigen den Standardprimärschlüssel an.
 
 Beispiel:  
 Der Primärschlüssel für eine Entität **Firma** ist **accountid**.
@@ -100,10 +106,10 @@ Der Primärschlüssel für eine Entität **Firma** ist **accountid**.
    > [!div class="mx-imgBorder"] 
    > ![Beispielexportdatei aus einer Entität **Firma** zeigt **accountid** als Primärschlüssel](./media/data-platform-import-export/export-pk.png)
 
-Gelegentlich funktioniert ein Primärschlüssel möglicherweise nicht, wenn Sie Daten aus einer externen Quelle integrieren. Verwenden Sie Common Data Service, um Alternativschlüssel zu definieren, die einen Datensatz anstelle des Primärschlüssels eindeutig identifizieren.
+Gelegentlich funktioniert ein Primärschlüssel möglicherweise nicht, wenn Sie Daten aus einer externen Quelle integrieren. Verwenden Sie Common Data Service, um Alternativschlüssel, die einen Datensatz eindeutig identifizieren, anstelle des Primärschlüssels zu definieren.
 
 Beispiel:  
-Als Entität **Firma** legen Sie möglicherweise **transactioncurrencyid** als Alternativschlüssel fest, indem Sie eine natürliche schlüsselbasierte ID verwenden. Verwenden Sie beispielsweise **US-Dollar** anstelle des GUID-Werts **88c6c893-5b45-e811-a953-000d3a33bcb9**, wie zuvor angezeigt. Sie können auch das **Währungssymbol** oder den **Währungsnamen** als Schlüssel auswählen.
+Als Entität **Firma** legen Sie möglicherweise **transactioncurrencyid** als Alternativschlüssel fest, indem Sie eine natürliche schlüsselbasierte ID verwenden. Verwenden Sie beispielsweise **US-Dollar** anstelle des GUID-Wertes, der zuvor **88c6c893-5b45-e811-a953-000d3a33bcb9** angezeigt wurde. Sie können auch das **Währungssymbol** oder den **Währungsnamen** als Schlüssel auswählen.
 
    > [!div class="mx-imgBorder"] 
    > ![Beispiel zum Erstellen eines Alternativschlüssels in einer **Währung**-Entität](./media/data-platform-import-export/create-ak.png)
@@ -117,7 +123,7 @@ Benutzer können Primärschlüssels noch als Bezeichner verwenden, nachdem Sie A
 
 Sie können einen einmaligen Datenexport aus einer Standardentität oder einer benutzerdefinierten Entität ausführen. Und Sie können Daten aus mehr als einer Entität nacheinander exportieren. Wenn Sie Daten aus mehr als einer Entität exportieren, wird jede Entität in seine eigene Microsoft-CSV-Datei exportiert.
 
-1. Auf [powerapps.com](https://web.powerapps.com/), erweitern Sie den Abschnitt **Daten**. Wählen Sie im linken Navigationsbereich die Option **Entitäten** aus.
+1. Auf [powerapps.com](https://make.powerapps.com/), erweitern Sie den Abschnitt **Daten**. Wählen Sie im linken Navigationsbereich die Option **Entitäten** aus.
 1. Wählen Sie die Entität aus, aus der Sie die Daten exportieren möchten.
 1. Wählen Sie die Auslassungspunkte oder das obere Menü aus. Klicken Sie auf **Exportieren**. Wählen Sie **Daten** aus.
 

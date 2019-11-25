@@ -8,9 +8,14 @@ ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
+ms.openlocfilehash: aabcf4518e71648797c795a006c2d842f3e5ff01
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748480"
 ---
-
-# <a name="limitations-of-powerapps-component-framework"></a>Einschränkungen des PowerApps component framework
+# <a name="limitations"></a>Einschränkungen 
 
 Mit der Veröffentlichung des PowerApps component framework können Sie nun Ihre eigenen Codekomponenten erstellen, um die Benutzerfreundlichkeit von modellgetriebenen Anwendungen und Canvas-Anwendungen zu verbessern. Auch wenn Sie Ihre eigenen Komponenten erstellen können, gibt es einige Einschränkungen, die Entwickler einschränken, die einige Funktionen in den Codekomponenten implementieren. Es folgen einige der Einschränkungen:
 
@@ -27,5 +32,5 @@ Mit der Veröffentlichung des PowerApps component framework können Sie nun Ihre
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[PowerApps component framework-API-Referenz](reference/index.md)<br/>
+[PowerApps component framework API-Referenz](reference/index.md)<br/>
 [Übersicht über das PowerApps component framework](overview.md)

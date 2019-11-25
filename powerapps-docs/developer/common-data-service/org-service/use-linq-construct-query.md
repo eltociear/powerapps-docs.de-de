@@ -1,19 +1,25 @@
 ---
 title: Verwenden von LINQ zum Erstellen einer Abfrage (Common Data Service) | Microsoft Docs
-description: 'Hier wird beschrieben, wie der Abfrageanbieter .NET Language-Integrated Query(LINQ) in Dynamics 365 zum Erstellen einer Abfrage verwendet wird'
+description: Hier wird beschrieben, wie der Abfrageanbieter .NET Language-Integrated Query(LINQ) in Dynamics 365 zum Erstellen einer Abfrage verwendet wird
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 03728912350057f8db3cd1ed4c59a97f66362507
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752946"
 ---
 # <a name="use-linq-to-construct-a-query"></a>Verwenden von LINQ zum Erstellen einerAbfrage
 
@@ -153,4 +159,4 @@ select new Contact
  [Beispiel: LINQ-Abfragenbeispiele](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries)   
  [Erstellen von Abfragen mit LINQ (.NET Language-integrierte Abfrage)](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query)   
  [Verwenden von spät gebundenen Entitätsklassen mit einer LINQ-Abfrage](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query)   
- [Blog: LINQPad 4 Driver für Dynamics CRM REST/Web-API sind verfügbar auf CodePlex](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)
+ [Blog: LINQPad 4 Driver für Dynamics CRM REST/Web-API sind verfügbar auf CodePlex](https://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)

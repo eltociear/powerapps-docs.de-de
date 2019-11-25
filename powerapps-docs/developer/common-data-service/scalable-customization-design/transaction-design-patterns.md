@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Transaktionsdesign-Muster (Common Data Service) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Transaktionsdesign-Muster (Common Data Service) | Microsoft-Dokumentation'
 description: 'Das vierte in einer Reihe von Themen. '
 ms.custom: ''
 ms.date: 11/18/2018
@@ -10,10 +10,16 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bbf96b3d9dbe1daa1b0d4538a0dc58dda8dfb9cd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748646"
 ---
 # <a name="scalable-customization-design-transaction-design-patterns"></a>Skalierbares Anpassungsdesign: Transaktionsdesign-Muster
 
@@ -152,7 +158,7 @@ Die Entscheidung, ob Aktualisierungen für denselben Datensatz zu einem einzigen
 
 Obwohl es wichtig ist, den Nutzen eines Common Data Service-Systems nicht zu verringern, indem Aktivitäten ausgeschlossen werden, die von Vorteil wären, werden oft Anpassungen gefordert, die wenig Geschäftswert schaffen, aber die tatsächliche technische Komplexität erhöhen.
  
-Wenn wir jedes Mal, wenn wir eine Aufgabe erstellen, auch den Benutzerdatensatz mit der Anzahl der Aufgaben aktualisieren, die sie derzeit zugewiesen haben, könnte dies zu einer sekundären Sperrebene führen, da der Benutzerdatensatz nun ebenfalls stark beansprucht werden würde. Es würde eine weitere Ressource hinzufügen, die jede Anforderung möglicherweise blockieren und warten muss, obwohl sie nicht unbedingt kritisch für die Aktion ist. In diesem Beispiel sollten Sie sorgfältig prüfen, ob die Speicherung der Anzahl der Aufgaben gegen den Benutzer wichtig ist oder ob die Anzahl bei Bedarf berechnet oder an anderer Stelle gespeichert werden kann, z. B. durch die Verwendung von Hierarchie- und Rollup-Feldfunktionen in Common Data Service. 
+Wenn wir jedes Mal, wenn wir eine Aufgabe erstellen, auch den Benutzerdatensatz mit der Anzahl der Aufgaben aktualisieren, die sie derzeit zugewiesen haben, könnte dies zu einer sekundären Sperrebene führen, da der Benutzerdatensatz nun ebenfalls stark beansprucht werden würde. Es würde eine weitere Ressource hinzufügen, die jede Anforderung möglicherweise blockieren und warten muss, obwohl sie nicht unbedingt kritisch für die Aktion ist. In diesem Beispiel sollten Sie sorgfältig prüfen, ob die Speicherung der Anzahl der Aufgaben für den Benutzer wichtig ist oder ob die Anzahl bei Bedarf berechnet oder an anderer Stelle gespeichert werden kann, z. B. durch die native Verwendung von Hierarchie- und Rollup-Feldfunktionen in Common Data Service. 
 
 ![Problembeispiel mit Anzeige unnötiger Updates](media/only-update-things-you-need-to.png)
 
@@ -177,12 +183,12 @@ Häufig muss ein Kompromiss zwischen verschiedenen Verhaltensweisen in Betracht 
 |Vorabprüfung|Synchronisierung|Plug-In|Kurzfristige Validierung von Eingabewerten|Lang laufende Aktionen.<br /><br />Bei der Erstellung verwandter Elemente, die zurückgesetzt werden sollten, wenn spätere Schritte fehlschlagen.|
 |Vor Operation|Synchronisierung|Workflow/Plug-in|Kurzfristige Validierung von Eingabewerten.<br /><br />Bei der Erstellung verwandter Elemente, die als Teil des Plattformschrittfehlers zurückgesetzt werden sollten.|Lang laufende Aktionen.<br /><br />Beim Erstellen eines Elements muss die resultierende GUID gegen das Element gespeichert werden, das der Plattformschritt erstellt bzw. aktualisiert.|
 |Nach Operation |Synchronisierung|Workflow/Plug-in|Kurz laufende Aktionen, die natürlich dem Plattformschritt folgen und zurückgesetzt werden müssen, wenn spätere Schritte fehlschlagen, z. B. die Erstellung einer Aufgabe für den Eigentümer eines neu erstellten Kontos.<br /><br />Erstellung von zugehörigen Elementen, die die GUID des erstellten Elements benötigen und die im Fehlerfall den Plattformschritt zurücksetzen sollten.|Lang laufende Aktionen.<br /><br />Wo ein Versagen die Fertigstellung der Plattform-Pipeline nicht beeinträchtigen sollte.|
-|Nicht in Ereignis-Pipeline|Asynchron|Workflow/Plug-in|Mittelgroße Aktionen, die sich auf die Benutzerfreundlichkeit auswirken würden.<br /><br />Aktionen, die im Fehlerfall ohnehin nicht zurückgenommen werden können.<br /><br />Aktionen, die das Zurücksetzen des Plattformschritts im Falle eines Ausfalls nicht erzwingen sollten.|Sehr lang laufende Aktionen.<br /><br />Diese sollte nicht im Common Data Service verwaltet werden.<br /><br />Sehr kostengünstige Aktionen. Der Aufwand für die Generierung von asynchronem Verhalten für sehr kostengünstige Aktionen kann untragbar sein; wenn möglich, synchronisieren Sie diese und vermeiden Sie den Aufwand der asynchronen Verarbeitung.|
+|Nicht in Ereignis-Pipeline|Asynchron|Workflow/Plug-in|Mittelgroße Aktionen, die sich auf die Benutzerfreundlichkeit auswirken würden.<br /><br />Aktionen, die im Fehlerfall ohnehin nicht zurückgenommen werden können.<br /><br />Aktionen, die das Zurücksetzen des Plattformschritts im Falle eines Ausfalls nicht erzwingen sollten.|Sehr lang laufende Aktionen.<br /><br />Diese sollten nicht in Common Data Service verwaltet werden.<br /><br />Sehr kostengünstige Aktionen. Der Aufwand für die Generierung von asynchronem Verhalten für sehr kostengünstige Aktionen kann untragbar sein; wenn möglich, synchronisieren Sie diese und vermeiden Sie den Aufwand der asynchronen Verarbeitung.|
 |Nicht zutreffend<br />Verwendet den Kontext, von dem aus er aufgerufen wird.||Benutzerdefinierte Aktionen|Kombinationen von Aktionen, die von einer externen Quelle gestartet wurden, z. B. von einer Web-Ressource.|Wenn immer als Reaktion auf ein Plattformereignis ausgelöst, verwenden Sie in diesen Fällen Plug-in/Workflow.|
 
 ## <a name="plug-insworkflows-arent-batch-processing-mechanisms"></a>Plug-Ins/Workflows sind keine Batch-Verarbeitungsmechanismen.
 
-Lang laufende oder Volume-Aktionen sind nicht dazu gedacht, von Plug-Ins oder Workflows ausgeführt zu werden. Common Data Service ist nicht als Berechnungsplattform gedacht und insbesondere nicht als Controller, um große Gruppen von unabhängigen Updates anzusteuern.
+Lang laufende oder Volume-Aktionen sind nicht dazu gedacht, von Plug-Ins oder Workflows ausgeführt zu werden. Common Data Service ist nicht als Computing-Plattform gedacht und insbesondere nicht als Controller, um große Gruppen von unabhängigen Updates anzusteuern.
 
 Wenn Sie dies tun müssen, entlasten Sie einen separaten Dienst, z. B. eine Azure-Worker-Rolle, und führen Sie ihn aus. 
 
@@ -231,7 +237,7 @@ Wenn bestimmte Fehler auftreten, kann es auch nützlich sein, die Server-Trace-D
 
 ## <a name="summary"></a>Zusammenfassung
 
-Der Inhalt in [Skalierbare Anpassungsgestaltung in Common Data Service](overview.md) und die nachfolgenden Themen [Datenbanktransaktionen](database-transactions.md) und [Parallelitätsprobleme](concurrency-issues.md) haben die folgenden Konzepte mit Beispielen und Strategien beschrieben, die Ihnen helfen werden, zu verstehen, wie Sie skalierbare Anpassungen für Common Data Service entwerfen und implementieren.
+Der Inhalt in [Skalierbares Anpassungsdesign in Common Data Service](overview.md) und die nachfolgenden Themen [Datenbanktransaktionen](database-transactions.md), [Parallelitätsprobleme](concurrency-issues.md) und dieses haben die folgenden Konzepte mit Beispielen und Strategien beschrieben, die Ihnen helfen werden, zu verstehen, wie Sie skalierbare Anpassungen für Common Data Service entwerfen und implementieren können.
 
 Einige wichtige Dinge, die Sie beachten sollten, sind die folgenden: 
 

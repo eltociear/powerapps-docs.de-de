@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Nutzung der optimistischen Parallelität mit Aktualisierungs- und Löschaktivitäten (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Nutzung der optimistischen Parallelität mit Aktualisierungs- und Löschvorgängen (Common Data Service) | Microsoft-Dokumentation'
 description: Dieses Beispiel zeigt die Nutzung der optimistischen Parallelität mit Aktualisierungs- und Löschaktivitäten.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 66ff3f8821fa641431ae4ae2100594424735ec71
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748701"
 ---
 # <a name="sample-use-optimistic-concurrency-with-update-and-delete-operations"></a>Beispiel: Nutzung der optimistischen Parallelität mit Aktualisierungs- und Löschaktivitäten
 

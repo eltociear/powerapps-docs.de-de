@@ -1,24 +1,27 @@
 ---
 title: Erstellen von barrierefreien Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Das Thema enthält allgemeine Anleitungen und Links zu weiteren Ressourcen, die Ihnen dabei helfen, Benutzeroberflächenelemente für Webressourcen zu entwerfen, die für Personen mit Behinderung barrierefrei sind.'
+description: Das Thema enthält allgemeine Anleitungen und Links zu weiteren Ressourcen, die Ihnen dabei helfen, Benutzeroberflächenelemente für Webressourcen zu entwerfen, die für Personen mit Behinderung barrierefrei sind.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 307269ac-674c-5b8a-fee7-767f060af15f
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5bdae4cf6754fb99f0045b17aaf1a81ab3e7e726
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753610"
 ---
-
 # <a name="create-accessible-web-resources"></a>Erstellen von barrierefreien Webressourcen
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-accessible-web-resources -->
@@ -63,7 +66,7 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
  [Visual Studio-Barrierefreiheitsprüfung](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
  Wenn Sie Visual Studio verwenden, um Ihre HTML-Webressourcendateien zu bearbeiten, werden Sie feststellen, dass integrierte Tools vorhanden sind, mit denen nach Barrierefreiheitproblemen gesucht werden kann. Wählen Sie im Menü **Extras** die Option **Barrierefreiheit überprüfen**, um einen Bericht anzuzeigen, der Anleitungen im Hinblick auf Barrierefreiheitprobleme bietet.  
   
- [Benutzeroberflächen-Barrierefreiheitsprüfung](http://acccheck.codeplex.com/)  
+ [Benutzeroberflächen-Barrierefreiheitsprüfung](https://acccheck.codeplex.com/)  
  Benutzeroberflächen-Barrierefreiheitsprüfung (oder AccChecker) aktiviert Prüfvorrichtungen, um auf einfache Weise Barrierefreiheitsprobleme mit Microsoft Active Accessibility (MSAA) und anderen Benutzeroberflächenimplementierungen für Windows zu finden. AccChecker entstammt der Erkenntnis, dass vorhandene Windows Automatisierungs-API-Tools, wie beispielsweise Inspect, zwar detaillierte Details über die Implementierung bereitstellen, jedoch keine Informationen im Hinblick darauf, ob eine Implementierung korrekt ist oder nicht.  
   
  [Inspect (Inspect.exe)](https://docs.microsoft.com/windows/desktop/WinAuto/inspect-objects)  
@@ -76,7 +79,7 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
  Die folgenden Ressourcen bieten einen Ausgangspunkt zum Definieren von Anforderungen zum Erreichen von Barrierefreiheit für Ihre Webressourcen:  
   
--   [CRM, Barrierefreiheit und 508](http://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
+-   [CRM, Barrierefreiheit und 508](https://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
   
 -   [Einführung in Web-Barrierefreiheit](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10))  
   
@@ -84,11 +87,11 @@ Wenn Sie Webressourcen einschließen, die Benutzeroberflächenelemente in der L�
   
 -   [Silverlight-Barrierefreiheit für Entwickler](https://docs.microsoft.com/previous-versions/windows/)  
   
--   [Barrierefreiheit – Übersicht](https://developer.microsoft.com/en-us/windows/accessible-apps)  
+-   [Barrierefreiheit – Übersicht](https://developer.microsoft.com/windows/accessible-apps)  
   
--   [Barrierefreiheit – W3C](http://www.w3.org/standards/webdesign/accessibility)  
+-   [Barrierefreiheit – W3C](https://www.w3.org/standards/webdesign/accessibility)  
   
--   [Richtlinien für barrierefreie Webinhalte (WCAG) 2.0](http://www.w3.org/TR/WCAG20/)  
+-   [Richtlinien für barrierefreie Webinhalte (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)  
   
 ### <a name="see-also"></a>Siehe auch  
  [Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   

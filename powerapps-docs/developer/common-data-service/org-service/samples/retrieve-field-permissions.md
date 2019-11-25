@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Abrufen von Feldberechtigungen (Common Data Service) | Microsoft Docs'
-description: 'In diesem Beispiel wird gezeigt, wie gesicherte Felder für einen Benutzer abgerufen werden'
+title: 'Beispiel: Abrufen von Feldberechtigungen (Common Data Service) | Microsoft-Dokumentation'
+description: In diesem Beispiel wird gezeigt, wie gesicherte Felder für einen Benutzer abgerufen werden
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1f4f8257a5567e1a4dcb982b960d5d3f8d1c8602
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748723"
 ---
 # <a name="sample-retrieve-field-permissions"></a>Beispiel: Abrufen von Feldberechtigungen
 
@@ -21,7 +27,7 @@ search.app:
 
 Dieses Beispiel zeigt das Abrufen von gesicherten Feldern für einen Benutzer gemäß den Schritten, die unter [Feldsicherheitsentitäten](https://docs.microsoft.com/dynamics365/customer-engagement/developer/field-security-entities) erläutert werden. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveFieldPermission) herunterladen.
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die erforderlichen Benutzer manuell in **Office 365**, um das Beispiel ohne Fehler auszuführen. Erstellen Sie für dieses Beispiel ein Benutzerprofil **wie** unten gezeigt. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Legen Sie die erforderlichen Benutzer manuell in **Office 365** an, um das Beispiel fehlerfrei auszuführen. Erstellen Sie für dieses Beispiel ein Benutzerprofil **wie** unten gezeigt. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 
 **Vorname**: Samantha <br/>
 **Nachname**: Smith<br/>

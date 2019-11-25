@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer benutzerdefinierten Entität | Microsoft Docs
-description: 'Erfahren Sie, wie Sie eine benutzereigene Entität in PowerApps zu erstellen.'
+description: Weitere Informationen zum Erstellen einer benutzerdefinierten Entität in PowerApps.
 author: Mattp123
 ms.service: powerapps
 ms.component: cds
@@ -8,13 +8,18 @@ ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754957"
 ---
-
-# <a name="create-a-custom-entity"></a>Erstellen einer benutzerdefinierten Entität.
+# <a name="create-a-custom-entity"></a>Benutzerdefinierte Entität erstellen
 In PowerApps definiert eine *Entität* Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. Sie können dann diese Daten dann aufrufen, indem Sie eine App entwickeln, die auf diese Entität verweist. PowerApps bietet integrierte Standardentitäten für typische Szenarien in einer Organisation (z. B. das Nachverfolgen von Terminen), doch es gibt möglicherweise Zeiten, in denen Sie benutzerdefinierte Entitäten zum Speichern von Daten erstellen müssen, die spezifisch für Ihre Organisation sind.
 
 In diesem Thema erfahren Sie, wie Sie eine benutzerdefinierte Entität namens "Produktbewertung" erstellen, mit der eine App erstellen können, die Bewertungen und Kommentare für Produkte anzeigt, die Ihr Unternehmen vertreibt.
@@ -23,7 +28,7 @@ In diesem Thema erfahren Sie, wie Sie eine benutzerdefinierte Entität namens "P
 Für dieses Verfahren müssen Sie über eine Systemadministrator- oder Systemanpasser-Sicherheitsrolle in Common Data Service verfügen.
 
 ## <a name="sign-in-to-powerapps"></a>Bei PowerApps anmelden
-Unter [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) bei PowerApps anmelden.
+Melden Sie sich bei PowerApps unter [https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 ## <a name="create-an-entity"></a>Entität erstellen
 1. Klicken oder tippen Sie im Navigationsbereich auf **Daten**, um sie zu erweitern, und klicken oder tippen Sie dann auf **Entitäten**.
@@ -56,7 +61,7 @@ Unter [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&u
     
     d. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
      
-    ![Neue Entität](./media/data-platform-cds-create-entity/newentitypanel.png "Bereich für neue Entität")
+    ![Neue Entität](./media/data-platform-cds-create-entity/newentitypanel.png "Neuer Entitätsbereich")
 
 4. Beachten Sie, dass auf der Entitätsdetailseite die Entität noch im Hintergrund bereitgestellt wird. Nachdem die Bereitstellung abgeschlossen wurde, wird die Entität gespeichert und kann in Apps verwendet werden. Felder, Beziehungen und Schlüssel können der Entität jederzeit hinzugefügt werden (auch wenn die Bereitstellung noch ausgeführt wird), aber Ansichten, Formulare, Diagramme, Dashboards und Geschäftsregeln können nur zur Entität hinzugefügt werden, nachdem die Bereitstellung abgeschlossen ist.
 
@@ -79,7 +84,7 @@ Unter [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&u
     Weitere Informationen finden Sie unter [Verwalten von Feldern in einer Entität](data-platform-manage-fields.md).
 
     > [!div class="mx-imgBorder"] 
-    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Bereich \"Neues Feld\"")
+    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Neuer Feldbereich")
 
 6. Wiederholen Sie den vorherigen Schritt, um drei weitere Felder mit folgenden Konfigurationen hinzuzufügen:
     * **Anzeigename** = Produkt-Bewertung; **Datentyp** = " Ganze Zahl "; klicken oder tippen Sie auf das **Erforderlich**- Kontrollkästchen
@@ -88,7 +93,7 @@ Unter [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&u
 
     Wenn Sie fertig sind, sollten Sie über fünf Felder verfügen, die auf der Entitätsdetailseite aufgeführt sind.
 
-    ![Feldliste](./media/data-platform-cds-create-entity/addedfields.png "Liste der Felder")
+    ![Felderliste](./media/data-platform-cds-create-entity/addedfields.png "Liste der Felder")
 
     Beachten Sie, dass alle Entitäten schreibgeschützte Systemfelder haben. Systemfelder werden standardmäßig nicht in der Liste der Felder angezeigt, obwohl sie in die Entität vorhanden sind. Um alle Felder anzuzeigen, ändern Sie den Filter in der Befehlsleiste von **Standard** auf **Alle**. Weitere Informationen zu den Metadaten, die sich auf eine Entität beziehen, finden Sie unter [Entitätsmetadaten](../../developer/common-data-service/entity-metadata.md).
 

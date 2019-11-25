@@ -1,5 +1,5 @@
 ---
-title: Deinstallieren oder Löschen einer Lösung (Common Data Service) | Microsoft Docs
+title: Eine Lösung deinstallieren oder löschen (Common Data Service) | Microsoft-Dokumentation
 description: Dieses Dokument enthält Beschreibungen zum Deinstallieren und Löschen für verwaltete und nicht verwaltete Lösung in Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 851f899dd420fbd781ad0c216589eaf310859945
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748518"
 ---
 # <a name="uninstall-or-delete-a-solution"></a>Deinstallieren oder Löschen einer Lösung
 

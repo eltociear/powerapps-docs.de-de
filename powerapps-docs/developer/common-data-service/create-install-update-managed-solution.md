@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen, importieren oder aktualisieren einer verwalteten Lösung (Common Data Service) | Microsoft Docs'
+title: Erstellen, Installieren und Aktualisieren einer verwalteten Lösung (Common Data Service) | Microsoft-Dokumentation
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9c9fe500fc2f3a7991b09c346b4fd931f8802160
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748426"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>Eine verwaltete Lösung erstellen, installieren und aktualisieren
 

@@ -1,49 +1,51 @@
 ---
 title: 'Exemplarische Vorgehensweise: Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde (Common Data Service) | Microsoft Docs'
-description: 'Diese exemplarische Vorgehensweise zeigt das Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde.'
+description: Diese exemplarische Vorgehensweise zeigt das Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde.
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 10/06/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 66795838-3b15-bfb3-6f59-68cfe2fe988e
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 969660edb15b7be94921e4d16050699ca145ec4a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748502"
 ---
-
 # <a name="tutorial-update-a-service-endpoint-imported-from-a-solution"></a>Tutorial: Aktualisieren eines Dienstendpunkts, der aus einer Lösung importiert wurde
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-update-service-endpoint-imported-solution -->
 
 Ein extre Schritt ist nach dem Import einer Lösung, die mindestens einen Dienstendpunkt enthält, der für die SAS-Autorisierung konfiguriert ist in eine Organisation erforderlich. Wenn die Lösung mit den Dienstendpunkten exportiert wird, enthält die exportierte Lösung nicht den SAS-Schlüssel für jeden Dienstendpunkt. Nachdem Sie die Lösung in eine Organisation Importiert haben, müssen Sie einen weiteren Schritt ausführen, um den SAS-Schlüssel für jeden Dienstendpunkt bereitzustellen.  
   
- Gehen Sie folgendermaßen vor, um den SAS-Schlüssel für jeden Dienstendpunkt nach dem Lösungsimport festzulegen.  
+Gehen Sie folgendermaßen vor, um den SAS-Schlüssel für jeden Dienstendpunkt nach dem Lösungsimport festzulegen.  
   
-### <a name="update-the-sas-key"></a>SAS-Schlüssel aktualisieren  
+## <a name="update-the-sas-key"></a>SAS-Schlüssel aktualisieren  
   
-1.  Führen Sie das Plug-In-Registrierungstool aus. Sie finden es im Ordner "Tools" des SDK-Downloads Dynamics CRM 2016 Service Pack 1 On-Premises (oder höher). Vorherige Versionen des Tools unterstützen die SAS-Autorisierung nicht.  
+1. Führen Sie das Plugin Registration Tool aus, das unter NuGet heruntergeladen werden kann. Weitere Informationen: [Tools von NuGet herunterladen](download-tools-nuget.md)
   
-2.  Verwenden Sie das Tools, um sich bei der Organisation anzumelden, die die importierte Lösung enthält.  
+1. Melden Sie sich über das Plugin Registration Tool bei der Organisation an, die die importierte Lösung enthält.  
   
-3.  Wählen Sie den Ziel-Dienstendpunkt in der Registerkartenansicht der Organisation aus.  
+1. Wählen Sie den Ziel-Dienstendpunkt in der Registerkartenansicht der Organisation aus.  
   
-4.  Wählen Sie **Aktualisieren**. Sie sollten das folgende Formular mit ausgefüllten Feldern sehen.  
+1. Wählen Sie **Aktualisieren**. Sie sollten das folgende Formular mit ausgefüllten Feldern sehen.  
   
- ![Aktualisieren des SAS-Schlüsselwerts des Dienstendpunkts](media/sas-key.PNG "Aktualisieren des SAS-Schlüsselwerts des Dienstendpunkts")  
+    ![SAS-Schlüsselwert zum Aktualisieren des Dienstendpunkts](media/sas-key.PNG "SAS-Schlüsselwert zum Aktualisieren des Dienstendpunkts")  
   
-5.  Das Feld **SAS-Schlüssel** wird mit dem Wert "*******" angezeigt.  Ersetzen Sie diesen Wert durch den entsprechenden SAS-Schlüsselwert. Sie erhalten den SAS-Schlüssel für Ihre Azure-Messaging-Entität (Thema, Warteschlange usw.) im [klassischen Portal](http://manage.windowsazure.com) von Azure.  
+1. Das Feld **SAS-Schlüssel** wird mit dem Wert "*******" angezeigt.  Ersetzen Sie diesen Wert durch den entsprechenden SAS-Schlüsselwert. Sie erhalten den SAS-Schlüssel für Ihre Azure-Messaging-Entität (Warteschlange, Thema usw.) im [Azure-Portal](https://portal.azure.com).  
   
-6.  Wählen Sie **Speichern** aus.  
+1. Wählen Sie **Speichern** aus.  
   
-### <a name="see-also"></a>Siehe auch  
-[Azure-Integration für Dynamics 365](azure-integration.md)
+### <a name="see-also"></a>Siehe auch
 
- [Service Bus-Authentifizierung und -Autorisierung](https://azure.microsoft.com/documentation/articles/service-bus-authentication-and-authorization/)
+[Azure-Integration](azure-integration.md)<br />
+[Service Bus-Authentifizierung und -Autorisierung](/azure/service-bus-messaging/service-bus-authentication-and-authorization)<br />
+[Service Bus Access Control mit Shared Access Signatures](/azure/service-bus-messaging/service-bus-sas)

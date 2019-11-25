@@ -1,21 +1,26 @@
 ---
 title: Verwenden des Common Data Service Organization Service (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie mit dem Common Data Service Organization Service mit Daten und Metadaten arbeiten können.'
+description: Lesen Sie, wie Sie mit dem Common Data Service Organization Service mit Daten und Metadaten arbeiten können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2d32c212a3b6c8f95f3de078d6849356ef3853c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748534"
 ---
-
 # <a name="use-the-common-data-service-organization-service"></a>Verwenden Sie den Common Data Service Organization Service.
 
 Der Organization-Service ist einer von zwei Webservices, mit denen Sie mit Daten und Metadaten in Common Data Service arbeiten können. Der andere ist die [Web-API](../webapi/overview.md).

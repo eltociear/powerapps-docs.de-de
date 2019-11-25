@@ -1,26 +1,32 @@
 ---
 title: Überlegungen zur Berichterstattung | MicrosoftDocs
-ms.custom: null
+ms.custom: ''
 ms.date: 09/27/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 for Customer Engagement (online)
-  - powerapps
+- Dynamics 365 for Customer Engagement (online)
+- powerapps
 ms.assetid: cb1bb002-8300-43bb-ab75-99e7a9c9c35d
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - MigrationHO
+- MigrationHO
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: d3600ad3c1f0953ff3aef5786c62afebca43b4c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755045"
 ---
 # <a name="reporting-considerations"></a>Berichterstellungsüberlegungen
 
@@ -65,7 +71,7 @@ Modellbasierte Anwendungen verfügen über eine Reihe von Funktionen, die es Kun
 <a name="BKMK_ThirdPartyAdapt"></a>   
 ## <a name="third-party-adapters-for-ssis"></a>Adapter von Drittanbietern für SSIS  
   
--   [CozyRoc SSIS+ Komponente für Dynamics 365/CRM](http://www.cozyroc.com/ssis/dynamics-crm)  
+-   [CozyRoc SSIS+ Komponente für Dynamics 365/CRM](https://www.cozyroc.com/ssis/dynamics-crm)  
   
 -   [KingswaySoft SSIS Integration Toolkit für Dynamics 365](https://www.kingswaysoft.com/products/ssis-integration-toolkit-for-microsoft-dynamics-365)  
   
@@ -73,7 +79,7 @@ Modellbasierte Anwendungen verfügen über eine Reihe von Funktionen, die es Kun
   
 -   [Team4 SSIS Connector für Dynamics 365](https://www.team4.de/microsoft-dynamics-365-crm/)  
   
-<!--    [PragmaticWorks TaskFactory SSIS Source/Destination for Dynamics CRM](http://pragmaticworks.com/Products/Task-Factory/Features/DynamicsCRMSource.aspx)  -->
+<!--    [PragmaticWorks TaskFactory SSIS Source/Destination for Dynamics CRM](https://pragmaticworks.com/Products/Task-Factory/Features/DynamicsCRMSource.aspx)  -->
   
 <a name="BKMK_ETL"></a>   
 ## <a name="etl-tools"></a>ETL-Tools  
@@ -83,9 +89,9 @@ Modellbasierte Anwendungen verfügen über eine Reihe von Funktionen, die es Kun
 <!--   [Productivity tools from Informatica](https://community.informatica.com/community/search.jspa?peopleEnabled=true&userID=&containerType=14&container=2002&spotlight=true&resultTypes=solution&q=dynamics+CRM)  -->
   
 ### <a name="see-also"></a>Siehe auch  
- [Berichterstellungserweiterung (mit SQL Server Data Tools-Unterstützung)](http://www.microsoft.com/download/details.aspx?id=45013) <br />
+ [Berichterstellungserweiterung (mit SQL Server Data Tools-Unterstützung)](https://www.microsoft.com/download/details.aspx?id=45013) <br />
   
- [Einführung in Microsoft Power Query für Excel](http://office.microsoft.com/en-ca/excel-help/introduction-to-microsoft-power-query-for-excel-HA104003940.aspx?CTT=5&origin=HA104003813)   <br />
- [Dynamics 365 für Customer Engagement OData Feeds und Power Query: Was ist der [Datensatz]?](https://community.dynamics.com/crm/b/survivingcrm/archive/2014/02/16/dynamics-crm-odata-feeds-and-power-query-what-s-the-record.aspx)   <br />
+ [Einführung in Microsoft Power Query für Excel](https://office.microsoft.com/en-ca/excel-help/introduction-to-microsoft-power-query-for-excel-HA104003940.aspx?CTT=5&origin=HA104003813)   <br />
+ [Dynamics 365 for Customer Engagement OData Feeds und Power Query: Was ist der [Datensatz]?](https://community.dynamics.com/crm/b/survivingcrm/archive/2014/02/16/dynamics-crm-odata-feeds-and-power-query-what-s-the-record.aspx)   <br />
  
 

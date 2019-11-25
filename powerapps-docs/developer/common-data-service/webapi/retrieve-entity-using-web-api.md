@@ -1,6 +1,6 @@
 ---
-title: Abrufen einer Entität mit Web-API (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie eine GET-Anforderung mit der Common Data Service-Web-API anfordern, um Daten für eine Entität abzurufen, die als die Ressource mit einem eindeutigen Bezeichner angegeben wurde'
+title: Abrufen eines Entitätsdatensatzes mit der Web-API (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie eine GET-Anfrage mit der Common Data Service-Web-API stellen, um Daten für eine Entität abzurufen, die als die Ressource mit einem eindeutigen Bezeichner angegeben wurde
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: abae4614-9e03-45e7-94fa-9e6e7225ece5
 caps.latest.revision: 21
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 767c0ed29643c51057d9f3d794136dc56915e161
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753678"
 ---
+# <a name="retrieve-an-entity-record-using-the-web-api"></a>Abrufen eines Entitätsdatensatzes mit der Web-API
 
-# <a name="retrieve-an-entity-using-the-web-api"></a>Abrufen einer Entität mithilfe des Web-API
-
-Verwenden Sie eine `GET`-Anfrage, um Daten für eine Entität abzurufen, spezifiziert als Ressource mit einzigartigem Bezeichner. Wenn Sie eine Entität abrufen, können Sie auch spezifische Eigenschaften anfordern und Navigationseigenschaften erweitern, um Eigenschaften von den verbundenen Unternehmen zurückgeben zu lassen.  
+Verwenden Sie eine `GET`-Anfrage, um Daten für eine Entität abzurufen, spezifiziert als Ressource mit einzigartigem Bezeichner. Wenn Sie einen Entitätsdatensatz abrufen, können Sie auch spezifische Eigenschaften anfordern und Navigationseigenschaften erweitern, um Eigenschaften von den verwandten Entitäten zurückgeben zu lassen.  
 
 > [!NOTE]
 >  Informationen zum Abrufen von Entitätsmetadaten, siehe [Abfragen von Metadaten mit der Web-API](query-metadata-web-api.md).
@@ -39,7 +44,7 @@ Dieses Beispiel gibt Daten für eine Firmenentitätsinstanz mit dem Primärschl�
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)
 ```
 
-Um mehrere Entitäten gleichzeitig abzurufen, seihe [Grundlegendes Abfragebeispiel](query-data-web-api.md#bkmk_basicQuery) in [Abfragen von Daten mit Internet-API](query-data-web-api.md).
+Um mehrere Entitätsdatensätze gleichzeitig abzurufen, siehe das Thema [Grundlegendes Abfragebeispiel](query-data-web-api.md#bkmk_basicQuery) in [Abfragen von Daten mit der Web-API](query-data-web-api.md).
 
 > [!CAUTION]
 >  Das oben genannte Beispiel gibt alle Eigenschaften für den Firmendatensatz zurück, was die Leistung beim Abruf von Daten senkt. Dieses Beispiel war nur dazu gedacht, zu veranschaulichen, wie Sie einen grundlegenden Abruf einer Entitätsinstanz in Common Data Service tätigen können. Weil alle Eigenschaften zurückgegeben wurden, haben wir die Antwortinformation für die Anfrage nicht in dieses Beispiel aufgenommen.
@@ -52,7 +57,7 @@ Um mehrere Entitäten gleichzeitig abzurufen, seihe [Grundlegendes Abfragebeispi
 
 Verwenden Sie die `$select` Systemabfrageoption, um die Eigenschaften zu begrenzen, die zurückgegeben werden, indem Sie eine kommagetrennte Liste von Eigenschaftsnamen einschließen. Dies ist eine wichtige Methode für die Leistungssteigerung. Wenn Eigenschaften nicht mithilfe von `$select`angegeben wurden, werden alle Eigenschaften zurückgegeben.  
 
-Das folgende Beispiel ruft die Eigenschaften `name` ind `revenue` für die Firmenentität mit dem Primärschlüssel gleich 00000000-0000-0000-0000-000000000001 ab.
+Das folgende Beispiel ruft die Eigenschaften `name` und `revenue` für die Firmenentität mit dem Primärschlüssel gleich 00000000-0000-0000-0000-000000000001 ab.
 
 **Anforderung**
 ```http
@@ -94,6 +99,11 @@ Wenn eine Entität einen definierten Alternativschlüssel hat, können Sie auch 
 
 ```http
 GET [Organization URI]/api/data/v9.0/contacts(firstname='Joe',emailaddress1='abc@example.com')
+```
+Wenn die Alternativschlüsseldefinition ein Suchtyp-Feld (z. B. die primarycontactid-Eigenschaft für die Firmenentität) enthält, können Sie die Firma mit der [Sucheigenschaft](/powerapps/developer/common-data-service/webapi/web-api-types-operations#lookup-properties) abrufen, wie hier angezeigt.
+
+```http
+GET [Organization URI]/api/data/v9.0/accounts(_primarycontactid_value=00000000-0000-0000-0000-000000000001) 
 ```
 
 Immer, wenn Sie eine Entität zum Abruf, Update oder Löschen eindeutig identifizieren müssen, können Sie Alternativschlüssel verwenden, die für die Entität konfiguriert sind. Standardmäßig sind keine Alternativschlüssel für Entitäten konfiguriert. Alternativschlüssel sind nur verfügbar, wenn die Organisation sie hinzufügt.
@@ -311,7 +321,7 @@ Wenn Sie einfach den Namen der Navigationseigenschaft einschließen, rufen Sie a
   ```
   
  > [!NOTE]
- > Wenn Sie auf sammlungswertige Navigationsparameter erweitern, um verbundene Entitäten für *Entitätssätze* zurückzugeben, wird stattdessen eine @odata.nextLink-Eigenschaft für die verbundenen Entitäten zurückgegeben. Sie sollten den Wert der @odata.nextLink-Eigenschaft mit einer neuen GET-Anforderung nutzen, um die benötigten Daten zurückzugeben. Weitere Informationen: [Abrufen verwandter Entitäten durch Erweitern der Navigationseigenschaften](query-data-web-api.md#bkmk_expandRelated)
+ > Wenn Sie auf sammlungswertige Navigationsparameter erweitern, um verbundene Entitäten für *Entitätssätze* zurückzugeben, wird stattdessen eine a @odata.nextLink-Eigenschaft für die verbundenen Entitäten zurückgegeben. Sie sollten den Wert der @odata.nextLink-Eigenschaft mit einer neuen GET-Anforderung nutzen, um die benötigten Daten zurückzugeben. Weitere Informationen: [Abrufen verwandter Entitäten durch Erweitern der Navigationseigenschaften](query-data-web-api.md#bkmk_expandRelated)
 
 - **Rufen Sie verbundene Entitäten für eine Entitätsinstanz durch Erweitern von einzelwertigen und sammlungswertigen Navigationseigenschaften ab**: Das folgende Beispiel zeigt, wie Sie verbundene Entitäten für eine Entitätsinstanz unter Verwendung der einzel- und sammlungswertigen Navigationseigenschaften erweitern können.  
 
@@ -382,7 +392,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 ```
 
 > [!NOTE]
-> Dieses ist eine Teilmenge der Systemabfrageoptionen, die im Abschnitt "11.2.4.2.1 Expand Options" der [OData Version 4.0 Part 1: Protocol Plus Errata 02 beschrieben werden](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) beschrieben werden. Die Optionen`$skip`, `$count`, `$search`, `$expand` und `$levels` werden für die Web-API nicht unterstützt.
+> Dieses ist eine Teilmenge der Systemabfrageoptionen, die im Abschnitt "11.2.4.2.1 Expand Options" der [OData Version 4.0 Part 1: Protocol Plus Errata 02 beschrieben werden](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) beschrieben werden. Die Optionen`$skip`, `$count`, `$search`, `$expand` und `$levels` werden für die Web-API nicht unterstützt.
 
 <a name="bkmk_DetectIfChanged"></a>
 

@@ -1,6 +1,6 @@
 ---
 title: 'Lernprogramm: Schreiben und Registrieren eines Plug-Ins (Common Data Service) | Microsoft Docs'
-description: 'Dieses Lernprogramm ist das erste in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten.'
+description: Dieses Lernprogramm ist das erste in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten.
 ms.custom: ''
 ms.date: 02/23/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0c7f4bf3c380c7cb0dfbc3466093f0687ded7473
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748521"
 ---
 # <a name="tutorial-write-and-register-a-plug-in"></a>Lernprogramm: Schreiben und Registrieren eines Plugins
 

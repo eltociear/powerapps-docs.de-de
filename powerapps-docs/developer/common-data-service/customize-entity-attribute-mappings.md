@@ -1,6 +1,6 @@
 ---
-title: Anpassen von Entitäts- und Attribut-Zuordnungen in PowerApps (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie mehr über das Zuordnen von Attributen zwischen Entitäten, die eine Entitätsbeziehung in PowerApps haben. Hiermit können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird.'
+title: Anpassen von Entitäten und Attributzuordnungen in PowerApps (Common Data Service) | Microsoft-Dokumentation
+description: Informationen zum Zuordnen von Attributen zwischen Entitäten, die eine Entitätsbeziehung in PowerApps haben. Hiermit können Sie Standardwerte für einen Datensatz festlegen, der im Kontext eines anderen Datensatzes erstellt wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 78a1eb011591afc09ded37be89031947d0f2b9ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748565"
 ---
 # <a name="customize-entity-and-attribute-mappings"></a>Anpassen von Entitäts- und Attributzuordnungen
 
@@ -44,7 +50,7 @@ Die Antwort, die von InitializeFrom-Anforderung empfangen wird, besteht aus zuge
 > [!NOTE] 
 > So bestimmen Sie, ob zwei Entitäten mit der folgenden Web-API-Anforderung zugeordnet werden können:<br/>`GET [Organization URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname`
 
-Weitere Informationen finden Sie unter [Erstellen einer neuen Entität aus einer anderen Entität](webapi/create-entity-web-api.md#create-a-new-entity-from-another-entity).
+Weitere Informationen finden Sie unter [Erstellen eines neuen Entitätsdatensatzes aus einer anderen Entität](webapi/create-entity-web-api.md#create-a-new-entity-record-from-another-entity).
 
 ### <a name="using-organization-service"></a>Mit Organisationsservice
 

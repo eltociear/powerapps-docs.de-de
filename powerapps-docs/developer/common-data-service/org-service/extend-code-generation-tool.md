@@ -1,19 +1,25 @@
 ---
-title: Erstellen von Erweiterungen für die Generierung von Codetools (Common Data Service) | Microsoft Docs
-description: 'Das SDK-Downloadpaket enthält eine Erweiterung für das CrmSvcUtil-Codegenerierungstool, das Sie verwenden können, um Enumerationen für alle Optionssatzwerte, einschließlich globaler Optionssätze, Auswähllisten, Status und Statuswerte zu generieren.'
+title: Erstellen von Erweiterungen für das Codegenerierungstool (Common Data Service) | Microsoft-Dokumentation
+description: Das SDK-Downloadpaket enthält eine Erweiterung für das CrmSvcUtil-Codegenerierungstool, das Sie verwenden können, um Enumerationen für alle Optionssatzwerte, einschließlich globaler Optionssätze, Auswähllisten, Status und Statuswerte zu generieren.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fdeea48a4bcdb996580d542a01a61fef22625b98
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748398"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>Erstellen von Erweiterungen für das Codegenerierungstool
 

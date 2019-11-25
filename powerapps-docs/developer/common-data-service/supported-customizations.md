@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Anpassungen für Common Data Service (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie Common Data Service mit Hilfe von Tools anpassen können, die im Portal PowerApps verfügbar sind oder die in den Dokumenten beschrieben sind.'
+description: Lesen Sie, wie Sie Common Data Service mit Hilfe von Tools anpassen können, die im Portal PowerApps verfügbar sind oder die in den Dokumenten beschrieben sind.
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -10,12 +10,17 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e595ca13e4aac62861c6b00b5af0967ff1e9ad2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748638"
 ---
-
 <!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
  -->

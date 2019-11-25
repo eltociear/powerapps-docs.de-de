@@ -1,6 +1,6 @@
 ---
 title: Abfragen und Bearbeiten eines Organisationsdesigns (modellgestützte Apps) | MicrosoftDocs
-description: 'Infos zum Definieren und Anwenden von Sichtdesignen für eine Organisation. Dies bietet eine unterstützte Methode, um das Logo und die Farbauswahl einer Organisation für die Anwendung zu übernehmen.'
+description: Infos zum Definieren und Anwenden von Sichtdesignen für eine Organisation. Dies bietet eine unterstützte Methode, um das Logo und die Farbauswahl einer Organisation für die Anwendung zu übernehmen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8abda26be50d31f734d3143c9cfa79b38fd3f130
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753598"
 ---
 # <a name="query-and-edit-an-organization-theme"></a>Abfragen und Bearbeiten eines Organisationsdesigns
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
 
 Sie können visuelle Designs für eine Organisation definieren und anwenden. Dies bietet eine unterstützte Methode, um das Logo und die Farbauswahl einer Organisation für die Anwendung zu übernehmen. Sie können ein angepasstes Design für Ihre Anwendung erstellen, indem Sie Änderungen an den Standardfarben und visuellen Elementen im nicht benutzerdefinierten System modellgestützter Apps vornehmen. Sie können beispielsweise Ihr persönliches Produktbranding erstellen, ein Unternehmenslogo hinzufügen und entitätsspezifischen Farbton zur Verfügung stellen. Die Designfarben werden global bei der Anwendung übernommen, mit Ausnahme einiger Vorgängerbereiche.  
   
@@ -26,7 +32,7 @@ Sie können visuelle Designs für eine Organisation definieren und anwenden. Die
   
  Die Designanpassung wird in dieser Version nur für die Webanwendung unterstützt. Änderungen, die für das Design einer Organisation vorgenommen werden, sind nicht in Lösungen enthalten, die von der Organisation exportiert werden. Sie können mehrere Designs definieren, jedoch kann nur eins als das Standarddesign festgelegt und veröffentlicht werden.  
   
- Video: [Designs](http://go.microsoft.com/fwlink/p/?LinkId=529568)  
+ Video: [Designs](https://go.microsoft.com/fwlink/p/?LinkId=529568)  
   
 <a name="BKMK_QueryTheme"></a>
 

@@ -1,6 +1,6 @@
 ---
-title: Abrufen und Ausführen von vordefinierten Abfragen (Common Data Service) | Microsoft Docs
-description: 'Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Lesen Sie, wie Sie eine vordefinierte Abfrage mit FetchXML verfassen können, um eine Abfragezeichenfolge zu erstellen, um die Daten abzurufen'
+title: Abrufen und Ausführen von vordefinierten Abfragen (Common Data Service)| Microsoft-Dokumentation
+description: Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Lesen Sie, wie Sie eine vordefinierte Abfrage mit FetchXML verfassen können, um eine Abfragezeichenfolge zu erstellen, um die Daten abzurufen
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3d771a18-3dc5-4372-a7c7-40b3b1f986d8
 caps.latest.revision: 16
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e805a4919bcdfa8b61c097dc09455f7ca5783999
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753682"
 ---
-
 # <a name="retrieve-and-execute-predefined-queries"></a>Abrufen und Ausführen von vordefinierten Abfragen
 
 Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu erstellen, die für alle Benutzer verfügbar sind. Einzelne Benutzer können die erweiterten Suchanfragen speichern und in der Anwendung wiederverwenden. Beide stellen vordefinierte Abfragen dar die Sie mit der Web-API abrufen und ausführen können. Sie können eine Abfrage auch mit FetchXml erstellen und zum Abfragen von Daten nutzen.
@@ -30,7 +35,7 @@ Common Data Service bietet Administratoren eine Möglichkeit, Systemansichten zu
 
 ## <a name="predefined-queries"></a>Vordefinierte Abfragen
 
-Common Data Service erlaubt Ihnen, wie hier aufgelistet zwei Arten von Abfragen zu definieren, zu speichern und durchzuführen.
+Common Data Service erlaubt Ihnen, zwei Arten von Abfragen zu definieren, zu speichern und durchzuführen, wie hier aufgelistet.
 
 |Abfragetyp|Beschreibung|
 |----------------|-----------------|
@@ -86,7 +91,7 @@ Der URL-verschlüsselte Wert von diesem FetchXML ist wie hier gezeigt.
 %3Cfetch%20mapping='logical'%3E%3Centity%20name='account'%3E%3Cattribute%20name='accountid'/%3E%3Cattribute%20name='name'/%3E%3C/entity%3E%3C/fetch%3E
 ```
 
-Die meisten Programmiersprachen umfassen eine Funktion zum URL-Codieren einer Zeichenfolge. Beispiel: In JavaScript verwenden Sie die [encodeURI](http://www.ecma-international.org/ecma-262/5.1/)-Funktion. Sie sollten jede Anforderung URL-Codieren, die Sie an einen RESTful-Webdienst senden. Wenn Sie eine URL in die Adressleiste Ihres Browsers eingeben, sollte diese die Adresse automatisch URL-codieren. Das folgende Beispiel zeigt eine GET-Anforderung, die das vorher gezeigte FetchXML einsetzt, die den Entitätspfad für Konten verwendet.
+Die meisten Programmiersprachen umfassen eine Funktion zum URL-Codieren einer Zeichenfolge. Beispiel: In JavaScript verwenden Sie die [encodeURI](https://www.ecma-international.org/ecma-262/5.1/)-Funktion. Sie sollten jede Anforderung URL-Codieren, die Sie an einen RESTful-Webdienst senden. Wenn Sie eine URL in die Adressleiste Ihres Browsers eingeben, sollte diese die Adresse automatisch URL-codieren. Das folgende Beispiel zeigt eine GET-Anforderung, die das vorher gezeigte FetchXML einsetzt, die den Entitätspfad für Konten verwendet.
 
 **Anforderung**
 

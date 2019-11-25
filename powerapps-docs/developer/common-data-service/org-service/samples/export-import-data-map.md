@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel: Exportieren und importieren von Datenzuordnung (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie Sie eine Datenzuordnung erstellen und diese exportieren'
+title: 'Beispiel: Exportieren und Importieren einer Datenzuordnung (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel veranschaulicht, wie Sie eine Datenzuordnung erstellen und diese exportieren
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce8aa1363ea0e9abdc48043ce7730880ff720c52
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748745"
 ---
 # <a name="sample-export-and-import-a-data-map"></a>Beispiel: Exportieren und Importieren einer Datenzuordnung
 
@@ -36,7 +42,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 1. Prüft auf aktuelle Version der Organisation. 
 2. Die `CreateImportMapping` Methode erstellt den Importzuordnungsdatensatz.
 3. Die `RetrieveMappingXML` Methode exportiert die Zuordnung, die erstellt werden.
-4. Die `ChangeMappingName`-Methode veranlasst, dass  XML das Namensattribut ändert.
+4. Die `ChangeMappingName`-Methode veranlasst, dass XML das Namensattribut ändert.
 
 ### <a name="clean-up"></a>Bereinigung
 

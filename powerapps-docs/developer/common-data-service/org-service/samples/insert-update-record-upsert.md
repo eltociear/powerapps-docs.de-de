@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Datensatz mithilfe von Upsert einfügen oder aktualisieren (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Datensätze mithilfe der Message Upsert eingefügt oder aktualisiert werden.'
+title: 'Beispiel: Einen Datensatz mit Upsert einfügen oder aktualisieren (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Datensätze mithilfe der Message Upsert eingefügt oder aktualisiert werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d12bd93c3aa25fb2f2b1b426e680ef69e9f0006e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748742"
 ---
 # <a name="sample-insert-or-update-a-record-using-upsert"></a>Beispiel: Einen Datensatz mit Upsert einfügen oder aktualisieren
 

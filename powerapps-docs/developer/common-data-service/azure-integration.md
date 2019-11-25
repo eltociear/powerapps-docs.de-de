@@ -6,14 +6,20 @@ ms.date: 06/01/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5d5bce76dd9e123d6d6c5db1e8d1dc59293471f2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753058"
 ---
 # <a name="azure-integration"></a>Azure-Integration
 
@@ -89,7 +95,7 @@ Identifizieren wir nun ein Szenario, das die vorher erwähnten Verbingungskompon
   
 Das folgende Diagramm zeigt die physischen Elemente an, die das Szenario bilden.  
   
-![Dynamics 365-zu-Service Bus-Szenario](media/crm-v5s-az.png "Common Data Service-zu-Service Bus-Szenario")  
+![Ein Dynamics 365-zu-Service Bus-Szenario](media/crm-v5s-az.png "Common Data Service zum Sevicebus-Szenario")  
   
 Die Ereignisreihenfolge in diesem Diagramm ist die folgende:  
   
@@ -131,7 +137,7 @@ Ein REST-Vertrag ist einem bidirektionalen Vertrag auf einem REST-Endpunkt ähnl
 Diese Vertragsart gilt für Azure Event Hub-Lösungen.  
   
 > [!IMPORTANT]
->  Um diese Verträge nutzen zu können, müssen Sie Ihre Listener-Anwendungen mit dem [Azure SDK](http://www.windowsazure.com/develop/downloads/) v1.7 oder höher schreiben.  
+>  Um diese Verträge nutzen zu können, müssen Sie Ihre Listener-Anwendungen mit dem [Azure SDK](https://www.windowsazure.com/develop/downloads/) v1.7 oder höher schreiben.  
   
 Die Identifikation der Sicherheit, die ein Vertrag verwendet, ist Teil seiner Konfiguration. Ein Vertrag kann die Transportsicherheit verwenden, die Transport Layer Security (TLS) oder Secure Sockets Layer (SSL) (HTTPS) verwendet.  
   

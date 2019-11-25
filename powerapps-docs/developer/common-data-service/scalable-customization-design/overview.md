@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Übersicht (Common Data Service) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Übersicht (Common Data Service) | Microsoft-Dokumentation'
 description: 'Das erste in einer Reihe von Themen. In diesem Thema werden Symptome vorgestellt, die auftreten können, wenn Code-Anpassungen nicht optimiert werden, und die Einschränkungen, die Code-Anpassungen innerhalb derer durchführen müssen, um sie zu vermeiden. '
 ms.custom: ''
 ms.date: 1/15/2019
@@ -10,10 +10,16 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4584904aa50bc4b4b9ec2fb75322a884c1aa8cfa
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748649"
 ---
 # <a name="scalable-customization-design-in-common-data-service"></a>Skalierbares Anpassungsdesign in Common Data Service
 
@@ -21,7 +27,7 @@ search.app:
 > Dies ist der erste in einer Reihe von Themen über skalierbares Anpassungsdesign. Obwohl dieser Inhalt in einzelne Themenbereiche unterteilt wurde, bietet er einen ganzheitlichen Überblick über Konzepte, Probleme und Strategien rund um das Design skalierbarer Anpassungen. Jedes Thema baut auf den Konzepten der vorangegangenen Themen auf.
 > Sie können diese [Themen als einzelnes PDF-Dokument herunterladen](/powerapps/opbuildpdf/developer/common-data-service/scalable-customization-design/TOC.pdf?branch=live), wenn Sie sie offline lesen möchten.
 
-Common Data Service wurde entwickelt, um sich und seine Benutzer vor lang laufenden Aktivitäten zu schützen, die sowohl die Antwortzeiten für den anfragenden Benutzer als auch die Stabilität und Reaktionsfähigkeit des Systems für andere Benutzer beeinflussen könnten.
+Common Data Service wurde entwickelt, um sich und seine Benutzer vor zeitintensiven Aktivitäten zu schützen, die sowohl die Antwortzeiten für den anfragenden Benutzer als auch die Stabilität und Reaktionsfähigkeit des Systems für andere Benutzer beeinflussen könnten.
 
 Eine Herausforderung für einige Anwender bei der Implementierung von Common Data Service-Lösungen sind Fehler, die von der Plattform oder der zugrunde liegenden Microsoft SQL Server-Datenbank verursacht werden, wenn diese Schutzmaßnahmen wirksam werden. Dies wird oft als die Plattform interpretiert, die nicht in der Lage ist, Anfragen an das System zu skalieren oder falsch zu terminieren oder zu drosseln.
 
@@ -51,7 +57,7 @@ Diese Art von Problemen weist typischerweise eine Kombination von häufigen Symp
 
 In Wirklichkeit kann und wird eine Kombination dieser Symptome oft zusammen gemeldet, wenn diese Herausforderungen auftreten. Es ist nicht immer der Fall, dass diese Symptome ein Indikator für Probleme mit dem Design sind. Andere Probleme, wie z.B. Einschränkungen der Festplatten-I/O in der Datenbank oder ein Produktfehler, können ähnliche Symptome verursachen. Aber die häufigste Ursache für diese Art von Symptomen, und damit eine, auf die es sich zu prüfen lohnt, bezieht sich direkt auf das Design der benutzerdefinierten Implementierung und wie sie sich auf das System auswirkt. 
 
-> *Warum sollten wir uns Sorgen machen? Kümmert sich Common Data Service nicht einfach darum..?*
+> *Warum sollten wir uns Sorgen machen? Kümmert sich Common Data Service nicht einfach darum ...?*
 
 Es tut, was es kann... Aber es verwendet Sperren und Transaktionen, um das System bei Bedarf vor Konflikten zu schützen.
 
@@ -73,7 +79,7 @@ Wenn die Plattform bestimmungsgemäß genutzt und eine Implementierung optimiert
 
 Im Mittelpunkt dieser Einschränkungen steht die Idee, dass die Common Data Service-Plattform so konzipiert ist, dass sie eine transaktionale Mehrbenutzeranwendung unterstützt, bei der eine schnelle Reaktion auf die Benutzernachfrage im Vordergrund steht. Es ist nicht als Plattform für Langzeit- oder Stapelverarbeitung gedacht. Es ist möglich, eine Reihe von kurzen Anfragen an Common Data Service zu senden, aber Common Data Service ist nicht für die Stapelverarbeitung ausgelegt. Ebenso ist Common Data Service bei Aktivitäten mit großer iterativer Verarbeitung nicht für diese iterative Verarbeitung ausgelegt.
 
-In diesen Szenarien kann ein separater Dienst verwendet werden, um den lang laufenden Prozess zu hosten und kürzere transaktionale Anfragen an Common Data Service selbst zu leiten. Beispielsweise ist es viel besser, Flow zu verwenden oder Microsoft SQL Server Integration Services (SSIS) anderweitig zu hosten und dann einzelne Erstellungs- oder Aktualisierungsanforderungen an Common Data Service zu leiten, als mit einem Plug-in Tausende von Datensätzen, die in Common Data Service erstellt werden, durchzugehen.
+In diesen Szenarien kann ein separater Dienst verwendet werden, um den zeitintensiven Prozess zu hosten und kürzere transaktionale Anfragen an Common Data Service selbst voranzutreiben. Beispielsweise ist es viel besser, Flow zu verwenden oder Microsoft SQL Server Integration Services (SSIS) anderweitig zu hosten und dann einzelne Erstellungs- oder Aktualisierungsanforderungen an Common Data Service zu leiten, als mit einem Plug-in Tausende von Datensätzen, die in Common Data Service erstellt werden, als Schleife zu durchlaufen.
 
 Es lohnt sich, die vorhandenen Plattformbeschränkungen zu kennen und zu verstehen, damit Sie sie in Ihrem Anwendungsdesign berücksichtigen können. Auch wenn Sie auf diese Fehler stoßen, können Sie verstehen, warum sie passieren und was Sie ändern können, um sie zu vermeiden.
 
@@ -83,7 +89,7 @@ Es lohnt sich, die vorhandenen Plattformbeschränkungen zu kennen und zu versteh
 |**SQL-Zeitüberschreitungen**|&bull; Anfragen an SQL Server Timeout bei 30 Sekunden<br />&bull; Schützt vor lang laufenden Anfragen<br />&bull; Bietet Schutz innerhalb eines bestimmten Unternehmens und seiner privaten Datenbank<br />&bull; Bietet auch Schutz auf der Ebene des Datenbankservers vor übermäßiger Nutzung gemeinsamer Ressourcen wie Prozessoren/Speicher|
 |**Workflow-Begrenzungen**|&bull; arbeitet nach einer Richtlinie für eine faire Nutzung.<br />&bull; Keine spezifischen harten Grenzen, sondern Ressourcenausgleich zwischen Unternehmen<br />&bull; Bei geringer Nachfrage kann ein Unternehmen die verfügbare Kapazität voll ausschöpfen. Bei hoher Nachfrage werden Ressourcen und Durchsatz geteilt.|
 |**Maximale gleichzeitige Verbindungen**|&bull; Es gibt eine Plattformvoreinstellung für eine maximale Verbindungspoolgrenze von 100 Verbindungen aus dem Webserver-Verbindungspool im IIS zur Datenbank. Common Data Service ändert diesen Wert nicht<br />&bull; Wenn Sie darauf treffen, ist es ein Hinweis auf einen Fehler im System; schauen Sie sich an, warum so viele Verbindungen blockieren.<br />&bull; Bei mehreren Webservern mit jeweils 100 gleichzeitigen Verbindungen zur Datenbank mit typischen &lt; 10ms schlägt dies einen Durchsatz von &gt; 10k Datenbankanforderungen für jeden Webserver vor. Dies sollte nicht erforderlich sein und würde andere Herausforderungen schon lange vorher treffen.|
-|**ExecuteMultiple**|&bull; Die Message `ExecuteMultiple` wurde entwickelt, um die Sammlung von Vorgängen zu unterstützen, die an Common Data Service von einer externen Quelle gesendet werden.<br />&bull; Die Verarbeitung großer Gruppen dieser Anfragen kann wichtige Ressourcen im Common Data Service auf Kosten von mehr antwortkritischen Anfragen von Benutzern binden, daher ist dies auf 2 gleichzeitige `ExecuteMultiple`-Anfragen pro Unternehmen beschränkt.|
+|**ExecuteMultiple**|&bull; Die `ExecuteMultiple`-Nachricht wurde entwickelt, um die Sammlung von Vorgängen zu unterstützen, die an Common Data Service von einer externen Quelle gesendet werden.<br />&bull; Die Verarbeitung großer Gruppen dieser Anfragen kann wichtige Ressourcen in Common Data Service auf Kosten von antwortkritischeren Anfragen von Benutzern binden, daher ist dies auf 2 gleichzeitige `ExecuteMultiple`-Anfragen pro Organisation beschränkt.|
 
 ## <a name="next-steps"></a>Nächste Schritte
 

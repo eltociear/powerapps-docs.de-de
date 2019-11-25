@@ -1,106 +1,106 @@
 - name: Aktivitäten
   items:
-    - name: Konvertieren eines Faxes in eine Aufgabe
+    - name: Konvertieren eines Faxes für eine Aufgabe
       href: convert-fax-task.md
-    - name: Erstellen einer E-Mail mithilfe einer Vorlage
+    - name: Erstellen einer E-Mail mit Hilfe einer Vorlage
       href: create-email-template.md
     - name: 'Erstellen, Abrufen, Aktualisieren und Löschen einer E-Mail-Anlage'
       href: create-retrieve-update-delete-email-attachment.md
-    - name: Höherstufen einer E-Mail
+    - name: Heraufstufen einer E-Mail-Nachricht
       href: promote-email-message.md
     - name: Abrufen von E-Mail-Anlagen für eine E-Mail-Vorlage
       href: retrieve-email-attachments-email-template.md
-    - name: Senden einer E-Mail mithilfe einer Vorlage
+    - name: Senden einer E-Mail mit Hilfe einer Vorlage
       href: send-email-template.md
-    - name: Senden einer E-Mail
+    - name: Eine E-Mail senden
       href: send-email.md
-    - name: Senden von Massen-E-Mail und Überwachen der Ergebnisse
+    - name: Senden von Massen-E-Mails und Überwachen der Ergebnisse
       href: send-bulk-email-monitor-results.md
     - name: Arbeiten mit Aktivitätsparteidatensätzen
       href: work-activity-party-records.md
 - name: Termine
   items:
-    - name: Vereinbaren eines Termins
+    - name: Buchen eines Termins
       href: book-appointment.md
     - name: Konvertieren eines Termins in eine Terminserie
       href: convert-appointment-recurring-appointment.md
-    - name: 'Erstellen, Abrufen, Aktualisieren und Löschen einer Terminserie'
+    - name: 'Einen wiederkehrenden Termin erstellen, abrufen, aktualisieren und löschen'
       href: create-retrieve-update-delete-recurring-appointment.md
-    - name: Beenden einer Terminserie
+    - name: Terminserie beenden
       href: end-recurring-appointment-series.md
-    - name: Verknüpfen benutzerdefinierter Attribute zwischen Serien und Instanzen
+    - name: Verknüpfen von benutzerdefinierten Attributen zwischen Reihen und Instanzen
       href: link-custom-attributes-between-series-instances.md
-    - name: Abfragen der Arbeitszeiten eines Benutzers
+    - name: Abfragen der Arbeitszeit eines Benutzers
       href: query-working-hours-user.md
-    - name: Abfragen der Arbeitszeiten mehrerer Benutzer
+    - name: Abfragen der Arbeitszeit von mehreren Benutzern
       href: query-working-hours-multiple-users.md
-    - name: Neuplanen und Abbrechen einer Terminserie
+    - name: Erneutes Planen und Stornieren eines Serientermins
       href: reschedule-cancel-recurring-appointment.md
-    - name: Überprüfen eines Termins
+    - name: Prüfen eines Termins
       href: validate-appointment.md
 - name: Überwachung
   items:
-    - name: Überwachen von Entitätsdatenänderungen
+    - name: Überwachung von Entitätsdatenänderungen
       href: audit-entity-data-changes.md
-    - name: Überwachen des Benutzerzugriffs
+    - name: Benutzerzugriff überwachen
       href: audit-user-access.md
 - name: Azure-Integration
   items:
-    - name: 'Azure-fähiges, benutzerdefiniertes Plug-In'
+    - name: Benutzerdefiniertes Azure-fähiges Plug-In
       href: azure-aware-custom-plugin.md
-    - name: 'Azure-fähige, benutzerdefinierte Workflowaktivität'
+    - name: Azure-fähige benutzerdefinierte Workflowaktivität
       href: azure-aware-custom-workflow-activity.md
-    - name: Unidirektionaler Listener
+    - name: Eindirektionaler Listener
       href: one-way-listener.md
     - name: Persistenter Warteschlangenlistener
       href: persistent-queue-listener.md
     - name: REST-Listener
       href: rest-listener.md
-    - name: Bidirektionaler Listener
+    - name: Zweidirektionaler Listener
       href: two-way-listener.md
 - name: Massenlöschung
   items:
-    - name: Massenlöschen exportierter Datensätze
+    - name: Massenlöschung exportierter Datensätze
       href: bulk-delete-exported-records.md
     - name: 'Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen'
       href: bulk-delete-records-match-common-criteria.md
 - name: Änderungsnachverfolgung
   items:
-    - name: Synchronisieren von Daten mit externen Systemen anhand der Änderungsnachverfolgung
+    - name: Synchronisieren von Daten mit externen Systemen mithilfe der Änderungsnachverfolgung
       href: synchronize-data-external-systems-using-change-tracking.md
 - name: Verbindungen
   items:
-    - name: Verbindung erstellen
+    - name: Erstellen einer Verbindung
       href: create-connection-early-bound.md
-    - name: Erstellen eine Verbindungsrolle
+    - name: Erstellen einer Verbindungsrolle
       href: create-connection-role-early-bound.md
-    - name: Erstellen einer Rolle für reziproke Verbindungen
+    - name: Eine reziproke Verbindungsrolle erstellen
       href: create-reciprocal-connection-role-early-bound.md
-    - name: Abfragen von Verbindungen nach einem Datensatz
+    - name: Abfragen von Verbindungen nach Datensatz
       href: query-connections-record-early-bound.md
     - name: Abfragen von Verbindungsrollen nach Entitätstypcode
       href: query-connection-roles-entity-type-code-early-bound.md
-    - name: Abfragen von Verbindungen nach reziproken Rollen
+    - name: Abfragen von Verbindungen durch reziproke Rollen
       href: query-connections-reciprocal-roles-early-bound.md
 - name: Währung
   items:
-    - name: Abrufen des Währungswechselkurses
+    - name: Abrufen von Wechselkursen
       href: retrieve-currency-exchange-rate.md
 - name: Anpassung und Metadaten
   items:
     - name: Erstellen einer benutzerdefinierten Aktivität
       href: create-custom-activity.md
-    - name: Sichern von Entitätsmetadaten in einer Datei
+    - name: Speichern von Entitätsmetadaten in einer Datei
       href: dump-entity-metadata-file.md
     - name: Abrufen gültiger Statusübergänge
       href: retrieve-valid-status-transitions.md
 - name: Duplikaterkennung
   items:
-    - name: Erkennen mehrerer doppelter Datensätze
+    - name: Erkennen von mehreren doppelten Datensätzen
       href: detect-multiple-duplicate-records.md
-    - name: Aktivieren der Duplikaterkennung und Abrufen von Duplikaten
+    - name: Duplikaterkennung aktivieren und Duplikate abrufen
       href: enable-duplicate-detection-and-retrieve-duplicates.md
-    - name: Verwenden der Duplikaterkennung beim Erstellen und Aktualisieren von Datensätzen
+    - name: Verwenden der Duplikaterkennung für die Erstellung und Aktualisierung von Datensätzen
       href: use-duplicate-detection-when-creating-and-updating-records.md
 - name: Entitätsdatensätze
   items:
@@ -108,15 +108,15 @@
       href: early-bound-entity-operations.md
     - name: Spät gebundene Entitätsvorgänge
       href: late-bound-entity-operations.md
-    - name: Verwenden optimistischer Parallelität bei Aktualisierungs- und Löschvorgängen
+    - name: Nutzung der optimistischen Parallelität mit Aktualisierungs- und Löschaktivitäten
       href: use-optimistic-concurrency-update-delete-operations.md
-    - name: Freigeben eines Datensatzes über ein Zugriffsteam
+    - name: Freigeben eines Datensatzes mit Hilfe eines Zugriffsteams
       href: share-record-using-access-team.md
-    - name: 'Freigeben von Datensätzen über GrantAccess-, ModifyAccess- und RevokeAccess-Nachrichten'
+    - name: 'Datensätze mit Hilfe von GrantAccess, ModifyAccess und RevokeAccess Nachrichten teilen'
       href: share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md
     - name: 'Hochladen, Abrufen und Herunterladen einer Anlage'
       href: upload-retrieve-download-attachment.md
-    - name: Einfügen oder Aktualisieren eines Datensatzes über Upsert
+    - name: Einen Datensatz mit Upsert einfügen oder aktualisieren
       href: insert-update-record-upsert.md
 - name: Sicherheit auf Feldebene
   items:
@@ -124,67 +124,69 @@
       href: retrieve-field-permissions.md
     - name: Abrufen von Feldfreigabedatensätzen
       href: retrieve-field-sharing-records.md
-    - name: Aktivieren der Feldsicherheit für eine Entität
+    - name: Aktivierung der Feldsicherheit für eine Entität
       href: enable-field-security-entity.md
 - name: Zielverwaltung
   items:
-    - name: Durchführen eines Rollups für Zieldaten für einen benutzerdefinierten Zeitraum anhand des Zielumsatzes
+    - name: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz
       href: rollup-goal-data-custom-period-target-revenue.md
-    - name: Durchführen eines Rollups für Zieldaten für einen Finanzzeitraum anhand der Streckungszielanzahl
+    - name: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl
       href: rollup-goal-data-fiscal-period-stretch-target-count.md
-    - name: Verwenden von Rollupabfragen zum Verfolgen von Zielen
+    - name: Verwendung von Rollupabfragen zur Nachverfolgung von Zielen
       href: use-rollup-queries-track-goals.md
-    - name: Außerkraftsetzen der Gesamtanzahl von Zielen und Schließen des Ziels
+    - name: Überschreiben einer Zielgesamtanzahl und Schließen des Ziels
       href: override-goal-total-count-close-goal.md
-- name: Importieren von Daten
+- name: Daten importieren
   items:
     - name: Exportieren und Importieren einer Datenzuordnung
       href: export-import-data-map.md
-    - name: Importieren von Daten anhand einer komplexen Datenzuordnung
+    - name: Importieren von Daten mit Hilfe der komplexen Datenzuordnung
       href: import-data-complex-data-map.md
 - name: Plug-Ins
   items:
-    - name: Webzugriff über ein Plug-In
-      href: web-access-plugin.md
     - name: Erstellen eines grundlegenden Plug-Ins
       href: basic-followup-plugin.md
+    - name: Ändern einer Abfrage in der PreOperation-Phase
+      href: modify-query-preoperation-stage.md
+    - name: Webzugriff über ein Plug-In
+      href: web-access-plugin.md
 - name: Warteschlangen
   items:
-    - name: Hinzufügen eines Datensatzes zu einer Warteschlange
+    - name: Einen Datensatz zur Abfrage hinzufügen
       href: add-record-queue-early-bound.md
     - name: Hinzufügen eines Sicherheitsprinzipals (Benutzer oder Team) zu einer Warteschlange
       href: add-security-principal-user-team-queue-early-bound.md
-    - name: Bereinigen des Verlaufs für eine Warteschlange
+    - name: Bereinigung des Verlaufs für eine Warteschlange
       href: clean-up-history-queue-early-bound.md
-    - name: Freigeben eines Warteschlangenelements für die Warteschlange
+    - name: Freigabe eines Warteschlangenelements für die Warteschlange
       href: release-queue-item-queue-early-bound.md
-    - name: Angeben eines Warteschlangenelements zur Bearbeitung
+    - name: Ein zu bearbeitendes Warteschlangenelement angeben
       href: specify-queue-item-work-early-bound.md
 - name: SharePoint
   items:
-    - name: Abrufen der absoluten URL und der Websitesammlungs-URL eines Standortdatensatzes
+    - name: Abruf der absoluten URL und der Websitesammlungs-URL eines Ortsdatensatzes
       href: retrieve-absolute-url-and-site-collection-url-of-a-location-record.md
-- name: Bestimmte Vorgänge
+- name: Spezielle Vorgänge
   items:
     - name: Ausführen mehrerer Anforderungen
       href: execute-multiple-requests.md
 - name: Lösungen
   items:
-    - name: Arbeiten mit Lösungen
+    - name: Mit Lösungen arbeiten
       href: work-solutions.md
     - name: Erkennen von Lösungsabhängigkeiten
       href: detect-solution-dependencies.md
 - name: Zeitzonen
   items:
-    - name: Abrufen von Informationen zur Zeitzone
+    - name: Abrufen von Zeitzoneninformationen
       href: retrieve-time-zone-information.md
-- name: Abfragen von Daten
+- name: Daten abfragen
   items:
     - name: Verwenden von QueryExpression mit einem Auslagerungscookie
       href: use-queryexpression-with-a-paging-cookie.md
-    - name: Abrufen mehrerer Elemente mit der QueryExpression-Klasse
+    - name: Rufen Sie mit der QueryExpressions-Klasse Vielfaches ab
       href: retrieve-multiple-queryexpression-class.md
-    - name: Abrufen mehrerer Elemente mit der QueryByAttribute-Klasse
+    - name: Abruf von Vielfachen mit der QueryByAttribute-Klasse
       href: retrieve-multiple-querybyattribute-class.md
     - name: Konvertieren von Abfragen zwischen Fetch und QueryExpression
       href: convert-queries-fetch-queryexpression.md
@@ -192,9 +194,9 @@
       href: retrieve-records-intersect-table.md
     - name: Überprüfen und Ausführen einer gespeicherten Abfrage
       href: validate-execute-saved-query.md
-    - name: Verwenden einer Aggregation in FetchXML
+    - name: Verwendung von Aggregation in FetchXML
       href: use-aggregation-fetchxml.md
     - name: Verwenden von FetchXML mit einem Auslagerungscookie
       href: use-fetchxml-paging-cookie.md
-- name: Zugreifen auf den Ermittlungsdienst
+- name: Zugreifen auf den Suchdienst
   href: access-discovery-service.md

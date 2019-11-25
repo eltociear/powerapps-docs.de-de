@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Patches zur Vereinfachung von Lösungsupdates (Common Data Service) | Microsoft Docs
-description: 'Patches helfen Ihnen, Entitäten und zugehörigen Ressourcen zu verwalten, wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, werden die Entität und alle ihre verknüpften Objekte in die Lösung exportiert.'
+title: Erstellen von Patches zur Vereinfachung von Lösungsupdates (Common Data Service) |Microsoft-Dokumentation
+description: Patches helfen Ihnen, Entitäten und zugehörigen Ressourcen zu verwalten, wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, werden die Entität und alle ihre verknüpften Objekte in die Lösung exportiert.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,21 +10,27 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24e1410afbf7323daad3e274f1aedfc4fe39ff6c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748425"
 ---
 # <a name="create-patches-to-simplify-solution-updates"></a>Erstellen von Patches zur Vereinfachung von Lösungsupdates
 
 Wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, werden die Entität und alle ihre verknüpften Objekte in die Lösung exportiert. Diese Objekte umfassen Attribute, Formulare, Ansichten, Beziehungen und Visualisierungen und alle anderen Objekte, die zusammen mit der Entität ausgeliefert wurden. Alle Objekte zu exportieren bedeutet, dass Sie unbeabsichtigt Objekte in der Zielbereitstellung ändern können oder unbeabsichtigte Abhängigkeiten übertragen können.  
   
- Um dies zu lösen, können Sie entweder Lösungspatches erstellen und veröffentlichen, die Unterkomponenten von Entitäten enthalten, anstatt eine vollständige Entität und alle ihre Objekte zu erstellen.  Die ursprüngliche Lösung und eines oder mehrere verknüpfte Patches können zu einem späteren Zeitpunkt als Rollup (Zusammenführung) in einer aktualisierten Version bereitgestellt werden, die dann die ursprüngliche Lösung in der Common Data Service-Zielorganisation ersetzt.  
+ Um dies zu lösen, können Sie entweder Lösungspatches erstellen und veröffentlichen, die Unterkomponenten von Entitäten enthalten, anstatt eine vollständige Entität und alle ihre Objekte zu erstellen.  Die ursprüngliche Lösung und eines oder mehrere verknüpfte Patches können zu einem späteren Zeitpunkt als Rollup (Zusammenführung) in einer aktualisierten Version bereitgestellt werden, die dann die ursprüngliche Lösung in der Zielorganisation Common Data Service ersetzt.  
   
 ## <a name="patches"></a>Patches  
  Sie können entweder Patches auf verwaltete oder nicht verwaltete Lösungen anwenden und nur Änderungen an Entitäten und verknüpften Entitätsobjekten einfügen. Patches enthalten keine nicht-angepassten Systemkomponenten oder -beziehungen, von denen sie abhängen, da diese Komponenten bereits in der Organisation vorhanden sind, für die sie bereitgestellt wurden. Zu einem bestimmten Zeitpunkt in Ihrem Bereitstellungszyklus können Sie ein Rollup aller Patches in eine neue Lösungsversion durchführen, um die ursprüngliche Lösung zu ersetzen, aus der heraus die Patches erstellt wurden.  
   
- Patches werden in der Common Data Service-Datenbank als `Solution`-Entitätsdatensätze gespeichert. Ein Nicht-null-`ParentSolutionId`-Attribut gibt an, dass die Lösung ein Patch ist. Patches können durch den Organisationsdienst oder Web-APIs erstellt und verwaltet werden. Diese sind nützlich für die Entwicklung von Automatisierung, wie beispielsweise ein Produktinstallationsskript. Allerdings stellt die Common Data Service-Webanwendung verschiedene Webformulare bereit, mit denen Sie Patches interaktiv erstellen und verwalten können.  
+ Patches werden in der Common Data Service-Datenbank als `Solution`-Entitätsdatensätze gespeichert. Ein Nicht-null-Attribut `ParentSolutionId` gibt an, dass die Lösung ein Patch ist. Patches können durch den Organisationsdienst oder Web-APIs erstellt und verwaltet werden. Diese sind nützlich für die Entwicklung von Automatisierung, wie beispielsweise ein Produktinstallationsskript. Allerdings stellt die Common Data Service-Webanwendung verschiedene Webformulare bereit, mit denen Sie Patches interaktiv erstellen und verwalten können.  
   
 - Patches können nur von einer übergeordneten Lösung aus mithilfe von <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> oder <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" /> erstellt werden.  
   
@@ -56,7 +62,7 @@ Wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, we
  Erstellen Sie einen Patch aus einer nicht verwalteten Lösung in einer Organisation, indem Sie die <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest>-Meldung oder die <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" /> verwenden oder mithilfe der Webanwendung. Sobald Sie einen Patch erstellen, wird die ursprüngliche Version gesperrt und Sie können sie nicht mehr ändern oder exportieren, so lange es abhängige Patches gibt, die in der Organisation vorhanden sind, die die Lösung als die übergeordnete Lösung identifizieren. Patchversionsverwaltung ähnelt der Lösungsversionsverwaltung und ist im folgenden Format angegeben: *major.minor.build.release*. Sie können keine Änderungen an den vorhandenen Haupt- oder Nebenlösungsversionen vornehmen, wenn Sie einen Patch erstellen.  
   
 ## <a name="export-and-import-a-patch"></a>Exportieren und Importieren eines Patches  
- Sie können den Organisationsdienst oder die Web-APIs, die Webanwendung oder das Package Deployer-Tool verwenden, um einen Patch zu exportieren und zu importieren. Die Organisationsdienstmeldungs-Anforderungen sind <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> und <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>. Die relevanten Aktionen für die Web-API sind <xref href="Microsoft.Dynamics.CRM.ImportSolution?text=ImportSolution Action" /> und <xref href="Microsoft.Dynamics.CRM.ExportSolution?text=ExportSolution Action" />.  
+ Sie können den Organisationsdienst oder die Web-APIs, die Webanwendung oder das Package Deployer Tool verwenden, um einen Patch zu exportieren und zu importieren. Die Organisationsdienstmeldungs-Anforderungen sind <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> und <xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>. Die relevanten Aktionen für die Web-API sind <xref href="Microsoft.Dynamics.CRM.ImportSolution?text=ImportSolution Action" /> und <xref href="Microsoft.Dynamics.CRM.ExportSolution?text=ExportSolution Action" />.  
   
 ### <a name="patching-examples"></a>Beispiele fürs Patchen  
  In der folgenden Tabelle sind die Details des Beispiels eines Patchvorgangs aufgeführt. Beachten Sie, dass in diesem Beispiel die Lösung und Patches in numerischer Reihenfolge importiert werden und additiv sind, das ist in Übereinstimmung mit dem Lösungsimport im Allgemeinen.  
@@ -112,4 +118,4 @@ Wenn Sie eine Entität einer Lösung hinzufügen und die Lösung exportieren, we
  [Packen und Verteilen von Erweiterungen mithilfe von Lösungen](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
  [Lösungsentität](/reference/entities/solution.md)   
  [Pflegen von verwalteten Lösungen](maintain-managed-solutions.md)   
- [Veröffentlichen Sie die App für AppSource](publish-app-appsource.md)
+ [App auf AppSource veröffentlichen](publish-app-appsource.md)

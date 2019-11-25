@@ -1,5 +1,5 @@
 ---
-title: 'Skalierbares Anpassungsdesign: Concurrency-Probleme (Common Data Service) | Microsoft Docs'
+title: 'Skalierbares Anpassungsdesign: Parallelitätsprobleme (Common Data Service) | Microsoft-Dokumentation'
 description: 'Das dritte in einer Reihe von Themen. '
 ms.custom: ''
 ms.date: 1/15/2019
@@ -10,12 +10,17 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 19ce32ee11075f716a1c3f032e90ab935744d44d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748650"
 ---
-
 # <a name="scalable-customization-design-concurrency-issues"></a>Skalierbares Anpassungsdesign: Concurrency-Probleme
 
 > [!NOTE]
@@ -40,7 +45,7 @@ Ein häufiger Irrtum ist, dass asynchrone Workflows oder Plug-Ins seriell aus ei
 
 Wenn Sie mehrere asynchrone Aktivitäten aus demselben Ereignis auf demselben Datensatz initiieren, werden diese wahrscheinlich parallel verarbeitet. Da sie den gleichen Datensatz nutzen, ist ein gemeinsames Muster die Aktualisierung auf den gleichen übergeordneten Datensatz; daher ist die Konfliktgelegenheit hoch. 
 
-Wenn ein auslösendes Ereignis eintritt, wie z. B. die Erstellung eines Kontos, kann die asynchrone Logik in Common Data Service Einträge in der [AsyncOperation (System Job) Entity](../reference/entities/asyncoperation.md) für jeden Prozess oder jede Aktion erstellen, die durchgeführt werden soll. Der Async Service überwacht diese Tabelle, nimmt wartende Anforderungen in Chargen auf und verarbeitet sie dann. Da die Workflows gleichzeitig ausgelöst werden, ist es sehr wahrscheinlich, dass sie in derselben Charge aufgenommen und gleichzeitig verarbeitet werden. 
+Wenn ein auslösendes Ereignis eintritt, wie z. B. die Erstellung eines Kontos, kann die asynchrone Logik in Common Data Service Einträge in der [AsyncOperation (System Job) Entität](../reference/entities/asyncoperation.md) für jeden Prozess oder jede Aktion erstellen, die durchgeführt werden soll. Der Async Service überwacht diese Tabelle, nimmt wartende Anforderungen in Chargen auf und verarbeitet sie dann. Da die Workflows gleichzeitig ausgelöst werden, ist es sehr wahrscheinlich, dass sie in derselben Charge aufgenommen und gleichzeitig verarbeitet werden. 
 
 ## <a name="why-its-important-to-understand-transactions"></a>Warum es wichtig ist, Transaktionen zu verstehen
 

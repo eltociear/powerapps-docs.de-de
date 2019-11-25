@@ -1,23 +1,29 @@
 ---
 title: Abonnieren von SDK-Assembly-Updates mit NuGet (Common Data Service) | Microsoft Docs
-description: '.NET SDK-Assemblies und einige Befehlszeilen-Tools sind über eine Software-Verteilungs-Website namens nuget.org verfügbar. Die Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht es Ihnen, Ihr Projekt auf dem neuesten Stand der neuesten Versionen der SDK-Assemblies und -Tools zu halten.'
+description: .NET SDK-Assemblies und einige Befehlszeilen-Tools sind über eine Software-Verteilungs-Website namens nuget.org verfügbar. Die Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht es Ihnen, Ihr Projekt auf dem neuesten Stand der neuesten Versionen der SDK-Assemblies und -Tools zu halten.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dd5d967cae6988c7949c1c6eca0b862cf42281b0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752950"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>Abonnieren Sie SDK-Assembly-Updates mit NuGet.
 
-.NET SDK-Assemblies und einige Befehlszeilen-Tools sind über eine Software-Verteilungs-Website namens [nuget.org](http://www.nuget.org) verfügbar. Die Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht es Ihnen, Ihr Projekt auf dem neuesten Stand der neuesten Versionen der SDK-Assemblies und -Tools zu halten. Visual Studio unterstützt diese Funktion seit Version 2010 und es gibt sogar einen eigenständigen NuGet-Client für Entwickler, die nicht in Visual Studio entwickeln. Ein weiterer Vorteil der Verwendung von NuGet-Paketen in Ihren Projekten besteht darin, dass Assembly-Hinweise und Abhängigkeiten automatisch für Sie erledigt werden.  
+.NET SDK-Assemblies und einige Befehlszeilen-Tools sind über eine Software-Verteilungs-Website namens [nuget.org](https://www.nuget.org) verfügbar. Die Verwendung von NuGet-Paketen in Ihrem Anwendungsprojekt ermöglicht es Ihnen, Ihr Projekt auf dem neuesten Stand der neuesten Versionen der SDK-Assemblies und -Tools zu halten. Visual Studio unterstützt diese Funktion seit Version 2010 und es gibt sogar einen eigenständigen NuGet-Client für Entwickler, die nicht in Visual Studio entwickeln. Ein weiterer Vorteil der Verwendung von NuGet-Paketen in Ihren Projekten besteht darin, dass Assembly-Hinweise und Abhängigkeiten automatisch für Sie erledigt werden.  
   
 <a name="BKMK_GetNuGetPackages"></a>
 
@@ -43,7 +49,7 @@ Das NuGet SDK befindet sich unter dem Profil [crmsdk](https://www.nuget.org/prof
 |[Microsoft.CrmSdk.XrmTooling.WpfControls](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.WpfControls/)|Enthält die Microsoft.Xrm.Tooling.CrmConnectControl.dll, Microsoft.Xrm.Tooling.Ui.Styles.dll uand Microsoft.Xrm.Tooling.WebResourceUtility.dll-Assemblies|
 
 ## <a name="how-to-install-a-package-in-your-project"></a>So installieren Sie ein Paket im Projekt  
- Informationen zur Installation von NuGet-Paketen in Ihrem Projekt finden Sie unter [Verwaltung von NuGet-Paketen über den Dialog](http://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog).  
+ Informationen zur Installation von NuGet-Paketen in Ihrem Projekt finden Sie unter [Verwaltung von NuGet-Paketen über den Dialog](https://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog).  
 
 ## <a name="download-tools-from-nuget"></a>Herunterladen von Tools von NuGet
 
@@ -51,4 +57,4 @@ Sie können die in der Entwicklung verwendeten Tools von NuGet mit dem Powershel
   
 ### <a name="see-also"></a>Siehe auch  
  [NuGetDokumentation](/nuget/)   
- [InstallierenNuGet](http://docs.nuget.org/docs/start-here/installing-nuget)
+ [InstallierenNuGet](https://docs.nuget.org/docs/start-here/installing-nuget)

@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48737a053227cbe5daa6b07ef727a4eba31c1ba7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748789"
 ---
 # <a name="use-localized-labels-with-ribbons"></a>Verwenden lokalisierten Bezeichnungen in Menübändern
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/use-localized-labels-ribbons -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/use-localized-labels-ribbons -->
 
 Obwohl in Menübandelementen, die Text anzeigen, direkt Text eingegeben werden kann, ist die Verwendung lokalisierter Menübänder für die Definition von Text, der im Menüband angezeigt wird, die bewährte Methode. Das ermöglicht mehrsprachige Funktionen und verbesserte Verwaltung von freigegebenem Text.  
   

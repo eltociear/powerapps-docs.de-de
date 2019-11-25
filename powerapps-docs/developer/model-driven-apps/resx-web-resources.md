@@ -1,6 +1,6 @@
 ---
 title: String (RESX)-Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Infos zur Verwendung von String-Webressourcen, um lokalisierte Zeichenfolgen zur Verwendung bereitzustellen.'
+description: Infos zur Verwendung von String-Webressourcen, um lokalisierte Zeichenfolgen zur Verwendung bereitzustellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 755ea7efd4c19bfed56595b9b10765b5455f6339
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748454"
 ---
 # <a name="resx-web-resources"></a>RESX Webressourcen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/resx-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources -->
 
 Verwenden Sie diese Webressourcen, um lokalisierte Zeichenfolgen in der Benutzeroberfläche des Datenmigrations-Managers zu verwalten, die Sie definieren, oder verweisen Sie mit Fehlermeldungen angezeigt. 
 
-# <a name="using-resx-web-resources"></a>Verwenden von RESX-Webressourcen
+## <a name="using-resx-web-resources"></a>Verwenden von RESX-Webressourcen
 
 RESX-Webressourcen enthalten die lokalisierten Zeichenfolgenwerte und Schlüssel für eine einzeln Sprache, definiert im Format RESX XML. RESX ist ein häufig verwendetes Format, um lokalisierte Ressourcen für Windows-Anwendungen zu definieren, d. h. für diesen Dateityp stehen gängige Tools zur Verfügung, und Lokalisierungsanbieter sind mit der Arbeit damit vertraut. Wenn die Datei als Webressource in CRM veröffentlicht wird, wird sie in ein JSON-Format umgewandelt, das zur Anwendung nach Bedarf heruntergeladen wird.
 

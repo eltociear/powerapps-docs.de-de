@@ -1,12 +1,12 @@
 ---
-title: 'Verwenden von Postman, um Operationen mit der Web API durchzuführen (Common Data Service für Apps)| MicrosoftDocs'
-description: 'Erfahren Sie, wie Sie Web-API-Anfragen mit Postman erstellen und versenden.'
-ms.custom: null
+title: Verwenden von Postman, um Operationen mit der Web API durchzuführen (Common Data Service für Apps)| MicrosoftDocs
+description: Erfahren Sie, wie Sie Web-API-Anfragen mit Postman erstellen und versenden.
+ms.custom: ''
 ms.date: 03/22/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: powerapps
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: AB50128B-D8E3-47A3-A0F8-9594EF6B7022
 caps.latest.revision: 7
@@ -14,11 +14,16 @@ author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: c651dbc8ba553192f4ff3b09b84518684ac4b866
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748597"
 ---
-
 # <a name="use-postman-to-perform-operations-with-the-web-api"></a>Verwenden von Postman, um Operationen mit der Web-API durchzuführen
 
 Verwenden Sie Postman, um Web-API-Anfragen zu erstellen und zu senden und Antworten anzuzeigen. Dieses Thema beschreibt, wie Sie Postman verwenden, um Web-API-Anfragen zu erstellen, abzurufen, zu aktualisieren und zu löschen (CRUD) und Funktionen und Aktionen mit Postman verwenden.
@@ -107,11 +112,11 @@ Verwenden Sie eine `POST`-Anfrage, um Daten zu senden, um einen Datensatz zu ers
 
 `POST` `{{webapiurl}}accounts`
 
-![Erstellen eines neuen Datensatzes über Web API](media/postman-create-records.png "Erstellen eines neuen Datensatzes über Web API")
+![Erstellen eines neuen Datensatzes über Web-API](media/postman-create-records.png "Erstellen eines neuen Datensatzes über Web-API")
 
 Legen Sie den Body der Anfrage mit Informationen über das zu erstellende Konto fest.
 
-![Body der Anforderung zum Anlegen eines Datensatzes über Web API](media/postman-create-record-body.png "Body der Anforderung zum Anlegen eines Datensatzes über Web API")
+![Text der Anforderung zum Anlegen eines Datensatzes über Web-API](media/postman-create-record-body.png "Text der Anforderung zum Anlegen eines Datensatzes über Web-API")
 
 Wenn Sie diese Anfrage senden, ist der Body leer, aber die ID des erstellten Kontos befindet sich im `OData-EntityId` Header-Wert.
 
@@ -123,7 +128,7 @@ Verwenden Sie die `PATCH`-Methode, um einen Entitätsdatensatz zu aktualisieren,
 
 `PATCH` `{{webapiurl}}accounts(`*&lt;accountid&gt;*`)`
 
-![Aktualisieren eines Datensatzes über Web API](media/postman-update-record.png "Aktualisieren eines Datensatzes über Web API")
+![Aktualisieren eines Datensatzes über Web-API](media/postman-update-record.png "Aktualisieren eines Datensatzes über Web-API")
 
 Wenn Sie diese Anfrage senden, ist der Body leer, aber die ID des aktualisierten Kontos befindet sich im `OData-EntityId` Header-Wert.
 
@@ -135,7 +140,7 @@ Verwenden Sie die `DELETE`-Methode, um einen vorhandenen Datensatz zu löschen.
 
 `DELETE` `{{webapiurl}}accounts(`*&lt;accountid&gt;*`)`
 
-![Löschen eines Datensatzes über Web API](media/postman-delete-record.png "Löschen eines Datensatzes über Web API")
+![Löschen eines Datensatzes über Web-API](media/postman-delete-record.png "Löschen eines Datensatzes über Web-API")
 
 Wenn Sie diese Anfrage absenden, wird der Kontodatensatz mit der angegebenen `accountid` gelöscht.
 

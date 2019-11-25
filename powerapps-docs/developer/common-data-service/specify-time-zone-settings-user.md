@@ -1,6 +1,6 @@
 ---
-title: Geben Sie Zeitzoneneinstellungen für einen Benutzer an (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie mehr über die Verwendung der UserSettings-Entität, um Zeitzoneneinstellungen für einen Benutzer in Dynamics 365 anzugeben. Die folgenden Attribute sind für die Entität UserSettings in Verbindung mit der Zeitzone verfügbar. Alle Zonenattribute in der Entität UserSettings gehören zum Datentyp Ganzzahl.'
+title: Angeben der Zeitzoneneinstellungen für einen Benutzer (Common Data Service) | Microsoft-Dokumentation
+description: Erfahren Sie mehr über die Verwendung der UserSettings-Entität, um Zeitzoneneinstellungen für einen Benutzer in Dynamics 365 anzugeben. Die folgenden Attribute sind für die Entität UserSettings in Verbindung mit der Zeitzone verfügbar. Alle Zonenattribute in der Entität UserSettings gehören zum Datentyp Ganzzahl.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2883724215396161a53d46de6cbb72e5a0f0b92b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748641"
 ---
 # <a name="specify-time-zone-settings-for-a-user"></a>Angeben der Zeitzoneneinstellungen für einen Benutzer
 
-Verwenden Sie die `UserSettings`-Entität, um Zeitzoneneinstellungen für einen Benutzer in Common Data Service anzugeben. Die folgenden Attribute sind für die Entität `UserSettings` in Verbindung mit der Zeitzone verfügbar. Alle Zonenattribute in der Entität `UserSettings` gehören zum Datentyp `Integer`.  
+Verwenden Sie die Entität `UserSettings`, um die Zeitzoneneinstellungen für einen Benutzer in Common Data Service anzugeben. Die folgenden Attribute sind für die Entität `UserSettings` in Verbindung mit der Zeitzone verfügbar. Alle Zonenattribute in der Entität `UserSettings` gehören zum Datentyp `Integer`.  
 
 
 |       Attributname        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

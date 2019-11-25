@@ -1,6 +1,6 @@
 ---
-title: Abrufen von verknüpften Entitäten in einer Abfrage (Common Data Service)| Microsoft Docs
-description: 'Lesen Sie, wie Sie verwandte Objekte abrufen können, indem Sie die Navigationseigenschaften erweitern.'
+title: Abrufen von verknüpften Entitätsdatensätzen mit einer Abfrage (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie Sie verknüpfte Entitätsdatensätze abrufen können, indem Sie die Navigationseigenschaften erweitern.
 ms.custom: ''
 ms.date: 07/15/2019
 ms.service: powerapps
@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3D8FB9AF-3663-437A-988E-CBAE9579F167
 caps.latest.revision: 78
 author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1119734dd8d61aacdbb3dc553b65c12b4d6c20a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748614"
 ---
-# <a name="retrieve-related-entities-with-a-query"></a>Abrufen von verknüpften Entitäten mit einer Abfrage
+# <a name="retrieve-related-entity-records-with-a-query"></a>Abrufen von verknüpften Entitätsdatensätzen mit einer Abfrage
 
 Verwenden Sie die `$expand`-Systemabfrageoption in den Navigationseigenschaften, um zu steuern, welche Daten von den verbundenen Entitäten zurückgegeben werden. Es gibt zwei Typen von Navigationseigenschaften:  
   
@@ -35,7 +41,7 @@ Wenn Sie nur den Namen der Navigationseigenschaft einschließen, rufen Sie alle 
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 
-## <a name="retrieve-related-entities-by-expanding-single-valued-navigation-properties"></a>Abrufen verwandter Entitäten durch Erweitern von einfach bewerteten Navigationseigenschaften
+## <a name="retrieve-related-entity-records-by-expanding-single-valued-navigation-properties"></a>Abrufen verwandter Entitätsdatensätze durch Erweitern von einfach bewerteten Navigationseigenschaften
 
 Im folgenden Beispiel wird gezeigt, wie der Kontakt für alle Firmendatensätze abgerufen wird. Für die in Verbindung stehenden Kontaktdatensätze rufen wir nur die Kontaktkennung und den vollen Namen ab.  
   

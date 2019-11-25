@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie für Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz ein Rollup durchgeführt wird.'
+title: 'Beispiel: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie für Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz ein Rollup durchgeführt wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90867101361c8f2ca5bf9ed29e8712890ba162c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748717"
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>Beispiel: Rollup-Zieldaten für eine benutzerdefinierte Periode für den Zielumsatz
 
@@ -21,7 +27,7 @@ search.app:
 
 Dieses Beispiel zeigt, wie für Zieldaten während einer benutzerdefinierten Periode für den Zielumsatz ein Rollup durchgeführt wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RollupGoalData) herunterladen.
 
-Dieses Beispiel benötigt weitere drei Benutzer, die nicht in Ihrem System sind. Erstellen Sie die drei erforderliche Benutzer manuell**wie dargestellt** in **Office 365**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
+Dieses Beispiel benötigt weitere drei Benutzer, die nicht in Ihrem System sind. Erstellen Sie die drei erforderliche Benutzer manuell **wie besehen** (siehe unten) in **Office 365**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 
 **Vorname**: Nancy<br/>
 **Nachname**: Anderson<br/>
@@ -53,7 +59,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="setup"></a>Einrichten
 
 1. Tests für die Version der Organisation.
-2. Ruft den Vertriebsmanager und 2 Vertriebsmitarbeiter ab, die manuell in **Office 365** erstellt werden.
+2. Ruft den Vertriebsmanager und 2 Vertriebsmitarbeiter ab, die manuell in **Office 365** erstellt werden.
 3. Erstellt eine Beispieleinheitengruppe und ruft die Standardeinheits-ID ab. 
 4. Erstellt einige Produkte und eine neue Rabattliste.
 5. `PriceLevel` erstellt die Preisliste.

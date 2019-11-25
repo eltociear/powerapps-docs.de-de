@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Massenlöschung von Datensätzen in großen Mengen, die gemeinsamen Kriterien entsprechen (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt das Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen.'
+title: 'Beispiel: Massenlöschung von Datensätzen in großen Mengen, die gemeinsamen Kriterien entsprechen (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt das Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45e3413a37887a5a2ee826f7ff6150edec73186a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748385"
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>Beispiel: Massenlöschen von Datensätzen, die allgemeinen Kriterien entsprechen
 

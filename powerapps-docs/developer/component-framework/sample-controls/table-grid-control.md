@@ -1,6 +1,6 @@
 ---
-title: " Tabellen Raster Komponente | Microsoft-Dokumentation"
-description: Implementieren der Tabellen Raster Komponente
+title: " Tabellenrasterkomponente | Microsoft Docs"
+description: Implementieren der Tabellenrasterkomponente
 ms.custom: ''
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,26 +8,26 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 2a24ae9cb7e37acfa2be4ef975e3c52eebce3e37
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 6a8c8dd1ef90203901ec4a675620a91ae1431f13
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72340205"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754066"
 ---
-# <a name="implementing-table-grid-component"></a>Implementieren der Tabellen Raster Komponente
+# <a name="implementing-table-grid-component"></a>Implementieren der Tabellenrasterkomponente
 
-In diesem Beispiel wird veranschaulicht, wie Sie eine einfache datasetkomponente erstellen, die Spalten Metadaten-Bindung anzeigen, die Bindung aufzeichnen, weitere Datensätze aus dem Paging anzeigen und die Navigation zu einem Formular aufzeichnen.
-Die Komponenten Header Spalten und internen Daten Satz Werte werden an die vorhandenen Sichten gebunden.
+Dieses Beispiel demonstriert, wie eine einfache Dataset-Komponente erstellt wird, Spaltenmetadatenbindung einer Ansicht, Datensatzbindung, mehrere Datensätze vom Blättern und Datensatznavigation zum Formular.
+Die Komponentenüberschriftspalten die internen Datensatzwerte werden an vorhandene Ansichten gebunden.
 
 > [!div class="mx-imgBorder"]
-> Tabellen(../media/table-grid-control.png "Raster Komponente") der ![Tabellen Raster Komponente]
+> ![Tabellenrasterkomponente](../media/table-grid-control.png "Tabellenrasterkomponente")
 
 ## <a name="available-for"></a>Verfügbar für 
 
-Modellgesteuerte Apps  
+Modellgestützte Apps  
 
-## <a name="manifest"></a>Kundiger 
+## <a name="manifest"></a>Manifest 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -412,8 +412,8 @@ export class TSTableGrid
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">
@@ -481,29 +481,29 @@ export class TSTableGrid
 </root>
 ```
 
-Spalten Kopfzeile an die Ansicht binden:
+Spaltenüberschriftbindung an die Ansicht:
 
-Die Anzeige von Spalten Informationen liegt bei `context.parameters.[dataset_property_name].columns`. Es ist ein Arraytyp.
+Ansichtsspalteninformationen liegen bei `context.parameters.[dataset_property_name].columns`. Es ist ein Array-Typ.
 
-Daten Satz Bindung:
+Datensatzbindung:
 
-- Die sortierten Datensatz-IDs sind `context.parameters.[dataset_property_name].sortedRecordIds`
-- Alle Datensatzinformationen finden Sie `context.parameters.[dataset_property_name].records` 
-- Für jedes Daten Satz Objekt `context.parameters.[dataset_property_name].records[record_Id]` 
-- Der formatierte Wert konnte bei `getFormattedValue` abgerufen werden. 
+- Die sortierten Datensatz-IDs befinden sich bei `context.parameters.[dataset_property_name].sortedRecordIds`
+- Alle Datensatzinformationen befinden sich bei `context.parameters.[dataset_property_name].records` 
+- Für jedes Datensatzobjekt, `context.parameters.[dataset_property_name].records[record_Id]` 
+- Formatierter Wert kann bei `getFormattedValue` abgerufen werden 
 
-Laden Sie bei Bedarf weitere Datenseiten:
+Nach Bedarf mehr Datenseiten laden:
 
-`context.parameters.[dataset_property_name].paging` stellt Pagingfunktionen wie `hasNextPage` und `loadNextPage` Daten bereit. Die Schaltfläche `Load More` wird angezeigt, wenn Sie die Daten der nächsten Seite enthält.
+`context.parameters.[dataset_property_name].paging` bietet Blätterfunktion wie `hasNextPage` und `loadNextPage`. Die `Load More`-Schaltfläche wird angezeigt, wenn sie Daten für die nächste Seite hat.
 
-Dieses Beispiel zeigt auch, wie die Komponente die Größenänderung des Containers überwacht. 
+Dieses Beispiel demonstriert auch, wie die Komponente der Container-Anpassung lauscht. 
 
-Die `trackContainerResize`-Methode sollte innerhalb der [Init](../reference/control/init.md) -Methode aufgerufen werden, damit die `mode.allocatedWidth` und `mode.allocatedHeight` bei jedem Aufruf von [UpdateView](../reference/control/updateview.md) bereitgestellt werden. Wenn diese Methode nicht anfänglich aufgerufen wird, verfügen Sie nicht über `allocatedWidth` und `allocatedHeight` bereitgestellt.
+Die `trackContainerResize`-Methode soll in der [init](../reference/control/init.md)-Methode aufgerufen werden, damit `mode.allocatedWidth` und `mode.allocatedHeight` jedes Mal bereitgestellt werden, wenn [updateView](../reference/control/updateview.md) aufgerufen wird. Wenn diese Methode nicht anfänglich aufgerufen wird, wird `allocatedWidth` und `allocatedHeight` nicht bereitgestellt.
 
-Wenn "zu–" den Wert "1" hat, bedeutet dies, dass es keine Begrenzung für die Höhe gibt. Die Höhe der Komponente sollte auf der Grundlage der angegebenen Breite angepasst werden.
+Wenn allocatedHeight –1 ist, bedeutet das, das die Höhe nicht begrenzt ist. Die Komponente soll ihre Höhe anhand der bereitgestellte Breite anpassen.
 
 ### <a name="related-topics"></a>Verwandte Themen
 
-[Beispiel Komponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[API-Referenz für das powerapps-Komponenten Framework](../reference/index.md)<br/>
-[Schema Referenz für das powerapps-Komponenten Framework](../manifest-schema-reference/index.md)
+[Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[PowerApps component framework-API-Referenz](../reference/index.md)<br/>
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

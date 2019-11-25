@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Abrufen von Feldfreigabedatensätzen (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht, wie die Feldfreigabe-Datensätze für eine Entität abgerufen werden.'
+title: 'Beispiel: Abrufen von Feldfreigabedatensätzen (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel veranschaulicht, wie die Feldfreigabe-Datensätze für eine Entität abgerufen werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: df8898fef09c80f2cc09d583bca8e9b6a1a84381
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748725"
 ---
 # <a name="sample-retrieve-field-sharing-records"></a>Beispiel: Abrufen von Feldfreigabedatensätzen
 

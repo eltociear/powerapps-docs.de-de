@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4b4c0145cae08ecc144c48eb4dfe1d0e32ea22d2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753534"
 ---
 # <a name="stylesheet-xsl-web-resources"></a>XSL-Webressourcen (Stylesheet)
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources -->
 
 
 Verwenden Sie XSL-Webressourcen (Stylesheet), um XML-Daten zu transformieren.  
@@ -29,7 +35,7 @@ Verwenden Sie XSL-Webressourcen (Stylesheet), um XML-Daten zu transformieren.
   
  **HTML-Webressource:** sample_/ImportWebResources/Content/ShowData.htm  
  ```html  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
 <html>  
 <head>  
  <title></title>  
@@ -46,7 +52,7 @@ Verwenden Sie XSL-Webressourcen (Stylesheet), um XML-Daten zu transformieren.
  ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xsl:stylesheet version="1.0"  
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+                xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
                 exclude-result-prefixes="msxsl"  
 >  
@@ -142,7 +148,7 @@ SDK.ImportWebResources = {
 }  
 ```  
   
- **CSS-Webressource:** sample_/ImportWebResources/CSS/Styles.css  
+ **CSS Webressource**: sample_/ImportWebResources/CSS/Styles.css  
  ```css
 body  
 {  
@@ -167,7 +173,7 @@ td
 ### <a name="see-also"></a>Siehe auch  
  [Webressourcen](web-resources.md)   
  [Verwenden von Webseite (HTML)-Webressourcen](webpage-html-web-resources.md)   
- [Verwenden von Stylesheet (CSS)-Webressourcen](css-web-resources.md)   
+ [Verwenden von Stylesheet(CSS)-Webressourcen](css-web-resources.md)   
  [Verwenden von Webressourcen für Skripts (JScript)](script-jscript-web-resources.md)   
  [Verwenden von Daten (XML)-Webressourcen](data-xml-web-resources.md)   
  [Verwenden von Bild (JPG, PNG, GIF)-Webressourcen](image-web-resources.md)   

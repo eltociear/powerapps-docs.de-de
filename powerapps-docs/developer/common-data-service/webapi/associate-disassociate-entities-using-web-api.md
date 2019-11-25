@@ -1,6 +1,6 @@
 ---
-title: Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web-API (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie eine Referenz auf eine sammlungwertige Navigationseigenschaft hinzuzufügen, eine Referenz zu entfernen und eine vorhandene Referenz mithilfe der Web-API zu ändern.'
+title: Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web-API (Common Data Service)| Microsoft-Dokumentation
+description: Lesen Sie, wie eine Referenz auf eine sammlungwertige Navigationseigenschaft hinzuzufügen, eine Referenz zu entfernen und eine vorhandene Referenz mithilfe der Web-API zu ändern.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: ad4e4eac-117a-4958-9df0-b7353305b0c7
 caps.latest.revision: 13
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1b1aee98b1fb6048c875ef41672d105cb096ed1a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748501"
 ---
 # <a name="associate-and-disassociate-entities-using-the-web-api"></a>Entitäten zuordnen und Zuordnungen aufheben mithilfe der Web API
 

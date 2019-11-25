@@ -1,6 +1,6 @@
 ---
 title: Offline-Nutzung von Diensten (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie verschiedene Dienste offline nutzen können. Es gibt einige Meldungen, die im Offlinemodus unterstützt werden. Sie können auch feststellen, ob eine IOrganizationService-Nachricht offline arbeitet, indem Sie das SdkMessage.Availability-Attribut für die gewünschte Nachricht überprüfen.'
+description: Erfahren Sie, wie Sie verschiedene Dienste offline nutzen können. Es gibt einige Meldungen, die im Offlinemodus unterstützt werden. Sie können auch feststellen, ob eine IOrganizationService-Nachricht offline arbeitet, indem Sie das SdkMessage.Availability-Attribut für die gewünschte Nachricht überprüfen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,12 +10,17 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9f6aa213b93e9406356d96798584b76e3b370eae
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748673"
 ---
-
 # <a name="offline-use-of-services"></a>Offline-Verwendung von Services
 
 Mit Dynamics 365 for Outlook mit Offline Access können Sie Ihre Arbeit fortsetzen, wenn Sie vom Server getrennt sind.  

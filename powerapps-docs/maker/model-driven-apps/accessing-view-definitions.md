@@ -1,6 +1,6 @@
 ---
 title: Sie können auf eine Modell-angetriebene App-Ansichtsdefinition über die Startseite zugreifen | MicrosoftDocs
-description: 'In diesem Thema erfahren Sie, wie Sie auf Entitätsansichten zugreifen'
+description: In diesem Thema erfahren Sie, wie Sie auf Entitätsansichten zugreifen
 ms.custom: ''
 ms.date: 11/27/2018
 ms.reviewer: ''
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: 034c8bef-0d1c-4ef9-8da7-f81343c4553a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752016"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>Zugriff auf eine Modell-angetriebene App-Ansichtsdefinition in PowerApps.
+# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>Zugriff auf eine modellgesteuerte App-Ansichtsdefinition in PowerApps
 
  In diesem Thema öffnen Sie eine Ansicht, um die Eigenschaften und Optionen anzuzeigen, um die Ansicht zu konfigurieren. Es gibt verschiedene Möglichkeiten, wie Sie auf Ansichtsdefinitionen in PowerApps zugreifen können. 
   
@@ -33,7 +39,7 @@ search.app:
 > [!IMPORTANT]
 > Die neueste Version des Ansicht-Designers befindet sich derzeit in der Vorschau. Einige Funktionen wie erweiterte Filterung, benutzerdefinierte Steuerelemente und Spalteneigenschaften werden noch nicht unterstützt. Um diese Aufgaben durchzuführen, [Öffnen Sie eine Ansicht zum Bearbeiten im Lösungsexplorer](#open-a-view-for-editing-in-solution-explorer).
 
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 
     > [!IMPORTANT]
@@ -93,6 +99,6 @@ In einer beliebigen Listenansicht für eine Entität in einer älteren Webanwend
  Falls die Entität, der die Ansicht zugeordnet ist, Teil einer nicht verwalteten Lösung ist, können Sie dennoch Ansichten fü diese Entität in der Standardlösung erstellen oder bearbeiten. Systemansichten sind einer Entität zugeordnet und sind nicht als separate Lösungskomponenten verfügbar. Anders als Felder verwenden Ansichten kein Anpassungspräfix in einem eindeutigen Namen, der in einer Lösung konsistent sein sollte, daher müssen Sie Ansichten im Kontext einer Lösung erstellen. 
  
 ## <a name="next-steps"></a>Nächste Schritte
-[Ansichten verstehen ](create-edit-views.md)
+[Ansichten verstehen](create-edit-views.md)
 
 

@@ -1,19 +1,25 @@
 ---
-title: 'Erstellen und Upgraden einer Entität, um E-Mail-Aktivitäten an Datensätze zu senden (Common Data Service) | Microsoft Docs'
-description: 'Sie können eine Entität erstellen, die eine E-Mail-Adresse enthält, die Sie verwenden können, um E-Mail-Aktivitäten an Datensätze für diese Entität zu senden.'
+title: Erstellen und aktualisieren einer Entität, um E-Mail-Aktivitäten an Datensätze zu senden (Common Data Service) | Microsoft-Dokumentation
+description: Sie können eine Entität erstellen, die eine E-Mail-Adresse enthält, die Sie verwenden können, um E-Mail-Aktivitäten an Datensätze für diese Entität zu senden.
 ms.custom: ''
 ms.date: 04/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4fd4b3f6cf80d81eda15cb559e711925c53c6171
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748550"
 ---
 # <a name="create-and-update-an-entity-to-send-email-activities-to-records"></a>Erstellen und Upgraden einer Entität, um E-Mail-Aktivitäten an Datensätze zu senden
 

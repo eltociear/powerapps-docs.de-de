@@ -1,6 +1,6 @@
 ---
-title: Mehrfachauswahl-Listenattribute (Common Data Service) | Microsoft Docs
-description: 'Infos zu Mehrfachauswahllistenattributen, die das Speichern von mehreren Options-Auswahlen in einem einzelnen Attribut erlauben.'
+title: Mehrfachauswahl-Listenattribute (Common Data Service) | Microsoft-Dokumentation
+description: Infos zu Mehrfachauswahllistenattributen, die das Speichern von mehreren Options-Auswahlen in einem einzelnen Attribut erlauben.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: MicroSri
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 47f6b9f5aeda7bcf8fec0c0831d478683a811b44
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748410"
 ---
 # <a name="multi-select-picklist-attributes"></a>Mehrfachauswahl-Listenattribute
 
@@ -73,7 +79,7 @@ Andere vorhandene Bedingungsoperatoren, die mit diesem Typ von Attribut verwende
 
 Die folgenden Beispiele zeigen die Verwendung von `ContainValues` und `not-contain-values` Verwenden `FetchXML` für folgenden Datnsatz auf ein Auswählensauswahllistenattribut , das `sample_outdooractivities` auf der Entität " `contact` heißt.
 
-### <a name="multi-select-picklist-sampleoutdooractivities-options"></a>Mehrfachauswahl-Listen `sample_outdooractivities`-Optionen:
+### <a name="multi-select-picklist-sample_outdooractivities-options"></a>Mehrfachauswahl-Listen `sample_outdooractivities`-Optionen:
 
 |Value|Bezeichnung|
 |-----|-----|

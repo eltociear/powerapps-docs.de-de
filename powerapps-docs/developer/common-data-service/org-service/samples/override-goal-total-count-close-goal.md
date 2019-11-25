@@ -1,25 +1,31 @@
 ---
-title: 'Beispiel: Überschreiben der Zielgesamtanzahl und Schließen des Ziels (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie Sie die Zielgesamtanzahl überschreiben und das Ziel schließen.'
+title: 'Beispiel: Überschreiben einer Zielgesamtanzahl und Schließen des Ziels (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie Sie die Zielgesamtanzahl überschreiben und das Ziel schließen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 62d02e77e0008778e0526f7620bc5bda168c6f26
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748738"
 ---
 # <a name="sample-override-goal-total-count-and-close-the-goal"></a>Beispiel: Überschreiben einer Zielgesamtanzahl und Schließen des Ziels
 
 Dieses Beispiel zeigt, wie Sie die Zielgesamtanzahl überschreiben und das Ziel schließen. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OverrideGoalTotal) herunterladen.
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie den erforderlichen Benutzer manuell **wie besehen** in **Office 365**. Ersetzen Sie `yourorg` durch den `OrgName` Ihrer Organisation.
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie den erforderlichen Benutzer manuell **wie besehen** (siehe unten) in **Office 365**. Ersetzen Sie `yourorg` durch den `OrgName` Ihrer Organisation.
 
 **Vorname**: Samantha<br/>
 **Nachname**: Smith<br/>
@@ -42,7 +48,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="setup"></a>Einrichten
 
 1. Tests für die Version der Organisation.
-2. Ruft den Vertriebsmanager ab, der manuell in **Office 365** erstellt wurde.
+2. Ruft den Vertriebsmanager ab, der manuell in **Office 365** erstellt wurde.
 3. Erstellt einen `PhoneCall`-Datensatz und den unterstützenden Firmendatensatz für das Beispiel.
 4. Erstellt ActivityPartys für das "Von"-Feld von Telefonanrufen.
 5. Erstellt einen offenen Telefonanruf.

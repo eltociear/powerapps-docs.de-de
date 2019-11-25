@@ -1,6 +1,6 @@
 ---
-title: 'Schritt 3: Erstellen einer verwaltete Lösung für die App (Common Data Service) | Microsoft Docs'
-description: 'Lernen Sie, wie Sie eine verwaltete Lösung erstellen, sodass die App alle Komponenten einschließt. Dies ist für das Veröffentlichen einer serverseitigen Synchronisierung Appsource erforderlich.'
+title: 'Schritt 3: Erstellen einer verwalteten Lösung für Ihre App (Common Data Service) | Microsoft-Dokumentation'
+description: Lernen Sie, wie Sie eine verwaltete Lösung erstellen, sodass die App alle Komponenten einschließt. Dies ist für das Veröffentlichen einer serverseitigen Synchronisierung Appsource erforderlich.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8115e17ef999834e2134ef41c2a8472bf539438b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748424"
 ---
 # <a name="step-3-create-a-managed-solution-for-your-app"></a>Schritt 3: Erstellen einer verwalteten Lösung für die App
 
@@ -36,7 +42,7 @@ Die Werte **Anzeigename** und **Beschreibung** für eine Lösung werden Kunden i
 
 Wenn die Lösung Demodaten oder Support erfordert:
 1. Erstellen von Unterstützungs-/Demodaten in der Testumgebung.
-2. Verwenden Sie das[Configuration Migration tool](/dynamics365/customer-engagement/admin/manage-configuration-data), um ein Schema für die Support-/Demodaten zu erstellen. 
+2. Verwenden Sie das [Konfigurationsmigrations-Tool](/dynamics365/customer-engagement/admin/manage-configuration-data), um ein Schema für die Support-/Demodaten zu erstellen. 
 3. Speichern Sie die Schemadatei, damit Sie sie später erneut verwenden können, um die Daten zu aktualisieren, wenn Ihre Demodaten ändern.
 4. Sie können das Schema später verwenden, um die Daten zu exportieren. Stellen Sie sicher, dass Sie einen beschreibenden Namen in der Exportdatei angeben. Die Menübanddaten werden als komprimierte Datei exportiert.
 
@@ -48,5 +54,5 @@ Sie haben eine Lösungsdatei (Beispiel: *SampleSolution.zip*) und optional eine 
 
 
 > [!div class="nextstepaction"]
-> [Schritt 4: Erstellen eines AppSource-Paket für die App](create-package-app-appsource.md) 
+> [Step 4: Erstellen eines AppSource-Pakets für die App](create-package-app-appsource.md) 
   

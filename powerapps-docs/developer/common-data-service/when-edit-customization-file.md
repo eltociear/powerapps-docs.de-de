@@ -1,24 +1,27 @@
 ---
 title: Informationen zum Bearbeiten der Anpassungsdatei (Common Data Service) | MicrosoftDocs
-description: 'Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung exportiert wird, kann bearbeitet werden, sodass bestimmte Anpassungsaufgaben ausgeführt werden. Nachdem Sie die Datei bearbeitet haben, können Sie die geänderte Datei zusammen mit anderen Dateien komprimieren, die in der nicht verwalteten Lösung exportiert werden. Sie übernehmen die Änderungen, indem Sie die geänderte nicht verwaltete Lösung importieren.'
+description: Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung exportiert wird, kann bearbeitet werden, sodass bestimmte Anpassungsaufgaben ausgeführt werden. Nachdem Sie die Datei bearbeitet haben, können Sie die geänderte Datei zusammen mit anderen Dateien komprimieren, die in der nicht verwalteten Lösung exportiert werden. Sie übernehmen die Änderungen, indem Sie die geänderte nicht verwaltete Lösung importieren.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: cac303a6-70f9-3962-879a-fbf7fdc2364f
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dee119bec4c4a57995f0f2c4299c199c9a45caf1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748594"
 ---
-
 # <a name="when-to-edit-the-customizations-file"></a>Informationen zum Bearbeiten der Anpassungsdatei
 
 Die Datei customizations.xml , die als Teil einer nicht verwalteten Lösung exportiert wird, kann bearbeitet werden, sodass bestimmte Anpassungsaufgaben ausgeführt werden. Nachdem Sie die Datei bearbeitet haben, können Sie die geänderte Datei zusammen mit anderen Dateien komprimieren, die in der nicht verwalteten Lösung exportiert werden. Sie übernehmen die Änderungen, indem Sie die geänderte nicht verwaltete Lösung importieren.  

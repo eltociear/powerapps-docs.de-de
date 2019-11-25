@@ -1,6 +1,6 @@
 ---
 title: Verwendung von OAuth mit Common Data Service (Common Data Service) | Microsoft Docs
-description: 'Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können'
+description: Erfahren Sie, wie Sie die Authentifizierung mit OAuth mit dem Common Data Service durchführen können
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a0777bcb4f67a01a894600176bd68ec3793034c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753066"
 ---
 # <a name="use-oauth-with-common-data-service"></a>OAuth mit Common Data Service verwenden
 
@@ -46,7 +52,7 @@ Wenn Sie eine App bei Azure AD registrieren, ist eine der Entscheidungen, die Si
 |
 |einheitlich|EinTyp von [Client-Anwendung](/azure/active-directory/develop/developer-glossary#client-application), der nativ auf einem Gerät installiert wird. |
 
-Wenn Sie **Web-App / API** auswählen, müssen Sie eine **Anmelde-URL** angeben, die die URL ist, unter der Azure AD die Authentifizierungsantwort sendet, einschließlich eines Token, wenn die Authentifizierung erfolgreich war. Während Sie eine App entwickeln, ist diese in der Regel auf `http://localhost/appname:[port]` gesetzt, so dass Sie Ihre App lokal entwickeln und debuggen können. Wenn Sie Ihre App veröffentlichen, müssen Sie diesen Wert auf die veröffentlichte URL der App ändern.
+Wenn Sie **Web-App / API** auswählen, müssen Sie eine **Anmelde-URL** angeben, die die URL ist, unter der Azure AD die Authentifizierungsantwort sendet, einschließlich eines Token, wenn die Authentifizierung erfolgreich war. Während Sie eine App entwickeln, ist diese in der Regel auf `https://localhost/appname:[port]` gesetzt, so dass Sie Ihre App lokal entwickeln und debuggen können. Wenn Sie Ihre App veröffentlichen, müssen Sie diesen Wert auf die veröffentlichte URL der App ändern.
 
 Wenn Sie **Native** wählen, müssen Sie eine Umleitungs-URI bereitstellen. Dies ist eine eindeutige Kennung, an die Azure AD den Benutzer-Agenten in einer OAuth 2.0-Anfrage weiterleitet. Dies ist normalerweise ein Wert, der so formatiert ist: `//app:<guid>`. 
 
@@ -57,7 +63,7 @@ Wenn Ihre Anwendung ein Client ist, der es dem authentifizierten Benutzer ermög
 Konkrete Schritte hierzu finden Sie unter [Exemplarische Vorgehensweise: Registrieren einer App bei Azure Active Directory > Berechtigungen anwenden](walkthrough-register-app-azure-active-directory.md).
 
 <!-- TODO Verify this -->
- Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.
+Wenn Ihre Anwendung die Server-zu-Server (S2S)-Authentifizierung verwendet, ist dieser Schritt nicht erforderlich. Diese Konfiguration erfordert einen bestimmten Systembenutzer, und die Operationen werden von diesem Benutzerkonto und nicht von jedem Benutzer durchgeführt, der authentifiziert werden muss.
 
 ### <a name="enable-implicit-flow"></a>Impliziten Fluss aktivieren
 
@@ -342,9 +348,9 @@ Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie 
   
 3. Klicken Sie auf **Neu**. Überprüfen Sie dann, ob Sie das Formular **Anwendungsbenutzer** verwenden.  
   
-    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
+    Wenn Sie die Felder **Anwendungs-ID**, **URI der Anwendungs-ID** und **Azure AD Objekt-ID** im Formular nicht sehen, müssen Sie aus der Liste **Anwendungsbenutzer** auswählen:  
   
-   ![Auswählen eines Anwendungsbenutzersformulars](media/select-application-user-form.PNG "Auswählen eines Anwendungsbenutzersformulars")  
+   ![Anwendungsbenutzerformular auswählen](media/select-application-user-form.PNG "Anwendungsbenutzerformular auswählen")  
   
 4. Hinzufügen der entsprechenden Werte zu den Feldern:  
   
@@ -355,7 +361,7 @@ Nachdem Sie die benutzerdefinierte Sicherheitsrolle erstellt haben, müssen Sie 
    |**Vollständiger Name**|Der Name Ihrer Anwendung.|  
    |**Primäre E-Mail-Adresse**|Die E-Mail-Adresse des Benutzers.|  
   
-    Die Felder **URI der Anwendungs-ID** und **Objekt-ID von Azure AD** sind gesperrt und können Sie keine Werte für diese Felder festlegen.  
+    Die Felder **URI der Anwendungs-ID** und **Azure AD Objekt-ID** sind gesperrt und können Sie keine Werte für diese Felder festlegen.  
   
     Wenn Sie diesen Benutzer erstellen, werden die Werte für diese Felder aus Azure AD basierend auf dem Wert der **Anwendungs-ID** abgerufen, wenn Sie den Benutzer speichern.  
   

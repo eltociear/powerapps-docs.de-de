@@ -1,19 +1,25 @@
 ---
-title: API-Einschränkungen (Common Data Service) | Microsoft Docs
+title: API-Limits (Common Data Service) | Microsoft-Dokumentation
 description: Verstehen Sie die Begrenzungen für API-Anforderungen.
 ms.custom: ''
 ms.date: 03/21/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: bsimons
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6b332b1e71a8d440c02cc79f7566eec59533cce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753082"
 ---
 # <a name="api-limits"></a>API-Begrenzungen
 
@@ -48,7 +54,7 @@ Wenn von Ihrer Anwendung die Begrenzung überschritten wird, gibt die Fehlerantw
 
 Eine Diskussion zu bewährten Methoden finden Sie unter [Bewährte Methoden in der Azure-Architektur zur Behandlung von vorübergehenden Fehlern](/azure/architecture/best-practices/transient-faults)
 
-[Das Polly-Projekt](http://www.thepollyproject.org/) ist eine Bibliothek mit Funktionen zum Umgang mit vorübergehenden Fehlern mithilfe von Ausführungsrichtlinien.
+[Das Polly-Projekt](https://www.thepollyproject.org/) ist eine Bibliothek mit Funktionen zum Umgang mit vorübergehenden Fehlern mithilfe von Ausführungsrichtlinien.
 
 ### <a name="http-requests"></a>HTTP-Anforderungen
 
@@ -133,7 +139,7 @@ public class Retry
 
 ### <a name="see-also"></a>Siehe auch
 
-[Common Data Service-Web-API verwenden](webapi/overview.md)<br />
-[Nutzen des Common Data Service-Organisationsservice](org-service/overview.md)<br />
+[Verwendung der Common Data Service Web-API](webapi/overview.md)<br />
+[ Common Data Service Organisationsdienst nutzen](org-service/overview.md)<br />
 [Ausführen von Batchbetrieben mithilfe der Web-API](webapi/execute-batch-operations-using-web-api.md)<br />
 [Verwenden von "ExecuteMultiple" zur Verbesserung der Leistung bei Massendatenlast](org-service/execute-multiple-requests.md)

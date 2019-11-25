@@ -1,6 +1,6 @@
 ---
 title: 'Beispiel: Webzugriff über ein Plugin (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie man ein Plug-in schreibt, das auf Ressourcen im Web (Netzwerk) zugreifen kann.'
+description: Dieses Beispiel zeigt, wie man ein Plug-in schreibt, das auf Ressourcen im Web (Netzwerk) zugreifen kann.
 ms.custom: ''
 ms.date: 8/19/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c12d9eff40db2afb20eebf787b360ab4c49be18b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752927"
 ---
 # <a name="sample-web-access-from-a-plug-in"></a>Beispiel: Webzugriff von einem Plug-in aus
 
@@ -27,8 +33,8 @@ Dieses Beispiel zeigt, wie man ein Plug-in schreibt, das auf Web-(Netzwerk-)Ress
     - Das HttpClientPlugin verwendet [HttpClient Class](/dotnet/api/system.net.http.httpclient).
 1. Öffnen Sie die Beispiellösung in Visual Studio, navigieren Sie zu den Eigenschaften des Projekts und vergewissern Sie sich, dass die Assembly während des Builds signiert wird. Drücken Sie F6, um die Assembly des Samples zu erstellen (WebAccessPlugin.dll).
 1. Führen Sie das Plug-in-Registrierungstool aus und registrieren Sie die Baugruppe in der Sandbox und Datenbank des Common Data Service-Servers. 
-1. Geben Sie für beide Plug-In-Typen bei der Registrierung eines Schrittes eine Web-URI-Zeichenfolge (z.B. `http://www.microsoft.com`) im unsicheren Konfigurationsfeld an.
-    - Der Standardwert `http://www.bing.com` wird verwendet, wenn kein Wert angegeben wird.
+1. Geben Sie für beide Plug-In-Typen bei der Registrierung eines Schrittes eine Web-URI-Zeichenfolge (z.B. `https://www.microsoft.com`) im unsicheren Konfigurationsfeld an.
+    - Der Standardwert `https://www.bing.com` wird verwendet, wenn kein Wert angegeben wird.
 1. Verwenden Sie eine App oder einen Schreibcode, um den entsprechenden Vorgang auszuführen, um die Nachricht und die Entität aufzurufen, auf der Sie das Plug-in registriert haben.
 1. Wenn das Plug-in ausgeführt wird und die Dauer des Aufrufs die 15-Sekunden-Grenze überschreitet, wird ein Fehler ausgelöst. Andernfalls sollte es gelingen.
 1. Wenn Sie mit dem Testen fertig sind, heben Sie die Registrierung der Assembly auf und gehen Sie wie folgt vor.
@@ -39,7 +45,7 @@ Wenn das Plug-in ausgeführt wird, lädt es Webseitendaten von der angegebenen W
 
 - Wenn das Plugin `WebClientPlugin` fehlschlägt, schreibt es etwa folgendes in das Plugin Trace Log:
     ```
-    Downloading the target URI: http://www.bing.com
+    Downloading the target URI: https://www.bing.com
     Exception: Microsoft.Xrm.Sdk.InvalidPluginExecutionException: The timeout elapsed while attempting to issue the request. ---> System.Net.WebException: The operation has timed out
       at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
       at System.Net.WebClient.DownloadData(Uri address)
@@ -50,7 +56,7 @@ Wenn das Plug-in ausgeführt wird, lädt es Webseitendaten von der angegebenen W
 
 - Wenn das Plugin `HttpClientPlugin` fehlschlägt, schreibt es etwa folgendes in das Plugin Trace Log:
     ```
-    Downloading the target URI: http://www.bing.com
+    Downloading the target URI: https://www.bing.com
     Inner Exceptions:
       Exception: System.Threading.Tasks.TaskCanceledException: A task was canceled.
     Exception: Microsoft.Xrm.Sdk.InvalidPluginExecutionException: An exception occurred while attempting to issue the request.

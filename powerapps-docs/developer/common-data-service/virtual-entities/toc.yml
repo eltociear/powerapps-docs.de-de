@@ -1,9 +1,9 @@
-- name: Erste Schritte mit virtuellen Entitäten
+- name: ' Erste Schritte mit virtuellen Entitäten'
   href: get-started-ve.md
   items:
-    - name: API-Überlegungen
+    - name: API Überlegungen
       href: api-considerations-ve.md
-    - name: Benutzerdefinierte Datenanbieter
+    - name: Benutzerdefinierter Datenanbieter.
       href: custom-ve-data-providers.md
     - name: 'Beispiel: Generisches virtuelles Entitätsdatenanbieter-Plug-In'
       href: sample-generic-ve-plugin.md

@@ -1,19 +1,25 @@
 ---
-title: Erstellen und Abrufen von Änderungen an Metadaten (Common Data Service) | Microsoft Docs
-description: 'Die Klassen im Abfrage-Namespace und die RetrieveMetadataChangesRequest und RetrieveMetadataChangesResponse-Klassen erlauben Ihnen, effiziente Metadatenabfragen aufzubauen und Änderungen an den Metadaten, die im Laufe der Zeit auftreten, zu erfassen.'
+title: Abrufen und Erkennen von Änderungen bei Metadaten (Common Data Service) | Microsoft-Dokumentation
+description: Die Klassen im Abfrage-Namespace und die RetrieveMetadataChangesRequest und RetrieveMetadataChangesResponse-Klassen erlauben Ihnen, effiziente Metadatenabfragen aufzubauen und Änderungen an den Metadaten, die im Laufe der Zeit auftreten, zu erfassen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce5d1442fce4720d2d0d489f8dbadd7c5f7db43b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752958"
 ---
 # <a name="retrieve-and-detect-changes-to-metadata"></a>Abrufen und Erkennen von Änderungen bei Metadaten
 
@@ -27,7 +33,7 @@ Die Klassen im <xref:Microsoft.Xrm.Sdk.Metadata.Query>-Namespace und die <xref:M
   
 ## <a name="strategies-for-using-metadata"></a>Strategien für die Verwendung von Metadaten  
 
- Mithilfe von Metadaten können Sie Anwendungen erstellen, die sich anpassen, während sich das Common Data Service-Datenmodell ändert. Metadaten sind für die folgenden Typen von Anwendungen wichtig:  
+ Mithilfe von Metadaten können Sie Anwendungen erstellen, die sich anpassen, während das Common Data Service-Datenmodell sich ändert. Metadaten sind für die folgenden Typen von Anwendungen wichtig:  
   
 -   UI für-Client-Anwendungen  
   
@@ -292,7 +298,7 @@ AttributeProperties.PropertyNames.Add("AttributeType");
   
 ### <a name="retrieve-labels"></a>Abrufen von Beschriftungen
   
- Schließlich <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression>.<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> Schließlich akzeptiert die Eigenschaft eine <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> mit der Sie einen oder mehrere ganzzahlige `LCID`-Werte angeben können, um zu bestimmen, welche lokalisierten Beschriftungen zurückgegeben werden sollen. Gültige Gebietsschema-ID-Werte finden Sie unter [Gebietsschema-ID-Diagramm (LCID)](http://go.microsoft.com/fwlink/?LinkId=122128). Wenn eine Organisation viele Sprachpakete installiert hat, werden die Beschriftungen für alle Sprachen zurückgegeben, es sei denn, Sie legen eine <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> fest.  
+ Schließlich <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression>.<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> Schließlich akzeptiert die Eigenschaft eine <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> mit der Sie einen oder mehrere ganzzahlige `LCID`-Werte angeben können, um zu bestimmen, welche lokalisierten Beschriftungen zurückgegeben werden sollen. Gültige Gebietsschema-ID-Werte finden Sie unter [Gebietsschema-ID-Diagramm (LCID)](https://go.microsoft.com/fwlink/?LinkId=122128). Wenn eine Organisation viele Sprachpakete installiert hat, werden die Beschriftungen für alle Sprachen zurückgegeben, es sei denn, Sie legen eine <xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> fest.  
   
  Das folgende Bespiel definiert eine <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression>, die Beschriftungen auf solche beschränkt, die die bevorzugte Sprache des Benutzers darstellen.  
   

@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a42b5b1456700e93ba5cde5a8aaf2dddd63325d4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753530"
 ---
 # <a name="use-iframe-and-web-resource-controls-on-a-form"></a>Verwenden von IFRAME- und Webressourcen-Steuerelementen in einem Formular
 
@@ -23,7 +29,7 @@ search.app:
 Durch IFRAME- und Webressourcensteuerelemente wird der eingebettete Inhalt von einem anderen Ort aus auf den Seiten mithilfe eines HTML-IFRAME-Elements gesteuert.  
 
 > [!NOTE]
->  Die Designs, die Sie für das Formular auswählen, werden auch für den Dynamics 365 for Outlook-Lesebereich und die Formulare verwendet, die von Dynamics 365 tablets verwendet werden. Webressourcen und IFrames werden nicht mithilfe des Dynamics 365 for Outlook-Lesebereichs angezeigt, sie werden jedoch in Dynamics 365 for tablets unterstützt. Wenn der IFRAME vom Zugriff auf das `Xrm`-Objekt der Seite oder von Formularereignishandlern abhängt, sollten Sie den IFRAME so konfigurieren, dass er standardmäßig nicht sichtbar ist.  
+>  Die Designs, die Sie für das Formular auswählen, werden auch für den Dynamics 365 for Outlook-Lesebereich und die Formulare verwendet, die von Dynamics 365-Tablets verwendet werden. Webressourcen und IFRAMEs werden nicht mithilfe des Dynamics 365 for Outlook-Lesebereichs angezeigt. Sie werden jedoch in Dynamics 365 für Tablets unterstützt. Wenn der IFRAME vom Zugriff auf das `Xrm`-Objekt der Seite oder von Formularereignishandlern abhängt, sollten Sie den IFRAME so konfigurieren, dass er standardmäßig nicht sichtbar ist.  
 
  Sie können einen IFRAME verwenden, um den Inhalt einer anderen Website in einem Formular anzuzeigen, beispielsweise in einer ASP.NET-Seite. Anzeigen eines Entitätsformulars mit einem IFrame, der eingebettet in einem anderen Entitätsformular ist, wird nicht unterstützt.  
 
@@ -44,14 +50,14 @@ Durch IFRAME- und Webressourcensteuerelemente wird der eingebettete Inhalt von e
 |        Attribut        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `security="restricted"` |                                                                                                                                                                                                                                                                                                    Dieses Attribut wird nur von Versionen von Internet Explorer ab Version 6 unterstützt. Das Sicherheitsattribut wendet die Benutzersicherheitseinstellung "Eingeschränkte Sites" auf die Quelldatei des IFRAME an. (Zoneneinstellungen sind auf der Registerkarte **Sicherheit** des Dialogfelds **Internetoptionen** zu finden.) Standardmäßig ist die Skipterstellung in der Zone für eingeschränkte Sites nicht aktiviert. Durch Ändern der Sicherheitseinstellungen der Zone können unterschiedliche negative Ergebnisse auftreten, einschließlich das Zulassen der Ausführung von Skripts. Weitere Informationen finden Sie unter [Sicherheitsattribute](https://msdn.microsoft.com/library/ie/ms534622.aspx).                                                                                                                                                                                                                                                                                                     |
-|      `sandbox=""`       | Für Browser, die dieses Attribut unterstützen, ist der Inhalt im IFRAME im Wesentlichen darauf beschränkt, nur Informationen anzuzeigen. Die folgenden Einschränkungen können angewendet werden:<br /><br /> -   Browser-Plug-Ins sind deaktiviert.<br />-   Skripts und Formulare sind deaktiviert.<br />-   Links zu anderen Browserkontexten sind deaktiviert.<br />-   Inhalt wird wie aus einer anderen Domänen behandelt, auch wenn die Domäne identisch ist.<br /><br /> Dieses Attribut wird durch W3C definiert und wird von den folgenden Browsern unterstützt:<br /><br /> - Internet Explorer 10, Internet Explorer 11 und Microsoft Edge <br />- Google Chrome<br />- Apple Safari<br />- Mozilla Firefox<br /><br /> Weitere Informationen zum Sandkastenattribut finden Sie unter:<br /><br /> -   [Sichern der Website mit HTML5 Sandbox](https://msdn.microsoft.com/hh563496)<br />-   [WC3 Sandbox-Attribut](http://dev.w3.org/html5/spec-author-view/the-iframe-element.html)<br />-   [Sandkasten](https://msdn.microsoft.com/library/ie/hh673561.aspx) |
+|      `sandbox=""`       | Für Browser, die dieses Attribut unterstützen, ist der Inhalt im IFRAME im Wesentlichen darauf beschränkt, nur Informationen anzuzeigen. Die folgenden Einschränkungen können angewendet werden:<br /><br /> -   Browser-Plug-Ins sind deaktiviert.<br />-   Skripts und Formulare sind deaktiviert.<br />-   Links zu anderen Browserkontexten sind deaktiviert.<br />-   Inhalt wird wie aus einer anderen Domänen behandelt, auch wenn die Domäne identisch ist.<br /><br /> Dieses Attribut wird durch W3C definiert und wird von den folgenden Browsern unterstützt:<br /><br /> - Internet Explorer 10, Internet Explorer 11 und Microsoft Edge <br />- Google Chrome<br />- Apple Safari<br />- Mozilla Firefox<br /><br /> Weitere Informationen zum Sandkastenattribut finden Sie unter:<br /><br /> -   [Sichern der Website mit HTML5 Sandbox](https://msdn.microsoft.com/hh563496)<br />-   [WC3 Sandbox-Attribut](https://dev.w3.org/html5/spec-author-view/the-iframe-element.html)<br />-   [Sandkasten](https://msdn.microsoft.com/library/ie/hh673561.aspx) |
 
 <a name="BKMK_EnableIFrameCommunicationAcrossDomains"></a>   
 
 ### <a name="enabling-iframe-communication-across-domains"></a>Aktivieren der IFRAME-Kommunikation über Domänengrenzen hinweg  
  Manchmal möchten Sie die Kommunikation für einen IFRAME aktivieren, der Inhalt auf einer anderen Domäne enthält. `Window.postMessage` ist eine Browsermethode, die diese Funktionen für Versionen von Internet Explorer ab Internet Explorer 8 bereitstellt. Google Chrome, Mozilla Firefox und Apple Safari unterstützen sie auch. Weitere Informationen zu `postMessage` finden Sie in den folgenden Blogbeiträgen:  
 
--   [Domänenübergreifende Aufrufe an das übergeordnete Formular](http://blogs.msdn.com/b/devkeydet/archive/2012/02/14/cross-domain-calls-to-the-parent-crm-2011-form.aspx)  
+-   [Domänenübergreifende Aufrufe an das übergeordnete Formular](https://blogs.msdn.com/b/devkeydet/archive/2012/02/14/cross-domain-calls-to-the-parent-crm-2011-form.aspx)  
 
 -   [Dokumentübergreifendes Messaging und RPC](https://msdn.microsoft.com/magazine/ff800814.aspx)  
 
@@ -80,18 +86,18 @@ Durch IFRAME- und Webressourcensteuerelemente wird der eingebettete Inhalt von e
  Im folgenden Beispiel wird die URL ohne Parameter gezeigt:  
 
 ```  
-http://myserver/mypage.aspx  
+https://myserver/mypage.aspx  
 ```  
 
  Im folgenden Beispiel wird die URL mit Parameter gezeigt:  
 
 ```  
-http://myserver/mypage.aspx?id=%7bB2232821-A775-DF11-8DD1-00155DBA3809%7d&orglcid=1033&orgname=adventureworkscycle&type=1&typename=account&userlcid=1033  
+https://myserver/mypage.aspx?id=%7bB2232821-A775-DF11-8DD1-00155DBA3809%7d&orglcid=1033&orgname=adventureworkscycle&type=1&typename=account&userlcid=1033  
 ```  
 
 ### <a name="read-passed-parameters"></a>Lesen von übergebenen Parametern  
 
- Übergebene Parameter werden in der Regel auf der ASPX-Zielseite mithilfe der **HttpRequest.QueryString**-Eigenschaft gelesen. Auf einer HTML-Seite kann der Zugriff auf die Parameter mit der **window.location.search**-Eigenschaft in JavaScript erfolgen. Weitere Informationen finden Sie unter [HttpRequest.QueryString-Eigenschaft](http://msdn2.microsoft.com/library/system.web.httprequest.querystring.aspx) und [search-Eigenschaft](http://msdn2.microsoft.com/library/ms534620.aspx).  
+ Übergebene Parameter werden in der Regel auf der ASPX-Zielseite mithilfe der **HttpRequest.QueryString**-Eigenschaft gelesen. Auf einer HTML-Seite kann der Zugriff auf die Parameter mit der **window.location.search**-Eigenschaft in JavaScript erfolgen. Weitere Informationen finden Sie unter [HttpRequest.QueryString-Eigenschaft](https://msdn2.microsoft.com/library/system.web.httprequest.querystring.aspx) und [search-Eigenschaft](https://msdn2.microsoft.com/library/ms534620.aspx).  
 
 <a name="BKMK_PassFormData"></a>  
 
@@ -123,10 +129,10 @@ var newTarget = "";
 //Set the target based on the value of the option set  
 switch (value) {  
     case 100000001:  
-        newTarget = "http://myServer/test/pageOne.aspx";  
+        newTarget = "https://myServer/test/pageOne.aspx";  
         break;  
     default:  
-        newTarget = "http://myServer/test/pageTwo.aspx";  
+        newTarget = "https://myServer/test/pageTwo.aspx";  
         break;  
 }  
 //Get the default URL for the IFRAME, which includes the   

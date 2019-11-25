@@ -1,6 +1,6 @@
 ---
-title: ' Ereignisframework (Common Data Service) | Microsoft Docs'
-description: 'Beschreibt das Ereignisframework und Informationsentwickler sollten wissen, wenn sie damit arbeiten.'
+title: " Ereignisframework (Common Data Service) | Microsoft Docs"
+description: Beschreibt das Ereignisframework und Informationsentwickler sollten wissen, wenn sie damit arbeiten.
 ms.custom: ''
 ms.date: 06/18/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4c055dbac811186dde54cc4a002ee721e3ca25cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752982"
 ---
 # <a name="event-framework"></a>Ereignisframework
 
@@ -62,10 +68,10 @@ $filter=iscustomprocessingstepallowed eq true and isvisible eq true)
 ```
 
 > [!TIP]
-> Sie können diese Daten mithilfe dieser Abfrage und der in diesem Blogbeitrag aufgeführten Anleitung in ein Excel-Arbeitsblatt exportieren: [Finden von Messages und Entitäten, die für Plug-Ins mithilfe von Common Data Service qualifiziert sind](https://powerapps.microsoft.com/en-us/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
+> Sie können diese Daten mithilfe dieser Abfrage und der in diesem Blogbeitrag aufgeführten Anleitung in ein Excel-Arbeitsblatt exportieren: [Finden von Messages und Entitäten, die für Plug-Ins mithilfe von Common Data Service qualifiziert sind](https://powerapps.microsoft.com/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
 
 
-Sie können diese Informationen auch mithilfe des folgenden FetchXML abrufen. Der [FetchXML-Generator](http://fxb.xrmtoolbox.com) ist ein hilfreiches Tool, um diese Art von Abfrage auszuführen.
+Sie können diese Informationen auch mithilfe des folgenden FetchXML abrufen. Der [FetchXML-Generator](https://fxb.xrmtoolbox.com) ist ein hilfreiches Tool, um diese Art von Abfrage auszuführen.
 
 ```xml
 <fetch>

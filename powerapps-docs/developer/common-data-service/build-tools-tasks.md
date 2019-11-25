@@ -10,12 +10,17 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d1455909aa8fef11a2bba4658edba81e40632ceb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753046"
 ---
-
 # <a name="build-tools-tasks"></a>Aufgaben von Buildtools
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -35,21 +40,21 @@ Die PowerApps-Prüfungsaufgabe führt eine statische Analyseprüfung Ihrer Lösu
 | PowerApps-Prüfungsdienst  |   Wählen Sie den Dienstendpunkt für die PowerApps-Prüfung aus. Der Dienstendpunkt wird unter **Dienstverbindungen** in **Projekteinstellungen** definiert.  **HINWEIS:** Die Dienstverbindungsart, die nur für diese bestimmte Aufgabe verwendet werden muss, lautet „PowerApps-Prüfung“. Dies ist eine Dienstprinzipalverbindung. Weitere Informationen dazu, wie Sie Dienstprinzipale konfigurieren, bevor Sie die Aufgabe verwenden können, finden Sie [hier](https://aka.ms/buildtoolsconnection).  |
 | Speicherort der zu analysierenden Datei  | Geben Sie an, ob auf eine lokale Datei oder eine Referenzdatei über eine SAS-URL verwiesen wird. 
 | Lokale zu analysierende Datei/SAS-URI für zu analysierende Datei |  Geben Sie den Pfad und Dateinamen der zu analysierenden ZIP-Dateien an.   Platzhalter können verwendet werden. Beispielsweise **\*.zip für alle Dateien in allen Unterordnern. Sie können die Dateien direkt angeben oder einen Verweis auf eine Datei über eine SAS-URI.   |
-|  Regelsatz |   Geben Sie an, welcher Regelsatz angewendet werden soll. Die folgenden zwei Regelsätze stehen zur Verfügung: **Lösungsprüfung:** Dies ist derselbe Regelsatz, der über das [Hersteller-Portal](https://make.powerapps.com/) ausgeführt wird.    **AppSource:** Dies ist der erweiterte Regelsatz, der verwendet wird, um eine Anwendung zu zertifizieren, bevor sie in [AppSource](https://appsource.microsoft.com/en-US/) veröffentlicht werden kann.   |
+|  Regelsatz |   Geben Sie an, welcher Regelsatz angewendet werden soll. Die folgenden zwei Regelsätze stehen zur Verfügung: **Lösungsprüfung:** Dies ist derselbe Regelsatz, der über das [Hersteller-Portal](https://make.powerapps.com/) ausgeführt wird.    **AppSource:** Dies ist der erweiterte Regelsatz, der verwendet wird, um eine Anwendung zu zertifizieren, bevor sie in [AppSource](https://appsource.microsoft.com/) veröffentlicht werden kann.   |
 
 ### <a name="configure-service-connection-for-powerapps-checker"></a>Konfigurieren der Dienstverbindung für die PowerApps-Prüfung
 
-Bevor Sie die PowerApps-Prüfungsaufgabe konfigurieren können, müssen Sie zunächst die Dienstprinzipale definieren, die verwendet werden, um eine Verbindung mit dem PowerApps-Prüfungsdienst herzustellen. Weitere Informationen zum zugrunde liegenden PowerApps-Prüfungsdienst und zur Authentifizierung finden Sie [hier](https://docs.microsoft.com/en-us/powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module). Die folgenden Schritte enthalten jedoch alle Informationen, die Sie für den Anfang benötigen.
+Bevor Sie die PowerApps-Prüfungsaufgabe konfigurieren können, müssen Sie zunächst die Dienstprinzipale definieren, die verwendet werden, um eine Verbindung mit dem PowerApps-Prüfungsdienst herzustellen. Weitere Informationen zum zugrunde liegenden PowerApps-Prüfungsdienst und zur Authentifizierung finden Sie [hier](https://docs.microsoft.com/powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module). Die folgenden Schritte enthalten jedoch alle Informationen, die Sie für den Anfang benötigen.
 
-Nachfolgend wird beschrieben, wie Sie die erforderliche Azure Active Directory-Anwendung (AAD) mit dem [AzureAD-PowerShell-Modul](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0) generieren, einen geheimen Clientschlüssel hinzufügen und ihn dann verwenden, um die PowerApps-Prüfungsverbindungszeichenfolge zu konfigurieren.
+Nachfolgend wird beschrieben, wie Sie die erforderliche Azure Active Directory-Anwendung (AAD) mit dem [AzureAD-PowerShell-Modul](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0) generieren, einen geheimen Clientschlüssel hinzufügen und ihn dann verwenden, um die PowerApps-Prüfungsverbindungszeichenfolge zu konfigurieren.
 
 > [!NOTE]
 > Rechte zum Erstellen von Dienstprinzipalen in einem AAD-Mandanten, der für PowerApps (P1/P2) oder D365 CE lizenziert ist, sind erforderlich, um diese Schritte auszuführen. 
 
 1. Öffnen Sie einen PowerShell-Befehl mit Administratorrechten.
-![PowerShell-Befehlsfenster](media/pscommand.png "PowerShell-Befehlsfenster")
+![PowerShell-Befehlsfenster](media/pscommand.png "PPowerShell-Befehlsfenster)
 2. Führen Sie den folgenden Befehl in PowerShell aus: *Install-Module -Name AzureAD*.
-![Install-Module-Befehl](media/pscommand-install.png "Install-Module-Befehl")
+![Installations-Modulbefehl](media/pscommand-install.png "IInstallations-Modulbefehlsbildschirm)
  
 3.  Dies erfordert Sie auf, den Module aus PSGallery zu vertrauen. Klicken Sie auf **A (Ja zu allen)**.
 1. Kopieren Sie Folgendes, und fügen Sie es dann in die PowerShell-Eingabeaufforderung ein:
@@ -114,17 +119,17 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "PowerA
  ```
 
 5.  Wenn Sie dazu aufgefordert werden, wählen Sie immer **A (Immer ausführen)** aus.
-![Bildschirm für PowerShell-Befehl](media/pscommand-always-run.png "Bildschirm für PowerShell-Befehl")
+![PowerShell-Befehlsfenster](media/pscommand-always-run.png "PPowerShell Befehl Screenshot)
 6. Ein Anmeldedialogfeld wird angezeigt. Melden Sie sich als Benutzer an. Beachten Sie, dass Sie sich in einigen Fällen zweimal anmelden müssen.
 7. Nachdem das Skript abgeschlossen ist, werden die Anwendung-ID und der Mandant im Befehlsfenster angezeigt.
 8. Melden Sie sich anschließend bei [Azure AD](https://portal.azure.com) an, um den geheimen Clientschlüssel abzurufen.
 9. Wählen Sie in Microsoft Azure **Azure Active Directory –> App-Registrierungen –> PowerApps-Prüfungs-Client.**
-![Auswählen des Prüfungsclients in Azure](media/azure-select-checker.png "Azure-Screenshot")
+![Auswählen des Prüferclient in Azure](media/azure-select-checker.png "AAzure Screenshot)
 10. Klicken Sie im linken Navigationsbereich unter **Verwalten** auf **Zertifikate und geheime Schlüssel**.
 11. Wählen Sie im Bildschirm **Zertifikate und geheime Schlüssel** unter **Geheime Clientschlüssel** die Option **Neuer geheimer Clientschlüssel** aus. 
 12. Geben Sie eine Beschreibung für den geheimen Clientschlüssel ein, wählen Sie die Ablaufeinstellung, und klicken Sie dann auf **Hinzufügen**.
 13. Kopieren Sie den geheimen Clientschlüssel, der auf dem nächsten Bildschirm angezeigt wird. 
-![Kopieren des geheimen Clientschlüssels](media/client-secret-copy.png "Kopieren des geheimen Clientschlüssels")
+![Clientgeheimnis kopieren](media/client-secret-copy.png "ClClient geheimer Screenshot
     > [!NOTE]
     > Dies ist das einzige Mal, dass der geheime Clientschlüssel angezeigt wird.
 14. Öffnen Sie die Verbindung des PowerApps-Prüfungsdiensts, und fügen Sie den geheimen Clientschlüssel in das Feld **Dienstprinzipalschüssel** ein, und klicken Sie dann **OK**.
@@ -145,7 +150,7 @@ Die Aufgabe zum Importieren einer Lösung importiert eine Lösung in eine Zielum
 | Lösungseingabedatei  | Der Pfad und der Dateiname der Datei solution.zip, die in die Zielumgebung importiert werden soll. Beispiel: *$(Build.ArtifactStagingDirectory)\$(SolutionName).zip*.
  |
 > [!NOTE] 
-> Variablen sind eine bequeme Möglichkeit, wichtige Daten in verschiedene Teile der Pipeline zu übertragen. Eine vollständige Liste von vordefinierten Variablen ist [hier](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml) verfügbar.
+> Variablen sind eine bequeme Möglichkeit, wichtige Daten in verschiedene Teile der Pipeline zu übertragen. Eine vollständige Liste von vordefinierten Variablen ist [hier](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml) verfügbar.
 
 ### <a name="powerapps-export-solution"></a>PowerApps: Lösung exportieren
 
@@ -196,7 +201,8 @@ Die Aufgabe zum Festlegen der Lösungsversion aktualisiert die Version einer Lö
 | **Parameter** | **Beschreibung** |
 |---------------------------|----|
 | PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Umgebung, in der Sie das Paket bereitstellen möchten.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
-| Paketdatei  | Der Pfad und Dateiname des Pakets, das Sie bereitstellen möchten |
+| Lösungsname  | Der Name der Lösung, für die sie eine Versionsnummer festlegen möchten |
+| Ziellösungsversionsnummer | Einzustellende Versionsnummer, Verwendung des Formates `major.minor.build.revision` beispielsweise **1.0.0.1** |
 
 ### <a name="powerapps-deploy-package"></a>PowerApps: Bereitstellungspaket
 
@@ -205,7 +211,6 @@ Die Aufgabe zum Bereitstellen eines Pakets stellt ein Paket in einer Umgebung be
 | **Parameter** | **Beschreibung** |
 |---------------------------|----|
 | PowerApps: Umgebungs-URL  | Der Dienstendpunkt für die Zielumgebung, in welcher die zu aktualisierende Lösung gespeichert ist.  Definiert unter **Dienstverbindungen** in **Projekteinstellungen**. |
-| Lösungsname  | Der Name der Lösung, für die sie eine Versionsnummer festlegen möchten |
 
 ## <a name="environment-management-tasks"></a>Umgebungsverwaltungsaufgaben
 

@@ -1,6 +1,6 @@
 ---
-title: 'Erstellen einer benutzerdefinierten Entität, die Komponenten enthält, mit PowerApps | Microsoft Docs'
-description: Thema zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer PowerApps-App.
+title: Erstellen einer benutzerdefinierten Entität, die Komponenten PowerApps enthält | Microsoft-Dokumentation
+description: Thema mit schrittweisen Anweisungen zum Erstellen und Konfigurieren einer Entität zur Verwendung mit einer PowerApps-App.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -9,15 +9,20 @@ ms.topic: tutorial
 ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754825"
 ---
+# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Erstellen Sie eine benutzerdefinierte Entität mit Komponenten in PowerApps
 
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Benutzerdefinierte Entität mit Komponenten in PowerApps erstellen
-
-Mit PowerApps können eine modellgesteuerte App genauer an die Branche, Benennungsstandards und besonderen Geschäftsprozesse Ihrer Organisation anpassen. PowerApps-App-Entwicklung umfasst das Hinzufügen von Standard" vordefinierten Entitäten oder zum Erstellen benutzerdefinierter Entitäten. Eine Entität definiert die Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. 
+Mit PowerApps können Sie Ihre App genauer an die Branche, Benennungsstandards und besonderen Geschäftsprozesse Ihrer Organisation anpassen. PowerApps-App-Entwicklung umfasst das Hinzufügen von Standard "vordefinierten Entitäten" oder dem Erstellen benutzerdefinierter Entitäten. Eine Entität definiert die Informationen, die Sie in Form von Datensätzen nachverfolgen möchten, die normalerweise Eigenschaften wie Firmenname, Standort, Produkte, E-Mail und Telefon umfassen. 
 
 In diesem Thema erstellen Sie eine Entität und fügen Schlüsselkomponenten wie Felder, Beziehungen, Ansichten und Formularen hinzu und bearbeiten sie. Informationen zu:
 
@@ -31,7 +36,7 @@ Dieses Thema folgt der Firma Contoso, die ein Haustierpflegeunternehmen hat, das
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. Wenn Sie noch kein PowerApps-Konto haben, wählen Sie den Link **Kostenlos beginnen** aus [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. Wenn Sie noch kein PowerApps-Konto haben, wählen Sie den Link **Kostenlos beginnen** aus [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Erstellen einer benutzerdefinierten Entität.
 
@@ -57,7 +62,7 @@ Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm
 4. Klicken Sie auf der Registerkarte **Felder** auf der Entitätsdesignersymbolleiste und wählen Sie die Option aus **Feld hinzufügen** Klicken Sie auf den Bereich **Feldeigenschaften** und geben Sie ein oder wählen Sie die folgenden Werte und Optionen.
   - **Anzeigename**. *Spezies*
   - **Datentyp**. *Optionssatz*
-  - **Optionssatz**. *Optionssatz: Neu*
+  - **Optionssatz**. *Neuer Optionssatz*
 5. Einen Optionssatz erstellen
 
   a. Wählen Sie **Neue Einheit hinzufügen**. 
@@ -71,7 +76,7 @@ Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm
   e. Wählen Sie **Speichern** aus. 
 
   > [!div class="mx-imgBorder"] 
-  > ![Optionssatz: Neu](media/create-custom-entity/optionset-add-items.png)
+  > ![Neuer Optionssatz](media/create-custom-entity/optionset-add-items.png)
 
 6. Wählen Sie **Durchsuchbar** und dann **Fertig** aus.
 

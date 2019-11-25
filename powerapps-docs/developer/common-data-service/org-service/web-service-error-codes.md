@@ -6,16 +6,21 @@ ms.date: 05/09/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ef32c596a2740d5a459975061058d1bb682505fe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753070"
 ---
-
 # <a name="web-service-error-codes"></a>Webdienst-Fehlercodes
 
 In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftreten können, wenn Sie den Code debuggen.
@@ -263,8 +268,8 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />BidsNoOrganizationsFound<br />**Hex**:<br />8005E004<br />**Nummer**:<br />-2147098620|Für den Benutzer wurden keine Organisationen gefunden.|
 > |**Name**:<br />BidsOrganizationNotFound<br />**Hex**:<br />8005E005<br />**Nummer**:<br />-2147098619|Für den Benutzer wurde keine {0} Organisation gefunden.|
 > |**Name**:<br />BidsServerConnectionFailed<br />**Hex**:<br />8005E002<br />**Nummer**:<br />-2147098622|Fehler beim Herstellen der Serververbindung {0}.|
-> |**Name**:<br />BillingNoSettingError<br />**Hex**:<br />8004B531<br />**Nummer**:<br />-2147175119|Keine Konfigurationseinstellung für Fakturierungsanwendung [{0}] gefunden.|
-> |**Name**:<br />BillingPartnerCertificate<br />**Hex**:<br />8004B530<br />**Nummer**:<br />-2147175120|Das richtige Partnerszertifikat zur Verwendung mit der Fakturierung konnte nicht bestimmt werden.  Aussteller: {0}Betreff: {1} Definierte Übereinstimmungen: [{2}]  Namenübereinstimmungen: [{3}]  Alle gültigen Zertifikate: [{4}].|
+> |**Name**:<br />BillingNoSettingError<br />**Hex**:<br />8004B531<br />**Nummer**:<br />-2147175119|Keine Konfigurationseinstellung [{0}] für die Fakturierungsanwendung gefunden.|
+> |**Name**:<br />BillingPartnerCertificate<br />**Hex**:<br />8004B530<br />**Nummer**:<br />-2147175120|Das richtige Partnerszertifikat zur Verwendung mit der Fakturierung konnte nicht bestimmt werden.  Aussteller: {0}  Betreff: {1}  Definierte Übereinstimmungen: [{2}]  Namenübereinstimmungen: [{3}]  Alle gültigen Zertifikate: [{4}].|
 > |**Name**:<br />BillingRetrieveKeyError<br />**Hex**:<br />8004B538<br />**Nummer**:<br />-2147175112|Der Fakturierungssitzungsschlüssel konnte nicht abgerufen werde: "{0}"|
 > |**Name**:<br />BillingTestConnectionError<br />**Hex**:<br />8004B532<br />**Nummer**:<br />-2147175118|Fakturierung ist nicht verfügbar: Aufruf von IsServiceAvailable hat "False" zurückgegeben.|
 > |**Name**:<br />BillingTestConnectionException<br />**Hex**:<br />8004B533<br />**Nummer**:<br />-2147175117|Fakturierungs-TestConnection-Ausnahme.|
@@ -790,7 +795,7 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />CorruptedHiddensheetData<br />**Hex**:<br />800609B7<br />**Nummer**:<br />-2147087945|Die ausgeblendeten Blattdaten sind beschädigt.|
 > |**Name**:<br />CouldNotDecryptOAuthToken<br />**Hex**:<br />8005F110<br />**Nummer**:<br />-2147094256|Das Yammer-OAuth-Token konnte nicht entschlüsselt werden. Versuchen Sie es noch einmal, Yammer umzukonfigurieren.|
 > |**Name**:<br />CouldNotFindQueueItemInQueue<br />**Hex**:<br />80040524<br />**Nummer**:<br />-2147220188|Es wurde kein Warteschlangenelement gefunden, das dem Ziel im angegebenen SourceQueueId zugeordnet wurde. Entweder SourceQueueId oder Target ist ungültig, oder das Warteschlangenelement ist nicht vorhanden.|
-> |**Name**:<br />CouldNotObtainLockOnResource<br />**Hex**:<br />80044339<br />**Nummer**:<br />-2147204295|Datenbankressourcensperre konnte nicht abgerufen werden. Weitere Informationen finden Sie unter http://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity.|
+> |**Name**:<br />CouldNotObtainLockOnResource<br />**Hex**:<br />80044339<br />**Nummer**:<br />-2147204295|Datenbankressourcensperre konnte nicht abgerufen werden. Weitere Informationen finden Sie unter https://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity.|
 > |**Name**:<br />CouldNotReadAccessToken<br />**Hex**:<br />8005F105<br />**Nummer**:<br />-2147094267|Das System konnte den Benutzern Yammer-Zugriffstoken nicht lesen, obwohl ein leerer Code nicht überschritten wurde.|
 > |**Name**:<br />CouldNotSetLocationTypeToOneNote<br />**Hex**:<br />80060905<br />**Nummer**:<br />-2147088123|Der Typ des Speicherorts konnte für den Speicherort des Dokuments nicht auf OneNote festgelegt werden.|
 > |**Name**:<br />CountSpecifiedWithoutOrder<br />**Hex**:<br />8004E01F<br />**Nummer**:<br />-2147164129|Die Diagrammbeschreibung für die Visualisierung ist ungültig, da kein Sortierungsknoten für das Anzahlattribut angegeben wird.|
@@ -1577,7 +1582,7 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />InvalidEntitySetName<br />**Hex**:<br />8006089B<br />**Nummer**:<br />-2147088229|Eine Entität mit dem angegebenen Entitätssatznamen {0} ist bereits vorhanden. Geben Sie einen eindeutigen Namen an.|
 > |**Name**:<br />InvalidEntitySpecified<br />**Hex**:<br />800609B1<br />**Nummer**:<br />-2147087951|Die Entität wird in der Vorlage nicht definiert.|
 > |**Name**:<br />InvalidExchangeRate<br />**Hex**:<br />80048cfd<br />**Nummer**:<br />-2147185411|Der Umrechnungskurs ist ungültig.|
-> |**Name**:<br />InvalidExportProcessFlowNotActivated<br />**Hex**:<br />80060376<br />**Nummer**:<br />-2147089546|Fehler beim Exportieren von Geschäftsprozess „{0}”, da die Lösung keine entsprechende Geschäftsprozessentität „{1}” umfasst. Wenn dies ein neu erstellter Geschäftsprozess im Entwurfstatus ist, aktivieren Sie ihn einmal, um die Geschäftsprozessentität zu generieren und sie in der Lösung zu verwenden. Weitere Informationen finden Sie unter http://support.microsoft.com/kb/4337537.|
+> |**Name**:<br />InvalidExportProcessFlowNotActivated<br />**Hex**:<br />80060376<br />**Nummer**:<br />-2147089546|Fehler beim Exportieren von Geschäftsprozess „{0}”, da die Lösung keine entsprechende Geschäftsprozessentität „{1}” umfasst. Wenn dies ein neu erstellter Geschäftsprozess im Entwurfstatus ist, aktivieren Sie ihn einmal, um die Geschäftsprozessentität zu generieren und sie in der Lösung zu verwenden. Weitere Informationen finden Sie unter https://support.microsoft.com/kb/4337537.|
 > |**Name**:<br />InvalidExternalCollectionName<br />**Hex**:<br />80046BA7<br />**Nummer**:<br />-2147193945|Der angegebene externe Sammlungsname ist nicht gültig.|
 > |**Name**:<br />InvalidExternalName<br />**Hex**:<br />80046BC0<br />**Nummer**:<br />-2147193920|Der angegebene externe Name ist nicht gültig.|
 > |**Name**:<br />InvalidExternalPartyConfiguration<br />**Hex**:<br />8006110F<br />**Nummer**:<br />-2147086065|Mehrere Elemente externer Parteien sind für Anforderungsparameter vorhanden.|
@@ -2086,7 +2091,7 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />NoPublishedDuplicateDetectionRules<br />**Hex**:<br />80048436<br />**Nummer**:<br />-2147187658|Es hat nicht veröffentlichte Duplikaterkennungsregeln im System. Um die Duplikaterkennung auszuführen, müssen Sie mindestens eine Regel erstellen und veröffentlichen.|
 > |**Name**:<br />NoQuickFindFound<br />**Hex**:<br />80060203<br />**Nummer**:<br />-2147089917|Entität - {0} hatte keine gültige Quickfind-Abfrage.|
 > |**Name**:<br />NoRollupAttributesDefined<br />**Hex**:<br />8004F681<br />**Nummer**:<br />-2147158399|Damit das Rollup erfolgreich ist, muss mindestens ein Rollupattribut der Zielmetrik zugeordnet werden|
-> |**Name**:<br />NoSettingError<br />**Hex**:<br />8004Ed46<br />**Nummer**:<br />-2147160762|Keine Konfigurationseinstellung für [{0}] gefunden.|
+> |**Name**:<br />NoSettingError<br />**Hex**:<br />8004Ed46<br />**Nummer**:<br />-2147160762|Keine Konfigurationseinstellung [{0}] für configdb gefunden.|
 > |**Name**:<br />NoSiteMapReferenceInAppModule<br />**Hex**:<br />8005011C<br />**Nummer**:<br />-2147155684|App-Modul enthält keine Siteübersicht|
 > |**Name**:<br />NotAWellFormedXml<br />**Hex**:<br />80048426<br />**Nummer**:<br />-2147187674|Das Eingabezuordnungs-XML ist nicht ordnungsgemäß formatiert.|
 > |**Name**:<br />NotEnoughPrivilegesForXamlWorkflows<br />**Hex**:<br />80045041<br />**Nummer**:<br />-2147200959|Keine ausreichenden Rechte, um den Vorgang abzuschließen. Unzureichende Berechtigungen zum Abschließen des Vorgangs. Außerhalb der Microsoft Dynamics 365-Webanwendung erstellte Workflows können ausschließlich vom Bereitstellungsadministrator erstellt oder aktualisiert werden.|
@@ -2662,7 +2667,7 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />SharePointUnableToRemoveUserFromGroup<br />**Hex**:<br />8004F0F2<br />**Nummer**:<br />-2147159822|Benutzer {0} kann nicht aus der Gruppe {1} in SharePoint entfernt werden.|
 > |**Name**:<br />SharePointUnableToRetrieveGroup<br />**Hex**:<br />8004F0F4<br />**Nummer**:<br />-2147159820|Gruppe {0} kann nicht von SharePoint abgerufen werden.|
 > |**Name**:<br />SharePointUrlHostValidator<br />**Hex**:<br />8004F301<br />**Nummer**:<br />-2147159295|Die URL kann nicht zu einer IP-Adresse aufgelöst werden.|
-> |**Name**:<br />SharePointUrlIsRootWebValidator<br />**Hex**:<br />8004F306<br />**Nummer**:<br />-2147159290|Die URL ist ungültig. Die URL muss eine gültige Websitesammlung sein und kann keine Unterwebsite enthalten. Die URL muss einem gültigen Formular entsprechen, beispielsweise http://SharePointServer/sites/CrmSite.|
+> |**Name**:<br />SharePointUrlIsRootWebValidator<br />**Hex**:<br />8004F306<br />**Nummer**:<br />-2147159290|Die URL ist ungültig. Die URL muss eine gültige Websitesammlung sein und kann keine Unterwebsite enthalten. Die URL muss einem gültigen Formular entsprechen, beispielsweise https://SharePointServer/sites/CrmSite.|
 > |**Name**:<br />SharePointVersionUnsupported<br />**Hex**:<br />800608B6<br />**Nummer**:<br />-2147088202|Microsoft Dynamics 365 kann keine Verbindung mit SharePoint herstellen, da die SharePoint-Version nicht unterstützt wird. Installieren Sie die richtige Version, und versuchen Sie es anschließend erneut. |
 > |**Name**:<br />SimilarityRuleDisabled<br />**Hex**:<br />80071016<br />**Nummer**:<br />-2147020778|Für diese Entität ist keine Ähnlichkeitsregel aktiv.|
 > |**Name**:<br />SimilarityRuleFCBOff<br />**Hex**:<br />80071018<br />**Nummer**:<br />-2147020776|Ähnlichkeitsregeln sind nicht aktiviert.|
@@ -3397,7 +3402,7 @@ In diesem Thema werden die Fehlercodes aufgeführt, die möglicherweise auftrete
 > |**Name**:<br />WebResourceEmptySilverlightVersion<br />**Hex**:<br />8004F112<br />**Nummer**:<br />-2147159790|Die Silverlight-Version darf bei Silverlight-Webressourcen nicht leer sein.|
 > |**Name**:<br />WebResourceImportError<br />**Hex**:<br />8004F11B<br />**Nummer**:<br />-2147159781|Fehler beim Importieren einer Webressource. Versuchen Sie diese Lösung erneut zu importieren. Weitere Unterstützung erhalten Sie vom technischen Support für Microsoft Dynamics 365.|
 > |**Name**:<br />WebResourceImportMissingFile<br />**Hex**:<br />8004F11A<br />**Nummer**:<br />-2147159782|Die Datei für diese Webressource ist in der Lösungsdatei nicht vorhanden.|
-> |**Name**:<br />WebResourceInvalidSilverlightVersion<br />**Hex**:<br />8004F113<br />**Nummer**:<br />-2147159789|Die Silverlight-Version muss im Format xx.xx[.xx.xx] angegeben werden.|
+> |**Name**:<br />WebResourceInvalidSilverlightVersion<br />**Hex**:<br />8004F113<br />**Nummer**:<br />-2147159789|Die Silverlight-Version muss im Format "xx.xx[.xx.xx]" angegeben werden.|
 > |**Name**:<br />WebResourceInvalidType<br />**Hex**:<br />8004F111<br />**Nummer**:<br />-2147159791|Ein ungültiger Webressourcentyp wurde angegeben.|
 > |**Name**:<br />WebResourceNameInvalidCharacters<br />**Hex**:<br />8004F117<br />**Nummer**:<br />-2147159785|Webressourcennamen dürfen nur Buchstaben, Zahlen, Punkte und einzelne Schrägstriche enthalten.|
 > |**Name**:<br />WebResourceNameInvalidFileExtension<br />**Hex**:<br />8004F119<br />**Nummer**:<br />-2147159783|Eine Webressource darf keine der folgenden Dateierweiterungen besitzen: "ASPX", "ASCX", "ASMX" oder "ASHX".|

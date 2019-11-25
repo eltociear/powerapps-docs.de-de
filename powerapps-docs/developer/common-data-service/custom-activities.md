@@ -1,6 +1,6 @@
 ---
-title: Benutzerdefinierte Aktivitäten (Common Data Service) | Microsoft Docs
-description: 'Benutzerdefinierte Aktivitäten unterstützen den Kommunikationsbedarf eines modernen Unternehmens, wie z. B. Instant Messaging (IM) in Dynamics 365.'
+title: Benutzerdefinierte Aktivitäten (Common Data Service) | Microsoft-Dokumentation
+description: Benutzerdefinierte Aktivitäten unterstützen den Kommunikationsbedarf eines modernen Unternehmens, wie z. B. Instant Messaging (IM) in Dynamics 365.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ee86c88222c0385f1fec8458af6ee9d2cfeabf18
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748566"
 ---
 # <a name="custom-activities"></a>Benutzerdefinierte Aktivitäten
 
-In Common Data Service können Sie benutzerdefinierte Aktivitäten erstellen, um den Kommunikationsbedarf eines modernen Unternehmens zu unterstützen, wie z. B. Instant Messaging (IM) und Short Message Service (SMS). Um eine benutzerdefinierte Aktivität in Common Data Service zu erstellen, erstellen Sie eine benutzerdefinierte Entität, und legen diese als Aktivitätsentität mithilfe der <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> fest. -Eigenschaft verfügbar.  
+In Common Data Service können Sie benutzerdefinierte Aktivitäten erstellen, um den Kommunikationsbedarf eines modernen Unternehmens zu unterstützen, wie z. B. Instant Messaging (IM) und Short Message Service (SMS). Um eine benutzerdefinierte Aktivität in Common Data Service zu erstellen, erstellen Sie eine benutzerdefinierte Entität, und legen diese als Aktivitätsentität mithilfe der <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> -Eigenschaft verfügbar.  
   
  Im Unterschied zu anderen benutzerdefinierten Entitäten können Sie jedoch kein primäres Attribut für eine benutzerdefinierte Aktivität angeben, da standardmäßig jede benutzerdefinierte Aktivität über ein primäres Attribut mit dem Namen "Betreff" verfügen muss.  
   
@@ -27,7 +33,7 @@ In Common Data Service können Sie benutzerdefinierte Aktivitäten erstellen, um
   
 ## <a name="privileges-and-access-rights"></a>Rechte und Zugriffsrechte 
  
- Sie benötigen denselben Satz von Common Data Service-Rechten und -Zugriffsrechten , um benutzerdefinierte Aktivitäten zu verwenden wie die, die nötig sind, um benutzerdefinierte Entitäten zu verwenden. Weitere Informationen zum Erstellen benutzerdefinierter Entitäten siehe [Anpassen von Entitätsmetadaten](customize-entity-metadata.md).  
+ Sie benötigen denselben Satz von Common Data Service-Rechten und -Zugriffsrechten , um benutzerdefinierten Aktivitäten zu verwenden wie die, die nötig sind, um benutzerdefinierte Entitäten zu verwenden. Weitere Informationen zum Erstellen benutzerdefinierter Entitäten siehe [Anpassen von Entitätsmetadaten](customize-entity-metadata.md).  
   
 ## <a name="creating-a-custom-activity"></a>Erstellen einer benutzerdefinierten Aktivität  
  Um eine beutzerdefinierte Aktivitätsentität zu erstellen, legen Sie die Werte der Eigenschaften fest, die in der folgenden Tabelle aufgeführt sind.  

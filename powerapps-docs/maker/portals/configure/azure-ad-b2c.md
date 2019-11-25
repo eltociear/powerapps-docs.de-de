@@ -1,6 +1,6 @@
 ---
-title: Azure AD B2C Anbieter Einstellungen für Portale | MicrosoftDocs
-description: Anweisungen zum Aktivieren der Azure AD B2C Anbieter Einstellungen für Portale.
+title: Azure AD B2C-Anbietereinstellungen für Portale | MicrosoftDocs
+description: Anweisungen zum Aktivieren von Azure AD B2C-Anbietereinstellungen für Portale.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,129 +11,129 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542840"
+ms.locfileid: "2755485"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Azure AD B2C-Anbietereinstellungen für Portale
 
-mit [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) werden Office 365-und Dynamics 365-Dienste für die Mitarbeiter-oder interne Authentifizierung ermöglicht. [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C ist eine Erweiterung für dieses Authentifizierungs Modell, das die Anmeldung externer Kunden über lokale Anmelde Informationen und den Verbund mit verschiedenen allgemeinen Identitäts Anbietern ermöglicht.
+[!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) unterstützt Office 365 und Dynamics 365-Dienste für Mitarbeiter oder interne Authentifizierung. [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C ist eine Erweiterung zu diesem Authentifizierungsmodell, das Anmeldungen von externen Debitoren über lokale Anmeldeinformationen und einen Verbund mit verschiedenen gemeinsamen sozialen Identitätsanbietern aktiviert.
 
-Der Besitzer eines Portals kann das Portal so konfigurieren, dass [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C als Identitäts Anbieter akzeptiert wird. [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C unterstützt Open ID Connect für den Verbund.
+Ein Portalbesitzer kann das Portal so konfigurieren, dass [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C als Identitätsanbieter akzeptiert wird. [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C unterstützt Open ID Connect für Verbunde.
 
-Wenn Sie [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C als Identitäts Anbieter für Ihr Portal konfigurieren, werden mehrere Werte generiert, die Sie später beim Konfigurieren des Portals verwenden werden. Sie können diese Werte in der folgenden Tabelle notieren. Ersetzen Sie beim Konfigurieren des Portals den Variablennamen durch die Werte, die Sie hier notieren.
+Beim Konfigurieren von [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C als Identitätsanbieter für Ihr Portal werden mehrere Werte erstellt, die Sie später beim Konfigurieren des Portals verwenden. Sie können diese Werte in der folgenden Tabelle finden. Ersetzen Sie beim Konfigurieren des Portals den Variablennamen durch die hier angegebenen Werte.
 
-| Variablen Name     | Value | Beschreibung                                                           |
+| Variablenname     | Wert | Beschreibung                                                           |
 |-------------------|-------|-----------------------------------------------------------------------|
-| Anwendungs Name  |       | Der Name der Anwendung, die das Portal als vertrauende Seite darstellt. |
-| Anwendungs-ID    |       | Die Anwendungs-ID, die der in Azure Active Directory B2C erstellten Anwendung zugeordnet ist.  |
-| Richtlinie-SignIn-URL |       | Die im Metadatenendpunkt definierte URL des Ausstellers (ISS).                |
-| Verbund Name   |       | Ein eindeutiger Name zum Identifizieren des Typs des Verbund Anbieters, z. b. "B2C". Diese wird in Namen von Standorteinstellungen verwendet, um Konfigurationseinstellungen für diesen bestimmten Anbieter zu gruppieren.                                                                      |
+| Anwendungsname  |       | Name der Anwendung, die das Portal als vertrauende Seite darstellt |
+| Anwendungs-ID    |       | Die Anwendungs-ID, die mit der in Azure Active Directory B2C erstellten Anwendung verknüpft ist.  |
+| Richtlinien-Anmeldungs-URL |       | Die im Metadatenendpunkt definierte Aussteller-URL (iss).                |
+| Verbundname   |       | Ein eindeutiger Name zur Identifizierung des Typs des Verbundanbieters wie beispielsweise „B2C”. Dieser wird in den Website-Einstellungsnamen verwendet, um Konfigurationseinstellungen für diesen speziellen Anbieter zu gruppieren.                                                                      |
 | | | |
 
-### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Verwenden von Azure AD B2C als Identitäts Anbieter für Ihr Portal
+### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Verwenden von Azure AD B2C als Identitätsanbieter für Ihr Portal
 
-1. Melden Sie sich bei Ihrem [Azure-Portal](https://portal.azure.com/)an.
-2. [Erstellen Sie einen Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)Mandanten.
-3. Wählen Sie in der linken Navigationsleiste **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** aus.
-4. [Erstellen](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)Sie eine Azure-Anwendung.
+1. Melden Sie sich bei Ihrem [Azure-Portal](https://portal.azure.com/) an.
+2. [Erstellen Sie einen Azure AD B2C Mandanten](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
+3. Wählen Sie auf der Navigationsleiste ganz links **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**.
+4. [Erstellen einer Azure-Anwendung](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
 
    > [!Note]
-   > Wählen Sie für das Feld **implizites Flow zulassen** die Option **Ja** aus, und geben Sie im Feld **Antwort-URL** die Portal-URL an. Der Wert im Feld **Antwort-URL** sollte das Format [Portal Domäne]/SignIn-[Verbund Name] aufweisen. Beispielsweise `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
+   > Sie müssen **Ja** für das Feld **Impliziten Fluss zulassen** auswählen und Ihre Portal-URL im Feld **Antwort-URL** angeben. Der Wert im Feld **Antwort-URL** sollte das Format [Portaldomäne]/Anmelde-[Verbundname] aufweisen. Zum Beispiel: `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
 
-5. Kopieren Sie den Anwendungsnamen, und geben Sie ihn als Wert für Anwendungsname in der obigen Tabelle ein.
-6. Kopieren Sie die Anwendungs-ID, und geben Sie Sie als Wert von "Application-ID" in der obigen Tabelle ein.
-7. [Erstellen Sie eine Registrierungs-oder Anmelde Richtlinie](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
-8. Wählen Sie die Richtlinie aus, und klicken Sie dann auf **Bearbeiten**.
-9. Wählen Sie **Token, Sitzung & SSO-Konfiguration**aus.
-10. Wählen Sie in der **anspruchsliste Aussteller (ISS)** die URL mit **/TFP** im Pfad aus.
+5. Kopieren Sie den Anwendungsnamen, und geben Sie ihn als Wert für den Anwendungsnamen in der vorherigen Tabelle ein.
+6. Kopieren Sie die Anwendungs-ID, und geben Sie sie als Wert für die Anwendungs-ID in der vorherigen Tabelle ein.
+7. [Erstellen einer Registrierungs- oder Anmelderichtlinie](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
+8. Wählen Sie die Richtlinie aus, und wählen Sie dann **Bearbeiten** aus.
+9. Wählen Sie **Token-, Sitzungs- und SSO-Konfiguration** aus.
+10. Wählen Sie in der Liste **Ausstelleranspruch (iss)** die URL aus, deren Pfad **/tfp** enthält.
 11. Speichern Sie die Richtlinie.
-12. Wählen Sie die URL im **Metadatenendpunkt für dieses Richtlinien Feld aus** .
-13. Kopieren Sie den Wert des Felds Aussteller, und geben Sie ihn als Wert von Policy-SignIn-URL in der obigen Tabelle ein. 
+12. Klicken Sie auf die URL im Feld **Metadatenendpunkte für diese Richtlinie**.
+13. Kopieren Sie den Wert des Ausstellerfelds, und geben Sie diesen als Wert der Richtlinien-Anmeldungs-URL in der vorherigen Tabelle ein. 
 
-## <a name="portal-configuration"></a>Portal Konfiguration
+## <a name="portal-configuration"></a>Portalkonfiguration
 
-Nachdem Sie den B2C-Mandanten in [!include[Azure](../../../includes/pn-azure-shortest.md)]erstellt und konfiguriert haben, müssen Sie das Portal für den Verbund mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C mithilfe des Open ID Connect-Protokolls konfigurieren. Sie müssen einen eindeutigen Namen für Ihren Verbund erstellen, um AD B2C zu [!include[Azure](../../../includes/pn-azure-shortest.md)]&mdash;z. b. B2C&mdash;und ihn als Wert der Verbund *Namen* Variablen in der obigen Tabelle speichern.
+Wenn Sie den B2C-Mandanten in [!include[Azure](../../../includes/pn-azure-shortest.md)] erstellt und konfiguriert haben, müssen Sie das Portal mithilfe des Open ID Connect-Protokolls so konfigurieren, dass es mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C verbunden wird. Sie müssen einen eindeutigen Namen für den Verbund mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C&mdash; erstellen, wie beispielsweise B2C&mdash;, und diesen als Wert der Variablen *Verbundname* in der vorherigen Tabelle speichern.
 
-### <a name="configure-your-portal"></a>Konfigurieren des Portals
-1. Öffnen Sie die Portal Verwaltungs-app.
-2. Wechseln Sie zu **Portale** > **Websites**.
-3. Wählen Sie den Website-Datensatz aus, für den [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C aktiviert werden muss.
-4. Wechseln Sie zu **Site Einstellungen**.
-5. Erstellen Sie die folgenden Standorteinstellungen:
-   -   **Name**: Authentication/openidconnect/[Verbund Name]/Authority
+### <a name="configure-your-portal"></a>Konfigurieren Ihres Portals
+1. Öffnen Sie die Portalverwaltungs-App.
+2. Navigieren Sie zu **Portale** > **Websites**.
+3. Wählen Sie den Websitedatensatz aus, für den [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C aktiviert werden muss.
+4. Wechseln Sie zu **Websiteeinstellungen**.
+5. Erstellen Sie die folgenden Websiteeinstellungen:
+   -   **Name**: Authentication/OpenIdConnect/[Federation-Name]/Authority
 
-       **Wert**: [Policy-SignIn-URL]
-   -   **Name**: Authentication/openidconnect/[Verbund Name]/ClientID
+       **Wert**: [Policy-Signin-URL]
+   -   **Name**: Authentication/OpenIdConnect/[Federation-Name]/ClientId
 
        **Wert**: [Application-ID]
-   -   **Name**: Authentication/openidconnect/[Verbund Name]/RedirectUri
+   -   **Name**: Authentication/OpenIdConnect/[Federation-Name]/RedirectUri
 
-       **Wert**: [Portal Domäne]/SignIn-[Verbund Name]
+       **Wert**: [portal domain]/signin-[Federation-Name]
 
-       Beispielsweise `https://mysite.com/signin-b2c` 
-6. Erstellen Sie die folgende Standort Einstellung, um eine Verbund Abmeldung zu unterstützen:
-   - **Name**: Authentication/openidconnect/[Verbund Name]/ExternalLogoutEnabled
+       Zum Beispiel `https://mysite.com/signin-b2c` 
+6. Um eine verbundbasierten Abmeldung zu unterstützen, erstellen Sie die folgenden Websiteeinstellungen:
+   - **Name**: Authentication/OpenIdConnect/[Federation-Name]/ExternalLogoutEnabled
 
      **Wert**: true
-7. Um das Portal für einen einzelnen Identitäts Anbieter hart zu codieren, erstellen Sie die folgende Website Einstellung:
-   - **Name**: Authentication/Registration/loginbuttonauthenticationtype
+7. Zum Hartcodieren Ihres Portals für einen einzigen Identitätsanbieter erstellen Sie die folgenden Websiteeinstellungen:
+   - **Name**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **Wert**: [Policy-SignIn-URL]
+     **Wert**: [Policy-Signin-URL]
 
-8. Um die Kenn Wort Zurücksetzung zu unterstützen, erstellen Sie die [hier](#password-reset)beschriebenen erforderlichen Site Einstellungen.
-9. Um die Anspruchs Zuordnung zu unterstützen, erstellen Sie die [hier](#claims-mapping)beschriebenen erforderlichen Site Einstellungen.
+8. Um die Kennwortrücksetzung zu unterstützen, erstellen Sie die erforderlichen Websiteeinstellungen, die [hier](#password-reset) beschrieben sind.
+9. Um die Anspruchszuordnung zu unterstützen, erstellen Sie die erforderlichen Websiteeinstellungen, die [hier](#claims-mapping) beschrieben sind.
 
-Eine umfassende Liste verwandter Site Einstellungen finden Sie [hier](#related-site-settings).
+Eine vollständige Liste mit verknüpften Websiteeinstellungen finden Sie [hier](#related-site-settings).
 
-### <a name="password-reset"></a>Kenn Wort Zurücksetzung
+### <a name="password-reset"></a>Kennwort zurücksetzen
 
-Die folgenden Standorteinstellungen sind erforderlich, wenn Sie die Kenn Wort Zurücksetzung mit [!include[Azure](../../../includes/pn-azure-shortest.md)] lokalen AD B2C-Konten unterstützen möchten:
+Die folgenden Websiteeinstellungen sind erforderlich, wenn Sie die Kennwortrücksetzung für lokale [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Konten unterstützen möchten:
 
-| Standort Einstellung                                                        | Beschreibung                                                                                                          |
+| Website-Einstellung                                                        | Beschreibung                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Authentication/openidconnect/[Verbund Name/passwordresetpolicyid | Die ID der Richtlinie zum Zurücksetzen des Kennworts.                                                                                     |
-| Authentication/openidconnect/[Verbund Name]/ValidIssuers         | Eine durch Trennzeichen getrennte Liste von Ausstellern, die [Policy-SignIn-URL] und den Aussteller der Richtlinie zum Zurücksetzen von Kenn Wörtern enthält. |
-|Authentication/openidconnect/[Verbund Name]/DefaultPolicyId | ID der Anmeldungs-oder Registrierungs Richtlinie.|
+| Authentication/OpenIdConnect/[Federation-Name/PasswordResetPolicyId | ID der Richtlinie für die Kennwortrücksetzung.                                                                                     |
+| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | Eine durch Komma getrennte Liste von Ausstellern, die die [Richtlinien-Anmeldungs-URL] und den Aussteller der Richtlinie für die Kennwortrücksetzung umfasst. |
+|Authentication/OpenIdConnect/[Federation-Name]/DefaultPolicyId | ID der Anmeldungs- oder Registrierungsrichtlinie.|
 |||
 
-### <a name="related-site-settings"></a>Verwandte Site Einstellungen
+### <a name="related-site-settings"></a>Zugehörige Websiteeinstellungen
 
-Sie können die folgenden Site Einstellungen in Portalen erstellen oder konfigurieren, um [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C als Identitäts Anbieter zu unterstützen:
+Sie können die folgenden Websiteeinstellungen in Portalen erstellen oder konfigurieren, um [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C als Identitätsanbieter zu unterstützen:
 
 
-| Standort Einstellung                                                         | Beschreibung                                                                                                                                                                                                                                                        |
+| Website-Einstellung                                                         | Beschreibung                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authentifizierung/Registrierung/profiredirectenabled                   | Gibt an, ob Benutzer nach erfolgreicher Anmeldung an die Profilseite umgeleitet werden können. Standardmäßig ist der Wert auf true festgelegt.                                                                                                                                            |
-| Authentifizierung/Registrierung/emailconfirmationaktivierte                 | Gibt an, ob e-Mail-Überprüfung erforderlich ist Standardmäßig ist der Wert auf true festgelegt.                                                                                     |
-| Authentifizierung/Registrierung/loczuordnung aktiviert                        | Gibt an, ob eine lokale Anmeldung erforderlich ist. Standardmäßig ist der Wert auf true festgelegt.                                                                        |
-| Authentifizierung/Registrierung/externzuweisung aktiviert                     | Aktiviert oder deaktiviert die externe Authentifizierung.       |
-| Authentifizierung/Registrierung/azuleloginaktivierte                      | Aktiviert oder deaktiviert [!include[Azure](../../../includes/pn-azure-shortest.md)] AD als externen Identitäts Anbieter. Standardmäßig ist der Wert auf true festgelegt.                                                                                                                                                                      |
-| Authentication/openidconnect/[Verbund Name]/ExternalLogoutEnabled | Aktiviert oder deaktiviert die Verbund Abmeldung. Wenn diese Einstellung auf "true" festgelegt ist, werden Benutzer bei der Abmeldung vom Portal an die Benutzeroberflächen für die Verbund Anmeldung umgeleitet. Wenn diese Einstellung auf "false" festgelegt ist, werden Benutzer nur aus dem Portal abgemeldet. Standardmäßig ist der Wert auf false festgelegt.               |
-| Authentifizierung/logintrackingenabled                                  | Aktiviert oder deaktiviert die Nachverfolgung der letzten Anmeldung des Benutzers. Wenn der Wert auf true festgelegt ist, werden das Datum und die Uhrzeit im **letzten erfolgreichen Anmelde** Feld des Contact-Datensatzes angezeigt. Standardmäßig ist diese Einstellung auf "false" festgelegt.                                                            |
-| Authentication/openidconnect/[Verbund Name]/RegistrationEnabled   | Aktiviert oder deaktiviert die Registrierungs Anforderung für den vorhandenen Identitäts Anbieter. Wenn diese Option auf true festgelegt ist, wird die Registrierung für den vorhandenen Anbieter nur aktiviert, wenn für die Website Einstellung Authentifizierung/Registrierung/aktiviert ebenfalls der Wert true festgelegt ist. Standardmäßig ist der Wert auf true festgelegt. |
-|Authentication/openidconnect/[Verbund Name]/PostLogoutRedirectUri |Gibt die URL im Portal an, zu der umgeleitet werden soll, nachdem ein Benutzer sich abgemeldet hat. |
+| Authentication/Registration/ProfileRedirectEnabled                   | Gibt an, ob das Portal Benutzer nach erfolgreichen Anmeldung zur Profilseite weiterleiten kann. Standardmäßig ist dies auf "true" gesetzt.                                                                                                                                            |
+| Authentication/Registration/EmailConfirmationEnabled                 | Gibt an, ob eine E-Mail-Überprüfung erforderlich ist. Standardmäßig ist dies auf "true" gesetzt.                                                                                     |
+| Authentication/Registration/LocalLoginEnabled                        | Gibt an, ob eine lokale Anmeldung erforderlich ist. Standardmäßig ist dies auf "true" gesetzt.                                                                        |
+| Authentication/Registration/ExternalLoginEnabled                     | Aktiviert oder deaktiviert die externe Authentifizierung.       |
+| Authentication/Registration/AzureADLoginEnabled                      | Aktiviert oder deaktiviert [!include[Azure](../../../includes/pn-azure-shortest.md)] AD als externen Identitätsanbieter. Standardmäßig ist dies auf "true" gesetzt.                                                                                                                                                                      |
+| Authentication/OpenIdConnect/[Federation-Name]/ExternalLogoutEnabled | Aktiviert oder deaktiviert die verbundbasierte Abmeldung. Wenn "true" festgelegt ist, werden Benutzer zur verbundbasierten Abmeldeoberfläche weitergeleitet, wenn sie sich vom Portal abmelden. Wenn "false" festgelegt ist, werden Benutzer nur vom Portal abgemeldet. Standardmäßig ist dies auf "false" gesetzt.               |
+| Authentication/LoginTrackingEnabled                                  | Aktiviert oder deaktiviert die Nachverfolgung der letzten Anmeldung des Benutzers. Wenn "true" festgelegt ist, werden das Datum und die Uhrzeit im Feld **Letzte erfolgreiche Anmeldung** auf dem Kontaktdatensatz angezeigt. Standardmäßig ist dies auf "false" gesetzt.                                                            |
+| Authentication/OpenIdConnect/[Federation-Name]/RegistrationEnabled   | Aktiviert oder deaktiviert die Registrierungsanforderung für den vorhandenen Identitätsanbieter. Wenn "true" festgelegt ist, wird die Registrierung für den vorhandenen Anbieter nur aktiviert, wenn für die Websiteeinstellung Authentication/Registration/Enabled auch "true" festgelegt ist. Standardmäßig ist dies auf "true" gesetzt. |
+|Authentication/OpenIdConnect/[Federation-Name]/PostLogoutRedirectUri |Gibt die URL innerhalb des Portals an, zu der ein Benutzer nach der Abmeldung weitergeleitet wird. |
 | | |
 
-### <a name="related-content-snippet"></a>Code Ausschnitt für verwandte Inhalte
+### <a name="related-content-snippet"></a>Zugehöriger Inhaltsausschnitt
 
-Wenn die Registrierung für einen Benutzer deaktiviert ist, nachdem der Benutzer eine Einladung eingelöst hat, können Sie eine Meldung mit dem folgenden Inhalts Ausschnitt anzeigen:
+Wenn die Registrierung für einen Benutzer deaktiviert wird, nachdem der Benutzer eine Einladung eingelöst hat, können Sie mithilfe des folgenden Inhaltsausschnitts eine Meldung anzeigen:
 
-**Name**: Account/Register/registrationdisabledmessage
+**Name**: Account/Register/RegistrationDisabledMessage
 
-**Wert**: die Registrierung wurde deaktiviert.
+**Wert**: Registrierung wurde deaktiviert.
 
 ## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>Anpassen der [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Benutzeroberfläche
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C unterstützt die Anpassung der Benutzeroberfläche. Sie können die Benutzer Darstellung für Registrierungs-und Anmelde Szenarien anpassen.
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C unterstützt die Anpassung der Benutzeroberfläche. Sie können die Benutzeroberfläche für Anmelde- und Abmeldeszenarien anpassen.
 
 ### <a name="step-1-create-a-web-template"></a>Schritt 1: Erstellen einer Webvorlage
-Erstellen Sie eine Webvorlage mit den folgenden Werten:
+Erstellen Sie eine Webvorlage, indem Sie die folgenden Werte verwenden:
 
-**Name**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite "Benutzer definiert"
+**Name**: benutzerdefinierte [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite
 
-**Quelle**: Verwenden Sie die folgende Beispiel-Web-Vorlagen Quell-HTML.
+**Quelle**: Verwenden Sie die folgende Beispiel-Webvorlagen-Quell-HTML.
 
 ```html
 <!DOCTYPE html>
@@ -438,88 +438,88 @@ Erstellen Sie eine Webvorlage mit den folgenden Werten:
   </body>
 </html>
 ```
-### <a name="step-2-create-a-page-template"></a>Schritt 2: Erstellen einer Seitenvorlage
+### <a name="step-2-create-a-page-template"></a>Schritt 2: Erstellen einer Seitenvorlagen
 
 Erstellen Sie die folgende Seitenvorlage:
-- **Name**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite "Benutzer definiert"
+- **Name**: benutzerdefinierte [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite
 - **Typ**: Webvorlage
-- **Webvorlage**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite "Benutzer definiert"
-- **Kopf-und Fußzeile der Website verwenden**: Deaktivieren Sie dieses Kontrollkästchen.
+- **Webvorlage**: benutzerdefinierte [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite
+- **Kopf- und Fußzeile der Website verwenden**: Deaktivieren Sie dieses Kontrollkästchen.
 
 ### <a name="step-3-create-a-webpage"></a>Schritt 3: Erstellen einer Webseite
 
 Erstellen Sie die folgende Webseite:
-- **Name**: anmelden
-- Über **geordnetes** Element Seite: Startseite
-- **Partielle URL**: Azure-AD-B2C-Sign-in
-- **Seitenvorlage**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite "Benutzer definiert"
-- **Veröffentlichungsstatus**: veröffentlicht
+- **Name**: Anmelden
+- **Übergeordnete** Seite: Startseite
+- **Teil-URL**: azure-ad-b2c-sign-in
+- **Seitenvorlage**: benutzerdefinierte [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite
+- **Veröffentlichungsstatus**: Veröffentlicht
 
-### <a name="step-4-create-site-settings"></a>Schritt 4: Erstellen von Site Einstellungen
+### <a name="step-4-create-site-settings"></a>Schritt 4: Erstellen von Websiteeinstellungen
 
-Website Einstellungen sind erforderlich, um Cross-Origin Resource Sharing (cors) zu konfigurieren, damit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C die benutzerdefinierte Seite anfordern und die Anmelde-oder Anmelde Benutzeroberfläche einfügen kann. Erstellen Sie die folgenden Site Einstellungen.
+Websiteeinstellungen sind erforderlich, um die ursprungsübergreifende Ressourcenfreigabe (Cross-Origin Resource Sharing, CORS) zu konfigurieren, damit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C die benutzerdefinierte Seite anfordern und die Anmelde- oder Registrierungsbenutzeroberfläche einfügen kann. Erstellen Sie die folgenden Websiteeinstellungen.
 
-| Name                              | Value                             |
+| Name                              | Wert                             |
 |-----------------------------------|-----------------------------------|
-| HTTP/Access-Control-Allow-Methods | Get, Optionen                      |
+| HTTP/Access-Control-Allow-Methods | GET, OPTIONEN                      |
 | HTTP/Access-Control-Allow-Origin  | `https://login.microsoftonline.com` |
 | | |
 
-Eine umfassende Liste mit anderen cors-Einstellungen finden Sie [unter cors-Protokoll Unterstützung](../add-web-resource.md#cors-protocol-support).
+Eine vollständige Liste mit weiteren CORS-Einstellungen finden Sie unter [CORS-Protokollunterstützung](../add-web-resource.md#cors-protocol-support).
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Schritt 5: [!include[Azure](../../../includes/pn-azure-shortest.md)] Konfiguration
+### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Schritt 5: [!include[Azure](../../../includes/pn-azure-shortest.md)]-Konfiguration
 
-1. Melden Sie sich bei Ihrem [!include[Azure portal](../../../includes/pn-azure-portal.md)]an.
-2. Navigieren Sie zum Blatt " **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** -Mandanten Verwaltung".
-3. Navigieren Sie zu **Einstellungen** > Registrierungs **-oder Anmelde Richtlinien**. Eine Liste der verfügbaren Richtlinien wird angezeigt.
+1. Melden Sie sich bei Ihrem [!include[Azure portal](../../../includes/pn-azure-portal.md)] an.
+2. Navigieren Sie zum Blatt **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Mandantenverwaltung**.
+3. Navigieren Sie zu **Einstellungen** > **Registrierungs- oder Anmelderichtlinien**. Eine Liste der verfügbaren Richtlinien wird angezeigt.
 4. Wählen Sie die Richtlinie aus, die Sie bearbeiten möchten.
-5. Wählen Sie **Bearbeiten**aus.
-6. Wählen Sie **Richtlinie bearbeiten** > **Seite Anpassung der Benutzeroberfläche** > **einheitliche Registrierungs-oder Anmeldeseite aus** .
-7. Legen Sie **benutzerdefinierte Seite verwenden** auf **Ja**fest.
-8. Legen Sie **benutzerdefinierter Seiten-URI** auf die URL der benutzerdefinierten Seiten Webseite [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C fest, die in Schritt 3 dieses Verfahrens erstellt wurde. Beispielsweise `https://mydomain.com/azure-ad-b2c-sign-in`.
+5. Wählen Sie **Bearbeiten** aus.
+6. Wählen Sie **Richtlinie bearbeiten** > **Seite für die Benutzeroberflächenanpassung** > **Einheitliche Seite für Registrierung oder Anmeldung** aus.
+7. Legen Sie für **Benutzerdefinierte Seite verwenden** **Ja** fest.
+8. Legen Sie für **Benutzerdefinierter Seiten-URI** die URL der Webseite der benutzerdefinierten [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-Seite fest, die in Schritt 3 dieses Verfahrens erstellt wurde. Zum Beispiel: `https://mydomain.com/azure-ad-b2c-sign-in`.
 9. Wählen Sie **OK** aus.
 
-## <a name="claims-mapping"></a>Anspruchs Zuordnung
+## <a name="claims-mapping"></a>Anspruchszuordnung
 
-Wenn sich Benutzer zum ersten Mal oder später anmelden, stellt der Verbund Identitäts Anbieter Ansprüche basierend auf seiner Datenbank im Hinblick auf die Benutzeranmeldung bereit. Diese Ansprüche können im Identitäts Anbieter konfiguriert werden.
+Wenn Benutzer sich anmelden, entweder zum ersten Mal oder später, stellt der verbundbasierte Identitätsanbieter basierend auf seiner Datenbank hinsichtlich der Anmeldungen der Benutzer Ansprüche bereit. Diese Ansprüche sind im Identitätsanbieter konfigurierbar.
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>e-Mail-Ansprüche [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C-E-Mail-Ansprüche
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C den e-Mail-Anspruch als Sammlung sendet. Das Portal nimmt die erste in der Sammlung angegebene e-Mail als primäre e-Mail-Adresse des Kontakts an.
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C sendet den E-Mail-Anspruch als Sammlung. Das Portal nimmt die erste E-Mail-Adresse, die in der Sammlung bereitgestellt wird, als die primäre E-Mail-Adresse der Kontaktperson an.
 
-### <a name="claims-to-support-sign-up-scenarios"></a>Ansprüche zur Unterstützung von Registrierungs Szenarien
+### <a name="claims-to-support-sign-up-scenarios"></a>Ansprüche zur Unterstützung von Registrierszenarien
 
-Wenn ein neuer Kunde, der nicht in Common Data Service vorhanden ist, bereitgestellt wird, können die eingehenden Ansprüche verwendet werden, um einen Ausgangswert für den neuen Kontaktdaten Satz zu erstellen, der vom Portal erstellt wird. Allgemeine Ansprüche können vor-und Nachname, e-Mail-Adresse und Telefonnummer enthalten, Sie sind jedoch konfigurierbar. Die folgende Standort Einstellung ist erforderlich:
+Wenn ein neuer Kunde, der in Common Data Service nicht vorhanden ist, bereitgestellt wird, können die eingehenden Ansprüche verwendet werden, um den neuen Kontaktdatensatz zu seeden, den das Portal erstellen wird. Allgemeine Ansprüche können den Vor- und Nachnamen, die E-Mail-Adresse und die Telefonnummer enthalten, sie sind jedoch konfigurierbar. Die folgende Websiteeinstellung ist erforderlich:
 
-**Name**: Authentication/openidconnect/[Verbund Name]/RegistrationClaimsMapping
+**Name**: Authentication/OpenIdConnect/[Federation-Name]/RegistrationClaimsMapping
 
-**Description**: Liste der logischen Name-/Anspruch-Paare, die verwendet werden, um Anspruchs Werte Attributen in dem während der Registrierung erstellten Kontaktdaten Satz zuzuordnen.
+**Beschreibung**: Liste mit Paaren von logischen Namen und Ansprüchen, die verwendet werden können, um Anspruchswerte Attributen im Kontaktdatensatz zuzuordnen, der während der Registrierung erstellt wurde.
 
-**Format**: attribute1 = claim1, attribute2 = claim2, attribute3 = claim3
+**Format**: attribute1=claim1,attribute2=claim2,attribute3=claim3
 
-Beispiel: FirstName =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+Beispielsweise ist das name<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
-> Stellen Sie sicher, dass Sie die e-Mail-Adresse der primären e-Mail (EmailAddress1) des Kontakts zuordnen. Wenn Sie dem Kontaktdaten Satz sekundäre e-Mail (EmailAddress2) oder Alternative e-Mail-Adresse (EmailAddress3) hinzugefügt und der e-Mail zugeordnet haben, werden dem Kontakt keine Identitätsinformationen hinzugefügt, und ein neuer wird mit der für die Registrierung verwendeten e-Mail-Adresse erstellt. die primäre e-Mail-Adresse (EmailAddress1).
+> Stellen Sie sicher, dass Sie die E-Mail-Adresse der primären E-Mail-Adresse (emailaddress1) des Kontakts zuordnen. Wenn Sie eine sekundäre E-Mail-Adresse (emailaddress2) oder eine alternative E-Mail-Adresse (emailaddress3) im Kontaktdatensatz hinzugefügt haben und sie der E-Mail-Adresse zugeordnet haben, werden dem Kontakt keine Identitätsinformationen hinzugefügt und es wird ein neuer Kontakt mit der E-Mail-Adresse erstellt, die für die Registrierung verwendet wurde und die durch die primäre E-Mail-Adresse (emailaddress1) festgelegt ist.
 
-### <a name="claims-to-support-sign-in-scenarios"></a>Ansprüche zur Unterstützung von Anmelde Szenarien
+### <a name="claims-to-support-sign-in-scenarios"></a>Ansprüche zur Unterstützung von Anmeldeszenarien
 
-Die Daten in Common Data Service und im Identitäts Anbieter sind nicht direkt verknüpft, sodass die Daten möglicherweise nicht mehr synchronisiert werden. Das Portal sollte über eine Liste von Ansprüchen verfügen, die Sie von jedem Anmelde Ereignis annehmen möchten, das in Common Data Service aktualisiert werden soll. Diese Ansprüche können eine Teilmenge der Ansprüche sein, die aus einem Anmelde Szenario stammen. Dies muss getrennt von der Zuordnung von Anmelde Ansprüchen konfiguriert werden, da Sie einige wichtige Portal Attribute möglicherweise nicht überschreiben möchten. Die folgende Standort Einstellung ist erforderlich:
+Die Daten in Common Data Service und im Identitätsanbieter werden nicht direkt zugeordnet, sodass die Daten möglicherweise die Synchronisierung verlieren. Dieses Portal sollte eine Liste von Ansprüchen enthalten, die Sie in einer beliebigen Anmeldungsereignis annehmen möchten, um in Common Data Service zu aktualisieren. Diese Ansprüche können eine Teilmenge oder gleich der Berechtigungen sein, die von einem Anmeldeszenario hereinkommen. Dies muss unabhängig von der Zuordnung der Anmeldeansprüche konfiguriert werden, da Sie vielleicht einige Schlüsselportalattribute nicht überschreiben möchten. Die folgende Websiteeinstellung ist erforderlich:
 
-**Name**: Authentication/openidconnect/[Verbund Name]/LoginClaimsMapping
+**Name**: Authentication/OpenIdConnect/[Federation-Name]/LoginClaimsMapping
 
-**Beschreibung**: Liste der logischen Name-/Anspruch-Paare, die verwendet werden, um Anspruchs Werte Attributen in dem Kontaktdaten Satz zuzuordnen, der nach der Anmeldung erstellt wurde.
+**Beschreibung**: Liste mit Paaren von logischen Namen und Ansprüchen, die verwendet werden können, um Anspruchswerte Attributen im Kontaktdatensatz zuzuordnen, der nach der Anmeldung erstellt wurde.
 
-**Format**: attribute1 = claim1, attribute2 = claim2, attribute3 = claim3
+**Format**: attribute1=claim1, attribute2=claim2, attribute3=claim3
 
-Beispiel: FirstName =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+Beispielsweise ist das name<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
-Der Anspruchs Name ist das Feld Anspruchstyp, das neben dem-Attribut in den Anwendungs Ansprüchen der Anmelde Richtlinien aufgeführt ist.
+Der Anspruchsname ist das Feld ANSPRUCHSTYP, das neben dem Attribut in den Anwendungsansprüchen der Anmelderichtlinien aufgeführt ist.
 
-### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>Automatische Zuordnung zu einem Kontaktdaten Satz basierend auf e-Mail zulassen 
+### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>Zulassen der automatischen Zuordnung zu einem Kontaktdatensatz auf Grundlage der E-Mail-Adresse 
 
-Kunden, die Kontaktdaten Sätze mit zugeordneten e-Mails haben, starten dann eine Website, auf der sich Ihre externen Benutzer mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C über einen e-Mail-Überprüfungsmechanismus anmelden. Die neue Anmeldung sollte dem vorhandenen Kontaktdaten Satz zugeordnet werden, anstatt einen doppelten Datensatz zu erstellen. Mit dieser Funktion wird nur ein Kontakt, der keine aktive Identität besitzt, erfolgreich zugeordnet, und die e-Mail-Adresse muss eindeutig sein (nicht im Zusammenhang mit mehreren Kontaktdaten Sätzen). Die folgende Standort Einstellung ist erforderlich:
+Kunden, die Kontaktdatensätze mit verknüpften E-Mail-Adressen aufweisen, können eine Website starten, bei der die externen Benutzer sich mit [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C über einen E-Mail-Validierungsmechanismus anmelden. Die neue Anmeldung sollte dem vorhandenen Kontaktdatensatz zugeordnet werden, anstatt einen doppelten Datensatz zu erstellen. Diese Funktion ordnet nur Kontakte erfolgreich zu, die keine aktive Identität aufweisen, und die E-Mail-Adresse muss eindeutig (nicht mit mehreren Kontaktdatensätzen verknüpft) sein. Die folgende Websiteeinstellung ist erforderlich:
 
-**Name**: Authentication/[Protokoll]/[Anbieter]/AllowContactMappingWithEmail
+**Name**: Authentication/[Protocol]/[Provider]/AllowContactMappingWithEmail
 
-**Description**: gibt an, ob Kontakte einer entsprechenden e-Mail zugeordnet werden. Wenn diese Einstellung auf "true" festgelegt ist, wird ein eindeutiger Kontaktdaten Satz mit einer übereinstimmenden e-Mail-Adresse zugeordnet. Anschließend wird der externe Identitäts Anbieter dem Kontakt automatisch zugewiesen, nachdem sich der Benutzer erfolgreich angemeldet hat. Standardmäßig ist der Wert auf false festgelegt.
+**Beschreibung**: Gibt an, ob Kontakte einer entsprechenden E-Mail-Adresse zugeordnet werden. Wenn "true" festgelegt ist, ordnet diese Einstellung einen Kontaktdatensatz einer entsprechenden E-Mail-Adresse zu und weist den externen Identitätsanbieter dann automatisch dem Kontakt zu, wenn der Benutzer sich erfolgreich angemeldet hat. Standardmäßig ist dies auf "false" gesetzt.

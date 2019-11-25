@@ -1,6 +1,6 @@
 ---
-title: Verwenden der PowerApps-Überprüfungs-Web-API | Microsoft Docs
-description: 'Die PowerApps-Überprüfungs-Web-API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräte verwendet werden kann.'
+title: Verwenden der PowerApps-Überprüfungs-Web-API | Microsoft-Dokumentation
+description: Die PowerApps-Überprüfungs-Web-API bietet eine Entwicklungserfahrung, die für eine Vielzahl von Programmiersprachen, Plattformen und Geräte verwendet werden kann
 ms.custom: ''
 ms.date: 06/3/2019
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 0d5f7579-304a-4d28-ba73-df30722205eb
 caps.latest.revision: 1
 author: mhuguet
@@ -16,10 +16,16 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 495a5e976ae3ef9579e96023e65be5bee85f5c01
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753034"
 ---
 # <a name="use-the-powerapps-checker-web-api"></a>Verwenden der PowerApps-Überprüfungs-Web-API
 
@@ -36,7 +42,7 @@ Die PowerApps-Überprüfungs-Web-API bietet einen Mechanismus für das Ausführe
 
 ## <a name="alternative-approaches"></a>Alternative Ansätze
 
-Bevor Sie sich die Details dazu ansehen, wie Sie auf der untersten Ebene mit Web-APIs interagieren, sollten Sie sich überlegen, stattdessen unser PowerShell-Modul, Microsoft.PowerApps.Checker.PowerShell zu nutzen. Dies ist ein vollständig unterstütztes Tool, das in der [PowerShell-Galerie](https://www.powershellgallery.com) verfügbar ist. Die aktuelle Einschränkung besteht darin, dass Windows PowerShell erforderlich ist. Wenn Sie diese Bedingung nicht erfüllen können, ist wahrscheinlich eine direkte Interaktion mit den APIs die beste Methode.
+Bevor Sie sich die Details dazu ansehen, wie Sie auf der untersten Ebene mit Web-APIs interagieren, sollten Sie sich überlegen, stattdessen unser PowerShell-Modul Microsoft.PowerApps.Checker.PowerShell zu nutzen. Dies ist ein vollständig unterstütztes Tool, das in der [PowerShell-Galerie](https://www.powershellgallery.com) verfügbar ist. Die aktuelle Einschränkung besteht darin, dass Windows PowerShell erforderlich ist. Wenn Sie diese Bedingung nicht erfüllen können, ist wahrscheinlich eine direkte Interaktion mit den APIs die beste Methode.
 
 <a name="bkmk_getStarted"></a>
 
@@ -121,7 +127,7 @@ Beim Veröffentlichen von Anwendungen bei AppSource müssen Sie Ihre Anwendungen
 
 ## <a name="find-your-tenant-id"></a>Suchen der Mandanten-ID
 
-Die ID Ihres Mandanten ist erforderlich, um mit den APIs zu interagieren, die ein Token erfordern. [In diesem Artikel](https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id) erhalten Sie Informationen dazu, wie Sie die Mandanten-ID erhalten können. Sie können auch PowerShell-Befehle verwenden, um die Mandanten-ID abzurufen. Im folgenden Beispiel werden die Cmdlets im [AzureAD-Modul](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0) verwendet.
+Die ID Ihres Mandanten ist erforderlich, um mit den APIs zu interagieren, die ein Token erfordern. [In diesem Artikel](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id) erhalten Sie Informationen dazu, wie Sie die Mandanten-ID erhalten können. Sie können auch PowerShell-Befehle verwenden, um die Mandanten-ID abzurufen. Im folgenden Beispiel werden die Cmdlets im [AzureAD-Modul](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0) verwendet.
 
 ```powershell
 # Login to AAD as your user
@@ -183,7 +189,7 @@ Um die beste Verschlüsselung sicherzustellen, unterstützt der Prüfservice nur
 
 ## <a name="report-format"></a>Berichtsformat
 
-Das Ergebnis der Lösungsanalyse ist eine ZIP-Datei, die einen oder mehrere Berichte in einem standardisierten JSON-Format enthält. Das Berichtsformat basiert auf statischen Analyseergebnissen, die im Static Analysis Results Interchange Format (SARIF) vorliegen. Es gibt Tools, mit denen SARIF-Dokumente abgerufen werden können und damit interagiert werden kann. Auf dieser [Website](https://sarifweb.azurewebsites.net/) finden Sie weitere Details. Der Service nutzt Versionen zwei des [OASIS-Standards](http://docs.oasis-open.org/sarif/sarif/v2.0/sarif-v2.0.html).
+Das Ergebnis der Lösungsanalyse ist eine ZIP-Datei, die einen oder mehrere Berichte in einem standardisierten JSON-Format enthält. Das Berichtsformat basiert auf statischen Analyseergebnissen, die im Static Analysis Results Interchange Format (SARIF) vorliegen. Es gibt Tools, mit denen SARIF-Dokumente abgerufen werden können und damit interagiert werden kann. Auf dieser [Website](https://sarifweb.azurewebsites.net/) finden Sie weitere Details. Der Service nutzt Versionen zwei des [OASIS-Standards](https://docs.oasis-open.org/sarif/sarif/v2.0/sarif-v2.0.html).
 
 
 ### <a name="see-also"></a>Siehe auch

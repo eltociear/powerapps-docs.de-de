@@ -1,6 +1,6 @@
 ---
-title: Authentifizierung mit.NET Framework-Anwendungen (Common Data Service) | Microsoft Docs
-description: Wie.NET Framework-Anwendungen sich mit dem Common Data Service authentifizieren können.
+title: Authentifizierung mit .NET Framework-Anwendungen (Common Data Service) | Microsoft-Dokumentation
+description: Authentifizierung von .NET Framework-Anwendungen mit Common Data Service
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -10,12 +10,17 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1cfe6bf09d274f7b465ffbcc97f220e3374af72f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748587"
 ---
-
 # <a name="authentication-with-net-framework-applications"></a>Authentifizierung mit .NET Framework-Anwendungen
 
 Wenn Sie das.NET Framework verwenden, können Sie Klassen innerhalb des [Xrm.Tooling](/dotnet/api/?view=dynamics-xrmtooling-ce-9)- Namespace verwenden, um sich zu authentifizieren und eine Verbindung zum Organization Service und zur Web API herzustellen.
@@ -48,17 +53,17 @@ Weitere Informationen: [Erstellen von Windows-Client-Anwendungen mithilfe der XR
 Verwenden Sie 4.6.2 .NET Framework oder höher, wenn Client-Anwendungen erstellen. Nur Anwendungen, die Transport Level Security (TLS) 1.2 oder eine bessere Sicherheit verwenden, können eine Verbindung herstellen. TLS 1.2 ist nicht das Standardprotokoll, das von .NET Framework 4.5.2 verwendet wird, aber es ist in .NET Framework 4.6.2.
 
 > [!NOTE]
-> **Bekannte Probleme mit Visual Studio 2015**
+> **Bekanntes Problem bei Visual Studio 2015**
 > 
 > Wenn Sie Ihr Projekt/Lösung in VS 2015 im Debug-Modus ausführen, können Sie möglicherweise keine Verbindung herstellen. Dies geschieht unabhängig davon, ob Sie ein Zielframework von 4.6.2 oder höher verwenden. Dies kann auftreten, weil der Visual Studio-Hostingprozess gegen .NET 4.5 kompiliert ist, was bedeutet, dass er standardmäßig TLS 1.2 nicht unterstützt. Sie können den Visual Studio-Hostingprozess als Umgehung deaktivieren. 
 >
-> Klicken Sie mit der rechten Maustaste auf den Namen Ihres Projekts in Visual Studio und dann auf **Eigenschaften**. Auf der Registerkarte **Debuggen** können Sie die Option **Visual Studio Hostingprozess aktivieren** deaktivieren. 
+> Klicken Sie mit der rechten Maustaste auf den Namen Ihres Projekts in Visual Studio und dann auf **Eigenschaften**. Auf der Registerkarte **Debuggen** können Sie die Option **Visual Studio-Hostingprozess aktivieren** deaktivieren. 
 >
 > Dies wirkt sich nur auf das Debugging-Umgebung in VS 2015 aus. Es hat keinen Einfluss auf die erstellten Binärdateien bzw. ausführbaren Datei. Das gleiche Problem tritt nicht in Visual Studio 2017 auf.
 
 ## <a name="net-framework-applications-without-sdk-assemblies"></a>.NET Framework-Anwendungen ohne SDK-Assemblys
 
-Wenn Sie es vorziehen, keine Abhängigkeit zu SDK-Assemblys zu haben, können Sie auch die unter [OAuth mit Common Data Service verwenden](authenticate-oauth.md) beschriebenen Muster für Anwendungen verwenden, ohne von SDK-Assemblys abhängig zu sein. Ohne die SDK-Assemblys können Sie nur die OData Restful Webdienste (Web API und OData Global Discovery Service) verwenden. Die [Beispiele für Web-API-Datenvorgänge (C#)](webapi/web-api-samples-csharp.md) veranschaulichen diese Vorgehensweise.
+Wenn Sie es vorziehen, keine Abhängigkeit zu SDK-Assemblies zu haben, können Sie auch die unter [OAuth mit Common Data Service verwenden](authenticate-oauth.md) beschriebenen Muster für Anwendungen verwenden, ohne von SDK-Assemblies abhängig zu sein. Ohne die SDK-Assemblys können Sie nur die OData Restful Webdienste (Web API und OData Global Discovery Service) verwenden. Die [Beispiele für Web-API-Datenvorgänge (C#)](webapi/web-api-samples-csharp.md) veranschaulichen diese Vorgehensweise.
 
 ### <a name="see-also"></a>Siehe auch
 

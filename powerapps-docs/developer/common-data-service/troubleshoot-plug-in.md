@@ -1,6 +1,6 @@
 ---
 title: Problembehandlungs-Plug-Ins (Common Data Service für Apps) | Microsoft Docs
-description: 'Enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.'
+description: Enthält Informationen zu Fehlern, die aufgrund von Plug-Ins auftreten können und wie sie behoben werden.
 ms.custom: ''
 ms.date: 09/18/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ea933534c38686a3766d52b98b82c96f878c13f0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748632"
 ---
 # <a name="troubleshoot-plug-ins"></a>Problembehandlungs-Plug-Ins 
 

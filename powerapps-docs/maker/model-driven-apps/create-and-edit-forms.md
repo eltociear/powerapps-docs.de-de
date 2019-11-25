@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem modellgesteuerten Formulardesigner | MicrosoftDocs'
+title: Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem modellgesteuerten Formulardesigner | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c357649ba68e6bce1b9df51d9601507c337afd31
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752450"
 ---
-
 # <a name="create-edit-or-configure-forms-using-the-form-designer"></a>Erstellen, Bearbeiten oder Konfigurieren von Formularen mit dem Formulardesigner 
 Verwenden Sie den Formulardesigner, um Formulare für modellgesteuerte Apps zu erstellen, zu bearbeiten oder zu konfigurieren. 
 
@@ -30,7 +35,7 @@ Verwenden Sie den Formulardesigner, um Formulare für modellgesteuerte Apps zu e
 > Der neue modellgesteuerte Formulardesigner unterstützt derzeit nicht das Bearbeiten von Kartenformularen. Weitere Informationen: [Formulartypen](types-forms.md)
 
 ## <a name="create-a-form"></a>Ein Formular erstellen 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Erweitern Sie **Daten** im linken Navigationsbereich und wählen Sie **Entitäten**. 
 3. Wählen Sie eine Entität, beispielsweise Firmenentität, und wählen Sie dann die **Formular**-Registerkarte 
 4. Wählen Sie **Formular hinzufügen** aus, und wählen Sie dann eines der folgenden Attribute aus
@@ -41,7 +46,7 @@ Verwenden Sie den Formulardesigner, um Formulare für modellgesteuerte Apps zu e
 5. Wenn Sie die Formularänderungen abgeschlossen haben, wählen Sie **Speichern** aus, um das Formular zu speichern, oder wählen Sie **Veröffentlichen** aus, wenn Sie die Änderungen speichern und für App-Benutzer sichtbar anzeigen möchten.  
 
 ## <a name="edit-a-form"></a>Bearbeiten eines Formulars 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an. 
 2. Erweitern Sie **Daten** im linken Navigationsbereich und wählen Sie **Entitäten**. 
 3. Wählen Sie eine Entität, beispielsweise Firmenentität, und wählen Sie dann die **Formular**-Registerkarte
 4. Wählen Sie den zu bearbeitenden Formularnamen aus.  

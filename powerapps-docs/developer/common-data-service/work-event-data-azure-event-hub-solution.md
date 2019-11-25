@@ -4,21 +4,24 @@ description: In dem Artikel wird die Arbeit mit Ereignisdaten in der Azure-Ereig
 keywords: ''
 ms.date: 05/08/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: a3732c49-7f47-d87c-5062-585ef28ab511
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 ms.reviewer: pehecke
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e004b1b5699e0f4fa21241af23eb14987ba781ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748592"
 ---
-
 # <a name="work-with-common-data-service-event-data-in-your-azure-event-hub-solution"></a>Arbeiten mit Common Data Service-Ereignisdaten in Ihrer Azure-Ereignishub-Lösung
 
 Azure Event Hubs ist ein hoch-skalierbarer öffentlicher Abonnementservice, der Millionen von Ereignissen pro Sekunde übernehmen und in mehrere Anwendungen streamen kann. Die Common Data Service-Azure-Schnittstelle ermöglicht, dass Ihre Ereignisdaten im Azure Service Bus veröffentlicht und den Abonnenten Ihrer Ereignishublösung zur Verfügung gestellt werden. Die folgenden Informationen beschreiben die allgemeinen Aufgaben, die abgeschlossen werden müssen, um Azure-Ereignisdaten an eine Ereignishublösung zu schicken.  

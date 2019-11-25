@@ -1,6 +1,6 @@
 ---
 title: Beispiel für Web-API-Funktionen und -Aktionen (clientseitiges JavaScript) (Common Data Service) | Microsoft Docs
-description: 'Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen mithilfe der Common Data Service-Web-API und clientseitigem JavaScript durchgeführt werden.'
+description: Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Aktionen, einschließlich benutzerdefinierter Aktionen mithilfe der Common Data Service-Web-API und clientseitigem JavaScript durchgeführt werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 337f5d15-66be-46db-a96a-309951a37a2a
 caps.latest.revision: 20
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b084896ee7b44df1d96c33dcd426231816c2c1e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753666"
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Beispiele von Web API-Funktionen und Aktionen (clientseitiges JavaScript)
 
@@ -46,7 +52,7 @@ Dieses Beispiel veranschaulicht, wie ungebundene und gebundene Funktionen und Ak
  
 ## <a name="run-this-sample"></a>Beispiel ausführen
 
-Um dieses Beispiel auszuführen, wechseln Sie zu [Beispiel für Web-API-Funktionen und -Aktionen (clientseitiges JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824048) und laden die Beispieldatei "Microsoft CRM Web API Functions and Actions Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte, und suchen Sie die verwaltete Lösungsdatei "WebAPIFunctionsandActions_1_0_0_0_managed.zip". Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und zeigen Sie die Lösungskonfigurationsseite an, um das Beispiel auszuführen. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
+Um dieses Beispiel auszuführen, wechseln Sie zu [Beispiel für Web-API-Funktionen und -Aktionen (clientseitiges JavaScript)](https://go.microsoft.com/fwlink/p/?LinkId=824048) und laden die Beispieldatei "Microsoft CRM Web API Functions and Actions Sample (Client-side JavaScript).zip" herunter. Extrahieren Sie die Inhalte, und suchen Sie die verwaltete Lösungsdatei "WebAPIFunctionsandActions_1_0_0_0_managed.zip". Importieren Sie die verwaltete Lösung in die Common Data Service-Organisation, und zeigen Sie die Lösungskonfigurationsseite an, um das Beispiel auszuführen. Anweisungen zum Importieren der Beispiellösung finden Sie unter [Web-API-Beispiele (clientseitiges JavaScript)](../web-api-samples-client-side-javascript.md)  
   
 <a name="bkmk_codeSample"></a>
 

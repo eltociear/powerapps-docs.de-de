@@ -1,6 +1,6 @@
 ---
-title: Überwachungsübersicht (Common Data Service) | MicrosoftDocs
-description: 'Lesen Sie, wie die Überwachungsfähigkeit von Common Data Service genutzt werden kann, um Änderungen von Attribut- und Entitätsdaten im Laufe der Zeit für Analyse- und Berichtszwecke aufzuzeichnen.'
+title: Überwachungsübersicht (Common Data Service) | Microsoft-Dokumentation
+description: Lesen Sie, wie die Überwachungsfähigkeit Common Data Service genutzt werden kann, um Änderungen von Attribut- und Entitätsdaten im Laufe der Zeit für Analyse- und Berichtszwecke aufzuzeichnen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 85f8f71c633d1a89aa20b5325123ce6e57b6298b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753074"
 ---
 # <a name="auditing-overview"></a>Überwachungsübersicht
 
@@ -22,7 +28,7 @@ Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit
  Common Data Service unterstützt eine Überwachungsfunktion, in der sich Entitäts- und Attributdaten innerhalb der Organisation ändern und über einen bestimmten Zeitraum für Analyse- und Berichterstellungszwecke erfasst werden können. Die Überwachung wird für alle benutzerdefinierten und für die meisten anpassbaren Entitäten und Attribute unterstützt. Die Überwachung wird nicht für Metadatenänderungen, Abrufvorgänge, Exportvorgänge oder während der Authentifizierung unterstützt. Weitere Informationen darüber, wie die Überwachung zu konfigurieren, finden Sie unter [Konfigurieren von Entitäten und Attributen für Überwachung](configure-entities-attributes-auditing.md).  
   
 ## <a name="supported-for-auditing"></a>Unterstützt für Überwachung  
- Nachfolgend sind die Überwachungsfunktionen für Common Data Service aufgelistet:  
+ Nachfolgend sind die Überwachungsleistung für Common Data Service aufgelistet:  
 <!-- TODO: Jim, I don't think this is online only. Please correct the tokens here. -->
   
 * Überwachung anpassbarer Entitäten
@@ -41,7 +47,7 @@ Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit
 * Überwachungs-APIs für Entwickler
   
 ## <a name="not-supported-for-auditing"></a>Nicht unterstützt für Überwachung  
- Nachfolgend wird aufgeführt, was für Common Data Service nicht geprüft werden kann:  
+ Nachfolgend wird gezeigt, was für Common Data Service nicht überwacht werden kann:  
   
 * Überwachung von Lesevorgängen
 * Überwachung von Metadatenänderungen 
@@ -78,4 +84,4 @@ Organisationen müssen oft verschiedene Vorschriften beachten, um Verfügbarkeit
  [Datenverwaltung in Dynamics 365](/dynamics365/customer-engagement/developer/manage-data)   
  [Überwachung von Entitätsdatenänderungen](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
  [Konfigurieren von Entitäten und Attributen für die Überwachung](configure-entities-attributes-auditing.md)       
- [Blog: Wiederherstellen gelöschter CRM-Daten und Neuerstellung mit der CRM-API](http://blogs.msdn.com/b/crm/archive/2011/05/23/recover-your-deleted-crm-data-and-recreate-them-using-crm-api.aspx)
+ [Blog: Wiederherstellen gelöschter CRM-Daten und Neuerstellung mit der CRM-API](https://blogs.msdn.com/b/crm/archive/2011/05/23/recover-your-deleted-crm-data-and-recreate-them-using-crm-api.aspx)

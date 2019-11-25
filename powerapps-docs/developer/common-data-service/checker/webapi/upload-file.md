@@ -1,6 +1,6 @@
 ---
 title: Hochladen einer Datei für die Analyse | Microsoft Docs
-description: 'Sehen Sie sich an, wie Sie eine POST-Abfrage mithilfe der PowerApps-Überprüfungs-Web-API stellen, um eine Datei für die Analyse hochzuladen.'
+description: Sehen Sie sich an, wie Sie eine POST-Anfrage mithilfe der PowerApps-Überprüfungs-Web-API stellen, um eine Datei für die Analyse hochzuladen.
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 08d7d73b-1377-4d3f-b8ef-5c89b19dd735
 caps.latest.revision: 21
 author: mhuguet
@@ -16,12 +16,17 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8945db30eaad8f8b47c2c933330b63dd12ed1662
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748578"
 ---
-
 # <a name="upload-a-file-for-analysis"></a>Hochladen einer Datei für die Analyse
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]

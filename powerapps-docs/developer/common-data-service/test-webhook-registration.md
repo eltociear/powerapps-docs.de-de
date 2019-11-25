@@ -1,19 +1,25 @@
 ---
-title: Webhook-Registrierung mit der Anforderungsprotokollierungs-Website testen (Common Data Service) | Microsoft Docs
-description: 'Um die kontextbezogenen Daten zu verstehen, die mit einem Webhook übergeben werden, ist die Verwendung einer Anforderungsprotokoll-Website nützlich, um die Daten zu untersuchen. In diesem Thema wird beschrieben, wie Sie dies durchführen.'
+title: Testen der Webhook-Registrierung mit der Anforderungsprotokollierungs-Website (Common Data Service) | Microsoft-Dokumentation
+description: Um die kontextbezogenen Daten zu verstehen, die mit einem Webhook übergeben werden, ist die Verwendung einer Anforderungsprotokoll-Website nützlich, um die Daten zu untersuchen. In diesem Thema wird beschrieben, wie Sie dies durchführen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 75bccd3cbc7425279338fa58bd77592fbc5c3d64
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748524"
 ---
 # <a name="test-webhook-registration-with-request-logging-site"></a>Webhook-Registrierung mit Anforderungsprotokollierungs-Website testen 
 
@@ -26,8 +32,8 @@ Ehe Sie einen Service erstellen oder konfigurieren, um Webhooks zu konsumieren, 
     1. Verwenden Sie die in Schritt 2 kopierte URL als die **Endpunkt-URL**. 
     1. Legen Sie einen Namen und alle gewünschten Authentifizierungseigenschaften fest. Webhook-Tester wertet diese Werte nicht so aus, wie dies ein tatsächliche Website, die Daten verarbeitet, tut. Sie können aber sehen, wie sie übergeben werden.
 1. Verwenden Sie das Plug-In-Registrierungstool, um einen Schritt mit dem Webhook zu registrieren, den Sie in Schritt 4 erstellt haben, wie in [Registrieren eines Schritts für einen Webhook](register-web-hook.md#register-a-step-for-a-webhook) beschrieben. 
-    1. Stellen Sie sicher, dass Sie ein Ereignis verwenden, das Sie auf einfache Weise ausführen können, indem Daten in der Common Data Service-Anwendung verarbeitet werden, beispielsweise das Aktualisieren einer Kontaktentität.
-1. Verwenden Sie die Common Data Service-App, um den Vorgang zur Auslösung des Ereignisses durchzuführen.
+    1. Stellen Sie sicher, dass Sie ein Ereignis verwenden, das Sie auf einfache Weise ausführen können, indem Daten in der Common Data Service-Anwendung verarbeitet werden, beispielsweise Aktualisieren einer Kontaktentität.
+1. Verwenden Sie die Common Data Service-App, um den Vorgang auszuführen, um das Ereignis auszulösen.
 1. Nachdem Sie das Ereignis ausgelöst haben, kehren Sie zur Webhook-Tester-Seite aus Schritt 2 zurück. Sie sollten sehen, dass die Seite aktualisiert wurde, um die Daten anzuzeigen, die an die Anforderung übergeben wurden:
 
     ![Ein Beispiel für eine Anforderung, die auf der Webhook-Tester-Website protokolliert ist](media/webhook-tester-example.png)

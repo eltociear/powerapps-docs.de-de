@@ -1,19 +1,25 @@
 ---
 title: Erstellen von Abfragen mit QueryExpression (Common Data Service) | Microsoft Docs
-description: 'Lesen Sie, wie Sie die QueryExpression-Klasse zum programmgesteuerten Erstellen einer Abfrage, die Datenfilter und Suchbedingungen, die den Umfang einer Datenbanksuche definieren, enthält, verwenden können.'
+description: Lesen Sie, wie Sie die QueryExpression-Klasse zum programmgesteuerten Erstellen einer Abfrage, die Datenfilter und Suchbedingungen, die den Umfang einer Datenbanksuche definieren, enthält, verwenden können.
 ms.custom: ''
 ms.date: 06/25/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d726829928ae426161a0f9cde53bd52b5a32ff5b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748399"
 ---
 # <a name="build-queries-with-queryexpression"></a>Erstellen von Abfragen mit QueryExpression
 

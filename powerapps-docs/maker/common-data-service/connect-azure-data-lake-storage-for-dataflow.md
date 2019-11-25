@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d7957f048613045a64af0caf5696e540dbb8f883
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754781"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Verbinden von Azure Data Lake Storage Gen2 für Dataflow-Speicher
 
@@ -46,7 +52,7 @@ Sie benötigen Folgendes, um Azure Data Lake Storage Gen2 für Dataflows zu verw
 > Wenn Sie kein Azure-Abonnement haben, [erstellen Sie ein kostenloses Testkonto](https://azure.microsoft.com/free/), bevor Sie starten.
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-platform-dataflows"></a>Bereiten Sie Azure Data Lake Storage Gen2 für Power Platform-Dataflows vor
-Bevor Sie Power BI mit einem Azure Data Lake Storage Gen2-Konto konfigurieren, müssen Sie ein Speicherkonto erstellen und konfigurieren. Hier sind die Anforderungen für Power Platform-Dataflows:
+Bevor Sie Ihre Umgebung mit einem Azure Data Lake Storage-Gen2-Konto konfigurieren, müssen Sie ein Speicherkonto erstellen und konfigurieren. Hier sind die Anforderungen für Power Platform-Dataflows:
 1.  Das Speicherkonto muss im selben Azure Active Directory-Mandanten wie Ihr PowerApps-Mandant erstellt werden.
 2.  Es wird empfohlen, das Speicherkonto in derselben Region wie die PowerApps-Umgebung zu erstellen, in der es verwendet werden soll. Um zu bestimmen, wo Ihre PowerApps-Umgebung ist, wenden Sie sich an den Umgebungsadministrator.
 3.  Bei dem Speicherkonto muss die Funktion für den hierarchischen Namespace aktiviert sein.
@@ -56,42 +62,15 @@ In den folgenden Abschnitten werden Sie durch die erforderlichen Schritte für d
 
 ## <a name="create-the-storage-account"></a>Erstellen des Speicherkontos
 Folgen Sie den Schritten unter [Erstellen eines Azure Data Lake Storage Gen2-Speicherkontos](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account).
-1.  Stellen Sie sicher, dass Sie denselben Speicherort wie für Ihren Power BI-Mandanten auswählen und Ihren Speicher als SpeicherV2 (universell v2) festlegen.
+1.  Stellen Sie sicher, dass Sie dieselbe Region wie für Ihren -Mandanten auswählen und Ihren Speicher als SpeicherV2 (universell v2) festlegen.
 2.  Stellen Sie sicher, dass Sie die Funktion für den hierarchischen Namespace aktivieren. 
 3.  Wir empfehlen, die Replikationseinstellung auf "Georedundanter Speicher (RA-GRS) mit Leseberechtigung" festzulegen.
-
-
-
-<!--from editor: I haven't heard of Athena before. Is it the Amazon service, https://aws.amazon.com/athena/? If so, it probably should be identified as Amazon at first mention. -->
-
-
-## <a name="create-a-cross-origin-resource-sharing-cors-rule-for-the-athena-service"></a>Erstellen einer "Ursprungsübergreifende Ressourcenfreigabe (CORS)"-Regel für den Athena-Service
-
-> [!NOTE]
-> Power Platform-Dataflows nutzen den Athena-Service, um einen Data Lake mit einer PowerApps-Umgebung zu verbinden. In diesem Abschnitt werden Sie aufgefordert, dem Athena-Service eine Rolle für das Speicherkonto zuzuweisen, sodass er für die Dataflow-Verwendung konfiguriert werden kann.
-
-Anschließend müssen Sie dem Athena-Service über den Webbrowser und das PowerApps-Portal Zugriff auf das Speicherkonto gewähren. Webbrowser implementieren eine Sicherheitsbeschränkung, auch bekannt als [Same-Origin-Richtlinie](http://www.w3.org/Security/wiki/Same_Origin_Policy), die verhindert, dass eine Webseite APIs in einer anderen Domäne aufruft; CORS bietet eine sichere Möglichkeit, es einer Domäne zu erlauben (die Ursprungsdomäne), APIs in einer anderen Domäne aufzurufen. Weitere Informationen über CORS findest du unter [CORS-Spezifikation](http://www.w3.org/TR/cors/).
-
-Folgen Sie den Schritten im Speicherkonto, das Sie gerade auf der Einstellungsseite im Azure-Portal erstellt haben. Wählen Sie im CORS-Menüelement den Abschnitt "Blob-Dienst" aus und geben Sie diese Details ein. 
-
-|Einstellungen  |Value  |
-|---------|---------|
-|Zulässige Ursprünge   | https://athena-ui-prod.trafficmanager.net     |
-|Zulässige Methoden   |  DELETE, GET, HEAD, MERGE, POST, OPTIONS, PUT, PATCH   |
-|Zulässige Kopfzeilen   | *    |
-|Öffentlich verfügbare Kopfzeilen   | *    |
-|Maximales Alter |   *  |
-
-
-Auf dem folgenden Bild wird die CORS-Regel gezeigt, die für den Athena-Service konfiguriert ist.
-
-![CORS-Regel](media/dataflows-cores-rule.png)
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-powerapps"></a>Verbinden von Azure Data Lake Storage Gen2 mit PowerApps
 Sobald Sie Ihr Azure Data Lake Storage Gen2-Konto im Azure-Portal eingerichtet haben, können Sie es mit einem bestimmten Dataflow oder einer PowerApps-Umgebung verbinden. Durch die Verbindung eines Lakes mit einer Umgebung können andere Entwickler und Administratoren in der Umgebung Dataflows erstellen, bei denen ihre Daten auch im Lake Ihrer Organisation gespeichert werden. 
 
 Führen Sie diese Schritte aus, um Ihr Azure Data Lake Storage Gen2-Konto mit dem Dataflow zu verbinden:
-1.  Melden Sie sich in [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und überprüfen Sie, in welcher Umgebung Sie sich befinden. Der Umgebungs-Schnellzugriff befindet sich auf der rechten Seite der Kopfzeile. 
+1.  Melden Sie sich in [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an und überprüfen Sie, in welcher Umgebung Sie sich befinden. Der Umgebungs-Schnellzugriff befindet sich auf der rechten Seite der Kopfzeile. 
 2. Wählen Sie im linken Navigationsbereich den Abwärtspfeil neben **Daten** aus.
 
    ![Registerkarte für PowerApps-Entwicklerportaldaten](media/powerapps-portal-data.png)
@@ -108,56 +87,53 @@ Führen Sie diese Schritte aus, um Ihr Azure Data Lake Storage Gen2-Konto mit de
 Wenn ein Speicherkonto noch nicht mit der Umgebung verknüpft wurde, erscheint ein Dialogfeld **Link zum Data Lake**. Sie müssen sich anmelden und den Data Lake suchen, den Sie im vorherigen Schritt erstellt haben. In diesem Beispiel wird kein Data Lake mit der Umgebung verknüpft. Daher erscheint eine Aufforderung, in der Sie gebeten werden, einen hinzuzufügen. 
 
 
+1. Speicherkonto auswählen
 
-<!--from editor: Should "storage account" be in bold because it's something the user has to select? --"
-
-1. Select storage account.
-
-    The **Select Storage Account** screen appears.
+    Der Bildschirm **Speicherkonto wählen** wird angezeigt
     
-    ![Select storage account](media/select-storage-account.png)
+    ![Speicherkonto auswählen](media/select-storage-account.png)
     
-2. Select the **Subscription ID** of the storage account.
-3. Select the **Resource group name** in which the storage account was created.
-4. Enter the **Storage account name**.
-5. Select **Save**.
+2. Wählen Sie **Abonnement-ID** aus dem Speicherkonto aus.
+3. Wählen Sie **Ressourcengruppenname**, in dem das Speicherkonto erstellt wurde, aus.
+4. Geben Sie den **Namen des Speicherkontos** ein.
+5. Wählen Sie **Speichern** aus.
 
-Once these steps are successfully completed, your Azure Data Lake Storage Gen2 account is connected to Power Platform Dataflows and you can continue to create a dataflow.
+Nachdem diese Schritte erfolgreich abgeschlossen sind, ist Ihr Azure Data Lake Storage Gen2-Konto mit Power Platform Dataflows verbunden, und Sie können fortfahren, einen Dataflow zu erstellen.
 
-## Considerations and limitations
-There are a few considerations and limitations to keep in mind when working with your dataflow storage:
-- Linking an Azure Data Lake Store Gen2 account for dataflow storage is not supported in the default environment.
-- Once a dataflow storage location is configured for a dataflow, it can't be changed.
-- By default, any member of the environment can access dataflow data using the Power Platform Dataflows Connector. However, only the owners of a dataflow can access its files directly in Azure Data Lake Storage Gen2. To authorize additional people to access the dataflows data directly in the lake, you must authorize them to the dataflow’s CDM folder in the data lake or the data lake itself.
-- When a dataflow is deleted, its CDM folder in the lake will also be deleted. 
+## <a name="considerations-and-limitations"></a>Überlegungen und Einschränkungen
+Einige Überlegungen und Einschränkungen sind zu bendenken, wenn Sie mit Ihrem Dataflow-Speicher arbeiten:
+- Die Verknüpfung zum Azure Data Lake Store Gen2-Konto für Dataflow-Speicher wird in der Standardumgebung nicht unterstützt.
+- Sobald ein Datenflow-Speicherort für einen Dataflow konfiguriert ist, kann sie nicht mehr geändert werden.
+- Standardmäßig kann jedes Mitglied der Umgebung auf Dataflow-Daten mithilfe des Power Platform Dataflow-Konnektors zugreifen. Nur die Besitzer eines Dataflows können jedoch auf dessen Dateien in Azure Data Lake Storage Gen2 direkt zugreifen. Um weitere Benutzer zu berechtigen, direkt auf die Dataflow-Daten im Lake zuzugreifen, müssen Sie sie auf den **CDM-Ordner** des Dataflows im Data Lake oder im Data Lake selbst autorisieren.
+- Wenn ein Dataflow gelöscht, wird sein **CDM-Ordner** im Lake ebenfalls gelöscht. 
 
 > [!IMPORTANT]
-> You shouldn't change files created by dataflows in your organization’s lake or add files to a dataflow’s CDM folder. Changing files might damage dataflows or alter their behavior and is not supported. Power Platform Dataflows only grants read access to files it creates in the lake. If you authorize other people or services to the filesystem used by Power Platform Dataflows, only grant them read access to files or folders in that filesystem.
+> Sie sollten Dateien, die von Dataflows im Lake Ihrer Organisation erstellt werden, nicht ändern oder keine Dateien zum **CDM-Ordner** eines Dataflows hinzufügen. Das Ändern von Dateien kann Dataflows schädigen oder deren Verhalten ändern und wird nicht unterstützt. Power Platform Nur Dataflows können Lesezugriff auf die Dateien verleihen, die sie im Lake erstellen. Wenn Sie andere Personen oder Services auf das Dateisystem berechtigen, das von Power Platform Dataflows verwendet wird, verleihen Sie ihnen nur Lesezugriff zu Dateien oder Ordnern in dem Dateisystem.
 
-## Frequently asked questions
-*What if I had previously created dataflows in my organization’s Azure Data Lake Storage Gen2 and would like to change their storage location?*
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+*Was muss ich tun, wenn ich zuvor Dataflows im Azure Data Lake Storage Gen2 meiner Organisation erstellt habe und deren Speicherort ändern möchte?*
 
-   You can't change the storage location of a dataflow after it was created.
+   Sie können den Speicherort eines Dataflows nicht ändern, nachdem er erstellt wurde.
 
-*When can I change the dataflow storage location of an environment?*
+*Wann kann ich den Dataflow-Speicherort einer Umgebung ändern?*
 
-   Changing the environment's dataflow storage location is not currently supported. 
+   Das Ändern des Dataflow-Speicherorts der Umgebung wird derzeit nicht unterstützt. 
 
-## Next steps
-This article provided guidance about how to connect an Azure Data Lake Storage Gen2 account for dataflow storage. 
+## <a name="next-steps"></a>Nächste Schritte
+Dieser Artikel hat Anleitungen geliefert, wie man ein Azure Data Lake Storage Gen2-Konto für einen Dataflow-Speicher verbindet. 
 
-For more information about dataflows, the Common Data Model, and Azure Data Lake Storage Gen2, see these articles:
-- [Self-service data prep with dataflows](https://go.microsoft.com/fwlink/?linkid=2099972)
-- [Creating and using dataflows in PowerApps](https://go.microsoft.com/fwlink/?linkid=2100076)
-- [Connect Azure Data Lake Storage Gen2 for dataflow storage](https://go.microsoft.com/fwlink/?linkid=2099973)
-- [Add data to an entity in Common Data Service](https://go.microsoft.com/fwlink/?linkid=2100075)
+Weitere Informationen zu Dataflows, das Common Data Model und Azure Data Lake Storage Gen2 sind in diesen Artikeln zu finden:
+- [Self-Service Datenaufbereitung mit Dataflows](https://go.microsoft.com/fwlink/?linkid=2099972)
+- [Erstellen und Verwenden von Dataflows in PowerApps](https://go.microsoft.com/fwlink/?linkid=2100076)
+- [Verbinden Sie Azure Data Lake Storage Gen2 für die Dataflowspeicherung](https://go.microsoft.com/fwlink/?linkid=2099973)
+- [Daten zu einer Entität in Common Data Service hinzufügen](https://go.microsoft.com/fwlink/?linkid=2100075)
 
-For more information about Azure storage, see this article:
-- [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+Weitere Informationen über Azure Storage finden Sie in diesem Artikel:
+- [Azure Storage Sicherheitshandbuch](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 
-For more information about the Common Data Model, see these articles:
-- [Common Data Model - overview](https://docs.microsoft.com/powerapps/common-data-model/overview) 
-- [Common Data Model folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-- [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+Weitere Informationen über das Common Data Model sind in diesen Artikeln zu finden:
+- [Common Data Model – Übersicht](https://docs.microsoft.com/powerapps/common-data-model/overview) 
+- [Common Data Model-Ordner](https://go.microsoft.com/fwlink/?linkid=2045304)
+- [CDM-Modell-Dateidefinition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-You can ask questions in the [PowerApps Community](https://go.microsoft.com/fwlink/?linkid=2099971).
+Sie können Fragen in der [PowerApps Community](https://go.microsoft.com/fwlink/?linkid=2099971) stellen.

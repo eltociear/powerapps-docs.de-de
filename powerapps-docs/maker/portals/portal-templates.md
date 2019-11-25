@@ -1,6 +1,6 @@
 ---
-title: In powerapps verfügbare Portal Vorlagen | Microsoft-Dokumentation
-description: Erfahren Sie mehr über verschiedene Portal Vorlagen, die in powerapps verfügbar sind.
+title: Portalvorlagen verfügbar unter PowerApps | Microsoft Docs
+description: Erfahren Sie mehr über die verschiedenen Portalvorlagen, die unter PowerApps verfügbar sind.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,70 +11,70 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541902"
+ms.locfileid: "2755682"
 ---
 # <a name="portal-templates"></a>Portalvorlagen
 
-Basierend auf der ausgewählten Umgebung in powerapps können Sie ein Common Data Service Starter-Portal oder ein Portal in einer Umgebung erstellen, die Modell gesteuerte apps in Dynamics 365 enthält.
+Abhängig von der ausgewählten Umgebung in PowerApps können Sie ein Common Data Service-Starterportal oder ein Portal in einer Umgebung erstellen, die modellgesteuerte Apps in Dynamics 365 enthält.
 
 > [!NOTE]
-> Vorhandene Portale und vorhandene Portal Vorlagen (Community, Partner, Personal Self-Service, Self-Service für Kunden) werden in powerapps Portals Studio nicht vollständig unterstützt, und einige Komponenten werden möglicherweise nicht mehr angezeigt. Sie können jedoch weiterhin die restlichen Komponenten wie gewohnt bearbeiten.
+> Bestehende Portale und bestehende Portalvorlagen (Community, Partner, Self-Service für Mitarbeiter, Self-Service für Kunden) werden im PowerApps-Portalstudio nicht vollständig unterstützt und einige Komponenten werden möglicherweise nicht dargestellt. Sie können jedoch die Bearbeitung der restlichen Komponenten wie gewohnt fortsetzen.
 
-## <a name="environment-with-common-data-service"></a>Umgebung mit Common Data Service
+## <a name="environment-with-common-data-service"></a>Umgebung mit Common Data Service.
 
-Wenn Sie eine Umgebung auswählen, in der Common Data Service enthalten ist, können Sie ein Common Data Service Starter-Portal erstellen. Das Common Data Service Starter-Portal enthält die Beispiel Daten, mit denen Sie schnell loslegen können. Es verfügt außerdem über die folgenden integrierten Beispielseiten:
+Wenn Sie eine Umgebung auswählen, die Common Data Service enthält, können Sie ein Common Data Service Starterportal erstellen. Das Common Data Service-Starterportal wird mit Beispieldaten für Sie geliefert, damit Sie schnell starten können. Es hat auch die folgenden integrierten Beispielseiten:
 
-- Standardmäßige Studio-Vorlage
+- Standardstudiovorlage
 - Seite mit Titel
 - Seite mit untergeordneten Links
 
-## <a name="environment-with-model-driven-apps-in-dynamics-365"></a>Umgebung mit Modell gesteuerten apps in Dynamics 365 
+## <a name="environment-with-model-driven-apps-in-dynamics-365"></a>Umgebung mit modellgesteuerten Apps in Dynamics 365 
 
-Wenn Sie eine Umgebung auswählen, die Modell gesteuerte apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing oder Dynamics 365 Project Service Automation) enthält, können Sie die folgenden Portale erstellen. :
+Wenn Sie eine Umgebung auswählen, die modellgesteuerte Apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing oder Dynamics 365 Project Service Automation) enthält, können Sie die folgenden Portale erstellen:
 
-- **Self-Service-Portal**für Kunden: mit einem Self-Service-Portal für Kunden können Kunden auf Self-Service-Kenntnisse zugreifen, Ressourcen unterstützen, den Fortschritt ihrer Fälle anzeigen und Feedback abgeben.
-- **Partnerportal**: ein Partnerportal ermöglicht allen Organisationen mit Wiederverkäufern, Verteilern, Lieferanten oder Partnern den Echtzeitzugriff auf jede Phase von gemeinsamen Aktivitäten.
+- **Kunden-Self-Service-Portal**: Ein Kunden-Self-Service-Portal ermöglicht es Kunden, auf Self-Service-Wissen zuzugreifen, Ressourcen zu unterstützen, den Fortschritt ihrer Fälle zu verfolgen und Feedback zu geben.
+- **Partnerportal**: Ein Partnerportal ermöglicht es jedem Unternehmen mit Resellern, Distributoren, Lieferanten oder Partnern, in Echtzeit auf jede Phase der gemeinsamen Aktivitäten zuzugreifen.
 
     > [!NOTE]
-    > Die Anbieter "Field Service" und "Project Service" müssen in ihrer Dynamics 365-Organisation installiert werden, um die entsprechenden Optionen zu aktivieren Weitere Informationen finden Sie unter [integrieren von Project Service Automation](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) und [Integration Field Service](https://docs.microsoft.com/dynamics365/portals/integrate-field-service).
+    > Field Service- und Project Service-Pakete müssen in der Dynamics 365-Organisation installiert werden, um die jeweiligen Optionen zu aktivieren. Weitere Informationen finden Sie unter [Project Service Automation integrieren](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) und [Field Service integrieren](https://docs.microsoft.com/dynamics365/portals/integrate-field-service).
 
-- **Personal Self-Service-Portal**: ein Mitarbeiter-Self-Service-Portal erstellt effiziente und gut informierte Mitarbeiter durch die Optimierung allgemeiner Aufgaben und die Unterstellung der einzelnen Mitarbeiter mit einer definierbaren Wissensquelle.
-- **Communityportal**: ein Community-Portal nutzt Peer-to-Peer-Interaktionen zwischen Kunden und Experten, um den Katalog mit verfügbaren Kenntnissen aus Knowledge Base-Artikeln, Foren und Blogs zu erweitern und Feedback zu senden. Kommentare und Bewertungen
-- **Portal von leer**: Erstellen Sie eine Website, um Daten für externe und interne Benutzer freizugeben. Diese Vorlage enthält Beispielseiten, mit denen Sie schnell loslegen können. 
+- **Mitarbeiter-Self-Service-Portal**: Ein Mitarbeiter-Self-Service-Portal schafft eine effiziente und gut informierte Belegschaft, indem es gemeinsame Aufgaben rationalisiert und jedem Mitarbeiter eine definitive Wissensquelle bietet.
+- **Community-Portal**: Ein Community-Portal nutzt Peer-to-Peer-Interaktionen zwischen Kunden und Experten, um den Katalog des verfügbaren Wissens aus Knowledge Base-Artikeln, Foren und Blogs organisch zu erweitern und Feedback durch Kommentare und Bewertungen zu geben.
+- **Portal aus leerem**: Erstellen Sie eine Website, um Daten mit externen und internen Benutzern auszutauschen. Diese Vorlage wird mit Beispielseiten geliefert, um Ihnen einen schnellen Einstieg zu ermöglichen. 
 
-## <a name="portal-templates-features"></a>Funktionen für Portal Vorlagen
+## <a name="portal-templates-features"></a>Funktionen der Portalvorlagen
 
-In der folgenden Tabelle sind die Funktionen der einzelnen Portal Vorlagen zusammengefasst:
+Die folgende Tabelle fasst die mit jeder Portalvorlage verbundenen Funktionen zusammen:
 
-| Befinden | Self-Service-Portal für Kunden | Partner Portal | Personal Self-Service-Portal | Communityportal | Portal von leer | Common Data Service Starter-Portal|
+| Funktion | Kunden-Self-Service-Portal | Partnerportal | Employee Self-Service-Portal | Community-Portal | Portal aus leerem | Common Data Service-Starterportal|
 |------------------|---------------|----------------|---------------|------------------|---------------|------|
-| Weltweit bereit | •  | • | • | • | • |• |
-| Unterstützung für mehrere Sprachen | •  | • | • | • | • |• |
-| Portal Verwaltung| • | • | • | • | •  |• |
+| Bereit für die Welt | •  | • | • | • | • |• |
+| Mehrsprachunterstützung | •  | • | • | • | • |• |
+| Portalverwaltung| • | • | • | • | •  |• |
 | Anpassung und Erweiterbarkeit  | •   | •  | •   | •  | • |• |
-| Design   | •   | •   | •    | •   | •   |• |
-| Inhalts Verwaltung                     | •                            |                | •                            | •                |               |
-| Wissensverwaltung                   | •                            | •              | •                            | •                |               |
-| Unterstützung/Fall Verwaltung                | •                            |                | •                            | •                |               |
-| Fan                                 | •                            |                | •                            | •                |               |
-| Facetten Suche                         | •                            |                | •                            |                  |               |
+| Designverwendung   | •   | •   | •    | •   | •   |• |
+| Content Management                     | •                            |                | •                            | •                |               |
+| Wissensmanagement                   | •                            | •              | •                            | •                |               |
+| Support/Case Management                | •                            |                | •                            | •                |               |
+| Foren                                 | •                            |                | •                            | •                |               |
+| Facettierte Suche                         | •                            |                | •                            |                  |               |
 | Profilverwaltung                     | •                            |                | •                            |                  |               |
 | Forenthread abonnieren              | •                            |                | •                            |                  |               |
-| Iny                               | •                            |                | •                            | •                |               |
-| [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD-Authentifizierung                |                              |                | •                            |                  |               |
+| Kommentare                               | •                            |                | •                            | •                |               |
+| [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)]-AD-Authentifizierung                |                              |                | •                            |                  |               |
 | Ideen                                  |                              |                |                              | •                |               |
-| gt                                  |                              |                |                              | •                |               |
-| Integration von Project Service-Automatisierung |                              | •              |                              |                  |               |
-| Felddienst Integration              |                              | •              |                              |                  |               |
-| Onboarding von Partnern                     |                              | •              |                              |                  |               |
-| Portal Basis  |  •    | •      |  •| •| •|• |
-| Portal Workflows|  •| •|  •| •| •|• |
+| Blogs                                  |                              |                |                              | •                |               |
+| Integration von Project Service Automation |                              | •              |                              |                  |               |
+| Integration von Field Service              |                              | •              |                              |                  |               |
+| Partner-Onboarding                     |                              | •              |                              |                  |               |
+| -Portalbasis  |  •    | •      |  •| •| •|• |
+| Portalworkflows|  •| •|  •| •| •|• |
 | Webbenachrichtigungen|  •| •|  •| •| •|• |
-| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] Identität|   •|  •|  •|   •| •|• |
-| Identitäts Workflows| •|  •| •|   •| •|• |
-| Web Forms|  •| •|    •| •| •|• |
-| Backs|   •|  •|  •| •| •|• |
+| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)]-Identität|   •|  •|  •|   •| •|• |
+| Identitätsworkflows| •|  •| •|   •| •|• |
+| Webformulare|  •| •|    •| •| •|• |
+| Feedback|   •|  •|  •| •| •|• |
 ||

@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Erstellen, abrufen, aktualisieren und löschen (spät gebunden) (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Entität-Klasse mit später Bindung.'
+title: 'Beispiel: Anlegen, Abrufen, Aktualisieren und Löschen (späte Bindung) (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel veranschaulicht die Erstellungs-, Abruf-, Aktualisierungs- und Löschungsvorgänge für ein Konto mithilfe der Entität-Klasse mit später Bindung.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 126d73385a9b3e2aca78f74f7132b87865801d52
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748743"
 ---
 # <a name="sample-late-bound-entity-operations"></a>Beispiel: Spät gebundene Entitätsvorgänge
 

@@ -1,24 +1,27 @@
 ---
 title: Erstellen einer Visualisierung (Diagramm) (modellgesteuerte Apps) | Microsoft Docs
-description: 'In diesem Thema wird gezeigt, wie Sie eine Diagrammvisualisierung und eine Webressourcenvisualisierung erstellen.'
+description: In diesem Thema wird gezeigt, wie Sie eine Diagrammvisualisierung und eine Webressourcenvisualisierung erstellen.
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 9dbed5ee-21a4-ab86-fc4c-08c3838e42f2
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2d5a7245b0e620885ab60ca57d674245641745fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748471"
 ---
-
 # <a name="create-a-visualization-chart"></a>Erstellen einer Visualisierung (Diagramm)
 
 Wenn Sie eine Visualisierung programmgesteuert erstellen möchten, müssen Sie einen Datensatz für die [SavedQueryVisualization Entity](../common-data-service/reference/entities/savedqueryvisualization.md)- oder [UserQueryVisualization Entity](../common-data-service/reference/entities/userqueryvisualization.md)-Entität erstellen, um ein Diagramm im Besitz der Organisation bzw. im Besitz des Benutzers zu erstellen. In diesem Thema wird gezeigt, wie Sie eine Diagrammvisualisierung und eine Webressourcenvisualisierung erstellen.  

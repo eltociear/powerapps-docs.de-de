@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c342d1b5c3b5864aaf556af800c0f439a3e272
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753618"
 ---
 # <a name="export-ribbon-definitions"></a>Exportieren von Menübanddefinitionen
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/export-ribbon-definitions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/export-ribbon-definitions -->
 
 Wenn Sie Änderungen am Standard-RibbonXml effektiv definieren wollen, müssen Sie die RibbonXml-Daten referenzieren können, die diese Menübänder definieren.  
   
@@ -27,7 +33,7 @@ Wenn Sie Änderungen am Standard-RibbonXml effektiv definieren wollen, müssen S
   
 <a name="BKMK_AccessDefaultRibbonData"></a>   
 ## <a name="access-the-default-ribbon-data"></a>Zugriff auf die Menüband-Standarddaten  
- Die standardmäßigen Menübanddefnitionen für modellgetriebene Apps können heruntergeladen werden von [Microsoft Downloads: ExportedRibbonXml.zip](http://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) 
+ Die standardmäßigen Menübanddefnitionen für modellgetriebene Apps können heruntergeladen werden von [Microsoft Downloads: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) 
   
  Die applicationRibbon.xml-Datei enthält die Definition der Kernanwendungsmenübänder.  
   
@@ -45,7 +51,7 @@ Wenn Sie Änderungen am Standard-RibbonXml effektiv definieren wollen, müssen S
  Die Menübanddaten werden als komprimierte Datei exportiert. Zur Dekomprimierung der Datei in XML müssen Sie die [System.IO.Packaging.ZipPackage](https://msdn.microsoft.com/library/system.io.packaging.zippackage.aspx)-Klasse verwenden. Das folgende Beispiel ist eine Hilfsmethode, die im SDK-Beispiel verwendet wird, um die Datei zu dekomprimieren.  
  ``` C# 
 /// <summary>
-/// A helper method that decompresses the the Ribbon data returned
+/// A helper method that decompresses the Ribbon data returned
 /// </summary>
 /// <param name="data">The compressed ribbon data</param>
 /// <returns></returns>

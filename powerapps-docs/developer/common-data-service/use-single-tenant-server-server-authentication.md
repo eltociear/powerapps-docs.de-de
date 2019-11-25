@@ -1,6 +1,6 @@
 ---
 title: Verwenden der Einzel-Mandanten-Server-zu-Server-Authentifizierung (Common Data Service) | MicrosoftDocs
-description: 'Beschreibt den Zugriff auf D365-Daten aus einer Anwendung oder einem Dienst heraus, ohne explizite Benutzerauthentifizierung.'
+description: Beschreibt den Zugriff auf D365-Daten aus einer Anwendung oder einem Dienst heraus, ohne explizite Benutzerauthentifizierung.
 ms.custom: ''
 ms.date: 2/21/2019
 ms.reviewer: pehecke
@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2c16f63c6c98c027dca30888e8283efed29df085
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748626"
 ---
 # <a name="use-single-tenant-server-to-server-authentication"></a>Verwenden der Einzel-Mandanten-Server-zu-Server-Authentifizierung
 

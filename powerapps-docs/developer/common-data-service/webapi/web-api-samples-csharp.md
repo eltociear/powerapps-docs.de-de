@@ -1,6 +1,6 @@
 ---
-title: 'Beispiele für Web-API-Datenvorgänge (C#) (Common Data Service) | Microsoft Docs'
-description: 'Dieses Thema enthält eine Beschreibung verschiedener Web-API-Beispiele, die mit C# implementiert werden'
+title: Beispiele für Web-API-Datenvorgänge (C#) (Common Data Service) | Microsoft Docs
+description: Dieses Thema enthält eine Beschreibung verschiedener Web-API-Beispiele, die mit C# implementiert werden
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 66e26684-819e-45f7-bec4-c250be4d6fed
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7f253c8585d7bac93ed08b4d33637c9c9d7960d3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753634"
 ---
 # <a name="web-api-data-operations-samples-c"></a>Beispiele für Web-API-Datenvorgänge (C#)
 
@@ -69,13 +75,13 @@ Diese C#-Implementierung hängt von den folgenden Faktoren ab:
   
 - Die Standard-.NET Framework HTTP-Messagingklassen, die im [System.Net.Http-Namespace](/dotnet/api/system.net.http) enthalten sind, insbesondere [HttpClient](/dotnet/api/system.net.http.httpclient), [HttpRequestMessage](/dotnet/api/system.net.http.httprequestmessage) und[HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage) werden für das HTTP-Messaging verwendet.  
   
-- Die Newtonsoft [Json.NET](http://www.newtonsoft.com/json)-Bibliothek, die das JSON-Datenformat unterstützt.  
+- Die Newtonsoft [Json.NET](https://www.newtonsoft.com/json)-Bibliothek, die das JSON-Datenformat unterstützt.  
   
 #### <a name="jsonnet-library"></a>Json.NET-Bibliothek
 
-In C# und die meisten sonstigen verwalteten Sprachen das JSON-Datenformat nicht nativ unterstützen, ist die aktuelle beste Methode, eine Bibliothek für diese Funktionen zu verwenden. Weitere Informationen finden Sie unter [Eine Einführung zur JavaScript-Objektnotation (JSON) in JavaScript und in .NET](https://msdn.microsoft.com/library/bb299886.aspx). Json.NET ist eine beliebte Wahl für .NET-Projekte. Es stellt ein robustes, performantes Open-Source-Framework ([MIT-Lizenz](https://opensource.org/licenses/MIT)) für das Serialisieren, Konvertieren, Analysieren, Abfragen sowie zum Formatieren von JSON-Daten bereit. Weitere Informationen finden Sie in der [Json.NET-Dokumentation](http://www.newtonsoft.com/json/help/html/Introduction.htm).  
+In C# und die meisten sonstigen verwalteten Sprachen das JSON-Datenformat nicht nativ unterstützen, ist die aktuelle beste Methode, eine Bibliothek für diese Funktionen zu verwenden. Weitere Informationen finden Sie unter [Eine Einführung zur JavaScript-Objektnotation (JSON) in JavaScript und in .NET](https://msdn.microsoft.com/library/bb299886.aspx). Json.NET ist eine beliebte Wahl für .NET-Projekte. Es stellt ein robustes, performantes Open-Source-Framework ([MIT-Lizenz](https://opensource.org/licenses/MIT)) für das Serialisieren, Konvertieren, Analysieren, Abfragen sowie zum Formatieren von JSON-Daten bereit. Weitere Informationen finden Sie in der [Json.NET-Dokumentation](https://www.newtonsoft.com/json/help/html/Introduction.htm).  
   
-In den C#-Beispielen wird dieser Bibliothek vor allem zur Serialisierung von Daten zwischen .NET-Objekten und HTTP-Nachrichtentexten genutzt. Obwohl die Bibliothek mehrere Möglichkeiten bereitstellt, um diese Aufgabe zu erfüllen, nutzen die Beispiele eine Vorgehensweise, bei der individuelle [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm)-Instanzen für Common Data Service-Entitätsinstanzen (Datensätze) erstellt werden.  Beispielsweise erstellt der folgende Code die Variable `contact1`, die eine Instanz von Common Data Service <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> darstellt, und stellt dann Werte für ausgewählte Eigenschaften für den Typ bereit.  
+In den C#-Beispielen wird dieser Bibliothek vor allem zur Serialisierung von Daten zwischen .NET-Objekten und HTTP-Nachrichtentexten genutzt. Obwohl die Bibliothek mehrere Möglichkeiten bereitstellt, um diese Aufgabe zu erfüllen, nutzen die Beispiele eine Vorgehensweise, bei der individuelle [JObject](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm)-Instanzen für Common Data Service-Entitätsinstanzen (Datensätze) erstellt werden.  Beispielsweise erstellt der folgende Code die Variable `contact1`, die eine Instanz von Common Data Service <xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> darstellt, und stellt dann Werte für ausgewählte Eigenschaften für den Typ bereit.  
   
 ```csharp  
   
@@ -87,7 +93,7 @@ contact1["jobtitle"] = "Junior Developer";
   
 ```  
   
- Die Verwendung der Klammernotation in der letzten Anweisung entspricht der [Hinzufügen](http://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Add.htm)-Methode. Diese Instanziierung kann auch über die statische Methode [Parse](http://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Parse.htm) erfolgen:  
+ Die Verwendung der Klammernotation in der letzten Anweisung entspricht der [Hinzufügen](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Add.htm)-Methode. Diese Instanziierung kann auch über die statische Methode [Parse](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Parse.htm) erfolgen:  
   
 ```csharp  
   

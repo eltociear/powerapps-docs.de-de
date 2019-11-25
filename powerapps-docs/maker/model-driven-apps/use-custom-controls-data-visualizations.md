@@ -1,6 +1,6 @@
 ---
-title: Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie benutzerdefinierte Steuerelemente für Felder verwenden'
+title: Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen in PowerApps | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie benutzerdefinierte Steuerelemente für Felder verwenden
 ms.custom: ''
 ms.date: 06/07/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 0d6064cd-4d38-4fc2-a564-735cb453a4b2
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756034"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Verwenden Sie benutzerdefinierte Steuerelemente für modellgesteuerte App-Datenvisualisierungen
 
@@ -30,7 +36,7 @@ In diesem Thema wird erläutert, wie Sie ein benutzerdefiniertes Steuerelement f
 Mit benutzerdefinierten Steuerelementen können Sie Komponenten der Benutzeroberfläche von Anwendungen, wie z. B. ein Feld oder eine Ansicht, die traditionell Text enthalten, in Visualisierungen umwandeln. Benutzerdefinierte Steuerelemente können für Felder, Formulare, Dashboards, Ansichten und Gitter konfiguriert werden. Beispielsweise kann ein Schiebereglersteuerelement auf einem Zahlenfeld konfiguriert werden.
 
    > [!div class="mx-imgBorder"] 
-   > ![Benutzerdefiniertes Schiebereglersteuerelement](media/slider-control.PNG "Schiebereglersteuerelement für ein Feld")
+   > ![Benutzerdefiniertes Schieberegler-Steuerelement](media/slider-control.PNG "Schieberegler-Steuerelement für ein Feld")
 
 Oder das bearbeitbare Rastersteuerelement kann auf eine Ansicht konfiguriert werden. 
 
@@ -42,7 +48,7 @@ Sie können ein benutzerdefiniertes Steuerelement so festlegen, dass es in einem
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Verwenden eines benutzerdefinierten Steuerelements, um einem Feld Visualisierungen hinzuzufügen  
  Durch die Schritte dieses Vorgangs werden die standardmäßige Label- und Textfeld-Felder im Feld **Budgetbetrag** in das Schiebereglersteuerelement der Verkaufschancenentität geändert. Sie können auf ähnliche Weise ein vorhandenes Feld mit einem benutzerdefinierten Steuerelement ersetzen oder ein benutzerdefiniertes Steuerelement für ein benutzerdefiniertes Feld konfigurieren.  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
      
 
@@ -57,7 +63,7 @@ Sie können ein benutzerdefiniertes Steuerelement so festlegen, dass es in einem
 5.  Wählen Sie auf der Seite "Steuerelement hinzufügen" das gewünschte Steuerelement aus, beispielsweise das hier gezeigte **Linearer Schieberegler** und klicken Sie dann auf **Hinzufügen**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Lineares Schiebereglersteuerelement hinzufügen](media/add-slider.PNG "Lineares Schiebereglersteuerelement hinzufügen")  
+   > ![Lineares Schieberegler-Steuerelement hinzufügen](media/add-slider.PNG "Lineares Schieberegler-Steuerelement hinzufügen")  
   
 6.  Wählen Sie den Client aus, auf dem das Steuerelement angezeigt werden soll.  
   
@@ -68,12 +74,12 @@ Sie können ein benutzerdefiniertes Steuerelement so festlegen, dass es in einem
     - **Tablet**. Um das benutzerdefinierte Steuerelement auf allen Tablets bereitzustellen, auf denen Dynamics 365 for tablets ausgeführt wird, wählen Sie die Option **Tablet** neben dem Steuerelement aus.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Auswählen der Clients-Apps zum Ansehen des benutzerdefinierten Steuerelements](media/choose-client.png "Auswählen der Clients-Apps zum Ansehen des benutzerdefinierten Steuerelements")  
+   > ![Wählen Sie die Client-Apps aus, um das benutzerdefinierte Steuerelement anzuzeigen](media/choose-client.png "Wählen Sie die Client-Apps aus, um das benutzerdefinierte Steuerelement anzuzeigen")  
   
-7.  Klicken Sie auf ![Symbol für das Bearbeiten der Eigenschaft des benutzerdefinierten Steuerelements](media/ccf-pencil-icon.png "Symbol für das Bearbeiten der Eigenschaft des benutzerdefinierten Steuerelements")-Bleistiftsymbol neben **Min.**, **Max.** und **Schritt**, legen Sie die unten beschriebene Eigenschaftenoption fest, und klicken Sie auf **OK**.  
+7.  Wählen Sie das ![Symbol für das Bearbeiten der Eigenschaft des benutzerdefinierten Steuerelements](media/ccf-pencil-icon.png "Symbol für das Bearbeiten der Eigenschaft des benutzerdefinierten Steuerelements")-Stiftsymbol neben **Min.**, **Max.** und **Schritt** aus, legen Sie die unten beschriebene Eigenschaftsoption fest, und wählen Sie **OK** aus.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Eigenschaften des benutzerdefinierten Steuerelements hinzufügen](media/ccf-add-properties.png "Eigenschaften des benutzerdefinierten Steuerelements hinzufügen")
+   > ![Hinzufügen von benutzerdefinierten Steuerelementeigenschaften](media/ccf-add-properties.png "Hinzufügen von benutzerdefinierten Steuerelementeigenschaften")
   
    - **Min.**. Legen Sie den minimalen gültigen Wert fest. Sie können einen statischen Wert binden, den Sie eingeben oder den Wert an ein vorhandenes Feld binden. In diesem Beispiel ist **An statischen Wert binden** **Währung** und der minimale Wert, der eingegeben werden kann, ist *Null*.  
   
@@ -103,7 +109,7 @@ Sie können ein benutzerdefiniertes Steuerelement so festlegen, dass es in einem
  Öffnen Sie einen Datensatz, der das Feld mit dem benutzerdefinierten Steuerelement enthält, beispielsweise das Verkaufschancenformular aus dem vorherigen Beispiel, und sehen Sie sich an, wie sich das Feld geändert hat.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Schiebereglersteuerelement auf dem Formular gerendert](media/slider-control.PNG "Schiebereglersteuerelement auf dem Formular gerendert")  
+   > ![Schieberegler-Steuerelement auf Formular angezeigt](media/slider-control.PNG "Schieberegler-Steuerelement auf Formular angezeigt")  
   
  Das Feld ist nun als Schiebereglersteuerelement und nicht als Textfeld gerendert. 
 

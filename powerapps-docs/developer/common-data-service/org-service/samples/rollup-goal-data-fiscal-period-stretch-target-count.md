@@ -1,19 +1,25 @@
 ---
-title: 'Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl (Common Data Service) | Microsoft Docs'
+title: 'Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl (Common Data Service) | Microsoft-Dokumentation'
 description: Dieses Beispiel veranschaulicht das Rollup von Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 747691cdff9504a5c2ddc00da66f405a896a3518
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748715"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>Beispiel: Rollup für Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl
 
@@ -21,7 +27,7 @@ search.app:
 
 Dieses Beispiel zeigt, wie ein Rollup der Zieldaten für eine Buchhaltungsperiode für die Streckungszielanzahl zum Darstellen einiger abgeschlossener Telefonanrufe durchgeführt wird. Sie können das Beispiel [hier](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GoalDataForFiscalYear) herunterladen.
 
-Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die drei erforderliche Benutzer manuell**wie dargestellt** in **Office 365**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
+Dieses Beispiel benötigt weitere Benutzer, die nicht in Ihrem System sind. Erstellen Sie die drei erforderliche Benutzer manuell **wie besehen** (siehe unten) in **Office 365**. Ersetzen Sie `yourorg` durch den Namen Ihrer Organisation.
 
 **Vorname**: Nancy<br/>
 **Nachname**: Anderson<br/>
@@ -53,7 +59,7 @@ Um das unter [Was macht dieses Beispiel](#what-this-sample-does), beschriebene S
 ### <a name="setup"></a>Einrichten
 
 1. Tests für die Version der Organisation.
-2. Ruft den Vertriebsmanager und 2 Vertriebsmitarbeiter ab, die manuell in **Office 365** erstellt werden.
+2. Ruft den Vertriebsmanager und 2 Vertriebsmitarbeiter ab, die manuell in **Office 365** erstellt werden.
 3. Erstellt einen `PhoneCall`-Datensatz und den unterstützenden Firmendatensatz für das Beispiel.
 4. Erstellt ActivityPartys für das Feld **Von** von Telefonanrufen.
 5. Erstellt einen offenen Telefonanruf.

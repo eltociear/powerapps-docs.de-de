@@ -1,6 +1,6 @@
 ---
 title: Entwicklung von IPlugin-Implementierungen als zustandslos | MicrosoftDocs
-description: 'Mitglieder von Klassen, die IPlugin implementieren, sind potenziellen Thread-Sicherheitsproblemen ausgesetzt, die zu Dateninkonsistenz- oder Performanceproblemen führen können.'
+description: Mitglieder von Klassen, die IPlugin implementieren, sind potenziellen Thread-Sicherheitsproblemen ausgesetzt, die zu Dateninkonsistenz- oder Performanceproblemen führen können.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 9/05/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9a0a91420cf29a2f44e8d1f32520e7fb529e07eb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753062"
 ---
 # <a name="develop-iplugin-implementations-as-stateless"></a>Entwicklung von IPlugin-Implementierungen als zustandslose Systeme
 
@@ -204,4 +210,4 @@ Ein weiterer Grund, warum IPlugins zustandslos sein sollten, ist, dass mehrere S
 ### <a name="see-also"></a>Siehe auch
 
 [Schreiben eines Plug-Ins](../../write-plug-in.md)<br />
-[CRM Team Blog: Thread-Sicherheit in Plug-Ins](http://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />
+[CRM Team Blog: Thread-Sicherheit in Plug-Ins](https://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />

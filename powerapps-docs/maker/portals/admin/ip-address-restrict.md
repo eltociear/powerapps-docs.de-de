@@ -1,6 +1,6 @@
 ---
-title: Einschränken des Zugriffs auf ein Portal mithilfe der IP-Adresse | MicrosoftDocs
-description: Anweisungen zum Einschränken des Portal Zugriffs durch die IP-Adresse.
+title: Beschränken des Zugangs auf ein Portal mithilfe der IP-Adresse | MicrosoftDocs
+description: Anleitung zum Einschränken des Portalzugriffs mit IP-Adressen.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,66 +11,66 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: da8e6ac6d4e86a12ba196393073706c3705e4a92
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543014"
+ms.locfileid: "2756122"
 ---
-# <a name="restrict-portal-access-by-ip-address"></a>Einschränken des Portal Zugriffs durch IP-Adresse
+# <a name="restrict-portal-access-by-ip-address"></a>Einschränken des Portalzugriffs mit IP-Adressen
 
-Das Portal ist bei der Bereitstellung öffentlich und kann von jedem beliebigen Computer zugänglich gemacht werden. Nun können Sie den Zugriff auf Ihr Portal aus einer Liste von IP-Adressen einschränken. Beispielsweise kann es sein, dass eine Regierungsorganisation ihren Inhalt nur innerhalb Ihres Unternehmensnetzwerks übernehmen möchte. Eine kommerzielle Organisation möchte das Portal möglicherweise nur dann anzeigen, wenn es veröffentlicht wird, und nicht während der Entwicklung, um Datenverluste zu vermeiden.
+Das Portal ist öffentlich, wenn es bereitgestellt und von jedem von jedem Computer aus zugänglich ist. Jetzt können Sie Zugriff auf das Portal von einer Liste von IP-Adressen beschränken. Beispielsweise möchte eine Regierungsorganisation den Inhalt nur im Firmennetzwerks zur Verfügung stellen. Eine Handelsorganisation will das Portal nur anzeigen, wenn es veröffentlicht ist und nicht während es scih in der Entwicklung befindet, um Datenenverluste zu vermeiden.
 
-Wenn eine Anforderung an das Portal von einem beliebigen Benutzer generiert wird, wird die IP-Adresse anhand der Zulassungsliste ausgewertet. Wenn die IP-Adresse nicht in der Liste enthalten ist, zeigt das Portal eine Webseite mit dem Statuscode HTTP 403 an.
+Wenn eine Anfrage mit dem Portal von einem beliebigen Benutzer erstellt wird, wird ihre IP-Adresse für die Zulassungsliste ausgewertet. Wenn die IP-Adresse nicht in der Liste angezeigt wird, wird das Portal einer Webseite mit einem 403-Statuscode angezeigt.
 
-Um IP-Adressen hinzuzufügen oder zu entfernen, müssen Sie eine der folgenden Rollen zuweisen:
-- Office 365 (globaler Administrator) 
-- Dienst Administrator. Weitere Informationen: [Verwenden der Dienst Administrator Rolle zum Verwalten Ihres](https://technet.microsoft.com/library/mt793847.aspx) Mandanten  
-- System Administrator der Common Data Service Umgebung, die für das Portal ausgewählt wurde
+Um IP-Adressen hinzufügen oder zu entfernen, müssen Sie einer der folgenden Aufgaben zugewiesen werden:
+- Globaler Office 365-Administrator 
+- -Dienstadministrator. Mehr Informationen: [Verwenden Sie die Service-Administrationsrolle, um Ihren Mandanten zu verwalten](https://technet.microsoft.com/library/mt793847.aspx).  
+- Systemadministrator der Common Data Service-Umgebung, die für das Portal ausgewählt ist
 
-## <a name="add-an-ip-address"></a>IP-Adresse hinzufügen
+## <a name="add-an-ip-address"></a>Eine IP-Adresse hinzufügen
 
-Um den Zugriff auf ein Portal über eine IP-Adresse oder einen Satz von IP-Adressen zuzulassen, können Sie die IP-Adressen der Liste hinzufügen. Dies ermöglicht den Zugriff auf das Portal nur aus der Liste der hinzugefügten IP-Adressen. Wenn Sie keine IP-Adresse hinzufügen, kann auf das Portal von allen IP-Adressen aus zugegriffen werden.
+Um den Zugriff zu einem Portal von einer IP-Adresse oder einem Satz IP-Adressen zu erlauben, können Sie die IP-Adressen der Liste hinzufügen. Dies ermöglicht das nur über die Liste der hinzugefügten IP-Adressen zugegriffen werden, das. Sofern Sie keine IP-Adresse hinzufügen, ist das Portal von allen IP-Adressen verfügbar.
 
-Nachdem Sie der Einschränkungs Liste eine IP-Adresse hinzugefügt haben, ist nur die angegebene IP-Adresse auf das Portal zugreifen. Wenn Sie versuchen, über eine andere IP-Adresse auf das Portal zuzugreifen, wird der Zugriff verweigert, und eine Webseite mit dem Statuscode HTTP 403 wird angezeigt. Der Inhalt dieser Webseite ist statisch und kann nicht geändert werden.
+Wenn Sie eine IP-Adresse einer Einschränkungsliste hinzufügen, ist das Portal nur für die angegebene IP-Adresse verfügbar. Wenn Sie versuchen, auf das Portal von allen anderen IP-Adressen zuzugreifen, wird der Zugriff und eine Webseite mit einem 403-Statuscode angezeigt. Der Inhalt der Webseite ist statisch und kann nicht geändert werden.
 
 > [!div class=mx-imgBorder]
-> ![HTML 403-Fehler](../media/ip-address-page-error.png "HTML 403-Fehler")  
+> ![HTML 403 Fehler](../media/ip-address-page-error.png "HTML 403 Fehler")  
 
 > [!NOTE]
-> Sie müssen eine öffentliche IP-Adresse angeben, auf die über das Portal zugegriffen werden kann. Der Zugriff auf die private IP-Adresse ist über das Portal nicht möglich.
+> Sie müssen einen öffentlichen IP-Adresse angeben, auf die über das Portal zugegriffen werden kann. Auf Private IP-Adresse kann nicht über das Portal zugegriffen werden.
 
-1.  Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-2.  Wechseln Sie zu **Einrichten der IP-Adress Einschränkung**. Eine Liste mit IP-Adressen und deren Typ wird angezeigt.
+2.  Gehen Sie zu **IP-Adresseinschränkung einrichten** Eine Liste von IP-Adressen und ihr Typ wird angezeigt.
 
     > [!div class=mx-imgBorder]
-    > ![Einrichten der IP-Adress Einschränkung](../media/set-up-ip-address-restrict.png "Einrichten einer IP-Adresseinschränkung")
+    > ![IP-Adresseinschränkung einrichten](../media/set-up-ip-address-restrict.png "IP-Adresseinschränkung einrichten")
 
-3.  Wählen Sie auf der Seite Einschränkungen für IP-Adressen einrichten die Option **Neu hinzufügen**aus.
+3.  Wählen Sie auf der Seite IP-Adressbeschränkung einrichten die Option **Neu hinzufügen**.
 
-4.  Geben Sie im Fenster IP-Adresse hinzufügen die folgenden Werte ein:
+4.  Im Fenster "Geben Sie eine IP-Adressen ein" geben Sie die folgenden Werte ein:
 
-    - **Typ der IP-Adresse auswählen**: Wählen Sie aus, ob die IP-Adresse IPv4 oder IPv6 ist.
+    - **Wählen Sie die IP-Adresse aus**: Wählen Sie aus, ob die IP-Adresse IPv4 oder IPv6 ist.
 
-    - **IP-Adresse in CIDR-Notation angeben**: Geben Sie die IP-Adresse in CIDR-Notation an. Weitere Informationen: [Classless Inter-Domain Routing](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+    - **IP-Adresse in CIDR-Notation angeben**: Geben Sie die IP-Adresse CIDR-Notation an. Weitere Informationen: [Klassenlose domänenübergreifende Weiterleitung](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
 
       > [!div class=mx-imgBorder]
-      > ![IP-Adresse hinzufügen](../media/add-ip-address.png "IP-Adresse hinzufügen")    
+      > ![Eine IP-Adresse hinzufügen](../media/add-ip-address.png "Eine IP-Adresse hinzufügen")    
 
-5.  Wählen Sie **Konfigurieren**aus.
+5.  Wählen Sie **Konfigurieren** aus.
 
-## <a name="remove-an-ip-address"></a>Entfernen einer IP-Adresse
+## <a name="remove-an-ip-address"></a>Eine IP-Adresse entfernen
 
-Um den Zugriff auf ein Portal aus einer zuvor zulässigen IP-Adresse zu entfernen, können Sie die IP-Adresse aus der Liste entfernen. Wenn Sie alle IP-Adressen entfernen, kann auf das Portal von allen IP-Adressen aus zugegriffen werden.
+Um den Zugriff in einem Portal von einer zuvor zulässigen IP-Adresse zu entfernen, können Sie die IP-Adresse aus der Liste entfernen. Wenn Sie alle IP-Adresse entfernen, ist ist das Portal von allen IP-Adressen aus verfügbar.
 
-1.  Öffnen Sie das [powerapps-Portal Admin Center](admin-overview.md).
+1.  Öffnen Sie das [Admin Center für PowerApps-Portale](admin-overview.md).
 
-2.  Wechseln Sie zu **Einrichten der IP-Adress Einschränkung**. Eine Liste mit IP-Adressen und deren Typ wird angezeigt.
+2.  Gehen Sie zu **IP-Adresseinschränkung einrichten** Eine Liste von IP-Adressen und ihr Typ wird angezeigt.
 
     > [!div class=mx-imgBorder]
-    > ![Einrichten der IP-Adress Einschränkung](../media/set-up-ip-address-restrict.png "Einrichten einer IP-Adresseinschränkung")
+    > ![IP-Adresseinschränkung einrichten](../media/set-up-ip-address-restrict.png "IP-Adresseinschränkung einrichten")
 
-3.  Wählen Sie neben der zu entfernenden IP-Adresse die **Option IP-Adresse (x) entfernen** aus.
+3.  Wählen Sie **Eine IP-Adresse entfernen (x)** neben der IP-Adresse, die entfernt werden soll.
 
 4.  Wählen Sie in der Bestätigungsmeldung **Entfernen** aus.
 

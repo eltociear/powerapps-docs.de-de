@@ -1,6 +1,6 @@
 ---
-title: 'Organisieren Ihres Teams, um Lösungen zu entwickeln (Common Data Service) | Microsoft Docs'
-description: 'Dieses Dokument enthält einige Strategien, die verwendet werden, wenn mehrere Entwickler an derselben Lösung arbeiten'
+title: Organisieren Ihres Teams, um Lösungen zu entwickeln (Common Data Service) | Microsoft Docs
+description: Dieses Dokument enthält einige Strategien, die verwendet werden, wenn mehrere Entwickler an derselben Lösung arbeiten
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a53a0d1568e271ec49b44d757666d0365c246ec6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752662"
 ---
 # <a name="organize-your-team-to-develop-solutions"></a>Organisieren des Teams zum Entwickeln von Lösungen
 
@@ -44,7 +50,7 @@ Wenn mehrere Entwickler an derselben Lösung arbeiten müssen, sollten Sie mögl
   
 <a name="BKMK_DeployingSolutionsFromDevThroughToProduction"></a>   
 ## <a name="deploy-solutions-from-development-through-test-and-production-environments"></a>Stellen Sie Lösungen aus der Entwicklung über Test- und Produktionsumgebungen bereit.  
- In den Entwicklungsorganisationen werden Lösungen in verschiedenen Test- und Bereitstellungsumgebungen zur Analyse bereitgestellt, bevor sie in einer Produktionsumgebung bereitgestellt werden. Das Whitepaper [Bereitstellung von Microsoft Dynamics CRM 2011 und CRM Online Lösungen - von der Entwicklung über Test- und Produktionsumgebungen](http://go.microsoft.com/fwlink/p/?LinkId=232288) untersucht, wie man reale Dynamics 365-Lösungen in Test- und Produktionsumgebungen zuverlässig und wiederholbar durch Automatisierung einsetzt. Das Whitepaper hebt zudem bestimmte Einschränkungen hervor, die vorhanden sind, wenn Sie Lösungen in Common Data Service bereitstellen und testen.  
+ In den Entwicklungsorganisationen werden Lösungen in verschiedenen Test- und Bereitstellungsumgebungen zur Analyse bereitgestellt, bevor sie in einer Produktionsumgebung bereitgestellt werden. Das Whitepaper [Bereitstellung von Microsoft Dynamics CRM 2011 und CRM Online Lösungen - von der Entwicklung über Test- und Produktionsumgebungen](https://go.microsoft.com/fwlink/p/?LinkId=232288) untersucht, wie man reale Dynamics 365-Lösungen in Test- und Produktionsumgebungen zuverlässig und wiederholbar durch Automatisierung einsetzt. Das Whitepaper hebt zudem bestimmte Einschränkungen hervor, die vorhanden sind, wenn Sie Lösungen in Common Data Service bereitstellen und testen.  
   
 ### <a name="see-also"></a>Siehe auch  
  [Planen für Lösungsentwicklung](/dynamics365/customer-engagement/developer/plan-solution-development)   

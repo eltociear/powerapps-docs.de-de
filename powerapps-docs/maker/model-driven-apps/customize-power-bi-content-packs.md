@@ -1,29 +1,34 @@
 ---
 title: Anpassen von Dynamics 365 Power BI Inhaltspaketen | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie die verfügbaren Power BI-Inhaltspakete für die Verwendung mit Dynamics 365-Daten ändern können.'
+description: Erfahren Sie, wie Sie die verfügbaren Power BI-Inhaltspakete für die Verwendung mit Dynamics 365-Daten ändern können.
 keywords: PBI
 ms.date: 09/30/2017
 ms.service: crm-online
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 for Customer Engagement (online)
+- Dynamics 365 for Customer Engagement (online)
 ms.assetid: 424d7f29-de44-4ce0-94f1-be8777ad6485
 author: Mattp123
 ms.author: matp
 manager: amyla
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 16
 topic-status: Drafting
-tags: null
+tags: ''
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 929230a38cf0c9ea1dc23b98550c45fa54f18545
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753819"
 ---
-
 # <a name="customize-dynamics-365-apps-power-bi-content-packs"></a>Anpassen von Dynamics 365 Apps Power BI Inhaltspaketen
 
 Power BI ist umfassende Sammlung an Diensten und Tools, die Sie verwenden, um Ihre Geschäftsdaten darzustellen.  Es sind Content-Pakete verfügbar, die es einfach machen, die Daten der Dynamics 365 Sales-, Service- und Marketing-Apps mit Power BI auf Basis eines Standard-Datenmodells zu visualisieren und zu analysieren. Die Inhaltspakete bestehen aus einer Reihe von Entitäten und Feldern, die für die meisten Sales-, Service- und Marketing-Berichtsszenarien nützlich sind.  
@@ -37,17 +42,17 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
 ### <a name="meet-the-requirements"></a>Erfüllen der Anforderungen  
   
-- [Power BI-Serviceregistrierung](http://powerbi.com/).  
+- [Power BI-Serviceregistrierung](https://powerbi.com/).  
   
 - [Power BI Desktop](https://powerbi.microsoft.com/desktop)-Anwendung zu Bearbeitung von Power BI-Berichten  
   
 - PBIX-Datei für das Content Pack, das Sie anpassen möchten.  
   
-  -   [Laden Sie den Dynamics CRM Online Sales Manager PBIX herunter](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
+  -   [Laden Sie den Dynamics CRM Online Sales Manager PBIX herunter](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Sales%20Manager.pbix)  
   
-  -   [Laden Sie den Dynamics CRM Online Service Manager PBIX herunter](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
+  -   [Laden Sie den Dynamics CRM Online Service Manager PBIX herunter](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Customer%20Service%20Manager.pbix)  
   
-  -   [Laden Sie den Microsoft Dynamics 365 Prozessanalysator PBIX herunter](http://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Process%20Analyzer%20-1.34b.pbix)  
+  -   [Laden Sie den Microsoft Dynamics 365 Prozessanalysator PBIX herunter](https://download.microsoft.com/download/9/2/B/92BCBDCE-CE01-4BC9-A306-2A92653B683E/Process%20Analyzer%20-1.34b.pbix)  
   
   Dynamics 365 Content Packs werden derzeit nur in der US-amerikanischen Sprache unterstützt.  
   
@@ -74,7 +79,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
 5. Wenn das Dialogfeld Zugriff auf einen OData-Feed erscheint, wählen Sie **Organisationskonto** und dann **Anmeldung**.  
   
-   ![Zugriff auf einen OData-Feed-Dialog](media/pbi-odata-signin.PNG "Zugriff auf einen OData-Feed-Dialog")  
+   ![Zugreifen auf einen OData-Feeddialog](media/pbi-odata-signin.PNG "Zugreifen auf einen OData-Feeddialog")  
   
 6. Wenn die Anmeldeseite angezeigt wird, geben Sie Ihre Anmeldeinformationen ein, um sich bei Ihrer Instanz zu authentifizieren.  
   
@@ -104,7 +109,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
 3. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift, z.B. *Voraussichtliches Abschlussdatum*, zeigen Sie auf **Typ ändern** und wählen dann einen anderen Datumstyp, beispielsweise **Datum**, aus.  
   
-   ![Datentyp ändern in Power BI Desktop](media/pbi-changeformat.PNG "Datentyp ändern in Power BI Desktop")  
+   ![Datentyp nach Power BI Desktop](media/pbi-changeformat.PNG "Datentyp nach Power BI Desktop ändern") ändern  
   
 4. Wählen Sie **Schließen & Anwenden**, um den Abfrageeditor zu schließen.  
   
@@ -121,7 +126,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
 2. Wählen Sie im linken Navigationsbereich des Abfrage-Editors unter **Abfragen** die Abfrage aus, die das benutzerdefinierte Feld enthält, das Sie für Berichte zur Verfügung stellen möchten, wie beispielsweise die Entitätsabfrage **Chance**.  
   
-3. Wählen Sie im rechten Bereich unter **ANGEWENDETE SCHRITTE** die Einstellungsschaltfläche ![Einstellungsschaltfläche](media/mp-ua-r16-settings.png "Einstellungsschaltfläche") neben **Andere Spalten entfernt**.  
+3. Wählen Sie im rechten Bereich unter **ANGEWENDETE SCHRITTE** die Einstellungsschaltfläche ![Einstellungsschaltfläche](media/mp-ua-r16-settings.png "Schaltfläche Einstellungen") neben **Andere Spalten entfernt**.  
   
 4. Die Liste **Spalten auswählen** zeigt alle Felder für die Entität, einschließlich benutzerdefinierter Felder. Wählen Sie das gewünschte benutzerdefinierte Feld aus und wählen Sie dann **OK**.  
   
@@ -133,7 +138,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
    {"int_forecast","Forecast"}  
    ```  
   
-   ![Eine Zuordnung für ein benutzerdefiniertes Feld in einem Bericht hinzufügen](media/pbi-addfieldmapping.png "Eine Zuordnung für ein benutzerdefiniertes Feld in einem Bericht hinzufügen")  
+   ![Fügen Sie der Zuordnung für ein benutzerdefiniertes Feld in einen Bericht hinzu](media/pbi-addfieldmapping.png "Fügen Sie der Zuordnung für ein benutzerdefiniertes Feld in einen Bericht hinzu")  
   
 6. Nachdem Sie die Feldzuordnung hinzugefügt haben, stellen Sie sicher, dass es keine Syntaxfehler gibt, die am Ende des erweiterten Editor angezeigt werden. Stellen Sie auch sicher sicher, dass der Feldname genauso angezeigt wird, wie in der Spaltenüberschrift, einschließlich der richtigen Groß-/Kleinschreibung. Wenn keine Syntax- oder Tabellenfehler erkannt werden, wählen Sie **Beendet**.  
   
@@ -175,13 +180,13 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
 4. URL-codieren Sie den aktualisierten Fetch XML-Code. Der Fetch XML-Code, der das neue benutzerdefinierte Attribut enthält, muss codiert sein, um die vorhandene OData-Feedabfrage zu ersetzen, die im Content Pack enthalten ist. Kopieren Sie dazu den aktualisierten Fetch XML-Code in die Zwischenablage und fügen Sie ihn in einen URL-Encoder ein.  
   
-5. Fügen Sie die codierte Fetch XML-URL in den OData-Feed ein. Fügen Sie dazu die kodierte URL zwischen den Anführungszeichen nach dem Text **Query=[fetchXml=** ein und ersetzen Sie die vorhandene kodierte FetchXML, und wählen Sie dann **Beendet**.  
+5. Fügen Sie die codierte Fetch XML-URL in den OData-Feed ein. Fügen Sie dazu die kodierte URL zwischen den Anführungszeichen nach dem Text **Query=fetchXml=** ein und ersetzen Sie die vorhandene kodierte FetchXML, und wählen Sie dann **Beendet**.  
   
     Der unten gezeigte Screenshot gibt an, wo sich das am weitesten links stehende Anführungszeichen befindet.  
   
-   ![Einfügen einer codierten URL in den OData-Feed](media/pbi-acct-encoded-url.PNG "Einfügen einer codierten URL in den OData-Feed")  
+   ![Fügen Sie die codierte URL in OData-Feed ein](media/pbi-acct-encoded-url.PNG "Fügen Sie die codierte URL in OData-Feed ein")  
   
-6. Wählen Sie im rechten Bereich unter **ANGEWENDETE SCHRITTE** die Einstellungsschaltfläche ![Einstellungsschaltfläche](media/mp-ua-r16-settings.png "Einstellungsschaltfläche") neben **Andere Spalten entfernt**.  
+6. Wählen Sie im rechten Bereich unter **ANGEWENDETE SCHRITTE** die Einstellungsschaltfläche ![Einstellungsschaltfläche](media/mp-ua-r16-settings.png "Schaltfläche Einstellungen") neben **Andere Spalten entfernt**.  
   
 7. Die "Auswählen"-Spaltenliste zeigt alle Felder der Entität an, einschließlich der benutzerdefinierten Felder, aufführt. Wählen Sie das benutzerdefinierte Feld, wie z.B. *Klassifizierungscode*, das Sie zuvor der XML-Abfrage Fetch hinzugefügt haben, und wählen Sie dann **OK**.  
   
@@ -198,7 +203,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
 ## <a name="add-a-custom-option-set-field-to-a-report"></a>Ein benutzerdefinierte Feld "Optionssatz" einem Bericht hinzufügen  
  Optionssatzfelder ermöglichen die Auswahl aus mehreren Werten. Beispiele für vordefinierten Optionssatzfelder sind das "Bewertung"- und "Vertriebsphase"-Feld für eine Verkaufschance. Stellen Sie sich vor, Sie haben ein benutzerdefiniertes Optionsfeld auf dem Formular der Hauptchance, das die folgenden Werte und Bezeichnungen enthält.  
   
- ![Beispiel für einen benutzerdefinierten Optionssatz](media/pbi-custom-option-set-example.PNG "Beispiel für einen benutzerdefinierten Optionssatz")  
+ ![Benutzerdefiniertes Optionssatzbeispiel](media/pbi-custom-option-set-example.PNG "Benutzerdefiniertes Optionssatzbeispiel")  
   
  Um das benutzerdefinierte Feld "Optionssatz" einem Bericht hinzufügen, gehen Sie folgendermaßen vor.  
   
@@ -206,7 +211,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
    -   Wählen Sie im linken Navigationsbereich des Abfrageeditors unter **Abfragen** die Entität aus, für die die zugehörige benutzerdefinierte Option eingestellt ist, wie z.B. die Entität *Chance*.  
   
-   -   Wählen Sie im rechten Bereich unter **ANGEWENDETE SCHRITTE** die Einstellungsschaltfläche ![Einstellungsschaltfläche](media/mp-ua-r16-settings.png "Einstellungsschaltfläche") neben **Andere Spalten entfernt**.  
+   -   Wählen Sie im rechten Bereich unter **ANGEWENDETE SCHRITTE** die Einstellungsschaltfläche ![Einstellungsschaltfläche](media/mp-ua-r16-settings.png "Schaltfläche Einstellungen") neben **Andere Spalten entfernt**.  
   
    -   Die "Auswählen"-Spaltenliste zeigt alle Felder der Entität an, einschließlich der benutzerdefinierten Felder, aufführt. Wählen Sie das benutzerdefinierte Feld, z.B. *new_customoptionset*, und wählen Sie dann **OK**.  
   
@@ -224,7 +229,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
         Die Optionssatzabfrage wird angezeigt.  
   
-   ![Eine Optionssatzabfrage erstellen](media/pbi-makeoptionsetquery.png "Eine Optionssatzabfrage erstellen")  
+   ![Erstellen einer Optionssatzabfrage](media/pbi-makeoptionsetquery.png "Erstellen einer Optionssatzabfrage")  
   
    4.  Kopieren Sie die gesamte Abfrage in die Zwischenablage. Sie können sie in einen Text-Editor ,z.B. Notepad, einfügen, um sie für Referenzzwecke zu speichern.  
   
@@ -270,7 +275,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
    3.  Wählen Sie im Dialogfeld Zusammenführen die Spaltenüberschrift für das benutzerdefinierte Optionsset, z. B. *new_optionset*. Wählen Sie in der Dropdownliste die entsprechende Optionssatzabfrage aus, die Sie zuvor erstellt haben.  Wenn die Tabelle der Optionssätze erscheint, wählen Sie die Spaltenüberschrift **Wert**, um sie auszuwählen.  
   
-   ![Tabellenauswahlen zusammenführen](media/pbi-merge-tables.png "Tabellenauswahlen zusammenführen")  
+   ![Tabellenauswahl zusammenführen](media/pbi-merge-tables.png "Tabellenauswahl zusammenführen")  
   
    4.  Lassen Sie die Art der Verbindung als **Linke Außenseite (alle von der ersten, übereinstimmend von der zweiten)**, und wählen Sie dann **OK**.  
   
@@ -289,7 +294,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
    5.  Löschen Sie im Dialog "Neue Spalte erweitern" die Spalte, die den Werten entspricht (da nur die Bezeichnungen in der Spalte angezeigt werden sollen). **Fertig** auswählen  
   
-   ![Auswählen der Spalte, die die Beschriftung darstellt](media/pbi-expand-column.png "Auswählen der Spalte, die die Beschriftung darstellt")  
+   ![Wählen Sie die Spalte aus, die die Beschriftung darstellt](media/pbi-expand-column.png "Wählen Sie die Spalte aus, die die Beschriftung darstellt")  
   
    6.  Wählen Sie **Speichern**, und wählen Sie dann bei Aufforderung **Anwenden**.  
   
@@ -301,7 +306,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
    3.  Fügen Sie eine umbenannte Spaltenposition hinzu, stellen Sie sicher, dass keine Syntaxfehler vorliegen, und wählen Sie dann **Beendet**. In diesem Beispiel lautet der benutzerdefinierte Optionssatzspaltenname, der zuvor erstellt wurde, **NewColumn** und wurde umbenannt in *Benutzerdefinierter Optionssatz*.  
   
-   ![Umbenennen einer Spalte für die anzeige in Berichten](media/pbi-rename-column.png "Umbenennen einer Spalte für die anzeige in Berichten")  
+   ![Umbenennen einer Spalte, die in Berichten angezeigt werden soll](media/pbi-rename-column.png "Umbenennen einer Spalte, die in Berichten angezeigt werden soll")  
   
    4.  Wählen Sie **Speichern**, und wählen Sie dann bei Aufforderung **Anwenden**.  
   
@@ -328,7 +333,7 @@ Bevor Sie ein Content Pack anpassen, lesen Sie die hier aufgeführten Informatio
   
 6. Suchen Sie den **>100,000**-Bereich dieses Schritts.  
   
-   ![Zeilenzählerwert erhöhen](media/pbi-increaserowcount.png "Zeilenzählerwert erhöhen")  
+   ![Erhöhen des Zeilenzählwerts](media/pbi-increaserowcount.png "Erhöhen des Zeilenzählwerts")  
   
 7. Erhöhen Sie den Wert auf eine größere Anzahl, zum Beispiel *150.000*.  
   

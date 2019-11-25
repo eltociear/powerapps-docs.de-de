@@ -1,6 +1,6 @@
 ---
-title: Nutzen von XRM-Tooling zum Erstellen von Daten (Common Data Service) | Microsoft Docs
-description: 'Verwenden der CrmServiceClient-Klasse, um Daten in Common Data Service zu erstellen'
+title: Verwendung von XRM-Tools zum Erstellen von Daten (Common Data Service) | Microsoft-Dokumentation
+description: Verwenden der CrmServiceClient-Klasse, um Daten in Common Data Service zu erstellen
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: f6a03552-1f07-4d4b-b7ae-fa246a0d7c29
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0ff7b7c8b1e6833a705d3a6f49e48b8518342763
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748490"
 ---
 # <a name="use-xrm-tooling-to-create-data"></a>Verwendung von XRM-Tooling zum Erstellen von Daten
 
@@ -27,7 +33,7 @@ Es gibt sieben Möglichkeiten, um in der <xref:Microsoft.Xrm.Tooling.Connector.C
   
 ## <a name="createnewrecord"></a>CreateNewRecord  
 
-Diese Methode wird verwendet, um Entitätsdaten jeden Typs in Common Data Service zu erstellen. Um sie zu verwenden, müssen Sie den Schemanamen der Entität, in der Sie einen Datensatz erstellen möchten, können, und Sie müssen eine Datennutzlast für die Übergane erstellen. In diesem Beispiel wird ein Kontodatensatz erstellt.
+Diese Methode wird verwendet, um Entitätsdaten jedes Typs in Common Data Service zu erstellen. Um sie zu verwenden, müssen Sie den Schemanamen der Entität, in der Sie einen Datensatz erstellen möchten, können, und Sie müssen eine Datennutzlast für die Übergane erstellen. In diesem Beispiel wird ein Kontodatensatz erstellt.
 
 ```csharp
 CrmServiceClient svc = new CrmServiceClient("connectionstring");  
@@ -98,4 +104,4 @@ else
 ### <a name="see-also"></a>Siehe auch  
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Verwenden der XRM-Tooling-API zur Ausführung von Aktionen in Common Data Service](use-xrm-tooling-execute-actions.md)
+[Use XRM Tooling API to execute actions in Common Data Service](use-xrm-tooling-execute-actions.md)

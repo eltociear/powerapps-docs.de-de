@@ -1,6 +1,6 @@
 ---
 title: Entwickler-Tools (modellgesteuerte Anwendungen) | Microsoft Docs
-description: 'Enthält Informationen über die von der Community entwickelten Tools, die Sie mit modellgesteuerten Anwendungen in PowerApps verwenden können.'
+description: Enthält Informationen über die von der Community entwickelten Tools, die Sie mit modellgesteuerten Apps in PowerApps verwenden können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1288b04acee069345f15efbc3925229315fd83f7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748755"
 ---
 # <a name="developer-tools"></a>Entwicklertools
 
@@ -26,7 +32,7 @@ Nachfolgend finden Sie eine ausgewählte Liste von Community-Tools, die über di
 |[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/)|Exportiert und importiert Übersetzungen mit Kontextinformationen.|
 |[Exportieren nach Excel](https://www.xrmtoolbox.com/plugins/Ryr.XrmToolBox.ExportToExcel/)|Exportieren Sie Datensätze aus der ausgewählten Ansicht/Fetchxml einfach nach Excel.|
 |[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)|Verwalten Sie benutzerdefinierte Entitäts-Symbole in einem einzigen Bildschirm.|
-|[Menüband-Workbench 2016](https://www.xrmtoolbox.com/plugins/RibbonWorkbench2016/)|Bearbeiten Sie das Dynamics CRM-Menüband oder -Befehlsleiste aus XrmToolbox heraus|
+|[Menüband-Workbench 2016](https://www.xrmtoolbox.com/plugins/RibbonWorkbench2016/)|Bearbeiten Sie das Dynamics CRM Menüband oder die Befehlsleiste aus XrmToolbox heraus|
 |[Ansicht-Designer](https://www.xrmtoolbox.com/plugins/Cinteros.XrmToolBox.ViewDesigner/)|Einfache Benutzeroberfläche zum Entwerfen von Ansichtslayouts und Ändern von Abfragen mit FetchXML-Generator|
 |[Ansichts-Layout-Replikator](https://www.xrmtoolbox.com/plugins/MsCrmTools.ViewLayoutReplicator/)|Gleiches Layout auf mehrere Ansichten derselben Entität in einem einzigen Vorgang anwenden|
 |[WebResources-Manager](https://www.xrmtoolbox.com/plugins/MsCrmTools.WebResourcesManager/)|Einfache Verwaltung Ihrer Webressourcen|

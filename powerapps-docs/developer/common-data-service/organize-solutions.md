@@ -1,6 +1,6 @@
 ---
-title: Organisieren von Lösungen (Common Data Service) | Microsoft Docs
-description: 'Dieses Dokument enthält einige Strategien, um Ihre Lösungen zu organisieren'
+title: Organisieren der Lösungen (Common Data Service) | Microsoft-Dokumentation
+description: Dieses Dokument enthält einige Strategien, um Ihre Lösungen zu organisieren
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cc6414a1d846b5bd601ce2c6f37164014f089631
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748678"
 ---
 # <a name="organize-your-solutions"></a>Organisieren der Lösungen
 
@@ -69,7 +75,7 @@ Bevor Sie Lösungen erstellen, nehmen Sie sich etwas Zeit, um im Voraus zu plane
 ### <a name="solution-libraries"></a>Lösungsbibliotheken  
  Bei einem ISV mit mehreren Lösungen oder einer großen Unternehmensbereitstellung müssen wahrscheinlich viele Lösungskomponenten gemeinsam genutzt werden. Die besten Möglichkeiten für Lösungen zur gemeinsamen Nutzung von Komponenten bieten Lösungsbibliotheken. Erstellen Sie eine Lösungsbibliothek, indem Sie eine nicht verwaltete Lösung in einer separaten Organisation erstellen und dann diese Komponenten in eine verwaltete Lösung packen. Installieren Sie die verwaltete Lösung in einer anderen Organisation und veranlassen Sie Entwickler, auf diese gemeinsam genutzten Komponenten zu verweisen.  
   
- Das Common Data Service-Solutions Framework ermöglicht es Ihnen, Schichten von Lösungen zu erstellen, die voneinander abhängen. In der Regel können Sie eine Lösungsbibliothek erstellen, die eine" Basislösung" darstellt. Weitere Lösungen können aufbauend auf dieser Basislösung erstellt werden. Dies ermöglicht eine klarere Trennung von Komponenten. Entwicklerteams, die an Lösungsbibliotheken arbeiten, und diejenigen, die an den abhängigen Lösungen arbeiten, können mit unterschiedlichem Tempo arbeiten. Die abhängigen Lösungen müssen erstellt werden, nachdem die Lösungsbibliotheken installiert wurden.  
+ Das Common Data Service Solutions Framework ermöglicht es Ihnen, Schichten von Lösungen zu erstellen, die voneinander abhängen. In der Regel können Sie eine Lösungsbibliothek erstellen, die eine" Basislösung" darstellt. Weitere Lösungen können aufbauend auf dieser Basislösung erstellt werden. Dies ermöglicht eine klarere Trennung von Komponenten. Entwicklerteams, die an Lösungsbibliotheken arbeiten, und diejenigen, die an den abhängigen Lösungen arbeiten, können mit unterschiedlichem Tempo arbeiten. Die abhängigen Lösungen müssen erstellt werden, nachdem die Lösungsbibliotheken installiert wurden.  
   
  Dies erfordert, dass Sie eine Voraussetzungslösung erstellen, die Kunden installieren müssen, bevor sie eine abhängige Lösung installieren können. Entwickler, die an den Lösungsbibliotheken arbeiten, können die Arbeit fortsetzen und Aktualisierungen durchführen, solange sie keine abhängigen Lösungen unterbrechen, die sie benötigen.  
   

@@ -1,6 +1,6 @@
 ---
-title: 'Öffnen von Dialogfeldern, Formularen, Ansichten und Berichten mit einer URLs (modellgestützte Apps) | Microsoft Docs'
-description: 'Erfahren Sie mehr zu URL-adressierbaren Elementen, mit denen Sie Links in Formulare, Ansichten, Dialogfelder und Berichten in anderen Anwendungen einfügen können.'
+title: Öffnen von Dialogfeldern, Formularen, Ansichten und Berichten mit einer URLs (modellgestützte Apps) | Microsoft Docs
+description: Erfahren Sie mehr zu URL-adressierbaren Elementen, mit denen Sie Links in Formulare, Ansichten, Dialogfelder und Berichten in anderen Anwendungen einfügen können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2a8656eb85ff7812aff2c395b4a63e239dfdb375
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753606"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>Öffnen von Formularen, Ansichten, Dialogen und Berichten mit einer URL
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/open-forms-views-dialogs-reports-url -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/open-forms-views-dialogs-reports-url -->
 
 Mit URL-adressierbaren Elementen können Sie Links zu Formularen, Ansichten, Dialogfeldern und Berichten in andere Anwendungen einfügen. Auf diese Art und Weise können Sie andere Anwendungen, Berichte oder Websites einfach erweitern, sodass die Benutzer Informationen anzeigen und Aktionen ausführen können, ohne die Anwendungen zu wechseln.  
 
@@ -34,22 +40,22 @@ Mit URL-adressierbaren Elementen können Sie Links zu Formularen, Ansichten, Dia
 
 <!-- To open a new account entity record form for on-premises [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]:  
  ```  
-http://mycrm/myOrg/main.aspx?etn=account&pagetype=entityrecord  
+https://mycrm/myOrg/main.aspx?etn=account&pagetype=entityrecord  
  ```  -->
 
  So öffnen Sie ein Entitätsdatensatzformular des Kontos für die ID {91330924-802A-4B0D-A900-34FD9D790829}:  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=account&pagetype=entityrecord&id=%7B91330924-802A-4B0D-A900-34FD9D790829%7D  
+https://myorg.crm.dynamics.com/main.aspx?etn=account&pagetype=entityrecord&id=%7B91330924-802A-4B0D-A900-34FD9D790829%7D  
  ```  
 
  So öffnen Sie die Ansicht **Geschlossene Verkaufschancen**:  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entitylist&viewid=%7b00000000-0000-0000-00AA-000010003006%7d&viewtype=1039  
+https://myorg.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entitylist&viewid=%7b00000000-0000-0000-00AA-000010003006%7d&viewtype=1039  
  ```  
 
  So öffnen Sie die Ansicht **Aktive Kontakte** ohne Navigations- oder Befehlsleiste  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={00000000-0000-0000-00AA-000010001004}&viewtype=1039&navbar=off&cmdbar=false  
+https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={00000000-0000-0000-00AA-000010001004}&viewtype=1039&navbar=off&cmdbar=false  
  ```  
 
 > [!NOTE]
@@ -65,7 +71,7 @@ http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={
 > [!TIP]
 >  Um den ID-Wert für einen Datensatz zu erhalten, verwenden Sie die Schaltfläche **Link senden** in der Befehlsleiste. Im Folgenden finden Sie ein Beispiel dafür, was in der E-Mail-Anwendung geöffnet wird:  
 >   
->  `<http://mycrm/myOrg/main.aspx?etc=4&id=%7b899D4FCF-F4D3-E011-9D26-00155DBA3819%7d&pagetype=entityrecord>`.  
+>  `<https://mycrm/myOrg/main.aspx?etc=4&id=%7b899D4FCF-F4D3-E011-9D26-00155DBA3819%7d&pagetype=entityrecord>`.  
 >   
 >  Der ID-Parameter, der an die URL übergeben wird, ist der codierte ID-Wert für den Datensatz. In diesem Beispiel lautet der ID-Wert `{899D4FCF-F4D3-E011-9D26-00155DBA3819}`. Die codierte Version der GUID ersetzt die öffnenden und schließenden Klammern “{” und “}” durch “%7B” bzw. “%7D”.  
 
@@ -75,9 +81,9 @@ http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={
 |  Parameter   |                                                                                                                                                                                                                                                                                                                                            Beschreibung                                                                                                                                                                                                                                                                                                                                            |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   **etn**    |                                                                                                                                                                                                                                    Der logische Name der Entität. **Wichtig:** Verwenden Sie nicht den **etc** (Entitätstypcode)-Parameter, der einen ganzzahligen Code für die Entität enthält. Dieser ganzzahlige Code für benutzerdefinierte Entitäten kann sich in den verschiedenen Organisationen unterscheiden.                                                                                                                                                                                                                                     |
-| **extraqs**  |     Optional für Formulare. Dieser Parameter enthält codierte Parameter innerhalb dieses Parameters.<br /><br /> Verwenden Sie diesen Parameter, um Werte an ein Formular zu übergeben. Weitere Informationen finden Sie unter [Legen Feldwerte unter Verwendung der Parameter festgelegt, die an ein Formular übergeben wurden](set-field-values-using-parameters-passed-form.md).<br /><br /> Wenn eine Entität über mehr als ein Formular verfügt, können Sie diesen Parameter verwenden, um anzugeben, welches Formular geöffnet werden soll, indem Sie den codierten Parameter `formid` mit einem Wert übergeben, der dem ID-Wert des Formulars entspricht. Wenn Sie beispielsweise ein Formular mit der ID ‘6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf’ öffnen möchten, geben Sie diesen Wert im Parameter `extraqs` an: `formid%3D6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf%0D%0A`.     |
+| **extraqs**  |     Optional für Formulare. Dieser Parameter enthält codierte Parameter innerhalb dieses Parameters.<br /><br /> Verwenden Sie diesen Parameter, um Werte an ein Formular zu übergeben. Weitere Informationen finden Sie unter [Legen Feldwerte unter Verwendung der Parameter festgelegt, die an ein Formular übergeben wurden](set-field-values-using-parameters-passed-form.md).<br /><br /> Wenn eine Entität über mehr als ein Formular verfügt, können Sie diesen Parameter verwenden, um anzugeben, welches Formular geöffnet werden soll, indem Sie den codierten Parameter `formid` mit einem Wert übergeben, der dem ID-Wert des Formulars entspricht. Wenn Sie beispielsweise ein Formular mit der ID ‘6009c1fe-ae99-4a41-a59f-a6f1cf8b9daföffnen möchten, geben Sie diesen Wert `extraqs`im Parameter `formid%3D6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf%0D%0A` an: .     |
 | **pagetype** |                                                                                                                                                                                                                                                        Der Typ der Seite. Es gibt zwei mögliche Werte:<br /><br /> - **entityrecord**<br />     Zeigt ein Entitätsdatensatzformular an.<br />- **entitylist**<br />     Zeigt eine Entitätsansicht an.                                                                                                                                                                                                                                                         |
-|    **id**    |                                                                                                                                                                      Optional für Formulare. Verwenden Sie diese Option, wenn Sie einen bestimmten Datensatz öffnen möchten. Übergeben Sie den codierten GUID-Bezeichner für die Entität. Die codierte Version der GUID ersetzt die öffnenden und schließenden Klammern “{“ und “}” durch “%7B” bzw. “%7D”, z. B. `{91330924-802A-4B0D-A900-34FD9D790829}` ist `%7B91330924-802A-4B0D-A900-34FD9D790829%7D`.                                                                                                                                                                      |
+|    **id**    |                                                                                                                                                                      Optional für Formulare. Verwenden Sie diese Option, wenn Sie einen bestimmten Datensatz öffnen möchten. Übergeben Sie den codierten GUID-Bezeichner für die Entität. Die codierte Version der GUID ersetzt die öffnenden und schließenden Klammern “{“ und “}” durch “%7B” bzw. “%7D” für Beispiel `{91330924-802A-4B0D-A900-34FD9D790829}` ist `%7B91330924-802A-4B0D-A900-34FD9D790829%7D`.                                                                                                                                                                      |
 |  **viewid**  |                                                                                                                                                                                                        Erforderlich für Ansichten. Dies ist die ID des `savedquery`- oder `userquery`-Datensatzes, der die Ansicht definiert. Die einfachste Möglichkeit, die URL für eine Ansicht zu erhalten, ist sie zu kopieren. Weitere Informationen finden Sie unter [Kopieren der URL für eine Ansicht](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL).                                                                                                                                                                                                         |
 | **viewtype** |                                                                                                                                                                                                        Definiert den Typ der Ansicht. Verfügbare mögliche Werte:<br /><br /> - **1039**<br />     Verwenden Sie diesen Wert für eine Systemansicht. Die `viewid` stellt die ID eines `savedquery`-Datensatzes dar.<br />- **4230**<br />     Verwenden Sie diesen Wert für eine persönliche Ansicht. Die `viewid` stellt die ID eines `userquery`-Datensatzes dar.                                                                                                                                                                                                         |
 |   `navbar`   | Steuert, ob die Navigationsleiste angezeigt wird und ob Anwendungsnavigation über die in der Siteübersicht definierten Bereiche und Unterbereiche verfügbar ist.<br /><br /> -   `on`<br />     Die Navigationsleiste wird angezeigt. Dies ist das Standardverhalten, wenn der Parameter `navbar` nicht verwendet wird.<br />-   `off`<br />     Die Navigationsleiste wird nicht angezeigt. Benutzer können andere Benutzeroberflächenelemente oder die Schaltflächen Zurück und Weiter für die Navigation verwenden.<br />-   `entity`<br />     In einem Entitätsformular sind nur die Navigationsoptionen für verknüpfte Entitäten verfügbar. Nach der Navigation zu einer verknüpften Entität wird die Schaltfläche Zurück in der Navigationsleiste angezeigt, mit der Sie zum ursprünglichen Datensatz zurückkehren können. |
@@ -134,7 +140,7 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
 -   Der eindeutige Bezeichner für den Datensatztyp, für den der Dialog ausgeführt werden soll.  
 
 > [!TIP]
->  Um den eindeutigen Bezeichner für den Dialog abzurufen, navigieren Sie zu **Einstellungen**, und wählen Sie in der Standardlösung **Prozesse** aus. Wählen Sie einen Prozess aus, und wählen Sie anschließend in den Optionen unter **Aktionen** in der Befehlsleiste **Link kopieren** aus. Dadurch wird ein Link zum Bearbeiten des Dialogfelds in die Zwischenablage kopiert, beispielsweise *[[Organisations-URL]]*`/sfa/workflow/edit.aspx?id=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d`.  
+>  Um den eindeutigen Bezeichner für den Dialog abzurufen, navigieren Sie zu **Einstellungen**, und wählen Sie in der Standardlösung **Prozesse** aus. Wählen Sie einen Prozess aus, und wählen Sie anschließend in den Optionen unter **Aktionen** in der Befehlsleiste **Link kopieren** aus. Dadurch wird ein Link zum Bearbeiten des Dialogfelds in die Zwischenablage kopiert, beispielsweise *[Organisations-URL]*`/sfa/workflow/edit.aspx?id=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d`.  
 
  Das folgende Beispiel zeigt die URL und Abfragezeichenfolgen-Parameter zum Öffnen eines Dialogs:  
 
@@ -142,14 +148,14 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
 [organization url]/cs/dialog/rundialog.aspx?DialogId=[dialog unique identifier]&EntityName=[entity logical name]&ObjectId=[unique identifier for the record]  
 ```  
 
- Um beispielsweise den Dialog mit der ID ={6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976} mit der Kontendatensatz-ID = {40C9ADFD-90A8-DF11-840E-00155DBA380F} zu öffnen, verwenden Sie die URL im folgenden Beispiel.  
+ Wenn Sie beispielsweise den Dialog mit ID = {6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976} mit der Firmendatensatz-ID öffnen = {40C9ADFD-90A8-DF11-840E-00155DBA380F}, verwenden Sie die URL im folgenden Beispiel.  
 
 ```
 [organization url]/cs/dialog/rundialog.aspx?DialogId=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d&EntityName=account&ObjectId=%7b40C9ADFD-90A8-DF11-840E-00155DBA380F%7d  
 ```  
 
 > [!TIP]
->  Bei einem anderen Browser als dem Internet Explorer funktioniert die Schaltfläche **Fertig** möglicherweise nicht, wenn ein Dialogprozess über einen Link geöffnet wird. Die Daten werden gespeichert, aber der Benutzer muss im Fenster auf die Schaltfläche **Schließen** klicken, um es zu schließen. Dies liegt daran, dass andere Browser keine `window.close`-Methode bereitstellen, wenn das Fenster nicht mithilfe von JavaScript von einem anderen Fenster geöffnet wird. Verwenden Sie nach Möglichkeit JavaScript und die `window.open`-Methode, um Dialogprozesse zu öffnen, statt nur Links zur Verfügung zu stellen.  
+>  Wenn ein Dialogprozess über einen Link geöffnet wird, funktioniert bei anderen Webbrowsern als Internet Explorer die Schaltfläche **Fertig stellen** unter Umständen nicht. Die Daten werden gespeichert, aber der Benutzer muss im Fenster auf die Schaltfläche **Schließen** klicken, um es zu schließen. Dies liegt daran, dass andere Browser keine `window.close`-Methode bereitstellen, wenn das Fenster nicht mithilfe von JavaScript von einem anderen Fenster geöffnet wird. Verwenden Sie nach Möglichkeit JavaScript und die `window.open`-Methode, um Dialogprozesse zu öffnen, statt nur Links zur Verfügung zu stellen.  
 
  Sie können eine JavaScript-Funktion erstellen, um den Dialog wie im folgenden Beispiel gezeigt zu öffnen:  
 

@@ -1,21 +1,26 @@
 ---
-title: 'Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen (Common Data Service) | Microsoft Docs'
-description: 'Sie können Alternativschlüssel zum Erstellen von Instanzen von der Entity- und EntityReference-Klassen verwenden. Dieses Thema erörtert Verwendungsmuster und mögliche Ausnahmen, die möglicherweise beim Verwenden von Alternativschlüsseln ausgelöst werden.'
+title: Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen (Common Data Service) | Microsoft-Dokumentation
+description: Sie können Alternativschlüssel zum Erstellen von Instanzen von der Entity- und EntityReference-Klassen verwenden. Dieses Thema erörtert Verwendungsmuster und mögliche Ausnahmen, die möglicherweise beim Verwenden von Alternativschlüsseln ausgelöst werden.
 ms.custom: ''
 ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 11c94bdecd7a2032ea17066280f2abddd61528ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748517"
 ---
-
 # <a name="use-an-alternate-key-to-create-a-record"></a>Verwenden Sie einen Alternativschlüssel, um Datensätze zu erstellen
 
 Sie können Alternativschlüssel zum Erstellen von Instanzen von <xref:Microsoft.Xrm.Sdk.Entity> und <xref:Microsoft.Xrm.Sdk.EntityReference>-Klassen verwenden. Dieses Thema erörtert Verwendungsmuster und mögliche Ausnahmen, die möglicherweise beim Verwenden von Alternativschlüsseln ausgelöst werden. Um die Definition von Alternativschlüssel für eine Entität zu verstehen, siehe [Definieren von Alternativschlüsseln für eine Entität](define-alternate-keys-entity.md).  

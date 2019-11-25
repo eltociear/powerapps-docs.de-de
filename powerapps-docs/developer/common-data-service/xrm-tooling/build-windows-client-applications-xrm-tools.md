@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools (Common Data Service) | Microsoft-Dokumentation
-description: 'XRM-Tools sind ein Satz neuer APIs, der den Aufbau von Windows-Client-Anwendungen für Common Data Service unterstützt.'
+description: XRM-Tools sind ein Satz neuer APIs, der den Aufbau von Windows-Client-Anwendungen für Common Data Service unterstützt.
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: e2f22576-1705-4854-a804-a1ca232c0cfc
 caps.latest.revision: 33
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4b05e59426f507b10645a20044a67ee28620f2e6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753966"
 ---
 # <a name="build-windows-client-applications-using-the-xrm-tools"></a>Erstellen von Windows-Client-Anwendungen mithilfe der XRM-Tools
 
@@ -55,5 +61,5 @@ Die folgenden Anwendungen in der aktuellen Version von Common Data Service verwe
 ### <a name="see-also"></a>Siehe auch
 
 [Beispiel: Schnellstart für XRM Tooling API](sample-quick-start-xrm-tooling-api.md)<br />
-[Blog: PowerShell-Modul für die Ausführung von Datenvorgängen und die Bearbeitung der Benutzer- und Systemeinstellungen in Common Data Service](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
+[Blog: PowerShell-Modul für die Ausführung von Datenvorgängen und die Bearbeitung der Benutzer- und Systemeinstellungen in Common Data Service](https://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
 

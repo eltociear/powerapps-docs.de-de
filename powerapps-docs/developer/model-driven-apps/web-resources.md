@@ -1,6 +1,6 @@
 ---
 title: Webressourcen (modellgesteuerte Apps) | Microsoft Docs
-description: 'Webressourcen sind virtuelle Dateien, die in der "Common Data Service"-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.'
+description: Webressourcen sind virtuelle Dateien, die in der Common Data Service-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,17 +10,23 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2053cb6fac411db7528d841cf76ea090ced136c9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748456"
 ---
 # <a name="web-resources-in-model-driven-apps"></a>Webressourcen in modellgesteuerten Apps
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resources -->
 
 
-Webressourcen sind *virtuelle Dateien*, die in der "Common Data Service"-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.  
+Webressourcen sind *virtuelle Dateien*, die in der Common Data Service-Datenbank gespeichert sind und die Sie mithilfe einer eindeutigen URL-Adresse abrufen können.  
   
 <a name="BKMK_CapabilitiesOfWebResources"></a>   
 ## <a name="capabilities-of-web-resources"></a>Verwendungsmöglichkeiten für Webressourcen  
@@ -28,7 +34,7 @@ Webressourcen sind *virtuelle Dateien*, die in der "Common Data Service"-Datenba
   
  Die URL-Syntax für Webressourcen ermöglicht relative Pfadverweise. Mit den Entwicklungswerkzeugen können Sie eine Gruppe voneinander abhängiger Dateien auf einem Entwicklungsserver erstellen, indem Sie Dateitypen verwenden, die mit Webressourcen kompatibel sind. Wenn Sie dann eine einheitliche Namenskonvention und relative Pfadverweise verwenden, funktioniert die Website, nachdem Sie alle Dateien in Common Data Service hochgeladen haben.
   
- Da Webressourcen in Common Data Service gespeichert werden und Lösungskomponenten sind, können einfach exportiert und in anderen "Common Data Service"-Organisationen installiert werden. Webressourcen sind auch für Benutzer von Common Data Service für Microsoft Office Outlook mit Offlinezugriff verfügbar, wenn sie offline sind, da sie mit den Daten des Benutzers synchronisiert werden.  
+ Da Webressourcen in Common Data Service gespeichert werden und Lösungskomponenten sind, können sie einfach exportiert und in anderen Common Data Service-Organisationen installiert werden. Webressourcen sind auch offline für Benutzer von Common Data Service für Microsoft Office Outlook mit Offlinezugriff verfügbar, da sie mit den Daten des Benutzers synchronisiert werden.  
   
  Sie können den Formular-Editor verwenden, um formularfähige Webressourcen Ihren Entitätsformularen hinzuzufügen und um sie zu konfigurieren.  
   
@@ -36,7 +42,7 @@ Webressourcen sind *virtuelle Dateien*, die in der "Common Data Service"-Datenba
   
 <a name="BKMK_LimitationsOfWebResources"></a>   
 ### <a name="limitations-of-web-resources"></a>Einschränkungen für Webressourcen  
- Es gibt keinen Webressourcentyp, der die Funktionalität einer   ASP.NET(.aspx) -Seite unterstützt, um Code auf dem Server auszuführen. Webressourcen sind auf statische Dateien begrenzt oder auf Dateien, die im Browser verarbeitet werden. Eine Webressource kann Code enthalten, der im Browser verarbeitet wird, um Webdienstaufrufe zur Interaktion mit Common Data Service-Daten auszuführen.
+ Es gibt keinen Webressourcentyp, der die Funktionalität einer ASP.NET (.aspx)-Seite unterstützt, um Code auf dem Server auszuführen. Webressourcen sind auf statische Dateien begrenzt oder auf Dateien, die im Browser verarbeitet werden. Eine Webressource kann Code enthalten, der im Browser verarbeitet wird, um Webdienstaufrufe zur Interaktion mit Common Data Service-Daten auszuführen.
   
  Webressourcen sind nur verfügbar, wenn Sie den Sicherheitskontext für Common Data Service-Webanwendungen verwenden. Nur lizenzierte Common Data Service-Benutzer, die über die notwendigen Rechte verfügen, können darauf zugreifen.  
   
@@ -131,14 +137,14 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
 >  Das Einfügen des Zeichens "/" und einer Dateinamenerweiterung im Namen der Webressource ist eine bewährte Methode.  
   
   
- Wenn Sie Code schreiben, der auf eine Webressource verweist, die für Common Data Service funktioniert, sollten Sie die [getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md)-Funktion verwenden.
+ Wenn Sie Code schreiben, der auf eine Webressource verweist, die für Common Data Service geeignet ist, sollten Sie die [getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md)-Funktion verwenden.
 
 ## <a name="community-tools"></a>Community-Tools
 
-**WebResources-Manager** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelte. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
+**Webressourcen-Manager** ist ein Tool, das die XrmToolbox-Community für Common Data Service entwickelt hat. Weitere Informationen finden Sie im Thema [Entwicklertools](developer-tools.md) für von der Community entwickelte Tools.
 
 > [!NOTE]
-> Die Communitytools sind kein Produkt von Common Data Service und es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
+> Die Communitytools sind kein Produkt von Common Data Service. Es wird kein Support für die Communitytools angeboten. Wenn Sie Fragen zu dem Tool haben, setzen Sie sich bitte mit dem Herausgeber in Verbindung. Weitere Informationen: [XrmToolBox](https://www.xrmtoolbox.com). 
   
 ### <a name="see-also"></a>Siehe auch  
 
@@ -148,7 +154,7 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
  [Bildwebressourcen](image-web-resources.md)<br />
  [XSL-Webressourcen (Stylesheet)](stylesheet-xsl-web-resources.md)<br />
  [Webressourcen von Daten (XML)](data-xml-web-resources.md)<br />
- [CSS-Webressourcen (Stylesheet)](css-web-resources.md)<br />
+ [Webressourcen Stylesheet (CSS)](css-web-resources.md)<br />
  [WebResource-Entitätsreferenz](../common-data-service/reference/entities/webresource.md)<br />
  [Beispiel: Mehrere Werte über den Datenparameter an eine Webressource übergeben](sample-pass-multiple-values-web-resource-through-data-parameter.md)<br />
  [Beispiel: Importieren von Dateien als Webressourcen](sample-import-files-web-resources.md)<br />

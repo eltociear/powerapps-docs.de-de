@@ -10,10 +10,16 @@ ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752341"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>Hinzufügen von Berichtsfeatures zur modellgesteuerten App
 
@@ -36,7 +42,7 @@ Systemberichte stehen allen Benutzern zur Verfügung. Berichte, die in Besitz ei
 ## <a name="add-reporting-to-a-unified-interface-app"></a>Hinzufügen von Berichterstattung zur App mit einheitlicher Oberfläche
 Sie können auf der Fetch-Funktion basierende Berichtsfunktionen zur App hinzufügen, damit Benutzer Berichte ausführen, freigeben, erstellen und bearbeiten können. Fügen Sie hierzu die die Berichtsentität zur Siteübersicht der App hinzu. 
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und öffnen Sie eine vorhandene App zum Bearbeiten. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, und öffnen Sie eine vorhandene App zum Bearbeiten. 
 2. Wählen Sie im App-Designer ![Stiftsymbol zum Bearbeiten der Siteübersicht](media/ccf-pencil-icon.png) neben **Siteübersicht** aus. 
 3. Wählen Sie im Siteübersichts-Designer die Option **Hinzufügen** und anschließend **Bereich** aus. 
 4. Geben Sie im Feld **Titel** einen Namen für den Bereichstitel ein, beispielsweise *Berichte*. 
@@ -57,7 +63,7 @@ Sie können auf der Fetch-Funktion basierende Berichtsfunktionen zur App hinzuf�
 Nun zeigt die App einen Bereich **Berichte** an, in dem Benutzer Berichte, für die sie über die Berechtigung verfügen, anzeigen, ausführen, zuweisen, freigeben oder bearbeiten können, sowie neue Berichte mithilfe des Berichts-Assistenten erstellen können. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-feature-in-app.png "Berichtsanzeige")
+> ![](media/report-feature-in-app.png "Report view")
 
 ## <a name="options-for-creating-new-reports"></a>Optionen zum Erstellen neuer Berichte
 Sie können auf zwei Arten einen neuen Bericht erstellen:
@@ -73,7 +79,7 @@ Bei den Berichten handelt es sich um lösungsfähige Berichte. Wird einer Lösun
 Um zu ermitteln, ob ein Bericht von der Organisation angezeigt werden kann, öffnen Sie in der Berichtsliste eine modellgesteuerte App, wählen Sie einen Bericht aus, und wählen Sie dann **Bearbeiten**. Überprüfen Sie auf der Registerkarte **Verwaltung**, ob **Sichtbar für** auf **Organisation** festgelegt ist. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-scope.png "Berichtssichtbarkeit auf Organisationsebene")
+> ![](media/report-scope.png "Organization level report visibility")
 
 Momentaufnahmen von Berichten können nicht als Teil einer Lösung hinzugefügt, importiert oder exportiert werden. In modellgesteuerten Apps gelten Berichte, Unterberichte, die Berichtskategorie, der Berichtsanzeigebereich sowie der berichtsbezogene Datensatztyp als Komponenten eines Berichtssatzes. Wenn Sie ein Lösungsupdate in einem Modus ohne Überschreibung importieren, werden alle Updates der Lösung für einen Bericht ignoriert, sofern eine Komponente des Berichtssatzes angepasst wurde.
 

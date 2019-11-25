@@ -1,6 +1,6 @@
 ---
-title: Massenlöschung von Daten (Common Data Service) | Microsoft Docs
-description: 'Massenlöschung von Daten hilft beim Aufrechterhalten der Datenqualität und Verwalten des Verbrauchs der Systemspeicherung, indem Daten gelöscht werden, die nicht mehr benötigt werden.'
+title: Massenlöschung von Daten (Common Data Service) | Microsoft-Dokumentation
+description: Massenlöschung von Daten hilft beim Aufrechterhalten der Datenqualität und Verwalten des Verbrauchs der Systemspeicherung, indem Daten gelöscht werden, die nicht mehr benötigt werden.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5eb692c38d7a8dac779c827c09d7b767e89bb6e2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748415"
 ---
 # <a name="delete-data-in-bulk"></a>Löschen von Datensätzen in einem Massenvorgang
 
-Die *Massenlöschungs* funktion hilft Ihnen, die Datenqualität und den Verbrauch des Systemspeichers in Common Data Service zu verwalten, indem nicht mehr benötigte Daten gelöscht werden. So können Sie beispielsweise die folgenden Daten in einem Massenvorgang löschen:  
+Die *Massenlöschungsfunktion* hilft Ihnen die Datenqualität und den Verbrauch des Systemspeichers in Common Data Service zu verwalten, indem nicht mehr benötigte Daten gelöscht werden. So können Sie beispielsweise die folgenden Daten in einem Massenvorgang löschen:  
   
 - Veraltete Daten.  
   
@@ -58,7 +64,7 @@ Zum Massenlöschen von Datensätzen müssen Sie einen Massenlöschungsauftrag mi
   Ein Massenlöschungsauftrag löscht nur Datensätze, die vor seinem Beginn erstellt wurden.  
   
 > [!NOTE]
->  Wenn ein Massenlöschungsauftrag fehlschlägt oder vorzeitig beendet wird, werde alle Datensätze, die vor dem Fehler oder dem Ende des Auftrags gelöscht wurden, nicht zurückgesetzt und bleiben gelöscht. Die Fehlschläge des `BulkDeleteOperation` werden in den `BulkDeleteFailure` gespeichert und können mit der Meldung <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> oder <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> abgerufen werden.  
+>  Wenn ein Massenlöschungsauftrag fehlschlägt oder vorzeitig beendet wird, werde alle Datensätze, die vor dem Fehler oder dem Ende des Auftrags gelöscht wurden, nicht zurückgesetzt und bleiben gelöscht. Die Fehler des `BulkDeleteOperation` werden in den Datensätzen `BulkDeleteFailure` gespeichert und können mit der Meldung <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> oder <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> abgerufen werden.  
   
  Ein Massenlöschungsauftrag löscht die angegebenen Datensätze in Übereinstimmung mit den Kaskadierungsregeln. Diese Regeln basieren auf dem Beziehungstyp zwischen den Entitäten. Weitere Informationen finden Sie unter [Verhalten von Entitätsbeziehungen](/dynamics365/customer-engagement/developer/entity-relationship-behavior).  
   

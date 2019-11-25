@@ -1,6 +1,6 @@
 ---
 title: Modellgetriebene Anwendungen in PowerApps - Übersicht für Entwickler | Microsoft Docs
-description: 'Erfahren Sie, wie Entwickler modellgetriebenen Anwendungen einen Mehrwert verleihen können; Tutorial; Einführung für Model-Apps-Entwickler in PowerApps.'
+description: Erfahren Sie, wie Entwickler modellgetriebenen Anwendungen einen Mehrwert verleihen können; Tutorial; Einführung für Model-Apps-Entwickler in PowerApps.
 services: ''
 author: JimDaly
 manager: kvivek
@@ -14,12 +14,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 33d60e8f6359cee0a71e9f85fa4f97d432cacc94
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748459"
 ---
-
 # <a name="model-driven-apps-developer-guide"></a>Entwicklerhandbuch zu modellgestützten Apps
 
 PowerApps bietet Anwendern, Unternehmen, Partnern, unabhängigen Softwareanbietern (ISVs) und Systemintegratoren (SIs) eine leistungsstarke Plattform für den Aufbau von Branchenanwendungen. Die neue Ergänzung zu PowerApps in dieser Version sind modellgetriebene Anwendungen, die mit der neuen Common Data Service erstellt wurden. Common Data Service enthält nun die Kernfunktionalität der Anwendungen. Mit modellgestützten Apps können Sie Apps erstellen, die die gleichen Erweiterbarkeitsfunktionen wie diese Anwendungen nutzen.

@@ -1,6 +1,6 @@
 ---
 title: Web-API-Typen und -Vorgänge (Common Data Service) | Microsoft Docs
-description: 'Dieses Thema beschreibt, was für Sie verfügbar ist, um die Web-API vis-a-vis zu verwenden. Es informiert über wichtige Themen und darüber, wie Sie benötigte Informationen in der Dokumentation finden, die aus Service- und Metadaten-Dokumenten erstellt wurde und aus der Dokumentation zu Systementitätstypen, Funktionen und Aktionen'
+description: Dieses Thema beschreibt, was für Sie verfügbar ist, um die Web-API vis-a-vis zu verwenden. Es informiert über wichtige Themen und darüber, wie Sie benötigte Informationen in der Dokumentation finden, die aus Service- und Metadaten-Dokumenten erstellt wurde und aus der Dokumentation zu Systementitätstypen, Funktionen und Aktionen
 ms.custom: ''
 ms.date: 04/30/2019
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d80cfb87-d4f1-4c75-bcc8-4f54d1351e26
 caps.latest.revision: 27
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 714ac2ede999e423ef310a2d0fe738bc6bad97da
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753642"
 ---
 # <a name="web-api-types-and-operations"></a>Internet API-Typen und -Vorgänge
 
@@ -28,7 +34,7 @@ Um Web API zu verwenden, müssen Sie Informationen zu dem suchen, was für Sie z
   
 ## <a name="terminology"></a>Terminologie 
 
-Der Web API wird mithilfe des ODatas v4 Standards implementiert, der bstimmte Begriffe verwendet, mit denen Sie vertraut sein müssen. *Entity Data Model (EDM)* ist das abstrakte Datenmodell, das verwendet wird, um die Daten zu beschreiben, die von einem OData-Service verfügbar gemacht werden. Die folgende Tabelle enthält eine ausgewählte Terminologieliste definiert in [OData Version 4.0 Teil 1: Protokoll Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html), die Sie kennen sollten.  
+Der Web API wird mithilfe des ODatas v4 Standards implementiert, der bstimmte Begriffe verwendet, mit denen Sie vertraut sein müssen. *Entity Data Model (EDM)* ist das abstrakte Datenmodell, das verwendet wird, um die Daten zu beschreiben, die von einem OData-Service verfügbar gemacht werden. Die folgende Tabelle enthält eine ausgewählte Terminologieliste definiert in [OData Version 4.0 Teil 1: Protokoll Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html), die Sie kennen sollten.  
   
 |Begriff|Definition|  
 |----------|----------------|  
@@ -50,7 +56,7 @@ Es gibt zwei Servicedokumente, auf die Sie verweisen können, um mehr über den 
 
 ### <a name="service-document"></a>Servicedokument
 
-Die folgende, Abfrage, die in das Adressfeld des Browsers eingegeben wird, gibt das *Service-Dokumenht* zurück, eine vollständige Liste aller Entitätssätze, die für Ihre Organisation verfügbar sind. Beachten Sie, dass *[Organisations-URI]* die URL für Ihre Organisation darstellt.  
+Die folgende, Abfrage, die in das Adressfeld des Browsers eingegeben wird, gibt das *Service-Dokumenht* zurück, eine vollständige Liste aller Entitätssätze, die für Ihre Organisation verfügbar sind. Beachten Sie, dass *Organisation [URI]* die URL für Ihre Organisation darstellt.  
   
 ```  
   
@@ -80,7 +86,7 @@ GET [Organization URI]/api/data/v9.0/$metadata
   
 Dieses Dokument kann als Datenquelle verwendet werde, um Klassen zu erstellen, die stark typisierte Objekte für den Service bereitstellen. Aber, wenn Sie keine generierten Klassen verwenden, sollten Sie die Dokumentation, die aus diesen Informationen generiert wurden, überprüfen. Die [Web-API-Referenz](/dynamics365/customer-engagement/web-api/about) nutzt Informationen primär aus diesem Dokument, das von einem System stammt, auf dem allgemeine zusätzliche Lösungen installiert sind.  
   
-Sie erfahren mehr über dieses Dokument unter [OData-Version 4.0 Teil 3: Common Schema Definition Language (CSDL) Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part3-csdl.html).  
+Sie erfahren mehr über dieses Dokument unter [OData-Version 4.0 Teil 3: Common Schema Definition Language (CSDL) Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part3-csdl.html).  
   
 > [!TIP]
 >  Ehe Sie den Rest des Themas lesen, laden Sie `$metadata` für Ihre Organisation herunter, und sehen Sie sich an, wie die beschriebene Typen, Funktionen und Aktionen in `$metadata` und der unterstützenden Dokumentation enthalten sind.  
@@ -99,7 +105,7 @@ Das Metadatendokument enthält mehrere Typen von `Annotation`-Elementen, die zus
   
 -   Fügen Sie den `Prefer: odata.include-annotations="*"`-Header zur Anforderung hinzu.  
   
-Jedes `Annotation`-Element enthält ein `Term`-Attribut, das den Anmerkungstyp beschreibt. Die Definitionen aller möglichen Anmerkungen, die von OData v4-Clients verwendet werden, sind in [OData-Vokabular-Version 4.0](http://docs.oasis-open.org/odata/odata-vocabularies/v4.0/csprd01/odata-vocabularies-v4.0-csprd01.html) enthalten. Die folgende Tabelle enthält einige Beispiele, die von der Web-API verwendet werden.  
+Jedes `Annotation`-Element enthält ein `Term`-Attribut, das den Anmerkungstyp beschreibt. Die Definitionen aller möglichen Anmerkungen, die von OData v4-Clients verwendet werden, sind in [OData-Vokabular-Version 4.0](https://docs.oasis-open.org/odata/odata-vocabularies/v4.0/csprd01/odata-vocabularies-v4.0-csprd01.html) enthalten. Die folgende Tabelle enthält einige Beispiele, die von der Web-API verwendet werden.  
   
 |Begriff|Beschreibung|  
 |----------|-----------------|  

@@ -1,25 +1,28 @@
 ---
 title: Menübandaktionen definieren (modellgesteuerte Apps) | Microsoft Docs
-description: 'Infos zum Definieren der Aktionen, die durch Befehlsleisten- oder Menübandsteuerelemente in einem <CommandDefinition>-Element in Kombination mit Regeln ausgeführt werden, die steuern, ob das Steuerelement aktiviert bzw. im Menüband angezeigt wird.'
+description: Infos zum Definieren der Aktionen, die durch Befehlsleisten- oder Menübandsteuerelemente in einem <CommandDefinition>-Element in Kombination mit Regeln ausgeführt werden, die steuern, ob das Steuerelement aktiviert bzw. im Menüband angezeigt wird.
 keywords: ''
 ms.date: 10/31/2018
 ms.service:
-  - powerapps
-ms.custom:
-  - ''
+- powerapps
 ms.topic: article
 ms.assetid: fbb7ff68-e4be-d8c2-069f-6a4a69665b56
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ef25670c338838d70257a394b5701f3132cb2ac7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748759"
 ---
-
 # <a name="define-ribbon-actions"></a>Definieren von Menübandaktionen
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-actions -->

@@ -4,21 +4,24 @@ description: 'Diese exemplarische Vorgehensweise veranschaulicht, wie Sie einen 
 keywords: ''
 ms.date: 06/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: b5ef50fa-8085-f425-3968-804d012fc840
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bf065cc4b2eb1c76156e5373fecfc0193a870380
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748503"
 ---
-
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>Tutorial: Azure-fähiges Plug-In mit Plug-In-Registrierungstool registrieren
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
@@ -51,7 +54,7 @@ Führen Sie die unten angegebenen Schritte aus, um mithilfe des Registrierungsto
 1. Klicken Sie auf **Create New Connection** (Neue Verbindung erstellen).  
 1. Wählen Sie im Dialogfeld **Anmelden** die Option **Office 365** aus.
 
-    ![Anmeldeformular für eine Online-Bereitstellung](media/crm-v6s-pr.png "Anmeldeformular für eine Online-Bereitstellung")
+    ![Anmeldeformular für eine online Bereitstellung](media/crm-v6s-pr.png "Anmeldeformular für eine online Bereitstellung")
 
 1. Wenn Sie **Liste der verfügbaren Organisationen anzeigen** aktivieren, wird eine Liste von Organisationen angezeigt, denen Sie angehören, nachdem Sie auf **Anmeldung** klicken. Dadurch können Sie die Organisation auswählen, mit der Sie den Dienstendpunkt registrieren möchten. Andernfalls wird die standardmäßige Organisation verwendet.  
 1. Geben Sie die angegebenen Informationen zum Server und der Firma ein und klicken Sie dann auf **Anmeldung**.  
@@ -66,7 +69,7 @@ Führen Sie die unten angegebenen Schritte aus, um auf dem Dienstendpunkt einen 
 1. Navigieren Sie zum Menü **Registrieren**, oder klicken Sie auf **Neuen Schritt registrieren**.  
 1. Füllen Sie das Dialogfeld **Neuen Schritt registrieren** für ein Ereignis zum Erstellen einer Firma aus, wie in der folgenden Abbildung gezeigt.
 
-    ![Erstellen eines Dienstendpunktschrittes](media/crm-v6s-pr-service-endpoint-step.png "Erstellen eines Dienstendpunktschrittes")
+    ![Erstellt eines Dienstendpunktschrittes](media/crm-v6s-pr-service-endpoint-step.png "Erstellt eines Dienstendpunktschrittes")
   
 1. Klicken Sie auf **Neuen Schritt registrieren**.  
   

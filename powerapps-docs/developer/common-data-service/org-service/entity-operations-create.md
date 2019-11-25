@@ -1,19 +1,25 @@
 ---
-title: Entitäten mithilfe des Organisationsservices erstellen (Common Data Service) | Microsoft Docs
+title: Erstellen von Entitäten mit dem Organisationsdienst (Common Data Service) | Microsoft-Dokumentation
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d5f21a51fdd63797fe6e4eb920d2294f5b3fb18
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748547"
 ---
 # <a name="create-entities-using-the-organization-service"></a>Erstellen von Entitäten mit dem Organisationsservice
 
@@ -229,7 +235,7 @@ Weitere Informationen: [DoppelteAbfdra Daten mit dem Organisationsdienst erkenne
 
 Wenn Benutzer neue Datensätze in der Anwendung erstellen, sind sie im Rahmen eines anderen Datensatzes erstellt. So erstellen Sie möglicherweise einen neuen Kontaktdatensatz im Kontext einer Firma. Wenn dies geschieht, werden bestimmte Attributwerte von der Firmaenentität im Kontaktformular kopiert. Dies beschleunigt die Erstellung des neuen verknüpften Datensatzes, da der neue Datensatz einige Standardwerte hat, die festgelegt werden, so dass die Person, die den Datensatz erstellt, diesen nicht bearbeitet muss, um den Wert einzugeben. Sie können die Werte ändern, wenn Sie dies möchten, vor dem Speichern.
 
-Die Werte, die kopiert werden, wenn ein neuer Datensatz auf diese Weise erstellt wird, wird von der verknüpften Konfiguration mit der Common Data Service-Umgebung gesteuert, sodass sie zwischen den Umgebungen wechseln können. 
+Die Werte, die bei der Erstellung eines neuen Datensatzes auf diese Weise übernommen werden, werden durch Konfigurationen gesteuert, die auf die Common Data Service-Umgebung angewendet werden, so dass sie je nach Umgebung variieren können. 
 
 Weitere Informationen: 
 - [Entitätsfelder zuordnen](../../../maker/common-data-service/map-entity-fields.md)

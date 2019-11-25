@@ -1,5 +1,5 @@
 ---
-title: ' Kartenkomponente | Microsoft Docs'
+title: " Kartenkomponente | Microsoft Docs"
 description: Implementieren einer Kartenkomponente mit Angular JS
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: f4b8702ef39688bdfc5f3ce9a51bf5c8c6e0ff20
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748780"
 ---
-
 # <a name="implementing-map-component"></a>Implementieren einer Kartenkomponente
 
 Diese Beispielkomponente ändert die Benutzerfreundlichkeit beim Interagieren mit Adressfeldern im Formular. In Kombination mit den Textwerten der Adresse stellt diese Komponente die Möglichkeit bereit, eine bestimmte Adresse visuell auf einer Karte zu identifizieren, ohne zu einer anderen Registerkarte oder einen anderen Bildschirm zu navigieren. 
@@ -46,7 +51,7 @@ export class TSMapControl
   private _iFrameElement: HTMLIFrameElement;
   // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // API Key used to activate and embed the maps automatically
   // NOTE: You can follow the documentation at https://developers.google.com/maps/documentation/embed/get-api-key to generate your own API Key
@@ -170,4 +175,4 @@ Stellen Sie sicher, dass Sie die `renderMap`-Funktion in der [updateView](../ref
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)

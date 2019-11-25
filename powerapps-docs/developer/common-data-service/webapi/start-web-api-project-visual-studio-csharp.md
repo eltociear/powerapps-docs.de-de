@@ -1,12 +1,12 @@
 ---
-title: 'Starten eines Common Data Service Web-API-Projekts in Visual Studio (C#) (Common Data Service)| MicrosoftDocs'
-description: 'Erstellen eines neuen Projekts in Visual Studio, um eine Konsolenanwendung zu erstellen, die die Common Data Service-Web-API verwendet'
-ms.custom: null
+title: Starten eines Common Data Service Web-API-Projekts in Visual Studio (C#) (Common Data Service)| MicrosoftDocs
+description: Erstellen eines neuen Projekts in Visual Studio, um eine Konsolenanwendung zu erstellen, die die Common Data Service-Web-API verwendet
+ms.custom: ''
 ms.date: 04/22/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: powerapps
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: F96B384D-EF70-490D-BE3D-2E3883278B99
 caps.latest.revision: 14
@@ -14,9 +14,15 @@ author: JimDaly
 ms.author: jdaly
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 37548edcebb037a64599f405b3cf4d121d38d517
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753658"
 ---
 # <a name="start-a-common-data-service-web-api-project-in-visual-studio-c"></a>Starten Sie ein Common Data Service Web-API-Projekt in Visual Studio (C#).
 
@@ -47,7 +53,7 @@ Die folgende Vorgehensweise zeigt, wie Sie ein Konsolenanwendungsprojekt in C# e
   
 4. Wählen Sie aus der Vorlagenliste **Konsolen-App (.NET Framework)** aus. (Alternativ wählen Sie den Projekttyp aus, der aus, der Ihrer Lösung entspricht). Alle Web API C#-Beispiele sind Konsolenanwendungen.  
   
-   ![Ein neuer Konsolen-App-Projektdialog in Common Data Service](media/new-project.PNG "Ein neuer Konsolen-App-Projektdialog in Common Data Service")".  
+   ![Ein neues Konsolen-App-Projektdialogfeld in Common Data Service](media/new-project.PNG "Ein neues Konsolen-App-Projektdialogfeld in Common Data Service")  
   
 5. Geben Sie für das Projekt in den Feldern in der Nähe des unteren Bereichs des Formulars einen Speicherort und einen Namen an, und wählen Sie dann OK aus. (In diesem Thema, wurde der Lösungsname "StartWebAPI-CS" verwendet.) Die Ausgangslösungsdateien wird generiert und die Lösung in geladen. Visual Studio  
   
@@ -102,7 +108,7 @@ In diesem Abschnitt wird beschrieben, wie eine grundlegende Einstellungen und An
         <clear />  
   
         <!-- When providing a password, make sure to set the app.config file's security so that only you can read it. -->  
-        <add name="default"   connectionString="Url=http://myserver/myorg/; Username=name; Password=password; Domain=domain" />  
+        <add name="default"   connectionString="Url=https://myserver/myorg/; Username=name; Password=password; Domain=domain" />  
         <add name="CrmOnline" connectionString="Url=https://mydomain.crm.dynamics.com/; Username=someone@mydomain.onmicrosoft.com; Password=password" />  
       </connectionStrings>  
   
@@ -112,7 +118,7 @@ In diesem Abschnitt wird beschrieben, wie eine grundlegende Einstellungen und An
         <!--Active Directory application registration. -->  
         <!--These are dummy values and should be replaced with your actual app registration values.-->  
         <add key="ClientId" value="e5cf0024-a66a-4f16-85ce-99ba97a24bb2" />  
-        <add key="RedirectUrl" value="http://localhost/SdkSample" />  
+        <add key="RedirectUrl" value="https://localhost/SdkSample" />  
   
         <!-- Use an alternate configuration file for connection string and setting values. This optional setting  
         enables use of an app.config file shared among multiple applications. If the specified file does  

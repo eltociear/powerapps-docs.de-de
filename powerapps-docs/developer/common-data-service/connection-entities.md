@@ -1,6 +1,6 @@
 ---
-title: 'Verwenden Sie Verbindungen, um Datensätze miteinander zu verknüpfen (Common Data Service) | Microsoft Docs'
-description: 'Verbindungsentitaten hilfen Ihnen, die Abfrageverbindungen zu aktivieren und zu erstellen.'
+title: Verwenden Sie Verbindungen, um Datensätze miteinander zu verknüpfen (Common Data Service) | Microsoft-Dokumentation
+description: Verbindungsentitaten hilfen Ihnen, die Abfrageverbindungen zu aktivieren und zu erstellen.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7ad1b1874f71c958204119a35440922361746252
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748428"
 ---
 # <a name="use-connections-to-link-records-to-each-other"></a>Verwenden Sie Verbindungen, um Datensätze miteinander zu verknüpfen
 
-Die *Verbindungen* bieten eine flexible Möglichkeit, die Beziehungen zwischen zwei beliebigen Entitätsaufzeichnungen Common Data Service zu verbinden und zu beschreiben. Sie hilft Ihnen, Teamwork, Zusammenarbeit und die effektive Verwaltung des Unternehmens und der Vertriebsprozesse zu fördern. Mit Verbindungen können Sie problemlos Benutzer, Kontakte, Angebote, Vertriebsaufträge und viele andere Entitätsdatensätze einander zuordnen. Den Datensätzen in der Zuordnung können bestimmte Rollen zugewiesen werden, mit denen der Zweck der Beziehung definiert werden kann.  
+Die *Verbindungen* bieten eine flexible Möglichkeit, um die Beziehungen zwischen zwei Entitätsdatensätzen Common Data Service zu verbinden und zu beschreiben. Sie hilft Ihnen, Teamwork, Zusammenarbeit und die effektive Verwaltung des Unternehmens und der Vertriebsprozesse zu fördern. Mit Verbindungen können Sie problemlos Benutzer, Kontakte, Angebote, Vertriebsaufträge und viele andere Entitätsdatensätze einander zuordnen. Den Datensätzen in der Zuordnung können bestimmte Rollen zugewiesen werden, mit denen der Zweck der Beziehung definiert werden kann.  
   
  Verbindungen bieten die folgenden Funktionen:  
   

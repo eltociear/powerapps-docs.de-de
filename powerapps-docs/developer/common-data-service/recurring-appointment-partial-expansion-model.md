@@ -1,6 +1,6 @@
 ---
-title: Teilerweiterungsmodell für Serientermine (Common Data Service) | Microsoft Docs
-description: 'Das Teilerweiterungsmodell ist ein asynchroner Auftrag in , der in vorab festgelegten Intervallen ausgeführt wird und auf der Organisationsebene definiert und zum Erstellen wiederkehrender Termininstanzen verwendet wird.'
+title: Teilerweiterungsmodell für Serientermine (Common Data Service) | Microsoft-Dokumentation
+description: Das Teilerweiterungsmodell ist ein asynchroner Auftrag in , der in vorab festgelegten Intervallen ausgeführt wird und auf der Organisationsebene definiert und zum Erstellen wiederkehrender Termininstanzen verwendet wird.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1f8db578a771cca7985a3a52110257ee35692a16
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748660"
 ---
 # <a name="recurring-appointment-partial-expansion-model"></a>Teilerweiterungsmodell für Serientermine
 
@@ -43,7 +49,7 @@ Common Data Service implementiert ein Teilerweiterungsmodell, um Serienterminins
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  Organization.RecurrenceExpansionSynchCreateMax  |                                                                                             Dies ist der maximale Anzahl von Termininstanzen, die zum Zeitpunkt der Erstellung oder Synchronisierung eines Serientermins erstellt wird. Sie müssen einen Ganzzahlwert angeben, der der Anzahl von Instanzen entspricht. Dieser Wert entspricht "n".                                                                                              |
 |         Organization.PastExpansionWindow         |    Dies ist der maximale gültige Zeitraum in der Vergangenheit, bis zu welchem Serientermine mit Dynamics 365 for Outlook erweitert oder synchronisiert werden können. Sie müssen einen Ganzzahlwert angeben, der der Anzahl von Monaten entspricht.<br /><br /> Der Wert dieses Attributs bestimmt das Vergangenheitsinstanz-Stichdatum zum Erweitern oder Synchronisieren der Serientermininstanzen.    |
-|        Organization.FutureExpansionWindow        | Dies ist der maximale gültige Zeitraum in der Zukunft, bis zu welchem Serientermine mit Dynamics 365 for Outlook erweitert oder synchronisiert werden können. Sie müssen einen Ganzzahlwert angeben, der der Anzahl von Monaten entspricht.<br /><br /> Der Wert dieses Attributs bestimmt das Zukunftsinstanz-Stichdatum zum Erweitern oder Synchronisieren der Serientermininstanzen. |
+|        Organization.FutureExpansionWindow        | Dies ist der maximale gültige Zeitraum in der Zukunft, bis zu welchem Serientermine mit  Dynamics 365 for Outlook erweitert oder synchronisiert werden können. Sie müssen einen Ganzzahlwert angeben, der der Anzahl von Monaten entspricht.<br /><br /> Der Wert dieses Attributs bestimmt das Zukunftsinstanz-Stichdatum zum Erweitern oder Synchronisieren der Serientermininstanzen. |
 | Organization.RecurrenceExpansionJobBatchInterval |                                                                                                                                                                               Dies ist die Häufigkeit in Sekunden, nach der der Teilerweiterungsauftrag ausgelöst wird.                                                                                                                                                                                |
 |   Organization.RecurrenceExpansionJobBatchSize   |                                                                                                                                                                                  Dies ist die Anzahl der Instanzen, die bei jeder Ausführung des asynchronen Auftrags erweitert werden.                                                                                                                                                                                   |
 

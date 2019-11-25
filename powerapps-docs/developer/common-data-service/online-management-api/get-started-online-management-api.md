@@ -1,6 +1,6 @@
 ---
 title: Erste Schritte mit der Online Management API für Common Data Service| MicrosoftDocs
-description: 'Enthält grundlegende Informationen, die Ihnen den Einstieg in die Online Admin API für Common Data Service erleichtern.'
+description: Enthält grundlegende Informationen, die Ihnen den Einstieg in die Online Admin API für Common Data Service erleichtern.
 ms.date: 09/30/2019
 ms.service: powerapps
 ms.topic: conceptual
@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 22ea4e2dc02ee272af3cb8fa916d8d20219b6b6a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752954"
 ---
 # <a name="get-started-with-online-management-api"></a>Erste Schritte mitOnline Management API 
 
@@ -24,11 +30,11 @@ Um die Online Management API zu verwenden, müssen Ihnen folgende Administratorr
 - Globaler Administrator
 - Serviceadministrator.
 
-Weitere Information zu diesen Rollen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://support.office.com/en-us/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
+Weitere Information zu diesen Rollen finden Sie unter [Informationen zu Office 365 Administratorrollen](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
 
 ## <a name="service-url"></a>Dienst-URL
 
-Der Service URL definiert die Endpunktadresse zum Zugreifen auf REST API. Um beliebige Aktionen mithilfe der Online Verwaltung API auszuführen, müssen Sie die Anforderungs-URL im folgenden Format angeben:
+Der Service URL definiert die Endpunktadresse zum Zugreifen auf REST-API. Um beliebige Aktionen mithilfe der Online Verwaltung API auszuführen, müssen Sie die Anforderungs-URL im folgenden Format angeben:
 
 `{ServiceUrl}/api/v1.2/{resource}`
 
@@ -61,8 +67,8 @@ Die Online Management API hat folgenden Standardanforderung und Antwortheader.
 
 | Kopfzeile | Typ | Beschreibung  |
 |--------|------|--------------|
-|**Sprache-akzeptieren**|String|Gibt die bevorzugte Sprache für die Antwort an. Weitere Informationen zur Kopfzeile: [Sprache-akzeptieren (MDN-Internet-Dokumente)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)|
-|**Autorisierung**|String|Gibt die Anmeldeinformationen an, um einen Benutzer mit dem Online Management-API-Dienst zu authentifizieren. Weitere Informationen zur Kopfzeile: [Autorisierung (MDN-Internet-Dokumente)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)|
+|**Sprache-akzeptieren**|String|Gibt die bevorzugte Sprache für die Antwort an. Weitere Informationen zur Kopfzeile: [Sprache-akzeptieren (MDN-Internet-Dokumente)](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language)|
+|**Autorisierung**|String|Gibt die Anmeldeinformationen an, um einen Benutzer mit dem Online Management-API-Dienst zu authentifizieren. Weitere Informationen zur Kopfzeile: [Autorisierung (MDN-Internet-Dokumente)](https://developer.mozilla.org/docs/Web/HTTP/Headers/Authorization)|
 
 Informationen zum Festlegen dieser Kopfzeilen in Ihrer Anfrage finden Sie unter [Authentifizieren Sie sich, um die Online Online Management-API zu verwenden](authentication.md).
 

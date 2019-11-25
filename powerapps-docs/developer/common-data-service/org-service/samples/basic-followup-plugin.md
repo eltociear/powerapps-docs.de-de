@@ -1,6 +1,6 @@
 ---
-title: 'Beispiel: Erstellen Sie ein Basis-Plugin (Common Data Service) | Microsoft Docs'
-description: 'Dieses Beispiel zeigt, wie man ein einfaches Plug-in schreibt, das eine Folgeaktivität erstellt.'
+title: 'Beispiel: Erstellen eines Basic-Plug-Ins (Common Data Service) | Microsoft-Dokumentation'
+description: Dieses Beispiel zeigt, wie man ein einfaches Plug-in schreibt, das eine Folgeaktivität erstellt.
 ms.custom: ''
 ms.date: 1/29/2019
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 43e914fd10d05b4c93857fe05b414562070c7907
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748530"
 ---
 # <a name="sample-create-a-basic-plug-in"></a>Beispiel: Erstellen eines grundlegenden Plug-Ins
 
@@ -22,7 +28,7 @@ Dieses Beispiel zeigt, wie man ein einfaches Plug-in schreibt, das eine Folgeakt
 ## <a name="how-to-run-this-sample"></a>Wie man dieses Beispiel ausführt
 
 1. Um eine lokale Kopie zu erhalten, laden Sie den [Beispielbericht](https://github.com/Microsoft/PowerApps-Samples) herunter, oder klonen Sie ihn. Dieses Beispiel befindet sich unter PowerApps-Samples-master\cds\orgsvc\C#\FollowupPlugin.
-2. Öffnen Sie die Beispiellösung in Visual Studio, navigieren Sie zu den Eigenschaften des Projekts und vergewissern Sie sich, dass die Assembly während des Build signiert wird. Drücken Sie F6, um die Assembly des Samples zu erstellen (FollowupPlugin.dll).
+2. Öffnen Sie die Beispiellösung in Visual Studio, navigieren Sie zu den Eigenschaften des Projekts und vergewissern Sie sich, dass die Assembly während des Builds signiert wird. Drücken Sie F6, um die Assembly des Samples zu erstellen (FollowupPlugin.dll).
 3. Führen Sie das Plug-in-Registrierungstool aus und registrieren Sie die Assembly des Samples in der Sandbox und Datenbank des D365-Servers. Wenn Sie einen Schritt registrieren, geben Sie die Option Nachricht erstellen, Kontoentität und asynchronen Modus an.
 4. Führen Sie mit der D365-Anwendung den entsprechenden Vorgang aus, um die Nachricht und Entitätsanforderung aufzurufen, auf der Sie das Plug-in registriert haben (Erstellen eines Kontos).
 5. Nach dem Ausführen des Plugins sollten Sie einen neuen Trace-Log-Eintrag "FollowupPlugin: Erfolgreich die Aufgabe Aktivität" und eine neue Aktivität mit dem Betreff "E-Mail an den neuen Kunden senden" angelegt. die in 7 Tagen aktiviert werden soll.

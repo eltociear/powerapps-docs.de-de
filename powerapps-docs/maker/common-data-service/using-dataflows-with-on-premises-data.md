@@ -1,6 +1,6 @@
 ---
 title: Verwendung eines lokalen Daten-Gateways in Power Platform Dataflows | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie ein lokales Daten-Gateway in Power Platform Dataflows verwenden.'
+description: Erfahren Sie, wie Sie ein lokales Daten-Gateway in Power Platform Dataflows verwenden.
 ms.custom: ''
 ms.date: 08/05/2019
 ms.reviewer: ''
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752236"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Verwendung eines lokalen Daten-Gateways in Power Platform Dataflows
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -46,7 +52,7 @@ Mit einem Gateway können Sie sich über diese Verbindungen mit lokalen Daten ve
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   Ein PowerApps-Konto. Sie haben keins? [Melden Sie sich für 30 Tage kostenlos an](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps).
+-   Ein PowerApps-Konto. Sie haben keins? [Melden Sie sich für 30 Tage kostenlos an](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
 -   Administrative Berechtigungen auf einem Gateway. Diese Berechtigungen werden standardmäßig für von Ihnen installierte Gateways bereitgestellt. Administratoren können anderen Personen Berechtigungen für Gateways erteilen. 
 
@@ -55,11 +61,11 @@ Mit einem Gateway können Sie sich über diese Verbindungen mit lokalen Daten ve
 -   Gateways und lokale Verbindungen können nur in der Standardumgebung des Benutzers erstellt und verwendet werden. Mehr Informationen: [Arbeiten mit Umgebungen und Microsoft PowerApps](../canvas-apps/working-with-environments.md).
 
 ## <a name="install-a-gateway"></a>Ein Gateway installieren
-1.  Wählen Sie im linken Navigationsbereich von [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Gateways**.
+1.  Wählen Sie im linken Navigationsbereich von [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Gateways**.
 
     ![Gateways in der linken Navigationsleiste](media/nav-pane-gateways.png)
 
-2.  Wählen Sie ein Gateway aus der Liste aus. Wenn Sie keine Administratorrechte für ein Gateway haben, wählen Sie [Installieren Sie ein Gateway jetzt](http://go.microsoft.com/fwlink/?LinkID=820931), und folgen Sie dann den Anweisungen des Assistenten.
+2.  Wählen Sie ein Gateway aus der Liste aus. Wenn Sie keine Administratorrechte für ein Gateway haben, wählen Sie [Installieren Sie ein Gateway jetzt](https://go.microsoft.com/fwlink/?LinkID=820931), und folgen Sie dann den Anweisungen des Assistenten.
 
      ![Gateways installieren](media/install-gateway-now.png)
 
@@ -81,7 +87,7 @@ Sie können das für einen bestimmten Dataflow verwendete Unternehmensgateway un
 
 
 ## <a name="view-and-manage-gateway-permissions"></a>Anzeigen und Verwalten von Gateway-Berechtigungen
-1.  Wählen Sie im linken Navigationsbereich von [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Gateways** und wählen Sie dann das gewünschte Gateway aus.
+1.  Wählen Sie im linken Navigationsbereich von [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **Gateways** und wählen Sie dann das gewünschte Gateway aus.
 
 2.  Um einen Benutzer zu einem Gateway hinzuzufügen, wählen Sie **Benutzer**, geben Sie einen Benutzer oder eine Gruppe an und geben Sie dann eine Berechtigungsstufe an:
 

@@ -1,6 +1,6 @@
 ---
-title: Datenimport konfigurieren (Common Data Service) | Microsoft Docs
-description: 'Die Konfigurationsinformationen, die zum Importieren von Daten erforderlich sind, sind in der Datenimportentität und der Importquelldateientität enthalten.'
+title: Konfigurieren des Datenimports (Common Data Service) | Microsoft-Dokumentation
+description: Die Konfigurationsinformationen, die zum Importieren von Daten erforderlich sind, sind in der Datenimportentität und der Importquelldateientität enthalten.
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de387cf362a8cef5971f7abf16afdd06a07cb32f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753030"
 ---
 # <a name="configure-data-import"></a>Konfiguration des Datenimports
 
@@ -49,12 +55,12 @@ Die Konfigurationsinformationen, die zum Importieren von Daten erforderlich sind
 - Lesen Sie den Inhalt der Quelldatei in den `ImportFile.Content` ein.  
   
 > [!IMPORTANT]
->  Es ist nicht empfohlen, Datensätze durch den programmgesteuerten Import von Daten zu aktualisieren. Verwenden Sie für die Aktualisierung die Datenexport- und Importfunktionen die Common Data Service-Webanwendung . Verwenden Sie **Exportieren zu Excel**, um Datensätze in eine XML-Spreadsheet 2003 (.xml) Datei zu exportieren. Dies ist der einzige gültige Quelldateityp für den Updatemodus. Der Rückimport der Daten aus der XML Spreadsheet 2003 (.xml)-Datei garantiert die Datenintegrität in Common Data Service. Verwenden Sie zum Import aktualisierter Daten den Common Data Service-Datenimport-Assistenten. Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu Common Data Service.  
+>  Es ist nicht empfohlen, Datensätze durch den programmgesteuerten Import von Daten zu aktualisieren. Verwenden Sie für die Aktualisierung die Datenexport- und Importfunktionen der Webanwendung Common Data Service. Verwenden Sie **Exportieren zu Excel**, um Datensätze in eine XML-Spreadsheet 2003 (.xml) Datei zu exportieren. Dies ist der einzige gültige Quelldateityp für den Updatemodus. Der Rückimport der Daten aus der XML Spreadsheet 2003 (.xml)-Datei garantiert die Datenintegrität in Common Data Service. Verwenden Sie zum Import aktualisierter Daten den Common Data Service-Datenimport-Assistenten. Weitere Informationen zum Datenimport-Assistenten finden Sie in der Hilfe zu Common Data Service.  
  
 ### <a name="see-also"></a>Siehe auch
 
 [Importieren von Daten](import-data.md)<br />
-[Blogbeitrag: Wie Anhänge automatisch importiert werden](http://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx)<br />
+[Blogbeitrag: Wie Anhänge automatisch importiert werden](https://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx)<br />
 [Vorbereiten einer Quelldatei für den Import](prepare-source-files-import.md)<br />
 [Erstellen von Datenzuordnungen für den Import](create-data-maps-for-import.md)<br />
 [Hinzufügen von Transformationszuordnungen für den Import](add-transformation-mappings-import.md)<br />

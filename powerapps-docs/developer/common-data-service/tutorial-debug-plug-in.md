@@ -1,5 +1,5 @@
 ---
-title: 'Lernprogramm: Debuggen eines Plug-In (Common Data Service) | MicrosoftDocs'
+title: 'Tutorial: Debuggen eines Plug-Ins (Common Data Service) | Microsoft-Dokumentation'
 description: 'Dieses Lernprogramm ist das zweite in der Serie, in der Ihnen gezeigt wird, wie Sie mit Plug-Ins arbeiten. '
 ms.custom: ''
 ms.date: 1/28/2019
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cc96a611221dadb2f43926c1714414f09688b0e0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748520"
 ---
 # <a name="tutorial-debug-a-plug-in"></a>Lernprogramm: Debuggen eines Plug-Ins
 
@@ -33,7 +39,7 @@ Eine detaillierte Erläuterung der unterstützenden Konzepte und technischen Det
 
 ## <a name="goal"></a>Ziel
 
-Da ein Plug-In auf einen Remoteserver ausgeführt wird, können Sie keinen Debugger an den Prozess anhängen. Der Plug-In-Profiler erfasst ein Profil eines ausführenden Plug-Ins und ermöglicht Ihnen die lokale Ausführung des Plug-Ins mit Visual Studio erneut wiederzugeben.
+Da ein Plug-In auf einen Remoteserver ausgeführt wird, können Sie keinen Debugger an den Prozess anhängen. Der Plug-In-Profiler erfasst ein Profil eines ausführenden Plug-Ins und ermöglicht Ihnen, die Ausführung des Plug-Ins mit Visual Studio lokal zu wiederholen.
 
 
 
@@ -49,7 +55,7 @@ Da ein Plug-In auf einen Remoteserver ausgeführt wird, können Sie keinen Debug
 
     ![Profiler installieren](media/tutorial-debug-plug-in-install-profiler.md.png)
 
-1. Dies installiert eine neue verwaltete Lösung namens Plug-in Profiler in Ihrer Common Data Service-Umgebung. Es dauert eine Minute oder zwei, den Vorgang abzuschließen.
+1. Dies installiert eine neue verwaltete Lösung namens Plug-in-Profiler in Ihrer Common Data Service-Umgebung. Es dauert eine Minute oder zwei, den Vorgang abzuschließen.
 
 ## <a name="start-profiling"></a>Profilierung starten
 
@@ -86,7 +92,7 @@ Weitere Informationen zur Ausführung des Profils finden Sie unter [Ausführen d
 
     ![Festlegen eines Haltepunktes](media/tutorial-debug-plug-in-set-break-point.png)
 
-1. In Ihrem Visual Studio-Projekt wählen Sie **Debuggen** > **Zum Verarbeiten anfügen...** aus.
+1. In Ihrem Visual Studio-Projekt wählen Sie **Debuggen** > **Zum Verarbeiten anfügen …** aus.
 
     ![Befehl "Zum Verarbeiten anfügen"](media/tutorial-debug-plug-in-attach-to-process.png)
 
@@ -110,7 +116,7 @@ Weitere Informationen zur Ausführung des Profils finden Sie unter [Ausführen d
 
 ## <a name="repeat"></a>Wiederholen
 
-Zur Wiederholung: Wählen Sie in Ihrem Visual Studio-Projekt **Debuggen** > **Wieder anfügen** zur Verarbeitung aus, und klicken Sie im Dialogfeld **Plug-In-Ausführung wiederholen** klicken Sie erneut auf **Ausführen starten**.
+Zur Wiederholung: Wählen Sie in Ihrem Visual Studio-Projekt **Debuggen** > **Wieder anfügen** zur Verarbeitung aus, und klicken Sie im Dialogfeld **Plug-In-Ausführung wiederholen** erneut auf **Ausführung beginnen**.
 
 ## <a name="stop-profiling"></a>Stoppen Sie die Profilerstellung
 

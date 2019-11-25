@@ -1,6 +1,6 @@
 ---
 title: Steuerelementsatus-API | Microsoft Docs
-description: null
+description: ''
 keywords: PowerApps; PowerApps Component Framework
 ms.author: nabuthuk
 author: Nkrb
@@ -11,8 +11,13 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
+ms.openlocfilehash: 57982a4e9a4ee50954eb7b5f12e75a8ca43544ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748784"
 ---
-
 # <a name="implementing-control-state-api-component"></a>Implementieren der Steuerelementstatus-API-Komponente
 
 Das PowerApps Component Framework ermöglicht es, den Status der Komponente für mehrere Renderings der Komponente in derselben Sitzung verfügbar zu halten. Es bietet Ihnen die Möglichkeit, Komponenten zu erstellen, die den Benutzerstatus während der Sitzung eines Benutzers zu wahren, wenn der Benutzer zur und von der Komponente navigiert.
@@ -20,7 +25,7 @@ Das PowerApps Component Framework ermöglicht es, den Status der Komponente für
 Wenn beispielsweise Ihre Code-Komponente eine lange Liste ist, durch die der Benutzer scrollen kann, können Sie die Funktion **_SetControlState_** nutzen, um die Position in der Liste zu speichern, die der Benutzer anzeigt, wenn er vom Formular fort navigiert. Sie können dann bei der Komponenteninitialisierung Logik hinzufügen, um den gespeicherten Status zu überprüfen und die Liste der Komponente an dem Punkt zu rendern, an dem der Benutzer zuvor gelesen hat.
 
 > [!div class="mx-imgBorder"] 
-> ![Steuerelementstatus-API](../media/control-state-api.png "Steuerelementstatus-API")
+> ![Steuerungsstatus API](../media/control-state-api.png "Steuerungsstatus API")
 
 ## <a name="available-for"></a>Verfügbar für
 
@@ -53,7 +58,7 @@ export class TSControlStateAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   // Div element to show the current selected color
@@ -66,7 +71,7 @@ export class TSControlStateAPI
   private _persistedSelectedLabel: string;
   // Data type used to store the various information as part of the state object.
   private _stateDictionary: ComponentFramework.Dictionary = {};
-  // References to HTML Button Elements rendered on the control
+  // references to HTML Button Elements rendered on the control
   private _buttonRed: HTMLButtonElement;
   private _buttonBlue: HTMLButtonElement;
   private _buttonGreen: HTMLButtonElement;
@@ -208,6 +213,7 @@ export class TSControlStateAPI
    * @param selectedColorElement The HTML Div Element that the results should be injected into
    */
   private onButtonClick(event: Event, selectedColorElement: HTMLDivElement) {
+    const eventTarget: Element = event.srcElement as Element;
     if (event.srcElement) {
       // Get the label and the selected color attributes from the div element that was clicked
       let label: string = event.srcElement.attributes.getNamedItem("value")!
@@ -294,4 +300,4 @@ export class TSControlStateAPI
 
 [Beispielkomponenten herunterladen](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps component framework-API-Referenz](../reference/index.md)<br/>
-[Schema-Referenz des PowerApps component framework](../manifest-schema-reference/index.md)
+[Manifestschemareferenz des PowerApps component framework](../manifest-schema-reference/index.md)
