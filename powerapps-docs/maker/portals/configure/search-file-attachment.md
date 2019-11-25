@@ -1,6 +1,6 @@
 ---
-title: Suchen in Datei Anlagen Inhalt in einem Portal | MicrosoftDocs
-description: Erfahren Sie, wie Sie das Portal für die Suche in Datei Anlagen Inhalt in einem Portal konfigurieren.
+title: Suche innerhalb des Inhalts von Dateianhängen in einem Portal | MicrosoftDocs
+description: Erfahren Sie, wie Sie Ihr Portal so konfigurieren, dass es innerhalb der Inhalte von Dateianhängen in einem Portal sucht.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,56 +11,56 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 52d7701ac84072c84886ea86969f28809d0e7960
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73551644"
+ms.locfileid: "2760442"
 ---
-# <a name="search-within-file-attachment-content"></a>In Datei Anlagen Inhalt suchen
+# <a name="search-within-file-attachment-content"></a>Suche im Dateianhangsinhalt
 
-Mithilfe der Anlage "Notizen" können Sie herunterladbare Dateien in Knowledge Base-Artikeln einschließen. Sie können Webdateien auch verwenden, um eine FAQ-Seite mit herunter ladbarem Inhalt zu erstellen.
+Sie können den Anhang der Notizen verwenden, um herunterladbare Dateien in Artikel der Wissensdatenbank aufzunehmen. Sie können auch Webdateien verwenden, um eine FAQ-Seite mit downloadbarem Inhalt zu erstellen.
 
-Sie können Ihr Portal so konfigurieren, dass Portalbenutzer innerhalb des Anlagen Inhalts der Knowledge Base-Artikel suchen können. Dadurch können Benutzer die gesuchten Informationen finden.
+Sie können Ihr Portal so konfigurieren, dass Portalbenutzer innerhalb des Anhangsinhalts von Wissensdatenbankartikeln suchen können. Dies erleichtert es Benutzern, die Informationen zu finden, nach denen sie suchen.
 
-In Knowledge Base-Artikeln werden alle Notizen Anhänge mit dem definierten Präfix indiziert. In Webdateien werden die neuesten Notizen Anhänge indiziert.
+In Wissensdatenbankartikeln werden alle Notizanhänge mit dem definierten Präfix indiziert. In Webdateien werden die aktuellsten Notizenanhänge indiziert.
 
-Um die Anhänge zu indizieren, müssen Sie die folgenden Standorteinstellungen erstellen und deren Wert auf " **true**" festlegen:
+Um die Anhänge zu indizieren, müssen Sie die folgenden Website-Einstellungen erstellen und ihren Wert auf **True** festlegen:
 
-|Standort Einstellung|Beschreibung|
+|Website-Einstellung|Beschreibung|
 |------------|-----------|
-|Such-/indexnotesanlagen|Gibt an, ob der Inhalt von Notizen Anlagen in Knowledge Base-Artikeln und-Webdateien indiziert werden soll. Standardmäßig ist der Wert auf **false**festgelegt.|
-|Knowledgemanagement/displaynotes|Gibt an, ob Anlagen von Knowledge Base-Artikeln indiziert werden sollen. Standardmäßig ist der Wert auf **false**festgelegt.|
+|Suchen/IndexNotesAttachments|Gibt an, ob der Inhalt der Notizenanhänge in Wissensdatenbankartikeln sowie in Webdateien indiziert werden soll. Standardmäßig ist dies auf **False** festgelegt.|
+|KnowledgeManagement/DisplayNotes|Gibt an, ob Anhänge von Wissensdatenbankartikeln indiziert werden sollen. Standardmäßig ist dies auf **False** festgelegt.|
 |||
 
 > [!NOTE]
-> Nur die Dateien, die an Wissens Daten Bank Artikel angefügt sind, können durchsucht werden. Die Dateien, die an Webdateien angefügt sind, können nicht durchsucht werden.
+> Nur die Dateien, die an Wissensartikeln angefügt werden, können durchsucht werden. Die Dateien, die an Webdateien angefügt werden, sind nicht durchsuchbar.
 
-Wenn Sie nach einem Begriff suchen, umfassen die Suchergebnisse auch Anhänge. Wenn der Suchbegriff mit einer Notizen Anlage übereinstimmt, wird auch der Link zum entsprechenden Knowledge Base-Artikel bereitgestellt. Um herunterladbare Anlagen anzuzeigen, wählen Sie im linken Bereich unter **Datensatz-Typ** die Option **Downloads** aus. Um die Bezeichnung " **Downloads** " zu ändern, bearbeiten Sie den Code Ausschnitt für die Suche/Facetten/Downloads. Standardmäßig ist der Wert auf **Downloads**festgelegt.
+Wenn Sie nach einem Begriff suchen, schließen die Suchergebnisse auch Anhänge mit ein. Wenn der Suchbegriff mit einem Notizenanhang übereinstimmt, wird der Link zum entsprechenden Wissensdatenbankartikel ebenfalls angegeben. Um die downloadbaren Anhänge anzuzeigen, wählen Sie **Downloads** unter **Datensatztyp** im linken Bereich aus. Um die Beschriftung **Downloads** zu ändern, bearbeiten Sie den Inhaltsausschnitt Suche/Facette/Downloads. Der Wert ist standardmäßig auf **Downloads** festgelegt.
 
-![Anhang herunterladen](../media/search-attachment-content.png "Anhang herunterladen") 
+![Anlage herunterladen](../media/search-attachment-content.png "Anlage herunterladen") 
 
 > [!NOTE]
-> - Um diese Funktion verwenden zu können, müssen Sie die [relevanzsuche aktivieren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/configure-relevance-search-organization). Weitere Informationen: [relevanzsuche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results)
+> - Um diese Funktionalität nutzen zu können, müssen Sie [die Relevanzsuche aktivieren](https://docs.microsoft.com/dynamics365/customer-engagement/admin/configure-relevance-search-organization). Weitere Informationen [Relevanzsuche](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results)
  
-## <a name="update-portal-configurations"></a>Aktualisieren von Portal Konfigurationen
+## <a name="update-portal-configurations"></a>Portalkonfigurationen aktualisieren
 
-Wenn Sie bereits über ein Portal verfügen, bevor Sie 2018 und das Portal auf die neueste Version aktualisiert haben, müssen Sie die folgenden Konfigurationen verwenden, um die gleiche Benutzer Leistung wie bei einer neuen Portal Installation zu erhalten.
+Wenn Sie bereits ein Portal vor April 2018 haben und Ihr Portal auf die aktuelle Version aktualisiert haben, müssen Sie die folgenden Konfigurationen verwenden, um dieselbe Benutzererfahrung zu haben, wie bei eine neuen Portalinstallation.
 
-**Inhalts Ausschnitte**
+**Inhaltsausschnitte**
 
-Um die in den Suchergebnissen angezeigte Bezeichnung für Anmerkung-und Webdatei Downloads zu ändern, erstellen Sie eine Suche/Facette/Downloads für Inhalts Ausschnitte, und legen Sie dann ihren Wert nach Bedarf fest. Der Standardwert ist **Downloads**.
+Um die in den Suchergebnissen für Anmerkung und Webdateidownloads angezeigte Beschriftung zu ändern, erstellen Sie einen Inhaltsausschnitt „Suche/Facette/Downloads”, und legen Sie dessen Wert dann als erforderlich fest. Der Standardwert ist **Downloads**.
 
 **Webdateien**
 
-Der Inhalt von Datei Anlagen, die Webdateien zugeordnet sind, kann jetzt indiziert werden. Sie können vorhandene Webdateien für CSS-Dateien und Bilddateien (z. b. Bootstrap. min. CSS, Theme. CSS und HomeHero. jpg) aktualisieren, damit Sie von der Suche ausgeschlossen werden. 
+Der Inhalt von Dateianhängen, die Webdateien zugeordnet sind, kann jetzt indiziert werden. Sie können vorhandene Webdateien so aktualisieren, dass CSS-Dateien und Bilddateien (beispielsweise bootstrap.min.css, theme.css und homehero.jpg) von der Suche ausgeschlossen sind. 
 
-1. Öffnen Sie die [Portal Verwaltungs-App](configure-portal.md) , und navigieren Sie zu **Portale** > **Webdateien**.
+1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md) und navigieren Sie zu **Portale** > **Webdateien**.
 2. Öffnen Sie die Datei, die von der Suche ausgeschlossen werden soll.
-3. Wählen Sie unter **Verschiedenes**die Option **Ja** im Feld **aus Suche ausschließen aus** .
+3. Wählen Sie unter **Verschiedenes** die Option **Ja** im Feld **Von der Suche ausschließen** aus.
 
 **Webvorlagen**
 
-Die Webvorlage für die facetesultsuchergebnisvorlage wird überarbeitet, um Dateien anzuzeigen, die mit Knowledge Base-Artikeln als primäre Suchergebnis Elemente verknüpft sind. Sie müssen die Webvorlage für Facetten Suchergebnis Vorlagen auf folgende Quelle aktualisieren:
+Die Webvorlage „Facettierte Suche – Ergebnisvorlage” wird überarbeitet, sodass Dateien, die Wissensdatenbankartikeln zugeordnet sind, als primäre Suchergebniselemente mit einem zugehörigen Artikellink angezeigt werden. Sie müssen die Webvorlage „Facettierte Suche – Ergebnisvorlage” auf die folgende Quelle aktualisieren.
 
 ```
 {% assign openTag = '{{' %}
@@ -112,15 +112,15 @@ Die Webvorlage für die facetesultsuchergebnisvorlage wird überarbeitet, um Dat
 {%endraw%}
 ```
 
-**Website Einstellungen**
+**Website-Einstellungen**
 
-Sie müssen der Such-/Abfrage-Site-Einstellung `\_logicalname:annotation~0.9^0.25` Wert hinzufügen. Nachdem der Wert hinzugefügt wurde, sollte er wie folgt lauten:
+Sie müssen den Wert `\_logicalname:annotation~0.9^0.25` der Website-Einstellung „Suche/Abfrage” hinzufügen. Nach dem er hinzugefügt wurde, sollte der Wert folgendermaßen sein:
 ```
 +(@Query) \_title:(@Query) \_logicalname:knowledgearticle~0.9^0.3 \_logicalname:annotation~0.9^0.25 \_logicalname:adx_webpage~0.9^0.2 -\_logicalname:adx_webfile~0.9 adx_partialurl:(@Query) \_logicalname:adx_blogpost~0.9^0.1 -\_logicalname:adx_communityforumthread~0.9
 ```
 
-Wenn Sie die Facetten so konfigurieren möchten, dass Sie Anmerkungen in Zusammenhang mit Knowledge Base-Artikeln und Webdateien in einem einzelnen Facetten gruppieren, bearbeiten Sie den Namen der Website Einstellung Search/recordtypefacetsentities, und fügen Sie `;Downloads:annotation,adx_webfile` an seinen Wert an.
+Um die Facets zu konfigurieren, damit Anmerkungen gruppiert werden, die Wissensdatenbankartikeln und Webdateien in einem einzelnen Facet zugeordnet sind, bearbeiten Sie den Website-Einstellungsname „Suche/RecordTypeFacetsEntities” und fügen Sie `;Downloads:annotation,adx_webfile` an dessen Wert an.
 
-Um zu ermöglichen, dass mit Wissens Daten Bank Artikeln verknüpfte Anlagen im Portal und in den Suchergebnissen angezeigt werden, bearbeiten Sie die Website Einstellung **knowledgemanagement/displaynotes** , und legen Sie Ihren Wert auf **true**fest. Die Website Einstellung " **knowledgemanagement/notesfilter** " enthält einen Präfix Wert, der dem Feld "Hinweis Text" in Notes vorangestellt werden muss. im Portal werden nur Notizen mit dem angegebenen Präfix Wert angezeigt. Standardmäßig ist der Wert \*Web\*, aber Sie können ihn über die Website Einstellung ändern.
+Um zuzulassen, dass Wissensdatenbankartikeln zugeordnete Anhänge im Portal und in den Suchergebnissen angezeigt werden, bearbeiten Sie die Website-Einstellung **KnowledgeManagement/DisplayNotes** und legen Sie deren Wert auf **True** fest. Die Website-Einstellung **KnowledgeManagement/NotesFilter** enthält einen Präfixwert, der dem Notizentextfeld bei Notizen vorangestellt werden muss. Nur Notizen mit dem angegebenen Präfixwert werden im Portal angezeigt. Der Standardwert ist \*WEB\*, aber Sie können ihn über die Website-Einstellung ändern.
 
-Zum Aktivieren der Indizierung von Datei Anlagen, die Notizen zugeordnet sind, erstellen Sie die **Such-/indexnotesattachments** -Website Einstellung, und legen Sie Ihren Wert auf **true**fest.
+Um die Indizierung von Dateianhängen zu aktivieren, die Notizen zugeordnet sind, erstellen Sie die Website-Einstellung **Search/IndexNotesAttachments**, und legen Sie deren Wert auf **True** fest.

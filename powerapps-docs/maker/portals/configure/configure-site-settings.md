@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Standorteinstellungen für ein Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen und Konfigurieren von Standorteinstellungen für ein Portal und globale Einstellungen für alle Portale in Ihrer Organisation.
+title: Konfigurieren der Websiteeinstellungen für ein Portal | MicrosoftDocs
+description: Anweisungen, Standortseinstellungen und Einstellungen für Portal- und globale Einstellungen für alle Portale im Unternehmen hinzuzufügen und zu konfigurieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,101 +11,101 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542729"
+ms.locfileid: "2759554"
 ---
-# <a name="configure-site-settings-for-portals"></a>Konfigurieren von Website Einstellungen für Portale
+# <a name="configure-site-settings-for-portals"></a>Konfigurieren Sie Websiteeinstellungen für Portale
 
-Eine Standort Einstellung ist ein konfigurierbarer, benannter Wert, der vom Website Code verwendet wird, um das Verhalten oder den visuellen Stil des Portals zu ändern. Wenn ein Entwickler den Website Code erstellt, verweist er in der Regel auf Site Einstellungen für verschiedene Komponenten, damit Endbenutzer die Einstellungs Werte ändern können, um die Website zu ändern, ohne den Code ändern, kompilieren und die Website erneut bereitstellen zu müssen.
+Eine Website-Einstellung ist ein konfigurierbarer benannter Wert, der von Websitecode verwendet wird, um das Verhalten oder die visuelle Darstellung des Portals zu ändern. Normalerweise, wenn ein Entwickler Websitecode erstellt, verweist er Website-Einstellungen für verschiedene Komponenten, damit der Endbenutzer die Einstellungswerte ändern kann, um die Website zu ändern, ohne den Code zu ändern und die Website neu zu kompilieren und bereitstellen zu müssen.
 
-Die in der Installation der powerapps-Portale bereitgestellten Beispiel Portale enthalten mehrere konfigurierbare Site Einstellungen für verschiedene Stile, mit denen viele visuelle Elemente innerhalb der Site geändert werden, wie z. b. Hintergrund Stil, Textfarbe und Layoutbreite.
-Sie können die folgenden Arten von Standorteinstellungen verwalten:
+Die Beispielportale, die mit der Installation von PowerApps-Portalen verfügbar sind, enthalten mehrere konfigurierbare Website-Einstellungen für verschiedene Stile, die verwendet werden, um viele Sichtelemente innerhalb der Website zu ändern, wie Hintergrundstil, Textfarbe und Layoutbreite.
+Die folgenden Typen von Websiteeinstellungen können verwaltet werden:
 
-- **Globale Portal Einstellungen**: Diese Einstellungen gelten für alle Portale, die der Common Data Service Umgebung zugeordnet sind, in der Sie hinzugefügt werden.
-- **Portal Site Einstellungen**: Diese Einstellungen gelten für bestimmte Portale (Website Datensätze), die der Common Data Service Umgebung zugeordnet sind, in der Sie hinzugefügt werden.
+- **Globale Portaleinstellungen**: Diese Einstellungen gelten für alle Portale, die der Common Data Service-Umgebung zugeordnet sind, in der sie hinzugefügt werden.
+- **Portalwebsite-Einstellungen**: Diese Einstellungen gelten für spezifische Portale (Websitedatensätze), die der Common Data Service-Umgebung zugeordnet sind, in der sie hinzugefügt werden.
 
 
-## <a name="manage-portal-site-settings"></a>Portal Site Einstellungen verwalten
+## <a name="manage-portal-site-settings"></a>Verwalten von Portalwebsite-Einstellungen
 
-1. Wechseln Sie zu den [Portal Einstellungen](../manage-existing-portals.md#settings) , und wählen Sie **Website Einstellungen**aus.
+1. Rufen Sie die [Portaleinstellungen](../manage-existing-portals.md#settings) auf und wählen Sie **Website-Einstellungen**.
 
-2. Wählen Sie **neu**aus, um eine neue Einstellung zu erstellen.
+2. Klicken Sie auf **Neu**, um eine neue Einstellung zu erstellen.
 
-3. Wählen Sie die im Raster aufgelistete **Website Einstellung** aus, um eine vorhandene Einstellung zu bearbeiten.
+3. Wenn Sie eine vorhandene Einstellung bearbeiten möchten: klicken Sie auf die **Websiteeinstellung**, die im Raster aufgelistet ist.
 
-4. Geben Sie Werte für die angegebenen Felder an: 
+4. Geben Sie die Werte für die bereitgestellten Felder an: 
 
-    - **Name**: eine Bezeichnung, auf die über den Website Code verwiesen wird, um die entsprechende Einstellung abzurufen. Der Name muss für die zugehörige Website eindeutig sein, da der Code, der die Einstellung abruft, den ersten Datensatz mit dem übereinstimmenden Namen erhält.
+    - **Name**: Eine durch Websitecode verwiesene Beschriftung, um die entsprechende Einstellung abzurufen. Der Name sollte für die zugehörige Website eindeutig sein, da der Code, der die Einstellung abruft, den ersten Datensatz wählt, der mit dem entsprechenden Namen gefunden wird.
     
-    - **Website**: die zugehörige Website. 
+    - **Website**: Die zugeordnete Website. 
     
-    - **Wert**: die Einstellung
+    - **Wert**: Die Einstellung
     
-    - **Beschreibung**: Zweck der Einstellung oder spezieller Anweisungen.
+    - **Beschreibung**: Der Zweck der Einstellung oder Spezialanweisungen.
 
-5. Wählen Sie **Speichern und Schließen** aus.
+5. Klicken Sie auf **Speichern und schließen**.
 
 > [!NOTE] 
-> Die Integration von Integration in Deutschland wird in der deutschen unabhängigen Cloud nicht unterstützt. Wenn Sie versuchen, die Einstellung bingmaps/Anmelde Informationen in dieser Umgebung zu erstellen, wird eine Fehlermeldung angezeigt.
+> Die Bing Maps-Integration wird in der deutschen Sovereign Cloud nicht unterstützt. Wenn Sie versuchen, die Einstellung für Bingmaps/Anmeldeinformationen in dieser Umgebung zu erstellen, wird eine Fehlermeldung angezeigt.
 
-## <a name="portal-site-settings"></a>Portal Website Einstellungen
+## <a name="portal-site-settings"></a>Portalseiteneinstellungen
 
 |Name|Value|Beschreibung|
 |----|-----|-----------|
-|Authentifizierung/Registrierung/Requirements-Bestätigung|Alarm |Der boolesche Wert true aktiviert die e-Mail-Bestätigung und deaktiviert die öffnende Registrierung. Standardwert: false |
-|Authentifizierung/Registrierung/Autorisierung|Alarm |Der boolesche Wert true aktiviert das Feature "Einladungscode" und deaktiviert die offene Registrierung. Standardwert: false |
-|Konferenz Name|Portale-Konferenz|Der Name eines adx_conference-Datensatzes, der die Konferenz für ein bestimmtes Portal darstellt.|
-|Helpdesk/caseberelementaktivierte|Fall|Ein boolescher Wert, der angibt, ob die Berechtigung des Helpdesk-falls aktiviert ist. Standardwert: false|
-|Helpdesk/Ablenkung/defaultselectedproductname| |Der Name eines Produktdaten Satzes, bei dem es sich um das in der Dropdown Liste ausgewählte Standardprodukt handelt, wenn mehr als ein Produkt vorhanden ist, bei dem der producttypeer-Code 100000001 entspricht.|
-|Profil/forcesignup|Alarm|Ein boolescher Wert, wenn er auf "true" festgelegt ist, zwingt den Benutzer, seine Profilinformationen zu aktualisieren, bevor ihm der Zugriff auf den Inhalt der Website gewährt wird. Standardwert: false|
-|Profil/showmarketingoptionspanel|Fall|Ein boolescher Wert, der angibt, ob der Bereich, in dem die Felder aufgelistet werden, angezeigt werden soll, um die Kommunikationseinstellungen für Marketing im Profil anzugeben. Standardwert: false|
-|Suchen/aktivieren|Fall|Ein boolescher Wert, der angibt, ob die Suche aktiviert ist.|
-|suchen/filtern|Inhalt: adx_webpage; Ereignisse: adx_event, adx_eventschedule;<br>Blogs: adx_blog, adx_blogpost, adx_blogpostcomment;<br>Foren: adx_communityforum, adx_communityforumthread, adx_communityforumpost;<br>Ideen: adx_ideaforum, adx_idea, adx_ideacomment;<br>Probleme: adx_issueforum, adx_issue, adx_issuecomment; Helpdesk: Incident|Eine Auflistung von Filteroptionen für den logischen Such Namen. Wenn Sie hier einen Wert definieren, werden der Site weiten Suche Dropdown Filteroptionen hinzugefügt. Dieser Wert sollte in Form von Name-Wert-Paaren vorliegen, wobei Name und Wert durch einen Doppelpunkt getrennt sind, und Paare, die durch ein Semikolon voneinander getrennt sind.<br>Beispiel: "Foren: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Blogs: adx_blog, adx_blogpost, adx_blogpostcomment ".|
-|Search/indexqueryname|Portal Suche|Der Name der von der Portal Suchabfrage verwendeten Systemansicht. Standard: Portal Suche|
-|Suchen/Abfragen|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0,1-_logicalname: adx_communityforumthread ~ 0.9|Überschreiben Sie die Abfrage für die Suche nach Websites, um zusätzliche Gewichtungen und Filter anzuwenden. @Query ist der von einem Benutzer eingegebene Abfragetext. Lucene-Abfrage Syntax Referenz: [https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
-|Suchen/Wort Stamm Erkennung|Englisch|Die Sprache, die vom Wort Stamm Algorithmus der Portal Suche verwendet wird. Standard: Englisch|
-|Customersupport/displayalluseractivitiesontimeline|Alarm| |
-|Authentication/[Protokoll]/[Anbieter]/AllowContactMappingWithEmail| |Ermöglicht die automatische Zuordnung zu einem Kontaktdaten Satz basierend auf der e-Mail. Klicken Sie [hier](azure-ad-b2c.md#allow-auto-association-to-a-contact-record-based-on-email), um weitere Informationen zu erhalten.|
+|Authentication/Registration/RequiresConfirmation|FALSCH |Ein boolescher Wert von "Wahr" aktiviert die E-Mail-Bestätigung und deaktiviert die offene Registrierung. Standard: Falsch |
+|Authentication/Registration/RequiresInvitation|FALSCH |Ein boolescher Wert von "Wahr" aktiviert die Einladungscodefunktion und deaktiviert die offene Registrierung. Standard: Falsch |
+|conference-name|Portalkonferenz|Der Name eines adx_conference-Datensatzes, der die Konferenz für ein gegebenes Portal darstellt.|
+|HelpDesk/CaseEntitlementEnabled|WAHR|Ein boolescher Wert, der angibt, ob Helpdesk-Anfrageberechtigung aktiviert ist. Standard: false|
+|Helpdesk/Abweisung/DefaultSelectedProductName| |Der Name eines Produktdatensatzes, der das standardmäßig ausgewählte Produkt in der Dropdownliste ist, wird auf der Helpdesk-Fallabweisung angezeigt wird, wenn bei mehr als einem Produkt der Produkttypcode 100000001 gleicht.|
+|Profil/ForceSignUp|FALSCH|Ein boolescher Wert der den Benutzer, wenn er auf "Wahr" festgelegt ist, seine Profilinformationen zu aktualisieren, bevor sie Zugriff auf die Websiteinhalte erhalten. Standard: Falsch|
+|Profil/ShowMarketingOptionsPanel|WAHR|Ein boolescher Wert, der angibt, ob der Bereich angezeigt wird, in dem die Felder aufgeführt werden, in denen die Marketingkommunikationseinstellungen im Profil angegeben werden. Standard: Falsch|
+|Suche/Aktivieren|WAHR|Ein boolescher Wert, der angibt, ob die Suche aktiviert ist oder nicht.|
+|Suche/Filter|Content:adx_webpage;Events:adx_event,adx_eventschedule;<br>Blogs:adx_blog,adx_blogpost,adx_blogpostcomment;<br>Foren: adx_communityforum, adx_communityforumthread, adx_communityforumpost;<br>Ideas:adx_ideaforum,adx_idea,adx_ideacomment;<br>Probleme:adx_issueforum,adx_issue,adx_issuecomment;Help Desk:Vorfall|Eine Sammlung von Filteroptionen für logische Suchbegriffe. Wenn Sie hier einen Wert definieren, werden der Site-weiten Suche Dropdown-Filteroptionen hinzugefügt. Dieser Wert sollte in Form von Name/Wert-Paaren vorliegen, wobei Name und Wert durch einen Doppelpunkt und Paare durch ein Semikolon getrennt sind.<br>Zum Beispiel "Foren:adx_communityforum,adx_communityforumthread,adx_communityforumpost;Blogs:adx_blog,adx_blogpost,adx_blogpostcomment".|
+|Suchen/IndexQueryName|Portalsuche|Der Name der Systemansicht wird von der Portalsucheabfrage verwendet. Standard: Portalsuche|
+|Suche/Abfrage|+(@Query) _title:(@Query) _logicalname:adx_webpage~0.9^0.2<br> -_logicalname:adx_webfile~0.9 adx_partialurl:(@Query)<br> _logicalname:adx_blogpost~0.9^0.1 -_logicalname:adx_communityforumthread~0.9|Außerkraftsetzung der Abfrage für Standortssuche, um zusätzliche Gewichtungen und Filter anzuwenden. @Query ist der Abfragetext, der von einem Benutzer eingegeben wird. Lucene-Abfragesyntaxverweis: [https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
+|Suchen/Wortstammerkennungen|Englisch|Die Sprache, die vom Wortstammerkennungsalgorithmus der Portalsuche verwendet wird. Standard: Englisch|
+|CustomerSupport/DisplayAllUserActivitiesOnTimeline|FALSCH| |
+|Authentication/[Protokoll]/[Anbieter]/AllowContactMappingWithEmail| |Zulassen der automatischen Zuordnung zu einem Kontaktdatensatz auf Grundlage der E-Mail-Adresse. Weitere Informationen erhalten Sie [hier](azure-ad-b2c.md#allow-auto-association-to-a-contact-record-based-on-email).|
 |||
 
-Website Einstellungen für verschiedene Portal Features finden Sie unter:
+Für die Website-Einstellungen bezüglich verschiedener Portalfunktionen siehe:
 
-- [Authentifizierungs Identität](set-authentication-identity.md)
-- [Azure AD B2C Anbieter](azure-ad-b2c.md)
-- [OAuth 2,0](configure-oauth2-settings.md)
-- [Open ID Connect](configure-openid-settings.md)
+- [Authentifizierungsidentität](set-authentication-identity.md)
+- [Azure AD-B2C-Anbieter](azure-ad-b2c.md)
+- [OAuth 2.0](configure-oauth2-settings.md)
+- [Offener ID-Inhalt](configure-openid-settings.md)
 - [WS-Verbund](configure-ws-federation-settings.md)
-- [SAML 2,0](configure-saml2-settings.md)
-- [Identitäts Anbieter zu Azure AD B2C migrieren](migrate-identity-providers.md)
-- [In Datei Anlagen Inhalt suchen](search-file-attachment.md)
-- [Verhalten und Format des Felds "Datum und Uhrzeit"](behavior-format-date-time-field.md)
-- [Geolozierung hinzufügen](add-geolocation.md)
-- [Implementieren allgemeiner Datenschutzbestimmungen](https://docs.microsoft.com/dynamics365/customer-engagement/portals/implement-gdpr)
-- [Zwischenspeichern von Kopf-und Fußzeilen Ausgabe aktivieren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/enable-header-footer-output-caching)
+- [SAML 2.0](configure-saml2-settings.md)
+- [Identitätsanbieter nach Azure AD B2C migrieren](migrate-identity-providers.md)
+- [Suche im Dateianhangsinhalt](search-file-attachment.md)
+- [Verhalten und Format des Datums- und Uhrzeitfelds](behavior-format-date-time-field.md)
+- [Hinzufügen einer Geolocation](add-geolocation.md)
+- [Datenschutz-Grundverordnung implementieren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/implement-gdpr)
+- [Zwischenspeichern von Kopfzeilen- und Fußzeilenausgaben aktivieren](https://docs.microsoft.com/dynamics365/customer-engagement/portals/enable-header-footer-output-caching)
 
-## <a name="manage-global-portal-settings"></a>Verwalten der Einstellungen des globalen Portals
+## <a name="manage-global-portal-settings"></a>Verwalten von globalen Portaleinstellungen
 
-1. Wechseln Sie zu den [Portal Einstellungen](../manage-existing-portals.md#settings) , und wählen Sie **Website Einstellungen**aus.
+1. Rufen Sie die [Portaleinstellungen](../manage-existing-portals.md#settings) auf und wählen Sie **Website-Einstellungen**.
 
-2. Wechseln Sie zu **Einstellungen** &gt; **Einstellungen**.
+2. Navigieren Sie zu **Einstellungen** &gt; **Einstellungen**.
 
-3. Wählen Sie **neu**aus, um eine neue Einstellung zu erstellen.
+3. Klicken Sie auf **Neu**, um eine neue Einstellung zu erstellen.
 
-4. Wählen Sie die im Raster aufgelistete **Website Einstellung** aus, um eine vorhandene Einstellung zu bearbeiten.
+4. Wenn Sie eine vorhandene Einstellung bearbeiten möchten: klicken Sie auf die **Websiteeinstellung**, die im Raster aufgelistet ist.
 
-5. Geben Sie Werte für die angegebenen Felder an: 
+5. Geben Sie die Werte für die bereitgestellten Felder an: 
 
-    - **Name**: ein eindeutiger Name, auf den von Code verwiesen wird, um die entsprechende Einstellung abzurufen.
+    - **Name**: Ein durch Code verwiesener eindeutiger Name, um die entsprechende Einstellung abzurufen.
 
-    - **Wert**: die Einstellung
+    - **Wert**: Die Einstellung
 
-    - **Beschreibung**: Zweck der Einstellung oder spezieller Anweisungen.
+    - **Beschreibung**: Der Zweck der Einstellung oder Spezialanweisungen.
 
-6. Wählen Sie **Speichern und Schließen** aus.
+6. Klicken Sie auf **Speichern und schließen**.
 
 > [!NOTE] 
-> Die Integration von Integration in Deutschland wird in der deutschen unabhängigen Cloud nicht unterstützt. Wenn Sie versuchen, die Einstellungen binmap/Key oder adxstudio/productivitypack/bingmap/Key in dieser Umgebung zu erstellen, wird eine Fehlermeldung angezeigt.
+> Die Bing Maps-Integration wird in der deutschen Sovereign Cloud nicht unterstützt. Wenn Sie versuchen, die Einstellung BinMap/Key oder Adxstudio/ProductivityPack/BingMap/Key in dieser Umgebung zu erstellen, wird eine Fehlermeldung angezeigt.
 
 

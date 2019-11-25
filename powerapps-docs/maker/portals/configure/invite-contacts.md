@@ -1,5 +1,5 @@
 ---
-title: Einladen von Kontakten zum Portal | MicrosoftDocs
+title: Kontakte in Ihr Portal einladen | MicrosoftDocs
 description: Anweisungen zum Erstellen und Konfigurieren von Einladungen in einem Portal.
 author: sbmjais
 manager: shujoshi
@@ -11,96 +11,96 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 631f17d9764fbfc209fd193ddabe4882f8ad8042
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73552219"
+ms.locfileid: "2760447"
 ---
-# <a name="invite-contacts-to-your-portals"></a>Kontakte zu Ihren Portalen einladen
+# <a name="invite-contacts-to-your-portals"></a>Laden Sie Kontakte für Ihre Portale ein
 
-Verwenden Sie die Einladungs Funktion von Portalen, um Kontakte zu Ihrem Portal über automatisierte, in ihrer Common Data Service erstellte e-Mails einzuladen. Die Personen, die Sie einladen, erhalten eine e-Mail, die von Ihnen vollständig anpassbar ist, mit einem Link zu Ihrem Portal und einem Einladungscode. Dieser Code kann verwendet werden, um speziellen, von Ihnen konfigurierten Zugriff zu erhalten. Mit dieser Funktion haben Sie folgende Möglichkeiten:
+Mit der Portaleinladungsfunktion haben Sie die Möglichkeit, Kontakte durch automatische E-Mails zu Ihrem Portal einzuladen, die in Common Data Service erstellt wurden. Eingeladene Personen erhalten eine E-Mail, vollständig anpassbar durch Sie, mit einem Link zum Portal und einem Einladungscode. Dieser Code kann verwendet werden, um bestimmten Zugriff zu erhalten, der von Ihnen konfiguriert ist. Mit diesem Feature haben Sie folgende Möglichkeiten:
 
-- Einladungen zu einer einzelnen oder einer Gruppe senden
--   Angeben eines Ablaufdatums, falls gewünscht
--   Geben Sie bei Bedarf einen Benutzer-oder Portal Kontakt als einladenden Benutzer an.
--   Beim Einlösen der Einladung den eingeladenen Kontakt (e) automatisch einem Konto zuweisen
--   Workflow beim Einlösen der Einladung automatisch ausführen
--   Der eingeladenen Kontakt (e) automatisch einer webrolle beim Einlösen zuweisen
+- Senden von Einzel- oder Gruppen-Einladungen
+-   Angeben eines Ablaufdatums (falls gewünscht)
+-   Angeben eines Benutzer- oder Portalkontakts als Einladender (falls gewünscht)
+-   Automatisches Zuweisen eingeladener Kontakte zu einer Firma bei Einlösung der Einladung
+-   Automatisches Ausführen eines Workflows bei Einlösung der Einladung
+-   Automatisches Zuweisen eingeladener Kontakte zu einer Webrolle bei Einlösung der Einladung
 
-Die Einlösung der Einladung kann mit einer unserer vielen Authentifizierungs Optionen durchgeführt werden. Eine Dokumentation zur Portal Authentifizierung finden Sie unter [Festlegen der Authentifizierungs Identität für ein Portal](set-authentication-identity.md) und auswählen des Modells, das für Ihre Portal Version und-Konfiguration gilt. Der Benutzer übernimmt beim Einlösen alle vom Administrator bereitgestellten Einstellungen. Für die Einladung und den Kontakt wird eine einlösungs Aktivität zum einladen erstellt.
+Die Einladungseinlösung kann mithilfe unserer vielen Authentifizierungsoptionen erreicht werden. Die Dokumentation zur Portalauthentifizierung finden Sie unter [Authentifizierungsidentität für ein Portal festlegen](set-authentication-identity.md), wo Sie das Modell entsprechend Ihrer Portalversion und -konfiguration auswählen können. Der Benutzer übernimmt die Einstellungen, die vom Administrator bei Einlösung bereitgestellt werden. Eine Einladungseinlösungs-Aktivität wird für die Einladung und den Kontakt erstellt.
 
-Einladungen werden über den Workflow zum **Senden einer Einladung** gesendet. Standardmäßig erstellt der Workflow eine e-Mail mit einer generischen Nachricht und sendet Sie an die primäre e-Mail-Adresse des eingeladenen Kontakts. Der Workflow zum **Senden einer Einladung** enthält eine e-Mail-Vorlage, die bearbeitet werden muss, damit Sie eine bestimmte Nachricht für das Portal und den korrekten Hyperlink zur Seite für die Einladung zum **einlösen**Ihres Portals enthält.
+Einladungen werden über den **Einladung senden**-Workflow gesendet. Standardmäßig erstellt der Workflow eine E-Mail mit einer allgemeinen Nachricht und sendet diese an die primäre E-Mail-Adresse des eingeladenen Kontakts. Der **Einladung senden**-Workflow enthält eine E-Mail-Vorlage, die bearbeitet werden muss, um eine bestimmte Nachricht für das Portal und den korrekten Link zur **Einladungseinlösungsseite** des Portals einzuschließen.
 
-Zum Bearbeiten der e-Mail-Vorlage zum **Senden eines Einladungs** Workflows suchen Sie diese, und deaktivieren Sie Sie. Nachdem Sie deaktiviert wurde, bearbeiten Sie die e-Mail-Vorlage, um die gewünschte Nachricht zu senden, und geben Sie einen Link zur **Seite Einlösen der Einladung** Ihres Portals ein.
+Um die **Einladung senden** Workflowe-E-Mail-Vorlage zu bearbeiten, suchen und deaktivieren Sie sie. Nach dem Deaktivieren können Sie die E-Mail-Vorlage bearbeiten, um die gewünschte Nachricht zu senden und einen Link zur **Einladungseinlösungsseite** des Portals bereitzustellen.
 
 > [!NOTE]
-> Die Einladung wird nur an die primäre e-Mail-Adresse (EmailAddress1) des Kontakts gesendet. Die Einladung wird nicht an die sekundäre e-Mail (EmailAddress2) oder an eine Alternative e-Mail-Adresse (EmailAddress3) des Kontaktdaten Satzes gesendet.
+> Diese Einladung wird nur an die primäre E-Mail (emailaddress1) des Kontakts gesendet. Die Einladung wird nicht an die sekundäre (emailaddress2) oder alternative E-Mail-Adresse (emailaddress3) des Kontaktdatensatzes gesendet.
 
-## <a name="create-invitations-from-portal-management-app"></a>Einladungen aus der Portal Verwaltungs-app erstellen
+## <a name="create-invitations-from-portal-management-app"></a>Erstellen von Einladungen in der Portalverwaltungs-App
 
-1.  Öffnen Sie die [Portal Verwaltungs-App](configure-portal.md).
+1.  Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2.  Wechseln Sie zu **Portale** > **Kontakte**.
-    Alternativ dazu können Sie auch die Seite **Kontakte** über den Bereich [Freigabe](../manage-existing-portals.md#share) öffnen. 
+2.  Gehen Sie zu **Portale**Vertrieb  >  **Kontakte**.
+    Als Alternative können Sie auch die Seite **Kontakte** des Bereichs [Freigeben](../manage-existing-portals.md#share) öffnen. 
 
-3.  Wählen Sie einen Kontakt aus, oder öffnen Sie den Kontaktdaten Satz, der eingeladen wird.
+3.  Wählen Sie einen Kontakt aus oder öffnen den einzuladenden Kontaktdatensatz.
 
-4.  Wählen Sie in der Befehlsleiste die Option **Einladung erstellen**aus.
+4.  Wählen Sie in der Befehlsleiste **Aus Einladung erstellen** aus.
 
-5.  Geben Sie auf der Seite **Einladung** entsprechende Werte in die Felder ein. Weitere Informationen: [Einladungs Attribute](#invitation-attributes)
+5.  Auf der Seite **Einladung** können Sie die Werte in die Felder eingeben. Weitere Informationen [Einladungs-Attribute](#invitation-attributes)
 
-6.  Wählen Sie **Speichern**.
+6.  Wählen Sie **Speichern** aus.
 
-7.  Wählen Sie in der Befehlsleiste **Flow** > **Einladung senden**aus.
-
-    > [!div class="mx-imgBorder"]
-    > ![Einladungs Workflow senden](../media/send-invitation-portal-app.png "Einladungs Workflow senden")
-
-8.  Wählen Sie im Bestätigungsfenster die Option **OK**aus. Die Einladung wird an den ausgewählten Kontakt gesendet.
+7.  Wählen Sie in der Befehlsleiste **Fluss**  >  **Einladung senden** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Bestätigung für das Senden einer Einladung](../media/confirm-invitation-portal-app.png "Bestätigung für das Senden einer Einladung")
+    > ![„Einladung senden“-Workflow](../media/send-invitation-portal-app.png "„Einladung senden“-Workflow")
 
-### <a name="send-multiple-invitations"></a>Senden mehrerer Einladungen
+8.  Wählen Sie im Bestätigungsfenster **OK** aus. Die Einladung wird an ausgewählte Kontakte gesendet.
 
-Sie können Einladungen für Ihre Kontakte erstellen und dann alle Einladungen gleichzeitig senden.
+    > [!div class="mx-imgBorder"]
+    > ![Bestätigung, um Einladung zu senden](../media/confirm-invitation-portal-app.png "Bestätigung, um Einladung zu senden")
 
-1.  Erstellen Sie Einladungen für die erforderlichen Kontakte, und wechseln Sie dann zu **Portale** > **Einladungen**.
+### <a name="send-multiple-invitations"></a>Mehrere Einladungen senden
+
+Sie können die Einladungen für Kontakte erstellen und diesen anschließend sofort senden.
+
+1.  Erstellen Sie Einladungen für die erforderlichen Kontakte und wechseln Sie dann zu  > **Portale**.**Einladungen**.
 
 2.  Wählen Sie die erstellten Einladungen aus.
 
-3.  Wählen Sie in der Befehlsleiste **Flow** > **Einladung senden**aus.
+3.  Wählen Sie in der Befehlsleiste **Fluss**  >  **Einladung senden** aus.
 
     > [!div class="mx-imgBorder"]
-    > ![Einladungs Workflow senden](../media/send-invitation-portal-app.png "Einladungs Workflow senden")
+    > ![„Einladung senden“-Workflow](../media/send-invitation-portal-app.png "„Einladung senden“-Workflow")
 
-4.  Wählen Sie im Bestätigungsfenster die Option **OK**aus. Die Einladungen werden an die ausgewählten Kontakte gesendet.
+4.  Wählen Sie im Bestätigungsfenster **OK** aus. Die Einladungen werden an ausgewählte Kontakte gesendet.
 
     > [!div class="mx-imgBorder"]
-    > ![Bestätigung zum Senden mehrerer Einladungen](../media/confirm-multiple-invites-portal-app.png "Bestätigung zum Senden mehrerer Einladungen")
+    > ![Bestätigung, um mehrere Einladungen zu senden](../media/confirm-multiple-invites-portal-app.png "Bestätigung, um mehrere Einladungen zu senden")
 
-## <a name="invitation-attributes"></a>Einladungs Attribute
+## <a name="invitation-attributes"></a>Einladungsattribute
 
-In der folgenden Tabelle werden die Attribute der **Einladungs** Seite erläutert:
+In der folgenden Tabelle werden die Attribute der Seite **Einladung** erklärt:
 
 
 |  Name    |    Beschreibung    |
 |-------|------------|
-|                 Name                  |                                                                                                      Ein beschreibender Name, um die Einladung zu erkennen.                                                                                                      |
-|                 Typ                  |                                             **Ein** -oder- **Gruppe**. Single ermöglicht nur die Einladung eines Kontakts und nur eine Einlösung. Die Gruppe ermöglicht das einladen mehrerer Kontakte und mehrere einlöseungen.                                              |
-|             Besitzer/Absender              | Der Benutzer, der der Absender der e-Mail ist, wenn die Einladung gesendet wird. Dies kann im **Sende Einladungs** Workflow überschrieben werden, wenn die erstellte e-Mail bereits eine Person im Feld from enthält. |
-|            Einladungs Code            |                                                                 Ein eindeutiger Code für die Einladung, den nur der einladende Empfänger kennt. Diese wird automatisch generiert, wenn eine neue Einladung erstellt wird.                                                                  |
-|              Ablaufdatum              |                                                                                     Das Datum, das angibt, wann die Einladung für die Einlösung ungültig wird. Optional.                                                                                     |
-|                Einladender                |                                                                                               Kann verwendet werden, wenn ein Kontakt der Absender der Einladung ist. Optional.                                                                                                |
-|          Eingeladene Kontakt (e)           |                                                                                                             Der Kontakt (e), der in ein Portal geladen werden soll.                                                                                                              |
-|           Zu Konto zuweisen           |                                                                        Ein Kontodaten Satz, der als der übergeordnete Kunde des einlösen Kontakts verknüpft werden soll, wenn die Einladung eingelöst wird. Optional.                                                                        |
-| Workflow beim Einlösen des Kontakts ausführen |                                                         Ein Workflow Prozess, der ausgeführt werden soll, wenn die Einladung eingelöst wird. Dem Workflow wird der einlösende Kontakt als primäre Entität übermittelt. Optional.                                                          |
-|          Webrollen zuweisen          |                                                                               Ein Satz von Webrollen, die dem Einlösen von Kontakten beim Einlösen der Einladung zugeordnet werden sollen. Optional.                                                                                |
-|          Eingelöste Kontakt (e)          |                                                                                                   Der Kontakt (e), der die Einladung erfolgreich eingelöst hat.                                                                                                   |
-|      Maximal zulässige einlösen      |                                                                                   Gibt an, wie oft die Einladung eingelöst werden kann. Nur für Gruppentyp Einladungen verfügbar.                                                                                   |
+|                 Name                  |                                                                                                      Ein beschreibender Name zur Erkennung der Einladung.                                                                                                      |
+|                 Typ                  |                                             **Einzeln** oder **Gruppe**. "Einzeln" erlaubt nur einen einzuladenden Kontakt und nur eine Einlösung. "Gruppe" erlaubt mehrere einzuladende Kontakte und mehrere Einlösungen.                                              |
+|             Besitzer/Absender              | Der Benutzer, der Sender der E-Mail ist, wenn die Einladung gesendet wird. Dies kann im **Einladung senden**-Workflow überschrieben werden, wenn die erstellte E-Mail bereits jemanden im "Von"-Feld enthält. |
+|            Einladungscode            |                                                                 Ein eindeutiger Code für die Einladung, den nur der Eingeladene kennt. Dieser wird automatisch generiert, wenn Sie eine neue Einladung erstellen.                                                                  |
+|              Ablaufdatum              |                                                                                     Das Datum, das anzeigt, wann die Einlösung der Einladung ungültig ist. (Optional).                                                                                     |
+|                Einladende Person                |                                                                                               Kann verwendet werden, wenn ein Kontakt der Absender der Einladung ist. (Optional).                                                                                                |
+|          Eingeladene(r) Kontakt(e)           |                                                                                                             Die zu einem Portal einzuladenden Kontakte.                                                                                                              |
+|           Zuweisen an Firma           |                                                                        Ein Firmendatensatz, der als übergeordneter Kunde des einlösenden Kontakts zugeordnet werden soll, wenn die Einladung eingelöst wird. (Optional).                                                                        |
+| Workflow für einlösenden Kontakt ausführen |                                                         Ein Workflowprozess, der ausgeführt werden soll, wenn die Einladung eingelöst wird. Dem Workflow wird der einlösende Kontakt als primäre Entität übergeben. (Optional).                                                          |
+|          Zu Webrollen zuweisen          |                                                                               Ein Satz von Webrollen, die dem einlösenden Kontakt zugeordnet werden sollen, wenn die Einladung eingelöst wird. (Optional).                                                                                |
+|          Eingelöst – Kontakt(e)          |                                                                                                   Die Kontakte, die die Einladung erfolgreich eingelöst haben.                                                                                                   |
+|      Maximal zulässige Einlösungen      |                                                                                   Die Anzahl der möglichen Einlösungen der Einladung. Verfügbar nur für Gruppentypeinladungen.                                                                                   |
 |                                       |                                                                                                                                                                                                                                                                    |
 
 ### <a name="see-also"></a>Siehe auch
 
-[Konfigurieren eines Kontakts für die Verwendung in einem Portal](configure-contacts.md)  
-[Festlegen der Authentifizierungs Identität für ein Portal](set-authentication-identity.md)  
+[Konfigurieren eines Kontakts zur Verwendung auf einem Portal](configure-contacts.md)  
+[Festlegen der Authentifizierungsidentität für ein Portal](set-authentication-identity.md)  

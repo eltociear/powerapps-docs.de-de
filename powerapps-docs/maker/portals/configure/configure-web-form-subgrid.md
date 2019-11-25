@@ -1,6 +1,6 @@
 ---
-title: Webformular-unter Raster Konfiguration für ein Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen und Konfigurieren von Webformular-unter Raster für ein Portal.
+title: Webformular-Unterrasterkonfiguration für ein Portal | MicrosoftDocs MicrosoftDocs
+description: Anweisungen, Webformular-Unterraster für ein Portal hinzuzufügen und zu konfigurieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,272 +11,272 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 210300d40742cbf2ca83f9d6c3b07cd580167eaa
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73552955"
+ms.locfileid: "2760455"
 ---
-# <a name="configure-web-form-subgrids-for-portals"></a>Konfigurieren von Webformular-unter Raster für Portale
+# <a name="configure-web-form-subgrids-for-portals"></a>Konfigurieren von Webformular-Unterrastern für Portale
 
-Webformular-unter Raster werden in gleicher Weise als Entitäts Formular-unter Raster konfiguriert: Erstellen Sie zunächst einen metadatendatensatz für den Webformular Schritt, der ein unter Raster enthält, und fügen Sie dann Konfigurations Metadaten hinzu.
+Web Form-Unterraster werden in derselben Weise konfiguriert wie Entitätsformularunterraster: Erstellen Sie zunächst einen Metadatendatensatz für den Webformular-Schritt, der ein Unterraster hat, und fügen Sie dann Konfigurationsmetadaten hinzu.
 
-Das Hinzufügen von Unterverzeichnissen zu Ihren verwalteten Formularen im Portal ist einfach – fügen Sie einfach das unter Raster dem Formular hinzu, das Sie mit dem fertigen Formular-Designer verwalten, und Sie sind fertig. Im Raster wird die Ansicht verwendet, die im Common Data Service Formular-Designer angegeben ist, nur verknüpfte Datensätze anzeigen, wenn diese Option ausgewählt wurde, optional eine Suchleiste anzeigen und sogar [Entitäts Berechtigungen für Portale](assign-entity-permissions.md)berücksichtigen. Es ist nicht einfacher, eine schreibgeschützte Liste von Datensätzen anzuzeigen. Zum Aktivieren von Aktionen für das Raster – erstellen, aktualisieren, löschen usw. – müssen Sie diese Aktionen mithilfe der Metadatenkonfiguration konfigurieren.
+Hinzufügen von Unterrastern zu Ihren verwalteten Formularen im Portal ist einfach – fügen Sie einfach das Unterraster zum Formular, das Sie verwalten, hinzu, indem Sie den vorkonfigurierten Formulardesigner verwenden und Sie sind fertig. Das Raster verwendet die Ansicht, die im Common Data Service-Formulardesigner angegeben wird, es zeigt nur verknüpfte Datensätze an, wenn diese Option ausgewählt wurde. Optional wird eine Suchleiste angezeigt und es werden sogar [Entitätsberechtigungen für Portale](assign-entity-permissions.md) respektiert. Einfach kann eine Schreibgeschütze Liste mit Datensätzen nicht angezeigt werden. Um Aktionen für das Raster zu ermöglichen – Erstellen, Aktualisieren, Löschen, usw., – müssen Sie diese Aktionen mithilfe der Metadatenkonfigurationen konfigurieren.
 
-## <a name="add-subgrid-metadata-to-your-form"></a>Hinzufügen von Subgrid-Metadaten zum Formular
+## <a name="add-subgrid-metadata-to-your-form"></a>Unterrastermetadaten zum Formular hinzufügen
 
-Wenn Sie einem Entitäts Formular Subgrid-Metadaten hinzufügen möchten, navigieren Sie zu den **Metadaten der Entität** , indem Sie entweder die Dropdown Liste oben oder das untergeordnete Element des Datensatzes verwenden, mit dem Sie arbeiten. Weitere Informationen finden Sie unter [Definieren von Entitäts Formularen](entity-forms.md).
+Um Unterraster-Metadaten zu einem Entitätsformular hinzuzufügen, navigieren Sie entweder mithilfe der oberen Dropdownliste oder des Unterrasters des Entitätsformulardatensatzes, an dem Sie arbeiten zu **Entitätsformular-Metadaten**. Weitere Informationen: [Entitätsformulare definieren](entity-forms.md).
 
-Um einen neuen Datensatz hinzuzufügen, wählen Sie **neue Entitäts Formular Metadaten hinzufügen aus**.
+Um einen neuen Datensatz hinzuzufügen, klicken Sie auf **Neue Entitätsformular-Metadaten hinzufügen**.
 
-Wählen Sie zum Bearbeiten eines vorhandenen Datensatzes den Datensatz im Raster aus. Wenn Sie **Subgrid** als **Type** -Wert auswählen, wird ein anderes Attribut, **Subgrid Name**, angezeigt.
+Um einen vorhandenen Datensatz zu bearbeiten, klicken Sie auf eines Datensatz im Raster. Bei Auswahl von **Unterraster** als **Typ**-Wert wird ein anderes Attribut angezeigt, **Unterrastername**.
 
 
 |     Name     |                                                       Beschreibung                                                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------|
-| Name des subrasters | Der eindeutige Name des untergeordneten Rasters im verknüpften Formular der Entität. |
+| Unterrastername | Der eindeutige Name eines Unterrasters im verknüpften Formular der Entität. |
 |              |                                                                                                                          |
 
-Wenn Sie das unter Raster im Formular-Editor auswählen, wird ein Eigenschaften Fenster angezeigt. Diese enthält ein **namens** Feld, das verwendet werden soll, um dem Feld **unter Raster Name** im metadatendatensatz der Entitäts Form zuzuweisen.
+Durch Auswahl des Unterrasters im Formular-Editor wird ein Eigenschaftenfenster angezeigt. Dies beinhaltet ein **Name**-Feld, das zum Zuweisen zum **Unterraster**-Namensfeld im Entitätsformular-Metadatendatensatz verwendet werden sollte.
 
-![Subgrid-Metadaten hinzufügen](../media/add-subgrid-metadata.png "Subgrid-Metadaten hinzufügen")  
+![Unterrastermetadaten hinzufügen](../media/add-subgrid-metadata.png "Unterrastermetadaten hinzufügen")  
 
-Wenn Sie einen gültigen Subgrid-Namen angeben, werden die Subgrid-Konfigurationseinstellungen angezeigt. Standardmäßig werden nur **grundlegende Einstellungen** angezeigt. Wählen Sie **Erweiterte Einstellungen** aus, um zusätzliche Einstellungen anzuzeigen.
+Beim Angeben eines gültigen Unterrasternamens werden die Unterrasterkonfigurationseinstellungen angezeigt. Standardmäßig werden nur **Grundlegende Einstellungen** angezeigt. Wählen Sie **Erweiterte Einstellungen** aus, um weitere Einstellungen anzuzeigen.
 
-Standardmäßig werden die meisten Einstellungen reduziert angezeigt, um Speicherplatz zu sparen. Wählen Sie * * * * aus, um einen Abschnitt zu erweitern und weitere Optionen anzuzeigen. Wählen Sie * * * * aus, um den Bereich zu reduzieren.
+Standardmäßig werden die meisten Einstellungen reduziert angezeigt. Wählen Sie ****, um einen Abschnitt zu erweitern und Zusatzfunktionen anzuzeigen. Wählen Sie ****, um den Abschnitt zu verkleinern.
 
 ## <a name="attributes"></a>Attribute
 
 | Name                       | Beschreibung                                                                                                                                                                                                                                                                                                                                                               |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**         |                                                                                                                                                                                                                                                                                                                                                                           |
-| Aktionen anzeigen               | Verwenden Sie diese Schaltfläche, um Aktions Schaltflächen für Aktionen hinzuzufügen, die für die Entitätenmenge anwendbar sind und über dem unter Raster Folgende Aktionen sind verfügbar: <ul><li>Stelle</li><li>Download</li><li>Ierter</li></ul> Wenn Sie eine dieser Optionen auswählen, wird ein Konfigurationsbereich für diese Aktion angezeigt. Weitere Informationen zu den einzelnen Aktionen finden Sie unten.                                                                                                                                                                                                                                                   |
-| Element Aktionen               | Verwenden Sie diese Schaltfläche, um Aktions Schaltflächen für Aktionen hinzuzufügen, die für einen einzelnen Datensatz anwendbar sind und in den einzelnen Zeilen des subrasters angezeigt werden, sofern die zugeordneten [Berechtigungen durch Entitäts Berechtigungen](assign-entity-permissions.md)erteilt wurden. Folgende Aktionen sind verfügbar: <ul><li>Details</li><li>Bearbeiten</li><li>Lösch</li><li>Workflow</li><li>Aufheben</li></ul> Wenn Sie eine dieser Optionen auswählen, wird ein Konfigurationsbereich für diese Aktion angezeigt. Weitere Informationen zu den einzelnen Aktionen finden Sie unten.                                                                                                                                                                                                                                                   |
-| Spalten Attribute überschreiben | Verwenden Sie, um Anzeigeeinstellungen für einzelne Spalten im Raster zu überschreiben. <ul><li>Attribute: logischer Name der Spalte, die Sie überschreiben möchten.</li><li>Anzeige Name: neuer Spaltentitel, um den Standardwert zu überschreiben</li><li>Width: die Breite (in Prozent oder Pixel) der Spalte, um die Standardeinstellung zu überschreiben. Siehe auch Raster Spalten-breiten Stil. Um Einstellungen für eine Spalte zu überschreiben, wählen Sie **Spalte** aus, und geben Sie die Details ein.                                                                                                                                                                                                                                                                                             |
+| Aktionen anzeigen               | Ermöglicht Ihnen, Aktionsschaltflächen für Aktionen hinzuzufügen, die für den Entitätssatz anwendbar sind und über dem Unterraster angezeigt werden. Die folgenden Aktionen sind verfügbar: <ul><li>Erstellen</li><li>Herunterladen</li><li>Zuordnen</li></ul> Durch Auswahl einer dieser Optionen wird ein Konfigurationsbereich für diese Aktion angezeigt. Weitere Informationen für jede Aktion finden Sie unten.                                                                                                                                                                                                                                                   |
+| Elementaktionen               | Ermöglicht Ihnen, Aktionsschaltflächen für Aktionen hinzuzufügen, die für einen einzelnen Datensatz anwendbar sind und in jeder Zeile im Raster angezeigt werden, wenn das entsprechende Recht von [Entitätsberechtigungen](assign-entity-permissions.md) erteilt wurde. Die folgenden Aktionen sind verfügbar: <ul><li>Details</li><li>Bearbeiten</li><li>Löschen</li><li>Workflow</li><li>Zuordnung aufheben</li></ul> Durch Auswahl einer dieser Optionen wird ein Konfigurationsbereich für diese Aktion angezeigt. Weitere Informationen für jede Aktion finden Sie unten.                                                                                                                                                                                                                                                   |
+| Spaltenattribute überschreiben | Ermöglicht das Überschreiben von Anzeigeeinstellungen für die einzelnen Spalten im Raster. <ul><li>Attribut: Der logische Name der Spalte, die Sie überschreiben möchten.</li><li>Anzeigename: Neuer Spaltentitel zum Überschreiben der Standardwerte</li><li>Breite: Breite (in Prozent oder Pixel) der Spalte zum Überschreiben der Standardwerte. Vergleiche: Stil der Rasterspaltenbreite. Zum Überschreiben von Einstellungen einer Spalte klicken Sie auf **Spalte** und geben Sie die Informationen ein.                                                                                                                                                                                                                                                                                             |
 | **Erweiterte Einstellungen**      |                                                                                                                                                                                                                                                                                                                                                                           |
-| Meldung wird geladen            | Überschreibt die HTML-Standardmeldung, die beim Laden des subrasters angezeigt wird.                                                                                                                                                                                                                                                                                             |
-| Fehlermeldung              | Überschreibt die HTML-Standardmeldung, die angezeigt wird, wenn beim Laden des subrasters ein Fehler auftritt.                                                                                                                                                                                                                                                                           |
-| Meldung "Zugriff verweigert"      | Überschreibt die HTML-Standardmeldung, die angezeigt wird, wenn ein Benutzer nicht über ausreichende [Berechtigungen](assign-entity-permissions.md) zum Lesen des dem subraster zugeordneten Entitäts Typs verfügt.                       |
-| Leere Nachricht              | Überschreibt die HTML-Meldung, die angezeigt wird, wenn das zugehörige unter Raster keine Daten enthält.                                                                                                                                                                                                                                                                                     |
-| Such Dialogfeld              | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Aktion "zuordnen" aktiviert.                                                                                                                                                                                                                                                                             |
-| Dialog Feld "Details"        | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Detail Aktion aktiviert.                                                                                                                                                                                                                                                                                |
-| Formular bearbeiten-Dialog Feld           | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Bearbeitungsaktion aktiviert.                                                                                                                                                                                                                                                                                   |
-| Dialog Feld Create Form         | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die CREATE-Aktion aktiviert.                                                                                                                                                                                                                                                                                 |
-| Dialog Feld löschen              | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Löschaktion aktiviert.                                                                                                                                                                                                                                                                                 |
-| Fehler Dialogfeld               | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn während einer beliebigen Aktion ein Fehler auftritt.                                                                                                                                                                                                                                                                                 |
-| CSS-Klasse                  | Geben Sie eine CSS-Klasse oder Klassen an, die auf das HTML-Element angewendet werden, das den gesamten Teil Raster Bereich enthält, einschließlich der Raster-und Aktions Schaltflächen.                                                                                                                                                                                                                     |
-| Grid-CSS-Klasse             | Geben Sie eine CSS-Klasse oder Klassen an, die auf die HTML-&lt;Tabelle des subrasters&gt;-Elements angewendet werden.                                                                                                                                                                                                                                                                          |
-| Breite der Raster Spaltenbreite    | Konfiguriert, ob die **breiten** Werte in den Attributen der Überschreibungs Spalte in **Pixel** oder **Prozent**angegeben werden.                                                                                                                                                                                                                                                             |
+| Laden von Meldungen            | Überschreibt die Standard-HTML-Nachricht, die angezeigt wird, während das Unterraster lädt.                                                                                                                                                                                                                                                                                             |
+| Fehlermeldung              | Überschreibt die Standard-HTML-Nachricht, die angezeigt wird, wenn ein Fehler auftritt, während das Unterraster geladen wird.                                                                                                                                                                                                                                                                           |
+| Meldung vom Typ \"Zugriff verweigert\"      | Überschreibt die Standard-HTML-Nachricht, die angezeigt wird, wenn ein Benutzer nicht genügende [Berechtigungen](assign-entity-permissions.md) aufweist, um den Entitätstyp zu lesen, der dem Unterraster zugeordnet ist.                       |
+| Leere Meldung              | Überschreibt die HTML-Nachricht, die angezeigt wird, wenn das zugeordnete Unterraster keine Daten enthält.                                                                                                                                                                                                                                                                                     |
+| Dialog \"Suche\"              | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Zuordnen-Aktion aktiviert.                                                                                                                                                                                                                                                                             |
+| Dialog \"Detailformular\"        | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Details-Aktion aktiviert.                                                                                                                                                                                                                                                                                |
+| Dialog \"Formular bearbeiten\"           | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Bearbeiten-Aktion aktiviert.                                                                                                                                                                                                                                                                                   |
+| Dialog \"Formular erstellen\"         | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Erstellen-Aktion aktiviert.                                                                                                                                                                                                                                                                                 |
+| Dialog \"Löschen\"              | Steuert die Einstellungen für das Dialogfeld, das angezeigt wird, wenn ein Benutzer die Löschen-Aktion aktiviert.                                                                                                                                                                                                                                                                                 |
+| Fehlerdialog               | Steuert die Einstellungen für das Dialog, das angezeigt wird, wenn ein Fehler bei einer Aktion auftritt.                                                                                                                                                                                                                                                                                 |
+| CSS Klasse                  | Geben Sie eine CSS-Klasse oder Klassen an, die für das HTML-Element angewendet werden, das den gesamten Unterrasterbereich enthält, u. a. die Raster- und Aktionsschaltflächen.                                                                                                                                                                                                                     |
+| CSS-Klasse für Raster             | Geben Sie eine CSS-Klasse oder Klassen an, die auf das HTML-Element &lt;table&gt; des Unterrasters angewendet werden.                                                                                                                                                                                                                                                                          |
+| Stil der Rasterspaltenbreite    | Konfiguriert, ob **Breite**-Werte in den Überschreiben-Spaltenattributen in **Pixel** oder **Prozent** angegeben werden.                                                                                                                                                                                                                                                             |
 ||
 
-## <a name="create-action"></a>Aktion erstellen
+## <a name="create-action"></a>Erstellen-Aktion
 
-Durch das Aktivieren einer **create-Aktion** wird eine Schaltfläche oberhalb des untergeordneten Rasters gerendert. wenn diese Option ausgewählt ist, wird ein Dialogfeld mit einem [Entitäts Formular](entity-forms.md) geöffnet, mit dem ein Benutzer einen neuen Datensatz  
+Das Aktivieren der **Erstellen-Aktion** rendert eine Schaltfläche über dem Unterraster, die, wenn darauf geklickt wird, ein Dialogfeld mit einem [Entitätsformular](entity-forms.md) öffnet, das einem Benutzer ermöglicht, einen neuen Datensatz zu erstellen.  
 
-### <a name="create-action-settings"></a>Aktions Einstellungen erstellen
+### <a name="create-action-settings"></a>Aktion "Erstellen"-Einstellungen
 
 | Name                  | Beschreibung                                                                                                                                                                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                                                                                                                                                                             |
-| Entitäts Formular           | Gibt die [Entitäts Formulare und die benutzerdefinierte Logik](entity-forms.md) an, die zum Erstellen des neuen Datensatzes verwendet werden. Die Dropdown Liste enthält alle Entitäts Formulare, die für den Entitätstyp des subrasters konfiguriert sind.<br>**Hinweis**: Wenn der Entitätstyp des subrasters keine Entitäts Formulare aufweist, wird die Dropdown Liste leer angezeigt. Wenn für die CREATE-Aktion kein Entitäts Formular bereitgestellt wird, wird es ignoriert, und die Schaltfläche wird nicht im Entitäts Formular des subrasters gerendert.                                |
+| Entitätsformular           | Gibt die [Entitätsformulare und benutzerdefinierte Logik](entity-forms.md) an, die verwendet werden, um den neuen Datensatz zu erstellen. In der Dropdown-Liste werden alle Entitätsformulare aufgeführt, die für den Entitätstyp des Unterrasters konfiguriert wurden.<br>**Hinweis**: Wenn der Entitätstyp des Unterrasters keine Entitätsformulare aufweist, wird eine leere Dropdown-Liste angezeigt. Ohne Angabe eines Entitätsformulars für die Aktion "Erstellen" wird diese ignoriert, und die Schaltfläche wird nicht im Entitätsformular des Unterrasters gerendert.                                |
 | **Erweiterte Einstellungen** |                                                                                                                                                                                                                                                             |
-| Schaltflächen Bezeichnung          | Überschreibt die HTML-Bezeichnung, die in der Schaltfläche Aktion erstellen oberhalb des untergeordneten Rasters angezeigt wird.                                                                                                                                                                           |
-| QuickInfo        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche Aktion erstellen zeigt.                                                                                                                                                            |
+| Schaltflächenbezeichnung          | Überschreibt die HTML-Beschriftung, die in der "Erstellen"-Aktionsschaltfläche über dem Unterraster angezeigt wird.                                                                                                                                                                           |
+| Schaltfläche \"QuickInfo\"        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die "Erstellen"-Aktionsschaltfläche verweist.                                                                                                                                                            |
 
-### <a name="create-form-dialog-box-advanced-settings"></a>Dialogfeld ' Formular erstellen ' Erweiterte Einstellungen
+### <a name="create-form-dialog-box-advanced-settings"></a>Einstellungen für das "Formular erstellen"-Dialogfeld (erweitert)
 
 | Name                   | Beschreibung                                                                                                                                     |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Meldung wird geladen        | Überschreibt die Meldung, die beim Laden des Dialog Felds angezeigt wird.                                                                                  |
-| Title                  | Überschreibt den HTML-Code, der in der Titelleiste des Dialog Felds angezeigt wird.                                                                                 |
-| SR-Text der Schaltfläche verwerfen | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                                   |
-| Größe                   | Gibt die Größe des Dialog Felds Create Form an. Die Optionen lauten "Standard", "groß" und "klein". Die Standardgröße ist groß. |
-| CSS-Klasse              | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                    |
-| Title-CSS-Klasse        | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                        |
+| Laden von Meldungen        | Überschreibt die Nachricht, die angezeigt wird, während der Dialog lädt.                                                                                  |
+| Position                  | Überschreibt das HTML, das in der Titelleiste des Dialogfelds angezeigt wird.                                                                                 |
+| Text für Screenreader-Schaltfläche \"Verwerfen\" | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche "Verwerfen" des Dialogfelds zugeordnet ist.                                                                   |
+| Größe                   | Gibt die Größe des "Formular erstellen"-Dialogfelds an. Die Optionen sind "Standard", "Groß" und "Klein". Die Standardgröße ist Groß. |
+| CSS Klasse              | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                    |
+| CSS-Klasse für Titel        | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                                        |
 ||
 
-## <a name="download-action"></a>Download Aktion
+## <a name="download-action"></a>Herunterladen-Aktion
 
-Durch das Aktivieren einer **Download Aktion** wird eine Schaltfläche oberhalb des subrasters gerendert, bei der die Daten aus dem subraster in eine [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)] Datei (. xlsx) heruntergeladen werden.
+Das Aktivieren der **Herunterladen-Aktion** rendert eine Schaltfläche über dem Unterraster, die, wenn darauf geklickt wird, die Daten vom Unterraster in eine [!INCLUDE[pn-excel-short](../../../includes/pn-excel-short.md)]-Datei (.xlsx) herunterlädt.
 
-### <a name="download-action-settings"></a>Aktions Einstellungen herunterladen
+### <a name="download-action-settings"></a>Einstellungen für Herunterladen-Aktion
 
 | Name                  | Beschreibung                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                    |
-| Gar                  |                                                                                                    |
+| Keiner                  |                                                                                                    |
 | **Erweiterte Einstellungen** |                                                                                                    |
-| Schaltflächen Bezeichnung          | Überschreibt die HTML-Bezeichnung, die auf der Schaltfläche zum Herunterladen von Aktionen über dem unter Raster angezeigt wird                |
-| QuickInfo        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche Download Aktion zeigt. |
+| Schaltflächenbezeichnung          | Überschreibt die HTML-Beschriftung, die in der "Herunterladen"-Aktionsschaltfläche über dem Unterraster angezeigt wird.                |
+| Schaltfläche \"QuickInfo\"        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die "Herunterladen"-Aktionsschaltfläche verweist. |
 ||
 
-## <a name="associate-action"></a>Aktion zuordnen
+## <a name="associate-action"></a>Zuordnen-Aktion
 
-Beim Aktivieren einer Zuordnungs **Aktion** wird eine Schaltfläche oberhalb des untergeordneten Rasters angezeigt. wenn diese Option ausgewählt ist, wird eine Tabelle von Entitäten geöffnet, die der Benutzer dem derzeit vom [Entitäts Formular](entity-forms.md)angezeigten Entitäts Daten Satz zuordnen kann, sofern das Anfügen und das Appendto-Berechtigungen wurden durch [Entitäts Berechtigungen](assign-entity-permissions.md) für die entsprechenden Entitäts Typen erteilt.  
+Das Aktivieren von **Aktion zuordnen** zeigt eine Schaltfläche über dem Unterraster an, die, wenn darauf geklickt wird, einen Dialog mit einer Tabelle der Entitäten öffnet, die der Benutzer zu dem Entitätsdatensatz zuordnen kann, der aktuell vom [Entitätsformular](entity-forms.md) angezeigt wird, wenn das Recht "Anfügen" und "Anfügen an" von den [Entitätsberechtigungen](assign-entity-permissions.md) für die anwendbaren Entitätstypen gewährt wurde.  
 
-### <a name="associate-action-settings"></a>Aktions Einstellungen zuordnen
+### <a name="associate-action-settings"></a>Einstellungen für die Zuordnen-Aktion
 
 | Name                  | Beschreibung                                                                                                                                                                                                                |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                                                                                                                                            |
-| Anschauung                  | Gibt die Ansicht (gespeicherte Abfrage) an, die verwendet wird, um die Liste der berechtigten Entitäten zu suchen und anzuzeigen.<br>**Hinweis**: Wenn der Entitätstyp des subrasters keine gespeicherten Abfragen enthält, wird die Dropdown Liste leer angezeigt. Wenn für die Aktion "zuordnen" keine Ansicht bereitgestellt wird, wird Sie ignoriert, und die Schaltfläche wird nicht im Entitäts Formular des subrasters gerendert.  |
+| Anzeigen                  | Gibt die Ansicht (Gespeicherte Abfrage) an, die verwendet wird, um die Liste der berechtigten Entitäten zu suchen und anzuzeigen.<br>**Hinweis**: Wenn der Entitätstyp des Unterrasters keine gespeicherten Abfragen aufweist, wird eine leere Dropdown-Liste angezeigt. Ohne Angabe einer Ansicht für die Aktion "Zuordnen" wird diese ignoriert, und die Schaltfläche wird nicht im Entitätsformular des Unterrasters gerendert.  |
 | **Erweiterte Einstellungen** |                                                                                                                                                                                                                            |
-| Schaltflächen Bezeichnung          | Überschreibt die HTML-Bezeichnung, die in der Schaltfläche Aktion zuordnen oberhalb des subrasters angezeigt wird.                                                                                                                                       |
-| QuickInfo        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche Aktion zuordnen zeigt.                                                                                                                        |
+| Schaltflächenbezeichnung          | Überschreibt die HTML-Beschriftung, die in der "Zuordnen"-Aktionsschaltfläche über dem Unterraster angezeigt wird.                                                                                                                                       |
+| Schaltfläche \"QuickInfo\"        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die "Zuordnen"-Aktionsschaltfläche verweist.                                                                                                                        |
 ||
 
-### <a name="lookup-dialog-box-advanced-settings"></a>Erweiterte Einstellungen für das Such Dialogfeld
+### <a name="lookup-dialog-box-advanced-settings"></a>Einstellungen für den Dialog "Suchen" (erweitert)
 
 | Name                     | Beschreibung                                                                                                                                 |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Title                    | Überschreibt den HTML-Code, der in der Titelleiste des Dialog Felds angezeigt wird.                                                                             |
-| Primärer Schaltflächen Text      | Überschreibt den HTML-Code, der in der primären Schaltfläche (hinzufügen) im Dialogfeld angezeigt wird.                                                                |
-| Schaltflächen Text schließen        | Überschreibt den HTML-Code, der in der Schaltfläche Schließen (Abbrechen) im Dialogfeld angezeigt wird.                                                               |
-| SR-Text der Schaltfläche verwerfen   | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                               |
-| Größe                     | Gibt die Größe des Dialog Felds "zuordnen" an. Die Optionen lauten "Standard", "groß" und "klein". Die Standardgröße ist groß. |
-| CSS-Klasse                | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                |
-| Title-CSS-Klasse          | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                    |
-| CSS-Klasse der primären Schaltfläche | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche (hinzufügen) des Dialog Felds angewendet werden.                                                 |
-| CSS-Klasse der Schaltfläche Schließen   | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Schaltfläche Schließen (Abbrechen) des Dialog Felds angewendet werden.                                                |
-| Titel der Datensätze auswählen     | Überschreibt den HTML-Code, der im Titel des Auswahl Bereichs für den Datensatz angezeigt wird.                                                                  |
-| Standard Fehlermeldung    | Überschreibt die Meldung, die angezeigt wird, wenn ein Fehler auftritt, während die ausgewählte Entität oder Entitäten zugeordnet werden.                                  |
-| Raster Optionen             | Geben Sie Einstellungen für die Darstellung des Entitäts Rasters an. Weitere Optionen finden Sie unten.                                                              |
+| Position                    | Überschreibt das HTML, das in der Titelleiste des Dialogfelds angezeigt wird.                                                                             |
+| Text der primären Schaltfläche      | Überschreibt das HTML, das in der primären Schaltfläche (Hinzufügen) des Dialogfelds angezeigt wird.                                                                |
+| Schaltflächentext schließen        | Überschreibt das HTML, das in der primären Schließen-Schaltfläche (Abbrechen) des Dialogfelds angezeigt wird.                                                               |
+| Text für Screenreader-Schaltfläche \"Verwerfen\"   | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche "Verwerfen" des Dialogfelds zugeordnet ist.                                                               |
+| Größe                     | Gibt die Größe des "Zuordnen"-Dialogfelds an. Die Optionen sind "Standard", "Groß" und "Klein". Die Standardgröße ist Groß. |
+| CSS Klasse                | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                                |
+| CSS-Klasse für Titel          | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                                    |
+| CSS-Klasse für primäre Schaltfläche | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche (Hinzufügen) des Dialogfelds angewendet werden.                                                 |
+| CSS-Klasse für Schaltfläche „Schließen”   | Geben Sie eine CSS-Klasse oder Klassen an, die für die primäre „Schließen”-Schaltfläche (Abbrechen) des Dialogfelds angewendet werden.                                                |
+| Titel für Datensätze auswählen     | Überschreibt das HTML, das im Titel des Bereichs "Datensatzauswahl" angezeigt wird.                                                                  |
+| Standardfehlermeldung    | Überschreibt die Meldung, die angezeigt wird, wenn ein Fehler beim Zuordnen der ausgewählten Entität oder Entitäten auftritt.                                  |
+| Rasteroptionen             | Geben Sie Einstellungen für die Darstellung des Entitätsrasters an. Optionen finden Sie unten.                                                              |
 ||
 
-### <a name="lookup-dialog-box-advanced-grid-options-settings"></a>Dialogfeld "Suche" Erweiterte Raster Options Einstellungen
+### <a name="lookup-dialog-box-advanced-grid-options-settings"></a>Rasteroptions-Einstellungen für den Dialog "Suchen" (erweitert)
 
 | Name                  | Beschreibung                                                                                                              |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Meldung wird geladen       | Überschreibt die Meldung, die angezeigt wird, während das Raster der Entitäten geladen wird.                                                |
-| Fehlermeldung         | Überschreibt die Meldung, die angezeigt wird, wenn ein Fehler beim Laden des Raster von Entitäten auftritt.                               |
-| Meldung "Zugriff verweigert" | Überschreibt die Meldung, die angezeigt wird, wenn ein Benutzer nicht über ausreichende Entitäts Berechtigungen zum Anzeigen des Raster von Entitäten verfügt. |
-| Leere Nachricht         | Überschreibt die Meldung, die angezeigt wird, wenn keine Entitäten vorhanden sind, die mit dem aktuellen Entitäts Formular verknüpft werden können.       |
-| CSS-Klasse             | Geben Sie eine CSS-Klasse oder Klassen an, die auf den Bereich "zuordnen" angewendet werden.                                          |
-| Grid-CSS-Klasse        | Geben Sie eine CSS-Klasse oder Klassen an, die auf die &lt;Tabelle&gt;-Elements des verknüpften Rasters angewendet werden.                       |
+| Laden von Meldungen       | Überschreibt die Nachricht, die angezeigt wird, während das Entitätenraster lädt.                                                |
+| Fehlermeldung         | Überschreibt die Nachricht, die angezeigt wird, wenn ein Fehler auftritt, während das Entitätenraster lädt.                               |
+| Meldung vom Typ \"Zugriff verweigert\" | Überschreibt die Meldung, die angezeigt wird, wenn ein Benutzer keine ausreichenden Entitätsberechtigungen besitzt, um das Raster von Entitäten anzuzeigen. |
+| Leere Meldung         | Überschreibt die Meldung, die angezeigt wird, wenn keine Entitäten vorhanden sind, die dem aktuellen Entitätsformular zugeordnet werden können.       |
+| CSS Klasse             | Geben Sie eine CSS-Klasse oder Klassen an, die auf den Bereich „Raster zuordnen” angewendet werden.                                          |
+| CSS-Klasse für Raster        | Geben Sie eine CSS-Klasse oder Klassen an, die auf das Element &lt;table&gt; des zugehörigen Rasters angewendet werden.                       |
 ||
 
-## <a name="details-action"></a>Detail Aktion
+## <a name="details-action"></a>Details-Aktion
 
-Durch das Aktivieren einer **Detail Aktion** kann ein Benutzer ein Schreib geschütztes [Entitäts Formular](entity-forms.md) anzeigen, das an den Datensatz der ausgewählten Zeile des subrasters gebunden ist.  
+Bei der Aktivierung von **Details-Aktion** kann ein Benutzer ein schreibgeschütztes [Entitätsformular](entity-forms.md) anzeigen, das mit dem Datensatz der ausgewählten Zeile des Unterrasters datengebunden ist.  
 
-### <a name="details-action-settings"></a>Details zu Aktions Einstellungen
+### <a name="details-action-settings"></a>Detail-Aktion-Einstellungen
 
 |                 Name                  |                                                                                                                                                                                                                        Beschreibung                                                                                                                                                                                                                        |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |          **Grundlegende Einstellungen**           |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|              Entitäts Formular              | Gibt das [Entitäts Formular](entity-forms.md) an, das zum Anzeigen der Details des ausgewählten Datensatzes verwendet wird. Die Dropdown Liste enthält alle Entitäts Formulare, die für den Entitätstyp des subrasters konfiguriert sind. <br>**Hinweis**: Wenn der Entitätstyp des subrasters keine Entitäts Formulare aufweist, wird die Dropdown-Anzeige leer angezeigt. Wenn für die Detail Aktion kein Entitäts Formular bereitgestellt wird, wird es ignoriert, und die Schaltfläche wird nicht im subraster gerendert. |
+|              Entitätsformular              | Gibt das [Entitätsformular](entity-forms.md) an, das zum Anzeigen der Details des ausgewählten Datensatzes verwendet wird. In der Dropdown-Liste werden alle Entitätsformulare aufgeführt, die für den Entitätstyp des Unterrasters konfiguriert wurden. <br>**Hinweis**: Wenn der Entitätstyp des Unterrasters keine Entitätsformulare aufweist, wird eine leere Dropdown-Liste angezeigt. Ohne Angabe eines Entitätsformulars für "Detail-Aktion" wird diese ignoriert, und die Schaltfläche wird nicht im Unterraster gerendert. |
 |         **Erweiterte Einstellungen**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Name der Abfrage Zeichenfolge für Datensatz-ID |                                                                      Gibt den Namen des Abfrage Zeichenfolgen-Parameters an, der verwendet wird, um die Entität auszuwählen, die im ausgewählten Entitäts Formular angezeigt werden soll. Dieser Wert muss mit dem Wert in der Abfrage Zeichenfolge des Datensatz-ID-Abfrage Zeichenfolgen für den Datensatz Der Standardwert für dieses Feld ist sowohl hier als auch in der Formular Konfiguration der Entität " **ID**".                                                                       |
-|             Schaltflächen Bezeichnung              |                                                                                                                                                                                          Überschreibt die HTML-Bezeichnung für diese Aktion, die in der unter Raster Zeile angezeigt wird.                                                                                                                                                                                           |
-|            QuickInfo             |                                                                                                                                                                 Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion zeigt, die in der unter Raster Zeile angezeigt wird.                                                                                                                                                                  |
+| Abfragezeichenfolgen-Parametername für Datensatz-ID |                                                                      Gibt den Namen des Abfragezeichenfolgenparameters an, das verwendet wird, um die Entität auszuwählen, die im ausgewählten Entitätsformular angezeigt werden soll. Dies sollte dem Wert des Abfragezeichenfolgen-Parameternamens für Datensatz-ID dieses Entitätsformulars entsprechen. Der Standardwert für dieses Feld, sowohl hier als auch in der Entitätsformularkonfiguration, ist **id**.                                                                       |
+|             Schaltflächenbezeichnung              |                                                                                                                                                                                          Überschreibt die HTML-Beschriftung für diese Aktion, die in der Unterrasterzeile angezeigt wird.                                                                                                                                                                                           |
+|            Schaltfläche \"QuickInfo\"             |                                                                                                                                                                 Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion, die in der Unterrasterzeile angezeigt wird, zeigt.                                                                                                                                                                  |
 |                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-### <a name="details-form-dialog-box-advanced-settings"></a>Dialogfeld "Detail Formular" Erweiterte Einstellungen
+### <a name="details-form-dialog-box-advanced-settings"></a>Einstellungen für den Dialog "Detail-Formular" (erweitert)
 
 | Name                   | Beschreibung                                                                                                                             |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Meldung wird geladen        | Überschreibt den HTML-Code, der beim Laden des Dialog Felds angezeigt wird.                                                                             |
-| Title                  | Überschreibt den HTML-Code, der in der Titelleiste des Dialog Felds angezeigt wird.                                                                         |
-| SR-Text der Schaltfläche verwerfen | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                           |
-| Größe                   | Gibt die Größe des Dialog Felds "Details" an. Die Optionen lauten "Standard", "groß" und "klein". Die Standardgröße ist groß. |
-| CSS-Klasse              | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                            |
-| Title-CSS-Klasse        | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                |
+| Laden von Meldungen        | Überschreibt das HTML, das angezeigt wird, während das Dialogfeld geladen wird.                                                                             |
+| Position                  | Überschreibt das HTML, das in der Titelleiste des Dialogfelds angezeigt wird.                                                                         |
+| Text für Screenreader-Schaltfläche \"Verwerfen\" | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche "Verwerfen" des Dialogfelds zugeordnet ist.                                                           |
+| Größe                   | Gibt die Größe des "Detail"-Dialogfelds an. Die Optionen sind "Standard", "Groß" und "Klein". Die Standardgröße ist Groß. |
+| CSS Klasse              | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                            |
+| CSS-Klasse für Titel        | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                                |
 ||
 
-## <a name="edit-action"></a>Aktion bearbeiten
+## <a name="edit-action"></a>Bearbeiten-Aktion
 
-Durch das Aktivieren einer **Bearbeitungsaktion** kann ein Benutzer ein bearbeitbares [Entitäts Formular](entity-forms.md) anzeigen, das an den Datensatz der ausgewählten Zeile des subrasters gebunden ist, wenn die Schreib Berechtigung durch [Entitäts Berechtigungen](assign-entity-permissions.md)erteilt wurde.  
+Durch Aktivieren einer **Bearbeiten-Aktion** kann ein Benutzer ein bearbeitbares [Entitätsformular](entity-forms.md), das an den Datensatz der ausgewählten Zeile der Entitätsliste datengebunden ist, wenn das Recht "Schreiben" von Datensatzbasierte Sicherheit mithilfe der [Entitätsberechtigungen](assign-entity-permissions.md) gewährt wurde.  
 
-### <a name="edit-action-settings"></a>Aktions Einstellungen bearbeiten
+### <a name="edit-action-settings"></a>Einstellungen der Bearbeiten-Aktion
 
 | Name                                  | Beschreibung                                                                                                                                                                                                                                                                                                  |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**                    |                                                                                                                                                                                                                                                                                                              |
-| Entitäts Formular                           | Gibt das [Entitäts Formular](entity-forms.md) an, das verwendet wird, um den ausgewählten Datensatz zu bearbeiten. Die Dropdown Liste enthält alle Entitäts Formulare, die für den Entitätstyp des subrasters konfiguriert sind.<br>**Hinweis**: Wenn der Entitätstyp des subrasters keine Entitäts Formulare aufweist, wird die Dropdown Liste leer angezeigt. Wenn für die Aktion bearbeiten keine Entitäts Form bereitgestellt wird, wird diese ignoriert, und die Schaltfläche wird nicht im subraster gerendert.                                                                                                 |
+| Entitätsformular                           | Gibt das [Entitätsformular](entity-forms.md) an, das verwendet wird, um den ausgewählten Datensatz zu bearbeiten. In der Dropdown-Liste werden alle Entitätsformulare aufgeführt, die für den Entitätstyp des Unterrasters konfiguriert wurden.<br>**Hinweis**: Wenn der Entitätstyp des Unterrasters keine Entitätsformulare aufweist, wird eine leere Dropdown-Liste angezeigt. Ohne Angabe eines Entitätsformulars für die "Bearbeiten-Aktion" wird diese ignoriert, und die Schaltfläche wird nicht im Unterraster gerendert.                                                                                                 |
 | **Erweiterte Einstellungen**                 |                                                                                                                                                                                                                                                                                                              |
-| Name der Abfrage Zeichenfolge für Datensatz-ID | Gibt den Namen des Abfrage Zeichenfolgen-Parameters an, der verwendet wird, um die Entität auszuwählen, die im ausgewählten Entitäts Formular bearbeitet werden soll. Dieser Wert muss mit dem Wert in der Abfrage Zeichenfolge des Datensatz-ID-Abfrage Zeichenfolgen für den Datensatz Der Standardwert für dieses Feld ist sowohl hier als auch in der Formular Konfiguration der Entität " **ID**". |
-| Schaltflächen Bezeichnung                          | Überschreibt die HTML-Bezeichnung für diese Aktion, die in der unter Raster Zeile angezeigt wird.                                                                                                                                                                                                                                       |
-| QuickInfo                        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion zeigt, die in der unter Raster Zeile angezeigt wird.                                                                                                                                                                              |
+| Abfragezeichenfolgen-Parametername für Datensatz-ID | Gibt den Namen des Abfragezeichenfolgenparameters an, das verwendet wird, um die Entität auszuwählen, die im ausgewählten Entitätsformular bearbeitet werden soll. Dies sollte dem Wert des Abfragezeichenfolgen-Parameternamens für Datensatz-ID dieses Entitätsformulars entsprechen. Der Standardwert für dieses Feld, sowohl hier als auch in der Entitätsformularkonfiguration, ist **id**. |
+| Schaltflächenbezeichnung                          | Überschreibt die HTML-Beschriftung für diese Aktion, die in der Unterrasterzeile angezeigt wird.                                                                                                                                                                                                                                       |
+| Schaltfläche \"QuickInfo\"                        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion, die in der Unterrasterzeile angezeigt wird, zeigt.                                                                                                                                                                              |
 ||
 
-### <a name="edit-form-dialog-box-advanced-settings"></a>Dialogfeld "Formular bearbeiten" Erweiterte Einstellungen
+### <a name="edit-form-dialog-box-advanced-settings"></a>Einstellungen für das Dialogfeld "Formular bearbeiten" (erweitert)
 
 | Name                   | Beschreibung                                                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Meldung wird geladen        | Überschreibt den HTML-Code, der beim Laden des Dialog Felds angezeigt wird.                                                                       |
-| Title                  | Überschreibt den HTML-Code, der in der Titelleiste des Dialog Felds angezeigt wird.                                                                   |
-| SR-Text der Schaltfläche verwerfen | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                     |
-| Größe                   | Gibt die Größe des Dialog Felds bearbeiten an. Die Optionen lauten "Standard", "groß" und "klein". Die Standardgröße ist groß. |
-| CSS-Klasse              | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                      |
-| Title-CSS-Klasse        | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                          |
+| Laden von Meldungen        | Überschreibt das HTML, das angezeigt wird, während das Dialogfeld geladen wird.                                                                       |
+| Position                  | Überschreibt das HTML, das in der Titelleiste des Dialogfelds angezeigt wird.                                                                   |
+| Text für Screenreader-Schaltfläche \"Verwerfen\" | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche "Verwerfen" des Dialogfelds zugeordnet ist.                                                     |
+| Größe                   | Gibt die Größe des "Bearbeiten"-Dialogfelds an. Die Optionen sind "Standard", "Groß" und "Klein". Die Standardgröße ist Groß. |
+| CSS Klasse              | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                      |
+| CSS-Klasse für Titel        | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                          |
 ||
 
-## <a name="delete-action"></a>DELETE-Aktion
+## <a name="delete-action"></a>Löschen-Aktion
 
-Durch das Aktivieren einer **DELETE-Aktion** kann ein Benutzer die Entität, die durch eine Zeile im subraster dargestellt wird, endgültig löschen, wenn die Berechtigungen zum Löschen durch [Entitäts Berechtigungen](assign-entity-permissions.md)erteilt wurden.  
+Durch Aktivieren von **Aktion löschen** kann ein Benutzer die Entität, die von einer Zeile im Unterraster dargestellt wird, dauerhaft löschen, wenn das Recht [Entitätsberechtigungen](assign-entity-permissions.md) gewährt wurde.  
 
-### <a name="delete-action-settings"></a>Aktions Einstellungen löschen
+### <a name="delete-action-settings"></a>Einstellungen der Löschen-Aktion
 
 | Name                  | Beschreibung                                                                                                                     |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                                                 |
-| Gar                  |                                                                                                                                 |
+| Keiner                  |                                                                                                                                 |
 | **Erweiterte Einstellungen** |                                                                                                                                 |
-| Bestätigt          | Überschreibt die HTML-Bestätigungsmeldung, die angezeigt wird, wenn der Benutzer die DELETE-Aktion aktiviert.                                    |
-| Schaltflächen Bezeichnung          | Überschreibt die HTML-Bezeichnung für diese Aktion, die in der unter Raster Zeile angezeigt wird.                                                          |
-| QuickInfo        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion zeigt, die in der unter Raster Zeile angezeigt wird. |
+| Bestätigung          | Überschreibt die Bestätigungs-HTML-Nachricht, die angezeigt wird, wenn der Benutzer die Löschen-Aktion aktiviert.                                    |
+| Schaltflächenbezeichnung          | Überschreibt die HTML-Beschriftung für diese Aktion, die in der Unterrasterzeile angezeigt wird.                                                          |
+| Schaltfläche \"QuickInfo\"        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion, die in der Unterrasterzeile angezeigt wird, zeigt. |
 ||
 
-### <a name="delete-dialog-box-advanced-settings"></a>Erweiterte Dialogfeld Einstellungen löschen
+### <a name="delete-dialog-box-advanced-settings"></a>Einstellungen für das Dialogfeld "Löschen" (erweitert)
 
 | Name                     | Beschreibung                                                                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Title                    | Überschreibt den HTML-Code, der in der Titelleiste des Dialog Felds angezeigt wird.                                                                         |
-| Primärer Schaltflächen Text      | Überschreibt den HTML-Code, der in der primären Schaltfläche (Löschen) im Dialogfeld angezeigt wird.                                                         |
-| Schaltflächen Text schließen        | Überschreibt den HTML-Code, der in der Schaltfläche Schließen (Abbrechen) im Dialogfeld angezeigt wird.                                                           |
-| SR-Text der Schaltfläche verwerfen   | Überschreibt den Text für die Bildschirm Anzeige, der der Schaltfläche Verwerfen des Dialog Felds zugeordnet ist.                                                           |
-| Größe                     | Gibt die Größe des Dialog Felds löschen an. Die Optionen lauten "Standard", "groß" und "klein". Die Standardgröße ist default. |
-| CSS-Klasse                | Geben Sie eine CSS-Klasse oder Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                            |
-| Title-CSS-Klasse          | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Titelleiste des resultierenden Dialog Felds angewendet werden.                                                |
-| CSS-Klasse der primären Schaltfläche | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche (Löschen) des Dialog Felds angewendet werden.                                          |
-| CSS-Klasse der Schaltfläche Schließen   | Geben Sie eine CSS-Klasse oder Klassen an, die auf die Schaltfläche Schließen (Abbrechen) des Dialog Felds angewendet werden.                                            |
+| Position                    | Überschreibt das HTML, das in der Titelleiste des Dialogfelds angezeigt wird.                                                                         |
+| Text der primären Schaltfläche      | Überschreibt das HTML, das in der primären Schaltfläche (Löschen) des Dialogfelds angezeigt wird.                                                         |
+| Schaltflächentext schließen        | Überschreibt das HTML, das in der primären Schließen-Schaltfläche (Abbrechen) des Dialogfelds angezeigt wird.                                                           |
+| Text für Screenreader-Schaltfläche \"Verwerfen\"   | Überschreibt den Text für die Sprachausgabe, der der Schaltfläche "Verwerfen" des Dialogfelds zugeordnet ist.                                                           |
+| Größe                     | Gibt die Größe des "Löschen"-Dialogfelds an. Die Optionen sind "Standard", "Groß" und "Klein". Die Standardgröße ist Standard. |
+| CSS Klasse                | Geben Sie eine CSS-Klasse oder -Klassen an, die auf das resultierende Dialogfeld angewendet werden.                                                            |
+| CSS-Klasse für Titel          | Geben Sie eine CSS-Klasse oder -Klassen an, die auf die Titelleiste des resultierenden Dialogfelds angewendet werden.                                                |
+| CSS-Klasse für primäre Schaltfläche | Geben Sie eine CSS-Klasse oder Klassen an, die auf die primäre Schaltfläche (Löschen) des Dialogfelds angewendet werden.                                          |
+| CSS-Klasse für Schaltfläche „Schließen”   | Geben Sie eine CSS-Klasse oder Klassen an, die für die primäre „Schließen”-Schaltfläche (Abbrechen) des Dialogfelds angewendet werden.                                            |
 ||
 
-## <a name="workflow-action"></a>Workflow Aktion
+## <a name="workflow-action"></a>Workflowaktion
 
-Durch das Aktivieren einer **Workflow Aktion** kann ein Benutzer einen bedarfsgesteuerten Workflow für den ausgewählten Datensatz im unter Raster ausführen. Sie können den Subgrid-Metadaten beliebig viele Workflow Aktionen hinzufügen.
+Bei der Aktivierung der **Aktion "Workflow"** kann ein Benutzer einen bedarfsgesteuerten Workflow für den ausgewählten Datensatz im Unterraster ausführen. Sie können eine beliebige Anzahl Workflow-Aktionen zu Unterraster-Metadaten hinzufügen.
 
-### <a name="workflow-action-settings"></a>Workflow Aktions Einstellungen
+### <a name="workflow-action-settings"></a>Einstellungen der Workflowaktion
 
 | Name                  | Beschreibung                                                                                                                                                                                                     |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                                                                                                                                 |
-| Workflow              | Gibt den bedarfsgesteuerten Workflow an, der ausgeführt wird, wenn der Benutzer diese Aktion aktiviert.<br>**Hinweis**: Wenn der Entitätstyp des subrasters keine Workflows enthält, wird die Dropdown Liste leer angezeigt. Wenn für die Workflow Aktion kein Workflow bereitgestellt wird, wird er ignoriert, und die Schaltfläche wird nicht im subraster gerendert.  |
-| Schaltflächen Bezeichnung          | Legt die HTML-Bezeichnung für diese Aktion fest, die in der unter Raster Zeile angezeigt wird. Diese Einstellung ist erforderlich.                                                                                                                     |
+| Workflow              | Gibt den bedarfsgesteuerten Workflow an, der ausgeführt wird, wenn der Benutzer diese Aktion aktiviert.<br>**Hinweis**: Wenn der Entitätstyp des Unterrasters keine Workflows aufweist, wird eine leere Dropdown-Liste angezeigt. Ohne Angabe eines Workflows für die Aktion "Workflow" wird diese ignoriert, und die Schaltfläche wird nicht im Unterraster gerendert.  |
+| Schaltflächenbezeichnung          | Legt die HTML-Beschriftung für diese Aktion fest, die in der Unterrasterzeile angezeigt wird. In diesem Feld ist ein Eintrag erforderlich.                                                                                                                     |
 | **Erweiterte Einstellungen** |                                                                                                                                                                                                                 |
-| QuickInfo        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion zeigt, die in der unter Raster Zeile angezeigt wird.                                                                                 |
+| Schaltfläche \"QuickInfo\"        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion, die in der Unterrasterzeile angezeigt wird, zeigt.                                                                                 |
 ||
 
-## <a name="disassociate-action"></a>Aufheben der Zuordnung von Aktionen
+## <a name="disassociate-action"></a>Aktion "Zuordnung aufheben"
 
-Durch das Aktivieren einer **diszuordnungs Aktion** kann ein Benutzer die Verknüpfung zwischen dem Datensatz, der durch das aktuell angezeigte [Entitäts Formular](entity-forms.md) dargestellt wird, und dem Datensatz entfernen, der von der ausgewählten Zeile im subraster dargestellt wird, solange die Anfüge-und appendto-Berechtigungen wurde durch [Entitäts Berechtigungen](assign-entity-permissions.md) für die entsprechenden Entitäts Typen erteilt.
+Bei Aktivierung der Aktion **Zuordnung aufheben** kann ein Benutzer den Link zwischen dem Datensatz, der vom aktuell angezeigten [Entitätsformular](entity-forms.md) dargestellt wird, und dem Datensatz, der von der ausgewählten Zeile im Unterraster dargestellt wird, entfernen, wenn das Recht "Anfügen" und "Anfügen an" von den [Entitätsberechtigungen](assign-entity-permissions.md) für die anwendbaren Entitätstypen gewährt wurde.
 
-### <a name="disassociate-action-settings"></a>Trennen von Aktions Einstellungen
+### <a name="disassociate-action-settings"></a>Einstellungen der Aktion "Zuordnung aufheben"
 
 | Name                  | Beschreibung                                                                                                                     |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | **Grundlegende Einstellungen**    |                                                                                                                                 |
-| Gar                  |                                                                                                                                 |
+| Keiner                  |                                                                                                                                 |
 | **Erweiterte Einstellungen** |                                                                                                                                 |
-| Schaltflächen Bezeichnung          | Überschreibt die HTML-Bezeichnung für diese Aktion, die in der unter Raster Zeile angezeigt wird.                                                          |
-| QuickInfo        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion zeigt, die in der unter Raster Zeile angezeigt wird. |
+| Schaltflächenbezeichnung          | Überschreibt die HTML-Beschriftung für diese Aktion, die in der Unterrasterzeile angezeigt wird.                                                          |
+| Schaltfläche \"QuickInfo\"        | Überschreibt den QuickInfo-Text, der angezeigt wird, wenn der Benutzer auf die Schaltfläche für diese Aktion, die in der Unterrasterzeile angezeigt wird, zeigt. |
 ||
 
 ### <a name="see-also"></a>Siehe auch
 
-[Konfigurieren eines Portals](configure-portal.md)  
-[Definieren von Entitäts Formularen](entity-forms.md)  
-[Web Form-Eigenschaften für Portale](web-form-properties.md)  
-[Webformular Schritte für Portale](web-form-steps.md)  
-[Web Forms von Metadaten für Portale](configure-web-form-metadata.md)  
-[Hinweise zur Konfiguration für Web Forms für Portale](../configure-notes.md)  
+[Ein Portal konfigurieren](configure-portal.md)  
+[Entitätsformulare definieren](entity-forms.md)  
+[Webformulareigenschaften für Portale](web-form-properties.md)  
+[Webformularschritte für Portale](web-form-steps.md)  
+[Web-Formulare-Metadaten für Portale](configure-web-form-metadata.md)  
+[Notizkonfiguration für Webformular für Portale](../configure-notes.md)  
 

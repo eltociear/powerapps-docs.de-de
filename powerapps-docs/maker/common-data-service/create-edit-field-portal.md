@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal | MicrosoftDocs
+title: Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -8,29 +8,35 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757970"
 ---
 # <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Erstellen und Bearbeiten von Feldern für Common Data Service mit dem PowerApps-Portal
 
-Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsfelder mit dem Common Data Service zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsfelder mit dem Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
-- [Felder für Common Data Service mit dem Projektmappen-Explorer von PowerApps erstellen und bearbeiten](create-edit-field-solution-explorer.md)
+- [Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Ansichtsfelder
 
-1. In [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wählen Sie **Modell-angetrieben** oder **Canvas** Entwurfsmodus aus.
+1. Wählen Sie im [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
 2. Wählen Sie > **Daten** und **Entitäten** wählen Sie die Entität aus, die die Felder enthält, die Sie anzeigen möchten.
 3. Wenn die Registerkarte **Felder** ausgewählt ist, können Sie die folgenden Ansichten auswählen: 
 
@@ -227,7 +233,7 @@ Alle Felder, die direkte Texteingabe ermöglichen, haben einen IME-Modus. Der Ei
 
 ### <a name="see-also"></a>Siehe auch  
 [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)<br />
-[Felder für Common Data Service mit dem Projektmappen-Explorer von PowerApps erstellen und bearbeiten](create-edit-field-solution-explorer.md)<br />
+[Erstellen und Bearbeiten von Feldern für Common Data Service mithilfe des PowerApps-Projektmappen-Explorers](create-edit-field-solution-explorer.md)<br />
 [Feldtypen und Felddatentypen](types-of-fields.md)<br />
 [Definition berechneter Felder für das Automatisieren von manuellen Berechnungen](define-calculated-fields.md)<br />
 [Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />

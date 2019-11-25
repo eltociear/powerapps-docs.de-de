@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 641885d2-4a08-41b8-b914-d9a244e4d5b1
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1e6fa3440f0deef99f94ce94352177a105abf7b7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759246"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>Erstellen oder bearbeiten von Modell-angetriebene App-Dashboards
 
@@ -29,7 +35,7 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Neues Dashboard erstellen  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -51,7 +57,7 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Bearbeiten eines vorhandenen Dashboards  
   
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
     > [!IMPORTANT]
     > "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    
@@ -66,15 +72,15 @@ Es gibt zwei Arten von Dashboards: Benutzerdashboards und Systemdashboards- Ein 
   
 4.  Wenn Sie Ihre Änderungen abgeschlossen haben, müssen Sie diese Speichern und veröffentlichen.  
   
- Zusätzliche Systemdashboard-Aufgaben sind unter anderem:  
+Zusätzliche Systemdashboard-Aufgaben sind unter anderem:  
   
-    -   Entfernen einer Liste oder eines Diagramms aus einem Dashboard  
-  
-    -   Hinzufügen einer Liste oder eines Diagramms zu einem Dashboard  
-  
-    -   Einrichten des Standarddashboards  
-  
-    -   Verwenden von Sicherheitsrollen, um ein Dashboard nur für bestimmte Rollen sichbar zu machen    
-  
+-   Entfernen einer Liste oder eines Diagramms aus einem Dashboard  
+
+-   Hinzufügen einer Liste oder eines Diagramms zu einem Dashboard  
+
+-   Einrichten des Standarddashboards  
+
+-   Verwenden von Sicherheitsrollen, um ein Dashboard nur für bestimmte Rollen sichbar zu machen    
+
 ## <a name="next-steps"></a>Nächste Schritte  
 [Festlegen von Eigenschaften für ein Diagramm oder eine Liste, die in einem Dashboard enthalten sind](set-properties-chart-list-included-dashboard.md)

@@ -1,6 +1,6 @@
 ---
 title: Verwalten von benutzerdefinierten Feldern in einer Entität | Microsoft Docs
-description: 'Exemplarische Vorgehensweise zum Erstellen, Lesen, Aktualisieren und Löschen benutzerdefinierter Felder in einer Entität Common Data Service.'
+description: Exemplarische Vorgehensweise zum Erstellen, Lesen, Aktualisieren und Löschen benutzerdefinierter Felder in einer Entität in Common Data Service.
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0c576b8eab2b547c66a90f0693becf516b01207
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758586"
 ---
-
 # <a name="manage-custom-fields-in-an-entity"></a>Verwalten von benutzerdefinierten Feldern in einer Entität
 Sie können eine oder mehrere benutzerdefinierte Felder in einer beliebigen Entität erstellen und aktualisieren. Wenn Sie ein benutzerdefiniertes Feld erstellen, geben Sie einen Satz Eigenschaften an, beispielsweise den Feldnamen, den Anzeigenamen und den Datentyp, den es enthält. Weitere Informationen finden Sie unter [Metadaten von Entitätsattributen](../../developer/common-data-service/entity-attribute-metadata.md).
 
@@ -22,7 +27,7 @@ Sie können eine oder mehrere benutzerdefinierte Felder in einer beliebigen Enti
 > Jede Entität besitzt Systemfelder Felder, wie Felder, die angeben, wann ein Datensatz zuletzt aktualisiert wurde und wer ihn aktualisiert hat. Außerdem haben Standardentitäten Standardfelder. Sie können keine Systemfelder oder Standardfelder ändern oder löschen. Wenn Sie ein benutzerdefiniertes Feld erstellen, sollte es Funktionen auf Grundlage dieser integrierten Felder bereitstellen.
 
 ## <a name="create-a-field"></a>Erstellen Sie ein neues Feld
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
     ![Entitätsdetails](./media/data-platform-cds-create-entity/entitylist.png "Entitätsliste")
 
@@ -36,17 +41,17 @@ Sie können eine oder mehrere benutzerdefinierte Felder in einer beliebigen Enti
     > Die **Anzeigename**-Felder können jederzeit aktualisiert werden, um in Ihren Apps unterschiedlich angezeigt zu werden. Das **Name**-Feld kann nicht geändert werden, nachdem die Entität gespeichert wurde, da dadurch eine vorhandenen App beschädigt werden könnte.
 
     > [!div class="mx-imgBorder"] 
-    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Bereich \"Neues Feld\"")
+    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel.png "Neuer Feldbereich")
 
 5. Wählen Sie den **Datentyp** Ihres Felds aus. Damit wird die Methode gesteuert, mit der die Informationen gespeichert werden und wie sie in den Apps dargestellt werden. Beispielsweise wird Text bei einer Dezimalzahl oder einer URL anders gespeichert. Ausführlichere Informationen zu den Datentypen finden Sie unter [Metadaten der Entitätsattribute](../../developer/common-data-service/entity-attribute-metadata.md).
 
     Wenn Sie aufgefordert werden, geben Sie zusätzliche Informationen für den Datentyp an, den Sie angegeben haben. Je nach Datentyp werden verschiedene Felder angezeigt. Wenn Sie ein Feld vom Typ "Optionssatz" oder "Mehrfachauswahl-Optionssatz" erstellen, können Sie **Neuer Optionssatz** auswählen und beim Erstellen des Felds einen neuen Optionssatz erstellen. Weitere Informationen finden Sie unter [Erstellen eines Optionssatzes](custom-picklists.md).
 
     > [!div class="mx-imgBorder"] 
-    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Bereich \"Neues Feld\"")
+    > ![Neues Feld](./media/data-platform-cds-create-entity/newfieldpanel-2.png "Neuer Feldbereich")
 
 
-7. Aktivieren Sie unter **Erforderlich** das Kontrollkästchen, wenn Sie dieses empfohlene Feld in Ihren Apps zu einem erforderlichen Feld machen möchten. Damit wird keine harte Erzwingung über alle Verbindungen des Common Data Service bereitgestellt. Wenn Sie sicherstellen möchten, dass das Feld aufgefüllt wird, erstellen Sie eine [Geschäftsregel](data-platform-create-business-rule.md)
+7. Aktivieren Sie unter **Erforderlich** das Kontrollkästchen, wenn Sie dieses empfohlene Feld in Ihren Apps zu einem erforderlichen Feld machen möchten. Damit wird keine harte Erzwingung über alle Verbindungen zu Common Data Service bereitgestellt. Wenn Sie sicherstellen möchten, dass das Feld aufgefüllt wird, erstellen Sie eine [Geschäftsregel](data-platform-create-business-rule.md)
 
 8. Aktivieren Sie unter **Durchsuchbar** das Kontrollkästchen, wenn dieses Feld in Ansichten, Diagrammen, Dashboards und der erweiterten Suche verfügbar sein muss. In den meisten Fällen sollte dieses Kontrollkästchen überprüft werden.
 
@@ -73,7 +78,7 @@ Mit berechneten Feldern können Sie manuelle Berechnungen automatisieren, die in
 Weitere Details zu den unterstützten Ausdruckstypen und Beispielen finden Sie unter [Definieren berechneter Felder](/dynamics365/customer-engagement/customize/define-calculated-fields)
 
 ## <a name="update-or-delete-a-field"></a>Aktualisieren oder Löschen eines Felds
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**. Klicken oder tippen Sie dann auf eine Entität.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**. Klicken oder tippen Sie dann auf eine Entität.
 2. In der Liste der Felder für die Entität, die Sie ausgewählt haben, klicken oder tippen Sie auf ein Feld, und folgen Sie dann einem dieser Schritte:
    
    * Ändern Sie mindestens eine Feldeigenschaft.
@@ -98,8 +103,8 @@ Beachten Sie beim Erstellen und Ändern von Feldern folgende Punkte:
 * [Beziehungen zwischen Entitäten definierten](data-platform-entity-lookup.md)
 * [Geschäftsregel formulieren](data-platform-create-business-rule.md)
 * [Erstellen einer App mit Entitäten](../canvas-apps/data-platform-create-app.md)
-* [Erstellen einer App von Grund auf einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app-scratch.md)
+* [App ganz neu mit einer Common Data Service-Datenbank erstellen](../canvas-apps/data-platform-create-app-scratch.md)
 
 ## <a name="privacy-notice"></a>Datenschutzbestimmungen
-Mit dem allgemeinen Datenmodell vom Microsoft PowerApps sammeln und speichern wir benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen.  Wir verwenden diese Informationen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die von Erstellern erstellt werden, helfen uns dabei, Szenarien zu verstehen, die in der Microsoft PowerApps Community üblich sind, und Lücken bei den Standardentitäten des Service festzustellen, z. B. Schemas bezüglich der Organisationen. Die Daten in den Datenbanktabellen, die mit diesen Entitäten verknüpft werden, werden von Microsoft nicht verwendet, es wird nicht darauf zugegriffen und sie werden nicht außerhalb der Region, in der die Datenbank bereitgestellt wird, repliziert. Beachten Sie jedoch, dass die benutzerdefinierte Entität und die Feldnamen möglicherweise in Regionen repliziert werden und in Übereinstimmung mit unseren Richtlinien zur Datenaufbewahrung gelöscht werden. Microsoft legt großen Wert auf Ihren Datenschutz, wie weiter unten in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.
+Mit dem Microsoft PowerApps Common Data Model sammeln und speichern wir benutzerdefinierte Entitäts- und Feldnamen in unseren Diagnosesystemen.  Wir verwenden diese Informationen, um das allgemeine Datenmodell für unsere Kunden zu verbessern. Die Entitäts- und Feldnamen, die von App-Erstellern erstellt werden, helfen uns dabei, Szenarien zu verstehen, die in der Microsoft PowerApps-Community üblich sind und Lücken bei den Standardentitäten des Service festzustellen, z. B. Schemas bezüglich der Organisationen. Die Daten in den Datenbanktabellen, die mit diesen Entitäten verknüpft werden, werden von Microsoft nicht verwendet, es wird nicht darauf zugegriffen und sie werden nicht außerhalb der Region, in der die Datenbank bereitgestellt wird, repliziert. Beachten Sie jedoch, dass die benutzerdefinierte Entität und die Feldnamen möglicherweise in Regionen repliziert werden und in Übereinstimmung mit unseren Richtlinien zur Datenaufbewahrung gelöscht werden. Microsoft legt großen Wert auf Ihren Datenschutz, wie weiter unten in unserem [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx) beschrieben.
 

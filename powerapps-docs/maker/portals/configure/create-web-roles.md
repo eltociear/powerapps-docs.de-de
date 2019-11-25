@@ -11,48 +11,48 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 3e8bb144ad338131cccd1be774e8c3f8000f510b
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73552886"
+ms.locfileid: "2760453"
 ---
-# <a name="create-web-roles-for-portals"></a>Erstellen von Webrollen für Portale
+# <a name="create-web-roles-for-portals"></a>Internet-Rollen für Portale erstellen
 
-Nachdem ein Kontakt für die Verwendung des Portals konfiguriert wurde, muss ihm eine oder mehrere Webrollen zugewiesen werden, um spezielle Aktionen auszuführen oder auf geschützte Inhalte im Portal zuzugreifen. Um z. b. auf eine eingeschränkte Seite zuzugreifen, muss der Kontakt einer Rolle zugewiesen werden, auf die der Lesevorgang für diese Seite beschränkt ist. Um neuen Inhalt zu veröffentlichen, muss der Kontakt in einer Rolle abgelegt werden, der Berechtigungen zum Veröffentlichen von Inhalten erteilt werden.
+Nachdem ein Kontakt konfiguriert wurde, der das Portal verwenden soll, muss ihm eine oder mehrere Webrollen zugewiesen werden, um allfällige Sonderaktionen vorzunehmen oder auf geschützte Portalinhalte zuzugreifen. Wenn Sie beispielsweise auf eine eingeschränkte Seite zugreifen, muss dem Kontakt für die Seite, für die der Zugriff eingeschränkt ist, eine Rolle zugewiesen werden. Wenn Sie neue Inhalte zu veröffentlichen, muss dem Kontakt eine Rolle zugewiesen werden, die über Veröffentlichungsberechtigungen verfügt.
 
-So erstellen Sie eine webrolle:
+Um einen neue Internetrolle zu erstellen:
 
-1. Öffnen Sie die [Portal Verwaltungs-App](configure-portal.md).
+1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2. Wechseln Sie zu **Portale** > **Webrollen**.
-    Alternativ dazu können Sie auch die Seite " **Webrollen** " im Bereich " [Freigeben](../manage-existing-portals.md#share) " öffnen. 
+2. Gehen Sie zu **Portale** > **Webrollen**.
+    Als Alternative können Sie auch im Bereich **Webrollen** die Seite des Bereichs [Freigeben](../manage-existing-portals.md#share) öffnen. 
 
 3. Wählen Sie **Neu** aus.
 
-4. Geben Sie entsprechende Werte in die Felder ein.
+4. Hinzufügen der entsprechenden Werte zu den Feldern.
 
-5. Wählen Sie **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 ## <a name="attributes-and-relationships"></a>Attribute und Beziehungen
 
-In der folgenden Tabelle werden die Webrollen Attribute erläutert, die von Portalen verwendet werden.
+Die Tabelle unten erklärt die Attribute für Webrollen, die von Portalen verwendet werden.
 
 | Name                     | Beschreibung                                                                                                                                                                                                                                     |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                     | Der beschreibende Name der webrolle.                                                                                                                                                                                                            |
-| Website                  | Die zugehörige Website                                                                                                                                                                                                                          |
-| Beschreibung              | Eine Erläuterung des Zwecks der webrolle. Optional.                                                                                                                                                                                             |
-| Rolle "authentifizierte Benutzer" | Booleschen. Wenn diese Einstellung auf "true" festgelegt ist, ist dies die Standardweb Rolle für authentifizierte Benutzer (siehe unten). Für eine bestimmte Website sollte nur eine webrolle vorhanden sein, bei der das Rollen Attribut authentifizierte Benutzer auf true festgelegt ist. Dies ist die Standardweb Rolle für authentifizierte Benutzer, denen keine webrolle zugewiesen wurde. |
-| Rolle "anonyme Benutzer"     | Booleschen. Wenn diese Einstellung auf "true" festgelegt ist, ist dies die Standardweb Rolle für nicht authentifizierte Benutzer (siehe unten). Für eine bestimmte Website sollte nur eine webrolle vorhanden sein, bei der das Rollen Attribut anonyme Benutzer auf true festgelegt ist. Dies ist die Standardweb Rolle für nicht authentifizierte Benutzer. Die Rolle "anonyme Benutzer" berücksichtigt nur Entitäts Berechtigungen.| 
+| Name                     | Der beschreibende Name der Internetrolle                                                                                                                                                                                                            |
+| Website                  | Die zugeordnete Website                                                                                                                                                                                                                          |
+| Beschreibung              | Eine Erklärung zum Zwecke der Internetrolle. (Optional).                                                                                                                                                                                             |
+| Authentifizierte Benutzerrolle | Boolescher Wert Wenn der Wert auf "True" festgelegt ist, ist dies die standardmäßige Internetrolle für authentifizierte Benutzer (siehe unten). Es sollte nur eine Internet-Rolle mit dem authentifizierten Benutzerrollenattribute mit dem Wert "True" für eine bestimmte Website vorhanden sein. Dies ist die standardmäßige Internetrolle für authentifizierte Benutzer, denen keine Internet-Rolle zugewiesen wurde. |
+| Anonyme Benutzerrolle     | Boolescher Wert Wenn der Wert auf "True" festgelegt ist, ist dies die standardmäßige Internetrolle für nicht authentifizierte Benutzer (siehe unten). Es sollte nur eine Internet-Rolle mit dem Benutzerrollenattribute "Anonym" mit dem Wert "True" für eine bestimmte Website vorhanden sein. Dies ist die standardmäßige Internetrolle für nicht authentifizierte Benutzer. Die anonyme Benutzer-Rolle respektiert nur Entitätsberechtigungen.| 
 || 
 
-Nachdem die webrolle erstellt wurde, können Sie Sie so konfigurieren, dass Sie Ihren Anforderungen über verschiedene Berechtigungen, Regeln und Zuordnungen entspricht.
+Nachdem die Internet-Rolle erstellt wurde, sind Sie in der Lage, diese so konfigurieren, dass sie Ihre Anforderungen über verschiedene Regeln, Berechtigungen und Zuordnungen erfüllt.
 
-- **Optionale Standardweb Rolle für authentifizierte Benutzer**: durch Aktivieren der **Rolle "authentifizierte Benutzer**" wird Sie zur Standard webrolle für alle Benutzer. Diese Rolle wird häufig verwendet, um einen vordefinierten Zugriff für Benutzer bereitzustellen, die keiner anderen Rolle zugeordnet sind. Denken Sie daran, dass Benutzer mehrere Webrollen haben können, aber es kann nur eine webrolle für authentifizierte Benutzer für authentifizierte Benutzer vorhanden sein.
-- **Optionale Standardweb Rolle für nicht authentifizierte Benutzer**: die **Rolle "anonyme Benutzer** " ist für die Verwendung mit Entitäts Berechtigungen vorgesehen. Andere Regeln oder Berechtigungen werden dabei nicht berücksichtigt. Durch Aktivieren der Rolle "anonyme Benutzer" wird Sie zur Standard webrolle für alle Benutzer. Für nicht authentifizierte Benutzer kann nur eine webrolle für anonyme Benutzer vorhanden sein.
+- **Optionale Standardwebrolle für authentifizierte Benutzer**: Durch Aktivierung der **Authentifizierte Benutzerrolle** wird dieser zur Standardwebrolle für alle Benutzer. Diese Rolle wird allgemein verwendet, um Benutzern, die keinen anderen Rollen zugeordnet sind, vordefinierte Zugriffsrechte zu gewähren. Beachten Sie, dass Benutzer mehrere Internetrollen haben können, aber es gibt nur eine authentifizierte Benutzer-Internetrolle für authentifizierte Benutzer.
+- **Optionale standardmäßige Internetrolle für nicht authentifizierte Benutzer**: Die **Anonyme Benutzerrolle** soll mit Entitäts-Berechtigungen verwendet werden. Sie respektiert keine anderen Regeln oder Berechtigungen. Durch die Aktivierung der Rolle "Anonyme Benutzerrolle" wird sie zur standardmäßigen Internetrolle für alle Benutzer. Es gibt nur eine Anonyme Internet-Benutzerrolle für nicht authentifizierte Benutzer.
 
 ### <a name="see-also"></a>Siehe auch
 
-[Konfigurieren eines Portals](configure-portal.md) <br>
-[Steuern des Webseiten Zugriffs für Portale](webpage-access-control.md)  
-[Hinzufügen von Daten Satz basierter Sicherheit mithilfe von Entitäts Berechtigungen für Portale](assign-entity-permissions.md) <br>
+[Ein Portal konfigurieren](configure-portal.md) <br>
+[Steuern des Webseitenzugriffs für Portale](webpage-access-control.md)  
+[Hinzufügen von datensatzbasierter Sicherheit durch Verwendung von Entitätsberechtigungen für Portale](assign-entity-permissions.md) <br>

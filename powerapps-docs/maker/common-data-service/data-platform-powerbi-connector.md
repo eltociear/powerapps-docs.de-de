@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines PowerBI-Bericht | Microsoft Docs
-description: Verbinden Ihrer Daten aus PowerBI Desktop mithilfe des Common Data Service-Konnektors.
+description: Verbinden mit Ihren Daten aus PowerBI Desktop Verwendung des Common Data Service-Konnektors.
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -9,41 +9,47 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758942"
 ---
-# <a name="create-a-power-bi-report"></a>Power BI-Bericht anfertigen
-Mit Common Data Service erhalten Sie mit Power BI Desktop direkt eine Verbindung mit Ihren Daten, um Berichte zu erstellen und mit Power BI zu veröffentlichen. Aus Power BI können Berichte in Dashboards verwendet werden, für andere Benutzer freigegeben werden und darauf über Plattformen hinweg auf Power BI-Mobile-Apps zugegriffen werden.
+# <a name="create-a-power-bi-report"></a>Erstellen eines Power BI-Berichts
+Common Data Service ermöglicht Ihnen die direkte Verbindung Ihrer Daten mit Power BI Desktop, um Berichte zu erstellen und sie dann nach Power BI zu veröffentlichen. Aus Power BI können Berichte in Dashboards verwendet werden, für andere Benutzer freigegeben werden und darauf über Plattformen hinweg über Power BI mobile Apps zugegriffen werden.
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Um mit Power BI mit Common Data Service zu verwenden, benötigen Sie Folgendes:
+Folgende Voraussetzungen müssen für die Verwendung von Power BI mit Common Data Service erfüllt sein:
 
-* Herunterladen und Installieren von Power BI Desktop. Dies ist eine kostenlose Anwendung ist, die auf Ihrem lokalen Computer ausgeführt wird. Sie können Power BI Desktop [hier](https://powerbi.microsoft.com/desktop/) herunterladen.
+* Herunterladen und Installieren von Power BI Desktop. Dies ist eine kostenlose Anwendung, die auf Ihrem lokalen Computer ausgeführt wird. Sie können Power BI Desktop [hier](https://powerbi.microsoft.com/desktop/) herunterladen.
 * Common Data Service-Umgebung mit Herstellerberechtigungen, um auf das Portal zuzugreifen und die Leseberechtigungen, um auf die Daten in Entitäten zuzugreifen.
 
-## <a name="finding-your-common-data-service-environment-url"></a>Suchen Sie Ihre Common Data Service-Umgebungs-URL
+## <a name="finding-your-common-data-service-environment-url"></a>Finden Sie Ihre Common Data Service-Umgebungs-URL.
 
-1. Öffnen Sie [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) und wählen Sie die Umgebung, mit der Sie eine Verbindung herstellen, und klicken Sie auf das **Einstellungszahnrad** in der oberen rechten Ecke. Klicken Sie dann auf **Erweiterte Anpassungen**
+1. Öffnen Sie [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) und wählen die Umgebung, mit der Sie eine Verbindung herstellen, und klicken Sie auf das **Einstellungszahnrad** in der oberen rechten Ecke. Klicken Sie dann auf **Erweiterte Anpassungen**
 
-    ![Common Data Service-Umgebung](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service-Umgebung")
+    ![Common Data Service Umgebung](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service Umgebung")
 
 2. Klicken Sie auf **Ressourcen** im Entwicklerressourcenabschnitt. Dadurch wird eine neue Registerkarte geöffnet.
 
-    ![Common Data Service-Umgebung](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "Common Data Service-Umgebung")
+    ![Common Data Service Umgebung](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "Common Data Service Umgebung")
 
 3. Kopieren Sie den Stamm die URL in die neuen Registerkarte. Dies ist die eindeutige URL für die Umgebung. Die URL hat das Format **https://yourenvironmentid.crm.dynamics.com/**. Stellen Sie sicher, dass Sie die restliche URL nicht kopieren. Halten Sie dies bereit, damit Sie es verwenden können, wenn Sie Ihren PowerBI-Bericht erstellen.
 
     > [!div class="mx-imgBorder"] 
-    > ![Common Data Service-Umgebung](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Common Data Service-Umgebung")
+    > ![Common Data Service Umgebung](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Common Data Service Umgebung")
 
-## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>Verbindung mit Common Data Service von Power BI Desktop aus herstellen
+## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>Verbindung zu Common Data Service aus Power BI Desktop
 
-1. Starten Sie **Power BI Desktop**. Wenn es sich um das erste Mal handelt, sehen Sie möglicherweise einen Willkommensbildschirm oder gelangen direkt zu einem leeren Canvas. Klicken Sie in beiden Fällen auf **Daten abrufen** und **Mehr**, um eine vollständige Liste der Datenquellen zu öffnen, die für Power BI Desktop verfügbar sind.
+1. Starten Sie **Power BI Desktop**. Wenn es sich um das erste Mal handelt, sehen Sie möglicherweise einen Willkommensbildschirm oder gelangen direkt zu einem leeren Canvas. Klicken Sie in beiden Fällen auf **Daten abrufen** und wählen Sie **Mehr**, um die vollständige Liste der Datenquellen zu öffnen, die für Power BI Desktop verfügbar sind.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport1.png "Power BI Desktop")
 
@@ -80,7 +86,7 @@ Um mit Power BI mit Common Data Service zu verwenden, benötigen Sie Folgendes:
 
 Optionssätze werden in Entitäten verwendet, um einem Benutzer in Apps und Flows eine Dropdownliste mit den Werten bereitzustellen. Bei Verwendung der Power BI-Konnektoren werden Optionssatzfelder als zwei Spalten dargestellt, um den eindeutigen Wert und den Anzeigenwert anzuzeigen.
 
-Wenn Sie beispielsweise einen Optionssatz in Ihrer Entität haben, der ApprovalStatus heißt, würden zwei Felder in Power BI angezeigt werden:
+Wenn Sie beispielsweise einen Optionssatz in Ihrer Entität haben, der ApprovalStatus heißt, würden zwei Felder in Power BI werden:
 
 * ApprovalStatus - Damit wird ein eindeutiger ganzzahliger Wert für jedes Element in Ihrem Optionssatz angezeigt. Das hilft, wenn Sie Filter anwenden, damit sie nicht betroffen sind, wenn Sie zukünftige Änderungen am Anzeigenamen vornehmen.
 * ApprovalStatus_display - Damit wird der benutzerfreundliche Anzeigenamen des Elements angezeigt. Er wird am häufigsten verwendet, wenn die Option in einer Tabelle oder in einem Diagramm dargestellt wird.
@@ -94,7 +100,7 @@ Wenn Sie beispielsweise einen Optionssatz in Ihrer Entität haben, der ApprovalS
 
 ## <a name="navigating-relationships"></a>Beziehungen navigieren
 
-Beziehungen in Common Data Service erfordern, dass Sie in PowerBI Desktop mit einem GUID-Feld eine Beziehung zwischen den beiden Entitäten erstellen. Dies ist ein vom System generierter eindeutiger Bezeichner, der sicherstellt, dass Beziehungen für die Erstellungsdatensätze erstellt werden, wenn möglicherweise Mehrdeutigkeit oder doppelte Einträge bei anderen Felder vorhanden sind. Informationen zur Verwaltung von Beziehungen in Power BI Desktop finden Sie [hier](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships).
+Beziehungen in Common Data Service erfordern, dass Sie in PowerBI Desktop mit einem GUID-Feld eine Beziehung zwischen den beiden Entitäten erstellen. Dies ist ein vom System generierter eindeutiger Bezeichner, der sicherstellt, dass Beziehungen für die Erstellungsdatensätze erstellt werden, wenn möglicherweise Mehrdeutigkeit oder doppelte Einträge bei anderen Felder vorhanden sind. Informationen zur Verwaltung von Beziehungen in Power BI desktop finden Sie [hier](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships).
 
 Mehrere Beziehungen werden möglicherweise automatisch erstellt, Sie können jedoch die Beziehungen weiterhin überprüfen und sicherstellen, dass die korrekten erstellt wurden, als Ihr Bericht erstellt wurde:
 

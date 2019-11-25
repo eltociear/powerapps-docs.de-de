@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Daten Satz basierter Sicherheit mithilfe von Entitäts Berechtigungen für ein Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen einer Entitäts Berechtigung und Zuweisen von Webrollen.
+title: Hinzufügen von datensatzbasierter Sicherheit durch Verwendung von Entitätsberechtigungen für ein Portal | MicrosoftDocs
+description: Anleitungen zum Hinzufügen einer Entitäts-Berechtigung und Hinzufügen von Webrollen zu dieser.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,115 +11,115 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 47730a2ba169b89534fa93221290c5598a95a8e8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553392"
+ms.locfileid: "2760435"
 ---
-# <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>Hinzufügen von Daten Satz basierter Sicherheit mithilfe von Entitäts Berechtigungen für Portale
+# <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>Hinzufügen von datensatzbasierter Sicherheit durch Verwendung von Entitätsberechtigungen für Portale
 
-Verwenden Sie zum Anwenden von Daten Satz basierter Sicherheit in Portalen auf einzelne Datensätze Entitäts Berechtigungen. Sie fügen den Webrollen Entitäts Berechtigungen hinzu, damit Sie Rollen in Ihrer Organisation definieren können, die logisch den Berechtigungen und Konzepten des Daten Satz Besitzes und des Zugriffs entsprechen, die mithilfe von Entitäts Berechtigungen eingeführt werden. Beachten Sie, dass ein bestimmter Kontakt zu einer beliebigen Anzahl von Rollen gehören kann und eine bestimmte Rolle eine beliebige Anzahl von Entitäts Berechtigungen enthalten kann. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Erstellen von Webrollen für Portale](create-web-roles.md) 
+Um datensatzbasierte Sicherheit in Portalen auf einzelne Datensätze anzuwenden, verwenden Sie Entitäts-Berechtigungen. Sie fügen Entitäts-Berechtigungen zu Webrollen hinzu, um Rollen in Ihrer Organisation definieren zu können, die den Rechten und Konzepten des Datensatzbesitzes und -zugriffs, die mit Entitätsberechtigungen eingeführt werden, logisch entsprechen. Beachten Sie, dass ein bestimmter Kontakt einer beliebigen Zahl Rollen angehören und eine bestimmte Rolle eine beliebige Anzahl Entitäts-Berechtigungen enthalten kann. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Erstellen von Webrollen für Portale](create-web-roles.md) 
 
-Obwohl Berechtigungen zum Ändern und Zugreifen auf URLs in einer Portal Site Zuordnung über die Inhalts Autorisierung erteilt werden, möchten Website-Manager auch Ihre benutzerdefinierten Webanwendungen schützen, die mit Entitäts Formularen und Entitäts Listen erstellt wurden. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definieren von Entitäts Formularen](entity-forms.md) und [Definieren von Entitäts Listen](entity-lists.md)  
+Obwohl Berechtigungen zum Ändern und Aufrufen von URLs in einer Portalsiteübersicht über Content-Autorisierung gewährt werden, können Website-Manager zudem ihre benutzerdefinierten Webanwendungen sichern, die mit Entitätsformularen und Entitätslisten erstellt wurden. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definieren von Entitätsformularen](entity-forms.md) und [Definieren von Entitätslisten](entity-lists.md)  
 
-Um diese Features zu sichern, ermöglichen Entitäts Berechtigungen das gewähren präziser Rechte für beliebige Entitäten und die Aktivierung der Sicherheit auf Datensatzebene über Beziehungs Definitionen.
+Zum Sichern dieser Funktionen wurden Entitätsberechtigungen eingeführt, die die Gewährung granularer Rechte für beliebige Entitäten und die Aktivierung der Sicherheit auf Datensatzebene über Beziehungsdefinitionen ermöglichen.
 
-## <a name="add-entity-permissions-to-a-web-role"></a>Hinzufügen von Entitäts Berechtigungen zu einer webrolle
+## <a name="add-entity-permissions-to-a-web-role"></a>Hinzufügen von Entitätsberechtigungen zu Webrollen
 
-1.  Öffnen Sie die [Portal Verwaltungs-App](configure-portal.md).
+1.  Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2. Wechseln Sie zu **Portale** &gt; **Webrollen** , und öffnen Sie die webrolle, der Sie die Berechtigungen hinzufügen möchten. 
+2. Gehen Sie zu **Portale** &gt; **Webrollen** und öffnen die Webrolle, der Sie Berechtigungen hinzufügen möchten. 
 
-3. Wählen Sie **Hinzufügen** aus, um einer webrolle eine vorhandene Entitäts Berechtigung hinzuzufügen. 
+3. Wählen Sie **Hinzufügen**, um eine vorhandene Entitäts-Berechtigung einer Webrolle hinzuzufügen. 
 
-4. Wählen Sie **neu** aus, um einen neuen Entitäts Daten Satz zu erstellen.
+4. Wählen Sie **Neu**, um einen Entitäts-Berechtigungsdatensatz zu erstellen.
 
-    ![Hinzufügen von Entitäts Berechtigungen zu einer webrolle](../media/add-entity-permission-web-role.png "Hinzufügen von Entitäts Berechtigungen zu einer webrolle")  
+    ![Hinzufügen von Entitätsberechtigungen zu Webrollen](../media/add-entity-permission-web-role.png "Hinzufügen von Entitätsberechtigungen zu Webrollen")  
 
-Beim Erstellen eines neuen Entitäts Berechtigungsdaten Satzes besteht der erste Schritt darin, die Entität zu bestimmen, die gesichert werden soll. Der nächste Schritt besteht im Definieren des Gültigkeits Bereichs, wie unten erläutert, und&mdash;für einen anderen Bereich als Global&mdash;die Beziehungen, die diesen Bereich definieren. Bestimmen Sie schließlich die Rechte, die der Rolle über diese Berechtigung gewährt werden. Beachten Sie, dass Rechte kumulativ sind. Wenn also ein Benutzer einer Rolle zugewiesen ist, die Lese-und Aktualisierungs Berechtigungen gewährt, verfügt der Benutzer über Lese-und Aktualisierungs Rechte für alle Datensätze, die sich zwischen den beiden Rollen überlappen.
+Wenn Sie einen neuen Entitäts-Berechtigungsdatensatz erstellen, müssen Sie erst die Entität bestimmen, welche gesichert wird. Danach müssen Sie den Umfang definieren (siehe unten), &mdash;und im Falle eines Umfangs außerhalb von Global&mdash; müssen die Beziehungen, die diesen Umfang definieren, angegeben werden. Abschließend bestimmen Sie die Rechte, die der Rolle über diese Berechtigung gewährt werden. Beachten Sie, dass Rechte kumulativ sind. Wenn also ein Benutzer in einer Rolle ist, die Lesezugriff erteilt, und in einer anderen, die Lese- und Aktualisierungszugriff erteilt, hat der Benutzer Lese- und Aktualisierungszugriff auf alle Datensätze, die sich zwischen den beiden Rollen überschneiden.
 
 > [!Note]
-> Die Auswahl von CMS-Entitäten wie Webseiten und Webdateien ist ungültig und kann andere unbeabsichtigte Folgen haben. Das Portal bestätigt die Sicherheit von CMS-Entitäten auf der Grundlage von Inhalts Zugriffs Steuerungen, nicht von Entitäts Berechtigungen.
+> Das Auswählen von CMS-Entitäten wie Webseite und Webdateien ist ungültig und kann andere unbeabsichtigte Konsequenzen haben. Dieses Portal bestätigt die Sicherheit für CMS-Entitäten anhand Inhalts-Zugriffssteuerungen und nicht Entitätsberechtigungen.
 
-### <a name="global-scope"></a>Globaler Gültigkeitsbereich
+### <a name="global-scope"></a>Global-Umfang
 
-Wenn einem Entitäts Berechtigungsdaten Satz mit Leseberechtigung eine Rolle mit globalem Gültigkeitsbereich gewährt wird, hat jeder Kontakt in dieser Rolle Zugriff auf alle Datensätze der definierten Entität. So können beispielsweise alle Leads, alle Konten usw. angezeigt werden. Diese Berechtigung wird automatisch von allen Entitäts Listen berücksichtigt. im Wesentlichen werden alle Datensätze entsprechend den Modell gesteuerten App-Ansichten angezeigt, die für diese Liste definiert wurden. Wenn ein Benutzer darüber hinaus versucht, über ein Entitäts Formular auf einen Datensatz zuzugreifen, auf den er keinen Zugriff hat, wird ein Berechtigungs Fehler ausgegeben.
+Wenn ein Entitätsberechtigungs-Datensatz mit Leseberechtigung für eine Rolle gewährt wird, die einen globalen Geltungsbereich hat, hat jeder Kontakt in dieser Rolle Zugriff auf alle Datensätze in der definierten Entität. Zum Beispiel kann er alle Leads, Firmen usw. anzeigen. Diese Berechtigung wird automatisch von beliebigen Entitätslisten berücksichtigt; wobei im Wesentlichen alle Datensätze gemäß den modellgesteuerten App-Ansichten angezeigt werden, die für diese Liste definiert wurden. Wenn ein Benutzer ferner versucht, auf einen Datensatz über ein Entitätsformular zuzugreifen, auf das er keinen Zugriff hat, wird ein Berechtigungsfehler angezeigt.
 
-### <a name="contact-scope"></a>Kontaktbereich
+### <a name="contact-scope"></a>Kontakt-Umfang
 
-Mit dem Kontaktbereich hat ein angemeldeter Benutzer in der Rolle, für die der Berechtigungs Eintrag definiert ist, die Rechte, die durch diese Berechtigung gewährt werden, nur für Datensätze, die über eine definierte Beziehung mit dem Kontaktdaten Satz dieses Benutzers verknüpft sind.
+Mit dem Kontakt-Geltungsbereich werden angemeldeten Benutzern in der Rolle, für die der Berechtigungsdatensatz definiert wurde, die Rechte von dieser Berechtigung nur für Datensätze erteilt, die mit dem Kontaktdatensatz dieses Benutzers über eine definierte Beziehung verknüpft sind.
 
-In einer Entitäts Liste bedeutet dies, dass ein Filter zu allen Modell gesteuerten App-Ansichten hinzugefügt wird, die von dieser Liste angezeigt werden, wodurch nur Datensätze abgerufen werden, die direkt mit dem aktuellen Benutzer verknüpft sind. (Je nach Szenario kann sich diese Beziehung als Besitz-oder Verwaltungsrechte vorstellen.)
+Auf einer Liste mit Entitäten bedeutet dies, dass ein Filter hinzugefügt wird für alle modellgesteuerten App-Ansichten, die durch diese Liste angezeigt werden, wobei nur die Datensätze abgerufen werden, die direkt mit dem aktuellen Benutzer verknüpft sind. (Je nach Szenario entspricht diese Beziehung dem Besitz oder den Verwaltungsrechten.)
 
-Entitäts Formulare erlauben nur die entsprechende Berechtigung zum Lesen, erstellen, schreiben usw., wenn diese Beziehung beim Laden des Datensatzes vorhanden ist. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definieren von Entitäts Formularen und benutzerdefinierter Logik innerhalb eines Portals](entity-forms.md).  
+Entitätsformulare erlauben nur die entsprechende Berechtigung zum Lesen, Erstellen, Schreiben usw., sofern diese Beziehung vorhanden ist, wenn der Datensatz geladen wird. [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Definieren von Entitätsformularen und benutzerdefinierter Logik in einem Portal](entity-forms.md).  
 
-### <a name="account-scope"></a>Kontobereich
+### <a name="account-scope"></a>Firmen-Umfang
 
-Mit dem Kontobereich erhält ein angemeldeter Benutzer in der Rolle, für die der Berechtigungs Eintrag definiert ist, die Rechte, die durch diese Berechtigung gewährt werden, nur für Datensätze, die über eine definierte Beziehung mit dem übergeordneten Kontodaten Satz dieses Benutzers verknüpft sind.
+Mit dem Firmen-Geltungsbereich werden angemeldeten Benutzern in der Rolle, für die der Berechtigungsdatensatz definiert wurde, die Rechte von dieser Berechtigung nur für Datensätze erteilt, die mit dem übergeordnete Firma-Datensatz dieses Benutzers über eine definierte Beziehung verknüpft sind.
 
-### <a name="self-scope"></a>Self-Scope
+### <a name="self-scope"></a>Selbst-Umfang
 
-Self-Scope ermöglicht Ihnen das Definieren der Rechte, die ein Benutzer für seinen eigenen Kontaktdaten Satz hat. Dadurch können Benutzer Entitäts Formulare oder Web Forms verwenden, um Änderungen an Ihrem eigenen Kontaktdaten Satz vorzunehmen, der mit dem Profil verknüpft ist. Beachten Sie, dass die Standardprofil Seite über ein spezielles, integriertes Formular verfügt, das es jedem Benutzer ermöglicht, ihre grundlegenden Kontaktinformationen zu ändern und Marketing Listen zu abonnieren. Wenn dieses Formular in Ihrem Portal (standardmäßig) enthalten ist, benötigen die Benutzer diese Berechtigung nicht, um es zu verwenden. Allerdings benötigen Sie diese Berechtigung, um benutzerdefinierte Entitäts Formulare oder Webformulare zu verwenden, die Ihren Benutzer Kontaktdaten Satz als Ziel haben.
+Der Selbst-Umfang ermöglicht Ihnen, die Rechte zu definieren, die ein Benutzer für den eigenen Kontakt (Identitäts)-Datensatz hat. Dadurch können Benutzer mithilfe von Entitätsformularen oder Webformularen Änderungen vornehmen am eigenen Kontaktdatensatz, der mit ihrem Profil verknüpft ist. Beachten Sie, dass die Profil-Standardseite über ein spezielles integriertes Formular verfügt, das es einem beliebigen Benutzer ermöglicht, die grundlegenden Kontaktinformationen zu ändern und Marketinglisten zu abonnieren oder zu kündigen. Wenn dieses Formular im Portal enthalten ist (was standardmäßig der Fall ist), benötigen Benutzer diese Berechtigung nicht zu seiner Verwendung. Sie benötigen diese Berechtigung jedoch, um benutzerdefinierte Entitätsformulare oder Webformulare zu verwenden, die auf ihren Benutzer-Kontaktdatensatz ausgerichtet sind.
 
-### <a name="parental-scope"></a>Eltern Bereich
+### <a name="parental-scope"></a>Übergeordnet-Umfang
 
-In diesem komplexesten Fall werden Berechtigungen für eine Entität erteilt, bei der es sich um eine Beziehung zwischen einer Entität handelt, für die bereits ein Entitäts Berechtigungsdaten Satz definiert wurde. Diese Berechtigung ist tatsächlich ein untergeordneter Datensatz der übergeordneten Entitäts Berechtigung.
+In diesem überaus komplexen Fall werden Berechtigungen für eine Entität erteilt, die eine Beziehung entfernt ist von einer Entität, für die bereits ein Berechtigungsdatensatz definiert wurde. Diese Berechtigung ist tatsächlich ein untergeordneter Datensatz der übergeordneten Entitätsberechtigung.
 
-Der übergeordnete Berechtigungsdaten Satz definiert eine Berechtigung und einen Bereich für eine Entität (wahrscheinlich globaler oder Kontaktbereich, obwohl das übergeordnete Element ebenfalls möglich ist). Diese Entität kann sich auf einen Kontakt (im Fall eines Kontakt Bereichs) oder global definiert beziehen. Wenn diese Berechtigung vorhanden ist, wird eine untergeordnete Berechtigung erstellt, die eine Beziehung zwischen einer anderen Entität und der in der übergeordneten Beziehung definierten Entität definiert.
+Der übergeordnete Berechtigungsdatensatz definiert eine Berechtigung und einen Umfang für eine Entität (wahrscheinlich Global- oder Kontakt-Umfang, obwohl „Übergeordnet“ auch möglich ist.) Diese Entität kann mit dem Kontakt verknüpft sein (im Fall des Kontakt-Umfangs) oder global definiert. Mit dieser eingerichteten Berechtigung wird eine untergeordnete Berechtigung erstellt, mit der eine Beziehung von einer anderen Entität zur in der übergeordneten Beziehung definierten Entität definiert wurde.
 
-Daher verfügen Benutzer in einer webrolle, die Zugriff auf Datensätze haben, die durch übergeordnete Entitäts Berechtigungen definiert sind, auch über Rechte, die durch den untergeordneten Berechtigungsdaten Satz für Datensätze definiert sind
+Benutzer in einer Webrolle, die Zugriff auf Datensätze haben, die von übergeordneten Entitätsberechtigungen definiert wurden, verfügen daher ebenfalls über Rechte, wie vom untergeordneten Berechtigungsdatensatz zu Datensätzen, die mit dem übergeordneten Datensatz verknüpft wurden, definiert.
 
 ### <a name="attributes-and-relationships"></a>Attribute und Beziehungen
 
-In der folgenden Tabelle werden die Attribute für Entitäts Berechtigungen erläutert.
+In der folgenden Tabelle werden die Entitäts-Berechtigungsattribute erläutert.
 
 | Name                     | Beschreibung                                                                                                                                                                                                                                                                                                               |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                     | Der beschreibende Name des Datensatzes. Dieses Feld ist erforderlich.                                                                                                                                                                                                                                                               |
-| Entitäts Name              | Der logische Name der Entität, die gesichert werden soll, oder der die Kontakt Beziehung oder die übergeordnete Beziehung definiert, um eine verknüpfte Entität mit einer untergeordneten Berechtigung zu sichern. Dieses Feld ist erforderlich.                                                                                                                        |
-| Bereich (obligatorisch)                   | <ul><li>**Global**: Erteilen von Berechtigungen für den Entitäts Daten Satz ohne Anforderung eines Besitzers (Contact).</li><li>**Contact**: Erteilen von Berechtigungen für den Entitäts Daten Satz, der über eine direkte Beziehung zu einem Besitzer (Kontakt) verfügt.</li><li>**Konto**: erteilen Sie Berechtigungen für den Entitäts Daten Satz, der über eine Beziehung zu einem Konto verfügt, das als Besitzer fungiert, vorausgesetzt, das Konto ist der übergeordnete Kunde des Kontakts.</li><li>**Parent**: Erteilen von Berechtigungen für den Entitäts Daten Satz durch die Kette der Beziehungen zwischen den übergeordneten Berechtigungen.</li></ul>|
-| Beziehung kontaktieren     | Nur erforderlich, wenn Bereich = Kontakt. Der Schema Name der Beziehung zwischen dem Kontakt und der Entität, die im Feld Entitäts Name angegeben ist.|
-| Übergeordnete Beziehung      | Nur erforderlich, wenn eine übergeordnete Entitäts Berechtigung zugewiesen wird. Der Schema Name der Beziehung zwischen der Entität, die im Feld Entitäts Name angegeben ist, und der Entität, die durch das Feld Entitäts Name auf dem zugehörigen übergeordneten Berechtigungsdaten Satz angegeben                                                                                     |
-| Übergeordnete Entitäts Berechtigung | Nur erforderlich, wenn Scope = Parent.                                                                                                                                                                                                                                                            |
-| Dazu                     | Berechtigung, die steuert, ob der Benutzer einen Datensatz lesen kann.                                                                                                                                                                                                                                                               |
-| Schreibung                    | Berechtigung, die steuert, ob der Benutzer einen Datensatz aktualisieren kann.                                                                                                                                                                                                                                                             |
-| Stelle                   | Berechtigung, die steuert, ob der Benutzer einen neuen Datensatz erstellen kann. Das Recht, einen Datensatz für einen Entitätstyp zu erstellen, gilt nicht für einen einzelnen Datensatz, sondern für eine Entitäts Klasse.                                                                                                                             |
-| Lösch                   | Berechtigung, die steuert, ob der Benutzer einen Datensatz löschen kann.                                                                                                                                                                                                                                                             |
-| Anfügen                   | Berechtigung, die steuert, ob der Benutzer einen anderen Datensatz an den angegebenen Datensatz anfügen kann. Das Anfügen und Anfügen an Zugriffsrechte funktioniert in Kombination. Jedes Mal, wenn ein Benutzer einen Datensatz an einen anderen anfügt, muss der Benutzer über beide Rechte verfügen. Wenn Sie z. b. einen Hinweis an einen Fall anfügen, müssen Sie über das Recht "Zugriff anfügen" für den Hinweis und das Recht "anfügen" für den Fall verfügen, dass der Vorgang funktioniert.  |
-| Anfügen an                | Berechtigung, die steuert, ob der Benutzer den fraglichen Datensatz an einen anderen Datensatz anfügen kann. Das Anfügen und Anfügen an Zugriffsrechte funktioniert in Kombination. Weitere Informationen finden Sie in der Beschreibung für Append.|
+| Name                     | Der beschreibende Name des Datensatzes. In diesem Feld ist ein Eintrag erforderlich.                                                                                                                                                                                                                                                               |
+| Entitätsname              | Der logische Name der Entität, die gesichert werden soll, oder die die Kontakt-Beziehung oder übergeordnete Beziehung definiert, um eine verknüpfte Entität für eine untergeordnete Berechtigung zu sichern. In diesem Feld ist ein Eintrag erforderlich.                                                                                                                        |
+| Bereich (obligatorisch)                   | <ul><li>**Global**: Erteilen von Rechten für den Entitätsdatensatz ohne Anforderung für einen Besitzer (Kontakt).</li><li>**Kontakt**: Erteilen von Rechten für den Entitätsdatensatz mit direkter Beziehung zu einem Besitzer (Kontakt).</li><li>**Firma**: Erteilen von Rechten für den Entitätsdatensatz, der eine Beziehung zu einer Firma hat, die als Besitzer dient, unter der Annahme, dass die Firma übergeordneter Kunde des Kontakts ist.</li><li>**Übergeordnet**: Erteilen von Rechten für den Entitätsdatensatz über die Kette der Beziehungen seiner übergeordneten Berechtigungen.</li></ul>|
+| Kontaktbeziehung     | Nur erforderlich, wenn Umfang = Kontakt. Der Schemaname der Beziehung zwischen dem Kontakt und der Entität, die vom Entitätsnamensfeld angegeben ist.|
+| Übergeordnete Beziehung      | Nur erforderlich, wenn eine übergeordnete Entitätsberechtigung zugeordnet wurde. Der Schemaname der Beziehung zwischen der Entität, die vom Entitätsnamensfeld angegeben ist, und der Entität, die vom Entitätsnamensfeld für den Datensatz der übergeordnete Entitätsberechtigung angegeben ist.                                                                                     |
+| Übergeordnete Entitätsberechtigung | Erforderlich, wenn Umfang= Übergeordnet.                                                                                                                                                                                                                                                            |
+| Lesen                     | Recht, das steuert, ob der Benutzer einen Datensatz lesen kann.                                                                                                                                                                                                                                                               |
+| Schreiben                    | Recht, das steuert, ob der Benutzer einen Datensatz aktualisieren kann.                                                                                                                                                                                                                                                             |
+| Erstellen                   | Recht, das steuert, ob der Benutzer einen neuen Datensatz erstellen kann. Das Recht, einen Datensatz für einen Entitätstyp zu erstellen, bezieht sich nicht auf einen einzelnen Datensatz, sondern vielmehr auf eine Klasse von Entitäten.                                                                                                                             |
+| Löschen                   | Recht, das steuert, ob der Benutzer einen Datensatz löschen kann.                                                                                                                                                                                                                                                             |
+| Anfügen                   | Recht, das steuert, ob der Benutzer einen weiteren Datensatz an den angegebenen Datensatz anfügen kann. Die Zugriffsrechte "Anfügen" und "Anfügen an" funktionieren in Kombination. Jedes Mal, wenn ein Benutzer einen Datensatz an einen anderen anfügt, muss der Benutzer über beide Rechte verfügen. Wenn Sie beispielsweise eine Notiz an eine Anfrage anfügen, müssen Sie über das Anfügen-Zugriffsrecht für die Notiz verfügen sowie über das Anfügen an-Zugriffsrecht für die Anfrage, damit der Vorgang funktioniert.  |
+| Anfügen an                | Recht, das steuert, ob der Benutzer den entsprechenden Datensatz an einen anderen Datensatz anfügen kann. Die Zugriffsrechte "Anfügen" und "Anfügen an" funktionieren in Kombination. Weitere Informationen finden Sie unter der Beschreibung fürs Anfügen.|
 | | |
 
-## <a name="global-permissions-for-tasks-related-to-leads"></a>Globale Berechtigungen für Aufgaben im Zusammenhang mit Leads
+## <a name="global-permissions-for-tasks-related-to-leads"></a>Globale Berechtigungen für Aufgaben in Bezug auf Leads
 
-In einem Szenario möchten wir möglicherweise eine Entitäts Liste und Entitäts Formulare verwenden, um alle Leads im Portal für alle Benutzer in einer benutzerdefinierten Lead-Manager-webrolle zu übernehmen. Im Formular für die Lead Bearbeitung, das immer dann gestartet wird, wenn eine führende Zeile in der Liste ausgewählt ist, werden in einem subraster Verwandte Aufgaben Datensätze angezeigt. Diese Datensätze sollten für alle Personen in der Lead Manager-Rolle zugänglich sein. Als ersten Schritt werden wir globale Berechtigungen für alle Benutzer in unserer Lead Manager-Rolle vergeben.
+In einem Szenario soll eine Liste mit Entitäten und Entitätsformulare verwendet werden, um alle Leads für das Portal für jeden in einer benutzerdefinierten "Lead-Manager"-Webrolle verfügbar zu machen. Im Lead-Bearbeitungs-Formular, das aufgerufen wird, wenn auf eine Leadzeile in der Liste geklickt wird, werden in einem Unterraster verbundene Aufgabendatensätze angezeigt. Diese Datensätze sollten für alle Mitarbeiter der Lead-Manager-Rolle verfügbar sein. Als erstes werden Global-Berechtigungen für Leads für alle Mitarbeiter der Lead Manager-Rolle erteilt.
 
-Diese Rolle verfügt über eine zugehörige Entitäts Berechtigung für die führende Entität mit einem globalen Gültigkeitsbereich.
+Diese Rolle verfügt über eine Entitätsberechtigung für die Entität „Lead“ mit einem Global-Bereich.
 
-Benutzer in dieser Rolle können auf alle Leads über Entitäts Listen oder Formulare im Portal zugreifen.
+Benutzer können in dieser Rolle auf alle Leads über Entitäts-Listen oder -Formulare im Portal zugreifen.
 
-![Gewähren globaler Berechtigungen für einen Lead](../media/grant-global-permission-leads.png "Gewähren globaler Berechtigungen für einen Lead")  
+![Einem Lead globale Berechtigungen erteilen](../media/grant-global-permission-leads.png "Einem Lead globale Berechtigungen erteilen")  
 
-Nun fügen wir der globalen Lead Berechtigung eine untergeordnete Berechtigung hinzu. Wenn der übergeordnete Berechtigungsdaten Satz geöffnet ist, wechseln Sie zum subraster untergeordnete **Entitäts Berechtigungen** , wählen Sie **neu** aus, um eine Suche nach Entitäts Berechtigungen zu öffnen, wählen Sie die Lupe aus, und wählen Sie dann **neu** aus, um einen neuen Datensatz
+Jetzt wird eine untergeordnete Berechtigung zur Global-Lead-Berechtigung hinzugefügt. Navigieren Sie bei geöffnetem übergeordnetem Berechtigungsdatensatz zum Unterraster **Untergeordnete Entitätsberechtigungen**, klicken Sie auf **Neu**, um eine Suche nach Entitätsberechtigungen zu öffnen, klicken Sie auf die Lupe, und klicken Sie auf **Neu**, um einen neuen Datensatz hinzuzufügen.
 
-![Hinzufügen von Entitäts Berechtigungen zu einer webrolle](../media/add-entity-permission-web-role.png "Hinzufügen von Entitäts Berechtigungen zu einer webrolle")  
+![Hinzufügen von Entitätsberechtigungen zu Webrollen](../media/add-entity-permission-web-role.png "Hinzufügen von Entitätsberechtigungen zu Webrollen")  
 
-Wählen Sie die Entität als Aufgaben und den Bereich als Eltern aus. Beachten Sie, dass Sie die übergeordnete Beziehung (**Lead\_Tasks**) auswählen können. Diese Berechtigung impliziert, dass ein Kontakt, der in einer webrolle mit der übergeordneten Berechtigung enthalten ist, über eine globale Berechtigung für alle Aufgaben verfügt, die mit Leads verknüpft sind.
+Wählen Sie die Entität als Aufgaben und den Umfang als „Übergeordnet“ aus. Beachten Sie, dass Sie die übergeordnete Beziehung (**Lead\_Tasks**) auswählen können. Diese Berechtigung bedeutet, dass ein Kontakt, der in einer Webrolle mit übergeordneter Berechtigung ist, dann für alle Aufgaben in Bezug auf Leads über die Global-Berechtigung verfügt.
 
-Beachten Sie, dass Sie für Ihre Liste diese Berechtigungen aktivieren müssen, wenn Sie Entitäts Berechtigungen für die Liste aktiviert haben und Aktionen vorliegen müssen, die es Benutzern ermöglichen, die Aktionen auszuführen, für die ihre Berechtigungen erteilt wurden. Außerdem müssen Berechtigungen für den [Entitäts Formular](entity-forms.md) Daten Satz aktiviert werden, und dieses Formular muss auf eine Seite mit einem untergeordneten Raster für die Entität, die Sie mit untergeordneten Berechtigungen aktivieren möchten, in diesem Fall Tasks. Darüber hinaus müssen Sie zum Aktivieren von Lese-oder Erstellungs Berechtigungen für Tasks diese Entitäts Formulare ebenfalls konfigurieren und die Formulare bearbeiten, um das Nachschlage Feld für die Suche zu entfernen.  
+Denken Sie daran: Damit Ihre Liste diese Berechtigungen berücksichtigt, müssen Sie die Entitäts-Berechtigungen in der Liste aktiviert haben UND es muss Aktionen geben, die es den Benutzern tatsächlich erlauben, die Aktionen auszuführen, für die ihre Berechtigungen gewährt wurden. Darüber hinaus müssen Berechtigungen auch im [Entitätsformular](entity-forms.md)-Datensatz aktiviert sein, und dieses Formular muss eine Seite anzeigen mit Unterraster für die Entität, die Sie mit untergeordneten Berechtigungen, in diesem Fall Aufgaben, aktivieren möchten. Darüber hinaus müssen Sie diese Entitätsformulare konfigurieren, um das Lesen und Erstellen für Aufgaben zu aktivieren, und die Formulare bearbeiten, um das Neueinstufungs-Suchfeld zu entfernen.  
 
-![Bearbeiten eines Webseiten Formulars](../media/edit-webpage-form.png "Bearbeiten eines Webseiten Formulars")  
+![Bearbeiten eines Webseitenformulars](../media/edit-webpage-form.png "Bearbeiten eines Webseitenformulars")  
 
-Dadurch werden Berechtigungen für alle Aufgaben gewährt, die mit Leads verknüpft sind. Wenn Aufgaben in einer Entitäts Liste angezeigt werden, wird der Liste im Grunde ein Filter hinzugefügt, sodass nur Aufgaben in der Liste angezeigt werden, die mit einem Lead verknüpft sind. In unserem Beispiel werden Sie mit einem unter Raster auf einem Entitäts Formular angezeigt.
+Dies gewährt dann Berechtigungen für alle Aufgaben in Bezug auf Leads. Wenn Aufgaben in einer Liste mit Entitäten angezeigt werden, wird im Wesentlichen ein Filter der Liste hinzugefügt, sodass nur Aufgaben, die mit einem Lead zusammenhängen, in der Liste angezeigt werden. In unserem Beispiel werden Sie mit einem Unterraster in ein Entitätsformular angezeigt.
 
-![Task Beispiel](../media/tasks-example.png "Task Beispiel")  
+![Aufgabenbeispiel](../media/tasks-example.png "Aufgabenbeispiel")  
 
-## <a name="contact-scoped-permissions-for-tasks"></a>Zugriffs bezogene Berechtigungen für Tasks
+## <a name="contact-scoped-permissions-for-tasks"></a>Kontakt-Umfang-Berechtigungen für Aufgaben
 
-Ein weiteres Beispiel wäre, wenn Sie den Zugriff auf Aufgaben gestatten möchten, für die ein Kontakt mit dem übergeordneten Lead für diese Aufgabe verknüpft ist. Dieses Szenario ist beinahe identisch mit dem vorherigen Abschnitt, außer in diesem Fall hat die übergeordnete Berechtigung anstelle von Global einen Kontaktbereich. Eine Beziehung muss für die übergeordnete Beziehung zwischen der Lead-Entität und der Contact-Entität angegeben werden.
+Ein anderes Beispiel: Es soll Zugriff auf Aufgaben gewährt werden, für die ein Kontakt dem übergeordneten Lead für diese Aufgabe zugeordnet wird. Dieses Szenario ist mit dem aus dem vorherigen Abschnitt fast identisch, außer dass in diesem Fall die übergeordnete Berechtigung über einen Kontakt-Umfang verfügt, statt einen Global-Umfang. Eine Beziehung muss für die übergeordnete Beziehung zwischen der Lead-Entität und der Kontakt-Entität angegeben werden.
 
-Nachdem diese Berechtigungen vorhanden sind, können Benutzer in der Lead-Manager-Rolle direkt auf Leads zugreifen, die mit Ihnen verknüpft sind, wie von der Contact-Scope-Berechtigung festgelegt, und auf Aufgaben im Zusammenhang mit denselben Leads zugreifen, die durch den untergeordneten Berechtigungsdaten Satz angegeben werden.
+Sobald diese Berechtigungen vorhanden sind, können Benutzer in der Lead Manager-Rolle auf Leads zugreifen, die mit ihnen direkt wie über die Kontakt-Umfangs-Berechtigung angegeben verknüpft sind, und auf Aufgaben, die mit den gleichen Leads wie durch den untergeordneten Berechtigungsdatensatz angegeben verknüpft sind.
 
 ### <a name="see-also"></a>Siehe auch
 
 [Erstellen von Webrollen für Portale](create-web-roles.md)  
-[Steuern des Webseiten Zugriffs für Portale](webpage-access-control.md)
+[Steuern des Webseitenzugriffs für Portale](webpage-access-control.md)

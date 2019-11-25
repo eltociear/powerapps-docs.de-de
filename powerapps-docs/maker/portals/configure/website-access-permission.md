@@ -1,6 +1,6 @@
 ---
-title: Erstellen von Website Zugriffsberechtigungen in Dynamics 365-Portalen | MicrosoftDocs
-description: Erfahren Sie, wie Sie den Elementen in einem Portal Website Zugriffsberechtigungen erstellen und zuordnen.
+title: Erstellen von Website-Zugriffsrechten in Dynamics 365 Portale | MicrosoftDocs
+description: Erfahren Sie, wie Sie Websitezugriffsberechtigungen erstellen und Elementen in einem Portal zuordnen.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,35 +11,35 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 0ac02992498204efc42a52e736284ea134ed42f5
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73551023"
+ms.locfileid: "2760441"
 ---
-# <a name="create-website-access-permissions"></a>Zugriffsberechtigungen für Websites erstellen
+# <a name="create-website-access-permissions"></a>Erstellen von Websitezugriffsberechtigungen
 
-Zugriffsberechtigungen für Websites sind ein Berechtigungs Satz, der einer [webrolle](create-web-roles.md)zugeordnet ist, der die gleichzeitige Bearbeitung der verschiedenen Inhalts verwalteten Elemente innerhalb des Portals als nur Webseiten zulässt. Mit den Berechtigungseinstellungen wird festgelegt, welche Komponenten im Portal verwaltet werden können.
+Websitezugriffsberechtigungen sind ein Berechtigungsset, das einer [Webrolle](create-web-roles.md) zugeordnet ist, die die Frontside-Bearbeitung verschiedener Elemente mit verwaltetem Inhalt innerhalb des Portals zulässt, die keine Webseiten sind. Die Berechtigungseinstellungen bestimmen, welche Komponenten im Portal verwaltet werden können.
 
 | Name                         | Beschreibung                                                                                      |
 |------------------------------|--------------------------------------------------------------------------------------------------|
-| Verwalten von Inhalts Ausschnitten      | Ermöglicht die Bearbeitung von Ausschnitt Steuerelementen.                                                          |
-| Site Marker verwalten          | Ermöglicht die Bearbeitung von Hyperlinks, die Site Marker verwenden                                           |
-| Verwalten von weblinksets         | Ermöglicht das Bearbeiten von [weblinksets](manage-web-links.md), einschließlich des Hinzufügens von Weblinks aus einem weblinksatz. |
-| Vorschau der nicht veröffentlichten enti | Ermöglicht das Anzeigen von im Portal verfügbar gemachten Entitäten mit dem Veröffentlichungsstatus Draft.             |
+| Inhaltsausschnitte verwalten      | Ermöglicht das Bearbeiten der Snippet-Steuerelemente.                                                          |
+| Websitemarkierungen verwalten          | Ermöglicht das Bearbeiten von Links, die Websitemarkierungen verwenden.                                           |
+| Weblinksätze verwalten         | Ermöglicht das Bearbeiten von [Weblinksätzen](manage-web-links.md), einschließlich des Hinzufügens und Entfernens von Links aus einem Weblinksatz. |
+| Unveröffentlichte Entitäten als Vorschau anzeigen | Ermöglicht die Anzeige von im Portal verfügbaren Entitäten, deren Veröffentlichungsstatus Entwurf ist.             |
 |||
 
-So erstellen Sie eine Website Zugriffsberechtigung und fügen Sie einer webrolle hinzu:
+So erstellen Sie eine Websitezugriffsberechtigung und fügen Sie einer Webrolle hinzu:
 
-1. Öffnen Sie die [Portal Verwaltungs-App](configure-portal.md).
+1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2. Wechseln Sie zu **Portale** > **Website Zugriffsberechtigungen**.
+2. Wechseln Sie zu **Portale** > **Websitezugriffsberechtigungen**.
 
 3. Wählen Sie **Neu** aus.
 
-4. Geben Sie unter **Allgemein**den Namen Name und Website ein, und wählen Sie die erforderlichen Berechtigungen aus.
+4. Geben Sie unter **Allgemein** den Namen und die Website ein, und wählen Sie die erforderlichen Berechtigungen aus.
 
-5. Wählen Sie unter **Webrollen**die webrolle aus, und fügen Sie Sie hinzu, um die Berechtigung zuzuordnen.
+5. Wählen Sie unter **Webrollen** die Webrolle aus, der die Berechtigung zugeordnet werden soll, und fügen Sie sie hinzu.
 
 6. Speichern Sie die Änderungen.
 
-    ![Zugriffsberechtigung für Website erstellen](../media/website-access-permission.png "Zugriffsberechtigung für Website erstellen")  
+    ![Erstellen von Websitezugriffsberechtigungen](../media/website-access-permission.png "Erstellen von Websitezugriffsberechtigungen")  

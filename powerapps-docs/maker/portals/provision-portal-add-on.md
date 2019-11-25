@@ -1,6 +1,6 @@
 ---
-title: Bereitstellen eines Portals mit dem älteren Portal-Add-on | MicrosoftDocs
-description: Anweisungen zum Bereitstellen eines Portals mit dem älteren Portal-Add-on.
+title: Bereitstellen eines Portals mit dem früheren Portal-Add-On | Microsoft-Dokumentation
+description: Anleitungen zum Bereitstellen eines Portals mit dem früheren Portal-Add-On.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,145 +11,145 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 6572a92a46fa308eab6cb46b813a572605327197
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73550977"
+ms.locfileid: "2760436"
 ---
-# <a name="provision-a-portal-using-the-older-portal-add-on"></a>Bereitstellen eines Portals mit dem älteren Portal-Add-on
+# <a name="provision-a-portal-using-the-older-portal-add-on"></a>Bereitstellen eines Portals mit dem früheren Portal-Add-On
 
-Wenn Sie ein älteres Portal-Add-on erworben haben und ein Portal mithilfe des Add-Ins bereitstellen möchten, müssen Sie auf der Seite **Dynamics 365 Administration Center (Dynamics Administration Center** ) das Portal bereitstellen.
+Wenn Sie ein früheres Portal-Add-On erworben haben und ein Portal mit dem Add-On bereitstellen möchten, müssen Sie zur **Dynamics 365 Admin Center**-Seite zurückkehren und das Portal bereitstellen.
 
 > [!NOTE]
-> Zum Bereitstellen eines Portals müssen Sie entweder System Administrator oder systemanpassungsrolle der Common Data Service Umgebung, die für das Portal ausgewählt ist, zugewiesen sein. Sie müssen auch über die [erforderlichen Berechtigungen](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions) verfügen, um eine Anwendung in Azure AD zu erstellen und zu registrieren. Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, wenden Sie sich an den globalen Administrator, um Ihre Berechtigungen zu aktualisieren, oder bitten Sie den globalen Administrator, das Portal bereitzustellen.
+> Um ein Portal bereitzustellen, muss Ihnen entweder die Rolle Systemadministrator oder System Anpasser der für das Portal ausgewählten Common Data Service-Umgebung zugewiesen werden. Außerdem müssen Sie über die [erforderlichen Berechtigungen](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions) verfügen, um eine Anwendung in Azure AD zu erstellen und zu registrieren. Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, wenden Sie sich an den globalen Administrator, um Ihre Berechtigungen zu aktualisieren, oder bitten Sie den globalen Administrator, das Portal bereitzustellen.
 
 So stellen Sie ein Portal bereit:
 
-1.  Wechseln Sie zur Seite **Dynamics 365-Verwaltungs Center** , und wählen Sie dann die Registerkarte **Anwendungen** aus.
+1.  Wechseln Sie zur Seite **Dynamics 365 Administration Center**, und klicken Sie auf die Registerkarte **Anwendungen**.
 
-2.  Wählen Sie die Anwendungs Zeile **Portal Add-on aus**, und wählen Sie dann **Verwalten aus.**
+2.  Wählen Sie die Anwendungszeile mit dem Titel **Portal Add-On** aus und klicken Sie dann auf **Verwalten.**
 
-3.  Geben Sie im Abschnitt **Allgemeine Einstellungen** einen **Namen** für das Portal ein. Der **Name** hilft bei der Identifizierung des Portals und kann später geändert werden.
+3.  Im Abschnitt **Allgemeine Einstellungen** geben Sie einen **Name** für Ihr Portal ein. Der **Name** unterstützt Sie dabei, das Portal zu identifizieren, und er kann später geändert werden.
 
-4.  Das **typanfeld** stellt den Typ des Portal Abonnements (Test-oder Produktionsumgebung) dar. Dabei handelt es sich um ein System Feld, das vom Benutzer nicht geändert werden kann. Der Wert ändert sich abhängig davon, ob es sich um ein Testabonnement oder kostenpflichtiges Abonnement handelt
+4.  Das Feld **Typ** stellt den Typ des Portalabonnements dar (Testversion oder Produktion). Das ist ein Systemfeld. Deshalb kann es nicht durch den Benutzer geändert werden. Der Wert ändert sich abhängig davon, ob es ein Testabonnement oder ein bezahltes Abonnement ist.
 
-5. Wählen Sie optional in der Dropdown Liste **Portal Entwicklungsstatus** einen der folgenden Entwicklungsstatus für Ihr Portal aus:
+5. Optional in der Dropdownliste **Portalentwicklungsstand**, wählen Sie eine der folgenden Entwicklungsstände für das Portal aus:
 
-    - Status
-    - Entwickelt
-    - Test
+    - Prototyp
+    - Entwicklung
+    - Testen
     - UAT
-    - Führen
+    - Live
 
     > [!NOTE]
-    > - Für vorhandene bereitgestellte Portale ist diese Dropdown Liste auf der Registerkarte " **Portal Details** " verfügbar, und standardmäßig ist kein Status ausgewählt.
-    > - Diese Dropdown Liste ist nur für die Portale des Typs Produktion verfügbar.
-    > - Dieses Feld wird von Microsoft verwendet, um das Verwendungs Muster dieses Portals zu verstehen, und wirkt sich nicht auf die Funktionalität aus. Wenn Sie unterschiedliche Namen für den Entwicklungs Lebenszyklus verwenden, wählen Sie die Option aus, die sich in diesem Fall genauer eignet. Dies kann zu einem späteren Zeitpunkt geändert werden, nachdem das Portal bereitgestellt wurde.
+    > - Bei vorhandenen bereitgestellten Portalen ist diese Dropdownliste auf der Registerkarte **Portaldetails** verfügbar und kein Status ist standardmäßig ausgewählt.
+    > - Diese wird nur für die Dropdownliste Portale des Typs Produktion verfügbar.
+    > - Das Feld wird von Microsoft verwendet, um ein Verwendungsmuster des Portals zu verstehen und hat keinen Einfluss auf die  Funktionen. Falls Sie unterschiedliche Namen für Entwicklungslebenszyklus verwenden, wählen Sie jenen aus, der besser zum Zweck passt. Dies kann zu einem späteren Zeitpunkt geändert werden, sobald es angegeben wird.
 
-5.  Geben Sie im Feld **Portal-URL** den Unterdomänennamen ein, den Sie für Ihr Portal wünschen. Sie können nur alphanumerische Zeichen oder Bindestriche (-) verwenden. andere Zeichen sind nicht zulässig.
-
-    > [!NOTE]
-    > - Informationen zum Ändern der URL eines Portals nach der Bereitstellung finden Sie unter [Ändern der Basis-URL eines Portals](admin/change-base-url.md).
-    > - Informationen zum Verknüpfen Ihres Portals mit einer benutzerdefinierten Domäne finden Sie unter [Verknüpfen Ihres Portals mit einer benutzerdefinierten](admin/add-custom-domain.md)Domäne.
-
-6.  Wählen Sie in der Dropdown Liste **Dynamics 365-Instanz** die Instanz aus, mit der Sie das Portal verknüpfen möchten. Dies erfordert System Administrator-oder systemanpassungsrolle in der-Instanz, die Sie auswählen, um Sie auszuwählen.
-
-7.  Wählen Sie in der Dropdown Liste **Portal Sprache auswählen** die Standardsprache für Ihr Portal aus. Welche Sprachen verfügbar sind, hängt von den Sprachen ab, die in der-Instanz installiert sind. 
+5.  Im Feld **Portal-URL** geben Sie den Namen der Unterdomäne ein, den Sie für das Portal möchten. Sie können nur alphanumerische Zeichen oder Bindestriche (-) verwenden; andere Zeichen sind nicht zulässig.
 
     > [!NOTE]
-    > Beispiel Daten werden nur in einer Sprache bereitgestellt. Wenn Sie also eine Standardsprache auswählen, entscheiden Sie auch, wie die Beispiel Daten übersetzt werden. Arabisch und Hebräisch werden nicht unterstützt und werden nicht in der Liste angezeigt.
+    > - Um die URL des Portals ändern nachdem Sie bereitgestellt ist, gehen Sie zu [URL für Portal ändern](admin/change-base-url.md).
+    > - Um Ihr Portal mit einer benutzerdefinierten Domäne zu verknüpfen, siehe [Verknüpfen Sie Ihr Portal mit einer benutzerdefinierten Domäne](admin/add-custom-domain.md).
 
-8. Wählen Sie in der Dropdown Liste **Portal Administrator auswählen** den Benutzer aus, der das Portal konfigurieren, anpassen und warten soll. Alle Benutzer, die über die System Administrator Rolle in der Organisation verfügen, werden als Optionen angezeigt. 
+6.  Wählen Sie in der Dropdown-Liste **Dynamics 365 Instanz** die Instanz aus, mit der Sie das Portal verlinken möchten. Dazu ist es erforderlich, dass der Systemadministrator oder die Rolle System Anpasser in der von Ihnen ausgewählten Instanz verwendet wird.
 
-9. Wählen Sie im Abschnitt " **Portal Audience** " den Typ der Zielgruppe aus, der das neue Portal besuchen soll. Dadurch wird festgelegt, welche Optionen für Portale angegeben werden. Sie können Folgendes auswählen:
+7.  Wählen Sie die standardmäßige Sprache für Ihr Portal aus der Dropdownliste **Portalsprache wählen** aus. Die verfügbaren Sprachen hängen von den Sprachen ab, die in Ihrer Instanz installiert sind. 
+
+    > [!NOTE]
+    > Beispieldaten werden nur in einer Sprache bereitgestellt. Die Auswahl einer Standardsprache entscheidet somit auch, wie die Beispieldaten übersetzt werden. Arabisch und Hebräisch werden nicht unterstützt und werden in der Liste nicht angezeigt.
+
+8. Wählen Sie in der Dropdown-Liste **Portaladministrator auswählen** den Benutzer aus, der das Portal konfigurieren, anpassen und pflegen soll. Alle Benutzer, die in der Organisation die Rolle Systemadministrator haben, werden als Optionen angezeigt. 
+
+9. Wählen Sie im Abschnitt **Portalzielgruppe** den Typ der Zielgruppe aus, der das neue Portal besuchen wird.l Hiermit wird bestimmt, welche Optionen von Portalen Ihnen zugewiesen werden. Sie können aus folgenden Optionen auswählen:
 
     -   Partner    
-        -   Self-Service-Portal für Kunden
+        -   Kunden-Self-Service-Portal
         -   Benutzerdefiniertes Portal
-        -   Partner Portal
-        -   Partner Projekt Dienst (optional, erfordert installierte Lösungen)
-        -   Partner Felddienst (optional, erfordert installierte Lösungen)
-        -   Communityportal
+        -   Partnerportal
+        -   Partner Project Service (optional, erfordert installierte Lösungen)
+        -   Partner Field Service (optional, erfordert installierte Lösungen)
+        -   Community-Portal
 
-    -   Customer
-        -   Self-Service-Portal für Kunden
+    -   Kundin/Kunde
+        -   Kunden-Self-Service-Portal
         -   Benutzerdefiniertes Portal
-        -   Communityportal
+        -   Community-Portal
 
-    -   Employee
-        -   Personal Self-Service-Portal
+    -   Mitarbeiter
+        -   Mitarbeiter-Self-Service-Portal
 
-10. Wählen Sie im Abschnitt **zu verwendende Portal auswählen** den Typ des Portals aus, das Sie erstellen möchten. Die Optionen, die Sie sehen, basieren auf der Zielgruppe, die Sie ausgewählt haben.
+10. Wählen Sie im Abschnitt **Bereitgestelltes Portal auswählen** die Art des Portals aus, die Sie erstellen möchten. Die Optionen, die angezeigt werden, basieren auf der Zielgruppe, die Sie ausgewählt haben.
 
     > [!div class="mx-imgBorder"]
-    > ![Konfigurieren von Einstellungen für Ihr Portal](media/configure-settings-portal.png "Konfigurieren von Einstellungen für Ihr Portal")  
+    > ![Einstellungen für Ihr Portal konfigurieren](media/configure-settings-portal.png "Einstellungen für Ihr Portal konfigurieren")  
 
-11. Wählen Sie über **Mitteln**aus, und akzeptieren Sie die Nutzungsbedingungen.
+11. Klicken Sie auf **Übermitteln** und akzeptieren Sie die Servicebedingungen.
     > [!div class="mx-imgBorder"]
     > ![Vertragsbedingungen](media/terms-of-service.png "Vertragsbedingungen")  
 
-Nachdem Sie die Vertragsbedingungen akzeptiert haben, wird die Bereitstellung des Portals gestartet. Die Bereitstellung dauert in der Regel 30 Minuten, kann aber je nach System Auslastung einige Stunden dauern. Der *Name* des Portals auf der Registerkarte Anwendung wird bei der Bereitstellung zu *Name*-Konfiguration geändert. Navigieren Sie zurück zur Portal Verwaltungsseite, um zu überprüfen, ob die Bereitstellung erfolgreich war.
+Nachdem Sie die Vertragsbedingungen akzeptiert haben, wird das Portal bereitgestellt. Die Bereitstellung dauert in der Regel 30 Minuten, kann jedoch auch einige Stunden dauern, je nach Systemauslastung. Der *Name* des Portals in der Registerkarte "Anwendung" ändert sich zu "*Name*-Konfigurierung" während der Bereitstellung. Navigieren Sie zur Portalverwaltungsseite zurück, um zu überprüfen, ob die Bereitstellung erfolgreich war.
 
-Nachdem das Portal bereitgestellt wurde, wird die Seite **Portal Details** mit den erforderlichen Informationen angezeigt.
+Nachdem das Portal bereitgestellt wurde, wird die Seite **Portaldetails** mit den erforderlichen Details angezeigt.
 
 > [!div class="mx-imgBorder"]
-> ![Details zum Portal](media/portal-details-prov.png "Informationen zu einem Portal") 
+> ![Portal-Details](media/portal-details-prov.png "Portal-Details") 
 
 
 > [!Note]
-> Wenn ein Portalbenutzer sich zum ersten Mal beim Portal anmeldet, indem er eine Azure AD Anmelde Informationen verwendet, wird allen Benutzern eine Zustimmungs Seite angezeigt, unabhängig vom Benutzer-oder portentyp.
+> Wenn sich ein Portalbenutzer zum ersten Mal mit Azure AD-Anmeldeinformationen beim Portal anmeldet, wird allen Benutzern eine Zustimmungsseite angezeigt, unabhängig vom Typ des Benutzers oder Portals.
 
-In der folgenden Tabelle sind die Funktionen der einzelnen Portal Optionen zusammengefasst:
+Die Tabelle unten fasst die Funktionen zusammen, die jeder Portaloption zugeordnet sind:
 
-| Befinden                                | Kunden Self-Service-Portal | Partner Portal | Mitarbeiter Self-Service-Portal | Communityportal | Benutzerdefiniertes Portal |
+| Funktion                                | Kunden-Self-Service-Portal | Partnerportal | Employee Self-Service-Portal | Community-Portal | Benutzerdefiniertes Portal |
 |----------------------------------------|------------------------------|----------------|------------------------------|------------------|---------------|
-| Weltweit bereit                            | •                            | •              | •                            | •                | •             |
-| Unterstützung für mehrere Sprachen                 | •                            | •              | •                            | •                | •             |
-| Portal Verwaltung                  | •                            | •              | •                            | •                | •             |
+| Bereit für die Welt                            | •                            | •              | •                            | •                | •             |
+| Mehrsprachunterstützung                 | •                            | •              | •                            | •                | •             |
+| Portalverwaltung                  | •                            | •              | •                            | •                | •             |
 | Anpassung und Erweiterbarkeit        | •                            | •              | •                            | •                | •             |
-| Design                                | •                            | •              | •                            | •                | •             |
-| Inhalts Verwaltung                     | •                            |                | •                            | •                |               |
-| Wissensverwaltung                   | •                            | •              | •                            | •                |               |
-| Unterstützung/Fall Verwaltung                | •                            |                | •                            | •                |               |
-| Fan                                 | •                            |                | •                            | •                |               |
-| Facetten Suche                         | •                            |                | •                            |                  |               |
+| Designverwendung                                | •                            | •              | •                            | •                | •             |
+| Content Management                     | •                            |                | •                            | •                |               |
+| Wissensmanagement                   | •                            | •              | •                            | •                |               |
+| Support/Case Management                | •                            |                | •                            | •                |               |
+| Foren                                 | •                            |                | •                            | •                |               |
+| Facettierte Suche                         | •                            |                | •                            |                  |               |
 | Profilverwaltung                     | •                            |                | •                            |                  |               |
 | Forenthread abonnieren              | •                            |                | •                            |                  |               |
-| Iny                               | •                            |                | •                            | •                |               |
-| [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD-Authentifizierung                |                              |                | •                            |                  |               |
+| Kommentare                               | •                            |                | •                            | •                |               |
+| [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)]-AD-Authentifizierung                |                              |                | •                            |                  |               |
 | Ideen                                  |                              |                |                              | •                |               |
-| gt                                  |                              |                |                              | •                |               |
-| Integration von Project Service-Automatisierung |                              | •              |                              |                  |               |
-| Felddienst Integration              |                              | •              |                              |                  |               |
-| Onboarding von Partnern                     |                              | •              |                              |                  |               |
-| Portal Basis                            |  •                           | •              |  •                           | •                | •             |
-| Portal Workflows                       |  •                           | •              |  •                           | •                | •             |
+| Blogs                                  |                              |                |                              | •                |               |
+| Integration von Project Service Automation |                              | •              |                              |                  |               |
+| Integration von Field Service              |                              | •              |                              |                  |               |
+| Partner-Onboarding                     |                              | •              |                              |                  |               |
+| -Portalbasis                            |  •                           | •              |  •                           | •                | •             |
+| Portalworkflows                       |  •                           | •              |  •                           | •                | •             |
 | Webbenachrichtigungen                      |  •                           | •              |  •                           | •                | •             |
-| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] Identität                     |     •                         |  •              |     •                         |   •               | •             |
-| Identitäts Workflows                     | •                            |  •             |     •                         |   •               | •             |
-| Web Forms                              |  •                            | •               |    •                          | •                 | •             |
-| Backs                               |   •                           |  •              |  •                            | •                 | •             |
+| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)]-Identität                     |     •                         |  •              |     •                         |   •               | •             |
+| Identitätsworkflows                     | •                            |  •             |     •                         |   •               | •             |
+| Webformulare                              |  •                            | •               |    •                          | •                 | •             |
+| Feedback                               |   •                           |  •              |  •                            | •                 | •             |
 ||
 
-## <a name="troubleshoot-provisioning"></a>Problembehandlung bei der Bereitstellung
+## <a name="troubleshoot-provisioning"></a>Problembehebung bei Bereitstellung
 
-Manchmal kann der Paketinstallations-oder URL-Erstellungs Prozessfehler Haft sein. In diesen Fällen können die Prozesse neu gestartet werden.
+Gelegentlich fällt der die Paketinstallationsvorgang oder der URL-Erstellungsprozess durch Fehler aus. In solchen Fällen können die Prozesse neu gestartet werden.
 
-Wenn die *namens*Konfiguration von Änderungen an der *namens*Bereitstellung fehlgeschlagen ist, müssen Sie den Bereitstellungs Prozess neu starten.
+Wenn sich "*Name*-Konfigurierung" ändert zu "*Name*-Bereitstellung fehlgeschlagen", müssen Sie den Bereitstellungsprozess neu starten.
 
-1. Wechseln Sie zur Seite **Anwendungen** , und wählen Sie das Portal aus.
-2. Wählen Sie die blaue Stift Schaltfläche **Verwalten**aus.
-3. Wählen Sie eine der folgenden Optionen aus:
+1. Wechseln Sie zur Seite **Anwendungen**, und wählen Sie das Portal aus.
+2. Wählen Sie die blaue Zeichenstiftschaltfläche mit der Bezeichnung **Verwalten** aus.
+3. Wählen Sie eine der folgenden Optionen:
 
-   - **Neustart neu starten**: der Installationsvorgang wird mit der zuvor definierten Konfiguration neu gestartet.
+   - **Bereitstellung neu starten**: Startet den Installationsprozess erneut mit der Konfiguration, die bereits vorher definiert wurde.
 
-   - **Werte ändern und Bereitstellung neu starten**: Hiermit können Sie einige der Werte ändern, bevor Sie den Bereitstellungs Vorgang neu starten.
+   - **Werte ändern und Bereitstellung neu starten**: Ermöglicht es Ihnen, einige der Werte zu ändern, bevor der Bereitstellungsprozess neu gestartet wird.
 
-Wenn bei der Paketinstallation ein Fehler aufgetreten ist, wird die Portaladministrator Seite ohne Probleme geöffnet, bei der Navigation zur tatsächlichen Portal-URL wird jedoch die Einrichtung einer Nachricht angezeigt. So bestätigen Sie Folgendes:
+Wenn die Paketinstallation fehlgeschlagen ist, lässt sich die Portaladministratorseite ohne Probleme öffnen, aber beim Navigieren zur tatsächlichen Portal-URL wird die Meldung "Wird eingerichtet" angezeigt. Um dies zu bestätigen:
 
-1. Wechseln Sie zur Seite projektmappenverwaltung der Seite **Dynamics 365-Verwaltungs Center** , und überprüfen Sie, ob der Paketstatus Fehler bei **Installation**lautet. 
+1. Wechseln Sie zur Seite „Lösungsverwaltung“ der **Dynamics 365 Admin Center**-Seite und überprüfen Sie, ob der Paketstatus **Installation fehlgeschlagen** lautet. 
 
-2. Wenn der Paketstatus Fehler bei der **Installation lautet,** versuchen Sie, die Installation auf der Lösungsseite erneut auszuführen. Vergewissern Sie sich außerdem, dass ein Systemadministrator die Lösung mit der Standardsprache in Common Data Service auf die Sprache, in der das Portal installiert werden soll, installiert.
+2. Wenn der Paketstatus **Installation fehlgeshlagen** ist, versuchen Sie die Installation von der Lösungsseite aus erneut. Stellen Sie außerdem sicher, dass ein Systemadministrator die Lösung mit der Standardsprache Common Data Service installiert, die auf die Sprache eingestellt ist, in der das Portal installiert werden soll.
 
 > [!NOTE]
-> Einige Lösungen verfügen über erforderliche Komponenten für Ihre Installation, sodass eine Installation fehlschlägt, wenn die Voraussetzungen nicht erfüllt sind. Um z. b. den Partner Felddienst für ein Partnerportal zu installieren, müssen die Partnerportal-und Felddienst Lösungen bereits installiert sein. Wenn Sie zuerst versuchen, den Partner Felddienst zu installieren, tritt bei der Installation ein Fehler auf, und Sie erhalten eine Fehlermeldung.
+> Einige Lösungen besitzen Voraussetzungen für die Installation. Eine Installation wird daher fehlschlagen, wenn die Voraussetzungen nicht erfüllt sind. Wenn Sie beispielsweise den Partner Field Service für ein Partnerportal installieren, müssen die Partnerportal- und Field Service-Lösungen bereits installiert sein. Wenn Sie versuchen, den Partner Field Service zuerst zu installieren, wird die Installation fehlschlagen, und Sie erhalten eine Fehlermeldung.

@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Weblinks | MicrosoftDocs
-description: Anweisungen zum Verwalten von Weblinks.
+title: Verwalten von in Weblinks | MicrosoftDocs
+description: Anweisungen zum Verwalten von Internetlinks.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,85 +11,85 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 5d0ead5104765ab71848ffcf8c4aaff801a58a20
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73551782"
+ms.locfileid: "2760445"
 ---
 # <a name="manage-web-links"></a>Verwalten von Weblinks
 
-Ein Weblink kann mit einer beliebigen URL verknüpft werden, oder er kann mit einer anderen Webseite auf derselben Website verknüpft werden. Wenn ein Weblink zu einer Webseite gehört, gilt der Sicherheits-und Veröffentlichungsstatus der Webseite auch für den Weblink. Weblinks sind immer Teil einer weblinkmenge. Eine weblinkgruppe ist eine Gruppe von Links, z. b. eine primäre Navigation oder eine Gruppe von footerLinks. Weblinksets lassen intern zu, unabhängig von der Platzierung in der Site Übersicht und externe Links, die gruppiert und sortiert werden.
+Ein Weblink kann mit jeder beliebigen URL oder mit einer anderen Webseite innerhalb derselben Website verknüpft sein. Wenn ein Weblink mit einer Webseite verknüpft ist, gelten der Sicherheits- und der Veröffentlichungsstatus der Webseite auch für den Weblink. Weblinks sind immer Teil eines Weblinksatzes. Ein Weblinksatz ist eine Gruppe von Links, wie z.B. eine primäre Navigation oder eine Gruppe Fußzeilenlinks. Weblinksätze lassen die Gruppierung und Sortierung von externen und internen Links unabhängig von der Platzierung in der Sitemap zu.
 
-## <a name="manage-web-links-in-powerapps-portals"></a>Verwalten von Weblinks in powerapps-Portalen
+## <a name="manage-web-links-in-powerapps-portals"></a>Verwalten von Weblinks in PowerApps-Portalen
 
-Nachdem die Portal Anpassungen in die Common Data Service Umgebung importiert wurden, können Weblinks über einen weblinksatz verwaltet werden.
+Sobald die Anpassungen des Portals in die Common Data Service-Umgebung importiert wurden, können Weblinks über einen Weblinksatz verwaltet werden.
 
-1. Öffnen Sie die [Portal Verwaltungs-App](configure-portal.md).
+1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2. Wechseln Sie zu **Portale** > **weblinksets**.
+2. Öffnen Sie **Portale** > **Weblinksätze**.
 
-3. Wählen Sie **neu**aus, um einen neuen weblinksatz zu erstellen.
+3. Um ein neues Weblinkset zu erstellen, klicken Sie auf **Neu**.
 
-4. Um einen vorhandenen weblinksatz zu bearbeiten, wählen Sie den Namen der weblinkgruppe aus.
+4. Wenn Sie einen vorhandenen Internet-Linksatz bearbeiten, wählen Sie den Namen des Internet- Dialogfeld aus.
 
-5. Geben Sie entsprechende Werte in die Felder ein.
+5. Hinzufügen der entsprechenden Werte zu den Feldern.
 
-6. Wenn Sie einen neuen weblinksatz erstellen, wählen Sie **Speichern** aus, um den Datensatz zu speichern, damit Sie Weblinks hinzufügen können.
+6. Wenn Sie einen neuen Internet-Linksatz erstellen wählen Sie **Speichern**, um den Datensatz speichern sodass Sie Internet-Links hinzufügen können.
 
-7. Wechseln Sie zur Registerkarte " **Links** ".
+7. Wechseln Sie zur Registerkarte **Links**.
 
-8. Um einen neuen Weblink zu erstellen, wählen Sie **neuer Weblink**aus.
+8. Um einen neuen Weblink zu erstellen, wählen Sie **Neuer Internetlink**.
 
     ![Weblink hinzufügen](../media/add-web-link.png "Weblink hinzufügen")
 
-9. Wählen Sie den Namen des Weblinks aus, um einen vorhandenen Weblink zu bearbeiten.
+9. Wenn Sie einen vorhandenen Internet-Linksatz bearbeiten, wählen Sie den Namen des Internet- Dialogfeld aus.
 
-9. Geben Sie entsprechende Werte in die Felder ein.
+9. Hinzufügen der entsprechenden Werte zu den Feldern.
 
 6. Speichern Sie die Änderungen.
 
-## <a name="web-link-set-attributes-and-relationships"></a>Attribute und Beziehungen für weblinksätze
+## <a name="web-link-set-attributes-and-relationships"></a>Weblinksatz-Attribute und -Beziehungen
 
-In der folgenden Tabelle werden viele der standardmäßigen weblinkseteigenschaften erläutert, die von Portalen verwendet werden. Es ist wichtig zu beachten, dass die Art und Weise, in der viele der Inhalt/Anzeige-orientierten Eigenschaften gerendert werden, von der verwendeten Seitenvorlage gesteuert wird.
+Die Tabelle unten erklärt viele der Standardattribute von Weblinksatz-Eigenschaften, die von Portalen verwendet werden. Es ist wichtig, zu beachten, wie einige der Eigenschaften für die Inhalte/die Anzeige gerendert werden, basierend auf der verwendeten Seitenvorlage.
 
 | Name    | Beschreibung                                                                                                                                                                                  |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name    | Der beschreibende Name der weblinkgruppe. Dieser Wert beschreibt in der Regel die Platzierung der Menge in der Seitenvorlage, z. b. die primäre Navigation. Dieses Feld ist erforderlich.                   |
-| Website | Die Website, zu der die Entität gehört. Dieses Feld ist erforderlich.                                                                                                                             |
-| Title   | Ein optionaler Titel für den weblinksatz. Dieser Wert kann im Portal verwendet werden, wenn er Teil der Seitenvorlage ist. Dies könnte ein Beispiel für unsere Partner sein und in einer Seitenleiste angezeigt werden.    |
-| Skopie    | Eine optionale Beschreibung für den weblinksatz. Dieser Wert kann im Portal verwendet werden, wenn er Teil der Seitenvorlage ist. Es könnte eine weitere Beschreibung der Partner in einer Seitenleiste enthalten. |
+| Name    | Der beschreibende Name des Weblinksatzes. Dieser Wert beschreibt in der Regel die Platzierung des Satzes in der Seitenvorlage, beispielsweise „Primäre Navigation“. In diesem Feld ist ein Eintrag erforderlich.                   |
+| Website | Die Website, zu der die Entität gehört. In diesem Feld ist ein Eintrag erforderlich.                                                                                                                             |
+| Titel   | Ein optionaler Titel für den Weblinksatz. Dieser Wert kann auf dem Portal verwendet werden, wenn er ein Teil der Seitenvorlage ist. Er kann beispielsweise "Unsere Partner" lauten und in der Randleiste angezeigt werden.    |
+| Kopieren    | Eine optionaler Beschreibung für den Weblinksatz. Dieser Wert kann auf dem Portal verwendet werden, wenn er ein Teil der Seitenvorlage ist. Sie kann beispielsweise "Unsere Partner" in der Randleiste näher beschreiben. |
 ||
 
-## <a name="web-link-attributes-and-relationships"></a>Weblink Attribute und-Beziehungen
+## <a name="web-link-attributes-and-relationships"></a>Weblink-Attribute und -Beziehungen
 
-In der folgenden Tabelle werden viele der standardmäßigen Weblink Eigenschaften erläutert, die von Portalen verwendet werden. Es ist wichtig zu beachten, dass die Art und Weise, in der viele der Inhalt/Anzeige-orientierten Eigenschaften gerendert werden, von der verwendeten Seitenvorlage gesteuert wird.
+Die Tabelle unten erklärt viele der Weblink-Standardeigenschaften, die von Portalen verwendet werden. Es ist wichtig, zu beachten, wie einige der Eigenschaften für die Inhalte/die Anzeige gerendert werden, basierend auf der verwendeten Seitenvorlage.
 
 
 |           Name           |                                                                                                               Beschreibung                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           Name           |                                                          Der Titel für den Weblink. Dieser Wert wird in den meisten Vorlagen als Weblink Titel verwendet. Dieses Feld ist erforderlich.                                                           |
-|       Weblinksatz       |                                                                                  Der weblinksatz, zu dem die Entität gehört. Dieses Feld ist erforderlich.                                                                                  |
-|     Übergeordneter Weblink      |                                      Der übergeordnete Weblink der Entität in einer mehrstufigen weblinkmenge. Wenn kein übergeordneter Weblink angegeben ist, wird die Entität auf der obersten/Stamm Ebene der weblinkgruppe angezeigt.                                      |
-|           s           |                                                                                          Eine optionale Webseite von derselben Website, mit der eine Verknüpfung hergestellt werden soll.                                                                                          |
-|        Externe URL      |                                                                                Eine optionale URL, mit der eine Verknüpfung hergestellt werden soll. Dieser Wert kann eine beliebige ordnungsgemäß formatierte URL sein.                                                                                |
-|       Beschreibung        |                                                              Eine optionale Zusammenfassung für den Weblink. Dieser Wert kann im Portal verwendet werden, wenn er Teil der Seitenvorlage ist.                                                              |
-|     Veröffentlichungsstatus     | Der aktuelle Veröffentlichungs Workflow Status des Weblinks, der möglicherweise vorgibt, ob der Weblink auf der Site sichtbar ist. Diese Funktion wird am häufigsten verwendet, um das Veröffentlichen/Entwerfen von Inhalten über Inhalte bereitzustellen. Dieses Feld ist erforderlich. |
-|    Roboter folgen Link    |                                                           Gibt an, ob Suchindexer dem Inhalt der Verknüpfung folgen und ihn indizieren sollen. Dieses Feld ist erforderlich.                                                            |
-|      Anzeigereihenfolge       |                                                  Ein ganzzahliger Wert, der die Reihenfolge angibt, in der der Weblink in Relation zu anderen Weblinks innerhalb derselben weblinkgruppe platziert wird.                                                  |
-| Untergeordnete Links der Seite anzeigen |  Generieren Sie in einer Vorlage, die mehrstufige weblinksets unterstützt, untergeordnete Verknüpfungen für diese Entität mit dem Portal Site Übersichts Anbieter. Beachten Sie, dass diese Option nur für Weblinks gültig ist, die auf interne Seiten und nicht auf externe URLs verweisen.  |
-|    In neuem Fenster öffnen    |                                                                            Gibt an, ob beim Auswählen des Links der Link in einem neuen Browserfenster geladen wird.                                                                             |
-| Deaktivieren der Seiten Validierung  |                                                                       Gibt an, ob die Sicherheit einer verknüpften Webseite auch auf den Weblink angewendet wird.                                                                       |
-|        Bild-URL         |                                                   Eine optionale URL zu einem Bild. Das verknüpfte Bild kann im Portal verwendet werden, wenn es Teil der Seitenvorlage ist. beispielsweise als Symbol.                                                   |
-|       Bildhöhe       |                                                                                      Eine optionale Höhe für das Bild aus der Bild-URL-Eigenschaft.                                                                                      |
-|       Bildbreite        |                                                                                      Eine optionale Breite für das Bild aus der Bild-URL-Eigenschaft.                                                                                       |
-|      Bild-alt-Text      |                                                                                   Eine optionale Beschreibung des Bilds aus der Bild-URL-Eigenschaft.                                                                                    |
-|    Nur Bild anzeigen    |                                                   Gibt an, dass die Vorlage nur einen Bildlink für diesen Weblink und nicht gleichzeitig den Bild-und Linknamen darstellen soll.                                                    |
+|           Name           |                                                          Der Titel des Weblinks. Dieser Wert wird als Weblink-Überschrift in den meisten Vorlagen verwendet. In diesem Feld ist ein Eintrag erforderlich.                                                           |
+|       Weblinksatz       |                                                                                  Der Weblinksatz, zu der die Entität gehört. In diesem Feld ist ein Eintrag erforderlich.                                                                                  |
+|     Übergeordneter Weblink      |                                      Der übergeordnete Weblink der Entität in einem Weblinksatz mit mehreren Ebenen. Wenn kein übergeordneter Weblink angegeben wurde, ist die Entität auf der obersten Ebene oder der Stammebene des Weblinksatzes.                                      |
+|           Seite           |                                                                                          Eine optionale Webseite auf derselben Website, auf die verlinkt wurde.                                                                                          |
+|        Externe URL      |                                                                                Eine optionale URL auf die verlinkt wird. Dieser Wert kann jede ordnungsgemäß formatierte URL sein.                                                                                |
+|       Beschreibung        |                                                              Eine optionale Zusammenfassung für den Weblink. Dieser Wert kann auf dem Portal verwendet werden, wenn er ein Teil der Seitenvorlage ist.                                                              |
+|     Veröffentlichungsstatus     | Der aktuelle Veröffentlichungsworkflowstatus des Weblinks, der möglicherweise vorgibt, ob der Weblink auf der Website angezeigt wird oder nicht. Häufig wird diese Funktion verwendet, um Inhalte als veröffentlicht/Entwurf bereitzustellen. In diesem Feld ist ein Eintrag erforderlich. |
+|    Roboter folgen Link    |                                                           Gibt an, ob Suchroboter dem Link folgen und den Inhalt des Links indizieren können oder nicht. In diesem Feld ist ein Eintrag erforderlich.                                                            |
+|      Anzeigereihenfolge       |                                                  Ein ganzzahliger Wert, der die Reihenfolge angibt, in der der Weblink platziert wird, im Verhältnis zu anderen Weblinks mit dem gleichen übergeordneten Weblinksatz.                                                  |
+| Untergeordnete Seitenlinks anzeigen |  In einer Vorlage, die Weblinksätze mit mehreren Ebenen unterstützt, werden untergeordnete Links für diese Entität über den Siteübersichts-Anbieter des Portals erstellt. Beachten Sie, dass diese Option nur für Weblinks gilt, die auf interne Seiten verweisen und nicht auf externe URLs.  |
+|    In neuem Fenster öffnen    |                                                                            Gibt an, ob beim Auswählen des Links dieser in einem neuen Browserfenster geöffnet wird.                                                                             |
+| Seitenüberprüfung deaktivieren  |                                                                       Gibt an, ob die Sicherheit einer verlinkten Webseite auch auf den Weblink angewendet wird.                                                                       |
+|        Bild-URL         |                                                   Eine optionale URL zu einem Bild. Das verknüpfte Bild kann auf dem Portal verwendet werden, wenn es ein Teil der Seitenvorlage ist; beispielsweise als Symbol.                                                   |
+|       Bildhöhe       |                                                                                      Eine optionale Höhe des Bilds aus den Bild-URL-Eigenschaften.                                                                                      |
+|       Bildbreite        |                                                                                      Eine optionale Breite des Bilds aus den Bild-URL-Eigenschaften.                                                                                       |
+|      Alternativer Bildtext      |                                                                                   Eine optionale Beschreibung des Bilds aus den Bild-URL-Eigenschaften.                                                                                    |
+|    Nur Bild anzeigen    |                                                   Gibt an, dass die Vorlage nur einen Bildlink dieses Weblinks rendert, nicht Bild und Linknamen gemeinsam.                                                    |
 |                          |                                                                                                                                                                                                                                         |
 
 > [!Note]
-> - Wenn ein Weblink zu einer Webseite gehört, gilt der Sicherheits-und Veröffentlichungsstatus der Webseite auch für den Weblink. Diese Überprüfung kann mit der Option Seiten Überprüfung deaktivieren deaktiviert werden. 
->   - Benutzern mit Inhalts Verwaltungs Berechtigungen kann die Möglichkeit zur Verwendung des Vorschaumodus erteilt werden, der es diesen Benutzern ermöglicht, nicht veröffentlichte Inhalte anzuzeigen (Vorschau).
+> - Wenn ein Weblink mit einer Webseite verknüpft ist, gelten der Sicherheits- und der Veröffentlichungsstatus der Webseite auch für den Weblink. Diese Überprüfung mit der Option "Seitenüberprüfung deaktivieren" deaktiviert werden. 
+>   - Benutzern mit Berechtigungen für Inhaltsverwaltung kann die Möglichkeit zur Nutzung des „Vorschaumodus” gewährt werden. Dies ermöglicht es diesen Benutzern, nicht veröffentlichten Inhalt anzuzeigen (Vorschau).
 
 ### <a name="see-also"></a>Siehe auch
 
-[Anpassen von Inhalten mithilfe von Inhalts Ausschnitten](customize-content-snippets.md)
+[Anpassen von Inhalt mit Inhaltsausschnitten](customize-content-snippets.md)

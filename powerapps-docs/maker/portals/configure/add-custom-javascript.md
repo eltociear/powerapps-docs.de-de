@@ -1,6 +1,6 @@
 ---
-title: Verwenden von benutzerdefiniertem JavaScript für ein Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen von benutzerdefiniertem JavaScript zu einem Formular in einem Portal
+title: Verwenden von benutzedefiniertem JavaScript für ein Portal | Microsoft-Dokumentation
+description: Anweisungen, benutzerdefiniertes JavaScript einem Formular in einem Portal hinzuzufügen
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,20 +11,20 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 42e31fc2ecb18d4f26327f8ccbeabe034d7a1700
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553645"
+ms.locfileid: "2760437"
 ---
-# <a name="add-custom-javascript"></a>Hinzufügen benutzerdefinierter JavaScript
+# <a name="add-custom-javascript"></a>Benutzerdefiniertes JavaScript hinzufügen
 
-Der Datensatz für den Webformular Schritt enthält ein Feld mit dem Namen **benutzerdefiniertes JavaScript** , das zum Speichern von JavaScript-Code verwendet werden kann, damit Sie die visuelle Darstellung oder Funktion des Formulars erweitern oder ändern können.
+Der Webformularschritt-Eintrag enthält ein Feld namens **Benutzerdefiniertes JavaScript**, das zum Speichern von JavaScript-Codes verwendet werden kann und Ihnen die Möglichkeit gibt, die visuelle Anzeige oder die Funktion des Formulars zu erweitern oder zu ändern.
 
-Der benutzerdefinierte Block von JavaScript wird am Ende der Seite direkt vor dem schließenden Formular-TagElement hinzugefügt.
+Der benutzerdefinierte JavaScript-Satz wird unten an der Seite hinzugefügt, direkt vor dem abschließenden Form-Tag-Elements.
 
 ## <a name="form-fields"></a>Formularfelder
 
-Die HTML-Eingabe-ID eines Entitäts Felds wird auf den logischen Namen des Attributs festgelegt. Dies ermöglicht die Auswahl eines Felds, das Festlegen von Werten oder eine andere Client seitige Bearbeitung mit [jQuery](https://jquery.com/).  
+Die HTML-Eingabe-ID eines Entitätsfelds wird auf den logischen Namen des Attributs festgelegt. Dadurch wird das Auswählen von Feldern, Einstellungswerten oder anderen clientseitigen Änderungen mit [jQuery](https://jquery.com/) erleichtert.  
 
 ```JavaScript
 $(document).ready(function() {
@@ -32,11 +32,11 @@ $(document).ready(function() {
 });
 ```
 
-## <a name="additional-client-side-field-validation"></a>Zusätzliche Client seitige Feld Validierung
-Manchmal müssen Sie möglicherweise die Validierung der Felder im Formular anpassen. Im folgenden Beispiel wird das Hinzufügen eines benutzerdefinierten Validierungs Steuer Elements veranschaulicht. In diesem Beispiel wird der Benutzer gezwungen, eine e-Mail nur anzugeben, wenn das andere Feld für die bevorzugte Kontaktmethode auf e-Mail festgelegt ist.
+## <a name="additional-client-side-field-validation"></a>Zusätzliche clientseitige Feldvalidierung
+Manchmal müssen Sie die Validierung der Felder auf dem Formular anpassen. Im folgenden Beispiel wird gezeigt, wie ein benutzerdefinierter Validator hinzugefügt wird. Dieses Beispiel zwingt den Benutzer, nur eine E-Mail-Adresse zu definieren, wenn das andere Feld für die bevorzugte Kontaktmethode auf E-Mail festgelegt ist.
 
 > [!NOTE]
-> Die Client seitige Feld Validierung wird in einem subraster nicht unterstützt.
+> Die clientseitige Feldüberprüfung wird in einem Unterraster nicht unterstützt.
 
 ```JavaScript
 if (window.jQuery) {
@@ -73,9 +73,9 @@ if (window.jQuery) {
 }
 ```
 
-## <a name="general-validation"></a>Allgemeine Validierung
+## <a name="general-validation"></a>Allgemeine Überprüfung
 
-Wenn Sie auf die Schaltfläche " **nächste**/**senden** " klicken, wird eine Funktion mit dem Namen " **webformclientvalidate** " ausgeführt. Sie können diese Methode erweitern, um benutzerdefinierte Validierungs Logik hinzuzufügen.
+Klicken Sie auf die Schaltfläche **Weiter**/**Übermitteln**, um eine Funktion namens **webFormClientValidate** auszuführen. Sie können diese Methode erweitern, um benutzerdefinierte Validierungslogik hinzuzufügen.
 
 ```JavaScript
 if (window.jQuery) {
@@ -97,9 +97,9 @@ if (window.jQuery) {
 ```
 ### <a name="see-also"></a>Siehe auch
 
-[Konfigurieren eines Portals](configure-portal.md)  
-[Definieren von Entitäts Formularen](entity-forms.md)  
-[Webformular Schritte für Portale](web-form-steps.md)  
-[Auslastungs Formular/Lade Registerkarten-Schritttyp](load-form-step.md)  
-[Umleitungs Schritttyp](add-redirect-step.md)  
+[Ein Portal konfigurieren](configure-portal.md)  
+[Entitätsformulare definieren](entity-forms.md)  
+[Webformularschritte für Portale](web-form-steps.md)  
+[Schritttyp zum Laden von Formularen/Registerkarten](load-form-step.md)  
+[Umleitungsschritttyp](add-redirect-step.md)  
 [Bedingter Schritttyp](add-conditional-step.md)

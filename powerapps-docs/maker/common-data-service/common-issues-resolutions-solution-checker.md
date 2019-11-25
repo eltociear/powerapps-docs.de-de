@@ -1,23 +1,29 @@
 ---
 title: Häufige Probleme und Lösungen für Solution Checker | Microsoft Docs
-description: ' Eine Liste der häufigsten Probleme und Lösungen im Solution Checker'
+description: " Eine Liste der häufigsten Probleme und Lösungen im Solution Checker"
 keywords: ''
 ms.date: 02/11/2019
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: caa4e3f2-9700-49b8-87ed-8a68e8878b02
 author: jowells1
 ms.author: jowells
 manager: austinj
-ms.reviewer: null
-robots: 'noindex,nofollow'
+ms.reviewer: ''
+robots: noindex,nofollow
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f9168f51f8bfffc2ef9519e183e951706b7a024
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758322"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Häufige Probleme und Lösungen für Solution Checker
 
@@ -58,7 +64,7 @@ Wenn Sie die bisherigen Ergebnisse von Solution Checker beibehalten möchten, ex
 
 So deinstallieren Sie die PowerApps-Prüfungslösung:
 
-1. Öffnen Sie als Systemadministrator oder als Systemanpasser das PowerApps-Portal, indem Sie zu https://web.powerapps.com/environments navigieren.
+1. Öffnen Sie als Systemadministrator oder als Systemanpasser das PowerApps-Portal, indem Sie zu https://make.powerapps.com/environments navigieren.
 2. Wählen Sie **Lösungen** aus.
 3. Wählen Sie **PowerApps-Prüfung** und dann in der Symbolleiste der Lösungen **Löschen**.
 
@@ -66,13 +72,13 @@ So deinstallieren Sie die PowerApps-Prüfungslösung:
 
 So installieren Sie die PowerApps-Prüfung wieder in Ihrer Common Data Service-Umgebung:
 
-1. Öffnen Sie als Systemadministrator oder Systemanpasser Ihr PowerApps-Portal, indem Sie zu https://web.powerapps.com/environments navigieren.
+1. Öffnen Sie als Systemadministrator oder Systemanpasser Ihr PowerApps-Portal, indem Sie zu https://make.powerapps.com/environments navigieren.
 2. Wählen Sie **Lösungen** aus.
 3. Wählen Sie in der Symbolleiste den **Solution Checker** aus und wählen Sie dann **Install**.
 
 ## <a name="solution-checker-cant-access-organizations-in-administration-mode"></a>Die Lösungsprüfung kann nicht auf Organisationen im Verwaltungsmodus zugreifen
 
-Organisationen, die in den [Verwaltungsmodus](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) gesetzt wurden, schränken den Zugriff absichtlich auf Benutzer mit der Systemadministrator- und Systemanpasser-Rollen ein. Da der PowerApps-Prüfungsanwendungsidentität keine dieser Rollen standardmäßig zugewiesen ist, kann sie nicht auf Organisationen zugreifen, die in diesem Modus ausgeführt werden.
+Organisationen, die in den [Verwaltungsmodus](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) gesetzt wurden, schränken den Zugriff absichtlich auf Benutzer mit der Systemadministrator- und Systemanpasser-Rollen ein. Da der PowerApps-Prüfungsanwendungsidentität keine dieser Rollen standardmäßig zugewiesen ist, kann sie nicht auf Organisationen zugreifen, die in diesem Modus ausgeführt werden.
 
 Um die Lösungsprüfung in dieser Organisation zu verwenden, muss der Verwaltungsmodus deaktiviert werden.
 

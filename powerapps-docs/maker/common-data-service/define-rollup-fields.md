@@ -1,34 +1,39 @@
 ---
-title: Definieren Sie Rollup-Felder mit PowerAppss | MicrosoftDocs
-description: 'Hier erfahren Sie, wie Sie Rollup-Felder definieren'
+title: Rollupfelder definieren mit PowerApps | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie Rollup-Felder definieren
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ff0504a1-01bd-4f9b-b884-7f84911d86c3
 caps.latest.revision: 58
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758630"
 ---
-
 # <a name="define-rollup-fields-that-aggregate-values"></a>Definition von Rollupfeldern, die Werte aggregieren
 
 Rollupfelder helfen Benutzern, Einblicke in die Daten zu erhalten, indem Sie Schlüsselunternehmensmetriken überwachen. Ein Rollupfeld enthält einen Gesamtwert, der über die Datensätze berechnet wird, die mit einem bestimmten Datensatz verknüpft sind. Dies umfasst reguläre Entitäten und Aktivitätsentitäten wie E-Mails und Termine.
 
-In den komplexeren Szenarien können Sie Daten über die Hierarchie von Datensätzen aggregieren. Wenn Sie Administrator oder Anpasser sind, können Sie Rollupfelder definieren, mithilfe der Anpassungstools in PowerApps, ohne dass hierfür Code geschrieben werden muss.  
+In den komplexeren Szenarien können Sie Daten über die Hierarchie von Datensätzen aggregieren. Wenn Sie Administrator oder Anpasser sind, können Sie Rollupfelder mithilfe der Anpassungstools in PowerApps definieren, ohne dass hierfür Code geschrieben werden muss.  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  
@@ -75,7 +80,7 @@ Die Rollups werden nach geplanten Systemaufträgen berechnet, die asynchron im H
 
 So zeigen Sie Rollup-Aufträge an:
 
-1. Beim Anzeigen der **Common Data Services-Standardlösung** bearbeiten Sie die URL und entfernen alles nach `dynamics.com` und aktualisieren die Seite.
+1. Beim Anzeigen der **Common Data Service-Standardlösung** bearbeiten Sie die URL und entfernen alles nach `dynamics.com` und aktualisieren die Seite.
 2. Wählen Sie im Bereich **Einstellungen** auf die Option **System** > **Systemaufträge**.<br />![Navigieren zu Systemaufträgen](media/navigate-system-jobs.png)
 1. In der Ansichtsauswahl wählen Sie **Seriensystemaufträge** aus.
 2. Um einen relevanten Vorgang schnell zu finden, können Sie nach dem Systemauftragstyp filtern: **Rollupfeld Massenberechnung** oder **Rollupfeld Neuberechnung**.
@@ -210,7 +215,7 @@ Bestimmte Entitätsformulare, wie Konto oder Kontakt, enthalten standardmäßig 
 
 [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)<br />
 [Definieren berechneter Felder](define-calculated-fields.md)<br />
-[ Verhalten und Format des Datums- und Uhrzeitfelds.](behavior-format-date-time-field.md)<br />
+[Verhalten und Format des Datums- und Uhrzeitfelds](behavior-format-date-time-field.md)<br />
 [Hierarchiebezogene Daten festlegen und abfragen](define-query-hierarchical-data.md)<br />
-[Video: Rollup und berechnete Felder](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
-[Video: Verwenden von Power BI](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)
+[Video: Rollup und berechnete Felder](https://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
+[Video: Verwenden von Power BI](https://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)

@@ -8,23 +8,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5fce8b9f693d56cd5f0955779152dbd7d8100378
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757882"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Erstellen und Bearbeiten von globalen Optionssätzen für Common Data Service mithilfe des Projektmappen-Explorers
 
 Der Projektmappen-Explorer bietet eine Möglichkeit, um globale Optionssätze für Common Data Service zu erstellen und zu bearbeiten.
 
-Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
+Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ermöglicht das Konfigurieren der allgemeinen Optionen, jedoch können bestimmte Optionen nur mithilfe des Projektmappen-Explorers festgelegt werden. <br />Weitere Informationen: 
 - [Erstellen und Bearbeiten globaler Optionssätze für Common Data Service](create-edit-global-option-sets.md)
 - [Einen Optionssatz erstellen](custom-picklists.md)
 

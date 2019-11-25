@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von dynamischem Inhalt und Erstellen benutzerdefinierter Vorlagen für ein Portal | MicrosoftDocs
-description: Erfahren Sie, wie Sie Liquid, eine Open Source-Vorlagen Sprache, in ihre Portale verwenden.
+description: Informationen zur Verwendung von Liquid, einer Open Source-Vorlagensprache in Ihren Portale.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,28 +11,28 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: d660b570963cb57ac97426f35eb826a1bc9678c4
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543146"
+ms.locfileid: "2757222"
 ---
-# <a name="work-with-liquid-templates"></a>Arbeiten mit Liquid-Vorlagen
+# <a name="work-with-liquid-templates"></a>Verwenden von Liquid-Vorlagen
 
-Liquid ist eine Open-Source-Vorlagen Sprache, die in Portale integriert ist. Sie kann verwendet werden, um Seiten dynamische Inhalte hinzuzufügen und eine Vielzahl von benutzerdefinierten Vorlagen zu erstellen. Mithilfe von Liquid können Sie folgende Aktionen ausführen:
+Liquid ist eine Open Source-Vorlagensprache, die in Portale integriert ist. Fügen Sie damit dynamischen Inhalt zu Seiten hinzu, und erstellen Sie eine Vielzahl benutzerdefinierter Vorlagen. Verwenden von Liquid:
 
-- Fügen Sie dynamischen Inhalt direkt zum Feld **Kopieren** einer Webseite oder zum Inhalt eines [Inhalts](../configure/customize-content-snippets.md)Ausschnitts hinzu.  
+- Fügen Sie dynamischen Inhalt direkt in das **Kopieren**-Feld einer Webseite oder den Inhalt von einem [Inhaltsausschnitt](../configure/customize-content-snippets.md) ein.  
 
-- [Speichern Sie Quell Inhalte mithilfe von Webvorlagen](store-content-web-templates.md), vollständig über die Konfiguration innerhalb von powerapps, für die Verwendung im Inhalts Verwaltungssystem von powerapps-Portalen.  
+- [Speichern Sie Quellinhalt mithilfe von Webvorlagen](store-content-web-templates.md) vollständig durch Konfiguration in PowerApps zur Verwendung im PowerApps-Portalinhalt-Verwaltungssystem.  
 
-- [Rendering einer Website Kopfzeile und der primären Navigationsleiste](render-site-header-primary-navigation.md), vollständig über die Konfiguration innerhalb von powerapps.  
+- [Rendern Sie eine Websitekopfzeile und eine primary Navigationsleiste](render-site-header-primary-navigation.md) vollständig durch Konfiguration in PowerApps.  
 
 
 ### <a name="see-also"></a>Siehe auch
 
-[Speichern von Quell Inhalten mithilfe von Webvorlagen](store-content-web-templates.md)  
-[Grundlegendes zu Liquid](liquid-operators.md)  
+[Speichern von Inhalten mit Webvorlagen](store-content-web-templates.md)  
+[Lernen Sie Liquid-Operatoren kennen](liquid-operators.md)  
 [Liquid-Typen](liquid-types.md)  
-[Flüssige bedingte Operatoren](liquid-conditional-operators.md)  
+[Verfügbare bedingte Liquid-Operatoren](liquid-conditional-operators.md)  
 [Liquid-Objekte](liquid-objects.md)  
 [Liquid-Tags](liquid-tags.md)  
 [Liquid-Filter](liquid-filters.md)  

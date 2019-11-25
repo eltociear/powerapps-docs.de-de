@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit Lösungen in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Lösungen verteilt werden'
+description: Erfahren Sie, wie Lösungen verteilt werden
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759026"
 ---
-   
 # <a name="solutions-overview"></a>Überblick über Lösungen  
 
   In PowerApps werden Lösungen genutzt, um Anwendungen und Komponenten von einer Umgebung in eine andere zu transportieren oder eine Reihe von Anpassungen auf bestehende Anwendungen anzuwenden. Eine Lösung kann eine oder mehrere Anwendungen sowie andere Komponenten wie Sitemaps, Entitäten, Prozesse, Webressourcen, Optionssets und mehr enthalten.  Eine Lösung erhalten Sie bei [AppSource](https://appsource.microsoft.com/) oder bei einem unabhängigen Softwareanbieter (ISV).
   
-Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.microsoft.com/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  Als ISV, der eine App erstellt, die Sie verteilen werden, müssen Sie Lösungen verwenden. Weitere Informationen zum Verwenden von Lösungen finden Sie unter [Entwicklerhandbuch: Einführung in Lösungen](/powerapps/developer/common-data-service/introduction-solutions).  
@@ -38,6 +43,8 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 ### <a name="components"></a>Komponenten  
  Eine Komponente steht für etwas, das Sie anpassen können. Alles, was Bestandteil einer Lösung sein kann, ist eine Komponente. Nachfolgend finden Sie eine Liste von Komponenten, die Sie in einer Lösung anzeigen können:  
   
+-   KI-Modell
+
 -   Anwendungsmenüband  
   
 -   Artikelvorlage  
@@ -51,16 +58,20 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
 -   Verbindungsrolle  
   
 -   Vertragsvorlage  
+
+-   Benutzerdefinierter Connector
  
 -   Benutzerdefiniertes Steuerelement
   
--   Informationsleiste  
+-   Dashboard  
   
 -   E-Mail-Vorlage  
   
 -   Entität  
   
 -   Entitätsbeziehung  
+
+-   Umgebungsvariable
   
 -   Feld  
   
@@ -149,6 +160,6 @@ Mehr Informationen: [Whitepaper: Lösungs-Lebenszyklus-Management](https://www.m
   
   
 ## <a name="next-steps"></a>Nächste Schritte  
-[Importieren, aktualisieren und exportieren von Lösungen](import-update-export-solutions.md) <br/>
-[Navigieren zu einer bestimmten Lösung](navigate-specific-solution.md)
+[Lösungen importieren, aktualisieren und exportieren](import-update-export-solutions.md) <br/>
+[Zu einer bestimmten Lösung navigieren](navigate-specific-solution.md)
  

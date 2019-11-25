@@ -1,6 +1,6 @@
 ---
-title: Definieren und Abfragen von hierarchischen Daten Common Data Service | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie hierarchiebezogene Daten festlegen und abfragen'
+title: Abfrage und Visualisierung hierarchischer Daten mit Common Data Service | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie hierarchiebezogene Daten festlegen und abfragen
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c829665baf2688c755bdfba7debb19d7b69a1c46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758674"
 ---
 # <a name="define-and-query-hierarchically-related-data"></a>Hierarchiebezogene Daten festlegen und abfragen
 
@@ -35,7 +41,7 @@ Einige Standardobjekte haben bereits Hierarchien definiert. Andere Entitäten, e
 
 ## <a name="define-hierarchical-data"></a>Definieren Sie hierarchische Daten
 
-Mit Common Data Service werden hierarchische Datenstrukturen durch auf *sich selbst verweisende* Eins-zu-Viele (1: n)-Beziehungen der verknüpften Datensätze unterstützt. 
+Mit Common Data Service werden hierarchische Datenstrukturen durch *auf sich selbst verweisende* Eins-zu-Viele (1:n)-Beziehungen der verknüpften Datensätze unterstützt. 
 
 > [!NOTE]
 > *Auf sich selbst verweisen* bedeutet, dass die Entität mit sich selbst verknüpft ist. Beispielsweise enthält die Firmenentität ein Suchfeld, um sie einem anderen Firmenentitätsdatensatz zuzuweisen.
@@ -92,5 +98,5 @@ Die folgenden Beispiele illustrieren Szenarien für das Abfragen von Hierarchien
 [Erstellen oder Bearbeiten von 1: N (eine-zu-vielen) oder N:1 (viele-zu einer)-Entitätsbeziehungen](create-edit-1n-relationships.md)<br />
 [Erstellen oder Bearbeiten von 1: N (1: n- oder n: n) Entitätsbeziehungen 1 mithilfe des Lösungs-Explorers](create-edit-1n-relationships-solution-explorer.md)<br />
 [Visualisierung hierarchischer Daten mit modellgesteuerten Apps](visualize-hierarchical-data.md)<br />
-[Video: Hierarchische Sicherheitsmodellierung](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
-[Video: Hierarchievisualisierung in](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[Video: Hierarchische Sicherheitsmodellierung](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
+[Video: Hierarchievisualisierung in](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

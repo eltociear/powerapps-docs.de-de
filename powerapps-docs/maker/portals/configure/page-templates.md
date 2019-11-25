@@ -1,6 +1,6 @@
 ---
-title: Erstellen und Verwalten von Seitenvorlagen in powerapps-Portalen | MicrosoftDocs
-description: Erfahren Sie, wie Sie Seitenvorlagen in powerapps-Portalen erstellen und verwalten.
+title: Erstellen und Verwalten von Seitenvorlagen in PowerApps-Portalen | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Seitenvorlagen in PowerApps-Portalen erstellen und verwalten können.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,48 +11,48 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: ef4f61e7b9165d8d2c4abbc70c0bce65957665ab
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73551690"
+ms.locfileid: "2760444"
 ---
-# <a name="create-and-manage-page-templates"></a>Erstellen und Verwalten von Seitenvorlagen
+# <a name="create-and-manage-page-templates"></a>Erstellen und verwalten Sie Seitenvorlagen
 
-Obwohl Webseiten Knoten in der Sitemap Ihres Portals sind, die Inhalte darstellen, die für Portalbenutzer zugänglich sind, stellen Seitenvorlagen die eigentlichen ASPX-Seiten dar, die eine Möglichkeit bieten, ein konsistentes Erscheinungsbild auf der gesamten Website zu gewährleisten. Seitenvorlagen werden mithilfe von ASP.NET Seiten, Masterseiten, Cascading Stylesheets (CSS), Benutzer Steuerelementen und Server Steuerelementen erstellt.
+Während Webseiten Knoten in der SiteMap des Portals sind, die Inhalte darstellen, die den Portalbenutzern möglich ist, können Seitenvorlagen die tatsächlichen ASPX-Seiten darstellen, die die Suche erstellen, um ein konsistentes Erscheinungsbild der gesamten Website zu verwalten. Seitenvorlagen werden mithilfe ASP.NET-Seiten, Masterseiten, Cascading Stylesheete (CSS), Benutzersteuerelemente und Serversteuerelemente erstellt.
 
-Wenn Sie eine neue Webseite für die Website erstellen, unabhängig davon, ob Sie sich über die übergeordnete Veröffentlichung oder über die Portal Schnittstelle befinden, müssen Sie eine Seitenvorlage auswählen, die den Inhalt der Seite für Benutzer des Portals angezeigt wird.
+Wenn Sie eine neue Webseite für die Website erstellen, sei es durch Front-side Publishing oder über die Portaloberfläche, müssen Sie eine Seitenvorlage auswählen, die den Inhalt der Seite den Benutzern des Portale präsentiert.
 
-Der Unterschied zwischen Webseiten und Seitenvorlagen wird vielleicht am besten als der Unterschied zwischen einer exakten URL und einer echten ASPX-Seite verstanden, die als Blaupause zum Anzeigen von Inhalten fungiert. Jede Webseite repräsentiert eine bestimmte URL in Ihrer Website, zu der Benutzer navigieren können. Wenn ein Benutzer zu einer URL navigiert, wird der Inhalt angezeigt, der dieser URL zugeordnet ist. Eine Webseite enthält jedoch keine Informationen darüber, wie dieser Inhalt angezeigt wird.  Dies wird durch die Seitenvorlage bestimmt, bei der es sich um die tatsächliche ASPX-Seite handelt, die den vom Benutzer angezeigten HTML-Code generiert.
+Der Unterschied zwischen Webseiten und Seitenvorlagen versteht man wohl am besten als die Differenz  zwischen einer exakten URL und einer aktuellen ASPX-Seite, die verstanden wird als Lichtpause zum Anzeigen des Inhalts. Jede Webseite stellt eine bestimmte URL in Ihrem Standort dar, zu der Benutzer navigieren können. Wenn ein Benutzer zu einer URL navigiert, wird der Inhalt, der dieser URL zugeordnet ist, angezeigt. Eine Webseite enthält keine Informationen dazu, wie dieser Inhalt angezeigt wird.  Dies wird durch die Seitenvorlage bestimmt, die die tatsächliche ASPX-Seite ist, die das HTML generiert,  das der Benutzer angezeigt erhält.
 
-Wenn Sie eine neue Webseite erstellen, müssen Sie eine Seitenvorlage aus einer Liste vorhandener Vorlagen auswählen. In jedem der Start Portale sind mehrere Seitenvorlagen enthalten. Wenn Sie diese Portale als Basis für Ihre eigene Website verwenden, sind diese Vorlagen praktisch, um die Funktionalität des Portals zu demonstrieren. Allerdings muss ein Portal Entwickler das Layout dieser Seiten erheblich ändern. In den meisten Fällen handelt es sich bei der Seitenvorlage "page" um die zu verwendende Seitenvorlage: bei einer Webseite, die diese Vorlage verwendet, wird der Inhalt angezeigt, sowie eine Liste der untergeordneten Seiten, die als Navigationselemente dargestellt werden.
+Wenn Sie eine neue Website erstellen, müssen Sie eine Seitenvorlage in der Liste der vorhandenen Vorlagen auswählen. Einige Seitenvorlagen sind für jedes der Anfangsportale enthalten. Beim Verwenden der Portale als Basis für Ihre eigene Website verwenden sind diese Vorlagen Praktisch als Basis zum Aufzeigen der Funktionalität des Portals. Es ist ein Portalentwickler erforderlich, um das Layout der Seiten deutlich zu ändern. In den meisten Fällen ist die "Seiten" Seitenvorlage die Seitenvorlage, die verwendet wird, da sie allgemein ist: Eine Webseite mit dieser Vorlage besitzt den Inhalte, der angezeigt wird, sowie eine Liste von untergeordneten Seiten, die als Navigationselemente dargestellt werden.
 
-## <a name="manage-page-templates"></a>Verwalten von Seitenvorlagen
+## <a name="manage-page-templates"></a>Seitenvorlagen verwenden
 
-Das Erstellen einer neuen Seitenvorlage ist nur erforderlich, wenn Sie eine neue. aspx-Seite erstellen, um Inhalte auf Ihrer Website, die Aufgabe eines Portal Entwicklers, anzuzeigen. Tatsächlich kann ein Portal Entwickler für das einfache Anpassen des Layouts Ihrer Site größtenteils nur vorhandene ASPX-Seiten ändern.
+Eine neue Seiten-Vorlage erstellen ist nur erforderlich, wenn Sie eine nagelneue ASPX-Seite anzeigen, um den Inhalt der Website anzuziegen, eine Portalentwickler-Aufgabe. Wahrscheinlich für den Zweck der Vereinfachung des Layouts des Standorts kann ein Portalentwickler einfach vorhandene ASPX-Seiten wesentlich ändern.
 
-1. Pen Sie die [Portal Verwaltungs-App](configure-portal.md).
+1. Öffnen Sie die [Portalverwaltungs-App](configure-portal.md).
 
-2. Wechseln Sie zu **Portale** > **Seitenvorlagen**.
+2. Gehen Sie zu **Portale** > **Seitenvorlagen**.
 
-3. Wählen Sie **neu**aus, um eine neue Seitenvorlage zu erstellen.
+3. Um eine neue Seitenvorlage zu erstellen, klicken Sie auf **Neu**.
 
-4. Wählen Sie den Namen der Seitenvorlage aus, um eine vorhandene Seitenvorlage zu bearbeiten.
+4. Wenn Sie eine vorhandene Seitenvorlage bearbeiten, wählen Sie den Seitenvorlagennamen aus.
 
-5. Geben Sie entsprechende Werte in die Felder ein.
+5. Hinzufügen der entsprechenden Werte zu den Feldern.
 
-6. Wählen Sie **Speichern und Schließen** aus.
+6. Klicken Sie auf **Speichern und schließen**.
 
-### <a name="page-template-attributes"></a>Seitenvorlagen Attribute
+### <a name="page-template-attributes"></a>Seitenvorlagenattribute
 
 |Name |Beschreibung |
 |-----|--------|
-|Name    |Der Name der Vorlage, die für den Verweis verwendet wird.   |
-|Website   |Die zugehörige Website.   |
-|Typ   |Der Typ der Vorlage, mit der gesteuert wird, wie die Vorlage bestimmt, was dargestellt werden soll.<ul><li>**Rewrite**: verwendet das Feld zum Umschreiben von URLs, um eine gegebene ASP.net-Vorlage zu erzeugen.</li><li>**Webvorlage**: verwendet das Webvorlagen Feld, um eine bestimmte Webvorlage zu erzeugen.</li></ul>   |
-|URL umschreiben   |Der Pfad der physischen ASP.net. aspx-Seite (oder einer anderen Ressource, wie z. b. ashx), die den Inhalt rendert.<br> Dieses Feld wird nur angezeigt, wenn in der Liste **Typ** die Option **URL umschreiben** ausgewählt ist. |
-|Webvorlage   |Ein Verweis auf eine Webvorlage, die zum Rendering dieser Vorlage verwendet wird.<br>Dieses Feld wird nur angezeigt, wenn eine **Webvorlage** in der Liste **Typ** ausgewählt ist.  |
-|Ist Standard   |Wenn "Ja", ist die Vorlage der Standardwert, der der Dropdown Liste in den Tools zur Client seitigen Bearbeitung zugewiesen wird.   |
-|Entitäts Name   |Der Seiten Entitätstyp, den diese Vorlage zum Rendering erwartet. Dies wird vom System der systemeigenen Bearbeitung verwendet, um Inhaltsautoren nur geeignete Vorlagen Optionen zur Verfügung zu stellen.<br>Normalerweise handelt es sich hierbei um eine Webseite (adx_webpage), aber es kann sich um eine andere Portal Entität handeln, z. b. Forum, Forums Thread, Blog oder Blogbeitrag.   |
-|Beschreibung  |Eine Beschreibung dieser Vorlage, um die Benutzer zu nutzen, die sich auf die Benutzer der Vorderseite-Bearbeitung stützen. |
+|Name    |Name der Vorlage, die als Referenz verwendet wird.   |
+|Website   |Die zugeordnete Website.   |
+|Typ   |Der Typ der Vorlage, der bestimmt, inwiefern die Vorlage das Rendern bestimmt.<ul><li>**Überschreiben**: Verwendet das URL-Feld, um eine bestimmte ASP.NET-Vorlage zu rendern.</li><li>**Webvorlage**: Nutzt das Internet-Vorlagenfeld, um eine bestimmte Internet-Vorlage zu rendern.</li></ul>   |
+|URL Überschreiben   |Pfad der physischen ASP.NET-ASPX-Seite (oder anderer Ressource, wie .ashx) die Inhalte rendert.<br> Dieses Feld wird angezeigt, wenn **URL überschreiben** in der Liste **Typ** ausgewählt ist. |
+|Webvorlage   |Ein Verweis auf eine Internet-Vorlage wird verwendet, um diese Vorlage zu rendern.<br>Dieses Feld wird angezeigt, wenn **Web-Vorlage** in der Liste **Typ** ausgewählt ist.  |
+|Ist-Standard   |Wenn" Ja" und die Vorlage in der Standardeinstellung in den Dropdown-Listenfeldern in den clientseitigen Bearbeitungstools zugewiesen wird.   |
+|Entitätsname   |Der Seiten-Entitätstyp, den diese Vorlage zu rendern erwartet. Dies wird nur durch das Vorderseitenbearbeitungssystem verwendet, um nur die entsprechenden Vorlagen-Auswahlen für Inhalt-Autoren anzuzeigen.<br>Normalerweise ist dies die Webseite (adx_webpage), aber kann eine andere Portalentität sein, wie zum Beispiel Forum, Forum-Thread, Blog oder Blogbeitrag.   |
+|Beschreibung  |Eine Beschreibung dieser Vorlage zugunsten der Vorderseitenbearbeitungsbenutzer. |
 |||
 

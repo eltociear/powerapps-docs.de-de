@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren eines bedingten Schritt Typs für ein Portal | MicrosoftDocs
-description: Anweisungen zum Hinzufügen und Konfigurieren eines bedingten Schritt Typs für ein Portal.
+title: Konfigurieren eines bedingten Schritttyps für ein Portal | MicrosoftDocs
+description: Anweisungen, einen bedingten Schritttyp für ein Portal hinzuzufügen und zu konfigurieren.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,66 +11,66 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: ec3e568b239bf66c0d4554e244d5afef2d5ef673
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553668"
+ms.locfileid: "2760457"
 ---
-# <a name="add-a-conditional-step-type"></a>Fügen Sie einen bedingten Schritttyp hinzu.
+# <a name="add-a-conditional-step-type"></a>Hinzufügen eines bedingten Schritttyps
 
-Ein Webformular Schritt kann ein "Condition"-Typ sein, der angibt, dass der Schritt einen Ausdruck auswerten soll. Wenn der Ausdruck zu true ausgewertet wird, wird der nächste Schritt angezeigt. Wenn der Ausdruck zu false ausgewertet wird und der "Next Step if Condition"-Wert angegeben wurde, wird dieser Schritt angezeigt. Die aktuelle Entität ist das Ziel, mit dem der Ausdruck ausgewertet wird. Die Daten Satz Quelle ist standardmäßig die Daten Satz Quelle des vorherigen Schritts.
+Ein Webformularschritt kann ein Bedingungstyp sein, der angibt, dass der Schritt einen Ausdruck auswerten soll. Wenn der Ausdruck als "true" ausgewertet wird, wird der nächste Schritt angezeigt. Wird der Ausdruck als "false" auswertet und "Nächster Schritt, wenn die Bedingung fehlschlägt" angegeben worden ist, wird diser Schritt angezeigt. Die aktuelle Entität ist das Ziel, das verwendet wird, um den Ausdruck auszuwerten. Als Datensatzquelle wird die Datensatzquelle des vorherigen Schrittes als Standard übernommen.
 
 ## <a name="attributes"></a>Attribute
 
 | Name                         | Beschreibung                                                                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Anlage                    | Der bedingte Ausdruck, der ausgewertet werden soll.                                                                                                                                                                                           |
-| Nächster Schritt, wenn die Bedingung fehlschlägt | Der bedingte Schritttyp weist im Gegensatz zu allen anderen zwei Lookups für den nächsten Schritt auf. Der Standardwert für die nächste Schritt Suche wird berücksichtigt, wenn die Bedingung als true ausgewertet wird. Diese Eigenschaft legt den nächsten Schritt fest, wenn die Bedingung als false ausgewertet wird. |
+| Bedingung                    | Der Bedingte Ausdruck, der ausgewertet wird                                                                                                                                                                                           |
+| Nächster Schritt, wenn die Bedingung fehlschlägt | "Bedingter Schritttyp" besitzt, im Gegensatz zu allen anderen, zwei "Nächster Schritt"-Suchen. Die standardmäßige "Nächster Schritt"-Suche wird berücksichtigt, wenn die Bedingung "true" auswertet. Diese Eigenschaft legt den nächsten Schritt fest, falls die Bedingung "false" auswertet. |
 
-Die folgenden Operanden sind verfügbar:
+Die verfügbaren Operanden sind wie folgt:
 
-| Operand (s)    | Typ                   |
+| Operand(en)    | Typ                   |
 |---------------|------------------------|
-| =, ==         | Aufbauen                 |
+| =, ==         | Gleich                 |
 | !=            | Ungleich             |
 | &gt;          | Größer als           |
 | &lt;          | Kleiner als              |
-| &gt;=         | Größer als oder ist |
-| &lt;=         | Kleiner als oder ist    |
-| &             | And                    |
-| \|             | Or                     |
-| !             | Not                    |
-| =\*, = =\*,-= | mögen                   |
-| ! =\*          | Nicht wie               |
+| &gt;=         | Größer Als oder Gleich |
+| &lt;=         | Kleiner oder Gleich    |
+| &             | Und                    |
+| \|             | Oder                     |
+| !             | Nicht                    |
+| =\*, ==\*, -= | Wie                   |
+| !=\*          | Nicht Wie               |
 
 ## <a name="format"></a>Format
 
-Das Format des Ausdrucks lautet wie folgt:
+Das Format der Ausdrucks ist wie folgt:
 
-\[logischer Name des Entitäts Attributs\] \[Operanden\] \[Wert\]
+\[logischer Name des Entitätsattributs\] \[Operator\] \[Wert\]
 
 Beispiel:
 
-neuer\_categorycode = 750101
+new\_categorycode = 750101
 
-Eine Bedingung kann über mehrere Ausdrücke verfügen. Sie können geschachtelte Ausdrücke mithilfe von Klammern gruppieren, z. b.:
+Eine Bedingung kann mehrere Ausdrücke haben. Sie können Klammern verwenden, um geschachtelte Ausdrücke zu gruppieren, beispielsweise:
 
-New\_categorycode = 750101 & gendercode = 2
+new\_categorycode = 750101 und gendercode = 2
 
--   New\_categorycode = 750101 & (gendercode = 2 | gendercode = 3)
+-   new\_categorycode = 750101 und (gendercode = 2 | gendercode = 3)
 
--   New\_Name = Jane Doe
+-   new\_name = Jane Doe
 
--   neuer\_twooptionfield = true
+-   new\_twooptionfield = true
 
--   neuer\_twooptionfield = false
+-   new\_twooptionfield = false
 
 ### <a name="see-also"></a>Siehe auch
 
-[Konfigurieren eines Portals](configure-portal.md)  
-[Definieren von Entitäts Formularen](entity-forms.md)  
-[Webformular Schritte für Portale](web-form-steps.md)  
-[Auslastungs Formular/Lade Registerkarten-Schritttyp](load-form-step.md)  
-[Umleitungs Schritttyp](add-redirect-step.md)  
-[Hinzufügen benutzerdefinierter JavaScript](add-custom-javascript.md)  
+[Ein Portal konfigurieren](configure-portal.md)  
+[Entitätsformulare definieren](entity-forms.md)  
+[Webformularschritte für Portale](web-form-steps.md)  
+[Schritttyp zum Laden von Formularen/Registerkarten](load-form-step.md)  
+[Umleitungsschritttyp](add-redirect-step.md)  
+[Benutzerdefiniertes JavaScript hinzufügen](add-custom-javascript.md)  
 

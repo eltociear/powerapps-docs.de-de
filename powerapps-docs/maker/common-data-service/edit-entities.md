@@ -1,6 +1,6 @@
 ---
-title: Eine Entität in PowerApps bearbeiten | MicrosoftDocs
-description: 'Informationen zu den verschiedenen Arten, wie eine Entität bearbeitet werden kann'
+title: Bearbeiten einer Entität in PowerApps | Microsoft-Dokumentation
+description: Informationen zu den verschiedenen Arten, wie eine Entität bearbeitet werden kann
 ms.custom: ''
 ms.date: 05/15/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8b00780c-74f0-4e3a-b570-b9289d0d5383
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757442"
 ---
 # <a name="edit-an-entity"></a>Bearbeiten einer Entität
 
@@ -34,12 +40,12 @@ Es gibt zwei Möglichkeiten, eine Entität mithilfe eines Designers zu bearbeite
 
 |Designer|Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.|
+|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige besondere Einstellungen sind nicht verfügbar.|
 |Lösungs-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.|
 
 Sowohl im PowerApps-Portal als auch im Lösungs-Explorer können Sie Folgendes durchführen:
 
-- **Bearbeiten der Entitätsfelder**. Weitere Informationen:  [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
+- **Bearbeiten der Entitätsfelder**. Weitere Informationen: [Erstellen und Bearbeiten von Feldern für Common Data Service](create-edit-fields.md)
   
 - **Bearbeiten der Entitätsbeziehungen**. Weitere Informationen:  [Erstellen und Bearbeiten von Beziehungen zwischen Entitäten](create-edit-entity-relationships.md)
 
@@ -55,7 +61,7 @@ Sie können auch Änderungen an Datensätzen vornehmen, die die Entität unterst
 
 - **Dashboards**: Weitere Informationen: [Erstellen oder Bearbeiten von Dashboards](../model-driven-apps/create-edit-dashboards.md)
 
-- **Diagramme**. [Erstellen oder Bearbeiten eines Systemdiagramms](../model-driven-apps/create-edit-system-chart.md)
+- **Diagramme**. [Systemdiagramme erstellen oder bearbeiten](../model-driven-apps/create-edit-system-chart.md)
 
 ## <a name="edit-using-powerapps-portal-designer"></a>Bearbeiten mithilfe des PowerApps-Portaldesigners
 

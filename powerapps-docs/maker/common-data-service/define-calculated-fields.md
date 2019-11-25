@@ -1,6 +1,6 @@
 ---
-title: Definieren Sie in PowerAppss berechnete Felder | MicrosoftDocs
-description: 'Hier erfahren Sie, wie Sie berechnete Felder definieren'
+title: Berechnete Felder definieren in PowerApps | Microsoft-Dokumentation
+description: Hier erfahren Sie, wie Sie berechnete Felder definieren
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 6d58a297-2ddf-4236-be3a-47249b49d5fa
 caps.latest.revision: 67
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d4f66e3f047da19fd040cccdd3f9af2da913df09
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758762"
 ---
 # <a name="define-calculated-fields-to-automate-manual-calculations"></a>Definition berechneter Felder für das Automatisieren von manuellen Berechnungen
 
@@ -54,9 +60,9 @@ Beispielsweise möchte ein Vertriebsmitarbeiter möglicherweise den gewichteten 
 
 ## <a name="create-a-calculated-field"></a>Erstellen eines berechneten Felds
 
-Verwenden Sie den Feldeditor, um ein berechnetes Feld anzugeben. In diesem Beispiel verwenden wir [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), aber die Schritte ähneln den zur Verwendung des Projektmappen-Explorers. Weitere Informationen: [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)
+Verwenden Sie den Feldeditor, um ein berechnetes Feld anzugeben. In diesem Beispiel verwenden wir [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), aber die Schritte ähneln denen zur Verwendung des Projektmappen-Explorers. Weitere Informationen: [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)
   
-1. Öffnen Sie [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) öffnen
 1. Erweitern Sie **Daten** > **Entitäten**.  
 1. Wählen Sie die gewünschte Entität und wählen Sie **Felder** aus. Wählen Sie **Feld hinzufügen** aus.  
 1. Geben die für das Feld erforderlichen Informationen an, einschließlich **Anzeigename**, **Name** und **Datentyp**. 
@@ -196,7 +202,7 @@ In der Funktion **CONCAT** können Sie Literalzeichenfolgen als einzelne Textzei
   
 Die folgenden Beispiele veranschaulichen, wie die **TRIMLEFT**- und **TRIMRIGHT**-Funktionen verwendet werden. Sie enthalten die ersten Zeichenfolgen und die resultierenden Zeichenfolgen, die von den Funktionen **TRIMLEFT** und **TRIMRIGHT** zurückgegeben werden:  
   
-**TRIMLEFT** (“RXX10-3456789”, 3) gibt die Zeichenfolge `10-3456789`  zurück  
+**TRIMLEFT** (“RXX10-3456789”, 3) gibt die Zeichenfolge `10-3456789`   zurück  
 **TRIMRIGHT** (“20-3456789RXX”, 3) gibt die Zeichenfolge `20-3456789` zurück 
   
 <a name="Considerations"></a> 
@@ -228,4 +234,4 @@ Sie sollten bestimmte Bedingungen und Beschränkungen berücksichtigen, wenn Sie
  
 [Erstellen und Bearbeiten von Feldern](create-edit-fields.md)<br />
 [Definition von Rollupfeldern, die Werte aggregieren](define-rollup-fields.md)<br />
-[Video: Rollup und berechnete Felder](http://go.microsoft.com/fwlink/p/?LinkId=517727)
+[Video: Rollup und berechnete Felder](https://go.microsoft.com/fwlink/p/?LinkId=517727)

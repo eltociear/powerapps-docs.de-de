@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8478a07a-c697-4784-874b-36958eb4f95d
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759510"
 ---
-
 # <a name="open-the-model-driven-app-form-editor"></a>Öffnen Sie den modellgesteuerten App-Formular-Editor 
 Im Formular-Editor können Sie Formulare entwerfen, indem Sie Komponenten wie Abschnitte, Registerkarten, Felder und Steuerelemente auf die Formular-Editor-Canvas ziehen. In diesem Thema erfahren Sie, wie Sie auf verschiedene Arten auf den Formular-Editor zugreifen.
  
@@ -30,7 +35,7 @@ Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, e
 
 ## <a name="access-the-form-editor-from-the-powerapps-site"></a>Rufen Sie den Formular-Editor von der Seite PowerApps aus auf.
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/) an. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/) an. 
 
 2. Wählen Sie **Daten** > **Entitäten** >und wählen Sie dann die gewünschte Entität, z.B. die Firma-Entität. 
 
@@ -51,7 +56,7 @@ Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, e
   
 2.  Falls mehrere Hauptformulare für die Entität vorhanden sind, überprüfen Sie, ob das Formular das ist, das Sie bearbeiten möchten. Wenn dies nicht der Fall ist, wählen Sie mit der Formularauswahl das Formular aus, das Sie bearbeiten möchten.  
   
-3.  Wählen Sie die Schaltfläche **Weitere Befehle** ![Mehr Befehlsschaltflächen in der Termin-Aktivität](media/more-commands.gif "Mehr Befehlsschaltflächen in der Termin-Aktivität").  
+3.  Wählen Sie die Schaltfläche **Weitere Befehle** aus ![„Weitere Befehle“-Schaltflächen in der Termin-Aktivität](media/more-commands.gif "Mehr Befehlsschaltflächen in der Termin-Aktivität").  
   
 4.  Wählen Sie den **Formular-Editor** aus.  
 
@@ -81,4 +86,4 @@ Wenn Sie neue Lösungskomponenten bei der Bearbeitung des Formulars erstellen, e
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Erstellen und Gestalten von Formularen](create-design-forms.md)
+[Formulare erstellen und gestalten](create-design-forms.md)

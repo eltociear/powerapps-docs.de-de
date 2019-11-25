@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 14c4c18c-927c-4ea2-ba66-0531285a99a7
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759730"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Schnellstart für die Umstellung Ihrer bestehenden Web-Client-Anwendung auf die einheitliche Oberfläche
 
-Die einheitliche Oberfläche verwendet auch dynamische Webdesignprinzipien, um bei jeder Bildschirmgröße oder -ausrichtung sowie auf jedem Gerät die bestmögliche Ansicht und Interaktion zu bieten. In diesem Schnellstartthema wird erklärt, wie Sie Ihre alte Web Client-Anwendung auf die einheitliche Oberfläche umstellen können, indem Sie eine neue, nicht produktive Umgebung verwenden. 
+Die einheitliche Oberfläche verwendet auch dynamische Webdesignprinzipien, um bei jeder Bildschirmgröße oder -ausrichtung sowie auf jedem Gerät die bestmögliche Ansicht und Interaktion zu bieten. In diesem Schnellstartthema wird erklärt, wie Sie Ihre alte Webclient-Anwendung auf die einheitliche Oberfläche umstellen können, indem Sie eine neue Nicht-Produktionsumgebung verwenden. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JwWU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JwWU]
 
 Um eine bestehende produktionsfreie Umgebung für die Umstellung Ihrer Web Client-Anwendung zu verwenden, siehe [Schneller Start für die Verwendung einer bestehenden Umgebung zur Validierung Ihrer bestehenden Web Client-Anwendung mit der einheitlicheb Oberfläche](transition-web-app-existing.md). 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -37,7 +43,7 @@ Um eine bestehende produktionsfreie Umgebung für die Umstellung Ihrer Web Clien
 ## <a name="prepare-the-environment"></a>Vorbereiten der Umgebung
 Wählen Sie zuerst eine Nicht-Produktionsumgebung aus und aktivieren Sie den Modus **Nur Einheitliche Oberfläche verwenden**, sodass die einheitliche Oberfläche für alle modellgesteuerten Apps in der Umgebung verwendet wird. Dazu gehören auch alle Dynamics 365-Anwendungsmodule, die ursprünglich für den Legacy-Webclient konfiguriert wurden.
 
-1. Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Umgebung**, und wählen Sie dann eine Sandbox-Umgebung aus. 
+1. Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Umgebung**, und wählen Sie dann eine Sandbox-Umgebung aus. 
 
 2. Wählen Sie **Einstellungen** > **Verhalten** aus, und aktivieren Sie dann **Nur Einheitliche Oberfläche verwenden**.
 
@@ -56,7 +62,7 @@ Sie können dies auch im Einstellungsbereich einstellen. Gehen Sie zu **Einstell
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>Ausführen und Überprüfen der Anwendung in der einheitlichen Oberfläche
 Führen Sie Anwendungen aus, die ursprünglich Webclient-Anwendungen waren. Beachten Sie, dass, nachdem Sie die Option **Nur Einheitliche Oberfläche verwenden** aktiviert haben, alle verfügbaren Apps in der Umgebung die einheitliche Oberfläche verwenden, auch wenn die Anwendung ursprünglich für den Webclient konfiguriert wurde.
 
-Um Ihre Anwendung auszuführen, melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Apps**, und wählen Sie dann die Anwendung aus, die Sie ausführen möchten. Alternativ können Sie auch direkt zur Seite **Meine Apps** gehen, z.B. *https://contoso.crm.dynamics.com/apps/*.
+Um Ihre Anwendung auszuführen, melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an, wählen Sie **Apps**, und wählen Sie dann die Anwendung aus, die Sie ausführen möchten. Alternativ können Sie auch direkt zur Seite **Meine Apps** gehen, z.B. *https://contoso.crm.dynamics.com/apps/*.
 
 ### <a name="validate-your-app-processes-and-customizations"></a>Überprüfen der App, Prozesse und Anpassungen 
 Es ist empfehlenswert, alle Anwendungsfälle zu testen. Sie können mit den wichtigsten Anwendungsfällen starten oder sie in logische Entwurfsmuster gruppieren. Da die einheitliche Oberfläche auf einem reagierenden Entwurf basiert, wird empfohlen, Tests mit unterschiedlichen Geräten auszuführen, die verschiedene Bildschirmauflösungen haben. Während Sie die Anwendung testen, können Sie überprüfen, ob Ihre Anpassungen mit der einheitlichen Benutzeroberfläche kompatibel sind und ob es Funktionen gibt, die ein Redesign erfordern oder fehlende Funktionen aufweisen. Erstellen Sie einen Plan für die Überprüfung dieser Elemente und veröffentlichen Sie Ihre Fragen und Ihr Feedback in unserem Community-Forum. 

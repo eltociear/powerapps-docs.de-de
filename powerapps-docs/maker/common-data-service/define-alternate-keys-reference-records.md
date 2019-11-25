@@ -1,6 +1,6 @@
 ---
 title: Alternative Schlüssel für Datensätze definieren mit Common Data Service | MicrosoftDocs
-description: 'Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um auf Datensätze in Common Data Service zu verweisen'
+description: Erfahren Sie, wie Alternativschlüssel definiert werden, die verwendet werden können, um auf Datensätze in Common Data Service zu verweisen
 ms.custom: ''
 ms.date: 06/04/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 29e53691-0b18-4fde-a1d0-7490aa227898
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758806"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Definieren von Alternativschlüsseln für den Verweis auf Datensätze
 
@@ -49,7 +55,7 @@ Sie können zwei Designer verwenden, um Alternativschlüssel zu erstellen:
 
 |Designer| Beschreibung|
 |--|--|
-|[PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige Optionen sind nicht verfügbar.<br />Weitere Informationen [Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)|
+|[PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Gibt eine einfache konzentrierte Erfahrung, aber einige Optionen sind nicht verfügbar.<br />Weitere Informationen: [Alternativschlüssel mithilfe von PowerApps-Portalen festlegen](define-alternate-keys-portal.md)|
 |Projektmappen-Explorer|Nicht so einfach, aber gibt mehr Flexibilität für weniger allgemeine Anforderungen.<br />Weitere Informationen: [Alternativschlüssel mithilfe des Projektmappen-Explorers festlegen](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -59,7 +65,7 @@ Sie können zwei Designer verwenden, um Alternativschlüssel zu erstellen:
 
 Die Informationen in diesem Thema helfen Ihnen auswählen, welche Designer Sie verwenden können. 
 
-Sie sollten das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um Alternative Schlüssel zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
+Sie sollten das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) verwenden, um alternative Schlüssel zu erstellen, es sei denn, Sie müssen eine der folgenden Anforderungen erfüllen:
 
 - Erstellen eines Alternativschlüssels in einer Lösung die keine Common Data Service-Standardlösung ist
 - Sie möchten den erstellten Systemauftrag, der den Status der Erstellung der unterstützenden Indizes nachverfolgt, ganz leicht nachverfolgen

@@ -1,5 +1,5 @@
 ---
-title: 'Erstellen einer Beziehung zwischen Entitäten, mithilfe eines Suchfelds | Microsoft Docs'
+title: Erstellen einer Beziehung zwischen Entitäten, mithilfe eines Suchfelds | Microsoft Docs
 description: Schrittweise Anleitung zur Erstellung einer Beziehung zwischen Entitäten in PowerApps mithilfe eines Suchfelds.
 author: lancedMicrosoft
 manager: kvivek
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 02/21/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757530"
 ---
-
 # <a name="create-a-relationship-between-entities"></a>Erstellen einer Beziehung zwischen Entitäten
 Daten in einer Entität beziehen sich häufig auf Daten in einer anderen Entität. Beispielsweise haben Sie eine **Lehrer**- und **Klasse**-Entität, und die **Klasse**-Entität weist möglicherweise eine Suchbeziehung mit der **Lehrer**-Entität, um zu veranschaulichen, welcher Lehrer welche Klasse unterrichtet. Sie können ein Suchfeld verwenden, um Daten aus der Entität **Lehrer** anzuzeigen. Dies wird allgemein als ein Suchfeld bezeichnet.
 
@@ -31,7 +36,7 @@ Darüber hinaus können Sie erweitertes Kaskadierungsverhalten bei n: 1 und 1: n
 
 Um einer Entität eine Suchbeziehung hinzuzufügen, erstellen Sie eine Beziehung in der Registerkarte **Beziehungen** die geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
 
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
 2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
@@ -40,22 +45,22 @@ Um einer Entität eine Suchbeziehung hinzuzufügen, erstellen Sie eine Beziehung
 4. Klicken Sie auf **Beziehung hinzufügen**. Dadurch wird ein neuer Bereich geöffnet, in dem Sie die Entität auswählen können, mit der Sie eine Beziehung erstellen möchten. Wählen Sie die Entität aus dem Dropdownmenü **Verknüpfte Entität** aus.
 
     > [!div class="mx-imgBorder"] 
-    > ![Viele zu Eine-Beziehung](./media/data-platform-cds-newrelationship/manytoone-1.png "Viele zu Eine-Beziehung")
+    > ![n:1-Beziehung](./media/data-platform-cds-newrelationship/manytoone-1.png "n:1-Beziehung")
 
 5. Wenn Sie eine Entität ausgewählt haben, werden die Suchfelder in der primären Entität angezeigt, die standardmäßig dem Namen der Entität entsprechen (in diesem Beispiel Klassenzimmer), aber Sie können ihn nach Bedarf ändern.
 
-    ![Viele zu Eine-Beziehung](./media/data-platform-cds-newrelationship/manytoone-2.png "Viele zu Eine-Beziehung")
+    ![n:1-Beziehung](./media/data-platform-cds-newrelationship/manytoone-2.png "n:1-Beziehung")
 
 6. Klicken Sie auf **Fertig**, um die Beziehung zu Ihrer Entität hinzuzufügen, und klicken Sie dann auf **Entität speichern**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Viele zu Eine-Beziehung](./media/data-platform-cds-newrelationship/manytoone-3.png "Viele zu Eine-Beziehung")
+    > ![n:1-Beziehung](./media/data-platform-cds-newrelationship/manytoone-3.png "n:1-Beziehung")
 
 ## <a name="add-a-one-to-many-relationship"></a>Eine Eine-zu-Viele-Beziehung hinzufügen
 
 Um eine Eine-zu-Viele-Beziehung hinzuzufügen, erstellen Sie eine Beziehung in der Registerkarte **Beziehungen** die geben Sie die Entität an, mit der Sie eine Beziehung erstellen möchten.
 
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
 2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
@@ -63,7 +68,7 @@ Um eine Eine-zu-Viele-Beziehung hinzuzufügen, erstellen Sie eine Beziehung in d
 
 4. Klicken Sie auf den Pfeil nach unten auf der rechten Seite von **Beziehung hinzufügen**, damit Sie aus beiden Beziehungstypen auswählen können. Klicken Sie auf **Eine-zu-Viele** geklickt wird ein neuer, Bereich, damit Sie die Entität aus, für die Sie eine Beziehung erstellen möchten. Wählen Sie die Entität aus dem Dropdownmenü **Verknüpfte Entität** aus.
     > [!div class="mx-imgBorder"] 
-    > ![Eine zu Viele-Beziehung](./media/data-platform-cds-newrelationship/onetomany-1.png "Eine zu viele-Beziehung")
+    > ![1:n-Beziehung](./media/data-platform-cds-newrelationship/onetomany-1.png "1:n-Beziehung")
 
 5. Wenn Sie eine Entität festgelegt wurde, wird die sich auf alle Felder der primären Entität, sie ist Standard mit dem Entitätsnamen (in diesem Beispiel Klasse) angezeigt, aber Sie können ihn nach Bedarf ändern.
 
@@ -71,17 +76,17 @@ Um eine Eine-zu-Viele-Beziehung hinzuzufügen, erstellen Sie eine Beziehung in d
     > Bei 1:n-Beziehungen wird das Suchfeld in der verknüpften Entität und nicht in der Entität aktuell ausgewählten Entität erstellt. Wenn Sie die Suche in der aktuellen Entität brauchen, erstellen Sie bitte eine n:1-Beziehung.
 
     > [!div class="mx-imgBorder"] 
-    > ![Eine zu Viele-Beziehung](./media/data-platform-cds-newrelationship/onetomany-2.png "Eine zu viele-Beziehung")
+    > ![1:n-Beziehung](./media/data-platform-cds-newrelationship/onetomany-2.png "1:n-Beziehung")
 
 6. Klicken Sie auf **Fertig**, um die Beziehung zu Ihrer Entität hinzuzufügen, und klicken Sie dann auf **Entität speichern**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Eine zu Viele-Beziehung](./media/data-platform-cds-newrelationship/onetomany-3.png "Eine zu viele-Beziehung")
+    > ![1:n-Beziehung](./media/data-platform-cds-newrelationship/onetomany-3.png "1:n-Beziehung")
 
 ## <a name="add-a-many-to-many-relationship"></a>Eine viele zu viele-Beziehung hinzufügen
 Um eine Viele-zu-Viele-Beziehung hinzuzufügen, erstellen Sie eine Beziehung in der Registerkarte **Beziehungen**. Die geben Sie der Entität an, mit der Sie eine Beziehung erstellen möchten.
 
-1. Auf [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
+1. Auf [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), erweitern Sie den Abschnitt **Daten** und klicken oder tippen Sie im linken Navigationsbereich **Entitäten**.
 
 2. Klicken oder tippen Sie auf eine vorhandene Entität oder [Erstellen Sie eine neue Entität](data-platform-create-entity.md)
 
@@ -92,7 +97,7 @@ Um eine Viele-zu-Viele-Beziehung hinzuzufügen, erstellen Sie eine Beziehung in 
 5. Wenn Sie eine Entität ausgewählt haben, erscheinen die Namen für die Beziehung und die Beziehungsentität. Sie entsprechen standardmäßig den Namen der kombinierten Entitäten, aber Sie können sie nach Bedarf ändern.
 
     > [!div class="mx-imgBorder"] 
-    > ![Viele zu Viele-Beziehung](./media/data-platform-cds-newrelationship/manytomany-1.png "Viele zu viele-Beziehung")
+    > ![m:n-Beziehungen](./media/data-platform-cds-newrelationship/manytomany-1.png "m:n-Beziehungen")
 
 6. Klicken Sie auf **Fertig**, um die Beziehung zu Ihrer Entität hinzuzufügen, und klicken Sie dann auf **Entität speichern**.
 
@@ -121,7 +126,7 @@ Während Sie Geschäftsdaten anpassen, indem Sie benutzerdefinierte Entitäten e
 * **Angepasst:** In einer angepassten Beziehung zwischen zwei Entitäten wählen Sie das Verhalten, das mit einem Satz möglicher Aktionen verbunden ist. 
 
     > [!div class="mx-imgBorder"] 
-    > ![Angepasstes Verhalten](./media/data-platform-cds-newrelationship/advanced-2.png "Angepasstes Verhalten")
+    > ![Benutzerdefiniertes Verhalten](./media/data-platform-cds-newrelationship/advanced-2.png "Benutzerdefiniertes Verhalten")
 
 Weitere Informationen zu Standardwerten und angepassten Verhaltensweisen: [Konfigurieren der Entitätsbeziehungsverhaltensweisen](entity-relationship-behavior.md).
 
@@ -131,9 +136,9 @@ Weitere Informationen zu Standardwerten und angepassten Verhaltensweisen: [Konfi
 Wenn Sie [automatisch eine App erstellen](../canvas-apps/data-platform-create-app.md), die aus einer Entität erstellt wird, die ein Suchfeld enthält, wird es als **Dropdown**-Steuerelement angezeigt, das Daten im Feld **Primärer Name** der Entität enthält.
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Hinzufügen von 1:N- und N:N-Beziehungen für Canvas-Anwendungen
-Verwenden Sie die Funktion **Relate**, um zwei Datensätze über eine 1:n- oder n:n-Beziehung im Common Data Service zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
+Verwenden Sie die Funktion **Beziehung**, um zwei Datensätze über eine 1:n- oder m:n-Beziehung in Common Data Service zu verbinden. Mehr Informationen: [Verwandte und nicht verwandte Funktionen in PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
-* [Generieren einer App mit einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app.md)
-* [Erstellen einer App von Grund auf einer Common Data Service-Datenbank](../canvas-apps/data-platform-create-app-scratch.md)
+* [Generieren Sie eine App, indem Sie Common Data Service verwenden](../canvas-apps/data-platform-create-app.md)
+* [App ganz neu mit einer Common Data Service-Datenbank erstellen](../canvas-apps/data-platform-create-app-scratch.md)
 

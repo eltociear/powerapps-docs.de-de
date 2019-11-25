@@ -1,6 +1,6 @@
 ---
-title: Verhalten und Format des Felds "Datum und Uhrzeit" in Common Data Service | MicrosoftDocs
-description: Das Verhalten und das Format der Datums-und Uhrzeit Felder, die in einem Portal verwendet werden.
+title: Verhalten und Format des Datums- und Uhrzeitfelds in Common Data Service | MicrosoftDocs
+description: Verhalten und Format des Datums- und Uhrzeitfelds, die in einem Portal verwendet werden.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,29 +11,29 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 785b5fa7def4a5b8e4964e888567d64643405708
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553323"
+ms.locfileid: "2760434"
 ---
-# <a name="behavior-and-format-of-the-date-and-time-field"></a>Verhalten und Format des Felds "Datum und Uhrzeit"
+# <a name="behavior-and-format-of-the-date-and-time-field"></a>Verhalten und Format des Datums- und Uhrzeitfelds
 
-In Common Data Service wird der Datums-und Uhrzeit Datentyp in vielen System Entitäts Feldern verwendet. Beispielsweise können Sie anzeigen, wann ein Konto zuletzt in einer Marketingkampagne verwendet wurde, oder das Datum und die Uhrzeit anzeigen, zu denen ein Fall eskaliert wurde. Sie können auch benutzerdefinierte Entitäten erstellen, die die Datums-und Uhrzeit Felder enthalten. Je nachdem, was das Feld darstellt, können Sie eines der folgenden Feld Verhalten für Portal Formulare und Raster auswählen: 
-- **Lokaler Benutzer**: die Feldwerte werden in der lokalen Zeit des Benutzers angezeigt und gemäß der aktuellen Portal Sprache/dem aktuellen Gebiets Schema formatiert. Die Werte werden im UTC-Zeit Zonen Format in Common Data Service gespeichert. Wenn ein Benutzer in Common Data Service (oder einem anderen Portalbenutzer) in einer anderen Zeitzone den Wert anzeigt, wird dieser in seine eigene Zeitzone konvertiert.
-- **Nur Datum**: die Feldwerte enthalten nur das Datum und werden ohne Zeit Zonen Konvertierung angezeigt. Der Uhrzeit Teil des Werts ist immer 12:00 Uhr. Der von einem Benutzer eingegebene Wert wird von anderen Benutzern in unterschiedlichen Zeitzonen (z. b. Geburtsdaten) gleich angezeigt.
+In Common Data Service wird der Datum und Uhrzeit-Datentyp in vielen Systementitätsfeldern verwendet. Beispielsweise können Sie anzeigen, wann eine Firma zuletzt in einer Marketingkampagne verwendet wurde, oder das Datum und die Uhrzeit der letzten Eskalierung einer Anfrage anzeigen. Sie können auch benutzerdefinierte Entitäten erstellen, die die Datums- und Zeitfelder enthalten. Je nachdem, was das Feld darstellt, können Sie eines der folgenden Feldverhalten für Portalformulare und Raster auswählen: 
+- **Ortszeit Benutzer**: Die Feldwerte werden in der Ortszeit des Benutzers angezeigt und gemäß der aktuellen Portalsprache/dem aktuellen Gebietsschema formatiert. Die Werte werden im UTC-Zeitzonenformat in Common Data Service gespeichert. Wenn ein Benutzer in Common Data Service (oder ein anderer Portalbenutzer) in einer anderen Zeitzone diesen Wert anzeigt, wird dieser für sie in ihre eigene Zeitzone konvertiert dargestellt.
+- **Nur Datum**: Die Feldwerte enthalten nur das Datum und werden ohne Zeitzonenkonvertierung angezeigt. Der Zeitteil des Werts ist immer 12:00 Uhr. Der Wert, der von einem Benutzer angegeben wird, wird anderen Benutzern in verschiedenen Zeitzonen gleich angezeigt (z.B. Geburtdsdaten).
   
   > [!Note]
-  > Das Verhalten dieses Felds kann nicht geändert werden, nachdem es gespeichert wurde.
+  > Das Verhalten dieses Felds kann nicht mehr geändert werden, nachdem es gespeichert wurde.
   
-- **Zeit Zonen unabhängig**: die Feldwerte enthalten Datum und Uhrzeit und werden ohne Zeit Zonen Konvertierung angezeigt. Der von einem Benutzer eingegebene Wert wird von anderen Benutzern in unterschiedlichen Zeitzonen gleich angezeigt.
+- **Zeitzonenunabhängig**: Die Feldwerte enthalten das Datum und die Uhrzeit und werden ohne Zeitzonenkonvertierung angezeigt. Der Wert, der von einem Benutzer angegeben wird, wird anderen Benutzern in verschiedenen Zeitzonen gleich angezeigt.
   
   > [!Note]
-  > Das Verhalten dieses Felds kann nicht geändert werden, nachdem es gespeichert wurde.
+  > Das Verhalten dieses Felds kann nicht mehr geändert werden, nachdem es gespeichert wurde.
 
-Sie können das standardmäßige Datums-/Uhrzeitformat für Portale auch überschreiben, indem Sie die folgenden Site Einstellungen erstellen:
-- DateTime/DATEFORMAT: das Datumsformat, das im Portal verwendet wird. 
-- DateTime/TimeFormat: das Zeitformat, das im Portal verwendet wird. 
-- DateTime/DateTimeFormat: das Format für das vollständige Datum und die Uhrzeit, das im Portal verwendet wird.
+Sie können das Standardformat für Datum und Uhrzeit auch überschreiben, um es auf Portalen zu verwenden, indem Sie die folgenden Websiteeinstellungen erstellen:
+- DateTime/DateFormat: Das im Portal verwendete Datumsformat. 
+- DateTime/TimeFormat: Das im Portal verwendete Uhrzeitformat. 
+- DateTime/DateTimeFormat: Das Format für das im Portal verwendete vollständige Datum/die vollständige Uhrzeit.
 
-Standardmäßig verwendet das Portal das Standardformat für Datums-/Uhrzeitformate, das in den Einstellungen der Website Sprache festgelegt ist.
-Die zulässigen Datums-/Uhrzeitformate werden [hier](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings)angegeben.
+Standardmäßig verwendet das Portal die Standardformate für Datum und Uhrzeit, die durch die Spracheinstellungen der Website festgelegt werden.
+Die akzeptierten Formate für Datum und Uhrzeit sind [hier](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) festgelegt.

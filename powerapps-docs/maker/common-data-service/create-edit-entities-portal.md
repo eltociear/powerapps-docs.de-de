@@ -1,5 +1,5 @@
 ---
-title: Entitäten mit dem PowerApps-Portal erstellen und bearbeiten | MicrosoftDocs
+title: Entitäten mit dem PowerApps-Portal erstellen und bearbeiten | Microsoft-Dokumentation
 description: Entitäten mit dem PowerApps-Portal erstellen und bearbeiten
 ms.custom: ''
 ms.date: 05/30/2018
@@ -9,31 +9,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758102"
 ---
-
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>Entitäten mit dem PowerApps-Portal erstellen und bearbeiten
 
-Das [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Felder vom Common Data Service zu erstellen und zu bearbeiten.
+Das [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) stellt eine einfache Möglichkeit zur Verfügung, Entitätsfelder mit dem Common Data Service zu erstellen und zu bearbeiten.
 
 PowerApps-Portal aktiviert das  Konfigurieren der allgemeinen Optionen, jedoch bestimmte Optionen können nur mithilfe des Lösungs-Explorers festgelegt werden. Weitere Informationen: 
-- [Erstellen und bearbeiten Sie Entitäten in Common Data Service](create-edit-entities.md)
+- [Entitäten erstellen und bearbeiten in Common Data Service](create-edit-entities.md)
 - [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>Entitäten anzeigen
 
-1. In [PowerApps-Portal](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) Wählen Sie **Modell-angetrieben** oder **Canvas** Entwurfsmodus aus.
+1. Wählen Sie im [PowerApps-Portal](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) entweder den Entwurfsmodus **Modellgesteuert** oder **Canvas** aus.
 2. Wählen Sie **Daten** > **Entitäten** aus.
 
 ![Entitäten anzeigen](media/view-entities-portal.png)
@@ -144,7 +149,7 @@ Wenn die Entität Abhängigkeiten hat, die das Löschen verhindern, wird eine Fe
 
 ### <a name="see-also"></a>Siehe auch
 
-[Erstellen und bearbeiten Sie Entitäten in Common Data Service](create-edit-entities.md)<br />
+[Entitäten erstellen und bearbeiten in Common Data Service](create-edit-entities.md)<br />
 [Erstellen und Bearbeiten von Entitäten mithilfe des Lösungsexplorer](create-edit-entities-solution-explorer.md)
 
 

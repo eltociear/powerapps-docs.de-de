@@ -1,8 +1,8 @@
 ---
 title: Erstellen Sie Ihren eigenen interaktiven Begleiter (Lernpfad) (modellgesteuerte Apps) | MicrosoftDocs
 description: ''
-keywords: null
-ms.date: 04/30/2019
+keywords: ''
+ms.date: 10/22/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 8ee3c432-5f76-4086-b9cc-6cd467ae056b
@@ -11,14 +11,24 @@ ms.author: matp
 manager: kvivek
 topic-status: Drafting
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
+ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2768285"
 ---
-
 # <a name="create-guided-help-learning-path-for-your-app"></a>Erstellen eines interaktiven Begleiters (Lernpfads) für Ihre App
 
-Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hilfeumgebung bereitzustellen, die für Ihre Umgebung und die spezifische Nutzung und den Workflow in der Organisation angepasst wird. Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatorischen Prozessen und stellt sicher, dass Daten einheitlich interpretiert und eingegeben und Fehler und Supportanfragen von Benutzern reduziert werden. [Sehen Sie sich ein kurzes Video (1:50) zum Lernpfad an](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm).  
+Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hilfeumgebung bereitzustellen, die für Ihre Umgebung und die spezifische Nutzung und den Workflow in der Organisation angepasst wird. 
+
+> [!IMPORTANT]
+> Lernpfad ist nur mit Vorgängerwebclient-Apps verfügbar. Benutzerdefinierte Hilfeseiten für Einheitliche Oberflächen-Apps. Weitere Informationen: [Erstellen Sie einen interaktiven Begleiter für Ihre App Einheitliche Oberfläche](../common-data-service/create-custom-help-pages.md)
+
+Der Lernpfad erleichtert das Lernen und die Akzeptanz von Apps und organisatorischen Prozessen und stellt sicher, dass Daten einheitlich interpretiert und eingegeben und Fehler und Supportanfragen von Benutzern reduziert werden. [Sehen Sie sich ein kurzes Video (1:50) zum Lernpfad an](https://community.dynamics.com/crm/b/crmvideos/archive/2016/05/09/introducing-learning-path-for-dynamics-crm).  
 
 <a name="CustomHelp"></a>   
 
@@ -38,7 +48,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 - Sich für Lernpfad angemeldet haben. Diese Einstellung ist standardmäßig aktiviert, kann aber deaktiviert worden sein.  
 
-   Um sicherzustellen, dass der Lernpfad aktiviert ist: Wechseln Sie auf der Navigationsleiste zu **Einstellungen** ![Symbol „Einstellungen“](media/optionsbutton.png "Symbol „Einstellungen“") > **Für Lernpfad anmelden**.  
+   Um sicherzustellen, dass der Lernpfad aktiviert ist: Wechseln Sie auf der Navigationsleiste zu **Einstellungen** ![Symbol Einstellungen](media/optionsbutton.png "Einstellungssymbol") > **Für Lernpfad anmelden**.  
 
    Weitere Informationen: [Ein/Aus-Schalter für den Lernpfad (interaktiver Begleiter)](/dynamics365/customer-engagement/admin/on-off-switch-for-learning-path-guided-help)  
 
@@ -54,7 +64,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 ## <a name="turn-on-learning-path-for-your-organization"></a>Lernpfad für Ihre Organisation aktivieren  
  Lernpfad ist eine Zusatzeinrichtung, die für Ihre Organisation aktiviert oder deaktiviert werden kann. Sie können in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] enthaltene Lernpfadinhalte anzeigen, Ihre eigenen Lernpfadinhalte für Benutzer erstellen oder beides tun.  
 
-1. Melden Sie sich mit einem Administratorkonto bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
+1. Melden Sie sich mit einem Administratorkonto bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) oder [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] an.  
 
 2. Gehen Sie zu **Einstellungen** und wählen Sie dann **Verwaltung** unter **System** aus. Weitere Informationen: [Einstellungen](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -64,7 +74,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
     Sie können den Lernpfad oder die benutzerdefinierte Hilfe aktivieren, aber nicht beide gleichzeitig. Bestätigen Sie, dass **Benutzerdefinierte Hilfe für anpassbare Entitäten verwenden** und **Parameter an URL anfügen** auf **Nein** festgelegt wurden.  
 
-     ![Systemeinstellungen-Dialogfeld mit Optionen für die Auswahl der Aktivierung der Lernpfaderstellung](media/lp-system-settings.png "Systemeinstellungen-Dialogfeld mit Optionen für die Auswahl der Aktivierung der Lernpfaderstellung")  
+     ![Dialogfeld Systemeinstellungen, das die Optionen anzeigt, um die Lernpfaderstellung zu aktivieren](media/lp-system-settings.png "Dialogfeld Systemeinstellungen, das die Optionen anzeigt, um die Lernpfaderstellung zu aktivieren")  
 
 5. Wählen Sie **OK** aus.  
 
@@ -72,7 +82,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 ## <a name="add-a-user-to-the-office-365-learning-path-authors-security-group"></a>Einen Benutzer zur Office 365-Lernpfad-Autorensicherheitsgruppe hinzufügen  
  Wenn Sie nicht Mitglied der Lernpfad-Autorensicherheitsgruppe von [!INCLUDE[pn_Office_365](../../includes/pn-office-365.md)] sind, wird die folgende Fehlermeldung zurückgegeben, wenn Sie die Lernpfad-Inhalts-Bibliothek öffnen.  
 
- ![Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfad-Sicherheitsgruppe sind](media/lp-o365-security-group.png "Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfad-Sicherheitsgruppe sind")  
+ ![Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfadsicherheitsgruppe sind](media/lp-o365-security-group.png "Fehlermeldung, die darauf hinweist, dass Sie kein Mitglied der Lernpfadsicherheitsgruppe sind")  
 
 #### <a name="add-a-user"></a>Hinzufügen eines Benutzers  
 
@@ -159,7 +169,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 3. Ermitteln Sie den eindeutigen Namen für die Organisation (auch Instanz genannt), für die Sie Lernpfadsteuerelemente erstellen möchten. Um den eindeutigen Namen der Organisation zu erhalten, wählen Sie in der Siteübersicht **Einstellungen** > **Anpassungen** und dann auf der Seite **Anpassung** **Entwicklerressourcen**. Kopieren Sie den Wert für das Feld **Eindeutiger Name**, das im Abschnitt **Instanz-Verweis** angezeigt wird.  
 
-   ![Dynamics Organisations-Name, der im Informationsbereich für den Benutzer angezeigt wird](media/lp-org-name.png "Dynamics Organisations-Name, der im Informationsbereich für den Benutzer angezeigt wird")  
+   ![Dynamics-Org-Name, der im Benutzerinformationsbereich angezeigt wird](media/lp-org-name.png "Dynamics-Org-Name, der im Benutzerinformationsbereich angezeigt wird")  
 
 4. Fügen Sie Folgendes dem ersten Teil der URL für Ihre Organisation hinzu und ersetzen Sie \<org name> durch den eindeutigen Namen für Ihre Organisation, wie im vorherigen Schritt bestimmt:  
 
@@ -191,21 +201,21 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 -   Wählen Sie auf der Randleiste die Schaltfläche **Inhaltsbibliothek**.  
 
-     ![Symbol für die Inhaltsbibliothek in der Lernfpad-Randleiste](media/lp-sidebar-cl-icon.png "Symbol für die Inhaltsbibliothek in der Lernfpad-Randleiste")  
+     ![Das Inhaltsbibliothekssymbol auf einer Lernpfad-Randleiste](media/lp-sidebar-cl-icon.png "Das Inhaltsbibliothekssymbol wird auf einer Lernpfad-Randleiste angezeigt")  
 
 -   Wählen Sie die Kachel **Schulung** der Siteübersicht und dann **Inhaltsbibliothek**.  
 
-     ![Inhaltsbibliotheksymbol in der Siteübersicht der modellgesteuerten App](media/lp-sitemap-content-library.png "Inhaltsbibliotheksymbol in der Siteübersicht der modellgesteuerten App")  
+     ![Inhaltsbibliothekssymbol auf der modellgesteuerten App-Siteübersicht](media/lp-sitemap-content-library.png "Inhaltsbibliothekssymbol auf der modellgesteuerten App-Siteübersicht")  
 
 **Wenn Sie die Inhaltsbibliothek im mobilen App-Schnittstellensimulator öffnen:**  
 
 1.  Wählen Sie die Auslassungspunkteschaltfläche (...) innerhalb eines Kreises in der rechten unterer Ecke des Bildschirms.  
 
-    ![Auslassungspunkteschaltfläche für die Anzeige von Lernpfadsymbolen](media/lp-cl-ellipses.png "Auslassungspunkteschaltfläche für die Anzeige von Lernpfadsymbolen")  
+    ![Auslassungspunkteschaltfläche, um Lernpfadsymbole anzuzeigen](media/lp-cl-ellipses.png "Auslassungssymbolschaltfläche, um Lernpfadsymbole anzuzeigen")  
 
 2.  Wählen Sie **Lernpfad-Inhaltsbibliothek** aus.  
 
-    ![Auf der Benutzeroberfläche der mobilen App angezeigte Lernpfadschaltflächen](media/lp-mobile-lp-button.png "Auf der Benutzeroberfläche der mobilen App angezeigte Lernpfadschaltflächen")  
+    ![Lernpfadschaltflächen, die in der mobilen App-Schnittstelle angezeigt wird](media/lp-mobile-lp-button.png "Lernpfadschaltflächen, die in der mobilen App-Schnittstelle angezeigt wird")  
 
 
 
@@ -216,7 +226,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 |Spalte|Beschreibung|  
 |------------|-----------------|  
-|**Name**|Der Name, den Sie benutzten, wenn Sie die Aufgabenhilfe oder die Randleiste erstellt haben. Ein rotes Sperrsymbol neben den Namen gibt an, dass der Inhalt gerade ausgecheckt wird. Sie können den Mauszeiger über das Symbol bewegen, um anzuzeigen, für welchen Benutzer der Inhalt ausgecheckt ist.<br /><br /> ![Ein rotes Sperrsymbol zeigt an, dass der Inhalt ausgecheckt ist.](media/lp-cl-checked-out.png "Ein rotes Sperrsymbol zeigt an, dass der Inhalt ausgecheckt ist.")<br /><br /> Ein rotes Sternchen neben dem Namen zeigt an, dass neu eingecheckter Inhalt vorhanden ist.<br /><br /> ![Ein roter Stern kennzeichnet neu eingecheckten Inhalt](media/lp-cl-new-check-in.png "Ein roter Stern kennzeichnet neu eingecheckten Inhalt")|  
+|**Name**|Der Name, den Sie benutzten, wenn Sie die Aufgabenhilfe oder die Randleiste erstellt haben. Ein rotes Sperrsymbol neben den Namen gibt an, dass der Inhalt gerade ausgecheckt wird. Sie können den Mauszeiger über das Symbol bewegen, um anzuzeigen, für welchen Benutzer der Inhalt ausgecheckt ist.<br /><br /> ![Rotes Schlosssymbol zeigt an, dass der Inhalt ausgecheckt ist.](media/lp-cl-checked-out.png "RRotes Schlosssymbol zeigt an, dass der Inhalt ausgecheckt ist.)<br /><br /> Ein rotes Sternchen neben dem Namen zeigt an, dass neu eingecheckter Inhalt vorhanden ist.<br /><br /> ![Rotes Sternchen zeigt neu überprüftem Inhalt an](media/lp-cl-new-check-in.png "RRotes Sternchen zeigt neu überprüftem Inhalt an)|  
 |**Titel**|Der Titel, den Sie angegeben haben, als Sie Inhalt der Aufgabenhilfe oder Randleiste hinzugefügt haben. Titel für Randleisten und angeleitete Aufgaben werden angezeigt, wenn diese als Links hinzugefügt werden oder wenn sie für Suchergebnisse zurückgegeben werden.|  
 |**Typ**|Ein Symbol, das den Typ des Inhalts angibt: Randleiste oder Aufgabenhilfe|  
 |**Formularfaktor**|Symbole, die für den Formfaktor stehen, der für diesen Inhalt bei der Erstellung ausgewählt wurden, entweder **Desktop** oder **Tablet**.<br /><br /> Die Spalte **Formularfaktor** wird nicht angezeigt, wenn Sie die die Inhaltsbibliothek mit dem mobilen App-Schnittstellensimulator oder den interaktiven Servicehub verwenden.|  
@@ -263,7 +273,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 3. In der Inhaltsbibliothek wählen Sie **Aufgabenhilfe**.  
 
-    ![Link zur Erstellung einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-gt.png "Link zur Erstellung einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek")  
+    ![Verknüpfung zur Erstellen einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-gt.png "Verknüpfung zur Erstellen einer neuen Aufgabenhilfe in der Lernpfad-Inhaltsbibliothek")  
 
 4. Geben Sie einen Namen ein und wählen Sie die anderen für die Einstellungen für die Aufgabenhilfe. Verwenden Sie diese Tabelle als Referenz.  
 
@@ -307,11 +317,11 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
    > [!NOTE]
    >  Sie können den Schritt bis zu 15 Sekunden halten. Wenn Sie ihn nicht innerhalb von 15 Sekunden anheften, bleibt die Kachel ungelöst und der Mauszeiger ist wieder normal.  
 
-   ![Aufgabenhilfe-Fluss-Editor](media/lp-gt-flow-editor.png "Aufgabenhilfe-Fluss-Editor")  
+   ![Aufgabenhilfefluss-Editor](media/lp-gt-flow-editor.png "Aufgabenhilfefluss-Editor")  
 
 5. Wenn Sie den Schritt am gewünschten Ort positioniert haben, lassen Sie die Maustaste los, um ihn am Steuerelement anzuheften. Die Schritt erscheint am gewünschten Ort. Um den Schritt zu verschieben, können Sie die Schaltfläche **Mich ziehen** im Bereich neben dem Schritt verwenden.  
 
-   !["Mich ziehen"-Symbol in einer Aufgabenhilfeblase](media/lp-gt-bubble-drag-me.png "\"Mich ziehen\"-Symbol in einer Aufgabenhilfeblase")  
+   ![Symbol "Ziehen" in eine neue Aufgabenhilfeblase ziehen](media/lp-gt-bubble-drag-me.png "Symbol "Ziehen" in eine neue Aufgabenhilfeblase ziehen")  
 
 6. Fügen Sie dem Schritt mithilfe der daneben angezeigten Steuerelementen Inhalte hinzu. Die folgenden Einstellungen stehen zur Verfügung:  
 
@@ -326,7 +336,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
    > [!NOTE]
    >  Sie können den Schritt später jederzeit bearbeiten, sodass Sie sich keine Sorgen machen müssen, dass Sie vor dem Schließen nicht alles integriert haben.  
 
-8. Um den nächsten Schritt in der Aufgabenhilfe hinzuzufügen oder zu bearbeiten, wählen Sie den Pfeil nach rechts ![Pfeilsymbol zur Rückkehr zum Fluss-Editor](media/lp-chevron.png "Pfeilsymbol zur Rückkehr zum Fluss-Editor") in der linken oberen Ecke der Seite, um den Fluss-Editor anzuzeigen.  
+8. Um den nächsten Schritt in der Aufgabenhilfe hinzuzufügen oder zu bearbeiten, wählen Sie den Pfeil nach rechts ![Pfeilsymbol zur Rückkehr zum Flow-Editor](media/lp-chevron.png "Chevronsymbol, um zu Flusseditor zurückzukehren") in der linken oberen Ecke der Seite, um den Flow-Editor anzuzeigen.  
 
 9. Fügen Sie weitere Schritte hinzu, die Sie in der Aufgabenhilfe einschließen möchten und stellen Sie sicher, dass Sie jeden Schritt speichern, wenn Sie den Inhalt hinzugefügt haben.  
 
@@ -359,7 +369,7 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 3. In der Inhaltsbibliothek wählen Sie **Randleiste**.  
 
-   ![Link zur Erstellung einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-sb.png "Link zur Erstellung einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek")  
+   ![Verknüpfung zum Erstellen einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek](media/lp-content-library-sb.png "Verknüpfung zum Erstellen einer neuen Randleiste in der Lernpfad-Inhaltsbibliothek")  
 
 4. Geben Sie einen Namen ein und wählen Sie die anderen Einstellungen für die Randleiste. Verwenden Sie diese Tabelle als Referenz.  
 
@@ -405,11 +415,11 @@ Verwenden Sie den Lernpfad, um Ihren Benutzern eine benutzerdefinierte In-App-Hi
 
 1. Im Abschnitt, in dem Sie Links hinzufügen möchten, wählen Sie das Symbol **Liste von Links**.  
 
-   ![Liste der Link-Symbole, die auf einer Lernpfad-Randleiste ausgewählt sind](media/lp-sidebar-links.png "Liste der Link-Symbole, die auf einer Lernpfad-Randleiste ausgewählt sind")  
+   ![Liste der Link-Symbole, die auf einer Lernpfad-Randleiste angezeigt werden](media/lp-sidebar-links.png "Liste der Link-Symbole, die auf einer Lernpfad-Randleiste angezeigt werden")  
 
 2. Fügen Sie einen Abschnittstitel hinzu und wählen Sie dann **+ Link hinzufügen**.  
 
-   ![Markiertes Kästchen "Link hinzufügen" in einem Abschnitt einer Lernpfad-Randleiste](media/lp-sidebar-addlink.png "Markiertes Kästchen \"Link hinzufügen\" in einem Abschnitt einer Lernpfad-Randleiste")  
+   ![Fügen Sie das hervorgehobene Kästchen "Links" in einem Abschnitt einer Lernpfad-Randleiste hinzu](media/lp-sidebar-addlink.png "Fügen Sie das hervorgehobene Kästchen "Links" in einem Abschnitt einer Lernpfad-Randleiste hinzu")  
 
 3. Wählen Sie den Link-Typ aus, den Sie hinzufügen möchten und wählen Sie **Weiter**. Sie können aus den folgenden Optionen auswählen:  
 
@@ -501,7 +511,7 @@ Weitere Informationen zum Verwenden von YouTube: [YouTube-Hilfecenter](https://g
 
 <a name="Localize"></a>   
 ## <a name="localize-learning-path-controls"></a>Lernpfadsteuerelemente lokalisieren  
- Sie können den Inhalt in den Steuerelemente im Lernpfad lokalisieren, um sie den Benutzern in ihrer ausgewählten Sprache für [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] anzuzeigen. Zur Lokalisierung der Steuerelemente können Sie sie einfach nach Zeichenfolgen suchen, die den Benutzern angezeigt werden, und dann importieren die das Steuerelement der lokalisierten Inhalte enthält. Sie können das Steuerelement in dieselbe Organisation importieren oder in eine andere Organisation. Sie können dasselbe Steuerelement in mehrere Sprachen lokalisieren und die einzelnen Sprachen in spezifische Organisationen importieren, die Benutzer mit der ausgewählten Sprache unterstützen. Der Lokalisierungssupport im Lernpfad folgen dem OASIS XML Localisation Interchange File Format TC-Standard (XLIFF) 2.0. Es gibt kostenlose Tools und Lernprogramme für das Arbeiten mit diesem Format. Weitere Informationen: [XLIFF-Version 2.0](http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html).  
+ Sie können den Inhalt in den Steuerelemente im Lernpfad lokalisieren, um sie den Benutzern in ihrer ausgewählten Sprache für [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] anzuzeigen. Zur Lokalisierung der Steuerelemente können Sie sie einfach nach Zeichenfolgen suchen, die den Benutzern angezeigt werden, und dann importieren die das Steuerelement der lokalisierten Inhalte enthält. Sie können das Steuerelement in dieselbe Organisation importieren oder in eine andere Organisation. Sie können dasselbe Steuerelement in mehrere Sprachen lokalisieren und die einzelnen Sprachen in spezifische Organisationen importieren, die Benutzer mit der ausgewählten Sprache unterstützen. Der Lokalisierungssupport im Lernpfad folgen dem OASIS XML Localisation Interchange File Format TC-Standard (XLIFF) 2.0. Es gibt kostenlose Tools und Lernprogramme für das Arbeiten mit diesem Format. Weitere Informationen: [XLIFF-Version 2.0](https://docs.oasis-open.org/xliff/xliff-core/v2.0/os/xliff-core-v2.0-os.html).  
 
  Weitere Informationen zur Benutzerspracheinstellungen in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]: [Persönliche Optionen hinzufügen](/dynamics365/customer-engagement/basics/set-personal-options).  
 
@@ -509,7 +519,7 @@ Weitere Informationen zum Verwenden von YouTube: [YouTube-Hilfecenter](https://g
 
 2.  Wählen Sie **Lokalisieren** und dann **Exportieren** aus.  
 
-    ![Export-Schaltfläche im Lernpfad-Lokalisierungsmenü](media/lp-localize-export.png "Export-Schaltfläche im Lernpfad-Lokalisierungsmenü")  
+    ![Schaltfläche "Exportieren" im Lernpfad-Lokalisierungsmenü](media/lp-localize-export.png "Schaltfläche "Exportieren" im Lernpfad-Lokalisierungsmenü")  
 
 3.  Wählen Sie die Option, die Sie zum Speichern der generierten ZIP-Datei verwenden möchten, und wählen Sie dann einen Namen und einen Speicherort aus.  
 

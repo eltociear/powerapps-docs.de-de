@@ -1,6 +1,6 @@
 ---
 title: Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen in PowerApps | MicrosoftDocs
-description: 'Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten'
+description: Erfahren Sie, wie Sie ein Schnellerfassungsformular erstellen oder bearbeiten
 ms.custom: ''
 ms.date: 05/14/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 68ca9059-cc5a-45e7-88bd-cc57186bbb48
 caps.latest.revision: 18
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759158"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Erstellen oder Bearbeiten von modellgesteuerten Schnellerstellungsformularen für eine optimierte Dateneingabeerfahrung
 
@@ -50,11 +56,12 @@ Sie können benutzerdefinierte Aktivitätsentitäten aktivieren, um Schnellerfas
   
 > [!NOTE]
 >  - Für die Entität muss die Option **Schnellerfassung erlauben** aktiviert sein, damit das Schnellerfassungsformular angezeigt werden kann. 
+>  - Sie müssen ebenfalls die Entität und das Schnellerfassungsformular Ihrer App hinzufügen.
 >  - Einige Felder wie das CREATEDON Feld, können nicht in einem Schnellerfassungsformular hinzuzugefügt werden.  
   
 ### <a name="how-to-create-a-quick-create-form"></a>So erstellen Sie ein Schnellerfassungsformular  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.
 
 
 > [!IMPORTANT]
@@ -92,10 +99,10 @@ Wenn Sie einem Schnellerfassungsformular ein zusammengesetztes Feld hinzufügen,
   
 ### <a name="to-edit-a-quick-create-form"></a>Bearbeiten eines Schnellerfassungsformulars  
   
-1.  Melden Sie sich bei [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
+1.  Melden Sie sich bei [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) an.  
 
 > [!IMPORTANT]
-> "Wenn der **Modell-angetrieben** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    
+> "Wenn der **Modell-angetriebe** Entwurfsmodus nicht verfügbar ist, müssen Sie ggf eine [Umgebung erstellen](https://docs.microsoft.com/powerapps/administrator/create-environment).    
   
 2. Erweitern Sie **Daten** und wählen **Entitäten**, wählen Sie die Entität aus und wählen Sie die Registerkarte **Formulare**.    
 
@@ -113,7 +120,7 @@ Wenn Sie einem Schnellerfassungsformular ein zusammengesetztes Feld hinzufügen,
 Ab dem Update 9.1.0.2007 kann die Eigenschaft **Schnellerfassung erlauben** für alle Standardaktivitäten, außer wiederkehrenden Terminen, aktiviert oder deaktiviert werden. Mit dieser Eigenschaft können Sie das angezeigte Formular standardmäßig für die meisten Aktivitäten ändern. Standardmäßig wird die Eigenschaft **Schnellerfassung erlauben** aktiviert und das Schnellerfassungsformular ist das Formular, das in App-Bereichen und unterstützenden Aktivitätsentitäten angezeigt wird. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/allow-quick-create.png "Eigenschaft \"Schnellerfassung erlauben\" für Terminentität")
+> ![](media/allow-quick-create.png "Allow Quick Create property on appointment entity")
 
 
 ### <a name="unified-interface-client-form-display-behavior"></a>Einheitliche Oberfläche-Clientformular – Anzeigeverhalten
