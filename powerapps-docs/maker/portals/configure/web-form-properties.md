@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 904734c2143eae8e687be339b1bc5b30b47cff46
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73551207"
@@ -39,8 +39,8 @@ Die folgenden Attribute und Beziehungen bestimmen die Funktionalität des Webfor
 |                Name                 |                                                                                                                                                                          Ein Titel des Formulars, das für den Verweis verwendet wird.                                                                                                                                                                           |
 |             Start Schritt              |                                                                                Der erste Schritt im Formular. Ein Webformular besteht aus einem oder mehreren Schritten. Weitere Informationen zu diesen Schritten finden Sie im Abschnitt "Web Form Step" (weiter unten). Der erste Schritt kann nicht den Typ "Condition" aufweisen.                                                                                |
 |       Authentifizierung erforderlich       |                                                                              Wenn dieses Kontrollkästchen aktiviert ist und ein Benutzer, der nicht angemeldet ist, die Seite besucht, die das Formular enthält, wird er zur Anmeldeseite umgeleitet. Nach erfolgreicher Anmeldung wird der Benutzer zurück an die Seite umgeleitet, die das Formular enthält.                                                                               |
-|      Neue Sitzung beim Laden starten      |              Wenn der Benutzer das Formular in einem neuen Browser oder einer neuen Registerkarte öffnet oder den Browser oder die Seite schließt und **zurückgibt,** startet das Formular eine vollständig neue Sitzung und beginnt dann mit dem ersten Schritt. Andernfalls wird die Sitzung persistent gespeichert, und der Benutzer kann den Browser oder die Seite schließen und später genau dort fortsetzen, wo Sie aufgehört haben. Standardwert: **Nein**.               |
-| Mehrere Datensätze pro Benutzer zulässig |                                                                                                  Durch Auswahl von **Ja** wird angegeben, dass ein Benutzer mehr als eine Übermittlung erstellen darf. Dies unterstützt das Formular, um zu bestimmen, was zu tun ist, wenn ein Benutzer ein Formular erneut besucht. Standardwert: **Ja**.                                                                                                   |
+|      Neue Sitzung beim Laden starten      |              Wenn der Benutzer das Formular in einem neuen Browser oder einer neuen Registerkarte öffnet oder den Browser oder die Seite schließt und **zurückgibt,** startet das Formular eine vollständig neue Sitzung und beginnt dann mit dem ersten Schritt. Andernfalls wird die Sitzung persistent gespeichert, und der Benutzer kann den Browser oder die Seite schließen und später genau dort fortsetzen, wo Sie aufgehört haben. Vorgegebene **Nein**.               |
+| Mehrere Datensätze pro Benutzer zulässig |                                                                                                  Durch Auswahl von **Ja** wird angegeben, dass ein Benutzer mehr als eine Übermittlung erstellen darf. Dies unterstützt das Formular, um zu bestimmen, was zu tun ist, wenn ein Benutzer ein Formular erneut besucht. Vorgegebene **Ja**.                                                                                                   |
 |       Abgelaufenen Zustands Code bearbeiten       |                                                                                                                    Der ganzzahlige Wert des Zustands Codes der Ziel Entität, der in Kombination mit dem Status Grund angibt, wann ein vorhandener Datensatz nicht mehr bearbeitet werden kann.                                                                                                                     |
 |     Grund für den abgelaufenen Status bearbeiten      |                                                                       Der ganzzahlige Wert des Statuscodes der Ziel Entität, der in Kombination mit dem Statuscode angibt, dass der Datensatz nicht mehr bearbeitet werden soll, wenn ein vorhandener Datensatz diese Werte besitzt&mdash;z. b., wenn ein Datensatz als "Fertig" aktualisiert wird.                                                                       |
 |        Abgelaufene Nachricht bearbeiten         | Die Meldung, die angezeigt wird, wenn der Statuscode und der Status des vorhandenen Datensatzes den angegebenen Werten entsprechen. Für jedes Sprachpaket, das für die Organisation installiert und aktiviert ist, steht ein Feld zur Verfügung, in dem die Nachricht in der zugeordneten Sprache eingegeben werden kann. Standardmeldung; Sie haben bereits eine Übermittlung abgeschlossen. Danke! |
@@ -50,9 +50,9 @@ Die folgenden Attribute und Beziehungen bestimmen die Funktionalität des Webfor
 
 | Name                              | Beschreibung                                                                                          |
 |-----------------------------------|------------------------------------------------------------------------------------------------------|
-| Wodurch                           | Aktivieren Sie diese Option, um die Statusanzeige anzuzeigen. Standard: **deaktiviert**.                                      |
-| Typ                              | Einer der folgenden Werte: Title, numerisch (Schritt x von n) und Statusanzeige. Standard: **Titel**                                                                                    |
-| Position                          | Eines der folgenden: oben, unten, Links, rechts. Die Position ist relativ zum Formular. Standard: **oben**.                                                   |
+| Wodurch                           | Aktivieren Sie diese Option, um die Statusanzeige anzuzeigen. Vorgegebene **Deaktiviert**.                                      |
+| Typ                              | Eins der folgenden Elemente: Title, numeric (Schritt x von n) und Statusanzeige. Vorgegebene **Title**                                                                                    |
+| Position                          | Eins der folgenden Elemente: Oben, unten, Links, rechts. Die Position ist relativ zum Formular. Vorgegebene **Oben**.                                                   |
 | Schritt-für-Schritt-Titel voransetzen | Aktivieren Sie diese Option, um die Nummer des Schritts am Anfang des Titels des Schritts hinzuzufügen. Der Standardwert ist deaktiviert. |
 ||
 
@@ -84,7 +84,7 @@ Beispiel für die verschiedenen Status Indikator Typen:
 
 Beispiel:
 
-![Warnung "Änderungen speichern"](../media/save-changes-warning.png "Warnung "Änderungen speichern"")  
+![Warnung Änderungen speichern](../media/save-changes-warning.png "Warnung "Änderungen speichern"")  
 
 >[!Note]
 > Firefox bietet keine Möglichkeit, eine benutzerdefinierte Meldung anzugeben.
