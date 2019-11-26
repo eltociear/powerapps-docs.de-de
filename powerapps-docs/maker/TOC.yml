@@ -68,6 +68,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Hinzufügen von Power BI-Dashboards
               href: ../user/add-powerbi-dashboards.md
+            - name: Zusammenarbeiten mithilfe von SharePoint
+              href: ../user/collaborate-using-sharepoint.md
         - name: Durchsuchen von Datensätzen
           items:
             - name: Vergleichen der Suche mit den Suchoptionen
@@ -260,6 +262,8 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Grundlegendes zu Karten
                   href: ./canvas-apps/working-with-cards.md
+                - name: Anzeigen eines Bilds in voller Größe
+                  href: ./canvas-apps/display-full-image-on-form.md
             - name: Liste hinzufügen
               items:
                 - name: 'Hinzufügen von Listenfeldern, Dropdownlisten oder Optionsfeldern'
