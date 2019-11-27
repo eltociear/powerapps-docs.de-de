@@ -24,30 +24,30 @@ ms.locfileid: "74177597"
 In diesem Artikel wird gezeigt, wie Sie eine Canvas-App aus Ihrem PowerApps-Konto und aus Konten von anderen Benutzern löschen, für die die App freigegeben wurde.
 
 ## <a name="delete-an-app-from-your-account"></a>Löschen einer App aus Ihrem Konto
-1. Open [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Apps** in the left **Tree view** pane.
+1. Öffnen Sie [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), und wählen Sie dann im linken Struktur **Ansichts** Bereich **apps** aus.
    
-    ![Apps](./media/delete-app/file-apps.png)
-2. (optional) Near the upper-right corner, filter the list of apps to show only those apps that you own or only those apps to which you contribute.
+    ![War](./media/delete-app/file-apps.png)
+2. optionale Filtern Sie die Liste der apps in der Nähe der oberen rechten Ecke, um nur die apps anzuzeigen, die Sie besitzen, oder nur die apps, zu denen Sie beitragen.
    
     ![Filter für Apps](./media/delete-app/filter-list.png)
    
     > [!NOTE]
    > Wenn die App, die Sie löschen möchten, nicht angezeigt wird, sollten Sie sicherstellen, dass Sie sich in der richtigen Umgebung befinden.
-3. Select **More Commands** (...) for the app that you want to delete.
+3. Wählen Sie **Weitere Befehle** (...) für die APP aus, die Sie löschen möchten.
    
-    ![More Commands](./media/delete-app/app-options.png)
-4. Select the trash-can icon to delete the app.
+    ![Weitere Befehle](./media/delete-app/app-options.png)
+4. Wählen Sie das Papierkorb Symbol aus, um die APP zu löschen.
    
-    ![Delete](./media/delete-app/delete-icon.png)
+    ![Lösch](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > Sie benötigen die Berechtigung **Mitwirkender**, um eine App löschen zu können.
-5. In the dialog box that appears, select **Delete from cloud**.  
+5. Wählen Sie im angezeigten Dialogfeld die Option **aus Cloud löschen aus**.  
    
     > [!IMPORTANT]
    > Durch diese Aktion wird diese App nicht nur dauerhaft aus Ihrem Konto gelöscht, sondern auch aus den Konten aller Benutzer, mit denen diese App geteilt wurde.
    
-    ![Delete from cloud](./media/delete-app/delete-button.png)
+    ![Aus Cloud löschen](./media/delete-app/delete-button.png)
 
 ## <a name="more-resources"></a>Weitere Ressourcen
 [Eine App freigeben](share-app.md)  
