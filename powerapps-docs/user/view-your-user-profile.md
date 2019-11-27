@@ -26,7 +26,7 @@ ms.locfileid: "61556024"
 # <a name="view-your-user-profile"></a>Anzeigen Ihres Benutzerprofils  
 
 
-Ihr Benutzerprofil zeigt nützliche Informationen zu ihrer gesamten Organisation an. beispielsweise Ihre Kontaktinformationen, Ihre Organisation und ihre Sicherheitsrolle. Abhängig von ihrer Sicherheitsrolle können Sie möglicherweise Änderungen an Ihrem Benutzerprofil vornehmen.  
+Ihr Benutzerprofil zeigt nützliche Informationen zu Ihrer gesamten Organisation an. Beispielsweise Ihre Kontaktinformationen, Ihre Organisation und Ihre Sicherheitsrolle. Abhängig von ihrer Sicherheitsrolle können Sie möglicherweise Änderungen an Ihrem Benutzerprofil vornehmen.  
   
 1. Wählen Sie in der rechten oberen Ecke des Bildschirms **Einstellungen** ![Benutzer-](media/user-profile-settings-button.gif)Profil > -Einstellungen-Einstellungen für**Personalisierungs Einstellungen**aus.  
  
